@@ -170,6 +170,22 @@ class CircleTranslatorTests(unittest.TestCase):
         self.assertEqual(one.original_points,(Q(0),Q(1,4),Q(1,2),Q(3,4),Q(0)))
         self.assertFalse(one.physical_infinity_observed)
 
+    def test_one_new_probe_splits_current_rivals_but_not_all_future_windings(self):
+        times=(Q(0),Q(1,4),Q(1,2),Q(3,4),Q(1))
+        self.assertEqual(periodic_point_signature(1,times),
+                         periodic_point_signature(5,times))
+        new_probe=Q(1,8)
+        self.assertNotEqual(
+            periodic_point_signature(1,(new_probe,)),
+            periodic_point_signature(5,(new_probe,)),
+        )
+        enlarged=times+(new_probe,)
+        witness=winding_alias_for_rational_samples(1,enlarged)
+        self.assertEqual(witness.aliased_turns,9)
+        self.assertTrue(witness.finite_samples_equal)
+        self.assertFalse(witness.winding_numbers_equal)
+        self.assertEqual(witness.exact_winding_difference,8)
+
     def test_general_finite_rational_time_sampling_has_aliasing_construction(self):
         lists=[
             (),
