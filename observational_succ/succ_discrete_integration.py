@@ -686,6 +686,26 @@ def succ_derivative_demo():
     x2=_add(x1,deltas[1])
     if scan.values!=(F0.act(x0),F1.act(x1),F2.act(x2)):
         raise ArithmeticError("Discrete covariant SUCC frame transport not commuting")
+    sampled_local=scan.values
+    if finite_covariant_newton_reconstruct_samples(
+            (F0,F1,F2),sampled_local)!=sampled_local:
+        raise ArithmeticError("Unconditional finite covariant jet failed")
+    # A separately proven global quadratic law plus the same initial
+    # derivative jet also reconstructs future states in changing frames.
+    b2=SharedBasis(2)
+    jd1=(Fraction(1),Fraction(0))
+    jd2=(Fraction(0),Fraction(1))
+    frame_schedule=(F0,F1,F2,F0,F1,F2,F0)
+    quadratic=lambda n: (
+        Fraction(2+n),Fraction(3+comb(n,2)))
+    expected_frames=tuple(F.act(quadratic(n))
+                          for n,F in enumerate(frame_schedule))
+    global_law=PolynomialJetSourceFamily(
+        b2.fingerprint,2,((jd1,jd2),))
+    transported=certified_covariant_newton_path(
+        b2,frame_schedule,expected_frames[:3],global_law)
+    if transported!=expected_frames:
+        raise ArithmeticError("Certified covariant Newton source law failed")
     return {
         "status":"EXACT_DISCRETE_SUCC_DERIVATIVE_INTEGRATION",
         "basis_indices":[1,2,3,4,5,6],
@@ -700,6 +720,9 @@ def succ_derivative_demo():
         "polynomial_jet_directions_count":len((d1,d2)),
         "law_premise_proved_from_finite_samples_alone":False,
         "covariant_frame_transport_square_commutes":True,
+        "unconditional_finite_covariant_newton_inversion":True,
+        "certified_covariant_newton_reconstructed_local_states":len(transported),
+        "nontrivial_holonomy_claimed":False,
         "affine_parallel_dependency_layers":scan.dependency_layers,
         "affine_prefix_actually_parallel_executed":False,
         "real_world_source_measurement_authenticated":False,
