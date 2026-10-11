@@ -127,6 +127,31 @@ The result is a tiny, exact example of **distributed knowledge**: information di
 
 This yields a new research frontier: can alternating inter-observer SUCC increase the probe reach of the *collective absorbing model* beyond the union of isolated observer models, when each round of received knowledge constructs new epistemic probes that the other observer can physically realize? The example demonstrates strict information complementarity, not an unbounded or emergent physical amplifier.
 
+### Stronger: reciprocal probe-unlocking across different physical carriers
+
+The two-bit example has joint information gain, but the following four-step system adds the crucial **feedback** from transmitted knowledge to previously unperformable observations.
+
+Let the four probe symbols be p0,p1,p2,p3. Both observers share the rule language and source table. The only initial epistemic capability is p0. A physical carrier permits only even-indexed probes (p0,p2), while B permits only odd-indexed probes (p1,p3). Successful observation of p0 enables knowledge of how to perform p1; successful observation of p1 enables p2; successful observation of p2 enables p3. The final p3 outcome distinguishes true source B from source A.
+
+Both isolated worlds fail: A observes p0 and stops (cannot physically perform p1), while B cannot begin (p0 is physically unavailable). The cooperative ladder proceeds:
+
+\[
+\begin{aligned}
+&A:\ p0\ \xrightarrow{\text{finite testimony}}\
+ B:\ p1\\
+&\xrightarrow{\text{finite testimony}}\ A:\ p2
+\ \xrightarrow{\text{finite testimony}}\ B:\ p3 .
+\end{aligned}
+\]
+
+Every arrow denotes one knowledge-aided macro-update carrying the prior physically lawful probe outcome. The proof of correct source/semantic synchronization at each arrow is the finite catch-up theorem from §3. The final outcome uniquely identifies B's world; the receivers did not acquire each other's instruments.
+
+**Observed in the code:** both isolated observers retain \(\{A,B\}\); four alternating source-faithful physical observations and four corresponding single K-SUCC receiver updates yield common fiber \(\{B\}\) and equal origin-labeled histories. The test \`cross_enabled_ladder_demo()\` is a finite construction, not an infinite successful physical experiment.
+
+**Mathematical insight:** the collective physical feasibility is not a single observer's \(\Phi_i\). The effective collective reach arises from repeatedly taking the closure of *shared knowledge* and intersecting it with different physically feasible probe sets. Relative to the declared sound rules, the collective observation process can access a probe chain that neither observer can traverse alone.
+
+This is a sound **finite epistemic amplification mechanism**, but the word "amplification" refers to accessible joint observations, not unbounded computation, quantum nonlocality, or physical information creation. Every new source outcome still comes from a declared, actually feasible source experiment performed by one agent.
+
 ## 6. The infinite ladder: a sharp limit theorem and a no-go
 
 A sequence of commuting finite squares may define a mathematically coherent *directed system*. Suppose A and B synchronize at each finite rung, and the trusted histories form an increasing chain \(H_0\subseteq H_1\subseteq\dots\). If the closure is \(\omega\)-continuous, then
