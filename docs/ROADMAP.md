@@ -179,9 +179,11 @@ Evidence: [Mahler SUCC clocks and Kummer](../research/2026-10-11/MAHLER_SUCC_CLO
 
 **One level higher:** let x be position, d=Δx current step, a=Δd constant secondary change. The lifted successor `(x,d,a)→(x+d,d+a,a)` produces `x_n=x_0+n d_0+binom(n,2)a`. Arbitrary fixed-order finite jets have Pascal/unipotent successor and integer binomial dynamics, including mod 2^r where 2 is not invertible. An explicit p=5 mod25 source starts d=1 and then d=5, shrinking the instantaneous clock period from 25 to 5: the path remains well-defined while its coordinate-gauge interpretation fails.
 
+**All-time unit stability proved:** for d_n=d0+n a, every n yields a full-clock invertible p-adic unit frame exactly when p∤d0 and p|a. Otherwise, if p∤a, the first nonunit time is the modular solution n≡−d0 a^-1 (mod p). Over 1,125 small cases the exact constructive criterion matches direct clock probing. This turns one lost-unit example into a theorem characterizing the entire linear higher-SUCC family.
+
 **Next research:** define category/fibration of (carrier, primitive unit, derivative/proof-context) with invertible gauge arrows for unit d and admissible partial embeddings for nonunits. Test which dynamical unit changes preserve source-proof certificates, and distinguish known formal coefficients before specialization from recoverable observations after carrier perturbation. No RH/Gamma conclusion follows.
 
-Evidence: [Variable-unit proto-SUCC lift](../research/2026-10-11/PROTO_SUCC_VARIABLE_UNIT_LIFT.md), proto_succ_variable_unit.py, tests/test_proto_succ_variable_unit.py, claims O156–O164.
+Evidence: [Variable-unit proto-SUCC lift](../research/2026-10-11/PROTO_SUCC_VARIABLE_UNIT_LIFT.md), proto_succ_variable_unit.py, tests/test_proto_succ_variable_unit.py, claims O156–O165.
 
 ## Stage 2: rigorous logic and ordinal realization
 
