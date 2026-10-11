@@ -169,6 +169,20 @@ Evidence: [Residue-one adeles and interpolation](../research/2026-10-11/RESIDUE_
 
 Evidence: [Mahler SUCC clocks and Kummer](../research/2026-10-11/MAHLER_SUCC_CLOCK_KUMMER.md), clock_mahler_interpolation.py, tests/test_clock_mahler_interpolation.py, claims O149–O155.
 
+## Proto-SUCC generalized to variable unit D and higher lifted steps
+
+**Maintainer's proposal:** instead of treating the physical numeral 1 as the absolute primitive, declare a formal unit D and a first one-D-unit path `0→D`. The usual SUCC `0→1→2...` is recovered only upon specializing D=1. Universally `S_D(x)=x+D` and n path steps from zero yield nD. Symbolic coefficient meanings are preserved before specialization; specialization D=0 can erase those distinctions.
+
+**Clock change criterion:** on Z/p^r Z, constant step d has orbit size p^r/gcd(d,p^r). If p does not divide d, `C_d(x)=d x` is an invertible full-clock conjugacy of S_1 and S_d. Nonunit d reaches only a proper subclock; in Z_p multiplication by nonzero nonunit remains injective but not surjective. Thus only p-local UNIT changes are truly harmless frame changes.
+
+**Exact SUCC/FUCC source normalization:** `V_p S_d = S_(pd) V_p` and the INTEGER address defect `S_d V_p(n) − V_p S_d(n)=d(1−p)`. Dividing by d to obtain 1−p is permitted in the LOCAL ring only if d is a unit. In formal Z[D], coefficient extraction does not require D^-1, but evaluating D=0 loses the coefficient. The ket-space commutator is not scalar.
+
+**One level higher:** let x be position, d=Δx current step, a=Δd constant secondary change. The lifted successor `(x,d,a)→(x+d,d+a,a)` produces `x_n=x_0+n d_0+binom(n,2)a`. Arbitrary fixed-order finite jets have Pascal/unipotent successor and integer binomial dynamics, including mod 2^r where 2 is not invertible. An explicit p=5 mod25 source starts d=1 and then d=5, shrinking the instantaneous clock period from 25 to 5: the path remains well-defined while its coordinate-gauge interpretation fails.
+
+**Next research:** define category/fibration of (carrier, primitive unit, derivative/proof-context) with invertible gauge arrows for unit d and admissible partial embeddings for nonunits. Test which dynamical unit changes preserve source-proof certificates, and distinguish known formal coefficients before specialization from recoverable observations after carrier perturbation. No RH/Gamma conclusion follows.
+
+Evidence: [Variable-unit proto-SUCC lift](../research/2026-10-11/PROTO_SUCC_VARIABLE_UNIT_LIFT.md), proto_succ_variable_unit.py, tests/test_proto_succ_variable_unit.py, claims O156–O164.
+
 ## Stage 2: rigorous logic and ordinal realization
 
 - Formalize a full proof-predicate/representability story for syntax and diagonal substitution in a proof assistant (Lean, Coq or Isabelle), clearly separating the project’s finite syntax engine from established Gödel theorems.
