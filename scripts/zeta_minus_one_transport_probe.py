@@ -25,6 +25,12 @@ def main():
     assert x["cuntz_ax_b_finite_arch_completion_proved_here"] is False
     assert x["global_zeta_minus_one_value"]=="-1/12"
     assert x["completed_zeta_symmetric_values"]=="Lambda(-1)=Lambda(2)=pi/6"
+    assert x["bost_connes_classical_diagonal_hamiltonian"]=="H|n> = log(n)|n>"
+    assert x["bost_connes_partition_function_for_beta_gt_one_is_zeta"] is True
+    assert x["bost_connes_positive_beta_two_finite_trace_n_four"]=="205/144"
+    assert x["bost_connes_beta_minus_one_finite_trace_n_four"]=="10"
+    assert x["bost_connes_analytic_zeta_minus_one_is_not_ordinary_trace"] is True
+    assert x["bost_connes_operator_algebra_or_KMS_state_constructed_here"] is False
     assert x["local_factor_partial_products_tend_to_zero"] is True
     assert x["local_continuation_and_global_product_commute"] is False
     assert x["positive_side_prime_product_converges"] is True
