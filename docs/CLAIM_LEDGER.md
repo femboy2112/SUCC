@@ -79,6 +79,14 @@ Use these labels:
 | O64 | A final observation can justify its own probe's prior accessibility by post-hoc semantic closure | REFUTED by causal path counterexample | obs:fine:B -> can:fine self-bootstrap; lawful replay rejects source-level authorization |
 | O65 | In a finite zero-error one-shot channel with receiver side information, minimal fixed-length bit budget is ceil(log2 chromatic number of confusability graph), under factorization feasibility | CLASSICAL / exact finite implementation | Witsenhausen 1976; interobserver_channels.py; 64 independent binary worlds and C5 control |
 | O66 | The physical observer performs transfinite iteration or can always transmit an arbitrarily completed mathematical model in finite time | UNVERIFIED | Mathematical limit is not physical supertask; requires a finite program/proof, bounded channel, shared semantics and possibly physical feasibility evidence |
+| O67 | A sender's k lawful source-faithful local observation frames can be replayed by a receiver from their exact shared causal prefix in one knowledge-aided macro-update, reconstructing full finite epistemic placement and source attribution | PROVED LOCAL / TESTED MODEL | KNOWLEDGE_AIDED_SUCC_LADDER §3; knowledge_ladder.py; tests/test_knowledge_ladder.py |
+| O68 | Identical complete shared observation histories plus matching deterministic update rules and physical feasibility preserve equal future epistemic placements under corresponding source probes | PROVED LOCAL (conditional induction) / TESTED MODEL | Knowledge-aided ladder proof §3; next-frame positive controls; hardware-asymmetry negative control |
+| O69 | Equality of current compatible source, semantic closure and probe frontier ensures identical future observation histories | REFUTED as universal inference | Redundant p1 snapshot omission: B next probes p1, A does not; research note §4; compact-vs-strict test |
+| O70 | A bounded finite search finds a minimum-cardinality subset of A's additional exact probe facts that matches B's current absorbing placement | PROVED LOCAL / TESTED MODEL | Exhaustive subset-order proof; minimal_snapshot_delta; not optimal wire bits, authenticated history or future bisimulation |
+| O71 | For an omega-continuous inference closure, a nested lawful ladder of compatible finite histories has the limit closure equal to the directed union of finite closures | CLASSICAL (under stated continuity) | Kleene/finite-premise Horn argument; KNOWLEDGE_AIDED_SUCC_LADDER §6; not physical infinite receipt |
+| O72 | Each finite stage admitting a finite inter-observer message implies that any arbitrary binary-sequence omega completion has a single finite universal digital encoding | REFUTED | Infinite binary stream cardinality versus countable finite strings; research note §6 |
+| O73 | General knowledge-aided SUCC preserves physical probe dynamics, authenticated causal provenance, morphism-level Yoneda faithfulness, infinite-limit regularity or RH without additional assumptions | UNVERIFIED | Must construct separately typed physical, continuation/bisimulation, category, proof-certificate and completed-Weil bridges |
+
 
 
 
@@ -86,6 +94,8 @@ Use these labels:
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
+
+New knowledge-ladder controls: three 2-frame local discovery segments alternating between observers, each caught up by one remote informed step; correct source/origin replay; stale and forged packets; missing future hardware capability despite shared semantics; snapshot-only compression that omits a redundant observed fact and changes the next physical frame; third-party evidence laundering rejection; all 32 small binary source table transfers.
 
 New absorbing/transmission controls: valid positive probe genesis with no contradiction; epistemically available but physically blocked probes; Kripke nonforcing of constructive excluded middle while classical LEM remains true; non-omega-continuous closure at omega+1; a self-enabling observation rejected by lawful replay; a shorter target-only witness that cannot certify causal acquisition; false bit-cardinality claims; and exact receiver-side-information channel coloring.
 
@@ -97,7 +107,7 @@ Some controls are *historical* and live in the archived research documents, whil
 
 ## Outstanding highest-value claims
 
-- **General theory:** extend absorbing version-space closure from finite Horn models to typed, model-generating recursive domains; define precisely when a hard-SUCC omega limit is a fixed point and when the purported completion is provably finite-channel transmissible with source-faithful causal provenance. Test epistemic versus genuinely physical feasibility independently.
+- **General theory:** build continuation-preserving knowledge-aided SUCC morphisms across a shared, versioned semantic basis. Find finite, provably sufficient future-behavior statistics and costed/provenance-aware channels, distinguish ordinary observation from imported source testimony, then lift the finite construction to lawful directed limits with stated regularity.
 - **Proof theory:** formalization in PA of coding/substitution representation, followed by appropriately qualified Gödel/reflection principles in a proof assistant.
 - **RH adapter:** a rigorous archimedean/pole interval oracle and noncircular identification of a positive source-derived distribution with the completed Weil form.
 
