@@ -1,0 +1,78 @@
+{
+  "schema": "categorical-observability-evidence/v1",
+  "date": "2026-10-10",
+  "repository": "femboy2112/FuckingRH",
+  "branch": "research/2026-10-10/yoneda-resource-actualization-v1",
+  "base_commit": "927bcfac3f932a998154726fffbdbc27a835e770",
+  "main_at_initial_inspection": "22b6dadbd1983159e6c5d8cc32fb9aeff6925ec6",
+  "verification": {
+    "github_actions_run_id": 38054652963,
+    "url": "https://github.com/femboy2112/FuckingRH/actions/runs/38054652963",
+    "code_tested_at_commit": "95c2fb828f77885c347645d6dbaf77fccbd915f6",
+    "conclusion": "success",
+    "matrix": [
+      {
+        "python": "3.10",
+        "job_id": 114220527241,
+        "tests_run": 88,
+        "tests_passed": 88,
+        "hostile_mutations_run": 15,
+        "hostile_mutations_detected": 15,
+        "cli_replay_passed": true,
+        "artifact_id": 11670693916,
+        "digest": "sha256:d55b780acd8943caabe0d59ae112fd89298e4c6f0675798d36adc16e9115fd7d"
+      },
+      {
+        "python": "3.13",
+        "job_id": 114220527394,
+        "tests_run": 88,
+        "tests_passed": 88,
+        "hostile_mutations_run": 15,
+        "hostile_mutations_detected": 15,
+        "cli_replay_passed": true,
+        "artifact_id": 11669924135,
+        "digest": "sha256:525bc593cf492aee79adc041e4bb7bf5017d568793175693253ae79acfbc1b14"
+      }
+    ],
+    "lanes": [
+      "fields",
+      "shadow",
+      "engine",
+      "category",
+      "resource_probe",
+      "local_global",
+      "circle_transport"
+    ],
+    "note": "The code at the tested commit matches the mathematical implementation; later documentation-only commits do not constitute new tests. A final CI run at the eventual branch head should be checked separately."
+  },
+  "proved_finite": {
+    "restricted_yoneda_spurious_arrow": true,
+    "full_yoneda_path_arrows_recovered": true,
+    "prime_power_separation_formula": true,
+    "two_prime_path_shadow_early_discrimination": true,
+    "finite_co_yoneda_witness_quotient": true,
+    "formal_valuation_functor_full_faithful": true,
+    "local_global_causal_prefix": true,
+    "finite_to_circle_torsion_duality": true,
+    "opposite_clock_and_character_refinements": true,
+    "2_to_6_dual_new_modes": 4
+  },
+  "recorded_falsifiers": [
+    "thin arrow target ratio was initially leaked; corrected before green CI",
+    "exception type expectation for an illegal finite target corrected",
+    "restricted Yoneda can infer a spurious arrow absent in global category",
+    "forgetful functor collapses two 1-to-6 histories",
+    "finite observational equivalence does not imply equality of internal beliefs",
+    "fake coefficient at 6 passes categorical coherence but fails connected Euler-source audit",
+    "wrong cyclic dual character inclusion violates exact circle phase pairing"
+  ],
+  "scope_excluded": [
+    "full historical repository test suite",
+    "independent AI subagent research",
+    "real-place Gamma factor or Schwartz-space operator",
+    "complete arithmetic Weil form identification",
+    "new RH or GRH estimates",
+    "positive Hodge polarization",
+    "physical feasibility or Gödel-limit claims"
+  ]
+}

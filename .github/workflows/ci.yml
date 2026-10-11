@@ -1,0 +1,73 @@
+name: Observational SUCC validation
+
+on:
+  push:
+    branches:
+      - main
+      - 'research/**'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: obs-succ-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Python ${{ matrix.python-version }} mathematical and epistemic checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install research and test extras
+        run: python -m pip install -e ".[test]"
+      - name: Verify source Git blob provenance
+        run: python scripts/verify_provenance.py
+      - name: Run all mathematical, logic, quantum, source and hostile tests
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Prove observer-to-semantic distinguishability contraction
+        run: |
+          python scripts/semantic_data_processing_probe.py > "$RUNNER_TEMP/semantic-data-processing.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"semantic-data-processing.json").read_text())
+          assert j["status"]=="EXACT_SEMANTIC_DATA_PROCESSING"
+          assert j["Z_outcomes_0_vs_1_TV"]=="1"
+          assert j["X_outcomes_0_vs_1_TV"]=="0"
+          assert j["Z_forgotten_TV"]=="0"
+          assert j["source_causal_records_erased"] is False
+          assert j["Weil_positivity_claimed"] is False
+          PY
+      - name: General SUCC CLI
+        run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
+      - name: Gödel, Turing and ordinal proof evidence
+        run: python scripts/observer_foundations_probe.py --output "$RUNNER_TEMP/foundations.json"
+      - name: Retrospective ordinal correlation
+        run: python scripts/ordinal_succ_report_probe.py --output "$RUNNER_TEMP/ordinal.json"
+      - name: Certified source-side RH bridge
+        run: python scripts/prime_source_certificates_probe.py --output "$RUNNER_TEMP/prime-source.json"
+      - name: Persist verified finite evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: obs-succ-${{ matrix.python-version }}
+          path: |
+            ${{ runner.temp }}/observer-demo.json
+            ${{ runner.temp }}/foundations.json
+            ${{ runner.temp }}/ordinal.json
+            ${{ runner.temp }}/prime-source.json
+            ${{ runner.temp }}/semantic-data-processing.json
+          if-no-files-found: warn
+          retention-days: 14
