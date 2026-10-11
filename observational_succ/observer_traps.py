@@ -281,11 +281,12 @@ def certify_stationary_pair(world: FiniteProbeWorld, policy: ProbePolicy,
         status = "access-trap"
 
     period = len(menu) if policy.scheduling == "round_robin" else 1
+    # This cycle is counterfactual only until the first refutation: after that
+    # step the preferred model may change, so the old menu need not persist.
     delay = next(
         (k + 1 for k in range(period)
-         if any(p in global_diff for p in policy.selected(
-             ObserverFrame(frame.initial_preference, frame.stage + k,
-                           frame.history, frame.compatible, frame.preferred), world))),
+         if policy.scheduling != "round_robin"
+         or menu[(frame.stage + k) % len(menu)] in support_diff),
         None,
     ) if support_diff else None
     fiber = tuple(candidate for candidate in frame.compatible
