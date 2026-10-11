@@ -59,11 +59,22 @@ Use these labels:
 | O44 | A deterministic history-only adaptive observer using a fixed admissible probe family cannot distinguish two sources agreeing on every probe in that family | PROVED LOCAL (conditional) | Induction on causal histories; research note §4 |
 | O45 | Finite/omega/dark classification is intrinsic to a source space and independent of allowed probes | REFUTED as universal inference | Off-origin evaluation separates a smooth flat germ from zero; research note §2C/§4 |
 | O46 | These idealized observer classes yield a general physical law, effectively reconstructible limits, or an RH Weil-sign theorem | UNVERIFIED | Source regularity, effectiveness, empirical identification, and arithmetic source-to-Weil bridge absent |
+| O47 | Actual finite probe outcomes preserve the true source and monotonically shrink the compatible version space | PROVED LOCAL | MODEL_DEPENDENT_OBSERVER_TRAPS §1; observer_traps.py plus source replay and forged-event controls |
+| O48 | With a stationary preferred-model access menu and exhaustive/first/cyclic scheduling, a false favorite survives all future SUCC stages iff every eventually selected probe gives matching source outcomes | PROVED LOCAL / TESTED MODEL | Induction and finite cyclic support, MODEL_DEPENDENT_OBSERVER_TRAPS §2; exhaustive 864-case simulation cross-check |
+| O49 | Globally probe-blind, model-access trap, unfair scheduling trap and eventual refutation are distinct source-relative classes | PROVED LOCAL (typed partition) / TESTED MODEL | PairTrapCertificate, synthetic counterexamples, 864-case table tests; external actual source required for diagnosis |
+| O50 | Two sources with identical adaptively selected histories cannot be distinguished by any deterministic history-only semantic report | PROVED LOCAL | Induction, MODEL_DEPENDENT_OBSERVER_TRAPS §4; two-truth identical-trace control |
+| O51 | Exhaustively probing union of compatible model menus identifies every candidate in one frame iff that union separates the remaining source class | PROVED LOCAL / TESTED MODEL | MODEL_DEPENDENT_OBSERVER_TRAPS §5; 5,184 finite union controls, stronger pairwise criterion shown nonnecessary |
+| O52 | In finite monotone deterministic candidate systems the omega compatible fiber equals some finite-stage fiber, and preferred-model switches occur at most |X|-1 times | PROVED LOCAL | Elementary finite-set proof, MODEL_DEPENDENT_OBSERVER_TRAPS §6; no uniform known stopping certificate |
+| O53 | A false preferred model can be refuted, rationally replaced and followed by another permanently self-confirming false preferred model | TESTED MODEL / explicit finite counterexample | A→B while C actual, broad/fine probes; MODEL_DEPENDENT_OBSERVER_TRAPS §5, test_observer_traps.py |
+| O54 | These model-dependent access traps apply universally to physical humans, quantum measurement, arbitrary noisy sources or RH proof independence | UNVERIFIED | No empirical/spectral model, no physical feasibility map, no stochastic almost-sure theorem or completed Weil identification |
+
 
 
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
+
+Additional observer-trap controls: truth-labeled source B versus false preferred A under an exhaustive but closed echo-only menu; an available-but-never-scheduled separator; a periodic schedule that finds the separator; two sources yielding identical endogenous histories; an external source-authenticated intervention; a valid revision A→B that traps again while C is true; and forged causal histories. The toy finite source and probe tables are mathematical counterexamples, not human-neuroscience experiments.
 
 Additional ideal-frame controls: zero versus a nonzero flat smooth germ with identical all-order origin jets; off-origin evaluation that defeats that darkness; compatible finite analytic polynomial jets with divergent factorial omega series; premature zero-polynomial closure refuted by a delayed fourth derivative.
 
@@ -71,7 +82,7 @@ Some controls are *historical* and live in the archived research documents, whil
 
 ## Outstanding highest-value claims
 
-- **General theory:** a physically and mathematically specified record-to-semantic functor with proved information-preservation/data-processing properties and falsifiable experimental consequences; in particular, an admissible-probe observer reconstruction theorem that separates finite/omega/dark identification from model realizability and effective stability.
+- **General theory:** a physically and mathematically specified record-to-semantic functor with proved information-preservation/data-processing properties and falsifiable experimental consequences; in particular, test whether model-relative probe menus are physically feasible, make semantic closure model revision explicit, and characterize finite/omega/dark identification versus observer-policy traps and effective regularity.
 - **Proof theory:** formalization in PA of coding/substitution representation, followed by appropriately qualified Gödel/reflection principles in a proof assistant.
 - **RH adapter:** a rigorous archimedean/pole interval oracle and noncircular identification of a positive source-derived distribution with the completed Weil form.
 
