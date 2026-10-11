@@ -258,6 +258,7 @@ Proposed ledger:
 - **O91 PROVED LOCAL:** orientation/gauge cannot be chosen from unlabeled circle membership; two valid translators reverse winding sign.
 - **O92 UNVERIFIED:** fully faithful cross-language observation/proof/path/physical translator, general semantic category, RH coupling consequences.
 - **O93 CLASSICAL / PROVED LOCAL / TESTED MODEL:** polynomial tangential derivation and trig angular derivative intertwine (up to orientation sign); ω=x dy−y dx has local angular primitive but no globally real-valued primitive on S¹.
+- **O94 PROVED LOCAL / FINITE MODEL CONTROLS:** exactly the same integer-winding target on the same circle shows finite, omega-only, and persistently probe-dark identification with, respectively, a bounded prior, expanding rational-time probe menu, and forever-frozen finite probe menu.
 
 **Next research discriminators:** 
 1. Give A and B the *same raw data and probe menu*, prove translation of the oriented path differential form \(\alpha=x\,dy-y\,dx\) to \(d\theta\) with chart transitions, and preserve the integer winding under valid transport. Include the orientation-flipped negative control.
