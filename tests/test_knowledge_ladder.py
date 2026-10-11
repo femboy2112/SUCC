@@ -11,6 +11,7 @@ from observational_succ.knowledge_ladder import (
     encode_strict_relay, decode_strict_relay,
     minimal_snapshot_delta, encode_snapshot_relay, decode_snapshot_relay,
     knowledge_ladder_demo, complementary_observers_demo,
+    cross_enabled_ladder_demo,
 )
 
 
@@ -44,6 +45,22 @@ class KnowledgeLadderTests(unittest.TestCase):
         self.assertFalse(report["sender_outcomes_cryptographically_authenticated"])
         self.assertFalse(report["physical_time_speedup_proved"])
         self.assertFalse(report["infinite_ladder_executed"])
+
+    def test_reciprocal_cross_enabled_ladder_succeeds_where_both_isolated_fail(self):
+        report = cross_enabled_ladder_demo()
+        self.assertEqual(report["status"], "EXACT_CROSS_ENABLED_SUCC_LADDER")
+        self.assertEqual(report["isolated_alice_sources"], ["A", "B"])
+        self.assertEqual(report["isolated_bob_sources"], ["A", "B"])
+        self.assertEqual(report["collective_sources"], ["B"])
+        self.assertEqual(report["alternating_probe_origins"],
+                         ["Alice", "Bob", "Alice", "Bob"])
+        self.assertEqual(report["alternating_probes"], ["p0", "p1", "p2", "p3"])
+        self.assertEqual([r["recipient_informed_steps"] for r in report["rungs"]],
+                         [1, 1, 1, 1])
+        self.assertTrue(report["full_history_and_semantic_alignment"])
+        self.assertFalse(report["physical_instruments_replicated"])
+        self.assertFalse(report["physical_infinite_ladder_executed"])
+        self.assertFalse(report["RH_claimed"])
 
     def test_complementary_instruments_construct_joint_xor_knowledge(self):
         report = complementary_observers_demo()
