@@ -102,6 +102,13 @@ jobs:
           assert j["complementarity"]["bob_only_xor_identified"] is False
           assert j["complementarity"]["shared_source"]==["10"]
           assert j["complementarity"]["shared_xor"]=="1"
+          assert j["cross_enabled_ladder"]["status"]=="EXACT_CROSS_ENABLED_SUCC_LADDER"
+          assert j["cross_enabled_ladder"]["isolated_alice_sources"]==["A","B"]
+          assert j["cross_enabled_ladder"]["isolated_bob_sources"]==["A","B"]
+          assert j["cross_enabled_ladder"]["collective_sources"]==["B"]
+          assert j["cross_enabled_ladder"]["alternating_probes"]==["p0","p1","p2","p3"]
+          assert j["cross_enabled_ladder"]["full_history_and_semantic_alignment"] is True
+          assert j["cross_enabled_ladder"]["physical_instruments_replicated"] is False
           assert j["complementarity"]["full_continuation_equivalence_of_physical_devices_claimed"] is False
           assert j["full_shared_semantics_and_causal_records_match"] is True
           assert [r["local_discovery_steps"] for r in j["rungs"]]==[2,2,2]
