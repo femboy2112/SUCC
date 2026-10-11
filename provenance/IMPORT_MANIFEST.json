@@ -1,0 +1,582 @@
+{
+  "schema_version": "1.0",
+  "source_repo": "femboy2112/FuckingRH",
+  "source_ref": "aletheia/observational-succ-logic-foundations-2026-10-10",
+  "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "source_pull_request": "https://github.com/femboy2112/FuckingRH/pull/23",
+  "target_repo": "femboy2112/SUCC",
+  "target_branch": "research/observational-succ-foundation-import-2026-10-10",
+  "copied_at_utc": "2026-10-11",
+  "policy": "Machine-verifiable Git blob provenance. Archival research files are byte-identical; Python files are mechanically namespaced. Claim statuses are maintained independently.",
+  "count": 71,
+  "entries": [
+    {
+      "original_path": "actualization/README.md",
+      "original_git_blob_sha": "62b8fa277af71cb8e8e9ba69d01a8d52b733d487",
+      "destination_path": "provenance/origins/fuckingrh/actualization/README.md",
+      "destination_git_blob_sha": "62b8fa277af71cb8e8e9ba69d01a8d52b733d487",
+      "transformation": "verbatim",
+      "size_bytes_original": 29263
+    },
+    {
+      "original_path": "actualization/YONEDA_GUIDE.md",
+      "original_git_blob_sha": "08cc323315b191954e86f5fcbf1820aaf7e7954f",
+      "destination_path": "provenance/origins/fuckingrh/actualization/YONEDA_GUIDE.md",
+      "destination_git_blob_sha": "08cc323315b191954e86f5fcbf1820aaf7e7954f",
+      "transformation": "verbatim",
+      "size_bytes_original": 22783
+    },
+    {
+      "original_path": "actualization/__init__.py",
+      "original_git_blob_sha": "ee326c86212423709a7c7be45d05a94a2ff20055",
+      "destination_path": "observational_succ/__init__.py",
+      "destination_git_blob_sha": "320f85a1d9f7531d6d025927c174af7d2e810337",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 4272
+    },
+    {
+      "original_path": "actualization/__main__.py",
+      "original_git_blob_sha": "62c86ecdac79e757c2a2c02edde8d60f6ae6182c",
+      "destination_path": "observational_succ/__main__.py",
+      "destination_git_blob_sha": "1f4339530b2575102f1bae4e94763e071c9f8731",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 8314
+    },
+    {
+      "original_path": "actualization/arithmetic.py",
+      "original_git_blob_sha": "219910d245950b58c7cd4423f504b6f9b26e93c4",
+      "destination_path": "observational_succ/arithmetic.py",
+      "destination_git_blob_sha": "219910d245950b58c7cd4423f504b6f9b26e93c4",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 11626
+    },
+    {
+      "original_path": "actualization/balanced_theta_li.py",
+      "original_git_blob_sha": "c9399cc83ca436748f516788f83188d855274b28",
+      "destination_path": "observational_succ/balanced_theta_li.py",
+      "destination_git_blob_sha": "c9399cc83ca436748f516788f83188d855274b28",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 17413
+    },
+    {
+      "original_path": "actualization/circle_transport.py",
+      "original_git_blob_sha": "8c145278122f8c9de337c200843c6fd4d2ae84e6",
+      "destination_path": "observational_succ/circle_transport.py",
+      "destination_git_blob_sha": "8c145278122f8c9de337c200843c6fd4d2ae84e6",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 6537
+    },
+    {
+      "original_path": "actualization/core.py",
+      "original_git_blob_sha": "9bb8df66eef89b40b57e28e24dec07b0ee4bb49e",
+      "destination_path": "observational_succ/core.py",
+      "destination_git_blob_sha": "9bb8df66eef89b40b57e28e24dec07b0ee4bb49e",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 12329
+    },
+    {
+      "original_path": "actualization/dirichlet_lambert.py",
+      "original_git_blob_sha": "7f99150117c563c583be0fcc35fae1998a472162",
+      "destination_path": "observational_succ/dirichlet_lambert.py",
+      "destination_git_blob_sha": "7f99150117c563c583be0fcc35fae1998a472162",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 10731
+    },
+    {
+      "original_path": "actualization/engine.py",
+      "original_git_blob_sha": "db1a9f7205f249dfb90cd60b422c6f3569c6b821",
+      "destination_path": "observational_succ/engine.py",
+      "destination_git_blob_sha": "181019ed0d9c8a62e63c5d871406a1a40220f912",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 18871
+    },
+    {
+      "original_path": "actualization/gamma_interferometer.py",
+      "original_git_blob_sha": "ca7ad4a78a0e7f0d2b06a0c4498c58c6205063ce",
+      "destination_path": "observational_succ/gamma_interferometer.py",
+      "destination_git_blob_sha": "432c7fc28bba75c9f990d987ae5ec76ec2692e29",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 8349
+    },
+    {
+      "original_path": "actualization/gamma_succ_path.py",
+      "original_git_blob_sha": "5c4b5bd86b03be0863cc3b6e589c6d3264b55055",
+      "destination_path": "observational_succ/gamma_succ_path.py",
+      "destination_git_blob_sha": "5c4b5bd86b03be0863cc3b6e589c6d3264b55055",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 13682
+    },
+    {
+      "original_path": "actualization/godel_succ.py",
+      "original_git_blob_sha": "d855791bc45c8f8c8c7b26c4c88ab7f58161ee5d",
+      "destination_path": "observational_succ/godel_succ.py",
+      "destination_git_blob_sha": "d855791bc45c8f8c8c7b26c4c88ab7f58161ee5d",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 5659
+    },
+    {
+      "original_path": "actualization/hasse_theta_seam.py",
+      "original_git_blob_sha": "361b8a4db22974fdea11f4f5367b73c93e6a106d",
+      "destination_path": "observational_succ/hasse_theta_seam.py",
+      "destination_git_blob_sha": "361b8a4db22974fdea11f4f5367b73c93e6a106d",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 27770
+    },
+    {
+      "original_path": "actualization/infinite_realization.py",
+      "original_git_blob_sha": "b5fe838217758ab0345c24ba90020d5f2fd76317",
+      "destination_path": "observational_succ/infinite_realization.py",
+      "destination_git_blob_sha": "b5fe838217758ab0345c24ba90020d5f2fd76317",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 10049
+    },
+    {
+      "original_path": "actualization/lambert_succ.py",
+      "original_git_blob_sha": "88cb3313486730702c50005065c398b34e835d12",
+      "destination_path": "observational_succ/lambert_succ.py",
+      "destination_git_blob_sha": "88cb3313486730702c50005065c398b34e835d12",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 9785
+    },
+    {
+      "original_path": "actualization/local_global.py",
+      "original_git_blob_sha": "79bed8e3a417617e096b206f8ba66adb9f3d2009",
+      "destination_path": "observational_succ/local_global.py",
+      "destination_git_blob_sha": "79bed8e3a417617e096b206f8ba66adb9f3d2009",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 6404
+    },
+    {
+      "original_path": "actualization/observer_logic.py",
+      "original_git_blob_sha": "a2c294bee04e3e733f58fc941f2c94e4d5db9b27",
+      "destination_path": "observational_succ/observer_logic.py",
+      "destination_git_blob_sha": "a2c294bee04e3e733f58fc941f2c94e4d5db9b27",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 20970
+    },
+    {
+      "original_path": "actualization/observer_reflection.py",
+      "original_git_blob_sha": "587f08baf239d41cb208c994ef4151742a55f5f4",
+      "destination_path": "observational_succ/observer_reflection.py",
+      "destination_git_blob_sha": "587f08baf239d41cb208c994ef4151742a55f5f4",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 16714
+    },
+    {
+      "original_path": "actualization/ordinal_succ_report.py",
+      "original_git_blob_sha": "99baa3be8f3900af7886abe892a9e593dfa392a9",
+      "destination_path": "observational_succ/ordinal_succ_report.py",
+      "destination_git_blob_sha": "99baa3be8f3900af7886abe892a9e593dfa392a9",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 19776
+    },
+    {
+      "original_path": "actualization/phenomenology.py",
+      "original_git_blob_sha": "b207b7590bd601c72dc239b0c89726517b5b20e6",
+      "destination_path": "observational_succ/phenomenology.py",
+      "destination_git_blob_sha": "69d44bef4de5bff4ffb193e2a229a26105b7c93a",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 5911
+    },
+    {
+      "original_path": "actualization/resource_probe.py",
+      "original_git_blob_sha": "b3cfd2f8e55cac17c9f98cfbcef3181676dfbbfa",
+      "destination_path": "observational_succ/resource_probe.py",
+      "destination_git_blob_sha": "b3cfd2f8e55cac17c9f98cfbcef3181676dfbbfa",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 8235
+    },
+    {
+      "original_path": "actualization/source_prime_certificates.py",
+      "original_git_blob_sha": "c4b08cf070959d334b0607e4d371d57afdcccfe1",
+      "destination_path": "observational_succ/source_prime_certificates.py",
+      "destination_git_blob_sha": "c4b08cf070959d334b0607e4d371d57afdcccfe1",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 9001
+    },
+    {
+      "original_path": "actualization/succ_shadow_window.py",
+      "original_git_blob_sha": "495ecf4abb43367ced92ff64096f0ff611be96cc",
+      "destination_path": "observational_succ/succ_shadow_window.py",
+      "destination_git_blob_sha": "495ecf4abb43367ced92ff64096f0ff611be96cc",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 11828
+    },
+    {
+      "original_path": "actualization/yoneda.py",
+      "original_git_blob_sha": "de06d879c08a398acb9869dd2e98176591ea44cc",
+      "destination_path": "observational_succ/yoneda.py",
+      "destination_git_blob_sha": "de06d879c08a398acb9869dd2e98176591ea44cc",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 19057
+    },
+    {
+      "original_path": "research/2026-10-10/BALANCED_THETA_LI_WINDOW.md",
+      "original_git_blob_sha": "b23ae374cee8553d346ac9475c74990d6d2a5a06",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/BALANCED_THETA_LI_WINDOW.md",
+      "destination_git_blob_sha": "b23ae374cee8553d346ac9475c74990d6d2a5a06",
+      "transformation": "verbatim",
+      "size_bytes_original": 17345
+    },
+    {
+      "original_path": "research/2026-10-10/CATEGORICAL_YONEDA_EVIDENCE.json",
+      "original_git_blob_sha": "3068b1239cb1c55902e0667ea81a2f7379d6f1f5",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/CATEGORICAL_YONEDA_EVIDENCE.json",
+      "destination_git_blob_sha": "3068b1239cb1c55902e0667ea81a2f7379d6f1f5",
+      "transformation": "verbatim",
+      "size_bytes_original": 3120
+    },
+    {
+      "original_path": "research/2026-10-10/CATEGORICAL_YONEDA_RESOURCE_FRONTIER.md",
+      "original_git_blob_sha": "10b42296495593f1447b3f88a92255bb521a3b47",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/CATEGORICAL_YONEDA_RESOURCE_FRONTIER.md",
+      "destination_git_blob_sha": "10b42296495593f1447b3f88a92255bb521a3b47",
+      "transformation": "verbatim",
+      "size_bytes_original": 17849
+    },
+    {
+      "original_path": "research/2026-10-10/CERTIFIED_FINITE_PRIME_TRANSPORT.md",
+      "original_git_blob_sha": "738a5f9884bbd6d49c26ef1a685e3c50bb8eb58e",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/CERTIFIED_FINITE_PRIME_TRANSPORT.md",
+      "destination_git_blob_sha": "738a5f9884bbd6d49c26ef1a685e3c50bb8eb58e",
+      "transformation": "verbatim",
+      "size_bytes_original": 5092
+    },
+    {
+      "original_path": "research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md",
+      "original_git_blob_sha": "65f24f44369375b3cd88fc0743f60c1d5fb2a0d5",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md",
+      "destination_git_blob_sha": "65f24f44369375b3cd88fc0743f60c1d5fb2a0d5",
+      "transformation": "verbatim",
+      "size_bytes_original": 11368
+    },
+    {
+      "original_path": "research/2026-10-10/FINITE_SUCC_HASSE_THETA_SEAM.md",
+      "original_git_blob_sha": "8e6cd9634cfdc20809599174bb7dfe810182cfa3",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/FINITE_SUCC_HASSE_THETA_SEAM.md",
+      "destination_git_blob_sha": "8e6cd9634cfdc20809599174bb7dfe810182cfa3",
+      "transformation": "verbatim",
+      "size_bytes_original": 21765
+    },
+    {
+      "original_path": "research/2026-10-10/GAMMA_ACTUALIZATION_INTERFEROMETER.md",
+      "original_git_blob_sha": "3783cda6cf7fd6489291c871e627841638476ff9",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/GAMMA_ACTUALIZATION_INTERFEROMETER.md",
+      "destination_git_blob_sha": "3783cda6cf7fd6489291c871e627841638476ff9",
+      "transformation": "verbatim",
+      "size_bytes_original": 8322
+    },
+    {
+      "original_path": "research/2026-10-10/INFINITE_REALIZATION_LIMITS.md",
+      "original_git_blob_sha": "7b3f87e5ee9ff28c1339bab93d4327326d8d7526",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/INFINITE_REALIZATION_LIMITS.md",
+      "destination_git_blob_sha": "7b3f87e5ee9ff28c1339bab93d4327326d8d7526",
+      "transformation": "verbatim",
+      "size_bytes_original": 15251
+    },
+    {
+      "original_path": "research/2026-10-10/LAMBERT_SUCC_INVERSE_TREE.md",
+      "original_git_blob_sha": "28e722250768f2c020727a133ff2bcbb2b80adad",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/LAMBERT_SUCC_INVERSE_TREE.md",
+      "destination_git_blob_sha": "28e722250768f2c020727a133ff2bcbb2b80adad",
+      "transformation": "verbatim",
+      "size_bytes_original": 11960
+    },
+    {
+      "original_path": "research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md",
+      "original_git_blob_sha": "04408ed96bd369b5063868eb5ad5664824d18043",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md",
+      "destination_git_blob_sha": "04408ed96bd369b5063868eb5ad5664824d18043",
+      "transformation": "verbatim",
+      "size_bytes_original": 31980
+    },
+    {
+      "original_path": "research/2026-10-10/OBSERVATIONAL_SUCC_GODEL_BRIDGE.md",
+      "original_git_blob_sha": "e17ca3189805c62b4d7a984d8051469377786181",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_GODEL_BRIDGE.md",
+      "destination_git_blob_sha": "e17ca3189805c62b4d7a984d8051469377786181",
+      "transformation": "verbatim",
+      "size_bytes_original": 13102
+    },
+    {
+      "original_path": "research/2026-10-10/OMEGA_SUCC_SECOND_ORDER_WEIL_REPORT.md",
+      "original_git_blob_sha": "72175698dba6c4e5e57e367c4e0763dc74e6c413",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/OMEGA_SUCC_SECOND_ORDER_WEIL_REPORT.md",
+      "destination_git_blob_sha": "72175698dba6c4e5e57e367c4e0763dc74e6c413",
+      "transformation": "verbatim",
+      "size_bytes_original": 21403
+    },
+    {
+      "original_path": "research/2026-10-10/SUCC_GAMMA_PRIME_PATH_GERMS.md",
+      "original_git_blob_sha": "b792cc9f4f8cf3b6a027adc949c67d5995ef0a7a",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/SUCC_GAMMA_PRIME_PATH_GERMS.md",
+      "destination_git_blob_sha": "b792cc9f4f8cf3b6a027adc949c67d5995ef0a7a",
+      "transformation": "verbatim",
+      "size_bytes_original": 11877
+    },
+    {
+      "original_path": "research/2026-10-10/SUCC_SHADOW_WINDOW_CANONICAL_SELECTION.md",
+      "original_git_blob_sha": "d6c590b2032599d37428b3c4b1c2f71ec86a3ec7",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/SUCC_SHADOW_WINDOW_CANONICAL_SELECTION.md",
+      "destination_git_blob_sha": "d6c590b2032599d37428b3c4b1c2f71ec86a3ec7",
+      "transformation": "verbatim",
+      "size_bytes_original": 13510
+    },
+    {
+      "original_path": "scripts/audit_actualization.py",
+      "original_git_blob_sha": "50231e72630b22b2a241ddfe083a9fde836bad04",
+      "destination_path": "scripts/audit_actualization.py",
+      "destination_git_blob_sha": "e54fdd1ec90d00a4b365e941624b612dd85a969f",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 3014
+    },
+    {
+      "original_path": "scripts/balanced_theta_li_probe.py",
+      "original_git_blob_sha": "3ef45632bd8b1af6bf086872e98414a4c35fcdb0",
+      "destination_path": "scripts/balanced_theta_li_probe.py",
+      "destination_git_blob_sha": "18208f6bb92df778c8add69a7c08bab23bb38d3b",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 6481
+    },
+    {
+      "original_path": "scripts/dirichlet_lambert_probe.py",
+      "original_git_blob_sha": "9bdc22c385263b61bb5b99d2f9f06cb59124a434",
+      "destination_path": "scripts/dirichlet_lambert_probe.py",
+      "destination_git_blob_sha": "ea6c80d96d4b1524e5a04266eaa07d132aa04819",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 2957
+    },
+    {
+      "original_path": "scripts/gamma_succ_path_probe.py",
+      "original_git_blob_sha": "083f2a5daae4096e5f6f401417a5873651b9db11",
+      "destination_path": "scripts/gamma_succ_path_probe.py",
+      "destination_git_blob_sha": "24a3c87d5b204b7f6fcc5d7d247e5f4ef4879f3d",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 3721
+    },
+    {
+      "original_path": "scripts/hasse_theta_seam_probe.py",
+      "original_git_blob_sha": "b2269641fd283045d7296d4db7500fe920948144",
+      "destination_path": "scripts/hasse_theta_seam_probe.py",
+      "destination_git_blob_sha": "5d4e2202467c5aed7e34148f99e8489b0a1ce51b",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 7268
+    },
+    {
+      "original_path": "scripts/infinite_realization_demo.py",
+      "original_git_blob_sha": "b38b9a81796b064eeaff58bceae27fde0ebe5dcc",
+      "destination_path": "scripts/infinite_realization_demo.py",
+      "destination_git_blob_sha": "f2c113bbcc10fca835cf7d463168c8bf683561b6",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 2818
+    },
+    {
+      "original_path": "scripts/lambert_succ_probe.py",
+      "original_git_blob_sha": "3b6d7d49a57c164932da21d1cb04248432640b0f",
+      "destination_path": "scripts/lambert_succ_probe.py",
+      "destination_git_blob_sha": "8510f16f7e874d2c9695de1d2f5686eed078b7e4",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 4469
+    },
+    {
+      "original_path": "scripts/mutate_actualization.py",
+      "original_git_blob_sha": "671ad5311e3ab038b0a0bb3a798ca5c05184b88c",
+      "destination_path": "scripts/mutate_actualization.py",
+      "destination_git_blob_sha": "4e2e2e44a0ce1305ff568917ab3981279d68e5a7",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 4242
+    },
+    {
+      "original_path": "scripts/operational_actualization_probe.py",
+      "original_git_blob_sha": "88d44dccede4a7879caec7542c8f59373f381208",
+      "destination_path": "scripts/operational_actualization_probe.py",
+      "destination_git_blob_sha": "0d02422392f00a73b4455684d6bcd54c2f510fb9",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 6762
+    },
+    {
+      "original_path": "scripts/ordinal_succ_report_probe.py",
+      "original_git_blob_sha": "893bf844a70d1586de80c8bf2e360335be0662be",
+      "destination_path": "scripts/ordinal_succ_report_probe.py",
+      "destination_git_blob_sha": "21cf54813695584360ab828acf51455f27c91425",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 7610
+    },
+    {
+      "original_path": "scripts/prime_source_certificates_probe.py",
+      "original_git_blob_sha": "70bfe1a6f5c11c7d0441e144ff821956a66be0ee",
+      "destination_path": "scripts/prime_source_certificates_probe.py",
+      "destination_git_blob_sha": "ab25fcc1c73cbf20a5727c57b3d5fe9a0f2852dd",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 4330
+    },
+    {
+      "original_path": "tests/actualization/test_balanced_theta_li.py",
+      "original_git_blob_sha": "734c08d85111de7674e09624756c3f2ab3dc122e",
+      "destination_path": "tests/test_balanced_theta_li.py",
+      "destination_git_blob_sha": "37c01cdb20db90d1d6c3523277c5ba8cd63deb5d",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 13002
+    },
+    {
+      "original_path": "tests/actualization/test_category.py",
+      "original_git_blob_sha": "f2b548ca90f2c8784d82701b94f652b61e105e00",
+      "destination_path": "tests/test_category.py",
+      "destination_git_blob_sha": "1d9bc8a954fe012707222d2b65b7f8a77c7e554c",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 7495
+    },
+    {
+      "original_path": "tests/actualization/test_circle_transport.py",
+      "original_git_blob_sha": "f2873f423a7d86dfb6d3811bf160aa976709db2a",
+      "destination_path": "tests/test_circle_transport.py",
+      "destination_git_blob_sha": "d462bead323831bd4e91a817f9b22e4ccfe9c9ab",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 4474
+    },
+    {
+      "original_path": "tests/actualization/test_dirichlet_lambert.py",
+      "original_git_blob_sha": "29941a0a94ce8ad39861969e0bc70104235aad15",
+      "destination_path": "tests/test_dirichlet_lambert.py",
+      "destination_git_blob_sha": "ebd0bb59a528b21f36a676c80619472016e084f0",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 9077
+    },
+    {
+      "original_path": "tests/actualization/test_engine.py",
+      "original_git_blob_sha": "59bf8a5a055e2f8d494e667be53d89dc87773ca7",
+      "destination_path": "tests/test_engine.py",
+      "destination_git_blob_sha": "072cc3079045309cc08e598da85cd88c918b59d5",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 8829
+    },
+    {
+      "original_path": "tests/actualization/test_fields.py",
+      "original_git_blob_sha": "b5faca0361619a237daa13c4cfdc63ecc9d275d3",
+      "destination_path": "tests/test_fields.py",
+      "destination_git_blob_sha": "bd8612e3fb6b57f3f0e6f94a371c5426c3326e49",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 4917
+    },
+    {
+      "original_path": "tests/actualization/test_gamma_interferometer.py",
+      "original_git_blob_sha": "452470f33cb84377a027486d6b23e647aab64932",
+      "destination_path": "tests/test_gamma_interferometer.py",
+      "destination_git_blob_sha": "d35d45374a1e50e0d621f33b19553c9b931adf72",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 5968
+    },
+    {
+      "original_path": "tests/actualization/test_gamma_succ_path.py",
+      "original_git_blob_sha": "e7fe835a685cc419c7dd86a86f107e0b17f9700e",
+      "destination_path": "tests/test_gamma_succ_path.py",
+      "destination_git_blob_sha": "81e9239c36d55319706932b7ee1ceb8d61be27a5",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 11206
+    },
+    {
+      "original_path": "tests/actualization/test_godel_succ.py",
+      "original_git_blob_sha": "f7bde3783b06323c75c892c5c4b72e60514faec1",
+      "destination_path": "tests/test_godel_succ.py",
+      "destination_git_blob_sha": "fd5de20fa26c22eb87c3aeeaa70d7636be119115",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 3370
+    },
+    {
+      "original_path": "tests/actualization/test_hasse_theta_seam.py",
+      "original_git_blob_sha": "c9fa2ef88781388feecec60efba115ea9bf6c4b0",
+      "destination_path": "tests/test_hasse_theta_seam.py",
+      "destination_git_blob_sha": "79aa92467026331ec983c0d8a1dc8d04b24b96b9",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 19993
+    },
+    {
+      "original_path": "tests/actualization/test_infinite_realization.py",
+      "original_git_blob_sha": "a299e865b54009d874d6724a1643fe1de59d4336",
+      "destination_path": "tests/test_infinite_realization.py",
+      "destination_git_blob_sha": "5d63eaa1b97f4a01d5c9eefd7ec3de2b64fabfd7",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 9669
+    },
+    {
+      "original_path": "tests/actualization/test_lambert_succ.py",
+      "original_git_blob_sha": "d85f4c09005e1f9faf63f0382669a0a1febb5b2d",
+      "destination_path": "tests/test_lambert_succ.py",
+      "destination_git_blob_sha": "bcbb2880b80b151a0271fa22f71e4622a70cd67c",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 9935
+    },
+    {
+      "original_path": "tests/actualization/test_local_global.py",
+      "original_git_blob_sha": "e98551415907471dcf6c469e4ee2eacead25b76b",
+      "destination_path": "tests/test_local_global.py",
+      "destination_git_blob_sha": "931857df528b330bfde99d24cb0c3005a3fc96a0",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 5797
+    },
+    {
+      "original_path": "tests/actualization/test_observer_logic.py",
+      "original_git_blob_sha": "008ca3687ef5e1aee95ddeb62f789f97089e43f8",
+      "destination_path": "tests/test_observer_logic.py",
+      "destination_git_blob_sha": "5d931ae22678f02b672b13d4ded249df5965cd4c",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 9842
+    },
+    {
+      "original_path": "tests/actualization/test_observer_reflection.py",
+      "original_git_blob_sha": "a3c4f8329d938b704d9a80cca4869ebf253fedbe",
+      "destination_path": "tests/test_observer_reflection.py",
+      "destination_git_blob_sha": "b14af219f4b51d9f778516a621ec9b60d739954e",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 11398
+    },
+    {
+      "original_path": "tests/actualization/test_ordinal_succ_report.py",
+      "original_git_blob_sha": "c3e2be3ab407e5c2b85cc95fa04c8478a1978494",
+      "destination_path": "tests/test_ordinal_succ_report.py",
+      "destination_git_blob_sha": "547eb33163c0b543b08cd27a8315f51c52b12eb7",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 15462
+    },
+    {
+      "original_path": "tests/actualization/test_resource_probe.py",
+      "original_git_blob_sha": "0c0263d5a42a41460184d4a7ae3a09866eed4f46",
+      "destination_path": "tests/test_resource_probe.py",
+      "destination_git_blob_sha": "15e4391145f1e2586db95d59f5f022bc1e826b5b",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 7538
+    },
+    {
+      "original_path": "tests/actualization/test_shadow.py",
+      "original_git_blob_sha": "cbe1d6e4018427d488036aad93e19f8fcc8bcafc",
+      "destination_path": "tests/test_shadow.py",
+      "destination_git_blob_sha": "02ee0ecae118552afe8a4b64e368e715a0476bcf",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 8066
+    },
+    {
+      "original_path": "tests/actualization/test_source_prime_certificates.py",
+      "original_git_blob_sha": "f0abd9770d0ba82a8a599461c988d18bde2213ab",
+      "destination_path": "tests/test_source_prime_certificates.py",
+      "destination_git_blob_sha": "6f8f42d77cc56ec13be3f65a09b6f3db74bb2b1a",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 7483
+    },
+    {
+      "original_path": "tests/actualization/test_succ_shadow_window.py",
+      "original_git_blob_sha": "7c2e24ac036e98d4020eb8a18e60da3379c1ccff",
+      "destination_path": "tests/test_succ_shadow_window.py",
+      "destination_git_blob_sha": "fa8192d1404d800bbde1cb929b5178334e9ebda8",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 8687
+    },
+    {
+      "original_path": "wiki/09-observational-succ-and-computability.md",
+      "original_git_blob_sha": "8233709bd77b89ff67477313f6911d3cec44fb07",
+      "destination_path": "provenance/origins/fuckingrh/wiki/09-observational-succ-and-computability.md",
+      "destination_git_blob_sha": "8233709bd77b89ff67477313f6911d3cec44fb07",
+      "transformation": "verbatim",
+      "size_bytes_original": 10483
+    }
+  ]
+}
