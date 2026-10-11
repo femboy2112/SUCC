@@ -410,6 +410,79 @@ def verify_probe_value(
 
 
 @dataclass(frozen=True)
+class ProbeDecisionPlan:
+    """Exact context-relative certificate that a probe SETTLES a target.
+
+    This is a conditional experiment plan, NOT knowledge of the actual
+    outcome. A mathematical option may be target-complete while physically
+    inaccessible to the observer.
+    """
+    probe: str
+    basis: str
+    context_position: str
+    branch_targets: tuple[tuple[str, tuple[str, ...]], ...]
+    target_already_identified: bool
+    probe_separates_target: bool
+    epistemically_available: bool
+    physically_executable: bool
+    one_physical_observation_can_finish: bool
+
+
+def certify_probe_decision(
+    observer: AgentKnowledge, basis: SharedKnowledgeBasis,
+    probe: str, target: dict[str, str],
+) -> ProbeDecisionPlan:
+    """Prove that every POSSIBLE result of the probe determines target T.
+
+    If T varies across the compatible fiber, knowing such a plan can save
+    probe *search* without itself identifying the target. Physical execution
+    still requires an actually available instrument and its actual outcome.
+    """
+    if probe not in basis.world.probes:
+        raise RelativeDeltaError("Decision probe absent from common mathematical basis")
+    if not isinstance(target, dict):
+        raise RelativeDeltaError("Declare exact source-relative target values")
+    model = observer.model(basis)
+    if any(x not in target or type(target[x]) is not str or not target[x]
+           for x in model.compatible):
+        raise RelativeDeltaError("Target is not defined for all compatible sources")
+    possible_targets = {target[x] for x in model.compatible}
+    outputs = tuple(sorted({basis.world.outcome(x, probe)
+                            for x in model.compatible}))
+    branches = tuple(
+        (y, tuple(sorted({target[x] for x in model.compatible
+                          if basis.world.outcome(x, probe) == y})))
+        for y in outputs
+    )
+    sufficient = all(len(values) == 1 for _, values in branches)
+    already = len(possible_targets) == 1
+    registered = dict(basis.observers)
+    executable = probe in registered[observer.observer]
+    epistemic = probe in model.epistemically_accessible
+    return ProbeDecisionPlan(
+        probe, basis.fingerprint, operational_digest(observer, basis),
+        branches, already, sufficient, epistemic, executable,
+        not already and sufficient and epistemic and executable
+        and probe not in {p for p, _ in observer.observations()},
+    )
+
+
+def verify_probe_decision(
+    observer: AgentKnowledge, basis: SharedKnowledgeBasis,
+    target: dict[str, str], proof: ProbeDecisionPlan,
+) -> bool:
+    """Independent replay of the conditional proof; no physical result forged."""
+    if not isinstance(proof, ProbeDecisionPlan):
+        raise RelativeDeltaError("A typed proof of probe sufficiency is required")
+    if (proof.basis != basis.fingerprint
+            or proof.context_position != operational_digest(observer, basis)):
+        raise RelativeDeltaError("Experiment plan was proved in a different context")
+    if certify_probe_decision(observer, basis, proof.probe, target) != proof:
+        raise RelativeDeltaError("The proposed probe decision table is incorrect")
+    return True
+
+
+@dataclass(frozen=True)
 class DerivedBooleanConcept:
     """A source-independent verified definition, not a physical discovery."""
     new_probe: str
