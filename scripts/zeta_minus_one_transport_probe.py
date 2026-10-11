@@ -17,6 +17,12 @@ def main():
     assert x["status"]=="ZETA_MINUS_ONE_GLOBAL_EULER_ARCHIMEDEAN_TRANSPORT"
     assert x["local_prime_minus_one_factor"]=="-1/(p-1)"
     assert x["prime_jet_first_return_gap"]=="p-1"
+    assert x["shift_dilation_one_step_address_defect"]=="1-p"
+    assert x["ax_b_operator_semigroup_relation"]=="V_p S = S^p V_p"
+    assert x["same_shift_dilation_defect_rule_for_composite_six"] is True
+    assert x["nonprime_affine_defect_does_not_authorize_euler_prime_factor"] is True
+    assert x["operator_commutator_claimed_scalar"] is False
+    assert x["cuntz_ax_b_finite_arch_completion_proved_here"] is False
     assert x["global_zeta_minus_one_value"]=="-1/12"
     assert x["completed_zeta_symmetric_values"]=="Lambda(-1)=Lambda(2)=pi/6"
     assert x["local_factor_partial_products_tend_to_zero"] is True
