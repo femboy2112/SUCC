@@ -22,6 +22,7 @@
 | Basis-indexed relative boundary transport | Anchored sparse additive coefficient messages, noncommuting action paths, proof-certified value sharing, exact finite Fourier boundary inverse and finite-precision/source-class obstruction probes | basis_boundary_transport |
 | Discrete SUCC integration and frame-aware jets | Shared versioned initial condition, exact finite first difference streams, Newton source-law jets, rational covariant frame derivatives and ordered affine prefix scans | succ_discrete_integration |
 | Euler local/global transport at −1 | Prime Euler factors as rational continuation, prime-jet gap τ_{p,0}=p-1, noncommuting infinite product/analytic continuation, source-specific Γ reflection from convergent s=2 with exact tail and mutation controls | zeta_minus_one_transport |
+| Residue-one p-adic place diagnostics | Local Euler factor 1/(1-p) as convergent Qp series and residue-one unit, compact-idelic norm nonreconstruction of infinity, factorial profinite limits, exact product-formula source comparison and weight-two p-adic zeta interpolation | residue_one_arch |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -91,6 +92,16 @@ Finite Hard SUCC exhausts an exact finite rule/probe universe. For an infinite t
 A source- and report-preserving inter-observer completion requires a finite message, common decoding semantics, and trustworthy causal evidence. The exact full-frame message includes source-compatible lawful probe-acquisition replay, while a shorter target-only witness explicitly lacks that provenance. Finite-alphabet exact universal communication of arbitrary real constants is impossible by countability. For finite one-shot zero-error communication with receiver side information, the optimal fixed-length bit budget is derived from the confusability graph chromatic number, not from mere probe count.
 
 See [the formal research memo](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md) and claim ledger O55–O66. The finite implementations do not automatically transport to general neural, quantum, or RH settings.
+
+## Residue-one local Euler units are not a scalar Archimedean valuation
+
+For every prime p, the finite factor `(1-p)^-1` at s=-1 is genuinely `sum_k p^k` in Q_p; its exact geometric tail has valuation k, local value lies in `1+p Z_p` and local norm is 1. This is a GOOD local SUCC-jet model with its own topology, not ordinary convergence of the complex Euler product.
+
+All these units form a non-diagonal idele with finite norms 1; the attached real component is not determined by multiplying those norms. The rational product formula applies to diagonal rational values and at -1/12 includes nonunit 2-adic and 3-adic valuations. The compact group of local residue-one units has no nontrivial continuous group hom to positive real magnitudes: any such hom image must be a compact subgroup, necessarily {1}. This limits *that proposed operation*, not global Fourier/Poisson or analytic continuation.
+
+A construction `m!+1` converges to 1 at each fixed Q_p while diverging in the real absolute value; its prime divisors exceed m but the number can be composite. "Prime at infinity" is suggestive language, not a prime number constructed by limit.
+
+For odd p, the relevant **weight-two Kubota–Leopoldt branch** satisfies `zeta_{p,wt2}(-1)=(1-p)zeta(-1)`, an imported theorem depending on Kummer congruences, p-adic measures and Teichmüller branch. The code only verifies exact rational special-value consequences and does not construct the analytic p-adic L-function. Tate global adelic zeta integrals provide actual finite Euler and Archimedean Gamma compatibility via Schwartz–Bruhat test functions and Poisson summation. This is the strongest established research comparison for SUCC. See [research dossier](../research/2026-10-11/RESIDUE_ONE_ADELES_AND_WEIGHT_TWO_INTERPOLATION.md), O140–O148.
 
 ## Source-specific local/global analytic transport
 
