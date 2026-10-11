@@ -21,6 +21,7 @@
 | Proof-carrier coherence and dependency contraction | Typed original-versus-modified source readings, destructive probe transitions, minimal logical evidence supports, operational impossibility and positive repairs | probe_coherence |
 | Basis-indexed relative boundary transport | Anchored sparse additive coefficient messages, noncommuting action paths, proof-certified value sharing, exact finite Fourier boundary inverse and finite-precision/source-class obstruction probes | basis_boundary_transport |
 | Discrete SUCC integration and frame-aware jets | Shared versioned initial condition, exact finite first difference streams, Newton source-law jets, rational covariant frame derivatives and ordered affine prefix scans | succ_discrete_integration |
+| Euler local/global transport at −1 | Prime Euler factors as rational continuation, prime-jet gap τ_{p,0}=p-1, noncommuting infinite product/analytic continuation, source-specific Γ reflection from convergent s=2 with exact tail and mutation controls | zeta_minus_one_transport |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -90,6 +91,14 @@ Finite Hard SUCC exhausts an exact finite rule/probe universe. For an infinite t
 A source- and report-preserving inter-observer completion requires a finite message, common decoding semantics, and trustworthy causal evidence. The exact full-frame message includes source-compatible lawful probe-acquisition replay, while a shorter target-only witness explicitly lacks that provenance. Finite-alphabet exact universal communication of arbitrary real constants is impossible by countability. For finite one-shot zero-error communication with receiver side information, the optimal fixed-length bit budget is derived from the confusability graph chromatic number, not from mere probe count.
 
 See [the formal research memo](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md) and claim ledger O55–O66. The finite implementations do not automatically transport to general neural, quantum, or RH settings.
+
+## Source-specific local/global analytic transport
+
+The local Euler factor `E_p(s)=(1-p^-s)^-1` is meromorphic and at s=-1 equals `-1/(p-1)`, the negative inverse first SUCC/FUCC prime return gap. **Continuing every local factor and multiplying finite prime cutoffs is NOT a lawful global continuation**: the partial products go to 0. The globally assembled zeta Euler product is initially defined only for Re(s)>1; its unique meromorphic continuation gives ζ(-1)=-1/12.
+
+The correct arithmetic/Archimedean bridge is the **global zeta functional equation**, which transports ζ(-1) to `-ζ(2)/(2π²)`; ζ(2) has the authentic convergent Euler product. A cutoff through X admits the exact upper error `1/(12X)` using the integer telescoping majorant. This is a rigorous finite-prime-to-continued-value protocol, not execution of an infinite divergent walk or a literal physical holographic interface.
+
+The p=2 factor deletion and fake-composite p=6 mutate the arithmetic source: blindly reusing the original Gamma multiplier becomes demonstrably wrong, even though each local rational factor remains individually meaningful. No unknown RH zero locations enter. The gap between locally valid pieces and globally valid compatibility is a **source/data/analytic-domain problem** requiring certified transport, not evidence of intrinsic mathematical unprovability. See [Euler local-global research](../research/2026-10-11/EULER_LOCAL_GLOBAL_MINUS_ONE_TRANSPORT.md), ledger O128–O135.
 
 ## Finite-difference SUCC and moving-frame reconstruction
 
