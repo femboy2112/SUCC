@@ -18,6 +18,7 @@ nor decoding independently authenticates real-world measurement outcomes.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from itertools import combinations
 import json
 from typing import Mapping
 
@@ -241,6 +242,107 @@ def target_values(model: AbsorbedModel, target: Mapping[str, str]) -> tuple[str,
     return tuple(sorted({target[x] for x in model.compatible}))
 
 
+def _lawful_endogenous_replay(frame: AbsorbingFrame,
+                              protocol: AbsorbingProtocol) -> bool:
+    """There exists some source fitting data whose genuine policy trace matches.
+
+    This is a finite existence certificate for an unbroken access path.
+    It cannot authenticate that any particular source was physically actual.
+    """
+    model = frame.absorb(protocol)
+    return any(
+        (candidate_frame := AbsorbingFrame().hard_succ(protocol, source)).observations ==
+        frame.observations and candidate_frame.blocked_attempts == frame.blocked_attempts
+        for source in model.compatible
+    )
+
+
+@dataclass(frozen=True)
+class TargetWitness:
+    """Minimum NUMBER of observed probe outcomes that fixes the desired target.
+
+    This ignores access-path provenance intentionally; it is a semantic
+    sufficient statistic under a shared source/probe table, not a complete
+    reproduction of the causal history or of all absorbing-model phenomena.
+    """
+
+    observations: tuple[tuple[str, str], ...]
+    target_value: str
+    candidate_sources: tuple[str, ...]
+    full_observation_count: int
+    minimal_probe_count: int
+    requires_independent_measurement_authentication: bool = True
+
+
+def minimal_target_witness(frame: AbsorbingFrame, protocol: AbsorbingProtocol,
+                           target: Mapping[str, str]) -> TargetWitness:
+    """Exact exhaustive finite minimization of a target-sufficient transcript.
+
+    For n observed outcomes, enumerate subsets by increasing cardinality.
+    The selected witness fixes the same target for EVERY compatible source.
+    An optimal probe-COUNT certificate need not minimize serialized bit length.
+    """
+    if not frame.quiescent(protocol) or not _lawful_endogenous_replay(frame, protocol):
+        raise AbsorptionError("Require a lawful, saturated source-compatible input frame")
+    model = frame.absorb(protocol)
+    full_values = target_values(model, target)
+    if len(full_values) != 1:
+        raise AbsorptionError("Target is not identifiable from available observations")
+    observations = frame.observations
+    for length in range(len(observations) + 1):
+        for subset in combinations(observations, length):
+            candidates = tuple(x for x in protocol.world.sources
+                               if all(protocol.world.outcome(x, p) == y
+                                      for p, y in subset))
+            temp = AbsorbedModel(candidates, subset, (), (), (), (),
+                                 ClosureCertificate((), (), True))
+            vals = target_values(temp, target)
+            if len(vals) == 1 and vals == full_values:
+                return TargetWitness(subset, vals[0], candidates,
+                                     len(observations), length)
+    raise ArithmeticError("The full reported transcript should always be sufficient")
+
+
+def transmit_target_witness(witness: TargetWitness) -> bytes:
+    """Compressed target-only evidence, NOT certified probe-access history."""
+    if not isinstance(witness, TargetWitness):
+        raise AbsorptionError("Require an exact target sufficiency witness")
+    payload = {"protocol": "obs-succ-target-v1", "target": witness.target_value,
+               "observed": [[p, y] for p, y in witness.observations],
+               "scope": "target-only-no-access-proof"}
+    return json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+
+
+def receive_target_witness(payload: bytes, protocol: AbsorbingProtocol,
+                           target: Mapping[str, str]) -> str:
+    """Independent target inference; no assertion of causal-execution provenance."""
+    if type(payload) is not bytes or len(payload) > 1_000_000:
+        raise AbsorptionError("Bounded target-witness bytes required")
+    try:
+        data = json.loads(payload.decode("utf-8"))
+    except (ValueError, UnicodeError) as exc:
+        raise AbsorptionError("Invalid target witness JSON") from exc
+    if (type(data) is not dict or set(data) != {"protocol", "target", "observed", "scope"}
+            or data["protocol"] != "obs-succ-target-v1"
+            or data["scope"] != "target-only-no-access-proof"
+            or type(data["observed"]) is not list):
+        raise AbsorptionError("Unsupported target-only channel language")
+    try:
+        subset = tuple(tuple(item) if type(item) is list else item
+                       for item in data["observed"])
+        # Source compatibility only, NOT hard-SUCC lawful access replay.
+        frame = AbsorbingFrame(subset)
+        model = frame.absorb(protocol)
+        vals = target_values(model, target)
+    except (ValueError, TypeError) as exc:
+        if isinstance(exc, AbsorptionError):
+            raise
+        raise AbsorptionError("Malformed target evidence") from exc
+    if len(vals) != 1 or vals[0] != data["target"]:
+        raise AbsorptionError("Target assertion unsupported by attached evidence")
+    return vals[0]
+
+
 def transmit_frame(frame: AbsorbingFrame, protocol: AbsorbingProtocol,
                    target: Mapping[str, str]) -> bytes:
     """Finite-channel completion of target ONLY if all compatible sources agree.
@@ -251,6 +353,8 @@ def transmit_frame(frame: AbsorbingFrame, protocol: AbsorbingProtocol,
     """
     if not frame.quiescent(protocol):
         raise AbsorptionError("Cannot label unfinished probe exploration complete")
+    if not _lawful_endogenous_replay(frame, protocol):
+        raise AbsorptionError("No lawful endogenous probe-access path produces the claimed report")
     model = frame.absorb(protocol)
     values = target_values(model, target)
     if len(values) != 1:
@@ -292,6 +396,8 @@ def receive_frame(payload: bytes, protocol: AbsorbingProtocol,
         model = frame.absorb(protocol)
         if not frame.quiescent(protocol):
             raise AbsorptionError("Receiver detects incomplete frame")
+        if not _lawful_endogenous_replay(frame, protocol):
+            raise AbsorptionError("Receiver cannot reproduce a lawful probe-access path")
         possible = target_values(model, target)
         if len(possible) != 1 or possible[0] != obj["target"]:
             raise AbsorptionError("Transmitted completion contradicts surviving source class")
