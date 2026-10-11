@@ -163,7 +163,7 @@ class ObserverTrapTests(unittest.TestCase):
         with self.assertRaises(ObserverTrapError):
             ProbePolicy((("A", ("echo",)), ("B", ("bogus",)))).validate(w)
         with self.assertRaises(ObserverTrapError):
-            ProbePolicy((("A", ("echo",)),))
+            ProbePolicy((("A", ("echo",)),)).validate(w)
         with self.assertRaises(ObserverTrapError):
             ProbePolicy((("A", ("echo",)), ("B", ("echo",))),
                         scheduling="magical")
