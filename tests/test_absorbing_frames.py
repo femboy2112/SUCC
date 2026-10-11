@@ -8,6 +8,7 @@ from observational_succ.absorbing_frames import (
     AbsorptionError, HornRule, least_horn_closure,
     AbsorbingProtocol, AbsorbingFrame, target_values,
     transmit_frame, receive_frame, absorbing_demo,
+    minimal_target_witness, transmit_target_witness, receive_target_witness,
 )
 
 
@@ -194,6 +195,79 @@ class AbsorbingFramesTests(unittest.TestCase):
         # only the existing recorded coarse outcome is checked. A can still
         # give a compatible coarse trace. There is deliberately no hidden
         # memory of the true source inside AbsorbingFrame itself.
+
+    def test_minimal_target_witness_is_exact_and_does_not_claim_full_history(self):
+        protocol = setup_world()
+        full = AbsorbingFrame().hard_succ(protocol, "B")
+        full_packet = transmit_frame(full, protocol, {"A": "A", "B": "B"})
+        witness = minimal_target_witness(full, protocol, {"A": "A", "B": "B"})
+        self.assertEqual(witness.observations, (("fine", "B"),))
+        self.assertEqual(witness.minimal_probe_count, 1)
+        self.assertEqual(witness.full_observation_count, 2)
+        packet = transmit_target_witness(witness)
+        self.assertLess(len(packet), len(full_packet))
+        self.assertEqual(receive_target_witness(packet, protocol,
+                                                {"A": "A", "B": "B"}), "B")
+        body = json.loads(packet.decode("utf-8"))
+        self.assertEqual(body["scope"], "target-only-no-access-proof")
+        self.assertTrue(witness.requires_independent_measurement_authentication)
+        # This shorter witness cannot reproduce the lawful fine-probe unlock:
+        # the missing coarse observation was the enablement cause.
+        with self.assertRaises(AbsorptionError):
+            transmit_frame(AbsorbingFrame((("fine", "B"),)), protocol,
+                           {"A": "A", "B": "B"})
+        with self.assertRaises(AbsorptionError):
+            receive_frame(
+                json.dumps({
+                    "protocol": "obs-succ-absorbing-v1", "observed": [["fine", "B"]],
+                    "blocked": [], "target": "B",
+                }).encode("utf-8"),
+                protocol, {"A": "A", "B": "B"})
+
+    def test_optimal_target_witness_can_use_zero_observations(self):
+        protocol = setup_world(("coarse",))
+        full = AbsorbingFrame().hard_succ(protocol, "B")
+        shared_target = {"A": "common", "B": "common"}
+        witness = minimal_target_witness(full, protocol, shared_target)
+        self.assertEqual(witness.minimal_probe_count, 0)
+        self.assertEqual(witness.observations, ())
+        self.assertEqual(receive_target_witness(
+            transmit_target_witness(witness), protocol, shared_target), "common")
+        # A zero-outcome target certificate is not a claim of knowing which
+        # of the two compatible sources is actual.
+
+    def test_self_supporting_observation_is_not_an_access_certificate(self):
+        # An observation cannot be allowed to bootstrap its own enabling
+        # instrument through circular post hoc use of the closure rules.
+        world = FiniteProbeWorld(
+            ("A", "B"), ("fine",), (("A",), ("B",))
+        )
+        cyclic = AbsorbingProtocol(
+            world, (), (HornRule(("obs:fine:B",), "can:fine"),), ("fine",),
+        )
+        fake_history = AbsorbingFrame((("fine", "B"),))
+        self.assertTrue(fake_history.absorb(cyclic).identified)
+        self.assertTrue(fake_history.quiescent(cyclic))
+        with self.assertRaises(AbsorptionError):
+            transmit_frame(fake_history, cyclic, {"A": "A", "B": "B"})
+        self.assertEqual(AbsorbingFrame().hard_succ(cyclic, "B"),
+                         AbsorbingFrame())
+        # Merely fitting the final truth isn't a lawful causal observation.
+
+    def test_witness_rejection_of_false_or_mutated_target(self):
+        protocol = setup_world()
+        full = AbsorbingFrame().hard_succ(protocol, "B")
+        w = minimal_target_witness(full, protocol, {"A": "A", "B": "B"})
+        d = json.loads(transmit_target_witness(w).decode("utf-8"))
+        d["target"] = "A"
+        with self.assertRaises(AbsorptionError):
+            receive_target_witness(json.dumps(d).encode(), protocol,
+                                   {"A": "A", "B": "B"})
+        d["target"] = "B"
+        d["scope"] = "full-source-replay"
+        with self.assertRaises(AbsorptionError):
+            receive_target_witness(json.dumps(d).encode(), protocol,
+                                   {"A": "A", "B": "B"})
 
     def test_demo_reports_both_access_boundaries(self):
         result = absorbing_demo()
