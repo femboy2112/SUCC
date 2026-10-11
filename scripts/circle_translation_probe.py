@@ -23,6 +23,10 @@ def main():
     assert report["reflected_winding_sign_inverted"] is True
     assert report["identical_finite_phase_samples"] is True
     assert report["different_true_winding_numbers"] is True
+    assert report["pairwise_rational_time_separator"] == "1/5"
+    assert report["all_rational_times_identify_integer_winding_ideal_theorem"] is True
+    assert report["any_fixed_finite_rational_sample_family_identifies_unbounded_winding"] is False
+    assert report["infinite_rational_probe_sequence_executed"] is False
     assert report["matching_sampled_windings"] == [1,5]
     assert report["full_path_observability_proved_by_samples"] is False
     assert report["general_two_theory_translation_proved"] is False
