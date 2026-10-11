@@ -18,6 +18,7 @@
 | Relative delta and evolving proof language | Position-anchored path directions, nonredundant value choices, full knowledge/probe/reasoner signature, conservative concept upgrades and contextual probe-result proof checks | relative_delta |
 | Cross-language exact calibration | Polynomial circle ring and Fourier angular reports, compatible tangential derivations and global one-form, orientation/chart scope, static-point versus path/winding probe aliases | circle_translation |
 | Twin-observer field invariance | Same physical source/probes/reasoner, distinct investigation focus, exact common tangent translation, relative testimony and flat smooth-loop finite-jet adversary | twin_circle_observers |
+| Proof-carrier coherence and dependency contraction | Typed original-versus-modified source readings, destructive probe transitions, minimal logical evidence supports, operational impossibility and positive repairs | probe_coherence |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -87,6 +88,16 @@ Finite Hard SUCC exhausts an exact finite rule/probe universe. For an infinite t
 A source- and report-preserving inter-observer completion requires a finite message, common decoding semantics, and trustworthy causal evidence. The exact full-frame message includes source-compatible lawful probe-acquisition replay, while a shorter target-only witness explicitly lacks that provenance. Finite-alphabet exact universal communication of arbitrary real constants is impossible by countability. For finite one-shot zero-error communication with receiver side information, the optimal fixed-length bit budget is derived from the confusability graph chromatic number, not from mere probe count.
 
 See [the formal research memo](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md) and claim ledger O55–O66. The finite implementations do not automatically transport to general neural, quantum, or RH settings.
+
+## Carrier modification versus source-faithful proof support
+
+A state-changing probe may still yield meaningful *current-carrier* data while losing its lawful interpretation as evidence about the *initial source*. A proof certificate concerning the initial state needs correctly typed provenance through every carrier transition; a source-initial reading cannot be forged by re-labeling a modified-carrier event. This is a source-relative **probe-coherence horizon**, not a literal Riemann sphere, black-hole singularity, quantum holography, or logical impossibility theorem.
+
+The exact two-bit model exposes a strict gap between a target's **inclusion-minimal logically sufficient primitive probe sets** and the sets that can be jointly actualized by one available physical carrier: original XOR requires both a and b, but either probe destroys the initial-state meaning of the other. Deterministic adaptive protocols are defeated by opposite-parity sources with identical complete future traces.
+
+Independently validated mathematical lemmas can contract/re-route the dependency hypergraph: a=0 changes original parity support from {a,b} to {b}; a=b removes the empirical requirement. A second source preparation or nondestructive instrument also defeats the no-go. Consequently the horizon is a theorem of a specified source/probe/physical-resource contract—not a theorem that RH or any other mathematical statement lacks a proof.
+
+See [Probe coherence horizon research](../research/2026-10-11/PROBE_COHERENCE_HORIZONS_AND_PROOF_SUPPORT.md), claims O102–O108. General proof categories, sheaf descent and source-derived arithmetic/Weil transport remain open.
 
 ## The strict twin-observer assumption
 
