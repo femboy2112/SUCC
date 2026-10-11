@@ -143,6 +143,20 @@ Research: [Finite-difference SUCC integration](../research/2026-10-11/FINITE_DIF
 
 Evidence: [Euler local/global minus-one transport](../research/2026-10-11/EULER_LOCAL_GLOBAL_MINUS_ONE_TRANSPORT.md), zeta_minus_one_transport.py, tests/test_zeta_minus_one_transport.py, ledger O128–O135.
 
+## Residue-one Euler units and Archimedean normalization constraints
+
+**Maintainer's sharpened conjecture:** every prime p in the original Euler product contributes a LOCAL residue-one unit at s=-1; perhaps all such normalized finite places jointly determine the infinite-place component. The precise positive fact is `E_p(-1)=1/(1-p)=sum_{k>=0} p^k` converging in `Q_p`, with exact K-term p-adic error valuation K, residue 1 and local norm 1. These are genuine, not formal, local arithmetic structures.
+
+**Fatal naive step:** a product of different local units does not determine a real magnitude. The non-diagonal unit tuple has all finite idelic norms 1 and admits any nonzero real component. A continuous group hom from the compact `prod_p(1+p Z_p)` to `R>0` is necessarily trivial. The ordinary product formula applies to a SINGLE diagonally embedded rational; -1/12 itself requires nonunit 2-adic and 3-adic norms whose product is 12.
+
+**Exact finite/infinite topology control:** m!+1 tends to 1 in every fixed Q_p (indeed in profinite Z-hat) but diverges to infinity in R. Each prime divisor exceeds m; m!+1 is not always prime (5!+1=121). No ordinary integer n>1 is 1 modulo literally every prime.
+
+**Actual existing interpolation:** Kubota–Leopoldt weight-two p-adic zeta, on the CORRECT Teichmüller residue branch, satisfies `zeta_{p,wt2}(-1)=(1-p)zeta(-1)=(p-1)/12`. This is an IMPORTED analytic theorem using p-adic measures/Kummer congruences, not a product of residue-one elements. Tate's adelic Poisson and local zeta-integral framework builds both finite Euler factors and the real Gamma factor.
+
+**Next:** work in correct weight spaces and full test-function/idele classes. Build source/branch-preserving maps from SUCC prime jets to local zeta integrals, then check global additive Fourier/Poisson and Gamma compatibility, source mutations, and completed Weil identification. No nontrivial-zero-reading, no RH proof claim.
+
+Evidence: [Residue-one adeles and interpolation](../research/2026-10-11/RESIDUE_ONE_ADELES_AND_WEIGHT_TWO_INTERPOLATION.md), residue_one_arch.py, tests/test_residue_one_arch.py, ledger O140–O148.
+
 ## Stage 2: rigorous logic and ordinal realization
 
 - Formalize a full proof-predicate/representability story for syntax and diagonal substitution in a proof assistant (Lean, Coq or Isabelle), clearly separating the project’s finite syntax engine from established Gödel theorems.
