@@ -16,7 +16,7 @@
 | Finite communication | Target-specific sufficiency, causal access certificates and bit-minimal zero-error receiver-side-information coding | interobserver_channels |
 | Knowledge-aided observer synchronization | Shared basis checks, source-attested local probe batches, strict epistemic catch-up and snapshot-only optimizations | knowledge_ladder |
 | Relative delta and evolving proof language | Position-anchored path directions, nonredundant value choices, full knowledge/probe/reasoner signature, conservative concept upgrades and contextual probe-result proof checks | relative_delta |
-| Cross-language exact calibration | Polynomial circle ring and angular Fourier reports, orientation and rational chart scope, static-point versus path/winding probe alias witnesses | circle_translation |
+| Cross-language exact calibration | Polynomial circle ring and Fourier angular reports, compatible tangential derivations and global one-form, orientation/chart scope, static-point versus path/winding probe aliases | circle_translation |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -93,7 +93,7 @@ With a shared point, scale, zero-angle anchor and orientation calibration, the p
 
 This bridge does NOT transport an unwrapped phase, a path's winding number, a physical instrument, or an observer's causal history merely because it preserves polynomial identities. Rational stereographic coordinates have a missing chart point (-1,0); opposite orientations give equally correct circle polynomial identities but reverse winding sign; γ1 and γ5 have identical four cardinal time samples but different winding. Probe equivalence must therefore be certified at the correct observation *type*: static point functions versus time-indexed paths, orientations and homotopy invariants.
 
-General observer-language functors require declared objects, morphisms, inference compatibility, probe translation, physical feasibility and appropriate limit/topology regularity. A successful finite test or coordinate-ring isomorphism alone does not establish categorical full faithfulness or RH positivity. See [Two languages, one circle](../research/2026-10-11/TWO_LANGUAGES_ONE_CIRCLE.md) and ledger O85–O92.
+General observer-language functors require declared objects, morphisms, inference compatibility, probe translation, physical feasibility and appropriate limit/topology regularity. A successful finite test or coordinate-ring isomorphism alone does not establish categorical full faithfulness or RH positivity. See [Two languages, one circle](../research/2026-10-11/TWO_LANGUAGES_ONE_CIRCLE.md) and ledger O85–O93.
 
 ## Strong field placement as a relative knowledge object
 
