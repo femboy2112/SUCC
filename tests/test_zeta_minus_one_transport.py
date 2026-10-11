@@ -14,6 +14,7 @@ from observational_succ.zeta_minus_one_transport import (
     certified_euler_cutoff, positive_side_mutation_controls,
     eta_abel_value, eta_abel_deficit, negative_odd_zeta_from_bernoulli,
     zeta_minus_one_transport_demo,
+    shift_dilation_address_defect, shift_dilation_operator_identity,
 )
 
 
@@ -27,6 +28,36 @@ class ZetaLocalGlobalTransportTests(unittest.TestCase):
             local_prime_factor_minus_one(6)
         with self.assertRaises(EulerTransportError):
             prime_jet_gap(6,0)
+
+    def test_succ_fucc_exact_ax_plus_b_semigroup_relation(self):
+        for p in (2,3,5,7,11,13,19):
+            for n in (1,2,5,11,57):
+                self.assertEqual(shift_dilation_address_defect(p,n),1-p)
+                self.assertTrue(shift_dilation_operator_identity(p,n))
+                for a in (0,1,2,3,10):
+                    self.assertEqual(shift_dilation_address_defect(p,n,a),
+                                     a*(1-p))
+                    self.assertTrue(shift_dilation_operator_identity(p,n,a))
+                    # Operator ket equality V_p S^a |n> = S^(p*a) V_p |n>.
+                    self.assertEqual(p*(n+a),p*n+p*a)
+        self.assertEqual(shift_dilation_address_defect(5,3),-4)
+
+    def test_composite_affine_defect_does_not_make_a_fake_prime_place(self):
+        self.assertEqual(shift_dilation_address_defect(6,3),-5)
+        self.assertTrue(shift_dilation_operator_identity(6,3))
+        with self.assertRaises(EulerTransportError):
+            local_prime_factor_minus_one(6)
+        with self.assertRaises(EulerTransportError):
+            prime_jet_gap(6)
+        with self.assertRaises(EulerTransportError):
+            shift_dilation_address_defect(1,3)
+        with self.assertRaises(EulerTransportError):
+            shift_dilation_address_defect(5,0)
+        with self.assertRaises(EulerTransportError):
+            shift_dilation_address_defect(5,1,-1)
+        # A coordinate integer difference is not [S,V]|n>=scalar*|n>.
+        # The two different destination basis states remain orthogonal.
+        self.assertNotEqual(5*3+1,5*(3+1))
 
     def test_local_prime_cutoffs_have_sign_and_zero_magnitude_behavior(self):
         values={2:Q(-1),3:Q(1,2),5:Q(-1,8),
@@ -140,6 +171,12 @@ class ZetaLocalGlobalTransportTests(unittest.TestCase):
         self.assertEqual(r["status"],"ZETA_MINUS_ONE_GLOBAL_EULER_ARCHIMEDEAN_TRANSPORT")
         self.assertEqual(r["local_prime_minus_one_factor"],"-1/(p-1)")
         self.assertEqual(r["prime_jet_first_return_gap"],"p-1")
+        self.assertEqual(r["shift_dilation_one_step_address_defect"],"1-p")
+        self.assertEqual(r["ax_b_operator_semigroup_relation"],"V_p S = S^p V_p")
+        self.assertTrue(r["same_shift_dilation_defect_rule_for_composite_six"])
+        self.assertTrue(r["nonprime_affine_defect_does_not_authorize_euler_prime_factor"])
+        self.assertFalse(r["operator_commutator_claimed_scalar"])
+        self.assertFalse(r["cuntz_ax_b_finite_arch_completion_proved_here"])
         self.assertEqual(r["global_zeta_minus_one_value"],"-1/12")
         self.assertEqual(r["abel_eta_negative_one"],"1/4")
         self.assertEqual(r["eta_to_zeta_factor_at_minus_one"],"-3")
