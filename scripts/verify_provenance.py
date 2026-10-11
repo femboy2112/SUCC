@@ -45,7 +45,7 @@ def verify(repo: Path | None = None) -> dict:
             translated += 1
         else:
             raise ValueError(f"Unrecognized migration transformation for: {rel}")
-    if translated != 54 or untouched != 17:
+    if translated != 55 or untouched != 17:
         raise ValueError(f"Historical code/archive counts drifted: {translated}, {untouched}")
     return {
         "status": "SOURCE_PROVENANCE_VERIFIED",
