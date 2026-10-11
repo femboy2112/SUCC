@@ -15,6 +15,7 @@ from observational_succ.circle_translation import (
     periodic_point_signature, winding_alias_for_rational_samples,
     cross_language_circle_demo, cardinal_point, oriented_winding,
     circle_angular_one_form_on_generator,
+    distinguishing_rational_time_for_windings,
 )
 
 
