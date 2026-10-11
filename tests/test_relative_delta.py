@@ -18,6 +18,7 @@ from observational_succ.relative_delta import (
     frozen_base_minimum_worst_case_bits, relative_delta_demo,
     prove_probe_value, verify_probe_value, ProbeValueProof,
     encode_position_delta, decode_position_delta,
+    ProbeDecisionPlan, certify_probe_decision, verify_probe_decision,
 )
 
 
@@ -279,6 +280,68 @@ class RelativeDeltaTests(unittest.TestCase):
         self.assertNotIn("fine",dict(basis.observers)["Alice"])
         # The inferred fine result is not a fabricated physical measurement.
         self.assertEqual(after.observations(),(("ready","yes"),))
+
+    def test_proof_of_probe_shape_can_identify_the_right_question_not_its_answer(self):
+        basis=chain(2)
+        alice=AgentKnowledge("Alice")
+        target={"A":"A","B":"B"}
+        # Coarse p0 is accessible, but not source-discriminating.
+        coarse=certify_probe_decision(alice,basis,"p0",target)
+        self.assertFalse(coarse.probe_separates_target)
+        self.assertFalse(coarse.one_physical_observation_can_finish)
+        # The mathematical possibility of p1 is already a correct design;
+        # it cannot be executed until a source-faithful p0 observation.
+        early=certify_probe_decision(alice,basis,"p1",target)
+        self.assertTrue(early.probe_separates_target)
+        self.assertFalse(early.epistemically_available)
+        self.assertFalse(early.one_physical_observation_can_finish)
+        alice=alice.local_succ(basis,"B")
+        plan=certify_probe_decision(alice,basis,"p1",target)
+        self.assertTrue(plan.probe_separates_target)
+        self.assertTrue(plan.epistemically_available)
+        self.assertTrue(plan.physically_executable)
+        self.assertTrue(plan.one_physical_observation_can_finish)
+        self.assertEqual(plan.branch_targets,(("A",("A",)),("B",("B",))))
+        self.assertTrue(verify_probe_decision(alice,basis,target,plan))
+        # The proof tells you which probe to run, NOT which answer occurs.
+        self.assertFalse(probe_option_result(alice,basis,"p1").inferable_without_measuring)
+        self.assertEqual(alice.model(basis).compatible,("A","B"))
+        finished=alice.local_succ(basis,"B")
+        self.assertEqual(finished.model(basis).compatible,("B",))
+        self.assertEqual(finished.observations()[-1],("p1","B"))
+
+    def test_probe_shape_sufficiency_is_target_relative_and_source_checked(self):
+        world=FiniteProbeWorld(
+            ("00","01","10","11"),("left","right"),
+            (("0","0"),("0","1"),("1","0"),("1","1")),
+        )
+        basis=SharedKnowledgeBasis(world,("can:left","can:right"),(),
+            (("Alice",world.probes),("Bob",world.probes)))
+        alice=AgentKnowledge("Alice")
+        target={x: str(int(x[0]) ^ int(x[1])) for x in world.sources}
+        plan=certify_probe_decision(alice,basis,"left",target)
+        self.assertEqual(plan.branch_targets,
+                         (("0",("0","1")),("1",("0","1"))))
+        self.assertFalse(plan.probe_separates_target)
+        self.assertFalse(plan.one_physical_observation_can_finish)
+        self.assertTrue(verify_probe_decision(alice,basis,target,plan))
+        from dataclasses import replace
+        with self.assertRaises(RelativeDeltaError):
+            verify_probe_decision(alice,basis,target,replace(plan,
+                                      branch_targets=(("0",("0",)),)))
+        with self.assertRaises(RelativeDeltaError):
+            certify_probe_decision(alice,basis,"right",{"00":"0"})
+
+    def test_proof_complete_but_physically_unavailable_probe_is_not_one_step_achievable(self):
+        world=FiniteProbeWorld(("A","B"),("p",),(("A",),("B",)))
+        b=SharedKnowledgeBasis(world,("can:p",),(),
+                               (("Alice",()),("Bob",())))
+        plan=certify_probe_decision(AgentKnowledge("Alice"),b,"p",
+                                    {"A":"A","B":"B"})
+        self.assertTrue(plan.probe_separates_target)
+        self.assertTrue(plan.epistemically_available)
+        self.assertFalse(plan.physically_executable)
+        self.assertFalse(plan.one_physical_observation_can_finish)
 
     def test_binary_recipe_is_verified_basis_change_not_extra_empirical_data(self):
         world=FiniteProbeWorld(
