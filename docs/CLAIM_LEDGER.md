@@ -153,6 +153,11 @@ Use these labels:
 | O134 | The unmodified zeta Archimedean reflection multiplier remains correct for any mutated Euler source | REFUTED / TESTED MODEL | Remove p=2: F(-1)=+1/12 but naive -F(2)/(2π²)=-1/16; fake p=6 source impulse rejected |
 | O135 | The local/global special-value transport proves arithmetic holography, full Weil-form positivity, RH itself or an intrinsic inability to prove it | UNVERIFIED | Need source-specific Γ/Euler test-function domains, completed Weil identification, non-Euler mutation controls and lawful zero-free construction |
 
+| O136 | SUCC shift and multiplicative dilation satisfy V_p S=S^p V_p on basis vectors; the signed integer-address defect SV_p(n)-V_pS(n)=1-p equals the denominator in locally continued Euler factor E_p(-1)=1/(1-p) | CLASSICAL ax+b SEMIGROUP / PROVED LOCAL / TESTED MODEL | Exact polynomial arithmetic on integers, shift_dilation_address_defect and operator basis-ket identity; composite q=6 obeys same ax+b relation so relation alone does NOT select Euler primes |
+| O137 | The arithmetic ax+b semigroup is an established number-theoretic operator-algebra framework with closely related C*-algebra stabilized realizations using finite adeles and the Archimedean real completion | CLASSICAL PUBLISHED (external) | Joachim Cuntz (2006), arXiv:math/0611541 §§1–2: Q_N and stabilized crossed products; raw SUCC/FUCC shifts alone do not establish the needed quotient/completion theorem |
+| O138 | The exact shift-dilation relation and classical finite-adèle/real-place C*-algebra equivalence already identify SUCC/FUCC with an RH-specific full Gamma reflection and positive completed Weil form | UNVERIFIED | Requires correct semigroup C*-algebra representation/quotient, time evolution, trace/partition domain, source-specific completed test-function operators and zero-free Weil identification |
+
+
 
 
 
@@ -163,6 +168,8 @@ Use these labels:
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
 
 New unconditional finite-Newton inversion controls: all 1,092 arbitrary short integer sample sequences up to length six, plus arbitrary two-coordinate irregular values, invert exactly within the observed horizon via Pascal forward differences without assuming a global polynomial law. The same truncated jet does not justify an unseen continuation; this remains separate from source-certified polynomial extrapolation.
+
+New affine SUCC/FUCC prime-factor controls: for primes p and arbitrary integer source addresses, V_p S=S^p V_p exactly on ket labels, and the coordinate discrepancy SV_p(n)-V_p S(n)=1-p matches the local Euler factor denominator. The same relation is satisfied by composite multiplier q=6, so it cannot by itself distinguish authentic prime Euler places. Operator commutator is a ket difference, NOT a scalar times identity; Cuntz's C*-algebra quotient/completion remains an external theorem, not a finite arithmetic test.
 
 New Euler local/global transport controls: separately continued factors -1/(p-1) and SUCC jet τ_{p,0}=p-1; partial products tending to zero and failing to reconstruct global ζ(-1); positive-side p^-2 prime Euler cutoff, exact integer telescoping tail ≤(X+1)/X, conditional transported value error ≤1/(12X); Abel η(-1)=1/4 with exact regulator defect; Bernoulli negative-odd value family; p=2 deletion disproves unmodified Γ reflection for another source, and fake composite p=6 is never prime-local. Classical analytic continuation and functional equation are explicitly imported proof assumptions.
 
