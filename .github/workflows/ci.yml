@@ -192,6 +192,29 @@ jobs:
           assert j["source_provenance_cryptographically_authenticated"] is False
           assert j["RH_claimed"] is False
           PY
+      - name: Probe carrier coherence and proof support rewiring
+        run: |
+          python scripts/probe_coherence_probe.py > "$RUNNER_TEMP/probe-coherence.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"probe-coherence.json").read_text())
+          assert j["status"]=="FINITE_SINGLE_CARRIER_SOURCE_COHERENCE_NO_GO"
+          assert j["all_initial_sources"]==4
+          assert j["proof_support_unreachable_with_one_carrier"] is True
+          assert j["after_read_a_original_b_still_meaningful"] is False
+          assert j["after_read_b_original_a_still_meaningful"] is False
+          assert j["second_probe_current_value_is_still_defined"] is True
+          assert j["second_probe_original_source_value_is_no_longer_defined"] is True
+          assert j["proof_graph_rewiring"]["unrestricted_minimal_probe_supports"]==[["a","b"]]
+          assert j["proof_graph_rewiring"]["with_verified_a_zero_law"]==[["b"]]
+          assert j["proof_graph_rewiring"]["with_verified_a_equal_b_law"]==[[]]
+          assert j["two_independent_preparations_repair_target"] is True
+          assert j["non_destructive_probe_repairs_target"] is True
+          assert j["lawful_source_prior_can_decide_without_experiment"] is True
+          assert j["global_logical_unprovability_claimed"] is False
+          assert j["RH_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -217,5 +240,6 @@ jobs:
             ${{ runner.temp }}/relative-delta.json
             ${{ runner.temp }}/circle-translator.json
             ${{ runner.temp }}/twin-circle.json
+            ${{ runner.temp }}/probe-coherence.json
           if-no-files-found: warn
           retention-days: 14
