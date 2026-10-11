@@ -247,6 +247,70 @@ def check_source_semantics(field: FiniteCarrier,
 
 
 @dataclass(frozen=True)
+class BlindPathProof:
+    """Claims from multiple paths with the causal action witness removed."""
+    source_id: str
+    basis_id: str
+    target_id: str
+    paths: tuple[tuple[str,...], ...]
+    decoder: tuple[tuple[tuple[int,...], str], ...]
+    collision: tuple[tuple[tuple[str,...],int],
+                     tuple[tuple[str,...],int]] | None
+
+    @property
+    def valid(self) -> bool:
+        return self.collision is None
+
+    def decode(self, observations:tuple[int,...], *,
+               source_id:str,basis_id:str,target_id:str)->str:
+        if (source_id,basis_id,target_id)!=(self.source_id,
+                                            self.basis_id,self.target_id):
+            raise SourceTransportError("Path-blind proof source contract changed")
+        if not self.valid:
+            raise SourceTransportError("No single decoder for forgotten paths")
+        lookup=dict(self.decoder)
+        if observations not in lookup:
+            raise SourceTransportError("Uncertified path-blind observation")
+        return lookup[observations]
+
+
+def factor_without_path(field: FiniteCarrier, source_class: tuple[int,...],
+                        target:tuple[str,...],
+                        paths:tuple[tuple[str,...],...], *,
+                        target_id:str)->BlindPathProof:
+    """Exact factorization from OUTCOME VALUES with causal path OMITTED.
+
+    This is intentionally a weaker report than field.run(...).public_signature.
+    If the path is retained, individually invertible path channels can
+    recover the original even when the joint path-blind claim fails.
+    """
+    _sources(field,source_class)
+    if (type(paths) is not tuple or len(paths)<2
+            or len(set(paths))!=len(paths)
+            or any(type(path) is not tuple for path in paths)
+            or len({len(path) for path in paths})!=1):
+        raise SourceTransportError("Declare two distinct equal-length routes")
+    if (type(target) is not tuple or len(target)!=field.count
+            or any(type(x) is not str for x in target)
+            or type(target_id) is not str or not target_id):
+        raise SourceTransportError("Declare full source predicate and claim ID")
+    labels={}
+    originals={}
+    collision=None
+    for path in paths:
+        for x in source_class:
+            y=field.run(x,path).observed_values
+            truth=target[x]
+            if y in labels and labels[y]!=truth and collision is None:
+                collision=(originals[y],(path,x))
+            labels[y]=truth
+            originals.setdefault(y,(path,x))
+    return BlindPathProof(field.source_id,field.basis_id,target_id,paths,
+                          tuple(sorted(labels.items())) if collision is None
+                          else (),collision)
+
+
+@dataclass(frozen=True)
 class IrretrievablePair:
     first: int
     second: int
@@ -357,6 +421,25 @@ def _bit_field(nondestructive: bool = False, with_joint: bool = False
                          "initial-physical-two-bit-source","binary-pair-v1")
 
 
+def reversible_noncommuting_bit_field()->FiniteCarrier:
+    """Two TRUE source-changing shear actions with noncommuting payloads.
+
+    A:(a,b)->(a,a XOR b), exposing pre-a.
+    B:(a,b)->(a XOR b,b), exposing pre-b.
+    Both are invertible (involutive) GF(2)^2 actions; their order changes
+    the final payload, unlike the destructive pair with common zero end.
+    """
+    src=tuple(range(4))
+    outputs_a=tuple(s//2 for s in src)
+    outputs_b=tuple(s%2 for s in src)
+    update_a=tuple(2*(s//2)+((s//2)^(s%2)) for s in src)
+    update_b=tuple(2*((s//2)^(s%2))+(s%2) for s in src)
+    return FiniteCarrier(4,(
+        Instrument("A",outputs_a,update_a,(True,)*4),
+        Instrument("B",outputs_b,update_b,(True,)*4),
+    ),"reversible-original-pair","declared-GF2-physical-labels")
+
+
 def noncommuting_proof_demo() -> dict:
     field=_bit_field()
     src=(0,1,2,3)
@@ -410,6 +493,33 @@ def noncommuting_proof_demo() -> dict:
         for j in range(i,4):
             if ((i,j) in future) != (finite_separator(field,i,j) is None):
                 raise ArithmeticError("Bisimulation and BFS separator disagree")
+    reversible=reversible_noncommuting_bit_field()
+    rev_ab={x:reversible.run(x,("A","B")) for x in src}
+    rev_ba={x:reversible.run(x,("B","A")) for x in src}
+    if not any(rev_ab[x].terminal_state != rev_ba[x].terminal_state
+               for x in src):
+        raise ArithmeticError("Noncommuting reversible source mutations were lost")
+    initial_first=("0","0","1","1")
+    for path in (("A","B"),("B","A")):
+        if (not factor_original_claim(
+                reversible,src,parity,path,target_id="original-XOR").valid
+                or not factor_original_claim(
+                reversible,src,initial_first,path,target_id="original-a").valid):
+            raise ArithmeticError("Invertible source path failed proof reconstruction")
+    blind_first=factor_without_path(reversible,src,initial_first,
+                                   (("A","B"),("B","A")),target_id="original-a")
+    blind_parity=factor_without_path(reversible,src,parity,
+                                    (("A","B"),("B","A")),target_id="original-XOR")
+    if blind_first.valid or not blind_parity.valid:
+        raise ArithmeticError("Reversible route-blind proof invariant contradicted")
+    if blind_first.collision is None:
+        raise ArithmeticError("Missing route-blind ambiguous original source pair")
+    collision=blind_first.collision
+    if (reversible.run(collision[0][1],collision[0][0]).observed_values
+            != reversible.run(collision[1][1],collision[1][0]).observed_values
+            or initial_first[collision[0][1]] ==
+               initial_first[collision[1][1]]):
+        raise ArithmeticError("Bad exact reversible route-blind counterexample")
     return {
         "status":"NONCOMMUTING_SOURCE_PROOF_TRANSPORT_EXACT",
         "all_four_two_action_endpoints":"00",
@@ -430,6 +540,15 @@ def noncommuting_proof_demo() -> dict:
         "same_shadow_no_future_adaptive_proof":True,
         "nondestructive_AB_repairs_original_parity":no_damage.valid,
         "source_joint_read_repairs_original_parity":joint_result.valid,
+        "reversible_payload_transitions_noncommute":True,
+        "reversible_both_routes_preserve_original_XOR":True,
+        "reversible_both_routes_preserve_original_a_with_path":True,
+        "reversible_original_a_fails_route_blind":blind_first.valid,
+        "reversible_original_XOR_survives_route_blind":blind_parity.valid,
+        "reversible_route_blind_witness":[
+            [list(collision[0][0]),collision[0][1]],
+            [list(collision[1][0]),collision[1][1]]],
+
         "all_distinct_initial_sources_pairwise_separable":True,
         "no_uniform_adaptive_original_parity_protocol":True,
         "bisimulation_agrees_with_independent_BFS_for_all_pairs":True,

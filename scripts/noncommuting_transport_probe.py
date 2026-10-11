@@ -26,6 +26,12 @@ def main():
     assert event["no_uniform_adaptive_original_parity_protocol"] is True
     assert event["same_shadow_no_future_adaptive_proof"] is True
     assert event["nondestructive_AB_repairs_original_parity"] is True
+    assert event["reversible_payload_transitions_noncommute"] is True
+    assert event["reversible_both_routes_preserve_original_XOR"] is True
+    assert event["reversible_both_routes_preserve_original_a_with_path"] is True
+    assert event["reversible_original_a_fails_route_blind"] is False
+    assert event["reversible_original_XOR_survives_route_blind"] is True
+    assert len(event["reversible_route_blind_witness"])==2
     assert event["source_joint_read_repairs_original_parity"] is True
     assert event["bisimulation_agrees_with_independent_BFS_for_all_pairs"] is True
     assert event["pre_source_truth_labels_not_leaked_into_reports"] is True

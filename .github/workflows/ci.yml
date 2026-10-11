@@ -475,6 +475,12 @@ jobs:
           assert a["no_uniform_adaptive_original_parity_protocol"] is True
           assert a["same_shadow_no_future_adaptive_proof"] is True
           assert a["nondestructive_AB_repairs_original_parity"] is True
+          assert a["reversible_payload_transitions_noncommute"] is True
+          assert a["reversible_both_routes_preserve_original_XOR"] is True
+          assert a["reversible_both_routes_preserve_original_a_with_path"] is True
+          assert a["reversible_original_a_fails_route_blind"] is False
+          assert a["reversible_original_XOR_survives_route_blind"] is True
+          assert len(a["reversible_route_blind_witness"])==2
           assert a["source_joint_read_repairs_original_parity"] is True
           assert a["bisimulation_agrees_with_independent_BFS_for_all_pairs"] is True
           assert b["holonomy_order"]==3

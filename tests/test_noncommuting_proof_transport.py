@@ -5,7 +5,8 @@ import unittest
 
 from observational_succ.noncommuting_proof_transport import (
     SourceTransportError, Instrument, FiniteCarrier, ProofFactor,
-    _bit_field, factor_original_claim, check_source_semantics,
+    _bit_field, reversible_noncommuting_bit_field, factor_original_claim,
+    factor_without_path, check_source_semantics,
     partition_refinement_witness,
     lost_future_original_claim, finite_future_equivalence, finite_separator,
     noncommuting_proof_demo,
@@ -159,6 +160,83 @@ class NoncommutingCarrierTests(unittest.TestCase):
                     target_id="initial-parity",path=path)
                 self.assertEqual(result,self.parity[source])
 
+    def test_genuine_reversible_source_updates_do_not_commute(self):
+        f=reversible_noncommuting_bit_field()
+        parity=("0","1","1","0")
+        original_a=("0","0","1","1")
+        noncommuting=0
+        for x in (0,1,2,3):
+            ab=f.run(x,("A","B"))
+            ba=f.run(x,("B","A"))
+            if ab.terminal_state!=ba.terminal_state:
+                noncommuting+=1
+            a,b=x//2,x%2
+            self.assertEqual(ab.observed_values,(a,a^b))
+            self.assertEqual(ba.observed_values,(b,a^b))
+            for path,trace in ((("A","B"),ab),(("B","A"),ba)):
+                self.assertEqual(parity[x],str(trace.observed_values[1]))
+                self.assertEqual(
+                    factor_original_claim(f,self.sources,parity,path,
+                                          target_id="xor").decode(
+                        trace.observed_values,source_id=f.source_id,
+                        basis_id=f.basis_id,target_id="xor",
+                        path=path),parity[x])
+                self.assertTrue(factor_original_claim(
+                    f,self.sources,original_a,path,target_id="original-a").valid)
+        self.assertGreater(noncommuting,0)
+
+    def test_reversible_path_blind_claim_is_or_is_not_invariant(self):
+        f=reversible_noncommuting_bit_field()
+        first=("0","0","1","1")
+        xor=("0","1","1","0")
+        paths=(("A","B"),("B","A"))
+        self.assertFalse(factor_without_path(
+            f,self.sources,first,paths,target_id="original-a").valid)
+        invariant=factor_without_path(f,self.sources,xor,paths,
+                                      target_id="original-xor")
+        self.assertTrue(invariant.valid)
+        for source in self.sources:
+            for path in paths:
+                read=f.run(source,path).observed_values
+                self.assertEqual(invariant.decode(
+                    read,source_id=f.source_id,basis_id=f.basis_id,
+                    target_id="original-xor"),xor[source])
+        with self.assertRaises(SourceTransportError):
+            invariant.decode((0,0),source_id=f.source_id,
+                             basis_id="wrong",target_id="original-xor")
+        with self.assertRaises(SourceTransportError):
+            factor_without_path(f,self.sources,first,
+                                (("A",),("A","B")),target_id="first")
+        with self.assertRaises(SourceTransportError):
+            factor_without_path(f,self.sources,first,
+                                (("A","B"),("A","B")),target_id="first")
+
+    def test_all_16_original_targets_against_independent_two_route_oracle(self):
+        f=reversible_noncommuting_bit_field()
+        routes=(("A","B"),("B","A"))
+        for truth in product(("0","1"),repeat=4):
+            c=factor_without_path(f,self.sources,truth,routes,
+                                  target_id="any-binary-target")
+            observed={}
+            for route in routes:
+                for x in self.sources:
+                    key=f.run(x,route).observed_values
+                    observed.setdefault(key,set()).add(truth[x])
+            expected=all(len(v)==1 for v in observed.values())
+            self.assertEqual(c.valid,expected)
+            if not c.valid:
+                (p,x),(q,y)=c.collision
+                self.assertEqual(f.run(x,p).observed_values,
+                                 f.run(y,q).observed_values)
+                self.assertNotEqual(truth[x],truth[y])
+            else:
+                for route in routes:
+                    for x in self.sources:
+                        self.assertEqual(c.decode(
+                            f.run(x,route).observed_values,
+                            source_id=f.source_id,basis_id=f.basis_id,
+                            target_id="any-binary-target"),truth[x])
+
     def test_source_labels_provenance_context_is_not_an_external_signature(self):
         certificate=factor_original_claim(
             _bit_field(nondestructive=True),self.sources,self.parity,
@@ -275,6 +353,12 @@ class NoncommutingCarrierTests(unittest.TestCase):
         self.assertTrue(output["all_distinct_initial_sources_pairwise_separable"])
         self.assertTrue(output["no_uniform_adaptive_original_parity_protocol"])
         self.assertTrue(output["same_shadow_no_future_adaptive_proof"])
+        self.assertTrue(output["reversible_payload_transitions_noncommute"])
+        self.assertTrue(output["reversible_both_routes_preserve_original_XOR"])
+        self.assertTrue(output["reversible_both_routes_preserve_original_a_with_path"])
+        self.assertFalse(output["reversible_original_a_fails_route_blind"])
+        self.assertTrue(output["reversible_original_XOR_survives_route_blind"])
+        self.assertEqual(len(output["reversible_route_blind_witness"]),2)
         self.assertTrue(output["nondestructive_AB_repairs_original_parity"])
         self.assertTrue(output["source_joint_read_repairs_original_parity"])
         self.assertTrue(output["pre_source_truth_labels_not_leaked_into_reports"])

@@ -101,6 +101,39 @@ then no deterministic **future adaptive instrument policy** whose allowed action
 
 **Independent repairs:** a non-destructive A followed by non-destructive B, or one admissible joint source-preserving A+B probe, can certify original parity. Two genuinely identically prepared source carriers also suffice (previous proof_coherence.py); a fresh independent source cannot simply be *asserted* available. The supplied source IDs and ideal transition tables are declared mathematical assumptions, not cryptographically authenticated evidence or physically verified measurements.
 
+### 2a. Second hostile control: physically NONCOMMUTING, reversible source updates
+
+The destructive A/B experiment has noncommuting **causal observations**, but its two payload update maps happen to commute: either two-step order resets the source payload to zero. To avoid falsely labeling source-payload changes themselves noncommuting, we also constructed a separate genuinely noncommuting pair of invertible physical-state transformations:
+
+\[
+\widetilde A(a,b)=
+  (\text{observe old }a,\ (a,a\oplus b)),\qquad
+\widetilde B(a,b)=
+  (\text{observe old }b,\ (a\oplus b,b)).
+\]
+
+Both are involutions of the same four-state carrier. Their **state-update maps do not commute**. For source (1,0), A then B ends at (0,1), whereas B then A ends at (1,1). This is an exact source-state difference, not merely different observer-language descriptions.
+
+Nevertheless, if the causal order is REPORTED:
+- \(\widetilde A\widetilde B\) has observable outcomes \((a,a\oplus b)\).
+- \(\widetilde B\widetilde A\) has observable outcomes \((b,a\oplus b)\).
+
+Each route therefore has a bijection from all four initial sources to its own four ordered reports. **Every** original-source predicate is recoverable with the route recorded, including old a, b and parity. Invertible state change is not necessarily proof destruction.
+
+Suppose instead a faulty packet forwards only the two outcome bits and **forgets the names/order** of the two interventions. Then the same local report can arise from different original sources along the two routes:
+
+\[
+\boxed{
+\exists (x,\pi)\ne(y,\sigma):
+F_\pi(x)=F_\sigma(y),\quad
+t(x)\ne t(y).
+}\tag{N5a}
+\]
+
+A path-blind decoder exists exactly when t is constant on this JOINT route-forgotten observation partition. For t(x)=old a, the same report (1,1) occurs from x=(1,0) on AB and y=(0,1) on BA, and the claim values disagree. Conversely, the original XOR is always the SECOND output under either route, so **original parity survives route forgetting**. This control sharply separates an information-losing compression of otherwise source-faithful evidence from an irreversible physical source shadow: preserving the original path names suffices to repair the former, whereas the latter requires new source access.
+
+The code's causal packet always records the path. Route forgetting is an explicitly MUTATED observer/decoder contract, not secretly attributed to honest full-history observation. The generalized route-blind factorization helper computes a source collision pair or a decoder, with all 16 binary targets independently checked on the four source states. This source-changing control offers an operational interpretation of the separate oriented GL(2,F2) frame calibration in §5 without asserting they are literally the same physical mechanism.
+
 ## 3. Source-truth commuting square is separate from information sufficiency
 
 For any original predicate t and post-intervention predicate t', the mathematically necessary and sufficient source-meaning condition is

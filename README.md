@@ -129,6 +129,8 @@ New work belongs here first. When it yields an independently meaningful RH-relat
 
 **Latest theorem candidate:** [Source-relative precision transport](research/2026-10-11/SOURCE_RELATIVE_PRECISION_TRANSPORT.md) proves exact loss/recovery criteria for nonunit SUCC steps, claim-specific separation depth and conditional source-preserving proof transport. This is classical finite algebra organized into a typed observational framework, not a physical or RH theorem.
 
+**Genuinely noncommuting source-state control:** two invertible XOR-shear interventions do not commute as carrier updates, yet each ordered observation path exactly reconstructs all initial predicates. Omitting the causal route destroys the original-a decoder but preserves original XOR: reversible missing metadata, not irreversible source loss.
+
 **Current noncommuting transport theorem:** [Causal shadows and source/basis holonomy](research/2026-10-11/NONCOMMUTING_PROOF_TRANSPORT.md) separates irreversible loss of original-source predicates from reversible path-dependent frame ambiguity. Endpoint-equal physical actions can preserve incomparable histories; supplied true source semantics and path witnesses are independent proof obligations. Classical finite algebra, not a physical field or RH theorem.
 
 **Professional operating policy:** no merge to main, release, package publishing, or unsupported change of license is implied by the initial repository setup. See [AGENTS.md](AGENTS.md) and [CONTRIBUTING.md](CONTRIBUTING.md).

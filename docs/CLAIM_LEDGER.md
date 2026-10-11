@@ -240,6 +240,11 @@ Use these labels:
 | O199 | Reversible path-forgetting ambiguity is identical to destructive source-shadow loss or support-regenerating Zeno debt and necessarily requires the same kind of repair | REFUTED | GL2 path receipt alone repairs 16 reversible frame claims; genuine source-shadow requires new source access/instrument; rate-matched growing obligations from PR20 need source law or resource change |
 
 
+| O200 | Two reversible state-changing instruments A:(a,b)→(a,a XOR b) and B:(a,b)→(a XOR b,b), reporting the pre-source a and b respectively, have genuinely NONCOMMUTING carrier updates yet BOTH ordered two-step reports reconstruct all four original sources | PROVED LOCAL / CLASSICAL / TESTED | Explicit path outcomes AB=(a,a XOR b), BA=(b,a XOR b), injectivity on all four original sources and distinct poststates at source (1,0) |
+| O201 | Deliberately suppressing causal route names while retaining only two observed values makes original-a ambiguous between reversible AB/BA paths, whereas original XOR is still the common second bit; declaring the path repairs all source predicates | PROVED LOCAL / TESTED | Two-route source-fiber factorization with same report (1,1) from different original-a worlds, independent exhaustive 16-predicate oracle and faithful with-path inverses |
+| O202 | Because reversible XOR-shear source maps do not commute, every noncommuting source observation must erase a prior theorem even if complete causal history is retained | REFUTED | Genuine noncommuting payload control carries a complete original-source two-bit signature along each ordered route; erasure arises only after MUTATING the report to omit path or using separately destructive probes |
+
+
 
 ## Adversarial suite
 
@@ -287,7 +292,7 @@ Some controls are *historical* and live in the archived research documents, whil
 
 **New state-changing support and Zeno controls:** all 2^8 finite latent tapes for two atomic activations, exhaustive nested-contract truth-implication checks, original-bit destructive payload overwrite as separate negative control, one-source-bit-positive refutation, frozen support completion, constant pending matching, independently cross-checked quadratic recurrence, exact first finite precision-decodability threshold with transient-success counterexample, and exact rational finite Zeno timestamps. No omega physical operation or inferential supersource is present.
 
-**New noncommuting proof-transport controls:** compare source-error versus frame/path defects; two destructive probe orders with identical endstate yet distinct histories; source-shadow positive finite impossibility and alternate nondestructive/joint instrument repairs; 16 target truth functions and complete source-fiber table; 256 two-state/two-action Mealy machines and seeded masked-action future semantics; wrong source/basis provenance; explicitly oriented GF2 square with all 16 path-dependent Boolean predicates and 150 nonflat/flat/mutated frame controls. No physical quantum field or RH conclusion.
+**New noncommuting proof-transport controls:** reversible truly noncommuting XOR source actions with all-original-source reconstruction, path-labeled positive and path-forgotten negative proof controls, compare source-error versus frame/path defects; two destructive probe orders with identical endstate yet distinct histories; source-shadow positive finite impossibility and alternate nondestructive/joint instrument repairs; 16 target truth functions and complete source-fiber table; 256 two-state/two-action Mealy machines and seeded masked-action future semantics; wrong source/basis provenance; explicitly oriented GF2 square with all 16 path-dependent Boolean predicates and 150 nonflat/flat/mutated frame controls. No physical quantum field or RH conclusion.
 
 ## Outstanding highest-value claims
 
