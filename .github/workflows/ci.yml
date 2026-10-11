@@ -263,6 +263,9 @@ jobs:
           assert j["polynomial_jet_directions_count"]==2
           assert j["law_premise_proved_from_finite_samples_alone"] is False
           assert j["covariant_frame_transport_square_commutes"] is True
+          assert j["unconditional_finite_covariant_newton_inversion"] is True
+          assert j["certified_covariant_newton_reconstructed_local_states"]==7
+          assert j["nontrivial_holonomy_claimed"] is False
           assert j["affine_parallel_dependency_layers"]==1
           assert j["affine_prefix_actually_parallel_executed"] is False
           assert j["real_world_source_measurement_authenticated"] is False
