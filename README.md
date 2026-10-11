@@ -42,10 +42,11 @@ This is an established identification of the completed arithmetic Weil distribut
 6. **[Absorbing Hard SUCC and finite transmission](research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md)** — full compatible-model closure, lawful omega limits, constructive excluded middle, epistemic/physical probe barriers and bit-optimal recipient-side-information channels.
 7. **[Knowledge-aided SUCC and the inter-observer ladder](research/2026-10-10/KNOWLEDGE_AIDED_SUCC_LADDER.md)** — multi-frame discovery compressed into one recipient update, alternating ladders, causal receipt, snapshot-versus-continuation counterexamples and the omega ceiling.
 8. **[Relative path/value knowledge deltas and proof-shaped probes](research/2026-10-11/RELATIVE_DELTA_PROOF_SHAPES_AND_FROZEN_BASE.md)** — equal empirical access and reasoning, state-anchored directions, verified evolving probe language and limits on returning arbitrary knowledge to a frozen base.
-9. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
-10. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
-11. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
-12. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
+9. **[Two languages, one circle](research/2026-10-11/TWO_LANGUAGES_ONE_CIRCLE.md)** — polynomial-to-trigonometric exact translation, orientation/chart calibration, path-versus-point distinctions and finite-sample winding aliasing.
+10. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
+11. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
+12. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
+13. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
 
 ## Run it
 
@@ -66,6 +67,7 @@ python scripts/observer_trap_probe.py
 python scripts/absorbing_frontier_probe.py
 python scripts/knowledge_ladder_probe.py
 python scripts/relative_delta_probe.py
+python scripts/circle_translation_probe.py
 ~~~
 
 The package name is **observational_succ**. No runtime dependency on the original RH repository is required.
@@ -83,6 +85,7 @@ The package name is **observational_succ**. No runtime dependency on the origina
 | Inter-observer communication | interobserver_channels | Exact finite target messages, causal certification distinctions, and one-shot zero-error bit-minimal coding using receiver side information |
 | Knowledge-aided SUCC and ladders | knowledge_ladder | Full causal multi-step A→B synchronization in one epistemic macro-update, alternating A/B ladder, minimal snapshot compression and future non-equivalence controls |
 | Relative knowledge transport | relative_delta | Equal operational placement including probes/reasoner; causal paths and nonredundant values relative to last known position, moving concept basis, verified probe-value or target-decisive proof certificates, and frozen-base coding constraints |
+| Two observer languages, one phenomenon | circle_translation | Rational exact circle coordinate quotient ↔ Fourier trig polynomials, calibrated orientation and rational charts, finite time-sample winding alias/no-go |
 | Gödel, Turing and finite proof | observer_logic, godel_succ, observer_reflection | Self-reference syntax, two-counter controls, checked proof authority, finite-support at omega |
 | Ordinal and Hilbert limits | ordinal_succ_report, infinite_realization | Formal omega/omega+1 reports, second-order interaction, nonuniform Hilbert limits |
 | Optional RH application bridges | gamma_interferometer, balanced_theta_li, hasse_theta_seam, source_prime_certificates, dirichlet_lambert | Gamma/prime source interfaces, Li-index windows, certified prime-only Suzuki bounds |
