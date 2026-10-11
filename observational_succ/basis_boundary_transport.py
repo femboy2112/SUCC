@@ -421,6 +421,88 @@ def boundary_decode_bandlimited(samples:tuple[Root6,...]) -> tuple[Fraction,...]
     return tuple(output)
 
 
+def radial_mode_samples(coefficients:tuple[Fraction,...],radius) -> tuple[Root6,...]:
+    """Exact analytic-polynomial samples at r*zeta6^j, 0<r<=1.
+
+    Mode n is attenuated by r^n. The inverse exists on declared degree<6
+    polynomials when r>0 but can amplify finite measurement errors by r^-n.
+    """
+    radius=_q(radius)
+    if not 0 < radius <= 1:
+        raise BasisTransportError("Normalized positive rational radius at most one required")
+    if type(coefficients) is not tuple or len(coefficients)>6:
+        raise BasisTransportError("Radial probe expects declared six-mode code subspace")
+    return boundary_evaluations(tuple(_q(c)*radius**n
+                                      for n,c in enumerate(coefficients)))
+
+
+def decode_radial_modes(samples:tuple[Root6,...],radius) -> tuple[Fraction,...]:
+    radius=_q(radius)
+    if not 0 < radius <= 1:
+        raise BasisTransportError("Positive radius required for algebraic inverse")
+    attenuated=boundary_decode_bandlimited(samples)
+    return tuple(c/radius**n for n,c in enumerate(attenuated))
+
+
+def round_root6_samples(samples:tuple[Root6,...],step) -> tuple[Root6,...]:
+    """Toy finite-precision apparatus; round rational components separately.
+
+    This measures neither real-world entropy nor black-hole boundary data.
+    It is an explicit non-injective observation map at the declared precision.
+    """
+    step=_q(step)
+    if step<=0 or any(not isinstance(z,Root6) for z in samples):
+        raise BasisTransportError("Positive finite precision and exact source samples required")
+    return tuple(Root6(Q(round(z.a/step))*step,Q(round(z.b/step))*step)
+                 for z in samples)
+
+
+def zero_only_line_counterexample():
+    """Two symmetric entire polynomial functions with identical critical-line
+    zeros, but only one contains additional off-line zeros.
+
+    Let w=s-1/2, F=1+w^2, G=(1+w^2)(1-16w^2). Both satisfy s<->1-s
+    reflection and reality symmetry. The extra second factor has roots
+    w=+/-1/4 (s=1/4 and 3/4) but is 1+16*t^2 >0 on w=i*t.
+    Hence the set of CRITICAL-LINE zeros alone is not a complete
+    reconstruction code for the broader function class.
+
+    Neither polynomial has the Euler product, Gamma completion, prescribed
+    growth or other specific constraints of the true xi function. This
+    countermodel is NOT an RH counterexample.
+    """
+    # Values (real,imag) of a polynomial in w with Q[i] arithmetic.
+    def sq(x,y):
+        x,y=_q(x),_q(y)
+        return x*x-y*y, 2*x*y
+
+    def fg(wr,wi):
+        ur,ui=sq(wr,wi)
+        fr,fi=Q(1)+ur,ui
+        hr,hi=Q(1)-16*ur,-16*ui
+        return ((fr,fi),(fr*hr-fi*hi,fr*hi+fi*hr))
+
+    for t in (Q(-3),Q(-1),Q(-1,2),Q(0),Q(1,2),Q(1),Q(3)):
+        F,G=fg(0,t)
+        if (F==(Q(0),Q(0)))!=(G==(Q(0),Q(0))):
+            raise ArithmeticError("Critical-line zero agreement control failed")
+    for wr in (Q(-1,4),Q(1,4)):
+        F,G=fg(wr,0)
+        if F==(Q(0),Q(0)) or G!=(Q(0),Q(0)):
+            raise ArithmeticError("New off-line zero was not established")
+    return {
+        "status":"SYMMETRIC_ENTIRE_POLYNOMIAL_LINE_ZERO_NONUNIQUENESS",
+        "line_zeros_in_both":["1/2-i","1/2+i"],
+        "extra_offline_zeros_in_one":["1/4","3/4"],
+        "both_respect_s_to_one_minus_s":True,
+        "both_respect_reality_conjugation":True,
+        "line_zero_locations_alone_determine_global_entire_function":False,
+        "full_exact_line_function_values_have_identity_theorem_uniqueness":True,
+        "either_function_is_true_riemann_xi":False,
+        "RH_disproved_or_proved":False,
+    }
+
+
 def finite_boundary_demo():
     basis=SharedBasis(6)
     origin=BasisState.from_sparse(basis,{1:2,2:7,4:3})
@@ -446,6 +528,15 @@ def finite_boundary_demo():
     alias=boundary_evaluations((Fraction(-1),)+(Fraction(0),)*5+(Fraction(1),))
     if alias!=boundary_evaluations(()) or all(c==0 for c in code):
         raise ArithmeticError("Nontrivial high-mode boundary alias not detected")
+    hidden_mode=(Q(0),)*5+(Q(1),)
+    r=Q(1,2)
+    exact_radial=radial_mode_samples(hidden_mode,r)
+    if decode_radial_modes(exact_radial,r)!=hidden_mode:
+        raise ArithmeticError("Exact radial reconstructability was violated")
+    truncated=round_root6_samples(exact_radial,Q(1,8))
+    if truncated!=round_root6_samples(radial_mode_samples((Q(0),)*6,r),Q(1,8)):
+        raise ArithmeticError("Expected finite-precision high-mode blindness not observed")
+    line_zero_control=zero_only_line_counterexample()
     action=FrameActionBasis()
     ordered=((1,Fraction(1)),(4,Fraction(1)),(5,Fraction(1)))
     permuted=((4,Fraction(1)),(1,Fraction(1)),(5,Fraction(1)))
@@ -464,6 +555,12 @@ def finite_boundary_demo():
         "noncommutative_ordered_path_endpoints":[3,2],
         "boundary_exact_bandlimited_reconstruction":True,
         "boundary_unrestricted_high_mode_alias_exists":True,
+        "radial_exact_high_mode_reconstruction":True,
+        "radial_high_mode_attenuation":"1/32",
+        "finite_precision_root_six_samples_hide_mode_five":True,
+        "critical_line_zero_only_incomplete_for_symmetric_polynomial_family":True,
+        "true_xi_line_zero_locations_claimed_complete":False,
+        "line_zero_control":line_zero_control,
         "boundary_probe_count":6,
         "three_of_six_support_min_fixed_bits":(comb(6,3)-1).bit_length(),
         "gravity_holographic_correspondence_proved":False,
