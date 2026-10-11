@@ -233,6 +233,50 @@ def higher_succ_step_units(jet:HigherSuccJet,steps:int) -> tuple[int,...]:
     return tuple(jet.at(n).coefficients[1] for n in range(steps))
 
 
+def classify_linear_unit_stability(p:int,first_unit:int,acceleration:int):
+    """Exact universal criterion for d_n=d0+n*a remaining a p-adic unit.
+
+    For p prime and d0,a integers, d_n is invertible in EVERY Z/p^r Z
+    at all n>=0 iff p does not divide d0 and p divides a.
+
+    If p divides d0, the initial frame fails.
+    Otherwise, if a is nonzero mod p, the FIRST bad n lies in
+    {1,...,p-1} and satisfies n=-d0 * a^{-1} modulo p.
+    This is a finite obstruction to *unit-frame conjugacy only*, not
+    to the arithmetic integer path itself or physical proof existence.
+    """
+    if not prime(p):
+        raise ProtoSuccError("Actual prime required for local unit stability")
+    _int(first_unit)
+    _int(acceleration)
+    if first_unit%p==0:
+        bad=0
+    elif acceleration%p==0:
+        bad=None
+    else:
+        bad=(-first_unit*pow(acceleration,-1,p))%p
+        if not 1<=bad<p:
+            raise ArithmeticError("A unit could not become nonunit at time zero")
+    expected_unit_everywhere=first_unit%p != 0 and acceleration%p==0
+    if (bad is None)!=expected_unit_everywhere:
+        raise ArithmeticError("Linear unit stability equivalence violated")
+    for n in range(p):
+        actual=(first_unit+n*acceleration)%p==0
+        if bad is None:
+            if actual:
+                raise ArithmeticError("Declared always-unit trajectory failed")
+        elif n<bad and actual or n==bad and not actual:
+            raise ArithmeticError("First loss of unit character computed incorrectly")
+    return {
+        "prime":p,"initial_unit":first_unit,"acceleration":acceleration,
+        "full_clock_gauge_valid_at_every_n":expected_unit_everywhere,
+        "first_nonunit_succ_index":bad,
+        "all_p_power_clocks_have_same_unit_condition":True,
+        "integer_SUCC_path_stops_when_unit_is_nonunit":False,
+        "source_or_physical_proof_barrier_claimed":False,
+    }
+
+
 def clock_unit_change_witness():
     """A higher SUCC can change a unit step into a nonunit step."""
     initial=HigherSuccJet((0,1,4))
@@ -272,6 +316,11 @@ def variable_proto_succ_demo():
         for u in (1,2,3):
             if shift_dilation_address_defect(p,11,u)!=(1-p)*u:
                 raise ArithmeticError("Formal variable unit law failed")
+    stable=classify_linear_unit_stability(5,2,5)
+    unstable=classify_linear_unit_stability(5,1,4)
+    if (not stable["full_clock_gauge_valid_at_every_n"]
+            or unstable["first_nonunit_succ_index"]!=1):
+        raise ArithmeticError("General dynamic unit stability theorem failed")
     clock=clock_change_isomorphism(5,2,2)
     if normalized_defect_mod(5,2,11,2)!=(1-5)%25:
         raise ArithmeticError("Normalized Euler factor defect changed")
@@ -298,6 +347,9 @@ def variable_proto_succ_demo():
         "quadratic_d0_two_acceleration_three":values,
         "higher_order_integer_binomial_formula":True,
         "changing_unit_can_stop_being_a_local_clock_unit":clock_unit_change_witness(),
+        "linear_step_unit_stability_iff_d0_unit_and_acceleration_divisible_by_p":True,
+        "stable_d0_two_a_five_mod_p_five":stable,
+        "unstable_d0_one_a_four_mod_p_five":unstable,
         "d_zero_specialization_loses_normalized_defect_information":True,
         "prime_jet_clock_period_identity_requires_declared_local_unit":True,
         "new_RH_Gamma_or_Kubota_Leopoldt_theorem_claimed":False,
