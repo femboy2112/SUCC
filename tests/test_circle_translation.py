@@ -13,7 +13,7 @@ from observational_succ.circle_translation import (
     TrigFourierPolynomial, rational_stereographic_chart,
     stereographic_inverse, multiply_circle_points,
     periodic_point_signature, winding_alias_for_rational_samples,
-    cross_language_circle_demo,
+    cross_language_circle_demo, cardinal_point, oriented_winding,
 )
 
 
@@ -88,6 +88,39 @@ class CircleTranslatorTests(unittest.TestCase):
                 TrigFourierPolynomial.from_circle(g),
             )
         self.assertEqual(len(monomials)**2,256)
+
+    def test_orientation_gauge_is_not_fixed_by_circle_membership(self):
+        x,y=self.x,self.y
+        for orientation in (-1,1):
+            f=(x+y).power(3)+x*y.scale(2)+self.one.scale(Q(1,3))
+            trig=TrigFourierPolynomial.from_circle(f,orientation)
+            self.assertEqual(trig.to_circle(orientation),f)
+            self.assertEqual(
+                TrigFourierPolynomial.from_circle(x*x+y*y-self.one,orientation),
+                TrigFourierPolynomial(),
+            )
+            self.assertEqual(cardinal_point(0,orientation),(Q(1),Q(0)))
+            self.assertEqual(cardinal_point(2,orientation),(Q(-1),Q(0)))
+        self.assertEqual(cardinal_point(1,1),(Q(0),Q(1)))
+        self.assertEqual(cardinal_point(1,-1),(Q(0),Q(-1)))
+        self.assertNotEqual(
+            TrigFourierPolynomial.from_circle(y,1),
+            TrigFourierPolynomial.from_circle(y,-1),
+        )
+        self.assertEqual(
+            TrigFourierPolynomial.from_circle(y,-1).to_circle(1),
+            -y,
+        )
+        self.assertEqual(oriented_winding(3,-1),-3)
+        self.assertEqual(oriented_winding(-3,-1),3)
+        with self.assertRaises(CircleTranslationError):
+            cardinal_point(1,0)
+        with self.assertRaises(CircleTranslationError):
+            oriented_winding(1,True)
+        with self.assertRaises(CircleTranslationError):
+            TrigFourierPolynomial.from_circle(y,orientation=0)
+        with self.assertRaises(CircleTranslationError):
+            TrigFourierPolynomial.sin().to_circle(orientation=3)
 
     def test_circle_chart_is_exact_but_misses_one_point(self):
         self.assertEqual(rational_stereographic_chart(0),(Q(1),Q(0)))
@@ -188,6 +221,8 @@ class CircleTranslatorTests(unittest.TestCase):
         self.assertTrue(report["coordinate_ring_identity_zero"])
         self.assertTrue(report["trigonometric_polynomial_identity_zero"])
         self.assertTrue(report["group_law_preserved"])
+        self.assertTrue(report["orientation_requires_explicit_calibration"])
+        self.assertTrue(report["reflected_winding_sign_inverted"])
         self.assertTrue(report["identical_finite_phase_samples"])
         self.assertTrue(report["different_true_winding_numbers"])
         self.assertEqual(report["matching_sampled_windings"],[1,5])
