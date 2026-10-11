@@ -133,12 +133,24 @@ Use these labels:
 | O116 | Under a known uniform family of supports of cardinality three chosen from six addresses, a fixed-length binary code selecting arbitrary support requires at least five bits | CLASSICAL counting / TESTED MODEL | binomial(6,3)=20, 2^4<20≤2^5, prior support class and shared dictionary explicitly counted separately |
 | O117 | The sixth-root boundary demonstration constructs physical holographic entropy/AdS-CFT bulk reconstruction or establishes an RH no-go/proof | UNVERIFIED | Requires source-derived Euler/Gamma/Weil operator identification, admissible analytic domain, stable code-subspace reconstruction and genuine information/entropy constraints; no zero-reading construction permitted |
 
+| O118 | A shared versioned mathematical basis plus an anchored initial state and truthful ordered first finite differences exactly reconstructs every finite intermediate SUCC frame | PROVED LOCAL / TESTED MODEL | x_n=x_0+sum_{k<n}Delta x_k; exact serial/scan controls, anchored decoder and forged delta checks; FINITE_DIFFERENCE_SUCC_INTEGRATION §1 |
+| O119 | Sending only the net accumulated end-state difference suffices to reconstruct every intermediate SUCC step | REFUTED | (+1,-1) and (-1,+1) both end at 0 from 0 but differ at intermediate step; first-difference path required |
+| O120 | Known additive or affine SUCC step data admit associative prefix scans with logarithmic parallel dependency depth; therefore all independent source observations physically execute simultaneously | CLASSICAL computing for scan / FALSE physical inference | Blelloch 1990 scan; exact Hillis–Steele-style tests; Python sequential execution, observed source steps remain causally separate |
+| O121 | Given a justified global polynomial source law Delta^(d+1)x_n=0, the initial Newton finite-difference jet up to order d reconstructs every future state in the shared basis | CLASSICAL / PROVED LOCAL / TESTED MODEL | Newton binomial formula, quadratic/cubic exact positive cases, declared source-program membership; not independent proof of the source premise |
+| O122 | The first d+1 finite observed states alone prove the actual trajectory follows a degree-d polynomial law forever | REFUTED | x0=x1=x2=0 also permits x3=1 absent the global recurrence; finite jet is interpolant unless source law certified |
+| O123 | Under invertible changing frames y_n=F_n x_n, the covariant difference y_(n+1)-F_(n+1)F_n^-1 y_n equals F_(n+1) Delta x_n | PROVED LOCAL / TESTED MODEL | Exact rational frame inverse and commutative square; unchanged canonical state with axis-swap gives nonzero naive coordinate difference and zero covariant source increment |
+| O124 | Affine local SUCC steps (U,eta) admit associative ordered composition and parallel-prefix reconstruction even when the individual frame actions do not commute | PROVED LOCAL / TESTED MODEL | Semidirect product (V,zeta)∘(U,eta)=(VU,V eta+zeta); 121 exact short paths, order-change control and layered scan |
+| O125 | A verified global frame/derivative description and a short certified jet prove that arbitrary physical observations can be acquired in one clock step, or imply holographic RH reconstruction/Weil positivity | UNVERIFIED | Requires actual source evidence, honest recurrence/transport, realizable hardware/measurement cost, field regularity and RH source-to-Weil bridge |
+
+
 
 
 
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
+
+New discrete-SUCC integration controls: exact first differences and receiver-anchored initial condition reconstruct all intermediate states, while equal net deltas can hide different internal paths; 364 additive finite difference source sequences and 121 affine ordered step sequences cross-check serial versus associative prefix; quadratic/cubic Newton jets extrapolate only under global degree certificates; finite samples without recurrence fail at delayed third step; changing axes create apparent local difference without canonical field change; transported covariant differences and matrix-frame square commute; one-step simultaneous mathematical evaluation is not physical SUCC source actualization.
 
 New basis-indexed/boundary-code controls: user's sparse ({1,4,5},{1,1,1}) patch from receiver anchor; changed basis/anchor and forged end; commutative versus noncommuting path ordering; three-to-one proof-context value compression with false source lemma; exact sixth-root DFT recovery only on degree<=5 source class; high-mode polynomial aliasing and radius-conditioned finite-precision blindness; entire reflection-symmetric F/G with identical critical-line zeros but differing off-line zeros. These are finite mathematical countermodels, not gravitational holography or RH proof tests.
 
@@ -162,7 +174,7 @@ Some controls are *historical* and live in the archived research documents, whil
 
 ## Outstanding highest-value claims
 
-- **General theory:** develop basis-indexed path and value transport from the receiver's last verified state, including versioned language/proof authority and order-preserving carrier operations. Test reconstructability of mathematical boundary codes only on declared source classes, with finite-precision and aliasing negative controls; seek a genuine continuation/proof-support transport theorem rather than a holography metaphor.
+- **General theory:** derive verified SUCC integration from shared initial basis and source-trusted finite differences, with exact finite-jet completion only under proven higher-difference recurrence. Generalize the covariant finite-difference square to changing and possibly nonflat frame connections while preserving proof-support provenance and frame-specific empirical access; distinguish parallelizable prefix computation from simultaneous carrier perturbations.
 - **Proof theory:** formalization in PA of coding/substitution representation, followed by appropriately qualified Gödel/reflection principles in a proof assistant.
 - **RH adapter:** a rigorous archimedean/pole interval oracle and noncircular identification of a positive source-derived distribution with the completed Weil form.
 
