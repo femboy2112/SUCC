@@ -14,6 +14,7 @@
 | Ideal source-identification and model-relative access | Finite source-compatible version spaces, actualized probe histories, adversarial stationary access traps, conditional reconstruction and finite/omega/dark classification | ideal_frames, observer_traps |
 | Absorbing frames and closure | Complete source-compatible fibers, shared exact probe predictions, finite Horn fixed points, constructive forcing and epi/physical access split | absorbing_frames, constructive_frontier |
 | Finite communication | Target-specific sufficiency, causal access certificates and bit-minimal zero-error receiver-side-information coding | interobserver_channels |
+| Knowledge-aided observer synchronization | Shared basis checks, source-attested local probe batches, strict epistemic catch-up and snapshot-only optimizations | knowledge_ladder |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -83,6 +84,16 @@ Finite Hard SUCC exhausts an exact finite rule/probe universe. For an infinite t
 A source- and report-preserving inter-observer completion requires a finite message, common decoding semantics, and trustworthy causal evidence. The exact full-frame message includes source-compatible lawful probe-acquisition replay, while a shorter target-only witness explicitly lacks that provenance. Finite-alphabet exact universal communication of arbitrary real constants is impossible by countability. For finite one-shot zero-error communication with receiver side information, the optimal fixed-length bit budget is derived from the confusability graph chromatic number, not from mere probe count.
 
 See [the formal research memo](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md) and claim ledger O55–O66. The finite implementations do not automatically transport to general neural, quantum, or RH settings.
+
+## Two-observer knowledge transport versus physical observation
+
+A sender's several legitimate local SUCC frames can be imported in one recipient K-SUCC **epistemic macro-step** if both share exact causal prefix, source/probe interpretation and closure rules. Transfer preserves the original observer attribution; it does not become a new physical observation by the receiver. Exact replay certifies only source-compatible, lawfully enabled paths against the *declared* world, not real physical authentication.
+
+The **snapshot placement** (compatible source fiber, shared predictions, derived semantic facts and epistemic probe frontier) is weaker than **continuation placement** (all future behaviors can be matched). A minimal snapshot can omit a seemingly redundant causal event and thereby change the receiver's next local exploration. The strict recorder carries the full provenance-labeled batches and can preserve continuation under equal physical instrument feasibility, deterministic update rules and source outcomes.
+
+Shared language hashes reject stale or changed basis and source versions. Genuine concurrent observers with overlapping, non-prefix evidence will require a new rebase and merge theorem; symbolic labels alone do not validate an epistemic translation across changed mathematical bases. An infinite ladder of finite successful squares is not a finite transmission of an arbitrary infinite result: the limit additionally requires verified topology/continuity, finite description/proof obligations and accounting for all transmission costs.
+
+See [KNOWLEDGE_AIDED_SUCC_LADDER.md](../research/2026-10-10/KNOWLEDGE_AIDED_SUCC_LADDER.md). No general cognitive, quantum, category-level functor or arithmetic RH-sign theorem is being claimed.
 
 ## Model-dependent observation and source-relative certification
 
