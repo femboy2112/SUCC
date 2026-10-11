@@ -687,6 +687,12 @@ def proof_shape_and_basis_demo() -> dict:
     observer=AgentKnowledge("Alice")
     before=probe_option_result(observer,upgraded,"parity")
     assert before.is_an_epistemic_option and not before.inferable_without_measuring
+    target = {s: str(int(s[0]) ^ int(s[1])) for s in world.sources}
+    plan = certify_probe_decision(observer, upgraded, "parity", target)
+    assert (plan.probe_separates_target
+            and plan.epistemically_available
+            and not plan.physically_executable
+            and verify_probe_decision(observer, upgraded, target, plan))
     measured=observer.local_succ(upgraded,"10")
     after=probe_option_result(measured,upgraded,"parity")
     proof=prove_probe_value(measured,upgraded,"parity")
@@ -700,6 +706,8 @@ def proof_shape_and_basis_demo() -> dict:
         "new_epistemic_probe":"parity",
         "new_physical_instrument_created":False,
         "option_alone_determined_result":False,
+        "conditional_probe_plan_valid_for_every_possible_outcome":plan.probe_separates_target,
+        "conditional_probe_plan_physically_available":plan.physically_executable,
         "proof_after_primitive_evidence_determined_result":True,
         "proved_value":proof.value,
         "parity_physically_observed":False,
