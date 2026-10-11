@@ -99,6 +99,20 @@ Evidence: [Twin observer mathematical field invariance](../research/2026-10-11/T
 
 Sources: [Probe-coherence horizons and minimal proof support](../research/2026-10-11/PROBE_COHERENCE_HORIZONS_AND_PROOF_SUPPORT.md), probe_coherence.py, tests/test_probe_coherence.py, claim ledger O102–O108.
 
+## Shared basis as relative path/value channel and mathematical boundary code
+
+**Maintainer's transmission:** A knows B's last frame and the common indexed mathematical basis `e_1,e_2,...`. An example relative packet `((1,4,5),(1,1,1))` means the sparse additive update `e_1+e_4+e_5`, not an absolute model-state dump. Check basis version, prior frame anchor, endpoint and proof/source assumptions. When indices refer to noncommuting carrier actions rather than additive coordinates, the path is ordered; a set of addresses is insufficient.
+
+**Implemented:** exact finite-window sparse rational vector packets; independently justified all-equal support source constraint compresses three coefficient values to one, without claiming global bit optimality; ordered affine translate/dilate/translate path distinguishes permutations (3 versus 2).
+
+**Boundary-code calibration:** `F(z)=z+z^4+z^5` on the unit circle; all six sixth-root samples exactly recover rational coefficients when degree<=5. With unrestricted higher modes `z^6−1` vanishes on all six points. Exact inner-radius recovery is possible but attenuates high modes; finite precision may make `z^5` indistinguishable from zero. These are explicit mathematical analogues of reconstruction/code-subspace restrictions, NOT gravitational area entropy or AdS/CFT theorems.
+
+**RH firewall:** all exact complex-line *function values* of an entire `xi` on a line segment determine the entire function by the identity theorem; zero locations on that line alone do not determine arbitrary reflection-symmetric entire functions. Symmetric polynomial F/G control shares line zeros while adding off-line zeros. It is not the real Riemann xi; no completed Weil positivity or zero exclusion is established.
+
+**Next research:** costed sparse/ordered compositional paths with changing local frames, a genuinely minimal future-sufficient proof/delta, and stable boundary recovery on an honestly derived analytic source class. For any holographic RH conjecture require genuine arithmetic Euler+Gamma source operators, code-domain definition, source-independent proof translation, reconstruction and quantitative information stability. Ensure the critical line is not mislabeled a geometric or analytic boundary.
+
+Research: [Basis-indexed deltas and boundary encoding](../research/2026-10-11/BASIS_INDEXED_DELTAS_AND_BOUNDARY_ENCODING.md), `basis_boundary_transport.py`, tests, ledger O109–O117.
+
 ## Stage 2: rigorous logic and ordinal realization
 
 - Formalize a full proof-predicate/representability story for syntax and diagonal substitution in a proof assistant (Lean, Coq or Isabelle), clearly separating the project’s finite syntax engine from established Gödel theorems.
