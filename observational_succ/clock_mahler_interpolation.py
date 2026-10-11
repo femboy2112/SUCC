@@ -126,6 +126,33 @@ def local_euler_from_mahler_truncation(p:int,terms:int):
     }
 
 
+def integer_power_clock_continuity(p:int,base:int):
+    """Exact criterion for f(n)=base^n to extend continuously Z_p->Q_p.
+
+    For an INTEGER base, Delta^r f(0)=(base-1)^r.
+    These tend to zero p-adically iff base==1 or p divides base-1.
+    (base=1 is included in p|(base-1).)
+
+    A negative control for p=3: f(n)=(-1)^n never extends
+    continuously, since 3^r -> 0 in Z_3 while f(3^r)=-1 != f(0)=1.
+    A root-of-unity/Teichmuller clock branch is required.
+    For p=2 the same (-1)^n is continuous on Z_2.
+    """
+    if not prime(p):
+        raise ClockInterpolationError("Prime local metric required")
+    _bounded_int(base,-1000000,1000000)
+    c=(base-1)%p==0
+    return {
+        "p":p,
+        "integer_base":base,
+        "initial_difference_at_order_three":str((base-1)**3),
+        "continuous_integer_power_sequence_over_Zp":c,
+        "initial_jets_tend_to_zero_p_adically":c,
+        "nontrivial_mod_p_torsion_requires_weight_branch":not c and base%p!=0,
+        "no_analytic_zeta_source_implied":True,
+    }
+
+
 @lru_cache(maxsize=2048)
 def bernoulli(n:int) -> Fraction:
     """Bernoulli B_n, standard convention B_1=-1/2, exact arithmetic.
@@ -214,6 +241,12 @@ def clock_mahler_demo():
     if (local["continued_local_euler_factor"]!="-1/4"
             or local["error_valuation"]!=4):
         raise ArithmeticError("p=5 local Mahler source behavior changed")
+    odd_parity=integer_power_clock_continuity(3,-1)
+    two_adic_parity=integer_power_clock_continuity(2,-1)
+    if odd_parity["continuous_integer_power_sequence_over_Zp"]:
+        raise ArithmeticError("Odd-prime torsion clock spuriously continuous")
+    if not two_adic_parity["continuous_integer_power_sequence_over_Zp"]:
+        raise ArithmeticError("2-adic parity clock spuriously discontinuous")
     w5=kummer_clock_witness(5,2,2)
     w7=kummer_clock_witness(7,2,2)
     if (w5["weights"]!=(2,22)
@@ -233,6 +266,8 @@ def clock_mahler_demo():
         "kummer_p_five_weights":w5,
         "kummer_p_seven_weights":w7,
         "wrong_unremoved_Euler_factor_breaks_clock_congruence":True,
+        "torsion_clock_mod_three_requires_branch":odd_parity,
+        "parity_clock_mod_two_is_continuous":two_adic_parity,
         "clock_algebra_generates_a_p_adic_zeta_measure_without_extra_proofs":False,
         "classical_Mahler_and_Kummer_theorems_imported":True,
         "nontrivial_zeta_zeros_used":False,
