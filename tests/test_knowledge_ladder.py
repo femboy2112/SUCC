@@ -10,7 +10,7 @@ from observational_succ.knowledge_ladder import (
     AgentKnowledge, SharedKnowledgeBasis, ProbeBatch, KnowledgeLadderError,
     encode_strict_relay, decode_strict_relay,
     minimal_snapshot_delta, encode_snapshot_relay, decode_snapshot_relay,
-    knowledge_ladder_demo,
+    knowledge_ladder_demo, complementary_observers_demo,
 )
 
 
@@ -44,6 +44,19 @@ class KnowledgeLadderTests(unittest.TestCase):
         self.assertFalse(report["sender_outcomes_cryptographically_authenticated"])
         self.assertFalse(report["physical_time_speedup_proved"])
         self.assertFalse(report["infinite_ladder_executed"])
+
+    def test_complementary_instruments_construct_joint_xor_knowledge(self):
+        report = complementary_observers_demo()
+        self.assertEqual(report["status"], "EXACT_DISTRIBUTED_EPISTEMIC_COMPLEMENTARITY")
+        self.assertEqual(report["alice_only"], ["10", "11"])
+        self.assertEqual(report["bob_only"], ["00", "10"])
+        self.assertFalse(report["alice_only_xor_identified"])
+        self.assertFalse(report["bob_only_xor_identified"])
+        self.assertEqual(report["shared_source"], ["10"])
+        self.assertEqual(report["shared_xor"], "1")
+        self.assertTrue(report["replayed_remote_knowledge_not_local_measurement"])
+        self.assertFalse(report["full_continuation_equivalence_of_physical_devices_claimed"])
+        self.assertFalse(report["RH_claimed"])
 
     def test_strict_k_local_frames_become_one_b_informed_step(self):
         basis = chain_basis(4)
