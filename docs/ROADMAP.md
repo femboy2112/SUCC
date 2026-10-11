@@ -125,9 +125,11 @@ Research: [Basis-indexed deltas and boundary encoding](../research/2026-10-11/BA
 
 **Changing local frames:** with `y_n=F_n x_n`, the correct discrete derivative is `eta_n=y_(n+1)-U_n y_n=F_(n+1)Delta x_n`, `U_n=F_(n+1)F_n^-1`. Exact rational invertibility, zero physical delta under a coordinate swap, commutative transport square and noncommuting affine prefix composition are tested. A frame/certificate-dependent SUCC is not necessarily causally parallelizable before the required source observations are obtained.
 
-**Next:** prove a source-derived, stable *covariant recurrence* that can reduce a changing-frame SUCC path to finite jet plus verified connection; test nonflat discrete connection/holonomy, physical carrier-backaction and true source provenance. Keep RH arithmetic/Archimedean applications downstream and require completed Gamma/Weil domains.
+**Direct covariant Newton jet demonstrated:** with a globally justified canonical Newton law, initial local jet `j_r=F_0 Delta^r x_0` and known invertible frame transport `F_n F_0^-1`, each local placement is `y_n=(F_n F_0^-1)(y_0+sum_r binom(n,r)j_r)`. Exact variable-frame quadratic trajectories and finite arbitrary sampled paths are reconstructed independently. This is a pure-gauge result and assumes the frame sequence is available to the decoder.
 
-Research: [Finite-difference SUCC integration](../research/2026-10-11/FINITE_DIFFERENCE_SUCC_INTEGRATION.md), `succ_discrete_integration.py`, tests, claims O118–O126.
+**Next:** prove a source-derived, stable *nonflat or carrier-dependent covariant recurrence* that can reduce a changing-frame SUCC path to finite jet plus independently verified connection; test nontrivial holonomy, physical carrier-backaction and true source provenance. Keep RH arithmetic/Archimedean applications downstream and require completed Gamma/Weil domains.
+
+Research: [Finite-difference SUCC integration](../research/2026-10-11/FINITE_DIFFERENCE_SUCC_INTEGRATION.md), `succ_discrete_integration.py`, tests, claims O118–O127.
 
 ## Stage 2: rigorous logic and ordinal realization
 
