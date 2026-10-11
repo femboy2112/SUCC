@@ -131,6 +131,18 @@ Research: [Basis-indexed deltas and boundary encoding](../research/2026-10-11/BA
 
 Research: [Finite-difference SUCC integration](../research/2026-10-11/FINITE_DIFFERENCE_SUCC_INTEGRATION.md), `succ_discrete_integration.py`, tests, claims O118–O127.
 
+## Euler local/global transport as a finite–Archimedean benchmark
+
+**Maintainer's mathematical question:** analytic continuation assigns ζ(-1)=-1/12 to a function originally encoded by a divergent natural-number walk, and the formal local Euler factor there is (1-p)^-1=-1/(p-1), matching the first SUCC/FUCC prime-jet return gap. This local arithmetic relation is exact, but not itself a proof of an Archimedean structure.
+
+**Provable noncommutation:** each individual local factor has a rational continuation at s=-1; the cutoff product of those values tends to zero. By contrast, analytic continuation of the previously assembled ζ from Re(s)>1 gives -1/12. Naively interchanging local continuation and infinite product is invalid.
+
+**Genuine positive bridge:** the global functional equation gives ζ(-1)=-ζ(2)/(2π²); at s=2 the original prime Euler product converges absolutely. The finite prime cutoff P_X approximates the globally transported value V_X with rigorous error ≤1/(12X) by an elementary telescoping upper bound. The Gamma/pi factor is SOURCE-SPECIFIC, not a universal local counterterm. Deleting p=2 yields analytic value +1/12 but blindly reusing ζ's multiplier gives -1/16; fake composite p=6 fails prime-locality. An independent η-Abel continuation yields -1/12.
+
+**Next RH-specific work:** formulate operators/categorical transport with actual Euler data, independently justified Archimedean Gamma and analytic test-function domains. The correct global finite↔Arch compatibility must survive genuine character-L source controls, fail intentionally corrupted Euler factors, and prove an identification with the FULL Weil form before inferring anything about nontrivial zeta zeros. Local-to-global coherence of special values alone does not prove RH or mathematical holography.
+
+Evidence: [Euler local/global minus-one transport](../research/2026-10-11/EULER_LOCAL_GLOBAL_MINUS_ONE_TRANSPORT.md), zeta_minus_one_transport.py, tests/test_zeta_minus_one_transport.py, ledger O128–O135.
+
 ## Stage 2: rigorous logic and ordinal realization
 
 - Formalize a full proof-predicate/representability story for syntax and diagonal substitution in a proof assistant (Lean, Coq or Isabelle), clearly separating the project’s finite syntax engine from established Gödel theorems.
