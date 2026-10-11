@@ -490,6 +490,119 @@ def covariant_step(
     )
 
 
+def covariant_initial_jet_from_local_samples(
+    frames:tuple[RationalFrame,...],
+    local_samples:tuple[tuple[Fraction,...],...],
+) -> tuple[tuple[Fraction,...],...]:
+    """Return forward-difference jet PARALLEL-TRANSPORTED TO FRAME ZERO.
+
+    Given y_n=F_n x_n at finitely many sampled times, convert each back
+    into global coordinates x_n and compute Delta^r x_0. Finally express
+    each such jet vector in the same initial local frame F_0.
+    This does not assert a global recurrence or perform extra source probes.
+    """
+    if (type(frames) is not tuple or type(local_samples) is not tuple
+            or not 1<=len(frames)==len(local_samples)<=33
+            or any(not isinstance(frame,RationalFrame) for frame in frames)):
+        raise DiscreteSuccError("Paired finite frames and source samples required")
+    dim=frames[0].dim
+    if any(frame.dim!=dim for frame in frames):
+        raise DiscreteSuccError("Source coordinate dimensions differ")
+    physical_in_canonical_frame=tuple(
+        BasisState(frame.inverse().act(_vector(y,dim)))
+        for frame,y in zip(frames,local_samples)
+    )
+    b=SharedBasis(dim)
+    canonical_jet=difference_jet_from_samples(physical_in_canonical_frame,b)
+    return tuple(frames[0].act(v) for v in canonical_jet)
+
+
+def covariant_newton_evaluate(
+    initial_local:tuple[Fraction,...],
+    covariant_differences:tuple[tuple[Fraction,...],...],
+    initial_frame:RationalFrame,
+    target_frame:RationalFrame,
+    n:int,
+) -> tuple[Fraction,...]:
+    """Discrete Taylor/Newton formula with a known (flat) frame connection.
+
+    Let j_r=F_0 Delta^r x_0 and y_0=F_0 x_0. Then
+        y_n=(F_n F_0^-1) * [ y_0 + sum_{r>=1} C(n,r) j_r ].
+
+    For n within sampled data, the full N-th order jet is always exact.
+    Beyond data, a finite d-th order jet is only SOURCE-FAITHFUL with an
+    independently proven global Delta^(d+1) x=0 recurrence/source law.
+    """
+    if (not isinstance(initial_frame,RationalFrame)
+            or not isinstance(target_frame,RationalFrame)
+            or initial_frame.dim!=target_frame.dim
+            or type(n) is not int or not 0<=n<=1000000
+            or type(covariant_differences) is not tuple
+            or len(covariant_differences)>32):
+        raise DiscreteSuccError("Invalid local frames or bounded Newton jet")
+    local=_vector(initial_local,initial_frame.dim)
+    for r,candidate in enumerate(covariant_differences,1):
+        v=_vector(candidate,initial_frame.dim)
+        if r<=n:
+            local=_add(local,_scale(comb(n,r),v))
+    return target_frame.compose(initial_frame.inverse()).act(local)
+
+
+def finite_covariant_newton_reconstruct_samples(
+    frames:tuple[RationalFrame,...],
+    local_samples:tuple[tuple[Fraction,...],...],
+) -> tuple[tuple[Fraction,...],...]:
+    """Unconditional EXACT finite inversion under arbitrary changing frames.
+
+    Global frames are assumed known/invertible; no actual extra sources
+    were probed and no prediction after the sampled horizon is certified.
+    """
+    jet=covariant_initial_jet_from_local_samples(frames,local_samples)
+    returntuple=tuple(
+        covariant_newton_evaluate(jet[0],jet[1:],frames[0],frame,n)
+        for n,frame in enumerate(frames)
+    )
+    if returntuple!=tuple(_vector(s,frames[0].dim) for s in local_samples):
+        raise ArithmeticError("Finite covariant Pascal inversion contradicted")
+    return returntuple
+
+
+def certified_covariant_newton_path(
+    basis:SharedBasis,
+    frames:tuple[RationalFrame,...],
+    local_first_samples:tuple[tuple[Fraction,...],...],
+    law:PolynomialJetSourceFamily,
+) -> tuple[tuple[Fraction,...],...]:
+    """Directly evaluate every future local frame under a shared global law.
+
+    Source-class membership is a declared, externally justified premise.
+    The caller provides known invertible F_n for ALL requested n. Without
+    those transported coordinate maps, an initial jet in F_0 does not
+    identify future local coordinates in other arbitrary changing frames.
+    """
+    law.verify(basis)
+    d=law.degree_bound
+    if (type(frames) is not tuple or not 1<=len(frames)<=129
+            or len(frames)<d+1
+            or type(local_first_samples) is not tuple
+            or len(local_first_samples)!=d+1
+            or basis.dimension>8
+            or any(not isinstance(frame,RationalFrame)
+                   or frame.dim!=basis.dimension for frame in frames)):
+        raise DiscreteSuccError("Known full frame sequence and d+1 source samples needed")
+    initial_jet=covariant_initial_jet_from_local_samples(
+        frames[:d+1],local_first_samples)
+    canonical_jets=tuple(frames[0].inverse().act(v)
+                         for v in initial_jet[1:])
+    if not law.contains(canonical_jets,basis):
+        raise DiscreteSuccError("Global source recurrence is unverified for this local jet")
+    return tuple(
+        covariant_newton_evaluate(initial_jet[0],initial_jet[1:],
+                                  frames[0],frame,n)
+        for n,frame in enumerate(frames)
+    )
+
+
 @dataclass(frozen=True)
 class AffineScanReceipt:
     values:tuple[tuple[Fraction,...],...]
