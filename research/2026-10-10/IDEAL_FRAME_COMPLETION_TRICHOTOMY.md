@@ -75,7 +75,7 @@ f(x)=\sum_{k=0}^{d}\frac{f^{(k)}(0)}{k!}x^k.
 
 Thus \(K_d(f)=\{f\}\), for every \(f\in\mathcal X\). For every \(n<d\), adding \(x^{n+1}\) (when \(n+1\le d\)) gives a different polynomial with the same \(n\)-jet. Uniform completion time for this class is therefore precisely \(d\) (counting the order-0 initial frame as stage 0).
 
-**Unexpected class-relative consequence:** If the permitted class is the *unbounded* polynomial ring \(\\mathbb R[x]\), **even the zero polynomial is not identifiable at any finite stage**. For every \(n\), the polynomial \(f+x^{n+1}\) has the same observed \(n\)-jet as \(f\). Yet the full infinite jet uniquely determines any polynomial. Thus an individually finite object may still require an ideal omega report to be *certifiably* identified when no upper complexity bound is supplied. Finite description and finite identification are different notions.
+**Unexpected class-relative consequence:** If the permitted class is the *unbounded* polynomial ring \(\mathbb R[x]\), **even the zero polynomial is not identifiable at any finite stage**. For every \(n\), the polynomial \(f+x^{n+1}\) has the same observed \(n\)-jet as \(f\). Yet the full infinite jet uniquely determines any polynomial. Thus an individually finite object may still require an ideal omega report to be *certifiably* identified when no upper complexity bound is supplied. Finite description and finite identification are different notions.
 
 **Boundary:** no finite jet can *certify that the unknown source has degree at most d* absent independently justified restrictions. Claiming the bound can yield an attractive but false "completed" model; a later higher derivative exposes the mistake.
 
@@ -198,7 +198,11 @@ python -m unittest discover -s tests -p 'test_*.py'
 - **Gödel/Turing:** finite instances or finitely realizable prefixes do not generally authorize an infinitary assertion; nevertheless structural theorems can prove an all-orders fact with a *finite proof*. Our analytic and smooth reconstruction conclusions are examples.
 - **RH:** one may investigate whether finite source probes fail to distinguish source families or the needed completed arithmetic functional, but NOTHING here establishes Weil positivity or RH independence. A new source-derived bridge must explicitly preserve Gamma/poles, Euler structure, topology and test-function domains.
 
-## 8. Claim ledger and next verdict-changing research
+## 8. Companion theorem: model-dependent observer traps
+
+The new [observer-trap formalization](MODEL_DEPENDENT_OBSERVER_TRAPS.md) studies *policy-generated* persistent nonidentifiability even in finite, globally separable source classes. This is distinct from the flat-germ kernel and from invalid analytic omega realization: the globally available probe family may be sufficient, while the endogenous model-dependent observer never reaches the needed probe. Model revision can itself lead to another trap.
+
+## 9. Claim ledger and next verdict-changing research
 
 Recommended ledger entries:
 
