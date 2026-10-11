@@ -49,10 +49,11 @@ This is an established identification of the completed arithmetic Weil distribut
 13. **[Finite-difference SUCC integration](research/2026-10-11/FINITE_DIFFERENCE_SUCC_INTEGRATION.md)** — reconstruct every SUCC frame from shared initial condition plus path derivatives, unconditional finite Newton inversion and proof-certified future jets, direct covariant Newton reconstruction in invertible changing frames, and parallelizable prefix scans.
 14. **[Euler local/global transport at −1](research/2026-10-11/EULER_LOCAL_GLOBAL_MINUS_ONE_TRANSPORT.md)** — prime-gap local Euler factors, invalid interchange with infinite product, genuine Gamma-functional-equation transport to convergent ζ(2), and rigorous finite-prime error bounds.
 15. **[Residue-one adeles and weight-two p-adic interpolation](research/2026-10-11/RESIDUE_ONE_ADELES_AND_WEIGHT_TWO_INTERPOLATION.md)** — real p-adic convergence of Euler factors, unit-norm limitation, factorial finite/Arch place mismatch, and Kubota–Leopoldt branch-sensitive compatibility.
-16. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
-17. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
-18. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
-19. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
+16. **[Mahler SUCC clocks and Kummer interpolation](research/2026-10-11/MAHLER_SUCC_CLOCK_KUMMER.md)** — prime-jet return gaps equal modular unit-clock periods; forward differences give exact local Euler interpolation; Kummer congruences and torsion branches certify nontrivial source coherence.
+17. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
+18. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
+19. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
+20. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
 
 ## Run it
 
@@ -80,6 +81,7 @@ python scripts/basis_boundary_probe.py
 python scripts/succ_discrete_integration_probe.py
 python scripts/zeta_minus_one_transport_probe.py
 python scripts/residue_one_arch_probe.py
+python scripts/clock_mahler_interpolation_probe.py
 ~~~
 
 The package name is **observational_succ**. No runtime dependency on the original RH repository is required.
@@ -104,6 +106,7 @@ The package name is **observational_succ**. No runtime dependency on the origina
 | Finite-difference SUCC integration | succ_discrete_integration | Anchored first differences reconstruct every finite state; proof-bound Newton jets produce direct evaluations; covariant moving frames and associative noncommutative affine prefix computations |
 | Euler-to-Archimedean source transport | zeta_minus_one_transport | Authentic prime local factors and SUCC gaps at -1, failure of termwise global continuation, convergent s=2 product plus Gamma functional equation, exact tail bounds, eta cross-check and mutated-source controls |
 | Residue-one local units and interpolated zeta values | residue_one_arch | Genuine Qp convergence of 1+p+…, idelic unit norms and inability to determine real modulus, factorial-plus-one finite/real contrast, classically sourced weight-two KL interpolation |
+| Mahler clock interpolation and SUCC jet coherence | clock_mahler_interpolation | Exact unit-clock periods=prime jet gaps, p-adic Newton reconstruction of (1−p)^n at −1, corrected Kummer congruence examples and noncontinuous torsion-clock negative controls |
 | Gödel, Turing and finite proof | observer_logic, godel_succ, observer_reflection | Self-reference syntax, two-counter controls, checked proof authority, finite-support at omega |
 | Ordinal and Hilbert limits | ordinal_succ_report, infinite_realization | Formal omega/omega+1 reports, second-order interaction, nonuniform Hilbert limits |
 | Optional RH application bridges | gamma_interferometer, balanced_theta_li, hasse_theta_seam, source_prime_certificates, dirichlet_lambert | Gamma/prime source interfaces, Li-index windows, certified prime-only Suzuki bounds |
