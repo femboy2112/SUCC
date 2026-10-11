@@ -19,6 +19,7 @@
 | Cross-language exact calibration | Polynomial circle ring and Fourier angular reports, compatible tangential derivations and global one-form, orientation/chart scope, static-point versus path/winding probe aliases | circle_translation |
 | Twin-observer field invariance | Same physical source/probes/reasoner, distinct investigation focus, exact common tangent translation, relative testimony and flat smooth-loop finite-jet adversary | twin_circle_observers |
 | Proof-carrier coherence and dependency contraction | Typed original-versus-modified source readings, destructive probe transitions, minimal logical evidence supports, operational impossibility and positive repairs | probe_coherence |
+| Basis-indexed relative boundary transport | Anchored sparse additive coefficient messages, noncommuting action paths, proof-certified value sharing, exact finite Fourier boundary inverse and finite-precision/source-class obstruction probes | basis_boundary_transport |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -88,6 +89,16 @@ Finite Hard SUCC exhausts an exact finite rule/probe universe. For an infinite t
 A source- and report-preserving inter-observer completion requires a finite message, common decoding semantics, and trustworthy causal evidence. The exact full-frame message includes source-compatible lawful probe-acquisition replay, while a shorter target-only witness explicitly lacks that provenance. Finite-alphabet exact universal communication of arbitrary real constants is impossible by countability. For finite one-shot zero-error communication with receiver side information, the optimal fixed-length bit budget is derived from the confusability graph chromatic number, not from mere probe count.
 
 See [the formal research memo](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md) and claim ledger O55–O66. The finite implementations do not automatically transport to general neural, quantum, or RH settings.
+
+## Shared indexed basis, noncommuting paths, and mathematical boundary encoding
+
+For a finite-support countably indexed rational basis, A can transmit `((1,4,5),(1,1,1))` as **coordinates of a receiver-relative update** without transmitting its absolute source/model state. The common decoder must know the same mathematical basis and exact prior receiver anchor. A numerical coefficient is a magnitude; the numbered direction is a reference to the shared basis. Under linear addition coordinate updates commute; when they denote state-changing local operations, their causal order must be encoded and verified. The 1→4→5 translate/dilate/translate action yields a different endpoint than 4→1→5 even with the same multiset of values.
+
+A separately certified law of the admissible source-delta class can allow B to infer several coordinate values from one communicated independent value. Source-class membership is an **external premise** to be verified; no physical source authentication or global shortest-bit claim comes from the packet itself.
+
+Mathematical boundary experiment: the same coefficients give `F(z)=z+z^4+z^5`, with unit-circle mode evaluations. The inverse DFT recovers exactly degree<=5 sources from six sixth-root observations, but `z^6−1` is an unobservable alias when the source degree is not bounded. Exact radial evaluation remains invertible while finite-precision rounding can erase attenuated high modes. The appropriate invariant is **injectivity/stability on a declared source or code subspace**, not a rhetorical holographic horizon.
+
+In RH the line Re(s)=1/2 is a symmetry axis inside an entire function's domain, not a physical/analytic event horizon. Exact full line values have holomorphic uniqueness; on-line zero locations alone fail for broader entire symmetric function families. The genuine zeta Euler, gamma, conductor/test-domain and Weil positivity constraints are absent from the toy boundary code, and no RH or AdS/CFT equivalence follows. See [basis-indexed research](../research/2026-10-11/BASIS_INDEXED_DELTAS_AND_BOUNDARY_ENCODING.md), O109–O117.
 
 ## Carrier modification versus source-faithful proof support
 
