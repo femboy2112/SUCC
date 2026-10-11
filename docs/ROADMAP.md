@@ -119,13 +119,15 @@ Research: [Basis-indexed deltas and boundary encoding](../research/2026-10-11/BA
 
 **Exact implementation:** additive prefix recovery (all states, not merely endpoint) with independent serial and Hillis–Steele-style scans, log parallel dependency depth but sequential Python execution. A net endpoint delta cannot identify the actual trajectory unless intermediate increments are separately encoded or reconstructed from a sound path law.
 
+**Unconditional finite Newton inversion:** for ANY observed trajectory x0..xN, the complete N-th order forward jet reconstructs each observed x_n by the triangular binomial/Pascal inversion identity without any polynomial premise; 1,092 arbitrary finite source sequences verify this. Such a full jet is a representation, not necessarily compression or a justified predictor of unseen states.
+
 **Certified jet compression:** if a mathematical theorem establishes `Delta^(d+1) x_n = 0` for all n, a degree-d Newton finite-difference jet and B's initial state reconstruct x_n by binomial coefficients without replaying every individual step. The code uses declared global polynomial source laws and separately checks jet membership. A finite initial table alone is NOT proof of the source law; the zero-samples-with-nonzero-next-step negative control must remain.
 
 **Changing local frames:** with `y_n=F_n x_n`, the correct discrete derivative is `eta_n=y_(n+1)-U_n y_n=F_(n+1)Delta x_n`, `U_n=F_(n+1)F_n^-1`. Exact rational invertibility, zero physical delta under a coordinate swap, commutative transport square and noncommuting affine prefix composition are tested. A frame/certificate-dependent SUCC is not necessarily causally parallelizable before the required source observations are obtained.
 
 **Next:** prove a source-derived, stable *covariant recurrence* that can reduce a changing-frame SUCC path to finite jet plus verified connection; test nonflat discrete connection/holonomy, physical carrier-backaction and true source provenance. Keep RH arithmetic/Archimedean applications downstream and require completed Gamma/Weil domains.
 
-Research: [Finite-difference SUCC integration](../research/2026-10-11/FINITE_DIFFERENCE_SUCC_INTEGRATION.md), `succ_discrete_integration.py`, tests, claims O118–O125.
+Research: [Finite-difference SUCC integration](../research/2026-10-11/FINITE_DIFFERENCE_SUCC_INTEGRATION.md), `succ_discrete_integration.py`, tests, claims O118–O126.
 
 ## Stage 2: rigorous logic and ordinal realization
 
