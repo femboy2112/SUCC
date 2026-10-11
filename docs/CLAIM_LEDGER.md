@@ -97,15 +97,20 @@ Use these labels:
 | O82 | Agreement of semantic snapshots alone guarantees the required same knowledge, same future empirical probe access and reasoning capability | REFUTED (unconditional inference) | Missing used-probe controls and unequal physical feasibility; previous weak relay can work while strict relative transport refuses |
 | O83 | The finite relative SUCC model establishes authentic physical measurements, full quantum/continuous future bisimulation, optimal global communication, general theory-to-theory transport or an RH positivity theorem | UNVERIFIED | Physical provenance, new primitive experimental modalities, source-independent proof translations, omega continuity and RH completed source-to-Weil identity remain open |
 | O84 | A proof of an available probe's *decisiveness* for target T is valid iff every response-equivalence fiber in the compatible source class has one T-value; the proof gives a conditional decision plan, not the actual response | PROVED LOCAL / TESTED MODEL | certify_probe_decision and verify_probe_decision, A/B identity probe positive, parity left-bit negative, XOR concept physically unavailable; research note §4 |
-
-
-
-
-
+| O85 | The real polynomial coordinate ring of the circle and the real trig-polynomial function ring are isomorphic under x→cosθ and y→sinθ; a finite exact rational subring bridge implements canonical roundtrips | CLASSICAL / TESTED MODEL | Darij Grinberg Lecture 29 §5.2; TWO_LANGUAGES_ONE_CIRCLE §2; circle_translation.py and 256 multiplication controls |
+| O86 | The unit circle's polynomial rotation law transports angle addition; one rational stereographic chart covers all circle points except (-1,0) | CLASSICAL / PROVED LOCAL / TESTED MODEL | Exact Pythagorean rational point and composition checks, chart inverse singularity; circle_translation.py |
+| O87 | Every finite rational-time circle-point sampling schedule admits distinct integer-winding rotation paths with exactly the same sampled points | PROVED LOCAL (mathematical LCM proof) / TESTED FINITE MODEL | γ_k and γ_(k+L), L=lcm sample denominators; exact Fraction phase equalities and winding 1 vs 5 control |
+| O88 | The circle's nontrivial path homotopy/winding is a path property, not determined from the unlabeled circle point set, and can be recovered from a valid lifted angle or oriented integral | CLASSICAL | Fundamental group π1(S¹)≅Z and covering path lifting; Northern Michigan University lecture; TWO_LANGUAGES_ONE_CIRCLE §3c |
+| O89 | Identity of finitely many observed circle points ensures equality of the complete oriented path or global trigonometric-polynomial report | REFUTED as universal inference | γ1 versus γ5 with equal cardinal samples but different windings; cosθ versus cos5θ equal on four cardinal points but not at (3/5,4/5) |
+| O90 | Under a correctly declared winding prior k∈[-K,K] in the uniform-rotation family, one exact observation at time 1/(2K+1) can distinguish every candidate k | PROVED LOCAL / TESTED MODEL | Modular fractional phase injectivity on bounded integer class; test_circle_translation.py |
+| O91 | Polynomial circle membership selects one canonical trig orientation and phase origin automatically | REFUTED as universal inference | The translations y→sinθ versus y→−sinθ both respect the circle relation but reverse signed winding; calibrated quarter-turn controls |
+| O92 | A general observer-language translator preserving proof authority, physical probe access, complete path histories, future SUCC dynamics and all cross-field RH invariants follows from this pointwise ring isomorphism | UNVERIFIED | Requires typed observation/preservation diagrams, chart/phase calibration, path-space probes, causal provenance, plus RH-specific Euler/Gamma/source validation |
 
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
+
+New circle-translation controls: exact circle quotient polynomial/Fourier isomorphism including roundtrips and small monomial multiplication; stereographic missing-point defect; opposite winding signs under equally valid orientation calibrations; rational-time sampling collisions γ1 vs γ5; constrained-winding positive control; global cosθ vs cos5θ identity failure despite identical cardinal samples. These are exact mathematical programs and counterexamples, not empirical observer tests.
 
 New relative-delta controls: independently produced identical empirical positions with different event origins; one-step delta catch-up preserving both provenance streams; predictable probe values omitted from encoded path; raw semantic snapshot ambiguity and physically unequal-probe rejection; proof-shaped value certificates versus bare available probes; verified XOR concept extension without inventing hardware; stale frozen-base version rejection; worst-case n-bit prefix counting.
 
@@ -121,7 +126,7 @@ Some controls are *historical* and live in the archived research documents, whil
 
 ## Outstanding highest-value claims
 
-- **General theory:** extend operationally equivalent but independently sourced observer histories using basis-versioned relative path/value deltas; require same empirical feasibility and reasoning capability. Prove sound changes of mathematical language, contextual proof-shaped probes and costed future-sufficient communication; then investigate lawful infinite directed limits without pretending a fixed base can decode unsupported later vocabulary.
+- **General theory:** prove restricted cross-language translations first on an exact shared phenomenon (the unit circle) and distinguish algebraic point observables from path and topological invariants. Then construct typed, provenance-preserving observer-language morphisms preserving appropriate continuation probes, with explicit chart/orientation calibration and adequate finite-to-infinite topology.
 - **Proof theory:** formalization in PA of coding/substitution representation, followed by appropriately qualified Gödel/reflection principles in a proof assistant.
 - **RH adapter:** a rigorous archimedean/pole interval oracle and noncircular identification of a positive source-derived distribution with the completed Weil form.
 
