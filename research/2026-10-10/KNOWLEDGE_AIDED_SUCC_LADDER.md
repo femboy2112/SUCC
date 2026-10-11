@@ -101,6 +101,32 @@ At each rung the recipient reconstructs the full public model and trusted labele
 
 **Measured software property:** six local discovery updates across the agents, three one-step receiver catch-ups, exact rational/finite equality assertions (this toy is string-valued and exact). **Not measured:** real-world elapsed-time speedup, cognitive processes, high-dimensional physics, or transfinite execution.
 
+### Complementary observers: collective completion unavailable to either alone
+
+The relay has a stronger use than copying an already discovered theorem. Observers can have *complementary physical interfaces*, producing a joint model that neither observer can construct from its own observations.
+
+Let \(X=\{00,01,10,11\}\) with probes \(p_L(x)=\) first bit and \(p_R(x)=\) second bit. Alice physically measures only \(p_L\), Bob only \(p_R\). Both understand the probes in their common basis. Let the actual source be \(x_*=10\) and the target be parity \(T(x)=x_L\oplus x_R\).
+
+After exhaustive local SUCC:
+\[
+K_A=\{10,11\},\qquad K_B=\{00,10\}.
+\]
+For each of these candidate fibers, \(T(K_A)=T(K_B)=\{0,1\}\), so neither observer can claim to know parity. They communicate the locally observed bit and absorb it with original source attribution. Jointly:
+\[
+\boxed{K_{A\cup B}=K_A\cap K_B=\{10\},\qquad T(K_{A\cup B})=\{1\}.}
+\]
+Each receiver completes the parity decision without inheriting the other's physical sensor.
+
+**Proof:** An observation compatible with the common source class imposes one constraint. Trusted concatenation of constraints computes intersection of the source-compatible fibers. Here one constraint fixes the first bit and another the second, giving the unique pair \(10\), so the target parity is uniquely determined.
+
+The result is a tiny, exact example of **distributed knowledge**: information dispersed across observers yields a combined conclusion not available to either one individually. It does not demonstrate a new physical interaction, quantum nonlocality or universal collective advantage.
+
+**Important variant:** under a declared uniform prior over the four sources, parity is independent of Alice's bit and independent of Bob's bit; either alone provides zero Shannon mutual information about parity, while their pair determines parity exactly. This probabilistic calculation needs that explicitly stated prior. The implemented code proves the stronger zero-error candidate-fiber identification statement without postulating a probability distribution.
+
+**Tested implementation:** \`complementary_observers_demo()\` and \`test_complementary_instruments_construct_joint_xor_knowledge\` preserve distinct physical device lists, causal origin labels and the fact that communicated evidence was not personally measured by its recipient.
+
+This yields a new research frontier: can alternating inter-observer SUCC increase the probe reach of the *collective absorbing model* beyond the union of isolated observer models, when each round of received knowledge constructs new epistemic probes that the other observer can physically realize? The example demonstrates strict information complementarity, not an unbounded or emergent physical amplifier.
+
 ## 6. The infinite ladder: a sharp limit theorem and a no-go
 
 A sequence of commuting finite squares may define a mathematically coherent *directed system*. Suppose A and B synchronize at each finite rung, and the trusted histories form an increasing chain \(H_0\subseteq H_1\subseteq\dots\). If the closure is \(\omega\)-continuous, then
