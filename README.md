@@ -37,10 +37,11 @@ This is an established identification of the completed arithmetic Weil distribut
 1. **[Foundations](docs/FOUNDATIONS.md)** — the originating physical/semantic proposal, precise mathematical types, causal SUCC, second derivatives, ordinals, Gödel/Turing, and the difference between reporting and proof.
 2. **[Development method](docs/METHOD.md)** — the steelman → crucible → verdict loop that turns informal proposals and analogies into ledger-labeled claims.
 3. **[Research architecture](docs/ARCHITECTURE.md)** — what belongs in the general theory, what is an optional RH adapter, how modules and data cross trust boundaries.
-4. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
-5. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
-6. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
-7. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
+4. **[Ideal frame completion trichotomy](research/2026-10-10/IDEAL_FRAME_COMPLETION_TRICHOTOMY.md)** — source-faithful finite/omega/dark observation classes; analytic versus smooth jets; flat invisible germs; divergent-limit counterexample.
+5. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
+6. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
+7. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
+8. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
 
 ## Run it
 
@@ -68,6 +69,7 @@ The package name is **observational_succ**. No runtime dependency on the origina
 | Causal field and actualization | core, engine, arithmetic | Finite steps, source-context records, immutable journals, predictions vs. observations |
 | Restricted semantics and categories | phenomenology, yoneda, resource_probe, local_global | Probe-relative recognition, path information, finite versus global views |
 | Quantum physical-carrier model | quantum_records, operational_semantics | Exact real-qubit Kraus instruments, causal event replay and semantic-readout data-processing proofs |
+| Ideal observational frames | ideal_frames | Exact finite derivative-probe SUCC and bounded-degree reconstruction; separate classical analytic/smooth omega theorems |
 | Gödel, Turing and finite proof | observer_logic, godel_succ, observer_reflection | Self-reference syntax, two-counter controls, checked proof authority, finite-support at omega |
 | Ordinal and Hilbert limits | ordinal_succ_report, infinite_realization | Formal omega/omega+1 reports, second-order interaction, nonuniform Hilbert limits |
 | Optional RH application bridges | gamma_interferometer, balanced_theta_li, hasse_theta_seam, source_prime_certificates, dirichlet_lambert | Gamma/prime source interfaces, Li-index windows, certified prime-only Suzuki bounds |
