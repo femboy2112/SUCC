@@ -95,11 +95,13 @@ See [the formal research memo](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TR
 
 The shared mathematical basis specifies which indices and operations mean what; B's last agreed coordinate *state* is the initial condition. A transmits first differences `Delta x_n=x_(n+1)-x_n`. B's knowledge-aided SUCC integrates these exactly by `x_n=x_0+sum_{k<n}Delta x_k`, recovering all intermediate stages from one message. A mere terminal net-difference loses intermediate path distinctions. An associative scan provides O(log N) parallel circuit dependency depth when all derivative inputs are already available; our code executes serially and has no claim of physical one-clock-step observation.
 
+For ANY finite observed sequence, the complete initial forward jet of order N recovers all observed states through the finite Pascal binomial transform, with no polynomial assumption; this need not compress the message. Extension beyond the observed finite horizon requires further source assumptions.
+
 When a separately justified global recurrence `Delta^(d+1)x_n=0` holds, the Newton binomial basis computes `x_n=sum_{r=0}^d binom(n,r)Delta^r x_0`. This is proof-induced path contraction: few initial differences and a sound law replace many intermediate state reports. Matching d+1 finite observations does not itself justify recurrence extrapolation; source-family membership and proof authority remain externally specified.
 
 If local frames vary by invertible `F_n`, the correct connection is `U_n=F_(n+1)F_n^-1`; then the covariant finite difference is `y_(n+1)-U_n y_n=F_(n+1)Delta x_n`. Corresponding local SUCC changes are affine operators `(U_n,eta_n)`, composing associatively by `(V,zeta) ∘ (U,eta)=(VU,Veta+zeta)` but not necessarily commuting. Ordered path computation can still use a prefix scan; a changed coordinate frame must never be misidentified as source change.
 
-These finite source-connected mathematical maps are **pure-gauge/flat** when all `U_n` arise from globally supplied `F_n`. Nothing establishes physical curvature, nontrivial holonomy, a universal carrier-transmission theorem or a source-derived arithmetic RH positivity form. See [finite-difference SUCC](../research/2026-10-11/FINITE_DIFFERENCE_SUCC_INTEGRATION.md), ledger O118–O125.
+These finite source-connected mathematical maps are **pure-gauge/flat** when all `U_n` arise from globally supplied `F_n`. Nothing establishes physical curvature, nontrivial holonomy, a universal carrier-transmission theorem or a source-derived arithmetic RH positivity form. See [finite-difference SUCC](../research/2026-10-11/FINITE_DIFFERENCE_SUCC_INTEGRATION.md), ledger O118–O126.
 
 ## Shared indexed basis, noncommuting paths, and mathematical boundary encoding
 
