@@ -258,8 +258,13 @@ def minimal_snapshot_delta(sender: AgentKnowledge, receiver: AgentKnowledge,
     Never interprets a shortened observation list as proof of A's path or
     of B's ability to make all the same future measurements.
     """
+    if sender.observer == receiver.observer:
+        raise KnowledgeLadderError("A snapshot relay requires distinct observers")
     if receiver.batches != sender.batches[:len(receiver.batches)]:
         raise KnowledgeLadderError("Snapshot comparison requires common prefix")
+    if any(batch.origin != sender.observer
+           for batch in sender.batches[len(receiver.batches):]):
+        raise KnowledgeLadderError("Snapshot cannot silently launder third-party observations")
     facts = tuple(pair for batch in sender.batches[len(receiver.batches):]
                   for pair in batch.outcomes)
     if len(facts) > 16:
@@ -295,7 +300,8 @@ def decode_snapshot_relay(receiver: AgentKnowledge, packet: bytes,
     o = _parse_wire(packet, "snapshot-only-v1")
     if (o["basis"] != basis.fingerprint or o["receiver"] != receiver.observer
             or o["start"] != receiver.history_digest(basis)
-            or o["sender"] not in dict(basis.observers)):
+            or o["sender"] not in dict(basis.observers)
+            or o["sender"] == receiver.observer):
         raise KnowledgeLadderError("Unverifiable or stale snapshot basis")
     if any(type(pair) is not list or len(pair) != 2 for pair in o["events"]):
         raise KnowledgeLadderError("Malformed snapshot facts")
