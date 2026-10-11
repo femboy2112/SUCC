@@ -185,6 +185,14 @@ class AbsorbingFramesTests(unittest.TestCase):
                               world.probes)
         with self.assertRaises(AbsorptionError):
             AbsorbingProtocol(world, ("can:coarse",), (), ("teleport",))
+        with self.assertRaises(AbsorptionError):
+            AbsorbingProtocol(
+                FiniteProbeWorld(("A",), ("a:b",), (("c",),)),
+                (), (), ("a:b",))
+        with self.assertRaises(AbsorptionError):
+            AbsorbingProtocol(
+                FiniteProbeWorld(("A",), ("a",), (("b:c",),)),
+                (), (), ("a",))
 
     def test_bounded_finite_exhaustion_and_causal_no_rewriting(self):
         protocol = setup_world()
