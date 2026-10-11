@@ -11,6 +11,7 @@
 | Physical carrier and outcome semantics | Finite quantum states, instruments, causal records; exact stochastic readouts and distinguishability loss | quantum_records, operational_semantics |
 | Field-relative causal events | Immutable journal, actualized versus pending observations, finite SUCC and contexts | core, engine, arithmetic |
 | Semantic representation and observability | Probe families, Yoneda-style restriction, witnessed factorization paths and loss of distinguishability | phenomenology, yoneda, resource_probe, local_global, circle_transport |
+| Ideal source-identification and model-relative access | Finite source-compatible version spaces, actualized probe histories, adversarial stationary access traps, conditional reconstruction and finite/omega/dark classification | ideal_frames, observer_traps |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -22,6 +23,8 @@ The mathematical subsystems have distinct domains and kinds of evidence. They ar
 **Observation → history:** the observed event must have a realizable outcome and a known instrument/source context. Prediction is a separate type of object. The finite quantum model stores both a reduced density matrix and immutable classical outcome records; the observer cannot retroactively rewrite them by reinterpreting the state.
 
 **History → semantic model:** an update may reconstruct, compress or forget. A zero connected residual in an invertible arithmetic logarithm does not invalidate the original observation. An unrecoverable compression must disclose information loss.
+
+**Semantic model → new probe access:** the preferred model and the set of *all* history-compatible candidates have different types. A stable favorite is not a completion certificate. A model-generated probe menu may leave a globally distinguishable source undiscovered forever, even with ideal exhaustive local observations. Separate globally absent probes, inaccessible-but-global probes, and accessible-but-never-scheduled probes; an externally forced probe must retain external provenance. The observer_traps module gives a finite exact iff theorem, not a cognitive/physical universality theorem.
 
 **Semantic model → proof:** syntactic proof authority requires an explicit theory and checked derivation. External reflection axioms and infinitary omega rules are not inferred from the number of observations.
 
@@ -66,3 +69,13 @@ The new operational_semantics module defines finite rational evidence laws and s
 This follows by triangle inequality and nonnegative stochastic row normalization; its executable certificate reports a rational before/after distance and slack. It does **not** say that all semantic inference is a stochastic map, nor that quantum measurement itself is classical after arbitrary interactions. The real-qubit Kraus instrument supplies explicit physical outcome distributions. A postprocessing channel can erase the observer's ability to distinguish two earlier hypotheses **without erasing the original source or the separate causal record**.
 
 See [the dedicated research derivation](../research/2026-10-10/FINITE_SEMANTIC_DATA_PROCESSING.md) and native test_operational_semantics.py.
+
+## Model-dependent observation and source-relative certification
+
+For a deterministic finite source model, the exact observer-trap machinery tracks the immutable outcome history, a compatible version space, a preferred semantic model, the model-conditioned menu of admissible probes, and an explicitly chosen scheduling rule. The toy observer can be internally stable but globally wrong. Observed causal records remain authoritative even if the preference changes.
+
+The declared global probe universe and an externally supplied actual-source label allow a *laboratory* to certify access/scheduling/source blindness. An actual embedded observer does **not** acquire that external label by running the certification function. Any extension to physical instruments needs a separate physically feasible probe predicate and a source-independent selection mechanism.
+
+A source-identification theorem from compatible-menu union is conditional on all unioned probes being executable. Absence of an effective convergence modulus is separate from structural infinity-stage uniqueness, and finite model classes cannot be genuinely omega-only identifiable under monotone exact observations.
+
+See [model-dependent observer traps](../research/2026-10-10/MODEL_DEPENDENT_OBSERVER_TRAPS.md), [ideal frame completion](../research/2026-10-10/IDEAL_FRAME_COMPLETION_TRICHOTOMY.md), and claim ledger O39–O54. No source-to-Weil positivity or proof-theoretic completeness identification follows.
