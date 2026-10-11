@@ -65,7 +65,9 @@ Use these labels:
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
 
-Additional ideal-frame controls: zero versus a nonzero flat smooth germ with identical all-order origin jets; off-origin evaluation that defeats that darkness; compatible finite analytic polynomial jets with divergent factorial omega series; premature zero-polynomial closure refuted by a delayed fourth derivative.\n\nSome controls are *historical* and live in the archived research documents, while others are directly covered by current tests. A new RH hypothesis must not be described as source-specific unless it has faced the controls applicable to its exact domain.
+Additional ideal-frame controls: zero versus a nonzero flat smooth germ with identical all-order origin jets; off-origin evaluation that defeats that darkness; compatible finite analytic polynomial jets with divergent factorial omega series; premature zero-polynomial closure refuted by a delayed fourth derivative.
+
+Some controls are *historical* and live in the archived research documents, while others are directly covered by current tests. A new RH hypothesis must not be described as source-specific unless it has faced the controls applicable to its exact domain.
 
 ## Outstanding highest-value claims
 
