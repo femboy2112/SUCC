@@ -82,7 +82,7 @@ class SuccDiscreteIntegrationTests(unittest.TestCase):
                 scan=parallel_prefix_differences(origin,step,basis)
                 self.assertEqual(serial,scan.states)
                 self.assertEqual(scan.parallelizable_dependency_depth,
-                                 (n-1).bit_length())
+                                 max(0,n-1).bit_length())
                 self.assertFalse(scan.actual_parallel_execution_performed)
                 cases+=1
         self.assertEqual(cases,364)
@@ -287,7 +287,7 @@ class SuccDiscreteIntegrationTests(unittest.TestCase):
                     curr=a.act(curr)
                     manual.append(curr)
                 self.assertEqual(trace.values,tuple(manual))
-                self.assertEqual(trace.dependency_layers,(n-1).bit_length())
+                self.assertEqual(trace.dependency_layers,max(0,n-1).bit_length())
                 count+=1
         self.assertEqual(count,121)
 
