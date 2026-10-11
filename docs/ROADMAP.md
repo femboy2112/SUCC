@@ -73,6 +73,18 @@ See [Absorbing Hard SUCC and transmissibility](../research/2026-10-10/ABSORBING_
 
 Sources: [Two languages, one circle](../research/2026-10-11/TWO_LANGUAGES_ONE_CIRCLE.md); circle_translation.py; tests/test_circle_translation.py; O85–O94.
 
+## Strict twin observers: mathematical reference-frame invariance
+
+**Modeling constraint from the maintainer:** two observers of the same actual field begin with equal semantic knowledge, identical empirical opportunities (time-indexed point, tangent and path data), and equal reasoning capability. Their polynomial-versus-trig specializations may change presentation or focus, but not the underlying truths or ability to perform any probe. The earlier complementary-hardware example is a distinct control, not the twin benchmark.
+
+**Implemented exact:** one shared finite source/probe/reasoner specification with two different focus orders. Polynomial focus samples an additional point while trig focus prioritizes a normalized tangent, yet both could have measured either. One trust-labeled knowledge-aided delta aligns source-relative knowledge; a reciprocal delta aligns history-sensitive remaining probe frontiers. Canonical polynomial/independent Fourier reports agree on shared observed points and exact normalized tangents.
+
+**Important correction:** within the uniform integer rotation class, an exact tangent probe at any time identifies the winding k in one finite step. The former omega-only circle observation classification is conditional on a point-sampling-only probe menu. For unrestricted smooth paths, finite sampled positions and all derivatives remain insufficient: a smooth flat extra loop can hide between sampled times. Neither language is privileged by that limitation.
+
+**Next mathematical work:** prove a cross-language continuation-equivalence theorem on a common time-indexed path/velocity observation category, then quantify the cost of relative proof/path translations under different focus policies and finite physical precision. Keep instant assimilation distinct from unrestricted instant empirical acquisition. Exact infinite trajectories may determine winding as mathematical objects; physical finite observation/coding require independent hypotheses.
+
+Evidence: [Twin observer mathematical field invariance](../research/2026-10-11/TWIN_OBSERVER_FIELD_INVARIANCE.md), twin_circle_observers.py and tests/test_twin_circle_observers.py, claim ledger O95–O101.
+
 ## Stage 2: rigorous logic and ordinal realization
 
 - Formalize a full proof-predicate/representability story for syntax and diagonal substitution in a proof assistant (Lean, Coq or Isabelle), clearly separating the project’s finite syntax engine from established Gödel theorems.
