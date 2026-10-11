@@ -157,6 +157,18 @@ Evidence: [Euler local/global minus-one transport](../research/2026-10-11/EULER_
 
 Evidence: [Residue-one adeles and interpolation](../research/2026-10-11/RESIDUE_ONE_ADELES_AND_WEIGHT_TWO_INTERPOLATION.md), residue_one_arch.py, tests/test_residue_one_arch.py, ledger O140–O148.
 
+## SUCC modular clocks and Mahler finite-difference interpolation
+
+**Maintainer's clarification:** p-adic interpolation looks like algebra on compatible residue clocks. This is EXACT in its reconstruction layer: at resolution p^r the group of units mod odd p^r has Euler period phi(p^r)=(p−1)p^(r−1), identical to the SUCC/FUCC return gap between p^(r−1) and p^r.
+
+**Mahler theorem:** every continuous f:Z_p→Q_p has a unique, uniformly convergent Newton series with coefficients Delta^j f(0) that converge to zero p-adically. Thus the discrete SUCC derivative/initial-basis packet already designed is the CLASSICAL functional basis for genuine p-adic interpolation, not merely an analogy. For f_p(n)=(1−p)^n, the exact SUCC jets are (−p)^j; evaluated at n=−1 they reconstruct E_p(−1)=1/(1−p), with tail valuation K after K jets.
+
+**Arithmetic obstruction:** zeta special values do not automatically follow unit clock equivalence. In the nonexceptional branch, Kummer congruences certify Euler-factor-corrected values (1−p^(k−1))ζ(1−k) at weights differing by phi(p^r). At p=5 mod25, weights 2 and22 yield corrected residues 17,17, whereas raw zeta values yield 2,17 and FAIL compatibility. At p=3, the elementary torsion clock (−1)^n is discontinuous on Z3 and needs branch separation; on Z2 it is continuous.
+
+**Next:** implement a genuine bounded projective p-adic measure on unit-clock residue classes and compare its moments with corrected zeta values across ALL resolutions; prove pushforward and norm bounds, not just finite congruence examples. Keep Teichmüller branch, p-adic analytic interpolation and Euler factor hypotheses explicit. Transport to Tate's real Gamma factor requires independently justified adelic Fourier/Haar/test-function structures. No RH conclusions from local interpolation alone.
+
+Evidence: [Mahler SUCC clocks and Kummer](../research/2026-10-11/MAHLER_SUCC_CLOCK_KUMMER.md), clock_mahler_interpolation.py, tests/test_clock_mahler_interpolation.py, claims O149–O155.
+
 ## Stage 2: rigorous logic and ordinal realization
 
 - Formalize a full proof-predicate/representability story for syntax and diagonal substitution in a proof assistant (Lean, Coq or Isabelle), clearly separating the project’s finite syntax engine from established Gödel theorems.
