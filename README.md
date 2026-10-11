@@ -39,10 +39,11 @@ This is an established identification of the completed arithmetic Weil distribut
 3. **[Research architecture](docs/ARCHITECTURE.md)** — what belongs in the general theory, what is an optional RH adapter, how modules and data cross trust boundaries.
 4. **[Ideal frame completion trichotomy](research/2026-10-10/IDEAL_FRAME_COMPLETION_TRICHOTOMY.md)** — source-faithful finite/omega/dark observation classes; analytic versus smooth jets; flat invisible germs; divergent-limit counterexample.
 5. **[Model-dependent observer-trap theorem](research/2026-10-10/MODEL_DEPENDENT_OBSERVER_TRAPS.md)** — exact model-access and scheduling traps, source-faithful histories, active-probe repairs, finite stabilization and limitations.
-6. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
-7. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
-8. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
-9. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
+6. **[Absorbing Hard SUCC and finite transmission](research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md)** — full compatible-model closure, lawful omega limits, constructive excluded middle, epistemic/physical probe barriers and bit-optimal recipient-side-information channels.
+7. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
+8. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
+9. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
+10. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
 
 ## Run it
 
@@ -60,6 +61,7 @@ python scripts/ordinal_succ_report_probe.py
 python scripts/prime_source_certificates_probe.py
 python scripts/semantic_data_processing_probe.py
 python scripts/observer_trap_probe.py
+python scripts/absorbing_frontier_probe.py
 ~~~
 
 The package name is **observational_succ**. No runtime dependency on the original RH repository is required.
@@ -73,6 +75,8 @@ The package name is **observational_succ**. No runtime dependency on the origina
 | Quantum physical-carrier model | quantum_records, operational_semantics | Exact real-qubit Kraus instruments, causal event replay and semantic-readout data-processing proofs |
 | Ideal observational frames | ideal_frames | Exact finite derivative-probe SUCC and bounded-degree reconstruction; separate classical analytic/smooth omega theorems |
 | Model-dependent probe traps | observer_traps | Exact finite source-faithful model access, wrong-model self-confirmation, fair escape and uncertainty-aware probe unions |
+| Absorbing model and hard SUCC | absorbing_frames, constructive_frontier | Full source-compatible model closure, consistent generation of new epistemic probes, physical blocking, Kripke LEM boundaries and omega+1 examples |
+| Inter-observer communication | interobserver_channels | Exact finite target messages, causal certification distinctions, and one-shot zero-error bit-minimal coding using receiver side information |
 | Gödel, Turing and finite proof | observer_logic, godel_succ, observer_reflection | Self-reference syntax, two-counter controls, checked proof authority, finite-support at omega |
 | Ordinal and Hilbert limits | ordinal_succ_report, infinite_realization | Formal omega/omega+1 reports, second-order interaction, nonuniform Hilbert limits |
 | Optional RH application bridges | gamma_interferometer, balanced_theta_li, hasse_theta_seam, source_prime_certificates, dirichlet_lambert | Gamma/prime source interfaces, Li-index windows, certified prime-only Suzuki bounds |
