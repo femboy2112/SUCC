@@ -17,6 +17,7 @@
 | Knowledge-aided observer synchronization | Shared basis checks, source-attested local probe batches, strict epistemic catch-up and snapshot-only optimizations | knowledge_ladder |
 | Relative delta and evolving proof language | Position-anchored path directions, nonredundant value choices, full knowledge/probe/reasoner signature, conservative concept upgrades and contextual probe-result proof checks | relative_delta |
 | Cross-language exact calibration | Polynomial circle ring and Fourier angular reports, compatible tangential derivations and global one-form, orientation/chart scope, static-point versus path/winding probe aliases | circle_translation |
+| Twin-observer field invariance | Same physical source/probes/reasoner, distinct investigation focus, exact common tangent translation, relative testimony and flat smooth-loop finite-jet adversary | twin_circle_observers |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -86,6 +87,18 @@ Finite Hard SUCC exhausts an exact finite rule/probe universe. For an infinite t
 A source- and report-preserving inter-observer completion requires a finite message, common decoding semantics, and trustworthy causal evidence. The exact full-frame message includes source-compatible lawful probe-acquisition replay, while a shorter target-only witness explicitly lacks that provenance. Finite-alphabet exact universal communication of arbitrary real constants is impossible by countability. For finite one-shot zero-error communication with receiver side information, the optimal fixed-length bit budget is derived from the confusability graph chromatic number, not from mere probe count.
 
 See [the formal research memo](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md) and claim ledger O55–O66. The finite implementations do not automatically transport to general neural, quantum, or RH settings.
+
+## The strict twin-observer assumption
+
+The polynomial specialist and trig specialist possess the SAME source field, SAME baseline interpreted mathematical knowledge, SAME empirical opportunities (position, tangent and time-indexed trajectory probes) and SAME reasoning capability. Specialization is an observation/proof *focus policy* selecting from an identical menu. It is not asymmetric instrumentation, access to different physical realities, or a license for observer-relative mathematical truth.
+
+For shared source-faithful observation history and verified isomorphic semantic presentation, deterministic sound absorbing closure yields the same interpreted mathematical knowledge at each synchronized finite frame. Different names/formulas may denote the same truth. Different focus policies can yield different actualized evidence paths from identical starting opportunity sets; those fact deltas can be shared without the receiving observer claiming personal physical observation.
+
+For constant-speed integer winding paths, both representations recover the winding k from one exact normalized tangent (x ydot−y xdot)/(2π)=theta_dot/(2π); the earlier omega-only identification result explicitly restricted its probes to point positions. Arbitrary smooth paths can instead conceal an extra winding between ANY finite set of position/tangent derivative-jet samples via a flat smooth-step insertion. Full actualized path knowledge, an available but not yet taken measurement, and a finite measurement record must not be conflated.
+
+The twin test distinguishes semantic knowledge synchronization from identical sets of already-used one-shot instruments: one received tangent can align the source model, while a second reciprocal receipt may be needed to align future probe-exhaustion state. Causal ownership remains separate from mathematical truth. No universal physical or category-level theorem is established by these finite synthetic controls.
+
+See [Twin observer field invariance](../research/2026-10-11/TWIN_OBSERVER_FIELD_INVARIANCE.md), ledger O95–O101.
 
 ## One phenomenon, two observer languages: scope-sensitive translation
 
