@@ -35,6 +35,18 @@
 
 See [Absorbing Hard SUCC and transmissibility](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md), exact modules absorbing_frames.py, constructive_frontier.py and interobserver_channels.py, and claims O55–O66.
 
+## Knowledge-aided SUCC and inter-observer ladders
+
+**Implemented:** a shared source/knowledge basis, separately feasible physical probes for each observer, source-faithful provenance-labeled observation batches, an exact finite **K-SUCC** decoder that replays multiple lawful A frames but requires only one B epistemic update, and a three-rung A/B alternating 2+2+2 discovery ladder. Matching current epistemic placement does not imply matching future physical transitions.
+
+**Adversarial demonstration:** minimizing the subset of transmitted facts that reproduces the absorbing snapshot can drop an already observed event, causing receiver and sender to perform different *next* physical SUCCs despite identical present conclusions. Full causal relay and future-equivalence must stay distinct. The finite implementation checks honest ordered probe activation and refuses stale basis/receiver, impossible probe results and third-party source attribution.
+
+**Mathematical omega boundary:** the ladder forms a compatible directed history when every finite rung agrees. Omega-continuous closure may preserve the directed union, but finite per-rung messages do not imply finite total transmission: arbitrary infinite bitstreams give an exact no-go. No physical supertask, communication complexity speedup or RH theorem follows.
+
+**Next research:** define a categorical/coalgebraic observer-process bisimulation and **minimal future-sufficient information statistic**; optimize the resulting continuation equivalence classes using the existing zero-error channel toolkit; prove sound concurrent rebase/join for observers with independent histories; identify colimit-preserving and non-preserving transport functors, and add provenance/physical resource budgets.
+
+**Sources:** [knowledge-aided SUCC ladder](../research/2026-10-10/KNOWLEDGE_AIDED_SUCC_LADDER.md), `knowledge_ladder.py`, `test_knowledge_ladder.py`, claim ledger O67–O73.
+
 ## Stage 2: rigorous logic and ordinal realization
 
 - Formalize a full proof-predicate/representability story for syntax and diagonal substitution in a proof assistant (Lean, Coq or Isabelle), clearly separating the project’s finite syntax engine from established Gödel theorems.
