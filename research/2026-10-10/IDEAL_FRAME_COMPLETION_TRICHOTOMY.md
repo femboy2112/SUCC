@@ -75,7 +75,7 @@ f(x)=\sum_{k=0}^{d}\frac{f^{(k)}(0)}{k!}x^k.
 
 Thus \(K_d(f)=\{f\}\), for every \(f\in\mathcal X\). For every \(n<d\), adding \(x^{n+1}\) (when \(n+1\le d\)) gives a different polynomial with the same \(n\)-jet. Uniform completion time for this class is therefore precisely \(d\) (counting the order-0 initial frame as stage 0).
 
-**Unexpected class-relative consequence:** If the permitted class is the *unbounded* polynomial ring \\(\\mathbb R[x]\\), **even the zero polynomial is not identifiable at any finite stage**. For every \\(n\\), the polynomial \\(f+x^{n+1}\\) has the same observed \\(n\\)-jet as \\(f\\). Yet the full infinite jet uniquely determines any polynomial. Thus an individually finite object may still require an ideal omega report to be *certifiably* identified when no upper complexity bound is supplied. Finite description and finite identification are different notions.
+**Unexpected class-relative consequence:** If the permitted class is the *unbounded* polynomial ring \(\\mathbb R[x]\), **even the zero polynomial is not identifiable at any finite stage**. For every \(n\), the polynomial \(f+x^{n+1}\) has the same observed \(n\)-jet as \(f\). Yet the full infinite jet uniquely determines any polynomial. Thus an individually finite object may still require an ideal omega report to be *certifiably* identified when no upper complexity bound is supplied. Finite description and finite identification are different notions.
 
 **Boundary:** no finite jet can *certify that the unknown source has degree at most d* absent independently justified restrictions. Claiming the bound can yield an attractive but false "completed" model; a later higher derivative exposes the mistake.
 
@@ -94,7 +94,7 @@ A quantitative version requires a separate uniform majorant: if Taylor coefficie
  \le \frac{M(r/R)^{n+1}}{1-r/R}.
 \]
 
-This is an explicit convergence modulus. Uniqueness from the full jet **does not itself supply** usable uniform error bounds without analytic control. In fact, across *all* analytic germs without a shared growth bound, no finite jet can give a uniformly valid error bound for the value at a fixed nonzero \\(r\\): after observing through order \\(n\\), both \\(f\\) and \\(f+A x^{n+1}\\) remain possible, and the value difference \\(A r^{n+1}\\) can be arbitrarily large. This directly separates **infinite-data uniqueness** from **uniform effective reconstruction**. A single Taylor chart may not reconstruct a distant point beyond its convergence disk; global claims require continued analytic continuation and domains.
+This is an explicit convergence modulus. Uniqueness from the full jet **does not itself supply** usable uniform error bounds without analytic control. In fact, across *all* analytic germs without a shared growth bound, no finite jet can give a uniformly valid error bound for the value at a fixed nonzero \(r\): after observing through order \(n\), both \(f\) and \(f+A x^{n+1}\) remain possible, and the value difference \(A r^{n+1}\) can be arbitrarily large. This directly separates **infinite-data uniqueness** from **uniform effective reconstruction**. A single Taylor chart may not reconstruct a distant point beyond its convergence disk; global claims require continued analytic continuation and domains.
 
 ### C. FuckedSpace: smooth germs under precisely the same probes
 
