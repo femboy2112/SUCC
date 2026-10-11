@@ -238,6 +238,40 @@ class ObserverTrapTests(unittest.TestCase):
         self.assertEqual(checked, 64 * 27 * 3)
         self.assertGreater(guaranteed, 0)
 
+    def test_counterfactual_truths_yield_identical_endogenous_histories(self):
+        # Two possible worlds share the same observations and semantic state.
+        # A history-only completion report cannot be correct for both.
+        w = two_source_world()
+        pol = ProbePolicy((("A", ("echo",)), ("B", ("echo", "separator"))))
+        fa = ObserverFrame.initial(w, pol, "A")
+        fb = ObserverFrame.initial(w, pol, "A")
+        for _ in range(8):
+            fa = fa.succ(w, pol, "A")
+            fb = fb.succ(w, pol, "B")
+            self.assertEqual(fa, fb)
+        self.assertFalse(fa.identified)
+        self.assertTrue(fa.verify(w, pol, "A"))
+        self.assertTrue(fb.verify(w, pol, "B"))
+
+    def test_union_probe_coverage_is_not_equivalent_to_pairwise_menus(self):
+        # Only model C has q in its menu. q nevertheless distinguishes all
+        # three sources, so union of compatible menus is sufficient.
+        w = FiniteProbeWorld(
+            ("A", "B", "C"), ("echo", "q"),
+            (("same", "a"), ("same", "b"), ("same", "c")),
+        )
+        pol = ProbePolicy(
+            (("A", ("echo",)), ("B", ("echo",)), ("C", ("q",))),
+            scope="compatible_union",
+        )
+        self.assertFalse(any(
+            w.outcome("A", probe) != w.outcome("B", probe)
+            for probe in set(pol.menu("A")) | set(pol.menu("B"))))
+        for source in w.sources:
+            f = ObserverFrame.initial(w, pol, "A").succ(w, pol, source)
+            self.assertTrue(f.identified)
+            self.assertEqual(f.compatible, (source,))
+
     def test_machine_readable_demo_respects_truth_boundary(self):
         r = observer_trap_demo()
         self.assertEqual(r["status"], "FINITE_OBSERVER_TRAP_CERTIFIED")
