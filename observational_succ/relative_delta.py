@@ -220,6 +220,114 @@ def decode_relative_delta(
                           receiver.local_frames, receiver.informed_steps + 1)
 
 
+def encode_position_delta(
+    sender_before: AgentKnowledge, sender_after: AgentKnowledge,
+    recipient: AgentKnowledge, basis: SharedKnowledgeBasis,
+) -> bytes:
+    """Transport from equal OPERATIONAL positions, not identical histories.
+
+    The sender's history must have a lawful new suffix after its own previous
+    position. The recipient may have *independently observed* its equal
+    starting position, and so its old event-origin labels may differ.
+    The common anchor is the full operational-state digest, not a shared
+    source-event transcript hash.
+    """
+    if (sender_before.observer != sender_after.observer
+            or sender_before.observer == recipient.observer
+            or sender_after.batches[:len(sender_before.batches)]
+                != sender_before.batches):
+        raise RelativeDeltaError("Sender path must grow from its own local history")
+    if operational_position(sender_before, basis) != operational_position(recipient, basis):
+        raise RelativeDeltaError("Recipient has a different last known field position")
+    appended = sender_after.batches[len(sender_before.batches):]
+    if len(appended) > 64:
+        raise RelativeDeltaError("Too many bounded relative path frames")
+    trial = recipient
+    steps = []
+    for batch in appended:
+        enabled = _enabled_new_probes(trial, basis, sender_before.observer)
+        if (batch.origin != sender_before.observer
+                or tuple(p for p, _ in batch.outcomes) != enabled):
+            raise RelativeDeltaError("Sender's new relative path was not lawful")
+        values = []
+        for p, y in batch.outcomes:
+            possible = _choices(trial, basis, p)
+            if y not in possible:
+                raise RelativeDeltaError("Source-incompatible observed value")
+            values.append(None if len(possible) == 1 else possible.index(y))
+        steps.append({"path": list(range(len(enabled))), "values": values})
+        trial = _strict_batch_step(trial, batch, basis, sender_before.observer)
+    if operational_position(trial, basis) != operational_position(sender_after, basis):
+        raise RelativeDeltaError("Relative sender path changed the intended field placement")
+    return _wire({
+        "kind": "position-anchored-delta-v1",
+        "basis": basis.fingerprint,
+        "source": sender_before.observer,
+        "receiver": recipient.observer,
+        "anchor": operational_digest(recipient, basis),
+        "result": operational_digest(sender_after, basis),
+        "steps": steps,
+    })
+
+
+def decode_position_delta(
+    recipient: AgentKnowledge, packet: bytes, basis: SharedKnowledgeBasis,
+) -> AgentKnowledge:
+    """One K-SUCC preserving recipient's independently sourced past.
+
+    No source-state snapshot or identical past event-prefix is required.
+    Old receiver events retain their actual origins; sender's new measured
+    events are appended explicitly as sender-origin testimony.
+    """
+    if type(packet) is not bytes or not 0 < len(packet) <= 1000000:
+        raise RelativeDeltaError("Bounded finite position-delta bytes required")
+    try:
+        data = json.loads(packet.decode("utf-8"))
+    except (UnicodeError, ValueError) as exc:
+        raise RelativeDeltaError("Malformed positional delta message") from exc
+    fields = {"kind", "basis", "source", "receiver", "anchor", "result", "steps"}
+    if (type(data) is not dict or set(data) != fields
+            or data["kind"] != "position-anchored-delta-v1"
+            or data["basis"] != basis.fingerprint
+            or data["anchor"] != operational_digest(recipient, basis)
+            or data["receiver"] != recipient.observer
+            or type(data["source"]) is not str
+            or data["source"] not in dict(basis.observers)
+            or data["source"] == recipient.observer
+            or type(data["steps"]) is not list
+            or len(data["steps"]) > 64):
+        raise RelativeDeltaError("Foreign basis, stale position or malformed sender")
+    current = recipient
+    for step in data["steps"]:
+        enabled = _enabled_new_probes(current, basis, data["source"])
+        if (type(step) is not dict or set(step) != {"path", "values"}
+                or type(step["path"]) is not list
+                or type(step["values"]) is not list
+                or len(enabled) == 0
+                or len(step["values"]) != len(enabled)
+                or any(type(n) is not int for n in step["path"])
+                or step["path"] != list(range(len(enabled)))):
+            raise RelativeDeltaError("Relative path cannot be executed from receiver placement")
+        outcomes = []
+        for p, code in zip(enabled, step["values"]):
+            possible = _choices(current, basis, p)
+            if len(possible) == 1:
+                if code is not None:
+                    raise RelativeDeltaError("Redundant outcome token may not fake novelty")
+                value = possible[0]
+            else:
+                if type(code) is not int or not 0 <= code < len(possible):
+                    raise RelativeDeltaError("Invalid contingent source result index")
+                value = possible[code]
+            outcomes.append((p, value))
+        current = _strict_batch_step(
+            current, ProbeBatch(data["source"], tuple(outcomes)), basis, data["source"])
+    if operational_digest(current, basis) != data["result"]:
+        raise RelativeDeltaError("Position-anchored transport did not reach declared endpoint")
+    return AgentKnowledge(recipient.observer, current.batches,
+                          recipient.local_frames, recipient.informed_steps + 1)
+
+
 @dataclass(frozen=True)
 class ProbeOptionResult:
     name: str
