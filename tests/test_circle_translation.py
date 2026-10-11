@@ -14,6 +14,7 @@ from observational_succ.circle_translation import (
     stereographic_inverse, multiply_circle_points,
     periodic_point_signature, winding_alias_for_rational_samples,
     cross_language_circle_demo, cardinal_point, oriented_winding,
+    circle_angular_one_form_on_generator,
 )
 
 
@@ -121,6 +122,33 @@ class CircleTranslatorTests(unittest.TestCase):
             TrigFourierPolynomial.from_circle(y,orientation=0)
         with self.assertRaises(CircleTranslationError):
             TrigFourierPolynomial.sin().to_circle(orientation=3)
+
+    def test_tangential_derivation_is_well_defined_and_transports_to_angle(self):
+        x,y=self.x,self.y
+        d=lambda f: f.angular_derivative()
+        self.assertEqual(d(x),-y)
+        self.assertEqual(d(y),x)
+        self.assertEqual(d(x*x+y*y-self.one),CirclePolynomial())
+        self.assertEqual(d(d(x)),-x)
+        self.assertEqual(d(d(y)),-y)
+        self.assertEqual(circle_angular_one_form_on_generator(),self.one)
+        cosine,sine=TrigFourierPolynomial.cos(),TrigFourierPolynomial.sin()
+        self.assertEqual(cosine.angular_derivative(),-sine)
+        self.assertEqual(sine.angular_derivative(),cosine)
+        for i,j in product(range(4),repeat=2):
+            f=x.power(i)*y.power(j)
+            self.assertEqual(
+                TrigFourierPolynomial.from_circle(d(f)),
+                TrigFourierPolynomial.from_circle(f).angular_derivative(),
+            )
+            # Reversing θ's orientation reverses the signed derivative.
+            self.assertEqual(
+                TrigFourierPolynomial.from_circle(d(f),orientation=-1),
+                -TrigFourierPolynomial.from_circle(f,orientation=-1).angular_derivative(),
+            )
+        f=x.power(2)+y.power(3)
+        g=x.power(3)*y
+        self.assertEqual(d(f*g),d(f)*g+f*d(g))
 
     def test_circle_chart_is_exact_but_misses_one_point(self):
         self.assertEqual(rational_stereographic_chart(0),(Q(1),Q(0)))
@@ -236,6 +264,9 @@ class CircleTranslatorTests(unittest.TestCase):
         self.assertEqual(report["status"],"EXACT_CIRCLE_POLYNOMIAL_TRIG_TRANSLATOR")
         self.assertTrue(report["coordinate_ring_identity_zero"])
         self.assertTrue(report["trigonometric_polynomial_identity_zero"])
+        self.assertTrue(report["angular_derivations_intertwine"])
+        self.assertTrue(report["global_angular_one_form_coefficient_one"])
+        self.assertFalse(report["global_single_valued_real_angle_claimed"])
         self.assertTrue(report["group_law_preserved"])
         self.assertTrue(report["orientation_requires_explicit_calibration"])
         self.assertTrue(report["reflected_winding_sign_inverted"])
