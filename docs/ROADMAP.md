@@ -67,11 +67,11 @@ See [Absorbing Hard SUCC and transmissibility](../research/2026-10-10/ABSORBING_
 
 **Independent negative controls:** a rational stereographic parameter omits (-1,0), although the circle is regular; orientation-reflected equally valid translators reverse winding; finite rational-time point observations (including four cardinal samples) can come from paths of distinct winding; four cardinal samples cannot prove cosθ≡cos5θ. These are SOURCE-MAP, CALIBRATION and PROBE-GAP failures, not physical limitations of the circle.
 
-**Local repair:** a correct bounded winding source class admits a separating exact phase sample at t=1/(2K+1), while chart/signed-orientation defects require an atlas plus explicit calibration. A pointwise algebraic isomorphism does not already translate all temporal and topological information.
+**All three observational completion regimes on one circle:** with a proved bounded winding prior |k|≤K, one rational-time probe t=1/(2K+1) identifies the integer winding; with unbounded k and an omega-tower enumerating all rational times, each finite stage has an LCM alias but the ideal entire record separates every pair; repeating a fixed finite rational probe menu leaves k and k+L indistinguishable forever. This is an observer-policy classification, not intrinsic geometry. Chart/signed-orientation defects still require an atlas plus explicit calibration. A pointwise algebraic isomorphism does not already translate all path information.
 
 **Next research:** give both observers identical time-indexed empirical data, translate the differential form x dy−y dx ↔ dθ with explicit chart changes, and prove winding/path concatenation preservation. Formalize a probe-labeled category of observer languages and a semantically faithful intermediary span; test independent translations, causal provenance, selected topology and required limit regularity. Do not claim Yoneda full faithfulness or RH Euler/Gamma positivity from the ring bridge.
 
-Sources: [Two languages, one circle](../research/2026-10-11/TWO_LANGUAGES_ONE_CIRCLE.md); circle_translation.py; tests/test_circle_translation.py; O85–O93.
+Sources: [Two languages, one circle](../research/2026-10-11/TWO_LANGUAGES_ONE_CIRCLE.md); circle_translation.py; tests/test_circle_translation.py; O85–O94.
 
 ## Stage 2: rigorous logic and ordinal realization
 
