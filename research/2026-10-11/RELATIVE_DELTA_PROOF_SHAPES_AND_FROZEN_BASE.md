@@ -113,6 +113,23 @@ A finite message in basis B_n need not remain intelligible as the same token in 
 
 Adjacent distributed-computation literature distinguishes copying entire replica states from operation- and delta-based updates, with separate causal delivery/merge requirements (P. Almeida, *Approaches to Conflict-free Replicated Data Types*, 2023, https://arxiv.org/abs/2310.18220). The SUCC research adds epistemic meaning, legal experimental access and proof authority as obligations; the existence of those earlier distributed algorithms is not evidence for our new physical theory.
 
+### A sharper compression target: future-indistinguishable histories
+
+The current operational signature is deliberately **sufficient**, not **minimal**. To define a genuinely shortest continuation-preserving message, one can first classify history states by the distinction that matters to the user:
+
+\[
+h\equiv_{\rm future}h'
+\quad\Longleftrightarrow\quad
+\text{every admissible future probe/action path has the same
+possible observable results and requested reports from }h,h'.
+\]
+
+The equality must count availability of actions itself: if one state offers a possible probe the other cannot perform, they are different even before an outcome is observed. In finite deterministic labeled transition systems, this relation can be calculated through partition refinement, with a properly defined observation/report labeling. Only after establishing the correct quotient can one optimize the communication needed to identify the receiver's new equivalence class.
+
+This resembles the classical **Myhill–Nerode** construction, where input histories are merged exactly when no future suffix distinguishes their acceptance behavior; equivalence classes determine minimal deterministic automaton states. Primary pedagogical reference: Cornell CS4120 DFA minimization notes, https://courses.cs.cornell.edu/courses/cs4120/2026sp/notes.html?id=leximpl . Our observer system includes causally constrained probe menus and reported knowledge, so an explicit labeled transition system and corresponding partition-refinement theorem remain to be built before claiming the classical automata result applies unchanged.
+
+The important prediction is that the full chronological observation history can be **strictly larger** than the minimum information B needs to act indistinguishably from A in every later admissible situation. Conversely, present conclusions alone can be **strictly smaller** than the required future-sufficient state. Those two inequalities suggest the correct minimization frontier.
+
 ## 6. Predicted falsifiers and exact laboratory outputs
 
 | Rival hypothesis | Discriminator | Expected verdict |
