@@ -97,6 +97,12 @@ jobs:
           assert j["discovery_succ_steps"]==6
           assert j["receiver_knowledge_aided_steps"]==3
           assert j["end_source_class"]==["B"]
+          assert j["complementarity"]["status"]=="EXACT_DISTRIBUTED_EPISTEMIC_COMPLEMENTARITY"
+          assert j["complementarity"]["alice_only_xor_identified"] is False
+          assert j["complementarity"]["bob_only_xor_identified"] is False
+          assert j["complementarity"]["shared_source"]==["10"]
+          assert j["complementarity"]["shared_xor"]=="1"
+          assert j["complementarity"]["full_continuation_equivalence_of_physical_devices_claimed"] is False
           assert j["full_shared_semantics_and_causal_records_match"] is True
           assert [r["local_discovery_steps"] for r in j["rungs"]]==[2,2,2]
           assert [r["receiver_informed_steps"] for r in j["rungs"]]==[1,1,1]
