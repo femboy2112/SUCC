@@ -545,6 +545,8 @@ def succ_derivative_demo():
     recovered=decode_step_differences(initial,packet,basis)
     if recovered.states!=true_trace:
         raise ArithmeticError("All intermediate SUCC states were not reconstructed")
+    if finite_newton_reconstruct_samples(true_trace,basis)!=true_trace:
+        raise ArithmeticError("Arbitrary FINITE Newton data was incorrectly inverted")
     # A low-degree source family generates a VERY long path via a short jet.
     d1=(Fraction(1),Fraction(0),Fraction(0),Fraction(1),Fraction(1),Fraction(0))
     d2=(Fraction(1),Fraction(0),Fraction(0),Fraction(-1),Fraction(0),Fraction(0))
@@ -577,6 +579,7 @@ def succ_derivative_demo():
         "initial_condition_is_receiver_anchored":True,
         "ordinary_difference_steps":len(path),
         "all_intermediate_succ_states_reconstructed":True,
+        "unconditional_newton_inversion_of_all_observed_finite_steps":True,
         "additive_prefix_parallel_dependency_layers":recovered.parallelizable_dependency_depth,
         "additive_prefix_executed_on_actual_parallel_hardware":False,
         "polynomial_degree_law":law.degree_bound,
