@@ -20,6 +20,7 @@ from observational_succ.succ_discrete_integration import (
     PolynomialJetSourceFamily, finite_difference_states,
     parallel_prefix_differences, encode_step_differences,
     decode_step_differences, difference_jet_from_samples,
+    finite_newton_reconstruct_samples,
     newton_evaluate, encode_newton_jet, decode_newton_jet,
     covariant_step, parallel_prefix_affine, succ_derivative_demo,
 )
@@ -129,6 +130,27 @@ class SuccDiscreteIntegrationTests(unittest.TestCase):
             decode_step_differences(start,packet,other)
         with self.assertRaises(DiscreteSuccError):
             decode_step_differences(start,b"not-json",basis)
+
+    def test_full_finite_newton_jet_inverts_arbitrary_observed_sequences(self):
+        # No polynomial source premise is required WITHIN the known finite
+        # sample horizon. That premise becomes necessary for extrapolation
+        # beyond it using a truncated jet.
+        b=SharedBasis(1)
+        count=0
+        for n in range(1,7):
+            for values in product((-1,0,1),repeat=n):
+                samples=tuple(BasisState((Q(v),)) for v in values)
+                reconstructed=finite_newton_reconstruct_samples(samples,b)
+                self.assertEqual(reconstructed,samples)
+                count+=1
+        self.assertEqual(count,1092)
+        b2=SharedBasis(2)
+        w=(BasisState((Q(1),Q(2))),
+           BasisState((Q(9),Q(-4))),
+           BasisState((Q(-2),Q(11))),
+           BasisState((Q(200),Q(0))),
+           BasisState((Q(3),Q(-13))))
+        self.assertEqual(finite_newton_reconstruct_samples(w,b2),w)
 
     def test_quadratic_newton_forward_difference_identity(self):
         basis=SharedBasis(1)
@@ -313,6 +335,7 @@ class SuccDiscreteIntegrationTests(unittest.TestCase):
         self.assertTrue(d["initial_condition_is_receiver_anchored"])
         self.assertEqual(d["ordinary_difference_steps"],4)
         self.assertTrue(d["all_intermediate_succ_states_reconstructed"])
+        self.assertTrue(d["unconditional_newton_inversion_of_all_observed_finite_steps"])
         self.assertEqual(d["additive_prefix_parallel_dependency_layers"],2)
         self.assertEqual(d["polynomial_degree_law"],2)
         self.assertEqual(d["polynomial_reconstructed_states"],25)
