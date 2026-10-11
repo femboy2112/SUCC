@@ -234,6 +234,29 @@ def difference_jet_from_samples(
     return tuple(jet)
 
 
+def finite_newton_reconstruct_samples(
+    samples:tuple[BasisState,...],basis:SharedBasis,
+) -> tuple[BasisState,...]:
+    """Newton binomial inversion of ANY finite sequence, no recurrence law.
+
+    Let samples be x0,...,xN. The N+1 lower-triangular Pascal transform
+    is invertible, so for each 0<=n<=N,
+       x_n=sum_{r=0}^n binom(n,r) Delta^r x_0
+    with zero source/polynomial assumptions beyond the true finite samples.
+
+    Returning x_(N+1) from the same truncated jet WOULD BE AN UNJUSTIFIED
+    extrapolation unless an independent recurrence/source theorem holds.
+    """
+    if type(samples) is not tuple or not 1<=len(samples)<=33:
+        raise DiscreteSuccError("Finite exact Newton inversion has bounded sample count")
+    jet=difference_jet_from_samples(samples,basis)
+    result=tuple(newton_evaluate(samples[0],jet[1:],n,basis)
+                 for n in range(len(samples)))
+    if result!=samples:
+        raise ArithmeticError("Finite Newton binomial inversion contradicted")
+    return result
+
+
 def newton_evaluate(
     base:BasisState,
     difference_jets:tuple[tuple[Fraction,...],...],
