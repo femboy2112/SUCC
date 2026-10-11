@@ -174,6 +174,23 @@ whereas the integral of a globally exact form \(d\theta\) around any closed loop
 
 **Reference:** Northern Michigan University's [fundamental group and covering-space notes](https://euclid.nmu.edu/~joshthom/ma516/lectures/lecture15.html) for lifts and \(\pi_1(S^1)\), and [University of Toronto's circle line-integral derivation](https://www.math.toronto.edu/courses/mat237y1/20189/notes/Chapter5/S5.1.html). The exact operator-compatibility proof is an elementary derivation; the global nonexactness result is classical. The software checks only finite algebraic differential identities; it does not execute a topological loop integral.
 
+### 3e. All three Observational SUCC completion classes on the same circle
+
+This yields a particularly clean realization of the maintainer's own classification **without changing the underlying geometric space**. Fix the source family of *uniform integer-rotation paths*
+\(\mathcal X=\{\gamma_k:k\in\mathbb Z\}\), \(\gamma_k(t)=e^{2\pi i k t}\), and target \(T(\gamma_k)=k\). We alter only the source-class assumptions and the observer's admissible sampling policy:
+
+| Observer contract | Completion status | Mathematical receipt |
+| --- | --- | --- |
+| **Bounded source model:** a justified prior \(|k|\le K\); probe \(t=1/(2K+1)\) | **Finite completion** | The \(2K+1\) phases are distinct modulo one, so one exact probe identifies k. |
+| **Unbounded source model:** all integer k; infinitely expanding schedule that enumerates all rational times in [0,1] | **Only ideal \(\omega\) completion** | Every finite prefix has an LCM alias; yet any two distinct k,j are separated by the rational probe \(t=1/(|k-j|+1)\). |
+| **Unbounded source model:** forever repeat one *fixed finite* schedule of rational sampling times | **Persistently probe-dark** | For L the fixed denominator LCM, k and k+L match *every admissible probe forever*, including the formal \(\omega\)-history. |
+
+**Proof:** The first case is modular phase injectivity on an explicitly bounded integer interval. The second combines the finite LCM alias theorem with the pairwise separating rational sample \(t=1/(|k-j|+1)\); its phase difference is nonzero and strictly less than a full turn. Since the rationals are countable, they can be ordered into a sequence whose ideal total record contains every such separator. The third case repeatedly acquires the same finitely many equations and so never eliminates the LCM alias.
+
+The executable module **does not run an infinite probe tower**. It constructs explicit separating witnesses for named integer rivals and exact finite-schedule aliases. A full formal omega proof is mathematical, from the two universal quantified constructions. The model assumes identical uniform-rotation experiments can be independently queried at arbitrarily chosen rational times; actual physical replayability and precision are a separate constraint.
+
+**Crucial conceptual verdict:** Being a "Simple", "Ideal Analytic", or "Fucked" space is not an invariant of the geometric circle alone. For a declared target it is a property of the **source class + admissible probe-growth policy + regularity/realization assumptions**. The name "Ideal Analytic" describes omega-only completion behavior; the source need not be a real-analytic function class to exhibit that pattern. The circle has not changed. The observer's interface has.
+
 ## 4. A fresh polynomial/trig probe alias independent of winding
 
 Even **static algebraic function identification** can fail under too few sample points. Let A's candidate polynomial observable be T_5(x)=16x^5−20x³+5x and another candidate be x. Under the trig translation,
