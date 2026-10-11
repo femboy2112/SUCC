@@ -412,3 +412,70 @@ def complementary_observers_demo():
         "full_continuation_equivalence_of_physical_devices_claimed": False,
         "RH_claimed": False,
     }
+
+
+def cross_enabled_ladder_demo():
+    """Reciprocal probe unlocking: neither observer can complete in isolation.
+
+    Probe p0 on Alice unlocks B-only p1; p1 on Bob unlocks A-only p2;
+    p2 on Alice unlocks B-only p3, which discriminates the true source.
+    Each exchange is a strict single informed step for the recipient.
+    """
+    probes = ("p0", "p1", "p2", "p3")
+    world = FiniteProbeWorld(
+        ("A", "B"), probes,
+        (("same", "same", "same", "A"),
+         ("same", "same", "same", "B")),
+    )
+    rules = tuple(HornRule((f"obs:p{i}:same",), f"can:p{i+1}")
+                  for i in range(3))
+    basis = SharedKnowledgeBasis(
+        world, ("can:p0",), rules,
+        (("Alice", ("p0", "p2")), ("Bob", ("p1", "p3"))),
+    )
+    a, b = AgentKnowledge("Alice"), AgentKnowledge("Bob")
+    # Isolation controls: Alice cannot execute B-only p1 after p0;
+    # Bob cannot even start because p0 is physically Alice-only.
+    alice_isolated = a.advance(basis, "B", 4)
+    bob_isolated = b.advance(basis, "B", 4)
+    assert alice_isolated.model(basis).compatible == ("A", "B")
+    assert alice_isolated.local_frames == 1
+    assert bob_isolated.model(basis).compatible == ("A", "B")
+    assert bob_isolated.local_frames == 0
+    receipts = []
+    for source in ("Alice", "Bob", "Alice", "Bob"):
+        sender = a if source == "Alice" else b
+        receiver = b if source == "Alice" else a
+        next_frame = sender.local_succ(basis, "B")
+        if next_frame.local_frames != sender.local_frames + 1:
+            raise ArithmeticError("Collective access failed to unlock the next physical probe")
+        packet = encode_strict_relay(next_frame, receiver, basis)
+        informed = decode_strict_relay(receiver, packet, basis)
+        assert informed.placement(basis) == next_frame.placement(basis)
+        assert informed.batches == next_frame.batches
+        receipts.append({
+            "physical_source": source,
+            "new_probe": next_frame.batches[-1].outcomes[0][0],
+            "recipient_informed_steps": 1,
+            "remaining_sources": list(informed.model(basis).compatible),
+        })
+        if source == "Alice":
+            a, b = next_frame, informed
+        else:
+            b, a = next_frame, informed
+    assert a.model(basis).compatible == b.model(basis).compatible == ("B",)
+    assert a.local_frames == b.local_frames == 2
+    assert a.informed_steps == b.informed_steps == 2
+    return {
+        "status": "EXACT_CROSS_ENABLED_SUCC_LADDER",
+        "isolated_alice_sources": list(alice_isolated.model(basis).compatible),
+        "isolated_bob_sources": list(bob_isolated.model(basis).compatible),
+        "collective_sources": list(a.model(basis).compatible),
+        "rungs": receipts,
+        "alternating_probe_origins": [r["physical_source"] for r in receipts],
+        "alternating_probes": [r["new_probe"] for r in receipts],
+        "full_history_and_semantic_alignment": a.batches == b.batches,
+        "physical_instruments_replicated": False,
+        "physical_infinite_ladder_executed": False,
+        "RH_claimed": False,
+    }
