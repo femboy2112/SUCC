@@ -59,6 +59,32 @@ The two sides map \(|n\rangle\) to the **same** ket \(|pn+p\rangle\). The genuin
 
 This is an **actual published mathematical finite↔Archimedean relation in the same ax+b family**. It raises a serious future path: identify the precise operator algebra, quotient/representation, regularity, dynamics and source-specific zeta partition function, then see whether its legitimate analytic completion carries the relevant Weil-form structure. No such bridge is proved by the present prime-gap arithmetic tests, and there is no claim of academic priority.
 
+### 1c. Established spectral interpretation: Bost–Connes
+
+Jean-Benoît Bost and Alain Connes, *Hecke algebras, type III factors and phase transitions with spontaneous symmetry breaking in number theory*, **Selecta Mathematica 1 (1995), 411–457**, DOI [10.1007/BF01589495](https://doi.org/10.1007/BF01589495), constructed a number-theoretic \(C^*\)-dynamical system whose partition function is the Riemann zeta function. Its arithmetic is built from related \(ax+b\) structures.
+
+For its familiar diagonal Hilbert-space representation, the Hamiltonian has eigenvalues
+\[
+H|n\rangle=(\log n)|n\rangle.
+\]
+When \(\beta>1\), the exponential is trace class and
+\[
+\boxed{Z(\beta)=\operatorname{Tr}(e^{-\beta H})
+=\sum_{n=1}^{\infty}n^{-\beta}=\zeta(\beta).}
+\]
+At \(\beta=-1\), the *finite-cutoff ordinary trace* is
+\[
+\operatorname{Tr}_{\le N}(e^{H})
+=\sum_{n=1}^N n=\frac{N(N+1)}2
+\longrightarrow+\infty.
+\]
+The analytically continued \(\zeta(-1)=-1/12\) is **not** that unbounded operator's ordinary trace and **not** a legitimate finite-temperature Gibbs partition trace in this representation. It is the meromorphically continued value of the associated zeta function. The exact code checks finite traces at beta=2 and -1, not a \(C^*\)-algebra or KMS state.
+
+This is a particularly honest realization of the maintainer's distinction:
+**the global spectral/Dirichlet function admits a meaningful continued value where the original physical trace ceases to be defined.** A proper operator-theoretic transport must specify the analytic extension/regularized trace and justify compatibility with the arithmetic source. Cuntz's related finite-adèle and real-place stabilized presentations provide a real mathematical investigation route, not a solved RH certificate.
+
+Independent discussion of the diagonal zeta-partition representation appears in [Connes–Marcolli–Ramachandran, *KMS states and complex multiplication*](https://abelsymposium.no/symp2004/preprints/connes.pdf), alongside the original Bost–Connes paper. Do not infer the negative-\(\beta\) regularized value has the usual Gibbs/KMS positivity.
+
 ## 2. The lawful global transport uses the Gamma/Archimedean completion
 
 The classical functional equation is
@@ -136,6 +162,9 @@ So the global transport is not a universal correction that can be pasted onto ar
 
 - **O128 CLASSICAL / TESTED MODEL:** \(E_p(-1)=-1/(p-1)\), the negative inverse first prime-jet SUCC return gap.
 - **O136 CLASSICAL / PROVED LOCAL / TESTED MODEL:** the exact ax+b relation `V_p S=S^p V_p` and address-level discrepancy `SV_p(n)-V_pS(n)=1-p` connect the local Euler denominator to shift–dilation noncommutation. The same relation holds for composite q, so it is not a prime-selection/Euler-source theorem.
+- **O137 CLASSICAL (external Cuntz theorem):** a related arithmetic ax+b C*-algebra has finite-adèle and real-place stabilized crossed-product descriptions. SUCC/FUCC does not automatically implement the full quotient/completion.
+- **O138 UNVERIFIED:** that operator-algebra connection, by itself, produces the Gamma-functional equation or Weil positivity for RH.
+- **O139 CLASSICAL / TESTED FINITE MODEL:** Bost–Connes partition trace equals ζ(β) for β>1; at β=-1 the ordinary finite trace grows N(N+1)/2 while -1/12 remains a valid meromorphic special value, not the trace.
 - **O129 PROVED LOCAL:** locally continued prime-factor cutoff product tends to zero and is not global \(\zeta(-1)\).
 - **O130 CLASSICAL:** completed zeta/functional equation relates the continued \(-1\) to the convergent Euler product at \(2\).
 - **O131 PROVED LOCAL conditional on the classical global theorems:** finite prime cutoff yields \(V_X\) with absolute error ≤1/(12X).
