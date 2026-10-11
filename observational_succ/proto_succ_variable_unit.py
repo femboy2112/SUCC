@@ -53,7 +53,7 @@ def binomial_integer(n: int, k: int) -> int:
 
 @dataclass(frozen=True)
 class FormalD:
-    """a+b*D in the free abelian Z[D]-submodule span{1,D}.
+    """a+b*D in the rank-two Z-submodule span_Z{1,D} of Z[D].
 
     This intentionally allows + and integer scalar operations, but does
     not assume D is invertible or silently localize Z[D] at D.
