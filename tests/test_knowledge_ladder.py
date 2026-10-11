@@ -190,6 +190,20 @@ class KnowledgeLadderTests(unittest.TestCase):
         with self.assertRaises(KnowledgeLadderError):
             encode_strict_relay(b_received,stale,basis)
 
+    def test_compact_relay_cannot_launder_third_party_source_events(self):
+        basis = chain_basis(3)
+        a = AgentKnowledge("Alice").advance(basis, "B", 1)
+        b0 = AgentKnowledge("Bob")
+        b = decode_strict_relay(b0, encode_strict_relay(a, b0, basis), basis)
+        with self.assertRaises(KnowledgeLadderError):
+            minimal_snapshot_delta(b, b0, basis)
+        with self.assertRaises(KnowledgeLadderError):
+            encode_snapshot_relay(b, b0, basis)
+        packet = json.loads(encode_snapshot_relay(a, b0, basis).decode())
+        packet["sender"] = "Bob"
+        with self.assertRaises(KnowledgeLadderError):
+            decode_snapshot_relay(b0, json.dumps(packet).encode(), basis)
+
     def test_exact_small_world_mutations(self):
         # All 16 binary 2-source × 2-probe tables with both probes initially
         # enabled. Each origin orientation produces one bounded local batch.
