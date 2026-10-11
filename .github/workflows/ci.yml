@@ -365,6 +365,32 @@ jobs:
           assert x["nontrivial_zeta_zeros_used"] is False
           assert x["RH_claimed"] is False
           PY
+      - name: Variable-unit proto SUCC and higher Pascal successor
+        run: |
+          python scripts/proto_succ_variable_unit_probe.py > "$RUNNER_TEMP/proto-succ-d.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"proto-succ-d.json").read_text())
+          assert x["status"]=="VARIABLE_UNIT_PROTO_SUCC_UNIPOTENT_LIFT"
+          assert x["formal_original_one_step"]=="0 -> D"
+          assert x["formal_first_five_addresses_in_D_units"]==[0,1,2,3,4]
+          assert x["S_one_is_D_equals_one_specialization"] is True
+          assert x["S_unit_mod_25_with_unit_two_period"]==25
+          assert x["unit_inverse_mod_25"]==13
+          assert x["normalized_shift_dilation_defect"]=="1-p"
+          assert x["raw_shift_dilation_defect"]=="D*(1-p)"
+          assert x["symbolic_unit_must_not_be_automatically_assumed_invertible"] is True
+          assert x["higher_order_SUCC_jet_formula"]=="x_n=sum_k binom(n,k) Delta^k x_0"
+          assert x["quadratic_d0_two_acceleration_three"]==[0,2,7,15,26,40]
+          assert x["higher_order_integer_binomial_formula"] is True
+          assert x["changing_unit_can_stop_being_a_local_clock_unit"]["initial_unit_clock_period"]==25
+          assert x["changing_unit_can_stop_being_a_local_clock_unit"]["updated_nonunit_clock_period"]==5
+          assert x["changing_unit_can_stop_being_a_local_clock_unit"]["same_full_clock_coordinate_isomorphism_survives"] is False
+          assert x["d_zero_specialization_loses_normalized_defect_information"] is True
+          assert x["prime_jet_clock_period_identity_requires_declared_local_unit"] is True
+          assert x["new_RH_Gamma_or_Kubota_Leopoldt_theorem_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -396,5 +422,6 @@ jobs:
             ${{ runner.temp }}/zeta-minus-one-transport.json
             ${{ runner.temp }}/residue-arch.json
             ${{ runner.temp }}/clock-mahler.json
+            ${{ runner.temp }}/proto-succ-d.json
           if-no-files-found: warn
           retention-days: 14
