@@ -313,7 +313,7 @@ def encode_newton_jet(
 ) -> bytes:
     receiver.validate(basis)
     law.verify(basis)
-    if (type(horizon) is not int or not 0<=horizon<=1000000
+    if (type(horizon) is not int or not 0<=horizon<=128
             or len(samples)!=law.degree_bound+1):
         raise DiscreteSuccError("Need d+1 observed initial states for degree-d jet")
     jet=difference_jet_from_samples(samples,basis)
