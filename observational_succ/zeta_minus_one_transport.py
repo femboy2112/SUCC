@@ -68,6 +68,41 @@ def prime_jet_gap(p:int,k:int=0) -> int:
     return (p-1)*p**k
 
 
+def shift_dilation_address_defect(multiplier:int, address:int, shifts:int=1) -> int:
+    """Exact affine SUCC/FUCC coordinate discrepancy.
+
+       S^a V_q(n) - V_q S^a(n)
+         = (q*n+a) - q*(n+a) = a*(1-q).
+
+    q need not be prime! Thus this algebraic identity cannot, by itself,
+    pick out the prime factors in Euler's product. Also, this is a
+    *difference of destination indices*, not a scalar operator commutator
+    on the Hilbert space with basis |n>.
+    """
+    _integer(multiplier,2,10000)
+    _integer(address,1,1000000)
+    _integer(shifts,0,128)
+    left=multiplier*address+shifts
+    right=multiplier*(address+shifts)
+    actual=left-right
+    if actual != shifts*(1-multiplier):
+        raise ArithmeticError("Exact affine shift-dilation law contradicted")
+    return actual
+
+
+def shift_dilation_operator_identity(p:int,address:int,shifts:int=1) -> bool:
+    """Equality of kets V_p S^a|n> = S^(p*a) V_p|n>.
+
+    Demonstrates the established ax+b semigroup relation, NOT a
+    construction of Cuntz's completed / quotient C*-algebra.
+    """
+    _integer(p,2,10000)
+    _integer(address,1,1000000)
+    _integer(shifts,0,128)
+    return p*(address+shifts)==p*address+p*shifts
+
+
+
 def local_prime_factor_minus_one(p:int) -> Fraction:
     """Analytic/RATIONAL continuation of ONE geometric Euler factor only."""
     if not _prime(p):
@@ -239,10 +274,22 @@ def zeta_minus_one_transport_demo():
     if negative_odd_zeta_from_bernoulli(2)!=Fraction(1,120):
         raise ArithmeticError("Higher negative-odd functional equation failed")
     mutation=positive_side_mutation_controls()
+    for p in (2,3,5,7,11,13):
+        if (shift_dilation_address_defect(p,3)!=1-p
+                or not shift_dilation_operator_identity(p,3)):
+            raise ArithmeticError("SUCC/FUCC ax+b semigroup relation failed")
+    if shift_dilation_address_defect(6,3)!=-5:
+        raise ArithmeticError("Composite nonprime semigroup negative control failed")
     return {
         "status":"ZETA_MINUS_ONE_GLOBAL_EULER_ARCHIMEDEAN_TRANSPORT",
         "local_prime_minus_one_factor":"-1/(p-1)",
         "prime_jet_first_return_gap":"p-1",
+        "shift_dilation_one_step_address_defect":"1-p",
+        "ax_b_operator_semigroup_relation":"V_p S = S^p V_p",
+        "same_shift_dilation_defect_rule_for_composite_six":True,
+        "nonprime_affine_defect_does_not_authorize_euler_prime_factor":True,
+        "operator_commutator_claimed_scalar":False,
+        "cuntz_ax_b_finite_arch_completion_proved_here":False,
         "local_factor_is_rational_continuation_of_geometric_series":True,
         "local_factor_partial_products_tend_to_zero":True,
         "global_zeta_minus_one_value":"-1/12",
