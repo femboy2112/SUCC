@@ -11,6 +11,8 @@ from observational_succ.basis_boundary_transport import (
     encode_sparse_delta, decode_sparse_delta, encode_action_path,
     decode_action_path, Root6, boundary_evaluations,
     boundary_decode_bandlimited, finite_boundary_demo,
+    radial_mode_samples, decode_radial_modes, round_root6_samples,
+    zero_only_line_counterexample,
 )
 
 
@@ -70,8 +72,12 @@ class BasisIndexedTransportTests(unittest.TestCase):
         other=SharedBasis(6,"changed-meaning-v2")
         with self.assertRaises(BasisTransportError):
             decode_sparse_delta(self.start,packet,other)
+        # The new version can encode its *own* packet; the old decoder
+        # correctly refuses it. No tool can infer external language meaning
+        # from matching dimensions alone.
+        valid_other=encode_sparse_delta(self.end,self.start,other,self.delta)
         with self.assertRaises(BasisTransportError):
-            encode_sparse_delta(self.end,self.start,other,self.delta)
+            decode_sparse_delta(self.start,valid_other,self.basis)
         bad=json.loads(packet)
         for change in (
             lambda d:d.update(anchor="stale"),
@@ -193,6 +199,49 @@ class BasisIndexedTransportTests(unittest.TestCase):
         with self.assertRaises(BasisTransportError):
             boundary_decode_bandlimited((Root6(0,1),)*6)
 
+    def test_radial_recovery_exact_but_finite_precision_hides_high_mode(self):
+        high=(Q(0),)*5+(Q(1),)
+        at_r=radial_mode_samples(high,Q(1,2))
+        self.assertEqual(decode_radial_modes(at_r,Q(1,2)),high)
+        self.assertEqual(
+            round_root6_samples(at_r,Q(1,8)),
+            round_root6_samples(radial_mode_samples((Q(0),)*6,Q(1,2)),Q(1,8)),
+        )
+        self.assertNotEqual(at_r,radial_mode_samples((Q(0),)*6,Q(1,2)))
+        self.assertEqual(
+            decode_radial_modes(round_root6_samples(at_r,Q(1,8)),Q(1,2)),
+            (Q(0),)*6,
+        )
+        self.assertEqual(Q(1,2)**5,Q(1,32))
+        with self.assertRaises(BasisTransportError):
+            radial_mode_samples(high,Q(0))
+        with self.assertRaises(BasisTransportError):
+            radial_mode_samples(high,Q(2))
+        with self.assertRaises(BasisTransportError):
+            decode_radial_modes(at_r,Q(0))
+        with self.assertRaises(BasisTransportError):
+            round_root6_samples(at_r,Q(0))
+
+    def test_many_exact_radial_inverse_controls_different_source_modes(self):
+        radii=(Q(1),Q(3,4),Q(1,2),Q(1,4))
+        for coefficients in product((-1,0,1),repeat=3):
+            full=tuple(Q(x) for x in (*coefficients,0,0,0))
+            for r in radii:
+                observed=radial_mode_samples(full,r)
+                self.assertEqual(decode_radial_modes(observed,r),full)
+
+    def test_critical_line_zeros_only_cannot_suffice_for_global_reconstruction(self):
+        r=zero_only_line_counterexample()
+        self.assertEqual(r["status"],"SYMMETRIC_ENTIRE_POLYNOMIAL_LINE_ZERO_NONUNIQUENESS")
+        self.assertEqual(r["line_zeros_in_both"],["1/2-i","1/2+i"])
+        self.assertEqual(r["extra_offline_zeros_in_one"],["1/4","3/4"])
+        self.assertTrue(r["both_respect_s_to_one_minus_s"])
+        self.assertTrue(r["both_respect_reality_conjugation"])
+        self.assertFalse(r["line_zero_locations_alone_determine_global_entire_function"])
+        self.assertTrue(r["full_exact_line_function_values_have_identity_theorem_uniqueness"])
+        self.assertFalse(r["either_function_is_true_riemann_xi"])
+        self.assertFalse(r["RH_disproved_or_proved"])
+
     def test_fixed_support_message_lower_bound_under_ordinary_full_basis(self):
         # Exactly three unknown support positions among six => 20 cases.
         # For an exact fixed-length code shared decoder needs >= 5 bits.
@@ -212,6 +261,10 @@ class BasisIndexedTransportTests(unittest.TestCase):
         self.assertEqual(r["noncommutative_ordered_path_endpoints"],[3,2])
         self.assertTrue(r["boundary_exact_bandlimited_reconstruction"])
         self.assertTrue(r["boundary_unrestricted_high_mode_alias_exists"])
+        self.assertTrue(r["radial_exact_high_mode_reconstruction"])
+        self.assertTrue(r["finite_precision_root_six_samples_hide_mode_five"])
+        self.assertTrue(r["critical_line_zero_only_incomplete_for_symmetric_polynomial_family"])
+        self.assertFalse(r["true_xi_line_zero_locations_claimed_complete"])
         self.assertFalse(r["gravity_holographic_correspondence_proved"])
         self.assertFalse(r["total_message_bit_optimality_claimed"])
         self.assertFalse(r["RH_claimed"])
