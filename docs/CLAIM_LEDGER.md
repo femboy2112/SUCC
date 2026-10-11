@@ -67,12 +67,27 @@ Use these labels:
 | O52 | In finite monotone deterministic candidate systems the omega compatible fiber equals some finite-stage fiber, and preferred-model switches occur at most size(X) minus one times | PROVED LOCAL | Elementary finite-set proof, MODEL_DEPENDENT_OBSERVER_TRAPS §6; no uniform known stopping certificate |
 | O53 | A false preferred model can be refuted, rationally replaced and followed by another permanently self-confirming false preferred model | TESTED MODEL / explicit finite counterexample | A→B while C actual, broad/fine probes; MODEL_DEPENDENT_OBSERVER_TRAPS §5, test_observer_traps.py |
 | O54 | These model-dependent access traps apply universally to physical humans, quantum measurement, arbitrary noisy sources or RH proof independence | UNVERIFIED | No empirical/spectral model, no physical feasibility map, no stochastic almost-sure theorem or completed Weil identification |
+| O55 | Absorbing model retains the entire source-compatible fiber and every universally agreed named probe prediction, not just a preferred candidate; source-faithful observations shrink the fiber | PROVED LOCAL / finite research model | ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY §1; absorbing_frames.py, tests/test_absorbing_frames.py |
+| O56 | Finitary positive Horn closure saturates at a least fixed point; on suitable omega-continuous domains the least fixed point is the omega-supremum of finite iterates | CLASSICAL / exact finite implementation | Kleene fixed point theorem, Cousot–Cousot 1979; absorbing_frames.py |
+| O57 | Monotone observation/closure dynamics need not already be fixed at the omega limit | PROVED LOCAL / explicit classical-style counterexample | Naturals plus star requiring all naturals, closes at omega+1; constructive_frontier.py, formal note §2 |
+| O58 | Model-generated epistemic probes can arise from perfectly consistent, noncontradictory observations | PROVED LOCAL / TESTED MODEL | Coarse same -> capability fine, without changing compatible {A,B}; absorbing_frames.py |
+| O59 | Epistemic access to a probe and its physical feasibility are distinct predicates; a universal required transition in every FuckedSpace | TESTED MODEL for distinction / HYPOTHESIS for universal transition | blocked fine control; no source-dependent physical instrument model |
+| O60 | Contradictory observations invalidate classical excluded middle, while constructive justification may fail to force excluded middle in a Kripke frame | REFUTED as classical inference / CLASSICAL intuitionistic countermodel | Constructive root cannot force P or not-P; classical tautology unaffected; constructive_frontier.py |
+| O61 | A target report is identified from a trusted history iff the target is constant over its compatible sources; a finite report additionally requires finite encodability, a shared decoder and warranted provenance | PROVED LOCAL with explicit conditions | ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY §5; exact finite target transmission |
+| O62 | Exact finite digital transmission of all arbitrary real-valued constant functions is possible from one exact real probe | REFUTED under finite-alphabet finite-message assumption | Countability of finite strings versus uncountable reals; SEP Church–Turing thesis |
+| O63 | A smallest target-sufficient observation subset necessarily preserves the full lawful causal access history | REFUTED by exact finite counterexample | Fine alone identifies source B but the coarse observation is required to enable fine; target-witness and full-frame decoders distinguish claims |
+| O64 | A final observation can justify its own probe's prior accessibility by post-hoc semantic closure | REFUTED by causal path counterexample | obs:fine:B -> can:fine self-bootstrap; lawful replay rejects source-level authorization |
+| O65 | In a finite zero-error one-shot channel with receiver side information, minimal fixed-length bit budget is ceil(log2 chromatic number of confusability graph), under factorization feasibility | CLASSICAL / exact finite implementation | Witsenhausen 1976; interobserver_channels.py; 64 independent binary worlds and C5 control |
+| O66 | The physical observer performs transfinite iteration or can always transmit an arbitrarily completed mathematical model in finite time | UNVERIFIED | Mathematical limit is not physical supertask; requires a finite program/proof, bounded channel, shared semantics and possibly physical feasibility evidence |
+
 
 
 
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
+
+New absorbing/transmission controls: valid positive probe genesis with no contradiction; epistemically available but physically blocked probes; Kripke nonforcing of constructive excluded middle while classical LEM remains true; non-omega-continuous closure at omega+1; a self-enabling observation rejected by lawful replay; a shorter target-only witness that cannot certify causal acquisition; false bit-cardinality claims; and exact receiver-side-information channel coloring.
 
 Additional observer-trap controls: truth-labeled source B versus false preferred A under an exhaustive but closed echo-only menu; an available-but-never-scheduled separator; a periodic schedule that finds the separator; two sources yielding identical endogenous histories; an externally imposed replay-checkable intervention; a valid revision A→B that traps again while C is true; and forged causal histories. The toy finite source and probe tables are mathematical counterexamples, not human-neuroscience experiments.
 
@@ -82,7 +97,7 @@ Some controls are *historical* and live in the archived research documents, whil
 
 ## Outstanding highest-value claims
 
-- **General theory:** a physically and mathematically specified record-to-semantic functor with proved information-preservation/data-processing properties and falsifiable experimental consequences; in particular, test whether model-relative probe menus are physically feasible, make semantic closure model revision explicit, and characterize finite/omega/dark identification versus observer-policy traps and effective regularity.
+- **General theory:** extend absorbing version-space closure from finite Horn models to typed, model-generating recursive domains; define precisely when a hard-SUCC omega limit is a fixed point and when the purported completion is provably finite-channel transmissible with source-faithful causal provenance. Test epistemic versus genuinely physical feasibility independently.
 - **Proof theory:** formalization in PA of coding/substitution representation, followed by appropriately qualified Gödel/reflection principles in a proof assistant.
 - **RH adapter:** a rigorous archimedean/pole interval oracle and noncircular identification of a positive source-derived distribution with the completed Weil form.
 
