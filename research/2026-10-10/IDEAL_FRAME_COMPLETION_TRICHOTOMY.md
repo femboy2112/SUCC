@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-10. **Status:** new-to-project formal framing, classical reconstruction theorems, exact finite implementation, and explicit nonidentifiability counterexamples. **No claim of a new general theorem of physical cognition or of RH.**
 
-**Code:** \`observational_succ/ideal_frames.py\`; **tests:** \`tests/test_ideal_frames.py\`.
+**Code:** `observational_succ/ideal_frames.py`; **tests:** `tests/test_ideal_frames.py`.
 
 ## 0. Author's proposal and faithful steelman
 
