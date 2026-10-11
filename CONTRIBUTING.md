@@ -4,6 +4,8 @@ This is an open research repository, not a proof announcement. New mathematical 
 
 A substantial PR should include: a precise statement, definitions and scope, proof or model derivation, source attribution, at least one independent control, at least one adversarial test, reproduction steps, and a claim ledger update. Include rejected countermodels rather than deleting them once a promising formulation has been found.
 
+Develop proposals through the steelman–crucible–verdict loop documented in [docs/METHOD.md](docs/METHOD.md): reconstruct the strongest faithful reading, test it adversarially (every refutation carries a receipt), and record a labeled verdict. Productive failures — a dead framing that leaves a true residual constraint — are results worth keeping.
+
 **Different evidence types:** a classical theorem retains its original author's attribution; an exact elementary result may be marked PROVED LOCAL; a unit test establishes only the tested model/implementation; a numerical plot is OBSERVED, not PROVED; a physical carrier conjecture remains HYPOTHESIS until empirical predictions and measurements exist.
 
 Please do not turn a positive quantum covariance into a claimed proof about an unrelated arithmetic functional. Similarly, finite observation coverage is not a universal theorem, and a semantic/reporting \(\omega+1\) stage is not an executed physical infinity.
