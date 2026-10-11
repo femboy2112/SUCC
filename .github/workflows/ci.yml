@@ -281,6 +281,12 @@ jobs:
           assert j["status"]=="ZETA_MINUS_ONE_GLOBAL_EULER_ARCHIMEDEAN_TRANSPORT"
           assert j["local_prime_minus_one_factor"]=="-1/(p-1)"
           assert j["prime_jet_first_return_gap"]=="p-1"
+          assert j["shift_dilation_one_step_address_defect"]=="1-p"
+          assert j["ax_b_operator_semigroup_relation"]=="V_p S = S^p V_p"
+          assert j["same_shift_dilation_defect_rule_for_composite_six"] is True
+          assert j["nonprime_affine_defect_does_not_authorize_euler_prime_factor"] is True
+          assert j["operator_commutator_claimed_scalar"] is False
+          assert j["cuntz_ax_b_finite_arch_completion_proved_here"] is False
           assert j["local_factor_partial_products_tend_to_zero"] is True
           assert j["global_zeta_minus_one_value"]=="-1/12"
           assert j["global_transport_identity"]=="zeta(-1)=-zeta(2)/(2*pi^2)"
