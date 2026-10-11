@@ -51,16 +51,25 @@ Use these labels:
 | O36 | General observation/proof/physical-carrier results can be produced independently of RH | TESTED MODEL / PROGRAM DESIGN | this standalone package, docs and independent quantum instruments |
 | O37 | Every exact finite classical semantic readout contracts total-variation distinguishability | CLASSICAL / PROVED LOCAL | operational_semantics.py proof, exact Fraction certificates, native tests |
 | O38 | Finite Kraus measurement outcomes may be distinguishable in Z but not in X; a forgetful readout loses information without rewriting causal source | PROVED LOCAL / TESTED MODEL | quantum_records.py, operational_semantics.py and independent probes |
+| O39 | Ideal observational SUCC instantaneously closes a history under justified model inferences while only available field probes expand at each frame | HYPOTHESIS / formalized modeling premise | research/2026-10-10/IDEAL_FRAME_COMPLETION_TRICHOTOMY.md §0–1; not an empirical physical-cognition theorem |
+| O40 | Given the genuine model-class assumption degree ≤d, a polynomial is uniquely determined by its d-jet at zero (not earlier uniformly) | CLASSICAL / exact finite model | ideal_frames.py; tests/test_ideal_frames.py; research note §2A |
+| O41 | Analytic germs are uniquely determined by the complete infinite jet, while no finite jet identifies an arbitrary analytic germ; only convergent series are analytic germs | CLASSICAL | Research note §2B; analytic power-series definition and finite monomial controls |
+| O42 | Infinite Taylor-jet observation of smooth germs is noninjective with flat-germ kernel; every formal jet is realized by a smooth germ (Borel) | CLASSICAL / explicit counterexample | Research note §2C; flat e^(-1/x²); Fassina–Pan 2022 §2 |
+| O43 | Every finite jet prefix can admit an analytic realization although the compatible full omega jet admits no analytic germ | PROVED LOCAL / classical radius counterexample | a_k=k! gives radius zero; exact finite regressions; research note §3 |
+| O44 | A deterministic history-only adaptive observer using a fixed admissible probe family cannot distinguish two sources agreeing on every probe in that family | PROVED LOCAL (conditional) | Induction on causal histories; research note §4 |
+| O45 | Finite/omega/dark classification is intrinsic to a source space and independent of allowed probes | REFUTED as universal inference | Off-origin evaluation separates a smooth flat germ from zero; research note §2C/§4 |
+| O46 | These idealized observer classes yield a general physical law, effectively reconstructible limits, or an RH Weil-sign theorem | UNVERIFIED | Source regularity, effectiveness, empirical identification, and arithmetic source-to-Weil bridge absent |
+
 
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
 
-Some controls are *historical* and live in the archived research documents, while others are directly covered by current tests. A new RH hypothesis must not be described as source-specific unless it has faced the controls applicable to its exact domain.
+Additional ideal-frame controls: zero versus a nonzero flat smooth germ with identical all-order origin jets; off-origin evaluation that defeats that darkness; compatible finite analytic polynomial jets with divergent factorial omega series; premature zero-polynomial closure refuted by a delayed fourth derivative.\n\nSome controls are *historical* and live in the archived research documents, while others are directly covered by current tests. A new RH hypothesis must not be described as source-specific unless it has faced the controls applicable to its exact domain.
 
 ## Outstanding highest-value claims
 
-- **General theory:** a physically and mathematically specified record-to-semantic functor with proved information-preservation/data-processing properties and falsifiable experimental consequences.
+- **General theory:** a physically and mathematically specified record-to-semantic functor with proved information-preservation/data-processing properties and falsifiable experimental consequences; in particular, an admissible-probe observer reconstruction theorem that separates finite/omega/dark identification from model realizability and effective stability.
 - **Proof theory:** formalization in PA of coding/substitution representation, followed by appropriately qualified Gödel/reflection principles in a proof assistant.
 - **RH adapter:** a rigorous archimedean/pole interval oracle and noncircular identification of a positive source-derived distribution with the completed Weil form.
 
