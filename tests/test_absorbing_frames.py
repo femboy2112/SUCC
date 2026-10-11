@@ -174,6 +174,8 @@ class AbsorbingFramesTests(unittest.TestCase):
         with self.assertRaises(AbsorptionError):
             AbsorbingProtocol(world, ("obs:coarse:same",), (), world.probes)
         with self.assertRaises(AbsorptionError):
+            AbsorbingProtocol(world, ("can:teleport",), (), world.probes)
+        with self.assertRaises(AbsorptionError):
             AbsorbingProtocol(world, ("can:coarse",),
                               (HornRule(("obs:coarse:invented",), "can:fine"),),
                               world.probes)
