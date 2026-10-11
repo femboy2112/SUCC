@@ -86,6 +86,25 @@ jobs:
           assert j["unrestricted_real_exact_bit_transmission_claimed"] is False
           assert j["RH_claimed"] is False
           PY
+      - name: Knowledge-aided SUCC interobserver ladder and future-transport controls
+        run: |
+          python scripts/knowledge_ladder_probe.py > "$RUNNER_TEMP/knowledge-ladder.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"knowledge-ladder.json").read_text())
+          assert j["status"]=="EXACT_FINITE_INTEROBSERVER_KNOWLEDGE_LADDER"
+          assert j["discovery_succ_steps"]==6
+          assert j["receiver_knowledge_aided_steps"]==3
+          assert j["end_source_class"]==["B"]
+          assert j["full_shared_semantics_and_causal_records_match"] is True
+          assert [r["local_discovery_steps"] for r in j["rungs"]]==[2,2,2]
+          assert [r["receiver_informed_steps"] for r in j["rungs"]]==[1,1,1]
+          assert j["sender_outcomes_cryptographically_authenticated"] is False
+          assert j["physical_time_speedup_proved"] is False
+          assert j["infinite_ladder_executed"] is False
+          assert j["RH_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -107,5 +126,6 @@ jobs:
             ${{ runner.temp }}/semantic-data-processing.json
             ${{ runner.temp }}/observer-trap.json
             ${{ runner.temp }}/absorbing-frontier.json
+            ${{ runner.temp }}/knowledge-ladder.json
           if-no-files-found: warn
           retention-days: 14
