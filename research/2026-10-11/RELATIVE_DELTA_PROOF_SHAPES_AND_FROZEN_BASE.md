@@ -84,6 +84,23 @@ If p(K) is a singleton {y}, the model already entails that p's output is y. The 
 
 If p(K) contains at least two outputs, two candidate true sources have the same current evidence yet disagree on p; the mere mathematical possibility of performing p does not determine its result. Example: X={A,B}, p(A)=A and p(B)=B. Everyone can know p exists while not knowing which output will occur.
 
+**A second, stronger proof-shaped phenomenon: a theorem can identify the *right future experiment* without identifying its result.** Fix a target T:X→Z (e.g., a field invariant or a proposition the observer wants to decide). A probe p is *target-sufficient relative to K* exactly when
+
+\[
+\boxed{\forall x,x'\in K:\quad
+p(x)=p(x')\ \Longrightarrow\ T(x)=T(x').}
+\]
+
+Equivalently, for every possible outcome y of p, the corresponding fiber \(K_y=\{x\in K:p(x)=y\}\) has a single target value \(T(K_y)=\{t_y\}\). The resulting proof produces a **conditional decision table** "if p returns y, conclude T=t_y" for every possible y.
+
+**Proof of necessity and sufficiency:** If p has matching values on two compatible sources with different target outcomes, even obtaining p's answer cannot distinguish those target possibilities; it is insufficient. Conversely, if every p-fiber agrees on T, observing any actual y leaves only a fiber with one possible T. Therefore one completed *physically executable* p observation determines the target, provided p has been epistemically recognized and its instrument is feasible. There is no claim that the observer already knows which target outcome will occur.
+
+This is an important refinement of the user's proposal: **the mere possession of a proof of an experiment's decisiveness can eliminate an entire search for a suitable probe, even when the final empirical value remains unknown.** The proof compresses *investigative path structure*, not arbitrary source information.
+
+**Explicit controls:** A two-source identity probe p(A)=A, p(B)=B is target-sufficient to determine the actual source once it is used, though the source is not identified before measurement. The mathematical parity target over sources 00,01,10,11 is not determined by a left-bit probe alone. A derived XOR/parity probe is target-sufficient for parity, but in the finite conservative basis-upgrade model that mathematical concept is not automatically a physically executable instrument. We reject any "one physical step" conclusion when p is missing from the actual feasible device set.
+
+The exact \`certify_probe_decision\` and \`verify_probe_decision\` functions compute/check all outcome branches against the declared finite source table without actualizing a new outcome. Their success does not independently authenticate the physical instrument, establish the premise K is the entire true source space, or prove a universal cognitive phenomenon.
+
 **The repair of the original idea:** If a "probe" is really a *proof object* of type "for all x compatible with this context, p(x)=y", then the existence of a **valid inhabitant of that value-indexed type** carries the conclusion y. If instead "probe" means a merely *available physical experiment* of type X→Y, availability does not generally supply its source-dependent outcome.
 
 **Source-dependent options:** Availability of an instrument can itself be source-sensitive evidence if it is actually tested or its existence is source-authenticated; then observing the availability is an additional empirical outcome. A declared option that is merely contemplated does not act as that observation. The test suite explicitly separates these.
@@ -141,6 +158,7 @@ The important prediction is that the full chronological observation history can 
 | New concept symbols automatically grant new empirical probes | XOR rule definition with physical Φ unchanged | REFUTED |
 | An existing option reveals its unknown result | Two-source p(A)≠p(B) | REFUTED |
 | Valid proof can settle a probe's result without measuring | Source-constant p(K) and independently checked witness | PROVED LOCAL |
+| Proof can identify a decisive *experiment* without identifying its answer | Every possible p outcome must determine target T on its source fiber | PROVED LOCAL; target-sufficiency proof and physical-access negative controls |
 | Presence of a source-sensitive option is *always* free evidence | Require an actual availability check | REFUTED as universal implication |
 | Later delta can be decoded by frozen B0 | Different verified basis fingerprint | Reject until verified upgrade |
 | Arbitrary n-bit prefixes universally compress below n bits in B0 | Count all 2^n prefixes, n=1..9 | REFUTED by exact counting and proof |
@@ -149,7 +167,7 @@ Software remains an exact finite model with admitted shared source table and det
 
 ## 7. Claims and verdict-changing next questions
 
-Proposed claim ledger entries O76–O83:
+Proposed claim ledger entries O76–O84:
 
 - **O76 PROVED LOCAL:** equal operational position implies equivalent future deterministic source observation steps; finite exploration controls.
 - **O77 PROVED LOCAL / TESTED MODEL:** finite relative path+value replay reconstructs strong operational placement under lawful shared source/basis assumptions; not bit-optimal.
@@ -159,6 +177,7 @@ Proposed claim ledger entries O76–O83:
 - **O81 CLASSICAL / finite controls:** for all possible arbitrary n-bit frozen-base targets, some require at least n bits; infinite arbitrary sources not universally finitely coded.
 - **O82 UNVERIFIED:** general evolving shared basis functors preserving truth, proof authority and physical access, independent of source tables.
 - **O83 UNVERIFIED:** universal human/physical or RH consequences, finite exact return of arbitrary infinite ladder, no unbounded computational speedup.
+- **O84 PROVED LOCAL:** contextual proof that a probe is target-determining iff its response fibers are target-constant; a valid plan need not reveal which result occurs or supply its physical instrument.
 
 Next research steps:
 
