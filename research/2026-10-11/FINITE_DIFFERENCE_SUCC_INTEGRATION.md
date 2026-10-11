@@ -134,6 +134,39 @@ The square “change in global coordinates then represent in next frame” versu
 
 **Required assumptions:** both frames must be invertible on the declared source/probe domain, and U must be part of the shared code or independently computable from the shared frame conventions. If a carrier perturbation destroys invertibility or alters the interpretation of probes, a false frame map cannot restore source support. This is the right place for the next *FuckedField* backaction tests.
 
+### 4b. An exact covariant Newton jet in a changing but flat frame family
+
+The previous covariant first-difference formula and the Newton jet formula actually combine into a **direct frame-specific reconstruction rule**. Suppose the canonical source sequence satisfies the globally justified difference law \(\Delta^{d+1}x_n=0\) and that all relevant invertible frames \(F_n\) are known.
+
+The shared starting local position is \(y_0=F_0x_0\). A's initial finite-difference jet can be expressed in that same original local basis:
+\[
+j_r=F_0\Delta^r x_0,\qquad 1\le r\le d.
+\]
+
+Then every future local SUCC state can be evaluated directly:
+
+\[
+\boxed{
+y_n=
+(F_nF_0^{-1})
+\left[y_0+\sum_{r=1}^{d}\binom nr\,j_r\right].
+}
+\]
+
+**Proof:** The bracket is \(F_0[x_0+\sum_{r=1}^d\binom nr\Delta^r x_0]=F_0x_n\) by the established global Newton law. Multiplying by \(F_nF_0^{-1}\) gives \(F_nx_n=y_n\). Each index n may be evaluated directly and separately once the initial jet and its target frame map are available; there's no need for the receiver to replay all earlier intermediate states to get one requested n.
+
+Within a finite **already sampled** horizon, a corresponding formula holds for arbitrary trajectories if A transmits the *full* order-N finite jet: first pull each observed \(y_n\) back through \(F_n^{-1}\), compute all forward differences at x0, transport those jets to F0, then apply the displayed formula at each n≤N. That is unconditional finite Pascal inversion under a declared family of invertible frames, not polynomial extrapolation.
+
+**Hostile regimes:**
+
+1. A **false global degree law** may fit all initially observed samples yet fail one stage later; the longer covariant continuation is then not justified.
+2. An **unknown future frame map** \(F_n\), a singular map without full inverse or a corrupted connection makes the frame-specific reconstruction undefined/unjustified. Its cost is not silently omitted from the shared channel.
+3. The frame transports used here satisfy \(U_{i\to j}=F_jF_i^{-1}\). Hence every closed loop with identical starting/ending global frame has **trivial pure-gauge holonomy**; the source's finite moving-frame rotation cannot by itself certify a nonflat field.
+
+**Executable controls:** arbitrary irregular 2D finite trajectories with varying identity/swap/shear frames reconstruct exactly; a source-certified quadratic trajectory reconstructs 13 local frames from just two initial derivative vectors and a verified source law; a false global quadratic extrapolation is defeated at the first unobserved divergent sample; singular local frames are refused; an exact closed pure-gauge coordinate cycle returns identity.
+
+**Research significance:** this is the first exact version of the maintainer's intended rule that **a shared initial condition plus communicated derivative structure can recover each SUCC stage directly in another lawful observer frame**, conditional on a verified recurrence and available frame transport. It remains classical discrete geometry, not a claim of novelty, physical carrier stability, measured curvature or RH.
+
 ## 5. Noncommuting path operations still admit parallel prefix reconstruction
 
 The local SUCC step is an affine transformation
@@ -176,7 +209,7 @@ A useful general theorem would have to establish a stable, source-respecting dia
 
 The exact finite vector-space implementation now verifies this commutation whenever each F_n is invertible and the source deltas are admitted truthful inputs.
 
-A **stronger future theorem** would remove the need to send every \(\eta_n\) by proving a fixed-order *covariant recurrence* in the changing-frame setting, then deriving a parallel-friendly finite jet/certificate in that new basis. The current module does NOT prove this. It currently combines separate constructions: plain finite-difference Newton interpolation under a global degree law, and general affine transport for changing frames.
+For globally given invertible frames `F_n`, §4b **now proves** a finite-jet frame-specific reconstruction formula by transporting a globally justified Newton law from the shared initial frame. This is restricted to a *flat/pure-gauge connection*; the harder future theorem is to derive and certify a **genuinely covariant finite-order recurrence for nonflat, potentially source-dependent connections**, with stable causal probe/proof support, rather than assuming a priori access to every target frame.
 
 To connect with the user's proof-as-inverted-dual idea, view a proof of the polynomial recurrence as **rewiring the graph**: independent step-observation obligations at arbitrary times become consequences of a few initial jets plus a universally quantified law. The proof can be shorter than the full path, but only relative to shared mathematical language and justified source assumptions. In a FuckedField, the difficulty may be that the requisite global law cannot be source-faithfully supported in the available carrier—not that discrete integration has failed mathematically.
 
@@ -209,6 +242,7 @@ Proposed new entries:
 - **O123 PROVED LOCAL:** the moving-frame covariant discrete difference y_{n+1}-F_{n+1}F_n^-1 y_n equals F_{n+1}Δx_n; naive coordinate difference need not.
 - **O124 PROVED LOCAL:** affine SUCC steps compose associatively but noncommutatively, enabling ordered prefix scan without exchanging source-causal order.
 - **O125 UNVERIFIED:** any arbitrary dynamic carrier admits an invertible, global, flat changing-frame identification; exact finite difference mathematics implies physical supertasks, RH proof or holographic bulk reconstruction.
+- **O127 PROVED LOCAL / TESTED MODEL:** when a global Newton recurrence and invertible frame sequence are independently verified, the initial local jet and transport \(F_nF_0^{-1}\) directly reconstruct each future local SUCC state; the complete finite jet also inverts already observed changing-frame paths without recurrence.
 
 **Next verdict-changing questions:** (1) formulate finite-jet support on **nonflat** discrete connections, including a genuine holonomy counterexample to path independence; (2) minimize sender proof/data size for a class of *covariant* finite-recursion paths; (3) build a source-dependent, backaction-sensitive probe protocol whose admissible time derivatives cannot be assembled across carrier changes, and find a rigorous stable certificate condition; (4) establish actual executable parallel work/depth and finite communication budget on real hardware; (5) assess arithmetic finite↔Archimedean transport only with source-derived Gamma/Euler test operators, preserved analytic topology and full Weil positivity, without reading zeros as inputs.
 
