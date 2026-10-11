@@ -16,6 +16,7 @@ from observational_succ.relative_delta import (
     probe_option_result, extend_shared_basis,
     encode_concept_upgrade, receive_concept_upgrade,
     frozen_base_minimum_worst_case_bits, relative_delta_demo,
+    prove_probe_value, verify_probe_value, ProbeValueProof,
 )
 
 
@@ -169,6 +170,51 @@ class RelativeDeltaTests(unittest.TestCase):
         self.assertTrue(p0.inferable_without_measuring)
         self.assertEqual(p0.inferred_value,"same")
         self.assertEqual(a.model(b).compatible,("A","B"))
+
+    def test_proof_shape_can_certify_value_but_option_alone_cannot(self):
+        basis=chain(2)
+        initial=AgentKnowledge("Alice")
+        p0=probe_option_result(initial,basis,"p0")
+        p1=probe_option_result(initial,basis,"p1")
+        self.assertTrue(p0.is_an_epistemic_option)
+        self.assertTrue(p0.inferable_without_measuring)
+        self.assertFalse(p1.inferable_without_measuring)
+        proof=prove_probe_value(initial,basis,"p0")
+        self.assertTrue(verify_probe_value(initial,basis,proof))
+        self.assertEqual(proof.value,"same")
+        self.assertEqual(initial.observations(),())
+        with self.assertRaises(RelativeDeltaError):
+            prove_probe_value(initial,basis,"p1")
+        from dataclasses import replace
+        with self.assertRaises(RelativeDeltaError):
+            verify_probe_value(initial,basis,replace(proof,value="wrong"))
+        new_frame=initial.local_succ(basis,"B")
+        with self.assertRaises(RelativeDeltaError):
+            verify_probe_value(new_frame,basis,proof)
+
+    def test_conditional_probe_availability_requires_a_true_observation(self):
+        # An option that exists for all models is not source information.
+        # A physically checked 'ready' outcome, however, can discriminate.
+        world=FiniteProbeWorld(
+            ("X","Y"),("ready","fine"),
+            (("yes","x"),("no","y")),
+        )
+        basis=SharedKnowledgeBasis(
+            world,("can:ready","can:fine"),(),
+            (("Alice",("ready",)),("Bob",("ready",))),
+        )
+        initial=AgentKnowledge("Alice")
+        report=probe_option_result(initial,basis,"ready")
+        self.assertTrue(report.is_an_epistemic_option)
+        self.assertEqual(report.possible_values,("no","yes"))
+        self.assertFalse(report.inferable_without_measuring)
+        after=initial.local_succ(basis,"X")
+        self.assertEqual(after.observations(),(("ready","yes"),))
+        self.assertEqual(after.model(basis).compatible,("X",))
+        self.assertTrue(probe_option_result(after,basis,"fine").inferable_without_measuring)
+        self.assertNotIn("fine",dict(basis.observers)["Alice"])
+        # The inferred fine result is not a fabricated physical measurement.
+        self.assertEqual(after.observations(),(("ready","yes"),))
 
     def test_binary_recipe_is_verified_basis_change_not_extra_empirical_data(self):
         world=FiniteProbeWorld(
