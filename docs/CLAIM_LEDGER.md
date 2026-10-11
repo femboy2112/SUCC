@@ -86,6 +86,7 @@ Use these labels:
 | O71 | For an omega-continuous inference closure, a nested lawful ladder of compatible finite histories has the limit closure equal to the directed union of finite closures | CLASSICAL (under stated continuity) | Kleene/finite-premise Horn argument; KNOWLEDGE_AIDED_SUCC_LADDER §6; not physical infinite receipt |
 | O72 | Each finite stage admitting a finite inter-observer message implies that any arbitrary binary-sequence omega completion has a single finite universal digital encoding | REFUTED | Infinite binary stream cardinality versus countable finite strings; research note §6 |
 | O73 | General knowledge-aided SUCC preserves physical probe dynamics, authenticated causal provenance, morphism-level Yoneda faithfulness, infinite-limit regularity or RH without additional assumptions | UNVERIFIED | Must construct separately typed physical, continuation/bisimulation, category, proof-certificate and completed-Weil bridges |
+| O74 | Two observers with complementary source-faithful physical probes can jointly identify an exact field target that neither can determine locally | PROVED LOCAL / TESTED MODEL | Left/right binary probes on {00,01,10,11}, each leaves parity ambiguous, joint intersection identifies 10 and XOR=1; knowledge_ladder.py and test_knowledge_ladder.py |
 
 
 
