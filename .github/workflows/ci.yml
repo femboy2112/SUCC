@@ -118,6 +118,28 @@ jobs:
           assert j["infinite_ladder_executed"] is False
           assert j["RH_claimed"] is False
           PY
+      - name: Relative path value deltas and proof-shaped probes
+        run: |
+          python scripts/relative_delta_probe.py > "$RUNNER_TEMP/relative-delta.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"relative-delta.json").read_text())
+          assert j["status"]=="EXACT_FINITE_RELATIVE_OBSERVER_TRANSPORT"
+          assert j["relative_path_value"]["no_state_snapshot_or_absolute_probe_names_in_steps"] is True
+          assert j["position_anchored"]["independent_prior_histories"] is True
+          assert j["position_anchored"]["same_prior_knowledge_access_and_reasoning"] is True
+          assert j["position_anchored"]["operational_continuation_verified"] is True
+          assert j["position_anchored"]["old_receiver_event_origin_preserved"]=="Bob"
+          assert j["position_anchored"]["relative_informed_steps"]==1
+          assert j["evolving_proof_basis"]["new_physical_instrument_created"] is False
+          assert j["evolving_proof_basis"]["option_alone_determined_result"] is False
+          assert j["evolving_proof_basis"]["proof_after_primitive_evidence_determined_result"] is True
+          assert j["evolving_proof_basis"]["parity_physically_observed"] is False
+          assert j["evolving_proof_basis"]["frozen_base_minimum_worst_case_bits_for_eight_arbitrary_bits"]==8
+          assert j["arbitrary_infinite_completion_transmitted"] is False
+          assert j["RH_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -140,5 +162,6 @@ jobs:
             ${{ runner.temp }}/observer-trap.json
             ${{ runner.temp }}/absorbing-frontier.json
             ${{ runner.temp }}/knowledge-ladder.json
+            ${{ runner.temp }}/relative-delta.json
           if-no-files-found: warn
           retention-days: 14
