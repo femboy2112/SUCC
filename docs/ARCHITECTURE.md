@@ -103,7 +103,9 @@ For d a p-local unit, multiplication `C_d(x)=d*x` conjugates ordinary SUCC to `S
 
 The lifted state `(x,d,a)` admits `(x+d,d+a,a)`, whose iterates yield `x_n=x_0+nd_0+binom(n,2)a`; general finite jets evolve by the integer Pascal shift, with no modular division by factorials. A changing d can leave the unit group: `(0,1,4)→(1,5,4)` at p=5, mod25 turns a full 25-position step cycle into a 5-position subclock while retaining a lawful integer path. Frame-gauge validity is a typed condition on the carrier, not an assumed property of every SUCC update.
 
-See [variable-unit proof and controls](../research/2026-10-11/PROTO_SUCC_VARIABLE_UNIT_LIFT.md), claims O156–O164. This is classical algebra and a SUCC architectural abstraction; deriving prime zeta measures, Gamma completion or completed Weil positivity remains unresolved.
+For first-difference evolution d_n=d0+n a, **all-time full-clock frame validity is equivalent to p∤d0 and p|a**. If acceleration a is a p-unit, the integer step trajectory inevitably crosses a nonunit at the finite index n≡−d0 a^-1 mod p. The mathematical path still exists; only the assumption of invertible gauge transport fails. This classifies all linear meta-SUCC unit-frame paths, not physical proof-support outcomes.
+
+See [variable-unit proof and controls](../research/2026-10-11/PROTO_SUCC_VARIABLE_UNIT_LIFT.md), claims O156–O165. This is classical algebra and a SUCC architectural abstraction; deriving prime zeta measures, Gamma completion or completed Weil positivity remains unresolved.
 
 ## SUCC finite differences as the classical Mahler coordinate system
 
