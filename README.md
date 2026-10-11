@@ -113,6 +113,7 @@ The package name is **observational_succ**. No runtime dependency on the origina
 | Gödel, Turing and finite proof | observer_logic, godel_succ, observer_reflection | Self-reference syntax, two-counter controls, checked proof authority, finite-support at omega |
 | Ordinal and Hilbert limits | ordinal_succ_report, infinite_realization | Formal omega/omega+1 reports, second-order interaction, nonuniform Hilbert limits |
 | Source-relative precision/proof transport | precision_transport | Exact p-adic lifting debt, source-class dependent decoder theorem, composable faithful embeddings, and independently checked source-intervention/claim-preservation gates |
+| State-changing proof support and proportional knowledge debt | proof_backaction_debt | Atomic source-indexed observations that activate new proof obligations, exact one-sided forward truth transport, proportional/matched precision debt and explicit finite-vs-omega/Zeno controls |
 | Optional RH application bridges | gamma_interferometer, balanced_theta_li, hasse_theta_seam, source_prime_certificates, dirichlet_lambert | Gamma/prime source interfaces, Li-index windows, certified prime-only Suzuki bounds |
 
 The imported RH experiments remain available to audit, but the future general theory is **not defined by RH**.
@@ -122,6 +123,8 @@ The imported RH experiments remain available to audit, but the future general th
 This repo was launched after an extensive program in [femboy2112/FuckingRH](https://github.com/femboy2112/FuckingRH). The migration was pinned to [commit ba075348](https://github.com/femboy2112/FuckingRH/commit/ba075348b7bcc66d938b3e0ca96c26e95bba340a), corresponding to [the observational foundations PR #23](https://github.com/femboy2112/FuckingRH/pull/23). The [manifest](provenance/IMPORT_MANIFEST.json) records the exact original and destination Git blob identities for 72 historical artifacts: **55 mechanically namespaced Python files and 17 unchanged documents**.
 
 New work belongs here first. When it yields an independently meaningful RH-related theorem, export a **self-contained, status-labeled, adversarially tested handoff** to femboy2112/FuckingRH or another RH research repo. Do not quietly convert general observational insights into RH proof claims.
+
+**New conditional theorem:** [Proof-support backaction and Zeno debt](research/2026-10-11/PROOF_BACKACTION_DEBT_ZENO.md) gives an all-finite-protocol source-indistinguishability proof for a growing active target, a strict separation of moving goals and fixed claims, and exact rate-matched/overmatched precision classifications. A finite Zeno schedule does not implement an omega event.
 
 **Latest theorem candidate:** [Source-relative precision transport](research/2026-10-11/SOURCE_RELATIVE_PRECISION_TRANSPORT.md) proves exact loss/recovery criteria for nonunit SUCC steps, claim-specific separation depth and conditional source-preserving proof transport. This is classical finite algebra organized into a typed observational framework, not a physical or RH theorem.
 

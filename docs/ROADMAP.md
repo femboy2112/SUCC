@@ -228,6 +228,18 @@ Evidence: [Variable-unit proto-SUCC lift](../research/2026-10-11/PROTO_SUCC_VARI
 
 See [Source-relative precision transport](../research/2026-10-11/SOURCE_RELATIVE_PRECISION_TRANSPORT.md); ledger O166–O174.
 
+## Proof-support backaction and rate-matched knowledge debt
+
+**Implemented mathematical model:** an unrestricted latent binary source and an actualized source-indexed one-bit observation action that can expand the support required by its own current target. Exact two-term knowledge/debt recurrence and closed form; a universal **all-finite adaptive one-bit protocol** no-positive-certificate theorem on the all-zero path by an indistinguishable latent rival; forward-stable refutations but not forward-stable positive proofs under support growth. Distinct frozen-target, constant-debt, source-bit-one, and destructive-physical-carrier controls prevent sweeping incompleteness claims.
+
+**Implemented independent precision model:** a fixed declared source-relative p-adic claim, knowledge-indexed step valuations and three resource schedules. Matched supply never erases a positive initial deficit, extra supply reaches it at an exact stage, and fixed capacity eventually loses relative to quadratic debt but may temporarily yield earlier decidability. A discrete-convex exact all-n first-decodable decision algorithm avoids arbitrary finite search limits.
+
+**Omega boundary:** each named active obligation eventually leaves the pending set under the prefix policy even though the total pending cardinal grows unbounded; no finite stage clears the set. Summable hypothetical Zeno timestamps do not create a terminal event. An actual omega report needs a separately lawful rule.
+
+**Next:** construct an indexed proof-support category/fibration with source-law certificates and operationally executable measurements; determine when forward transport is stable under composing noncommuting interventions. Prove exactly which conditions allow source-state correction or additional shared evidence to restore terminal proof, and compare to classical dynamic epistemic logic and identification in the limit.
+
+See research/2026-10-11/PROOF_BACKACTION_DEBT_ZENO.md and ledger O175-O184. Physics, cognition and RH remain independently UNVERIFIED.
+
 ## Completion criteria
 
 Every stage needs: a precise theorem/model statement; source and assumptions; independently checkable proof or certified numeric bounds; adversarial controls; executable regression tests; and a ledger entry that distinguishes demonstrated behavior from general claims. “Our finite probes were all positive” is not a global sign theorem.

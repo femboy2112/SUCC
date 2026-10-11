@@ -26,6 +26,7 @@
 | SUCC modular clocks and Mahler interpolation | Odd-prime unit-clock period equals SUCC prime jet gap, p-adic Newton/Mahler finite difference reconstruction, Kummer Euler-corrected special-value congruences and torsion branch discontinuity | clock_mahler_interpolation |
 | Variable-unit proto-SUCC and higher lift | One formal D-unit arrow, specialization D→d and d=1, p-local invertible unit frame conjugacy vs nonunit proper subclock, d(1−p) normalized affine discrepancy and Pascal finite jet recursion | proto_succ_variable_unit |
 | Source-relative precision/proof transport | Genuine p-local modular quotient maps, exact v_p(d) digit budget, finite compatible-source claim factorization, independent source-transition truth and observational adequacy gates | precision_transport |
+| Changing proof-support carrier and debt dynamics | Hidden source tape, observation records, changing active proof domain, asymmetric truth/refutation transport, source-relative debt recurrences, p-adic precision supply and finite/omega distinction | proof_backaction_debt |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -228,3 +229,14 @@ A nonzero primitive SUCC step d at prime p has p-adic order v. The full-source a
 A claim table t on compatible source class X transports exactly when it is constant on each observation fiber. The minimum nonconstant-claim resolution is v+k_*(t,X), where k_* is the largest necessary source separation depth. The constructive decoder or counterexample pair is source- and basis-context-scoped; metadata has no independent authority. A real source-changing event requires the separate commuting semantic law t=t' o h **and** source-after observation factorization. Repairing a probe's digit budget cannot repair violated source truth.
 
 These finite conditional theorems do not construct physically accessible resolution, an adelic/global functor, external provenance signatures or full RH Weil positivity. See [proof dossier](../research/2026-10-11/SOURCE_RELATIVE_PRECISION_TRANSPORT.md), tests/test_precision_transport.py and ledger O166-O174.
+
+
+## Source-changing proof-support transport and moving frontiers
+
+A source-indexed observation can *activate* a larger current support contract without rewriting previously measured latent source bits. The goal T_A = all first A hidden bits zero is source- and ACTIVE-CONTRACT-relative. For an extension A<=B, T_B implies T_A and NOT T_A implies NOT T_B, while T_A does NOT imply T_B when B>A without a verified additional source law. This is a genuine target/domain change in the model; it is NOT the same as falsehood of a fixed mathematical theorem.
+
+Under one-bit-per-action and activation births alpha*K, pending support obeys D_n=D0-n+alpha*(n*K0+n*(n+1)/2). Along an all-zero source, any finite adaptive transcript is shared by a latent rival whose unobserved currently active bit is 1, so no sound finite POSITIVE certificate exists in this specified protocol. A read 1 can finitely refute. Frozen support closes and source-law/batch-probe repairs can change the verdict.
+
+A separately modeled fixed claim on p-adic source clock has precision shortfall delta=v_p(d)+k_star-q. Knowledge-indexed valuation growth and matched resource growth hold delta constant; surplus supply catches up; fixed supply leads to eventual quadratic debt but can have an early decodable checkpoint. Materialized clocks are legal only within representative-independent output precision.
+
+An ideal pointwise omega union might clear every fixed obligation while |pending_n| tends to infinity. Neither the omega limit nor accelerating hypothetical timestamps constitute a finite mathematical proof or executable physical supertask. See research/2026-10-11/PROOF_BACKACTION_DEBT_ZENO.md and ledger O175-O184.

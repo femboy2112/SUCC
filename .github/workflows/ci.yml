@@ -421,6 +421,31 @@ jobs:
           assert x["finite_source_table_authenticates_physical_truth"] is False
           assert x["RH_Gamma_or_Weil_theorem_claimed"] is False
           PY
+      - name: Source-changing proof-support debt and exact Zeno obstruction
+        run: |
+          python scripts/proof_backaction_debt_probe.py > "$RUNNER_TEMP/proof-backaction-debt.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"proof-backaction-debt.json").read_text())
+          assert x["status"]=="SOURCE_BACKACTION_PROOF_DEBT_AND_ZENO_EXACT"
+          assert x["proportional_debt_first_nine_stages"]==[1,1,2,4,7,11,16,22,29]
+          assert x["all_zero_proportional_source_never_finitely_certified_under_protocol"] is True
+          assert x["all_zero_frozen_support_certified_after_three_reads"] is True
+          assert x["single_one_refuted_after_one_read"] is True
+          assert x["proof_target_mutated_by_support_growth"] is True
+          assert x["old_true_forward_transport_universal"] is False
+          assert x["old_refutation_forward_transport_universal"] is True
+          assert x["rate_matched_precision_shortfall_stage_0"]==1
+          assert x["rate_matched_precision_shortfall_stage_4"]==1
+          assert x["rate_matched_precision_first_decodable_stage"] is None
+          assert x["overtaking_precision_first_decodable_stage"]==1
+          assert x["early_transient_can_decide_despite_later_debt"] is True
+          assert x["omega_probe_event_executed"] is False
+          assert x["destructive_single_carrier_original_parity_impossible"] is True
+          assert x["independent_carrier_restores_original_parity"] is True
+          assert x["physical_information_time_or_RH_theorem_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -454,5 +479,6 @@ jobs:
             ${{ runner.temp }}/clock-mahler.json
             ${{ runner.temp }}/proto-succ-d.json
             ${{ runner.temp }}/source-precision-transport.json
+            ${{ runner.temp }}/proof-backaction-debt.json
           if-no-files-found: warn
           retention-days: 14
