@@ -291,6 +291,12 @@ jobs:
           assert j["global_zeta_minus_one_value"]=="-1/12"
           assert j["global_transport_identity"]=="zeta(-1)=-zeta(2)/(2*pi^2)"
           assert j["completed_zeta_symmetric_values"]=="Lambda(-1)=Lambda(2)=pi/6"
+          assert j["bost_connes_classical_diagonal_hamiltonian"]=="H|n> = log(n)|n>"
+          assert j["bost_connes_partition_function_for_beta_gt_one_is_zeta"] is True
+          assert j["bost_connes_positive_beta_two_finite_trace_n_four"]=="205/144"
+          assert j["bost_connes_beta_minus_one_finite_trace_n_four"]=="10"
+          assert j["bost_connes_analytic_zeta_minus_one_is_not_ordinary_trace"] is True
+          assert j["bost_connes_operator_algebra_or_KMS_state_constructed_here"] is False
           assert j["positive_side_prime_product_converges"] is True
           assert j["finite_positive_prime_cutoffs_with_rigorous_tail_bound"][-1]["cutoff"]==47
           assert j["abel_eta_negative_one"]=="1/4"
