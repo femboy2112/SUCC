@@ -27,6 +27,10 @@ def main():
     assert x["overtaking_precision_first_decodable_stage"]==1
     assert x["fixed_capacity_eventually_outrun"] is True
     assert x["early_transient_can_decide_despite_later_debt"] is True
+    assert x["transient_earlier_proof_remains_in_joint_history"] is True
+    assert x["transient_current_channel_loses_decodability"] is False
+    assert x["matched_joint_history_cannot_resolve_original_gap"] is False
+    assert x["matched_joint_history_digit_depth"] == 1
     assert x["independent_precision_transport_oracle_matched"]==[False]*5
     assert x["zeno_t_four"]=="15/16"
     assert x["zeno_t_eight"]=="255/256"

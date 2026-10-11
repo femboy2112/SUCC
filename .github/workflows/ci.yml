@@ -441,6 +441,10 @@ jobs:
           assert x["rate_matched_precision_first_decodable_stage"] is None
           assert x["overtaking_precision_first_decodable_stage"]==1
           assert x["early_transient_can_decide_despite_later_debt"] is True
+          assert x["transient_earlier_proof_remains_in_joint_history"] is True
+          assert x["transient_current_channel_loses_decodability"] is False
+          assert x["matched_joint_history_cannot_resolve_original_gap"] is False
+          assert x["matched_joint_history_digit_depth"]==1
           assert x["omega_probe_event_executed"] is False
           assert x["destructive_single_carrier_original_parity_impossible"] is True
           assert x["independent_carrier_restores_original_parity"] is True

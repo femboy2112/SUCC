@@ -239,4 +239,6 @@ Under one-bit-per-action and activation births alpha*K, pending support obeys D_
 
 A separately modeled fixed claim on p-adic source clock has precision shortfall delta=v_p(d)+k_star-q. Knowledge-indexed valuation growth and matched resource growth hold delta constant; surplus supply catches up; fixed supply leads to eventual quadratic debt but can have an early decodable checkpoint. Materialized clocks are legal only within representative-independent output precision.
 
+For an unchanged original source, proof-support precision must track the FULL RETAINED OBSERVATION HISTORY: joint fibers intersect, so the effective base-p depth is the maximum previously observed depth, not merely the current instrument's depth. A temporarily successful historical certificate persists even when the latest channel degenerates. Combining reports across destructive source changes requires an independent source-transport theorem, not a concatenation of untyped outputs.
+
 An ideal pointwise omega union might clear every fixed obligation while |pending_n| tends to infinity. Neither the omega limit nor accelerating hypothetical timestamps constitute a finite mathematical proof or executable physical supertask. See research/2026-10-11/PROOF_BACKACTION_DEBT_ZENO.md and ledger O175-O184.

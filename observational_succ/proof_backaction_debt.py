@@ -328,6 +328,48 @@ class PrecisionDebtChase:
                 lower = mid+1
         return lower
 
+    def best_history_stage(self, n: int) -> int:
+        """Index of best precision observation through stage n inclusive.
+
+        With an immutable FIXED source and honest retained history, all
+        observations can be combined. Each one's fibers are congruence
+        classes modulo p^e_i; their intersection is the strongest such
+        congruence, with e=max_i e_i. A deteriorating current instrument
+        cannot retract an earlier certified source observation.
+        """
+        _nonnegative(n, "stage")
+        if self.schedule == "matched":
+            return 0  # all stages have the same input digit depth
+        if self.schedule == "surplus":
+            return n
+        if self.alpha == 0:
+            return n if self.fixed_capacity > 0 else 0
+        turning = max(0, (self.fixed_capacity-1)//self.alpha-self.K0)
+        return min(n, turning)
+
+    def history_at(self, n: int) -> dict:
+        """Sound JOINT-transcript factorization for a fixed unchanged source.
+
+        For transformed/source-changing observations this law is UNDEFINED
+        unless independently supplied intervention maps transport every
+        report to one valid original-source basis. It does not follow from
+        a collection of stage-wise decoders with inconsistent source IDs.
+        """
+        best = self.best_history_stage(n)
+        minimum_shortfall = self.at(best)["shortfall"]
+        effective_depth = min(self.r, max(0, self.k-minimum_shortfall))
+        current = self.at(n)
+        return {
+            "stage": n,
+            "best_retained_stage": best,
+            "joint_source_digit_depth": effective_depth,
+            "minimum_history_shortfall": minimum_shortfall,
+            "joint_claim_decodable": minimum_shortfall <= 0,
+            "current_claim_decodable": current["claim_channel_decodable"],
+            "source_payload_changes_assumed": False,
+            "history_physically_authenticated": False,
+        }
+
     def finite_frame(self, n: int) -> PrecisionFrame:
         """Instantiate prior transport theorem only at safely finite levels."""
         data = self.at(n)
@@ -406,6 +448,11 @@ def proof_backaction_debt_demo() -> dict:
             raise ArithmeticError("Symbolic debt differs from source-fiber theorem")
         oracle.append(symbolic)
 
+    if (not transient.history_at(8)["joint_claim_decodable"]
+            or transient.history_at(8)["current_claim_decodable"]
+            or matched_chase.history_at(8)["joint_claim_decodable"]):
+        raise ArithmeticError("Independent retained-history theorem contradicted")
+
     no_go = local_carrier_no_go()
     if not no_go["proof_support_unreachable_with_one_carrier"]:
         raise ArithmeticError("Original-source destructive probe witness lost")
@@ -431,6 +478,10 @@ def proof_backaction_debt_demo() -> dict:
         "overtaking_precision_first_decodable_stage": super_chase.exact_first_decodable_stage(),
         "fixed_capacity_eventually_outrun": fixed_chase.at(8)["shortfall"] > fixed_chase.at(2)["shortfall"],
         "early_transient_can_decide_despite_later_debt": transient.exact_first_decodable_stage()==1 and not transient.at(8)["claim_channel_decodable"],
+        "transient_earlier_proof_remains_in_joint_history": transient.history_at(8)["joint_claim_decodable"],
+        "transient_current_channel_loses_decodability": transient.history_at(8)["current_claim_decodable"],
+        "matched_joint_history_cannot_resolve_original_gap": matched_chase.history_at(8)["joint_claim_decodable"],
+        "matched_joint_history_digit_depth": matched_chase.history_at(8)["joint_source_digit_depth"],
         "independent_precision_transport_oracle_matched": oracle,
         "zeno_t_four": str(zeno_clock(4)),
         "zeno_t_eight": str(zeno_clock(8)),

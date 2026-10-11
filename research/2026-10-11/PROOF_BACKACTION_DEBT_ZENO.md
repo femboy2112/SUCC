@@ -84,6 +84,30 @@ There is an exact ALL-N algorithm for the earliest successful stage, or a certif
 
 The independent source-relative precision oracle in observational_succ/precision_transport.py is used on actual finite claim tables and p-power clocks as a calibration. Merely matching a fabricated numeric deficit without a source truth table cannot establish a real mathematical proof.
 
+### 4a. Histories matter: no magical forgetting when a later instrument degrades
+
+**Necessary correction:** A target may cease to be decodable from the **CURRENT** observation channel while remaining perfectly provable from **PREVIOUSLY RETAINED** source evidence. The relevant object for "no matter how many probes" is the *joint observation transcript*, not just the latest output.
+
+Under the fixed-source, unchanged-target hypotheses of §4, the stage-i multiplication channel has fibers x congruent to y modulo p^(e_i), where e_i=min(r,max(0,q_i−v_i)). All reports refer to the same original x and share honest context. The complete transcript through n is the tuple (F_0(x),...,F_n(x)); its fibers are the INTERSECTION of those congruence classes. Since these congruences are totally ordered, their intersection is exactly congruence modulo
+
+\[
+E_n=\max_{0\le i\le n}e_i.
+\]
+
+Thus the *historical* claim can be decoded if and only if
+
+\[
+\boxed{E_n\ge k.}\tag{B5}
+\]
+
+**Proof:** Equality of all outputs holds precisely if p^(e_i) divides x−y for every i, hence iff p^(max_i e_i) divides x−y. Apply PR #19's maximal conflicting source-pair depth k to this joint partition. No stage count alone establishes a proof; the union of reports must be source-coherent.
+
+- **Matched gains:** q_i−v_i=q_0−v_0 is constant; the entire n-stage transcript has the SAME partition as the first reading. An initial positive deficit cannot be repaired by aggregating arbitrarily many such observations.
+- **Temporary success followed by degraded current instruments:** a successful stage i gives E_n>=k for every n>=i, even if current e_n later falls. An earlier lawful source certificate cannot be retracted merely because the new device is weaker. In the hostile c=3 example, stage 1 succeeds and stage 8 individually fails, but the accumulated history STILL certifies the target.
+- **Actual source interventions:** Equation B5 is **UNDEFINED** unless every report has been transported to a common source/claim basis through independently justified intervention maps. The destructive parity example is a calibrated refusal to combine outcomes from different carrier epochs as though they were original-source measurements.
+
+The code computes the best retained stage for all finite n using the exact discrete-convex turning point rather than sampling arbitrary horizons. Independent test code groups source residues by the complete sequence of outputs and checks B5 for both matched and transient regimes.
+
 ## 5. Pointwise omega completion versus diverging debt
 
 Under the prefix-reading policy every fixed bit index j is eventually read, by stage n=j+1. Yet D_n diverges. Set P_n={n,...,A_n-1}; each fixed address eventually stops belonging to P_n, so the **pointwise set limit** is empty even though
@@ -103,7 +127,7 @@ The distinction between identifying a source after finite data and obtaining a l
 
 Information-changing and fact-changing actions are studied in **dynamic epistemic logic**, including van Benthem, van Eijck and Kooi, *Logics of communication and change* (2006), DOI 10.1016/j.ic.2006.04.006. Our finite support-contract dynamics is NOT a new general dynamic epistemic completeness theorem.
 
-All results B1-B4 and the all-finite-protocol indistinguishable-source argument are CLASSICAL/PROVED LOCAL in the declared models. Finite code witnesses are TESTED MODEL. Actual physical growth coefficients, claims about cognition, an empirical thermodynamic resistance law, physical Zeno execution, an adelic/Archimedean transport mechanism, completed Weil positivity and RH remain UNVERIFIED.
+All results B1-B5 and the all-finite-protocol indistinguishable-source argument are CLASSICAL/PROVED LOCAL in the declared models. Finite code witnesses are TESTED MODEL. Actual physical growth coefficients, claims about cognition, an empirical thermodynamic resistance law, physical Zeno execution, an adelic/Archimedean transport mechanism, completed Weil positivity and RH remain UNVERIFIED.
 
 ## 7. Reproduction and next discriminator
 

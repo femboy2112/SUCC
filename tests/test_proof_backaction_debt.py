@@ -262,6 +262,71 @@ class PrecisionDebtDynamicsTests(unittest.TestCase):
             self.assertEqual(certify_transport(source,f).valid,
                              faster.at(n)["claim_channel_decodable"])
 
+    def test_combined_retained_history_cannot_be_worse_than_old_certificate(self):
+        transient=PrecisionDebtChase(
+            5,2,2,0,1,0,1,"fixed",fixed_capacity=3)
+        self.assertEqual(transient.exact_first_decodable_stage(),1)
+        self.assertFalse(transient.at(8)["claim_channel_decodable"])
+        self.assertTrue(transient.history_at(8)["joint_claim_decodable"])
+        self.assertFalse(transient.history_at(8)["current_claim_decodable"])
+        self.assertEqual(transient.history_at(8)["best_retained_stage"],1)
+        self.assertEqual(transient.history_at(8)["joint_source_digit_depth"],2)
+        matched=PrecisionDebtChase(5,2,2,0,1,0,1,"matched")
+        for n in range(25):
+            self.assertFalse(matched.history_at(n)["joint_claim_decodable"])
+            self.assertEqual(matched.history_at(n)["joint_source_digit_depth"],1)
+            self.assertEqual(matched.history_at(n)["best_retained_stage"],0)
+
+    def test_joint_observation_fibers_against_independent_congruence_oracle(self):
+        # A family of honest fixed-source observations determines precisely
+        # the intersection of congruence kernels. At a stage, that is the
+        # finest input digit depth of ANY measurement retained thus far.
+        for mode,cap,extra in (
+            ("fixed",3,0),("fixed",1,0),("matched",0,0),
+            ("surplus",0,1)):
+            chase=PrecisionDebtChase(
+                5,2,2,0,1,0,1,mode,
+                fixed_capacity=cap,surplus=extra)
+            messages={x:[] for x in range(25)}
+            for n in range(4):
+                frame=chase.finite_frame(n)
+                for x in range(25):
+                    messages[x].append(frame.observe(x))
+                history=chase.history_at(n)
+                depth=history["joint_source_digit_depth"]
+                group={}
+                for x in range(25):
+                    key=tuple(messages[x])
+                    group.setdefault(key,set()).add(x)
+                self.assertEqual(len(group),5**depth)
+                for xs in group.values():
+                    self.assertEqual(len(xs),5**(2-depth))
+                for x in range(25):
+                    for y in range(25):
+                        self.assertEqual(messages[x]==messages[y],
+                                         (x-y)%(5**depth)==0)
+                # High-digit target on all 25 sources requires 2 digits.
+                self.assertEqual(history["joint_claim_decodable"],depth>=2)
+                self.assertFalse(history["source_payload_changes_assumed"])
+                self.assertFalse(history["history_physically_authenticated"])
+
+    def test_historical_first_resolution_complete_for_bounded_schedules(self):
+        for alpha,capacity,k0 in product(range(4),range(7),range(3)):
+            chase=PrecisionDebtChase(
+                3,3,2,k0,alpha,0,1,"fixed",
+                fixed_capacity=capacity)
+            for n in range(20):
+                history=chase.history_at(n)
+                best=min(range(n+1),key=lambda j:chase.at(j)["shortfall"])
+                minimum=chase.at(best)["shortfall"]
+                self.assertEqual(
+                    history["minimum_history_shortfall"],minimum)
+                self.assertEqual(
+                    history["joint_claim_decodable"],minimum<=0)
+                self.assertEqual(
+                    history["joint_source_digit_depth"],
+                    min(chase.r,max(0,chase.k-minimum)))
+
     def test_wrong_primes_invalid_claim_depth_and_large_materialization_blocked(self):
         for kwargs in (
             dict(p=6,r=2,k=1,K0=0,alpha=1,v0=0,q0=1,schedule="matched"),
@@ -301,6 +366,10 @@ class PhysicalCarrierProvenanceControls(unittest.TestCase):
         self.assertIsNone(receipt["rate_matched_precision_first_decodable_stage"])
         self.assertEqual(receipt["overtaking_precision_first_decodable_stage"],1)
         self.assertTrue(receipt["early_transient_can_decide_despite_later_debt"])
+        self.assertTrue(receipt["transient_earlier_proof_remains_in_joint_history"])
+        self.assertFalse(receipt["transient_current_channel_loses_decodability"])
+        self.assertFalse(receipt["matched_joint_history_cannot_resolve_original_gap"])
+        self.assertEqual(receipt["matched_joint_history_digit_depth"],1)
         self.assertFalse(any(receipt["independent_precision_transport_oracle_matched"]))
         self.assertEqual(receipt["zeno_t_four"],"15/16")
         self.assertEqual(receipt["zeno_t_eight"],"255/256")

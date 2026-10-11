@@ -220,6 +220,9 @@ Use these labels:
 | O184 | An original-source destructive parity no-go and a growing active-support no-positive-certificate theorem are identical mechanisms and repairs | REFUTED AS IDENTITY | Existing probe_coherence original-bit overwriting model versus new unchanged latent tape with expanded current target; two independently prepared carriers/read-only probes repair parity, frozen/support-source-law controls repair changing target |
 
 
+| O185 | For a FIXED original source and fixed source-relative claim, joint history of p-adic multiplication channels has exact effective digit depth E_n=max_(i<=n) min(r,max(0,q_i−v_i)); claim decoder exists iff E_n>=k. A later weaker instrument cannot invalidate earlier authentic evidence, and source-changing reports cannot be combined without verified transport. | CLASSICAL / PROVED LOCAL / TESTED | Congruence-fiber intersection proof B5, independent 25-source history-partition oracle, matched partition constancy and transient current-versus-historical successful decoder |
+
+
 
 ## Adversarial suite
 
