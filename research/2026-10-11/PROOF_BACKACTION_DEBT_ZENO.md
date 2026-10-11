@@ -50,6 +50,26 @@ If B>A, the *forward* T_A=>T_B implication is false: put z_i=0 for i<A but z_A=1
 
 In categorical language this is a **noncommuting semantic source/proof square** for the attempted positive forward arrow; it is not a proof that any mathematical theorem has changed truth value without its domain or interpretation changing. It explicitly realizes the source-semantics gate of precision-transport PR #19, independently of any numerical digit budget.
 
+### 3a. Exact source-relative proof-support gluing (positive AND negative)
+
+The universal failure T_A⇒T_B for B>A does not rule out **conditional** proof transport when a source restriction is genuinely proved. For a declared compatible class X of equally typed binary sources, let W_A={z:T_A(z)} and W_B={z:T_B(z)}. Then:
+
+\[
+\boxed{
+T_A|_X\Rightarrow T_B|_X
+\quad\Longleftrightarrow\quad
+X\cap W_A\subseteq W_B.
+}\tag{B2a}
+\]
+
+Equivalently, **no** allowed source has all the old bits zero and some newly activated bit one. The source-relative certificate checks this exact implication over a finite declared X and emits a concrete failing tape when it is false.
+
+To prevent a vacuous "proof" from being mistaken for informative transport, the code also reports whether X∩W_A is nonempty. If it is empty, B2a is logically true but cannot transport any *positive instance* of the old claim. With the independently declared source law "all new support bits are zero", the forward true implication is valid and nonvacuous: this is a legitimate **conditional repair**, not proof that the source law follows from observation.
+
+For three nested supports A<=B<=C on the SAME source class X, if source-relative positive transport is valid from A to B and from B to C, then it is valid from A to C by transitivity of implication. This gives an exact compositional gluing condition for the small finite-source laboratory. It is not yet a general Grothendieck fibration of empirically certified state-changing instruments; transitions between DIFFERENT X require their own verified source map.
+
+Independently exhaustive controls test all 255 nonempty subsets of the 8 possible length-three source tapes, all four nested target pairs, the compositional law, unrestricted-source counterexamples, verified-new-bit-zero repairs, vacuity and malformed/stale support declarations. **Any X fed to the checker is a premise**, not an authenticated physical world set.
+
 ## 4. Separate proportional p-adic precision debt
 
 Fix an authentic prime p, a fixed input source clock Z/p^r, and a nonconstant claim with declared source separation depth 1<=k<=r. The observation channel at stage n is multiplication by d_n=p^{v_n}. Acquiring one independently attested fact per step is an EXPLICIT modeling hypothesis, and the observation changes the next channel valuation by

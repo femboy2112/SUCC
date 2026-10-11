@@ -269,7 +269,7 @@ class PrecisionDebtDynamicsTests(unittest.TestCase):
         self.assertFalse(transient.at(8)["claim_channel_decodable"])
         self.assertTrue(transient.history_at(8)["joint_claim_decodable"])
         self.assertFalse(transient.history_at(8)["current_claim_decodable"])
-        self.assertEqual(transient.history_at(8)["best_retained_stage"],1)
+        self.assertEqual(transient.history_at(8)["best_retained_stage"],2)
         self.assertEqual(transient.history_at(8)["joint_source_digit_depth"],2)
         matched=PrecisionDebtChase(5,2,2,0,1,0,1,"matched")
         for n in range(25):

@@ -35,6 +35,9 @@ def main():
     assert x["zeno_t_four"]=="15/16"
     assert x["zeno_t_eight"]=="255/256"
     assert x["omega_probe_event_executed"] is False
+    assert x["unrestricted_positive_support_gluing"] is False
+    assert x["source_restricted_positive_support_gluing"] is True
+    assert x["vacuous_source_law_is_not_useful_positive_proof"] is False
     assert x["destructive_single_carrier_original_parity_impossible"] is True
     assert x["independent_carrier_restores_original_parity"] is True
     assert x["physical_information_time_or_RH_theorem_claimed"] is False

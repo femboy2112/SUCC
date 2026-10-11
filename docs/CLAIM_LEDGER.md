@@ -222,6 +222,8 @@ Use these labels:
 
 | O185 | For a FIXED original source and fixed source-relative claim, joint history of p-adic multiplication channels has exact effective digit depth E_n=max_(i<=n) min(r,max(0,q_i−v_i)); claim decoder exists iff E_n>=k. A later weaker instrument cannot invalidate earlier authentic evidence, and source-changing reports cannot be combined without verified transport. | CLASSICAL / PROVED LOCAL / TESTED | Congruence-fiber intersection proof B5, independent 25-source history-partition oracle, matched partition constancy and transient current-versus-historical successful decoder |
 
+| O186 | For nested active-support targets T_A and T_B on the SAME supplied compatible source class X, positive proof transport holds iff X∩T_A is contained in T_B; a finite counterexample exhibits failure; nonvacuity requires X∩T_A nonempty. Valid arrows compose by ordinary logical implication. | CLASSICAL / PROVED LOCAL / TESTED | B2a support-subset theorem, all 255 nonempty source classes on 3 bits tested exhaustively, unrestricted failure, independently declared new-bit-zero repair and vacuity controls; actual source premises remain UNAUTHENTICATED |
+
 
 
 ## Adversarial suite

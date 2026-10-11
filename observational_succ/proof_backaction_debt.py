@@ -234,6 +234,69 @@ def support_transport_law(before_active: int, after_active: int) -> dict:
 
 
 @dataclass(frozen=True)
+class SupportDescentCertificate:
+    """Finite SOURCE-RELATIVE positive-proof gluing verdict.
+
+    The class of allowed latent sources is DECLARED and must be separately
+    justified. A correct algorithm for checking a supplied class does not
+    certify that it contains the true carrier/source.
+    """
+    source_id: str
+    from_active: int
+    to_active: int
+    eligible_old_true: int
+    counterexample: tuple[int, ...] | None
+
+    @property
+    def valid_forward_positive(self) -> bool:
+        return self.counterexample is None
+
+    @property
+    def vacuous(self) -> bool:
+        return self.eligible_old_true == 0
+
+    @property
+    def useful_positive_transport(self) -> bool:
+        return self.valid_forward_positive and not self.vacuous
+
+
+def certify_support_descent(source_class: tuple[tuple[int,...],...],
+                            from_active: int, to_active: int, *,
+                            source_id: str) -> SupportDescentCertificate:
+    """Exact relative gluing iff X∩T_from is a subset of T_to.
+
+    The answer is a finite check for a supplied X of equally sized bit
+    tapes. This must not be upgraded to a physically source-certified law.
+    When X∩T_from is empty the implication is merely vacuous.
+    """
+    if (type(source_class) is not tuple or not source_class or
+            len(source_class)>4096 or type(source_id) is not str or
+            not source_id):
+        raise BackactionError("Require a nonempty finite declared source class")
+    law=support_transport_law(from_active,to_active)
+    length=None
+    eligible=0
+    witness=None
+    for bits in source_class:
+        if (type(bits) is not tuple or len(bits)<to_active or
+                any(type(b) is not int or b not in (0,1) for b in bits)):
+            raise BackactionError("Every candidate must have enough exact source bits")
+        if length is None:
+            length=len(bits)
+        if len(bits)!=length:
+            raise BackactionError("All source candidates must share one typed carrier")
+        if all(b==0 for b in bits[:from_active]):
+            eligible+=1
+            if any(b!=0 for b in bits[:to_active]) and witness is None:
+                witness=bits
+    if (law["forward_true_valid_for_all_sources"] and witness is not None):
+        raise ArithmeticError("Equal support could not change target truth")
+    return SupportDescentCertificate(
+        source_id=source_id, from_active=from_active,to_active=to_active,
+        eligible_old_true=eligible,counterexample=witness)
+
+
+@dataclass(frozen=True)
 class PrecisionDebtChase:
     """A separate, conditional resource/clock transport experiment.
 
@@ -453,6 +516,20 @@ def proof_backaction_debt_demo() -> dict:
             or matched_chase.history_at(8)["joint_claim_decodable"]):
         raise ArithmeticError("Independent retained-history theorem contradicted")
 
+    unrestricted=tuple((a,b) for a in (0,1) for b in (0,1))
+    restricted=tuple(bits for bits in unrestricted if bits[1]==0)
+    vacuous=tuple(bits for bits in unrestricted if bits[0]==1)
+    unrestricted_glue=certify_support_descent(
+        unrestricted,1,2,source_id="all-two-bit-sources")
+    restricted_glue=certify_support_descent(
+        restricted,1,2,source_id="verified-second-bit-zero-hypothesis")
+    vacuous_glue=certify_support_descent(
+        vacuous,1,2,source_id="no-old-positive-sources")
+    if (unrestricted_glue.valid_forward_positive or
+            not restricted_glue.useful_positive_transport or
+            vacuous_glue.useful_positive_transport):
+        raise ArithmeticError("Source-relative support descent model failed")
+
     no_go = local_carrier_no_go()
     if not no_go["proof_support_unreachable_with_one_carrier"]:
         raise ArithmeticError("Original-source destructive probe witness lost")
@@ -486,6 +563,9 @@ def proof_backaction_debt_demo() -> dict:
         "zeno_t_four": str(zeno_clock(4)),
         "zeno_t_eight": str(zeno_clock(8)),
         "omega_probe_event_executed": False,
+        "unrestricted_positive_support_gluing": unrestricted_glue.valid_forward_positive,
+        "source_restricted_positive_support_gluing": restricted_glue.useful_positive_transport,
+        "vacuous_source_law_is_not_useful_positive_proof": vacuous_glue.useful_positive_transport,
         "destructive_single_carrier_original_parity_impossible": True,
         "independent_carrier_restores_original_parity": True,
         "physical_information_time_or_RH_theorem_claimed": False,
