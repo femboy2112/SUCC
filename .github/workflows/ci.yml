@@ -271,6 +271,35 @@ jobs:
           assert j["real_world_source_measurement_authenticated"] is False
           assert j["RH_claimed"] is False
           PY
+      - name: Zeta minus-one authentic Euler-to-Archimedean transport
+        run: |
+          python scripts/zeta_minus_one_transport_probe.py > "$RUNNER_TEMP/zeta-minus-one-transport.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"zeta-minus-one-transport.json").read_text())
+          assert j["status"]=="ZETA_MINUS_ONE_GLOBAL_EULER_ARCHIMEDEAN_TRANSPORT"
+          assert j["local_prime_minus_one_factor"]=="-1/(p-1)"
+          assert j["prime_jet_first_return_gap"]=="p-1"
+          assert j["local_factor_partial_products_tend_to_zero"] is True
+          assert j["global_zeta_minus_one_value"]=="-1/12"
+          assert j["global_transport_identity"]=="zeta(-1)=-zeta(2)/(2*pi^2)"
+          assert j["completed_zeta_symmetric_values"]=="Lambda(-1)=Lambda(2)=pi/6"
+          assert j["positive_side_prime_product_converges"] is True
+          assert j["finite_positive_prime_cutoffs_with_rigorous_tail_bound"][-1]["cutoff"]==47
+          assert j["abel_eta_negative_one"]=="1/4"
+          assert j["eta_to_zeta_factor_at_minus_one"]=="-3"
+          assert j["abel_eta_derivation_matches_zeta_negative_one"] is True
+          assert j["negative_odd_s_minus_three"]=="1/120"
+          assert j["prime_source_mutation_controls"]["two_deletion_analytic_value"]=="1/12"
+          assert j["prime_source_mutation_controls"]["two_deletion_bad_reused_zeta_reflection"]=="-1/16"
+          assert j["prime_source_mutation_controls"]["fake_six_is_not_a_prime_euler_factor"] is True
+          assert j["local_continuation_and_global_product_commute"] is False
+          assert j["analytic_continuation_and_functional_equation_are_imported_theorems"] is True
+          assert j["source_specific_euler_gamma_completed_weil_RH_bridge_proved"] is False
+          assert j["nontrivial_zeta_zeros_used_as_inputs"] is False
+          assert j["RH_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -299,5 +328,6 @@ jobs:
             ${{ runner.temp }}/probe-coherence.json
             ${{ runner.temp }}/basis-boundary.json
             ${{ runner.temp }}/succ-derivatives.json
+            ${{ runner.temp }}/zeta-minus-one-transport.json
           if-no-files-found: warn
           retention-days: 14
