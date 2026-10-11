@@ -360,3 +360,55 @@ def knowledge_ladder_demo():
         "infinite_ladder_executed": False,
         "RH_claimed": False,
     }
+
+
+def complementary_observers_demo():
+    """Distributed XOR target: individually unknown, jointly exact.
+
+    Alice can read only the left bit; Bob can read only the right bit.
+    No observer ever magically acquires the other's physical instrument.
+    The truth is used only by each agent's local probe simulator.
+    """
+    sources = ("00", "01", "10", "11")
+    world = FiniteProbeWorld(
+        sources, ("left", "right"),
+        tuple((source[0], source[1]) for source in sources),
+    )
+    basis = SharedKnowledgeBasis(
+        world, ("can:left", "can:right"), (),
+        (("Alice", ("left",)), ("Bob", ("right",))),
+    )
+    target = {source: str(int(source[0]) ^ int(source[1])) for source in sources}
+    a = AgentKnowledge("Alice")
+    b = AgentKnowledge("Bob")
+    actual = "10"
+    a_left = a.local_succ(basis, actual)
+    b_right = b.local_succ(basis, actual)
+    alice_only = a_left.model(basis).compatible
+    bob_only = b_right.model(basis).compatible
+    assert set(target[x] for x in alice_only) == {"0", "1"}
+    assert set(target[x] for x in bob_only) == {"0", "1"}
+    assert len(alice_only) == len(bob_only) == 2
+    # Sequential exchange with exact common prefix.
+    b_after_left = decode_strict_relay(
+        b, encode_strict_relay(a_left, b, basis), basis)
+    b_both = b_after_left.local_succ(basis, actual)
+    a_both = decode_strict_relay(
+        a_left, encode_strict_relay(b_both, a_left, basis), basis)
+    assert a_both.placement(basis) == b_both.placement(basis)
+    assert a_both.model(basis).compatible == (actual,)
+    assert b_both.model(basis).compatible == (actual,)
+    assert a_both.local_frames == b_both.local_frames == 1
+    return {
+        "status": "EXACT_DISTRIBUTED_EPISTEMIC_COMPLEMENTARITY",
+        "alice_only": list(alice_only),
+        "bob_only": list(bob_only),
+        "alice_only_xor_identified": False,
+        "bob_only_xor_identified": False,
+        "shared_source": list(a_both.model(basis).compatible),
+        "shared_xor": target[actual],
+        "physical_probes_each": {"Alice": ["left"], "Bob": ["right"]},
+        "replayed_remote_knowledge_not_local_measurement": True,
+        "full_continuation_equivalence_of_physical_devices_claimed": False,
+        "RH_claimed": False,
+    }
