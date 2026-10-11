@@ -196,6 +196,18 @@ Use these labels:
 
 
 
+| O166 | Multiplication by nonzero integer d defines F_d:Z/p^r -> Z/p^s on **residue classes** iff s<=r+v_p(d); s>r+v changes outputs under source-representative replacement | CLASSICAL / PROVED LOCAL | SOURCE_RELATIVE_PRECISION_TRANSPORT T1; explicit x→x+p^r counterexample; unit/negative/p=2 tests |
+| O167 | For a lawful F_d output, observational fiber equality is x≡y mod p^k with k=max(0,s−v_p(d)), so image size=p^k and fiber size=p^(r−k) | CLASSICAL / PROVED LOCAL / TESTED | Valuation divisibility and first isomorphism theorem; independent complete finite fiber enumeration |
+| O168 | At s=r+v_p(d), nonzero d gives an additive GROUP isomorphism Z/p^r ≅ p^v Z/p^(r+v) with an explicit unit-part inverse on the image; at smaller s full-source injectivity fails | CLASSICAL / PROVED LOCAL / TESTED | SOURCE_RELATIVE_PRECISION_TRANSPORT T3, exact inverse and representative-boundary mutants; subgroup not full enlarged clock |
+| O169 | The source-relative finite claim t:X→Y has a decoder on F_d(X) iff t is constant on all F_d fibers in X; failing pairs are precise no-decoder witnesses **for that observation channel** | CLASSICAL / PROVED LOCAL / TESTED | Finite fiber factorization proof T4, constructive decoder and counterexamples, 2^8 exact Boolean source predicates |
+| O170 | For a nonconstant claim and d≠0, minimum lawful output resolution is v_p(d)+k_*(t,X), with k_* the maximal valuation-depth of a differently labeled source pair; constant claims need only one output digit, d=0 cannot recover nonconstant ones | PROVED LOCAL / CLASSICAL / TESTED | SOURCE_RELATIVE_PRECISION_TRANSPORT T5; independently searched minimum across all precisions and 100 unfitted seeded source subsets |
+| O171 | For nonzero d,e, full faithful lifts compose as F_e∘F_d=F_(ed), and source precision debt is additive v_p(de)=v_p(d)+v_p(e) | CLASSICAL / PROVED LOCAL / TESTED | T6; typed composition, inverse checks and three-step associative controls |
+| O172 | Claim truth survives a declared source-changing operation h only if t=t'∘h; a separate condition makes the post-source claim observable; extra precision repairs observational aliasing but not changed target/source semantics | PROVED LOCAL CONDITIONAL / TESTED | T7a/T7b, positive shifted source, identity underresolution, high-digit-destroying reset mutant |
+| O173 | A correct finite claim lookup plus a matching basis/source ID proves the declared source table is physically true or externally authenticated | REFUTED AS INFERENCE / UNVERIFIED AS INPUT | Context equality is a structural stale-certificate check, not a cryptographic signature, physical experiment or independent premise certification |
+| O174 | Exact modular SUCC precision and source-relative proof transport, by themselves, produce an adelic Archimedean Gamma bridge, a universal physical information-loss law or positive completed Weil distribution | UNVERIFIED | Requires actual physical source/probe maps and arithmetic-compatible local/global analytic transport; no such result supplied |
+
+
+
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
@@ -237,6 +249,8 @@ Additional observer-trap controls: truth-labeled source B versus false preferred
 Additional ideal-frame controls: zero versus a nonzero flat smooth germ with identical all-order origin jets; off-origin evaluation that defeats that darkness; compatible finite analytic polynomial jets with divergent factorial omega series; premature zero-polynomial closure refuted by a delayed fourth derivative.
 
 Some controls are *historical* and live in the archived research documents, while others are directly covered by current tests. A new RH hypothesis must not be described as source-specific unless it has faced the controls applicable to its exact domain.
+
+**New transport theorem controls:** reject output precision exceeding representative independence s>r+v_p(d), d=0 full-source recovery, proof decoders on conflicting source fibers, stale expanded source labels, and source-changed interventions. Independent complete small-group fiber counts, all 2^8 Boolean claim functions on Z/8 and 100 deterministic seeded source-subset holdouts calibrate exact minimum claim-specific resolution and lift associativity. Tests are model/proof checks, not authenticated physical evidence.
 
 ## Outstanding highest-value claims
 

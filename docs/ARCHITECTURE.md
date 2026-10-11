@@ -25,6 +25,7 @@
 | Residue-one p-adic place diagnostics | Local Euler factor 1/(1-p) as convergent Qp series and residue-one unit, compact-idelic norm nonreconstruction of infinity, factorial profinite limits, exact product-formula source comparison and weight-two p-adic zeta interpolation | residue_one_arch |
 | SUCC modular clocks and Mahler interpolation | Odd-prime unit-clock period equals SUCC prime jet gap, p-adic Newton/Mahler finite difference reconstruction, Kummer Euler-corrected special-value congruences and torsion branch discontinuity | clock_mahler_interpolation |
 | Variable-unit proto-SUCC and higher lift | One formal D-unit arrow, specialization D→d and d=1, p-local invertible unit frame conjugacy vs nonunit proper subclock, d(1−p) normalized affine discrepancy and Pascal finite jet recursion | proto_succ_variable_unit |
+| Source-relative precision/proof transport | Genuine p-local modular quotient maps, exact v_p(d) digit budget, finite compatible-source claim factorization, independent source-transition truth and observational adequacy gates | precision_transport |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -218,3 +219,12 @@ The declared global probe universe and an externally supplied actual-source labe
 A source-identification theorem from compatible-menu union is conditional on all unioned probes being executable. Absence of an effective convergence modulus is separate from structural infinity-stage uniqueness, and finite model classes cannot be genuinely omega-only identifiable under monotone exact observations.
 
 See [model-dependent observer traps](../research/2026-10-10/MODEL_DEPENDENT_OBSERVER_TRAPS.md), [ideal frame completion](../research/2026-10-10/IDEAL_FRAME_COMPLETION_TRICHOTOMY.md), and claim ledger O39–O54. No source-to-Weil positivity or proof-theoretic completeness identification follows.
+
+
+## Typed precision transport: what a valid observer arrow must carry
+
+A nonzero primitive SUCC step d at prime p has p-adic order v. The full-source arrow from Z/p^r to Z/p^(r+v) lands in the **image subgroup** p^v Z/p^(r+v), not the full receiving carrier; the unit factor is invertible on its typed image. At insufficient output precision s the observation quotients the source through its first k=max(0,s-v) p-adic digits; at overlarge precision s>r+v no map from the declared quotient exists without supplying extra source information.
+
+A claim table t on compatible source class X transports exactly when it is constant on each observation fiber. The minimum nonconstant-claim resolution is v+k_*(t,X), where k_* is the largest necessary source separation depth. The constructive decoder or counterexample pair is source- and basis-context-scoped; metadata has no independent authority. A real source-changing event requires the separate commuting semantic law t=t' o h **and** source-after observation factorization. Repairing a probe's digit budget cannot repair violated source truth.
+
+These finite conditional theorems do not construct physically accessible resolution, an adelic/global functor, external provenance signatures or full RH Weil positivity. See [proof dossier](../research/2026-10-11/SOURCE_RELATIVE_PRECISION_TRANSPORT.md), tests/test_precision_transport.py and ledger O166-O174.

@@ -396,6 +396,31 @@ jobs:
           assert x["prime_jet_clock_period_identity_requires_declared_local_unit"] is True
           assert x["new_RH_Gamma_or_Kubota_Leopoldt_theorem_claimed"] is False
           PY
+      - name: Source-relative SUCC precision and proof transport
+        run: |
+          python scripts/precision_transport_probe.py > "$RUNNER_TEMP/source-precision-transport.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"source-precision-transport.json").read_text())
+          assert x["status"]=="SOURCE_RELATIVE_PRECISION_TRANSPORT_EXACT"
+          assert x["precision_debt_digits"]==1
+          assert x["source_repair_output_precision"]==3
+          assert x["whole_clock_recovered_after_lift"] is True
+          assert x["low_digit_claim_minimum_precision"]==2
+          assert x["low_digit_claim_at_coarse_precision"] is True
+          assert x["high_digit_claim_minimum_precision"]==3
+          assert x["high_digit_claim_at_coarse_precision"] is False
+          assert x["high_digit_claim_after_repair"] is True
+          assert x["two_nonzero_lifts_compose"] is True
+          assert x["composition_debt_additive"] is True
+          assert x["source_preserving_intervention"] is True
+          assert x["destructive_intervention_status"]=="source-truth-changed"
+          assert x["extra_precision_repairs_destructive_source_change"] is False
+          assert x["zero_step_has_finite_full_repair"] is False
+          assert x["finite_source_table_authenticates_physical_truth"] is False
+          assert x["RH_Gamma_or_Weil_theorem_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -428,5 +453,6 @@ jobs:
             ${{ runner.temp }}/residue-arch.json
             ${{ runner.temp }}/clock-mahler.json
             ${{ runner.temp }}/proto-succ-d.json
+            ${{ runner.temp }}/source-precision-transport.json
           if-no-files-found: warn
           retention-days: 14

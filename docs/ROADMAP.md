@@ -218,6 +218,16 @@ Evidence: [Variable-unit proto-SUCC lift](../research/2026-10-11/PROTO_SUCC_VARI
 - Attempt a **noncircular** positive-definite distribution construction identified with the complete Weil functional. It remains RH-equivalent; no claim is made that the earlier stages force it.
 - When a genuine lemma survives independent controls, prepare a versioned handoff in handoffs/rh/ and link its source commit and proof status in femboy2112/FuckingRH.
 
+## Source-relative precision and proof transport (implemented finite core)
+
+**Completed mathematical core:** exact input/output quotient typing for multiplication by nonzero d on p-power additive clocks; full-source precision debt v_p(d); explicit image-subgroup inverse; kernel/image/fiber cardinalities; source-relative finite claim decoder existence **iff** the claim is constant on observation fibers; exact claim-specific minimum output resolution; additive debt under composed full lifts; and two independent intervention gates (source truth unchanged and target observable post-intervention).
+
+**Demonstrated adversaries:** d=0 has no full-source precision repair; s>r+v_p(d) reads unspecified representative digits; a nonunit output can preserve a low-digit theorem while losing a high-digit one; source expansion invalidates a former certificate; a physical-source-like reset cannot be repaired by higher output resolution merely because the resulting coordinate map is injective. 2^8 exhaustive binary claim tables and seeded independent source-subset trials check the implementation.
+
+**Next substantive theorem:** define a source-state/proof-support category or indexed fibration with **actually verified** intervention/probe certificates. Specify typed composition, budgeted instruments, source-indexed logical semantics, and conditions ensuring future continuation equivalence—not just equal present conclusions. Test counterexamples from destructive measurement and nonflat covariant frames. Afterward seek independently source-derived p-adic measure moments and real/finitely local analytic transport; do not claim Weil positivity without source-specific Γ/completion identification.
+
+See [Source-relative precision transport](../research/2026-10-11/SOURCE_RELATIVE_PRECISION_TRANSPORT.md); ledger O166–O174.
+
 ## Completion criteria
 
 Every stage needs: a precise theorem/model statement; source and assumptions; independently checkable proof or certified numeric bounds; adversarial controls; executable regression tests; and a ledger entry that distinguishes demonstrated behavior from general claims. “Our finite probes were all positive” is not a global sign theorem.
