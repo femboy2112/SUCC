@@ -11,6 +11,7 @@ import unittest
 
 from observational_succ.proof_backaction_debt import (
     BackactionError, SupportCarrier, support_frontier_formula,
+    SupportDescentCertificate, certify_support_descent,
     support_transport_law, PrecisionDebtChase, zeno_clock,
     proof_backaction_debt_demo,
 )
@@ -116,6 +117,63 @@ class SupportBackactionTests(unittest.TestCase):
                 else:
                     self.assertTrue(law["forward_true_valid_for_all_sources"])
                     self.assertIsNone(law["new_support_counterexample_bit"])
+
+    def test_exact_finite_source_relative_support_descent_all_small_classes(self):
+        worlds=tuple(product((0,1),repeat=3))
+        for mask in range(1,1<<len(worlds)):
+            class_x=tuple(world for i,world in enumerate(worlds)
+                          if mask & (1<<i))
+            for old,new in ((1,2),(1,3),(2,3),(2,2)):
+                result=certify_support_descent(
+                    class_x,old,new,source_id=f"class-{mask}")
+                brute=[z for z in class_x if
+                       all(b==0 for b in z[:old]) and
+                       any(b==1 for b in z[:new])]
+                old_true=[z for z in class_x if
+                          all(b==0 for b in z[:old])]
+                self.assertEqual(result.valid_forward_positive,not bool(brute))
+                self.assertEqual(result.eligible_old_true,len(old_true))
+                self.assertEqual(result.vacuous,not bool(old_true))
+                if result.counterexample is not None:
+                    self.assertIn(result.counterexample,brute)
+                self.assertEqual(result.useful_positive_transport,
+                                 not bool(brute) and bool(old_true))
+            # Compositional positive transport: if all X models that satisfy
+            # T1 satisfy T2, and all X T2 models satisfy T3, T1 implies T3.
+            ab=certify_support_descent(class_x,1,2,source_id="X")
+            bc=certify_support_descent(class_x,2,3,source_id="X")
+            ac=certify_support_descent(class_x,1,3,source_id="X")
+            if ab.valid_forward_positive and bc.valid_forward_positive:
+                self.assertTrue(ac.valid_forward_positive)
+
+    def test_positive_gluing_requires_nonvacuous_verified_source_constraint(self):
+        universe=tuple(product((0,1),repeat=2))
+        unrestricted=certify_support_descent(
+            universe,1,2,source_id="all-bits")
+        restricted=certify_support_descent(
+            tuple(z for z in universe if z[1]==0),
+            1,2,source_id="verified-fresh-bit-zero")
+        vacuous=certify_support_descent(
+            tuple(z for z in universe if z[0]==1),
+            1,2,source_id="old-target-impossible")
+        self.assertFalse(unrestricted.valid_forward_positive)
+        self.assertIsNotNone(unrestricted.counterexample)
+        self.assertTrue(restricted.useful_positive_transport)
+        self.assertTrue(restricted.valid_forward_positive)
+        self.assertTrue(vacuous.valid_forward_positive)
+        self.assertTrue(vacuous.vacuous)
+        self.assertFalse(vacuous.useful_positive_transport)
+        self.assertNotEqual(restricted.source_id,unrestricted.source_id)
+
+    def test_support_gluing_rejects_malformed_source_classes(self):
+        for sources in ((),((0,),),((0,1),(0,1,0)),((True,0),),
+                        ((0,2),)):
+            with self.assertRaises(BackactionError):
+                certify_support_descent(sources,1,2,source_id="failed")
+        with self.assertRaises(BackactionError):
+            certify_support_descent(((0,0),),2,1,source_id="reversed")
+        with self.assertRaises(BackactionError):
+            certify_support_descent(((0,0),),1,2,source_id="")
 
     def test_frozen_support_closes_and_matched_support_does_not(self):
         frozen=SupportCarrier((0,0,0,0),active=3,birth_mode="frozen")
@@ -375,6 +433,9 @@ class PhysicalCarrierProvenanceControls(unittest.TestCase):
         self.assertEqual(receipt["zeno_t_eight"],"255/256")
         self.assertFalse(receipt["omega_probe_event_executed"])
         self.assertTrue(receipt["destructive_single_carrier_original_parity_impossible"])
+        self.assertFalse(receipt["unrestricted_positive_support_gluing"])
+        self.assertTrue(receipt["source_restricted_positive_support_gluing"])
+        self.assertFalse(receipt["vacuous_source_law_is_not_useful_positive_proof"])
         self.assertTrue(receipt["independent_carrier_restores_original_parity"])
         self.assertFalse(receipt["physical_information_time_or_RH_theorem_claimed"])
 
