@@ -133,6 +133,33 @@ Originally \(d=1\) is a 5-adic unit and \(S_1\) has period 25. After this step \
 
 It is a model of potential carrier/frame support loss, NOT a proof that physical measurements intrinsically destroy RH proofs.
 
+### 4b. A necessary-and-sufficient theorem for stability of the changing step unit
+
+For a fixed prime p and a linearly evolving step
+\[
+d_n=d_0+n a,\quad n\ge0,\quad d_0,a\in\mathbb Z,
+\]
+all SUCC steps remain **unit changes of frame on the full \(p\)-adic clock**, at EVERY n and EVERY precision \(p^r\), **if and only if**
+\[
+\boxed{p\nmid d_0\quad\text{and}\quad p\mid a.}
+\]
+
+**Proof:** A number in \(\mathbb Z_p\) is a unit iff it is nonzero mod p. When \(p\mid a\), the residue \(d_n\bmod p=d_0\bmod p\) is constant; thus initial unit status persists at all n. Conversely, if \(p\mid d_0\), the starting frame is already invalid. If \(p\nmid d_0\) and \(p\nmid a\), the residue class \(a\bmod p\) is invertible and the congruence \(d_0+na\equiv0\bmod p\) has the unique solution
+\[
+\boxed{n_{\rm first}\equiv-d_0a^{-1}\pmod p,\quad
+1\le n_{\rm first}\le p-1.}
+\]
+At that *finite* step the local unit becomes divisible by p; the claim of a full-clock gauge then fails at **all** levels \(p^r\). The underlying integer successor \(x_{n+1}=x_n+d_n\) remains perfectly well-defined. No physical unobservability is deduced.
+
+This yields an exact classification:
+- \((d_0,a)=(2,5)\), p=5: all d_n≡2 mod5, so every instantaneous S_{d_n} is invertibly conjugate to S_1 modulo every \(5^r\).
+- \((d_0,a)=(1,4)\), p=5: \(n_{\rm first}=1\); the first update changes d from 1 to 5 and invalidates the full-clock conjugacy.
+- \(p\mid d_0\): no unit-gauge interpretation holds even initially.
+
+The implementation verifies the theorem by direct modular classification and brute-source tests for **1,125** combinations of primes p=2,3,5,7,11 and \(d_0,a\in[-7,7]\), including correct first invalid indices, but the universal all-n conclusion follows from the algebraic proof, NOT from finite enumeration.
+
+**Scope restriction:** this iff applies to a first derivative that changes by a CONSTANT higher SUCC a. If a_n itself evolves, the unit-stability condition must be proved against that higher-order trajectory; one cannot automatically reuse the affine criterion.
+
 ## 5. What has been proved, and what is still merely suggested
 
 **CLASSICAL/local proved:** universal formal d path, additive action, exact finite orbit periods; invertible-unit conjugacy; normalized ax+b address defect; Pascal/unipotent higher SUCC generating arbitrary finite polynomial-recursion paths; p-adic integrality of binomial coefficients on integers.
@@ -153,6 +180,7 @@ It is a model of potential carrier/frame support loss, NOT a proof that physical
 - **O161 PROVED LOCAL:** higher-proto-SUCC unipotent Pascal lift gives binomial finite-difference formulas, including integral modular and negative-step inverses, conditional on a fixed top-difference law.
 - **O162 PROVED LOCAL:** higher SUCC changing its own d may cross from full unit clock to nonunit proper subclock (0,1,4)→(1,5,4) mod 25.
 - **O163 PROVED LOCAL:** variable-unit prime jet directed gap is d(p-1)p^k, recovering unit-normalized multiplicative clock period only under valid unit/frame interpretation.
+- **O165 PROVED LOCAL:** for linear step evolution d_n=d_0+na, all n preserve the p-local full-clock unit gauge iff p does not divide d_0 and p divides a; otherwise first loss has explicit modular index n≡−d_0 a^(-1) (mod p).
 - **O164 UNVERIFIED:** the variable-unit proto-SUCC lift by itself proves real physical proof barriers, p-adic measures, an Archimedean zeta completion or RH.
 
 **Auditable hostile controls:** d=0; d divisible by p; changing d across the unit/nonunit boundary; fake composite dilations; loss of symbolic coefficient under specialization; exact finite cycles at p=2,3,5,7; integral binomial coefficients at p=2; negative-index inverse Pascal SUCC; canonical case d=1 and existing ax+b semigroup identities.
