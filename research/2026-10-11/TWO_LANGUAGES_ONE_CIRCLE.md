@@ -216,6 +216,8 @@ The exact finite code proves only the algebraic point-report portion and samples
 | Correct finite point samples uniquely determine loop winding | γ_1 vs γ_5 at quarter times; general LCM construction | REFUTED for unrestricted winding |
 | No finite rational-time samples can ever distinguish k in a bounded winding family | Known |k|≤K, sample t=1/(2K+1) | REFUTED as unconditional inference |
 | Four cardinal samples certify a global trig-polynomial equality | cosθ vs cos5θ; rational point (3/5,4/5) | REFUTED |
+| Angular differentiation cannot be transported between algebra and trig languages | D=-y∂x+x∂y versus ∂θ, signed reflected orientation | REFUTED as unconditional inference; derivations intertwine by exact ring identity |
+| A globally consistent real-valued angle exists on the entire circle | Nonzero 2π period of ω=x dy−y dx | REFUTED (classical global gluing obstruction) |
 | Cross-language point translation by itself transports all future empirical and topological probes | Need path lift/time/regularity, calibrated charts and probe access | UNVERIFIED in general; explicit missing-winding countermodel |
 | This circle bridge proves any RH positivity or algebraic/archimedean coupling | Source-specific completed Weil equality and independent Gamma/probe regularity absent | UNVERIFIED, not claimed |
 
@@ -238,6 +240,7 @@ Proposed ledger:
 - **O90 PROVED LOCAL:** under known bounded harmonic integer winding prior |k|≤K, a tailored exact time sample distinguishes the class.
 - **O91 PROVED LOCAL:** orientation/gauge cannot be chosen from unlabeled circle membership; two valid translators reverse winding sign.
 - **O92 UNVERIFIED:** fully faithful cross-language observation/proof/path/physical translator, general semantic category, RH coupling consequences.
+- **O93 CLASSICAL / PROVED LOCAL / TESTED MODEL:** polynomial tangential derivation and trig angular derivative intertwine (up to orientation sign); ω=x dy−y dx has local angular primitive but no globally real-valued primitive on S¹.
 
 **Next research discriminators:** 
 1. Give A and B the *same raw data and probe menu*, prove translation of the oriented path differential form \(\alpha=x\,dy-y\,dx\) to \(d\theta\) with chart transitions, and preserve the integer winding under valid transport. Include the orientation-flipped negative control.
