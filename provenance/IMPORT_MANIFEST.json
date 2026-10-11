@@ -8,24 +8,8 @@
   "target_branch": "research/observational-succ-foundation-import-2026-10-10",
   "copied_at_utc": "2026-10-11",
   "policy": "Machine-verifiable Git blob provenance. Archival research files are byte-identical; Python files are mechanically namespaced. Claim statuses are maintained independently.",
-  "count": 71,
+  "count": 72,
   "entries": [
-    {
-      "original_path": "actualization/README.md",
-      "original_git_blob_sha": "62b8fa277af71cb8e8e9ba69d01a8d52b733d487",
-      "destination_path": "provenance/origins/fuckingrh/actualization/README.md",
-      "destination_git_blob_sha": "62b8fa277af71cb8e8e9ba69d01a8d52b733d487",
-      "transformation": "verbatim",
-      "size_bytes_original": 29263
-    },
-    {
-      "original_path": "actualization/YONEDA_GUIDE.md",
-      "original_git_blob_sha": "08cc323315b191954e86f5fcbf1820aaf7e7954f",
-      "destination_path": "provenance/origins/fuckingrh/actualization/YONEDA_GUIDE.md",
-      "destination_git_blob_sha": "08cc323315b191954e86f5fcbf1820aaf7e7954f",
-      "transformation": "verbatim",
-      "size_bytes_original": 22783
-    },
     {
       "original_path": "actualization/__init__.py",
       "original_git_blob_sha": "ee326c86212423709a7c7be45d05a94a2ff20055",
@@ -179,6 +163,14 @@
       "size_bytes_original": 5911
     },
     {
+      "original_path": "actualization/README.md",
+      "original_git_blob_sha": "62b8fa277af71cb8e8e9ba69d01a8d52b733d487",
+      "destination_path": "provenance/origins/fuckingrh/actualization/README.md",
+      "destination_git_blob_sha": "62b8fa277af71cb8e8e9ba69d01a8d52b733d487",
+      "transformation": "verbatim",
+      "size_bytes_original": 29263
+    },
+    {
       "original_path": "actualization/resource_probe.py",
       "original_git_blob_sha": "b3cfd2f8e55cac17c9f98cfbcef3181676dfbbfa",
       "destination_path": "observational_succ/resource_probe.py",
@@ -201,6 +193,14 @@
       "destination_git_blob_sha": "495ecf4abb43367ced92ff64096f0ff611be96cc",
       "transformation": "literal textual namespace translation: actualization -> observational_succ",
       "size_bytes_original": 11828
+    },
+    {
+      "original_path": "actualization/YONEDA_GUIDE.md",
+      "original_git_blob_sha": "08cc323315b191954e86f5fcbf1820aaf7e7954f",
+      "destination_path": "provenance/origins/fuckingrh/actualization/YONEDA_GUIDE.md",
+      "destination_git_blob_sha": "08cc323315b191954e86f5fcbf1820aaf7e7954f",
+      "transformation": "verbatim",
+      "size_bytes_original": 22783
     },
     {
       "original_path": "actualization/yoneda.py",
@@ -385,6 +385,14 @@
       "destination_git_blob_sha": "4e2e2e44a0ce1305ff568917ab3981279d68e5a7",
       "transformation": "literal textual namespace translation: actualization -> observational_succ",
       "size_bytes_original": 4242
+    },
+    {
+      "original_path": "scripts/observer_foundations_probe.py",
+      "original_git_blob_sha": "c9637098f04bab462fa1f4f42882fc0af9fdc2b5",
+      "destination_path": "scripts/observer_foundations_probe.py",
+      "destination_git_blob_sha": "fdfbe50052aa2fdced417ab59f9b59f4c9e5a835",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "size_bytes_original": 7374
     },
     {
       "original_path": "scripts/operational_actualization_probe.py",
