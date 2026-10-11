@@ -23,6 +23,7 @@
 | Discrete SUCC integration and frame-aware jets | Shared versioned initial condition, exact finite first difference streams, Newton source-law jets, rational covariant frame derivatives and ordered affine prefix scans | succ_discrete_integration |
 | Euler local/global transport at −1 | Prime Euler factors as rational continuation, prime-jet gap τ_{p,0}=p-1, noncommuting infinite product/analytic continuation, source-specific Γ reflection from convergent s=2 with exact tail and mutation controls | zeta_minus_one_transport |
 | Residue-one p-adic place diagnostics | Local Euler factor 1/(1-p) as convergent Qp series and residue-one unit, compact-idelic norm nonreconstruction of infinity, factorial profinite limits, exact product-formula source comparison and weight-two p-adic zeta interpolation | residue_one_arch |
+| SUCC modular clocks and Mahler interpolation | Odd-prime unit-clock period equals SUCC prime jet gap, p-adic Newton/Mahler finite difference reconstruction, Kummer Euler-corrected special-value congruences and torsion branch discontinuity | clock_mahler_interpolation |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -92,6 +93,16 @@ Finite Hard SUCC exhausts an exact finite rule/probe universe. For an infinite t
 A source- and report-preserving inter-observer completion requires a finite message, common decoding semantics, and trustworthy causal evidence. The exact full-frame message includes source-compatible lawful probe-acquisition replay, while a shorter target-only witness explicitly lacks that provenance. Finite-alphabet exact universal communication of arbitrary real constants is impossible by countability. For finite one-shot zero-error communication with receiver side information, the optimal fixed-length bit budget is derived from the confusability graph chromatic number, not from mere probe count.
 
 See [the formal research memo](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md) and claim ledger O55–O66. The finite implementations do not automatically transport to general neural, quantum, or RH settings.
+
+## SUCC finite differences as the classical Mahler coordinate system
+
+For odd p, the unit clock (Z/p^r Z)^× has period φ(p^r)=(p−1)p^(r−1), exactly the SUCC/FUCC prime jet gap p^r−p^(r−1). This is equality of arithmetic integers describing DIFFERENT clock domains: multiplicative unit residues versus additive addresses along nonunit p-powers. The equality does not itself establish the zeta Gamma factor.
+
+Mahler's theorem extends the exact finite Newton SUCC basis: a continuous f:Z_p→Q_p has unique expansion f(x)=sum_j Delta^j f(0) binom(x,j), with p-adic coefficient convergence. For the integer source f_p(n)=(1−p)^n, jets (−p)^j reconstruct its local Euler factor f_p(−1)=Σp^j=1/(1−p), with EXACT p-adic error valuation j at truncation order j.
+
+For zeta special values, the nontrivial content is Kummer's ARITHMETIC congruence: correct Euler-factor removal makes the nonexceptional even-weight values continuous along compatible multiplicative clock periods. Exact p=5 mod25 control distinguishes correct values 17,17 from uncorrected 2,17. A torsion source (−1)^n is not continuously interpolable on Z3, though it is on Z2, displaying why weight/Teichmüller branches are necessary. Tests are exact finite instantiations, while the universal existence and analytic p-adic measure theorems are classical IMPORTS.
+
+Next layer is a source-aware, uniformly bounded projectively compatible p-adic distribution over unit-clock cylinder sets, whose verified moments reconstruct correct zeta/L data. This is not presently constructed; no new Weil positivity or RH theorem follows. See [Mahler clocks](../research/2026-10-11/MAHLER_SUCC_CLOCK_KUMMER.md), O149–O155.
 
 ## Residue-one local Euler units are not a scalar Archimedean valuation
 
