@@ -80,15 +80,20 @@ class RelativeDeltaTests(unittest.TestCase):
         strict=decode_relative_delta(b,encode_relative_delta(a,b,basis),basis)
         self.assertTrue(certify_finite_continuation(a,strict,basis).equivalent)
 
-    def test_equal_semantic_knowledge_insufficient_when_hardware_differs(self):
+    def test_strong_placement_refuses_inaccessible_hardware_even_when_knowledge_can_transfer(self):
         b=chain(3,bob_feasible=("p0",))
         a=AgentKnowledge("Alice").advance(b,"B",2)
-        r=decode_relative_delta(AgentKnowledge("Bob"),
-                                encode_relative_delta(a,AgentKnowledge("Bob"),b),b)
-        self.assertEqual(a.placement(b),r.placement(b))
-        self.assertNotEqual(operational_position(a,b),
-                            operational_position(r,b))
-        self.assertFalse(certify_finite_continuation(a,r,b).equivalent)
+        receiver=AgentKnowledge("Bob")
+        # The original weak semantic transport is still possible.
+        # Strong relative transport must refuse to call these equal
+        # operational placements because their physical access differs.
+        from observational_succ.knowledge_ladder import decode_strict_relay
+        weak=decode_strict_relay(receiver,encode_strict_relay(a,receiver,b),b)
+        self.assertEqual(a.placement(b),weak.placement(b))
+        self.assertNotEqual(operational_position(a,b),operational_position(weak,b))
+        self.assertFalse(certify_finite_continuation(a,weak,b).equivalent)
+        with self.assertRaises(RelativeDeltaError):
+            encode_relative_delta(a,receiver,b)
 
     def test_path_delta_composes_abstractly_across_rungs(self):
         b=chain(4)
