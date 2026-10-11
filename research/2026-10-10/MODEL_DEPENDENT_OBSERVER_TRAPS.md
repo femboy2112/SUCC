@@ -192,7 +192,7 @@ python -m unittest discover -s tests -p 'test_*.py'
 python scripts/verify_provenance.py
 ~~~
 
-**Ledger targets:** O47–O53. The named exact lemmas are PROVED LOCAL under finite deterministic assumptions, their implementations TESTED MODEL, the postulated human/physical observer dynamics HYPOTHESIS, and quantum/noisy/infinitary/RH extrapolation UNVERIFIED.
+**Ledger targets:** O47–O54. The named exact lemmas are PROVED LOCAL under finite deterministic assumptions, their implementations TESTED MODEL, the postulated human/physical observer dynamics HYPOTHESIS, and quantum/noisy/infinitary/RH extrapolation UNVERIFIED.
 
 ## 8. Existing literature: what is and is not novel
 
