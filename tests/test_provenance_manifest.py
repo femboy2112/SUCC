@@ -13,8 +13,8 @@ class ImportedSourceProvenanceTests(unittest.TestCase):
         self.assertEqual(result["status"], "SOURCE_PROVENANCE_VERIFIED")
         self.assertEqual(result["source_commit"],
                          "ba075348b7bcc66d938b3e0ca96c26e95bba340a")
-        self.assertEqual(result["items"], 71)
-        self.assertEqual(result["mechanical_namespace_migrations"], 54)
+        self.assertEqual(result["items"], 72)
+        self.assertEqual(result["mechanical_namespace_migrations"], 55)
         self.assertEqual(result["byte_identical_research_archives"], 17)
         self.assertFalse(result["establishes_mathematical_truth"])
 
