@@ -312,6 +312,33 @@ jobs:
           assert j["nontrivial_zeta_zeros_used_as_inputs"] is False
           assert j["RH_claimed"] is False
           PY
+      - name: Prime-local p-adic Euler units and Archimedean nonrecovery
+        run: |
+          python scripts/residue_one_arch_probe.py > "$RUNNER_TEMP/residue-arch.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"residue-arch.json").read_text())
+          assert x["status"]=="PRIME_RESIDUE_ONE_ADELIC_LOCAL_GLOBAL_OBSTRUCTION"
+          assert x["euler_geometric_series_converges_p_adically"] is True
+          assert x["all_euler_factors_are_residue_one_units"] is True
+          assert x["same_residue_has_nonunique_local_units"] is True
+          assert x["factorial_one_limit_each_p_adic"]=="1"
+          assert x["factorial_one_limit_real"]=="+infinity"
+          assert x["factorial_one_not_always_prime"] is True
+          assert x["diagonal_minus_one_twelfth_product_formula"]["finite_abs_product"]=="12"
+          assert x["nondiagonal_idelic_example"][2]["idele_norm"]=="1/12"
+          assert x["nondiagonal_idelic_example"][2]["norm_one"] is False
+          assert x["positive_real_scale_determined_by_residue_one_alone"] is False
+          assert x["compact_to_positive_real_continuous_group_hom_trivial"] is True
+          assert x["topological_group_theorem_tested_by_finite_sampling"] is False
+          assert x["weight_two_Kubota_Leopoldt_branch_interpolation"][1]["weight_residue"]==2
+          assert all(i["global_special_value"]=="-1/12" for i in x["weight_two_Kubota_Leopoldt_branch_interpolation"])
+          assert x["interpolation_theorem_imported"] is True
+          assert x["p_adic_zeta_function_constructed"] is False
+          assert x["Tate_arch_completion_constructed"] is False
+          assert x["RH_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -341,5 +368,6 @@ jobs:
             ${{ runner.temp }}/basis-boundary.json
             ${{ runner.temp }}/succ-derivatives.json
             ${{ runner.temp }}/zeta-minus-one-transport.json
+            ${{ runner.temp }}/residue-arch.json
           if-no-files-found: warn
           retention-days: 14
