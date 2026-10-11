@@ -238,6 +238,23 @@ class CircleTranslatorTests(unittest.TestCase):
         with self.assertRaises(CircleTranslationError):
             winding_alias_for_rational_samples(1,(0.5,))
 
+    def test_unbounded_winding_has_omega_only_separation_if_all_rationals_are_probed(self):
+        candidates=list(range(-6,7))
+        count=0
+        for a in candidates:
+            for b in candidates:
+                if a == b:
+                    continue
+                t=distinguishing_rational_time_for_windings(a,b)
+                self.assertNotEqual(periodic_point_signature(a,(t,)),
+                                    periodic_point_signature(b,(t,)))
+                count+=1
+        self.assertEqual(count,156)
+        with self.assertRaises(CircleTranslationError):
+            distinguishing_rational_time_for_windings(1,1)
+        with self.assertRaises(CircleTranslationError):
+            distinguishing_rational_time_for_windings(True,2)
+
     def test_known_finite_winding_prior_allows_a_discriminating_exact_probe(self):
         # Hypothesis class k in [-K,K]. A single fixed rational time
         # t=1/(2K+1) distinguishes all bounded candidate rotations.
