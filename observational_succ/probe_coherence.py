@@ -237,6 +237,101 @@ def prior_law_repair(candidates: tuple[InitialSource,...]) -> int | None:
     return next(iter(possibles)) if len(possibles)==1 else None
 
 
+def _source_projection(source: InitialSource, probe: str) -> int:
+    if probe == "a":
+        return source.a
+    if probe == "b":
+        return source.b
+    raise CarrierHorizonError("Only source-initial bit probes are admissible")
+
+
+def probe_family_determines_target(
+    candidates: tuple[InitialSource, ...],
+    probes: tuple[str, ...],
+) -> bool:
+    """Logical factorization of target through source probe observations.
+
+    Test the mathematical condition: for every x,y in the candidate class,
+    equal responses on the selected probe family imply equal target.
+    This is independent of whether those measurements can COEXIST under
+    the physical single-carrier observation protocol.
+    """
+    if type(candidates) is not tuple or not candidates:
+        raise CarrierHorizonError("Declare nonempty source candidates")
+    if any(not isinstance(s, InitialSource) for s in candidates):
+        raise CarrierHorizonError("Malformed source candidate")
+    if (type(probes) is not tuple or len(set(probes)) != len(probes)
+            or any(p not in ("a","b") for p in probes)):
+        raise CarrierHorizonError("Probe family has an undeclared initial-source observable")
+    outputs={}
+    for s in candidates:
+        key=tuple(_source_projection(s,p) for p in probes)
+        if key in outputs and outputs[key]!=s.parity:
+            return False
+        outputs[key]=s.parity
+    return True
+
+
+def minimal_logical_probe_supports(
+    candidates: tuple[InitialSource, ...],
+) -> tuple[tuple[str, ...], ...]:
+    """All inclusion-minimal source-probe sets that suffice for parity.
+
+    Minimality is only with respect to SELECTING probes in the declared
+    basis, not minimal proof length, computation, physical time or bytes.
+    """
+    options=((),("a",),("b",),("a","b"))
+    solutions = [p for p in options
+                 if probe_family_determines_target(candidates,p)]
+    return tuple(p for p in solutions if not any(
+        set(q)<set(p) for q in solutions
+    ))
+
+
+def proof_induced_question_rewiring_demo():
+    """Demonstrate logical-support contraction from independently proven laws.
+
+    A proof of a=0 (if valid) changes target a XOR b into b, so only b
+    must be queried. A proof of a=b turns original parity into the known
+    constant zero. The proofs are trusted premises here; this demo does
+    not purport to derive those source-class laws from the destructive data.
+    """
+    universe=tuple(InitialSource(a,b)
+                   for a,b in product((0,1),repeat=2))
+    a_zero=tuple(s for s in universe if s.a==0)
+    a_eq_b=tuple(s for s in universe if s.a==s.b)
+    baseline=minimal_logical_probe_supports(universe)
+    with_lemma_a_zero=minimal_logical_probe_supports(a_zero)
+    with_lemma_equal=minimal_logical_probe_supports(a_eq_b)
+    if (baseline != (("a","b"),)
+            or with_lemma_a_zero != (("b",),)
+            or with_lemma_equal != ((),)):
+        raise ArithmeticError("Contextual minimal source probe supports violated")
+    # The original a+b support cannot be executed coherently on one copy:
+    source=InitialSource(0,1)
+    admissible=tuple(
+        fixed_probe_trace(source,order).initial_support()
+        for order in (("a","b"),("b","a"))
+    )
+    if any(set(s)=={"a","b"} for s in admissible):
+        raise ArithmeticError("Invalid original-source support was permitted")
+    # Under a valid source restriction a=0, b-first resolves the target.
+    witness=fixed_probe_trace(source,("b",))
+    if (witness.initial_support() != {"b":1}
+            or witness.initial_support()["b"] != source.parity):
+        raise ArithmeticError("Rewired single-probe source theorem failed")
+    return {
+        "status":"PROOF_INDUCED_MINIMAL_DEPENDENCY_REWIRING",
+        "unrestricted_minimal_probe_supports":[list(x) for x in baseline],
+        "with_verified_a_zero_law":[list(x) for x in with_lemma_a_zero],
+        "with_verified_a_equal_b_law":[list(x) for x in with_lemma_equal],
+        "same_carrier_can_jointly_realize_unrestricted_support":False,
+        "single_b_probe_works_after_valid_a_zero_law":True,
+        "globally_minimal_proof_encoding_claimed":False,
+        "contextual_source_laws_are_independently_proven_premises":True,
+    }
+
+
 def probe_coherence_demo():
     theorem = local_carrier_no_go()
     all_sources = tuple(InitialSource(a,b) for a,b in product((0,1),repeat=2))
@@ -255,8 +350,10 @@ def probe_coherence_demo():
         raise ArithmeticError("Valid prior implication is not respected")
     if prior_law_repair(all_sources) is not None:
         raise ArithmeticError("Unrestricted source was spuriously decided")
+    rewiring=proof_induced_question_rewiring_demo()
     return {
         **theorem,
+        "proof_graph_rewiring":rewiring,
         "second_probe_current_value_is_still_defined":True,
         "second_probe_original_source_value_is_no_longer_defined":True,
         "two_independent_preparations_repair_target":True,
