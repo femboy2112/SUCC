@@ -123,11 +123,24 @@ Use these labels:
 | O107 | Local carrier-backaction obstruction for a toy destructive source protocol implies RH itself is logically unprovable or is Gödel-independent | UNVERIFIED (no such deduction) | Must identify source-faithful arithmetic/Archimedean carrier, completed Weil test domain and universal proof protocol class; no analogous theorem supplied |
 | O108 | This finite destructive-bit carrier already establishes a genuine cohomological, contextuality or sheaf-descent theorem for all FuckedFields | UNVERIFIED | Need typed covering/gluing domains, proof support presheaves, actual categorical maps and independent obstruction witnesses |
 
+| O109 | An exact sparse basis-indexed value delta can transport A's knowledge update to B without sending A's full state when both share a versioned basis and the exact prior receiver position | PROVED LOCAL / TESTED MODEL | Additive vector formula, anchored delta encoding/decoding, forged basis/anchor/endpoint controls; BASIS_INDEXED_DELTAS_AND_BOUNDARY_ENCODING §2 |
+| O110 | A multiset of basis directions and values fully determines every state-changing carrier path | REFUTED as universal inference | Ordered noncommuting operations translate/dilate/translate (1,4,5) reach 3 but rearranged (4,1,5) reach 2 |
+| O111 | A separately verified equality relation on the declared source-delta family can compress three independent value tokens to one while retaining address and proof-context obligations | PROVED LOCAL / TESTED MODEL | CertifiedEqualFamily proves all allowed supports have equal coefficients; fake (1,1,2) source rule rejected; not global shortest binary code |
+| O112 | Rational polynomials of degree at most five can be exactly reconstructed from all six sixth-root-of-unity boundary values | CLASSICAL DFT / TESTED EXACT MODEL | Orthogonality of sixth roots, Q(zeta6) inverse evaluation tests and 6-mode bounded source contract |
+| O113 | Six exact boundary evaluations uniquely identify an arbitrary unbounded-degree polynomial | REFUTED | Nonzero z^6−1 has zero evaluations at all sixth roots; z^7 aliases z; source class bound is load-bearing |
+| O114 | Injectivity of the exact analytic radial Fourier sampling map guarantees reconstruction under fixed finite measurement precision | REFUTED by PROVED LOCAL finite-precision countermodel | Radius 1/2 attenuates mode five by 1/32; step-1/8 component quantization makes z^5 indistinguishable from zero; exact inverse still succeeds |
+| O115 | Knowledge of an entire function's complete exact values on an interior line segment determines the function, whereas knowledge only of its critical-line zero locations need not determine its off-line zeros within a general reflection-symmetric entire function class | CLASSICAL identity theorem / PROVED LOCAL counterexample | F=1+(s-1/2)^2; G=F*(1−16(s−1/2)^2), same line zeros ±i but G adds 1/4,3/4; neither is real xi |
+| O116 | Under a known uniform family of supports of cardinality three chosen from six addresses, a fixed-length binary code selecting arbitrary support requires at least five bits | CLASSICAL counting / TESTED MODEL | binomial(6,3)=20, 2^4<20≤2^5, prior support class and shared dictionary explicitly counted separately |
+| O117 | The sixth-root boundary demonstration constructs physical holographic entropy/AdS-CFT bulk reconstruction or establishes an RH no-go/proof | UNVERIFIED | Requires source-derived Euler/Gamma/Weil operator identification, admissible analytic domain, stable code-subspace reconstruction and genuine information/entropy constraints; no zero-reading construction permitted |
+
+
 
 
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
+
+New basis-indexed/boundary-code controls: user's sparse ({1,4,5},{1,1,1}) patch from receiver anchor; changed basis/anchor and forged end; commutative versus noncommuting path ordering; three-to-one proof-context value compression with false source lemma; exact sixth-root DFT recovery only on degree<=5 source class; high-mode polynomial aliasing and radius-conditioned finite-precision blindness; entire reflection-symmetric F/G with identical critical-line zeros but differing off-line zeros. These are finite mathematical countermodels, not gravitational holography or RH proof tests.
 
 New proof-carrier coherence controls: first destructive source observation overwrites the other bit and invalidates its ORIGINAL-source type without making current-carrier readings meaningless; both probe orders leave opposite-parity sources indistinguishable under all future actions; logical minimal support {a,b} is not jointly reachable; independently verified a=0 or a=b law rewires to {b} or empty; physically adding a second source preparation or a read-only probe restores target identification; false-lemma, forged-source-tag and malformed-event controls.
 
@@ -149,7 +162,7 @@ Some controls are *historical* and live in the archived research documents, whil
 
 ## Outstanding highest-value claims
 
-- **General theory:** distinguish semantically valid local proof-support observations from post-perturbation readings about a different carrier state. Build typed proof-dependency hypergraphs and determine whether their minimal logically sufficient support has a jointly physically realizable causal path. Prove (or refute) precise local proof-coherence horizon conditions and positive transport/gluing controls without claiming intrinsic RH unprovability.
+- **General theory:** develop basis-indexed path and value transport from the receiver's last verified state, including versioned language/proof authority and order-preserving carrier operations. Test reconstructability of mathematical boundary codes only on declared source classes, with finite-precision and aliasing negative controls; seek a genuine continuation/proof-support transport theorem rather than a holography metaphor.
 - **Proof theory:** formalization in PA of coding/substitution representation, followed by appropriately qualified Gödel/reflection principles in a proof assistant.
 - **RH adapter:** a rigorous archimedean/pole interval oracle and noncircular identification of a positive source-derived distribution with the completed Weil form.
 
