@@ -45,10 +45,11 @@ This is an established identification of the completed arithmetic Weil distribut
 9. **[Two languages, one circle](research/2026-10-11/TWO_LANGUAGES_ONE_CIRCLE.md)** — polynomial-to-trigonometric exact translation, orientation/chart calibration, path-versus-point distinctions and three probe-relative completion classes on one circle.
 10. **[Twin observers, one mathematical field](research/2026-10-11/TWIN_OBSERVER_FIELD_INVARIANCE.md)** — equal source, empirical opportunities and reasoning; different polynomial/trig investigation priorities, shared tangent result, relative knowledge exchange and finite smooth-loop no-go.
 11. **[Probe-coherence horizons and minimal proof support](research/2026-10-11/PROBE_COHERENCE_HORIZONS_AND_PROOF_SUPPORT.md)** — destructive source probes, context-dependent meaning loss, dependency rewiring and positive repairs.
-12. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
-13. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
-14. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
-15. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
+12. **[Basis-indexed deltas and mathematical boundary encoding](research/2026-10-11/BASIS_INDEXED_DELTAS_AND_BOUNDARY_ENCODING.md)** — sparse receiver-anchored messages, order-sensitive paths, certified value-sharing, Fourier recovery/aliasing, and RH line-zero incompleteness controls.
+13. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
+14. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
+15. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
+16. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
 
 ## Run it
 
@@ -72,6 +73,7 @@ python scripts/relative_delta_probe.py
 python scripts/circle_translation_probe.py
 python scripts/twin_circle_probe.py
 python scripts/probe_coherence_probe.py
+python scripts/basis_boundary_probe.py
 ~~~
 
 The package name is **observational_succ**. No runtime dependency on the original RH repository is required.
@@ -92,6 +94,7 @@ The package name is **observational_succ**. No runtime dependency on the origina
 | Two observer languages, one phenomenon | circle_translation | Rational exact circle quotient ↔ Fourier trig functions, angular derivation/one-form transport, orientation/chart calibration and finite/omega/frozen-time winding completion regimes |
 | Twin observer calibration | twin_circle_observers | Same source/probes/reasoning with only field-specific focus; source-faithful relative evidence, one-step knowledge sync, reciprocal future-probe agreement and smooth flat-loop path obstruction |
 | Proof-carrier backaction | probe_coherence | Source-original versus modified-carrier evidence semantics, adaptive proof-support no-go, minimal logical/physical-support mismatch and valid proof-induced probe graph rewiring |
+| Basis-indexed mathematical encoding | basis_boundary_transport | Exact sender→receiver sparse path/value patch, noncommuting action order, source-verified equal-coefficient compression, sixth-root Fourier boundary recovery, high-mode/precision aliases and partial line-zero RH controls |
 | Gödel, Turing and finite proof | observer_logic, godel_succ, observer_reflection | Self-reference syntax, two-counter controls, checked proof authority, finite-support at omega |
 | Ordinal and Hilbert limits | ordinal_succ_report, infinite_realization | Formal omega/omega+1 reports, second-order interaction, nonuniform Hilbert limits |
 | Optional RH application bridges | gamma_interferometer, balanced_theta_li, hasse_theta_seam, source_prime_certificates, dirichlet_lambert | Gamma/prime source interfaces, Li-index windows, certified prime-only Suzuki bounds |
