@@ -144,6 +144,16 @@ Use these labels:
 | O126 | The complete order-N initial forward-difference jet of ANY finite sequence x0..xN reconstructs every point inside that observed horizon by finite Newton/Pascal binomial inversion, without polynomial source assumptions | CLASSICAL / PROVED LOCAL / TESTED MODEL | Binomial inversion theorem x_n=sum_{r=0}^n C(n,r) Delta^r x0 for 0<=n<=N; 1,092 exhaustive finite sequences and irregular multidimensional controls; does not prove unseen future samples |
 | O127 | A verified global Newton recurrence plus known invertible moving frames yields direct reconstruction of each local SUCC stage from the initial covariant jet by y_n=(F_n F_0^-1)(y_0+sum_{r=1}^d C(n,r)F_0 Delta^r x_0); the full finite covariant jet similarly inverts any already observed path | PROVED LOCAL / TESTED MODEL | Exact rational varying identity/swap/shear frames, 13-step quadratic source-law case, all-history finite inversion, false recurrence and singular-frame negative controls; pure-gauge not nonflat curvature |
 
+| O128 | Each separately continued Euler factor at s=-1 is E_p(-1)=1/(1-p)=-1/(p-1), whose denominator is the SUCC/FUCC first prime-jet return step τ_{p,0}=p-1 | CLASSICAL / EXACT TESTED MODEL | Rational Euler local factor, prime checks and return gap; EULER_LOCAL_GLOBAL_MINUS_ONE_TRANSPORT §1 |
+| O129 | Taking the infinite product of individually continued Euler factors at -1 yields the globally continued ζ(-1)=-1/12 | REFUTED / PROVED LOCAL | Cutoff ∏_{p≤X}(1-p)^-1=(-1)^π(X)/∏(p-1)→0, not -1/12; interchange lacks valid convergence |
+| O130 | The authentic global zeta functional equation transports the continued value ζ(-1)=-ζ(2)/(2π²), whose ζ(2) has an absolutely convergent prime Euler product | CLASSICAL | DLMF §§25.4,25.6,27.4; Λ(-1)=Λ(2)=π/6; no unknown nontrivial zeros input |
+| O131 | The source-authentic finite prime product P_X=∏_{p≤X}(1-p^-2)^-1 gives V_X=-P_X/(2π²) with 0<V_X-ζ(-1)≤1/(12X) | PROVED LOCAL conditional on classical FE/Basel / EXACT TESTED MODEL | Prime tail bounded by all-integer telescoping product (X+1)/X, exact Fractions and numerical display-only guard |
+| O132 | Abel-regularized alternating η(-1)=1/4 gives ζ(-1)=η(-1)/(1-4)=-1/12 and admits the exact deficit (1-r)²/[4(1+r)²] | CLASSICAL / PROVED LOCAL / TESTED MODEL | η-zeta identity plus finite exact rational Abel regulator and quadratic deficit |
+| O133 | The reflected negative-odd family ζ(1-2m) is obtained from the convergent positive-even ζ(2m) with Γ/π factors and equals -B_{2m}/(2m) | CLASSICAL / TESTED MODEL | DLMF §25.6; exact Bernoulli recurrence checks m=1..6, including ζ(-3)=1/120 |
+| O134 | The unmodified zeta Archimedean reflection multiplier remains correct for any mutated Euler source | REFUTED / TESTED MODEL | Remove p=2: F(-1)=+1/12 but naive -F(2)/(2π²)=-1/16; fake p=6 source impulse rejected |
+| O135 | The local/global special-value transport proves arithmetic holography, full Weil-form positivity, RH itself or an intrinsic inability to prove it | UNVERIFIED | Need source-specific Γ/Euler test-function domains, completed Weil identification, non-Euler mutation controls and lawful zero-free construction |
+
+
 
 
 
@@ -153,6 +163,8 @@ Use these labels:
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
 
 New unconditional finite-Newton inversion controls: all 1,092 arbitrary short integer sample sequences up to length six, plus arbitrary two-coordinate irregular values, invert exactly within the observed horizon via Pascal forward differences without assuming a global polynomial law. The same truncated jet does not justify an unseen continuation; this remains separate from source-certified polynomial extrapolation.
+
+New Euler local/global transport controls: separately continued factors -1/(p-1) and SUCC jet τ_{p,0}=p-1; partial products tending to zero and failing to reconstruct global ζ(-1); positive-side p^-2 prime Euler cutoff, exact integer telescoping tail ≤(X+1)/X, conditional transported value error ≤1/(12X); Abel η(-1)=1/4 with exact regulator defect; Bernoulli negative-odd value family; p=2 deletion disproves unmodified Γ reflection for another source, and fake composite p=6 is never prime-local. Classical analytic continuation and functional equation are explicitly imported proof assumptions.
 
 New discrete-SUCC integration controls: exact first differences and receiver-anchored initial condition reconstruct all intermediate states, while equal net deltas can hide different internal paths; 364 additive finite difference source sequences and 121 affine ordered step sequences cross-check serial versus associative prefix; quadratic/cubic Newton jets extrapolate only under global degree certificates; finite samples without recurrence fail at delayed third step; changing axes create apparent local difference without canonical field change; transported covariant differences and matrix-frame square commute; one-step simultaneous mathematical evaluation is not physical SUCC source actualization.
 
@@ -178,7 +190,7 @@ Some controls are *historical* and live in the archived research documents, whil
 
 ## Outstanding highest-value claims
 
-- **General theory:** derive verified SUCC integration from shared initial basis and source-trusted finite differences, with exact finite-jet completion only under proven higher-difference recurrence. Generalize the covariant finite-difference square to changing and possibly nonflat frame connections while preserving proof-support provenance and frame-specific empirical access; distinguish parallelizable prefix computation from simultaneous carrier perturbations.
+- **General theory:** distinguish lawful global analytic source transport from merely continuing each local Euler/probe factor. Use the exact ζ(-1)↔ζ(2) Gamma-functional-equation identity and rigorous finite prime-cutoff tail as a source-faithful benchmark, with p=2 deletion and fake composite mutation controls. Next seek operator-domain transport and a completed Weil-form connection without unknown zero-reading or claims of RH unprovability.
 - **Proof theory:** formalization in PA of coding/substitution representation, followed by appropriately qualified Gödel/reflection principles in a proof assistant.
 - **RH adapter:** a rigorous archimedean/pole interval oracle and noncircular identification of a positive source-derived distribution with the completed Weil form.
 
