@@ -85,6 +85,20 @@ Sources: [Two languages, one circle](../research/2026-10-11/TWO_LANGUAGES_ONE_CI
 
 Evidence: [Twin observer mathematical field invariance](../research/2026-10-11/TWIN_OBSERVER_FIELD_INVARIANCE.md), twin_circle_observers.py and tests/test_twin_circle_observers.py, claim ledger O95–O101.
 
+## Probe-coherence horizons and proof-induced question rewiring
+
+**Maintainer's hypothesis:** a proof may contract the investigative graph, remove families of questions and reattach unresolved investigations to smaller, better-supported probes. A stronger FuckedField candidate is a carrier where the very intervention required to collect proof support changes the source semantics of later probes before all necessary original-state evidence can be assembled. The "Riemann sphere" and black-hole horizon are explicitly **epistemic metaphors**, not mathematical identifications.
+
+**Finite no-go implemented:** a single two-bit original carrier with destructive a/b probes cannot yield its original XOR parity by any deterministic adaptive measurement strategy. First a loses original b; first b loses original a. Subsequent readings are meaningful of a *modified* carrier, but invalid as source-original evidence. Indistinguishable opposite-parity source pairs establish the impossibility for this narrowly specified protocol class.
+
+**Proof-graph minimum:** original XOR has minimal logically sufficient initial-source probe support {a,b}, but this set has no one-carrier causal realization. A valid externally certified source law a=0 reduces the minimal support to {b}; a=b reduces it to no probes. This is a basis-relative minimum number of primitive observations, not the shortest proof string or a claim of universal duality.
+
+**Required positive controls:** two independently prepared same-source carriers, a non-destructive simultaneous read, and independently verified mathematical premises restore completion. False source-law and forged source-origin tags are rejected as sound witnesses. An inaccessible physical witness is not automatically an unprovable theorem.
+
+**Next research:** define a typed category or indexed logical system of source state, state-changing probes and valid proof certificates; formulate a genuine stable-support or descent/gluing condition. Compare nonrealizability in a selected protocol to mathematical inability to derive a theorem using independent axioms. If investigating RH, produce the actual prime/Euler/Gamma source operators, correct analytic domains, the completed Weil form identification and quantified no-go controls before asserting any general obstruction.
+
+Sources: [Probe-coherence horizons and minimal proof support](../research/2026-10-11/PROBE_COHERENCE_HORIZONS_AND_PROOF_SUPPORT.md), probe_coherence.py, tests/test_probe_coherence.py, claim ledger O102–O108.
+
 ## Stage 2: rigorous logic and ordinal realization
 
 - Formalize a full proof-predicate/representability story for syntax and diagonal substitution in a proof assistant (Lean, Coq or Isabelle), clearly separating the project’s finite syntax engine from established Gödel theorems.
