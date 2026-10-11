@@ -47,6 +47,20 @@ See [Absorbing Hard SUCC and transmissibility](../research/2026-10-10/ABSORBING_
 
 **Sources:** [knowledge-aided SUCC ladder](../research/2026-10-10/KNOWLEDGE_AIDED_SUCC_LADDER.md), `knowledge_ladder.py`, `test_knowledge_ladder.py`, claim ledger O67–O73.
 
+## Relative knowledge transport and proof-bearing probe shapes
+
+**Implemented finite proof obligations:** same field placement requires equal compatible source knowledge, empirical probe feasibility and usable future frontier, previously observed probe values, and reasoning/inference capabilities. The strongest relative code now anchors on this **operational position**, not an identical historical event transcript: A and B can have independently acquired the same knowledge and retain their different causal event origins. Verified exact relative path directions and only non-deducible outcome codes bring the receiver to the sender's position in one informed K-SUCC.
+
+**Verified conservative language update:** versioned, checked XOR/AND/NOT definitions can change the shared probe/concept basis while preserving its old source semantics and physical devices. A delta referencing the new basis is rejected by an epistemically frozen old receiver until a valid upgrade is installed.
+
+**Proof-shaped probe criterion:** a named probe value is deductible without empirical execution exactly when all sources compatible with the current evidence return the same result. The implementation creates/checks a contextual proof-shaped value certificate and distinguishes it from actual source event, mere experimental option, or independently observed source-dependent probe availability.
+
+**Frozen-base no-go:** for n arbitrary unknown source bits relative to a fixed context, 2^n alternatives force some exact one-shot binary message to be at least n bits. Finite transmissions at every finite ladder rung do not imply a finite universal digital message for every limit source. Finite descriptions/proofs of particular infinite structures remain possible.
+
+**Next core work:** minimal **future-bisimulation-sufficient** path/value codes with all shared-basis and provenance costs counted; source-independent verified translators for genuine new mathematical and physical probes; nontrivial path/groupoid coherence; dynamic physical feasibility and quantum backaction; effective finite certificates for limits of moving bases.
+
+**Research:** [Relative knowledge SUCC and proof-shaped probes](../research/2026-10-11/RELATIVE_DELTA_PROOF_SHAPES_AND_FROZEN_BASE.md). Code: relative_delta.py; tests: test_relative_delta.py; ledger: O76–O83.
+
 ## Stage 2: rigorous logic and ordinal realization
 
 - Formalize a full proof-predicate/representability story for syntax and diagonal substitution in a proof assistant (Lean, Coq or Isabelle), clearly separating the project’s finite syntax engine from established Gödel theorems.
