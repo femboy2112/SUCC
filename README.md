@@ -74,7 +74,7 @@ The imported RH experiments remain available to audit, but the future general th
 
 ## Historical source and future exchange
 
-This repo was launched after an extensive program in [femboy2112/FuckingRH](https://github.com/femboy2112/FuckingRH). The migration was pinned to [commit ba075348](https://github.com/femboy2112/FuckingRH/commit/ba075348b7bcc66d938b3e0ca96c26e95bba340a), corresponding to [the observational foundations PR #23](https://github.com/femboy2112/FuckingRH/pull/23). The [manifest](provenance/IMPORT_MANIFEST.json) records the exact original and destination Git blob identities for 71 historical artifacts: **54 mechanically namespaced Python files and 17 unchanged documents**.
+This repo was launched after an extensive program in [femboy2112/FuckingRH](https://github.com/femboy2112/FuckingRH). The migration was pinned to [commit ba075348](https://github.com/femboy2112/FuckingRH/commit/ba075348b7bcc66d938b3e0ca96c26e95bba340a), corresponding to [the observational foundations PR #23](https://github.com/femboy2112/FuckingRH/pull/23). The [manifest](provenance/IMPORT_MANIFEST.json) records the exact original and destination Git blob identities for 72 historical artifacts: **55 mechanically namespaced Python files and 17 unchanged documents**.
 
 New work belongs here first. When it yields an independently meaningful RH-related theorem, export a **self-contained, status-labeled, adversarially tested handoff** to femboy2112/FuckingRH or another RH research repo. Do not quietly convert general observational insights into RH proof claims.
 
