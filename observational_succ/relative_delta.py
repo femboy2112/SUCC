@@ -251,6 +251,57 @@ def probe_option_result(
 
 
 @dataclass(frozen=True)
+class ProbeValueProof:
+    """A contextual proof of a probe result, NOT an actual observation."""
+    basis: str
+    context_position: str
+    probe: str
+    value: str
+    witness_sources: tuple[str, ...]
+    proof_method: str = "finite exhaustive agreement on compatible sources"
+
+
+def prove_probe_value(
+    observer: AgentKnowledge, basis: SharedKnowledgeBasis, probe: str,
+) -> ProbeValueProof:
+    """Build an exact proof only when the probe is constant on K(observer).
+
+    The mathematical existence of a probe function is insufficient.
+    This proof's existence is informative because its *type includes the
+    claimed value* and its construction checks every compatible source.
+    """
+    report = probe_option_result(observer, basis, probe)
+    if not report.inferable_without_measuring:
+        raise RelativeDeltaError(
+            "Probe may be available, but no unique result follows from this model")
+    return ProbeValueProof(basis.fingerprint, operational_digest(observer, basis),
+                           probe, report.inferred_value,
+                           observer.model(basis).compatible)
+
+
+def verify_probe_value(
+    observer: AgentKnowledge, basis: SharedKnowledgeBasis, certificate: ProbeValueProof,
+) -> bool:
+    """Recheck a proof-carrying value in the recipient's exact current context.
+
+    A valid certificate changes no causal measurement history: the result
+    was *inferred*, not newly observed with an instrument.
+    """
+    if not isinstance(certificate, ProbeValueProof):
+        raise RelativeDeltaError("A typed value-proof certificate is required")
+    if (certificate.basis != basis.fingerprint
+            or certificate.context_position != operational_digest(observer, basis)
+            or certificate.probe not in basis.world.probes
+            or certificate.witness_sources != observer.model(basis).compatible):
+        raise RelativeDeltaError("Probe proof is stale or source-context incompatible")
+    outputs = probe_option_result(observer, basis, certificate.probe)
+    if (not outputs.inferable_without_measuring
+            or outputs.inferred_value != certificate.value):
+        raise RelativeDeltaError("Probe proof does not establish the claimed value")
+    return True
+
+
+@dataclass(frozen=True)
 class DerivedBooleanConcept:
     """A source-independent verified definition, not a physical discovery."""
     new_probe: str
