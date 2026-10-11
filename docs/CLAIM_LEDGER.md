@@ -115,10 +115,21 @@ Use these labels:
 | O100 | A source-side mathematical representation change automatically preserves every empirical path invariant, orientation, proof rule and numeric coordinate value | REFUTED as universal inference | Only verified structure-preserving translations are admissible; opposite orientation and incomplete path/chart maps from circle note, semantic commutation required |
 | O101 | The exact finite twin-observer mathematics establishes a universal physical theory of cognition, mathematical-knowledge acceleration, empirical precision or an RH theorem | UNVERIFIED | Source-table and trust premises, normalized ideal tangent, focus model, physical measurement/noise limitations and completed Weil identification open |
 
+| O102 | A one-copy destructive two-bit carrier cannot uniformly identify its initial XOR parity with any deterministic adaptive sequence of its a/b probes | PROVED LOCAL / TESTED FINITE MODEL | First-a makes initial 00 and 01 identical forever, first-b makes 00 and 10 identical forever; probe_coherence.py; PROBE_COHERENCE_HORIZONS_AND_PROOF_SUPPORT §2 |
+| O103 | A new reading can be meaningful of the modified carrier while no longer having lawful original-source proof-support semantics | PROVED LOCAL / TESTED FINITE MODEL | Carrier after a-probe sets b=0 and flags subsequent b readings as not representing original b; forged origin-label negative control |
+| O104 | The mathematically minimal source-probe set sufficient for a target need not be jointly realizable under the allowed physical carrier transitions | PROVED LOCAL / TESTED FINITE MODEL | Original XOR requires logical source support {a,b}, while physically source-faithful a/b traces on one destructive carrier have support at most one |
+| O105 | An independently certified source law may contract the minimal target-question graph and rewire surviving probes without being globally minimal in proof-text length | PROVED LOCAL / TESTED MODEL | Restrict a=0 gives required support {b}; restrict a=b gives empty probe support; false-lemma source (1,0) countercontrol |
+| O106 | The one-carrier source-coherence barrier implies global logical inability to prove the target in every mathematical setting | REFUTED / POSITIVE CONTROLS | Two independent faithful source preparations, a non-destructive probe, or a valid source law give finite target certification |
+| O107 | Local carrier-backaction obstruction for a toy destructive source protocol implies RH itself is logically unprovable or is Gödel-independent | UNVERIFIED (no such deduction) | Must identify source-faithful arithmetic/Archimedean carrier, completed Weil test domain and universal proof protocol class; no analogous theorem supplied |
+| O108 | This finite destructive-bit carrier already establishes a genuine cohomological, contextuality or sheaf-descent theorem for all FuckedFields | UNVERIFIED | Need typed covering/gluing domains, proof support presheaves, actual categorical maps and independent obstruction witnesses |
+
+
 
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
+
+New proof-carrier coherence controls: first destructive source observation overwrites the other bit and invalidates its ORIGINAL-source type without making current-carrier readings meaningless; both probe orders leave opposite-parity sources indistinguishable under all future actions; logical minimal support {a,b} is not jointly reachable; independently verified a=0 or a=b law rewires to {b} or empty; physically adding a second source preparation or a read-only probe restores target identification; false-lemma, forged-source-tag and malformed-event controls.
 
 New twin-observer controls: identical semantic knowledge, physical probe menus and reasoning signatures with different mathematical focus; algebraically and trigonometrically identical tangent result; restricted point-only ambiguity corrected by common exact tangent access; one-step sourced testimony versus two-way one-use probe-frontier synchronization; smooth hidden loop with unchanged finite sampled jets; stale-context and forged relative outcomes rejection.
 
@@ -138,7 +149,7 @@ Some controls are *historical* and live in the archived research documents, whil
 
 ## Outstanding highest-value claims
 
-- **General theory:** develop mathematically frame-invariant knowledge transport between twin observers sharing the same actual source, empirical probe opportunities and reasoning power. Type different language focus as a search policy (not different instrumentation); prove a verified cross-language continuation map for the SAME trajectory and exact tangent, then test physical precision, source-class scope and all path/topology invariants.
+- **General theory:** distinguish semantically valid local proof-support observations from post-perturbation readings about a different carrier state. Build typed proof-dependency hypergraphs and determine whether their minimal logically sufficient support has a jointly physically realizable causal path. Prove (or refute) precise local proof-coherence horizon conditions and positive transport/gluing controls without claiming intrinsic RH unprovability.
 - **Proof theory:** formalization in PA of coding/substitution representation, followed by appropriately qualified Gödel/reflection principles in a proof assistant.
 - **RH adapter:** a rigorous archimedean/pole interval oracle and noncircular identification of a positive source-derived distribution with the completed Weil form.
 
