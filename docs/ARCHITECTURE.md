@@ -24,6 +24,7 @@
 | Euler local/global transport at −1 | Prime Euler factors as rational continuation, prime-jet gap τ_{p,0}=p-1, noncommuting infinite product/analytic continuation, source-specific Γ reflection from convergent s=2 with exact tail and mutation controls | zeta_minus_one_transport |
 | Residue-one p-adic place diagnostics | Local Euler factor 1/(1-p) as convergent Qp series and residue-one unit, compact-idelic norm nonreconstruction of infinity, factorial profinite limits, exact product-formula source comparison and weight-two p-adic zeta interpolation | residue_one_arch |
 | SUCC modular clocks and Mahler interpolation | Odd-prime unit-clock period equals SUCC prime jet gap, p-adic Newton/Mahler finite difference reconstruction, Kummer Euler-corrected special-value congruences and torsion branch discontinuity | clock_mahler_interpolation |
+| Variable-unit proto-SUCC and higher lift | One formal D-unit arrow, specialization D→d and d=1, p-local invertible unit frame conjugacy vs nonunit proper subclock, d(1−p) normalized affine discrepancy and Pascal finite jet recursion | proto_succ_variable_unit |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -93,6 +94,16 @@ Finite Hard SUCC exhausts an exact finite rule/probe universe. For an infinite t
 A source- and report-preserving inter-observer completion requires a finite message, common decoding semantics, and trustworthy causal evidence. The exact full-frame message includes source-compatible lawful probe-acquisition replay, while a shorter target-only witness explicitly lacks that provenance. Finite-alphabet exact universal communication of arbitrary real constants is impossible by countability. For finite one-shot zero-error communication with receiver side information, the optimal fixed-length bit budget is derived from the confusability graph chromatic number, not from mere probe count.
 
 See [the formal research memo](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md) and claim ledger O55–O66. The finite implementations do not automatically transport to general neural, quantum, or RH settings.
+
+## Proto-SUCC one level higher: a path of one variable D-unit
+
+The primitive carrier transition is not a priori the coordinate numeral 1; it is `0→D` for a declared direction/unit symbol D, with `S_D(x)=x+D`. After n steps the universal position is nD; taking D=1 recovers integer successor. The formal model is a Z-module of coefficients in 1 and D, without supposing D has an inverse. A basis fixes what D means; the receiver's separate prior state determines any nonzero starting position.
+
+For d a p-local unit, multiplication `C_d(x)=d*x` conjugates ordinary SUCC to `S_d` on the whole modular clock, so a change of unit is truly a reference-frame change. For nonunit d, its Z/p^r orbit has period p^r/gcd(d,p^r) and the full inverse map does not exist. The affine SUCC/FUCC relation `V_p S_d=S_(pd) V_p` yields INTEGER ADDRESS discrepancy d(1−p), normalized to 1−p only if d is invertible locally. Do not confuse this integer discrepancy with a scalar operator commutator.
+
+The lifted state `(x,d,a)` admits `(x+d,d+a,a)`, whose iterates yield `x_n=x_0+nd_0+binom(n,2)a`; general finite jets evolve by the integer Pascal shift, with no modular division by factorials. A changing d can leave the unit group: `(0,1,4)→(1,5,4)` at p=5, mod25 turns a full 25-position step cycle into a 5-position subclock while retaining a lawful integer path. Frame-gauge validity is a typed condition on the carrier, not an assumed property of every SUCC update.
+
+See [variable-unit proof and controls](../research/2026-10-11/PROTO_SUCC_VARIABLE_UNIT_LIFT.md), claims O156–O164. This is classical algebra and a SUCC architectural abstraction; deriving prime zeta measures, Gamma completion or completed Weil positivity remains unresolved.
 
 ## SUCC finite differences as the classical Mahler coordinate system
 
