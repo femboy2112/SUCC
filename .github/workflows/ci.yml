@@ -255,6 +255,7 @@ jobs:
           assert j["initial_condition_is_receiver_anchored"] is True
           assert j["ordinary_difference_steps"]==4
           assert j["all_intermediate_succ_states_reconstructed"] is True
+          assert j["unconditional_newton_inversion_of_all_observed_finite_steps"] is True
           assert j["additive_prefix_parallel_dependency_layers"]==2
           assert j["additive_prefix_executed_on_actual_parallel_hardware"] is False
           assert j["polynomial_degree_law"]==2
