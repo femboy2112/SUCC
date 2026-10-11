@@ -50,6 +50,11 @@ def _neg(a):
     return tuple(-x for x in a)
 
 
+def _derivative(a):
+    """Exact ordinary derivative of a rational polynomial in x."""
+    return _trim(tuple((k+1)*a[k+1] for k in range(len(a)-1)))
+
+
 def _mul(a, b):
     if not a or not b:
         return ()
@@ -131,6 +136,20 @@ class CirclePolynomial:
             raise CircleTranslationError("Algebraic circle evaluation requires x²+y²=1")
         return (sum((c*x**k for k, c in enumerate(self.a)), Fraction())
                 + y*sum((c*x**k for k, c in enumerate(self.b)), Fraction()))
+
+    def angular_derivative(self):
+        """Tangential rotation D=-y*d/dx+x*d/dy, well-defined on quotient.
+
+        D(a(x)+yb(x))=xb-(1-x²)b'+y*(-a').
+        Differentiating x²+y²-1 gives 0, so D descends to the ring.
+        """
+        a_prime = _derivative(self.a)
+        b_prime = _derivative(self.b)
+        return CirclePolynomial(
+            _add(_mul((Fraction(0), Fraction(1)), self.b),
+                 _neg(_mul((Fraction(1), Fraction(0), Fraction(-1)), b_prime))),
+            _neg(a_prime),
+        )
 
     @classmethod
     def from_monomials(cls, terms: dict[tuple[int, int], object]):
@@ -249,6 +268,13 @@ class TrigFourierPolynomial:
                 d[n+m] = d.get(n+m, GaussianRational()) + v*w
         return TrigFourierPolynomial.from_dict(d)
 
+    def angular_derivative(self):
+        """Exact d/dtheta: Laurent coefficient a_n -> i*n*a_n."""
+        return TrigFourierPolynomial(tuple(
+            (n, GaussianRational(0, n)*value)
+            for n, value in self.coefficients
+        ))
+
     @classmethod
     def from_circle(cls, polynomial: CirclePolynomial, orientation: int = 1):
         if not isinstance(polynomial, CirclePolynomial):
@@ -328,6 +354,18 @@ def oriented_winding(turns: int, orientation: int = 1):
     if type(turns) is not int or type(orientation) is not int or orientation not in (-1,1):
         raise CircleTranslationError("Calibrated integer winding required")
     return turns*orientation
+
+
+
+def circle_angular_one_form_on_generator():
+    """Algebraic contraction (x dy - y dx)(-y ∂x+x ∂y)=1.
+
+    Its trig translation is the coefficient of dθ in the pullback.
+    The global one-form is NOT d of a globally single-valued angle;
+    see nonzero period / winding argument in the research note.
+    """
+    x, y = CirclePolynomial.x(), CirclePolynomial.y()
+    return x*y.angular_derivative() - y*x.angular_derivative()
 
 
 
@@ -412,6 +450,12 @@ def cross_language_circle_demo():
     x, y = CirclePolynomial.x(), CirclePolynomial.y()
     algebraic = x*x+y*y-CirclePolynomial.scalar(1)
     trig = TrigFourierPolynomial.from_circle(algebraic)
+    omega_coeff = circle_angular_one_form_on_generator()
+    angular_intertwining = (
+        TrigFourierPolynomial.from_circle(y.angular_derivative())
+        == TrigFourierPolynomial.from_circle(y).angular_derivative()
+    )
+    assert omega_coeff == CirclePolynomial.scalar(1) and angular_intertwining
     point_a = rational_stereographic_chart(Fraction(1, 2))
     point_b = rational_stereographic_chart(Fraction(1, 3))
     rotated = multiply_circle_points(point_a, point_b)
@@ -426,6 +470,9 @@ def cross_language_circle_demo():
         "status": "EXACT_CIRCLE_POLYNOMIAL_TRIG_TRANSLATOR",
         "coordinate_ring_identity_zero": algebraic == CirclePolynomial(),
         "trigonometric_polynomial_identity_zero": trig == TrigFourierPolynomial(),
+        "angular_derivations_intertwine": angular_intertwining,
+        "global_angular_one_form_coefficient_one": omega_coeff == CirclePolynomial.scalar(1),
+        "global_single_valued_real_angle_claimed": False,
         "group_law_preserved": rotated == (Fraction(0), Fraction(1)),
         "orientation_requires_explicit_calibration": cardinal_point(1,1) != cardinal_point(1,-1),
         "reflected_winding_sign_inverted": oriented_winding(1,-1) == -1,
