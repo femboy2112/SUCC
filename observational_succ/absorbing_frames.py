@@ -100,6 +100,11 @@ class AbsorbingProtocol:
     def __post_init__(self):
         if not isinstance(self.world, FiniteProbeWorld):
             raise AbsorptionError("A declared finite source/probe world is required")
+        # Outcome tokens have an unambiguous 'prefix:probe:outcome' grammar.
+        if any(":" in p for p in self.world.probes) or any(
+            ":" in y for row in self.world.outcomes for y in row
+        ):
+            raise AbsorptionError("Colon cannot occur in probe or outcome labels")
         _symbols(self.seeds, title="Initial symbols")
         _symbols(self.feasible, title="Physically executable probes")
         if any(p not in self.world.probes for p in self.feasible):
