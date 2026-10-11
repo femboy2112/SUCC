@@ -19,6 +19,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from fractions import Fraction
+
+Q = Fraction  # Exact-rational research shorthand in mathematical probes.
 from hashlib import sha256
 from math import comb
 import json
