@@ -142,6 +142,26 @@ jobs:
           assert j["arbitrary_infinite_completion_transmitted"] is False
           assert j["RH_claimed"] is False
           PY
+      - name: Cross-language circle algebra and path witness calibration
+        run: |
+          python scripts/circle_translation_probe.py > "$RUNNER_TEMP/circle-translator.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"circle-translator.json").read_text())
+          assert j["status"]=="EXACT_CIRCLE_POLYNOMIAL_TRIG_TRANSLATOR"
+          assert j["coordinate_ring_identity_zero"] is True
+          assert j["trigonometric_polynomial_identity_zero"] is True
+          assert j["group_law_preserved"] is True
+          assert j["orientation_requires_explicit_calibration"] is True
+          assert j["reflected_winding_sign_inverted"] is True
+          assert j["identical_finite_phase_samples"] is True
+          assert j["different_true_winding_numbers"] is True
+          assert j["matching_sampled_windings"]==[1,5]
+          assert j["full_path_observability_proved_by_samples"] is False
+          assert j["general_two_theory_translation_proved"] is False
+          assert j["RH_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -165,5 +185,6 @@ jobs:
             ${{ runner.temp }}/absorbing-frontier.json
             ${{ runner.temp }}/knowledge-ladder.json
             ${{ runner.temp }}/relative-delta.json
+            ${{ runner.temp }}/circle-translator.json
           if-no-files-found: warn
           retention-days: 14
