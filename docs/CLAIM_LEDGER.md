@@ -87,6 +87,7 @@ Use these labels:
 | O72 | Each finite stage admitting a finite inter-observer message implies that any arbitrary binary-sequence omega completion has a single finite universal digital encoding | REFUTED | Infinite binary stream cardinality versus countable finite strings; research note §6 |
 | O73 | General knowledge-aided SUCC preserves physical probe dynamics, authenticated causal provenance, morphism-level Yoneda faithfulness, infinite-limit regularity or RH without additional assumptions | UNVERIFIED | Must construct separately typed physical, continuation/bisimulation, category, proof-certificate and completed-Weil bridges |
 | O74 | Two observers with complementary source-faithful physical probes can jointly identify an exact field target that neither can determine locally | PROVED LOCAL / TESTED MODEL | Left/right binary probes on {00,01,10,11}, each leaves parity ambiguous, joint intersection identifies 10 and XOR=1; knowledge_ladder.py and test_knowledge_ladder.py |
+| O75 | Alternating trust-labeled messages can enable complementary observers to execute a finite chain of field probes that neither can traverse alone, without transferring physical instruments | PROVED LOCAL / TESTED MODEL | Four-rung A:p0 → B:p1 → A:p2 → B:p3, isolated observers remain {A,B} but collective fiber {B}; cross_enabled_ladder_demo and tests |
 
 
 
