@@ -8,7 +8,7 @@
 
 | Layer | Mathematical responsibility | Modules |
 | --- | --- | --- |
-| Physical carrier (model, not ontology theorem) | Finite quantum states, instruments, outcome-conditioned dynamics, causal records | quantum_records |
+| Physical carrier and outcome semantics | Finite quantum states, instruments, causal records; exact stochastic readouts and distinguishability loss | quantum_records, operational_semantics |
 | Field-relative causal events | Immutable journal, actualized versus pending observations, finite SUCC and contexts | core, engine, arithmetic |
 | Semantic representation and observability | Probe families, Yoneda-style restriction, witnessed factorization paths and loss of distinguishability | phenomenology, yoneda, resource_probe, local_global, circle_transport |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
@@ -53,3 +53,16 @@ The quantum model is explicitly real two-dimensional and is not a neuroscience r
 We should gradually factor out a truly generic typed observer/record core from imported RH-specific arithmetic code. Do this by new adapters with equivalence tests—not a wholesale rewriting of the original import. Keep RH-specific tests as a deliberately difficult falsification environment for the theory.
 
 For proposed diagrams, specify the precise functors/morphisms, domain of objects, continuity or topology, observational equivalence relation, and theorems about information preservation. Do not claim a commutative diagram because two paths look analogous.
+
+
+## Certified observational-semantic contraction (native SUCC theorem)
+
+The new operational_semantics module defines finite rational evidence laws and stochastic readouts mapping physical measurement outcomes to semantic labels. For every such readout C and any two evidence laws p and q, the exact total-variation contraction theorem holds:
+
+\[
+\operatorname{TV}(Cp,Cq)\le\operatorname{TV}(p,q).
+\]
+
+This follows by triangle inequality and nonnegative stochastic row normalization; its executable certificate reports a rational before/after distance and slack. It does **not** say that all semantic inference is a stochastic map, nor that quantum measurement itself is classical after arbitrary interactions. The real-qubit Kraus instrument supplies explicit physical outcome distributions. A postprocessing channel can erase the observer's ability to distinguish two earlier hypotheses **without erasing the original source or the separate causal record**.
+
+See [the dedicated research derivation](../research/2026-10-10/FINITE_SEMANTIC_DATA_PROCESSING.md) and native test_operational_semantics.py.

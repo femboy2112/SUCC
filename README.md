@@ -55,6 +55,7 @@ python -m observational_succ demo
 python scripts/observer_foundations_probe.py
 python scripts/ordinal_succ_report_probe.py
 python scripts/prime_source_certificates_probe.py
+python scripts/semantic_data_processing_probe.py
 ~~~
 
 The package name is **observational_succ**. No runtime dependency on the original RH repository is required.
@@ -65,7 +66,7 @@ The package name is **observational_succ**. No runtime dependency on the origina
 | --- | --- | --- |
 | Causal field and actualization | core, engine, arithmetic | Finite steps, source-context records, immutable journals, predictions vs. observations |
 | Restricted semantics and categories | phenomenology, yoneda, resource_probe, local_global | Probe-relative recognition, path information, finite versus global views |
-| Quantum physical-carrier model | quantum_records | Exact real-qubit Kraus instruments, conditional states and non-erasing causal event replay |
+| Quantum physical-carrier model | quantum_records, operational_semantics | Exact real-qubit Kraus instruments, causal event replay and semantic-readout data-processing proofs |
 | Gödel, Turing and finite proof | observer_logic, godel_succ, observer_reflection | Self-reference syntax, two-counter controls, checked proof authority, finite-support at omega |
 | Ordinal and Hilbert limits | ordinal_succ_report, infinite_realization | Formal omega/omega+1 reports, second-order interaction, nonuniform Hilbert limits |
 | Optional RH application bridges | gamma_interferometer, balanced_theta_li, hasse_theta_seam, source_prime_certificates, dirichlet_lambert | Gamma/prime source interfaces, Li-index windows, certified prime-only Suzuki bounds |

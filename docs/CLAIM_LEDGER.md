@@ -49,6 +49,8 @@ Use these labels:
 | O34 | RH is independent of PA or ZFC | UNKNOWN / UNVERIFIED | no Gödel/Turing theorem establishes this |
 | O35 | Exact archive provenance establishes that each mathematical claim is true | REFUTED as inference | manifest proves bytes and source SHA, not theorem correctness |
 | O36 | General observation/proof/physical-carrier results can be produced independently of RH | TESTED MODEL / PROGRAM DESIGN | this standalone package, docs and independent quantum instruments |
+| O37 | Every exact finite classical semantic readout contracts total-variation distinguishability | CLASSICAL / PROVED LOCAL | operational_semantics.py proof, exact Fraction certificates, native tests |
+| O38 | Finite Kraus measurement outcomes may be distinguishable in Z but not in X; a forgetful readout loses information without rewriting causal source | PROVED LOCAL / TESTED MODEL | quantum_records.py, operational_semantics.py and independent probes |
 
 ## Adversarial suite
 

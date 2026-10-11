@@ -16,7 +16,7 @@
 **Objective:** rigorously specify a category of finite quantum measurement instruments with classical causal outcomes and a separate semantic update functor.
 
 - Define information-preserving versus information-losing maps using operational probe families.
-- Prove a finite data-processing inequality or distinguishability contraction for declared outcome channels.
+- **Implemented:** prove a finite exact total-variation data-processing inequality for declared stochastic semantic readouts and real-qubit outcome controls; extend to state-dependent/quantum channels next.
 - Model instruments whose reduced states agree while historical records distinguish different causal orderings.
 - Test both faithful histories and lossy reductions; falsify proposed commuting-square claims with noncommuting or incompatible instruments.
 - No claim of a general empirical cognitive model until quantitatively testable measurements exist.

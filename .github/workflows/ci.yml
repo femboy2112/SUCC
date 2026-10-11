@@ -36,6 +36,20 @@ jobs:
         run: python scripts/verify_provenance.py
       - name: Run all mathematical, logic, quantum, source and hostile tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Prove observer-to-semantic distinguishability contraction
+        run: |
+          python scripts/semantic_data_processing_probe.py > "$RUNNER_TEMP/semantic-data-processing.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"semantic-data-processing.json").read_text())
+          assert j["status"]=="EXACT_SEMANTIC_DATA_PROCESSING"
+          assert j["Z_outcomes_0_vs_1_TV"]=="1"
+          assert j["X_outcomes_0_vs_1_TV"]=="0"
+          assert j["Z_forgotten_TV"]=="0"
+          assert j["source_causal_records_erased"] is False
+          assert j["Weil_positivity_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -54,5 +68,6 @@ jobs:
             ${{ runner.temp }}/foundations.json
             ${{ runner.temp }}/ordinal.json
             ${{ runner.temp }}/prime-source.json
+            ${{ runner.temp }}/semantic-data-processing.json
           if-no-files-found: warn
           retention-days: 14

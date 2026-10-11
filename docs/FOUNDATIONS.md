@@ -76,6 +76,18 @@ has Hessian \(\nabla^2\log Z=\mathrm{Cov}(v,v)\succeq0\). A square-root encoding
 
 On the critical half-density, naive normalized finite arithmetic Hilbert vectors can converge weakly to zero while retaining norm 1. Their positive phase correlations can converge to a discontinuous limit. These are representation/topology countermodels—not evidence that physical observers or RH are pathological.
 
+### An exact theorem about semantic loss after observation
+
+When semantic processing is explicitly a finite stochastic readout C of recorded classical outcomes, total-variation distinguishability obeys
+
+\[
+\mathrm{TV}(Cp,Cq)\le\mathrm{TV}(p,q).
+\]
+
+This is a proved data-processing inequality, independent of RH. The real-qubit example compares \(|0\rangle\) and \(|1\rangle\): a Z-basis instrument perfectly distinguishes them, but an X-basis instrument produces identical outcome laws; a subsequent forgetful readout destroys even the Z-outcome distinction. The states and separately stored observations have not become invalid—**the semantic image has fewer distinguishing probes**. This is exactly the kind of physically anchored, mathematically scoped preservation/failure theorem the general ObsSUCC theory should develop.
+
+This does not assert that human understanding is a Markov channel, nor that every meaningful semantic update loses information. The scope is a declared finite observation alphabet and channel; [full proof](../research/2026-10-10/FINITE_SEMANTIC_DATA_PROCESSING.md).
+
 ## 5. Ordinals distinguish three different operations
 
 \[
