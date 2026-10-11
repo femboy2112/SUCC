@@ -96,6 +96,7 @@ Use these labels:
 | O81 | Every possible arbitrary n-bit source prefix is encoded exactly into fewer than n binary bits using an unchanged frozen base with no source-specific side information | REFUTED by CLASSICAL counting | 2^n prefixes vs 2^n minus one strings shorter than n; tests n=1..9; not a no-go for finitely describable special infinite objects |
 | O82 | Agreement of semantic snapshots alone guarantees the required same knowledge, same future empirical probe access and reasoning capability | REFUTED (unconditional inference) | Missing used-probe controls and unequal physical feasibility; previous weak relay can work while strict relative transport refuses |
 | O83 | The finite relative SUCC model establishes authentic physical measurements, full quantum/continuous future bisimulation, optimal global communication, general theory-to-theory transport or an RH positivity theorem | UNVERIFIED | Physical provenance, new primitive experimental modalities, source-independent proof translations, omega continuity and RH completed source-to-Weil identity remain open |
+| O84 | A proof of an available probe's *decisiveness* for target T is valid iff every response-equivalence fiber in the compatible source class has one T-value; the proof gives a conditional decision plan, not the actual response | PROVED LOCAL / TESTED MODEL | certify_probe_decision and verify_probe_decision, A/B identity probe positive, parity left-bit negative, XOR concept physically unavailable; research note §4 |
 
 
 
