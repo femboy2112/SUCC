@@ -169,6 +169,29 @@ jobs:
           assert j["general_two_theory_translation_proved"] is False
           assert j["RH_claimed"] is False
           PY
+      - name: Twin observer same probes, reasoning and focus-only knowledge relay
+        run: |
+          python scripts/twin_circle_probe.py > "$RUNNER_TEMP/twin-circle.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"twin-circle.json").read_text())
+          assert j["status"]=="EXACT_TWIN_OBSERVER_LANGUAGE_INVARIANCE"
+          assert j["initial_mathematical_knowledge_equal"] is True
+          assert j["physical_probe_capabilities_identical"] is True
+          assert j["reasoning_capability_identical"] is True
+          assert j["initial_candidate_windings"]==[1,5,9]
+          assert j["after_polynomial_focus_candidates"]==[1,9]
+          assert j["after_trig_focus_candidates"]==[1]
+          assert j["post_first_relay_knowledge_equal"] is True
+          assert j["post_first_relay_operational_history_equal"] is False
+          assert j["post_reciprocal_relay_operational_position_equal"] is True
+          assert j["algebraic_and_trig_normalized_tangent_agree"] is True
+          assert j["smooth_path_finite_jets_can_still_hide_an_extra_loop"] is True
+          assert j["full_physical_continuum_trajectory_measured"] is False
+          assert j["source_provenance_cryptographically_authenticated"] is False
+          assert j["RH_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -193,5 +216,6 @@ jobs:
             ${{ runner.temp }}/knowledge-ladder.json
             ${{ runner.temp }}/relative-delta.json
             ${{ runner.temp }}/circle-translator.json
+            ${{ runner.temp }}/twin-circle.json
           if-no-files-found: warn
           retention-days: 14
