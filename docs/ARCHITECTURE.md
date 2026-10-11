@@ -15,6 +15,7 @@
 | Absorbing frames and closure | Complete source-compatible fibers, shared exact probe predictions, finite Horn fixed points, constructive forcing and epi/physical access split | absorbing_frames, constructive_frontier |
 | Finite communication | Target-specific sufficiency, causal access certificates and bit-minimal zero-error receiver-side-information coding | interobserver_channels |
 | Knowledge-aided observer synchronization | Shared basis checks, source-attested local probe batches, strict epistemic catch-up and snapshot-only optimizations | knowledge_ladder |
+| Relative delta and evolving proof language | Position-anchored path directions, nonredundant value choices, full knowledge/probe/reasoner signature, conservative concept upgrades and contextual probe-result proof checks | relative_delta |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -84,6 +85,18 @@ Finite Hard SUCC exhausts an exact finite rule/probe universe. For an infinite t
 A source- and report-preserving inter-observer completion requires a finite message, common decoding semantics, and trustworthy causal evidence. The exact full-frame message includes source-compatible lawful probe-acquisition replay, while a shorter target-only witness explicitly lacks that provenance. Finite-alphabet exact universal communication of arbitrary real constants is impossible by countability. For finite one-shot zero-error communication with receiver side information, the optimal fixed-length bit budget is derived from the confusability graph chromatic number, not from mere probe count.
 
 See [the formal research memo](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md) and claim ledger O55–O66. The finite implementations do not automatically transport to general neural, quantum, or RH settings.
+
+## Strong field placement as a relative knowledge object
+
+A's and B's **independent past histories** may differ even while the absorbing knowledge, empirical access, reasoning engine and already measured probe/value sets match. Operational placement is a stronger signature than semantic snapshot but a weaker demand than literal identity of every past event owner's name. Deterministic single-use observation and identical reasoning imply an elementary future-step bisimulation under equal operational positions and a common actual source.
+
+A **position-anchored** delta identifies the recipient's last known operational state and sends only sender-relative directions in the newly executable source-probe frontier plus non-deducible outcome-choice indices. Values already determined by all compatible sources need no additional value token. Replay preserves both receivers' independently sourced past and newly imported sender-origin testimony. The old strict-prefix relay remains available when literal shared causal-history alignment is required.
+
+A source-verified, conservative **concept extension** may add a definable new probe to the shared mathematical language (XOR/AND/NOT over known binary responses), but it never creates a physical instrument or unknown source value. Frozen earlier contexts reject newer path/value packets until a checked semantic upgrade has occurred.
+
+**Proof-shaped inference must not be confused with an observation.** Possession of a validated proof that every compatible source gives p-value y makes the observation result derivable, but p being an available empirical test does not by itself tell which of multiple possible values reality will produce. The actual presence/absence of a source-dependent option can be evidence only when itself measured/authenticated.
+
+An arbitrary infinite tower of individually finite messages does not guarantee a single finite exact message understood in the frozen initial basis. Particular finitely axiomatizable limits are exceptions, provided an independent mathematical proof and a fixed shared interpreter. See the [relative knowledge delta dossier](../research/2026-10-11/RELATIVE_DELTA_PROOF_SHAPES_AND_FROZEN_BASE.md), O76–O83. General categorical, continuous/physical and RH applications remain separate and UNVERIFIED.
 
 ## Two-observer knowledge transport versus physical observation
 
