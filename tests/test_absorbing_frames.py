@@ -209,7 +209,7 @@ class AbsorbingFramesTests(unittest.TestCase):
         self.assertEqual(receive_target_witness(packet, protocol,
                                                 {"A": "A", "B": "B"}), "B")
         body = json.loads(packet.decode("utf-8"))
-        self.assertEqual(body["scope"], "target-only-no-access-proof")
+        self.assertEqual(body["scope"], "target-only")
         self.assertTrue(witness.requires_independent_measurement_authentication)
         # This shorter witness cannot reproduce the lawful fine-probe unlock:
         # the missing coarse observation was the enablement cause.
