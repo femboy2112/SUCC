@@ -185,6 +185,7 @@ Use these labels:
 | O162 | A higher SUCC that updates its own unit d can cross a p-local invertibility boundary without terminating the underlying additive path | PROVED LOCAL / TESTED MODEL | (x,d,a)=(0,1,4)→(1,5,4) at p=5 mod25; instantaneous S_d period drops from 25 to 5 but integer path remains well-defined |
 | O163 | With proto unit d the prime jet directed gap d p^{k+1}−d p^k = d(p−1)p^k; its coefficient relative to an invertible d is the established odd-prime unit-clock period φ(p^{k+1}) | PROVED LOCAL / TESTED MODEL | Exact prime-power gap and clock coefficient controls; no primality selection without authentic prime source |
 | O164 | Parametrizing proto SUCC by D and lifting to a Pascal jet on its own proves a global physical proof horizon, the Archimedean Euler/Gamma completion or RH | UNVERIFIED | Need actual source-domain/measure, p-adic/real transport and full completed Weil positivity identification; existing results are classical algebra with exact scope |
+| O165 | For linear lifted SUCC step units d_n=d0+n a, all stages n≥0 remain full invertible p-adic clock frames iff p∤d0 and p|a; when p∤a a first nonunit appears at n≡−d0 a^-1 mod p | PROVED LOCAL / TESTED MODEL | Exact modular proof and 1,125 source controls with first invalid n; nonunit step does not halt integer SUCC or imply physical proof impossibility |
 
 
 
@@ -202,6 +203,8 @@ Required falsifiers include: fake a(6) and delayed composite a(15); nonunit loca
 New unconditional finite-Newton inversion controls: all 1,092 arbitrary short integer sample sequences up to length six, plus arbitrary two-coordinate irregular values, invert exactly within the observed horizon via Pascal forward differences without assuming a global polynomial law. The same truncated jet does not justify an unseen continuation; this remains separate from source-certified polynomial extrapolation.
 
 New Bost–Connes spectral controls: exact diagonal finite trace for H|n>=log(n)|n>, ζ(2) finite partial sum and β=-1 trace N(N+1)/2; no claim that the analytically continued -1/12 is an ordinary trace, a KMS state or a physically realized negative-temperature partition function. The classical C*-dynamical system is an externally established result, not constructed by this Python model.
+
+New higher proto-SUCC gauge-stability control: classify d_n=d0+n a at every prime p for invertible modular frame transport; universal all-n iff p∤d0 and p|a, otherwise first nonunit n explicitly solved by a modular inverse. Exhaustively probe 1,125 combinations for p=2,3,5,7,11 and d0,a in -7..7, including p=5 stable (2,5) and first loss (1,4). This is an all-time mathematical theorem, not a physical measurement claim.
 
 New proto-SUCC variable unit controls: universal one-D-unit arrow 0→D and specialization D↦1/0, complete additive clock cycles and valid gauge iff gcd(d,p)=1, normalized 1-p SUCC/FUCC address defect only for invertible d, symbolic D-coefficient information loss under D↦0, higher unipotent Pascal SUCC producing exact quadratic/cubic paths and inverse negative steps, and d dynamically crossing local unit to nonunit at p=5 mod25 without a physical proof impossibility claim.
 
