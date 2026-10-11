@@ -106,6 +106,11 @@ class AbsorbingProtocol:
             raise AbsorptionError("Physical feasibility must refer to global probes")
         if any(v.startswith("obs:") or v.startswith("predict:") for v in self.seeds):
             raise AbsorptionError("Initial axioms may not impersonate source observations")
+        # Axioms must neither forge actual/derived measurements nor unlock
+        # probes absent from the globally declared language.
+        for symbol in self.seeds:
+            if symbol.startswith("can:") and symbol[4:] not in self.world.probes:
+                raise AbsorptionError("Initial capability references undeclared probe")
         least_horn_closure(self.seeds, self.rules)
         for r in self.rules:
             for atom in (r.conclusion, *r.premises):
@@ -324,7 +329,7 @@ def receive_target_witness(payload: bytes, protocol: AbsorbingProtocol,
         raise AbsorptionError("Invalid target witness JSON") from exc
     if (type(data) is not dict or set(data) != {"protocol", "target", "observed", "scope"}
             or data["protocol"] != "obs-succ-target-v1"
-            or data["scope"] != "target-only-no-access-proof"
+            or data["scope"] != "target-only"
             or type(data["observed"]) is not list):
         raise AbsorptionError("Unsupported target-only channel language")
     try:
