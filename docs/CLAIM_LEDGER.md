@@ -88,6 +88,15 @@ Use these labels:
 | O73 | General knowledge-aided SUCC preserves physical probe dynamics, authenticated causal provenance, morphism-level Yoneda faithfulness, infinite-limit regularity or RH without additional assumptions | UNVERIFIED | Must construct separately typed physical, continuation/bisimulation, category, proof-certificate and completed-Weil bridges |
 | O74 | Two observers with complementary source-faithful physical probes can jointly identify an exact field target that neither can determine locally | PROVED LOCAL / TESTED MODEL | Left/right binary probes on {00,01,10,11}, each leaves parity ambiguous, joint intersection identifies 10 and XOR=1; knowledge_ladder.py and test_knowledge_ladder.py |
 | O75 | Alternating trust-labeled messages can enable complementary observers to execute a finite chain of field probes that neither can traverse alone, without transferring physical instruments | PROVED LOCAL / TESTED MODEL | Four-rung A:p0 → B:p1 → A:p2 → B:p3, isolated observers remain {A,B} but collective fiber {B}; cross_enabled_ladder_demo and tests |
+| O76 | Equal operational position including knowledge, source probe access, observed probe values, and shared inference rules implies equivalent future local steps for every compatible source in finite deterministic one-use model | PROVED LOCAL / TESTED MODEL | RELATIVE_DELTA_PROOF_SHAPES_AND_FROZEN_BASE §1; exact all-source continuation checks, operational_position and certify_finite_continuation |
+| O77 | Lawful path-and-value deltas anchored to equal operational positions can align observers' future investigative state in one informed step even if their independent prior causal histories differ | PROVED LOCAL / TESTED MODEL | Position-anchored sender/receiver independent p0 histories; decoder retains old observer origin; exact negative stale-anchor and altered-value controls |
+| O78 | A verified definitional Boolean probe recipe extends common epistemic language conservatively without changing previous source responses or granting a new physical instrument | PROVED LOCAL / TESTED MODEL | XOR/AND/NOT source-table derivations; extend_shared_basis and receive_concept_upgrade; same source fibers on old evidence; old decoder rejects new version |
+| O79 | The result of a named probe is inferable from a complete compatible source class without measuring exactly when its image over that class has one value | PROVED LOCAL / TESTED MODEL | ProbeValueProof independently rechecks contextual source values; nonconstant p(A) vs p(B) fails; no fabricated observed event |
+| O80 | Mere existence of an available empirical probe always communicates the result its execution would return | REFUTED (unconditional inference) | Two-source known p with different results; source-sensitive availability must be genuinely observed or source-certified |
+| O81 | Every possible arbitrary n-bit source prefix is encoded exactly into fewer than n binary bits using an unchanged frozen base with no source-specific side information | REFUTED by CLASSICAL counting | 2^n prefixes vs 2^n minus one strings shorter than n; tests n=1..9; not a no-go for finitely describable special infinite objects |
+| O82 | Agreement of semantic snapshots alone guarantees the required same knowledge, same future empirical probe access and reasoning capability | REFUTED (unconditional inference) | Missing used-probe controls and unequal physical feasibility; previous weak relay can work while strict relative transport refuses |
+| O83 | The finite relative SUCC model establishes authentic physical measurements, full quantum/continuous future bisimulation, optimal global communication, general theory-to-theory transport or an RH positivity theorem | UNVERIFIED | Physical provenance, new primitive experimental modalities, source-independent proof translations, omega continuity and RH completed source-to-Weil identity remain open |
+
 
 
 
@@ -96,6 +105,8 @@ Use these labels:
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
+
+New relative-delta controls: independently produced identical empirical positions with different event origins; one-step delta catch-up preserving both provenance streams; predictable probe values omitted from encoded path; raw semantic snapshot ambiguity and physically unequal-probe rejection; proof-shaped value certificates versus bare available probes; verified XOR concept extension without inventing hardware; stale frozen-base version rejection; worst-case n-bit prefix counting.
 
 New knowledge-ladder controls: three 2-frame local discovery segments alternating between observers, each caught up by one remote informed step; correct source/origin replay; stale and forged packets; missing future hardware capability despite shared semantics; snapshot-only compression that omits a redundant observed fact and changes the next physical frame; third-party evidence laundering rejection; all 32 small binary source table transfers.
 
@@ -109,7 +120,7 @@ Some controls are *historical* and live in the archived research documents, whil
 
 ## Outstanding highest-value claims
 
-- **General theory:** build continuation-preserving knowledge-aided SUCC morphisms across a shared, versioned semantic basis. Find finite, provably sufficient future-behavior statistics and costed/provenance-aware channels, distinguish ordinary observation from imported source testimony, then lift the finite construction to lawful directed limits with stated regularity.
+- **General theory:** extend operationally equivalent but independently sourced observer histories using basis-versioned relative path/value deltas; require same empirical feasibility and reasoning capability. Prove sound changes of mathematical language, contextual proof-shaped probes and costed future-sufficient communication; then investigate lawful infinite directed limits without pretending a fixed base can decode unsupported later vocabulary.
 - **Proof theory:** formalization in PA of coding/substitution representation, followed by appropriately qualified Gödel/reflection principles in a proof assistant.
 - **RH adapter:** a rigorous archimedean/pole interval oracle and noncircular identification of a positive source-derived distribution with the completed Weil form.
 
