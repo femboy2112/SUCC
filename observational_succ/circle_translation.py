@@ -250,10 +250,12 @@ class TrigFourierPolynomial:
         return TrigFourierPolynomial.from_dict(d)
 
     @classmethod
-    def from_circle(cls, polynomial: CirclePolynomial):
+    def from_circle(cls, polynomial: CirclePolynomial, orientation: int = 1):
         if not isinstance(polynomial, CirclePolynomial):
             raise CircleTranslationError("Translate only canonical circle polynomials")
-        x, y = cls.cos(), cls.sin()
+        if type(orientation) is not int or orientation not in (-1,1):
+            raise CircleTranslationError("Orientation calibration must be +1 or -1")
+        x, y = cls.cos(), cls.sin().scale(orientation)
         xpower = cls.scalar(1)
         total = cls()
         for k in range(max(len(polynomial.a), len(polynomial.b))):
@@ -286,7 +288,9 @@ class TrigFourierPolynomial:
             a, b = b, (x*b).scale(2)-a
         return b
 
-    def to_circle(self):
+    def to_circle(self, orientation: int = 1):
+        if type(orientation) is not int or orientation not in (-1,1):
+            raise CircleTranslationError("Orientation calibration must be +1 or -1")
         d = dict(self.coefficients)
         constant = d.get(0, GaussianRational()).real
         total = CirclePolynomial.scalar(constant)
@@ -295,7 +299,36 @@ class TrigFourierPolynomial:
                 total = (total
                          + self._cos_multiple(n).scale(2*c.real)
                          + self._sin_multiple(n).scale(-2*c.imag))
-        return total
+        return (total if orientation == 1
+                else CirclePolynomial(total.a, tuple(-q for q in total.b)))
+
+
+def cardinal_point(quarter_turns: int, orientation: int = 1):
+    """Exact trig-frame calibration at multiples of a quarter turn.
+
+    Algebraic x/y basis holds fixed; orientation flips clockwise versus
+    counterclockwise angle labels. A shared set of circle points does not
+    choose either convention, and their winding signs are opposite.
+    """
+    if type(quarter_turns) is not int:
+        raise CircleTranslationError("Exact quarter-turn integer required")
+    if type(orientation) is not int or orientation not in (-1,1):
+        raise CircleTranslationError("Only two calibrated orientations")
+    k = quarter_turns % 4
+    cardinal = ((Fraction(1), Fraction(0)),
+                (Fraction(0), Fraction(1)),
+                (Fraction(-1), Fraction(0)),
+                (Fraction(0), Fraction(-1)))
+    x,y = cardinal[k]
+    return (x,orientation*y)
+
+
+def oriented_winding(turns: int, orientation: int = 1):
+    """Sign convention under circle reflection y→-y."""
+    if type(turns) is not int or type(orientation) is not int or orientation not in (-1,1):
+        raise CircleTranslationError("Calibrated integer winding required")
+    return turns*orientation
+
 
 
 def rational_stereographic_chart(t):
@@ -394,6 +427,8 @@ def cross_language_circle_demo():
         "coordinate_ring_identity_zero": algebraic == CirclePolynomial(),
         "trigonometric_polynomial_identity_zero": trig == TrigFourierPolynomial(),
         "group_law_preserved": rotated == (Fraction(0), Fraction(1)),
+        "orientation_requires_explicit_calibration": cardinal_point(1,1) != cardinal_point(1,-1),
+        "reflected_winding_sign_inverted": oriented_winding(1,-1) == -1,
         "stereographic_chart_missing_point": [-1, 0],
         "finite_sample_times": [str(t) for t in sample_times],
         "matching_sampled_windings": [witness.original_turns, witness.aliased_turns],
