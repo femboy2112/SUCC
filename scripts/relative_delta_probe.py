@@ -28,6 +28,8 @@ def main():
     assert proof["status"] == "VERIFIED_CONSERVATIVE_PROOF_PROBE_UPGRADE"
     assert proof["new_physical_instrument_created"] is False
     assert proof["option_alone_determined_result"] is False
+    assert proof["conditional_probe_plan_valid_for_every_possible_outcome"] is True
+    assert proof["conditional_probe_plan_physically_available"] is False
     assert proof["proof_after_primitive_evidence_determined_result"] is True
     assert proof["proved_value"] == "1"
     assert proof["parity_physically_observed"] is False
