@@ -17,6 +17,7 @@ from observational_succ.relative_delta import (
     encode_concept_upgrade, receive_concept_upgrade,
     frozen_base_minimum_worst_case_bits, relative_delta_demo,
     prove_probe_value, verify_probe_value, ProbeValueProof,
+    encode_position_delta, decode_position_delta,
 )
 
 
@@ -95,6 +96,69 @@ class RelativeDeltaTests(unittest.TestCase):
         self.assertFalse(certify_finite_continuation(a,weak,b).equivalent)
         with self.assertRaises(RelativeDeltaError):
             encode_relative_delta(a,receiver,b)
+
+    def test_position_anchored_relay_works_without_same_causal_prefix(self):
+        basis=chain(3)
+        alice_before=AgentKnowledge("Alice").advance(basis,"B",1)
+        bob_before=AgentKnowledge("Bob").advance(basis,"B",1)
+        self.assertEqual(operational_position(alice_before,basis),
+                         operational_position(bob_before,basis))
+        self.assertNotEqual(alice_before.batches,bob_before.batches)
+        alice_after=alice_before.advance(basis,"B",2)
+        with self.assertRaises(RelativeDeltaError):
+            encode_relative_delta(alice_after,bob_before,basis)
+        patch=encode_position_delta(alice_before,alice_after,bob_before,basis)
+        received=decode_position_delta(bob_before,patch,basis)
+        self.assertEqual(operational_position(received,basis),
+                         operational_position(alice_after,basis))
+        self.assertEqual(received.batches[0].origin,"Bob")
+        self.assertEqual([item.origin for item in received.batches[1:]],
+                         ["Alice","Alice"])
+        self.assertEqual(received.local_frames,1)
+        self.assertEqual(received.informed_steps,1)
+        self.assertNotEqual(received.batches,alice_after.batches)
+        self.assertTrue(certify_finite_continuation(alice_after,received,basis).equivalent)
+
+    def test_state_relative_consecutive_rungs_do_not_overwrite_independent_history(self):
+        basis=chain(4)
+        a=AgentKnowledge("Alice").advance(basis,"B",1)
+        b=AgentKnowledge("Bob").advance(basis,"B",1)
+        before=a
+        for _ in range(3):
+            advanced=before.local_succ(basis,"B")
+            packet=encode_position_delta(before,advanced,b,basis)
+            b=decode_position_delta(b,packet,basis)
+            self.assertEqual(operational_position(advanced,basis),
+                             operational_position(b,basis))
+            self.assertEqual(b.batches[0].origin,"Bob")
+            before=advanced
+        self.assertEqual(before.model(basis).compatible,("B",))
+        self.assertEqual(b.informed_steps,3)
+        self.assertEqual(b.local_frames,1)
+
+    def test_position_delta_rejects_bad_anchor_wrong_basis_and_wrong_sender(self):
+        basis=chain(3)
+        a=AgentKnowledge("Alice").advance(basis,"B",2)
+        receiver=AgentKnowledge("Bob")
+        packet=encode_position_delta(AgentKnowledge("Alice"),a,receiver,basis)
+        data=json.loads(packet.decode())
+        for key,val in [
+            ("anchor","0"*64),("basis","BAD"),("source","Bob"),
+            ("result","0"*64),
+        ]:
+            wrong=dict(data)
+            wrong[key]=val
+            with self.subTest(key=key):
+                with self.assertRaises(RelativeDeltaError):
+                    decode_position_delta(receiver,json.dumps(wrong).encode(),basis)
+        changed=dict(data)
+        changed["steps"]=[{"path":[0],"values":[0]}]+data["steps"][1:]
+        with self.assertRaises(RelativeDeltaError):
+            decode_position_delta(receiver,json.dumps(changed).encode(),basis)
+        with self.assertRaises(RelativeDeltaError):
+            encode_position_delta(a,AgentKnowledge("Alice"),receiver,basis)
+        with self.assertRaises(RelativeDeltaError):
+            decode_position_delta(receiver.local_succ(basis,"B"),packet,basis)
 
     def test_path_delta_composes_abstractly_across_rungs(self):
         b=chain(4)
