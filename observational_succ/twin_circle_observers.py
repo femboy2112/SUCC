@@ -186,6 +186,24 @@ class TwinCircleObserver:
         state.validate(basis)
         return state
 
+    def knowledge_position(self, basis: TwinCircleBasis):
+        """Truth-facing closure independent of personal event provenance.
+
+        Both twins know the same mathematical propositions and have identical
+        empirical/reasoning ability when source fiber and derived predictions
+        match. Re-executable experiment history is a stronger operational
+        synchronization requirement checked separately.
+        """
+        possible = self.validate(basis)
+        inferred = tuple(
+            (i, choices[0])
+            for i, probe in enumerate(basis.probes)
+            if len(choices := tuple(sorted(
+                {probe.response(k) for k in possible}))) == 1
+        )
+        return (basis.fingerprint, possible, inferred,
+                tuple(range(len(basis.probes))), basis.reasoning_signature)
+
     def normalized_semantic_position(self, basis: TwinCircleBasis):
         """Language- and focus-independent shared mathematical knowledge.
 
@@ -222,40 +240,46 @@ def _context_digest(state, basis):
 def encode_twin_relative_delta(
     sender: TwinCircleObserver, receiver: TwinCircleObserver, basis: TwinCircleBasis,
 ) -> bytes:
-    """Send only newly obtained probe DIRECTIONS and nondeducible values.
+    """Send pending sender-origin facts as relative directions and values.
 
-    Receivers need not have identical focus, but their existing source
-    observations are assumed to be a subset of sender's factual events.
-    Original event origins are retained. A different independent-history
-    merge requires source-normalized reconciliation as separate work.
+    Sender and receiver may have independently observed different probes.
+    A received delta constructs their source-compatible *union* of events.
+    The next step direction is the INDEX among recipient's as-yet-unmeasured
+    legal probes (not an absolute probe name). Shared source table and
+    decoder are excluded from communication bit-cost claims.
     """
     sender.validate(basis)
     receiver.validate(basis)
     known = {e.probe_index: e.value for e in receiver.records}
     sender_map = {e.probe_index: e for e in sender.records}
-    if any(i not in sender_map or sender_map[i].value != v
+    if any(i in sender_map and sender_map[i].value != v
            for i, v in known.items()):
-        raise TwinCircleError("Sender does not contain receiver's true prior observations")
+        raise TwinCircleError("Source records disagree about one shared physical probe")
     pending = [e for e in sender.records if e.probe_index not in known]
     trial = receiver
     steps = []
-    for e in pending:
-        possibilities = _possible_values(basis, trial, e.probe_index)
-        if e.value not in possibilities:
+    for event in pending:
+        remaining = tuple(i for i in range(len(basis.probes))
+                          if i not in {e.probe_index for e in trial.records})
+        if event.probe_index not in remaining:
+            raise TwinCircleError("Sender tried to send duplicate physical observation")
+        relative_path = remaining.index(event.probe_index)
+        possibilities = _possible_values(basis, trial, event.probe_index)
+        if event.value not in possibilities:
             raise TwinCircleError("Incompatible source outcome in relative delta")
-        idx = None if len(possibilities) == 1 else possibilities.index(e.value)
-        steps.append([e.probe_index, idx, e.origin])
-        trial = TwinCircleObserver(trial.language, trial.focus_order,
-                                  trial.records+(e,),trial.local_steps,
-                                  trial.knowledge_aided_steps)
+        outcome_code = None if len(possibilities) == 1 else possibilities.index(event.value)
+        steps.append([relative_path, outcome_code, event.origin])
+        trial = TwinCircleObserver(
+            trial.language, trial.focus_order,
+            trial.records + (event,), trial.local_steps,
+            trial.knowledge_aided_steps,
+        )
         trial.validate(basis)
-    if trial.normalized_semantic_position(basis) != sender.normalized_semantic_position(basis):
-        raise TwinCircleError("Proposed delta does not reconstruct sender's position")
     return _canonical({
         "protocol":"twin-circle-relative-v1",
         "basis":basis.fingerprint,
         "start":_context_digest(receiver,basis),
-        "end":_context_digest(sender,basis),
+        "end":_context_digest(trial,basis),
         "steps":steps,
     })
 
@@ -263,6 +287,7 @@ def encode_twin_relative_delta(
 def decode_twin_relative_delta(
     receiver: TwinCircleObserver, payload: bytes, basis: TwinCircleBasis,
 ) -> TwinCircleObserver:
+    """One K-SUCC; combines compatible independent histories by testimony."""
     receiver.validate(basis)
     if type(payload) is not bytes or not 0 < len(payload) <= 65536:
         raise TwinCircleError("Require one bounded finite message")
@@ -275,35 +300,41 @@ def decode_twin_relative_delta(
             or message["protocol"] != "twin-circle-relative-v1"
             or message["basis"] != basis.fingerprint
             or message["start"] != _context_digest(receiver,basis)
-            or type(message["steps"]) is not list):
+            or type(message["steps"]) is not list
+            or len(message["steps"]) > len(basis.probes)):
         raise TwinCircleError("A message cannot cross an unverified or stale base")
     state = receiver
     for step in message["steps"]:
+        remaining = tuple(i for i in range(len(basis.probes))
+                          if i not in {e.probe_index for e in state.records})
         if (type(step) is not list or len(step) != 3
                 or type(step[0]) is not int
-                or not 0 <= step[0] < len(basis.probes)
-                or type(step[2]) is not str or not step[2]
-                or any(e.probe_index == step[0] for e in state.records)):
+                or not 0 <= step[0] < len(remaining)
+                or type(step[2]) is not str or not step[2]):
             raise TwinCircleError("Invalid relative physical measurement path")
-        i, index, origin = step
+        relative_index, index, origin = step
+        i = remaining[relative_index]
         values = _possible_values(basis,state,i)
         if len(values) == 1:
             if index is not None:
-                raise TwinCircleError("Predictable probe outcome must not invent new information")
+                raise TwinCircleError("Predictable probe outcome cannot invent information")
             value = values[0]
         else:
             if type(index) is not int or not 0 <= index < len(values):
                 raise TwinCircleError("Unknown empirical outcome cannot be inferred freely")
             value = values[index]
-        state = TwinCircleObserver(state.language,state.focus_order,
-                                  state.records+(CircleEvent(i,value,origin),),
-                                  state.local_steps,state.knowledge_aided_steps)
+        state = TwinCircleObserver(
+            state.language, state.focus_order,
+            state.records + (CircleEvent(i,value,origin),),
+            state.local_steps, state.knowledge_aided_steps,
+        )
         state.validate(basis)
     if _context_digest(state,basis) != message["end"]:
-        raise TwinCircleError("Recipient did not reproduce sender's declared position")
-    return TwinCircleObserver(state.language,state.focus_order,state.records,
-                              state.local_steps,state.knowledge_aided_steps+1)
-
+        raise TwinCircleError("Recipient did not reproduce declared operational position")
+    return TwinCircleObserver(
+        state.language,state.focus_order,state.records,
+        state.local_steps,state.knowledge_aided_steps+1,
+    )
 
 def evaluate_fourier_at_cardinal(
     polynomial: TrigFourierPolynomial, phase,
@@ -410,10 +441,17 @@ def twin_circle_demo() -> dict:
     assert first_b.validate(basis) == (1,)
     delta = encode_twin_relative_delta(first_b,first_a,basis)
     caught = decode_twin_relative_delta(first_a,delta,basis)
-    assert caught.normalized_semantic_position(basis) == \
-           first_b.normalized_semantic_position(basis)
+    assert caught.knowledge_position(basis) == first_b.knowledge_position(basis)
+    assert caught.normalized_semantic_position(basis) != first_b.normalized_semantic_position(basis)
+    # Twin B still lacks A's independent, now-predictable point observation;
+    # one return delta aligns their complete future single-use probe frontiers.
+    return_delta = encode_twin_relative_delta(caught,first_b,basis)
+    reunited_b = decode_twin_relative_delta(first_b,return_delta,basis)
+    assert reunited_b.normalized_semantic_position(basis) == \
+           caught.normalized_semantic_position(basis)
     assert (caught.local_steps == 1 and caught.knowledge_aided_steps == 1
-            and caught.records[-1].origin == "trigonometric")
+            and caught.records[-1].origin == "trigonometric"
+            and reunited_b.records[-1].origin == "polynomial")
     x,y = rational_stereographic_chart(Fraction(1,2))
     assert normalized_tangent_in_polynomial_language(x,y,1) == \
            normalized_tangent_in_trig_language(1)
@@ -432,7 +470,10 @@ def twin_circle_demo() -> dict:
         "after_trig_focus_candidates":list(first_b.validate(basis)),
         "knowledge_aided_delta_steps":caught.knowledge_aided_steps,
         "recipient_new_empirical_frames":caught.local_steps-first_a.local_steps,
-        "post_relay_operational_knowledge_equal":True,
+        "post_first_relay_knowledge_equal": caught.knowledge_position(basis) == first_b.knowledge_position(basis),
+        "post_first_relay_operational_history_equal":False,
+        "post_reciprocal_relay_operational_position_equal":reunited_b.normalized_semantic_position(basis) == caught.normalized_semantic_position(basis),
+        "reciprocal_knowledge_aided_steps_total":caught.knowledge_aided_steps+reunited_b.knowledge_aided_steps,
         "algebraic_and_trig_normalized_tangent_agree":True,
         "smooth_path_finite_jets_can_still_hide_an_extra_loop":True,
         "full_physical_continuum_trajectory_measured":False,
