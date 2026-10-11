@@ -7,7 +7,7 @@ No authentication of real-world evidence, physical speedup or infinity.
 """
 import json
 
-from observational_succ.knowledge_ladder import knowledge_ladder_demo
+from observational_succ.knowledge_ladder import knowledge_ladder_demo, complementary_observers_demo
 
 
 def main():
@@ -23,6 +23,15 @@ def main():
     assert result["physical_time_speedup_proved"] is False
     assert result["infinite_ladder_executed"] is False
     assert result["RH_claimed"] is False
+    synergy = complementary_observers_demo()
+    assert synergy["status"] == "EXACT_DISTRIBUTED_EPISTEMIC_COMPLEMENTARITY"
+    assert synergy["alice_only_xor_identified"] is False
+    assert synergy["bob_only_xor_identified"] is False
+    assert synergy["shared_source"] == ["10"]
+    assert synergy["shared_xor"] == "1"
+    assert synergy["replayed_remote_knowledge_not_local_measurement"] is True
+    assert synergy["full_continuation_equivalence_of_physical_devices_claimed"] is False
+    result["complementarity"] = synergy
     print(json.dumps(result, indent=2, sort_keys=True))
 
 
