@@ -134,6 +134,8 @@ jobs:
           assert j["position_anchored"]["relative_informed_steps"]==1
           assert j["evolving_proof_basis"]["new_physical_instrument_created"] is False
           assert j["evolving_proof_basis"]["option_alone_determined_result"] is False
+          assert j["evolving_proof_basis"]["conditional_probe_plan_valid_for_every_possible_outcome"] is True
+          assert j["evolving_proof_basis"]["conditional_probe_plan_physically_available"] is False
           assert j["evolving_proof_basis"]["proof_after_primitive_evidence_determined_result"] is True
           assert j["evolving_proof_basis"]["parity_physically_observed"] is False
           assert j["evolving_proof_basis"]["frozen_base_minimum_worst_case_bits_for_eight_arbitrary_bits"]==8
