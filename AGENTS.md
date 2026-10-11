@@ -14,6 +14,7 @@
 8. Finite numerical precision is not a proof certificate unless backed by independently derived rigorous error bounds or sound interval arithmetic. Do not invent results or claim CI passes before it does.
 9. Preserve test history and regression cases. A newly proposed diagram must be checked at the level of actual maps, coherence laws and failure modes; a visually attractive analogy is not a theorem.
 10. Public repository does not imply unlimited redistribution rights. Do not add a license absent the maintainer's explicit choice.
+11. Develop proposals through the steelman–crucible–verdict method in docs/METHOD.md: reconstruct the strongest faithful reading, test it adversarially with a receipt (a counterexample, a cited theorem, a ledger REFUTED entry, or a typed contradiction), and record a labeled verdict. A refutation without a receipt, or a status promotion without an independent proof, is not permitted.
 
 ## Required validation
 
@@ -24,4 +25,4 @@ python scripts/observer_foundations_probe.py
 python scripts/ordinal_succ_report_probe.py
 ~~~
 
-See docs/FOUNDATIONS.md, docs/CLAIM_LEDGER.md, docs/ARCHITECTURE.md and docs/RH_HANDOFF.md.
+See docs/FOUNDATIONS.md, docs/METHOD.md, docs/CLAIM_LEDGER.md, docs/ARCHITECTURE.md, docs/ROADMAP.md and docs/RH_HANDOFF.md.

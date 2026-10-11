@@ -35,11 +35,12 @@ This is an established identification of the completed arithmetic Weil distribut
 ## Read the theory
 
 1. **[Foundations](docs/FOUNDATIONS.md)** — the originating physical/semantic proposal, precise mathematical types, causal SUCC, second derivatives, ordinals, Gödel/Turing, and the difference between reporting and proof.
-2. **[Research architecture](docs/ARCHITECTURE.md)** — what belongs in the general theory, what is an optional RH adapter, how modules and data cross trust boundaries.
-3. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
-4. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
-5. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
-6. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
+2. **[Development method](docs/METHOD.md)** — the steelman → crucible → verdict loop that turns informal proposals and analogies into ledger-labeled claims.
+3. **[Research architecture](docs/ARCHITECTURE.md)** — what belongs in the general theory, what is an optional RH adapter, how modules and data cross trust boundaries.
+4. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
+5. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
+6. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
+7. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
 
 ## Run it
 
