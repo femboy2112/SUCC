@@ -96,6 +96,39 @@ This is a sharp distinction among a model/source-map gap, an access/pathway gap,
 
 This is an information-theoretic obstruction relative to the chosen interface, **not** a theorem that the underlying mathematical distinction is unknowable by all possible methods.
 
+### Categorical reading: observational kernel pairs, not yet Yoneda full faithfulness
+
+For a fixed finite probe family \(S\subseteq P\), define the joint response map
+
+\[
+E_S:X\longrightarrow \prod_{p\in S}Y_p,\qquad
+E_S(x)=(r_p(x))_{p\in S}.
+\]
+
+Its **kernel pair** is the observational equivalence relation
+\(x\sim_S y\iff E_S(x)=E_S(y)\). If \(S\subseteq S'\), then
+\(\sim_{S'}\subseteq\sim_S\): adding source-faithful probes can refine
+observational equivalence but cannot merge previously separated sources.
+A source-relative access trap occurs when the current policy selects a
+family \(S\) with a nontrivial kernel pair on the actual and preferred
+sources, even though the declared global map \(E_P\) separates them.
+
+This is a **set-level** statement of joint source separation. It does
+**not** establish full faithfulness of a categorical Yoneda embedding:
+fullness/faithfulness of a functor refers to morphisms, whereas injectivity
+of the displayed response map concerns source objects. A genuine
+categorical generalization must explicitly specify source morphisms,
+probe presheaves, natural transformations and compatible access-change
+maps. This is a precise next research obligation rather than a diagram
+accepted because it resembles Yoneda.
+
+The other failure mode in the earlier ideal-frame note—the formal
+factorial Taylor jet with no analytic realization—is *not* a nontrivial
+kernel pair. There the inverse-limit observation data have **no
+preimage** in the declared analytic source class. Thus feedback blindness
+(noninjectivity under selected probes) and omega nonrealizability
+(failure of surjectivity onto the reported formal data) must stay separate.
+
 ## 5. Closed-loop counterexamples and repairs
 
 ### Access trap under maximally exhaustive local assimilation
