@@ -141,6 +141,7 @@ Use these labels:
 | O123 | Under invertible changing frames y_n=F_n x_n, the covariant difference y_(n+1)-F_(n+1)F_n^-1 y_n equals F_(n+1) Delta x_n | PROVED LOCAL / TESTED MODEL | Exact rational frame inverse and commutative square; unchanged canonical state with axis-swap gives nonzero naive coordinate difference and zero covariant source increment |
 | O124 | Affine local SUCC steps (U,eta) admit associative ordered composition and parallel-prefix reconstruction even when the individual frame actions do not commute | PROVED LOCAL / TESTED MODEL | Semidirect product (V,zeta)∘(U,eta)=(VU,V eta+zeta); 121 exact short paths, order-change control and layered scan |
 | O125 | A verified global frame/derivative description and a short certified jet prove that arbitrary physical observations can be acquired in one clock step, or imply holographic RH reconstruction/Weil positivity | UNVERIFIED | Requires actual source evidence, honest recurrence/transport, realizable hardware/measurement cost, field regularity and RH source-to-Weil bridge |
+| O126 | The complete order-N initial forward-difference jet of ANY finite sequence x0..xN reconstructs every point inside that observed horizon by finite Newton/Pascal binomial inversion, without polynomial source assumptions | CLASSICAL / PROVED LOCAL / TESTED MODEL | Binomial inversion theorem x_n=sum_{r=0}^n C(n,r) Delta^r x0 for 0<=n<=N; 1,092 exhaustive finite sequences and irregular multidimensional controls; does not prove unseen future samples |
 
 
 
@@ -149,6 +150,8 @@ Use these labels:
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.
+
+New unconditional finite-Newton inversion controls: all 1,092 arbitrary short integer sample sequences up to length six, plus arbitrary two-coordinate irregular values, invert exactly within the observed horizon via Pascal forward differences without assuming a global polynomial law. The same truncated jet does not justify an unseen continuation; this remains separate from source-certified polynomial extrapolation.
 
 New discrete-SUCC integration controls: exact first differences and receiver-anchored initial condition reconstruct all intermediate states, while equal net deltas can hide different internal paths; 364 additive finite difference source sequences and 121 affine ordered step sequences cross-check serial versus associative prefix; quadratic/cubic Newton jets extrapolate only under global degree certificates; finite samples without recurrence fail at delayed third step; changing axes create apparent local difference without canonical field change; transported covariant differences and matrix-frame square commute; one-step simultaneous mathematical evaluation is not physical SUCC source actualization.
 
