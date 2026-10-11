@@ -23,6 +23,18 @@
 
 **Output:** exact theorem(s), counterexample(s), reusable APIs, independent tests; paper-like report with physical scope.
 
+## Absorbing Hard SUCC and finite communication track
+
+**Implemented finite research model:** replace a privileged preferred hypothesis with the full compatible-source version space, sound named predictions and exact least Horn closure. Evaluate every as-yet-available instrument, distinguish new epistemic probe construction from physical feasibility, and certify report consistency and lawful causal access. This is a deliberately bounded finite implementation, not a physical supertask.
+
+**Implemented rigorous mathematical boundaries:** finite Horn closure and classical omega-continuous fixed points; monotone non-omega-continuous omega+1 counterexample; constructive Kripke nonforcing of excluded middle versus classical LEM; digital countability obstruction for exact arbitrary real-valued completions; separate minimum target-witness cardinality and full causal-history certification.
+
+**Implemented exact optimized channel:** one-shot zero-error sender→receiver messages with receiver-specific side information. Factorization feasibility and confusability graph chromatic number yield exact minimum fixed-width bits for the declared finite problem. This is classical information theory, not a new general coding theorem or physical capacity estimate.
+
+**Next missing tests/theorems:** a source- and resource-dependent physical feasibility relation (including whether failed physical attempts themselves convey an outcome), coinductive/recursive theory descriptions with effective finite certificates of omega fixed points, and a logically typed notion of semantic model revision whose contradictions do not make classical LEM false. Extend coding to source-faithful proof certificates, noisy observations and real transmission cost.
+
+See [Absorbing Hard SUCC and transmissibility](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md), exact modules absorbing_frames.py, constructive_frontier.py and interobserver_channels.py, and claims O55–O66.
+
 ## Stage 2: rigorous logic and ordinal realization
 
 - Formalize a full proof-predicate/representability story for syntax and diagonal substitution in a proof assistant (Lean, Coq or Isabelle), clearly separating the project’s finite syntax engine from established Gödel theorems.
