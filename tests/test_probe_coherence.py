@@ -8,6 +8,8 @@ from observational_succ.probe_coherence import (
     fixed_probe_trace, indistinguishable_source_pairs,
     local_carrier_no_go, independent_carrier_repair,
     nondestructive_probe_repair, prior_law_repair, probe_coherence_demo,
+    probe_family_determines_target, minimal_logical_probe_supports,
+    proof_induced_question_rewiring_demo,
 )
 
 
@@ -82,6 +84,39 @@ class ProbeCoherenceTests(unittest.TestCase):
         # Conditional mathematical implications do not prove the prior holds:
         # changing the source class is a new axiom / evidence premise.
 
+    def test_logical_probe_graph_minimum_and_carrier_support_are_distinct(self):
+        universe=tuple(InitialSource(a,b) for a,b in product((0,1),repeat=2))
+        self.assertFalse(probe_family_determines_target(universe,()))
+        self.assertFalse(probe_family_determines_target(universe,("a",)))
+        self.assertFalse(probe_family_determines_target(universe,("b",)))
+        self.assertTrue(probe_family_determines_target(universe,("a","b")))
+        self.assertEqual(minimal_logical_probe_supports(universe),(("a","b"),))
+        for source in universe:
+            for order in (("a","b"),("b","a")):
+                support=fixed_probe_trace(source,order).initial_support()
+                self.assertLess(len(support),2)
+        with self.assertRaises(CarrierHorizonError):
+            probe_family_determines_target(universe,("a","a"))
+
+    def test_verified_premise_contracts_and_rewires_minimum_probe_graph(self):
+        universe=tuple(InitialSource(a,b) for a,b in product((0,1),repeat=2))
+        a_zero=tuple(s for s in universe if s.a==0)
+        equality=tuple(s for s in universe if s.a==s.b)
+        self.assertEqual(minimal_logical_probe_supports(a_zero),(("b",),))
+        self.assertEqual(minimal_logical_probe_supports(equality),((),))
+        report=proof_induced_question_rewiring_demo()
+        self.assertEqual(report["unrestricted_minimal_probe_supports"],[["a","b"]])
+        self.assertEqual(report["with_verified_a_zero_law"],[["b"]])
+        self.assertEqual(report["with_verified_a_equal_b_law"],[[]])
+        self.assertFalse(report["same_carrier_can_jointly_realize_unrestricted_support"])
+        self.assertTrue(report["single_b_probe_works_after_valid_a_zero_law"])
+        self.assertFalse(report["globally_minimal_proof_encoding_claimed"])
+        # False premise cannot turn conditional support into unconditional truth.
+        bad=InitialSource(1,0)
+        observed_b=fixed_probe_trace(bad,("b",)).initial_support()["b"]
+        self.assertEqual(observed_b,0)
+        self.assertNotEqual(observed_b,bad.parity)
+
     def test_no_single_carrier_trace_can_legitimately_contain_both_initial_bits(self):
         for values in product((0,1),repeat=2):
             src=InitialSource(*values)
@@ -129,6 +164,8 @@ class ProbeCoherenceTests(unittest.TestCase):
     def test_reproducible_status_stays_within_theorem_scope(self):
         d=probe_coherence_demo()
         self.assertTrue(d["proof_support_unreachable_with_one_carrier"])
+        self.assertEqual(d["proof_graph_rewiring"]["status"],
+                         "PROOF_INDUCED_MINIMAL_DEPENDENCY_REWIRING")
         self.assertTrue(d["two_independent_preparations_repair_target"])
         self.assertTrue(d["non_destructive_probe_repairs_target"])
         self.assertTrue(d["lawful_source_prior_can_decide_without_experiment"])
