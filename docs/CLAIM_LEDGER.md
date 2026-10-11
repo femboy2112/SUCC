@@ -105,6 +105,7 @@ Use these labels:
 | O90 | Under a correctly declared winding prior k∈[-K,K] in the uniform-rotation family, one exact observation at time 1/(2K+1) can distinguish every candidate k | PROVED LOCAL / TESTED MODEL | Modular fractional phase injectivity on bounded integer class; test_circle_translation.py |
 | O91 | Polynomial circle membership selects one canonical trig orientation and phase origin automatically | REFUTED as universal inference | The translations y→sinθ versus y→−sinθ both respect the circle relation but reverse signed winding; calibrated quarter-turn controls |
 | O92 | A general observer-language translator preserving proof authority, physical probe access, complete path histories, future SUCC dynamics and all cross-field RH invariants follows from this pointwise ring isomorphism | UNVERIFIED | Requires typed observation/preservation diagrams, chart/phase calibration, path-space probes, causal provenance, plus RH-specific Euler/Gamma/source validation |
+| O93 | The unit circle's polynomial angular derivation D=-y∂x+x∂y corresponds to angular differentiation in the trig language, with sign inversion under reflected orientation; ω=x dy−y dx is locally dθ but globally nonexact | CLASSICAL / PROVED LOCAL / TESTED MODEL | Angular quotient derivation, Fourier intertwining, orientation-flip controls and nonzero circle period; TWO_LANGUAGES_ONE_CIRCLE §3d |
 
 ## Adversarial suite
 
