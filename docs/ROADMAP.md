@@ -53,13 +53,13 @@ See [Absorbing Hard SUCC and transmissibility](../research/2026-10-10/ABSORBING_
 
 **Verified conservative language update:** versioned, checked XOR/AND/NOT definitions can change the shared probe/concept basis while preserving its old source semantics and physical devices. A delta referencing the new basis is rejected by an epistemically frozen old receiver until a valid upgrade is installed.
 
-**Proof-shaped probe criterion:** a named probe value is deductible without empirical execution exactly when all sources compatible with the current evidence return the same result. The implementation creates/checks a contextual proof-shaped value certificate and distinguishes it from actual source event, mere experimental option, or independently observed source-dependent probe availability.
+**Two proof-shaped probe criteria:** (i) a named probe result is deducible without empirical execution exactly when all compatible sources give the same result; and (ii) even when the result is not known, the probe may be proven **target-decisive** if each outcome fiber determines the requested target. The code independently verifies both contextual proof certificates. A decisive plan reduces the search for an experiment but still requires that experiment to be physically feasible and performed; it must not forge source evidence or turn a possible instrument into an actual one.
 
 **Frozen-base no-go:** for n arbitrary unknown source bits relative to a fixed context, 2^n alternatives force some exact one-shot binary message to be at least n bits. Finite transmissions at every finite ladder rung do not imply a finite universal digital message for every limit source. Finite descriptions/proofs of particular infinite structures remain possible.
 
 **Next core work:** minimal **future-bisimulation-sufficient** path/value codes with all shared-basis and provenance costs counted; source-independent verified translators for genuine new mathematical and physical probes; nontrivial path/groupoid coherence; dynamic physical feasibility and quantum backaction; effective finite certificates for limits of moving bases.
 
-**Research:** [Relative knowledge SUCC and proof-shaped probes](../research/2026-10-11/RELATIVE_DELTA_PROOF_SHAPES_AND_FROZEN_BASE.md). Code: relative_delta.py; tests: test_relative_delta.py; ledger: O76–O83.
+**Research:** [Relative knowledge SUCC and proof-shaped probes](../research/2026-10-11/RELATIVE_DELTA_PROOF_SHAPES_AND_FROZEN_BASE.md). Code: relative_delta.py; tests: test_relative_delta.py; ledger: O76–O84.
 
 ## Stage 2: rigorous logic and ordinal realization
 
