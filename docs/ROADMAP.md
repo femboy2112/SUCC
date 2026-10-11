@@ -61,6 +61,18 @@ See [Absorbing Hard SUCC and transmissibility](../research/2026-10-10/ABSORBING_
 
 **Research:** [Relative knowledge SUCC and proof-shaped probes](../research/2026-10-11/RELATIVE_DELTA_PROOF_SHAPES_AND_FROZEN_BASE.md). Code: relative_delta.py; tests: test_relative_delta.py; ledger: O76–O84.
 
+## Cross-language observational transport: polynomial and trigonometric circle
+
+**Implemented exact calibration laboratory:** polynomial observer A uses Q[x,y]/(x²+y²−1) in canonical a(x)+y b(x) form; trigonometric observer B uses exact rational Fourier polynomials. Verified back-and-forth translation, addition/multiplication, Pythagorean circle identity and group rotation. The full real-coefficient isomorphism is CLASSICAL; the software checks the rational exact submodel.
+
+**Independent negative controls:** a rational stereographic parameter omits (-1,0), although the circle is regular; orientation-reflected equally valid translators reverse winding; finite rational-time point observations (including four cardinal samples) can come from paths of distinct winding; four cardinal samples cannot prove cosθ≡cos5θ. These are SOURCE-MAP, CALIBRATION and PROBE-GAP failures, not physical limitations of the circle.
+
+**Local repair:** a correct bounded winding source class admits a separating exact phase sample at t=1/(2K+1), while chart/signed-orientation defects require an atlas plus explicit calibration. A pointwise algebraic isomorphism does not already translate all temporal and topological information.
+
+**Next research:** give both observers identical time-indexed empirical data, translate the differential form x dy−y dx ↔ dθ with explicit chart changes, and prove winding/path concatenation preservation. Formalize a probe-labeled category of observer languages and a semantically faithful intermediary span; test independent translations, causal provenance, selected topology and required limit regularity. Do not claim Yoneda full faithfulness or RH Euler/Gamma positivity from the ring bridge.
+
+Sources: [Two languages, one circle](../research/2026-10-11/TWO_LANGUAGES_ONE_CIRCLE.md); circle_translation.py; tests/test_circle_translation.py; O85–O92.
+
 ## Stage 2: rigorous logic and ordinal realization
 
 - Formalize a full proof-predicate/representability story for syntax and diagonal substitution in a proof assistant (Lean, Coq or Isabelle), clearly separating the project’s finite syntax engine from established Gödel theorems.
