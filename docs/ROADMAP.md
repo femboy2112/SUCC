@@ -31,6 +31,14 @@
 - Compare plain oracle search, a sound \(\omega\)-rule, externally supplied reflection, and an ordinary finite universal proof.
 - Add Kleene's recursion theorem, Rice's theorem and computable-analysis probes as **separate** theorems with their proper hypotheses.
 
+## Ideal observational-frame completion track (independent of RH)
+
+- **First result implemented:** classify source-identification times as finite, omega-only, or persistently probe-dark, **relative to a specified source class, probe access policy, and target report**. Study three exact cases under an unchanged derivative-probe tower: bounded polynomials, analytic germs, smooth flat germs.
+- Require two distinct omega certificates: **uniqueness/faithfulness** (injective observation map for the desired target) and **realizability/regularity** (omega data actually come from the stated source class). Divergent factorial Taylor coefficients falsify the naive implication from finite analytic consistency to analytic omega realization.
+- Define probe-access morphisms and prove adaptive indistinguishability, distinguishing latent field distinctions from observable report distinctions. A semantic fixed point must not be counted as source identification.
+- Extend the finite exact jet lab to model-dependent probe menus and typed semantic closure, then derive source-relative reconstruction bounds or explicit impossibility witnesses. Compare static probes against off-origin additions and change-of-chart access.
+- Research record: [ideal frame completion trichotomy](../research/2026-10-10/IDEAL_FRAME_COMPLETION_TRICHOTOMY.md), with exact tests `tests/test_ideal_frames.py`. All-order and analytic limit facts remain **mathematical proofs**, not simulated omega test passes.
+
 ## Stage 3: second-order information geometry and topology
 
 - For a source-derived two-time kernel, implement mixed finite rectangle increments that cancel single-time contributions and track all boundary terms.
