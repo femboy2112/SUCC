@@ -15,6 +15,9 @@ def main():
     assert report["status"] == "EXACT_CIRCLE_POLYNOMIAL_TRIG_TRANSLATOR"
     assert report["coordinate_ring_identity_zero"] is True
     assert report["trigonometric_polynomial_identity_zero"] is True
+    assert report["angular_derivations_intertwine"] is True
+    assert report["global_angular_one_form_coefficient_one"] is True
+    assert report["global_single_valued_real_angle_claimed"] is False
     assert report["group_law_preserved"] is True
     assert report["orientation_requires_explicit_calibration"] is True
     assert report["reflected_winding_sign_inverted"] is True
