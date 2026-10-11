@@ -150,6 +150,36 @@ The finite executable model now supports:
 
 **Authentication boundary:** In the finite example the sender's reported outcomes are trusted *by assumption*. The decoder checks consistency against the source table and replayable endogenous access—but an adversary may fabricate a transcript compatible with some other source. No authentication of a real physical observer is claimed.
 
+### A sharper optimized-channel theorem: receiver-relative graph coloring
+
+There is a rigorous, **bit-optimal finite one-shot** interpretation of "transmit a completion to another observer." Let each actual source \(x\) induce a *sender-accessible* observation \(u(x)\in U\), a *receiver's own prior observation* \(v(x)\in V\), and a requested target \(t(x)\in Z\). The sender can transmit only \(e(u(x))\), not the true source or the receiver's private side observation. The receiver returns \(d(e(u(x)),v(x))\).
+
+The absolute feasibility condition is
+
+\[
+u(x)=u(y)\ \land\ v(x)=v(y)\quad\Longrightarrow\quad t(x)=t(y).
+\]
+
+If this fails, NO code length or decoder can recover the target from those combined observational interfaces; the pair \(x,y\) is a decisive no-go witness.
+
+Assuming finite \(U,V,Z\) and the condition, construct a graph \(G\) whose vertices are distinct sender observations \(u\). Join \(u\ne u'\) if there exist sources \(x,y\) with \(u(x)=u\), \(u(y)=u'\), \(v(x)=v(y)\) but \(t(x)\ne t(y)\). Such vertices cannot be assigned the same message. Conversely, if a message assignment is a **proper graph coloring**, the receiver can decode the target uniquely given that message and its \(v\)-value.
+
+Therefore, for a one-shot fixed-length, zero-error binary code with a shared decoder:
+
+\[
+\boxed{\ b_{\min}=\lceil\log_2\chi(G)\rceil.\ }
+\]
+
+**Proof:** Necessity follows from confusable vertices needing distinct codewords. Sufficiency follows by coloring \(G\) with \(\chi(G)\) colors; if two sources yield the same color and receiver view, their targets agree by the graph's edge definition and feasibility condition, so the decoder is well defined. There are \(2^b\) binary codewords of length \(b\), yielding the minimum number of bits.
+
+This is a **classical** graph-coloring formulation of zero-error coding with decoder side information; it is not a new theorem. Primary source: H. S. Witsenhausen, *The zero-error side information problem and chromatic numbers*, IEEE Trans. Information Theory 22 (1976), 592–593, https://doi.org/10.1109/TIT.1976.1055607 . Our contribution is a source- and target-typed finite observer implementation and hostile controls.
+
+**Concrete payoff:** A receiver whose own context rules out confusion between sender observations A and C may need only one bit to distinguish three sender situations A, B, C. The exact module constructs a path confusability graph A—B—C and finds a two-color, **one-bit** channel, where naive transmission of the exact sender identity would require two bits. A five-cycle example needs three colors (two bits) rather than encoding five identities in three bits.
+
+This is **not** optimal average code length, block coding, noisy-channel capacity or minimal physical transmission time. It also presupposes the receiver's side information is genuinely available and shared codebook/preprocessing is costed outside the message. In particular, finite digital codability cannot be conjured by an unmeasured physical state or a privileged global source oracle.
+
+**Artifacts:** \`observational_succ/interobserver_channels.py\` and \`tests/test_interobserver_channels.py\`, including independent brute-force reference enumeration over 64 small binary tables.
+
 ## 6. A productive self-reference counterexample: causal bootstrap
 
 Suppose a purported observation is "fine returned B", and the only rule unlocking the fine probe is
