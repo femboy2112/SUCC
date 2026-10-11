@@ -9,7 +9,7 @@ from observational_succ.adaptive_proof_policy import (
     adaptive_policy_demo,
 )
 from observational_succ.noncommuting_proof_transport import (
-    FiniteCarrier,Instrument,_bit_field,
+    FiniteCarrier,Instrument,_bit_field,SourceTransportError,
 )
 
 
@@ -157,7 +157,7 @@ class AdaptiveSourcePolicyTests(unittest.TestCase):
         with self.assertRaises(PolicyError):
             solve_adaptive_claim(f,(0,1,2,3),("0","1","1","0"),
                                  target_id="target",max_beliefs=1)
-        with self.assertRaises(Exception):
+        with self.assertRaises(SourceTransportError):
             solve_adaptive_claim(f,(0,0),("0","1","1","0"),
                                  target_id="duplicate-sources")
 
