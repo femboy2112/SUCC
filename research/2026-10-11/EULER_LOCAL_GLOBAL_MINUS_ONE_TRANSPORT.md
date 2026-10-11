@@ -33,6 +33,32 @@ as infinitely many primes at least 3 contribute factors of modulus at most 1/2. 
 \]
 The second expression means only the finite-prime-cutoff limit, not a nonzero-convergent Euler product. **Global continuation and infinite assembly cannot be swapped outside the original domain.** This is an exact negative control for careless SUCC transport across local and global frames.
 
+### 1b. The stronger SUCC/FUCC relation: an existing ax+b semigroup
+
+This local \((1-p)\) factor has an even more precise **operator-algebraic** connection to the maintainer's SUCC/FUCC operators. Acting on integer addresses, let
+\[
+S(n)=n+1,\quad V_p(n)=pn.
+\]
+Then
+\[
+S V_p(n)=pn+1,\quad V_p S(n)=pn+p,
+\]
+so the **address difference** is
+\[
+\boxed{S V_p(n)-V_p S(n)=1-p.}
+\]
+At the Hilbert-space level the true relation on the canonical orthonormal basis is
+\[
+\boxed{V_p S=S^p V_p.}
+\]
+The two sides map \(|n\rangle\) to the **same** ket \(|pn+p\rangle\). The genuine operator commutator is \([S,V_p]|n\rangle=|pn+1\rangle-|pn+p\rangle\), **not** the scalar \((1-p)|n\rangle\). The \(p-1\) extra SUCC steps are the exact cost of moving a prime dilation past a unit shift.
+
+**Falsification/source control:** For **every composite** integer \(q\ge2\), the same ax+b relation \(V_q S=S^q V_q\) and address defect \(1-q\) hold. In particular, 6 yields defect -5 but 6 is *not* an independent Euler prime factor. Therefore the affine commutation law ALONE does not recover primality, an Euler product, the Gamma completion, or RH. Unique factorization and authentic prime-supported Euler data remain additional premises.
+
+**Strong independently established connection:** Joachim Cuntz, *C*-algebras associated with the ax+b-semigroup over N*, 2006, [arXiv:math/0611541](https://arxiv.org/abs/math/0611541), explicitly develops the shift/dilation semigroup on \(\ell^2(\mathbb N)\), connects its \(C^*\)-algebra to the Bost–Connes number-theoretic construction, and realizes a related stabilized \(C^*\)-algebra through crossed products of **finite-adèle functions** and, separately, functions on the **real Archimedean completion**. Cuntz's original construction uses additional quotient/analytic relations; the raw SUCC/FUCC isometries alone do NOT automatically prove an isomorphism of those completed algebras.
+
+This is an **actual published mathematical finite↔Archimedean relation in the same ax+b family**. It raises a serious future path: identify the precise operator algebra, quotient/representation, regularity, dynamics and source-specific zeta partition function, then see whether its legitimate analytic completion carries the relevant Weil-form structure. No such bridge is proved by the present prime-gap arithmetic tests, and there is no claim of academic priority.
+
 ## 2. The lawful global transport uses the Gamma/Archimedean completion
 
 The classical functional equation is
@@ -109,6 +135,7 @@ So the global transport is not a universal correction that can be pasted onto ar
 ## 5. Claims, limits and next decisive questions
 
 - **O128 CLASSICAL / TESTED MODEL:** \(E_p(-1)=-1/(p-1)\), the negative inverse first prime-jet SUCC return gap.
+- **O136 CLASSICAL / PROVED LOCAL / TESTED MODEL:** the exact ax+b relation `V_p S=S^p V_p` and address-level discrepancy `SV_p(n)-V_pS(n)=1-p` connect the local Euler denominator to shift–dilation noncommutation. The same relation holds for composite q, so it is not a prime-selection/Euler-source theorem.
 - **O129 PROVED LOCAL:** locally continued prime-factor cutoff product tends to zero and is not global \(\zeta(-1)\).
 - **O130 CLASSICAL:** completed zeta/functional equation relates the continued \(-1\) to the convergent Euler product at \(2\).
 - **O131 PROVED LOCAL conditional on the classical global theorems:** finite prime cutoff yields \(V_X\) with absolute error ≤1/(12X).
