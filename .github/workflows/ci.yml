@@ -160,6 +160,10 @@ jobs:
           assert j["reflected_winding_sign_inverted"] is True
           assert j["identical_finite_phase_samples"] is True
           assert j["different_true_winding_numbers"] is True
+          assert j["pairwise_rational_time_separator"]=="1/5"
+          assert j["all_rational_times_identify_integer_winding_ideal_theorem"] is True
+          assert j["any_fixed_finite_rational_sample_family_identifies_unbounded_winding"] is False
+          assert j["infinite_rational_probe_sequence_executed"] is False
           assert j["matching_sampled_windings"]==[1,5]
           assert j["full_path_observability_proved_by_samples"] is False
           assert j["general_two_theory_translation_proved"] is False
