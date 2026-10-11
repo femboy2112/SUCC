@@ -446,6 +446,26 @@ def winding_alias_for_rational_samples(turns: int, samples):
                                  a == b, turns == turns+shift, shift)
 
 
+def distinguishing_rational_time_for_windings(k: int, j: int) -> Fraction:
+    """Construct one rational-time separating point probe for k!=j.
+
+    Choose t=1/(|k-j|+1). Their angular phases differ by
+    |k-j|/(|k-j|+1), which is strictly between zero and one,
+    hence they cannot describe the same circle point at that time.
+
+    Consequently complete information at ALL rational times identifies
+    k uniquely, though any finite subset has an LCM winding alias.
+    This returns just a FINITE witness for the named rival pair and
+    never attempts to execute the omega-level probe family.
+    """
+    if type(k) is not int or type(j) is not int or k == j:
+        raise CircleTranslationError("A pair of different integer sources is required")
+    t = Fraction(1, abs(k-j)+1)
+    if periodic_point_signature(k,(t,)) == periodic_point_signature(j,(t,)):
+        raise ArithmeticError("The rational pair-separation theorem was contradicted")
+    return t
+
+
 def cross_language_circle_demo():
     x, y = CirclePolynomial.x(), CirclePolynomial.y()
     algebraic = x*x+y*y-CirclePolynomial.scalar(1)
@@ -462,6 +482,7 @@ def cross_language_circle_demo():
     sample_times = (Fraction(0), Fraction(1, 4), Fraction(1, 2),
                     Fraction(3, 4), Fraction(1))
     witness = winding_alias_for_rational_samples(1, sample_times)
+    rational_rival_separator = distinguishing_rational_time_for_windings(1,5)
     assert (algebraic == CirclePolynomial() and trig == TrigFourierPolynomial()
             and rotated == (Fraction(0), Fraction(1))
             and witness.original_turns == 1 and witness.aliased_turns == 5
@@ -481,6 +502,10 @@ def cross_language_circle_demo():
         "matching_sampled_windings": [witness.original_turns, witness.aliased_turns],
         "identical_finite_phase_samples": witness.finite_samples_equal,
         "different_true_winding_numbers": not witness.winding_numbers_equal,
+        "pairwise_rational_time_separator": str(rational_rival_separator),
+        "all_rational_times_identify_integer_winding_ideal_theorem": True,
+        "any_fixed_finite_rational_sample_family_identifies_unbounded_winding": False,
+        "infinite_rational_probe_sequence_executed": False,
         "full_path_observability_proved_by_samples": False,
         "general_two_theory_translation_proved": False,
         "RH_claimed": False,
