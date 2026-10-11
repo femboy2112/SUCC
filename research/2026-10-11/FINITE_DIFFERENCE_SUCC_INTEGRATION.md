@@ -43,6 +43,28 @@ An individual x_n can also be reconstructed by summing its prefix independently 
 
 ## 3. Newton finite-difference jets: when a mathematical proof removes whole observation-path obligations
 
+### 3a. Unconditional finite Newton inversion (important strengthening)
+
+For **any** finite sequence of exact observed states \(x_0,\dots,x_N\), without assuming a polynomial law or even a smooth trajectory,
+
+\[
+\boxed{x_n=\sum_{r=0}^{n}\binom nr\,\Delta^r x_0,
+\quad 0\le n\le N.}
+\]
+
+This is a pure **finite binomial-inversion identity**. The coefficients of the discrete jet and the observations are related by the inverse triangular Pascal transform:
+\[
+\Delta^r x_0=\sum_{j=0}^{r}(-1)^{r-j}\binom rj\,x_j.
+\]
+
+**Proof:** The two Pascal matrices \(P_{nr}=\binom nr\) and \(Q_{rj}=(-1)^{r-j}\binom rj\) are inverse, by \(\binom nr\binom rj=\binom nj\binom{n-j}{r-j}\) and the binomial cancellation \(\sum_{t=0}^{n-j}(-1)^t\binom{n-j}t=0\) for \(n\ne j\). Thus the given jet uniquely recovers **all observations already inside its finite support**. Equivalently, \(x_n\) is directly computable from the first n Newton coefficients, not necessarily from sequentially reconstructing all earlier \(x_k\).
+
+For each **separate** finite n, the identity needs only n+1 finite samples, even if the full sequence is arbitrary. Recovering a globally unrestricted sequence for every n may require its **entire infinite jet**; merely having a finite jet of order d never implies the next unobserved coefficient is zero. This is the exact finite-versus-\(\omega\) distinction.
+
+The new \`finite_newton_reconstruct_samples\` test establishes this identity on **1,092 arbitrary short source sequences** (all sequences of length 1–6 over values -1,0,1), plus independent two-coordinate irregular examples. This proof requires no physical source-class assumption beyond genuine finite observations. It may provide an alternate coordinate representation of the data, but not necessarily any compression: the full order-N jet contains N+1 coefficients.
+
+### 3b. Finite-jet extrapolation and genuine compression require a law
+
 Define iterated differences \(\Delta^r x_0\). The discrete analogue of a Taylor expansion is the Newton forward formula
 
 \[
@@ -165,6 +187,7 @@ To connect with the user's proof-as-inverted-dual idea, view a proof of the poly
 | Are x0 plus all finite first differences enough to recover each intermediate state? | Exact additive telescoping and complete path-state comparison | YES (proved local) |
 | Is terminal net delta enough to recover the intermediate history? | (+1,-1) vs (-1,+1) on x0=0 | NO |
 | Are all intermediate additive paths computationally parallelizable? | Hillis–Steele prefix scans vs serial path on hundreds of small exhaustive cases | YES, log dependency depth; not physical O(1) |
+| Is the complete N-th order forward-difference jet sufficient to reconstruct ANY known sequence of N+1 samples? | All 1,092 short arbitrary data sequences with exact Pascal inversion | YES within sampled horizon; no outside extrapolation |
 | Are d+1 finite samples evidence of a global degree≤d law? | Zero samples 0,0,0 with a surprise nonzero next value | NO |
 | Given a sound Δ^(d+1) law, does the Newton jet reconstruct all future stages? | n² and n³ examples, source-family checks, arbitrary valid n | YES, conditional |
 | Is coordinate difference always physical change? | Static x plus changing F | NO; naive coordinate delta differs from covariant delta |
@@ -176,6 +199,7 @@ To connect with the user's proof-as-inverted-dual idea, view a proof of the poly
 ## 8. Claim ledger proposal and future falsifiers
 
 Proposed new entries:
+- **O126 PROVED LOCAL / TESTED MODEL:** an arbitrary *finite observed* SUCC sequence is exactly reconstructed within its known horizon by the full forward-difference jet via Pascal binomial inversion, without polynomial/extrapolation assumptions; a truncated jet alone does not license unseen future stages.
 
 - **O118 PROVED LOCAL / TESTED MODEL:** shared versioned basis + anchored x0 + ordered source-valid first differences reconstruct all finite intermediate SUCC states.
 - **O119 REFUTED:** the aggregate net difference alone determines the individual interior SUCC path.
