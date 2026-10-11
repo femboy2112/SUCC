@@ -20,6 +20,7 @@
 | Twin-observer field invariance | Same physical source/probes/reasoner, distinct investigation focus, exact common tangent translation, relative testimony and flat smooth-loop finite-jet adversary | twin_circle_observers |
 | Proof-carrier coherence and dependency contraction | Typed original-versus-modified source readings, destructive probe transitions, minimal logical evidence supports, operational impossibility and positive repairs | probe_coherence |
 | Basis-indexed relative boundary transport | Anchored sparse additive coefficient messages, noncommuting action paths, proof-certified value sharing, exact finite Fourier boundary inverse and finite-precision/source-class obstruction probes | basis_boundary_transport |
+| Discrete SUCC integration and frame-aware jets | Shared versioned initial condition, exact finite first difference streams, Newton source-law jets, rational covariant frame derivatives and ordered affine prefix scans | succ_discrete_integration |
 | Logical proof authority | First-order syntax, Gödel codes, checking finite proofs, finite two-counter program observations | observer_logic, godel_succ, observer_reflection |
 | Ordinal/limit phenomena | Directed finite histories, formal omega reports, nonuniform limits, finite proof support | infinite_realization, ordinal_succ_report |
 | Mathematical stress tests (optional) | Gamma/FUCC, Euler source, Hasse, Li, Suzuki/Weil, Lambert, certification | gamma_interferometer, gamma_succ_path, balanced_theta_li, hasse_theta_seam, dirichlet_lambert, lambert_succ, source_prime_certificates |
@@ -89,6 +90,16 @@ Finite Hard SUCC exhausts an exact finite rule/probe universe. For an infinite t
 A source- and report-preserving inter-observer completion requires a finite message, common decoding semantics, and trustworthy causal evidence. The exact full-frame message includes source-compatible lawful probe-acquisition replay, while a shorter target-only witness explicitly lacks that provenance. Finite-alphabet exact universal communication of arbitrary real constants is impossible by countability. For finite one-shot zero-error communication with receiver side information, the optimal fixed-length bit budget is derived from the confusability graph chromatic number, not from mere probe count.
 
 See [the formal research memo](../research/2026-10-10/ABSORBING_HARD_SUCC_AND_TRANSMISSIBILITY.md) and claim ledger O55–O66. The finite implementations do not automatically transport to general neural, quantum, or RH settings.
+
+## Finite-difference SUCC and moving-frame reconstruction
+
+The shared mathematical basis specifies which indices and operations mean what; B's last agreed coordinate *state* is the initial condition. A transmits first differences `Delta x_n=x_(n+1)-x_n`. B's knowledge-aided SUCC integrates these exactly by `x_n=x_0+sum_{k<n}Delta x_k`, recovering all intermediate stages from one message. A mere terminal net-difference loses intermediate path distinctions. An associative scan provides O(log N) parallel circuit dependency depth when all derivative inputs are already available; our code executes serially and has no claim of physical one-clock-step observation.
+
+When a separately justified global recurrence `Delta^(d+1)x_n=0` holds, the Newton binomial basis computes `x_n=sum_{r=0}^d binom(n,r)Delta^r x_0`. This is proof-induced path contraction: few initial differences and a sound law replace many intermediate state reports. Matching d+1 finite observations does not itself justify recurrence extrapolation; source-family membership and proof authority remain externally specified.
+
+If local frames vary by invertible `F_n`, the correct connection is `U_n=F_(n+1)F_n^-1`; then the covariant finite difference is `y_(n+1)-U_n y_n=F_(n+1)Delta x_n`. Corresponding local SUCC changes are affine operators `(U_n,eta_n)`, composing associatively by `(V,zeta) ∘ (U,eta)=(VU,Veta+zeta)` but not necessarily commuting. Ordered path computation can still use a prefix scan; a changed coordinate frame must never be misidentified as source change.
+
+These finite source-connected mathematical maps are **pure-gauge/flat** when all `U_n` arise from globally supplied `F_n`. Nothing establishes physical curvature, nontrivial holonomy, a universal carrier-transmission theorem or a source-derived arithmetic RH positivity form. See [finite-difference SUCC](../research/2026-10-11/FINITE_DIFFERENCE_SUCC_INTEGRATION.md), ledger O118–O125.
 
 ## Shared indexed basis, noncommuting paths, and mathematical boundary encoding
 
