@@ -309,7 +309,7 @@ def transmit_target_witness(witness: TargetWitness) -> bytes:
         raise AbsorptionError("Require an exact target sufficiency witness")
     payload = {"protocol": "obs-succ-target-v1", "target": witness.target_value,
                "observed": [[p, y] for p, y in witness.observations],
-               "scope": "target-only-no-access-proof"}
+               "scope": "target-only"}
     return json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
 
 
