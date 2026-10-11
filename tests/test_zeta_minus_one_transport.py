@@ -15,6 +15,7 @@ from observational_succ.zeta_minus_one_transport import (
     eta_abel_value, eta_abel_deficit, negative_odd_zeta_from_bernoulli,
     zeta_minus_one_transport_demo,
     shift_dilation_address_defect, shift_dilation_operator_identity,
+    bost_connes_spectral_trace_cutoff,
 )
 
 
@@ -166,6 +167,28 @@ class ZetaLocalGlobalTransportTests(unittest.TestCase):
         # Rigorous contradiction follows from product-to-zero theorem,
         # whereas completed zeta at -1 has the nonzero Bernoulli value.
 
+    def test_bost_connes_diagonal_trace_convergent_vs_divergent_regimes(self):
+        for N in (1,2,3,4,8,16,32,64):
+            self.assertEqual(bost_connes_spectral_trace_cutoff(-1,N),
+                             Q(N*(N+1),2))
+            positive=bost_connes_spectral_trace_cutoff(2,N)
+            self.assertEqual(positive,
+                             sum((Q(1,n*n) for n in range(1,N+1)),Q(0)))
+            self.assertGreater(positive,0)
+        self.assertEqual(bost_connes_spectral_trace_cutoff(-1,4),Q(10))
+        self.assertEqual(bost_connes_spectral_trace_cutoff(2,4),Q(205,144))
+        self.assertNotEqual(bost_connes_spectral_trace_cutoff(-1,4),Q(-1,12))
+        self.assertGreater(bost_connes_spectral_trace_cutoff(-1,64),
+                           bost_connes_spectral_trace_cutoff(-1,32))
+        with self.assertRaises(EulerTransportError):
+            bost_connes_spectral_trace_cutoff(-1,0)
+        with self.assertRaises(EulerTransportError):
+            bost_connes_spectral_trace_cutoff(True,2)
+        with self.assertRaises(EulerTransportError):
+            bost_connes_spectral_trace_cutoff(-1,4097)
+        # Imported result: Bost–Connes partition trace=ζ(β) where β>1.
+        # No KMS construction or analytic continuation is performed here.
+
     def test_receipt_retains_no_rh_zero_reading_or_physical_claims(self):
         r=zeta_minus_one_transport_demo()
         self.assertEqual(r["status"],"ZETA_MINUS_ONE_GLOBAL_EULER_ARCHIMEDEAN_TRANSPORT")
@@ -176,6 +199,11 @@ class ZetaLocalGlobalTransportTests(unittest.TestCase):
         self.assertTrue(r["same_shift_dilation_defect_rule_for_composite_six"])
         self.assertTrue(r["nonprime_affine_defect_does_not_authorize_euler_prime_factor"])
         self.assertFalse(r["operator_commutator_claimed_scalar"])
+        self.assertEqual(r["bost_connes_positive_beta_two_finite_trace_n_four"],"205/144")
+        self.assertEqual(r["bost_connes_beta_minus_one_finite_trace_n_four"],"10")
+        self.assertTrue(r["bost_connes_partition_function_for_beta_gt_one_is_zeta"])
+        self.assertTrue(r["bost_connes_analytic_zeta_minus_one_is_not_ordinary_trace"])
+        self.assertFalse(r["bost_connes_operator_algebra_or_KMS_state_constructed_here"])
         self.assertFalse(r["cuntz_ax_b_finite_arch_completion_proved_here"])
         self.assertEqual(r["global_zeta_minus_one_value"],"-1/12")
         self.assertEqual(r["abel_eta_negative_one"],"1/4")
