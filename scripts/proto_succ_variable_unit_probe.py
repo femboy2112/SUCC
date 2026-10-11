@@ -25,6 +25,11 @@ def main():
     assert x["higher_order_SUCC_jet_formula"]=="x_n=sum_k binom(n,k) Delta^k x_0"
     assert x["quadratic_d0_two_acceleration_three"]==[0,2,7,15,26,40]
     assert x["higher_order_integer_binomial_formula"] is True
+    assert x["linear_step_unit_stability_iff_d0_unit_and_acceleration_divisible_by_p"] is True
+    assert x["stable_d0_two_a_five_mod_p_five"]["full_clock_gauge_valid_at_every_n"] is True
+    assert x["stable_d0_two_a_five_mod_p_five"]["first_nonunit_succ_index"] is None
+    assert x["unstable_d0_one_a_four_mod_p_five"]["full_clock_gauge_valid_at_every_n"] is False
+    assert x["unstable_d0_one_a_four_mod_p_five"]["first_nonunit_succ_index"]==1
     assert x["changing_unit_can_stop_being_a_local_clock_unit"]["initial_unit_clock_period"]==25
     assert x["changing_unit_can_stop_being_a_local_clock_unit"]["updated_nonunit_clock_period"]==5
     assert x["changing_unit_can_stop_being_a_local_clock_unit"]["same_full_clock_coordinate_isomorphism_survives"] is False
