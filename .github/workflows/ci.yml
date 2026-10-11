@@ -67,6 +67,25 @@ jobs:
           assert j["physical_cognition_claimed"] is False
           assert j["RH_or_Godel_independence_claimed"] is False
           PY
+      - name: Absorbing Hard SUCC, constructive limit and finite communication
+        run: |
+          python scripts/absorbing_frontier_probe.py > "$RUNNER_TEMP/absorbing-frontier.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"absorbing-frontier.json").read_text())
+          assert j["status"]=="ABSORBING_SUCC_FINITE_THEOREM_CONTROLS"
+          assert j["absorbing"]["full_hard_succ_identified"] is True
+          assert j["absorbing"]["physical_barrier_remaining_candidates"]==["A","B"]
+          assert j["constructive_logic"]["root_forces_P_or_not_P"] is False
+          assert j["constructive_logic"]["classical_excluded_middle_invalidated"] is False
+          assert j["omega_limit"]["omega_plus_one_contains_seal"] is True
+          assert j["omega_limit"]["physical_infinite_iteration_executed"] is False
+          assert j["finite_channel"]["minimum_fixed_width_bits"]==1
+          assert j["finite_channel"]["naive_sender_id_fixed_width_bits"]==2
+          assert j["unrestricted_real_exact_bit_transmission_claimed"] is False
+          assert j["RH_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -87,5 +106,6 @@ jobs:
             ${{ runner.temp }}/prime-source.json
             ${{ runner.temp }}/semantic-data-processing.json
             ${{ runner.temp }}/observer-trap.json
+            ${{ runner.temp }}/absorbing-frontier.json
           if-no-files-found: warn
           retention-days: 14
