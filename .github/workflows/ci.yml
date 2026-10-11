@@ -152,6 +152,9 @@ jobs:
           assert j["status"]=="EXACT_CIRCLE_POLYNOMIAL_TRIG_TRANSLATOR"
           assert j["coordinate_ring_identity_zero"] is True
           assert j["trigonometric_polynomial_identity_zero"] is True
+          assert j["angular_derivations_intertwine"] is True
+          assert j["global_angular_one_form_coefficient_one"] is True
+          assert j["global_single_valued_real_angle_claimed"] is False
           assert j["group_law_preserved"] is True
           assert j["orientation_requires_explicit_calibration"] is True
           assert j["reflected_winding_sign_inverted"] is True
