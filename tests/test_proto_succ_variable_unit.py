@@ -9,6 +9,7 @@ from observational_succ.proto_succ_variable_unit import (
     modular_orbit, clock_change_isomorphism, shift_dilation_address_defect,
     normalized_defect_mod, prime_jet_directed_gap,
     HigherSuccJet, higher_succ_step_units, clock_unit_change_witness,
+    classify_linear_unit_stability,
     variable_proto_succ_demo,
 )
 
@@ -174,6 +175,46 @@ class ProtoSuccVariableUnitTests(unittest.TestCase):
         self.assertEqual(binomial_integer(-1,2),1)
         self.assertEqual(binomial_integer(-2,2),3)
 
+    def test_linear_step_unit_stability_iff_d0_unit_and_a_multiple_p(self):
+        # This proves a FULL all-n criterion by algebra; exhaustive finite
+        # residues are regression controls for earliest failure index.
+        cases=0
+        for p in (2,3,5,7,11):
+            for d0 in range(-7,8):
+                for a in range(-7,8):
+                    receipt=classify_linear_unit_stability(p,d0,a)
+                    stable=(d0%p!=0 and a%p==0)
+                    expected=next((n for n in range(p)
+                                   if (d0+n*a)%p==0),None)
+                    self.assertEqual(
+                        receipt["full_clock_gauge_valid_at_every_n"],stable)
+                    self.assertEqual(
+                        receipt["first_nonunit_succ_index"],expected)
+                    self.assertEqual(expected is None,stable)
+                    for n in range(3*p+1):
+                        if stable:
+                            self.assertNotEqual((d0+n*a)%p,0)
+                        elif expected is not None and n==expected:
+                            self.assertEqual((d0+n*a)%p,0)
+                    cases+=1
+        self.assertEqual(cases,1125)
+
+    def test_linear_higher_succ_can_preserve_or_destroy_all_unit_frames(self):
+        stable=classify_linear_unit_stability(5,2,5)
+        changed=classify_linear_unit_stability(5,1,4)
+        initially_bad=classify_linear_unit_stability(5,5,5)
+        self.assertTrue(stable["full_clock_gauge_valid_at_every_n"])
+        self.assertIsNone(stable["first_nonunit_succ_index"])
+        self.assertFalse(changed["full_clock_gauge_valid_at_every_n"])
+        self.assertEqual(changed["first_nonunit_succ_index"],1)
+        self.assertFalse(initially_bad["full_clock_gauge_valid_at_every_n"])
+        self.assertEqual(initially_bad["first_nonunit_succ_index"],0)
+        for r in (1,2,3,4):
+            self.assertEqual(additive_clock_period(5,r,2+5*100),5**r)
+            self.assertLess(additive_clock_period(5,r,5),5**r)
+        with self.assertRaises(ProtoSuccError):
+            classify_linear_unit_stability(6,1,5)
+
     def test_proto_succ_variable_unit_may_change_local_access_class(self):
         receipt=clock_unit_change_witness()
         self.assertEqual(receipt["starting_jet"],[0,1,4])
@@ -231,6 +272,11 @@ class ProtoSuccVariableUnitTests(unittest.TestCase):
         self.assertTrue(d["symbolic_unit_must_not_be_automatically_assumed_invertible"])
         self.assertEqual(d["quadratic_d0_two_acceleration_three"],[0,2,7,15,26,40])
         self.assertTrue(d["higher_order_integer_binomial_formula"])
+        self.assertTrue(d["linear_step_unit_stability_iff_d0_unit_and_acceleration_divisible_by_p"])
+        self.assertTrue(d["stable_d0_two_a_five_mod_p_five"]["full_clock_gauge_valid_at_every_n"])
+        self.assertIsNone(d["stable_d0_two_a_five_mod_p_five"]["first_nonunit_succ_index"])
+        self.assertFalse(d["unstable_d0_one_a_four_mod_p_five"]["full_clock_gauge_valid_at_every_n"])
+        self.assertEqual(d["unstable_d0_one_a_four_mod_p_five"]["first_nonunit_succ_index"],1)
         self.assertTrue(d["d_zero_specialization_loses_normalized_defect_information"])
         self.assertFalse(d["new_RH_Gamma_or_Kubota_Leopoldt_theorem_claimed"])
 
