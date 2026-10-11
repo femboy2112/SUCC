@@ -556,3 +556,81 @@ def relative_delta_demo() -> dict:
         "physical_speedup_claimed": False,
         "infinite_communication_claimed": False,
     }
+
+
+
+def position_anchored_demo() -> dict:
+    """Independent histories, same operational position, one relative SUCC."""
+    world=FiniteProbeWorld(
+        ("A","B"),("p0","p1","p2"),
+        (("same","same","A"),("same","same","B")))
+    rules=(
+        HornRule(("obs:p0:same",),"can:p1"),
+        HornRule(("obs:p1:same",),"can:p2"),
+    )
+    basis=SharedKnowledgeBasis(
+        world,("can:p0",),rules,
+        (("Alice",world.probes),("Bob",world.probes)))
+    alice_before=AgentKnowledge("Alice").local_succ(basis,"B")
+    bob_before=AgentKnowledge("Bob").local_succ(basis,"B")
+    assert (alice_before.batches != bob_before.batches
+            and operational_position(alice_before,basis)
+                == operational_position(bob_before,basis))
+    alice_after=alice_before.advance(basis,"B",2)
+    packet=encode_position_delta(alice_before,alice_after,bob_before,basis)
+    bob_after=decode_position_delta(bob_before,packet,basis)
+    equality=certify_finite_continuation(alice_after,bob_after,basis)
+    assert equality.equivalent
+    assert (bob_after.batches[0].origin=="Bob"
+            and tuple(batch.origin for batch in bob_after.batches[1:])
+                == ("Alice","Alice")
+            and bob_after.informed_steps==1
+            and bob_after.local_frames==1)
+    return {
+        "status":"EXACT_POSITION_ANCHORED_KNOWLEDGE_SUCC",
+        "independent_prior_histories":True,
+        "same_prior_knowledge_access_and_reasoning":True,
+        "relative_informed_steps":bob_after.informed_steps,
+        "additional_sender_local_frames":2,
+        "old_receiver_event_origin_preserved":"Bob",
+        "new_sender_event_origins":["Alice","Alice"],
+        "operational_continuation_verified":equality.equivalent,
+        "continuations_checked":equality.local_transitions_checked,
+        "cryptographic_measurement_authentication_claimed":False,
+        "physical_speedup_claimed":False,
+    }
+
+
+def proof_shape_and_basis_demo() -> dict:
+    world=FiniteProbeWorld(
+        ("00","01","10","11"),("left","right"),
+        (("0","0"),("0","1"),("1","0"),("1","1")))
+    base=SharedKnowledgeBasis(
+        world,("can:left","can:right"),(),
+        (("Alice",world.probes),("Bob",world.probes)))
+    recipe=DerivedBooleanConcept("parity","xor",("left","right"))
+    packet=encode_concept_upgrade(base,recipe)
+    upgraded=receive_concept_upgrade(base,packet)
+    observer=AgentKnowledge("Alice")
+    before=probe_option_result(observer,upgraded,"parity")
+    assert before.is_an_epistemic_option and not before.inferable_without_measuring
+    measured=observer.local_succ(upgraded,"10")
+    after=probe_option_result(measured,upgraded,"parity")
+    proof=prove_probe_value(measured,upgraded,"parity")
+    assert (after.inferable_without_measuring
+            and after.inferred_value=="1"
+            and verify_probe_value(measured,upgraded,proof))
+    return {
+        "status":"VERIFIED_CONSERVATIVE_PROOF_PROBE_UPGRADE",
+        "old_basis":base.fingerprint,
+        "new_basis":upgraded.fingerprint,
+        "new_epistemic_probe":"parity",
+        "new_physical_instrument_created":False,
+        "option_alone_determined_result":False,
+        "proof_after_primitive_evidence_determined_result":True,
+        "proved_value":proof.value,
+        "parity_physically_observed":False,
+        "frozen_base_minimum_worst_case_bits_for_eight_arbitrary_bits":
+            frozen_base_minimum_worst_case_bits(8),
+        "universal_finite_omega_message_claimed":False,
+    }
