@@ -120,6 +120,60 @@ But that same extended schedule cannot distinguish γ_1 from γ_9: the new denom
 
 **Primary conceptual reference:** Northern Michigan University, *The Fundamental Group of the Circle*, https://euclid.nmu.edu/~joshthom/ma516/lectures/lecture15.html; π₁(S¹)≅Z and path lifting are classical. The winding/coordinate line-integral formula is shown in University of Toronto MAT237 notes, https://www.math.toronto.edu/courses/mat237y1/20189/notes/Chapter5/S5.1.html.
 
+### 3d. A genuinely stronger translator: angular calculus and its global obstruction
+
+The polynomial observer is not doomed to be static. It can construct an **algebraic angular derivation**
+
+\[
+D=-y\,\partial_x+x\,\partial_y.
+\]
+
+This is tangent to the circle: \(D(x^2+y^2-1)=-2xy+2yx=0\). Hence D is a well-defined derivation on the circle's coordinate quotient. In A's canonical polynomial normal form \(f=A(x)+y B(x)\), the formula is
+
+\[
+D f=\big[xB-(1-x^2)B'\big]+y(-A').
+\]
+
+In B's trig coordinates, the same operator is differentiation with respect to angle:
+
+\[
+\boxed{\quad T_+(Df)=\frac{d}{d\theta}(T_+f).\quad}
+\]
+
+This is not just agreement of static expressions; **the translator intertwines the angular differential operator**. The exact Fraction/Fourier code verifies this on arbitrary test polynomials, checks the Leibniz rule, and separately implements both derivations.
+
+But an orientation-reversed translation \(T_-\), defined by \(y\mapsto-\sin\theta\), must satisfy instead
+
+\[
+T_-(Df)=-\frac{d}{d\theta}(T_-f).
+\]
+
+That sign is a genuine orientation-calibration datum, not an algebraic inconsistency. We test both equalities.
+
+Now consider A's globally defined differential one-form
+
+\[
+\boxed{\omega=x\,dy-y\,dx.}
+\]
+
+It evaluates to one on the tangential generator:
+
+\[
+\omega(D)=xD(y)-yD(x)=x^2+y^2=1.
+\]
+
+In a chosen positively oriented local angular chart, substitution \(x=\cos\theta,y=\sin\theta\) yields \(\omega=d\theta\). This is an exact **local translation of differential structure**. Yet a single globally defined continuous real-valued angle \(\theta:S^1\to\mathbb R\) cannot give the whole circle: for a positively oriented once-around loop,
+
+\[
+\oint_{S^1}\omega=2\pi\ne0,
+\]
+
+whereas the integral of a globally exact form \(d\theta\) around any closed loop is zero. The circle's cohomology/covering topology is the *global gluing obstruction*. Local angle charts differ by integer multiples of \(2\pi\); their phase lifts produce the winding number.
+
+**Finding:** the two observers can transport richer mathematics than point identities **provided they also transport differentiation, integration and oriented paths**. Algebra and trig are not intrinsically air-gapped; the obstruction is attempting to use a single global angle scalar or static point-report where the real invariant lives in the path/covering structure.
+
+**Reference:** Northern Michigan University's [fundamental group and covering-space notes](https://euclid.nmu.edu/~joshthom/ma516/lectures/lecture15.html) for lifts and \(\pi_1(S^1)\), and [University of Toronto's circle line-integral derivation](https://www.math.toronto.edu/courses/mat237y1/20189/notes/Chapter5/S5.1.html). The exact operator-compatibility proof is an elementary derivation; the global nonexactness result is classical. The software checks only finite algebraic differential identities; it does not execute a topological loop integral.
+
 ## 4. A fresh polynomial/trig probe alias independent of winding
 
 Even **static algebraic function identification** can fail under too few sample points. Let A's candidate polynomial observable be T_5(x)=16x^5−20x³+5x and another candidate be x. Under the trig translation,
