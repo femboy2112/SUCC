@@ -50,6 +50,23 @@ jobs:
           assert j["source_causal_records_erased"] is False
           assert j["Weil_positivity_claimed"] is False
           PY
+      - name: Source-faithful observer trap and lawful repair receipt
+        run: |
+          python scripts/observer_trap_probe.py > "$RUNNER_TEMP/observer-trap.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"observer-trap.json").read_text())
+          assert j["status"]=="FINITE_OBSERVER_TRAP_CERTIFIED"
+          assert j["model_access_trap"]=="access-trap"
+          assert j["five_succ_updates_compatible"]==["A","B"]
+          assert j["external_intervention_identified"] is True
+          assert j["compatible_union_identified"] is True
+          assert j["round_robin_first_refutation_succ"]==2
+          assert j["source_records_rewritten"] is False
+          assert j["physical_cognition_claimed"] is False
+          assert j["RH_or_Godel_independence_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -69,5 +86,6 @@ jobs:
             ${{ runner.temp }}/ordinal.json
             ${{ runner.temp }}/prime-source.json
             ${{ runner.temp }}/semantic-data-processing.json
+            ${{ runner.temp }}/observer-trap.json
           if-no-files-found: warn
           retention-days: 14
