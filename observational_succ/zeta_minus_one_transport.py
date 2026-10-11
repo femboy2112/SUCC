@@ -262,6 +262,25 @@ def negative_odd_zeta_from_bernoulli(m:int) -> Fraction:
     return -B[2*m]/(2*m)
 
 
+def bost_connes_spectral_trace_cutoff(beta:int,count:int) -> Fraction:
+    """EXACT finite trace of the diagonal Dirichlet Hamiltonian.
+
+    In the classical Bost–Connes representation H|n>=log(n)|n>, so
+    Tr_N(exp(-beta H))=sum_{n=1}^N n^(-beta).
+    For beta>1 the full infinite operator is trace class and the trace
+    is zeta(beta). For beta=-1, the ordinary trace diverges like N^2/2.
+    Its continuation -1/12 is NOT this operator's ordinary trace.
+
+    This code only sums finite rational terms, and DOES NOT construct
+    the Bost–Connes C*-dynamical system or any KMS state.
+    """
+    _integer(count,1,4096)
+    if type(beta) is not int or not -8<=beta<=8:
+        raise EulerTransportError("Use a bounded integer inverse-temperature exponent")
+    return sum((Fraction(n,1)**(-beta) for n in range(1,count+1)),
+               Fraction(0))
+
+
 def zeta_minus_one_transport_demo():
     small=(certified_euler_cutoff(x) for x in (2,3,5,7,11,29,47))
     cutoffs=[x.exact_report() for x in small]
@@ -274,6 +293,12 @@ def zeta_minus_one_transport_demo():
     if negative_odd_zeta_from_bernoulli(2)!=Fraction(1,120):
         raise ArithmeticError("Higher negative-odd functional equation failed")
     mutation=positive_side_mutation_controls()
+    for N in (1,2,4,8,16):
+        if bost_connes_spectral_trace_cutoff(-1,N)!=Fraction(N*(N+1),2):
+            raise ArithmeticError("Finite diagonal negative beta trace contradicted")
+    if bost_connes_spectral_trace_cutoff(2,4)!=sum(
+            (Fraction(1,n*n) for n in range(1,5)),Fraction()):
+        raise ArithmeticError("Positive beta trace cutoff contradicted")
     for p in (2,3,5,7,11,13):
         if (shift_dilation_address_defect(p,3)!=1-p
                 or not shift_dilation_operator_identity(p,3)):
@@ -295,6 +320,12 @@ def zeta_minus_one_transport_demo():
         "global_zeta_minus_one_value":"-1/12",
         "global_transport_identity":"zeta(-1)=-zeta(2)/(2*pi^2)",
         "completed_zeta_symmetric_values":"Lambda(-1)=Lambda(2)=pi/6",
+        "bost_connes_classical_diagonal_hamiltonian":"H|n> = log(n)|n>",
+        "bost_connes_partition_function_for_beta_gt_one_is_zeta":True,
+        "bost_connes_positive_beta_two_finite_trace_n_four":str(bost_connes_spectral_trace_cutoff(2,4)),
+        "bost_connes_beta_minus_one_finite_trace_n_four":str(bost_connes_spectral_trace_cutoff(-1,4)),
+        "bost_connes_analytic_zeta_minus_one_is_not_ordinary_trace":True,
+        "bost_connes_operator_algebra_or_KMS_state_constructed_here":False,
         "positive_side_prime_product_converges":True,
         "finite_positive_prime_cutoffs_with_rigorous_tail_bound":cutoffs,
         "abel_eta_negative_one":"1/4",
