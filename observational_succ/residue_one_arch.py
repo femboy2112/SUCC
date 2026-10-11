@@ -156,7 +156,8 @@ def kl_weight_two_interpolation(p):
     if e*branch_value!=global_special:
         raise ArithmeticError("Interpolation special-value identity contradicted")
     return {"p":p,"weight":2,"weight_residue":2%(p-1),
-            "local_factor":str(e),"branch_special_value":str(branch_value),
+            "local_factor":str(e),"euler_removal_factor":str(local_correction),
+            "branch_special_value":str(branch_value),
             "global_special_value":str(e*branch_value),
             "p_adic_measure_constructed":False}
 
@@ -173,11 +174,12 @@ def demo():
     interpolation=[kl_weight_two_interpolation(p) for p in ps if p!=2]
     assert all(x["global_special_value"]=="-1/12" for x in interpolation)
     return {
-        "status":"PRIME_RESIDUE_ONE_AD ELIC_LOCAL_GLOBAL_OBSTRUCTION".replace(" ",""),
+        "status":"PRIME_RESIDUE_ONE_ADELIC_LOCAL_GLOBAL_OBSTRUCTION",
         "local_units":units,
         "same_residue_has_nonunique_local_units":True,
         "euler_geometric_series_converges_p_adically":True,
         "finite_local_euler_norms_all_one":True,
+        "all_euler_factors_are_residue_one_units":True,
         "euclid_factorial_one":euclid,
         "factorial_one_limit_each_p_adic":"1",
         "factorial_one_limit_real":"+infinity",
