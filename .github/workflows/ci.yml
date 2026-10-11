@@ -453,6 +453,39 @@ jobs:
           assert x["independent_carrier_restores_original_parity"] is True
           assert x["physical_information_time_or_RH_theorem_claimed"] is False
           PY
+      - name: Noncommuting source shadow, future bisimulation and oriented holonomy
+        run: |
+          python scripts/noncommuting_transport_probe.py > "$RUNNER_TEMP/noncommuting-source-transport.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"noncommuting-source-transport.json").read_text())
+          assert x["status"]=="SOURCE_ORDER_AND_HOLONOMY_TRANSPORT_EXACT"
+          a=x["event"]
+          b=x["frame"]
+          assert a["all_four_two_action_endpoints"]=="00"
+          assert a["AB_parity_original_decodable"] is False
+          assert a["BA_parity_original_decodable"] is False
+          assert a["AB_vs_BA_partition_refinement"] is False
+          assert a["BA_vs_AB_partition_refinement"] is False
+          assert a["post_source_parity_is_original_parity"] is False
+          assert a["A_preserves_original_a_semantics"] is True
+          assert a["B_preserves_original_a_semantics"] is False
+          assert a["all_distinct_initial_sources_pairwise_separable"] is True
+          assert a["no_uniform_adaptive_original_parity_protocol"] is True
+          assert a["same_shadow_no_future_adaptive_proof"] is True
+          assert a["nondestructive_AB_repairs_original_parity"] is True
+          assert a["source_joint_read_repairs_original_parity"] is True
+          assert a["bisimulation_agrees_with_independent_BFS_for_all_pairs"] is True
+          assert b["holonomy_order"]==3
+          assert b["path_aware_source_recovered"] is True
+          assert b["first_bit_path_blind_decodable"] is False
+          assert b["is_zero_path_blind_decodable"] is True
+          assert b["invariant_binary_predicates_out_of_16"]==4
+          assert b["flat_all_16_predicates_path_blind_decodable"] is True
+          assert a["quantum_physical_or_RH_theorem_claimed"] is False
+          assert b["quantum_phase_or_RH_theorem_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -487,5 +520,6 @@ jobs:
             ${{ runner.temp }}/proto-succ-d.json
             ${{ runner.temp }}/source-precision-transport.json
             ${{ runner.temp }}/proof-backaction-debt.json
+            ${{ runner.temp }}/noncommuting-source-transport.json
           if-no-files-found: warn
           retention-days: 14

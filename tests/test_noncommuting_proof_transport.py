@@ -5,7 +5,8 @@ import unittest
 
 from observational_succ.noncommuting_proof_transport import (
     SourceTransportError, Instrument, FiniteCarrier, ProofFactor,
-    _bit_field, factor_original_claim, partition_refinement_witness,
+    _bit_field, factor_original_claim, check_source_semantics,
+    partition_refinement_witness,
     lost_future_original_claim, finite_future_equivalence, finite_separator,
     noncommuting_proof_demo,
 )
@@ -87,6 +88,47 @@ class NoncommutingCarrierTests(unittest.TestCase):
                 y=self.field.run(pair[1],(first,)+tail)
                 self.assertEqual(x.public_signature,y.public_signature)
                 self.assertEqual(x.terminal_state,y.terminal_state)
+
+    def test_source_semantics_gate_independent_from_observation_decoder(self):
+        # A read of original a leaves it unchanged, whereas B destroys it.
+        first=("0","0","1","1")
+        correct=check_source_semantics(self.field,self.sources,first,first,("A",))
+        wrong=check_source_semantics(self.field,self.sources,first,first,("B",))
+        self.assertTrue(correct.source_semantics_preserved)
+        self.assertFalse(wrong.source_semantics_preserved)
+        self.assertEqual(wrong.mismatch[0],2)
+        self.assertEqual(wrong.mismatch[1],0)
+        self.assertEqual(wrong.mismatch[2:],("1","0"))
+        parity_changed=check_source_semantics(
+            self.field,self.sources,self.parity,self.parity,("A","B"))
+        self.assertFalse(parity_changed.source_semantics_preserved)
+        self.assertNotEqual(
+            self.parity[parity_changed.mismatch[0]],
+            self.parity[parity_changed.mismatch[1]])
+        # Same post-source decoder is not necessarily source-true.
+        self.assertFalse(factor_original_claim(
+            self.field,self.sources,self.parity,("A","B"),
+            target_id="original-parity").valid)
+        readable=_bit_field(nondestructive=True)
+        self.assertTrue(check_source_semantics(
+            readable,self.sources,self.parity,self.parity,
+            ("A","B")).source_semantics_preserved)
+
+    def test_semantic_source_square_composes_for_declared_matching_targets(self):
+        # If each stage preserves a claimed invariant, the composition does.
+        constant=("yes",)*4
+        for first,second in product(("A","B"),repeat=2):
+            for t in (constant,):
+                self.assertTrue(check_source_semantics(
+                    self.field,self.sources,t,t,(first,)).source_semantics_preserved)
+                self.assertTrue(check_source_semantics(
+                    self.field,self.sources,t,t,(second,)).source_semantics_preserved)
+                self.assertTrue(check_source_semantics(
+                    self.field,self.sources,t,t,
+                    (first,second)).source_semantics_preserved)
+        with self.assertRaises(SourceTransportError):
+            check_source_semantics(self.field,self.sources,
+                                   ("x",),constant,("A",))
 
     def test_empty_or_first_action_adaptive_parity_impossible_one_copy(self):
         self.assertFalse(factor_original_claim(
@@ -227,6 +269,11 @@ class NoncommutingCarrierTests(unittest.TestCase):
         self.assertFalse(output["BA_parity_original_decodable"])
         self.assertFalse(output["AB_vs_BA_partition_refinement"])
         self.assertFalse(output["BA_vs_AB_partition_refinement"])
+        self.assertFalse(output["post_source_parity_is_original_parity"])
+        self.assertTrue(output["A_preserves_original_a_semantics"])
+        self.assertFalse(output["B_preserves_original_a_semantics"])
+        self.assertTrue(output["all_distinct_initial_sources_pairwise_separable"])
+        self.assertTrue(output["no_uniform_adaptive_original_parity_protocol"])
         self.assertTrue(output["same_shadow_no_future_adaptive_proof"])
         self.assertTrue(output["nondestructive_AB_repairs_original_parity"])
         self.assertTrue(output["source_joint_read_repairs_original_parity"])

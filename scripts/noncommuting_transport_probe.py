@@ -19,6 +19,11 @@ def main():
     assert event["BA_parity_original_decodable"] is False
     assert event["AB_vs_BA_partition_refinement"] is False
     assert event["BA_vs_AB_partition_refinement"] is False
+    assert event["post_source_parity_is_original_parity"] is False
+    assert event["A_preserves_original_a_semantics"] is True
+    assert event["B_preserves_original_a_semantics"] is False
+    assert event["all_distinct_initial_sources_pairwise_separable"] is True
+    assert event["no_uniform_adaptive_original_parity_protocol"] is True
     assert event["same_shadow_no_future_adaptive_proof"] is True
     assert event["nondestructive_AB_repairs_original_parity"] is True
     assert event["source_joint_read_repairs_original_parity"] is True

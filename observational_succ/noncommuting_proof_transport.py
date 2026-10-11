@@ -209,6 +209,44 @@ def partition_refinement_witness(field: FiniteCarrier,
 
 
 @dataclass(frozen=True)
+class SemanticSquareVerdict:
+    """Check whether a post-source claim actually means the old claim."""
+    source_id: str
+    basis_id: str
+    path: tuple[str, ...]
+    mismatch: tuple[int, int, str, str] | None
+
+    @property
+    def source_semantics_preserved(self) -> bool:
+        return self.mismatch is None
+
+
+def check_source_semantics(field: FiniteCarrier,
+                           source_class: tuple[int, ...],
+                           before_target: tuple[str, ...],
+                           after_target: tuple[str, ...],
+                           path: tuple[str, ...]
+                           ) -> SemanticSquareVerdict:
+    """t_old(x) == t_new(H_path(x)) for EVERY declared initial source.
+
+    This is an independent gate from the original target being decodable
+    from the path's public outcomes. Neither gate authenticates a
+    physically realized source, a claim table or a hardware intervention.
+    """
+    _sources(field,source_class)
+    for t in (before_target,after_target):
+        if type(t) is not tuple or len(t)!=field.count or not all(
+                type(v) is str for v in t):
+            raise SourceTransportError("Require full typed source truth tables")
+    for source in source_class:
+        end=field.run(source,path).terminal_state
+        if before_target[source] != after_target[end]:
+            return SemanticSquareVerdict(field.source_id,field.basis_id,path,
+                (source,end,before_target[source],after_target[end]))
+    return SemanticSquareVerdict(field.source_id,field.basis_id,path,None)
+
+
+@dataclass(frozen=True)
 class IrretrievablePair:
     first: int
     second: int
@@ -335,6 +373,18 @@ def noncommuting_proof_demo() -> dict:
                                  target_id="original-XOR").valid:
             raise ArithmeticError("Destructive parity incorrectly certified")
 
+    parity_semantics=check_source_semantics(
+        field,src,parity,parity,("A","B"))
+    first_bit=("0","0","1","1")
+    first_preserves_a=check_source_semantics(
+        field,src,first_bit,first_bit,("A",))
+    first_erase_b=check_source_semantics(
+        field,src,first_bit,first_bit,("B",))
+    if (parity_semantics.source_semantics_preserved
+            or not first_preserves_a.source_semantics_preserved
+            or first_erase_b.source_semantics_preserved):
+        raise ArithmeticError("Source-meaning square incorrectly assumed")
+
     a_shadow=lost_future_original_claim(field,0,1,parity,("A",))
     b_shadow=lost_future_original_claim(field,0,2,parity,("B",))
     if (a_shadow is None or b_shadow is None
@@ -354,6 +404,8 @@ def noncommuting_proof_demo() -> dict:
     if not no_damage.valid or not joint_result.valid:
         raise ArithmeticError("Nondestructive joint support controls failed")
     future=finite_future_equivalence(field)
+    if future!=tuple((i,i) for i in range(4)):
+        raise ArithmeticError("All pairs are separable, but no uniform parity policy exists")
     for i in range(4):
         for j in range(i,4):
             if ((i,j) in future) != (finite_separator(field,i,j) is None):
@@ -365,6 +417,9 @@ def noncommuting_proof_demo() -> dict:
         "AB_parity_original_decodable":False,
         "BA_parity_original_decodable":False,
         "AB_vs_BA_partition_refinement":False,
+        "post_source_parity_is_original_parity":parity_semantics.source_semantics_preserved,
+        "A_preserves_original_a_semantics":first_preserves_a.source_semantics_preserved,
+        "B_preserves_original_a_semantics":first_erase_b.source_semantics_preserved,
         "BA_vs_AB_partition_refinement":False,
         "shadow_after_A":{"pair":[0,1],
                           "record":list(a_shadow.transcript),
@@ -375,6 +430,8 @@ def noncommuting_proof_demo() -> dict:
         "same_shadow_no_future_adaptive_proof":True,
         "nondestructive_AB_repairs_original_parity":no_damage.valid,
         "source_joint_read_repairs_original_parity":joint_result.valid,
+        "all_distinct_initial_sources_pairwise_separable":True,
+        "no_uniform_adaptive_original_parity_protocol":True,
         "bisimulation_agrees_with_independent_BFS_for_all_pairs":True,
         "pre_source_truth_labels_not_leaked_into_reports":True,
         "externally_authenticated_source_laws_claimed":False,

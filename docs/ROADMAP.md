@@ -244,6 +244,18 @@ See [Source-relative precision transport](../research/2026-10-11/SOURCE_RELATIVE
 
 See research/2026-10-11/PROOF_BACKACTION_DEBT_ZENO.md and ledger O175-O184. Physics, cognition and RH remain independently UNVERIFIED.
 
+## Noncommuting state-changing proof transport (finite theorem track)
+
+**Implemented finite mathematical constructions:** source-tagged deterministic instruments with public action/outcome/epoch records and separate simulator-only hidden state; ordered path concatenation; explicit factorization of original-target claims through full causal histories; partition refinement as a PARTIAL ORDER of source information; independent true source-semantic commuting-square audit; a same-trace-and-poststate source-shadow impossibility certificate. At identical poststates, paths A→B and B→A may retain incomparable source predicates, even though every original source pair has SOME individual separating probe. Thus pairwise separation is weaker than a globally executable safe single-carrier decision policy.
+
+**Implemented future observational reach:** greatest finite bisimulation of all state pairs relative to actual enabled-action menus/outcomes and a separate shortest finite BFS discriminator. Model menus are public by hypothesis. Information encoded in the undisclosed source/target label cannot be read as part of the observable record.
+
+**Implemented oriented mathematical frame calibration:** noncommuting GL(2,F2) shear maps around a square, nontrivial order-three source-basis holonomy W=RU^-1 UR, independent target invariance versus output-fiber criterion, positive invariant is-zero claim versus negative noninvariant first-bit claim. Four of 16 predicates survive path forgetting; all sixteen are reconstructible when path witness is retained. Flat control: all 16 path independent. Compare with lattice gauge plaquette transport only at level of declared algebra, never claim complex or physical phase.
+
+**Next:** a source-indexed category of admissible physical instruments carrying verified source law/premise certificates under composition; a mathematical *descent theorem* that distinguishes genuine physical source loss from forgotten transport-path witnesses. Require operational hardware/realizable budgets and a meaning-preserving proof functor. Test genuine nonflat source DEPENDENCE, noncommuting interventions, multi-source preparation provenance, and future-sufficient receipts. Source-blind fake Euler factors and missing real Gamma must still kill premature RH adapters.
+
+See [Noncommuting proof transport](../research/2026-10-11/NONCOMMUTING_PROOF_TRANSPORT.md), ledger O187–O199; no claims of independent scholarly novelty, quantum experiment or RH proof.
+
 ## Completion criteria
 
 Every stage needs: a precise theorem/model statement; source and assumptions; independently checkable proof or certified numeric bounds; adversarial controls; executable regression tests; and a ledger entry that distinguishes demonstrated behavior from general claims. “Our finite probes were all positive” is not a global sign theorem.
