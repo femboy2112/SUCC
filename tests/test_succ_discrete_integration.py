@@ -23,6 +23,8 @@ from observational_succ.succ_discrete_integration import (
     finite_newton_reconstruct_samples,
     newton_evaluate, encode_newton_jet, decode_newton_jet,
     covariant_step, parallel_prefix_affine, succ_derivative_demo,
+    covariant_initial_jet_from_local_samples, covariant_newton_evaluate,
+    finite_covariant_newton_reconstruct_samples, certified_covariant_newton_path,
 )
 
 
@@ -275,6 +277,90 @@ class SuccDiscreteIntegrationTests(unittest.TestCase):
         self.assertEqual(scan.dependency_layers,1)
         self.assertFalse(scan.actual_parallel_execution_performed)
         self.assertEqual(b.compose(a).act(F0.act(x0)),F2.act(x2))
+
+    def test_arbitrary_finite_trajectory_has_exact_covariant_newton_inverse(self):
+        b=SharedBasis(2)
+        I=RationalFrame.identity(2)
+        S=RationalFrame(((Q(0),Q(1)),(Q(1),Q(0))))
+        H=RationalFrame(((Q(1),Q(1)),(Q(0),Q(1))))
+        frames=(I,S,H,S,I)
+        canonical=((Q(2),Q(3)),(Q(-1),Q(11)),(Q(0),Q(0)),
+                   (Q(7),Q(-4)),(Q(0),Q(100)))
+        local=tuple(frame.act(v) for frame,v in zip(frames,canonical))
+        self.assertEqual(finite_covariant_newton_reconstruct_samples(frames,local),local)
+        jet=covariant_initial_jet_from_local_samples(frames,local)
+        self.assertEqual(jet[0],local[0])
+        for n in range(len(frames)):
+            self.assertEqual(
+                covariant_newton_evaluate(jet[0],jet[1:],
+                                          frames[0],frames[n],n),
+                local[n])
+        self.assertEqual(len(jet),len(local))
+        # This is an exact observed-horizon identity even though the
+        # canonical sequence has no quadratic recurrence.
+
+    def test_certified_newton_jet_reconstructs_many_moving_frames_in_one_macro_message(self):
+        b=SharedBasis(2)
+        I=RationalFrame.identity(2)
+        S=RationalFrame(((Q(0),Q(1)),(Q(1),Q(0))))
+        H=RationalFrame(((Q(1),Q(1)),(Q(0),Q(1))))
+        frames=tuple((S,H,I)[n%3] for n in range(13))
+        d1=(Q(1),Q(0))
+        d2=(Q(1),Q(2))
+        law=PolynomialJetSourceFamily(b.fingerprint,2,((d1,d2),))
+        base=(Q(2),Q(3))
+        def global_state(n):
+            return (base[0]+Q(n)*d1[0]+Q(comb(n,2))*d2[0],
+                    base[1]+Q(n)*d1[1]+Q(comb(n,2))*d2[1])
+        local=tuple(F.act(global_state(n)) for n,F in enumerate(frames))
+        received=certified_covariant_newton_path(b,frames,local[:3],law)
+        self.assertEqual(received,local)
+        self.assertEqual(len(received),13)
+        jet=covariant_initial_jet_from_local_samples(frames[:3],local[:3])
+        self.assertEqual(tuple(frames[0].inverse().act(v) for v in jet[1:]),
+                         (d1,d2))
+        self.assertEqual(covariant_newton_evaluate(
+                             jet[0],jet[1:],frames[0],frames[10],10),
+                         local[10])
+        bad=PolynomialJetSourceFamily(b.fingerprint,2,
+                                      (((Q(1),Q(1)),(Q(0),Q(0))),))
+        with self.assertRaises(DiscreteSuccError):
+            certified_covariant_newton_path(b,frames,local[:3],bad)
+
+    def test_covariant_truncated_jet_still_cannot_predict_unrestricted_future(self):
+        b=SharedBasis(2)
+        I=RationalFrame.identity(2)
+        S=RationalFrame(((Q(0),Q(1)),(Q(1),Q(0))))
+        frames=(I,S,I,S)
+        canonical=( (Q(0),Q(0)),(Q(0),Q(0)),(Q(0),Q(0)),(Q(5),Q(-3)) )
+        local=tuple(F.act(v) for F,v in zip(frames,canonical))
+        jet=covariant_initial_jet_from_local_samples(frames[:3],local[:3])
+        predicted=covariant_newton_evaluate(jet[0],jet[1:],
+                                            frames[0],frames[3],3)
+        self.assertNotEqual(predicted,local[3])
+        self.assertEqual(predicted,(Q(0),Q(0)))
+        # All four actual states *can* be reconstructed by a full finite
+        # third-order jet, without inventing a quadratic global source law.
+        self.assertEqual(finite_covariant_newton_reconstruct_samples(frames,local),
+                         local)
+        singular=RationalFrame(((Q(1),Q(2)),(Q(2),Q(4))))
+        with self.assertRaises(DiscreteSuccError):
+            finite_covariant_newton_reconstruct_samples(
+                (I,singular),local[:2])
+
+    def test_global_frames_induce_flat_closed_loop_transport_not_holonomy(self):
+        I=RationalFrame.identity(2)
+        S=RationalFrame(((Q(0),Q(1)),(Q(1),Q(0))))
+        H=RationalFrame(((Q(1),Q(1)),(Q(0),Q(1))))
+        frames=(I,S,H,I)
+        zero=(Q(0),Q(0))
+        steps=tuple(covariant_step(frames[i],frames[i+1],zero)
+                    for i in range(len(frames)-1))
+        total=steps[2].compose(steps[1]).compose(steps[0])
+        self.assertEqual(total.transport,I)
+        self.assertEqual(total.delta,zero)
+        self.assertEqual(parallel_prefix_affine((Q(2),Q(3)),steps).values[-1],
+                         (Q(2),Q(3)))
 
     def test_ordered_noncommutative_affine_succ_and_scan(self):
         I=RationalFrame.identity(2)
