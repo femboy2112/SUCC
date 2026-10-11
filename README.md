@@ -47,10 +47,11 @@ This is an established identification of the completed arithmetic Weil distribut
 11. **[Probe-coherence horizons and minimal proof support](research/2026-10-11/PROBE_COHERENCE_HORIZONS_AND_PROOF_SUPPORT.md)** — destructive source probes, context-dependent meaning loss, dependency rewiring and positive repairs.
 12. **[Basis-indexed deltas and mathematical boundary encoding](research/2026-10-11/BASIS_INDEXED_DELTAS_AND_BOUNDARY_ENCODING.md)** — sparse receiver-anchored messages, order-sensitive paths, certified value-sharing, Fourier recovery/aliasing, and RH line-zero incompleteness controls.
 13. **[Finite-difference SUCC integration](research/2026-10-11/FINITE_DIFFERENCE_SUCC_INTEGRATION.md)** — reconstruct every SUCC frame from shared initial condition plus path derivatives, unconditional finite Newton inversion and proof-certified future jets, direct covariant Newton reconstruction in invertible changing frames, and parallelizable prefix scans.
-14. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
-15. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
-16. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
-17. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
+14. **[Euler local/global transport at −1](research/2026-10-11/EULER_LOCAL_GLOBAL_MINUS_ONE_TRANSPORT.md)** — prime-gap local Euler factors, invalid interchange with infinite product, genuine Gamma-functional-equation transport to convergent ζ(2), and rigorous finite-prime error bounds.
+15. **[Claim ledger](docs/CLAIM_LEDGER.md)** — source-backed status of every important theorem, model, analogy, observation and missing lemma.
+16. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
+17. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
+18. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
 
 ## Run it
 
@@ -76,6 +77,7 @@ python scripts/twin_circle_probe.py
 python scripts/probe_coherence_probe.py
 python scripts/basis_boundary_probe.py
 python scripts/succ_discrete_integration_probe.py
+python scripts/zeta_minus_one_transport_probe.py
 ~~~
 
 The package name is **observational_succ**. No runtime dependency on the original RH repository is required.
@@ -98,6 +100,7 @@ The package name is **observational_succ**. No runtime dependency on the origina
 | Proof-carrier backaction | probe_coherence | Source-original versus modified-carrier evidence semantics, adaptive proof-support no-go, minimal logical/physical-support mismatch and valid proof-induced probe graph rewiring |
 | Basis-indexed mathematical encoding | basis_boundary_transport | Exact sender→receiver sparse path/value patch, noncommuting action order, source-verified equal-coefficient compression, sixth-root Fourier boundary recovery, high-mode/precision aliases and partial line-zero RH controls |
 | Finite-difference SUCC integration | succ_discrete_integration | Anchored first differences reconstruct every finite state; proof-bound Newton jets produce direct evaluations; covariant moving frames and associative noncommutative affine prefix computations |
+| Euler-to-Archimedean source transport | zeta_minus_one_transport | Authentic prime local factors and SUCC gaps at -1, failure of termwise global continuation, convergent s=2 product plus Gamma functional equation, exact tail bounds, eta cross-check and mutated-source controls |
 | Gödel, Turing and finite proof | observer_logic, godel_succ, observer_reflection | Self-reference syntax, two-counter controls, checked proof authority, finite-support at omega |
 | Ordinal and Hilbert limits | ordinal_succ_report, infinite_realization | Formal omega/omega+1 reports, second-order interaction, nonuniform Hilbert limits |
 | Optional RH application bridges | gamma_interferometer, balanced_theta_li, hasse_theta_seam, source_prime_certificates, dirichlet_lambert | Gamma/prime source interfaces, Li-index windows, certified prime-only Suzuki bounds |
