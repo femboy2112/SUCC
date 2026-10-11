@@ -258,6 +258,18 @@ See research/2026-10-11/PROOF_BACKACTION_DEBT_ZENO.md and ledger O175-O184. Phys
 
 See [Noncommuting proof transport](../research/2026-10-11/NONCOMMUTING_PROOF_TRANSPORT.md), ledger O187–O199; no claims of independent scholarly novelty, quantum experiment or RH proof.
 
+## Adaptive finite proof-policy synthesis (implemented classical model)
+
+**Object:** a finite observer belief comprises pairs (original source, CURRENT carrier). The original-source proof target is read from the first coordinate and cannot be silently replaced with a post-intervention predicate. Every action must be executable across every still-possible carrier; public outcomes partition the belief and update carriers along declared state-changing maps.
+
+**Exact solvability theorem:** an original-source target is uniformly finitely decidable by a deterministic adaptive policy iff the initial belief enters the LEAST winning AND/OR fixed point. Its first rank is minimum WORST-CASE probe depth. Deterministic finite worlds rule out an unbounded-yet-pointwise-finite termination time for one fixed uniform policy: finitely many source termination depths have a finite maximum. Source-infinite and support-generating Zeno phenomena require separate limits.
+
+**Adversarial positives/negatives:** source-erasing destructive A/B parity has no winning policy; nondestructive A/B has rank 2; physically declared original-source joint read has rank 1; source-class proof restrictions may reduce rank. A nontrivial reversible Q state update plus outcome-conditional R0/R1 observers achieves original parity in 2 adaptive steps, while all nine fixed two-step action words fail; independently brute check the minimax rank across 256 two-state/two-action machines plus seeded finite larger machines. Refuse cheap hidden menu observation, damaged source ID or exhausted belief-search budget.
+
+**Next frontier:** treat winning policy certificates as morphisms in a genuine source-indexed proof-support category; require independently authenticated carrier/claim/source maps, source-specific resource costs, nonflat connection and probability/noise boundaries. Test algebraic categorical novelty beyond finite state table recombination before asserting independent scholarly results or proposing RH adapter export.
+
+See research/2026-10-11/NONCOMMUTING_PROOF_TRANSPORT.md §6a; ledger O203–O209.
+
 ## Completion criteria
 
 Every stage needs: a precise theorem/model statement; source and assumptions; independently checkable proof or certified numeric bounds; adversarial controls; executable regression tests; and a ledger entry that distinguishes demonstrated behavior from general claims. “Our finite probes were all positive” is not a global sign theorem.

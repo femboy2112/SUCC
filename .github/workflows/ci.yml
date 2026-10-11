@@ -492,6 +492,28 @@ jobs:
           assert a["quantum_physical_or_RH_theorem_claimed"] is False
           assert b["quantum_phase_or_RH_theorem_claimed"] is False
           PY
+      - name: Adaptive original-source proof-policy least fixed point
+        run: |
+          python scripts/adaptive_proof_policy_probe.py > "$RUNNER_TEMP/adaptive-original-source-policy.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"adaptive-original-source-policy.json").read_text())
+          assert x["status"]=="FINITE_ADAPTIVE_SOURCE_PROOF_GAME_EXACT"
+          assert x["destructive_original_parity_winning"] is False
+          assert x["destructive_reachable_beliefs"]>1
+          assert x["nondestructive_original_parity_winning"] is True
+          assert x["nondestructive_worst_case"]==2
+          assert x["joint_probe_worst_case"]==1
+          assert x["reversible_state_changing_conditional_probe"] is True
+          assert x["adaptive_conditional_original_parity_winning"] is True
+          assert x["adaptive_conditional_worst_case"]==2
+          assert x["any_fixed_two_probe_word_succeeds"] is False
+          assert x["adaptive_action_words"]==[["Q","R0"],["Q","R0"],["Q","R1"],["Q","R1"]]
+          assert x["original_source_given_to_policy"] is False
+          assert x["menus_offered_as_free_readings"] is False
+          assert x["actual_hardware_or_RH_theorem_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -527,5 +549,6 @@ jobs:
             ${{ runner.temp }}/source-precision-transport.json
             ${{ runner.temp }}/proof-backaction-debt.json
             ${{ runner.temp }}/noncommuting-source-transport.json
+            ${{ runner.temp }}/adaptive-original-source-policy.json
           if-no-files-found: warn
           retention-days: 14

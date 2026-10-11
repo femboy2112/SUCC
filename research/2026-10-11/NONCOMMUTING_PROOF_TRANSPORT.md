@@ -220,6 +220,53 @@ These two transport obstructions cannot be fixed by the same operation.
 4. **Genuine source-truth change** (N6): a later claim may refer to a different physical source predicate; an isomorphism of coordinate encodings does not license an original-to-new truth claim without a commuting law.
 5. **Zeno moving objective from PR #20:** nonterminal positive certificates arise from ever-renewed support obligations. It is not equivalent to N5 irrecoverable lost original-source data, or N8 reversible lost metadata. A theorem claiming all are one phenomenon would be refuted by our different positive repairs.
 
+## 6a. Finite adaptive proof policy: least fixed point, not a fixed-path guess
+
+The original source-label target remains t(s), where s is the **original** physical carrier state. After actual interventions the observer must distinguish the changing state q from the preserved original-source referent s. A compatible possibility world is therefore a pair (s,q), and the observer's knowledge state is a finite nonempty belief set B of such pairs. The policy sees only the public outcomes and the declared lawful instrument menu, not the original s.
+
+An action a may be chosen only if it is EXECUTABLE at every current q in B. This planner makes a deliberately conservative contract choice: menu variations are not exposed as free additional observations. The separate future-bisimulation routine explicitly DOES make menus visible and is therefore a different instrument model; the two must not be accidentally conflated.
+
+After a result o, the belief updates as
+\[
+\boxed{ B_{a,o}=\{(s,h_a(q)):(s,q)\in B,\ o_a(q)=o\}. }\tag{N9}
+\]
+
+The target t is evaluable from the public history iff all initial-source coordinates s remaining in B have the SAME target value. For a fixed finite carrier and source class, enumerate reachable beliefs under admissible instruments; let
+
+\[
+\begin{aligned}
+\mathcal W_0&=\{B:\ |\{t(s):(s,q)\in B\}|=1\},\\
+\mathcal W_{n+1}&=\mathcal W_n\cup
+\{ B:\exists a\ \text{executable on all }B,\
+       \forall o\text{ with }B_{a,o}\ne\varnothing,\
+       B_{a,o}\in\mathcal W_n\}.
+\end{aligned}
+\tag{N10}
+\]
+
+**Finite adaptive proof-planning theorem:** The initial belief \(B_0=\{(s,s):s\in X\}\) has a uniformly finite successful deterministic adaptive observation policy **iff** it lies in the least fixed point \(\mathcal W_*=\bigcup_n\mathcal W_n\). Its first appearance at rank r is the minimum achievable WORST-CASE number of observations to certify the original target on every compatible initial source.
+
+**Proof:** \(B\in W_0\) can report the unique target directly. Inductively, an admissible a with every report branch in \(W_n\) permits a policy requiring at most n+1 steps. Conversely, take any strategy that terminates with a sound answer within at most n+1 steps for each source in B. Its first action is fixed before the next observation and must be executable in every still-possible state; each possible outcome branch must have a successful remaining policy of at most n steps. By induction B enters \(W_{n+1}\). For a fixed finite source X and a fixed deterministic policy which terminates after finite steps on EACH x∈X, the maximum of the finitely many termination lengths is finite. Thus all such policies have a uniform finite bound, and the fixed point is complete for this finite problem. This last statement fails as a universal principle once infinitely many possible sources and unbounded termination lengths are admitted.
+
+**Mandatory negative control:** Destructive A/B original-parity carrier from §2 is NOT in W_*: the first action necessarily yields a source-shadow class with conflicting old parity and identical poststate, so no further adaptive probes can repair it.
+
+**Positive controls:** Nondestructive A then B decides original parity in two observations; the permitted original-source joint probe decides it in one; a genuine independently proved compatible-source restriction can reduce the depth even further without new measurement. The finite game does not authorize the observer to counterfeit these alternative instruments/source premises.
+
+### Outcome-conditioned policy is stronger than a fixed short sequence
+
+Use a separately calibrated carrier with initial bits (a,b), and three TOTAL instruments:
+- Q reports original a then updates the physical carrier invertibly to (a,a XOR b).
+- R0 reads the **CURRENT** second bit only when current a=0; otherwise reports 0, without further state update.
+- R1 reads the CURRENT second bit only when current a=1; otherwise reports 0, without further state update.
+
+After Q, the current second bit is the original target a XOR b. The receiver uses the actual Q report to choose R0 if a=0 or R1 if a=1. This is a lawful adaptive two-event proof of **original parity**, with the source value never given directly to the policy.
+
+Independently enumerate every one of the nine fixed two-action words over {Q,R0,R1}: NONE yields reports sufficient for original parity on all four source states. Consequently, the two-step adaptive policy has a **strict operational advantage at a stated finite depth**; it is not a computational complexity breakthrough, quantum parallelization, nor evidence of an impossible fixed-length proof in other languages. A three-step unconditional path may recover the same information, as it should.
+
+The executable solver stores original/current possibilities separately, computes all reachable belief classes, iterates N10 to a fixed point, records an explicit action choice and rank for each winning belief, and replays the actual four initial sources as independent simulations. Hostile tests compare against a separately written minimax recursion for all 256 two-state two-action deterministic carriers and seeded multi-state targets, detecting bogus closure, forged menus, data leaks and incorrect minimum worst-case depth.
+
+**Interpretation:** This is the first end-to-end SUCC mechanism that classifies *finite ability to actually complete a proof on a changing carrier* rather than merely identify a target as a mathematical function. It remains a classical finite AND/OR game, not an original new theorem of game theory. The interesting research direction is to transport its winning certificates through nonflat source-indexed frames and calibrated resource constraints, then ask which true arithmetical-source operators meet the interface.
+
 ## 7. Prior art, theorem status and next experiment
 
 - **CLASSICAL/PROVED LOCAL**: N1–N8 with stated finite domains, fixed protocol class, source labels and orientation. These are direct elementary category-of-process, deterministic sufficiency/fiber, finite-automata bisimulation and finite group-action statements. New-to-repository organization is not scholarly novelty.
@@ -238,4 +285,5 @@ Related established frameworks are **dynamic epistemic logic with fact-changing 
 - tests/test_noncommuting_proof_transport.py — all 16 Boolean predicates and all short destructive paths, exact false-evidence source pairs, comprehensive two-state Mealy behavior tests, masked future menus and stale source/frame tags.
 - tests/test_holonomy_proof_transport.py — all GL(2,F2) matrices, associative composition, 16 predicates, 150 randomized square connections, path-dependent collision witnesses, provenance and wrong/invertible frame controls.
 - scripts/noncommuting_transport_probe.py — machine-readable proof-scope receipt, both mathematical models.
+- observational_succ/adaptive_proof_policy.py, tests/test_adaptive_proof_policy.py, scripts/adaptive_proof_policy_probe.py — a finite source/current belief-pair AND/OR policy solver, rank certificates, destructive and noncommuting positive/negative controls; independent minimax tests.
 - docs/CLAIM_LEDGER.md — O187 onward, classified theorem scopes and explicit source/physical firewall.

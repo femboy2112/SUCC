@@ -115,6 +115,7 @@ The package name is **observational_succ**. No runtime dependency on the origina
 | Source-relative precision/proof transport | precision_transport | Exact p-adic lifting debt, source-class dependent decoder theorem, composable faithful embeddings, and independently checked source-intervention/claim-preservation gates |
 | State-changing proof support and proportional knowledge debt | proof_backaction_debt | Atomic source-indexed observations that activate new proof obligations, exact one-sided forward truth transport, proportional/matched precision debt and explicit finite-vs-omega/Zeno controls |
 | Noncommuting source/proof transport and holonomy | noncommuting_proof_transport, holonomy_proof_transport | Full causal report versus mutable carrier, path-specific source shadows, universal proof-support partition refinement, deterministic future bisimulation and explicitly oriented GL(2,F2) holonomy-invariant path-blind predicates |
+| Adaptive original-source proof planning | adaptive_proof_policy | Complete finite AND/OR belief-state fixed point on (original source,current carrier) pairs, exact minimum worst-case observation depth, destructive no-go and strict adaptive-vs-fixed short-policy controls |
 | Optional RH application bridges | gamma_interferometer, balanced_theta_li, hasse_theta_seam, source_prime_certificates, dirichlet_lambert | Gamma/prime source interfaces, Li-index windows, certified prime-only Suzuki bounds |
 
 The imported RH experiments remain available to audit, but the future general theory is **not defined by RH**.
@@ -128,6 +129,8 @@ New work belongs here first. When it yields an independently meaningful RH-relat
 **New conditional theorem:** [Proof-support backaction and Zeno debt](research/2026-10-11/PROOF_BACKACTION_DEBT_ZENO.md) gives an all-finite-protocol source-indistinguishability proof for a growing active target, a strict separation of moving goals and fixed claims, and exact rate-matched/overmatched precision classifications. A finite Zeno schedule does not implement an omega event.
 
 **Latest theorem candidate:** [Source-relative precision transport](research/2026-10-11/SOURCE_RELATIVE_PRECISION_TRANSPORT.md) proves exact loss/recovery criteria for nonunit SUCC steps, claim-specific separation depth and conditional source-preserving proof transport. This is classical finite algebra organized into a typed observational framework, not a physical or RH theorem.
+
+**Finite adaptive completion:** [Adaptive original-source proof game](research/2026-10-11/NONCOMMUTING_PROOF_TRANSPORT.md) decides whether any outcome-conditioned lawful observation policy can finitely certify a fixed original-source target. Destructive single-carrier parity has no winning policy, while a calibrated outcome-conditioned policy beats every fixed two-step sequence under a separate reversible source-update protocol.
 
 **Genuinely noncommuting source-state control:** two invertible XOR-shear interventions do not commute as carrier updates, yet each ordered observation path exactly reconstructs all initial predicates. Omitting the causal route destroys the original-a decoder but preserves original XOR: reversible missing metadata, not irreversible source loss.
 
