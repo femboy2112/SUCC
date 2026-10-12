@@ -367,3 +367,6 @@ shadow_archimedean_tests separates the normalized positive Gaussian scale-mixtur
 
 
 **Constructive analytic E-gluing (SF7a):** E may receive full analytic shadow FUNCTIONS F1,F2 and coprime test multiplier maps C1,C2 without possessing their underlying global F. If C2*F1=C1*F2 as an analytic identity, the compatible quotients F1/C1 and F2/C2 glue to a unique global F. Finite rational polynomial certificates construct that F via exact Euclidean division, returning a nonzero cross-square defect when receipts disagree. The source identity, analytic domains and whole-function observations are premises, not a consequence of finitely many samples or an automatic RH proof.
+
+
+**Finite-prime spectral source/debt firewall:** SF8+ proves a fixed finite family of true-prime Gaussian self-Fourier scale-pair shadow multipliers is exactly coprime yet has a joint lower frame bound of ZERO over the full critical line. The source phases t log p mod pi are dense in a finite torus by log-prime rational independence and Kronecker; any globally bounded algebraic two/multi-shadow inverse would contradict that. An operational E observer must declare height-limited domains, adaptive test-vector families or a stronger analytic topology before asserting stable zero transport. [SF8+](../research/2026-10-12/SHADOW_SUCC_GLOBAL_INFERENCE.md).

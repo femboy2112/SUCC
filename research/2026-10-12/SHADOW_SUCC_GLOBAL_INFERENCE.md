@@ -157,6 +157,13 @@ If functions \(A,B\) on the entire critical line satisfied \(AC_2+BC_3=1\) and \
 
 This result uses the classical density of irrational rotations; software checks the source primes and formal proof statement but does not replace that analytic theorem with a finite simulation.
 
+**SF8+ (stronger: no fixed FINITE set of independent prime scales cures the infinite-height conditioning gap).** For any fixed finite collection of distinct true rational primes \(P=\{p_1,\ldots,p_k\}\), the numbers \(\{\log p_j\}\) are linearly independent over \(\mathbb Q\) by unique prime factorization. The continuous one-parameter flow \(t\mapsto (t\log p_1,\ldots,t\log p_k)\pmod\pi\) is therefore dense in the \(k\)-torus (continuous Kronecker theorem). It comes arbitrarily close to the phase vector \((\pi/2,\ldots,\pi/2)\), forcing **all k cosine multipliers to be simultaneously arbitrarily small**:
+\[
+\boxed{\inf_{t\in\mathbb R}\sum_{p\in P}|C_p(1/2+it)|=0.}\tag{SF8+}
+\]
+Already any two distinct primes have no **exact** common multiplier zero, yet no fixed finite collection supplies a positive global-in-height lower frame bound. A proof requiring such a bound must allow a stronger SOURCE-DERIVED family of test functions, height-dependent test redesign or rigorously matched analytic operator norms. This is an explicit obstruction to a naïve 'add a few more independent prime-clock observers' shortcut, **not** a prohibition on all possible Archimedean reconstructions.
+
+
 ## 9. SF9: Even complete \(\omega\)-limit shadow knowledge need not give finite quantitative certification
 
 For a compact Hausdorff source class \(X\), nested nonempty closed compatible fibers \(X_n\ni x_*\) with \(\bigcap_nX_n=\{x_*\}\), and a continuous target \(T:X\to\mathbb R\), compactness implies

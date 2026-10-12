@@ -377,3 +377,6 @@ Every boundary E tower samples one declared carrier; the actual source object an
 
 
 **New constructive milestone SF7a:** Instead of assuming an unknown global F as input, require two source-valid entire test-shadow expressions and known coprime analytic multipliers, then verify the cross-relation and glue local quotients into F. The polynomial analogue is fully effective and has hostile forged/coprime controls. The open application is constructing/source-certifying the analytic observer functions from actual finite-Euler/Archimedean test data, not merely typing expressions that already assume Tate factorization.
+
+
+**SF8+ uniform analytic conditioning no-go:** Extra fixed observer towers, even for any finite independent authentic prime set, cannot supply a global positive lower frame bound if every tower chooses the positive self-Fourier paired Gaussian of its prime scale. Prime log phase Kronecker recurrence creates arbitrarily small simultaneous multipliers at unbounded imaginary height. A new test family and certificate for height-dependent analytic inverse bounds—not simply more copies of the same form—is the next falsifiable engineering/math target. No assertion about general test-function families or RH. Ledger O363.

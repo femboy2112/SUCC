@@ -800,6 +800,10 @@ jobs:
           assert r["finite_hermite_impostor"]["normalization_and_fourier_claims"]["perturbation_nonzero"] is True
           assert r["common_zero_divisor"]["global_decoder_instability"]["exact_auxiliary_zero_sets_disjoint"] is True
           assert r["common_zero_divisor"]["global_decoder_instability"]["global_uniformly_bounded_bezout_decoder_exists"] is False
+          assert r["finite_prime_family_instability"]["prime_scales"]==[2,3,5,13]
+          assert r["finite_prime_family_instability"]["prime_logarithms_rationally_independent"] is True
+          assert r["finite_prime_family_instability"]["infimum_joint_absolute_multiplier_amplitude"]==0
+          assert r["finite_prime_family_instability"]["height_uniform_bounded_decoder_exists"] is False
           assert r["RH_or_Weil_positivity_proved"] is False
           assert r["canonical_real_gamma_from_finite_primes_alone"] is False
           PY

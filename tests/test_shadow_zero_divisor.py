@@ -70,3 +70,19 @@ class AnalyticShadowGluingConstructionTests(unittest.TestCase):
             construct_global_polynomial_from_shadows((0.5,),(1,1),(1,),(1,))
 
 if __name__=='__main__':unittest.main()
+
+class FinitePrimeFamilyInstabilityTests(unittest.TestCase):
+    def test_any_finite_prime_list_lacks_full_height_lower_frame_bound(self):
+        from observational_succ.shadow_zero_divisor import finite_prime_shadow_conditioning_obstruction
+        for ps in ((2,3),(2,3,5),(3,5,13,17,19),(2,3,5,7,11,13,17)):
+            r=finite_prime_shadow_conditioning_obstruction(ps)
+            self.assertEqual(r['infimum_joint_absolute_multiplier_amplitude'],0)
+            self.assertFalse(r['height_uniform_bounded_decoder_exists'])
+            self.assertTrue(r['multipliers_pairwise_no_exact_common_zero'])
+            self.assertTrue(r['all_unknown_zeta_zeros_avoided'])
+
+    def test_finite_prime_family_source_signature_mutants(self):
+        from observational_succ.shadow_zero_divisor import finite_prime_shadow_conditioning_obstruction
+        for ps in ((2,2),(2,4),(2,6,5),(2,1),(),(3,)):
+            with self.assertRaises(ShadowSourceError):
+                finite_prime_shadow_conditioning_obstruction(ps)

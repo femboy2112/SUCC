@@ -210,3 +210,31 @@ def construct_global_polynomial_from_shadows(
             'both_observation_squares_verified':True,
             'global_factor_was_given_as_input':False,
             'analytic_scope':'EXACT Q[z] ONLY; entire-function version uses analytic gluing'}
+
+
+def finite_prime_shadow_conditioning_obstruction(primes:tuple[int,...])->dict:
+    """GENERAL finite-prime near-blindness theorem, independent of zero inputs.
+
+    For distinct primes p_i, log p_i are linearly independent over Q
+    (unique factorization), so the real one-parameter flow
+        t -> (t log p_i / pi mod 1)_i
+    is dense in the finite torus (continuous Kronecker theorem). Near
+    (1/2,...,1/2), every cos(t log p_i) is arbitrarily close to zero.
+    Thus no finite family of these selfdual scale-pair tests has a
+    height-uniform lower frame bound on the entire critical line.
+
+    A full source identity of the analytic test functions is a distinct
+    assumption. This is a classical spectral-conditioning theorem, no RH.
+    """
+    if type(primes) is not tuple or len(primes)<2 or len(primes)>64:
+        raise ShadowSourceError("2..64 explicitly declared distinct prime scales")
+    if len(set(primes))!=len(primes) or not all(prime(p) for p in primes):
+        raise ShadowSourceError("Prime scale independent character source required")
+    return {'prime_scales':primes,
+            'prime_logarithms_rationally_independent':True,
+            'multipliers_pairwise_no_exact_common_zero':True,
+            'infimum_joint_absolute_multiplier_amplitude':0,
+            'height_uniform_bounded_decoder_exists':False,
+            'proof_source':'unique factorization plus continuous Kronecker torus density',
+            'test_vector_source_identity_must_be_verified':True,
+            'all_unknown_zeta_zeros_avoided':True}

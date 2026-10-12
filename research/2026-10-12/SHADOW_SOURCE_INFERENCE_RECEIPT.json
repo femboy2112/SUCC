@@ -98,6 +98,21 @@
       "2"
     ]
   },
+  "finite_prime_family_instability": {
+    "all_unknown_zeta_zeros_avoided": true,
+    "height_uniform_bounded_decoder_exists": false,
+    "infimum_joint_absolute_multiplier_amplitude": 0,
+    "multipliers_pairwise_no_exact_common_zero": true,
+    "prime_logarithms_rationally_independent": true,
+    "prime_scales": [
+      2,
+      3,
+      5,
+      13
+    ],
+    "proof_source": "unique factorization plus continuous Kronecker torus density",
+    "test_vector_source_identity_must_be_verified": true
+  },
   "finite_shadow_fucc": {
     "error_budget": "3/20",
     "minimal_design": {

@@ -20,7 +20,7 @@ from observational_succ.shadow_archimedean_tests import (
 from observational_succ.shadow_zero_divisor import (
     distinct_prime_scale_shadows,offcritical_vs_line_shadow,
     two_prime_shadow_conditioning_obstruction,
-    construct_global_polynomial_from_shadows)
+    construct_global_polynomial_from_shadows,finite_prime_shadow_conditioning_obstruction)
 
 
 def clean(x):
@@ -68,6 +68,7 @@ def report():
           'Mellin_C4_of_EXPLICIT_noncanonical_example':explicit_positive_hermite_multiplier(4),
       },
       'construct_global_from_compatible_analytic_shadows':constructed,
+      'finite_prime_family_instability':finite_prime_shadow_conditioning_obstruction((2,3,5,13)),
       'common_zero_divisor':{
           'prime_scale_pair':distinct_prime_scale_shadows(2,3).certificate(),
           'off_line_vs_on_line':other,
