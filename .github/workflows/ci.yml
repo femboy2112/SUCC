@@ -745,6 +745,10 @@ jobs:
           assert d["unbounded_escape"]["converges_to_zero_in_full_adeles"] is False
           assert d["unbounded_escape"]["outside_prime_norm_product"]==str(int(d["unbounded_escape"]["diagonal_rational"].split("/")[1]))
           assert d["s2_arch_completed_exact_interval"]["continuation_claimed"] is False
+          assert d["offcritical_zero_mutated_selfdual_arch"]["discriminant"] == "21/25"
+          assert d["offcritical_zero_mutated_selfdual_arch"]["zeros_inside_open_critical_strip"] is True
+          assert d["offcritical_zero_mutated_selfdual_arch"]["zeros_off_critical_line"] is True
+          assert d["offcritical_zero_mutated_selfdual_arch"]["actual_riemann_zeta_changed"] is False
           assert d["nonunique_arch_selfdual_mutation"]["mellin_relative_to_standard"] == "3/2"
           assert d["nonunique_arch_selfdual_mutation"]["pole_zero_normalization_C0"] == "1"
           assert d["nonunique_arch_selfdual_mutation"]["pole_one_normalization_C1"] == "1"

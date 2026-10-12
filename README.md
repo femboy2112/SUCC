@@ -201,3 +201,6 @@ The [diagonal rational adelic source dossier](research/2026-10-12/DIAGONAL_ADELI
 
 
 **Archimedean uniqueness falsifier (O333).** The [DZ8 countermodel](research/2026-10-12/DIAGONAL_ADELIC_ZETA_SOURCE.md) constructs a positive normalized real Schwartz function that is Fourier-self-dual, retains the true finite Euler product, completed reflection symmetry and standard pole residues, but has a different Mellin factor. For parameter r=2, C(2)=C(-1)=3/2 while C(0)=C(1)=1. Self-duality and commuting diagrams alone do not select the standard Gamma factor. This is a classical exact negative control, not an RH result.
+
+
+**Off-line completed-source falsifier (O334).** [DZ9](research/2026-10-12/DIAGONAL_ADELIC_ZETA_SOURCE.md) exhibits a positive real Fourier-self-dual, normalized Schwartz function coupled to all genuine finite Euler factors, with an unchanged completed functional equation and pole residues. Its DIFFERENT Archimedean Mellin multiplier has exact zeros strictly within 0<Re(s)<1 but away from Re(s)=1/2; this follows from the quadratic t²+(11/5)t+1=0 with discriminant 21/25. This is a counterexample to an overbroad completion→RH inference. **It does not change the actual Riemann zeta function or refute RH.**
