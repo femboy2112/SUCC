@@ -338,3 +338,10 @@ Two observer towers on one declared source S are represented as increasing parti
 
 
 **Dual chart categorical test:** Algebraic P1 has two affine observers at z=0 and w=0 (z=infinity), with overlap Gm. The transition z^k defines O(k). Its source gluing complex has H0 equal global compatible Laurent modes 0..k and H1 equal unremovable modes k+1..-1, giving h0-h1=k+1. This explicitly models both true global reconstruction and genuine Cech obstruction, but no arithmetic prime-sourced transition or completed real-place Gamma. See [DB7](../research/2026-10-12/DUAL_BOUNDARY_OBSERVER_CORRELATION.md).
+
+
+## Diagonal Q / adelic local-to-global completion
+
+The canonical shared arithmetic source is the diagonal Q -> R x restricted-product Q_p, NOT a guessed common topological space or a prescribed matching probability distribution. Each rational state has exact normalized multiplicative and additive characters; source-relative SUCC translations and FUCC multiplications commute with every embedding. Ring-valued reduction mod p^k is licensed only on Z_p inputs; the Fourier permutation law for a multiplier m requires gcd(m,p^k)=1 (and prime provenance is an additional gate). Two-place E observers can combine exact rational interval and finite-p clock receipts to certify original-source claims relative to a bounded-height, prime-integral candidate class. In the absence of such a uniform bound, the rational q_n=M_n/(M_n^2+1) demonstrates real/selected-p convergence with escape to unobserved primes, while diagonal Q remains discrete in the full adele ring.
+
+The standard factorizable Schwartz–Bruhat source Phi=exp(-pi x_inf^2) product_p 1_Zp, with suitable Haar and phase normalizations, has local Mellin factors pi^(-s/2)Gamma(s/2) and (1-p^-s)^-1. Classical theta Poisson plus Mellin and pole subtraction yields Lambda(s)=Lambda(1-s) (not RH). The real Gaussian is a declared test function; deriving a canonical arithmetic Weil-positive object from genuine source data remains entirely unverified. See [source dossier](../research/2026-10-12/DIAGONAL_ADELIC_ZETA_SOURCE.md), O321–O332.

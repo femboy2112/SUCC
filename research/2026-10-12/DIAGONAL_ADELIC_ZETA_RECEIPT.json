@@ -1,0 +1,185 @@
+{
+  "additive_reciprocity_one_sixth": {
+    "diagonal_character_trivial": true,
+    "finite_angle_sum": "7/6",
+    "finite_angles": {
+      "2": "1/2",
+      "3": "2/3"
+    },
+    "q": "1/6",
+    "real_angle": "-1/6",
+    "total_integer": 1
+  },
+  "all_quantitative_exact_receipts_rational": true,
+  "analytic_functional_equation_proved_in_code": false,
+  "bounded_height_independent_search": {
+    "collision_witness": [],
+    "modulus": 35,
+    "observed_collisions": 0,
+    "provably_injective": true,
+    "states": 15
+  },
+  "bounded_height_injection": {
+    "assumptions": "height-bound, P-integral denominators, equality at each p clock",
+    "height": 3,
+    "injective": true,
+    "modulus": 35,
+    "modulus_cutoff": "18",
+    "primes": [
+      [
+        5,
+        1
+      ],
+      [
+        7,
+        1
+      ]
+    ]
+  },
+  "dual_observer_fiber_sizes": {
+    "arch_only_size": 1,
+    "finite_only_size": 1,
+    "intersection_equals_joint": true,
+    "joint_consistent": true,
+    "joint_size": 1,
+    "physical_source_authenticated": false,
+    "same_source_verified_inside_declared_model": true
+  },
+  "dual_observer_proof": {
+    "external_observation_authentication": false,
+    "fiber_size": 1,
+    "one_epistemic_macro_update": true,
+    "original_source_id": "diagonal Q",
+    "status": "PROVED",
+    "value": "positive"
+  },
+  "exact_finite_fourier": {
+    "exact_inverse": true,
+    "fucc_dual_frequency_square": true,
+    "modulus": 5,
+    "multiplier": 2,
+    "physical_carrier_authenticated": false,
+    "prime_source_attested": true,
+    "shift_fourier_square": true,
+    "step": 1
+  },
+  "gamma_forced_by_finite_prime_data": false,
+  "lambda_theta_diagnostic_nonproof": {
+    "continuation_value": "(-0.21169577815674883585770003337064 + 0.021959877025488849017073949707049j)",
+    "numeric_diagnostic_not_proof": true,
+    "s": "0.4+2.0j",
+    "source_match_residual": "2.84980944616e-57",
+    "symmetry_residual": "5.097894116e-57",
+    "zeta_gamma_value": "(-0.21169577815674883585770003337064 + 0.021959877025488849017073949707049j)"
+  },
+  "missing_true_prime_2_mutation": {
+    "dual_mutation": "-1",
+    "left_mutation": "3/4",
+    "noncommuting_factor": "7/4",
+    "p": 2,
+    "preserves_unmodified_completion": false,
+    "s": 2
+  },
+  "multiplicative_reciprocity_one_sixth": {
+    "arch_norm": "1/6",
+    "finite_norm_product": "6",
+    "global_product": "1",
+    "padic_norms": {
+      "2": "2",
+      "3": "3"
+    },
+    "q": "1/6",
+    "valuations": {
+      "2": -1,
+      "3": -1
+    }
+  },
+  "physical_entanglement_claimed": false,
+  "rh_proved": false,
+  "s2_arch_completed_exact_interval": {
+    "RH_claimed": false,
+    "continuation_claimed": false,
+    "euler_lower": "14933966047/9172942848",
+    "euler_upper": "3929991065/2293235712",
+    "gamma_symbolic": {
+      "coefficient": "1",
+      "normalized_multiplicative_measure": "dx/abs(x)",
+      "pi_power": -1,
+      "s": 2,
+      "test_function": "exp(-pi*x*x)"
+    },
+    "lambda_lower": "91942592719128136922863467887903835148290938707428741455078125/177419008195449407579560675434719444115627441827010862217428992",
+    "lambda_upper": "14548068805288970385514914540789348940458522742124756622314453125/26669345176653384535773874622365679675701512267451732749233160192",
+    "pi_lower": "662885488445264068231600456375085328130013963102258180212/211003004379978485262624923760480073663001011505126953125",
+    "pi_terms": 8,
+    "pi_upper": "58024674677047352594459555745850683441092592478456112/18469827592302173041668118884515333560599517822265625",
+    "prime_cutoff": 19,
+    "s": 2
+  },
+  "s2_euler": {
+    "lower": "14933966047/9172942848",
+    "prime_cutoff": 19,
+    "prime_places": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19
+    ],
+    "s": 2,
+    "tail_multiplier": "20/19",
+    "tail_proof": "prime subset of integers and telescoping at s=2",
+    "upper": "3929991065/2293235712"
+  },
+  "source": "one diagonal rational Q with standard normalized finite and real places",
+  "succ_fucc_square": {
+    "arch_address": "7",
+    "common_address": "7",
+    "finite_views": {
+      "5": 7,
+      "7": 7
+    },
+    "law": "V_m o S_d = S_(m*d) o V_m",
+    "local_square_verified": true
+  },
+  "theta_diagnostic_nonproof": {
+    "absolute_truncation_residual": "0.0",
+    "analytic_identity_proved_by_code": false,
+    "direct_theta": "1.0037348854877390910476795950669539",
+    "dual_theta": "1.0037348854877390910476795950669539",
+    "formal_error_interval_provided": false,
+    "t": "2.0"
+  },
+  "unbounded_escape": {
+    "all_selected_clocks_read_zero": true,
+    "converges_in_finite_product": true,
+    "converges_to_zero_in_full_adeles": false,
+    "diagonal_rational": "1500625/2251875390626",
+    "full_product_formula": "1",
+    "level": 4,
+    "outside_prime_norm_product": "2251875390626",
+    "real_abs": "1500625/2251875390626",
+    "real_upper_bound": "1/1500625",
+    "selected_prime_norms": {
+      "5": "1/625",
+      "7": "1/2401"
+    },
+    "selected_primes": [
+      5,
+      7
+    ]
+  },
+  "unbounded_fixed_depth_alias": {
+    "all_selected_prime_views_zero": true,
+    "arch_abs": "175/17501",
+    "arch_upper_bound": "1/100",
+    "full_global_norm_product": "1",
+    "measured_prime_norm_product": "1/175",
+    "missing_resource": "uniform bounded height or bounded denominator",
+    "nonzero": "175/17501",
+    "unobserved_prime_norm_compensation": "17501"
+  }
+}
