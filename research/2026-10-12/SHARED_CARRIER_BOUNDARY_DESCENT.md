@@ -105,6 +105,28 @@ For the *real or complex harmonic* fields on D continuous to the closed disk, th
 
 In contrast the unrestricted continuous interior fields u≡0 and v(r,θ)=1−r² have identical zero boundary trace but different interiors. They share the **same fundamental disk carrier**. The source law is what excludes v from the admissible harmonic class. The analogous sphere theorem uses the corresponding Poisson kernel on the ball and the maximum principle; it does not imply physical holography or AdS/CFT.
 
+## SC7. The E-ring elimination tower REALLY commutes (CLASSICAL / PROVED LOCAL)
+
+Let **B₀ ⊆ B₁ ⊆ V** be nested boundaries of one positive-conductance carrier, with B₀ meeting every connected component. Denote by **Λ_B(L)** the Schur-complement effective boundary Laplacian obtained by eliminating V\B. Because its off-diagonal entries are nonpositive and each row sums to zero, Λ_B₁(L) itself represents a (possibly dense) positive-conductance graph on B₁. Then the exact tower identity holds:
+
+\[
+\boxed{\Lambda_{B_0}(L)=\Lambda_{B_0}(\Lambda_{B_1}(L)).}\tag{SC7}
+\]
+
+**Proof 1 (variational):** for any prescribed values on B₀, unique harmonic completion minimizes the positive quadratic energy over all unobserved vertices. Splitting V\B₀ into (V\B₁) followed by (B₁\B₀), the iterated minimization is equal to the joint minimization:
+
+\[
+\min_{u_{V\setminus B_0}} \mathcal E_L(u)=
+\min_{u_{B_1\setminus B_0}}
+  \min_{u_{V\setminus B_1}}\mathcal E_L(u).
+\]
+
+Both sides are boundary quadratic forms; equality for all boundary values implies equality of the symmetric boundary operators by polarization. **Proof 2:** associativity of Schur-complement block elimination / Gaussian elimination.
+
+This is precisely the *commuting square* required by a ladder of E-rings: it does not matter whether observers transmit the original carrier or an exact effective model through many intermediary rings. As long as every stage retains the law, gauge and boundary interface, E receives exactly the same boundary action at the base. **No independent global reconstruction or physically zero-cost compression** is inferred: every reduction uses exact source topology and conductances, and eliminating nodes can make the effective graph dense.
+
+**Exact positive witness:** the three-edge unit path (a,u,v,b) reduces directly to conductance 1/3 on a—b. Eliminating v first creates u—b conductance 1/2, then eliminating u gives the same 1/3. 90 independent seeded rational weighted graphs and multiple intermediate-ring choices pass direct-versus-staged equality checks. Mutated nested boundaries that omit required probes, invent unknown nodes or repeat a node are rejected.
+
 ## What this does and does not say about the Archimedean place
 
 A circle boundary, a Dirichlet-to-Neumann operator and a complete archimedean absolute value are **different mathematical structures**. If the fundamental carrier is the rational source, the classical normalized product formula for q≠0 gives

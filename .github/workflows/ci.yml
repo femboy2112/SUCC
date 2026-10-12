@@ -698,6 +698,8 @@ jobs:
           assert r["wheel"]["reconstructed_interior"]==[["u","1/4"]]
           assert r["wheel"]["boundary_only_energy"]==r["wheel"]["global_energy"]
           assert r["two_interior_path"]["reconstructed_interior"]==[["u","1/3"],["v","2/3"]]
+          assert r["nested_reduction"]["commuting_square_verified"] is True
+          assert r["nested_reduction"]["direct_DtN"]==r["nested_reduction"]["composed_DtN"]
           assert r["path_DtN"]==[["1/3","-1/3"],["-1/3","1/3"]]
           assert r["global_interior_source_certified"] is False
           assert r["archimedean_place_identified"] is False

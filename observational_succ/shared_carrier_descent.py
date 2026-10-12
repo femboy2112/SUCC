@@ -297,3 +297,39 @@ class SharedCarrierGraph:
                 "reconstructed_interior":tuple((v,field[v]) for v in self.interiors),
                 "global_energy":energ,"boundary_only_energy":energ,
                 "harmonic_law_assumed":True,"physical_source_authenticated":False}
+
+    def nested_boundary_reduction(self, intermediate_boundary: Sequence[Hashable]) -> dict:
+        """Exact commuting square for E-ring reductions on ONE carrier.
+
+        First eliminate V minus B_mid, then B_mid minus B_final. This yields exactly
+        the direct Dirichlet-to-Neumann action on B_final=self.boundary.
+        The effective graph is mathematical, not a newly prepared carrier.
+        """
+        declared = tuple(intermediate_boundary)
+        if len(set(declared)) != len(declared) or not (set(self.boundary) <= set(declared) <= set(self.vertices)):
+            raise CarrierDescentError("Nested boundary must contain final boundary and belong to source")
+        mid = tuple(v for v in self.vertices if v in set(declared))
+        first = SharedCarrierGraph(self.carrier_id, self.version,
+                                   self.vertices, mid, self.edges)
+        op_first = first.boundary_operator()
+        effective_edges=[]
+        for i in range(len(mid)):
+            for j in range(i+1,len(mid)):
+                weight=-op_first[i][j]
+                if weight<0:
+                    raise AssertionError("Source Schur complement not a positive conductance graph")
+                if weight:
+                    effective_edges.append((mid[i],mid[j],weight))
+        second=SharedCarrierGraph(self.carrier_id+"::effective-operator",
+                                   self.version,mid,self.boundary,tuple(effective_edges))
+        composed=second.boundary_operator()
+        direct=self.boundary_operator()
+        if composed!=direct:
+            raise AssertionError("Schur-complement composition failed")
+        return {"carrier_id":self.carrier_id,"version":self.version,
+                "intermediate_boundary":mid,"final_boundary":self.boundary,
+                "direct_DtN":direct,"composed_DtN":composed,
+                "intermediate_DtN":op_first,
+                "commuting_square_verified":True,
+                "same_physical_carrier_assumed":True,
+                "independent_physical_model_attested":False}

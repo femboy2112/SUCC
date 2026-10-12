@@ -360,6 +360,8 @@ Use these labels:
 | O304 | A shared physical source ID, a finite harmonic boundary reconstruction, or a circular/spherical tower network authenticates a physical holographic theory, actual Archimedean place or RH | UNVERIFIED | [Source boundary](../research/2026-10-12/SHARED_CARRIER_BOUNDARY_DESCENT.md): missing physical attestation, law identification, topology and real Gamma/Weil source operators |
 | O305 | Source-changing interventions automatically preserve harmonic extension and effective boundary energy under base-change without commuting carrier/instrument squares | UNVERIFIED / GENERALLY FALSE | [Next theorem](../research/2026-10-12/SHARED_CARRIER_BOUNDARY_DESCENT.md): require verified carrier/energy map, source truth, boundary probes and operator-law preservation |
 
+| O306 | Exact successive interior elimination on ONE positive harmonic carrier graph gives the same boundary Dirichlet-to-Neumann operator and energy as direct elimination, for every nested boundary B0⊆B1⊆V meeting every component | CLASSICAL / PROVED LOCAL | [SC7](../research/2026-10-12/SHARED_CARRIER_BOUNDARY_DESCENT.md): associativity of Schur complement / nested variational minimization; 90 seeded graph controls with several middle-ring choices, nonnested mutations rejected |
+
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.

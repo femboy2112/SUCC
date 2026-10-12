@@ -35,12 +35,14 @@ def run():
                 inconsistent['pairwise_realizable'] and not inconsistent['globally_realizable']),
             'wheel':energy,'wheel_DtN':G.boundary_operator(),
             'two_interior_path':path,'path_DtN':P.boundary_operator(),
+            'nested_reduction':P.nested_boundary_reduction(('a','u','b')), 
             'global_interior_source_certified':False,
             'archimedean_place_identified':False,
             'conditional_harmonic_law':True}
 
 if __name__=='__main__':
     r=run()
+    assert r['nested_reduction']['commuting_square_verified'] is True
     assert r['source_factorization_complete']
     assert r['pairwise_consistent_but_globally_impossible']
     assert r['wheel']['reconstructed_interior']==(('u',F(1,4)),)

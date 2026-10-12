@@ -217,3 +217,38 @@ class StrongSourceAndEnergyOracles(unittest.TestCase):
                     brute[key]=claims['target'][j]
                 self.assertEqual(reports['factors'],expected)
                 self.assertTrue(model.factorization(tuple(observations),'target')['factors'])
+
+class NestedBoundaryTowerTests(unittest.TestCase):
+    def test_true_two_layer_commuting_square(self):
+        g=SharedCarrierGraph("finite-carrier",4,("a","u","v","b"),("a","b"),
+                             (("a","u",1),("u","v",1),("v","b",1)))
+        r=g.nested_boundary_reduction(("a","u","b"))
+        self.assertTrue(r["commuting_square_verified"])
+        self.assertEqual(r["direct_DtN"],((F(1,3),F(-1,3)),(F(-1,3),F(1,3))))
+        self.assertEqual(r["intermediate_DtN"],(
+            (F(1),F(-1),F(0)),(F(-1),F(3,2),F(-1,2)),(F(0),F(-1,2),F(1,2))))
+        self.assertFalse(r["independent_physical_model_attested"])
+
+    def test_exact_nested_commutation_with_many_different_elimination_orders(self):
+        import random
+        rng=random.Random(91837)
+        for case in range(90):
+            n=rng.randrange(4,9)
+            V=tuple(range(n))
+            edges=[(i,i+1,F(rng.randrange(1,6))) for i in range(n-1)]
+            for i in range(n):
+                for j in range(i+2,n):
+                    if rng.randrange(4)==0:edges.append((i,j,F(rng.randrange(1,6))))
+            g=SharedCarrierGraph("same-carrier",case,V,(0,n-1),tuple(edges))
+            mid=(0,n-1)+tuple(i for i in range(1,n-1) if rng.randrange(2))
+            for chosen in (mid,tuple(V),g.boundary):
+                out=g.nested_boundary_reduction(chosen)
+                self.assertEqual(out['direct_DtN'],out['composed_DtN'])
+                self.assertEqual(out['carrier_id'],'same-carrier')
+
+    def test_wrong_boundary_refinement_rejected(self):
+        g=wheel()
+        for subset in (("b0","b1"),("b0","b1","b2","b3","x"),
+                       ("b0","b1","b2","b3","b3")):
+            with self.assertRaises(CarrierDescentError):
+                g.nested_boundary_reduction(subset)
