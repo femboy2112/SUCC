@@ -158,3 +158,6 @@ New work belongs here first. When it yields an independently meaningful RH-relat
 ## Exact source-relative coverage calculus
 
 The [finite coverage dossier](research/2026-10-12/SOURCE_RELATIVE_COVERAGE_CALCULUS.md) proves sharp collision-divergence lower bounds for the reference mass of well-covered outcomes, Markov/source-change transport, a no-independence batch-coordinate theorem, explicit Bernoulli SUCC/Doeblin full-residue lower bounds, and a short-window Gaussian residue no-go. Exact Fraction certificates and hostile source/refinement controls live in observational_succ/coverage_lower_bounds.py, tests/test_coverage_lower_bounds.py, and scripts/coverage_lower_bounds_probe.py. This is **classical finite mathematical machinery and a new SUCC interface**, not an independent all-step Gaussian moat or RH result. **Draft PR #23 remains unmerged**, and this coverage work is developed on a separate research branch.
+
+
+**Gaussian-sieve coverage refinement:** The [C9 CRT theorem](research/2026-10-12/SOURCE_RELATIVE_COVERAGE_CALCULUS.md) computes exact split-prime sieve-Haar coverage and decomposes its unavoidable excluded-zero collision cost from the separate nonuniform walk-mixing debt. The finite p=5/13 certificate is in observational_succ/coverage_sieve_crt.py. It is not an assertion that arbitrary prime walks are sampled from sieve Haar.

@@ -156,3 +156,38 @@ The additive module observational_succ/coverage_lower_bounds.py computes all wei
 **Main open probe:** using OpenAI's real sampled-time and signed-prime setup, compute and independently bound the mean authentic Gaussian pair-collision excess in C3. Predict either a \(T^{-\beta}\) bound (a stronger sufficient path to coverage) or construct a source-faithful family showing that collision energy is too demanding despite the paper's entropy/short-list coverage mechanism. Preserve genuine prime versus fake-composite and source-dependent-update controls.
 
 **Claims not earned:** independent all-\(D\) finite-sieve existence, any RH positivity, physical infinite computation, physical independence or quantum effects, and research priority. Failure of a particular collision bound does not invalidate OpenAI's theorem or other possible SUCC proofs.
+
+
+## C9. Authentic Gaussian sieve-Haar law: exact coverage and mixing debt
+
+Fix distinct rational split primes \(p\equiv1\pmod4\), each with Gaussian conjugate factors \(\pi_p,\overline\pi_p\), and period \(Q=\prod p\). Choose \(Y\) **uniformly among residues modulo \(Q\mathbb Z[i]\) not divisible by any of these factors**. This is a genuine periodic-sieve source law, but **not** the time law of a prime-only walk.
+
+By the Gaussian CRT, \(\mathbb Z[i]/(p)\cong\mathbb F_p\times\mathbb F_p\). The conjugate Gaussian-factor reductions are the two coordinates. Conditioning on avoiding both factors restricts their values to \((\mathbb F_p^\times)^2\), still uniformly. Distinct rational primes factor independently by CRT. Therefore for each signed Gaussian factor \(\pi\) of norm \(p\),
+
+\[
+\boxed{P(\phi_\pi(Y)=u)=\begin{cases}
+0&u=0,\\[2pt]1/(p-1)&u\ne0.
+\end{cases}}\tag{C9a}
+\]
+Consequently its single-coordinate Haar chi-square divergence is exactly
+\[
+\boxed{\kappa_\pi=\frac{1}{p-1}},\qquad
+\boxed{\#E_\tau=1,\quad C_\tau=\frac{p-1}{p}\quad(0<\tau<1).}\tag{C9b}
+\]
+For every \(0<\beta<1\) it satisfies OpenAI's \((\tau,\beta)\)-coverage condition since \(1<p^{1-\beta}\). The total survivor count is
+\[
+\boxed{|\mathcal A(P)\bmod Q|=Q^2\prod_{p\in P}(1-1/p)^2=\prod_{p\in P}(p-1)^2.}\tag{C9c}
+\]
+
+**General exact mixing-debt decomposition.** For **any** probability law \(\mu\) on \(\mathbb F_p\) with \(\mu(0)=0\), let \(\delta_u=\mu(u)-1/(p-1)\) for \(u\ne0\). Since \(\sum_{u\ne0}\delta_u=0\), direct square expansion yields
+\[
+\boxed{\chi^2(\mu\|U_p)=
+\underbrace{\frac{1}{p-1}}_{\mathrm{forbidden\ zero}}
++
+\underbrace{p\sum_{u\ne0}\delta_u^2}_{\mathrm{nonuniform\ source\ mixing\ debt}}.}\tag{C9d}
+\]
+Thus the arithmetic sieve forces an **irreducible baseline** of \(1/(p-1)\); the actual additional obligation for an avoiding walk is to control its nonzero-residue mixing debt. An arbitrary avoiding deterministic walk need not sample those residues uniformly. This prevents treating C9a as a Gaussian moat proof.
+
+**Exact reproduction:** for the two true split primes \(5=(1+2i)(1-2i)\), \(13=(2+3i)(2-3i)\) up to associates, \(Q=65\). Exactly \(4^2\cdot12^2=2304\) of the \(65^2=4225\) residues survive the genuine sieve. Both norm-5 coordinates have \(\kappa=1/4\), one missing residue and covered Haar mass \(4/5\). Both norm-13 coordinates have \(\kappa=1/12\), one missing residue and covered mass \(12/13\). An independent finite enumeration confirms the theorem; counterfeit composite norms, duplicate prime factors and resource-cap overreach are rejected.
+
+The Python certificate lives in observational_succ/coverage_sieve_crt.py with tests/test_coverage_sieve_crt.py and scripts/coverage_sieve_crt_probe.py. A useful **next discriminator** is to estimate the second term of C9d from the actual sampled walk checkpoint law and true-prime difference counts, rather than assuming sieve-Haar sampling.

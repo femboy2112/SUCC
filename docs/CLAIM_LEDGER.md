@@ -312,6 +312,9 @@ Use these labels:
 | O259 | A verified T^(-beta) collision-energy estimate for OpenAI's exact geometrically sampled true-Gaussian source follows from generic SUCC axioms, yielding an independent all-D moat proof | UNVERIFIED | [Coverage frontier](../research/2026-10-12/SOURCE_RELATIVE_COVERAGE_CALCULUS.md): genuine source-difference bound remains missing; C3 is a conditional sufficient criterion, not a source-free existence theorem |
 
 
+| O260 | Uniform Haar sampling on a genuine periodic Gaussian split-prime sieve gives one excluded zero residue per signed factor, uniform nonzero residues, chi2=1/(p-1), and exact product survivor counts | CLASSICAL / PROVED LOCAL | [Coverage C9](../research/2026-10-12/SOURCE_RELATIVE_COVERAGE_CALCULUS.md): Gaussian CRT proof; p=5/13 exactly 2304 surviving residues, both signed-factor laws certified; NOT a prime-walk time law |
+| O261 | For any law supported away from residue zero, its Haar chi2 splits as 1/(p-1) plus p times the squared deviation from nonzero-uniform; the walk term vanishes automatically for arbitrary avoiding paths | FIRST CLAUSE PROVED LOCAL; SECOND REFUTED | [Coverage C9d](../research/2026-10-12/SOURCE_RELATIVE_COVERAGE_CALCULUS.md), 5-point biased countermodel with path mixing debt 5/4; source-specific mixing estimate remains UNVERIFIED |
+
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.

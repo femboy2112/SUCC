@@ -51,6 +51,18 @@ jobs:
           assert report["batch_joint_collision"]["coordinate_fraction_lower"] == "24/25"
           assert report["source_dependent_update_control"]["terminal_chi2"] == "4"
           PY
+      - name: Independent Gaussian sieve CRT source and mixing debt
+        run: |
+          python scripts/coverage_sieve_crt_probe.py > "$RUNNER_TEMP/coverage-sieve-crt.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          r=json.loads((Path(os.environ["RUNNER_TEMP"])/"coverage-sieve-crt.json").read_text())
+          assert r["period"]==65 and r["sieve_survivors"]==2304
+          assert [x["chi2"] for x in r["factors"]]==["1/4","1/4","1/12","1/12"]
+          assert [x["bad_count"] for x in r["factors"]]==[1,1,1,1]
+          assert "NOT Gaussian-prime walk" in r["source_type"]
+          PY
       - name: Verify periodic Gaussian source and replay saved confinement certificate
         run: |
           python scripts/gaussian_moat_probe.py --output "$RUNNER_TEMP/gaussian-moat.json"
