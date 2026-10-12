@@ -1,0 +1,26 @@
+{
+  "RH_claimed": false,
+  "adaptive_succeeds_where_fixed_length_two_fails": true,
+  "checkpoint_e_knowledge": [
+    {
+      "index": 1,
+      "proved": false
+    },
+    {
+      "index": 2,
+      "proved": true
+    }
+  ],
+  "conditional_worst_case_depth": 2,
+  "destructive_full_order_enumeration": "MODEL_CERTIFIED_NO_FINITE_POLICY",
+  "finite_controller_periodic": [
+    "A",
+    "B"
+  ],
+  "meta_tested_model_not_physical_source": true,
+  "noncommuting_conditional_adaptive_status": "FOUND_ADAPTIVE_POLICY",
+  "physical_infinity_completed": false,
+  "source_authentication_claimed": false,
+  "status": "FINITE_META_OBSERVER_CHECKPOINTS_EXACT",
+  "two_default_orderings_disagree": true
+}

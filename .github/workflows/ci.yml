@@ -34,6 +34,26 @@ jobs:
         run: python -m pip install -e ".[test]"
       - name: Verify source Git blob provenance
         run: python scripts/verify_provenance.py
+      - name: Check carrier-relative ontology, proof policy and E meta tower receipts
+        run: |
+          python scripts/carrier_relative_frontier_probe.py > "$RUNNER_TEMP/carrier-relative.json"
+          python scripts/checkpoint_meta_tower_probe.py > "$RUNNER_TEMP/checkpoint-meta.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          a=json.loads((Path(os.environ["RUNNER_TEMP"])/"carrier-relative.json").read_text())
+          b=json.loads((Path(os.environ["RUNNER_TEMP"])/"checkpoint-meta.json").read_text())
+          assert a["ontology_pair_same_history_all_policies"] is True
+          assert a["original_parity_uniformly_decidable"] is False
+          assert a["hankel"]["verified_min_linear_state_dimension"] == 2
+          assert a["finite_horizon_internalization"]["all_observed_joint_probabilities_equal"] is True
+          assert b["destructive_full_order_enumeration"] == "MODEL_CERTIFIED_NO_FINITE_POLICY"
+          assert b["adaptive_succeeds_where_fixed_length_two_fails"] is True
+          assert b["conditional_worst_case_depth"] == 2
+          assert b["checkpoint_e_knowledge"] == [{"index":1,"proved":False},{"index":2,"proved":True}]
+          assert b["source_authentication_claimed"] is False and b["physical_infinity_completed"] is False
+          assert a["RH_or_archimedean_identification_claimed"] is False and b["RH_claimed"] is False
+          PY
       - name: Run all mathematical, logic, quantum, source and hostile tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
       - name: Exact source-relative coverage and correlated-update checks
@@ -817,6 +837,8 @@ jobs:
             ${{ runner.temp }}/foundations.json
             ${{ runner.temp }}/ordinal.json
             ${{ runner.temp }}/prime-source.json
+            ${{ runner.temp }}/carrier-relative.json
+            ${{ runner.temp }}/checkpoint-meta.json
             ${{ runner.temp }}/shared-carrier-boundary.json
             ${{ runner.temp }}/dynamic-fourier-virtual-zeros.json
             ${{ runner.temp }}/shadow-source-inference.json
