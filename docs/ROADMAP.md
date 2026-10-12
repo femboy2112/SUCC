@@ -313,3 +313,16 @@ See [arithmetic prime-clock proof dossier](../research/2026-10-11/PRIME_CLOCK_YO
 ## Completion criteria
 
 Every stage needs: a precise theorem/model statement; source and assumptions; independently checkable proof or certified numeric bounds; adversarial controls; executable regression tests; and a ledger entry that distinguishes demonstrated behavior from general claims. “Our finite probes were all positive” is not a global sign theorem.
+
+
+## Next hard frontier: local-to-global proof-producing SUCC/FUCC and descending towers
+
+**New finite checkpoints:** Gaussian-FUCC authentic source signature, complete rank/index lattice of quotient loop voltages, exact killing of repeated known escape motifs by new split-prime factors, and the surviving detour counterexample {5,17}. A two-lane/multi-floor climbing tower transports verified source-relative knowledge downward to E; E can accept a proof in one epistemic macro-event. The first **actual arithmetic-to-tower adapter** shards all vertices/edges of a genuine finite confining sieve to climbers and independently re-verifies them at E.
+
+**Highest-value missing lemma:** an arithmetic **uniform finite-stage holonomy annihilation theorem**, K -> explicit finite true-prime set P(K) with H(P(K),K)=0, or a new source-derived lower-tail/coverage proof implying one. Per-template FUCC annihilation alone is NOT such a theorem: after {5}→{5,17} old motifs die but rank-two escape survives. A computable checker of a fixed period is not the all-K proof.
+
+**Most promising next categorical experiment:** remove the global prebuilt potential from the voltage tower. Let independent A/B climbers construct locally valid potentials on overlapping graph patches. Require certified transition shifts in QZ² on overlaps; compute the **Cech 1-cocycle** of patch disagreements and prove a glueability iff theorem with explicit nonflat/nontrivial-loop counterexamples. Only then is the tower participating in *proof construction* rather than distributing verification of an already solved global instance. Distinguish connecting original arithmetic patches from inventing new probe capabilities.
+
+**Source and resource boundaries:** extend source-indexed deterministic/nondestructive policies to genuinely state-changing instruments and independently prepared carriers, with explicit semantics, source authenticity, future-continuation simulation, packet loss/noise and paid communication. A source label does not establish empirical origin. One E macro-update does not reduce 2L causally required observations, packet bits, or elapsed physical computation to one constant-time instruction.
+
+**Verification:** mechanize main H1–H4/T1–T7 algebra/categorical rules in Lean with explicit preconditions; test diagram compositions/mutations and theorem-level soundness independently; compare with classical voltage graphs, sheaf-gluing, and distributed proof labeling; validate external Gaussian manuscript separately (no Lean kernel reconstruction was performed here). Archive new probes and source-specific falsifiers in ledger O269–O284.

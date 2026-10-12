@@ -162,3 +162,14 @@ The [finite coverage dossier](research/2026-10-12/SOURCE_RELATIVE_COVERAGE_CALCU
 
 
 **Gaussian-sieve coverage refinement:** The [C9 CRT theorem](research/2026-10-12/SOURCE_RELATIVE_COVERAGE_CALCULUS.md) computes exact split-prime sieve-Haar coverage and decomposes its unavoidable excluded-zero collision cost from the separate nonuniform walk-mixing debt. The finite p=5/13 certificate is in observational_succ/coverage_sieve_crt.py. It is not an assertion that arbitrary prime walks are sampled from sieve Haar.
+
+
+## Gaussian FUCC holonomy and diagonal Ice Climber proof towers (research)
+
+The [typed tower and holonomy dossier](research/2026-10-12/DIAGONAL_TOWER_AND_GAUSSIAN_HOLONOMY.md) develops three separately checkable finite mechanisms:
+
+- **Gaussian FUCC/Holonomy** (observational_succ/gaussian_holonomy.py): genuine Gaussian irreducibility and prime-factor source checks; the full integer lattice of quotient-loop displacements using exact Hermite reduction; source-refinement commuting squares; a fixed-template prime annihilation theorem **that does not establish the all-step moat**.
+- **Many-observer E tower** (observational_succ/diagonal_tower.py): A/B climbers on multiple tiers; upward prerequisite unlocking, diagonally descended source-indexed receipts, causal-downclosure validation, semantically sufficient vs causally complete evidence, and one final **epistemic** macro-SUCC at E. Six physical observations and fourteen authorized relays are real work in the calibrated three-tier example.
+- **Real arithmetic proof shards** (observational_succ/voltage_tower.py): six climbers verify **all 2,304 source vertices and 4,356 directed edge equations** of an independently constructed {5,13} Gaussian sieve confinement potential, transport source-certified shards, and E rechecks the complete finite proof; max component 580. This is distributed **verification**, not all-K sieve discovery or instantaneous physical computing.
+
+Run python scripts/gaussian_holonomy_probe.py, python scripts/diagonal_tower_probe.py and python scripts/voltage_tower_probe.py. Native adversarial unit tests and saved JSON receipts are also in the repository. Status: classical graph/groupoid and source-fiber mathematics newly connected in a finite SUCC model, no originality or physical-source attestation claim; ledger O269–O284. Developed on a non-main draft research branch.

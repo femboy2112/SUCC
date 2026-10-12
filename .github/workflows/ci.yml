@@ -63,6 +63,32 @@ jobs:
           assert [x["bad_count"] for x in r["factors"]]==[1,1,1,1]
           assert "NOT Gaussian-prime walk" in r["source_type"]
           PY
+      - name: Exact Gaussian loop holonomy and multi-climber proof descent
+        run: |
+          python scripts/gaussian_holonomy_probe.py > "$RUNNER_TEMP/gaussian-holonomy.json"
+          python scripts/diagonal_tower_probe.py > "$RUNNER_TEMP/diagonal-tower.json"
+          python scripts/voltage_tower_probe.py > "$RUNNER_TEMP/voltage-tower.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          temp=Path(os.environ["RUNNER_TEMP"])
+          for stem,upper in (
+              ("gaussian-holonomy","GAUSSIAN_HOLONOMY"),
+              ("diagonal-tower","DIAGONAL_TOWER"),
+              ("voltage-tower","VOLTAGE_TOWER"),
+          ):
+              actual=json.loads((temp/(stem+".json")).read_text())
+              expected=json.loads((Path("research/2026-10-12")/(upper+"_RECEIPT.json")).read_text())
+              assert actual == expected, stem+" receipt drift"
+          voltage=json.loads((temp/"voltage-tower.json").read_text())
+          assert voltage["verified_source_vertices"] == 2304
+          assert voltage["verified_directed_edges"] == 4356
+          assert voltage["verified_shards"] == 6
+          assert voltage["maximum_lifted_component"] == 580
+          assert voltage["receiver_macro_succ_count"] == 1
+          assert voltage["all_D_sieve_existence_independently_proved"] is False
+          assert voltage["candidate_global_potential_constructed_before_climb"] is True
+          PY
       - name: Verify periodic Gaussian source and replay saved confinement certificate
         run: |
           python scripts/gaussian_moat_probe.py --output "$RUNNER_TEMP/gaussian-moat.json"

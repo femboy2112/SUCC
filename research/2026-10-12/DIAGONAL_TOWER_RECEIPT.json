@@ -1,0 +1,82 @@
+{
+  "all_64_sources_replayed": true,
+  "certificate": {
+    "all_received": [
+      "evt:p0",
+      "evt:p1",
+      "evt:p2",
+      "evt:p3",
+      "evt:p4",
+      "evt:p5"
+    ],
+    "causal_closure": [
+      "evt:p0",
+      "evt:p1",
+      "evt:p2",
+      "evt:p3",
+      "evt:p4",
+      "evt:p5"
+    ],
+    "compatible_sources": [
+      "101101"
+    ],
+    "semantic_minimal": [
+      "evt:p4",
+      "evt:p5"
+    ],
+    "target": "1"
+  },
+  "costs": {
+    "event_references_carried": 30,
+    "local_physical_measurements": 6,
+    "network_transmissions": 15,
+    "receiver_epistemic_macro_updates": 1
+  },
+  "destructive_noncommuting_negative": {
+    "AB_observations": {
+      "A": 1,
+      "B": 0
+    },
+    "BA_observations": {
+      "A": 0,
+      "B": 1
+    },
+    "common_endpoint": [
+      0,
+      0
+    ],
+    "commuting_evidence_square": false,
+    "source": [
+      1,
+      1
+    ]
+  },
+  "general_source_changing_evidence_gluing": false,
+  "initial_E": {
+    "countermodel_pair": null,
+    "missing_causal_ids": [],
+    "semantic_target": null,
+    "status": "NO_EVIDENCE"
+  },
+  "model": "six-bit finite original-source world",
+  "physical_instantaneous_computation": false,
+  "premature_semantic_readout": {
+    "countermodel_pair": null,
+    "missing_causal_ids": [
+      "evt:p0",
+      "evt:p1",
+      "evt:p2",
+      "evt:p3"
+    ],
+    "semantic_target": "1",
+    "status": "CAUSAL_RECEIPTS_MISSING"
+  },
+  "ready_after_causal_relay": {
+    "countermodel_pair": null,
+    "missing_causal_ids": [],
+    "semantic_target": "1",
+    "status": "PROOF_READY"
+  },
+  "source_authentication": "DECLARED registry, NOT a physical attestation",
+  "universal_infinite_tower": false
+}
