@@ -162,3 +162,43 @@ The [finite coverage dossier](research/2026-10-12/SOURCE_RELATIVE_COVERAGE_CALCU
 
 
 **Gaussian-sieve coverage refinement:** The [C9 CRT theorem](research/2026-10-12/SOURCE_RELATIVE_COVERAGE_CALCULUS.md) computes exact split-prime sieve-Haar coverage and decomposes its unavoidable excluded-zero collision cost from the separate nonuniform walk-mixing debt. The finite p=5/13 certificate is in observational_succ/coverage_sieve_crt.py. It is not an assertion that arbitrary prime walks are sampled from sieve Haar.
+
+
+## Gaussian FUCC holonomy and diagonal Ice Climber proof towers (research)
+
+The [typed tower and holonomy dossier](research/2026-10-12/DIAGONAL_TOWER_AND_GAUSSIAN_HOLONOMY.md) develops three separately checkable finite mechanisms:
+
+- **Gaussian FUCC/Holonomy** (observational_succ/gaussian_holonomy.py): genuine Gaussian irreducibility and prime-factor source checks; the full integer lattice of quotient-loop displacements using exact Hermite reduction; source-refinement commuting squares; a fixed-template prime annihilation theorem **that does not establish the all-step moat**.
+- **Many-observer E tower** (observational_succ/diagonal_tower.py): A/B climbers on multiple tiers; upward prerequisite unlocking, diagonally descended source-indexed receipts, causal-downclosure validation, semantically sufficient vs causally complete evidence, and one final **epistemic** macro-SUCC at E. Six physical observations and fourteen authorized relays are real work in the calibrated three-tier example.
+- **Real arithmetic proof shards** (observational_succ/voltage_tower.py): six climbers verify **all 2,304 source vertices and 4,356 directed edge equations** of an independently constructed {5,13} Gaussian sieve confinement potential, transport source-certified shards, and E rechecks the complete finite proof; max component 580. This is distributed **verification**, not all-K sieve discovery or instantaneous physical computing.
+
+Run python scripts/gaussian_holonomy_probe.py, python scripts/diagonal_tower_probe.py and python scripts/voltage_tower_probe.py. Native adversarial unit tests and saved JSON receipts are also in the repository. Status: classical graph/groupoid and source-fiber mathematics newly connected in a finite SUCC model, no originality or physical-source attestation claim; ledger O269–O284. Developed on a non-main draft research branch.
+
+
+## Proof-constructing local-to-global Yoneda descent
+
+[LG1–LG7 complete proofs](research/2026-10-12/LOCAL_GLOBAL_YONEDA_GLUE_2026-10-12.md). Rather than checking shards of a PRECOMPUTED global potential, independently constructed connected source patches each produce their own local potential; a complete overlap-multigraph Čech calculation either glues them or returns a nonzero-displacement closed source walk. All overlap vertices, parallel edges, claimed source maps, and ordered causal receipts are checked. A regular group-torsor extension detects an even S3 commutator that is invisible under abelianized parity. The constructive diagonal A/B/E example assembles a complete Gaussian sieve potential from 462 independently computed charts, 2280 overlaps, 2304 quotient points, 4356 darts and 14 transmissions. Maximum component 580; E commits one EPISTEMIC macro, never free or instant physical execution. New mathematical modules: local_global_descent, nonabelian_local_global, cycle_support_budget, constructive_gluing_tower. Run python scripts/local_global_descent_probe.py. Classical mathematical results, no all-D sieve discovery, physical source attestation or RH proof.
+
+
+## Shared-carrier boundary and distributed holographic reconstruction
+
+The [shared-carrier circle E-tower and Dirichlet-to-Neumann dossier](research/2026-10-12/SHARED_CARRIER_BOUNDARY_DESCENT.md) formalizes the maintainer's new fundamental-carrier premise: all vertical/horizontal observers read ONE underlying source. The combined boundary map determines a claim precisely when its fibers preserve that claim; source-compatible pairwise observations need not be globally realizable, and source-blind cross-communication cannot invent discrimination. For a **specified positive weighted carrier graph plus harmonic law**, E constructs exact rational interior fields and a boundary-only Schur/Kron action equal to the original energy. The dyadic circle tower additionally has a conditional Lipschitz/Poisson limit, finite boundary alias and noncommuting-limit controls, and an exact rational product-formula calibration with sign/Gamma caveats. This is classical finite mathematics newly wired into SUCC, not a physics holographic principle, actual adelic/Archimedean identification or RH proof. Modules: `boundary_tower.py`, `shared_carrier_descent.py`; run `python scripts/shared_carrier_descent_probe.py`. Claim ledger O296–O305.
+
+**Nested E-ring commuting square (SC7):** for a single law-governed conductance carrier and boundaries B₀⊆B₁⊆V, successively reducing to B₁ and then B₀ gives exactly the same Dirichlet-to-Neumann operator and energy as direct reduction to B₀. This is the rigorous algebraic version of communicating effective field models down a ladder; 90 seeded graph controls and exact source-based proof. No assertion of physically free compression, new category-theory priority or universal Archimedean realization.
+
+
+## Dual E-boundary observatories on one carrier
+
+The [dual E-boundary research dossier](research/2026-10-12/DUAL_BOUNDARY_OBSERVER_CORRELATION.md) separates common-carrier identity, same-marginal appearance, independently recoverable shared information, joint information synergy, physical interface flux matching, and stochastic correlation. Two conditionally harmonic half-carriers glue by a source-checked summed DtN interface equation. Two independently refining observations of the same nonconstant target have an exact L2 covariance/error identity and asymptotically positive correlation IF both errors vanish. Exact Gács–Körner source-common components, negative finite-stage covariance, noncommuting conditional projections, a connected resistor path whose coupling tends to zero, and an equal-marginal Markov chain with vanishing endpoint correlation are all regression controls. Neither the geometrical "two infinities" nor the shared source label identifies the real Archimedean Gamma/Weil data. Claims O307–O316.
+
+
+**Dual Riemann-sphere breakthrough (classical):** The two opposed E charts at 0 and infinity on P1 with transition z^k give the exact Laurent-polynomial Cech complex of O(k); counting globally compatible modes and obstruction modes proves the genus-zero Riemann-Roch identity h0-h1=k+1. Raw identity on both charts (k=0) yields only constants; a nontrivial transition permits global fields. See [DB7](research/2026-10-12/DUAL_BOUNDARY_OBSERVER_CORRELATION.md) and observational_succ/dual_chart_riemann_roch.py. This is declared algebraic geometry, not an Euler/Gamma/Weil or Archimedean arithmetic construction. Ledger O317–O320.
+
+
+## Chaotic SUCC: logistic inverse observer tree (research offshoot)
+
+The [chaotic observer tree and proof-debt dossier](research/2026-10-12/CHAOTIC_SUCC_OBSERVER_TREE.md) connects the latest diagonal A/B E ladders, one-carrier boundary descent and dual E reports to the deterministic logistic map at r=4. E's rooted **epistemic** binary inverse tree is distinguished from a physically branching orbit. A full n-level inverse tree averages exact predecessor evidence; its conditional transfer L halves polynomial degree and makes every fixed polynomial observable **exactly independent of the frontier** after 2^n exceeds its degree. For continuous observables, the summaries converge uniformly to the arcsine invariant law, and Lipschitz observables have an explicit convergence bound.
+
+Dual original-source E reports reconstruct the actual tent-map history when chronological branch bits and their correctly sourced terminal coordinate are joined; a stable scalar summary alone loses n bits of n-level history. The theorem L^n U^n x = x (where U is forward Koopman composition) gives a genuine rate-matched moving-target counterexample: fixed targets complete, but a dynamically regenerated target does not complete at matched depth. This is **classical symbolic/ergodic dynamics implemented and adversarially tested in SUCC**, not lossless removal of chaos, a physical speedup, universal bifurcation control, quantum evidence or RH. Claims O321–O332.
+
+Run `python -m unittest discover -s tests -p 'test_logistic_observer_tree.py' -v` and `python scripts/logistic_observer_tree_probe.py`. The corresponding checked-in exact JSON receipt is [LOGISTIC_TREE_RECEIPT.json](research/2026-10-12/LOGISTIC_TREE_RECEIPT.json).
