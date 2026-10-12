@@ -153,3 +153,8 @@ New work belongs here first. When it yields an independently meaningful RH-relat
 **Arithmetic source-control milestone:** [Prime-clock Yoneda origin and source-alias firewall](research/2026-10-11/PRIME_CLOCK_YONEDA_ORIGIN.md) verifies that reduction ℤ/4→ℤ/2 transports authentic SUCC/FUCC dynamics and original parity proof rank even when the fine shift/dilation pair does not commute but its coarse quotient does. Crucially, a different true prime can produce an identical coarse action, so observational Yoneda alone cannot recover the original Euler prime: provenance must be checked separately.
 
 **Professional operating policy:** no merge to main, release, package publishing, or unsupported change of license is implied by the initial repository setup. See [AGENTS.md](AGENTS.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+
+
+## Exact source-relative coverage calculus
+
+The [finite coverage dossier](research/2026-10-12/SOURCE_RELATIVE_COVERAGE_CALCULUS.md) proves sharp collision-divergence lower bounds for the reference mass of well-covered outcomes, Markov/source-change transport, a no-independence batch-coordinate theorem, explicit Bernoulli SUCC/Doeblin full-residue lower bounds, and a short-window Gaussian residue no-go. Exact Fraction certificates and hostile source/refinement controls live in observational_succ/coverage_lower_bounds.py, tests/test_coverage_lower_bounds.py, and scripts/coverage_lower_bounds_probe.py. This is **classical finite mathematical machinery and a new SUCC interface**, not an independent all-step Gaussian moat or RH result. **Draft PR #23 remains unmerged**, and this coverage work is developed on a separate research branch.

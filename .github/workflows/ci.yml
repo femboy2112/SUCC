@@ -36,6 +36,21 @@ jobs:
         run: python scripts/verify_provenance.py
       - name: Run all mathematical, logic, quantum, source and hostile tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Exact source-relative coverage and correlated-update checks
+        run: |
+          python scripts/coverage_lower_bounds_probe.py > "$RUNNER_TEMP/coverage-lower-bounds.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          report=json.loads((Path(os.environ["RUNNER_TEMP"])/"coverage-lower-bounds.json").read_text())
+          assert report["rational_probabilities_only"] is True
+          assert report["gaussian_moat_all_D_from_succ"] is False
+          assert report["gaussian_full_grid_control"]["samples"] == 4225
+          assert all(x["chi2"]=="0" for x in report["gaussian_full_grid_control"]["all_signed_coordinates"])
+          assert report["gaussian_short_window_negative"]["uncovered_residues"] == 9
+          assert report["batch_joint_collision"]["coordinate_fraction_lower"] == "24/25"
+          assert report["source_dependent_update_control"]["terminal_chi2"] == "4"
+          PY
       - name: Verify periodic Gaussian source and replay saved confinement certificate
         run: |
           python scripts/gaussian_moat_probe.py --output "$RUNNER_TEMP/gaussian-moat.json"
