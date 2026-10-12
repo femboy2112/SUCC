@@ -1,0 +1,91 @@
+{
+  "cases": [
+    {
+      "all_direct_component_queues_exhausted": true,
+      "component_size_histogram": {
+        "1": 48,
+        "2": 24,
+        "3": 152,
+        "4": 166,
+        "7": 8,
+        "10": 8,
+        "14": 16,
+        "20": 16,
+        "21": 8,
+        "26": 8,
+        "28": 2,
+        "32": 8,
+        "35": 8,
+        "44": 8,
+        "58": 4,
+        "580": 2
+      },
+      "enlarged_maximum": 580,
+      "exception_cluster_sizes": [
+        164
+      ],
+      "exception_count": 20,
+      "period": 130,
+      "periodic_maximum": 580,
+      "rational_primes": [
+        2,
+        5,
+        13
+      ],
+      "step_squared": 2,
+      "survivors": 4608
+    },
+    {
+      "all_direct_component_queues_exhausted": true,
+      "component_size_histogram": {
+        "1": 1440,
+        "2": 1092,
+        "3": 1736,
+        "4": 1018,
+        "5": 192,
+        "6": 224,
+        "7": 104,
+        "8": 96,
+        "9": 232,
+        "10": 176,
+        "11": 136,
+        "12": 130,
+        "13": 88,
+        "14": 32,
+        "15": 72,
+        "16": 88,
+        "17": 96,
+        "18": 32,
+        "19": 56,
+        "20": 16,
+        "21": 32,
+        "25": 40,
+        "27": 32,
+        "28": 16,
+        "29": 16,
+        "32": 8,
+        "37": 8,
+        "50": 4,
+        "51": 16,
+        "71": 8
+      },
+      "enlarged_maximum": 104,
+      "exception_cluster_sizes": [
+        104
+      ],
+      "exception_count": 24,
+      "period": 390,
+      "periodic_maximum": 71,
+      "rational_primes": [
+        2,
+        3,
+        5,
+        13
+      ],
+      "step_squared": 2,
+      "survivors": 36864
+    }
+  ],
+  "status": "INDEPENDENT_DIRECT_LATTICE_AUDIT",
+  "uses_quotient_potentials": false
+}

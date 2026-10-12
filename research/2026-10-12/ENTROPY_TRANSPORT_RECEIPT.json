@@ -1,0 +1,39 @@
+{
+  "entropy_units": "bits",
+  "formal_proof_or_interval_certificate": false,
+  "repeated_coordinate_identity": {
+    "conditional_total_correlation_bits": 0.0,
+    "identity_rhs_bits": 2.0,
+    "joint_deficit_bits": 1.0,
+    "shared_update_entropy_bits": 1.0,
+    "status": "NUMERIC_ENTROPY_DIAGNOSTIC",
+    "sum_conditional_deficits_bits": 2.0,
+    "update_information_bits": 1.0,
+    "upper_bound_bits": 2.0
+  },
+  "repeated_facts_are_independent": false,
+  "shared_block_update": {
+    "block_count": 2,
+    "entropy_bound_bits": 1.0,
+    "information_bound_bits": 1.0,
+    "local_block_entropy_sum_bits": 0.0,
+    "shared_update_entropy_bits": 1.0,
+    "shared_update_information_bits": 1.0,
+    "status": "EXACT_UPDATE_CHECKS_NUMERIC_ENTROPY_DIAGNOSTICS",
+    "word_entropy_bits": 1.0
+  },
+  "sharp_mod5_two_H_control": {
+    "identity_loss_bits": 2.0,
+    "loss_bits": 2.0,
+    "new_word_information_bits": 0.0,
+    "old_package_information_bits": 2.0,
+    "receiver_aware_bound_bits": 2.0,
+    "receiver_preexisting_bits": 0.0,
+    "receiver_unlocking_bits": 1.0,
+    "sender_revelation_bits": 1.0,
+    "status": "EXACT_FRAME_CHECKS_NUMERIC_ENTROPY_DIAGNOSTICS",
+    "two_update_entropy_bound_bits": 2.0
+  },
+  "status": "EXACT_FINITE_STRUCTURE_NUMERIC_ENTROPY_DIAGNOSTICS",
+  "uncharged_update_rejected": true
+}

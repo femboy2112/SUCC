@@ -1,0 +1,95 @@
+{
+  "schema": "obs-succ-gaussian-validation-v1",
+  "date_utc": "2026-10-12",
+  "base_commit": "68b33157df2086355c00300fc7b534251f6b09c0",
+  "branch": "research/gaussian-moat-certificate-duality-2026-10-12",
+  "environment": {
+    "python": "3.12.14",
+    "mpmath": "1.4.1"
+  },
+  "required_checks": [
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "exit_code": 0,
+      "tests": 597,
+      "runner_seconds": 39.238,
+      "new_tests": 31
+    },
+    {
+      "command": "python scripts/verify_provenance.py",
+      "exit_code": 0,
+      "status": "SOURCE_PROVENANCE_VERIFIED",
+      "items": 72,
+      "byte_identical_research_archives": 17,
+      "mechanical_namespace_migrations": 55
+    },
+    {
+      "command": "python scripts/observer_foundations_probe.py",
+      "exit_code": 0,
+      "status": "OBSERVATIONAL_SUCC_FORMAL_FOUNDATIONS"
+    },
+    {
+      "command": "python scripts/ordinal_succ_report_probe.py",
+      "exit_code": 0,
+      "status": "FINITE_ORDINAL_SUCC_SECOND_ORDER_WEIL_PROBE"
+    }
+  ],
+  "new_checks": {
+    "periodic_targeted_tests": 19,
+    "entropy_targeted_tests": 12,
+    "gaussian_probe_status": "EXACT_GAUSSIAN_MOAT_CERTIFICATE_CONTROLS",
+    "fresh_gaussian_receipt_matches_saved": true,
+    "saved_Q130_certificate_rebuilt_from_arithmetic_source_and_verified": true,
+    "independent_lattice_audit_status": "INDEPENDENT_DIRECT_LATTICE_AUDIT",
+    "independent_component_histograms_and_exception_clusters_match": true,
+    "independent_lattice_periods": [
+      130,
+      390
+    ],
+    "fresh_entropy_receipt_matches_saved": true,
+    "entropy_probe_status": "EXACT_FINITE_STRUCTURE_NUMERIC_ENTROPY_DIAGNOSTICS",
+    "new_and_integrated_markdown_links_resolve": true,
+    "ci_yaml_parsed": true,
+    "git_diff_whitespace_check_passed": true
+  },
+  "external_source": {
+    "repository": "openai/math",
+    "commit": "fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb",
+    "manuscript_source_files_hash_verified": 8,
+    "solution_lean_files_statically_inspected": 41,
+    "lean_rebuilt_in_this_session": false
+  },
+  "evidence_boundary": {
+    "integer_certificates_exact": true,
+    "finite_probability_and_functional_structure_exact": true,
+    "entropy_numbers_rigorous_interval_certificates": false,
+    "new_SUCC_theorems_formalized_in_Lean": false,
+    "all_step_existence_independently_proved": false,
+    "optimal_gaussian_prime_bound_claimed": false,
+    "human_or_physical_observation_model_validated": false
+  },
+  "artifact_sha256": {
+    "research/2026-10-12/ENTROPY_TRANSPORT_RECEIPT.json": "17882a828309341b343dcee5eed5df04293f2859e849e952db0ebdb896788fa7",
+    "research/2026-10-12/ENTROPY_TRANSPORT_THEOREMS.md": "f990340e68bf3aa6ceed8e17c21439976c5da364924861bc700387878496fbdf",
+    "research/2026-10-12/GAUSSIAN_MOAT_RECEIPT.json": "4b7f480aad0ed3458049160722d3032c1b3dd8bffe0cb430b00312f3f487ba4d",
+    "research/2026-10-12/GAUSSIAN_MOAT_SUCC.md": "0b77cbc669d847e28c2e4e92f9bfc5da00b283025dd2bbdccd21fd5b32e07177",
+    "research/2026-10-12/GAUSSIAN_P2_5_13_D2_CERTIFICATE.json": "b60e2d287ad8e8e4130766b05e4558cefec9f35e20da3f8898dea49abfea3471",
+    "research/2026-10-12/GAUSSIAN_SOURCE_MANIFEST.json": "b9f6a6a2f934f198fbc71a06002768333ffa52e41a8803dc86b4cce86b94166e",
+    "research/2026-10-12/INDEPENDENT_LIFT_AUDIT.json": "00a4f83e58834c4b191aec8bc135bcbd41294775b0f116a5531ce4b7901e6f47",
+    "observational_succ/periodic_path_certificates.py": "cec87bd72ba1e9f2ac528e828b4045c392eead20f399e49337eaab8d2b988699",
+    "observational_succ/entropy_transport.py": "81d2e8c9de8d1e8aa00d1c5bfc581968b9be1ea1ff11f7608336d0ba26b25276",
+    "tests/test_periodic_path_certificates.py": "80f55968354526219b343f7550e05266371fb846cd7a4976e6cd7870feb3d0cb",
+    "tests/test_entropy_transport.py": "8fe6e114788f5d1d6d024c41ebc33c4a6589918d71bc72b1bd3a955de36a0f18",
+    "scripts/gaussian_moat_probe.py": "f6785ff6de804e5ea504d48b855e6c96e7a2d1edee21a1d83d7e4005d3e2bfe1",
+    "scripts/entropy_transport_probe.py": "8e5127b436b4f74876cfc263f0a08c988ba362695b3e5d556789a2b1f37d71b9",
+    "scripts/independent_gaussian_lift_audit.py": "d3ad9b15f176b560f020e950f68ea987580f22df3e0870b0c2b0a55a732cbabb"
+  },
+  "final_proof_review": {
+    "material_gaps_remaining_identified": false,
+    "scope_corrections_applied": [
+      "T1b requires k>=1 and 1<=r<=k.",
+      "Computable search input is an integer squared step bound or a finite symmetric step alphabet in Z^2."
+    ],
+    "new_SUCC_Lean_build_claimed": false
+  }
+}

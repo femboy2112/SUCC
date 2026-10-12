@@ -298,6 +298,18 @@ See [Operational Yoneda–policy descent](../research/2026-10-11/OPERATIONAL_YON
 
 See [arithmetic prime-clock proof dossier](../research/2026-10-11/PRIME_CLOCK_YONEDA_ORIGIN.md), O227–O235.
 
+## Gaussian-moat certificate and information track
+
+**Implemented and proved:** the finite periodic potential/translation dichotomy over Z^d, explicit potential transport under source refinement, exact weighted attachment of finite exceptions, and independently audited Gaussian-sieve benchmarks. In particular P={2,3,5,13} at squared step bound 2 yields sieve components of at most 71 and enlarged components of at most 104. These are verified upper bounds, not optimality or priority claims.
+
+**Information improvement:** T1–T5 expose joint deficit, conditional total correlation, frame transport, shared update cost and sampled-law drift. Direct conditional-entropy continuity removes the receiver-alphabet estimate from the source's common-law telescope. The attempted general replacement of 2H(S) by H(S) is refuted by an exact four-atom example. Numerical entropy output is diagnostic; written proofs justify the universal statements.
+
+**Next arithmetic dependency cut:** construct integrating potentials for arbitrary finite bounded step alphabets in Z² by a source-derived argument with quantitative modulus control, or replace the source's coverage-to-information lower bound with a simpler uniform mechanism. The former must prove the existence of a successful finite sieve, not merely rephrase it as absence of nonzero quotient cycles. A smaller useful target is a new infinite family of step alphabets with a structural certificate constructor and a proved modulus bound.
+
+**Discriminating controls:** retain quotient loops, parallel edges and genuine displacements; test both Gaussian conjugate factors and finite inert exceptions; distinguish leaking sieves from prime walks; reject unpaid receiver updates and changing sampled laws. Nested leaking periodic sets with singleton intersection refute an unrestricted finite-observer compactness shortcut. Larger finite computations alone do not discharge the arithmetic existence theorem.
+
+**Dominance boundary:** the finite certificate checker and one entropy estimate are clearer reusable interfaces. No independent all-step Gaussian moat proof or proof-wide elegance superiority is claimed. Prime-prefix search is total only conditional on the stronger published existence theorem; each returned positive certificate is independently sound. See [the proof dossier](../research/2026-10-12/GAUSSIAN_MOAT_SUCC.md), [T1–T5](../research/2026-10-12/ENTROPY_TRANSPORT_THEOREMS.md), O236–O250.
+
 ## Completion criteria
 
 Every stage needs: a precise theorem/model statement; source and assumptions; independently checkable proof or certified numeric bounds; adversarial controls; executable regression tests; and a ledger entry that distinguishes demonstrated behavior from general claims. “Our finite probes were all positive” is not a global sign theorem.
