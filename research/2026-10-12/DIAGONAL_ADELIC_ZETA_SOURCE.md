@@ -166,3 +166,18 @@ These are *established theorems*, not novel SUCC/RH claims. Numerical theta chec
 - [OpenAI Gaussian moat manuscript, pinned](https://github.com/openai/math/blob/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026/paper.pdf): distinct application; all-D existence remains imported and is NOT proved here.
 
 **Crucial negative statement:** No pointwise phase cancellation, Fourier covariance, independent positive kernel, or completed functional equation by itself implies RH. The missing Weil identification and positivity problem remains openly unresolved.
+
+## DZ8. A stronger ARCHIMEDEAN nonuniqueness falsifier (CLASSICAL / exact rational coefficients)
+
+The choice of the standard Gaussian in DZ6 is not uniquely enforced by *self-duality plus pole normalization*, even after all genuine finite Euler factors have been supplied. For any rational \(r>0\), consider the strictly positive Schwartz function
+\[
+\boxed{f_r(x)=\frac{e^{-\pi r^2x^2}+r^{-1}e^{-\pi x^2/r^2}}{1+r^{-1}}.}\tag{DZ8a}
+\]
+The real Fourier transform satisfies \(\mathcal F(e^{-\pi ax^2})=a^{-1/2}e^{-\pi\xi^2/a}\). Applying that formula with \(a=r^2\) shows **exactly** that \(\widehat f_r=f_r\). Moreover \(f_r(0)=1\), and by Fourier self-duality, \(\int_{\mathbb R}f_r(x)\,dx=1\). Its Mellin transform is
+\[
+Z_\infty(f_r,s)=\pi^{-s/2}\Gamma(s/2)C_r(s),\qquad
+\boxed{C_r(s)=\frac{r^{-s}+r^{s-1}}{1+r^{-1}}=C_r(1-s),\quad C_r(0)=C_r(1)=1.}\tag{DZ8b}
+\]
+Multiplying the SAME authentic finite Euler product by this alternative Archimedean factor gives \(\Lambda_r(s)=C_r(s)\Lambda(s)\), which **still** has the completed functional equation, **still** has the standard residues at \(s=0,1\), and still has a real Fourier-self-dual source. Nevertheless it is not the standard \(\Lambda\) for \(r\ne1\). At \(r=2\), exact rational evaluation yields \(C_2(2)=C_2(-1)=3/2\), while \(C_2(0)=C_2(1)=1\).
+
+This gives a devastating negative control on a common overinterpretation: **diagonal source, genuine Euler factors, Fourier self-duality, the functional equation, and pole normalization do NOT by themselves identify the standard Archimedean Gamma completion uniquely.** An extra explicit standard test-function selection principle, normalization across an adequate family of test functions, or stronger arithmetic/analytic structure is necessary. The classical Tate distributional framework considers all admissible Schwartz–Bruhat functions rather than pretending a single symmetric test fixes a unique global theory. The code verifies the rational Mellin multipliers and reflection relation exactly; Fourier self-duality rests on the classical Gaussian Fourier theorem, not finite code sampling. The result is not a new zero-free theorem: the nonconstant multiplier can introduce additional zeros.

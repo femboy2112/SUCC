@@ -136,3 +136,39 @@ def lambda_theta_diagnostic(s:str="2",terms:int=9,digits:int=65)->dict:
                 "symmetry_residual":mp.nstr(abs(cont-(1/((1-val)-1)-1/(1-val)+(integral(1-val)+integral(val))/2)),10),
                 "source_match_residual":mp.nstr(abs(cont-source),12),
                 "numeric_diagnostic_not_proof":True}
+
+
+def normalized_self_dual_gaussian_pair(root_scale:F,s:int=2)->dict:
+    """Exact, nonunique archimedean self-dual Schwartz source family.
+
+    For r>0 rational and a=r^2, set
+      f_r(x)=(exp(-pi*a*x*x)+r^-1 exp(-pi*x*x/a))/(1+r^-1).
+    The real Fourier transform swaps the two Gaussians; f_r is positive,
+    self-dual, f_r(0)=integral f_r=1, even Schwartz. Its Mellin factor is
+      Z_inf(f_r,s)=pi^-s/2 Gamma(s/2) C_r(s)
+      C_r(s)=(r^-s+r^(s-1))/(1+r^-1), C_r(s)=C_r(1-s).
+    At r=2, C(2)=C(-1)=3/2 while C(0)=C(1)=1. Thus even self-duality,
+    common Euler factors and pole normalization DO NOT determine the
+    classical standard completion uniquely.
+
+    This routine certifies rational prefactors at integer s and records
+    the analytic Fourier/Gamma identities as separately proved statements.
+    """
+    r=rational(root_scale)
+    if r<=0 or type(s) is not int:
+        raise DiagonalSourceError("Positive rational root scale and integer s required")
+    C=lambda z:(r**(-z)+r**(z-1))/(1+1/r)
+    cs=C(s)
+    dual=C(1-s)
+    if cs!=dual or C(0)!=1 or C(1)!=1:
+        raise AssertionError("Fourier-symmetric prefactor invalid")
+    return {"root_scale":r,"scale_square":r*r,"mellin_index":s,
+            "normalized_first_gaussian_weight":1/(1+1/r),
+            "normalized_second_gaussian_weight":(1/r)/(1+1/r),
+            "mellin_relative_to_standard":cs,
+            "reflection_partner_relative":dual,
+            "pole_zero_normalization_C0":C(0),
+            "pole_one_normalization_C1":C(1),
+            "claimed_Fourier_self_dual":True,
+            "analytic_identity_requires_Gaussian_Fourier_theorem":True,
+            "coincides_with_standard_mellin_at_s":cs==1}

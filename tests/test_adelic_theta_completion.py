@@ -69,3 +69,26 @@ class ArchimedeanCompletion(unittest.TestCase):
                 lambda_theta_diagnostic(x)
 
 if __name__=='__main__':unittest.main()
+
+class SelfDualNonuniqueArchimedean(unittest.TestCase):
+    def test_normalized_r_two_preserves_residues_but_changes_completion(self):
+        from observational_succ.adelic_theta_completion import normalized_self_dual_gaussian_pair
+        for s in (-1,0,1,2):
+            out=normalized_self_dual_gaussian_pair(F(2),s)
+            self.assertEqual(out['mellin_relative_to_standard'],out['reflection_partner_relative'])
+            self.assertEqual(out['pole_zero_normalization_C0'],1)
+            self.assertEqual(out['pole_one_normalization_C1'],1)
+            self.assertTrue(out['claimed_Fourier_self_dual'])
+        self.assertEqual(normalized_self_dual_gaussian_pair(F(2),2)['mellin_relative_to_standard'],F(3,2))
+        self.assertEqual(normalized_self_dual_gaussian_pair(F(2),-1)['mellin_relative_to_standard'],F(3,2))
+
+    def test_standard_gaussian_is_only_r_one_member(self):
+        from observational_succ.adelic_theta_completion import normalized_self_dual_gaussian_pair
+        self.assertTrue(normalized_self_dual_gaussian_pair(F(1),2)['coincides_with_standard_mellin_at_s'])
+        self.assertFalse(normalized_self_dual_gaussian_pair(F(3,2),2)['coincides_with_standard_mellin_at_s'])
+
+    def test_nonpositive_scale_source_mutation_refused(self):
+        from observational_succ.adelic_theta_completion import normalized_self_dual_gaussian_pair
+        for r in (0,-1,F(-1,2)):
+            with self.assertRaises(DiagonalSourceError):
+                normalized_self_dual_gaussian_pair(r,2)
