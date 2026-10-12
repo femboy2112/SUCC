@@ -313,3 +313,45 @@ See [arithmetic prime-clock proof dossier](../research/2026-10-11/PRIME_CLOCK_YO
 ## Completion criteria
 
 Every stage needs: a precise theorem/model statement; source and assumptions; independently checkable proof or certified numeric bounds; adversarial controls; executable regression tests; and a ledger entry that distinguishes demonstrated behavior from general claims. “Our finite probes were all positive” is not a global sign theorem.
+
+
+## Next hard frontier: local-to-global proof-producing SUCC/FUCC and descending towers
+
+**New finite checkpoints:** Gaussian-FUCC authentic source signature, complete rank/index lattice of quotient loop voltages, exact killing of repeated known escape motifs by new split-prime factors, and the surviving detour counterexample {5,17}. A two-lane/multi-floor climbing tower transports verified source-relative knowledge downward to E; E can accept a proof in one epistemic macro-event. The first **actual arithmetic-to-tower adapter** shards all vertices/edges of a genuine finite confining sieve to climbers and independently re-verifies them at E.
+
+**Highest-value missing lemma:** an arithmetic **uniform finite-stage holonomy annihilation theorem**, K -> explicit finite true-prime set P(K) with H(P(K),K)=0, or a new source-derived lower-tail/coverage proof implying one. Per-template FUCC annihilation alone is NOT such a theorem: after {5}→{5,17} old motifs die but rank-two escape survives. A computable checker of a fixed period is not the all-K proof.
+
+**Most promising next categorical experiment:** remove the global prebuilt potential from the voltage tower. Let independent A/B climbers construct locally valid potentials on overlapping graph patches. Require certified transition shifts in QZ² on overlaps; compute the **Cech 1-cocycle** of patch disagreements and prove a glueability iff theorem with explicit nonflat/nontrivial-loop counterexamples. Only then is the tower participating in *proof construction* rather than distributing verification of an already solved global instance. Distinguish connecting original arithmetic patches from inventing new probe capabilities.
+
+**Source and resource boundaries:** extend source-indexed deterministic/nondestructive policies to genuinely state-changing instruments and independently prepared carriers, with explicit semantics, source authenticity, future-continuation simulation, packet loss/noise and paid communication. A source label does not establish empirical origin. One E macro-update does not reduce 2L causally required observations, packet bits, or elapsed physical computation to one constant-time instruction.
+
+**Verification:** mechanize main H1–H4/T1–T7 algebra/categorical rules in Lean with explicit preconditions; test diagram compositions/mutations and theorem-level soundness independently; compare with classical voltage graphs, sheaf-gluing, and distributed proof labeling; validate external Gaussian manuscript separately (no Lean kernel reconstruction was performed here). Archive new probes and source-specific falsifiers in ledger O269–O284.
+
+
+## New theorem track: independent patches, exact Čech descent and source faithful E
+
+Local-to-global graph proof construction now exists for the declared finite source and valid connected charts; see [LG1–LG7](../research/2026-10-12/LOCAL_GLOBAL_YONEDA_GLUE_2026-10-12.md). Unlike prior distributed checking of one global candidate, every agent computes its chart independently and E constructs a global section only after licensed receipt transport. If descent fails, the output is a genuine source graph loop, not merely a Boolean proof reject. The nonabelian S3 case kills scalar-only holonomy checks. Need quantitative all-D prime sieve existence, actual state-changing original-source base-change laws, genuinely decentralized source patch discovery, formal Lean verification and independent mathematical novelty audit. One E epistemic macro never cancels physical operations.
+
+
+## Shared fundamental carrier and E ring holographic boundary — a conditional theorem track
+
+Every boundary E tower samples one declared carrier; the actual source object and the limit of observations are different objects. Exact target factorization through source-compatible boundary fibers, not merely matching source IDs or pairwise overlaps, is the correct proof gate. The finite even-parity model exhibits pairwise-consistent reports that have no global carrier witness, and source-blind horizontal communication cannot repair genuinely aliased sources. With independently proved harmonic dynamics, a finite positive-conductance graph has a unique exact Dirichlet bulk and a DtN Schur complement whose boundary quadratic form equals the full carrier energy (110 seeded exact holdouts). Circle dyadic refinements and a uniform Lipschitz hypothesis support conditional harmonic Poisson reconstruction, while unrestricted interiors and finite-grid holomorphic modes are counterexamples. The rational product formula supplies real magnitude but not sign, Archimedean Gamma completion or the Weil form. Source-changing naturality of the boundary energy/operator, actual carrier attestation, physically justified field equations, computable limit rates and proof-assistant mechanization remain missing. See [SC1–SC6](../research/2026-10-12/SHARED_CARRIER_BOUNDARY_DESCENT.md) and O296–O305.
+
+**Commuting-square checkpoint SC7:** Dirichlet-to-Neumann / Schur complement reduction is associative under nested boundary elimination on a fixed positive source graph: Λ_{B₀}(L)=Λ_{B₀}(Λ_{B₁}(L)). The source graph is the genuine global carrier. Intermediate E nodes transport effective laws, not independently postulated interiors. Three-edge path gives an exact 1/3 final conductance through two successive reductions; 90 seeded positive graph cases also pass. The next frontier is law-preserving source-changing base change and independent physical source attestation, not another diagrammatic restatement.
+
+
+## Dual E/E'' boundary observer gluing and asymptotic-correlation gate
+
+**Implemented:** Same-source rational observation partitions with maximal Gács–Körner common report factor, joint versus sequential conditional projections, exact dual-L2 covariance identity and quantitative positive-correlation threshold; two-sided positive-conductance harmonic carrier gluing with independent half-domain DtN operators, exact flux matching, direct-global verification, and two-port transmission/Markov decay controls. See [dual E-boundary dossier](../research/2026-10-12/DUAL_BOUNDARY_OBSERVER_CORRELATION.md).
+
+**Next noncircular theorem:** Build a *source-justified* dual observation filtration with a uniform estimate E[(T-E[T|F_n])²]→0 and its dual, from actual feasible probes/prime arithmetic. Its fusion must operate on union of original-source receipts rather than naive projection composition, and its coupling/observability must not disappear in long-collar/large-conductor limits. Need verified base-change for genuinely state-changing carrier actions. No RH/Archimedean/physical holography claim.
+
+
+**Dual infinity / genus-zero test (DB7):** The two chart observatories on P1 over Q, w=1/z, are explicitly glued by the line-bundle transition f0=z^k f_infinity. Exact H0 basis, Cech H1 obstruction, and Euler characteristic k+1 are independently checked in finite Laurent-polynomial arithmetic. The next hard task is to derive the analogous transition object from a GENUINE arithmetic source, not to draw identical circles and assume the real place is identified. See [dual-boundary dossier](../research/2026-10-12/DUAL_BOUNDARY_OBSERVER_CORRELATION.md).
+
+
+## Chaotic SUCC: model-stable E and incompressible moving frontiers
+
+The exact r=4 logistic/tent offshoot builds a source-typed inverse-branch tree, stationary conditional polynomial transfer L, and a dual E source join. For each fixed polynomial g, L^n g is exactly constant once 2^n > deg g; the polynomial quotient is *not* a lossless deterministic factor, and the moving Koopman family L^n U^n x = x retains all dependence at matching depth. See [CT1–CT7](../research/2026-10-12/CHAOTIC_SUCC_OBSERVER_TREE.md), code `observational_succ/logistic_observer_tree.py`, exact seeded tests, JSON receipt and ledger O321–O332.
+
+**Next discriminating probes:** (1) calibrated r<4 kneading-subshift admissibility and conditional branch masses, including periodic windows; (2) noisy/lossy source receipt plus independently authenticated early-state holdouts; (3) measurable nontrivial factor entropy with loss explicitly charged to forecast targets; (4) independent formalization of L degree-halving and LU=I; (5) source-changing observation interventions and causal cost accounting against the prior Zeno/proof-debt layer. An E macro-completion of a *fixed* target does not make a changing future objective complete.

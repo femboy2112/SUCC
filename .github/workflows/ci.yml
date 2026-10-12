@@ -63,6 +63,32 @@ jobs:
           assert [x["bad_count"] for x in r["factors"]]==[1,1,1,1]
           assert "NOT Gaussian-prime walk" in r["source_type"]
           PY
+      - name: Exact Gaussian loop holonomy and multi-climber proof descent
+        run: |
+          python scripts/gaussian_holonomy_probe.py > "$RUNNER_TEMP/gaussian-holonomy.json"
+          python scripts/diagonal_tower_probe.py > "$RUNNER_TEMP/diagonal-tower.json"
+          python scripts/voltage_tower_probe.py > "$RUNNER_TEMP/voltage-tower.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          temp=Path(os.environ["RUNNER_TEMP"])
+          for stem,upper in (
+              ("gaussian-holonomy","GAUSSIAN_HOLONOMY"),
+              ("diagonal-tower","DIAGONAL_TOWER"),
+              ("voltage-tower","VOLTAGE_TOWER"),
+          ):
+              actual=json.loads((temp/(stem+".json")).read_text())
+              expected=json.loads((Path("research/2026-10-12")/(upper+"_RECEIPT.json")).read_text())
+              assert actual == expected, stem+" receipt drift"
+          voltage=json.loads((temp/"voltage-tower.json").read_text())
+          assert voltage["verified_source_vertices"] == 2304
+          assert voltage["verified_directed_edges"] == 4356
+          assert voltage["verified_shards"] == 6
+          assert voltage["maximum_lifted_component"] == 580
+          assert voltage["receiver_macro_succ_count"] == 1
+          assert voltage["all_D_sieve_existence_independently_proved"] is False
+          assert voltage["candidate_global_potential_constructed_before_climb"] is True
+          PY
       - name: Verify periodic Gaussian source and replay saved confinement certificate
         run: |
           python scripts/gaussian_moat_probe.py --output "$RUNNER_TEMP/gaussian-moat.json"
@@ -628,6 +654,29 @@ jobs:
           assert x["fake_composite_euler_jet_admitted"] is False
           assert x["RH_claimed"] is False
           PY
+      - name: Exact Yoneda local-global descent and independent Gaussian E tower
+        run: |
+          python scripts/local_global_descent_probe.py > "$RUNNER_TEMP/local-global-descent.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          r=json.loads((Path(os.environ["RUNNER_TEMP"])/"local-global-descent.json").read_text())
+          g=r["gaussian"]
+          assert r["yes_triangular_gluing"]=="GLUED"
+          assert r["no_triangular_gluing"]=="OBSTRUCTED"
+          assert abs(r["actual_source_negative_displacement"][0])==3
+          assert r["s3_noncommutative_status"]=="OBSTRUCTED" and r["s3_abelian_sign"]==1
+          assert g["period"]==65 and g["vertices"]==2304 and g["directed_darts"]==4356
+          assert g["connected_components"]==243
+          assert g["fundamental_cycles_in_dart_presentation"]==2295
+          assert g["local_independent_charts"]==462 and g["overlap_conditions"]==2280
+          assert g["largest_component"]==580 and g["E_epistemic_macro_succ"]==1
+          assert g["constructed_global_potential_only_at_E"] is True
+          assert r["gaussian_all_D_proved"] is False
+          assert r["physical_instant_succ"] is False
+          assert r["fully_independent_source_authentication"] is False
+          PY
+
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -636,6 +685,62 @@ jobs:
         run: python scripts/ordinal_succ_report_probe.py --output "$RUNNER_TEMP/ordinal.json"
       - name: Certified source-side RH bridge
         run: python scripts/prime_source_certificates_probe.py --output "$RUNNER_TEMP/prime-source.json"
+      - name: Shared-carrier ring and exact discrete holography
+        run: |
+          python scripts/shared_carrier_descent_probe.py > "$RUNNER_TEMP/shared-carrier-boundary.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          r=json.loads((Path(os.environ["RUNNER_TEMP"])/"shared-carrier-boundary.json").read_text())
+          assert r["source_factorization_complete"] is True
+          assert r["source_alias_without_all_probes"] is True
+          assert r["pairwise_consistent_but_globally_impossible"] is True
+          assert r["wheel"]["reconstructed_interior"]==[["u","1/4"]]
+          assert r["wheel"]["boundary_only_energy"]==r["wheel"]["global_energy"]
+          assert r["two_interior_path"]["reconstructed_interior"]==[["u","1/3"],["v","2/3"]]
+          assert r["nested_reduction"]["commuting_square_verified"] is True
+          assert r["nested_reduction"]["direct_DtN"]==r["nested_reduction"]["composed_DtN"]
+          assert r["path_DtN"]==[["1/3","-1/3"],["-1/3","1/3"]]
+          assert r["global_interior_source_certified"] is False
+          assert r["archimedean_place_identified"] is False
+          PY
+      - name: Verify dual-boundary correlation and shared-carrier interface gluing
+        run: |
+          python scripts/dual_boundary_observers_probe.py > "$RUNNER_TEMP/dual-boundary-observers.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          p=Path(os.environ["RUNNER_TEMP"])/"dual-boundary-observers.json"
+          x=json.loads(p.read_text())
+          assert x["two_bit_join_proves_parity_when_each_side_cannot"]=={"left":False,"right":False,"joint":True}
+          assert x["shared_nonconstant_witness"]["covariance"]=="1/4"
+          assert x["projection_order_noncommutation"]["negative_covariance_same_carrier"]=="-1/36"
+          assert x["joined_harmonic_halves"]["interface_flux_zero"] is True
+          assert x["joined_harmonic_halves"]["energy"]=="1/8"
+          assert x["infinite_separation_controls"]["unit_resistor_12_effective_conductance"]=="1/12"
+          assert x["infinite_separation_controls"]["shared_markov_12_endpoint_covariance"]=="1/4096"
+          assert x["common_fundamental_carrier_physically_authenticated"] is False
+          assert x["archimedean_prime_or_gamma_identified"] is False
+          assert x["riemann_sphere_dual_chart"]["rr_dimensions"]["2"]=={"h0":3,"h1":0,"chi":3}
+          assert x["riemann_sphere_dual_chart"]["rr_dimensions"]["-2"]=={"h0":0,"h1":1,"chi":-1}
+          assert x["riemann_sphere_dual_chart"]["k2_infinity_chart"]=={"0":"3","1":"2","2":"1"}
+          assert x["riemann_sphere_dual_chart"]["k_minus2_obstruction"]=={"-1":"1"}
+          assert x["riemann_sphere_dual_chart"]["actual_archimedean_arithmetic_identified"] is False
+          assert x["RH_implied"] is False
+          PY
+      - name: Exact logistic inverse-tree observer SUCC
+        run: |
+          python scripts/logistic_observer_tree_probe.py > "$RUNNER_TEMP/logistic-observer-tree.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          actual=json.loads((Path(os.environ["RUNNER_TEMP"])/"logistic-observer-tree.json").read_text())
+          expected=json.loads(Path("research/2026-10-12/LOGISTIC_TREE_RECEIPT.json").read_text())
+          assert actual == expected, "Logistic tree deterministic receipt drift"
+          assert actual["physical_carrier_authenticated"] is False
+          assert actual["RH_claimed"] is False
+          assert actual["generic_r_bifurcation_model_covered"] is False
+          PY
       - name: Persist verified finite evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -646,6 +751,9 @@ jobs:
             ${{ runner.temp }}/foundations.json
             ${{ runner.temp }}/ordinal.json
             ${{ runner.temp }}/prime-source.json
+            ${{ runner.temp }}/shared-carrier-boundary.json
+            ${{ runner.temp }}/dual-boundary-observers.json
+            ${{ runner.temp }}/logistic-observer-tree.json
             ${{ runner.temp }}/semantic-data-processing.json
             ${{ runner.temp }}/observer-trap.json
             ${{ runner.temp }}/absorbing-frontier.json

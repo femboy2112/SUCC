@@ -1,0 +1,162 @@
+{
+  "RH_claimed": false,
+  "bifurcation_controls": {
+    "r_16_over_5_cycle_attracting": true,
+    "r_16_over_5_cycle_center": "21/32",
+    "r_16_over_5_cycle_multiplier": "4/25",
+    "r_16_over_5_radius_squared": "21/1024",
+    "r_4_period_two_cycle_attracting": false,
+    "r_4_period_two_cycle_multiplier": "-4"
+  },
+  "chebyshev_mode_chain": {
+    "1": {
+      "first_step": "annihilated",
+      "zero_after_depth": 1
+    },
+    "15": {
+      "first_step": "annihilated",
+      "zero_after_depth": 4
+    },
+    "16": {
+      "first_step": "halves to 8",
+      "zero_after_depth": 5
+    },
+    "2": {
+      "first_step": "halves to 1",
+      "zero_after_depth": 2
+    },
+    "3": {
+      "first_step": "annihilated",
+      "zero_after_depth": 2
+    },
+    "32": {
+      "first_step": "halves to 16",
+      "zero_after_depth": 6
+    },
+    "4": {
+      "first_step": "halves to 2",
+      "zero_after_depth": 3
+    },
+    "8": {
+      "first_step": "halves to 4",
+      "zero_after_depth": 4
+    }
+  },
+  "dual_observer_join": {
+    "checked_path_depth": 8,
+    "initial_tent_source": "193/448",
+    "interval_width_given_terminal_width_half": "1/512",
+    "source_version_preserved": true,
+    "terminal_tent_source": "2/7"
+  },
+  "finite_n_prediction_of_individual_generic_orbit_from_stationary_law": false,
+  "full_inverse_branches_and_equal_weights_required": true,
+  "generic_r_bifurcation_model_covered": false,
+  "history_information": {
+    "depth_12_constant_E": {
+      "distinct_reports": 1,
+      "maximum_fiber": 4096,
+      "possible_source_histories": 4096,
+      "report_entropy_bits": 0,
+      "source_history_entropy_bits": 12,
+      "unresolved_history_bits": 12,
+      "zero_entropy_dynamical_factor_proved": false
+    },
+    "depth_12_retaining_first_four": {
+      "distinct_reports": 16,
+      "maximum_fiber": 256,
+      "possible_source_histories": 4096,
+      "report_entropy_bits": 4,
+      "source_history_entropy_bits": 12,
+      "unresolved_history_bits": 8,
+      "zero_entropy_dynamical_factor_proved": false
+    }
+  },
+  "invariant_ensemble_stationary_not_lossless_state_factor": true,
+  "inverse_tree": {
+    "all_intervals_length": "1/512",
+    "checked_depth": 9,
+    "leaves": 512,
+    "total_tent_mass": "1",
+    "weighted_full_coverage": true
+  },
+  "lipschitz_uniform_upper_bound_coefficient_of_pi_depth_8_L1": "1/1024",
+  "moving_target_rate_matched_noncompletion": {
+    "0": {
+      "completed_one_level_later": "1/2",
+      "polynomial_degree": 1,
+      "residual_after_matched_depth": "x"
+    },
+    "1": {
+      "completed_one_level_later": "1/2",
+      "polynomial_degree": 2,
+      "residual_after_matched_depth": "x"
+    },
+    "2": {
+      "completed_one_level_later": "1/2",
+      "polynomial_degree": 4,
+      "residual_after_matched_depth": "x"
+    },
+    "3": {
+      "completed_one_level_later": "1/2",
+      "polynomial_degree": 8,
+      "residual_after_matched_depth": "x"
+    },
+    "4": {
+      "completed_one_level_later": "1/2",
+      "polynomial_degree": 16,
+      "residual_after_matched_depth": "x"
+    },
+    "5": {
+      "completed_one_level_later": "1/2",
+      "polynomial_degree": 32,
+      "residual_after_matched_depth": "x"
+    },
+    "6": {
+      "completed_one_level_later": "1/2",
+      "polynomial_degree": 64,
+      "residual_after_matched_depth": "x"
+    }
+  },
+  "physical_carrier_authenticated": false,
+  "polynomial_completion": {
+    "1": {
+      "constant_mean": "1/2",
+      "depth": 1
+    },
+    "16": {
+      "constant_mean": "300540195/2147483648",
+      "depth": 5
+    },
+    "2": {
+      "constant_mean": "3/8",
+      "depth": 2
+    },
+    "3": {
+      "constant_mean": "5/16",
+      "depth": 2
+    },
+    "4": {
+      "constant_mean": "35/128",
+      "depth": 3
+    },
+    "7": {
+      "constant_mean": "429/2048",
+      "depth": 3
+    },
+    "8": {
+      "constant_mean": "6435/32768",
+      "depth": 4
+    }
+  },
+  "root_E_is_observation_origin_not_physical_x_zero": true,
+  "source": "logistic f_4(x)=4x(1-x); x=h(theta), tent conjugacy",
+  "status": "CLASSICAL_EXACT_FINITE_INVERSE_TREE_CERTIFICATE",
+  "zero_covariance_deterministic_control": {
+    "E_x": "1/2",
+    "E_x2": "3/8",
+    "E_x_times_next": "1/4",
+    "lag_one_covariance": "0",
+    "nonlinear_deterministic_relation_retained": true
+  }
+}
