@@ -17,6 +17,15 @@ The dual-E common deterministic factor for m-bit stationary source reports separ
 
 Run `python -m unittest discover -s tests -p 'test_chaos_source_quotient.py' -v` and `python scripts/chaos_source_quotient_probe.py`. The machine-readable [exact receipt](research/2026-10-12/CHAOS_SOURCE_QUOTIENT_RECEIPT.json) records both positive and adversarial controls. Classical/locally proved mathematics (O333–O345), not generic-r kneading completion, physical source authentication, chaos suppression, RH, or a speedup.
 
+
+## Exact positive-entropy, deterministic E quotient: first band-merging logistic source
+
+[**Chaotic SUCC III**](research/2026-10-12/MISIUREWICZ_PHASE_CHAOTIC_QUOTIENT.md) moves beyond constant averages and the r=4 stochastic symbolic window. The logistic map at the **exact** band-merging parameter alpha, uniquely defined in (3,4) by alpha³-2alpha²-4alpha-8=0, has the real postcritical Markov core J=[1/alpha,alpha/4]. Its three source-derived interval cells A=[1/alpha,1/2], B=[1/2,1-1/alpha], C=[1-1/alpha,alpha/4] satisfy f(A)=f(B)=C and f(C)=A union B, with exact adjacency spectral radius sqrt(2) and positive topological entropy ln(2)/2.
+
+**E's nonconstant order inside that chaos:** source states outside countably many boundary preorbits have a lawful two-phase quotient E_left={A,B}, E_right=C, which deterministically alternates every step. This quotient has zero entropy while the full carrier is positive-entropy. It is **not** a globally continuous or everywhere-defined phase on the whole core: the genuine fixed boundary state is a decisive counterexample. The Parry symbolic prior supplies stationary (1/4,1/4,1/2), microscopic entropy 1/2 bit/step, and deterministic phase; an exact p-parameter source-law ablation proves the phase persists even as microscopic metric entropy varies. This **does not identify** the physical natural acim or any generic chaotic parameter.
+
+Dual E observer phases at lag n have exact raw covariance (-1)^n/4; only after a **declared parity/lag common-basis transport** is the covariance +1/4 for all n. Source states 2/5 and 3/5 become exactly identical after one logistic step, proving phase and future-state observation do not recover original micro-identity. 37 dedicated exact tests, saved machine-verifiable receipt, full source/counterexample provenance, and claim ledger O346–O360. Run `python -m unittest discover -s tests -p 'test_misiurewicz_phase_quotient.py' -v` and `python scripts/misiurewicz_phase_quotient_probe.py`. No RH, quantum or physical shortcut.
+
 ## What the project studies
 
 The central question is: **what information, structure, and proof authority survive the transformations from physical interaction to a causal record, a semantic model, a mathematical assertion, and an infinitary global report?**
