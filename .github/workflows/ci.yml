@@ -721,6 +721,11 @@ jobs:
           assert x["infinite_separation_controls"]["shared_markov_12_endpoint_covariance"]=="1/4096"
           assert x["common_fundamental_carrier_physically_authenticated"] is False
           assert x["archimedean_prime_or_gamma_identified"] is False
+          assert x["riemann_sphere_dual_chart"]["rr_dimensions"]["2"]=={"h0":3,"h1":0,"chi":3}
+          assert x["riemann_sphere_dual_chart"]["rr_dimensions"]["-2"]=={"h0":0,"h1":1,"chi":-1}
+          assert x["riemann_sphere_dual_chart"]["k2_infinity_chart"]=={"0":"3","1":"2","2":"1"}
+          assert x["riemann_sphere_dual_chart"]["k_minus2_obstruction"]=={"-1":"1"}
+          assert x["riemann_sphere_dual_chart"]["actual_archimedean_arithmetic_identified"] is False
           assert x["RH_implied"] is False
           PY
       - name: Persist verified finite evidence
