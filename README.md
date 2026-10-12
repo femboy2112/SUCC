@@ -57,6 +57,7 @@ This is an established identification of the completed arithmetic Weil distribut
 21. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
 22. **[Integration audit (2026-10-11)](docs/INTEGRATION_AUDIT_2026-10-11.md)** — consolidation record for research PRs #6–#22: validation receipts, three-bearing adversarial-audit findings, corrections applied, and open follow-ups.
 23. **[Gaussian moats and finite path certificates](research/2026-10-12/GAUSSIAN_MOAT_SUCC.md)** — audit of OpenAI's bounded-step Gaussian-prime theorem, exact periodic confinement/translation alternatives, transported certificates and finite exceptions; [information transport theorems](research/2026-10-12/ENTROPY_TRANSPORT_THEOREMS.md) simplify one common-law estimate while preserving the all-step arithmetic dependency.
+24. **[Gaussian-moat swarm audit (2026-10-12)](docs/GAUSSIAN_MOAT_SWARM_AUDIT_2026-10-12.md)** — a nine-bearing adversarial + scouting audit of the moat/entropy branch: independently reproduced certificates, new results (Theorem A 2-halving, Theorem R, the divisor-ruler family, the 2D-Jacobsthal g(z) data), the Σ₁/Π₂ reach characterization, corrections (O236 relabelled EXTERNAL CLAIM, O237 attributed to Cohen–Megiddo et al.), and next experiments.
 
 ## Run it
 
