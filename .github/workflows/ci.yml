@@ -50,6 +50,530 @@ jobs:
           assert j["source_causal_records_erased"] is False
           assert j["Weil_positivity_claimed"] is False
           PY
+      - name: Source-faithful observer trap and lawful repair receipt
+        run: |
+          python scripts/observer_trap_probe.py > "$RUNNER_TEMP/observer-trap.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"observer-trap.json").read_text())
+          assert j["status"]=="FINITE_OBSERVER_TRAP_CERTIFIED"
+          assert j["model_access_trap"]=="access-trap"
+          assert j["five_succ_updates_compatible"]==["A","B"]
+          assert j["external_intervention_identified"] is True
+          assert j["compatible_union_identified"] is True
+          assert j["round_robin_first_refutation_succ"]==2
+          assert j["source_records_rewritten"] is False
+          assert j["physical_cognition_claimed"] is False
+          assert j["RH_or_Godel_independence_claimed"] is False
+          PY
+      - name: Absorbing Hard SUCC, constructive limit and finite communication
+        run: |
+          python scripts/absorbing_frontier_probe.py > "$RUNNER_TEMP/absorbing-frontier.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"absorbing-frontier.json").read_text())
+          assert j["status"]=="ABSORBING_SUCC_FINITE_THEOREM_CONTROLS"
+          assert j["absorbing"]["full_hard_succ_identified"] is True
+          assert j["absorbing"]["physical_barrier_remaining_candidates"]==["A","B"]
+          assert j["constructive_logic"]["root_forces_P_or_not_P"] is False
+          assert j["constructive_logic"]["classical_excluded_middle_invalidated"] is False
+          assert j["omega_limit"]["omega_plus_one_contains_seal"] is True
+          assert j["omega_limit"]["physical_infinite_iteration_executed"] is False
+          assert j["finite_channel"]["minimum_fixed_width_bits"]==1
+          assert j["finite_channel"]["naive_sender_id_fixed_width_bits"]==2
+          assert j["unrestricted_real_exact_bit_transmission_claimed"] is False
+          assert j["RH_claimed"] is False
+          PY
+      - name: Knowledge-aided SUCC interobserver ladder and future-transport controls
+        run: |
+          python scripts/knowledge_ladder_probe.py > "$RUNNER_TEMP/knowledge-ladder.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"knowledge-ladder.json").read_text())
+          assert j["status"]=="EXACT_FINITE_INTEROBSERVER_KNOWLEDGE_LADDER"
+          assert j["discovery_succ_steps"]==6
+          assert j["receiver_knowledge_aided_steps"]==3
+          assert j["end_source_class"]==["B"]
+          assert j["complementarity"]["status"]=="EXACT_DISTRIBUTED_EPISTEMIC_COMPLEMENTARITY"
+          assert j["complementarity"]["alice_only_xor_identified"] is False
+          assert j["complementarity"]["bob_only_xor_identified"] is False
+          assert j["complementarity"]["shared_source"]==["10"]
+          assert j["complementarity"]["shared_xor"]=="1"
+          assert j["cross_enabled_ladder"]["status"]=="EXACT_CROSS_ENABLED_SUCC_LADDER"
+          assert j["cross_enabled_ladder"]["isolated_alice_sources"]==["A","B"]
+          assert j["cross_enabled_ladder"]["isolated_bob_sources"]==["A","B"]
+          assert j["cross_enabled_ladder"]["collective_sources"]==["B"]
+          assert j["cross_enabled_ladder"]["alternating_probes"]==["p0","p1","p2","p3"]
+          assert j["cross_enabled_ladder"]["full_history_and_semantic_alignment"] is True
+          assert j["cross_enabled_ladder"]["physical_instruments_replicated"] is False
+          assert j["complementarity"]["full_continuation_equivalence_of_physical_devices_claimed"] is False
+          assert j["full_shared_semantics_and_causal_records_match"] is True
+          assert [r["local_discovery_steps"] for r in j["rungs"]]==[2,2,2]
+          assert [r["receiver_informed_steps"] for r in j["rungs"]]==[1,1,1]
+          assert j["sender_outcomes_cryptographically_authenticated"] is False
+          assert j["physical_time_speedup_proved"] is False
+          assert j["infinite_ladder_executed"] is False
+          assert j["RH_claimed"] is False
+          PY
+      - name: Relative path value deltas and proof-shaped probes
+        run: |
+          python scripts/relative_delta_probe.py > "$RUNNER_TEMP/relative-delta.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"relative-delta.json").read_text())
+          assert j["status"]=="EXACT_FINITE_RELATIVE_OBSERVER_TRANSPORT"
+          assert j["relative_path_value"]["no_state_snapshot_or_absolute_probe_names_in_steps"] is True
+          assert j["position_anchored"]["independent_prior_histories"] is True
+          assert j["position_anchored"]["same_prior_knowledge_access_and_reasoning"] is True
+          assert j["position_anchored"]["operational_continuation_verified"] is True
+          assert j["position_anchored"]["old_receiver_event_origin_preserved"]=="Bob"
+          assert j["position_anchored"]["relative_informed_steps"]==1
+          assert j["evolving_proof_basis"]["new_physical_instrument_created"] is False
+          assert j["evolving_proof_basis"]["option_alone_determined_result"] is False
+          assert j["evolving_proof_basis"]["conditional_probe_plan_valid_for_every_possible_outcome"] is True
+          assert j["evolving_proof_basis"]["conditional_probe_plan_physically_available"] is False
+          assert j["evolving_proof_basis"]["proof_after_primitive_evidence_determined_result"] is True
+          assert j["evolving_proof_basis"]["parity_physically_observed"] is False
+          assert j["evolving_proof_basis"]["frozen_base_minimum_worst_case_bits_for_eight_arbitrary_bits"]==8
+          assert j["arbitrary_infinite_completion_transmitted"] is False
+          assert j["RH_claimed"] is False
+          PY
+      - name: Cross-language circle algebra and path witness calibration
+        run: |
+          python scripts/circle_translation_probe.py > "$RUNNER_TEMP/circle-translator.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"circle-translator.json").read_text())
+          assert j["status"]=="EXACT_CIRCLE_POLYNOMIAL_TRIG_TRANSLATOR"
+          assert j["coordinate_ring_identity_zero"] is True
+          assert j["trigonometric_polynomial_identity_zero"] is True
+          assert j["angular_derivations_intertwine"] is True
+          assert j["global_angular_one_form_coefficient_one"] is True
+          assert j["global_single_valued_real_angle_claimed"] is False
+          assert j["group_law_preserved"] is True
+          assert j["orientation_requires_explicit_calibration"] is True
+          assert j["reflected_winding_sign_inverted"] is True
+          assert j["identical_finite_phase_samples"] is True
+          assert j["different_true_winding_numbers"] is True
+          assert j["pairwise_rational_time_separator"]=="1/5"
+          assert j["all_rational_times_identify_integer_winding_ideal_theorem"] is True
+          assert j["any_fixed_finite_rational_sample_family_identifies_unbounded_winding"] is False
+          assert j["infinite_rational_probe_sequence_executed"] is False
+          assert j["matching_sampled_windings"]==[1,5]
+          assert j["full_path_observability_proved_by_samples"] is False
+          assert j["general_two_theory_translation_proved"] is False
+          assert j["RH_claimed"] is False
+          PY
+      - name: Twin observer same probes, reasoning and focus-only knowledge relay
+        run: |
+          python scripts/twin_circle_probe.py > "$RUNNER_TEMP/twin-circle.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"twin-circle.json").read_text())
+          assert j["status"]=="EXACT_TWIN_OBSERVER_LANGUAGE_INVARIANCE"
+          assert j["initial_mathematical_knowledge_equal"] is True
+          assert j["physical_probe_capabilities_identical"] is True
+          assert j["reasoning_capability_identical"] is True
+          assert j["initial_candidate_windings"]==[1,5,9]
+          assert j["after_polynomial_focus_candidates"]==[1,9]
+          assert j["after_trig_focus_candidates"]==[1]
+          assert j["post_first_relay_knowledge_equal"] is True
+          assert j["post_first_relay_operational_history_equal"] is False
+          assert j["post_reciprocal_relay_operational_position_equal"] is True
+          assert j["algebraic_and_trig_normalized_tangent_agree"] is True
+          assert j["smooth_path_finite_jets_can_still_hide_an_extra_loop"] is True
+          assert j["full_physical_continuum_trajectory_measured"] is False
+          assert j["source_provenance_cryptographically_authenticated"] is False
+          assert j["RH_claimed"] is False
+          PY
+      - name: Probe carrier coherence and proof support rewiring
+        run: |
+          python scripts/probe_coherence_probe.py > "$RUNNER_TEMP/probe-coherence.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"probe-coherence.json").read_text())
+          assert j["status"]=="FINITE_SINGLE_CARRIER_SOURCE_COHERENCE_NO_GO"
+          assert j["all_initial_sources"]==4
+          assert j["proof_support_unreachable_with_one_carrier"] is True
+          assert j["after_read_a_original_b_still_meaningful"] is False
+          assert j["after_read_b_original_a_still_meaningful"] is False
+          assert j["second_probe_current_value_is_still_defined"] is True
+          assert j["second_probe_original_source_value_is_no_longer_defined"] is True
+          assert j["proof_graph_rewiring"]["unrestricted_minimal_probe_supports"]==[["a","b"]]
+          assert j["proof_graph_rewiring"]["with_verified_a_zero_law"]==[["b"]]
+          assert j["proof_graph_rewiring"]["with_verified_a_equal_b_law"]==[[]]
+          assert j["two_independent_preparations_repair_target"] is True
+          assert j["non_destructive_probe_repairs_target"] is True
+          assert j["lawful_source_prior_can_decide_without_experiment"] is True
+          assert j["global_logical_unprovability_claimed"] is False
+          assert j["RH_claimed"] is False
+          PY
+      - name: Shared-basis relative deltas and exact boundary reconstruction
+        run: |
+          python scripts/basis_boundary_probe.py > "$RUNNER_TEMP/basis-boundary.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"basis-boundary.json").read_text())
+          assert j["status"]=="EXACT_SHARED_BASIS_RELATIVE_BOUNDARY_TRANSPORT"
+          assert j["source_packet_directions"]==[1,4,5]
+          assert j["source_packet_values"]==[1,1,1]
+          assert j["receiver_sparse_update_correct"] is True
+          assert j["state_transmitted_as_snapshot"] is False
+          assert j["proof_context_value_codes_before"]==3
+          assert j["proof_context_value_codes_after"]==1
+          assert j["noncommutative_ordered_path_endpoints"]==[3,2]
+          assert j["boundary_exact_bandlimited_reconstruction"] is True
+          assert j["boundary_unrestricted_high_mode_alias_exists"] is True
+          assert j["radial_exact_high_mode_reconstruction"] is True
+          assert j["finite_precision_root_six_samples_hide_mode_five"] is True
+          assert j["three_of_six_support_min_fixed_bits"]==5
+          assert j["critical_line_zero_only_incomplete_for_symmetric_polynomial_family"] is True
+          assert j["line_zero_control"]["line_zeros_in_both"]==["1/2-i","1/2+i"]
+          assert j["line_zero_control"]["extra_offline_zeros_in_one"]==["1/4","3/4"]
+          assert j["line_zero_control"]["RH_disproved_or_proved"] is False
+          assert j["true_xi_line_zero_locations_claimed_complete"] is False
+          assert j["gravity_holographic_correspondence_proved"] is False
+          assert j["total_message_bit_optimality_claimed"] is False
+          assert j["RH_claimed"] is False
+          PY
+      - name: Discrete derivative SUCC integration and moving-frame proofs
+        run: |
+          python scripts/succ_discrete_integration_probe.py > "$RUNNER_TEMP/succ-derivatives.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"succ-derivatives.json").read_text())
+          assert j["status"]=="EXACT_DISCRETE_SUCC_DERIVATIVE_INTEGRATION"
+          assert j["initial_condition_is_receiver_anchored"] is True
+          assert j["ordinary_difference_steps"]==4
+          assert j["all_intermediate_succ_states_reconstructed"] is True
+          assert j["unconditional_newton_inversion_of_all_observed_finite_steps"] is True
+          assert j["additive_prefix_parallel_dependency_layers"]==2
+          assert j["additive_prefix_executed_on_actual_parallel_hardware"] is False
+          assert j["polynomial_degree_law"]==2
+          assert j["polynomial_reconstructed_states"]==25
+          assert j["polynomial_jet_directions_count"]==2
+          assert j["law_premise_proved_from_finite_samples_alone"] is False
+          assert j["covariant_frame_transport_square_commutes"] is True
+          assert j["unconditional_finite_covariant_newton_inversion"] is True
+          assert j["certified_covariant_newton_reconstructed_local_states"]==7
+          assert j["nontrivial_holonomy_claimed"] is False
+          assert j["affine_parallel_dependency_layers"]==1
+          assert j["affine_prefix_actually_parallel_executed"] is False
+          assert j["real_world_source_measurement_authenticated"] is False
+          assert j["RH_claimed"] is False
+          PY
+      - name: Zeta minus-one authentic Euler-to-Archimedean transport
+        run: |
+          python scripts/zeta_minus_one_transport_probe.py > "$RUNNER_TEMP/zeta-minus-one-transport.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads((Path(os.environ["RUNNER_TEMP"])/"zeta-minus-one-transport.json").read_text())
+          assert j["status"]=="ZETA_MINUS_ONE_GLOBAL_EULER_ARCHIMEDEAN_TRANSPORT"
+          assert j["local_prime_minus_one_factor"]=="-1/(p-1)"
+          assert j["prime_jet_first_return_gap"]=="p-1"
+          assert j["shift_dilation_one_step_address_defect"]=="1-p"
+          assert j["ax_b_operator_semigroup_relation"]=="V_p S = S^p V_p"
+          assert j["same_shift_dilation_defect_rule_for_composite_six"] is True
+          assert j["nonprime_affine_defect_does_not_authorize_euler_prime_factor"] is True
+          assert j["operator_commutator_claimed_scalar"] is False
+          assert j["cuntz_ax_b_finite_arch_completion_proved_here"] is False
+          assert j["local_factor_partial_products_tend_to_zero"] is True
+          assert j["global_zeta_minus_one_value"]=="-1/12"
+          assert j["global_transport_identity"]=="zeta(-1)=-zeta(2)/(2*pi^2)"
+          assert j["completed_zeta_symmetric_values"]=="Lambda(-1)=Lambda(2)=pi/6"
+          assert j["bost_connes_classical_diagonal_hamiltonian"]=="H|n> = log(n)|n>"
+          assert j["bost_connes_partition_function_for_beta_gt_one_is_zeta"] is True
+          assert j["bost_connes_positive_beta_two_finite_trace_n_four"]=="205/144"
+          assert j["bost_connes_beta_minus_one_finite_trace_n_four"]=="10"
+          assert j["bost_connes_analytic_zeta_minus_one_is_not_ordinary_trace"] is True
+          assert j["bost_connes_operator_algebra_or_KMS_state_constructed_here"] is False
+          assert j["positive_side_prime_product_converges"] is True
+          assert j["finite_positive_prime_cutoffs_with_rigorous_tail_bound"][-1]["cutoff"]==47
+          assert j["abel_eta_negative_one"]=="1/4"
+          assert j["eta_to_zeta_factor_at_minus_one"]=="-3"
+          assert j["abel_eta_derivation_matches_zeta_negative_one"] is True
+          assert j["negative_odd_s_minus_three"]=="1/120"
+          assert j["prime_source_mutation_controls"]["two_deletion_analytic_value"]=="1/12"
+          assert j["prime_source_mutation_controls"]["two_deletion_bad_reused_zeta_reflection"]=="-1/16"
+          assert j["prime_source_mutation_controls"]["fake_six_is_not_a_prime_euler_factor"] is True
+          assert j["local_continuation_and_global_product_commute"] is False
+          assert j["analytic_continuation_and_functional_equation_are_imported_theorems"] is True
+          assert j["source_specific_euler_gamma_completed_weil_RH_bridge_proved"] is False
+          assert j["nontrivial_zeta_zeros_used_as_inputs"] is False
+          assert j["RH_claimed"] is False
+          PY
+      - name: Prime-local p-adic Euler units and Archimedean nonrecovery
+        run: |
+          python scripts/residue_one_arch_probe.py > "$RUNNER_TEMP/residue-arch.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"residue-arch.json").read_text())
+          assert x["status"]=="PRIME_RESIDUE_ONE_ADELIC_LOCAL_GLOBAL_OBSTRUCTION"
+          assert x["euler_geometric_series_converges_p_adically"] is True
+          assert x["all_euler_factors_are_residue_one_units"] is True
+          assert x["same_residue_has_nonunique_local_units"] is True
+          assert x["factorial_one_limit_each_p_adic"]=="1"
+          assert x["factorial_one_limit_real"]=="+infinity"
+          assert x["factorial_one_not_always_prime"] is True
+          assert x["diagonal_minus_one_twelfth_product_formula"]["finite_abs_product"]=="12"
+          assert x["nondiagonal_idelic_example"][2]["idele_norm"]=="1/12"
+          assert x["nondiagonal_idelic_example"][2]["norm_one"] is False
+          assert x["positive_real_scale_determined_by_residue_one_alone"] is False
+          assert x["compact_to_positive_real_continuous_group_hom_trivial"] is True
+          assert x["topological_group_theorem_tested_by_finite_sampling"] is False
+          assert x["weight_two_Kubota_Leopoldt_branch_interpolation"][1]["weight_residue"]==2
+          assert all(i["global_special_value"]=="-1/12" for i in x["weight_two_Kubota_Leopoldt_branch_interpolation"])
+          assert x["interpolation_theorem_imported"] is True
+          assert x["p_adic_zeta_function_constructed"] is False
+          assert x["Tate_arch_completion_constructed"] is False
+          assert x["RH_claimed"] is False
+          PY
+      - name: SUCC prime clocks, Mahler jets and source-corrected Kummer congruences
+        run: |
+          python scripts/clock_mahler_interpolation_probe.py > "$RUNNER_TEMP/clock-mahler.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"clock-mahler.json").read_text())
+          assert x["status"]=="SUCC_CLOCK_MAHLER_KUMMER_COMPATIBILITY"
+          assert x["p_five_clock_mod_25_period"]==20
+          assert x["p_five_SUCC_jet_gap_at_level_one"]==20
+          assert x["unit_clock_period_equals_prime_jet_gap"] is True
+          assert x["mahler_coefficient_formula"]=="Delta^r f_p(0)=(-p)^r"
+          assert x["mahler_interpolated_minus_one"]=="1/(1-p)"
+          assert x["mahler_p_five_local"]["continued_local_euler_factor"]=="-1/4"
+          assert x["mahler_p_five_local"]["error_valuation"]==4
+          assert x["kummer_p_five_weights"]["weights"]==[2,22]
+          assert x["kummer_p_five_weights"]["corrected_zeta_residues"]==[17,17]
+          assert x["kummer_p_five_weights"]["raw_zeta_residues"]==[2,17]
+          assert x["wrong_unremoved_Euler_factor_breaks_clock_congruence"] is True
+          assert x["torsion_clock_mod_three_requires_branch"]["continuous_integer_power_sequence_over_Zp"] is False
+          assert x["parity_clock_mod_two_is_continuous"]["continuous_integer_power_sequence_over_Zp"] is True
+          assert x["clock_algebra_generates_a_p_adic_zeta_measure_without_extra_proofs"] is False
+          assert x["classical_Mahler_and_Kummer_theorems_imported"] is True
+          assert x["nontrivial_zeta_zeros_used"] is False
+          assert x["RH_claimed"] is False
+          PY
+      - name: Variable-unit proto SUCC and higher Pascal successor
+        run: |
+          python scripts/proto_succ_variable_unit_probe.py > "$RUNNER_TEMP/proto-succ-d.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"proto-succ-d.json").read_text())
+          assert x["status"]=="VARIABLE_UNIT_PROTO_SUCC_UNIPOTENT_LIFT"
+          assert x["formal_original_one_step"]=="0 -> D"
+          assert x["formal_first_five_addresses_in_D_units"]==[0,1,2,3,4]
+          assert x["S_one_is_D_equals_one_specialization"] is True
+          assert x["S_unit_mod_25_with_unit_two_period"]==25
+          assert x["unit_inverse_mod_25"]==13
+          assert x["normalized_shift_dilation_defect"]=="1-p"
+          assert x["raw_shift_dilation_defect"]=="D*(1-p)"
+          assert x["symbolic_unit_must_not_be_automatically_assumed_invertible"] is True
+          assert x["higher_order_SUCC_jet_formula"]=="x_n=sum_k binom(n,k) Delta^k x_0"
+          assert x["quadratic_d0_two_acceleration_three"]==[0,2,7,15,26,40]
+          assert x["higher_order_integer_binomial_formula"] is True
+          assert x["linear_step_unit_stability_iff_d0_unit_and_acceleration_divisible_by_p"] is True
+          assert x["stable_d0_two_a_five_mod_p_five"]["full_clock_gauge_valid_at_every_n"] is True
+          assert x["stable_d0_two_a_five_mod_p_five"]["first_nonunit_succ_index"] is None
+          assert x["unstable_d0_one_a_four_mod_p_five"]["full_clock_gauge_valid_at_every_n"] is False
+          assert x["unstable_d0_one_a_four_mod_p_five"]["first_nonunit_succ_index"]==1
+          assert x["changing_unit_can_stop_being_a_local_clock_unit"]["initial_unit_clock_period"]==25
+          assert x["changing_unit_can_stop_being_a_local_clock_unit"]["updated_nonunit_clock_period"]==5
+          assert x["changing_unit_can_stop_being_a_local_clock_unit"]["same_full_clock_coordinate_isomorphism_survives"] is False
+          assert x["d_zero_specialization_loses_normalized_defect_information"] is True
+          assert x["prime_jet_clock_period_identity_requires_declared_local_unit"] is True
+          assert x["new_RH_Gamma_or_Kubota_Leopoldt_theorem_claimed"] is False
+          PY
+      - name: Source-relative SUCC precision and proof transport
+        run: |
+          python scripts/precision_transport_probe.py > "$RUNNER_TEMP/source-precision-transport.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"source-precision-transport.json").read_text())
+          assert x["status"]=="SOURCE_RELATIVE_PRECISION_TRANSPORT_EXACT"
+          assert x["precision_debt_digits"]==1
+          assert x["source_repair_output_precision"]==3
+          assert x["whole_clock_recovered_after_lift"] is True
+          assert x["low_digit_claim_minimum_precision"]==2
+          assert x["low_digit_claim_at_coarse_precision"] is True
+          assert x["high_digit_claim_minimum_precision"]==3
+          assert x["high_digit_claim_at_coarse_precision"] is False
+          assert x["high_digit_claim_after_repair"] is True
+          assert x["two_nonzero_lifts_compose"] is True
+          assert x["composition_debt_additive"] is True
+          assert x["source_preserving_intervention"] is True
+          assert x["destructive_intervention_status"]=="source-truth-changed"
+          assert x["extra_precision_repairs_destructive_source_change"] is False
+          assert x["zero_step_has_finite_full_repair"] is False
+          assert x["finite_source_table_authenticates_physical_truth"] is False
+          assert x["RH_Gamma_or_Weil_theorem_claimed"] is False
+          PY
+      - name: Source-changing proof-support debt and exact Zeno obstruction
+        run: |
+          python scripts/proof_backaction_debt_probe.py > "$RUNNER_TEMP/proof-backaction-debt.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"proof-backaction-debt.json").read_text())
+          assert x["status"]=="SOURCE_BACKACTION_PROOF_DEBT_AND_ZENO_EXACT"
+          assert x["proportional_debt_first_nine_stages"]==[1,1,2,4,7,11,16,22,29]
+          assert x["all_zero_proportional_source_never_finitely_certified_under_protocol"] is True
+          assert x["all_zero_frozen_support_certified_after_three_reads"] is True
+          assert x["single_one_refuted_after_one_read"] is True
+          assert x["proof_target_mutated_by_support_growth"] is True
+          assert x["old_true_forward_transport_universal"] is False
+          assert x["old_refutation_forward_transport_universal"] is True
+          assert x["rate_matched_precision_shortfall_stage_0"]==1
+          assert x["rate_matched_precision_shortfall_stage_4"]==1
+          assert x["rate_matched_precision_first_decodable_stage"] is None
+          assert x["overtaking_precision_first_decodable_stage"]==1
+          assert x["early_transient_can_decide_despite_later_debt"] is True
+          assert x["transient_earlier_proof_remains_in_joint_history"] is True
+          assert x["transient_current_channel_loses_decodability"] is False
+          assert x["matched_joint_history_cannot_resolve_original_gap"] is False
+          assert x["matched_joint_history_digit_depth"]==1
+          assert x["omega_probe_event_executed"] is False
+          assert x["unrestricted_positive_support_gluing"] is False
+          assert x["source_restricted_positive_support_gluing"] is True
+          assert x["vacuous_source_law_is_not_useful_positive_proof"] is False
+          assert x["destructive_single_carrier_original_parity_impossible"] is True
+          assert x["independent_carrier_restores_original_parity"] is True
+          assert x["physical_information_time_or_RH_theorem_claimed"] is False
+          PY
+      - name: Noncommuting source shadow, future bisimulation and oriented holonomy
+        run: |
+          python scripts/noncommuting_transport_probe.py > "$RUNNER_TEMP/noncommuting-source-transport.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"noncommuting-source-transport.json").read_text())
+          assert x["status"]=="SOURCE_ORDER_AND_HOLONOMY_TRANSPORT_EXACT"
+          a=x["event"]
+          b=x["frame"]
+          assert a["all_four_two_action_endpoints"]=="00"
+          assert a["AB_parity_original_decodable"] is False
+          assert a["BA_parity_original_decodable"] is False
+          assert a["AB_vs_BA_partition_refinement"] is False
+          assert a["BA_vs_AB_partition_refinement"] is False
+          assert a["post_source_parity_is_original_parity"] is False
+          assert a["A_preserves_original_a_semantics"] is True
+          assert a["B_preserves_original_a_semantics"] is False
+          assert a["all_distinct_initial_sources_pairwise_separable"] is True
+          assert a["no_uniform_adaptive_original_parity_protocol"] is True
+          assert a["same_shadow_no_future_adaptive_proof"] is True
+          assert a["nondestructive_AB_repairs_original_parity"] is True
+          assert a["reversible_payload_transitions_noncommute"] is True
+          assert a["reversible_both_routes_preserve_original_XOR"] is True
+          assert a["reversible_both_routes_preserve_original_a_with_path"] is True
+          assert a["reversible_original_a_fails_route_blind"] is False
+          assert a["reversible_original_XOR_survives_route_blind"] is True
+          assert len(a["reversible_route_blind_witness"])==2
+          assert a["source_joint_read_repairs_original_parity"] is True
+          assert a["bisimulation_agrees_with_independent_BFS_for_all_pairs"] is True
+          assert b["holonomy_order"]==3
+          assert b["path_aware_source_recovered"] is True
+          assert b["first_bit_path_blind_decodable"] is False
+          assert b["is_zero_path_blind_decodable"] is True
+          assert b["invariant_binary_predicates_out_of_16"]==4
+          assert b["flat_all_16_predicates_path_blind_decodable"] is True
+          assert a["quantum_physical_or_RH_theorem_claimed"] is False
+          assert b["quantum_phase_or_RH_theorem_claimed"] is False
+          PY
+      - name: Adaptive original-source proof-policy least fixed point
+        run: |
+          python scripts/adaptive_proof_policy_probe.py > "$RUNNER_TEMP/adaptive-original-source-policy.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"adaptive-original-source-policy.json").read_text())
+          assert x["status"]=="FINITE_ADAPTIVE_SOURCE_PROOF_GAME_EXACT"
+          assert x["destructive_original_parity_winning"] is False
+          assert x["destructive_reachable_beliefs"]>1
+          assert x["nondestructive_original_parity_winning"] is True
+          assert x["nondestructive_worst_case"]==2
+          assert x["joint_probe_worst_case"]==1
+          assert x["reversible_state_changing_conditional_probe"] is True
+          assert x["adaptive_conditional_original_parity_winning"] is True
+          assert x["adaptive_conditional_worst_case"]==2
+          assert x["any_fixed_two_probe_word_succeeds"] is False
+          assert x["adaptive_action_words"]==[["Q","R0"],["Q","R0"],["Q","R1"],["Q","R1"]]
+          assert x["original_source_given_to_policy"] is False
+          assert x["menus_offered_as_free_readings"] is False
+          assert x["actual_hardware_or_RH_theorem_claimed"] is False
+          PY
+      - name: Actual Yoneda naturality, source coalgebra descent and adaptive rank
+        run: |
+          python scripts/operational_yoneda_descent_probe.py > "$RUNNER_TEMP/operational-yoneda-descent.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"operational-yoneda-descent.json").read_text())
+          assert x["status"]=="OPERATIONAL_YONEDA_SOURCE_POLICY_DESCENT_EXACT"
+          assert x["full_yoneda_natural_transforms"]==2
+          assert x["full_yoneda_actual_distinct_arrows"]==2
+          assert x["restricted_yoneda_natural_transforms"]==1
+          assert x["restricted_context_collapses_distinct_arrows"] is True
+          assert x["restricted_arrow_pairs_undetected"]==1
+          assert x["full_arrow_pairs_detected"]==1
+          assert x["minimum_faithful_context_count"]==1
+          assert x["minimum_faithful_context_is_source"] is True
+          assert x["endpoint_forgetful_functor_is_faithful"] is False
+          assert x["source_morphism_induces_checked_actual_functor"] is True
+          assert x["induced_functor_context_image_surjective"] is True
+          assert x["induced_functor_arrow_tokens_checked"]>0
+          assert x["noninjective_carrier_abstraction_preserves_winning_rank"] is True
+          assert x["abstract_optimal_rank"]==2
+          assert x["concrete_optimal_rank"]==2
+          assert x["successful_concrete_policy_source_replays"]==8
+          assert x["losing_original_parity_preserved_as_losing"] is True
+          assert x["one_probe_model_signature_equal"] is True
+          assert x["two_probe_model_signature_equal"] is False
+          assert x["two_probe_discriminator"]==["A","B"]
+          assert x["good_model_winning_rank"]==2
+          assert x["bad_model_has_no_finite_winning_policy"] is True
+          assert x["root_bisimulation_rejects_shallow_alias"] is True
+          assert x["independent_physical_source_attested"] is False
+          assert x["Yoneda_fullness_does_not_imply_physical_or_RH_positivity"] is True
+          PY
+      - name: Arithmetic prime-clock SUCC FUCC Yoneda and true-source aliases
+        run: |
+          python scripts/prime_clock_yoneda_probe.py > "$RUNNER_TEMP/prime-clock-y.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"prime-clock-y.json").read_text())
+          assert x["status"]=="AUTHENTIC_PRIME_SUCC_FUCC_YONEDA_TRANSPORT_EXACT"
+          assert x["fine_source_modulus"]==4
+          assert x["coarse_source_modulus"]==2
+          assert x["genuine_prime_place"]==2
+          assert x["genuine_prime_jet"]==3
+          assert x["fine_noncommuting_defect"]==2
+          assert x["coarse_defect"]==0
+          assert x["fine_nonflat_coarse_flat"] is True
+          assert x["coarse_source_rank_preserved"] is True
+          assert x["both_original_source_ranks_with_read"]==[1,1]
+          assert x["both_original_source_ranks_without_read"]==[None,None]
+          assert x["induced_actual_observation_functor_verified"] is True
+          assert x["ring_source_map_independent_of_simulated_outcomes"] is True
+          assert x["different_true_prime_jet_behavioral_alias_exists"] is True
+          assert x["declared_jet_source_signature_rejects_alias"] is True
+          assert x["arithmetic_source_parameters_physically_authenticated"] is False
+          assert x["fake_composite_euler_jet_admitted"] is False
+          assert x["RH_claimed"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -69,5 +593,24 @@ jobs:
             ${{ runner.temp }}/ordinal.json
             ${{ runner.temp }}/prime-source.json
             ${{ runner.temp }}/semantic-data-processing.json
+            ${{ runner.temp }}/observer-trap.json
+            ${{ runner.temp }}/absorbing-frontier.json
+            ${{ runner.temp }}/knowledge-ladder.json
+            ${{ runner.temp }}/relative-delta.json
+            ${{ runner.temp }}/circle-translator.json
+            ${{ runner.temp }}/twin-circle.json
+            ${{ runner.temp }}/probe-coherence.json
+            ${{ runner.temp }}/basis-boundary.json
+            ${{ runner.temp }}/succ-derivatives.json
+            ${{ runner.temp }}/zeta-minus-one-transport.json
+            ${{ runner.temp }}/residue-arch.json
+            ${{ runner.temp }}/clock-mahler.json
+            ${{ runner.temp }}/proto-succ-d.json
+            ${{ runner.temp }}/source-precision-transport.json
+            ${{ runner.temp }}/proof-backaction-debt.json
+            ${{ runner.temp }}/noncommuting-source-transport.json
+            ${{ runner.temp }}/adaptive-original-source-policy.json
+            ${{ runner.temp }}/operational-yoneda-descent.json
+            ${{ runner.temp }}/prime-clock-y.json
           if-no-files-found: warn
           retention-days: 14
