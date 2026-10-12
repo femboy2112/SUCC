@@ -274,6 +274,17 @@ Use these labels:
 | O226 | A fully faithful abstract Yoneda embedding, restricted context tests, endpoint-forgotten functor and source-coalgebra policy transport may be identified as the same mathematical mapping without extra proof obligations | REFUTED | Y2/Y3 restricted representable tests, Y10 source functor and Q endpoint quotient are separately typed; only actual verified squares/license clarify which source information survives |
 
 
+| O227 | For true prime p, integers r>k≥1 and declared authentic prime FUCC q, the exact ring quotient h:Z/p^r→Z/p^k commutes with SUCC S_d and FUCC V_q and with READ output residue modulo p^k | CLASSICAL / PROVED LOCAL / TESTED | PRIME_CLOCK_YONEDA_ORIGIN A1, direct reduction proof; all-source tests across p=2/3/5 |
+| O228 | The SUCC/FUCC integer-address discrepancy (S_d V_q−V_q S_d)(x)=d(1−q) may be nonzero mod p^r while zero mod p^k, even though exact quotient-proof transport is valid | PROVED LOCAL / TESTED | p=2,r=2,k=1,d=1,q=3: 2 mod4 vs0 mod2; p3/q7 and p5/q11 controls; not a Hilbert scalar operator commutator |
+| O229 | For original-source quotient-invariant claim t(x)=x mod p^k, the authentic arithmetic quotient generates a source-verified-in-the-mathematical-model observation-path functor and preserves optimal finite proof rank at fine/coarse carriers | PROVED LOCAL CONDITIONAL / TESTED | Source-coalgebra Y5–Y8, prime ring quotient, actual source-claim policy replay; READ rank1 on both, no READ rank infinite on both |
+| O230 | Two DIFFERENT genuine primes q=3 and q'=5 induce identical dilations mod2 and can be behaviorally/coalgebraically equivalent as coarse observer maps, yet remain different actual Euler prime-jet sources | CLASSICAL/PROVED LOCAL/EXACT COUNTEREXAMPLE | 3≡5≡1 mod2, source-parameter comparison; behavioral morphism alone does NOT certify equal arithmetic-source labels |
+| O231 | A separate exact arithmetic signature gate checking the declared prime place p, primitive d, authentic jet q and required precision/quotient relation rejects matched-behavior but wrong-source q or d aliases | PROVED LOCAL / TESTED; EXTERNAL SOURCE AUTH UNVERIFIED | Source signature verifier rejects q3↔q5 and d1↔d3, while causal observation algebra may pass; independent measurement/sourcing remains unknown |
+| O232 | The elementary affine SUCC/FUCC shift-dilation identity alone certifies multiplier q is an authentic Euler prime, disallowing composite q=6 | REFUTED | Same algebra holds for q=6; prime-clock constructor rejects q=6 only by separate true-prime predicate |
+| O233 | A source-preserving abstract coalgebra functor or a valid finite Yoneda embedding alone determines original arithmetic prime provenance uniquely | REFUTED | Explicit q3/q5 finite action alias under p2 coarse quotient, despite source-faithful claim behavior; extra σ context required |
+| O234 | An original high-precision source predicate distinguishing x=0 from x=2 mod4 can descend as a function solely of h(x)=x mod2 without an independent source law | REFUTED | High-digit target mutation rejected by exact source-claim pullback square; low-precision target valid |
+| O235 | Finite prime-clock quotient/presheaf transport constructs an authentic p-adic zeta measure, real Archimedean Gamma completion, positive Weil distribution or RH | UNVERIFIED | Requires all-level bounded projective measures, source-corrected moments, conductor/phase/test domains, true finite-to-real transport, nonzero zero-reading firewall |
+
+
 
 ## Adversarial suite
 
@@ -326,6 +337,8 @@ Some controls are *historical* and live in the archived research documents, whil
 **New operational Yoneda probes:** ACTUAL composed belief-history category with two different lawful arrows to a common target and literal full vs restricted naturality; exhaustive minimum precursor-context detector; source/tag quotient morphism with exact all-action response/effect/target squares and source surjectivity; rank equality across valid noninjective abstractions and 16 Boolean targets; exhaustive 256 two-state-action mutations plus random independent bisimulation color refinement; budget exhaustion, false source/claim effects and delayed fixed-probe horizon mismatch (rank 2 vs never) as decisive negative controls. None authenticates physical sources or RH.
 
 **New induced path-functor controls:** verified source-map token-preserving arrow functor from actual concrete belief-history category to abstract one; explicit nontrivial arrow/identity/composition checks; distinct endpoint-only reachability functor proven legal but nonfaithful; source-class/claim/transition mutants blocked before functor creation; context access remains independent of physical ability.
+
+**New authentic-arithmetic local probes:** source-derived finite quotient rings p2/p3/p5, genuine-prime FUCC and SUCC shift commutation, explicit affine defect vanishing under coarse projection, exact rank and actual Yoneda functor, reader absent/present controls, wrong high-source predicate and composite fake q=6, q=3 versus q=5 and d=1 versus d=3 source-alias counterexamples. Passing behavioral proof transport is NOT independent Euler source attestation.
 
 ## Outstanding highest-value claims
 

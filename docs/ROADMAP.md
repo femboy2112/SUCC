@@ -284,6 +284,18 @@ See research/2026-10-11/NONCOMMUTING_PROOF_TRANSPORT.md §6a; ledger O203–O209
 
 See [Operational Yoneda–policy descent](../research/2026-10-11/OPERATIONAL_YONEDA_POLICY_DESCENT.md), claim ledger O210–O222.
 
+## Arithmetic source-derived Yoneda: modulo prime-power calibration
+
+**Constructed real source family:** true prime p, finite local source ring Z/p^r, output precision k<r, actual d-unit SUCC shift x↦x+d and true-prime FUCC dilation x↦q x. The quotient h(x)=x mod p^k commutes with BOTH arithmetic actions and low-precision public residue reports, yielding a source-mathematically derived instance of the strict observation-path functor and finite optimal proof-policy descent rather than fitting an arbitrary finite table.
+
+**Source-relative curvature/commutation control:** source-address defect d(1−q) is nonzero modulo fine p^r but may vanish in coarse p^k. Exact p=2,r=2,k=1,d=1,q=3 witness: fine residual=2 mod4, coarse residual=0 mod2. Original parity remains decidable with a READ instrument on both models in one observation, and cannot be decided by constant-output SHIFT/DILATE-only instruments in either. This is an address-level affine defect, NOT physical GR/quantum phase curvature.
+
+**Essential provenance mutation:** different actual primes q=3 and q'=5 look identical after reduction mod2. General observer behavioral equivalence can truthfully pass despite different arithmetic source jets; an independent source-signature test rejects their identification, also rejecting d aliases and fake composite Euler multiplier q=6. The signature is declared source input, not externally attested real-world provenance. Distinguish φ/observable algebra from σ/authentic source identity.
+
+**Next serious arithmetic task:** build a projective, source-specific family of prime-jet measurement distributions at ALL local precision levels with separate boundedness and correct moments. Verify source-map coherence, p=2/Teichmüller branch/false composite controls and authentic real Gamma bridge before any attempted RH Weil positivity handoff.
+
+See [arithmetic prime-clock proof dossier](../research/2026-10-11/PRIME_CLOCK_YONEDA_ORIGIN.md), O227–O235.
+
 ## Completion criteria
 
 Every stage needs: a precise theorem/model statement; source and assumptions; independently checkable proof or certified numeric bounds; adversarial controls; executable regression tests; and a ledger entry that distinguishes demonstrated behavior from general claims. “Our finite probes were all positive” is not a global sign theorem.

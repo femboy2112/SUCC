@@ -60,6 +60,7 @@ class AuthenticPrimeYonedaTests(unittest.TestCase):
             self.assertEqual(certificate["abstract_rank"],1)
             self.assertEqual(certificate["concrete_rank"],1)
             self.assertTrue(certificate["source_image_surjective"])
+            self.assertTrue(certificate["declared_quotient_invariant_original_claim_lifted"])
             self.assertTrue(certificate["coarse_quotient_functor_verified"])
             self.assertTrue(certificate["coarse_context_onto"])
             self.assertFalse(certificate["real_Gamma_or_completed_Weil_identified"])

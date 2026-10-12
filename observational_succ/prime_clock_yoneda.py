@@ -190,7 +190,7 @@ class PrimeClockQuotient:
             "coarse_action_square_commutes":coarse_defect==0,
             "coarse_quotient_functor_verified":functor["checked_functor_compositions"]>0,
             "coarse_context_onto":functor["context_image_surjective"],
-            "all_original_source_claims_lifted":True,
+            "declared_quotient_invariant_original_claim_lifted":True,
             "arithmetic_primality_comes_from_independent_source_check":True,
             "real_Gamma_or_completed_Weil_identified":False,
             "RH_claimed":False,
