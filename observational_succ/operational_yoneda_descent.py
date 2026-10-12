@@ -26,7 +26,7 @@ from .noncommuting_proof_transport import (
     FiniteCarrier, Instrument, SourceTransportError, _sources, _bit_field,
 )
 from .yoneda import (
-    Arrow, validate_yoneda, representable_natural_transform,
+    Arrow, FiniteFunctor, validate_yoneda, representable_natural_transform,
 )
 from .core import BudgetExceeded, DomainError
 
@@ -409,6 +409,116 @@ class ObservationPathCategory:
         return tuple(self.edge_labels[t] for t in arrow.word)
 
 
+class ThinObservationReachability:
+    """The endpoint-only quotient of a REAL observational history category.
+
+    This is a thin category because existence of at least one path is a
+    transitive preorder (acyclic apart from identities). The functor from
+    full histories to reachability exists but need not be faithful.
+    """
+    def __init__(self, source:ObservationPathCategory):
+        self.source=source
+        self.objects=source.objects
+
+    def identity(self,x):
+        self.source._check(x)
+        return Arrow(x,x,())
+
+    def hom(self,x,y):
+        self.source._check(x);self.source._check(y)
+        return (Arrow(x,y,()),) if self.source.hom(x,y) else ()
+
+    def compose(self,left,right):
+        if (right.target!=left.source or
+                right not in self.hom(right.source,right.target) or
+                left not in self.hom(left.source,left.target)):
+            raise DomainError("Not a composable endpoint-reachability path")
+        return self.hom(right.source,left.target)[0]
+
+
+def forget_observation_history(source:ObservationPathCategory)->FiniteFunctor:
+    """A real (possibly nonfaithful) functor forgetting causal path words."""
+    thin=ThinObservationReachability(source)
+    return FiniteFunctor(source,thin,lambda obj:obj,
+        lambda path:thin.hom(path.source,path.target)[0])
+
+
+@dataclass(frozen=True)
+class InducedObservationFunctor:
+    """Certified concrete-to-abstract FUNCTOR, not only a belief map."""
+    source: ObservationPathCategory
+    target: ObservationPathCategory
+    functor: FiniteFunctor
+    object_map:tuple[int,...]
+    arrow_token_map:tuple[tuple[int,int],...]
+
+    def proof_receipt(self)->dict:
+        verified=self.functor.verify(max_compositions=300000)
+        homs=self.functor.hom_faithfulness()
+        return {
+            "status":"SOURCE_DERIVED_ACTUAL_OBSERVATION_PATH_FUNCTOR",
+            "source_context_objects":len(self.source.objects),
+            "target_context_objects":len(self.target.objects),
+            "context_image_surjective":
+                len(set(self.object_map))==len(self.target.objects),
+            "source_arrow_tokens":len(self.arrow_token_map),
+            "checked_functor_compositions":verified["composable_pairs_checked"],
+            "declared_source_policy_morphism_required":True,
+            "faithful":homs["faithful"],
+            "full":homs["full"],
+            "abstract_source_physically_attested":False,
+        }
+
+
+def induced_observation_functor(morphism:CertifiedSourceMorphism, *,
+                                horizon:int=2)->InducedObservationFunctor:
+    """Y5/Y6 lift h to the genuinely lawful free history categories.
+
+    A concrete context (n,B) maps to (n,h(B)); concrete labeled generator
+    (a,o) maps to the UNIQUE abstract (a,o) generator between image
+    contexts. Generator maps commute with source/targets, hence their
+    concatenation is a functor and its Hom actions are actual source maps.
+    This is a finite witnessed case of the usual free-category property.
+    """
+    morphism.verify()
+    c_game=BeliefGame.build(
+        morphism.concrete,morphism.source_concrete,
+        morphism.t_concrete,target_id=morphism.target_id)
+    a_game=BeliefGame.build(
+        morphism.abstract,morphism.source_abstract,
+        morphism.t_abstract,target_id=morphism.target_id)
+    C=ObservationPathCategory(c_game,horizon)
+    A=ObservationPathCategory(a_game,horizon)
+    inverse_context={c:i for i,c in enumerate(A.contexts)}
+    objmap=[]
+    for budget,belief in C.contexts:
+        projected=_belief((morphism.h[s],morphism.h[q])
+                          for s,q in belief)
+        key=(budget,projected)
+        if key not in inverse_context:
+            raise ArithmeticError("Source-coalgebra image context missing")
+        objmap.append(inverse_context[key])
+    edge_map={}
+    for src,edges in C.edges.items():
+        target_src=objmap[src]
+        for token,dst in edges:
+            label=C.edge_labels[token]
+            candidates=[a_token for a_token,a_dst in A.edges[target_src]
+                        if a_dst==objmap[dst]
+                        and A.edge_labels[a_token]==label]
+            if len(candidates)!=1:
+                raise ArithmeticError("Source-induced event arrow has no unique image")
+            edge_map[token]=candidates[0]
+    def arrow_image(f):
+        if not isinstance(f,Arrow) or f not in C.hom(f.source,f.target):
+            raise DomainError("Cannot map forged history evidence")
+        return Arrow(objmap[f.source],objmap[f.target],
+                     tuple(edge_map[t] for t in f.word))
+    F=FiniteFunctor(C,A,lambda obj:objmap[obj],arrow_image)
+    return InducedObservationFunctor(C,A,F,tuple(objmap),
+                                     tuple(sorted(edge_map.items())))
+
+
 def restricted_yoneda_arrow_detection(category:ObservationPathCategory,
                                       a:int,b:int,
                                       probes:tuple[int,...])->dict:
@@ -549,6 +659,10 @@ def yoneda_policy_descent_demo()->dict:
         concrete,positive,tuple(range(8)),tuple(range(4)),h,
         t_concrete,target,"initial-parity")
     transfer=morphism.policy_descent()
+    categorified=induced_observation_functor(morphism,horizon=2)
+    category_receipt=categorified.proof_receipt()
+    if not category_receipt["context_image_surjective"]:
+        raise ArithmeticError("Valid source map missed some abstract history contexts")
     if (transfer["abstract_rank"]!=2
             or transfer["concrete_rank"]!=2
             or transfer["state_map_injective"]):
@@ -576,6 +690,11 @@ def yoneda_policy_descent_demo()->dict:
         raise ArithmeticError("Two genuine distinct observation paths were collapsed")
     full=validate_yoneda(category,root,leaf)
     restricted=validate_yoneda(category,root,leaf,(leaf,))
+    endpoint_forgetting=forget_observation_history(category)
+    endpoint_receipt=endpoint_forgetting.verify()
+    if (endpoint_forgetting.hom_faithfulness()["faithful"]
+            or endpoint_receipt["composable_pairs_checked"]<1):
+        raise ArithmeticError("Forgetting a real ordered path was falsely faithful")
     if not (full["source_hom_count"]==2
             and full["natural_transform_count"]==2
             and restricted["natural_transform_count"]==1
@@ -609,6 +728,11 @@ def yoneda_policy_descent_demo()->dict:
         "full_arrow_pairs_detected":dense["detected_pairs"],
         "minimum_faithful_context_count":minimum["minimum_context_count"],
         "minimum_faithful_context_is_source":minimum["minimum_context_objects"]==(root,),
+        "endpoint_forgetful_functor_is_faithful":endpoint_forgetting.hom_faithfulness()["faithful"],
+        "source_morphism_induces_checked_actual_functor":category_receipt["checked_functor_compositions"]>0,
+        "induced_functor_context_image_surjective":category_receipt["context_image_surjective"],
+        "induced_functor_arrow_tokens_checked":category_receipt["source_arrow_tokens"],
+
 
         "noninjective_carrier_abstraction_preserves_winning_rank":transfer["optimal_original_source_rank_equal"],
         "abstract_optimal_rank":transfer["abstract_rank"],

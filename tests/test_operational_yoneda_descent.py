@@ -17,7 +17,8 @@ from observational_succ.adaptive_proof_policy import (
 from observational_succ.operational_yoneda_descent import (
     DescentError, BeliefGame, CertifiedSourceMorphism,
     greatest_goal_bisimulation, duplicate_carrier,
-    ObservationPathCategory, restricted_yoneda_arrow_detection,
+    ObservationPathCategory, induced_observation_functor,
+    forget_observation_history, restricted_yoneda_arrow_detection,
     least_faithful_context_family, shallow_probe_agreement,
     delayed_separator_models, yoneda_policy_descent_demo,
 )
@@ -100,6 +101,51 @@ class SourceCoalgebraDescentTests(unittest.TestCase):
         self.assertIsNone(receipt["concrete_rank"])
         self.assertTrue(receipt["optimal_original_source_rank_equal"])
         self.assertEqual(receipt["transported_source_replays"],0)
+
+    def test_source_map_induces_a_GENUINE_functor_on_legal_belief_paths(self):
+        abs_field=conditional_source_field()
+        target=("0","1","1","0")
+        morph=duplicated(abs_field,target)
+        bridge=induced_observation_functor(morph,horizon=2)
+        receipt=bridge.proof_receipt()
+        self.assertEqual(receipt["status"],
+                         "SOURCE_DERIVED_ACTUAL_OBSERVATION_PATH_FUNCTOR")
+        self.assertTrue(receipt["context_image_surjective"])
+        self.assertTrue(receipt["declared_source_policy_morphism_required"])
+        self.assertGreater(receipt["checked_functor_compositions"],0)
+        self.assertGreater(receipt["source_arrow_tokens"],0)
+        self.assertFalse(receipt["abstract_source_physically_attested"])
+        for x in bridge.source.objects:
+            objim=bridge.functor.object_image(x)
+            self.assertEqual(bridge.target.contexts[objim][0],
+                             bridge.source.contexts[x][0])
+            for y in bridge.source.objects:
+                for arrow in bridge.source.hom(x,y):
+                    transformed=bridge.functor.arrow_image(arrow)
+                    self.assertEqual(
+                        bridge.source.pretty_path(arrow),
+                        bridge.target.pretty_path(transformed))
+                    self.assertEqual(transformed.source,objim)
+                    self.assertEqual(transformed.target,
+                                     bridge.functor.object_image(y))
+        self.assertGreater(bridge.proof_receipt()["source_context_objects"],1)
+
+    def test_functorial_identity_and_noncommuting_path_order(self):
+        abs_field=conditional_source_field()
+        morph=duplicated(abs_field,("0","1","1","0"))
+        F=induced_observation_functor(morph,horizon=2).functor
+        self.assertGreater(F.verify()["composable_pairs_checked"],0)
+        for x in F.source.objects:
+            self.assertEqual(F.arrow_image(F.source.identity(x)),
+                             F.target.identity(F.object_image(x)))
+            for y in F.source.objects:
+                for a in F.source.hom(x,y):
+                    for z in F.source.objects:
+                        for b in F.source.hom(y,z):
+                            self.assertEqual(
+                                F.arrow_image(F.source.compose(b,a)),
+                                F.target.compose(F.arrow_image(b),
+                                                 F.arrow_image(a)))
 
     def test_all_16_original_source_claims_preserved_across_hidden_tag(self):
         abstract=conditional_source_field()
@@ -360,6 +406,22 @@ class GenuineYonedaCategoryTests(unittest.TestCase):
         self.assertEqual(len(enumerate_natural_transforms(
             c,x,y,c.objects)),len(c.hom(x,y)))
 
+    def test_forgetting_ACTUAL_history_is_valid_functor_but_not_faithful(self):
+        c,root,leaf=self.tiny()
+        F=forget_observation_history(c)
+        verification=F.verify()
+        self.assertGreater(verification["composable_pairs_checked"],0)
+        report=F.hom_faithfulness()
+        self.assertFalse(report["faithful"])
+        self.assertTrue(report["full"])
+        f,g=c.hom(root,leaf)
+        self.assertNotEqual(f,g)
+        self.assertEqual(F.arrow_image(f),F.arrow_image(g))
+        self.assertEqual(F.arrow_image(c.identity(root)),
+                         F.target.identity(root))
+        self.assertEqual(F.arrow_image(c.identity(leaf)),
+                         F.target.identity(leaf))
+
     def test_category_identity_composition_associativity_and_forgery(self):
         f=conditional_source_field()
         game=BeliefGame.build(f,(0,1,2,3),
@@ -419,6 +481,10 @@ class GenuineYonedaCategoryTests(unittest.TestCase):
         self.assertEqual(x["full_arrow_pairs_detected"],1)
         self.assertEqual(x["minimum_faithful_context_count"],1)
         self.assertTrue(x["minimum_faithful_context_is_source"])
+        self.assertFalse(x["endpoint_forgetful_functor_is_faithful"])
+        self.assertTrue(x["source_morphism_induces_checked_actual_functor"])
+        self.assertTrue(x["induced_functor_context_image_surjective"])
+        self.assertGreater(x["induced_functor_arrow_tokens_checked"],0)
         self.assertTrue(x["noninjective_carrier_abstraction_preserves_winning_rank"])
         self.assertEqual(x["abstract_optimal_rank"],2)
         self.assertEqual(x["concrete_optimal_rank"],2)
