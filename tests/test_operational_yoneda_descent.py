@@ -17,7 +17,8 @@ from observational_succ.adaptive_proof_policy import (
 from observational_succ.operational_yoneda_descent import (
     DescentError, BeliefGame, CertifiedSourceMorphism,
     greatest_goal_bisimulation, duplicate_carrier,
-    ObservationPathCategory, shallow_probe_agreement,
+    ObservationPathCategory, restricted_yoneda_arrow_detection,
+    least_faithful_context_family, shallow_probe_agreement,
     delayed_separator_models, yoneda_policy_descent_demo,
 )
 
@@ -314,6 +315,51 @@ class GenuineYonedaCategoryTests(unittest.TestCase):
         # distinct arrows as identical; FULL Yoneda correctly separates.
         self.assertNotEqual(arrows[0],arrows[1])
 
+    def test_restricted_faithfulness_iff_joint_precomposition_separator(self):
+        category,source,target=self.tiny()
+        weak=restricted_yoneda_arrow_detection(
+            category,source,target,(target,))
+        self.assertFalse(weak["faithful_on_selected_hom"])
+        self.assertEqual(weak["distinct_arrow_pairs"],1)
+        self.assertEqual(weak["detected_pairs"],0)
+        self.assertEqual(len(weak["undetected_pairs"]),1)
+        self.assertEqual(weak["undetected_pairs"][0],((1,),(2,)))
+        strong=restricted_yoneda_arrow_detection(
+            category,source,target,(source,))
+        self.assertTrue(strong["faithful_on_selected_hom"])
+        self.assertEqual(strong["detected_pairs"],1)
+        self.assertEqual(strong["context_lamps"][0][2],(source,()))
+        minimal=least_faithful_context_family(category,source,target)
+        self.assertEqual(minimal["minimum_context_objects"],(source,))
+        self.assertEqual(minimal["minimum_context_count"],1)
+        self.assertFalse(minimal["physical_probe_cost_minimized"])
+        for J in ((),(source,),(target,),(source,target)):
+            result=restricted_yoneda_arrow_detection(
+                category,source,target,J)
+            self.assertEqual(result["faithful_on_selected_hom"],
+                             source in J)
+        with self.assertRaises(DomainError):
+            restricted_yoneda_arrow_detection(
+                category,source,target,(source,source))
+        with self.assertRaises(DomainError):
+            restricted_yoneda_arrow_detection(
+                category,source,target,(999,))
+        with self.assertRaises(BudgetExceeded):
+            least_faithful_context_family(
+                category,source,target,max_subsets=1)
+
+    def test_full_yoneda_pairwise_naturality_on_real_belief_paths(self):
+        c,x,y=self.tiny()
+        identities={i:c.identity(i) for i in c.objects}
+        for arrow in c.hom(x,y):
+            eta=representable_natural_transform(c,arrow,c.objects)
+            self.assertEqual(eta[x][identities[x]],arrow)
+            for obj in c.objects:
+                for h in c.hom(obj,x):
+                    self.assertEqual(eta[obj][h],c.compose(arrow,h))
+        self.assertEqual(len(enumerate_natural_transforms(
+            c,x,y,c.objects)),len(c.hom(x,y)))
+
     def test_category_identity_composition_associativity_and_forgery(self):
         f=conditional_source_field()
         game=BeliefGame.build(f,(0,1,2,3),
@@ -369,6 +415,10 @@ class GenuineYonedaCategoryTests(unittest.TestCase):
         self.assertEqual(x["full_yoneda_actual_distinct_arrows"],2)
         self.assertEqual(x["restricted_yoneda_natural_transforms"],1)
         self.assertTrue(x["restricted_context_collapses_distinct_arrows"])
+        self.assertEqual(x["restricted_arrow_pairs_undetected"],1)
+        self.assertEqual(x["full_arrow_pairs_detected"],1)
+        self.assertEqual(x["minimum_faithful_context_count"],1)
+        self.assertTrue(x["minimum_faithful_context_is_source"])
         self.assertTrue(x["noninjective_carrier_abstraction_preserves_winning_rank"])
         self.assertEqual(x["abstract_optimal_rank"],2)
         self.assertEqual(x["concrete_optimal_rank"],2)

@@ -514,6 +514,36 @@ jobs:
           assert x["menus_offered_as_free_readings"] is False
           assert x["actual_hardware_or_RH_theorem_claimed"] is False
           PY
+      - name: Actual Yoneda naturality, source coalgebra descent and adaptive rank
+        run: |
+          python scripts/operational_yoneda_descent_probe.py > "$RUNNER_TEMP/operational-yoneda-descent.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ["RUNNER_TEMP"])/"operational-yoneda-descent.json").read_text())
+          assert x["status"]=="OPERATIONAL_YONEDA_SOURCE_POLICY_DESCENT_EXACT"
+          assert x["full_yoneda_natural_transforms"]==2
+          assert x["full_yoneda_actual_distinct_arrows"]==2
+          assert x["restricted_yoneda_natural_transforms"]==1
+          assert x["restricted_context_collapses_distinct_arrows"] is True
+          assert x["restricted_arrow_pairs_undetected"]==1
+          assert x["full_arrow_pairs_detected"]==1
+          assert x["minimum_faithful_context_count"]==1
+          assert x["minimum_faithful_context_is_source"] is True
+          assert x["noninjective_carrier_abstraction_preserves_winning_rank"] is True
+          assert x["abstract_optimal_rank"]==2
+          assert x["concrete_optimal_rank"]==2
+          assert x["successful_concrete_policy_source_replays"]==8
+          assert x["losing_original_parity_preserved_as_losing"] is True
+          assert x["one_probe_model_signature_equal"] is True
+          assert x["two_probe_model_signature_equal"] is False
+          assert x["two_probe_discriminator"]==["A","B"]
+          assert x["good_model_winning_rank"]==2
+          assert x["bad_model_has_no_finite_winning_policy"] is True
+          assert x["root_bisimulation_rejects_shallow_alias"] is True
+          assert x["independent_physical_source_attested"] is False
+          assert x["Yoneda_fullness_does_not_imply_physical_or_RH_positivity"] is True
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -550,5 +580,6 @@ jobs:
             ${{ runner.temp }}/proof-backaction-debt.json
             ${{ runner.temp }}/noncommuting-source-transport.json
             ${{ runner.temp }}/adaptive-original-source-policy.json
+            ${{ runner.temp }}/operational-yoneda-descent.json
           if-no-files-found: warn
           retention-days: 14

@@ -409,6 +409,80 @@ class ObservationPathCategory:
         return tuple(self.edge_labels[t] for t in arrow.word)
 
 
+def restricted_yoneda_arrow_detection(category:ObservationPathCategory,
+                                      a:int,b:int,
+                                      probes:tuple[int,...])->dict:
+    """EXACT restricted representable FAITHFULNESS criterion at hom(a,b).
+
+    y_J(f)=y_J(g) iff for every context j in J and every h:j->a,
+    f∘h=g∘h. Full Yoneda includes j=a and h=id_a, so any distinct
+    f,g are separated. A restricted family may lack any such lamp.
+    Faithfulness on a hom-set is NOT the same as FULLNESS: restriction
+    may also produce spurious natural transformations not induced by
+    any actual arrow.
+    """
+    if (type(probes) is not tuple or len(probes)!=len(set(probes))
+            or any(j not in category.objects for j in probes)):
+        raise DomainError("Restricted contexts must be actual distinct objects")
+    arrow_set=category.hom(a,b)
+    pairs=0
+    failed=[]
+    certified=[]
+    for i,f in enumerate(arrow_set):
+        for g in arrow_set[i+1:]:
+            pairs+=1
+            lamp=None
+            for j in probes:
+                for h in category.hom(j,a):
+                    if category.compose(f,h)!=category.compose(g,h):
+                        lamp=(j,h.word)
+                        break
+                if lamp is not None:break
+            if lamp is None:
+                failed.append((f.word,g.word))
+            else:
+                certified.append((f.word,g.word,lamp))
+    return {
+        "source_hom_size":len(arrow_set),
+        "distinct_arrow_pairs":pairs,
+        "detected_pairs":len(certified),
+        "undetected_pairs":tuple(failed),
+        "faithful_on_selected_hom":not failed,
+        "context_lamps":tuple(certified),
+        "no_inference_of_fullness_or_physical_probe_availability":True,
+    }
+
+
+def least_faithful_context_family(category:ObservationPathCategory,
+                                 a:int,b:int, *,
+                                 max_subsets:int=30000)->dict:
+    """Finite optimal hitting-set search for representable arrow detection.
+
+    Not a minimum physical measurement cost. The contexts are objects
+    already present in the freely generated observational category.
+    Raises instead of declaring 'darkness' when the search budget fails.
+    """
+    from itertools import combinations
+    if type(max_subsets) is not int or max_subsets<1:
+        raise BudgetExceeded("Finite context search budget required")
+    considered=0
+    for n in range(len(category.objects)+1):
+        for subset in combinations(category.objects,n):
+            considered+=1
+            if considered>max_subsets:
+                raise BudgetExceeded("Finite context-set coverage not exhaustive")
+            report=restricted_yoneda_arrow_detection(category,a,b,subset)
+            if report["faithful_on_selected_hom"]:
+                return {
+                    "minimum_context_objects":subset,
+                    "minimum_context_count":len(subset),
+                    "subsets_checked":considered,
+                    "arrow_pairs_detected":report["detected_pairs"],
+                    "physical_probe_cost_minimized":False,
+                }
+    raise ArithmeticError("Full Yoneda context family unexpectedly nonfaithful")
+
+
 def shallow_probe_agreement(left:FiniteCarrier,right:FiniteCarrier,
                             sources:tuple[int,...],horizon:int)->dict:
     """PROTOCOL-SCOPED fixed-word calibration, not a Yoneda embedding.
@@ -508,6 +582,13 @@ def yoneda_policy_descent_demo()->dict:
             and representable_natural_transform(category,arrows[0],(leaf,))
               ==representable_natural_transform(category,arrows[1],(leaf,))):
         raise ArithmeticError("Full/restricted Yoneda discrimination incorrectly claimed")
+    sparse=restricted_yoneda_arrow_detection(category,root,leaf,(leaf,))
+    dense=restricted_yoneda_arrow_detection(category,root,leaf,category.objects)
+    minimum=least_faithful_context_family(category,root,leaf)
+    if (sparse["faithful_on_selected_hom"]
+            or not dense["faithful_on_selected_hom"]
+            or minimum["minimum_context_objects"]!=(root,)):
+        raise ArithmeticError("Context-specific Yoneda separation lamps failed")
     good,bad=delayed_separator_models()
     one=shallow_probe_agreement(good,bad,(0,1),1)
     two=shallow_probe_agreement(good,bad,(0,1),2)
@@ -524,6 +605,11 @@ def yoneda_policy_descent_demo()->dict:
         "full_yoneda_actual_distinct_arrows":len(arrows),
         "restricted_yoneda_natural_transforms":restricted["natural_transform_count"],
         "restricted_context_collapses_distinct_arrows":True,
+        "restricted_arrow_pairs_undetected":len(sparse["undetected_pairs"]),
+        "full_arrow_pairs_detected":dense["detected_pairs"],
+        "minimum_faithful_context_count":minimum["minimum_context_count"],
+        "minimum_faithful_context_is_source":minimum["minimum_context_objects"]==(root,),
+
         "noninjective_carrier_abstraction_preserves_winning_rank":transfer["optimal_original_source_rank_equal"],
         "abstract_optimal_rank":transfer["abstract_rank"],
         "concrete_optimal_rank":transfer["concrete_rank"],

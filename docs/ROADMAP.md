@@ -270,6 +270,18 @@ See [Noncommuting proof transport](../research/2026-10-11/NONCOMMUTING_PROOF_TRA
 
 See research/2026-10-11/NONCOMMUTING_PROOF_TRANSPORT.md §6a; ledger O203–O209.
 
+## Operational Yoneda and source-labeled finite proof-policy descent
+
+**Implemented actual categorical interface:** a budget-graded finite free path category of lawfully executable action/outcome transitions between source/current compatible belief contexts; composed path arrows, identities and associativity are checked. Existing literal Yoneda natural-transform enumerator recovers the TWO legal distinct history arrows of a one-source/two-action calibration; restricting observers to the post-event context yields ONE transformation, losing faithfulness. A finite exact precomposition-based arrow-separation theorem and an exhaustive small-category minimum context-family search identify which missing precursor context is the necessary discriminator.
+
+**Implemented strong source-descent theorem:** a concrete→abstract state map h with surjective source-class image, exact original-source target pullback and verified enabledness/output/effect commuting squares maps all possible observer beliefs and public event branches ONTO their abstract counterparts. The resulting goal-labeled continuation bisimulation preserves every finite AND/OR winning stage and exact optimal worst-case proof rank, including NO-WIN cases. Abstract policy can be executed on concrete reports with a virtual abstract belief; no hidden true source handed to the decoder. Test hidden-tag eight-state concrete→four-state abstract source representation, all sixteen 2-bit Boolean targets, exhaustive two-state-machine mutants and actual replay.
+
+**Exact negative controls:** forged original-source predicates, missing source-class image, altered action name, answer, enabledness or carrier effect each invalidate descent; identical fixed-word observations up to depth 1 can conceal a source merger revealed at depth 2 and a rank 2 versus never-winning proof distinction. An independently implemented finite color-partition refinement cross-checks greatest goal-labeled bisimulation. Resource truncation is an explicit budget error, never a declaration of impossibility.
+
+**Remaining mathematics:** a faithful source-derived, nonflat *indexed* instrument family with independently justified source/claim map rather than a stipulated toy table; quantitative noisy/costed observer category; transport of minimal resource-aware policy certificates and provenance; continuity/limits of moving probe bases. Test true arithmetic prime-jet data and fake composites only once a non-circular, source-checked functor exists. RH application still requires authentic Euler/Gamma/Weil identification with no zero-location input.
+
+See [Operational Yoneda–policy descent](../research/2026-10-11/OPERATIONAL_YONEDA_POLICY_DESCENT.md), claim ledger O210–O222.
+
 ## Completion criteria
 
 Every stage needs: a precise theorem/model statement; source and assumptions; independently checkable proof or certified numeric bounds; adversarial controls; executable regression tests; and a ledger entry that distinguishes demonstrated behavior from general claims. “Our finite probes were all positive” is not a global sign theorem.
