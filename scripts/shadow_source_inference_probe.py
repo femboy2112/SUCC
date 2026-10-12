@@ -19,7 +19,8 @@ from observational_succ.shadow_archimedean_tests import (
     explicit_positive_hermite_multiplier)
 from observational_succ.shadow_zero_divisor import (
     distinct_prime_scale_shadows,offcritical_vs_line_shadow,
-    two_prime_shadow_conditioning_obstruction)
+    two_prime_shadow_conditioning_obstruction,
+    construct_global_polynomial_from_shadows)
 
 
 def clean(x):
@@ -42,6 +43,9 @@ def report():
     fake=construct_hermite_impostor((2,4,6),(Q(1,4),Q(1),Q(2)))
     other=offcritical_vs_line_shadow(Q(10,11)).certificate()
     source_infinite=receding_shadow_escape(100)
+    constructed=construct_global_polynomial_from_shadows(
+        (-1,1),(1,1),(-1,1,-1,1),(1,1,1,1))
+    assert constructed['global_polynomial']==(1,0,1)
     out={
       'status':'CLASSICAL CONDITIONAL SHADOW THEOREMS WITH EXACT FINITE CERTIFICATES',
       'empirical_source_authenticated':False,
@@ -63,6 +67,7 @@ def report():
           'Mellin_C2_of_EXPLICIT_noncanonical_example':explicit_positive_hermite_multiplier(2),
           'Mellin_C4_of_EXPLICIT_noncanonical_example':explicit_positive_hermite_multiplier(4),
       },
+      'construct_global_from_compatible_analytic_shadows':constructed,
       'common_zero_divisor':{
           'prime_scale_pair':distinct_prime_scale_shadows(2,3).certificate(),
           'off_line_vs_on_line':other,

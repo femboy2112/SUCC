@@ -51,6 +51,18 @@
       "shared_analytic_source_assumed": "classical Tate local zeta factorization"
     }
   },
+  "construct_global_from_compatible_analytic_shadows": {
+    "analytic_scope": "EXACT Q[z] ONLY; entire-function version uses analytic gluing",
+    "both_observation_squares_verified": true,
+    "global_factor_was_given_as_input": false,
+    "global_polynomial": [
+      "1",
+      "0",
+      "1"
+    ],
+    "multipliers_coprime": true,
+    "status": "GLOBAL_SOURCE_CONSTRUCTED"
+  },
   "empirical_source_authenticated": false,
   "finite_hermite_impostor": {
     "Mellin_C2_of_EXPLICIT_noncanonical_example": "1",

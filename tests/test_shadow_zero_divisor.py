@@ -39,3 +39,34 @@ class ZeroDivisorShadowTests(unittest.TestCase):
         self.assertEqual(normalized_gaussian_scale_pair(Q(3)),(Q(1,4),Q(3,4)))
 
 if __name__=='__main__':unittest.main()
+
+class AnalyticShadowGluingConstructionTests(unittest.TestCase):
+    def test_two_independent_test_shadows_construct_global_source(self):
+        from observational_succ.shadow_zero_divisor import construct_global_polynomial_from_shadows
+        # F=z^2+1, C1=z-1, C2=z+1. F is NOT given to solver.
+        r=construct_global_polynomial_from_shadows((-1,1),(1,1),(-1,1,-1,1),(1,1,1,1))
+        # For C1*F: (z-1)(z²+1)=-1+z-z²+z³.
+        self.assertEqual(r['status'],'GLOBAL_SOURCE_CONSTRUCTED')
+        self.assertEqual(r['global_polynomial'],(1,0,1))
+        self.assertFalse(r['global_factor_was_given_as_input'])
+
+    def test_bad_cross_observer_report_refuses_global_source(self):
+        from observational_succ.shadow_zero_divisor import construct_global_polynomial_from_shadows
+        r=construct_global_polynomial_from_shadows((-1,1),(1,1),(-1,1,-1,1),(1,1,1,2))
+        self.assertEqual(r['status'],'INCOMPATIBLE_SOURCE_SHADOWS')
+        self.assertTrue(any(r['commuting_square_defect']))
+
+    def test_coprimality_is_not_assumed_from_identical_report_shapes(self):
+        from observational_succ.shadow_zero_divisor import construct_global_polynomial_from_shadows
+        r=construct_global_polynomial_from_shadows((-1,1),(-1,1),(-1,1,-1,1),(-1,1,-1,1))
+        self.assertEqual(r['status'],'NONCOPRIME_UNCERTIFIED')
+        self.assertEqual(r['common_multiplier'],(-1,1))
+
+    def test_fake_nonrational_input_and_zero_multiplier(self):
+        from observational_succ.shadow_zero_divisor import construct_global_polynomial_from_shadows
+        with self.assertRaises(ShadowSourceError):
+            construct_global_polynomial_from_shadows((0,),(1,1),(1,),(1,))
+        with self.assertRaises(ShadowSourceError):
+            construct_global_polynomial_from_shadows((0.5,),(1,1),(1,),(1,))
+
+if __name__=='__main__':unittest.main()
