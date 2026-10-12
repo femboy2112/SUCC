@@ -125,6 +125,30 @@ class GluingTests(unittest.TestCase):
             verify_result(g,cs,o)
             self.assertEqual(o.status,'OBSTRUCTED' if mutation==(0,3) else 'GLUED')
 
+    def test_authentic_gaussian_5_17_escape_gluing_obstruction(self):
+        from observational_succ.gaussian_holonomy import GaussianSieve, quotient_holonomy
+        sieve = GaussianSieve(((1,2),(1,4)))  # authentic rational split primes 5,17
+        report = quotient_holonomy(sieve,1)
+        witness = report.nonzero_cycle
+        self.assertIsNotNone(witness)
+        witness.verify(sieve,1)
+        pts = witness.points
+        vertices = tuple(dict.fromkeys(sieve.residue(z) for z in pts[:-1]))
+        darts = tuple(Dart('w:'+str(i),sieve.residue(pts[i]),
+                      sieve.residue(pts[i+1]),step)
+                      for i,step in enumerate(witness.steps))
+        graph = VoltageSource('authentic Gaussian P={5,17} escaping subgraph',
+                              vertices,darts,2,sieve.period)
+        specs = edge_chart_cover(graph)
+        charts = tuple(construct_chart(graph,name,ids,lone_vertex=lone)
+                       for name,ids,lone in specs)
+        glued = assemble_charts(graph,charts)
+        verify_result(graph,charts,glued)
+        self.assertEqual(glued.status,'OBSTRUCTED')
+        self.assertEqual(abs(glued.obstruction.displacement[0]),85)
+        self.assertEqual(glued.obstruction.displacement[1],0)
+        self.assertTrue(glued.obstruction.lifted_walk)
+
     def test_empty_incomplete_and_nonconnected_chart_rejection(self):
         g=VoltageSource('islands',(0,1,2,3),(Dart('a',0,1,(1,)),Dart('b',2,3,(1,))),1)
         with self.assertRaisesRegex(DescentError,'not connected'):
