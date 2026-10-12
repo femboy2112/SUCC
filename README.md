@@ -8,6 +8,15 @@ The founding hypothesis begins with **the physical carrier**, not with the mathe
 
 > **Status:** early-stage formal and computational research. Some claims are classical mathematics, some are exact new-to-project derivations, others are tested finite models or open conjectures. The Riemann hypothesis (RH) remains unsolved, and Gödel incompleteness has not been mechanized within PA here. See [the claim ledger](docs/CLAIM_LEDGER.md).
 
+
+## Chaotic SUCC II: source-faithful Markov quotients and dual-E horizon
+
+The [chaos quotient research offshoot](research/2026-10-12/CHAOS_QUOTIENTS_SOURCE_DEBT.md) extends the rooted logistic observer tree by separating *algebraic inverse roots*, *lawful predecessor fibers*, and the *actual time-indexed source probabilities*. For every 2<r<4 the post-first-image carrier [0,r/4] has a positive-length terminal interval with only ONE lawful inverse branch, although the quadratic has two real roots. At r=4 under the genuine arcsine invariant law, m-bit itineraries instead yield a **nonconstant, exactly predictive stochastic Markov quotient** whose m-step transition is rank one; it is not a deterministic lossless source quotient.
+
+The dual-E common deterministic factor for m-bit stationary source reports separated by n steps contains **max(m-n,0) bits** (a finite horizon of source-specific common information), even though both E observers share the same valid global law. Maintaining the whole n-event symbolic history has an n-bit worst-case lower bound; a final m-bit snapshot cannot replace it. On generic finite rational source ensembles, exact conditional inverse kernels K_t must use **mu_t** and are time indexed: their composition reconstructs correct original-source posteriors, whereas equal-branch guesses and frozen kernels fail.
+
+Run `python -m unittest discover -s tests -p 'test_chaos_source_quotient.py' -v` and `python scripts/chaos_source_quotient_probe.py`. The machine-readable [exact receipt](research/2026-10-12/CHAOS_SOURCE_QUOTIENT_RECEIPT.json) records both positive and adversarial controls. Classical/locally proved mathematics (O333–O345), not generic-r kneading completion, physical source authentication, chaos suppression, RH, or a speedup.
+
 ## What the project studies
 
 The central question is: **what information, structure, and proof authority survive the transformations from physical interaction to a causal record, a semantic model, a mathematical assertion, and an infinitary global report?**

@@ -741,6 +741,26 @@ jobs:
           assert actual["RH_claimed"] is False
           assert actual["generic_r_bifurcation_model_covered"] is False
           PY
+      - name: Verify source-faithful chaotic observer quotient and dual-E horizon
+        run: |
+          python -m unittest discover -s tests -p 'test_chaos_source_quotient.py' -v
+          python scripts/chaos_source_quotient_probe.py > "$RUNNER_TEMP/chaos-source-quotient.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])
+          actual=json.loads((root/'chaos-source-quotient.json').read_text())
+          expected=json.loads(Path('research/2026-10-12/CHAOS_SOURCE_QUOTIENT_RECEIPT.json').read_text())
+          assert actual==expected, 'Source-faithful chaos observer receipt drift'
+          assert actual['source_admissibility']['r3_actual_admissible_predecessors']==['1/8']
+          assert actual['source_admissibility']['relative_geometric_gap_lengths_not_dynamic_probabilities']['39/10']=='39/400'
+          assert actual['r4_model']['dual_E_overlapping_source_factors_by_lag']['5']['maximal_common_deterministic_component_count']==1
+          assert actual['r4_model']['after_5_rank_one_exact'] is True
+          assert actual['source_aware_dual_E']['true_posterior_mean_source']=='7/12'
+          assert actual['time_indexed_source_update']['different_step_reverse_kernels_required'] is True
+          assert actual['physical_source_authenticated'] is False
+          assert actual['RH_claimed'] is False
+          PY
       - name: Persist verified finite evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -753,6 +773,7 @@ jobs:
             ${{ runner.temp }}/prime-source.json
             ${{ runner.temp }}/shared-carrier-boundary.json
             ${{ runner.temp }}/dual-boundary-observers.json
+            ${{ runner.temp }}/chaos-source-quotient.json
             ${{ runner.temp }}/logistic-observer-tree.json
             ${{ runner.temp }}/semantic-data-processing.json
             ${{ runner.temp }}/observer-trap.json
