@@ -268,6 +268,12 @@ Use these labels:
 | O222 | Source-relative Yoneda and exact finite coalgebraic policy descent alone identify physical human/quantum cognition, a global Archimedean arithmetic transport or RH-completed Weil positivity | UNVERIFIED | No actual physically sourced instrument identity, real Gamma/test-domain/polarization construction or RH-equivalent positive-definite proof supplied |
 
 
+| O223 | Exact source/coaction morphism h with Y5–Y7 induces a lawfully composed FUNCTOR between bounded concrete and abstract observer belief-history path categories, carrying (n,B) to (n,\bar hB) and each actual (a,o) generator to its uniquely matching abstract generator | CLASSICAL/PROVED LOCAL/TESTED | OPERATIONAL_YONEDA_POLICY_DESCENT Y10–Y11; concrete source/target/token maps, exact finite SUCC functor verifier with nontrivial composition controls |
+| O224 | The endpoint-only reachability quotient of a legal finite observation path category is a valid functor that need not be faithful; in two lawful actions with same source/postcontext it merges A and B despite their distinct causal records | CLASSICAL/PROVED LOCAL/TESTED | Explicit thin reachability category, accepted composition verifier, hom-faithfulness diagnostic flags distinct input paths mapped to same endpoint-only arrow |
+| O225 | Because a concrete-to-abstract source-induced functor is mathematically legitimate, it must be FULL and FAITHFUL in all declared source contexts, and every full Yoneda abstract context is physically accessible to the observer | REFUTED AS INFERENCE | Fullness/faithfulness separately audited; source-functor existence does not imply equivalence or physical executable reset; endpoint forgetting is a functor but nonfaithful |
+| O226 | A fully faithful abstract Yoneda embedding, restricted context tests, endpoint-forgotten functor and source-coalgebra policy transport may be identified as the same mathematical mapping without extra proof obligations | REFUTED | Y2/Y3 restricted representable tests, Y10 source functor and Q endpoint quotient are separately typed; only actual verified squares/license clarify which source information survives |
+
+
 
 ## Adversarial suite
 
@@ -318,6 +324,8 @@ Some controls are *historical* and live in the archived research documents, whil
 **New noncommuting proof-transport controls:** reversible truly noncommuting XOR source actions with all-original-source reconstruction, path-labeled positive and path-forgotten negative proof controls, compare source-error versus frame/path defects; two destructive probe orders with identical endstate yet distinct histories; source-shadow positive finite impossibility and alternate nondestructive/joint instrument repairs; 16 target truth functions and complete source-fiber table; 256 two-state/two-action Mealy machines and seeded masked-action future semantics; wrong source/basis provenance; explicitly oriented GF2 square with all 16 path-dependent Boolean predicates and 150 nonflat/flat/mutated frame controls. No physical quantum field or RH conclusion.
 
 **New operational Yoneda probes:** ACTUAL composed belief-history category with two different lawful arrows to a common target and literal full vs restricted naturality; exhaustive minimum precursor-context detector; source/tag quotient morphism with exact all-action response/effect/target squares and source surjectivity; rank equality across valid noninjective abstractions and 16 Boolean targets; exhaustive 256 two-state-action mutations plus random independent bisimulation color refinement; budget exhaustion, false source/claim effects and delayed fixed-probe horizon mismatch (rank 2 vs never) as decisive negative controls. None authenticates physical sources or RH.
+
+**New induced path-functor controls:** verified source-map token-preserving arrow functor from actual concrete belief-history category to abstract one; explicit nontrivial arrow/identity/composition checks; distinct endpoint-only reachability functor proven legal but nonfaithful; source-class/claim/transition mutants blocked before functor creation; context access remains independent of physical ability.
 
 ## Outstanding highest-value claims
 

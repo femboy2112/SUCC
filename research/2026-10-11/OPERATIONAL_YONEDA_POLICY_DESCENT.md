@@ -164,6 +164,48 @@ Any finite winning policy on the abstract model can be run on the concrete sourc
 
 **Mutation controls:** forged source target, unsound source-class image, wrong total state mapping, mutated response, mutated state effect, altered action availability or wrong instrument name EACH invalidates a load-bearing commuting square. The examples do not authenticate h as a law of actual physics, but they stop mathematical decoder code from silently treating a guessed map as certified.
 
+## 4a. The missing categorical bridge is now constructed, NOT merely postulated
+
+The source morphism \(\mathbf h\) with lawful action/claim squares Y5–Y6 determines MORE than a relation between finite belief games. For every bounded horizon h it induces an actual strict FUNCTOR between the real legal-history categories of §2:
+
+\[
+\boxed{
+\mathcal F_{\mathbf h}:\mathcal C_h^{\mathrm{concrete}}
+  \longrightarrow \mathcal C_h^{\mathrm{abstract}}.
+}\tag{Y10}
+\]
+
+**On objects:** \(\mathcal F_{\mathbf h}(n,B)=(n,\bar h(B))\), where \(\bar h(B)=\{(h(s),h(q)):(s,q)\in B\}\).
+
+**On elementary morphisms:** the concrete public event generator
+\((n,B)\xrightarrow{(a,o)}(n-1,B_{a,o})\) is sent to the unique abstract lawful event generator \((n,\bar h B)\xrightarrow{(a,o)}(n-1,(\bar hB)_{a,o})\). Uniqueness follows from deterministic outcome-fiber updates and declared action-name uniqueness. Existence follows from the source-simulation and surjective belief-image equations Y5–Y7.
+
+**On arbitrary morphisms:** map each ordered event token and concatenate. The free-category universal property yields
+
+\[
+\mathcal F_{\mathbf h}(1_B)=1_{\bar hB},
+\qquad
+\mathcal F_{\mathbf h}(v\circ u)=
+\mathcal F_{\mathbf h}(v)\circ\mathcal F_{\mathbf h}(u).
+\tag{Y11}
+\]
+
+The code CONSTRUCTS the object map and each actual concrete-to-abstract edge-token map; it rejects an absent/nonunique abstract event and reuses SUCC's independent exact finite \`FiniteFunctor.verify\` to check identities, arrow typing and compositions at the declared horizon. The functor object map is onto the reachable abstract contexts under the specified source class. **A general functor need not be full or faithful**, and Y10 by itself says NOTHING about available physical probes. We report fullness and faithfulness as independent diagnostics rather than promises.
+
+### A second distinct failure mode: path-forgetting is a functor but NOT faithful
+
+Let \(\operatorname{Reach}(\mathcal C_h)\) have exactly one arrow \(a\to b\) when at least one actual lawful history joins a to b, and no arrow otherwise. Existence of concatenated paths makes this a well-defined thin category. The canonical endpoint-only map
+
+\[
+Q:\mathcal C_h\longrightarrow\operatorname{Reach}(\mathcal C_h)
+\]
+
+is an honest functor: it retains all objects, preserves identity and composition, but **merges distinct histories with the same endpoints**. In our two-action real-history calibration, \(Q(A)=Q(B)\) despite \(A\ne B\); the finite functor checker verifies \(Q\) and its hom-set audit correctly reports NOT FAITHFUL. This is categorically different from *restricting Yoneda's test contexts* from all objects to a subcategory J: both can hide path distinctions but through different operations. In particular, ordinary Yoneda remains FULLY FAITHFUL on the original \(\mathcal C_h\); it does not retroactively recover information discarded by Q, nor does it realize inaccessible observer contexts.
+
+The decisive link is therefore an actual sequence of independently typed constructions: **source-claim instrument morphism → belief branch map → history functor → representable/probe adequacy diagnostics → strategy preservation by finite goal-bisimulation**. None of these arrows may be replaced by an analogy or asserted merely because a diagram is visually attractive.
+
+**Status:** Y10–Y11 are classical free-category functoriality, constructively checked within the declared finite deterministic model. A general source-indexed fibration, physical source attestations, no-go for unrestricted observers, derived arithmetic prime/Euler objects and RH Weil positivity remain separate UNVERIFIED extensions.
+
 ## 5. The hostile delayed-separator model: one-step agreement is NOT proof-equivalence
 
 Use two possible original sources s=0,1, plus two possible post-action carrier states 2,3. Both deterministic systems have exactly the same public action names and SAME outcomes for every zero- and one-step fixed experiment started at either original source.
@@ -196,7 +238,7 @@ The actual obstruction to claiming a physical/comprehensive Yoneda theorem is **
 ## 7. Reproducibility and next verdict-changing probe
 
 - \`observational_succ/operational_yoneda_descent.py\`: finite actual belief-path category, exact restricted-hom faithfulness criterion, minimal context hitting sets, target-labeled cross-game greatest bisimulation, explicit policy replay, source/coalg action/effect/claim morphism, finite delayed-source mutation.
-- \`tests/test_operational_yoneda_descent.py\`: at least 18 named hostile tests; all 16 predicates on original 4-state carrier; up to all 256 two-state two-instrument systems lifted through noninjective source representations; separate independent colored bisimulation oracle; genuine naturality/associativity; corrupted source ID/effects/outcome/menus/claim/table controls, resource exhaustion, finite delayed separator and genuine full/restricted Yoneda.
+- \`tests/test_operational_yoneda_descent.py\`: at least 21 named hostile tests; all 16 predicates on original 4-state carrier; up to all 256 two-state two-instrument systems lifted through noninjective source representations; separate independent colored bisimulation oracle; genuine naturality/associativity; corrupted source ID/effects/outcome/menus/claim/table controls, resource exhaustion, finite delayed separator and genuine full/restricted Yoneda.
 - \`scripts/operational_yoneda_descent_probe.py\`: machine-readable strict proof boundary receipt in CI on Python 3.10 and 3.13.
 
 **Next:** seek SOURCE-CERTIFIED instruments in a mathematically consequential family (e.g. finite quotient of an actual arithmetic SUCC/FUCC prime-jet system) where Y5–Y6 are not stipulated but derived independently. Develop a *nonflat, path-indexed proof strategy descent* with actual budgeted instruments and noncommuting path composition. Demand that a newly derived class of strategies survives one fresh source-family holdout and an authentic-versus-mutated-prime control. Do NOT claim Yoneda by itself gives completed Weil positivity, recovers unknown RH zeros, or proves universal source truth.
