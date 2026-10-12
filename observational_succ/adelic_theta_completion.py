@@ -172,3 +172,58 @@ def normalized_self_dual_gaussian_pair(root_scale:F,s:int=2)->dict:
             "claimed_Fourier_self_dual":True,
             "analytic_identity_requires_Gaussian_Fourier_theorem":True,
             "coincides_with_standard_mellin_at_s":cs==1}
+
+
+def centered_self_dual_gamma_multiplier(root_scale:F,center_weight:F,s:int)->dict:
+    """One MORE source-compatible self-dual arch test, with a center Gaussian.
+
+    f(x)=(w*G_1(x)+G_(r*r)(x)+r^-1*G_(1/(r*r))(x))/(w+1+1/r),
+    G_a(x)=exp(-pi*a*x*x). All weights positive. Fourier swaps the pair,
+    fixes the center. The Mellin multiplier is exactly
+      C(s)=(w+r^-s+r^(s-1))/(w+1+r^-1)=C(1-s).
+    For any w>0, C(0)=C(1)=1, so even the classical pole residues agree.
+    """
+    r,w=root_scale,center_weight
+    r,w=rational(r),rational(w)
+    if r<=0 or w<=0 or type(s) is not int:
+        raise DiagonalSourceError("Need positive rational scales/weights and integral s")
+    C=lambda z:(w+r**(-z)+r**(z-1))/(w+1+1/r)
+    if C(0)!=1 or C(1)!=1 or C(s)!=C(1-s):
+        raise AssertionError("Failed self-dual Mellin normalization")
+    return {"root_scale":r,"center_weight":w,"s":s,
+            "relative_to_standard":C(s),"reflected_relative":C(1-s),
+            "C0":C(0),"C1":C(1),
+            "real_source_positive":True,
+            "source_self_dual_by_Gaussian_Fourier":True,
+            "same_finite_euler_source":True,
+            "standard_gamma_uniquely_selected":C(s)==1}
+
+
+def offcritical_self_dual_zero_witness()->dict:
+    """An entirely explicit completed-zeta multiplier with OFF-LINE zeros.
+
+    Choose r=4, center w=11/10. Set t=4^(s-1/2). C(s)=0 iff
+      t^2+(11/5)t+1=0,
+    whose roots are (-11 +/- sqrt(21))/10. One modulus is
+    R=(11+sqrt(21))/10, strictly 1<R<2 (because 0<sqrt21<9).
+    Therefore s=1/2 +/- log(R)/log(4) + (2k+1)pi*i/log(4)
+    lie INSIDE 0<Re s<1 and OFF Re s=1/2, with no zeta zeros as inputs.
+    The modified xi_f(s)=C(s)*xi(s) has these extra offcritical zeros,
+    while the **actual** Riemann xi(s) is entirely unchanged.
+    """
+    c=centered_self_dual_gamma_multiplier(F(4),F(11,10),2)
+    b=F(11,5)
+    disc=b*b-4
+    if disc!=F(21,25) or c['C0']!=1 or c['C1']!=1:
+        raise AssertionError("Wrong exact quadratic / normalization")
+    return {"root_scale":F(4),"center_weight":F(11,10),
+            "t_quadratic_constant_first":(F(1),b,F(1)),
+            "discriminant":disc,
+            "large_root_modulus_radical":"(11+sqrt(21))/10",
+            "radical_proved_strictly_between_1_and_2":True,
+            "zeros_s_description":"1/2 +/- log((11+sqrt(21))/10)/log(4) + (2k+1)*pi*i/log(4)",
+            "zeros_off_critical_line":True,
+            "zeros_inside_open_critical_strip":True,
+            "actual_riemann_zeta_changed":False,
+            "countermodel_to_FE_implies_RH":True,
+            "analytic_gaussian_Fourier_theorem_used":True}

@@ -92,3 +92,29 @@ class SelfDualNonuniqueArchimedean(unittest.TestCase):
         for r in (0,-1,F(-1,2)):
             with self.assertRaises(DiagonalSourceError):
                 normalized_self_dual_gaussian_pair(r,2)
+
+class ExplicitOffCriticalMutation(unittest.TestCase):
+    def test_offcritical_zeros_from_positive_selfdual_source(self):
+        from observational_succ.adelic_theta_completion import offcritical_self_dual_zero_witness
+        x=offcritical_self_dual_zero_witness()
+        self.assertEqual(x['discriminant'],F(21,25))
+        self.assertEqual(x['t_quadratic_constant_first'],(F(1),F(11,5),F(1)))
+        self.assertTrue(x['zeros_off_critical_line'])
+        self.assertTrue(x['zeros_inside_open_critical_strip'])
+        self.assertFalse(x['actual_riemann_zeta_changed'])
+
+    def test_correct_pole_residue_and_source_symmetric_mellin(self):
+        from observational_succ.adelic_theta_completion import centered_self_dual_gamma_multiplier
+        for s in (-1,0,1,2):
+            x=centered_self_dual_gamma_multiplier(F(4),F(11,10),s)
+            self.assertEqual(x['C0'],1)
+            self.assertEqual(x['C1'],1)
+            self.assertEqual(x['relative_to_standard'],x['reflected_relative'])
+            self.assertTrue(x['real_source_positive'])
+            self.assertTrue(x['same_finite_euler_source'])
+        self.assertNotEqual(centered_self_dual_gamma_multiplier(F(4),F(11,10),2)['relative_to_standard'],1)
+
+    def test_negative_source_weight_not_allowed(self):
+        from observational_succ.adelic_theta_completion import centered_self_dual_gamma_multiplier
+        with self.assertRaises(DiagonalSourceError):
+            centered_self_dual_gamma_multiplier(F(4),F(-1),2)

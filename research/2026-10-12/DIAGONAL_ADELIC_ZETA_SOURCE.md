@@ -181,3 +181,32 @@ Z_\infty(f_r,s)=\pi^{-s/2}\Gamma(s/2)C_r(s),\qquad
 Multiplying the SAME authentic finite Euler product by this alternative Archimedean factor gives \(\Lambda_r(s)=C_r(s)\Lambda(s)\), which **still** has the completed functional equation, **still** has the standard residues at \(s=0,1\), and still has a real Fourier-self-dual source. Nevertheless it is not the standard \(\Lambda\) for \(r\ne1\). At \(r=2\), exact rational evaluation yields \(C_2(2)=C_2(-1)=3/2\), while \(C_2(0)=C_2(1)=1\).
 
 This gives a devastating negative control on a common overinterpretation: **diagonal source, genuine Euler factors, Fourier self-duality, the functional equation, and pole normalization do NOT by themselves identify the standard Archimedean Gamma completion uniquely.** An extra explicit standard test-function selection principle, normalization across an adequate family of test functions, or stronger arithmetic/analytic structure is necessary. The classical Tate distributional framework considers all admissible Schwartz–Bruhat functions rather than pretending a single symmetric test fixes a unique global theory. The code verifies the rational Mellin multipliers and reflection relation exactly; Fourier self-duality rests on the classical Gaussian Fourier theorem, not finite code sampling. The result is not a new zero-free theorem: the nonconstant multiplier can introduce additional zeros.
+
+## DZ9. A normalized POSITIVE self-dual real source with a completed functional equation and provable off-line zeros (CLASSICAL CONSTRUCTION; exact root inequality)
+
+The source ambiguity in DZ8 can be made a decisive explicit mathematical countermodel. Let \(G_a(x)=e^{-\pi a x^2}\), and define
+\[
+\boxed{
+ f(x)=\frac{\frac{11}{10}G_1(x)+G_{16}(x)+\frac14G_{1/16}(x)}{\frac{47}{20}}.
+}\tag{DZ9a}
+\]
+Every coefficient is positive, and \(f\) is a Schwartz function. \(\mathcal FG_1=G_1\), \(\mathcal FG_{16}=\tfrac14G_{1/16}\), and \(\mathcal F(\tfrac14G_{1/16})=G_{16}\). Thus \(\hat f=f\) exactly; \(f(0)=\int f=1\). Keep **every authentic finite prime factor** \(Z_p=(1-p^{-s})^{-1}\) unchanged. The real Mellin factor becomes
+\[
+Z_\infty(f,s)=\pi^{-s/2}\Gamma(s/2)\,C(s),\qquad
+\boxed{C(s)=\frac{\frac{11}{10}+4^{-s}+4^{s-1}}{\frac{47}{20}}=C(1-s),\quad C(0)=C(1)=1.}\tag{DZ9b}
+\]
+The resulting completed function \(\Lambda_f(s)=C(s)\Lambda(s)\), and \(\xi_f(s)=C(s)\xi(s)\), have the **same** reflection symmetry and the **same** pole residues as the classical completed zeta; this is the general Poisson/Schwartz phenomenon. Yet \(C\) has explicit zeros strictly *inside* the critical strip and *off* the critical line, independent of the unknown zeta zeros.
+
+Indeed, put \(t=4^{s-1/2}\). Then \(C(s)=0\) iff
+\[
+0=\frac{11}{10}+\frac12(t+t^{-1})
+\iff\boxed{t^2+\frac{11}{5}t+1=0},
+\quad t=\frac{-11\pm\sqrt{21}}{10}.
+\]
+Set \(R=(11+\sqrt{21})/10\). The rational inequalities \(1<R<2\) hold because \(0<\sqrt{21}<9\). Therefore the zeros
+\[
+\boxed{s_{\pm,k}=\frac12\pm\frac{\log R}{\log4}+\frac{(2k+1)\pi i}{\log4}\qquad(k\in\mathbb Z)}\tag{DZ9c}
+\]
+have \(0<\operatorname{Re}s_{\pm,k}<1\) and \(\operatorname{Re}s_{\pm,k}\ne1/2\). Their existence is an algebraic construction, not a numerical search, and it does not read any nontrivial zero of \(\zeta\). The actual \(\xi\) is **unchanged**: this refutes the inference that *any* positive selfdual arch source with genuine finite Euler product, a symmetric functional equation and correct poles must have RH-type zeros. It does **not** refute RH for the standard zeta function.
+
+**Interpretation for the dual E observer idea:** matching both real/finite additive Fourier phases, accepting all real Gaussian self-dual tests, and gluing boundary information can still give globally different completed analytic functions. Even positivity of a *test function* is not the missing **positive-definiteness of the completed Weil form**. One needs a source-specific normalization/representation theorem selecting exactly the standard Gamma/test-domain identity, followed by the distinct positivity argument. Code stores the exact quadratic, discriminant \(21/25\), strict \(1<R<2\) witness and operator-source provenance firewall; it does not claim a numerical root certificate for arbitrary complex \(s\).

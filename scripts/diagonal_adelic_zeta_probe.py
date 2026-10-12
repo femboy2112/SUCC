@@ -10,7 +10,7 @@ from observational_succ.diagonal_adele_zeta import (
     bounded_height_injection,height_limited_source,finite_place_joint_limit_escape,
     local_euler_product,no_height_limit_alias)
 from observational_succ.adelic_theta_completion import (
-    completed_s2_interval,deleted_euler_factor_asymmetry,normalized_self_dual_gaussian_pair,
+    completed_s2_interval,deleted_euler_factor_asymmetry,normalized_self_dual_gaussian_pair,offcritical_self_dual_zero_witness,
     theta_poisson_diagnostic,lambda_theta_diagnostic)
 from observational_succ.finite_fourier_carrier import fourier_covariance_receipt
 from observational_succ.dual_place_verifier import DualPlaceProof,RationalClaim
@@ -49,6 +49,7 @@ def main():
         's2_arch_completed_exact_interval':z,
         'missing_true_prime_2_mutation':deleted_euler_factor_asymmetry(2,2),
         'nonunique_arch_selfdual_mutation':normalized_self_dual_gaussian_pair(F(2),2),
+        'offcritical_zero_mutated_selfdual_arch':offcritical_self_dual_zero_witness(),
         'theta_diagnostic_nonproof':theta_poisson_diagnostic('2',12,55),
         'lambda_theta_diagnostic_nonproof':lambda_theta_diagnostic('0.4+2.0j',9,55),
         'all_quantitative_exact_receipts_rational':True,
@@ -64,6 +65,7 @@ def main():
     assert out['dual_observer_proof']['status']=='PROVED'
     assert not out['rh_proved']
     assert out['nonunique_arch_selfdual_mutation']['mellin_relative_to_standard']==F(3,2)
+    assert out['offcritical_zero_mutated_selfdual_arch']['zeros_inside_open_critical_strip']
     print(json.dumps(stringify(out),indent=2,sort_keys=True))
 
 if __name__=='__main__':main()

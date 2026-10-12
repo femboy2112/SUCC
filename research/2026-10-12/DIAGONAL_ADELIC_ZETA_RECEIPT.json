@@ -108,6 +108,24 @@
     "root_scale": "2",
     "scale_square": "4"
   },
+  "offcritical_zero_mutated_selfdual_arch": {
+    "actual_riemann_zeta_changed": false,
+    "analytic_gaussian_Fourier_theorem_used": true,
+    "center_weight": "11/10",
+    "countermodel_to_FE_implies_RH": true,
+    "discriminant": "21/25",
+    "large_root_modulus_radical": "(11+sqrt(21))/10",
+    "radical_proved_strictly_between_1_and_2": true,
+    "root_scale": "4",
+    "t_quadratic_constant_first": [
+      "1",
+      "11/5",
+      "1"
+    ],
+    "zeros_inside_open_critical_strip": true,
+    "zeros_off_critical_line": true,
+    "zeros_s_description": "1/2 +/- log((11+sqrt(21))/10)/log(4) + (2k+1)*pi*i/log(4)"
+  },
   "physical_entanglement_claimed": false,
   "rh_proved": false,
   "s2_arch_completed_exact_interval": {
