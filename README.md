@@ -212,3 +212,8 @@ The [exact dynamic-Fourier dossier](research/2026-10-12/DYNAMIC_FOURIER_VIRTUAL_
 
 
 **Dynamical source-changing extension:** [DF5](research/2026-10-12/DYNAMIC_FOURIER_VIRTUAL_ZERO_FRONTIER.md) now proves the exact finite condition for source-update U to descend through an incomplete Fourier observer A: U(ker A)⊆ker A. Otherwise E receives a concrete fine-source null that becomes nonzero after a reversible carrier update; no coarse-only V can make the observation square commute. Authentic physical/carrier sourcing, full adeles and Weil positivity remain **unverified** (O345–O347).
+
+
+## Shadow-SUCC/FUCC: testable forms and source-grounded global claims
+
+[Shadow-source inference](research/2026-10-12/SHADOW_SUCC_GLOBAL_INFERENCE.md) begins with empirical test forms on ONE original carrier and asks which global targets factor through their jointly observed information. The exact rational solver returns a source-claim proof or two globally possible models with identical observations and different claims; it never authenticates physical outcomes. A positive Gaussian scale-mixture has the exact C(2) variance rigidity theorem, but an explicit strictly positive Fourier-selfdual non-Gaussian Hermite test matches the same normalizations and C(2), refuting unrestricted uniqueness. Two different true-prime-scale test vectors have coprime extra Mellin zeros, allowing identification of their common analytic zero divisor without reading zeta zeros; nevertheless log2/log3 phases produce arbitrarily poor inversion conditioning at unbounded height. The test-vector space, not one privileged Gaussian, is the correct Archimedean source object. Classical results organized for SUCC, NOT RH or new test-function theory. Ledger O348-O360.

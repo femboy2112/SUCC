@@ -367,3 +367,10 @@ Every boundary E tower samples one declared carrier; the actual source object an
 
 
 **Causal Fourier continuation gate:** do not apply an observer-level post-update V merely because its input report looks correct. For finite linear source updates, test U(kernel A)⊆kernel A first, then construct the unique V. An invertible source shear gives an explicit invisible→visible counterexample. Extend DF5 to measured outcomes/instruments with source-original claims, nonlinear carriers, compatible test-function topologies and genuinely independent source/probe attestation. See DF5 and O345–O347.
+
+
+## Shadow-SUCC: source model selection through empirical test-function intersections
+
+**Earned:** exact rational original-source form/claim factorization, two-source underdetermination and incompatibility witnesses, minimal finite-support test design and conservative error budget, source pullback, positive Gaussian-mixture moment/variance rigidity, strict positive Hermite counterexamples to unrestricted finite-test uniqueness, conditional analytic zero-divisor GCD across two non-Gaussian prime-scale shadows, and a log2/log3 near-phase-alignment no-uniform-decoder theorem. Classic mathematics, typed source-relative SUCC program, no RH proof or literature priority.
+
+**Next:** formalize a full source-correct Schwartz-Bruhat test-object category and all-local Fourier/Mellin functional rather than choosing a distinguished Gaussian test. Establish test-vector-independent local gamma distribution with honest conductor/source maps. Prove strong quantitative inverse bounds on growing height ranges; SF8 forbids global uniform conditioning from just the two prime-scale test vectors. Build verified claims from genuinely sourced observations across state-changing carrier experiments. Only then pursue full Weil/Suzuki source identification and the separate RH-strength positivity theorem. See [SF1-SF9](../research/2026-10-12/SHADOW_SUCC_GLOBAL_INFERENCE.md) and O348-O360.

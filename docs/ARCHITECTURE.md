@@ -357,3 +357,10 @@ See [DF/VZ dossier](../research/2026-10-12/DYNAMIC_FOURIER_VIRTUAL_ZERO_FRONTIER
 
 
 **Changing-source Fourier base-change:** a declared update U of the fine carrier descends to a coarse source-observer map A only when it preserves kernel(A). The induced V is uniquely defined on observation fibers, making the exact observation square commute. An invertible shear can expose a previously hidden frequency class, proving that neither unitarity nor abstract Fourier naturality makes a stale coarse model dynamically sufficient. See [DF5](../research/2026-10-12/DYNAMIC_FOURIER_VIRTUAL_ZERO_FRONTIER.md). This is finite linear algebra, not a physically authenticated instrument or RH criterion.
+
+
+## Shadow-SUCC/FUCC: original-source forms, global claim and analytic divisor descent
+
+The shadow_source_inference module represents actual empirical reports by rational functionals on one declared original source; source/basis/epoch identity is mandatory but not externally authenticated. Shadow-SUCC accumulates constraints; Shadow-FUCC checks row-span claim factorization or returns a counterexample invisible source direction, with an exact contradiction witness for inconsistent data. Legitimate proof factorizations pull back along explicit carrier maps, but the converse is false and genuine physical changes need source-original claim/effect checks.
+
+shadow_archimedean_tests separates the normalized positive Gaussian scale-mixture cone (moment gap = scale variance and a rigorous L1 bound) from the much larger strictly positive self-Fourier Schwartz source class (any finite Mellin/point probes allow an explicit Hermite-polynomial impostor). shadow_zero_divisor extracts the common divisor of two source-factorized test integrals with coprime auxiliary multipliers, yet proves no globally bounded two-shadow analytic decoder for prime scale pair 2/3 because the log-prime phases nearly align at unbounded heights. Classical Hermite, Tate and entire-function ideal theory, not a physically verified Archimedean gamma distribution or completed Weil positivity. See [Shadow SF1-SF9](../research/2026-10-12/SHADOW_SUCC_GLOBAL_INFERENCE.md).

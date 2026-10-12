@@ -781,6 +781,25 @@ jobs:
           assert r["source_update_descent_shear_counterexample"]["obstruction_revealed_report"]==["1","0"]
           assert r["full_adelic_fourier_or_RH_proved"] is False
           PY
+      - name: Verify empirical Shadow-SUCC and analytic stable-divisor certificates
+        run: |
+          python scripts/shadow_source_inference_probe.py > "$RUNNER_TEMP/shadow-source-inference.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          r=json.loads((Path(os.environ["RUNNER_TEMP"])/"shadow-source-inference.json").read_text())
+          saved=json.loads(Path("research/2026-10-12/SHADOW_SOURCE_INFERENCE_RECEIPT.json").read_text())
+          assert r==saved
+          assert r["finite_shadow_fucc"]["proved_after_cross_tower"]["status"]=="PROVED"
+          assert r["finite_shadow_fucc"]["unresolved_countermodel"]["status"]=="UNRESOLVED"
+          assert r["canonical_mixture"]["variance_gap"]=="0"
+          assert r["finite_hermite_impostor"]["Mellin_C2_of_EXPLICIT_noncanonical_example"]=="1"
+          assert r["finite_hermite_impostor"]["normalization_and_fourier_claims"]["perturbation_nonzero"] is True
+          assert r["common_zero_divisor"]["global_decoder_instability"]["exact_auxiliary_zero_sets_disjoint"] is True
+          assert r["common_zero_divisor"]["global_decoder_instability"]["global_uniformly_bounded_bezout_decoder_exists"] is False
+          assert r["RH_or_Weil_positivity_proved"] is False
+          assert r["canonical_real_gamma_from_finite_primes_alone"] is False
+          PY
       - name: Persist verified finite evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -793,6 +812,7 @@ jobs:
             ${{ runner.temp }}/prime-source.json
             ${{ runner.temp }}/shared-carrier-boundary.json
             ${{ runner.temp }}/dynamic-fourier-virtual-zeros.json
+            ${{ runner.temp }}/shadow-source-inference.json
             ${{ runner.temp }}/diagonal-adelic-zeta.json
             ${{ runner.temp }}/dual-boundary-observers.json
             ${{ runner.temp }}/semantic-data-processing.json
