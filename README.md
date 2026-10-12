@@ -55,6 +55,7 @@ This is an established identification of the completed arithmetic Weil distribut
 19. **[Research roadmap](docs/ROADMAP.md)** — executable, falsifiable next investigations independent of RH.
 20. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
 21. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
+22. **[Integration audit (2026-10-11)](docs/INTEGRATION_AUDIT_2026-10-11.md)** — consolidation record for research PRs #6–#22: validation receipts, three-bearing adversarial-audit findings, corrections applied, and open follow-ups.
 
 ## Run it
 
@@ -128,7 +129,7 @@ This repo was launched after an extensive program in [femboy2112/FuckingRH](http
 
 New work belongs here first. When it yields an independently meaningful RH-related theorem, export a **self-contained, status-labeled, adversarially tested handoff** to femboy2112/FuckingRH or another RH research repo. Do not quietly convert general observational insights into RH proof claims.
 
-**New conditional theorem:** [Proof-support backaction and Zeno debt](research/2026-10-11/PROOF_BACKACTION_DEBT_ZENO.md) gives an all-finite-protocol source-indistinguishability proof for a growing active target, a strict separation of moving goals and fixed claims, and exact rate-matched/overmatched precision classifications. A finite Zeno schedule does not implement an omega event.
+**New conditional theorem:** [Proof-support backaction and Zeno debt](research/2026-10-11/PROOF_BACKACTION_DEBT_ZENO.md) gives a source-indistinguishability proof for every finite one-bit-per-action protocol observing a growing active target, a strict separation of moving goals and fixed claims, and exact rate-matched/overmatched precision classifications. A finite Zeno schedule does not implement an omega event.
 
 **Latest theorem candidate:** [Source-relative precision transport](research/2026-10-11/SOURCE_RELATIVE_PRECISION_TRANSPORT.md) proves exact loss/recovery criteria for nonunit SUCC steps, claim-specific separation depth and conditional source-preserving proof transport. This is classical finite algebra organized into a typed observational framework, not a physical or RH theorem.
 
@@ -142,6 +143,6 @@ New work belongs here first. When it yields an independently meaningful RH-relat
 
 **Yoneda/coalgebraic proof-transport checkpoint:** [Operational Yoneda and source-relative policy descent](research/2026-10-11/OPERATIONAL_YONEDA_POLICY_DESCENT.md) builds actual legal observation-path morphisms and detects when restricted representables lose them. A separately verified source/claim/action morphism preserves the minimum adaptive proof rank—even for a noninjective 8→4 state abstraction. One-step test agreement can still conceal a future proof failure. All results are classical conditional mathematics, not authenticated physical source evidence.
 
-**Arithmetic source-control milestone:** [Prime-clock Yoneda origin and source-alias firewall](research/2026-10-11/PRIME_CLOCK_YONEDA_ORIGIN.md) verifies that reduction ℚ/4→ℚ/2 transports authentic SUCC/FUCC dynamics and original parity proof rank even when the fine shift/dilation pair does not commute but its coarse quotient does. Crucially, a different true prime can produce an identical coarse action, so observational Yoneda alone cannot recover the original Euler prime: provenance must be checked separately.
+**Arithmetic source-control milestone:** [Prime-clock Yoneda origin and source-alias firewall](research/2026-10-11/PRIME_CLOCK_YONEDA_ORIGIN.md) verifies that reduction ℤ/4→ℤ/2 transports authentic SUCC/FUCC dynamics and original parity proof rank even when the fine shift/dilation pair does not commute but its coarse quotient does. Crucially, a different true prime can produce an identical coarse action, so observational Yoneda alone cannot recover the original Euler prime: provenance must be checked separately.
 
 **Professional operating policy:** no merge to main, release, package publishing, or unsupported change of license is implied by the initial repository setup. See [AGENTS.md](AGENTS.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
