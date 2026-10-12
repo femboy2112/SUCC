@@ -685,6 +685,23 @@ jobs:
         run: python scripts/ordinal_succ_report_probe.py --output "$RUNNER_TEMP/ordinal.json"
       - name: Certified source-side RH bridge
         run: python scripts/prime_source_certificates_probe.py --output "$RUNNER_TEMP/prime-source.json"
+      - name: Shared-carrier ring and exact discrete holography
+        run: |
+          python scripts/shared_carrier_descent_probe.py > "$RUNNER_TEMP/shared-carrier-boundary.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          r=json.loads((Path(os.environ["RUNNER_TEMP"])/"shared-carrier-boundary.json").read_text())
+          assert r["source_factorization_complete"] is True
+          assert r["source_alias_without_all_probes"] is True
+          assert r["pairwise_consistent_but_globally_impossible"] is True
+          assert r["wheel"]["reconstructed_interior"]==[["u","1/4"]]
+          assert r["wheel"]["boundary_only_energy"]==r["wheel"]["global_energy"]
+          assert r["two_interior_path"]["reconstructed_interior"]==[["u","1/3"],["v","2/3"]]
+          assert r["path_DtN"]==[["1/3","-1/3"],["-1/3","1/3"]]
+          assert r["global_interior_source_certified"] is False
+          assert r["archimedean_place_identified"] is False
+          PY
       - name: Persist verified finite evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -695,6 +712,7 @@ jobs:
             ${{ runner.temp }}/foundations.json
             ${{ runner.temp }}/ordinal.json
             ${{ runner.temp }}/prime-source.json
+            ${{ runner.temp }}/shared-carrier-boundary.json
             ${{ runner.temp }}/semantic-data-processing.json
             ${{ runner.temp }}/observer-trap.json
             ${{ runner.temp }}/absorbing-frontier.json
