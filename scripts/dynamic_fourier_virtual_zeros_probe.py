@@ -8,7 +8,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 
 from observational_succ.dynamic_fourier_tower import (
     exact_spectral_debt, verify_fourier_tower, observational_alias,
-    claim_target_debt, disappearing_energy_unbounded_claim)
+    claim_target_debt, disappearing_energy_unbounded_claim, source_update_descent)
 from observational_succ.virtual_mellin_zeros import (
     model_completion_receipt, zero_class, positive_gaussian_mixture_mellin2,
     VirtualCompletionObserver, virtual_zero_parameter_threshold_report)
@@ -23,7 +23,16 @@ def main():
     candidate=VirtualCompletionObserver(F(0),F(1),'arch-source-unspecified',0)
     canonical=candidate.observe_exact_mellin2(F(1),source_id='arch-source-unspecified',source_version=0)
     nonstandard=candidate.observe_exact_mellin2(F(413,188),source_id='arch-source-unspecified',source_version=0)
+    # A genuinely state-changing, invertible intervention can reveal old hidden modes.
+    shear=[[F(int(i==j)) for j in range(4)] for i in range(4)]
+    shear[0][2]=1
+    def shift_matrix():
+        return tuple(tuple(F(int(i == (j+1)%4)) for j in range(4)) for i in range(4))
+    bad_update=source_update_descent(shear,2)
+    good_update=source_update_descent(shift_matrix(),2)
     report={
+        'source_update_descent_succ_shift':good_update,
+        'source_update_descent_shear_counterexample':bad_update,
         'classification':'finite exact classical transport, conditional source model',
         'canonical_zeta_zeros_used_as_inputs':False,
         'rational_probability_and_algebra_only':True,
@@ -49,6 +58,9 @@ def main():
         'analytic_Hurwitz_lemma_proved_in_written_math_not_by_sampling':True,
     }
     assert report['alias_hidden_energy']==2
+    assert good_update['coarse_dynamics_exists'] is True
+    assert bad_update['coarse_dynamics_exists'] is False
+    assert bad_update['obstruction_revealed_report'] == (F(1), F(0))
     assert report['finite_tower_step_debts']==(F(1,2),F(1,4))
     assert report['counterfactual_completion']['quadratic_t_constant_first']==(F(1),F(11,5),F(1))
     assert report['counterfactual_completion']['Mellin_C2']==F(413,188)

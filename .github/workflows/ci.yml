@@ -776,6 +776,9 @@ jobs:
           assert r["virtual_zeros_initially_possible"] is True
           assert r["virtual_zeros_after_canonical_probe"] is False
           assert r["virtual_zeros_after_noncanonical_probe"] is True
+          assert r["source_update_descent_succ_shift"]["coarse_dynamics_exists"] is True
+          assert r["source_update_descent_shear_counterexample"]["coarse_dynamics_exists"] is False
+          assert r["source_update_descent_shear_counterexample"]["obstruction_revealed_report"]==["1","0"]
           assert r["full_adelic_fourier_or_RH_proved"] is False
           PY
       - name: Persist verified finite evidence

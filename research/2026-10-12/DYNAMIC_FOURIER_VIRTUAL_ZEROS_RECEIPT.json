@@ -70,6 +70,37 @@
     "uniform_operator_norm_available": false,
     "unseen_energy": "1/5000"
   },
+  "source_update_descent_shear_counterexample": {
+    "RH_or_physical_entanglement_claimed": false,
+    "coarse_dynamics_exists": false,
+    "obstruction_invisible_source": [
+      "-1",
+      "0",
+      "1",
+      "0"
+    ],
+    "obstruction_revealed_report": [
+      "1",
+      "0"
+    ],
+    "source_mapping_requires_fine_information": true
+  },
+  "source_update_descent_succ_shift": {
+    "RH_or_physical_entanglement_claimed": false,
+    "coarse_dynamics_exists": true,
+    "induced_coarse_matrix": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "source_mapping_requires_fine_information": false,
+    "verified_on_all_source_basis_vectors": true
+  },
   "strict_strip_no_extra_zero": true,
   "virtual_zeros_after_canonical_probe": false,
   "virtual_zeros_after_noncanonical_probe": true,

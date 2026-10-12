@@ -145,3 +145,69 @@ class FourierClaimTransportTests(unittest.TestCase):
             for a in ((1,0,1,0),(1,0,-1,0),(1,2,3,4),(-1,1,-1,1)):
                 r=claim_target_debt(x,a,2)
                 self.assertLessEqual(r['actual_squared_claim_loss'],r['upper_squared_claim_loss'])
+
+class DynamicSourceChangeTests(unittest.TestCase):
+    @staticmethod
+    def matrix_from_action(m,func):
+        rows=[[F(0)]*m for _ in range(m)]
+        for j in range(m):
+            rows[func(j)][j]=F(1)
+        return rows
+
+    def test_shift_and_unit_fucc_act_on_coarse_observers(self):
+        from observational_succ.dynamic_fourier_tower import source_update_descent
+        for m,n in ((4,2),(8,4),(9,3),(12,3)):
+            shift=self.matrix_from_action(m,lambda j:(j+1)%m)
+            r=source_update_descent(shift,n)
+            self.assertTrue(r['coarse_dynamics_exists'])
+            for h in range(n):
+                self.assertEqual(r['induced_coarse_matrix'][(h+1)%n][h],1)
+        for m,n,mult in ((4,2,3),(9,3,2),(8,2,3)):
+            shift=self.matrix_from_action(m,lambda j:(mult*j)%m)
+            r=source_update_descent(shift,n)
+            self.assertTrue(r['coarse_dynamics_exists'])
+
+    def test_reversible_shear_reveals_hidden_fine_source(self):
+        from observational_succ.dynamic_fourier_tower import source_update_descent
+        # Matrix U=I+E_{0,2} invertible with inverse I-E_{0,2}.
+        rows=[[F(int(i==j)) for j in range(4)] for i in range(4)]
+        rows[0][2]=1
+        r=source_update_descent(rows,2)
+        self.assertFalse(r['coarse_dynamics_exists'])
+        self.assertEqual(r['obstruction_invisible_source'],(-1,0,1,0))
+        self.assertEqual(r['obstruction_revealed_report'],(1,0))
+        self.assertFalse(r['RH_or_physical_entanglement_claimed'])
+
+    def test_fine_update_preserves_kernel_not_necessarily_source(self):
+        from observational_succ.dynamic_fourier_tower import source_update_descent
+        # Reshuffle only within each quotient fiber.
+        rows=self.matrix_from_action(4,lambda j:(j+2)%4)
+        r=source_update_descent(rows,2)
+        self.assertTrue(r['coarse_dynamics_exists'])
+        self.assertEqual(r['induced_coarse_matrix'],((1,0),(0,1)))
+
+    def test_random_two_coarsening_test(self):
+        from observational_succ.dynamic_fourier_tower import source_update_descent
+        rng=random.Random(712)
+        for m,n in ((4,2),(6,3),(8,4)):
+            for _ in range(30):
+                # Build U by arbitrary independent permutations INSIDE each fiber.
+                targets=list(range(m))
+                for h in range(n):
+                    fiber=[h+t*n for t in range(m//n)]
+                    new=fiber[:]
+                    rng.shuffle(new)
+                    for i,j in zip(fiber,new): targets[i]=j
+                U=self.matrix_from_action(m,lambda j:targets[j])
+                r=source_update_descent(U,n)
+                self.assertTrue(r['coarse_dynamics_exists'])
+                self.assertEqual(r['induced_coarse_matrix'],tuple(tuple(F(i==j) for j in range(n)) for i in range(n)))
+
+    def test_invalid_source_update_rejected(self):
+        from observational_succ.dynamic_fourier_tower import source_update_descent
+        with self.assertRaises(DiagonalSourceError):
+            source_update_descent(((1,0),(0,1)),3)
+        with self.assertRaises(DiagonalSourceError):
+            source_update_descent(((1,2,3,4),)*4,2.0)
+        with self.assertRaises(DiagonalSourceError):
+            source_update_descent(((1,2),(3,4),(5,6),(7,8)),2)

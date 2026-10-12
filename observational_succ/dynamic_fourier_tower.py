@@ -238,3 +238,57 @@ def disappearing_energy_unbounded_claim(n: int) -> dict:
             "source_difference_tends_to_zero": True,
             "original_claim_error_diverges": True,
             "uniform_operator_norm_available": False}
+
+
+def source_update_descent(matrix: Sequence[Sequence[int | F]], coarse: int) -> dict:
+    """Exact causal source-update / coarse-observer commuting-square theorem.
+
+    For a declared linear fine-carrier update U:Q^M->Q^M and a surjective
+    observer A:Q^M->Q^N summing residue fibers, a lawful coarse update V
+    satisfying A U = V A exists iff U(ker A) lies in ker A. The induced
+    V is unique. Failing this emits an explicit invisible input whose
+    post-update coarse value is NONZERO: a proof of lost future closure.
+
+    No claim of a quantum physical instrument; U is a declared linear map.
+    """
+    rows = tuple(tuple(_rational(v) for v in row) for row in matrix)
+    m = len(rows)
+    _moduli(m, coarse)
+    if any(len(row) != m for row in rows):
+        raise DiagonalSourceError("State-changing carrier map must be square")
+
+    def act(f: tuple[F, ...]) -> tuple[F, ...]:
+        return tuple(sum((rows[i][j] * f[j] for j in range(m)), F()) for i in range(m))
+
+    def basis(j: int) -> tuple[F, ...]:
+        return tuple(F(i == j) for i in range(m))
+
+    columns = tuple(sum_fibers(act(basis(h)), coarse) for h in range(coarse))
+    for j in range(coarse, m):
+        observed = sum_fibers(act(basis(j)), coarse)
+        expected = columns[j % coarse]
+        if observed != expected:
+            hidden = tuple(F(int(i == j) - int(i == j % coarse)) for i in range(m))
+            if sum_fibers(hidden, coarse) != (F(0),) * coarse:
+                raise AssertionError("Obstruction witness must be invisible before U")
+            revealed = sum_fibers(act(hidden), coarse)
+            if revealed == (F(0),) * coarse:
+                raise AssertionError("Noncommuting observer/update square has false witness")
+            return {"coarse_dynamics_exists": False,
+                    "obstruction_invisible_source": hidden,
+                    "obstruction_revealed_report": revealed,
+                    "source_mapping_requires_fine_information": True,
+                    "RH_or_physical_entanglement_claimed": False}
+    v = tuple(tuple(columns[j][i] for j in range(coarse)) for i in range(coarse))
+    for j in range(m):
+        aj = sum_fibers(basis(j),coarse)
+        lhs = sum_fibers(act(basis(j)), coarse)
+        rhs = tuple(sum((v[i][h]*aj[h] for h in range(coarse)), F())
+                    for i in range(coarse))
+        if lhs != rhs:
+            raise AssertionError("Supposedly descended dynamics do not commute")
+    return {"coarse_dynamics_exists": True,
+            "induced_coarse_matrix": v,
+            "verified_on_all_source_basis_vectors": True,
+            "source_mapping_requires_fine_information": False,
+            "RH_or_physical_entanglement_claimed": False}
