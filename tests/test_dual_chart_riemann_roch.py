@@ -70,6 +70,43 @@ class DualChartRiemannRochTests(unittest.TestCase):
         self.assertTrue(a['compatible'])
         self.assertEqual(a['infinity_chart'],{0:7,1:4,3:1})
 
+    def test_h0_h1_match_independent_cech_linear_algebra(self):
+        # Independent of cech_dimensions' closed form: build the Cech
+        # differential delta(f0,f_inf) = f0(z) - z^k f_inf(1/z) as an exact
+        # rational matrix on a Laurent window and read H0 = dim ker,
+        # H1 = dim coker directly. Verified stable across two window sizes
+        # so the result is not a truncation artifact (cf. the k=11,12 window
+        # false positives that appear only for too-small windows).
+        def _rank(rows, ncols):
+            m=[list(r) for r in rows]; r=0
+            for col in range(ncols):
+                piv=next((i for i in range(r,len(m)) if m[i][col]!=0),None)
+                if piv is None: continue
+                m[r],m[piv]=m[piv],m[r]
+                inv=F(1)/m[r][col]; m[r]=[x*inv for x in m[r]]
+                for i in range(len(m)):
+                    if i!=r and m[i][col]!=0:
+                        f=m[i][col]; m[i]=[a-f*b for a,b in zip(m[i],m[r])]
+                r+=1
+                if r==len(m): break
+            return r
+        def _cohomology(k,N):
+            ncols=2*(N+1); m_lo=min(0,k-N); m_hi=max(N,k)
+            rows={d:[F(0)]*ncols for d in range(m_lo,m_hi+1)}
+            for j in range(N+1):
+                rows[j][j]+=F(1)                 # a_j contributes +z^j
+                rows[k-j][(N+1)+j]+=F(-1)         # b_j contributes -z^(k-j)
+            rk=_rank(list(rows.values()),ncols)
+            return ncols-rk, len(rows)-rk          # (h0=dim ker, h1=dim coker)
+        for k in range(-8,9):
+            h0a,h1a=_cohomology(k,20)
+            h0b,h1b=_cohomology(k,26)
+            self.assertEqual((h0a,h1a),(h0b,h1b),f"window-unstable cohomology at k={k}")
+            c=cech_dimensions(k)
+            self.assertEqual(h0a,c['h0_dimension'],f"independent H0 != closed form at k={k}")
+            self.assertEqual(h1a,c['h1_dimension'],f"independent H1 != closed form at k={k}")
+            self.assertEqual(h0a-h1a,k+1,f"independent chi != k+1 at k={k}")
+
     def test_fake_source_degree_and_float_inputs_blocked(self):
         for k in (1.0,'2',None,10**6):
             with self.assertRaises(DualChartError):cech_dimensions(k)
