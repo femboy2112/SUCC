@@ -723,6 +723,19 @@ jobs:
           assert x["archimedean_prime_or_gamma_identified"] is False
           assert x["RH_implied"] is False
           PY
+      - name: Exact logistic inverse-tree observer SUCC
+        run: |
+          python scripts/logistic_observer_tree_probe.py > "$RUNNER_TEMP/logistic-observer-tree.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          actual=json.loads((Path(os.environ["RUNNER_TEMP"])/"logistic-observer-tree.json").read_text())
+          expected=json.loads(Path("research/2026-10-12/LOGISTIC_TREE_RECEIPT.json").read_text())
+          assert actual == expected, "Logistic tree deterministic receipt drift"
+          assert actual["physical_carrier_authenticated"] is False
+          assert actual["RH_claimed"] is False
+          assert actual["generic_r_bifurcation_model_covered"] is False
+          PY
       - name: Persist verified finite evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -735,6 +748,7 @@ jobs:
             ${{ runner.temp }}/prime-source.json
             ${{ runner.temp }}/shared-carrier-boundary.json
             ${{ runner.temp }}/dual-boundary-observers.json
+            ${{ runner.temp }}/logistic-observer-tree.json
             ${{ runner.temp }}/semantic-data-processing.json
             ${{ runner.temp }}/observer-trap.json
             ${{ runner.temp }}/absorbing-frontier.json
