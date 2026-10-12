@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-12. **Based on:** `main@7c8b59cf3685ddd92c937b0eb0dc5b92ac1cd239` and the unmerged, green [diagonal tower PR #26](https://github.com/femboy2112/SUCC/pull/26), `a737061cf880292261a63a703b73eb3f198a6600`.
 
-**Mathematical status:** LG1–LG6 are **CLASSICAL / PROVED LOCAL** consequences of elementary graph cohomology, groupoids, sheaf descent and finite exact algebra, here made executable as source-checked SUCC interfaces. LG7 is **EXACT FINITE COMPUTATION**. LG8 is a **relative oracle lower bound**. These statements are **not** claims of academic priority, a new Gaussian-moat existence proof, a physical source authentication system, quantum entanglement, physical supertasks, or a proof of RH.
+**Mathematical status:** LG1–LG6 are **CLASSICAL / PROVED LOCAL** consequences of elementary graph cohomology, groupoids, sheaf descent and finite exact algebra, here made executable as source-checked SUCC interfaces. LG7 is **EXACT FINITE COMPUTATION / adversarial validation**; LG5 contains a separately qualified **oracle-relative lower bound**. These statements are **not** claims of academic priority, a new Gaussian-moat existence proof, a physical source authentication system, quantum entanglement, physical supertasks, or a proof of RH.
 
 ## 0. The object actually requested
 
@@ -169,4 +169,4 @@ Validation consists of: explicit symbolic proofs LG1–LG6; exact integer/finite
 
 - Classical Yoneda and naturality: Emily Riehl, [*Category Theory in Context*](https://math.jhu.edu/~eriehl/context.pdf); Tom Leinster, [*Basic Category Theory*](https://arxiv.org/abs/1612.09375).
 - Classical graph voltage/covering viewpoint: references and exact attribution in [SUCC moat audit](../../docs/GAUSSIAN_MOAT_SWARM_AUDIT_2026-10-12.md), including Gross–Tucker and Bass.
-- OpenAI, [*Bounded-Step Walks on Gaussian Primes*](https://github.com/openai/math/tree/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026), unrefereed external arithmetic claim; not used as a premise in LG1–LG8 local proofs.
+- OpenAI, [*Bounded-Step Walks on Gaussian Primes*](https://github.com/openai/math/tree/fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb/preprints/Bounded-Step-Walks-on-Gaussian-Primes-September-26-2026), unrefereed external arithmetic claim; not used as a premise in LG1–LG7 results.
