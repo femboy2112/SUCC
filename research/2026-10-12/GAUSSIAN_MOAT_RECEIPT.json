@@ -1,0 +1,282 @@
+{
+  "all_step_existence_independently_proved": false,
+  "cases": [
+    {
+      "all_step_existence_used_by_verifier": false,
+      "finite_defects": {
+        "adjacent_periodic_components": 12,
+        "coarse_degree_bound": 20,
+        "exception_cluster_sizes": [
+          16
+        ],
+        "exceptions": 4,
+        "maximum_component_size": 16,
+        "periodic_maximum": 1,
+        "status": "EXACT_PERIODIC_PLUS_FINITE_DEFECT_BOUND"
+      },
+      "period": 2,
+      "prime_bound_is_optimal": false,
+      "prime_component_upper_bound": 16,
+      "rational_primes": [
+        2
+      ],
+      "sieve": {
+        "all_walks_terminate": false,
+        "component_size_histogram": {
+          "1": 2
+        },
+        "components": 2,
+        "directed_edges": 0,
+        "graph_digest": "bf10ae61f5ad60e9832f7825cfd55b31b9fded1e97afd2faad6c5e069c6f6665",
+        "maximum_component_size": 1,
+        "scope": "all integer translates of this exact periodic graph",
+        "status": "EXACT_PERIODIC_CONFINEMENT",
+        "vertices": 2
+      },
+      "status": "CERTIFIED_GAUSSIAN_PRIME_COMPONENT_UPPER_BOUND",
+      "step_squared": 1
+    },
+    {
+      "displacement": [
+        -5,
+        0
+      ],
+      "gaussian_prime_walk_certified": false,
+      "period": 5,
+      "period_translation": [
+        -1,
+        0
+      ],
+      "rational_primes": [
+        5
+      ],
+      "scope": "an infinite component of the periodic graph only",
+      "status": "EXACT_PERIODIC_TRANSLATION",
+      "step_squared": 1,
+      "vertices": 16,
+      "word_length": 7
+    },
+    {
+      "all_step_existence_used_by_verifier": false,
+      "finite_defects": {
+        "adjacent_periodic_components": 9,
+        "coarse_degree_bound": 37136,
+        "exception_cluster_sizes": [
+          52
+        ],
+        "exceptions": 16,
+        "maximum_component_size": 580,
+        "periodic_maximum": 580,
+        "status": "EXACT_PERIODIC_PLUS_FINITE_DEFECT_BOUND"
+      },
+      "period": 65,
+      "prime_bound_is_optimal": false,
+      "prime_component_upper_bound": 580,
+      "rational_primes": [
+        5,
+        13
+      ],
+      "sieve": {
+        "all_walks_terminate": false,
+        "component_size_histogram": {
+          "1": 24,
+          "2": 12,
+          "3": 76,
+          "4": 83,
+          "7": 4,
+          "10": 4,
+          "14": 8,
+          "20": 8,
+          "21": 4,
+          "26": 4,
+          "28": 1,
+          "32": 4,
+          "35": 4,
+          "44": 4,
+          "58": 2,
+          "580": 1
+        },
+        "components": 243,
+        "directed_edges": 4356,
+        "graph_digest": "bf871fa4ee00f4ec5b3b1f7036e29a580668b65c51007c8aada9beb8ff5c1309",
+        "maximum_component_size": 580,
+        "scope": "all integer translates of this exact periodic graph",
+        "status": "EXACT_PERIODIC_CONFINEMENT",
+        "vertices": 2304
+      },
+      "status": "CERTIFIED_GAUSSIAN_PRIME_COMPONENT_UPPER_BOUND",
+      "step_squared": 1
+    },
+    {
+      "displacement": [
+        -65,
+        0
+      ],
+      "gaussian_prime_walk_certified": false,
+      "period": 65,
+      "period_translation": [
+        -1,
+        0
+      ],
+      "rational_primes": [
+        5,
+        13
+      ],
+      "scope": "an infinite component of the periodic graph only",
+      "status": "EXACT_PERIODIC_TRANSLATION",
+      "step_squared": 2,
+      "vertices": 2304,
+      "word_length": 65
+    },
+    {
+      "all_step_existence_used_by_verifier": false,
+      "finite_defects": {
+        "adjacent_periodic_components": 5,
+        "coarse_degree_bound": 92820,
+        "exception_cluster_sizes": [
+          164
+        ],
+        "exceptions": 20,
+        "maximum_component_size": 580,
+        "periodic_maximum": 580,
+        "status": "EXACT_PERIODIC_PLUS_FINITE_DEFECT_BOUND"
+      },
+      "period": 130,
+      "prime_bound_is_optimal": false,
+      "prime_component_upper_bound": 580,
+      "rational_primes": [
+        2,
+        5,
+        13
+      ],
+      "sieve": {
+        "all_walks_terminate": false,
+        "component_size_histogram": {
+          "1": 48,
+          "2": 24,
+          "3": 152,
+          "4": 166,
+          "7": 8,
+          "10": 8,
+          "14": 16,
+          "20": 16,
+          "21": 8,
+          "26": 8,
+          "28": 2,
+          "32": 8,
+          "35": 8,
+          "44": 8,
+          "58": 4,
+          "580": 2
+        },
+        "components": 486,
+        "directed_edges": 8712,
+        "graph_digest": "071c541e43e71f3f24d2592bc96331def4561d5804defb6b217ecc7219cb3934",
+        "maximum_component_size": 580,
+        "scope": "all integer translates of this exact periodic graph",
+        "status": "EXACT_PERIODIC_CONFINEMENT",
+        "vertices": 4608
+      },
+      "status": "CERTIFIED_GAUSSIAN_PRIME_COMPONENT_UPPER_BOUND",
+      "step_squared": 2
+    },
+    {
+      "all_step_existence_used_by_verifier": false,
+      "finite_defects": {
+        "adjacent_periodic_components": 5,
+        "coarse_degree_bound": 13656,
+        "exception_cluster_sizes": [
+          104
+        ],
+        "exceptions": 24,
+        "maximum_component_size": 104,
+        "periodic_maximum": 71,
+        "status": "EXACT_PERIODIC_PLUS_FINITE_DEFECT_BOUND"
+      },
+      "period": 390,
+      "prime_bound_is_optimal": false,
+      "prime_component_upper_bound": 104,
+      "rational_primes": [
+        2,
+        3,
+        5,
+        13
+      ],
+      "sieve": {
+        "all_walks_terminate": false,
+        "component_size_histogram": {
+          "1": 1440,
+          "2": 1092,
+          "3": 1736,
+          "4": 1018,
+          "5": 192,
+          "6": 224,
+          "7": 104,
+          "8": 96,
+          "9": 232,
+          "10": 176,
+          "11": 136,
+          "12": 130,
+          "13": 88,
+          "14": 32,
+          "15": 72,
+          "16": 88,
+          "17": 96,
+          "18": 32,
+          "19": 56,
+          "20": 16,
+          "21": 32,
+          "25": 40,
+          "27": 32,
+          "28": 16,
+          "29": 16,
+          "32": 8,
+          "37": 8,
+          "50": 4,
+          "51": 16,
+          "71": 8
+        },
+        "components": 7236,
+        "directed_edges": 60984,
+        "graph_digest": "2e4fa84ab4f6afa9583f8986b25c104df25ef35996e85e816cfdf2d9b53da6fa",
+        "maximum_component_size": 71,
+        "scope": "all integer translates of this exact periodic graph",
+        "status": "EXACT_PERIODIC_CONFINEMENT",
+        "vertices": 36864
+      },
+      "status": "CERTIFIED_GAUSSIAN_PRIME_COMPONENT_UPPER_BOUND",
+      "step_squared": 2
+    },
+    {
+      "displacement": [
+        0,
+        130
+      ],
+      "gaussian_prime_walk_certified": false,
+      "period": 130,
+      "period_translation": [
+        0,
+        1
+      ],
+      "rational_primes": [
+        2,
+        5,
+        13
+      ],
+      "scope": "an infinite component of the periodic graph only",
+      "status": "EXACT_PERIODIC_TRANSLATION",
+      "step_squared": 4,
+      "vertices": 4608,
+      "word_length": 82
+    }
+  ],
+  "finite_certificates_depend_on_external_existence": false,
+  "new_optimal_gaussian_bounds_claimed": false,
+  "scope": "exact bounded inputs plus the proved periodic-lift theorem",
+  "search_statuses": [
+    "CERTIFICATE_FOUND",
+    "UNRESOLVED_PRIME_LIMIT",
+    "UNRESOLVED_RESOURCE_LIMIT"
+  ],
+  "status": "EXACT_GAUSSIAN_MOAT_CERTIFICATE_CONTROLS"
+}

@@ -56,6 +56,7 @@ This is an established identification of the completed arithmetic Weil distribut
 20. **[Source provenance](provenance/README.md)** — immutable historical archive and machine-verifiable Git blob manifest.
 21. **[RH outbound handoffs](docs/RH_HANDOFF.md)** — a reproducible contract for exporting RH-bearing discoveries to the RH repos.
 22. **[Integration audit (2026-10-11)](docs/INTEGRATION_AUDIT_2026-10-11.md)** — consolidation record for research PRs #6–#22: validation receipts, three-bearing adversarial-audit findings, corrections applied, and open follow-ups.
+23. **[Gaussian moats and finite path certificates](research/2026-10-12/GAUSSIAN_MOAT_SUCC.md)** — audit of OpenAI's bounded-step Gaussian-prime theorem, exact periodic confinement/translation alternatives, transported certificates and finite exceptions; [information transport theorems](research/2026-10-12/ENTROPY_TRANSPORT_THEOREMS.md) simplify one common-law estimate while preserving the all-step arithmetic dependency.
 
 ## Run it
 
@@ -85,6 +86,10 @@ python scripts/zeta_minus_one_transport_probe.py
 python scripts/residue_one_arch_probe.py
 python scripts/clock_mahler_interpolation_probe.py
 python scripts/proto_succ_variable_unit_probe.py
+python scripts/gaussian_moat_probe.py
+python scripts/gaussian_moat_probe.py --verify research/2026-10-12/GAUSSIAN_P2_5_13_D2_CERTIFICATE.json
+python scripts/entropy_transport_probe.py
+python scripts/independent_gaussian_lift_audit.py
 ~~~
 
 The package name is **observational_succ**. No runtime dependency on the original RH repository is required.
@@ -119,6 +124,8 @@ The package name is **observational_succ**. No runtime dependency on the origina
 | Adaptive original-source proof planning | adaptive_proof_policy | Complete finite AND/OR belief-state fixed point on (original source,current carrier) pairs, exact minimum worst-case observation depth, destructive no-go and strict adaptive-vs-fixed short-policy controls |
 | Genuine operational Yoneda and proof-policy descent | operational_yoneda_descent | Real source-indexed bounded belief-path category and natural transformations, exact restricted Yoneda context-separation lamps, concrete→abstract source/claim/action coalgebra morphism, finite labeled bisimulation and transported optimal adaptive proofs |
 | Arithmetic Yoneda source identity / prime-clock quotient | prime_clock_yoneda | Authentic p-power ring reduction commuting with SUCC shifts and true-prime FUCC dilations; nonzero fine address defect vanishing at coarse precision, exactly transported quotient-claim proof ranks and a separate arithmetic source-signature test for false prime aliases |
+| Periodic observation and universal path certificates | periodic_path_certificates | Exact integer potentials or nonzero translation witnesses, source refinement, finite exceptional attachments and Gaussian-prime upper bounds for certified sieves; all-step search totality imports the published existence theorem |
+| Shared information and moving observer states | entropy_transport | Exact rational joint laws and functional checks; shared-deficit identity, sharp two-entropy frame transport, charged updates and receiver-alphabet-independent continuity; numerical entropy values remain diagnostics |
 | Optional RH application bridges | gamma_interferometer, balanced_theta_li, hasse_theta_seam, source_prime_certificates, dirichlet_lambert | Gamma/prime source interfaces, Li-index windows, certified prime-only Suzuki bounds |
 
 The imported RH experiments remain available to audit, but the future general theory is **not defined by RH**.

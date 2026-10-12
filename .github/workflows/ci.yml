@@ -36,6 +36,33 @@ jobs:
         run: python scripts/verify_provenance.py
       - name: Run all mathematical, logic, quantum, source and hostile tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Verify periodic Gaussian source and replay saved confinement certificate
+        run: |
+          python scripts/gaussian_moat_probe.py --output "$RUNNER_TEMP/gaussian-moat.json"
+          python scripts/gaussian_moat_probe.py --verify research/2026-10-12/GAUSSIAN_P2_5_13_D2_CERTIFICATE.json --output "$RUNNER_TEMP/gaussian-certificate-replay.json"
+      - name: Audit direct lattice components and shared information controls
+        run: |
+          python scripts/independent_gaussian_lift_audit.py > "$RUNNER_TEMP/gaussian-lift-audit.json"
+          python scripts/entropy_transport_probe.py > "$RUNNER_TEMP/entropy-transport.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root = Path(os.environ["RUNNER_TEMP"])
+          audit = json.loads((root / "gaussian-lift-audit.json").read_text())
+          model = json.loads((root / "gaussian-moat.json").read_text())
+          entropy = json.loads((root / "entropy-transport.json").read_text())
+          for direct in audit["cases"]:
+              case = next(c for c in model["cases"]
+                          if c["rational_primes"] == direct["rational_primes"]
+                          and c["step_squared"] == direct["step_squared"])
+              assert direct["component_size_histogram"] == case["sieve"]["component_size_histogram"]
+              assert direct["exception_cluster_sizes"] == case["finite_defects"]["exception_cluster_sizes"]
+              assert direct["enlarged_maximum"] == case["prime_component_upper_bound"]
+              assert direct["all_direct_component_queues_exhausted"] is True
+          assert entropy["uncharged_update_rejected"] is True
+          assert entropy["formal_proof_or_interval_certificate"] is False
+          assert entropy["sharp_mod5_two_H_control"]["loss_bits"] == 2.0
+          PY
       - name: Prove observer-to-semantic distinguishability contraction
         run: |
           python scripts/semantic_data_processing_probe.py > "$RUNNER_TEMP/semantic-data-processing.json"
