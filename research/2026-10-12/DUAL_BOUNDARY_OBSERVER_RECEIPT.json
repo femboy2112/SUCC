@@ -35,6 +35,59 @@
       "5/4"
     ]
   },
+  "riemann_sphere_dual_chart": {
+    "actual_archimedean_arithmetic_identified": false,
+    "k2_infinity_chart": {
+      "0": "3",
+      "1": "2",
+      "2": "1"
+    },
+    "k2_zero_chart": {
+      "0": "1",
+      "1": "2",
+      "2": "3"
+    },
+    "k_minus2_obstruction": {
+      "-1": "1"
+    },
+    "rr_dimensions": {
+      "-1": {
+        "chi": 0,
+        "h0": 0,
+        "h1": 0
+      },
+      "-2": {
+        "chi": -1,
+        "h0": 0,
+        "h1": 1
+      },
+      "-3": {
+        "chi": -2,
+        "h0": 0,
+        "h1": 2
+      },
+      "0": {
+        "chi": 1,
+        "h0": 1,
+        "h1": 0
+      },
+      "1": {
+        "chi": 2,
+        "h0": 2,
+        "h1": 0
+      },
+      "2": {
+        "chi": 3,
+        "h0": 3,
+        "h1": 0
+      },
+      "3": {
+        "chi": 4,
+        "h0": 4,
+        "h1": 0
+      }
+    }
+  },
   "shared_nonconstant_witness": {
     "components": 2,
     "covariance": "1/4",

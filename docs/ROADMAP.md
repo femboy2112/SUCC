@@ -347,6 +347,9 @@ Every boundary E tower samples one declared carrier; the actual source object an
 **Next noncircular theorem:** Build a *source-justified* dual observation filtration with a uniform estimate E[(T-E[T|F_n])²]→0 and its dual, from actual feasible probes/prime arithmetic. Its fusion must operate on union of original-source receipts rather than naive projection composition, and its coupling/observability must not disappear in long-collar/large-conductor limits. Need verified base-change for genuinely state-changing carrier actions. No RH/Archimedean/physical holography claim.
 
 
+**Dual infinity / genus-zero test (DB7):** The two chart observatories on P1 over Q, w=1/z, are explicitly glued by the line-bundle transition f0=z^k f_infinity. Exact H0 basis, Cech H1 obstruction, and Euler characteristic k+1 are independently checked in finite Laurent-polynomial arithmetic. The next hard task is to derive the analogous transition object from a GENUINE arithmetic source, not to draw identical circles and assume the real place is identified. See [dual-boundary dossier](../research/2026-10-12/DUAL_BOUNDARY_OBSERVER_CORRELATION.md).
+
+
 ## Chaotic SUCC: model-stable E and incompressible moving frontiers
 
 The exact r=4 logistic/tent offshoot builds a source-typed inverse-branch tree, stationary conditional polynomial transfer L, and a dual E source join. For each fixed polynomial g, L^n g is exactly constant once 2^n > deg g; the polynomial quotient is *not* a lossless deterministic factor, and the moving Koopman family L^n U^n x = x retains all dependence at matching depth. See [CT1–CT7](../research/2026-10-12/CHAOTIC_SUCC_OBSERVER_TREE.md), code `observational_succ/logistic_observer_tree.py`, exact seeded tests, JSON receipt and ledger O321–O332.

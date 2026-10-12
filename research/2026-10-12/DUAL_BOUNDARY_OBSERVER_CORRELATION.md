@@ -143,3 +143,59 @@ For a rigorously nontrivial **Archimedean** version of this program one must con
 **What it really gains:** a precise conditional route from two E-tower reconstructions of a common *nonconstant target* to objectively positive correlation of their resulting estimates, and a separate meeting-in-the-middle theorem with flux-matched gluing. **What fails:** same carrier, equal marginal distributions, matching interface values, successive projections, or existence of two infinite ends do not, separately, imply global identity or correlation.
 
 **Next frontier:** A source-derived *joint instrument/coupling* for dynamically updated dual carrier boundaries; a proof of uniform observability/mixing along dual E refinements; quantitative spectral lower bounds preventing transmission from collapsing at infinity; cyclic/Čech boundary monodromy for nontrivial circle bundles; and only then an honest attempt to identify anything with the arithmetic Archimedean factor or completed Weil distribution. No finite tests are a proof of these global bridges.
+
+## DB7 — The dual-circle experiment is exactly genus-zero Riemann–Roch
+
+This is the mathematically closest *nontrivial* match to the maintainer's two opposed circles, one aimed at the origin and one at infinity. It also isolates a failure of the demand for raw equality at both boundaries: a nontrivial global field may need **a nontrivial transition law**, not identical local expressions.
+
+Work algebraically over `Q` (or any field `K`), with the standard two affine charts of the projective line `P¹_K`:
+
+- `U_0=Spec K[z]`, the neighborhood of finite points;
+- `U_∞=Spec K[w]`, where `w=z^{-1}`;
+- `U_0 ∩ U_∞=Spec K[z,z^{-1}]`, the multiplicative group (`C× ≅ R×S¹` after base-changing to `C` and taking `z=e^{t+iθ}`).
+
+Fix integer twist `k`. Define the line bundle `O(k)` by transition
+
+\[
+\boxed{f_0(z)=z^k f_\infty(z^{-1})}\qquad(z\neq0).\tag{DB7a}
+\]
+
+The two E observer nets locally know `f_0∈K[z]` and `f_∞∈K[w]`; compatible reports must commute with this exact transition, not with the identity. Global sections form
+
+\[
+H^0(P^1,O(k))=K[z]\cap z^k K[z^{-1}]
+=\operatorname{span}_K\{z^j:0\le j\le k\},
+\]
+
+with empty span for `k<0`. Thus
+
+\[
+\boxed{h^0(P^1,O(k))=\max(k+1,0).}\tag{DB7b}
+\]
+
+For sheaf cohomology, the two chart opens and overlap are **affine** and the line bundle is quasi-coherent, so this affine two-chart Čech complex computes its cohomology. A general overlap cocycle is a Laurent polynomial in `K[z,z^{-1}]`. Two local cochains may change it by `f_0-z^k f_∞`, spanning exactly all Laurent powers `j≥0` and `j≤k` respectively. The only unremovable modes are those with `k<j<0`. Therefore
+
+\[
+H^1(P^1,O(k))\cong
+K[z,z^{-1}]/(K[z]+z^kK[z^{-1}]),
+\]
+
+with basis `{z^(k+1),...,z^(-1)}` if `k≤-2` and empty otherwise, so
+
+\[
+\boxed{h^1(P^1,O(k))=\max(-k-1,0).}\tag{DB7c}
+\]
+
+Subtract the two exact counts:
+
+\[
+\boxed{\chi(P^1,O(k))=h^0-h^1=k+1.}\tag{DB7d}
+\]
+
+This recovers **Riemann–Roch in genus zero** using nothing but two opposed chart observers, exact transition-arrow compatibility, and a count of obstruction modes. It is a classical algebraic argument and is NOT a scholarly-priority claim. Nevertheless it is *load-bearing* rather than an analogy: every arrow, overlap, global section and unremovable obstruction is an actual algebraic object.
+
+**Constructive examples:** for `k=2`, `f_0(z)=1+2z+3z²` matches `f_∞(w)=3+2w+w²`. For `k=0`, only constants are globally regular in both charts, despite each separately admitting arbitrary polynomials. For `k=-2`, there are zero nonzero global sections, but an overlap cocycle `z^{-1}` is not a coboundary and represents one genuine obstruction. For `k=-3` there are two independent such obstructions, `z^{-2}` and `z^{-1}`. These are checked exactly by the new `dual_chart_riemann_roch.py` Laurent-coefficient interface with 9 additional adversarial tests.
+
+**Physical and arithmetic firewall:** the analytic complex place `C` and its multiplicative cylinder are legitimate geometric interpretations. However the projective line, its degree `k`, and its line-bundle transition are DECLARED geometry. Nothing constructs them from actual Euler prime jets, Archimedean Gamma factors, conductor/half-density, or a source-derived completed Weil form. A fully arithmetic transfer would need a independently defined source correspondence preserving local sections, transition factors, and the global positivity/duality law on the correct completed test-function domain; one cannot replace this missing functor by the word holography.
+
+**Immediate next research target:** Make the E-tower *generate* transition `z^k` from independently certified source geometry, then gluing gives global sections/obstructions. The next nontrivial arithmetic analogue should identify a genuine line bundle or sheaf on the relevant arithmetic space, with correct finite/Archimedean gluing—not simply a Gaussian-prime loop or a harmonic resistor analogy.

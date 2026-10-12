@@ -13,6 +13,8 @@ from observational_succ.dual_boundary_observers import (
     DualFiniteTower, TwoSidedHarmonicCarrier,
     unit_path_two_port, symmetric_binary_chain_end_correlation)
 from observational_succ.shared_carrier_descent import SharedCarrierGraph
+from observational_succ.dual_chart_riemann_roch import (
+    cech_dimensions, dual_chart_from_global, cech_reduce)
 
 
 def report():
@@ -49,7 +51,20 @@ def report():
     markov=symmetric_binary_chain_end_correlation(12,F(1,4))
     assert path['effective_conductance']==F(1,12)
     assert markov['endpoint_covariance']==F(1,4096)
+    rr={str(k):cech_dimensions(k) for k in (-3,-2,-1,0,1,2,3)}
+    section=dual_chart_from_global(2,{0:F(1),1:F(2),2:F(3)})
+    obstruction=cech_reduce(-2,{-1:F(1)})
+    assert all(x['genus_zero_rr_verified'] for x in rr.values())
+    assert section['infinity_chart']=={0:F(3),1:F(2),2:F(1)}
+    assert obstruction['obstruction_class']=={-1:F(1)}
     return {
+      'riemann_sphere_dual_chart':{
+          'rr_dimensions':{k:{'h0':v['h0_dimension'],'h1':v['h1_dimension'],
+                               'chi':v['euler_characteristic']} for k,v in rr.items()},
+          'k2_zero_chart':{str(k):str(v) for k,v in section['zero_chart'].items()},
+          'k2_infinity_chart':{str(k):str(v) for k,v in section['infinity_chart'].items()},
+          'k_minus2_obstruction':{str(k):str(v) for k,v in obstruction['obstruction_class'].items()},
+          'actual_archimedean_arithmetic_identified':False},
       'status':'PROVED LOCAL conditional classical models; exact Fraction calculations',
       'common_fundamental_carrier_physically_authenticated':False,
       'archimedean_prime_or_gamma_identified':False,
