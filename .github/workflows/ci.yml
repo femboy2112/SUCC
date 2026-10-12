@@ -757,6 +757,27 @@ jobs:
           assert d["analytic_functional_equation_proved_in_code"] is False
           assert d["rh_proved"] is False
           PY
+      - name: Source-aware dynamic Fourier and virtual-zeta zeros
+        run: |
+          python scripts/dynamic_fourier_virtual_zeros_probe.py > "$RUNNER_TEMP/dynamic-fourier-virtual-zeros.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          r=json.loads((Path(os.environ["RUNNER_TEMP"])/"dynamic-fourier-virtual-zeros.json").read_text())
+          assert r["dft_refinement_square"] is True
+          assert r["alias_same_coarse_report"] is True
+          assert r["alias_different_full_source"] is True
+          assert r["alias_hidden_energy"]=="2"
+          assert r["finite_tower_step_debts"]==["1/2","1/4"]
+          assert r["finite_tower_total_debt"]=="3/4"
+          assert r["coarse_observer_knows_debt_from_own_report"] is False
+          assert r["counterfactual_completion"]["Mellin_C2"]=="413/188"
+          assert r["counterfactual_completion"]["zero_classification"]=="EXTRA_OFFLINE_ZEROS_INSIDE_OPEN_CRITICAL_STRIP"
+          assert r["virtual_zeros_initially_possible"] is True
+          assert r["virtual_zeros_after_canonical_probe"] is False
+          assert r["virtual_zeros_after_noncanonical_probe"] is True
+          assert r["full_adelic_fourier_or_RH_proved"] is False
+          PY
       - name: Persist verified finite evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -768,6 +789,7 @@ jobs:
             ${{ runner.temp }}/ordinal.json
             ${{ runner.temp }}/prime-source.json
             ${{ runner.temp }}/shared-carrier-boundary.json
+            ${{ runner.temp }}/dynamic-fourier-virtual-zeros.json
             ${{ runner.temp }}/diagonal-adelic-zeta.json
             ${{ runner.temp }}/dual-boundary-observers.json
             ${{ runner.temp }}/semantic-data-processing.json
