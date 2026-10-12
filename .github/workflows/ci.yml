@@ -654,6 +654,29 @@ jobs:
           assert x["fake_composite_euler_jet_admitted"] is False
           assert x["RH_claimed"] is False
           PY
+      - name: Exact Yoneda local-global descent and independent Gaussian E tower
+        run: |
+          python scripts/local_global_descent_probe.py > "$RUNNER_TEMP/local-global-descent.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          r=json.loads((Path(os.environ["RUNNER_TEMP"])/"local-global-descent.json").read_text())
+          g=r["gaussian"]
+          assert r["yes_triangular_gluing"]=="GLUED"
+          assert r["no_triangular_gluing"]=="OBSTRUCTED"
+          assert abs(r["actual_source_negative_displacement"][0])==3
+          assert r["s3_noncommutative_status"]=="OBSTRUCTED" and r["s3_abelian_sign"]==1
+          assert g["period"]==65 and g["vertices"]==2304 and g["directed_darts"]==4356
+          assert g["connected_components"]==243
+          assert g["fundamental_cycles_in_dart_presentation"]==2295
+          assert g["local_independent_charts"]==462 and g["overlap_conditions"]==2280
+          assert g["largest_component"]==580 and g["E_epistemic_macro_succ"]==1
+          assert g["constructed_global_potential_only_at_E"] is True
+          assert r["gaussian_all_D_proved"] is False
+          assert r["physical_instant_succ"] is False
+          assert r["fully_independent_source_authentication"] is False
+          PY
+
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
