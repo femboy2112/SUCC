@@ -49,6 +49,17 @@ The \(\subseteq\) direction follows because every proof needs only finitely many
 
 **SUCC consequence:** E's final one-step epistemic assimilation can absorb an arbitrarily deep **finite** proof certificate once it arrives, but the certificate had to be physically transmitted or mathematically constructed, and its rule authority remains independently sourced.
 
+### CT3b. Growing knowledge *and* growing proof language (CLASSICAL / PROVED LOCAL)
+
+Let \(T_n\subseteq T_{n+1}\) be nested collections of **sound finitary axioms and inference rules**, and let \(E_n\subseteq E_{n+1}\) be nested authenticated observations on a **common source/basis interpretation**. Then
+
+\[
+\boxed{\operatorname{Cn}_{\bigcup_nT_n}(\bigcup_nE_n)
+=\bigcup_n\operatorname{Cn}_{T_n}(E_n).}\tag{CT3b}
+\]
+
+**Proof:** each finite proof uses finitely many rule/axiom instances and finitely many evidence records. Nestedness places all those supports within one finite joint stage. Conversely any finite-stage proof is also a proof in the union. This is exactly the user's idea of dispatching towers as **both empirical knowledge and reasoning methods expand**. `growing_theory_checkpoints` implements finite steps with separately checked monotone theory extension: the same reading can justify a new conclusion at checkpoint 2 after new valid reasoning rules arrive, without another physical observation. Retracting a rule or changing source/basis without a separately certified semantics-preserving map invalidates that monotone transport and is rejected. Even appending a *syntactically valid* new rule requires source-relative semantic soundness; a metadata ID cannot attest it.
+
 ## CT4. Reasoning-order confluence has a precise logical scope (CLASSICAL / PROVED LOCAL)
 
 For a finite set of positive ground Horn implications \(P_1\wedge\cdots\wedge P_k\Rightarrow Q\), define the inflationary immediate consequence map

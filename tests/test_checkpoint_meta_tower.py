@@ -12,6 +12,7 @@ from observational_succ.checkpoint_meta_tower import (
     FiniteController, checkpoint_closure, proof_policy_checkpoint,
     verify_policy_tree, enumerate_action_words, certify_parallel_roots,
     nonmonotone_default_countermodel, meta_tower_demo, finite_source_soundness,
+    growing_theory_checkpoints,
 )
 
 
@@ -192,11 +193,38 @@ class MetaTowerTests(unittest.TestCase):
         self.assertFalse(audit["sound_relative_to_worlds"])
         self.assertEqual(audit["failing_axiom"],"outside-reality")
 
+    def test_lawful_growing_theory_can_complete_from_old_evidence(self):
+        a=HornTheory("carrier","basis",(),(GroundRule(("reading",),"known"),))
+        b=HornTheory("carrier","basis",(),(
+            GroundRule(("reading",),"known"),GroundRule(("known",),"target")))
+        packet=Report("r","carrier","basis",1,"floor-1","reading")
+        r=growing_theory_checkpoints((a,b),((packet,),()),
+                          trusted_event_ids=frozenset(("r",)),target="target")
+        self.assertEqual([x["target_certified"] for x in r],[False,True])
+        self.assertEqual([x["licensed_rule_count"] for x in r],[1,2])
+        self.assertFalse(r[-1]["source_semantics_authenticated"])
+
+    def test_retracting_rules_is_not_monotone_and_requires_revalidation(self):
+        a=HornTheory("source","stable",(),(GroundRule(("premise",),"conclusion"),))
+        b=HornTheory("source","stable",(),())
+        event=Report("r","source","stable",1,"observer","premise")
+        with self.assertRaisesRegex(MetaTowerError,"Nonmonotone"):
+            growing_theory_checkpoints((a,b),((event,),()),
+                          trusted_event_ids=frozenset(("r",)),target="conclusion")
+
+    def test_basis_upgrade_needs_commuting_transport_not_same_name(self):
+        a=HornTheory("source","version-a",(),())
+        b=HornTheory("source","version-b",(),())
+        with self.assertRaisesRegex(MetaTowerError,"base-change"):
+            growing_theory_checkpoints((a,b),((),()),
+                          trusted_event_ids=frozenset(),target="target")
+
     def test_end_to_end_meta_receipt(self):
         r=meta_tower_demo()
         self.assertEqual(r["destructive_full_order_enumeration"],"MODEL_CERTIFIED_NO_FINITE_POLICY")
         self.assertTrue(r["adaptive_succeeds_where_fixed_length_two_fails"])
         self.assertEqual(r["checkpoint_e_knowledge"],[{'index':1,'proved':False},{'index':2,'proved':True}])
+        self.assertEqual(r["rule_growth_from_old_evidence"],[False,True])
         self.assertFalse(r["physical_infinity_completed"])
         self.assertFalse(r["source_authentication_claimed"])
 

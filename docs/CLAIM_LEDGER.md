@@ -456,6 +456,11 @@ Use these labels:
 | O382 | The carrier-relative meta-observer alone constructs a completed zeta Gamma/Weil form or an RH positive-semidefinite theorem | UNVERIFIED | [CT12](../research/2026-10-12/CARRIER_RELATIVE_META_SUCC_AND_DOVETAIL.md): no genuine global arithmetic positivity or zero-location input; source bridge still missing |
 
 
+
+| O383 | With sound finitary theories T_n increasing by rule/axiom inclusion and source-consistent evidence E_n increasing, closure under the union of theories/evidence equals the union of finite checkpoint closures | CLASSICAL / PROVED LOCAL | [CT3b](../research/2026-10-12/CARRIER_RELATIVE_META_SUCC_AND_DOVETAIL.md): each finite proof uses finitely many eventual rule/evidence supports, indexed checkout; one earlier fact becomes newly provable when a licensed rule arrives |
+| O384 | A basis mutation or rule retraction can be silently treated as the same monotone E tower, preserving all earlier proofs without revalidation | REFUTED | [CT3b/CT4](../research/2026-10-12/CARRIER_RELATIVE_META_SUCC_AND_DOVETAIL.md): explicit source/basis-version error and nonmonotone rule-retraction fault; require verified source-changing base-change semantics |
+
+
 ## Adversarial suite
 
 Required falsifiers include: fake a(6) and delayed composite a(15); nonunit local parameter and wrong half-density; shifted log 2, synthetic Euler-blind sources, Davenport–Heilbronn versus matched genuine Hecke character; delayed halting versus looping program; forged proof rule; an extra unnamed element of a weak first-order domain; noncommuting quantum measurement orders; pointwise-positive but indefinite Gram; positive fake-geometry and discontinuous ω phase limit.

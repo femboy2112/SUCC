@@ -50,6 +50,8 @@ jobs:
           assert b["destructive_full_order_enumeration"] == "MODEL_CERTIFIED_NO_FINITE_POLICY"
           assert b["adaptive_succeeds_where_fixed_length_two_fails"] is True
           assert b["conditional_worst_case_depth"] == 2
+          assert b["rule_growth_from_old_evidence"] == [False,True]
+          assert b["rule_growth_requires_new_empirical_events"] is False
           assert b["checkpoint_e_knowledge"] == [{"index":1,"proved":False},{"index":2,"proved":True}]
           assert b["source_authentication_claimed"] is False and b["physical_infinity_completed"] is False
           assert a["RH_or_archimedean_identification_claimed"] is False and b["RH_claimed"] is False

@@ -208,6 +208,44 @@ def checkpoint_closure(theory: HornTheory, deliveries: tuple[tuple[Report, ...],
     return tuple(records)
 
 
+def growing_theory_checkpoints(theories: tuple[HornTheory, ...],
+                               deliveries: tuple[tuple[Report, ...], ...],
+                               *, trusted_event_ids: frozenset[str], target: str) -> tuple[dict, ...]:
+    """Monotone knowledge AND monotone rule growth with one stable source/basis.
+
+    Theory upgrades must extend BOTH the previous axiom and inference-rule
+    sets. A retracted rule, forged basis change, or shifted source is NOT a
+    monotone refinement: the old proof must be revalidated as a new branch.
+    The semantic soundness of added axioms/rules remains a SEPARATE premise.
+    """
+    if (not theories or type(theories) is not tuple or len(theories)!=len(deliveries)
+            or any(not isinstance(t,HornTheory) for t in theories)):
+        raise MetaTowerError("One complete declared model at each checkpoint")
+    original=theories[0]
+    for old,new in zip(theories,theories[1:]):
+        if (new.source_id,new.basis_id)!=(original.source_id,original.basis_id):
+            raise MetaTowerError("Revised semantic basis requires an explicit base-change proof")
+        if not set(old.axioms)<=set(new.axioms) or not set(old.rules)<=set(new.rules):
+            raise MetaTowerError("Nonmonotone theory revision requires branch revalidation")
+    running=[]
+    results=[]
+    previous=set()
+    for index, batch in enumerate(deliveries):
+        running.append(batch)
+        checked=checkpoint_closure(theories[index],tuple(running),
+                    trusted_event_ids=trusted_event_ids,target=target)
+        current=checked[-1]
+        if not set(current["derived_atoms"])>=previous:
+            raise AssertionError("Monotone source/theory evidence cannot lose consequences")
+        results.append({"checkpoint":index+1,
+                        "target_certified":current["target_certified"],
+                        "newly_justified_atoms":tuple(sorted(set(current["derived_atoms"])-previous)),
+                        "licensed_rule_count":len(theories[index].rules),
+                        "source_semantics_authenticated":False})
+        previous=set(current["derived_atoms"])
+    return tuple(results)
+
+
 def enumerate_action_words(actions: tuple[str, ...], depth: int,
                            *, word_budget: int = 100000) -> tuple[tuple[str, ...], ...]:
     """A finite checkpoint enumerates exactly all words up to given depth.
@@ -460,6 +498,13 @@ def meta_tower_demo() -> dict:
             (Report("r2","one-shared-carrier","v1",2,"B","evidence-b"),))
     clock=checkpoint_closure(theory,inputs,trusted_event_ids=frozenset(("r1","r2")),
                              target="original-parity-established")
+    t0=HornTheory("one-shared-carrier","v1",(),(
+        GroundRule(("evidence-a",),"local-a"),))
+    t1=HornTheory("one-shared-carrier","v1",(),(
+        GroundRule(("evidence-a",),"local-a"),
+        GroundRule(("local-a",),"new-theorem")))
+    growing=growing_theory_checkpoints((t0,t1),(inputs[0],()),
+                  trusted_event_ids=frozenset(("r1",)),target="new-theorem")
     return {"status":"FINITE_META_OBSERVER_CHECKPOINTS_EXACT",
             "meta_tested_model_not_physical_source":True,
             "destructive_full_order_enumeration":destructive["status"],
@@ -470,6 +515,8 @@ def meta_tower_demo() -> dict:
             "conditional_worst_case_depth":contrast["verification"]["maximum_depth"],
             "checkpoint_e_knowledge":[{"index":x["checkpoint"],"proved":x["target_certified"]}
                                        for x in clock],
+            "rule_growth_from_old_evidence": [x["target_certified"] for x in growing],
+            "rule_growth_requires_new_empirical_events":False,
             "two_default_orderings_disagree": (
                 nonmonotone_default_countermodel(("A","B")) !=
                 nonmonotone_default_countermodel(("B","A"))),
