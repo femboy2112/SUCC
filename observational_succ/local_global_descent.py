@@ -391,9 +391,11 @@ def assemble_charts(graph: VoltageSource, charts: Iterable[Chart], *,
         # Report chart shifts in their original unanchored affine basis.
         # Globally gauge-fixed potentials are verified independently below.
     _verify_global(graph,total)
+    # Persist the *final normalized* chart gauges, not pre-normalization shifts.
+    final_gauges=tuple((c.name,sub(total[c.vertices[0]],dict(c.potentials)[c.vertices[0]]))
+                       for c in charts)
     return DescentResult(graph.digest,'GLUED',tuple((v,total[v]) for v in graph.vertices),
-                         tuple((c.name,shifts[c.name]) for c in charts),overlaps,None,
-                         len(charts),len(graph.darts))
+                         final_gauges,overlaps,None,len(charts),len(graph.darts))
 
 
 def _source_components(graph: VoltageSource) -> tuple[tuple[Vertex,...], ...]:
@@ -446,8 +448,8 @@ def verify_result(graph: VoltageSource, charts: tuple[Chart,...],result: Descent
             vals=dict(c.potentials)
             if len(c.vertices)==0:raise DescentError('Empty chart')
             gauge=sub(phi[c.vertices[0]],vals[c.vertices[0]])
-            if any(sub(phi[v],vals[v])!=gauge for v in c.vertices):
-                raise DescentError('Global potential not obtained by patchwise gauge')
+            if shifts[c.name]!=gauge or any(sub(phi[v],vals[v])!=gauge for v in c.vertices):
+                raise DescentError('Global potential not obtained by declared patch gauge')
     elif result.status=='OBSTRUCTED':
         if result.global_potential or result.chart_shifts or result.obstruction is None:
             raise DescentError('Malformed no-gluing witness')

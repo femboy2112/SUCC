@@ -78,6 +78,16 @@ class GluingTests(unittest.TestCase):
         ):
             with self.assertRaises(DescentError):verify_result(g,cs,replace(r,obstruction=corrupt))
 
+    def test_forged_normalized_chart_gauge_receipt_rejected(self):
+        g=cycle_graph(0)
+        cs=tuple(construct_chart(g,'chart'+e.key,(e.key,)) for e in g.darts)
+        r=assemble_charts(g,cs)
+        verify_result(g,cs,r)
+        fake=replace(r,chart_shifts=tuple((name,(shift[0]+1,) if i==0 else shift)
+                                          for i,(name,shift) in enumerate(r.chart_shifts)))
+        with self.assertRaisesRegex(DescentError,'declared patch gauge'):
+            verify_result(g,cs,fake)
+
     def test_missing_source_edge_and_vertex_refuse_global_claim(self):
         g=cycle_graph(0)
         cs=(construct_chart(g,'a',('a',)),construct_chart(g,'b',('b',)))
