@@ -75,6 +75,17 @@ instance inverseFamilyTopologicalSpace [TopologicalSpace O]
     (trace : S → W → O) : TopologicalSpace (InverseFamily trace) :=
   TopologicalSpace.induced InverseFamily.coordinate inferInstance
 
+/-- The actual bonding arrows are continuous in their native stage topologies. -/
+theorem stage_restriction_continuous [TopologicalSpace O]
+    (trace : S → W → O) (F G : List W) (inc : Includes F G) :
+    Continuous (restrictStage (trace := trace) inc) := by
+  unfold restrictStage
+  apply Continuous.subtype_mk
+  apply continuous_pi
+  intro a
+  let coordinate : {a : W // a ∈ G} := ⟨a.val, inc a.val a.property⟩
+  exact (continuous_apply coordinate).comp continuous_subtype_val
+
 /-- The elementary topological inverse-limit universal property: a
 continuous compatible cone has exactly one continuous factorization. -/
 theorem inverse_family_topological_limit_universal
@@ -190,6 +201,19 @@ theorem finite_alphabet_trace_closure_compact
     IsCompact (closure (range trace)) :=
   isClosed_closure.isCompact
 
+/-- Intrinsic profinite-space properties; no bundled category is assumed. -/
+theorem inverse_family_compact_hausdorff_totally_disconnected
+    [TopologicalSpace O] [DiscreteTopology O] [Finite O]
+    (trace : S → W → O) :
+    CompactSpace (InverseFamily trace) ∧ T2Space (InverseFamily trace) ∧
+      TotallyDisconnectedSpace (InverseFamily trace) := by
+  let h := inverseFamilyClosureHomeomorph trace
+  letI : CompactSpace {z : W → O // z ∈ closure (range trace)} :=
+    isCompact_iff_compactSpace.mp (finite_alphabet_trace_closure_compact trace)
+  refine ⟨h.symm.compactSpace, h.symm.t2Space, ?_⟩
+  exact h.isEmbedding.isTotallyDisconnected_range.mp
+    (isTotallyDisconnected_of_totallyDisconnectedSpace _)
+
 theorem coordinate_image_closure_eq
     [TopologicalSpace O] [DiscreteTopology O]
     (trace : S → W → O) (a : W) :
@@ -245,6 +269,7 @@ theorem cantor_compact_source_actualizes_every_compatible_derivative
     binaryDerivative (continuous_pi_iff.mp binary_derivative_continuous) z compatible
 
 #print axioms mem_closure_range_iff_compatible
+#print axioms stage_restriction_continuous
 #print axioms closure_range_eq_compatible
 #print axioms inverseFamilyClosureHomeomorph
 #print axioms inverse_family_topological_limit_universal
@@ -252,6 +277,7 @@ theorem cantor_compact_source_actualizes_every_compatible_derivative
 #print axioms compact_continuous_source_realizes_compatible_profile
 #print axioms compact_continuous_source_family_surjective
 #print axioms finite_alphabet_trace_closure_compact
+#print axioms inverse_family_compact_hausdorff_totally_disconnected
 #print axioms trace_closure_compact_iff_each_probe_finite_image
 #print axioms lawful_action_preserves_trace_closure
 #print axioms cantor_compact_source_actualizes_every_compatible_derivative
