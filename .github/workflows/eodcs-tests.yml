@@ -5,6 +5,7 @@ on:
     branches:
       - 'research/eodcs-*'
       - 'research/voyager-*'
+      - 'research/carrier-indexed-*'
   pull_request:
     paths:
       - 'observational_succ/voyager_*.py'
@@ -15,6 +16,8 @@ on:
       - 'observational_succ/eodcs_source_uncertainty.py'
       - 'observational_succ/eodcs_evolutionary_discovery.py'
       - 'tests/test_eodcs_*.py'
+      - 'observational_succ/carrier_indexed.py'
+      - 'scripts/carrier_indexed_probe.py'
       - 'scripts/eodcs_probe.py'
       - '.github/workflows/eodcs-tests.yml'
   workflow_dispatch:
