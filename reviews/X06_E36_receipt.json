@@ -1,0 +1,133 @@
+{
+  "author_commit": "a80d3d6d5e8850d857a1861e6c22b9c5c6551a54",
+  "author_dossier_sha256": "e5ebd2b8c34dd26276de45f301b7dfe0d46faf51f14c455d978d40160a2c4271",
+  "author_probe_read_or_imported": false,
+  "boundary": "Finite exact controls; universal claims require review derivations, no physical storage claim",
+  "command": "PYTHONDONTWRITEBYTECODE=1 timeout 25s python reviews/X06_E36_probe.py --receipt reviews/X06_E36_receipt.json",
+  "elapsed_seconds": 0.481918,
+  "exit_code": 0,
+  "hom_control": {
+    "fixed_endpoint_residual": 0,
+    "fixed_endpoint_source": 4,
+    "full_word_lifts_checked": 508,
+    "residual_matrix": [
+      [
+        0,
+        1
+      ],
+      [
+        null,
+        0
+      ]
+    ],
+    "source_matrix": [
+      [
+        0,
+        1,
+        4,
+        5
+      ],
+      [
+        null,
+        0,
+        null,
+        4
+      ],
+      [
+        4,
+        5,
+        0,
+        1
+      ],
+      [
+        null,
+        4,
+        null,
+        0
+      ]
+    ],
+    "target_fibre_equality": true
+  },
+  "hypothesis_removals": {
+    "edgewise_max_invented_charge": 9,
+    "edgewise_min_invented_charge": 1,
+    "external_clock_distinct_departing_costs": 16,
+    "forgotten_budget_illegal_word": "aaa",
+    "literal_Moore_total_reports_distinct_prefixes": 9,
+    "negative_valuation_edge": -1,
+    "nonadditive_valuation_triangle": [
+      1,
+      1,
+      4
+    ],
+    "nonfaithful_zero_valuation_state_counts": [
+      2,
+      1
+    ],
+    "priced_reset_word_charge": 5,
+    "private_original_totals": [
+      5,
+      5
+    ],
+    "same_total_weight_pushing": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "unit_charge_weighted_states": 1,
+    "unpriced_reset_word_charge": 2
+  },
+  "machines": 2752,
+  "noncancellation_controls": {
+    "max": {
+      "pointed_cumulative_only_one_state_realizer": true,
+      "raw_charge_stable_classes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "zero_origin_residual_classes": [
+        0,
+        0,
+        1,
+        2
+      ]
+    },
+    "saturated_addition_2": {
+      "pointed_cumulative_only_one_state_realizer": true,
+      "raw_charge_stable_classes": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "zero_origin_residual_classes": [
+        0,
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  "noncancellative_unary_primitive_period_4": {
+    "cumulative_residual_classes": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "raw_stream_states": 4
+  },
+  "probe_sha256": "d3c03afb193d578e72bc20593f9f71bf1f3e5c03dbf8c2ba85903ae1ef4cca14",
+  "repository_modules_imported": false,
+  "review_execution_parent": "06b6ba43d6d9480cf939097bee6985d2c9328ea3",
+  "status": "TESTED MODEL",
+  "time_limit_seconds": 25,
+  "unary_lassos": 900
+}
