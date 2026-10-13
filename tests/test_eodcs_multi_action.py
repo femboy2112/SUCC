@@ -6,7 +6,7 @@ from random import Random
 from observational_succ.eodcs_multi_action_source import (
     ActionSource, SourceTransportError, action_congruence,
     shortest_distinguishing_word, action_curvature,
-    newly_generated_probe_demo, dark_toolkit_demo,
+    newly_generated_probe_demo, dark_toolkit_demo, curvature_resolution,
 )
 
 
@@ -83,6 +83,63 @@ class TestMultiActionSUCC(unittest.TestCase):
         self.assertTrue(r["source_nonflat_but_observer_flat"])
         self.assertFalse(r["physical_curvature_claimed"])
         self.assertEqual(len(action_congruence(src).equivalence_classes),1)
+
+    def test_one_curvature_immediate_another_dark_in_same_source(self):
+        states=("x","y","u","v","c","d")
+        src=ActionSource("s",0,"basis",states,("0","0","0","0","0","1"),
+                         ("A","B"),
+                         (("u","v","u","v","c","d"),
+                          ("x","y","c","d","c","d")))
+        r=curvature_resolution(src,"A","B")
+        self.assertEqual([w[0] for w in r["observable_immediate"]],["y"])
+        self.assertEqual([w[0] for w in r["dark_under_available_probe_closure"]],
+                         ["x"])
+        self.assertEqual(r["observable_after_generated_word"],())
+        self.assertFalse(r["physical_curvature_claimed"])
+
+    def test_new_sensor_rotates_dark_source_defect_into_delayed_visibility(self):
+        states=("x","y","u","v","c","d")
+        src=ActionSource("s",0,"basis",states,("0","0","0","0","0","1"),
+                         ("A","B","C"),
+                         (("u","v","u","v","c","d"),
+                          ("x","y","c","d","c","d"),
+                          ("x","y","d","v","c","d")))
+        r=curvature_resolution(src,"A","B")
+        self.assertEqual([w[0] for w in r["observable_immediate"]],["y"])
+        self.assertEqual([(s,w) for s,_,_,w in r["observable_after_generated_word"]],
+                         [("x",("C",))])
+        self.assertEqual(r["dark_under_available_probe_closure"],())
+        self.assertEqual(r["source_noncommuting_state_count"],2)
+
+    def test_110_seeded_curvature_witnesses_against_independent_word_oracle(self):
+        rng=Random(3355)
+        for _ in range(110):
+            n=rng.choice((2,3,4,5))
+            states=tuple(str(i) for i in range(n))
+            output=tuple(str(rng.randrange(3)) for _ in states)
+            trans=tuple(tuple(rng.choice(states) for _ in states)
+                        for a in ("A","B"))
+            src=ActionSource("s",0,"b",states,output,("A","B"),trans)
+            actual=curvature_resolution(src,"A","B")
+            immediate={s for s,_,_ in actual["observable_immediate"]}
+            delayed={s:w for s,_,_,w in actual["observable_after_generated_word"]}
+            dark={s for s,_,_ in actual["dark_under_available_probe_closure"]}
+            flat=set(actual["source_flat_states"])
+            self.assertEqual(len(immediate)+len(delayed)+len(dark)+len(flat),n)
+            for s in states:
+                left=src.run(s,("A","B"))
+                right=src.run(s,("B","A"))
+                brute=next((w for w in all_words(src.actions,n)
+                            if independent_walk(src,left,w)!=
+                               independent_walk(src,right,w)),None)
+                if left==right:
+                    self.assertIn(s,flat)
+                elif brute is None:
+                    self.assertIn(s,dark)
+                elif len(brute)==0:
+                    self.assertIn(s,immediate)
+                else:
+                    self.assertEqual(delayed[s],brute)
 
     def test_curvature_with_injective_report_is_always_visible(self):
         rng=Random(19)
