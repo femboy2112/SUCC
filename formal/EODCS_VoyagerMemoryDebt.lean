@@ -80,8 +80,9 @@ theorem pulse_gap_injective_states
     (zeros : ∀ t : Nat, p+1 ≤ t → t < 2*p →
        report (MemoryIter step t s) = false)
     (one : report (MemoryIter step (2*p) s) = true) :
-    Function.Injective
-      (fun i : Fin p => MemoryIter step (p+1+i.val) s) := by
+    ∀ i j : Fin p,
+      MemoryIter step (p+1+i.val) s =
+      MemoryIter step (p+1+j.val) s → i = j := by
   intro i j eq
   by_cases hij : i.val < j.val
   · have notSame := zero_gap_forces_distinct_source_states
