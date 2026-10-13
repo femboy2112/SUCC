@@ -1,0 +1,44 @@
+{
+  "command": "timeout 30s python research/2026-10-13/SWARM_ATLAS/reviews/X01_A05_probe.py",
+  "compiler_run": false,
+  "exit_code": 0,
+  "finite_cost_equalities": 4808,
+  "finite_models": 601,
+  "finite_support_all_ones_prefix_costs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "full_suite_run": false,
+  "independence": "New standard-library enumeration; X01 probe neither read nor imported",
+  "infinite_claim_scope": "Infinite absence and compactness proved in review, not inferred from finite execution",
+  "nondiscrete_label_countermodel": {
+    "E": [
+      "e"
+    ],
+    "W": [],
+    "closure_labels": [
+      0,
+      1
+    ],
+    "label_topology": "indiscrete {0,1}",
+    "lambda_e": 0,
+    "limit_B_labels": [
+      0
+    ]
+  },
+  "partial_support_cartesian_noninjective_cases": 144,
+  "probe_sha256": "966ba1b8695f85450a6edb600156ecf38e416242e3dec88409aa3c1bad09d84f",
+  "refinement_comparisons": 5409,
+  "review_sha256": "ae66ca953e19b57184075b83d9666e0d4bc3ac556802f027068b5632faf85579",
+  "reviewer_base": "ad6db3cfeb4cd9426b622f31d3d5c2892c3d7d37",
+  "subject_commit": "d9631e3008051628a45bd6373ef35e884d3a7384",
+  "unsupported_fiber_nonempty_receipt_control": "Rows 00 supported, 10/11 unsupported: cartesian comparison although report restriction not injective",
+  "verdict": "SURVIVES under stated hypotheses"
+}
