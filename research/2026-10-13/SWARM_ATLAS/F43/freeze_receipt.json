@@ -1,0 +1,24 @@
+{
+  "command": "python research/2026-10-13/SWARM_ATLAS/F43/freeze_sources.py",
+  "exit": 0,
+  "generator_sha256": "29bf24329a9492a7f31e396fda69192ea4b4535e10c7652b9d86efeb660774d5",
+  "hashes": {
+    "holdout.json": "24eafe4c90923484417f80c4893def28e64cae9575002f03f2c48ec9e1ce83ad",
+    "source_manifest.json": "e209611052e49462861082f838a78884c78c8ed874158025cb6317f878920246",
+    "training.json": "34452d4fc64080ebe061fd643e5077b6e353bd803186ca9a81283753ec15c943"
+  },
+  "holdout_read_count_by_learner": 0,
+  "learner_files_exist_at_freeze": false,
+  "source_state_counts": {
+    "holdout": [
+      65,
+      8,
+      16
+    ],
+    "training": [
+      5,
+      9
+    ]
+  },
+  "stage": 1
+}

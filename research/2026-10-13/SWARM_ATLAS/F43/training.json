@@ -1,0 +1,84 @@
+[
+  {
+    "actions": [
+      "adcfed0eddb0aadfe014a",
+      "abeb11d40adfbafb5a4a8"
+    ],
+    "states": [
+      "s61ee0bd76e3faed63af1",
+      "s2dce46fa9aa887c9e198",
+      "s8c77c0fe0d956fde43ac",
+      "sb44aa62c6e797bf0278f",
+      "se00146a3b4c7b9eb7e22"
+    ],
+    "transitions": [
+      [
+        "sb44aa62c6e797bf0278f",
+        "s2dce46fa9aa887c9e198",
+        "s8c77c0fe0d956fde43ac",
+        "sb44aa62c6e797bf0278f",
+        "s8c77c0fe0d956fde43ac"
+      ],
+      [
+        "se00146a3b4c7b9eb7e22",
+        "s2dce46fa9aa887c9e198",
+        "s8c77c0fe0d956fde43ac",
+        "s2dce46fa9aa887c9e198",
+        "se00146a3b4c7b9eb7e22"
+      ]
+    ]
+  },
+  {
+    "actions": [
+      "a5a5b34767086063db268",
+      "a2ae32c060cf87ea7ce58",
+      "aa5fb6003eee6a1213956"
+    ],
+    "states": [
+      "sfe513d08b5e72cb44d07",
+      "sfebe083a879e60424f19",
+      "sb0d0297b7fed9103d939",
+      "s39fd5c7830578190776a",
+      "s4221d2ff87c5ee43fa9a",
+      "s7ad6b007b88aaedae0c7",
+      "s94eb32a09e473695e791",
+      "sd38d918813c9fce8a0a7",
+      "s559542540f41f2137982"
+    ],
+    "transitions": [
+      [
+        "s39fd5c7830578190776a",
+        "sfebe083a879e60424f19",
+        "sb0d0297b7fed9103d939",
+        "s39fd5c7830578190776a",
+        "sd38d918813c9fce8a0a7",
+        "s7ad6b007b88aaedae0c7",
+        "s559542540f41f2137982",
+        "sd38d918813c9fce8a0a7",
+        "s559542540f41f2137982"
+      ],
+      [
+        "sfe513d08b5e72cb44d07",
+        "s7ad6b007b88aaedae0c7",
+        "sb0d0297b7fed9103d939",
+        "s39fd5c7830578190776a",
+        "sfe513d08b5e72cb44d07",
+        "s7ad6b007b88aaedae0c7",
+        "s94eb32a09e473695e791",
+        "s39fd5c7830578190776a",
+        "s559542540f41f2137982"
+      ],
+      [
+        "sfe513d08b5e72cb44d07",
+        "sb0d0297b7fed9103d939",
+        "sb0d0297b7fed9103d939",
+        "s39fd5c7830578190776a",
+        "s94eb32a09e473695e791",
+        "s7ad6b007b88aaedae0c7",
+        "s94eb32a09e473695e791",
+        "s559542540f41f2137982",
+        "s559542540f41f2137982"
+      ]
+    ]
+  }
+]
