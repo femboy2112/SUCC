@@ -10,7 +10,9 @@ class TestEODCSRelationalReceipt(unittest.TestCase):
     def test_receipt_is_exactly_reproducible_and_source_safe(self):
         expected=json.loads(
             Path("research/2026-10-13/EODCS_RELATIONAL_MODAL_RECEIPT.json").read_text())
-        actual=receipt()
+        # JSON transport canonicalizes tuple-valued machine receipts to arrays.
+        # This is a semantic/source replay, not an in-memory Python type match.
+        actual=json.loads(json.dumps(receipt()))
         self.assertEqual(actual,expected)
         self.assertEqual(actual["status"],"EXACT_FINITE_EODCS_III_RELATIONAL_SOURCE")
         report=actual["tight_may_common_observation"]
