@@ -1,0 +1,190 @@
+{
+  "S3_informative_erasure": {
+    "chronological_words_checked": 30,
+    "holonomy_fixed_points": [],
+    "joint_orbits": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        1,
+        3,
+        5
+      ],
+      [
+        6,
+        8
+      ],
+      [
+        7,
+        9
+      ]
+    ],
+    "posterior": [
+      "5/21",
+      "0",
+      "5/21",
+      "0",
+      "5/21",
+      "0",
+      "1/7",
+      "0",
+      "1/7",
+      "0"
+    ],
+    "report_zero_likelihood": "21/40",
+    "report_zero_quotient": [
+      [
+        "3/4",
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/4",
+        "1/2"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "source_natural_orbit_posterior": "5/7",
+    "source_natural_orbit_prior": "3/5"
+  },
+  "diagonal_not_product": {
+    "collapsed_product_Dirac_likelihoods": [
+      "1",
+      "0"
+    ],
+    "orbit_squares": {
+      "Reynolds_commutation": true,
+      "all_prior_lumpability": true,
+      "invariant_uniform_lift": true
+    },
+    "orbits": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "report_zero_likelihoods": [
+      "3/4",
+      "1/4"
+    ],
+    "same_two_marginals": true
+  },
+  "independence_limit": "independent implementation after reading theorem and stated witnesses",
+  "novelty": "NOT CLAIMED",
+  "physical_calibration": "UNVERIFIED",
+  "reviewed_commit": "090d6e593b2fa9b9ea431e898f653e72f933ab50",
+  "reviewed_dossier_sha256": "06f80c9aa4a6c966bbaa50208f4f4907df11de0d3673fb6762516b083f59643b",
+  "reviewer_input": "X02.md only; author probe never read or imported",
+  "strict_contract_separation": {
+    "cycle": {
+      "covariant": false,
+      "quotient": [
+        [
+          "1"
+        ]
+      ],
+      "squares": {
+        "Reynolds_commutation": true,
+        "all_prior_lumpability": true,
+        "invariant_uniform_lift": true
+      }
+    },
+    "reset": {
+      "covariant": false,
+      "squares": {
+        "Reynolds_commutation": false,
+        "all_prior_lumpability": true,
+        "invariant_uniform_lift": false
+      }
+    },
+    "unconditioned_vs_reported": {
+      "posterior": [
+        "1",
+        "0"
+      ],
+      "report_zero_likelihood": "1/2",
+      "report_zero_update_covariant": false,
+      "summed_kernel_covariant": true
+    },
+    "unequal_likelihood": {
+      "averaging_after_update_dirac_likelihoods": [
+        "1",
+        "1/2",
+        "1/4"
+      ],
+      "posterior": [
+        "4/7",
+        "2/7",
+        "1/7"
+      ],
+      "squares": {
+        "Reynolds_commutation": false,
+        "all_prior_lumpability": false,
+        "invariant_uniform_lift": false
+      }
+    }
+  },
+  "unrelated_leaf_instrument_counterexample": {
+    "identity_edge_square_commutes": false,
+    "is_X02_frame_transport_construction": false,
+    "leaf": [
+      [
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "root": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ]
+  },
+  "zero_normalization": {
+    "normalization_rejected": true,
+    "unnormalized_output_mass": "0"
+  }
+}
