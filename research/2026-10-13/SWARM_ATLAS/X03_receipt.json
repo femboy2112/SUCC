@@ -1,0 +1,411 @@
+{
+  "all_assertions_passed": true,
+  "boundary": "paper theorem plus exact finite AST checks; independent acceptance pending",
+  "cegis": {
+    "accepted_guard_constructors": [
+      "IntegralSourceSum",
+      "IntegralSourceSum"
+    ],
+    "grammar_size": 9,
+    "retained_counterexamples": [
+      [
+        1,
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        0,
+        1,
+        7
+      ],
+      [
+        1,
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        7,
+        1
+      ]
+    ],
+    "trace": [
+      {
+        "counterexample": [
+          1,
+          0,
+          1,
+          2
+        ],
+        "genome": [
+          0,
+          0
+        ],
+        "returned": "GLUED"
+      },
+      {
+        "counterexample": [
+          1,
+          0,
+          1,
+          7
+        ],
+        "genome": [
+          1,
+          0
+        ],
+        "returned": "GLUED"
+      },
+      {
+        "counterexample": [
+          1,
+          0,
+          2,
+          1
+        ],
+        "genome": [
+          2,
+          0
+        ],
+        "returned": "GLUED"
+      },
+      {
+        "counterexample": [
+          1,
+          0,
+          7,
+          1
+        ],
+        "genome": [
+          2,
+          1
+        ],
+        "returned": "GLUED"
+      },
+      {
+        "acceptance": "complete integral fundamental-cycle AST",
+        "counterexample": null,
+        "genome": [
+          2,
+          2
+        ]
+      }
+    ]
+  },
+  "command": "python -B research/2026-10-13/SWARM_ATLAS/X03_probe.py",
+  "finite_repair": {
+    "block_counts": [
+      2,
+      5
+    ],
+    "independent_product_reachability_equal": true,
+    "period_bound": 4,
+    "states": 25,
+    "value_modulus": 9,
+    "zero_modulus": 5
+  },
+  "independent_grounded_assignment_sources": 625,
+  "inherited_live_regressions": {
+    "A03": {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "/home/leah/succ_lab/swm-x03/research/2026-10-13/SWARM_ATLAS/A03_probe.py"
+      ],
+      "exit_code": 0,
+      "hostile_witness": {
+        "darts": [
+          [
+            "a",
+            0,
+            1,
+            [
+              1
+            ]
+          ],
+          [
+            "b",
+            0,
+            1,
+            [
+              7
+            ]
+          ]
+        ],
+        "disconnected_chart_rejected": true,
+        "finite_modular_menu": [
+          2,
+          3
+        ],
+        "flat_control": "GLUED",
+        "independent_overlap_basis_periods": [
+          -6
+        ],
+        "independent_source_basis_periods": [
+          6
+        ],
+        "local_potentials": {
+          "a": [
+            [
+              0,
+              [
+                0
+              ]
+            ],
+            [
+              1,
+              [
+                1
+              ]
+            ]
+          ],
+          "b": [
+            [
+              0,
+              [
+                0
+              ]
+            ],
+            [
+              1,
+              [
+                7
+              ]
+            ]
+          ]
+        },
+        "missing_dart_rejected": true,
+        "native_status": "OBSTRUCTED",
+        "native_tower": {
+          "epistemic_macros_at_E": 1,
+          "expanded_source_steps": 2,
+          "levels": 2,
+          "status": "OBSTRUCTED"
+        },
+        "one_vertex_overlap_mutation_generator": 0,
+        "overlap_cycle": [
+          [
+            1,
+            1
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        "overlaps": [
+          [
+            "a",
+            "b",
+            0,
+            [
+              0
+            ]
+          ],
+          [
+            "a",
+            "b",
+            1,
+            [
+              -6
+            ]
+          ]
+        ],
+        "period_subgroup_generator": 6,
+        "projected_checks": [
+          {
+            "modulus": 2,
+            "native_reduced_label_status": "GLUED",
+            "true_quotient_period": 0
+          },
+          {
+            "modulus": 3,
+            "native_reduced_label_status": "GLUED",
+            "true_quotient_period": 0
+          },
+          {
+            "modulus": 5,
+            "native_reduced_label_status": "OBSTRUCTED",
+            "true_quotient_period": 1
+          }
+        ],
+        "signed_period": [
+          -6
+        ],
+        "source_digest": "d37e6408a8642fcdc60220530a2450378067b70e47082626f2478fba0aa180a6",
+        "source_id": "SWM-A03-lcm-two-dart",
+        "source_walk": [
+          [
+            "b",
+            -1
+          ],
+          [
+            "a",
+            1
+          ]
+        ],
+        "stale_source_rejected": true,
+        "vertices": [
+          0,
+          1
+        ]
+      },
+      "probe_sha256": "1b22cd9647e9ead1d766b1bdac2381768a74417af125e24a9396ffb94bad9de1",
+      "stdout_sha256": "52e15fa229a7f1fdbf12f1f0a1acda00d27dd8326ee78f29f077c35f7b22e78e"
+    },
+    "A06": {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "/home/leah/succ_lab/swm-x03/research/2026-10-13/SWARM_ATLAS/A06_probe.py"
+      ],
+      "cross_source_counterexample": {
+        "f_after_source_action": 1,
+        "left_repairs_pullback": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "observation_preserving_map": [
+          0,
+          1
+        ],
+        "offending_state": 1,
+        "quotient_descent": "REFUTED for observation-preserving maps alone",
+        "right_pullbacks_repair": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "source": {
+          "reports": [
+            0,
+            0
+          ],
+          "update": [
+            0,
+            1
+          ]
+        },
+        "target": {
+          "reports": [
+            0,
+            0,
+            1
+          ],
+          "update": [
+            0,
+            2,
+            2
+          ]
+        },
+        "target_action_after_f": 2,
+        "witness_pair": [
+          0,
+          1
+        ]
+      },
+      "exit_code": 0,
+      "mutations_rejected": [
+        "drop future-word closure",
+        "drop action commutation"
+      ],
+      "probe_sha256": "4081e7d1d47024e9fa757365e648e24f354bcfe052058f7ac90915bfc0d0a224",
+      "same_carrier_incompatible_minima": {
+        "identity_updates_repair": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "reports": [
+          0,
+          0,
+          1
+        ],
+        "split_updates_repair": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "stdout_sha256": "79d8abb22f11249b9ca3fe6362bc6c4292b6ee53df2c8aa6a201d9720b377656"
+    }
+  },
+  "parent_sha": "122c385843248b517fa05a39bd3cfeb5458621b5",
+  "python": "3.12.3",
+  "schema": "SWM-X03-exact-v1",
+  "sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "observational_succ/evolutionary_bridge_search.py": "6e9e953edffee24615579d7c78604ce8a998ca7eefbef05b0fc1768fbc92cf5c",
+    "observational_succ/genetic_obstruction_holonomy.py": "bb47382d90bfb934b4b0f3ca512d8fb3f409be5af152e0e7a7af30d3a8dd2b8e",
+    "observational_succ/relational_model_genetics.py": "d4dabc68e5188a6fa6107525d829269e5eea809fba52006223df4c373547050d",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+    "research/2026-10-13/SWARM_ATLAS/A03.md": "fb853f9246583aeab1c18b1af11bfc1bc56a5428c897507f71536a077ca2e9ea",
+    "research/2026-10-13/SWARM_ATLAS/A06.md": "60cc38947923b9596431259681f76b7497fad768997b299eafd5a07f236ebc88",
+    "research/2026-10-13/SWARM_ATLAS/X03_probe.py": "c521f093a509b61ce0e1e5c27eaa516284a7c0cec09b4fc1004d24839281f3c0",
+    "research/2026-10-13/SWARM_ATLAS/reviews/A03_REVIEW.md": "85ea65506c865c934ca6850728ce534b929c34a26b86015f671e850c2ac77707",
+    "research/2026-10-13/SWARM_ATLAS/reviews/A05_A06_C18_E33_PRINCIPAL.md": "d5d6e6168cf54aa0ed0bcb836306afbf4f99179f0e5275e33b48adc2eb86cf6e"
+  },
+  "source_bound": {
+    "detecting_modulus": 7,
+    "edge_bound": 2,
+    "generator_bound": 6,
+    "rejections": [
+      "edge bound",
+      "stale epoch",
+      "noncomposable walk"
+    ],
+    "vertices": 3
+  },
+  "successful_completion_exit_code": 0
+}
