@@ -1,0 +1,142 @@
+{
+  "all_assertions_passed": true,
+  "arithmetic": "finite integer equality; no floating point",
+  "boundary": "finite source contracts; paper proofs supply universal claims; no CI or physical attestation",
+  "command": "python research/2026-10-13/SWARM_ATLAS/A06_probe.py",
+  "counts": {
+    "adjunction_biconditionals": 1536,
+    "lawful_source_maps": 122,
+    "machine_reflector_hom_bijections": 66,
+    "mealy_sources": 256,
+    "moore_sources": 234,
+    "native_quotient_comparisons": 724,
+    "native_universal_factor_checks": 620,
+    "pullback_naturality_checks": 178,
+    "seed_relations": 620
+  },
+  "cross_source_counterexample": {
+    "f_after_source_action": 1,
+    "left_repairs_pullback": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "observation_preserving_map": [
+      0,
+      1
+    ],
+    "offending_state": 1,
+    "quotient_descent": "REFUTED for observation-preserving maps alone",
+    "right_pullbacks_repair": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "source": {
+      "reports": [
+        0,
+        0
+      ],
+      "update": [
+        0,
+        1
+      ]
+    },
+    "target": {
+      "reports": [
+        0,
+        0,
+        1
+      ],
+      "update": [
+        0,
+        2,
+        2
+      ]
+    },
+    "target_action_after_f": 2,
+    "witness_pair": [
+      0,
+      1
+    ]
+  },
+  "git_head_at_run": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "mutations_rejected": [
+    "drop future-word closure",
+    "drop action commutation"
+  ],
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "positive_control": "non-surjective lawful map restores pullback equality",
+  "python": "3.12.3",
+  "same_carrier_incompatible_minima": {
+    "identity_updates_repair": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "reports": [
+      0,
+      0,
+      1
+    ],
+    "split_updates_repair": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ]
+  },
+  "schema": "SWM-A06-exact-v1",
+  "sha256": {
+    "observational_succ/categorical_repair_synthesis.py": "e4b85fece4fa11b82a4707a0446ad6a05a4c953c6ff87f6329e39e71e1ab9f35",
+    "observational_succ/causal_nerode_succ.py": "0d41180c9a041400e1c781d3578d3f7652242719c5f6e46cdf4028ec779d7ddd",
+    "observational_succ/nerode_probe_growth.py": "16fa756fe170b589877e38fa7257623a79fdc406a0454812ca6422fe314d12e6",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-13/SWARM_ATLAS/A06_probe.py": "4081e7d1d47024e9fa757365e648e24f354bcfe052058f7ac90915bfc0d0a224"
+  },
+  "status": "TESTED MODEL",
+  "successful_completion_exit_code": 0
+}
