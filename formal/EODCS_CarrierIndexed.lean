@@ -16,6 +16,8 @@ Stochastic joint-kernel finite reindexing, partial access and real physical
 source completeness are separately checked/derived outside this Lean module.
 -/
 
+namespace ObservationalSUCC
+
 namespace CarrierIndexed
 
 universe u v w z
@@ -142,3 +144,5 @@ theorem carrier_comparison_composes
       _ = (outer a (r (q c))).2 := (h₂ a (q c)).2
 
 end CarrierIndexed
+
+end ObservationalSUCC
