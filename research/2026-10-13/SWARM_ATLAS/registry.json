@@ -86,14 +86,14 @@
       "worktree": "/home/leah/succ_lab/swm-a04",
       "branch": "research/swm-a04-2026-10-13",
       "owner": "/root/a04",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T06:46:04.356994+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T06:55:11.692957+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/A04_receipt.json",
+      "proof_state": "INDEPENDENT EQUVARIANT/CORE/DESCENT REVIEW SURVIVES; PAPER",
+      "commit": "ea25dcc76244d2cbcc23edd2d77739141b7c1ca4",
+      "integration": "ACCEPTED"
     },
     {
       "id": "A05",
@@ -207,7 +207,9 @@
       "witness_path": "research/2026-10-13/SWARM_ATLAS/receipts/B09_lean.json",
       "proof_state": "ALGEBRAIC INVERSE-FAMILY EQUIVALENCE PROVED; PINNED TOPOLOGY FOLLOWUP RUNNING",
       "commit": "b93cb694d4efd75f7f45c0371a865eb3991bb3ba",
-      "integration": "PENDING"
+      "integration": "PENDING",
+      "initial_started_utc": "2026-10-13T06:28:54.883048+00:00",
+      "most_recent_started_utc": "2026-10-13T06:37:55.290627+00:00"
     },
     {
       "id": "B10",
@@ -383,9 +385,9 @@
       "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "worktree": "/home/leah/succ_lab/swm-c17",
       "branch": "research/swm-c17-2026-10-13",
-      "owner": null,
-      "state": "QUEUED",
-      "started_utc": null,
+      "owner": "/root/c17",
+      "state": "RUNNING",
+      "started_utc": "2026-10-13T06:55:11.736025+00:00",
       "finished_utc": null,
       "status": "UNVERIFIED",
       "witness_path": null,
@@ -1109,5 +1111,32 @@
     }
   ],
   "syntheses": [],
-  "reviews": []
+  "reviews": [],
+  "native_agents_genuinely_spawned_so_far": [
+    "/root/a01",
+    "/root/b09",
+    "/root/f41",
+    "/root/a02",
+    "/root/a03",
+    "/root/a04",
+    "/root/b10"
+  ],
+  "provider_capacity_receipts": [
+    {
+      "agent": "/root/f41",
+      "state": "RETRIED SAME PROVIDER; COMPLETED",
+      "failure": "Selected model is at capacity"
+    },
+    {
+      "agent": "/root/b09",
+      "state": "RETRIED SAME PROVIDER; RUNNING",
+      "failure": "Selected model is at capacity"
+    },
+    {
+      "agent": "/root/a04",
+      "state": "RETRIED SAME PROVIDER; RUNNING",
+      "failure": "Selected model is at capacity"
+    }
+  ],
+  "review_independence_note": "Principal /root did not derive child results and independently checked each accepted result with separate derivations/implementations. Native reasoner and implementation independence; same model/provider and inherited source family."
 }

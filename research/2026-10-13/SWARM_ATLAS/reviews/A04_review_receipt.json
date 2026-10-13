@@ -1,0 +1,26 @@
+{
+  "reviewer": "/root distinct from /root/a04",
+  "S3_subgroups": 6,
+  "deck_group_size": 1,
+  "lawful_sections": [
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "non_descending_deck_invariant_witness": true,
+  "natural3_minima": [
+    3,
+    6,
+    6
+  ],
+  "natural3_plus_sign2_minima": [
+    2,
+    2,
+    6
+  ],
+  "all_checks_passed": true,
+  "helper_imports": false,
+  "verdict": "paper orbit/core/subgroup proof survives; no kernel promotion"
+}
