@@ -1,10 +1,22 @@
 """Replay the exact deterministic round-II source/proof boundary receipt."""
 import unittest
+import json
+from pathlib import Path
 
 from scripts.eodcs_causal_probe import receipt
 
 
 class TestEODCSCausalReceipt(unittest.TestCase):
+    def test_frozen_exact_receipt_no_cross_version_or_stale_semantics(self):
+        expected=json.loads(Path(
+            "research/2026-10-13/EODCS_CAUSAL_PROBE_RECEIPT.json").read_text())
+        actual=json.loads(json.dumps(receipt()))
+        self.assertEqual(expected,actual)
+        self.assertEqual(actual["genetic_probe_language"][
+            "twenty_seeded_genetic_successes"],6)
+        self.assertEqual(actual["genetic_probe_language"][
+            "twenty_seeded_genetic_failures"],14)
+
     def test_source_witnesses_no_laundered_search_and_scope(self):
         r=receipt()
         self.assertEqual(r["status"],
