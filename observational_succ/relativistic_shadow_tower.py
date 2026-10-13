@@ -131,9 +131,16 @@ def finite_source_ontology_limit():
     """
     class_a=("Lorentz observations","no preferred-frame tag")
     class_b=("Lorentz observations","preferred-frame tag")
-    report=lambda model:("two null rays", "one normalized clock", "metric 1,-1")
-    assert report(class_a)==report(class_b)
-    return {"operationally_equivalent":True,"ontology_property_differs":True,
+    # report extracts ONLY the observable law class (index 0); the ether tag
+    # (index 1) is a stipulated unobserved ontological label. Equality of the
+    # reports is thus a genuine computation on the models (a Galilean-observation
+    # model would report differently), not a constant that ignores its argument.
+    report=lambda model: model[0]
+    operationally_equivalent=(report(class_a)==report(class_b))
+    ontology_property_differs=(class_a[1]!=class_b[1])
+    assert operationally_equivalent and ontology_property_differs
+    return {"operationally_equivalent":operationally_equivalent,
+            "ontology_property_differs":ontology_property_differs,
             "source_candidates":(class_a,class_b),
             "physical_ether_existence_resolved":False}
 

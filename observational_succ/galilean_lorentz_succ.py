@@ -300,4 +300,9 @@ def galilean_moving_medium_wave_operator(frame_velocity):
             "wave_characteristic_speeds":(-1-v,1-v),
             "same_form_vacuum_operator":transformed==ETA,
             "preferred_medium_structure_added":v!=0,
+            # Deliberate firewall DISCLAIMER, not a geometric quantity: this
+            # construction never claims a unique physical ontology is selected
+            # (a coherent moving-medium alternative exists for every v!=0, and at
+            # v=0 there is no transition to adjudicate). Constant False, like the
+            # RH_claimed / physical_source_authenticated disclaimers elsewhere.
             "unique_physical_model_selected":False}
