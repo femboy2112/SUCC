@@ -58,6 +58,10 @@ jobs:
           PY
       - name: Run all mathematical, logic, quantum, source and hostile tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Replay exact categorical repair and cross-model bridge receipt
+        run: |
+          python scripts/categorical_model_bridge_probe.py > "$RUNNER_TEMP/categorical-model-bridge.json"
+          diff -u research/2026-10-12/CATEGORICAL_MODEL_BRIDGE_RECEIPT.json "$RUNNER_TEMP/categorical-model-bridge.json"
       - name: Replay exact source-driven RC inverse reconstruction receipt
         run: python scripts/dynamic_boundary_inverse_probe.py > "$RUNNER_TEMP/dynamic-boundary-inverse.json"
       - name: Reconstruct the historical Galilean-to-Lorentz SUCC repair
