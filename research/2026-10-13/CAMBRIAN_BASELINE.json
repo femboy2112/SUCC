@@ -1,0 +1,94 @@
+{
+  "schema": "succ-cambrian-baseline-v1",
+  "base": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "python": "3.12.14",
+  "local_full_tests": 1602,
+  "required_provenance_and_two_probes": "pass",
+  "source_branches": [
+    {
+      "branch": "main",
+      "sha": "52d2c02b85b246aec67160260ac06bb1da33645e",
+      "parents": [
+        "2ffd90a518c9a8ed7cc13ef97fdafdb5e256ae52",
+        "072ce852081d6da74475e6296afd556278e048a0"
+      ]
+    },
+    {
+      "branch": "research/source-driven-dynamic-boundary-inverse-2026-10-12",
+      "sha": "a085d754e037498a20cbb4d2330e3ce02d2f60c2",
+      "parents": [
+        "d212b5cd287745efbbdd5de42e2e1fb3c85f92d5"
+      ]
+    },
+    {
+      "branch": "research/categorical-repair-discovery-2026-10-12",
+      "sha": "a5462ea4ef655bba7dd67fbc16ec048acfb994d1",
+      "parents": [
+        "a085d754e037498a20cbb4d2330e3ce02d2f60c2"
+      ]
+    },
+    {
+      "branch": "research/contextual-heuristic-inference-2026-10-12",
+      "sha": "45597a5750971130e3399ed69c03e107bdc28c70",
+      "parents": [
+        "a5462ea4ef655bba7dd67fbc16ec048acfb994d1"
+      ]
+    },
+    {
+      "branch": "research/genetic-categorical-model-fusion-2026-10-12",
+      "sha": "1cb30a3d92420f1197fc1615a68fb4309c0e036d",
+      "parents": [
+        "39cc40abda8c9cc424083472fdbd16b7aefcfa68"
+      ]
+    },
+    {
+      "branch": "research/eodcs-posets-cegis-covers-2026-10-13",
+      "sha": "091b9e6ecb0f4bb1a162db2e97ef0f8d9a00f6ed",
+      "parents": [
+        "5820b753a8a3935c68d61912111f25f89176c78f"
+      ]
+    },
+    {
+      "branch": "research/eodcs-causal-nerode-moonshot-2026-10-13",
+      "sha": "00bc0d44cb011b1d333aa0fa8549d6b402662317",
+      "parents": [
+        "ceeb4cc7378db9cae37dab9a09e0bd97ba5b9144"
+      ]
+    },
+    {
+      "branch": "research/eodcs-relational-choice-2026-10-13",
+      "sha": "b17c357e2aa6aee17ae87115b8620a51a262e1fc",
+      "parents": [
+        "fa5fd5b9f38d53d0fed37112922a1cf32813c865"
+      ]
+    },
+    {
+      "branch": "research/voyager-observational-profinite-completion-2026-10-13",
+      "sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "parents": [
+        "ed1958abc87f5d5bc6658e42f2442c05701b0d23"
+      ]
+    },
+    {
+      "branch": "research/evolutionary-obstruction-synthesis-2026-10-13",
+      "sha": "b2774ca485db4b5b4f7ce92e535220352fb3af2f",
+      "parents": [
+        "d2a490f4ea8914e395819f3846de41b24beca06f"
+      ]
+    }
+  ],
+  "main_unchanged": true,
+  "separate_eos_toolchain": "4.19.0",
+  "base_toolchain": "4.14.0",
+  "protected_paths": [
+    "provenance/origins",
+    "provenance/IMPORT_MANIFEST.json",
+    "docs/CLAIM_LEDGER.md O1-O638"
+  ],
+  "baseline_log_tail": [
+    "----------------------------------------------------------------------",
+    "Ran 1602 tests in 86.706s",
+    "",
+    "OK"
+  ]
+}

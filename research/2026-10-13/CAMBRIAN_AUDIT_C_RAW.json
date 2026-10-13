@@ -1,0 +1,770 @@
+{
+  "all_theorem_axioms_printed": true,
+  "audit_appendix_scan": {
+    "forbidden_code_tokens": [],
+    "theorems": [
+      "growing_menu_complete",
+      "growing_menu_contains_non_successor",
+      "growing_relation_is_nondeterministic",
+      "growing_can_follow",
+      "growing_infinite_state_history",
+      "countdown_embeds_after_root",
+      "infinite_root_arbitrarily_extendable",
+      "infinite_root_no_infinite_history",
+      "listed_below_maximum",
+      "infinite_root_has_no_finite_complete_menu",
+      "alternating_every_depth_has_a_finite_menu_witness",
+      "alternating_no_uniform_witness",
+      "alternating_lacks_downward_closure"
+    ]
+  },
+  "audit_appendix_sha256": "3dcf588e215a0af99db527fa7d58acad7e142f2d1e654c66af230e88d00bac80",
+  "audited_base": "6fc5ae9f1a92abbab259b37440aefed23ee04e92",
+  "compiler_invocations": [
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-i6s1fxl6/EODCS_ActionClosure.lean"
+      ],
+      "expected_acceptance": true,
+      "name": "EODCS_ActionClosure.lean",
+      "returncode": 0,
+      "source_sha256": "b69605a1494f32fd77f04addca28cd76951617c6d6798d1fddd8f22f6df336f3",
+      "stderr": "",
+      "stdout": "ObservationalSUCC.no_available_finite_word_separates.{u, v, w} {S : Type u} {Action : Type v} {Report : Type w}\n  (q : S \u2192 Report) (step : Action \u2192 S \u2192 S) (equiv : S \u2192 S \u2192 Prop) (output_respects : \u2200 (s t : S), equiv s t \u2192 q s = q t)\n  (actions_respect : \u2200 (a : Action) (s t : S), equiv s t \u2192 equiv (step a s) (step a t)) (s t : S) (h : equiv s t)\n  (word : List Action) : q (ObservationalSUCC.RunWord step word s) = q (ObservationalSUCC.RunWord step word t)\n'ObservationalSUCC.no_available_finite_word_separates' does not depend on any axioms\nObservationalSUCC.visible_commutator_implies_source_commutator.{u, v} {S : Type u} {Report : Type v} (q : S \u2192 Report)\n  (U V : S \u2192 S) (s : S) (observed : q (U (V s)) \u2260 q (V (U s))) : U (V s) \u2260 V (U s)\n'ObservationalSUCC.visible_commutator_implies_source_commutator' does not depend on any axioms\nObservationalSUCC.injective_report_detects_source_inequality.{u, v} {S : Type u} {Report : Type v} (q : S \u2192 Report)\n  (injective : \u2200 (x y : S), q x = q y \u2192 x = y) (x y : S) (different : x \u2260 y) : q x \u2260 q y\n'ObservationalSUCC.injective_report_detects_source_inequality' does not depend on any axioms\n",
+      "theorem_axioms": {
+        "ObservationalSUCC.injective_report_detects_source_inequality": [],
+        "ObservationalSUCC.no_available_finite_word_separates": [],
+        "ObservationalSUCC.visible_commutator_implies_source_commutator": []
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-t5ggwdyb/EODCS_CambrianRealization.lean"
+      ],
+      "expected_acceptance": true,
+      "name": "EODCS_CambrianRealization.lean",
+      "returncode": 0,
+      "source_sha256": "3c6ec6f6c428ecdcd3a2391002bb204b04e2381d4676d16e1bd02f50643341e0",
+      "stderr": "",
+      "stdout": "'ObservationalSUCC.cambrian_finite_prefixes_realize_one_history' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.cambrian_countdown_no_infinite_history' depends on axioms: [propext, Quot.sound]\nObservationalSUCC.cambrian_can_follow_truncate.{u} {S : Nat \u2192 Type u} (R : (t : Nat) \u2192 S t \u2192 S (t + 1) \u2192 Prop)\n  (d t : Nat) (s : S t) (e : Nat) :\n  e \u2264 d \u2192 ObservationalSUCC.CambrianCanFollow R t d s \u2192 ObservationalSUCC.CambrianCanFollow R t e s\n'ObservationalSUCC.cambrian_can_follow_truncate' depends on axioms: [propext, Quot.sound]\nObservationalSUCC.cambrian_finite_coherent_choice.{u} {X : Type u} (menu : List X) (P : Nat \u2192 X \u2192 Prop)\n  (down : \u2200 (e d : Nat) (x : X), e \u2264 d \u2192 P d x \u2192 P e x) (every : \u2200 (d : Nat), \u2203 x, x \u2208 menu \u2227 P d x) :\n  \u2203 x, x \u2208 menu \u2227 \u2200 (d : Nat), P d x\n'ObservationalSUCC.cambrian_finite_coherent_choice' depends on axioms: [propext, Classical.choice, Quot.sound]\nObservationalSUCC.cambrian_extendable_successor.{u} {S : Nat \u2192 Type u} (R : (t : Nat) \u2192 S t \u2192 S (t + 1) \u2192 Prop)\n  (menu : (t : Nat) \u2192 S t \u2192 List (S (t + 1)))\n  (complete : \u2200 (t : Nat) (s : S t) (next : S (t + 1)), R t s next \u2192 next \u2208 menu t s) (t : Nat) (s : S t)\n  (deep : ObservationalSUCC.CambrianExtendable R t s) :\n  \u2203 next, R t s next \u2227 ObservationalSUCC.CambrianExtendable R (t + 1) next\n'ObservationalSUCC.cambrian_extendable_successor' depends on axioms: [propext, Classical.choice, Quot.sound]\nObservationalSUCC.cambrian_nondeterministic_history_realization.{u} {S : Nat \u2192 Type u}\n  (R : (t : Nat) \u2192 S t \u2192 S (t + 1) \u2192 Prop) (menu : (t : Nat) \u2192 S t \u2192 List (S (t + 1)))\n  (complete : \u2200 (t : Nat) (s : S t) (next : S (t + 1)), R t s next \u2192 next \u2208 menu t s) (start : S 0)\n  (deep : ObservationalSUCC.CambrianExtendable R 0 start) :\n  \u2203 history, history 0 = start \u2227 \u2200 (t : Nat), R t (history t) (history (t + 1))\n'ObservationalSUCC.cambrian_nondeterministic_history_realization' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\nObservationalSUCC.cambrian_finite_prefixes_realize_one_history.{u} {S : Nat \u2192 Type u}\n  (R : (t : Nat) \u2192 S t \u2192 S (t + 1) \u2192 Prop) (menu : (t : Nat) \u2192 S t \u2192 List (S (t + 1)))\n  (complete : \u2200 (t : Nat) (s : S t) (next : S (t + 1)), R t s next \u2192 next \u2208 menu t s) (initial : List (S 0))\n  (prefixes : \u2200 (d : Nat), \u2203 s, s \u2208 initial \u2227 ObservationalSUCC.CambrianCanFollow R 0 d s) :\n  \u2203 history, history 0 \u2208 initial \u2227 \u2200 (t : Nat), R t (history t) (history (t + 1))\n'ObservationalSUCC.cambrian_finite_prefixes_realize_one_history' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\nObservationalSUCC.cambrian_countdown_depth_iff (d t s : Nat) :\n  ObservationalSUCC.CambrianCanFollow ObservationalSUCC.CambrianCountdown t d s \u2194 d \u2264 s\n'ObservationalSUCC.cambrian_countdown_depth_iff' depends on axioms: [propext, Quot.sound]\nObservationalSUCC.cambrian_countdown_all_finite_depths (d : Nat) :\n  \u2203 s, ObservationalSUCC.CambrianCanFollow ObservationalSUCC.CambrianCountdown 0 d s\n'ObservationalSUCC.cambrian_countdown_all_finite_depths' depends on axioms: [propext, Quot.sound]\nObservationalSUCC.cambrian_countdown_no_infinite_history :\n  \u00ac\u2203 history, \u2200 (t : Nat), ObservationalSUCC.CambrianCountdown t (history t) (history (t + 1))\n'ObservationalSUCC.cambrian_countdown_no_infinite_history' depends on axioms: [propext, Quot.sound]\n",
+      "theorem_axioms": {
+        "ObservationalSUCC.cambrian_can_follow_truncate": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_countdown_all_finite_depths": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_countdown_depth_iff": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_countdown_no_infinite_history": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_extendable_successor": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_finite_coherent_choice": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_finite_prefixes_realize_one_history": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_nondeterministic_history_realization": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-j5fvjhva/EODCS_CausalDescent.lean"
+      ],
+      "expected_acceptance": true,
+      "name": "EODCS_CausalDescent.lean",
+      "returncode": 0,
+      "source_sha256": "bb2b4de2b5d5bacd6862c3eed8579de738d101843234fd6a00283ba33947b6da",
+      "stderr": "",
+      "stdout": "ObservationalSUCC.transport_requires_fiber_compatibility.{u, v, w, z} {S : Type u} {O : Type v} {T : Type w}\n  {P : Type z} (q : S \u2192 O) (U : S \u2192 T) (r : T \u2192 P) (vmap : O \u2192 P) (comm : \u2200 (s : S), vmap (q s) = r (U s)) :\n  ObservationalSUCC.FiberCompatible q U r\n'ObservationalSUCC.transport_requires_fiber_compatibility' does not depend on any axioms\nObservationalSUCC.transport_exists_of_fiber_compatibility.{u, v, w, z} {S : Type u} {O : Type v} {T : Type w}\n  {P : Type z} (q : S \u2192 O) (U : S \u2192 T) (r : T \u2192 P) (surj : \u2200 (o : O), \u2203 s, q s = o)\n  (compatible : ObservationalSUCC.FiberCompatible q U r) : \u2203 vmap, \u2200 (s : S), vmap (q s) = r (U s)\n'ObservationalSUCC.transport_exists_of_fiber_compatibility' depends on axioms: [Classical.choice]\nObservationalSUCC.source_transport_iff_fiber_compatible.{u, v, w, z} {S : Type u} {O : Type v} {T : Type w} {P : Type z}\n  (q : S \u2192 O) (U : S \u2192 T) (r : T \u2192 P) (surj : \u2200 (o : O), \u2203 s, q s = o) :\n  (\u2203 vmap, \u2200 (s : S), vmap (q s) = r (U s)) \u2194 ObservationalSUCC.FiberCompatible q U r\n'ObservationalSUCC.source_transport_iff_fiber_compatible' depends on axioms: [Classical.choice]\nObservationalSUCC.transported_map_unique_if_surjective.{u, v, w} {S : Type u} {O : Type v} {P : Type w} (q : S \u2192 O)\n  (target : S \u2192 P) (surj : \u2200 (o : O), \u2203 s, q s = o) (v\u2081 v\u2082 : O \u2192 P) (h\u2081 : \u2200 (s : S), v\u2081 (q s) = target s)\n  (h\u2082 : \u2200 (s : S), v\u2082 (q s) = target s) (o : O) : v\u2081 o = v\u2082 o\n'ObservationalSUCC.transported_map_unique_if_surjective' does not depend on any axioms\nObservationalSUCC.observation_pair_universal.{u, v, w, z} {S : Type u} {R : Type v} {O : Type w} {P : Type z}\n  (q : S \u2192 O) (post : S \u2192 P) (refinement : S \u2192 R) (decode_current : R \u2192 O) (decode_future : R \u2192 P)\n  (hc : \u2200 (s : S), decode_current (refinement s) = q s) (hf : \u2200 (s : S), decode_future (refinement s) = post s) :\n  \u2203 factor, \u2200 (s : S), factor (refinement s) = (q s, post s)\n'ObservationalSUCC.observation_pair_universal' does not depend on any axioms\nObservationalSUCC.observation_pair_fiber_characterization.{u, v, w} {S : Type u} {O : Type v} {P : Type w} (q : S \u2192 O)\n  (post : S \u2192 P) (s t : S) : (q s, post s) = (q t, post t) \u2194 q s = q t \u2227 post s = post t\n'ObservationalSUCC.observation_pair_fiber_characterization' does not depend on any axioms\nObservationalSUCC.causal_square_composition.{u, v, w} {S : Type u} {T : Type v} {R : Type w} {A : Type u} {B : Type v}\n  {C : Type w} (q : S \u2192 A) (r : T \u2192 B) (p : R \u2192 C) (U : S \u2192 T) (W : T \u2192 R) (V : A \u2192 B) (Z : B \u2192 C)\n  (square\u2081 : \u2200 (s : S), r (U s) = V (q s)) (square\u2082 : \u2200 (t : T), p (W t) = Z (r t)) (s : S) : p (W (U s)) = Z (V (q s))\n'ObservationalSUCC.causal_square_composition' does not depend on any axioms\nObservationalSUCC.based_loop_fixed_iff_tree_parallel.{u, v, w} {Vertex : Type u} {Edge : Type v} {X : Type w}\n  (src dst : Edge \u2192 Vertex) (edge : Edge \u2192 X \u2192 X) (tree inv : Vertex \u2192 X \u2192 X)\n  (inverse_right : \u2200 (v : Vertex) (y : X), tree v (inv v y) = y)\n  (inverse_left : \u2200 (v : Vertex) (x : X), inv v (tree v x) = x) (x : X) :\n  (\u2200 (e : Edge), inv (dst e) (edge e (tree (src e) x)) = x) \u2194 \u2200 (e : Edge), edge e (tree (src e) x) = tree (dst e) x\n'ObservationalSUCC.based_loop_fixed_iff_tree_parallel' does not depend on any axioms\nObservationalSUCC.cover_descent_iff_holonomy_fixed.{u, v, w} {Vertex : Type u} {H : Type v} {X : Type w} (root : Vertex)\n  (identity : H) (tree : Vertex \u2192 X \u2192 X) (act : H \u2192 X \u2192 X) (tree_root : \u2200 (x : X), tree root x = x)\n  (action_identity : \u2200 (x : X), act identity x = x) (x : X) :\n  (\u2200 (v : Vertex) (h : H), tree v (act h x) = tree v (act identity x)) \u2194 \u2200 (h : H), act h x = x\n'ObservationalSUCC.cover_descent_iff_holonomy_fixed' does not depend on any axioms\n",
+      "theorem_axioms": {
+        "ObservationalSUCC.based_loop_fixed_iff_tree_parallel": [],
+        "ObservationalSUCC.causal_square_composition": [],
+        "ObservationalSUCC.cover_descent_iff_holonomy_fixed": [],
+        "ObservationalSUCC.observation_pair_fiber_characterization": [],
+        "ObservationalSUCC.observation_pair_universal": [],
+        "ObservationalSUCC.source_transport_iff_fiber_compatible": [
+          "Classical.choice"
+        ],
+        "ObservationalSUCC.transport_exists_of_fiber_compatibility": [
+          "Classical.choice"
+        ],
+        "ObservationalSUCC.transport_requires_fiber_compatibility": [],
+        "ObservationalSUCC.transported_map_unique_if_surjective": []
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-b68utqin/EODCS_NerodePlateau.lean"
+      ],
+      "expected_acceptance": true,
+      "name": "EODCS_NerodePlateau.lean",
+      "returncode": 0,
+      "source_sha256": "813e325af97d839d3ee5fe505b995573ef66f9710fafa8fd9b5ad0dd7bc70c87",
+      "stderr": "",
+      "stdout": "ObservationalSUCC.iter_succ_commutes.{u} {S : Type u} (U : S \u2192 S) (n : Nat) (s : S) :\n  ObservationalSUCC.IterSUCC U n (U s) = U (ObservationalSUCC.IterSUCC U n s)\n'ObservationalSUCC.iter_succ_commutes' does not depend on any axioms\nObservationalSUCC.plateau_implies_action_congruence.{u, v} {S : Type u} {O : Type v} (q : S \u2192 O) (U : S \u2192 S) (h : Nat)\n  (plateau : \u2200 (s t : S), ObservationalSUCC.AgreeThrough q U h s t \u2192 ObservationalSUCC.AgreeThrough q U (h + 1) s t)\n  (s t : S) (hagree : ObservationalSUCC.AgreeThrough q U h s t) : ObservationalSUCC.AgreeThrough q U h (U s) (U t)\n'ObservationalSUCC.plateau_implies_action_congruence' does not depend on any axioms\nObservationalSUCC.plateau_certifies_all_future.{u, v} {S : Type u} {O : Type v} (q : S \u2192 O) (U : S \u2192 S) (h : Nat)\n  (plateau : \u2200 (s t : S), ObservationalSUCC.AgreeThrough q U h s t \u2192 ObservationalSUCC.AgreeThrough q U (h + 1) s t)\n  (s t : S) (hagree : ObservationalSUCC.AgreeThrough q U h s t) (n : Nat) :\n  q (ObservationalSUCC.IterSUCC U n s) = q (ObservationalSUCC.IterSUCC U n t)\n'ObservationalSUCC.plateau_certifies_all_future' does not depend on any axioms\nObservationalSUCC.plateau_iff_complete_future_equivalence.{u, v} {S : Type u} {O : Type v} (q : S \u2192 O) (U : S \u2192 S)\n  (h : Nat)\n  (plateau : \u2200 (s t : S), ObservationalSUCC.AgreeThrough q U h s t \u2192 ObservationalSUCC.AgreeThrough q U (h + 1) s t)\n  (s t : S) :\n  ObservationalSUCC.AgreeThrough q U h s t \u2194\n    \u2200 (n : Nat), q (ObservationalSUCC.IterSUCC U n s) = q (ObservationalSUCC.IterSUCC U n t)\n'ObservationalSUCC.plateau_iff_complete_future_equivalence' does not depend on any axioms\n",
+      "theorem_axioms": {
+        "ObservationalSUCC.iter_succ_commutes": [],
+        "ObservationalSUCC.plateau_certifies_all_future": [],
+        "ObservationalSUCC.plateau_iff_complete_future_equivalence": [],
+        "ObservationalSUCC.plateau_implies_action_congruence": []
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-9s4ndjnp/EODCS_OrderAdjunction.lean"
+      ],
+      "expected_acceptance": true,
+      "name": "EODCS_OrderAdjunction.lean",
+      "returncode": 0,
+      "source_sha256": "acf381262c1a564413d647c2724c836f8c0a7cf54aa4dea6c4ec09c817826415",
+      "stderr": "",
+      "stdout": "ObservationalSUCC.monotone_comp.{u, v, w} {A : Type u} {B : Type v} {C : Type w} (ra : A \u2192 A \u2192 Prop) (rb : B \u2192 B \u2192 Prop)\n  (rc : C \u2192 C \u2192 Prop) (f : A \u2192 B) (g : B \u2192 C) (hf : ObservationalSUCC.Monotone ra rb f)\n  (hg : ObservationalSUCC.Monotone rb rc g) : ObservationalSUCC.Monotone ra rc fun x => g (f x)\n'ObservationalSUCC.monotone_comp' does not depend on any axioms\nObservationalSUCC.adjunction_unit.{u, v} {A : Type u} {B : Type v} (ra : A \u2192 A \u2192 Prop) (rb : B \u2192 B \u2192 Prop) (f : A \u2192 B)\n  (g : B \u2192 A) (reflB : \u2200 (y : B), rb y y) (adj : ObservationalSUCC.IsAdjunction ra rb f g) (x : A) : ra x (g (f x))\n'ObservationalSUCC.adjunction_unit' does not depend on any axioms\nObservationalSUCC.adjunction_counit.{u, v} {A : Type u} {B : Type v} (ra : A \u2192 A \u2192 Prop) (rb : B \u2192 B \u2192 Prop) (f : A \u2192 B)\n  (g : B \u2192 A) (reflA : \u2200 (x : A), ra x x) (adj : ObservationalSUCC.IsAdjunction ra rb f g) (y : B) : rb (f (g y)) y\n'ObservationalSUCC.adjunction_counit' does not depend on any axioms\nObservationalSUCC.right_adjoint_unique.{u, v} {A : Type u} {B : Type v} (ra : A \u2192 A \u2192 Prop) (rb : B \u2192 B \u2192 Prop)\n  (f : A \u2192 B) (g\u2081 g\u2082 : B \u2192 A) (reflA : \u2200 (x : A), ra x x) (antisymA : \u2200 (x y : A), ra x y \u2192 ra y x \u2192 x = y)\n  (h\u2081 : ObservationalSUCC.IsAdjunction ra rb f g\u2081) (h\u2082 : ObservationalSUCC.IsAdjunction ra rb f g\u2082) (y : B) :\n  g\u2081 y = g\u2082 y\n'ObservationalSUCC.right_adjoint_unique' does not depend on any axioms\nObservationalSUCC.sufficient_order_quotient_factorization.{u, v, w} {A : Type u} {B : Type v} {C : Type w}\n  (ra : A \u2192 A \u2192 Prop) (rb : B \u2192 B \u2192 Prop) (rc : C \u2192 C \u2192 Prop) (f : A \u2192 B) (h : A \u2192 C) (surj : \u2200 (y : B), \u2203 x, f x = y)\n  (fiber : \u2200 (x x' : A), f x = f x' \u2192 h x = h x') (hmono : ObservationalSUCC.Monotone ra rc h)\n  (lifts : \u2200 (y z : B), rb y z \u2192 \u2203 x x', f x = y \u2227 f x' = z \u2227 ra x x') :\n  \u2203 g,\n    (\u2200 (x : A), g (f x) = h x) \u2227\n      ObservationalSUCC.Monotone rb rc g \u2227 \u2200 (g' : B \u2192 C), (\u2200 (x : A), g' (f x) = h x) \u2192 \u2200 (y : B), g' y = g y\n'ObservationalSUCC.sufficient_order_quotient_factorization' depends on axioms: [Classical.choice]\n",
+      "theorem_axioms": {
+        "ObservationalSUCC.adjunction_counit": [],
+        "ObservationalSUCC.adjunction_unit": [],
+        "ObservationalSUCC.monotone_comp": [],
+        "ObservationalSUCC.right_adjoint_unique": [],
+        "ObservationalSUCC.sufficient_order_quotient_factorization": [
+          "Classical.choice"
+        ]
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-lh7s6slm/EODCS_RelationalChoice.lean"
+      ],
+      "expected_acceptance": true,
+      "name": "EODCS_RelationalChoice.lean",
+      "returncode": 0,
+      "source_sha256": "91dd9189618f2e861f22898d4e8ca2405917abb924f5266ca2eb3788964bae67",
+      "stderr": "",
+      "stdout": "ObservationalSUCC.support_transition_requires_fiber_invariance.{u, v, w, z} {S : Type u} {O : Type v} {T : Type w}\n  {P : Type z} (q : S \u2192 O) (next : S \u2192 T \u2192 Prop) (qNext : T \u2192 P) (V : O \u2192 P \u2192 Prop)\n  (square : \u2200 (s : S) (p : P), V (q s) p \u2194 ObservationalSUCC.FutureSupport next qNext s p) :\n  ObservationalSUCC.SupportCompatible q next qNext\n'ObservationalSUCC.support_transition_requires_fiber_invariance' does not depend on any axioms\nObservationalSUCC.support_transition_exists_of_fiber_invariance.{u, v, w, z} {S : Type u} {O : Type v} {T : Type w}\n  {P : Type z} (q : S \u2192 O) (next : S \u2192 T \u2192 Prop) (qNext : T \u2192 P) (surj : \u2200 (o : O), \u2203 s, q s = o)\n  (invariant : ObservationalSUCC.SupportCompatible q next qNext) :\n  \u2203 V, \u2200 (s : S) (p : P), V (q s) p \u2194 ObservationalSUCC.FutureSupport next qNext s p\n'ObservationalSUCC.support_transition_exists_of_fiber_invariance' depends on axioms: [Classical.choice]\nObservationalSUCC.support_transport_iff_fiber_invariance.{u, v, w, z} {S : Type u} {O : Type v} {T : Type w}\n  {P : Type z} (q : S \u2192 O) (next : S \u2192 T \u2192 Prop) (qNext : T \u2192 P) (surj : \u2200 (o : O), \u2203 s, q s = o) :\n  (\u2203 V, \u2200 (s : S) (p : P), V (q s) p \u2194 ObservationalSUCC.FutureSupport next qNext s p) \u2194\n    ObservationalSUCC.SupportCompatible q next qNext\n'ObservationalSUCC.support_transport_iff_fiber_invariance' depends on axioms: [Classical.choice]\nObservationalSUCC.unique_future_report_of_nonempty_singleton_support.{u, v, w} {S : Type u} {T : Type v} {P : Type w}\n  (next : S \u2192 T \u2192 Prop) (qNext : T \u2192 P) (s : S) (nonempty : \u2203 t, next s t)\n  (constant : \u2200 (t u : T), next s t \u2192 next s u \u2192 qNext t = qNext u) :\n  \u2203 p,\n    ObservationalSUCC.FutureSupport next qNext s p \u2227\n      \u2200 (p' : P), ObservationalSUCC.FutureSupport next qNext s p' \u2192 p' = p\n'ObservationalSUCC.unique_future_report_of_nonempty_singleton_support' does not depend on any axioms\nObservationalSUCC.support_pair_universal.{u, v, w, z} {S : Type u} {A : Type v} {O : Type w} {P : Type z} (q : S \u2192 O)\n  (support : S \u2192 P \u2192 Prop) (alternative : S \u2192 A) (decodeOld : A \u2192 O) (decodeNext : A \u2192 P \u2192 Prop)\n  (old : \u2200 (s : S), decodeOld (alternative s) = q s)\n  (future : \u2200 (s : S) (p : P), decodeNext (alternative s) p \u2194 support s p) :\n  \u2203 F, \u2200 (s : S), F (alternative s) = (q s, support s)\n'ObservationalSUCC.support_pair_universal' depends on axioms: [propext, Quot.sound]\nObservationalSUCC.source_support_bounded_by_may_common.{u, v, w, z} {S : Type u} {O : Type v} {T : Type w} {P : Type z}\n  (q : S \u2192 O) (next : S \u2192 T \u2192 Prop) (qNext : T \u2192 P) (s : S) (p : P) :\n  ObservationalSUCC.CommonPossible q next qNext (q s) p \u2192\n    ObservationalSUCC.FutureSupport next qNext s p \u2227 ObservationalSUCC.MayReport q next qNext (q s) p\n'ObservationalSUCC.source_support_bounded_by_may_common' does not depend on any axioms\nObservationalSUCC.support_invariant_implies_exact_envelopes.{u, v, w, z} {S : Type u} {O : Type v} {T : Type w}\n  {P : Type z} (q : S \u2192 O) (next : S \u2192 T \u2192 Prop) (qNext : T \u2192 P) (surj : \u2200 (o : O), \u2203 s, q s = o)\n  (invariant : ObservationalSUCC.SupportCompatible q next qNext) (o : O) (p : P) :\n  ObservationalSUCC.MayReport q next qNext o p \u2194 ObservationalSUCC.CommonPossible q next qNext o p\n'ObservationalSUCC.support_invariant_implies_exact_envelopes' does not depend on any axioms\nObservationalSUCC.exact_envelopes_iff_support_transport.{u, v, w, z} {S : Type u} {O : Type v} {T : Type w} {P : Type z}\n  (q : S \u2192 O) (next : S \u2192 T \u2192 Prop) (qNext : T \u2192 P) (surj : \u2200 (o : O), \u2203 s, q s = o) :\n  (\u2200 (o : O) (p : P),\n      ObservationalSUCC.MayReport q next qNext o p \u2194 ObservationalSUCC.CommonPossible q next qNext o p) \u2194\n    ObservationalSUCC.SupportCompatible q next qNext\n'ObservationalSUCC.exact_envelopes_iff_support_transport' does not depend on any axioms\nObservationalSUCC.may_is_least_sound_overapproximation.{u, v, w, z} {S : Type u} {O : Type v} {T : Type w} {P : Type z}\n  (q : S \u2192 O) (next : S \u2192 T \u2192 Prop) (qNext : T \u2192 P) (upper : O \u2192 P \u2192 Prop)\n  (sound : \u2200 (s : S) (p : P), ObservationalSUCC.FutureSupport next qNext s p \u2192 upper (q s) p) (o : O) (p : P) :\n  ObservationalSUCC.MayReport q next qNext o p \u2192 upper o p\n'ObservationalSUCC.may_is_least_sound_overapproximation' does not depend on any axioms\nObservationalSUCC.common_is_greatest_sound_underapproximation.{u, v, w, z} {S : Type u} {O : Type v} {T : Type w}\n  {P : Type z} (q : S \u2192 O) (next : S \u2192 T \u2192 Prop) (qNext : T \u2192 P) (lower : O \u2192 P \u2192 Prop)\n  (sound : \u2200 (s : S) (p : P), lower (q s) p \u2192 ObservationalSUCC.FutureSupport next qNext s p) (o : O) (p : P) :\n  lower o p \u2192 ObservationalSUCC.CommonPossible q next qNext o p\n'ObservationalSUCC.common_is_greatest_sound_underapproximation' does not depend on any axioms\n",
+      "theorem_axioms": {
+        "ObservationalSUCC.common_is_greatest_sound_underapproximation": [],
+        "ObservationalSUCC.exact_envelopes_iff_support_transport": [],
+        "ObservationalSUCC.may_is_least_sound_overapproximation": [],
+        "ObservationalSUCC.source_support_bounded_by_may_common": [],
+        "ObservationalSUCC.support_invariant_implies_exact_envelopes": [],
+        "ObservationalSUCC.support_pair_universal": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.support_transition_exists_of_fiber_invariance": [
+          "Classical.choice"
+        ],
+        "ObservationalSUCC.support_transition_requires_fiber_invariance": [],
+        "ObservationalSUCC.support_transport_iff_fiber_invariance": [
+          "Classical.choice"
+        ],
+        "ObservationalSUCC.unique_future_report_of_nonempty_singleton_support": []
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-gv8bnsal/EODCS_VoyagerMemoryDebt.lean"
+      ],
+      "expected_acceptance": true,
+      "name": "EODCS_VoyagerMemoryDebt.lean",
+      "returncode": 0,
+      "source_sha256": "10ff181c0614dd0c5b6f8f221921754e5be62da762a75d307f2b6208d74878ed",
+      "stderr": "",
+      "stdout": "/tmp/succ-audit-c-gv8bnsal/EODCS_VoyagerMemoryDebt.lean:79:23: warning: unused variable `positive`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nObservationalSUCC.memory_iter_add.{u} {S : Type u} (step : S \u2192 S) (s : S) (n k : Nat) :\n  ObservationalSUCC.MemoryIter step (n + k) s =\n    ObservationalSUCC.MemoryIter step k (ObservationalSUCC.MemoryIter step n s)\n'ObservationalSUCC.memory_iter_add' depends on axioms: [propext]\nObservationalSUCC.repeated_source_state_repeats_all_later_reports.{u} {S : Type u} (step : S \u2192 S) (report : S \u2192 Bool)\n  (s : S) (i j : Nat) (same : ObservationalSUCC.MemoryIter step i s = ObservationalSUCC.MemoryIter step j s) (k : Nat) :\n  report (ObservationalSUCC.MemoryIter step (i + k) s) = report (ObservationalSUCC.MemoryIter step (j + k) s)\n'ObservationalSUCC.repeated_source_state_repeats_all_later_reports' depends on axioms: [propext]\nObservationalSUCC.zero_gap_forces_distinct_source_states.{u} {S : Type u} (step : S \u2192 S) (report : S \u2192 Bool) (s : S)\n  (start stop i j : Nat) (order : start \u2264 i \u2227 i < j \u2227 j \u2264 stop)\n  (zeros : \u2200 (t : Nat), start \u2264 t \u2192 t < stop \u2192 report (ObservationalSUCC.MemoryIter step t s) = false)\n  (one : report (ObservationalSUCC.MemoryIter step stop s) = true) :\n  ObservationalSUCC.MemoryIter step i s \u2260 ObservationalSUCC.MemoryIter step j s\n'ObservationalSUCC.zero_gap_forces_distinct_source_states' depends on axioms: [propext, Classical.choice, Quot.sound]\nObservationalSUCC.pulse_gap_injective_states.{u} {S : Type u} (step : S \u2192 S) (report : S \u2192 Bool) (s : S) (p : Nat)\n  (positive : 0 < p)\n  (zeros : \u2200 (t : Nat), p + 1 \u2264 t \u2192 t < 2 * p \u2192 report (ObservationalSUCC.MemoryIter step t s) = false)\n  (one : report (ObservationalSUCC.MemoryIter step (2 * p) s) = true) (i j : Fin p) :\n  ObservationalSUCC.MemoryIter step (p + 1 + \u2191i) s = ObservationalSUCC.MemoryIter step (p + 1 + \u2191j) s \u2192 i = j\n'ObservationalSUCC.pulse_gap_injective_states' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "theorem_axioms": {
+        "ObservationalSUCC.memory_iter_add": [
+          "propext"
+        ],
+        "ObservationalSUCC.pulse_gap_injective_states": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.repeated_source_state_repeats_all_later_reports": [
+          "propext"
+        ],
+        "ObservationalSUCC.zero_gap_forces_distinct_source_states": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-yifsi7s5/EODCS_VoyagerPhantom.lean"
+      ],
+      "expected_acceptance": true,
+      "name": "EODCS_VoyagerPhantom.lean",
+      "returncode": 0,
+      "source_sha256": "b3efb3e6b22dbb87a13c30975021df81180d8cf20f37d817e9dc99c0021549ec",
+      "stderr": "",
+      "stdout": "ObservationalSUCC.zero_tail_approximant_in_source (h : Nat) :\n  ObservationalSUCC.EventuallyZero (ObservationalSUCC.ZeroTailApproximation h)\n'ObservationalSUCC.zero_tail_approximant_in_source' depends on axioms: [propext]\nObservationalSUCC.zero_tail_matches_first_h_reports (h n : Nat) :\n  n < h \u2192 ObservationalSUCC.ZeroTailApproximation h n = true\n'ObservationalSUCC.zero_tail_matches_first_h_reports' depends on axioms: [propext]\nObservationalSUCC.all_true_finite_horizon_source_realizable (h : Nat) :\n  \u2203 stream, ObservationalSUCC.EventuallyZero stream \u2227 \u2200 (n : Nat), n < h \u2192 stream n = true\n'ObservationalSUCC.all_true_finite_horizon_source_realizable' depends on axioms: [propext]\nObservationalSUCC.all_true_not_originally_realizable : \u00acObservationalSUCC.EventuallyZero fun x => true\n'ObservationalSUCC.all_true_not_originally_realizable' does not depend on any axioms\nObservationalSUCC.shift_head_observes_original_index (h : Nat) (stream : Nat \u2192 Bool) :\n  ObservationalSUCC.IteratedStreamShift h stream 0 = stream h\n'ObservationalSUCC.shift_head_observes_original_index' does not depend on any axioms\nObservationalSUCC.eventually_zero_closed_under_shift (stream : Nat \u2192 Bool)\n  (h : ObservationalSUCC.EventuallyZero stream) :\n  ObservationalSUCC.EventuallyZero (ObservationalSUCC.StreamShift stream)\n'ObservationalSUCC.eventually_zero_closed_under_shift' does not depend on any axioms\nObservationalSUCC.finite_stage_compatibility_does_not_force_actualization :\n  (\u2200 (h : Nat), \u2203 stream, ObservationalSUCC.EventuallyZero stream \u2227 \u2200 (n : Nat), n < h \u2192 stream n = true) \u2227\n    \u00ac\u2203 stream, ObservationalSUCC.EventuallyZero stream \u2227 \u2200 (n : Nat), stream n = true\n'ObservationalSUCC.finite_stage_compatibility_does_not_force_actualization' depends on axioms: [propext]\nObservationalSUCC.listed_probe_below_max (indices : List Nat) (n : Nat) (h : n \u2208 indices) :\n  n \u2264 ObservationalSUCC.ProbeListMaximum indices\n'ObservationalSUCC.listed_probe_below_max' depends on axioms: [propext]\nObservationalSUCC.finite_patch_is_a_genuine_source (probes : List Nat) :\n  ObservationalSUCC.EventuallyZero (ObservationalSUCC.FinitePatchedStream probes)\n'ObservationalSUCC.finite_patch_is_a_genuine_source' depends on axioms: [propext, Quot.sound]\nObservationalSUCC.finite_patch_matches_every_requested_probe (probes : List Nat) (n : Nat) (member : n \u2208 probes) :\n  ObservationalSUCC.FinitePatchedStream probes n = true\n'ObservationalSUCC.finite_patch_matches_every_requested_probe' depends on axioms: [propext, Quot.sound]\nObservationalSUCC.all_true_every_finite_probe_family_consistent (probes : List Nat) :\n  \u2203 stream, ObservationalSUCC.EventuallyZero stream \u2227 \u2200 (n : Nat), n \u2208 probes \u2192 stream n = true\n'ObservationalSUCC.all_true_every_finite_probe_family_consistent' depends on axioms: [propext, Quot.sound]\nObservationalSUCC.arbitrary_finite_compatibility_not_global_realization :\n  (\u2200 (probes : List Nat),\n      \u2203 stream, ObservationalSUCC.EventuallyZero stream \u2227 \u2200 (n : Nat), n \u2208 probes \u2192 stream n = true) \u2227\n    \u00ac\u2203 stream, ObservationalSUCC.EventuallyZero stream \u2227 \u2200 (n : Nat), stream n = true\n'ObservationalSUCC.arbitrary_finite_compatibility_not_global_realization' depends on axioms: [propext, Quot.sound]\nObservationalSUCC.finite_support_patch_eventually_zero (probes : List Nat) (target : Nat \u2192 Bool) :\n  ObservationalSUCC.EventuallyZero (ObservationalSUCC.FiniteSupportPatch probes target)\n'ObservationalSUCC.finite_support_patch_eventually_zero' depends on axioms: [propext, Quot.sound]\nObservationalSUCC.cofinite_support_patch_not_eventually_zero (probes : List Nat) (target : Nat \u2192 Bool) :\n  \u00acObservationalSUCC.EventuallyZero (ObservationalSUCC.CofiniteSupportPatch probes target)\n'ObservationalSUCC.cofinite_support_patch_not_eventually_zero' depends on axioms: [propext, Quot.sound]\nObservationalSUCC.no_finite_probe_family_decides_eventual_zero (target : Nat \u2192 Bool) (probes : List Nat) :\n  \u2203 x y,\n    ObservationalSUCC.EventuallyZero x \u2227\n      \u00acObservationalSUCC.EventuallyZero y \u2227 \u2200 (n : Nat), n \u2208 probes \u2192 x n = target n \u2227 y n = target n\n'ObservationalSUCC.no_finite_probe_family_decides_eventual_zero' depends on axioms: [propext, Quot.sound]\n",
+      "theorem_axioms": {
+        "ObservationalSUCC.all_true_every_finite_probe_family_consistent": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.all_true_finite_horizon_source_realizable": [
+          "propext"
+        ],
+        "ObservationalSUCC.all_true_not_originally_realizable": [],
+        "ObservationalSUCC.arbitrary_finite_compatibility_not_global_realization": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cofinite_support_patch_not_eventually_zero": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.eventually_zero_closed_under_shift": [],
+        "ObservationalSUCC.finite_patch_is_a_genuine_source": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.finite_patch_matches_every_requested_probe": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.finite_stage_compatibility_does_not_force_actualization": [
+          "propext"
+        ],
+        "ObservationalSUCC.finite_support_patch_eventually_zero": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.listed_probe_below_max": [
+          "propext"
+        ],
+        "ObservationalSUCC.no_finite_probe_family_decides_eventual_zero": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.shift_head_observes_original_index": [],
+        "ObservationalSUCC.zero_tail_approximant_in_source": [
+          "propext"
+        ],
+        "ObservationalSUCC.zero_tail_matches_first_h_reports": [
+          "propext"
+        ]
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-cicoaeg4/EODCS_VoyagerTrace.lean"
+      ],
+      "expected_acceptance": true,
+      "name": "EODCS_VoyagerTrace.lean",
+      "returncode": 0,
+      "source_sha256": "362ac838bf4ec3826d149bb896d01c747e1383988e49603d5113be3f97fd0b25",
+      "stderr": "",
+      "stdout": "ObservationalSUCC.voyager_trace_derivative.{u, v, w} {S : Type u} {A : Type v} {O : Type w} (step : A \u2192 S \u2192 S)\n  (report : S \u2192 O) (a : A) (s : S) (word : List A) :\n  ObservationalSUCC.VoyagerTrace step report (step a s) word = ObservationalSUCC.VoyagerTrace step report s (a :: word)\n'ObservationalSUCC.voyager_trace_derivative' does not depend on any axioms\nObservationalSUCC.voyager_run_morphism.{u, v, w} {S : Type u} {T : Type v} {A : Type w} (stepS : A \u2192 S \u2192 S)\n  (stepT : A \u2192 T \u2192 T) (f : S \u2192 T) (square : \u2200 (a : A) (s : S), f (stepS a s) = stepT a (f s)) (s : S) (word : List A) :\n  f (ObservationalSUCC.VoyagerRun stepS s word) = ObservationalSUCC.VoyagerRun stepT (f s) word\n'ObservationalSUCC.voyager_run_morphism' does not depend on any axioms\nObservationalSUCC.voyager_trace_naturality.{u, v, w, z} {S : Type u} {T : Type v} {A : Type w} {O : Type z}\n  (stepS : A \u2192 S \u2192 S) (stepT : A \u2192 T \u2192 T) (reportS : S \u2192 O) (reportT : T \u2192 O) (f : S \u2192 T)\n  (square : \u2200 (a : A) (s : S), f (stepS a s) = stepT a (f s)) (readout : \u2200 (s : S), reportT (f s) = reportS s) (s : S)\n  (word : List A) :\n  ObservationalSUCC.VoyagerTrace stepT reportT (f s) word = ObservationalSUCC.VoyagerTrace stepS reportS s word\n'ObservationalSUCC.voyager_trace_naturality' does not depend on any axioms\nObservationalSUCC.voyager_trace_kernel_action_congruence.{u, v, w} {S : Type u} {A : Type v} {O : Type w}\n  (step : A \u2192 S \u2192 S) (report : S \u2192 O) (s t : S)\n  (same :\n    \u2200 (word : List A),\n      ObservationalSUCC.VoyagerTrace step report s word = ObservationalSUCC.VoyagerTrace step report t word)\n  (a : A) (word : List A) :\n  ObservationalSUCC.VoyagerTrace step report (step a s) word =\n    ObservationalSUCC.VoyagerTrace step report (step a t) word\n'ObservationalSUCC.voyager_trace_kernel_action_congruence' does not depend on any axioms\nObservationalSUCC.realized_implies_finitely_compatible.{u, v, w} {S : Type u} {W : Type v} {O : Type w}\n  (trace : S \u2192 W \u2192 O) (profile : W \u2192 O) (actual : \u2203 s, \u2200 (w : W), trace s w = profile w) :\n  ObservationalSUCC.FinitelyCompatible trace profile\n'ObservationalSUCC.realized_implies_finitely_compatible' does not depend on any axioms\nObservationalSUCC.finite_enumeration_realization_or_refutation.{u, v, w} {S : Type u} {W : Type v} {O : Type w}\n  (states : List S) (cover : \u2200 (s : S), s \u2208 states) (trace : S \u2192 W \u2192 O) (profile : W \u2192 O) :\n  (\u2203 s, \u2200 (w : W), trace s w = profile w) \u2228\n    \u2203 probes, probes.length = states.length \u2227 \u2200 (s : S), \u2203 w, w \u2208 probes \u2227 trace s w \u2260 profile w\n'ObservationalSUCC.finite_enumeration_realization_or_refutation' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\nObservationalSUCC.finite_enumeration_compatible_implies_realized.{u, v, w} {S : Type u} {W : Type v} {O : Type w}\n  (states : List S) (cover : \u2200 (s : S), s \u2208 states) (trace : S \u2192 W \u2192 O) (profile : W \u2192 O)\n  (compatible : ObservationalSUCC.FinitelyCompatible trace profile) : \u2203 s, \u2200 (w : W), trace s w = profile w\n'ObservationalSUCC.finite_enumeration_compatible_implies_realized' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "theorem_axioms": {
+        "ObservationalSUCC.finite_enumeration_compatible_implies_realized": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.finite_enumeration_realization_or_refutation": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.realized_implies_finitely_compatible": [],
+        "ObservationalSUCC.voyager_run_morphism": [],
+        "ObservationalSUCC.voyager_trace_derivative": [],
+        "ObservationalSUCC.voyager_trace_kernel_action_congruence": [],
+        "ObservationalSUCC.voyager_trace_naturality": []
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-omuugas3/CAMBRIAN_AUDIT_C_CONTROLS.lean"
+      ],
+      "expected_acceptance": true,
+      "name": "CAMBRIAN_AUDIT_C_CONTROLS.lean",
+      "returncode": 0,
+      "source_sha256": "fa7dd563daaef1bc932a98ebfcafddb2fafc0098562645d7cfc7c07df71135aa",
+      "stderr": "",
+      "stdout": "'ObservationalSUCC.cambrian_finite_prefixes_realize_one_history' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.cambrian_countdown_no_infinite_history' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_menu_complete' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_menu_contains_non_successor' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_relation_is_nondeterministic' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_infinite_state_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.infinite_root_arbitrarily_extendable' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.infinite_root_no_infinite_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.infinite_root_has_no_finite_complete_menu' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.alternating_every_depth_has_a_finite_menu_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_no_uniform_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_lacks_downward_closure' depends on axioms: [propext]\n'CambrianAudit.growing_menu_complete' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_menu_contains_non_successor' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_relation_is_nondeterministic' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_can_follow' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_infinite_state_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.countdown_embeds_after_root' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.infinite_root_arbitrarily_extendable' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.infinite_root_no_infinite_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.listed_below_maximum' depends on axioms: [propext]\n'CambrianAudit.infinite_root_has_no_finite_complete_menu' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.alternating_every_depth_has_a_finite_menu_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_no_uniform_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_lacks_downward_closure' depends on axioms: [propext]\n",
+      "theorem_axioms": {
+        "CambrianAudit.alternating_every_depth_has_a_finite_menu_witness": [
+          "propext"
+        ],
+        "CambrianAudit.alternating_lacks_downward_closure": [
+          "propext"
+        ],
+        "CambrianAudit.alternating_no_uniform_witness": [
+          "propext"
+        ],
+        "CambrianAudit.countdown_embeds_after_root": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_can_follow": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_infinite_state_history": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_menu_complete": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_menu_contains_non_successor": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_relation_is_nondeterministic": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.infinite_root_arbitrarily_extendable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.infinite_root_has_no_finite_complete_menu": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.infinite_root_no_infinite_history": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.listed_below_maximum": [
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_countdown_no_infinite_history": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_finite_prefixes_realize_one_history": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-ybmovmn1/false_zero_eq_one.lean"
+      ],
+      "expected_acceptance": false,
+      "name": "false_zero_eq_one.lean",
+      "returncode": 1,
+      "source_sha256": "5375ca90d5dc1518dfcae798820db46ced29e2482a77cb5df42149e716fb3606",
+      "stderr": "",
+      "stdout": "/tmp/succ-audit-c-ybmovmn1/false_zero_eq_one.lean:3:2: error: tactic 'rfl' failed, the left-hand side\n  0\nis not definitionally equal to the right-hand side\n  1\n\u22a2 0 = 1\n",
+      "theorem_axioms": {},
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-pj897zus/missing_finite_successor_completeness.lean"
+      ],
+      "expected_acceptance": false,
+      "name": "missing_finite_successor_completeness.lean",
+      "returncode": 1,
+      "source_sha256": "ea884baf1396dab6c453c9994262574ef353262122a35383b30dae14854ac2cf",
+      "stderr": "",
+      "stdout": "'ObservationalSUCC.cambrian_finite_prefixes_realize_one_history' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.cambrian_countdown_no_infinite_history' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_menu_complete' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_menu_contains_non_successor' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_relation_is_nondeterministic' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_infinite_state_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.infinite_root_arbitrarily_extendable' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.infinite_root_no_infinite_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.infinite_root_has_no_finite_complete_menu' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.alternating_every_depth_has_a_finite_menu_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_no_uniform_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_lacks_downward_closure' depends on axioms: [propext]\n'CambrianAudit.growing_menu_complete' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_menu_contains_non_successor' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_relation_is_nondeterministic' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_can_follow' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_infinite_state_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.countdown_embeds_after_root' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.infinite_root_arbitrarily_extendable' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.infinite_root_no_infinite_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.listed_below_maximum' depends on axioms: [propext]\n'CambrianAudit.infinite_root_has_no_finite_complete_menu' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.alternating_every_depth_has_a_finite_menu_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_no_uniform_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_lacks_downward_closure' depends on axioms: [propext]\n/tmp/succ-audit-c-pj897zus/missing_finite_successor_completeness.lean:399:29: error: type mismatch, term\n  edge\nafter simplification has type\n  InfiniteRootRelation t s next : Prop\nbut is expected to have type\n  False : Prop\n",
+      "theorem_axioms": {
+        "CambrianAudit.alternating_every_depth_has_a_finite_menu_witness": [
+          "propext"
+        ],
+        "CambrianAudit.alternating_lacks_downward_closure": [
+          "propext"
+        ],
+        "CambrianAudit.alternating_no_uniform_witness": [
+          "propext"
+        ],
+        "CambrianAudit.countdown_embeds_after_root": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_can_follow": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_infinite_state_history": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_menu_complete": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_menu_contains_non_successor": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_relation_is_nondeterministic": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.infinite_root_arbitrarily_extendable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.infinite_root_has_no_finite_complete_menu": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.infinite_root_no_infinite_history": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.listed_below_maximum": [
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_countdown_no_infinite_history": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_finite_prefixes_realize_one_history": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-1ymcjkm0/invalid_finite_to_infinite_quantifier_swap.lean"
+      ],
+      "expected_acceptance": false,
+      "name": "invalid_finite_to_infinite_quantifier_swap.lean",
+      "returncode": 1,
+      "source_sha256": "fe6e8be127ee31fcf8b16394634440d595faedb2c8cbe409634d624c85bbccdb",
+      "stderr": "",
+      "stdout": "'ObservationalSUCC.cambrian_finite_prefixes_realize_one_history' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.cambrian_countdown_no_infinite_history' depends on axioms: [propext, Quot.sound]\n/tmp/succ-audit-c-1ymcjkm0/invalid_finite_to_infinite_quantifier_swap.lean:216:2: error: type mismatch\n  cambrian_countdown_all_finite_depths\nhas type\n  \u2200 (d : Nat), \u2203 s, CambrianCanFollow CambrianCountdown 0 d s : Prop\nbut is expected to have type\n  \u2203 history, \u2200 (t : Nat), CambrianCountdown t (history t) (history (t + 1)) : Prop\n",
+      "theorem_axioms": {
+        "ObservationalSUCC.cambrian_countdown_no_infinite_history": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_finite_prefixes_realize_one_history": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": {}
+    },
+    {
+      "calibrated": true,
+      "command": [
+        "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+        "/tmp/succ-audit-c-mfbzwdf1/missing_downward_closure.lean"
+      ],
+      "expected_acceptance": false,
+      "name": "missing_downward_closure.lean",
+      "returncode": 1,
+      "source_sha256": "7ee2e04bf838d2c018654b878b798ff8d41af03388d062ce6ad1614ac0eea0a2",
+      "stderr": "",
+      "stdout": "'ObservationalSUCC.cambrian_finite_prefixes_realize_one_history' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.cambrian_countdown_no_infinite_history' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_menu_complete' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_menu_contains_non_successor' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_relation_is_nondeterministic' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_infinite_state_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.infinite_root_arbitrarily_extendable' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.infinite_root_no_infinite_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.infinite_root_has_no_finite_complete_menu' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.alternating_every_depth_has_a_finite_menu_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_no_uniform_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_lacks_downward_closure' depends on axioms: [propext]\n'CambrianAudit.growing_menu_complete' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_menu_contains_non_successor' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_relation_is_nondeterministic' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_can_follow' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.growing_infinite_state_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.countdown_embeds_after_root' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.infinite_root_arbitrarily_extendable' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.infinite_root_no_infinite_history' depends on axioms: [propext, Classical.choice, Quot.sound]\n'CambrianAudit.listed_below_maximum' depends on axioms: [propext]\n'CambrianAudit.infinite_root_has_no_finite_complete_menu' depends on axioms: [propext, Quot.sound]\n'CambrianAudit.alternating_every_depth_has_a_finite_menu_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_no_uniform_witness' depends on axioms: [propext]\n'CambrianAudit.alternating_lacks_downward_closure' depends on axioms: [propext]\n/tmp/succ-audit-c-mfbzwdf1/missing_downward_closure.lean:397:30: error: type mismatch\n  hx\nhas type\n  Alternating d x : Prop\nbut is expected to have type\n  Alternating e x : Prop\n",
+      "theorem_axioms": {
+        "CambrianAudit.alternating_every_depth_has_a_finite_menu_witness": [
+          "propext"
+        ],
+        "CambrianAudit.alternating_lacks_downward_closure": [
+          "propext"
+        ],
+        "CambrianAudit.alternating_no_uniform_witness": [
+          "propext"
+        ],
+        "CambrianAudit.countdown_embeds_after_root": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_can_follow": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_infinite_state_history": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_menu_complete": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_menu_contains_non_successor": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.growing_relation_is_nondeterministic": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.infinite_root_arbitrarily_extendable": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.infinite_root_has_no_finite_complete_menu": [
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.infinite_root_no_infinite_history": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "CambrianAudit.listed_below_maximum": [
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_countdown_no_infinite_history": [
+          "Quot.sound",
+          "propext"
+        ],
+        "ObservationalSUCC.cambrian_finite_prefixes_realize_one_history": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "unexpected_axioms": {}
+    }
+  ],
+  "compiler_path": "/workspace/scratch/6d134115e8ca/lean-runtime/lean-4.14.0-linux/bin/lean",
+  "compiler_sha256": "eacf754d25ae86ea076882a34b9444f2485659d9df4266b821443b28ca95a215",
+  "compiler_version": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "compiler_version_returncode": 0,
+  "formal_source_hashes": {
+    "formal/EODCS_ActionClosure.lean": "132643b8cc5b3e07df84d0bba3bfb49c49587563efdbe69c2903ba0280683166",
+    "formal/EODCS_CambrianRealization.lean": "8260812a716cc8628ab16470219c92fc49772fd9fd3417ce73dc3c089e9c80cf",
+    "formal/EODCS_CausalDescent.lean": "624c5ca37a17e3f69500611f1552c5afbd2640fdd124becab8a9f70482d6b880",
+    "formal/EODCS_NerodePlateau.lean": "a4fa780c01b21988d35da3ac8eebeb2de5ea099969d6a52dbcebdd8f8cd41c2b",
+    "formal/EODCS_OrderAdjunction.lean": "8b50a10ee5718e546bcf838f19927d634793decebdbe0deb79cb80f570879ffd",
+    "formal/EODCS_RelationalChoice.lean": "d82d9d0dba815541b341ac4614e28c07a7dae1c635a38dcef37bc061f63e0178",
+    "formal/EODCS_VoyagerMemoryDebt.lean": "ebd28c1b189f53ce73955b34a2176d365377068998e4760cc2f23a43e331d05f",
+    "formal/EODCS_VoyagerPhantom.lean": "2730ce9aaca114af94ceabcc3f5e2f9491df48fdf317463f65b415a26aaa720c",
+    "formal/EODCS_VoyagerTrace.lean": "81572903530cf56610b3ade66a2b820cc227960cbbfccbb2b8a687a930374e38"
+  },
+  "inherited_module_count": 8,
+  "locator_path": "/workspace/scratch/6d134115e8ca/lean-runtime/self_exe_locator.so",
+  "locator_scope": "readlink override only own numeric /proc/pid/exe -> /proc/self/exe; source inspected",
+  "locator_sha256": "98a470cacdb82ebe2ce7141f08e51bb0b77e7eb4c863b290999b04ac8c88f6f5",
+  "locator_source_content": "#define _GNU_SOURCE\n#include <dlfcn.h>\n#include <stdio.h>\n#include <string.h>\n#include <unistd.h>\n/* Route ONLY this process's numeric proc executable lookup to the supported\n   /proc/self/exe alias.  No Lean proof, memory, or kernel routines are changed. */\nssize_t readlink(const char *path, char *buf, size_t size) {\n    ssize_t (*original)(const char*,char*,size_t) = dlsym(RTLD_NEXT,\"readlink\");\n    char own[80];\n    snprintf(own,sizeof(own),\"/proc/%d/exe\",getpid());\n    return original(strcmp(path,own)==0 ? \"/proc/self/exe\" : path,buf,size);\n}\n",
+  "locator_source_sha256": "d32ffa115e95719efcd57290830abda52a7abb12f7385d8f77564ff68f019f81",
+  "module_count": 9,
+  "new_module_count": 1,
+  "pr45": {
+    "commit": "b2774ca485db4b5b4f7ce92e535220352fb3af2f",
+    "compiled_in_this_audit": false,
+    "imported_into_4_14": false,
+    "source_correspondence_read": true,
+    "toolchain": "leanprover/lean4:v4.19.0"
+  },
+  "proof_scope": {
+    "dependent_state_types": true,
+    "determinism_or_stationarity_required": false,
+    "effective_branch_selector_checked": false,
+    "finite_complete_successor_supersets": true,
+    "finite_initial_candidate_list": true,
+    "physical_infinite_execution_checked": false,
+    "source_authentication_checked": false,
+    "topology_kernel_checked": false,
+    "uniform_finite_state_bound_required": false
+  },
+  "rejection_control_sources": {
+    "false_zero_eq_one.lean": "import Std.Tactic\nexample : (0 : Nat) = 1 := by\n  rfl\n",
+    "invalid_finite_to_infinite_quantifier_swap.lean": "import Std.Tactic\n/-!\n# CAMBRIAN C: time-varying nondeterministic history realization\n\nLean 4.14, core + Std only.  No topology library is imported.\nThis is the finitely branching (Koenig) specialization of the dossier's\ncompact closed-graph realization theorem, not its full topological proof.\n\nState types may change with time.  The transition relation need not be\ndeterministic, stationary, total, or invertible.  Each source state has a\nCOMPLETE finite list of possible successors.  An arbitrarily extendable\nstate then has one genuine infinite compatible history.  The selected\nbranch is classical and need not be computable from finite data.\n-/\nnamespace ObservationalSUCC\n\nuniverse u\n\ndef CambrianCanFollow {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop) :\n    (t : Nat) \u2192 Nat \u2192 S t \u2192 Prop\n  | _, 0, _ => True\n  | t, d+1, s => \u2203 next : S (t+1),\n      R t s next \u2227 CambrianCanFollow R (t+1) d next\n\ntheorem cambrian_can_follow_truncate\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop) :\n    \u2200 d t (s : S t) e, e \u2264 d \u2192\n      CambrianCanFollow R t d s \u2192 CambrianCanFollow R t e s := by\n  intro d\n  induction d with\n  | zero =>\n      intro t s e he _\n      have : e = 0 := by omega\n      subst e\n      trivial\n  | succ d ih =>\n      intro t s e he path\n      cases e with\n      | zero => trivial\n      | succ e =>\n          obtain \u27e8next, edge, tail\u27e9 := path\n          exact \u27e8next, edge, ih (t+1) next e (by omega) tail\u27e9\n\n/-- A finite menu cannot offer arbitrarily deep coherent witnesses unless\none menu member itself survives every depth.  Completeness of the menu\nand downward closure are explicit hypotheses. -/\ntheorem cambrian_finite_coherent_choice\n    {X : Type u} (menu : List X) (P : Nat \u2192 X \u2192 Prop)\n    (down : \u2200 e d x, e \u2264 d \u2192 P d x \u2192 P e x)\n    (every : \u2200 d, \u2203 x, x \u2208 menu \u2227 P d x) :\n    \u2203 x, x \u2208 menu \u2227 \u2200 d, P d x := by\n  classical\n  induction menu with\n  | nil =>\n      obtain \u27e8x, mem, _\u27e9 := every 0\n      simp at mem\n  | cons a rest ih =>\n      by_cases all : \u2200 d, P d a\n      \u00b7 exact \u27e8a, by simp, all\u27e9\n      \u00b7 have bad : \u2203 d, \u00ac P d a := by\n          by_cases witnessed : \u2203 d, \u00ac P d a\n          \u00b7 exact witnessed\n          \u00b7 apply False.elim\n            apply all\n            intro d\n            by_cases hd : P d a\n            \u00b7 exact hd\n            \u00b7 exact False.elim (witnessed \u27e8d, hd\u27e9)\n        obtain \u27e8k, hk\u27e9 := bad\n        have remaining : \u2200 d, \u2203 x, x \u2208 rest \u2227 P d x := by\n          intro d\n          obtain \u27e8x, mem, hx\u27e9 := every (max d k)\n          have neq : x \u2260 a := by\n            intro equal\n            subst x\n            exact hk (down k (max d k) a (Nat.le_max_right d k) hx)\n          have tailmem : x \u2208 rest := by\n            rcases List.mem_cons.mp mem with equal | tail\n            \u00b7 exact False.elim (neq equal)\n            \u00b7 exact tail\n          exact \u27e8x, tailmem,\n            down d (max d k) x (Nat.le_max_left d k) hx\u27e9\n        obtain \u27e8x, mem, hx\u27e9 := ih remaining\n        exact \u27e8x, by simp [mem], hx\u27e9\n\ndef CambrianExtendable {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (t : Nat) (s : S t) : Prop :=\n  \u2200 d, CambrianCanFollow R t d s\n\ntheorem cambrian_extendable_successor\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (menu : (t : Nat) \u2192 S t \u2192 List (S (t+1)))\n    (complete : \u2200 t s next, R t s next \u2192 next \u2208 menu t s)\n    (t : Nat) (s : S t) (deep : CambrianExtendable R t s) :\n    \u2203 next, R t s next \u2227 CambrianExtendable R (t+1) next := by\n  let P : Nat \u2192 S (t+1) \u2192 Prop := fun d next =>\n    R t s next \u2227 CambrianCanFollow R (t+1) d next\n  have every : \u2200 d, \u2203 next, next \u2208 menu t s \u2227 P d next := by\n    intro d\n    obtain \u27e8next, edge, path\u27e9 := deep (d+1)\n    exact \u27e8next, complete t s next edge, edge, path\u27e9\n  have down : \u2200 e d next, e \u2264 d \u2192 P d next \u2192 P e next := by\n    intro e d next order hp\n    exact \u27e8hp.1, cambrian_can_follow_truncate\n      R d (t+1) next e order hp.2\u27e9\n  obtain \u27e8next, _, all\u27e9 :=\n    cambrian_finite_coherent_choice (menu t s) P down every\n  exact \u27e8next, (all 0).1, fun d => (all d).2\u27e9\n\n/-- Finitely branching realization for changing source types and arbitrary\ntime-dependent nondeterministic transition relations. -/\ntheorem cambrian_nondeterministic_history_realization\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (menu : (t : Nat) \u2192 S t \u2192 List (S (t+1)))\n    (complete : \u2200 t s next, R t s next \u2192 next \u2208 menu t s)\n    (start : S 0) (deep : CambrianExtendable R 0 start) :\n    \u2203 history : (t : Nat) \u2192 S t,\n      history 0 = start \u2227 \u2200 t, R t (history t) (history (t+1)) := by\n  classical\n  let E : Nat \u2192 Type u := fun t => {s : S t // CambrianExtendable R t s}\n  let next : (t : Nat) \u2192 E t \u2192 E (t+1) := fun t state =>\n    let witness := cambrian_extendable_successor\n      R menu complete t state.val state.property\n    \u27e8Classical.choose witness, (Classical.choose_spec witness).2\u27e9\n  let branch : (t : Nat) \u2192 E t :=\n    fun t => Nat.rec (motive := fun t => E t)\n      \u27e8start, deep\u27e9 (fun t state => next t state) t\n  refine \u27e8fun t => (branch t).val, rfl, ?_\u27e9\n  intro t\n  change R t (branch t).val (next t (branch t)).val\n  exact (Classical.choose_spec\n    (cambrian_extendable_successor R menu complete\n      t (branch t).val (branch t).property)).1\n\n/-- A COMPLETE finite list of initial source states may supply different\nstates at each finite horizon.  Finite branching still forces one initial\nstate and one infinite source history; a uniform finite state bound is\nnot assumed. -/\ntheorem cambrian_finite_prefixes_realize_one_history\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (menu : (t : Nat) \u2192 S t \u2192 List (S (t+1)))\n    (complete : \u2200 t s next, R t s next \u2192 next \u2208 menu t s)\n    (initial : List (S 0))\n    (prefixes : \u2200 d, \u2203 s, s \u2208 initial \u2227 CambrianCanFollow R 0 d s) :\n    \u2203 history : (t : Nat) \u2192 S t,\n      history 0 \u2208 initial \u2227 \u2200 t, R t (history t) (history (t+1)) := by\n  obtain \u27e8s, mem, deep\u27e9 := cambrian_finite_coherent_choice\n    initial (fun d s => CambrianCanFollow R 0 d s)\n    (fun e d s le path => cambrian_can_follow_truncate R d 0 s e le path)\n    prefixes\n  obtain \u27e8history, start, lawful\u27e9 :=\n    cambrian_nondeterministic_history_realization R menu complete s deep\n  exact \u27e8history, by rw [start]; exact mem, lawful\u27e9\n\ndef CambrianCountdown (_ : Nat) (x y : Nat) : Prop := x = y+1\n\n/-- Sharp failure without a finite initial source menu: a natural\ncountdown admits depth d exactly when its original state is at least d. -/\ntheorem cambrian_countdown_depth_iff :\n    \u2200 d t s, CambrianCanFollow CambrianCountdown t d s \u2194 d \u2264 s := by\n  intro d\n  induction d with\n  | zero =>\n      intro t s\n      constructor\n      \u00b7 intro _; exact Nat.zero_le s\n      \u00b7 intro _; trivial\n  | succ d ih =>\n      intro t s\n      constructor\n      \u00b7 rintro \u27e8next, edge, tail\u27e9\n        have smaller := (ih (t+1) next).mp tail\n        change s = next+1 at edge\n        omega\n      \u00b7 intro le\n        refine \u27e8s-1, ?_, ?_\u27e9\n        \u00b7 change s = (s-1)+1\n          omega\n        \u00b7 apply (ih (t+1) (s-1)).mpr\n          omega\n\ntheorem cambrian_countdown_all_finite_depths :\n    \u2200 d, \u2203 s, CambrianCanFollow CambrianCountdown 0 d s := by\n  intro d\n  exact \u27e8d, (cambrian_countdown_depth_iff d 0 d).mpr (Nat.le_refl d)\u27e9\n\ntheorem cambrian_countdown_no_infinite_history :\n    \u00ac \u2203 history : Nat \u2192 Nat,\n      \u2200 t, CambrianCountdown t (history t) (history (t+1)) := by\n  rintro \u27e8history, edges\u27e9\n  have budget : \u2200 n, history n + n = history 0 := by\n    intro n\n    induction n with\n    | zero => simp\n    | succ n ih =>\n        have edge := edges n\n        change history n = history (n+1)+1 at edge\n        omega\n  have exhausted := budget (history 0+1)\n  omega\n\nend ObservationalSUCC\n\n#print axioms ObservationalSUCC.cambrian_finite_prefixes_realize_one_history\n#print axioms ObservationalSUCC.cambrian_countdown_no_infinite_history\n\nopen ObservationalSUCC\nexample : \u2203 history : Nat \u2192 Nat,\n    \u2200 t, CambrianCountdown t (history t) (history (t+1)) := by\n  exact cambrian_countdown_all_finite_depths\n",
+    "missing_downward_closure.lean": "import Std.Tactic\n/-!\n# CAMBRIAN C: time-varying nondeterministic history realization\n\nLean 4.14, core + Std only.  No topology library is imported.\nThis is the finitely branching (Koenig) specialization of the dossier's\ncompact closed-graph realization theorem, not its full topological proof.\n\nState types may change with time.  The transition relation need not be\ndeterministic, stationary, total, or invertible.  Each source state has a\nCOMPLETE finite list of possible successors.  An arbitrarily extendable\nstate then has one genuine infinite compatible history.  The selected\nbranch is classical and need not be computable from finite data.\n-/\nnamespace ObservationalSUCC\n\nuniverse u\n\ndef CambrianCanFollow {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop) :\n    (t : Nat) \u2192 Nat \u2192 S t \u2192 Prop\n  | _, 0, _ => True\n  | t, d+1, s => \u2203 next : S (t+1),\n      R t s next \u2227 CambrianCanFollow R (t+1) d next\n\ntheorem cambrian_can_follow_truncate\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop) :\n    \u2200 d t (s : S t) e, e \u2264 d \u2192\n      CambrianCanFollow R t d s \u2192 CambrianCanFollow R t e s := by\n  intro d\n  induction d with\n  | zero =>\n      intro t s e he _\n      have : e = 0 := by omega\n      subst e\n      trivial\n  | succ d ih =>\n      intro t s e he path\n      cases e with\n      | zero => trivial\n      | succ e =>\n          obtain \u27e8next, edge, tail\u27e9 := path\n          exact \u27e8next, edge, ih (t+1) next e (by omega) tail\u27e9\n\n/-- A finite menu cannot offer arbitrarily deep coherent witnesses unless\none menu member itself survives every depth.  Completeness of the menu\nand downward closure are explicit hypotheses. -/\ntheorem cambrian_finite_coherent_choice\n    {X : Type u} (menu : List X) (P : Nat \u2192 X \u2192 Prop)\n    (down : \u2200 e d x, e \u2264 d \u2192 P d x \u2192 P e x)\n    (every : \u2200 d, \u2203 x, x \u2208 menu \u2227 P d x) :\n    \u2203 x, x \u2208 menu \u2227 \u2200 d, P d x := by\n  classical\n  induction menu with\n  | nil =>\n      obtain \u27e8x, mem, _\u27e9 := every 0\n      simp at mem\n  | cons a rest ih =>\n      by_cases all : \u2200 d, P d a\n      \u00b7 exact \u27e8a, by simp, all\u27e9\n      \u00b7 have bad : \u2203 d, \u00ac P d a := by\n          by_cases witnessed : \u2203 d, \u00ac P d a\n          \u00b7 exact witnessed\n          \u00b7 apply False.elim\n            apply all\n            intro d\n            by_cases hd : P d a\n            \u00b7 exact hd\n            \u00b7 exact False.elim (witnessed \u27e8d, hd\u27e9)\n        obtain \u27e8k, hk\u27e9 := bad\n        have remaining : \u2200 d, \u2203 x, x \u2208 rest \u2227 P d x := by\n          intro d\n          obtain \u27e8x, mem, hx\u27e9 := every (max d k)\n          have neq : x \u2260 a := by\n            intro equal\n            subst x\n            exact hk (down k (max d k) a (Nat.le_max_right d k) hx)\n          have tailmem : x \u2208 rest := by\n            rcases List.mem_cons.mp mem with equal | tail\n            \u00b7 exact False.elim (neq equal)\n            \u00b7 exact tail\n          exact \u27e8x, tailmem,\n            down d (max d k) x (Nat.le_max_left d k) hx\u27e9\n        obtain \u27e8x, mem, hx\u27e9 := ih remaining\n        exact \u27e8x, by simp [mem], hx\u27e9\n\ndef CambrianExtendable {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (t : Nat) (s : S t) : Prop :=\n  \u2200 d, CambrianCanFollow R t d s\n\ntheorem cambrian_extendable_successor\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (menu : (t : Nat) \u2192 S t \u2192 List (S (t+1)))\n    (complete : \u2200 t s next, R t s next \u2192 next \u2208 menu t s)\n    (t : Nat) (s : S t) (deep : CambrianExtendable R t s) :\n    \u2203 next, R t s next \u2227 CambrianExtendable R (t+1) next := by\n  let P : Nat \u2192 S (t+1) \u2192 Prop := fun d next =>\n    R t s next \u2227 CambrianCanFollow R (t+1) d next\n  have every : \u2200 d, \u2203 next, next \u2208 menu t s \u2227 P d next := by\n    intro d\n    obtain \u27e8next, edge, path\u27e9 := deep (d+1)\n    exact \u27e8next, complete t s next edge, edge, path\u27e9\n  have down : \u2200 e d next, e \u2264 d \u2192 P d next \u2192 P e next := by\n    intro e d next order hp\n    exact \u27e8hp.1, cambrian_can_follow_truncate\n      R d (t+1) next e order hp.2\u27e9\n  obtain \u27e8next, _, all\u27e9 :=\n    cambrian_finite_coherent_choice (menu t s) P down every\n  exact \u27e8next, (all 0).1, fun d => (all d).2\u27e9\n\n/-- Finitely branching realization for changing source types and arbitrary\ntime-dependent nondeterministic transition relations. -/\ntheorem cambrian_nondeterministic_history_realization\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (menu : (t : Nat) \u2192 S t \u2192 List (S (t+1)))\n    (complete : \u2200 t s next, R t s next \u2192 next \u2208 menu t s)\n    (start : S 0) (deep : CambrianExtendable R 0 start) :\n    \u2203 history : (t : Nat) \u2192 S t,\n      history 0 = start \u2227 \u2200 t, R t (history t) (history (t+1)) := by\n  classical\n  let E : Nat \u2192 Type u := fun t => {s : S t // CambrianExtendable R t s}\n  let next : (t : Nat) \u2192 E t \u2192 E (t+1) := fun t state =>\n    let witness := cambrian_extendable_successor\n      R menu complete t state.val state.property\n    \u27e8Classical.choose witness, (Classical.choose_spec witness).2\u27e9\n  let branch : (t : Nat) \u2192 E t :=\n    fun t => Nat.rec (motive := fun t => E t)\n      \u27e8start, deep\u27e9 (fun t state => next t state) t\n  refine \u27e8fun t => (branch t).val, rfl, ?_\u27e9\n  intro t\n  change R t (branch t).val (next t (branch t)).val\n  exact (Classical.choose_spec\n    (cambrian_extendable_successor R menu complete\n      t (branch t).val (branch t).property)).1\n\n/-- A COMPLETE finite list of initial source states may supply different\nstates at each finite horizon.  Finite branching still forces one initial\nstate and one infinite source history; a uniform finite state bound is\nnot assumed. -/\ntheorem cambrian_finite_prefixes_realize_one_history\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (menu : (t : Nat) \u2192 S t \u2192 List (S (t+1)))\n    (complete : \u2200 t s next, R t s next \u2192 next \u2208 menu t s)\n    (initial : List (S 0))\n    (prefixes : \u2200 d, \u2203 s, s \u2208 initial \u2227 CambrianCanFollow R 0 d s) :\n    \u2203 history : (t : Nat) \u2192 S t,\n      history 0 \u2208 initial \u2227 \u2200 t, R t (history t) (history (t+1)) := by\n  obtain \u27e8s, mem, deep\u27e9 := cambrian_finite_coherent_choice\n    initial (fun d s => CambrianCanFollow R 0 d s)\n    (fun e d s le path => cambrian_can_follow_truncate R d 0 s e le path)\n    prefixes\n  obtain \u27e8history, start, lawful\u27e9 :=\n    cambrian_nondeterministic_history_realization R menu complete s deep\n  exact \u27e8history, by rw [start]; exact mem, lawful\u27e9\n\ndef CambrianCountdown (_ : Nat) (x y : Nat) : Prop := x = y+1\n\n/-- Sharp failure without a finite initial source menu: a natural\ncountdown admits depth d exactly when its original state is at least d. -/\ntheorem cambrian_countdown_depth_iff :\n    \u2200 d t s, CambrianCanFollow CambrianCountdown t d s \u2194 d \u2264 s := by\n  intro d\n  induction d with\n  | zero =>\n      intro t s\n      constructor\n      \u00b7 intro _; exact Nat.zero_le s\n      \u00b7 intro _; trivial\n  | succ d ih =>\n      intro t s\n      constructor\n      \u00b7 rintro \u27e8next, edge, tail\u27e9\n        have smaller := (ih (t+1) next).mp tail\n        change s = next+1 at edge\n        omega\n      \u00b7 intro le\n        refine \u27e8s-1, ?_, ?_\u27e9\n        \u00b7 change s = (s-1)+1\n          omega\n        \u00b7 apply (ih (t+1) (s-1)).mpr\n          omega\n\ntheorem cambrian_countdown_all_finite_depths :\n    \u2200 d, \u2203 s, CambrianCanFollow CambrianCountdown 0 d s := by\n  intro d\n  exact \u27e8d, (cambrian_countdown_depth_iff d 0 d).mpr (Nat.le_refl d)\u27e9\n\ntheorem cambrian_countdown_no_infinite_history :\n    \u00ac \u2203 history : Nat \u2192 Nat,\n      \u2200 t, CambrianCountdown t (history t) (history (t+1)) := by\n  rintro \u27e8history, edges\u27e9\n  have budget : \u2200 n, history n + n = history 0 := by\n    intro n\n    induction n with\n    | zero => simp\n    | succ n ih =>\n        have edge := edges n\n        change history n = history (n+1)+1 at edge\n        omega\n  have exhausted := budget (history 0+1)\n  omega\n\nend ObservationalSUCC\n\n#print axioms ObservationalSUCC.cambrian_finite_prefixes_realize_one_history\n#print axioms ObservationalSUCC.cambrian_countdown_no_infinite_history\n\n/- Audit appendix. The runner prepends the exact new Cambrian module,\n   so this file needs no import of a separately built local olean. -/\nnamespace CambrianAudit\nopen ObservationalSUCC\n\ndef GrowingState (t : Nat) : Type := Nat \u00d7 Fin (t+1)\ndef GrowingZero (t : Nat) : Fin (t+1) := \u27e80, by omega\u27e9\ndef GrowingRelation (t : Nat) (s : GrowingState t)\n    (next : GrowingState (t+1)) : Prop :=\n  next.2.val = 0 \u2227\n    (next.1 = s.1+t+1 \u2228 next.1 = s.1+t+2)\ndef GrowingMenu (t : Nat) (s : GrowingState t) :\n    List (GrowingState (t+1)) :=\n  [(s.1+t+1, GrowingZero (t+1)),\n   (s.1+t+2, GrowingZero (t+1)),\n   (s.1, GrowingZero (t+1))]\n\ntheorem growing_menu_complete :\n    \u2200 t s next, GrowingRelation t s next \u2192 next \u2208 GrowingMenu t s := by\n  intro t s next edge\n  rcases edge with \u27e8tag, first | second\u27e9\n  \u00b7 have equal : next = (s.1+t+1, GrowingZero (t+1)) := by\n      apply Prod.ext\n      \u00b7 exact first\n      \u00b7 apply Fin.ext\n        exact tag\n    rw [equal]\n    simp [GrowingMenu]\n  \u00b7 have equal : next = (s.1+t+2, GrowingZero (t+1)) := by\n      apply Prod.ext\n      \u00b7 exact second\n      \u00b7 apply Fin.ext\n        exact tag\n    rw [equal]\n    simp [GrowingMenu]\n\ntheorem growing_menu_contains_non_successor (t : Nat) (s : GrowingState t) :\n    (s.1, GrowingZero (t+1)) \u2208 GrowingMenu t s \u2227\n      \u00ac GrowingRelation t s (s.1, GrowingZero (t+1)) := by\n  constructor\n  \u00b7 simp [GrowingMenu]\n  \u00b7 intro edge\n    rcases edge.2 with first | second <;> omega\n\ntheorem growing_relation_is_nondeterministic (t : Nat) (s : GrowingState t) :\n    \u2203 next other : GrowingState (t+1),\n      GrowingRelation t s next \u2227 GrowingRelation t s other \u2227 next \u2260 other := by\n  refine \u27e8(s.1+t+1, GrowingZero (t+1)),\n    (s.1+t+2, GrowingZero (t+1)),\n    \u27e8rfl, Or.inl rfl\u27e9, \u27e8rfl, Or.inr rfl\u27e9, ?_\u27e9\n  intro equal\n  have values := congrArg Prod.fst equal\n  omega\n\ntheorem growing_can_follow : \u2200 d t (s : GrowingState t),\n    CambrianCanFollow GrowingRelation t d s := by\n  intro d\n  induction d with\n  | zero => intro t s; trivial\n  | succ d ih =>\n      intro t s\n      exact \u27e8(s.1+t+1, GrowingZero (t+1)),\n        \u27e8rfl, Or.inl rfl\u27e9, ih (t+1) _\u27e9\n\ntheorem growing_infinite_state_history :\n    \u2203 history : (t : Nat) \u2192 GrowingState t,\n      history 0 = (0, GrowingZero 0) \u2227\n        \u2200 t, GrowingRelation t (history t) (history (t+1)) := by\n  exact cambrian_nondeterministic_history_realization\n    GrowingRelation GrowingMenu growing_menu_complete\n    (0, GrowingZero 0) (fun d => growing_can_follow d 0 _)\n\n/- A single fixed root has infinitely many successors. Every finite\n   depth exists, yet no infinite branch does. -/\ndef InfiniteRootRelation (t x y : Nat) : Prop := t = 0 \u2228 x = y+1\n\ntheorem countdown_embeds_after_root :\n    \u2200 d t s, 0 < t \u2192\n      CambrianCanFollow CambrianCountdown t d s \u2192\n      CambrianCanFollow InfiniteRootRelation t d s := by\n  intro d\n  induction d with\n  | zero => intro t s _ _; trivial\n  | succ d ih =>\n      intro t s positive path\n      obtain \u27e8next, edge, tail\u27e9 := path\n      exact \u27e8next, Or.inr edge, ih (t+1) next (by omega) tail\u27e9\n\ntheorem infinite_root_arbitrarily_extendable :\n    CambrianExtendable InfiniteRootRelation 0 0 := by\n  intro depth\n  cases depth with\n  | zero => trivial\n  | succ d =>\n      exact \u27e8d, Or.inl rfl,\n        countdown_embeds_after_root d 1 d (by omega)\n          ((cambrian_countdown_depth_iff d 1 d).mpr (Nat.le_refl d))\u27e9\n\ntheorem infinite_root_no_infinite_history :\n    \u00ac \u2203 history : Nat \u2192 Nat,\n      \u2200 t, InfiniteRootRelation t (history t) (history (t+1)) := by\n  rintro \u27e8history, edges\u27e9\n  apply cambrian_countdown_no_infinite_history\n  refine \u27e8fun n => history (n+1), ?_\u27e9\n  intro n\n  rcases edges (n+1) with zero | edge\n  \u00b7 omega\n  \u00b7 exact edge\n\ndef ListMaximum (xs : List Nat) : Nat := xs.foldr Nat.max 0\n\ntheorem listed_below_maximum (xs : List Nat) :\n    \u2200 x, x \u2208 xs \u2192 x \u2264 ListMaximum xs := by\n  induction xs with\n  | nil => intro x mem; simp at mem\n  | cons a rest ih =>\n      intro x mem\n      rcases List.mem_cons.mp mem with equal | tail\n      \u00b7 subst x\n        exact Nat.le_max_left a (ListMaximum rest)\n      \u00b7 exact Nat.le_trans (ih x tail) (Nat.le_max_right a (ListMaximum rest))\n\ntheorem infinite_root_has_no_finite_complete_menu (xs : List Nat) :\n    \u00ac \u2200 next, InfiniteRootRelation 0 0 next \u2192 next \u2208 xs := by\n  intro complete\n  have mem := complete (ListMaximum xs+1) (Or.inl rfl)\n  have bound := listed_below_maximum xs (ListMaximum xs+1) mem\n  omega\n\ndef Alternating (d : Nat) (x : Bool) : Prop :=\n  if d = 0 then x = true else x = false\n\ntheorem alternating_every_depth_has_a_finite_menu_witness :\n    \u2200 d, \u2203 x : Bool, x \u2208 [true, false] \u2227 Alternating d x := by\n  intro d\n  cases d with\n  | zero => exact \u27e8true, by simp, by simp [Alternating]\u27e9\n  | succ n => exact \u27e8false, by simp, by simp [Alternating]\u27e9\n\ntheorem alternating_no_uniform_witness :\n    \u00ac \u2203 x : Bool, \u2200 d, Alternating d x := by\n  rintro \u27e8x, all\u27e9\n  have first := all 0\n  have second := all 1\n  simp [Alternating] at first second\n  rw [first] at second\n  cases second\n\ntheorem alternating_lacks_downward_closure :\n    \u00ac \u2200 e d x, e \u2264 d \u2192 Alternating d x \u2192 Alternating e x := by\n  intro down\n  have impossible := down 0 1 false (by decide) (by simp [Alternating])\n  simp [Alternating] at impossible\n\nend CambrianAudit\n\n#print axioms CambrianAudit.growing_menu_complete\n#print axioms CambrianAudit.growing_menu_contains_non_successor\n#print axioms CambrianAudit.growing_relation_is_nondeterministic\n#print axioms CambrianAudit.growing_infinite_state_history\n#print axioms CambrianAudit.infinite_root_arbitrarily_extendable\n#print axioms CambrianAudit.infinite_root_no_infinite_history\n#print axioms CambrianAudit.infinite_root_has_no_finite_complete_menu\n#print axioms CambrianAudit.alternating_every_depth_has_a_finite_menu_witness\n#print axioms CambrianAudit.alternating_no_uniform_witness\n#print axioms CambrianAudit.alternating_lacks_downward_closure\n\n#print axioms CambrianAudit.growing_menu_complete\n#print axioms CambrianAudit.growing_menu_contains_non_successor\n#print axioms CambrianAudit.growing_relation_is_nondeterministic\n#print axioms CambrianAudit.growing_can_follow\n#print axioms CambrianAudit.growing_infinite_state_history\n#print axioms CambrianAudit.countdown_embeds_after_root\n#print axioms CambrianAudit.infinite_root_arbitrarily_extendable\n#print axioms CambrianAudit.infinite_root_no_infinite_history\n#print axioms CambrianAudit.listed_below_maximum\n#print axioms CambrianAudit.infinite_root_has_no_finite_complete_menu\n#print axioms CambrianAudit.alternating_every_depth_has_a_finite_menu_witness\n#print axioms CambrianAudit.alternating_no_uniform_witness\n#print axioms CambrianAudit.alternating_lacks_downward_closure\n\nopen ObservationalSUCC CambrianAudit\nexample : \u2203 x : Bool, x \u2208 [true, false] \u2227 \u2200 d, Alternating d x := by\n  exact cambrian_finite_coherent_choice [true, false] Alternating\n    (by intro e d x order hx; exact hx)\n    alternating_every_depth_has_a_finite_menu_witness\n",
+    "missing_finite_successor_completeness.lean": "import Std.Tactic\n/-!\n# CAMBRIAN C: time-varying nondeterministic history realization\n\nLean 4.14, core + Std only.  No topology library is imported.\nThis is the finitely branching (Koenig) specialization of the dossier's\ncompact closed-graph realization theorem, not its full topological proof.\n\nState types may change with time.  The transition relation need not be\ndeterministic, stationary, total, or invertible.  Each source state has a\nCOMPLETE finite list of possible successors.  An arbitrarily extendable\nstate then has one genuine infinite compatible history.  The selected\nbranch is classical and need not be computable from finite data.\n-/\nnamespace ObservationalSUCC\n\nuniverse u\n\ndef CambrianCanFollow {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop) :\n    (t : Nat) \u2192 Nat \u2192 S t \u2192 Prop\n  | _, 0, _ => True\n  | t, d+1, s => \u2203 next : S (t+1),\n      R t s next \u2227 CambrianCanFollow R (t+1) d next\n\ntheorem cambrian_can_follow_truncate\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop) :\n    \u2200 d t (s : S t) e, e \u2264 d \u2192\n      CambrianCanFollow R t d s \u2192 CambrianCanFollow R t e s := by\n  intro d\n  induction d with\n  | zero =>\n      intro t s e he _\n      have : e = 0 := by omega\n      subst e\n      trivial\n  | succ d ih =>\n      intro t s e he path\n      cases e with\n      | zero => trivial\n      | succ e =>\n          obtain \u27e8next, edge, tail\u27e9 := path\n          exact \u27e8next, edge, ih (t+1) next e (by omega) tail\u27e9\n\n/-- A finite menu cannot offer arbitrarily deep coherent witnesses unless\none menu member itself survives every depth.  Completeness of the menu\nand downward closure are explicit hypotheses. -/\ntheorem cambrian_finite_coherent_choice\n    {X : Type u} (menu : List X) (P : Nat \u2192 X \u2192 Prop)\n    (down : \u2200 e d x, e \u2264 d \u2192 P d x \u2192 P e x)\n    (every : \u2200 d, \u2203 x, x \u2208 menu \u2227 P d x) :\n    \u2203 x, x \u2208 menu \u2227 \u2200 d, P d x := by\n  classical\n  induction menu with\n  | nil =>\n      obtain \u27e8x, mem, _\u27e9 := every 0\n      simp at mem\n  | cons a rest ih =>\n      by_cases all : \u2200 d, P d a\n      \u00b7 exact \u27e8a, by simp, all\u27e9\n      \u00b7 have bad : \u2203 d, \u00ac P d a := by\n          by_cases witnessed : \u2203 d, \u00ac P d a\n          \u00b7 exact witnessed\n          \u00b7 apply False.elim\n            apply all\n            intro d\n            by_cases hd : P d a\n            \u00b7 exact hd\n            \u00b7 exact False.elim (witnessed \u27e8d, hd\u27e9)\n        obtain \u27e8k, hk\u27e9 := bad\n        have remaining : \u2200 d, \u2203 x, x \u2208 rest \u2227 P d x := by\n          intro d\n          obtain \u27e8x, mem, hx\u27e9 := every (max d k)\n          have neq : x \u2260 a := by\n            intro equal\n            subst x\n            exact hk (down k (max d k) a (Nat.le_max_right d k) hx)\n          have tailmem : x \u2208 rest := by\n            rcases List.mem_cons.mp mem with equal | tail\n            \u00b7 exact False.elim (neq equal)\n            \u00b7 exact tail\n          exact \u27e8x, tailmem,\n            down d (max d k) x (Nat.le_max_left d k) hx\u27e9\n        obtain \u27e8x, mem, hx\u27e9 := ih remaining\n        exact \u27e8x, by simp [mem], hx\u27e9\n\ndef CambrianExtendable {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (t : Nat) (s : S t) : Prop :=\n  \u2200 d, CambrianCanFollow R t d s\n\ntheorem cambrian_extendable_successor\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (menu : (t : Nat) \u2192 S t \u2192 List (S (t+1)))\n    (complete : \u2200 t s next, R t s next \u2192 next \u2208 menu t s)\n    (t : Nat) (s : S t) (deep : CambrianExtendable R t s) :\n    \u2203 next, R t s next \u2227 CambrianExtendable R (t+1) next := by\n  let P : Nat \u2192 S (t+1) \u2192 Prop := fun d next =>\n    R t s next \u2227 CambrianCanFollow R (t+1) d next\n  have every : \u2200 d, \u2203 next, next \u2208 menu t s \u2227 P d next := by\n    intro d\n    obtain \u27e8next, edge, path\u27e9 := deep (d+1)\n    exact \u27e8next, complete t s next edge, edge, path\u27e9\n  have down : \u2200 e d next, e \u2264 d \u2192 P d next \u2192 P e next := by\n    intro e d next order hp\n    exact \u27e8hp.1, cambrian_can_follow_truncate\n      R d (t+1) next e order hp.2\u27e9\n  obtain \u27e8next, _, all\u27e9 :=\n    cambrian_finite_coherent_choice (menu t s) P down every\n  exact \u27e8next, (all 0).1, fun d => (all d).2\u27e9\n\n/-- Finitely branching realization for changing source types and arbitrary\ntime-dependent nondeterministic transition relations. -/\ntheorem cambrian_nondeterministic_history_realization\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (menu : (t : Nat) \u2192 S t \u2192 List (S (t+1)))\n    (complete : \u2200 t s next, R t s next \u2192 next \u2208 menu t s)\n    (start : S 0) (deep : CambrianExtendable R 0 start) :\n    \u2203 history : (t : Nat) \u2192 S t,\n      history 0 = start \u2227 \u2200 t, R t (history t) (history (t+1)) := by\n  classical\n  let E : Nat \u2192 Type u := fun t => {s : S t // CambrianExtendable R t s}\n  let next : (t : Nat) \u2192 E t \u2192 E (t+1) := fun t state =>\n    let witness := cambrian_extendable_successor\n      R menu complete t state.val state.property\n    \u27e8Classical.choose witness, (Classical.choose_spec witness).2\u27e9\n  let branch : (t : Nat) \u2192 E t :=\n    fun t => Nat.rec (motive := fun t => E t)\n      \u27e8start, deep\u27e9 (fun t state => next t state) t\n  refine \u27e8fun t => (branch t).val, rfl, ?_\u27e9\n  intro t\n  change R t (branch t).val (next t (branch t)).val\n  exact (Classical.choose_spec\n    (cambrian_extendable_successor R menu complete\n      t (branch t).val (branch t).property)).1\n\n/-- A COMPLETE finite list of initial source states may supply different\nstates at each finite horizon.  Finite branching still forces one initial\nstate and one infinite source history; a uniform finite state bound is\nnot assumed. -/\ntheorem cambrian_finite_prefixes_realize_one_history\n    {S : Nat \u2192 Type u}\n    (R : (t : Nat) \u2192 S t \u2192 S (t+1) \u2192 Prop)\n    (menu : (t : Nat) \u2192 S t \u2192 List (S (t+1)))\n    (complete : \u2200 t s next, R t s next \u2192 next \u2208 menu t s)\n    (initial : List (S 0))\n    (prefixes : \u2200 d, \u2203 s, s \u2208 initial \u2227 CambrianCanFollow R 0 d s) :\n    \u2203 history : (t : Nat) \u2192 S t,\n      history 0 \u2208 initial \u2227 \u2200 t, R t (history t) (history (t+1)) := by\n  obtain \u27e8s, mem, deep\u27e9 := cambrian_finite_coherent_choice\n    initial (fun d s => CambrianCanFollow R 0 d s)\n    (fun e d s le path => cambrian_can_follow_truncate R d 0 s e le path)\n    prefixes\n  obtain \u27e8history, start, lawful\u27e9 :=\n    cambrian_nondeterministic_history_realization R menu complete s deep\n  exact \u27e8history, by rw [start]; exact mem, lawful\u27e9\n\ndef CambrianCountdown (_ : Nat) (x y : Nat) : Prop := x = y+1\n\n/-- Sharp failure without a finite initial source menu: a natural\ncountdown admits depth d exactly when its original state is at least d. -/\ntheorem cambrian_countdown_depth_iff :\n    \u2200 d t s, CambrianCanFollow CambrianCountdown t d s \u2194 d \u2264 s := by\n  intro d\n  induction d with\n  | zero =>\n      intro t s\n      constructor\n      \u00b7 intro _; exact Nat.zero_le s\n      \u00b7 intro _; trivial\n  | succ d ih =>\n      intro t s\n      constructor\n      \u00b7 rintro \u27e8next, edge, tail\u27e9\n        have smaller := (ih (t+1) next).mp tail\n        change s = next+1 at edge\n        omega\n      \u00b7 intro le\n        refine \u27e8s-1, ?_, ?_\u27e9\n        \u00b7 change s = (s-1)+1\n          omega\n        \u00b7 apply (ih (t+1) (s-1)).mpr\n          omega\n\ntheorem cambrian_countdown_all_finite_depths :\n    \u2200 d, \u2203 s, CambrianCanFollow CambrianCountdown 0 d s := by\n  intro d\n  exact \u27e8d, (cambrian_countdown_depth_iff d 0 d).mpr (Nat.le_refl d)\u27e9\n\ntheorem cambrian_countdown_no_infinite_history :\n    \u00ac \u2203 history : Nat \u2192 Nat,\n      \u2200 t, CambrianCountdown t (history t) (history (t+1)) := by\n  rintro \u27e8history, edges\u27e9\n  have budget : \u2200 n, history n + n = history 0 := by\n    intro n\n    induction n with\n    | zero => simp\n    | succ n ih =>\n        have edge := edges n\n        change history n = history (n+1)+1 at edge\n        omega\n  have exhausted := budget (history 0+1)\n  omega\n\nend ObservationalSUCC\n\n#print axioms ObservationalSUCC.cambrian_finite_prefixes_realize_one_history\n#print axioms ObservationalSUCC.cambrian_countdown_no_infinite_history\n\n/- Audit appendix. The runner prepends the exact new Cambrian module,\n   so this file needs no import of a separately built local olean. -/\nnamespace CambrianAudit\nopen ObservationalSUCC\n\ndef GrowingState (t : Nat) : Type := Nat \u00d7 Fin (t+1)\ndef GrowingZero (t : Nat) : Fin (t+1) := \u27e80, by omega\u27e9\ndef GrowingRelation (t : Nat) (s : GrowingState t)\n    (next : GrowingState (t+1)) : Prop :=\n  next.2.val = 0 \u2227\n    (next.1 = s.1+t+1 \u2228 next.1 = s.1+t+2)\ndef GrowingMenu (t : Nat) (s : GrowingState t) :\n    List (GrowingState (t+1)) :=\n  [(s.1+t+1, GrowingZero (t+1)),\n   (s.1+t+2, GrowingZero (t+1)),\n   (s.1, GrowingZero (t+1))]\n\ntheorem growing_menu_complete :\n    \u2200 t s next, GrowingRelation t s next \u2192 next \u2208 GrowingMenu t s := by\n  intro t s next edge\n  rcases edge with \u27e8tag, first | second\u27e9\n  \u00b7 have equal : next = (s.1+t+1, GrowingZero (t+1)) := by\n      apply Prod.ext\n      \u00b7 exact first\n      \u00b7 apply Fin.ext\n        exact tag\n    rw [equal]\n    simp [GrowingMenu]\n  \u00b7 have equal : next = (s.1+t+2, GrowingZero (t+1)) := by\n      apply Prod.ext\n      \u00b7 exact second\n      \u00b7 apply Fin.ext\n        exact tag\n    rw [equal]\n    simp [GrowingMenu]\n\ntheorem growing_menu_contains_non_successor (t : Nat) (s : GrowingState t) :\n    (s.1, GrowingZero (t+1)) \u2208 GrowingMenu t s \u2227\n      \u00ac GrowingRelation t s (s.1, GrowingZero (t+1)) := by\n  constructor\n  \u00b7 simp [GrowingMenu]\n  \u00b7 intro edge\n    rcases edge.2 with first | second <;> omega\n\ntheorem growing_relation_is_nondeterministic (t : Nat) (s : GrowingState t) :\n    \u2203 next other : GrowingState (t+1),\n      GrowingRelation t s next \u2227 GrowingRelation t s other \u2227 next \u2260 other := by\n  refine \u27e8(s.1+t+1, GrowingZero (t+1)),\n    (s.1+t+2, GrowingZero (t+1)),\n    \u27e8rfl, Or.inl rfl\u27e9, \u27e8rfl, Or.inr rfl\u27e9, ?_\u27e9\n  intro equal\n  have values := congrArg Prod.fst equal\n  omega\n\ntheorem growing_can_follow : \u2200 d t (s : GrowingState t),\n    CambrianCanFollow GrowingRelation t d s := by\n  intro d\n  induction d with\n  | zero => intro t s; trivial\n  | succ d ih =>\n      intro t s\n      exact \u27e8(s.1+t+1, GrowingZero (t+1)),\n        \u27e8rfl, Or.inl rfl\u27e9, ih (t+1) _\u27e9\n\ntheorem growing_infinite_state_history :\n    \u2203 history : (t : Nat) \u2192 GrowingState t,\n      history 0 = (0, GrowingZero 0) \u2227\n        \u2200 t, GrowingRelation t (history t) (history (t+1)) := by\n  exact cambrian_nondeterministic_history_realization\n    GrowingRelation GrowingMenu growing_menu_complete\n    (0, GrowingZero 0) (fun d => growing_can_follow d 0 _)\n\n/- A single fixed root has infinitely many successors. Every finite\n   depth exists, yet no infinite branch does. -/\ndef InfiniteRootRelation (t x y : Nat) : Prop := t = 0 \u2228 x = y+1\n\ntheorem countdown_embeds_after_root :\n    \u2200 d t s, 0 < t \u2192\n      CambrianCanFollow CambrianCountdown t d s \u2192\n      CambrianCanFollow InfiniteRootRelation t d s := by\n  intro d\n  induction d with\n  | zero => intro t s _ _; trivial\n  | succ d ih =>\n      intro t s positive path\n      obtain \u27e8next, edge, tail\u27e9 := path\n      exact \u27e8next, Or.inr edge, ih (t+1) next (by omega) tail\u27e9\n\ntheorem infinite_root_arbitrarily_extendable :\n    CambrianExtendable InfiniteRootRelation 0 0 := by\n  intro depth\n  cases depth with\n  | zero => trivial\n  | succ d =>\n      exact \u27e8d, Or.inl rfl,\n        countdown_embeds_after_root d 1 d (by omega)\n          ((cambrian_countdown_depth_iff d 1 d).mpr (Nat.le_refl d))\u27e9\n\ntheorem infinite_root_no_infinite_history :\n    \u00ac \u2203 history : Nat \u2192 Nat,\n      \u2200 t, InfiniteRootRelation t (history t) (history (t+1)) := by\n  rintro \u27e8history, edges\u27e9\n  apply cambrian_countdown_no_infinite_history\n  refine \u27e8fun n => history (n+1), ?_\u27e9\n  intro n\n  rcases edges (n+1) with zero | edge\n  \u00b7 omega\n  \u00b7 exact edge\n\ndef ListMaximum (xs : List Nat) : Nat := xs.foldr Nat.max 0\n\ntheorem listed_below_maximum (xs : List Nat) :\n    \u2200 x, x \u2208 xs \u2192 x \u2264 ListMaximum xs := by\n  induction xs with\n  | nil => intro x mem; simp at mem\n  | cons a rest ih =>\n      intro x mem\n      rcases List.mem_cons.mp mem with equal | tail\n      \u00b7 subst x\n        exact Nat.le_max_left a (ListMaximum rest)\n      \u00b7 exact Nat.le_trans (ih x tail) (Nat.le_max_right a (ListMaximum rest))\n\ntheorem infinite_root_has_no_finite_complete_menu (xs : List Nat) :\n    \u00ac \u2200 next, InfiniteRootRelation 0 0 next \u2192 next \u2208 xs := by\n  intro complete\n  have mem := complete (ListMaximum xs+1) (Or.inl rfl)\n  have bound := listed_below_maximum xs (ListMaximum xs+1) mem\n  omega\n\ndef Alternating (d : Nat) (x : Bool) : Prop :=\n  if d = 0 then x = true else x = false\n\ntheorem alternating_every_depth_has_a_finite_menu_witness :\n    \u2200 d, \u2203 x : Bool, x \u2208 [true, false] \u2227 Alternating d x := by\n  intro d\n  cases d with\n  | zero => exact \u27e8true, by simp, by simp [Alternating]\u27e9\n  | succ n => exact \u27e8false, by simp, by simp [Alternating]\u27e9\n\ntheorem alternating_no_uniform_witness :\n    \u00ac \u2203 x : Bool, \u2200 d, Alternating d x := by\n  rintro \u27e8x, all\u27e9\n  have first := all 0\n  have second := all 1\n  simp [Alternating] at first second\n  rw [first] at second\n  cases second\n\ntheorem alternating_lacks_downward_closure :\n    \u00ac \u2200 e d x, e \u2264 d \u2192 Alternating d x \u2192 Alternating e x := by\n  intro down\n  have impossible := down 0 1 false (by decide) (by simp [Alternating])\n  simp [Alternating] at impossible\n\nend CambrianAudit\n\n#print axioms CambrianAudit.growing_menu_complete\n#print axioms CambrianAudit.growing_menu_contains_non_successor\n#print axioms CambrianAudit.growing_relation_is_nondeterministic\n#print axioms CambrianAudit.growing_infinite_state_history\n#print axioms CambrianAudit.infinite_root_arbitrarily_extendable\n#print axioms CambrianAudit.infinite_root_no_infinite_history\n#print axioms CambrianAudit.infinite_root_has_no_finite_complete_menu\n#print axioms CambrianAudit.alternating_every_depth_has_a_finite_menu_witness\n#print axioms CambrianAudit.alternating_no_uniform_witness\n#print axioms CambrianAudit.alternating_lacks_downward_closure\n\n#print axioms CambrianAudit.growing_menu_complete\n#print axioms CambrianAudit.growing_menu_contains_non_successor\n#print axioms CambrianAudit.growing_relation_is_nondeterministic\n#print axioms CambrianAudit.growing_can_follow\n#print axioms CambrianAudit.growing_infinite_state_history\n#print axioms CambrianAudit.countdown_embeds_after_root\n#print axioms CambrianAudit.infinite_root_arbitrarily_extendable\n#print axioms CambrianAudit.infinite_root_no_infinite_history\n#print axioms CambrianAudit.listed_below_maximum\n#print axioms CambrianAudit.infinite_root_has_no_finite_complete_menu\n#print axioms CambrianAudit.alternating_every_depth_has_a_finite_menu_witness\n#print axioms CambrianAudit.alternating_no_uniform_witness\n#print axioms CambrianAudit.alternating_lacks_downward_closure\n\nopen ObservationalSUCC CambrianAudit\nexample : \u2203 history : Nat \u2192 Nat,\n    history 0 = 0 \u2227 \u2200 t, InfiniteRootRelation t (history t) (history (t+1)) := by\n  exact cambrian_nondeterministic_history_realization\n    InfiniteRootRelation (fun _ _ => [])\n    (by intro t s next edge; simpa using edge)\n    0 infinite_root_arbitrarily_extendable\n"
+  },
+  "schema": "cambrian_audit_c_lean_v1",
+  "shared_lean_library_sha256": "c28977f1409a88f7d8ccf20beb24bbece5f573aeaabcdb5a6352a14f9f325bd9",
+  "source_scans": {
+    "formal/EODCS_ActionClosure.lean": {
+      "forbidden_code_tokens": [],
+      "imports": [],
+      "theorems": [
+        "no_available_finite_word_separates",
+        "visible_commutator_implies_source_commutator",
+        "injective_report_detects_source_inequality"
+      ]
+    },
+    "formal/EODCS_CambrianRealization.lean": {
+      "forbidden_code_tokens": [],
+      "imports": [
+        "Std.Tactic"
+      ],
+      "theorems": [
+        "cambrian_can_follow_truncate",
+        "cambrian_finite_coherent_choice",
+        "cambrian_extendable_successor",
+        "cambrian_nondeterministic_history_realization",
+        "cambrian_finite_prefixes_realize_one_history",
+        "cambrian_countdown_depth_iff",
+        "cambrian_countdown_all_finite_depths",
+        "cambrian_countdown_no_infinite_history"
+      ]
+    },
+    "formal/EODCS_CausalDescent.lean": {
+      "forbidden_code_tokens": [],
+      "imports": [],
+      "theorems": [
+        "transport_requires_fiber_compatibility",
+        "transport_exists_of_fiber_compatibility",
+        "source_transport_iff_fiber_compatible",
+        "transported_map_unique_if_surjective",
+        "observation_pair_universal",
+        "observation_pair_fiber_characterization",
+        "causal_square_composition",
+        "based_loop_fixed_iff_tree_parallel",
+        "cover_descent_iff_holonomy_fixed"
+      ]
+    },
+    "formal/EODCS_NerodePlateau.lean": {
+      "forbidden_code_tokens": [],
+      "imports": [],
+      "theorems": [
+        "iter_succ_commutes",
+        "plateau_implies_action_congruence",
+        "plateau_certifies_all_future",
+        "plateau_iff_complete_future_equivalence"
+      ]
+    },
+    "formal/EODCS_OrderAdjunction.lean": {
+      "forbidden_code_tokens": [],
+      "imports": [],
+      "theorems": [
+        "monotone_comp",
+        "adjunction_unit",
+        "adjunction_counit",
+        "right_adjoint_unique",
+        "sufficient_order_quotient_factorization"
+      ]
+    },
+    "formal/EODCS_RelationalChoice.lean": {
+      "forbidden_code_tokens": [],
+      "imports": [],
+      "theorems": [
+        "support_transition_requires_fiber_invariance",
+        "support_transition_exists_of_fiber_invariance",
+        "support_transport_iff_fiber_invariance",
+        "unique_future_report_of_nonempty_singleton_support",
+        "support_pair_universal",
+        "source_support_bounded_by_may_common",
+        "support_invariant_implies_exact_envelopes",
+        "exact_envelopes_iff_support_transport",
+        "may_is_least_sound_overapproximation",
+        "common_is_greatest_sound_underapproximation"
+      ]
+    },
+    "formal/EODCS_VoyagerMemoryDebt.lean": {
+      "forbidden_code_tokens": [],
+      "imports": [
+        "Std.Tactic"
+      ],
+      "theorems": [
+        "memory_iter_add",
+        "repeated_source_state_repeats_all_later_reports",
+        "zero_gap_forces_distinct_source_states",
+        "pulse_gap_injective_states"
+      ]
+    },
+    "formal/EODCS_VoyagerPhantom.lean": {
+      "forbidden_code_tokens": [],
+      "imports": [
+        "Std.Tactic"
+      ],
+      "theorems": [
+        "zero_tail_approximant_in_source",
+        "zero_tail_matches_first_h_reports",
+        "all_true_finite_horizon_source_realizable",
+        "all_true_not_originally_realizable",
+        "shift_head_observes_original_index",
+        "eventually_zero_closed_under_shift",
+        "finite_stage_compatibility_does_not_force_actualization",
+        "listed_probe_below_max",
+        "finite_patch_is_a_genuine_source",
+        "finite_patch_matches_every_requested_probe",
+        "all_true_every_finite_probe_family_consistent",
+        "arbitrary_finite_compatibility_not_global_realization",
+        "finite_support_patch_eventually_zero",
+        "cofinite_support_patch_not_eventually_zero",
+        "no_finite_probe_family_decides_eventual_zero"
+      ]
+    },
+    "formal/EODCS_VoyagerTrace.lean": {
+      "forbidden_code_tokens": [],
+      "imports": [],
+      "theorems": [
+        "voyager_trace_derivative",
+        "voyager_run_morphism",
+        "voyager_trace_naturality",
+        "voyager_trace_kernel_action_congruence",
+        "realized_implies_finitely_compatible",
+        "finite_enumeration_realization_or_refutation",
+        "finite_enumeration_compatible_implies_realized"
+      ]
+    }
+  },
+  "status": "PASS_WITH_SCOPE_BOUNDARY",
+  "target_cluster_commit": "906de6f",
+  "theorem_count": 65
+}

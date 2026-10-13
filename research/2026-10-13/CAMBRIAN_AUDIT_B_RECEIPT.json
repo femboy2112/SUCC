@@ -1,0 +1,100 @@
+{
+  "all_infinite_quantifiers_proved_by_enumeration": false,
+  "block_memory": {
+    "Cayley_Hamilton_identities": 72,
+    "fresh_rational_block_systems": 72,
+    "full_block_vs_memory_successors": 648,
+    "independent_kernel_matrices": 1152,
+    "omitted_initial_term_counterexample": "x1=1 versus 0",
+    "sharp_delay_hidden_dimension": 4
+  },
+  "conditional_stability": {
+    "null_events_excluded": 3712,
+    "positive_conditioning_cases": 25088,
+    "rare_conditional_TV": "1",
+    "rare_event_mass": "1/1000000",
+    "sharp_unequal_conditional_TV": "2/3",
+    "strong_bound": "epsilon / MAX(alpha,beta)",
+    "unequal_event_mass_cases": 21280
+  },
+  "empirical_source_authentication": false,
+  "histories": {
+    "fixed_four_step_receipt_words": 16,
+    "hidden_state_selector_countermodel": "Each action descends; hidden selected mixture does not",
+    "public_adaptive_selected_paths": 16
+  },
+  "new_Lean_proofs": false,
+  "python": "3.12.14",
+  "quantum": {
+    "Luders_basis_joint_rows": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "bridge_scope": "Diagonal densities and basis-preserving Kraus branches only; no coherent-input generalization",
+    "conditional_trace_distance": "25/106",
+    "conditioning_event_masses": [
+      "9/25",
+      "53/125"
+    ],
+    "diagonal_quantum_kernel_bridge_cases": 72,
+    "fresh_exact_density_states": 20,
+    "future_luders_Z": {
+      "0": "0",
+      "1": "1"
+    },
+    "future_reset_Z": {
+      "0": "1",
+      "1": "0"
+    },
+    "reset_basis_joint_rows": [
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0"
+      ]
+    ],
+    "same_POVM_effects": true,
+    "unconditional_input_distance": "1/10"
+  },
+  "schema": "succ.cambrian.audit-b.v1",
+  "sha256": {
+    "F_closure_module": "acc31e8357cea00387023341e6af883676699b9058c4b29d52e3eff88410e91a",
+    "audit_script": "e82280aa60362d6b3b39e01d57e984227314cbab723505578410705f87606bdd",
+    "observational_succ/dynamic_boundary_inverse.py": "b21e4d09d32f325862a1a34fee5d4c70d093492663e6130e73903b32b0e32c65",
+    "observational_succ/quantum_records.py": "9a3f367fb0e2bcb1e73c1a561ffcd2450cf5866f4c28a7df84e3ecd1a387a4c5",
+    "root_stochastic_module": "4daabd8daf5131a038d677c6c33248d63179046e1a31e972900508e042485aa5"
+  },
+  "source_heads": {
+    "F_checkout_observed": "21ef59994f11d488a31632f731f4e4d7d9adbc77",
+    "F_frozen": "21ef59994f11d488a31632f731f4e4d7d9adbc77",
+    "audit_base": "01bf38fb282872cfe28362321809b30ea9f1b3f9",
+    "root_ST7_sharpening": "484dc20",
+    "root_observed": "6657950fc9275de03bfa68c864c73c15b1274380"
+  },
+  "status": "EXACT_FINITE_CONTROLS_PASS",
+  "stochastic": {
+    "event_atom_filter_cases": 68880,
+    "heldout_denominator": 5,
+    "heldout_prior": "(1/7,6/7) and (2/3,1/3)",
+    "joint_descent_cases": 12544,
+    "nondescending_observer_rejections": 5656
+  },
+  "tested_own_cluster_A": false
+}

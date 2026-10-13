@@ -1,0 +1,18 @@
+{
+  "compiler_preload": "/workspace/scratch/6d134115e8ca/lean-runtime/self_exe_locator.so",
+  "compiler_version": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "expected_countermodel": "initial={dead,live}, only live->live; all finite depths exist but dead has no edge",
+  "failed_mutant_sorryAx_is_error_recovery_not_a_pass": true,
+  "mutant_sha256": "e930ff7535e9491db740fa0a633fb7bc5b9391cc1f17213c7092969d6a65ad69",
+  "mutation": "exists one initial state replaced by every initial state",
+  "negative_exit_code": 1,
+  "negative_stderr": "",
+  "negative_stdout": "/tmp/cambrian_audit_a_1_hzjtyi/false_every_initial_history.lean:159:8: error: invalid constructor \u27e8...\u27e9, expected type must be an inductive type \n  \u2200 (start : S 0), start \u2208 initial \u2192 \u2203 history, history 0 = start \u2227 \u2200 (t : Nat), R t (history t) (history (t + 1))\n'ObservationalSUCC.cambrian_finite_prefixes_realize_one_history' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.cambrian_countdown_no_infinite_history' depends on axioms: [propext, Quot.sound]\n",
+  "positive_exit_code": 0,
+  "positive_stderr": "",
+  "positive_stdout": "'ObservationalSUCC.cambrian_finite_prefixes_realize_one_history' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.cambrian_countdown_no_infinite_history' depends on axioms: [propext, Quot.sound]\n",
+  "semantically_false_mutant_rejected": true,
+  "source_path": "/workspace/scratch/6d134115e8ca/c_geometry/formal/EODCS_CambrianRealization.lean",
+  "source_sha256": "8260812a716cc8628ab16470219c92fc49772fd9fd3417ce73dc3c089e9c80cf",
+  "source_unchanged": true
+}

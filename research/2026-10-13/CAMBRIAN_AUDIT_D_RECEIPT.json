@@ -1,0 +1,448 @@
+{
+  "all_mathematical_and_code_hash_fields_remain_comparison_inputs": true,
+  "assignment_accounting": {
+    "36_independent_research_agents_claimed": false,
+    "actual_exploration_assignments": 36,
+    "actual_worker_count": 6,
+    "audit_portfolio_size": 8,
+    "audits_at_frozen_snapshot": {
+      "A": "committed",
+      "B": "committed",
+      "C": "not_in_snapshot",
+      "D": "this_audit_in_progress",
+      "E": "not_in_snapshot",
+      "F": "not_in_snapshot",
+      "G": "not_in_snapshot",
+      "H": "not_in_snapshot"
+    },
+    "groups": {
+      "A": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "B": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "C": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "D": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "E": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "F": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    "remaining_audit_completion_requires_final_manifest": true
+  },
+  "execution_head": "7af4c24284c870942e0140c2bbffdc95302aca3d",
+  "inert_source_mutation": {
+    "changed_byte_hash_differs": true,
+    "math_replay_alone_detects_this_mutation": false,
+    "mutated_sha256": "b1c857a3e80bb8a2ccddaf4e5f5ad0af27414591706a1e03a0d93b2b6edfabed",
+    "original_sha256": "f8c1dabdcf3e76be8a1fcead3d6a8450fb08328000efa42777db195e8a3cbf13",
+    "original_source_unchanged": true,
+    "same_complete_geometry_receipt": true,
+    "stored_artifact_hash_contract_detects_this_mutation": true
+  },
+  "own_E_mathematics_reviewed": false,
+  "receipt_hash_checks": [
+    {
+      "artifact": "observational_succ/cambrian_a_foundations.py",
+      "receipt": "CAMBRIAN_A_VALIDATION.json",
+      "sha256": "21fd548bd7e8d6196b716d259b9efa3f2285f20ed375d1965fcf92c039ea673a"
+    },
+    {
+      "artifact": "scripts/cambrian_a_foundations_probe.py",
+      "receipt": "CAMBRIAN_A_VALIDATION.json",
+      "sha256": "bfbbfcbc133c604bb3d4660c9db2ef3ba08f6f295cdc782ce2248f69a100c86b"
+    },
+    {
+      "artifact": "tests/test_cambrian_a_foundations.py",
+      "receipt": "CAMBRIAN_A_VALIDATION.json",
+      "sha256": "c047edcb2f59c4fa08948fa314ca5b590ddf3f1abceebc3d9194ede10fcb9309"
+    },
+    {
+      "artifact": "formal/EODCS_CambrianRealization.lean",
+      "receipt": "CAMBRIAN_C_ASSIGNMENTS.json",
+      "sha256": "8260812a716cc8628ab16470219c92fc49772fd9fd3417ce73dc3c089e9c80cf"
+    },
+    {
+      "artifact": "observational_succ/cambrian_c_geometry.py",
+      "receipt": "CAMBRIAN_C_ASSIGNMENTS.json",
+      "sha256": "f8c1dabdcf3e76be8a1fcead3d6a8450fb08328000efa42777db195e8a3cbf13"
+    },
+    {
+      "artifact": "research/2026-10-13/CAMBRIAN_C_GEOMETRY.md",
+      "receipt": "CAMBRIAN_C_ASSIGNMENTS.json",
+      "sha256": "98b1a1106ac2a2c422a3507555dfa8bb1ccdcc75b63f1682b8c886d45d3c06ed"
+    },
+    {
+      "artifact": "research/2026-10-13/CAMBRIAN_C_RECEIPT.json",
+      "receipt": "CAMBRIAN_C_ASSIGNMENTS.json",
+      "sha256": "87a1eb795d7958ab6caf4ffe5261e39cbb504d3fa06198dbd8139e023acb8450"
+    },
+    {
+      "artifact": "scripts/cambrian_c_geometry_probe.py",
+      "receipt": "CAMBRIAN_C_ASSIGNMENTS.json",
+      "sha256": "68923cc8beff0b020baac1194907b7ce24f1816ac874c0f8fbe81b824ec040b8"
+    },
+    {
+      "artifact": "tests/test_cambrian_c_geometry.py",
+      "receipt": "CAMBRIAN_C_ASSIGNMENTS.json",
+      "sha256": "9c0e838eb192483f4ceb49cf9887d784bcdf1111207e7fe21a2aa4a8b95c76d2"
+    },
+    {
+      "artifact": "observational_succ/cambrian_e_arithmetic_transport.py",
+      "receipt": "CAMBRIAN_E_ARITHMETIC_RECEIPT.json",
+      "sha256": "8c5781f8eea3a9c0ed0c060aaece65366311235986e52162bb13c8b2621cacda"
+    },
+    {
+      "artifact": "scripts/cambrian_e_arithmetic_probe.py",
+      "receipt": "CAMBRIAN_E_ARITHMETIC_RECEIPT.json",
+      "sha256": "5d1175e4b43d485f6e64b790556a1ad48f77767b68627a8651c078171910f52d"
+    },
+    {
+      "artifact": "tests/test_cambrian_e_arithmetic_transport.py",
+      "receipt": "CAMBRIAN_E_ARITHMETIC_RECEIPT.json",
+      "sha256": "f64acff155554e844b86cb0bc6b2ca34a525c1f80a32b5770f7f2a9d041895e1"
+    },
+    {
+      "artifact": "observational_succ/cambrian_f_closure.py",
+      "receipt": "cambrian_f_results.json",
+      "sha256": "acc31e8357cea00387023341e6af883676699b9058c4b29d52e3eff88410e91a"
+    },
+    {
+      "artifact": "observational_succ/dynamic_boundary_inverse.py",
+      "receipt": "cambrian_f_results.json",
+      "sha256": "b21e4d09d32f325862a1a34fee5d4c70d093492663e6130e73903b32b0e32c65"
+    },
+    {
+      "artifact": "observational_succ/quantum_records.py",
+      "receipt": "cambrian_f_results.json",
+      "sha256": "9a3f367fb0e2bcb1e73c1a561ffcd2450cf5866f4c28a7df84e3ecd1a387a4c5"
+    },
+    {
+      "artifact": "tests/test_cambrian_f_closure.py",
+      "receipt": "cambrian_f_results.json",
+      "sha256": "505a1b2d2e2a54b665009f267125cfe7b8c4c240c132110b39aa3e18d17d276b"
+    },
+    {
+      "artifact": "observational_succ/cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_07_RESULT.json",
+      "sha256": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2"
+    },
+    {
+      "artifact": "research/2026-10-13/CAMBRIAN_B_HYPOTHESES.json",
+      "receipt": "CAMBRIAN_B_07_RESULT.json",
+      "sha256": "791f5b5e014ccee67ee6bb5a4812419fac222aee0564110fa623eced4e1b2854"
+    },
+    {
+      "artifact": "scripts/cambrian_b_chaos_probe.py",
+      "receipt": "CAMBRIAN_B_07_RESULT.json",
+      "sha256": "69264da3d77811cf76eecd7edfec4524419f91964cb66f83d7016baa7264ca9f"
+    },
+    {
+      "artifact": "tests/test_cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_07_RESULT.json",
+      "sha256": "cb425ed6efa43d9da739338fa9d126019b37c4dcb94826fbf21a300f4291d93c"
+    },
+    {
+      "artifact": "observational_succ/cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_08_RESULT.json",
+      "sha256": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2"
+    },
+    {
+      "artifact": "research/2026-10-13/CAMBRIAN_B_HYPOTHESES.json",
+      "receipt": "CAMBRIAN_B_08_RESULT.json",
+      "sha256": "791f5b5e014ccee67ee6bb5a4812419fac222aee0564110fa623eced4e1b2854"
+    },
+    {
+      "artifact": "scripts/cambrian_b_chaos_probe.py",
+      "receipt": "CAMBRIAN_B_08_RESULT.json",
+      "sha256": "69264da3d77811cf76eecd7edfec4524419f91964cb66f83d7016baa7264ca9f"
+    },
+    {
+      "artifact": "tests/test_cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_08_RESULT.json",
+      "sha256": "cb425ed6efa43d9da739338fa9d126019b37c4dcb94826fbf21a300f4291d93c"
+    },
+    {
+      "artifact": "observational_succ/cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_09_RESULT.json",
+      "sha256": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2"
+    },
+    {
+      "artifact": "research/2026-10-13/CAMBRIAN_B_HYPOTHESES.json",
+      "receipt": "CAMBRIAN_B_09_RESULT.json",
+      "sha256": "791f5b5e014ccee67ee6bb5a4812419fac222aee0564110fa623eced4e1b2854"
+    },
+    {
+      "artifact": "scripts/cambrian_b_chaos_probe.py",
+      "receipt": "CAMBRIAN_B_09_RESULT.json",
+      "sha256": "69264da3d77811cf76eecd7edfec4524419f91964cb66f83d7016baa7264ca9f"
+    },
+    {
+      "artifact": "tests/test_cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_09_RESULT.json",
+      "sha256": "cb425ed6efa43d9da739338fa9d126019b37c4dcb94826fbf21a300f4291d93c"
+    },
+    {
+      "artifact": "observational_succ/cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_10_RESULT.json",
+      "sha256": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2"
+    },
+    {
+      "artifact": "research/2026-10-13/CAMBRIAN_B_HYPOTHESES.json",
+      "receipt": "CAMBRIAN_B_10_RESULT.json",
+      "sha256": "791f5b5e014ccee67ee6bb5a4812419fac222aee0564110fa623eced4e1b2854"
+    },
+    {
+      "artifact": "scripts/cambrian_b_chaos_probe.py",
+      "receipt": "CAMBRIAN_B_10_RESULT.json",
+      "sha256": "69264da3d77811cf76eecd7edfec4524419f91964cb66f83d7016baa7264ca9f"
+    },
+    {
+      "artifact": "tests/test_cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_10_RESULT.json",
+      "sha256": "cb425ed6efa43d9da739338fa9d126019b37c4dcb94826fbf21a300f4291d93c"
+    },
+    {
+      "artifact": "observational_succ/cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_11_RESULT.json",
+      "sha256": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2"
+    },
+    {
+      "artifact": "research/2026-10-13/CAMBRIAN_B_HYPOTHESES.json",
+      "receipt": "CAMBRIAN_B_11_RESULT.json",
+      "sha256": "791f5b5e014ccee67ee6bb5a4812419fac222aee0564110fa623eced4e1b2854"
+    },
+    {
+      "artifact": "scripts/cambrian_b_chaos_probe.py",
+      "receipt": "CAMBRIAN_B_11_RESULT.json",
+      "sha256": "69264da3d77811cf76eecd7edfec4524419f91964cb66f83d7016baa7264ca9f"
+    },
+    {
+      "artifact": "tests/test_cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_11_RESULT.json",
+      "sha256": "cb425ed6efa43d9da739338fa9d126019b37c4dcb94826fbf21a300f4291d93c"
+    },
+    {
+      "artifact": "observational_succ/cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_12_RESULT.json",
+      "sha256": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2"
+    },
+    {
+      "artifact": "research/2026-10-13/CAMBRIAN_B_HYPOTHESES.json",
+      "receipt": "CAMBRIAN_B_12_RESULT.json",
+      "sha256": "791f5b5e014ccee67ee6bb5a4812419fac222aee0564110fa623eced4e1b2854"
+    },
+    {
+      "artifact": "scripts/cambrian_b_chaos_probe.py",
+      "receipt": "CAMBRIAN_B_12_RESULT.json",
+      "sha256": "69264da3d77811cf76eecd7edfec4524419f91964cb66f83d7016baa7264ca9f"
+    },
+    {
+      "artifact": "tests/test_cambrian_b_chaos.py",
+      "receipt": "CAMBRIAN_B_12_RESULT.json",
+      "sha256": "cb425ed6efa43d9da739338fa9d126019b37c4dcb94826fbf21a300f4291d93c"
+    },
+    {
+      "artifact": "observational_succ/cambrian_d_computation.py",
+      "receipt": "CAMBRIAN_D_RESULTS.json",
+      "sha256": "eb303fd34eadcc041af54aa9c330aa960e648acf4429357f8d3d8c177faa4a74"
+    },
+    {
+      "artifact": "observational_succ/cambrian_stochastic_transport.py",
+      "receipt": "CAMBRIAN_STOCHASTIC_RECEIPT.json",
+      "sha256": "4daabd8daf5131a038d677c6c33248d63179046e1a31e972900508e042485aa5"
+    }
+  ],
+  "receipt_runtime_exclusions": {
+    "A": [
+      "python"
+    ],
+    "B": [
+      "provenance.python_version"
+    ],
+    "C": [],
+    "D": [
+      "python"
+    ],
+    "E": [
+      "python",
+      "execution_head_sha"
+    ],
+    "F": [],
+    "ST": []
+  },
+  "remote_read": {
+    "exit_code": 0,
+    "ref_output": "52d2c02b85b246aec67160260ac06bb1da33645e\trefs/heads/main\nb2774ca485db4b5b4f7ce92e535220352fb3af2f\trefs/heads/research/evolutionary-obstruction-synthesis-2026-10-13\n5eb09e7cba36ec01b8f9d6834b78b5766fd93935\trefs/heads/research/voyager-observational-profinite-completion-2026-10-13\n",
+    "stderr": ""
+  },
+  "schema": "succ-cambrian-audit-d-provenance-v1",
+  "source_identity_controls": {
+    "actual_physical_source_authentication_executed": false,
+    "equal_marginals_and_support_do_not_preserve_joint_correlation": true,
+    "identical_source_and_action_labels_do_not_authenticate_equal_kernels": true,
+    "source_class_complete_is_a_mathematical_declaration": true,
+    "wrong_contracts_rejected": [
+      "source",
+      "basis",
+      "epoch",
+      "receipt",
+      "incomplete-source"
+    ]
+  },
+  "source_preservation": {
+    "complete_ledger_byte_equal": true,
+    "historical_O_rows": 638,
+    "protected_paths_changed": [],
+    "provenance_verifier": {
+      "byte_identical_research_archives": 17,
+      "establishes_mathematical_truth": false,
+      "items": 72,
+      "mechanical_namespace_migrations": 55,
+      "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+      "status": "SOURCE_PROVENANCE_VERIFIED"
+    },
+    "snapshot": "7af4c24284c870942e0140c2bbffdc95302aca3d"
+  },
+  "worker_identity": {
+    "A": {
+      "count_as_one_research_result": true,
+      "integration_cherry_pick": "01bf38fb282872cfe28362321809b30ea9f1b3f9",
+      "original_commit": "5677e9c73096c05ef05cf49a9a119447d5c601f2",
+      "original_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "same_added_blobs": {
+        "observational_succ/cambrian_a_foundations.py": "cadd11404061585c4989e1d8e6ca1939970edba7",
+        "research/2026-10-13/CAMBRIAN_A_01_RESULT.json": "afe6e7f8048bf53387cd5a584d15ac74999c0efd",
+        "research/2026-10-13/CAMBRIAN_A_02_RESULT.json": "3d32bce00c4eb943b13df5adf502696b7e8dcef6",
+        "research/2026-10-13/CAMBRIAN_A_03_RESULT.json": "f3a1f87d9fd6a9ffa38fbfbb1f413a0ba21abaf5",
+        "research/2026-10-13/CAMBRIAN_A_04_RESULT.json": "d7afe643fe19f8a78f0181623998499935de44a9",
+        "research/2026-10-13/CAMBRIAN_A_05_RESULT.json": "c635aca44ffdfb4f7bfada801500fd4bc6a301b5",
+        "research/2026-10-13/CAMBRIAN_A_06_RESULT.json": "aa16658a11b459c8092fc1cf8b0ce6097482a735",
+        "research/2026-10-13/CAMBRIAN_A_FIRST_PASS.json": "6a54249c526b7b28180597057d8617582cf680eb",
+        "research/2026-10-13/CAMBRIAN_A_FOUNDATIONS.md": "0d45ad05e25056f4588ae3c269b86fce8eced96c",
+        "research/2026-10-13/CAMBRIAN_A_RECEIPT.json": "c06b91224b218dbf25ebd4d2d3d06e73420222da",
+        "research/2026-10-13/CAMBRIAN_A_VALIDATION.json": "af813269024f2f48f17c666575d6b8ae510e6a23",
+        "scripts/cambrian_a_foundations_probe.py": "75080871dbf16ee3be2bb501c51ca8356b121e3c",
+        "tests/test_cambrian_a_foundations.py": "0873e48605ce0169eee911849c00ee57e4f0861e"
+      },
+      "same_patch_id": "cddb490881c4521dcc05f686fb4e0a90a08011f7"
+    },
+    "B": {
+      "count_as_one_research_result": true,
+      "integration_cherry_pick": "fb3499dfb6da9bd491bf89d01abe9de716b5d7b5",
+      "original_commit": "a71b8b9053ee81a67be2ed78c133a6c61e6766dd",
+      "original_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "same_added_blobs": {
+        "observational_succ/cambrian_b_chaos.py": "0e6034e83fe04331d50dd7ea5346046aa63ecdce",
+        "research/2026-10-13/CAMBRIAN_B_07_RESULT.json": "bdbcd19d9b34a8a3815d8ab6b244c6ae0f826645",
+        "research/2026-10-13/CAMBRIAN_B_08_RESULT.json": "190badcf670bcb647f2e858741ccb4e140162a23",
+        "research/2026-10-13/CAMBRIAN_B_09_RESULT.json": "bfa389562eaff3fef635db451b8a6c77195de8c1",
+        "research/2026-10-13/CAMBRIAN_B_10_RESULT.json": "9943147aface27adcf12e6e3813a2447c96b70b4",
+        "research/2026-10-13/CAMBRIAN_B_11_RESULT.json": "d0cdd56c5bbcb0226485a077efe3847620d83c56",
+        "research/2026-10-13/CAMBRIAN_B_12_RESULT.json": "beebf8b55924ae9ab79d81fb645d1cd9762682a1",
+        "research/2026-10-13/CAMBRIAN_B_CHAOS.md": "2196b09498cb665f0a74dabca88f61eabd0a416a",
+        "research/2026-10-13/CAMBRIAN_B_HYPOTHESES.json": "952883744970595a678dc9359536b038df74cccf",
+        "research/2026-10-13/CAMBRIAN_B_VALIDATION.json": "2d2579f292e41003830f95e9617fbeb3ed6b9d40",
+        "scripts/cambrian_b_chaos_probe.py": "b31bf850c59b4861e2622fbfa56bc3e5ff865e44",
+        "tests/test_cambrian_b_chaos.py": "26892c46929ee1835e580f86d4dbe01ebc8d82cf"
+      },
+      "same_patch_id": "3d77e8fcbe14c034c49075c71a681df079056082"
+    },
+    "C": {
+      "count_as_one_research_result": true,
+      "integration_cherry_pick": "c53588bf145e8ad09ffdd9acd5b5dc8262969994",
+      "original_commit": "906de6f450b05d8be7cd4c8f3a0218f8a2392fe5",
+      "original_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "same_added_blobs": {
+        "formal/EODCS_CambrianRealization.lean": "ced650b156ea54f58808e3bbb5c2b93bc3f5d16d",
+        "observational_succ/cambrian_c_geometry.py": "bfd4380dfa6505b70b3e7c444743c4143f007111",
+        "research/2026-10-13/CAMBRIAN_C_ASSIGNMENTS.json": "dfa953be0abfddf5ce6d2aa61396b422a0b25fb0",
+        "research/2026-10-13/CAMBRIAN_C_GEOMETRY.md": "00ebaf9187849ca7b03073c8899c79f2c5be6ad7",
+        "research/2026-10-13/CAMBRIAN_C_RECEIPT.json": "47f7fdc279139fd2c57c84fadc86338a4ddb9a17",
+        "scripts/cambrian_c_geometry_probe.py": "4d5f999677b72066f52441090d9e4b27a24672c4",
+        "tests/test_cambrian_c_geometry.py": "e5be62d7ccb4c0c65268350586e229afc7cb34ce"
+      },
+      "same_patch_id": "b2a1c3924f02f69761d7ed16f9219e9e6cb3e2be"
+    },
+    "D": {
+      "count_as_one_research_result": true,
+      "integration_cherry_pick": "6657950fc9275de03bfa68c864c73c15b1274380",
+      "original_commit": "810128e8fdd1f32a17852d828ee16e4b7ffb50f3",
+      "original_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "same_added_blobs": {
+        "observational_succ/cambrian_d_computation.py": "1be809c31a4b7ba35fa7ba412e67137cd074f802",
+        "research/2026-10-13/CAMBRIAN_D_COMPUTATION.md": "ee2821c3553661a62ce2eb49617775e1d4e2fff5",
+        "research/2026-10-13/CAMBRIAN_D_RESULTS.json": "2bbd6bf8b7508cae61873dba8b5a0d897cb840ed",
+        "scripts/cambrian_d_probe.py": "41377e35404df2b1ff81bbc6f866e379c9840bdd",
+        "tests/test_cambrian_d_computation.py": "ef8a26fddd8a1e3d9968364fa00d1f2c0829551b"
+      },
+      "same_patch_id": "19031466e939f55bd579f39c88dadf7a65f4c38e"
+    },
+    "E": {
+      "count_as_one_research_result": true,
+      "integration_cherry_pick": "5d34d3bd19c74b90bdff2e0fb962c8332c18f881",
+      "original_commit": "c2c18c3ed638478448497fb6892a747f67ee6f9b",
+      "original_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "same_added_blobs": {
+        "observational_succ/cambrian_e_arithmetic_transport.py": "a13ec6d6ca6d520e924d5ea5eea73732f650e421",
+        "research/2026-10-13/CAMBRIAN_E_ARITHMETIC.md": "6196d4d86155889282501d2e2e1ca4c238d073ea",
+        "research/2026-10-13/CAMBRIAN_E_ARITHMETIC_RECEIPT.json": "6b510dc5044fe43c4d24da6b7faef97e7a012f25",
+        "research/2026-10-13/CAMBRIAN_E_ASSIGNMENTS.json": "76a8b9c819dee25644dd0d5deb9582ff8c715a4b",
+        "scripts/cambrian_e_arithmetic_probe.py": "e9d53e77b0b30dd733553d6e91eb44398d1eba45",
+        "tests/test_cambrian_e_arithmetic_transport.py": "34d665d85cfaa4aff7705371b020e1433f7c0807"
+      },
+      "same_patch_id": "17c1ef28e14c2df762815cf51b5bd0dba6c63d7e"
+    },
+    "F": {
+      "count_as_one_research_result": true,
+      "integration_cherry_pick": "6fc5ae9f1a92abbab259b37440aefed23ee04e92",
+      "original_commit": "21ef59994f11d488a31632f731f4e4d7d9adbc77",
+      "original_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "same_added_blobs": {
+        "observational_succ/cambrian_f_closure.py": "cf5975a771e62e1f0af1ea483322609ccc40ba8c",
+        "research/2026-10-13/CAMBRIAN_F_PHYSICS_LOGIC.md": "3ef450547eb79e87c879ad62a6d3193ab7fc9be8",
+        "research/2026-10-13/cambrian_f_results.json": "ac863c105855dfa7b0d8d8c6f7c3cc151b2a558c",
+        "scripts/cambrian_f_probe.py": "c7f9ebecd61de03d7d620f21e04872c0403f5c9e",
+        "tests/test_cambrian_f_closure.py": "a2bc7337a1972fda0923f77a8fcff4e2464ac710"
+      },
+      "same_patch_id": "2f2d88f92436f469b8dad704a67f76297ae67ab8"
+    }
+  }
+}

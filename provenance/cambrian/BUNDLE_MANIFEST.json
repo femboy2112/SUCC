@@ -1,0 +1,30 @@
+{
+  "schema": "succ-cambrian-local-history-bundle-v1",
+  "prerequisite_commit": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "archived_integration_commit": "98d8e0f0efd766f5fcda6a960eb4d12fab404247",
+  "bundle_sha256": "7c2cc8ca34f5c34774def00443fca0f6510a7b80bd9de8f15130118134856fe6",
+  "encoded_sha256": "b7a6bc7f54bb578aeead2e456857cdf74dc4f12d4b88c5ba64dfee8694b02c3c",
+  "decoded_bytes": 462743,
+  "encoding": "RFC4648 base64 with76-column lines",
+  "heads": [
+    "5677e9c73096c05ef05cf49a9a119447d5c601f2 refs/heads/research/cambrian-a_foundations-2026-10-13",
+    "000c4824752913f32b53a40c7b2f86d0ddde3c14 refs/heads/research/cambrian-audit-a-2026-10-13",
+    "7175ad53113b98375d795f9bb1128e235cfa651a refs/heads/research/cambrian-audit-b-2026-10-13",
+    "912b9d47f45fa80126921f1f79dd33a05c438cb0 refs/heads/research/cambrian-audit-c-2026-10-13",
+    "a8da45ce36d1a94ac0398c54076a0222b5df12a2 refs/heads/research/cambrian-audit-d-2026-10-13",
+    "2aa963e3f2cbe27353f304575c09653810f2cf12 refs/heads/research/cambrian-audit-e-2026-10-13",
+    "23e0a87821b267122669fca164eb333c0e53553b refs/heads/research/cambrian-audit-f-2026-10-13",
+    "f39e62c0bad3c9a1db019f801f368228c74954d0 refs/heads/research/cambrian-audit-g-2026-10-13",
+    "277b75edc9fda693a701d48abee46dc19480597c refs/heads/research/cambrian-audit-h-2026-10-13",
+    "a71b8b9053ee81a67be2ed78c133a6c61e6766dd refs/heads/research/cambrian-b_chaos-2026-10-13",
+    "906de6f450b05d8be7cd4c8f3a0218f8a2392fe5 refs/heads/research/cambrian-c_geometry-2026-10-13",
+    "810128e8fdd1f32a17852d828ee16e4b7ffb50f3 refs/heads/research/cambrian-d_computation-2026-10-13",
+    "c2c18c3ed638478448497fb6892a747f67ee6f9b refs/heads/research/cambrian-e_arithmetic-2026-10-13",
+    "21ef59994f11d488a31632f731f4e4d7d9adbc77 refs/heads/research/cambrian-f_physics-2026-10-13",
+    "98d8e0f0efd766f5fcda6a960eb4d12fab404247 refs/heads/research/cambrian-observational-realization-2026-10-13"
+  ],
+  "verify_stdout": "The bundle contains these 15 refs:\n5677e9c73096c05ef05cf49a9a119447d5c601f2 refs/heads/research/cambrian-a_foundations-2026-10-13\n000c4824752913f32b53a40c7b2f86d0ddde3c14 refs/heads/research/cambrian-audit-a-2026-10-13\n7175ad53113b98375d795f9bb1128e235cfa651a refs/heads/research/cambrian-audit-b-2026-10-13\n912b9d47f45fa80126921f1f79dd33a05c438cb0 refs/heads/research/cambrian-audit-c-2026-10-13\na8da45ce36d1a94ac0398c54076a0222b5df12a2 refs/heads/research/cambrian-audit-d-2026-10-13\n2aa963e3f2cbe27353f304575c09653810f2cf12 refs/heads/research/cambrian-audit-e-2026-10-13\n23e0a87821b267122669fca164eb333c0e53553b refs/heads/research/cambrian-audit-f-2026-10-13\nf39e62c0bad3c9a1db019f801f368228c74954d0 refs/heads/research/cambrian-audit-g-2026-10-13\n277b75edc9fda693a701d48abee46dc19480597c refs/heads/research/cambrian-audit-h-2026-10-13\na71b8b9053ee81a67be2ed78c133a6c61e6766dd refs/heads/research/cambrian-b_chaos-2026-10-13\n906de6f450b05d8be7cd4c8f3a0218f8a2392fe5 refs/heads/research/cambrian-c_geometry-2026-10-13\n810128e8fdd1f32a17852d828ee16e4b7ffb50f3 refs/heads/research/cambrian-d_computation-2026-10-13\nc2c18c3ed638478448497fb6892a747f67ee6f9b refs/heads/research/cambrian-e_arithmetic-2026-10-13\n21ef59994f11d488a31632f731f4e4d7d9adbc77 refs/heads/research/cambrian-f_physics-2026-10-13\n98d8e0f0efd766f5fcda6a960eb4d12fab404247 refs/heads/research/cambrian-observational-realization-2026-10-13\nThe bundle requires this ref:\n5eb09e7cba36ec01b8f9d6834b78b5766fd93935 \nThe bundle uses this hash algorithm: sha1\n",
+  "verify_stderr": "/workspace/scratch/6d134115e8ca/CAMBRIAN_COMMITS.bundle is okay\n",
+  "publication": "GitHub API creates a separate commit with identical published content tree. Original local worker/audit/integration objects and IDs are preserved in this bundle, not falsely represented as API commit IDs.",
+  "why": "Native git push failed before publication because this executor has no GitHub command-line credential. Connected GitHub API is authorized."
+}

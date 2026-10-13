@@ -1,0 +1,69 @@
+{
+  "cheapest_falsifier": "Three coordinate observers; even-parity pairwise-independent source",
+  "claim_ids": [
+    "CA06"
+  ],
+  "evidence": {
+    "all_source_states_reconstructed": true,
+    "common_classes": 1,
+    "common_factor": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fused_classes": 8,
+    "fused_report": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ]
+  },
+  "limitations": "Lag/basis transport, stochastic independence and joint realizability require their own laws",
+  "proof": "CAMBRIAN_A_FOUNDATIONS.md#06",
+  "quantifiers": "Any finite family of total reports on one source; every common/fused deterministic target",
+  "question": "Many observers, common information and fusion",
+  "rival": "Trivial common information or incomplete local states prevents source reconstruction",
+  "status": "CLASSICAL / PROVED LOCAL"
+}

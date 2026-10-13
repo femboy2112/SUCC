@@ -1,0 +1,64 @@
+{
+  "Parry_acim_inequality_status": "Conditional on explicitly stated classical applicability; not a constructed certified density",
+  "assignment": "08",
+  "constant_cell_obstruction": {
+    "constant_positive_density_on_three_cells_is_invariant": false,
+    "does_not_refute_arbitrary_nonconstant_density_with_equal_cell_masses": true,
+    "images_in_A_coefficients": [
+      [
+        "0",
+        "51/400",
+        "0"
+      ],
+      [
+        "0",
+        "9/100",
+        "0"
+      ]
+    ],
+    "jacobian_coefficients": [
+      [
+        "0",
+        "7/10",
+        "0"
+      ],
+      [
+        "0",
+        "4/5",
+        "0"
+      ]
+    ],
+    "source_points_in_C": [
+      "17/20",
+      "9/10"
+    ]
+  },
+  "natural_C_to_A_branch_probability": null,
+  "periodic_multiplier_obstruction": {
+    "absolute_multiplier_exceeds_2": true,
+    "classical_theorem_application_conditional_on": "Misiurewicz (1981) Theorem 8.1 hypotheses and acim component support",
+    "maximum_entropy_required_two_step_multiplier": "2",
+    "natural_acim_constructed": false,
+    "signed_multiplier_coefficients": [
+      "4",
+      "2",
+      "-1"
+    ]
+  },
+  "pf_density_formula": "P rho(y)=sum_[f(x)=y,x in J] rho(x)/abs(f_prime(x))",
+  "provenance": {
+    "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+    "exact_arithmetic": "fractions.Fraction and inherited Q[alpha]",
+    "files_sha256": {
+      "observational_succ/cambrian_b_chaos.py": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2",
+      "research/2026-10-13/CAMBRIAN_B_HYPOTHESES.json": "791f5b5e014ccee67ee6bb5a4812419fac222aee0564110fa623eced4e1b2854",
+      "scripts/cambrian_b_chaos_probe.py": "69264da3d77811cf76eecd7edfec4524419f91964cb66f83d7016baa7264ca9f",
+      "tests/test_cambrian_b_chaos.py": "cb425ed6efa43d9da739338fa9d126019b37c4dcb94826fbf21a300f4291d93c"
+    },
+    "infinite_claims_authority": "Written proofs, not finite replay or Lean",
+    "physical_source_authenticated": false,
+    "python_version": "3.12.14"
+  },
+  "stationary_inverse_formula": "L_mu g=P(rho*g)/rho wherever rho>0",
+  "status": "PF REPRESENTATION PROVED; constant-cell candidate REFUTED; natural acim numerical construction UNVERIFIED"
+}

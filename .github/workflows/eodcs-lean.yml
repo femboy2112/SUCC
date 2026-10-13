@@ -5,9 +5,13 @@ on:
     branches:
       - 'research/eodcs-*'
       - 'research/voyager-*'
+      - 'research/cambrian-*'
   pull_request:
     paths:
       - 'formal/EODCS_*.lean'
+      - 'scripts/cambrian_formal_ci.py'
+      - 'scripts/cambrian_audit_c_lean.py'
+      - 'research/2026-10-13/CAMBRIAN_AUDIT_C*'
       - '.github/workflows/eodcs-lean.yml'
       - 'lean-toolchain'
   workflow_dispatch:
@@ -41,6 +45,8 @@ jobs:
           for src in formal/EODCS_*.lean; do
             "$HOME/.elan/bin/lean" "$src"
           done
+      - name: Replay Cambrian axiom audit and rejected false-theorem controls
+        run: python scripts/cambrian_formal_ci.py --lean "$HOME/.elan/bin/lean"
       - name: Fail closed on placeholders and imported axioms
         run: |
           python - <<'PY'

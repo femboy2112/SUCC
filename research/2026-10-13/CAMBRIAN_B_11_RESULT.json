@@ -1,0 +1,187 @@
+{
+  "assignment": "11",
+  "generic_continuous_completion_criterion": "n(t)-m(t) tends to +infinity",
+  "normal_form": "L^n U^m g = L^(n-m)g if n>=m, else U^(m-n)g",
+  "physical_Zeno_or_universal_information_debt_law_proved": false,
+  "positive_lower_bound_on_per_action_time_precludes_finite_time_unbounded_depth": true,
+  "provenance": {
+    "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+    "exact_arithmetic": "fractions.Fraction and inherited Q[alpha]",
+    "files_sha256": {
+      "observational_succ/cambrian_b_chaos.py": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2",
+      "research/2026-10-13/CAMBRIAN_B_HYPOTHESES.json": "791f5b5e014ccee67ee6bb5a4812419fac222aee0564110fa623eced4e1b2854",
+      "scripts/cambrian_b_chaos_probe.py": "69264da3d77811cf76eecd7edfec4524419f91964cb66f83d7016baa7264ca9f",
+      "tests/test_cambrian_b_chaos.py": "cb425ed6efa43d9da739338fa9d126019b37c4dcb94826fbf21a300f4291d93c"
+    },
+    "infinite_claims_authority": "Written proofs, not finite replay or Lean",
+    "physical_source_authenticated": false,
+    "python_version": "3.12.14"
+  },
+  "regimes": [
+    {
+      "T1_residual_modes": {
+        "1": "1"
+      },
+      "advance": 0,
+      "depth": 0,
+      "exact_residual_sup_norm": "2",
+      "geometric_ratio": "1/2",
+      "regime": "faster",
+      "time": 0
+    },
+    {
+      "T1_residual_modes": {
+        "1": "1"
+      },
+      "advance": 0,
+      "depth": 0,
+      "exact_residual_sup_norm": "2",
+      "geometric_ratio": "1/2",
+      "regime": "matched",
+      "time": 0
+    },
+    {
+      "T1_residual_modes": {
+        "1": "1"
+      },
+      "advance": 0,
+      "depth": 0,
+      "exact_residual_sup_norm": "2",
+      "geometric_ratio": "1/2",
+      "regime": "slower",
+      "time": 0
+    },
+    {
+      "T1_residual_modes": {
+        "1": "1"
+      },
+      "advance": 0,
+      "depth": 0,
+      "exact_residual_sup_norm": "2",
+      "geometric_ratio": "1/2",
+      "regime": "equal-leading-rate-positive-surplus",
+      "time": 0
+    },
+    {
+      "T1_residual_modes": {},
+      "advance": 1,
+      "depth": 2,
+      "exact_residual_sup_norm": "1",
+      "geometric_ratio": "1/2",
+      "regime": "faster",
+      "time": 1
+    },
+    {
+      "T1_residual_modes": {
+        "1": "1"
+      },
+      "advance": 1,
+      "depth": 1,
+      "exact_residual_sup_norm": "2",
+      "geometric_ratio": "1/2",
+      "regime": "matched",
+      "time": 1
+    },
+    {
+      "T1_residual_modes": {
+        "2": "1"
+      },
+      "advance": 2,
+      "depth": 1,
+      "exact_residual_sup_norm": "2",
+      "geometric_ratio": "1/2",
+      "regime": "slower",
+      "time": 1
+    },
+    {
+      "T1_residual_modes": {},
+      "advance": 1,
+      "depth": 2,
+      "exact_residual_sup_norm": "1",
+      "geometric_ratio": "1/2",
+      "regime": "equal-leading-rate-positive-surplus",
+      "time": 1
+    },
+    {
+      "T1_residual_modes": {},
+      "advance": 4,
+      "depth": 8,
+      "exact_residual_sup_norm": "1/8",
+      "geometric_ratio": "1/2",
+      "regime": "faster",
+      "time": 4
+    },
+    {
+      "T1_residual_modes": {
+        "1": "1"
+      },
+      "advance": 4,
+      "depth": 4,
+      "exact_residual_sup_norm": "2",
+      "geometric_ratio": "1/2",
+      "regime": "matched",
+      "time": 4
+    },
+    {
+      "T1_residual_modes": {
+        "16": "1"
+      },
+      "advance": 8,
+      "depth": 4,
+      "exact_residual_sup_norm": "2",
+      "geometric_ratio": "1/2",
+      "regime": "slower",
+      "time": 4
+    },
+    {
+      "T1_residual_modes": {},
+      "advance": 4,
+      "depth": 6,
+      "exact_residual_sup_norm": "1/2",
+      "geometric_ratio": "1/2",
+      "regime": "equal-leading-rate-positive-surplus",
+      "time": 4
+    },
+    {
+      "T1_residual_modes": {},
+      "advance": 16,
+      "depth": 32,
+      "exact_residual_sup_norm": "1/32768",
+      "geometric_ratio": "1/2",
+      "regime": "faster",
+      "time": 16
+    },
+    {
+      "T1_residual_modes": {
+        "1": "1"
+      },
+      "advance": 16,
+      "depth": 16,
+      "exact_residual_sup_norm": "2",
+      "geometric_ratio": "1/2",
+      "regime": "matched",
+      "time": 16
+    },
+    {
+      "T1_residual_modes": {
+        "65536": "1"
+      },
+      "advance": 32,
+      "depth": 16,
+      "exact_residual_sup_norm": "2",
+      "geometric_ratio": "1/2",
+      "regime": "slower",
+      "time": 16
+    },
+    {
+      "T1_residual_modes": {},
+      "advance": 16,
+      "depth": 20,
+      "exact_residual_sup_norm": "1/8",
+      "geometric_ratio": "1/2",
+      "regime": "equal-leading-rate-positive-surplus",
+      "time": 16
+    }
+  ],
+  "status": "EXACT PAPER CATCHUP THEOREM; finite mode controls"
+}

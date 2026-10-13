@@ -1,0 +1,287 @@
+{
+  "assignment": "12",
+  "bounded_dynamical_noise": "Tent |state_error_t| <= 2^t delta0 +(2^t-1)epsilon; logistic <=4^t delta0 +(4^t-1)epsilon/3",
+  "bounded_noise_holdout": [
+    {
+      "certified_error_bound": "1/10000",
+      "initial_error": "1/10000",
+      "map_lipschitz": 2,
+      "step_error": "1/10000",
+      "steps": 0
+    },
+    {
+      "certified_error_bound": "3/10000",
+      "initial_error": "1/10000",
+      "map_lipschitz": 2,
+      "step_error": "1/10000",
+      "steps": 1
+    },
+    {
+      "certified_error_bound": "31/10000",
+      "initial_error": "1/10000",
+      "map_lipschitz": 2,
+      "step_error": "1/10000",
+      "steps": 4
+    },
+    {
+      "certified_error_bound": "511/10000",
+      "initial_error": "1/10000",
+      "map_lipschitz": 2,
+      "step_error": "1/10000",
+      "steps": 8
+    },
+    {
+      "certified_error_bound": "1/10000",
+      "initial_error": "1/10000",
+      "map_lipschitz": 4,
+      "step_error": "1/10000",
+      "steps": 0
+    },
+    {
+      "certified_error_bound": "1/2000",
+      "initial_error": "1/10000",
+      "map_lipschitz": 4,
+      "step_error": "1/10000",
+      "steps": 1
+    },
+    {
+      "certified_error_bound": "341/10000",
+      "initial_error": "1/10000",
+      "map_lipschitz": 4,
+      "step_error": "1/10000",
+      "steps": 4
+    },
+    {
+      "certified_error_bound": "1",
+      "initial_error": "1/10000",
+      "map_lipschitz": 4,
+      "step_error": "1/10000",
+      "steps": 8
+    }
+  ],
+  "bounded_phase_readout_rule": "|x-z|>epsilon certifies phase; no uniform margin on Jstar",
+  "covariance_formula": "(1-2e0)(1-2e1)(1-2p_odd)/4",
+  "independent_noise_delay_channels": [
+    {
+      "covariance": "1/4",
+      "error_first": "0",
+      "error_second": "0",
+      "joint_law": [
+        [
+          0,
+          0,
+          "1/2"
+        ],
+        [
+          0,
+          1,
+          "0"
+        ],
+        [
+          1,
+          0,
+          "0"
+        ],
+        [
+          1,
+          1,
+          "1/2"
+        ]
+      ],
+      "odd_delay_probability": "0"
+    },
+    {
+      "covariance": "3/25",
+      "error_first": "1/10",
+      "error_second": "1/5",
+      "joint_law": [
+        [
+          0,
+          0,
+          "37/100"
+        ],
+        [
+          0,
+          1,
+          "13/100"
+        ],
+        [
+          1,
+          0,
+          "13/100"
+        ],
+        [
+          1,
+          1,
+          "37/100"
+        ]
+      ],
+      "odd_delay_probability": "0"
+    },
+    {
+      "covariance": "0",
+      "error_first": "0",
+      "error_second": "0",
+      "joint_law": [
+        [
+          0,
+          0,
+          "1/4"
+        ],
+        [
+          0,
+          1,
+          "1/4"
+        ],
+        [
+          1,
+          0,
+          "1/4"
+        ],
+        [
+          1,
+          1,
+          "1/4"
+        ]
+      ],
+      "odd_delay_probability": "1/2"
+    },
+    {
+      "covariance": "-1/4",
+      "error_first": "0",
+      "error_second": "0",
+      "joint_law": [
+        [
+          0,
+          0,
+          "0"
+        ],
+        [
+          0,
+          1,
+          "1/2"
+        ],
+        [
+          1,
+          0,
+          "1/2"
+        ],
+        [
+          1,
+          1,
+          "0"
+        ]
+      ],
+      "odd_delay_probability": "1"
+    },
+    {
+      "covariance": "0",
+      "error_first": "1/2",
+      "error_second": "1/2",
+      "joint_law": [
+        [
+          0,
+          0,
+          "1/4"
+        ],
+        [
+          0,
+          1,
+          "1/4"
+        ],
+        [
+          1,
+          0,
+          "1/4"
+        ],
+        [
+          1,
+          1,
+          "1/4"
+        ]
+      ],
+      "odd_delay_probability": "0"
+    }
+  ],
+  "missing_history_intervals": [
+    {
+      "component_count": 1,
+      "history": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "intervals": [
+        [
+          "19/48",
+          "5/12"
+        ]
+      ],
+      "total_uncertainty_length": "1/48"
+    },
+    {
+      "component_count": 2,
+      "history": [
+        0,
+        null,
+        0,
+        1
+      ],
+      "intervals": [
+        [
+          "1/12",
+          "5/48"
+        ],
+        [
+          "19/48",
+          "5/12"
+        ]
+      ],
+      "total_uncertainty_length": "1/24"
+    },
+    {
+      "component_count": 4,
+      "history": [
+        null,
+        null,
+        0,
+        1
+      ],
+      "intervals": [
+        [
+          "1/12",
+          "5/48"
+        ],
+        [
+          "19/48",
+          "5/12"
+        ],
+        [
+          "7/12",
+          "29/48"
+        ],
+        [
+          "43/48",
+          "11/12"
+        ]
+      ],
+      "total_uncertainty_length": "1/12"
+    }
+  ],
+  "provenance": {
+    "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+    "exact_arithmetic": "fractions.Fraction and inherited Q[alpha]",
+    "files_sha256": {
+      "observational_succ/cambrian_b_chaos.py": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2",
+      "research/2026-10-13/CAMBRIAN_B_HYPOTHESES.json": "791f5b5e014ccee67ee6bb5a4812419fac222aee0564110fa623eced4e1b2854",
+      "scripts/cambrian_b_chaos_probe.py": "69264da3d77811cf76eecd7edfec4524419f91964cb66f83d7016baa7264ca9f",
+      "tests/test_cambrian_b_chaos.py": "cb425ed6efa43d9da739338fa9d126019b37c4dcb94826fbf21a300f4291d93c"
+    },
+    "infinite_claims_authority": "Written proofs, not finite replay or Lean",
+    "physical_source_authenticated": false,
+    "python_version": "3.12.14"
+  },
+  "shared_error_mutant": "Shared fair bit noise retains covariance 1/4, so independence is load-bearing",
+  "status": "EXACT FINITE_CHANNEL AND INTERVAL_BOUNDS PROVED; no physical sensor attestation"
+}

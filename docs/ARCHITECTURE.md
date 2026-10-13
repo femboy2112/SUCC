@@ -472,3 +472,20 @@ See [CS1–CS10](../research/2026-10-13/EODCS_CAUSAL_NERODE_PROBE_GENESIS.md), c
 **Observational geometry:** the exact dyadic first-difference ultrametric organizes finite prefix resolution; convergence in this metric must not be upgraded to original-source realization without a closed source image. TLICA contact/toolkit/provenance/identity diagnostics remain separate. No source-derived Weil positivity or RH theorem follows merely from any of these classical limits. See [V0–V10](../research/2026-10-13/VOYAGER_OBSERVATIONAL_PROFINITE_COMPLETION.md), ledger O610–O630.
 
 **Adaptive no-go lamp:** Every finite set of observed binary head/shift coordinates has TWO explicit consistent full streams: one finite-tail-zero and one cofinite-tail-one. Lean proves this for arbitrary target profiles and probe schedules; a deterministic finite terminating adaptive policy can only react to such a finite transcript, and therefore cannot produce a decision correct on both tail classes. The separate simulator replays one identical policy path with both sources. This is a demonstrated **probe-closure boundary**, not a statement that analytic global claims are inherently unprovable, that source history was physically measured, or that the original carrier equals its projective completion. [V11–V12](../research/2026-10-13/VOYAGER_OBSERVATIONAL_PROFINITE_COMPLETION.md), O631–O637.
+
+## Cambrian extension: representation, realization and access
+
+The [Cambrian integration report](CAMBRIAN_CAMPAIGN_2026-10-13.md) keeps three
+independent contracts explicit. A source update must descend through the
+chosen observation; compatible reports must be realized by an original
+source history; and the source laws, probes, resets and resources used by
+the derivation must be available. None of these contracts implies the others.
+
+`cambrian_stochastic_transport` uses the joint next-report/receipt kernel,
+with exact rational laws and explicit source charts, to preserve evidence
+and Bayesian posteriors across changing carriers. `cambrian_c_geometry`
+handles relational gluing and source histories; its standalone Lean theorem
+requires finite initial and successor menus. Cluster modules are research
+adapters with declared mathematical inputs, not empirical source authenticators.
+The scalar kernel interface does not claim arbitrary noncommutative quantum
+factorization or physical intervention equivalence.

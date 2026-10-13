@@ -5,6 +5,7 @@ on:
     branches:
       - 'research/eodcs-*'
       - 'research/voyager-*'
+      - 'research/cambrian-*'
   pull_request:
     paths:
       - 'observational_succ/voyager_*.py'

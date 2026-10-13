@@ -1,0 +1,161 @@
+{
+  "assignment": "10",
+  "extension_controls": [
+    {
+      "period": 1,
+      "phase_entropy_rate_bits": "0",
+      "phase_history_count": 1,
+      "phase_paths": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_bit_history_count_per_phase": 64,
+      "source_entropy_rate_bits": "1",
+      "steps": 6
+    },
+    {
+      "period": 2,
+      "phase_entropy_rate_bits": "0",
+      "phase_history_count": 2,
+      "phase_paths": [
+        [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      ],
+      "source_bit_history_count_per_phase": 64,
+      "source_entropy_rate_bits": "1",
+      "steps": 6
+    },
+    {
+      "period": 3,
+      "phase_entropy_rate_bits": "0",
+      "phase_history_count": 3,
+      "phase_paths": [
+        [
+          0,
+          1,
+          2,
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          0,
+          1,
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1,
+          2,
+          0,
+          1,
+          2
+        ]
+      ],
+      "source_bit_history_count_per_phase": 64,
+      "source_entropy_rate_bits": "1",
+      "steps": 6
+    },
+    {
+      "period": 5,
+      "phase_entropy_rate_bits": "0",
+      "phase_history_count": 5,
+      "phase_paths": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          0,
+          1,
+          2
+        ],
+        [
+          2,
+          3,
+          4,
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          3,
+          4,
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          4,
+          0,
+          1,
+          2,
+          3,
+          4,
+          0
+        ]
+      ],
+      "source_bit_history_count_per_phase": 64,
+      "source_entropy_rate_bits": "1",
+      "steps": 6
+    }
+  ],
+  "provenance": {
+    "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+    "exact_arithmetic": "fractions.Fraction and inherited Q[alpha]",
+    "files_sha256": {
+      "observational_succ/cambrian_b_chaos.py": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2",
+      "research/2026-10-13/CAMBRIAN_B_HYPOTHESES.json": "791f5b5e014ccee67ee6bb5a4812419fac222aee0564110fa623eced4e1b2854",
+      "scripts/cambrian_b_chaos_probe.py": "69264da3d77811cf76eecd7edfec4524419f91964cb66f83d7016baa7264ca9f",
+      "tests/test_cambrian_b_chaos.py": "cb425ed6efa43d9da739338fa9d126019b37c4dcb94826fbf21a300f4291d93c"
+    },
+    "infinite_claims_authority": "Written proofs, not finite replay or Lean",
+    "physical_source_authenticated": false,
+    "python_version": "3.12.14"
+  },
+  "r4_CPE_boundary": "Uses Bernoulli source law, not merely positive entropy",
+  "source_topological_entropy_equals_selected_metric_entropy_without_prior": false,
+  "status": "EXPLICIT PERIODIC POSITIVE_ENTROPY EXTENSIONS PROVED; finite counts corroborate",
+  "universal_positive_entropy_factor_obstruction": "REFUTED by d=2 extension"
+}

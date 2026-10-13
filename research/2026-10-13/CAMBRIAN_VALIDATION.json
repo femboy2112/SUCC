@@ -1,0 +1,745 @@
+{
+  "aggregate_campaign_replay": {
+    "additional_stored_hash_checks": [
+      {
+        "matched_artifacts": 3,
+        "receipt": "CAMBRIAN_A_VALIDATION.json"
+      },
+      {
+        "matched_artifacts": 6,
+        "receipt": "CAMBRIAN_C_ASSIGNMENTS.json"
+      }
+    ],
+    "audit_assignments": 8,
+    "checks": [
+      {
+        "mathematics_and_hashes_match": true,
+        "receipt": "CAMBRIAN_STOCHASTIC_RECEIPT.json",
+        "runtime_fields": {},
+        "script": "cambrian_stochastic_probe.py"
+      },
+      {
+        "mathematics_and_hashes_match": true,
+        "receipt": "CAMBRIAN_A_RECEIPT.json",
+        "runtime_fields": {
+          "python": {
+            "current": "3.12.14",
+            "recorded": "3.12.14"
+          }
+        },
+        "script": "cambrian_a_foundations_probe.py"
+      },
+      {
+        "mathematics_and_hashes_match": true,
+        "receipt": "CAMBRIAN_C_RECEIPT.json",
+        "runtime_fields": {},
+        "script": "cambrian_c_geometry_probe.py"
+      },
+      {
+        "mathematics_and_hashes_match": true,
+        "receipt": "CAMBRIAN_D_RESULTS.json",
+        "runtime_fields": {
+          "python": {
+            "current": "3.12.14",
+            "recorded": "3.12.14"
+          }
+        },
+        "script": "cambrian_d_probe.py"
+      },
+      {
+        "mathematics_and_hashes_match": true,
+        "receipt": "CAMBRIAN_E_ARITHMETIC_RECEIPT.json",
+        "runtime_fields": {
+          "execution_head_sha": {
+            "current": "c36cfb0ee482e566a668bcf305352f3e3d5e079e",
+            "recorded": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
+          },
+          "python": {
+            "current": "3.12.14",
+            "recorded": "3.12.14"
+          }
+        },
+        "script": "cambrian_e_arithmetic_probe.py"
+      },
+      {
+        "internal_frozen_replay": "pass",
+        "script": "cambrian_b_chaos_probe.py",
+        "stdout": "{\"assignments\": [\"07\", \"08\", \"09\", \"10\", \"11\", \"12\"], \"checked\": true, \"no_infinite_computation_or_Lean_claim\": true, \"written\": false}"
+      },
+      {
+        "internal_frozen_replay": "pass",
+        "script": "cambrian_f_probe.py",
+        "stdout": "cambrian F: all six assignments and source hashes replay exactly"
+      },
+      {
+        "audit": "A",
+        "mathematics_and_hashes_match": true,
+        "runtime_fields": {
+          "python": {
+            "current": "3.12.14",
+            "recorded": "3.12.14"
+          },
+          "source_path_normalization": "file basename; every content hash compared"
+        }
+      },
+      {
+        "audit": "B",
+        "mathematics_and_hashes_match": true,
+        "runtime_fields": {
+          "F_checkout_observed": {
+            "current": "c36cfb0ee482e566a668bcf305352f3e3d5e079e",
+            "recorded": "21ef59994f11d488a31632f731f4e4d7d9adbc77"
+          },
+          "python": {
+            "current": "3.12.14",
+            "recorded": "3.12.14"
+          },
+          "root_observed": {
+            "current": "c36cfb0ee482e566a668bcf305352f3e3d5e079e",
+            "recorded": "6657950fc9275de03bfa68c864c73c15b1274380"
+          }
+        }
+      },
+      {
+        "audit": "F",
+        "mathematics_and_hashes_match": true,
+        "runtime_fields": {
+          "python": {
+            "current": "3.12.14",
+            "recorded": "3.12.14"
+          },
+          "reviewed_paper_corrections": [
+            {
+              "auditor": "F",
+              "corrected_sha256": "4590443e355344a72cc69251baa6f74e558802f1f5ce39c5e62106d9467212b9",
+              "countermodel": "a=1/4; 2a<log2; no nonzero compressed prime shift",
+              "original_sha256": "80950733892fa713cecf2fc46c3bc86a47dc15ad55026ca95751a8c8df5c1469",
+              "original_worker_commit": "c2c18c3ed638478448497fb6892a747f67ee6f9b",
+              "path": "research/2026-10-13/CAMBRIAN_E_ARITHMETIC.md",
+              "reason": "Two-bump indefinite prime-only form requires a>log(2)/2; operator zero for 0<a<=log(2)/2.",
+              "scope": "Paper support-window hypothesis only; executable arithmetic source, tests and raw numerical receipts unchanged."
+            }
+          ]
+        }
+      },
+      {
+        "audit": "G",
+        "internal_frozen_replay": "pass",
+        "stdout": "{\n  \"linear_cases\": 72,\n  \"fluid_integer_cases\": 8,\n  \"learner_cases\": 96,\n  \"cost_cases\": 360,\n  \"all_exact_comparisons_passed\": true,\n  \"raw_output\": \"/workspace/scratch/6d134115e8ca/SUCC/research/2026-10-13/CAMBRIAN_AUDIT_G_RAW.json\"\n}"
+      }
+    ],
+    "research_assignments": 36,
+    "status": "EXACT_CAMBRIAN_MATHEMATICS_REPLAY"
+  },
+  "formal_audit_C_root_replay": {
+    "local_locator_used": true,
+    "locator_source_in": "research/2026-10-13/CAMBRIAN_AUDIT_C_RAW.json",
+    "module_count": 9,
+    "production_theorems": 65,
+    "stable_frozen_audit_matched": true,
+    "status": "PASS_WITH_SCOPE_BOUNDARY"
+  },
+  "formal_portable_gate": {
+    "checks": [
+      {
+        "accepted": true,
+        "checked_theorems": 3,
+        "name": "EODCS_ActionClosure.lean",
+        "returncode": 0,
+        "standard_axioms_only": true
+      },
+      {
+        "accepted": true,
+        "checked_theorems": 8,
+        "name": "EODCS_CambrianRealization.lean",
+        "returncode": 0,
+        "standard_axioms_only": true
+      },
+      {
+        "accepted": true,
+        "checked_theorems": 9,
+        "name": "EODCS_CausalDescent.lean",
+        "returncode": 0,
+        "standard_axioms_only": true
+      },
+      {
+        "accepted": true,
+        "checked_theorems": 4,
+        "name": "EODCS_NerodePlateau.lean",
+        "returncode": 0,
+        "standard_axioms_only": true
+      },
+      {
+        "accepted": true,
+        "checked_theorems": 5,
+        "name": "EODCS_OrderAdjunction.lean",
+        "returncode": 0,
+        "standard_axioms_only": true
+      },
+      {
+        "accepted": true,
+        "checked_theorems": 10,
+        "name": "EODCS_RelationalChoice.lean",
+        "returncode": 0,
+        "standard_axioms_only": true
+      },
+      {
+        "accepted": true,
+        "checked_theorems": 4,
+        "name": "EODCS_VoyagerMemoryDebt.lean",
+        "returncode": 0,
+        "standard_axioms_only": true
+      },
+      {
+        "accepted": true,
+        "checked_theorems": 15,
+        "name": "EODCS_VoyagerPhantom.lean",
+        "returncode": 0,
+        "standard_axioms_only": true
+      },
+      {
+        "accepted": true,
+        "checked_theorems": 7,
+        "name": "EODCS_VoyagerTrace.lean",
+        "returncode": 0,
+        "standard_axioms_only": true
+      },
+      {
+        "accepted": true,
+        "checked_theorems": 13,
+        "name": "audit_positive_controls.lean",
+        "returncode": 0,
+        "standard_axioms_only": true
+      },
+      {
+        "accepted": false,
+        "checked_theorems": 0,
+        "name": "false_zero_eq_one.lean",
+        "returncode": 1,
+        "standard_axioms_only": false
+      },
+      {
+        "accepted": false,
+        "checked_theorems": 0,
+        "name": "invalid_finite_to_infinite_quantifier_swap.lean",
+        "returncode": 1,
+        "standard_axioms_only": false
+      },
+      {
+        "accepted": false,
+        "checked_theorems": 0,
+        "name": "missing_downward_closure.lean",
+        "returncode": 1,
+        "standard_axioms_only": false
+      },
+      {
+        "accepted": false,
+        "checked_theorems": 0,
+        "name": "missing_finite_successor_completeness.lean",
+        "returncode": 1,
+        "standard_axioms_only": false
+      }
+    ],
+    "compiler": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+    "production_theorems": 65,
+    "status": "FORMAL_KERNEL_AND_REJECTION_CONTROLS_PASS"
+  },
+  "foundations_probe": {
+    "PA_formalization_completed": false,
+    "RH_proved": false,
+    "arithmetic_causal_history": {
+      "Hessian_fake_det": "41/343",
+      "Hessian_true_det": "13/108",
+      "Weil_correlation_equals_semantic_Hessian_proved": false,
+      "actualized_true_b6": "0",
+      "both_semantic_Hessians_PSD": true,
+      "fake_composite_a6": 2,
+      "fake_connected_b6": "1"
+    },
+    "finitary_omega_proof_support": {
+      "earliest_stage": 1,
+      "finite_proof_verified": true,
+      "formal_theorem": "finitary derivation from union already has finite axiom support",
+      "observed_finite_theory_stages": 2,
+      "omega_physically_executed": false,
+      "omega_rule_used": false,
+      "proof_code_sha256": "fc23321637ff7db55bc2d78763e31a42a2cafa26a0ebea06a1da0ec69b9fcb06"
+    },
+    "godel_fixed_point_syntax": {
+      "SubstGraph_representability_in_PA_proved": false,
+      "object_level_PA_equivalence_proved": false,
+      "sentence_code_bits": 4377,
+      "sentence_code_sha256": "d63e44fb44913f78742d3063e8ca407b791dbb490c9ec21db4926c979d6004df",
+      "theta_code_bits": 1449,
+      "theta_code_sha256": "0612b723b148a7690b7ac4e86d7347cdf706fda5a420f511ac2e48a81310f590",
+      "verified_substitution_code": true
+    },
+    "missing": {
+      "RH_side": "independent positive observer-to-FULL Weil distribution identity",
+      "analytic_side": "rigorous prime/Gamma interval oracle for Suzuki negative witness",
+      "quantum_side": "validated record-to-semantic covariance functor",
+      "theory_side": "representable G\u00f6del substitution/derivability formalization"
+    },
+    "ordinal_reflection": {
+      "claimed_truth": null,
+      "declared_axiom_is_external": "EXTERNAL_ASSUMPTION_ONLY",
+      "reflection_follows_from_observation": false,
+      "successor_stages": 3
+    },
+    "physical_infinite_time_executed": false,
+    "rational_gram_certificates": {
+      "Suzuki_interval_oracle_built": false,
+      "bounded_search": "STRICT_NEGATIVE_WITNESS",
+      "negative_exact_quartic_upper": "-24",
+      "negative_status": "STRICT_NEGATIVE_WITNESS_CONDITIONAL_ON_INTERVAL_ORACLE",
+      "positive_exact_quadratic_lower": "0",
+      "positive_probe_status": "FINITE_PROBE_UNRESOLVED",
+      "source_is_actual_Suzuki": false,
+      "universal_positivity_proved": false
+    },
+    "status": "OBSERVATIONAL_SUCC_FORMAL_FOUNDATIONS",
+    "turing_observations": {
+      "delayed_prefix_17": "unresolved",
+      "delayed_prefix_19": "refuted",
+      "finite_survival_claims_are_universal_proofs": false,
+      "first_observed_counterexample": 19,
+      "loop_prefix_17": "unresolved"
+    }
+  },
+  "full_suite": {
+    "command": "python -m unittest discover -s tests -p 'test_*.py'",
+    "elapsed_seconds": 89.45219421386719,
+    "exit_code": 0,
+    "production_and_test_content_matches_commit": "6657950fc9275de03bfa68c864c73c15b1274380",
+    "production_and_test_sources_unchanged_during_subsequent_audits": true,
+    "summary": "........\n----------------------------------------------------------------------\nRan 1716 tests in 89.010s\n\nOK\n",
+    "tests": 1716
+  },
+  "initial_non_successful_attempts": [
+    {
+      "attempt": "Two initial background full-suite log captures",
+      "status": "No complete unittest summary retained; not counted as successful full-suite evidence. The subprocess-captured run above returned exit0 with complete1716-test summary."
+    },
+    {
+      "attempt": "First standalone inherited receipt invocation",
+      "status": "ModuleNotFoundError before installing editable package; corrected package/import path and four byte-identical replays passed."
+    },
+    {
+      "attempt": "Aggregate verification before final audit H existed",
+      "status": "All mathematical replay stages passed; final manifest assertion correctly rejected incomplete audit accounting. Final successful run above supersedes it."
+    }
+  ],
+  "legacy_receipts": [
+    {
+      "byte_identical": true,
+      "receipt": "EODCS_CAUSAL_PROBE_RECEIPT.json",
+      "script": "eodcs_causal_probe.py"
+    },
+    {
+      "byte_identical": true,
+      "receipt": "EODCS_RELATIONAL_MODAL_RECEIPT.json",
+      "script": "eodcs_relational_probe.py"
+    },
+    {
+      "byte_identical": true,
+      "receipt": "VOYAGER_OBSERVATIONAL_COMPLETION_RECEIPT.json",
+      "script": "voyager_observer_probe.py"
+    },
+    {
+      "byte_identical": true,
+      "receipt": "VOYAGER_ADAPTIVE_SOURCE_RECEIPT.json",
+      "script": "voyager_adaptive_probe.py"
+    },
+    {
+      "output": "{\"assignments\": [\"07\", \"08\", \"09\", \"10\", \"11\", \"12\"], \"checked\": true, \"no_infinite_computation_or_Lean_claim\": true, \"written\": false}\n",
+      "script": "cambrian_b_chaos_probe.py"
+    },
+    {
+      "output": "cambrian F: all six assignments and source hashes replay exactly\n",
+      "script": "cambrian_f_probe.py"
+    }
+  ],
+  "ordinal_probe": {
+    "bounded_query_stabilization": {
+      "earlier_observer_stage": 9,
+      "later_observer_stage": 28,
+      "max_matrix_change": "0.0",
+      "rational_times": [
+        "0",
+        "-1",
+        "1"
+      ],
+      "scope": "prime wavefront exact by finite stage; Gamma response separately analytic",
+      "sufficient_stage": 9
+    },
+    "connected_source_second_order": {
+      "composite_event": 6,
+      "fake_connected_curvature": "1",
+      "fake_slope_jump": "-0.731482740234792026106494701286",
+      "finite_observation_time": "9/5",
+      "predicted_second_order_delta": "-log(6)/sqrt(6) at t=log(6)",
+      "primes": [
+        2,
+        3
+      ],
+      "true_connected_curvature": "0",
+      "two_time_Weil_diagonal_fake_minus_true": "-0.0120556120601029081022494377731"
+    },
+    "formal_ordinals": {
+      "finite_run_is_not_limit": true,
+      "finite_successor": "n->n+1, complete source prefix",
+      "global_PSD_predicate_proved": false,
+      "limit_omega": "filtered colimit/union of coherent finite observations",
+      "omega_plus_one": "mathematical retrospective Suzuki/Weil report"
+    },
+    "hilbert_critical_line_observer_escape": {
+      "H_256_lower_bound": "5",
+      "finite_norm_squared": "1",
+      "fixed_local_projector": "P_3",
+      "harmonic_H_256": "102120333780755602922415011407986918913493325085710168750386125102325162741298648605491283438121466698312402217/16674490806895842671659008751776385350270324508909651849955453691538889375930032935391666564679008085339616000",
+      "identity_expectation": "1",
+      "local_projector_expectation": "30569899812642378231374849378256706475495594933001028391584998434487963855871727048218055368578181489789296000/102120333780755602922415011407986918913493325085710168750386125102325162741298648605491283438121466698312402217",
+      "normalizable_omega_vector_exists": false,
+      "source_inert_and_not_RH": true,
+      "stage": 256,
+      "weak_limit_zero_not_strong": true
+    },
+    "next_theorem": "Source-defined positive-definite DISTRIBUTION Psi'' on complete test-function core; RH equivalent, NOT proved",
+    "no_RH_or_Weil_positive_sign_assumed": true,
+    "no_actual_infinite_ordinal_computed": true,
+    "positive_observations_are_not_positive_correlations": {
+      "isolated_prime_impulse_negative_determinant": "-0.007213596830721357871484304",
+      "oscillator_Hilbert_Gram_identity_error": "2.8298997121333476148466e-73",
+      "oscillator_second_curvature_can_be_negative": true,
+      "quartic_determinant": "-192",
+      "quartic_kernel": [
+        [
+          "2",
+          "-14"
+        ],
+        [
+          "-14",
+          "2"
+        ]
+      ],
+      "quartic_psi_nonnegative": true,
+      "quartic_quadratic_vector_ones": "-24",
+      "quartic_second_derivative_nonnegative": true
+    },
+    "semantic_second_derivative_information_geometry": {
+      "Weil_identification_established": false,
+      "both_information_geometries_PSD": true,
+      "fake_covariance_determinant": "41/343",
+      "fake_six_Hessian": [
+        [
+          "24/49",
+          "-1/49"
+        ],
+        [
+          "-1/49",
+          "12/49"
+        ]
+      ],
+      "genuine_Hessian": [
+        [
+          "5/9",
+          "-1/18"
+        ],
+        [
+          "-1/18",
+          "2/9"
+        ]
+      ],
+      "genuine_covariance_determinant": "13/108",
+      "source": "Hessian log finite positive evidence partition function"
+    },
+    "status": "FINITE_ORDINAL_SUCC_SECOND_ORDER_WEIL_PROBE",
+    "two_observer_mixed_finite_difference": {
+      "distributional_limit": "Psi''(t-u) = Weil distribution",
+      "h": "1/20",
+      "k": "1/30",
+      "mixed_covariance_increment": "0.000964653856973416905507178662116",
+      "positive_definiteness_proved": false,
+      "t": "3/5",
+      "u": "1/5"
+    }
+  },
+  "production_test_and_formal_sha256": {
+    "formal/EODCS_ActionClosure.lean": "132643b8cc5b3e07df84d0bba3bfb49c49587563efdbe69c2903ba0280683166",
+    "formal/EODCS_CambrianRealization.lean": "8260812a716cc8628ab16470219c92fc49772fd9fd3417ce73dc3c089e9c80cf",
+    "formal/EODCS_CausalDescent.lean": "624c5ca37a17e3f69500611f1552c5afbd2640fdd124becab8a9f70482d6b880",
+    "formal/EODCS_NerodePlateau.lean": "a4fa780c01b21988d35da3ac8eebeb2de5ea099969d6a52dbcebdd8f8cd41c2b",
+    "formal/EODCS_OrderAdjunction.lean": "8b50a10ee5718e546bcf838f19927d634793decebdbe0deb79cb80f570879ffd",
+    "formal/EODCS_RelationalChoice.lean": "d82d9d0dba815541b341ac4614e28c07a7dae1c635a38dcef37bc061f63e0178",
+    "formal/EODCS_VoyagerMemoryDebt.lean": "ebd28c1b189f53ce73955b34a2176d365377068998e4760cc2f23a43e331d05f",
+    "formal/EODCS_VoyagerPhantom.lean": "2730ce9aaca114af94ceabcc3f5e2f9491df48fdf317463f65b415a26aaa720c",
+    "formal/EODCS_VoyagerTrace.lean": "81572903530cf56610b3ade66a2b820cc227960cbbfccbb2b8a687a930374e38",
+    "observational_succ/__init__.py": "8c0d1b7b73ef96c6ae9b9f1a4e4872a21a0b93dd2400272cc2407b137db289b4",
+    "observational_succ/__main__.py": "74c04789a5e77372c4a7eca9cb572b47847043442eb6fb9489d4168d370da27d",
+    "observational_succ/absorbing_frames.py": "2a4dc7f0af07b536dcd6fe259069a0e78890358180b4c5490d7c7bd4d71eb95e",
+    "observational_succ/adaptive_proof_policy.py": "433c32b2c81128be615f8dc9cb39d556ff6781bed3a869524fe6effb41f2da4d",
+    "observational_succ/adelic_theta_completion.py": "dde67b2b6d6d06a06098c0126851ca748fee840c4494b7de5ec47a9209edccda",
+    "observational_succ/arithmetic.py": "25398e89306bdacb6fe17e419cf695ad4f1c5bb41f4536200260862b6e0b579e",
+    "observational_succ/asynchronous_e_tower.py": "33cf92d63836b4075055207255c2ec36a4c52dc386f3a064ba588bdf9697ae18",
+    "observational_succ/balanced_theta_li.py": "ca9791abf755ee49dbddb6240231a12bb7083e95d30e06aac427dd3d65e8773b",
+    "observational_succ/basis_boundary_transport.py": "7ca988f5bb7ca756af2a52bad54796b756297a0358654b618dab8b59246333f5",
+    "observational_succ/boundary_tower.py": "d6b7b03725a4771d421978fec589480d7a996cf57845bd838afbb7f6ba87931d",
+    "observational_succ/cambrian_a_foundations.py": "21fd548bd7e8d6196b716d259b9efa3f2285f20ed375d1965fcf92c039ea673a",
+    "observational_succ/cambrian_b_chaos.py": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2",
+    "observational_succ/cambrian_c_geometry.py": "f8c1dabdcf3e76be8a1fcead3d6a8450fb08328000efa42777db195e8a3cbf13",
+    "observational_succ/cambrian_d_computation.py": "eb303fd34eadcc041af54aa9c330aa960e648acf4429357f8d3d8c177faa4a74",
+    "observational_succ/cambrian_e_arithmetic_transport.py": "8c5781f8eea3a9c0ed0c060aaece65366311235986e52162bb13c8b2621cacda",
+    "observational_succ/cambrian_f_closure.py": "acc31e8357cea00387023341e6af883676699b9058c4b29d52e3eff88410e91a",
+    "observational_succ/cambrian_stochastic_transport.py": "4daabd8daf5131a038d677c6c33248d63179046e1a31e972900508e042485aa5",
+    "observational_succ/carrier_hankel_bounds.py": "de706c8cca996fc18b7738fcc17265fe7e2a88fa84a679c30c438015c75e0e65",
+    "observational_succ/carrier_observational_frontier.py": "c658a7062b04b0802cc1286fceacb987df4686efe4610145f0a783c9ea8f7692",
+    "observational_succ/carrier_shadow_fibers.py": "e9149d6aa76207a2e138b94421807a1f7bc87cb6342ff32bccd9318d5a0eb4f8",
+    "observational_succ/carrier_statistical_limit.py": "96aa092b9792bdff5d4198ac2b6d8a7abdf0b0033ebcc25a9db295c7f8b15fa1",
+    "observational_succ/categorical_model_bridges.py": "4433191c51d28390b30ef321267bf996146cba96b337f14af51a3ee4a75b0974",
+    "observational_succ/categorical_repair_synthesis.py": "e4b85fece4fa11b82a4707a0446ad6a05a4c953c6ff87f6329e39e71e1ab9f35",
+    "observational_succ/causal_nerode_succ.py": "0d41180c9a041400e1c781d3578d3f7652242719c5f6e46cdf4028ec779d7ddd",
+    "observational_succ/chaos_source_quotient.py": "8ce2c3bf9f7d1407f6b05f011b72e687163b9d13f6b2af18fd79efac0708f0c6",
+    "observational_succ/checkpoint_meta_tower.py": "89bec4281a60a861309c3c06f66ed5327f33e4165cddb6803d42f5e8ec14e7a9",
+    "observational_succ/circle_translation.py": "49fbf5c0ce530d7c714a3ecf28682ba348cedaee231c396f9f9bb25c1cbed65a",
+    "observational_succ/circle_transport.py": "7e0dce72df006a3f86c39461c4c8a345736e95ba0425390fffaa19b2a8999625",
+    "observational_succ/clock_mahler_interpolation.py": "2082ec4316d0fa92a1587748e36cfe6f82ba7d3d3b9c94a575c8fe8e7dbb36a6",
+    "observational_succ/constructive_frontier.py": "9481b9d5bfc517b68399af85b9e6913673ff7c0fd29e6ec6741071f024162d60",
+    "observational_succ/constructive_gluing_tower.py": "cbfd00308f10e4ea07146b9d810924f02fd607fd1b379070ba4f2efc42e8a75f",
+    "observational_succ/contextual_heuristics.py": "a8d9b980f62dbec0bf4fa03d91fb06dab31f8ba30992eab1a7412b7473f44602",
+    "observational_succ/core.py": "236af6c33af15ba7c78a10f7d4ef840f41137a81854d130ff299fc74d33bdcd1",
+    "observational_succ/covariant_observer_frames.py": "19f8cf420725443f755bcd78ba7c8fd58f1be2841b5237995001c7a9a0c7b138",
+    "observational_succ/covariant_proof_descent.py": "4245d8c0f64e3968221c15ab62b91c009230de23569d21b63e3f5c0943336ed8",
+    "observational_succ/coverage_lower_bounds.py": "4ca7fe6648cdb40ebc22b3fffda4515121638522355b1e123889577e44ab2ffa",
+    "observational_succ/coverage_sieve_crt.py": "a247038e93655c71a3f44599272b7bee394b3e4fd27bcf5620976614f81d1170",
+    "observational_succ/cycle_support_budget.py": "5316c678ada946be022cf06eb136836149e3316dff82c2f828f003e3df603884",
+    "observational_succ/diagonal_adele_zeta.py": "1fbf3353c643e6b952269f99fed818050a2a7a136cc8542c3c1803f91813fd75",
+    "observational_succ/diagonal_tower.py": "b2d118113931ea505c88194775bfe6f3ea5e1468e5f2a5a5adb2ecf740ebe0bb",
+    "observational_succ/dirichlet_lambert.py": "d0b123bbe1f30388cb5da931e5bfc26960b7c40b014568746b8d7df9675320bf",
+    "observational_succ/dual_boundary_observers.py": "7efdd02ee08a01edf4642beedaec5f19a541687e0ecd11dc7046e2ae766c2ea9",
+    "observational_succ/dual_chart_riemann_roch.py": "f8e030efbd302af7884303f9d1e0ca6f78054d1cf3e5b0bfa18ea36231c2687a",
+    "observational_succ/dual_place_verifier.py": "091bbd287fc22a2d81c4f2a6494ee0b767b0c0e46e6202f8dcc5f4d96808714f",
+    "observational_succ/dynamic_boundary_inverse.py": "b21e4d09d32f325862a1a34fee5d4c70d093492663e6130e73903b32b0e32c65",
+    "observational_succ/dynamic_fourier_tower.py": "4e05012124b4aea62e8ddcbc0f5ee6cd202efb389a053cf277a14a102e0419fd",
+    "observational_succ/engine.py": "824960f7d4af1bbae71dca4b2e78dd569b27bc70a43c59f681cf8fc420c8dd8c",
+    "observational_succ/entropy_transport.py": "81d2e8c9de8d1e8aa00d1c5bfc581968b9be1ea1ff11f7608336d0ba26b25276",
+    "observational_succ/eodcs_evolutionary_discovery.py": "746baaf80da382339d0a9b09d00e9f22d26bea997e783b1defb5a5ffd8bbf526",
+    "observational_succ/eodcs_genetic_probe_genesis.py": "61e1dcbd68d77e9ea03ff5b0b81056e7acd3ea1a577ddc37903de0959fd9ed58",
+    "observational_succ/eodcs_multi_action_source.py": "11025f6f7953ebdfa9b4cb1f11d8ce37d991a9d79a3d5e65e6489c07bcff913b",
+    "observational_succ/eodcs_relational_choice.py": "c4a72ff5060327158326252b72033970fbc0ef198787f37960e0fbccdf228083",
+    "observational_succ/eodcs_source_uncertainty.py": "348aa6d545bc931ec82fd4975271b3619f2bf5d4c2a1393784c35b1bca32d36e",
+    "observational_succ/evolutionary_bridge_search.py": "6e9e953edffee24615579d7c78604ce8a998ca7eefbef05b0fc1768fbc92cf5c",
+    "observational_succ/field_analytic_shadow_countermodel.py": "2731ea0dca2d722008e555172177a03b4e5d859ba293f40883d938410bb12a46",
+    "observational_succ/field_context_descent.py": "c1b56236a7607fff88adcacab5cd8476b50b8e77a193daf5376d3afc53322966",
+    "observational_succ/field_environment_audit.py": "81249203d787e2c2825936c11819839cfd9786747c76d77c42a9d73eb692ae2a",
+    "observational_succ/field_limit_countermodels.py": "495cf2d8978aac8571dd27dde996451b81bf40e559f73d9033a316d7310d93be",
+    "observational_succ/field_probe_repair.py": "9611a6b7eb92d95206a80cebda4100ea91099616eb4fe6a7ca93f277625f459c",
+    "observational_succ/field_relative_closure.py": "d4608fbc1d6e84b81f68e83b8e86692225b55d124eb289825cdb822f5c902220",
+    "observational_succ/finite_fourier_carrier.py": "4b3780ecc75fd189104d57632a423eef1ef4208a380adb5c0cfd9a2fb868984a",
+    "observational_succ/finite_poset_synthesis.py": "29250d4c790d8298f328f9298c0a0a19687cb8a94a4a0ee1e9b1ce93b7acbbc5",
+    "observational_succ/galilean_lorentz_succ.py": "fab10d9ea52485d93043db8f3f4a6c7aeff97db7eaca7e50532d2bc968bf888a",
+    "observational_succ/gamma_interferometer.py": "55c3e9d85d8bc521685aa417712b2626e4b961209bd336db67c72c90b51f244d",
+    "observational_succ/gamma_succ_path.py": "3b8f86c616a1e52da8a7ef134e5f35910262d7e5c9e46683ca3627586f52ed0d",
+    "observational_succ/gaussian_holonomy.py": "53a491e7ac862d260cba6751575f9e97a4ed9c75c63248d47fee6b3e6d1df405",
+    "observational_succ/genetic_obstruction_holonomy.py": "bb47382d90bfb934b4b0f3ca512d8fb3f409be5af152e0e7a7af30d3a8dd2b8e",
+    "observational_succ/godel_succ.py": "6ae6af8425a4e7958563fa0578f42ba84ed3814c5cce0749fe6188ee068fcd7a",
+    "observational_succ/hasse_theta_seam.py": "09d0c527a2ad0a638abd5dc3e4adc4157817c757f4d1c3c338b941a90eb3a3c3",
+    "observational_succ/heuristic_bridge_discovery.py": "758b788e76b5e6c6b3243985d5c4989b45f81e4efdd6d153fe75e72f386bb003",
+    "observational_succ/heuristic_evidence_martingales.py": "19d0b7075499fc28cd42832eaecc1ca7a643f3fbe77d58cf6671fcf2630547fc",
+    "observational_succ/heuristic_joint_noise.py": "a7a95a475f6ce58a842bfc91528d8d4d4ec55985f1c6ce8083ab01a6c8f2588f",
+    "observational_succ/heuristic_shape_learning.py": "74bdc3097c1594d91c6dda0f93d53b9217608e48d497cb3a96d140a715b5eb53",
+    "observational_succ/holonomy_proof_transport.py": "5964e56c528227941d5da6f4f83dffe9a54119be811725f838005aa5b1ca1dd2",
+    "observational_succ/ideal_frames.py": "49456a0ffe143dd672920182f0d5630c890d8c4cbf2a1020d571f0f44c5b8ff0",
+    "observational_succ/infinite_realization.py": "cbd880c48302375523d7d4023aa5c5a1c5758311dce15aa51612a0d921dbe66a",
+    "observational_succ/interobserver_channels.py": "5a3c9d72dc84427d3bf72410f8b8ed36fcdb3fc9800c9e1f48cd85532bc88db6",
+    "observational_succ/knowledge_ladder.py": "befad197c6898321dcbcd5ee025972c15b1669d1ad99338c8f7c6c7093e361a2",
+    "observational_succ/lambert_succ.py": "183d86ebcb3f5b60a379c17b60ae904533f103f07d6cc6a667525b0083c22c56",
+    "observational_succ/local_global.py": "c8c7370115c4e83c7ec2cdab92acb3380ac6aa721e0d0387edcd254f05548d0e",
+    "observational_succ/local_global_descent.py": "e1c31a1fa55f8fbc914bc4b30d9ef9ebea5a6cb5ecb36c2994e04e2ebc7733d8",
+    "observational_succ/logistic_observer_tree.py": "fdde6dc2f02c75e90e50ae52b13699b40fb7b3f29d2fbfebd21d8481a4007a09",
+    "observational_succ/maxwell_transverse_shadow.py": "6e52c3091669c54a041bc386c619aa91ff948d71d9c1b5897a0f900c05d5eced",
+    "observational_succ/misiurewicz_phase_quotient.py": "389d29b14fd2f1947a6e488a87fe8bd18269af23269d4ad6a9d451b2ff77ef2d",
+    "observational_succ/nerode_probe_growth.py": "16fa756fe170b589877e38fa7257623a79fdc406a0454812ca6422fe314d12e6",
+    "observational_succ/nonabelian_local_global.py": "f3e529956c5579622c8e1d9562086cdc77313bc39c96e9c56821df54eadaa344",
+    "observational_succ/noncommuting_proof_transport.py": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a",
+    "observational_succ/observer_logic.py": "462c03a16a4c38a8a3a48c62070113e19aad912e4edf3d64b113e92bd8184b5f",
+    "observational_succ/observer_reflection.py": "d03fb9678ef092127bcad9680acc7353f90dbc02db7ed9784c2c67cf67c8f174",
+    "observational_succ/observer_traps.py": "89939bafcf42168d85a3652504419fd35f302ba67ed8557e6f3317ed87a237c7",
+    "observational_succ/operational_semantics.py": "e5dec902c67aa0609282cb00cb7490f94830230dbc9ca4be2b9b0d1c47f7d952",
+    "observational_succ/operational_yoneda_descent.py": "c9db557825a01bec76e8bc38f32d3f59cd2dd17d7a2670e15373aedeedc67e0c",
+    "observational_succ/ordinal_succ_report.py": "70ea2ad6b80a9f4b1a03d5d5aa43327ed43fa109f9bb1c79085dc5de0d66e091",
+    "observational_succ/periodic_path_certificates.py": "cec87bd72ba1e9f2ac528e828b4045c392eead20f399e49337eaab8d2b988699",
+    "observational_succ/phenomenology.py": "ce7c2fdd2ddfc83f8ffc51ca2bda056deaad9d8c20ac5fbd2b3876f88171ecca",
+    "observational_succ/precision_transport.py": "e4a7d31d1debb3d3ad44831f1412f04a95df9cf3c1601184e02f093e133a7c57",
+    "observational_succ/prime_clock_yoneda.py": "e19903f4411384b300359d5ee6891777bb3fc8bc90fdf611cb8a28d98ade3976",
+    "observational_succ/probe_coherence.py": "2495e1880b76a615d7f048e177304c7aee3e0dcfe5ce7f62abda1d1a1b6a664f",
+    "observational_succ/proof_backaction_debt.py": "fd9369e27c5404da1a3e7900641e888bb8bd41efa758ec859a3552c989f14f0d",
+    "observational_succ/proto_succ_variable_unit.py": "d76654a750daee02f47bfd60cea48486fd498db3fdc5c0d51ed6243bd7b3f525",
+    "observational_succ/quantum_records.py": "9a3f367fb0e2bcb1e73c1a561ffcd2450cf5866f4c28a7df84e3ecd1a387a4c5",
+    "observational_succ/relational_model_genetics.py": "d4dabc68e5188a6fa6107525d829269e5eea809fba52006223df4c373547050d",
+    "observational_succ/relative_delta.py": "3261ac68e801c2738a3a6da8e8e98755026181ea2fa526d23453b8b82e38827f",
+    "observational_succ/relativistic_shadow_tower.py": "ce3a9f7d1b0456d74c9fb6a727e0ee37412247454e17869e0e735fe87fdb8521",
+    "observational_succ/residue_one_arch.py": "8e056cb4c3ac97ad2ac60e9a4e8208255753974691062831868f77e929f40c96",
+    "observational_succ/resource_probe.py": "e971c82ce17a9ed24fb0de5126f6fff3e1536698876546619406f87c74b3438b",
+    "observational_succ/shadow_archimedean_tests.py": "0e5e33cd3b0a9bdadd97ab04e4716242d718de1f3b1a7ca32cb9a6d5a1e31e1b",
+    "observational_succ/shadow_source_inference.py": "fd46ba3b6c9db4fc09a61f15f659baa382300ccbd298156a953dc84497474627",
+    "observational_succ/shadow_zero_divisor.py": "0c4a2f9266b3c0fb5910582bf49cf930a6756158fe51ea1d08346ab3d49d8171",
+    "observational_succ/shared_carrier_descent.py": "b9638dcfdfd42cb97178c96b181e1b9a944f9d85b75c3f86ef25b2586830bf9b",
+    "observational_succ/source_coupling_bounds.py": "10315734961a5c05f6ad7cbaaec57035151c1b19c67c263d299a04b7abf595b0",
+    "observational_succ/source_prime_certificates.py": "827b157f217d4cf10fa6b6d18c066864c856b9cfcb31a766020d8fb5b5c2e6fa",
+    "observational_succ/succ_discrete_integration.py": "af3cb7feef2f09351b7d11490507570cdaa19c64639baec8c6ddb925fe232d67",
+    "observational_succ/succ_shadow_window.py": "fcff90412c4378c181a31322809cd0a43bd55fabfe0a2ec575079f85cc8cbb0b",
+    "observational_succ/twin_circle_observers.py": "7e7c4d33a5c92136fe42b09d131efefff6cc9a4e3afcec85d5a1a638d7fbdc89",
+    "observational_succ/virtual_mellin_zeros.py": "9a8fe4dec3c3900e31f1aacf57442db6b90fd546552d97a9ee3f893f683f7310",
+    "observational_succ/voltage_cover_synthesis.py": "0fd4395cfe3678c1f27a36f05f2d50a4326cca00b09c21e45382627eaf01b59d",
+    "observational_succ/voltage_tower.py": "165f57bc112cbc1480475cff3a8a57586b0b5e4b7f666e252cdf42afc843bec2",
+    "observational_succ/voyager_adaptive_no_go.py": "dca7dfdd29b5cf5532ffd76158512f2cd6610604ea1c92526f4da74379b0b4fd",
+    "observational_succ/voyager_profinite_frontier.py": "9971e3b4dc389963be322bd96ddedb8ad2cbe2e5c2e4dcea2913f0485195ea34",
+    "observational_succ/yoneda.py": "4af0194e675406761c1dec151fe1407b65037e1e87e8bc8a950bd42bf914baca",
+    "observational_succ/zeta_minus_one_transport.py": "c29a6f5f7afd67bda24b21931b828388e36027bf63d2650ff179296e63527046",
+    "tests/test_absorbing_frames.py": "bbfe87c5b01e7af6469b3ffb07cbd6e1d589d73c303331e526c9b6d0075b255e",
+    "tests/test_adaptive_proof_policy.py": "e16799b046936925e9b24d0ccfd0af6fd43cf2a8fafed37d8423e67ebe3281e6",
+    "tests/test_adelic_theta_completion.py": "d5b041e98d1459a3d0ee561a5e5245ada3572de9981c981df373da3c6bffeb92",
+    "tests/test_asynchronous_e_tower.py": "6c2bfcba9d9308ba3e9d6f554ee063a3fafd42c56aa2ac472ad9ee53e1815c86",
+    "tests/test_balanced_theta_li.py": "f1c5b2d3687108ca950c66e4c86fa264e5a116cd749fe0ba951c68b008997e7d",
+    "tests/test_basis_boundary_transport.py": "5f4348efeb644e2b6d29989aaa6b2b89be8ed524b9ce9cc5221973498f99996f",
+    "tests/test_boundary_tower.py": "514419d5c3f6c322791dbabfb67da5b8e2db1541225fb19100a97d4af08fb6dc",
+    "tests/test_cambrian_a_foundations.py": "c047edcb2f59c4fa08948fa314ca5b590ddf3f1abceebc3d9194ede10fcb9309",
+    "tests/test_cambrian_b_chaos.py": "cb425ed6efa43d9da739338fa9d126019b37c4dcb94826fbf21a300f4291d93c",
+    "tests/test_cambrian_c_geometry.py": "9c0e838eb192483f4ceb49cf9887d784bcdf1111207e7fe21a2aa4a8b95c76d2",
+    "tests/test_cambrian_d_computation.py": "5f25be675865b056a8bb645c21a57db602b413ed71e59c9434089538cc3b6e33",
+    "tests/test_cambrian_e_arithmetic_transport.py": "f64acff155554e844b86cb0bc6b2ca34a525c1f80a32b5770f7f2a9d041895e1",
+    "tests/test_cambrian_f_closure.py": "505a1b2d2e2a54b665009f267125cfe7b8c4c240c132110b39aa3e18d17d276b",
+    "tests/test_cambrian_stochastic_transport.py": "51c0e3ec27f8123ead8af4b29ed209feef9430ccba00ec30763706b304993781",
+    "tests/test_carrier_hankel_bounds.py": "40b90fb974952cf4f05519865b6ed4d37c2affd3c7cbbab512fe35cbbc0410e6",
+    "tests/test_carrier_observational_frontier.py": "b5b9c967d70e846c6169b0bfedd57c9389e14444ea810a660da5c44fa3e08e1c",
+    "tests/test_carrier_shadow_fibers.py": "c14f96397c57c161125a7910ae6cf6af015ebc0c5d7404e4d2b49b2170ee2d78",
+    "tests/test_carrier_statistical_limit.py": "fbfe41bfd166fe78937a2d21183cb9242c4fb8a5fda6a368bf676fafca360dc5",
+    "tests/test_categorical_model_bridges.py": "3a093b018c189ab7e342417a0644af5b669323d1d8d340995ec210472e70e6f8",
+    "tests/test_categorical_repair_synthesis.py": "a06eae45f43a4f3b88bbaf5a8f89e60011c28a293b4cf21325c07beadc04e540",
+    "tests/test_category.py": "c63194c9155d9683640338a3bd087e6075f0519c1d1b1f39c7e08579b77ed08e",
+    "tests/test_chaos_source_quotient.py": "622750a85f48d84246b42a716a32f0c2cb62665d4a71b7c387b7e630d89cdc8f",
+    "tests/test_checkpoint_meta_tower.py": "d7ad262a61e5dc7f6d07fd651cbade7fe3b9fd3a7a5305cf4f2d9d8e86428182",
+    "tests/test_circle_translation.py": "5ef674e36eb65b52c04ae040a04b87ce415f6de61a3286e96cd7c1aa4c7400a6",
+    "tests/test_circle_transport.py": "8bb61878148aefdfb1df19f93ce9d96ef5457c36794b6ca6a467aa10c6a2672b",
+    "tests/test_clock_mahler_interpolation.py": "4eab55861e6ced7c3cc9f8bbd6b55adf8df2aa162cf785b78127cfab23477503",
+    "tests/test_constructive_frontier.py": "d2d224788eceabadca4266cccc6e52364eace224c4d0609d2d8a43fb76ed1f64",
+    "tests/test_constructive_gluing_tower.py": "97a06cc2b94f6c94ff18f4913daa1efb0c7571c1da977c7e2935bd17f27d5c1c",
+    "tests/test_contextual_heuristics.py": "aa13b90cd8d3ea2209fb6233fbaf22592d21131dad7f18c8231fe653e75e8663",
+    "tests/test_covariant_observer_frames.py": "04b951fdc6b6a541a45729ebb76015cb45358d091efd26a14f51cf7add0045f9",
+    "tests/test_covariant_proof_descent.py": "59d2aa4b44d50fe939e4c9af388c42e0dba1d7024afebf056729fce02da63658",
+    "tests/test_coverage_lower_bounds.py": "41bac832785eb75fe9ce60e091b3d391966a652e9c231b7c7ce48f937a282b79",
+    "tests/test_coverage_sieve_crt.py": "175652f5442f9167f8cf8f7b30f43958a434e04fa49b8bba78a073db5f8c96f3",
+    "tests/test_cycle_support_budget.py": "9c92aabe5a0460b7e9141c6ffe61e741240e3ac51b1a4eb2abde9cfed64cf231",
+    "tests/test_diagonal_adele_zeta.py": "bdabee06490976d2fd77604bcfbf90d6b5550f5ac75d7d677d8e9afcc229e4ef",
+    "tests/test_diagonal_tower.py": "48504e4306e885e69c4119399b1b342bafbcd26e0f11bc1d2360a328d679399d",
+    "tests/test_dirichlet_lambert.py": "62e25aeb0223f17df8be0a300fd522a2a6a48398b83177321aa9c95afa474ebd",
+    "tests/test_dual_boundary_observers.py": "ee7be53092a49fe551dd1ba21e134db470e7bdf7b6b4ab6ed362e16470e76af1",
+    "tests/test_dual_chart_riemann_roch.py": "da7e64fa2af2eada578969ae67bc7f9d1f82acb96391d3365c00c0c6a4a13a2a",
+    "tests/test_dual_place_verifier.py": "661abe69c74c3712bf79366ec4bff6d9449746fa2bdf24a225c4707b8de612a2",
+    "tests/test_dynamic_boundary_inverse.py": "d10d81e9fa5e0fff3f94a3a0f21f1da4785424e361aa86f197c8f69a622bf56b",
+    "tests/test_dynamic_fourier_tower.py": "bd6d1147ff55060f3d6951f8e1f7323ad0544b59c9e68682499730cc7e8622bd",
+    "tests/test_engine.py": "bf83ba93e25ebda9ac317f57fc12f05ced4ba88962b3fc459dc51cdec30cd5d9",
+    "tests/test_entropy_transport.py": "8fe6e114788f5d1d6d024c41ebc33c4a6589918d71bc72b1bd3a955de36a0f18",
+    "tests/test_eodcs_causal_nerode.py": "bd08946477084c844d02b03dcf3274a57dbc05f1b192047c6186c442ac3c7d9c",
+    "tests/test_eodcs_causal_receipt.py": "1dd81a9103ebf18212c48c33a868f1a04d7701dad33d63b656c5acbfebbec105",
+    "tests/test_eodcs_evolutionary_discovery.py": "0aa7fc262f01e7dd1582bbafdedd3cfc8c720b69498c458ba75058fc035ae89f",
+    "tests/test_eodcs_genetic_probe_genesis.py": "7d030ccedce9b6436f60723230d7c151c24e5209f7f63460c9b8b1495494429b",
+    "tests/test_eodcs_holonomy.py": "88677267cc9e6b29e9883103cd7769df29422d5fff77466b6dde48d470cd12ca",
+    "tests/test_eodcs_multi_action.py": "de07fb90b58ba29c97a7651a4499004ee6cab087e49b9b10a03737bd08eedfc7",
+    "tests/test_eodcs_nerode_probe_growth.py": "16a02f02a3e69858421327d1832aebb276c64b7f1743e114eea5def31df0aff7",
+    "tests/test_eodcs_posets.py": "ba6a122a50cb1964033c9b8a558948373aa0374baf464406893dd1d36f33a0cf",
+    "tests/test_eodcs_receipt.py": "4cc45d03cac3a0ba080f00ea3fd67fdae70a6789d104688ab1b3c9974f88f82b",
+    "tests/test_eodcs_relational_choice.py": "ce52abfbc4f432e643bead041b7c2088c1c66d756b154f2e2b3422d474deef90",
+    "tests/test_eodcs_relational_receipt.py": "66c3b827f74b70b3b1f3e8724832c930e402e228277b997058d9d275a7be0453",
+    "tests/test_eodcs_source_uncertainty.py": "7874751797e990951a76a570027ad0a6d69b097c9b45c320ee6eab839d3324d7",
+    "tests/test_eodcs_voyager_adaptive.py": "d0714cd76603be119f8ffeb1fc80179906c4ac4176bef97f52f5a3542b16e5be",
+    "tests/test_eodcs_voyager_adaptive_receipt.py": "39a193aa50964d98cc43f920eba7c777d05fcd2b35e87728bef067273f9b5a32",
+    "tests/test_eodcs_voyager_profinite.py": "dab5d7cd7fa4c0b17f2e692bcec7ab1cb5cb06de70dcddd4d5245387f11c9d8a",
+    "tests/test_eodcs_voyager_receipt.py": "3623d7399d8b06eee3aab0b38600082dbac623c45e274b8e8c7c78b0464504e2",
+    "tests/test_evolutionary_bridge_search.py": "89e182e67acb62e96a8a42586aaa2f94bc234f926798745ba274d637ba9206d1",
+    "tests/test_field_analytic_shadow_countermodel.py": "183f9a2459e44d7de793dbaf0b29bd5520b2059781df2da905d2696bc99edd87",
+    "tests/test_field_context_descent.py": "17aeb5840ffb0cfca4e9e73510d46f46f146900ac60260aae334f265180b8fb7",
+    "tests/test_field_environment_audit.py": "2ccae9837a8bfcfbf5661ef9ea7811417c9fef65b876a2ed851f1047586abca3",
+    "tests/test_field_limit_countermodels.py": "c8601a268c44fb0e01c4170c487c097b92a60373a37f7b45d0d03923f75898c0",
+    "tests/test_field_moonshot_controls.py": "2e2e89be77ad32155c283e474d9781aa37820d496d4d26cc98a6af8f54d9c91b",
+    "tests/test_field_probe_repair.py": "52c4c98001011155ab8a22bc27e0106e54bf14e8d21fb95049b79d0d31ebb8e6",
+    "tests/test_field_relative_closure.py": "66121ca4388cb7ffd6eb83200d97ad2e687d9a99facb80562d5ef329f74a60a4",
+    "tests/test_fields.py": "9b0854bb1eab2d4c00455a6fbc9b5a21b5e7f08d45d792812f83f90d0c5f5041",
+    "tests/test_finite_fourier_carrier.py": "77bc5e2f27586b8e19e69f74a11efbd7d6a1e111079f882ccdf4a6ac192b8463",
+    "tests/test_galilean_lorentz_succ.py": "ba0486b53a74ad64b62e374fb7f4700416f1b59de38ffdc51cb813eb734b5833",
+    "tests/test_gamma_interferometer.py": "621120dfa51794a0ec4b8540ac3a1c10d5502b30c03b6c87fa7440f881a0b85a",
+    "tests/test_gamma_succ_path.py": "3e024d221455678e3e11be929e270e36b0a6620eafbfa7fd0256164cdb63afa0",
+    "tests/test_gaussian_holonomy.py": "a14262968f5cdaa846790c7486cbdfb24a82c89b316e7e39b8041c1824d51225",
+    "tests/test_genetic_obstruction_holonomy.py": "ce7daa0f32c27b457fd54467e4f6f53d29b07053fb633afb94254c99a5aaf6d8",
+    "tests/test_genetic_receipt.py": "9cf69940655e0d60857825e2839b25c6cbfe0a312a6dfcaeb8b800f5a848670d",
+    "tests/test_godel_succ.py": "9d042149903dd41c7fce7f29c133932f4fb346200df2695b76819f65ee105abc",
+    "tests/test_hasse_theta_seam.py": "0e3233da58aa5f667c8bc5b5ee63661156526dd75e8f9c896a0b6d636661def6",
+    "tests/test_heuristic_bridge_discovery.py": "cf397911b8dd4592b68b14a13942db45bc548feb4d8e20ca43b7ebb416ba5e12",
+    "tests/test_heuristic_evidence_martingales.py": "6dfe2f5d6a64df7b0b56e0db166e5cf95184cea55b348cd345e7c88d6438f73b",
+    "tests/test_heuristic_joint_noise.py": "8aabcecb3f89d710fc946d74783372a7e64f74a8ad7539862629d0fabaa8a985",
+    "tests/test_heuristic_receipt.py": "bbe57c971f902675292af2793e69c8fdb4f383c274190edaa9013d3e430d0fd0",
+    "tests/test_heuristic_shape_learning.py": "73e7326a9de10ca0f14be0170627ce1f34c25e1fdfb510de75cbf7cb2bb16450",
+    "tests/test_holonomy_proof_transport.py": "e34183be0082348528069b8dc949a494f5f644347bbc6a754deefc35cd7c5402",
+    "tests/test_ideal_frames.py": "8824644bd3d44a382e62ac5de41d20f6ee2eb0690d180ddf80e842652a2ee863",
+    "tests/test_infinite_realization.py": "f037ca44887d41af66266d8ea46dffc49b2a6a731a8e14583496fd19b1787b04",
+    "tests/test_interobserver_channels.py": "a17425566f270b3c03cf27e714f1a29b491c652a0b5dd552527169f39afe6f7f",
+    "tests/test_knowledge_ladder.py": "6fdf02ca323cfab719fa159e2f3e1f76697b59845de0f5b883e821c1e557714b",
+    "tests/test_lambert_succ.py": "20d43a2db528754c670c38c4880aa5f39fd481c4cc6382f06a7d9b4b2c58af28",
+    "tests/test_local_global.py": "c2fae013471efb8cf8436ae70e71a241ffe54e77a159c15c242d5fdf263c8397",
+    "tests/test_local_global_descent.py": "0e2cc770084393f79c8487474cf8e2c5d584122bb8aed530f1a9d1f35bef4e5c",
+    "tests/test_local_global_fuzz.py": "4b8ee64b010254c2aaaad53449c944cdbbe3ba3873a68c5de3749cb361a47972",
+    "tests/test_logistic_observer_tree.py": "08d4b426f6582a00aa8fa538066aa3b2505b4dd396076c220d49ec0e239eceed",
+    "tests/test_maxwell_transverse_shadow.py": "2e7ac5d1cc2bb17f638db46b379a0316e1b2084609b3f946455fcb2e1093d175",
+    "tests/test_misiurewicz_phase_quotient.py": "73326c25552cb1085849b4fd49997bf364b8b397fe5ae96b2e41d690301bf977",
+    "tests/test_nonabelian_local_global.py": "49c94cd4bd4e88588018047232afc030994ca05956d6fbba1c4d07117d3b7e6d",
+    "tests/test_noncommuting_proof_transport.py": "8d1f177538d5575827982bb7046f67241aea278adcbb10aa2a9c61398920b22e",
+    "tests/test_observer_logic.py": "38891f5f7ec8f636027e8fa53e99f7a26d10747fb2642d2cac8259159e339a86",
+    "tests/test_observer_reflection.py": "2ed20d16ee17c6173009d223c33407712dc17f695c5248e925328586a31fb46c",
+    "tests/test_observer_traps.py": "c3d28660b0755c2ffa2fa4a69814ff5a6ac19eac584f39d1386959af6909838d",
+    "tests/test_operational_semantics.py": "11bcc66187de4cfd7eed24ec9384c53296aa160a37c3b7dd01f9e0a9ebfe8e46",
+    "tests/test_operational_yoneda_descent.py": "8e9536914a176fdf71577f964216cc751d7a8d76c26860c84174281dad93441c",
+    "tests/test_ordinal_succ_report.py": "2dc836996e41f97744e7856c996eb21db33dbabc49f40f84fa9eadcc4b645d1c",
+    "tests/test_periodic_path_certificates.py": "80f55968354526219b343f7550e05266371fb846cd7a4976e6cd7870feb3d0cb",
+    "tests/test_precision_transport.py": "9741b35e1019264daa16939ba9fcb690687ac02675ebf2d633b53d0da775e427",
+    "tests/test_prime_clock_yoneda.py": "da1bd18875e31ad07749a4379c179c7eb599be8a0979d62791516222261efbc8",
+    "tests/test_probe_coherence.py": "ae3a12e6a1c007c9c63d5001a0be118dd4d0f1e8c09eee44d22737fd941e7a7e",
+    "tests/test_proof_backaction_debt.py": "da08142659a4a109af56cc46b6a246e80a85230afea1e7667c7c130e9528626a",
+    "tests/test_proto_succ_variable_unit.py": "cd045b6d71b679b867fd0097fc680e471ecc08381679ade6351df3ba970b0b29",
+    "tests/test_provenance_manifest.py": "79a805790d3aca667120a936e7d59ae0f014b2fcc0aadb5594de1f0a53b52a72",
+    "tests/test_quantum_records.py": "7f31be0605e0884cb4e4a828f8da073b7e2e5ac367e92d2a78cb4d3047335fd0",
+    "tests/test_relational_model_genetics.py": "9001a9578e3eb219d9014d7c4db283561a6dbf9dc19700d92b2e1fc978df26af",
+    "tests/test_relative_delta.py": "c155cdbc85a68e121da6e4fe1873d62df257b927b68d2586d001707087df2636",
+    "tests/test_relativistic_shadow_tower.py": "360bad223f50ecfb1671b07a9136e3a8fb8b73a055f1829dd8e9c8b2b47b8460",
+    "tests/test_residue_one_arch.py": "5f314209004a698236f16488017a670a1785b68a03fcfaa1010decf19372892d",
+    "tests/test_resource_probe.py": "519d874f26bc3afa7aa9137e5f0c51d57c57b502997bd07fd0a4d018be9360ec",
+    "tests/test_shadow.py": "ecaa3d93be830ff5038aa8388e1a9fb05b1aa9c063169996d772697341558610",
+    "tests/test_shadow_archimedean_tests.py": "f6784c64188f15f504f7b13c757abb5085bbfb0037f45d7490e3eeb7c9850aae",
+    "tests/test_shadow_source_inference.py": "e0ea9b4edade6937b524dddd58d7297422e1c05a05ab486be8ff02e69d3caa19",
+    "tests/test_shadow_zero_divisor.py": "b140189250765c81c445a6de302c29be4efbe397c1e74884e422219d9a4157c4",
+    "tests/test_shared_carrier_descent.py": "6d48332b57e019d7f236774a1ff6f167875309ed2382f2b5aad0524c555ec360",
+    "tests/test_source_coupling_bounds.py": "cf421672e14d34163127a8118c2dad3ef6f715c2d55a03ddc2df937627cec993",
+    "tests/test_source_prime_certificates.py": "9cabcd05425f7dec56d5ff1ed916e9c3f4137ef544c95684e0dfb83b784789e9",
+    "tests/test_succ_discrete_integration.py": "06143f306b0db50f8b793a8fed466b0e283e041e8870bafe21a0ca6c9cfc41df",
+    "tests/test_succ_shadow_window.py": "356d31be548a45ccc672dc0a33956bc9319d69fc49e9746b5f6954174462fc5d",
+    "tests/test_twin_circle_observers.py": "da5ddf05cbc04331c8a86b77307a29817bffe106d223e75cb231860d31c6987a",
+    "tests/test_virtual_mellin_zeros.py": "0631cda3610d00426940d88e85a078eb37683c5dfd160d657347294b881d4e74",
+    "tests/test_voltage_tower.py": "185792474c66f575f499f54890b6b5931c387ae55813379a3f99844cd4841427",
+    "tests/test_zeta_minus_one_transport.py": "0194bcba34585b34a886cdbe3b33ed84107412ac40c45e6ccba6ed3437ab233d"
+  },
+  "protected_history": "Imported provenance72 and original ledger O1\u2013O638 unchanged; no main/default/release/tag mutation",
+  "provenance": {
+    "byte_identical_research_archives": 17,
+    "establishes_mathematical_truth": false,
+    "items": 72,
+    "mechanical_namespace_migrations": 55,
+    "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "status": "SOURCE_PROVENANCE_VERIFIED"
+  },
+  "recorded_python": "3.12.14",
+  "remote_CI": {
+    "authority": "Draft PR checks and final PR validation comment/body bind workflow runs to exact pushed SHA; ancestor success is not inherited.",
+    "status_at_creation": "Not yet executed on publication head"
+  },
+  "research_base": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "schema": "succ-cambrian-integration-validation-v1"
+}

@@ -494,3 +494,18 @@ The current research branch extends E's finite repair grammar (static → termin
 **Next falsifiers:** Formalize the full inverse-limit ↔ closure and compact-source realization criterion in Lean with an actual topology library; transfer the result to history-dependent stochastic/source-changing observational fibration with correlated reports and physically executable sensors; calibrate source-space regularity assumptions rather than identifying physical infinity with analytic closure. General mathematical priority, physical carrier completeness, completed Weil/Suzuki positivity and RH remain UNVERIFIED.
 
 **VOYAGER finite-policy no-go (V11–V12):** A stronger Lean4 theorem constructs finite-support and cofinite-support streams preserving **any finite list** of observed target coordinate values while disagreeing on eventual-zero membership. Hence both classes are dense in Cantor observation topology and no everywhere-terminating finite-coordinate adaptive policy can classify all binary streams without an extra source promise. A history-dependent finite policy simulation verifies the same transcript can arise under opposite tail commitments; original physical probes/counterfactuals remain unavailable. Frozen [adaptive exact receipt](../research/2026-10-13/VOYAGER_ADAPTIVE_SOURCE_RECEIPT.json), ledger O631–O637. Next: verify policy theorem for genuinely changing carriers and compact positive sources, and formalize the inverse-limit topology itself.
+
+## Cambrian frontier update
+
+The [executed Cambrian campaign](CAMBRIAN_CAMPAIGN_2026-10-13.md) supplies
+joint-law Bayesian descent, a Lean theorem for changing finitely branching
+histories, and explicit failures of destructive greedy probing, nonregular
+deck descent, finite-prefix memory certification, and unqualified analytic
+completion. These results narrow several older roadmap items; they do not
+complete their topology, source-access or physical-authentication obligations.
+
+The five next targets and their discriminating tests are ranked in section I
+of that report. In particular, exact equivalence-teacher access remains a
+strong assumption in history-only learning; the natural Misiurewicz measure
+remains distinct from a supplied symbolic Parry prior; and finite arithmetic
+tomography supplies no completed Weil positivity inference.
