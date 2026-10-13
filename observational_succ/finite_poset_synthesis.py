@@ -8,7 +8,7 @@ counterexamples, and introduces noninvertible functors only on obstruction.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from itertools import permutations, product
+from itertools import product
 
 from .relational_model_genetics import GeneticsError
 
@@ -84,10 +84,10 @@ def all_functors(domain: FinitePoset, codomain: FinitePoset) -> tuple[PosetFunct
 def all_isomorphisms(domain: FinitePoset, codomain: FinitePoset) -> tuple[PosetFunctor, ...]:
     if len(domain.objects) != len(codomain.objects):
         return ()
-    return tuple(f for images in permutations(codomain.objects)
-                 for f in (PosetFunctor(domain, codomain, images),)
-                 if all(domain.le(a, b) == codomain.le(f(a), f(b))
-                        for a in domain.objects for b in domain.objects))
+    return tuple(f for f in all_functors(domain, codomain)
+                 if len(set(f.images)) == len(f.images)
+                 and all(domain.le(a, b) == codomain.le(f(a), f(b))
+                         for a in domain.objects for b in domain.objects))
 
 
 def natural_transformation(f: PosetFunctor, g: PosetFunctor) -> bool:
