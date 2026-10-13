@@ -1,0 +1,119 @@
+{
+  "bounded_domain": {
+    "actions": 2,
+    "fine_carrier_states": 4,
+    "fine_source_states": 4,
+    "maximum_history_length": 3,
+    "outcomes": 2
+  },
+  "claim_id": "SWM-C17",
+  "equal_support_correlated_read_erase": {
+    "original_s0_posteriors_after_report0": [
+      "3/4",
+      "1/4"
+    ],
+    "prior_diagonal_weights": [
+      "3/8",
+      "1/8"
+    ],
+    "same_current_endpoint": 0,
+    "same_joint_coarse_prior": true,
+    "same_original_source_posterior_support": true,
+    "same_prior_marginals": true,
+    "same_report_probability": "1/2",
+    "universal_coarse_kernel_from_forgotten_prior": "REFUTED"
+  },
+  "exact_arithmetic": "fractions.Fraction",
+  "execution": {
+    "command": "python research/2026-10-13/SWARM_ATLAS/C17_probe.py",
+    "exit_code": 0,
+    "python_version": "3.12.3",
+    "stderr": ""
+  },
+  "filter_transport_and_predictive_mass": "PASS",
+  "formal_kernel_verified": false,
+  "guard_rejections": [
+    "floating_weight",
+    "zero_probability_history"
+  ],
+  "hidden_policy_negative_control": {
+    "P_action0_given_S0": "1",
+    "P_action0_given_S1": "0",
+    "S0_prior": "1/2",
+    "correct_S0_after_action0": "1",
+    "incorrect_ignoring_action_likelihood": "1/2"
+  },
+  "independent_complete_hidden_path_oracle": "PASS",
+  "law_squares": [
+    "fine_to_coarse",
+    "coarse_to_final",
+    "composite"
+  ],
+  "normalized_kernel_rows_checked": [
+    672,
+    168,
+    84
+  ],
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "physical_source_authenticated": false,
+  "positive_cone_restriction": {
+    "blanket_actual_history_opfibration": "REFUTED",
+    "formal_edge": "report1 under constant-report0 instrument",
+    "positive_fiber_has_lift_over_fixed_formal_base": false,
+    "pushforward_unnormalized_mass": "0"
+  },
+  "positive_model_history_words_checked": 85,
+  "principal_crucible": {
+    "positive_only_fibers_over_fixed_word_base": "missing lift at zero-mass edge",
+    "scope": "mathematical word grammar and full nonnegative rational law cones only",
+    "state_dependent_partial_instruments": "no total cone map"
+  },
+  "probe_sha256": "018397db4ad9e4f655383d03b59b5716de6f704bf58a3e8f983446dad5c273aa",
+  "proof_status": "PROVED LOCAL: dossier algebra; probe is TESTED MODEL",
+  "provenance_validation": {
+    "byte_identical_research_archives": 17,
+    "command": "python scripts/verify_provenance.py",
+    "exit_code": 0,
+    "items": 72,
+    "mechanical_namespace_migrations": 55,
+    "status": "SOURCE_PROVENANCE_VERIFIED"
+  },
+  "review": {
+    "agent": "/root/c17/c17_crucible",
+    "child_count": 1,
+    "same_model_and_shared_parent_context": true,
+    "scope": "read-only finite theorem review; no swarm dossiers",
+    "status": "completed and interrupt-called after consumption"
+  },
+  "runtime_imports": [],
+  "scholarly_novelty_claimed": false,
+  "source_git_blobs": {
+    "eodcs_source_uncertainty": "6ce02106456fb933ff6aecdba0c762f5958d1b95",
+    "source_coupling_bounds": "00d72ecab05e605d28cd15e9ab6ad1363f837cff"
+  },
+  "source_sha256": {
+    "observational_succ/eodcs_source_uncertainty.py": "348aa6d545bc931ec82fd4975271b3619f2bf5d4c2a1393784c35b1bca32d36e",
+    "observational_succ/source_coupling_bounds.py": "10315734961a5c05f6ad7cbaaec57035151c1b19c67c263d299a04b7abf595b0",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86"
+  },
+  "support_preserving_kernel_mutation": {
+    "rejected": true,
+    "witness": {
+      "action": 0,
+      "after": 0,
+      "carrier": [
+        0,
+        0
+      ],
+      "history": [],
+      "left": "23/48",
+      "outcome": 0,
+      "right": "1/2",
+      "source": [
+        0,
+        0
+      ]
+    }
+  }
+}
