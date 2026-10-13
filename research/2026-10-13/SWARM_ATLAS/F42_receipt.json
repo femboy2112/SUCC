@@ -1,0 +1,619 @@
+{
+  "academic_originality_claimed": false,
+  "cardinality_obstruction": [
+    8,
+    2
+  ],
+  "command": "python research/2026-10-13/SWARM_ATLAS/F42_probe.py",
+  "declared_source_contract": [
+    "F42-declared-duplicated-four-cycle",
+    0,
+    "finite-Mealy-v1",
+    "9adad615b797ee89616ba347dafee57d2fb5cfc7535e57a3527c0f8b8ddcfb75"
+  ],
+  "declared_source_is_empirically_authenticated": false,
+  "declared_source_table": {
+    "actions": [
+      "step"
+    ],
+    "outputs": [
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "transitions": [
+      [
+        1,
+        2,
+        3,
+        0,
+        5,
+        6,
+        7,
+        4
+      ]
+    ]
+  },
+  "exit_status": 0,
+  "field": "F42",
+  "fresh_unsealed_controls": [
+    {
+      "blocks": 1,
+      "name": "constant",
+      "pair_BFS_agrees": true,
+      "refinements": 0
+    },
+    {
+      "blocks": 8,
+      "name": "injective",
+      "pair_BFS_agrees": true,
+      "refinements": 0
+    }
+  ],
+  "grammar_supplied_by_programmer": [
+    "read",
+    "pre(action, quotient)",
+    "meet(q,r)"
+  ],
+  "import_manifest_source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "inherited_parity_corpse": {
+    "cycle_edges": [
+      "A",
+      "C",
+      "B"
+    ],
+    "cycle_nodes": [
+      "y",
+      "x",
+      "z",
+      "y"
+    ],
+    "global_section": false,
+    "holonomy": 1
+  },
+  "mutation_selection_supplied_by_programmer": "first exact action defect, then pre/meet",
+  "native_bijection_candidate_count": 0,
+  "native_dependencies_are_in_import_manifest": false,
+  "negative_controls": {
+    "changed_source": "Mutation changed its source/epoch/basis/table",
+    "coarsening_forgets_inheritance": "Offspring forgot an inherited distinction",
+    "forged_witness": "Forged counterexample",
+    "unlicensed_initial_action": "Induced action/readout remains an obligation",
+    "unowned_action": "Mutation invented an action",
+    "unsupplied_constructor": "Unknown typed constructor"
+  },
+  "physical_meaning_established": false,
+  "probe_sha256": "92074c0a14beb1cac273d875a3124bc7527a3d90013761f308442e9162b39509",
+  "result": {
+    "accepted_refinements": 2,
+    "history": [
+      {
+        "action": null,
+        "action_licensed": false,
+        "classes": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "constructor": "read",
+        "factor_maps": {},
+        "gene": 0,
+        "inherited_counterexamples": [],
+        "obligation": {
+          "action": "step",
+          "kind": "ACTION",
+          "pair": [
+            0,
+            2
+          ]
+        },
+        "parents": [],
+        "pre_image_inclusion": null,
+        "surjective_graph": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "2",
+            "0"
+          ],
+          [
+            "3",
+            "1"
+          ],
+          [
+            "4",
+            "0"
+          ],
+          [
+            "5",
+            "0"
+          ],
+          [
+            "6",
+            "0"
+          ],
+          [
+            "7",
+            "1"
+          ]
+        ]
+      },
+      {
+        "action": "step",
+        "action_licensed": false,
+        "classes": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "constructor": "pre",
+        "factor_maps": {},
+        "gene": 1,
+        "inherited_counterexamples": [
+          {
+            "contract": [
+              "F42-declared-duplicated-four-cycle",
+              0,
+              "finite-Mealy-v1",
+              "9adad615b797ee89616ba347dafee57d2fb5cfc7535e57a3527c0f8b8ddcfb75"
+            ],
+            "pair": [
+              0,
+              2
+            ],
+            "word": [
+              "step",
+              "step"
+            ]
+          }
+        ],
+        "obligation": {
+          "action": "step",
+          "kind": "ACTION",
+          "pair": [
+            0,
+            1
+          ]
+        },
+        "parents": [
+          0
+        ],
+        "pre_image_inclusion": [
+          0,
+          1
+        ],
+        "surjective_graph": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "2",
+            "1"
+          ],
+          [
+            "3",
+            "0"
+          ],
+          [
+            "4",
+            "0"
+          ],
+          [
+            "5",
+            "0"
+          ],
+          [
+            "6",
+            "1"
+          ],
+          [
+            "7",
+            "0"
+          ]
+        ]
+      },
+      {
+        "action": null,
+        "action_licensed": false,
+        "classes": [
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          1,
+          2
+        ],
+        "constructor": "meet",
+        "factor_maps": {
+          "0": [
+            0,
+            0,
+            1
+          ],
+          "1": [
+            0,
+            1,
+            0
+          ]
+        },
+        "gene": 2,
+        "inherited_counterexamples": [
+          {
+            "contract": [
+              "F42-declared-duplicated-four-cycle",
+              0,
+              "finite-Mealy-v1",
+              "9adad615b797ee89616ba347dafee57d2fb5cfc7535e57a3527c0f8b8ddcfb75"
+            ],
+            "pair": [
+              0,
+              2
+            ],
+            "word": [
+              "step",
+              "step"
+            ]
+          }
+        ],
+        "obligation": {
+          "action": "step",
+          "kind": "ACTION",
+          "pair": [
+            0,
+            1
+          ]
+        },
+        "parents": [
+          0,
+          1
+        ],
+        "pre_image_inclusion": null,
+        "surjective_graph": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0"
+          ],
+          [
+            "2",
+            "1"
+          ],
+          [
+            "3",
+            "2"
+          ],
+          [
+            "4",
+            "0"
+          ],
+          [
+            "5",
+            "0"
+          ],
+          [
+            "6",
+            "1"
+          ],
+          [
+            "7",
+            "2"
+          ]
+        ]
+      },
+      {
+        "action": "step",
+        "action_licensed": false,
+        "classes": [
+          0,
+          1,
+          2,
+          0,
+          0,
+          1,
+          2,
+          0
+        ],
+        "constructor": "pre",
+        "factor_maps": {},
+        "gene": 3,
+        "inherited_counterexamples": [
+          {
+            "contract": [
+              "F42-declared-duplicated-four-cycle",
+              0,
+              "finite-Mealy-v1",
+              "9adad615b797ee89616ba347dafee57d2fb5cfc7535e57a3527c0f8b8ddcfb75"
+            ],
+            "pair": [
+              0,
+              2
+            ],
+            "word": [
+              "step",
+              "step"
+            ]
+          },
+          {
+            "contract": [
+              "F42-declared-duplicated-four-cycle",
+              0,
+              "finite-Mealy-v1",
+              "9adad615b797ee89616ba347dafee57d2fb5cfc7535e57a3527c0f8b8ddcfb75"
+            ],
+            "pair": [
+              0,
+              1
+            ],
+            "word": [
+              "step",
+              "step",
+              "step"
+            ]
+          }
+        ],
+        "obligation": {
+          "action": "step",
+          "kind": "READOUT",
+          "pair": [
+            0,
+            3
+          ]
+        },
+        "parents": [
+          2
+        ],
+        "pre_image_inclusion": [
+          0,
+          1,
+          2
+        ],
+        "surjective_graph": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "2"
+          ],
+          [
+            "3",
+            "0"
+          ],
+          [
+            "4",
+            "0"
+          ],
+          [
+            "5",
+            "1"
+          ],
+          [
+            "6",
+            "2"
+          ],
+          [
+            "7",
+            "0"
+          ]
+        ]
+      },
+      {
+        "action": null,
+        "action_licensed": true,
+        "classes": [
+          0,
+          1,
+          2,
+          3,
+          0,
+          1,
+          2,
+          3
+        ],
+        "constructor": "meet",
+        "factor_maps": {
+          "2": [
+            0,
+            0,
+            1,
+            2
+          ],
+          "3": [
+            0,
+            1,
+            2,
+            0
+          ]
+        },
+        "gene": 4,
+        "inherited_counterexamples": [
+          {
+            "contract": [
+              "F42-declared-duplicated-four-cycle",
+              0,
+              "finite-Mealy-v1",
+              "9adad615b797ee89616ba347dafee57d2fb5cfc7535e57a3527c0f8b8ddcfb75"
+            ],
+            "pair": [
+              0,
+              2
+            ],
+            "word": [
+              "step",
+              "step"
+            ]
+          },
+          {
+            "contract": [
+              "F42-declared-duplicated-four-cycle",
+              0,
+              "finite-Mealy-v1",
+              "9adad615b797ee89616ba347dafee57d2fb5cfc7535e57a3527c0f8b8ddcfb75"
+            ],
+            "pair": [
+              0,
+              1
+            ],
+            "word": [
+              "step",
+              "step",
+              "step"
+            ]
+          }
+        ],
+        "obligation": null,
+        "parents": [
+          2,
+          3
+        ],
+        "pre_image_inclusion": null,
+        "surjective_graph": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "2"
+          ],
+          [
+            "3",
+            "3"
+          ],
+          [
+            "4",
+            "0"
+          ],
+          [
+            "5",
+            "1"
+          ],
+          [
+            "6",
+            "2"
+          ],
+          [
+            "7",
+            "3"
+          ]
+        ]
+      }
+    ],
+    "maximum_refinements": 6,
+    "native_minimizer_agrees": true,
+    "pair_BFS_agrees": true,
+    "preserved_counterexamples": [
+      {
+        "contract": [
+          "F42-declared-duplicated-four-cycle",
+          0,
+          "finite-Mealy-v1",
+          "9adad615b797ee89616ba347dafee57d2fb5cfc7535e57a3527c0f8b8ddcfb75"
+        ],
+        "pair": [
+          0,
+          2
+        ],
+        "word": [
+          "step",
+          "step"
+        ]
+      },
+      {
+        "contract": [
+          "F42-declared-duplicated-four-cycle",
+          0,
+          "finite-Mealy-v1",
+          "9adad615b797ee89616ba347dafee57d2fb5cfc7535e57a3527c0f8b8ddcfb75"
+        ],
+        "pair": [
+          0,
+          1
+        ],
+        "word": [
+          "step",
+          "step",
+          "step"
+        ]
+      }
+    ],
+    "terminal_classes": [
+      0,
+      1,
+      2,
+      3,
+      0,
+      1,
+      2,
+      3
+    ],
+    "terminal_gene": 4,
+    "terminal_machine": {
+      "actions": [
+        "step"
+      ],
+      "outputs": [
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "transitions": [
+        [
+          1,
+          2,
+          3,
+          0
+        ]
+      ]
+    }
+  },
+  "sealed_holdout_consumed": false,
+  "source_parent_commit": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "status": "TESTED MODEL; theorem proof is separately stated in F42.md",
+  "target_supplied_by_programmer": "greatest action-stable subrelation of readout kernel"
+}
