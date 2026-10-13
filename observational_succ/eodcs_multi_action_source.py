@@ -188,6 +188,53 @@ def action_curvature(source: ActionSource, a: str, b: str) -> dict:
     }
 
 
+def curvature_resolution(source: ActionSource, a: str, b: str) -> dict:
+    """Classify two-path source commutators relative to the available menu.
+
+    Returns explicit minimal postcommutator observation words. The source
+    endpoints themselves come from the declared full source model.
+    A dark defect is NOT empirically established by a purely observable
+    instrument; its hidden existence is model-conditional.
+    """
+    if a not in source.actions or b not in source.actions:
+        raise SourceTransportError("Unlicensed source path in curvature probe")
+    immediate=[]
+    delayed=[]
+    dark=[]
+    flat=[]
+    for s in source.states:
+        left=source.run(s,(a,b))
+        right=source.run(s,(b,a))
+        if left==right:
+            flat.append(s)
+            continue
+        witness=shortest_distinguishing_word(source,left,right)
+        if witness is None:
+            dark.append((s,left,right))
+        elif not witness:
+            immediate.append((s,left,right))
+        else:
+            delayed.append((s,left,right,witness))
+        if witness is not None:
+            if source.observe(left,witness)==source.observe(right,witness):
+                raise AssertionError("False observational curvature witness")
+            # No shorter source action word should have separated these two.
+            if any(source.observe(left,word)!=source.observe(right,word)
+                   for length in range(len(witness))
+                   for word in product(source.actions,repeat=length)):
+                raise AssertionError("Postcommutator probe was not shortest")
+    return {
+        "source_flat_states":tuple(flat),
+        "observable_immediate":tuple(immediate),
+        "observable_after_generated_word":tuple(delayed),
+        "dark_under_available_probe_closure":tuple(dark),
+        "source_noncommuting_state_count":
+            len(immediate)+len(delayed)+len(dark),
+        "darkness_is_relative_to_current_toolkit":True,
+        "physical_curvature_claimed":False,
+    }
+
+
 def newly_generated_probe_demo() -> dict:
     states=("x","y","u","v","c","d")
     src=ActionSource("two-action-obstruction",0,"named-states",
@@ -211,6 +258,11 @@ def newly_generated_probe_demo() -> dict:
             [src.observe("x",discovered),src.observe("y",discovered)],
         "finite_full_behavior_classes":len(report.equivalence_classes),
         "observable_two_path_commutator":list(curvature["observable_noncommuting_states"]),
+        "curvature_resolution": {
+            "immediate":len(curvature_resolution(src,"A","B")["observable_immediate"]),
+            "delayed":len(curvature_resolution(src,"A","B")["observable_after_generated_word"]),
+            "dark":len(curvature_resolution(src,"A","B")["dark_under_available_probe_closure"]),
+        },
         "physical_implementation_created":False,
     }
 
