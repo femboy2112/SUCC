@@ -699,6 +699,27 @@ jobs:
           assert r["fully_independent_source_authentication"] is False
           PY
 
+      - name: Verify Lorentz covariance, causal receipt ancestry and proof descent
+        run: |
+          python scripts/covariant_perceptual_momentum_probe.py > "$RUNNER_TEMP/covariant-observer.json"
+          diff -u research/2026-10-12/COVARIANT_PERCEPTUAL_MOMENTUM_RECEIPT.json "$RUNNER_TEMP/covariant-observer.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          r=json.loads((Path(os.environ["RUNNER_TEMP"])/"covariant-observer.json").read_text())
+          assert r["lorentz"]["mismatch_only_spacelike"] is True
+          assert r["wigner_rotation"][1][1]=="40/41"
+          assert r["wigner_rotation"][2][1]=="9/41"
+          assert r["asynchronous_tower"]["early_status"]=="UNRESOLVED"
+          assert r["asynchronous_tower"]["late_status"]=="PROVED"
+          assert r["proof_transport"]["zero_claim_invariant"] is True
+          assert r["proof_transport"]["parity_claim_invariant"] is False
+          assert r["proof_transport"]["commuting_but_incomplete_square_rejected"] is True
+          assert r["destructive_observation_square_commutes"] is True
+          assert r["destructive_original_claim_decodable"] is False
+          assert r["physical_cognitive_lorentz_hypothesis_proved"] is False
+          assert r["source_authentication"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
