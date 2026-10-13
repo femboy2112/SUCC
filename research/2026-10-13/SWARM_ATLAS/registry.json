@@ -1147,19 +1147,23 @@
       "worktree": "/home/leah/succ_lab/swm-f48",
       "branch": "research/swm-f48-2026-10-13",
       "owner": "/root/f48",
-      "state": "AWAITING FINAL REVIEW",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T10:07:07.921030+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "INITIAL PAPER/INTERFACE KERNEL ACCEPTED; PHASE2 A03 REVIEW RUNNING",
+      "finished_utc": "2026-10-13T12:20:36.964804+00:00",
+      "status": "PROVED LOCAL",
+      "witness_path": "research/2026-10-13/F48/F48_PHASE2_RECEIPT.json",
+      "proof_state": "PAPER: INITIAL SHEAF/FIBRATION AND PHASE2 T1/T2 FRESH A03 REVIEW ACCEPTED; NAMED PREDICATE JOIN CORE KERNEL",
       "commit": "6e751c0d996de3d27a91b09f44dc2d534db09c73",
-      "integration": "INITIAL PHASE ACCEPTED; WHOLE-SWARM PHASE PENDING",
+      "integration": "ACCEPTED",
       "initial_commit": "6e751c0d996de3d27a91b09f44dc2d534db09c73",
       "dossier_path": "research/2026-10-13/F48/F48_LAWFUL_HISTORY_FIBRATION.md",
-      "execution_phase": "INITIAL INDEPENDENT CHECKPOINT COMPLETE; FULL-SWARM VALIDATION NOT YET DONE",
+      "execution_phase": "INITIAL INDEPENDENT MISSION AND WHOLE-SWARM SYNTHESIS COMPLETE",
       "phase2_started_utc": "2026-10-13T11:36:38.718984+00:00",
-      "phase2_commit": "224d049964b02fc42ad4fcbaa078944ed91da0a7"
+      "phase2_commit": "224d049964b02fc42ad4fcbaa078944ed91da0a7",
+      "final_commit": "8dacc56cec68b2e998529caf31f34fb5beeaa1d3",
+      "phase2_review_commit": "bb1c00ff04259d7d0c53727a18597b4fba3ee5cc",
+      "phase2_dossier_path": "research/2026-10-13/F48/F48_PHASE2_ARCHITECTURE.md",
+      "principal_review_path": "research/2026-10-13/SWARM_ATLAS/reviews/F48_FINAL_PRINCIPAL_REVIEW.md"
     }
   ],
   "syntheses": [
@@ -1495,9 +1499,19 @@
     {
       "assignment": "F48 phase2",
       "reviewer": "/root/a03",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "worktree": "/home/leah/succ_lab/swm-a03",
-      "independence": "Reviewer did not derive phase2; author proof/matrix read before probe"
+      "independence": "Reviewer did not derive phase2; author proof/matrix read before probe",
+      "commit": "bb1c00ff04259d7d0c53727a18597b4fba3ee5cc",
+      "path": "reviews/F48_PHASE2_A03_REVIEW.md",
+      "verdict": "ACCEPT PROVED LOCAL; T1/T2 AND CONDITIONAL HOST ONLY"
+    },
+    {
+      "assignment": "F48 final artifacts",
+      "reviewer": "/root",
+      "state": "COMPLETED",
+      "path": "research/2026-10-13/SWARM_ATLAS/reviews/F48_FINAL_PRINCIPAL_REVIEW.md",
+      "verdict": "ACCEPT; FROZEN PROOF AND ALL60 INPUT MATRIX VERIFIED"
     }
   ],
   "native_agents_genuinely_spawned_so_far": [
@@ -1609,5 +1623,14 @@
     "commit": "e0ae020047b9555cf9075e01463a56ccc3e2890e",
     "state": "COMPLETED; PRINCIPAL REVIEW ACCEPTED FOR NAMED SUBSET",
     "namespace_policy": "Branch-qualified SWM identifiers; no wholesale import/merge; sibling agent counts separately attributed."
+  },
+  "completion_counts": {
+    "genuinely_spawned_native_children": 59,
+    "first_generation_assignments_completed": 48,
+    "synthesis_assignments_completed": 12,
+    "assignments_blocked": 0,
+    "new_threads_for_X09_X12": 0,
+    "reused_investigators_for_X09_X12": 4,
+    "interpretation": "Assignment complete and scoped survivor accepted; unproved subclaims remain labelled. Root and foreign swarms excluded from59."
   }
 }

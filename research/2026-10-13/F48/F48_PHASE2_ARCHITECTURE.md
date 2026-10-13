@@ -1,7 +1,7 @@
 # F48 phase2: a typed host and the causal extendability adapter
 
 **State: ALL SYNTHESIS INPUTS ACCEPTED; A03 CORE REVIEW ACCEPTED;
-FINAL PRINCIPAL ARTIFACT REVIEW PENDING.** Initial independent
+FINAL PRINCIPAL ARTIFACT REVIEW ACCEPTED.** Initial independent
 commit `6e751c0d996de3d27a91b09f44dc2d534db09c73` is preserved. The
 [validation matrix](F48_VALIDATION_MATRIX.md) covers 48 first-generation and
 12 synthesis slots. It records accepted statements, tentative inputs, and
@@ -372,8 +372,8 @@ recertify all sixty input proofs. Its clarifications are applied outside the
 frozen proof. The UTF-8 slice including the section-5 heading through before
 section 7 hashes to `59466bb9c0f2a5e8580a595ef1dfddc977238254266a874af229585de3618f8e`.
 The earlier receipt's slice excluding that heading has its separately retained
-hash; both remain unchanged. Final principal artifact acceptance follows this
-delivery. A new whole-parallel-source Kan/limit comparison
+hash; both remain unchanged. Final principal artifact acceptance is recorded in
+[the additive review](../SWARM_ATLAS/reviews/F48_FINAL_PRINCIPAL_REVIEW.md). A new whole-parallel-source Kan/limit comparison
 remains outside this accepted input set until its principal review; nothing
 from that unfinished comparison is treated as a proved input here.
 
@@ -393,5 +393,5 @@ Shared provider and inherited classical lineage are common provenance. No
 operational phasor basis is declared. The host is **SURVIVES WITH TYPED GATES**;
 unqualified universal sheaf/quantum-path identification is **REFUTED** with
 receipts. Whole-swarm input synthesis and A03 core review are complete, with
-no missing or unaccepted synthesis slot. The delivery awaits only the final
-principal artifact review; no matrix-wide independent recertification is claimed.
+no missing or unaccepted synthesis slot. The final principal artifact review accepted the delivery; no matrix-wide
+independent recertification is claimed.

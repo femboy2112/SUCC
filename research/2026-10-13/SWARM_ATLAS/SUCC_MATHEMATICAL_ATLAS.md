@@ -1,6 +1,6 @@
 # SUCC MATHEMATICAL ATLAS
 
-**Rolling atlas: the requested 48+12 swarm remains in progress.** The [registry](registry.json) records actual assignments, agents, exact parent/child commits, reviews and integration decisions. Draft [PR49](https://github.com/femboy2112/SUCC/pull/49) extends verified VOYAGER `5eb09e7cba36ec01b8f9d6834b78b5766fd93935`; EOS `b2774ca` remains a separately audited sibling with Lean 4.19. This branch uses Lean 4.14. Archives and main remain intact.
+**Completed atlas: 48 first-generation missions and 12 cross-domain syntheses, with scoped survivors independently reviewed.** Exactly59 distinct native child agents were genuinely spawned, excluding the principal and foreign swarms. X09–X12 used four already existing, unrelated investigators in separate worktrees after the native lifetime thread quota was reached; those new assignments did not increase agent count. All60 assignments completed,0 assignments blocked; unproved subclaims remain labelled. The [registry](registry.json) records actual assignments, agents, exact parent/child commits, reviews and integration decisions. Draft [PR49](https://github.com/femboy2112/SUCC/pull/49) extends verified VOYAGER `5eb09e7cba36ec01b8f9d6834b78b5766fd93935`; EOS `b2774ca` remains a separately audited sibling with Lean 4.19. This branch uses Lean 4.14. Archives and main remain intact.
 
 ## Acquisition, certification and completion
 
@@ -17,7 +17,7 @@ flowchart LR
   L -->|only when Phi S is closed| R[Original-source realizer]
 ```
 
-The top arrows require a stipulated complete instrument law, retained preparation/memory and actual legal public history; a source class alone supplies no probabilities. Instrument composition acts on the joint law while the original label stays fixed. A zero-mass branch has no posterior. Model processing cannot split a source-law equivalence class (F44). Target constancy certifies a source-relative conclusion and does not authenticate the stipulated outside source. The bottom diagram applies to deterministic discrete probe profiles; its ideal arrows are mathematical constructions, not performed infinite observation. A causal-prefix tower needs the separate extendability adapter identified in the parallel audit.
+The top arrows require a stipulated complete instrument law, retained preparation/memory and actual legal public history; a source class alone supplies no probabilities. Instrument composition acts on the joint law while the original label stays fixed. A zero-mass branch has no posterior. Model processing cannot split a source-law equivalence class (F44). Target constancy certifies a source-relative conclusion and does not authenticate the stipulated outside source. The bottom diagram applies to deterministic discrete probe profiles; its ideal arrows are mathematical constructions, not performed infinite observation. F48 phase2 now supplies the causal-prefix adapter for all locally legal executions under finite preparation/branching. A stricter source-admission class needs a separate closedness theorem.
 
 ## Navigable mathematical map
 
@@ -57,7 +57,7 @@ The top arrows require a stipulated complete instrument law, retained preparatio
 | Typed gluing repair constructors | Original integer graph labels, congruence-only modular contacts or explicitly bounded/integral source access | [X03](X03.md): adaptive LCM no-go; generator bound controls exact repair; inherited-witness CEGIS terminates in the stated finite complete grammar |
 | Supported receipts `E=Σ_s A_s`, labels `λ:E→L` | Discrete labels and reports; original source fibers may be empty | [X01](X01.md): retained inverse limit is E; image inverse limit is closure of `(Ψ,λ)(E)`; interchange iff that supported labelled image is closed |
 
-Independent principal reviews are in [reviews](reviews/); X01 also has a [separate native A05 review](reviews/X01_A05_REVIEW.md) and independently written enumeration. Paper proofs are not promoted to kernel proofs by test counts. A01, B09, C19 and X07's explicitly named Lean statements receive kernel status here; C19/X07 cone and quantum instantiations remain paper-only; F48 now has a kernel-checked predicate interface-join core, while its incidence sheaf is paper-only; witness-family bijectivity remains paper-only. Cold GitHub [run38365807103](https://github.com/femboy2112/SUCC/actions/runs/38365807103) independently replayed pinned bootstrap and kernel checks; exact artifact receipts are retained. Classical results are identified as classical even when newly connected inside SUCC.
+Independent principal reviews are in [reviews](reviews/); X01 also has a [separate native A05 review](reviews/X01_A05_REVIEW.md) and independently written enumeration. Paper proofs are not promoted to kernel proofs by test counts. A01, B09, C19 and X07's explicitly named Lean statements receive kernel status here; C19/X07 cone and quantum instantiations remain paper-only; F48 now has a kernel-checked predicate interface-join core, while its incidence sheaf and phase2 pruning/Kraus theorems are paper-only; witness-family bijectivity remains paper-only. Cold GitHub [run38365807103](https://github.com/femboy2112/SUCC/actions/runs/38365807103) independently replayed pinned bootstrap and kernel checks; exact artifact receipts are retained. Classical results are identified as classical even when newly connected inside SUCC.
 
 | Structure and actual arrow | Domain and validity conditions | Surviving invariant / evidence |
 |---|---|---|
@@ -103,7 +103,7 @@ X01 strengthens this to proof support. A compact original source can contain the
 
 B09, B10, B12 and X01 converge because finite observations generate cylinder neighborhoods: inverse coherence retains all finite restrictions, which is exactly topological closure. The convergence has a shared classical cause, rather than four independent empirical confirmations. B12 adds a necessary distinction: finite alphabet compactness turns finitely consistent *partial* records into full profiles; over an infinite discrete alphabet, a closed total-profile image can still lack directed partial-record joins. X01 changes the carrier from original states to supported receipts, so the correct closed image changes with it. The maps are finite restriction, ideal union and the supported report/label evaluation, with their hypotheses stated in the table.
 
-The flagship history fibration remains a research target. Existing results distinguish predicate fibers, witness families, rational measure cones and topological supported completions. Their morphisms preserve different invariants; no single unqualified sheaf or adjunction unifies them automatically.
+The [completed flagship](../F48/F48_PHASE2_ARCHITECTURE.md) hosts predicate fibers, private histories, witness families, finite rational measure cones and topological supported completions using separate typed attachments. Forward law updates are covariant and private-history truncation contravariant. Their morphisms preserve different invariants; the coherent architecture is this indexed host, rather than one unqualified sheaf or adjunction. Its [60-slot validation matrix](../F48/F48_VALIDATION_MATRIX.md) records actual input types and preserved obstructions, without claiming to reprove every theorem.
 
 ## Sharp failures and smallest next discriminators
 
@@ -129,9 +129,9 @@ A01–A06, B09–B11, C17–C18, E33 and F41 specialize established category, to
 
 ## Parallel research reconciliation
 
-The user requested both continued independent missions and theorem-by-theorem comparison. [Scoped audit](comparisons/PARALLEL_AUDIT.md) freezes PR49 at9bcb939, [PR50](https://github.com/femboy2112/SUCC/pull/50) at759c30c, and [PR51](https://github.com/femboy2112/SUCC/pull/51) atbdb1fcf. Their shared ancestor is VOYAGER5eb09e7. The audit covers eight named subjects and two corrected synthesis claims, not every sibling proof. Identical SWM identifiers and paths can denote different theorems; every foreign claim remains branch-qualified. No sibling file or global ledger is merged wholesale. [PR52](https://github.com/femboy2112/SUCC/pull/52) isolates our F41 EOS/VOYAGER finite-action audit for review.
+The user requested both continued independent missions and theorem-by-theorem comparison. [Scoped audit](comparisons/PARALLEL_AUDIT.md) freezes PR49 at9bcb939, [PR50](https://github.com/femboy2112/SUCC/pull/50) at759c30c, and [PR51](https://github.com/femboy2112/SUCC/pull/51) atbdb1fcf. Their shared ancestor is VOYAGER5eb09e7. This initial audit covers eight named subjects and two corrected synthesis claims. Its second-wave extension adds six subjects; the final [full reconciliation](comparisons/FULL_RECONCILIATION.md) pairs all60 PR49/PR50 slots and the relevant PR51 constructions at fixed snapshots. The full table records inspected candidate/proof contacts and explicit comparison maps; it does not recompile foreign Lean or rerun foreign experiments. Identical SWM identifiers and paths can denote different theorems; every foreign claim remains branch-qualified. No sibling file or global ledger is merged wholesale. [PR52](https://github.com/femboy2112/SUCC/pull/52) isolates our F41 EOS/VOYAGER finite-action audit for review.
 
-One strongest comparison barrier has two states: live l can continue to l or dead d; d has no successor. Raw causal stage1 contains ld, but stage2 has no extension of it. B09 source-image stages instead restrict already declared complete traces and have surjective restriction maps. Therefore a causal-prefix tower needs an extendability/closed-constraint theorem before identification with an observational completion. Cambrian's finitely branching realization and countdown control supply different hypotheses, not that missing adapter automatically. Both Mathlib topology lines pin4.14/4bbdccd; EOS4.19 stays separate.
+One strongest comparison barrier has two states: live l can continue to l or dead d; d has no successor. Raw causal stage1 contains ld, but stage2 has no extension of it. B09 source-image stages instead restrict already declared complete traces and have surjective restriction maps. F48 phase2 repairs this mismatch by retaining exactly the prefixes extendable to every later depth. Its greatest surjective subsystem is the actual restriction image of all locally legal complete paths. Cambrian's changing-type finite-branching theorem and B09 complete-profile topology remain distinct contracts; the adapter states their exact intersection and retains nonclosed admission as a countermodel. Both Mathlib topology lines pin4.14/4bbdccd; EOS4.19 stays separate.
 
 The new C21 result adds robust private-cost attainment and max-plus source/current budget bookkeeping; PR50's finite-horizon expected-cost Bellman result remains a distinct source/optimization contract. Forward measure updates and backward original-support presheaves have different variance. Support truncation has no probability-preserving inverse. These comparisons preserve source law, feasible menus, target factorization and actual causal receipts as separate gates.
 
@@ -143,7 +143,7 @@ The [second-wave parallel comparison](comparisons/SECOND_WAVE_COMPARISON.md) cal
 
 D29 supplies proper full-flow pullback of isolating neighborhoods; a cylinder over a sink loses its Conley index under projection. D32 supplies exact original/current linear delay reconstruction and sharp n-report stabilization; backaction changes the inter-read map to f∘B. D31 transports causal diamonds and actual ancestry, and normalized discrete histories through H_L(q_i,y_i)=(T_Lq_i,R_Ly_i). Its continuous singleton shortcut is refuted. Geometry alone supplies neither a delivered event nor a source decoder.
 
-E37 supplies classical Mellin-to-Gamma convergence and fixed-positive-line Schwartz test convergence; zero-free Gamma is needed for quotient convergence. Completed arithmetic form identification remains separate. Initial F48 supplies a fixed-run incidence sheaf over edge-covering subcomplexes and a backward private-prefix discrete fibration. Universal exact relational gluing requires injection of the whole source/carrier/memory interface; existential public projection can fail to be a sheaf. Probability, quantum Kraus interpretation, policy feasibility and whole-swarm integration await phase2.
+E37 supplies classical Mellin-to-Gamma convergence and fixed-positive-line Schwartz test convergence; zero-free Gamma is needed for quotient convergence. Completed arithmetic form identification remains separate. Initial F48 supplies a fixed-run incidence sheaf over edge-covering subcomplexes and a backward private-prefix discrete fibration. Universal exact relational gluing requires injection of the whole source/carrier/memory interface; existential public projection can fail to be a sheaf. Phase2 attaches finite/discrete rational laws, public-labelled CP updates, policy/cost squares and ideal completion through their declared maps. It proves a Kraus-atom representation no-go rather than inventing canonical hidden quantum trajectories. Continuous measurable kernels still need their own theorem.
 
 ## Quantitative representation and coordination
 
@@ -158,3 +158,140 @@ X08 connects source-certified arithmetic itineraries to affine local-field balls
 X09 connects supported receipts E to Hol(Ω) and ordinary complex Taylor coordinates. On each compact cost cap the analytic image and labelled jet image are homeomorphic. A uniform cost bound over both order and precision realizes one supported source; unrestricted formal jets or analytic limits can remain unsupported. Gamma-only observations still alias different arithmetic tapes, and no Weil form norm bound follows.
 
 X10 separates a full observable algebra A from its linear dictionary W. Two delays can recover four source points while the product mode ab is orthogonal to span(1,a,b). Joint histories build the missing product; separate one-time marginals do not. Future-only closure gives U*-invariant complements, while reducing closure requires actual inverse-time invariance. This is why source-point reconstruction, probability-law discrimination and linear spectral completeness need different arrows.
+
+## Strongest surviving results and proof status
+
+| Result | Exact conclusion and indispensable hypothesis | Status / reviewer |
+|---|---|---|
+| B09 observational completion | The all-finite coherent family of actual discrete source-profile images is homeomorphic to the product-topology closure of the full image; source actualization holds iff that image is closed. Compact continuous finite-alphabet sources give a positive control. | **LEAN-KERNEL PROVED** for named inverse-family/topological statements, Lean4.14/Mathlib pinned; classical topology specialized to SUCC |
+| A01 source base change | For a commuting source square, universal predicate base change holds iff the canonical comparison onto the pullback is surjective. Witness-family base change needs bijectivity. | Predicate/target core **LEAN-KERNEL PROVED**; witness-family characterization **PAPER** |
+| C19/X07 common original support | Complete selected-branch maps on one original finite-height positive cone give an attained dead-support face and one original supporting every finite history/causal ideal, whenever each stage has some original. | Abstract bounded-rank prefix/directed lemmas **LEAN-KERNEL PROVED**; positive-cone, CP and causal-ideal instantiations **PAPER**, fresh independent reviews |
+| F48 extendable history completion | Finite prepared roots and finite branching: E_n consists exactly of prefixes extendable to every later depth, is the greatest onto-bonding subsystem, and lim E is the compact space of all infinite locally legal paths. | **PROVED LOCAL, PAPER**; fresh A03 reconstruction and separate exact controls; no global admission/selection/physical limit claim |
+| C17/X05 causal experiment simulation | Original/current joint Dirac-row intertwining is equivalent to all-prior unnormalized selected-report transport; safe availability, preparation, target and accounting squares lift finite adaptive proof policies. | **PROVED LOCAL, PAPER**; support and separate marginals insufficient |
+| X09 supported analytic realization | On compact cost sublevels in supported receipt space, analytic and labelled Taylor topologies agree. The supremum of minimum costs over every finite order and arbitrary positive precision equals the attained full realization cost when finite. | **CLASSICAL / PROVED LOCAL, PAPER**; connected analytic domain, continuous labels/cost caps; no Weil error estimate |
+| X11 sharp promised deadline | An admitted qubit branch word generated by a closed no-input deterministic N-state generator stabilizes compatible originals by μ+λ≤N, sharply. The general unpromised bound is μ+2λ≤2N. | **PROVED LOCAL, PAPER**; fresh B11 derivation and root review; no arbitrary report-driven apparatus deadline |
+| X12 lawful tolerant revision | The complete hereditary feasible-subset complex has a greatest action-stable core under homogeneous enabled menus and exact source-preserving images; it is natural under the declared reflected-domain/report/target squares. | **PROVED LOCAL, PAPER**; finite complete action presentation/oracle needed for effective pruning; no canonical partition/center |
+
+The [kernel scope receipts](receipts/F48_interface_join_kernel.json) cover six authored Lean files, not six completely formalized research domains. Standard logical axioms are recorded; authored `sorry`, `admit` and custom axioms are rejected. The initially failed F48 elaboration and earlier resource-limit failures remain preserved. Required local validation passed provenance72, all1602 tests, foundations and ordinal probes at the named source checkpoint; final remote checks bind their exact committed source separately. Exact finite probes test declared models. Numerical/physical interpretations do not inherit their proof status.
+
+## The completed lawful-history host
+
+```mermaid
+flowchart TD
+  S[Original source and allowed preparation] -->|complete current carrier memory resources contract| V[Private current configurations]
+  V -->|source indexed lawful instrument and delivered report| H[Private and public causal histories]
+  H -->|private truncation H of prefixes| F[Contravariant history fibration]
+  H -->|forward positive joint measure update| O[Covariant cone opfibration]
+  H -->|exact original projection and target constancy| P[Finite source relative certificate]
+  V -->|homogeneous legality and bounded decoder error| K[Hereditary feasible subset complex]
+  K -->|exact enabled images and stable core| Q[Lawful representation revision]
+  H -->|aggregate all locally legal prefixes| T[Raw prefix tree]
+  T -->|finite roots finite branching and all later depth extension| E[Greatest surjective subsystem]
+  E -->|inverse limit with finite discrete topology| L[All locally legal infinite paths]
+  L -->|extra closed admission theorem required| A[Stricter admitted source executions]
+```
+
+Every public report is an actual retained occurrence; a possible private lift is an alternative under a stipulated law. Source-indexed relations may instead be absorbed into a complete original/current interface, including apparatus memory, contract epoch and budget. Incomplete endpoints cannot compose instruments. A model update may revise its representation, but its original-source target still needs the fiber gate. A finite terminal proof remains a separate valid object even if no infinite execution exists. Selected-outcome private-prefix maps need not be onto even when aggregated depth maps are onto.
+
+Classical nonnegative finite joint tables compose without cancellation. Quantum CP instruments act on positive operators with public report labels; there is no universal private fiber indexed by unobserved Kraus atoms. One CP identity can have one or two positive indexed Kraus branches, forcing different path cardinalities. Observable targets pull back while states push forward. On diagonal algebras the classical embedding is lawful; on full matrix algebras the same naive map dephases and fails identity preservation.
+
+A new instrument must change the actual permitted experiment family, with its source, safe domain, report law, target and cost maps. Computation or genetic proliferation inside an old law-equivalence class cannot acquire a missing source distinction. F42's typed constructors and inherited counterexamples make refinements meaningful; F43's sealed opaque-table holdout shows both classical structure recovery and failure outside the supplied family. Its eleven frozen hashes remain intact and the once-only holdout was not replayed.
+
+## Negative results that forced better representations
+
+| Failure | Smallest useful witness | Representation or condition that survives |
+|---|---|---|
+| Raw causal prefixes equal complete-source stages | Live state may choose a dead state; the dead prefix has no successor. | F48 extendable-prefix subsystem, with global admission kept separate |
+| All finite source witnesses imply one infinite source | Natural countdowns with varying starts; or local binary paths with admission infinitely-many1, whose all-zero limit is forbidden. | Finite-height common original cone, or compact closed-image/admitted-path theorem, under different hypotheses |
+| Quantum private atoms are canonical | Identity Kraus indexed families `(I)` and `(I/√2,I/√2)`. | Public record labels and channel-relative CP effects/cones |
+| Perfect point reconstruction recovers a linear observable dictionary | Four binary states, swap dynamics, two delays recover both bits but span(1,a,b) misses ab. | Full generated algebra/joint histories; inverse-time access separately typed |
+| A current-support selector identifies the actual original | Reset both preparations to P0; either is continuation-safe but both originals remain possible. | Original-compatible singleton identification gate; current support order only under the promised toolkit |
+| A stationary finite apparatus yields a stabilization deadline | One-state complete instrument with an idle branch and a killing branch; postpone the latter arbitrarily. | Closed no-input finite word generator, admitted-word promise and complete interface |
+| A facet container is a lawful updated state set | Exact singleton lies in two facets; one adds an original source, the other an unreachable carrier. | Complete feasible complex and exact images, rather than forced partition completion |
+| Arithmetic holonomy or positive features authenticate the source | A modulo5 walk cannot repeat its norm20 lift; sign-blind composite tapes give the same cheap positive features but different completed forms. | Full certified prime itinerary/domain; signed completed source pairing and independently bounded form errors |
+| Forgetting provenance commutes with every right Kan extension | Two singleton witnesses of different tags: tagged product empty, untagged product singleton; empty diagram terminal is P over P, not singleton. | Nonempty connected limit diagrams force a common tag; left colimits are created by the forgetful map |
+
+No contradiction is concealed by silently changing a source class, action order, law, topology or target. The repaired theorem is stated at the new scope; the failed broad claim and receipt remain accessible. Full parallel comparison source hashes and maps live in their own namespace and do not merge foreign proof files.
+
+## Ranked unresolved obstructions
+
+| Rank | Obstruction class | Smallest next result capable of changing the verdict |
+|---|---|---|
+| 1 | Proof strength: F48 pruning paper theorem lacks a new kernel proof | Formalize exact stage image and greatest onto-bonding subsystem, then the lawful prepared-policy path map. |
+| 2 | Source/transport: continuous instruments exceed finite table attachment | Prove measurable joint-kernel pushforward/reindexing with equality on all measurable events and safe domains; singleton equality is refuted. |
+| 3 | Topology/admission: locally legal completion may exceed true source | Supply one concrete closed admitted-history class or a source-image certificate; retain the Büchi/countdown controls. |
+| 4 | Effective selection: existence does not give a total observer procedure | Extend X11 from exact qubits/closed no-input generators to a specified higher-dimensional finite generator with a sharp admitted-word bound. |
+| 5 | Language: tolerant repair lacks a canonical partition | Construct a typed accessible new feature/instrument making two incompatible facets jointly distinguishable, or certify impossibility in that toolkit. |
+| 6 | Analytic source identification: positive Weil bridge still missing | Derive the actual signed completed source form on the correct test domain plus a uniform Sobolev/form-error estimate, retaining the fake composite/phase controls. |
+| 7 | External source correctness/physical access | An authenticated experiment with its actual preparation, calibration, accessible memory, causal record and thermodynamic assumptions; simulator laws alone cannot supply it. |
+
+These are unresolved subclaims after completed research assignments. Classical prior art accounts for Yoneda/density, adjunctions, sheaf/holonomy descent, trace minimization, compact inverse limits, Mahler interpolation, Blackwell order, positive-cone rank and observability. The connected-limit provenance clause is already formalized in [Mathlib's official over-category documentation](https://leanprover-community.github.io/mathlib4_docs/Mathlib/CategoryTheory/Limits/Constructions/Over/Connected.html); its presence here is a lawful local adapter, not a new general theorem. F48 pruning, X07 causal-ideal support, X08 itinerary precision, X09 supported analytic costs and X11/X12 intersections are useful repository-level syntheses. **Academic originality of every potentially original formulation remains UNVERIFIED** pending broader prior-art and independent scholarly review.
+
+The RH-facing work supplies legitimate affine, arithmetic-log, Gamma and signed-form identities and hostile source controls. None constructs the missing positive completed source-derived Weil identification. No nontrivial zero positions were construction inputs; no RH advance is claimed. Abstract F46/F47 model mathematics validates no human psychology, neuroscience, music perception or physical synchronization.
+
+## All sixty assignments
+
+Each link leads to the original question, primary mathematical context, exact types/hypotheses/quantifiers, proof attempt, countermodels, verdict, remaining obstruction, actual cross-domain maps and deliverable/command provenance. The registry and branch map bind original author and reviewed integration commits. Acceptance below applies only to scoped surviving statements; preserved conjectures, refutations and blocked subclaims retain their own status.
+
+| ID | Mathematical assignment | Dossier | Assignment / integration |
+|---|---|---|---|
+| A01 | Source-indexed categories and Grothendieck fibrations | [dossier](A01.md) | COMPLETED / ACCEPTED |
+| A02 | Restricted Yoneda and observer adequacy | [dossier](A02.md) | COMPLETED / ACCEPTED |
+| A03 | Sheafification and observational gluing | [dossier](A03.md) | COMPLETED / ACCEPTED |
+| A04 | Nonabelian holonomy and obstruction classes | [dossier](A04.md) | COMPLETED / ACCEPTED |
+| A05 | Kan extensions and representation migration | [dossier](A05.md) | COMPLETED / ACCEPTED |
+| A06 | Universal minimal repair | [dossier](A06.md) | COMPLETED / ACCEPTED |
+| A07 | Bicategories of instrument histories | [dossier](A07.md) | COMPLETED / ACCEPTED |
+| A08 | Lawvere-enriched observation geometry | [dossier](A08.md) | COMPLETED / ACCEPTED |
+| B09 | VOYAGER profinite formalization | [dossier](B09.md) | COMPLETED / ACCEPTED |
+| B10 | Source actualization beyond compactness | [dossier](B10.md) | COMPLETED / ACCEPTED |
+| B11 | Effective finite refutation | [dossier](B11.md) | COMPLETED / ACCEPTED |
+| B12 | Domain theory and partial observation | [dossier](B12.md) | COMPLETED / ACCEPTED |
+| B13 | Godel reflection and omega+1 | [dossier](B13.md) | COMPLETED / ACCEPTED |
+| B14 | Descriptive-set observer complexity | [dossier](B14.md) | COMPLETED / ACCEPTED |
+| B15 | Final coalgebras and behavioral equivalence | [dossier](B15.md) | COMPLETED / ACCEPTED |
+| B16 | Generalized memory debt | [dossier](B16.md) | COMPLETED / ACCEPTED |
+| C17 | Stochastic source-changing fibrations | [dossier](C17.md) | COMPLETED / ACCEPTED |
+| C18 | Bayesian gluing and commuting updates | [dossier](C18.md) | COMPLETED / ACCEPTED |
+| C19 | Quantum instrument histories | [dossier](C19.md) | COMPLETED / ACCEPTED |
+| C20 | Blackwell experimental sufficiency | [dossier](C20.md) | COMPLETED / ACCEPTED |
+| C21 | Adaptive destructive observation policies | [dossier](C21.md) | COMPLETED / ACCEPTED |
+| C22 | Concurrent causal receipts | [dossier](C22.md) | COMPLETED / ACCEPTED |
+| C23 | Martingales and evidence wealth | [dossier](C23.md) | COMPLETED / ACCEPTED |
+| C24 | Information erasure and physical cost | [dossier](C24.md) | COMPLETED / ACCEPTED |
+| D25 | Logistic observational chaos | [dossier](D25.md) | COMPLETED / ACCEPTED |
+| D26 | Renormalization and symbolic dynamics | [dossier](D26_SYMBOLIC_RETURN_FRONTIERS.md) | COMPLETED / ACCEPTED |
+| D27 | Koopman and Perron-Frobenius factors | [dossier](D27.md) | COMPLETED / ACCEPTED |
+| D28 | Lyapunov epistemic resolution debt | [dossier](D28.md) | COMPLETED / ACCEPTED |
+| D29 | Attractors and self-update events | [dossier](D29_ATTRACTORS_CONLEY_SELF_UPDATE.md) | COMPLETED / ACCEPTED |
+| D30 | PDE filtering and closure | [dossier](D30_PDE_CLOSURE.md) | COMPLETED / ACCEPTED |
+| D31 | Covariant observers and causal cones | [dossier](D31_COVARIANT_CAUSAL_OBSERVERS.md) | COMPLETED / ACCEPTED |
+| D32 | Delay-coordinate embeddings | [dossier](D32_DELAY_COORDINATES.md) | COMPLETED / ACCEPTED |
+| E33 | Affine SUCC/FUCC algebra | [dossier](E33.md) | COMPLETED / ACCEPTED |
+| E34 | Prime jets and valuation geometry | [dossier](E34.md) | COMPLETED / ACCEPTED |
+| E35 | Prime clocks and p-adic interpolation | [dossier](E35.md) | COMPLETED / ACCEPTED |
+| E36 | Dirichlet logarithms and multiplicativity | [dossier](../E36_DIRICHLET_LOG_MULTIPLICATIVITY.md) | COMPLETED / ACCEPTED |
+| E37 | Archimedean Gamma boundary | [dossier](../E37_ARCHIMEDEAN_GAMMA_BOUNDARY.md) | COMPLETED / ACCEPTED |
+| E38 | Arithmetic polarization and Weil/Suzuki | [dossier](../SWM_E38_ARITHMETIC_POLARIZATION/DOSSIER.md) | COMPLETED / ACCEPTED |
+| E39 | Gaussian primes and arithmetic holonomy | [dossier](../E39_GAUSSIAN_ARITHMETIC_CUT_AND_TRANSPORT.md) | COMPLETED / ACCEPTED |
+| E40 | Spectral dynamics and virtual zeros | [dossier](E40/DOSSIER.md) | COMPLETED / ACCEPTED |
+| F41 | Parallel-branch mathematical triangulation | [dossier](F41.md) | COMPLETED / ACCEPTED |
+| F42 | Grammar-expanding genetic mathematics | [dossier](F42.md) | COMPLETED / ACCEPTED |
+| F43 | Unknown-target invariant discovery | [dossier](F43/DOSSIER.md) | COMPLETED / ACCEPTED |
+| F44 | Identifiability frontiers | [dossier](F44.md) | COMPLETED / ACCEPTED |
+| F45 | Proof debt Zeno and schedulers | [dossier](F45_PROOF_COST_SCHEDULING.md) | COMPLETED / ACCEPTED |
+| F46 | Mathematical phenomenology and TLICA | [dossier](F46_MATHEMATICAL_PHENOMENOLOGY.md) | COMPLETED / ACCEPTED |
+| F47 | Collective phase and coordinated observers | [dossier](F47_COLLECTIVE_PHASE.md) | COMPLETED / ACCEPTED |
+| F48 | Fibration of lawful causal histories | [dossier](../F48/F48_PHASE2_ARCHITECTURE.md) | COMPLETED / ACCEPTED |
+| X01 | Source-indexed witness fibrations x observational inverse limits | [dossier](X01.md) | COMPLETED / ACCEPTED |
+| X02 | Nonabelian holonomy x stochastic proof transport | [dossier](X02.md) | COMPLETED / ACCEPTED |
+| X03 | Sheaf gluing x counterexample-guided repair | [dossier](X03.md) | COMPLETED / ACCEPTED |
+| X04 | Myhill-Nerode quotients x chaotic symbolic dynamics | [dossier](X04.md) | COMPLETED / ACCEPTED |
+| X05 | Adaptive proof policies x Blackwell sufficiency | [dossier](X05.md) | COMPLETED / ACCEPTED |
+| X06 | Lawvere resource geometry x finite memory debt | [dossier](X06.md) | COMPLETED / ACCEPTED |
+| X07 | Markov histories x causal partial orders | [dossier](X07.md) | COMPLETED / ACCEPTED |
+| X08 | Prime valuation groupoids x noncommuting source actions | [dossier](X08.md) | COMPLETED / ACCEPTED |
+| X09 | Archimedean completion x source actualization topology | [dossier](X09.md) | COMPLETED / ACCEPTED |
+| X10 | Koopman operators x hidden observational chaos | [dossier](X10/DOSSIER.md) | COMPLETED / ACCEPTED |
+| X11 | Domain/Kripke semantics x omega+1 report barriers | [dossier](X11.md) | COMPLETED / ACCEPTED |
+| X12 | Mathematical phenomenology x source-dependent self-updates | [dossier](X12.md) | COMPLETED / ACCEPTED |

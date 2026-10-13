@@ -214,3 +214,7 @@ The import manifest and frozen foundational dossier identify archival origin
 `ba075348b7bcc66d938b3e0ca96c26e95bba340a`; these native anchors are not imported.
 No old A04, shared document, runtime, archive, default, child agent, full suite,
 compiler, push or licensing change is part of X10.
+
+## Final integration semantics clarification
+
+In the bilateral-shift countermodel above, `Ug=q` evaluates g at the advanced state. It does not acquire the original past bit by a forward q-read. The original past target is `U^-1q=ω_-1`, outside the complete future algebra; accessing it changes the toolkit by inverse-time probing. The valid operator commutator still refutes reducing closure. This clarification was accepted in fresh A03/F48 review; the earlier author receipt remains unchanged.

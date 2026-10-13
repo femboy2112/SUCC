@@ -2,7 +2,7 @@
 
 All IDs below are **owned PR49 IDs**. PR50/51 comparisons remain branch-qualified in the phase2 architecture. Status is frozen from the hashed root registry in [receipt](F48_PHASE2_RECEIPT.json); it is not a new replay or proof promotion. Mathematical core, typed maps, domains and obstructions were inspected across all available author dossiers and reviews. Missing review files are not invented.
 
-A = root accepted classical/paper result; K = only named kernel subclaims. All twelve synthesis inputs are accepted in this frozen snapshot. Fresh A03 review accepts F48 T1/T2 and the conditional type gates, without recertifying every input theorem. Final principal artifact review remains pending. Read each linked dossier and available review for the full quantifiers.
+A = root accepted classical/paper result; K = only named kernel subclaims. All twelve synthesis inputs are accepted in this frozen snapshot. Fresh A03 review accepts F48 T1/T2 and the conditional type gates, without recertifying every input theorem. Final principal artifact review is [accepted](../SWARM_ATLAS/reviews/F48_FINAL_PRINCIPAL_REVIEW.md). Frozen input statuses remain source-attributed. Read each linked dossier and available review for the full quantifiers.
 
 | Slot / evidence | Status | Typed object and actual arrow | Required domain / hypotheses | Preserved boundary or no-go | Next small lemma |
 |---|---|---|---|---|---|
