@@ -31,11 +31,16 @@ theorem sourceA_naturality : ∀ x : Fin 27, project (sourceA x) = a (project x)
 theorem sourceB_naturality : ∀ x : Fin 27, project (sourceB x) = b (project x) := by decide
 theorem readout_preserved : ∀ x : Fin 27, sourceR x = r (project x) := by decide
 theorem discovered_separator : ∀ x y : Fin 27, project x = project y ↔ (sourceR x, sourceR (sourceA x)) = (sourceR y, sourceR (sourceA y)) := by decide
-theorem not_full_state_recovery : ∃ x y : Fin 27, x ≠ y ∧ project x = project y := by decide
-theorem noncommuting : ∃ x : Fin 9, a (b x) ≠ b (a x) := by decide
+theorem not_full_state_recovery : ∃ x y : Fin 27, x ≠ y ∧ project x = project y := by
+  exact ⟨0, 13, by decide, by decide⟩
+theorem noncommuting : ∃ x : Fin 9, a (b x) ≠ b (a x) := by
+  exact ⟨0, by decide⟩
 theorem commutator_word : ∀ x : Fin 9, h x = bi (ai (b (a x))) := by decide
 theorem commutator_central : ∀ x : Fin 9, h (a x) = a (h x) ∧ h (b x) = b (h x) := by decide
-theorem commutator_period_three : (∀ x : Fin 9, h (h (h x)) = x) ∧ (∃ x : Fin 9, h x ≠ x) := by decide
+theorem commutator_period_three : (∀ x : Fin 9, h (h (h x)) = x) ∧ (∃ x : Fin 9, h x ≠ x) := by
+  constructor
+  · decide
+  · exact ⟨0, by decide⟩
 #print axioms sourceA_naturality
 #print axioms sourceB_naturality
 #print axioms readout_preserved
