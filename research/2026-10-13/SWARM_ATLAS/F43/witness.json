@@ -1,0 +1,1142 @@
+{
+  "checker_sha256": "f98d947936b65cda3def96beb2afb5002a0ccf25992ea3b04bc9ae3859e55bea",
+  "command": "python research/2026-10-13/SWARM_ATLAS/F43/check_once.py",
+  "elapsed_seconds": 0.118388,
+  "exit": 0,
+  "expected_holdout_sha256": "24eafe4c90923484417f80c4893def28e64cae9575002f03f2c48ec9e1ce83ad",
+  "holdout": [
+    {
+      "actions": 4,
+      "all_equations_valid": true,
+      "assignments": 64,
+      "equation_state_assignment_checks": 436800,
+      "equations": 105,
+      "failed_equations": 0,
+      "failed_instances": 0,
+      "first_witness_per_failed_equation": [],
+      "peak_word_map_cells": 7865,
+      "preregistered_role": "transfer",
+      "states": 65
+    },
+    {
+      "actions": 4,
+      "all_equations_valid": true,
+      "assignments": 64,
+      "equation_state_assignment_checks": 53760,
+      "equations": 105,
+      "failed_equations": 0,
+      "failed_instances": 0,
+      "first_witness_per_failed_equation": [],
+      "peak_word_map_cells": 968,
+      "preregistered_role": "transfer",
+      "states": 8
+    },
+    {
+      "actions": 3,
+      "all_equations_valid": false,
+      "assignments": 27,
+      "equation_state_assignment_checks": 45360,
+      "equations": 105,
+      "failed_equations": 42,
+      "failed_instances": 10944,
+      "first_witness_per_failed_equation": [
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              2,
+              0,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              2,
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              0,
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              0,
+              1,
+              2,
+              1
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              0,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              0,
+              2,
+              1,
+              2
+            ],
+            [
+              0,
+              2,
+              1
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              0,
+              2,
+              2,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              1,
+              0,
+              2,
+              0
+            ],
+            [
+              1,
+              0,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              1,
+              0,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              1,
+              1,
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              1,
+              2,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              1,
+              2,
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              1,
+              2,
+              2,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              2,
+              0,
+              0,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              2,
+              0,
+              1,
+              2
+            ],
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              2,
+              0,
+              2,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              2,
+              1,
+              0,
+              2
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              2,
+              1,
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              2,
+              1,
+              2,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              2,
+              2,
+              0,
+              2
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549"
+          ],
+          "equation": [
+            [
+              2,
+              2,
+              1,
+              2
+            ],
+            [
+              2,
+              1
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              0,
+              2,
+              1,
+              0
+            ],
+            [
+              0,
+              2,
+              1
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              1,
+              2,
+              0,
+              1
+            ],
+            [
+              1,
+              2,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              2,
+              0,
+              1,
+              0
+            ],
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "left_endpoint": "s33615ab53e3e712b8510",
+          "right_endpoint": "sd42360df7ee7c98264c0",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a165b263ed5c01f87da2b"
+          ],
+          "equation": [
+            [
+              2,
+              1,
+              0,
+              1
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "left_endpoint": "sd42360df7ee7c98264c0",
+          "right_endpoint": "s33615ab53e3e712b8510",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a5a95176feab23794366f"
+          ],
+          "equation": [
+            [
+              0,
+              1,
+              0,
+              2
+            ],
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "left_endpoint": "sf184d1e37db51a007e53",
+          "right_endpoint": "s0db801a63552517e5c4d",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a5a95176feab23794366f"
+          ],
+          "equation": [
+            [
+              0,
+              2,
+              0,
+              1
+            ],
+            [
+              0,
+              2,
+              1
+            ]
+          ],
+          "left_endpoint": "sb4c2ff153d17dede9b70",
+          "right_endpoint": "s64e15037c4c648be90ff",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a5a95176feab23794366f"
+          ],
+          "equation": [
+            [
+              1,
+              0,
+              1,
+              2
+            ],
+            [
+              1,
+              0,
+              2
+            ]
+          ],
+          "left_endpoint": "s0db801a63552517e5c4d",
+          "right_endpoint": "sf184d1e37db51a007e53",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a5a95176feab23794366f"
+          ],
+          "equation": [
+            [
+              1,
+              2,
+              1,
+              0
+            ],
+            [
+              1,
+              2,
+              0
+            ]
+          ],
+          "left_endpoint": "sb12b06ba57d04f1aa163",
+          "right_endpoint": "s9bc7da6a7efeb8e3f11a",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a5a95176feab23794366f"
+          ],
+          "equation": [
+            [
+              2,
+              0,
+              2,
+              1
+            ],
+            [
+              2,
+              0,
+              1
+            ]
+          ],
+          "left_endpoint": "s64e15037c4c648be90ff",
+          "right_endpoint": "sb4c2ff153d17dede9b70",
+          "start_state": "s0b4b8370a27064b4d3da"
+        },
+        {
+          "assignment": [
+            "a165b263ed5c01f87da2b",
+            "a213e9abf4d536b643549",
+            "a5a95176feab23794366f"
+          ],
+          "equation": [
+            [
+              2,
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "left_endpoint": "s9bc7da6a7efeb8e3f11a",
+          "right_endpoint": "sb12b06ba57d04f1aa163",
+          "start_state": "s0b4b8370a27064b4d3da"
+        }
+      ],
+      "peak_word_map_cells": 1936,
+      "preregistered_role": "mismatch",
+      "states": 16
+    }
+  ],
+  "holdout_consumed_for_selection": false,
+  "holdout_execution_count": 1,
+  "malformed_source_rejected": true,
+  "one_attempt_guard_created_before_holdout_read": true,
+  "selection_sha256": "90958e14a8a16e10cea130557598fc6cb1c2188bf9110b2f9b5f9e949d26a97f",
+  "source_obstruction": {
+    "all_finite_observation_words_equal": "proved by commuting-square induction",
+    "commuting_squares": [
+      [
+        [],
+        0,
+        1,
+        1
+      ],
+      [
+        [],
+        1,
+        2,
+        2
+      ],
+      [
+        [
+          0
+        ],
+        0,
+        1,
+        1
+      ],
+      [
+        [
+          0
+        ],
+        1,
+        3,
+        3
+      ],
+      [
+        [
+          1
+        ],
+        0,
+        3,
+        3
+      ],
+      [
+        [
+          1
+        ],
+        1,
+        2,
+        2
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0,
+        3,
+        3
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        1,
+        3,
+        3
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0,
+        3,
+        3
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        1,
+        3,
+        3
+      ]
+    ],
+    "full_hidden_source_identity_inferred": false,
+    "noninjective_report_pair": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "quotient_action_commutation": true,
+    "quotient_states": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "same_report": 3,
+    "source_action_commutation": false,
+    "source_states": [
+      [],
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "surjective_report": true
+  },
+  "stage": 3,
+  "time_limit_seconds": 25,
+  "training_independent_evaluation": [
+    {
+      "actions": 2,
+      "all_equations_valid": true,
+      "assignments": 8,
+      "equation_state_assignment_checks": 4200,
+      "equations": 105,
+      "failed_equations": 0,
+      "failed_instances": 0,
+      "first_witness_per_failed_equation": [],
+      "peak_word_map_cells": 605,
+      "states": 5
+    },
+    {
+      "actions": 3,
+      "all_equations_valid": true,
+      "assignments": 27,
+      "equation_state_assignment_checks": 25515,
+      "equations": 105,
+      "failed_equations": 0,
+      "failed_instances": 0,
+      "first_witness_per_failed_equation": [],
+      "peak_word_map_cells": 1089,
+      "states": 9
+    }
+  ],
+  "verdict": "TESTED MODEL"
+}
