@@ -1,0 +1,168 @@
+{
+  "claim_id": "SWM-A03",
+  "command": "PYTHONDONTWRITEBYTECODE=1 python -B research/2026-10-13/SWARM_ATLAS/A03_probe.py",
+  "elapsed_seconds": 0.530943,
+  "exit_code": 0,
+  "hostile_witness": {
+    "darts": [
+      [
+        "a",
+        0,
+        1,
+        [
+          1
+        ]
+      ],
+      [
+        "b",
+        0,
+        1,
+        [
+          7
+        ]
+      ]
+    ],
+    "disconnected_chart_rejected": true,
+    "finite_modular_menu": [
+      2,
+      3
+    ],
+    "flat_control": "GLUED",
+    "independent_overlap_basis_periods": [
+      -6
+    ],
+    "independent_source_basis_periods": [
+      6
+    ],
+    "local_potentials": {
+      "a": [
+        [
+          0,
+          [
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            1
+          ]
+        ]
+      ],
+      "b": [
+        [
+          0,
+          [
+            0
+          ]
+        ],
+        [
+          1,
+          [
+            7
+          ]
+        ]
+      ]
+    },
+    "missing_dart_rejected": true,
+    "native_status": "OBSTRUCTED",
+    "native_tower": {
+      "epistemic_macros_at_E": 1,
+      "expanded_source_steps": 2,
+      "levels": 2,
+      "status": "OBSTRUCTED"
+    },
+    "one_vertex_overlap_mutation_generator": 0,
+    "overlap_cycle": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        -1
+      ]
+    ],
+    "overlaps": [
+      [
+        "a",
+        "b",
+        0,
+        [
+          0
+        ]
+      ],
+      [
+        "a",
+        "b",
+        1,
+        [
+          -6
+        ]
+      ]
+    ],
+    "period_subgroup_generator": 6,
+    "projected_checks": [
+      {
+        "modulus": 2,
+        "native_reduced_label_status": "GLUED",
+        "true_quotient_period": 0
+      },
+      {
+        "modulus": 3,
+        "native_reduced_label_status": "GLUED",
+        "true_quotient_period": 0
+      },
+      {
+        "modulus": 5,
+        "native_reduced_label_status": "OBSTRUCTED",
+        "true_quotient_period": 1
+      }
+    ],
+    "signed_period": [
+      -6
+    ],
+    "source_digest": "d37e6408a8642fcdc60220530a2450378067b70e47082626f2478fba0aa180a6",
+    "source_id": "SWM-A03-lcm-two-dart",
+    "source_walk": [
+      [
+        "b",
+        -1
+      ],
+      [
+        "a",
+        1
+      ]
+    ],
+    "stale_source_rejected": true,
+    "vertices": [
+      0,
+      1
+    ]
+  },
+  "independent_probe": {
+    "arithmetic": "Fraction row reduction and integer gcd; no floats",
+    "cover_and_gauge_comparisons": 1875,
+    "flat_assignments": 19,
+    "label_box": [
+      -2,
+      2
+    ],
+    "largest_incidence_matrix": [
+      4,
+      7
+    ],
+    "modular_comparisons": 1875,
+    "source_assignments": 625
+  },
+  "parent_sha_at_probe": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "probe_sha256": "1b22cd9647e9ead1d766b1bdac2381768a74417af125e24a9396ffb94bad9de1",
+  "python_version": "3.12.3",
+  "scope": "Bounded scalar exact controls plus paper theorem; no universal numerical proof",
+  "source_sha256": {
+    "observational_succ/constructive_gluing_tower.py": "cbfd00308f10e4ea07146b9d810924f02fd607fd1b379070ba4f2efc42e8a75f",
+    "observational_succ/local_global_descent.py": "e1c31a1fa55f8fbc914bc4b30d9ef9ebea5a6cb5ecb36c2994e04e2ebc7733d8",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-12/LOCAL_GLOBAL_YONEDA_GLUE_2026-10-12.md": "baf446c9e4f9b7c514744cd5428cd02261bd84f496089d79ffdadb15b4afd784"
+  }
+}
