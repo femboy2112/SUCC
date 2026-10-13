@@ -1,0 +1,663 @@
+{
+  "academic_novelty_claimed": false,
+  "claim_id": "SWM-X04",
+  "command": "timeout 60s python -B research/2026-10-13/SWARM_ATLAS/X04_probe.py",
+  "full_binary_prefix_separators": [
+    {
+      "distinct_trace_prefixes": 2,
+      "width": 1
+    },
+    {
+      "distinct_trace_prefixes": 4,
+      "width": 2
+    },
+    {
+      "distinct_trace_prefixes": 8,
+      "width": 3
+    },
+    {
+      "distinct_trace_prefixes": 16,
+      "width": 4
+    },
+    {
+      "distinct_trace_prefixes": 32,
+      "width": 5
+    },
+    {
+      "distinct_trace_prefixes": 64,
+      "width": 6
+    },
+    {
+      "distinct_trace_prefixes": 128,
+      "width": 7
+    },
+    {
+      "distinct_trace_prefixes": 256,
+      "width": 8
+    }
+  ],
+  "graph_controls": {
+    "C_self_loop_mutant": {
+      "cyclic_phase": [
+        0,
+        0,
+        0
+      ],
+      "period": 1,
+      "simple_cycle_lengths": [
+        1,
+        2
+      ],
+      "widths": [
+        {
+          "blocks": 3,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "partitions": 5,
+          "width": 1
+        },
+        {
+          "blocks": 5,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "partitions": 52,
+          "width": 2
+        }
+      ]
+    },
+    "D25_period2": {
+      "cyclic_phase": [
+        0,
+        0,
+        1
+      ],
+      "period": 2,
+      "simple_cycle_lengths": [
+        2
+      ],
+      "widths": [
+        {
+          "blocks": 3,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ]
+          ],
+          "partitions": 5,
+          "width": 1
+        },
+        {
+          "blocks": 4,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "partitions": 15,
+          "width": 2
+        },
+        {
+          "blocks": 6,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "partitions": 203,
+          "width": 3
+        }
+      ]
+    },
+    "branching_period3": {
+      "cyclic_phase": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "period": 3,
+      "simple_cycle_lengths": [
+        3
+      ],
+      "widths": [
+        {
+          "blocks": 4,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              0
+            ]
+          ],
+          "partitions": 15,
+          "width": 1
+        },
+        {
+          "blocks": 5,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              2,
+              2,
+              0
+            ]
+          ],
+          "partitions": 52,
+          "width": 2
+        },
+        {
+          "blocks": 6,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              2,
+              2,
+              0
+            ]
+          ],
+          "partitions": 203,
+          "width": 3
+        }
+      ]
+    },
+    "cycle6": {
+      "cyclic_phase": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "period": 6,
+      "simple_cycle_lengths": [
+        6
+      ],
+      "widths": [
+        {
+          "blocks": 6,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              2,
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          "partitions": 203,
+          "width": 1
+        },
+        {
+          "blocks": 6,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              2,
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          "partitions": 203,
+          "width": 2
+        },
+        {
+          "blocks": 6,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              2,
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ]
+          ],
+          "partitions": 203,
+          "width": 3
+        }
+      ]
+    },
+    "cycles2_and3": {
+      "cyclic_phase": [
+        0,
+        0,
+        0
+      ],
+      "period": 1,
+      "simple_cycle_lengths": [
+        2,
+        3
+      ],
+      "widths": [
+        {
+          "blocks": 3,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "partitions": 5,
+          "width": 1
+        },
+        {
+          "blocks": 4,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "partitions": 15,
+          "width": 2
+        }
+      ]
+    },
+    "full_binary": {
+      "cyclic_phase": [
+        0,
+        0
+      ],
+      "period": 1,
+      "simple_cycle_lengths": [
+        1,
+        2
+      ],
+      "widths": [
+        {
+          "blocks": 2,
+          "lawful_partitions": [
+            [
+              0,
+              0
+            ]
+          ],
+          "partitions": 2,
+          "width": 1
+        },
+        {
+          "blocks": 4,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "partitions": 15,
+          "width": 2
+        },
+        {
+          "blocks": 8,
+          "lawful_partitions": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "partitions": 4140,
+          "width": 3
+        }
+      ]
+    }
+  },
+  "independence": "Exact algorithm contrasts share reasoner and fixtures; inherited reviews are separately authored",
+  "infinite_computation_executed": false,
+  "inherited": {
+    "B16": {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "research/2026-10-13/SWARM_ATLAS/B16_probe.py"
+      ],
+      "exit": 0,
+      "saved_receipt_equal": true,
+      "stdout_sha256": "34325fc8b7bea69177a0d6184cc1b63315d6423fe939b3503d9ff78932e3c4d5"
+    },
+    "D25": {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "research/2026-10-13/SWARM_ATLAS/D25_probe.py"
+      ],
+      "exit": 0,
+      "saved_receipt_equal": true,
+      "stdout_sha256": "862163b3df5b6da936db3f6f1d090f9de0d8cbf6c24a136dd81774e0f1c32e09"
+    }
+  },
+  "natural_acim_identified": false,
+  "period3_counterexample": {
+    "current_report_autonomous": false,
+    "quotient_map": [
+      0,
+      1,
+      2
+    ],
+    "residual_states": 3,
+    "source_states": 3,
+    "trace_representatives": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ]
+    ]
+  },
+  "physical_source_authenticated": false,
+  "primary_sources": [
+    {
+      "inspected": "Sections 8.4-8.5; period and higher-block factor context",
+      "url": "https://people.math.harvard.edu/~shlomo/docs/dynamical_systems.pdf"
+    },
+    {
+      "inspected": "Krieger 2012, page 6; word Shannon graph retains entire futures",
+      "url": "https://arxiv.org/pdf/1209.1872"
+    }
+  ],
+  "probe_sha256": "4f06f1510b1a52200db82c3ae46c2826544dffd25e16e852f864ba3bd69b8513",
+  "python_version": "3.12.3",
+  "redundant_six_cycle": {
+    "current_report_autonomous": true,
+    "quotient_map": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "residual_states": 1,
+    "source_states": 6,
+    "trace_representatives": [
+      [
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X"
+      ],
+      [
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X"
+      ],
+      [
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X"
+      ],
+      [
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X"
+      ],
+      [
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X"
+      ],
+      [
+        "X",
+        "X",
+        "X",
+        "X",
+        "X",
+        "X"
+      ]
+    ]
+  },
+  "retained_controls": {
+    "B16_redundant": {
+      "quotient_map": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0
+      },
+      "residual_states": 1,
+      "source_states": 6
+    },
+    "B16_truncation_nontransitive": true,
+    "D25_boundary": {
+      "binary_flip_fails_for_both_labels": [
+        true,
+        true
+      ],
+      "boundary_orbit_sink_commutes": true,
+      "forward_equals_state": true,
+      "state": [
+        "3/2",
+        "1/4",
+        "-1/8"
+      ]
+    },
+    "D25_mutation": {
+      "lawful_partitions": [
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "period": 1,
+      "source_is_actual_logistic": false
+    }
+  },
+  "source_parent": "d5801ec680663717b4c93e72df96bfbd5a26a0f6",
+  "source_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-13/SWARM_ATLAS/B16.md": "8529a1d5374b620905925a5e98b1698876663c9b4d9655b94988e4806440b059",
+    "research/2026-10-13/SWARM_ATLAS/B16_probe.py": "5b6e2c8c65a45c3df1740031c4e40b4ecf9753130da11bdd5ba64fb467216bc9",
+    "research/2026-10-13/SWARM_ATLAS/B16_receipt.json": "34325fc8b7bea69177a0d6184cc1b63315d6423fe939b3503d9ff78932e3c4d5",
+    "research/2026-10-13/SWARM_ATLAS/D25.md": "9280b3d5c7b0c35d6317649fee8d2bc8d73e86892acee45795b978aabc766bb0",
+    "research/2026-10-13/SWARM_ATLAS/D25_probe.py": "7e672c08c6f98e5428ec4c34f3af84a151d1c38925c14095780f2abd9370f692",
+    "research/2026-10-13/SWARM_ATLAS/D25_receipt.json": "862163b3df5b6da936db3f6f1d090f9de0d8cbf6c24a136dd81774e0f1c32e09",
+    "research/2026-10-13/SWARM_ATLAS/PROTOCOL.md": "c268440bd21b5825a6666d1e043a108e694e545feaae77196ea2c463507590d0",
+    "research/2026-10-13/SWARM_ATLAS/X04.md": "4b57541c25b120bc3d8f4e76499b8af1f900f8825effac6836cd9915a5f65c3d"
+  },
+  "status": "PROVED LOCAL paper; TESTED MODEL finite receipt; independent acceptance pending",
+  "truncated_suffix_compatibility": {
+    "pairs": [
+      [
+        0,
+        3,
+        true
+      ],
+      [
+        3,
+        1,
+        true
+      ],
+      [
+        0,
+        1,
+        false
+      ]
+    ],
+    "prefix": [
+      0,
+      0,
+      1,
+      0
+    ]
+  }
+}
