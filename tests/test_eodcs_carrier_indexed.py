@@ -15,7 +15,8 @@ from observational_succ.carrier_indexed import (
     CarrierQuotient, CarrierStage, audit_descent, checked_descent,
     compare_histories, from_deterministic_lawful_source,
     from_stochastic_history, labels_partition, mass_total,
-    minimal_stationary_repair,
+    minimal_stationary_repair, repair_one_step, CarrierStep,
+    transport_actual_history, original_support_is_monotone,
 )
 from observational_succ.swarm_lawful_history import (
     LawfulSource, Instrument, Event, replay_fiber,
@@ -370,6 +371,113 @@ class ExistingCodeBridges(unittest.TestCase):
                     (((0,0,1),),((0,0,1),)))
         with self.assertRaises(CarrierError):
             from_stochastic_history(stoch,wrong)
+
+
+
+class FullCarrierComposition(unittest.TestCase):
+    def test_two_stage_original_law_evidence_and_supported_target_transport(self):
+        root_stage=stage(n=4)
+        middle=stage(n=4,epoch=1,name="intermediate")
+        terminal=stage(n=1,epoch=2,name="collapsed")
+        src=same_source()
+        q0=CarrierQuotient(root_stage,(0,0,1,1),"observable-before")
+        q1=CarrierQuotient(middle,(0,0,1,1),"observable-middle")
+        q2=CarrierQuotient(terminal,(0,),"observable-end")
+        change=action(root_stage,("ok",)*4,(1,0,3,2),
+                      name="swap-inside-fibers",final=middle)
+        read=action(middle,("left","left","right","right"),(0,0,0,0),
+                    name="read-then-erase",final=terminal)
+        steps=(CarrierStep(change,q0,q1,"ok"),
+               CarrierStep(read,q1,q2,"right"))
+        cert=transport_actual_history(
+            src,q0,steps,original_target=("L","L","R","R"))
+        self.assertEqual(cert.actual_history_length,2)
+        self.assertEqual(cert.public_trace,
+                         (("swap-inside-fibers","ok"),("read-then-erase","right")))
+        self.assertEqual(cert.fine_path_probability,Q(1,2))
+        self.assertEqual(cert.coarse_path_probability,Q(1,2))
+        self.assertEqual(cert.original_posterior,(0,0,Q(1,2),Q(1,2)))
+        self.assertEqual(cert.original_support,frozenset((2,3)))
+        self.assertTrue(cert.evidence_equal_at_every_prefix)
+        self.assertTrue(cert.original_joint_law_equal_at_every_prefix)
+        self.assertTrue(cert.original_target_transport_valid)
+        self.assertTrue(original_support_is_monotone(
+            src.root(),(change,read),("ok","right")))
+
+    def test_comparison_requires_same_source_and_exact_legal_actual_history(self):
+        root_stage=stage(n=2)
+        next_stage=stage(n=2,epoch=1,name="next")
+        src=same_source(2)
+        q0=CarrierQuotient(root_stage,(0,0),"old")
+        q1=CarrierQuotient(next_stage,(0,0),"new")
+        # Equality of next reports alone does not imply next-state law
+        # factorization when hidden receipt probabilities differ.
+        noisy=CarrierInstrument("noisy",root_stage,next_stage,("yes","no"),
+            (True,True),
+            (((0,0,Q(1,4)),(1,1,Q(3,4))),
+             ((0,1,Q(3,4)),(1,0,Q(1,4)))))
+        with self.assertRaises(CarrierError):
+            transport_actual_history(src,q0,
+                (CarrierStep(noisy,q0,q1,"yes"),))
+        with self.assertRaises(CarrierError):
+            transport_actual_history(src,q0,
+                (CarrierStep(noisy,q0,q1,"never-happened"),))
+        bad_view=CarrierQuotient(next_stage,(0,1),"foreign")
+        with self.assertRaises(CarrierError):
+            transport_actual_history(src,q0,
+                (CarrierStep(noisy,bad_view,q1,"yes"),))
+
+    def test_one_step_information_refinement_is_coarsest_in_all_partitions(self):
+        root_stage=stage(n=4)
+        after=stage(n=2,epoch=1,name="next")
+        before=CarrierQuotient(root_stage,(0,0,1,1),"before")
+        future=CarrierQuotient(after,(0,1),"future")
+        act=action(root_stage,("ok",)*4,(0,1,1,1),name="reveal-next",
+                   final=after)
+        repair=repair_one_step(before,((act,future),))
+        self.assertTrue(repair.all_declared_one_step_squares_commute)
+        self.assertEqual(repair.after.labels,(0,1,2,2))
+        self.assertEqual((repair.old_classes,repair.refined_classes,
+                          repair.new_information_classes),(2,3,1))
+        candidates=[
+            part for part in canonical_partitions(4)
+            if is_refinement(part,before.labels) and audit_descent(
+                act,CarrierQuotient(root_stage,part,"candidate"),future).valid]
+        self.assertTrue(candidates)
+        self.assertEqual(min(len(set(part)) for part in candidates),3)
+        self.assertEqual([p for p in candidates if len(set(p))==3],
+                         [repair.after.labels])
+        self.assertFalse(audit_descent(act,before,future).valid)
+
+    def test_one_step_repair_keeps_disabled_action_semantics(self):
+        st=stage(n=2)
+        next_stage=stage(n=1,epoch=1,name="next")
+        initial=CarrierQuotient(st,(0,0),"old")
+        future=CarrierQuotient(next_stage,(0,),"after")
+        act=action(st,("same","same"),(0,0),
+                   name="conditional",enabled=(True,False),final=next_stage)
+        repair=repair_one_step(initial,((act,future),))
+        self.assertEqual(repair.after.labels,(0,1))
+        self.assertEqual(repair.new_information_classes,1)
+        self.assertTrue(audit_descent(act,repair.after,future).valid)
+        self.assertFalse(audit_descent(act,initial,future).valid)
+
+    def test_exact_source_negative_controls_do_not_retroactively_update_history(self):
+        st=stage(n=2)
+        src=same_source(2)
+        q=CarrierQuotient(st,(0,1),"current")
+        a=action(st,("zero","one"),name="read")
+        h=src.root().advance(a,"one")
+        self.assertEqual(h.originals_supported,frozenset((1,)))
+        self.assertTrue(h.verify({"read":a}))
+        with self.assertRaises(CarrierError):
+            h.verify({})
+        # A forged event probability is rejected; the original belief is immutable.
+        fake=replace(h,events=(replace(h.events[0],
+                                       conditional_likelihood=Q(1,7)),))
+        with self.assertRaises(CarrierError):
+            fake.verify({"read":a})
+        self.assertEqual(src.root().originals_supported,frozenset((0,1)))
 
 
 if __name__=="__main__":
