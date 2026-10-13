@@ -1,0 +1,47 @@
+{
+  "version": "Lean4.14.0 commit410fab728470",
+  "application_locator_compatibility": "exact own-process numeric readlink failure fallback to /proc/self/exe; official kernel unmodified",
+  "false_theorem_negative_control_exit": 1,
+  "files": [
+    {
+      "file": "formal/EODCS_ActionClosure.lean",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "file": "formal/EODCS_CausalDescent.lean",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "file": "formal/EODCS_NerodePlateau.lean",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "file": "formal/EODCS_OrderAdjunction.lean",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "file": "formal/EODCS_RelationalChoice.lean",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "file": "formal/EODCS_VoyagerMemoryDebt.lean",
+      "exit": 0,
+      "output": "formal/EODCS_VoyagerMemoryDebt.lean:79:23: warning: unused variable `positive`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n"
+    },
+    {
+      "file": "formal/EODCS_VoyagerPhantom.lean",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "file": "formal/EODCS_VoyagerTrace.lean",
+      "exit": 0,
+      "output": ""
+    }
+  ]
+}

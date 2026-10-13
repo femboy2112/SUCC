@@ -1,0 +1,24 @@
+{
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "main_sha": "52d2c02b85b246aec67160260ac06bb1da33645e",
+  "sibling_sha": "b2774ca485db4b5b4f7ce92e535220352fb3af2f",
+  "python": "3.12.14",
+  "mpmath": "1.4.1",
+  "tests": 1602,
+  "result": "PASS",
+  "initial_missing_dependency_errors": 13,
+  "provenance_items": 72,
+  "archives_unchanged": 17,
+  "namespace_migrations": 55,
+  "baseline_commands": [
+    "python scripts/verify_provenance.py",
+    "python -m unittest discover -s tests -p 'test_*.py'",
+    "python scripts/observer_foundations_probe.py",
+    "python scripts/ordinal_succ_report_probe.py"
+  ],
+  "claims_not_established": [
+    "new mathematical priority",
+    "RH",
+    "physical infinite execution"
+  ]
+}
