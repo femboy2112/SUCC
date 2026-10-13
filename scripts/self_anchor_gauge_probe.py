@@ -4,7 +4,7 @@ import itertools
 import json
 
 from observational_succ.self_anchor_gauge import (
-    CandidateWorld, decoder_audit, equality_signature, minimal_calibrations,
+    CandidateWorld, decoder_audit, diagnose_signature, equality_signature, minimal_calibrations,
     permutation_worlds, sensor_transport, transported_change,
 )
 
@@ -43,7 +43,18 @@ def report():
     tr = sensor_transport(old, new)
     assert transported_change(old[0], new[0], tr) is False
     assert transported_change(old[0], new[1], tr) is True
+    initially = diagnose_signature((permutation_worlds(2)[0],), (0,))
+    expanded = diagnose_signature(permutation_worlds(2), (0,))
+    unpredicted = diagnose_signature(permutation_worlds(2), ("alien report",))
+    assert (initially.status, expanded.status, unpredicted.status) == (
+        "IDENTIFIED", "AMBIGUOUS", "OUT_OF_MODEL")
     return {
+        "language_adequacy_diagnostic": {
+            "single_dictionary": initially.status,
+            "expanded_dictionary_class": expanded.status,
+            "unpredicted_sensor_output": unpredicted.status,
+            "physical_source_attestation": False,
+        },
         "status": "EXACT_FINITE_MODEL_ONLY",
         "claims_physical_calibration": False,
         "claims_tlica_empirically_validated": False,

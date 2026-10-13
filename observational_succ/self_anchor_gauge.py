@@ -184,3 +184,47 @@ def transported_change(old_report: int, new_report: int, transport: Sequence[int
     if sorted(t) != list(range(len(t))) or type(old_report) is not int or type(new_report) is not int or not (0 <= old_report < len(t) and 0 <= new_report < len(t)):
         raise SourceGaugeError("reports and transport must share one finite alphabet")
     return t[old_report] != new_report
+
+
+@dataclass(frozen=True)
+class SignatureDiagnosis:
+    """Conditional finite interpretation of a *supplied* report signature.
+
+    IDENTIFIED: all admitted source cases share the same target.
+    AMBIGUOUS: compatible source cases have different original targets.
+    OUT_OF_MODEL: no admitted source case produces the report signature.
+
+    None certifies that the report was physically actualized, nor that the
+    world family contains reality. In particular, OUT_OF_MODEL is a request
+    to audit receipt, instrument and model class; it is not a new ontology.
+    """
+
+    status: str
+    compatible_cases: tuple[SourceCase, ...]
+    possible_targets: tuple[Hashable, ...]
+
+
+def diagnose_signature(worlds: Sequence[CandidateWorld],
+                       observed: Sequence[Hashable],
+                       anchors: Sequence[int] = ()) -> SignatureDiagnosis:
+    """Separate prediction failure from ambiguity and conditional identification."""
+    ws = _validate_worlds(worlds)
+    chosen = tuple(anchors)
+    # Reuse the certified finite anchor-basis type guard.
+    decoder_audit(ws, chosen)
+    observation = tuple(observed)
+    if len(observation) != len(chosen) + 1:
+        raise SourceGaugeError("observation needs one unknown-state report plus each anchor")
+    cases = []
+    for w in ws:
+        calibration = tuple(w.references[j] for j in chosen)
+        for i, state in enumerate(w.states):
+            key = (w.reports[i], *calibration)
+            if observation == key:
+                cases.append(SourceCase(w.name, state, key, w.targets[i]))
+    if not cases:
+        return SignatureDiagnosis("OUT_OF_MODEL", (), ())
+    targets = tuple(dict.fromkeys(case.target for case in cases))
+    if len(targets) == 1:
+        return SignatureDiagnosis("IDENTIFIED", tuple(cases), targets)
+    return SignatureDiagnosis("AMBIGUOUS", tuple(cases), targets)

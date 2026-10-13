@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-13  
 **Scope:** finite, deterministic, source-indexed semantics; stable/unstable *symbol* dictionaries; declared reference interventions  
-**Status:** CL-01–CL-04 proved here in specified finite domains by short set-theoretic arguments; 11 local Python regression tests and a deterministic probe receipt. The proofs are *paper derivations*, NOT Lean kernel checks or independently peer-reviewed priority claims. This is a TLICA→SUCC bridge proposal, not empirical validation of human cognition, physical source authentication, an automatic new-language generator, or RH.
+**Status:** CL-01–CL-05 proved here in specified finite domains by short set-theoretic arguments; 16 local Python regression tests and a deterministic probe receipt. The proofs are *paper derivations*, NOT Lean kernel checks or independently peer-reviewed priority claims. This is a TLICA→SUCC bridge proposal, not empirical validation of human cognition, physical source authentication, an automatic new-language generator, or RH.
 
 **Source freeze:** SUCC `main` `6e0d88f1b235b85188393bbcd64ac0436cb71a70` (2026-10-13); TLICA `main` `821ce7e6f57524d32e767a9c5ec5303e1796115e` (2026-10-02). The relevant TLICA foundation is frozen; this work modifies **SUCC only**.
 
@@ -80,6 +80,18 @@ No declared transport ⇒ no cross-epoch phase/equality claim. A prior calibrati
 
 **Model-class omission (OPEN).** A decoder valid for a given Θ might fail when a source hypothesis missing from Θ is admitted. Cross-world factorization says nothing about completeness of Θ. Independent source/model holdouts and an explicit unknown/OTHER hypothesis are needed before advancing a reliable source-map-adequacy claim. Internal certainty under all admitted interpretations may coexist with universally wrong interpretation of the source.
 
+### CL-05. A finite three-way source-language diagnostic and its antitone certainty (PROVED, relative)
+
+For a fixed supplied report signature h (unknown state report and any already licensed calibration readings), define the surviving cases `V_Θ(h)={ (θ,x): H_A(θ,x)=h }` and their *possible original target labels* `K_Θ(h)={T_θ(x):(θ,x)∈V_Θ(h)}`. There are exactly three statuses, relative to the declared model family Θ:
+
+- `OUT_OF_MODEL` when `V_Θ(h)=∅`: no admitted source case predicts the report. This calls for instrument/receipt/model-class audit; it is NOT proof that a new metaphysical kind exists.
+- `AMBIGUOUS` when `|K_Θ(h)|>1`: in-language predictions remain but they imply incompatible original source labels.
+- `IDENTIFIED` when `|K_Θ(h)|=1`: the claimed source label is determined, **conditional** on Θ and the source history. This is neither unconditional σ adequacy nor an empirical φ score.
+
+**Monotonicity theorem.** If Θ⊆Θ′ and all shared models retain their observation/target tables, then `V_Θ(h)⊆V_Θ′(h)` and `K_Θ(h)⊆K_Θ′(h)`. *Proof:* every existing witness is still admitted; set inclusion follows by comprehension. Consequently expanding an interpretation language can make an `IDENTIFIED` judgment become `AMBIGUOUS`, or change `OUT_OF_MODEL` to either, but cannot erase already surviving conflicting source labels. **Truth of an original-source claim and conditional uniqueness are different things.** This is a standard monotonicity observation, not a novel general epistemic theorem.
+
+The new `diagnose_signature` routine distinguishes these three modes and retains all source-specific cases, rather than collapsing an unexpected token into falsehood or a collision into certainty. Fresh tests include 3-state full-permutation model growth, explicit out-of-language sensory reports, and calibration-sensitive transitions. A model family can still omit reality; no finite diagnosis certifies Θ is exhaustive.
+
 ## 4. Proposed source-map adequacy loop for generalized SUCC
 
 1. **Anchor:** retain actualized, time-stamped, source/versioned self-world encounters. Declare which comparisons are meaningful without a concept dictionary (equality pattern, available actions and lawful order).
@@ -108,10 +120,10 @@ This is an **architecture**, not implemented open-ended concept invention. The n
 ## 6. Reproduction and provenance
 
 - `observational_succ/self_anchor_gauge.py`: complete finite world definition and exact algorithms.
-- `tests/test_self_anchor_gauge.py`: 11 tests, including independent brute-force decoder oracle, 1–5 label symmetric groups, exhaustive length≤4 equality-orbit equivalence, all 3-label frame pair transports, drift, collapse and source/epoch invalid input.
+- `tests/test_self_anchor_gauge.py`: 16 tests, including independent brute-force decoder oracle, 1–5 label symmetric groups, exhaustive length≤4 equality-orbit equivalence, all 3-label frame pair transports, drift, collapse and source/epoch invalid input.
 - `scripts/self_anchor_gauge_probe.py`: deterministic structured receipt; reproduce with `PYTHONPATH=. python scripts/self_anchor_gauge_probe.py`.
 - `research/2026-10-13/SELF_ANCHOR_GAUGE_RECEIPT.json`: exact data output from the probe; it is **not** an independent proof of the stated universal theorems.
-- On 2026-10-13, local Python 3.13.5, `python -m unittest discover -s tests -p 'test_self_anchor_gauge.py' -v` → **11 passed**, and probe JSON parsed. Full SUCC 2,132-test union suite, provenance gate and Lean checks were not runnable in this container without cloning the repository; CI must supply that independent validation.
+- On 2026-10-13, local Python 3.13.5, `python -m unittest discover -s tests -p 'test_self_anchor_gauge.py' -v` → **16 passed**, and probe JSON parsed. Full SUCC 2,132-test union suite, provenance gate and Lean checks were not runnable in this container without cloning the repository; CI must supply that independent validation.
 
 **Prior art/credit:** finite observation factorization is ordinary equivalence-relation/quotient mathematics and already in SUCC F1. Label switching, group actions, permutation-group bases, active automata learning (L*), Nerode distinguishability and counterexample-guided abstraction refinement are standard. In particular a base is a subset with trivial pointwise stabilizer (Moscatiello & Roney-Dougal, *Monatshefte für Mathematik*, 2022); active automata learning assumes member/equivalence queries with genuine oracle access. The combination is a precise **new-to-project synthesis**, not a claim of mathematically unprecedented group theory or an artificial intelligence breakthrough.
 
@@ -125,4 +137,4 @@ This is an **architecture**, not implemented open-ended concept invention. The n
 
 ### Verdict
 
-**PROVED (within declared finite source tables):** CL-01–CL-04. **OBSERVED locally:** targeted 11 Python tests and exact deterministic receipt. **REFUTED:** self-identity or ever more inference alone supplies an absolute dictionary; previous calibration remains sound across unconstrained source drift; calibrating a known noninjective sensor restores lost state information. **UNVERIFIED:** empirical TLICA mapping, unknown-world automatic source adequacy, physical calibration provenance, general language discovery, mathematical novelty beyond existing components.
+**PROVED (within declared finite source tables):** CL-01–CL-04. **OBSERVED locally:** targeted 16 Python tests and exact deterministic receipt. **REFUTED:** self-identity or ever more inference alone supplies an absolute dictionary; previous calibration remains sound across unconstrained source drift; calibrating a known noninjective sensor restores lost state information. **UNVERIFIED:** empirical TLICA mapping, unknown-world automatic source adequacy, physical calibration provenance, general language discovery, mathematical novelty beyond existing components.

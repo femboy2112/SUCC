@@ -3,7 +3,7 @@ import itertools
 import unittest
 
 from observational_succ.self_anchor_gauge import (
-    CandidateWorld, SourceGaugeError, decoder_audit, equality_signature,
+    CandidateWorld, SourceGaugeError, decoder_audit, diagnose_signature, equality_signature,
     minimal_calibrations, permutation_worlds, sensor_transport,
     transported_change,
 )
@@ -145,6 +145,51 @@ class TestSelfRelativeGaugeInvariants(unittest.TestCase):
         with self.assertRaises(SourceGaugeError):
             equality_signature([['not hashable']])
 
+
+
+class TestLanguageAdequacyDiagnostics(unittest.TestCase):
+    def test_conditional_identification_can_revert_under_model_expansion(self):
+        small = (permutation_worlds(2)[0],)
+        full = permutation_worlds(2)
+        a = diagnose_signature(small, (0,))
+        b = diagnose_signature(full, (0,))
+        self.assertEqual(a.status, "IDENTIFIED")
+        self.assertEqual(a.possible_targets, (0,))
+        self.assertEqual(b.status, "AMBIGUOUS")
+        self.assertEqual(set(b.possible_targets), {0, 1})
+        self.assertTrue(set(a.compatible_cases).issubset(set(b.compatible_cases)))
+
+    def test_unpredicted_observation_triggers_out_of_model_not_impossible_reality(self):
+        worlds = permutation_worlds(2)
+        observed = diagnose_signature(worlds, ("new sensory value",))
+        self.assertEqual(observed.status, "OUT_OF_MODEL")
+        self.assertEqual(observed.compatible_cases, ())
+        self.assertEqual(observed.possible_targets, ())
+
+    def test_observation_plus_known_reference_changes_diagnostic(self):
+        worlds = permutation_worlds(2)
+        self.assertEqual(diagnose_signature(worlds, (0,)).status, "AMBIGUOUS")
+        self.assertEqual(diagnose_signature(worlds, (0, 0), (0,)).status, "IDENTIFIED")
+        self.assertEqual(diagnose_signature(worlds, (0, 1), (0,)).status, "IDENTIFIED")
+        self.assertEqual(diagnose_signature(worlds, (0, 9), (0,)).status, "OUT_OF_MODEL")
+
+    def test_model_expansion_monotonically_enlarges_surviving_source_cases(self):
+        all_worlds = permutation_worlds(3)
+        for cut in range(1, len(all_worlds)):
+            for anchors in ((), (0,), (0, 1)):
+                for report in range(3):
+                    for refs in itertools.product(range(3), repeat=len(anchors)):
+                        sig = (report, *refs)
+                        before = diagnose_signature(all_worlds[:cut], sig, anchors)
+                        after = diagnose_signature(all_worlds, sig, anchors)
+                        self.assertTrue(set(before.compatible_cases).issubset(set(after.compatible_cases)))
+                        self.assertTrue(set(before.possible_targets).issubset(set(after.possible_targets)))
+
+    def test_signature_shape_guard(self):
+        with self.assertRaises(SourceGaugeError):
+            diagnose_signature(permutation_worlds(2), (0, 1), ())
+        with self.assertRaises(SourceGaugeError):
+            diagnose_signature(permutation_worlds(2), (0,), (0,))
 
 if __name__ == '__main__':
     unittest.main()
