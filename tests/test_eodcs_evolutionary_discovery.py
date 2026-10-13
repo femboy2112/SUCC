@@ -90,6 +90,10 @@ class TestGeneticFunctorCEGIS(unittest.TestCase):
         self.assertEqual(sum(len(fiber) for fiber in r["source_partition"]), 8)
         self.assertFalse(r["physical_source_authenticated"])
         self.assertFalse(r["grammar_was_open_ended"])
+        self.assertEqual(r["unqueried_training_version_space"], 4)
+        self.assertFalse(r["training_source_certified"])
+        self.assertTrue(r["withheld_true_source_within_prediction_sets"])
+        self.assertEqual(r["sealed_holdout_prediction_sets"]["x7"], ["hot", "plasma"])
 
     def test_mutation_rejects_wrong_budget(self):
         with self.assertRaises(GeneticsError):
