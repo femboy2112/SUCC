@@ -72,5 +72,7 @@ jobs:
           python scripts/eodcs_relational_probe.py > "$RUNNER_TEMP/eodcs-relational.json"
           diff -u research/2026-10-13/EODCS_RELATIONAL_MODAL_RECEIPT.json "$RUNNER_TEMP/eodcs-relational.json"
 
-      - name: Execute Voyager source-completion and memory-debt receipt
-        run: python scripts/voyager_observer_probe.py
+      - name: Verify frozen exact Voyager source-completion and memory-debt receipt
+        run: |
+          python scripts/voyager_observer_probe.py > "$RUNNER_TEMP/voyager-observer.json"
+          diff -u research/2026-10-13/VOYAGER_OBSERVATIONAL_COMPLETION_RECEIPT.json "$RUNNER_TEMP/voyager-observer.json"
