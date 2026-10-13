@@ -1147,18 +1147,19 @@
       "worktree": "/home/leah/succ_lab/swm-f48",
       "branch": "research/swm-f48-2026-10-13",
       "owner": "/root/f48",
-      "state": "RUNNING PHASE2",
+      "state": "AWAITING FINAL REVIEW",
       "started_utc": "2026-10-13T10:07:07.921030+00:00",
       "finished_utc": null,
       "status": "UNVERIFIED",
       "witness_path": null,
-      "proof_state": "INCIDENCE SHEAF/DISCRETE FIBRATION PAPER ACCEPTED BY A03; QUANTUM/POLICY/PROBABILITY EXTENSIONS PENDING",
+      "proof_state": "INITIAL PAPER/INTERFACE KERNEL ACCEPTED; PHASE2 A03 REVIEW RUNNING",
       "commit": "6e751c0d996de3d27a91b09f44dc2d534db09c73",
       "integration": "INITIAL PHASE ACCEPTED; WHOLE-SWARM PHASE PENDING",
       "initial_commit": "6e751c0d996de3d27a91b09f44dc2d534db09c73",
       "dossier_path": "research/2026-10-13/F48/F48_LAWFUL_HISTORY_FIBRATION.md",
       "execution_phase": "INITIAL INDEPENDENT CHECKPOINT COMPLETE; FULL-SWARM VALIDATION NOT YET DONE",
-      "phase2_started_utc": "2026-10-13T11:36:38.718984+00:00"
+      "phase2_started_utc": "2026-10-13T11:36:38.718984+00:00",
+      "phase2_commit": "224d049964b02fc42ad4fcbaa078944ed91da0a7"
     }
   ],
   "syntheses": [
@@ -1348,14 +1349,16 @@
       "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x11",
       "owner": "/root/e33",
-      "state": "RUNNING",
-      "status": "UNVERIFIED",
-      "integration": "PENDING",
-      "commit": null,
-      "proof_state": "NOT RUN",
+      "state": "COMPLETED",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "integration": "ACCEPTED",
+      "commit": "30d630504ee429bfcba8be83f921eb57a2b8eb36",
+      "proof_state": "PAPER; FRESH B11 NON-DERIVER REVIEW ACCEPTED; CP-BRANCH TERM REPAIRED; PROMISED N BOUND REVIEWED",
       "started_utc": "2026-10-13T11:36:38.718984+00:00",
       "branch": "research/swm-x11-2026-10-13",
-      "independence": "Genuine new second-generation mission on reused unrelated investigator; no new agent counted"
+      "independence": "Genuine new second-generation mission on reused unrelated investigator; no new agent counted",
+      "finished_utc": "2026-10-13T11:54:13.976347+00:00",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X11.md"
     },
     {
       "id": "X12",
@@ -1364,14 +1367,16 @@
       "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x12",
       "owner": "/root/c18",
-      "state": "RUNNING",
-      "status": "UNVERIFIED",
-      "integration": "PENDING",
-      "commit": null,
-      "proof_state": "NOT RUN",
+      "state": "COMPLETED",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "integration": "ACCEPTED",
+      "commit": "71b222fae2a84723cc900b47614943a25f6c966c",
+      "proof_state": "PAPER; PRINCIPAL NON-DERIVER CRUCIBLE ACCEPTED",
       "started_utc": "2026-10-13T11:36:38.718984+00:00",
       "branch": "research/swm-x12-2026-10-13",
-      "independence": "Genuine new second-generation mission on reused unrelated investigator; no new agent counted"
+      "independence": "Genuine new second-generation mission on reused unrelated investigator; no new agent counted",
+      "finished_utc": "2026-10-13T11:54:13.976347+00:00",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X12.md"
     }
   ],
   "reviews": [
@@ -1470,6 +1475,29 @@
       "path": "research/2026-10-13/SWARM_ATLAS/reviews/X08_X09_X10_PRINCIPAL_REVIEW.md",
       "verdict": "SCOPED BRIDGES ACCEPTED",
       "independence": "Root non-deriver; hypothesis reminders and root-supplied X10 reducing counterexample disclosed"
+    },
+    {
+      "assignment": "X11",
+      "reviewer": "/root/b11",
+      "state": "COMPLETED",
+      "commit": "fb284c209e38436f8ebeef194cabb65cafb465ce",
+      "path": "research/2026-10-13/SWARM_ATLAS/reviews/X11_B11_REVIEW.md",
+      "verdict": "ACCEPT WITH CP-BRANCH TERMINOLOGY REPAIR; PRINCIPAL CANDIDATE ACCEPTED",
+      "independence": "Dossier-only proof before probe; author code/receipt unread; same provider/source lineage; B11 one bridge antecedent"
+    },
+    {
+      "assignment": "X12",
+      "reviewer": "/root",
+      "state": "COMPLETED",
+      "path": "research/2026-10-13/SWARM_ATLAS/reviews/X12_PRINCIPAL_REVIEW.md",
+      "verdict": "SCOPED FEASIBLE-COMPLEX THEOREMS ACCEPTED"
+    },
+    {
+      "assignment": "F48 phase2",
+      "reviewer": "/root/a03",
+      "state": "RUNNING",
+      "worktree": "/home/leah/succ_lab/swm-a03",
+      "independence": "Reviewer did not derive phase2; author proof/matrix read before probe"
     }
   ],
   "native_agents_genuinely_spawned_so_far": [

@@ -107,7 +107,7 @@
       "id": "B11",
       "branch": "research/swm-b11-2026-10-13",
       "original_commit": "f57d09eb456e49a1ae10f8a614bc2b8cc15993d0",
-      "branch_head": "f57d09eb456e49a1ae10f8a614bc2b8cc15993d0",
+      "branch_head": "fb284c209e38436f8ebeef194cabb65cafb465ce",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "dossier_path": "research/2026-10-13/SWARM_ATLAS/B11.md",
       "integration_dossier_commit": "45ccba10c160828cc79abf4e781cb5fdd7cf7b29",
@@ -572,6 +572,26 @@
       "dossier_path": "research/2026-10-13/SWARM_ATLAS/X10/DOSSIER.md",
       "integration_dossier_commit": "ebfe980829cf6af4d55b95cb21a0cde929984e42",
       "integration": "ACCEPTED"
+    },
+    {
+      "id": "X11",
+      "branch": "research/swm-x11-2026-10-13",
+      "original_commit": "30d630504ee429bfcba8be83f921eb57a2b8eb36",
+      "branch_head": "30d630504ee429bfcba8be83f921eb57a2b8eb36",
+      "parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X11.md",
+      "integration_dossier_commit": "4d63cb485e0b67eb02d812a8aa83c3999b8d9ae3",
+      "integration": "ACCEPTED"
+    },
+    {
+      "id": "X12",
+      "branch": "research/swm-x12-2026-10-13",
+      "original_commit": "71b222fae2a84723cc900b47614943a25f6c966c",
+      "branch_head": "71b222fae2a84723cc900b47614943a25f6c966c",
+      "parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X12.md",
+      "integration_dossier_commit": "198dcf5cd4d25c460efc6032118f1f620e3922f8",
+      "integration": "ACCEPTED"
     }
   ],
   "reviews": [
@@ -733,7 +753,7 @@
       "id": "B11",
       "branch": "research/swm-b11-2026-10-13",
       "original_commit": "f57d09eb456e49a1ae10f8a614bc2b8cc15993d0",
-      "branch_head": "f57d09eb456e49a1ae10f8a614bc2b8cc15993d0",
+      "branch_head": "fb284c209e38436f8ebeef194cabb65cafb465ce",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "dossier_path": "research/2026-10-13/SWARM_ATLAS/B11.md",
       "integration_dossier_commit": "45ccba10c160828cc79abf4e781cb5fdd7cf7b29",
@@ -1103,7 +1123,7 @@
       "id": "F48",
       "branch": "research/swm-f48-2026-10-13",
       "original_commit": "6e751c0d996de3d27a91b09f44dc2d534db09c73",
-      "branch_head": "6e751c0d996de3d27a91b09f44dc2d534db09c73",
+      "branch_head": "224d049964b02fc42ad4fcbaa078944ed91da0a7",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "dossier_path": "research/2026-10-13/F48/F48_LAWFUL_HISTORY_FIBRATION.md",
       "integration_dossier_commit": "01ae5bf9c188e0f03addc7c92a2e54336c932a70",
@@ -1208,13 +1228,33 @@
       "dossier_path": "research/2026-10-13/SWARM_ATLAS/X10/DOSSIER.md",
       "integration_dossier_commit": "ebfe980829cf6af4d55b95cb21a0cde929984e42",
       "integration": "ACCEPTED"
+    },
+    {
+      "id": "X11",
+      "branch": "research/swm-x11-2026-10-13",
+      "original_commit": "30d630504ee429bfcba8be83f921eb57a2b8eb36",
+      "branch_head": "30d630504ee429bfcba8be83f921eb57a2b8eb36",
+      "parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X11.md",
+      "integration_dossier_commit": "4d63cb485e0b67eb02d812a8aa83c3999b8d9ae3",
+      "integration": "ACCEPTED"
+    },
+    {
+      "id": "X12",
+      "branch": "research/swm-x12-2026-10-13",
+      "original_commit": "71b222fae2a84723cc900b47614943a25f6c966c",
+      "branch_head": "71b222fae2a84723cc900b47614943a25f6c966c",
+      "parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X12.md",
+      "integration_dossier_commit": "198dcf5cd4d25c460efc6032118f1f620e3922f8",
+      "integration": "ACCEPTED"
     }
   ],
-  "checkpoint_parent": "ebfe980829cf6af4d55b95cb21a0cde929984e42",
+  "checkpoint_parent": "c737d0f7dfed1a78f85ca3a9356a16341aedbcbe",
   "last_verified_push": "830e99ffc89bc9ee5ae97cbbc433206be99aa96c",
   "current_counts": {
     "native_children": 59,
     "first_accepted": 47,
-    "synth_accepted": 10
+    "synth_accepted": 12
   }
 }

@@ -236,6 +236,9 @@ None establishes scholarly originality for this local adapter.
 
 ## 7. Crucible and mechanisms that must remain distinct
 
+**Type clarifications from independent A03 review:** T_n and E_n aggregate all policy-consistent public outcomes at depth n. Surjectivity of their depth restrictions does not imply surjectivity for a fixed public-prefix arrow H(ha,o)→H(h): two prepared sources with deterministic first outcomes0 and1 give an onto aggregate restriction, while conditioning on outcome0 removes source1. The topology in T1 is the declared finite-prefix discrete cylinder topology, not an arbitrary preexisting carrier topology. Kraus representations in T2 are finite indexed families (K_i) indexed by distinguishable mathematical labels; the braces there denote those families and retain multiplicity, rather than literal sets collapsing duplicate operators. Sections5–6 remain byte-identical to the independently reviewed proof snapshot.
+
+
 The independent probe checks 530 directed graphs on at most three states.
 Iterated dead-state deletion is compared to independent bounded walk/cycle
 enumeration; 4,164 closed-subsystem tests and 16,656 bonding checks pass.

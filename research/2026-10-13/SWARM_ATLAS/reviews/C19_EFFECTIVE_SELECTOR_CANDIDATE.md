@@ -1,6 +1,6 @@
 # Candidate: fixed-history source choice can remain uncomputable
 
-STATUS: PRINCIPAL DERIVATION, PENDING NON-DERIVER CRUCIBLE. Not integrated as an accepted theorem. Classical computability/closed-choice mechanism, academic novelty unverified.
+STATUS: CLASSICAL / PROVED LOCAL, PAPER. Fresh B11 non-deriver crucible accepted the diagonal, stabilization and separately represented oracle closed-choice mechanisms; see X11_B11_REVIEW.md at fb284c209e38436f8ebeef194cabb65cafb465ce. Original pending checkpoint remains in Git. Academic novelty unverified.
 
 Fix the original source class C={P0,P1} on a qubit. Given a program index e, simulate phi_e(e) for n steps. Its common source-independent rational CP branch is identity until a0/1 output is detected, then project onto P0 (output0) or P1 (output1), and retain that projection thereafter; other outputs may leave identities. Every finite prefix supports some source in C, and one pure source supports every prefix. Complete each projector by its complement if a full instrument is wanted. This is a computable externally scheduled word, not a finite autonomous apparatus.
 
