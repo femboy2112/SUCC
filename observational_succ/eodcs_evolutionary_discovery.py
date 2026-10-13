@@ -188,9 +188,24 @@ def blind_source_demo(seed: int = 0) -> dict:
         chain(*a), chain(*b),
         tuple(("state" + str(i), x, b[source_values[i]]) for i, x in enumerate(a)),
         True)
+    # Genuine unqueried source states: train on five, freeze the entire
+    # version space BEFORE revealing the final three source rows.
+    from .finite_poset_synthesis import synthesize_with_obstructions
+    partial = PairedPosetSource(table.source_id, table.epoch, table.basis,
+                                table.domain, table.codomain,
+                                table.observations[:5], False)
+    version_space = synthesize_with_obstructions(partial)
+    unrevealed = table.observations[5:]
+    predictions = {x: sorted({f(x) for f in version_space.candidates})
+                   for _, x, _ in unrevealed}
+    holdout_passes = all(y in predictions[x] for _, x, y in unrevealed)
     r = genetic_functor_search(table, seed=seed)
     exact = r.exact_oracle_model
     return {
+        "unqueried_training_version_space": len(version_space.candidates),
+        "training_source_certified": version_space.source_class_certified,
+        "sealed_holdout_prediction_sets": predictions,
+        "withheld_true_source_within_prediction_sets": holdout_passes,
         "grammar_growth": r.grammar_expansion,
         "source_probes": len(r.source_probes),
         "genetic_success": r.genetically_discovered,
