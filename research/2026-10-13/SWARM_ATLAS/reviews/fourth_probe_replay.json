@@ -1,0 +1,46 @@
+[
+  {
+    "id": "D27",
+    "command": [
+      "python",
+      "-B",
+      "research/2026-10-13/SWARM_ATLAS/D27_probe.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "6545648572868cd2371c5e8228a1db3df67c270b1d071f22ca1653c437b6ba27",
+    "stderr": ""
+  },
+  {
+    "id": "F42",
+    "command": [
+      "python",
+      "-B",
+      "research/2026-10-13/SWARM_ATLAS/F42_probe.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "5725d544aee8ffbeb33e5ba434d117112879ad83a4ce03acf8949b04f8241822",
+    "stderr": ""
+  },
+  {
+    "id": "B16",
+    "command": [
+      "python",
+      "-B",
+      "research/2026-10-13/SWARM_ATLAS/B16_probe.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "34325fc8b7bea69177a0d6184cc1b63315d6423fe939b3503d9ff78932e3c4d5",
+    "stderr": ""
+  },
+  {
+    "id": "C20",
+    "command": [
+      "python",
+      "-B",
+      "research/2026-10-13/SWARM_ATLAS/C20_probe.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "0669d5c4532255cab3183a8d118d2d6461f7544dc670fbe319f4babc3ebf28da",
+    "stderr": ""
+  }
+]
