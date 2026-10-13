@@ -1,0 +1,5 @@
+# C24 independent principal crucible
+
+Reviewed authorf51ecf200d8a61a96e75bd7b25a2d640752aac66. SURVIVES, classical finite information/storage result. Independently expand H(S,R|Z) and I(X;S,R|Z), using deterministic R=F(S,Z); conditional mutual information is between0 and H(S|R,Z). Fiber-uniform relative entropy gives the log-cardinality bound. Any reconstruction auxiliary needs distinct labels within each positive-support fiber; local indices with globally reused labels attain max fiber cardinality M. Reconstruction/determinism give H(G|R,Z)=H(S|R,Z). Stochastic fresh randomness breaks H(S)-H(R) identity, not data processing. Physical heat/work statements are separately cited under thermal, independence, Hamiltonian, memory and cyclic reset assumptions; the mathematical theorem does not imply joules. Full-rank finite reservoir cannot exactly lower register rank under a joint unitary: total rank rB is preserved and is <=r_final B.
+
+Reviewer is not the author; source mathematical assumptions remain stipulated. Exact probe replay is recorded separately. Paper proofs remain distinct from kernel verification.

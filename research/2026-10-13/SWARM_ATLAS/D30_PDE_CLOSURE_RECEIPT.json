@@ -1,0 +1,488 @@
+{
+  "arithmetic": "Gaussian rationals",
+  "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "controls": {
+    "compressible_source_rejected": true,
+    "fresh_frequency_passed": true,
+    "linear_maxwell_commutation_passed": true,
+    "noncommuting_filter_killed": true,
+    "nonreal_source_rejected": true,
+    "omitted_cross_terms_killed": true,
+    "omitted_leray_killed": true,
+    "swapped_derivatives_killed": true,
+    "zero_mode_pole_guard_passed": true
+  },
+  "cross_norm_squared": "1",
+  "defect_norm_squared": "9/8",
+  "domain": "T^2=(R/2piZ)^2",
+  "dossier": "D30",
+  "factorial_cells": {
+    "00": [
+      [],
+      []
+    ],
+    "01": [
+      [],
+      []
+    ],
+    "10": [
+      [],
+      [
+        {
+          "imag": "0",
+          "mode": [
+            -1,
+            0
+          ],
+          "real": "-1/2"
+        },
+        {
+          "imag": "0",
+          "mode": [
+            1,
+            0
+          ],
+          "real": "-1/2"
+        }
+      ]
+    ],
+    "11": [
+      [
+        {
+          "imag": "-1/2",
+          "mode": [
+            -1,
+            1
+          ],
+          "real": "0"
+        },
+        {
+          "imag": "1/2",
+          "mode": [
+            1,
+            -1
+          ],
+          "real": "0"
+        }
+      ],
+      [
+        {
+          "imag": "0",
+          "mode": [
+            -1,
+            0
+          ],
+          "real": "-1/2"
+        },
+        {
+          "imag": "-1/2",
+          "mode": [
+            -1,
+            1
+          ],
+          "real": "0"
+        },
+        {
+          "imag": "1/2",
+          "mode": [
+            1,
+            -1
+          ],
+          "real": "0"
+        },
+        {
+          "imag": "0",
+          "mode": [
+            1,
+            0
+          ],
+          "real": "-1/2"
+        }
+      ]
+    ]
+  },
+  "factorial_cross_acceleration": [
+    [
+      {
+        "imag": "-1/2",
+        "mode": [
+          -1,
+          1
+        ],
+        "real": "0"
+      },
+      {
+        "imag": "1/2",
+        "mode": [
+          1,
+          -1
+        ],
+        "real": "0"
+      }
+    ],
+    [
+      {
+        "imag": "-1/2",
+        "mode": [
+          -1,
+          1
+        ],
+        "real": "0"
+      },
+      {
+        "imag": "1/2",
+        "mode": [
+          1,
+          -1
+        ],
+        "real": "0"
+      }
+    ]
+  ],
+  "factorial_sources": {
+    "hidden_h": [
+      [
+        {
+          "imag": "0",
+          "mode": [
+            -2,
+            1
+          ],
+          "real": "1/2"
+        },
+        {
+          "imag": "0",
+          "mode": [
+            2,
+            -1
+          ],
+          "real": "1/2"
+        }
+      ],
+      [
+        {
+          "imag": "0",
+          "mode": [
+            -2,
+            1
+          ],
+          "real": "1"
+        },
+        {
+          "imag": "0",
+          "mode": [
+            2,
+            -1
+          ],
+          "real": "1"
+        }
+      ]
+    ],
+    "resolved_v": [
+      [],
+      [
+        {
+          "imag": "0",
+          "mode": [
+            -1,
+            0
+          ],
+          "real": "1/2"
+        },
+        {
+          "imag": "0",
+          "mode": [
+            1,
+            0
+          ],
+          "real": "1/2"
+        }
+      ]
+    ]
+  },
+  "force_norm_squared": "1/8",
+  "hidden_source": [
+    [
+      {
+        "imag": "0",
+        "mode": [
+          -2,
+          1
+        ],
+        "real": "1/2"
+      },
+      {
+        "imag": "0",
+        "mode": [
+          2,
+          -1
+        ],
+        "real": "1/2"
+      }
+    ],
+    [
+      {
+        "imag": "0",
+        "mode": [
+          -2,
+          0
+        ],
+        "real": "1/2"
+      },
+      {
+        "imag": "0",
+        "mode": [
+          -2,
+          1
+        ],
+        "real": "1"
+      },
+      {
+        "imag": "0",
+        "mode": [
+          2,
+          -1
+        ],
+        "real": "1"
+      },
+      {
+        "imag": "0",
+        "mode": [
+          2,
+          0
+        ],
+        "real": "1/2"
+      }
+    ]
+  ],
+  "input_sha256": {
+    "D30_PDE_CLOSURE_PROBE.py": "657cabe1da7c54951b923cdf1a1a4312bbb64f235433bb21cb71a873fa15c0ac",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+    "research/2026-10-12/DYNAMIC_FOURIER_VIRTUAL_ZERO_FRONTIER.md": "b31c8eff1faca63f092d9bd33e16544ca17806fe91132ad04691344f92fcb3f3",
+    "research/2026-10-12/FIELD_RELATIVE_CLOSURE_AND_OBSTRUCTION_CALCULUS.md": "ef56dd5175d1f01c85ad4733528ad52aad0afe94d903ff069db8965b0b69e252",
+    "research/2026-10-12/HISTORICAL_GALILEO_LORENTZ_SUCC_TRANSITION.md": "a67a4731b1ff5b18d8779111f026f74606b0e60703041f56fa2076cd78fda711"
+  },
+  "mean_stress_control": [
+    [
+      [],
+      []
+    ],
+    [
+      [],
+      [
+        {
+          "imag": "0",
+          "mode": [
+            0,
+            0
+          ],
+          "real": "1/2"
+        }
+      ]
+    ]
+  ],
+  "mean_stress_divergence": [
+    [],
+    []
+  ],
+  "noncommuting_filter_derivative_defect": [
+    {
+      "imag": "1/2",
+      "mode": [
+        -2,
+        0
+      ],
+      "real": "0"
+    },
+    {
+      "imag": "1/4",
+      "mode": [
+        -1,
+        0
+      ],
+      "real": "0"
+    },
+    {
+      "imag": "-1/4",
+      "mode": [
+        1,
+        0
+      ],
+      "real": "0"
+    },
+    {
+      "imag": "-1/2",
+      "mode": [
+        2,
+        0
+      ],
+      "real": "0"
+    }
+  ],
+  "noncommuting_filter_laplacian_defect": [
+    {
+      "imag": "0",
+      "mode": [
+        -2,
+        0
+      ],
+      "real": "3/4"
+    },
+    {
+      "imag": "0",
+      "mode": [
+        2,
+        0
+      ],
+      "real": "3/4"
+    }
+  ],
+  "norm": "normalized L2, Parseval sum of coefficient moduli squared",
+  "origin_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "origin_foundations_blob": "04408ed96bd369b5063868eb5ad5664824d18043",
+  "projected_leray_stress_force": [
+    [
+      {
+        "imag": "-1/4",
+        "mode": [
+          0,
+          -1
+        ],
+        "real": "0"
+      },
+      {
+        "imag": "1/4",
+        "mode": [
+          0,
+          1
+        ],
+        "real": "0"
+      }
+    ],
+    []
+  ],
+  "projected_source": [
+    [],
+    []
+  ],
+  "projected_stress": [
+    [
+      [
+        {
+          "imag": "0",
+          "mode": [
+            0,
+            0
+          ],
+          "real": "1/2"
+        }
+      ],
+      [
+        {
+          "imag": "0",
+          "mode": [
+            0,
+            -1
+          ],
+          "real": "1/4"
+        },
+        {
+          "imag": "0",
+          "mode": [
+            0,
+            0
+          ],
+          "real": "1"
+        },
+        {
+          "imag": "0",
+          "mode": [
+            0,
+            1
+          ],
+          "real": "1/4"
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "imag": "0",
+          "mode": [
+            0,
+            -1
+          ],
+          "real": "1/4"
+        },
+        {
+          "imag": "0",
+          "mode": [
+            0,
+            0
+          ],
+          "real": "1"
+        },
+        {
+          "imag": "0",
+          "mode": [
+            0,
+            1
+          ],
+          "real": "1/4"
+        }
+      ],
+      [
+        {
+          "imag": "0",
+          "mode": [
+            0,
+            -1
+          ],
+          "real": "1"
+        },
+        {
+          "imag": "0",
+          "mode": [
+            0,
+            0
+          ],
+          "real": "5/2"
+        },
+        {
+          "imag": "0",
+          "mode": [
+            0,
+            1
+          ],
+          "real": "1"
+        }
+      ]
+    ]
+  ],
+  "projection": "componentwise |k|_infinity <= 1; Leray(0)=I",
+  "python": "3.12.3",
+  "resolved_acceleration": [
+    [
+      {
+        "imag": "1/4",
+        "mode": [
+          0,
+          -1
+        ],
+        "real": "0"
+      },
+      {
+        "imag": "-1/4",
+        "mode": [
+          0,
+          1
+        ],
+        "real": "0"
+      }
+    ],
+    []
+  ],
+  "scope": "Instantaneous identities, not time integration, formal proof or physical attestation",
+  "status": "TESTED MODEL"
+}

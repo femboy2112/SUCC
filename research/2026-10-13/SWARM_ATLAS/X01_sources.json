@@ -1,0 +1,52 @@
+{
+  "assignment": "SWM-X01",
+  "source_parent": "316a93b264f77ee425b6a7e52be26d90bd4ccf20",
+  "import_origin": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "dossiers": [
+    {
+      "path": "research/2026-10-13/SWARM_ATLAS/A01.md",
+      "latest_revision": "217fe20d8885f67b65e25b550d48022dc5ae1f86",
+      "sha256": "d600266ab9e41f6a500415f895abc68d6259cdc74704de5b5cdaab63418d7423"
+    },
+    {
+      "path": "research/2026-10-13/SWARM_ATLAS/B09.md",
+      "latest_revision": "316a93b264f77ee425b6a7e52be26d90bd4ccf20",
+      "sha256": "079078b982dc3fd0d2b3864c395556d3ba8cd062b02da7b1280943d634cf9586"
+    },
+    {
+      "path": "research/2026-10-13/SWARM_ATLAS/B10.md",
+      "latest_revision": "df3286e4fc34b8088675288672accbd615f7f904",
+      "sha256": "f8b70b8ce781464fa83995a64e294f3c6756518225560f8f75a1d124fa0f28fc",
+      "external_read_worktree": "/home/leah/succ_lab/many-worlds-atlas"
+    }
+  ],
+  "primary_prior_art_live_read": [
+    {
+      "title": "Lawvere: Adjointness in Foundations",
+      "url": "https://tac.mta.ca/tac/reprints/articles/16/tr16.pdf",
+      "scope": "Predicates, sets over a set, and existential transport; reprint pp. 13-14",
+      "read_date": "2026-10-13"
+    },
+    {
+      "title": "Stacks Project Lemma 4.21.7, tag 086J",
+      "url": "https://stacks.math.columbia.edu/tag/086J",
+      "scope": "Nonempty cofiltered limits of finite nonempty sets",
+      "read_date": "2026-10-13"
+    },
+    {
+      "title": "Stacks Project Section 110.2, tag 0AKK",
+      "url": "https://stacks.math.columbia.edu/tag/0AKK",
+      "scope": "Waterhouse counterexample: surjective set-system transitions with empty limit",
+      "read_date": "2026-10-13"
+    },
+    {
+      "title": "Rockafellar-Wets: Variational Analysis, Theorem 1.9",
+      "url": "https://sites.math.washington.edu/~rtr/papers/rtr169-VarAnalysis-RockWets.pdf",
+      "scope": "Compact-sublevel attainment in Euclidean space; source is not attributed the general Hausdorff synthesis theorem",
+      "read_date": "2026-10-13"
+    }
+  ],
+  "independence_boundary": "Single second-generation reasoner produced dossier and fresh helper-independent probe. Principal review is separate. A01/B09/B10 share repository lineage and are not independent empirical source families.",
+  "infinite_claim_basis": "Direct derivations in X01.md, not the finite probe",
+  "physical_history_scope": "Fixed-base abstract family diagram; physical source attestation and operational pullback existence are not established"
+}

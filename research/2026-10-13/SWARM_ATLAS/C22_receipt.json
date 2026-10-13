@@ -1,0 +1,94 @@
+{
+  "academic_novelty_claimed": false,
+  "alternative_schedules_are_counterfactual_model_evaluations": true,
+  "command": "PYTHONDONTWRITEBYTECODE=1 python research/2026-10-13/SWARM_ATLAS/C22_probe.py",
+  "controls": {
+    "correlated_joint": {
+      "(0, 0)": "1/2",
+      "(0, 1)": "0",
+      "(1, 0)": "0",
+      "(1, 1)": "1/2"
+    },
+    "destructive_equal_endpoints_rejected": [
+      "labelled-outcome",
+      1,
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "deterministic_square_all_four_sources": true,
+    "lost_original_XOR_pair": [
+      0,
+      1
+    ],
+    "menu_rejected": [
+      "enabledness",
+      0,
+      "A"
+    ],
+    "original_target_factor_and_semantic_square_AB_BA": true,
+    "rational_report_kernel_square": true,
+    "reversible_order_rejected": [
+      "endpoint",
+      1
+    ],
+    "tensor_interchange_and_native_vertical_descent": true,
+    "three_linear_extensions_all_four_sources": true,
+    "unconditioned_commutation_insufficient": true
+  },
+  "full_suite_run": false,
+  "native_sha256": {
+    "causal_nerode_succ": "0d41180c9a041400e1c781d3578d3f7652242719c5f6e46cdf4028ec779d7ddd",
+    "noncommuting_proof_transport": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a"
+  },
+  "physical_source_authenticated": false,
+  "python": "3.12.3",
+  "schema": "C22-exact-v1",
+  "selected_simulator_run": {
+    "basis_id": "binary-pair-v1",
+    "declared_process_assignment": {
+      "a1": "P",
+      "a2": "P",
+      "b1": "Q"
+    },
+    "event_ids_in_record_order": [
+      "a1",
+      "a2",
+      "b1"
+    ],
+    "law_version": "C22-local-flips-v1",
+    "native_public_signature": [
+      [
+        "A",
+        1,
+        1
+      ],
+      [
+        "A",
+        0,
+        2
+      ],
+      [
+        "B",
+        0,
+        3
+      ]
+    ],
+    "poset_is_stipulated_fixture_not_inferred_from_native_epochs": true,
+    "required_poset_edges": [
+      [
+        "a1",
+        "a2"
+      ]
+    ],
+    "source_id": "C22-declared-pair"
+  },
+  "simultaneous_measurement_claimed": false,
+  "source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "status": "TESTED MODEL"
+}

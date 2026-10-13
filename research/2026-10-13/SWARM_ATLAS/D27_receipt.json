@@ -1,0 +1,195 @@
+{
+  "academic_originality_claimed": false,
+  "baseline_commit": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "canonical_invariant_measure_selected": false,
+  "command": "python research/2026-10-13/SWARM_ATLAS/D27_probe.py",
+  "exact_arithmetic": "Fraction",
+  "exhaustive_three_state": {
+    "cases": 135,
+    "factor_cases": 99,
+    "mismatches": 0,
+    "partitions": 5,
+    "transitions": 27
+  },
+  "linear_nonalgebra": {
+    "T": [
+      2,
+      1,
+      0
+    ],
+    "U_v_equals_minus_v": true,
+    "square_in_V": false,
+    "v": [
+      "-1",
+      "0",
+      "1"
+    ],
+    "v_squared": [
+      "1",
+      "0",
+      "1"
+    ]
+  },
+  "lossy_nonfactor": {
+    "U_g": [
+      "0",
+      "1",
+      "1",
+      "0"
+    ],
+    "fiber_witness": [
+      0,
+      1
+    ],
+    "q": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "q_T_witness": [
+      0,
+      1
+    ]
+  },
+  "physical_source_authenticated": false,
+  "positive": {
+    "C": [
+      [
+        "1/4",
+        "0",
+        "3/4",
+        "0"
+      ],
+      [
+        "0",
+        "1/3",
+        "0",
+        "2/3"
+      ]
+    ],
+    "C_L_equals_L_S_C": true,
+    "J": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "L": [
+      [
+        "0",
+        "0",
+        "0",
+        "4"
+      ],
+      [
+        "1/2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2/3",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "3/4",
+        "0"
+      ]
+    ],
+    "L_S": [
+      [
+        "0",
+        "3/2"
+      ],
+      [
+        "2/3",
+        "0"
+      ]
+    ],
+    "L_one": [
+      "4",
+      "1/2",
+      "2/3",
+      "3/4"
+    ],
+    "PF_range_invariant": false,
+    "S": [
+      1,
+      0
+    ],
+    "T": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "U": [
+      [
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "U_J_equals_J_U_S": true,
+    "mass_push_square": true,
+    "measure_preserved": false,
+    "mu": [
+      "1/10",
+      "1/5",
+      "3/10",
+      "2/5"
+    ],
+    "mutated_S_rejected": true,
+    "nu": [
+      "2/5",
+      "3/5"
+    ],
+    "q": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "uniform_PF_range_invariant": true,
+    "uniform_measure_preserved": true
+  },
+  "probe_sha256": "3c7ca92bc50facb17e213604ac68944ec55a693677429d528273012ab583a3c6",
+  "python_version": "3.12.3",
+  "status": "TESTED MODEL; universal theorem has a separate written proof"
+}

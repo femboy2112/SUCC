@@ -1,0 +1,35 @@
+[
+  {
+    "argv": [
+      "research/2026-10-13/SWARM_ATLAS/E40/probe.py",
+      "--verify",
+      "research/2026-10-13/SWARM_ATLAS/E40/RECEIPT.json"
+    ],
+    "exit": 0,
+    "seconds": 0.77370677201543,
+    "stdout": "{\"receipt_verified\": true, \"source_parent\": \"5eb09e7cba36ec01b8f9d6834b78b5766fd93935\"}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "research/2026-10-13/SWARM_ATLAS/F46_PROBE.py",
+      "--verify",
+      "research/2026-10-13/SWARM_ATLAS/F46_RECEIPT.json"
+    ],
+    "exit": 0,
+    "seconds": 1.5686736280331388,
+    "stdout": "{\"action\": \"VERIFIED\", \"exhaustive\": {\"feature_partitions_checked\": 20598, \"source_report_target_tables\": 1554, \"tolerance_tables\": 6216, \"zero_error_factor_checks\": 1554}, \"max_rss_kib\": 24024, \"preserved_refuted_candidates\": 3, \"rational_cases\": 96, \"wall_seconds\": 1.458629}\n",
+    "stderr": ""
+  },
+  {
+    "argv": [
+      "research/2026-10-13/SWARM_ATLAS/F47_probe.py",
+      "--verify",
+      "research/2026-10-13/SWARM_ATLAS/F47_RECEIPT.json"
+    ],
+    "exit": 0,
+    "seconds": 0.751420778920874,
+    "stdout": "F47 exact receipt replay passed\n",
+    "stderr": ""
+  }
+]

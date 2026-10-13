@@ -1,0 +1,38 @@
+[
+  {
+    "run": {
+      "conclusion": "",
+      "databaseId": 38388807417,
+      "headBranch": "research/swm-f47-2026-10-13",
+      "headSha": "bbd730929cd32a5594aef8386ed0cea8163dd3c3",
+      "status": "in_progress",
+      "workflowName": "Observational SUCC validation"
+    },
+    "cancel_exit": 0,
+    "reason": "Child checkpoint redundant; integrated checks retained"
+  },
+  {
+    "run": {
+      "conclusion": "",
+      "databaseId": 38388804371,
+      "headBranch": "research/swm-f46-2026-10-13",
+      "headSha": "202ee73782c28e813610e9b1d52c5430548cdde2",
+      "status": "in_progress",
+      "workflowName": "Observational SUCC validation"
+    },
+    "cancel_exit": 0,
+    "reason": "Child checkpoint redundant; integrated checks retained"
+  },
+  {
+    "run": {
+      "conclusion": "",
+      "databaseId": 38388801912,
+      "headBranch": "research/swm-e40-2026-10-13",
+      "headSha": "4e44507e07803606c6f0561ba443c1b513722450",
+      "status": "in_progress",
+      "workflowName": "Observational SUCC validation"
+    },
+    "cancel_exit": 0,
+    "reason": "Child checkpoint redundant; integrated checks retained"
+  }
+]

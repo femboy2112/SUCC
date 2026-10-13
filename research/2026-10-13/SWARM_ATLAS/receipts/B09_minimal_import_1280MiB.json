@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+    "-j1",
+    "-M512",
+    "/home/leah/succ_lab/swm-b09/.swm-tools/B09_minimal_import.lean"
+  ],
+  "exit_code": -6,
+  "stdout": "",
+  "stderr": "libc++abi: terminating due to uncaught exception of type lean::memory_exception: excessive memory consumption detected at 'interpreter' (potential solution: increase memory consumption threshold)\n",
+  "elapsed_seconds": 2.7157,
+  "observed_process_tree_peak_rss_kib": 920372,
+  "minimum_system_available_memory_kib": 4030924,
+  "input": "import Mathlib.Topology.Constructions\n#check closure\n#check isOpen_pi_iff\n"
+}

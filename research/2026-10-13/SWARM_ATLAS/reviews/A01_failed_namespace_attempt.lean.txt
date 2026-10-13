@@ -1,0 +1,100 @@
+import Std
+
+namespace ObservationalSUCC.SWM_A01
+
+universe u v w z
+variable {W : Type u} {X : Type v} {Y : Type w} {Z : Type z}
+
+structure Square (W : Type u) (X : Type v) (Y : Type w) (Z : Type z) where
+  upper : W → X
+  left : W → Y
+  right : X → Z
+  lower : Y → Z
+  commutes : ∀ a, right (upper a) = lower (left a)
+
+variable (s : Square W X Y Z)
+
+def Covered : Prop :=
+  ∀ x y, s.right x = s.lower y → ∃ a, s.upper a = x ∧ s.left a = y
+
+def ExistentialBC : Prop :=
+  ∀ (P : X → Prop) y,
+    (∃ a, s.left a = y ∧ P (s.upper a)) ↔
+    (∃ x, s.right x = s.lower y ∧ P x)
+
+def UniversalBC : Prop :=
+  ∀ (P : X → Prop) y,
+    (∀ a, s.left a = y → P (s.upper a)) ↔
+    (∀ x, s.right x = s.lower y → P x)
+
+theorem existential_base_change_iff_covered : s.ExistentialBC ↔ s.Covered := by
+  constructor
+  · intro h x y hxy
+    obtain ⟨a, hay, hax⟩ := (h (fun t => t = x) y).mpr ⟨x, hxy, rfl⟩
+    exact ⟨a, hax, hay⟩
+  · intro h P y
+    constructor
+    · rintro ⟨a, hay, ha⟩
+      exact ⟨s.upper a, (s.commutes a).trans (congrArg s.lower hay), ha⟩
+    · rintro ⟨x, hxy, hx⟩
+      obtain ⟨a, hax, hay⟩ := h x y hxy
+      exact ⟨a, hay, hax ▸ hx⟩
+
+theorem universal_base_change_iff_covered : s.UniversalBC ↔ s.Covered := by
+  constructor
+  · intro h x y hxy
+    let P : X → Prop := fun t => ∃ a, s.upper a = t ∧ s.left a = y
+    have hall : ∀ a, s.left a = y → P (s.upper a) := by
+      intro a ha
+      exact ⟨a, rfl, ha⟩
+    exact (h P y).mp hall x hxy
+  · intro h P y
+    constructor
+    · intro hall x hxy
+      obtain ⟨a, hax, hay⟩ := h x y hxy
+      exact hax ▸ hall a hay
+    · intro hall a hay
+      exact hall (s.upper a) ((s.commutes a).trans (congrArg s.lower hay))
+
+-- Coverage is exactly surjectivity of the actual pullback comparison.
+def Pullback := {p : X × Y // s.right p.1 = s.lower p.2}
+def comparison (a : W) : s.Pullback := ⟨(s.upper a, s.left a), s.commutes a⟩
+
+theorem comparison_surjective_iff_covered :
+    (∀ p : s.Pullback, ∃ a, s.comparison a = p) ↔ s.Covered := by
+  constructor
+  · intro h x y hxy
+    obtain ⟨a, ha⟩ := h ⟨(x,y), hxy⟩
+    exact ⟨a, congrArg (fun p : s.Pullback => p.val.1) ha,
+      congrArg (fun p : s.Pullback => p.val.2) ha⟩
+  · intro h p
+    obtain ⟨a, hax, hay⟩ := h p.val.1 p.val.2 p.property
+    refine ⟨a, Subtype.ext ?_⟩
+    exact Prod.ext hax hay
+
+variable {S : Type u} {T : Type v} {V : Type w} (U : S → T) (target : S → V)
+def Image := {t : T // ∃ a, U a = t}
+def imagePoint (a : S) : Image U := ⟨U a, a, rfl⟩
+
+theorem original_target_descends_iff_fiber_constant :
+    (∃ decoder : Image U → V, ∀ a, decoder (imagePoint U a) = target a) ↔
+    (∀ a b, U a = U b → target a = target b) := by
+  constructor
+  · rintro ⟨decoder, h⟩ a b hab
+    have hi : imagePoint U a = imagePoint U b := Subtype.ext hab
+    calc
+      target a = decoder (imagePoint U a) := (h a).symm
+      _ = decoder (imagePoint U b) := congrArg decoder hi
+      _ = target b := h b
+  · intro h
+    classical
+    let decoder : Image U → V := fun t => target (Classical.choose t.property)
+    refine ⟨decoder, ?_⟩
+    intro a
+    exact h _ a (Classical.choose_spec (imagePoint U a).property)
+
+#print axioms existential_base_change_iff_covered
+#print axioms universal_base_change_iff_covered
+#print axioms comparison_surjective_iff_covered
+#print axioms original_target_descends_iff_fiber_constant
+end ObservationalSUCC.SWM_A01

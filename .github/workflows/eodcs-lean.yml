@@ -1,0 +1,53 @@
+name: EODCS isolated Lean4 proof-kernel gate
+
+on:
+  push:
+    branches:
+      - 'research/eodcs-*'
+      - 'research/voyager-*'
+  pull_request:
+    paths:
+      - 'formal/EODCS_*.lean'
+      - '.github/workflows/eodcs-lean.yml'
+      - 'lean-toolchain'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  eodcs_lean:
+    name: Lean4 EODCS and Voyager exact source/limit proofs (pinned)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      # This repository is a standalone Lean file, not a Lake package:
+      # lean-action requires lake-manifest.json and is inappropriate here.
+      # Bootstrap Lean with the official elan installer, then pin the actual
+      # Lean compiler through the checked-in lean-toolchain file.
+      - name: Install pinned Lean 4 for standalone file
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --location \
+            https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh \
+            -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Compile and kernel-check the EODCS lemmas
+        shell: bash
+        run: |
+          "$HOME/.elan/bin/lean" --version
+          for src in formal/EODCS_*.lean; do
+            "$HOME/.elan/bin/lean" "$src"
+          done
+      - name: Fail closed on placeholders and imported axioms
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          for path in sorted(Path("formal").glob("EODCS_*.lean")):
+              src=path.read_text()
+              code=src.split("namespace ObservationalSUCC",1)[1]
+              for bad in ("sorry", "admit", "axiom ", "unsafe "):
+                  assert bad not in code, (str(path),bad)
+          PY

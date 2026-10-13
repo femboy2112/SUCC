@@ -1,0 +1,238 @@
+{
+  "blindness": {
+    "fully_blind": false,
+    "limit": "Initial registry filter accidentally printed other assignments status/proof_state metadata. Disclosed to principal. No dossier conclusions used.",
+    "other_dossiers_or_receipts_read": false
+  },
+  "branch": "research/swm-a08-2026-10-13",
+  "claim_id": "SWM-A08",
+  "claim_ledger": [
+    {
+      "adversary": "Four-state reset alias and three-object superadditive-cost countermodel",
+      "claim": "Infimal hom costs form an asymmetric extended Lawvere category",
+      "domain": "Any small history category H with c:id=0 and nonnegative subadditive compositional costs",
+      "evidence": "A08.md sections 3-5 epsilon proof; standard classical construction",
+      "id": "A08-T1",
+      "next_falsifier": "Native composition requires undeclared reset, budget, or changed target interface",
+      "quantifier": "All objects x,y,z; all composable arrows f,g",
+      "status": "CLASSICAL / PROVED LOCAL"
+    },
+    {
+      "adversary": "A state map without legal cost-compatible history transport",
+      "claim": "The object map contracts infimal hom costs",
+      "domain": "Identity- and composition-preserving history functors with c_K(Ff)<=c_H(f)",
+      "evidence": "A08.md section 5 infimum proof; exact cost-halving controls",
+      "id": "A08-T2",
+      "next_falsifier": "An F-image uses inaccessible resources or costs more than its source arrow",
+      "quantifier": "Every arrow and every pair of objects",
+      "status": "CLASSICAL / PROVED LOCAL"
+    },
+    {
+      "claim": "Existentially collapsed resource labels always satisfy triangle",
+      "domain": "Four complete states with two Y representatives",
+      "evidence": "X-Y=1,Y-Z=1,X-Z=2+r for r>0; absent reset gives infinity",
+      "id": "A08-N1",
+      "repair": "Retain resource state or explicitly price representative transfer",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Native least-separating probe labels always satisfy triangle",
+      "domain": "Positive integer valuation words 8,3,16",
+      "evidence": "16>2+2 using resource_probe.py",
+      "id": "A08-N2",
+      "status": "REFUTED"
+    },
+    {
+      "claim": "Exact finite reset, contraction, debt and policy controls execute",
+      "evidence": "Recorded probe command exit 0 and complete stdout",
+      "id": "A08-C1",
+      "status": "TESTED MODEL"
+    }
+  ],
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "research/2026-10-13/SWARM_ATLAS/A08_probe.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"arithmetic\": \"Fraction plus symbolic infinity\",\n  \"contracting_pairs\": 80,\n  \"full_triangle_triples\": 320,\n  \"native_policy\": {\n    \"actual_hardware_or_RH_theorem_claimed\": false,\n    \"adaptive_action_words\": [\n      [\n        \"Q\",\n        \"R0\"\n      ],\n      [\n        \"Q\",\n        \"R0\"\n      ],\n      [\n        \"Q\",\n        \"R1\"\n      ],\n      [\n        \"Q\",\n        \"R1\"\n      ]\n    ],\n    \"adaptive_conditional_original_parity_winning\": true,\n    \"adaptive_conditional_worst_case\": 2,\n    \"any_fixed_two_probe_word_succeeds\": false,\n    \"destructive_original_parity_winning\": false,\n    \"destructive_reachable_beliefs\": 7,\n    \"joint_probe_worst_case\": 1,\n    \"menus_offered_as_free_readings\": false,\n    \"nondestructive_original_parity_winning\": true,\n    \"nondestructive_worst_case\": 2,\n    \"original_source_given_to_policy\": false,\n    \"reversible_state_changing_conditional_probe\": true,\n    \"status\": \"FINITE_ADAPTIVE_SOURCE_PROOF_GAME_EXACT\"\n  },\n  \"native_separation_nonmetric\": [\n    16,\n    2,\n    2\n  ],\n  \"native_support_debt\": [\n    1,\n    1,\n    2,\n    4\n  ],\n  \"reset_controls\": [\n    {\n      \"collapsed_XY\": \"1\",\n      \"collapsed_XZ\": null,\n      \"collapsed_YZ\": \"1\",\n      \"full_triangle\": true,\n      \"identity_word_map_half_cost_contracts\": true,\n      \"reset_cost\": null,\n      \"triangle_failure\": true\n    },\n    {\n      \"collapsed_XY\": \"1\",\n      \"collapsed_XZ\": \"2\",\n      \"collapsed_YZ\": \"1\",\n      \"full_triangle\": true,\n      \"identity_word_map_half_cost_contracts\": true,\n      \"reset_cost\": \"0\",\n      \"triangle_failure\": false\n    },\n    {\n      \"collapsed_XY\": \"1\",\n      \"collapsed_XZ\": \"5/2\",\n      \"collapsed_YZ\": \"1\",\n      \"full_triangle\": true,\n      \"identity_word_map_half_cost_contracts\": true,\n      \"reset_cost\": \"1/2\",\n      \"triangle_failure\": true\n    },\n    {\n      \"collapsed_XY\": \"1\",\n      \"collapsed_XZ\": \"3\",\n      \"collapsed_YZ\": \"1\",\n      \"full_triangle\": true,\n      \"identity_word_map_half_cost_contracts\": true,\n      \"reset_cost\": \"1\",\n      \"triangle_failure\": true\n    },\n    {\n      \"collapsed_XY\": \"1\",\n      \"collapsed_XZ\": \"5\",\n      \"collapsed_YZ\": \"1\",\n      \"full_triangle\": true,\n      \"identity_word_map_half_cost_contracts\": true,\n      \"reset_cost\": \"3\",\n      \"triangle_failure\": true\n    }\n  ],\n  \"status\": \"TESTED MODEL\",\n  \"universal_theorem_proved_by_finite_probe\": false\n}\n"
+    },
+    {
+      "argv": [
+        "python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"byte_identical_research_archives\": 17,\n  \"establishes_mathematical_truth\": false,\n  \"items\": 72,\n  \"mechanical_namespace_migrations\": 55,\n  \"source_commit\": \"ba075348b7bcc66d938b3e0ca96c26e95bba340a\",\n  \"status\": \"SOURCE_PROVENANCE_VERIFIED\"\n}\n"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "generated_utc": "2026-10-13T08:18:47.730508+00:00",
+  "independence": "Paper derivation and finite implementations share this agent. Floyd and exhaustive path check are distinct algorithms on the same data, not independent theorem proofs.",
+  "infinity_encoding": "null distances denote positive infinity; null reset_cost means reset action unavailable",
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "primary_sources": [
+    {
+      "author": "F. W. Lawvere",
+      "location": "2002 author commentary pages 1-3",
+      "retrieval": "web open succeeded; official TAC PDF first returned 502",
+      "title": "Metric spaces, generalized logic, and closed categories",
+      "url": "https://www.math.buffalo.edu/~sww/0papers/lawveres-metric-space-paper.pdf"
+    },
+    {
+      "author": "G. M. Kelly",
+      "location": "section 1.2 pages 8-9",
+      "retrieval": "web open succeeded",
+      "title": "Basic concepts of enriched category theory",
+      "url": "https://tac.mta.ca/tac/reprints/articles/10/tr10.pdf"
+    }
+  ],
+  "results": {
+    "arithmetic": "Fraction plus symbolic infinity",
+    "contracting_pairs": 80,
+    "full_triangle_triples": 320,
+    "native_policy": {
+      "actual_hardware_or_RH_theorem_claimed": false,
+      "adaptive_action_words": [
+        [
+          "Q",
+          "R0"
+        ],
+        [
+          "Q",
+          "R0"
+        ],
+        [
+          "Q",
+          "R1"
+        ],
+        [
+          "Q",
+          "R1"
+        ]
+      ],
+      "adaptive_conditional_original_parity_winning": true,
+      "adaptive_conditional_worst_case": 2,
+      "any_fixed_two_probe_word_succeeds": false,
+      "destructive_original_parity_winning": false,
+      "destructive_reachable_beliefs": 7,
+      "joint_probe_worst_case": 1,
+      "menus_offered_as_free_readings": false,
+      "nondestructive_original_parity_winning": true,
+      "nondestructive_worst_case": 2,
+      "original_source_given_to_policy": false,
+      "reversible_state_changing_conditional_probe": true,
+      "status": "FINITE_ADAPTIVE_SOURCE_PROOF_GAME_EXACT"
+    },
+    "native_separation_nonmetric": [
+      16,
+      2,
+      2
+    ],
+    "native_support_debt": [
+      1,
+      1,
+      2,
+      4
+    ],
+    "reset_controls": [
+      {
+        "collapsed_XY": "1",
+        "collapsed_XZ": null,
+        "collapsed_YZ": "1",
+        "full_triangle": true,
+        "identity_word_map_half_cost_contracts": true,
+        "reset_cost": null,
+        "triangle_failure": true
+      },
+      {
+        "collapsed_XY": "1",
+        "collapsed_XZ": "2",
+        "collapsed_YZ": "1",
+        "full_triangle": true,
+        "identity_word_map_half_cost_contracts": true,
+        "reset_cost": "0",
+        "triangle_failure": false
+      },
+      {
+        "collapsed_XY": "1",
+        "collapsed_XZ": "5/2",
+        "collapsed_YZ": "1",
+        "full_triangle": true,
+        "identity_word_map_half_cost_contracts": true,
+        "reset_cost": "1/2",
+        "triangle_failure": true
+      },
+      {
+        "collapsed_XY": "1",
+        "collapsed_XZ": "3",
+        "collapsed_YZ": "1",
+        "full_triangle": true,
+        "identity_word_map_half_cost_contracts": true,
+        "reset_cost": "1",
+        "triangle_failure": true
+      },
+      {
+        "collapsed_XY": "1",
+        "collapsed_XZ": "5",
+        "collapsed_YZ": "1",
+        "full_triangle": true,
+        "identity_word_map_half_cost_contracts": true,
+        "reset_cost": "3",
+        "triangle_failure": true
+      }
+    ],
+    "status": "TESTED MODEL",
+    "universal_theorem_proved_by_finite_probe": false
+  },
+  "schema_version": 1,
+  "sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "observational_succ/adaptive_proof_policy.py": "433c32b2c81128be615f8dc9cb39d556ff6781bed3a869524fe6effb41f2da4d",
+    "observational_succ/noncommuting_proof_transport.py": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a",
+    "observational_succ/precision_transport.py": "e4a7d31d1debb3d3ad44831f1412f04a95df9cf3c1601184e02f093e133a7c57",
+    "observational_succ/proof_backaction_debt.py": "fd9369e27c5404da1a3e7900641e888bb8bd41efa758ec859a3552c989f14f0d",
+    "observational_succ/resource_probe.py": "e971c82ce17a9ed24fb0de5126f6fff3e1536698876546619406f87c74b3438b",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/CATEGORICAL_YONEDA_RESOURCE_FRONTIER.md": "bd737416ada40ee8383c3d193f0fcbcd76029272fabef26bdf4d5897a4ec4f74",
+    "research/2026-10-13/SWARM_ATLAS/A08.md": "abaab91c4ac678b8e5452d518cde0effa352e5d122b45600b2e39601479fa79a",
+    "research/2026-10-13/SWARM_ATLAS/A08_probe.py": "30583d4471932b4bfbeeb6da1729acbbcfaac6b7c773b09595a0fa891521c61f"
+  },
+  "source_provenance": {
+    "byte_identical_research_archives": 17,
+    "establishes_mathematical_truth": false,
+    "items": 72,
+    "mechanical_namespace_migrations": 55,
+    "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "status": "SOURCE_PROVENANCE_VERIFIED"
+  },
+  "validation_boundary": {
+    "academic_novelty": false,
+    "actual_physical_thermodynamics": false,
+    "archival_or_runtime_edits": false,
+    "compiler": false,
+    "formal_proof_assistant": false,
+    "full_suite": false,
+    "independent_principal_review": "PENDING",
+    "native_probe_horizon_identified_with_cost": false,
+    "policy_rank_identified_with_ordinary_shortest_distance": false,
+    "push": false,
+    "required_foundations_and_ordinal_probes": false,
+    "shared_write": false,
+    "universal_mathematical_proof_from_finite_probe": false
+  },
+  "worktree": "/home/leah/succ_lab/swm-a08"
+}

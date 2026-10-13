@@ -1,0 +1,1254 @@
+{
+  "all_future_aliases": {
+    "clock_stride_four": {
+      "O_n_rank": 1,
+      "all_future_via_n_bound": true,
+      "kernel_witness": [
+        "0",
+        "2"
+      ],
+      "pair": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          -1
+        ]
+      ]
+    },
+    "identity_hidden_coordinate": {
+      "O_n_rank": 1,
+      "all_future_via_n_bound": true,
+      "kernel_witness": [
+        "0",
+        "-1"
+      ],
+      "pair": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "logistic_post_update_readout": {
+      "all_future_by_exact_first_merge": true,
+      "critical_readout_derivative_at_half": 0,
+      "identity_readout_at_original_epoch_would_separate": true,
+      "original_pair": [
+        "1/4",
+        "3/4"
+      ],
+      "readout_is_f_not_identity": true,
+      "same_first_report": "3/4",
+      "same_successor": "3/4"
+    },
+    "reset_backaction": {
+      "O_n_rank": 1,
+      "all_future_via_n_bound": true,
+      "kernel_witness": [
+        "0",
+        "-1"
+      ],
+      "pair": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "arithmetic": "exact integer/Fraction; one separately labeled float-alias demonstration",
+  "clock_stride_one_rank": 2,
+  "conditioning": {
+    "distinct_originals": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "epsilon": "1/1000000",
+    "exact_determinant": "1/1000000",
+    "exact_distinct_float_equal": true,
+    "exact_infinity_condition": "2000002",
+    "exact_rank": 2,
+    "exact_report_pair": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/1000000"
+      ]
+    ],
+    "float_alias_epsilon": "1/1000000000000000000",
+    "float_is_not_proof_certificate": true,
+    "noise_radius_for_ambiguity": "1/2000000",
+    "shared_noisy_report": [
+      "0",
+      "1/2000000"
+    ]
+  },
+  "delayed_arrival": {
+    "same_delay_vector_at_checkpoint_2": true,
+    "sorted_by_event_epoch": true,
+    "unavailable_at_checkpoint_1_rejected": true
+  },
+  "dossier": "D32",
+  "fresh_cases": [
+    {
+      "C": [
+        [
+          "-1",
+          "-1"
+        ]
+      ],
+      "F": [
+        [
+          "0",
+          "-1"
+        ],
+        [
+          "-2",
+          "2"
+        ]
+      ],
+      "O_n": [
+        [
+          "-1",
+          "-1"
+        ],
+        [
+          "2",
+          "-1"
+        ]
+      ],
+      "coordinate_target_factors": [
+        true,
+        true
+      ],
+      "dimension": 2,
+      "fresh_state": [
+        "1/3",
+        "5"
+      ],
+      "full_inverse": [
+        [
+          "-1/3",
+          "1/3"
+        ],
+        [
+          "-2/3",
+          "-1/3"
+        ]
+      ],
+      "independent_minor_rank": 2,
+      "nonzero_kernel_witness": null,
+      "rank": 2,
+      "trial": 0
+    },
+    {
+      "C": [
+        [
+          "2",
+          "1",
+          "2"
+        ]
+      ],
+      "F": [
+        [
+          "2",
+          "1",
+          "2"
+        ],
+        [
+          "1",
+          "-2",
+          "0"
+        ],
+        [
+          "1",
+          "1",
+          "-2"
+        ]
+      ],
+      "O_n": [
+        [
+          "2",
+          "1",
+          "2"
+        ],
+        [
+          "7",
+          "2",
+          "0"
+        ],
+        [
+          "16",
+          "3",
+          "14"
+        ]
+      ],
+      "coordinate_target_factors": [
+        true,
+        true,
+        true
+      ],
+      "dimension": 3,
+      "fresh_state": [
+        "5",
+        "4",
+        "-1/2"
+      ],
+      "full_inverse": [
+        [
+          "-7/16",
+          "1/8",
+          "1/16"
+        ],
+        [
+          "49/32",
+          "1/16",
+          "-7/32"
+        ],
+        [
+          "11/64",
+          "-5/32",
+          "3/64"
+        ]
+      ],
+      "independent_minor_rank": 3,
+      "nonzero_kernel_witness": null,
+      "rank": 3,
+      "trial": 1
+    },
+    {
+      "C": [
+        [
+          "0",
+          "-2",
+          "0",
+          "1"
+        ]
+      ],
+      "F": [
+        [
+          "1",
+          "2",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "2",
+          "1"
+        ],
+        [
+          "2",
+          "-2",
+          "2",
+          "2"
+        ],
+        [
+          "-2",
+          "-2",
+          "-1",
+          "2"
+        ]
+      ],
+      "O_n": [
+        [
+          "0",
+          "-2",
+          "0",
+          "1"
+        ],
+        [
+          "-2",
+          "-2",
+          "-5",
+          "0"
+        ],
+        [
+          "-12",
+          "6",
+          "-14",
+          "-14"
+        ],
+        [
+          "-12",
+          "32",
+          "-2",
+          "-62"
+        ]
+      ],
+      "coordinate_target_factors": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "dimension": 4,
+      "fresh_state": [
+        "5",
+        "-2",
+        "-1",
+        "0"
+      ],
+      "full_inverse": [
+        [
+          "-13/20",
+          "311/500",
+          "-57/250",
+          "41/1000"
+        ],
+        [
+          "-3/5",
+          "-9/125",
+          "7/250",
+          "-2/125"
+        ],
+        [
+          "1/2",
+          "-21/50",
+          "2/25",
+          "-1/100"
+        ],
+        [
+          "-1/5",
+          "-18/125",
+          "7/125",
+          "-4/125"
+        ]
+      ],
+      "independent_minor_rank": 4,
+      "nonzero_kernel_witness": null,
+      "rank": 4,
+      "trial": 2
+    },
+    {
+      "C": [
+        [
+          "2",
+          "2"
+        ]
+      ],
+      "F": [
+        [
+          "-1",
+          "2"
+        ],
+        [
+          "2",
+          "2"
+        ]
+      ],
+      "O_n": [
+        [
+          "2",
+          "2"
+        ],
+        [
+          "2",
+          "8"
+        ]
+      ],
+      "coordinate_target_factors": [
+        true,
+        true
+      ],
+      "dimension": 2,
+      "fresh_state": [
+        "4",
+        "-7"
+      ],
+      "full_inverse": [
+        [
+          "2/3",
+          "-1/6"
+        ],
+        [
+          "-1/6",
+          "1/6"
+        ]
+      ],
+      "independent_minor_rank": 2,
+      "nonzero_kernel_witness": null,
+      "rank": 2,
+      "trial": 3
+    },
+    {
+      "C": [
+        [
+          "2",
+          "1",
+          "0"
+        ]
+      ],
+      "F": [
+        [
+          "-1",
+          "-2",
+          "-1"
+        ],
+        [
+          "-1",
+          "2",
+          "-1"
+        ],
+        [
+          "1",
+          "2",
+          "-2"
+        ]
+      ],
+      "O_n": [
+        [
+          "2",
+          "1",
+          "0"
+        ],
+        [
+          "-3",
+          "-2",
+          "-3"
+        ],
+        [
+          "2",
+          "-4",
+          "11"
+        ]
+      ],
+      "coordinate_target_factors": [
+        true,
+        true,
+        true
+      ],
+      "dimension": 3,
+      "fresh_state": [
+        "1/2",
+        "3/2",
+        "7/4"
+      ],
+      "full_inverse": [
+        [
+          "34/41",
+          "11/41",
+          "3/41"
+        ],
+        [
+          "-27/41",
+          "-22/41",
+          "-6/41"
+        ],
+        [
+          "-16/41",
+          "-10/41",
+          "1/41"
+        ]
+      ],
+      "independent_minor_rank": 3,
+      "nonzero_kernel_witness": null,
+      "rank": 3,
+      "trial": 4
+    },
+    {
+      "C": [
+        [
+          "-2",
+          "1",
+          "2",
+          "-2"
+        ]
+      ],
+      "F": [
+        [
+          "1",
+          "1",
+          "-1",
+          "0"
+        ],
+        [
+          "-1",
+          "2",
+          "0",
+          "-2"
+        ],
+        [
+          "-1",
+          "-1",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "-1",
+          "-2"
+        ]
+      ],
+      "O_n": [
+        [
+          "-2",
+          "1",
+          "2",
+          "-2"
+        ],
+        [
+          "-3",
+          "-2",
+          "4",
+          "2"
+        ],
+        [
+          "-7",
+          "-11",
+          "1",
+          "0"
+        ],
+        [
+          "3",
+          "-30",
+          "7",
+          "22"
+        ]
+      ],
+      "coordinate_target_factors": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "dimension": 4,
+      "fresh_state": [
+        "-1/2",
+        "5/4",
+        "-3",
+        "-4"
+      ],
+      "full_inverse": [
+        [
+          "83/172",
+          "-15/43",
+          "-17/172",
+          "13/172"
+        ],
+        [
+          "-223/860",
+          "46/215",
+          "-31/860",
+          "-37/860"
+        ],
+        [
+          "113/215",
+          "-19/215",
+          "-19/215",
+          "12/215"
+        ],
+        [
+          "-1009/1720",
+          "79/215",
+          "-13/1720",
+          "-71/1720"
+        ]
+      ],
+      "independent_minor_rank": 4,
+      "nonzero_kernel_witness": null,
+      "rank": 4,
+      "trial": 5
+    },
+    {
+      "C": [
+        [
+          "1",
+          "1"
+        ]
+      ],
+      "F": [
+        [
+          "1",
+          "-1"
+        ],
+        [
+          "-1",
+          "1"
+        ]
+      ],
+      "O_n": [
+        [
+          "1",
+          "1"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "coordinate_target_factors": [
+        false,
+        false
+      ],
+      "dimension": 2,
+      "fresh_state": [
+        "7/4",
+        "7/2"
+      ],
+      "full_inverse": null,
+      "independent_minor_rank": 1,
+      "nonzero_kernel_witness": [
+        "-1",
+        "1"
+      ],
+      "rank": 1,
+      "trial": 6
+    },
+    {
+      "C": [
+        [
+          "1",
+          "-1",
+          "-1"
+        ]
+      ],
+      "F": [
+        [
+          "2",
+          "-1",
+          "1"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "-2",
+          "1",
+          "0"
+        ]
+      ],
+      "O_n": [
+        [
+          "1",
+          "-1",
+          "-1"
+        ],
+        [
+          "3",
+          "-2",
+          "1"
+        ],
+        [
+          "2",
+          "-2",
+          "3"
+        ]
+      ],
+      "coordinate_target_factors": [
+        true,
+        true,
+        true
+      ],
+      "dimension": 3,
+      "fresh_state": [
+        "-2/3",
+        "1/2",
+        "7/3"
+      ],
+      "full_inverse": [
+        [
+          "-4/5",
+          "1",
+          "-3/5"
+        ],
+        [
+          "-7/5",
+          "1",
+          "-4/5"
+        ],
+        [
+          "-2/5",
+          "0",
+          "1/5"
+        ]
+      ],
+      "independent_minor_rank": 3,
+      "nonzero_kernel_witness": null,
+      "rank": 3,
+      "trial": 7
+    },
+    {
+      "C": [
+        [
+          "-2",
+          "2",
+          "-1",
+          "0"
+        ]
+      ],
+      "F": [
+        [
+          "-1",
+          "0",
+          "1",
+          "-2"
+        ],
+        [
+          "2",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "2",
+          "-1",
+          "-1",
+          "0"
+        ],
+        [
+          "-1",
+          "2",
+          "0",
+          "2"
+        ]
+      ],
+      "O_n": [
+        [
+          "-2",
+          "2",
+          "-1",
+          "0"
+        ],
+        [
+          "4",
+          "1",
+          "-1",
+          "4"
+        ],
+        [
+          "-8",
+          "9",
+          "5",
+          "0"
+        ],
+        [
+          "36",
+          "-5",
+          "-13",
+          "16"
+        ]
+      ],
+      "coordinate_target_factors": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "dimension": 4,
+      "fresh_state": [
+        "5/4",
+        "4/3",
+        "-4/3",
+        "1"
+      ],
+      "full_inverse": [
+        [
+          "-9/59",
+          "-19/59",
+          "27/236",
+          "19/236"
+        ],
+        [
+          "7/59",
+          "-18/59",
+          "19/118",
+          "9/118"
+        ],
+        [
+          "-27/59",
+          "2/59",
+          "11/118",
+          "-1/118"
+        ],
+        [
+          "1/118",
+          "155/236",
+          "-31/236",
+          "-6/59"
+        ]
+      ],
+      "independent_minor_rank": 4,
+      "nonzero_kernel_witness": null,
+      "rank": 4,
+      "trial": 8
+    },
+    {
+      "C": [
+        [
+          "-1",
+          "-1"
+        ]
+      ],
+      "F": [
+        [
+          "-1",
+          "1"
+        ],
+        [
+          "-2",
+          "2"
+        ]
+      ],
+      "O_n": [
+        [
+          "-1",
+          "-1"
+        ],
+        [
+          "3",
+          "-3"
+        ]
+      ],
+      "coordinate_target_factors": [
+        true,
+        true
+      ],
+      "dimension": 2,
+      "fresh_state": [
+        "0",
+        "1/4"
+      ],
+      "full_inverse": [
+        [
+          "-1/2",
+          "1/6"
+        ],
+        [
+          "-1/2",
+          "-1/6"
+        ]
+      ],
+      "independent_minor_rank": 2,
+      "nonzero_kernel_witness": null,
+      "rank": 2,
+      "trial": 9
+    },
+    {
+      "C": [
+        [
+          "1",
+          "1",
+          "1"
+        ]
+      ],
+      "F": [
+        [
+          "1",
+          "0",
+          "-2"
+        ],
+        [
+          "2",
+          "0",
+          "1"
+        ],
+        [
+          "2",
+          "-1",
+          "-2"
+        ]
+      ],
+      "O_n": [
+        [
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "5",
+          "-1",
+          "-3"
+        ],
+        [
+          "-3",
+          "3",
+          "-5"
+        ]
+      ],
+      "coordinate_target_factors": [
+        true,
+        true,
+        true
+      ],
+      "dimension": 3,
+      "fresh_state": [
+        "1",
+        "-5/4",
+        "2"
+      ],
+      "full_inverse": [
+        [
+          "7/30",
+          "2/15",
+          "-1/30"
+        ],
+        [
+          "17/30",
+          "-1/30",
+          "2/15"
+        ],
+        [
+          "1/5",
+          "-1/10",
+          "-1/10"
+        ]
+      ],
+      "independent_minor_rank": 3,
+      "nonzero_kernel_witness": null,
+      "rank": 3,
+      "trial": 10
+    },
+    {
+      "C": [
+        [
+          "-1",
+          "-2",
+          "-1",
+          "-2"
+        ]
+      ],
+      "F": [
+        [
+          "1",
+          "0",
+          "0",
+          "2"
+        ],
+        [
+          "-2",
+          "2",
+          "-2",
+          "1"
+        ],
+        [
+          "2",
+          "-1",
+          "-1",
+          "-2"
+        ],
+        [
+          "-2",
+          "0",
+          "1",
+          "-1"
+        ]
+      ],
+      "O_n": [
+        [
+          "-1",
+          "-2",
+          "-1",
+          "-2"
+        ],
+        [
+          "5",
+          "-3",
+          "3",
+          "0"
+        ],
+        [
+          "17",
+          "-9",
+          "3",
+          "1"
+        ],
+        [
+          "39",
+          "-21",
+          "16",
+          "18"
+        ]
+      ],
+      "coordinate_target_factors": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "dimension": 4,
+      "fresh_state": [
+        "1/4",
+        "5/2",
+        "1/4",
+        "1"
+      ],
+      "full_inverse": [
+        [
+          "-309/1543",
+          "-55/1543",
+          "192/1543",
+          "-45/1543"
+        ],
+        [
+          "-611/1543",
+          "81/1543",
+          "110/1543",
+          "-74/1543"
+        ],
+        [
+          "-96/1543",
+          "687/1543",
+          "-210/1543",
+          "1/1543"
+        ],
+        [
+          "42/1543",
+          "-397/1543",
+          "-101/1543",
+          "96/1543"
+        ]
+      ],
+      "independent_minor_rank": 4,
+      "nonzero_kernel_witness": null,
+      "rank": 4,
+      "trial": 11
+    }
+  ],
+  "fresh_seed": 32013,
+  "generated_versus_encountered": {
+    "actual_backaction_trajectory": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "actual_update_FB": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "declared_readout_backaction": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "native_generated_future_probes": [
+      "0",
+      "1",
+      "0",
+      "1"
+    ],
+    "native_physical_counterfactual_reset_available": false,
+    "passive_single_trajectory": [
+      "0",
+      "1",
+      "0",
+      "1"
+    ]
+  },
+  "input_controls": {
+    "bool_rejected": true,
+    "float_rejected": true,
+    "float_source_rejected": true
+  },
+  "original_versus_current": {
+    "O_2_rank": 1,
+    "current_decoder": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "current_full_target": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "original_full_target_rejected": true,
+    "partial_original_target_decoder": [
+      [
+        "1",
+        "0"
+      ]
+    ]
+  },
+  "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "physical_source_authenticated": false,
+  "positive": {
+    "C": [
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "F": [
+      [
+        "1",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "O_2": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1",
+        "1"
+      ]
+    ],
+    "chronological_reports": [
+      {
+        "arrival_epoch": 0,
+        "basis": "passive-C",
+        "epoch": 0,
+        "kind": "MODEL_ENCOUNTER",
+        "report": [
+          "-2"
+        ],
+        "source": "D32-source",
+        "version": 0
+      },
+      {
+        "arrival_epoch": 1,
+        "basis": "passive-C",
+        "epoch": 1,
+        "kind": "MODEL_ENCOUNTER",
+        "report": [
+          "1"
+        ],
+        "source": "D32-source",
+        "version": 0
+      },
+      {
+        "arrival_epoch": 2,
+        "basis": "passive-C",
+        "epoch": 2,
+        "kind": "MODEL_ENCOUNTER",
+        "report": [
+          "4"
+        ],
+        "source": "D32-source",
+        "version": 0
+      }
+    ],
+    "delay_update": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "-1",
+        "2"
+      ]
+    ],
+    "initial": [
+      "-2",
+      "3"
+    ],
+    "inverse_on_image": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "-1",
+        "1"
+      ]
+    ],
+    "maps_commute": true
+  },
+  "sharp_finite_delay_bound": [
+    {
+      "dimension": 2,
+      "ranks": [
+        1,
+        2
+      ]
+    },
+    {
+      "dimension": 3,
+      "ranks": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "dimension": 4,
+      "ranks": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "dimension": 5,
+      "ranks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "dimension": 6,
+      "ranks": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  ],
+  "source_mutations_rejected": {
+    "arrival_predates_event": true,
+    "different_basis": true,
+    "different_source": true,
+    "prediction": true,
+    "reset_epoch": true,
+    "stale_version": true
+  }
+}

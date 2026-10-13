@@ -1,0 +1,214 @@
+{
+  "command": [
+    "python",
+    "research/2026-10-13/SWARM_ATLAS/A02_probe.py"
+  ],
+  "exit_code": 0,
+  "original_source_checks": [
+    {
+      "command": [
+        "git",
+        "show",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:actualization/yoneda.py"
+      ],
+      "cwd": "/home/leah/FuckingRH",
+      "exit_code": 0,
+      "git_blob": "de06d879c08a398acb9869dd2e98176591ea44cc",
+      "sha256": "4af0194e675406761c1dec151fe1407b65037e1e87e8bc8a950bd42bf914baca"
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:actualization/YONEDA_GUIDE.md"
+      ],
+      "cwd": "/home/leah/FuckingRH",
+      "exit_code": 0,
+      "git_blob": "08cc323315b191954e86f5fcbf1820aaf7e7954f",
+      "sha256": "ef6df13b0cf2beb97dddd201cf10859d2c7aaea95de03fbc869f1116ae14532a"
+    },
+    {
+      "command": [
+        "git",
+        "show",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:research/2026-10-10/CATEGORICAL_YONEDA_RESOURCE_FRONTIER.md"
+      ],
+      "cwd": "/home/leah/FuckingRH",
+      "exit_code": 0,
+      "git_blob": "10b42296495593f1447b3f88a92255bb521a3b47",
+      "sha256": "bd737416ada40ee8383c3d193f0fcbcd76029272fabef26bdf4d5897a4ec4f74"
+    }
+  ],
+  "primary_sources": [
+    {
+      "consulted": "2026-10-13",
+      "sections": [
+        "Corollary 4.3.7",
+        "Corollary 4.3.10"
+      ],
+      "url": "https://arxiv.org/pdf/1612.09375"
+    },
+    {
+      "consulted": "2026-10-13",
+      "sections": [
+        "Definition 6.5.11"
+      ],
+      "url": "https://emilyriehl.github.io/files/context.pdf"
+    }
+  ],
+  "prior_failed_run": {
+    "exit_code": 1,
+    "failure": "AssertionError: initial harness incorrectly expected leaf-probe restricted Yoneda to be nonfull. It is full and nonfaithful. Corrected expectation only."
+  },
+  "probe_output": {
+    "absolute_category_witness": {
+      "arrows": 3,
+      "associative_triples": 9,
+      "objects": 2
+    },
+    "actual_SUCC_history_replay": {
+      "contexts": [
+        [
+          1,
+          [
+            [
+              0,
+              0
+            ]
+          ]
+        ],
+        [
+          0,
+          [
+            [
+              0,
+              0
+            ]
+          ]
+        ]
+      ],
+      "endpoint_quotient": {
+        "arrows": 4,
+        "composable_pairs_checked": 6,
+        "objects": 2,
+        "status": "verified_finite"
+      },
+      "endpoint_quotient_faithful": false,
+      "histories": [
+        [
+          [
+            "A",
+            0
+          ]
+        ],
+        [
+          [
+            "B",
+            0
+          ]
+        ]
+      ],
+      "restricted_natural_transform_counts": {
+        "full": 2,
+        "leaf": 1,
+        "root": 2
+      },
+      "source_id_physically_authenticated": false
+    },
+    "bounded_free_dag_sweep": {
+      "categories": 31,
+      "max_parallel_generators": 2,
+      "max_vertices": 3,
+      "probe_families": 230
+    },
+    "controls": {
+      "absolute_minimum": {
+        "faithful": false,
+        "full": false,
+        "object_separating": true,
+        "probes": [
+          1
+        ]
+      },
+      "all_probes": {
+        "faithful": true,
+        "full": true,
+        "object_separating": true,
+        "probes": [
+          0,
+          1
+        ]
+      },
+      "faithful_but_object_nonseparating": {
+        "faithful": true,
+        "full": false,
+        "object_separating": false,
+        "probes": [
+          0
+        ]
+      },
+      "leaf_probe": {
+        "faithful": false,
+        "full": true,
+        "object_separating": true,
+        "probes": [
+          1
+        ]
+      },
+      "root_probe": {
+        "faithful": true,
+        "full": false,
+        "object_separating": true,
+        "probes": [
+          0
+        ]
+      }
+    },
+    "lean_kernel_checked": false,
+    "minimal_free_history_witness": {
+      "arrows": 4,
+      "associative_triples": 8,
+      "objects": 2
+    },
+    "nonfree_premise_mutation": {
+      "arrows": 7,
+      "associative_triples": 21,
+      "objects": 3
+    },
+    "nonfree_reachable_but_nonfaithful": true,
+    "not_run": [
+      "full unittest suite",
+      "foundations probes",
+      "Lean compiler",
+      "CI"
+    ],
+    "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+    "python": "3.12.3",
+    "schema": "succ-swarm-A02-exact-control/v1",
+    "source_hashes_sha256": {
+      "observational_succ/operational_yoneda_descent.py": "c9db557825a01bec76e8bc38f32d3f59cd2dd17d7a2670e15373aedeedc67e0c",
+      "observational_succ/yoneda.py": "4af0194e675406761c1dec151fe1407b65037e1e87e8bc8a950bd42bf914baca",
+      "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+      "provenance/origins/fuckingrh/actualization/YONEDA_GUIDE.md": "ef6df13b0cf2beb97dddd201cf10859d2c7aaea95de03fbc869f1116ae14532a",
+      "provenance/origins/fuckingrh/research/2026-10-10/CATEGORICAL_YONEDA_RESOURCE_FRONTIER.md": "bd737416ada40ee8383c3d193f0fcbcd76029272fabef26bdf4d5897a4ec4f74",
+      "research/2026-10-13/SWARM_ATLAS/A02_probe.py": "710173728538269373867baafc4ad839a8165c5b896906cf223831ee70d77268"
+    },
+    "status": "TESTED MODEL",
+    "universal_theorem_is_paper_derivation": true
+  },
+  "provenance_verification": {
+    "command": [
+      "python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "output": {
+      "byte_identical_research_archives": 17,
+      "establishes_mathematical_truth": false,
+      "items": 72,
+      "mechanical_namespace_migrations": 55,
+      "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+      "status": "SOURCE_PROVENANCE_VERIFIED"
+    }
+  }
+}

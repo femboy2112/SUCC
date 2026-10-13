@@ -1,0 +1,471 @@
+{
+  "review_scope": "finite exact witnesses; universal statements proved in review",
+  "source_commit": "e6c792b26f2497ba8cb7a266cc518ec79d59fd56",
+  "source_path": "research/2026-10-13/SWARM_ATLAS/C19.md",
+  "source_sha256": "3863e853e952a785188619dbd3c8b0203d15fc3ffb8a3619d195208605d01f76",
+  "author_probe_read_or_imported": false,
+  "review_worktree_parent": "e0ae020047b9555cf9075e01463a56ccc3e2890e",
+  "python_version": "3.12.3",
+  "script_sha256": "13e6609faad72a2ab3991fd1a184fd47a41aedd2e8cfe7f8ccb74c43c1c075ab",
+  "command": "python reviews/C19_RX_probe.py",
+  "assertions_passed": true,
+  "results": {
+    "fresh_terminal_not_fixed_word": {
+      "fresh_probabilities": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "actual_fixed_second_prefix": [
+        "0",
+        "0"
+      ]
+    },
+    "late_rank_drop": {
+      "initial_dimension": 2,
+      "first_drop_index": 38,
+      "selected_ranks": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          37,
+          2
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          39,
+          1
+        ]
+      ]
+    },
+    "rectangular_common_initial_domain": [
+      {
+        "output_dimension": 3,
+        "effect": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ],
+        "likelihoods": [
+          "1",
+          "1"
+        ]
+      },
+      {
+        "output_dimension": 1,
+        "effect": [
+          [
+            "9/25",
+            "12/25"
+          ],
+          [
+            "12/25",
+            "16/25"
+          ]
+        ],
+        "likelihoods": [
+          "9/25",
+          "16/25"
+        ]
+      },
+      {
+        "output_dimension": 4,
+        "effect": [
+          [
+            "9/25",
+            "12/25"
+          ],
+          [
+            "12/25",
+            "16/25"
+          ]
+        ],
+        "likelihoods": [
+          "9/25",
+          "16/25"
+        ]
+      }
+    ],
+    "positive_not_cp": {
+      "transpose_prefix_effect": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "partial_bell_normalized_singlet_expectation": "-1/2"
+    },
+    "cp_without_tni": {
+      "amplifier_effect": [
+        [
+          "9",
+          "0"
+        ],
+        [
+          "0",
+          "9"
+        ]
+      ],
+      "source_likelihood": "9"
+    },
+    "nonpositive_mutation": {
+      "likelihoods": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "-1"
+        ],
+        [
+          "-1",
+          "2"
+        ],
+        [
+          "2",
+          "-3"
+        ],
+        [
+          "-3",
+          "5"
+        ],
+        [
+          "5",
+          "-8"
+        ],
+        [
+          "-8",
+          "13"
+        ]
+      ],
+      "not_a_quantum_instrument": true
+    },
+    "normalization_and_infinite_event": {
+      "finite_prefixes": [
+        {
+          "n": 1,
+          "raw_probability": "1/2",
+          "normalized_trace": "1"
+        },
+        {
+          "n": 2,
+          "raw_probability": "1/4",
+          "normalized_trace": "1"
+        },
+        {
+          "n": 3,
+          "raw_probability": "1/8",
+          "normalized_trace": "1"
+        },
+        {
+          "n": 4,
+          "raw_probability": "1/16",
+          "normalized_trace": "1"
+        },
+        {
+          "n": 5,
+          "raw_probability": "1/32",
+          "normalized_trace": "1"
+        },
+        {
+          "n": 6,
+          "raw_probability": "1/64",
+          "normalized_trace": "1"
+        },
+        {
+          "n": 7,
+          "raw_probability": "1/128",
+          "normalized_trace": "1"
+        },
+        {
+          "n": 8,
+          "raw_probability": "1/256",
+          "normalized_trace": "1"
+        }
+      ],
+      "impossible_branch_denominator": "0",
+      "conditional_poststate": null,
+      "infinite_event_limit": "0 (analytic limit)"
+    },
+    "compact_infinite_dimensional_pure_tail": [
+      {
+        "k": 1,
+        "a": "3/5",
+        "b": "4/5",
+        "trace_distance_to_rho0": "8/5",
+        "tail_probabilities_n1_to_n8": [
+          "16/25",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "k": 2,
+        "a": "15/17",
+        "b": "8/17",
+        "trace_distance_to_rho0": "16/17",
+        "tail_probabilities_n1_to_n8": [
+          "64/289",
+          "64/289",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "k": 3,
+        "a": "63/65",
+        "b": "16/65",
+        "trace_distance_to_rho0": "32/65",
+        "tail_probabilities_n1_to_n8": [
+          "256/4225",
+          "256/4225",
+          "256/4225",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "k": 4,
+        "a": "255/257",
+        "b": "32/257",
+        "trace_distance_to_rho0": "64/257",
+        "tail_probabilities_n1_to_n8": [
+          "1024/66049",
+          "1024/66049",
+          "1024/66049",
+          "1024/66049",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "k": 5,
+        "a": "1023/1025",
+        "b": "64/1025",
+        "trace_distance_to_rho0": "128/1025",
+        "tail_probabilities_n1_to_n8": [
+          "4096/1050625",
+          "4096/1050625",
+          "4096/1050625",
+          "4096/1050625",
+          "4096/1050625",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "k": 6,
+        "a": "4095/4097",
+        "b": "128/4097",
+        "trace_distance_to_rho0": "256/4097",
+        "tail_probabilities_n1_to_n8": [
+          "16384/16785409",
+          "16384/16785409",
+          "16384/16785409",
+          "16384/16785409",
+          "16384/16785409",
+          "16384/16785409",
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "countable_mixture_repair": [
+      {
+        "n": 1,
+        "diagonal_mixture_tail": "1",
+        "k_n_witness_weight": "1/2"
+      },
+      {
+        "n": 2,
+        "diagonal_mixture_tail": "1/2",
+        "k_n_witness_weight": "1/4"
+      },
+      {
+        "n": 3,
+        "diagonal_mixture_tail": "1/4",
+        "k_n_witness_weight": "1/8"
+      },
+      {
+        "n": 4,
+        "diagonal_mixture_tail": "1/8",
+        "k_n_witness_weight": "1/16"
+      },
+      {
+        "n": 5,
+        "diagonal_mixture_tail": "1/16",
+        "k_n_witness_weight": "1/32"
+      },
+      {
+        "n": 6,
+        "diagonal_mixture_tail": "1/32",
+        "k_n_witness_weight": "1/64"
+      },
+      {
+        "n": 7,
+        "diagonal_mixture_tail": "1/64",
+        "k_n_witness_weight": "1/128"
+      },
+      {
+        "n": 8,
+        "diagonal_mixture_tail": "1/128",
+        "k_n_witness_weight": "1/256"
+      }
+    ],
+    "omitted_memory": {
+      "same_reduced_qubit": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "memory_labels": [
+        0,
+        1
+      ],
+      "first_tail_probabilities": [
+        0,
+        1
+      ],
+      "not_a_map_of_reduced_qubit_alone": true
+    },
+    "candidate_dependent_cp_mutation": [
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    ],
+    "changing_original_class_mutation": {
+      "identity_branch_probabilities": [
+        1,
+        1
+      ],
+      "alternating_singleton_class_labels": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "common_class_member": null
+    },
+    "original_source_not_identified_by_reset": {
+      "poststates": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "distinct_original_z_targets": [
+        0,
+        1
+      ]
+    }
+  }
+}

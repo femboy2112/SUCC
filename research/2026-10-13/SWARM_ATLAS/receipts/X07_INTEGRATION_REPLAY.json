@@ -1,0 +1,278 @@
+{
+  "boundaries": [
+    "No full suite/compiler/push",
+    "No imported or shared metadata changes",
+    "No independent acceptance yet",
+    "No hardware/cognition/RH claim"
+  ],
+  "branch": "research/many-worlds-atlas-2026-10-13",
+  "command": "PYTHONDONTWRITEBYTECODE=1 python research/2026-10-13/SWARM_ATLAS/X07_probe.py",
+  "dossier_sha256": "5a6bada80b5adb6b06ab236b66f91095e37b1407e02821317696f072266c37cb",
+  "exit_code": 0,
+  "hostile": {
+    "enabled_orders": {
+      "forward": false,
+      "reverse": true
+    },
+    "fresh_terminal_likelihood_rows": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "late_drop_at": 24,
+    "late_ranks": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      1
+    ],
+    "noncommuting_report_likelihoods": [
+      "1/2",
+      "1/4"
+    ],
+    "nonlinear_copy_diagonals": [
+      [
+        "1/4",
+        "1/4",
+        "1/4",
+        "1/4"
+      ],
+      [
+        "1/2",
+        "0",
+        "0",
+        "1/2"
+      ]
+    ],
+    "omitted_memory_tail_panel": [
+      [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "positive_finite_decay": [
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/16",
+      "1/32",
+      "1/64",
+      "1/128",
+      "1/256",
+      "1/512",
+      "1/1024",
+      "1/2048",
+      "1/4096"
+    ],
+    "same_marginals_original_posteriors": [
+      "3/4",
+      "1/4"
+    ],
+    "separate_threads_supports": [
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    "summed_channels_commute_basis_points": 4,
+    "unfaithful_mass_zero_not_absorbing": [
+      0,
+      1
+    ],
+    "union_support": []
+  },
+  "imported_origin_object": {
+    "commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "exit_code": 128,
+    "stderr": "fatal: git cat-file: could not get object info",
+    "stdout": ""
+  },
+  "independence": "Fresh exact matrix and direct hidden-path implementations; same deriver; no author probes imported",
+  "native_origin_objects": {
+    "observational_succ/noncommuting_proof_transport.py": {
+      "current_byte_identical": true,
+      "originating_commit": "89caebe3289ffd1ca97b4c30f4af00c4c990b828",
+      "sha256": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a"
+    },
+    "observational_succ/quantum_records.py": {
+      "current_byte_identical": true,
+      "originating_commit": "4e95c4ce9481d79fdd14a777e8eb1abb64d5b594",
+      "sha256": "9a3f367fb0e2bcb1e73c1a561ffcd2450cf5866f4c28a7df84e3ecd1a387a4c5"
+    }
+  },
+  "native_smoke": {
+    "hardware_contact": false,
+    "joint_probability": "729/15625",
+    "replay": true,
+    "selected_simulated_events": 3
+  },
+  "positive": {
+    "CP_square_basis_points": 64,
+    "attained_bottleneck_ideal": [
+      "a_read",
+      "b_read"
+    ],
+    "changed_terminal_current": "11",
+    "common_original_source": "original=00,current=00",
+    "diagonal_intertwiner_points": 36,
+    "direct_hidden_path_points": 304,
+    "full_likelihood": "20736/390625",
+    "full_linear_extensions": 6,
+    "ideals": 9,
+    "local_instrument_completions": 2,
+    "maximal_zero_face_coordinates": 12,
+    "quantum_effect_diagonals": {
+      "": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "a_read": [
+        "9/25",
+        "9/25",
+        "0",
+        "0"
+      ],
+      "a_read,a_reset": [
+        "144/625",
+        "144/625",
+        "0",
+        "0"
+      ],
+      "a_read,a_reset,b_read": [
+        "1296/15625",
+        "0",
+        "0",
+        "0"
+      ],
+      "a_read,a_reset,b_read,b_reset": [
+        "20736/390625",
+        "0",
+        "0",
+        "0"
+      ],
+      "a_read,b_read": [
+        "81/625",
+        "0",
+        "0",
+        "0"
+      ],
+      "a_read,b_read,b_reset": [
+        "1296/15625",
+        "0",
+        "0",
+        "0"
+      ],
+      "b_read": [
+        "9/25",
+        "0",
+        "9/25",
+        "0"
+      ],
+      "b_read,b_reset": [
+        "144/625",
+        "0",
+        "144/625",
+        "0"
+      ]
+    }
+  },
+  "primary_sources_opened": [
+    "https://arxiv.org/html/1908.07021v8",
+    "https://www.cl.cam.ac.uk/~gw104/winskel-nielsen-models-for-concurrency.pdf",
+    "https://arxiv.org/pdf/quant-ph/0107090",
+    "https://arxiv.org/abs/1408.0049"
+  ],
+  "probe_sha256": "a124dcfa94db5fae06fbdaaf36d0050ddcfbed8b9ea0d44c3c37cec21e9d0d30",
+  "probe_status": "TESTED MODEL; finite controls do not prove universal claims",
+  "proof_status": "PROVED LOCAL derivation; pending independent non-deriver review",
+  "python": "3.12.3",
+  "schema": "X07-exact-controls-v1",
+  "source_parent": "19bd7ec89e88ff2b76a322a82cb9d9b606df3e41",
+  "source_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "observational_succ/noncommuting_proof_transport.py": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a",
+    "observational_succ/quantum_records.py": "9a3f367fb0e2bcb1e73c1a561ffcd2450cf5866f4c28a7df84e3ecd1a387a4c5",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+    "research/2026-10-13/SWARM_ATLAS/A07.md": "4d7fc88ab8e952a029ebf34c757b4f3cfd008e9b4893c471769c8dae91f831b3",
+    "research/2026-10-13/SWARM_ATLAS/C17.md": "506fac2b4e0894c05b9c138f767b9d3056c29b69e7a98e6ed5d6e9095760718d",
+    "research/2026-10-13/SWARM_ATLAS/C19.md": "3863e853e952a785188619dbd3c8b0203d15fc3ffb8a3619d195208605d01f76",
+    "research/2026-10-13/SWARM_ATLAS/C22.md": "891e27524b4122969b225663d84897c73f26b02cb9c2b159d16a52b48dfbcb12",
+    "research/2026-10-13/SWARM_ATLAS/PROTOCOL.md": "c268440bd21b5825a6666d1e043a108e694e545feaae77196ea2c463507590d0",
+    "reviews/C19_RX_REVIEW.md": "fe8355cea1f880dd334662c4ebcffe7b5124e6ef7db5ed30f2f56bc0c604c158"
+  }
+}

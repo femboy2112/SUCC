@@ -1,0 +1,378 @@
+{
+  "EOS_pin_source": {
+    "blob_sha": "7aca1d8a939cc24c413eddd793671cdce7070b74",
+    "path": "formal/obstruction_synthesis/lean-toolchain",
+    "snapshot": "b2774ca485db4b5b4f7ce92e535220352fb3af2f"
+  },
+  "accounting": {
+    "PR49_frozen_recorded_unique_children": 29,
+    "PR50_processes_not_independently_witnessed": true,
+    "PR50_sibling_reported_children": 21,
+    "PR51_audit_assignments": 8,
+    "PR51_manifest_research_workers": 6,
+    "live_total_not_audited": true,
+    "owned_plus_sibling_aggregate": null
+  },
+  "common_base": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "common_mathlib_pin": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+  "control_outputs": {
+    "A01_duplicate_witness": {
+      "predicate_coverage": true,
+      "witness_bijective": false
+    },
+    "A06_missing_action_intertwiner": {
+      "left": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "right": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    "A06_separate_repairs": {
+      "joint_pair_count": 4,
+      "sequential_pair_count": 6
+    },
+    "B09_Cambrian_raw_prefixes": {
+      "arbitrary_depth_control": "the all-live branch",
+      "stage1": [
+        [
+          "l",
+          "d"
+        ],
+        [
+          "l",
+          "l"
+        ]
+      ],
+      "stage2": [
+        [
+          "l",
+          "l",
+          "d"
+        ],
+        [
+          "l",
+          "l",
+          "l"
+        ]
+      ],
+      "truncation_surjective": false
+    },
+    "C17_equal_marginals": {
+      "original_posterior_after_read0": [
+        "3/4",
+        "1/4"
+      ]
+    },
+    "C18_nonfactor_likelihood": {
+      "posterior": [
+        [
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "1/2"
+        ]
+      ],
+      "reglued": [
+        [
+          "1/4",
+          "1/4"
+        ],
+        [
+          "1/4",
+          "1/4"
+        ]
+      ]
+    },
+    "C21_full_support_noise": {
+      "all_32_depth5_words_retain_both_targets": true,
+      "universal_reason": "finite products of strictly positive rows stay positive"
+    },
+    "X03_core_carrier": {
+      "extension_witness": 1,
+      "grammar_unsat": true,
+      "safe_source_cache": false,
+      "source_unsat": false
+    },
+    "X07_preparation": {
+      "mixed_original_supports": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "no_pure_preparation_recovers_both": true
+    }
+  },
+  "controls_exit_code": 0,
+  "formal_PR50_receipt_source_hash_matches": {
+    "formal/Swarm_ArithmeticTransport.lean": true,
+    "formal/Swarm_Completion.lean": true,
+    "formal/Swarm_Repair.lean": true,
+    "formal/Swarm_X08AffineRepair.lean": true,
+    "formal/swarm_topology/SwarmPolicyCompactness.lean": true,
+    "formal/swarm_topology/SwarmTopology.lean": true,
+    "formal/swarm_topology/SwarmX01CompletionTransport.lean": true
+  },
+  "full_suite_run": false,
+  "kernel_rerun": false,
+  "new_children_spawned": 0,
+  "path_collisions_PR49_PR50": [
+    "research/2026-10-13/SWARM_ATLAS/A01.md",
+    "research/2026-10-13/SWARM_ATLAS/A02.md",
+    "research/2026-10-13/SWARM_ATLAS/A03.md",
+    "research/2026-10-13/SWARM_ATLAS/A04.md",
+    "research/2026-10-13/SWARM_ATLAS/A05.md",
+    "research/2026-10-13/SWARM_ATLAS/A06.md",
+    "research/2026-10-13/SWARM_ATLAS/A07.md",
+    "research/2026-10-13/SWARM_ATLAS/A08.md",
+    "research/2026-10-13/SWARM_ATLAS/B09.md",
+    "research/2026-10-13/SWARM_ATLAS/B10.md",
+    "research/2026-10-13/SWARM_ATLAS/B11.md",
+    "research/2026-10-13/SWARM_ATLAS/B12.md",
+    "research/2026-10-13/SWARM_ATLAS/B13.md",
+    "research/2026-10-13/SWARM_ATLAS/B16.md",
+    "research/2026-10-13/SWARM_ATLAS/C17.md",
+    "research/2026-10-13/SWARM_ATLAS/C18.md",
+    "research/2026-10-13/SWARM_ATLAS/C20.md",
+    "research/2026-10-13/SWARM_ATLAS/D25.md",
+    "research/2026-10-13/SWARM_ATLAS/D27.md",
+    "research/2026-10-13/SWARM_ATLAS/E33.md",
+    "research/2026-10-13/SWARM_ATLAS/F41.md",
+    "research/2026-10-13/SWARM_ATLAS/F42.md",
+    "research/2026-10-13/SWARM_ATLAS/SUCC_MATHEMATICAL_ATLAS.md",
+    "research/2026-10-13/SWARM_ATLAS/X01.md",
+    "research/2026-10-13/SWARM_ATLAS/X02.md",
+    "research/2026-10-13/SWARM_ATLAS/X02_RECEIPT.json",
+    "research/2026-10-13/SWARM_ATLAS/X03.md"
+  ],
+  "probe_sha256": "2a7d9e16f78049efdac6e730e809990b01fea46914c136abc11e063e8bc87f20",
+  "reproduce": "python research/2026-10-13/SWARM_ATLAS/comparisons/PARALLEL_AUDIT_probe.py --output research/2026-10-13/SWARM_ATLAS/comparisons/PARALLEL_AUDIT.json",
+  "schema_version": 1,
+  "snapshots": {
+    "PR49": "9bcb93965239c395653ad14e7c7afe65fa7faec0",
+    "PR50": "759c30c72a2927212cdbfa41365800da96e5d515",
+    "PR51": "bdb1fcfce875ee6c51fc62f78fbb4111582caadc"
+  },
+  "source_hashes": {
+    "PR49": [
+      {
+        "blob_sha": "22cab3ac9d57a533081d29644783880bfd4abdc7",
+        "path": "research/2026-10-13/SWARM_ATLAS/A01.md",
+        "sha256": "d600266ab9e41f6a500415f895abc68d6259cdc74704de5b5cdaab63418d7423"
+      },
+      {
+        "blob_sha": "f00448307eda29895435afde754cd599ad276af0",
+        "path": "research/2026-10-13/SWARM_ATLAS/A06.md",
+        "sha256": "60cc38947923b9596431259681f76b7497fad768997b299eafd5a07f236ebc88"
+      },
+      {
+        "blob_sha": "508caf2f64ef4b1042b76f2faa0fc2379d47829c",
+        "path": "research/2026-10-13/SWARM_ATLAS/B09.md",
+        "sha256": "079078b982dc3fd0d2b3864c395556d3ba8cd062b02da7b1280943d634cf9586"
+      },
+      {
+        "blob_sha": "6128f42afab61123cce0e5ed6c241fdf49e66750",
+        "path": "research/2026-10-13/SWARM_ATLAS/B10.md",
+        "sha256": "f8b70b8ce781464fa83995a64e294f3c6756518225560f8f75a1d124fa0f28fc"
+      },
+      {
+        "blob_sha": "24a7ad7f4c2e6e4b33d6e5ca063a74226e9d1640",
+        "path": "research/2026-10-13/SWARM_ATLAS/C17.md",
+        "sha256": "506fac2b4e0894c05b9c138f767b9d3056c29b69e7a98e6ed5d6e9095760718d"
+      },
+      {
+        "blob_sha": "1b611c99e59a7b9ef08ee719e6dc746835a0f4ba",
+        "path": "research/2026-10-13/SWARM_ATLAS/C18.md",
+        "sha256": "76d7b86c3cc063637a3d86d39b07bd8ae0da6dec33056d4671b3bf9dbff7fed4"
+      },
+      {
+        "blob_sha": "21a7cb70eb11f3b6aad1e6ec85b57dbaea034f98",
+        "path": "formal/SWM_A01_BaseChange.lean",
+        "sha256": "64284ec25dcd5c53a143ff69bc5669897625487b00e27e93cc103d6857707eda"
+      },
+      {
+        "blob_sha": "46d015e6c92210903d9bf00ad6a09a623a2e39b0",
+        "path": "formal/SWM_B09_InverseFamilies.lean",
+        "sha256": "a01ec81397ebc3f900d3eefee144bad6704cfcc40a5b752981df8526ae706c55"
+      },
+      {
+        "blob_sha": "e0eaed32eb30160ce1f50f91d34e135095257cac",
+        "path": "formal/SWM_B09_TopologicalCompletion.lean",
+        "sha256": "4c6b6d72f9cb3c57f1854ed8e05c0f2ea8226c80f47a4b2d6d0e5d799b8807e3"
+      },
+      {
+        "blob_sha": "54fdcfff5f5d3592d69836f85ed4c1cefada84d1",
+        "path": "research/2026-10-13/SWARM_ATLAS/registry.json",
+        "sha256": "7652d205295bdc8f39c9a100db91cd3766e7a3e9b5cc580bcc0c358e32958bd5"
+      }
+    ],
+    "PR50": [
+      {
+        "blob_sha": "f5ea15d8d2399cc46057697f82023f2266fb3226",
+        "path": "research/2026-10-13/SWARM_ATLAS/A01.md",
+        "sha256": "635906a2df19d4380ed0d7d5c078aceb4446482a9e2c987b7f0c745814298d9b"
+      },
+      {
+        "blob_sha": "5dd2f2893301bfd88e04671a40e011b2883558dd",
+        "path": "research/2026-10-13/SWARM_ATLAS/A06.md",
+        "sha256": "446e0d4b89de1f0b58fab7ae36d9984b1ccbebf199d1c58ad47d9658056a2e73"
+      },
+      {
+        "blob_sha": "1f1069e2df3449fabeee6e912297948a3966ea53",
+        "path": "research/2026-10-13/SWARM_ATLAS/B09.md",
+        "sha256": "850dfccdebd31be9609f83473413040fc9a48d5714332789b833e23df7bcf861"
+      },
+      {
+        "blob_sha": "ee1226487a3cba655471becf57acbf023f0ea681",
+        "path": "research/2026-10-13/SWARM_ATLAS/B10.md",
+        "sha256": "3454d2e1f26d410284856c1b54d94fcfa3f91966cdad87a00440f1f46c9e0451"
+      },
+      {
+        "blob_sha": "a06d6a178b62c67fff3699dfaf170724e63c4a0a",
+        "path": "research/2026-10-13/SWARM_ATLAS/C17.md",
+        "sha256": "6f6b0053b43ff2bba79fd1b07251a8dee6a6e49a134fbe81daafc93f5b5c6f1b"
+      },
+      {
+        "blob_sha": "ce0af5f6c6c83702e4815cd46b9e21a4b0ed1518",
+        "path": "research/2026-10-13/SWARM_ATLAS/C18.md",
+        "sha256": "61c66d15f9f751347bbce68a2a80a93e01c00f4b9e43cc2deb9543bb928244a0"
+      },
+      {
+        "blob_sha": "cd1b4d78373526ef0f73fc7b37b3034e7f039d9c",
+        "path": "research/2026-10-13/SWARM_ATLAS/C21.md",
+        "sha256": "4d24c158f6eea8b25b29911eb9b2386852e3d45274dea4b27cb55af421f0160d"
+      },
+      {
+        "blob_sha": "677d467e8c32f851d35b275fa898859707bdcc45",
+        "path": "research/2026-10-13/SWARM_ATLAS/F48.md",
+        "sha256": "83b4fe667ccebf3bc4ad1e9c475e4c1c2a108381a784a9a2943bcf524cf9768c"
+      },
+      {
+        "blob_sha": "17e9fbba1d1af7143dd94c21c2754313938993a6",
+        "path": "research/2026-10-13/SWARM_ATLAS/X03.md",
+        "sha256": "635c4409ebc5d15b4881dc5f1c0fe338121efa0411c0337d3daadf7d68b7f305"
+      },
+      {
+        "blob_sha": "b4f8ec6a35552d5f98f2bc1b628f7680ac953dae",
+        "path": "research/2026-10-13/SWARM_ATLAS/X07.md",
+        "sha256": "14436529d1569353e25eb9e14fae2e69b4c640297362ccf244181571f21cf29b"
+      },
+      {
+        "blob_sha": "3f5128d077ca21c0cb796905faffd0d9ea179f26",
+        "path": "formal/Swarm_Repair.lean",
+        "sha256": "bb80dd2e77713032ec8f93363373432976189903e7c79f77942e8d0100f6b4b2"
+      },
+      {
+        "blob_sha": "77c388e941f3cb57a58786ef20ac904299176161",
+        "path": "formal/swarm_topology/SwarmTopology.lean",
+        "sha256": "9528c3bdc7d6e6d3554582fe17eb9b05e49fd811cfcd9028cb381e5ad9b74c86"
+      },
+      {
+        "blob_sha": "1dd521d4ae5bf81b4101454166a39a1a55ed585a",
+        "path": "formal/swarm_topology/SwarmPolicyCompactness.lean",
+        "sha256": "477f1bfa2fe5d84747a38ce4abded2325f085293f156b27dcb5a7b3bc3f00f24"
+      },
+      {
+        "blob_sha": "27358c61d7ebd77d75e28e4e78c4c71f5f05a77d",
+        "path": "formal/swarm_topology/SwarmX01CompletionTransport.lean",
+        "sha256": "1510cfaca83bcbc5a30d128110525d8df2328a46d44d702036f245e455261141"
+      },
+      {
+        "blob_sha": "eadca665ecdc20c72da6aba1748957b04e8d2912",
+        "path": "formal/swarm_topology/lakefile.lean",
+        "sha256": "909cbf43311733a1abe2cbaf5e02f1c00215c8f6df2d39c6358e7808d4edb213"
+      },
+      {
+        "blob_sha": "16b38f6c8a763716a2f060e3f1ebb8bebe1e4d57",
+        "path": "formal/swarm_topology/lake-manifest.json",
+        "sha256": "84d434b2906254db63af929a0ccda51f1e085f80f500ecc909187376fd44d5f0"
+      },
+      {
+        "blob_sha": "2260e9a0a1ff9bd7d0ecb4a2ee1291487e868e09",
+        "path": "research/2026-10-13/SWARM_ATLAS/FINAL_KERNEL_RECEIPT.json",
+        "sha256": "eeb5720317bddc65a47c0fd934246877a6a9cf09a55070e4224deeb97eef8a8c"
+      },
+      {
+        "blob_sha": "5ec76e508105ecfdcaf6dba77cd2e23045ad00fb",
+        "path": "research/2026-10-13/SWARM_ATLAS/REGISTRY.json",
+        "sha256": "96155a53ed5bf0634f8372134fc2a8f70d99617f3a11ddee6642e6c82fbde817"
+      },
+      {
+        "blob_sha": "ebb0a96cbdee3418a1950ad6b358a2621943e18a",
+        "path": "research/2026-10-13/SWARM_ATLAS/reviews/RY_AUDIT.md",
+        "sha256": "c35c5016fc0a891a7683bc1eff2c6953878dc245a19da5fe34b939b0452ec7f1"
+      },
+      {
+        "blob_sha": "b7aee1c72fa4950cb8fbc956bd56b2cd399be75f",
+        "path": "observational_succ/swarm_gluing_cegis.py",
+        "sha256": "9955bd3f5896373efde9981d3a740dfc31145c9968ba775f0f5053acceb29c45"
+      }
+    ],
+    "PR51": [
+      {
+        "blob_sha": "ced650b156ea54f58808e3bbb5c2b93bc3f5d16d",
+        "path": "formal/EODCS_CambrianRealization.lean",
+        "sha256": "8260812a716cc8628ab16470219c92fc49772fd9fd3417ce73dc3c089e9c80cf"
+      },
+      {
+        "blob_sha": "00ebaf9187849ca7b03073c8899c79f2c5be6ad7",
+        "path": "research/2026-10-13/CAMBRIAN_C_GEOMETRY.md",
+        "sha256": "98b1a1106ac2a2c422a3507555dfa8bb1ccdcc75b63f1682b8c886d45d3c06ed"
+      },
+      {
+        "blob_sha": "e9e32eb564219b51ca0a2e94cc5b9dfadbe5de23",
+        "path": "research/2026-10-13/CAMBRIAN_STOCHASTIC_TRANSPORT.md",
+        "sha256": "b3b222a287a4c90b5c216966eaa552f38eec3775c0c75206af4ec2d62f9405e3"
+      },
+      {
+        "blob_sha": "5c44bb0fadb6a971358c1b45b70ad47054595c57",
+        "path": "research/2026-10-13/CAMBRIAN_AUDIT_C_RAW.json",
+        "sha256": "23c8ebebc0df3216de9a6f5f2828139c9147d39c8e3fa3a3adc86d8664847e89"
+      },
+      {
+        "blob_sha": "e31b29c1e2e4550b95e4d5fdfbe3527c67a7231a",
+        "path": "research/2026-10-13/CAMBRIAN_SWARM_MANIFEST.json",
+        "sha256": "0ff320a0205c1084411cc2ed5046a53b1a6de3eca96ea7c9466b6a59c86cd995"
+      },
+      {
+        "blob_sha": "0f59ad7e63f01fa06172f73a41f7df9abcd38222",
+        "path": "research/2026-10-13/CAMBRIAN_PUBLICATION_NOTES.md",
+        "sha256": "b85f38bbfd33b6e7c7cf3d24e1bd58a90769c155d8870d15b1cb5908a3bc9b4a"
+      }
+    ]
+  },
+  "status": "SURVIVES_WITH_EXPLICIT_GATES_SCOPED_REVIEW",
+  "toolchain_pins": {
+    "EOS_isolated": "leanprover/lean4:v4.19.0",
+    "PR49": "leanprover/lean4:v4.14.0",
+    "PR50": "leanprover/lean4:v4.14.0",
+    "PR51": "leanprover/lean4:v4.14.0"
+  }
+}

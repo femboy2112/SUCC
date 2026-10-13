@@ -1,0 +1,108 @@
+{
+  "all_s3_subgroups": 6,
+  "base_sections": 0,
+  "command": "python research/2026-10-13/SWARM_ATLAS/A04_probe.py",
+  "connected_cover_oracle": [
+    {
+      "admitting_section": 0,
+      "connected": 1,
+      "degree": 1,
+      "sections": 0
+    },
+    {
+      "admitting_section": 0,
+      "connected": 3,
+      "degree": 2,
+      "sections": 0
+    },
+    {
+      "admitting_section": 6,
+      "connected": 26,
+      "degree": 3,
+      "sections": 6
+    }
+  ],
+  "cover_assignments": 41,
+  "even_nonidentity_commutator": [
+    1,
+    2,
+    0
+  ],
+  "exact": true,
+  "exit_code": 0,
+  "finite_search_is_universal_proof": false,
+  "full_suite": "NOT RUN",
+  "git_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "holonomy_order": 6,
+  "lean_compilation": "NOT RUN",
+  "minimum_full_trivializing_cover_degree": 6,
+  "minimum_regular_section_cover_degree": 6,
+  "minimum_section_cover_degree": 3,
+  "nonfaithful_orbit_control": {
+    "full_trivializing_degree": 6,
+    "minimum_regular_section_cover_degree": 2,
+    "minimum_section_cover_degree": 2,
+    "orbits": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "regular_double_cover_section": [
+      3,
+      4
+    ]
+  },
+  "normal_s3_subgroups": 3,
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "probe_sha256": "e5a03eccf765817da84755a951e66ac5c8cfe0f4355ad26075726b83c301af1f",
+  "python": "3.12.3",
+  "s3_orbit_cover": {
+    "deck_invariant": true,
+    "deck_maps": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "degree": 3,
+    "descends": false,
+    "fiber_pair_counterexample": [
+      0,
+      1
+    ],
+    "pulled_back_holonomy_order": 2,
+    "section": [
+      0,
+      1,
+      2
+    ]
+  },
+  "source_generator_pair_checks": 36,
+  "source_generators": [
+    [
+      1,
+      0,
+      2
+    ],
+    [
+      0,
+      2,
+      1
+    ]
+  ],
+  "source_sha256": {
+    "formal/EODCS_CausalDescent.lean": "624c5ca37a17e3f69500611f1552c5afbd2640fdd124becab8a9f70482d6b880",
+    "observational_succ/holonomy_proof_transport.py": "5964e56c528227941d5da6f4f83dffe9a54119be811725f838005aa5b1ca1dd2",
+    "observational_succ/nonabelian_local_global.py": "f3e529956c5579622c8e1d9562086cdc77313bc39c96e9c56821df54eadaa344",
+    "observational_succ/voltage_cover_synthesis.py": "0fd4395cfe3678c1f27a36f05f2d50a4326cca00b09c21e45382627eaf01b59d"
+  },
+  "status": "TESTED MODEL",
+  "vertex_gauge_checks": 36
+}

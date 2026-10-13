@@ -1,0 +1,289 @@
+{
+  "RH_claimed": false,
+  "analytic_completion_constructed": false,
+  "arithmetic": "integers and Fractions only",
+  "bounds": {
+    "clock_depth": 6,
+    "difference_order": 10,
+    "digit_inputs": 128
+  },
+  "command": "python research/2026-10-13/SWARM_ATLAS/probes/E35_probe.py",
+  "compatible_nonanalytic_digit_map": [
+    {
+      "first_quadratic_ratio": "1",
+      "j": 0,
+      "second_quadratic_ratio": "5/9"
+    },
+    {
+      "first_quadratic_ratio": "1",
+      "j": 1,
+      "second_quadratic_ratio": "5/9"
+    },
+    {
+      "first_quadratic_ratio": "1",
+      "j": 2,
+      "second_quadratic_ratio": "5/9"
+    },
+    {
+      "first_quadratic_ratio": "1",
+      "j": 3,
+      "second_quadratic_ratio": "5/9"
+    },
+    {
+      "first_quadratic_ratio": "1",
+      "j": 4,
+      "second_quadratic_ratio": "5/9"
+    },
+    {
+      "first_quadratic_ratio": "1",
+      "j": 5,
+      "second_quadratic_ratio": "5/9"
+    },
+    {
+      "first_quadratic_ratio": "1",
+      "j": 6,
+      "second_quadratic_ratio": "5/9"
+    }
+  ],
+  "crt_synchronized_two_place_sequence": [
+    {
+      "modulus": 6,
+      "r": 1,
+      "residue": 4
+    },
+    {
+      "modulus": 36,
+      "r": 2,
+      "residue": 28
+    },
+    {
+      "modulus": 216,
+      "r": 3,
+      "residue": 136
+    },
+    {
+      "modulus": 1296,
+      "r": 4,
+      "residue": 1216
+    },
+    {
+      "modulus": 7776,
+      "r": 5,
+      "residue": 1216
+    },
+    {
+      "modulus": 46656,
+      "r": 6,
+      "residue": 16768
+    }
+  ],
+  "delayed_precision_control": [
+    {
+      "input_depth": 2,
+      "output_depth": 1
+    },
+    {
+      "input_depth": 3,
+      "output_depth": 2
+    },
+    {
+      "input_depth": 4,
+      "output_depth": 3
+    },
+    {
+      "input_depth": 5,
+      "output_depth": 4
+    },
+    {
+      "input_depth": 6,
+      "output_depth": 5
+    },
+    {
+      "input_depth": 7,
+      "output_depth": 6
+    }
+  ],
+  "exit_code": 0,
+  "fake_composite_geometric_identity_still_holds": true,
+  "finite_prefix_ambiguity": {
+    "alternative_at_minus_one": "-1",
+    "discontinuous_tail_coefficients": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "known_values": [
+      0,
+      0,
+      0
+    ]
+  },
+  "import_provenance": {
+    "archival_source_git_blob": "738a5f9884bbd6d49c26ef1a685e3c50bb8eb58e",
+    "declared_origin_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "local_origin_object_check_exit": 128
+  },
+  "incoherent_finite_tower": {
+    "depth_one_value": 0,
+    "depth_two_value": 1
+  },
+  "investigator": "E35",
+  "mahler_exponential_coefficients": [
+    "1",
+    "-3",
+    "9",
+    "-27",
+    "81",
+    "-243",
+    "729",
+    "-2187",
+    "6561",
+    "-19683",
+    "59049"
+  ],
+  "native_composite_rejection": true,
+  "native_kummer_control": {
+    "SUCC_FUCC_prime_jet_gap": 20,
+    "corrected_values_are_clock_compatible": true,
+    "corrected_zeta_residues": [
+      17,
+      17
+    ],
+    "global_Kummer_congruence_proved_from_finite_examples": false,
+    "modulus": 25,
+    "p_adic_L_function_or_measure_constructed": false,
+    "prime": 5,
+    "raw_zeta_residues": [
+      2,
+      17
+    ],
+    "resolution": 2,
+    "uncorrected_values_are_clock_compatible": false,
+    "unit_clock_period": 20,
+    "weights": [
+      2,
+      22
+    ]
+  },
+  "native_local_euler": {
+    "coefficient_valuation_levels": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "continued_local_euler_factor": "-1/2",
+    "error_valuation": 4,
+    "exact_error": "-81/2",
+    "initial_SUCC_jets": [
+      "1",
+      "-3",
+      "9",
+      "-27"
+    ],
+    "local_finite_precision_clock": "81",
+    "newton_evaluation_at_minus_one": "40",
+    "p": 3,
+    "p_adic_mahler_theorem_constructed": false,
+    "residue_one_mod_prime": true,
+    "terms": 4
+  },
+  "native_true_prime_alias_rejection": true,
+  "non_euler_control": "digit-spread has all clock coherence without analytic source identity",
+  "nontrivial_zero_inputs": false,
+  "odd_prime_parity_counterclock": [
+    {
+      "input": 3,
+      "output_difference": -2,
+      "r": 1,
+      "v3_output_difference": 0
+    },
+    {
+      "input": 9,
+      "output_difference": -2,
+      "r": 2,
+      "v3_output_difference": 0
+    },
+    {
+      "input": 27,
+      "output_difference": -2,
+      "r": 3,
+      "v3_output_difference": 0
+    },
+    {
+      "input": 81,
+      "output_difference": -2,
+      "r": 4,
+      "v3_output_difference": 0
+    },
+    {
+      "input": 243,
+      "output_difference": -2,
+      "r": 5,
+      "v3_output_difference": 0
+    },
+    {
+      "input": 729,
+      "output_difference": -2,
+      "r": 6,
+      "v3_output_difference": 0
+    }
+  ],
+  "p_adic_measure_constructed": false,
+  "physical_source_authentication": false,
+  "primary_pdf_sha256": {
+    "https://carmamaths.org/resources/mahler/docs/139.pdf": "a44c323551af254685774dfb604193342f326c21eb3b3935b9ee1e9774e0baef",
+    "https://numdam.org/article/BSMF_1964__92__117_0.pdf": "897dbb6a77b3a97ce0672279f16e58c95f7ced384bfcb7fb5c3b0b2fba3b5523"
+  },
+  "smallest_polynomial_counterclock": {
+    "degree": 2,
+    "depth": 1,
+    "inputs": [
+      0,
+      2
+    ],
+    "outputs": [
+      0,
+      1
+    ],
+    "p": 2
+  },
+  "source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "source_sha256": {
+    "observational_succ/arithmetic.py": "25398e89306bdacb6fe17e419cf695ad4f1c5bb41f4536200260862b6e0b579e",
+    "observational_succ/clock_mahler_interpolation.py": "2082ec4316d0fa92a1587748e36cfe6f82ba7d3d3b9c94a575c8fe8e7dbb36a6",
+    "observational_succ/coverage_sieve_crt.py": "a247038e93655c71a3f44599272b7bee394b3e4fd27bcf5620976614f81d1170",
+    "observational_succ/prime_clock_yoneda.py": "e19903f4411384b300359d5ee6891777bb3fc8bc90fdf611cb8a28d98ade3976",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+  },
+  "status": "TESTED MODEL; proofs are in E35.md",
+  "two_adic_parity_coefficient_valuations": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "unit_period_generalized_crt_failure": {
+    "periods": [
+      2,
+      4
+    ],
+    "residues": [
+      0,
+      1
+    ]
+  },
+  "zero_valuation_encoding": "null means positive infinity"
+}

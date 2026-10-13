@@ -1,0 +1,279 @@
+{
+  "branch": "research/swm-e36-2026-10-13",
+  "checks": {
+    "arbitrary_sources": 8,
+    "generalized_multiplicative_sources": 8,
+    "log_convolution_additivity_pairs": 16,
+    "nilpotence_exponent": 7,
+    "nilpotence_sharp_nonzero_index": 64,
+    "restriction_comparisons": 48
+  },
+  "command": "python research/2026-10-13/E36_dirichlet_log_probe.py --receipt research/2026-10-13/E36_DIRICHLET_LOG_RECEIPT.json",
+  "controls": {
+    "cancellation_a6_a12_2": {
+      "b12": "0",
+      "b6": "1",
+      "not_multiplicative": true
+    },
+    "complete_factorial_cells_b6": {
+      "additive": {
+        "00": "0",
+        "01": "0",
+        "10": "0",
+        "11": "-1"
+      },
+      "convolution": {
+        "00": "0",
+        "01": "0",
+        "10": "0",
+        "11": "0"
+      }
+    },
+    "complete_factorial_interactions": {
+      "additive": "-1",
+      "convolution": "0"
+    },
+    "consistent_prime_phase_pi": {
+      "b2": "-1",
+      "b4": "1/2",
+      "b8": "-1/3",
+      "mixed_log_defects": []
+    },
+    "fake_composite_log_impulse_6": {
+      "a2": "0",
+      "a3": "0",
+      "a6": "1",
+      "b6": "1"
+    },
+    "fake_source_a6_2": {
+      "all_mixed_log_defects": [
+        [
+          6,
+          "1"
+        ],
+        [
+          12,
+          "-1"
+        ],
+        [
+          18,
+          "-1"
+        ],
+        [
+          30,
+          "-1"
+        ],
+        [
+          36,
+          "1/2"
+        ],
+        [
+          42,
+          "-1"
+        ],
+        [
+          60,
+          "1"
+        ]
+      ],
+      "b6": "1",
+      "first_multiplicativity_defect": [
+        2,
+        3,
+        "1"
+      ]
+    },
+    "formal_nonanalytic_source": {
+      "a(2^k)": "k!",
+      "finite_prefix_multiplicative": true,
+      "other_prime_local_coefficients": "0",
+      "universal_divergence": "Proved by ratio (k+1)*2^(-sigma), not a finite test"
+    },
+    "integer_ring_not_closed": {
+      "a": "delta_1+delta_2",
+      "b4": "-1/2"
+    },
+    "late_mutation_a10_2": {
+      "agrees_through_6": true,
+      "b10": "1"
+    },
+    "matched_nonEuler_mixture": {
+      "a2": "0",
+      "a3": "0",
+      "a6": "1",
+      "b6": "1",
+      "first_multiplicativity_defect": [
+        2,
+        3,
+        "1"
+      ]
+    },
+    "omitted_ordered_path": {
+      "mutated_b6": "1/2",
+      "omitted": [
+        3,
+        2
+      ],
+      "reconstructed_a6": "3/2"
+    },
+    "prime_power_projection": {
+      "full_log_exp_inverse": true,
+      "projects_fake6_to_zeta": true,
+      "residual_split_inverse": true
+    },
+    "single_prime_coefficient_phase": {
+      "b6": "2"
+    },
+    "truncated_evaluation_not_a_ring_map": {
+      "horizon": 5,
+      "product_of_evaluations_at_s1": "1/6",
+      "truncated_delta2_star_delta3": "0"
+    }
+  },
+  "execution_head": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "exit_code": 0,
+  "horizon": 64,
+  "imported_provenance": [
+    {
+      "git_blob": "7f99150117c563c583be0fcc35fae1998a472162",
+      "original_git_blob": "7f99150117c563c583be0fcc35fae1998a472162",
+      "original_path": "actualization/dirichlet_lambert.py",
+      "path": "observational_succ/dirichlet_lambert.py",
+      "sha256": "d0b123bbe1f30388cb5da931e5bfc26960b7c40b014568746b8d7df9675320bf"
+    },
+    {
+      "git_blob": "65f24f44369375b3cd88fc0743f60c1d5fb2a0d5",
+      "original_git_blob": "65f24f44369375b3cd88fc0743f60c1d5fb2a0d5",
+      "original_path": "research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md",
+      "sha256": "27a06af50514921a493e6d4057e893e0c569c6e293a1e990650022420ca94a0c"
+    },
+    {
+      "git_blob": "738a5f9884bbd6d49c26ef1a685e3c50bb8eb58e",
+      "original_git_blob": "738a5f9884bbd6d49c26ef1a685e3c50bb8eb58e",
+      "original_path": "research/2026-10-10/CERTIFIED_FINITE_PRIME_TRANSPORT.md",
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/CERTIFIED_FINITE_PRIME_TRANSPORT.md",
+      "sha256": "6d8406f5bfa4dc8fa7adb2d52eb84216557dbbc8fdd6c04f5eec13058d2c21c0"
+    }
+  ],
+  "nonclaims": [
+    "No kernel proof or independently adjudicated theorem promotion",
+    "No analytic continuation, global source authenticity, positivity, RH, or zero inputs",
+    "Imported comparisons share arithmetic provenance; factor-path implementation is separate",
+    "No full suite run under investigator protocol"
+  ],
+  "origin_manifest_matches": true,
+  "parent_commit": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "probe_sha256": "454219e3bfb5bc93c00ff1e99334457943a0e539b862e6065ff1fab29a3d8b17",
+  "python_version": "3.12.3",
+  "schema": "SUCC-E36-exact-receipt-1",
+  "scope": "Exact rational finite horizon 64; universal theorem proved separately in dossier",
+  "source_origin_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "status": "TESTED MODEL",
+  "zeta_path_witnesses": {
+    "12": [
+      {
+        "ordered_factors": [
+          2,
+          2,
+          3
+        ],
+        "signed_contribution": "1/3",
+        "source_product": "1",
+        "weight": "1/3"
+      },
+      {
+        "ordered_factors": [
+          2,
+          3,
+          2
+        ],
+        "signed_contribution": "1/3",
+        "source_product": "1",
+        "weight": "1/3"
+      },
+      {
+        "ordered_factors": [
+          2,
+          6
+        ],
+        "signed_contribution": "-1/2",
+        "source_product": "1",
+        "weight": "-1/2"
+      },
+      {
+        "ordered_factors": [
+          3,
+          2,
+          2
+        ],
+        "signed_contribution": "1/3",
+        "source_product": "1",
+        "weight": "1/3"
+      },
+      {
+        "ordered_factors": [
+          3,
+          4
+        ],
+        "signed_contribution": "-1/2",
+        "source_product": "1",
+        "weight": "-1/2"
+      },
+      {
+        "ordered_factors": [
+          4,
+          3
+        ],
+        "signed_contribution": "-1/2",
+        "source_product": "1",
+        "weight": "-1/2"
+      },
+      {
+        "ordered_factors": [
+          6,
+          2
+        ],
+        "signed_contribution": "-1/2",
+        "source_product": "1",
+        "weight": "-1/2"
+      },
+      {
+        "ordered_factors": [
+          12
+        ],
+        "signed_contribution": "1",
+        "source_product": "1",
+        "weight": "1"
+      }
+    ],
+    "6": [
+      {
+        "ordered_factors": [
+          2,
+          3
+        ],
+        "signed_contribution": "-1/2",
+        "source_product": "1",
+        "weight": "-1/2"
+      },
+      {
+        "ordered_factors": [
+          3,
+          2
+        ],
+        "signed_contribution": "-1/2",
+        "source_product": "1",
+        "weight": "-1/2"
+      },
+      {
+        "ordered_factors": [
+          6
+        ],
+        "signed_contribution": "1",
+        "source_product": "1",
+        "weight": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "automatically_discovered_links": [
+    [
+      "electrical_RC:star:same-original",
+      "electrical_RC:twin:same-original",
+      "same_semantics",
+      3
+    ],
+    [
+      "electrical_RC:star:same-original",
+      "thermal_diffusion:star:thermal-analogy",
+      "thermal_electrical_law",
+      2
+    ],
+    [
+      "electrical_RC:twin:same-original",
+      "thermal_diffusion:star:thermal-analogy",
+      "thermal_electrical_law",
+      3
+    ]
+  ],
+  "connected_behavior_classes": [
+    [
+      "electrical_RC:star:same-original",
+      "electrical_RC:twin:same-original",
+      "thermal_diffusion:star:thermal-analogy"
+    ],
+    [
+      "electrical_RC:triangle:same-original"
+    ]
+  ],
+  "external_measurement_authenticated": false,
+  "math_not_physical_source_identification": true,
+  "model_bridges": {
+    "RH_or_Weil_positivity_proved": false,
+    "all_frequency_certificate_points": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "all_frequency_static_star_twin_equal": true,
+    "all_representations_physically_same": false,
+    "cross_domain_mathematical_adapter": "thermal_electrical_law",
+    "feedback_context_equivalent": true,
+    "parallel_context_equivalent": true,
+    "passive_derivative_psd": [
+      true,
+      true
+    ],
+    "physical_origin_transported": false,
+    "serial_absorption_probability_sums": [
+      "1",
+      "1"
+    ],
+    "star_exit_ratio": [
+      [
+        "1/5",
+        "3/10",
+        "1/2"
+      ]
+    ],
+    "static_vs_dynamic_counterexample": [
+      "1",
+      0,
+      0,
+      "5/3",
+      "8/5"
+    ],
+    "status": "CERTIFIED_CATEGORY_BRIDGES_AND_CONTEXTUAL_MODEL_ABSTRACTION"
+  },
+  "rejected_links": [
+    [
+      "electrical_RC:star:same-original",
+      "electrical_RC:triangle:same-original",
+      "FINITE_SOURCE_WITNESS:(Fraction(1, 1), 0, 0, Fraction(5, 3), Fraction(8, 5))"
+    ],
+    [
+      "electrical_RC:twin:same-original",
+      "electrical_RC:triangle:same-original",
+      "FINITE_SOURCE_WITNESS:(Fraction(1, 1), 0, 0, Fraction(5, 3), Fraction(8, 5))"
+    ],
+    [
+      "electrical_RC:triangle:same-original",
+      "thermal_diffusion:star:thermal-analogy",
+      "FINITE_SOURCE_WITNESS:(Fraction(1, 1), 0, 0, Fraction(8, 5), Fraction(5, 3))"
+    ]
+  ],
+  "source_repair": {
+    "RH_or_Weil_positivity_proved": false,
+    "all_frequency_physical_ontology_unique": false,
+    "behavioral_minimal_classes": [
+      [
+        0
+      ],
+      [
+        1
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "discovered_memory_generator": [
+      [
+        "0",
+        "-20/3"
+      ],
+      [
+        "1",
+        "25/3"
+      ]
+    ],
+    "discovered_model_category": "POSITIVE_LINEAR_MEMORY",
+    "failed_categories": [
+      [
+        "STATIC_MEMORYLESS",
+        "s=1,(0,0):41/24!=8/5"
+      ],
+      [
+        "TERMINAL_LOCAL_STORAGE",
+        "cross-port (0, 1) changes dynamically"
+      ],
+      [
+        "ONE_RELAXATION_MODE",
+        "q(2)=82/5 != 122/7"
+      ]
+    ],
+    "finite_passive_alias_holdout": "4",
+    "finite_passive_alias_holdout_difference": "1/283500",
+    "finite_passive_alias_modal_degrees": [
+      2,
+      3
+    ],
+    "finite_passive_alias_probe_points": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "independent_holdouts_confirmed": [
+      4,
+      11,
+      17
+    ],
+    "mode_dimension": 2,
+    "observed_hankel_determinant": "2/3",
+    "original_source_hidden_from_inverse": true,
+    "rational_reciprocal_coefficients": [
+      "5",
+      "3/2",
+      "3/4"
+    ],
+    "smallest_delayed_separator": [
+      "look",
+      "read"
+    ],
+    "source_physically_authenticated": false,
+    "static_conductances": [
+      "2",
+      "3",
+      "5"
+    ],
+    "status": "SOURCE_RELATIVE_CATEGORY_GENERATED_MEMORY_REPAIR_EXACT"
+  },
+  "source_to_Weil_positivity_identified": false,
+  "star_vs_twin_full_frequency_grade": {
+    "all_frequency": true,
+    "first_distinguishing_level": "NO_BOUNDARY_DISTINCTION_ALL_FREQUENCIES",
+    "hidden_intervention_equivalence": false,
+    "theorem": "rational degree-bound identity"
+  },
+  "static_vs_dynamic_grade": {
+    "all_frequency": false,
+    "first_distinguishing_level": "FIRST_DYNAMIC_DERIVATIVE",
+    "hidden_intervention_equivalence": false
+  }
+}

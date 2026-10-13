@@ -1,0 +1,81 @@
+{
+  "probabilistic_firewall": {
+    "empirical_likelihoods_calibrated": false,
+    "law_probabilities_identified_by_support": false,
+    "same_support_two_source_states": true,
+    "source_law_s0": [
+      [
+        "cold",
+        "1/4"
+      ],
+      [
+        "warm",
+        "3/4"
+      ]
+    ],
+    "source_law_s1": [
+      [
+        "cold",
+        "3/4"
+      ],
+      [
+        "warm",
+        "1/4"
+      ]
+    ]
+  },
+  "scope": {
+    "RH_or_completed_Weil_positivity_proved": false,
+    "arbitrary_unbounded_category_discovery": false,
+    "lean_proof_run_inside_receipt_script": false,
+    "original_mathematics_priority_claimed": false,
+    "physical_measurement_performed": false,
+    "probability_inferred_from_possibility": false,
+    "source_conditional_finite_relations": true
+  },
+  "set_valued_source": {
+    "composed_reconciled_observer_is_deterministic": true,
+    "deterministic_observation_descends": false,
+    "incompatible_original_fiber_witness": [
+      "s0",
+      "s1"
+    ],
+    "observable_set_valued_transition": [
+      [
+        "0",
+        [
+          "cold",
+          "warm"
+        ]
+      ]
+    ],
+    "obstructed_common_possible_reports": [],
+    "obstructed_may_reports": [
+      "cold",
+      "warm"
+    ],
+    "obstructed_modal_exact": false,
+    "physical_source_authenticated": false,
+    "probabilistic_interpretation_inferred_from_support": false,
+    "safety_claim_B": "undecided_without_finer_observation",
+    "safety_claim_everything": "guaranteed_within_declared_support",
+    "set_valued_observation_descends": true,
+    "source": "declared-branch",
+    "source_class_complete": true,
+    "source_multivalued": true,
+    "support_equal_but_likelihoods_different": true
+  },
+  "status": "EXACT_FINITE_EODCS_III_RELATIONAL_SOURCE",
+  "tight_may_common_observation": {
+    "common_possible": [],
+    "event_all": "guaranteed_within_declared_support",
+    "event_cold": "undecided_without_finer_observation",
+    "event_empty": "impossible_within_declared_support",
+    "exact_source_support_descends": false,
+    "may": [
+      "cold",
+      "warm"
+    ],
+    "original_report": "0"
+  }
+}

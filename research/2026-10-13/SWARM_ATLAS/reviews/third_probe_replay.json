@@ -1,0 +1,35 @@
+[
+  {
+    "id": "A07",
+    "command": [
+      "python",
+      "-B",
+      "research/2026-10-13/SWARM_ATLAS/A07_probe.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "245a71b270a3ec2ff29cb503b981d8d511579cd60b2bd8a22f14cab498abf673",
+    "stderr": ""
+  },
+  {
+    "id": "A08",
+    "command": [
+      "python",
+      "-B",
+      "research/2026-10-13/SWARM_ATLAS/A08_probe.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "e4912251b381faae0c88cbe9c9dcc15aa5a630f4cbb68c135dec1617b09495b7",
+    "stderr": ""
+  },
+  {
+    "id": "X03",
+    "command": [
+      "python",
+      "-B",
+      "research/2026-10-13/SWARM_ATLAS/X03_probe.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "b361f2e0082e430ca2f4fc44bea292e867fa2903d8d6f139928d0723f81dc352",
+    "stderr": ""
+  }
+]

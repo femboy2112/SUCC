@@ -1,0 +1,56 @@
+{
+  "claim_id": "SWM-A05",
+  "command": "python research/2026-10-13/SWARM_ATLAS/A05_probe.py",
+  "contradictory_pointwise_sizes": {
+    "a:left": 1,
+    "a:right": 1,
+    "b:left": 1,
+    "b:right": 1,
+    "d:left": 0,
+    "d:right": 0,
+    "u:left": 0,
+    "u:right": 1,
+    "y:left": 2,
+    "y:right": 2
+  },
+  "exit_code": 0,
+  "full_suite_run": false,
+  "kernel_proof_run": false,
+  "mutations_rejected": [
+    "forged-empty-left-singleton",
+    "forged-contradictory-right-singleton",
+    "doubled-empty-right",
+    "source-changing-map"
+  ],
+  "non_fully_faithful_fold_sizes": {
+    "left": 3,
+    "right": 2
+  },
+  "oracle_scope": "All source-preserving mediators for each supplied cone/cocone and apex 0,1,2 rows per source; 20 pointwise cases plus empty controls",
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "physical_origin_authenticated": false,
+  "positive_pointwise_sizes": {
+    "a:left": 1,
+    "a:right": 1,
+    "b:left": 1,
+    "b:right": 1,
+    "d:left": 0,
+    "d:right": 1,
+    "u:left": 0,
+    "u:right": 1,
+    "y:left": 2,
+    "y:right": 2
+  },
+  "production_empty_capsule_refused": true,
+  "production_empty_pullback_refused": true,
+  "sha256": {
+    "observational_succ/categorical_model_bridges.py": "4433191c51d28390b30ef321267bf996146cba96b337f14af51a3ee4a75b0974",
+    "observational_succ/relational_model_genetics.py": "d4dabc68e5188a6fa6107525d829269e5eea809fba52006223df4c373547050d",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+    "research/2026-10-13/SWARM_ATLAS/A05.md": "3c57a15a696b3c1ac57083e9c6878663cf05fdb97289bd13e973588f52914b33",
+    "research/2026-10-13/SWARM_ATLAS/A05_probe.py": "cb0be28e61e8d8dc2d448afd4bbe06af5ee3832d0cd9e6a82e00abae117d638c"
+  },
+  "status": "TESTED MODEL",
+  "two_source_empty_right_size": 2
+}

@@ -58,6 +58,12 @@ jobs:
           PY
       - name: Run all mathematical, logic, quantum, source and hostile tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Replay exact categorical repair and cross-model bridge receipt
+        run: |
+          python scripts/categorical_model_bridge_probe.py > "$RUNNER_TEMP/categorical-model-bridge.json"
+          diff -u research/2026-10-12/CATEGORICAL_MODEL_BRIDGE_RECEIPT.json "$RUNNER_TEMP/categorical-model-bridge.json"
+      - name: Replay exact source-driven RC inverse reconstruction receipt
+        run: python scripts/dynamic_boundary_inverse_probe.py > "$RUNNER_TEMP/dynamic-boundary-inverse.json"
       - name: Reconstruct the historical Galilean-to-Lorentz SUCC repair
         run: |
           python scripts/historical_galilean_lorentz_probe.py > "$RUNNER_TEMP/historical-galileo-lorentz.json"
@@ -995,3 +1001,66 @@ jobs:
             ${{ runner.temp }}/prime-clock-y.json
           if-no-files-found: warn
           retention-days: 14
+
+
+  heuristic-source-verification:
+    name: Contextual Bayesian SUCC heuristic guards
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install verified research dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Exact heuristic and source-provenance tests
+        run: python -m unittest discover -s tests -p 'test_*heuristic*.py' -v
+      - name: Independently rederive stored Bayesian-source receipt
+        run: |
+          python scripts/contextual_heuristic_probe.py > "$RUNNER_TEMP/contextual-heuristic.json"
+          diff -u research/2026-10-12/CONTEXTUAL_HEURISTIC_RECEIPT.json "$RUNNER_TEMP/contextual-heuristic.json"
+
+  genetic-model-fusion-verification:
+    name: Typed genetic model fusion and source-coupling guards
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install mathematical research package
+        run: python -m pip install -e ".[test]"
+      - name: Check exact genetic fusion and holonomy tests
+        run: |
+          python -m unittest discover -s tests -p 'test_relational_model_genetics.py' -v
+          python -m unittest discover -s tests -p 'test_evolutionary_bridge_search.py' -v
+          python -m unittest discover -s tests -p 'test_genetic_obstruction_holonomy.py' -v
+          python -m unittest discover -s tests -p 'test_source_coupling_bounds.py' -v
+          python -m unittest discover -s tests -p 'test_genetic_receipt.py' -v
+      - name: Source-derived receipt must be byte identical
+        run: |
+          python scripts/genetic_model_fusion_probe.py > "$RUNNER_TEMP/genetic-model-fusion.json"
+          diff -u research/2026-10-12/GENETIC_MODEL_FUSION_RECEIPT.json "$RUNNER_TEMP/genetic-model-fusion.json"
+      - name: Explicit RH/source-provenance firewalls
+        run: |
+          python - <<'PY'
+          import json
+          with open('research/2026-10-12/GENETIC_MODEL_FUSION_RECEIPT.json') as f:
+              r=json.load(f)
+          assert r['status']=='EXACT_FINITE_TYPED_GENETIC_MODEL_FUSION_RECEIPT'
+          assert r['nonflat_connection']['global_section_exists'] is False
+          assert r['genetic_grammar']['fitness_is_not_proof'] is True
+          assert r['scope']['physical_source_authenticated'] is False
+          assert r['scope']['RH_or_Weil_positivity_proved'] is False
+          assert r['scope']['universal_open_ended_functor_invention'] is False
+          PY

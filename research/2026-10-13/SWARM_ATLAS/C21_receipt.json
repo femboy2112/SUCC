@@ -1,0 +1,109 @@
+{
+  "arithmetic": "integer and Fraction exact; infinity is nontermination sentinel",
+  "baseline": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "claim_status": {
+    "C21a": "PROVED LOCAL; classical attractor structure; principal acceptance pending",
+    "C21b": "PROVED LOCAL; prose finite-value attainment proof; principal acceptance pending",
+    "execution": "TESTED MODEL; bounded exact controls only",
+    "formal_kernel": "not run",
+    "full_suite": "not run under investigator protocol"
+  },
+  "commands": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 python research/2026-10-13/SWARM_ATLAS/C21_probe.py",
+      "exit_code": 0,
+      "result": "all assertions passed"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "result": "no tracked whitespace errors before staging"
+    },
+    {
+      "command": "git diff --cached --check",
+      "exit_code": 0,
+      "result": "all three staged artifacts checked"
+    }
+  ],
+  "controls": {
+    "conditional": {
+      "rank": 2,
+      "reachable_beliefs": 13
+    },
+    "correlated_source": {
+      "full_destructive_rank": null,
+      "prior_rank": 0
+    },
+    "destructive": {
+      "rank": null,
+      "reachable_beliefs": 7
+    },
+    "hidden_cost_correlation": {
+      "actual_totals": [
+        9,
+        9
+      ],
+      "exact_minimax": 9,
+      "sum_of_separate_maxima": 18
+    },
+    "joint": {
+      "rank": 1,
+      "reachable_beliefs": 16
+    },
+    "nondestructive": {
+      "rank": 2,
+      "reachable_beliefs": 9
+    },
+    "rank_is_not_cost": {
+      "minimum_rank": 1,
+      "rank_one_cost": 5,
+      "rank_two_cost": 1
+    },
+    "uncertain_original_current": {
+      "lost_rank": null,
+      "multivalued_rank": 1
+    },
+    "zero_cost_nontermination": {
+      "adversarial_retry_rank": null,
+      "private_menu_rank": null,
+      "proper_value": "1/3",
+      "wait_only_rank": null
+    }
+  },
+  "discovery_failures": [
+    {
+      "command": "git cat-file -t ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+      "exit_code": 128,
+      "result": "imported source Git object unavailable locally; no imported path changed"
+    },
+    {
+      "command": "sed -n 1,190p research/2026-10-11/ADAPTIVE_PROOF_POLICY.md",
+      "exit_code": 2,
+      "result": "path absent; actual native dossier is NONCOMMUTING_PROOF_TRANSPORT.md"
+    }
+  ],
+  "exhaustive_native_agreements": 256,
+  "hidden_state_or_actual_cost_observed_by_policy": false,
+  "provenance": {
+    "frozen_foundations_git_blob": "04408ed96bd369b5063868eb5ad5664824d18043",
+    "frozen_foundations_matches_manifest": true,
+    "import_git_object_available_locally": false,
+    "import_source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "native_adaptive_origin": "5483f077745cdf31f363ef0da6b96d214188503b",
+    "native_transport_last_change": "89caebe3289ffd1ca97b4c30f4af00c4c990b828",
+    "protocol_path": "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/PROTOCOL.md"
+  },
+  "python": "3.12.3",
+  "resets_assumed": false,
+  "scope": "bounded controls only; prose proof is not mechanically certified",
+  "sha256": {
+    "observational_succ/adaptive_proof_policy.py": "433c32b2c81128be615f8dc9cb39d556ff6781bed3a869524fe6effb41f2da4d",
+    "observational_succ/noncommuting_proof_transport.py": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+    "research/2026-10-11/NONCOMMUTING_PROOF_TRANSPORT.md": "a2188e6e35c2b1e511d11387ec1eccd64ffef00dc7aacdde9569c12cfb62c410",
+    "research/2026-10-13/SWARM_ATLAS/C21.md": "bdd72996fafeb2aa4b04d2cbf72daa5f65d025f1b1225a5c63da494a5c77b88c",
+    "research/2026-10-13/SWARM_ATLAS/C21_probe.py": "0770e4e4913e9e559cb8a896cd0393d697383c08dcd03a820f2bd2a8a9d36465"
+  },
+  "status": "TESTED MODEL"
+}

@@ -1,0 +1,86 @@
+{
+  "bridge_sources_distinct_contexts": [
+    "clock",
+    "thermal"
+  ],
+  "generated_semantic_bridge": {
+    "0": "cold",
+    "1": "warm"
+  },
+  "genetic_grammar": {
+    "bounded_optimum_reached": true,
+    "fitness_is_not_proof": true,
+    "new_derived_model": "discovered-invariant",
+    "proposed_fitness": "18",
+    "searched_candidates": 8
+  },
+  "independently_derived_new_relation": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "1"
+    ]
+  ],
+  "marginal_coupling": {
+    "correlated_joint_rank_lower_bound": 2,
+    "event_marginals": [
+      "2/3",
+      "3/4"
+    ],
+    "independent_coupling_example": "1/2",
+    "possible_intersection_interval": [
+      "5/12",
+      "2/3"
+    ]
+  },
+  "minimal_three_model_unsat_core": [
+    "A",
+    "B",
+    "C"
+  ],
+  "nonflat_connection": {
+    "global_section_exists": false,
+    "holonomy": 1,
+    "new_representation": "SOURCE_DERIVED_NONFLAT_Z2_CONNECTION_NOT_GLOBAL_SECTION",
+    "source_loop": [
+      "clock:x-y",
+      "mechanical:x-z",
+      "thermal:y-z"
+    ]
+  },
+  "scope": {
+    "RH_or_Weil_positivity_proved": false,
+    "exact_finite_mathematics": true,
+    "generated_bridges_source_class_conditional": true,
+    "genetic_fitness_is_mathematical_proof": false,
+    "new_independent_priority_claimed": false,
+    "physical_source_authenticated": false,
+    "quantum_superposition_claimed": false,
+    "universal_open_ended_functor_invention": false
+  },
+  "status": "EXACT_FINITE_TYPED_GENETIC_MODEL_FUSION_RECEIPT",
+  "three_symbol_growth": {
+    "emergent_mod3_relation": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1"
+      ],
+      [
+        "2",
+        "2"
+      ]
+    ],
+    "finite_grammar_not_global_search": true,
+    "genetic_seed0_succeeds": false,
+    "genetic_seed1_succeeds": true,
+    "grammar_size": 24,
+    "seed0_exhaustive_rescue": true
+  }
+}

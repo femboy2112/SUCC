@@ -1,0 +1,79 @@
+{
+  "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+  "dependency_commits": {
+    "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+    "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+    "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+    "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d",
+    "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+    "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+    "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+    "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d"
+  },
+  "checks": [
+    {
+      "command": [
+        "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+        "-j1",
+        "-M2048",
+        "-o",
+        "Cache/IO.olean",
+        "Cache/IO.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 2.9202,
+      "observed_process_tree_peak_rss_kib": 221740,
+      "minimum_system_available_memory_kib": 1665956
+    },
+    {
+      "command": [
+        "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+        "-j1",
+        "-M2048",
+        "-o",
+        "Cache/Hashing.olean",
+        "Cache/Hashing.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 1.5125,
+      "observed_process_tree_peak_rss_kib": 277060,
+      "minimum_system_available_memory_kib": 1548832
+    },
+    {
+      "command": [
+        "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+        "-j1",
+        "-M2048",
+        "-o",
+        "Cache/Requests.olean",
+        "Cache/Requests.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 1.4112,
+      "observed_process_tree_peak_rss_kib": 282908,
+      "minimum_system_available_memory_kib": 1289284
+    },
+    {
+      "command": [
+        "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+        "-j1",
+        "-M2048",
+        "--run",
+        "/home/leah/succ_lab/mathlib-4.14/SWMCache.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "Selective dependency modules: 781\nNo files to download\nDecompressing 781 file(s)\nUnpacked in 102 ms\nCompleted successfully!\n",
+      "stderr": "",
+      "elapsed_seconds": 0.8072,
+      "observed_process_tree_peak_rss_kib": 262400,
+      "minimum_system_available_memory_kib": 1325388
+    }
+  ],
+  "result": "PASS"
+}

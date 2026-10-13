@@ -1,0 +1,71 @@
+[
+  {
+    "assignment": "X02 independent",
+    "exit_code": 0,
+    "stdout_sha256": "54d9195655d45d9e23a9da5e29a3e1f17a793a34b79adf448aa4dc8b2241f176",
+    "output_keys": [
+      "S3_informative_erasure",
+      "diagonal_not_product",
+      "independence_limit",
+      "novelty",
+      "physical_calibration",
+      "reviewed_commit",
+      "reviewed_dossier_sha256",
+      "reviewer_input",
+      "strict_contract_separation",
+      "unrelated_leaf_instrument_counterexample",
+      "zero_normalization"
+    ]
+  },
+  {
+    "assignment": "B12",
+    "exit_code": 0,
+    "stdout_sha256": "5d17ee172a3110b0a3707207d4b46f54f3525ad93b04a6f96e8509e2c76193ef",
+    "output_keys": [
+      "checks_passed",
+      "claim_id",
+      "finite_premise_closure",
+      "finite_source_domain",
+      "mandatory_full_repository_validation_run",
+      "negative_witnesses",
+      "original_source_substitution",
+      "parent_sha",
+      "probe_sha256",
+      "scope",
+      "source_sha256"
+    ]
+  },
+  {
+    "assignment": "B13",
+    "exit_code": 0,
+    "stdout_sha256": "2b9830c91e78a6cfbeeb3df7a17808d64fb283ea6906c104f7008fc96c3a3390",
+    "output_keys": [
+      "academic_novelty_claimed",
+      "branch",
+      "claim_id",
+      "command",
+      "compiler_run",
+      "elapsed_seconds",
+      "exact_horn_probe",
+      "exit_code",
+      "full_suite_run",
+      "hostile_controls",
+      "id",
+      "native_smoke",
+      "parent_sha",
+      "physical_infinity_performed",
+      "preserved_setup_failures",
+      "primary_sources",
+      "probe_sha256",
+      "probe_status",
+      "proof_assistant_kernel_checked",
+      "proof_status",
+      "provenance"
+    ]
+  },
+  {
+    "assignment": "B13 temporary-receipt attempt",
+    "exit_code": 1,
+    "failure": "Explicit --receipt path rejected by author scope guard; no mathematical assertion failed. Retried stdout-only mode successfully."
+  }
+]

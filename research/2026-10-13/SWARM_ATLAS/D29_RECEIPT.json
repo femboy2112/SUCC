@@ -1,0 +1,153 @@
+{
+  "arithmetic": "exact integers; no runtime imports",
+  "controls": {
+    "nonintertwining": {
+      "f": [
+        1,
+        1
+      ],
+      "g_pi": 0,
+      "pi_f": 1,
+      "projection": [
+        0,
+        1
+      ],
+      "witness_state": 0,
+      "wrong_g": [
+        0,
+        1
+      ]
+    },
+    "noninvertible_pullback": {
+      "Inv_source": [
+        1
+      ],
+      "f": [
+        1,
+        1
+      ],
+      "g": [
+        0
+      ],
+      "projection": [
+        0,
+        0
+      ],
+      "pullback_Inv_target": [
+        0,
+        1
+      ]
+    },
+    "outside_domain_permutation": {
+      "all_eight_neighborhoods_checked": true,
+      "f": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        0
+      ],
+      "g": [
+        1,
+        2,
+        0
+      ],
+      "observed_period": 3,
+      "projection": [
+        0,
+        1,
+        2,
+        0,
+        1,
+        2
+      ],
+      "source_period": 6
+    },
+    "period_loss": {
+      "f": [
+        1,
+        0
+      ],
+      "g": [
+        0
+      ],
+      "observed_period": 1,
+      "projection": [
+        0,
+        0
+      ],
+      "source_period": 2
+    },
+    "representation_reconstruction": {
+      "f": [
+        0,
+        1,
+        1
+      ],
+      "forget_refinement": [
+        0,
+        1,
+        0
+      ],
+      "intervention_0_to_2_cycles": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "old_autonomous_transition_exists": false,
+      "old_report": [
+        0,
+        1,
+        0
+      ],
+      "original_source_law_edited": false,
+      "refined_report": [
+        0,
+        1,
+        2
+      ],
+      "refined_transition": [
+        0,
+        1,
+        1
+      ],
+      "same_old_report_next_outputs": [
+        0,
+        1
+      ],
+      "three_step_itineraries": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  "counts": {
+    "bijection_pullback_cases": 1954,
+    "independent_invariant_oracle_checks": 70064,
+    "lawful_maps": 5284,
+    "neighborhood_cases": 35032,
+    "nonbijection_pullback_failures": 8043,
+    "nonintertwining_maps": 8136,
+    "orbit_image_cases": 20830
+  },
+  "domain": "finite deterministic maps; n<=4, m<=3",
+  "index_computed_by_probe": false,
+  "physical_source_authenticated": false
+}

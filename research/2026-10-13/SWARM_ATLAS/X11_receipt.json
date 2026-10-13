@@ -1,0 +1,268 @@
+{
+  "actual_prepared_bit_identification_claimed": false,
+  "address_space_limit_bytes": 268435456,
+  "branch": "research/swm-x11-2026-10-13",
+  "claim_id": "SWM-X11",
+  "closed_no_input_generators_checked": 251,
+  "command": "PYTHONDONTWRITEBYTECODE=1 timeout 30s python research/2026-10-13/SWARM_ATLAS/X11_probe.py",
+  "controller_seed": 1107,
+  "controls": {
+    "identity_only_toolkit_refutes_unrestricted_dominance_necessity": {
+      "filter_complete_safe_choices": [],
+      "identity_only_safe_choices": [
+        0,
+        1
+      ],
+      "incomparable_supports": true
+    },
+    "irrevocable_first_safe_choice": {
+      "first_safe_bit": 1,
+      "later_safe_set": [
+        0,
+        1
+      ],
+      "retained_bit": 1
+    },
+    "mixture_escape_changes_original_class": {
+      "inside_fixed_C": false,
+      "mixture": [
+        [
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "1/2"
+        ]
+      ]
+    },
+    "one_state_stationary_instrument_no_deadline": {
+      "complete_outcome_effect_sum": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "controller_states": 1,
+      "late_branch_likelihood_P0": "1/68719476736",
+      "rank_drop_at": 18,
+      "selected_word_is_not_forced": true
+    },
+    "reset_refutes_singleton_necessity_for_choice": {
+      "current_states": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "original_bit_report": null,
+      "original_candidates": [
+        0,
+        1
+      ],
+      "safe_choices": [
+        0,
+        1
+      ]
+    },
+    "source_choice_does_not_identify_original_bit": {
+      "both_original_candidates": [
+        0,
+        1
+      ],
+      "original_bit_report": null,
+      "safe_bit": 0
+    }
+  },
+  "cycles_kernel_plateau_checked_at_powers": [
+    2,
+    3
+  ],
+  "cylinder_extension_receipts": [
+    {
+      "continuation_survivor": 1,
+      "identity_prefix": 0,
+      "proposed": 0
+    },
+    {
+      "continuation_survivor": 0,
+      "identity_prefix": 0,
+      "proposed": 1
+    },
+    {
+      "continuation_survivor": 1,
+      "identity_prefix": 2,
+      "proposed": 0
+    },
+    {
+      "continuation_survivor": 0,
+      "identity_prefix": 2,
+      "proposed": 1
+    },
+    {
+      "continuation_survivor": 1,
+      "identity_prefix": 17,
+      "proposed": 0
+    },
+    {
+      "continuation_survivor": 0,
+      "identity_prefix": 17,
+      "proposed": 1
+    },
+    {
+      "continuation_survivor": 1,
+      "identity_prefix": 71,
+      "proposed": 0
+    },
+    {
+      "continuation_survivor": 0,
+      "identity_prefix": 71,
+      "proposed": 1
+    }
+  ],
+  "execution_checkout_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+  "exit_code": 0,
+  "full_suite_or_compiler_run": false,
+  "generators_all_tables_N_1_2": 203,
+  "imported_ordinal_source_verification": {
+    "byte_identical": true,
+    "command_argv": [
+      "git",
+      "-C",
+      "/home/leah/FuckingRH",
+      "show",
+      "ba075348b7bcc66d938b3e0ca96c26e95bba340a:actualization/ordinal_succ_report.py"
+    ],
+    "exit_code": 0,
+    "source_and_destination_sha256": "70ea2ad6b80a9f4b1a03d5d5aa43327ed43fa109f9bb1c79085dc5de0d66e091"
+  },
+  "infinite_word_executed": false,
+  "max_rss_kib": 17836,
+  "maximum_checked_deadline": 6,
+  "negative_information_names_checked": 120,
+  "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+  "primary_sources": [
+    "https://arxiv.org/pdf/1312.7305",
+    "https://www.cs.ox.ac.uk/people/samson.abramsky/handbook.pdf",
+    "https://arxiv.org/pdf/quant-ph/0107090",
+    "https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf"
+  ],
+  "program_indices_equated_with_oracle_names": false,
+  "rational_separating_projectors": [
+    {
+      "projector": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "reject_bit": 0,
+      "survive_bit": 1
+    },
+    {
+      "projector": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "reject_bit": 1,
+      "survive_bit": 0
+    },
+    {
+      "projector": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "reject_bit": 1,
+      "survive_bit": 0
+    },
+    {
+      "projector": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "reject_bit": 1,
+      "survive_bit": 0
+    },
+    {
+      "projector": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "reject_bit": 0,
+      "survive_bit": 1
+    }
+  ],
+  "refuted_nonempty_promises": 58,
+  "root_candidate_status_at_input": "PRINCIPAL DERIVATION, PENDING NON-DERIVER CRUCIBLE",
+  "seeded_N_3_4_cases": 48,
+  "selected_outcomes_forced_by_generator_claimed": false,
+  "sha256": {
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/B11.md": "09064418e9c8c19edc0051891c74ce12d38f5137bb4c7b59caeec8b992371554",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/B12.md": "44af0cc519a259dfab222ad6012cc5f5ec18f266c5e4b590701b6f308159dd94",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/B13.md": "3ae37ec503ddf4c3a13d0a0064053d6ba46453b20600e12e7d774089560e4620",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/C19.md": "3863e853e952a785188619dbd3c8b0203d15fc3ffb8a3619d195208605d01f76",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/X07.md": "5a6bada80b5adb6b06ab236b66f91095e37b1407e02821317696f072266c37cb",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/C19_EFFECTIVE_SELECTOR_CANDIDATE.md": "e5b9e5ef5e2d2e93692ccf3a246e5edca77b96bb8633e03301c38f7090c97a54",
+    "/home/leah/succ_lab/swm-x11/AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "/home/leah/succ_lab/swm-x11/docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "/home/leah/succ_lab/swm-x11/observational_succ/constructive_frontier.py": "9481b9d5bfc517b68399af85b9e6913673ff7c0fd29e6ec6741071f024162d60",
+    "/home/leah/succ_lab/swm-x11/observational_succ/ordinal_succ_report.py": "70ea2ad6b80a9f4b1a03d5d5aa43327ed43fa109f9bb1c79085dc5de0d66e091",
+    "/home/leah/succ_lab/swm-x11/provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "/home/leah/succ_lab/swm-x11/provenance/origins/fuckingrh/research/2026-10-10/INFINITE_REALIZATION_LIMITS.md": "97b7520807c19ff86ca4869f4212632dec6416fe0cd9a6f60e11912f1738bb67",
+    "/home/leah/succ_lab/swm-x11/research/2026-10-13/SWARM_ATLAS/X11.md": "3b95abc76ffef92fe69fd9b5d2de378af2f9a65e73fb1cd4045ed580ca72a2e6",
+    "/home/leah/succ_lab/swm-x11/research/2026-10-13/SWARM_ATLAS/X11_probe.py": "90cb774f0f18eefe528c2ff584b6b538d8d03cc0f5571616bd08a41c2dd3341b"
+  },
+  "status": "TESTED MODEL",
+  "universal_diagonal_executed": false,
+  "valid_generators": 193,
+  "wall_seconds": 0.7589451810345054,
+  "written_proof_status": "PROVED LOCAL, pending fresh non-deriver review"
+}

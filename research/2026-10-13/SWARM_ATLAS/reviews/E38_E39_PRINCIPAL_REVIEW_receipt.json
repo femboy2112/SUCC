@@ -1,0 +1,11 @@
+{
+  "initial_tooling_failure": {
+    "exit": 1,
+    "reason": "Wrong local certificate directory; corrected parents[4] to parents[2], no mathematical gate suppressed"
+  },
+  "corrected_run": {
+    "exit": 0,
+    "stdout": "{\"exit\": 0, \"independent_edges\": 336, \"global_component\": 100, \"nonprime_halo\": 265, \"squared_jump\": 2, \"e38_nonnegative_coefficients_checked\": 128, \"analytic_claims\": \"paper derivation only; no numerical integrals\"}\n",
+    "stderr": ""
+  }
+}

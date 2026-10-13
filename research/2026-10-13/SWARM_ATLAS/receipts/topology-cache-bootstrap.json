@@ -1,0 +1,50 @@
+{
+  "mathlib_tag": "v4.14.0",
+  "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+  "external_worktree": "/home/leah/succ_lab/mathlib-4.14",
+  "root_lean_pin": "leanprover/lean4:v4.14.0",
+  "cache_source_hashes": "Original Cache.Hashing.getRootHash/getFileHash; pinned manifest/dependency revisions unchanged",
+  "download_and_unpack": "Original Cache.Requests.downloadFiles and Cache.IO.unpackCache",
+  "selected_roots": [
+    "Mathlib/Topology/Constructions.lean",
+    "Mathlib/Topology/Compactness/Compact.lean",
+    "Mathlib/Topology/Homeomorph.lean",
+    "Mathlib/Topology/Separation/Basic.lean"
+  ],
+  "downloaded_dependency_modules": 781,
+  "wrapper_sha256": "548b6b3ed60c95836d4a6ac632c34ca09ee7f1ee335ada295d6dd092c90d0eee",
+  "failures_preserved": [
+    {
+      "attempt": "standard Cache/Main.lean get",
+      "exit": 1,
+      "cause": "Unrelated ProofWidgets browser-widget cloud-release fetch failed before topology cache download"
+    },
+    {
+      "attempt": "initial bounded wrapper with original all-Mathlib hashing",
+      "exit": -6,
+      "cause": "std::bad_alloc under1GiB virtual address cap"
+    },
+    {
+      "attempt": "selected-root wrapper, default threads under1.5GiB virtual address cap",
+      "exit": -6,
+      "cause": "std::bad_alloc; actual RSS not an OOM claim"
+    }
+  ],
+  "successful_command": [
+    "lean4.14",
+    "-j1",
+    "-M768",
+    "--run",
+    "SWMCache.lean"
+  ],
+  "successful_limits": {
+    "virtual_address_bytes": 2147483648,
+    "lean_memory_megabytes": 768,
+    "threads": 1,
+    "timeout_seconds": 300
+  },
+  "sampled_rss_kib": 266872,
+  "sampled_rss_note": "single ps sample during successful run, not peak",
+  "result": "781 modules downloaded/unpacked, exit0",
+  "defaults_note": "Elan installed the requested4.14 toolchain during upstream widgets helper; default selection remained stable; no repository pin changed"
+}

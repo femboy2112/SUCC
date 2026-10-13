@@ -1,0 +1,480 @@
+{
+  "averaging": {
+    "conserved_mean": "7/4",
+    "final_range": "15/16",
+    "initial_vectors_checked": 1467,
+    "nonperiodic_common_time_trace": [
+      {
+        "common_time": "0",
+        "decoded_offsets": [
+          "-3",
+          "1",
+          "7",
+          "2"
+        ],
+        "event": 0,
+        "local_values": [
+          "-3",
+          "9",
+          "17/2",
+          "47/3"
+        ]
+      },
+      {
+        "common_time": "1/3",
+        "decoded_offsets": [
+          "-3",
+          "1",
+          "9/2",
+          "9/2"
+        ],
+        "event": 1,
+        "local_values": [
+          "-8/3",
+          "29/3",
+          "21/4",
+          "401/18"
+        ]
+      },
+      {
+        "common_time": "1",
+        "decoded_offsets": [
+          "-3",
+          "11/4",
+          "11/4",
+          "9/2"
+        ],
+        "event": 2,
+        "local_values": [
+          "-2",
+          "29/2",
+          "29/8",
+          "143/6"
+        ]
+      },
+      {
+        "common_time": "2",
+        "decoded_offsets": [
+          "-1/8",
+          "-1/8",
+          "11/4",
+          "9/2"
+        ],
+        "event": 3,
+        "local_values": [
+          "15/8",
+          "43/4",
+          "41/8",
+          "157/6"
+        ]
+      },
+      {
+        "common_time": "10/3",
+        "decoded_offsets": [
+          "-1/8",
+          "-1/8",
+          "29/8",
+          "29/8"
+        ],
+        "event": 4,
+        "local_values": [
+          "77/24",
+          "161/12",
+          "135/16",
+          "1961/72"
+        ]
+      },
+      {
+        "common_time": "5",
+        "decoded_offsets": [
+          "-1/8",
+          "-1/8",
+          "29/8",
+          "29/8"
+        ],
+        "event": 5,
+        "local_values": [
+          "39/8",
+          "67/4",
+          "175/16",
+          "249/8"
+        ]
+      },
+      {
+        "common_time": "7",
+        "decoded_offsets": [
+          "-1/8",
+          "7/4",
+          "7/4",
+          "29/8"
+        ],
+        "event": 6,
+        "local_values": [
+          "55/8",
+          "49/2",
+          "89/8",
+          "859/24"
+        ]
+      },
+      {
+        "common_time": "28/3",
+        "decoded_offsets": [
+          "-1/8",
+          "7/4",
+          "43/16",
+          "43/16"
+        ],
+        "event": 7,
+        "local_values": [
+          "221/24",
+          "175/6",
+          "513/32",
+          "5623/144"
+        ]
+      },
+      {
+        "common_time": "12",
+        "decoded_offsets": [
+          "13/16",
+          "13/16",
+          "43/16",
+          "43/16"
+        ],
+        "event": 8,
+        "local_values": [
+          "205/16",
+          "261/8",
+          "641/32",
+          "2173/48"
+        ]
+      },
+      {
+        "common_time": "15",
+        "decoded_offsets": [
+          "13/16",
+          "7/4",
+          "7/4",
+          "43/16"
+        ],
+        "event": 9,
+        "local_values": [
+          "253/16",
+          "81/2",
+          "185/8",
+          "2509/48"
+        ]
+      },
+      {
+        "common_time": "55/3",
+        "decoded_offsets": [
+          "41/32",
+          "41/32",
+          "7/4",
+          "43/16"
+        ],
+        "event": 10,
+        "local_values": [
+          "1883/96",
+          "2219/48",
+          "225/8",
+          "8647/144"
+        ]
+      },
+      {
+        "common_time": "22",
+        "decoded_offsets": [
+          "41/32",
+          "41/32",
+          "7/4",
+          "43/16"
+        ],
+        "event": 11,
+        "local_values": [
+          "745/32",
+          "857/16",
+          "269/8",
+          "3293/48"
+        ]
+      },
+      {
+        "common_time": "26",
+        "decoded_offsets": [
+          "41/32",
+          "41/32",
+          "71/32",
+          "71/32"
+        ],
+        "event": 12,
+        "local_values": [
+          "873/32",
+          "985/16",
+          "2581/64",
+          "2459/32"
+        ]
+      }
+    ],
+    "schedule_cases": 27,
+    "smallest_observed_anchor_column_entry": "1/8"
+  },
+  "boundaries": {
+    "finite_probe_proves_universal_convergence": false,
+    "independent_principal_review_complete": false,
+    "physical_clock_calibration": false,
+    "physical_source_authentication": false,
+    "resources": "CPU <=29s; address space <=256MiB"
+  },
+  "calibration": {
+    "bad_affine_cycle": {
+      "origin": "1",
+      "rate": "1"
+    },
+    "commuting_triangles_checked": 27,
+    "rejections": [
+      "float_chart",
+      "zero_rate",
+      "wrong_source",
+      "wrong_epoch",
+      "backwards_time",
+      "invalid_edge"
+    ]
+  },
+  "crucible": {
+    "common_carrier_states": [
+      [
+        "one",
+        0
+      ],
+      [
+        "one",
+        1
+      ]
+    ],
+    "common_report_probability_table": [
+      {
+        "mass": "1/2",
+        "reports": [
+          0,
+          0
+        ]
+      },
+      {
+        "mass": "1/2",
+        "reports": [
+          1,
+          1
+        ]
+      }
+    ],
+    "fair_copy_cycle": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "finite_dyadic_sync_control_final": [
+      "87381/262144",
+      "174763/524288",
+      "174763/524288"
+    ],
+    "hidden_normalized_phase_ranges": [
+      "0",
+      "1"
+    ],
+    "identity_of_physical_carrier_inferred": false,
+    "invariant_mean": "1/3",
+    "omitted_edge_fixed_state": [
+      "1",
+      "1",
+      "10"
+    ],
+    "omitted_edge_range": "9",
+    "one_sided_update_means": [
+      "1",
+      "3/2"
+    ],
+    "paired_carrier_states": [
+      [
+        [
+          "left",
+          0
+        ],
+        [
+          "right",
+          0
+        ]
+      ],
+      [
+        [
+          "left",
+          1
+        ],
+        [
+          "right",
+          1
+        ]
+      ]
+    ],
+    "preserved_original_history_target": true,
+    "same_vs_two_carrier_report_laws_identical": true,
+    "source_alias_receipt": {
+      "counterexample_states": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "factors": false
+    },
+    "unknown_chart_report_coefficients_identical": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "unknown_parity_identical_eight_reports": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ]
+  },
+  "phase_adapter": {
+    "actual_logistic_cells_2_over_5": [
+      0,
+      2,
+      0,
+      2,
+      0
+    ],
+    "incoherent_power": 2,
+    "independent_evidence_count_claimed": 0,
+    "lag_sweep": [
+      {
+        "lag": 0,
+        "raw_covariance": "1/4",
+        "transported_covariance": "1/4"
+      },
+      {
+        "lag": 1,
+        "raw_covariance": "-1/4",
+        "transported_covariance": "1/4"
+      },
+      {
+        "lag": 2,
+        "raw_covariance": "1/4",
+        "transported_covariance": "1/4"
+      },
+      {
+        "lag": 3,
+        "raw_covariance": "-1/4",
+        "transported_covariance": "1/4"
+      },
+      {
+        "lag": 4,
+        "raw_covariance": "1/4",
+        "transported_covariance": "1/4"
+      },
+      {
+        "lag": 5,
+        "raw_covariance": "-1/4",
+        "transported_covariance": "1/4"
+      },
+      {
+        "lag": 6,
+        "raw_covariance": "1/4",
+        "transported_covariance": "1/4"
+      },
+      {
+        "lag": 7,
+        "raw_covariance": "-1/4",
+        "transported_covariance": "1/4"
+      },
+      {
+        "lag": 8,
+        "raw_covariance": "1/4",
+        "transported_covariance": "1/4"
+      },
+      {
+        "lag": 9,
+        "raw_covariance": "-1/4",
+        "transported_covariance": "1/4"
+      }
+    ],
+    "lag_transported_signs": [
+      1,
+      1
+    ],
+    "raw_signs": [
+      1,
+      -1
+    ],
+    "raw_squared_sum": 0,
+    "source_family_count": 1,
+    "transported_squared_sum": 4
+  },
+  "provenance": {
+    "historic_import_source": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "immutable_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+    "import_entries": 72,
+    "probe_sha256": "cc659aaac7c2037cb2ce8574904e26957b308842abba53e8812f554a2b0a7172",
+    "source_paths": [
+      {
+        "base_current_sha256": "389d29b14fd2f1947a6e488a87fe8bd18269af23269d4ad6a9d451b2ff77ef2d",
+        "in_import_manifest": false,
+        "origin_commit": "b9d84bb39594a7b35d214288ca914e516f23660e",
+        "origin_sha256": "389d29b14fd2f1947a6e488a87fe8bd18269af23269d4ad6a9d451b2ff77ef2d",
+        "path": "observational_succ/misiurewicz_phase_quotient.py"
+      },
+      {
+        "base_current_sha256": "7efdd02ee08a01edf4642beedaec5f19a541687e0ecd11dc7046e2ae766c2ea9",
+        "in_import_manifest": false,
+        "origin_commit": "583ef6b605d6fc47654e571ea43caaa05c016a12",
+        "origin_sha256": "7efdd02ee08a01edf4642beedaec5f19a541687e0ecd11dc7046e2ae766c2ea9",
+        "path": "observational_succ/dual_boundary_observers.py"
+      },
+      {
+        "base_current_sha256": "9c2df4d0df1d168cb43e8e51e9e8d4ea4dc6f3df8401526c41df9fce6ce61160",
+        "in_import_manifest": false,
+        "origin_commit": "b9d84bb39594a7b35d214288ca914e516f23660e",
+        "origin_sha256": "9c2df4d0df1d168cb43e8e51e9e8d4ea4dc6f3df8401526c41df9fce6ce61160",
+        "path": "research/2026-10-12/MISIUREWICZ_PHASE_CHAOTIC_QUOTIENT.md"
+      },
+      {
+        "base_current_sha256": "cd2dc231ff85cdcc2bc19df5e86e89e736087f532b1e88458c8564200dc9df6b",
+        "in_import_manifest": false,
+        "origin_commit": "583ef6b605d6fc47654e571ea43caaa05c016a12",
+        "origin_sha256": "c9105a7a899cae61686a1bf4a7cd9878c8dc35a0d35e8bd3794a462bed9dc8a5",
+        "path": "research/2026-10-12/DUAL_BOUNDARY_OBSERVER_CORRELATION.md"
+      },
+      {
+        "base_current_sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+        "in_import_manifest": false,
+        "origin_commit": "af52d1d7a91a764c606b9a0c39ee526c1cc98df3",
+        "origin_sha256": "e1b73a08d2dc51518df16430798a29519be15fbbe94039bacfcaee6d00784cc5",
+        "path": "provenance/IMPORT_MANIFEST.json"
+      }
+    ]
+  },
+  "schema": "SUCC-F47-exact-receipt-v1",
+  "status": "TESTED MODEL; derivations require independent principal review"
+}
