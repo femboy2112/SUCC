@@ -59,5 +59,7 @@ jobs:
           assert r['scope']['completed_Weil_form_positivity_or_RH_proved'] is False
           PY
 
-      - name: Round-II source-conditional receipt (causal, Nerode, genetic probes)
-        run: python scripts/eodcs_causal_probe.py
+      - name: Reproduce and compare frozen round-II causal / genetic source receipt
+        run: |
+          python scripts/eodcs_causal_probe.py > "$RUNNER_TEMP/eodcs-causal.json"
+          diff -u research/2026-10-13/EODCS_CAUSAL_PROBE_RECEIPT.json "$RUNNER_TEMP/eodcs-causal.json"
