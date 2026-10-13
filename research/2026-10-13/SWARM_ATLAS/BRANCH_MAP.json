@@ -7,6 +7,7 @@
       "id": "A01",
       "branch": "research/swm-a01-2026-10-13",
       "original_commit": "9e032ba01cc9f4deba3b0cacb4c8feb31029064a",
+      "branch_head": "9e032ba01cc9f4deba3b0cacb4c8feb31029064a",
       "integration_dossier_commit": "217fe20d8885f67b65e25b550d48022dc5ae1f86",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -14,6 +15,7 @@
       "id": "A02",
       "branch": "research/swm-a02-2026-10-13",
       "original_commit": "ae6313aa94f660c68233639150b159d5905fdf70",
+      "branch_head": "ae6313aa94f660c68233639150b159d5905fdf70",
       "integration_dossier_commit": "b3056da7639579c453204c778d6ae58b53d0e5b1",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -21,6 +23,7 @@
       "id": "A03",
       "branch": "research/swm-a03-2026-10-13",
       "original_commit": "198ba160e0f34bbab28ad1dcfd456e9e866b6bd7",
+      "branch_head": "198ba160e0f34bbab28ad1dcfd456e9e866b6bd7",
       "integration_dossier_commit": "d63b8694e766ba863e2c37e30b0485725b8b257b",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -28,6 +31,7 @@
       "id": "A04",
       "branch": "research/swm-a04-2026-10-13",
       "original_commit": "ea25dcc76244d2cbcc23edd2d77739141b7c1ca4",
+      "branch_head": "ea25dcc76244d2cbcc23edd2d77739141b7c1ca4",
       "integration_dossier_commit": "5a10cc2e22156219fd2ce708341ba9d414616c31",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -35,6 +39,7 @@
       "id": "A05",
       "branch": "research/swm-a05-2026-10-13",
       "original_commit": "ad6db3cfeb4cd9426b622f31d3d5c2892c3d7d37",
+      "branch_head": "b13b898af05231f9812bebd2f0359c01572ce8a2",
       "integration_dossier_commit": "9a85de3d8aad249878c2710fe728d59fbe6a87d8",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -42,13 +47,31 @@
       "id": "A06",
       "branch": "research/swm-a06-2026-10-13",
       "original_commit": "907c2bd93e3d80de584f944b0cf74592c6771bc2",
+      "branch_head": "907c2bd93e3d80de584f944b0cf74592c6771bc2",
       "integration_dossier_commit": "c2e2170e1a414f39d92bf13f9fecae2621bb0df7",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
+    },
+    {
+      "id": "A07",
+      "branch": "research/swm-a07-2026-10-13",
+      "original_commit": "f1326308e212c17711c59ed8889726b538ad6b54",
+      "branch_head": "f1326308e212c17711c59ed8889726b538ad6b54",
+      "integration_dossier_commit": "bb55a681b21085d84d66112dc9ed17b23f22a446",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
+    },
+    {
+      "id": "A08",
+      "branch": "research/swm-a08-2026-10-13",
+      "original_commit": "0c1183a522de92332c0ad2a375bfaed80796e140",
+      "branch_head": "0c1183a522de92332c0ad2a375bfaed80796e140",
+      "integration_dossier_commit": "c0bbbf57afc32d4f96200922bd13d65f2f3365b9",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
     {
       "id": "B09",
       "branch": "research/swm-b09-2026-10-13",
       "original_commit": "e3c6cc115204ad3ec2e5d145e786f84aafec6b0c",
+      "branch_head": "e3c6cc115204ad3ec2e5d145e786f84aafec6b0c",
       "integration_dossier_commit": "2acd1c80acd0c4d767c9a100b1f5180e1fb831ad",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -56,6 +79,7 @@
       "id": "B10",
       "branch": "research/swm-b10-2026-10-13",
       "original_commit": "ed1a58c47c17c91d6aeb0478ca7833264e521b62",
+      "branch_head": "ed1a58c47c17c91d6aeb0478ca7833264e521b62",
       "integration_dossier_commit": "df3286e4fc34b8088675288672accbd615f7f904",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -63,6 +87,7 @@
       "id": "B11",
       "branch": "research/swm-b11-2026-10-13",
       "original_commit": "f57d09eb456e49a1ae10f8a614bc2b8cc15993d0",
+      "branch_head": "f57d09eb456e49a1ae10f8a614bc2b8cc15993d0",
       "integration_dossier_commit": "45ccba10c160828cc79abf4e781cb5fdd7cf7b29",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -70,13 +95,23 @@
       "id": "B12",
       "branch": "research/swm-b12-2026-10-13",
       "original_commit": "24842dfc26517f068f0e0730b3c557ac7f1b4819",
+      "branch_head": "24842dfc26517f068f0e0730b3c557ac7f1b4819",
       "integration_dossier_commit": "51d9daa5c99700f093e8d6fbcc82302d42f2ab92",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
+    },
+    {
+      "id": "B13",
+      "branch": "research/swm-b13-2026-10-13",
+      "original_commit": "670fec92aeade4da452f26f022f8461aae8cab58",
+      "branch_head": "670fec92aeade4da452f26f022f8461aae8cab58",
+      "integration_dossier_commit": "069e03129dbe793fa7421c09d91564708535fd60",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
     {
       "id": "C17",
       "branch": "research/swm-c17-2026-10-13",
       "original_commit": "a999435614fd44851ebe8ba11f730700ae0ccc71",
+      "branch_head": "a999435614fd44851ebe8ba11f730700ae0ccc71",
       "integration_dossier_commit": "1ed0237157b40ee26db15ff7ef373c63c2b5bb53",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -84,13 +119,23 @@
       "id": "C18",
       "branch": "research/swm-c18-2026-10-13",
       "original_commit": "8128bf406b41fd93acdf004245ca7cff2644f762",
+      "branch_head": "8128bf406b41fd93acdf004245ca7cff2644f762",
       "integration_dossier_commit": "5bbd37a3ce79169bff5fbcacac7c4a53131bd57a",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
+    },
+    {
+      "id": "C20",
+      "branch": "research/swm-c20-2026-10-13",
+      "original_commit": "a497325e198c133887756eb036fb25f7689098c3",
+      "branch_head": "a497325e198c133887756eb036fb25f7689098c3",
+      "integration_dossier_commit": "7be91dc1dbd93c186c1c13283ded3adaaa304406",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
     {
       "id": "D25",
       "branch": "research/swm-d25-2026-10-13",
       "original_commit": "82625ce2e7e6368e778136c3f2cf0466ca4de2f5",
+      "branch_head": "7960148cc1f6428462bb6cb20c3a26717022581c",
       "integration_dossier_commit": "07b3d8a3c624273f58b7921e673ecbf62bca56b8",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -98,6 +143,7 @@
       "id": "E33",
       "branch": "research/swm-e33-2026-10-13",
       "original_commit": "abae499ee1cb6730db0626aa0be948bcf0e75dcd",
+      "branch_head": "abae499ee1cb6730db0626aa0be948bcf0e75dcd",
       "integration_dossier_commit": "9af319b51b2c51a786e6fa2f3c73b4190fbace79",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -105,6 +151,7 @@
       "id": "F41",
       "branch": "research/swm-f41-2026-10-13",
       "original_commit": "aeefd7ec2a7f50e45a1446e1995c7f6289c158a9",
+      "branch_head": "aeefd7ec2a7f50e45a1446e1995c7f6289c158a9",
       "integration_dossier_commit": "0e37133a396cc602db2a882d5c461bff982747d5",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
     },
@@ -112,8 +159,25 @@
       "id": "X01",
       "branch": "research/swm-x01-2026-10-13",
       "original_commit": "d9631e3008051628a45bd6373ef35e884d3a7384",
+      "branch_head": "d9631e3008051628a45bd6373ef35e884d3a7384",
       "integration_dossier_commit": "86f0aab3d44aa6fa7422513a8b48b904f586fec6",
       "parent": "316a93b264f77ee425b6a7e52be26d90bd4ccf20"
+    },
+    {
+      "id": "X02",
+      "branch": "research/swm-x02-2026-10-13",
+      "original_commit": "090d6e593b2fa9b9ea431e898f653e72f933ab50",
+      "branch_head": "090d6e593b2fa9b9ea431e898f653e72f933ab50",
+      "integration_dossier_commit": "c80dda93f6f9c9f73b1a54294fa5bcef655ab450",
+      "parent": "4b17f18"
+    },
+    {
+      "id": "X03",
+      "branch": "research/swm-x03-2026-10-13",
+      "original_commit": "51dd16c7ff0d2ccea97f74ae6092d2d4a834cc40",
+      "branch_head": "51dd16c7ff0d2ccea97f74ae6092d2d4a834cc40",
+      "integration_dossier_commit": "3faf9859ed1217f44876b66dc855844d8a4c7b7d",
+      "parent": "122c385843248b517fa05a39bd3cfeb5458621b5"
     }
   ]
 }

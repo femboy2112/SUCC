@@ -20,6 +20,7 @@ MATHLIB_COMMIT = "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84"
 RSS_LIMIT_MIB = 1280
 MIN_SYSTEM_AVAILABLE_MIB = 768
 FORMAL_FILES = (
+    "formal/SWM_A01_BaseChange.lean",
     "formal/SWM_B09_InverseFamilies.lean",
     "formal/SWM_B09_TopologicalCompletion.lean",
 )
@@ -138,7 +139,7 @@ def main() -> None:
         path: hashlib.sha256((root / path).read_bytes()).hexdigest() for path in FORMAL_FILES
     }
     for path in FORMAL_FILES:
-        code = (root / path).read_text().split("namespace ObservationalSUCC.SWM_B09", 1)[1]
+        code = (root / path).read_text().split("\nnamespace ", 1)[1]
         for forbidden in ("sorry", "admit", "axiom ", "unsafe "):
             if forbidden in code:
                 raise SystemExit(f"Forbidden proof placeholder/declaration in {path}: {forbidden}")

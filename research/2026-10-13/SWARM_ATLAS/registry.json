@@ -20,9 +20,9 @@
       "state": "COMPLETED",
       "started_utc": "2026-10-13T06:28:54.883017+00:00",
       "finished_utc": "2026-10-13T06:36:25.041310+00:00",
-      "status": "CLASSICAL",
+      "status": "CLASSICAL / LEAN-KERNEL PROVED (NAMED SUBCLAIMS)",
       "witness_path": "research/2026-10-13/SWARM_ATLAS/A01_receipt.json",
-      "proof_state": "INDEPENDENT PRINCIPAL REVIEW SURVIVES; CLASSICAL PAPER PROOF",
+      "proof_state": "PREDICATE BC/CANONICAL SURJECTIVITY/TARGET DESCENT LEAN4.14 KERNEL PROVED; WITNESS BIJECTIVITY PAPER ONLY",
       "commit": "9e032ba01cc9f4deba3b0cacb4c8feb31029064a",
       "integration": "ACCEPTED"
     },
@@ -155,14 +155,14 @@
       "worktree": "/home/leah/succ_lab/swm-a07",
       "branch": "research/swm-a07-2026-10-13",
       "owner": "/root/a07",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T07:56:51.188070+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T08:17:04.761680+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/A07_receipt.json",
+      "proof_state": "INDEPENDENT PRINCIPAL PULLBACK/WEIGHT/PENTAGON REVIEW SURVIVES; PAPER",
+      "commit": "f1326308e212c17711c59ed8889726b538ad6b54",
+      "integration": "ACCEPTED"
     },
     {
       "id": "A08",
@@ -177,15 +177,15 @@
       "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "worktree": "/home/leah/succ_lab/swm-a08",
       "branch": "research/swm-a08-2026-10-13",
-      "owner": null,
-      "state": "QUEUED",
-      "started_utc": null,
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "owner": "/root/a08",
+      "state": "COMPLETED",
+      "started_utc": "2026-10-13T08:08:29.104551+00:00",
+      "finished_utc": "2026-10-13T08:22:14.573222+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/A08_receipt.json",
+      "proof_state": "INDEPENDENT PRINCIPAL INFIMUM/INTERFACE TRIANGLE REVIEW SURVIVES; PAPER; BLINDNESS QUALIFIED",
+      "commit": "0c1183a522de92332c0ad2a375bfaed80796e140",
+      "integration": "ACCEPTED"
     },
     {
       "id": "B09",
@@ -295,14 +295,14 @@
       "worktree": "/home/leah/succ_lab/swm-b13",
       "branch": "research/swm-b13-2026-10-13",
       "owner": "/root/b13",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T07:54:34.108132+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T08:06:05.990604+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/B13_receipt.json",
+      "proof_state": "INDEPENDENT PRINCIPAL FINITE-SUPPORT/HBL PROOF REVIEW SURVIVES; PAPER",
+      "commit": "670fec92aeade4da452f26f022f8461aae8cab58",
+      "integration": "ACCEPTED"
     },
     {
       "id": "B14",
@@ -362,9 +362,9 @@
       "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "worktree": "/home/leah/succ_lab/swm-b16",
       "branch": "research/swm-b16-2026-10-13",
-      "owner": null,
-      "state": "QUEUED",
-      "started_utc": null,
+      "owner": "/root/b16",
+      "state": "RUNNING",
+      "started_utc": "2026-10-13T08:22:14.626835+00:00",
       "finished_utc": null,
       "status": "UNVERIFIED",
       "witness_path": null,
@@ -454,15 +454,15 @@
       "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "worktree": "/home/leah/succ_lab/swm-c20",
       "branch": "research/swm-c20-2026-10-13",
-      "owner": null,
-      "state": "QUEUED",
-      "started_utc": null,
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "owner": "/root/c20",
+      "state": "COMPLETED",
+      "started_utc": "2026-10-13T08:17:04.818156+00:00",
+      "finished_utc": "2026-10-13T08:24:23.290791+00:00",
+      "status": "CLASSICAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/C20_receipt.json",
+      "proof_state": "INDEPENDENT PRINCIPAL GARBLED LAW/SEPARATING PAYOFF/CARRIER COUNTERMODEL REVIEW SURVIVES; PAPER",
+      "commit": "a497325e198c133887756eb036fb25f7689098c3",
+      "integration": "ACCEPTED"
     },
     {
       "id": "C21",
@@ -616,9 +616,9 @@
       "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "worktree": "/home/leah/succ_lab/swm-d27",
       "branch": "research/swm-d27-2026-10-13",
-      "owner": null,
-      "state": "QUEUED",
-      "started_utc": null,
+      "owner": "/root/d27",
+      "state": "RUNNING",
+      "started_utc": "2026-10-13T08:24:23.342109+00:00",
       "finished_utc": null,
       "status": "UNVERIFIED",
       "witness_path": null,
@@ -961,9 +961,9 @@
       "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "worktree": "/home/leah/succ_lab/swm-f42",
       "branch": "research/swm-f42-2026-10-13",
-      "owner": null,
-      "state": "QUEUED",
-      "started_utc": null,
+      "owner": "/root/f42",
+      "state": "RUNNING",
+      "started_utc": "2026-10-13T08:22:14.677541+00:00",
       "finished_utc": null,
       "status": "UNVERIFIED",
       "witness_path": null,
@@ -1135,9 +1135,9 @@
       "owner": "/root/x02",
       "state": "COMPLETED",
       "status": "PROVED LOCAL",
-      "integration": "PENDING",
+      "integration": "ACCEPTED",
       "commit": "090d6e593b2fa9b9ea431e898f653e72f933ab50",
-      "proof_state": "PAPER; NATIVE D25 REVIEW RUNNING",
+      "proof_state": "INDEPENDENT NATIVE D25 REVIEW SURVIVES; REVIEWER REYNOLDS CRITERION PAPER PROVED",
       "started_utc": "2026-10-13T07:49:32.958821+00:00",
       "finished_utc": "2026-10-13T07:54:34.108132+00:00"
     },
@@ -1145,15 +1145,17 @@
       "id": "X03",
       "claim_id": "SWM-X03",
       "title": "Sheaf gluing x counterexample-guided repair",
-      "parent_sha": null,
+      "parent_sha": "122c385843248b517fa05a39bd3cfeb5458621b5",
       "worktree": "/home/leah/succ_lab/swm-x03",
-      "owner": null,
-      "state": "QUEUED",
-      "status": "UNVERIFIED",
-      "integration": "PENDING",
-      "commit": null,
-      "proof_state": "NOT RUN",
-      "started_utc": null
+      "owner": "/root/x03",
+      "state": "COMPLETED",
+      "status": "PROVED LOCAL",
+      "integration": "ACCEPTED",
+      "commit": "51dd16c7ff0d2ccea97f74ae6092d2d4a834cc40",
+      "proof_state": "INDEPENDENT PRINCIPAL ADAPTIVE ALIAS/BOUND/CEGIS PROOF REVIEW SURVIVES; PAPER",
+      "started_utc": "2026-10-13T08:06:06.025838+00:00",
+      "branch": "research/swm-x03-2026-10-13",
+      "finished_utc": "2026-10-13T08:25:22.320134+00:00"
     },
     {
       "id": "X04",
@@ -1301,8 +1303,10 @@
     {
       "assignment": "X02",
       "reviewer": "/root/d25",
-      "state": "RUNNING",
-      "independence": "Different investigator; did not derive X02; reconstruction before author probe"
+      "state": "COMPLETED",
+      "independence": "Different investigator; did not derive X02; reconstruction before author probe",
+      "verdict": "SURVIVES; REVIEWER ADDS EXACT AVERAGING COMMUTATION CRITERION",
+      "commit": "7960148cc1f6428462bb6cb20c3a26717022581c"
     }
   ],
   "native_agents_genuinely_spawned_so_far": [
@@ -1325,7 +1329,13 @@
     "/root/d25",
     "/root/b12",
     "/root/b13",
-    "/root/a07"
+    "/root/a07",
+    "/root/x03",
+    "/root/a08",
+    "/root/c20",
+    "/root/b16",
+    "/root/f42",
+    "/root/d27"
   ],
   "provider_capacity_receipts": [
     {
@@ -1342,6 +1352,11 @@
       "agent": "/root/a04",
       "state": "RETRIED SAME PROVIDER; RUNNING",
       "failure": "Selected model is at capacity"
+    },
+    {
+      "agent": "C20 spawn attempt",
+      "state": "NOT SPAWNED; QUEUED",
+      "failure": "Active four-slot limit reached, not total research thread quota."
     }
   ],
   "review_independence_note": "Principal /root did not derive child results and independently checked each accepted result with separate derivations/implementations. Native reasoner and implementation independence; same model/provider and inherited source family.",
@@ -1349,6 +1364,10 @@
     {
       "assignment": "A07",
       "disclosure": "Initial malformed registry extraction printed completion/status metadata; no other dossier or proof conclusion read. Corrected to own entry; derivation remains independently source-built."
+    },
+    {
+      "assignment": "A08",
+      "disclosure": "Full registry assignment metadata printed before truncation; no other dossiers/receipts read. Source-built derivation independent; initial information-blindness is qualified."
     }
   ]
 }
