@@ -63,3 +63,5 @@ jobs:
         run: |
           python scripts/eodcs_causal_probe.py > "$RUNNER_TEMP/eodcs-causal.json"
           diff -u research/2026-10-13/EODCS_CAUSAL_PROBE_RECEIPT.json "$RUNNER_TEMP/eodcs-causal.json"
+      - name: EODCS III relational source, may/common and probability firewall receipt
+        run: python scripts/eodcs_relational_probe.py
