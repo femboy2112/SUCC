@@ -180,9 +180,14 @@ class PermutationGraph:
     vertices: tuple[str, ...]
     edges: tuple[tuple[str, str, tuple[int, ...]], ...]
     fiber_size: int
+    source_id: str = "declared-permutation-action"
+    epoch: int = 0
+    basis: str = "finite-fiber-permutation"
 
     def __post_init__(self):
-        if (type(self.fiber_size) is not int or not 1 <= self.fiber_size <= 6
+        if (not self.source_id or not self.basis
+                or type(self.epoch) is not int or self.epoch < 0
+                or type(self.fiber_size) is not int or not 1 <= self.fiber_size <= 6
                 or not self.vertices or len(set(self.vertices)) != len(self.vertices)
                 or any(u not in self.vertices or v not in self.vertices
                        or len(p) != self.fiber_size
@@ -318,8 +323,16 @@ def language_birth_demo() -> dict:
     distinct = PermutationGraph(("root",),
                                 (("root", "root", (1, 0, 2)),
                                  ("root", "root", (0, 2, 1))), 3)
+    nonfree_cover = nonfree.minimal_connected_trivializing_cover()
+    distinct_cover = distinct.minimal_connected_trivializing_cover()
     return {
         "parity_triangle": cover,
+        "nonfree_trivializing_cover_degree": len(nonfree.holonomy_group()),
+        "nonfree_trivializing_cover_vertices": len(nonfree_cover[0]),
+        "nonabelian_S3_cover_degree": len(distinct.holonomy_group()),
+        "nonabelian_S3_cover_vertices": len(distinct_cover[0]),
+        "nonabelian_S3_cover_edges": len(distinct_cover[1]),
+        "nonabelian_S3_base_sections": len(distinct.root_fixed_points()),
         "nonfree_nontrivial_holonomy": nonfree.nontrivial_holonomy(),
         "nonfree_parallel_sections": len(nonfree.root_fixed_points()),
         "independent_nonfree_section_count": nonfree.independent_assignment_count(),
