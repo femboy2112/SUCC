@@ -6,7 +6,7 @@ from fractions import Fraction as Q
 from observational_succ.relational_model_genetics import (
     bridge_repair_demo,binary_capsule,chain_join,minimal_inconsistent_models,
 )
-from observational_succ.evolutionary_bridge_search import genetic_discovery_demo
+from observational_succ.evolutionary_bridge_search import genetic_discovery_demo,ternary_fusion_demo
 from observational_succ.source_coupling_bounds import combine_heuristic_marginals_demo
 from observational_succ.genetic_obstruction_holonomy import obstruction_language_demo
 
@@ -14,6 +14,7 @@ from observational_succ.genetic_obstruction_holonomy import obstruction_language
 def receipt():
     r=bridge_repair_demo()
     g=genetic_discovery_demo(seed=5)
+    trio=(ternary_fusion_demo(0),ternary_fusion_demo(1))
     b=combine_heuristic_marginals_demo()
     h=obstruction_language_demo()
     a=binary_capsule('A','clock','declared','x','y',1)
@@ -30,6 +31,13 @@ def receipt():
             'proposed_fitness':g['heuristic_best_fitness'],
             'new_derived_model':g['grown_new_model'],
             'fitness_is_not_proof':True},
+        'three_symbol_growth':{
+            'grammar_size':trio[0]['grammar_size'],
+            'emergent_mod3_relation':[list(pair) for pair in trio[0]['new_mod3_invariant']],
+            'genetic_seed0_succeeds':trio[0]['genetic_succeeded'],
+            'seed0_exhaustive_rescue':trio[0]['bounded_oracle_rescue_used'],
+            'genetic_seed1_succeeds':trio[1]['genetic_succeeded'],
+            'finite_grammar_not_global_search':True},
         'minimal_three_model_unsat_core':list(minimal_inconsistent_models((a,c,f))),
         'nonflat_connection':{
             'holonomy':h['holonomy'],

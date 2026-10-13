@@ -6,7 +6,7 @@ from observational_succ.relational_model_genetics import (
 )
 from observational_succ.evolutionary_bridge_search import (
     Genome,GeneticSearchReport,genetic_discovery_demo,evolve_bridges,
-    evaluate,mutate,crossover,grow_new_model,
+    evaluate,mutate,crossover,grow_new_model,ternary_fusion_demo,
 )
 from random import Random
 
@@ -92,6 +92,27 @@ class GeneticTests(unittest.TestCase):
         a,b,t=fixture()
         r=evolve_bridges(a,b,t,seed=0)
         with self.assertRaises(GeneticsError):grow_new_model(r.exact_derived_model,'z','nonexistent')
+
+    def test_three_symbol_semantic_bridge_born_not_preloaded(self):
+        out=ternary_fusion_demo(seed=1)
+        self.assertTrue(out['genetic_succeeded'])
+        self.assertTrue(out['bounded_optimum_verified'])
+        self.assertEqual(out['grammar_size'],24)
+        self.assertEqual(out['new_mod3_invariant'],(('0','0'),('1','1'),('2','2')))
+        self.assertEqual(out['discovered_bridge'],{'0':'cold','1':'warm','2':'hot'})
+
+    def test_genetic_failure_seed_zero_is_honest_not_a_false_theorem(self):
+        out=ternary_fusion_demo(seed=0)
+        self.assertFalse(out['genetic_succeeded'])
+        self.assertTrue(out['bounded_oracle_rescue_used'])
+        self.assertFalse(out['bounded_optimum_verified'])
+        self.assertEqual(out['new_mod3_invariant'],(('0','0'),('1','1'),('2','2')))
+
+    def test_twenty_seeded_searches_with_proof_oracle_separated(self):
+        results=tuple(ternary_fusion_demo(s) for s in range(20))
+        self.assertEqual(sum(x['genetic_succeeded'] for x in results),17)
+        self.assertEqual(sum(x['bounded_oracle_rescue_used'] for x in results),3)
+        self.assertTrue(all(x['new_mod3_invariant']==(('0','0'),('1','1'),('2','2')) for x in results))
 
     def test_demo_presents_all_truth_boundaries(self):
         out=genetic_discovery_demo(4)

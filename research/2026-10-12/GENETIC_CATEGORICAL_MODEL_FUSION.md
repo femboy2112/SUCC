@@ -64,6 +64,14 @@ For source table with 2 symbols there are `2!·2²=8` possible genomes. In ten d
 
 **No unjustified moonshot:** no stochastic finite genetic strategy is complete for arbitrary grammars. Genome search is not a proof procedure for unconstrained general mathematics; the current solver invents finite value bijections, finite relation compositions, and derived projection capsules, **not** arbitrary new kinds of categories, functors, or analytic tests.
 
+## GF7a. An honest genetic *failure* creates a stronger source-proof architecture (TESTED MODEL / EXACT FALLBACK)
+
+The binary example has only `2!·4=8` genotypes, so it is a trivial case for evolutionary search. A more demanding independently typed example starts from a cyclic modulo-three model `y=x+1 (mod 3)` and a differently named three-temperature-state model encoding `z=y+2 (mod 3)`. The simulator provides three source-paired reports `0↔cold`, `1↔warm`, `2↔hot`, but **no bridge arrow**. This is a 3!-bijection × four-parent-selection = **24-genome** search grammar. E's exact pullback, once the correct bridge is proposed, derives the genuinely new cross-context law `z=x (mod 3)` by `(x+1)+2=x`.
+
+**Adversarial observation:** the genetic population is neither exhaustive nor globally convergent. With the fixed declared seeds 0 through 19, it independently discovers the optimal verified bridge on **17** seeds but misses it on seeds **0, 11 and 13**, despite finite, complete source data. The `ternary_fusion_demo` labels those failures `genetic_succeeded=False` and `bounded_optimum_verified=False`. Because there are only 24 genotypes, a separate exact enumeration supplies a **bounded-grammar rescue**: it independently finds and source-certifies the bridge and projected theorem even on failed evolutionary seeds. The rescue is never counted as a genetic success.
+
+**Theorem:** a finite enumerator deciding a finite explicit grammar can establish exact bounded optimality; an elitist finite-population heuristic need not sample the global optimum, even when a perfect score is source-attainable. This rules out promoting heuristic search success into mathematical completeness, and supplies actionable failure measurements: add mutation diversity, counterexample-driven candidate generation, or exact fallback when feasible. Increasing mutation or population size is not a universal completeness proof over unrestricted representations.
+
 ## GF8. Probabilistic superposition has a missing joint-law parameter (CLASSICAL / EXACT)
 
 Let two independently understood binary heuristics assign `P(A)=p`, `P(B)=q`. Writing `t=P(A∩B)`, the 2x2 joint table is
@@ -108,7 +116,7 @@ Files:
 - `observational_succ/evolutionary_bridge_search.py`: typed genetic crossover/mutation, heuristic score, independently exhaustive bounded grammar optimum, exact derived theorem capsule.
 - `observational_succ/genetic_obstruction_holonomy.py`: graph-path connection, nonzero cycle proof, complete binary potential criterion, independent truth-table oracle.
 - `observational_succ/source_coupling_bounds.py`: exact Fréchet interval, joint law, conditional latent decomposition and matrix-rank lower bound.
-- `tests/test_*.py` (new four files): named tests, 100 random independent Cartesian-product row oracles, 169 marginal pairs at three extremal couplings each, 240 seeded holonomy graphs checked by independent exhaustive vertex assignments, 10 randomized-seed genetic runs and all eight bounded grammar genotypes.
+- `tests/test_*.py` (new four files): named tests, 100 random independent Cartesian-product row oracles, 169 marginal pairs at three extremal couplings each, 240 seeded holonomy graphs checked by independent exhaustive vertex assignments, ten binary seeded genetic runs, and a distinct 20-seed ternary test with 17 successes / 3 genuine failures rescued by exhaustive 24-genome search.
 - `scripts/genetic_model_fusion_probe.py` produces stable `research/2026-10-12/GENETIC_MODEL_FUSION_RECEIPT.json`. Deterministic local tests are separate from the cited classical infinite/general proofs. Two Python versions must be checked in CI on the exact pushed SHA.
 
 **Prior art** (the new architecture does NOT claim priority):

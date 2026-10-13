@@ -211,3 +211,56 @@ def genetic_discovery_demo(seed:int=5)->dict:
             'new_relation_not_in_the_input_module_schemas':True,
             'probabilistic_fitness_is_not_a_proof':True,
             'physical_source_authenticated':False}
+
+
+def ternary_fusion_demo(seed:int=0)->dict:
+    """A second, nonbinary construction: invent a 3-value semantic bridge.
+
+    Mechanical modulo-3 successor and thermal three-state code overlap along
+    y, creating x=z in Z/3. The bridge is not supplied to the genetic genome;
+    a finite COMPLETE declared source table decides its validity.
+    """
+    src='declared-ternary-source'
+    d=('0','1','2'); heat=('cold','warm','hot')
+    mechanical=Capsule('cyclic-clock','cyclic',src,0,'mod3-v1',
+                       (Port('x',d),Port('y',d)),
+                       tuple((str(i),str((i+1)%3)) for i in range(3)),
+                       features=frozenset({'cyclic','succ'}))
+    thermal=Capsule('thermal-labels','thermal',src,0,'mod3-v1',
+                    (Port('temp',heat),Port('z',d)),
+                    (('cold','2'),('warm','0'),('hot','1')),
+                    features=frozenset({'thermal','three-state'}))
+    table=PairedSourceTable(src,0,'mod3-v1',Port('y',d),Port('temp',heat),
+                            (('s0','0','cold'),('s1','1','warm'),('s2','2','hot')),True)
+    report=evolve_bridges(mechanical,thermal,table,seed=seed,
+                          population=22,generations=22)
+    actual=report.exact_derived_model
+    genetic_success=actual is not None
+    bridge=report.discovered_verified_bridge
+    if actual is None:
+        # Heuristic evolutionary search can converge to a LOCAL optimum.
+        # This is a genuine, reproducible failure on some seeds. With only
+        # 24 genotypes a separately exhaustive search can find an exact
+        # source-checked repair, but it must NEVER be called genetic success.
+        opt=_complete_oracle(mechanical,thermal,table,max_genomes=256)
+        if opt is None or not opt.certified_by_source_table or not opt.verified_pullback:
+            raise GeneticsError('No bounded-grammar certified synthesis')
+        mapping=tuple(zip(table.left_port.domain,opt.genome.permutation))
+        bridge=BridgeCandidate(table.source_id,table.epoch,table.basis,
+                               table.left_port,table.right_port,mapping,
+                               len(table.observations),True)
+        translated=transport_capsule(thermal,bridge)
+        joined=pullback(mechanical,translated)
+        if joined.merged is None:
+            raise ArithmeticError('Exhaustive witness violated source semantics')
+        actual=joined.merged
+    derived=grow_new_model(actual,'x','z',name='born-mod3-relation')
+    return {'discovered_bridge':dict(bridge.mapping),
+            'new_mod3_invariant':project(derived,('x','z')),
+            'generated_new_port_relation':derived.name,
+            'grammar_size':24,
+            'genetic_succeeded':genetic_success,
+            'bounded_oracle_rescue_used':not genetic_success,
+            'bounded_optimum_verified':report.genetic_reached_bounded_optimum,
+            'source_claim_class_conditional':True,
+            'novelty_of_formal_mathematics_claimed':False}

@@ -26,6 +26,10 @@ class ReceiptTests(unittest.TestCase):
         self.assertEqual(doc['genetic_grammar']['proposed_fitness'],genetic['heuristic_best_fitness'])
         self.assertEqual(doc['marginal_coupling']['possible_intersection_interval'],list(coupling['allowed_intersection']))
         self.assertEqual(doc['nonflat_connection']['holonomy'],hol['holonomy'])
+        self.assertEqual(doc['three_symbol_growth']['grammar_size'],24)
+        self.assertFalse(doc['three_symbol_growth']['genetic_seed0_succeeds'])
+        self.assertTrue(doc['three_symbol_growth']['seed0_exhaustive_rescue'])
+        self.assertTrue(doc['three_symbol_growth']['genetic_seed1_succeeds'])
         self.assertFalse(doc['scope']['RH_or_Weil_positivity_proved'])
         self.assertFalse(doc['scope']['physical_source_authenticated'])
 
