@@ -638,6 +638,93 @@ def original_support_is_monotone(history: ActualHistory,
     return True
 
 
+@dataclass(frozen=True)
+class CarrierPossibility:
+    """The SUPPORT-only shadow of a stochastic carrier instrument.
+
+    This preserves possible (receipt, next) pairs but deliberately forgets
+    relative weights; source, enabledness and stage typing are retained.
+    """
+    name: str
+    before: CarrierStage
+    after: CarrierStage
+    receipts: tuple[Hashable, ...]
+    enabled: tuple[bool, ...]
+    possible: tuple[tuple[tuple[int, int], ...], ...]
+
+    def __post_init__(self):
+        if (len(self.enabled) != self.before.count
+                or len(self.possible) != self.before.count
+                or any(not row for row in self.possible)
+                or self.before.source_id != self.after.source_id
+                or self.before.basis != self.after.basis):
+            raise CarrierError("Malformed exact source-relative possibility projection")
+
+
+def forget_probabilities(instrument: CarrierInstrument) -> CarrierPossibility:
+    """Law -> support forgetful map. There is no inverse choosing probabilities."""
+    return CarrierPossibility(
+        instrument.name,instrument.before,instrument.after,
+        instrument.receipts,instrument.enabled,
+        tuple(tuple((z,after) for z,after,p in row if p>0)
+              for row in instrument.rows))
+
+
+def possibility_descent(possibility: CarrierPossibility,
+                        before: CarrierQuotient,
+                        after: CarrierQuotient) -> bool:
+    """Exact support-only quotient; weaker than full joint-law descent."""
+    if possibility.before != before.stage or possibility.after != after.stage:
+        raise CarrierError("Typed source/possibility quotient mismatch")
+    signatures = []
+    for c,old_block in enumerate(before.labels):
+        available=possibility.enabled[c]
+        shadow=tuple(sorted({(z,after.labels[d])
+                             for z,d in possibility.possible[c]})) if available else ()
+        signatures.append((old_block,available,shadow))
+    return all((a[1],a[2])==(b[1],b[2]) for a in signatures for b in signatures
+               if a[0]==b[0])
+
+
+def compose_possibilities(first: CarrierPossibility,
+                          second: CarrierPossibility) -> CarrierPossibility:
+    """Finite existential path composition with ordered receipt pairs.
+
+    This reflects the positive-support shadow of joint-kernel composition
+    when each permitted atom has strictly positive probability, but never
+    manufactures probability weights.
+    """
+    if (first.after != second.before or
+            first.before.source_id != second.after.source_id or
+            first.before.basis != second.after.basis):
+        raise CarrierError("Typed source continuity required for composed supports")
+    labels=tuple((a,b) for a in first.receipts for b in second.receipts)
+    code={x:i for i,x in enumerate(labels)}
+    result=[]
+    enabled=[]
+    for c,row in enumerate(first.possible):
+        available=first.enabled[c] and all(
+            second.enabled[next_c] for _,next_c in row)
+        enabled.append(available)
+        possibilities=set()
+        for z,middle in row:
+            for w,last in second.possible[middle]:
+                possibilities.add((code[(first.receipts[z],second.receipts[w])],last))
+        if not possibilities:
+            raise CarrierError("Actual source transition support is empty")
+        result.append(tuple(sorted(possibilities)))
+    return CarrierPossibility(
+        first.name+";"+second.name,first.before,second.after,
+        labels,tuple(enabled),tuple(result))
+
+
+def deterministic_instrument(instrument: CarrierInstrument) -> bool:
+    """A mathematical Dirac law on every enabled source state."""
+    return all(not enabled or
+               (len(row)==1 and row[0][2]==1)
+               for enabled,row in zip(instrument.enabled,instrument.rows))
+
+
 def from_deterministic_lawful_source(source, prior: tuple[Q, ...]):
     """Lossless adapter for SWM F48's LawfulSource, with EXPLICIT prior.
 
