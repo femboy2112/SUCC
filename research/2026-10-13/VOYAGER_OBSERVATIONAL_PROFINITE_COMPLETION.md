@@ -195,3 +195,48 @@ These axes are independent of Bayesian posterior width or tool-relative darkness
 5. Classical finite-product topology, finite intersection property, Cantor/Stone spaces, eventually periodic finite automata, pigeonhole and first-difference ultrametrics.
 
 **Claim ledger targets:** O610–O630; every statement is to be scoped as CLASSICAL/LEAN-KERNEL, CLASSICAL/DERIVED, TESTED SIMULATOR, REFUTED WITH WITNESS or UNVERIFIED. An author's commitment, a simulator flag, a Lean test compiled once, and an independently authenticated scientific measurement are not interchangeable sources.
+
+
+## V11. A true finite-probe impossibility theorem, including adaptive schedules (CLASSICAL / LEAN-KERNEL)
+
+The previous nonrealization witness V4 used one specific target, all ones. The strengthened theorem in \`formal/EODCS_VoyagerPhantom.lean\` is **uniform over EVERY target binary stream z and EVERY finite list F of queried coordinates.**
+
+Define two explicit mathematical streams:
+\[
+ x_F(n)=\begin{cases}z(n)&n\in F\\0&n\notin F,\end{cases}
+ \qquad
+ y_F(n)=\begin{cases}z(n)&n\in F\\1&n\notin F.\end{cases}
+\]
+Since F is finite, x_F eventually becomes zero and y_F eventually becomes one. Both exactly reproduce z on EVERY index in F, even if the query times are irregular and nonconsecutive. Thus:
+\[
+\boxed{
+  \forall z\in 2^{\mathbb N}\ \forall F\subset\mathbb N\text{ finite},
+  \ \exists x_F,y_F:\quad
+  E(x_F),\ \neg E(y_F),\quad
+  x_F|_F=y_F|_F=z|_F,
+}
+\]
+where E(x) means x is eventually zero. The finite bound beyond F is one plus its largest queried index, and all original/source values beyond that are explicitly specified. The type-correct proof, including the existence of finite bounds from a finite list and both opposite tail properties, was kernel verified under Lean 4.14.
+
+**Stronger topological inference (CLASSICAL):** the eventually-zero source class and its complement are BOTH dense in Cantor space. Neither class contains a finite-cylinder neighborhood, and the class-membership indicator is discontinuous at every infinite stream. No finite set of head/shift coordinate readings can certify either branch.
+
+**Adaptive finite policy corollary:** suppose a deterministic, nonanticipatory policy chooses each next coordinate only from previously observed coordinates and outcomes and eventually terminates after finitely many queries on an actual run. The actual sequence of queried indices F is finite. Construct x_F,y_F from the same observed target z. By induction over query steps, the source alternatives give exactly the same observed response history, hence the same future actions and terminal label. Because E(x_F) and E(y_F) differ, any Boolean terminal label is false on at least one. Therefore **no everywhere-terminating finite-coordinate observation policy can correctly decide E for every binary stream** unless it uses new prior/source laws or a strictly more powerful instrument.
+
+The Lean theorem proves the exact pointwise finite-probe statement for arbitrary F; the nonanticipatory policy corollary is a short mathematical induction with a separate source-sensitive Python implementation in \`voyager_adaptive_no_go.py\`. Python exhaustively checks all depth-two binary policies (two probe labels), 80 independently seeded history-dependent policy trees with three different report sources, repeated-coordinate consistency and forged-source mutations. The source patch is a *hypothetical alternative original stream*, not a second physical specimen actually measured. No Turing undecidability for a specific arithmetic statement, Gödel independence, or physical-instrument impossibility beyond the coordinate-query model is claimed.
+
+The result is stronger than a mere finite-horizon statistical impossibility. It is a deterministic **logical indistinguishability under every finite legal coordinate experiment**. Classical source assumptions, not an unbounded computational score, are what determine its boundary.
+
+## V12. The closed-source frontier is an additional *assumption*, not a free theorem
+
+Combining V2, V3 and V11:
+
+- If S has an **externally justified complete finite state list**, every finitely compatible report has an actual source and every nonrealizable report has ≤|S| explicit discriminating probes. A universal source report can sometimes be certified by finite reasoning.
+- If S is compact with appropriate continuity and finite-discrete reports, closedness supplies global realization as a classical topological result. Compactness/continuity must be *proven about the actual source*, not about a guessed global model.
+- If S is an unbounded nonclosed class, all finite reports can be consistent while a completed profile escapes S. If the target is intrinsic non-ultimately-periodic behavior, the finite machine complexity required to match prefixes can grow without a fixed source-state cap.
+- If a proposition has both truth classes dense under the available finite report topology, even **adaptive finite** coordinate queries cannot decide it on every source. More precise source data, a bound, continuity or a new instrument is required.
+
+This is a four-way useful SUCC proof-control map: finite exhaustive source, compact continuous source, nonclosed source-completion defect, and toolkit-level source-eventuality indistinguishability. None is a scalar truth probability. In the TLICA vocabulary σ/source-map adequacy, φ/toolkit-relative discriminability, μ/probe access, κ/contact and topological regularity are independent gates; the finite proofs do not collapse them into a single certification score.
+
+**New appendix sources:** \`observational_succ/voyager_adaptive_no_go.py\`, \`tests/test_eodcs_voyager_adaptive.py\`, \`scripts/voyager_adaptive_probe.py\`, and frozen cross-version receipt when the matching CI jobs have actually run.
+
+**Next decisive challenge:** Build the smallest multi-action source in which an observer's *own instruments change the original carrier*, then determine whether the projective-limit object should be a source of histories and allowed actions, a sheaf of preparation-dependent traces, or a causal stochastic presheaf. Test a genuine compact positive case and a noncompact no-go case with independent source producers, not only a programmer-declared simulator.
