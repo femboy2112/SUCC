@@ -213,6 +213,43 @@ def finite_trace_projective_tower(source:TraceSource, horizon:int) -> dict:
             "ideal_limit_source_realization_claimed":False}
 
 
+def power_two_gap_memory_lower_bound(machine: TraceSource, pulse_power: int)->dict:
+    """Finite-horizon source-memory DEBT: at least 2^k distinct states.
+
+    At times p+1,...,2p-1, where p=2^k, an exactly matched power-two
+    pulse is zero, followed by one at 2p. If any two ZERO-interval source
+    states repeat, determinism forces the later 1 to have appeared
+    earlier inside that zero gap. They must all be distinct; the final
+    ONE state is distinct by its output. Thus N>=p.
+
+    This is a theorem conditional on the observed finite source trace
+    through time 2p. It does NOT assume any infinite trace existed.
+    """
+    if (type(pulse_power) is not int or not 1 <= pulse_power <= 9):
+        raise VoyagerError("Require finite pulse gap power 1..9")
+    p=2**pulse_power
+    h=2*p+1
+    truth=tuple(powers_of_two_pulse(i) for i in range(h))
+    if machine.trace(h)!=truth:
+        raise VoyagerError("Lower bound requires exact pulse prefix source match")
+    indexed=tuple((t,machine.trace_state(t)) for t in range(p+1,2*p+1))
+    if len({state for _,state in indexed})!=p:
+        # The independent finite-state oracle detects a contradiction
+        # with the exact deterministic output trace.
+        raise AssertionError("Repeated state in a zero gap preceding a pulse")
+    if len(machine.states)<p:
+        raise AssertionError("Finite observed prefix exceeds state-count bound")
+    return {
+        "source_id":machine.source_id,
+        "pulse_gap":p,
+        "certified_minimum_states":p,
+        "actual_machine_states":len(machine.states),
+        "source_horizon":h,
+        "all_gap_states_pairwise_distinct":True,
+        "original_source_contains_every_later_pulse_claimed":False,
+    }
+
+
 def ideal_eventual_zero_stage(h:int)->tuple[tuple[int,...],...]:
     """All binary prefixes of length h appear in SOME eventually-zero state."""
     if type(h) is not int or not 0 <= h <= 13:
@@ -286,7 +323,16 @@ def voyager_demo() -> dict:
         raise AssertionError("Finite prefix source positive control failed")
     issue=finite_model_critical_probe_witnesses(witness,powers_of_two_pulse)
     critical=power_two_period_refutation(12,3)
+    gap_machine=eventual_zero_lift(
+        tuple(powers_of_two_pulse(i) for i in range(17)),
+        source_id="voyager-gap-p8")
+    gap_debt=power_two_gap_memory_lower_bound(gap_machine,3)
     return {
+        "power_two_finite_horizon_debt":{
+            "pulse_gap":gap_debt["pulse_gap"],
+            "state_lower_bound":gap_debt["certified_minimum_states"],
+            "source_horizon":gap_debt["source_horizon"],
+            "gap_states_distinct":gap_debt["all_gap_states_pairwise_distinct"]},
         "status":"EXACT_VOYAGER_OBSERVATIONAL_COMPLETION_BOUNDARY",
         "finite_prefix_power_two":list(sampled),
         "exact_original_finite_machine_witness_states":len(witness.states),
