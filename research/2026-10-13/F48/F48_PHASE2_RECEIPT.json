@@ -1,5 +1,14 @@
 {
   "address_space_cap_bytes": 268435456,
+  "aggregate_depth_onto_fixed_public_arrow_not_onto": {
+    "aggregate_root": [
+      "source0",
+      "source1"
+    ],
+    "fixed_outcome_zero_predecessors": [
+      "source0"
+    ]
+  },
   "artifact_validation_history": [
     {
       "cause": "A01 row contained an extra delimiter; corrected",
@@ -16,11 +25,19 @@
   "buchi_all_finite_prefixes_checked": 511,
   "countdown_depths_checked": 8,
   "delayed_death_false_finite_plateau": true,
-  "elapsed_seconds": 0.191355,
+  "elapsed_seconds": 0.112236,
   "exit": 0,
   "extendable_bonding_checks": 16656,
-  "final_non_deriver_review_complete": false,
+  "final_non_deriver_review_complete": true,
   "finite_positive_likelihoods_can_have_zero_limit": "1/18446744073709551616",
+  "fresh_a03_review": {
+    "commit": "bb1c00ff04259d7d0c53727a18597b4fba3ee5cc",
+    "path": "/home/leah/succ_lab/swm-a03/reviews/F48_PHASE2_A03_REVIEW.md",
+    "reviewer_probe_reexecuted_by_f48": false,
+    "scope": "T1/T2 and conditional host gates; not all60 theorem recertification",
+    "sha256": "d599f2e1e719d3ca864dd6f253018847bdf221244091f8a52f3c3fa71eec2c7a",
+    "verdict": "ACCEPT PROVED LOCAL"
+  },
   "full_suite_or_compiler_or_children_or_push": false,
   "global_buchi_admission_stricter_than_local_branch_completion": true,
   "greatest_core_checks": 4164,
@@ -81,8 +98,11 @@
   },
   "one_way_availability_counter_to_iff_necessity": true,
   "phase": "F48 whole-swarm phase2",
-  "probe_sha256": "85b35d4b20a7d3c1fac26f0a6dff21a7860c85336184571e2df75e597018e452",
+  "principal_final_artifact_acceptance_complete": false,
+  "probe_sha256": "8e8aa571184fd74f7008b58d325aad6932f7e95f6e96f50c92d95d1dbc3f9e0f",
+  "proof_sections_5_6_including_heading_sha256": "59466bb9c0f2a5e8580a595ef1dfddc977238254266a874af229585de3618f8e",
   "proof_sections_5_6_sha256": "320dd8c9de40ca2c75d9736cfd47a5996a690914870bdd3e447566e1cf030295",
+  "proof_sections_unchanged_from_224d049": true,
   "records": [
     {
       "author_commit": "9e032ba01cc9f4deba3b0cacb4c8feb31029064a",
@@ -215,7 +235,8 @@
       "integration": "ACCEPTED",
       "registry_status": "PROVED LOCAL / CLASSICAL",
       "review_paths": [
-        "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/B11_REVIEW.md"
+        "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/B11_REVIEW.md",
+        "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/X11_B11_REVIEW.md"
       ]
     },
     {
@@ -775,33 +796,44 @@
       ]
     },
     {
-      "author_commit": null,
+      "author_commit": "30d630504ee429bfcba8be83f921eb57a2b8eb36",
       "dossier": "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/X11.md",
       "dossier_present": true,
-      "dossier_sha256": "3b95abc76ffef92fe69fd9b5d2de378af2f9a65e73fb1cd4045ed580ca72a2e6",
+      "dossier_sha256": "5697220d6ebf9c8ef35c2784838f7133ca10372ec5eceef035b69e6b24b0ecab",
       "id": "X11",
-      "integration": "PENDING",
-      "registry_status": "UNVERIFIED",
-      "review_paths": []
+      "integration": "ACCEPTED",
+      "registry_status": "CLASSICAL / PROVED LOCAL",
+      "review_paths": [
+        "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/X11_B11_REVIEW.md",
+        "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/X11_PRINCIPAL_INTEGRATION.md"
+      ]
     },
     {
-      "author_commit": null,
+      "author_commit": "71b222fae2a84723cc900b47614943a25f6c966c",
       "dossier": "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/X12.md",
       "dossier_present": true,
       "dossier_sha256": "272822c0d002bfe057a8948752ac50d764e7a26cdd36766cf3b46a8471daf839",
       "id": "X12",
-      "integration": "PENDING",
-      "registry_status": "UNVERIFIED",
-      "review_paths": []
+      "integration": "ACCEPTED",
+      "registry_status": "CLASSICAL / PROVED LOCAL",
+      "review_paths": [
+        "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/X12_PRINCIPAL_REVIEW.md"
+      ]
     }
   ],
-  "registry_sha256": "9b77cc563b885055a5bea9a985490ff7e54fc38578e457fc39d916c5f01b8db0",
-  "root_head": "198dcf5cd4d25c460efc6032118f1f620e3922f8",
+  "registry_sha256": "2acd5a946de910bbe502de1963f539eb14b0a216334b2b0345adfbe8c027e079",
+  "root_head": "bd0e0d6d2b507546bc73d0cc6da2272747d0829d",
   "source_sha256": {
+    "/home/leah/succ_lab/many-worlds-atlas/AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "/home/leah/succ_lab/many-worlds-atlas/docs/ARCHITECTURE.md": "ebf52ee203ad1068fb5f6358a20b98fed17dd1d0123db1b46004c9f8716744c5",
+    "/home/leah/succ_lab/many-worlds-atlas/docs/FOUNDATIONS.md": "d4c89e4cb79bf561c69182fec9eac2783ce009cfce5842756f98da1ad9191ce7",
+    "/home/leah/succ_lab/many-worlds-atlas/docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
     "/home/leah/succ_lab/many-worlds-atlas/formal/SWM_F48_InterfaceJoin.lean": "fbebde6e3aaab7860a9135935dc364cc3f6872a9f286edd5f7dab450e105913a",
+    "/home/leah/succ_lab/many-worlds-atlas/provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/E36_DIRICHLET_LOG_MULTIPLICATIVITY.md": "cd35695cbfe485264dab30180e421764db6f21bf695eb6b30b39498fe970c5db",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/E37_ARCHIMEDEAN_GAMMA_BOUNDARY.md": "ca96e4e79a3d86a0fd882b93ec8a0ee00114d52eb43402ca3bc9a7cc3f96b676",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/E39_GAUSSIAN_ARITHMETIC_CUT_AND_TRANSPORT.md": "00fb4f3cbe33c151d7a259754399ceb37cc839d89dd3e888df820fa9b6aa41ed",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/F48/F48_PHASE2_ARCHITECTURE.md": "dc7e62a2651a5f8a108a76020fe1e9917294a413afcee0b5155e7749cc01d7e7",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/A01.md": "d600266ab9e41f6a500415f895abc68d6259cdc74704de5b5cdaab63418d7423",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/A02.md": "f58bbd082008b205c489f9ec813f308d52f5469b14c0dde46866d3283f1a8582",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/A03.md": "fb853f9246583aeab1c18b1af11bfc1bc56a5428c897507f71536a077ca2e9ea",
@@ -856,11 +888,11 @@
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/X08.md": "8bd0d3b218c6d55bfb31f98f2666dcb20c37c26d6410ff4afc81d7811d8b33f8",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/X09.md": "d3c082d61cdd9e9410c4029512a5ceb7aa5a4109882000d67f0a3e9f2a69579d",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/X10/DOSSIER.md": "5e1ab2de01fa6c4335d78bac354a074e191d065fba943aa018ad3ad018dc49a5",
-    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/X11.md": "3b95abc76ffef92fe69fd9b5d2de378af2f9a65e73fb1cd4045ed580ca72a2e6",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/X11.md": "5697220d6ebf9c8ef35c2784838f7133ca10372ec5eceef035b69e6b24b0ecab",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/X12.md": "272822c0d002bfe057a8948752ac50d764e7a26cdd36766cf3b46a8471daf839",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/comparisons/PARALLEL_AUDIT.md": "c3899e139ee345d6b2ebe208b9b675c6c1b8262b2d0492bf1039fc88a9156221",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/comparisons/SECOND_WAVE_COMPARISON.md": "6debb29d919d11bfb1dba822310894a41c8ba990676cbbed3cd580fa81751fc2",
-    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/registry.json": "9b77cc563b885055a5bea9a985490ff7e54fc38578e457fc39d916c5f01b8db0",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/registry.json": "2acd5a946de910bbe502de1963f539eb14b0a216334b2b0345adfbe8c027e079",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/A01_KERNEL_REVIEW.md": "d65ff1d9172d0d2698e6d4cc765460db98f7ab754f2ea2bf3c39ed91f7a23baa",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/A02_REVIEW.md": "2202725231be3d5190050ae1a6cd9a8ff4f160af4e1703d5ba865fdf8c9cbaf3",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/A03_REVIEW.md": "85ea65506c865c934ca6850728ce534b929c34a26b86015f671e850c2ac77707",
@@ -877,7 +909,7 @@
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/B15_PRINCIPAL_REVIEW.md": "7a32a36073e4d996df4ec2d5270722a6b99626ca8cea20ea86a6ed20825d0ede",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/B16_PRINCIPAL_REVIEW.md": "ffd9e03c8b83b46e5a79b880990e0e343c945d30657224efcbdd598920ff94b4",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/C17_PRINCIPAL_REVIEW.md": "e9e36cfcf3a8bf43a7279074d3ba3d78c190c42d9da99830b0d2b5e55aac5b15",
-    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/C19_EFFECTIVE_SELECTOR_CANDIDATE.md": "e5b9e5ef5e2d2e93692ccf3a246e5edca77b96bb8633e03301c38f7090c97a54",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/C19_EFFECTIVE_SELECTOR_CANDIDATE.md": "4db7feddb42ada79a20b0de5fedfffcdc872e6c49099a5536311a8bb4e73b34a",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/C19_KERNEL_REVIEW.md": "224a5f1feb5031f15ff9b9246abe4e86384dd008088a727af9c72851c092b325",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/C20_PRINCIPAL_REVIEW.md": "fd3e019798cb18de4783f0732fa392c43bd69d70a8d8e7c2c745b47713283a8c",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/C21_PRINCIPAL_REVIEW.md": "d947c66eeff5cebde0af478f921d84a752e9b4fb2354bc01208517997e13b51a",
@@ -908,13 +940,17 @@
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/X07_D26_REVIEW.md": "f162d05848ce248b7d22db279bc4ebd830d36bc57ff8c8ee7b0564529cb24c78",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/X07_KERNEL_REVIEW.md": "5296894cffae45634c184d4c0e015fa758a462396889a54f6e8e5e5de49f5c9b",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/X08_X09_X10_PRINCIPAL_REVIEW.md": "951c69092511b528e3f943a8d4a67f4f31dffac8f1f8fdfed370aeb26215b4e0",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/X11_B11_REVIEW.md": "7009c483aa98cc542f8d2ebd9346a22fe21eff6475c8dc5f4181ce212d76b5a8",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/X11_PRINCIPAL_INTEGRATION.md": "6c01dbd940562feb94315e302099d90eef4c75e507a6d112c8db1a6ffac217f9",
+    "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/X12_PRINCIPAL_REVIEW.md": "f84570025226f42ac9773d8aca8362236460ea27bf877c5667ea0b899c60b21c",
     "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWM_E38_ARITHMETIC_POLARIZATION/DOSSIER.md": "1bb30fcb10a696304a8dd19689c2c12e79f39d8bd0391bce87b65647defbb8c9",
+    "/home/leah/succ_lab/swm-a03/reviews/F48_PHASE2_A03_REVIEW.md": "d599f2e1e719d3ca864dd6f253018847bdf221244091f8a52f3c3fa71eec2c7a",
+    "/home/leah/succ_lab/swm-a03/reviews/F48_PHASE2_A03_REVIEW_probe.py": "1f4ccf383cafc03fcd4b726d42fd343b1faa4788888843afebd80654a6baec6b",
+    "/home/leah/succ_lab/swm-a03/reviews/F48_PHASE2_A03_REVIEW_receipt.json": "aa42b578ffbe7e15151b25aca38c9f30bf8a0145aaad820ba95d5adb1db594b7",
     "/home/leah/succ_lab/swm-f48/research/2026-10-13/F48/F48_LAWFUL_HISTORY_FIBRATION.md": "d0df6519cd79b658d00747129ecab388658f1b834a5ee2cd18e34a8559d3fa24"
   },
-  "state": "AWAITING_FINAL_ACCEPTANCE",
+  "state": "CORE_ACCEPTED_PENDING_PRINCIPAL_ARTIFACT_REVIEW",
   "swarm_author_probes_replayed": false,
-  "unaccepted_synthesis_inputs": [
-    "X11",
-    "X12"
-  ]
+  "unaccepted_synthesis_inputs": [],
+  "validation_command": "env PYTHONDONTWRITEBYTECODE=1 timeout 25s python research/2026-10-13/F48/F48_PHASE2_PROBE.py"
 }

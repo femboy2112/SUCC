@@ -73,6 +73,11 @@ def main():
     assert paths(delayed, (1,), 3)
     assert not paths(delayed, (1,), 4)
     assert live_core(delayed) == {0}
+    aggregate_root = {'source0', 'source1'}
+    aggregate_next = {('source0', 0), ('source1', 1)}
+    assert {s for s, o in aggregate_next} == aggregate_root
+    fixed_outcome_zero = {s for s, o in aggregate_next if o == 0}
+    assert fixed_outcome_zero == {'source0'} < aggregate_root
 
     # Natural countdowns give all finite depths from different preparations.
     # No actual infinite countdown exists; that conclusion uses strict descent.
@@ -146,6 +151,19 @@ def main():
                      ATLAS / 'comparisons/PARALLEL_AUDIT.md',
                      ATLAS / 'comparisons/SECOND_WAVE_COMPARISON.md',
                      ATLAS_ROOT / 'formal/SWM_F48_InterfaceJoin.lean']
+    paths_to_hash += [ATLAS_ROOT / p for p in (
+        'AGENTS.md','docs/METHOD.md','docs/FOUNDATIONS.md','docs/ARCHITECTURE.md',
+        'provenance/IMPORT_MANIFEST.json',
+        'research/2026-10-13/F48/F48_PHASE2_ARCHITECTURE.md')]
+    a03_root = Path('/home/leah/succ_lab/swm-a03')
+    a03_review = a03_root / 'reviews/F48_PHASE2_A03_REVIEW.md'
+    a03_commit = 'bb1c00ff04259d7d0c53727a18597b4fba3ee5cc'
+    a03_committed = subprocess.check_output(
+        ['git','show',a03_commit + ':reviews/F48_PHASE2_A03_REVIEW.md'],cwd=ROOT)
+    assert a03_review.read_bytes() == a03_committed
+    paths_to_hash += [a03_review,
+                     a03_root/'reviews/F48_PHASE2_A03_REVIEW_receipt.json',
+                     a03_root/'reviews/F48_PHASE2_A03_REVIEW_probe.py']
     for e in records:
         ident = e['id']
         if ident == 'F48':
@@ -182,6 +200,13 @@ def main():
     assert elapsed < 25
     architecture = (Path(__file__).parent / 'F48_PHASE2_ARCHITECTURE.md').read_text()
     proof_sections = architecture.split('## 5. New theorem:', 1)[1].split('## 7. Crucible', 1)[0]
+    frozen_architecture = subprocess.check_output(
+        ['git','show','224d049964b02fc42ad4fcbaa078944ed91da0a7:research/2026-10-13/F48/F48_PHASE2_ARCHITECTURE.md'],
+        cwd=ROOT,text=True)
+    frozen_proof = frozen_architecture.split('## 5. New theorem:',1)[1].split('## 7. Crucible',1)[0]
+    assert proof_sections == frozen_proof
+    headed_proof = architecture[architecture.index('## 5.'):architecture.index('## 7.')]
+    assert hashlib.sha256(headed_proof.encode()).hexdigest() == '59466bb9c0f2a5e8580a595ef1dfddc977238254266a874af229585de3618f8e'
     print(json.dumps({
         'phase':'F48 whole-swarm phase2',
         'initial_commit':'6e751c0d996de3d27a91b09f44dc2d534db09c73',
@@ -190,6 +215,9 @@ def main():
         'elapsed_seconds':round(elapsed,6), 'address_space_cap_bytes':256*1024**2,
         'exit':0, 'bounded_graph_models':models,
         'extendable_bonding_checks':stage_checks, 'greatest_core_checks':maximality_checks,
+        'aggregate_depth_onto_fixed_public_arrow_not_onto':{
+            'aggregate_root':sorted(aggregate_root),
+            'fixed_outcome_zero_predecessors':sorted(fixed_outcome_zero)},
         'live_dead_missing_raw_prefixes':sorted(missing),
         'countdown_depths_checked':len(countdown_prefixes),
         'buchi_all_finite_prefixes_checked':buchi_prefix_count,
@@ -205,8 +233,17 @@ def main():
         'missing_final_dossiers':missing_inputs,
         'unaccepted_synthesis_inputs':unaccepted,
         'state':('AWAITING_FINAL_INPUT' if missing_inputs else
-                 'AWAITING_FINAL_ACCEPTANCE' if unaccepted else 'AWAITING_A03_REVIEW'),
+                 'AWAITING_FINAL_ACCEPTANCE' if unaccepted else
+                 'CORE_ACCEPTED_PENDING_PRINCIPAL_ARTIFACT_REVIEW'),
         'proof_sections_5_6_sha256':hashlib.sha256(proof_sections.encode()).hexdigest(),
+        'proof_sections_unchanged_from_224d049':True,
+        'proof_sections_5_6_including_heading_sha256':hashlib.sha256(headed_proof.encode()).hexdigest(),
+        'fresh_a03_review':{'commit':a03_commit,'path':str(a03_review),
+                            'scope':'T1/T2 and conditional host gates; not all60 theorem recertification',
+                            'sha256':hashlib.sha256(a03_committed).hexdigest(),
+                            'reviewer_probe_reexecuted_by_f48':False,
+                            'verdict':'ACCEPT PROVED LOCAL'},
+        'validation_command':'env PYTHONDONTWRITEBYTECODE=1 timeout 25s python research/2026-10-13/F48/F48_PHASE2_PROBE.py',
         'artifact_validation_history':[
             {'check':'initial matrix parser','exit':1,'cause':'A01 row contained an extra delimiter; corrected'},
             {'check':'initial row-count artifact assertion','exit':1,'cause':'header+60 rows is61, not62; corrected'},
@@ -214,7 +251,8 @@ def main():
         'probe_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
         'swarm_author_probes_replayed':False,
         'full_suite_or_compiler_or_children_or_push':False,
-        'final_non_deriver_review_complete':False,
+        'final_non_deriver_review_complete':True,
+        'principal_final_artifact_acceptance_complete':False,
     },indent=2,sort_keys=True))
 
 
