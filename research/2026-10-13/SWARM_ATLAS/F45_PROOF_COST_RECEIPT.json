@@ -1,0 +1,173 @@
+{
+  "investigator": "F45",
+  "created_utc_date": "2026-10-13",
+  "worktree": "/home/leah/succ_lab/swm-f45",
+  "branch": "research/swm-f45-2026-10-13",
+  "originating_native_commits": {
+    "observational_succ/carrier_observational_frontier.py": "a506d346277571e2980451acf40ca0d6c8797a08",
+    "observational_succ/checkpoint_meta_tower.py": "3751caee7a1e2eb12ffa38dba2181a80ba701ea6",
+    "observational_succ/proof_backaction_debt.py": "d48bc246b2034d8fa7946dc0dbd7bc9aee9b81e2",
+    "research/2026-10-10/MODEL_DEPENDENT_OBSERVER_TRAPS.md": "c7908a9ed69476b6f6640881eaf3a6176c485df9",
+    "research/2026-10-11/PROOF_BACKACTION_DEBT_ZENO.md": "d48bc246b2034d8fa7946dc0dbd7bc9aee9b81e2",
+    "research/2026-10-12/CARRIER_RELATIVE_META_SUCC_AND_DOVETAIL.md": "3751caee7a1e2eb12ffa38dba2181a80ba701ea6"
+  },
+  "python": "Python 3.12.3",
+  "sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "observational_succ/carrier_observational_frontier.py": "c658a7062b04b0802cc1286fceacb987df4686efe4610145f0a783c9ea8f7692",
+    "observational_succ/checkpoint_meta_tower.py": "89bec4281a60a861309c3c06f66ed5327f33e4165cddb6803d42f5e8ec14e7a9",
+    "observational_succ/proof_backaction_debt.py": "fd9369e27c5404da1a3e7900641e888bb8bd41efa758ec859a3552c989f14f0d",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/INFINITE_REALIZATION_LIMITS.md": "97b7520807c19ff86ca4869f4212632dec6416fe0cd9a6f60e11912f1738bb67",
+    "research/2026-10-10/MODEL_DEPENDENT_OBSERVER_TRAPS.md": "9ea6898378feabbdf32a5e69acf5f9bc47747f219304435d2bcac58f07100f34",
+    "research/2026-10-11/PROOF_BACKACTION_DEBT_ZENO.md": "6e0d383368c121bbb7dc131f67fdbbc4c3691af3665b1959e32600f2de85d013",
+    "research/2026-10-12/CARRIER_RELATIVE_META_SUCC_AND_DOVETAIL.md": "d15a81f58807e837ce6ced4ff9b9ec2477495b4a3ab50d028ec2a01986d5f74d",
+    "research/2026-10-13/SWARM_ATLAS/F45_PROOF_COST_PROBE.py": "4aaed6c188ec52d4e531b99d99aacbb965c817a170721ff7198b4df0fd6ba21a",
+    "research/2026-10-13/SWARM_ATLAS/F45_PROOF_COST_SCHEDULING.md": "5f710e7cffae175f0f1f136c8460ddb93b01447528f943ef873c621f9f273266"
+  },
+  "source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "status": "PROVED LOCAL paper theorem; TESTED MODEL finite probe; independent acceptance pending",
+  "method": {
+    "gap": "probe-gap between mandatory resource divergence and scheduling delays",
+    "bearings": "finite-subsum proof; exact synthetic probe; primary literature",
+    "dependence": "proof and probe share one investigator; 120 permutations are not 120 independent witnesses",
+    "phase": "undefined; no phasor claim",
+    "scope": "normalized nonnegative additive resources; legal original-preserving paths; no empirical physical calibration"
+  },
+  "founding_import": {
+    "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "object_present_in_assigned_checkout": false,
+    "manifest_and_frozen_source_dossier_inspected": true,
+    "imports_changed": false
+  },
+  "commands": [
+    {
+      "command": "git status --short",
+      "exit_code": 0,
+      "initial_output": ""
+    },
+    {
+      "command": "git branch --show-current",
+      "exit_code": 0,
+      "output": "research/swm-f45-2026-10-13"
+    },
+    {
+      "command": "git rev-parse HEAD",
+      "exit_code": 0,
+      "output": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935"
+    },
+    {
+      "command": "git cat-file -t ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+      "exit_code": 128,
+      "output": "fatal: git cat-file: could not get object info"
+    },
+    {
+      "command": "rg -n 'scheduler|fair|dovetail|temporal|deadline|cost' observational_succ/temporal* observational_succ/*reconstruct* observational_succ/operational_yoneda.py observational_succ/proof_backaction_debt.py 2>/dev/null",
+      "exit_code": 2,
+      "note": "optional filename guesses were absent; corrected with rg --files and read checkpoint/carrier sources"
+    },
+    {
+      "command": "python scripts/verify_provenance.py",
+      "exit_code": 0,
+      "output": {
+        "status": "SOURCE_PROVENANCE_VERIFIED",
+        "items": 72,
+        "byte_identical_research_archives": 17,
+        "mechanical_namespace_migrations": 55,
+        "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+        "establishes_mathematical_truth": false
+      }
+    },
+    {
+      "command": "python research/2026-10-13/SWARM_ATLAS/F45_PROOF_COST_PROBE.py",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "primary_sources": [
+    {
+      "author": "Leslie Lamport",
+      "title": "The Temporal Logic of Actions",
+      "url": "https://lamport.org/pubs/lamport-actions.pdf",
+      "support": "Section 5.3 fairness and enabled actions",
+      "access": "web PDF full text inspected"
+    },
+    {
+      "author": "Ernst Specker",
+      "title": "Nicht konstruktiv beweisbare Sätze der Analysis",
+      "year": 1949,
+      "doi": "10.2307/2267043",
+      "url": "https://doc.rero.ch/record/304204/files/S0022481200105663.pdf",
+      "support": "Satz I on computable monotone bounded rational sequences without computable convergence",
+      "access": "web search indexed original PDF text; direct PDF and DOI open returned internal error; local computability argument supplied independently"
+    }
+  ],
+  "probe_output": {
+    "all_arithmetic": "int/Fraction",
+    "computability_claim": "paper argument only; finite probe cannot decide halting",
+    "erased_original_parities": [
+      0,
+      1
+    ],
+    "factorial_cells": {
+      "10": "8",
+      "11": "16",
+      "00": "255/256",
+      "01": "2303/256"
+    },
+    "factorial_mixed_contrast": "0",
+    "factorial_product_positive_control": 1,
+    "finite_fair_delays_exceed_bounds": [
+      1,
+      8,
+      100
+    ],
+    "finite_permutations": 120,
+    "frozen_three_tasks_closed": true,
+    "geometric_pending_debts": [
+      "1/4",
+      "3/16",
+      "7/64",
+      "15/256",
+      "31/1024",
+      "63/4096",
+      "127/16384",
+      "255/65536"
+    ],
+    "global_proof_from_finite_reads": false,
+    "moving_horizon_debts": [
+      1,
+      1,
+      2,
+      4,
+      7,
+      11,
+      16,
+      22,
+      29
+    ],
+    "negative_cost_and_duplicate_rejections": 2,
+    "omega_event_executed": false,
+    "permutation_cost": "31/32",
+    "physical_costs_measured": false,
+    "same_observed_prefix_opposite_moving_target": true,
+    "signed_subsidy_eight": {
+      "net": 0,
+      "positive_expenditure": 8
+    },
+    "status": "TESTED MODEL",
+    "unfair_eternal_idle_rule": "scheduler(n)=idle for every natural n",
+    "universal_theorem_source": "finite-subsum proof in F45 dossier",
+    "zeno_eight_duration": "255/256",
+    "zeno_eight_energy": 8,
+    "zero_debt_unit_cost_after_eight": {
+      "cost": 8,
+      "debt": 0
+    }
+  },
+  "validation_boundary": "No full suite, compiler, physical instrument, omega event, RH theorem, or universal halting experiment executed."
+}
