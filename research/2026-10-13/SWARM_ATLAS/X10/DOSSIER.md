@@ -180,7 +180,7 @@ The six bridge obligations are discharged explicitly:
    scalar reports; a declared invariant probability supplies Hilbert types.
 2. **Map/operator:** π:X→Q, S:Q→Q, and contravariant isometric unital
    *-homomorphism J=π*:C(Q)→C(X); Hilbert extension preserves L² norm.
-3. **Commutation:** πT=Sπ and `UJ=JU_S`. If another compact factor p:X→Y
+3. **Commutation:** πT=Sπ and `UJ=JU_S`. If another compact surjective factor p:X→Y (p continuous and Y compact Hausdorff)
    has q=d∘p and pT=Vp, the unique map
    `ψ(y)=(d(Vⁿy))_{n≥0}` satisfies π=ψp and ψV=Sψ. Thus Q is the coarsest
    autonomous refinement determining every future scalar report.

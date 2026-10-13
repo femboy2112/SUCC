@@ -542,6 +542,36 @@
       "dossier_path": "research/2026-10-13/SWARM_ATLAS/X07.md",
       "integration_dossier_commit": "f6cfdd71650bd8159b84242f5d3da79dde7e1341",
       "integration": "ACCEPTED"
+    },
+    {
+      "id": "X08",
+      "branch": "research/swm-x08-2026-10-13",
+      "original_commit": "a9e7dd45dc88d5b78983270998819b00d106fba9",
+      "branch_head": "a9e7dd45dc88d5b78983270998819b00d106fba9",
+      "parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X08.md",
+      "integration_dossier_commit": "3016fc11459d60aa5e4cac49bb58244e5eb39524",
+      "integration": "ACCEPTED"
+    },
+    {
+      "id": "X09",
+      "branch": "research/swm-x09-2026-10-13",
+      "original_commit": "9f31555080a2a55ea977d03da934bb9774a33d36",
+      "branch_head": "9f31555080a2a55ea977d03da934bb9774a33d36",
+      "parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X09.md",
+      "integration_dossier_commit": "ead5e0e09b324c6eb0941518ebbf3201596fb25a",
+      "integration": "ACCEPTED"
+    },
+    {
+      "id": "X10",
+      "branch": "research/swm-x10-2026-10-13",
+      "original_commit": "01d7fe81855cd2cd73535827b38649cd3ce8962b",
+      "branch_head": "01d7fe81855cd2cd73535827b38649cd3ce8962b",
+      "parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X10/DOSSIER.md",
+      "integration_dossier_commit": "ebfe980829cf6af4d55b95cb21a0cde929984e42",
+      "integration": "ACCEPTED"
     }
   ],
   "reviews": [
@@ -1148,13 +1178,43 @@
       "dossier_path": "research/2026-10-13/SWARM_ATLAS/X07.md",
       "integration_dossier_commit": "f6cfdd71650bd8159b84242f5d3da79dde7e1341",
       "integration": "ACCEPTED"
+    },
+    {
+      "id": "X08",
+      "branch": "research/swm-x08-2026-10-13",
+      "original_commit": "a9e7dd45dc88d5b78983270998819b00d106fba9",
+      "branch_head": "a9e7dd45dc88d5b78983270998819b00d106fba9",
+      "parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X08.md",
+      "integration_dossier_commit": "3016fc11459d60aa5e4cac49bb58244e5eb39524",
+      "integration": "ACCEPTED"
+    },
+    {
+      "id": "X09",
+      "branch": "research/swm-x09-2026-10-13",
+      "original_commit": "9f31555080a2a55ea977d03da934bb9774a33d36",
+      "branch_head": "9f31555080a2a55ea977d03da934bb9774a33d36",
+      "parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X09.md",
+      "integration_dossier_commit": "ead5e0e09b324c6eb0941518ebbf3201596fb25a",
+      "integration": "ACCEPTED"
+    },
+    {
+      "id": "X10",
+      "branch": "research/swm-x10-2026-10-13",
+      "original_commit": "01d7fe81855cd2cd73535827b38649cd3ce8962b",
+      "branch_head": "01d7fe81855cd2cd73535827b38649cd3ce8962b",
+      "parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X10/DOSSIER.md",
+      "integration_dossier_commit": "ebfe980829cf6af4d55b95cb21a0cde929984e42",
+      "integration": "ACCEPTED"
     }
   ],
-  "checkpoint_parent": "ca5f77f051440b5e373338164e270f15254a6801",
+  "checkpoint_parent": "ebfe980829cf6af4d55b95cb21a0cde929984e42",
   "last_verified_push": "830e99ffc89bc9ee5ae97cbbc433206be99aa96c",
   "current_counts": {
     "native_children": 59,
     "first_accepted": 47,
-    "synth_accepted": 7
+    "synth_accepted": 10
   }
 }

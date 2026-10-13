@@ -1147,7 +1147,7 @@
       "worktree": "/home/leah/succ_lab/swm-f48",
       "branch": "research/swm-f48-2026-10-13",
       "owner": "/root/f48",
-      "state": "AWAITING SYNTHESIS",
+      "state": "RUNNING PHASE2",
       "started_utc": "2026-10-13T10:07:07.921030+00:00",
       "finished_utc": null,
       "status": "UNVERIFIED",
@@ -1157,7 +1157,8 @@
       "integration": "INITIAL PHASE ACCEPTED; WHOLE-SWARM PHASE PENDING",
       "initial_commit": "6e751c0d996de3d27a91b09f44dc2d534db09c73",
       "dossier_path": "research/2026-10-13/F48/F48_LAWFUL_HISTORY_FIBRATION.md",
-      "execution_phase": "INITIAL INDEPENDENT CHECKPOINT COMPLETE; FULL-SWARM VALIDATION NOT YET DONE"
+      "execution_phase": "INITIAL INDEPENDENT CHECKPOINT COMPLETE; FULL-SWARM VALIDATION NOT YET DONE",
+      "phase2_started_utc": "2026-10-13T11:36:38.718984+00:00"
     }
   ],
   "syntheses": [
@@ -1290,14 +1291,17 @@
       "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x08",
       "owner": "/root/x08",
-      "state": "RUNNING",
-      "status": "UNVERIFIED",
-      "integration": "PENDING",
-      "commit": null,
-      "proof_state": "NOT RUN",
+      "state": "COMPLETED",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "integration": "ACCEPTED",
+      "commit": "a9e7dd45dc88d5b78983270998819b00d106fba9",
+      "proof_state": "PAPER; PRINCIPAL NON-DERIVER CRUCIBLE ACCEPTED WITH EXPLICIT CLARIFICATIONS",
       "started_utc": "2026-10-13T11:13:59.273499+00:00",
       "branch": "research/swm-x08-2026-10-13",
-      "independence": "New scoped second-generation mission; source cross-pollination authorized. Fresh native thread"
+      "independence": "New scoped second-generation mission; source cross-pollination authorized. Fresh native thread",
+      "finished_utc": "2026-10-13T11:36:38.718984+00:00",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/X08_receipt.json",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X08.md"
     },
     {
       "id": "X09",
@@ -1306,14 +1310,17 @@
       "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x09",
       "owner": "/root/a02",
-      "state": "RUNNING",
-      "status": "UNVERIFIED",
-      "integration": "PENDING",
-      "commit": null,
-      "proof_state": "NOT RUN",
+      "state": "COMPLETED",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "integration": "ACCEPTED",
+      "commit": "9f31555080a2a55ea977d03da934bb9774a33d36",
+      "proof_state": "PAPER; PRINCIPAL NON-DERIVER CRUCIBLE ACCEPTED WITH EXPLICIT CLARIFICATIONS",
       "started_utc": "2026-10-13T11:13:59.273499+00:00",
       "branch": "research/swm-x09-2026-10-13",
-      "independence": "New scoped second-generation mission; source cross-pollination authorized. Reused unrelated investigator; not counted as new spawn"
+      "independence": "New scoped second-generation mission; source cross-pollination authorized. Reused unrelated investigator; not counted as new spawn",
+      "finished_utc": "2026-10-13T11:36:38.718984+00:00",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/X09_receipt.json",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X09.md"
     },
     {
       "id": "X10",
@@ -1322,14 +1329,17 @@
       "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x10",
       "owner": "/root/a04",
-      "state": "RUNNING",
-      "status": "UNVERIFIED",
-      "integration": "PENDING",
-      "commit": null,
-      "proof_state": "NOT RUN",
+      "state": "COMPLETED",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "integration": "ACCEPTED",
+      "commit": "01d7fe81855cd2cd73535827b38649cd3ce8962b",
+      "proof_state": "PAPER; PRINCIPAL NON-DERIVER CRUCIBLE ACCEPTED WITH EXPLICIT CLARIFICATIONS",
       "started_utc": "2026-10-13T11:13:59.273499+00:00",
       "branch": "research/swm-x10-2026-10-13",
-      "independence": "New scoped second-generation mission; source cross-pollination authorized. Reused unrelated investigator; not counted as new spawn"
+      "independence": "New scoped second-generation mission; source cross-pollination authorized. Reused unrelated investigator; not counted as new spawn",
+      "finished_utc": "2026-10-13T11:36:38.718984+00:00",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/X10/RECEIPT.json",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/X10/DOSSIER.md"
     },
     {
       "id": "X11",
@@ -1337,14 +1347,15 @@
       "title": "Domain/Kripke semantics x omega+1 report barriers",
       "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x11",
-      "owner": null,
-      "state": "QUEUED",
+      "owner": "/root/e33",
+      "state": "RUNNING",
       "status": "UNVERIFIED",
       "integration": "PENDING",
       "commit": null,
       "proof_state": "NOT RUN",
-      "started_utc": null,
-      "branch": "research/swm-x11-2026-10-13"
+      "started_utc": "2026-10-13T11:36:38.718984+00:00",
+      "branch": "research/swm-x11-2026-10-13",
+      "independence": "Genuine new second-generation mission on reused unrelated investigator; no new agent counted"
     },
     {
       "id": "X12",
@@ -1352,14 +1363,15 @@
       "title": "Mathematical phenomenology x source-dependent self-updates",
       "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x12",
-      "owner": null,
-      "state": "QUEUED",
+      "owner": "/root/c18",
+      "state": "RUNNING",
       "status": "UNVERIFIED",
       "integration": "PENDING",
       "commit": null,
       "proof_state": "NOT RUN",
-      "started_utc": null,
-      "branch": "research/swm-x12-2026-10-13"
+      "started_utc": "2026-10-13T11:36:38.718984+00:00",
+      "branch": "research/swm-x12-2026-10-13",
+      "independence": "Genuine new second-generation mission on reused unrelated investigator; no new agent counted"
     }
   ],
   "reviews": [
@@ -1450,6 +1462,14 @@
       "path": "research/2026-10-13/SWARM_ATLAS/reviews/E40_F46_F47_PRINCIPAL_REVIEW.md",
       "verdict": "SCOPED PAPER CLAIMS ACCEPTED",
       "independence": "Root did not derive author targets; postdelivery reconstruction; hypothesis reminders disclosed"
+    },
+    {
+      "assignment": "X08/X09/X10",
+      "reviewer": "/root",
+      "state": "COMPLETED",
+      "path": "research/2026-10-13/SWARM_ATLAS/reviews/X08_X09_X10_PRINCIPAL_REVIEW.md",
+      "verdict": "SCOPED BRIDGES ACCEPTED",
+      "independence": "Root non-deriver; hypothesis reminders and root-supplied X10 reducing counterexample disclosed"
     }
   ],
   "native_agents_genuinely_spawned_so_far": [
