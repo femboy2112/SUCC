@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - 'research/eodcs-*'
+      - 'research/voyager-*'
   pull_request:
     paths:
       - 'formal/EODCS_*.lean'
@@ -16,7 +17,7 @@ permissions:
 
 jobs:
   eodcs_lean:
-    name: Lean4 exact order/adjunction lemmas (pinned)
+    name: Lean4 EODCS and Voyager exact source/limit proofs (pinned)
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
