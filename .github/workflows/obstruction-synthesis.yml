@@ -29,9 +29,32 @@ jobs:
           set -o pipefail
           lean --version
           lean -DwarningAsError=true formal/obstruction_synthesis/RepairKernel.lean | tee "$RUNNER_TEMP/succ-lean-kernel.log"
+          lean -DwarningAsError=true formal/obstruction_synthesis/DiscoveredInstance.lean | tee -a "$RUNNER_TEMP/succ-lean-kernel.log"
+          printf "import Std\nexample : (0 : Nat) = 1 := by rfl\n" > "$RUNNER_TEMP/false-theorem.lean"
+          if lean "$RUNNER_TEMP/false-theorem.lean"; then echo "Invalid theorem unexpectedly accepted"; exit 1; fi
           if grep -E 'sorryAx|^axiom |^opaque ' formal/obstruction_synthesis/RepairKernel.lean "$RUNNER_TEMP/succ-lean-kernel.log"; then exit 1; fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: obstruction-lean-kernel
           path: ${{ runner.temp }}/succ-lean-kernel.log
+
+  synthesis-python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -e ".[test]"
+      - name: Targeted new synthesis and negative controls
+        run: python -m unittest discover -s tests -p 'test_evolving_*.py' -v
+      - name: Replay source-derived precommitted discovery receipt
+        run: |
+          python scripts/evolutionary_obstruction_probe.py > "$RUNNER_TEMP/evolution.json"
+          diff -u research/2026-10-13/EVOLUTIONARY_OBSTRUCTION_RECEIPT.json "$RUNNER_TEMP/evolution.json"
