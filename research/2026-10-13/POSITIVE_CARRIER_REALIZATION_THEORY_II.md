@@ -17,7 +17,8 @@ Part I's "Lean-ready plan": the three identities behind the cone theorem (Part I
 verified over an arbitrary commutative semiring.  Labels follow `docs/CLAIM_LEDGER.md`; claims are
 ledgered as PCR-25 … PCR-41 in `docs/CLAIM_SUPPLEMENT_POSITIVE_CARRIER.md`.
 Snapshot: branch `research/positive-carrier-realization-2026-10-13`, forked from PR #53 head
-`9e7589e5`.  Nothing touches `main`, PR #49's worktrees, PR #54, or any `research/swm-*` branch.
+`9e7589e5`; draft PR #55 against PR #53's branch.  Nothing touches `main`, PR #49's worktrees, PR #54,
+or any `research/swm-*` branch.
 
 **One-paragraph answer (Part II).**  Positive realizability is not a property of a behavior alone;
 it is a property of a behavior *and a field*.  A rational behavior has a positive carrier with
