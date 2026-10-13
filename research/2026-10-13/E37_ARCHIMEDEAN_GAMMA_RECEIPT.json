@@ -1,0 +1,966 @@
+{
+  "RH_proved": false,
+  "artifact_sha256": {
+    "research/2026-10-13/E37_ARCHIMEDEAN_GAMMA_BOUNDARY.md": "b2824dd332c642f9c103db63621bd4eb222a712ef67364b40fd7fa9107982569",
+    "scripts/e37_archimedean_gamma_probe.py": "e7a166a6566faa504eeed4227ea928541329f7f575ec371e58bf2d0716be2f19"
+  },
+  "branch": "research/swm-e37-2026-10-13",
+  "children_spawned": false,
+  "claim_statuses": {
+    "Gamma_alone_identifies_arithmetic_source": "REFUTED_SIX_MUTATION_AND_COMPOSITE_BASE",
+    "Gamma_identification_from_factorials_and_recurrence": "REFUTED_PERIODIC_GAUGE",
+    "Mellin_Beta_identity_and_compact_derivative_convergence": "CLASSICAL_WITH_WRITTEN_PROOF",
+    "Schwartz_pairing_logarithmic_derivative_limit": "CLASSICAL_WITH_WRITTEN_PROOF",
+    "completion_identification_from_finite_samples": "REFUTED_EXACT_SYMMETRIC_POLYNOMIAL",
+    "finite_probe": "TESTED_MODEL_EXACT_RATIONAL",
+    "finite_recurrence_perfection": "REFUTED_EXACT_N2_Q1",
+    "independent_positive_completed_Weil_pairing": "CONJECTURE_NOT_CONSTRUCTED",
+    "meromorphic_continuation_off_poles": "CLASSICAL_WITH_WRITTEN_PROOF"
+  },
+  "commands": [
+    {
+      "command": "git status --short --branch; git rev-parse HEAD",
+      "exit": 0,
+      "result": "assigned clean research branch at immutable parent"
+    },
+    {
+      "command": "git cat-file -t ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+      "exit": 128,
+      "result": "origin object not in target object database; recovered by exact local originating repository"
+    },
+    {
+      "command": "git -C /home/leah/FuckingRH cat-file -t ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+      "exit": 0,
+      "result": "commit"
+    },
+    {
+      "command": "independent Python manifest-entry check using git show and git rev-parse at exact origin for six relevant artifacts",
+      "exit": 0,
+      "result": "all matched; raw hashes retained here"
+    },
+    {
+      "command": "python scripts/e37_archimedean_gamma_probe.py",
+      "exit": 0,
+      "result": "all exact assertions passed; repeated stdout matched original output"
+    },
+    {
+      "command": "python scripts/verify_provenance.py",
+      "exit": 0,
+      "result": {
+        "byte_identical_research_archives": 17,
+        "establishes_mathematical_truth": false,
+        "items": 72,
+        "mechanical_namespace_migrations": 55,
+        "status": "SOURCE_PROVENANCE_VERIFIED"
+      }
+    },
+    {
+      "command": "git diff --check",
+      "exit": 0,
+      "result": "passed before staging; untracked artifacts subsequently checked with cached diff"
+    },
+    {
+      "command": "git diff --cached --check",
+      "exit": 0,
+      "result": "three intended new E37 files passed whitespace check"
+    }
+  ],
+  "compiler_run": false,
+  "date": "2026-10-13",
+  "dossier_sections": 10,
+  "dossier_word_count": 1216,
+  "experiment": "E37_ARCHIMEDEAN_GAMMA_BOUNDARY",
+  "full_suite_reason": "Assigned isolation protocol prohibits full suites; principal integration review owns global gates.",
+  "full_suite_run": false,
+  "immutable_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "independence_boundary": "Probe uses polynomial monomial integration versus product cancellation and direct residue denominators versus binomial residue formula. No SUCC imports; same investigator wrote analytic proof and probe, so finite computation is not independent certification of the universal theorem. Archives and migrated source share the founding provenance family.",
+  "integer_enclosure_derivation": "For q>=1, G_N(q)=(q-1)! product_(j=1..q)(1+j/N)^-1. With delta_j=j/(N+j), 1-product(1-delta_j)<=sum delta_j<=q(q+1)/(2N). This proves the rational error bound used in every gamma row.",
+  "other_first_generation_results_read": false,
+  "probe_stdout_sha256": "75a5e9424dd71eefac432dbb13c4dc64a5041ed14ac946c24e81f6f2ecb2f8a5",
+  "provenance_commands": [
+    {
+      "byte_check": "Origin bytes after declared transformation equal destination bytes",
+      "exit": 0,
+      "expected_blob": "ca7ad4a78a0e7f0d2b06a0c4498c58c6205063ce",
+      "origin_blob_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "rev-parse",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:actualization/gamma_interferometer.py"
+      ],
+      "origin_bytes_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "show",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:actualization/gamma_interferometer.py"
+      ]
+    },
+    {
+      "byte_check": "Origin bytes after declared transformation equal destination bytes",
+      "exit": 0,
+      "expected_blob": "5c4b5bd86b03be0863cc3b6e589c6d3264b55055",
+      "origin_blob_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "rev-parse",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:actualization/gamma_succ_path.py"
+      ],
+      "origin_bytes_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "show",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:actualization/gamma_succ_path.py"
+      ]
+    },
+    {
+      "byte_check": "Origin bytes after declared transformation equal destination bytes",
+      "exit": 0,
+      "expected_blob": "65f24f44369375b3cd88fc0743f60c1d5fb2a0d5",
+      "origin_blob_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "rev-parse",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md"
+      ],
+      "origin_bytes_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "show",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md"
+      ]
+    },
+    {
+      "byte_check": "Origin bytes after declared transformation equal destination bytes",
+      "exit": 0,
+      "expected_blob": "8e6cd9634cfdc20809599174bb7dfe810182cfa3",
+      "origin_blob_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "rev-parse",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:research/2026-10-10/FINITE_SUCC_HASSE_THETA_SEAM.md"
+      ],
+      "origin_bytes_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "show",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:research/2026-10-10/FINITE_SUCC_HASSE_THETA_SEAM.md"
+      ]
+    },
+    {
+      "byte_check": "Origin bytes after declared transformation equal destination bytes",
+      "exit": 0,
+      "expected_blob": "3783cda6cf7fd6489291c871e627841638476ff9",
+      "origin_blob_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "rev-parse",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:research/2026-10-10/GAMMA_ACTUALIZATION_INTERFEROMETER.md"
+      ],
+      "origin_bytes_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "show",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:research/2026-10-10/GAMMA_ACTUALIZATION_INTERFEROMETER.md"
+      ]
+    },
+    {
+      "byte_check": "Origin bytes after declared transformation equal destination bytes",
+      "exit": 0,
+      "expected_blob": "b792cc9f4f8cf3b6a027adc949c67d5995ef0a7a",
+      "origin_blob_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "rev-parse",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:research/2026-10-10/SUCC_GAMMA_PRIME_PATH_GERMS.md"
+      ],
+      "origin_bytes_command": [
+        "git",
+        "-C",
+        "/home/leah/FuckingRH",
+        "show",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a:research/2026-10-10/SUCC_GAMMA_PRIME_PATH_GERMS.md"
+      ]
+    }
+  ],
+  "provenance_matches": [
+    {
+      "declared_transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "destination_path": "observational_succ/gamma_interferometer.py",
+      "destination_sha256": "55c3e9d85d8bc521685aa417712b2626e4b961209bd336db67c72c90b51f244d",
+      "matched_exact_origin": true,
+      "origin_blob": "ca7ad4a78a0e7f0d2b06a0c4498c58c6205063ce",
+      "origin_path": "actualization/gamma_interferometer.py",
+      "origin_sha256": "8639a774b47627068e4e3911fe825e18ede76f68f48ddce0ef76be539bbe23b2"
+    },
+    {
+      "declared_transformation": "literal textual namespace translation: actualization -> observational_succ",
+      "destination_path": "observational_succ/gamma_succ_path.py",
+      "destination_sha256": "3b8f86c616a1e52da8a7ef134e5f35910262d7e5c9e46683ca3627586f52ed0d",
+      "matched_exact_origin": true,
+      "origin_blob": "5c4b5bd86b03be0863cc3b6e589c6d3264b55055",
+      "origin_path": "actualization/gamma_succ_path.py",
+      "origin_sha256": "3b8f86c616a1e52da8a7ef134e5f35910262d7e5c9e46683ca3627586f52ed0d"
+    },
+    {
+      "declared_transformation": "verbatim",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md",
+      "destination_sha256": "27a06af50514921a493e6d4057e893e0c569c6e293a1e990650022420ca94a0c",
+      "matched_exact_origin": true,
+      "origin_blob": "65f24f44369375b3cd88fc0743f60c1d5fb2a0d5",
+      "origin_path": "research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md",
+      "origin_sha256": "27a06af50514921a493e6d4057e893e0c569c6e293a1e990650022420ca94a0c"
+    },
+    {
+      "declared_transformation": "verbatim",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/FINITE_SUCC_HASSE_THETA_SEAM.md",
+      "destination_sha256": "946e1870172598eeee51820885336ff7b848c810bbe40c9d6fc682cb97388f0a",
+      "matched_exact_origin": true,
+      "origin_blob": "8e6cd9634cfdc20809599174bb7dfe810182cfa3",
+      "origin_path": "research/2026-10-10/FINITE_SUCC_HASSE_THETA_SEAM.md",
+      "origin_sha256": "946e1870172598eeee51820885336ff7b848c810bbe40c9d6fc682cb97388f0a"
+    },
+    {
+      "declared_transformation": "verbatim",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/GAMMA_ACTUALIZATION_INTERFEROMETER.md",
+      "destination_sha256": "6c745eb076b1a9179ff4b5c6671a449dc3c3e9a59543e3a8f1c5ef81d0b1313a",
+      "matched_exact_origin": true,
+      "origin_blob": "3783cda6cf7fd6489291c871e627841638476ff9",
+      "origin_path": "research/2026-10-10/GAMMA_ACTUALIZATION_INTERFEROMETER.md",
+      "origin_sha256": "6c745eb076b1a9179ff4b5c6671a449dc3c3e9a59543e3a8f1c5ef81d0b1313a"
+    },
+    {
+      "declared_transformation": "verbatim",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/SUCC_GAMMA_PRIME_PATH_GERMS.md",
+      "destination_sha256": "616c8a66173d0362cad4a1fc885ba942d2b116fc9be232455dc051d1697ef4eb",
+      "matched_exact_origin": true,
+      "origin_blob": "b792cc9f4f8cf3b6a027adc949c67d5995ef0a7a",
+      "origin_path": "research/2026-10-10/SUCC_GAMMA_PRIME_PATH_GERMS.md",
+      "origin_sha256": "616c8a66173d0362cad4a1fc885ba942d2b116fc9be232455dc051d1697ef4eb"
+    }
+  ],
+  "pushed": false,
+  "python": "Python 3.12.3",
+  "raw_probe": {
+    "RH_proved": false,
+    "completed_source_identified": false,
+    "finite_residues": [
+      {
+        "N": 2,
+        "pole": 0,
+        "residue": "1"
+      },
+      {
+        "N": 2,
+        "pole": -1,
+        "residue": "-1"
+      },
+      {
+        "N": 2,
+        "pole": -2,
+        "residue": "1/4"
+      },
+      {
+        "N": 3,
+        "pole": 0,
+        "residue": "1"
+      },
+      {
+        "N": 3,
+        "pole": -1,
+        "residue": "-1"
+      },
+      {
+        "N": 3,
+        "pole": -2,
+        "residue": "1/3"
+      },
+      {
+        "N": 3,
+        "pole": -3,
+        "residue": "-1/27"
+      },
+      {
+        "N": 4,
+        "pole": 0,
+        "residue": "1"
+      },
+      {
+        "N": 4,
+        "pole": -1,
+        "residue": "-1"
+      },
+      {
+        "N": 4,
+        "pole": -2,
+        "residue": "3/8"
+      },
+      {
+        "N": 4,
+        "pole": -3,
+        "residue": "-1/16"
+      },
+      {
+        "N": 4,
+        "pole": -4,
+        "residue": "1/256"
+      },
+      {
+        "N": 5,
+        "pole": 0,
+        "residue": "1"
+      },
+      {
+        "N": 5,
+        "pole": -1,
+        "residue": "-1"
+      },
+      {
+        "N": 5,
+        "pole": -2,
+        "residue": "2/5"
+      },
+      {
+        "N": 5,
+        "pole": -3,
+        "residue": "-2/25"
+      },
+      {
+        "N": 5,
+        "pole": -4,
+        "residue": "1/125"
+      },
+      {
+        "N": 5,
+        "pole": -5,
+        "residue": "-1/3125"
+      },
+      {
+        "N": 6,
+        "pole": 0,
+        "residue": "1"
+      },
+      {
+        "N": 6,
+        "pole": -1,
+        "residue": "-1"
+      },
+      {
+        "N": 6,
+        "pole": -2,
+        "residue": "5/12"
+      },
+      {
+        "N": 6,
+        "pole": -3,
+        "residue": "-5/54"
+      },
+      {
+        "N": 6,
+        "pole": -4,
+        "residue": "5/432"
+      },
+      {
+        "N": 6,
+        "pole": -5,
+        "residue": "-1/1296"
+      },
+      {
+        "N": 6,
+        "pole": -6,
+        "residue": "1/46656"
+      },
+      {
+        "N": 7,
+        "pole": 0,
+        "residue": "1"
+      },
+      {
+        "N": 7,
+        "pole": -1,
+        "residue": "-1"
+      },
+      {
+        "N": 7,
+        "pole": -2,
+        "residue": "3/7"
+      },
+      {
+        "N": 7,
+        "pole": -3,
+        "residue": "-5/49"
+      },
+      {
+        "N": 7,
+        "pole": -4,
+        "residue": "5/343"
+      },
+      {
+        "N": 7,
+        "pole": -5,
+        "residue": "-3/2401"
+      },
+      {
+        "N": 7,
+        "pole": -6,
+        "residue": "1/16807"
+      },
+      {
+        "N": 7,
+        "pole": -7,
+        "residue": "-1/823543"
+      },
+      {
+        "N": 8,
+        "pole": 0,
+        "residue": "1"
+      },
+      {
+        "N": 8,
+        "pole": -1,
+        "residue": "-1"
+      },
+      {
+        "N": 8,
+        "pole": -2,
+        "residue": "7/16"
+      },
+      {
+        "N": 8,
+        "pole": -3,
+        "residue": "-7/64"
+      },
+      {
+        "N": 8,
+        "pole": -4,
+        "residue": "35/2048"
+      },
+      {
+        "N": 8,
+        "pole": -5,
+        "residue": "-7/4096"
+      },
+      {
+        "N": 8,
+        "pole": -6,
+        "residue": "7/65536"
+      },
+      {
+        "N": 8,
+        "pole": -7,
+        "residue": "-1/262144"
+      },
+      {
+        "N": 8,
+        "pole": -8,
+        "residue": "1/16777216"
+      }
+    ],
+    "floating_point_used": false,
+    "fresh_holdout_at_1_over_4": "4108830350625/4294967296",
+    "gamma_rows": [
+      {
+        "N": 2,
+        "defect": "1/2",
+        "gamma_error": "1/3",
+        "mellin": "2/3",
+        "proven_error_bound": "1/2",
+        "q": 1,
+        "ratio": "1/2"
+      },
+      {
+        "N": 2,
+        "defect": "6/5",
+        "gamma_error": "2/3",
+        "mellin": "1/3",
+        "proven_error_bound": "3/2",
+        "q": 2,
+        "ratio": "4/5"
+      },
+      {
+        "N": 2,
+        "defect": "2",
+        "gamma_error": "26/15",
+        "mellin": "4/15",
+        "proven_error_bound": "6",
+        "q": 3,
+        "ratio": "1"
+      },
+      {
+        "N": 2,
+        "defect": "20/7",
+        "gamma_error": "86/15",
+        "mellin": "4/15",
+        "proven_error_bound": "30",
+        "q": 4,
+        "ratio": "8/7"
+      },
+      {
+        "N": 2,
+        "defect": "15/4",
+        "gamma_error": "2488/105",
+        "mellin": "32/105",
+        "proven_error_bound": "180",
+        "q": 5,
+        "ratio": "5/4"
+      },
+      {
+        "N": 2,
+        "defect": "14/3",
+        "gamma_error": "2512/21",
+        "mellin": "8/21",
+        "proven_error_bound": "1260",
+        "q": 6,
+        "ratio": "4/3"
+      },
+      {
+        "N": 3,
+        "defect": "2/5",
+        "gamma_error": "1/4",
+        "mellin": "3/4",
+        "proven_error_bound": "1/3",
+        "q": 1,
+        "ratio": "3/5"
+      },
+      {
+        "N": 3,
+        "defect": "1",
+        "gamma_error": "11/20",
+        "mellin": "9/20",
+        "proven_error_bound": "1",
+        "q": 2,
+        "ratio": "1"
+      },
+      {
+        "N": 3,
+        "defect": "12/7",
+        "gamma_error": "31/20",
+        "mellin": "9/20",
+        "proven_error_bound": "4",
+        "q": 3,
+        "ratio": "9/7"
+      },
+      {
+        "N": 3,
+        "defect": "5/2",
+        "gamma_error": "759/140",
+        "mellin": "81/140",
+        "proven_error_bound": "20",
+        "q": 4,
+        "ratio": "3/2"
+      },
+      {
+        "N": 3,
+        "defect": "10/3",
+        "gamma_error": "6477/280",
+        "mellin": "243/280",
+        "proven_error_bound": "120",
+        "q": 5,
+        "ratio": "5/3"
+      },
+      {
+        "N": 3,
+        "defect": "21/5",
+        "gamma_error": "6639/56",
+        "mellin": "81/56",
+        "proven_error_bound": "840",
+        "q": 6,
+        "ratio": "9/5"
+      },
+      {
+        "N": 4,
+        "defect": "1/3",
+        "gamma_error": "1/5",
+        "mellin": "4/5",
+        "proven_error_bound": "1/4",
+        "q": 1,
+        "ratio": "2/3"
+      },
+      {
+        "N": 4,
+        "defect": "6/7",
+        "gamma_error": "7/15",
+        "mellin": "8/15",
+        "proven_error_bound": "3/4",
+        "q": 2,
+        "ratio": "8/7"
+      },
+      {
+        "N": 4,
+        "defect": "3/2",
+        "gamma_error": "146/105",
+        "mellin": "64/105",
+        "proven_error_bound": "3",
+        "q": 3,
+        "ratio": "3/2"
+      },
+      {
+        "N": 4,
+        "defect": "20/9",
+        "gamma_error": "178/35",
+        "mellin": "32/35",
+        "proven_error_bound": "15",
+        "q": 4,
+        "ratio": "16/9"
+      },
+      {
+        "N": 4,
+        "defect": "3",
+        "gamma_error": "7048/315",
+        "mellin": "512/315",
+        "proven_error_bound": "90",
+        "q": 5,
+        "ratio": "2"
+      },
+      {
+        "N": 4,
+        "defect": "42/11",
+        "gamma_error": "36776/315",
+        "mellin": "1024/315",
+        "proven_error_bound": "630",
+        "q": 6,
+        "ratio": "24/11"
+      },
+      {
+        "N": 5,
+        "defect": "2/7",
+        "gamma_error": "1/6",
+        "mellin": "5/6",
+        "proven_error_bound": "1/5",
+        "q": 1,
+        "ratio": "5/7"
+      },
+      {
+        "N": 5,
+        "defect": "3/4",
+        "gamma_error": "17/42",
+        "mellin": "25/42",
+        "proven_error_bound": "3/5",
+        "q": 2,
+        "ratio": "5/4"
+      },
+      {
+        "N": 5,
+        "defect": "4/3",
+        "gamma_error": "211/168",
+        "mellin": "125/168",
+        "proven_error_bound": "12/5",
+        "q": 3,
+        "ratio": "5/3"
+      },
+      {
+        "N": 5,
+        "defect": "2",
+        "gamma_error": "2399/504",
+        "mellin": "625/504",
+        "proven_error_bound": "12",
+        "q": 4,
+        "ratio": "2"
+      },
+      {
+        "N": 5,
+        "defect": "30/11",
+        "gamma_error": "5423/252",
+        "mellin": "625/252",
+        "proven_error_bound": "72",
+        "q": 5,
+        "ratio": "25/11"
+      },
+      {
+        "N": 5,
+        "defect": "7/2",
+        "gamma_error": "317015/2772",
+        "mellin": "15625/2772",
+        "proven_error_bound": "504",
+        "q": 6,
+        "ratio": "5/2"
+      },
+      {
+        "N": 6,
+        "defect": "1/4",
+        "gamma_error": "1/7",
+        "mellin": "6/7",
+        "proven_error_bound": "1/6",
+        "q": 1,
+        "ratio": "3/4"
+      },
+      {
+        "N": 6,
+        "defect": "2/3",
+        "gamma_error": "5/14",
+        "mellin": "9/14",
+        "proven_error_bound": "1/2",
+        "q": 2,
+        "ratio": "4/3"
+      },
+      {
+        "N": 6,
+        "defect": "6/5",
+        "gamma_error": "8/7",
+        "mellin": "6/7",
+        "proven_error_bound": "2",
+        "q": 3,
+        "ratio": "9/5"
+      },
+      {
+        "N": 6,
+        "defect": "20/11",
+        "gamma_error": "156/35",
+        "mellin": "54/35",
+        "proven_error_bound": "10",
+        "q": 4,
+        "ratio": "24/11"
+      },
+      {
+        "N": 6,
+        "defect": "5/2",
+        "gamma_error": "7944/385",
+        "mellin": "1296/385",
+        "proven_error_bound": "60",
+        "q": 5,
+        "ratio": "5/2"
+      },
+      {
+        "N": 6,
+        "defect": "42/13",
+        "gamma_error": "8592/77",
+        "mellin": "648/77",
+        "proven_error_bound": "420",
+        "q": 6,
+        "ratio": "36/13"
+      },
+      {
+        "N": 7,
+        "defect": "2/9",
+        "gamma_error": "1/8",
+        "mellin": "7/8",
+        "proven_error_bound": "1/7",
+        "q": 1,
+        "ratio": "7/9"
+      },
+      {
+        "N": 7,
+        "defect": "3/5",
+        "gamma_error": "23/72",
+        "mellin": "49/72",
+        "proven_error_bound": "3/7",
+        "q": 2,
+        "ratio": "7/5"
+      },
+      {
+        "N": 7,
+        "defect": "12/11",
+        "gamma_error": "377/360",
+        "mellin": "343/360",
+        "proven_error_bound": "12/7",
+        "q": 3,
+        "ratio": "21/11"
+      },
+      {
+        "N": 7,
+        "defect": "5/3",
+        "gamma_error": "5519/1320",
+        "mellin": "2401/1320",
+        "proven_error_bound": "60/7",
+        "q": 4,
+        "ratio": "7/3"
+      },
+      {
+        "N": 7,
+        "defect": "30/13",
+        "gamma_error": "78233/3960",
+        "mellin": "16807/3960",
+        "proven_error_bound": "360/7",
+        "q": 5,
+        "ratio": "35/13"
+      },
+      {
+        "N": 7,
+        "defect": "3",
+        "gamma_error": "1117871/10296",
+        "mellin": "117649/10296",
+        "proven_error_bound": "360",
+        "q": 6,
+        "ratio": "3"
+      },
+      {
+        "N": 8,
+        "defect": "1/5",
+        "gamma_error": "1/9",
+        "mellin": "8/9",
+        "proven_error_bound": "1/8",
+        "q": 1,
+        "ratio": "4/5"
+      },
+      {
+        "N": 8,
+        "defect": "6/11",
+        "gamma_error": "13/45",
+        "mellin": "32/45",
+        "proven_error_bound": "3/8",
+        "q": 2,
+        "ratio": "16/11"
+      },
+      {
+        "N": 8,
+        "defect": "1",
+        "gamma_error": "478/495",
+        "mellin": "512/495",
+        "proven_error_bound": "3/2",
+        "q": 3,
+        "ratio": "2"
+      },
+      {
+        "N": 8,
+        "defect": "20/13",
+        "gamma_error": "1946/495",
+        "mellin": "1024/495",
+        "proven_error_bound": "15/2",
+        "q": 4,
+        "ratio": "32/13"
+      },
+      {
+        "N": 8,
+        "defect": "15/7",
+        "gamma_error": "121672/6435",
+        "mellin": "32768/6435",
+        "proven_error_bound": "45",
+        "q": 5,
+        "ratio": "20/7"
+      },
+      {
+        "N": 8,
+        "defect": "14/5",
+        "gamma_error": "950008/9009",
+        "mellin": "131072/9009",
+        "proven_error_bound": "315",
+        "q": 6,
+        "ratio": "16/5"
+      }
+    ],
+    "mutant_residues": [
+      {
+        "m": 1,
+        "residue_after_dividing_by_pi_power_m": "-72"
+      },
+      {
+        "m": 2,
+        "residue_after_dividing_by_pi_power_m": "1296"
+      },
+      {
+        "m": 3,
+        "residue_after_dividing_by_pi_power_m": "-15552"
+      }
+    ],
+    "nontrivial_zeta_zero_inputs": false,
+    "sample_nodes": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "-1",
+      "-2",
+      "-3"
+    ],
+    "sample_polynomial_coefficients_low_to_high": [
+      "0",
+      "0",
+      "20736",
+      "-10368",
+      "-55152",
+      "28224",
+      "51016",
+      "-27272",
+      "-19695",
+      "11552",
+      "3260",
+      "-2352",
+      "-154",
+      "224",
+      "-12",
+      "-8",
+      "1"
+    ],
+    "sample_value_and_first_derivative": "all exactly zero",
+    "source_controls": [
+      {
+        "a2": 1,
+        "a3": 1,
+        "a6": 1,
+        "connected_b6": "0",
+        "same_G2_at_1": "2/3",
+        "source": "zeta"
+      },
+      {
+        "a2": 1,
+        "a3": 1,
+        "a6": 2,
+        "connected_b6": "1",
+        "same_G2_at_1": "2/3",
+        "source": "non_Euler_six_mutation"
+      },
+      {
+        "a2": 0,
+        "a3": 0,
+        "a6": 1,
+        "connected_b6": "1",
+        "same_G2_at_1": "2/3",
+        "source": "counterfeit_Euler_base_six"
+      }
+    ],
+    "status": "TESTED_MODEL_EXACT_RATIONAL",
+    "symmetric_off_line_root_polynomial": [
+      "3/16",
+      "-1",
+      "1"
+    ],
+    "universal_analytic_proof_certified_by_script": false
+  },
+  "references": [
+    {
+      "accessed": "2026-10-13",
+      "kind": "official NIST DLMF",
+      "url": "https://dlmf.nist.gov/5.2"
+    },
+    {
+      "accessed": "2026-10-13",
+      "kind": "official NIST DLMF",
+      "url": "https://dlmf.nist.gov/5.5"
+    },
+    {
+      "accessed": "2026-10-13",
+      "kind": "official NIST DLMF",
+      "url": "https://dlmf.nist.gov/5.8.E1"
+    },
+    {
+      "accessed": "2026-10-13",
+      "kind": "official NIST DLMF",
+      "url": "https://dlmf.nist.gov/5.12.E1"
+    },
+    {
+      "accessed": "2026-10-13",
+      "kind": "official NIST DLMF",
+      "url": "https://dlmf.nist.gov/25.4.E2"
+    },
+    {
+      "accessed": "2026-10-13",
+      "kind": "official NIST DLMF",
+      "url": "https://dlmf.nist.gov/2.5"
+    }
+  ],
+  "remaining_smallest_bridge": "Construct an independent source-derived pairing B and prove B=Q_Weil on C_c^infinity(R) in logarithmic coordinates, with specified pole subtraction, conductor, half-density, phase and uniform form control. No such B is constructed.",
+  "shared_metadata_modified": false,
+  "source_origin_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "worktree": "/home/leah/succ_lab/swm-e37"
+}
