@@ -76,4 +76,23 @@ theorem plateau_certifies_all_future
   intro n
   exact (future_blocks n) 0 (Nat.zero_le h)
 
+
+/-- Under a globally verified stationary partition plateau, the FINITE
+h-observation equivalence equals equivalence under every future report.
+This is a mathematical infinite quantifier discharged by induction,
+not an instrument performing infinitely many observations. -/
+theorem plateau_iff_complete_future_equivalence
+    {S : Type u} {O : Type v}
+    (q : S → O) (U : S → S) (h : Nat)
+    (plateau : ∀ s t : S,
+      AgreeThrough q U h s t → AgreeThrough q U (h+1) s t)
+    (s t : S) :
+    AgreeThrough q U h s t ↔
+      (∀ n : Nat, q (IterSUCC U n s) = q (IterSUCC U n t)) := by
+  constructor
+  · intro hagree
+    exact plateau_certifies_all_future q U h plateau s t hagree
+  · intro future i hi
+    exact future i
+
 end ObservationalSUCC
