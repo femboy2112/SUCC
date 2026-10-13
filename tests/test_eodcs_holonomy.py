@@ -75,11 +75,15 @@ class TestVoltageCover(unittest.TestCase):
             self.assertEqual(brute > 0, g.global_potential_exists())
             self.assertEqual(brute, m if g.global_potential_exists() else 0)
             hol = set(g.holonomy_subgroup())
-            self.assertEqual(hol, {k for k in range(m) if
-                                  k % (m // len(hol)) == 0} if len(hol) == 1 else hol)
+            # Independent BFS-based monodromy return phases at the root.
+            returns = {level for vertex, level in g.lifted_reachable()
+                       if vertex == v[0]}
+            self.assertEqual(hol, returns)
             c = g.cover_report()
             self.assertEqual(c["connected_lift_vertices"], len(v)*len(hol))
             self.assertTrue(c["scalar_on_cover_verified"])
+            self.assertEqual(c["minimal_cover_vertices"], len(v)*len(hol))
+            self.assertEqual(c["minimal_cover_arcs"], len(edges)*len(hol))
 
 
 class TestPermutationFixedPoint(unittest.TestCase):
