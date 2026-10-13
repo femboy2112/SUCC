@@ -1,0 +1,383 @@
+{
+  "commands": [
+    {
+      "command": [
+        "timeout",
+        "30s",
+        "python",
+        "research/2026-10-13/SWARM_ATLAS/X06_probe.py"
+      ],
+      "environment": {
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "Decoded below in this receipt; no output truncation",
+      "stdout_sha256": "34a7a262057b7501994f58841f3c87b509a75492a014595b69955691a920d1f8"
+    },
+    {
+      "command": [
+        "python",
+        "-B",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"byte_identical_research_archives\": 17,\n  \"establishes_mathematical_truth\": false,\n  \"items\": 72,\n  \"mechanical_namespace_migrations\": 55,\n  \"source_commit\": \"ba075348b7bcc66d938b3e0ca96c26e95bba340a\",\n  \"status\": \"SOURCE_PROVENANCE_VERIFIED\"\n}\n"
+    },
+    {
+      "command": [
+        "git",
+        "cat-file",
+        "-t",
+        "ba075348b7bcc66d938b3e0ca96c26e95bba340a"
+      ],
+      "exit_code": 128,
+      "stderr": "fatal: git cat-file: could not get object info\n",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "?? research/2026-10-13/SWARM_ATLAS/X06.md\n?? research/2026-10-13/SWARM_ATLAS/X06_probe.py\n"
+    },
+    {
+      "command": [
+        "git",
+        "log",
+        "-1",
+        "--format=%H",
+        "--",
+        "research/2026-10-13/SWARM_ATLAS/A08.md"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "c0bbbf57afc32d4f96200922bd13d65f2f3365b9\n"
+    },
+    {
+      "command": [
+        "git",
+        "log",
+        "-1",
+        "--format=%H",
+        "--",
+        "research/2026-10-13/SWARM_ATLAS/B16.md"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "d5801ec680663717b4c93e72df96bfbd5a26a0f6\n"
+    },
+    {
+      "command": [
+        "git",
+        "log",
+        "-1",
+        "--format=%H",
+        "--",
+        "research/2026-10-13/SWARM_ATLAS/C21.md"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "7592e184a30c67f67d506d08fbf2932012f7f1be\n"
+    },
+    {
+      "command": [
+        "git",
+        "log",
+        "-1",
+        "--format=%H",
+        "--",
+        "research/2026-10-13/SWARM_ATLAS/F45_PROOF_COST_SCHEDULING.md"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "c414da5e5b824bd768ac68d0b89d458cb77de8ff\n"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "observed_at": "scoped staging before enabledness-only probe refinement",
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "discovery_failure": {
+    "command": "rg -n 'resource|memory|carrier|truth|finite' provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md provenance/origins/fuckingrh/research/2026-10-10/RESOURCE_BOUNDED_PRIME_PROBE_SUCC.md provenance/origins/fuckingrh/research/2026-10-10/INFINITE_REALIZATION_OF_BOUNDED_SUCC.md",
+    "exit_code": 2,
+    "stderr": "Two guessed archive paths absent; corrected with rg --files and inspected actual archive paths."
+  },
+  "finite_cancellative_controls": {
+    "machines": 2820,
+    "oracle": "direct cumulative words of length <= n^2; refinement uses local edge signatures",
+    "scope": "binary reports/costs; unary <=3 states, two actions at 2 states"
+  },
+  "geometry": {
+    "fibre_distance_equalities": 18,
+    "fixed_endpoint_shrink": {
+      "physical": 4,
+      "residual": 0
+    },
+    "partition": [
+      0,
+      1,
+      2,
+      0,
+      1,
+      2
+    ],
+    "quotient_distances": [
+      [
+        "0",
+        "1",
+        "3"
+      ],
+      [
+        "5",
+        "0",
+        "2"
+      ],
+      [
+        "3",
+        "4",
+        "0"
+      ]
+    ],
+    "reset_cost": 3,
+    "residual_states": 3,
+    "source_states": 6,
+    "spent_fresh_naive_triangle": [
+      1,
+      1,
+      5
+    ],
+    "triangle_checks": 243
+  },
+  "id": "X06",
+  "independence": "one investigator; direct-word oracle and refinement share source fixtures",
+  "interfaces": {
+    "clock_cost_prefix": [
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/16",
+      "1/32",
+      "1/64",
+      "1/128",
+      "1/256"
+    ],
+    "clock_prefix_sum": "255/256",
+    "infinite_claim_source": "dossier geometric-series and distinct-first-cost proofs",
+    "no_reset_budget": {
+      "budget_projection": [
+        0,
+        0,
+        0
+      ],
+      "complete_budget_edges": {
+        "0": 1,
+        "1": 2
+      },
+      "enabledness_reflected": false,
+      "forgotten_budget_accepts_length": 3,
+      "legal_action_lengths": [
+        0,
+        1,
+        2
+      ],
+      "limit": 2
+    },
+    "one_state_unit_cost_implies_bounded_total": false,
+    "private_correlation": {
+      "budget_8_feasible": true,
+      "exact_totals": {
+        "0": 8,
+        "1": 8
+      },
+      "original_costs": {
+        "0": [
+          7,
+          1
+        ],
+        "1": [
+          2,
+          6
+        ]
+      },
+      "pair_budget_after_first": {
+        "0": 7,
+        "1": 2
+      },
+      "pair_budget_after_second": {
+        "0": 8,
+        "1": 8
+      },
+      "separate_maxima": 13
+    },
+    "summability_implies_finite_residuals": false
+  },
+  "kernel_checked": false,
+  "literature": [
+    {
+      "location": "sections 1.2 and 6.3-6.4",
+      "url": "https://www.cs.nyu.edu/~mohri/pub/hwa.pdf"
+    },
+    {
+      "location": "author commentary pages 1-3",
+      "url": "https://www.nsm.buffalo.edu/~sww/0papers/lawveres-metric-space-paper.pdf"
+    }
+  ],
+  "literature_retrieval_failures": [
+    {
+      "result": "web tool internal error; inaccessible URL",
+      "url": "https://cs.nyu.edu/~mohri/pub/tcs.pdf"
+    },
+    {
+      "result": "web tool HTTP 500 redirect failure",
+      "url": "https://www.cs.nyu.edu/~mohri/postscript/tcs.ps"
+    }
+  ],
+  "noncancellation": {
+    "cost_faithful_partition": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "costs": [
+      [
+        2,
+        2,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "monoid": "([0,2], max, 0)",
+    "product_closure_nodes": 8,
+    "s_t_behavior_equal": true,
+    "saturated_budget_alone_recovers_raw_cost": false,
+    "states": [
+      "s",
+      "t",
+      "u",
+      "v"
+    ],
+    "transitions": [
+      [
+        2,
+        3,
+        3,
+        3
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ]
+    ],
+    "u_v_behavior_equal": false,
+    "unary_s_totals": [
+      0,
+      2,
+      2,
+      2,
+      2
+    ],
+    "unary_t_totals": [
+      0,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "physical_cost_calibrated": false,
+  "probe_history": [
+    {
+      "exit_code": 0,
+      "scope": "previous successful run before explicit enabledness control",
+      "script_sha256": "582b4481d2840ffe91cdaecd93183ada130969dfc2c6ffe07dada766bfd81fdb",
+      "stdout_sha256": "59532c5c78bae624f41a6496ee1da3563459ad33f226d3eca783e6da633a405a"
+    }
+  ],
+  "remaining_smallest_lemma": "finite partial-action budget quotient path lifting, with enabledness reflected",
+  "sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/CATEGORICAL_YONEDA_RESOURCE_FRONTIER.md": "bd737416ada40ee8383c3d193f0fcbcd76029272fabef26bdf4d5897a4ec4f74",
+    "provenance/origins/fuckingrh/research/2026-10-10/INFINITE_REALIZATION_LIMITS.md": "97b7520807c19ff86ca4869f4212632dec6416fe0cd9a6f60e11912f1738bb67",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+    "research/2026-10-13/SWARM_ATLAS/A08.md": "abaab91c4ac678b8e5452d518cde0effa352e5d122b45600b2e39601479fa79a",
+    "research/2026-10-13/SWARM_ATLAS/B16.md": "8529a1d5374b620905925a5e98b1698876663c9b4d9655b94988e4806440b059",
+    "research/2026-10-13/SWARM_ATLAS/C21.md": "bdd72996fafeb2aa4b04d2cbf72daa5f65d025f1b1225a5c63da494a5c77b88c",
+    "research/2026-10-13/SWARM_ATLAS/F45_PROOF_COST_SCHEDULING.md": "5f710e7cffae175f0f1f136c8460ddb93b01447528f943ef873c621f9f273266",
+    "research/2026-10-13/SWARM_ATLAS/PROTOCOL.md": "c268440bd21b5825a6666d1e043a108e694e545feaae77196ea2c463507590d0",
+    "research/2026-10-13/SWARM_ATLAS/X06.md": "e5ebd2b8c34dd26276de45f301b7dfe0d46faf51f14c455d978d40160a2c4271",
+    "research/2026-10-13/SWARM_ATLAS/X06_probe.py": "9bbff6263e5566755976d01bb0468bf6dfed0c357c6ac6653b6d1fd9c90e9392",
+    "research/2026-10-13/SWARM_ATLAS/reviews/A08_PRINCIPAL_REVIEW.md": "0029b4303c6a236b357d2eb5b940ceff43211e1e351a323f30c2265f268ba1e2",
+    "research/2026-10-13/SWARM_ATLAS/reviews/B16_PRINCIPAL_REVIEW.md": "ffd9e03c8b83b46e5a79b880990e0e343c945d30657224efcbdd598920ff94b4",
+    "research/2026-10-13/SWARM_ATLAS/reviews/C21_PRINCIPAL_REVIEW.md": "d947c66eeff5cebde0af478f921d84a752e9b4fb2354bc01208517997e13b51a",
+    "research/2026-10-13/SWARM_ATLAS/reviews/F45_PRINCIPAL_REVIEW.md": "8b40a347c2a22c3526beba8b4f4225aaf5a97451303b3fdb5d7b430874215844"
+  },
+  "source_dossier_last_change_commits": {
+    "A08.md": "c0bbbf57afc32d4f96200922bd13d65f2f3365b9",
+    "B16.md": "d5801ec680663717b4c93e72df96bfbd5a26a0f6",
+    "C21.md": "7592e184a30c67f67d506d08fbf2932012f7f1be",
+    "F45_PROOF_COST_SCHEDULING.md": "c414da5e5b824bd768ac68d0b89d458cb77de8ff"
+  },
+  "source_origin": {
+    "archive_modified": false,
+    "commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "git_object_available": false
+  },
+  "source_parent": "830e99ffc89bc9ee5ae97cbbc433206be99aa96c",
+  "status": "PROVED LOCAL paper derivation; TESTED MODEL receipt; separate review required",
+  "unary_joint_controls": {
+    "lassos": 7140,
+    "presented_mu": [
+      0,
+      1,
+      2
+    ],
+    "presented_period": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "primitive_2_by_3": {
+      "joint_count": 6,
+      "separate_counts": [
+        2,
+        3
+      ]
+    }
+  }
+}
