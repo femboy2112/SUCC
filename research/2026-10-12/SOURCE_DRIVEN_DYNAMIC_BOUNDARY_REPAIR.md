@@ -208,6 +208,55 @@ For \(A>0,C\ge0\) and \(s\ge0\), write \(R_s=(A+sC)^{-1}\). Then
 
 The second term is negative semidefinite since \(R_s C R_s C R_s\) is PSD: it equals \(R_s^{1/2}(R_s^{1/2} C R_s^{1/2})^2 R_s^{1/2}\). Thus exact finite differences of \(\Lambda(s)\) across increasing equally spaced rates satisfy Loewner monotonicity/concavity. The implementation checks this on 100 separately generated positive rational networks and 4 independent boundary directions each, but tests are not the universal proof. Violations would falsify the declared passive source law or the measurement record; one must NOT infer the source geometry automatically.
 
+## DB11. THE CATEGORICAL REPAIR: dynamics and interior elimination do not commute (CLASSICAL / PROVED LOCAL)
+
+This is the geometric mismatch SUCC needs to detect **before** proposing a new representation. There are two composable operations:
+
+1. `ELIMINATE`: replace a positive conductance star by its source-equivalent **static** boundary triangle (the `s=0` Schur complement).
+2. `STORE/EVOLVE`: place positive interior electrical storage and evolve according to the lawful linear RC carrier equations.
+
+The tempting categorical loop is to *first* discard the interior and *then* evolve a boundary-only resistor network with arbitrary **terminal-local** capacitors. The resulting response always has the form
+
+\[
+\Lambda_{\mathrm{after}}(s)=\Lambda(0)+sD_B, \qquad D_B\text{ diagonal}.
+\]
+
+In contrast, performing the internal dynamics first, then eliminating the interior, gives
+
+\[
+\Lambda_{\mathrm{before}}(s)=\operatorname{diag}(g)-\frac{gg^T}{G+sc}.
+\]
+
+**Theorem (noncommutation).** For strictly positive star arms, internal capacity \(c>0\) and any \(s>0\), these operations cannot commute for any choice of terminal-local \(D_B\). Proof: for distinct boundary ports \(i\ne j\),
+
+\[
+\boxed{\bigl(\Lambda_{\mathrm{before}}(s)-\Lambda(0)\bigr)_{ij}
+=\frac{g_ig_j cs}{G(G+cs)}>0,}\tag{DB11a}
+\]
+
+whereas every diagonal-boundary-capacity repair has an identically zero off-diagonal difference. In the source network with \(g=(2,3,5),c=2,s=1\), the observed obstruction at ports 1,2 is exactly \(\boxed{1/10}\).
+
+**The correct missing mathematical object is a CAUSAL MEMORY KERNEL.** If \(z(t)\) is the eliminated interior voltage, the actual source ODE with zero initial conditions is
+
+\[
+c\dot z(t)+Gz(t)=g^Tu(t),\qquad
+z(t)=\frac1c\int_0^t e^{-\frac Gc(t-\tau)}g^Tu(\tau)\,d\tau.
+\]
+
+Hence the exact boundary-only effective field law is
+
+\[
+\boxed{
+i_B(t)=\operatorname{diag}(g)u(t)-\int_0^t\underbrace{\frac{gg^T}{c}e^{-\frac Gc(t-\tau)}}_{K(t-\tau)}u(\tau)\,d\tau.
+}\tag{DB11b}
+\]
+
+This memory kernel has amplitude \(gg^T/c\) and decay constant \(G/c\), both reconstructible in the repaired class, and its Laplace action is **exactly** the source response \(\Lambda(s)\). The code independently checks the two formulations over rational rates. One hidden storage mode yields one exponential memory time; the serial two-hidden-mode network has two distinct *visible* relaxation rates, so its minimal boundary memory is a two-mode rational kernel (even though alternative physical topologies can implement it).
+
+**SUCC interpretation:** when E's original category allows only instantaneous boundary laws, the environment has a nonzero closure obstruction. A source-derived repair enlarges the category to boundary causal convolution laws, or, equivalently for this finite passive circuit, introduces hidden Markov storage variables. The diagram then commutes under the correctly transported *dynamical* law—without claiming that E discovered the one and only physical hidden topology. **Static Schur equivalence is a lawful quotient, but not a congruence for adding hidden storage afterward.**
+
+This is classical state-space elimination / memory-kernel theory (related to Mori–Zwanzig coarse-graining). The conceptual SUCC advance is constructing the *type of missing law* from the exact failed square, rather than appending another arbitrary hypothesis.
+
 ## Obstruction-to-repair receipts and SUCC classification
 
 | SUCC failure | Explicit measurement/witness | Exact repair or limitation |
@@ -218,11 +267,12 @@ The second term is negative semidefinite since \(R_s C R_s C R_s\) is PSD: it eq
 | Proof closure under new causal evidence | Distinct observer reports at s=0,1,2,3 | Typed finite E reconstruction; no universal checkpoint |
 | Literal hidden topology identification | Star vs twin equality at **all** s | Dark under same interface; require new intervention |
 | Source-changing carrier | Capacitor mutation preserves DC but alters dynamic response | Transport only static proof support |
+| Commutativity of eliminate-then-store | Off-diagonal anomaly exactly `1/10` at s=1 | Replace instantaneous reduced law by source-derived causal memory kernel, or retain hidden Markov state |
 | Measurements with bounded noise | \(\Delta q\) interval excluding 0 | Robust sign proof; otherwise INCONCLUSIVE |
 
 ## Falsification and replication
 
-Files: `observational_succ/dynamic_boundary_inverse.py`, `tests/test_dynamic_boundary_inverse.py`, `scripts/dynamic_boundary_inverse_probe.py`, `research/2026-10-12/DYNAMIC_BOUNDARY_INVERSE_RECEIPT.json`. All exact matrix arithmetic is implemented with Python `fractions.Fraction` and Gauss-Jordan elimination; the tests include **51 named cases** and 240+140+100+100+160=**740 seeded randomized rational instances** with additional independent comparisons, 3 frequency-family holdouts, and forged evidence/negative parameters/epoch controls. Command:
+Files: `observational_succ/dynamic_boundary_inverse.py`, `tests/test_dynamic_boundary_inverse.py`, `scripts/dynamic_boundary_inverse_probe.py`, `research/2026-10-12/DYNAMIC_BOUNDARY_INVERSE_RECEIPT.json`. All exact matrix arithmetic is implemented with Python `fractions.Fraction` and Gauss-Jordan elimination; the tests include **56 named cases** and 240+140+100+100+160=**740 seeded randomized rational instances** with additional independent comparisons, 3 frequency-family holdouts, and forged evidence/negative parameters/epoch controls. Command:
 
 ```sh
 python -m unittest tests.test_dynamic_boundary_inverse -v
@@ -233,7 +283,7 @@ Run with the full repository package installed; standalone testing uses `python 
 
 ### New-to-project versus independent mathematical novelty
 
-- **Known results:** star–mesh equivalence and inverse electrical networks (Curtis/Ingerman/Morrow), Schur complement/Kron reduction, Stieltjes resolvent curvature, Hankel minimal realizations (Kalman/Ho), and passive RC dynamics. No independent scholarly novelty is asserted for DB1–DB10.
+- **Known results:** star–mesh equivalence and inverse electrical networks (Curtis/Ingerman/Morrow), Schur complement/Kron reduction, Stieltjes resolvent curvature, Hankel minimal realizations (Kalman/Ho), and passive RC dynamics. No independent scholarly novelty is asserted for DB1–DB11.
 - **Concrete SUCC advance:** one complete, source-type-checked pipeline **static nonidentification → dynamic partial repair → falsification → reconstruct new model from four finite observations → fresh predictions → residual all-frequency dark rival**. Unlike a hand-picked successful mapping, the first two repairs can fail while the structured E estimator adapts.
 - **Deliberate hard boundary:** the unknown graph is unknown *to E*, not an outstanding open problem in all mathematics; precise passive linear circuit/source class and exact boundary law are declared. Honest observation source, continuous physics, measurement error, finite-time stimulus realization, noise and causal instrument cost require further work. This does **not** construct a universally faithful carrier epistemology.
 - **Arithmetic firewall:** graph-Laplacian energy positivity, Stieltjes moment Hankel PSD and even complete passive-system identification have **no established morphism to the full completed Weil/Suzuki form**. Therefore none implies the Riemann hypothesis. The correct arithmetic analog would need authentic prime-power and Γ source laws plus a noncircular identification and positivity theorem.

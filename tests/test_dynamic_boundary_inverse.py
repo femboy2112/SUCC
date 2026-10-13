@@ -12,7 +12,8 @@ from observational_succ.dynamic_boundary_inverse import (
     scalar_moment_witness,block_hankel,spectral_mode_lower_bound,
     reconstruct_serial_from_moments,reconstruct_serial_from_finite_responses,
     reconstruct_serial_from_receipts,change_interior_capacitance,
-    certified_reciprocal_defect,demonstration,
+    certified_reciprocal_defect,noncommuting_kron_storage_witness,
+    exact_star_boundary_memory,demonstration,
 )
 
 
@@ -242,6 +243,31 @@ class SourceNetworkTests(unittest.TestCase):
                   ((Q(2),Q(1)),(Q(1),Q(2)),(Q(2),Q(3)))):
             with self.assertRaises(BoundarySourceError):
                 certified_reciprocal_defect(x)
+
+    def test_kron_elimination_and_storage_change_do_not_commute(self):
+        receipt=noncommuting_kron_storage_witness(star(),1)
+        self.assertTrue(receipt['no_terminal_local_capacitance_repair_at_this_rate'])
+        self.assertEqual(receipt['obstruction'],(0,1,Q(1,10)))
+
+    def test_static_triangle_no_hidden_storage_obstruction(self):
+        receipt=noncommuting_kron_storage_witness(triangle(),1)
+        self.assertFalse(receipt['no_terminal_local_capacitance_repair_at_this_rate'])
+        self.assertIsNone(receipt['obstruction'])
+
+    def test_memory_kernel_reproduces_complete_laplace_transfer(self):
+        m=exact_star_boundary_memory((2,3,5),Q(2))
+        self.assertEqual(m['decay_rate'],Q(5))
+        self.assertEqual(m['amplitude_matrix'][0][1],Q(3))
+        self.assertFalse(m['boundary_ontology_selected'])
+
+    def test_wrong_memory_kernel_source_rejected(self):
+        with self.assertRaises(BoundarySourceError):
+            exact_star_boundary_memory((2,3,5),0)
+
+    def test_exact_symbolic_memory_not_instantaneous_fake(self):
+        m=exact_star_boundary_memory()
+        self.assertIn('exp(',m['memory_kernel_exact_symbolic'])
+        self.assertNotEqual(star().response(1)[0][1],star().response(0)[0][1])
 
     def test_full_research_receipt_exact(self):
         x=demonstration()

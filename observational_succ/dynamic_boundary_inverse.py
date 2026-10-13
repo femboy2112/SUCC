@@ -408,6 +408,53 @@ def spectral_mode_lower_bound(graph:RCNetwork,size):
             "ontological_interior_count_proved":False}
 
 
+def noncommuting_kron_storage_witness(graph:RCNetwork,s=1):
+    """A failed categorical square: eliminate hidden DC modes THEN add only
+    terminal-local capacitors versus add INTERIOR storage THEN eliminate.
+
+    Any diagonal boundary capacitor D changes only the diagonal of
+    Lambda_DC+sD. A nonzero off-diagonal Lambda(s)-Lambda(0) is an exact
+    model-independent witness against ALL such boundary-local repairs.
+    It does NOT disprove a correct boundary model with a memory kernel.
+    """
+    s=exact(s)
+    if s<=0:raise BoundarySourceError('Nonzero positive dynamic rate required')
+    before,after=graph.response(0),graph.response(s)
+    n=len(graph.boundary)
+    off=next(((i,j,after[i][j]-before[i][j]) for i in range(n)
+               for j in range(i+1,n) if after[i][j]!=before[i][j]),None)
+    return {'source_observation_s':s,'static_boundary':before,'dynamic_boundary':after,
+            'obstruction':off,
+            'no_terminal_local_capacitance_repair_at_this_rate':off is not None,
+            'all_possible_topologies_refuted':False}
+
+
+def exact_star_boundary_memory(arms=(2,3,5),cap=2):
+    """The missing object is a NONLOCAL memory kernel after eliminating a hub.
+
+    Zero-initial-condition kernel K(t)=gg^T/c*exp(-G*t/c) for t>=0,
+    so the complete boundary law is i_B=D*u - (K*u)(t).
+    This function reports the exact rational amplitude/decay constants;
+    it does not pretend a rational finite computer literally stores e^-t.
+    """
+    g=tuple(exact(x) for x in arms);c=exact(cap)
+    if len(g)!=3 or min(g)<=0 or c<=0:
+        raise BoundarySourceError('Positive three-arm and interior capacitor required')
+    G=sum(g,Q(0))
+    amp=tuple(tuple(g[i]*g[j]/c for j in range(3)) for i in range(3))
+    decay=G/c
+    src=star(g,c)
+    for s in (Q(0),Q(1),Q(2),Q(11)):
+        derived=tuple(tuple((g[i] if i==j else Q(0))-amp[i][j]/(s+decay)
+                      for j in range(3)) for i in range(3))
+        if derived != src.response(s):
+            raise ArithmeticError('Memory-kernel-derived boundary law disagrees with source')
+    return {'amplitude_matrix':amp,'decay_rate':decay,
+            'source_computed_from_hidden_law':True,
+            'memory_kernel_exact_symbolic':'K(t)=A*exp(-decay_rate*t), t>=0',
+            'boundary_ontology_selected':False}
+
+
 def change_interior_capacitance(graph:RCNetwork,updates:dict[str,Q],*,name='after-capacitance-intervention'):
     """A SOURCE-CHANGING intervention; preserves edge topology, not dynamics.
 
@@ -498,6 +545,9 @@ def demonstration():
       "after_new_two_mode_repair":trained.name,
       "new_repair_predicts_unseen_s_4_11_17":True,
       "finite_cross_ratio":finite_repair["observed_cross_ratio"],
+      "noncommuting_static_elimination_witness":
+           noncommuting_kron_storage_witness(star(g,2))["obstruction"],
+      "star_memory_decay_rate":exact_star_boundary_memory(g,2)["decay_rate"],
       "wrong_one_pole_capacity":c_eff,
       "scalar_transfer_at_0_1_2":defect["h"],
       "inverse_transfer_at_0_1_2":defect["q"],
