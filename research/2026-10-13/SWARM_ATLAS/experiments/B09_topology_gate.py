@@ -21,6 +21,7 @@ RSS_LIMIT_MIB = 1280
 MIN_SYSTEM_AVAILABLE_MIB = 768
 FORMAL_FILES = (
     "formal/SWM_A01_BaseChange.lean",
+    "formal/SWM_C19_FiniteHeight.lean",
     "formal/SWM_B09_InverseFamilies.lean",
     "formal/SWM_B09_TopologicalCompletion.lean",
 )
