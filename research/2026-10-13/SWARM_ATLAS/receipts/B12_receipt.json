@@ -1,0 +1,132 @@
+{
+  "checks_passed": true,
+  "claim_id": "SWM-B12",
+  "finite_premise_closure": {
+    "directed_families": 159,
+    "directed_union_preservation": true,
+    "independent_reachability_oracle_agrees": true,
+    "no_seed_no_derived_fact": true,
+    "seeds": 8
+  },
+  "finite_source_domain": {
+    "all_partial_records": 9,
+    "conflicting_cross_source_union_rejected": true,
+    "finite_record_scott_accessibility_checks": 81,
+    "nonempty_directed_families": 25,
+    "pullback_directed_unions_and_composition": true,
+    "realizable_records": 7,
+    "sources": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "version_intersection_and_union_agree": true
+  },
+  "mandatory_full_repository_validation_run": false,
+  "negative_witnesses": {
+    "arbitrary_finite_support_witness": [
+      0,
+      2,
+      5
+    ],
+    "eventually_zero_prefix_witnesses": [
+      {
+        "horizon": 0,
+        "next_mismatch": 0
+      },
+      {
+        "horizon": 1,
+        "next_mismatch": 1
+      },
+      {
+        "horizon": 2,
+        "next_mismatch": 2
+      },
+      {
+        "horizon": 3,
+        "next_mismatch": 3
+      },
+      {
+        "horizon": 4,
+        "next_mismatch": 4
+      },
+      {
+        "horizon": 5,
+        "next_mismatch": 5
+      }
+    ],
+    "infinite_alphabet_closed_image_witnesses": [
+      {
+        "hidden_budget": 0,
+        "matched_partial_horizon": 0,
+        "next_mismatch": 1
+      },
+      {
+        "hidden_budget": 1,
+        "matched_partial_horizon": 1,
+        "next_mismatch": 2
+      },
+      {
+        "hidden_budget": 2,
+        "matched_partial_horizon": 2,
+        "next_mismatch": 3
+      },
+      {
+        "hidden_budget": 3,
+        "matched_partial_horizon": 3,
+        "next_mismatch": 4
+      },
+      {
+        "hidden_budget": 4,
+        "matched_partial_horizon": 4,
+        "next_mismatch": 5
+      },
+      {
+        "hidden_budget": 5,
+        "matched_partial_horizon": 5,
+        "next_mismatch": 6
+      }
+    ],
+    "infinite_profile_execution": false,
+    "outside_support_mismatch": 6,
+    "positive_constant_one_source": {
+      "declared_formula": "c(n)=1 for every natural n",
+      "sample_values": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "universal_nonrealization_basis": "B12.md sections 5 and 6 proofs"
+  },
+  "original_source_substitution": {
+    "compatible_substitution_accepted": true,
+    "initial_actual_source": "zero polynomial",
+    "initial_actual_source_realizes_replacement": false,
+    "initial_jet": [
+      "0"
+    ],
+    "replacement_has_realizer": true,
+    "replacement_jet": [
+      "0",
+      "1"
+    ],
+    "scope": "compatibility-only lab; no physical source identity certificate"
+  },
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "probe_sha256": "4d8b76f1cac144c9df41b67a8807da39fdb5b06ab85b10500dcefe55b33aad75",
+  "scope": "bounded exact finite controls; no universal computation or kernel proof",
+  "source_sha256": {
+    "observational_succ/absorbing_frames.py": "2a4dc7f0af07b536dcd6fe259069a0e78890358180b4c5490d7c7bd4d71eb95e",
+    "observational_succ/constructive_frontier.py": "9481b9d5bfc517b68399af85b9e6913673ff7c0fd29e6ec6741071f024162d60",
+    "observational_succ/ideal_frames.py": "49456a0ffe143dd672920182f0d5630c890d8c4cbf2a1020d571f0f44c5b8ff0"
+  }
+}
