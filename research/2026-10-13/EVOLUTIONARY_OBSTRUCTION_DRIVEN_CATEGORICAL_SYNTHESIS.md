@@ -114,3 +114,40 @@ The experiment preserves immutable historical imports, old defaults, and source 
 **Next verdict-changing probes:** extend the pinned Lean formalization to graph-cover minimality and source functor naturality; allow source-changing arrows with actual commutative causal squares and interventions; construct categories not previously in the grammar; use independent stochastic or physical source producers; add learned properly-scored model-misspecification/OTHER options. A truly unknown mathematical invariant must survive fresh generators that were not selected to match its original grammar.
 
 **Established prior art (no novelty claim):** category theory of Galois connections and posets; C. L. Ezell (1979), Observations on the construction of covers using permutation voltage assignments (DOI 10.1016/0012-365X(79)90181-X); Gross & Tucker (1979), Fast Computations in Voltage Graph Theory (DOI 10.1111/j.1749-6632.1979.tb32796.x). Earlier GF and HS dossiers cover categorical ontology bridges, genetic search and source-aware Bayesian reasoning.
+
+
+## EC7: noncommuting holonomy and a new descent theorem
+
+**New finite-language extension** (source-relative construction, classical covering mathematics). In place of cyclic translations let each oriented edge e:u→v transport a finite fiber X by a permutation p_e∈Sym(X); reverse edges transport by p_e⁻¹. The category is the connected graph path groupoid, with a functor to the groupoid of bijections of X.
+
+Fix a root and a spanning tree. Let t_v∈Sym(X) be the tree's transport from the root to vertex v. The **correct base-point-transported fundamental-cycle generator** for edge e is
+
+g_e=t_v⁻¹ p_e t_u.
+
+The intervening t_v and t_u are essential: directly multiplying permutations attached to different vertex fibers without a common root basis is an invalid gauge computation. The based holonomy image H=<g_e:e∈E> is a finite subgroup of Sym(X), possibly nonabelian.
+
+The **kernel cover** of holonomy ρ:π1(Γ)→H is constructed with vertices (v,h) for every base vertex v and sheet h∈H, and lifted edges
+
+(u,h)→(v,g_e h).
+
+Every lifted edge respects the original physical/mathematical edge permutation p_e, and the covering is connected. It trivializes the full monodromy by construction. Any connected covering trivializing this action corresponds to a subgroup K⊆kerρ, so its degree is at least [π1:kerρ]=|H|; the kernel cover attains the minimum. Thus the **nonabelian** minimal-cover degree remains the cardinality of the image subgroup, *not* merely the number of fiber labels |X|.
+
+For each root fiber element x∈X, define a lifted parallel section
+
+q_x(v,h)=t_v(h(x)).
+
+Check the lifted edge explicitly:
+t_v((g_e h)(x))=p_e(t_u(h(x))) = p_e(q_x(u,h)).
+Consequently the connected kernel cover has **exactly |X| parallel sections**, one for each root value.
+
+**Descent theorem (CLASSICAL / PROVED).** The right deck transformation D_a(v,h)=(v,ha) for any a∈H preserves lifted edges because left multiplication by g_e commutes with right multiplication by a. The section satisfies q_x(D_a(v,h))=q_{a(x)}(v,h). Therefore q_x descends to a single-valued parallel section on the ORIGINAL base exactly when every a∈H fixes x. Equivalently,
+
+Sections(base) ≅ Sections(kernel cover)^H ≅ X^H.
+
+This unifies two phenomena which looked contradictory in scalar-only GF6: every root fiber value extends coherently **on the right covering space**, yet only the deck-invariant values are legitimate globally single-valued claims on the original source. Nontrivial holonomy can coexist with a base section when the permutation action has fixed points.
+
+**Hostile nonabelian witness:** one graph vertex and two independent self-loops carrying (01) and (12) on a 3-element fiber. These noncommuting permutations generate S3, of order 6. The base has **zero** global parallel sections, the minimal connected cover has **six** sheets and 12 lifted edges, and the cover has **three** parallel sections, none descending. A single (01) loop instead has image size two, two-sheet minimal cover, three cover sections, and **one** base section (the third fixed value). A flat tree with a nontrivial transport edge has image size one, one-sheet cover and all three sections descend.
+
+**Reproduction controls:** 120 seeded random graphs with edges in S3 have their computed root-holonomy subgroup compared against a separately implemented BFS of all raw path-permutation states, without using the library's loop-generator computation or composition helper. Another 60 seeded graphs compare deck-descent counts with an independent exhaustive assignment oracle on the original base. A wrong root phase, fake source epoch, invalid root fiber label, reversed permutation orientation, noncommuting swap, and a spurious assumption that existence of a section means flatness are falsification controls. All experiments are mathematical simulations without external-source authentication. The theorem is a classical general graph-covering statement supported here by an explicit finite construction, not an independently original mathematical discovery.
+
+**Further burden:** formalize EC7 itself in Lean with a pinned finite permutation group action and subgroup-index theorem; add arbitrary finite groupoids and noninvertible partial source transports. The full automaton that invents the subgroup, covering-type and proof syntax without these classes predeclared has not been built.
