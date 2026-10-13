@@ -199,6 +199,8 @@ both transforms converge. For \(f=e^{-t}\), the differential equation
 successor transport, not a generic SUCC law.
 
 There is also an actual test-space limit. Write
+**Quotient premise made explicit after independent review:** Gamma has no zeros ([DLMF §5.2](https://dlmf.nist.gov/5.2)); alternatively Hurwitz applied to the zero-free G_N on Re(z)>0 and Gamma(1)=1 proves this here. Compact-uniform derivative convergence therefore implies G_N′/G_N → Gamma′/Gamma on this half-plane.
+
 \(\psi_N(z)=G'_N/G_N=\log N-\sum_{j=0}^N(z+j)^{-1}\).
 For each fixed \(\sigma>0\), uniformly in \(N\ge1,t\in\mathbb R\),
 \[

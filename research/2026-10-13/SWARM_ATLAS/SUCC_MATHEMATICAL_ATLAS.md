@@ -2,6 +2,23 @@
 
 **Rolling atlas: the requested 48+12 swarm remains in progress.** The [registry](registry.json) records actual assignments, agents, exact parent/child commits, reviews and integration decisions. Draft [PR49](https://github.com/femboy2112/SUCC/pull/49) extends verified VOYAGER `5eb09e7cba36ec01b8f9d6834b78b5766fd93935`; EOS `b2774ca` remains a separately audited sibling with Lean 4.19. This branch uses Lean 4.14. Archives and main remain intact.
 
+## Acquisition, certification and completion
+
+```mermaid
+flowchart LR
+  J[Declared original/current joint law mu] -->|legal report-labelled instrument T_a,o| H[Updated unnormalized law and retained history h]
+  H -->|normalize only positive mass; retain full interface| N[Posterior joint law for next action]
+  N -->|next legal report-labelled update| H
+  H -->|original projection of positive support| C[Compatible original sources C_h]
+  C -->|target constant on C_h| T[Certified original-source target]
+  H -->|source-blind report processing| M[Observer model]
+  P[Declared deterministic full probe profiles Phi S] -->|finite restrictions| I[Coherent inverse family]
+  I -->|B09 homeomorphism| L[Product-topology closure of Phi S]
+  L -->|only when Phi S is closed| R[Original-source realizer]
+```
+
+The top arrows require a stipulated complete instrument law, retained preparation/memory and actual legal public history; a source class alone supplies no probabilities. Instrument composition acts on the joint law while the original label stays fixed. A zero-mass branch has no posterior. Model processing cannot split a source-law equivalence class (F44). Target constancy certifies a source-relative conclusion and does not authenticate the stipulated outside source. The bottom diagram applies to deterministic discrete probe profiles; its ideal arrows are mathematical constructions, not performed infinite observation. A causal-prefix tower needs the separate extendability adapter identified in the parallel audit.
+
 ## Navigable mathematical map
 
 | Structure and actual arrow | Domain and validity conditions | Surviving invariant / evidence |
@@ -55,6 +72,11 @@ Independent principal reviews are in [reviews](reviews/); X01 also has a [separa
 
 | Allowed experiment signature `s→(L_s(a^n,·))` | Complete causal word laws, source-blind policy/random tape/processing and declared safe instruments | [F44](F44.md): adaptive/computational no-go and original-target fiber gate; local quantum marginal equality needs autonomous local dynamics |
 
+| Opaque action-law signature `U_word(s)` | Complete declared finite tables; bounded primitive-variable grammar, bijective label changes | [F43](F43/DOSSIER.md): sound signatures/conjugacy invariance, classical LRB recovery, once-only holdout transfers and preserved mismatched-family failures |
+| Formal Dirichlet logarithm `a→log_*a` | Normalized arithmetic functions over a Q-algebra, exact coefficientwise truncations | [E36](../E36_DIRICHLET_LOG_MULTIPLICATIVITY.md): prime-power support iff multiplicativity; mixed defects preserved only by full log, analytic completion separate |
+
+| Positive causal-ideal diagram `I→K_I`, zero face `Z_I` | Total common positive maps, faithful mass (or contraction), all finite ideals directed, finite-height original faces | [X07](X07.md): finite attained bottleneck ideal realizes common compatibility even without countable cofinal history; quantum copying remains unavailable |
+
 ## Acquisition, representation revision and lawful new instruments
 
 An instrument begins with an original state s and current carrier q, produces a report o, and changes q. Retain the actual history h. A deterministic original target t is certified exactly when all alternatives compatible with that retained history agree on t. A stochastic claim instead needs the full original/current conditional law: support, separate outcome marginals, or identical endpoints cannot replace it. C17 supplies exact unnormalized transport; zero-probability branches have no posterior. Formal zero-measure fibers are algebraic objects, not performed events.
@@ -106,3 +128,9 @@ The new C21 result adds robust private-cost attainment and max-plus source/curre
 C19 supplies a third actualization mechanism distinct from compact closed-source realization: finite-height kernels stabilize the *positive-support* obstruction for one history, even for nonclosed/nonconvex original classes. Its compact infinite-dimensional pure-tail countermodel explains why compactness cannot substitute for finite height: positive-likelihood sets are open. Countable-mixture closure gives another actualization mechanism, but only if mixtures belong to the original source class. A fixed-dimensional source is not a fixed-memory autonomous apparatus: external schedules can postpone the last rank drop arbitrarily.
 
 The [second-wave parallel comparison](comparisons/SECOND_WAVE_COMPARISON.md) calculates the actual X05 intersection by substituting a Dirac carrier kernel into PR50’s stochastic intertwiner. Source law, safe availability and original target agree there; expected and worst-supported public costs remain separately typed. Identically numbered C19 claims address distinct questions: composable CP instruments versus finite-height positive-history source realization. No foreign code was imported by that comparison.
+
+## Geometry, delay and analytic gates
+
+D29 supplies proper full-flow pullback of isolating neighborhoods; a cylinder over a sink loses its Conley index under projection. D32 supplies exact original/current linear delay reconstruction and sharp n-report stabilization; backaction changes the inter-read map to f∘B. D31 transports causal diamonds and actual ancestry, and normalized discrete histories through H_L(q_i,y_i)=(T_Lq_i,R_Ly_i). Its continuous singleton shortcut is refuted. Geometry alone supplies neither a delivered event nor a source decoder.
+
+E37 supplies classical Mellin-to-Gamma convergence and fixed-positive-line Schwartz test convergence; zero-free Gamma is needed for quotient convergence. Completed arithmetic form identification remains separate. Initial F48 supplies a fixed-run incidence sheaf over edge-covering subcomplexes and a backward private-prefix discrete fibration. Universal exact relational gluing requires injection of the whole source/carrier/memory interface; existential public projection can fail to be a sheaf. Probability, quantum Kraus interpretation, policy feasibility and whole-swarm integration await phase2.

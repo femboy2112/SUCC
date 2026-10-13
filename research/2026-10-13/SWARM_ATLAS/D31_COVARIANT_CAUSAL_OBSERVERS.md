@@ -18,19 +18,19 @@ Declare \(M=\mathbb R^{1+2}\), coordinates \((ct,x,y)\), signature \(\eta=\opera
 
 For preparation \(p=\gamma(0)\), define \(D_k=J^+(p)\cap J^-(\gamma(\tau_k))\). The protocol permits new acquisitions only there; earlier retained records require separate declaration. A finite event DAG carries actual parent edges satisfying strict causal order. Acquired receipts require an actual path to the sample anchor, lawful instruments and invariant integer costs totaling at most \(B_k\). Diamond membership alone is insufficient.
 
-Let \(S\) be a declared source class. \(U_L:S\to S_L\), probe map \(T_L:Q\to Q_L\), and report bijection \(R_L:Y\to Y_L\) are reversible **representation** maps, with identity/composition laws. For every source, finite history \(h\), lawful probe \(q\), and symbol \(y\), require conditional-kernel covariance
+Let \(S\) be a declared source class. For the stochastic theorem, the report alphabet is finite or countable and every conditional row is normalized. \(U_L:S\to S_L\), probe map \(T_L:Q\to Q_L\), and report bijection \(R_L:Y\to Y_L\) are reversible **representation** maps, with identity/composition laws. For a full action/report history \(h=((q_i,y_i))_{i=1}^n\), define \(\mathsf H_Lh=((T_Lq_i,R_Ly_i))_{i=1}^n\), transporting retained event/source/basis metadata by their declared maps. This transporter preserves prefixes, identities and composition. For every source, finite history \(h\), lawful probe \(q\), and symbol \(y\), require conditional-kernel covariance
 
 \[
-K^L_{U_Ls}(R_Ly\mid R_Lh,T_Lq)=K_s(y\mid h,q). \tag{1}
+K^L_{U_Ls}(R_Ly\mid \mathsf H_Lh,T_Lq)=K_s(y\mid h,q). \tag{1}
 \]
 
-This includes deterministic reports as Dirac kernels; it assumes no independent noise. Require \(\pi_L(R_Lh,\tau,B)=T_L\pi(h,\tau,B)\), matching feasibility predicates, and cost \(w_L(T_Lq,R_Lh)=w(q,h)\). Equation (1) is a checked premise, not a consequence of source tags.
+This includes deterministic reports as Dirac kernels; it assumes no independent noise. Require \(\pi_L(\mathsf H_Lh,\tau,B)=T_L\pi(h,\tau,B)\), matching feasibility predicates, and cost \(w_L(T_Lq,\mathsf H_Lh)=w(q,h)\). Equation (1) is a checked premise, not a consequence of source tags.
 
 ## 4. Candidate theorem
 
 **D31.1 — CLASSICAL / PROVED LOCAL.** For every proper future-oriented \(L\), \(L^T\eta L=\eta\), \(\det L=1,L_{00}\ge1\), causal order and every \(D_k\) transport exactly: \(L(D_k)=D(Lp,L\gamma(\tau_k))\). Actual DAG ancestry remains the same event-ID set.
 
-**D31.2 — PROVED LOCAL, conditional.** For every finite protocol satisfying (1), transported policy/feasibility/costs and the same proper-time samples, transcript laws obey \(P^L_{U_Ls}(R_Lh)=P_s(h)\). For a target \(t_LU_L=t\) and transcript with nonempty compatible-source set \(\{s:P_s(h)>0\}\), exact inference survives iff \(t\) is constant on that set. This is source-relative inference, not authentication of spacetime or instruments.
+**D31.2 — PROVED LOCAL, conditional.** For every finite protocol with finite/countable discrete reports and normalized conditional rows satisfying (1), transported policy/feasibility/costs and the same proper-time samples, transcript laws obey \(P^L_{U_Ls}(\mathsf H_Lh)=P_s(h)\). For a target \(t_LU_L=t\) and transcript with nonempty compatible-source set \(\{s:P_s(h)>0\}\), exact inference survives iff \(t\) is constant on that set. This is source-relative inference, not authentication of spacetime or instruments.
 
 ## 5. Proof attempt
 
@@ -56,6 +56,8 @@ The Fraction probe preserves these distinct receipts:
 * **Incomplete components:** constant transverse Maxwell sources \((E_y,B_z)=(0,0),(0,1)\) have identical E-only reports. The correct boost gives \(E'_y=\frac54E_y-\frac34B_z\), hence \(0,-3/4\). No E-only transport exists.
 * **Galilean mutation:** \(G(t,x,y)=(t,x-3t/5,y)\) sends future null \((1,-1,0)\) to a spacelike vector, squared \(-39/25\). Galilean mechanics has a different covariance contract.
 * **Clock mutation:** the same endpoint \((5,3,0)\) is excluded by \(t\le4\), included by \(t'\le4\). Reusing a numerical coordinate-time cutoff changes the protocol. Metric-preserving time reversal also fails the future-orientation gate.
+
+**Continuous-alphabet refutation (independent review).** Uniform measure on (0,1) and density 2y give every singleton mass zero, yet their probabilities of (0,1/2) are 1/2 and 1/4. Thus singleton-kernel covariance alone does not identify continuous transcript laws. The repaired discrete theorem survives; a measurable-kernel pushforward theorem on every measurable set is a separate next gate. The positive-point-probability inference criterion is discrete as well.
 
 ## 7. Verdict
 
