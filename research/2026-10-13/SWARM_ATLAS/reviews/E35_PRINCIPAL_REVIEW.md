@@ -1,0 +1,5 @@
+# E35 independent principal crucible
+
+Reviewed author ec56f3e395d3d4281dae93e58a7041312b1e19ca. SURVIVES, classical Mahler reconstruction. Independently checked q=p^s periodic shift T: (T-I)^q has all coefficients divisible by p after T^q=I; for even q the endpoints leave2I (p=2), odd q cancel, q=1 gives0. Integer operator B is norm<=1, so powers give geometric decay on periodic approximants. Difference operator norm<=1 transfers uniform approximation; uniform p-adic binomial series plus Newton inversion and density proves the converse. Same-depth maps require1-Lipschitz, not mere continuity; binom(2,2)-binom(0,2)=1 disproves that stronger claim at p=2. Digit H has quadratic ratios1 and5/9 along2^j and3*2^j, hence fails analyticity near0. Primary Amice criterion is cited classical, not independently proved here. CRT limit(0,1) is outside diagonal rationals; no Euler/Gamma/RH identification.
+
+Reviewer is not the author; source mathematical assumptions remain stipulated. Exact probe replay is recorded separately. Paper proofs remain distinct from kernel verification.

@@ -1,0 +1,230 @@
+{
+  "baseRefName": "research/voyager-observational-profinite-completion-2026-10-13",
+  "body": "This stacked draft extends #48 with **36 executed mathematical investigations and eight hostile audit assignments**, performed by six research workers plus the principal. It adds source-changing joint-law Bayesian transport, a Lean finite-branching history-realization theorem, and exact countermodels for destructive observation, nonregular cover descent, hidden memory, quantum backaction and filtered fluid closure.\n\nThe audits sharpened conditional total-variation stability to \u03b5/max(\u03b1,\u03b2), corrected the arithmetic two-bump argument's missing window hypothesis, and hardened the source-hash and compiler-rejection gates. Classical theorem families and existing EOS refinement mathematics are attributed. The natural-acim comparison and unrestricted representation invention remain conditional/unachieved; no academic priority or RH/Weil-positivity claim is made.\n\n[Campaign report A\u2013I](https://github.com/femboy2112/SUCC/blob/research/cambrian-observational-realization-2026-10-13/docs/CAMBRIAN_CAMPAIGN_2026-10-13.md) \u00b7 [44-assignment manifest](https://github.com/femboy2112/SUCC/blob/research/cambrian-observational-realization-2026-10-13/research/2026-10-13/CAMBRIAN_SWARM_MANIFEST.json) \u00b7 [Validation receipt](https://github.com/femboy2112/SUCC/blob/research/cambrian-observational-realization-2026-10-13/research/2026-10-13/CAMBRIAN_VALIDATION.json)\n\nValidation completed locally:\n- 1,716 full-suite tests; required provenance (72 entries), foundations and ordinal probes.\n- All seven campaign/root receipts, independent audits A/B/F/G, and four inherited EODCS/Voyager receipts replayed.\n- Nine Lean 4.14 modules; dependencies of 65 production theorems inspected; independent positive appendix and four calibrated rejected controls.\n- Historical imports and O1\u2013O638 preserved; additive ledger O639\u2013O679.\n\nBase: `5eb09e7cba36ec01b8f9d6834b78b5766fd93935`.\nPublication head: `bdb1fcfce875ee6c51fc62f78fbb4111582caadc`.\nContent tree: `2391f7aef24990f55ff46a3abefc4010b691bf94`, exactly matching the tested local publication tree.\n\nNative git push had no credentials. Publication used the connected GitHub API; the exact original worker/audit/local integration commits are retained in a verified, reproducible Git bundle under `provenance/cambrian/`. The API commit is not mislabeled as an original worker commit. PR45 remains a separate Lean4.19 lineage; no formal material from it was imported.\n\nExact-head GitHub CI: **all four workflows passed on `bdb1fcfce875ee6c51fc62f78fbb4111582caadc`**, for both push and pull-request events. The full Python 3.10 and 3.13 jobs each report **1,716 tests passed**. Main, releases, tags and defaults are unchanged.\n\n| Final-head workflow | Verified PR run |\n|---|---|\n| Full Python 3.10/3.13 and inherited source/proof guards | [38365271651](https://github.com/femboy2112/SUCC/actions/runs/38365271651) |\n| Cambrian tests and exact research/audit receipt replay, Python 3.10/3.13 | [38365271625](https://github.com/femboy2112/SUCC/actions/runs/38365271625) |\n| Pinned Lean 4.14, 65 production theorem dependencies and calibrated controls | [38365271642](https://github.com/femboy2112/SUCC/actions/runs/38365271642) |\n| Exact EODCS/Voyager hostile controls and frozen receipts | [38365271684](https://github.com/femboy2112/SUCC/actions/runs/38365271684) |\n\nPublication follow-up: the first remote Lean kernel/audit passed, while a legacy substring scanner falsely matched `admit` inside the comment word `admits`. The final head fixes the scanner with comment-aware token checks and retained negative controls. [The initial failed run](https://github.com/femboy2112/SUCC/actions/runs/38364586119) remains recorded.\n\nConcurrent drafts #49 and #50 contain overlapping classical mathematics and distinct formal developments, including #50's separately reported topology-library proof. Their exact snapshots and scoped overlap are attributed in `CAMBRIAN_PUBLICATION_NOTES.md`; no sibling files were imported or changed. Their global ledgers still equal O1\u2013O638, so no global-ID collision was found. Their supplementary namespaces need reconciliation before a future merge.\n\nSibling topology scope was checked directly at #50 head `2e1bda55799e1e1f2c516e472c4fa169fc9692f8`: [`SwarmTopology.lean`](https://github.com/femboy2112/SUCC/blob/2e1bda55799e1e1f2c516e472c4fa169fc9692f8/formal/swarm_topology/SwarmTopology.lean) proves deterministic-trace closure/finite compatibility and compact-source actualization for discrete outcomes, with mathlib pin `4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84`. Its [topology CI step](https://github.com/femboy2112/SUCC/actions/runs/38362335675) passed at that sibling head. This is separately credited and was not imported or locally rebuilt here; our new kernel theorem concerns changing, nondeterministic, finitely branching histories.",
+  "headRefName": "research/cambrian-observational-realization-2026-10-13",
+  "headRefOid": "bdb1fcfce875ee6c51fc62f78fbb4111582caadc",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:52:00Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365271625/job/115188780701",
+      "name": "exact_campaign (3.10)",
+      "startedAt": "2026-10-13T07:51:08Z",
+      "status": "COMPLETED",
+      "workflowName": "Cambrian exact source and receipt checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:18Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365264616/job/115188758759",
+      "name": "exact_campaign (3.10)",
+      "startedAt": "2026-10-13T07:50:34Z",
+      "status": "COMPLETED",
+      "workflowName": "Cambrian exact source and receipt checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:06Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365271642/job/115188779801",
+      "name": "Lean4 EODCS and Voyager exact source/limit proofs (pinned)",
+      "startedAt": "2026-10-13T07:50:46Z",
+      "status": "COMPLETED",
+      "workflowName": "EODCS isolated Lean4 proof-kernel gate"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:01Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365264606/job/115188758062",
+      "name": "Lean4 EODCS and Voyager exact source/limit proofs (pinned)",
+      "startedAt": "2026-10-13T07:50:34Z",
+      "status": "COMPLETED",
+      "workflowName": "EODCS isolated Lean4 proof-kernel gate"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:35Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365271684/job/115188780203",
+      "name": "Exact EODCS Python source + graph checks (3.10)",
+      "startedAt": "2026-10-13T07:51:02Z",
+      "status": "COMPLETED",
+      "workflowName": "EODCS standalone finite theorem and hostile-oracle checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:08Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365264607/job/115188757732",
+      "name": "Exact EODCS Python source + graph checks (3.10)",
+      "startedAt": "2026-10-13T07:50:34Z",
+      "status": "COMPLETED",
+      "workflowName": "EODCS standalone finite theorem and hostile-oracle checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:55:31Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365271651/job/115188780450",
+      "name": "Python 3.10 mathematical and epistemic checks",
+      "startedAt": "2026-10-13T07:51:10Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:53:54Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365264641/job/115188759589",
+      "name": "Python 3.10 mathematical and epistemic checks",
+      "startedAt": "2026-10-13T07:50:34Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:22Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365271625/job/115188780013",
+      "name": "exact_campaign (3.13)",
+      "startedAt": "2026-10-13T07:50:47Z",
+      "status": "COMPLETED",
+      "workflowName": "Cambrian exact source and receipt checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:08Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365264616/job/115188758488",
+      "name": "exact_campaign (3.13)",
+      "startedAt": "2026-10-13T07:50:34Z",
+      "status": "COMPLETED",
+      "workflowName": "Cambrian exact source and receipt checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:08Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365271684/job/115188779887",
+      "name": "Exact EODCS Python source + graph checks (3.13)",
+      "startedAt": "2026-10-13T07:50:49Z",
+      "status": "COMPLETED",
+      "workflowName": "EODCS standalone finite theorem and hostile-oracle checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:06Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365264607/job/115188757953",
+      "name": "Exact EODCS Python source + graph checks (3.13)",
+      "startedAt": "2026-10-13T07:50:34Z",
+      "status": "COMPLETED",
+      "workflowName": "EODCS standalone finite theorem and hostile-oracle checks"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:54:41Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365271651/job/115188780456",
+      "name": "Python 3.13 mathematical and epistemic checks",
+      "startedAt": "2026-10-13T07:51:09Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:53:22Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365264641/job/115188759523",
+      "name": "Python 3.13 mathematical and epistemic checks",
+      "startedAt": "2026-10-13T07:50:34Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:21Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365271651/job/115188780526",
+      "name": "Contextual Bayesian SUCC heuristic guards (3.10)",
+      "startedAt": "2026-10-13T07:51:10Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:50:48Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365264641/job/115188759225",
+      "name": "Contextual Bayesian SUCC heuristic guards (3.10)",
+      "startedAt": "2026-10-13T07:50:34Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:14Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365271651/job/115188780401",
+      "name": "Contextual Bayesian SUCC heuristic guards (3.13)",
+      "startedAt": "2026-10-13T07:51:02Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:50:46Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365264641/job/115188759514",
+      "name": "Contextual Bayesian SUCC heuristic guards (3.13)",
+      "startedAt": "2026-10-13T07:50:34Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:01Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365271651/job/115188780002",
+      "name": "Typed genetic model fusion and source-coupling guards (3.10)",
+      "startedAt": "2026-10-13T07:50:49Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:50:44Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365264641/job/115188759363",
+      "name": "Typed genetic model fusion and source-coupling guards (3.10)",
+      "startedAt": "2026-10-13T07:50:34Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:51:20Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365271651/job/115188780302",
+      "name": "Typed genetic model fusion and source-coupling guards (3.13)",
+      "startedAt": "2026-10-13T07:51:08Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-10-13T07:50:47Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/femboy2112/SUCC/actions/runs/38365264641/job/115188759540",
+      "name": "Typed genetic model fusion and source-coupling guards (3.13)",
+      "startedAt": "2026-10-13T07:50:34Z",
+      "status": "COMPLETED",
+      "workflowName": "Observational SUCC validation"
+    }
+  ],
+  "title": "Research: Cambrian source-changing transport, history realization and hostile audits",
+  "url": "https://github.com/femboy2112/SUCC/pull/51"
+}

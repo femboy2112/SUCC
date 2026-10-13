@@ -1,0 +1,5 @@
+# D28 independent principal crucible
+
+Reviewed author6074afd28f60a1f27ffa26e396f892226d23c46a. SURVIVES, classical finite-time recurrence. Independently unroll e_(i+1)<=L_i e_i+eta_i and multiply by report Lipschitz K_n. Linear F=Lx and q=Kx attain equality, making the claimed exact worst-pair horizon sharp only in that specified model. Necessary branch estimate needs an initial pair at distance delta, whole interval within each monotone branch, lower derivative and co-Lipschitz report. Source derivative at one point or an upper L alone is insufficient. Circle doubling merges0 and1/32 after5; constant report has zero report entropy despite source entropy. Folding and discrete quantizer boundaries invalidate universal precision slogans. Target factorization concerns original-source fibers, not merely current values. No physical/noisy-carrier calibration or general chaos information-creation claim.
+
+Reviewer is not the author; source mathematical assumptions remain stipulated. Exact probe replay is recorded separately. Paper proofs remain distinct from kernel verification.
