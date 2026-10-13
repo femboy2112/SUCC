@@ -135,12 +135,92 @@ class TestPermutationFixedPoint(unittest.TestCase):
         with self.assertRaises(GeneticsError):
             PermutationGraph(("v", "w"), (), 2).tree_transports()
 
+    def test_nonabelian_S3_kernel_cover_six_sheets_from_three_fiber_values(self):
+        p, q = (1, 0, 2), (0, 2, 1)
+        g = PermutationGraph(("root",),
+                             (("root", "root", p), ("root", "root", q)), 3)
+        group = g.holonomy_group()
+        self.assertEqual(len(group), 6)
+        self.assertEqual(len(g.root_fixed_points()), 0)
+        vertices, arcs = g.minimal_connected_trivializing_cover()
+        self.assertEqual(len(vertices), 6)
+        self.assertEqual(len(arcs), 12)
+        # The lifted cover transports are simultaneously trivializable for
+        # ALL root fiber values; the base has no parallel global section.
+        for (u, h), (v, h2), perm in arcs:
+            self.assertEqual(u, "root")
+            self.assertEqual(v, "root")
+            self.assertTrue(all(perm[h[i]] == h2[i] for i in range(3)))
+
+    def test_nontrivial_holonomy_and_base_section_do_not_trivialize_cover(self):
+        g = PermutationGraph(("root",),
+                             (("root", "root", (1, 0, 2)),), 3)
+        self.assertEqual(g.root_fixed_points(), (2,))
+        self.assertEqual(len(g.holonomy_group()), 2)
+        vertices, arcs = g.minimal_connected_trivializing_cover()
+        self.assertEqual(len(vertices), 2)
+        self.assertEqual(len(arcs), 2)
+
+    def test_flat_connection_has_degree_one_even_with_many_fiber_values(self):
+        g = PermutationGraph(("x", "y"),
+                             (("x", "y", (1, 2, 0)),), 3)
+        self.assertEqual(len(g.holonomy_group()), 1)
+        vertices, arcs = g.minimal_connected_trivializing_cover()
+        self.assertEqual(len(vertices), 2)
+        self.assertEqual(len(arcs), 1)
+        self.assertEqual(len(g.root_fixed_points()), 3)
+
+    def test_120_seeded_nonabelian_minimal_covers_against_raw_path_BFS(self):
+        rng = Random(20261013)
+        perms = tuple(permutations(range(3)))
+        for _ in range(120):
+            n = rng.choice((1, 2, 3, 4))
+            v = tuple(str(i) for i in range(n))
+            edges = [(v[i], v[i+1], rng.choice(perms)) for i in range(n-1)]
+            edges += [(rng.choice(v), rng.choice(v), rng.choice(perms))
+                      for _ in range(rng.randrange(1, 5))]
+            graph = PermutationGraph(v, tuple(edges), 3)
+            # Independent oracle does not use holonomy_generators or the
+            # library's permutation-composition helper: directly enumerate
+            # path walks and their raw root-to-vertex permutations.
+            adj = {x: [] for x in v}
+            for u, w, p in edges:
+                adj[u].append((w, p))
+                inv = tuple(p.index(j) for j in range(3))
+                adj[w].append((u, inv))
+            start = (v[0], (0, 1, 2))
+            reachable = {start}
+            todo = [start]
+            for at, path in todo:
+                for w, p in adj[at]:
+                    nxt = (w, tuple(p[path[i]] for i in range(3)))
+                    if nxt not in reachable:
+                        reachable.add(nxt)
+                        todo.append(nxt)
+            root_h = {p for at, p in reachable if at == v[0]}
+            group = set(graph.holonomy_group())
+            self.assertEqual(group, root_h)
+            cover_vertices, cover_arcs = graph.minimal_connected_trivializing_cover()
+            self.assertEqual(len(cover_vertices), n * len(root_h))
+            self.assertEqual(len(cover_arcs), len(edges) * len(root_h))
+
+    def test_mutated_source_epoch_rejected_for_permutation_transport(self):
+        with self.assertRaises(GeneticsError):
+            PermutationGraph(("root",), (), 3, epoch=-1)
+        with self.assertRaises(GeneticsError):
+            PermutationGraph(("root",), (), 3, basis="")
+
     def test_generated_receipt_retains_nonflat_and_nonfree_cases(self):
         d = language_birth_demo()
         self.assertTrue(d["nonfree_nontrivial_holonomy"])
         self.assertEqual(d["nonfree_parallel_sections"], 1)
         self.assertEqual(d["independent_nonfree_section_count"], 1)
         self.assertEqual(d["incompatible_fixed_sets_section_count"], 0)
+        self.assertEqual(d["nonfree_trivializing_cover_degree"], 2)
+        self.assertEqual(d["nonabelian_S3_cover_degree"], 6)
+        self.assertEqual(d["nonabelian_S3_cover_vertices"], 6)
+        self.assertEqual(d["nonabelian_S3_cover_edges"], 12)
+        self.assertEqual(d["nonabelian_S3_base_sections"], 0)
         self.assertFalse(d["physical_gauge_field_claimed"])
 
 
