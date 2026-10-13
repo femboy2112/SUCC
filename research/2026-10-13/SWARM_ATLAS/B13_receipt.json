@@ -1,0 +1,168 @@
+{
+  "academic_novelty_claimed": false,
+  "branch": "research/swm-b13-2026-10-13",
+  "claim_id": "SWM-B13",
+  "command": "PYTHONDONTWRITEBYTECODE=1 timeout 30s python research/2026-10-13/SWARM_ATLAS/B13_probe.py --receipt research/2026-10-13/SWARM_ATLAS/B13_receipt.json",
+  "compiler_run": false,
+  "elapsed_seconds": 0.57576,
+  "exact_horn_probe": {
+    "atom_count": 3,
+    "birth_pattern": "axioms 1,2,3; rules 1+i mod 3",
+    "independent_stage_semantics_checks": 12288,
+    "opposite_rule_order_checks": 4096,
+    "possible_rules": 9,
+    "stage_birth_patterns_exhausted": false,
+    "support_replays": 9600,
+    "theories_exhausted": 4096
+  },
+  "exit_code": 0,
+  "full_suite_run": false,
+  "hostile_controls": {
+    "all_instance_facts_universal_false_model": [
+      "P0",
+      "P1",
+      "P2"
+    ],
+    "expected_failure_count": 4,
+    "nondirected_branches": {
+      "left": [
+        "a"
+      ],
+      "right": [
+        "b"
+      ],
+      "union_theory": [
+        "a",
+        "b",
+        "c"
+      ]
+    },
+    "not_a_Godel_proof": true,
+    "rule_retirement": {
+      "after": [
+        "a"
+      ],
+      "before": [
+        "a",
+        "b"
+      ]
+    },
+    "unnamed_element_first_order_model": {
+      "P_true_at": [
+        0,
+        1
+      ],
+      "domain": [
+        0,
+        1,
+        2
+      ],
+      "named_constants": [
+        0,
+        1
+      ],
+      "universal_counterexample": 2
+    }
+  },
+  "id": "B13",
+  "native_smoke": {
+    "delayed_halt_first_counterexample": {
+      "first_counterexample": 3,
+      "horizon": 3,
+      "status": "refuted"
+    },
+    "finite_report_source_horizon_for_0_1": 3,
+    "growing_rule_target_certified": [
+      false,
+      true
+    ],
+    "numeric_Gamma_report_executed": false,
+    "shared_boolean_monitor_prefixes": [
+      {
+        "first_counterexample": null,
+        "horizon": 0,
+        "status": "unresolved"
+      },
+      {
+        "first_counterexample": null,
+        "horizon": 1,
+        "status": "unresolved"
+      },
+      {
+        "first_counterexample": null,
+        "horizon": 2,
+        "status": "unresolved"
+      }
+    ],
+    "transport_mutations_rejected": [
+      "Nonmonotone theory revision requires branch revalidation",
+      "Revised semantic basis requires an explicit base-change proof"
+    ]
+  },
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "physical_infinity_performed": false,
+  "preserved_setup_failures": [
+    {
+      "command": "cat research/2026-10-12/CHECKPOINT_META_OBSERVER_TOWER.md",
+      "exit": 1,
+      "reason": "wrong guessed dossier name; corrected by rg to CARRIER_RELATIVE_META_SUCC_AND_DOVETAIL.md"
+    },
+    {
+      "command": "git cat-file -t ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+      "exit": 128,
+      "reason": "origin absent from SUCC object database; verified in /home/leah/FuckingRH"
+    }
+  ],
+  "primary_sources": [
+    {
+      "browsed": true,
+      "locator": "Turing original pp.193-197,203; separate editorial preface",
+      "url": "https://people.math.ethz.ch/~halorenz/4students/Literatur/TuringOrdinalLogic.pdf"
+    },
+    {
+      "browsed": true,
+      "locator": "Introduction: fixed c.e. axiomatization and local versus uniform reflection",
+      "url": "https://arxiv.org/html/2405.09275v2"
+    },
+    {
+      "browsed": true,
+      "locator": "Godel 1931 publisher record; full original text not obtained",
+      "url": "https://link.springer.com/article/10.1007/BF01700692"
+    }
+  ],
+  "probe_sha256": "8607ccbf74b7475623ae07f74d4c35385d8bc730e181008cf30bfd4fc9a722d6",
+  "probe_status": "TESTED MODEL",
+  "proof_assistant_kernel_checked": false,
+  "proof_status": "PROVED LOCAL finite support; CLASSICAL conditional Godel guard",
+  "provenance": {
+    "checked_paths": [
+      {
+        "current_git_blob": "d855791bc45c8f8c8c7b26c4c88ab7f58161ee5d",
+        "matched_manifest": true,
+        "origin_git_blob": "d855791bc45c8f8c8c7b26c4c88ab7f58161ee5d",
+        "path": "observational_succ/godel_succ.py"
+      },
+      {
+        "current_git_blob": "99baa3be8f3900af7886abe892a9e593dfa392a9",
+        "matched_manifest": true,
+        "origin_git_blob": "99baa3be8f3900af7886abe892a9e593dfa392a9",
+        "path": "observational_succ/ordinal_succ_report.py"
+      },
+      {
+        "current_git_blob": "e17ca3189805c62b4d7a984d8051469377786181",
+        "matched_manifest": true,
+        "origin_git_blob": "e17ca3189805c62b4d7a984d8051469377786181",
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_GODEL_BRIDGE.md"
+      },
+      {
+        "current_git_blob": "72175698dba6c4e5e57e367c4e0763dc74e6c413",
+        "matched_manifest": true,
+        "origin_git_blob": "72175698dba6c4e5e57e367c4e0763dc74e6c413",
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/OMEGA_SUCC_SECOND_ORDER_WEIL_REPORT.md"
+      }
+    ],
+    "native_checkpoint_git_blob": "2b8e31b42555c3b62d78a26504cc5a6107a3c2a0",
+    "physical_authentication": false,
+    "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a"
+  }
+}
