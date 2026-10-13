@@ -45,13 +45,13 @@ theorem transport_exists_of_fiber_compatibility
     (compatible : FiberCompatible q U r) :
     ∃ vmap : O → P, ∀ s : S, vmap (q s) = r (U s) := by
   classical
-  let section : O → S := fun o => Classical.choose (surj o)
-  have section_eq (o : O) : q (section o) = o := by
+  let pick : O → S := fun o => Classical.choose (surj o)
+  have section_eq (o : O) : q (pick o) = o := by
     exact Classical.choose_spec (surj o)
-  let vmap : O → P := fun o => r (U (section o))
+  let vmap : O → P := fun o => r (U (pick o))
   refine ⟨vmap, ?_⟩
   intro s
-  exact compatible (section (q s)) s (section_eq (q s))
+  exact compatible (pick (q s)) s (section_eq (q s))
 
 theorem source_transport_iff_fiber_compatible
     {S : Type u} {O : Type v} {T : Type w} {P : Type z}
@@ -95,6 +95,7 @@ theorem observation_pair_universal
       ∀ s, factor (refinement s) = (q s, post s) := by
   refine ⟨fun r => (decode_current r, decode_future r), ?_⟩
   intro s
+  change (decode_current (refinement s), decode_future (refinement s)) = (q s, post s)
   rw [hc s, hf s]
 
 theorem observation_pair_fiber_characterization
@@ -137,7 +138,11 @@ theorem based_loop_fixed_iff_tree_parallel
   constructor
   · intro fixed e
     have h := congrArg (tree (dst e)) (fixed e)
-    exact (inverse_right (dst e) _).symm.trans h.symm |>.symm
+    calc
+      edge e (tree (src e) x) =
+        tree (dst e) (inv (dst e) (edge e (tree (src e) x))) := by
+          exact (inverse_right (dst e) (edge e (tree (src e) x))).symm
+      _ = tree (dst e) x := h
   · intro parallel e
     rw [parallel e]
     exact inverse_left (dst e) x
