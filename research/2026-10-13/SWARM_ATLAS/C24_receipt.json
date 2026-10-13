@@ -1,0 +1,598 @@
+{
+  "additional_uniform_four_source_binary_maps_checked": 256,
+  "cases": [
+    {
+      "atoms": [
+        {
+          "G": 0,
+          "R": 0,
+          "S": 0,
+          "X": 0,
+          "Z": null,
+          "probability": "1/2"
+        },
+        {
+          "G": 1,
+          "R": 0,
+          "S": 1,
+          "X": 1,
+          "Z": null,
+          "probability": "1/2"
+        }
+      ],
+      "chain_rule_data_processing_fiber_and_embedding_checks": "PASS",
+      "loss_bits_exact_log2_prime_coefficients": {
+        "2": "1"
+      },
+      "maximum_positive_support_fiber": 2,
+      "mean_log_fiber_bound_exact_log2_prime_coefficients": {
+        "2": "1"
+      },
+      "minimum_fixed_length_auxiliary_bits": 1,
+      "name": "erase_fair_bit",
+      "target_information_loss_bits_exact_log2_prime_coefficients": {
+        "2": "1"
+      }
+    },
+    {
+      "atoms": [
+        {
+          "G": 0,
+          "R": [
+            0,
+            0
+          ],
+          "S": 0,
+          "X": 0,
+          "Z": null,
+          "probability": "1/2"
+        },
+        {
+          "G": 0,
+          "R": [
+            1,
+            1
+          ],
+          "S": 1,
+          "X": 1,
+          "Z": null,
+          "probability": "1/2"
+        }
+      ],
+      "chain_rule_data_processing_fiber_and_embedding_checks": "PASS",
+      "loss_bits_exact_log2_prime_coefficients": {},
+      "maximum_positive_support_fiber": 1,
+      "mean_log_fiber_bound_exact_log2_prime_coefficients": {},
+      "minimum_fixed_length_auxiliary_bits": 0,
+      "name": "copy_to_blank_keep_both",
+      "target_information_loss_bits_exact_log2_prime_coefficients": {}
+    },
+    {
+      "atoms": [
+        {
+          "G": 0,
+          "R": 0,
+          "S": 0,
+          "X": 0,
+          "Z": null,
+          "probability": "1023/1024"
+        },
+        {
+          "G": 1,
+          "R": 0,
+          "S": 1,
+          "X": 1,
+          "Z": null,
+          "probability": "1/1024"
+        }
+      ],
+      "chain_rule_data_processing_fiber_and_embedding_checks": "PASS",
+      "loss_bits_exact_log2_prime_coefficients": {
+        "11": "-1023/1024",
+        "2": "10",
+        "3": "-1023/1024",
+        "31": "-1023/1024"
+      },
+      "maximum_positive_support_fiber": 2,
+      "mean_log_fiber_bound_exact_log2_prime_coefficients": {
+        "2": "1"
+      },
+      "minimum_fixed_length_auxiliary_bits": 1,
+      "name": "erase_biased_full_support_bit",
+      "target_information_loss_bits_exact_log2_prime_coefficients": {
+        "11": "-1023/1024",
+        "2": "10",
+        "3": "-1023/1024",
+        "31": "-1023/1024"
+      }
+    },
+    {
+      "atoms": [
+        {
+          "G": 0,
+          "R": [
+            0,
+            0
+          ],
+          "S": [
+            0,
+            0
+          ],
+          "X": [
+            0,
+            0
+          ],
+          "Z": null,
+          "probability": "1/2"
+        },
+        {
+          "G": 1,
+          "R": [
+            0,
+            0
+          ],
+          "S": [
+            1,
+            1
+          ],
+          "X": [
+            1,
+            1
+          ],
+          "Z": null,
+          "probability": "1/2"
+        }
+      ],
+      "chain_rule_data_processing_fiber_and_embedding_checks": "PASS",
+      "loss_bits_exact_log2_prime_coefficients": {
+        "2": "1"
+      },
+      "maximum_positive_support_fiber": 2,
+      "mean_log_fiber_bound_exact_log2_prime_coefficients": {
+        "2": "1"
+      },
+      "minimum_fixed_length_auxiliary_bits": 1,
+      "name": "erase_two_correlated_bits",
+      "target_information_loss_bits_exact_log2_prime_coefficients": {
+        "2": "1"
+      }
+    },
+    {
+      "atoms": [
+        {
+          "G": 0,
+          "R": 0,
+          "S": 0,
+          "X": 0,
+          "Z": 0,
+          "probability": "1/4"
+        },
+        {
+          "G": 0,
+          "R": 0,
+          "S": 0,
+          "X": 0,
+          "Z": 1,
+          "probability": "1/4"
+        },
+        {
+          "G": 1,
+          "R": 0,
+          "S": 1,
+          "X": 1,
+          "Z": 0,
+          "probability": "1/4"
+        },
+        {
+          "G": 1,
+          "R": 0,
+          "S": 1,
+          "X": 1,
+          "Z": 1,
+          "probability": "1/4"
+        }
+      ],
+      "chain_rule_data_processing_fiber_and_embedding_checks": "PASS",
+      "loss_bits_exact_log2_prime_coefficients": {
+        "2": "1"
+      },
+      "maximum_positive_support_fiber": 2,
+      "mean_log_fiber_bound_exact_log2_prime_coefficients": {
+        "2": "1"
+      },
+      "minimum_fixed_length_auxiliary_bits": 1,
+      "name": "side_copy_0_record_0",
+      "target_information_loss_bits_exact_log2_prime_coefficients": {
+        "2": "1"
+      }
+    },
+    {
+      "atoms": [
+        {
+          "G": 0,
+          "R": [
+            0,
+            0
+          ],
+          "S": 0,
+          "X": 0,
+          "Z": 0,
+          "probability": "1/4"
+        },
+        {
+          "G": 0,
+          "R": [
+            0,
+            0
+          ],
+          "S": 0,
+          "X": 0,
+          "Z": 1,
+          "probability": "1/4"
+        },
+        {
+          "G": 0,
+          "R": [
+            0,
+            1
+          ],
+          "S": 1,
+          "X": 1,
+          "Z": 0,
+          "probability": "1/4"
+        },
+        {
+          "G": 0,
+          "R": [
+            0,
+            1
+          ],
+          "S": 1,
+          "X": 1,
+          "Z": 1,
+          "probability": "1/4"
+        }
+      ],
+      "chain_rule_data_processing_fiber_and_embedding_checks": "PASS",
+      "loss_bits_exact_log2_prime_coefficients": {},
+      "maximum_positive_support_fiber": 1,
+      "mean_log_fiber_bound_exact_log2_prime_coefficients": {},
+      "minimum_fixed_length_auxiliary_bits": 0,
+      "name": "side_copy_0_record_1",
+      "target_information_loss_bits_exact_log2_prime_coefficients": {}
+    },
+    {
+      "atoms": [
+        {
+          "G": 0,
+          "R": 0,
+          "S": 0,
+          "X": 0,
+          "Z": 0,
+          "probability": "1/2"
+        },
+        {
+          "G": 0,
+          "R": 0,
+          "S": 1,
+          "X": 1,
+          "Z": 1,
+          "probability": "1/2"
+        }
+      ],
+      "chain_rule_data_processing_fiber_and_embedding_checks": "PASS",
+      "loss_bits_exact_log2_prime_coefficients": {},
+      "maximum_positive_support_fiber": 1,
+      "mean_log_fiber_bound_exact_log2_prime_coefficients": {},
+      "minimum_fixed_length_auxiliary_bits": 0,
+      "name": "side_copy_1_record_0",
+      "target_information_loss_bits_exact_log2_prime_coefficients": {}
+    },
+    {
+      "atoms": [
+        {
+          "G": 0,
+          "R": [
+            0,
+            0
+          ],
+          "S": 0,
+          "X": 0,
+          "Z": 0,
+          "probability": "1/2"
+        },
+        {
+          "G": 0,
+          "R": [
+            0,
+            1
+          ],
+          "S": 1,
+          "X": 1,
+          "Z": 1,
+          "probability": "1/2"
+        }
+      ],
+      "chain_rule_data_processing_fiber_and_embedding_checks": "PASS",
+      "loss_bits_exact_log2_prime_coefficients": {},
+      "maximum_positive_support_fiber": 1,
+      "mean_log_fiber_bound_exact_log2_prime_coefficients": {},
+      "minimum_fixed_length_auxiliary_bits": 0,
+      "name": "side_copy_1_record_1",
+      "target_information_loss_bits_exact_log2_prime_coefficients": {}
+    },
+    {
+      "atoms": [
+        {
+          "G": 0,
+          "R": [
+            0,
+            0,
+            [
+              [
+                "a",
+                0,
+                true,
+                0,
+                1
+              ]
+            ]
+          ],
+          "S": [
+            0,
+            0
+          ],
+          "X": 0,
+          "Z": null,
+          "probability": "1/4"
+        },
+        {
+          "G": 1,
+          "R": [
+            0,
+            0,
+            [
+              [
+                "a",
+                0,
+                true,
+                0,
+                1
+              ]
+            ]
+          ],
+          "S": [
+            0,
+            1
+          ],
+          "X": 1,
+          "Z": null,
+          "probability": "1/4"
+        },
+        {
+          "G": 0,
+          "R": [
+            1,
+            0,
+            [
+              [
+                "a",
+                1,
+                true,
+                0,
+                1
+              ]
+            ]
+          ],
+          "S": [
+            1,
+            0
+          ],
+          "X": 1,
+          "Z": null,
+          "probability": "1/4"
+        },
+        {
+          "G": 1,
+          "R": [
+            1,
+            0,
+            [
+              [
+                "a",
+                1,
+                true,
+                0,
+                1
+              ]
+            ]
+          ],
+          "S": [
+            1,
+            1
+          ],
+          "X": 0,
+          "Z": null,
+          "probability": "1/4"
+        }
+      ],
+      "chain_rule_data_processing_fiber_and_embedding_checks": "PASS",
+      "loss_bits_exact_log2_prime_coefficients": {
+        "2": "1"
+      },
+      "maximum_positive_support_fiber": 2,
+      "mean_log_fiber_bound_exact_log2_prime_coefficients": {
+        "2": "1"
+      },
+      "minimum_fixed_length_auxiliary_bits": 1,
+      "name": "native_read_a_overwrite_b",
+      "target_information_loss_bits_exact_log2_prime_coefficients": {
+        "2": "1"
+      }
+    },
+    {
+      "atoms": [
+        {
+          "G": 0,
+          "R": [
+            [
+              0,
+              0,
+              [
+                [
+                  "a",
+                  0,
+                  true,
+                  0,
+                  1
+                ]
+              ]
+            ],
+            0
+          ],
+          "S": [
+            0,
+            0
+          ],
+          "X": 0,
+          "Z": null,
+          "probability": "1/4"
+        },
+        {
+          "G": 0,
+          "R": [
+            [
+              0,
+              0,
+              [
+                [
+                  "a",
+                  0,
+                  true,
+                  0,
+                  1
+                ]
+              ]
+            ],
+            1
+          ],
+          "S": [
+            0,
+            1
+          ],
+          "X": 1,
+          "Z": null,
+          "probability": "1/4"
+        },
+        {
+          "G": 0,
+          "R": [
+            [
+              1,
+              0,
+              [
+                [
+                  "a",
+                  1,
+                  true,
+                  0,
+                  1
+                ]
+              ]
+            ],
+            0
+          ],
+          "S": [
+            1,
+            0
+          ],
+          "X": 1,
+          "Z": null,
+          "probability": "1/4"
+        },
+        {
+          "G": 0,
+          "R": [
+            [
+              1,
+              0,
+              [
+                [
+                  "a",
+                  1,
+                  true,
+                  0,
+                  1
+                ]
+              ]
+            ],
+            1
+          ],
+          "S": [
+            1,
+            1
+          ],
+          "X": 0,
+          "Z": null,
+          "probability": "1/4"
+        }
+      ],
+      "chain_rule_data_processing_fiber_and_embedding_checks": "PASS",
+      "loss_bits_exact_log2_prime_coefficients": {},
+      "maximum_positive_support_fiber": 1,
+      "mean_log_fiber_bound_exact_log2_prime_coefficients": {},
+      "minimum_fixed_length_auxiliary_bits": 0,
+      "name": "native_with_retained_initial_b",
+      "target_information_loss_bits_exact_log2_prime_coefficients": {}
+    }
+  ],
+  "command": "python -B research/2026-10-13/SWARM_ATLAS/C24_probe.py > research/2026-10-13/SWARM_ATLAS/C24_receipt.json",
+  "complete_factorial": {
+    "cells": {
+      "00": {
+        "2": "1"
+      },
+      "01": {},
+      "10": {},
+      "11": {}
+    },
+    "meaning": "model non-additivity; no physical mechanism inferred",
+    "mixed_difference_bits_exact": "1"
+  },
+  "excluded_stochastic_control": {
+    "H_S_minus_H_R_bits_exact": "-1",
+    "deterministic_report_hypothesis_satisfied": false
+  },
+  "global_copy_and_controlled_reset_permutations_checked": true,
+  "immutable_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "import_source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "import_source_commit_object_available_locally": false,
+  "inequality_checker": "exact integer product comparison after clearing rational denominators",
+  "no_compiler_or_full_suite_run": true,
+  "no_physical_source_authentication_or_empirical_thermodynamic_validation": true,
+  "probe_exit_code": 0,
+  "schema": "C24-exact-finite-information-v1",
+  "sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "formal/EODCS_VoyagerMemoryDebt.lean": "ebd28c1b189f53ce73955b34a2176d365377068998e4760cc2f23a43e331d05f",
+    "observational_succ/entropy_transport.py": "81d2e8c9de8d1e8aa00d1c5bfc581968b9be1ea1ff11f7608336d0ba26b25276",
+    "observational_succ/probe_coherence.py": "2495e1880b76a615d7f048e177304c7aee3e0dcfe5ce7f62abda1d1a1b6a664f",
+    "observational_succ/proof_backaction_debt.py": "fd9369e27c5404da1a3e7900641e888bb8bd41efa758ec859a3552c989f14f0d",
+    "observational_succ/voyager_profinite_frontier.py": "9971e3b4dc389963be322bd96ddedb8ad2cbe2e5c2e4dcea2913f0485195ea34",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+    "research/2026-10-13/SWARM_ATLAS/C24.md": "2085a3e3daafa8b34095bcbd10465e84fa49f4b01a82207b49766650d2df834d",
+    "research/2026-10-13/SWARM_ATLAS/C24_probe.py": "b04bc4d54395f10c9580ed58600814cc25308a7c2edd175e44b412756e2152c7"
+  },
+  "status": "TESTED MODEL; universal statements have prose PROVED LOCAL proofs",
+  "swap_control": {
+    "empirical_measurement": false,
+    "final_information_bits_exact": "0",
+    "heat_exact_under_H_reservoir_zero": "0",
+    "initial_information_bits_exact": "1",
+    "is_reset_to_standard_state": false,
+    "reservoir_marginal_unchanged": true
+  },
+  "symbolic_basis": "sum coefficients[p] * log2(p); omitted coefficients are zero"
+}
