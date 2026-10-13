@@ -218,6 +218,11 @@ class CarrierSemantics(unittest.TestCase):
                     w[0]=1
                 fine.append(tuple((r,d,Q(w[r*3+d],sum(w)))
                                   for r in range(2) for d in range(3)))
+            if j % 3 == 0:
+                # Plant a lawful q-fiber-constant kernel so the sufficiency
+                # (verdict.valid) branch below is actually exercised, not skipped.
+                fine[1]=fine[0]
+                fine[3]=fine[2]
             a=CarrierInstrument("seed"+str(j),st,out,("u","v"),
                                 (True,True,True,True),tuple(fine))
             verdict=audit_descent(a,bq,aq)

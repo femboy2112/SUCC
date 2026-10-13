@@ -141,7 +141,7 @@ eigenvectors `e = (1, φ⁻¹) = (1, (√5−1)/2)` (unstable direction) and `e'
 (iii) `d⁺_ℝ = 2`: the generators `e, e'` give the carrier
   `B_{a,tick} = diag((3+√5)/8, (3−√5)/8)`, `B_{b,tock} = diag((3−√5)/8, (3+√5)/8)`,
   `B_{a,reset} = [[¼, (3+√5)/8],[(3−√5)/8, ¼]]`, `B_{b,reset} = [[(3+√5)/8, ¼],[¼, (3−√5)/8]]`,
-  `λ_s = (½ + √5/10, ½ − √5/10)`; all columns sum to 1, all entries positive, verified exactly in
+  `λ_s = (½ + √5/10, ½ − √5/10)`; all columns sum to 1, all entries nonnegative (the diagonal tick/tock realization matrices have zero off-diagonal entries), verified exactly in
   `ℚ(√5)` (`golden_carrier`).
 (iv) `d⁺_ℚ = ∞`, and `Fld(p) = ℚ(√5)` exactly.
 
