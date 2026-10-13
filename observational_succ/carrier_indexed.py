@@ -115,7 +115,8 @@ class Carrier:
             _label(x)
         if len(set(self.originals)) != len(self.originals):
             raise CarrierError("Original source labels must be distinct")
-        _mass(self.preparation, self.stage.count, normalized=True)
+        prep = _mass(self.preparation, self.stage.count, normalized=True)
+        object.__setattr__(self, "preparation", prep)
         if len(self.preparation) != len(self.originals):
             raise CarrierError("One prepared current-state law per original label")
         if self.empirically_authenticated:
@@ -212,7 +213,8 @@ class ActualHistory:
                 or type(self.events) is not tuple
                 or any(type(e) is not CarrierEvent for e in self.events)):
             raise CarrierError("Unlicensed changing-source history")
-        _mass(self.mass, self.current.count, normalized=False)
+        mass = _mass(self.mass, self.current.count, normalized=False)
+        object.__setattr__(self, "mass", mass)
         if len(self.mass) != len(self.root_source.originals):
             raise CarrierError("Original-indexed joint law changed its source")
 
@@ -528,6 +530,10 @@ def from_stochastic_history(history, instrument):
     if (history.source_id != instrument.source_id or
             history.current_space != instrument.input_space):
         raise CarrierError("Original stochastic source context mismatch")
+    if history.events or history.path_probability != 1:
+        raise CarrierError(
+            "A lossless prepared-history adapter cannot erase past receipts; "
+            "supply a source-aware checkpoint transport instead")
     stage = CarrierStage(history.source_id, history.initial_space, 0,
                          history.current_space,
                          tuple(range(len(history.joint[0]))))
