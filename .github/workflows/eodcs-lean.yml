@@ -51,9 +51,16 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
+          import sys
+          sys.path.insert(0, "scripts")
+          from cambrian_audit_c_lean import uncomment
+          forbidden = re.compile(r'\b(sorry|admit|axiom|unsafe|native_decide)\b')
+          # Comments and identifier substrings are not proof declarations.
+          assert forbidden.search(uncomment("/- countdown admits every finite depth -/ theorem admissible : True := by trivial")) is None
+          assert forbidden.search(uncomment("/- outer /- nested admit -/ comment -/\nexample : False := by sorry"))
+          assert forbidden.search(uncomment("-- harmless\naxiom broken : False"))
           for path in sorted(Path("formal").glob("EODCS_*.lean")):
-              src=path.read_text()
-              code=src.split("namespace ObservationalSUCC",1)[1]
-              for bad in ("sorry", "admit", "axiom ", "unsafe "):
-                  assert bad not in code, (str(path),bad)
+              code=uncomment(path.read_text())
+              assert forbidden.search(code) is None, str(path)
           PY

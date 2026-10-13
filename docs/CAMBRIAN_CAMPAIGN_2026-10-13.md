@@ -33,6 +33,11 @@ No original checkout or uncommitted user work was modified. Explorers used
 six isolated worktrees from the identical #48 base. Archive originals,
 historical claim IDs O1–O638, licenses and defaults were protected.
 
+A final publication refresh also found concurrent drafts #49 and #50 on the
+same pinned base. Their exact heads and direct mathematical overlaps are
+recorded in [publication notes](../research/2026-10-13/CAMBRIAN_PUBLICATION_NOTES.md).
+They were compared without merging or changing either sibling.
+
 ## B. Swarm manifest
 
 Six actual research agents own six assignments each: **36 mathematical
@@ -274,7 +279,7 @@ hypothesis and original-source correspondence is verified.
 |---|---|---|
 | 1 | Extend joint-kernel descent to arbitrary quantum instruments through a specified channel, proving factorization or a coherent-input obstruction. Start with noncommuting qubit branches and process-matrix equality. | High: tests the diagonal bridge's first noncommutative extension. Medium prospect and cost. |
 | 2 | Replace D20's exact equivalence teacher with a weaker history protocol. Prove a guarantee under explicit mixing/state bounds, or an indistinguishable delayed-source lower bound. | High: separates implementable learning from oracle access. High prospect for a sharp boundary, medium cost. |
-| 3 | Formalize C16's compact closed-constraint theorem and original-class gate in pinned mathlib; separately characterize effective branch selection with effective pruning assumptions. | High verification value; topology proof tractable, selector subtler. Medium/high cost. |
+| 3 | Reconcile sibling #50 B09's reported mathlib topology proof with C16's changing relational histories and original-class gate; verify any required extension, then characterize effective branch selection under effective pruning. | High verification value; existing sibling work changes the starting point. Effective selection remains subtler. Medium/high cost. |
 | 4 | Construct certified natural-acim branch-statistic enclosures for the exact band-merging source, or discharge every Misiurewicz component/support/periodic-orbit premise for the Parry comparison. | High source discrimination; medium prospect, high cost. A single periodic multiplier is insufficient. |
 | 5 | Extend finite arithmetic tomography to a specified infinite class with explicit tail control, authentic completion terms and a norm-stable inverse. Test matched prefixes with hostile tails before any sign inference. | High potential significance; low/medium prospect, high cost. Prefixes and symmetry do not determine positivity. |
 
