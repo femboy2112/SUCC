@@ -58,6 +58,8 @@ jobs:
           PY
       - name: Run all mathematical, logic, quantum, source and hostile tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Replay exact source-driven RC inverse reconstruction receipt
+        run: python scripts/dynamic_boundary_inverse_probe.py > "$RUNNER_TEMP/dynamic-boundary-inverse.json"
       - name: Reconstruct the historical Galilean-to-Lorentz SUCC repair
         run: |
           python scripts/historical_galilean_lorentz_probe.py > "$RUNNER_TEMP/historical-galileo-lorentz.json"
