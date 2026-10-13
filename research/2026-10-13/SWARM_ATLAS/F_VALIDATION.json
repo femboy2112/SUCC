@@ -1,0 +1,16 @@
+{
+  "schema": "succ-swm-f-validation-v1",
+  "python": "3.12.14",
+  "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "sibling": "b2774ca485db4b5b4f7ce92e535220352fb3af2f",
+  "precommit": "3ac5769",
+  "dedicated_sibling_reproduction": {"command": "python -m unittest discover -s tests -p 'test_evolving*.py' -v", "tests": 59, "status": "PASS", "tree": "exact sibling git archive, no merge"},
+  "new_final_targeted": {"command": "python -m unittest discover -s tests -p 'test_swarm_discovery.py' -v", "tests": 29, "status": "PASS"},
+  "full_suite_before_final_typed_verdict_patch": {"command": "python -m unittest discover -s tests -p 'test_*.py'", "tests": 1630, "seconds": 89.603, "status": "PASS", "boundary": "Subsequent final patch separates CERTIFIED/AMBIGUOUS/INCONSISTENT original-target verdicts and adds the null-target test; all 29 final targeted tests rerun. Integration owner runs final full suite."},
+  "required_probes": {"python scripts/verify_provenance.py": "PASS: 72 entries, 17 byte-identical archives, 55 mechanical migrations", "python scripts/observer_foundations_probe.py": "PASS", "python scripts/ordinal_succ_report_probe.py": "PASS"},
+  "exact_receipt": {"command": "python scripts/swarm_f_probe.py", "path": "research/2026-10-13/SWARM_ATLAS/F_EXACT_RECEIPT.json", "status": "PASS"},
+  "lean_new_theorem_check_executed": false,
+  "sibling_historical_lean_claims_independently_rerun": false,
+  "physical_source_authenticated": false,
+  "academic_priority_verified": false
+}

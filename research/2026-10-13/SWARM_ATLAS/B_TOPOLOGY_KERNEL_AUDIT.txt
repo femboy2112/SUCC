@@ -1,0 +1,43 @@
+/workspace/scratch/79b9e8091cb9/B_topology_axioms_audit.lean:79:0: warning: automatically included section variable(s) unused in theorem 'ObservationalSUCC.SwarmTopology.full_profile_source_positive_control':
+  [TopologicalSpace O]
+  [DiscreteTopology O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace O] [DiscreteTopology O] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/scratch/79b9e8091cb9/B_topology_axioms_audit.lean:118:0: warning: automatically included section variable(s) unused in theorem 'ObservationalSUCC.SwarmTopology.thread_profile_left_inverse':
+  [TopologicalSpace O]
+  [DiscreteTopology O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace O] [DiscreteTopology O] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/scratch/79b9e8091cb9/B_topology_axioms_audit.lean:125:0: warning: automatically included section variable(s) unused in theorem 'ObservationalSUCC.SwarmTopology.thread_profile_right_inverse':
+  [TopologicalSpace O]
+  [DiscreteTopology O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [TopologicalSpace O] [DiscreteTopology O] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/scratch/79b9e8091cb9/B_topology_axioms_audit.lean:135:0: warning: automatically included section variable(s) unused in theorem 'ObservationalSUCC.SwarmTopology.profileToThread_continuous':
+  [DiscreteTopology O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DiscreteTopology O] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+/workspace/scratch/79b9e8091cb9/B_topology_axioms_audit.lean:143:0: warning: automatically included section variable(s) unused in theorem 'ObservationalSUCC.SwarmTopology.threadToProfile_continuous':
+  [DiscreteTopology O]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DiscreteTopology O] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+'ObservationalSUCC.SwarmTopology.closure_iff_finite_compatible' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.SwarmTopology.all_compatible_realized_iff_closed_image' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.SwarmTopology.compact_continuous_source_realizes' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.SwarmTopology.inverse_limit_completion_topological_equivalence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.SwarmTopology.finite_alphabet_completion_compact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

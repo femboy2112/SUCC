@@ -1,0 +1,78 @@
+{
+  "boundaries": {
+    "RH_advance": false,
+    "full_suite": "delegated to root integration; immutable baseline reported by root, not rerun by this cohort",
+    "independent_adversarial_agent_review": "pending root cross-review",
+    "lean_run": false,
+    "new_academic_priority": "UNVERIFIED; elementary surviving theorems have classical antecedents",
+    "physical_source_attestation": false
+  },
+  "branch": "research/swarm-c-2026-10-13",
+  "commands": [
+    {
+      "command": "python -m unittest discover -s tests -p 'test_swarm_probability.py' -v",
+      "exit_code": 0,
+      "receipt": "SWM_C_TARGETED_TESTS.txt"
+    },
+    {
+      "command": "python scripts/swarm_probability_probe.py",
+      "exit_code": 0,
+      "receipt": "SWARM_PROBABILITY_RECEIPT.json"
+    },
+    {
+      "byte_identical_archives": 17,
+      "command": "python scripts/verify_provenance.py",
+      "exit_code": 0,
+      "items": 72,
+      "namespace_migrations": 55
+    },
+    {
+      "command": "python scripts/observer_foundations_probe.py",
+      "exit_code": 0,
+      "status": "OBSERVATIONAL_SUCC_FORMAL_FOUNDATIONS"
+    },
+    {
+      "command": "python scripts/ordinal_succ_report_probe.py",
+      "exit_code": 0,
+      "status": "FINITE_ORDINAL_SUCC_SECOND_ORDER_WEIL_PROBE"
+    }
+  ],
+  "date": "2026-10-13",
+  "dossier_fields_each": 10,
+  "dossiers_complete": 8,
+  "missions": {
+    "C17": "PROVED LOCAL",
+    "C18": "PROVED LOCAL",
+    "C19": "CLASSICAL",
+    "C20": "PROVED LOCAL",
+    "C21": "PROVED LOCAL",
+    "C22": "PROVED LOCAL",
+    "C23": "CLASSICAL",
+    "C24": "PROVED LOCAL"
+  },
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "provenance_inspected": {
+    "adaptive_proof_policy_last_commit": "5483f077745cdf31f363ef0da6b96d214188503b",
+    "heuristic_joint_noise_and_martingale_last_commit": "45597a5750971130e3399ed69c03e107bdc28c70",
+    "import_manifest_source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "quantum_records_last_commit": "4e95c4ce9481d79fdd14a777e8eb1abb64d5b594",
+    "sibling_source_aware_amalgamation_blob": "5ef028a6ab3b8fcaae7285101a373fff91a5a29b",
+    "sibling_source_aware_amalgamation_commit": "b2774ca485db4b5b4f7ce92e535220352fb3af2f"
+  },
+  "schema": "SWARM-C-VALIDATION-1",
+  "source_files_sha256": {
+    "observational_succ/swarm_probability.py": "5de26231d72e20dbed0a747a1dcec128b47d12125b2194d861bc943755e79466",
+    "research/2026-10-13/SWARM_ATLAS/C17.md": "6f6b0053b43ff2bba79fd1b07251a8dee6a6e49a134fbe81daafc93f5b5c6f1b",
+    "research/2026-10-13/SWARM_ATLAS/C18.md": "61c66d15f9f751347bbce68a2a80a93e01c00f4b9e43cc2deb9543bb928244a0",
+    "research/2026-10-13/SWARM_ATLAS/C19.md": "cf4cbfaa974665974a0e06405a16c7238bf91c72024e96f29a3630ec90b2e19b",
+    "research/2026-10-13/SWARM_ATLAS/C20.md": "feaedb6f8337fa8fe967cab5e370d0ae222679a804ac28063ad15d6a66fa57a5",
+    "research/2026-10-13/SWARM_ATLAS/C21.md": "4d24c158f6eea8b25b29911eb9b2386852e3d45274dea4b27cb55af421f0160d",
+    "research/2026-10-13/SWARM_ATLAS/C22.md": "26426437bd90691c0f2c8137fb6068f076db5075f0bce811634eff848d63e11e",
+    "research/2026-10-13/SWARM_ATLAS/C23.md": "16b98da29f8930db724891339f44b9e91aeded585286e89f3700da6692a69860",
+    "research/2026-10-13/SWARM_ATLAS/C24.md": "1fa5b4ab4f0ed746f576b52960d7800d4f7a11ca779b7503e7e046f751da672f",
+    "scripts/swarm_probability_probe.py": "336404727ac12577adb23189546f71868a81ee5e4821439578e4b04681393e43",
+    "tests/test_swarm_probability.py": "60c090b1091dae6ca4ff595b6674bcb35ece63fe0dbec941b6045f1ee78481ea"
+  },
+  "targeted_test_result": "PASS",
+  "targeted_tests": 33
+}

@@ -1,0 +1,454 @@
+{
+  "E33": {
+    "affine_order": [
+      24,
+      19
+    ],
+    "odd_prime_clock_12_offsets": [
+      0,
+      6
+    ],
+    "with_prime_two_offsets": [
+      0
+    ]
+  },
+  "E34": {
+    "factor_square_36": [
+      [
+        1,
+        36
+      ],
+      [
+        2,
+        18
+      ],
+      [
+        3,
+        12
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        6,
+        6
+      ]
+    ],
+    "v2_factorial100": 97
+  },
+  "E35": {
+    "continuous_polynomial_next": 1,
+    "continuous_polynomial_prefix": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "discontinuous_spike_exponent": 4,
+    "discontinuous_spike_first": 81,
+    "finite_prefix_selects_continuity": false,
+    "spike_value": 1,
+    "value_at_zero": 0,
+    "zero_prefix": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "E36": {
+    "b6_fake": {
+      "im": "0",
+      "re": "1"
+    },
+    "chi5": {
+      "conductor_periodicity_defects": [],
+      "coprime_multiplicativity_defects": [],
+      "degree_one_ray_defects": [],
+      "global_Euler_or_RH_claim": false,
+      "mixed_log_support": [],
+      "scope": "complete supplied coefficients 1..64",
+      "unit_or_ramification_defects": []
+    },
+    "fake6": {
+      "conductor_periodicity_defects": null,
+      "coprime_multiplicativity_defects": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "degree_one_ray_defects": [],
+      "global_Euler_or_RH_claim": false,
+      "mixed_log_support": [
+        6,
+        12,
+        18,
+        30,
+        36,
+        42,
+        60
+      ],
+      "scope": "complete supplied coefficients 1..64",
+      "unit_or_ramification_defects": []
+    },
+    "mixture5": {
+      "conductor_periodicity_defects": null,
+      "coprime_multiplicativity_defects": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          13
+        ],
+        [
+          2,
+          17
+        ],
+        [
+          2,
+          23
+        ],
+        [
+          2,
+          27
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          13
+        ],
+        [
+          3,
+          17
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          13,
+          3
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          23,
+          2
+        ],
+        [
+          27,
+          2
+        ]
+      ],
+      "degree_one_ray_defects": [
+        4,
+        9,
+        16,
+        49,
+        64
+      ],
+      "global_Euler_or_RH_claim": false,
+      "mixed_log_support": [
+        6,
+        14,
+        21,
+        26,
+        34,
+        36,
+        39,
+        46,
+        51
+      ],
+      "scope": "complete supplied coefficients 1..64",
+      "unit_or_ramification_defects": []
+    },
+    "nonunit2": {
+      "conductor_periodicity_defects": null,
+      "coprime_multiplicativity_defects": [],
+      "degree_one_ray_defects": [],
+      "global_Euler_or_RH_claim": false,
+      "mixed_log_support": [],
+      "scope": "complete supplied coefficients 1..64",
+      "unit_or_ramification_defects": [
+        2
+      ]
+    },
+    "phase2": {
+      "conductor_periodicity_defects": [
+        1,
+        2,
+        3,
+        6,
+        8,
+        9,
+        13,
+        14,
+        17,
+        18,
+        19,
+        21,
+        22,
+        24,
+        26,
+        27,
+        29,
+        32,
+        33,
+        34,
+        37,
+        38,
+        41,
+        42,
+        46,
+        49,
+        51,
+        53,
+        54,
+        56,
+        57,
+        58
+      ],
+      "coprime_multiplicativity_defects": [],
+      "degree_one_ray_defects": [],
+      "global_Euler_or_RH_claim": false,
+      "mixed_log_support": [],
+      "scope": "complete supplied coefficients 1..64",
+      "unit_or_ramification_defects": []
+    },
+    "zeta": {
+      "conductor_periodicity_defects": [],
+      "coprime_multiplicativity_defects": [],
+      "degree_one_ray_defects": [],
+      "global_Euler_or_RH_claim": false,
+      "mixed_log_support": [],
+      "scope": "complete supplied coefficients 1..64",
+      "unit_or_ramification_defects": []
+    }
+  },
+  "E37": {
+    "boundary_defect": "3/10",
+    "defect": "3/10",
+    "finite_recurrence_exact": false,
+    "ratio": "17/10",
+    "target": "2"
+  },
+  "E38": {
+    "b6_sign6": {
+      "im": "0",
+      "re": "-2"
+    },
+    "b6_zeta": {
+      "im": "0",
+      "re": "0"
+    },
+    "covariance_sign6": [
+      [
+        "35289016956244185187631651115383341292923930305276325538/31455778332205722712454764758010636910450026969614482601",
+        "-463106167469645147057441516089427879981053190944682440/10485259444068574237484921586003545636816675656538160867"
+      ],
+      [
+        "-463106167469645147057441516089427879981053190944682440/10485259444068574237484921586003545636816675656538160867",
+        "1359309615887301626253179908196751259764597240190016060/3495086481356191412494973862001181878938891885512720289"
+      ]
+    ],
+    "covariance_zeta": [
+      [
+        "35289016956244185187631651115383341292923930305276325538/31455778332205722712454764758010636910450026969614482601",
+        "-463106167469645147057441516089427879981053190944682440/10485259444068574237484921586003545636816675656538160867"
+      ],
+      [
+        "-463106167469645147057441516089427879981053190944682440/10485259444068574237484921586003545636816675656538160867",
+        "1359309615887301626253179908196751259764597240190016060/3495086481356191412494973862001181878938891885512720289"
+      ]
+    ],
+    "determinant": "25543647289896568010665897860573979955304989636264718814416267153385396006018858040/58807050658108664658220455777119410052963581609645066696328444551772873493969284217",
+    "same_covariance": true
+  },
+  "E39": {
+    "1": {
+      "closed": true,
+      "coordinate_extrema": [
+        1,
+        2,
+        1,
+        2
+      ],
+      "vertices": 3
+    },
+    "2": {
+      "closed": true,
+      "coordinate_extrema": [
+        -11,
+        11,
+        -11,
+        11
+      ],
+      "vertices": 100
+    },
+    "4": {
+      "closed": true,
+      "coordinate_extrema": [
+        -42,
+        42,
+        -42,
+        42
+      ],
+      "vertices": 720
+    }
+  },
+  "E40": [
+    {
+      "numerator_zero": "6/5",
+      "projection_changes_source_spectrum": false,
+      "source_poles": [
+        "1",
+        "2"
+      ],
+      "zero_is_uncancelled": true
+    },
+    {
+      "numerator_zero": "3/2",
+      "projection_changes_source_spectrum": false,
+      "source_poles": [
+        "1",
+        "2"
+      ],
+      "zero_is_uncancelled": true
+    },
+    {
+      "numerator_zero": "9/5",
+      "projection_changes_source_spectrum": false,
+      "source_poles": [
+        "1",
+        "2"
+      ],
+      "zero_is_uncancelled": true
+    }
+  ],
+  "analytic_continuation_constructed": false,
+  "completed_Weil_positivity_claim": false,
+  "nontrivial_zeros_input": false,
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "scope": "exact finite supplied mathematical sources; no physical attestation"
+}

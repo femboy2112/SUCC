@@ -1,7 +1,7 @@
 # Compact causal policies: actualization also bounds total termination
 
 Parent: `5eb09e7cba36ec01b8f9d6834b78b5766fd93935`.
-Claim `SWM-ROOT-01`: CLASSICAL / PROVED LOCAL, topology proof below; full policy semantics not kernel formalized.
+Claim `SWM-ROOT-01`: CLASSICAL / PROVED LOCAL, topology proof below; the compact open-cover stopping core is LEAN-KERNEL PROVED in `formal/swarm_topology/SwarmPolicyCompactness.lean`; full policy semantics not kernel formalized.
 
 ## Objects and exact theorem
 

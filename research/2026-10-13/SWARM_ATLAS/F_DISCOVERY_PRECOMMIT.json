@@ -1,0 +1,22 @@
+{
+  "schema": "succ-swm-f-heldout-design-v1",
+  "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "sibling": "b2774ca485db4b5b4f7ce92e535220352fb3af2f",
+  "learner": "generic reverse pair-graph BFS, independently checked by forward Moore refinement",
+  "learner_inputs": ["complete opaque state transition tables", "readout table"],
+  "engineered_inputs": ["finite state cardinality", "typed action/readout signature", "word composition", "quotient constructor", "permutation algebra/commutator miner"],
+  "family_holdouts": [{"prime": 2, "label_seed": 20261013}, {"prime": 5, "label_seed": 987654}],
+  "out_of_family_holdout": {"family": "dihedral action on five vertices", "label_seed": 424242},
+  "source_mutation": "remove y-to-z action coupling while retaining the same carrier cardinality",
+  "fresh_word_lengths": [17, 31, 79],
+  "fresh_word_seed": 137137,
+  "predictions": {
+    "nonzero_coupling": "p^2 minimal observer states; action algebra p^3; central order-p commutator",
+    "zero_coupling": "p minimal observer states; trivial action algebra",
+    "dihedral": "five minimal states; ten transformations; trivial center; noncentral order-five commutator"
+  },
+  "pass": "independent pair/Moore quotients agree, exact fresh words descend, all three predeclared profiles distinguish",
+  "fail": "a quotient square or exact prediction is false",
+  "ambiguous": "resource cap prevents complete finite verification",
+  "scope": "programmer-selected mathematical source families; no empirical authentication, unrestricted category invention, or new-human-theorem claim"
+}
