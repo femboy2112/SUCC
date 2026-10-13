@@ -10,7 +10,7 @@ The maintainer's original goal is not to pick from a fixed library forever: E sh
 2. **Counterexample-driven evolution:** exact source probes reject specific model predictions and preserve no-good clauses. Failed bijections enable a functor grammar; nonflat scalar constraints enable a covering-space grammar. Seeded monotone-map genetic mutation/crossover remains independent of the exhaustive certification oracle.
 3. **Dependent source probability:** sharp posterior intervals over unknown conditional Frechet couplings, plus explicit conditional second receipts. No arbitrary multiplication of marginals.
 4. **Partial/noisy/delayed state-changing sources:** incomplete source tables retain rival models; blind held-back source rows test honest prediction sets; delayed event receipts retain their original epoch. A real state-changing causal transport square is *still open*.
-5. **Formal verification:** a self-contained Lean 4.14.0 proof now **passes kernel checking** for monotone composition, adjunction unit/counit, and right-adjoint uniqueness ([push run 38346981020](https://github.com/femboy2112/SUCC/actions/runs/38346981020), pinned commit `bab34a1158054da3130e44b8086f9bd156ae7af5`). The other categorical and covering-space theorems are **not yet kernel-formalized**. Independent brute-force oracles are executable in Python.
+5. **Formal verification:** a self-contained Lean 4.14.0 proof **passes kernel checking** for monotone composition, adjunction unit/counit, right-adjoint uniqueness, **and the sufficient order-quotient universal factorization theorem** ([push run 38347352136](https://github.com/femboy2112/SUCC/actions/runs/38347352136), commit `507ffca25464fea502f4cf449ca4966b8ebb729f`). Covering-space and source-changing theorems are **not yet kernel-formalized**. Independent brute-force oracles are executable in Python.
 6. **Unknown-target invariant:** an independent seeded 8-to-4 chain source (165 admissible monotone maps) fixes a mapping unknown to the genetic proposal generator. Its fibers, right adjoint and sealed suffix prediction set are reconstructed. This is a source-relative finite unknown *value*, not a newly invented general theorem.
 7. **Moonshot (bounded):** an obstruction changes the admissible kind of object, not just its coefficients. Poset quotient/adjunction and minimal holonomy covers are certified representation births. The grammar families themselves are programmer-supplied, so completely automatic new-mathematics invention is UNVERIFIED.
 
@@ -88,7 +88,7 @@ For both reports yes, posterior(H)=π t_H/(π t_H+(1−π)t_K), provided the obs
 
 ## Formalization and evidence ledger
 
-The standalone `formal/EODCS_OrderAdjunction.lean` was compiled and checked by the **Lean 4.14.0 kernel** in [successful CI run 38346981020](https://github.com/femboy2112/SUCC/actions/runs/38346981020) at `bab34a1158054da3130e44b8086f9bd156ae7af5`, with explicit relation hypotheses and no `sorry`/`admit`. The four formal statements are monotone composition, adjunction unit, adjunction counit and uniqueness of right adjoints. **This does not kernel-verify the covering-space or CEGIS correctness theorems**; those retain their pen-and-paper general proofs and finite computational checks. `scripts/eodcs_probe.py` itself makes no dynamic claim to have invoked Lean.
+The standalone `formal/EODCS_OrderAdjunction.lean` was compiled and checked by the **Lean 4.14.0 kernel** in [successful CI run 38346981020](https://github.com/femboy2112/SUCC/actions/runs/38346981020) at `bab34a1158054da3130e44b8086f9bd156ae7af5`, with explicit relation hypotheses and no `sorry`/`admit`. The five formal statements are monotone composition, adjunction unit, adjunction counit, uniqueness of right adjoints, and the sufficient universal factorization condition for surjective order-lifting functors. A source-typed formalization of the synthesis algorithm is still absent. **This does not kernel-verify the covering-space or CEGIS correctness theorems**; those retain their pen-and-paper general proofs and finite computational checks. `scripts/eodcs_probe.py` itself makes no dynamic claim to have invoked Lean.
 
 Python reproducibility:
 - python -m unittest discover -s tests -p 'test_eodcs_*.py' -v
@@ -100,7 +100,7 @@ The experiment preserves immutable historical imports, old defaults, and source 
 
 | Result | Claim status | Key limitations |
 |---|---|---|
-| Functors, natural transformations, Galois adjunctions | CLASSICAL / finite proof + exact oracle | Lean-kernel checked on composition, unit/counit, right-adjoint uniqueness only |
+| Functors, natural transformations, Galois adjunctions | CLASSICAL / finite proof + exact oracle | Lean-kernel checked composition, unit/counit, right-adjoint uniqueness and sufficient order-quotient factorization |
 | Source-complete nonbijective bridge | PROVED LOCAL / declared full table | Not authenticated physical source |
 | Witness-guided grammar expansion and genetic proposals | OBSERVED finite algorithm | Incomplete open-world mathematics |
 | Sealed blind source suffix | TESTED mathematical holdout | No independent real-world source |
