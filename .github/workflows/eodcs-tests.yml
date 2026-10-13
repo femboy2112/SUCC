@@ -6,6 +6,7 @@ on:
       - 'research/eodcs-*'
       - 'research/voyager-*'
       - 'research/carrier-indexed-*'
+      - 'research/positive-carrier-*'
   pull_request:
     paths:
       - 'observational_succ/voyager_*.py'
@@ -18,6 +19,13 @@ on:
       - 'tests/test_eodcs_*.py'
       - 'observational_succ/carrier_indexed.py'
       - 'scripts/carrier_indexed_probe.py'
+      - 'observational_succ/carrier_realization.py'
+      - 'scripts/positive_carrier_probe.py'
+      - 'research/2026-10-13/POSITIVE_CARRIER_RECEIPT.json'
+      - 'observational_succ/carrier_field_of_definition.py'
+      - 'observational_succ/carrier_lawful_profile.py'
+      - 'scripts/positive_carrier_ii_probe.py'
+      - 'research/2026-10-13/POSITIVE_CARRIER_II_RECEIPT.json'
       - 'scripts/eodcs_probe.py'
       - '.github/workflows/eodcs-tests.yml'
   workflow_dispatch:
@@ -88,3 +96,11 @@ jobs:
         run: |
           python scripts/carrier_indexed_probe.py > "$RUNNER_TEMP/carrier-indexed.json"
           diff -u research/2026-10-13/CARRIER_INDEXED_SOURCE_RECEIPT.json "$RUNNER_TEMP/carrier-indexed.json"
+      - name: Reproduce exact frozen positive-carrier realization receipt
+        run: |
+          python scripts/positive_carrier_probe.py > "$RUNNER_TEMP/positive-carrier.json"
+          diff -u research/2026-10-13/POSITIVE_CARRIER_RECEIPT.json "$RUNNER_TEMP/positive-carrier.json"
+      - name: Reproduce exact frozen positive-carrier Part II receipt (field of definition, ghost freedom)
+        run: |
+          python scripts/positive_carrier_ii_probe.py > "$RUNNER_TEMP/positive-carrier-ii.json"
+          diff -u research/2026-10-13/POSITIVE_CARRIER_II_RECEIPT.json "$RUNNER_TEMP/positive-carrier-ii.json"

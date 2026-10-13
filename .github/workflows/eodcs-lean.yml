@@ -6,6 +6,7 @@ on:
       - 'research/eodcs-*'
       - 'research/voyager-*'
       - 'research/carrier-indexed-*'
+      - 'research/positive-carrier-*'
   pull_request:
     paths:
       - 'formal/EODCS_*.lean'
