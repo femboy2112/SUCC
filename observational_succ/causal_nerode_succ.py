@@ -264,6 +264,47 @@ def audit_original_claim(action: CausalInstrument,
                       p and q and mismatch is None and descending)
 
 
+@dataclass(frozen=True)
+class PartialSourceAudit:
+    observed_states: tuple[str, ...]
+    omitted_states: tuple[str, ...]
+    sample_consistent: bool
+    sample_obstruction: FiberObstruction | None
+    globally_certified_from_sample: bool
+    suggested_new_source_probe: str | None
+    cannot_infer_unseen_source_truth: bool = True
+
+
+def partial_causal_audit(action: CausalInstrument,
+                         observed_states: tuple[str, ...]) -> PartialSourceAudit:
+    """Use only exposed paired receipts to test whether a V *could* descend.
+
+    A partially exposed table never promotes empirical or source-global
+    correctness. The next proposed state is an address for a hypothetical
+    permitted probe, not a query executed by this function.
+    """
+    if (type(observed_states) is not tuple
+            or len(set(observed_states)) != len(observed_states)
+            or any(s not in action.before.states for s in observed_states)):
+        raise SourceTransportError("Sampling needs distinct licensed source addresses")
+    omitted = tuple(s for s in action.before.states if s not in observed_states)
+    witness = None
+    for i, s in enumerate(observed_states):
+        for t in observed_states[i+1:]:
+            if (action.before.report(s) == action.before.report(t)
+                    and action.future_report(s) != action.future_report(t)):
+                witness = FiberObstruction(s,t,action.before.report(s),
+                                           action.future_report(s),
+                                           action.future_report(t))
+                break
+        if witness is not None:
+            break
+    return PartialSourceAudit(
+        observed_states,omitted,witness is None,witness,
+        not omitted and witness is None,omitted[0] if omitted else None,
+    )
+
+
 def causal_repair_demo() -> dict[str, Any]:
     states = ("00", "01", "10", "11")
     # An observer reports only the first bit; the source update exchanges
