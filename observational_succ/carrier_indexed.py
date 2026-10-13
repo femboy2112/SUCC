@@ -495,6 +495,149 @@ def minimal_stationary_repair(
     raise AssertionError("Finite complete carrier should stabilize in at most |C| steps")
 
 
+@dataclass(frozen=True)
+class OneStepCarrierRepair:
+    before: CarrierQuotient
+    after: CarrierQuotient
+    old_classes: int
+    refined_classes: int
+    new_information_classes: int
+    all_declared_one_step_squares_commute: bool
+
+
+def repair_one_step(
+        before: CarrierQuotient,
+        instruments: tuple[tuple[CarrierInstrument, CarrierQuotient], ...]
+        ) -> OneStepCarrierRepair:
+    """Universally COARSEST old-view refinement jointly determining
+    enabledness and every supplied successor receipt/q' law.
+
+    A successor quotient might need additional repair tomorrow. This is
+    the canonical ONE-STEP repair, not a claim of global dynamic closure.
+    """
+    if type(instruments) is not tuple or not instruments:
+        raise CarrierError("At least one source-backed successor chart required")
+    signatures = []
+    for c in range(before.stage.count):
+        pieces = []
+        for instrument, next_view in instruments:
+            if instrument.before != before.stage or instrument.after != next_view.stage:
+                raise CarrierError("Cross-source or mismatched future report in repair")
+            pieces.append((instrument.name, instrument.enabled[c],
+                           _joint_signature(instrument,c,next_view)
+                           if instrument.enabled[c] else ()))
+        signatures.append((before.labels[c],tuple(pieces)))
+    distinct: dict[tuple,int] = {}
+    labels=tuple(distinct.setdefault(s,len(distinct)) for s in signatures)
+    refined=CarrierQuotient(before.stage,labels,before.view+":joint-repaired")
+    if any(not audit_descent(inst,refined,after).valid
+           for inst,after in instruments):
+        raise AssertionError("Canonical source-indexed one-step repair still violates a square")
+    return OneStepCarrierRepair(
+        before,refined,len(set(before.labels)),len(set(labels)),
+        len(set(labels))-len(set(before.labels)),True)
+
+
+@dataclass(frozen=True)
+class CarrierStep:
+    instrument: CarrierInstrument
+    before_view: CarrierQuotient
+    after_view: CarrierQuotient
+    actual_receipt: Hashable
+
+
+@dataclass(frozen=True)
+class HistoryTransportCertificate:
+    source_id: str
+    original_count: int
+    actual_history_length: int
+    public_trace: tuple[tuple[str, Hashable], ...]
+    fine_path_probability: Q
+    coarse_path_probability: Q
+    original_posterior: tuple[Q, ...]
+    original_support: frozenset[Hashable]
+    evidence_equal_at_every_prefix: bool
+    original_joint_law_equal_at_every_prefix: bool
+    original_target_transport_valid: bool
+    no_physical_counterfactual_claimed: bool = True
+
+
+def transport_actual_history(root: Carrier,
+                             initial_view: CarrierQuotient,
+                             sequence: tuple[CarrierStep, ...],
+                             *, original_target: tuple[Hashable, ...] | None = None
+                             ) -> HistoryTransportCertificate:
+    """Compose explicitly typed *actual history* squares.
+
+    Diagram:
+        J_h(X,C) -- K_a^z --> J_(h+1)(X,C')
+          | id_X × q                | id_X × q'
+          v                         v
+        q_* J_h  -- (q K_a)^z --> q'_* J_(h+1)
+
+    Every square is checked at the level of the UNNORMALIZED joint
+    probability, before normalization. The original X index persists.
+    Adaptivity is allowed when both sides choose the same next action
+    from their common public receipt history; this routine validates one
+    actually specified branch and cannot assert the inaccessible others.
+    """
+    if root.stage != initial_view.stage or type(sequence) is not tuple:
+        raise CarrierError("Original source and initial carrier quotient mismatch")
+    fine=root.root()
+    coarse=initial_view.root(root).root()
+    expected_before=initial_view
+    both_evidence=True
+    both_joint=True
+    for step in sequence:
+        if type(step) is not CarrierStep or step.before_view != expected_before:
+            raise CarrierError("History has an unlicensed source-indexed comparison")
+        instrument=step.instrument
+        quotient=checked_descent(instrument,step.before_view,step.after_view)
+        fine=fine.advance(instrument,step.actual_receipt)
+        coarse=coarse.advance(quotient,step.actual_receipt)
+        if fine.evidence != coarse.evidence:
+            both_evidence=False
+            raise AssertionError("Lawful exact carrier square lost evidence probability")
+        if step.after_view.push(fine.mass)!=coarse.mass:
+            both_joint=False
+            raise AssertionError("Lawful exact carrier square lost original/current joint law")
+        if fine.original_posterior != coarse.original_posterior:
+            raise AssertionError("Lawful exact quotient changed original-source posterior")
+        expected_before=step.after_view
+    if original_target is not None:
+        fine_verdict=fine.decide_original(original_target)
+        coarse_verdict=coarse.decide_original(original_target)
+        if fine_verdict != coarse_verdict:
+            raise AssertionError("Original-source proof support lost")
+    return HistoryTransportCertificate(
+        root.stage.source_id,len(root.originals),len(sequence),
+        tuple((e.action,e.receipt) for e in fine.events),
+        fine.evidence,coarse.evidence,fine.original_posterior,
+        fine.originals_supported,both_evidence,both_joint,
+        original_target is None or fine.decide_original(original_target)==
+            coarse.decide_original(original_target))
+
+
+def original_support_is_monotone(history: ActualHistory,
+                                 steps: tuple[CarrierInstrument, ...],
+                                 receipts: tuple[Hashable, ...]) -> bool:
+    """Actual events cannot introduce new original-source possibilities.
+
+    This checks prefix support by FORWARD REPLAY, not by a fictitious
+    inverse of a destructive carrier action.
+    """
+    if len(steps)!=len(receipts):
+        raise CarrierError("Receipt/path contracts differ")
+    current=history
+    support=current.originals_supported
+    for a,receipt in zip(steps,receipts):
+        current=current.advance(a,receipt)
+        if not current.originals_supported.issubset(support):
+            raise AssertionError("Original source resurrected after a lawful observation")
+        support=current.originals_supported
+    return True
+
+
 def from_deterministic_lawful_source(source, prior: tuple[Q, ...]):
     """Lossless adapter for SWM F48's LawfulSource, with EXPLICIT prior.
 
