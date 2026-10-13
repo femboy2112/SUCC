@@ -1,0 +1,1270 @@
+{
+  "EOS": "b2774ca485db4b5b4f7ce92e535220352fb3af2f",
+  "EOS_code_imported": false,
+  "EOS_only_added_files": 19,
+  "Lean_executed_locally": false,
+  "VOYAGER": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "all_differing_files": [
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 1872,
+        "git_blob": "c71b0d156b64d533d466ad9f8113eb83540170cc",
+        "sha256": "977d4583d0428596a6fde6961809117b646d848b793b0c7a3920a4fd2e434869"
+      },
+      "base": null,
+      "path": ".github/workflows/eodcs-lean.yml",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 3870,
+        "git_blob": "2402edb9bed7c3b77011a28906d3b538ae6f8071",
+        "sha256": "84f14af6b15aa4c0025697e148614de880db51245971aa1467690e65a2ffc577"
+      },
+      "base": null,
+      "path": ".github/workflows/eodcs-tests.yml",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": {
+        "bytes": 2663,
+        "git_blob": "779b4af99f7450577669af52b8e3880b1ef2c690",
+        "sha256": "34be115c852b94f1d9d930833b0de8e1f1324f4d346da94b9a130dfc13dc4dd1"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": ".github/workflows/obstruction-synthesis.yml",
+      "review": "Keep separate Lean4.19 lane and false-theorem control; do not alter root4.14 pin.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 55299,
+        "git_blob": "a13d8eaa53fe9017612b5504289e74d9f1c9e857",
+        "sha256": "0abea87b4035f99b320d4bcfa5e6870e418f0fd8618c4e241b3d7331ec27bf3a"
+      },
+      "VOYAGER": {
+        "bytes": 63869,
+        "git_blob": "2699f17948ee0edafb3dc428f7650e5ae999e4de",
+        "sha256": "420cfd82da606e0b379f77f222602a28dc5b27474fb13702f2a10b0cff8504f3"
+      },
+      "base": {
+        "bytes": 55299,
+        "git_blob": "a13d8eaa53fe9017612b5504289e74d9f1c9e857",
+        "sha256": "0abea87b4035f99b320d4bcfa5e6870e418f0fd8618c4e241b3d7331ec27bf3a"
+      },
+      "path": "README.md",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "M"
+    },
+    {
+      "EOS": {
+        "bytes": 82365,
+        "git_blob": "701816ab817b4cbe0b0177638243092f76f7541a",
+        "sha256": "64c4df1cd92d797cade0f6f6a768fa7f86c3f7153ced4455ef6ac814de8787b8"
+      },
+      "VOYAGER": {
+        "bytes": 91461,
+        "git_blob": "8a0e20ec455274c478df38daa9e4b7e804f9079b",
+        "sha256": "ebf52ee203ad1068fb5f6358a20b98fed17dd1d0123db1b46004c9f8716744c5"
+      },
+      "base": {
+        "bytes": 82365,
+        "git_blob": "701816ab817b4cbe0b0177638243092f76f7541a",
+        "sha256": "64c4df1cd92d797cade0f6f6a768fa7f86c3f7153ced4455ef6ac814de8787b8"
+      },
+      "path": "docs/ARCHITECTURE.md",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "M"
+    },
+    {
+      "EOS": {
+        "bytes": 208339,
+        "git_blob": "f4e5e139b524954a409efd7cd0b75c41696fa89c",
+        "sha256": "587f38b3abc7b8e10ad1d5c3eb6fc43c151e19a61db2097ff01eb41d8d95b129"
+      },
+      "VOYAGER": {
+        "bytes": 235212,
+        "git_blob": "f0dc83d9e2d37874e35932db72570ddeba044684",
+        "sha256": "207a4a6390239c76da4f378c22a60aee2b442dda005ac6ebd8a0d9e441fce790"
+      },
+      "base": {
+        "bytes": 208339,
+        "git_blob": "f4e5e139b524954a409efd7cd0b75c41696fa89c",
+        "sha256": "587f38b3abc7b8e10ad1d5c3eb6fc43c151e19a61db2097ff01eb41d8d95b129"
+      },
+      "path": "docs/CLAIM_LEDGER.md",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "M"
+    },
+    {
+      "EOS": {
+        "bytes": 5124,
+        "git_blob": "bf0a5f05e7e23633575536211cf237574919d03a",
+        "sha256": "05d2d17d78457239cd6d4f7acf24a2e044ca1a50e8fb7765ce684ac17caef456"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "docs/CLAIM_SUPPLEMENT_EVOLUTIONARY_SYNTHESIS.md",
+      "review": "Reference namespaced EOS IDs; compare semantics before any ledger integration.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 4822,
+        "git_blob": "efd0fd57234d4521a2d1f31b80d1c9feeb122efc",
+        "sha256": "2ff493e948369bdc63d295cab4f627325189b8155805c8b009f2469503de73cf"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "docs/EVOLUTIONARY_OBSTRUCTION_SYNTHESIS.md",
+      "review": "Preserve as sibling entry point if individual results are later ported.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 86834,
+        "git_blob": "8d9a4f485dad2239a81788a2f42b4eca329ef2ac",
+        "sha256": "5efb69b23168f0d74a3d2110698dd3d73f20569f3a0d2e74e55fac965c0fd568"
+      },
+      "VOYAGER": {
+        "bytes": 97250,
+        "git_blob": "21c7faff019a42af9ee7bdd0e33b09c6a04a772c",
+        "sha256": "bb0027f18ffa6cef95688838e905bbb793efd1015bcac09a7153cb7f564eedfe"
+      },
+      "base": {
+        "bytes": 86834,
+        "git_blob": "8d9a4f485dad2239a81788a2f42b4eca329ef2ac",
+        "sha256": "5efb69b23168f0d74a3d2110698dd3d73f20569f3a0d2e74e55fac965c0fd568"
+      },
+      "path": "docs/ROADMAP.md",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "M"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 2384,
+        "git_blob": "2636383587232f261b47d421ea0337b8b615f88f",
+        "sha256": "132643b8cc5b3e07df84d0bba3bfb49c49587563efdbe69c2903ba0280683166"
+      },
+      "base": null,
+      "path": "formal/EODCS_ActionClosure.lean",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 6472,
+        "git_blob": "a8a7878dcb9ccce53d5555998caf35dc9a4763a9",
+        "sha256": "624c5ca37a17e3f69500611f1552c5afbd2640fdd124becab8a9f70482d6b880"
+      },
+      "base": null,
+      "path": "formal/EODCS_CausalDescent.lean",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 3645,
+        "git_blob": "660f38cb2e2f85489c98b0a29c2a0a4e466a41e0",
+        "sha256": "a4fa780c01b21988d35da3ac8eebeb2de5ea099969d6a52dbcebdd8f8cd41c2b"
+      },
+      "base": null,
+      "path": "formal/EODCS_NerodePlateau.lean",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 4076,
+        "git_blob": "f9215e5da8e5fed4934881ca64042b68709bf4f9",
+        "sha256": "8b50a10ee5718e546bcf838f19927d634793decebdbe0deb79cb80f570879ffd"
+      },
+      "base": null,
+      "path": "formal/EODCS_OrderAdjunction.lean",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 8482,
+        "git_blob": "3d5601391dccda0c2c89f695b7c699bb08de6131",
+        "sha256": "d82d9d0dba815541b341ac4614e28c07a7dae1c635a38dcef37bc061f63e0178"
+      },
+      "base": null,
+      "path": "formal/EODCS_RelationalChoice.lean",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 3778,
+        "git_blob": "4328a249e7397e00e15eae4d68b24d21dea32c59",
+        "sha256": "ebd28c1b189f53ce73955b34a2176d365377068998e4760cc2f23a43e331d05f"
+      },
+      "base": null,
+      "path": "formal/EODCS_VoyagerMemoryDebt.lean",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 9385,
+        "git_blob": "c54e6f84f493fdfe8ed05704f5db353b605aeecc",
+        "sha256": "2730ce9aaca114af94ceabcc3f5e2f9491df48fdf317463f65b415a26aaa720c"
+      },
+      "base": null,
+      "path": "formal/EODCS_VoyagerPhantom.lean",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 6591,
+        "git_blob": "ce3ef661647bf53fb06eca6e94c243a2babd5170",
+        "sha256": "81572903530cf56610b3ade66a2b820cc227960cbbfccbb2b8a687a930374e38"
+      },
+      "base": null,
+      "path": "formal/EODCS_VoyagerTrace.lean",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": {
+        "bytes": 3006,
+        "git_blob": "d233b7f5309fb884c91c1be6c31a74092131e589",
+        "sha256": "0c9f0f4d0c3f058abce71946cec18eec71bb04cdb38bb732f4ff210b6c2d2f20"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "formal/obstruction_synthesis/DiscoveredInstance.lean",
+      "review": "p=3 learned tables and 9 finite claims; independently port only in isolated pinned lane.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 6198,
+        "git_blob": "6b42389f6e0cc1cdacb0cdfeac0bb351cc83b6e1",
+        "sha256": "0d6eea37f0442b2e2dc161764e1ab38252bfcf1e145a68f1b21fc0da5abf9a98"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "formal/obstruction_synthesis/RepairKernel.lean",
+      "review": "15 universal declarations; behavioral maximality and repair_fusion add useful explicit specs.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 25,
+        "git_blob": "7aca1d8a939cc24c413eddd793671cdce7070b74",
+        "sha256": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "formal/obstruction_synthesis/lean-toolchain",
+      "review": "4.19.0 local pin; cannot substitute for root4.14.0.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 25,
+        "git_blob": "1e70935f6929925474350e9c03824a9124ef1543",
+        "sha256": "6faf6530819a0bc6d6092a2d9b974ea8e8adfec955d0e51e02e1f82734264d14"
+      },
+      "base": null,
+      "path": "lean-toolchain",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 15592,
+        "git_blob": "23ec18dc94326b9d78cd20691fff31cddf69fe62",
+        "sha256": "0d41180c9a041400e1c781d3578d3f7652242719c5f6e46cdf4028ec779d7ddd"
+      },
+      "base": null,
+      "path": "observational_succ/causal_nerode_succ.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 9881,
+        "git_blob": "d9b26c058ec65a4593e6bb5a5fd921a885473718",
+        "sha256": "746baaf80da382339d0a9b09d00e9f22d26bea997e783b1defb5a5ffd8bbf526"
+      },
+      "base": null,
+      "path": "observational_succ/eodcs_evolutionary_discovery.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 7835,
+        "git_blob": "5dcd900b9a26a2ef38ab0521b62e0dc5f36f794a",
+        "sha256": "61e1dcbd68d77e9ea03ff5b0b81056e7acd3ea1a577ddc37903de0959fd9ed58"
+      },
+      "base": null,
+      "path": "observational_succ/eodcs_genetic_probe_genesis.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 12687,
+        "git_blob": "52ddeba683fa30d357681ca0f311f007e4b3c3aa",
+        "sha256": "11025f6f7953ebdfa9b4cb1f11d8ce37d991a9d79a3d5e65e6489c07bcff913b"
+      },
+      "base": null,
+      "path": "observational_succ/eodcs_multi_action_source.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 12924,
+        "git_blob": "e58c3d2e9e2faf336c4e897faf1479131362f8f1",
+        "sha256": "c4a72ff5060327158326252b72033970fbc0ef198787f37960e0fbccdf228083"
+      },
+      "base": null,
+      "path": "observational_succ/eodcs_relational_choice.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 7136,
+        "git_blob": "6ce02106456fb933ff6aecdba0c762f5958d1b95",
+        "sha256": "348aa6d545bc931ec82fd4975271b3619f2bf5d4c2a1393784c35b1bca32d36e"
+      },
+      "base": null,
+      "path": "observational_succ/eodcs_source_uncertainty.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": {
+        "bytes": 5150,
+        "git_blob": "18600bc529b6d2911a54d3b194238141d9b007ac",
+        "sha256": "0d1422320f324ec1ec0bb43b5b14e81659fa6a2e6485a5737d7b5a336cda074a"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "observational_succ/evolving_bridge_search.py",
+      "review": "Immutable exact-verifier allele constraints; tighter fixed-bijection termination contract.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 19893,
+        "git_blob": "9301bbd23f1bcce02cc89291a40cd73508a5c054",
+        "sha256": "9f74a578de8b891762aff44c7380ab819abb1eedf4866343aff01183ffcb441d"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "observational_succ/evolving_observer_categories.py",
+      "review": "Generated tests and terminal behavioral quotient; shares scope with causal multi-action minimization.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 11265,
+        "git_blob": "f04a474a5ee781fdea25f5cb2cd1e3b419c81340",
+        "sha256": "29250d4c790d8298f328f9298c0a0a19687cb8a94a4a0ee1e9b1ce93b7acbbc5"
+      },
+      "base": null,
+      "path": "observational_succ/finite_poset_synthesis.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 12084,
+        "git_blob": "4a833713249a7dfb2a19202dd7a4afe586b6def9",
+        "sha256": "16fa756fe170b589877e38fa7257623a79fdc406a0454812ca6422fe314d12e6"
+      },
+      "base": null,
+      "path": "observational_succ/nerode_probe_growth.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": {
+        "bytes": 6648,
+        "git_blob": "8950686bccefd0ba270b5a28a4ed72dbd408c07e",
+        "sha256": "b361d30f1bf4c000ec38f307cca5bc1a3a37ec68205292f3351efabef7d48e2d"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "observational_succ/obstruction_discovery_lab.py",
+      "review": "Opaque indices but programmer-selected Heisenberg family and fixed commutator miner; independent derivation required.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 15379,
+        "git_blob": "5ef028a6ab3b8fcaae7285101a373fff91a5a29b",
+        "sha256": "f0ab9200ae2718bb29036e6d55803280340fd6d7f9dbd12280b1b4088ef20f9a"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "observational_succ/source_aware_amalgamation.py",
+      "review": "Exact Markov coupling and original/current filtering; complements Frechet ambiguity, does not replace it.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 17391,
+        "git_blob": "b4d2676ffb627af95b9200bb7d913f14fafa630b",
+        "sha256": "0fd4395cfe3678c1f27a36f05f2d50a4326cca00b09c21e45382627eaf01b59d"
+      },
+      "base": null,
+      "path": "observational_succ/voltage_cover_synthesis.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 7789,
+        "git_blob": "7ac0ac7bae1d5736e5f36ad702d74cc8cb4a7f5c",
+        "sha256": "dca7dfdd29b5cf5532ffd76158512f2cd6610604ea1c92526f4da74379b0b4fd"
+      },
+      "base": null,
+      "path": "observational_succ/voyager_adaptive_no_go.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 16481,
+        "git_blob": "962b5d882c3d21ba57d447c7cb58ee538385026a",
+        "sha256": "9971e3b4dc389963be322bd96ddedb8ad2cbe2e5c2e4dcea2913f0485195ea34"
+      },
+      "base": null,
+      "path": "observational_succ/voyager_profinite_frontier.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": {
+        "bytes": 1010,
+        "git_blob": "8bc0b411e2730ad84a83ea0a2acd986a83345c9c",
+        "sha256": "e4bdefedc6f296d4420a2412e7cea3fe4e9b45c17add075dfa4ce0f46921e299"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "research/2026-10-13/DISCOVERY_PRECOMMIT.json",
+      "review": "Design precedes implementation holdouts; same source family remains common provenance.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 22914,
+        "git_blob": "910b6fbe6afd0411a242f7f2dbe0df7493b0f50a",
+        "sha256": "deac624536126fdf1ee4e7678a177877f7309a82875863bdb2950d1cd5b10685"
+      },
+      "base": null,
+      "path": "research/2026-10-13/EODCS_CAUSAL_NERODE_PROBE_GENESIS.md",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 3736,
+        "git_blob": "727b68d0b2b2289dec53f6c4038e35b29834a847",
+        "sha256": "18cc8360ec8f9ca6c607bb8ae98c5ef18991240ce129ee55483fbb66dfed461b"
+      },
+      "base": null,
+      "path": "research/2026-10-13/EODCS_CAUSAL_PROBE_RECEIPT.json",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 7853,
+        "git_blob": "51000882a9452df55f91e169039cb3ea5ff067b4",
+        "sha256": "838ddd9d934370d48ced562a33c7aaf1984be4cca86bb162310a437745998440"
+      },
+      "base": null,
+      "path": "research/2026-10-13/EODCS_RELATIONAL_MODAL_ENVELOPES.md",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 2142,
+        "git_blob": "add418bcce27410303744093a180a3e448cd7f11",
+        "sha256": "a919064bbe0fe763b956b01fe742e99cead031ec1501b97402d83ccd70dc03c9"
+      },
+      "base": null,
+      "path": "research/2026-10-13/EODCS_RELATIONAL_MODAL_RECEIPT.json",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 19893,
+        "git_blob": "0e0d5abfc8d5959effe522ae947b8edeb34e6391",
+        "sha256": "dc37cd6abd52faa3454a7992686c46fd26921dfbe0dff9cf78f6469d754f49a4"
+      },
+      "base": null,
+      "path": "research/2026-10-13/EVOLUTIONARY_OBSTRUCTION_DRIVEN_CATEGORICAL_SYNTHESIS.md",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": {
+        "bytes": 6671,
+        "git_blob": "d8be49f9f594f869ff3955263c11fc3b63777115",
+        "sha256": "4addbf7f6f21b78d4cc2034f0125b96bbcbd93a851732c3b977c58b73c489ed5"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "research/2026-10-13/EVOLUTIONARY_OBSTRUCTION_RECEIPT.json",
+      "review": "Frozen exact output and old failure seeds; do not edit or relabel as new independent evidence.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 23844,
+        "git_blob": "d462b779fcfe54ea857dace187308a24b78d91c9",
+        "sha256": "432895d0c773a0c54e36a03d52cae58af8237a93beb7bca89e3dac797cb112f4"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "research/2026-10-13/EVOLUTIONARY_OBSTRUCTION_SYNTHESIS.md",
+      "review": "EO1-EO11 written proofs and scope; no universal Python refinement or priority claim.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 3337,
+        "git_blob": "861f824f9f403d3e8c89d4aed77f9568a73a63f9",
+        "sha256": "bab6f678f51db8b9d47a0b0904bfbdc82453e3b5fa1d0078d02d41a1093a4f92"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "research/2026-10-13/VALIDATION_OBSTRUCTION_SYNTHESIS.json",
+      "review": "Historic local subset and CI receipts; freshly checked exact-head runs are recorded separately.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 1089,
+        "git_blob": "69246cd06557cfb781d0667d02aaf6733b441129",
+        "sha256": "1163d002dfca7b4b5ae00a12e5ed1a12b888c6e8dca16263fa61cbc164e2fda6"
+      },
+      "base": null,
+      "path": "research/2026-10-13/VOYAGER_ADAPTIVE_SOURCE_RECEIPT.json",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 2893,
+        "git_blob": "8e4fc33b287fd091d8ff4f4682196bc4c6149ea8",
+        "sha256": "85bf05e04d752491a86415f31d17909c55ac06dcedc719c044a18443730ddace"
+      },
+      "base": null,
+      "path": "research/2026-10-13/VOYAGER_OBSERVATIONAL_COMPLETION_RECEIPT.json",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 28741,
+        "git_blob": "b85ba82a8157d29108fa63982f9932f83e666b98",
+        "sha256": "bfbd61c2695ac0cf1a726d452a8713b30405dfaca25ecee2353d5b770af0d3a1"
+      },
+      "base": null,
+      "path": "research/2026-10-13/VOYAGER_OBSERVATIONAL_PROFINITE_COMPLETION.md",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 3545,
+        "git_blob": "6434e35e7fa6199317dd480d9d316da1a30a7687",
+        "sha256": "c17a8f07c557ec2586805bb138c473ec2b43328a166b15d927cea92897ac0b54"
+      },
+      "base": null,
+      "path": "scripts/eodcs_causal_probe.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 2247,
+        "git_blob": "0e1eab71d3fd021ef5bbc0580e52f11925325cc6",
+        "sha256": "291009980510b415970031907620a95866048f7a38978d4b4d8397dbbd2d27e9"
+      },
+      "base": null,
+      "path": "scripts/eodcs_probe.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 3030,
+        "git_blob": "89207500d5c54c1bd0f396d1b3da30220cf76b9d",
+        "sha256": "7220a9b2d41fc4fa5711fadab5722b83bab85aca30559b166691d067dda9866f"
+      },
+      "base": null,
+      "path": "scripts/eodcs_relational_probe.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": {
+        "bytes": 5032,
+        "git_blob": "8c51b11e7346c275cc0492a578f38d9a0026d011",
+        "sha256": "c43689c84ae0e2aa649723cf12142f338faf50036b23cc51b4086c24fdde355c"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "scripts/evolutionary_obstruction_probe.py",
+      "review": "Parent helpers and finite simulator replay; importing this is not an independent oracle.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 871,
+        "git_blob": "e999f7b3a74bc66a98944c1571a9d6adffdcfa86",
+        "sha256": "2d3d1d369933dda8bfc2c034e3949de997121cc7d0e05a41801d96e148c514d8"
+      },
+      "base": null,
+      "path": "scripts/voyager_adaptive_probe.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 2025,
+        "git_blob": "2d207e3fec878a6c2dd7a9a2b904b9fae89e2817",
+        "sha256": "8faa0a96dd72203f4b2b09a84f099dc959d8e8b7eabf18a159dcd4d561322ede"
+      },
+      "base": null,
+      "path": "scripts/voyager_observer_probe.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 11898,
+        "git_blob": "a16f7f7bfdd5830139642d870126e598f6d190a3",
+        "sha256": "bd08946477084c844d02b03dcf3274a57dbc05f1b192047c6186c442ac3c7d9c"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_causal_nerode.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 2759,
+        "git_blob": "80f440b9e5bc4893124d45f925b6272ae25a108e",
+        "sha256": "1dd81a9103ebf18212c48c33a868f1a04d7701dad33d63b656c5acbfebbec105"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_causal_receipt.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 5096,
+        "git_blob": "ee0738a605a7f2966d7b7c66e4cc846d271f1401",
+        "sha256": "0aa7fc262f01e7dd1582bbafdedd3cfc8c720b69498c458ba75058fc035ae89f"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_evolutionary_discovery.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 4920,
+        "git_blob": "49536e44b77e31248f0ea64ca49428648b7ed35f",
+        "sha256": "7d030ccedce9b6436f60723230d7c151c24e5209f7f63460c9b8b1495494429b"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_genetic_probe_genesis.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 14015,
+        "git_blob": "e187cc1eddb697d2eb661c5359d7304ad7c66478",
+        "sha256": "88677267cc9e6b29e9883103cd7769df29422d5fff77466b6dde48d470cd12ca"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_holonomy.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 9324,
+        "git_blob": "f758723d562bceecb99f76fd384df015d9f4113e",
+        "sha256": "de07fb90b58ba29c97a7651a4499004ee6cab087e49b9b10a03737bd08eedfc7"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_multi_action.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 7842,
+        "git_blob": "8930356793bc15effdb90b5df7aae9a8f2ddb2a2",
+        "sha256": "16a02f02a3e69858421327d1832aebb276c64b7f1743e114eea5def31df0aff7"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_nerode_probe_growth.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 7193,
+        "git_blob": "38a8d5ad7dddbd9a0940823851138084a7ef1051",
+        "sha256": "ba6a122a50cb1964033c9b8a558948373aa0374baf464406893dd1d36f33a0cf"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_posets.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 1891,
+        "git_blob": "362c80c86de93f4f658d50ae790b84331d314fbc",
+        "sha256": "4cc45d03cac3a0ba080f00ea3fd67fdae70a6789d104688ab1b3c9974f88f82b"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_receipt.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 12400,
+        "git_blob": "8ee2808af64fa4f2377485a208959f9e45a8ccb5",
+        "sha256": "ce52abfbc4f432e643bead041b7c2088c1c66d756b154f2e2b3422d474deef90"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_relational_choice.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 1875,
+        "git_blob": "51ccf023f31dae3c3d92c674943db5e761415159",
+        "sha256": "66c3b827f74b70b3b1f3e8724832c930e402e228277b997058d9d275a7be0453"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_relational_receipt.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 6014,
+        "git_blob": "f66b426b8ba59376b2b6a465e3fc549fc60d2372",
+        "sha256": "7874751797e990951a76a570027ad0a6d69b097c9b45c320ee6eab839d3324d7"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_source_uncertainty.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 5240,
+        "git_blob": "c141c0c4b033242f29724665a6ed292fc16efe38",
+        "sha256": "d0714cd76603be119f8ffeb1fc80179906c4ac4176bef97f52f5a3542b16e5be"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_voyager_adaptive.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 1157,
+        "git_blob": "20945585c619f7e097ecbb23d5949b96a2244f7c",
+        "sha256": "39a193aa50964d98cc43f920eba7c777d05fcd2b35e87728bef067273f9b5a32"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_voyager_adaptive_receipt.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 9552,
+        "git_blob": "d1f19947fe23d1cc8213f777e5603e074b31934f",
+        "sha256": "dab5d7cd7fa4c0b17f2e692bcec7ab1cb5cb06de70dcddd4d5245387f11c9d8a"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_voyager_profinite.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": null,
+      "VOYAGER": {
+        "bytes": 1634,
+        "git_blob": "c7db7cb803212dade3e10b9cf66459dc36cdfa6a",
+        "sha256": "3623d7399d8b06eee3aab0b38600082dbac623c45e274b8e8c7c78b0464504e2"
+      },
+      "base": null,
+      "path": "tests/test_eodcs_voyager_receipt.py",
+      "review": "VOYAGER-only addition/modification: preserve existing implementation, proof lane, receipts and canonical docs; this expedition proposes no overwrite.",
+      "status_EOS_to_VOYAGER": "A"
+    },
+    {
+      "EOS": {
+        "bytes": 10028,
+        "git_blob": "ef0b3894751381294f8699aabb2b822a1e9eb794",
+        "sha256": "e910b2e7ad0ccebd45612375e80e8c199676a8ac5ea5747322322c8a80f8edc2"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "tests/test_evolving_amalgamation.py",
+      "review": "CI/zero-mass/dependence/destructive/delay/replay controls; keep contracts when adapting.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 6714,
+        "git_blob": "422089b0407964d7c72cecb0de1245273ea02d0b",
+        "sha256": "a828416fcc50aa457e95ffbceabe83e618a8a505de056b996e4d2deabde4cf25"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "tests/test_evolving_bridge_discovery.py",
+      "review": "Fixed-bijection counterexample bounds, Heisenberg3/5/7 and stale-toolkit controls.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 8417,
+        "git_blob": "649feb531f85c72487309f446a0720e07dad1c1c",
+        "sha256": "f93870ac5a4ffd86d8c7842d4cbf4415d7e6721be14f153b29b6899901fceedc"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "tests/test_evolving_observer_categories.py",
+      "review": "Backward pair oracle plus all-partition tests; shared source tables, different algorithm.",
+      "status_EOS_to_VOYAGER": "D"
+    },
+    {
+      "EOS": {
+        "bytes": 2466,
+        "git_blob": "34900f56d3bc3bd9d331cf95c2ddb8a2ce2a86dc",
+        "sha256": "e074d821ecccb8bf16b57f9e16de9cac9d08e0819318922251a1e29c2604a28a"
+      },
+      "VOYAGER": null,
+      "base": null,
+      "path": "tests/test_evolving_receipt.py",
+      "review": "Binds calibration Lean tables to actual learned outputs; does not prove program refinement.",
+      "status_EOS_to_VOYAGER": "D"
+    }
+  ],
+  "archive_mutations_proposed": false,
+  "audit_date": "2026-10-13",
+  "claim_comparison": [
+    {
+      "EOS_id": "EOS-01",
+      "VOYAGER_ids": [
+        "O587",
+        "O610",
+        "O611"
+      ],
+      "assessment": "Same action-word semantics; EOS adds explicit greatest equivalence specification."
+    },
+    {
+      "EOS_id": "EOS-02",
+      "VOYAGER_ids": [
+        "O574",
+        "O585",
+        "O586"
+      ],
+      "assessment": "Failed action congruence yields necessary separating prefixed test; contracts agree."
+    },
+    {
+      "EOS_id": "EOS-03",
+      "VOYAGER_ids": [
+        "O580",
+        "O582"
+      ],
+      "assessment": "EOS r-b0 counts learned strict class refinements; Voyager n-b bound and stationary plateau are related, not identical."
+    },
+    {
+      "EOS_id": "EOS-04",
+      "VOYAGER_ids": [
+        "O572",
+        "O574",
+        "O587"
+      ],
+      "assessment": "Terminal adequate surjective dynamic observer; quotient factorization, not arbitrary adjunction discovery."
+    },
+    {
+      "EOS_id": "EOS-05",
+      "VOYAGER_ids": [
+        "O548"
+      ],
+      "assessment": "Powerset image/pullback adjunction differs from poset right-adjoint inference; safe independent spec target."
+    },
+    {
+      "EOS_id": "EOS-06",
+      "VOYAGER_ids": [
+        "O574",
+        "O587"
+      ],
+      "assessment": "New explicit repair_fusion equality; same source/actions and reachable pair image essential."
+    },
+    {
+      "EOS_id": "EOS-07",
+      "VOYAGER_ids": [
+        "O561",
+        "O607"
+      ],
+      "assessment": "Same dependence firewall: identical marginals or supports do not identify joint laws."
+    },
+    {
+      "EOS_id": "EOS-08",
+      "VOYAGER_ids": [
+        "O546",
+        "O553",
+        "O597"
+      ],
+      "assessment": "Persistent exact constraints strengthen fixed permutation search; do not transfer bound to arbitrary genetic grammar."
+    },
+    {
+      "EOS_id": "EOS-09",
+      "VOYAGER_ids": [
+        "O553",
+        "O597"
+      ],
+      "assessment": "No contradiction: d-call bound needs fixed consistent bijection and informative complete verifier."
+    },
+    {
+      "EOS_id": "EOS-10",
+      "VOYAGER_ids": [
+        "O547",
+        "O554",
+        "O596"
+      ],
+      "assessment": "Partial-source uncertainty agrees; factorial count is particular to unrestricted remaining bijections."
+    },
+    {
+      "EOS_id": "EOS-11",
+      "VOYAGER_ids": [
+        "O561",
+        "O562"
+      ],
+      "assessment": "CI picks one Markov coupling; Frechet retains all allowed couplings when CI is absent."
+    },
+    {
+      "EOS_id": "EOS-12",
+      "VOYAGER_ids": [
+        "O563"
+      ],
+      "assessment": "Shared separator likelihood counted once; EOS gives explicit corrected gluing square."
+    },
+    {
+      "EOS_id": "EOS-13",
+      "VOYAGER_ids": [
+        "O563",
+        "O594",
+        "O609"
+      ],
+      "assessment": "EOS joint model/original/current filter exceeds separate epoch-prior bookkeeping; remains model conditional."
+    },
+    {
+      "EOS_id": "EOS-14",
+      "VOYAGER_ids": [
+        "O563",
+        "O579"
+      ],
+      "assessment": "Single totally ordered stream buffering; no concurrent commutation theorem is supplied."
+    },
+    {
+      "EOS_id": "EOS-15",
+      "VOYAGER_ids": [
+        "O596",
+        "O638"
+      ],
+      "assessment": "Exact partial-table completion not implied by sampling, classical existence, or finite witness count."
+    },
+    {
+      "EOS_id": "EOS-16",
+      "VOYAGER_ids": [
+        "O566",
+        "O567",
+        "O590"
+      ],
+      "assessment": "Heisenberg faithful action supplies actual permutation-voltage representation; classical finite family."
+    },
+    {
+      "EOS_id": "EOS-17",
+      "VOYAGER_ids": [
+        "O588",
+        "O591",
+        "O611"
+      ],
+      "assessment": "Old x alias invariant under old actions; a genuinely new swap breaks quotient compatibility."
+    },
+    {
+      "EOS_id": "EOS-18",
+      "VOYAGER_ids": [
+        "O564",
+        "O610"
+      ],
+      "assessment": "Exact pinned Lean declarations independently checked in CI; incompatible lane pins must remain explicit."
+    },
+    {
+      "EOS_id": "EOS-19",
+      "VOYAGER_ids": [
+        "O594",
+        "O609",
+        "O630"
+      ],
+      "assessment": "Neither branch proves executable Python fully refines all formal specifications."
+    },
+    {
+      "EOS_id": "EOS-20",
+      "VOYAGER_ids": [
+        "O565",
+        "O593",
+        "O630"
+      ],
+      "assessment": "Fixed grammar/source constructors are programmer input; no open-world instrument invention or RH claim."
+    }
+  ],
+  "formal_theorem_declarations": {
+    "5eb09e7cba36ec01b8f9d6834b78b5766fd93935": {
+      "formal/EODCS_ActionClosure.lean": [
+        "no_available_finite_word_separates",
+        "visible_commutator_implies_source_commutator",
+        "injective_report_detects_source_inequality"
+      ],
+      "formal/EODCS_CausalDescent.lean": [
+        "transport_requires_fiber_compatibility",
+        "transport_exists_of_fiber_compatibility",
+        "source_transport_iff_fiber_compatible",
+        "transported_map_unique_if_surjective",
+        "observation_pair_universal",
+        "observation_pair_fiber_characterization",
+        "causal_square_composition",
+        "based_loop_fixed_iff_tree_parallel",
+        "cover_descent_iff_holonomy_fixed"
+      ],
+      "formal/EODCS_NerodePlateau.lean": [
+        "iter_succ_commutes",
+        "plateau_implies_action_congruence",
+        "plateau_certifies_all_future",
+        "plateau_iff_complete_future_equivalence"
+      ],
+      "formal/EODCS_OrderAdjunction.lean": [
+        "monotone_comp",
+        "adjunction_unit",
+        "adjunction_counit",
+        "right_adjoint_unique",
+        "sufficient_order_quotient_factorization"
+      ],
+      "formal/EODCS_RelationalChoice.lean": [
+        "support_transition_requires_fiber_invariance",
+        "support_transition_exists_of_fiber_invariance",
+        "support_transport_iff_fiber_invariance",
+        "unique_future_report_of_nonempty_singleton_support",
+        "support_pair_universal",
+        "source_support_bounded_by_may_common",
+        "support_invariant_implies_exact_envelopes",
+        "exact_envelopes_iff_support_transport",
+        "may_is_least_sound_overapproximation",
+        "common_is_greatest_sound_underapproximation"
+      ],
+      "formal/EODCS_VoyagerMemoryDebt.lean": [
+        "memory_iter_add",
+        "repeated_source_state_repeats_all_later_reports",
+        "zero_gap_forces_distinct_source_states",
+        "pulse_gap_injective_states"
+      ],
+      "formal/EODCS_VoyagerPhantom.lean": [
+        "zero_tail_approximant_in_source",
+        "zero_tail_matches_first_h_reports",
+        "all_true_finite_horizon_source_realizable",
+        "all_true_not_originally_realizable",
+        "shift_head_observes_original_index",
+        "eventually_zero_closed_under_shift",
+        "finite_stage_compatibility_does_not_force_actualization",
+        "listed_probe_below_max",
+        "finite_patch_is_a_genuine_source",
+        "finite_patch_matches_every_requested_probe",
+        "all_true_every_finite_probe_family_consistent",
+        "arbitrary_finite_compatibility_not_global_realization",
+        "finite_support_patch_eventually_zero",
+        "cofinite_support_patch_not_eventually_zero",
+        "no_finite_probe_family_decides_eventual_zero"
+      ],
+      "formal/EODCS_VoyagerTrace.lean": [
+        "voyager_trace_derivative",
+        "voyager_run_morphism",
+        "voyager_trace_naturality",
+        "voyager_trace_kernel_action_congruence",
+        "realized_implies_finitely_compatible",
+        "finite_enumeration_realization_or_refutation",
+        "finite_enumeration_compatible_implies_realized"
+      ]
+    },
+    "b2774ca485db4b5b4f7ce92e535220352fb3af2f": {
+      "formal/obstruction_synthesis/DiscoveredInstance.lean": [
+        "sourceA_naturality",
+        "sourceB_naturality",
+        "readout_preserved",
+        "discovered_separator",
+        "not_full_state_recovery",
+        "noncommuting",
+        "commutator_word",
+        "commutator_central",
+        "commutator_period_three"
+      ],
+      "formal/obstruction_synthesis/RepairKernel.lean": [
+        "run_append",
+        "stable_run",
+        "behavioural_refl",
+        "behavioural_symm",
+        "behavioural_trans",
+        "behavioural_observes",
+        "behavioural_stable",
+        "behavioural_largest",
+        "separating_word_is_necessary",
+        "repair_fusion",
+        "functor_run",
+        "kernel_stability_iff_descent",
+        "descended_update_unique",
+        "image_preimage_adjunction",
+        "archive_pruning_sound"
+      ]
+    }
+  },
+  "full_suite_executed_locally": false,
+  "import_manifest": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "live_GitHub_PRs": [
+    {
+      "baseRefName": "research/genetic-categorical-model-fusion-2026-10-12",
+      "headRefName": "research/evolutionary-obstruction-synthesis-2026-10-13",
+      "headRefOid": "b2774ca485db4b5b4f7ce92e535220352fb3af2f",
+      "isDraft": true,
+      "number": 45,
+      "state": "OPEN",
+      "title": "Obstruction-driven categorical synthesis: evolving experiments, source coupling and Lean proofs"
+    },
+    {
+      "baseRefName": "research/eodcs-relational-choice-2026-10-13",
+      "headRefName": "research/voyager-observational-profinite-completion-2026-10-13",
+      "headRefOid": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "isDraft": true,
+      "number": 48,
+      "state": "OPEN",
+      "title": "VOYAGER: exact observational completion, unrealized inverse-limit profiles and horizon-memory debt"
+    }
+  ],
+  "live_GitHub_runs": [
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "b2774ca485db4b5b4f7ce92e535220352fb3af2f",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/38350341151",
+      "id": 38350341151,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "b2774ca485db4b5b4f7ce92e535220352fb3af2f",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/38350341082",
+      "id": 38350341082,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/38354710531",
+      "id": 38354710531,
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "html_url": "https://github.com/femboy2112/SUCC/actions/runs/38354710532",
+      "id": 38354710532,
+      "status": "completed"
+    }
+  ],
+  "merge_base": "1cb30a3d92420f1197fc1615a68fb4309c0e036d",
+  "schema": "succ-swm-f41-branch-comparison-v1",
+  "toolchain_pins": {
+    "EOS": "leanprover/lean4:v4.19.0",
+    "VOYAGER": "leanprover/lean4:v4.14.0"
+  }
+}
