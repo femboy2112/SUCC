@@ -167,4 +167,73 @@ theorem arbitrary_finite_compatibility_not_global_realization :
   · exact all_true_every_finite_probe_family_consistent
   · exact finite_stage_compatibility_does_not_force_actualization.2
 
+
+/-- Two lawful finite-experiment completions of the SAME observed target:
+one has a permanently zero tail, the other a permanently true tail.
+Both preserve all actual queried target values; unseen values are NOT
+declared to be observed source facts. -/
+def FiniteSupportPatch (probes : List Nat)
+    (target : Nat → Bool) (n : Nat) : Bool :=
+  if n ∈ probes then target n else false
+
+def CofiniteSupportPatch (probes : List Nat)
+    (target : Nat → Bool) (n : Nat) : Bool :=
+  if n ∈ probes then target n else true
+
+theorem finite_support_patch_eventually_zero
+    (probes : List Nat) (target : Nat → Bool) :
+    EventuallyZero (FiniteSupportPatch probes target) := by
+  refine ⟨ProbeListMaximum probes + 1, ?_⟩
+  intro n hn
+  have absent : n ∉ probes := by
+    intro present
+    have bound := listed_probe_below_max probes n present
+    omega
+  simp [FiniteSupportPatch, absent]
+
+theorem cofinite_support_patch_not_eventually_zero
+    (probes : List Nat) (target : Nat → Bool) :
+    ¬ EventuallyZero (CofiniteSupportPatch probes target) := by
+  rintro ⟨N, eventuallyFalse⟩
+  let n := max N (ProbeListMaximum probes + 1)
+  have beyondN : N ≤ n := Nat.le_max_left _ _
+  have beyondProbes : ProbeListMaximum probes + 1 ≤ n :=
+    Nat.le_max_right _ _
+  have absent : n ∉ probes := by
+    intro present
+    have bound := listed_probe_below_max probes n present
+    omega
+  have observedFalse : CofiniteSupportPatch probes target n = false :=
+    eventuallyFalse n beyondN
+  have outsideTrue : CofiniteSupportPatch probes target n = true := by
+    simp [CofiniteSupportPatch, absent]
+  rw [outsideTrue] at observedFalse
+  cases observedFalse
+
+/-- **Uniform finite-observer no-go.** For ANY proposed infinite binary
+source profile z and ANY finite list of lawful index probes, that very
+same exact observation transcript is produced by both an eventually-
+zero original source and a source that is NOT eventually zero.
+
+The theorem quantifies over actual mathematical finite probe families,
+not over a single initial prefix. An adaptive terminating query policy
+can only inspect a finite family along its actual run; the separate
+policy corollary requires the usual deterministic, nonanticipatory
+probe semantics. Neither side authenticates physical infinite sources. -/
+theorem no_finite_probe_family_decides_eventual_zero
+    (target : Nat → Bool) (probes : List Nat) :
+    ∃ x y : Nat → Bool,
+      EventuallyZero x ∧
+      ¬ EventuallyZero y ∧
+      (∀ n : Nat, n ∈ probes →
+        x n = target n ∧ y n = target n) := by
+  refine ⟨FiniteSupportPatch probes target,
+          CofiniteSupportPatch probes target,
+          finite_support_patch_eventually_zero probes target,
+          cofinite_support_patch_not_eventually_zero probes target, ?_⟩
+  intro n membership
+  constructor
+  · simp [FiniteSupportPatch, membership]
+  · simp [CofiniteSupportPatch, membership]
+
 end ObservationalSUCC
