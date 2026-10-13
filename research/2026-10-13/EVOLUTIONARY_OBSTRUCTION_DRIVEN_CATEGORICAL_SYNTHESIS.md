@@ -1,6 +1,6 @@
 # EODCS: Evolutionary Obstruction-Driven Categorical Synthesis
 
-**Research checkpoint:** 2026-10-13. **Stack:** PR #44 onto GF PR #43, initial parent 1cb30a3d92420f1197fc1615a68fb4309c0e036d. **Scope:** exact mathematics of finite posets, relations, permutation group actions, finite voltage covers, and rational probability laws, each with explicit **declared-source** assumptions. **NOT:** empirical source authentication, calibration, scholarly mathematical priority, unrestricted category invention, RH/Weil positivity or compiled Lean proof.
+**Research checkpoint:** 2026-10-13. **Stack:** PR #44 onto GF PR #43, initial parent 1cb30a3d92420f1197fc1615a68fb4309c0e036d. **Scope:** exact mathematics of finite posets, relations, permutation group actions, finite voltage covers, and rational probability laws, each with explicit **declared-source** assumptions. **NOT:** empirical source authentication, calibration, scholarly mathematical priority, unrestricted category invention, RH/Weil positivity or an unrestricted Lean formalization of EODCS.
 
 The maintainer's original goal is not to pick from a fixed library forever: E should use failed explanations and crossed model contexts to propose better *representation types* while refusing to edit their source evidence.
 
@@ -10,7 +10,7 @@ The maintainer's original goal is not to pick from a fixed library forever: E sh
 2. **Counterexample-driven evolution:** exact source probes reject specific model predictions and preserve no-good clauses. Failed bijections enable a functor grammar; nonflat scalar constraints enable a covering-space grammar. Seeded monotone-map genetic mutation/crossover remains independent of the exhaustive certification oracle.
 3. **Dependent source probability:** sharp posterior intervals over unknown conditional Frechet couplings, plus explicit conditional second receipts. No arbitrary multiplication of marginals.
 4. **Partial/noisy/delayed state-changing sources:** incomplete source tables retain rival models; blind held-back source rows test honest prediction sets; delayed event receipts retain their original epoch. A real state-changing causal transport square is *still open*.
-5. **Formal verification:** a self-contained Lean4 proof candidate covers monotone composition, adjunction unit/counit and right-adjoint uniqueness; **NO Lean executable was available and this source is UNVERIFIED BY THE LEAN KERNEL**. Independent brute-force mathematical oracles are executable in Python.
+5. **Formal verification:** a self-contained Lean 4.14.0 proof now **passes kernel checking** for monotone composition, adjunction unit/counit, and right-adjoint uniqueness ([push run 38346981020](https://github.com/femboy2112/SUCC/actions/runs/38346981020), pinned commit `bab34a1158054da3130e44b8086f9bd156ae7af5`). The other categorical and covering-space theorems are **not yet kernel-formalized**. Independent brute-force oracles are executable in Python.
 6. **Unknown-target invariant:** an independent seeded 8-to-4 chain source (165 admissible monotone maps) fixes a mapping unknown to the genetic proposal generator. Its fibers, right adjoint and sealed suffix prediction set are reconstructed. This is a source-relative finite unknown *value*, not a newly invented general theorem.
 7. **Moonshot (bounded):** an obstruction changes the admissible kind of object, not just its coefficients. Poset quotient/adjunction and minimal holonomy covers are certified representation births. The grammar families themselves are programmer-supplied, so completely automatic new-mathematics invention is UNVERIFIED.
 
@@ -88,7 +88,7 @@ For both reports yes, posterior(H)=π t_H/(π t_H+(1−π)t_K), provided the obs
 
 ## Formalization and evidence ledger
 
-One independent Lean4 proof candidate resides in formal/EODCS_OrderAdjunction.lean. It explicitly assumes needed relation laws, introduces no intended sorry or extra axioms, and includes monotone composition, unit/counit and right-adjoint uniqueness. There was **NO local Lean kernel**, so the formal file is **UNVERIFIED**, not a formal completion. This is why the categorical covering theorem is currently a detailed pen-and-paper proof plus finite crosschecks rather than a Lean claim.
+The standalone `formal/EODCS_OrderAdjunction.lean` was compiled and checked by the **Lean 4.14.0 kernel** in [successful CI run 38346981020](https://github.com/femboy2112/SUCC/actions/runs/38346981020) at `bab34a1158054da3130e44b8086f9bd156ae7af5`, with explicit relation hypotheses and no `sorry`/`admit`. The four formal statements are monotone composition, adjunction unit, adjunction counit and uniqueness of right adjoints. **This does not kernel-verify the covering-space or CEGIS correctness theorems**; those retain their pen-and-paper general proofs and finite computational checks. `scripts/eodcs_probe.py` itself makes no dynamic claim to have invoked Lean.
 
 Python reproducibility:
 - python -m unittest discover -s tests -p 'test_eodcs_*.py' -v
@@ -100,7 +100,7 @@ The experiment preserves immutable historical imports, old defaults, and source 
 
 | Result | Claim status | Key limitations |
 |---|---|---|
-| Functors, natural transformations, Galois adjunctions | CLASSICAL / finite proof + exact oracle | Formal kernel not checked |
+| Functors, natural transformations, Galois adjunctions | CLASSICAL / finite proof + exact oracle | Lean-kernel checked on composition, unit/counit, right-adjoint uniqueness only |
 | Source-complete nonbijective bridge | PROVED LOCAL / declared full table | Not authenticated physical source |
 | Witness-guided grammar expansion and genetic proposals | OBSERVED finite algorithm | Incomplete open-world mathematics |
 | Sealed blind source suffix | TESTED mathematical holdout | No independent real-world source |
@@ -111,6 +111,6 @@ The experiment preserves immutable historical imports, old defaults, and source 
 | Universal invention of new categories, arbitary experimental instruments | UNVERIFIED | Predefined family of representation constructors |
 | RH or completed Weil/Suzuki positivity | UNVERIFIED / NOT CLAIMED | Authentic Euler/Gamma/test-function positivity identification absent |
 
-**Next verdict-changing probes:** install and pin Lean to compile the candidate; formalize graph-cover minimality and source functor naturality; allow source-changing arrows with actual commutative causal squares and interventions; construct categories not previously in the grammar; use independent stochastic or physical source producers; add learned properly-scored model-misspecification/OTHER options. A truly unknown mathematical invariant must survive fresh generators that were not selected to match its original grammar.
+**Next verdict-changing probes:** extend the pinned Lean formalization to graph-cover minimality and source functor naturality; allow source-changing arrows with actual commutative causal squares and interventions; construct categories not previously in the grammar; use independent stochastic or physical source producers; add learned properly-scored model-misspecification/OTHER options. A truly unknown mathematical invariant must survive fresh generators that were not selected to match its original grammar.
 
 **Established prior art (no novelty claim):** category theory of Galois connections and posets; C. L. Ezell (1979), Observations on the construction of covers using permutation voltage assignments (DOI 10.1016/0012-365X(79)90181-X); Gross & Tucker (1979), Fast Computations in Voltage Graph Theory (DOI 10.1111/j.1749-6632.1979.tb32796.x). Earlier GF and HS dossiers cover categorical ontology bridges, genetic search and source-aware Bayesian reasoning.
