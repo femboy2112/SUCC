@@ -16,6 +16,7 @@ physical carriers or authenticate an observation instrument.
 from __future__ import annotations
 from dataclasses import dataclass
 from itertools import combinations, product
+from fractions import Fraction as Q
 from random import Random
 
 from .causal_nerode_succ import SourceTransportError
@@ -189,8 +190,8 @@ def grow_probe_grammar(source: ObserverDynamics, *, budget_horizon: int = 14,
             after = _unresolved_pairs(source, selected + (t,), report)
             gain = len(unresolved)-len(after)
             cost = 1+cost_per_successor*t
-            ranked.append((gain/cost, gain, -cost, -t, t, after))
-        # Ratios here only PRIORITIZE syntax, not mathematical certificates.
+            ranked.append((Q(gain, cost), gain, -cost, -t, t, after))
+        # Exact rational ratios PRIORITIZE syntax, not certify source truth.
         _, gain, _, _, best, remaining = max(ranked, key=lambda x: x[:4])
         if gain == 0:
             raise AssertionError("No legal distinguishing probe found in complete grammar")
