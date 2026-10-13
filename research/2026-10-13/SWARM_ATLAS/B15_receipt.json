@@ -1,0 +1,213 @@
+{
+  "base_commit": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "deterministic": {
+    "beta": {
+      "s": 0,
+      "t": 0,
+      "u": 1,
+      "v": 2
+    },
+    "finite_image_morphism_count": 1,
+    "old_report_collapse_hostile_witness": [
+      "s",
+      "u",
+      "b",
+      "1",
+      "0"
+    ],
+    "quotient_blocks": [
+      [
+        "s",
+        "t"
+      ],
+      [
+        "u"
+      ],
+      [
+        "v"
+      ]
+    ],
+    "quotient_output": [
+      "0",
+      "0",
+      "1"
+    ],
+    "quotient_transitions_a_b": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "sample_word_bound": 3
+  },
+  "full_suite_run": false,
+  "history": {
+    "history_augmented_policy_law": {
+      "(('a', 0), ('a', 0), ('a', 0))": "1/2",
+      "(('a', 1), ('a', 0), ('a', 1))": "1/2"
+    },
+    "next_rows": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "same_last_report_histories": [
+      [
+        [
+          "a",
+          0
+        ],
+        [
+          "a",
+          0
+        ]
+      ],
+      [
+        [
+          "a",
+          1
+        ],
+        [
+          "a",
+          0
+        ]
+      ]
+    ],
+    "terminal_extension_claimed": false
+  },
+  "input_sha256": {
+    "observational_succ/carrier_statistical_limit.py": "96aa092b9792bdff5d4198ac2b6d8a7abdf0b0033ebcc25a9db295c7f8b15fa1",
+    "observational_succ/eodcs_multi_action_source.py": "11025f6f7953ebdfa9b4cb1f11d8ce37d991a9d79a3d5e65e6489c07bcff913b",
+    "observational_succ/eodcs_relational_choice.py": "c4a72ff5060327158326252b72033970fbc0ef198787f37960e0fbccdf228083",
+    "observational_succ/nerode_probe_growth.py": "16fa756fe170b589877e38fa7257623a79fdc406a0454812ca6422fe314d12e6",
+    "observational_succ/operational_semantics.py": "e5dec902c67aa0609282cb00cb7490f94830230dbc9ca4be2b9b0d1c47f7d952",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+  },
+  "probabilistic": {
+    "all_lengths_proof": "after 00, both choose absorbing 0/1 with probability 1/2",
+    "bisimulation_blocks": [
+      [
+        "p"
+      ],
+      [
+        "q"
+      ],
+      [
+        "z0"
+      ],
+      [
+        "u"
+      ],
+      [
+        "r"
+      ],
+      [
+        "z1"
+      ]
+    ],
+    "mass_to_behavior_class_u_p_q": [
+      "1/2",
+      "0"
+    ],
+    "outputs": {
+      "p": "0",
+      "q": "0",
+      "r": "0",
+      "u": "0",
+      "z0": "0",
+      "z1": "1"
+    },
+    "rows": {
+      "p": {
+        "u": "1/2",
+        "z0": "1/2"
+      },
+      "q": {
+        "r": "1"
+      },
+      "r": {
+        "z0": "1/2",
+        "z1": "1/2"
+      },
+      "u": {
+        "z1": "1"
+      },
+      "z0": {
+        "z0": "1"
+      },
+      "z1": {
+        "z1": "1"
+      }
+    },
+    "sample_transition_bound": 4,
+    "two_transition_trace_law": {
+      "('0', '0', '0')": "1/2",
+      "('0', '0', '1')": "1/2"
+    }
+  },
+  "relational": {
+    "all_finite_output_traces_equal": true,
+    "bisimulation_blocks": [
+      [
+        "p"
+      ],
+      [
+        "q"
+      ],
+      [
+        "r"
+      ],
+      [
+        "d"
+      ]
+    ],
+    "hostile_branch": "p -> r has no bisimilar q-successor",
+    "minimum_state_scope": "complete unary Moore systems, any output set: 4 (proof in dossier)",
+    "one_step_native_descent": true,
+    "outputs": {
+      "d": "1",
+      "p": "0",
+      "q": "0",
+      "r": "0"
+    },
+    "reachable_subset_pairs": 4,
+    "states": [
+      "p",
+      "q",
+      "r",
+      "d"
+    ],
+    "successors": {
+      "d": [
+        "d"
+      ],
+      "p": [
+        "p",
+        "r",
+        "d"
+      ],
+      "q": [
+        "q",
+        "d"
+      ],
+      "r": [
+        "r"
+      ]
+    }
+  },
+  "status": "TESTED MODEL; universal theorems and counterexamples derived in B15.md",
+  "universal_finality_machine_checked": false
+}
