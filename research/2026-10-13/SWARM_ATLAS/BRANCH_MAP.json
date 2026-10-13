@@ -374,6 +374,26 @@
       "integration": "ACCEPTED"
     },
     {
+      "id": "E38",
+      "branch": "research/swm-e38-2026-10-13",
+      "original_commit": "c05c2bd69d43ecf9a725bbbf3ee5f0d496149e8a",
+      "branch_head": "c05c2bd69d43ecf9a725bbbf3ee5f0d496149e8a",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "dossier_path": "research/2026-10-13/SWM_E38_ARITHMETIC_POLARIZATION/DOSSIER.md",
+      "integration_dossier_commit": "3bb69ba57087c49b9bf4379d350dc2ea71fe1d10",
+      "integration": "ACCEPTED"
+    },
+    {
+      "id": "E39",
+      "branch": "research/swm-e39-2026-10-13",
+      "original_commit": "063db61b7eab30c84d7886a2d47210e3ec507cc1",
+      "branch_head": "063db61b7eab30c84d7886a2d47210e3ec507cc1",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "dossier_path": "research/2026-10-13/E39_GAUSSIAN_ARITHMETIC_CUT_AND_TRANSPORT.md",
+      "integration_dossier_commit": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "integration": "ACCEPTED"
+    },
+    {
       "id": "F41",
       "branch": "research/swm-f41-2026-10-13",
       "original_commit": "aeefd7ec2a7f50e45a1446e1995c7f6289c158a9",
@@ -926,8 +946,8 @@
       "branch_head": "c05c2bd69d43ecf9a725bbbf3ee5f0d496149e8a",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "dossier_path": "research/2026-10-13/SWM_E38_ARITHMETIC_POLARIZATION/DOSSIER.md",
-      "integration_dossier_commit": null,
-      "integration": "PENDING"
+      "integration_dossier_commit": "3bb69ba57087c49b9bf4379d350dc2ea71fe1d10",
+      "integration": "ACCEPTED"
     },
     {
       "id": "E39",
@@ -936,8 +956,8 @@
       "branch_head": "063db61b7eab30c84d7886a2d47210e3ec507cc1",
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "dossier_path": "research/2026-10-13/E39_GAUSSIAN_ARITHMETIC_CUT_AND_TRANSPORT.md",
-      "integration_dossier_commit": null,
-      "integration": "PENDING"
+      "integration_dossier_commit": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+      "integration": "ACCEPTED"
     },
     {
       "id": "F41",
@@ -1070,11 +1090,11 @@
       "integration": "ACCEPTED"
     }
   ],
-  "checkpoint_parent": "9ed84c820274a262596e7507722f5ed8f31eff77",
+  "checkpoint_parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
   "last_verified_push": "830e99ffc89bc9ee5ae97cbbc433206be99aa96c",
   "current_counts": {
     "native_children": 58,
-    "first_accepted": 42,
+    "first_accepted": 44,
     "synth_accepted": 7
   }
 }

@@ -910,11 +910,11 @@
       "state": "COMPLETED",
       "started_utc": "2026-10-13T10:41:26.233350+00:00",
       "finished_utc": "2026-10-13T10:56:51.415307+00:00",
-      "status": "UNVERIFIED",
+      "status": "CLASSICAL / PROVED LOCAL",
       "witness_path": "research/2026-10-13/SWM_E38_ARITHMETIC_POLARIZATION/RECEIPT.json",
-      "proof_state": "PAPER / EXACT MODEL; NON-DERIVER REVIEW PENDING",
+      "proof_state": "PAPER; INDEPENDENT PRINCIPAL DERIVATION AND SEPARATE CHECKER ACCEPTED",
       "commit": "c05c2bd69d43ecf9a725bbbf3ee5f0d496149e8a",
-      "integration": "PENDING",
+      "integration": "ACCEPTED",
       "dossier_path": "research/2026-10-13/SWM_E38_ARITHMETIC_POLARIZATION/DOSSIER.md"
     },
     {
@@ -934,11 +934,11 @@
       "state": "COMPLETED",
       "started_utc": "2026-10-13T10:41:26.233350+00:00",
       "finished_utc": "2026-10-13T10:56:51.415307+00:00",
-      "status": "UNVERIFIED",
+      "status": "CLASSICAL / PROVED LOCAL",
       "witness_path": "research/2026-10-13/E39_GAUSSIAN_CUT_RECEIPT.json",
-      "proof_state": "PAPER / EXACT MODEL; NON-DERIVER REVIEW PENDING",
+      "proof_state": "PAPER; INDEPENDENT PRINCIPAL DERIVATION AND SEPARATE CHECKER ACCEPTED",
       "commit": "063db61b7eab30c84d7886a2d47210e3ec507cc1",
-      "integration": "PENDING",
+      "integration": "ACCEPTED",
       "dossier_path": "research/2026-10-13/E39_GAUSSIAN_ARITHMETIC_CUT_AND_TRANSPORT.md"
     },
     {
@@ -1284,7 +1284,7 @@
       "id": "X08",
       "claim_id": "SWM-X08",
       "title": "Prime valuation groupoids x noncommuting source actions",
-      "parent_sha": null,
+      "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x08",
       "owner": null,
       "state": "QUEUED",
@@ -1292,13 +1292,14 @@
       "integration": "PENDING",
       "commit": null,
       "proof_state": "NOT RUN",
-      "started_utc": null
+      "started_utc": null,
+      "branch": "research/swm-x08-2026-10-13"
     },
     {
       "id": "X09",
       "claim_id": "SWM-X09",
       "title": "Archimedean completion x source actualization topology",
-      "parent_sha": null,
+      "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x09",
       "owner": null,
       "state": "QUEUED",
@@ -1306,13 +1307,14 @@
       "integration": "PENDING",
       "commit": null,
       "proof_state": "NOT RUN",
-      "started_utc": null
+      "started_utc": null,
+      "branch": "research/swm-x09-2026-10-13"
     },
     {
       "id": "X10",
       "claim_id": "SWM-X10",
       "title": "Koopman operators x hidden observational chaos",
-      "parent_sha": null,
+      "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x10",
       "owner": null,
       "state": "QUEUED",
@@ -1320,13 +1322,14 @@
       "integration": "PENDING",
       "commit": null,
       "proof_state": "NOT RUN",
-      "started_utc": null
+      "started_utc": null,
+      "branch": "research/swm-x10-2026-10-13"
     },
     {
       "id": "X11",
       "claim_id": "SWM-X11",
       "title": "Domain/Kripke semantics x omega+1 report barriers",
-      "parent_sha": null,
+      "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x11",
       "owner": null,
       "state": "QUEUED",
@@ -1334,13 +1337,14 @@
       "integration": "PENDING",
       "commit": null,
       "proof_state": "NOT RUN",
-      "started_utc": null
+      "started_utc": null,
+      "branch": "research/swm-x11-2026-10-13"
     },
     {
       "id": "X12",
       "claim_id": "SWM-X12",
       "title": "Mathematical phenomenology x source-dependent self-updates",
-      "parent_sha": null,
+      "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x12",
       "owner": null,
       "state": "QUEUED",
@@ -1348,7 +1352,8 @@
       "integration": "PENDING",
       "commit": null,
       "proof_state": "NOT RUN",
-      "started_utc": null
+      "started_utc": null,
+      "branch": "research/swm-x12-2026-10-13"
     }
   ],
   "reviews": [
@@ -1423,6 +1428,14 @@
       "commit": "f4664da96615f25c1fd80dcfb569c8c8f2084bd8",
       "path": "reviews/WAVE_GEOMETRY_GAMMA_F48_REVIEW.md",
       "verdict": "SURVIVES WITH D31 DISCRETE REPAIR; CONTINUOUS SINGLETON EXTENSION REFUTED"
+    },
+    {
+      "assignment": "E38/E39",
+      "reviewer": "/root",
+      "state": "COMPLETED",
+      "path": "research/2026-10-13/SWARM_ATLAS/reviews/E38_E39_PRINCIPAL_REVIEW.md",
+      "verdict": "SCOPED PAPER CLAIMS ACCEPTED",
+      "independence": "Root did not derive author results; separate sieve and source coefficient calculation; no imported author helpers"
     }
   ],
   "native_agents_genuinely_spawned_so_far": [

@@ -57,8 +57,10 @@ The top arrows require a stipulated complete instrument law, retained preparatio
 | Typed gluing repair constructors | Original integer graph labels, congruence-only modular contacts or explicitly bounded/integral source access | [X03](X03.md): adaptive LCM no-go; generator bound controls exact repair; inherited-witness CEGIS terminates in the stated finite complete grammar |
 | Supported receipts `E=Σ_s A_s`, labels `λ:E→L` | Discrete labels and reports; original source fibers may be empty | [X01](X01.md): retained inverse limit is E; image inverse limit is closure of `(Ψ,λ)(E)`; interchange iff that supported labelled image is closed |
 
-Independent principal reviews are in [reviews](reviews/); X01 also has a [separate native A05 review](reviews/X01_A05_REVIEW.md) and independently written enumeration. Paper proofs are not promoted to kernel proofs by test counts. Only A01 and B09's named Lean statements receive kernel status here; witness-family bijectivity remains paper-only. Cold GitHub [run38365807103](https://github.com/femboy2112/SUCC/actions/runs/38365807103) independently replayed pinned bootstrap and kernel checks; exact artifact receipts are retained. Classical results are identified as classical even when newly connected inside SUCC.
+Independent principal reviews are in [reviews](reviews/); X01 also has a [separate native A05 review](reviews/X01_A05_REVIEW.md) and independently written enumeration. Paper proofs are not promoted to kernel proofs by test counts. A01, B09, C19 and X07's explicitly named Lean statements receive kernel status here; C19/X07 cone and quantum instantiations remain paper-only; witness-family bijectivity remains paper-only. Cold GitHub [run38365807103](https://github.com/femboy2112/SUCC/actions/runs/38365807103) independently replayed pinned bootstrap and kernel checks; exact artifact receipts are retained. Classical results are identified as classical even when newly connected inside SUCC.
 
+| Structure and actual arrow | Domain and validity conditions | Surviving invariant / evidence |
+|---|---|---|
 | Fixed positive history effect pullback `E_n=T_n*(I)` | One fixed word, same original finite-dimensional density domain; retained memory included | [C19](C19.md): nested kernels stabilize; one original supports all finite prefixes; no stabilization deadline or positive infinite-event probability |
 | Conditional evidence wealth `M_t=product e_t` | Calibrated conditional null laws, public adapted interventions and positive normalization | [C23](C23.md): Ville/optional-stopping bound; duplicate evidence breaks calibration; source law remains a premise |
 | Erasure and reversible auxiliary `s→(F(s,z),z,G(s,z))` | Finite rational law, deterministic retained report and complete accessible side information | [C24](C24.md): conditional entropy loss and maximum-fiber memory bound; thermal cost needs a separate physical model |
@@ -66,15 +68,23 @@ Independent principal reviews are in [reviews](reviews/); X01 also has a [separa
 | Mahler extension `g→sum Δ^j g(0) binom(x,j)` | Entire source data with coefficients tending p-adically to0; no finite-prefix certification | [E35](E35.md): unique continuous extension; equal-depth clock naturality means1-Lipschitz, not analyticity |
 | Causal garbling `P T_(a,z)^D=T'_(a,z) P` | Original/current joint Dirac square, source-blind decoder, matching safe menus/public history/cost | [X05](X05.md): transports adaptive finite proof policies and dominated public budgets; marginal squares fail |
 
+| Structure and actual arrow | Domain and validity conditions | Surviving invariant / evidence |
+|---|---|---|
 | Realized return itinerary `I_R`, finite buffer `Q_(m+n)` | Actual boundary-free source, constant two-step return clock; abstract full shift kept separate | [D26](D26_SYMBOLIC_RETURN_FRONTIERS.md): lawful buffered depth square; all finite B-words but excluded B-infinity |
 | Nonlinear projected derivative `PF=G P` | Entire finite source vector space, linear P and quadratic vector field; smooth torus instance separately | [D30](D30_PDE_CLOSURE.md): exact hidden/cross coefficient criterion; hidden divergence-free stress gives resolved acceleration |
 | Fair mandatory cost `h→sum c_e` | Nonnegative cost-preserving lawful events, exhaustive fair legal continuation; all original obligations retained | [F45](F45_PROOF_COST_SCHEDULING.md): order-independent total, summable debt tails and divergent lower-bound no-go |
 
+| Structure and actual arrow | Domain and validity conditions | Surviving invariant / evidence |
+|---|---|---|
 | Allowed experiment signature `s→(L_s(a^n,·))` | Complete causal word laws, source-blind policy/random tape/processing and declared safe instruments | [F44](F44.md): adaptive/computational no-go and original-target fiber gate; local quantum marginal equality needs autonomous local dynamics |
 
+| Structure and actual arrow | Domain and validity conditions | Surviving invariant / evidence |
+|---|---|---|
 | Opaque action-law signature `U_word(s)` | Complete declared finite tables; bounded primitive-variable grammar, bijective label changes | [F43](F43/DOSSIER.md): sound signatures/conjugacy invariance, classical LRB recovery, once-only holdout transfers and preserved mismatched-family failures |
 | Formal Dirichlet logarithm `a→log_*a` | Normalized arithmetic functions over a Q-algebra, exact coefficientwise truncations | [E36](../E36_DIRICHLET_LOG_MULTIPLICATIVITY.md): prime-power support iff multiplicativity; mixed defects preserved only by full log, analytic completion separate |
 
+| Structure and actual arrow | Domain and validity conditions | Surviving invariant / evidence |
+|---|---|---|
 | Positive causal-ideal diagram `I→K_I`, zero face `Z_I` | Total common positive maps, faithful mass (or contraction), all finite ideals directed, finite-height original faces | [X07](X07.md): finite attained bottleneck ideal realizes common compatibility even without countable cofinal history; quantum copying remains unavailable |
 
 ## Acquisition, representation revision and lawful new instruments
