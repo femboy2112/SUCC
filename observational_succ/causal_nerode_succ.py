@@ -153,6 +153,10 @@ def causal_descent(action: CausalInstrument) -> CausalDescentCertificate:
                  for i, r in enumerate(next_values)}
         for s in states:
             extra_code[s] = codes[action.future_report(s)]
+    # Each old report fiber can reuse its local codebook, but the physical
+    # hypothetical supplemental channel has one GLOBAL fixed width.
+    global_width = (max_splits - 1).bit_length()
+    extra_code = {s: extra_code[s].zfill(global_width) for s in before.states}
     repair_map = {s: (before.report(s), action.future_report(s))
                   for s in before.states}
     repaired = tuple((s, repair_map[s]) for s in before.states)
@@ -172,7 +176,7 @@ def causal_descent(action: CausalInstrument) -> CausalDescentCertificate:
         action.name, witness is None, witness,
         tuple(decoded) if witness is None else (),
         repaired, len(fibers), classes,
-        (max_splits - 1).bit_length(),
+        global_width,
         tuple((s, extra_code[s]) for s in before.states),
         successors, False, False,
     )
@@ -275,7 +279,9 @@ def causal_repair_demo() -> dict[str, Any]:
         raise AssertionError("Bit-swap must reveal a real one-bit transport gap")
     # Repeating the involution brings original report back, even though
     # each one-step attempt had an observational obstruction.
-    backward = CausalInstrument("bit-swap-again", after, before,
+    end = SourceChart("source-v1", 2, "bits", states,
+                      ("0", "0", "1", "1"))
+    backward = CausalInstrument("bit-swap-again", after, end,
                                 switch.transitions, Q(3, 2))
     composite = compose_instruments(switch, backward)
     composite_receipt = causal_descent(composite)
