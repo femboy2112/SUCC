@@ -1,0 +1,137 @@
+{
+  "coarse_overlap_no_go": {
+    "common_public_overlap": 0,
+    "inhabited_global_mutant": [
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "left": [
+      [
+        0,
+        0
+      ]
+    ],
+    "private_global_sections": 0,
+    "right": [
+      [
+        1,
+        0
+      ]
+    ],
+    "unextendable_coarse_family": [
+      0,
+      0,
+      0
+    ]
+  },
+  "commands": [
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python research/2026-10-13/F48/F48_LAWFUL_HISTORY_PROBE.py",
+      "exit": 0
+    }
+  ],
+  "destructive_single_carrier": {
+    "joint_11_exists": false,
+    "joint_reports": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "local_11_exists": true,
+    "nondestructive_11_exists": true,
+    "original_parity_shadows": {
+      "A": {
+        "common_public_and_post": [
+          [
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "sources": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "B": {
+        "common_public_and_post": [
+          [
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "sources": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "edge_gluing": {
+    "binary_relation_models": 256,
+    "full_interface_equalizer": true,
+    "local_pairs_checked": 1024
+  },
+  "final_swarm_synthesis_complete": false,
+  "full_suite_or_compiler_run": false,
+  "immutable_base": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "investigator": "F48",
+  "phase": "initial independent",
+  "private_path_vs_endpoint": {
+    "endpoint_pair_count": 1,
+    "path_count": 2
+  },
+  "probability_gluing": {
+    "anticorrelation_triangle_realizers": [],
+    "correlated_11": "3/8",
+    "independent_11": "1/4",
+    "joint_laws_distinct": true,
+    "same_fair_marginals_and_full_support": true
+  },
+  "probe_sha256": "f3cabf42826b00379dc4e4c666b40a98761e0ca286f6731a5ddfa0c610c57d3e",
+  "scope": "finite declared mathematical models; no physical attestation",
+  "source_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/ARCHITECTURE.md": "ebf52ee203ad1068fb5f6358a20b98fed17dd1d0123db1b46004c9f8716744c5",
+    "docs/FOUNDATIONS.md": "d4c89e4cb79bf561c69182fec9eac2783ce009cfce5842756f98da1ad9191ce7",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "observational_succ/adaptive_proof_policy.py": "433c32b2c81128be615f8dc9cb39d556ff6781bed3a869524fe6effb41f2da4d",
+    "observational_succ/causal_nerode_succ.py": "0d41180c9a041400e1c781d3578d3f7652242719c5f6e46cdf4028ec779d7ddd",
+    "observational_succ/eodcs_relational_choice.py": "c4a72ff5060327158326252b72033970fbc0ef198787f37960e0fbccdf228083",
+    "observational_succ/noncommuting_proof_transport.py": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a",
+    "observational_succ/operational_yoneda_descent.py": "c9db557825a01bec76e8bc38f32d3f59cd2dd17d7a2670e15373aedeedc67e0c",
+    "observational_succ/proof_backaction_debt.py": "fd9369e27c5404da1a3e7900641e888bb8bd41efa758ec859a3552c989f14f0d",
+    "observational_succ/voyager_profinite_frontier.py": "9971e3b4dc389963be322bd96ddedb8ad2cbe2e5c2e4dcea2913f0485195ea34",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+    "research/2026-10-11/NONCOMMUTING_PROOF_TRANSPORT.md": "a2188e6e35c2b1e511d11387ec1eccd64ffef00dc7aacdde9569c12cfb62c410",
+    "research/2026-10-11/PROBE_COHERENCE_HORIZONS_AND_PROOF_SUPPORT.md": "f2a09d8b3e6c5d65b2c3ef41b37993a83080bb71e8cdb7d627a0acead8070f7f",
+    "research/2026-10-13/EODCS_CAUSAL_NERODE_PROBE_GENESIS.md": "deac624536126fdf1ee4e7678a177877f7309a82875863bdb2950d1cd5b10685",
+    "research/2026-10-13/VOYAGER_OBSERVATIONAL_PROFINITE_COMPLETION.md": "bfbd61c2695ac0cf1a726d452a8713b30405dfaca25ecee2353d5b770af0d3a1"
+  }
+}
