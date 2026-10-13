@@ -850,6 +850,26 @@ jobs:
           assert r["RH_or_Weil_positivity_proved"] is False
           assert r["canonical_real_gamma_from_finite_primes_alone"] is False
           PY
+      - name: Exact field-relative closure and obstruction-to-repair certificates
+        run: |
+          python scripts/field_relative_obstruction_probe.py > "$RUNNER_TEMP/field-relative-obstruction.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          measured=json.loads((Path(os.environ["RUNNER_TEMP"])/"field-relative-obstruction.json").read_text())
+          pinned=json.loads(Path("research/2026-10-12/FIELD_RELATIVE_OBSTRUCTION_RECEIPT.json").read_text())
+          assert measured == pinned
+          assert measured["physical_source_authenticated"] is False
+          assert measured["omega_inferred_from_finite_scan"] is False
+          assert measured["rh_or_weil_sign_claimed"] is False
+          assert measured["two_bit"]["a_b_factors_xor"] is True
+          assert measured["local_realizability"]["minimal_unsat_core"] == 3
+          assert measured["source_holonomy"]["translation"] == [3]
+          assert measured["repair"]["minimum_probe_count"] == 2
+          assert measured["analytic_moonshot_falsifier"]["offcritical_zero_real"] == "1/4"
+          assert measured["analytic_moonshot_falsifier"]["offcritical_zero_imag"] == "1/10"
+          assert measured["analytic_moonshot_falsifier"]["actual_riemann_xi_modified"] is False
+          PY
       - name: Persist verified finite evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -860,6 +880,7 @@ jobs:
             ${{ runner.temp }}/foundations.json
             ${{ runner.temp }}/ordinal.json
             ${{ runner.temp }}/prime-source.json
+            ${{ runner.temp }}/field-relative-obstruction.json
             ${{ runner.temp }}/carrier-relative.json
             ${{ runner.temp }}/checkpoint-meta.json
             ${{ runner.temp }}/shared-carrier-boundary.json
