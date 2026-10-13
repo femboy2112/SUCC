@@ -133,3 +133,35 @@ Mandatory reproducibility:
 6. **RH / Weil** stays explicitly downstream; no authentic prime-power/Arch Gamma/Weil form identification, no global positivity proof, no zero-reading construction, and no RH claim.
 
 **Verdict:** The bounded engine turns concrete source-changing failures into new *finite observational expressions* with exact certification and no-go results. Its high-value claim is compositional and epistemic architecture, not generalized automatic theorem invention. Keep κ (contact), φ (within-tool distinguishability), σ (source adequacy), μ (probe availability), plus coherence and independence distinct; none is a truth probability.
+
+
+## CS11. A stronger Lean theorem: finite complete plateau iff ALL future observational equivalence
+
+The initially verified forward theorem is now strengthened in \`formal/EODCS_NerodePlateau.lean\` to an exact biconditional under explicit stationary-source assumptions. For any source set S (not assumed finite in the theorem itself), deterministic U:S→S, q:S→O, and a fixed finite horizon h, define
+\[
+  s\equiv_h t \iff \forall i\le h,\;q(U^i(s))=q(U^i(t)).
+\]
+Assume the **global plateau condition**
+\[
+  \forall s,t\in S,\quad s\equiv_h t\Longrightarrow s\equiv_{h+1}t.
+\]
+Then, for *each* source pair s,t,
+\[
+  \boxed{s\equiv_h t\quad\Longleftrightarrow\quad
+    \forall n\in\mathbb N,\;q(U^n(s))=q(U^n(t)).}
+\]
+**Proof:** the plateau implies that h-equivalence is U-stable, since the length-(h+1) successor words already contain all length-h shifted reports. Induction on n yields h-equivalence after n source updates; taking the zeroth observation gives equality for every n. The reverse implication is immediate by restriction to i≤h. This is a proof about a universally quantified *declared* stationary mathematical source, not a physically infinite experiment. The theorem's core induction and biconditional were kernel-checked using pinned Lean 4.14.0 at GitHub Actions [run 38350713441](https://github.com/femboy2112/SUCC/actions/runs/38350713441), commit \`72148563f240fb6f15dc35aff2d3c107df1cafcf\`.
+
+**Important separation:** the Lean theorem takes the **global plateau** as a hypothesis; the existence of some sufficiently early plateau for every *finite* S is a separate block-count argument CS4, which remains non-kernel-formalized. A partial/noisy apparent plateau is not a global antecedent. The source action must remain stationary; arbitrary event-dependent source backaction can invalidate the time-shift step. This distinguishes a rigorous finite logical certificate from physical execution of ω steps.
+
+## CS12. Partial source windows and dangerous false global transport
+
+New \`PartialSourceAudit\` takes only the explicitly exposed source addresses and their paired receipts. A sample can consistently support a mathematical observation successor while the full source does not. For the exact bit-swap source CS1, the incomplete sample of states (00,10) contains no conflicting original report fiber and therefore appears compatible; however the omitted state 01 has the same initial report as 00 and a different post-update report. Opening that omitted state gives a finite, decisive falsifier. The engine records \`sample_consistent=True\`, \`globally_certified_from_sample=False\` and a proposed (not executed) next source address, rather than inventing a total map V.
+
+Only when all addresses of the **declared finite complete source class** are observed, and no fiber obstruction remains, is the source-relative claim certified. This is NOT empirical authentication: a declared simulator could still omit physically existing states. Hostile mutants include repeated addresses, forged unseen states, wrong input types, changed epochs and false original-claim preservation. Remaining task: partial probabilistic source laws with simultaneous source-changing interventions, nonstationary history and empirical probe access.
+
+## CS13. Exact reproducibility receipt and honest genetic failure
+
+The reproducible receipt \`research/2026-10-13/EODCS_CAUSAL_PROBE_RECEIPT.json\` was derived from real GitHub workflow logs on both Python 3.10 and 3.13, which produced identical complete JSON objects (CI run 38350367922). A fixed exact seed schedule (0 through 19) recovers a valid genetic separating action word on **6** seeds and misses on **14**; every success is source-verified and every miss remains a genetic miss even when the separate complete pair-BFS oracle recovers the valid shortest word. One constrained one-generation test fails by construction and supplies an explicit budget-negative control. A truly action-congruence-dark source has no separation witness in the finite grammar, with no forged sensor. The bound is not a population-wide statistical success estimate, because these source tasks and heuristic rules are declared rather than independent empirical data.
+
+Two separate Python versions now replay the frozen receipt byte-for-byte in \`.github/workflows/eodcs-tests.yml\`; an additional test compares parsed saved JSON against freshly generated source output. Tests and full CI must still be checked at the **final** branch head before counting them as passing. No open-world proof completeness, academic novelty or RH inference follows.
