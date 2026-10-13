@@ -6,7 +6,7 @@ on:
       - 'research/eodcs-*'
   pull_request:
     paths:
-      - 'formal/EODCS_OrderAdjunction.lean'
+      - 'formal/EODCS_*.lean'
       - '.github/workflows/eodcs-lean.yml'
       - 'lean-toolchain'
   workflow_dispatch:
@@ -37,13 +37,16 @@ jobs:
         shell: bash
         run: |
           "$HOME/.elan/bin/lean" --version
-          "$HOME/.elan/bin/lean" formal/EODCS_OrderAdjunction.lean
+          for src in formal/EODCS_*.lean; do
+            "$HOME/.elan/bin/lean" "$src"
+          done
       - name: Fail closed on placeholders and imported axioms
         run: |
           python - <<'PY'
           from pathlib import Path
-          src=Path("formal/EODCS_OrderAdjunction.lean").read_text()
-          code=src.split("namespace ObservationalSUCC",1)[1]
-          for bad in ("sorry", "admit", "axiom ", "unsafe "):
-              assert bad not in code, bad
+          for path in sorted(Path("formal").glob("EODCS_*.lean")):
+              src=path.read_text()
+              code=src.split("namespace ObservationalSUCC",1)[1]
+              for bad in ("sorry", "admit", "axiom ", "unsafe "):
+                  assert bad not in code, (str(path),bad)
           PY
