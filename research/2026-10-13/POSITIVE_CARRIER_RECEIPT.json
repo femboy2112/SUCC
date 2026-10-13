@@ -1,0 +1,407 @@
+{
+  "availability_square": {
+    "coarse_linear_dimension": 1,
+    "coarse_menus_mixed": {
+      "(('a', 'o'),)": [
+        "a",
+        "b"
+      ],
+      "(('b', 'ok'),)": [
+        "a",
+        "b"
+      ],
+      "()": [
+        "a",
+        "b"
+      ]
+    },
+    "distinguishing_experiment": {
+      "legal_in_fine": false,
+      "verdict": "MORE_EXPERIMENTS_REQUIRED",
+      "word": [
+        [
+          "b",
+          "ok"
+        ]
+      ]
+    },
+    "fine_bottom_completed_linear_dimension": 2,
+    "fine_menus_mixed": {
+      "(('a', 'o'),)": [
+        "a"
+      ],
+      "()": [
+        "a"
+      ]
+    },
+    "illegal_policy_accepted_in_coarse": true,
+    "illegal_policy_rejected_in_fine": true,
+    "lawful_positive_dimension": 2,
+    "legal_word_probabilities_agree": true,
+    "p_mixed_b_bottom": "1/2",
+    "p_pure_b_bottom": "0",
+    "promotion_witness": {
+      "coarse_menu": [
+        "a",
+        "b"
+      ],
+      "fine_menu": [
+        "a"
+      ],
+      "source": "mixed",
+      "word": []
+    }
+  },
+  "calibration": {
+    "fooling_set": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "fooling_set_size": 4,
+    "lean_kernel_checked_core": "formal/EODCS_PositiveCarrier.lean:calibration_fooling_bound",
+    "nonnegative_rank": 4,
+    "rank": 3,
+    "row_dependence_r1_minus_r2_minus_r3_plus_r4": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "row_stochastic": true
+  },
+  "cone_theorem_round_trip_PW1": {
+    "column_stochastic": true,
+    "equivalent": true,
+    "generators": 4,
+    "valid": true
+  },
+  "cyclotomic_clocks": {
+    "C6_fooling_bound_only": 1,
+    "C6_hankel_block_strictly_positive": true,
+    "C6_six_state_carrier_preparations": {
+      "s0": [
+        "9/16",
+        "0",
+        "0",
+        "7/16",
+        "0",
+        "0"
+      ],
+      "sstar": [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "C6_six_state_carrier_tick": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/2"
+      ],
+      [
+        "4/9",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "7/16",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "4/7",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "9/16",
+        "0"
+      ]
+    ],
+    "family": [
+      {
+        "equivalent": true,
+        "k": 3,
+        "k_minus_1_generators_valid": false,
+        "linear_dimension": 3,
+        "mass_conserving": true,
+        "orbit_carrier_dimension": 3,
+        "orbit_cone_valid": true,
+        "peripheral_lower_bound": 3,
+        "phi": 2,
+        "positive_carrier_dimension": 3
+      },
+      {
+        "equivalent": true,
+        "k": 4,
+        "k_minus_1_generators_valid": false,
+        "linear_dimension": 3,
+        "mass_conserving": true,
+        "orbit_carrier_dimension": 4,
+        "orbit_cone_valid": true,
+        "peripheral_lower_bound": 4,
+        "phi": 2,
+        "positive_carrier_dimension": 4
+      },
+      {
+        "equivalent": true,
+        "k": 5,
+        "k_minus_1_generators_valid": false,
+        "linear_dimension": 5,
+        "mass_conserving": true,
+        "orbit_carrier_dimension": 5,
+        "orbit_cone_valid": true,
+        "peripheral_lower_bound": 5,
+        "phi": 4,
+        "positive_carrier_dimension": 5
+      },
+      {
+        "equivalent": true,
+        "k": 6,
+        "k_minus_1_generators_valid": false,
+        "linear_dimension": 3,
+        "mass_conserving": true,
+        "orbit_carrier_dimension": 6,
+        "orbit_cone_valid": true,
+        "peripheral_lower_bound": 6,
+        "phi": 2,
+        "positive_carrier_dimension": 6
+      },
+      {
+        "equivalent": true,
+        "k": 8,
+        "k_minus_1_generators_valid": false,
+        "linear_dimension": 5,
+        "mass_conserving": true,
+        "orbit_carrier_dimension": 8,
+        "orbit_cone_valid": true,
+        "peripheral_lower_bound": 8,
+        "phi": 4,
+        "positive_carrier_dimension": 8
+      },
+      {
+        "equivalent": true,
+        "k": 10,
+        "k_minus_1_generators_valid": false,
+        "linear_dimension": 5,
+        "mass_conserving": true,
+        "orbit_carrier_dimension": 10,
+        "orbit_cone_valid": true,
+        "peripheral_lower_bound": 10,
+        "phi": 4,
+        "positive_carrier_dimension": 10
+      },
+      {
+        "equivalent": true,
+        "k": 12,
+        "k_minus_1_generators_valid": false,
+        "linear_dimension": 5,
+        "mass_conserving": true,
+        "orbit_carrier_dimension": 12,
+        "orbit_cone_valid": true,
+        "peripheral_lower_bound": 12,
+        "phi": 4,
+        "positive_carrier_dimension": 12
+      },
+      {
+        "equivalent": true,
+        "k": 30,
+        "k_minus_1_generators_valid": false,
+        "linear_dimension": 9,
+        "mass_conserving": true,
+        "orbit_carrier_dimension": 30,
+        "orbit_cone_valid": true,
+        "peripheral_lower_bound": 30,
+        "phi": 8,
+        "positive_carrier_dimension": 30
+      }
+    ]
+  },
+  "path_walk_family": {
+    "PW1": {
+      "block": [
+        [
+          "1/8",
+          "1/8",
+          "0",
+          "0"
+        ],
+        [
+          "1/8",
+          "0",
+          "1/8",
+          "0"
+        ],
+        [
+          "0",
+          "1/8",
+          "0",
+          "1/8"
+        ],
+        [
+          "0",
+          "0",
+          "1/8",
+          "1/8"
+        ]
+      ],
+      "block_fooling_set_size": 4,
+      "block_rank": 3,
+      "carrier_found_dimension": 4,
+      "equivalence_certificate": true,
+      "linear_dimension": 3,
+      "mass_conserving_minimal": true,
+      "oracle_proposed_3": "FINITE_OBSTRUCTION",
+      "oracle_proposed_4": "LAWFUL_REALIZATION",
+      "positive_carrier_dimension": 4,
+      "silent_swap_preserves_linear_dependence": true,
+      "single_source_block_rows": "p_u(a z . a z')",
+      "states": 4
+    },
+    "PW2": {
+      "block_rank": 9,
+      "linear_dimension": 9,
+      "positive_carrier_dimension": 16,
+      "states": 16,
+      "tensor_fooling_set_size": 16,
+      "tensor_fooling_set_valid": true
+    },
+    "general_n": {
+      "linear_dimension": "3^n",
+      "lower_bound_witness": "product fooling set of size 4^n",
+      "positive_carrier_dimension": "4^n",
+      "upper_bound_witness": "product carrier"
+    }
+  },
+  "rational_clock": {
+    "charpoly_factored": "(x - 1/2) (x^2 - (3/5) x + 1/4)",
+    "charpoly_tick_on_minimal_space": [
+      "1",
+      "-11/10",
+      "11/20",
+      "-1/8"
+    ],
+    "cone_refinement_verdict": "UNRESOLVED",
+    "gaussian_power_imaginary_parts": [
+      {
+        "im": 4,
+        "im_mod_5": 4,
+        "n": 1,
+        "re": 3
+      },
+      {
+        "im": 24,
+        "im_mod_5": 4,
+        "n": 2,
+        "re": -7
+      },
+      {
+        "im": 44,
+        "im_mod_5": 4,
+        "n": 3,
+        "re": -117
+      },
+      {
+        "im": -336,
+        "im_mod_5": 4,
+        "n": 4,
+        "re": -527
+      },
+      {
+        "im": -3116,
+        "im_mod_5": 4,
+        "n": 5,
+        "re": -237
+      },
+      {
+        "im": -10296,
+        "im_mod_5": 4,
+        "n": 6,
+        "re": 11753
+      },
+      {
+        "im": 16124,
+        "im_mod_5": 4,
+        "n": 7,
+        "re": 76443
+      }
+    ],
+    "lean_kernel_checked_core": "formal/EODCS_PositiveCarrier.lean:gaussian_rotation_never_real",
+    "linear_dimension": 3,
+    "mass_conserving": true,
+    "peripheral_witness": {
+      "cos_theta_squared": "9/25",
+      "degree": 2,
+      "det": "1/4",
+      "factor": "x^2 - (3/5) x + (1/4)",
+      "modulus_squared": "1/4",
+      "ratio_order": null,
+      "root_of_unity_ratio": false,
+      "trace": "3/5"
+    },
+    "positive_carrier_dimension": "infinity",
+    "pure_tick_from_vstar_first_values": [
+      "1",
+      "23/50",
+      "93/500",
+      "383/5000",
+      "1973/50000",
+      "12263/500000"
+    ],
+    "reset_word_verdict": "NO_OBSTRUCTION",
+    "verdict": "FINITE_OBSTRUCTION",
+    "words_checked_nonnegative_length_le_6": true
+  },
+  "schema": "SUCC-POSITIVE-CARRIER-1",
+  "scope": {
+    "empirically_authenticated_source": false,
+    "general_decidability_of_finite_positive_dimension_claimed": false,
+    "main_merge_executed": false,
+    "rational_vs_real_positive_dimension_gap_exhibited_here": false,
+    "restricted_vs_unrestricted_cone_gap_exhibited_here": false,
+    "whole_program_Lean_refinement_proved": false
+  },
+  "status": "EXACT_POSITIVE_CARRIER_REALIZATION_BOUNDARY"
+}
