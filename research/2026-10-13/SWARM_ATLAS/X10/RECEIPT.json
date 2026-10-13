@@ -1,0 +1,294 @@
+{
+  "E40_authorized_external_anchor_sha256": "fae57afdd3ef687d24fef38f32ba0400709955920df0809df127538058c6edb2",
+  "anchor_sha256": {
+    "observational_succ/chaos_source_quotient.py": "8ce2c3bf9f7d1407f6b05f011b72e687163b9d13f6b2af18fd79efac0708f0c6",
+    "observational_succ/dynamic_fourier_tower.py": "4e05012124b4aea62e8ddcbc0f5ee6cd202efb389a053cf277a14a102e0419fd",
+    "observational_succ/nerode_probe_growth.py": "16fa756fe170b589877e38fa7257623a79fdc406a0454812ca6422fe314d12e6",
+    "research/2026-10-13/SWARM_ATLAS/D25.md": "9280b3d5c7b0c35d6317649fee8d2bc8d73e86892acee45795b978aabc766bb0",
+    "research/2026-10-13/SWARM_ATLAS/D26_SYMBOLIC_RETURN_FRONTIERS.md": "975ad037831f197da1c59978a01d730b2f86b9501bab4bc73cffbb162134aa47",
+    "research/2026-10-13/SWARM_ATLAS/D27.md": "fa92afae2c85ccb057816e746f6c99516a9ffa2304cfdfe6a11ad0932b210a54",
+    "research/2026-10-13/SWARM_ATLAS/D28.md": "12f55e79e3eb6d2e0d139143eca0aa9d260677e4b897f1ae10c9c443b1355752",
+    "research/2026-10-13/SWARM_ATLAS/D32_DELAY_COORDINATES.md": "dcf2c4e29187980c2310c19e73b64a60e1dd1bb0eb2fc5f980ca91833ef0e66f"
+  },
+  "bernoulli_product_cylinder_moments": {
+    "-1": "0",
+    "-2": "0",
+    "-3": "0",
+    "-4": "0",
+    "0": "1",
+    "1": "0",
+    "2": "0",
+    "3": "0",
+    "4": "0"
+  },
+  "binary_minimality_oracle": [
+    {
+      "fully_separating": 2,
+      "source_sensor_tables": 2,
+      "states": 1
+    },
+    {
+      "fully_separating": 8,
+      "source_sensor_tables": 16,
+      "states": 2
+    },
+    {
+      "fully_separating": 72,
+      "source_sensor_tables": 216,
+      "states": 3
+    }
+  ],
+  "command": "timeout 25s python research/2026-10-13/SWARM_ATLAS/X10/probe.py",
+  "compiler": "NOT RUN",
+  "exact_arithmetic": "integers/Fraction",
+  "exit_code": 0,
+  "four_state_source": {
+    "Uq": [
+      -1,
+      1,
+      -1,
+      1
+    ],
+    "delay_profiles": [
+      [
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1
+      ],
+      [
+        1,
+        -1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "generated_algebra_dimension": 4,
+    "hidden_linear_mode": [
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "linear_krylov_dimension": 3,
+    "mode_norm_squared": "1",
+    "nonlinear_readout": "1",
+    "positive_stationary_laws": [
+      {
+        "epsilon": "1/2",
+        "joint_delay_product_mean": "1/2",
+        "probability_masses": [
+          "3/8",
+          "1/8",
+          "1/8",
+          "3/8"
+        ]
+      },
+      {
+        "epsilon": "-1/2",
+        "joint_delay_product_mean": "-1/2",
+        "probability_masses": [
+          "1/8",
+          "3/8",
+          "3/8",
+          "1/8"
+        ]
+      }
+    ],
+    "q": [
+      -1,
+      -1,
+      1,
+      1
+    ],
+    "resolvent_witnesses": [
+      {
+        "delayed_readouts": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "z": "2"
+      },
+      {
+        "delayed_readouts": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "z": "3"
+      },
+      {
+        "delayed_readouts": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "z": "5"
+      }
+    ],
+    "transition": [
+      0,
+      2,
+      1,
+      3
+    ]
+  },
+  "full_suite": "NOT RUN",
+  "future_is_not_reducing": {
+    "P_U_previous_bit": [
+      "-1",
+      "-1",
+      "-1",
+      "-1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "-1",
+      "-1",
+      "-1",
+      "-1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "P_previous_bit": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "U_P_previous_bit_is_zero": true,
+    "commutator_norm_squared": 1,
+    "previous_bit_norm_squared": 1
+  },
+  "infinite_shift_simulated_or_proved_by_finite_search": false,
+  "nonconstant_phase_hidden_cylinders": [
+    {
+      "delay_length": 1,
+      "hidden_conditional_entropy_bits": 1,
+      "joint_phase_hidden_profiles": 4,
+      "visible_profiles": 2
+    },
+    {
+      "delay_length": 2,
+      "hidden_conditional_entropy_bits": 2,
+      "joint_phase_hidden_profiles": 8,
+      "visible_profiles": 2
+    },
+    {
+      "delay_length": 3,
+      "hidden_conditional_entropy_bits": 3,
+      "joint_phase_hidden_profiles": 16,
+      "visible_profiles": 2
+    },
+    {
+      "delay_length": 4,
+      "hidden_conditional_entropy_bits": 4,
+      "joint_phase_hidden_profiles": 32,
+      "visible_profiles": 2
+    },
+    {
+      "delay_length": 5,
+      "hidden_conditional_entropy_bits": 5,
+      "joint_phase_hidden_profiles": 64,
+      "visible_profiles": 2
+    },
+    {
+      "delay_length": 6,
+      "hidden_conditional_entropy_bits": 6,
+      "joint_phase_hidden_profiles": 128,
+      "visible_profiles": 2
+    },
+    {
+      "delay_length": 7,
+      "hidden_conditional_entropy_bits": 7,
+      "joint_phase_hidden_profiles": 256,
+      "visible_profiles": 2
+    },
+    {
+      "delay_length": 8,
+      "hidden_conditional_entropy_bits": 8,
+      "joint_phase_hidden_profiles": 512,
+      "visible_profiles": 2
+    }
+  ],
+  "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+  "probe_sha256": "22114bc7a5df53e2402d8368dd86c459bd3744d0cb3b82e59fcdc8b8e28c0832",
+  "python": "3.12.3",
+  "resource_caps": {
+    "address_space_mib": 256,
+    "cpu_seconds": 25
+  },
+  "source_authenticated": false,
+  "status": "TESTED MODEL"
+}
