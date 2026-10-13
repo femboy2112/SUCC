@@ -1,0 +1,80 @@
+{
+  "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+  "dependency_commits": {
+    "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+    "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+    "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+    "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d",
+    "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+    "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+    "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+    "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d"
+  },
+  "checks": [
+    {
+      "command": [
+        "/home/runner/.elan/bin/lean",
+        "-j1",
+        "-M2048",
+        "-o",
+        "Cache/IO.olean",
+        "Cache/IO.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 1.6096,
+      "observed_process_tree_peak_rss_kib": 220256,
+      "minimum_system_available_memory_kib": 14976736
+    },
+    {
+      "command": [
+        "/home/runner/.elan/bin/lean",
+        "-j1",
+        "-M2048",
+        "-o",
+        "Cache/Hashing.olean",
+        "Cache/Hashing.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 0.8058,
+      "observed_process_tree_peak_rss_kib": 286012,
+      "minimum_system_available_memory_kib": 14999404
+    },
+    {
+      "command": [
+        "/home/runner/.elan/bin/lean",
+        "-j1",
+        "-M2048",
+        "-o",
+        "Cache/Requests.olean",
+        "Cache/Requests.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 0.9064,
+      "observed_process_tree_peak_rss_kib": 279996,
+      "minimum_system_available_memory_kib": 15010676
+    },
+    {
+      "command": [
+        "/home/runner/.elan/bin/lean",
+        "-j1",
+        "-M2048",
+        "--run",
+        "/home/runner/work/_temp/swm-mathlib-4.14/SWMCache.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "installing leantar 0.1.14\nSelective dependency modules: 781\nAttempting to download 781 file(s)\nDecompressing 781 file(s)\nUnpacked in 1717 ms\nCompleted successfully!\n",
+      "stderr": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\n\n100 1059k  100 1059k    0     0  3242k      0 --:--:-- --:--:-- --:--:-- 3242k\n\n",
+      "elapsed_seconds": 46.2952,
+      "observed_process_tree_peak_rss_kib": 294588,
+      "minimum_system_available_memory_kib": 15008724,
+      "timeout_seconds": 600
+    }
+  ],
+  "result": "PASS"
+}

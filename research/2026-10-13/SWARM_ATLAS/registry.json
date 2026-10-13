@@ -154,9 +154,9 @@
       "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "worktree": "/home/leah/succ_lab/swm-a07",
       "branch": "research/swm-a07-2026-10-13",
-      "owner": null,
-      "state": "QUEUED",
-      "started_utc": null,
+      "owner": "/root/a07",
+      "state": "RUNNING",
+      "started_utc": "2026-10-13T07:56:51.188070+00:00",
       "finished_utc": null,
       "status": "UNVERIFIED",
       "witness_path": null,
@@ -271,14 +271,14 @@
       "worktree": "/home/leah/succ_lab/swm-b12",
       "branch": "research/swm-b12-2026-10-13",
       "owner": "/root/b12",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T07:49:32.958821+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T07:56:51.144140+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/receipts/B12_receipt.json",
+      "proof_state": "INDEPENDENT PRINCIPAL COMPACTNESS/IDEAL/SCOTT PROOF REVIEW SURVIVES; PAPER",
+      "commit": "24842dfc26517f068f0e0730b3c557ac7f1b4819",
+      "integration": "ACCEPTED"
     },
     {
       "id": "B13",
@@ -1324,7 +1324,8 @@
     "/root/x02",
     "/root/d25",
     "/root/b12",
-    "/root/b13"
+    "/root/b13",
+    "/root/a07"
   ],
   "provider_capacity_receipts": [
     {
@@ -1343,5 +1344,11 @@
       "failure": "Selected model is at capacity"
     }
   ],
-  "review_independence_note": "Principal /root did not derive child results and independently checked each accepted result with separate derivations/implementations. Native reasoner and implementation independence; same model/provider and inherited source family."
+  "review_independence_note": "Principal /root did not derive child results and independently checked each accepted result with separate derivations/implementations. Native reasoner and implementation independence; same model/provider and inherited source family.",
+  "independence_disclosures": [
+    {
+      "assignment": "A07",
+      "disclosure": "Initial malformed registry extraction printed completion/status metadata; no other dossier or proof conclusion read. Corrected to own entry; derivation remains independently source-built."
+    }
+  ]
 }
