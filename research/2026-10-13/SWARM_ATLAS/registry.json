@@ -437,7 +437,7 @@
       "finished_utc": "2026-10-13T09:33:51.783470+00:00",
       "status": "PROVED LOCAL",
       "witness_path": "research/2026-10-13/SWARM_ATLAS/C19_RECEIPT.json",
-      "proof_state": "FRESH NON-DERIVER NATIVE REVIEW SURVIVES; FINITE-INITIAL SUPPORT AND COUNTABLE-MIXTURE PAPER PROOFS",
+      "proof_state": "FINITE-HEIGHT ABSTRACT LEMMA LEAN4.14 KERNEL PROVED; QUANTUM INSTANTIATION PAPER; FRESH NON-DERIVER REVIEW SURVIVES",
       "commit": "e6c792b26f2497ba8cb7a266cc518ec79d59fd56",
       "integration": "ACCEPTED"
     },
@@ -594,14 +594,15 @@
       "worktree": "/home/leah/succ_lab/swm-d26",
       "branch": "research/swm-d26-2026-10-13",
       "owner": "/root/d26",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T09:33:51.783470+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T09:46:50.850375+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/D26_RECEIPT.json",
+      "proof_state": "INDEPENDENT PRINCIPAL PROOF/COUNTERMODEL DERIVATION SURVIVES; PAPER",
+      "commit": "e7bedd04eb27c0d7928e924b3e9fd1d58ff5861d",
+      "integration": "ACCEPTED",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/D26_SYMBOLIC_RETURN_FRONTIERS.md"
     },
     {
       "id": "D27",
@@ -686,14 +687,15 @@
       "worktree": "/home/leah/succ_lab/swm-d30",
       "branch": "research/swm-d30-2026-10-13",
       "owner": "/root/d30",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T09:33:51.783470+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T09:46:50.850375+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/D30_PDE_CLOSURE_RECEIPT.json",
+      "proof_state": "INDEPENDENT PRINCIPAL PROOF/COUNTERMODEL DERIVATION SURVIVES; PAPER",
+      "commit": "bac77169a0bd1905aa9ca8d36f61e8d1bbac4b2a",
+      "integration": "ACCEPTED",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/D30_PDE_CLOSURE.md"
     },
     {
       "id": "D31",
@@ -983,9 +985,9 @@
       "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "worktree": "/home/leah/succ_lab/swm-f43",
       "branch": "research/swm-f43-2026-10-13",
-      "owner": null,
-      "state": "QUEUED",
-      "started_utc": null,
+      "owner": "/root/f43",
+      "state": "RUNNING",
+      "started_utc": "2026-10-13T09:46:50.850375+00:00",
       "finished_utc": null,
       "status": "UNVERIFIED",
       "witness_path": null,
@@ -1007,14 +1009,14 @@
       "worktree": "/home/leah/succ_lab/swm-f44",
       "branch": "research/swm-f44-2026-10-13",
       "owner": "/root/f44",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T09:33:51.783470+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T09:46:50.850375+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/F44_receipt.json",
+      "proof_state": "FRESH NON-DERIVER D30 REVIEW RUNNING; PRINCIPAL SUGGESTED QUANTUM WITNESS",
+      "commit": "acc1942011cb8fbc7fdcd3e2e48d169af3d74bfc",
+      "integration": "PENDING REVIEW"
     },
     {
       "id": "F45",
@@ -1030,14 +1032,15 @@
       "worktree": "/home/leah/succ_lab/swm-f45",
       "branch": "research/swm-f45-2026-10-13",
       "owner": "/root/f45",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T09:36:07.852552+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T09:46:50.850375+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/F45_PROOF_COST_RECEIPT.json",
+      "proof_state": "INDEPENDENT PRINCIPAL PROOF/COUNTERMODEL DERIVATION SURVIVES; PAPER",
+      "commit": "8669b2f614d9bcbbe07820c796c14539a1df6807",
+      "integration": "ACCEPTED",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/F45_PROOF_COST_SCHEDULING.md"
     },
     {
       "id": "F46",
@@ -1208,15 +1211,16 @@
       "id": "X07",
       "claim_id": "SWM-X07",
       "title": "Markov histories x causal partial orders",
-      "parent_sha": null,
+      "parent_sha": "19bd7ec89e88ff2b76a322a82cb9d9b606df3e41",
       "worktree": "/home/leah/succ_lab/swm-x07",
-      "owner": null,
-      "state": "QUEUED",
+      "owner": "/root/x07",
+      "state": "RUNNING",
       "status": "UNVERIFIED",
       "integration": "PENDING",
       "commit": null,
       "proof_state": "NOT RUN",
-      "started_utc": null
+      "started_utc": "2026-10-13T09:46:50.850375+00:00",
+      "branch": "research/swm-x07-2026-10-13"
     },
     {
       "id": "X08",
@@ -1321,6 +1325,13 @@
       "independence": "Fresh non-deriver; author dossier read, author probe not read or imported; independent implementation",
       "verdict": "SURVIVES; POSITIVITY-ONLY EXISTENTIAL CORE SHARPENING; NO STABILIZATION DEADLINE",
       "path": "reviews/C19_RX_REVIEW.md"
+    },
+    {
+      "assignment": "F44",
+      "reviewer": "/root/d30",
+      "state": "RUNNING",
+      "independence": "D30 completed before cross-pollination; did not derive F44; author dossier only, no probe",
+      "worktree": "/home/leah/succ_lab/swm-d30"
     }
   ],
   "native_agents_genuinely_spawned_so_far": [
@@ -1367,7 +1378,9 @@
     "/root/f44",
     "/root/d26",
     "/root/d30",
-    "/root/f45"
+    "/root/f45",
+    "/root/x07",
+    "/root/f43"
   ],
   "provider_capacity_receipts": [
     {
