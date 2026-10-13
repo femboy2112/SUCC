@@ -3,7 +3,7 @@ import itertools
 import unittest
 
 from observational_succ.self_anchor_gauge import (
-    CandidateWorld, SourceGaugeError, decoder_audit, diagnose_signature, equality_signature,
+    CandidateWorld, SourceGaugeError, adaptive_gauge_shadow, decoder_audit, diagnose_signature, equality_signature,
     minimal_calibrations, permutation_worlds, sensor_transport,
     transported_change,
 )
@@ -190,6 +190,47 @@ class TestLanguageAdequacyDiagnostics(unittest.TestCase):
             diagnose_signature(permutation_worlds(2), (0, 1), ())
         with self.assertRaises(SourceGaugeError):
             diagnose_signature(permutation_worlds(2), (0,), (0,))
+
+
+class TestAdaptiveSourceGaugeNoGo(unittest.TestCase):
+    def test_all_feedback_policies_respect_equivariant_symmetry(self):
+        # C_n acts by cyclic rotations. These nontrivial authorized actions
+        # commute with C_n, so feedback cannot attach absolute source labels.
+        for n in (2, 3, 4):
+            rotations = [tuple((i + offset) % n for i in range(n)) for offset in range(n)]
+            dictionaries = tuple(itertools.permutations(range(n)))
+            actions = tuple(rotations)
+            for mode in range(3):
+                decisions = {}
+                for width in range(1, 5):
+                    for history in itertools.product(range(n), repeat=width):
+                        decisions[history] = (0 if mode == 0 else
+                                              history[-1] % n if mode == 1 else
+                                              (sum(history) + width) % n)
+                for gauge in rotations:
+                    for dictionary in dictionaries:
+                        for initial in range(n):
+                            shadow = adaptive_gauge_shadow(initial, dictionary, gauge, actions,
+                                                            decisions, rounds=3)
+                            self.assertEqual(shadow.first_reports, shadow.alternative_reports)
+                            self.assertEqual(len(shadow.choices), 3)
+                            self.assertEqual(shadow.alternative_source, gauge[initial])
+                            if gauge != rotations[0]:
+                                self.assertNotEqual(shadow.first_source, shadow.alternative_source)
+
+    def test_semantically_named_non_equivariant_action_is_real_symmetry_breaker(self):
+        # Constant f(x)=0 commutes with neither the two-state swap nor its
+        # transformed source labeling; this is NOT an action-only no-go case.
+        with self.assertRaisesRegex(SourceGaugeError, "breaks"):
+            adaptive_gauge_shadow(0, (0, 1), (1, 0), ((0, 0),), {(0,): 0}, 1)
+
+    def test_no_ghost_policy_actions_or_history_length(self):
+        for table, rounds in (({}, 1), ({(0,): 2}, 1)):
+            with self.assertRaises(SourceGaugeError):
+                adaptive_gauge_shadow(0, (0, 1), (1, 0), ((0, 1),), table, rounds)
+        with self.assertRaises(SourceGaugeError):
+            adaptive_gauge_shadow(0, (0, 1), (1, 0), ((0, 1),), {}, -1)
+
 
 if __name__ == '__main__':
     unittest.main()

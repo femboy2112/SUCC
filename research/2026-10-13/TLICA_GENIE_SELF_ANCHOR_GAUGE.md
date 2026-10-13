@@ -2,7 +2,7 @@
 
 **Date:** 2026-10-13  
 **Scope:** finite, deterministic, source-indexed semantics; stable/unstable *symbol* dictionaries; declared reference interventions  
-**Status:** CL-01–CL-05 proved here in specified finite domains by short set-theoretic arguments; 16 local Python regression tests and a deterministic probe receipt. The proofs are *paper derivations*, NOT Lean kernel checks or independently peer-reviewed priority claims. This is a TLICA→SUCC bridge proposal, not empirical validation of human cognition, physical source authentication, an automatic new-language generator, or RH.
+**Status:** CL-01–CL-06 proved here in specified finite domains by short set-theoretic arguments; 19 local Python regression tests and a deterministic probe receipt. The proofs are *paper derivations*, NOT Lean kernel checks or independently peer-reviewed priority claims. This is a TLICA→SUCC bridge proposal, not empirical validation of human cognition, physical source authentication, an automatic new-language generator, or RH.
 
 **Source freeze:** SUCC `main` `6e0d88f1b235b85188393bbcd64ac0436cb71a70` (2026-10-13); TLICA `main` `821ce7e6f57524d32e767a9c5ec5303e1796115e` (2026-10-02). The relevant TLICA foundation is frozen; this work modifies **SUCC only**.
 
@@ -92,6 +92,51 @@ For a fixed supplied report signature h (unknown state report and any already li
 
 The new `diagnose_signature` routine distinguishes these three modes and retains all source-specific cases, rather than collapsing an unexpected token into falsehood or a collision into certainty. Fresh tests include 3-state full-permutation model growth, explicit out-of-language sensory reports, and calibration-sensitive transitions. A model family can still omit reality; no finite diagnosis certifies Θ is exhaustive.
 
+### CL-06. Adaptive observational gauge no-go (PROVED conditional; classical symmetry reasoning)
+
+Let a finite group G act on the original source set X, let a hidden bijective
+report dictionary π:X→Y be unknown, and let every authorized primitive
+source action f_a:X→X **commute** with G (`f_a∘g=g∘f_a` for every g∈G).
+An experiment policy P may choose the next action *adaptively*, but only as a
+deterministic function of its previous visible report/action history, not a
+source/oracle query. Assume the candidate world family includes both
+`(x,π)` and `(g x,π∘g⁻¹)` for all relevant g.
+
+**Theorem.** For any g∈G and every finite experiment horizon (including
+feedback policies), these two worlds generate precisely the same observable
+reports and chosen action indices. Consequently, if the proposed claim T
+is not G-invariant (`T(x)≠T(gx)` for some x,g), **no such policy can determine
+T on the complete admitted world family.** More of the *same admissible
+experiments* will not recover the absolute dictionary.
+
+*Proof by induction on observation count.* At the initial step the second
+world reports `(π∘g⁻¹)(g x)=π(x)`. If their observable histories agree, a
+history-only deterministic policy chooses the same action a. Its next states
+are `f_a(x)` and `f_a(gx)=g f_a(x)` by equivariance. The corresponding
+reports are again identical, and induction continues. Source target values
+may nevertheless differ. CL-01 supplies the impossibility of a uniform
+original-target decoder. For any total infinite policy the streams agree
+at every finite index; this does **not** realize infinitely many experiments
+in elapsed physical time.
+
+**Crucial distinction:** this theorem is conditional on *all* actually
+available operations preserving the symmetry. A legitimately sourced action
+that does not commute with g may distinguish the pair. Preparing a known
+semantically named reference state also breaks the hypothesis, but must be
+physically licensed; merely inventing the name in the observer's language
+is not calibration. This is a finite, operational instance of gauge
+underdetermination, not a claim that real-world semantics is globally
+unknowable or that TLICA has received empirical confirmation.
+
+**Executable hostile controls:** `adaptive_gauge_shadow` accepts a declared
+complete finite action table and a deterministic report-history→action table.
+Across C_n cyclic gauges (n=2,3,4), permutations, original states and three
+feedback policies the two source histories remain indistinguishable. A
+semantically named constant action on two states violates equivariance and
+is explicitly rejected; unavailable policy entries are also rejected rather
+than guessed. These are exact finite tests of the *stated assumptions*,
+not independently authenticated experiments.
+
 ## 4. Proposed source-map adequacy loop for generalized SUCC
 
 1. **Anchor:** retain actualized, time-stamped, source/versioned self-world encounters. Declare which comparisons are meaningful without a concept dictionary (equality pattern, available actions and lawful order).
@@ -102,7 +147,7 @@ The new `diagnose_signature` routine distinguishes these three modes and retains
 6. **Transport:** certify any cross-epoch correspondence before computing 'change'; use SUCC NoGhost/source-indexed descent for real interventions and groupoid/holonomy machinery for competing paths.
 7. **Try to falsify:** adversarial dictionary drift, noninjective channels, withheld unseen θ, correlated repetitions, model-changing source interventions, missing preparation access, nonstationary instruments and high-ρ self-defensive model commitment.
 
-This is an **architecture**, not implemented open-ended concept invention. The new finite module implements the exact cross-model decoder criterion, minimum known-reference search, finite permutation universality and equality/transport diagnostics. Existing SUCC modules perform other steps under their own narrower hypotheses. Do not claim an integration that hasn't been coded.
+This is an **architecture**, not implemented open-ended concept invention. The new finite module implements the exact cross-model decoder criterion, minimum known-reference search, finite permutation universality, equality/transport diagnostics and exact gauge-equivariant adaptive shadow witnesses. Existing SUCC modules perform other steps under their own narrower hypotheses. Do not claim an integration that hasn't been coded.
 
 ## 5. TLICA mapping: keep the diagnostics separate
 
@@ -120,10 +165,10 @@ This is an **architecture**, not implemented open-ended concept invention. The n
 ## 6. Reproduction and provenance
 
 - `observational_succ/self_anchor_gauge.py`: complete finite world definition and exact algorithms.
-- `tests/test_self_anchor_gauge.py`: 16 tests, including independent brute-force decoder oracle, 1–5 label symmetric groups, exhaustive length≤4 equality-orbit equivalence, all 3-label frame pair transports, drift, collapse and source/epoch invalid input.
+- `tests/test_self_anchor_gauge.py`: 19 tests, including independent brute-force decoder oracle, 1–5 label symmetric groups, exhaustive length≤4 equality-orbit equivalence, all 3-label frame pair transports, drift, collapse and source/epoch invalid input.
 - `scripts/self_anchor_gauge_probe.py`: deterministic structured receipt; reproduce with `PYTHONPATH=. python scripts/self_anchor_gauge_probe.py`.
 - `research/2026-10-13/SELF_ANCHOR_GAUGE_RECEIPT.json`: exact data output from the probe; it is **not** an independent proof of the stated universal theorems.
-- On 2026-10-13, local Python 3.13.5, `python -m unittest discover -s tests -p 'test_self_anchor_gauge.py' -v` → **16 passed**, and probe JSON parsed. Full SUCC 2,132-test union suite, provenance gate and Lean checks were not runnable in this container without cloning the repository; CI must supply that independent validation.
+- On 2026-10-13, local Python 3.13.5, `python -m unittest discover -s tests -p 'test_self_anchor_gauge.py' -v` → **19 passed**, and probe JSON parsed. Full SUCC 2,132-test union suite, provenance gate and Lean checks were not runnable in this container without cloning the repository; CI must supply that independent validation.
 
 **Prior art/credit:** finite observation factorization is ordinary equivalence-relation/quotient mathematics and already in SUCC F1. Label switching, group actions, permutation-group bases, active automata learning (L*), Nerode distinguishability and counterexample-guided abstraction refinement are standard. In particular a base is a subset with trivial pointwise stabilizer (Moscatiello & Roney-Dougal, *Monatshefte für Mathematik*, 2022); active automata learning assumes member/equivalence queries with genuine oracle access. The combination is a precise **new-to-project synthesis**, not a claim of mathematically unprecedented group theory or an artificial intelligence breakthrough.
 
@@ -137,4 +182,4 @@ This is an **architecture**, not implemented open-ended concept invention. The n
 
 ### Verdict
 
-**PROVED (within declared finite source tables):** CL-01–CL-04. **OBSERVED locally:** targeted 16 Python tests and exact deterministic receipt. **REFUTED:** self-identity or ever more inference alone supplies an absolute dictionary; previous calibration remains sound across unconstrained source drift; calibrating a known noninjective sensor restores lost state information. **UNVERIFIED:** empirical TLICA mapping, unknown-world automatic source adequacy, physical calibration provenance, general language discovery, mathematical novelty beyond existing components.
+**PROVED (within declared finite source tables and specified equivariant actions):** CL-01–CL-06. **OBSERVED locally:** targeted 19 Python tests and exact deterministic receipt. **REFUTED:** self-identity or ever more inference alone supplies an absolute dictionary; previous calibration remains sound across unconstrained source drift; calibrating a known noninjective sensor restores lost state information. **UNVERIFIED:** empirical TLICA mapping, unknown-world automatic source adequacy, physical calibration provenance, general language discovery, mathematical novelty beyond existing components.

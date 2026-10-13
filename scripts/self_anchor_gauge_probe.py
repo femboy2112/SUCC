@@ -4,7 +4,7 @@ import itertools
 import json
 
 from observational_succ.self_anchor_gauge import (
-    CandidateWorld, decoder_audit, diagnose_signature, equality_signature, minimal_calibrations,
+    CandidateWorld, adaptive_gauge_shadow, decoder_audit, diagnose_signature, equality_signature, minimal_calibrations,
     permutation_worlds, sensor_transport, transported_change,
 )
 
@@ -48,7 +48,26 @@ def report():
     unpredicted = diagnose_signature(permutation_worlds(2), ("alien report",))
     assert (initially.status, expanded.status, unpredicted.status) == (
         "IDENTIFIED", "AMBIGUOUS", "OUT_OF_MODEL")
+    # No adaptive report-only policy can break a declared common C3 gauge
+    # while every actually available action remains C3-equivariant.
+    actions = ((0, 1, 2), (1, 2, 0), (2, 0, 1))
+    policy = {h: (sum(h) + len(h)) % 3
+              for length in range(1, 4)
+              for h in itertools.product(range(3), repeat=length)}
+    shadow = adaptive_gauge_shadow(
+        0, (2, 0, 1), (1, 2, 0), actions, policy, rounds=2)
+    assert shadow.first_reports == shadow.alternative_reports
+    assert shadow.first_source != shadow.alternative_source
     return {
+        "adaptive_equivariant_shadow": {
+            "paired_initial_sources_distinct": True,
+            "source_history_reports_identical": shadow.first_reports == shadow.alternative_reports,
+            "first_reports": list(shadow.first_reports),
+            "alternative_reports": list(shadow.alternative_reports),
+            "chosen_actions": list(shadow.choices),
+            "all_available_actions_commute_with_gauge": True,
+            "actual_physical_probe_performed": False,
+        },
         "language_adequacy_diagnostic": {
             "single_dictionary": initially.status,
             "expanded_dictionary_class": expanded.status,

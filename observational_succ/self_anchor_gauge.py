@@ -228,3 +228,86 @@ def diagnose_signature(worlds: Sequence[CandidateWorld],
     if len(targets) == 1:
         return SignatureDiagnosis("IDENTIFIED", tuple(cases), targets)
     return SignatureDiagnosis("AMBIGUOUS", tuple(cases), targets)
+
+
+@dataclass(frozen=True)
+class AdaptiveGaugeShadow:
+    """Two hypothetical histories related by an unbroken source-map symmetry.
+
+    This is a mathematical indistinguishability witness, NOT an observed pair
+    of parallel physical experiments. Equal report words do not license a
+    new calibration operation or an inference about absolute source labels.
+    """
+
+    first_source: int
+    alternative_source: int
+    first_dictionary: tuple[int, ...]
+    alternative_dictionary: tuple[int, ...]
+    first_reports: tuple[int, ...]
+    alternative_reports: tuple[int, ...]
+    choices: tuple[int, ...]
+
+
+def adaptive_gauge_shadow(
+    initial_source: int,
+    dictionary: Sequence[int],
+    gauge: Sequence[int],
+    actions: Sequence[Sequence[int]],
+    policy: Mapping[tuple[int, ...], int],
+    rounds: int,
+) -> AdaptiveGaugeShadow:
+    """An exact pair of indistinguishable *adaptive* observation histories.
+
+    A source symmetry g and every authorized action f must satisfy f g = g f.
+    The second hypothesis begins at g(x) with dictionary π∘g⁻¹. A finite
+    deterministic policy is explicitly supplied as a table indexed ONLY by
+    previous observation words; it cannot inspect source state or dictionary.
+    The resulting report/action histories coincide, even under feedback.
+
+    If an action breaks equivariance or an adaptive policy has no entry for
+    a reached history, reject rather than manufacturing a new experiment.
+    """
+    p, g = tuple(dictionary), tuple(gauge)
+    n = len(p)
+    if n < 1 or sorted(p) != list(range(n)) or sorted(g) != list(range(n)):
+        raise SourceGaugeError("dictionary and gauge must be permutations of a shared nonempty alphabet")
+    if type(initial_source) is not int or not 0 <= initial_source < n:
+        raise SourceGaugeError("unknown original source must be a valid state")
+    if type(rounds) is not int or rounds < 0:
+        raise SourceGaugeError("rounds must be a nonnegative integer")
+    transitions = tuple(tuple(a) for a in actions)
+    if not transitions or any(len(a) != n or any(type(y) is not int or not 0 <= y < n for y in a)
+                              for a in transitions):
+        raise SourceGaugeError("one or more total, in-carrier action maps required")
+    for a in transitions:
+        if any(a[g[x]] != g[a[x]] for x in range(n)):
+            raise SourceGaugeError("action breaks the proposed source-map symmetry")
+    # Make an immutable *snapshot* of the policy before running either world.
+    decisions = dict(policy)
+    if any(not isinstance(k, tuple) or type(v) is not int or not 0 <= v < len(transitions)
+           for k, v in decisions.items()):
+        raise SourceGaugeError("policy must map report-history tuples to authorized action indices")
+    inverse = [0] * n
+    for x, y in enumerate(g):
+        inverse[y] = x
+    p_shadow = tuple(p[inverse[y]] for y in range(n))
+    a, b = initial_source, g[initial_source]
+    histories_a, histories_b = [p[a]], [p_shadow[b]]
+    selected = []
+    for _ in range(rounds):
+        hist = tuple(histories_a)
+        if hist not in decisions:
+            raise SourceGaugeError("policy has no action for reached observation history")
+        action_index = decisions[hist]
+        selected.append(action_index)
+        a = transitions[action_index][a]
+        b = transitions[action_index][b]
+        histories_a.append(p[a])
+        histories_b.append(p_shadow[b])
+    if histories_a != histories_b or b != g[a]:
+        # The trace comparison should be a theorem under the validation gates.
+        raise AssertionError("equivariant source-shadow invariant broken")
+    return AdaptiveGaugeShadow(
+        initial_source, g[initial_source], p, p_shadow,
+        tuple(histories_a), tuple(histories_b), tuple(selected),
+    )
