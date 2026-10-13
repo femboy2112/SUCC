@@ -58,6 +58,28 @@ jobs:
           PY
       - name: Run all mathematical, logic, quantum, source and hostile tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Reconstruct the historical Galilean-to-Lorentz SUCC repair
+        run: |
+          python scripts/historical_galilean_lorentz_probe.py > "$RUNNER_TEMP/historical-galileo-lorentz.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          d=json.loads((Path(os.environ["RUNNER_TEMP"])/"historical-galileo-lorentz.json").read_text())
+          r=d["results"]
+          assert r["mechanical_old_field_positive"]["free_particle_law_preserved"] is True
+          assert r["galilean_obstruction"]["galilean_quadratic_wave_failure"]=="-42/25"
+          assert r["galilean_obstruction"]["galilean_operator_defect"]==[["0","-3/5"],["-3/5","9/25"]]
+          assert r["galilean_obstruction"]["lorentz_operator_defect"]==[["0","0"],["0","0"]]
+          assert r["galilean_obstruction"]["two_light_rays_clock_sufficient"] is True
+          assert r["distributed_metric_shadows"]["insufficient"]["status"]=="UNRESOLVED"
+          assert r["distributed_metric_shadows"]["constructed"]["status"]=="GLOBAL_GEOMETRY_CONSTRUCTED"
+          assert r["distributed_metric_shadows"]["constructed"]["metric"]==[["1","0"],["0","-1"]]
+          assert r["transverse_maxwell_subsystem"]["maxwell_sector_covariance"] is True
+          assert r["transverse_maxwell_subsystem"]["galilean_principal_trace"]=="-6/5"
+          assert r["moving_medium_counter_repair"]["same_form_vacuum_operator"] is False
+          assert d["empirical_source_authentication"] is False
+          assert d["RH_or_Weil_positivity_proved"] is False
+          PY
       - name: Exact source-relative coverage and correlated-update checks
         run: |
           python scripts/coverage_lower_bounds_probe.py > "$RUNNER_TEMP/coverage-lower-bounds.json"
