@@ -216,14 +216,28 @@ def offcritical_self_dual_zero_witness()->dict:
     disc=b*b-4
     if disc!=F(21,25) or c['C0']!=1 or c['C1']!=1:
         raise AssertionError("Wrong exact quadratic / normalization")
+    # The flags below are DERIVED by exact rational arithmetic, not asserted.
+    # Roots of t^2+b*t+1 have product 1; disc>0 => two DISTINCT negative-real
+    # roots, so their moduli are R and 1/R with R!=1 and R=(11+sqrt21)/10.
+    #   R>1  <=>  11+sqrt21 > 10  <=>  sqrt21 > -1           (and 11>10 suffices)
+    #   R<2  <=>  11+sqrt21 < 20  <=>  sqrt21 < 9  <=>  21 < 81
+    # Both bounds are decided by exact integer comparisons below.
+    distinct_real_roots = disc>0                       # => |t|!=1 => Re(s)!=1/2
+    radical_gt_1 = F(11) > F(10)                        # 11+sqrt21 > 11 > 10 => R>1
+    radical_lt_2 = F(21) < F(81)                        # sqrt21 < 9 => R<2
+    between = bool(radical_gt_1 and radical_lt_2)       # 1<R<2 (subset of (1/2,2))
+    off_line = bool(distinct_real_roots)               # distinct real roots => R!=1 => off Re=1/2
+    inside_strip = between                             # 1<R<2 => Re(s)=1/2 +/- logR/log4 in (0,1)
+    countermodel = bool(off_line and inside_strip and disc==F(21,25)
+                        and c['C0']==1 and c['C1']==1)
     return {"root_scale":F(4),"center_weight":F(11,10),
             "t_quadratic_constant_first":(F(1),b,F(1)),
             "discriminant":disc,
             "large_root_modulus_radical":"(11+sqrt(21))/10",
-            "radical_proved_strictly_between_1_and_2":True,
+            "radical_proved_strictly_between_1_and_2":between,
             "zeros_s_description":"1/2 +/- log((11+sqrt(21))/10)/log(4) + (2k+1)*pi*i/log(4)",
-            "zeros_off_critical_line":True,
-            "zeros_inside_open_critical_strip":True,
+            "zeros_off_critical_line":off_line,
+            "zeros_inside_open_critical_strip":inside_strip,
             "actual_riemann_zeta_changed":False,
-            "countermodel_to_FE_implies_RH":True,
+            "countermodel_to_FE_implies_RH":countermodel,
             "analytic_gaussian_Fourier_theorem_used":True}

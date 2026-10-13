@@ -65,6 +65,11 @@ def receipt()->dict:
     analytic=symmetric_jet_with_forced_offline_zero(8)
     omega=omega_rival_at_horizon(100)
     unre=unrealizable_limit_prefix(100)
+    # Computed, not asserted: a single repair probe is impossible iff NO singleton
+    # candidate proves the factorization (exhaustive over the candidate menu).
+    single_probe_suffices=any(
+        cover.factor(("pair_index",c),"original_bit").proved
+        for c in ("cover_0","cover_1","cover_2"))
     return {
         "status":"FINITE_CARRIER_RELATIVE_OBSTRUCTION_RECEIPT",
         "mathematical_status":"classical proof obligations plus exact finite source checks",
@@ -80,7 +85,7 @@ def receipt()->dict:
             "translation":list(loop.escape.translation),
             "source_walk_verified":graph.verify(loop)},
         "repair":{"minimum_probe_count":len(r.selected),"selected":list(r.selected),
-                  "lower_probe_count_1_impossible":True},
+                  "lower_probe_count_1_impossible":not single_probe_suffices},
         "frame_holonomy":{"source_zero_invariant":zeros['claim_is_frame_invariant'],
               "source_xor_invariant":xor['claim_is_frame_invariant']},
         "changing_carrier":{"observation_square_commutes":desk.covariance,
@@ -90,7 +95,7 @@ def receipt()->dict:
                  "boundary_rival":omega['rival'],
                  "locally_realizable_no_global_source":not unre['infinite_report_realizable']},
         "analytic_moonshot_falsifier":{
-             "reflection_symmetry":True,"matching_origin_jet_order":analytic["jet_order"],
+             "reflection_symmetry":analytic["reflection_symmetric"],"matching_origin_jet_order":analytic["jet_order"],
              "offcritical_zero_real":str(analytic["zero_real"]),
              "offcritical_zero_imag":str(analytic["zero_imag"]),
              "actual_riemann_xi_modified":analytic["actual_Riemann_xi_used_or_modified"]},

@@ -81,10 +81,12 @@ def symmetric_jet_with_forced_offline_zero(order:int,
     for c in polynomial:
         reflection=_poly_add(reflection,tuple(c*v for v in base))
         base=_poly_mul(base,(F(1),F(-1)))
-    if reflection!=polynomial:
+    reflection_symmetric=(reflection==polynomial)
+    if not reflection_symmetric:
         raise AssertionError("Polynomial reflection does not hold")
     return {"status":"EXACT_FINITE_JET_REFLECTION_INSUFFICIENT",
             "jet_order":order,"zero_real":real_part,"zero_imag":imag_part,
+            "reflection_symmetric":reflection_symmetric,
             "coefficients":polynomial,"auxiliary_A":A,"auxiliary_B":B,
             "other_witness":"reflection at 1-s and conjugation by real coefficients",
             "actual_Riemann_xi_used_or_modified":False}
