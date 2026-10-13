@@ -4,8 +4,12 @@ on:
   push:
     branches:
       - 'research/eodcs-*'
+      - 'research/voyager-*'
   pull_request:
     paths:
+      - 'observational_succ/voyager_*.py'
+      - 'scripts/voyager_*.py'
+      - 'research/2026-10-13/VOYAGER_*.json'
       - 'observational_succ/finite_poset_synthesis.py'
       - 'observational_succ/voltage_cover_synthesis.py'
       - 'observational_succ/eodcs_source_uncertainty.py'
