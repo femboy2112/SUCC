@@ -1,0 +1,34 @@
+name: Categorical synthesis proof audit
+
+on:
+  push:
+    branches: ['research/cegis-categorical-discovery-2026-10-13']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-snapshot:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Archive tracked source for independent local replay
+        run: |
+          python - <<'PY'
+          import os, pathlib, subprocess, zipfile
+          paths = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
+          dest = pathlib.Path(os.environ['RUNNER_TEMP']) / 'succ-source.zip'
+          with zipfile.ZipFile(dest, 'w', zipfile.ZIP_DEFLATED) as z:
+              for name in paths:
+                  if name and pathlib.Path(name).is_file():
+                      z.write(name, name)
+          print(subprocess.check_output(['git','rev-parse','HEAD']).decode().strip())
+          print('Tracked source bytes:', dest.stat().st_size)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: categorical-synthesis-source
+          path: ${{ runner.temp }}/succ-source.zip
+          retention-days: 1
