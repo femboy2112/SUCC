@@ -5,6 +5,7 @@ on:
     branches:
       - 'research/eodcs-*'
       - 'research/voyager-*'
+      - 'research/carrier-indexed-*'
   pull_request:
     paths:
       - 'observational_succ/voyager_*.py'
@@ -15,6 +16,8 @@ on:
       - 'observational_succ/eodcs_source_uncertainty.py'
       - 'observational_succ/eodcs_evolutionary_discovery.py'
       - 'tests/test_eodcs_*.py'
+      - 'observational_succ/carrier_indexed.py'
+      - 'scripts/carrier_indexed_probe.py'
       - 'scripts/eodcs_probe.py'
       - '.github/workflows/eodcs-tests.yml'
   workflow_dispatch:
@@ -80,3 +83,8 @@ jobs:
         run: |
           python scripts/voyager_adaptive_probe.py > "$RUNNER_TEMP/voyager-adaptive.json"
           diff -u research/2026-10-13/VOYAGER_ADAPTIVE_SOURCE_RECEIPT.json "$RUNNER_TEMP/voyager-adaptive.json"
+
+      - name: Reproduce exact frozen carrier-indexed source and actual-history receipt
+        run: |
+          python scripts/carrier_indexed_probe.py > "$RUNNER_TEMP/carrier-indexed.json"
+          diff -u research/2026-10-13/CARRIER_INDEXED_SOURCE_RECEIPT.json "$RUNNER_TEMP/carrier-indexed.json"

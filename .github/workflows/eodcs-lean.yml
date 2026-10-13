@@ -5,6 +5,7 @@ on:
     branches:
       - 'research/eodcs-*'
       - 'research/voyager-*'
+      - 'research/carrier-indexed-*'
   pull_request:
     paths:
       - 'formal/EODCS_*.lean'

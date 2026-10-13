@@ -1,0 +1,42 @@
+{
+  "claim": "SWM-X01",
+  "full_suite": "NOT RUN BY X01; root integration owns aggregate validation",
+  "kernel_gates": [
+    {
+      "exit_code": 0,
+      "module": "SwarmTopology.lean",
+      "scope": "independent compilation of reviewed B09 module"
+    },
+    {
+      "exit_code": 0,
+      "module": "SwarmX01CompletionTransport.lean",
+      "scope": "trace-level continuous transport; actualization reflection; same-report surjective completion"
+    },
+    {
+      "exit_code": 0,
+      "module": "SwarmPolicyCompactness.lean",
+      "scope": "independent compilation of root bounded-halting open-cover core"
+    }
+  ],
+  "lean_commit": "410fab728470",
+  "lean_version": "4.14.0",
+  "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+  "paper_only": [
+    "action-word induction from strict action map to trace intertwiner",
+    "compact image equality and exact onto criterion",
+    "exact finite-coordinate recovery characterization of injectivity"
+  ],
+  "root_policy_sha256": "477f1bfa2fe5d84747a38ce4abded2325f085293f156b27dcb5a7b3bc3f00f24",
+  "runtime_workaround": "Previously installed executable-location-only procfs LD_PRELOAD shim; official Lean theorem kernel unchanged",
+  "sha256": {
+    "formal/swarm_topology/SwarmTopology.lean": "9528c3bdc7d6e6d3554582fe17eb9b05e49fd811cfcd9028cb381e5ad9b74c86",
+    "formal/swarm_topology/SwarmX01CompletionTransport.lean": "1510cfaca83bcbc5a30d128110525d8df2328a46d44d702036f245e455261141",
+    "scripts/swarm_x01_completion_transport_probe.py": "cf05aa1c2d45451b5f438470148ae982b676548295af8dd740d1435fc2f98fef",
+    "tests/test_swarm_x01_completion_transport.py": "05cb404a2bfe977750defc9cb6b78937c222b16e31da8c5a834fab55420c8f97"
+  },
+  "source_snapshot": "24c93bf0c2bdd4f3f84e9be6367bec15308270ce",
+  "targeted_tests": {
+    "count": 4,
+    "result": "PASS"
+  }
+}

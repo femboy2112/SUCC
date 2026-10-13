@@ -1,0 +1,46 @@
+{
+  "source_cutoffs": [
+    0,
+    1,
+    2,
+    8,
+    31,
+    100
+  ],
+  "noncompact_first_zero_lengths": [
+    1,
+    2,
+    3,
+    9,
+    32,
+    101
+  ],
+  "compact_discontinuous_lengths": [
+    2,
+    3,
+    4,
+    10,
+    33,
+    102
+  ],
+  "compact_continuous_finite_control_bound": 101,
+  "counterfactual_initial_bit_reports_identify_xor": true,
+  "reset_free_destructive_xor_policy_by_depth_0_through_6": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "nondestructive_xor_policy_by_depth_0_through_2": [
+    false,
+    false,
+    true
+  ],
+  "general_no_reset_impossibility_proved_by_erased_source_pair": true,
+  "topological_compactness_verified_by_this_program": false,
+  "infinite_source_or_policy_simulated": false,
+  "RH_or_physical_hardware_claimed": false
+}

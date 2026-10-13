@@ -1,0 +1,100 @@
+{
+  "C17": {
+    "coarsest_refinement_classes": 2,
+    "equal_support_probability_descent": false,
+    "law_descent_witness": [
+      1,
+      0
+    ],
+    "post_state_emission_factorization_on_fixed_singleton_carrier": false,
+    "recorded_original_posteriors": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "same_current_different_original": true
+  },
+  "C18": {
+    "duplicate_conditional_probability": "1",
+    "duplicate_posterior_H": "3/4",
+    "factorized_bayes_gluing_commutes": true,
+    "first_posterior_H": "3/4",
+    "fresh_independent_posterior_H": "9/10",
+    "separator_posterior_H": "3/4"
+  },
+  "C19": {
+    "erased_carriers_equal": true,
+    "model": "finite real rational CP instrument; dimensions at most four",
+    "multiple_kraus_per_outcome": 2,
+    "recorded_original0_probability": "1",
+    "recorded_original1_probability": "1"
+  },
+  "C20": {
+    "after_destructive_A_continuation_cost": null,
+    "after_preserving_A_continuation_cost": "1",
+    "exact_garbling": [
+      [
+        "3/4",
+        "1/4"
+      ],
+      [
+        "1/4",
+        "3/4"
+      ]
+    ],
+    "noncomparable": true,
+    "reverse_garbling_exists": false,
+    "same_one_step_A_readout": true
+  },
+  "C21": {
+    "destructive_parity_cost": null,
+    "horizon": 7,
+    "no_reset_in_menu": true,
+    "preserving_parity_cost": "2",
+    "unbounded_no_go_has_paper_proof": true
+  },
+  "C22": {
+    "destructive_reads_defect": [
+      1,
+      [
+        0,
+        0,
+        0
+      ],
+      "1",
+      "0"
+    ],
+    "full_report_subkernels_checked": true,
+    "nondestructive_reads_commute": true
+  },
+  "C23": {
+    "calibrated_duplicate_evidence_ville": {
+      "crossing_probability": "0",
+      "expectation": "1",
+      "nodes": 5,
+      "ville_bound": "1/9"
+    },
+    "naive_squared_LR_expectation": "7/3",
+    "naive_threshold9_crossing_probability": "1/4",
+    "threshold9_ville_bound": "1/9"
+  },
+  "C24": {
+    "energy_claim_from_kernel_alone": false,
+    "invertible_map_memory_cardinality": 1,
+    "reset_bit_memory_cardinality": 2,
+    "three_to_one_fiber_memory_cardinality": 3
+  },
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "schema": "SWARM-C-PROBABILITY-1",
+  "scope": {
+    "classical_mathematics_and_declared_source_models": true,
+    "lean_invoked": false,
+    "physical_source_authenticated": false,
+    "psychological_or_RH_result": false
+  }
+}

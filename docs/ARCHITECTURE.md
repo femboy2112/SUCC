@@ -66,6 +66,16 @@ The mathematical subsystems have distinct domains and kinds of evidence. They ar
 
 ## Research provenance and gates
 
+The additive [NO-GHOST layer](../research/2026-10-13/NO_GHOST/INTEGRATION.md)
+distinguishes legal private-path support, full joint law, and source-blind public
+policy realization. `no_ghost` compiles finite declared source/occurrence kernels
+and exact marginal/flow certificates; `no_ghost_coherence` checks chosen private
+comparisons; `no_ghost_policy` retains public information sets through a finite
+realization plan and independently replays the extracted policy. Its conditional
+schedule-presentation descent requires complete constraints, authorized connected
+charts, path coherence and restriction naturality. None of these operations
+marks a merely possible trajectory as a performed event.
+
 Claims should be labeled CLASSICAL, PROVED LOCAL, TESTED MODEL, HYPOTHESIS, UNVERIFIED or REFUTED and connected to a precise statement, author/source, proof or test, mutation controls and assumptions.
 
 The mathematical **source of truth** is not merely a numerical plot. Finite negative claims require exact algebra or independently justified error enclosures. Even an impeccably rigorous prime-only interval is not a completed Gamma/Weil interval.
@@ -472,3 +482,20 @@ See [CS1–CS10](../research/2026-10-13/EODCS_CAUSAL_NERODE_PROBE_GENESIS.md), c
 **Observational geometry:** the exact dyadic first-difference ultrametric organizes finite prefix resolution; convergence in this metric must not be upgraded to original-source realization without a closed source image. TLICA contact/toolkit/provenance/identity diagnostics remain separate. No source-derived Weil positivity or RH theorem follows merely from any of these classical limits. See [V0–V10](../research/2026-10-13/VOYAGER_OBSERVATIONAL_PROFINITE_COMPLETION.md), ledger O610–O630.
 
 **Adaptive no-go lamp:** Every finite set of observed binary head/shift coordinates has TWO explicit consistent full streams: one finite-tail-zero and one cofinite-tail-one. Lean proves this for arbitrary target profiles and probe schedules; a deterministic finite terminating adaptive policy can only react to such a finite transcript, and therefore cannot produce a decision correct on both tail classes. The separate simulator replays one identical policy path with both sources. This is a demonstrated **probe-closure boundary**, not a statement that analytic global claims are inherently unprovable, that source history was physically measured, or that the original carrier equals its projective completion. [V11–V12](../research/2026-10-13/VOYAGER_OBSERVATIONAL_PROFINITE_COMPLETION.md), O631–O637.
+
+## Canonical source-indexed carrier — compatibility between all SUCC mathematics
+
+The carrier, not a hypothetical new sheaf, is the architectural base. Its mathematical original labels S are fixed through an actual observation path; only its current stage C_h and retained receipt history change. A lawful action a is the typed joint instrument \`K_a:C_h→Prob(Receipt_a×C_(h+1))\`, with an actual availability predicate. An actual history h is represented by \`J_h(s,c)\` as an unnormalized original/current **subprobability**, retaining full path evidence; original claims are certified only when homogeneous over positive original support. Marginals alone generally lose original/current correlations.
+
+The principal diagram for a source-backed quotient \`q_h:C_h→D_h\` is:
+
+\`\`\`text
+J_h(S,C_h) ------- actual K_a with receipt z -------> J_(h a z)(S,C_(h+1))
+      | id_S × q_h                                      | id_S × q_(h+1)
+      v                                                 v
+q_h*J_h(S,D_h) --- descended full joint Kbar_a^z --> q_(h+1)*J_(h a z)(S,D_(h+1))
+\`\`\`
+
+It commutes for EVERY S-indexed prior iff enabledness and full joint row laws are constant on q_h fibers. This is a **law of transport over the carrier**, not a claim that q is itself a physical sensor. The normalized original posterior and raw receipt probability are both preserved under every valid finite composition. A failed square produces a precise kernel/enabledness witness and a coarsest mathematical one-step repair \`q*=(q,enabled,all joint signatures)\`; repeated stationary refinement yields the coarsest stable probabilistic observer.
+
+**Compatibility layers:** deterministic F48 history support, probability-preserving C17 stochastic histories, support-only EODCS relational shadows, category A06 repair/coreflection, VOYAGER topology and actual carrier's physical-access constraints. Each retains its own hypotheses; a support projection is never silently inverted into weights, and original-provenance bookkeeping is never deleted in the name of a smaller current state. The source manifests, Lean proof scope and WIP swarm fences are in [carrier-first dossier](../research/2026-10-13/CARRIER_INDEXED_HISTORY_THEORY.md) and [Claude integration handoff](CARRIER_MAIN_INTEGRATION_HANDOFF.md).

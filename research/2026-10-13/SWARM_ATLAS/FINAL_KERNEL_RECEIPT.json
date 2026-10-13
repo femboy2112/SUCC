@@ -1,0 +1,53 @@
+{
+  "version": "Lean 4.14.0 commit410fab728470",
+  "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+  "proof_scope": "Own seven modules only; imported mathlib standard classical axioms permitted. Whole policy semantics, analytic actualization, and other paper bridges are not formalized.",
+  "local_runtime": "Official Lean binaries; narrow own-process executable-path compatibility shim. GitHub native Linux also checked checkpoint2e1bda5.",
+  "files": [
+    {
+      "file": "formal/Swarm_ArithmeticTransport.lean",
+      "sha256": "061131aa5492a0a999946101c25a4bafc3db170b31ca367a7e03f27c3576f056",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "file": "formal/Swarm_Completion.lean",
+      "sha256": "76ec2400f3eac6aae3c5797d094943159dd2393358908d755e1432dc7711d426",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "file": "formal/Swarm_Repair.lean",
+      "sha256": "bb80dd2e77713032ec8f93363373432976189903e7c79f77942e8d0100f6b4b2",
+      "exit": 0,
+      "output": "'IndependentRepairAudit.repair_base_change' does not depend on any axioms\n'IndependentRepairAudit.repair_coreflection' does not depend on any axioms\n'IndependentRepairAudit.repair_preserves_equivalence' does not depend on any axioms\n"
+    },
+    {
+      "file": "formal/Swarm_X08AffineRepair.lean",
+      "sha256": "f315b95b37ef85d9a1efebdbc12c46552f3ceec045f1348ab4b36dc5e0e23775",
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "file": "formal/swarm_topology/SwarmPolicyCompactness.lean",
+      "sha256": "477f1bfa2fe5d84747a38ce4abded2325f085293f156b27dcb5a7b3bc3f00f24",
+      "validation": "lake build SwarmTopology SwarmPolicyCompactness SwarmX01CompletionTransport",
+      "exit": 0
+    },
+    {
+      "file": "formal/swarm_topology/SwarmTopology.lean",
+      "sha256": "9528c3bdc7d6e6d3554582fe17eb9b05e49fd811cfcd9028cb381e5ad9b74c86",
+      "validation": "lake build SwarmTopology SwarmPolicyCompactness SwarmX01CompletionTransport",
+      "exit": 0
+    },
+    {
+      "file": "formal/swarm_topology/SwarmX01CompletionTransport.lean",
+      "sha256": "1510cfaca83bcbc5a30d128110525d8df2328a46d44d702036f245e455261141",
+      "validation": "lake build SwarmTopology SwarmPolicyCompactness SwarmX01CompletionTransport",
+      "exit": 0
+    }
+  ],
+  "baseline_unchanged_eodcs_files": 8,
+  "false_theorem_negative_control": "BASELINE_LEAN.json records exit1 on deliberate False theorem",
+  "placeholder_gate": "python scripts/verify_swarm_formal.py: seven files passed; sorry/axiom mutation fixtures rejected"
+}

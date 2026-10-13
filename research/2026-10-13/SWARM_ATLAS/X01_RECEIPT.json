@@ -1,0 +1,26 @@
+{
+  "claim": "SWM-X01",
+  "finite_transport": {
+    "injective_completion_maps": 352,
+    "nonsurjective_source_but_surjective_completion": 192,
+    "source_bijection_but_noninjective_completion": 32,
+    "strict_maps": 512,
+    "surjective_completion_maps": 320,
+    "surjective_source_maps": 128,
+    "tables_examined": 4096
+  },
+  "infinite_controls": {
+    "all_one_prefix_witnesses": 41,
+    "infinite_claim_status": "PAPER PROOF; finite checks are controls only",
+    "patched_patterns": 511,
+    "ray_coordinate_checks": 1320
+  },
+  "mutations": {
+    "bijective_source_can_erase_completion_information": true,
+    "noncommuting_action_rejected": true,
+    "noninjective_report_code_can_preserve_behavior": true,
+    "nonsurjectivity_can_matter_or_be_hidden": true
+  },
+  "probe_sha256": "cf05aa1c2d45451b5f438470148ae982b676548295af8dd740d1435fc2f98fef",
+  "status": "EXACT FINITE CONTROLS PASS"
+}

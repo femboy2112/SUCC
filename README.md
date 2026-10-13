@@ -9,6 +9,29 @@ The founding hypothesis begins with **the physical carrier**, not with the mathe
 > **Status:** early-stage formal and computational research. Some claims are classical mathematics, some are exact new-to-project derivations, others are tested finite models or open conjectures. The Riemann hypothesis (RH) remains unsolved, and Gödel incompleteness has not been mechanized within PA here. See [the claim ledger](docs/CLAIM_LEDGER.md).
 
 
+## Mathematical atlas: the many-worlds swarm
+
+**NO-GHOST research contribution:** the [source-indexed causal descent manuscript](research/2026-10-13/NO_GHOST/MANUSCRIPT.md)
+separates complete-law diamonds, coherent chosen private-history transport,
+constraint-complete gluing, and public-policy stochastic realization. It includes
+an executable three-event braid failure with a coherent alternative, exact rational
+primal/Farkas certificates, a hidden-source-oracle counterexample, and twelve
+Lean 4.14 kernel-checked declarations. Existing C22/F48/CAR results are credited;
+no universal physical gluing theorem or academic-priority claim is made.
+[Integration and reproduction](research/2026-10-13/NO_GHOST/INTEGRATION.md) ·
+[Scoped claims](docs/CLAIM_SUPPLEMENT_NO_GHOST.md).
+
+The [SUCC Mathematical Atlas](research/2026-10-13/SWARM_ATLAS/SUCC_MATHEMATICAL_ATLAS.md)
+connects 48 expedition dossiers and the subsequent cross-domain investigations.
+It records exact source transport, lawful original-state histories, stochastic
+instruments, observational repair, topology, memory bounds and arithmetic
+countermodels. The new isolated Lean4.14/mathlib package proves the genuine
+observational completion theorem; scoped core proofs cover repair/base change,
+affine transport, finite support and memory. Paper proofs, finite experiments,
+refutations and open targets remain separately labeled. See the
+[assignment registry](research/2026-10-13/SWARM_ATLAS/REGISTRY.json) and
+[verified branch map](research/2026-10-13/SWARM_ATLAS/BRANCH_MAP.md).
+
 ## Chaotic SUCC II: source-faithful Markov quotients and dual-E horizon
 
 The [chaos quotient research offshoot](research/2026-10-12/CHAOS_QUOTIENTS_SOURCE_DEBT.md) extends the rooted logistic observer tree by separating *algebraic inverse roots*, *lawful predecessor fibers*, and the *actual time-indexed source probabilities*. For every 2<r<4 the post-first-image carrier [0,r/4] has a positive-length terminal interval with only ONE lawful inverse branch, although the quadratic has two real roots. At r=4 under the genuine arcsine invariant law, m-bit itineraries instead yield a **nonconstant, exactly predictive stochastic Markov quotient** whose m-step transition is rank one; it is not a deterministic lossless source quotient.
@@ -324,3 +347,11 @@ The [VOYAGER mathematical dossier](research/2026-10-13/VOYAGER_OBSERVATIONAL_PRO
 The stronger, source-class-independent complexity result uses the non-ultimately-periodic power-of-two pulse stream. Every finite prefix is exactly matched by a *different* finite deterministic machine; the no-repeat zero-gap theorem simultaneously proves that a machine matching through time 2^(k+1) requires at least 2^k source states (general injection formally Lean-checked). Distinguish mathematical profile completion, original carrier actualization, probe availability, and finite-state complexity debt; this is **classical coalgebra/automata/profinite mathematics**, not a claim of novel scholarly priority, physical infinite execution, completed Weil positivity or RH. Evidence: [frozen cross-version receipt](research/2026-10-13/VOYAGER_OBSERVATIONAL_COMPLETION_RECEIPT.json), kernel files formal/EODCS_Voyager*.lean, ledger O610–O630.
 
 **VOYAGER V11 strengthened no-go:** Lean4 now proves that, for **any** proposed binary stream and **any arbitrary finite list of queried times**, two mathematically lawful streams reproduce every observed bit while having opposite eventual-zero status. This is not just prefix ambiguity: both source classes are dense in finite-coordinate observation topology. A finite nonanticipatory adaptive policy sees only its one finite realized transcript; the [exact source-pair receipt](research/2026-10-13/VOYAGER_ADAPTIVE_SOURCE_RECEIPT.json) constructs two opposite-class source models that replay exactly those adaptive reports, so any terminal binary decision is wrong on one. This is a toolkit-relative no-go, not a Gödel/RH result. [Mathematical proof V11–V12](research/2026-10-13/VOYAGER_OBSERVATIONAL_PROFINITE_COMPLETION.md), ledger O631–O637.
+
+### Carrier-first integration: the source-indexed host (draft PR #53)
+
+The [carrier-first theorem dossier](research/2026-10-13/CARRIER_INDEXED_HISTORY_THEORY.md) recognizes that SUCC already has the unifying object: the original-source-indexed **carrier**, equipped with lawful instruments and an actual causal record. The adapter \`observational_succ/carrier_indexed.py\` does NOT replace \`Engine\`, \`ControlledCarrier\`, F48 \`HistoryFiber\` or C17 \`StochasticHistory\`; it compares their deterministic, relational-support and exact stochastic views over a shared original/current source.
+
+A carrier transition carries the UNNORMALIZED joint law \`J_h(original,current)\`, so actual receipt evidence and original posteriors cannot be erased by a carrier projection. A quotient is lawful exactly when its fibers preserve enabledness and the full joint (receipt,next quotient-state) kernel. Finite-history diagrams then commute under source-indexed reindexing; an independent exact atom oracle tests stochastic laws, while \`formal/EODCS_CarrierIndexed.lean\` kernel-checks the deterministic all-history/source-support specialization. One-step and stationary maximal carrier repairs are executable and independently finite-oracle audited. Neither a support-only view nor matching marginals recovers hidden probabilities.
+
+Run \`python -m unittest discover -s tests -p 'test_eodcs_carrier*.py'\` and \`python scripts/carrier_indexed_probe.py\`; the [frozen cross-version receipt](research/2026-10-13/CARRIER_INDEXED_SOURCE_RECEIPT.json) is checked in dedicated CI. [Claims CAR-01–CAR-21](docs/CLAIM_SUPPLEMENT_CARRIER.md). Future Claude integration into \`main\`, including the completed and **live WIP** swarms, is governed by the [WIP-safe main handoff](docs/CARRIER_MAIN_INTEGRATION_HANDOFF.md) and [point-in-time branch snapshot](research/2026-10-13/CARRIER_SWARM_BRANCH_SNAPSHOT.json). The branch is draft; \`main\`, originals, licenses and defaults remain unchanged.

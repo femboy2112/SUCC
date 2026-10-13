@@ -487,6 +487,10 @@ The current research branch extends E's finite repair grammar (static → termin
 
 ## VOYAGER: projective observation completion and original-source realization (V0–V10)
 
+This section records the VOYAGER intake frontier. Its topology formalization
+targets below were completed by B09 in the subsequent swarm; the updated
+frontier is recorded in the next section.
+
 **Constructed:** the canonical causal trace into all legal finite-word contexts, and a proof/implementation boundary between an inverse-limit profile and an ORIGINAL state realizing all its finite shadows. Under finite discrete reports the complete finite-stage source images project surjectively; their limit is the closure of the actual trace image in product topology (classical Stone/profinite mathematics, *general topological statement not yet Lean-formalized*). The original trace image is dense, not necessarily closed.
 
 **Lean-kernel results:** action-word trace shift/naturality and congruence; finite N-source realization OR a refuting family of at most N finite probes; an eventually-zero original source that matches **every arbitrarily chosen finite set** of all-one observations but no global all-one source; and the deterministic zero-gap finite-memory theorem injecting Fin(2^k) distinct times into source states whenever the observed power-two pulse continues through time 2^(k+1). The latter supplies exact source complexity debt without an infinite measurement. Independent simulator checks cover nested stage restriction, pulse period-falsifiers, positive one-state all-one counter-control, prefix machines and dyadic finite ultrametric. [Dossier](../research/2026-10-13/VOYAGER_OBSERVATIONAL_PROFINITE_COMPLETION.md), claims O610–O630 and [receipt](../research/2026-10-13/VOYAGER_OBSERVATIONAL_COMPLETION_RECEIPT.json).
@@ -494,3 +498,33 @@ The current research branch extends E's finite repair grammar (static → termin
 **Next falsifiers:** Formalize the full inverse-limit ↔ closure and compact-source realization criterion in Lean with an actual topology library; transfer the result to history-dependent stochastic/source-changing observational fibration with correlated reports and physically executable sensors; calibrate source-space regularity assumptions rather than identifying physical infinity with analytic closure. General mathematical priority, physical carrier completeness, completed Weil/Suzuki positivity and RH remain UNVERIFIED.
 
 **VOYAGER finite-policy no-go (V11–V12):** A stronger Lean4 theorem constructs finite-support and cofinite-support streams preserving **any finite list** of observed target coordinate values while disagreeing on eventual-zero membership. Hence both classes are dense in Cantor observation topology and no everywhere-terminating finite-coordinate adaptive policy can classify all binary streams without an extra source promise. A history-dependent finite policy simulation verifies the same transcript can arise under opposite tail commitments; original physical probes/counterfactuals remain unavailable. Frozen [adaptive exact receipt](../research/2026-10-13/VOYAGER_ADAPTIVE_SOURCE_RECEIPT.json), ledger O631–O637. Next: verify policy theorem for genuinely changing carriers and compact positive sources, and formalize the inverse-limit topology itself.
+
+## Many-worlds swarm frontier (2026-10-13)
+
+The [mathematical atlas](../research/2026-10-13/SWARM_ATLAS/SUCC_MATHEMATICAL_ATLAS.md)
+records the completed expedition investigations and scoped cross-domain results.
+The actual product-topology inverse-limit/closure theorem is now kernel checked.
+The next targets are history-controller compression, necessary-and-sufficient
+stochastic continuation criteria beyond X05’s sufficient square,
+finite-coordinate recovery formalization, and an explicit history
+site with sound gluing. General renormalization, completed Weil-form identification
+and a universal sheaf of physical causal histories remain open; none is promoted
+by the finite models. The atlas ranks the next falsifiable statements.
+
+## Carrier-first SUCC unification and WIP-safe swarm consolidation
+
+**NO-GHOST refinement:** [the new manuscript](../research/2026-10-13/NO_GHOST/MANUSCRIPT.md)
+supplies conditional coherent chart descent, exact public-policy realization
+equations, and formal generic gluing/kernel/rigidity cores. The next nontrivial
+cut is decomposition of the operational policy polytope along lawful interfaces
+while preserving public information sets. Also open: full schedule/coherence
+and policy-LP mechanization, general site compilation, and empirical source
+authentication. The support-only coupling formulation is now explicitly refuted
+as a characterization of fixed-kernel public experiments; classical attribution
+and draft-branch boundaries remain in force.
+
+**Conditional theorem closed (carrier draft PR #53):** The unifying object is a source-indexed carrier, not another god-level mathematical theory. State is typed as original source S, current C_h, actual history h, lawful action menu and full joint K_a(current;receipt,next), and UNNORMALIZED J_h(original,current). A current quotient q is lawful for every original-source prior exactly when enabledness and the full joint (receipt,next q'-state) law descend on q-fibers. This reindexing identity gives entire finite actual-history evidence and original-target support preservation; it does NOT license unseen counterfactual observations. Canonical one-step q* and finite stationary probabilistic partition refinement retain minimal essential information; carrier supports and probabilities remain distinct. [CAR theory/proofs](../research/2026-10-13/CARRIER_INDEXED_HISTORY_THEORY.md), [claim supplement](CLAIM_SUPPLEMENT_CARRIER.md), [frozen receipt](../research/2026-10-13/CARRIER_INDEXED_SOURCE_RECEIPT.json).
+
+**Remaining proof targets:** (i) fully kernel-refine the stochastic finite-sum CAR3 identity and legal adaptive-policy transport; (ii) characterize history-dependent action availability and source-changing stage transitions; (iii) build a lawful concurrent history coverage/site with actual gluing theorem and destructive-order negative control; (iv) prove source-class compactness/realization for causal histories, extending the already kernel-verified VOYAGER/topological and Cambrian finite-branching specialties; (v) empirically attest preparations/probes only if physical sources exist; (vi) develop grammar-expanding mathematics beyond prewritten constructors. Completed arithmetic finite identities do not imply the completed Weil positivity/RH bridge.
+
+**Integration priority:** #40–#48 ancestry, complete #50 Atlas and carrier child #53, independently completed #51 Cambrian, and carefully reviewed #45 EOS/#52 triangulation; active #49 rolling and its original \`research/swm-*\` children MUST be frozen and reviewed before importing any WIP. No main merge in this branch. [Claude handoff](CARRIER_MAIN_INTEGRATION_HANDOFF.md) and [exact snapshot](../research/2026-10-13/CARRIER_SWARM_BRANCH_SNAPSHOT.json).

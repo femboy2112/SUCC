@@ -1,0 +1,11 @@
+# Root hole contract: adaptive termination versus source completion
+
+Snapshot: `5eb09e7cba36ec01b8f9d6834b78b5766fd93935`. Status: CONJECTURE before verification.
+
+Let S be a compact topological source, with total continuous actions T_a:S→S and continuous finite-discrete outcome maps r_a:S→O_a. A deterministic policy chooses its next action or a terminal answer from only its actual finite event history. Actions may destructively change the source. Proposed statement: if that fixed policy terminates after finitely many actions on every original source s∈S, then one uniform finite depth bounds all its executions. A correct Boolean classifier therefore has a clopen original-source truth set. This is a compactness consequence, not a novel priority claim or proof that a terminating policy exists.
+
+The smallest sufficient hypothesis is a finite subcover of the terminal-history cylinders; source compactness plus continuity supplies it. Terminal cylinders are clopen by induction on the actual action path. These cylinders cover S exactly under pointwise total termination; a finite subcover gives the maximum of their lengths. This closes a missing connection between VOYAGER original-source actualization and execution-policy resources. It does not identify a single causal history with all counterfactual probe words, and does not bound arbitrary source-dependent physical action costs.
+
+Falsifiers: (1) omit compactness: eventual-zero streams, read/shift until first zero, total but unbounded; (2) omit continuity: compact {0}∪{1/(n+1):n≥0} with discontinuous finite readouts stopping at the index of the point, total but unbounded; (3) infer policy existence from clopen counterfactual truth: four-state destructive bit-read XOR model, globally identifiable by separate initial-state probe words but no single reset-free policy succeeds.
+
+Proof languages: open-cover compactness, nested closed history fibers, exact finite policy replay, pinned Lean/mathlib if dependency access succeeds. A finite experiment checks examples only; the open-cover argument performs the universal lift. No RH, physical infinity, cognitive validation, or novelty priority is claimed. Next lamp if formalization remains blocked: pin a topology dependency and kernel-check the finite-subcover/max construction.

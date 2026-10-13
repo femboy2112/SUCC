@@ -1,0 +1,1605 @@
+{
+  "legal_support_and_prior_do_not_enable_hidden_oracle": {
+    "A": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "-1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "-1"
+      ],
+      [
+        "0",
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/2",
+        "1/2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ]
+    ],
+    "b": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "1",
+      "1/2",
+      "1/2"
+    ],
+    "conclusion": "Source-aware choice would succeed, but every blind public policy has success 1/2.",
+    "dual": [
+      "-1",
+      "-1",
+      "0",
+      "-1",
+      "-1",
+      "0",
+      "0",
+      "2",
+      "0",
+      "0",
+      "0"
+    ],
+    "dual_check": true,
+    "horizon": 1,
+    "original_source_prior": [
+      "1/2",
+      "1/2"
+    ],
+    "public_policy_status": "PROBABILITY_COUPLING_FAILURE",
+    "requested_success": "1",
+    "source_id": "NO_GHOST_HIDDEN_GUESS",
+    "support_only_coupling": [
+      "1/2",
+      "0",
+      "0",
+      "1/2"
+    ],
+    "support_only_status": "LAWFUL_GLUING",
+    "variables": [
+      [
+        "node",
+        []
+      ],
+      [
+        "node",
+        [
+          [
+            "guess0",
+            1
+          ]
+        ]
+      ],
+      [
+        "node",
+        [
+          [
+            "guess0",
+            0
+          ]
+        ]
+      ],
+      [
+        "node",
+        [
+          [
+            "guess1",
+            0
+          ]
+        ]
+      ],
+      [
+        "node",
+        [
+          [
+            "guess1",
+            1
+          ]
+        ]
+      ],
+      [
+        "action",
+        [],
+        "guess0"
+      ],
+      [
+        "action",
+        [],
+        "guess1"
+      ]
+    ]
+  },
+  "licensed_read_repairs_hidden_guess": {
+    "horizon": 2,
+    "independent_replay": [
+      {
+        "identity": [
+          "NO_GHOST_HIDDEN_GUESS",
+          "immutable-bit-source",
+          0,
+          "ready",
+          [
+            {
+              "after": "ready",
+              "before": "ready",
+              "branch": "unit",
+              "occurrence": "read",
+              "outcome": 0
+            },
+            {
+              "after": "ready",
+              "before": "ready",
+              "branch": "unit",
+              "occurrence": "guess0",
+              "outcome": 1
+            }
+          ]
+        ],
+        "mass": "1/2"
+      },
+      {
+        "identity": [
+          "NO_GHOST_HIDDEN_GUESS",
+          "immutable-bit-source",
+          1,
+          "ready",
+          [
+            {
+              "after": "ready",
+              "before": "ready",
+              "branch": "unit",
+              "occurrence": "read",
+              "outcome": 1
+            },
+            {
+              "after": "ready",
+              "before": "ready",
+              "branch": "unit",
+              "occurrence": "guess1",
+              "outcome": 1
+            }
+          ]
+        ],
+        "mass": "1/2"
+      }
+    ],
+    "operational_weights": [
+      "1/2",
+      "0",
+      "0",
+      "1/2"
+    ],
+    "public_policy": {
+      "(('guess0', 0),)": {},
+      "(('guess0', 1),)": {},
+      "(('guess1', 0),)": {},
+      "(('guess1', 1),)": {},
+      "(('read', 0),)": {
+        "guess0": "1",
+        "guess1": "0"
+      },
+      "(('read', 1),)": {
+        "guess0": "0",
+        "guess1": "1"
+      },
+      "()": {
+        "guess0": "0",
+        "guess1": "0",
+        "read": "1"
+      }
+    },
+    "realization_plan": [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "1",
+      "1",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "1",
+      "1",
+      "0",
+      "0",
+      "1"
+    ],
+    "replay_matches_linear_weights": true,
+    "scope": "Read action was explicitly supplied by the contract; the solver did not invent it.",
+    "source_id": "NO_GHOST_HIDDEN_GUESS",
+    "status": "LAWFUL_GLUING"
+  },
+  "odd_parity_triangle": {
+    "A": [
+      [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "1"
+      ]
+    ],
+    "b": [
+      "1",
+      "0",
+      "1/2",
+      "1/2",
+      "0",
+      "0",
+      "1/2",
+      "1/2",
+      "0",
+      "0",
+      "1/2",
+      "1/2",
+      "0"
+    ],
+    "checked_bases": 30,
+    "dual": [
+      "2",
+      "0",
+      "-2",
+      "0",
+      "0",
+      "-2",
+      "-2",
+      "-2",
+      "0",
+      "2",
+      "0",
+      "0",
+      "0"
+    ],
+    "dual_check": true,
+    "lawful_atoms": [
+      [
+        "NO_GHOST_SOURCE_BITS",
+        "bits",
+        [
+          0,
+          0,
+          0
+        ],
+        "ready",
+        [
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "a",
+            "outcome": 0
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "b",
+            "outcome": 0
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "c",
+            "outcome": 0
+          }
+        ]
+      ],
+      [
+        "NO_GHOST_SOURCE_BITS",
+        "bits",
+        [
+          0,
+          0,
+          1
+        ],
+        "ready",
+        [
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "a",
+            "outcome": 0
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "b",
+            "outcome": 0
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "c",
+            "outcome": 1
+          }
+        ]
+      ],
+      [
+        "NO_GHOST_SOURCE_BITS",
+        "bits",
+        [
+          0,
+          1,
+          0
+        ],
+        "ready",
+        [
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "a",
+            "outcome": 0
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "b",
+            "outcome": 1
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "c",
+            "outcome": 0
+          }
+        ]
+      ],
+      [
+        "NO_GHOST_SOURCE_BITS",
+        "bits",
+        [
+          0,
+          1,
+          1
+        ],
+        "ready",
+        [
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "a",
+            "outcome": 0
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "b",
+            "outcome": 1
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "c",
+            "outcome": 1
+          }
+        ]
+      ],
+      [
+        "NO_GHOST_SOURCE_BITS",
+        "bits",
+        [
+          1,
+          0,
+          0
+        ],
+        "ready",
+        [
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "a",
+            "outcome": 1
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "b",
+            "outcome": 0
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "c",
+            "outcome": 0
+          }
+        ]
+      ],
+      [
+        "NO_GHOST_SOURCE_BITS",
+        "bits",
+        [
+          1,
+          0,
+          1
+        ],
+        "ready",
+        [
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "a",
+            "outcome": 1
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "b",
+            "outcome": 0
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "c",
+            "outcome": 1
+          }
+        ]
+      ],
+      [
+        "NO_GHOST_SOURCE_BITS",
+        "bits",
+        [
+          1,
+          1,
+          0
+        ],
+        "ready",
+        [
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "a",
+            "outcome": 1
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "b",
+            "outcome": 1
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "c",
+            "outcome": 0
+          }
+        ]
+      ],
+      [
+        "NO_GHOST_SOURCE_BITS",
+        "bits",
+        [
+          1,
+          1,
+          1
+        ],
+        "ready",
+        [
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "a",
+            "outcome": 1
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "b",
+            "outcome": 1
+          },
+          {
+            "after": "ready",
+            "before": "ready",
+            "branch": "unit",
+            "occurrence": "c",
+            "outcome": 1
+          }
+        ]
+      ]
+    ],
+    "original_sources": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "source_id": "NO_GHOST_SOURCE_BITS",
+    "status": "PROBABILITY_COUPLING_FAILURE"
+  },
+  "positive_pair_contexts": {
+    "A": [
+      [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "1"
+      ]
+    ],
+    "b": [
+      "1",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+    ],
+    "fixed_preparation_operational_coupling": [
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8"
+    ],
+    "operational_flow_A": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "operational_flow_b": [
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "1/8",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "original_sources": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "primal_check": true,
+    "status": "LAWFUL_GLUING",
+    "support_only_coupling": [
+      "1/4",
+      "0",
+      "0",
+      "1/4",
+      "0",
+      "1/4",
+      "1/4",
+      "0"
+    ]
+  },
+  "scope": "Declared exact finite model. Every history is possible, not a performed event.",
+  "support_is_not_operation": {
+    "A": [
+      [
+        "1",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "1"
+      ],
+      [
+        "1/2",
+        "-1/2"
+      ],
+      [
+        "-1/2",
+        "1/2"
+      ]
+    ],
+    "b": [
+      "1",
+      "3/4",
+      "1/4",
+      "1",
+      "0",
+      "0"
+    ],
+    "dual": [
+      "2",
+      "-4",
+      "0",
+      "0",
+      "4",
+      "0"
+    ],
+    "dual_check": true,
+    "operational_status": "PROBABILITY_COUPLING_FAILURE",
+    "requested_law": [
+      "3/4",
+      "1/4"
+    ],
+    "source_kernel": [
+      "1/2",
+      "1/2"
+    ],
+    "support_only_status": "LAWFUL_GLUING",
+    "support_only_weights": [
+      "3/4",
+      "1/4"
+    ]
+  },
+  "three_event_coherence": {
+    "atom_mass": "1/8",
+    "atoms_per_schedule": 8,
+    "chosen_cnot_maps": {
+      "failures": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "left": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4,
+        6,
+        7
+      ],
+      "left_maps": [
+        [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          5,
+          7,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          4,
+          5
+        ]
+      ],
+      "right": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        6,
+        5,
+        4
+      ],
+      "right_maps": [
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          5,
+          7,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          4,
+          5
+        ],
+        [
+          0,
+          1,
+          3,
+          2,
+          4,
+          5,
+          7,
+          6
+        ]
+      ],
+      "status": "HIGHER_COHERENCE_FAILURE"
+    },
+    "coherent_token_swaps": {
+      "failures": [],
+      "left": [
+        0,
+        4,
+        2,
+        6,
+        1,
+        5,
+        3,
+        7
+      ],
+      "left_maps": [
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3,
+          6,
+          7
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          6,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3,
+          6,
+          7
+        ]
+      ],
+      "right": [
+        0,
+        4,
+        2,
+        6,
+        1,
+        5,
+        3,
+        7
+      ],
+      "right_maps": [
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          6,
+          5,
+          7
+        ],
+        [
+          0,
+          1,
+          4,
+          5,
+          2,
+          3,
+          6,
+          7
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          4,
+          6,
+          5,
+          7
+        ]
+      ],
+      "status": "LAWFUL_GLUING"
+    },
+    "conclusion": "Chosen lawful pair comparisons fail coherence; a coherent family exists on the same model.",
+    "schedules": 6,
+    "source_id": "NO_GHOST_THREE_COINS",
+    "witness_bits": [
+      0,
+      1,
+      0
+    ],
+    "witness_index": 2
+  }
+}

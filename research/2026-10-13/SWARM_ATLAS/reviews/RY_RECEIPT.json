@@ -1,0 +1,95 @@
+{
+  "reviewer": "audit_remaining_bridges",
+  "source_hashes": {
+    "X02": {
+      "commit": "ed102851f0566d3bc84fa140f2b6232d7c6f53ff",
+      "path": "research/2026-10-13/SWARM_ATLAS/X02.md",
+      "sha256": "3c253434ae6a011fc42b38ea5eb16b0d599ad444b90c2df5f0020d4a2faaa199"
+    },
+    "X07": {
+      "commit": "ed102851f0566d3bc84fa140f2b6232d7c6f53ff",
+      "path": "research/2026-10-13/SWARM_ATLAS/X07.md",
+      "sha256": "f64f733abb00588cb60304a90dde2b9179a7df54bb8a142b6b42a8b2831eb5cd"
+    },
+    "X09": {
+      "commit": "ed102851f0566d3bc84fa140f2b6232d7c6f53ff",
+      "path": "research/2026-10-13/SWARM_ATLAS/X09.md",
+      "sha256": "7fcd5d2da564311b6e42ff51564e59fab71ed5adfda33ea029b6bb4906294fd0"
+    },
+    "X06": {
+      "commit": "1c9c415b26ced094813cd6ea68321c8869f66aef",
+      "path": "research/2026-10-13/SWARM_ATLAS/X06.md",
+      "sha256": "5bbe1322213c8b334ae7a883747b925e839103ab9a7f177e373edbe295ea3a6e"
+    },
+    "X03": {
+      "commit": "5e4be93cf41317f5c63f6652565ca1323551e7fc",
+      "path": "research/2026-10-13/SWARM_ATLAS/X03.md",
+      "sha256": "646ba09b581210a9c55ff82ca9f0fa28710048647ab720421ef15933f9c85bec"
+    },
+    "X11": {
+      "commit": "19fc6acf8db81d6361c6779d6aa06919e20d35fc",
+      "path": "research/2026-10-13/SWARM_ATLAS/X11.md",
+      "sha256": "8f1415312c70817b10697b5e25edff92683f14d242f0f96abf0c8776714f8dee"
+    }
+  },
+  "probe_sha256": "d5f5283c36b7d77a42324f1395160aa7e5f64bc9042c3da3492885756785aaf3",
+  "independent_holonomy": {
+    "generator_pairs": 617,
+    "denominator_four_laws": 20721,
+    "invariant_law_global_lift_checks": 963
+  },
+  "independent_kernels": {
+    "kernels": 20,
+    "ordered_pairs": 400,
+    "commuting_pairs": 92,
+    "original_law_checks": 3200,
+    "positive": 2210,
+    "null": 990,
+    "posterior_without_likelihood_counterexample": true,
+    "deterministic_recovery_requires_deterministic_preparation": true
+  },
+  "independent_analytic": {
+    "vandermonde_interpolants": 11,
+    "max_coefficients": [
+      "12",
+      "144",
+      "6328/3",
+      "44736",
+      "5332704/5",
+      "28639616",
+      "30124931584/35",
+      "200998714368/7",
+      "66454375975936/63",
+      "635358649864192/15",
+      "2133370080865804288/1155"
+    ],
+    "finite_pairwise_checks": 3888,
+    "separate_witness_counterexample": true
+  },
+  "independent_memory": {
+    "simultaneous_buffer_map_pairs": 4764,
+    "current_only_initialization_cannot_recover_erasure": true
+  },
+  "independent_gluing": {
+    "pullback_subset_checks": 110592,
+    "finite_cegis_checks": 4096,
+    "grammar_only_core_does_not_prune_surjective_extension": true
+  },
+  "independent_proof_limits": {
+    "finite_source_sets": 15,
+    "principal_ideals_checked": 95,
+    "partial_boolean_reports": 584,
+    "monotone_pairs": 1520,
+    "scattered_phantom_opposite_extensions": 32
+  },
+  "x03_corrected_working_files_sha256": {
+    "research/2026-10-13/SWARM_ATLAS/X03.md": "635c4409ebc5d15b4881dc5f1c0fe338121efa0411c0337d3daadf7d68b7f305",
+    "observational_succ/swarm_gluing_cegis.py": "9955bd3f5896373efde9981d3a740dfc31145c9968ba775f0f5053acceb29c45",
+    "tests/test_swarm_gluing_cegis.py": "2425abcc3d590051271952d9babe4252a2a37e2cd85a0869dfb911aaa6f9fe57"
+  },
+  "x07_corrected_working_files_sha256": {
+    "research/2026-10-13/SWARM_ATLAS/X07.md": "14436529d1569353e25eb9e14fae2e69b4c640297362ccf244181571f21cf29b",
+    "scripts/swarm_cross_x07_probe.py": "045838ce68cf038e1cb8b81685e5f1ba88f68be0305097e1a4346c5a7d46a033",
+    "tests/test_swarm_cross_x07.py": "f7df8bf7b0528ebd7807105a19d7109da9aa5f795bed0f1667be47cb88e0e8da"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "academic_novelty_verified": false,
+  "base_commit": "216651461e182c2a9ded1796c34485e2e34a29e3",
+  "boundaries": {
+    "original_index_compression_without_target_factor": "REFUTED",
+    "preservation_under_unannounced_target_change": "REFUTED",
+    "report_only_policy_and_cost_preservation": "REFUTED",
+    "source_dependent_schedule_as_free_observation": "NOT_AUTHORIZED_BY_THE_MODEL",
+    "static_quotients_without_cross_stage_square": "REFUTED"
+  },
+  "f43_independent_audit": {
+    "complete_tables_and_group_predicates_supplied": true,
+    "dihedral": [
+      10,
+      1,
+      false
+    ],
+    "family_controls": [
+      {
+        "center_size": 2,
+        "central_commutator": true,
+        "coupling": 1,
+        "group_size": 8,
+        "minimal_states": 4,
+        "p": 2
+      },
+      {
+        "center_size": 5,
+        "central_commutator": true,
+        "coupling": 1,
+        "group_size": 125,
+        "minimal_states": 25,
+        "p": 5
+      },
+      {
+        "center_size": 1,
+        "central_commutator": true,
+        "coupling": 0,
+        "group_size": 1,
+        "minimal_states": 2,
+        "p": 2
+      },
+      {
+        "center_size": 1,
+        "central_commutator": true,
+        "coupling": 0,
+        "group_size": 1,
+        "minimal_states": 5,
+        "p": 5
+      }
+    ],
+    "unbiased_external_holdout_claim": false
+  },
+  "f48_independent_audit": {
+    "accepted_quotients": 80,
+    "history_comparisons_including_impossible_histories": 1200,
+    "rejected_quotients": 48,
+    "two_state_one_instrument_sources": 64
+  },
+  "history_indexed_bridge": {
+    "composite_representation_comparisons": 97,
+    "edges": 96,
+    "erase_support_retained": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "hidden_target_remains_ambiguous": true,
+    "lawful_nodes_through_depth_4": 97,
+    "pointwise_cross_stage_squares": 464,
+    "robust_availability_comparisons": 291,
+    "visible_target_support_after_flip_1": [
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "human_psychology_claim": false,
+  "kernel_checked": false,
+  "schema": "succ-swm-x12-v1",
+  "script_sha256": "decc0a08a73bd30bc6b9cce56ff78373e2a3e104b8dbeb28ad6b4a96c7089583",
+  "status": "PROVED_LOCAL_WRITTEN; FINITE_CONTROLS_EXECUTED"
+}

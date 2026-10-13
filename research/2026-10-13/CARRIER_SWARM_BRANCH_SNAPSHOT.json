@@ -1,0 +1,428 @@
+{
+  "schema": "carrier-indexed-swarm-branch-freeze-v1",
+  "observed_on_utc_date": "2026-10-13",
+  "snapshot_is_not_a_merge_authorization": true,
+  "snapshot_must_be_refreshed_immediately_before_any_integration": true,
+  "main": {
+    "branch": "main",
+    "head_sha": "52d2c02b85b246aec67160260ac06bb1da33645e"
+  },
+  "entries": [
+    {
+      "number": 40,
+      "title": "Source-driven SUCC inverse geometry: static aliases, dynamic repair and a new observable invariant",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/source-driven-dynamic-boundary-inverse-2026-10-12",
+      "head_sha": "a085d754e037498a20cbb4d2330e3ce02d2f60c2",
+      "base_branch": "main",
+      "base_sha": "52d2c02b85b246aec67160260ac06bb1da33645e",
+      "updated_at": "2026-10-13T02:10:10Z",
+      "mergeable_snapshot": true,
+      "classification": "STACKED_RESEARCH_REVIEW"
+    },
+    {
+      "number": 41,
+      "title": "Categorical SUCC: discover repair classes, compose model capsules and bridge RC/heat/Markov behavior",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/categorical-repair-discovery-2026-10-12",
+      "head_sha": "a5462ea4ef655bba7dd67fbc16ec048acfb994d1",
+      "base_branch": "research/source-driven-dynamic-boundary-inverse-2026-10-12",
+      "base_sha": "a085d754e037498a20cbb4d2330e3ce02d2f60c2",
+      "updated_at": "2026-10-13T02:45:31Z",
+      "mergeable_snapshot": true,
+      "classification": "STACKED_RESEARCH_REVIEW"
+    },
+    {
+      "number": 42,
+      "title": "Heuristic SUCC: structural vibes, source-conditional Bayesian evidence and categorical model search",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/contextual-heuristic-inference-2026-10-12",
+      "head_sha": "45597a5750971130e3399ed69c03e107bdc28c70",
+      "base_branch": "research/categorical-repair-discovery-2026-10-12",
+      "base_sha": "a5462ea4ef655bba7dd67fbc16ec048acfb994d1",
+      "updated_at": "2026-10-13T03:14:15Z",
+      "mergeable_snapshot": true,
+      "classification": "STACKED_RESEARCH_REVIEW"
+    },
+    {
+      "number": 43,
+      "title": "Genetic SUCC: synthesize categorical bridges, emergent relations and nonflat repairs",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/genetic-categorical-model-fusion-2026-10-12",
+      "head_sha": "1cb30a3d92420f1197fc1615a68fb4309c0e036d",
+      "base_branch": "research/contextual-heuristic-inference-2026-10-12",
+      "base_sha": "45597a5750971130e3399ed69c03e107bdc28c70",
+      "updated_at": "2026-10-13T03:46:28Z",
+      "mergeable_snapshot": true,
+      "classification": "STACKED_RESEARCH_REVIEW"
+    },
+    {
+      "number": 44,
+      "title": "EODCS: obstruction-grown functors, minimal holonomy covers and source-aware posterior bounds",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/eodcs-posets-cegis-covers-2026-10-13",
+      "head_sha": "091b9e6ecb0f4bb1a162db2e97ef0f8d9a00f6ed",
+      "base_branch": "research/genetic-categorical-model-fusion-2026-10-12",
+      "base_sha": "1cb30a3d92420f1197fc1615a68fb4309c0e036d",
+      "updated_at": "2026-10-13T04:43:37Z",
+      "mergeable_snapshot": true,
+      "classification": "STACKED_RESEARCH_REVIEW"
+    },
+    {
+      "number": 45,
+      "title": "Obstruction-driven categorical synthesis: evolving experiments, source coupling and Lean proofs",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/evolutionary-obstruction-synthesis-2026-10-13",
+      "head_sha": "b2774ca485db4b5b4f7ce92e535220352fb3af2f",
+      "base_branch": "research/genetic-categorical-model-fusion-2026-10-12",
+      "base_sha": "1cb30a3d92420f1197fc1615a68fb4309c0e036d",
+      "updated_at": "2026-10-13T05:17:34Z",
+      "mergeable_snapshot": true,
+      "classification": "SIBLING_REVIEW_DEDUP"
+    },
+    {
+      "number": 46,
+      "title": "EODCS II: kernel-checked causal descent, minimal observation repair and SUCC probe-language growth",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/eodcs-causal-nerode-moonshot-2026-10-13",
+      "head_sha": "00bc0d44cb011b1d333aa0fa8549d6b402662317",
+      "base_branch": "research/eodcs-posets-cegis-covers-2026-10-13",
+      "base_sha": "091b9e6ecb0f4bb1a162db2e97ef0f8d9a00f6ed",
+      "updated_at": "2026-10-13T05:20:37Z",
+      "mergeable_snapshot": true,
+      "classification": "STACKED_RESEARCH_REVIEW"
+    },
+    {
+      "number": 47,
+      "title": "EODCS III: Lean-verified set-valued successor descent and sharp modal abstraction",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/eodcs-relational-choice-2026-10-13",
+      "head_sha": "b17c357e2aa6aee17ae87115b8620a51a262e1fc",
+      "base_branch": "research/eodcs-causal-nerode-moonshot-2026-10-13",
+      "base_sha": "00bc0d44cb011b1d333aa0fa8549d6b402662317",
+      "updated_at": "2026-10-13T05:33:20Z",
+      "mergeable_snapshot": true,
+      "classification": "STACKED_RESEARCH_REVIEW"
+    },
+    {
+      "number": 48,
+      "title": "VOYAGER: exact observational completion, unrealized inverse-limit profiles and horizon-memory debt",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/voyager-observational-profinite-completion-2026-10-13",
+      "head_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "base_branch": "research/eodcs-relational-choice-2026-10-13",
+      "base_sha": "b17c357e2aa6aee17ae87115b8620a51a262e1fc",
+      "updated_at": "2026-10-13T06:06:08Z",
+      "mergeable_snapshot": true,
+      "classification": "STACKED_RESEARCH_REVIEW"
+    },
+    {
+      "number": 49,
+      "title": "Operation SUCC: source-pinned mathematical swarm atlas and reviewed structural results",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/many-worlds-atlas-2026-10-13",
+      "head_sha": "830e99ffc89bc9ee5ae97cbbc433206be99aa96c",
+      "base_branch": "research/voyager-observational-profinite-completion-2026-10-13",
+      "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "updated_at": "2026-10-13T09:54:00Z",
+      "mergeable_snapshot": true,
+      "classification": "LIVE_WIP_FREEZE_REQUIRED"
+    },
+    {
+      "number": 50,
+      "title": "Research: complete 48-mission mathematical atlas and 12 audited synthesis bridges",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/many-worlds-swarm-2026-10-13",
+      "head_sha": "759c30c72a2927212cdbfa41365800da96e5d515",
+      "base_branch": "research/voyager-observational-profinite-completion-2026-10-13",
+      "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "updated_at": "2026-10-13T08:02:24Z",
+      "mergeable_snapshot": true,
+      "classification": "COMPLETED_REVIEWED_SEPARATE"
+    },
+    {
+      "number": 51,
+      "title": "Research: Cambrian source-changing transport, history realization and hostile audits",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/cambrian-observational-realization-2026-10-13",
+      "head_sha": "bdb1fcfce875ee6c51fc62f78fbb4111582caadc",
+      "base_branch": "research/voyager-observational-profinite-completion-2026-10-13",
+      "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "updated_at": "2026-10-13T07:57:37Z",
+      "mergeable_snapshot": true,
+      "classification": "COMPLETED_REVIEWED_SEPARATE"
+    },
+    {
+      "number": 52,
+      "title": "Research: triangulate EOS/VOYAGER and certify source-relative Heisenberg action",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/swm-f41-2026-10-13",
+      "head_sha": "aeefd7ec2a7f50e45a1446e1995c7f6289c158a9",
+      "base_branch": "research/voyager-observational-profinite-completion-2026-10-13",
+      "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "updated_at": "2026-10-13T08:41:49Z",
+      "mergeable_snapshot": true,
+      "classification": "SIBLING_REVIEW_DEDUP"
+    },
+    {
+      "number": 53,
+      "title": "Carrier-first Observational SUCC: source-indexed histories, exact stochastic descent and lawful quotient repair",
+      "draft": true,
+      "state": "open",
+      "head_branch": "research/carrier-indexed-unification-2026-10-13",
+      "head_sha": "2c7804b3f2ea0d994a0965b7492917135614e65c",
+      "base_branch": "research/many-worlds-swarm-2026-10-13",
+      "base_sha": "759c30c72a2927212cdbfa41365800da96e5d515",
+      "updated_at": "2026-10-13T10:00:55Z",
+      "mergeable_snapshot": true,
+      "classification": "CARRIER_ACTIVE_DRAFT"
+    }
+  ],
+  "active_wip_policy": {
+    "protected_pr": 49,
+    "do_not_check_out_or_modify_live_worker_worktrees": true,
+    "protect_all_active_original_child_commits": true,
+    "freeze_after_workers_stop_or_record_unmerged_as_deferred": true,
+    "cancelled_child_ci_is_not_a_failed_mathematical_test": true,
+    "original_worker_commit_is_not_necessarily_an_integration_commit": true
+  },
+  "independent_swm_child_branches": [
+    {
+      "branch": "research/swm-a01-2026-10-13",
+      "head_sha": "9e032ba01cc9f4deba3b0cacb4c8feb31029064a",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-a02-2026-10-13",
+      "head_sha": "ae6313aa94f660c68233639150b159d5905fdf70",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-a03-2026-10-13",
+      "head_sha": "198ba160e0f34bbab28ad1dcfd456e9e866b6bd7",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-a04-2026-10-13",
+      "head_sha": "ea25dcc76244d2cbcc23edd2d77739141b7c1ca4",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-a05-2026-10-13",
+      "head_sha": "b13b898af05231f9812bebd2f0359c01572ce8a2",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-a06-2026-10-13",
+      "head_sha": "907c2bd93e3d80de584f944b0cf74592c6771bc2",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-a07-2026-10-13",
+      "head_sha": "f1326308e212c17711c59ed8889726b538ad6b54",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-a08-2026-10-13",
+      "head_sha": "0c1183a522de92332c0ad2a375bfaed80796e140",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-b09-2026-10-13",
+      "head_sha": "e3c6cc115204ad3ec2e5d145e786f84aafec6b0c",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-b10-2026-10-13",
+      "head_sha": "ed1a58c47c17c91d6aeb0478ca7833264e521b62",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-b11-2026-10-13",
+      "head_sha": "f57d09eb456e49a1ae10f8a614bc2b8cc15993d0",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-b12-2026-10-13",
+      "head_sha": "24842dfc26517f068f0e0730b3c557ac7f1b4819",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-b13-2026-10-13",
+      "head_sha": "670fec92aeade4da452f26f022f8461aae8cab58",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-b14-2026-10-13",
+      "head_sha": "f22efcf2aa86f0ae2b8484a7e9f50e40f54efc2a",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-b15-2026-10-13",
+      "head_sha": "531c29e1fec53f9016e93740627452763985364c",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-b16-2026-10-13",
+      "head_sha": "e9b53fa9839bc3d70c5fe03110ff9403428ec08c",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-c17-2026-10-13",
+      "head_sha": "a999435614fd44851ebe8ba11f730700ae0ccc71",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-c18-2026-10-13",
+      "head_sha": "8128bf406b41fd93acdf004245ca7cff2644f762",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-c19-2026-10-13",
+      "head_sha": "e6c792b26f2497ba8cb7a266cc518ec79d59fd56",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-c20-2026-10-13",
+      "head_sha": "a497325e198c133887756eb036fb25f7689098c3",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-c21-2026-10-13",
+      "head_sha": "553b3a60b965b3b1453c02feacf406a900a56641",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-c22-2026-10-13",
+      "head_sha": "5f4341eb3c25c552beeec42f85c8095411c2d3e1",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-c23-2026-10-13",
+      "head_sha": "f8bd942af0f618268a511106e738c75776670f4b",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-c24-2026-10-13",
+      "head_sha": "f51ecf200d8a61a96e75bd7b25a2d640752aac66",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-d25-2026-10-13",
+      "head_sha": "7960148cc1f6428462bb6cb20c3a26717022581c",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-d26-2026-10-13",
+      "head_sha": "e7bedd04eb27c0d7928e924b3e9fd1d58ff5861d",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-d27-2026-10-13",
+      "head_sha": "8f3aa1b05d8f896cba930e7ed25917bc04ba1ac7",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-d28-2026-10-13",
+      "head_sha": "6074afd28f60a1f27ffa26e396f892226d23c46a",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-d30-2026-10-13",
+      "head_sha": "bf58ce0cb2ee6f82ffda069db3486e50ac6aa8f2",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-e33-2026-10-13",
+      "head_sha": "abae499ee1cb6730db0626aa0be948bcf0e75dcd",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-e34-2026-10-13",
+      "head_sha": "6d6960b431c20c91ff24ddb9cb37423a0789be3d",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-e35-2026-10-13",
+      "head_sha": "ec56f3e395d3d4281dae93e58a7041312b1e19ca",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-f41-2026-10-13",
+      "head_sha": "aeefd7ec2a7f50e45a1446e1995c7f6289c158a9",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-f42-2026-10-13",
+      "head_sha": "94916961e1fe87648ab8a2b66bede23076419265",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-f44-2026-10-13",
+      "head_sha": "acc1942011cb8fbc7fdcd3e2e48d169af3d74bfc",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-f45-2026-10-13",
+      "head_sha": "8669b2f614d9bcbbe07820c796c14539a1df6807",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-parallel-audit-2026-10-13",
+      "head_sha": "e0ae020047b9555cf9075e01463a56ccc3e2890e",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-rx-c19-2026-10-13",
+      "head_sha": "49445ea3437fb450a85dbcef9f5cc613104142d7",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-x01-2026-10-13",
+      "head_sha": "d9631e3008051628a45bd6373ef35e884d3a7384",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-x02-2026-10-13",
+      "head_sha": "090d6e593b2fa9b9ea431e898f653e72f933ab50",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-x03-2026-10-13",
+      "head_sha": "51dd16c7ff0d2ccea97f74ae6092d2d4a834cc40",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-x04-2026-10-13",
+      "head_sha": "c60f8cb8e611255b1f46b0d0f70f5f4052cde648",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    },
+    {
+      "branch": "research/swm-x05-2026-10-13",
+      "head_sha": "71fda26bd4c39feed2156ab3338a1c767ced5d65",
+      "status": "PRESERVE; UNKNOWN_INDIVIDUAL_ACCEPTANCE"
+    }
+  ],
+  "confirmed_complete_reference": {
+    "pr": 50,
+    "head_sha": "759c30c72a2927212cdbfa41365800da96e5d515"
+  },
+  "parent_carrier_reference": {
+    "pr": 53,
+    "base": "research/many-worlds-swarm-2026-10-13"
+  },
+  "original_provenance_policy": "Immutable O-ledger plus separate CAR/SWM/EOS namespaces. No archive rewrite."
+}

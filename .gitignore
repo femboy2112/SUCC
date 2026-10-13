@@ -18,3 +18,8 @@ coverage/
 .env
 .env.*
 !.env.example
+
+# Isolated pinned Lean packages: preserve manifests, exclude build/cache products.
+.lake/
+*.olean
+*.ilean
