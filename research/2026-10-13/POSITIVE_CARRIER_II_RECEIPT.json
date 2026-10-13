@@ -1,0 +1,616 @@
+{
+  "blind_spot_diagonal_contraction": {
+    "carrier_dimension": 3,
+    "equivalence": {
+      "bound": 6,
+      "equivalent": true
+    },
+    "event_matrices": {
+      "b": {
+        "ok": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "2/5",
+            "2/5",
+            "2/5"
+          ],
+          [
+            "3/5",
+            "3/5",
+            "3/5"
+          ]
+        ]
+      },
+      "clock": {
+        "reset": [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "11/80",
+            "9/40",
+            "9/40"
+          ],
+          [
+            "33/160",
+            "27/80",
+            "27/80"
+          ]
+        ],
+        "tick": [
+          [
+            "5/16",
+            "3/28",
+            "3/56"
+          ],
+          [
+            "3/16",
+            "13/56",
+            "3/56"
+          ],
+          [
+            "5/32",
+            "11/112",
+            "37/112"
+          ]
+        ]
+      }
+    },
+    "generators_in_realization_coordinates": [
+      [
+        "7/2",
+        "-5/2",
+        "0"
+      ],
+      [
+        "63/8",
+        "25/4",
+        "-30"
+      ],
+      [
+        "-21/4",
+        "-5/2",
+        "20"
+      ]
+    ],
+    "grid_candidates_tried": 169,
+    "grid_denominator": 1,
+    "grid_search_verdict": "LAWFUL_REALIZATION",
+    "linear_dimension": 3,
+    "mass_conserving": true,
+    "orbit_rays_extreme_in_cone_of_others_and_axis": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "preparations": {
+      "s0": [
+        "2/7",
+        "2/7",
+        "3/7"
+      ],
+      "sstar": [
+        "0",
+        "2/5",
+        "3/5"
+      ]
+    },
+    "reachable_ray_refinement": {
+      "reason": "generator budget exhausted; reachable cone may be non-polyhedral",
+      "rounds": 10,
+      "verdict": "UNRESOLVED"
+    }
+  },
+  "dimension_two_dichotomy_positive_control": {
+    "carrier_dimension": 2,
+    "equivalence": {
+      "bound": 4,
+      "equivalent": true
+    },
+    "interval": [
+      "0",
+      "2"
+    ],
+    "linear_dimension": 2,
+    "tried": 888,
+    "verdict": "LAWFUL_REALIZATION"
+  },
+  "fibonacci_cat_system": {
+    "charpoly_tick": [
+      "1",
+      "-3/4",
+      "1/16"
+    ],
+    "charpoly_tock": [
+      "1",
+      "-3/4",
+      "1/16"
+    ],
+    "events": {
+      "a": {
+        "reset": [
+          [
+            "1/2",
+            "-1/4"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "tick": [
+          [
+            "1/2",
+            "1/4"
+          ],
+          [
+            "1/4",
+            "1/4"
+          ]
+        ]
+      },
+      "b": {
+        "reset": [
+          [
+            "3/4",
+            "1/4"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "tock": [
+          [
+            "1/4",
+            "-1/4"
+          ],
+          [
+            "-1/4",
+            "1/2"
+          ]
+        ]
+      }
+    },
+    "golden_polynomial_rational_root_check": {
+      "candidates": [
+        "-1",
+        "1"
+      ],
+      "no_rational_root": true,
+      "polynomial": "x^2 + (1) x + (-1)",
+      "values": [
+        [
+          "-1",
+          "-1"
+        ],
+        [
+          "1",
+          "1"
+        ]
+      ]
+    },
+    "golden_rays_tau_normalized": {
+      "e": [
+        "1+0*sqrt5",
+        "-1/2+1/2*sqrt5"
+      ],
+      "e_prime": [
+        "1+0*sqrt5",
+        "-1/2+-1/2*sqrt5"
+      ]
+    },
+    "irrational_contact_certificate": {
+      "C1_contact_ray_reachable_limit": true,
+      "C2_contact_ray_extreme_in_prediction_cone": true,
+      "C3_contact_ray_irrational": true,
+      "D": 5,
+      "conclusion": "no positive carrier over Q of any finite size; a 2-state carrier exists over Q(sqrt5) (Theorem 5.1 / quadratic_cone_carrier)",
+      "contact_ray_tau_normalized": [
+        "2+-1*sqrt5",
+        "-2+2*sqrt5"
+      ],
+      "field": "Q(sqrt5)",
+      "source_coefficients_in_(e,f)": {
+        "s": [
+          "1/2+1/10*sqrt5",
+          "-8+-24/5*sqrt5"
+        ]
+      },
+      "tau_of_other": "-1/8+1/16*sqrt5",
+      "theorem": "rational cone theorem II.2: d+_F < infinity iff an F-rational polyhedral invariant cone K with closure(reach) subset K subset P exists; an irrational extreme ray of P inside closure(reach) is an extreme ray of every such K",
+      "verdict": "FINITE_OBSTRUCTION",
+      "word_in": [
+        [
+          "a",
+          "tick"
+        ]
+      ],
+      "word_in_eigenvalues_dominant_first": [
+        "3/8+1/8*sqrt5",
+        "3/8+-1/8*sqrt5"
+      ],
+      "word_out": [
+        [
+          "b",
+          "tock"
+        ]
+      ],
+      "word_out_eigenvalue_on_contact": "3/8+-1/8*sqrt5",
+      "word_out_other_eigenvalue": "3/8+1/8*sqrt5",
+      "word_out_other_eigenvector": [
+        "1/16+0*sqrt5",
+        "-3/8+1/8*sqrt5"
+      ]
+    },
+    "lean_kernel_checked_core": "formal/EODCS_PositiveCarrierII.lean:golden_slope_irrational",
+    "linear_dimension": 2,
+    "mass": [
+      "1",
+      "0"
+    ],
+    "mass_conserving": true,
+    "orbit_slopes_tick": [
+      "0",
+      "1/2",
+      "3/5",
+      "8/13",
+      "21/34",
+      "55/89",
+      "144/233"
+    ],
+    "orbit_slopes_tock": [
+      "0",
+      "-1",
+      "-3/2",
+      "-8/5",
+      "-21/13",
+      "-55/34",
+      "-144/89"
+    ],
+    "positive_dimension_over_Q": "infinity",
+    "positive_dimension_over_R": 2,
+    "rational_interval_controls": [
+      {
+        "interval": [
+          "-2",
+          "1"
+        ],
+        "invariant_sandwiched": false
+      },
+      {
+        "interval": [
+          "-17/10",
+          "7/10"
+        ],
+        "invariant_sandwiched": false
+      },
+      {
+        "interval": [
+          "-55/34",
+          "55/89"
+        ],
+        "invariant_sandwiched": false
+      }
+    ],
+    "rational_interval_grid_search": {
+      "reason": "grid exhausted (not an impossibility proof)",
+      "tried": 2628,
+      "verdict": "UNRESOLVED"
+    },
+    "reachable_cone_refinement": {
+      "reason": "round budget exhausted; reachable rays may creep towards an irrational limit",
+      "rounds": 12,
+      "verdict": "UNRESOLVED"
+    },
+    "real_two_state_carrier_over_Q_sqrt5": {
+      "all_entries_rational": false,
+      "column_stochastic": true,
+      "event_matrices": {
+        "a": {
+          "reset": [
+            [
+              "1/4+0*sqrt5",
+              "3/8+1/8*sqrt5"
+            ],
+            [
+              "3/8+-1/8*sqrt5",
+              "1/4+0*sqrt5"
+            ]
+          ],
+          "tick": [
+            [
+              "3/8+1/8*sqrt5",
+              "0+0*sqrt5"
+            ],
+            [
+              "0+0*sqrt5",
+              "3/8+-1/8*sqrt5"
+            ]
+          ]
+        },
+        "b": {
+          "reset": [
+            [
+              "3/8+1/8*sqrt5",
+              "1/4+0*sqrt5"
+            ],
+            [
+              "1/4+0*sqrt5",
+              "3/8+-1/8*sqrt5"
+            ]
+          ],
+          "tock": [
+            [
+              "3/8+-1/8*sqrt5",
+              "0+0*sqrt5"
+            ],
+            [
+              "0+0*sqrt5",
+              "3/8+1/8*sqrt5"
+            ]
+          ]
+        }
+      },
+      "intertwining_exact": true,
+      "nonnegative": true,
+      "preparation": {
+        "s": [
+          "1/2+1/10*sqrt5",
+          "1/2+-1/10*sqrt5"
+        ]
+      },
+      "preparation_convex": true
+    },
+    "source": [
+      "1",
+      "0"
+    ],
+    "words_checked_nonnegative": {
+      "checked": 21844,
+      "lengths": "1..7",
+      "negative": 0
+    }
+  },
+  "ghost_freedom": {
+    "PH1": {
+      "a_available_at_sigma": false,
+      "bottom_completion_lower_bound": 5,
+      "carrier_states": 5,
+      "copies": 1,
+      "ghost_block_rank": 3,
+      "ghost_fooling_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "ghost_fooling_size": 4,
+      "legal_source": false,
+      "linear_dimension_bottom_completion": 4,
+      "linear_dimension_minimal_lawful_completion": 1,
+      "menus_in_profile_depth_2": [
+        [
+          "b"
+        ]
+      ],
+      "minimal_lawful_states": 1,
+      "profile_entries_depth_2": 3,
+      "refusal_completion_sizes": [
+        5,
+        1
+      ],
+      "refusal_mass_at_sigma": "1/2",
+      "same_operational_profile": true
+    },
+    "PH1_legal_source": {
+      "a_available_at_sigma": false,
+      "bottom_completion_lower_bound": 5,
+      "carrier_states": 6,
+      "copies": 1,
+      "ghost_block_rank": 3,
+      "ghost_fooling_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "ghost_fooling_size": 4,
+      "legal_source": true,
+      "linear_dimension_bottom_completion": 5,
+      "linear_dimension_minimal_lawful_completion": 2,
+      "menus_in_profile_depth_2": [
+        [
+          "a",
+          "b"
+        ],
+        [
+          "b"
+        ]
+      ],
+      "minimal_lawful_states": 2,
+      "profile_entries_depth_2": 10,
+      "public_menu_prior_half_half": {
+        "after_a_report_0": [
+          "a",
+          "b"
+        ],
+        "empty_history": [
+          "b"
+        ]
+      },
+      "refusal_completion_sizes": [
+        6,
+        2
+      ],
+      "refusal_mass_at_sigma": "1/2",
+      "same_operational_profile": true
+    },
+    "PH2": {
+      "a_available_at_sigma": false,
+      "bottom_completion_lower_bound": 17,
+      "carrier_states": 17,
+      "copies": 2,
+      "ghost_block_rank": 9,
+      "ghost_fooling_cells": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          10
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          7,
+          11
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          6
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          14
+        ],
+        [
+          14,
+          13
+        ],
+        [
+          15,
+          15
+        ]
+      ],
+      "ghost_fooling_size": 16,
+      "legal_source": false,
+      "linear_dimension_bottom_completion": 10,
+      "linear_dimension_minimal_lawful_completion": 1,
+      "menus_in_profile_depth_2": [
+        [
+          "b"
+        ]
+      ],
+      "minimal_lawful_states": 1,
+      "profile_entries_depth_2": 3,
+      "refusal_completion_sizes": [
+        17,
+        1
+      ],
+      "refusal_mass_at_sigma": "1/2",
+      "same_operational_profile": true
+    },
+    "negative_control_availability_square": {
+      "kind": "menu_difference",
+      "legal_in_first": false,
+      "legal_in_second": true,
+      "p1": "0",
+      "p2": "1",
+      "refusal_completion_sizes": [
+        3,
+        1
+      ],
+      "same_operational_profile": false,
+      "source": "mixed",
+      "word": [
+        [
+          "b",
+          "ok"
+        ]
+      ]
+    },
+    "positive_control_PW1_vs_cone_carrier": true,
+    "support_uniform_completion_sizes": {
+      "COARSE": 1,
+      "FINE": 3,
+      "PW1": 8
+    }
+  },
+  "part_i_receipt": "research/2026-10-13/POSITIVE_CARRIER_RECEIPT.json",
+  "schema": "SUCC-POSITIVE-CARRIER-2",
+  "scope": {
+    "bottom_completion_is_weakest_repair": false,
+    "cone_theorem_identities_lean_formalized_over_commutative_semiring": true,
+    "cone_theorem_lean_formalized_over_Q": false,
+    "empirically_authenticated_source": false,
+    "general_decidability_of_finite_positive_dimension_claimed": false,
+    "general_decidability_of_rational_positive_dimension_claimed": false,
+    "ghost_gap_d_law_strictly_below_d_bottom_exhibited_here": true,
+    "main_merge_executed": false,
+    "rational_vs_real_gap_is_infinite_at_linear_dimension_two": true,
+    "rational_vs_real_positive_dimension_gap_exhibited_here": true,
+    "reachable_ray_refinement_complete": false
+  },
+  "status": "EXACT_POSITIVE_CARRIER_FIELD_OF_DEFINITION_AND_GHOST_FREEDOM"
+}

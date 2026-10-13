@@ -830,14 +830,20 @@ def normalize_ray(realization: LinearRealization, v: Vec) -> Vec | None:
 
 
 def reachable_cone_refinement(realization: LinearRealization, *, depth: int = 3,
-                              max_generators: int = 64) -> dict:
+                              max_generators: int = 64, max_rounds: int = 32) -> dict:
     """Counterexample-guided search for an invariant cone INSIDE the closed
     reachable cone R: start from normalized reachable vectors up to ``depth``,
     add every image T g that escapes, prune generators that are nonnegative
     combinations of the others.  Returns LAWFUL_REALIZATION with the carrier,
     or UNRESOLVED with the frontier (never an impossibility verdict: R may be
     non-polyhedral while a larger invariant polyhedral cone exists, and it
-    may be non-polyhedral with no finite carrier at all)."""
+    may be non-polyhedral with no finite carrier at all).
+
+    Termination (Part II audit): the generator budget alone does not bound
+    the loop -- when the reachable rays creep towards an irrational limit
+    (the Fibonacci cat system) every round adds and prunes a few generators
+    and the count never exceeds the budget -- so the number of rounds is
+    bounded by ``max_rounds`` as well."""
     letters = [(a, z) for a in realization.actions for z in realization.outcomes[a]]
     gens: list[Vec] = []
     frontier = [realization.vectors[s] for s in realization.vectors]
@@ -855,6 +861,10 @@ def reachable_cone_refinement(realization: LinearRealization, *, depth: int = 3,
     rounds = 0
     while True:
         rounds += 1
+        if rounds > max_rounds:
+            return {"verdict": "UNRESOLVED", "rounds": rounds - 1,
+                    "reason": "round budget exhausted; reachable rays may creep towards an irrational limit",
+                    "generators": tuple(gens)}
         # prune
         pruned: list[Vec] = []
         for i, g in enumerate(gens):
