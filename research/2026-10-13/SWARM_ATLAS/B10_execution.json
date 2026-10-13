@@ -1,0 +1,85 @@
+{
+  "claim_id": "SWM-B10",
+  "branch": "research/swm-b10-2026-10-13",
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "worktree": "/home/leah/succ_lab/swm-b10",
+  "commands": [
+    {
+      "command": "ulimit -v 102400 && exec python research/2026-10-13/SWARM_ATLAS/B10_probe.py > research/2026-10-13/SWARM_ATLAS/B10_receipt.json",
+      "revision": "initial resource instrument",
+      "exit_code": 1,
+      "error": "AssertionError: B10 resource contract exceeded: 511964 KiB",
+      "status": "FAILED RESOURCE INSTRUMENT; no success claimed for this execution"
+    },
+    {
+      "command": "ulimit -v 102400 && exec python -c 'import runpy, resource; n=runpy.run_path(\"research/2026-10-13/SWARM_ATLAS/B10_probe.py\", run_name=\"b10_diagnostic\"); n[\"receipt\"](); print(\"\".join(line for line in open(\"/proc/self/status\") if line.startswith((\"VmPeak:\", \"VmHWM:\", \"VmRSS:\")))); print(\"RUSAGE_SELF_MAXRSS_KIB\", resource.getrusage(resource.RUSAGE_SELF).ru_maxrss)'",
+      "exit_code": 0,
+      "observed_vmpeak_kib": 32560,
+      "observed_vmhwm_kib": 20028,
+      "observed_vmrss_kib": 20028,
+      "observed_process_lifetime_ru_maxrss_kib": 511964
+    },
+    {
+      "command": "ulimit -v 102400 && exec python scripts/verify_provenance.py",
+      "exit_code": 0,
+      "status": "SOURCE_PROVENANCE_VERIFIED",
+      "items": 72,
+      "byte_identical_research_archives": 17,
+      "mechanical_namespace_migrations": 55
+    },
+    {
+      "command": "ulimit -v 102400 && exec python research/2026-10-13/SWARM_ATLAS/B10_probe.py > research/2026-10-13/SWARM_ATLAS/B10_receipt.json",
+      "revision": "corrected program-memory instrument",
+      "exit_code": 0,
+      "observed_program_vmhwm_kib": 20316,
+      "observed_process_lifetime_ru_maxrss_kib": 511964
+    },
+    {
+      "command": "ulimit -v 102400 && exec python research/2026-10-13/SWARM_ATLAS/B10_probe.py > /tmp/swm-b10-replay.json",
+      "revision": "corrected program-memory instrument replay",
+      "exit_code": 0,
+      "observed_program_vmhwm_kib": 20256,
+      "observed_process_lifetime_ru_maxrss_kib": 511964
+    },
+    {
+      "command": "cmp research/2026-10-13/SWARM_ATLAS/B10_receipt.json /tmp/swm-b10-replay.json && git diff --check",
+      "revision": "first corrected replay comparison",
+      "exit_code": 0
+    },
+    {
+      "command": "ulimit -v 102400 && exec python research/2026-10-13/SWARM_ATLAS/B10_probe.py > research/2026-10-13/SWARM_ATLAS/B10_receipt.json",
+      "revision": "final explicit compact-source mutant implementation",
+      "exit_code": 0,
+      "observed_program_vmhwm_kib": 20224,
+      "observed_process_lifetime_ru_maxrss_kib": 511964
+    },
+    {
+      "command": "ulimit -v 102400 && exec python research/2026-10-13/SWARM_ATLAS/B10_probe.py > /tmp/swm-b10-replay.json",
+      "revision": "final explicit mutant replay",
+      "exit_code": 0,
+      "observed_program_vmhwm_kib": 20240,
+      "observed_process_lifetime_ru_maxrss_kib": 511964
+    },
+    {
+      "command": "cmp research/2026-10-13/SWARM_ATLAS/B10_receipt.json /tmp/swm-b10-replay.json && git diff --check",
+      "revision": "final replay comparison",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --exit-code 5eb09e7 -- observational_succ/voyager_profinite_frontier.py observational_succ/field_limit_countermodels.py provenance",
+      "exit_code": 0,
+      "status": "inspected source modules and archives unchanged"
+    }
+  ],
+  "resource_diagnosis": {
+    "correction": "Use current executed program's /proc/self/status VmHWM; retain process-lifetime ru_maxrss as diagnostic data.",
+    "basis": "Linux getrusage documentation states resource usage metrics survive execve; observed current-program peak and virtual-memory limit distinguish that inherited process history.",
+    "source_url": "https://man7.org/linux/man-pages/man2/getrusage.2.html",
+    "hard_virtual_memory_limit_kib": 102400,
+    "failed_gate_preserved": true,
+    "resource_gate_weakened": false
+  },
+  "proof_state": "PROVED LOCAL paper argument, classical ingredients; no Lean kernel check",
+  "finite_receipt_state": "TESTED MODEL, exact deterministic byte replay",
+  "not_run": ["full repository unit-test suite", "Lean compiler", "CI", "push"]
+}

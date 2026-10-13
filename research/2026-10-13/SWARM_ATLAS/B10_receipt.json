@@ -1,0 +1,295 @@
+{
+  "boundaries": {
+    "finite_tests_prove_infinite_actualization": false,
+    "full_suite_or_Lean_compiler_run": false,
+    "physical_original_source_authenticated": false,
+    "topological_properties_proved_by_script": false
+  },
+  "claim_id": "SWM-B10",
+  "closed_image_noncompact_source_positive": [
+    {
+      "cost": 0,
+      "prefix": [
+        0,
+        0
+      ],
+      "source": 0
+    },
+    {
+      "cost": 1,
+      "prefix": [
+        1,
+        0,
+        0
+      ],
+      "source": 1
+    },
+    {
+      "cost": 2,
+      "prefix": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "source": 2
+    },
+    {
+      "cost": 3,
+      "prefix": [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source": 3
+    },
+    {
+      "cost": 4,
+      "prefix": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source": 4
+    },
+    {
+      "cost": 5,
+      "prefix": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source": 5
+    },
+    {
+      "cost": 6,
+      "prefix": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "source": 6
+    }
+  ],
+  "compact_source_discontinuous_trace_mutation": {
+    "q1_at_reciprocals_2_through_6": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "q1_at_source_zero": 1
+  },
+  "compact_sublevel_refutations": [
+    {
+      "cost_cap": 1,
+      "single_refuting_probe": 1,
+      "sublevel_outcomes": [
+        1
+      ]
+    },
+    {
+      "cost_cap": 2,
+      "single_refuting_probe": 2,
+      "sublevel_outcomes": [
+        1,
+        1
+      ]
+    },
+    {
+      "cost_cap": 3,
+      "single_refuting_probe": 3,
+      "sublevel_outcomes": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "cost_cap": 4,
+      "single_refuting_probe": 4,
+      "sublevel_outcomes": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "cost_cap": 5,
+      "single_refuting_probe": 5,
+      "sublevel_outcomes": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "sha256": {
+    "observational_succ/field_limit_countermodels.py": "495cf2d8978aac8571dd27dde996451b81bf40e559f73d9033a316d7310d93be",
+    "observational_succ/voyager_profinite_frontier.py": "9971e3b4dc389963be322bd96ddedb8ad2cbe2e5c2e4dcea2913f0485195ea34",
+    "research/2026-10-13/SWARM_ATLAS/B10_probe.py": "e5a18314378fcc281d9e2f501403cc8c7b4c0b7c72c9b1da23db4a1239316165"
+  },
+  "status": "TESTED MODEL: exact finite shadows only",
+  "threshold_phantom": [
+    {
+      "horizon": 0,
+      "least_cost": 1,
+      "prefix": [],
+      "witness_refuting_probe": 1
+    },
+    {
+      "horizon": 1,
+      "least_cost": 2,
+      "prefix": [
+        0
+      ],
+      "witness_refuting_probe": 2
+    },
+    {
+      "horizon": 2,
+      "least_cost": 3,
+      "prefix": [
+        0,
+        0
+      ],
+      "witness_refuting_probe": 3
+    },
+    {
+      "horizon": 3,
+      "least_cost": 4,
+      "prefix": [
+        0,
+        0,
+        0
+      ],
+      "witness_refuting_probe": 4
+    },
+    {
+      "horizon": 4,
+      "least_cost": 5,
+      "prefix": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "witness_refuting_probe": 5
+    },
+    {
+      "horizon": 5,
+      "least_cost": 6,
+      "prefix": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "witness_refuting_probe": 6
+    },
+    {
+      "horizon": 6,
+      "least_cost": 7,
+      "prefix": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "witness_refuting_probe": 7
+    },
+    {
+      "horizon": 7,
+      "least_cost": 8,
+      "prefix": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "witness_refuting_probe": 8
+    },
+    {
+      "horizon": 8,
+      "least_cost": 9,
+      "prefix": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "witness_refuting_probe": 9
+    }
+  ],
+  "voyager_eventual_zero_source": [
+    {
+      "horizon": 0,
+      "next_output": 0,
+      "states": 1
+    },
+    {
+      "horizon": 1,
+      "next_output": 0,
+      "states": 2
+    },
+    {
+      "horizon": 2,
+      "next_output": 0,
+      "states": 3
+    },
+    {
+      "horizon": 3,
+      "next_output": 0,
+      "states": 4
+    },
+    {
+      "horizon": 4,
+      "next_output": 0,
+      "states": 5
+    },
+    {
+      "horizon": 5,
+      "next_output": 0,
+      "states": 6
+    },
+    {
+      "horizon": 6,
+      "next_output": 0,
+      "states": 7
+    }
+  ],
+  "zero_cost_noncompact_sublevel_mutation": {
+    "compact_sublevel_hypothesis_satisfied": false,
+    "finite_prefix_costs_all_zero": true,
+    "global_nonrealization_is_a_written_proof": true,
+    "global_zero_realizer": false
+  }
+}
