@@ -204,6 +204,52 @@ class TestPermutationFixedPoint(unittest.TestCase):
             self.assertEqual(len(cover_vertices), n * len(root_h))
             self.assertEqual(len(cover_arcs), len(edges) * len(root_h))
 
+    def test_cover_sections_descend_exactly_at_holonomy_fixed_points(self):
+        # Base has one section, while a two-sheet cover has three;
+        # only the fixed root value 2 yields a deck-invariant section.
+        nonfree = PermutationGraph(("root",),
+                                   (("root", "root", (1, 0, 2)),), 3)
+        report = nonfree.section_descent_report()
+        self.assertEqual(report["cover_parallel_sections"], 3)
+        self.assertEqual(report["base_parallel_sections"], 1)
+        self.assertEqual(report["root_elements_admitting_descent"], [2])
+        self.assertFalse(report["all_cover_sections_descend"])
+
+        # Noncommuting S3 holonomy forces a six-sheet kernel cover.
+        # Each of three fiber-root values lifts to a cover section, but
+        # none is deck-invariant and none descends to the original graph.
+        s3 = PermutationGraph(("root",),
+                              (("root", "root", (1, 0, 2)),
+                               ("root", "root", (0, 2, 1))), 3)
+        report = s3.section_descent_report()
+        self.assertEqual(report["holonomy_group_order"], 6)
+        self.assertEqual(report["cover_parallel_sections"], 3)
+        self.assertEqual(report["base_parallel_sections"], 0)
+        self.assertEqual(report["root_elements_admitting_descent"], [])
+
+    def test_cover_section_mutant_invalid_root_rejected(self):
+        graph = PermutationGraph(("v",), (("v", "v", (1, 0, 2)),), 3)
+        for bad in (-1, 3, 1.0, "0"):
+            with self.assertRaises(GeneticsError):
+                graph.cover_parallel_section(bad)
+
+    def test_random_nonabelian_descent_versus_assignment_oracle(self):
+        rng = Random(879)
+        perms = tuple(permutations(range(3)))
+        for _ in range(60):
+            n = rng.choice((1, 2, 3))
+            v = tuple(str(i) for i in range(n))
+            edges = [(v[i], v[i+1], rng.choice(perms))
+                     for i in range(n-1)]
+            edges += [(rng.choice(v), rng.choice(v), rng.choice(perms))
+                      for _ in range(rng.randrange(3))]
+            graph = PermutationGraph(v, tuple(edges), 3)
+            report = graph.section_descent_report()
+            # Brute force global base assignments never uses group closure.
+            self.assertEqual(report["base_parallel_sections"],
+                             graph.independent_assignment_count())
+            self.assertEqual(report["cover_parallel_sections"], 3)
+
     def test_mutated_source_epoch_rejected_for_permutation_transport(self):
         with self.assertRaises(GeneticsError):
             PermutationGraph(("root",), (), 3, epoch=-1)
@@ -221,6 +267,9 @@ class TestPermutationFixedPoint(unittest.TestCase):
         self.assertEqual(d["nonabelian_S3_cover_vertices"], 6)
         self.assertEqual(d["nonabelian_S3_cover_edges"], 12)
         self.assertEqual(d["nonabelian_S3_base_sections"], 0)
+        self.assertEqual(d["nonfree_cover_descent"]["base_parallel_sections"], 1)
+        self.assertEqual(d["nonabelian_cover_descent"]["base_parallel_sections"], 0)
+        self.assertEqual(d["nonabelian_cover_descent"]["cover_parallel_sections"], 3)
         self.assertFalse(d["physical_gauge_field_claimed"])
 
 
