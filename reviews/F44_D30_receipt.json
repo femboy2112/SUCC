@@ -1,0 +1,137 @@
+{
+  "CNOT_then_X_plus": {
+    "Bell": "1",
+    "mixture": "1/2"
+  },
+  "PSD_domination_certificate": {
+    "factor": "outer(1,0,0,-1)/4",
+    "matrix": [
+      [
+        "1/4",
+        "0",
+        "0",
+        "-1/4"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "-1/4",
+        "0",
+        "0",
+        "1/4"
+      ]
+    ]
+  },
+  "arithmetic": "exact rational matrices",
+  "author_commit": "acc1942011cb8fbc7fdcd3e2e48d169af3d74bfc",
+  "author_manuscript_sha256": "38bb51e1a65dc7c9fe8dd3e7f9751593b5366326f9b4d40b16ec4d03e9a0e671",
+  "author_probe_read_or_imported": false,
+  "counterfactual_original_pair_targets": {
+    "even": 0,
+    "odd": 1
+  },
+  "destructive_order_words_checked": 31,
+  "initial_Q_and_E_marginals": [
+    [
+      "1/2",
+      "0"
+    ],
+    [
+      "0",
+      "1/2"
+    ]
+  ],
+  "joint_XX_outcomes": {
+    "Bell": [
+      "1",
+      "0"
+    ],
+    "mixture": [
+      "1/2",
+      "1/2"
+    ]
+  },
+  "local_adaptive_stopping_postprocessing_law": [
+    {
+      "output": [
+        "censored",
+        3,
+        0
+      ],
+      "probability": "51/250"
+    },
+    {
+      "output": [
+        "censored",
+        3,
+        1
+      ],
+      "probability": "17/250"
+    },
+    {
+      "output": [
+        "halt",
+        1,
+        0
+      ],
+      "probability": "1/5"
+    },
+    {
+      "output": [
+        "halt",
+        1,
+        1
+      ],
+      "probability": "3/10"
+    },
+    {
+      "output": [
+        "halt",
+        2,
+        1
+      ],
+      "probability": "49/250"
+    },
+    {
+      "output": [
+        "halt",
+        3,
+        1
+      ],
+      "probability": "4/125"
+    }
+  ],
+  "memory_control": {
+    "all_single_time_bit_marginals": [
+      "1/2",
+      "1/2"
+    ],
+    "refreshed_00_probability": "1/4",
+    "retained_00_probability": "1/2"
+  },
+  "probe_sha256": "cc2d372c6558c8aae1264fbdc5d5b75b47540936797608f72ce84a61204c3bd0",
+  "reset_current_carrier_count": 1,
+  "reset_original_target_count": 2,
+  "review": "F44_D30",
+  "scope": "bounded exact witnesses; universal claims require the paper arguments",
+  "stopping_boundary": "depth-three censoring; no numerical certification of divergence",
+  "target_fibers_XX": {
+    "minus": [
+      "mixture"
+    ],
+    "plus": [
+      "Bell",
+      "mixture"
+    ]
+  }
+}
