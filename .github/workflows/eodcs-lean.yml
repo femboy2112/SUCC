@@ -1,0 +1,42 @@
+name: EODCS isolated Lean4 proof-kernel gate
+
+on:
+  push:
+    branches:
+      - 'research/eodcs-*'
+  pull_request:
+    paths:
+      - 'formal/EODCS_OrderAdjunction.lean'
+      - '.github/workflows/eodcs-lean.yml'
+      - 'lean-toolchain'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  eodcs_lean:
+    name: Lean4 exact order/adjunction lemmas (pinned)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: leanprover/lean-action@v1
+        with:
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+      - name: Compile and kernel-check the EODCS lemmas
+        run: |
+          lean --version
+          lean formal/EODCS_OrderAdjunction.lean
+      - name: Fail closed on placeholders and imported axioms
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          src=Path("formal/EODCS_OrderAdjunction.lean").read_text()
+          code=src.split("namespace ObservationalSUCC",1)[1]
+          for bad in ("sorry", "admit", "axiom ", "unsafe "):
+              assert bad not in code, bad
+          PY
