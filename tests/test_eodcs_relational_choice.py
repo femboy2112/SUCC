@@ -8,7 +8,7 @@ from observational_succ.causal_nerode_succ import SourceChart,SourceTransportErr
 from observational_succ.eodcs_relational_choice import (
     RelationalIntervention,relational_descent,compose_relations,
     universally_sufficient_refinement,source_likelihood_mutant,
-    relational_choice_demo,
+    relational_choice_demo, modal_envelopes, modal_property_verdict,
 )
 
 
@@ -118,6 +118,82 @@ class TestRelationalChoice(unittest.TestCase):
             self.assertEqual(composed.before,old)
             self.assertEqual(composed.after,end)
             self.assertEqual(composed.cost,Q(2))
+
+    def test_tight_upper_lower_envelopes_refute_false_exact_transport(self):
+        old=chart(0,("s0","s1"),("0","0"))
+        next_chart=chart(1,("u0","u1"),("cold","warm"))
+        src=RelationalIntervention("R",old,next_chart,(("u0",),("u1",)))
+        b=modal_envelopes(src)
+        self.assertEqual(len(b),1)
+        self.assertEqual(b[0].may_reports,("cold","warm"))
+        self.assertEqual(b[0].common_possible_reports,())
+        self.assertFalse(b[0].exact_report_level_support)
+        self.assertEqual(modal_property_verdict(src,"0",("warm",)),
+                         "undecided_without_finer_observation")
+        self.assertEqual(modal_property_verdict(src,"0",("cold","warm")),
+                         "guaranteed_within_declared_support")
+        self.assertEqual(modal_property_verdict(src,"0",()),
+                         "impossible_within_declared_support")
+
+    def test_exact_support_descent_iff_may_equals_common_on_each_fiber(self):
+        states=("a","b","c")
+        opts=tuple(tuple(x for x,on in zip(states,bits) if on)
+                   for bits in product((0,1),repeat=3) if any(bits))
+        old_reports=(("0","0","0"),("0","0","1"),("0","1","0"),
+                     ("1","0","0"),("0","1","1"),("0","1","2"))
+        target_reports=("red","green","blue")
+        after=chart(1,states,target_reports)
+        for old in old_reports:
+            src=chart(0,states,old)
+            for law in product(opts,repeat=3):
+                model=RelationalIntervention("R",src,after,law)
+                receipt=relational_descent(model)
+                bounds=modal_envelopes(model)
+                self.assertEqual(receipt.descended_to_set_valued_observer,
+                                 all(b.exact_report_level_support for b in bounds))
+                self.assertTrue(all(set(b.common_possible_reports)<=
+                                    set(b.may_reports) for b in bounds))
+                for b in bounds:
+                    hidden=[s for s in states if src.report(s)==b.old_report]
+                    full_support=[set(after.report(t) for t in model.possible_states(s))
+                                  for s in hidden]
+                    self.assertEqual(set(b.may_reports),set.union(*full_support))
+                    self.assertEqual(set(b.common_possible_reports),
+                                     set.intersection(*full_support))
+                    for good in ((),("red",),("green",),("blue",),
+                                 ("red","green","blue")):
+                        verdict=modal_property_verdict(model,b.old_report,good)
+                        if set.union(*full_support)<=set(good):
+                            self.assertEqual(verdict,"guaranteed_within_declared_support")
+                        elif set.union(*full_support).isdisjoint(good):
+                            self.assertEqual(verdict,"impossible_within_declared_support")
+                        else:
+                            self.assertEqual(verdict,"undecided_without_finer_observation")
+
+    def test_modal_not_misleading_as_probability_or_guaranteed_specific_outcome(self):
+        old=chart(0,("s0","s1"),("0","0"))
+        next_chart=chart(1,("u0","u1"),("cold","warm"))
+        src=RelationalIntervention("R",old,next_chart,
+                                    (("u0","u1"),("u0","u1")))
+        b=modal_envelopes(src)[0]
+        self.assertEqual(b.may_reports,("cold","warm"))
+        self.assertEqual(b.common_possible_reports,("cold","warm"))
+        self.assertTrue(b.exact_report_level_support)
+        # Each report is possible at every hidden state. Neither is
+        # GUARANTEED to occur, since either transition may happen.
+        self.assertEqual(modal_property_verdict(src,"0",("cold",)),
+                         "undecided_without_finer_observation")
+
+    def test_negative_claim_type_gates(self):
+        old=chart(0,("s0","s1"),("0","0"))
+        next_chart=chart(1,("u0","u1"),("cold","warm"))
+        src=RelationalIntervention("R",old,next_chart,(("u0",),("u1",)))
+        with self.assertRaises(SourceTransportError):
+            modal_property_verdict(src,"unobserved",("cold",))
+        with self.assertRaises(SourceTransportError):
+            modal_property_verdict(src,"0",("faked-label",))
+        with self.assertRaises(SourceTransportError):
+            modal_property_verdict(src,"0",["warm"])
 
     def test_source_type_and_probabilistic_mutation_fail_closed(self):
         src=chart(0,("a","b"),("0","1"))
