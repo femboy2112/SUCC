@@ -77,7 +77,7 @@ This is a finite-list exhaustive-source theorem; probes may require arbitrarily 
 
 **Proof:** If no source state realizes all z, each source has at least one mismatching w; collect one per enumerated state. Conversely, if *every finite family* of probes has some single source reproducing z on that family, the refuting family is impossible, so some one source realizes z globally.
 
-Both sides—including explicit construction of a refuting probe list of length N—are Lean 4.14 kernel-checked without mathlib in formal/EODCS_VoyagerTrace.lean. This also gives a precise repair to claims that every finite agreement merely approximates an impossible ideal: under a **complete finite original source**, compatible observations DO imply original realization.
+Both sides—including existence of a refuting probe list of length N by one witness per state—are Lean 4.14 kernel-checked without mathlib in formal/EODCS_VoyagerTrace.lean. **Effectivity caveat:** the Lean proof uses `Classical.choose` to select a mismatching probe for each nonrealizing source; the abstract theorem gives finite **existence**, not an algorithm or time bound unless W, source evaluations, and a suitable search are independently computable. For the power-two pulse case the code separately provides an executable explicit witness formula. This also gives a precise repair to claims that every finite agreement merely approximates an impossible ideal: under a **complete finite original source**, compatible observations DO imply original realization.
 
 **Scope trap:** N is a bound on the NUMBER of probes in the certificate, not their action-word lengths or executable costs, and not a theorem about an unknown infinite S.
 
