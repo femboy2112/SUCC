@@ -1,0 +1,295 @@
+{
+  "actual_source_merge": {
+    "all_future_boundary_avoidance_certified": false,
+    "image_cell": 2,
+    "original_cells": [
+      0,
+      1
+    ],
+    "originals": [
+      "2/5",
+      "3/5"
+    ],
+    "same_first_image": [
+      "0",
+      "6/25",
+      "0"
+    ]
+  },
+  "alpha_rational_isolator": [
+    "919643377607/250000000000",
+    "3678573510429/1000000000000"
+  ],
+  "claim_id": "SWM-D25",
+  "fixed_boundary": {
+    "binary_flip_fails_for_both_labels": [
+      true,
+      true
+    ],
+    "boundary_orbit_sink_commutes": true,
+    "forward_equals_state": true,
+    "state": [
+      "3/2",
+      "1/4",
+      "-1/8"
+    ]
+  },
+  "misiurewicz_all_partitions": [
+    {
+      "lawful_factors": [
+        {
+          "partition": [
+            0,
+            0,
+            0
+          ],
+          "transition": {
+            "0": 0
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1
+          ],
+          "transition": {
+            "0": 1,
+            "1": 0
+          }
+        }
+      ],
+      "partitions_examined": 5,
+      "period": 2,
+      "width": 1,
+      "word_count": 3
+    },
+    {
+      "lawful_factors": [
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "transition": {
+            "0": 0
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "transition": {
+            "0": 1,
+            "1": 0
+          }
+        }
+      ],
+      "partitions_examined": 15,
+      "period": 2,
+      "width": 2,
+      "word_count": 4
+    },
+    {
+      "lawful_factors": [
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "transition": {
+            "0": 0
+          }
+        },
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "transition": {
+            "0": 1,
+            "1": 0
+          }
+        }
+      ],
+      "partitions_examined": 203,
+      "period": 2,
+      "width": 3,
+      "word_count": 6
+    }
+  ],
+  "natural_acim_identified": false,
+  "physical_source_authenticated": false,
+  "postcritical_orbit_independent_polynomial_replay": [
+    [
+      "1/2",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1/4",
+      "0"
+    ],
+    [
+      "-1/2",
+      "-1/4",
+      "1/8"
+    ],
+    [
+      "3/2",
+      "1/4",
+      "-1/8"
+    ],
+    [
+      "3/2",
+      "1/4",
+      "-1/8"
+    ]
+  ],
+  "proof_status": "CLASSICAL / PROVED LOCAL; finite receipts are calibration",
+  "r4_binary_all_partitions": [
+    {
+      "lawful_factors": [
+        {
+          "partition": [
+            0,
+            0
+          ],
+          "transition": {
+            "0": 0
+          }
+        }
+      ],
+      "partitions_examined": 2,
+      "period": 1,
+      "width": 1,
+      "word_count": 2
+    },
+    {
+      "lawful_factors": [
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "transition": {
+            "0": 0
+          }
+        }
+      ],
+      "partitions_examined": 15,
+      "period": 1,
+      "width": 2,
+      "word_count": 4
+    },
+    {
+      "lawful_factors": [
+        {
+          "partition": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "transition": {
+            "0": 0
+          }
+        }
+      ],
+      "partitions_examined": 4140,
+      "period": 1,
+      "width": 3,
+      "word_count": 8
+    }
+  ],
+  "r4_deterministic_window_refutation": {
+    "exact_closed_orbits": [
+      {
+        "all_future_boundary_avoidance_certified": true,
+        "repeat_index": 1,
+        "states_until_repeat": [
+          "1/33",
+          "2/33",
+          "4/33",
+          "8/33",
+          "16/33",
+          "32/33"
+        ]
+      },
+      {
+        "all_future_boundary_avoidance_certified": true,
+        "repeat_index": 1,
+        "states_until_repeat": [
+          "7/33",
+          "14/33",
+          "28/33",
+          "10/33",
+          "20/33",
+          "26/33"
+        ]
+      }
+    ],
+    "initial_reports": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "successor_reports": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "tent_coordinate_sources": [
+      "1/33",
+      "7/33"
+    ],
+    "width": 2
+  },
+  "source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "source_sha256": {
+    "observational_succ/chaos_source_quotient.py": "8ce2c3bf9f7d1407f6b05f011b72e687163b9d13f6b2af18fd79efac0708f0c6",
+    "observational_succ/logistic_observer_tree.py": "fdde6dc2f02c75e90e50ae52b13699b40fb7b3f29d2fbfebd21d8481a4007a09",
+    "observational_succ/misiurewicz_phase_quotient.py": "389d29b14fd2f1947a6e488a87fe8bd18269af23269d4ad6a9d451b2ff77ef2d"
+  },
+  "synthetic_C_self_loop_mutation": {
+    "lawful_partitions": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "period": 1,
+    "source_is_actual_logistic": false
+  }
+}
