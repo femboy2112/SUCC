@@ -1,0 +1,145 @@
+{
+  "Kraus_label_counts": [
+    1,
+    2
+  ],
+  "Kraus_squared_weights": [
+    [
+      "1"
+    ],
+    [
+      "1/2",
+      "1/2"
+    ]
+  ],
+  "author_commit": "224d049964b02fc42ad4fcbaa078944ed91da0a7",
+  "author_helpers_or_probes_imported": false,
+  "configured_address_space_cap_bytes": 268435456,
+  "configured_cpu_cap_seconds": 25,
+  "elapsed_seconds": 0.0217,
+  "exact_selected_image": [
+    "a"
+  ],
+  "exit_code": 0,
+  "facet_added_current": [
+    "s0",
+    "q1"
+  ],
+  "facet_added_original": [
+    "s1",
+    "q0"
+  ],
+  "facets": [
+    [
+      "a",
+      "b"
+    ],
+    [
+      "a",
+      "c"
+    ]
+  ],
+  "finite_full_graph": {
+    "closed_state_subsystems": [
+      [],
+      [
+        "l"
+      ]
+    ],
+    "extendable_stage_counts": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "live_core": [
+      "l"
+    ],
+    "raw_stage_counts": [
+      1,
+      2,
+      2,
+      2,
+      2
+    ]
+  },
+  "finite_parameter_cap_4_survivors": {
+    "0": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "1": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "2": [
+      2,
+      3,
+      4
+    ],
+    "3": [
+      3,
+      4
+    ],
+    "4": [
+      4
+    ],
+    "5": []
+  },
+  "infinite_singleton_mass": "limit 2^-n = 0, by continuity from above; not an executed infinite event",
+  "linear_dictionary_captures_ab": false,
+  "memory_omission_enabled_values": {
+    "fresh": true,
+    "spent": false
+  },
+  "nonclosed_admission_proof_receipt": {
+    "admitted": "infinitely many 1s",
+    "finite_zero_prefix_realizer": "0^n followed by 1^omega",
+    "unadmitted_coherent_limit": "0^omega"
+  },
+  "one_way_action_lifting": {
+    "coarse": [
+      "read"
+    ],
+    "fine": [
+      "read",
+      "wait"
+    ]
+  },
+  "positive_finite_cylinder_masses": [
+    "1",
+    "1/2",
+    "1/4",
+    "1/8",
+    "1/16"
+  ],
+  "probe_sha256": "1f4ccf383cafc03fcd4b726d42fd343b1faa4788888843afebd80654a6baec6b",
+  "public_arrow_scope": {
+    "aggregate_root_image": [
+      0,
+      1
+    ],
+    "report_0_root_image": [
+      0
+    ]
+  },
+  "review": "F48_PHASE2_A03_REVIEW",
+  "same_marginals_different_joint_reports": [
+    "1",
+    "0"
+  ],
+  "scope": "Tiny exact controls and symbolic proof receipts; no infinitary membership computation",
+  "sections_5_6_sha256": "59466bb9c0f2a5e8580a595ef1dfddc977238254266a874af229585de3618f8e",
+  "self_peak_rss_kib": 16884,
+  "source_sha256": {
+    "F48_PHASE2_ARCHITECTURE.md": "60d4f4e6369ca92c35f872434cbd4dd0066996d6b2fd444965d643f92d83283c",
+    "F48_VALIDATION_MATRIX.md": "a8b16cfe953be267fca1b3475ddaa6e6d1a7e62b5d2c877182c17448615bf9bb"
+  },
+  "two_delay_point_recovery": true,
+  "unbounded_parameter_proof_receipt": "At every depth k choose n>=k; each fixed n is killed at n+1."
+}
