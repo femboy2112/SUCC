@@ -58,3 +58,6 @@ jobs:
           assert r['scope']['physical_source_authenticated'] is False
           assert r['scope']['completed_Weil_form_positivity_or_RH_proved'] is False
           PY
+
+      - name: Round-II source-conditional receipt (causal, Nerode, genetic probes)
+        run: python scripts/eodcs_causal_probe.py
