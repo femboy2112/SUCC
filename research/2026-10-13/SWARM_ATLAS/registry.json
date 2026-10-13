@@ -1111,7 +1111,15 @@
     }
   ],
   "syntheses": [],
-  "reviews": [],
+  "reviews": [
+    {
+      "reviewer": "/root/c17/c17_crucible",
+      "assignment": "C17",
+      "state": "RUNNING",
+      "writes": "READ ONLY; PARENT C17 WRITES OWN DOSSIER",
+      "independence": "Separate native child, same model/provider; primary source/history lineage shared"
+    }
+  ],
   "native_agents_genuinely_spawned_so_far": [
     "/root/a01",
     "/root/b09",
@@ -1119,7 +1127,9 @@
     "/root/a02",
     "/root/a03",
     "/root/a04",
-    "/root/b10"
+    "/root/b10",
+    "/root/c17",
+    "/root/c17/c17_crucible"
   ],
   "provider_capacity_receipts": [
     {
