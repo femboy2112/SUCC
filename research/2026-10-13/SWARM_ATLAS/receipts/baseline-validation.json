@@ -1,0 +1,52 @@
+{
+  "python": "Python 3.12.3",
+  "utc": "2026-10-13T06:31:55.940834+00:00",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "scripts/verify_provenance.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.064,
+      "log": "research/2026-10-13/SWARM_ATLAS/receipts/baseline-0.log"
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 133.52,
+      "log": "research/2026-10-13/SWARM_ATLAS/receipts/baseline-1.log"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.166,
+      "log": "research/2026-10-13/SWARM_ATLAS/receipts/baseline-2.log"
+    },
+    {
+      "command": [
+        "python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.121,
+      "log": "research/2026-10-13/SWARM_ATLAS/receipts/baseline-3.log"
+    }
+  ],
+  "baseline_source_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "receipt_checkout_sha": "53e698d686cefadfe7a0fd3464852bd3fbd4eecd",
+  "scope_note": "The principal committed only swarm registry/protocol during this run; all executable repository sources remained exactly at baseline.",
+  "suite_summary": "1602 tests, OK"
+}
