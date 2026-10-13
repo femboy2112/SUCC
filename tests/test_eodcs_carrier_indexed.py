@@ -464,6 +464,30 @@ class FullCarrierComposition(unittest.TestCase):
         self.assertTrue(audit_descent(act,repair.after,future).valid)
         self.assertFalse(audit_descent(act,initial,future).valid)
 
+    def test_repeated_action_name_requires_stage_indexed_actual_registry(self):
+        before=stage(n=2)
+        middle=stage(n=2,epoch=1,name="middle")
+        after=stage(n=2,epoch=2,name="after")
+        original=same_source(2)
+        first=action(before,("ok","ok"),name="read",final=middle)
+        second=action(middle,("done","done"),name="read",final=after)
+        performed=original.root().advance(first,"ok").advance(second,"done")
+        self.assertEqual(len(performed.events),2)
+        self.assertTrue(performed.verify({
+            ("read","root",0,"middle",1):first,
+            ("read","middle",1,"after",2):second,
+        }))
+        with self.assertRaises(CarrierError):
+            performed.verify({"read":second})
+        forged=replace(performed,events=(
+            performed.events[0],
+            replace(performed.events[1],after_epoch=55)))
+        with self.assertRaises(CarrierError):
+            forged.verify({
+                ("read","root",0,"middle",1):first,
+                ("read","middle",1,"after",2):second,
+            })
+
     def test_exact_source_negative_controls_do_not_retroactively_update_history(self):
         st=stage(n=2)
         src=same_source(2)
