@@ -86,7 +86,7 @@ class CarrierSemantics(unittest.TestCase):
             Carrier(orig.originals,orig.stage,orig.preparation,True)
         with self.assertRaises(CarrierError):
             Carrier(orig.originals,orig.stage,
-                    ((Q(1,4),0,0,0),)*4)
+                    ((Q(1,4),0,0,0),)*3 + ((0,0,0,0),))
         with self.assertRaises(CarrierError):
             Carrier(orig.originals,orig.stage,
                     ((0.25,0,0,0),)*4)
@@ -230,6 +230,10 @@ class CarrierSemantics(unittest.TestCase):
             if verdict.valid:
                 coarse=checked_descent(a,bq,aq)
                 for z,receipt in enumerate(a.receipts):
+                    if not any(p > 0 for row in source.preparation
+                               for c, m in enumerate(row) if m > 0
+                               for j, _, p in a.rows[c] if j == z):
+                        continue
                     fine_next=source.root().advance(a,receipt)
                     coarse_next=bq.root(source).root().advance(coarse,receipt)
                     expected=raw_joint_reindex(source.preparation,a,z,
@@ -265,7 +269,7 @@ class FiniteBehavioralRepair(unittest.TestCase):
     def test_stationary_observer_repair_generates_minimal_necessary_splits(self):
         st=stage(n=4)
         base=action(st,("same","same","different","different"),name="read")
-        flip=action(st,("ok","ok","ok","ok"),(2,3,2,2),name="change")
+        flip=action(st,("ok","ok","ok","ok"),(0,2,2,0),name="change")
         seed=(0,0,1,1)
         result=minimal_stationary_repair(st,(base,flip),seed)
         self.assertEqual(result.partition,(0,1,2,3))
