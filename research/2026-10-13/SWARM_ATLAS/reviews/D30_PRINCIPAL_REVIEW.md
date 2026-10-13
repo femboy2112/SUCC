@@ -1,0 +1,5 @@
+# D30 independent principal crucible
+
+SURVIVES. Reviewed original bac77169a0bd1905aa9ca8d36f61e8d1bbac4b2a. Independently expand PF(v+t h)-PF(v); vanishing for all real t kills quadratic and linear coefficients, then v=0 separates PAh. Converse follows from unique u=v+h. Finite-dimensional polynomial ODE factorization holds only on common local existence intervals. For p=(2,0),a=(0,1),q=(-2,1),b=(1,2), the low cross acceleration coefficient before Leray is -(b/2+a) sin y=-(1/2,2)sin y. Leray at(0,1) retains only the first component, giving -(1/2,0)sin y and normalized squarednorm1/8. Single-mode constant stress has zero divergence and is not an evolution counterexample; this stronger witness is. Resolved-hidden cross control at(-1,1) gives +(1,1)sin(-x+y) for negative convective B. Derivative/filter commutators are separately needed; finite Galerkin bilinear norm is not an unbounded continuum estimate. No global NS theorem.
+
+Author proof read; fresh derivation above did not import its helper. Exact replay is separate from the universal paper proof. Classical prior art and empirical authentication boundaries remain explicit.

@@ -1,0 +1,132 @@
+{
+  "claim_id": "SWM-B11",
+  "command": "python research/2026-10-13/SWARM_ATLAS/B11_probe.py",
+  "delayed_halting": [
+    {
+      "certificate_cardinality": 1,
+      "checkpoints": 1,
+      "delay": 0,
+      "status": "REFUTED",
+      "witnesses": [
+        [
+          "s",
+          0
+        ]
+      ]
+    },
+    {
+      "certificate_cardinality": 1,
+      "checkpoints": 8,
+      "delay": 7,
+      "status": "REFUTED",
+      "witnesses": [
+        [
+          "s",
+          7
+        ]
+      ]
+    },
+    {
+      "certificate_cardinality": 1,
+      "checkpoints": 38,
+      "delay": 37,
+      "status": "REFUTED",
+      "witnesses": [
+        [
+          "s",
+          37
+        ]
+      ]
+    },
+    {
+      "certificate_cardinality": 1,
+      "checkpoints": 72,
+      "delay": 71,
+      "status": "REFUTED",
+      "witnesses": [
+        [
+          "s",
+          71
+        ]
+      ]
+    }
+  ],
+  "empty_source_certificate": {
+    "checkpoints": 0,
+    "status": "REFUTED",
+    "witnesses": []
+  },
+  "externally_enumerated_words_to_depth_three": 15,
+  "finite_controller_cycle": 2,
+  "finite_table_product": {
+    "bound_sharp": true,
+    "first_mismatch": 37,
+    "source_states": 1,
+    "target_states": 38
+  },
+  "forged_early_witness_rejected": true,
+  "incomplete_source_certificate_rejected": true,
+  "loop_prefix": {
+    "checkpoints": 73,
+    "status": "UNRESOLVED",
+    "witnesses": []
+  },
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "python": "3.12.3",
+  "reordered_contexts": {
+    "checkpoints": 1,
+    "status": "REFUTED",
+    "witnesses": [
+      [
+        "s",
+        37
+      ]
+    ]
+  },
+  "sha256": {
+    "observational_succ/checkpoint_meta_tower.py": "89bec4281a60a861309c3c06f66ed5327f33e4165cddb6803d42f5e8ec14e7a9",
+    "observational_succ/godel_succ.py": "6ae6af8425a4e7958563fa0578f42ba84ed3814c5cce0749fe6188ee068fcd7a",
+    "observational_succ/voyager_profinite_frontier.py": "9971e3b4dc389963be322bd96ddedb8ad2cbe2e5c2e4dcea2913f0485195ea34",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_GODEL_BRIDGE.md": "97615f795676344005825abcb8138edb1f615a4f05baf3153932672f816b90a9",
+    "research/2026-10-13/SWARM_ATLAS/B11_probe.py": "deb9692c4d081b4d44fa5f43ea7b1ca295a43b0032c816284cf8035d7729909f"
+  },
+  "sharp_cardinality_three": {
+    "checkpoints": 10,
+    "status": "REFUTED",
+    "witnesses": [
+      [
+        "a",
+        2
+      ],
+      [
+        "b",
+        5
+      ],
+      [
+        "c",
+        9
+      ]
+    ]
+  },
+  "source_tables_physically_authenticated": false,
+  "specialized_pulse_witness": [
+    [
+      "s",
+      2
+    ]
+  ],
+  "status": "EXACT_BOUNDED_CONTROLS_PASS",
+  "universal_undecidability_proved_by_execution": false,
+  "validation_history": [
+    {
+      "exit_code": 1,
+      "failure": "AssertionError: pulse witness incorrectly expected 1",
+      "repair": "existing constructive period refutation selects 2; no earliest claim"
+    },
+    {
+      "exit_code": 0,
+      "scope": "all bounded assertions in this probe"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+# Independent principal crucible: A01 and F41
+
+Reviewer: `/root`, distinct from native investigators `/root/a01` and `/root/f41`. Neither candidate was derived by this reviewer. Shared provider/model and immutable repository lineage remain common-mode dependencies. Review reads the submitted statements and proofs; it is not blind to the claim being reviewed. Implementation uses integer incidence multiplicities and affine matrix normal forms, importing neither investigator probe nor any repository helper.
+
+## A01 verdict: SURVIVES, CLASSICAL, paper proof
+
+For any compatible pair (x,y), let M(x,y) count its W-preimages. Existential truth transport tests whether M(x,y)>0: taking the singleton predicate {x} at y isolates this coefficient. Hence equality for every predicate is equivalent to every compatible coefficient being positive. Actual witness transport tests whether each preimage is unique. The constant-singleton witness family isolates M itself, so the canonical comparison is an isomorphism iff M(x,y)=1 for every compatible pair. Commutativity excludes coefficients outside the pullback. Complement duality proves the universal-predicate version, including empty fibers. These independent coefficient arguments establish the stated necessity and sufficiency; finite testing is not the proof.
+
+Hypothesis removals: empty W with singleton X,Y,Z refutes coverage; two W-points over one pair refute uniqueness while preserving truth; absent square commutativity makes the comparison ill typed. Selecting only an empty family hides all failures, so the all-family quantifier is material. No arbitrary witness bijection can replace the specified canonical map. Original-claim saturation is exact because a decoder must be constant on every intervention fiber; destructive two-to-one erasure refutes an unrestricted preservation claim. Immutable history repairs the fiber only if actually retained and available.
+
+No provenance defect found. Relation-only prior CV6 already assumes comparison injectivity and is compatible with this richer witness-set presentation. The result is classical categorical logic, not an academic originality claim. Physical source attestation and general operational-history pullbacks remain open.
+
+## F41 verdict: SURVIVES, CLASSICAL / PROVED LOCAL, paper proof
+
+Write T(a,b,c)(y,z)=(y+b,z+c+ay) over Z/nZ. Direct matrix multiplication gives T(a,b,c)T(d,e,f)=T(a+d,b+e,c+f+ae). Evaluation at (0,0) recovers b,c and evaluation at (1,0) recovers a; faithfulness therefore does not require primality or division. The two output probes z and z+y separate (y,z), while all legal words ignore x, proving precisely the n² behavioral quotient. The action on original triples is regular. Right cosets of L={(a,0,0)} have common (y,z), so G/L orientation is correct. Conjugating L by the y-translation gives {(a,0,a)}; their intersection is trivial. This verifies the core and action-groupoid map independently.
+
+Cover minimality uses a DIFFERENT target: for loop representation h:F₂→G, full permutation holonomy vanishes on a cover subgroup K iff K⊆ker h. Hence degree≥[F₂:ker h]=n³. A stabilizer cover has degree n² and retains nontrivial holonomy; no claim of global minimum permutation degree for every abstract G-set is made. The covering statement assumes connected ordinary labeled graphs, reversible mathematical actions, and the full specified action representation.
+
+Hypothesis removals: n=1 removes noncommutation and must remain excluded; readout y makes the descended action cyclic and loses faithfulness; adding source swap makes q noncongruent; deleting action labels loses isotropy in the groupoid. At n=2 the product of the order-two generators has order four, so odd-prime exponent assumptions cannot be transported. Correlated copies of EOS/VOYAGER tables are one source family, not independent empirical observations. The opaque holdouts hide coordinates but retain programmer-chosen source family and law-mining grammar. No unconstrained discovery or physical-source claim survives.
+
+## Executed independent crucible
+
+`python research/2026-10-13/SWARM_ATLAS/reviews/principal_crucible.py research/2026-10-13/SWARM_ATLAS/reviews/principal_receipt.json` exited 0: 4,373 incidence presentations and 11,655 affine composition checks over moduli 2–8. The matrix representation and source sizes remain tiny. Complete arguments above support universal claims; the receipt is bounded regression evidence only. Both child commits are accepted for scoped integration, with no new Lean status or priority promotion. Next falsifiers: kernel-check witness-valued base change; add partial/destructive action availability to the Heisenberg covering contract.

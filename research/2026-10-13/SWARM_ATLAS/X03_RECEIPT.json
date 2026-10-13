@@ -1,0 +1,178 @@
+{
+  "boundary": "Finite declared source tables, finite grammar denotations, exact verification. No empirical source authentication, infinite grammar completeness, physical branch gluing, or RH consequence.",
+  "exhaustive_binary_triangle_counts": {
+    "families": 4096,
+    "maximum_cegis_rejections": 3,
+    "nonempty_pairwise_compatible_but_unsatisfiable": 4,
+    "nonempty_pairwise_compatible_families": 405,
+    "satisfiable": 2397,
+    "unsatisfiable": 1699
+  },
+  "external_source_authenticated": false,
+  "file_sha256": {
+    "observational_succ/swarm_gluing_cegis.py": "9955bd3f5896373efde9981d3a740dfc31145c9968ba775f0f5053acceb29c45",
+    "scripts/swarm_x03_probe.py": "baeba8fa0d4b89ea2acc3ed649e40cbb1828c48d58c4fd0e9226ae270b7a0b24",
+    "tests/test_swarm_gluing_cegis.py": "2425abcc3d590051271952d9babe4252a2a37e2cd85a0869dfb911aaa6f9fe57"
+  },
+  "formal_kernel_checked": false,
+  "frozen_parent": "71eaf11e48ca3ccb349858bba64abf36b59ee6f5",
+  "hidden_variable_extension": {
+    "core": [
+      "xz_unequal",
+      "yz_equal",
+      "xy_equal"
+    ],
+    "core_scope": "SOURCE",
+    "core_source_verified": true,
+    "extended_witness": null,
+    "learned": [
+      "xz_unequal",
+      "yz_equal",
+      "xy_equal"
+    ],
+    "original_witness": null,
+    "projection_surjective": true,
+    "rejections": [
+      {
+        "constraint": "xz_unequal",
+        "extended": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "original": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "constraint": "yz_equal",
+        "extended": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "original": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "constraint": "xy_equal",
+        "extended": [
+          0,
+          1,
+          1,
+          0
+        ],
+        "original": [
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "status": "UNSAT_SOURCE"
+  },
+  "incomplete_grammar": {
+    "core": [
+      "one"
+    ],
+    "core_scope": "GRAMMAR_IMAGE",
+    "core_source_verified": false,
+    "extended_witness": null,
+    "learned": [
+      "one"
+    ],
+    "original_witness": null,
+    "projection_surjective": false,
+    "rejections": [
+      {
+        "constraint": "one",
+        "extended": [
+          0
+        ],
+        "original": [
+          0
+        ]
+      }
+    ],
+    "status": "UNSAT_GRAMMAR"
+  },
+  "incomplete_grammar_original_solutions": [
+    [
+      1
+    ]
+  ],
+  "inconsistent_triangle": {
+    "core": [
+      "xz_unequal",
+      "yz_equal",
+      "xy_equal"
+    ],
+    "core_scope": "SOURCE",
+    "core_source_verified": true,
+    "extended_witness": null,
+    "learned": [
+      "xz_unequal",
+      "yz_equal",
+      "xy_equal"
+    ],
+    "original_witness": null,
+    "projection_surjective": true,
+    "rejections": [
+      {
+        "constraint": "xz_unequal",
+        "extended": [
+          0,
+          0,
+          0
+        ],
+        "original": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "constraint": "yz_equal",
+        "extended": [
+          0,
+          0,
+          1
+        ],
+        "original": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "constraint": "xy_equal",
+        "extended": [
+          0,
+          1,
+          1
+        ],
+        "original": [
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "status": "UNSAT_SOURCE"
+  },
+  "schema": "SUCC-SWM-X03/1",
+  "status": "CLASSICAL ingredients; PROVED LOCAL bridge with paper proof",
+  "unit_tests": {
+    "errors": 0,
+    "failures": 0,
+    "passed": true,
+    "run": 12
+  }
+}

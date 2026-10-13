@@ -1,0 +1,191 @@
+{
+  "RH_or_Weil_sign_established": false,
+  "artifact_hashes_sha256": {
+    "formal/EODCS_CambrianRealization.lean": "8260812a716cc8628ab16470219c92fc49772fd9fd3417ce73dc3c089e9c80cf",
+    "observational_succ/cambrian_c_geometry.py": "f8c1dabdcf3e76be8a1fcead3d6a8450fb08328000efa42777db195e8a3cbf13",
+    "research/2026-10-13/CAMBRIAN_C_GEOMETRY.md": "98b1a1106ac2a2c422a3507555dfa8bb1ccdcc75b63f1682b8c886d45d3c06ed",
+    "research/2026-10-13/CAMBRIAN_C_RECEIPT.json": "87a1eb795d7958ab6caf4ffe5261e39cbb504d3fa06198dbd8139e023acb8450",
+    "scripts/cambrian_c_geometry_probe.py": "68923cc8beff0b020baac1194907b7ce24f1816ac874c0f8fbe81b824ec040b8",
+    "tests/test_cambrian_c_geometry.py": "9c0e838eb192483f4ceb49cf9887d784bcdf1111207e7fe21a2aa4a8b95c76d2"
+  },
+  "assignments": [
+    {
+      "actual_result": "Direct retract-naturality proof. One two-element finite-set probe with all endomorphisms gives Hom/Nat counts 1/1,2/2,1/1,4/4. Bare function-map count would be256. Divisibility2 and3 have isomorphic restricted nerves but no source isomorphism; distinct multiplication paths collapse under a blind probe.",
+      "claims": [
+        "C13.1",
+        "C13.2"
+      ],
+      "execution": "EXECUTED",
+      "falsifier": "Remove all probe endomorphism laws or restrict to a context with no arrows into the source.",
+      "id": 13,
+      "limits": "No empirical source authentication; retract condition sufficient not necessary; no new Yoneda priority claim.",
+      "next_lamp": "Source-admissible density for restricted intervention categories without universal reset access.",
+      "positive_hypothesis": "Every source object retracting from some probe is sufficient for full faithfulness, with actual probe precomposition laws.",
+      "proof_status": "CLASSICAL / PROVED LOCAL PAPER; EXACT FINITE NATURALITY REPLAY",
+      "rival": "Equal hom-set counts or one bare probe object already determine source objects and arrows.",
+      "title": "Genuine restricted Yoneda observability",
+      "typed_question": "For a small source context category C and full probe subcategory D, when is X->Hom_C(-,X)|D^op fully faithful?",
+      "verification": "Existing naturality checker with complete finite function category; source morphism composition and precursor identity controls."
+    },
+    {
+      "actual_result": "Direct sheaf-law proof on the constraint-adapted subset coverage; all4096 binary triangle constraint systems give exactly independently enumerated global source assignments. Missing cross-scope and coarse-XOR inferences refuted.",
+      "claims": [
+        "C14.1",
+        "C14.2"
+      ],
+      "execution": "EXECUTED",
+      "falsifier": "An equality constraint x=y across singleton charts x=0 and y=1; constant observed images of locally satisfiable odd-XOR triangle edges.",
+      "id": 14,
+      "limits": "Scopes in executed cases nonempty; arbitrary proof-system soundness and provenance transport not established.",
+      "next_lamp": "Proof-support restriction maps preserving source equalizers and theory identity.",
+      "positive_hypothesis": "A cover containing every entire source-constraint scope plus literal overlap equality suffices.",
+      "proof_status": "PROVED LOCAL PAPER / EXACT EXHAUSTIVE FINITE MODEL",
+      "rival": "Any variable cover or matching coarse observation images suffice.",
+      "title": "Constraint-adapted sheaf and source witness gluing",
+      "typed_question": "For assignments satisfying finite scoped source constraints, which chart coverings make literal compatible witnesses uniquely glue?",
+      "verification": "Literal chart matching independently compared to all eight global binary assignments across4096 constraint systems."
+    },
+    {
+      "actual_result": "Subgroup-index lower bound and attaining orbit-cover constructor. S3 yields3 versus6 sheets. Trivial deck group makes the lifted section deck-invariant while it fails base descent. Existing regular-kernel-cover O569 remains valid.",
+      "claims": [
+        "C15.1",
+        "C15.2"
+      ],
+      "execution": "EXECUTED",
+      "falsifier": "Natural S3 three-sheet stabilizer cover with trivial deck centralizer and nonconstant valid section.",
+      "id": 15,
+      "limits": "Cover-classification minimality remains paper proof; no physical gauge or quantum phase interpretation certified.",
+      "next_lamp": "Kernel formalization of subgroup-index and prescribed-section lower bound.",
+      "positive_hypothesis": "One prescribed section requires |Orb_H(x)| sheets; full transport trivialization requires|H|. Base descent always requires fiber constancy.",
+      "proof_status": "CLASSICAL / PROVED LOCAL PAPER; EXACT NONREGULAR COUNTEREXAMPLE",
+      "rival": "Both minimum degrees are|H|, and deck invariance characterizes descent on arbitrary connected covers.",
+      "title": "Nonabelian stabilizer covers and nonregular descent obstruction",
+      "typed_question": "For connected graph holonomy rho:pi1->H<=Sym(X), what degree cover admits a parallel section with prescribed root x; when does deck invariance imply base descent?",
+      "verification": "180 seeded permutation graphs, all3 root values, compared against independent raw-edge action-bundle BFS; exact deck centralizer enumeration."
+    },
+    {
+      "actual_result": "General compact-product paper proof with finite inconsistency alternative. Kernel-checked changing-type, time-varying nondeterministic finite-branching history realization from complete finite initial menu. Kernel-checked countdown all-finite-depths and no-infinite-history control.",
+      "claims": [
+        "C16.1",
+        "C16.2",
+        "C16.3",
+        "C16.4",
+        "C16.5"
+      ],
+      "execution": "EXECUTED",
+      "falsifier": "Closed countdown on noncompact N; nonclosed countdown graph on compact{0}union{1/n}; nonclosed eventually-zero original preparations.",
+      "id": 16,
+      "limits": "No topology-library kernel proof, computable branch selector, physical infinite execution, source authentication, or finite refutation cost bound.",
+      "next_lamp": "Pinned mathlib topology mechanization and separate effective branch-selection hypotheses.",
+      "positive_hypothesis": "Yes when original history class is exactly the declared closed constraints, by compact product finite-intersection; a finite-branching dependent-type specialization admits core Lean proof.",
+      "proof_status": "COMPACT TOPOLOGY: CLASSICAL PROVED PAPER; FINITE-BRANCHING AND N COUNTDOWN: LEAN-KERNEL VERIFIED4.14",
+      "rival": "Compatibility suffices without compactness, closed graphs, complete branch menus, or original-class closure.",
+      "title": "Compact nondeterministic history realization",
+      "typed_question": "For nonempty compact Hausdorff source types X_t, closed time-varying relational instrument graphs R_t and closed receipt constraints C_t, does every jointly realizable finite prefix yield one global original history?",
+      "verification": "Actual Lean compilation; positive theorem axioms propext,Classical.choice,Quot.sound; countdown nonrealization propext,Quot.sound.240 changing finite-type systems checked against Cartesian history enumeration."
+    },
+    {
+      "actual_result": "Direct associativity/unit proof and all4096 binary relation triples checked. Quotient defect exposed; uniform preservation for every R,T iff interface quotient injective.",
+      "claims": [
+        "C17.1",
+        "C17.2"
+      ],
+      "execution": "EXECUTED",
+      "falsifier": "R={(in,m0)},T={(m1,out)},q(m0)=q(m1) gives a coarse behavior absent from original composition.",
+      "id": 17,
+      "limits": "Finite Rel behavior semantics only; full structured-cospan black-box functor and all RC/thermal/Markov source bridges not certified.",
+      "next_lamp": "Dynamic RC black boxing with full temporal/storage interfaces and declared shared environments.",
+      "positive_hypothesis": "Literal typed existential witness matching composes; quotient wiring requires behavioral saturation or faithful witness recovery.",
+      "proof_status": "CLASSICAL / PROVED LOCAL PAPER; EXACT EXHAUSTIVE FINITE ASSOCIATIVITY",
+      "rival": "Equal coarse middle labels imply one jointly possible source witness.",
+      "title": "Open-system black boxes and shared source witnesses",
+      "typed_question": "Does existential boundary behavior compose associatively, and when does quotienting a shared interface commute with relational wiring?",
+      "verification": "All16 binary relations in each of3 slots; explicit minimal false shared-witness receipt."
+    },
+    {
+      "actual_result": "Universal factorization proof from pairing q and exact future support. All4096 left/right relation cases preserve composition after generated repair.13824 competing partition cases verify coarseness. Exact support update theorem proved by history induction.",
+      "claims": [
+        "C18.1",
+        "C18.2"
+      ],
+      "execution": "EXECUTED",
+      "falsifier": "All unrelated three-state output relations and competing partitions, plus destructive erasure leaving identical physical state and distinct original history.",
+      "id": 18,
+      "limits": "One-step support constructor with declared product/powerset metagrammar; not unrestricted mathematical invention, stochastic-law identification, or complete original-past reconstruction.",
+      "next_lamp": "Source-preserving temporal interface constructor with unbounded but realizable memory.",
+      "positive_hypothesis": "q*(m)=(q(m),{o:T(m,o)}) is the coarsest sufficient repair; powerset history support is exact for future possible continuations.",
+      "proof_status": "PROVED LOCAL PAPER / EXACT FINITE EXHAUSTIVE AND HELD-OUT MODEL",
+      "rival": "Repair requires arbitrary labels or a prewritten answer template; current coarse physical state already contains original history claims.",
+      "title": "Obstruction-forced behavioral refinement and history support memory",
+      "typed_question": "Given finite M,q and right boundary relation T, construct the coarsest sufficient refinement lawfully repairing all left wirings; characterize exact causal receipt support.",
+      "verification": "512 right relations times8 left menus;64 right relations times8 reports times27 competing maps; independent Cartesian causal histories."
+    }
+  ],
+  "assignments_executed": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "cluster": "C",
+  "first_pass_frozen_before_cross_cluster_synthesis": true,
+  "independent_agent_referee_completed": false,
+  "novel_mathematical_priority_established": false,
+  "physical_infinite_execution": false,
+  "primary_sources": [
+    "https://stacks.math.columbia.edu/tag/001P",
+    "https://stacks.math.columbia.edu/tag/006S",
+    "https://stacks.math.columbia.edu/tag/0059",
+    "https://stacks.math.columbia.edu/tag/08ZS",
+    "https://math.uchicago.edu/~farb/algtop2023/Hatcher.pdf",
+    "https://arxiv.org/abs/1911.04630"
+  ],
+  "protected_shared_files_modified": false,
+  "schema": "cambrian-six-assignment-report-v1",
+  "shared_model_is_independent_referee": false,
+  "validation": {
+    "full_suite": {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "status": "PASSED",
+      "tests": 1616
+    },
+    "github_ci_new_head": "NOT_RUN_BY_CLUSTER_WORKER",
+    "lean": {
+      "admitted_assertions": [],
+      "compiler_commit": "410fab728470",
+      "custom_axioms": [],
+      "file": "formal/EODCS_CambrianRealization.lean",
+      "host_executable_locator_shim_used": true,
+      "status": "PASSED",
+      "topology_library_imported": false,
+      "version": "4.14.0"
+    },
+    "observer_foundations_probe": {
+      "command": "python scripts/observer_foundations_probe.py",
+      "status": "PASSED"
+    },
+    "ordinal_succ_report_probe": {
+      "command": "python scripts/ordinal_succ_report_probe.py",
+      "status": "PASSED"
+    },
+    "provenance": {
+      "command": "python scripts/verify_provenance.py",
+      "items": 72,
+      "status": "PASSED"
+    },
+    "python_version": "3.12.14",
+    "receipt_replay": {
+      "path": "research/2026-10-13/CAMBRIAN_C_RECEIPT.json",
+      "status": "PASSED"
+    },
+    "targeted_tests": {
+      "command": "python -m unittest discover -s tests -p 'test_cambrian_c_geometry.py'",
+      "status": "PASSED",
+      "tests": 14
+    }
+  },
+  "worker_count": 1
+}

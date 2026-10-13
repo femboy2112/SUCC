@@ -1,0 +1,76 @@
+{
+  "D29": {
+    "image_equality": true,
+    "period_collapse": [
+      6,
+      3
+    ],
+    "source_biinfinite_states": [
+      1
+    ],
+    "strong_pullback_equality": false,
+    "target_biinfinite_states": [
+      0
+    ],
+    "target_pullback": [
+      0,
+      1
+    ]
+  },
+  "E37": {
+    "G2_at_1": "2/3",
+    "G2_at_2": "1/3",
+    "exact_beta_polynomial_cases": 16,
+    "fake_off_line_roots": [
+      "1/4",
+      "3/4"
+    ],
+    "finite_ratio": "1/2",
+    "non_Euler_connected_coefficient_at_6": 1,
+    "real_epsilon": "-4294967296/729",
+    "symmetric_fake_sample_values": [
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  "F48": {
+    "endpoint_count": 1,
+    "exact_join": [],
+    "private_path_count": 2,
+    "projected_join": [
+      [
+        "a",
+        "o",
+        "b"
+      ]
+    ],
+    "vertex_only_family_covers_transition_edge": false
+  },
+  "author_helpers_imported": false,
+  "elapsed_seconds": 0.013029,
+  "exit_code": 0,
+  "probe_sha256": "16353ef1ee247f97267d7c22822759cbc1b72776abb9722ada6ee8d56e8eb72a",
+  "review": "WAVE_GEOMETRY_GAMMA_F48_REVIEW",
+  "scope": "Tiny exact finite countermodels; analytic/topological claims use paper reconstruction",
+  "source_dossiers": [
+    {
+      "candidate": "D29",
+      "commit": "0054cb46ebe3ae5286aca12a7a7f38095da78dea",
+      "path": "research/2026-10-13/SWARM_ATLAS/D29_ATTRACTORS_CONLEY_SELF_UPDATE.md",
+      "sha256": "9a43faebc17dc1ff24729e8487e0222906399479d86e0ebb286c2009093c237c"
+    },
+    {
+      "candidate": "E37",
+      "commit": "80914ab3728479d5ef83c0e8fd6935f0bf901c41",
+      "path": "research/2026-10-13/E37_ARCHIMEDEAN_GAMMA_BOUNDARY.md",
+      "sha256": "b2824dd332c642f9c103db63621bd4eb222a712ef67364b40fd7fa9107982569"
+    },
+    {
+      "candidate": "F48",
+      "commit": "6e751c0d996de3d27a91b09f44dc2d534db09c73",
+      "path": "research/2026-10-13/F48/F48_LAWFUL_HISTORY_FIBRATION.md",
+      "sha256": "d0df6519cd79b658d00747129ecab388658f1b834a5ee2cd18e34a8559d3fa24"
+    }
+  ]
+}

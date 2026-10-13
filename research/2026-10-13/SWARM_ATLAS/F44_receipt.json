@@ -1,0 +1,58 @@
+{
+  "arithmetic": "fractions.Fraction only; no float or tolerance",
+  "classical_new_separator": {
+    "A": 0,
+    "B": 1
+  },
+  "classical_old_probe_rows": {
+    "A": [
+      0,
+      1
+    ],
+    "B": [
+      0,
+      1
+    ]
+  },
+  "command": "python research/2026-10-13/SWARM_ATLAS/F44_probe.py",
+  "current_carrier_labels_after_common_reset": [
+    0,
+    0
+  ],
+  "exit_code": 0,
+  "global_CNOT_then_local_X_plus": [
+    "1",
+    "1/2"
+  ],
+  "instrument_families": [
+    "Z",
+    "X",
+    "flip",
+    "reset"
+  ],
+  "joint_XX_plus_probabilities_bell_mixture": [
+    "1",
+    "1/2"
+  ],
+  "new_joint_readout_total_variation": "1/2",
+  "original_target_labels_after_common_reset": [
+    0,
+    1
+  ],
+  "physical_or_neural_or_RH_claim": false,
+  "probe_sha256": "3ef00ed1791492c396ebd80a5d93ab09230c2afb5cfeeca378e9f61d59e6584e",
+  "q_and_e_marginals": [
+    [
+      "1/2",
+      "0"
+    ],
+    [
+      "0",
+      "1/2"
+    ]
+  ],
+  "q_local_branch_checks_depth_3": 399,
+  "single_copy_zero_error_identification": false,
+  "source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "status": "TESTED MODEL: exact finite witnesses; universal proof is in F44.md"
+}

@@ -1,0 +1,366 @@
+{
+  "B16_independent_path_partition_audit": {
+    "binary_words": 511,
+    "set_partitions_examined": 5372,
+    "ternary_words": 364
+  },
+  "D28_independent_forward_dyadic_audit": {
+    "cylinders": 1023,
+    "forward_image_checks": 12286,
+    "max_depth": 9
+  },
+  "arbitrary_future_report_counterexample": {
+    "grid_checks": 1025,
+    "precision_bits": 3,
+    "prefix_cylinder_values_required": 128,
+    "report_values": 8,
+    "time": 4
+  },
+  "arithmetic": "exact integers and Fraction",
+  "base_commit": "24c93bf0c2bdd4f3f84e9be6367bec15308270ce",
+  "boundaries": {
+    "all_length_8_words_source_states": 256,
+    "binary_star_recognizer_states": 1,
+    "constant_observer_states": 1,
+    "finite_probes_prove_infinite_chaos": false,
+    "formal_kernel_claim": false,
+    "single_word_00000000_states": 1,
+    "time_dependent_external_report_internal_states": 1
+  },
+  "minimal_horizon_surrogates": {
+    "complete_source_tables": 234,
+    "dead_end_language_rejected": true,
+    "full_binary_orders": 8,
+    "higher_block_checks": 936
+  },
+  "mission": "X04",
+  "prefix_resolution_budget": [
+    [
+      0,
+      1,
+      1,
+      2
+    ],
+    [
+      0,
+      2,
+      2,
+      4
+    ],
+    [
+      0,
+      3,
+      3,
+      8
+    ],
+    [
+      0,
+      4,
+      4,
+      16
+    ],
+    [
+      0,
+      5,
+      5,
+      32
+    ],
+    [
+      1,
+      1,
+      2,
+      4
+    ],
+    [
+      1,
+      2,
+      3,
+      8
+    ],
+    [
+      1,
+      3,
+      4,
+      16
+    ],
+    [
+      1,
+      4,
+      5,
+      32
+    ],
+    [
+      1,
+      5,
+      6,
+      64
+    ],
+    [
+      2,
+      1,
+      3,
+      8
+    ],
+    [
+      2,
+      2,
+      4,
+      16
+    ],
+    [
+      2,
+      3,
+      5,
+      32
+    ],
+    [
+      2,
+      4,
+      6,
+      64
+    ],
+    [
+      2,
+      5,
+      7,
+      128
+    ],
+    [
+      3,
+      1,
+      4,
+      16
+    ],
+    [
+      3,
+      2,
+      5,
+      32
+    ],
+    [
+      3,
+      3,
+      6,
+      64
+    ],
+    [
+      3,
+      4,
+      7,
+      128
+    ],
+    [
+      3,
+      5,
+      8,
+      256
+    ],
+    [
+      4,
+      1,
+      5,
+      32
+    ],
+    [
+      4,
+      2,
+      6,
+      64
+    ],
+    [
+      4,
+      3,
+      7,
+      128
+    ],
+    [
+      4,
+      4,
+      8,
+      256
+    ],
+    [
+      4,
+      5,
+      9,
+      512
+    ],
+    [
+      5,
+      1,
+      6,
+      64
+    ],
+    [
+      5,
+      2,
+      7,
+      128
+    ],
+    [
+      5,
+      3,
+      8,
+      256
+    ],
+    [
+      5,
+      4,
+      9,
+      512
+    ],
+    [
+      5,
+      5,
+      10,
+      1024
+    ]
+  ],
+  "same_prefix_different_successor_witnesses": [
+    {
+      "first": [
+        0,
+        0
+      ],
+      "horizon": 1,
+      "second": [
+        0,
+        1
+      ]
+    },
+    {
+      "first": [
+        0,
+        0,
+        0
+      ],
+      "horizon": 2,
+      "second": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "first": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "horizon": 3,
+      "second": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "first": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "horizon": 4,
+      "second": [
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "first": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "horizon": 5,
+      "second": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "first": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "horizon": 6,
+      "second": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "first": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "horizon": 7,
+      "second": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "first": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "horizon": 8,
+      "second": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "status": "PASS"
+}

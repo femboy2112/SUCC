@@ -1,0 +1,81 @@
+{
+  "Euler_source_physically_authenticated": false,
+  "Gamma_pole_phase_conductor_half_density_supplied": false,
+  "addresses_per_word": 8,
+  "associativity_triples_checked": 216,
+  "branch": "research/swm-e33-2026-10-13",
+  "claim_id": "SWM-E33",
+  "command": "python research/2026-10-13/SWARM_ATLAS/E33_probe.py",
+  "commutative_mutation_receipt": {
+    "S_V2": 1,
+    "V2_S": 2,
+    "x": 0
+  },
+  "completed_Weil_positivity_or_RH_claimed": false,
+  "composite_relation_survives": 6,
+  "different_true_prime_source_alias_mod2": [
+    3,
+    5
+  ],
+  "execution_checkout_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "exit_code": 0,
+  "factorial_tables": {
+    "S_after_V": {
+      "00": 0,
+      "01_V3": 0,
+      "10_S": 1,
+      "11": 1,
+      "mixed_difference": 0
+    },
+    "V_after_S": {
+      "00": 0,
+      "01_V3": 0,
+      "10_S": 1,
+      "11": 3,
+      "mixed_difference": 2
+    }
+  },
+  "finite_groupoid_arrows_checked": 100,
+  "finite_groupoid_compositions_checked": 2000,
+  "general_multiplier_relations_checked": 360,
+  "independent_gate_rejected_composites": [
+    4,
+    6
+  ],
+  "integer_words_checked": 364,
+  "ket_commutator_at_0": {
+    "1": 1,
+    "2": -1
+  },
+  "modular_compositions_checked": 5184,
+  "native_compositions_checked": 400,
+  "native_prime_variable_step_cases_checked": 160,
+  "non_Euler_affine_model_action_matched": true,
+  "nontrivial_zero_locations_used": false,
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "primary_sources": [
+    "https://arxiv.org/pdf/0907.3760",
+    "https://arxiv.org/pdf/math/0611541"
+  ],
+  "prime_composite_matched_actions_mod5": [
+    11,
+    6
+  ],
+  "separating_affine_samples": 72,
+  "sha256": {
+    "observational_succ/prime_clock_yoneda.py": "e19903f4411384b300359d5ee6891777bb3fc8bc90fdf611cb8a28d98ade3976",
+    "observational_succ/proto_succ_variable_unit.py": "d76654a750daee02f47bfd60cea48486fd498db3fdc5c0d51ed6243bd7b3f525",
+    "observational_succ/succ_discrete_integration.py": "af3cb7feef2f09351b7d11490507570cdaa19c64639baec8c6ddb925fe232d67",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/SUCC_GAMMA_PRIME_PATH_GERMS.md": "616c8a66173d0362cad4a1fc885ba942d2b116fc9be232455dc051d1697ef4eb",
+    "research/2026-10-11/FINITE_DIFFERENCE_SUCC_INTEGRATION.md": "5f30d875e652c2df9661c135bade78c0b4ef3ea0ca60d4e26fc7859b4dd4ccda",
+    "research/2026-10-11/PRIME_CLOCK_YONEDA_ORIGIN.md": "f0655f86875b164ffb268c34ebe75ed41266bbb48887116398023e0603125d2b",
+    "research/2026-10-11/PROTO_SUCC_VARIABLE_UNIT_LIFT.md": "72ea6942ea9baaaa4415cd9a94fad5fea412c6ad5279a2ca69e116b432bc42fe",
+    "research/2026-10-13/SWARM_ATLAS/E33.md": "4843fddb55a7ca63c620b6eafddb3e94a3c87dee0e9b226184150c1f7eee2f89",
+    "research/2026-10-13/SWARM_ATLAS/E33_probe.py": "fff66fe4fcb94b5b109e6c0064f52ae0ddd165ad612834bbdc9e5758532568a3"
+  },
+  "single_basis_separator": 9,
+  "source_signature_rejected_alias": true,
+  "status": "TESTED MODEL",
+  "theorem_status": "CLASSICAL, with self-contained derivation"
+}

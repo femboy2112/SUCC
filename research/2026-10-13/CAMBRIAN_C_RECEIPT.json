@@ -1,0 +1,128 @@
+{
+  "actual_interface_composite": [],
+  "causal_history_paths": [
+    [
+      "old0",
+      "newA",
+      "final"
+    ],
+    [
+      "old0",
+      "newB",
+      "final"
+    ]
+  ],
+  "causal_support_history": [
+    [
+      "old0"
+    ],
+    [
+      "newA",
+      "newB"
+    ],
+    [
+      "final"
+    ]
+  ],
+  "coarse_spurious_composite": [
+    [
+      "in",
+      "out"
+    ]
+  ],
+  "constructed_repair_composite": [],
+  "constructor_class_count": 2,
+  "infinite_compactness_verified_by_python": false,
+  "mathematical_novelty_established": false,
+  "nonabelian_section_cover": {
+    "connected": true,
+    "constructed_section_deck_invariant": true,
+    "constructed_section_descends_to_base": false,
+    "holonomy_order": 6,
+    "minimum_degree_for_all_transport_trivialization": 6,
+    "minimum_degree_for_this_section": 3,
+    "orbit_cover_deck_group_order": 1,
+    "root_value": 0,
+    "source_id": "declared-permutation-action",
+    "source_section_valid": true,
+    "stabilizer_order": 2,
+    "vertices": [
+      [
+        "root",
+        0
+      ],
+      [
+        "root",
+        1
+      ],
+      [
+        "root",
+        2
+      ]
+    ]
+  },
+  "nonfree_fixed_section_cover": {
+    "connected": true,
+    "constructed_section_deck_invariant": true,
+    "constructed_section_descends_to_base": true,
+    "holonomy_order": 2,
+    "minimum_degree_for_all_transport_trivialization": 2,
+    "minimum_degree_for_this_section": 1,
+    "orbit_cover_deck_group_order": 1,
+    "root_value": 2,
+    "source_id": "declared-permutation-action",
+    "source_section_valid": true,
+    "stabilizer_order": 2,
+    "vertices": [
+      [
+        "root",
+        2
+      ]
+    ]
+  },
+  "sheaf_missing_constraint_control": "Cover omits a cross-chart source constraint",
+  "yoneda": {
+    "blind_context_collapses_parallel_arrows": true,
+    "full_yoneda": {
+      "natural_transform_count": 2,
+      "probe_count": 4,
+      "represented_count": 2,
+      "source_hom_count": 2,
+      "surjective": true
+    },
+    "ignoring_probe_endomorphism_laws_gives_256_instead_of_4": 256,
+    "object_source_hom_2_to_3": 0,
+    "parallel_source_paths": [
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "precursor_identity_context_distinguishes": true,
+    "restricted_natural_isomorphism_2_3": true,
+    "restricted_spurious_natural_transforms": 1,
+    "single_retract_probe_fully_faithful": true,
+    "single_retract_probe_hom_nat_counts": {
+      "1_to_1": [
+        1,
+        1
+      ],
+      "1_to_2": [
+        2,
+        2
+      ],
+      "2_to_1": [
+        1,
+        1
+      ],
+      "2_to_2": [
+        4,
+        4
+      ]
+    }
+  }
+}

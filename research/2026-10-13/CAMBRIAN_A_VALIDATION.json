@@ -1,0 +1,56 @@
+{
+  "additional_executed_commands": [
+    {
+      "command": "python scripts/verify_provenance.py",
+      "exit_code": 0,
+      "summary": {
+        "byte_identical_research_archives": 17,
+        "items": 72,
+        "mechanical_namespace_migrations": 55,
+        "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+        "status": "SOURCE_PROVENANCE_VERIFIED"
+      }
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "exit_code": 0,
+      "scope": "Run started before the final destructive-pair regression was added; final targeted run separately checks all 16 cluster-A tests.",
+      "summary": "Ran 1617 tests in 89.947s; OK"
+    },
+    {
+      "command": "python scripts/observer_foundations_probe.py",
+      "exit_code": 0,
+      "summary": "OBSERVATIONAL_SUCC_FORMAL_FOUNDATIONS; RH_proved=false; no physical infinite time"
+    },
+    {
+      "command": "python scripts/ordinal_succ_report_probe.py",
+      "exit_code": 0,
+      "summary": "FINITE_ORDINAL_SUCC_SECOND_ORDER_WEIL_PROBE; no_RH_or_Weil_positive_sign_assumed=true; no_actual_infinite_ordinal_computed=true"
+    }
+  ],
+  "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_cambrian_a_foundations.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stderr": "test_all_denominator_eight_joint_tables_against_normalized_oracle (test_cambrian_a_foundations.ConditionalLawTests.test_all_denominator_eight_joint_tables_against_normalized_oracle) ... ok\ntest_null_reports_not_normalized_and_bad_weights_rejected (test_cambrian_a_foundations.ConditionalLawTests.test_null_reports_not_normalized_and_bad_weights_rejected) ... ok\ntest_support_lifts_do_not_identify_conditional_weights (test_cambrian_a_foundations.ConditionalLawTests.test_support_lifts_do_not_identify_conditional_weights) ... ok\ntest_AND_pointwise_support_sharp_for_positive_and_negative_results (test_cambrian_a_foundations.HistoryAndSupportTests.test_AND_pointwise_support_sharp_for_positive_and_negative_results) ... ok\ntest_reset_loses_current_but_retained_history_keeps_original_fact (test_cambrian_a_foundations.HistoryAndSupportTests.test_reset_loses_current_but_retained_history_keeps_original_fact) ... ok\ntest_retention_iff_all_old_measurable_boolean_facts_survive (test_cambrian_a_foundations.HistoryAndSupportTests.test_retention_iff_all_old_measurable_boolean_facts_survive) ... ok\ntest_source_typed_history_square_and_epistemic_fibers (test_cambrian_a_foundations.HistoryAndSupportTests.test_source_typed_history_square_and_epistemic_fibers) ... ok\ntest_complete_three_state_relations_two_binary_report_tables (test_cambrian_a_foundations.RelationalLiftingTests.test_complete_three_state_relations_two_binary_report_tables) ... ok\ntest_directional_gates_are_independent (test_cambrian_a_foundations.RelationalLiftingTests.test_directional_gates_are_independent) ... ok\ntest_incomplete_source_and_untyped_evidence_rejected (test_cambrian_a_foundations.RelationalLiftingTests.test_incomplete_source_and_untyped_evidence_rejected) ... ok\ntest_pair_darkness_and_extension_lamp (test_cambrian_a_foundations.ToolkitAndManyObserverTests.test_pair_darkness_and_extension_lamp) ... ok\ntest_pairwise_independence_not_joint_independence_or_source_realizability (test_cambrian_a_foundations.ToolkitAndManyObserverTests.test_pairwise_independence_not_joint_independence_or_source_realizability) ... ok\ntest_pairwise_separators_do_not_supply_one_uniform_destructive_policy (test_cambrian_a_foundations.ToolkitAndManyObserverTests.test_pairwise_separators_do_not_supply_one_uniform_destructive_policy) ... ok\ntest_three_incomplete_observers_fuse_to_complete_source (test_cambrian_a_foundations.ToolkitAndManyObserverTests.test_three_incomplete_observers_fuse_to_complete_source) ... ok\ntest_three_observer_common_factor_by_independent_boolean_algebra (test_cambrian_a_foundations.ToolkitAndManyObserverTests.test_three_observer_common_factor_by_independent_boolean_algebra) ... ok\ntest_toolkit_delayed_path_and_forgotten_basis (test_cambrian_a_foundations.ToolkitAndManyObserverTests.test_toolkit_delayed_path_and_forgotten_basis) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 2.731s\n\nOK\n",
+      "stdout": ""
+    }
+  ],
+  "python": "3.12.14",
+  "sha256": {
+    "observational_succ/cambrian_a_foundations.py": "21fd548bd7e8d6196b716d259b9efa3f2285f20ed375d1965fcf92c039ea673a",
+    "scripts/cambrian_a_foundations_probe.py": "bfbbfcbc133c604bb3d4660c9db2ef3ba08f6f295cdc782ce2248f69a100c86b",
+    "tests/test_cambrian_a_foundations.py": "c047edcb2f59c4fa08948fa314ca5b590ddf3f1abceebc3d9194ede10fcb9309"
+  }
+}

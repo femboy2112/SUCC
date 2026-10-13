@@ -1,0 +1,377 @@
+{
+  "assignment": "SWM-B09",
+  "attempts": [
+    {
+      "compiler": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+      "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+      "dependency_commits": {
+        "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+        "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+        "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+        "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d",
+        "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+        "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+        "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+        "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d"
+      },
+      "mathlib_manifest_sha256": "2acdec67f5f150c830143f6835b0e3af18f382869af79163f284a397c78c9726",
+      "source_sha256": {
+        "formal/SWM_B09_InverseFamilies.lean": "a01ec81397ebc3f900d3eefee144bad6704cfcc40a5b752981df8526ae706c55",
+        "formal/SWM_B09_TopologicalCompletion.lean": "b0fb4e1e1c47aed575c8bc827b3927b5edd4f1e5c1c839c951cb65b036f0970f"
+      },
+      "lean_path": "/home/leah/succ_lab/swm-b09/.swm-tools/proofs:/home/leah/succ_lab/mathlib-4.14/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/plausible/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/LeanSearchClient/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/importGraph/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/proofwidgets/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/aesop/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/Qq/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/batteries/.lake/build/lib",
+      "compiler_limit_bytes": 1073741824,
+      "compiler_timeout_seconds": 120,
+      "checks": [
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M768",
+            "-o",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/SWM_B09_InverseFamilies.olean",
+            "formal/SWM_B09_InverseFamilies.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'ObservationalSUCC.SWM_B09.stage_restriction_identity' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.stage_restriction_composition' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.stage_restriction_surjective' depends on axioms: [Quot.sound]\n'ObservationalSUCC.SWM_B09.coordinate_is_singleton_decode' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.decode_compatible' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.inverse_families_equivalent_to_finitely_compatible_profiles' depends on axioms: [propext,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.source_family_surjective_iff_realization' depends on axioms: [propext, Quot.sound]\n'ObservationalSUCC.SWM_B09.cofinal_stage_testing_iff_compatible' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.singleton_stage_marginals_do_not_imply_joint_compatibility' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.empty_source_has_no_inverse_family' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.lawful_action_preserves_compatible_profiles' depends on axioms: [propext, Quot.sound]\n'ObservationalSUCC.SWM_B09.binary_derivative_source_all_profiles_realized' depends on axioms: [Quot.sound]\n'ObservationalSUCC.SWM_B09.binary_derivative_source_family_surjective' depends on axioms: [propext, Quot.sound]\n",
+          "stderr": "",
+          "elapsed_seconds": 0.56
+        },
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M768",
+            "-o",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/SWM_B09_TopologicalCompletion.olean",
+            "formal/SWM_B09_TopologicalCompletion.lean"
+          ],
+          "exit_code": -11,
+          "stdout": "",
+          "stderr": "",
+          "elapsed_seconds": 1.5949
+        }
+      ],
+      "status": "COMPILE FAILED",
+      "maximum_child_rss_kib": 188200
+    },
+    {
+      "compiler": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+      "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+      "dependency_commits": {
+        "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+        "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+        "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+        "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d",
+        "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+        "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+        "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+        "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d"
+      },
+      "mathlib_manifest_sha256": "2acdec67f5f150c830143f6835b0e3af18f382869af79163f284a397c78c9726",
+      "source_sha256": {
+        "formal/SWM_B09_InverseFamilies.lean": "a01ec81397ebc3f900d3eefee144bad6704cfcc40a5b752981df8526ae706c55",
+        "formal/SWM_B09_TopologicalCompletion.lean": "b0fb4e1e1c47aed575c8bc827b3927b5edd4f1e5c1c839c951cb65b036f0970f"
+      },
+      "lean_path": "/home/leah/succ_lab/swm-b09/.swm-tools/proofs:/home/leah/succ_lab/mathlib-4.14/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/plausible/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/LeanSearchClient/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/importGraph/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/proofwidgets/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/aesop/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/Qq/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/batteries/.lake/build/lib",
+      "compiler_virtual_limit_bytes": 4294967296,
+      "compiler_resident_limit_bytes": 805306368,
+      "lean_allocation_limit_mib": 512,
+      "watchdog_poll_seconds": 0.1,
+      "compiler_timeout_seconds": 120,
+      "checks": [
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M512",
+            "-o",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/B09_ImportCalibration.olean",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/B09_ImportCalibration.lean"
+          ],
+          "exit_code": "RESIDENT MEMORY CAP",
+          "stdout": "",
+          "stderr": "",
+          "elapsed_seconds": 4.4882,
+          "observed_process_tree_peak_rss_kib": 822400
+        }
+      ],
+      "status": "COMPILE FAILED",
+      "maximum_child_rss_kib": 821548
+    },
+    {
+      "compiler": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+      "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+      "dependency_commits": {
+        "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+        "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+        "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+        "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d",
+        "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+        "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+        "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+        "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d"
+      },
+      "mathlib_manifest_sha256": "2acdec67f5f150c830143f6835b0e3af18f382869af79163f284a397c78c9726",
+      "source_sha256": {
+        "formal/SWM_B09_InverseFamilies.lean": "a01ec81397ebc3f900d3eefee144bad6704cfcc40a5b752981df8526ae706c55",
+        "formal/SWM_B09_TopologicalCompletion.lean": "b0fb4e1e1c47aed575c8bc827b3927b5edd4f1e5c1c839c951cb65b036f0970f"
+      },
+      "lean_path": "/home/leah/succ_lab/swm-b09/.swm-tools/proofs:/home/leah/succ_lab/mathlib-4.14/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/plausible/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/LeanSearchClient/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/importGraph/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/proofwidgets/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/aesop/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/Qq/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/batteries/.lake/build/lib",
+      "compiler_virtual_limit_bytes": 4294967296,
+      "compiler_resident_limit_bytes": 1342177280,
+      "minimum_system_available_bytes": 805306368,
+      "lean_allocation_limit_mib": 512,
+      "watchdog_poll_seconds": 0.1,
+      "compiler_timeout_seconds": 120,
+      "checks": [
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M512",
+            "-o",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/B09_ImportCalibration.olean",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/B09_ImportCalibration.lean"
+          ],
+          "exit_code": -6,
+          "stdout": "",
+          "stderr": "libc++abi: terminating due to uncaught exception of type lean::memory_exception: excessive memory consumption detected at 'interpreter' (potential solution: increase memory consumption threshold)\n",
+          "elapsed_seconds": 8.1454,
+          "observed_process_tree_peak_rss_kib": 974816,
+          "minimum_system_available_memory_kib": 2827136
+        }
+      ],
+      "status": "COMPILE FAILED",
+      "maximum_child_rss_kib": 975552
+    },
+    {
+      "compiler": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+      "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+      "dependency_commits": {
+        "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+        "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+        "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+        "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d",
+        "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+        "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+        "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+        "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d"
+      },
+      "mathlib_manifest_sha256": "2acdec67f5f150c830143f6835b0e3af18f382869af79163f284a397c78c9726",
+      "source_sha256": {
+        "formal/SWM_B09_InverseFamilies.lean": "a01ec81397ebc3f900d3eefee144bad6704cfcc40a5b752981df8526ae706c55",
+        "formal/SWM_B09_TopologicalCompletion.lean": "b0fb4e1e1c47aed575c8bc827b3927b5edd4f1e5c1c839c951cb65b036f0970f"
+      },
+      "lean_path": "/home/leah/succ_lab/swm-b09/.swm-tools/proofs:/home/leah/succ_lab/mathlib-4.14/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/plausible/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/LeanSearchClient/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/importGraph/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/proofwidgets/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/aesop/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/Qq/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/batteries/.lake/build/lib",
+      "compiler_virtual_limit_bytes": 4294967296,
+      "compiler_resident_limit_bytes": 1342177280,
+      "minimum_system_available_bytes": 805306368,
+      "lean_allocation_limit_mib": 768,
+      "watchdog_poll_seconds": 0.1,
+      "compiler_timeout_seconds": 120,
+      "checks": [
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M768",
+            "-o",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/B09_ImportCalibration.olean",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/B09_ImportCalibration.lean"
+          ],
+          "exit_code": -6,
+          "stdout": "",
+          "stderr": "libc++abi: terminating due to uncaught exception of type lean::memory_exception: excessive memory consumption detected at 'interpreter' (potential solution: increase memory consumption threshold)\n",
+          "elapsed_seconds": 5.3286,
+          "observed_process_tree_peak_rss_kib": 977488,
+          "minimum_system_available_memory_kib": 3573772
+        }
+      ],
+      "status": "COMPILE FAILED",
+      "maximum_child_rss_kib": 976576
+    },
+    {
+      "compiler": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+      "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+      "dependency_commits": {
+        "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+        "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+        "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+        "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d",
+        "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+        "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+        "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+        "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d"
+      },
+      "mathlib_manifest_sha256": "2acdec67f5f150c830143f6835b0e3af18f382869af79163f284a397c78c9726",
+      "source_sha256": {
+        "formal/SWM_B09_InverseFamilies.lean": "a01ec81397ebc3f900d3eefee144bad6704cfcc40a5b752981df8526ae706c55",
+        "formal/SWM_B09_TopologicalCompletion.lean": "b0fb4e1e1c47aed575c8bc827b3927b5edd4f1e5c1c839c951cb65b036f0970f"
+      },
+      "lean_path": "/home/leah/succ_lab/swm-b09/.swm-tools/proofs:/home/leah/succ_lab/mathlib-4.14/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/plausible/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/LeanSearchClient/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/importGraph/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/proofwidgets/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/aesop/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/Qq/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/batteries/.lake/build/lib",
+      "compiler_virtual_limit_bytes": 4294967296,
+      "compiler_resident_limit_bytes": 1342177280,
+      "minimum_system_available_bytes": 805306368,
+      "lean_allocation_limit_mib": 2048,
+      "watchdog_poll_seconds": 0.1,
+      "compiler_timeout_seconds": 120,
+      "checks": [
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M2048",
+            "-o",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/B09_ImportCalibration.olean",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/B09_ImportCalibration.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "closure.{u} {X : Type u} [TopologicalSpace X] (s : Set X) : Set X\nHomeomorph.{u_5, u_6} (X : Type u_5) (Y : Type u_6) [TopologicalSpace X] [TopologicalSpace Y] : Type (max u_5 u_6)\nIsCompact.isClosed.{u_1} {X : Type u_1} [TopologicalSpace X] [T2Space X] {s : Set X} (hs : IsCompact s) : IsClosed s\n",
+          "stderr": "",
+          "elapsed_seconds": 14.2018,
+          "observed_process_tree_peak_rss_kib": 1044360,
+          "minimum_system_available_memory_kib": 2338760
+        },
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M2048",
+            "-o",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/SWM_B09_InverseFamilies.olean",
+            "formal/SWM_B09_InverseFamilies.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'ObservationalSUCC.SWM_B09.stage_restriction_identity' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.stage_restriction_composition' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.stage_restriction_surjective' depends on axioms: [Quot.sound]\n'ObservationalSUCC.SWM_B09.coordinate_is_singleton_decode' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.decode_compatible' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.inverse_families_equivalent_to_finitely_compatible_profiles' depends on axioms: [propext,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.source_family_surjective_iff_realization' depends on axioms: [propext, Quot.sound]\n'ObservationalSUCC.SWM_B09.cofinal_stage_testing_iff_compatible' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.singleton_stage_marginals_do_not_imply_joint_compatibility' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.empty_source_has_no_inverse_family' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.lawful_action_preserves_compatible_profiles' depends on axioms: [propext, Quot.sound]\n'ObservationalSUCC.SWM_B09.binary_derivative_source_all_profiles_realized' depends on axioms: [Quot.sound]\n'ObservationalSUCC.SWM_B09.binary_derivative_source_family_surjective' depends on axioms: [propext, Quot.sound]\n",
+          "stderr": "",
+          "elapsed_seconds": 0.8092,
+          "observed_process_tree_peak_rss_kib": 188564,
+          "minimum_system_available_memory_kib": 2935120
+        },
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M2048",
+            "-o",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/SWM_B09_TopologicalCompletion.olean",
+            "formal/SWM_B09_TopologicalCompletion.lean"
+          ],
+          "exit_code": 1,
+          "stdout": "formal/SWM_B09_TopologicalCompletion.lean:71:52: error: failed to synthesize\n  TopologicalSpace ((F : List W) \u2192 Stage trace F)\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nformal/SWM_B09_TopologicalCompletion.lean:81:28: error: failed to synthesize\n  TopologicalSpace (Stage trace F)\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nformal/SWM_B09_TopologicalCompletion.lean:99:16: error: failed to synthesize\n  TopologicalSpace (Stage trace [a])\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nformal/SWM_B09_TopologicalCompletion.lean:107:8: warning: declaration uses 'sorry'\nformal/SWM_B09_TopologicalCompletion.lean:111:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nformal/SWM_B09_TopologicalCompletion.lean:112:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nformal/SWM_B09_TopologicalCompletion.lean:113:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nformal/SWM_B09_TopologicalCompletion.lean:114:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nformal/SWM_B09_TopologicalCompletion.lean:115:2: warning: this tactic is never executed\nnote: this linter can be disabled with `set_option linter.unreachableTactic false`\nformal/SWM_B09_TopologicalCompletion.lean:110:2: warning: 'apply continuous_pi' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nformal/SWM_B09_TopologicalCompletion.lean:111:2: warning: 'intro F' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nformal/SWM_B09_TopologicalCompletion.lean:112:2: warning: 'apply Continuous.subtype_mk' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nformal/SWM_B09_TopologicalCompletion.lean:113:2: warning: 'apply continuous_pi' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nformal/SWM_B09_TopologicalCompletion.lean:114:2: warning: 'intro a' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nformal/SWM_B09_TopologicalCompletion.lean:115:2: warning: 'exact (continuous_apply a.val).comp continuous_subtype_val' tactic does nothing\nnote: this linter can be disabled with `set_option linter.unusedTactic false`\nformal/SWM_B09_TopologicalCompletion.lean:230:8: error: typeclass instance problem is stuck, it is often due to metavariables\n  TopologicalSpace ?m.10472\n'ObservationalSUCC.SWM_B09.mem_closure_range_iff_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.SWM_B09.closure_range_eq_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.SWM_B09.inverseFamilyClosureHomeomorph' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.inverse_family_topological_limit_universal' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.source_family_surjective_iff_closed_trace_image' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.compact_continuous_source_realizes_compatible_profile' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.compact_continuous_source_family_surjective' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.finite_alphabet_trace_closure_compact' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.trace_closure_compact_iff_each_probe_finite_image' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.lawful_action_preserves_trace_closure' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.cantor_compact_source_actualizes_every_compatible_derivative' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Quot.sound]\n",
+          "stderr": "",
+          "elapsed_seconds": 3.0203,
+          "observed_process_tree_peak_rss_kib": 1064832,
+          "minimum_system_available_memory_kib": 2933512
+        }
+      ],
+      "status": "COMPILE FAILED",
+      "maximum_child_rss_kib": 1064424
+    },
+    {
+      "compiler": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+      "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+      "dependency_commits": {
+        "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+        "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+        "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+        "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d",
+        "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+        "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+        "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+        "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d"
+      },
+      "mathlib_manifest_sha256": "2acdec67f5f150c830143f6835b0e3af18f382869af79163f284a397c78c9726",
+      "source_sha256": {
+        "formal/SWM_B09_InverseFamilies.lean": "a01ec81397ebc3f900d3eefee144bad6704cfcc40a5b752981df8526ae706c55",
+        "formal/SWM_B09_TopologicalCompletion.lean": "3bf69fcd99055f25d956f50f025724cdc90a3955d99c5bc5ffbf27ddb813c824"
+      },
+      "lean_path": "/home/leah/succ_lab/swm-b09/.swm-tools/proofs:/home/leah/succ_lab/mathlib-4.14/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/plausible/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/LeanSearchClient/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/importGraph/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/proofwidgets/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/aesop/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/Qq/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/batteries/.lake/build/lib",
+      "compiler_virtual_limit_bytes": 4294967296,
+      "compiler_resident_limit_bytes": 1342177280,
+      "minimum_system_available_bytes": 805306368,
+      "lean_allocation_limit_mib": 2048,
+      "watchdog_poll_seconds": 0.1,
+      "compiler_timeout_seconds": 120,
+      "checks": [
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M2048",
+            "-o",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/B09_ImportCalibration.olean",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/B09_ImportCalibration.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "closure.{u} {X : Type u} [TopologicalSpace X] (s : Set X) : Set X\nHomeomorph.{u_5, u_6} (X : Type u_5) (Y : Type u_6) [TopologicalSpace X] [TopologicalSpace Y] : Type (max u_5 u_6)\nIsCompact.isClosed.{u_1} {X : Type u_1} [TopologicalSpace X] [T2Space X] {s : Set X} (hs : IsCompact s) : IsClosed s\n",
+          "stderr": "",
+          "elapsed_seconds": 5.9313,
+          "observed_process_tree_peak_rss_kib": 1040276,
+          "minimum_system_available_memory_kib": 2177940,
+          "printed_axiom_dependencies": []
+        },
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M2048",
+            "-o",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/SWM_B09_InverseFamilies.olean",
+            "formal/SWM_B09_InverseFamilies.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'ObservationalSUCC.SWM_B09.stage_restriction_identity' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.stage_restriction_composition' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.stage_restriction_surjective' depends on axioms: [Quot.sound]\n'ObservationalSUCC.SWM_B09.coordinate_is_singleton_decode' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.decode_compatible' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.inverse_families_equivalent_to_finitely_compatible_profiles' depends on axioms: [propext,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.source_family_surjective_iff_realization' depends on axioms: [propext, Quot.sound]\n'ObservationalSUCC.SWM_B09.cofinal_stage_testing_iff_compatible' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.singleton_stage_marginals_do_not_imply_joint_compatibility' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.empty_source_has_no_inverse_family' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.lawful_action_preserves_compatible_profiles' depends on axioms: [propext, Quot.sound]\n'ObservationalSUCC.SWM_B09.binary_derivative_source_all_profiles_realized' depends on axioms: [Quot.sound]\n'ObservationalSUCC.SWM_B09.binary_derivative_source_family_surjective' depends on axioms: [propext, Quot.sound]\n",
+          "stderr": "",
+          "elapsed_seconds": 1.0111,
+          "observed_process_tree_peak_rss_kib": 188464,
+          "minimum_system_available_memory_kib": 2571720,
+          "printed_axiom_dependencies": [
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M2048",
+            "-o",
+            "/home/leah/succ_lab/swm-b09/.swm-tools/proofs/SWM_B09_TopologicalCompletion.olean",
+            "formal/SWM_B09_TopologicalCompletion.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'ObservationalSUCC.SWM_B09.mem_closure_range_iff_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.SWM_B09.closure_range_eq_compatible' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.SWM_B09.inverseFamilyClosureHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.SWM_B09.inverse_family_topological_limit_universal' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.source_family_surjective_iff_closed_trace_image' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.compact_continuous_source_realizes_compatible_profile' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.compact_continuous_source_family_surjective' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.finite_alphabet_trace_closure_compact' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.trace_closure_compact_iff_each_probe_finite_image' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.lawful_action_preserves_trace_closure' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.cantor_compact_source_actualizes_every_compatible_derivative' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+          "stderr": "",
+          "elapsed_seconds": 2.9184,
+          "observed_process_tree_peak_rss_kib": 1070376,
+          "minimum_system_available_memory_kib": 2689016,
+          "printed_axiom_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        }
+      ],
+      "status": "LEAN-KERNEL PROVED",
+      "maximum_child_rss_kib": 1080044,
+      "direct_topology_import_sha256": {
+        "Mathlib.Topology.Constructions": {
+          "source": "8e9697a5f5917d52eca11f8cc4f178e169fa713378b4d8708f4ca1cd1ab99b39",
+          "compiled_olean": "c1a02ca9adecdd22f0781d5d2bdfd673c17d99d9980fc9d34bca492b91c6ebfd"
+        },
+        "Mathlib.Topology.Separation.Basic": {
+          "source": "c8a77b6a2545e240ea3dedad39c7eab9afa4695a79e52fb59c895a90331042eb",
+          "compiled_olean": "4045b393df9b8d6daef53e2e79452ef8e3eef97b77993019ac37c098fe700ca3"
+        },
+        "Mathlib.Topology.Homeomorph": {
+          "source": "f584cd14013dc5f134ded399bbf411b4f5035c52ff2bb786c1e0d95e3f02f66e",
+          "compiled_olean": "d281183412d6e6db62fb5dedec718dcbff26d572a1a1e92b64af3e5ecbd5fa69"
+        }
+      },
+      "dependency_tracked_source_diffs": "CLEAN: verified after successful compilation"
+    }
+  ],
+  "latest_status": "LEAN-KERNEL PROVED"
+}

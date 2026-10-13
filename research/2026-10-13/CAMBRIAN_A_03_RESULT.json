@@ -1,0 +1,16 @@
+{
+  "cheapest_falsifier": "Bit erased by reset",
+  "claim_ids": [
+    "CA03"
+  ],
+  "evidence": {
+    "history_preserves_old_fact": true,
+    "reset_preserves_old_fact": false
+  },
+  "limitations": "Compare reports on one source/path domain; current truths require distinct predicates",
+  "proof": "CAMBRIAN_A_FOUNDATIONS.md#03",
+  "quantifiers": "Every Boolean fact measurable in the old report",
+  "question": "Knowledge lattice and destructive intervention",
+  "rival": "Each observation increases knowledge of all original and current claims",
+  "status": "CLASSICAL / PROVED LOCAL"
+}

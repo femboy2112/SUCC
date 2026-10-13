@@ -1,0 +1,170 @@
+{
+  "composition": {
+    "composable_pairs": 38084,
+    "minimal_strict_bits_control": {
+      "bits": [
+        2,
+        1,
+        2
+      ],
+      "f": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "g": [
+        0,
+        0
+      ],
+      "ranks": [
+        3,
+        2,
+        4
+      ]
+    },
+    "minimal_strict_rank_control": {
+      "bits": [
+        1,
+        1,
+        2
+      ],
+      "f": [
+        0,
+        0,
+        1
+      ],
+      "g": [
+        0,
+        0
+      ],
+      "ranks": [
+        2,
+        2,
+        3
+      ]
+    },
+    "strict_bit_pairs_surjective": 116,
+    "strict_rank_pairs_surjective": 266,
+    "surjective_pairs": 1840
+  },
+  "debt_recurrence_audit": {
+    "boundary": [
+      "2",
+      "1",
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/16",
+      "1/32",
+      "1/64",
+      "1/128",
+      "1/256",
+      "1/512",
+      "1/1024",
+      "1/2048"
+    ],
+    "exact_closed_form_values": 3328,
+    "finite_crossing_certificates": 194,
+    "noncompletion_coefficient_certificates": 62,
+    "positive_rational_parameter_tuples": 256,
+    "post_stop_values": "Algebraic recurrence only; operational execution ends at first nonpositive value."
+  },
+  "memory_audit": {
+    "complete_maps": 430,
+    "oracle": "all memory assignments, ascending capacity",
+    "original_sizes": [
+      1,
+      5
+    ],
+    "target_sizes": [
+      1,
+      3
+    ]
+  },
+  "mission": "SWM-X06",
+  "parent": "71eaf11e48ca3ccb349858bba64abf36b59ee6f5",
+  "resource_separation": {
+    "one_reset_then_identity_ranks": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "recurrence_boundary_is_a_distinct_model": true,
+    "source_state_vs_origin_buffer_controls": [
+      {
+        "constant_word_generator_states": 1,
+        "marker_generator_states": 1,
+        "n": 1,
+        "reset_n_originals_buffer": 1,
+        "single_preparation_buffer": 1
+      },
+      {
+        "constant_word_generator_states": 1,
+        "marker_generator_states": 2,
+        "n": 2,
+        "reset_n_originals_buffer": 2,
+        "single_preparation_buffer": 1
+      },
+      {
+        "constant_word_generator_states": 1,
+        "marker_generator_states": 3,
+        "n": 3,
+        "reset_n_originals_buffer": 3,
+        "single_preparation_buffer": 1
+      },
+      {
+        "constant_word_generator_states": 1,
+        "marker_generator_states": 4,
+        "n": 4,
+        "reset_n_originals_buffer": 4,
+        "single_preparation_buffer": 1
+      },
+      {
+        "constant_word_generator_states": 1,
+        "marker_generator_states": 5,
+        "n": 5,
+        "reset_n_originals_buffer": 5,
+        "single_preparation_buffer": 1
+      },
+      {
+        "constant_word_generator_states": 1,
+        "marker_generator_states": 6,
+        "n": 6,
+        "reset_n_originals_buffer": 6,
+        "single_preparation_buffer": 1
+      },
+      {
+        "constant_word_generator_states": 1,
+        "marker_generator_states": 7,
+        "n": 7,
+        "reset_n_originals_buffer": 7,
+        "single_preparation_buffer": 1
+      },
+      {
+        "constant_word_generator_states": 1,
+        "marker_generator_states": 8,
+        "n": 8,
+        "reset_n_originals_buffer": 8,
+        "single_preparation_buffer": 1
+      }
+    ]
+  },
+  "retained_reports": {
+    "reset_bit_with_retained_bit_report": 1,
+    "reset_bit_without_retained_report": 2,
+    "two_stage_reported_models": 20340
+  },
+  "scope": "Injective encodings and reachable-image bijections, not unspecified global register permutations or energy.",
+  "status": "PROVED LOCAL paper; independent finite exact audits"
+}

@@ -1,0 +1,220 @@
+{
+  "schema": "B14-bounded-controls-v1",
+  "status": "TESTED MODEL",
+  "source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "import_source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "import_origin_object_check": {
+    "command": "git cat-file -t ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "exit_code": 128,
+    "stdout": "",
+    "stderr": "fatal: git cat-file: could not get object info"
+  },
+  "paper_proof_status": "CLASSICAL; independently written paper derivations; not kernel-checked",
+  "primary_sources": [
+    {
+      "url": "https://www.math.uic.edu/~marker/math512/dst.pdf",
+      "locator": "Definition 1.7, Lemma 1.14, Definition 2.39, Example 2.43, Theorem 2.52",
+      "accessed": "2026-10-13"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1204.3763",
+      "locator": "Sections 3-4",
+      "accessed": "2026-10-13"
+    }
+  ],
+  "command": "python research/2026-10-13/SWARM_ATLAS/B14_probe.py",
+  "exit_code": 0,
+  "python": "3.12.3",
+  "bounds": {
+    "maximum_prefix_depth": 8,
+    "extension_bits": 16,
+    "parity_sources": 32,
+    "maximum_delayed_horizon": 16
+  },
+  "controls": {
+    "opposite_extension_prefix_pairs": 511,
+    "clopen_words": 256,
+    "open_seen_one_positive_read": 3,
+    "open_seen_one_zero_window": 64,
+    "parity_read_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
+    ],
+    "delayed_opposite_parity_pairs": [
+      {
+        "horizon": 0,
+        "even_first_one": 0,
+        "odd_first_one": 1
+      },
+      {
+        "horizon": 1,
+        "even_first_one": 2,
+        "odd_first_one": 1
+      },
+      {
+        "horizon": 2,
+        "even_first_one": 2,
+        "odd_first_one": 3
+      },
+      {
+        "horizon": 3,
+        "even_first_one": 4,
+        "odd_first_one": 3
+      },
+      {
+        "horizon": 4,
+        "even_first_one": 4,
+        "odd_first_one": 5
+      },
+      {
+        "horizon": 5,
+        "even_first_one": 6,
+        "odd_first_one": 5
+      },
+      {
+        "horizon": 6,
+        "even_first_one": 6,
+        "odd_first_one": 7
+      },
+      {
+        "horizon": 7,
+        "even_first_one": 8,
+        "odd_first_one": 7
+      },
+      {
+        "horizon": 8,
+        "even_first_one": 8,
+        "odd_first_one": 9
+      },
+      {
+        "horizon": 9,
+        "even_first_one": 10,
+        "odd_first_one": 9
+      },
+      {
+        "horizon": 10,
+        "even_first_one": 10,
+        "odd_first_one": 11
+      },
+      {
+        "horizon": 11,
+        "even_first_one": 12,
+        "odd_first_one": 11
+      },
+      {
+        "horizon": 12,
+        "even_first_one": 12,
+        "odd_first_one": 13
+      },
+      {
+        "horizon": 13,
+        "even_first_one": 14,
+        "odd_first_one": 13
+      },
+      {
+        "horizon": 14,
+        "even_first_one": 14,
+        "odd_first_one": 15
+      },
+      {
+        "horizon": 15,
+        "even_first_one": 16,
+        "odd_first_one": 15
+      },
+      {
+        "horizon": 16,
+        "even_first_one": 16,
+        "odd_first_one": 17
+      }
+    ],
+    "marker_input": [
+      1,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    "marker_output": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "archival_blobs": [
+    {
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/INFINITE_REALIZATION_LIMITS.md",
+      "git_blob": "7b3f87e5ee9ff28c1339bab93d4327326d8d7526",
+      "manifest_match": true
+    },
+    {
+      "path": "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md",
+      "git_blob": "04408ed96bd369b5063868eb5ad5664824d18043",
+      "manifest_match": true
+    }
+  ],
+  "artifact_sha256": {
+    "B14.md": "351d003891a79b21284d28e22afc27473a4b6c27b62902b6518789fc63034632",
+    "B14_probe.py": "1d0ed7d32238d8ea1434c0c4be5e420ac4fcf615059ca93aed27a29451422dd0"
+  },
+  "limitations": [
+    "No continuum classification was executed.",
+    "No completeness, Baire, or compactness theorem is proved by this probe.",
+    "Finite-extension infinite labels are justified only by B14 paper proofs.",
+    "No full suite or compiler run; principal integration validation remains."
+  ]
+}

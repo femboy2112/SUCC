@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-13T09:55:18.775518+00:00",
+  "reason": "Baseline-only child runs redundant with integrated fullsuite/kernel; cancelled is not pass",
+  "runs": [
+    {
+      "conclusion": "",
+      "databaseId": 38379539195,
+      "headBranch": "research/swm-d26-2026-10-13",
+      "headSha": "e7bedd04eb27c0d7928e924b3e9fd1d58ff5861d",
+      "status": "in_progress",
+      "cancel_exit": 0,
+      "output": "\u2713 Request to cancel workflow 38379539195 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38379538733,
+      "headBranch": "research/swm-f45-2026-10-13",
+      "headSha": "8669b2f614d9bcbbe07820c796c14539a1df6807",
+      "status": "in_progress",
+      "cancel_exit": 0,
+      "output": "\u2713 Request to cancel workflow 38379538733 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38379538635,
+      "headBranch": "research/swm-f44-2026-10-13",
+      "headSha": "acc1942011cb8fbc7fdcd3e2e48d169af3d74bfc",
+      "status": "in_progress",
+      "cancel_exit": 0,
+      "output": "\u2713 Request to cancel workflow 38379538635 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38379538523,
+      "headBranch": "research/swm-d30-2026-10-13",
+      "headSha": "bf58ce0cb2ee6f82ffda069db3486e50ac6aa8f2",
+      "status": "in_progress",
+      "cancel_exit": 0,
+      "output": "\u2713 Request to cancel workflow 38379538523 submitted.\n"
+    }
+  ]
+}

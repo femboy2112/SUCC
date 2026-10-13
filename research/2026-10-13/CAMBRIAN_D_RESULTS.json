@@ -1,0 +1,6484 @@
+{
+  "assignments": {
+    "19": {
+      "bounded_queue_controls": [
+        {
+          "capacity": 1,
+          "class_counts": [
+            3
+          ],
+          "live_residual_classes": 2,
+          "sink_is_totalization_artifact": true
+        },
+        {
+          "capacity": 2,
+          "class_counts": [
+            4
+          ],
+          "live_residual_classes": 3,
+          "sink_is_totalization_artifact": true
+        },
+        {
+          "capacity": 3,
+          "class_counts": [
+            4,
+            5
+          ],
+          "live_residual_classes": 4,
+          "sink_is_totalization_artifact": true
+        },
+        {
+          "capacity": 4,
+          "class_counts": [
+            4,
+            6
+          ],
+          "live_residual_classes": 5,
+          "sink_is_totalization_artifact": true
+        },
+        {
+          "capacity": 5,
+          "class_counts": [
+            4,
+            6,
+            7
+          ],
+          "live_residual_classes": 6,
+          "sink_is_totalization_artifact": true
+        },
+        {
+          "capacity": 6,
+          "class_counts": [
+            4,
+            6,
+            8
+          ],
+          "live_residual_classes": 7,
+          "sink_is_totalization_artifact": true
+        }
+      ],
+      "hidden_common_legality_relation_is_equivalence": false,
+      "infinite_queue_finite_realization": false,
+      "status": "CLASSICAL / PROVED CONDITIONAL / EXACT FINITE TESTED"
+    },
+    "20": {
+      "deterministic_repairs": 14,
+      "genetic_separator_successes": 34,
+      "grammar_invents_its_own_metagrammar": false,
+      "heldout_generation_seeds": [
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154
+      ],
+      "heldouts": [
+        {
+          "class_counts": [
+            2,
+            4,
+            6
+          ],
+          "deterministic_repairs": 1,
+          "exhaustive_partition_oracle": {
+            "classes": 6,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "partitions_checked": 203
+          },
+          "forecast_checks": 186,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 6,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "twist",
+              "chosen_separator": [
+                "twist"
+              ],
+              "forced_separator": [
+                "twist"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "twist"
+              ],
+              "forced_separator": [
+                "advance",
+                "twist"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "1",
+                "5"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "twist"
+            ],
+            [
+              "advance",
+              "twist"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-131-6",
+          "source_outputs": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "source_states": 6,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "0"
+            ],
+            [
+              "3",
+              "0",
+              "2",
+              "4",
+              "4",
+              "0"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            3
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 3,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2
+            ],
+            "partitions_checked": 5
+          },
+          "forecast_checks": 93,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 3,
+          "minimum_fixed_memory_bits": 2,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-132-3",
+          "source_outputs": [
+            "0",
+            "0",
+            "1"
+          ],
+          "source_states": 3,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 1
+        },
+        {
+          "class_counts": [
+            2,
+            3,
+            4
+          ],
+          "deterministic_repairs": 1,
+          "exhaustive_partition_oracle": {
+            "classes": 4,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "partitions_checked": 15
+          },
+          "forecast_checks": 124,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 4,
+          "minimum_fixed_memory_bits": 2,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "1",
+                "3"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "1",
+                "2"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ],
+            [
+              "advance",
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-133-4",
+          "source_outputs": [
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "source_states": 4,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            [
+              "2",
+              "0",
+              "0",
+              "2"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "deterministic_repairs": 1,
+          "exhaustive_partition_oracle": {
+            "classes": 5,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "partitions_checked": 52
+          },
+          "forecast_checks": 155,
+          "genetic_successes": 2,
+          "minimal_predictive_classes": 5,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "3"
+              ]
+            },
+            {
+              "action": "twist",
+              "chosen_separator": [
+                "twist",
+                "advance"
+              ],
+              "forced_separator": [
+                "twist",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "0",
+                "2"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ],
+            [
+              "twist",
+              "advance"
+            ],
+            [
+              "advance",
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-134-5",
+          "source_outputs": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "source_states": 5,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "0"
+            ],
+            [
+              "0",
+              "3",
+              "1",
+              "3",
+              "1"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            3,
+            5,
+            6
+          ],
+          "deterministic_repairs": 2,
+          "exhaustive_partition_oracle": {
+            "classes": 6,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "partitions_checked": 203
+          },
+          "forecast_checks": 186,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 6,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "1",
+                "3"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "0",
+                "4"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "3",
+                "5"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ],
+            [
+              "advance",
+              "advance"
+            ],
+            [
+              "advance",
+              "advance",
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-135-6",
+          "source_outputs": [
+            "0",
+            "1",
+            "1",
+            "1",
+            "0",
+            "1"
+          ],
+          "source_states": 6,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "0"
+            ],
+            [
+              "2",
+              "0",
+              "4",
+              "1",
+              "2",
+              "5"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            3
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 3,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2
+            ],
+            "partitions_checked": 5
+          },
+          "forecast_checks": 93,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 3,
+          "minimum_fixed_memory_bits": 2,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-136-3",
+          "source_outputs": [
+            "0",
+            "0",
+            "1"
+          ],
+          "source_states": 3,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "0"
+            ],
+            [
+              "1",
+              "0",
+              "1"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 1
+        },
+        {
+          "class_counts": [
+            2,
+            4
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 4,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "partitions_checked": 15
+          },
+          "forecast_checks": 124,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 4,
+          "minimum_fixed_memory_bits": 2,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-137-4",
+          "source_outputs": [
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          "source_states": 4,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            [
+              "1",
+              "1",
+              "3",
+              "2"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 1
+        },
+        {
+          "class_counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "deterministic_repairs": 2,
+          "exhaustive_partition_oracle": {
+            "classes": 5,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "partitions_checked": 52
+          },
+          "forecast_checks": 155,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 5,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "1",
+                "4"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "1",
+                "3"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "1",
+                "2"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ],
+            [
+              "advance",
+              "advance"
+            ],
+            [
+              "advance",
+              "advance",
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-138-5",
+          "source_outputs": [
+            "0",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "source_states": 5,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "0"
+            ],
+            [
+              "4",
+              "2",
+              "1",
+              "1",
+              "1"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            3,
+            4,
+            6
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 6,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "partitions_checked": 203
+          },
+          "forecast_checks": 186,
+          "genetic_successes": 3,
+          "minimal_predictive_classes": 6,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "1",
+                "3"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "twist"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "twist",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance",
+                "twist"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "1",
+                "5"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ],
+            [
+              "advance",
+              "twist"
+            ],
+            [
+              "twist",
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-139-6",
+          "source_outputs": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "source_states": 6,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "0"
+            ],
+            [
+              "4",
+              "1",
+              "4",
+              "2",
+              "1",
+              "4"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            3
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 3,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2
+            ],
+            "partitions_checked": 5
+          },
+          "forecast_checks": 93,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 3,
+          "minimum_fixed_memory_bits": 2,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-140-3",
+          "source_outputs": [
+            "0",
+            "0",
+            "1"
+          ],
+          "source_states": 3,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "0"
+            ],
+            [
+              "0",
+              "2",
+              "2"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 1
+        },
+        {
+          "class_counts": [
+            2
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 2,
+            "lawful_partitions": 2,
+            "partition": [
+              0,
+              1,
+              0,
+              1
+            ],
+            "partitions_checked": 15
+          },
+          "forecast_checks": 124,
+          "genetic_successes": 0,
+          "minimal_predictive_classes": 2,
+          "minimum_fixed_memory_bits": 1,
+          "obstructions": [],
+          "probe_words": [
+            []
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-141-4",
+          "source_outputs": [
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "source_states": 4,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            [
+              "0",
+              "2",
+              "0",
+              "2"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 0
+        },
+        {
+          "class_counts": [
+            2,
+            4,
+            5
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 5,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "partitions_checked": 52
+          },
+          "forecast_checks": 155,
+          "genetic_successes": 2,
+          "minimal_predictive_classes": 5,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "twist"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "2",
+                "3"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ],
+            [
+              "advance",
+              "twist"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-142-5",
+          "source_outputs": [
+            "0",
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "source_states": 5,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "0"
+            ],
+            [
+              "2",
+              "2",
+              "0",
+              "0",
+              "2"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "deterministic_repairs": 2,
+          "exhaustive_partition_oracle": {
+            "classes": 6,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "partitions_checked": 203
+          },
+          "forecast_checks": 186,
+          "genetic_successes": 2,
+          "minimal_predictive_classes": 6,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "twist",
+              "chosen_separator": [
+                "twist"
+              ],
+              "forced_separator": [
+                "twist"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "twist"
+              ],
+              "forced_separator": [
+                "advance",
+                "twist"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "2",
+                "4"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "2",
+                "3"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "twist"
+            ],
+            [
+              "advance",
+              "twist"
+            ],
+            [
+              "advance"
+            ],
+            [
+              "advance",
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-143-6",
+          "source_outputs": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "source_states": 6,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "0"
+            ],
+            [
+              "0",
+              "5",
+              "3",
+              "3",
+              "1",
+              "4"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 3
+        },
+        {
+          "class_counts": [
+            2,
+            3
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 3,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2
+            ],
+            "partitions_checked": 5
+          },
+          "forecast_checks": 93,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 3,
+          "minimum_fixed_memory_bits": 2,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-144-3",
+          "source_outputs": [
+            "0",
+            "0",
+            "1"
+          ],
+          "source_states": 3,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "0"
+            ],
+            [
+              "0",
+              "2",
+              "0"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 1
+        },
+        {
+          "class_counts": [
+            2,
+            4
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 4,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "partitions_checked": 15
+          },
+          "forecast_checks": 124,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 4,
+          "minimum_fixed_memory_bits": 2,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-145-4",
+          "source_outputs": [
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          "source_states": 4,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            [
+              "2",
+              "3",
+              "2",
+              "0"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 1
+        },
+        {
+          "class_counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "deterministic_repairs": 2,
+          "exhaustive_partition_oracle": {
+            "classes": 5,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "partitions_checked": 52
+          },
+          "forecast_checks": 155,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 5,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "2",
+                "4"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "1",
+                "3"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ],
+            [
+              "advance",
+              "advance"
+            ],
+            [
+              "advance",
+              "advance",
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-146-5",
+          "source_outputs": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "source_states": 5,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "0"
+            ],
+            [
+              "4",
+              "2",
+              "0",
+              "2",
+              "0"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            3,
+            5,
+            6
+          ],
+          "deterministic_repairs": 1,
+          "exhaustive_partition_oracle": {
+            "classes": 6,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "partitions_checked": 203
+          },
+          "forecast_checks": 186,
+          "genetic_successes": 2,
+          "minimal_predictive_classes": 6,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "1",
+                "3"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "0",
+                "4"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "twist"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "3",
+                "5"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ],
+            [
+              "advance",
+              "advance"
+            ],
+            [
+              "twist"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-147-6",
+          "source_outputs": [
+            "0",
+            "1",
+            "1",
+            "1",
+            "0",
+            "1"
+          ],
+          "source_states": 6,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "0"
+            ],
+            [
+              "3",
+              "3",
+              "5",
+              "0",
+              "3",
+              "2"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            3
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 3,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2
+            ],
+            "partitions_checked": 5
+          },
+          "forecast_checks": 93,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 3,
+          "minimum_fixed_memory_bits": 2,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-148-3",
+          "source_outputs": [
+            "0",
+            "0",
+            "1"
+          ],
+          "source_states": 3,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "0"
+            ],
+            [
+              "1",
+              "1",
+              "1"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 1
+        },
+        {
+          "class_counts": [
+            2,
+            4
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 4,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "partitions_checked": 15
+          },
+          "forecast_checks": 124,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 4,
+          "minimum_fixed_memory_bits": 2,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-149-4",
+          "source_outputs": [
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          "source_states": 4,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            [
+              "1",
+              "1",
+              "0",
+              "0"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 1
+        },
+        {
+          "class_counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 5,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "partitions_checked": 52
+          },
+          "forecast_checks": 155,
+          "genetic_successes": 3,
+          "minimal_predictive_classes": 5,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "2"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "twist"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "1",
+                "4"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "twist"
+              ],
+              "forced_separator": [
+                "advance",
+                "twist"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "3"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ],
+            [
+              "twist"
+            ],
+            [
+              "advance",
+              "twist"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-150-5",
+          "source_outputs": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "1"
+          ],
+          "source_states": 5,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "0"
+            ],
+            [
+              "3",
+              "1",
+              "1",
+              "3",
+              "0"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            4,
+            5,
+            6
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 6,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "partitions_checked": 203
+          },
+          "forecast_checks": 186,
+          "genetic_successes": 3,
+          "minimal_predictive_classes": 6,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "action": "twist",
+              "chosen_separator": [
+                "twist"
+              ],
+              "forced_separator": [
+                "twist"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "2",
+                "3"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "twist",
+                "twist"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "2",
+                "4"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ],
+            [
+              "twist"
+            ],
+            [
+              "twist",
+              "twist"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-151-6",
+          "source_outputs": [
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "source_states": 6,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "0"
+            ],
+            [
+              "3",
+              "3",
+              "4",
+              "0",
+              "3",
+              "0"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            3
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 3,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2
+            ],
+            "partitions_checked": 5
+          },
+          "forecast_checks": 93,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 3,
+          "minimum_fixed_memory_bits": 2,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-152-3",
+          "source_outputs": [
+            "0",
+            "0",
+            "1"
+          ],
+          "source_states": 3,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "2"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 1
+        },
+        {
+          "class_counts": [
+            2,
+            3,
+            4
+          ],
+          "deterministic_repairs": 0,
+          "exhaustive_partition_oracle": {
+            "classes": 4,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "partitions_checked": 15
+          },
+          "forecast_checks": 124,
+          "genetic_successes": 2,
+          "minimal_predictive_classes": 4,
+          "minimum_fixed_memory_bits": 2,
+          "obstructions": [
+            {
+              "action": "twist",
+              "chosen_separator": [
+                "twist"
+              ],
+              "forced_separator": [
+                "twist"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "1"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "0",
+                "2"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "twist"
+            ],
+            [
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-153-4",
+          "source_outputs": [
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "source_states": 4,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            [
+              "3",
+              "2",
+              "3",
+              "1"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        },
+        {
+          "class_counts": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "deterministic_repairs": 2,
+          "exhaustive_partition_oracle": {
+            "classes": 5,
+            "lawful_partitions": 1,
+            "partition": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "partitions_checked": 52
+          },
+          "forecast_checks": 155,
+          "genetic_successes": 1,
+          "minimal_predictive_classes": 5,
+          "minimum_fixed_memory_bits": 3,
+          "obstructions": [
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance"
+              ],
+              "forced_separator": [
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "evolutionary-word-selection",
+              "states": [
+                "1",
+                "2"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "0",
+                "3"
+              ]
+            },
+            {
+              "action": "advance",
+              "chosen_separator": [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              "forced_separator": [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              "metagrammar_supplies_memory_type": true,
+              "selection": "obstruction-prefix-constructor",
+              "states": [
+                "2",
+                "4"
+              ]
+            }
+          ],
+          "probe_words": [
+            [],
+            [
+              "advance"
+            ],
+            [
+              "advance",
+              "advance"
+            ],
+            [
+              "advance",
+              "advance",
+              "advance"
+            ]
+          ],
+          "source_actions": [
+            "advance",
+            "twist"
+          ],
+          "source_id": "heldout-154-5",
+          "source_outputs": [
+            "0",
+            "1",
+            "1",
+            "0",
+            "1"
+          ],
+          "source_states": 5,
+          "source_transitions": [
+            [
+              "1",
+              "2",
+              "3",
+              "4",
+              "0"
+            ],
+            [
+              "4",
+              "0",
+              "3",
+              "2",
+              "3"
+            ]
+          ],
+          "supplemental_bits_given_current_report": 2
+        }
+      ],
+      "history_only_heldout_seeds": [
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294
+      ],
+      "history_only_learning": [
+        {
+          "heldout_word_checks": 367,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 6,
+          "learned_predictive_states": 6,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 4,
+            "counterexamples": [
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance",
+                "advance",
+                "twist"
+              ]
+            ],
+            "equivalence_queries": 4,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 59,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance",
+                "advance",
+                "twist"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1",
+            "0",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              5,
+              0,
+              4
+            ],
+            [
+              0,
+              0,
+              4,
+              3,
+              3,
+              0
+            ]
+          ],
+          "source_id": "heldout-271-6"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 3,
+          "learned_predictive_states": 3,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 1,
+            "counterexamples": [
+              [
+                "twist",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 2,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 14,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "source_id": "heldout-272-3"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 4,
+          "learned_predictive_states": 4,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 1,
+            "counterexamples": [
+              [
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 2,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 14,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ]
+          ],
+          "source_id": "heldout-273-4"
+        },
+        {
+          "heldout_word_checks": 377,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 5,
+          "learned_predictive_states": 5,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 3,
+            "counterexamples": [
+              [
+                "advance",
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 3,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 39,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "twist"
+              ],
+              [
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              4,
+              0
+            ],
+            [
+              1,
+              0,
+              2,
+              1,
+              4
+            ]
+          ],
+          "source_id": "heldout-274-5"
+        },
+        {
+          "heldout_word_checks": 377,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 6,
+          "learned_predictive_states": 6,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 3,
+            "counterexamples": [
+              [
+                "twist",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist"
+              ],
+              [
+                "twist",
+                "twist",
+                "twist",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 4,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 49,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist"
+              ],
+              [
+                "twist",
+                "twist"
+              ],
+              [
+                "twist",
+                "twist",
+                "twist"
+              ],
+              [
+                "twist",
+                "twist",
+                "twist",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1",
+            "1",
+            "0",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              3,
+              0,
+              5,
+              2,
+              4
+            ],
+            [
+              2,
+              1,
+              5,
+              4,
+              3,
+              3
+            ]
+          ],
+          "source_id": "heldout-275-6"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 3,
+          "learned_predictive_states": 3,
+          "learning": {
+            "closure_repairs": 0,
+            "consistency_repairs": 1,
+            "counterexamples": [
+              [
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 2,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 11,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "0",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "source_id": "heldout-276-3"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 4,
+          "learned_predictive_states": 4,
+          "learning": {
+            "closure_repairs": 0,
+            "consistency_repairs": 2,
+            "counterexamples": [
+              [
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 3,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 23,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "twist"
+              ],
+              [
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              3,
+              0,
+              2
+            ],
+            [
+              1,
+              2,
+              2,
+              1
+            ]
+          ],
+          "source_id": "heldout-277-4"
+        },
+        {
+          "heldout_word_checks": 377,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 5,
+          "learned_predictive_states": 5,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 3,
+            "counterexamples": [
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "twist",
+                "advance",
+                "twist",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 3,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 44,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "advance"
+              ],
+              [
+                "twist",
+                "advance",
+                "twist"
+              ],
+              [
+                "twist",
+                "advance",
+                "twist",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1",
+            "0",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              4,
+              0
+            ],
+            [
+              3,
+              2,
+              1,
+              3,
+              4
+            ]
+          ],
+          "source_id": "heldout-278-5"
+        },
+        {
+          "heldout_word_checks": 376,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 6,
+          "learned_predictive_states": 6,
+          "learning": {
+            "closure_repairs": 2,
+            "consistency_repairs": 3,
+            "counterexamples": [
+              [
+                "twist",
+                "advance",
+                "advance",
+                "twist"
+              ]
+            ],
+            "equivalence_queries": 2,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 39,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "advance"
+              ],
+              [
+                "twist",
+                "advance",
+                "advance"
+              ],
+              [
+                "twist",
+                "advance",
+                "advance",
+                "twist"
+              ],
+              [
+                "twist",
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "twist"
+              ],
+              [
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              0
+            ],
+            [
+              2,
+              0,
+              2,
+              4,
+              1,
+              1
+            ]
+          ],
+          "source_id": "heldout-279-6"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 3,
+          "learned_predictive_states": 3,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 1,
+            "counterexamples": [
+              [
+                "twist",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 2,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 14,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              1,
+              1
+            ]
+          ],
+          "source_id": "heldout-280-3"
+        },
+        {
+          "heldout_word_checks": 382,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 4,
+          "learned_predictive_states": 4,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 2,
+            "counterexamples": [
+              [
+                "twist",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 3,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 31,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              3,
+              0,
+              2
+            ],
+            [
+              2,
+              2,
+              0,
+              1
+            ]
+          ],
+          "source_id": "heldout-281-4"
+        },
+        {
+          "heldout_word_checks": 377,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 5,
+          "learned_predictive_states": 5,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 3,
+            "counterexamples": [
+              [
+                "advance",
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 3,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 39,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "twist"
+              ],
+              [
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              2,
+              4
+            ]
+          ],
+          "source_id": "heldout-282-5"
+        },
+        {
+          "heldout_word_checks": 375,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 6,
+          "learned_predictive_states": 6,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 3,
+            "counterexamples": [
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist",
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 4,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 49,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "twist",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "advance",
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              4,
+              0,
+              5,
+              3
+            ],
+            [
+              1,
+              3,
+              5,
+              1,
+              1,
+              5
+            ]
+          ],
+          "source_id": "heldout-283-6"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 3,
+          "learned_predictive_states": 3,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 1,
+            "counterexamples": [
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 2,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 14,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              1
+            ]
+          ],
+          "source_id": "heldout-284-3"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 4,
+          "learned_predictive_states": 4,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 2,
+            "counterexamples": [
+              [
+                "twist",
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 2,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 23,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "advance"
+              ],
+              [
+                "twist",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              0
+            ],
+            [
+              2,
+              2,
+              3,
+              3
+            ]
+          ],
+          "source_id": "heldout-285-4"
+        },
+        {
+          "heldout_word_checks": 382,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 5,
+          "learned_predictive_states": 5,
+          "learning": {
+            "closure_repairs": 0,
+            "consistency_repairs": 3,
+            "counterexamples": [
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "twist",
+                "advance",
+                "twist"
+              ]
+            ],
+            "equivalence_queries": 3,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 34,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "advance"
+              ],
+              [
+                "twist",
+                "advance",
+                "twist"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              4,
+              0
+            ],
+            [
+              3,
+              3,
+              3,
+              1,
+              4
+            ]
+          ],
+          "source_id": "heldout-286-5"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 6,
+          "learned_predictive_states": 6,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 2,
+            "counterexamples": [
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "twist",
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 3,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 31,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "advance"
+              ],
+              [
+                "twist",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1",
+            "0",
+            "0",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              0
+            ],
+            [
+              4,
+              4,
+              4,
+              1,
+              0,
+              1
+            ]
+          ],
+          "source_id": "heldout-287-6"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 3,
+          "learned_predictive_states": 3,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 1,
+            "counterexamples": [
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 2,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 14,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              1,
+              0,
+              2
+            ]
+          ],
+          "source_id": "heldout-288-3"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 4,
+          "learned_predictive_states": 4,
+          "learning": {
+            "closure_repairs": 0,
+            "consistency_repairs": 2,
+            "counterexamples": [
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 2,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 19,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              3,
+              3
+            ]
+          ],
+          "source_id": "heldout-289-4"
+        },
+        {
+          "heldout_word_checks": 380,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 5,
+          "learned_predictive_states": 5,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 3,
+            "counterexamples": [
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "twist",
+                "twist"
+              ]
+            ],
+            "equivalence_queries": 3,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 34,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "twist"
+              ],
+              [
+                "advance",
+                "twist",
+                "twist"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              4,
+              0
+            ],
+            [
+              0,
+              4,
+              3,
+              0,
+              0
+            ]
+          ],
+          "source_id": "heldout-290-5"
+        },
+        {
+          "heldout_word_checks": 382,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 6,
+          "learned_predictive_states": 6,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 2,
+            "counterexamples": [
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "twist"
+              ]
+            ],
+            "equivalence_queries": 3,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 27,
+            "prefixes": [
+              [],
+              [
+                "twist"
+              ],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance"
+              ],
+              [
+                "advance",
+                "advance",
+                "advance",
+                "twist"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "1",
+            "0"
+          ],
+          "predicted_transitions": [
+            [
+              2,
+              0,
+              3,
+              4,
+              5,
+              1
+            ],
+            [
+              1,
+              1,
+              2,
+              3,
+              5,
+              1
+            ]
+          ],
+          "source_id": "heldout-291-6"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 3,
+          "learned_predictive_states": 3,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 1,
+            "counterexamples": [
+              [
+                "twist",
+                "advance"
+              ]
+            ],
+            "equivalence_queries": 2,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 14,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              0
+            ],
+            [
+              2,
+              1,
+              0
+            ]
+          ],
+          "source_id": "heldout-292-3"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 2,
+          "learned_predictive_states": 2,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 0,
+            "counterexamples": [],
+            "equivalence_queries": 1,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 5,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              []
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "source_id": "heldout-293-4"
+        },
+        {
+          "heldout_word_checks": 384,
+          "heldout_words_exclude_membership_training_queries": true,
+          "independent_minimum_state_oracle": 5,
+          "learned_predictive_states": 5,
+          "learning": {
+            "closure_repairs": 1,
+            "consistency_repairs": 2,
+            "counterexamples": [
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "twist",
+                "twist"
+              ]
+            ],
+            "equivalence_queries": 3,
+            "exact_counterexample_teacher_assumed": true,
+            "hidden_state_table_given_to_learner": false,
+            "membership_queries": 27,
+            "prefixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "advance",
+                "advance"
+              ],
+              [
+                "twist"
+              ],
+              [
+                "twist",
+                "twist"
+              ],
+              [
+                "advance",
+                "twist"
+              ]
+            ],
+            "reset_access_assumed": true,
+            "status": "EXACT_TEACHER_CERTIFIED",
+            "suffixes": [
+              [],
+              [
+                "advance"
+              ],
+              [
+                "twist"
+              ]
+            ]
+          },
+          "predicted_outputs": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "1"
+          ],
+          "predicted_transitions": [
+            [
+              1,
+              2,
+              3,
+              4,
+              0
+            ],
+            [
+              3,
+              4,
+              4,
+              3,
+              3
+            ]
+          ],
+          "source_id": "heldout-294-5"
+        }
+      ],
+      "novel_representation_type_supplied_by": "residual-signature/table metaconstructor",
+      "status": "PROVED CONDITIONAL / TESTED MODEL / CLASSICAL MECHANISM"
+    },
+    "21": {
+      "calibration": {
+        "adaptive_stopping": [
+          {
+            "mixture_probability": "1/2",
+            "posterior_H": "3/4",
+            "stopped_trace": [
+              1
+            ]
+          },
+          {
+            "mixture_probability": "3/16",
+            "posterior_H": "1/2",
+            "stopped_trace": [
+              0,
+              1
+            ]
+          },
+          {
+            "mixture_probability": "3/32",
+            "posterior_H": "1/4",
+            "stopped_trace": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "mixture_probability": "7/32",
+            "posterior_H": "1/28",
+            "stopped_trace": [
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "brier_regret": "10751841/172239376",
+        "correct_conditional_brier": "3/16",
+        "correct_heldout_brier": "1/4",
+        "correct_posterior_H": "3/4",
+        "likelihood_interval_posterior": [
+          "2/3",
+          "5/6"
+        ],
+        "misspecified_balanced_pairs": 8,
+        "misspecified_heldout_brier": "640946707492100375209/1881836561168847628900",
+        "misspecified_model_02_posterior": "4294967296/4338014017",
+        "misspecified_predictive_probability": "8632981313/43380140170",
+        "naive_conditional_brier": "10761681/43059844",
+        "naive_iid_posterior_H": "6561/6562",
+        "shared_latent_copies": 8,
+        "stopping_calibrated_brier": "297/1792",
+        "true_heldout_probability": "1/2"
+      },
+      "cloning": {
+        "behavioral_menu_is_exhaustive": false,
+        "naive_A_after_syntax_clone": "2/3",
+        "naive_A_before": "1/2",
+        "quotient_A_after": "1/2",
+        "quotient_A_before": "1/2"
+      },
+      "status": "PROVED FINITE MODEL / EXACT CALIBRATION / MISSPECIFICATION COUNTERMODEL"
+    },
+    "22": {
+      "all_two_state_one_action_cases": 64,
+      "bellman": {
+        "cached_belief_horizon_pairs": 6,
+        "first_action": "full",
+        "worst_case_cost": "5"
+      },
+      "cegis_bounded_policy": {
+        "best_verified_cost": "5",
+        "candidate_evaluations": 162,
+        "counterexamples": [
+          1,
+          2
+        ],
+        "genome": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "global_cost_optimality_without_oracle_claimed": false,
+        "grammar_size": 54
+      },
+      "cheap_first_irreversibly_loses_original_claim": true,
+      "complete_strategy_tree_oracle": {
+        "trees_enumerated": 37,
+        "valid_trees": 27,
+        "worst_case_cost": "5"
+      },
+      "genetic_depth_two_policy_runs": [
+        {
+          "best_genome": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "best_verified_cost": "5",
+          "evaluated_genomes": 4,
+          "exhaustive_rescue_used": false,
+          "seed": 0
+        },
+        {
+          "best_genome": null,
+          "best_verified_cost": null,
+          "evaluated_genomes": 2,
+          "exhaustive_rescue_used": false,
+          "seed": 1
+        },
+        {
+          "best_genome": null,
+          "best_verified_cost": null,
+          "evaluated_genomes": 1,
+          "exhaustive_rescue_used": false,
+          "seed": 2
+        },
+        {
+          "best_genome": null,
+          "best_verified_cost": null,
+          "evaluated_genomes": 2,
+          "exhaustive_rescue_used": false,
+          "seed": 3
+        },
+        {
+          "best_genome": null,
+          "best_verified_cost": null,
+          "evaluated_genomes": 1,
+          "exhaustive_rescue_used": false,
+          "seed": 4
+        },
+        {
+          "best_genome": null,
+          "best_verified_cost": null,
+          "evaluated_genomes": 3,
+          "exhaustive_rescue_used": false,
+          "seed": 5
+        },
+        {
+          "best_genome": null,
+          "best_verified_cost": null,
+          "evaluated_genomes": 2,
+          "exhaustive_rescue_used": false,
+          "seed": 6
+        },
+        {
+          "best_genome": null,
+          "best_verified_cost": null,
+          "evaluated_genomes": 3,
+          "exhaustive_rescue_used": false,
+          "seed": 7
+        },
+        {
+          "best_genome": null,
+          "best_verified_cost": null,
+          "evaluated_genomes": 2,
+          "exhaustive_rescue_used": false,
+          "seed": 8
+        },
+        {
+          "best_genome": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "best_verified_cost": "5",
+          "evaluated_genomes": 2,
+          "exhaustive_rescue_used": false,
+          "seed": 9
+        }
+      ],
+      "greedy_cost_normalized_gini_cheap": "1/3",
+      "greedy_cost_normalized_gini_full": "2/15",
+      "oracle_trees_checked": 256,
+      "status": "CLASSICAL / PROVED FINITE HORIZON / INDEPENDENT EXHAUSTIVE TESTED"
+    },
+    "23": {
+      "hidden_mode": {
+        "all_time_old_input_equality": true,
+        "augmented_input_block_rank": 3,
+        "minimal_two_state_moments": [
+          "2",
+          "5/6",
+          "13/36",
+          "35/216",
+          "97/1296",
+          "275/7776",
+          "793/46656",
+          "2315/279936",
+          "6817/1679616"
+        ],
+        "new_input_exposes_hidden_mode": true,
+        "new_input_moments": [
+          "1",
+          "3/4",
+          "9/16",
+          "27/64",
+          "81/256",
+          "243/1024",
+          "729/4096",
+          "2187/16384",
+          "6561/65536"
+        ],
+        "old_input_moments": [
+          "2",
+          "5/6",
+          "13/36",
+          "35/216",
+          "97/1296",
+          "275/7776",
+          "793/46656",
+          "2315/279936",
+          "6817/1679616"
+        ],
+        "old_input_rank": 2
+      },
+      "internal_physical_topology_identified": false,
+      "similarity_twin_moments": [
+        "2",
+        "5/6",
+        "13/36",
+        "35/216",
+        "97/1296",
+        "275/7776",
+        "793/46656",
+        "2315/279936",
+        "6817/1679616"
+      ],
+      "status": "CLASSICAL / PROVED CONDITIONAL / EXACT RATIONAL TESTED"
+    },
+    "24": {
+      "generic_effective_witness_search_claimed": false,
+      "resources": {
+        "all_zero_target_refutation_probes": 1,
+        "computability_from_supplied_delay": true,
+        "delayed_source": {
+          "observed_prefix": [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_at_time": 19,
+          "source_state_count": 21,
+          "zero_elsewhere": true
+        },
+        "individual_answer_bits": 1,
+        "minimum_messages": 16,
+        "one_way_zero_error_fixed_bits_lower_bound": 4,
+        "pair_collision_witnesses": [
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            3
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            3
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            3
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            3
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            0
+          ],
+          [
+            [
+              0,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            0
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            3
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            3
+          ],
+          [
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              0,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            3
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              1,
+              1
+            ],
+            3
+          ]
+        ],
+        "random_access_cost_if_licensed": 1,
+        "sequential_action_cost": 19,
+        "shortest_refuting_unary_word_length": 19,
+        "source_strings": 16,
+        "uniform_bound_from_certificate_cardinality": false
+      },
+      "status": "CLASSICAL / PROVED LOWER BOUND / EXACT FINITE COLLISION WITNESSES"
+    }
+  },
+  "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "campaign": "CAMBRIAN_D_COMPUTATION",
+  "formal_lean_verified": false,
+  "implementation_sha256": "eb303fd34eadcc041af54aa9c330aa960e648acf4429357f8d3d8c177faa4a74",
+  "physical_source_authenticated": false,
+  "python": "3.12.14"
+}

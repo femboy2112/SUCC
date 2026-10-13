@@ -1,0 +1,15 @@
+{
+  "schema": "succ-cambrian-reviewed-corrections-v1",
+  "corrections": [
+    {
+      "path": "research/2026-10-13/CAMBRIAN_E_ARITHMETIC.md",
+      "original_worker_commit": "c2c18c3ed638478448497fb6892a747f67ee6f9b",
+      "original_sha256": "80950733892fa713cecf2fc46c3bc86a47dc15ad55026ca95751a8c8df5c1469",
+      "corrected_sha256": "4590443e355344a72cc69251baa6f74e558802f1f5ce39c5e62106d9467212b9",
+      "auditor": "F",
+      "scope": "Paper support-window hypothesis only; executable arithmetic source, tests and raw numerical receipts unchanged.",
+      "reason": "Two-bump indefinite prime-only form requires a>log(2)/2; operator zero for 0<a<=log(2)/2.",
+      "countermodel": "a=1/4; 2a<log2; no nonzero compressed prime shift"
+    }
+  ]
+}

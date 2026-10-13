@@ -1,0 +1,127 @@
+{
+  "actual_sampled_source_matches_prefix": true,
+  "all_eventually_zero_prefix_stage_counts": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64,
+    128,
+    256,
+    512,
+    1024
+  ],
+  "all_finite_stage_restrictions_surjective": true,
+  "eventual_zero_family": {
+    "all_one_global_profile_realized_by_eventually_zero_source": false,
+    "all_one_prefix_12_has_original_witness": true,
+    "every_finite_binary_prefix_has_a_constructed_source": true,
+    "infinite_projective_source_realization_claimed": false
+  },
+  "exact_original_finite_machine_witness_states": 13,
+  "finite_original_source_tower": {
+    "stage_sizes": [
+      1,
+      2,
+      4,
+      7,
+      8,
+      9,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ],
+    "surjective_stage_restrictions": true
+  },
+  "finite_prefix_power_two": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "finite_state_nonperiodic_gap": {
+    "arbitrary_fixed_machine_finite_refutation": true,
+    "bounded_enumeration_of_every_possible_machine_claimed": false,
+    "pulse_q": 16,
+    "pulse_q_plus_p": 19,
+    "pulse_values": [
+      1,
+      0
+    ]
+  },
+  "independent_original_source_ontology_attested": false,
+  "observational_memory_debt_by_horizon": [
+    {
+      "constructed_witness_machine_states": 6,
+      "k": 1,
+      "required_prefix": 5,
+      "source_memory_lower_bound": 2
+    },
+    {
+      "constructed_witness_machine_states": 10,
+      "k": 2,
+      "required_prefix": 9,
+      "source_memory_lower_bound": 4
+    },
+    {
+      "constructed_witness_machine_states": 18,
+      "k": 3,
+      "required_prefix": 17,
+      "source_memory_lower_bound": 8
+    },
+    {
+      "constructed_witness_machine_states": 34,
+      "k": 4,
+      "required_prefix": 33,
+      "source_memory_lower_bound": 16
+    },
+    {
+      "constructed_witness_machine_states": 66,
+      "k": 5,
+      "required_prefix": 65,
+      "source_memory_lower_bound": 32
+    },
+    {
+      "constructed_witness_machine_states": 130,
+      "k": 6,
+      "required_prefix": 129,
+      "source_memory_lower_bound": 64
+    },
+    {
+      "constructed_witness_machine_states": 258,
+      "k": 7,
+      "required_prefix": 257,
+      "source_memory_lower_bound": 128
+    }
+  ],
+  "power_two_finite_horizon_debt": {
+    "gap_states_distinct": true,
+    "pulse_gap": 8,
+    "source_horizon": 17,
+    "state_lower_bound": 8
+  },
+  "scope": {
+    "arithmetic_RH_or_Weil_positivity_proved": false,
+    "every_profinite_thread_is_original_state": false,
+    "exact_source_relative_mathematics": true,
+    "new_scholarly_priority_claimed": false,
+    "physical_all_future_executed": false,
+    "unbounded_unknown_source_empirically_authenticated": false
+  },
+  "source_specific_finite_refutation_is_not_infinite_execution": true,
+  "status": "EXACT_VOYAGER_OBSERVATIONAL_COMPLETION_BOUNDARY"
+}

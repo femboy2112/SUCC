@@ -1,0 +1,117 @@
+{
+  "status": "scoped_pass_with_low_api_finding",
+  "audited_commit": "34904661c721ea9140c5994be5ca964f4a806268",
+  "counts": {
+    "n1": {
+      "action_pairs": 1,
+      "initial_equivalences": 1,
+      "pair_relation_cells": 1,
+      "failed_relation_cells": 0,
+      "exact_action_pairs": 1,
+      "commuting_action_pairs": 1
+    },
+    "n2": {
+      "action_pairs": 16,
+      "initial_equivalences": 2,
+      "pair_relation_cells": 32,
+      "failed_relation_cells": 0,
+      "exact_action_pairs": 16,
+      "commuting_action_pairs": 16
+    },
+    "n3": {
+      "action_pairs": 729,
+      "initial_equivalences": 5,
+      "pair_relation_cells": 3645,
+      "failed_relation_cells": 0,
+      "exact_action_pairs": 729,
+      "commuting_action_pairs": 729
+    },
+    "n4": {
+      "action_pairs": 65536,
+      "initial_equivalences": 15,
+      "pair_relation_cells": 983040,
+      "failed_relation_cells": 23040,
+      "exact_action_pairs": 44584,
+      "commuting_action_pairs": 33784
+    },
+    "base_change": {
+      "candidate_maps": 972,
+      "strict_maps": 180,
+      "equivalence_cells": 900,
+      "nonsurjective_cells": 900,
+      "noninjective_cells": 540
+    },
+    "belief_cells": 2048,
+    "random_2category_cases": 500
+  },
+  "minimal_mixed_failure": {
+    "n": 4,
+    "initial": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "a": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "b": [
+      0,
+      0,
+      3,
+      0
+    ],
+    "sequential": [
+      0,
+      1,
+      0,
+      2
+    ],
+    "joint": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "target_gate": {
+    "source_reports": [
+      0,
+      0
+    ],
+    "transition": [
+      0,
+      0
+    ],
+    "quotient": [
+      0,
+      0
+    ],
+    "original_target": [
+      0,
+      1
+    ],
+    "concrete_target_values": [
+      0,
+      1
+    ],
+    "no_quotient_decoder": true
+  },
+  "availability_gate": {
+    "state_dependent_costs": [
+      0,
+      1
+    ],
+    "behavioral_quotient": [
+      0,
+      0
+    ],
+    "cost_does_not_factor": true
+  },
+  "mutation_rejected": true,
+  "invalid_action_returns_empty": true,
+  "probe_sha256": "e9038ea1a0ff4b34c63e2ef7a67b3832557dc3cb41bbe8698637c596faa0f5e6"
+}

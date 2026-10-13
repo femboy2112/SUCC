@@ -1,0 +1,148 @@
+{
+  "assignment": "SWM-B09",
+  "attempts": [
+    {
+      "compiler": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+      "mathlib_commit": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+      "dependency_commits": {
+        "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+        "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+        "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+        "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d",
+        "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+        "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+        "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+        "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d"
+      },
+      "mathlib_manifest_sha256": "2acdec67f5f150c830143f6835b0e3af18f382869af79163f284a397c78c9726",
+      "direct_topology_import_sha256": {
+        "Mathlib.Topology.Constructions": {
+          "source": "8e9697a5f5917d52eca11f8cc4f178e169fa713378b4d8708f4ca1cd1ab99b39",
+          "compiled_olean": "c1a02ca9adecdd22f0781d5d2bdfd673c17d99d9980fc9d34bca492b91c6ebfd"
+        },
+        "Mathlib.Topology.Separation.Basic": {
+          "source": "c8a77b6a2545e240ea3dedad39c7eab9afa4695a79e52fb59c895a90331042eb",
+          "compiled_olean": "4045b393df9b8d6daef53e2e79452ef8e3eef97b77993019ac37c098fe700ca3"
+        },
+        "Mathlib.Topology.Homeomorph": {
+          "source": "f584cd14013dc5f134ded399bbf411b4f5035c52ff2bb786c1e0d95e3f02f66e",
+          "compiled_olean": "d281183412d6e6db62fb5dedec718dcbff26d572a1a1e92b64af3e5ecbd5fa69"
+        }
+      },
+      "source_sha256": {
+        "formal/SWM_A01_BaseChange.lean": "64284ec25dcd5c53a143ff69bc5669897625487b00e27e93cc103d6857707eda",
+        "formal/SWM_C19_FiniteHeight.lean": "c6032dbfba449009ca26820663a5a15269492fe5a8f13de59968ca8aa53e4b1a",
+        "formal/SWM_X07_DirectedHeight.lean": "b0814180ba2ba153752ce83cc97e43eb2cdce7ddad104b88298a064e937f8eb8",
+        "formal/SWM_F48_InterfaceJoin.lean": "1566f74ccb9766c09feb303da03adfd5e7860688eb6801edd96e70902bf23daf",
+        "formal/SWM_B09_InverseFamilies.lean": "a01ec81397ebc3f900d3eefee144bad6704cfcc40a5b752981df8526ae706c55",
+        "formal/SWM_B09_TopologicalCompletion.lean": "4c6b6d72f9cb3c57f1854ed8e05c0f2ea8226c80f47a4b2d6d0e5d799b8807e3"
+      },
+      "lean_path": "/home/leah/succ_lab/many-worlds-atlas/.swm-tools/proofs:/home/leah/succ_lab/mathlib-4.14/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/plausible/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/LeanSearchClient/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/importGraph/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/proofwidgets/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/aesop/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/Qq/.lake/build/lib:/home/leah/succ_lab/mathlib-4.14/.lake/packages/batteries/.lake/build/lib",
+      "compiler_virtual_limit_bytes": 4294967296,
+      "compiler_resident_limit_bytes": 1342177280,
+      "minimum_system_available_bytes": 805306368,
+      "lean_allocation_limit_mib": 2048,
+      "watchdog_poll_seconds": 0.1,
+      "compiler_timeout_seconds": 120,
+      "checks": [
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M2048",
+            "-o",
+            "/home/leah/succ_lab/many-worlds-atlas/.swm-tools/proofs/B09_ImportCalibration.olean",
+            "/home/leah/succ_lab/many-worlds-atlas/.swm-tools/proofs/B09_ImportCalibration.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "closure.{u} {X : Type u} [TopologicalSpace X] (s : Set X) : Set X\nHomeomorph.{u_5, u_6} (X : Type u_5) (Y : Type u_6) [TopologicalSpace X] [TopologicalSpace Y] : Type (max u_5 u_6)\nIsCompact.isClosed.{u_1} {X : Type u_1} [TopologicalSpace X] [T2Space X] {s : Set X} (hs : IsCompact s) : IsClosed s\n",
+          "stderr": "",
+          "elapsed_seconds": 5.2317,
+          "observed_process_tree_peak_rss_kib": 1030076,
+          "minimum_system_available_memory_kib": 4667644,
+          "printed_axiom_dependencies": []
+        },
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M2048",
+            "-o",
+            "/home/leah/succ_lab/many-worlds-atlas/.swm-tools/proofs/SWM_A01_BaseChange.olean",
+            "formal/SWM_A01_BaseChange.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'ObservationalSUCC.SWM_A01.existential_base_change_iff_covered' does not depend on any axioms\n'ObservationalSUCC.SWM_A01.universal_base_change_iff_covered' does not depend on any axioms\n'ObservationalSUCC.SWM_A01.comparison_surjective_iff_covered' does not depend on any axioms\n'ObservationalSUCC.SWM_A01.original_target_descends_iff_fiber_constant' depends on axioms: [Classical.choice]\n",
+          "stderr": "",
+          "elapsed_seconds": 0.4059,
+          "observed_process_tree_peak_rss_kib": 218840,
+          "minimum_system_available_memory_kib": 4697132,
+          "printed_axiom_dependencies": [
+            "Classical.choice"
+          ]
+        },
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M2048",
+            "-o",
+            "/home/leah/succ_lab/many-worlds-atlas/.swm-tools/proofs/SWM_C19_FiniteHeight.olean",
+            "formal/SWM_C19_FiniteHeight.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'ObservationalSUCC.SWM_C19.bounded_mono_eventually_constant' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.SWM_C19.finite_height_prefix_realization' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+          "stderr": "",
+          "elapsed_seconds": 0.4047,
+          "observed_process_tree_peak_rss_kib": 229484,
+          "minimum_system_available_memory_kib": 4637820,
+          "printed_axiom_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M2048",
+            "-o",
+            "/home/leah/succ_lab/many-worlds-atlas/.swm-tools/proofs/SWM_X07_DirectedHeight.olean",
+            "formal/SWM_X07_DirectedHeight.lean"
+          ],
+          "exit_code": 0,
+          "stdout": "'ObservationalSUCC.SWM_X07.bounded_rank_max' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.SWM_X07.greatest_dead_support' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.SWM_X07.directed_rank_support_realization' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+          "stderr": "",
+          "elapsed_seconds": 0.3056,
+          "observed_process_tree_peak_rss_kib": 218788,
+          "minimum_system_available_memory_kib": 4651384,
+          "printed_axiom_dependencies": [
+            "Classical.choice",
+            "Quot.sound",
+            "propext"
+          ]
+        },
+        {
+          "command": [
+            "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+            "-j1",
+            "-M2048",
+            "-o",
+            "/home/leah/succ_lab/many-worlds-atlas/.swm-tools/proofs/SWM_F48_InterfaceJoin.olean",
+            "formal/SWM_F48_InterfaceJoin.lean"
+          ],
+          "exit_code": 1,
+          "stdout": "formal/SWM_F48_InterfaceJoin.lean:13:42: error: unknown identifier 'Function.Injective'\nformal/SWM_F48_InterfaceJoin.lean:15:4: error: tactic 'introN' failed, insufficient number of binders\ncase mp\nI : Type u\nO : Type v\nq : I \u2192 O\nh : ExactCompressedJoin q\n\u22a2 sorry\nformal/SWM_F48_InterfaceJoin.lean:28:8: warning: declaration uses 'sorry'\n'SWM.F48.exact_compressed_join_iff_injective' depends on axioms: [sorryAx]\n'SWM.F48.constant_bool_join_fails' depends on axioms: [sorryAx]\n",
+          "stderr": "",
+          "elapsed_seconds": 0.2041,
+          "observed_process_tree_peak_rss_kib": 196352,
+          "minimum_system_available_memory_kib": 4652592
+        }
+      ],
+      "status": "COMPILE FAILED",
+      "maximum_child_rss_kib": 1042556
+    }
+  ],
+  "latest_status": "COMPILE FAILED"
+}

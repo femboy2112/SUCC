@@ -1,0 +1,56 @@
+{
+  "actual_history": [
+    [
+      "swap",
+      "ok"
+    ],
+    [
+      "read/erase",
+      "right"
+    ]
+  ],
+  "actual_original_source_support": [
+    "s2",
+    "s3"
+  ],
+  "all_prefix_joint_laws_transport": true,
+  "evidence": "1/2",
+  "exact_deterministic_embedding": true,
+  "failed_law_witness_reason": "JOINT_RECEIPT_AND_NEXT",
+  "final_original_posterior": [
+    "0",
+    "0",
+    "1/2",
+    "1/2"
+  ],
+  "fine_coarse_evidence_equal": true,
+  "initial_current_states": 4,
+  "one_step_minimal_refined_labels": [
+    0,
+    1,
+    2,
+    2
+  ],
+  "one_step_new_classes": 1,
+  "original_states": 4,
+  "original_target_certified_relative_to_declared_source": true,
+  "scope": {
+    "completed_Weil_positivity_or_RH_proved": false,
+    "declared_finite_original_and_current_carriers": true,
+    "empirically_authenticated_source": false,
+    "main_merge_executed": false,
+    "physically_executed_counterfactual_branches": false,
+    "unrestricted_causal_history_sheaf_proved": false,
+    "whole_program_Lean_refinement_proved": false
+  },
+  "source_id": "carrier-source",
+  "stationary_refinement_count": 1,
+  "stationary_refinement_labels": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "status": "EXACT_SOURCE_INDEXED_CARRIER_HISTORY_AND_REPAIR",
+  "support_only_lumps_but_law_does_not": true
+}

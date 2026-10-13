@@ -1,0 +1,146 @@
+{
+  "at": "2026-10-13T09:38:10.141660+00:00",
+  "reason": "Redundant baseline-only child CI; integrated proof and full validation remain running; cancellations are not passes",
+  "runs": [
+    {
+      "conclusion": "",
+      "databaseId": 38377632474,
+      "headBranch": "research/swm-b15-2026-10-13",
+      "headSha": "531c29e1fec53f9016e93740627452763985364c",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377632474 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377632454,
+      "headBranch": "research/swm-rx-c19-2026-10-13",
+      "headSha": "49445ea3437fb450a85dbcef9f5cc613104142d7",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377632454 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377631926,
+      "headBranch": "research/swm-c22-2026-10-13",
+      "headSha": "5f4341eb3c25c552beeec42f85c8095411c2d3e1",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377631926 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377631892,
+      "headBranch": "research/swm-e34-2026-10-13",
+      "headSha": "6d6960b431c20c91ff24ddb9cb37423a0789be3d",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377631892 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377631723,
+      "headBranch": "research/swm-c21-2026-10-13",
+      "headSha": "553b3a60b965b3b1453c02feacf406a900a56641",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377631723 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377631426,
+      "headBranch": "research/swm-x04-2026-10-13",
+      "headSha": "c60f8cb8e611255b1f46b0d0f70f5f4052cde648",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377631426 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377631257,
+      "headBranch": "research/swm-d28-2026-10-13",
+      "headSha": "6074afd28f60a1f27ffa26e396f892226d23c46a",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377631257 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377630382,
+      "headBranch": "research/swm-x05-2026-10-13",
+      "headSha": "71fda26bd4c39feed2156ab3338a1c767ced5d65",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377630382 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377629828,
+      "headBranch": "research/swm-parallel-audit-2026-10-13",
+      "headSha": "e0ae020047b9555cf9075e01463a56ccc3e2890e",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377629828 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377629664,
+      "headBranch": "research/swm-c19-2026-10-13",
+      "headSha": "e6c792b26f2497ba8cb7a266cc518ec79d59fd56",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377629664 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377629330,
+      "headBranch": "research/swm-e35-2026-10-13",
+      "headSha": "ec56f3e395d3d4281dae93e58a7041312b1e19ca",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377629330 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377629296,
+      "headBranch": "research/swm-b14-2026-10-13",
+      "headSha": "f22efcf2aa86f0ae2b8484a7e9f50e40f54efc2a",
+      "status": "queued",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377629296 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377628806,
+      "headBranch": "research/swm-c24-2026-10-13",
+      "headSha": "f51ecf200d8a61a96e75bd7b25a2d640752aac66",
+      "status": "in_progress",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377628806 submitted.\n"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 38377628731,
+      "headBranch": "research/swm-c23-2026-10-13",
+      "headSha": "f8bd942af0f618268a511106e738c75776670f4b",
+      "status": "in_progress",
+      "workflowName": "Observational SUCC validation",
+      "cancel_exit": 0,
+      "cancel_output": "\u2713 Request to cancel workflow 38377628731 submitted.\n"
+    }
+  ]
+}

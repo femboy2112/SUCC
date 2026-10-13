@@ -1,0 +1,68 @@
+name: EODCS isolated Lean4 proof-kernel gate
+
+on:
+  push:
+    branches:
+      - 'research/eodcs-*'
+      - 'research/voyager-*'
+      - 'research/carrier-indexed-*'
+      - 'research/positive-carrier-*'
+      - 'research/cambrian-*'
+  pull_request:
+    paths:
+      - 'formal/EODCS_*.lean'
+      - 'scripts/cambrian_formal_ci.py'
+      - 'scripts/cambrian_audit_c_lean.py'
+      - 'research/2026-10-13/CAMBRIAN_AUDIT_C*'
+      - '.github/workflows/eodcs-lean.yml'
+      - 'lean-toolchain'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  eodcs_lean:
+    name: Lean4 EODCS and Voyager exact source/limit proofs (pinned)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      # This repository is a standalone Lean file, not a Lake package:
+      # lean-action requires lake-manifest.json and is inappropriate here.
+      # Bootstrap Lean with the official elan installer, then pin the actual
+      # Lean compiler through the checked-in lean-toolchain file.
+      - name: Install pinned Lean 4 for standalone file
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --location \
+            https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh \
+            -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Compile and kernel-check the EODCS lemmas
+        shell: bash
+        run: |
+          "$HOME/.elan/bin/lean" --version
+          for src in formal/EODCS_*.lean; do
+            "$HOME/.elan/bin/lean" "$src"
+          done
+      - name: Replay Cambrian axiom audit and rejected false-theorem controls
+        run: python scripts/cambrian_formal_ci.py --lean "$HOME/.elan/bin/lean"
+      - name: Fail closed on placeholders and imported axioms
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import sys
+          sys.path.insert(0, "scripts")
+          from cambrian_audit_c_lean import uncomment
+          forbidden = re.compile(r'\b(sorry|admit|axiom|unsafe|native_decide)\b')
+          # Comments and identifier substrings are not proof declarations.
+          assert forbidden.search(uncomment("/- countdown admits every finite depth -/ theorem admissible : True := by trivial")) is None
+          assert forbidden.search(uncomment("/- outer /- nested admit -/ comment -/\nexample : False := by sorry"))
+          assert forbidden.search(uncomment("-- harmless\naxiom broken : False"))
+          for path in sorted(Path("formal").glob("EODCS_*.lean")):
+              code=uncomment(path.read_text())
+              assert forbidden.search(code) is None, str(path)
+          PY

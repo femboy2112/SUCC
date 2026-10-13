@@ -1,0 +1,116 @@
+{
+  "all_assertions_passed": true,
+  "bin_reports": [
+    0,
+    1
+  ],
+  "checks": [
+    "six exact sharp linear horizons",
+    "step-defect product-sum bound attained by affine errors",
+    "doubling pair coalesces while constant reports never disagree",
+    "folded states alias terminal; source-side receipt resolves them",
+    "bin-boundary instability and loose-upper-bound necessary-horizon controls"
+  ],
+  "claims_physical_precision_or_information_creation": false,
+  "command": "PYTHONDONTWRITEBYTECODE=1 python research/2026-10-13/SWARM_ATLAS/D28_probe.py",
+  "constant_report_pair_count": 9,
+  "defect_errors": [
+    "1/256",
+    "3/128",
+    "11/256",
+    "33/256"
+  ],
+  "doubling_distances": [
+    "1/32",
+    "1/16",
+    "1/8",
+    "1/4",
+    "1/2",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "expected_exit": 0,
+  "full_repository_suite_run": false,
+  "input_sha256": {
+    "observational_succ/chaos_source_quotient.py": "8ce2c3bf9f7d1407f6b05f011b72e687163b9d13f6b2af18fd79efac0708f0c6",
+    "observational_succ/entropy_transport.py": "81d2e8c9de8d1e8aa00d1c5bfc581968b9be1ea1ff11f7608336d0ba26b25276",
+    "observational_succ/logistic_observer_tree.py": "fdde6dc2f02c75e90e50ae52b13699b40fb7b3f29d2fbfebd21d8481a4007a09",
+    "observational_succ/precision_transport.py": "e4a7d31d1debb3d3ad44831f1412f04a95df9cf3c1601184e02f093e133a7c57"
+  },
+  "linear": [
+    {
+      "a": "3/2",
+      "boundary_error": "243/2048",
+      "delta": "1/64",
+      "epsilon": "1/8",
+      "last_acceptable_step": 5,
+      "next_error": "729/4096"
+    },
+    {
+      "a": "3/2",
+      "boundary_error": "6561/65536",
+      "delta": "1/256",
+      "epsilon": "1/8",
+      "last_acceptable_step": 8,
+      "next_error": "19683/131072"
+    },
+    {
+      "a": "2",
+      "boundary_error": "1/8",
+      "delta": "1/64",
+      "epsilon": "1/8",
+      "last_acceptable_step": 3,
+      "next_error": "1/4"
+    },
+    {
+      "a": "2",
+      "boundary_error": "1/8",
+      "delta": "1/256",
+      "epsilon": "1/8",
+      "last_acceptable_step": 5,
+      "next_error": "1/4"
+    },
+    {
+      "a": "3",
+      "boundary_error": "3/64",
+      "delta": "1/64",
+      "epsilon": "1/8",
+      "last_acceptable_step": 1,
+      "next_error": "9/64"
+    },
+    {
+      "a": "3",
+      "boundary_error": "27/256",
+      "delta": "1/256",
+      "epsilon": "1/8",
+      "last_acceptable_step": 3,
+      "next_error": "81/256"
+    }
+  ],
+  "logistic_derivatives": [
+    "3",
+    "-3"
+  ],
+  "logistic_image": [
+    "7/16",
+    "7/16"
+  ],
+  "native_paths_absent_from_import_manifest": [
+    "observational_succ/chaos_source_quotient.py",
+    "observational_succ/logistic_observer_tree.py",
+    "observational_succ/precision_transport.py",
+    "observational_succ/entropy_transport.py"
+  ],
+  "physical_source_authenticated": false,
+  "probe_sha256": "0aa89325a9ef06d253632c6a0d390e24ccb5779d395c1becdd2afd1d0e9f8ded",
+  "python": "3.12.3",
+  "schema": "D28-exact-v1",
+  "source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "status": "TESTED MODEL; analytic proofs in D28.md",
+  "tent_image": [
+    "1/4",
+    "1/4"
+  ]
+}

@@ -1,0 +1,316 @@
+{
+  "RH_PROVED": false,
+  "artifact_sha256": {
+    "DOSSIER.md": "1bb30fcb10a696304a8dd19689c2c12e79f39d8bd0391bce87b65647defbb8c9",
+    "exact_probe.py": "f1c6016820ce91ba126054161cd670b045819874a3e74017e5af55b59af125ef"
+  },
+  "branch": "research/swm-e38-2026-10-13",
+  "claim_statuses": {
+    "E38.1": "PROVED LOCAL: source-injective pairing and restricted sign-blind no-go; independent review pending",
+    "E38.2": "CLASSICAL: signed smooth-core differentiation bridge; no positivity supplied",
+    "E38.3": "PROVED LOCAL: conditional transfer only; hypotheses not constructed",
+    "authentic_positive_arithmetic_polarization": "BLOCKED: missing source construction and form-convergence certificate",
+    "bounded_controls": "TESTED MODEL with exact arithmetic",
+    "unitary_FUCC_to_real_translation": "REFUTED in two precisely stated representation classes"
+  },
+  "commands": [
+    {
+      "argv": [
+        "python",
+        "research/2026-10-13/SWM_E38_ARITHMETIC_POLARIZATION/exact_probe.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "Structured exact controls in probe_result below"
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "frozen_manifest_sources": [
+    {
+      "destination_git_blob_sha": "c4b08cf070959d334b0607e4d371d57afdcccfe1",
+      "destination_path": "observational_succ/source_prime_certificates.py",
+      "original_git_blob_sha": "c4b08cf070959d334b0607e4d371d57afdcccfe1",
+      "original_path": "actualization/source_prime_certificates.py",
+      "sha256": "827b157f217d4cf10fa6b6d18c066864c856b9cfcb31a766020d8fb5b5c2e6fa",
+      "size_bytes_original": 9001,
+      "transformation": "literal textual namespace translation: actualization -> observational_succ"
+    },
+    {
+      "destination_git_blob_sha": "65f24f44369375b3cd88fc0743f60c1d5fb2a0d5",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md",
+      "original_git_blob_sha": "65f24f44369375b3cd88fc0743f60c1d5fb2a0d5",
+      "original_path": "research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md",
+      "sha256": "27a06af50514921a493e6d4057e893e0c569c6e293a1e990650022420ca94a0c",
+      "size_bytes_original": 11368,
+      "transformation": "verbatim"
+    },
+    {
+      "destination_git_blob_sha": "3783cda6cf7fd6489291c871e627841638476ff9",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/GAMMA_ACTUALIZATION_INTERFEROMETER.md",
+      "original_git_blob_sha": "3783cda6cf7fd6489291c871e627841638476ff9",
+      "original_path": "research/2026-10-10/GAMMA_ACTUALIZATION_INTERFEROMETER.md",
+      "sha256": "6c745eb076b1a9179ff4b5c6671a449dc3c3e9a59543e3a8f1c5ef81d0b1313a",
+      "size_bytes_original": 8322,
+      "transformation": "verbatim"
+    },
+    {
+      "destination_git_blob_sha": "72175698dba6c4e5e57e367c4e0763dc74e6c413",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/OMEGA_SUCC_SECOND_ORDER_WEIL_REPORT.md",
+      "original_git_blob_sha": "72175698dba6c4e5e57e367c4e0763dc74e6c413",
+      "original_path": "research/2026-10-10/OMEGA_SUCC_SECOND_ORDER_WEIL_REPORT.md",
+      "sha256": "5871b7792bab7257e1dc849440017564b612244bb207445e00629391112d96f6",
+      "size_bytes_original": 21403,
+      "transformation": "verbatim"
+    },
+    {
+      "destination_git_blob_sha": "b792cc9f4f8cf3b6a027adc949c67d5995ef0a7a",
+      "destination_path": "provenance/origins/fuckingrh/research/2026-10-10/SUCC_GAMMA_PRIME_PATH_GERMS.md",
+      "original_git_blob_sha": "b792cc9f4f8cf3b6a027adc949c67d5995ef0a7a",
+      "original_path": "research/2026-10-10/SUCC_GAMMA_PRIME_PATH_GERMS.md",
+      "sha256": "616c8a66173d0362cad4a1fc885ba942d2b116fc9be232455dc051d1697ef4eb",
+      "size_bytes_original": 11877,
+      "transformation": "verbatim"
+    }
+  ],
+  "immutable_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "import_origin": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "independence": {
+    "probe_implementation": "new bounded Fraction implementation of formal coefficient algebra; shared investigator with written proof",
+    "reasoner": "one first-generation E38 investigator; no children or sibling conclusions",
+    "same_author_papers_counted_as_independent_votes": false,
+    "source_families": [
+      "Weil historical distribution context",
+      "Suzuki source-form/operator lineage",
+      "primitive Dirichlet functional equation",
+      "frozen repository import lineage"
+    ]
+  },
+  "literature_access_limits": [
+    "Bombieri-Ghosh primary-paper direct MathNet fetch timed out twice; search snippet was a lead only, not a proof premise.",
+    "Davenport-Heilbronn 1936 DOI resolved to metadata only; matched control is derived from the primitive-character functional equation, not from unavailable article contents."
+  ],
+  "native_boundary_context": {
+    "at_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+    "claim_scope": "model-relative finite LTI dimension, not Weil identification",
+    "path": "observational_succ/carrier_hankel_bounds.py",
+    "sha256": "de706c8cca996fc18b7738fcc17265fe7e2a88fa84a679c30c438015c75e0e65"
+  },
+  "nontrivial_zero_locations_read_or_used": false,
+  "origin_operator_sources": [
+    {
+      "path": "research/aletheia_2026-10-05/FUCC_MULTIPLICATIVE_OPERATOR.md",
+      "read_command_exit": 0,
+      "sha256": "a8921059b1462f238411172924b250313355391f2c33f7a5ee4f7cd01f8601a3",
+      "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a"
+    },
+    {
+      "path": "research/astra_round_002/BERNSTEIN_PRIME_OPERATOR.md",
+      "read_command_exit": 0,
+      "sha256": "1c6ca725f7b7c4381c0f8bf46ac30fc532127fa12924001981336dd46f0bc3e3",
+      "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a"
+    }
+  ],
+  "primary_references": [
+    {
+      "access_scope": "transcription of primary work; distributional context",
+      "author": "Andre Weil",
+      "url": "https://denisevellachemla.eu/transc-Weil-1952.pdf",
+      "work": "Sur les formules explicites de la theorie des nombres premiers (1952)"
+    },
+    {
+      "access_scope": "compact smooth Weil criterion; Proposition 3.1; source distribution",
+      "author": "Masatoshi Suzuki",
+      "url": "https://londmathsoc.onlinelibrary.wiley.com/doi/full/10.1112/jlms.12785",
+      "work": "Aspects of the screw function corresponding to the Riemann zeta-function (2023)"
+    },
+    {
+      "access_scope": "abstract conditional-on-RH warning; no spectral positions",
+      "author": "Masatoshi Suzuki",
+      "url": "https://doi.org/10.4153/S0008414X25101739",
+      "work": "On the Hilbert space derived from the Weil distribution (2025)"
+    },
+    {
+      "access_scope": "source formula; localized domains; (8.3); not promoted to peer-reviewed theorem by this investigation",
+      "author": "Masatoshi Suzuki",
+      "url": "https://arxiv.org/html/2606.09096v1",
+      "work": "Weils quadratic form via the screw function (2026 preprint)"
+    },
+    {
+      "access_scope": "matched conductor/parity/phase control derivation",
+      "author": "NIST DLMF",
+      "url": "https://dlmf.nist.gov/25.15#i",
+      "work": "25.15.5-6 primitive character functional equation and Gauss sum"
+    }
+  ],
+  "probe_result": {
+    "RH_PROVED": false,
+    "V2_defect_norm_squared": "1",
+    "arithmetic": "Python Fraction; no floating-point integrations",
+    "clock_phase_control": [
+      -1,
+      1
+    ],
+    "completed_weil_positivity_certified": false,
+    "discrete_q_regular_shift_controls": [
+      {
+        "norm_squared": "2",
+        "q": "3/2"
+      },
+      {
+        "norm_squared": "2",
+        "q": "4/3"
+      },
+      {
+        "norm_squared": "2",
+        "q": "5/4"
+      },
+      {
+        "norm_squared": "2",
+        "q": "6/5"
+      },
+      {
+        "norm_squared": "2",
+        "q": "7/6"
+      },
+      {
+        "norm_squared": "2",
+        "q": "8/7"
+      }
+    ],
+    "exit_status": 0,
+    "genuine_log_support_verified_through": 16,
+    "gram_ldl_pivots": [
+      "1",
+      "1",
+      "1"
+    ],
+    "half_density_n4_log4_coefficients": [
+      "1/4",
+      "1/2"
+    ],
+    "horizon": 16,
+    "import_origin": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "matched_q5_odd_controls": {
+      "chi_b6": [
+        "0",
+        "0"
+      ],
+      "derivative_bracket_upper": "-1052/729",
+      "dh_b6": "1+t^2",
+      "dh_b6_polynomial_coefficients": [
+        "1",
+        "0",
+        "1"
+      ],
+      "dh_b6_strict_bounds": [
+        "17/16",
+        "10/9"
+      ],
+      "dh_root_number": "+1",
+      "dh_t_interval": [
+        "1/4",
+        "1/3"
+      ],
+      "dh_t_polynomial": "t^8-16*t^6+46*t^4-16*t^2+1",
+      "endpoint_polynomial_values": [
+        "11521/65536",
+        "-1520/6561"
+      ],
+      "evaluation_scope": "source algebra and exact parameter selection, no completed DH sign evaluation",
+      "gamma": "(5/pi)^((s+1)/2)*Gamma((s+1)/2)",
+      "poles": "none",
+      "single_prime_phase_mutant_b6": [
+        "2",
+        "0"
+      ]
+    },
+    "nontrivial_zero_locations_read_or_used": false,
+    "prime_weight_mutation": {
+      "genuine_b": "1",
+      "mutated_b": "2",
+      "n": 2
+    },
+    "same_gram": [
+      [
+        "1",
+        "1",
+        "-1"
+      ],
+      [
+        "1",
+        "2",
+        "-1"
+      ],
+      [
+        "-1",
+        "-1",
+        "2"
+      ]
+    ],
+    "schema": "succ.swm.e38.exact-controls.v1",
+    "script_sha256": "f1c6016820ce91ba126054161cd670b045819874a3e74017e5af55b59af125ef",
+    "sign_tape_sources_a6": {
+      "minus": "0",
+      "plus": "2"
+    },
+    "source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+    "status": "EXACT_BOUNDED_CONTROLS_PASS",
+    "weil_delta": {
+      "arch_gamma_and_poles": "unchanged and cancel in delta",
+      "certified_rational_interval": [
+        "-29158744206178957867510898103690955885000000/9965626026204947456480183848910591814383037",
+        "-2915871388369323806006489514348587776000000/996563009465596977376654703738943328319217"
+      ],
+      "formula": "-4*log(6)/sqrt(6) for ||eta||_2=1",
+      "strictly_negative": true
+    }
+  },
+  "provenance_verification_observed_earlier_this_run": {
+    "argv": [
+      "python",
+      "scripts/verify_provenance.py"
+    ],
+    "byte_identical_research_archives": 17,
+    "establishes_mathematical_truth": false,
+    "exit_code": 0,
+    "items": 72,
+    "mechanical_namespace_migrations": 55,
+    "status": "SOURCE_PROVENANCE_VERIFIED"
+  },
+  "push_merge_publish": false,
+  "receipt_generation_first_attempt": {
+    "exit_code": 1,
+    "mathematical_gate": "Not a failed mathematical gate; preserved as tooling history.",
+    "reason": "Generator incorrectly expected git diff --no-index --check against /dev/null to exit 0; it exited 1 with no whitespace output because files differ.",
+    "repair": "Stage only E38 files and use git diff --cached --check; actual exit recorded below.",
+    "stderr": "",
+    "stdout": "",
+    "subcommand": [
+      "git",
+      "diff",
+      "--no-index",
+      "--check",
+      "/dev/null",
+      "research/2026-10-13/SWM_E38_ARITHMETIC_POLARIZATION/DOSSIER.md"
+    ],
+    "subcommand_exit_code": 1
+  },
+  "recorded_utc": "2026-10-13T10:54:18.610767+00:00",
+  "schema": "succ.swm.e38.research-receipt.v1",
+  "tests_not_run": {
+    "CI": "Not run or claimed.",
+    "compilers": "Not run.",
+    "full_repository_suites": "Forbidden by the assigned swarm protocol; principal integration validation remains required."
+  },
+  "worktree": "/home/leah/succ_lab/swm-e38"
+}

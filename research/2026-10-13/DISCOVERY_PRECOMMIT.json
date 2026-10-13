@@ -1,0 +1,13 @@
+{
+  "schema": "succ-heldout-discovery-design-v1",
+  "calibration": {"prime": 3, "label_seed": 271828, "allow_target_coordinates_to_learner": false},
+  "heldout": [{"prime": 5, "label_seed": 314159}, {"prime": 7, "label_seed": 161803}],
+  "hidden_transition_family": "permuted finite two-generator carrier; details isolated in simulator",
+  "learner_inputs": ["opaque finite state indices", "declared action tables", "one readout"],
+  "initial_model_class": "readout-only finite quotients",
+  "candidate_language_growth": "prepend a lawful action to a separating observation word",
+  "generic_law_mining": ["action closure", "inverses if all actions bijective", "center", "commutator orders"],
+  "expected_scientific_scope": "unknown-to-learner finite structure; no claim of a new theorem for humankind",
+  "holdout_word_lengths": [13, 29, 67],
+  "ablations": ["disable experiment growth", "disable persistent no-goods", "force commutative model", "change permitted actions without invalidating certificate"]
+}

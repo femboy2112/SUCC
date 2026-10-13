@@ -1,0 +1,181 @@
+{
+  "academic_novelty_claimed": false,
+  "acceptance": "independent crucible and principal review pending",
+  "arithmetic": "fractions.Fraction only",
+  "branch": "research/swm-c20-2026-10-13",
+  "command": "timeout 30s python research/2026-10-13/SWARM_ATLAS/C20_probe.py",
+  "executed_head": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "exit_on_success": 0,
+  "garbling": {
+    "E": [
+      [
+        "3/4",
+        "1/4"
+      ],
+      [
+        "1/4",
+        "3/4"
+      ]
+    ],
+    "F": [
+      [
+        "7/12",
+        "5/12"
+      ],
+      [
+        "5/12",
+        "7/12"
+      ]
+    ],
+    "K": [
+      [
+        "2/3",
+        "1/3"
+      ],
+      [
+        "1/3",
+        "2/3"
+      ]
+    ],
+    "exact_decision_compositions": 25,
+    "invalid_kernels_rejected": 2,
+    "reverse_TV_obstruction": [
+      "1/6",
+      "1/2"
+    ]
+  },
+  "id": "C20",
+  "incomparable": {
+    "E": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "F": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "guess_a_then_guess_b_values": [
+      "1",
+      "1/2",
+      "1/2",
+      "1"
+    ],
+    "source_worlds": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "no_reset": {
+    "contract": "action-preserving; no extra probe, reorder, hidden-source access or reset",
+    "erased_histories": [
+      [
+        [
+          "a",
+          "*"
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      [
+        [
+          "a",
+          "*"
+        ],
+        [
+          "b",
+          0
+        ]
+      ]
+    ],
+    "initial_single_action_channels_equal": true,
+    "kept_histories": [
+      [
+        [
+          "a",
+          "*"
+        ],
+        [
+          "b",
+          0
+        ]
+      ],
+      [
+        [
+          "a",
+          "*"
+        ],
+        [
+          "b",
+          1
+        ]
+      ]
+    ],
+    "original_bit_decision_values": [
+      "1",
+      "1/2"
+    ],
+    "stipulated_source_faithful_reset_control_passed": true,
+    "word": [
+      "a",
+      "b"
+    ]
+  },
+  "probability_premises": "stipulated rational laws and explicitly uniform priors",
+  "python": "3.12.3",
+  "sha256": {
+    "observational_succ/eodcs_relational_choice.py": "c4a72ff5060327158326252b72033970fbc0ef198787f37960e0fbccdf228083",
+    "observational_succ/operational_yoneda_descent.py": "c9db557825a01bec76e8bc38f32d3f59cd2dd17d7a2670e15373aedeedc67e0c",
+    "observational_succ/probe_coherence.py": "2495e1880b76a615d7f048e177304c7aee3e0dcfe5ce7f62abda1d1a1b6a664f",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-13/SWARM_ATLAS/C20.md": "43e5370adb99b018830298bf2e4ea46aa3c287cc411bce6e67b3c18202b8cc5d",
+    "research/2026-10-13/SWARM_ATLAS/C20_probe.py": "4e191c287e2247d90cb92df48e9f07390091c076c35d9debd512a2e0fa7fd9d4"
+  },
+  "source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "source_support_is_not_calibration": true,
+  "status": "TESTED MODEL",
+  "universal_theorem": "CLASSICAL finite proof reconstructed in C20.md; not machine formalized"
+}

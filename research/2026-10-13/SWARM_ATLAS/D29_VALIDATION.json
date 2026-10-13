@@ -1,0 +1,86 @@
+{
+  "base_commit": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "branch": "research/swm-d29-2026-10-13",
+  "commands": [
+    {
+      "command": "timeout 45s python research/2026-10-13/SWARM_ATLAS/D29_probe.py > research/2026-10-13/SWARM_ATLAS/D29_RECEIPT.json",
+      "exit_code": 0
+    },
+    {
+      "command": "python research/2026-10-13/SWARM_ATLAS/D29_probe.py",
+      "exit_code": 0,
+      "saved_receipt_byte_equal": true
+    },
+    {
+      "command": "python scripts/verify_provenance.py",
+      "exit_code": 0,
+      "output": {
+        "byte_identical_research_archives": 17,
+        "establishes_mathematical_truth": false,
+        "items": 72,
+        "mechanical_namespace_migrations": 55,
+        "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+        "status": "SOURCE_PROVENANCE_VERIFIED"
+      }
+    },
+    {
+      "command": "git -C /home/leah/FuckingRH show ba075348b7bcc66d938b3e0ca96c26e95bba340a:research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md",
+      "exit_code": 0,
+      "output_sha256": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86"
+    }
+  ],
+  "next_smallest_obstruction": "Proposed contractible-fiber observer collapse must exhibit an induced index-pair quotient homotopy equivalence; properness alone has a cylinder counterexample.",
+  "origin_archive_byte_equal": true,
+  "origin_blob": "04408ed96bd369b5063868eb5ad5664824d18043",
+  "origin_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "primary_sources": [
+    {
+      "location": "Conley and Easton section 1 definitions and theorem context",
+      "url": "https://www.colorado.edu/amath/sites/default/files/attached-files/isolated_invariant_sets_and_isolating_blocks.pdf"
+    },
+    {
+      "location": "Khandhawit-Lin-Sasahira section 4.2 pp2046-2047",
+      "url": "https://msp.org/gt/2018/22-4/gt-v22-n4-p03-s.pdf"
+    },
+    {
+      "location": "Franks-Richeson definitions2.3,3.1 and complete orbit definition",
+      "url": "https://arxiv.org/html/math/9910171"
+    }
+  ],
+  "recorded_at_utc": "2026-10-13T10:22:22.484557+00:00",
+  "recording_attempts": [
+    {
+      "command": "python - (first inline validation recorder)",
+      "exit_code": 1,
+      "failure": "SyntaxError: unterminated string literal in source description; no recorder output written"
+    },
+    {
+      "command": "python - (corrected inline validation recorder)",
+      "exit_code": 0
+    }
+  ],
+  "sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "observational_succ/checkpoint_meta_tower.py": "89bec4281a60a861309c3c06f66ed5327f33e4165cddb6803d42f5e8ec14e7a9",
+    "observational_succ/eodcs_evolutionary_discovery.py": "746baaf80da382339d0a9b09d00e9f22d26bea997e783b1defb5a5ffd8bbf526",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+    "research/2026-10-12/CARRIER_RELATIVE_META_SUCC_AND_DOVETAIL.md": "d15a81f58807e837ce6ced4ff9b9ec2477495b4a3ab50d028ec2a01986d5f74d",
+    "research/2026-10-12/CHAOS_QUOTIENTS_SOURCE_DEBT.md": "100912be1418ec98516ef0575d964e46a255bad97c5773a632b2395d5753ca9a",
+    "research/2026-10-12/SOURCE_DRIVEN_DYNAMIC_BOUNDARY_REPAIR.md": "b1606b90d8d07b8ab7090a1a2a2f9bda034b4e3004047801af2719dbbf8919ff",
+    "research/2026-10-13/EVOLUTIONARY_OBSTRUCTION_DRIVEN_CATEGORICAL_SYNTHESIS.md": "dc37cd6abd52faa3454a7992686c46fd26921dfbe0dff9cf78f6469d754f49a4",
+    "research/2026-10-13/SWARM_ATLAS/D29_ATTRACTORS_CONLEY_SELF_UPDATE.md": "9a43faebc17dc1ff24729e8487e0222906399479d86e0ebb286c2009093c237c",
+    "research/2026-10-13/SWARM_ATLAS/D29_RECEIPT.json": "bdf1de72c00397bd798d1e59bec6be6e2d914f1006267273b5230ade5ef4f350",
+    "research/2026-10-13/SWARM_ATLAS/D29_probe.py": "a42f6669e50f30598922fc485b409b1b3b90ba3f54515394fba83ad96d3ef121"
+  },
+  "validation_boundary": {
+    "CI_verified": false,
+    "compiler_run": false,
+    "continuous_theorem_mechanized": false,
+    "full_suite_run": false,
+    "independent_reasoner_acceptance": "pending principal/crucible",
+    "numerically_computed_conley_index": false,
+    "physical_source_authenticated": false
+  }
+}

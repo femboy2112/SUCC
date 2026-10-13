@@ -1,0 +1,16 @@
+{
+  "schema": "succ.cambrian.audit-b.independent-first-pass.v1",
+  "audit_worktree_base": "01bf38fb282872cfe28362321809b30ea9f1b3f9",
+  "scope": "Root stochastic transport and cluster-F memory/quantum, excluding this researcher's cluster A",
+  "oracle_design": "Event atoms, full unpartitioned block recurrence, independently multiplied Kraus matrices",
+  "hypotheses": {
+    "joint_descent": "Same coarse starting report must give the same JOINT successor-report/receipt law; marginal or posterior-only matches can fail.",
+    "history": "Finite filtering should match an unnormalized path-atom calculation when each action descends and action choices depend only on the public history.",
+    "hidden_policy": "A hidden-state-dependent action selector can break coarse-history transport even when each instrument separately descends.",
+    "conditional_stability": "For two positive receipt masses alpha,beta, TV of conditional laws is at most TV of full laws divided by MAX(alpha,beta), with sharp unequal-mass examples.",
+    "memory": "The direct full block recurrence equals convolution plus initial hidden forcing; omitting that initial term fails.",
+    "finite_kernel": "Zero initial hidden state permits the asserted Ax+Eu law exactly when BD^kC and BD^kH vanish for 0<=k<h; Cayley-Hamilton, not a long finite run, supplies the infinite extension.",
+    "quantum": "Identical current POVM effects determine only current probabilities. Different posterior-state maps can give incompatible future records."
+  },
+  "preliminary_stability_derivation": "Assume alpha<=beta and let S be the post-event report subset on which q>p. Full-law TV dominates beta*q(S)-alpha*p(S), which is at least beta*TV(p,q). Thus use max event mass."
+}

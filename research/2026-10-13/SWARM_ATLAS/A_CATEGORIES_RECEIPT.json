@@ -1,0 +1,101 @@
+{
+  "earlier_test_failure": {
+    "actual": 7200,
+    "anticipated": 4320,
+    "corrected_before_final_validation": true,
+    "kind": "incorrect anticipated enumeration count",
+    "mathematical_base_change_assertions_failed": false
+  },
+  "even_nonidentity_holonomy": {
+    "root_holonomies": [
+      [
+        1,
+        2,
+        0
+      ]
+    ],
+    "root_values": [],
+    "sections": []
+  },
+  "exhaustive_scope_asserted_by_passing_tests": {
+    "S3_triangle_connections_with_independent_section_enumeration": 216,
+    "S3_triangle_gauge_mutations": 216,
+    "binary_two_state_source_initial_partition_instances": 128,
+    "origin_current_belief_update_subset_action_report_instances": 2048,
+    "strict_two_to_three_state_base_change_partition_instances": 7200,
+    "unary_three_state_source_initial_partition_instances": 1080
+  },
+  "external_source_authentication": false,
+  "formal_kernel_checked": false,
+  "frozen_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "noncomposing_repairs": {
+    "I_A_I_B_R": [
+      0,
+      0,
+      1,
+      2
+    ],
+    "action_A": [
+      0,
+      0,
+      3,
+      0
+    ],
+    "action_B": [
+      0,
+      2,
+      0,
+      0
+    ],
+    "distinguishing_word": [
+      "b",
+      "a"
+    ],
+    "joint_repair": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reports": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "trace_original_0": [
+      0,
+      0,
+      0
+    ],
+    "trace_original_1": [
+      0,
+      0,
+      1
+    ]
+  },
+  "pairwise_gluing_countermodel": {
+    "constraints": [
+      "equal",
+      "equal",
+      "unequal"
+    ],
+    "contexts": [
+      "xy",
+      "yz",
+      "xz"
+    ],
+    "global_sections": []
+  },
+  "raw_distinguishing_cost_triangle_failure": {
+    "cost_0_1": 4,
+    "cost_0_2": 1,
+    "cost_1_2": 1
+  },
+  "schema": "SUCC-SWM-A/1",
+  "status": "PROVED LOCAL paper derivations; exact finite implementation checked",
+  "unit_test_errors": 0,
+  "unit_test_failures": 0,
+  "unit_tests_passed": true,
+  "unit_tests_run": 21
+}

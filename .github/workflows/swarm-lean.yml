@@ -1,0 +1,49 @@
+name: SUCC swarm isolated proof kernels
+on:
+  push:
+    branches: ['research/many-worlds-*']
+  pull_request:
+    paths: ['formal/Swarm_*.lean', 'formal/swarm_topology/**', '.github/workflows/swarm-lean.yml', 'observational_succ/swarm*.py', 'scripts/*swarm*.py', 'tests/test_swarm*.py', 'research/2026-10-13/SWARM_ATLAS/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  swarm-kernels:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Reject proof placeholders and local axioms
+        run: python scripts/verify_swarm_formal.py
+      - name: Check standalone swarm proofs
+        run: |
+          lean --version
+          for src in formal/Swarm_*.lean; do lean "$src"; done
+      - name: Check topology against pinned mathlib
+        working-directory: formal/swarm_topology
+        run: |
+          lake update
+          lake exe cache get Mathlib/Topology/Compactness/Compact.lean Mathlib/Topology/Constructions.lean Mathlib/Topology/Separation/Basic.lean
+          lake build SwarmTopology SwarmPolicyCompactness SwarmX01CompletionTransport
+
+  swarm-receipts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -e ".[test]"
+      - name: Replay frozen exact swarm receipts
+        run: python scripts/verify_swarm_receipts.py

@@ -1,0 +1,5 @@
+# C23 independent principal crucible
+
+Reviewed author f8bd942af0f618268a511106e738c75776670f4b. SURVIVES, classical conditional theorem. Independently derived E[M(t+1)|F_t]=M_t E[e|F_t] and bounded stopped-threshold inequality; Fatou gives only <=1 at unbounded stops. Lower thresholds handle nonattained supremum. Null-zero alternative mass makes supported conditional mean smaller than1, not an invalid division. Common public policy factors cancel only under the same policy. Optional projection works because G_t is nested and contained in F_t: tower conditioning through F_t gives the supermartingale inequality. A copied yes bit gives (3/2)^5=243/32 with null crossing probability1/2>1/5, independently recomputed; conditional factors after the first are1. Full-support native guard is preserved. No posterior truth, universal proof or source authentication follows.
+
+Reviewer is not the author; source mathematical assumptions remain stipulated. Exact probe replay is recorded separately. Paper proofs remain distinct from kernel verification.

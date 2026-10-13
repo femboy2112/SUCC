@@ -1,0 +1,138 @@
+{
+  "all_three_hypothetical_completions_preserve_evidence": true,
+  "bounded_exhaustion_status": "UNRESOLVED",
+  "finite_refutation": {
+    "inspected_probe_count": 85,
+    "retained_probes": [
+      0,
+      7,
+      14,
+      21,
+      28,
+      35,
+      42,
+      49,
+      56,
+      63,
+      70,
+      77,
+      84
+    ],
+    "status": "REFUTED",
+    "witnesses": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        14
+      ],
+      [
+        3,
+        21
+      ],
+      [
+        4,
+        28
+      ],
+      [
+        5,
+        35
+      ],
+      [
+        6,
+        42
+      ],
+      [
+        7,
+        49
+      ],
+      [
+        8,
+        56
+      ],
+      [
+        9,
+        63
+      ],
+      [
+        10,
+        70
+      ],
+      [
+        11,
+        77
+      ],
+      [
+        12,
+        84
+      ]
+    ]
+  },
+  "hypothetical_completions_at_unobserved_128": [
+    0,
+    1,
+    1
+  ],
+  "minimal_multi_action_class_count": 3,
+  "nonconstant_marker_gap": {
+    "marker": "END",
+    "start": 0,
+    "state_lower_bound": 5,
+    "statement": "pairwise-distinct stationary original source states",
+    "stop": 4
+  },
+  "retained_witnesses_independently_replayed": true,
+  "same_report_future_separator": [
+    "a"
+  ],
+  "scattered_observed_coordinates": [
+    0,
+    3,
+    100
+  ],
+  "scope": {
+    "academic_priority_established": false,
+    "bounded_silence_certifies_global_realization": false,
+    "infinite_experiment_performed": false,
+    "physical_source_authenticated": false
+  },
+  "sharp_prefix_state_counts": [
+    {
+      "states": 4,
+      "word": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "states": 2,
+      "word": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "states": 5,
+      "word": [
+        "x",
+        "y",
+        "x",
+        "y",
+        "END"
+      ]
+    }
+  ],
+  "status": "EXACT_SWARM_B_COMPLETION_BOUNDARIES"
+}

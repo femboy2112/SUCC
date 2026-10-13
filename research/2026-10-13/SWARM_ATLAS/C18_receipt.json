@@ -1,0 +1,59 @@
+{
+  "collider": {
+    "direct_intersection": "1/2",
+    "frechet_interval": [
+      "0",
+      "1/2"
+    ],
+    "reglued_intersection": "1/4"
+  },
+  "current_source_sha256": {
+    "observational_succ/contextual_heuristics.py": "a8d9b980f62dbec0bf4fa03d91fb06dab31f8ba30992eab1a7412b7473f44602",
+    "observational_succ/source_coupling_bounds.py": "10315734961a5c05f6ad7cbaaec57035151c1b19c67c263d299a04b7abf595b0"
+  },
+  "eos_source_commit": "b2774ca485db4b5b4f7ce92e535220352fb3af2f",
+  "eos_source_sha256": "f0ab9200ae2718bb29036e6d55803280340fd6d7f9dbd12280b1b4088ef20f9a",
+  "execution_head": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "execution_history": [
+    {
+      "command": "python research/2026-10-13/SWARM_ATLAS/C18_probe.py",
+      "error": "ModuleNotFoundError: observational_succ",
+      "exit": 1,
+      "repair": "Corrected local probe ROOT from parents[4] to parents[3]"
+    },
+    {
+      "command": "python research/2026-10-13/SWARM_ATLAS/C18_probe.py",
+      "exit": 0
+    }
+  ],
+  "exit": 0,
+  "finite_likelihood_scan": {
+    "commuting": 534,
+    "examined": 729,
+    "impossible": 145,
+    "noncommuting": 50
+  },
+  "heuristic_controls": {
+    "fresh_conditionally_independent_posterior": "9/10",
+    "genuine_conditional_copy_posterior": "3/4",
+    "unconditioned_noise_replay_rejected": true
+  },
+  "lean_kernel_claimed": false,
+  "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "physical_source_authenticated": false,
+  "probe_sha256": "feeb2bc08a527a25631dd5c81cde5268c543f312eeef8730e637b20b83ee6f41",
+  "proof_status": "PROVED LOCAL pen-and-paper; finite probes are regression evidence",
+  "schema": "SWM-C18-exact-v1",
+  "separator_mismatch_rejected": true,
+  "shared_evidence": {
+    "correct": "3/4",
+    "old_separator_shortcut": "9/10"
+  },
+  "strictly_positive_likelihood_counterexample": {
+    "direct_intersection": "1/3",
+    "posterior_determinant": "1/12",
+    "reglued_intersection": "1/4"
+  },
+  "two_separator_controls": 64,
+  "zero_separator_and_killed_fiber_controls": "PASS"
+}

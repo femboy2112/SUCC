@@ -1,0 +1,147 @@
+{
+  "Weil_positivity_or_RH_proved": false,
+  "formal_math_proof_from_heuristic_posterior": false,
+  "learned_analogy": {
+    "empirical_calibration_authenticated": false,
+    "formal_truth_of_new_model_proved": false,
+    "hyperposterior_after_one_verified_task": {
+      "ignore-storage": "5/13",
+      "storage-is-useful": "8/13"
+    },
+    "independence_of_source_trials_required": true,
+    "new_context_model_prior": {
+      "memory": "89/130",
+      "static": "41/130"
+    },
+    "pretraining_model_prior": {
+      "memory": "13/20",
+      "static": "7/20"
+    },
+    "shape_confidence_changed": true
+  },
+  "noise_full_support_limit": {
+    "almost_sure_limit_requires_iid_calibrated_laws": true,
+    "any_finite_trial_deductive_certainty": false,
+    "bhattacharyya_coefficient_squared": "3/4",
+    "trial_count": 20,
+    "true_success_probability": "3/4",
+    "wrong_majority_posterior_probability_upper": "59049/1048576"
+  },
+  "null_optional_stopping": {
+    "null_cross_probability": "1/64",
+    "physical_null_law_authenticated": false,
+    "threshold": "10",
+    "tree_nodes": 253,
+    "upper_bound": "1/10",
+    "valid_with_predictable_adaptive_probes": true
+  },
+  "physical_source_authenticated": false,
+  "positive_stieltjes_alias": {
+    "actual_source_authenticated": false,
+    "all_prior_source_assumptions_declared": true,
+    "first_four_frequency_responses_equal": true,
+    "formal_proof_from_positive_posterior": false,
+    "higher_degree": 3,
+    "lower_degree": 2,
+    "posterior_after_four_independent_reports": {
+      "three-mode": "1/3",
+      "two-mode": "2/3"
+    },
+    "prior": {
+      "three-mode": "1/3",
+      "two-mode": "2/3"
+    },
+    "ranked_probes": [
+      [
+        "bernoulli@4",
+        "2/1946711832863",
+        "2/1946711832863"
+      ],
+      [
+        "bernoulli@0",
+        "0",
+        "0"
+      ],
+      [
+        "bernoulli@1",
+        "0",
+        "0"
+      ],
+      [
+        "bernoulli@2",
+        "0",
+        "0"
+      ],
+      [
+        "bernoulli@3",
+        "0",
+        "0"
+      ]
+    ],
+    "s4_exact_report_would_separate": true,
+    "s4_expected_target_gini_gain": "2/1946711832863",
+    "source_type": "DECLARED_STIELTJES_MODELS"
+  },
+  "schema": "SUCC_CONTEXTUAL_HEURISTIC_OBSERVER_V1",
+  "scope": "FINITE_DECLARED_SOURCE_PROBABILISTIC_AND_CATEGORICAL_MODEL_SEARCH",
+  "shared_latent_double_count_rejected": {
+    "initial_source": {
+      "first_witness": null,
+      "history": [],
+      "physical_noise_independence_authenticated": false,
+      "source_conditional_law_verified": true
+    },
+    "naive_reuse": {
+      "first_witness": [
+        "H0",
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ]
+      ],
+      "history": [
+        [
+          "first",
+          "yes"
+        ]
+      ],
+      "physical_noise_independence_authenticated": false,
+      "source_conditional_law_verified": false
+    },
+    "no_second_independent_observation_is_present": true,
+    "sourced_conditional": {
+      "first_witness": null,
+      "history": [
+        [
+          "first",
+          "yes"
+        ]
+      ],
+      "physical_noise_independence_authenticated": false,
+      "source_conditional_law_verified": true
+    }
+  },
+  "structural_bridge": {
+    "likelihood_generator_preserved": true,
+    "physical_source_shared": false,
+    "thermal_prior": {
+      "Heat:three": "1/3",
+      "Heat:two": "2/3"
+    },
+    "translated_posterior": {
+      "Heat:three": "1/3",
+      "Heat:two": "2/3"
+    }
+  },
+  "syntax_duplicate_counterexample": {
+    "behavioral_menu_is_exhaustive": false,
+    "naive_A_after_syntax_clone": "2/3",
+    "naive_A_before": "1/2",
+    "quotient_A_after": "1/2",
+    "quotient_A_before": "1/2"
+  }
+}

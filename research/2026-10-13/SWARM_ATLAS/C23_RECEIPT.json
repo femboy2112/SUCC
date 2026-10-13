@@ -1,0 +1,85 @@
+{
+  "candidate": "C23",
+  "source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=. python research/2026-10-13/SWARM_ATLAS/C23_probe.py",
+  "execution_exit_code": 0,
+  "prior_execution_failure": {
+    "exit_code": 1,
+    "finding": "Initial probe had an unclosed action tuple; syntax repaired before successful rerun."
+  },
+  "arithmetic": "exact fractions; no random sampling",
+  "all_assertions_passed": true,
+  "fresh_iid_crossing_probability": "1/16",
+  "alpha": "1/5",
+  "public_adaptive_crossing_probability": "1/16",
+  "public_adaptive_tree_nodes": 61,
+  "duplicate_naive_yes_wealth": "243/32",
+  "duplicate_naive_null_mean": "61/16",
+  "duplicate_false_crossing_probability": "1/2",
+  "duplicate_correct_terminal_wealths": [
+    "3/2",
+    "1/2"
+  ],
+  "duplicate_correct_crossing_probability": "0",
+  "correlated_correct_second_yes_factor": "10/9",
+  "correlated_wrong_conditional_factor_mean": "5/4",
+  "native_zero_support_rejection": "This elementary e-process requires full null support",
+  "deterministic_supported_factor": "1",
+  "singular_supported_mean": "1/2",
+  "null_zero_observation_gate": "NULL_IMPOSSIBLE: no numerical likelihood update",
+  "destructive_public_traces": [
+    [
+      [
+        "read_reset",
+        0,
+        1
+      ],
+      [
+        "read",
+        0,
+        2
+      ]
+    ],
+    [
+      [
+        "read_reset",
+        1,
+        1
+      ],
+      [
+        "read_invert",
+        1,
+        2
+      ]
+    ]
+  ],
+  "destructive_after_reset_factors_by_public_branch": [
+    "1",
+    "1"
+  ],
+  "destructive_stale_after_reset_means_by_public_branch": [
+    "3/2",
+    "3/2"
+  ],
+  "fine_lr": [
+    "3/2",
+    "1/2"
+  ],
+  "forgetful_lr": "1",
+  "fine_second_moment": "5/4",
+  "coarse_second_moment": "1",
+  "source_sha256": {
+    "observational_succ/heuristic_evidence_martingales.py": "19d0b7075499fc28cd42832eaecc1ca7a643f3fbe77d58cf6671fcf2630547fc",
+    "observational_succ/heuristic_joint_noise.py": "a7a95a475f6ce58a842bfc91528d8d4d4ec55985f1c6ce8083ab01a6c8f2588f",
+    "observational_succ/contextual_heuristics.py": "a8d9b980f62dbec0bf4fa03d91fb06dab31f8ba30992eab1a7412b7473f44602",
+    "observational_succ/noncommuting_proof_transport.py": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a"
+  },
+  "dossier_sha256": "70d4581e27e6dafcfcf49788322e77d0b545eac38012f732414b69ef17177d17",
+  "probe_sha256": "117cdf3744fa38cad9c28afb6c7fd633da72d0517e08f566e8aec5c6407769f4",
+  "physical_source_authenticated": false,
+  "universal_mathematical_proof_claimed": false,
+  "full_suite_run": false,
+  "theorem_status": "CLASSICAL; transparent local derivation",
+  "finite_control_status": "TESTED MODEL",
+  "blind_product_status": "REFUTED"
+}

@@ -1,0 +1,589 @@
+{
+  "RH_progress_claimed": false,
+  "academic_novelty_claimed": false,
+  "analytic_remainder_certificate": false,
+  "command": "python research/2026-10-13/SWARM_ATLAS/E34_probe.py --receipt research/2026-10-13/SWARM_ATLAS/E34_receipt.json",
+  "expected_exit": 0,
+  "factor_cone_examples": [
+    {
+      "N": 1,
+      "diagonal_count": 1,
+      "lower_pairs": [
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "N": 6,
+      "diagonal_count": 0,
+      "lower_pairs": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "N": 25,
+      "diagonal_count": 1,
+      "lower_pairs": [
+        [
+          1,
+          25
+        ],
+        [
+          5,
+          5
+        ]
+      ]
+    },
+    {
+      "N": 36,
+      "diagonal_count": 1,
+      "lower_pairs": [
+        [
+          1,
+          36
+        ],
+        [
+          2,
+          18
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          6
+        ]
+      ]
+    }
+  ],
+  "factor_cone_products_checked": 100,
+  "finite_depth_successor_no_go": [
+    {
+      "common_residue": 1,
+      "p": 2,
+      "r": 1,
+      "source_integers": [
+        1,
+        3
+      ],
+      "successor_valuations": [
+        1,
+        2
+      ]
+    },
+    {
+      "common_residue": 3,
+      "p": 2,
+      "r": 2,
+      "source_integers": [
+        3,
+        7
+      ],
+      "successor_valuations": [
+        2,
+        3
+      ]
+    },
+    {
+      "common_residue": 7,
+      "p": 2,
+      "r": 3,
+      "source_integers": [
+        7,
+        15
+      ],
+      "successor_valuations": [
+        3,
+        4
+      ]
+    },
+    {
+      "common_residue": 2,
+      "p": 3,
+      "r": 1,
+      "source_integers": [
+        2,
+        8
+      ],
+      "successor_valuations": [
+        1,
+        2
+      ]
+    },
+    {
+      "common_residue": 8,
+      "p": 3,
+      "r": 2,
+      "source_integers": [
+        8,
+        26
+      ],
+      "successor_valuations": [
+        2,
+        3
+      ]
+    },
+    {
+      "common_residue": 26,
+      "p": 3,
+      "r": 3,
+      "source_integers": [
+        26,
+        80
+      ],
+      "successor_valuations": [
+        3,
+        4
+      ]
+    },
+    {
+      "common_residue": 4,
+      "p": 5,
+      "r": 1,
+      "source_integers": [
+        4,
+        24
+      ],
+      "successor_valuations": [
+        1,
+        2
+      ]
+    },
+    {
+      "common_residue": 24,
+      "p": 5,
+      "r": 2,
+      "source_integers": [
+        24,
+        124
+      ],
+      "successor_valuations": [
+        2,
+        3
+      ]
+    },
+    {
+      "common_residue": 124,
+      "p": 5,
+      "r": 3,
+      "source_integers": [
+        124,
+        624
+      ],
+      "successor_valuations": [
+        3,
+        4
+      ]
+    }
+  ],
+  "founding_origin_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "full_word_integer_checks": 64,
+  "native_domain_refusals": {
+    "composite_word": true,
+    "zero_full_word": true,
+    "zero_product_formula": true,
+    "zero_valuation": true
+  },
+  "native_module_origins": {
+    "clock_mahler_interpolation.py": "1d5b354fecc19eeb50d5e2e9a23dfaf4b44979b6",
+    "diagonal_adele_zeta.py": "1efd485031cdaab40bb8598242a5e5f2617330fb",
+    "prime_clock_yoneda.py": "f060d465a808877210a02bae4c37b73268513a5d"
+  },
+  "nontrivial_zero_inputs": false,
+  "origin_object_inspection": {
+    "initial_command": "git cat-file -t ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "initial_cwd": "/home/leah/succ_lab/swm-e34",
+    "initial_exit": 128,
+    "initial_result": "Origin commit is not an object in the target repository",
+    "resolved_commands": [
+      "git cat-file -t ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+      "git ls-tree ba075348b7bcc66d938b3e0ca96c26e95bba340a actualization/hasse_theta_seam.py actualization/resource_probe.py actualization/yoneda.py actualization/ordinal_succ_report.py actualization/arithmetic.py",
+      "git show ba075348b7bcc66d938b3e0ca96c26e95bba340a:actualization/hasse_theta_seam.py | sed -n '515,555p'",
+      "git show ba075348b7bcc66d938b3e0ca96c26e95bba340a:actualization/resource_probe.py | sed -n '20,78p'",
+      "git show ba075348b7bcc66d938b3e0ca96c26e95bba340a:actualization/yoneda.py | sed -n '129,145p'"
+    ],
+    "resolved_cwd": "/home/leah/FuckingRH",
+    "resolved_exit": 0
+  },
+  "own_artifacts_sha256": {
+    "E34.md": "635bc6080e9ff74194c8a811c6cc93eeb20aeebe6449dd8954b0128bf167ba08",
+    "E34_probe.py": "4945fcca5f8b78f74d2c192b8e88dc25f81497aec7870221e74d77d2979bf40e"
+  },
+  "phase_matched_composite_controls": [
+    {
+      "coarse_character_exponents": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          4,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          1,
+          4,
+          2
+        ],
+        [
+          0,
+          4,
+          3,
+          2,
+          1
+        ]
+      ],
+      "coarse_dilation": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fake_composite": 6,
+      "fine_x_one_outputs": [
+        11,
+        6
+      ],
+      "native_composite_source_rejected": true,
+      "place": 5,
+      "prime": 11
+    },
+    {
+      "coarse_character_exponents": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      "coarse_dilation": [
+        0,
+        1,
+        2
+      ],
+      "fake_composite": 4,
+      "fine_x_one_outputs": [
+        7,
+        4
+      ],
+      "native_composite_source_rejected": true,
+      "place": 3,
+      "prime": 7
+    }
+  ],
+  "phase_matched_nonEuler_control": {
+    "coprime_multiplicativity_defect_at_2_3": "1",
+    "first_changed_packet": [
+      6
+    ],
+    "formal_delta": "(z*X_6+z^-1*X_6^-1)/sqrt(6)",
+    "mutant_approximate_functional_equation_claimed": false,
+    "normalized_window_at": "36",
+    "normalized_window_before": "143/4",
+    "numerical_nonzero_at_each_t_claimed": false,
+    "prime_phase_basis": "X_n=prod_p X_p^v_p(n), X_p=exp(-i*t*log(p)); z=exp(i*theta(t))",
+    "source": "a(n)=1+[n=6] for all n; tested prefix 1..8",
+    "unchanged_phase_and_half_density": true
+  },
+  "prime_jet_rows": [
+    {
+      "gap": 1,
+      "gap_valuation": 0,
+      "integer": 1,
+      "k": 0,
+      "p": 2
+    },
+    {
+      "gap": 2,
+      "gap_valuation": 1,
+      "integer": 2,
+      "k": 1,
+      "p": 2
+    },
+    {
+      "gap": 4,
+      "gap_valuation": 2,
+      "integer": 4,
+      "k": 2,
+      "p": 2
+    },
+    {
+      "gap": 8,
+      "gap_valuation": 3,
+      "integer": 8,
+      "k": 3,
+      "p": 2
+    },
+    {
+      "gap": 16,
+      "gap_valuation": 4,
+      "integer": 16,
+      "k": 4,
+      "p": 2
+    },
+    {
+      "gap": 2,
+      "gap_valuation": 0,
+      "integer": 1,
+      "k": 0,
+      "p": 3
+    },
+    {
+      "gap": 6,
+      "gap_valuation": 1,
+      "integer": 3,
+      "k": 1,
+      "p": 3
+    },
+    {
+      "gap": 18,
+      "gap_valuation": 2,
+      "integer": 9,
+      "k": 2,
+      "p": 3
+    },
+    {
+      "gap": 54,
+      "gap_valuation": 3,
+      "integer": 27,
+      "k": 3,
+      "p": 3
+    },
+    {
+      "gap": 162,
+      "gap_valuation": 4,
+      "integer": 81,
+      "k": 4,
+      "p": 3
+    },
+    {
+      "gap": 4,
+      "gap_valuation": 0,
+      "integer": 1,
+      "k": 0,
+      "p": 5
+    },
+    {
+      "gap": 20,
+      "gap_valuation": 1,
+      "integer": 5,
+      "k": 1,
+      "p": 5
+    },
+    {
+      "gap": 100,
+      "gap_valuation": 2,
+      "integer": 25,
+      "k": 2,
+      "p": 5
+    },
+    {
+      "gap": 500,
+      "gap_valuation": 3,
+      "integer": 125,
+      "k": 3,
+      "p": 5
+    },
+    {
+      "gap": 2500,
+      "gap_valuation": 4,
+      "integer": 625,
+      "k": 4,
+      "p": 5
+    },
+    {
+      "gap": 6,
+      "gap_valuation": 0,
+      "integer": 1,
+      "k": 0,
+      "p": 7
+    },
+    {
+      "gap": 42,
+      "gap_valuation": 1,
+      "integer": 7,
+      "k": 1,
+      "p": 7
+    },
+    {
+      "gap": 294,
+      "gap_valuation": 2,
+      "integer": 49,
+      "k": 2,
+      "p": 7
+    },
+    {
+      "gap": 2058,
+      "gap_valuation": 3,
+      "integer": 343,
+      "k": 3,
+      "p": 7
+    },
+    {
+      "gap": 14406,
+      "gap_valuation": 4,
+      "integer": 2401,
+      "k": 4,
+      "p": 7
+    }
+  ],
+  "proof_status": "PROVED LOCAL written algebra; TESTED MODEL finite native controls; no kernel certificate",
+  "schema": "E34-exact-1",
+  "session_separate_provenance_validation": {
+    "archives_byte_identical": 17,
+    "command": "PYTHONDONTWRITEBYTECODE=1 python scripts/verify_provenance.py",
+    "items": 72,
+    "mathematical_truth_established": false,
+    "namespace_migrations": 55,
+    "observed_exit": 0
+  },
+  "source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "source_sha256": {
+    "observational_succ/arithmetic.py": "25398e89306bdacb6fe17e419cf695ad4f1c5bb41f4536200260862b6e0b579e",
+    "observational_succ/clock_mahler_interpolation.py": "2082ec4316d0fa92a1587748e36cfe6f82ba7d3d3b9c94a575c8fe8e7dbb36a6",
+    "observational_succ/diagonal_adele_zeta.py": "1fbf3353c643e6b952269f99fed818050a2a7a136cc8542c3c1803f91813fd75",
+    "observational_succ/hasse_theta_seam.py": "09d0c527a2ad0a638abd5dc3e4adc4157817c757f4d1c3c338b941a90eb3a3c3",
+    "observational_succ/ordinal_succ_report.py": "70ea2ad6b80a9f4b1a03d5d5aa43327ed43fa109f9bb1c79085dc5de0d66e091",
+    "observational_succ/prime_clock_yoneda.py": "e19903f4411384b300359d5ee6891777bb3fc8bc90fdf611cb8a28d98ade3976",
+    "observational_succ/resource_probe.py": "e971c82ce17a9ed24fb0de5126f6fff3e1536698876546619406f87c74b3438b",
+    "observational_succ/yoneda.py": "4af0194e675406761c1dec151fe1407b65037e1e87e8bc8a950bd42bf914baca",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+  },
+  "square_affine_checks": 768,
+  "status": "BOUNDED_EXACT_PROBE_PASSED",
+  "successor_no_go": [
+    {
+      "after_successor": [
+        1,
+        2
+      ],
+      "before": [
+        0,
+        0
+      ],
+      "integers": [
+        1,
+        3
+      ],
+      "p": 2
+    },
+    {
+      "after_successor": [
+        1,
+        2
+      ],
+      "before": [
+        0,
+        0
+      ],
+      "integers": [
+        2,
+        8
+      ],
+      "p": 3
+    },
+    {
+      "after_successor": [
+        1,
+        2
+      ],
+      "before": [
+        0,
+        0
+      ],
+      "integers": [
+        4,
+        24
+      ],
+      "p": 5
+    },
+    {
+      "after_successor": [
+        1,
+        2
+      ],
+      "before": [
+        0,
+        0
+      ],
+      "integers": [
+        6,
+        48
+      ],
+      "p": 7
+    }
+  ],
+  "two_adic_unit_countercontrol": {
+    "least_common_unit_exponent": 2,
+    "modulus": 8,
+    "unit_group_cardinality": 4
+  },
+  "valuation_covariance_genuine": {
+    "PSD": true,
+    "determinant": "13/108",
+    "matrix": [
+      [
+        "5/9",
+        "-1/18"
+      ],
+      [
+        "-1/18",
+        "2/9"
+      ]
+    ]
+  },
+  "valuation_covariance_nonEuler": {
+    "PSD": true,
+    "determinant": "41/343",
+    "matrix": [
+      [
+        "24/49",
+        "-1/49"
+      ],
+      [
+        "-1/49",
+        "12/49"
+      ]
+    ]
+  }
+}

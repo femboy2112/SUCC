@@ -1,0 +1,60 @@
+name: Obstruction synthesis kernel
+on:
+  push:
+    branches: ['research/evolutionary-obstruction-synthesis-2026-10-13']
+  pull_request:
+    paths:
+      - 'formal/obstruction_synthesis/**'
+      - 'observational_succ/evolving_*.py'
+      - 'observational_succ/source_aware_amalgamation.py'
+      - 'observational_succ/obstruction_discovery_lab.py'
+      - 'tests/test_evolving_*.py'
+      - '.github/workflows/obstruction-synthesis.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  lean-kernel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean release
+        run: |
+          curl --fail --location --retry 3 https://github.com/leanprover/lean4/releases/download/v4.19.0/lean-4.19.0-linux.tar.zst -o "$RUNNER_TEMP/lean.tar.zst"
+          tar --zstd -xf "$RUNNER_TEMP/lean.tar.zst" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/lean-4.19.0-linux/bin" >> "$GITHUB_PATH"
+      - name: Check universal logical kernel and axiom inventory
+        run: |
+          set -o pipefail
+          lean --version
+          lean -DwarningAsError=true formal/obstruction_synthesis/RepairKernel.lean | tee "$RUNNER_TEMP/succ-lean-kernel.log"
+          lean -DwarningAsError=true formal/obstruction_synthesis/DiscoveredInstance.lean | tee -a "$RUNNER_TEMP/succ-lean-kernel.log"
+          printf "import Std\nexample : (0 : Nat) = 1 := by rfl\n" > "$RUNNER_TEMP/false-theorem.lean"
+          if lean "$RUNNER_TEMP/false-theorem.lean"; then echo "Invalid theorem unexpectedly accepted"; exit 1; fi
+          if grep -E 'sorryAx|^axiom |^opaque ' formal/obstruction_synthesis/*.lean "$RUNNER_TEMP/succ-lean-kernel.log"; then exit 1; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: obstruction-lean-kernel
+          path: ${{ runner.temp }}/succ-lean-kernel.log
+
+  synthesis-python:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install -e ".[test]"
+      - name: Targeted new synthesis and negative controls
+        run: python -m unittest discover -s tests -p 'test_evolving_*.py' -v
+      - name: Replay source-derived precommitted discovery receipt
+        run: |
+          python scripts/evolutionary_obstruction_probe.py > "$RUNNER_TEMP/evolution.json"
+          diff -u research/2026-10-13/EVOLUTIONARY_OBSTRUCTION_RECEIPT.json "$RUNNER_TEMP/evolution.json"

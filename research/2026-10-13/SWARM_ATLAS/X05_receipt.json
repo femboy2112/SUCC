@@ -1,0 +1,148 @@
+{
+  "adaptive": {
+    "deterministic_positive_decoder_selector_rank": 2,
+    "joint_history_laws": "equal",
+    "path_counts": [
+      128,
+      16
+    ],
+    "public_cost_I": "3/4",
+    "public_cost_J": "1",
+    "rank_I": 2,
+    "rank_J": 2,
+    "support_beliefs": [
+      13,
+      13
+    ]
+  },
+  "all_prior_Dirac_joint_rows_checked": 96,
+  "arithmetic": "fractions.Fraction exact; no floats",
+  "bounds": {
+    "actions": 3,
+    "coarse_reports": 4,
+    "fine_carriers": 8,
+    "originals": 4,
+    "support_closure_cap": 256,
+    "target_carriers": 4,
+    "word_length": 3
+  },
+  "branch": "research/swm-x05-2026-10-13",
+  "claim_id": "SWM-X05",
+  "correlation_mutant": {
+    "fine_ab_source_rows": "{0: {(0, 0): Fraction(1, 2), (1, 1): Fraction(1, 2)}, 1: {(0, 0): Fraction(1, 2), (1, 1): Fraction(1, 2)}}",
+    "fine_original_unidentifiable_after_ab": true,
+    "joint_square_rejected": {
+      "a": "a",
+      "joint_left": "1/2",
+      "joint_right": "0",
+      "q_after": 0,
+      "s": 1,
+      "x": 1,
+      "z": 0
+    },
+    "separate_marginal_checks": "PASS",
+    "target_ab_identifies_original": true,
+    "target_ab_source_rows": "{0: {(0, 0): Fraction(1, 2), (1, 1): Fraction(1, 2)}, 1: {(1, 0): Fraction(1, 2), (0, 1): Fraction(1, 2)}}"
+  },
+  "executed_commands": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 timeout 30s python research/2026-10-13/SWARM_ATLAS/X05_probe.py",
+      "exit_code": 0,
+      "stderr": ""
+    },
+    {
+      "command": "git diff --cached --check",
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "external_principal_review": {
+    "authority": "current shared-atlas C21 review; absent from immutable X05 parent",
+    "path": "/home/leah/succ_lab/many-worlds-atlas/research/2026-10-13/SWARM_ATLAS/reviews/C21_PRINCIPAL_REVIEW.md",
+    "sha256": "d947c66eeff5cebde0af478f921d84a752e9b4fb2354bc01208517997e13b51a"
+  },
+  "formal_kernel_verified": false,
+  "hidden_input_to_policy_or_decoder": false,
+  "history_words_checked": 1885,
+  "inherited_controls": {
+    "hidden_cost_actual_vs_separate_maxima": [
+      9,
+      18
+    ],
+    "keep_erase_ab_laws_differ": true,
+    "keep_erase_initial_readouts_equal": true
+  },
+  "inherited_probe_runs": {
+    "C17_probe.py": {
+      "command": [
+        "timeout",
+        "30s",
+        "/home/leah/.local/bin/python",
+        "/home/leah/succ_lab/swm-x05/research/2026-10-13/SWARM_ATLAS/C17_probe.py"
+      ],
+      "exit_code": 0,
+      "status": "PROVED LOCAL: dossier algebra; probe is TESTED MODEL",
+      "stderr": "",
+      "stdout_sha256": "c67f19c93f8616d92df5b9c57c58d6a4e61484488f1d80fa40640331ebcb091e"
+    },
+    "C20_probe.py": {
+      "command": [
+        "timeout",
+        "30s",
+        "/home/leah/.local/bin/python",
+        "/home/leah/succ_lab/swm-x05/research/2026-10-13/SWARM_ATLAS/C20_probe.py"
+      ],
+      "exit_code": 0,
+      "status": "TESTED MODEL",
+      "stderr": "",
+      "stdout_sha256": "df875569cde3685835c983eb521eaaf5f5c53c4b9a19691a6f9f42421eb2cac3"
+    },
+    "C21_probe.py": {
+      "command": [
+        "timeout",
+        "30s",
+        "/home/leah/.local/bin/python",
+        "/home/leah/succ_lab/swm-x05/research/2026-10-13/SWARM_ATLAS/C21_probe.py"
+      ],
+      "exit_code": 0,
+      "status": "TESTED MODEL",
+      "stderr": "",
+      "stdout_sha256": "212547d662c689bca41cd09044344cafc84e3289171d3d18adf10b0459b38568"
+    }
+  },
+  "paper_proof": "PROVED LOCAL; independent mathematical acceptance pending",
+  "parent_sha": "435f9469885cc8c45a0b86181dfb4867e204fd35",
+  "physical_calibration_claimed": false,
+  "private_cost_dominance_claimed": false,
+  "recurrence_vs_complete_hidden_path_oracle": "PASS",
+  "reproduce": "PYTHONDONTWRITEBYTECODE=1 timeout 30s python research/2026-10-13/SWARM_ATLAS/X05_probe.py",
+  "reset_or_extra_probe": false,
+  "reviewed_immutable_principal_files": {
+    "research/2026-10-13/SWARM_ATLAS/reviews/C17_PRINCIPAL_REVIEW.md": "e9e36cfcf3a8bf43a7279074d3ba3d78c190c42d9da99830b0d2b5e55aac5b15",
+    "research/2026-10-13/SWARM_ATLAS/reviews/C20_PRINCIPAL_REVIEW.md": "fd3e019798cb18de4783f0732fa392c43bd69d70a8d8e7c2c745b47713283a8c"
+  },
+  "runtime_imports": [],
+  "scholarly_novelty_claimed": false,
+  "sha256": {
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+    "research/2026-10-13/SWARM_ATLAS/C17.md": "506fac2b4e0894c05b9c138f767b9d3056c29b69e7a98e6ed5d6e9095760718d",
+    "research/2026-10-13/SWARM_ATLAS/C17_probe.py": "018397db4ad9e4f655383d03b59b5716de6f704bf58a3e8f983446dad5c273aa",
+    "research/2026-10-13/SWARM_ATLAS/C20.md": "43e5370adb99b018830298bf2e4ea46aa3c287cc411bce6e67b3c18202b8cc5d",
+    "research/2026-10-13/SWARM_ATLAS/C20_probe.py": "4e191c287e2247d90cb92df48e9f07390091c076c35d9debd512a2e0fa7fd9d4",
+    "research/2026-10-13/SWARM_ATLAS/C21.md": "bdd72996fafeb2aa4b04d2cbf72daa5f65d025f1b1225a5c63da494a5c77b88c",
+    "research/2026-10-13/SWARM_ATLAS/C21_probe.py": "0770e4e4913e9e559cb8a896cd0393d697383c08dcd03a820f2bd2a8a9d36465",
+    "research/2026-10-13/SWARM_ATLAS/X05.md": "ea4b073ec718ee870e49ea2d7c7a12a641a4b6175b7a4774b5479f548b28c3f4",
+    "research/2026-10-13/SWARM_ATLAS/X05_probe.py": "5981ea99e6fe5e604670b1cdb4c00f3a438c98e1ddf809a82b7022ba24eaed15"
+  },
+  "source_origin_git_object": {
+    "available_locally": false,
+    "command": "git cat-file -t ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "observed_exit_code": 128,
+    "observed_stderr": "fatal: git cat-file: could not get object info"
+  },
+  "status": "TESTED MODEL",
+  "zero_mass_words_not_conditioned": 1104
+}

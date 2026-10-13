@@ -1,0 +1,186 @@
+{
+  "academic_novelty_verified": false,
+  "discovery": {
+    "family_holdouts": [
+      {
+        "action_profile": {
+          "center_size": 2,
+          "central_commutator": true,
+          "commutator_order": 2,
+          "commuting": false,
+          "generator_orders": [
+            2,
+            2
+          ],
+          "group": true,
+          "size": 8
+        },
+        "complete_table_supplied": true,
+        "coordinates_given_to_learner": false,
+        "fresh_word_checks": 60,
+        "generator_product_order": 4,
+        "minimal_states": 4,
+        "new_swap_states": 8,
+        "original_x_dark_witness": [
+          0,
+          6
+        ],
+        "prime_for_audit_only": 2,
+        "relabeling_conjugacy_checked": true,
+        "source_states": 8,
+        "zero_coupling_profile": {
+          "center_size": 1,
+          "central_commutator": true,
+          "commutator_order": 1,
+          "commuting": true,
+          "generator_orders": [
+            1,
+            1
+          ],
+          "group": true,
+          "size": 1
+        },
+        "zero_coupling_states": 2
+      },
+      {
+        "action_profile": {
+          "center_size": 5,
+          "central_commutator": true,
+          "commutator_order": 5,
+          "commuting": false,
+          "generator_orders": [
+            5,
+            5
+          ],
+          "group": true,
+          "size": 125
+        },
+        "complete_table_supplied": true,
+        "coordinates_given_to_learner": false,
+        "fresh_word_checks": 60,
+        "generator_product_order": 5,
+        "minimal_states": 25,
+        "new_swap_states": 125,
+        "original_x_dark_witness": [
+          0,
+          24
+        ],
+        "prime_for_audit_only": 5,
+        "relabeling_conjugacy_checked": true,
+        "source_states": 125,
+        "zero_coupling_profile": {
+          "center_size": 1,
+          "central_commutator": true,
+          "commutator_order": 1,
+          "commuting": true,
+          "generator_orders": [
+            1,
+            1
+          ],
+          "group": true,
+          "size": 1
+        },
+        "zero_coupling_states": 5
+      }
+    ],
+    "out_of_family": {
+      "action_profile": {
+        "center_size": 1,
+        "central_commutator": false,
+        "commutator_order": 5,
+        "commuting": false,
+        "generator_orders": [
+          5,
+          2
+        ],
+        "group": true,
+        "size": 10
+      },
+      "fresh_word_checks": 60,
+      "minimal_states": 5,
+      "source_states": 5
+    }
+  },
+  "history": {
+    "counterfactual_branch_overlap_originals": [
+      3
+    ],
+    "erase_original_current_pairs": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "quotient_history_checks": 94,
+    "sequential_both_one_originals": [],
+    "single_preparation_reset_assumed": false
+  },
+  "kernel_proof_executed": false,
+  "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "precommit": "3ac5769",
+  "resources": {
+    "below_threshold_debt": [
+      "3/2",
+      "1/2",
+      "0",
+      "-1/4"
+    ],
+    "boundary_debt": [
+      "2",
+      "1",
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/16",
+      "1/32",
+      "1/64",
+      "1/128",
+      "1/256",
+      "1/512",
+      "1/1024",
+      "1/2048"
+    ],
+    "central_feature_update": [
+      "1/3",
+      "1/6",
+      "1/6"
+    ],
+    "clock_mutation": {
+      "conflicting_edge": [
+        1,
+        2,
+        1
+      ],
+      "cycle": [
+        0,
+        1,
+        2,
+        0
+      ],
+      "phases": null,
+      "residual": 1
+    },
+    "clock_positive": {
+      "cycle": null,
+      "phases": [
+        0,
+        1,
+        2
+      ],
+      "residual": 0
+    },
+    "empirical_psychology_or_music_claim": false,
+    "leaf_feature_update": [
+      "2/13",
+      "5/13",
+      "1/13"
+    ]
+  },
+  "schema": "succ-swm-f-receipt-v1",
+  "scope": "exact finite models plus written general derivations",
+  "sibling": "b2774ca485db4b5b4f7ce92e535220352fb3af2f"
+}

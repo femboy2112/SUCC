@@ -1,0 +1,1011 @@
+{
+  "base_commit": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+  "branch": "research/swm-x08-2026-10-13",
+  "controls_rejected": [
+    "drop_scaled_affine_offset",
+    "commute_affine_order",
+    "fixed_depth_unbounded_valuation_decoder",
+    "ignore_intermediate_prime_membership",
+    "repeat_residue_loop_as_prime_cover",
+    "cancel_observed_inverse_excursion",
+    "lower_ambient_precision_bound_by_one"
+  ],
+  "counts": {
+    "actual_directed_prime_adjacencies": 120,
+    "associativity_triples": 1000,
+    "complete_window_points": 121,
+    "complete_window_primes": 48,
+    "constructive_below_bound_falsifiers": 4400,
+    "independent_prime_checks": 49,
+    "independent_valuation_checks": 392,
+    "max_plus_concatenation_checks": 12800,
+    "slope_cocycle_and_inverse_cases": 200,
+    "stable_rational_perturbations": 52800,
+    "whole_path_models": 4400
+  },
+  "elapsed_milliseconds": 8118,
+  "execution_head": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+  "factorial": {
+    "g_then_h": {
+      "address_mixed_difference": {
+        "im": "0",
+        "re": "0"
+      },
+      "addresses": {
+        "00": {
+          "im": "1",
+          "re": "1"
+        },
+        "01": {
+          "im": "2",
+          "re": "1"
+        },
+        "10": {
+          "im": "2",
+          "re": "1"
+        },
+        "11": {
+          "im": "3",
+          "re": "1"
+        }
+      },
+      "enabledness_mixed_difference": -1,
+      "source_enabledness": {
+        "00": 1,
+        "01": 1,
+        "10": 1,
+        "11": 0
+      }
+    },
+    "h_then_g": {
+      "address_mixed_difference": {
+        "im": "1",
+        "re": "0"
+      },
+      "addresses": {
+        "00": {
+          "im": "1",
+          "re": "1"
+        },
+        "01": {
+          "im": "2",
+          "re": "1"
+        },
+        "10": {
+          "im": "2",
+          "re": "1"
+        },
+        "11": {
+          "im": "4",
+          "re": "1"
+        }
+      },
+      "enabledness_mixed_difference": 0,
+      "source_enabledness": {
+        "00": 1,
+        "01": 1,
+        "10": 1,
+        "11": 1
+      }
+    }
+  },
+  "fixed_depth_no_go": [
+    {
+      "depth": 1,
+      "place": "1+i",
+      "successor_valuations": [
+        1,
+        2
+      ],
+      "x": {
+        "im": "1",
+        "re": "0"
+      },
+      "xp": {
+        "im": "2",
+        "re": "-1"
+      }
+    },
+    {
+      "depth": 2,
+      "place": "1+i",
+      "successor_valuations": [
+        2,
+        3
+      ],
+      "x": {
+        "im": "2",
+        "re": "-1"
+      },
+      "xp": {
+        "im": "2",
+        "re": "-3"
+      }
+    },
+    {
+      "depth": 3,
+      "place": "1+i",
+      "successor_valuations": [
+        3,
+        4
+      ],
+      "x": {
+        "im": "2",
+        "re": "-3"
+      },
+      "xp": {
+        "im": "0",
+        "re": "-5"
+      }
+    },
+    {
+      "depth": 4,
+      "place": "1+i",
+      "successor_valuations": [
+        4,
+        5
+      ],
+      "x": {
+        "im": "0",
+        "re": "-5"
+      },
+      "xp": {
+        "im": "-4",
+        "re": "-5"
+      }
+    },
+    {
+      "depth": 5,
+      "place": "1+i",
+      "successor_valuations": [
+        5,
+        6
+      ],
+      "x": {
+        "im": "-4",
+        "re": "-5"
+      },
+      "xp": {
+        "im": "-8",
+        "re": "-1"
+      }
+    },
+    {
+      "depth": 1,
+      "place": "3",
+      "successor_valuations": [
+        1,
+        2
+      ],
+      "x": {
+        "im": "0",
+        "re": "2"
+      },
+      "xp": {
+        "im": "0",
+        "re": "8"
+      }
+    },
+    {
+      "depth": 2,
+      "place": "3",
+      "successor_valuations": [
+        2,
+        3
+      ],
+      "x": {
+        "im": "0",
+        "re": "8"
+      },
+      "xp": {
+        "im": "0",
+        "re": "26"
+      }
+    },
+    {
+      "depth": 3,
+      "place": "3",
+      "successor_valuations": [
+        3,
+        4
+      ],
+      "x": {
+        "im": "0",
+        "re": "26"
+      },
+      "xp": {
+        "im": "0",
+        "re": "80"
+      }
+    },
+    {
+      "depth": 4,
+      "place": "3",
+      "successor_valuations": [
+        4,
+        5
+      ],
+      "x": {
+        "im": "0",
+        "re": "80"
+      },
+      "xp": {
+        "im": "0",
+        "re": "242"
+      }
+    },
+    {
+      "depth": 5,
+      "place": "3",
+      "successor_valuations": [
+        5,
+        6
+      ],
+      "x": {
+        "im": "0",
+        "re": "242"
+      },
+      "xp": {
+        "im": "0",
+        "re": "728"
+      }
+    }
+  ],
+  "hidden_composite_intermediate": {
+    "final_prime": true,
+    "itinerary_valid": false,
+    "trace": [
+      {
+        "im": "1",
+        "re": "1"
+      },
+      {
+        "im": "2",
+        "re": "1"
+      },
+      {
+        "im": "3",
+        "re": "1"
+      },
+      {
+        "im": "4",
+        "re": "1"
+      }
+    ]
+  },
+  "inverse_excursion": {
+    "below_bound_witness": {
+      "depth": 3,
+      "difference_valuation": 3,
+      "original_trace": [
+        1,
+        0,
+        1
+      ],
+      "prefix": 1,
+      "witness": {
+        "im": "3",
+        "re": "7"
+      },
+      "witness_trace": [
+        1,
+        3,
+        1
+      ],
+      "z": {
+        "im": "1",
+        "re": "1"
+      }
+    },
+    "empty_demand": 2,
+    "excursion_demand": 4,
+    "label": {
+      "a": {
+        "im": "-1/4",
+        "re": "-1/4"
+      },
+      "b": {
+        "im": "5/2",
+        "re": "1"
+      }
+    },
+    "middle": {
+      "im": "2",
+      "re": "1"
+    },
+    "start": {
+      "im": "1",
+      "re": "1"
+    }
+  },
+  "limits": {
+    "address_space_bytes": 268435456,
+    "cpu_seconds": 25
+  },
+  "nonclaims": [
+    "ambient sharpness is not sparse-source sharpness",
+    "no periodic Gaussian-prime cover",
+    "no physical authentication",
+    "no formal logarithm of noncommutative actions",
+    "no analytic completion or RH progress",
+    "no zero-position inputs",
+    "no kernel proof, full suite, CI, compiler or network execution"
+  ],
+  "order_witness": {
+    "g": {
+      "a": {
+        "im": "0",
+        "re": "2"
+      },
+      "b": {
+        "im": "0",
+        "re": "-1"
+      }
+    },
+    "g_then_h_trace": [
+      {
+        "im": "1",
+        "re": "1"
+      },
+      {
+        "im": "2",
+        "re": "1"
+      },
+      {
+        "im": "3",
+        "re": "1"
+      }
+    ],
+    "h": {
+      "a": {
+        "im": "0",
+        "re": "1"
+      },
+      "b": {
+        "im": "1",
+        "re": "0"
+      }
+    },
+    "h_then_g_trace": [
+      {
+        "im": "1",
+        "re": "1"
+      },
+      {
+        "im": "2",
+        "re": "1"
+      },
+      {
+        "im": "4",
+        "re": "1"
+      }
+    ],
+    "source_paths": [
+      true,
+      false
+    ],
+    "start": {
+      "im": "1",
+      "re": "1"
+    }
+  },
+  "periodic_source_no_go": {
+    "actual_path": [
+      {
+        "im": "1",
+        "re": "1"
+      },
+      {
+        "im": "2",
+        "re": "1"
+      },
+      {
+        "im": "3",
+        "re": "0"
+      },
+      {
+        "im": "2",
+        "re": "-1"
+      },
+      {
+        "im": "1",
+        "re": "-2"
+      },
+      {
+        "im": "0",
+        "re": "-3"
+      },
+      {
+        "im": "1",
+        "re": "-4"
+      }
+    ],
+    "displacement": {
+      "im": "0",
+      "re": "-5"
+    },
+    "repeated_source_path_valid": false,
+    "translated_second_norm": 20,
+    "translated_second_vertex": {
+      "im": "2",
+      "re": "-4"
+    }
+  },
+  "retained_sharpness_examples": [
+    {
+      "cap": 1,
+      "depth": 0,
+      "difference_valuation": 0,
+      "original_trace": [
+        1,
+        0
+      ],
+      "place": "1+i",
+      "prefix": 0,
+      "witness": {
+        "im": "0",
+        "re": "1"
+      },
+      "witness_trace": [
+        0,
+        1
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "0"
+      }
+    },
+    {
+      "cap": 2,
+      "depth": 1,
+      "difference_valuation": 1,
+      "original_trace": [
+        2,
+        0
+      ],
+      "place": "1+i",
+      "prefix": 0,
+      "witness": {
+        "im": "1",
+        "re": "1"
+      },
+      "witness_trace": [
+        1,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "0"
+      }
+    },
+    {
+      "cap": 3,
+      "depth": 2,
+      "difference_valuation": 2,
+      "original_trace": [
+        3,
+        0
+      ],
+      "place": "1+i",
+      "prefix": 0,
+      "witness": {
+        "im": "2",
+        "re": "0"
+      },
+      "witness_trace": [
+        2,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "0"
+      }
+    },
+    {
+      "cap": 4,
+      "depth": 3,
+      "difference_valuation": 3,
+      "original_trace": [
+        4,
+        0
+      ],
+      "place": "1+i",
+      "prefix": 0,
+      "witness": {
+        "im": "2",
+        "re": "-2"
+      },
+      "witness_trace": [
+        3,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "0"
+      }
+    },
+    {
+      "cap": 1,
+      "depth": 0,
+      "difference_valuation": 0,
+      "original_trace": [
+        0,
+        1
+      ],
+      "place": "1+i",
+      "prefix": 0,
+      "witness": {
+        "im": "0",
+        "re": "0"
+      },
+      "witness_trace": [
+        1,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "1"
+      }
+    },
+    {
+      "cap": 2,
+      "depth": 1,
+      "difference_valuation": 1,
+      "original_trace": [
+        0,
+        2
+      ],
+      "place": "1+i",
+      "prefix": 1,
+      "witness": {
+        "im": "1",
+        "re": "0"
+      },
+      "witness_trace": [
+        0,
+        1
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "1"
+      }
+    },
+    {
+      "cap": 3,
+      "depth": 2,
+      "difference_valuation": 2,
+      "original_trace": [
+        0,
+        2
+      ],
+      "place": "1+i",
+      "prefix": 1,
+      "witness": {
+        "im": "0",
+        "re": "-1"
+      },
+      "witness_trace": [
+        0,
+        3
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "1"
+      }
+    },
+    {
+      "cap": 4,
+      "depth": 2,
+      "difference_valuation": 2,
+      "original_trace": [
+        0,
+        2
+      ],
+      "place": "1+i",
+      "prefix": 1,
+      "witness": {
+        "im": "0",
+        "re": "-1"
+      },
+      "witness_trace": [
+        0,
+        4
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "1"
+      }
+    },
+    {
+      "cap": 1,
+      "depth": 0,
+      "difference_valuation": 0,
+      "original_trace": [
+        1,
+        0
+      ],
+      "place": "3",
+      "prefix": 0,
+      "witness": {
+        "im": "0",
+        "re": "1"
+      },
+      "witness_trace": [
+        0,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "0"
+      }
+    },
+    {
+      "cap": 2,
+      "depth": 1,
+      "difference_valuation": 1,
+      "original_trace": [
+        2,
+        0
+      ],
+      "place": "3",
+      "prefix": 0,
+      "witness": {
+        "im": "0",
+        "re": "3"
+      },
+      "witness_trace": [
+        1,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "0"
+      }
+    },
+    {
+      "cap": 3,
+      "depth": 2,
+      "difference_valuation": 2,
+      "original_trace": [
+        3,
+        0
+      ],
+      "place": "3",
+      "prefix": 0,
+      "witness": {
+        "im": "0",
+        "re": "9"
+      },
+      "witness_trace": [
+        2,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "0"
+      }
+    },
+    {
+      "cap": 4,
+      "depth": 3,
+      "difference_valuation": 3,
+      "original_trace": [
+        4,
+        0
+      ],
+      "place": "3",
+      "prefix": 0,
+      "witness": {
+        "im": "0",
+        "re": "27"
+      },
+      "witness_trace": [
+        3,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "0"
+      }
+    },
+    {
+      "cap": 1,
+      "depth": 0,
+      "difference_valuation": 0,
+      "original_trace": [
+        0,
+        0
+      ],
+      "place": "3",
+      "prefix": 0,
+      "witness": {
+        "im": "0",
+        "re": "0"
+      },
+      "witness_trace": [
+        1,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "1"
+      }
+    },
+    {
+      "cap": 2,
+      "depth": 0,
+      "difference_valuation": 0,
+      "original_trace": [
+        0,
+        0
+      ],
+      "place": "3",
+      "prefix": 0,
+      "witness": {
+        "im": "0",
+        "re": "0"
+      },
+      "witness_trace": [
+        2,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "1"
+      }
+    },
+    {
+      "cap": 3,
+      "depth": 0,
+      "difference_valuation": 0,
+      "original_trace": [
+        0,
+        0
+      ],
+      "place": "3",
+      "prefix": 0,
+      "witness": {
+        "im": "0",
+        "re": "0"
+      },
+      "witness_trace": [
+        3,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "1"
+      }
+    },
+    {
+      "cap": 4,
+      "depth": 0,
+      "difference_valuation": 0,
+      "original_trace": [
+        0,
+        0
+      ],
+      "place": "3",
+      "prefix": 0,
+      "witness": {
+        "im": "0",
+        "re": "0"
+      },
+      "witness_trace": [
+        4,
+        0
+      ],
+      "word": [
+        {
+          "a": {
+            "im": "0",
+            "re": "1"
+          },
+          "b": {
+            "im": "0",
+            "re": "1"
+          }
+        }
+      ],
+      "z": {
+        "im": "0",
+        "re": "1"
+      }
+    }
+  ],
+  "schema": "SUCC.X08.exact.v1",
+  "source_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-13/E36_DIRICHLET_LOG_MULTIPLICATIVITY.md": "cd35695cbfe485264dab30180e421764db6f21bf695eb6b30b39498fe970c5db",
+    "research/2026-10-13/E39_GAUSSIAN_ARITHMETIC_CUT_AND_TRANSPORT.md": "00fb4f3cbe33c151d7a259754399ceb37cc839d89dd3e888df820fa9b6aa41ed",
+    "research/2026-10-13/SWARM_ATLAS/E33.md": "4843fddb55a7ca63c620b6eafddb3e94a3c87dee0e9b226184150c1f7eee2f89",
+    "research/2026-10-13/SWARM_ATLAS/E34.md": "635bc6080e9ff74194c8a811c6cc93eeb20aeebe6449dd8954b0128bf167ba08",
+    "research/2026-10-13/SWARM_ATLAS/E35.md": "f756547399e976948118d809746902348feae1c4d6e3b6268c310b0a0fec0f78",
+    "research/2026-10-13/SWARM_ATLAS/PROTOCOL.md": "c268440bd21b5825a6666d1e043a108e694e545feaae77196ea2c463507590d0",
+    "research/2026-10-13/SWARM_ATLAS/X08.md": "8bd0d3b218c6d55bfb31f98f2666dcb20c37c26d6410ff4afc81d7811d8b33f8",
+    "research/2026-10-13/SWARM_ATLAS/X08_probe.py": "3796c41d956d0e877208cd68d5ce97531384b37f4c6755d2b0a15e260bf9a465"
+  },
+  "status": "TESTED MODEL"
+}

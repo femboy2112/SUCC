@@ -66,6 +66,16 @@ The mathematical subsystems have distinct domains and kinds of evidence. They ar
 
 ## Research provenance and gates
 
+The additive [NO-GHOST layer](../research/2026-10-13/NO_GHOST/INTEGRATION.md)
+distinguishes legal private-path support, full joint law, and source-blind public
+policy realization. `no_ghost` compiles finite declared source/occurrence kernels
+and exact marginal/flow certificates; `no_ghost_coherence` checks chosen private
+comparisons; `no_ghost_policy` retains public information sets through a finite
+realization plan and independently replays the extracted policy. Its conditional
+schedule-presentation descent requires complete constraints, authorized connected
+charts, path coherence and restriction naturality. None of these operations
+marks a merely possible trajectory as a performed event.
+
 Claims should be labeled CLASSICAL, PROVED LOCAL, TESTED MODEL, HYPOTHESIS, UNVERIFIED or REFUTED and connected to a precise statement, author/source, proof or test, mutation controls and assumptions.
 
 The mathematical **source of truth** is not merely a numerical plot. Finite negative claims require exact algebra or independently justified error enclosures. Even an impeccably rigorous prime-only interval is not a completed Gamma/Weil interval.
@@ -418,3 +428,90 @@ Dual E/E'' probes preserve raw covariance (-1)^lag/4; declare common orientation
 ## Source-grounded historical model repair: the Maxwell/Lorentz test
 
 New additive source modules galilean_lorentz_succ, relativistic_shadow_tower, and maxwell_transverse_shadow provide an exact mathematical 1+1 historical case study. They separate old-environment validity, failed principal-symbol covariance, independent source shadow measurements, global metric construction at E, geometric/time orientation, and dynamical proof transport through the repaired Lorentz frame. They also explicitly test an alternative Galilean moving-medium *source law*: a failed model square does not identify physical ontology. See [GL1–GL12](../research/2026-10-12/HISTORICAL_GALILEO_LORENTZ_SUCC_TRANSITION.md) and ledger O459–O471. No modification to historical provenance, no claim that the Python model authenticates real historical measurements.
+
+
+## Typed model capsules and compositional bridge construction
+
+`categorical_repair_synthesis.py` constructs finite observational coalgebra quotients, shortest separating words, conditional rational two-mode memory representations and source-exact Stieltjes alias countermodels. `categorical_model_bridges.py` adds context/basis/source typed model capsules, polynomial-degree-bounded all-frequency behavioral certificates, verified parallel/feedback contexts, hierarchical interface jets, electrical/thermal diffusion analogical adapters and an absorbing continuous-time Markov interface with a common source resolvent. `scripts/categorical_model_bridge_probe.py` reproduces exact receipts. A capsule stores the proof obligations and admissible contexts so ordinary E reasoning can treat its entire internal realization as one morphism; hidden interventions or new observational menus reopen the interface and can refute a former equivalence.
+
+The implementation is a narrow, exact *instance* of classical categorical black-boxing, not a source-free universal functor or a new physical law. Unlike an empirical origin attestation, source/epoch/basis tags are typed consistency claims; cross-domain adapters transport the **mathematical law**, never physical source identity. [Research proof and negative controls](../research/2026-10-12/CATEGORICAL_MODEL_BRIDGES_AND_REPAIR_SYNTHESIS.md) O486–O503.
+
+
+## Context-relative heuristics, black-box model families and evidential type separation
+
+The `contextual_heuristics.py` layer is a finite exact Bayesian **hypothesis selector**, not the SUCC theorem checker. Each `ModelShape` has a context, structural feature tags, a declared code length and a target label. An exact `ModelProbe` supplies full source-relative conditional outcome laws and a resource cost; a `ProbeReceipt` has source/basis/epoch/event context. Bayesian conditioning is disallowed on a zero predictive denominator, and repeated noisy sources require an explicit conditional kernel; `heuristic_joint_noise.py` independently verifies it against a finite original-source latent law. Source identity metadata is not physical authenticity.
+
+`HeuristicTower.expected_gini_gain()` measures the expected reduction in uncertainty about the *specific target*, not necessarily the full model identity. `observational_capsules()` groups indistinguishable model candidates, and `quotient_shape_prior()` avoids artificial confidence from cloned presentations within the declared probe menu. `heuristic_shape_learning.py` learns which feature-score schemes are fruitful from separate verified historical tasks without reusing one source twice. `heuristic_bridge_discovery.py` reuses the prior positive Stieltjes rational alias and law-level RC↔heat analogies. `heuristic_evidence_martingales.py` provides source-conditional likelihood-ratio wealth and an exact finite adaptive Ville audit, not a substitute for a deductive certificate. See [HS0–HS13](../research/2026-10-12/CONTEXTUAL_HEURISTIC_SUCC_AND_BAYESIAN_REPAIR.md). The source/proof/heuristic separation is mandatory even at arbitrarily high posterior confidence; false support-exhaustiveness or data independence may defeat statistical interpretation.
+
+## Genetic model intersection and context-specific abstraction (GF0–GF12)
+
+The categorical research stack now has an explicit **proposal/verification split** beyond Bayesian shape priors: `relational_model_genetics` represents a model capsule as one finite typed relation with original-source, epoch, basis, and contextual ports. An independently synthesized finite value bijection aligns differently named interface vocabularies only when its declared source-table obligations hold. FinSet pullback/natural join computes the exact relational fiber product and yields new projected theorem capsules with proof ancestry. Full source identity is *not* established by identical strings, nor is any synthetic table external empirical attestation.
+
+`evolutionary_bridge_search` runs bounded, seeded genetic mutations/crossover over typed interface permutation and active-parent genes. Its fitness never grants proof status. The cross-composition verifier checks the exact source table and full joined row set, then can extract a previously absent relation. Small finite grammars also permit an exhaustive independent optimality audit. `genetic_obstruction_holonomy` reacts to incompatible cycles by deriving a nontrivial Z2 local-system/path-groupoid connection; it does not claim the contradictory scalar global section exists. `source_coupling_bounds` proves sharp Fréchet joint probability bounds and a 2x2 hidden-state rank lower bound, preventing two model-vibe priors from inventing independent evidence. The full theorem and adversarial suite is in GF0–GF12. New code is additive and has no RH, physical, or full general theory auto-invention authority.
+
+## Causal observational descent, probe-language growth and exact source firewalls (EODCS II)
+
+**State-changing source square:** A causal action is an exact, versioned U:S0→S1, with total reports q0:S0→O0 and q1:S1→O1. E may construct an observable map V:O0→O1 iff every q0-fiber has constant q1∘U. This is an iff relative to the observed image; source-table coverage/epoch/basis must be explicit. A failure emits s,t with q0(s)=q0(t) and q1(U(s))≠q1(U(t)). The coarsest mathematically sufficient refinement for ONE future report is the pair q*=(q0,q1∘U), not an asserted physical sensor. A proof about the **original** source is transported separately only after checking predicate preservation under U and reportability, not from the commutation of reports alone.
+
+**Stationary observational ladder:** Given complete finite U:S→S and q:S→O, E generates legal probe expressions q∘U^t, compares word partitions P_h, stops at their first equality P_h=P_(h+1), and verifies source transition congruence. A nonempty finite carrier stabilizes in finitely many strict refinements; this is not an analytic/physical-infinity law. The prior full source and exact probe grammar are prerequisites. An exhaustive hitting-set oracle independently checks any claimed minimum-cost nonadaptive static probe basis; evolutionary/greedy proposals have no mathematical certification privilege. Physical reset availability and source-probe materialization remain separate **μ/probe availability** constraints.
+
+**Multi-action closure and curvature:** In a finite source with typed action alphabet A, E's executable probe syntax is a finite word w∈A* followed by the report q. Stable output-preserving action congruence means all such words agree for each paired state; no model mutation confined to A* can create a discriminator. The two-path defect U_b∘U_a(s) versus U_a∘U_b(s) can be source-level nonzero but currently report-invisible. E searches shortest further legal action words before assigning immediate, delayed, or **toolkit-dark** status. This is groupoid/operational observation language, not independent evidence for a real physical curvature tensor. User-required κ/contact, φ/tool-relative indistinguishability, σ/source adequacy, μ/probe access, provenance and independence remain separate diagnostics.
+
+**Proof placement:** Standalone Lean 4 modules EODCS_CausalDescent.lean and EODCS_ActionClosure.lean prove exact kernel-image transport, universal repaired pairs, lawful square composition, tree-holonomy fixedpoint equivalence, abstract deck descent, all-action-word darkness, and observational/source noncommutation implications. They do NOT machine-prove finite cardinal stabilization, minimal full graph cover, empirical source authenticity or source-derived Weil positivity. Each proof's exact SHA CI run must be verified before promoting its status; Python simulation and mathematical derivation are independent but nonempirical instruments.
+
+See [CS1–CS10](../research/2026-10-13/EODCS_CAUSAL_NERODE_PROBE_GENESIS.md), claims O572–O594, and source-conditional [probe receipt](../scripts/eodcs_causal_probe.py).
+
+**Global finite-plateau logical contract (CS11):** the Lean4 theorem `plateau_iff_complete_future_equivalence` requires the **complete** stationary source partition implication, not a sequence of sampled agreeing finite observations. It uses induction to discharge a mathematical universal quantifier over future times; no observer has executed infinitely many steps. **Partial state coverage (CS12):** `partial_causal_audit` returns `sample_consistent` separately from `globally_certified_from_sample`, and proposes (but does not execute) an omitted source-state probe. Only full coverage of a declared complete mathematical source class enables bounded certification. Exact receipts and genetic failures are frozen in CS13 and ledger O595–O598.
+
+## Relational source-update support and tight modal envelopes (EODCS III)
+
+**Source type:** R:S_before→nonempty subsets(S_after), old q and new r report maps, matching source-ID/basis/chronological epochs. It is explicitly a finite **possibility relation**, never a Bayesian/stochastic kernel. A precise report-level set-valued successor V exists iff every old-q fiber is constant for K_R(s)={r(t): t in R(s)}. Failed equality has an exact same-report/different-support witness. The canonical pair report (q,K_R) is the coarsest mathematical refinement preserving old and full successor support, without implying an available sensor.
+
+**Without exact descent:** define MAY(o)=union over K_R(s) in old fiber q^-1(o) and COMMON(o)=intersection. They satisfy COMMON⊆K_R(s)⊆MAY for every hidden candidate s, and are respectively least sound upper/greatest sound lower approximations in the powerset order. Both bounds coincide for all realized o iff exact V descends; all these general theorems are Lean-kernel checked in formal/EODCS_RelationalChoice.lean. COMMON means "possible from every hidden state", **not** "every branch produces this report". A property is guaranteed in this declared source iff MAY is contained in the property set. Sample-incomplete sources cannot promote these statements to physical global truth.
+
+**Independence/firewall:** equal possibility supports can still carry different normalized conditional probabilities, so neither empirical Bayesian evidence nor source-independent prior is synthesized. Versioned relational composition unions intermediate supports (not weights). See [RC1–RC8](../research/2026-10-13/EODCS_RELATIONAL_MODAL_ENVELOPES.md), ledger O599–O609. This is a typed mathematical successor-representation repair with no RH/Weil inference.
+
+## VOYAGER — actual source versus ideal inverse-limit observer (draft PR #48)
+
+**Source/policy surface:** a fully declared deterministic source S with authorized action monoid A* and readout q has canonical context trace \(\Phi(s)(w)=q(U_w(s))\). Lawful source morphisms commute with complete traces, and trace-equality is preserved by each legal action. S/ker\(\Phi\) is the behavioral quotient; a source ID, actual event history, finite access budget, full model completeness and physical measurement remain separate proof obligations.
+
+**Mathematical completion surface:** for each finite probe family F, define X_F as the true source-image F-reports and use restriction X_G→X_F. The compatible projective limit equals the subset of all formal full observation profiles matching some actual source on every finite F; for finite discrete output it is the product-topological closure of the trace image. A completed profile may have no ORIGINAL representative if \(\Phi(S)\) is not closed. Lean checks finite-source refutation/realization and a strongly negative **arbitrary finite probe list** counterexample in the original eventual-zero stream source; the general topological closure theorem remains paper mathematics. Compactness/continuity (or a genuine bounded complete finite source) are distinct **σ/source-map adequacy** gates, not innate properties of an abstract report.
+
+**Source complexity surface:** the binary pulse at times 2^k has every finite prefix generated by a finite machine, while no fixed finite deterministic source realizes the entire sequence (ultimately periodic finite-state traces versus constructive power-two gap). Under deterministic stationary source-law assumptions, observing the zero gap from time 2^k+1 to 2^(k+1) followed by a one forces **at least 2^k distinct original states**, Lean-verified by a no-repeat temporal injection. A finite observer may certify this lower bound while never completing the global infinite report. Finite-source cardinal N bounds the *number* of refuting probes, not their lengths, costs or physical availability.
+
+**Observational geometry:** the exact dyadic first-difference ultrametric organizes finite prefix resolution; convergence in this metric must not be upgraded to original-source realization without a closed source image. TLICA contact/toolkit/provenance/identity diagnostics remain separate. No source-derived Weil positivity or RH theorem follows merely from any of these classical limits. See [V0–V10](../research/2026-10-13/VOYAGER_OBSERVATIONAL_PROFINITE_COMPLETION.md), ledger O610–O630.
+
+**Adaptive no-go lamp:** Every finite set of observed binary head/shift coordinates has TWO explicit consistent full streams: one finite-tail-zero and one cofinite-tail-one. Lean proves this for arbitrary target profiles and probe schedules; a deterministic finite terminating adaptive policy can only react to such a finite transcript, and therefore cannot produce a decision correct on both tail classes. The separate simulator replays one identical policy path with both sources. This is a demonstrated **probe-closure boundary**, not a statement that analytic global claims are inherently unprovable, that source history was physically measured, or that the original carrier equals its projective completion. [V11–V12](../research/2026-10-13/VOYAGER_OBSERVATIONAL_PROFINITE_COMPLETION.md), O631–O637.
+
+## Canonical source-indexed carrier — compatibility between all SUCC mathematics
+
+The carrier, not a hypothetical new sheaf, is the architectural base. Its mathematical original labels S are fixed through an actual observation path; only its current stage C_h and retained receipt history change. A lawful action a is the typed joint instrument \`K_a:C_h→Prob(Receipt_a×C_(h+1))\`, with an actual availability predicate. An actual history h is represented by \`J_h(s,c)\` as an unnormalized original/current **subprobability**, retaining full path evidence; original claims are certified only when homogeneous over positive original support. Marginals alone generally lose original/current correlations.
+
+The principal diagram for a source-backed quotient \`q_h:C_h→D_h\` is:
+
+\`\`\`text
+J_h(S,C_h) ------- actual K_a with receipt z -------> J_(h a z)(S,C_(h+1))
+      | id_S × q_h                                      | id_S × q_(h+1)
+      v                                                 v
+q_h*J_h(S,D_h) --- descended full joint Kbar_a^z --> q_(h+1)*J_(h a z)(S,D_(h+1))
+\`\`\`
+
+It commutes for EVERY S-indexed prior iff enabledness and full joint row laws are constant on q_h fibers. This is a **law of transport over the carrier**, not a claim that q is itself a physical sensor. The normalized original posterior and raw receipt probability are both preserved under every valid finite composition. A failed square produces a precise kernel/enabledness witness and a coarsest mathematical one-step repair \`q*=(q,enabled,all joint signatures)\`; repeated stationary refinement yields the coarsest stable probabilistic observer.
+
+**Compatibility layers:** deterministic F48 history support and probability-preserving C17 (fresh-root) stochastic histories are adapted in code; support-only EODCS relational shadows, category A06 repair/coreflection and VOYAGER topology are intended compatibility layers described in prose only (not yet wired as code adapters; status UNVERIFIED), alongside the actual carrier's physical-access constraints. Each retains its own hypotheses; a support projection is never silently inverted into weights, and original-provenance bookkeeping is never deleted in the name of a smaller current state. The source manifests, Lean proof scope and WIP swarm fences are in [carrier-first dossier](../research/2026-10-13/CARRIER_INDEXED_HISTORY_THEORY.md) and [Claude integration handoff](CARRIER_MAIN_INTEGRATION_HANDOFF.md).
+## Cambrian extension: representation, realization and access
+
+The [Cambrian integration report](CAMBRIAN_CAMPAIGN_2026-10-13.md) keeps three
+independent contracts explicit. A source update must descend through the
+chosen observation; compatible reports must be realized by an original
+source history; and the source laws, probes, resets and resources used by
+the derivation must be available. None of these contracts implies the others.
+
+`cambrian_stochastic_transport` uses the joint next-report/receipt kernel,
+with exact rational laws and explicit source charts, to preserve evidence
+and Bayesian posteriors across changing carriers. `cambrian_c_geometry`
+handles relational gluing and source histories; its standalone Lean theorem
+requires finite initial and successor menus. Cluster modules are research
+adapters with declared mathematical inputs, not empirical source authenticators.
+The scalar kernel interface does not claim arbitrary noncommutative quantum
+factorization or physical intervention equivalence.

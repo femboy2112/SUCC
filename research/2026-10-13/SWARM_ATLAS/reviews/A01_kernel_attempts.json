@@ -1,0 +1,37 @@
+{
+  "attempts": [
+    {
+      "command": [
+        "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+        "-j1",
+        "-M512",
+        "-o",
+        ".swm-tools/proofs/SWM_A01_BaseChange.olean",
+        "formal/SWM_A01_BaseChange.lean"
+      ],
+      "exit_code": 1,
+      "stdout": "formal/SWM_A01_BaseChange.lean:30:46: error: invalid field 'ExistentialBC', the environment does not contain 'ObservationalSUCC.SWM_A01.Square.ExistentialBC'\n  s\nhas type\n  Square W X Y Z\nformal/SWM_A01_BaseChange.lean:30:64: error: invalid field 'Covered', the environment does not contain 'ObservationalSUCC.SWM_A01.Square.Covered'\n  s\nhas type\n  Square W X Y Z\nformal/SWM_A01_BaseChange.lean:32:4: error: tactic 'introN' failed, insufficient number of binders\ncase mp\nh : sorry\n\u22a2 sorry\nformal/SWM_A01_BaseChange.lean:35:4: error: tactic 'introN' failed, insufficient number of binders\ncase mpr\nh : sorry\n\u22a2 sorry\nformal/SWM_A01_BaseChange.lean:43:44: error: invalid field 'UniversalBC', the environment does not contain 'ObservationalSUCC.SWM_A01.Square.UniversalBC'\n  s\nhas type\n  Square W X Y Z\nformal/SWM_A01_BaseChange.lean:43:60: error: invalid field 'Covered', the environment does not contain 'ObservationalSUCC.SWM_A01.Square.Covered'\n  s\nhas type\n  Square W X Y Z\nformal/SWM_A01_BaseChange.lean:45:4: error: tactic 'introN' failed, insufficient number of binders\ncase mp\nh : sorry\n\u22a2 sorry\nformal/SWM_A01_BaseChange.lean:51:4: error: tactic 'introN' failed, insufficient number of binders\ncase mpr\nh : sorry\n\u22a2 sorry\nformal/SWM_A01_BaseChange.lean:61:25: error: invalid field 'Pullback', the environment does not contain 'ObservationalSUCC.SWM_A01.Square.Pullback'\n  s\nhas type\n  Square W X Y Z\nformal/SWM_A01_BaseChange.lean:64:11: error: invalid field 'Pullback', the environment does not contain 'ObservationalSUCC.SWM_A01.Square.Pullback'\n  s\nhas type\n  Square W X Y Z\nformal/SWM_A01_BaseChange.lean:64:28: error: invalid field 'comparison', the environment does not contain 'ObservationalSUCC.SWM_A01.Square.comparison'\n  s\nhas type\n  Square W X Y Z\nformal/SWM_A01_BaseChange.lean:64:50: error: invalid field 'Covered', the environment does not contain 'ObservationalSUCC.SWM_A01.Square.Covered'\n  s\nhas type\n  Square W X Y Z\nformal/SWM_A01_BaseChange.lean:65:2: error: tactic 'constructor' failed, no applicable constructor found\n\u22a2 (\u2200 (p : sorry), \u2203 a, sorry = p) \u2194 sorry\n'ObservationalSUCC.SWM_A01.existential_base_change_iff_covered' depends on axioms: [sorryAx]\n'ObservationalSUCC.SWM_A01.universal_base_change_iff_covered' depends on axioms: [sorryAx]\nformal/SWM_A01_BaseChange.lean:98:14: error: unknown constant 'comparison_surjective_iff_covered'\n'ObservationalSUCC.SWM_A01.original_target_descends_iff_fiber_constant' depends on axioms: [Classical.choice]\n",
+      "stderr": "",
+      "elapsed_seconds": 1.2123,
+      "observed_process_tree_peak_rss_kib": 222796,
+      "minimum_system_available_memory_kib": 4078192
+    },
+    {
+      "command": [
+        "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+        "-j1",
+        "-M512",
+        "-o",
+        ".swm-tools/proofs/SWM_A01_BaseChange.olean",
+        "formal/SWM_A01_BaseChange.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'ObservationalSUCC.SWM_A01.existential_base_change_iff_covered' does not depend on any axioms\n'ObservationalSUCC.SWM_A01.universal_base_change_iff_covered' does not depend on any axioms\n'ObservationalSUCC.SWM_A01.comparison_surjective_iff_covered' does not depend on any axioms\n'ObservationalSUCC.SWM_A01.original_target_descends_iff_fiber_constant' depends on axioms: [Classical.choice]\n",
+      "stderr": "",
+      "elapsed_seconds": 1.4099,
+      "observed_process_tree_peak_rss_kib": 225708,
+      "minimum_system_available_memory_kib": 2895044,
+      "source_sha256": "64284ec25dcd5c53a143ff69bc5669897625487b00e27e93cc103d6857707eda"
+    }
+  ]
+}

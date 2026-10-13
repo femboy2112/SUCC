@@ -1,0 +1,54 @@
+[
+  {
+    "mission": "A05",
+    "command": [
+      "python",
+      "research/2026-10-13/SWARM_ATLAS/A05_probe.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "69375fb1a8f135c05fd6ae03554ac6434cad0d05e88dc70176d4f3cf581bf0e5",
+    "stderr": ""
+  },
+  {
+    "mission": "A06",
+    "command": [
+      "python",
+      "research/2026-10-13/SWARM_ATLAS/A06_probe.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "be9e0e97ed4d75ced2f98a2e357b6023b9c90e038102baa3f1e65c857d4f96f0",
+    "stderr": ""
+  },
+  {
+    "mission": "C18",
+    "command": [
+      "python",
+      "research/2026-10-13/SWARM_ATLAS/C18_probe.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "c1f759afcb51e38242812743729bfddd1e5fae74b9f309d67f6c4d415408a602",
+    "stderr": ""
+  },
+  {
+    "mission": "E33",
+    "command": [
+      "python",
+      "research/2026-10-13/SWARM_ATLAS/E33_probe.py"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "a5dba00b6434f1cd4cb41993d352340b7b7596e55a5dbe1f8395d44bd91cc7a3",
+    "stderr": ""
+  },
+  {
+    "mission": "X01",
+    "command": [
+      "python",
+      "research/2026-10-13/SWARM_ATLAS/X01_probe.py",
+      "--receipt",
+      "/tmp/swm-X01-replay.json"
+    ],
+    "exit_code": 0,
+    "stdout_sha256": "7f810c0c566d65d3641db29640a1a0d9adf48e318c82c79cd94bf5c613cc792c",
+    "stderr": ""
+  }
+]

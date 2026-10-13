@@ -1,0 +1,721 @@
+{
+  "B_targets": {
+    "alternating_clocks": [
+      [
+        11,
+        10
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        33,
+        30
+      ],
+      [
+        40,
+        40
+      ],
+      [
+        55,
+        50
+      ],
+      [
+        60,
+        60
+      ],
+      [
+        77,
+        70
+      ],
+      [
+        80,
+        80
+      ],
+      [
+        99,
+        90
+      ],
+      [
+        100,
+        100
+      ],
+      [
+        121,
+        110
+      ],
+      [
+        120,
+        120
+      ]
+    ],
+    "bounded_surplus_individual_polynomial_completes": true,
+    "constant_target_needs_mean_subtraction": true,
+    "exact_rational_Chebyshev_inverse_checks": 85,
+    "geometric_residuals": [
+      "2",
+      "3",
+      "8/9",
+      "3",
+      "32/81",
+      "3",
+      "128/729",
+      "3",
+      "512/6561",
+      "3",
+      "2048/59049",
+      "3"
+    ],
+    "lacunary_truncation_tail_checks": 36,
+    "operator_unit_ball_uniform_decay_refuted": true,
+    "universal_fixed_continuous_target_iff_not_refuted": true
+  },
+  "C_cover": {
+    "independent_orbit_and_centralizer_agree": true,
+    "nonregular_counterexample": {
+      "connected": true,
+      "constructed_section_deck_invariant": true,
+      "constructed_section_descends_to_base": false,
+      "holonomy_order": 6,
+      "minimum_degree_for_all_transport_trivialization": 6,
+      "minimum_degree_for_this_section": 3,
+      "orbit_cover_deck_group_order": 1,
+      "root_value": 0,
+      "source_id": "declared-permutation-action",
+      "source_section_valid": true,
+      "stabilizer_order": 2,
+      "vertices": [
+        [
+          "r",
+          0
+        ],
+        [
+          "r",
+          1
+        ],
+        [
+          "r",
+          2
+        ]
+      ]
+    },
+    "two_generator_three_label_cases": 108
+  },
+  "C_history": {
+    "compact_but_nonclosed_receipt_prefix_checks": 64,
+    "every_initial_state_survives_mutant_refuted": true,
+    "exhaustive_changing_type_systems": 2048,
+    "independent_cartesian_paths_agree": true,
+    "nonempty_pairwise_relations_without_joint_history": [
+      [
+        [
+          "old0",
+          "new0"
+        ]
+      ],
+      [
+        [
+          "new1",
+          "end"
+        ]
+      ]
+    ],
+    "null_relations_and_empty_receipts_included": true
+  },
+  "E_research_not_self_audited": true,
+  "ST1_all_prior": {
+    "all_delta_priors_joint_law_converse_agrees": true,
+    "denominator_three_row_pairs": 400,
+    "hidden_selector_breaks_descent_of_individually_lawful_actions": true,
+    "prior_specific_averaging_not_sufficient": true
+  },
+  "ST3_adaptive": {
+    "hidden_source_selector_excluded": true,
+    "observable_history_adaptive_paths": 32,
+    "path_results": [
+      {
+        "actions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "history": [
+          "z",
+          "z",
+          "z",
+          "z",
+          "z"
+        ],
+        "likelihood": "233/2048"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "history": [
+          "z",
+          "z",
+          "z",
+          "z",
+          "w"
+        ],
+        "likelihood": "123/2048"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "history": [
+          "z",
+          "z",
+          "z",
+          "w",
+          "z"
+        ],
+        "likelihood": "107/3072"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "history": [
+          "z",
+          "z",
+          "z",
+          "w",
+          "w"
+        ],
+        "likelihood": "175/3072"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "history": [
+          "z",
+          "z",
+          "w",
+          "z",
+          "z"
+        ],
+        "likelihood": "29/1024"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "history": [
+          "z",
+          "z",
+          "w",
+          "z",
+          "w"
+        ],
+        "likelihood": "77/3072"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "history": [
+          "z",
+          "z",
+          "w",
+          "w",
+          "z"
+        ],
+        "likelihood": "55/1536"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "history": [
+          "z",
+          "z",
+          "w",
+          "w",
+          "w"
+        ],
+        "likelihood": "79/1536"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "history": [
+          "z",
+          "w",
+          "z",
+          "z",
+          "z"
+        ],
+        "likelihood": "43/1536"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "history": [
+          "z",
+          "w",
+          "z",
+          "z",
+          "w"
+        ],
+        "likelihood": "25/1536"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "history": [
+          "z",
+          "w",
+          "z",
+          "w",
+          "z"
+        ],
+        "likelihood": "37/2304"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "history": [
+          "z",
+          "w",
+          "z",
+          "w",
+          "w"
+        ],
+        "likelihood": "53/2304"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "history": [
+          "z",
+          "w",
+          "w",
+          "z",
+          "z"
+        ],
+        "likelihood": "35/1152"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "history": [
+          "z",
+          "w",
+          "w",
+          "z",
+          "w"
+        ],
+        "likelihood": "29/1152"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "history": [
+          "z",
+          "w",
+          "w",
+          "w",
+          "z"
+        ],
+        "likelihood": "7/216"
+      },
+      {
+        "actions": [
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "history": [
+          "z",
+          "w",
+          "w",
+          "w",
+          "w"
+        ],
+        "likelihood": "41/864"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "history": [
+          "w",
+          "z",
+          "z",
+          "z",
+          "z"
+        ],
+        "likelihood": "33/1024"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "history": [
+          "w",
+          "z",
+          "z",
+          "z",
+          "w"
+        ],
+        "likelihood": "53/3072"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "history": [
+          "w",
+          "z",
+          "z",
+          "w",
+          "z"
+        ],
+        "likelihood": "17/1536"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        "history": [
+          "w",
+          "z",
+          "z",
+          "w",
+          "w"
+        ],
+        "likelihood": "9/512"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "history": [
+          "w",
+          "z",
+          "w",
+          "z",
+          "z"
+        ],
+        "likelihood": "35/2304"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "history": [
+          "w",
+          "z",
+          "w",
+          "z",
+          "w"
+        ],
+        "likelihood": "29/2304"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "history": [
+          "w",
+          "z",
+          "w",
+          "w",
+          "z"
+        ],
+        "likelihood": "7/432"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "history": [
+          "w",
+          "z",
+          "w",
+          "w",
+          "w"
+        ],
+        "likelihood": "41/1728"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "history": [
+          "w",
+          "w",
+          "z",
+          "z",
+          "z"
+        ],
+        "likelihood": "25/768"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "history": [
+          "w",
+          "w",
+          "z",
+          "z",
+          "w"
+        ],
+        "likelihood": "43/2304"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "history": [
+          "w",
+          "w",
+          "z",
+          "w",
+          "z"
+        ],
+        "likelihood": "5/288"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "history": [
+          "w",
+          "w",
+          "z",
+          "w",
+          "w"
+        ],
+        "likelihood": "29/1152"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "history": [
+          "w",
+          "w",
+          "w",
+          "z",
+          "z"
+        ],
+        "likelihood": "23/768"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "history": [
+          "w",
+          "w",
+          "w",
+          "z",
+          "w"
+        ],
+        "likelihood": "173/6912"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "history": [
+          "w",
+          "w",
+          "w",
+          "w",
+          "z"
+        ],
+        "likelihood": "113/3456"
+      },
+      {
+        "actions": [
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "history": [
+          "w",
+          "w",
+          "w",
+          "w",
+          "w"
+        ],
+        "likelihood": "55/1152"
+      }
+    ],
+    "raw_unnormalized_path_oracle_agrees": true
+  },
+  "ST7_conditional_TV": {
+    "improved_bound": "min(1, epsilon/max(alpha,beta))",
+    "original_ST7_bound_valid": true,
+    "positive_event_pair_checks": 5929,
+    "sharp_example": {
+      "alpha": "1/3",
+      "beta": "2/3",
+      "conditional_TV": "1/2",
+      "epsilon": "1/3",
+      "new_bound": "1/2",
+      "old_bound": "1",
+      "p": [
+        "1/3",
+        "0",
+        "2/3",
+        "0"
+      ],
+      "q": [
+        "1/3",
+        "1/3",
+        "1/3",
+        "0"
+      ]
+    },
+    "unequal_mass_checks": 4886,
+    "unequal_mass_saturations_of_improved_bound": 1484
+  },
+  "executor": "/root/arithmetic; separate hostile pass",
+  "python": "3.12.14",
+  "schema": "succ-cambrian-audit-a-v1",
+  "source_hashes_unchanged_during_probe": true,
+  "source_sha256": {
+    "/workspace/scratch/6d134115e8ca/audit_a/observational_succ/cambrian_stochastic_transport.py": "4daabd8daf5131a038d677c6c33248d63179046e1a31e972900508e042485aa5",
+    "/workspace/scratch/6d134115e8ca/audit_a/scripts/cambrian_audit_a_probe.py": "d1d884e12c718e871d4a394c0ae7b4d1981b8180b4dc6a8f79b68a742b32d531",
+    "/workspace/scratch/6d134115e8ca/b_chaos/observational_succ/cambrian_b_chaos.py": "e164d6d8b74eaa032257f68da5e0550c816a431b229afc1bf94aada1ee7f0fc2",
+    "/workspace/scratch/6d134115e8ca/c_geometry/observational_succ/cambrian_c_geometry.py": "f8c1dabdcf3e76be8a1fcead3d6a8450fb08328000efa42777db195e8a3cbf13"
+  }
+}

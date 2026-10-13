@@ -1,0 +1,44 @@
+{
+  "assignment": "SWM-X02",
+  "base_commit": "7913e10",
+  "checks": {
+    "S3_counterexample": {
+      "group_order": 6,
+      "law_section_vertices": [
+        [
+          "1/3",
+          "1/3",
+          "1/3"
+        ]
+      ],
+      "point_sections": 0
+    },
+    "ambiguous_orbit_posterior": [
+      "1/3",
+      "2/3"
+    ],
+    "clock_lag_triangle_cases_moduli_2_to_8": 1295,
+    "denominator_6_rational_laws": 49421,
+    "gauge_transported_extreme_law_sections": 396,
+    "generator_pair_classifications_degrees_1_to_4": 617,
+    "independent_A04_triangle_audits": 216,
+    "joint_original_marginal": [
+      "1/3",
+      "2/3"
+    ],
+    "mixed_fixed_and_nonfixed_orbits": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        3
+      ]
+    ],
+    "source_target_controls": "passed"
+  },
+  "probe_sha256": "7bd3ea7bd4bb796ad5a887157a6a7d7325f99f3f045bb12184d3762a1523830a",
+  "proof_scope": "Paper proof; no Lean kernel formalization or novelty claim",
+  "status": "PROVED LOCAL / CLASSICAL finite theorem; exact finite controls passed"
+}

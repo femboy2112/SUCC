@@ -1,0 +1,72 @@
+{
+  "assignment": "SWM-B09",
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "compiler": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "compiler_archive_sha256": "320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a",
+  "compiler_archive_bytes": 249860945,
+  "compiler_archive_url": "https://github.com/leanprover/lean4/releases/download/v4.14.0/lean-4.14.0-linux.tar.zst",
+  "address_space_limit_bytes": 1073741824,
+  "per_compilation_timeout_seconds": 120,
+  "parallel_compilers": 1,
+  "child_process_maximum_rss_kib": 242268,
+  "checks": [
+    {
+      "command": [
+        "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+        "formal/SWM_B09_InverseFamilies.lean"
+      ],
+      "sha256": "a01ec81397ebc3f900d3eefee144bad6704cfcc40a5b752981df8526ae706c55",
+      "exit_code": 0,
+      "stdout": "'ObservationalSUCC.SWM_B09.stage_restriction_identity' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.stage_restriction_composition' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.stage_restriction_surjective' depends on axioms: [Quot.sound]\n'ObservationalSUCC.SWM_B09.coordinate_is_singleton_decode' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.decode_compatible' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.inverse_families_equivalent_to_finitely_compatible_profiles' depends on axioms: [propext,\n Quot.sound]\n'ObservationalSUCC.SWM_B09.source_family_surjective_iff_realization' depends on axioms: [propext, Quot.sound]\n'ObservationalSUCC.SWM_B09.cofinal_stage_testing_iff_compatible' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.singleton_stage_marginals_do_not_imply_joint_compatibility' depends on axioms: [propext]\n'ObservationalSUCC.SWM_B09.empty_source_has_no_inverse_family' does not depend on any axioms\n'ObservationalSUCC.SWM_B09.lawful_action_preserves_compatible_profiles' depends on axioms: [propext, Quot.sound]\n'ObservationalSUCC.SWM_B09.binary_derivative_source_all_profiles_realized' depends on axioms: [Quot.sound]\n'ObservationalSUCC.SWM_B09.binary_derivative_source_family_surjective' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "elapsed_seconds": 0.3846
+    },
+    {
+      "command": [
+        "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+        "formal/EODCS_VoyagerTrace.lean"
+      ],
+      "sha256": "81572903530cf56610b3ade66a2b820cc227960cbbfccbb2b8a687a930374e38",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 0.212
+    },
+    {
+      "command": [
+        "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+        "formal/EODCS_VoyagerPhantom.lean"
+      ],
+      "sha256": "2730ce9aaca114af94ceabcc3f5e2f9491df48fdf317463f65b415a26aaa720c",
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "elapsed_seconds": 0.6197
+    },
+    {
+      "command": [
+        "/home/leah/succ_lab/swm-b09/.swm-tools/lean-4.14.0-linux/bin/lean",
+        "formal/EODCS_VoyagerMemoryDebt.lean"
+      ],
+      "sha256": "ebd28c1b189f53ce73955b34a2176d365377068998e4760cc2f23a43e331d05f",
+      "exit_code": 0,
+      "stdout": "formal/EODCS_VoyagerMemoryDebt.lean:79:23: warning: unused variable `positive`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\n",
+      "stderr": "",
+      "elapsed_seconds": 0.4127
+    }
+  ],
+  "placeholder_gate": "PASS",
+  "mathlib_topology_available": false,
+  "full_topology_formalization_status": "BLOCKED",
+  "kernel_verified_scope": "finite-stage inverse families, finite compatibility, cofinal schedules, realization gate, binary derivative surjectivity, explicit discrete hostile controls",
+  "required_python_validation": {
+    "provenance": "PASS:72 artifacts,17 byte-identical archives,55 mechanical namespace migrations",
+    "voyager_targeted": "PASS:18 tests"
+  },
+  "claim_boundaries": [
+    "No TopologicalSpace/closure/homeomorphism or compactness kernel formalization",
+    "No physical infinite experiment or source authentication",
+    "No novelty or RH claim"
+  ],
+  "final_new_file_maximum_rss_kib": 189180
+}

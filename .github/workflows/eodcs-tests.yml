@@ -1,0 +1,107 @@
+name: EODCS standalone finite theorem and hostile-oracle checks
+
+on:
+  push:
+    branches:
+      - 'research/eodcs-*'
+      - 'research/voyager-*'
+      - 'research/carrier-indexed-*'
+      - 'research/positive-carrier-*'
+      - 'research/cambrian-*'
+  pull_request:
+    paths:
+      - 'observational_succ/voyager_*.py'
+      - 'scripts/voyager_*.py'
+      - 'research/2026-10-13/VOYAGER_*.json'
+      - 'observational_succ/finite_poset_synthesis.py'
+      - 'observational_succ/voltage_cover_synthesis.py'
+      - 'observational_succ/eodcs_source_uncertainty.py'
+      - 'observational_succ/eodcs_evolutionary_discovery.py'
+      - 'tests/test_eodcs_*.py'
+      - 'observational_succ/carrier_indexed.py'
+      - 'scripts/carrier_indexed_probe.py'
+      - 'observational_succ/carrier_realization.py'
+      - 'scripts/positive_carrier_probe.py'
+      - 'research/2026-10-13/POSITIVE_CARRIER_RECEIPT.json'
+      - 'observational_succ/carrier_field_of_definition.py'
+      - 'observational_succ/carrier_lawful_profile.py'
+      - 'scripts/positive_carrier_ii_probe.py'
+      - 'research/2026-10-13/POSITIVE_CARRIER_II_RECEIPT.json'
+      - 'scripts/eodcs_probe.py'
+      - '.github/workflows/eodcs-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  eodcs_hostile_oracles:
+    name: Exact EODCS Python source + graph checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install only declared SUCC Python package
+        run: python -m pip install -e .
+      - name: Reproduce hostile CEGIS, poset, 380 graph and 625 coupling-grid controls
+        run: python -m unittest discover -s tests -p 'test_eodcs_*.py' -v
+      - name: Run exact source-boundary receipt
+        run: python scripts/eodcs_probe.py > "$RUNNER_TEMP/eodcs-receipt.json"
+      - name: Independently assert receipt status
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          r=json.loads((Path(os.environ['RUNNER_TEMP'])/'eodcs-receipt.json').read_text())
+          assert r['status']=='EXACT_FINITE_EODCS_CONDITIONAL_SOURCE'
+          assert r['poset_quotient_and_adjunction']['verified_hom_set_pairs']==6
+          cover=r['obstruction_trivializing_cover']['parity_triangle']
+          assert cover['minimal_connected_trivializing_cover_degree']==2
+          assert cover['minimal_cover_vertices']==6
+          n=r['obstruction_trivializing_cover']
+          assert n['nonabelian_S3_cover_degree']==6
+          assert n['nonabelian_cover_descent']['cover_parallel_sections']==3
+          assert n['nonabelian_cover_descent']['base_parallel_sections']==0
+          assert r['dependent_uncertain_observations']['robust_posterior_interval']==['2/3','1']
+          assert r['blinded_8_to_4_source']['genetic_successes'] + r['blinded_8_to_4_source']['genetic_failures_rescued_by_exact_oracle']==20
+          assert r['scope']['physical_source_authenticated'] is False
+          assert r['scope']['completed_Weil_form_positivity_or_RH_proved'] is False
+          PY
+
+      - name: Reproduce and compare frozen round-II causal / genetic source receipt
+        run: |
+          python scripts/eodcs_causal_probe.py > "$RUNNER_TEMP/eodcs-causal.json"
+          diff -u research/2026-10-13/EODCS_CAUSAL_PROBE_RECEIPT.json "$RUNNER_TEMP/eodcs-causal.json"
+      - name: Reproduce byte-identical EODCS III relational modal source receipt
+        run: |
+          python scripts/eodcs_relational_probe.py > "$RUNNER_TEMP/eodcs-relational.json"
+          diff -u research/2026-10-13/EODCS_RELATIONAL_MODAL_RECEIPT.json "$RUNNER_TEMP/eodcs-relational.json"
+
+      - name: Verify frozen exact Voyager source-completion and memory-debt receipt
+        run: |
+          python scripts/voyager_observer_probe.py > "$RUNNER_TEMP/voyager-observer.json"
+          diff -u research/2026-10-13/VOYAGER_OBSERVATIONAL_COMPLETION_RECEIPT.json "$RUNNER_TEMP/voyager-observer.json"
+      - name: Reproduce byte-identical frozen adaptive Voyager no-go source receipt
+        run: |
+          python scripts/voyager_adaptive_probe.py > "$RUNNER_TEMP/voyager-adaptive.json"
+          diff -u research/2026-10-13/VOYAGER_ADAPTIVE_SOURCE_RECEIPT.json "$RUNNER_TEMP/voyager-adaptive.json"
+
+      - name: Reproduce exact frozen carrier-indexed source and actual-history receipt
+        run: |
+          python scripts/carrier_indexed_probe.py > "$RUNNER_TEMP/carrier-indexed.json"
+          diff -u research/2026-10-13/CARRIER_INDEXED_SOURCE_RECEIPT.json "$RUNNER_TEMP/carrier-indexed.json"
+      - name: Reproduce exact frozen positive-carrier realization receipt
+        run: |
+          python scripts/positive_carrier_probe.py > "$RUNNER_TEMP/positive-carrier.json"
+          diff -u research/2026-10-13/POSITIVE_CARRIER_RECEIPT.json "$RUNNER_TEMP/positive-carrier.json"
+      - name: Reproduce exact frozen positive-carrier Part II receipt (field of definition, ghost freedom)
+        run: |
+          python scripts/positive_carrier_ii_probe.py > "$RUNNER_TEMP/positive-carrier-ii.json"
+          diff -u research/2026-10-13/POSITIVE_CARRIER_II_RECEIPT.json "$RUNNER_TEMP/positive-carrier-ii.json"
