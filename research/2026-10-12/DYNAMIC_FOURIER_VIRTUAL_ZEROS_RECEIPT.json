@@ -1,0 +1,116 @@
+{
+  "alias_different_full_source": true,
+  "alias_hidden_energy": "2",
+  "alias_same_coarse_report": true,
+  "analytic_Hurwitz_lemma_proved_in_written_math_not_by_sampling": true,
+  "canonical_completion": {
+    "Mellin_C0": "1",
+    "Mellin_C1": "1",
+    "Mellin_C2": "1",
+    "actual_Riemann_zeta_modified": false,
+    "epsilon": "0",
+    "finite_Euler_factors_unchanged": true,
+    "functional_equation_symmetry": true,
+    "quadratic_t_constant_first": null,
+    "source_Fourier_self_dual_analytically": true,
+    "source_normalized_at_zero": true,
+    "source_positive_Schwartz": true,
+    "zero_classification": "CANONICAL_MULTIPLIER_NO_ZEROS",
+    "zero_locations_derived_from_zeta_zeros": false
+  },
+  "canonical_zeta_zeros_used_as_inputs": false,
+  "classification": "finite exact classical transport, conditional source model",
+  "coarse_observer_knows_debt_from_own_report": false,
+  "counterfactual_completion": {
+    "Mellin_C0": "1",
+    "Mellin_C1": "1",
+    "Mellin_C2": "413/188",
+    "actual_Riemann_zeta_modified": false,
+    "epsilon": "10/11",
+    "finite_Euler_factors_unchanged": true,
+    "functional_equation_symmetry": true,
+    "quadratic_t_constant_first": [
+      "1",
+      "11/5",
+      "1"
+    ],
+    "source_Fourier_self_dual_analytically": true,
+    "source_normalized_at_zero": true,
+    "source_positive_Schwartz": true,
+    "zero_classification": "EXTRA_OFFLINE_ZEROS_INSIDE_OPEN_CRITICAL_STRIP",
+    "zero_locations_derived_from_zeta_zeros": false
+  },
+  "dft_refinement_square": true,
+  "finite_tower_exact_composition": true,
+  "finite_tower_step_debts": [
+    "1/2",
+    "1/4"
+  ],
+  "finite_tower_total_debt": "3/4",
+  "full_adelic_fourier_or_RH_proved": false,
+  "gaussian_mixture_rigidity": {
+    "Mellin2": "29/14",
+    "full_Schwartz_class_uniqueness_claimed": false,
+    "nonnegative_rigidity_gap": "15/14",
+    "unique_canonical_G1_in_declared_mixture_class": false
+  },
+  "original_claim_transport": {
+    "actual_squared_claim_loss": "4",
+    "claim_factors_through_coarse_observer": false,
+    "claim_sensitivity_debt": "2",
+    "source_debt": "2",
+    "upper_squared_claim_loss": "4"
+  },
+  "rational_probability_and_algebra_only": true,
+  "small_source_large_claim_countermodel": {
+    "n": 100,
+    "original_claim_error_diverges": true,
+    "source_difference_tends_to_zero": true,
+    "squared_original_claim_error": "40000",
+    "uniform_operator_norm_available": false,
+    "unseen_energy": "1/5000"
+  },
+  "source_update_descent_shear_counterexample": {
+    "RH_or_physical_entanglement_claimed": false,
+    "coarse_dynamics_exists": false,
+    "obstruction_invisible_source": [
+      "-1",
+      "0",
+      "1",
+      "0"
+    ],
+    "obstruction_revealed_report": [
+      "1",
+      "0"
+    ],
+    "source_mapping_requires_fine_information": true
+  },
+  "source_update_descent_succ_shift": {
+    "RH_or_physical_entanglement_claimed": false,
+    "coarse_dynamics_exists": true,
+    "induced_coarse_matrix": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "source_mapping_requires_fine_information": false,
+    "verified_on_all_source_basis_vectors": true
+  },
+  "strict_strip_no_extra_zero": true,
+  "virtual_zeros_after_canonical_probe": false,
+  "virtual_zeros_after_noncanonical_probe": true,
+  "virtual_zeros_initially_possible": true,
+  "zero_regimes": {
+    "0": "CANONICAL_MULTIPLIER_NO_ZEROS",
+    "1": "EXTRA_DOUBLE_ZEROS_ON_CRITICAL_LINE",
+    "1/2": "EXTRA_ZEROS_OUTSIDE_CLOSED_CRITICAL_STRIP",
+    "10/11": "EXTRA_OFFLINE_ZEROS_INSIDE_OPEN_CRITICAL_STRIP",
+    "2": "EXTRA_ZEROS_ON_CRITICAL_LINE",
+    "4/5": "EXTRA_ZEROS_ON_CRITICAL_STRIP_BOUNDARY"
+  }
+}
