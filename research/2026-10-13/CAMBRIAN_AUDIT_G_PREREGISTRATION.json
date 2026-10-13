@@ -1,0 +1,32 @@
+{
+  "audit": "G",
+  "first_hypotheses_frozen_before_target_source_and_dossier_read": true,
+  "target_clusters": ["D", "F"],
+  "auditor_own_cluster_C_excluded": true,
+  "pass_fail": {
+    "D19_D20": {
+      "pass": "Generated memory learner realizes the complete deterministic source language under its declared reset/membership/equivalence oracle assumptions, and varying finite source sizes match an independent full source-state product search.",
+      "fail": "A finite transcript or bounded test horizon is promoted to all-word equivalence without complete exact source-state closure; unavailable reset/equivalence oracle is silently assumed executable."
+    },
+    "D22": {
+      "pass": "Returned minimax destructive-probe cost equals independent finite strategy-tree enumeration for new source tables, including disabled actions and original-source target provenance.",
+      "fail": "Action filtering, current-state/source-state confusion, unsupported reset, or incomplete witness classes change a purported optimum or make an illegal strategy appear realizable."
+    },
+    "F32": {
+      "pass": "Exact hidden-state convolution agrees with full rational state trajectories for fresh matrix dimensions and nonnormal, nilpotent, singular, or decoupled hidden modes, with explicit hidden-initial-state contribution.",
+      "fail": "A memory formula drops the hidden initial term, assumes an unavailable inverse, or claims all hidden modes are boundary-identifiable."
+    },
+    "F34": {
+      "pass": "An independent exact Fourier spectral-convolution oracle recovers the claimed low-mode nonlinear residual on fresh high integer frequencies and distinguishes it from a projected-zero linear evolution.",
+      "fail": "Projection eliminates the asserted retained triad, divergence-free conditions fail, or an amplitude-scaled numerical example is mistaken for a uniform analytic statement."
+    }
+  },
+  "fresh_domains": [
+    "varying-state-count deterministic automata and temporarily disabled actions",
+    "finite destructive strategy trees with original-source labels retained",
+    "rational nonnormal Jordan and singular hidden linear systems",
+    "nonzero hidden initial state with zero external input",
+    "integer high-frequency Fourier triads outside fitted examples"
+  ],
+  "independence_boundary": "Same model and worker-family audit with a different derivation/implementation, not an external blind referee."
+}

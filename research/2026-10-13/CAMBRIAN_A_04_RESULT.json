@@ -1,0 +1,44 @@
+{
+  "cheapest_falsifier": "Cost rescaling, batch-versus-serial access, target-only authorized testimony",
+  "claim_ids": [
+    "CA04"
+  ],
+  "evidence": {
+    "AND6_true_support": [
+      [
+        "bit0",
+        "bit1",
+        "bit2",
+        "bit3",
+        "bit4",
+        "bit5"
+      ]
+    ],
+    "AND6_zero_support": [
+      [
+        "bit0"
+      ],
+      [
+        "bit1"
+      ],
+      [
+        "bit2"
+      ],
+      [
+        "bit3"
+      ],
+      [
+        "bit4"
+      ],
+      [
+        "bit5"
+      ]
+    ]
+  },
+  "limitations": "Static logical support does not certify executable destructive policy or proof authority",
+  "proof": "CAMBRIAN_A_FOUNDATIONS.md#04",
+  "quantifiers": "Every rival source with another target value; all AND_n widths under declared bit access",
+  "question": "Pointwise minimal proof support and distinct cost contracts",
+  "rival": "One scalar or support count bounds physical cost, communication and macro-updates",
+  "status": "CLASSICAL / PROVED LOCAL"
+}

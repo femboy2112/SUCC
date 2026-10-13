@@ -538,3 +538,17 @@ and draft-branch boundaries remain in force.
 **Part II closed:** the sandwiched-cone criterion is field-sensitive (an F-rational cone decides realizability over F); the *irrational-contact* obstruction is a fourth, independent mechanism; the Fibonacci cat system has (r, d⁺_ℝ, d⁺_ℚ) = (2, 2, ∞) with field of definition ℚ(√5) (Lean core `golden_slope_irrational`); r = 2 ⇒ d⁺_ℚ ∈ {2, ∞}; ghost freedom (d⁺_law = min over lawful completions) with the unbounded ghost gap 1 vs 4ⁿ+1; exact operational-profile decision via refusal completion; the blind spot (d⁺ = r = 3, non-polyhedral reachable cone) exhibited and repaired by grid search; Part I's refinement termination corrected. [Dossier II](../research/2026-10-13/POSITIVE_CARRIER_REALIZATION_THEORY_II.md), [claims PCR-25–PCR-40](CLAIM_SUPPLEMENT_POSITIVE_CARRIER.md), [receipt II](../research/2026-10-13/POSITIVE_CARRIER_II_RECEIPT.json).
 
 **Remaining targets (after Part II):** (a) a necessary-and-sufficient criterion for d⁺_ℚ < ∞ (contact is only sufficient for ∞; the slack conjecture is the candidate for existence); (b) the r = 2 decision procedure (reachable-slice endpoints as algebraic numbers and their multipliers); (c) d⁺(p̃) versus d⁺_law for the refusal completion; (d) ~~Theorem 4.1 in Lean over a declared commutative-semiring structure~~ done in Part II (`EODCS_PositiveCarrierCone.lean`); a ℚ-instance needs the mathlib lane; (e) targets (i), (ii), (iv) above.
+## Cambrian frontier update
+
+The [executed Cambrian campaign](CAMBRIAN_CAMPAIGN_2026-10-13.md) supplies
+joint-law Bayesian descent, a Lean theorem for changing finitely branching
+histories, and explicit failures of destructive greedy probing, nonregular
+deck descent, finite-prefix memory certification, and unqualified analytic
+completion. These results narrow several older roadmap items; they do not
+complete their topology, source-access or physical-authentication obligations.
+
+The five next targets and their discriminating tests are ranked in section I
+of that report. In particular, exact equivalence-teacher access remains a
+strong assumption in history-only learning; the natural Misiurewicz measure
+remains distinct from a supplied symbolic Parry prior; and finite arithmetic
+tomography supplies no completed Weil positivity inference.

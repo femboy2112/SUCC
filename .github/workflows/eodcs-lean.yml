@@ -7,9 +7,13 @@ on:
       - 'research/voyager-*'
       - 'research/carrier-indexed-*'
       - 'research/positive-carrier-*'
+      - 'research/cambrian-*'
   pull_request:
     paths:
       - 'formal/EODCS_*.lean'
+      - 'scripts/cambrian_formal_ci.py'
+      - 'scripts/cambrian_audit_c_lean.py'
+      - 'research/2026-10-13/CAMBRIAN_AUDIT_C*'
       - '.github/workflows/eodcs-lean.yml'
       - 'lean-toolchain'
   workflow_dispatch:
@@ -43,13 +47,22 @@ jobs:
           for src in formal/EODCS_*.lean; do
             "$HOME/.elan/bin/lean" "$src"
           done
+      - name: Replay Cambrian axiom audit and rejected false-theorem controls
+        run: python scripts/cambrian_formal_ci.py --lean "$HOME/.elan/bin/lean"
       - name: Fail closed on placeholders and imported axioms
         run: |
           python - <<'PY'
           from pathlib import Path
+          import re
+          import sys
+          sys.path.insert(0, "scripts")
+          from cambrian_audit_c_lean import uncomment
+          forbidden = re.compile(r'\b(sorry|admit|axiom|unsafe|native_decide)\b')
+          # Comments and identifier substrings are not proof declarations.
+          assert forbidden.search(uncomment("/- countdown admits every finite depth -/ theorem admissible : True := by trivial")) is None
+          assert forbidden.search(uncomment("/- outer /- nested admit -/ comment -/\nexample : False := by sorry"))
+          assert forbidden.search(uncomment("-- harmless\naxiom broken : False"))
           for path in sorted(Path("formal").glob("EODCS_*.lean")):
-              src=path.read_text()
-              code=src.split("namespace ObservationalSUCC",1)[1]
-              for bad in ("sorry", "admit", "axiom ", "unsafe "):
-                  assert bad not in code, (str(path),bad)
+              code=uncomment(path.read_text())
+              assert forbidden.search(code) is None, str(path)
           PY

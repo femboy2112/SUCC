@@ -1,0 +1,112 @@
+{
+  "cheapest_falsifier": "Two-state reset with preserved versus silent outcome",
+  "claim_ids": [
+    "CA01"
+  ],
+  "evidence": {
+    "basis_id": "bits",
+    "execution_rows": [
+      {
+        "audit_current_state": 0,
+        "audit_original_state": 0,
+        "long_report": [
+          [
+            "reset",
+            0,
+            1
+          ],
+          [
+            "read",
+            0,
+            2
+          ]
+        ],
+        "path": [
+          "reset",
+          "read"
+        ],
+        "short_report": [
+          [
+            "reset",
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "audit_current_state": 0,
+        "audit_original_state": 1,
+        "long_report": [
+          [
+            "reset",
+            1,
+            1
+          ],
+          [
+            "read",
+            0,
+            2
+          ]
+        ],
+        "path": [
+          "reset",
+          "read"
+        ],
+        "short_report": [
+          [
+            "reset",
+            1,
+            1
+          ]
+        ]
+      }
+    ],
+    "ideal_completion_performed": false,
+    "physical_source_authenticated": false,
+    "privileged_root_in_public_report": false,
+    "public_source_fibers": [
+      [
+        [
+          [
+            "reset",
+            0,
+            1
+          ],
+          [
+            "read",
+            0,
+            2
+          ]
+        ],
+        [
+          0
+        ]
+      ],
+      [
+        [
+          [
+            "reset",
+            1,
+            1
+          ],
+          [
+            "read",
+            0,
+            2
+          ]
+        ],
+        [
+          1
+        ]
+      ]
+    ],
+    "source_id": "bit-source",
+    "truncation_square_commutes": true
+  },
+  "limitations": "Universal report quotient only; no universal ontology, source authentication or ideal execution",
+  "proof": "CAMBRIAN_A_FOUNDATIONS.md#01",
+  "quantifiers": "Every lawful history; every quotient-invariant function has one unique report decoder",
+  "question": "Universal source-typed observational state",
+  "rival": "Current carrier and causal history are interchangeable",
+  "status": "CLASSICAL / PROVED LOCAL"
+}

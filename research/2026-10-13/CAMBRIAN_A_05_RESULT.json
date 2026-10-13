@@ -1,0 +1,49 @@
+{
+  "cheapest_falsifier": "Destructive two-bit parity, every pair separable but no uniform first action wins",
+  "claim_ids": [
+    "CA05"
+  ],
+  "evidence": {
+    "dark_pair": {
+      "closed_equivalence_witness": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "physical_source_authenticated": false,
+      "separator": null,
+      "state_pair": [
+        0,
+        1
+      ],
+      "toolkit_relative_dark": true
+    },
+    "extended_probe_lamp": {
+      "closed_equivalence_witness": [],
+      "physical_source_authenticated": false,
+      "separator": [
+        "read"
+      ],
+      "state_pair": [
+        0,
+        1
+      ],
+      "toolkit_relative_dark": false
+    }
+  },
+  "limitations": "Finite complete deterministic source and public menus only; no arbitrary infinite grammar decision",
+  "proof": "CAMBRIAN_A_FOUNDATIONS.md#05",
+  "quantifiers": "All legal finite action words for each pair; uniform policy uses a stronger quantifier",
+  "question": "Toolkit-relative darkness, route gaps and uniform-policy trap",
+  "rival": "A failed route or pairwise separators alone decide uniform acquisition",
+  "status": "CLASSICAL / PROVED LOCAL"
+}

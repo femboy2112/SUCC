@@ -1,0 +1,40 @@
+{
+  "schema": "succ.cambrian.audit-literature.v1",
+  "reviewed_head": "6657950fc9275de03bfa68c864c73c15b1274380",
+  "auditor": "E",
+  "classification_questions_frozen_before_campaign_dossier_reads": true,
+  "freeze_was_separate_preregistration_commit": false,
+  "self_authored_clusters": ["D"],
+  "independent_correctness_audit_of_D": false,
+  "academic_novelty_certified": false,
+  "exhaustive_priority_search_claimed": false,
+  "new_Lean_verification_claimed": false,
+  "sources": [
+    {"id": "misiurewicz1981", "url": "https://www.numdam.org/item/PMIHES_1981__53__17_0.pdf", "status": "PRIMARY_STATEMENTS_READ", "scope": "section3 conditions(i)-(vi),theorems6.2/6.3/8.1", "campaign_application": "B08.3 remains conditional: all periodic repelling condition, exceptional set, acim component/support and component entropy unproved"},
+    {"id": "kemeny_snell", "url": "https://math.pku.edu.cn/teachers/yaoy/Fall2011/Kemeny-Snell_Chapter6.3-4.pdf", "status": "AUDITOR_RETRIEVAL_FAILED", "scope": "original scan not independently reread; coordinator reports earlier read", "campaign_application": "do not fabricate original-source inspection"},
+    {"id": "geiger_temmel", "url": "https://arxiv.org/pdf/1212.4375", "status": "PRIMARY_STATEMENTS_READ", "scope": "Definition7,Theorem9,setting2.2", "campaign_application": "all-initial-prior strong versus stationary weak lumpability; no import of entropy theorem to arbitrary ST instrument"},
+    {"id": "fritz2020", "url": "https://arxiv.org/pdf/1908.07021", "status": "PRIMARY_STATEMENTS_READ", "scope": "Definition12.8,Proposition12.9", "campaign_application": "conditional product uniqueness requires explicit conditional independence"},
+    {"id": "stacks_fip", "url": "https://stacks.math.columbia.edu/tag/0059", "status": "OFFICIAL_STATEMENT_READ", "scope": "Lemma5.12.6", "campaign_application": "compact closed-constraint realization ingredient"},
+    {"id": "stacks_limits", "url": "https://stacks.math.columbia.edu/tag/08ZS", "status": "OFFICIAL_STATEMENTS_READ", "scope": "Theorem5.14.4,Lemma5.14.6", "campaign_application": "Tychonoff/inverse-limit context; source-class closure separate"},
+    {"id": "hatcher", "url": "https://math.uchicago.edu/~farb/algtop2023/Hatcher.pdf", "status": "AUTHOR_TEXT_STATEMENTS_READ", "scope": "Propositions1.32/1.39,Theorem1.38", "campaign_application": "graph cover degree/subgroup/stabilizer classification and normal deck action"},
+    {"id": "deshalit", "url": "https://jtnb.centre-mersenne.org/item/10.5802/jtnb.955.pdf", "status": "PRIMARY_STATEMENTS_READ", "scope": "Theorem1.2,section5.1,Proposition5.1", "campaign_application": "continuous coefficients versus bounded measure dual; codomain matters"},
+    {"id": "watrous_instruments", "url": "https://cs.uwaterloo.ca/~watrous/TQI/TQI.2.pdf", "status": "AUTHOR_TEXT_STATEMENTS_READ", "scope": "equations2.258-2.262", "campaign_application": "outcome plus posterior instrument interface"},
+    {"id": "watrous_contraction", "url": "https://cs.uwaterloo.ca/~watrous/TQI/TQI.3.pdf", "status": "AUTHOR_TEXT_STATEMENT_READ", "scope": "Corollary3.40", "campaign_application": "trace-preserving positive map contraction excludes normalized postselection"},
+    {"id": "parish_duraisamy", "url": "https://arxiv.org/pdf/1611.03311", "status": "PRIMARY_STATEMENTS_READ", "scope": "equations10-14 and noise/memory/projection discussion", "campaign_application": "linear exact memory is classical; finite-memory LES approximation not exact universal NS closure"},
+    {"id": "baez_courser", "url": "https://arxiv.org/pdf/1911.04630", "status": "PRIMARY_STATEMENT_READ", "scope": "Theorem3.9", "campaign_application": "finite colimits and preserving functor hypotheses; Rel implementation does not construct general cospan semantics"},
+    {"id": "stacks_yoneda", "url": "https://stacks.math.columbia.edu/tag/001P", "status": "OFFICIAL_STATEMENT_READ", "scope": "Lemma4.3.5", "campaign_application": "restriction requires additional density/retract hypothesis"},
+    {"id": "angluin1988", "url": "https://homepages.math.uic.edu/~lreyzin/papers/angluin88.pdf", "status": "PRIMARY_STATEMENTS_READ", "scope": "sections1.2,2.4,3.2", "campaign_application": "history-only learning is classical teacher-dependent route; D correctness not independently audited"},
+    {"id": "angluin1987", "url": "https://doi.org/10.1016/0890-5401(87)90052-6", "status": "AUDITOR_RETRIEVAL_FAILED", "scope": "full original article not inspected", "campaign_application": "do not claim scanned full paper was read"},
+    {"id": "iisc_slides", "url": "https://www.csa.iisc.ac.in/~deepakd/atc-2015/L_Star_Algo.pdf", "status": "REJECTED_AS_PRIMARY_SOURCE", "scope": "actual file is course slides", "campaign_application": "not used as theorem proof source"}
+  ],
+  "critical_findings": [
+    {"id": "AE-B08", "verdict": "PRESERVE_CONDITIONAL", "required_obligations": ["global periodic multipliers strictly greater than1", "match exceptional set and chosen carrier/iterate", "construct acim component containing chosen periodic orbit", "identify entropy on f^k component", "justify symbolic Parry lift"], "natural_acim_branch_probability_computed": false},
+    {"id": "AE-ST", "verdict": "CLASSICAL_ALL_PRIOR_JOINT_KERNEL_DESCENT", "marginal_or_posterior_only_test_equivalent": false},
+    {"id": "AE-C16", "verdict": "CLASSICAL_COMPACTNESS_AND_KONIG", "full_topology_theorem_verified_by_finite_menu_Lean": false},
+    {"id": "AE-C15", "verdict": "CLASSICAL_ORBIT_STABILIZER_COVER", "nonregular_deck_invariance_implies_descent": false},
+    {"id": "AE-E26", "verdict": "CLASSICAL_BOUNDED_PADIC_MEASURE_DUAL", "compatibility_without_bound_suffices": false},
+    {"id": "AE-F", "verdict": "CLASSICAL_INSTRUMENT_AND_MEMORY_THEOREMS", "source_interface_or_initialization_hypotheses_removable": false},
+    {"id": "AE-D-EOS", "verdict": "PROVENANCE_OVERLAP_CONFIRMED_ONLY", "source_sha": "b2774ca485db4b5b4f7ce92e535220352fb3af2f", "claims": ["EOS-02","EOS-03","EOS-04"], "note": "No D independent correctness verdict"}
+  ],
+  "code_or_shared_dossiers_modified": false
+}

@@ -8,6 +8,14 @@ The founding hypothesis begins with **the physical carrier**, not with the mathe
 
 > **Status:** early-stage formal and computational research. Some claims are classical mathematics, some are exact new-to-project derivations, others are tested finite models or open conjectures. The Riemann hypothesis (RH) remains unsolved, and Gödel incompleteness has not been mechanized within PA here. See [the claim ledger](docs/CLAIM_LEDGER.md).
 
+The [Cambrian campaign report](docs/CAMBRIAN_CAMPAIGN_2026-10-13.md) integrates
+36 investigations into source-changing Bayesian transport, coherent history
+realization, destructive experimental design, dynamical observation limits,
+arithmetic source tests, and effective memory. It distinguishes paper proofs,
+exact executable controls, and the new Lean finite-branching theorem. The
+report includes eight hostile audit assignments and preserves the failures
+and unresolved hypotheses.
+
 
 ## Mathematical atlas: the many-worlds swarm
 

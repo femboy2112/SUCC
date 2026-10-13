@@ -1,0 +1,76 @@
+{
+  "base_commit": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "module_sha256": "4daabd8daf5131a038d677c6c33248d63179046e1a31e972900508e042485aa5",
+  "positive": {
+    "likelihood": "1/2",
+    "possible": true,
+    "posterior": [
+      "3/4",
+      "1/4"
+    ],
+    "steps": [
+      [
+        "1/2",
+        [
+          "3/4",
+          "1/4"
+        ]
+      ]
+    ]
+  },
+  "posterior_only_mutant": {
+    "evidence": [
+      "1/4",
+      "3/4"
+    ],
+    "joint_descent": false,
+    "same_posterior": true
+  },
+  "rare_receipt_boundary": {
+    "conditioned_tv": "1",
+    "joint_tv": "1/10007",
+    "receipt_masses": [
+      "1/10007",
+      "1/10007"
+    ]
+  },
+  "same_support_same_marginals": {
+    "after_z_posteriors": [
+      [
+        "3/4",
+        "1/4"
+      ],
+      [
+        "1/4",
+        "3/4"
+      ]
+    ],
+    "joint_descent": false,
+    "repaired_classes": 2,
+    "witness": [
+      "s0",
+      "s1",
+      "a",
+      [
+        "3/8",
+        "1/8",
+        "1/8",
+        "3/8"
+      ],
+      [
+        "1/8",
+        "3/8",
+        "3/8",
+        "1/8"
+      ]
+    ]
+  },
+  "schema": "succ-cambrian-stochastic-v1",
+  "scope": {
+    "adaptive_selector_executed": false,
+    "completed_weil_positivity_or_rh_proved": false,
+    "physical_source_authenticated": false,
+    "python_formally_refined_to_lean": false
+  },
+  "source_generation": "explicit rational complete finite joint instrument table"
+}

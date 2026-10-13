@@ -1,0 +1,628 @@
+{
+  "DZ8_recovered_C2": "3/2",
+  "DZ9_recovered_C2": "413/188",
+  "Laplace_sign": "L[F_b](z)=-z^-2 sum b(n)log(n)n^-(z+1/2); for genuine full source equals +zeta_prime/zeta / z^2 only Re(z)>1/2",
+  "audit": "F",
+  "audit_base": "fb3499dfb6da9bd491bf89d01abe9de716b5d7b5",
+  "audited_commit": "c2c18c3ed638478448497fb6892a747f67ee6f9b",
+  "auditor_script_sha256": "d1f242959f7da25b14d67ac8283f47c0e41a90c5e18afa4eb35562e03ab82bb3",
+  "clock_coherence_controls": [
+    {
+      "child_mass": "1/4",
+      "level": 1,
+      "norm_lower_bound": 2,
+      "p": 2,
+      "parent_mass": "1/2"
+    },
+    {
+      "child_mass": "1/8",
+      "level": 2,
+      "norm_lower_bound": 4,
+      "p": 2,
+      "parent_mass": "1/4"
+    },
+    {
+      "child_mass": "1/32",
+      "level": 4,
+      "norm_lower_bound": 16,
+      "p": 2,
+      "parent_mass": "1/16"
+    },
+    {
+      "child_mass": "1/512",
+      "level": 8,
+      "norm_lower_bound": 256,
+      "p": 2,
+      "parent_mass": "1/256"
+    },
+    {
+      "child_mass": "1/9",
+      "level": 1,
+      "norm_lower_bound": 3,
+      "p": 3,
+      "parent_mass": "1/3"
+    },
+    {
+      "child_mass": "1/27",
+      "level": 2,
+      "norm_lower_bound": 9,
+      "p": 3,
+      "parent_mass": "1/9"
+    },
+    {
+      "child_mass": "1/243",
+      "level": 4,
+      "norm_lower_bound": 81,
+      "p": 3,
+      "parent_mass": "1/81"
+    },
+    {
+      "child_mass": "1/19683",
+      "level": 8,
+      "norm_lower_bound": 6561,
+      "p": 3,
+      "parent_mass": "1/6561"
+    },
+    {
+      "child_mass": "1/25",
+      "level": 1,
+      "norm_lower_bound": 5,
+      "p": 5,
+      "parent_mass": "1/5"
+    },
+    {
+      "child_mass": "1/125",
+      "level": 2,
+      "norm_lower_bound": 25,
+      "p": 5,
+      "parent_mass": "1/25"
+    },
+    {
+      "child_mass": "1/3125",
+      "level": 4,
+      "norm_lower_bound": 625,
+      "p": 5,
+      "parent_mass": "1/625"
+    },
+    {
+      "child_mass": "1/1953125",
+      "level": 8,
+      "norm_lower_bound": 390625,
+      "p": 5,
+      "parent_mass": "1/390625"
+    }
+  ],
+  "endpoint_T_equals_log_N": {
+    "four_rational_queries_below_boundary_agree": true,
+    "paper_verdict": "Last ramp atom has identically zero response on entire measured interval; exact symbolic proof",
+    "source_coefficient_at_40_changes": true
+  },
+  "fresh_completion_control": {
+    "C0": 1,
+    "C1": 1,
+    "C2": "1987/387",
+    "R": "(6+sqrt(11))/5",
+    "actual_zeta_zeros_asserted": false,
+    "discriminant": "44/25",
+    "exact_R_bounds": "1<R<3, since 0<sqrt(11)<9 and sqrt(11)>0",
+    "quadratic": [
+      1,
+      "12/5",
+      1
+    ],
+    "roots": "1/2 +/- log(R)/log(9) + (2j+1)pi*i/log(9)",
+    "scale": "9",
+    "strict_strip_condition": "2<12/5<10/3",
+    "unknown_zeta_zero_inputs": false,
+    "w": "4/5"
+  },
+  "full_Weil_positivity": "UNVERIFIED, not tested or inferred",
+  "independent_representation": "Omega grading, telescoping integer logs, rational reciprocal-root bisection, tuple intervals",
+  "mutation_controls": [
+    {
+      "coefficient_interval": {
+        "lower": "0",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "0"
+      },
+      "declared_genuine_b1_enclosed": false,
+      "denominator100_unique_sufficient": true,
+      "event": 2,
+      "mutation": "moved_log2"
+    },
+    {
+      "coefficient_interval": {
+        "lower": "707106781186547/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "176776695296637/250000000000000"
+      },
+      "declared_genuine_b1_enclosed": false,
+      "denominator100_unique_sufficient": true,
+      "event": 2,
+      "mutation": "wrong_density"
+    },
+    {
+      "coefficient_interval": {
+        "lower": "-3785268283842607/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "5785268283842607/1000000000000000"
+      },
+      "declared_genuine_b1_enclosed": true,
+      "denominator100_unique_sufficient": false,
+      "event": 2,
+      "mutation": "large_sound_noise"
+    }
+  ],
+  "python": "3.12.14",
+  "revision_required": {
+    "claim": "prime-only indefinite-form construction",
+    "countermodel_a": "1/4",
+    "missing_assumption": "a>log(2)/2",
+    "prime_operator_in_countermodel": "zero",
+    "two_a_below_log2_certified": true
+  },
+  "sharp_multiplier_boundary_controls": {
+    "k_w_equals_2": {
+      "quadratic": [
+        1,
+        2,
+        1
+      ],
+      "real_part": "1/2",
+      "roots": [
+        -1,
+        -1
+      ]
+    },
+    "k_w_equals_k_plus_inverse_k": {
+      "quadratic": [
+        1,
+        "10/3",
+        1
+      ],
+      "real_parts": [
+        0,
+        1
+      ],
+      "roots": [
+        "-3",
+        "-1/3"
+      ]
+    }
+  },
+  "sieve_control": {
+    "factors": [
+      17,
+      53
+    ],
+    "gaussian_factorization": [
+      [
+        4,
+        1
+      ],
+      [
+        2,
+        7
+      ]
+    ],
+    "norm": 901,
+    "not_gaussian_prime": true,
+    "point": [
+      1,
+      30
+    ]
+  },
+  "source_hashes": {
+    "observational_succ/cambrian_e_arithmetic_transport.py": "8c5781f8eea3a9c0ed0c060aaece65366311235986e52162bb13c8b2621cacda",
+    "research/2026-10-13/CAMBRIAN_E_ARITHMETIC.md": "80950733892fa713cecf2fc46c3bc86a47dc15ad55026ca95751a8c8df5c1469",
+    "scripts/cambrian_e_arithmetic_probe.py": "5d1175e4b43d485f6e64b790556a1ad48f77767b68627a8651c078171910f52d",
+    "tests/test_cambrian_e_arithmetic_transport.py": "f64acff155554e844b86cb0bc6b2ca34a525c1f80a32b5770f7f2a9d041895e1"
+  },
+  "tomography": [
+    {
+      "event": 2,
+      "exact_b": "1",
+      "independent": {
+        "lower": "999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1000000000000001/1000000000000000"
+      },
+      "source": "genuine",
+      "subject": {
+        "lower": "999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1000000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 4,
+      "exact_b": "1/2",
+      "independent": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      },
+      "source": "genuine",
+      "subject": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 6,
+      "exact_b": "0",
+      "independent": {
+        "lower": "-1/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1/1000000000000000"
+      },
+      "source": "genuine",
+      "subject": {
+        "lower": "-1/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1/1000000000000000"
+      }
+    },
+    {
+      "event": 8,
+      "exact_b": "1/3",
+      "independent": {
+        "lower": "333333333333333/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "166666666666667/500000000000000"
+      },
+      "source": "genuine",
+      "subject": {
+        "lower": "333333333333333/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "166666666666667/500000000000000"
+      }
+    },
+    {
+      "event": 9,
+      "exact_b": "1/2",
+      "independent": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      },
+      "source": "genuine",
+      "subject": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 12,
+      "exact_b": "0",
+      "independent": {
+        "lower": "-1/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1/1000000000000000"
+      },
+      "source": "genuine",
+      "subject": {
+        "lower": "-1/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1/1000000000000000"
+      }
+    },
+    {
+      "event": 16,
+      "exact_b": "1/4",
+      "independent": {
+        "lower": "249999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "250000000000001/1000000000000000"
+      },
+      "source": "genuine",
+      "subject": {
+        "lower": "249999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "250000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 25,
+      "exact_b": "1/2",
+      "independent": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      },
+      "source": "genuine",
+      "subject": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 32,
+      "exact_b": "1/5",
+      "independent": {
+        "lower": "199999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "200000000000001/1000000000000000"
+      },
+      "source": "genuine",
+      "subject": {
+        "lower": "199999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "200000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 2,
+      "exact_b": "1",
+      "independent": {
+        "lower": "999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1000000000000001/1000000000000000"
+      },
+      "source": "fake_six",
+      "subject": {
+        "lower": "999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1000000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 4,
+      "exact_b": "1/2",
+      "independent": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      },
+      "source": "fake_six",
+      "subject": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 6,
+      "exact_b": "1",
+      "independent": {
+        "lower": "999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1000000000000001/1000000000000000"
+      },
+      "source": "fake_six",
+      "subject": {
+        "lower": "999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1000000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 8,
+      "exact_b": "1/3",
+      "independent": {
+        "lower": "333333333333333/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "166666666666667/500000000000000"
+      },
+      "source": "fake_six",
+      "subject": {
+        "lower": "333333333333333/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "166666666666667/500000000000000"
+      }
+    },
+    {
+      "event": 9,
+      "exact_b": "1/2",
+      "independent": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      },
+      "source": "fake_six",
+      "subject": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 12,
+      "exact_b": "-1",
+      "independent": {
+        "lower": "-1000000000000001/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "-999999999999999/1000000000000000"
+      },
+      "source": "fake_six",
+      "subject": {
+        "lower": "-1000000000000001/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "-999999999999999/1000000000000000"
+      }
+    },
+    {
+      "event": 16,
+      "exact_b": "1/4",
+      "independent": {
+        "lower": "249999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "250000000000001/1000000000000000"
+      },
+      "source": "fake_six",
+      "subject": {
+        "lower": "249999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "250000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 25,
+      "exact_b": "1/2",
+      "independent": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      },
+      "source": "fake_six",
+      "subject": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 32,
+      "exact_b": "1/5",
+      "independent": {
+        "lower": "199999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "200000000000001/1000000000000000"
+      },
+      "source": "fake_six",
+      "subject": {
+        "lower": "199999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "200000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 2,
+      "exact_b": "2",
+      "independent": {
+        "lower": "1999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "2000000000000001/1000000000000000"
+      },
+      "source": "nonunit_at_2",
+      "subject": {
+        "lower": "1999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "2000000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 4,
+      "exact_b": "2",
+      "independent": {
+        "lower": "1999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "2000000000000001/1000000000000000"
+      },
+      "source": "nonunit_at_2",
+      "subject": {
+        "lower": "1999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "2000000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 6,
+      "exact_b": "0",
+      "independent": {
+        "lower": "-1/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1/1000000000000000"
+      },
+      "source": "nonunit_at_2",
+      "subject": {
+        "lower": "-1/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1/1000000000000000"
+      }
+    },
+    {
+      "event": 8,
+      "exact_b": "8/3",
+      "independent": {
+        "lower": "1333333333333333/500000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "2666666666666667/1000000000000000"
+      },
+      "source": "nonunit_at_2",
+      "subject": {
+        "lower": "1333333333333333/500000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "2666666666666667/1000000000000000"
+      }
+    },
+    {
+      "event": 9,
+      "exact_b": "1/2",
+      "independent": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      },
+      "source": "nonunit_at_2",
+      "subject": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 12,
+      "exact_b": "0",
+      "independent": {
+        "lower": "-1/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1/1000000000000000"
+      },
+      "source": "nonunit_at_2",
+      "subject": {
+        "lower": "-1/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "1/1000000000000000"
+      }
+    },
+    {
+      "event": 16,
+      "exact_b": "4",
+      "independent": {
+        "lower": "3999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "4000000000000001/1000000000000000"
+      },
+      "source": "nonunit_at_2",
+      "subject": {
+        "lower": "3999999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "4000000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 25,
+      "exact_b": "1/2",
+      "independent": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      },
+      "source": "nonunit_at_2",
+      "subject": {
+        "lower": "499999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "500000000000001/1000000000000000"
+      }
+    },
+    {
+      "event": 32,
+      "exact_b": "32/5",
+      "independent": {
+        "lower": "6399999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "6400000000000001/1000000000000000"
+      },
+      "source": "nonunit_at_2",
+      "subject": {
+        "lower": "6399999999999999/1000000000000000",
+        "rounding": "outward exact rational, denominator divides 10^15",
+        "upper": "6400000000000001/1000000000000000"
+      }
+    }
+  ]
+}

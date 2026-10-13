@@ -499,3 +499,19 @@ q_h*J_h(S,D_h) --- descended full joint Kbar_a^z --> q_(h+1)*J_(h a z)(S,D_(h+1)
 It commutes for EVERY S-indexed prior iff enabledness and full joint row laws are constant on q_h fibers. This is a **law of transport over the carrier**, not a claim that q is itself a physical sensor. The normalized original posterior and raw receipt probability are both preserved under every valid finite composition. A failed square produces a precise kernel/enabledness witness and a coarsest mathematical one-step repair \`q*=(q,enabled,all joint signatures)\`; repeated stationary refinement yields the coarsest stable probabilistic observer.
 
 **Compatibility layers:** deterministic F48 history support, probability-preserving C17 stochastic histories, support-only EODCS relational shadows, category A06 repair/coreflection, VOYAGER topology and actual carrier's physical-access constraints. Each retains its own hypotheses; a support projection is never silently inverted into weights, and original-provenance bookkeeping is never deleted in the name of a smaller current state. The source manifests, Lean proof scope and WIP swarm fences are in [carrier-first dossier](../research/2026-10-13/CARRIER_INDEXED_HISTORY_THEORY.md) and [Claude integration handoff](CARRIER_MAIN_INTEGRATION_HANDOFF.md).
+## Cambrian extension: representation, realization and access
+
+The [Cambrian integration report](CAMBRIAN_CAMPAIGN_2026-10-13.md) keeps three
+independent contracts explicit. A source update must descend through the
+chosen observation; compatible reports must be realized by an original
+source history; and the source laws, probes, resets and resources used by
+the derivation must be available. None of these contracts implies the others.
+
+`cambrian_stochastic_transport` uses the joint next-report/receipt kernel,
+with exact rational laws and explicit source charts, to preserve evidence
+and Bayesian posteriors across changing carriers. `cambrian_c_geometry`
+handles relational gluing and source histories; its standalone Lean theorem
+requires finite initial and successor menus. Cluster modules are research
+adapters with declared mathematical inputs, not empirical source authenticators.
+The scalar kernel interface does not claim arbitrary noncommutative quantum
+factorization or physical intervention equivalence.

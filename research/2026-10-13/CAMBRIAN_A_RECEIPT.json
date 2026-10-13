@@ -1,0 +1,370 @@
+{
+  "RH_proved": false,
+  "academic_novelty_established": false,
+  "assignment_count": 6,
+  "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "new_Lean_kernel_proof": false,
+  "physical_source_authenticated": false,
+  "python": "3.12.14",
+  "researcher_count": 1,
+  "results": {
+    "01": {
+      "cheapest_falsifier": "Two-state reset with preserved versus silent outcome",
+      "claim_ids": [
+        "CA01"
+      ],
+      "evidence": {
+        "basis_id": "bits",
+        "execution_rows": [
+          {
+            "audit_current_state": 0,
+            "audit_original_state": 0,
+            "long_report": [
+              [
+                "reset",
+                0,
+                1
+              ],
+              [
+                "read",
+                0,
+                2
+              ]
+            ],
+            "path": [
+              "reset",
+              "read"
+            ],
+            "short_report": [
+              [
+                "reset",
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "audit_current_state": 0,
+            "audit_original_state": 1,
+            "long_report": [
+              [
+                "reset",
+                1,
+                1
+              ],
+              [
+                "read",
+                0,
+                2
+              ]
+            ],
+            "path": [
+              "reset",
+              "read"
+            ],
+            "short_report": [
+              [
+                "reset",
+                1,
+                1
+              ]
+            ]
+          }
+        ],
+        "ideal_completion_performed": false,
+        "physical_source_authenticated": false,
+        "privileged_root_in_public_report": false,
+        "public_source_fibers": [
+          [
+            [
+              [
+                "reset",
+                0,
+                1
+              ],
+              [
+                "read",
+                0,
+                2
+              ]
+            ],
+            [
+              0
+            ]
+          ],
+          [
+            [
+              [
+                "reset",
+                1,
+                1
+              ],
+              [
+                "read",
+                0,
+                2
+              ]
+            ],
+            [
+              1
+            ]
+          ]
+        ],
+        "source_id": "bit-source",
+        "truncation_square_commutes": true
+      },
+      "limitations": "Universal report quotient only; no universal ontology, source authentication or ideal execution",
+      "proof": "CAMBRIAN_A_FOUNDATIONS.md#01",
+      "quantifiers": "Every lawful history; every quotient-invariant function has one unique report decoder",
+      "question": "Universal source-typed observational state",
+      "rival": "Current carrier and causal history are interchangeable",
+      "status": "CLASSICAL / PROVED LOCAL"
+    },
+    "02": {
+      "cheapest_falsifier": "Identity source with collapsed post report, then four-positive rational weight mutation",
+      "claim_ids": [
+        "CA02a",
+        "CA02b",
+        "CA02c"
+      ],
+      "evidence": {
+        "complete_support_gates": {
+          "after_epoch": 1,
+          "before_epoch": 0,
+          "complete_declared_source": true,
+          "source_defect": null,
+          "source_id": "cluster-A-source",
+          "source_lift": true,
+          "target_defect": null,
+          "target_lift": true
+        },
+        "diagonal_gates": {
+          "after_epoch": 1,
+          "before_epoch": 0,
+          "complete_declared_source": true,
+          "source_defect": null,
+          "source_id": "cluster-A-source",
+          "source_lift": true,
+          "target_defect": [
+            "a0",
+            "y1"
+          ],
+          "target_lift": false
+        },
+        "independent_law": {
+          "defect": null,
+          "exact_for_all_old_evidence_and_post_predicates": true,
+          "null_post_reports": [],
+          "source_id": "cluster-A-source"
+        },
+        "old_evidence": {
+          "abstract_completed_states": [
+            "y0",
+            "y1"
+          ],
+          "actual_states": [
+            "y0"
+          ],
+          "equal": false
+        },
+        "same_support_correlated_mutation": {
+          "defect": [
+            "a0",
+            "b",
+            "y0",
+            "1/8",
+            "1/4"
+          ],
+          "exact_for_all_old_evidence_and_post_predicates": false,
+          "null_post_reports": [],
+          "source_id": "cluster-A-source"
+        }
+      },
+      "limitations": "CA02c fixes one declared joint law; does not assert unchanged evidence mass or all-prior descent",
+      "proof": "CAMBRIAN_A_FOUNDATIONS.md#02",
+      "quantifiers": "Every old report event, post report predicate, and nonnull conditional event at the stated gate",
+      "question": "Changing-source relational and weighted base change",
+      "rival": "Commuting square or identical support transports every source fact and conditional law",
+      "status": "CLASSICAL / PROVED LOCAL"
+    },
+    "03": {
+      "cheapest_falsifier": "Bit erased by reset",
+      "claim_ids": [
+        "CA03"
+      ],
+      "evidence": {
+        "history_preserves_old_fact": true,
+        "reset_preserves_old_fact": false
+      },
+      "limitations": "Compare reports on one source/path domain; current truths require distinct predicates",
+      "proof": "CAMBRIAN_A_FOUNDATIONS.md#03",
+      "quantifiers": "Every Boolean fact measurable in the old report",
+      "question": "Knowledge lattice and destructive intervention",
+      "rival": "Each observation increases knowledge of all original and current claims",
+      "status": "CLASSICAL / PROVED LOCAL"
+    },
+    "04": {
+      "cheapest_falsifier": "Cost rescaling, batch-versus-serial access, target-only authorized testimony",
+      "claim_ids": [
+        "CA04"
+      ],
+      "evidence": {
+        "AND6_true_support": [
+          [
+            "bit0",
+            "bit1",
+            "bit2",
+            "bit3",
+            "bit4",
+            "bit5"
+          ]
+        ],
+        "AND6_zero_support": [
+          [
+            "bit0"
+          ],
+          [
+            "bit1"
+          ],
+          [
+            "bit2"
+          ],
+          [
+            "bit3"
+          ],
+          [
+            "bit4"
+          ],
+          [
+            "bit5"
+          ]
+        ]
+      },
+      "limitations": "Static logical support does not certify executable destructive policy or proof authority",
+      "proof": "CAMBRIAN_A_FOUNDATIONS.md#04",
+      "quantifiers": "Every rival source with another target value; all AND_n widths under declared bit access",
+      "question": "Pointwise minimal proof support and distinct cost contracts",
+      "rival": "One scalar or support count bounds physical cost, communication and macro-updates",
+      "status": "CLASSICAL / PROVED LOCAL"
+    },
+    "05": {
+      "cheapest_falsifier": "Destructive two-bit parity, every pair separable but no uniform first action wins",
+      "claim_ids": [
+        "CA05"
+      ],
+      "evidence": {
+        "dark_pair": {
+          "closed_equivalence_witness": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "physical_source_authenticated": false,
+          "separator": null,
+          "state_pair": [
+            0,
+            1
+          ],
+          "toolkit_relative_dark": true
+        },
+        "extended_probe_lamp": {
+          "closed_equivalence_witness": [],
+          "physical_source_authenticated": false,
+          "separator": [
+            "read"
+          ],
+          "state_pair": [
+            0,
+            1
+          ],
+          "toolkit_relative_dark": false
+        }
+      },
+      "limitations": "Finite complete deterministic source and public menus only; no arbitrary infinite grammar decision",
+      "proof": "CAMBRIAN_A_FOUNDATIONS.md#05",
+      "quantifiers": "All legal finite action words for each pair; uniform policy uses a stronger quantifier",
+      "question": "Toolkit-relative darkness, route gaps and uniform-policy trap",
+      "rival": "A failed route or pairwise separators alone decide uniform acquisition",
+      "status": "CLASSICAL / PROVED LOCAL"
+    },
+    "06": {
+      "cheapest_falsifier": "Three coordinate observers; even-parity pairwise-independent source",
+      "claim_ids": [
+        "CA06"
+      ],
+      "evidence": {
+        "all_source_states_reconstructed": true,
+        "common_classes": 1,
+        "common_factor": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "fused_classes": 8,
+        "fused_report": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "limitations": "Lag/basis transport, stochastic independence and joint realizability require their own laws",
+      "proof": "CAMBRIAN_A_FOUNDATIONS.md#06",
+      "quantifiers": "Any finite family of total reports on one source; every common/fused deterministic target",
+      "question": "Many observers, common information and fusion",
+      "rival": "Trivial common information or incomplete local states prevents source reconstruction",
+      "status": "CLASSICAL / PROVED LOCAL"
+    }
+  },
+  "schema": "succ.cambrian.cluster-A.v1"
+}

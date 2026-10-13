@@ -1,0 +1,86 @@
+{
+  "actual_D_resource_control": {
+    "actual_equivalence_calls": 1,
+    "actual_membership_queries": 66,
+    "finite_source_states": 65,
+    "max_requested_word_length": 65,
+    "outer_equivalence_round_budget": 1,
+    "reconstructed_states": 65,
+    "scope": "Actual finite-source run. Source simulator and exact teacher privileged; max_rounds is not a query/time/memory cap.",
+    "sequential_source_ticks_with_reset_queries": 2145
+  },
+  "base_commit": "fa6ebb12a8ab9f016aae59b43535fff145a9862e",
+  "basename_guard_fixtures": {
+    "current_collision_guard_rejects": true,
+    "legacy_normalization_loses_bad_hash": true,
+    "legitimate_relocation_accepted": true
+  },
+  "compiler_process_guard_fixtures": {
+    "crash_rc_minus11_rejected": true,
+    "elaboration_error_rc1_accepted_as_rejection": true,
+    "other_failure_rc2_rejected": true,
+    "rc0_false_control_rejected": true,
+    "rc1_without_error_diagnostic_rejected": true
+  },
+  "not_reviewing_own_F_mathematical_correctness": true,
+  "publication_gates": [
+    "Commit/integrate audit H then mark its manifest row executed",
+    "Rerun aggregate verifier on committed integration head",
+    "Report actual exact-head GitHub statuses after publication, separately from local checks"
+  ],
+  "schema": "cambrian_audit_h_v1",
+  "snapshot_hashes": {
+    ".github/workflows/cambrian.yml": "991a8cebf71dd5cdb466bb084c26f52233df84a703207a789c0088bd38a5d7e2",
+    ".github/workflows/eodcs-lean.yml": "9fef4e71822fd7e2fe1e9c70a8fc11936380a96a773d9fc47a420a6a38a5883f",
+    "docs/CAMBRIAN_CAMPAIGN_2026-10-13.md": "62f271e7835e47e80f833a6a51d6257e9ddeaf02cac51e0e1a5587ce4834e43f",
+    "docs/CLAIM_LEDGER.md": "668650ae6fad23bbbf4f22ee4044789fb77919f48661e56b0ac12a7f37a8328e",
+    "research/2026-10-13/CAMBRIAN_REVIEWED_CORRECTIONS.json": "fe74fa6e7245433e4698fec0a87c9d3c702ec37f45bced427d935e66f4c975cf",
+    "research/2026-10-13/CAMBRIAN_SWARM_MANIFEST.json": "30405cc1f61c9a5ab0a4dc04bbf5e11e956b395735f618fb9661a573626e79f9",
+    "scripts/cambrian_campaign_verify.py": "25d37fbb7075332f68179cad9fda453a4048c6a3ae0ddc8326841998433e68ad",
+    "scripts/cambrian_formal_ci.py": "1ce7604b29322e4b17bb212712d79a8ae34d028e1e1a6fa196cf329ab5ccd211"
+  },
+  "status": "DESIGN_CONTROLS_PASS_WITH_PUBLICATION_GATES",
+  "stored_source_hash_checks": [
+    {
+      "all_current_bytes_match": true,
+      "contract": "CAMBRIAN_A_VALIDATION.json",
+      "entries": 3
+    },
+    {
+      "all_current_bytes_match": true,
+      "contract": "CAMBRIAN_C_ASSIGNMENTS.json",
+      "entries": 6
+    }
+  ],
+  "swarm": {
+    "audit_statuses_at_snapshot": {
+      "A": "executed",
+      "B": "executed",
+      "C": "executed",
+      "D": "executed",
+      "E": "executed",
+      "F": "executed",
+      "G": "executed",
+      "H": "pending"
+    },
+    "audits": 8,
+    "exploration_ids_complete": true,
+    "explorations": 36,
+    "workers": 6
+  },
+  "synthetic_fixtures_are_not_mathematical_or_compiler_runs": true,
+  "verifier_guard_fixtures": {
+    "D_proof_status_mutation_rejected": true,
+    "D_source_hash_mutation_rejected": true,
+    "E_current_head_only_change_accepted": true,
+    "declared_python_only_change_accepted": true,
+    "matching_D_receipt_accepted": true
+  },
+  "workflow_and_graph_checks": {
+    "all_prefix_depth_gate_visible_in_graph": true,
+    "both_declared_python_versions": true,
+    "campaign_branch_push_triggers": true,
+    "lowercase_F_receipt_triggers": true,
+    "uppercase_receipts_trigger": true
+  }
+}

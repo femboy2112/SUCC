@@ -1,0 +1,67 @@
+{
+  "cheapest_falsifier": "Identity source with collapsed post report, then four-positive rational weight mutation",
+  "claim_ids": [
+    "CA02a",
+    "CA02b",
+    "CA02c"
+  ],
+  "evidence": {
+    "complete_support_gates": {
+      "after_epoch": 1,
+      "before_epoch": 0,
+      "complete_declared_source": true,
+      "source_defect": null,
+      "source_id": "cluster-A-source",
+      "source_lift": true,
+      "target_defect": null,
+      "target_lift": true
+    },
+    "diagonal_gates": {
+      "after_epoch": 1,
+      "before_epoch": 0,
+      "complete_declared_source": true,
+      "source_defect": null,
+      "source_id": "cluster-A-source",
+      "source_lift": true,
+      "target_defect": [
+        "a0",
+        "y1"
+      ],
+      "target_lift": false
+    },
+    "independent_law": {
+      "defect": null,
+      "exact_for_all_old_evidence_and_post_predicates": true,
+      "null_post_reports": [],
+      "source_id": "cluster-A-source"
+    },
+    "old_evidence": {
+      "abstract_completed_states": [
+        "y0",
+        "y1"
+      ],
+      "actual_states": [
+        "y0"
+      ],
+      "equal": false
+    },
+    "same_support_correlated_mutation": {
+      "defect": [
+        "a0",
+        "b",
+        "y0",
+        "1/8",
+        "1/4"
+      ],
+      "exact_for_all_old_evidence_and_post_predicates": false,
+      "null_post_reports": [],
+      "source_id": "cluster-A-source"
+    }
+  },
+  "limitations": "CA02c fixes one declared joint law; does not assert unchanged evidence mass or all-prior descent",
+  "proof": "CAMBRIAN_A_FOUNDATIONS.md#02",
+  "quantifiers": "Every old report event, post report predicate, and nonnull conditional event at the stated gate",
+  "question": "Changing-source relational and weighted base change",
+  "rival": "Commuting square or identical support transports every source fact and conditional law",
+  "status": "CLASSICAL / PROVED LOCAL"
+}
