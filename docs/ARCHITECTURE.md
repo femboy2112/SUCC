@@ -66,6 +66,16 @@ The mathematical subsystems have distinct domains and kinds of evidence. They ar
 
 ## Research provenance and gates
 
+The additive [NO-GHOST layer](../research/2026-10-13/NO_GHOST/INTEGRATION.md)
+distinguishes legal private-path support, full joint law, and source-blind public
+policy realization. `no_ghost` compiles finite declared source/occurrence kernels
+and exact marginal/flow certificates; `no_ghost_coherence` checks chosen private
+comparisons; `no_ghost_policy` retains public information sets through a finite
+realization plan and independently replays the extracted policy. Its conditional
+schedule-presentation descent requires complete constraints, authorized connected
+charts, path coherence and restriction naturality. None of these operations
+marks a merely possible trajectory as a performed event.
+
 Claims should be labeled CLASSICAL, PROVED LOCAL, TESTED MODEL, HYPOTHESIS, UNVERIFIED or REFUTED and connected to a precise statement, author/source, proof or test, mutation controls and assumptions.
 
 The mathematical **source of truth** is not merely a numerical plot. Finite negative claims require exact algebra or independently justified error enclosures. Even an impeccably rigorous prime-only interval is not a completed Gamma/Weil interval.

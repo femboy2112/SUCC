@@ -11,6 +11,16 @@ The founding hypothesis begins with **the physical carrier**, not with the mathe
 
 ## Mathematical atlas: the many-worlds swarm
 
+**NO-GHOST research contribution:** the [source-indexed causal descent manuscript](research/2026-10-13/NO_GHOST/MANUSCRIPT.md)
+separates complete-law diamonds, coherent chosen private-history transport,
+constraint-complete gluing, and public-policy stochastic realization. It includes
+an executable three-event braid failure with a coherent alternative, exact rational
+primal/Farkas certificates, a hidden-source-oracle counterexample, and twelve
+Lean 4.14 kernel-checked declarations. Existing C22/F48/CAR results are credited;
+no universal physical gluing theorem or academic-priority claim is made.
+[Integration and reproduction](research/2026-10-13/NO_GHOST/INTEGRATION.md) ·
+[Scoped claims](docs/CLAIM_SUPPLEMENT_NO_GHOST.md).
+
 The [SUCC Mathematical Atlas](research/2026-10-13/SWARM_ATLAS/SUCC_MATHEMATICAL_ATLAS.md)
 connects 48 expedition dossiers and the subsequent cross-domain investigations.
 It records exact source transport, lawful original-state histories, stochastic

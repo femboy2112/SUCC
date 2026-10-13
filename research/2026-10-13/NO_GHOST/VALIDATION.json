@@ -1,0 +1,94 @@
+{
+  "schema": "SUCC_NO_GHOST_VALIDATION_V1",
+  "base_commit": "9e7589e522aff990189aa8a14f6ee2fa5a28dd81",
+  "branch": "research/no-ghost-causal-gluing-2026-10-13",
+  "scope": "Local executed validation of a declared finite model; no empirical events or remote CI outcome inferred.",
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "checks": [
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "phase": "baseline",
+      "exit_code": 0,
+      "tests": 1839,
+      "log": "logs/baseline_full.log"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "phase": "final",
+      "exit_code": 0,
+      "tests": 1901,
+      "log": "logs/final_full.log"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_no_ghost*.py' -v",
+      "exit_code": 0,
+      "tests": 62,
+      "log": "logs/targeted.log"
+    },
+    {
+      "command": "NO_GHOST_LEAN=/tmp/succ-lean414/bin/lean NO_GHOST_SELF_PATH_COMPAT=1 bash scripts/verify_no_ghost_lean.sh",
+      "exit_code": 0,
+      "lean_version": "4.14.0",
+      "compiler_commit": "410fab728470",
+      "kernel_checked_declarations": 12,
+      "negative_false_proof_rejected": true,
+      "log": "logs/formal.log"
+    },
+    {
+      "command": "python scripts/verify_provenance.py",
+      "exit_code": 0,
+      "entries": 72,
+      "log": "logs/provenance.log"
+    },
+    {
+      "command": "python scripts/observer_foundations_probe.py",
+      "exit_code": 0,
+      "log": "logs/foundations.log"
+    },
+    {
+      "command": "python scripts/ordinal_succ_report_probe.py",
+      "exit_code": 0,
+      "log": "logs/ordinals.log"
+    },
+    {
+      "command": "python scripts/no_ghost_probe.py --output /tmp/no_ghost_exact_receipt.json; cmp /tmp/no_ghost_exact_receipt.json research/2026-10-13/NO_GHOST/examples/no_ghost_exact_receipt.json",
+      "exit_code": 0,
+      "exact_byte_replay": true
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "file_sha256": {
+    ".github/workflows/no-ghost.yml": "0c6ab737df97e803963994e5951e32c8040d6a5601832614d47a4bed860b97d9",
+    "formal/NoGhost.lean": "9cca103f016e051e71aa98fe092cceec8cf7cdeb50c962ba737ce47c586c768a",
+    "observational_succ/no_ghost.py": "224846986b61b0a55c6b14457fa72caa5389ab3d44a8f42526de2e337581bc2f",
+    "observational_succ/no_ghost_coherence.py": "dad478eef2764aa6fcb915dd44c77f7c2a065ac263495a18197498af8110b633",
+    "observational_succ/no_ghost_policy.py": "e46ab5b288fee8a67a82037283c3088c1b84ed83e4e5dc9a451b5785cc999c44",
+    "research/2026-10-13/NO_GHOST/examples/no_ghost_exact_receipt.json": "83a80187001d906413ead265dcd50ea23e2cf68c8f98650213880473d520fcd9",
+    "scripts/no_ghost_probe.py": "c037875796f950b27fc09a5265383343eb837f094c397ad48b50db63c7c1fbe7",
+    "scripts/verify_no_ghost_lean.sh": "9455142c5792d436d595553249a9977b9f64caf921470cf08f4c5a7b6adbdb8a",
+    "tests/test_no_ghost.py": "fd09806e032b1831a741e8af65750a763b56c278b9eecc0590c0eb7e71de262c",
+    "tests/test_no_ghost_coherence.py": "3606049cbb7ca5fae4cc03c2d17bd969b2955419c17756bee20b4284e84f39cd",
+    "tests/test_no_ghost_gluing_examples.py": "17a22cbf7acd98eddc7b32817643f9156720166299842bb5b0c8b7b78d00bcf9",
+    "tests/test_no_ghost_policy.py": "ceb092188cde107967ce8e8f5f1d3aeed4528c88a1d4796854395a187568b7af"
+  },
+  "log_sha256": {
+    "research/2026-10-13/NO_GHOST/logs/baseline_full.log": "e9a58156d3ae24b9ea3d7d548586f4d017d1840ee5c9c80e38a270f58a481ef2",
+    "research/2026-10-13/NO_GHOST/logs/final_full.log": "890987c47d77d5d7f8e8bd7c18cf84626e4e76dfbe0ca8eb58d633bc68c11ffd",
+    "research/2026-10-13/NO_GHOST/logs/formal.log": "8c383ea4dea046865a8adf1b6f3a55a13f84e626ab1ac554b0f794d941406975",
+    "research/2026-10-13/NO_GHOST/logs/foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "research/2026-10-13/NO_GHOST/logs/ordinals.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "research/2026-10-13/NO_GHOST/logs/provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "research/2026-10-13/NO_GHOST/logs/targeted.log": "77810eef7bf34fffc96914a951938d2ef42fb037608fefcf8b5e7ae9ef7edcab"
+  },
+  "boundaries": [
+    "Python code is not formally refined to Lean.",
+    "Full finite-poset coherence, schedule-chart descent, Farkas and public-policy polytope theorems remain paper proofs.",
+    "Claimed kernel equivalence formalized at abstract complete-kernel/prior level, not rational matrix multiplication.",
+    "Repair optimizer assumes a separately certified legal finite menu.",
+    "No inherited WIP branch or main was modified.",
+    "Six same-model delegated research roles are not independent epistemic witnesses."
+  ]
+}

@@ -513,6 +513,16 @@ by the finite models. The atlas ranks the next falsifiable statements.
 
 ## Carrier-first SUCC unification and WIP-safe swarm consolidation
 
+**NO-GHOST refinement:** [the new manuscript](../research/2026-10-13/NO_GHOST/MANUSCRIPT.md)
+supplies conditional coherent chart descent, exact public-policy realization
+equations, and formal generic gluing/kernel/rigidity cores. The next nontrivial
+cut is decomposition of the operational policy polytope along lawful interfaces
+while preserving public information sets. Also open: full schedule/coherence
+and policy-LP mechanization, general site compilation, and empirical source
+authentication. The support-only coupling formulation is now explicitly refuted
+as a characterization of fixed-kernel public experiments; classical attribution
+and draft-branch boundaries remain in force.
+
 **Conditional theorem closed (carrier draft PR #53):** The unifying object is a source-indexed carrier, not another god-level mathematical theory. State is typed as original source S, current C_h, actual history h, lawful action menu and full joint K_a(current;receipt,next), and UNNORMALIZED J_h(original,current). A current quotient q is lawful for every original-source prior exactly when enabledness and the full joint (receipt,next q'-state) law descend on q-fibers. This reindexing identity gives entire finite actual-history evidence and original-target support preservation; it does NOT license unseen counterfactual observations. Canonical one-step q* and finite stationary probabilistic partition refinement retain minimal essential information; carrier supports and probabilities remain distinct. [CAR theory/proofs](../research/2026-10-13/CARRIER_INDEXED_HISTORY_THEORY.md), [claim supplement](CLAIM_SUPPLEMENT_CARRIER.md), [frozen receipt](../research/2026-10-13/CARRIER_INDEXED_SOURCE_RECEIPT.json).
 
 **Remaining proof targets:** (i) fully kernel-refine the stochastic finite-sum CAR3 identity and legal adaptive-policy transport; (ii) characterize history-dependent action availability and source-changing stage transitions; (iii) build a lawful concurrent history coverage/site with actual gluing theorem and destructive-order negative control; (iv) prove source-class compactness/realization for causal histories, extending the already kernel-verified VOYAGER/topological and Cambrian finite-branching specialties; (v) empirically attest preparations/probes only if physical sources exist; (vi) develop grammar-expanding mathematics beyond prewritten constructors. Completed arithmetic finite identities do not imply the completed Weil positivity/RH bridge.
