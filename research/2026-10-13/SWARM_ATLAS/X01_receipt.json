@@ -1,0 +1,387 @@
+{
+  "actual_inverse_family_controls": [
+    {
+      "labelled_report_limit_cardinality": 2,
+      "labels": [
+        0,
+        0
+      ],
+      "multiplicities": [
+        2,
+        1
+      ],
+      "retained_limit_cardinality": 3,
+      "retained_sources_and_receipts": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "labelled_report_limit_cardinality": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "multiplicities": [
+        1,
+        1
+      ],
+      "retained_limit_cardinality": 2,
+      "retained_sources_and_receipts": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "labelled_report_limit_cardinality": 1,
+      "labels": [
+        0,
+        1
+      ],
+      "multiplicities": [
+        0,
+        1
+      ],
+      "retained_limit_cardinality": 1,
+      "retained_sources_and_receipts": [
+        [
+          1,
+          0
+        ]
+      ],
+      "trace": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "labelled_report_limit_cardinality": 0,
+      "labels": [],
+      "multiplicities": [],
+      "retained_limit_cardinality": 0,
+      "retained_sources_and_receipts": [],
+      "trace": []
+    }
+  ],
+  "artifact_sha256": {
+    "X01.md": "27bf908330d9a99b8746e19b6dfa15550b38ff5650c426b1d3f97f715c8f918b",
+    "X01_probe.py": "68389dd5b31e144d4c80b069ee34e4b6aa9336c9997d7c34eb56a504b8ceb2e1",
+    "X01_sources.json": "16200e7331dc5b94b2c264c3c2c2021ce84d62863b3e8792c9bc5143ea590ca6"
+  },
+  "assertions_passed": true,
+  "assignment": "SWM-X01",
+  "bounds": {
+    "maximum_memory_kib": 102400,
+    "maximum_wall_seconds": 60,
+    "vm_hwm_kib": 18048,
+    "wall_seconds": 0.7824243460781872
+  },
+  "compact_cantor_derivative_finite_control": {
+    "profiles_checked_horizons_0_through_8": 511,
+    "retained_preparations_per_profile": 2
+  },
+  "escape_and_repairs": {
+    "bounded_cap_refutations": [
+      {
+        "cost_cap": 1,
+        "refuting_probe": 1,
+        "reports": {
+          "1": 1
+        }
+      },
+      {
+        "cost_cap": 2,
+        "refuting_probe": 2,
+        "reports": {
+          "1": 1,
+          "2": 1
+        }
+      },
+      {
+        "cost_cap": 3,
+        "refuting_probe": 3,
+        "reports": {
+          "1": 1,
+          "2": 1,
+          "3": 1
+        }
+      },
+      {
+        "cost_cap": 4,
+        "refuting_probe": 4,
+        "reports": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1
+        }
+      },
+      {
+        "cost_cap": 5,
+        "refuting_probe": 5,
+        "reports": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1
+        }
+      },
+      {
+        "cost_cap": 6,
+        "refuting_probe": 6,
+        "reports": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1
+        }
+      },
+      {
+        "cost_cap": 7,
+        "refuting_probe": 7,
+        "reports": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1
+        }
+      },
+      {
+        "cost_cap": 8,
+        "refuting_probe": 8,
+        "reports": {
+          "1": 1,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1
+        }
+      }
+    ],
+    "finite_horizons_only": [
+      {
+        "compact_original_limit_source_report": [],
+        "finite_witness_source": 1,
+        "horizon": 0,
+        "minimum_supported_receipt_cost": 1,
+        "receipt_at_limit_source": false,
+        "restored_limit_receipt_minimum_cost": 0
+      },
+      {
+        "compact_original_limit_source_report": [
+          0
+        ],
+        "finite_witness_source": 2,
+        "horizon": 1,
+        "minimum_supported_receipt_cost": 2,
+        "receipt_at_limit_source": false,
+        "restored_limit_receipt_minimum_cost": 0
+      },
+      {
+        "compact_original_limit_source_report": [
+          0,
+          0
+        ],
+        "finite_witness_source": 3,
+        "horizon": 2,
+        "minimum_supported_receipt_cost": 3,
+        "receipt_at_limit_source": false,
+        "restored_limit_receipt_minimum_cost": 0
+      },
+      {
+        "compact_original_limit_source_report": [
+          0,
+          0,
+          0
+        ],
+        "finite_witness_source": 4,
+        "horizon": 3,
+        "minimum_supported_receipt_cost": 4,
+        "receipt_at_limit_source": false,
+        "restored_limit_receipt_minimum_cost": 0
+      },
+      {
+        "compact_original_limit_source_report": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "finite_witness_source": 5,
+        "horizon": 4,
+        "minimum_supported_receipt_cost": 5,
+        "receipt_at_limit_source": false,
+        "restored_limit_receipt_minimum_cost": 0
+      },
+      {
+        "compact_original_limit_source_report": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "finite_witness_source": 6,
+        "horizon": 5,
+        "minimum_supported_receipt_cost": 6,
+        "receipt_at_limit_source": false,
+        "restored_limit_receipt_minimum_cost": 0
+      },
+      {
+        "compact_original_limit_source_report": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "finite_witness_source": 7,
+        "horizon": 6,
+        "minimum_supported_receipt_cost": 7,
+        "receipt_at_limit_source": false,
+        "restored_limit_receipt_minimum_cost": 0
+      },
+      {
+        "compact_original_limit_source_report": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "finite_witness_source": 8,
+        "horizon": 7,
+        "minimum_supported_receipt_cost": 8,
+        "receipt_at_limit_source": false,
+        "restored_limit_receipt_minimum_cost": 0
+      },
+      {
+        "compact_original_limit_source_report": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "finite_witness_source": 9,
+        "horizon": 8,
+        "minimum_supported_receipt_cost": 9,
+        "receipt_at_limit_source": false,
+        "restored_limit_receipt_minimum_cost": 0
+      }
+    ],
+    "injective_label_checks": 8,
+    "universal_nonrealization_evidence": "paper quantifier proof in X01.md, not finite sweep"
+  },
+  "execution_command": "timeout 60 python research/2026-10-13/SWARM_ATLAS/X01_probe.py",
+  "execution_head": "316a93b264f77ee425b6a7e52be26d90bd4ccf20",
+  "finite_sweep": {
+    "labelled_support_checks": 123458,
+    "models": 2184,
+    "refinement_comparisons": 17782,
+    "singleton_bridge_checks": 814
+  },
+  "full_suite_executed": false,
+  "imports_repository_helpers": false,
+  "lean_executed": false,
+  "minimal_refinement_counterexample": {
+    "cartesian_refinement": false,
+    "comparison_domain_cardinality": 2,
+    "large_stage_reports": [
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ],
+    "missing_pairs": [
+      [
+        [
+          0
+        ],
+        [
+          [],
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1
+        ],
+        [
+          [],
+          0,
+          0
+        ]
+      ]
+    ],
+    "pullback_cardinality": 4,
+    "small_stage_reports": [
+      []
+    ],
+    "stage_projection_surjectivity": true
+  },
+  "physical_source_attestation": false,
+  "python": "3.12.3",
+  "source_parent": "316a93b264f77ee425b6a7e52be26d90bd4ccf20",
+  "status": "TESTED MODEL"
+}
