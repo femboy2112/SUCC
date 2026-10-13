@@ -17,6 +17,8 @@ from observational_succ.carrier_indexed import (
     from_stochastic_history, labels_partition, mass_total,
     minimal_stationary_repair, repair_one_step, CarrierStep,
     transport_actual_history, original_support_is_monotone,
+    forget_probabilities, possibility_descent, compose_possibilities,
+    deterministic_instrument,
 )
 from observational_succ.swarm_lawful_history import (
     LawfulSource, Instrument, Event, replay_fiber,
@@ -479,6 +481,59 @@ class FullCarrierComposition(unittest.TestCase):
             fake.verify({"read":a})
         self.assertEqual(src.root().originals_supported,frozenset((0,1)))
 
+
+
+class CarrierPerspectiveForgetfulTests(unittest.TestCase):
+    def test_probability_implies_support_descent_but_not_conversely(self):
+        st=stage(n=2)
+        q=CarrierQuotient(st,(0,0),"forget")
+        a=CarrierInstrument(
+            "different-laws",st,st,("yes","no"),(True,True),
+            (((0,0,Q(1,4)),(1,0,Q(3,4))),
+             ((0,1,Q(3,4)),(1,1,Q(1,4)))))
+        support=forget_probabilities(a)
+        self.assertTrue(possibility_descent(support,q,q))
+        self.assertFalse(audit_descent(a,q,q).valid)
+        self.assertFalse(deterministic_instrument(a))
+        good=action(st,("ok","ok"),name="Dirac")
+        self.assertTrue(deterministic_instrument(good))
+        self.assertTrue(audit_descent(good,q,q).valid)
+        self.assertTrue(possibility_descent(forget_probabilities(good),q,q))
+
+    def test_composition_of_supports_is_source_exact_but_not_a_probability(self):
+        start=stage(n=2)
+        middle=stage(n=3,epoch=1,name="middle")
+        end=stage(n=2,epoch=2,name="end")
+        a=CarrierInstrument(
+            "A",start,middle,("a","b"),(True,True),
+            (((0,0,Q(1,2)),(1,1,Q(1,2))),
+             ((0,2,Q(1,2)),(1,1,Q(1,2)))))
+        b=CarrierInstrument(
+            "B",middle,end,("c","d"),(True,True,True),
+            (((0,0,Q(1)),),((1,1,Q(1)),),((0,1,Q(1)),)))
+        out=compose_possibilities(forget_probabilities(a),
+                                  forget_probabilities(b))
+        self.assertEqual(out.before,start)
+        self.assertEqual(out.after,end)
+        self.assertEqual(out.receipts,
+                         (("a","c"),("a","d"),("b","c"),("b","d")))
+        # Raw oracle: existentially concatenate the two positive atom tables.
+        for source in range(start.count):
+            expected=set()
+            for z,m,p in a.rows[source]:
+                for w,y,q in b.rows[m]:
+                    expected.add((out.receipts.index((a.receipts[z],b.receipts[w])),y))
+            self.assertEqual(set(out.possible[source]),expected)
+        self.assertEqual(tuple(out.enabled),(True,True))
+
+    def test_support_cannot_conjure_invalid_action_from_hidden_availability(self):
+        st=stage(n=2)
+        first=action(st,("ok","ok"),name="A",enabled=(True,False))
+        second=action(st,("ok","ok"),name="B")
+        result=compose_possibilities(forget_probabilities(first),
+                                     forget_probabilities(second))
+        self.assertEqual(result.enabled,(True,False))
+        self.assertNotEqual(result.possible[0],())
 
 if __name__=="__main__":
     unittest.main()
