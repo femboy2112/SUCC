@@ -7,7 +7,7 @@ from random import Random
 from observational_succ.causal_nerode_succ import (
     SourceChart, CausalInstrument, SourceTransportError, causal_descent,
     verify_refinement_factorization, compose_instruments, audit_original_claim,
-    causal_repair_demo,
+    causal_repair_demo, partial_causal_audit,
 )
 
 
@@ -180,6 +180,47 @@ class TestCausalDescent(unittest.TestCase):
                                             (("b","x"),("a","y")))
         with self.assertRaises(SourceTransportError):
             audit_original_claim(CausalInstrument("a",a,b,s),(0,1),(False,True))
+
+    def test_partial_source_agreement_cannot_certify_hidden_mismatch(self):
+        states=("00","01","10","11")
+        before=chart("s",0,states,("0","0","1","1"))
+        after=chart("s",1,states,("0","0","1","1"))
+        inst=CausalInstrument("swap",before,after,("00","10","01","11"))
+        partial=partial_causal_audit(inst,("00","10"))
+        self.assertTrue(partial.sample_consistent)
+        self.assertFalse(partial.globally_certified_from_sample)
+        self.assertEqual(partial.suggested_new_source_probe,"01")
+        self.assertTrue(partial.cannot_infer_unseen_source_truth)
+        self.assertFalse(causal_descent(inst).descended)
+        next_sample=partial_causal_audit(inst,("00","10","01"))
+        self.assertFalse(next_sample.sample_consistent)
+        self.assertEqual(next_sample.sample_obstruction.state_a,"00")
+        self.assertEqual(next_sample.sample_obstruction.state_b,"01")
+        self.assertFalse(next_sample.globally_certified_from_sample)
+
+    def test_complete_sample_can_certify_only_scope_limited_source(self):
+        states=("a","b","c")
+        before=chart("s",0,states,("0","0","1"))
+        after=chart("s",1,states,("1","1","0"))
+        inst=CausalInstrument("id",before,after,states)
+        incomplete=partial_causal_audit(inst,("a","b"))
+        complete=partial_causal_audit(inst,states)
+        self.assertTrue(incomplete.sample_consistent)
+        self.assertFalse(incomplete.globally_certified_from_sample)
+        self.assertTrue(complete.globally_certified_from_sample)
+        self.assertIsNone(complete.suggested_new_source_probe)
+        self.assertTrue(causal_descent(inst).descended)
+
+    def test_invalid_partial_sampling_mutations_are_rejected(self):
+        states=("a","b")
+        src=chart("s",0,states,("0","0"))
+        inst=CausalInstrument("id",src,src,states)
+        with self.assertRaises(SourceTransportError):
+            partial_causal_audit(inst,("a","a"))
+        with self.assertRaises(SourceTransportError):
+            partial_causal_audit(inst,("ghost",))
+        with self.assertRaises(SourceTransportError):
+            partial_causal_audit(inst,["a"])
 
     def test_small_zero_information_source_always_descends(self):
         states=("a","b","c")
