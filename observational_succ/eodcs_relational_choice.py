@@ -112,6 +112,65 @@ def relational_descent(source: RelationalIntervention) -> RelationalDescentCerti
     )
 
 
+@dataclass(frozen=True)
+class ModalEnvelope:
+    old_report: str
+    may_reports: tuple[str, ...]
+    common_possible_reports: tuple[str, ...]
+    state_count: int
+    exact_report_level_support: bool
+
+
+def modal_envelopes(source: RelationalIntervention) -> tuple[ModalEnvelope, ...]:
+    """The optimal may=union and common-possible=intersection abstractions.
+
+    Not probabilistic. A common-possible report is *not* guaranteed to
+    occur; it merely lies in every hidden original state's support.
+    A guaranteed PROPERTY P must hold for ALL reports in the union.
+    """
+    results=[]
+    for old,states in source.before.fibers():
+        row_sets=[set(source.possible_reports(s)) for s in states]
+        may=set.union(*row_sets)
+        common=set.intersection(*row_sets)
+        if not common<=may:
+            raise AssertionError("Sourced modal lower bound exceeded upper bound")
+        exactly=all(r==row_sets[0] for r in row_sets)
+        if exactly!=(may==common):
+            raise AssertionError("May/common equality iff exact source descent")
+        results.append(ModalEnvelope(old,tuple(sorted(may)),
+                                     tuple(sorted(common)),len(states),exactly))
+    return tuple(results)
+
+
+def modal_property_verdict(
+        source: RelationalIntervention,old_report: str,
+        claimed_good: tuple[str, ...]) -> str:
+    """Sound tri-valued universal safety judgment for unknown original state.
+
+    guaranteed: every lawfully possible successor report satisfies claim;
+    impossible: no possible successor report satisfies claim;
+    undecided: both good and bad successor reports remain possible.
+
+    The first two verdicts are about the declared source's POSSIBILITY
+    table; not about event likelihood or physically certified behavior.
+    """
+    if (type(claimed_good) is not tuple
+            or any(type(x) is not str or x not in source.after.image()
+                   for x in claimed_good)):
+        raise SourceTransportError("Claim must describe a typed target-report event")
+    envelopes={x.old_report:x for x in modal_envelopes(source)}
+    if old_report not in envelopes:
+        raise SourceTransportError("Asked about unseen original report class")
+    may=set(envelopes[old_report].may_reports)
+    good=set(claimed_good)
+    if may<=good:
+        return "guaranteed_within_declared_support"
+    if may.isdisjoint(good):
+        return "impossible_within_declared_support"
+    return "undecided_without_finer_observation"
+
+
 def compose_relations(first: RelationalIntervention,
                       second: RelationalIntervention) -> RelationalIntervention:
     """Actual relational composition ∪_t R(s,t)·S(t,u), not product weights."""
@@ -200,7 +259,13 @@ def relational_choice_demo() -> dict:
     falsifier=RelationalIntervention("different-support",before,after,
                                      (("u0",),("u1",)))
     failed=relational_descent(falsifier)
+    bounds=modal_envelopes(falsifier)
     return {
+        "obstructed_may_reports":list(bounds[0].may_reports),
+        "obstructed_common_possible_reports":list(bounds[0].common_possible_reports),
+        "obstructed_modal_exact":bounds[0].exact_report_level_support,
+        "safety_claim_B":modal_property_verdict(falsifier,"0",("warm",)),
+        "safety_claim_everything":modal_property_verdict(falsifier,"0",("cold","warm")),
         "source":"declared-branch",
         "source_multivalued":True,
         "observable_set_valued_transition":[list(pair)
