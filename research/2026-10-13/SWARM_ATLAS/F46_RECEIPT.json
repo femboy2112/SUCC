@@ -1,0 +1,3154 @@
+{
+  "evidence": {
+    "controls": {
+      "boundary_alias": {
+        "existing_checker_counterexample": [
+          0,
+          1
+        ],
+        "radius": "1/2",
+        "report": [
+          0,
+          0
+        ],
+        "source_authentication": "NOT ESTABLISHED",
+        "source_values": [
+          0,
+          1
+        ],
+        "wrong_source_metadata_rejected": true
+      },
+      "complete_feature_factorials": {
+        "additive": {
+          "cells": {
+            "00": "1",
+            "01": "1/2",
+            "10": "1/2",
+            "11": "0"
+          },
+          "gain_mixed_difference": "0",
+          "risk_mixed_difference": "0"
+        },
+        "duplicate_feature": {
+          "cells": {
+            "00": "1/2",
+            "01": "0",
+            "10": "0",
+            "11": "0"
+          },
+          "gain_mixed_difference": "-1/2",
+          "risk_mixed_difference": "1/2"
+        },
+        "xor": {
+          "cells": {
+            "00": "1/2",
+            "01": "1/2",
+            "10": "1/2",
+            "11": "0"
+          },
+          "gain_mixed_difference": "1/2",
+          "risk_mixed_difference": "-1/2"
+        }
+      },
+      "dynamic_feature": {
+        "action": "swap",
+        "contact_scope": "recorded computational model events only",
+        "current_radius": "0",
+        "executed_toy_history": [
+          {
+            "current": [
+              0,
+              1
+            ],
+            "report": 0,
+            "word": []
+          },
+          {
+            "current": [
+              1,
+              0
+            ],
+            "report": 1,
+            "word": [
+              "swap"
+            ]
+          }
+        ],
+        "next_field_radius": "1/2",
+        "repaired_radius": "0",
+        "source_states": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "square_defect": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "noncanonical_repair": {
+        "candidate_status": "REFUTED",
+        "coarsenings_of_both": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "common_coarsening_radius": "1",
+        "epsilon": "1/2",
+        "minimum_alphabet": 2,
+        "optimal_repairs": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "source_values": [
+          [
+            "0"
+          ],
+          [
+            "1"
+          ],
+          [
+            "2"
+          ]
+        ]
+      },
+      "phenomenology_current_code_smoke": {
+        "both_target_stages": [
+          "shadow",
+          "shadow"
+        ],
+        "numeric_shadow_radius_path": "0",
+        "numeric_shadow_radius_thin": "3",
+        "path_reports": [
+          [
+            2,
+            1,
+            1
+          ],
+          [
+            3,
+            2,
+            1
+          ]
+        ],
+        "scope": "laboratory two-target source table, no target observation",
+        "source_horizon": 3,
+        "thin_reports": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "source_realizing_decoder": {
+        "candidate_status": "REFUTED",
+        "free_estimate_radius": "1",
+        "source_realizing_radius": "2",
+        "source_values": [
+          "0",
+          "2"
+        ]
+      },
+      "wrong_norm_graph": {
+        "allowed_squared_radius": "36/25",
+        "barycenter": [
+          "1",
+          "3/4"
+        ],
+        "candidate_status": "REFUTED",
+        "epsilon": "6/5",
+        "points": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "2",
+            "0"
+          ],
+          [
+            "1",
+            "2"
+          ]
+        ],
+        "positive_weights": [
+          "5/16",
+          "5/16",
+          "3/8"
+        ],
+        "squared_pair_distances": [
+          "4",
+          "5",
+          "5"
+        ],
+        "supnorm_radius": "1",
+        "universal_squared_radius_lower_bound": "25/16"
+      }
+    },
+    "exhaustive": {
+      "feature_partitions_checked": 20598,
+      "source_report_target_tables": 1554,
+      "tolerance_tables": 6216,
+      "zero_error_factor_checks": 1554
+    },
+    "separate_rational_cases": {
+      "cases": [
+        {
+          "case": 0,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "-3/2",
+              "6"
+            ],
+            [
+              "2/3",
+              "-7/3"
+            ]
+          ]
+        },
+        {
+          "case": 1,
+          "epsilon": "1/3",
+          "radius": "1/8",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "1/2",
+              "1/3"
+            ],
+            [
+              "1/4",
+              "-1"
+            ],
+            [
+              "3/4",
+              "1/2"
+            ]
+          ]
+        },
+        {
+          "case": 2,
+          "epsilon": "2/3",
+          "radius": "19/6",
+          "repair_alphabet": 3,
+          "report": [
+            2,
+            2,
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "-4",
+              "-5/4"
+            ],
+            [
+              "2/3",
+              "1/2"
+            ],
+            [
+              "7/3",
+              "-7/4"
+            ],
+            [
+              "-3/2",
+              "1/2"
+            ]
+          ]
+        },
+        {
+          "case": 3,
+          "epsilon": "1",
+          "radius": "4",
+          "repair_alphabet": 4,
+          "report": [
+            0,
+            0,
+            0,
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "7",
+              "3"
+            ],
+            [
+              "4/3",
+              "3/4"
+            ],
+            [
+              "0",
+              "-2"
+            ],
+            [
+              "2",
+              "0"
+            ],
+            [
+              "-1",
+              "7/2"
+            ]
+          ]
+        },
+        {
+          "case": 4,
+          "epsilon": "4/3",
+          "radius": "7/2",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            1,
+            0,
+            1,
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "-2",
+              "-5"
+            ],
+            [
+              "1",
+              "-3/4"
+            ],
+            [
+              "5",
+              "-2/3"
+            ],
+            [
+              "7/2",
+              "-2/3"
+            ],
+            [
+              "1/2",
+              "2"
+            ],
+            [
+              "-1/3",
+              "-7"
+            ]
+          ]
+        },
+        {
+          "case": 5,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "-1/3",
+              "0"
+            ],
+            [
+              "2",
+              "-6"
+            ]
+          ]
+        },
+        {
+          "case": 6,
+          "epsilon": "1/3",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            0,
+            1
+          ],
+          "targets": [
+            [
+              "5/4",
+              "-2"
+            ],
+            [
+              "0",
+              "1/2"
+            ],
+            [
+              "-1",
+              "7/3"
+            ]
+          ]
+        },
+        {
+          "case": 7,
+          "epsilon": "2/3",
+          "radius": "2",
+          "repair_alphabet": 3,
+          "report": [
+            2,
+            1,
+            2,
+            2
+          ],
+          "targets": [
+            [
+              "-2",
+              "-7/3"
+            ],
+            [
+              "7/3",
+              "3"
+            ],
+            [
+              "7/4",
+              "-4"
+            ],
+            [
+              "-1/4",
+              "0"
+            ]
+          ]
+        },
+        {
+          "case": 8,
+          "epsilon": "1",
+          "radius": "5/3",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            0,
+            0,
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "-2",
+              "-7/3"
+            ],
+            [
+              "1/3",
+              "3/2"
+            ],
+            [
+              "3/2",
+              "1"
+            ],
+            [
+              "-7/4",
+              "-3/2"
+            ],
+            [
+              "-1/4",
+              "1"
+            ]
+          ]
+        },
+        {
+          "case": 9,
+          "epsilon": "4/3",
+          "radius": "9/4",
+          "repair_alphabet": 3,
+          "report": [
+            2,
+            2,
+            0,
+            0,
+            2,
+            2
+          ],
+          "targets": [
+            [
+              "3",
+              "-5/2"
+            ],
+            [
+              "-1/2",
+              "3/4"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-2",
+              "-5/3"
+            ],
+            [
+              "-3/2",
+              "-3"
+            ],
+            [
+              "-1/4",
+              "3/2"
+            ]
+          ]
+        },
+        {
+          "case": 10,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "-7/4",
+              "-1/2"
+            ],
+            [
+              "-7",
+              "-2"
+            ]
+          ]
+        },
+        {
+          "case": 11,
+          "epsilon": "1/3",
+          "radius": "19/6",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            0,
+            1
+          ],
+          "targets": [
+            [
+              "-3/2",
+              "5"
+            ],
+            [
+              "7",
+              "2"
+            ],
+            [
+              "-1/2",
+              "-4/3"
+            ]
+          ]
+        },
+        {
+          "case": 12,
+          "epsilon": "2/3",
+          "radius": "7/2",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3/4",
+              "-3"
+            ],
+            [
+              "-5/2",
+              "-5"
+            ],
+            [
+              "1/4",
+              "0"
+            ]
+          ]
+        },
+        {
+          "case": 13,
+          "epsilon": "1",
+          "radius": "2",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            0,
+            0,
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "2",
+              "5/3"
+            ],
+            [
+              "0",
+              "1"
+            ],
+            [
+              "-1",
+              "5"
+            ],
+            [
+              "1",
+              "-5/3"
+            ],
+            [
+              "4",
+              "1"
+            ]
+          ]
+        },
+        {
+          "case": 14,
+          "epsilon": "4/3",
+          "radius": "3",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "5",
+              "-2"
+            ],
+            [
+              "0",
+              "-3"
+            ],
+            [
+              "6",
+              "-1"
+            ],
+            [
+              "3",
+              "-5/2"
+            ],
+            [
+              "0",
+              "-7/2"
+            ],
+            [
+              "2/3",
+              "0"
+            ]
+          ]
+        },
+        {
+          "case": 15,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            1,
+            2
+          ],
+          "targets": [
+            [
+              "-3",
+              "-1/3"
+            ],
+            [
+              "1/2",
+              "-1/3"
+            ]
+          ]
+        },
+        {
+          "case": 16,
+          "epsilon": "1/3",
+          "radius": "11/4",
+          "repair_alphabet": 3,
+          "report": [
+            1,
+            1,
+            1
+          ],
+          "targets": [
+            [
+              "3",
+              "-3/2"
+            ],
+            [
+              "-1",
+              "4"
+            ],
+            [
+              "-5/4",
+              "-1"
+            ]
+          ]
+        },
+        {
+          "case": 17,
+          "epsilon": "2/3",
+          "radius": "23/6",
+          "repair_alphabet": 3,
+          "report": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "targets": [
+            [
+              "3",
+              "-4"
+            ],
+            [
+              "-4",
+              "-4"
+            ],
+            [
+              "7",
+              "-6"
+            ],
+            [
+              "3/4",
+              "5/3"
+            ]
+          ]
+        },
+        {
+          "case": 18,
+          "epsilon": "1",
+          "radius": "7/2",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "targets": [
+            [
+              "7/3",
+              "5"
+            ],
+            [
+              "-4",
+              "-3"
+            ],
+            [
+              "3/4",
+              "1"
+            ],
+            [
+              "3/4",
+              "4"
+            ],
+            [
+              "5/4",
+              "7/3"
+            ]
+          ]
+        },
+        {
+          "case": 19,
+          "epsilon": "4/3",
+          "radius": "13/4",
+          "repair_alphabet": 3,
+          "report": [
+            0,
+            1,
+            1,
+            1,
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "-7/2",
+              "-2"
+            ],
+            [
+              "1/2",
+              "-3"
+            ],
+            [
+              "-1",
+              "1/3"
+            ],
+            [
+              "-5",
+              "0"
+            ],
+            [
+              "1",
+              "-1"
+            ],
+            [
+              "3",
+              "-5/3"
+            ]
+          ]
+        },
+        {
+          "case": 20,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "7/3",
+              "2"
+            ],
+            [
+              "-3/4",
+              "3"
+            ]
+          ]
+        },
+        {
+          "case": 21,
+          "epsilon": "1/3",
+          "radius": "5/4",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            0,
+            0
+          ],
+          "targets": [
+            [
+              "-1",
+              "5/2"
+            ],
+            [
+              "-5/2",
+              "-2/3"
+            ],
+            [
+              "0",
+              "1/3"
+            ]
+          ]
+        },
+        {
+          "case": 22,
+          "epsilon": "2/3",
+          "radius": "25/8",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            0,
+            1,
+            1
+          ],
+          "targets": [
+            [
+              "-7",
+              "2"
+            ],
+            [
+              "-3/4",
+              "7/2"
+            ],
+            [
+              "-2",
+              "-5"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        },
+        {
+          "case": 23,
+          "epsilon": "1",
+          "radius": "4",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            2,
+            0,
+            1,
+            2
+          ],
+          "targets": [
+            [
+              "-1",
+              "1/3"
+            ],
+            [
+              "-3",
+              "-5/3"
+            ],
+            [
+              "-5/3",
+              "0"
+            ],
+            [
+              "2",
+              "3/4"
+            ],
+            [
+              "5",
+              "3/2"
+            ]
+          ]
+        },
+        {
+          "case": 24,
+          "epsilon": "4/3",
+          "radius": "9/4",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            2,
+            2,
+            2,
+            0,
+            1
+          ],
+          "targets": [
+            [
+              "5/2",
+              "-2"
+            ],
+            [
+              "-2/3",
+              "-5/4"
+            ],
+            [
+              "-2",
+              "-1"
+            ],
+            [
+              "1/4",
+              "-1/4"
+            ],
+            [
+              "-1",
+              "-6"
+            ],
+            [
+              "-2",
+              "-1"
+            ]
+          ]
+        },
+        {
+          "case": 25,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "5/3",
+              "-5/3"
+            ],
+            [
+              "-1/3",
+              "-3/2"
+            ]
+          ]
+        },
+        {
+          "case": 26,
+          "epsilon": "1/3",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            0,
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "6",
+              "1"
+            ],
+            [
+              "3/2",
+              "-1/4"
+            ],
+            [
+              "5/4",
+              "-1"
+            ]
+          ]
+        },
+        {
+          "case": 27,
+          "epsilon": "2/3",
+          "radius": "4",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            0,
+            1,
+            2
+          ],
+          "targets": [
+            [
+              "3/2",
+              "-6"
+            ],
+            [
+              "-5/4",
+              "5/4"
+            ],
+            [
+              "-5/2",
+              "2"
+            ],
+            [
+              "-2/3",
+              "-7/4"
+            ]
+          ]
+        },
+        {
+          "case": 28,
+          "epsilon": "1",
+          "radius": "27/8",
+          "repair_alphabet": 3,
+          "report": [
+            0,
+            2,
+            2,
+            1,
+            2
+          ],
+          "targets": [
+            [
+              "-3/4",
+              "3"
+            ],
+            [
+              "6",
+              "-4"
+            ],
+            [
+              "-3/4",
+              "5/4"
+            ],
+            [
+              "7",
+              "7/4"
+            ],
+            [
+              "4/3",
+              "-3"
+            ]
+          ]
+        },
+        {
+          "case": 29,
+          "epsilon": "4/3",
+          "radius": "14/3",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            1,
+            0,
+            1,
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "1/2",
+              "-7"
+            ],
+            [
+              "7/2",
+              "3"
+            ],
+            [
+              "5/4",
+              "-2/3"
+            ],
+            [
+              "1",
+              "7"
+            ],
+            [
+              "-2",
+              "7/3"
+            ],
+            [
+              "2",
+              "-7/3"
+            ]
+          ]
+        },
+        {
+          "case": 30,
+          "epsilon": "0",
+          "radius": "7/6",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            0
+          ],
+          "targets": [
+            [
+              "3",
+              "2/3"
+            ],
+            [
+              "1",
+              "3"
+            ]
+          ]
+        },
+        {
+          "case": 31,
+          "epsilon": "1/3",
+          "radius": "5/2",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            1,
+            2
+          ],
+          "targets": [
+            [
+              "-2",
+              "7/3"
+            ],
+            [
+              "1",
+              "-3"
+            ],
+            [
+              "3",
+              "7"
+            ]
+          ]
+        },
+        {
+          "case": 32,
+          "epsilon": "2/3",
+          "radius": "9/4",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            2,
+            1,
+            2
+          ],
+          "targets": [
+            [
+              "-5",
+              "3/2"
+            ],
+            [
+              "-7/3",
+              "5/4"
+            ],
+            [
+              "-1/2",
+              "7/3"
+            ],
+            [
+              "3/2",
+              "-7/3"
+            ]
+          ]
+        },
+        {
+          "case": 33,
+          "epsilon": "1",
+          "radius": "9/4",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            2,
+            2,
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "1/2",
+              "0"
+            ],
+            [
+              "-1",
+              "4/3"
+            ],
+            [
+              "7/2",
+              "1"
+            ],
+            [
+              "5/2",
+              "-5/4"
+            ],
+            [
+              "3/2",
+              "0"
+            ]
+          ]
+        },
+        {
+          "case": 34,
+          "epsilon": "4/3",
+          "radius": "5",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            2,
+            0,
+            2,
+            1,
+            1
+          ],
+          "targets": [
+            [
+              "1/2",
+              "-1"
+            ],
+            [
+              "-1",
+              "-4"
+            ],
+            [
+              "-3",
+              "-1"
+            ],
+            [
+              "1/2",
+              "6"
+            ],
+            [
+              "-3",
+              "-7/2"
+            ],
+            [
+              "4",
+              "-3"
+            ]
+          ]
+        },
+        {
+          "case": 35,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "0",
+              "3"
+            ],
+            [
+              "3/4",
+              "-1/2"
+            ]
+          ]
+        },
+        {
+          "case": 36,
+          "epsilon": "1/3",
+          "radius": "17/4",
+          "repair_alphabet": 3,
+          "report": [
+            2,
+            2,
+            2
+          ],
+          "targets": [
+            [
+              "-3",
+              "0"
+            ],
+            [
+              "3/2",
+              "5/3"
+            ],
+            [
+              "-7",
+              "2"
+            ]
+          ]
+        },
+        {
+          "case": 37,
+          "epsilon": "2/3",
+          "radius": "7/2",
+          "repair_alphabet": 4,
+          "report": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "targets": [
+            [
+              "1",
+              "3/2"
+            ],
+            [
+              "-1/4",
+              "-5"
+            ],
+            [
+              "5/2",
+              "2"
+            ],
+            [
+              "7/4",
+              "-5/3"
+            ]
+          ]
+        },
+        {
+          "case": 38,
+          "epsilon": "1",
+          "radius": "13/8",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            0,
+            2,
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "3/4",
+              "-3/4"
+            ],
+            [
+              "1",
+              "-4"
+            ],
+            [
+              "5/4",
+              "-1/2"
+            ],
+            [
+              "0",
+              "-1"
+            ],
+            [
+              "4",
+              "-1/2"
+            ]
+          ]
+        },
+        {
+          "case": 39,
+          "epsilon": "4/3",
+          "radius": "25/6",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            1,
+            2,
+            1,
+            2,
+            2
+          ],
+          "targets": [
+            [
+              "2",
+              "5/2"
+            ],
+            [
+              "1",
+              "2"
+            ],
+            [
+              "3/4",
+              "-1"
+            ],
+            [
+              "1/4",
+              "-5"
+            ],
+            [
+              "5",
+              "-7"
+            ],
+            [
+              "-1/2",
+              "4/3"
+            ]
+          ]
+        },
+        {
+          "case": 40,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "-5/3",
+              "-1/4"
+            ],
+            [
+              "-4",
+              "1"
+            ]
+          ]
+        },
+        {
+          "case": 41,
+          "epsilon": "1/3",
+          "radius": "3/2",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            0,
+            0
+          ],
+          "targets": [
+            [
+              "0",
+              "7/2"
+            ],
+            [
+              "1",
+              "1"
+            ],
+            [
+              "-5/4",
+              "4"
+            ]
+          ]
+        },
+        {
+          "case": 42,
+          "epsilon": "2/3",
+          "radius": "7/4",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            1,
+            0,
+            0
+          ],
+          "targets": [
+            [
+              "5/4",
+              "3"
+            ],
+            [
+              "-1/3",
+              "1/2"
+            ],
+            [
+              "-3/2",
+              "-2"
+            ],
+            [
+              "-1",
+              "3/2"
+            ]
+          ]
+        },
+        {
+          "case": 43,
+          "epsilon": "1",
+          "radius": "5/2",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            0,
+            1,
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "-1",
+              "-1/2"
+            ],
+            [
+              "-6",
+              "5/2"
+            ],
+            [
+              "-1/3",
+              "-3"
+            ],
+            [
+              "-3/2",
+              "7"
+            ],
+            [
+              "4",
+              "-7/3"
+            ]
+          ]
+        },
+        {
+          "case": 44,
+          "epsilon": "4/3",
+          "radius": "7",
+          "repair_alphabet": 3,
+          "report": [
+            0,
+            1,
+            2,
+            1,
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "-5/3",
+              "5/2"
+            ],
+            [
+              "2/3",
+              "7"
+            ],
+            [
+              "2",
+              "2"
+            ],
+            [
+              "3/2",
+              "2"
+            ],
+            [
+              "-1/2",
+              "-7"
+            ],
+            [
+              "3/4",
+              "-2"
+            ]
+          ]
+        },
+        {
+          "case": 45,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "-4",
+              "-4/3"
+            ],
+            [
+              "-1",
+              "-1/4"
+            ]
+          ]
+        },
+        {
+          "case": 46,
+          "epsilon": "1/3",
+          "radius": "9/4",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "6",
+              "-2/3"
+            ],
+            [
+              "2/3",
+              "-1/2"
+            ],
+            [
+              "3/2",
+              "3"
+            ]
+          ]
+        },
+        {
+          "case": 47,
+          "epsilon": "2/3",
+          "radius": "2",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "targets": [
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "-6",
+              "5/3"
+            ],
+            [
+              "-3/2",
+              "0"
+            ],
+            [
+              "-1/4",
+              "-3"
+            ]
+          ]
+        },
+        {
+          "case": 48,
+          "epsilon": "1",
+          "radius": "19/4",
+          "repair_alphabet": 3,
+          "report": [
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "targets": [
+            [
+              "0",
+              "2/3"
+            ],
+            [
+              "5/2",
+              "-7/2"
+            ],
+            [
+              "7/2",
+              "2/3"
+            ],
+            [
+              "1",
+              "5"
+            ],
+            [
+              "-1/2",
+              "6"
+            ]
+          ]
+        },
+        {
+          "case": 49,
+          "epsilon": "4/3",
+          "radius": "7/2",
+          "repair_alphabet": 3,
+          "report": [
+            2,
+            0,
+            2,
+            2,
+            0,
+            0
+          ],
+          "targets": [
+            [
+              "3/2",
+              "2"
+            ],
+            [
+              "1/4",
+              "2"
+            ],
+            [
+              "-3",
+              "-7/3"
+            ],
+            [
+              "3/2",
+              "-5"
+            ],
+            [
+              "3/2",
+              "-1"
+            ],
+            [
+              "3",
+              "-1"
+            ]
+          ]
+        },
+        {
+          "case": 50,
+          "epsilon": "0",
+          "radius": "2/3",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            1
+          ],
+          "targets": [
+            [
+              "-3/2",
+              "3"
+            ],
+            [
+              "-1/3",
+              "5/3"
+            ]
+          ]
+        },
+        {
+          "case": 51,
+          "epsilon": "1/3",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            1,
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "7/4",
+              "7/3"
+            ],
+            [
+              "5/3",
+              "-3/2"
+            ],
+            [
+              "-1",
+              "-7/4"
+            ]
+          ]
+        },
+        {
+          "case": 52,
+          "epsilon": "2/3",
+          "radius": "13/3",
+          "repair_alphabet": 3,
+          "report": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "-7",
+              "-3/4"
+            ],
+            [
+              "-1/3",
+              "-1"
+            ],
+            [
+              "5/3",
+              "5/4"
+            ],
+            [
+              "3/2",
+              "1/2"
+            ]
+          ]
+        },
+        {
+          "case": 53,
+          "epsilon": "1",
+          "radius": "17/6",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            0,
+            0,
+            2,
+            2
+          ],
+          "targets": [
+            [
+              "-3/2",
+              "0"
+            ],
+            [
+              "-2",
+              "5"
+            ],
+            [
+              "3",
+              "-2/3"
+            ],
+            [
+              "0",
+              "-1/2"
+            ],
+            [
+              "-5",
+              "1"
+            ]
+          ]
+        },
+        {
+          "case": 54,
+          "epsilon": "4/3",
+          "radius": "15/4",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            0,
+            2,
+            1,
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "2",
+              "-3"
+            ],
+            [
+              "-1",
+              "-6"
+            ],
+            [
+              "3/4",
+              "-1"
+            ],
+            [
+              "1",
+              "-2"
+            ],
+            [
+              "-3/2",
+              "-2"
+            ],
+            [
+              "-2",
+              "3/2"
+            ]
+          ]
+        },
+        {
+          "case": 55,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "7/2",
+              "5/3"
+            ],
+            [
+              "1",
+              "7/3"
+            ]
+          ]
+        },
+        {
+          "case": 56,
+          "epsilon": "1/3",
+          "radius": "2",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            1,
+            1
+          ],
+          "targets": [
+            [
+              "3/2",
+              "1"
+            ],
+            [
+              "5",
+              "-2"
+            ],
+            [
+              "1",
+              "-3"
+            ]
+          ]
+        },
+        {
+          "case": 57,
+          "epsilon": "2/3",
+          "radius": "7/4",
+          "repair_alphabet": 3,
+          "report": [
+            0,
+            1,
+            1,
+            1
+          ],
+          "targets": [
+            [
+              "-7/3",
+              "7/2"
+            ],
+            [
+              "3",
+              "-3/2"
+            ],
+            [
+              "-1/2",
+              "3/2"
+            ],
+            [
+              "1/2",
+              "-1/2"
+            ]
+          ]
+        },
+        {
+          "case": 58,
+          "epsilon": "1",
+          "radius": "5/3",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            0,
+            1,
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "-7/2",
+              "1"
+            ],
+            [
+              "5/3",
+              "-1/2"
+            ],
+            [
+              "-4/3",
+              "-7/3"
+            ],
+            [
+              "-2",
+              "-1"
+            ],
+            [
+              "-1",
+              "1/2"
+            ]
+          ]
+        },
+        {
+          "case": 59,
+          "epsilon": "4/3",
+          "radius": "23/12",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "targets": [
+            [
+              "2/3",
+              "-1"
+            ],
+            [
+              "-7/3",
+              "-3/4"
+            ],
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "0",
+              "-5/3"
+            ],
+            [
+              "-1/2",
+              "0"
+            ],
+            [
+              "3/2",
+              "-5/4"
+            ]
+          ]
+        },
+        {
+          "case": 60,
+          "epsilon": "0",
+          "radius": "5/2",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            0
+          ],
+          "targets": [
+            [
+              "-1",
+              "5"
+            ],
+            [
+              "4",
+              "7/4"
+            ]
+          ]
+        },
+        {
+          "case": 61,
+          "epsilon": "1/3",
+          "radius": "7/2",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            0,
+            0
+          ],
+          "targets": [
+            [
+              "5/3",
+              "3"
+            ],
+            [
+              "0",
+              "3/2"
+            ],
+            [
+              "7",
+              "-1"
+            ]
+          ]
+        },
+        {
+          "case": 62,
+          "epsilon": "2/3",
+          "radius": "3/2",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            2,
+            0,
+            1
+          ],
+          "targets": [
+            [
+              "-1",
+              "2"
+            ],
+            [
+              "7/3",
+              "-3/2"
+            ],
+            [
+              "3",
+              "-7"
+            ],
+            [
+              "2",
+              "-2/3"
+            ]
+          ]
+        },
+        {
+          "case": 63,
+          "epsilon": "1",
+          "radius": "11/4",
+          "repair_alphabet": 3,
+          "report": [
+            2,
+            1,
+            2,
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "-1/2",
+              "3"
+            ],
+            [
+              "-5/2",
+              "-3"
+            ],
+            [
+              "-1/2",
+              "-5/2"
+            ],
+            [
+              "7/3",
+              "-1/2"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "case": 64,
+          "epsilon": "4/3",
+          "radius": "9/4",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            1,
+            2,
+            2,
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "5/4",
+              "-5"
+            ],
+            [
+              "5/2",
+              "-1/2"
+            ],
+            [
+              "-5/3",
+              "-1/2"
+            ],
+            [
+              "1/4",
+              "1/2"
+            ],
+            [
+              "5/2",
+              "-2"
+            ],
+            [
+              "0",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "case": 65,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "-1",
+              "2"
+            ],
+            [
+              "-7/4",
+              "-1/3"
+            ]
+          ]
+        },
+        {
+          "case": 66,
+          "epsilon": "1/3",
+          "radius": "3/4",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            0,
+            0
+          ],
+          "targets": [
+            [
+              "-2",
+              "4"
+            ],
+            [
+              "-7/2",
+              "7"
+            ],
+            [
+              "-2",
+              "7"
+            ]
+          ]
+        },
+        {
+          "case": 67,
+          "epsilon": "2/3",
+          "radius": "23/12",
+          "repair_alphabet": 3,
+          "report": [
+            2,
+            2,
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "-1/2",
+              "-3/4"
+            ],
+            [
+              "-7/3",
+              "-7/2"
+            ],
+            [
+              "3/2",
+              "-1/2"
+            ],
+            [
+              "1",
+              "7/4"
+            ]
+          ]
+        },
+        {
+          "case": 68,
+          "epsilon": "1",
+          "radius": "17/4",
+          "repair_alphabet": 3,
+          "report": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "targets": [
+            [
+              "5",
+              "3/2"
+            ],
+            [
+              "-1/3",
+              "-7"
+            ],
+            [
+              "-5/4",
+              "1/2"
+            ],
+            [
+              "1/2",
+              "1"
+            ],
+            [
+              "-1",
+              "7/2"
+            ]
+          ]
+        },
+        {
+          "case": 69,
+          "epsilon": "4/3",
+          "radius": "5/2",
+          "repair_alphabet": 2,
+          "report": [
+            2,
+            1,
+            1,
+            1,
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "1",
+              "0"
+            ],
+            [
+              "3",
+              "-4/3"
+            ],
+            [
+              "2",
+              "0"
+            ],
+            [
+              "-2",
+              "-3"
+            ],
+            [
+              "-2",
+              "3"
+            ],
+            [
+              "1",
+              "0"
+            ]
+          ]
+        },
+        {
+          "case": 70,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "-3/2",
+              "2"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ]
+        },
+        {
+          "case": 71,
+          "epsilon": "1/3",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "0",
+              "2"
+            ],
+            [
+              "2",
+              "-2/3"
+            ]
+          ]
+        },
+        {
+          "case": 72,
+          "epsilon": "2/3",
+          "radius": "5/8",
+          "repair_alphabet": 1,
+          "report": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "targets": [
+            [
+              "1",
+              "-2/3"
+            ],
+            [
+              "5/3",
+              "1/2"
+            ],
+            [
+              "5/2",
+              "-1/2"
+            ],
+            [
+              "-1/4",
+              "1/2"
+            ]
+          ]
+        },
+        {
+          "case": 73,
+          "epsilon": "1",
+          "radius": "14/3",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "0",
+              "-6"
+            ],
+            [
+              "7/3",
+              "1"
+            ],
+            [
+              "-7",
+              "1/3"
+            ],
+            [
+              "3/2",
+              "-1"
+            ],
+            [
+              "1/2",
+              "7/3"
+            ]
+          ]
+        },
+        {
+          "case": 74,
+          "epsilon": "4/3",
+          "radius": "21/8",
+          "repair_alphabet": 3,
+          "report": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "-7/4",
+              "-1/2"
+            ],
+            [
+              "-2",
+              "3"
+            ],
+            [
+              "0",
+              "5/4"
+            ],
+            [
+              "-1",
+              "1/4"
+            ],
+            [
+              "-7",
+              "1/2"
+            ],
+            [
+              "1",
+              "5"
+            ]
+          ]
+        },
+        {
+          "case": 75,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            0,
+            1
+          ],
+          "targets": [
+            [
+              "0",
+              "-3/2"
+            ],
+            [
+              "-1",
+              "1"
+            ]
+          ]
+        },
+        {
+          "case": 76,
+          "epsilon": "1/3",
+          "radius": "2",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            0,
+            1
+          ],
+          "targets": [
+            [
+              "-3/4",
+              "-1"
+            ],
+            [
+              "5/4",
+              "3"
+            ],
+            [
+              "2",
+              "-1/4"
+            ]
+          ]
+        },
+        {
+          "case": 77,
+          "epsilon": "2/3",
+          "radius": "15/4",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            2,
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "-6",
+              "2/3"
+            ],
+            [
+              "-6",
+              "3"
+            ],
+            [
+              "3/4",
+              "-1/3"
+            ],
+            [
+              "3/2",
+              "-2"
+            ]
+          ]
+        },
+        {
+          "case": 78,
+          "epsilon": "1",
+          "radius": "3/2",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            2,
+            2,
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "-4/3",
+              "6"
+            ],
+            [
+              "-2",
+              "-3/2"
+            ],
+            [
+              "1",
+              "1/3"
+            ],
+            [
+              "-2/3",
+              "6"
+            ],
+            [
+              "-3/4",
+              "1/2"
+            ]
+          ]
+        },
+        {
+          "case": 79,
+          "epsilon": "4/3",
+          "radius": "5/2",
+          "repair_alphabet": 3,
+          "report": [
+            1,
+            1,
+            0,
+            2,
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "2",
+              "-1"
+            ],
+            [
+              "2",
+              "2"
+            ],
+            [
+              "-2/3",
+              "-2/3"
+            ],
+            [
+              "1/3",
+              "0"
+            ],
+            [
+              "1",
+              "-2"
+            ],
+            [
+              "7",
+              "1/4"
+            ]
+          ]
+        },
+        {
+          "case": 80,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "-1",
+              "0"
+            ],
+            [
+              "2",
+              "4"
+            ]
+          ]
+        },
+        {
+          "case": 81,
+          "epsilon": "1/3",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            0,
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "-2/3",
+              "4/3"
+            ],
+            [
+              "4/3",
+              "5/2"
+            ],
+            [
+              "1",
+              "1"
+            ]
+          ]
+        },
+        {
+          "case": 82,
+          "epsilon": "2/3",
+          "radius": "15/4",
+          "repair_alphabet": 3,
+          "report": [
+            0,
+            0,
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "-2",
+              "-5/2"
+            ],
+            [
+              "-2",
+              "1"
+            ],
+            [
+              "2",
+              "5"
+            ],
+            [
+              "4",
+              "-7/4"
+            ]
+          ]
+        },
+        {
+          "case": 83,
+          "epsilon": "1",
+          "radius": "19/12",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            0,
+            2,
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "-5/2",
+              "7/4"
+            ],
+            [
+              "2/3",
+              "3"
+            ],
+            [
+              "0",
+              "-1/3"
+            ],
+            [
+              "0",
+              "4"
+            ],
+            [
+              "-7/3",
+              "1"
+            ]
+          ]
+        },
+        {
+          "case": 84,
+          "epsilon": "4/3",
+          "radius": "7/2",
+          "repair_alphabet": 3,
+          "report": [
+            0,
+            0,
+            2,
+            1,
+            2,
+            0
+          ],
+          "targets": [
+            [
+              "-2",
+              "1/3"
+            ],
+            [
+              "2",
+              "1/2"
+            ],
+            [
+              "5",
+              "-7/4"
+            ],
+            [
+              "-1",
+              "7/2"
+            ],
+            [
+              "-2",
+              "1"
+            ],
+            [
+              "-1",
+              "-3"
+            ]
+          ]
+        },
+        {
+          "case": 85,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "-5/2",
+              "2"
+            ],
+            [
+              "2",
+              "5/3"
+            ]
+          ]
+        },
+        {
+          "case": 86,
+          "epsilon": "1/3",
+          "radius": "2/3",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            1,
+            2
+          ],
+          "targets": [
+            [
+              "1/3",
+              "0"
+            ],
+            [
+              "0",
+              "-4/3"
+            ],
+            [
+              "-2",
+              "5/4"
+            ]
+          ]
+        },
+        {
+          "case": 87,
+          "epsilon": "2/3",
+          "radius": "11/6",
+          "repair_alphabet": 3,
+          "report": [
+            2,
+            2,
+            2,
+            2
+          ],
+          "targets": [
+            [
+              "-5/3",
+              "-1/3"
+            ],
+            [
+              "5/4",
+              "-1"
+            ],
+            [
+              "1/3",
+              "-3/2"
+            ],
+            [
+              "7/4",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "case": 88,
+          "epsilon": "1",
+          "radius": "4",
+          "repair_alphabet": 3,
+          "report": [
+            2,
+            0,
+            0,
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "-3",
+              "-2"
+            ],
+            [
+              "4/3",
+              "4/3"
+            ],
+            [
+              "6",
+              "1/3"
+            ],
+            [
+              "-4",
+              "6"
+            ],
+            [
+              "-2",
+              "-2"
+            ]
+          ]
+        },
+        {
+          "case": 89,
+          "epsilon": "4/3",
+          "radius": "19/4",
+          "repair_alphabet": 2,
+          "report": [
+            0,
+            0,
+            2,
+            2,
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "3/4",
+              "5/2"
+            ],
+            [
+              "1/4",
+              "3"
+            ],
+            [
+              "6",
+              "3/2"
+            ],
+            [
+              "-7/2",
+              "-4/3"
+            ],
+            [
+              "1/2",
+              "3"
+            ],
+            [
+              "5/3",
+              "5/2"
+            ]
+          ]
+        },
+        {
+          "case": 90,
+          "epsilon": "0",
+          "radius": "0",
+          "repair_alphabet": 1,
+          "report": [
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "1",
+              "7"
+            ],
+            [
+              "-7",
+              "-1"
+            ]
+          ]
+        },
+        {
+          "case": 91,
+          "epsilon": "1/3",
+          "radius": "1/8",
+          "repair_alphabet": 1,
+          "report": [
+            1,
+            2,
+            1
+          ],
+          "targets": [
+            [
+              "-3",
+              "0"
+            ],
+            [
+              "2",
+              "1"
+            ],
+            [
+              "-3",
+              "1/4"
+            ]
+          ]
+        },
+        {
+          "case": 92,
+          "epsilon": "2/3",
+          "radius": "5/3",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            2,
+            1,
+            0
+          ],
+          "targets": [
+            [
+              "2",
+              "-1"
+            ],
+            [
+              "-1/3",
+              "-6"
+            ],
+            [
+              "3/2",
+              "7/3"
+            ],
+            [
+              "-1/4",
+              "0"
+            ]
+          ]
+        },
+        {
+          "case": 93,
+          "epsilon": "1",
+          "radius": "5",
+          "repair_alphabet": 3,
+          "report": [
+            2,
+            0,
+            2,
+            0,
+            2
+          ],
+          "targets": [
+            [
+              "-4/3",
+              "-4"
+            ],
+            [
+              "1/4",
+              "-6"
+            ],
+            [
+              "7/2",
+              "6"
+            ],
+            [
+              "5",
+              "-7/2"
+            ],
+            [
+              "3/4",
+              "-4"
+            ]
+          ]
+        },
+        {
+          "case": 94,
+          "epsilon": "4/3",
+          "radius": "2",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            0,
+            2,
+            2,
+            1,
+            2
+          ],
+          "targets": [
+            [
+              "1/4",
+              "2"
+            ],
+            [
+              "-1",
+              "1"
+            ],
+            [
+              "1/2",
+              "3"
+            ],
+            [
+              "5/3",
+              "4"
+            ],
+            [
+              "-5/4",
+              "-1"
+            ],
+            [
+              "5/2",
+              "0"
+            ]
+          ]
+        },
+        {
+          "case": 95,
+          "epsilon": "0",
+          "radius": "9/2",
+          "repair_alphabet": 2,
+          "report": [
+            1,
+            1
+          ],
+          "targets": [
+            [
+              "-6",
+              "-7/3"
+            ],
+            [
+              "3",
+              "2"
+            ]
+          ]
+        }
+      ],
+      "count": 96,
+      "scope": "separate generated mathematical cases, not empirical holdout",
+      "seed": 460013
+    }
+  },
+  "execution": {
+    "address_space_cap_mib": 256,
+    "branch_at_execution": "research/swm-f46-2026-10-13",
+    "ci_run": false,
+    "command": "timeout 25s python research/2026-10-13/SWARM_ATLAS/F46_PROBE.py --write research/2026-10-13/SWARM_ATLAS/F46_RECEIPT.json",
+    "cpu_cap_seconds": 20,
+    "empirical_contact": false,
+    "exit_code": 0,
+    "full_suite_run": false,
+    "head_at_execution": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+    "max_rss_kib": 24136,
+    "python": "3.12.3",
+    "wall_seconds": 1.474613
+  },
+  "schema": "SUCC.F46.exact.v1",
+  "source_binding": {
+    "immutable_source_parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+    "native_field_origin_commit": "d1e64948f60662601074c1738d355b3456a17dcf",
+    "phenomenology_import": {
+      "destination_git_blob_sha": "69d44bef4de5bff4ffb193e2a229a26105b7c93a",
+      "destination_path": "observational_succ/phenomenology.py",
+      "original_git_blob_sha": "b207b7590bd601c72dc239b0c89726517b5b20e6",
+      "original_path": "actualization/phenomenology.py",
+      "size_bytes_original": 5911,
+      "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+      "source_repo": "femboy2112/FuckingRH",
+      "transformation": "literal textual namespace translation: actualization -> observational_succ"
+    },
+    "sha256": {
+      "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "README.md": "420cfd82da606e0b379f77f222602a28dc5b27474fb13702f2a10b0cff8504f3",
+      "docs/ARCHITECTURE.md": "ebf52ee203ad1068fb5f6358a20b98fed17dd1d0123db1b46004c9f8716744c5",
+      "docs/CLAIM_LEDGER.md": "207a4a6390239c76da4f378c22a60aee2b442dda005ac6ebd8a0d9e441fce790",
+      "docs/FOUNDATIONS.md": "d4c89e4cb79bf561c69182fec9eac2783ce009cfce5842756f98da1ad9191ce7",
+      "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+      "docs/ROADMAP.md": "bb0027f18ffa6cef95688838e905bbb793efd1015bcac09a7153cb7f564eedfe",
+      "observational_succ/field_relative_closure.py": "d4608fbc1d6e84b81f68e83b8e86692225b55d124eb289825cdb822f5c902220",
+      "observational_succ/phenomenology.py": "ce7c2fdd2ddfc83f8ffc51ca2bda056deaad9d8c20ac5fbd2b3876f88171ecca",
+      "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+      "provenance/origins/fuckingrh/actualization/YONEDA_GUIDE.md": "ef6df13b0cf2beb97dddd201cf10859d2c7aaea95de03fbc869f1116ae14532a",
+      "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+      "research/2026-10-13/SWARM_ATLAS/F46_MATHEMATICAL_PHENOMENOLOGY.md": "4f02c19ec29fa6f9371e17a79538f60c84391b1a4e8a191ffaaf7e4cca2cba22",
+      "research/2026-10-13/SWARM_ATLAS/F46_PROBE.py": "4263b0cbe7ff45e4f305fd7212b51bfccbc30cea4c07640295ad0c35ab9ef9f3"
+    },
+    "tracked_source_bytes_equal_immutable_parent": true
+  },
+  "status": "TESTED MODEL; paper theorems await independent non-deriver review"
+}
