@@ -1,0 +1,5 @@
+# F48 interface-join kernel scope
+
+The independently reviewed initial F48 relational-interface theorem has a new Lean4.14/Std predicate core. For q:I→O, universal exact compressed joins of arbitrary predicates on the full interface are equivalent to injection of q. The constant Bool→Unit counterexample is kernel checked. Fixing outer endpoints in arbitrary relations reduces their middle-interface claim to this predicate form; the full incidence-site sheaf/fibration construction is paper-only.
+
+The first compile failed because Function.Injective is not available through this Std import. That elaboration receipt is retained; no kernel theorem was claimed from it. The corrected statement expands injection into its actual quantifiers. The guarded serial gate records the corrected result separately. There are no authored sorry/admit/custom axioms. Quantum Kraus interpretation, probability kernels, causal policies and whole-swarm phase2 remain separate proof obligations. Kernel status here neither proves those interpretations nor supplies source access.

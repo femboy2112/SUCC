@@ -394,6 +394,16 @@
       "integration": "ACCEPTED"
     },
     {
+      "id": "E40",
+      "branch": "research/swm-e40-2026-10-13",
+      "original_commit": "4e44507e07803606c6f0561ba443c1b513722450",
+      "branch_head": "4e44507e07803606c6f0561ba443c1b513722450",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/E40/DOSSIER.md",
+      "integration_dossier_commit": "2c47e1f2e1430d4444a3c2eb8b3b0d1dde602ed6",
+      "integration": "ACCEPTED"
+    },
+    {
       "id": "F41",
       "branch": "research/swm-f41-2026-10-13",
       "original_commit": "aeefd7ec2a7f50e45a1446e1995c7f6289c158a9",
@@ -441,6 +451,26 @@
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "dossier_path": "research/2026-10-13/SWARM_ATLAS/F45_PROOF_COST_SCHEDULING.md",
       "integration_dossier_commit": "c414da5e5b824bd768ac68d0b89d458cb77de8ff",
+      "integration": "ACCEPTED"
+    },
+    {
+      "id": "F46",
+      "branch": "research/swm-f46-2026-10-13",
+      "original_commit": "202ee73782c28e813610e9b1d52c5430548cdde2",
+      "branch_head": "202ee73782c28e813610e9b1d52c5430548cdde2",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/F46_MATHEMATICAL_PHENOMENOLOGY.md",
+      "integration_dossier_commit": "52da34f1d67eac59c67056bc73368332563c6769",
+      "integration": "ACCEPTED"
+    },
+    {
+      "id": "F47",
+      "branch": "research/swm-f47-2026-10-13",
+      "original_commit": "bbd730929cd32a5594aef8386ed0cea8163dd3c3",
+      "branch_head": "bbd730929cd32a5594aef8386ed0cea8163dd3c3",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/F47_COLLECTIVE_PHASE.md",
+      "integration_dossier_commit": "ca5f77f051440b5e373338164e270f15254a6801",
       "integration": "ACCEPTED"
     },
     {
@@ -960,6 +990,16 @@
       "integration": "ACCEPTED"
     },
     {
+      "id": "E40",
+      "branch": "research/swm-e40-2026-10-13",
+      "original_commit": "4e44507e07803606c6f0561ba443c1b513722450",
+      "branch_head": "4e44507e07803606c6f0561ba443c1b513722450",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/E40/DOSSIER.md",
+      "integration_dossier_commit": "2c47e1f2e1430d4444a3c2eb8b3b0d1dde602ed6",
+      "integration": "ACCEPTED"
+    },
+    {
       "id": "F41",
       "branch": "research/swm-f41-2026-10-13",
       "original_commit": "aeefd7ec2a7f50e45a1446e1995c7f6289c158a9",
@@ -1007,6 +1047,26 @@
       "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "dossier_path": "research/2026-10-13/SWARM_ATLAS/F45_PROOF_COST_SCHEDULING.md",
       "integration_dossier_commit": "c414da5e5b824bd768ac68d0b89d458cb77de8ff",
+      "integration": "ACCEPTED"
+    },
+    {
+      "id": "F46",
+      "branch": "research/swm-f46-2026-10-13",
+      "original_commit": "202ee73782c28e813610e9b1d52c5430548cdde2",
+      "branch_head": "202ee73782c28e813610e9b1d52c5430548cdde2",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/F46_MATHEMATICAL_PHENOMENOLOGY.md",
+      "integration_dossier_commit": "52da34f1d67eac59c67056bc73368332563c6769",
+      "integration": "ACCEPTED"
+    },
+    {
+      "id": "F47",
+      "branch": "research/swm-f47-2026-10-13",
+      "original_commit": "bbd730929cd32a5594aef8386ed0cea8163dd3c3",
+      "branch_head": "bbd730929cd32a5594aef8386ed0cea8163dd3c3",
+      "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/F47_COLLECTIVE_PHASE.md",
+      "integration_dossier_commit": "ca5f77f051440b5e373338164e270f15254a6801",
       "integration": "ACCEPTED"
     },
     {
@@ -1090,11 +1150,11 @@
       "integration": "ACCEPTED"
     }
   ],
-  "checkpoint_parent": "dc23cf405fa432b717ca84018ab86d78ef08edde",
+  "checkpoint_parent": "ca5f77f051440b5e373338164e270f15254a6801",
   "last_verified_push": "830e99ffc89bc9ee5ae97cbbc433206be99aa96c",
   "current_counts": {
-    "native_children": 58,
-    "first_accepted": 44,
+    "native_children": 59,
+    "first_accepted": 47,
     "synth_accepted": 7
   }
 }

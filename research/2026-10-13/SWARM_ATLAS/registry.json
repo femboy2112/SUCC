@@ -955,14 +955,15 @@
       "worktree": "/home/leah/succ_lab/swm-e40",
       "branch": "research/swm-e40-2026-10-13",
       "owner": "/root/e40",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T10:56:51.415307+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T11:13:59.273499+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/E40/RECEIPT.json",
+      "proof_state": "PAPER; INDEPENDENT PRINCIPAL NON-DERIVER REVIEW ACCEPTED",
+      "commit": "4e44507e07803606c6f0561ba443c1b513722450",
+      "integration": "ACCEPTED",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/E40/DOSSIER.md"
     },
     {
       "id": "F41",
@@ -1097,14 +1098,15 @@
       "worktree": "/home/leah/succ_lab/swm-f46",
       "branch": "research/swm-f46-2026-10-13",
       "owner": "/root/f46",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T10:56:51.415307+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T11:13:59.273499+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/F46_RECEIPT.json",
+      "proof_state": "PAPER; INDEPENDENT PRINCIPAL NON-DERIVER REVIEW ACCEPTED",
+      "commit": "202ee73782c28e813610e9b1d52c5430548cdde2",
+      "integration": "ACCEPTED",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/F46_MATHEMATICAL_PHENOMENOLOGY.md"
     },
     {
       "id": "F47",
@@ -1120,14 +1122,15 @@
       "worktree": "/home/leah/succ_lab/swm-f47",
       "branch": "research/swm-f47-2026-10-13",
       "owner": "/root/f47",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T10:56:51.415307+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T11:13:59.273499+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/F47_RECEIPT.json",
+      "proof_state": "PAPER; INDEPENDENT PRINCIPAL NON-DERIVER REVIEW ACCEPTED",
+      "commit": "bbd730929cd32a5594aef8386ed0cea8163dd3c3",
+      "integration": "ACCEPTED",
+      "dossier_path": "research/2026-10-13/SWARM_ATLAS/F47_COLLECTIVE_PHASE.md"
     },
     {
       "id": "F48",
@@ -1286,14 +1289,15 @@
       "title": "Prime valuation groupoids x noncommuting source actions",
       "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x08",
-      "owner": null,
-      "state": "QUEUED",
+      "owner": "/root/x08",
+      "state": "RUNNING",
       "status": "UNVERIFIED",
       "integration": "PENDING",
       "commit": null,
       "proof_state": "NOT RUN",
-      "started_utc": null,
-      "branch": "research/swm-x08-2026-10-13"
+      "started_utc": "2026-10-13T11:13:59.273499+00:00",
+      "branch": "research/swm-x08-2026-10-13",
+      "independence": "New scoped second-generation mission; source cross-pollination authorized. Fresh native thread"
     },
     {
       "id": "X09",
@@ -1301,14 +1305,15 @@
       "title": "Archimedean completion x source actualization topology",
       "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x09",
-      "owner": null,
-      "state": "QUEUED",
+      "owner": "/root/a02",
+      "state": "RUNNING",
       "status": "UNVERIFIED",
       "integration": "PENDING",
       "commit": null,
       "proof_state": "NOT RUN",
-      "started_utc": null,
-      "branch": "research/swm-x09-2026-10-13"
+      "started_utc": "2026-10-13T11:13:59.273499+00:00",
+      "branch": "research/swm-x09-2026-10-13",
+      "independence": "New scoped second-generation mission; source cross-pollination authorized. Reused unrelated investigator; not counted as new spawn"
     },
     {
       "id": "X10",
@@ -1316,14 +1321,15 @@
       "title": "Koopman operators x hidden observational chaos",
       "parent_sha": "dc23cf405fa432b717ca84018ab86d78ef08edde",
       "worktree": "/home/leah/succ_lab/swm-x10",
-      "owner": null,
-      "state": "QUEUED",
+      "owner": "/root/a04",
+      "state": "RUNNING",
       "status": "UNVERIFIED",
       "integration": "PENDING",
       "commit": null,
       "proof_state": "NOT RUN",
-      "started_utc": null,
-      "branch": "research/swm-x10-2026-10-13"
+      "started_utc": "2026-10-13T11:13:59.273499+00:00",
+      "branch": "research/swm-x10-2026-10-13",
+      "independence": "New scoped second-generation mission; source cross-pollination authorized. Reused unrelated investigator; not counted as new spawn"
     },
     {
       "id": "X11",
@@ -1436,6 +1442,14 @@
       "path": "research/2026-10-13/SWARM_ATLAS/reviews/E38_E39_PRINCIPAL_REVIEW.md",
       "verdict": "SCOPED PAPER CLAIMS ACCEPTED",
       "independence": "Root did not derive author results; separate sieve and source coefficient calculation; no imported author helpers"
+    },
+    {
+      "assignment": "E40/F46/F47",
+      "reviewer": "/root",
+      "state": "COMPLETED",
+      "path": "research/2026-10-13/SWARM_ATLAS/reviews/E40_F46_F47_PRINCIPAL_REVIEW.md",
+      "verdict": "SCOPED PAPER CLAIMS ACCEPTED",
+      "independence": "Root did not derive author targets; postdelivery reconstruction; hypothesis reminders disclosed"
     }
   ],
   "native_agents_genuinely_spawned_so_far": [
@@ -1496,7 +1510,8 @@
     "/root/e39",
     "/root/e40",
     "/root/f46",
-    "/root/f47"
+    "/root/f47",
+    "/root/x08"
   ],
   "provider_capacity_receipts": [
     {
@@ -1518,6 +1533,11 @@
       "agent": "C20 spawn attempt",
       "state": "NOT SPAWNED; QUEUED",
       "failure": "Active four-slot limit reached, not total research thread quota."
+    },
+    {
+      "agent": "X09 fresh spawn attempt",
+      "state": "NOT SPAWNED; REAL REUSED A02 INVESTIGATOR ASSIGNED",
+      "failure": "agent thread limit reached; lifetime quota distinct from four-active concurrency"
     }
   ],
   "review_independence_note": "Principal /root did not derive child results and independently checked each accepted result with separate derivations/implementations. Native reasoner and implementation independence; same model/provider and inherited source family.",
