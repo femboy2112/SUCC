@@ -287,6 +287,48 @@ class PermutationGraph:
             raise AssertionError("Kernel cover must be connected")
         return vertices, tuple(arcs)
 
+    def cover_parallel_section(self, root_value: int) -> dict[
+            tuple[str, tuple[int, ...]], int]:
+        """A legal scalar section on the kernel cover for ANY root value.
+
+        q_x(v,h)=t_v(h(x)). The source base may lack a global section,
+        but the kernel cover has exactly |X| root-determined sections.
+        """
+        if type(root_value) is not int or not 0 <= root_value < self.fiber_size:
+            raise GeneticsError("Section requires one valid root fiber element")
+        vertices, edges = self.minimal_connected_trivializing_cover()
+        tree = self.tree_transports()
+        q = {(v, h): tree[v][h[root_value]] for v, h in vertices}
+        if any(p[q[a]] != q[b] for a, b, p in edges):
+            raise AssertionError("Cover section does not satisfy source transport")
+        return q
+
+    def section_descent_report(self) -> dict:
+        """Descent theorem: cover section descends iff root ∈ X^H.
+
+        Deck H acts by RIGHT multiplication on sheets; this commutes
+        with the LEFT monodromy lifts used in the covering edges.
+        A section is invariant under deck transformations exactly when
+        its values are independent of sheet h at fixed base vertex.
+        """
+        group = self.holonomy_group()
+        descends = []
+        for x in range(self.fiber_size):
+            q = self.cover_parallel_section(x)
+            if all(len({q[(v, h)] for h in group}) == 1
+                   for v in self.vertices):
+                descends.append(x)
+        expected = self.root_fixed_points()
+        if tuple(descends) != expected:
+            raise AssertionError("Source section descent/fixed-point theorem failed")
+        return {
+            "holonomy_group_order": len(group),
+            "cover_parallel_sections": self.fiber_size,
+            "base_parallel_sections": len(descends),
+            "root_elements_admitting_descent": list(descends),
+            "all_cover_sections_descend": len(descends) == self.fiber_size,
+        }
+
     def root_fixed_points(self) -> tuple[int, ...]:
         """Root values that survive EVERY fundamental cycle equation."""
         t = self.tree_transports()
@@ -333,6 +375,8 @@ def language_birth_demo() -> dict:
         "nonabelian_S3_cover_vertices": len(distinct_cover[0]),
         "nonabelian_S3_cover_edges": len(distinct_cover[1]),
         "nonabelian_S3_base_sections": len(distinct.root_fixed_points()),
+        "nonfree_cover_descent": nonfree.section_descent_report(),
+        "nonabelian_cover_descent": distinct.section_descent_report(),
         "nonfree_nontrivial_holonomy": nonfree.nontrivial_holonomy(),
         "nonfree_parallel_sections": len(nonfree.root_fixed_points()),
         "independent_nonfree_section_count": nonfree.independent_assignment_count(),
