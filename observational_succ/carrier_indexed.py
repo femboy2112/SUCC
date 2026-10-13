@@ -190,6 +190,8 @@ class CarrierEvent:
     conditional_likelihood: Q
     before: str
     after: str
+    before_epoch: int
+    after_epoch: int
 
 
 @dataclass(frozen=True)
@@ -270,16 +272,32 @@ class ActualHistory:
         if not probability:
             raise CarrierError("Impossible observation is not an actualized history")
         event = CarrierEvent(instrument.name, receipt, probability / self.evidence,
-                             instrument.before.name, instrument.after.name)
+                             instrument.before.name, instrument.after.name,
+                             instrument.before.epoch, instrument.after.epoch)
         return ActualHistory(self.root_source, instrument.after, result,
                              self.events + (event,))
 
-    def verify(self, registry: dict[str, CarrierInstrument]) -> bool:
+    def verify(self, registry: dict) -> bool:
+        """Replay with stage/epoch-indexed actions, not only ambiguous names.
+
+        A simple name key remains accepted for unambiguous one-stage data,
+        while time-varying instrument laws can reuse a display name at
+        different stages through a complete typed five-field key.
+        """
         replay = self.root_source.root()
         for event in self.events:
-            if event.action not in registry:
-                raise CarrierError("History lacks an actual instrument contract")
-            replay = replay.advance(registry[event.action], event.receipt)
+            key=(event.action,event.before,event.before_epoch,
+                 event.after,event.after_epoch)
+            instrument=registry.get(key,registry.get(event.action))
+            if instrument is None or type(instrument) is not CarrierInstrument:
+                raise CarrierError("History lacks a typed actual instrument contract")
+            if (instrument.name != event.action or
+                    instrument.before.name != event.before or
+                    instrument.after.name != event.after or
+                    instrument.before.epoch != event.before_epoch or
+                    instrument.after.epoch != event.after_epoch):
+                raise CarrierError("Forged or conflicting event/stage provenance")
+            replay = replay.advance(instrument,event.receipt)
         if replay != self:
             raise CarrierError("Forged, stale or probability-corrupted history")
         return True
