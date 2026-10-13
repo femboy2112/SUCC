@@ -1,49 +1,64 @@
 # SUCC MATHEMATICAL ATLAS
 
-**Rolling research checkpoint, not a completed swarm.** Baseline VOYAGER `5eb09e7`; integration branch `research/many-worlds-atlas-2026-10-13`, draft [PR49](https://github.com/femboy2112/SUCC/pull/49). [Registry](registry.json) is the authority for assignment completion. 48 first-generation missions are specified; 12 additional independent bridge missions remain to be dispatched after surviving first-generation evidence is available. This document expands only when proofs or counterexamples earn integration.
+**Rolling atlas: the requested 48+12 swarm remains in progress.** The [registry](registry.json) records actual assignments, agents, exact parent/child commits, reviews and integration decisions. Draft [PR49](https://github.com/femboy2112/SUCC/pull/49) extends verified VOYAGER `5eb09e7cba36ec01b8f9d6834b78b5766fd93935`; EOS `b2774ca` remains a separately audited sibling with Lean 4.19. This branch uses Lean 4.14. Archives and main remain intact.
 
-## Surviving mathematical structures
+## Navigable mathematical map
 
-| Object/map | Exact domain and validity conditions | What is preserved | Current evidence |
-|---|---|---|---|
-| Source action `U:S→T` | Declared mathematical carrier map; empirical legality requires its own receipt | Its specified state transition | Existing causal core; does not identify original and current state |
-| Actual history `h:S→H` | Readout of actually retained records, conditional on access | Recorded source-sensitive distinctions | Immutable causal core; no counterfactual receipt is manufactured |
-| Original target decoder `d:im(U,h)→V` | Exists iff `ker(U,h)⊆ker(t)` for original `t:S→V` | Original-target value | Existing kernel proof plus [A01](A01.md) erased-bit control |
-| Predicate fibers `P(S)` | Inverse image, direct image and universal quantification on declared sets | Truth-valued support | Classical split bifibration; [A01](A01.md), independent [review](reviews/PRINCIPAL_A01_F41.md) |
-| Witness fibers `FinSet^S` | Actual distinct receipt families; dependent sums use disjoint witness identity | Witness/source-path identity under bijective comparisons | Classical paper proof; truth truncation can lose multiplicity |
-| Comparison `W→X×_Z Y` | A genuinely commuting finite square | Predicate base change iff surjective; witness base change iff bijective | A01 paper theorem;4,373 independently represented incidence controls |
-| Full action trace `Φ:S→O^(A*)` | Complete legal action grammar and fixed readout; mathematical alternatives distinct from feasible physical policy | All-word behavior | Existing VOYAGER pinned kernel; action congruence |
-| Behavioral quotient `S/ker Φ` | Same complete source/actions/readout | Exact lawful observer dynamics, original targets constant on its fibers | Existing causal/Nerode proof; [F41](F41.md) precise noninjective faithful-action control |
-| Heisenberg source `R³→R²` | `R=Z/nZ`, `n≥2`; actions A,B; readout z | Faithful `UT₃(R)` action of order n³ on n² reports | F41 classical complete derivation; independent ring controls2–8 |
-| Source/action-groupoid functor `R³//G→R²//G` | Keep group-action labels, isotropy and equivariance | Identity/composition and loop representation | F41 paper proof; forgetting endpoint multiplicity is lossy |
-| Regular cover→Schreier cover→bouquet | Complete reversible labeled graph and full specified holonomy | Cover projection; behavioral orbit | F41 degree n³ for full holonomy killing versus n² observer quotient; distinct optimization targets |
-
-## How knowledge is acquired and when a new instrument is required
-
-An actual source-changing action produces an outcome and a new carrier. The record constrains pairs `(original source,current carrier)` rather than replacing the original by the endpoint. A conclusion about an original target is authorized only when that target is constant on all pairs compatible with the retained record. An accessible policy may acquire another outcome; an unavailable or destructive action may prevent a target from ever becoming homogeneous. The existing adaptive AND/OR fixed point is relative to an explicitly complete finite source/action contract.
-
-A semantic representation can change without changing a source. A valid comparison must preserve the appropriate data: Boolean support for truth, separate witnesses for receipt identity, and probability kernels for calibrated stochastic claims. Equal supports do not identify probability laws. A commuting square alone does not make these stronger transports lawful.
-
-The F41 example gives an explicit language-change boundary. With readout z and actions A,B, the quotient `(x,y,z)↦(y,z)` is exact; every old word ignores x. Adding the supplied swap W exposes x and violates old quotient congruence. The observer requires a richer representation for that genuinely expanded instrument grammar. Renaming old labels or adding more computation inside the old grammar cannot perform this repair.
-
-## Completion and architecture obligations still open in this swarm
-
-VOYAGER's all-finite source-image inverse limit is an ideal observational completion. Original actualization additionally requires a closed trace image. Existing eventual-zero streams match every finite all-one profile but never realize the complete profile. B09 has independently produced a Lean4.14 algebraic inverse-family proof, awaiting integration review and its separate native topology verification. Neither ideal completion nor source compactness implies physically performed infinitely many observations.
-
-The flagship history fibration is a target, not an already proved universal construction. The candidate common comparison object is a lawful history together with its original/current support and source-bound receipt family. Pulling back a known fibration along a genuinely specified history-evaluation functor is classical; showing that the operational history category itself has the required pullbacks, gluing covers and feasible instruments remains a separate theorem. No sheaf is asserted from a diagram alone.
-
-## Preserved no-go witnesses and next discriminators
-
-| Failure | Small witness | Repair gate / next discriminating result |
+| Structure and actual arrow | Domain and validity conditions | Surviving invariant / evidence |
 |---|---|---|
-| Truth base change without comparison coverage | Missing one pair in a two-original-state square | Supply actual full pullback coverage |
-| Truth transport implies witness transport | Two W-points over one compatible pair | Require comparison bijectivity or disclose witness truncation |
-| Current carrier determines every original claim | Two original bits destructively erased into one current state | Actually retain available original-sensitive history |
-| Source noncommutation must be observer-visible | F41 readout y hides the central coordinate | Source-faithful richer readout; no support-based confidence repair |
-| Adequate quotient remains adequate under new action | Added coordinate swap separates an old fiber | Recompute congruence for expanded grammar |
-| Minimal observer equals minimal holonomy-killing cover | n² Schreier observer versus n³ kernel cover | State which invariant must be trivialized |
-| Compatible finite profiles imply actual source | Original eventual-zero class, absent all-one limit | Prove closed image under declared topology |
+| Original/current/history support `(s,q,h)` | Declared source contract; legal instruments and actually retained outcomes | Original targets decode only when constant on retained support fibers; current carrier alone can erase them |
+| Source-indexed predicates and receipt families | Commuting finite source square, comparison `W→X×_Z Y` | [A01](A01.md): predicate base change iff comparison surjective; witness-family base change iff bijective |
+| Restricted probes `C→Set^(Pop)` | Finite free acyclic path category; precursors actually available | [A02](A02.md): arrow faithfulness iff probes reach sources of distinct parallel paths; object separation alone fails |
+| Connected gain-graph chart descent | Complete exact cover, integral additive increments | [A03](A03.md): overlap period subgroup equals source periods; primitive iff zero; finite modular menus hide LCM periods |
+| Fiber transport and holonomy `π1(G)→Sym(X)` | Complete connected graph, bijective transports, nonempty finite fiber | [A04](A04.md): sections upstairs are stabilizer fixed points; minimum connected degree min orbit size; regular degree min stabilizer-core index |
+| Observation-language migration `Lan_K ⊣ K* ⊣ Ran_K` | Finite source-tagged diagram categories `FinSet/P` | [A05](A05.md): actual comma colimits/limits and adjunctions; full-faithful migration recovers original objects, empty products create candidates without receipts |
+| Repair `E↦⋂w U_w*E` | Fixed total actions, seed equivalence contained in report kernel | [A06](A06.md): coreflector under relation inclusion, reflector under reversed information order; source pullback commutes only for lawful homomorphisms |
+| Full trace `Φ:S→O^W`, all-finite family `lim_F im(Φ|F)` | Discrete report topology; actual finite-stage source images and restriction maps | [B09](B09.md): completion is homeomorphic to closure Φ(S); original realization iff Φ(S) closed; native pinned Lean kernel proof |
+| Compact/profinite observational completion | Continuous finite-alphabet probes; original compact source for actualization | B09 kernel: compact Hausdorff totally disconnected inverse family; bonding continuity and action transport; no infinite physical execution |
+| Cost-constrained source realization | Hausdorff original source, continuous finite probes, finite-valued cost with compact sublevels | [B10](B10.md): minimum global cost equals supremum finite-shadow infima; finite supremum attained; Polish/local compact/Baire alone fail |
+| Effective refutation certificates | Complete computable finite original carrier, exhaustive contexts and semidecidable mismatch | [B11](B11.md): partial extractor halts on precisely unrealizable profiles with at most one context per source; arbitrary computable targets admit no total uniform witness bound |
+| Stochastic update `μ↦T_(a,o)μ` | Full rational joint law on original/current state, public-history policies, common source | [C17](C17.md): pushforward commutes for all priors iff complete joint kernel square commutes; normalization requires positive mass |
+| Markov separator gluing `G(u,v)=uv/s` | Finite probability tables with compatible separator and stated conditional independence | [C18](C18.md): Bayes/gluing commute iff each supported likelihood fiber has rank ≤1; reused separator likelihood is counted once |
+| Bounded logistic cell-window report `qf=Gq` | Boundary-free complete three-cell source or parameter-4 full binary source | [D25](D25.md): maximal autonomous finite factor is phase/constant in the period-two graph, constant in full binary language; boundary requires unbounded sink predicate |
+| Affine history `(a,b)(c,d)=(ac,ad+b)` | Natural-number carrier, genuine named maps; finite-support algebra | [E33](E33.md): faithful normal form and operator representation; modular quotient retains coefficient congruence; relations do not authenticate prime/Euler origin |
+| Unitriangular source `R³→R²` | `R=Z/nZ`, n≥2, specified A/B instruments and z readout | [F41](F41.md): faithful order n³ action on n² behavioral states; regular holonomy killing and behavioral minimization are different objectives |
+| Supported receipts `E=Σ_s A_s`, labels `λ:E→L` | Discrete labels and reports; original source fibers may be empty | [X01](X01.md): retained inverse limit is E; image inverse limit is closure of `(Ψ,λ)(E)`; interchange iff that supported labelled image is closed |
 
-## Claim limits, source lineage and priority
+Independent principal reviews are in [reviews](reviews/); X01 also has a [separate native A05 review](reviews/X01_A05_REVIEW.md) and independently written enumeration. Paper proofs are not promoted to kernel proofs by test counts. Only B09's named Lean statements receive kernel status here. Classical results are identified as classical even when newly connected inside SUCC.
 
-A01 base-change classifications and F41 unitriangular/group-action/covering statements are classical mathematics, new as scoped SUCC connections. Primary literature is linked in their dossiers. Academic originality remains unverified. Each investigator and reviewer shares the project source lineage and model/provider; separate reasoning and implementations do not become independent empirical provenance. Frozen import hashes remain unchanged. EOS4.19 is not merged into VOYAGER4.14. No accepted result supplies a completed arithmetic Weil identification, Gamma/pole interval oracle, RH theorem, neuroscience validation, or actual physical source authentication.
+## Acquisition, representation revision and lawful new instruments
+
+An instrument begins with an original state s and current carrier q, produces a report o, and changes q. Retain the actual history h. A deterministic original target t is certified exactly when all alternatives compatible with that retained history agree on t. A stochastic claim instead needs the full original/current conditional law: support, separate outcome marginals, or identical endpoints cannot replace it. C17 supplies exact unnormalized transport; zero-probability branches have no posterior. Formal zero-measure fibers are algebraic objects, not performed events.
+
+A representation is lawful when its fibers are action-stable and all intended claims factor through it. A06 supplies the greatest stable subrelation of a declared seed. Changing the source requires an action-commuting map; report preservation alone gives a minimal two-to-three-state failure. Changing the language uses A05's actual Kan constructions, but their universal candidates need source receipts before becoming supported knowledge. A02 distinguishes adequate arrow probes from a suggestive object sample. F41's added coordinate swap exposes a hidden x-coordinate and forces a richer quotient; more computation inside the old A/B grammar cannot substitute for that new instrument.
+
+Local gluing needs the original overlap maps. A03 shows why finite modular shadows can accept a source whose integral period is nonzero. A04 shows why existence of a section on a cover is weaker than descent: full fiber-pair equality is necessary, while deck invariance suffices only on regular covers. Its S3 three-sheet cover has a section and trivial deck group yet no descending section.
+
+## Completion does not actualize unsupported knowledge
+
+B09 gives the actual all-finite inverse-limit topology, not only an algebraic metaphor. B10 adds a source-relative resource discriminator: finite shadows must have a uniform cost cap for each complete target, under compact sublevel and continuity hypotheses. An arbitrarily expensive chosen sequence is not evidence of minimum-cost escape. A discrete Polish source with escaping threshold witnesses realizes every finite all-zero prefix and no full all-zero profile.
+
+X01 strengthens this to proof support. A compact original source can contain the limit state while its receipt fiber is empty. Then original actualization succeeds but proof-supported actualization fails. The common comparison object is the supported receipt total space E, with its report profile and label. Preserving receipt identity makes the inverse limit exactly E; forgetting identities first can introduce unsupported limit profiles. Source compactness cannot be substituted for compactness/coercivity of E. Continuous discrete identity labels on a compact space have finite image, so topology cannot be silently inherited after a relabeling.
+
+The flagship history fibration remains a research target. Existing results distinguish predicate fibers, witness families, rational measure cones and topological supported completions. Their morphisms preserve different invariants; no single unqualified sheaf or adjunction unifies them automatically.
+
+## Sharp failures and smallest next discriminators
+
+| Refuted shortcut | Minimal or sharp receipt | Smallest next theorem/experiment |
+|---|---|---|
+| Commuting square implies proof transport | Missing pair; duplicated pair preserves truth but loses witnesses | Mechanize canonical witness-family base change |
+| Current state retains every original claim | Two bits erased to one carrier | Prove target constancy on actually retained history fibers |
+| Object-separated probes are faithful | Parallel arrows not reached by available probes | General nonfree precomposition separation criterion |
+| Fixed finite modular language detects all integral gluing | Two vertices/two darts, labels 1 and 1+LCM | Proved period bound or genuinely new coefficient probe |
+| Deck-invariant upstairs section always descends | Nonregular S3 three-sheet cover with trivial deck group | Actual fiber-pair descent checker |
+| Report-preserving source change preserves minimal repair | Two-to-three-state noncommuting map | Partial/history-dependent lawful homomorphism theory |
+| Polish or locally compact source suffices for realization | Discrete threshold carrier with cost escaping as h+1 | Continuous compact-sublevel source or supported-receipt certificate |
+| Finite classical witness gives total effective extractor | Bounded halting target on singleton source | Explicit promised partial search / finite target-machine bound |
+| Equal support or marginals imply equal Bayesian transport | Same support, posterior 3/4 versus 1/4 | Full joint law square from original-source provenance |
+| Bayesian gluing tolerates duplicated evidence | Correct 3/4 versus reused 9/10 | Actual event identity and rank-one likelihood gate |
+| Affine relations identify prime/Euler source | Composite 6 and prime 11 agree modulo 5 | Source-derived arithmetic invariant with matched non-Euler control |
+| Compact original source certifies every limiting proof | Limit original state with empty receipt fiber | Closed labelled supported image / bounded minimum receipt cost |
+
+## Priority and claim limits
+
+A01–A06, B09–B11, C17–C18, E33 and F41 specialize established category, topology, automata, probability and affine-action mathematics. X01's supported-receipt comparison is a proved local synthesis; academic originality remains unverified. Each dossier links primary literature and exact source commits. Independent agents share model/provider and project source lineage; reasoning independence is not independent empirical provenance. No accepted result provides completed source-derived Weil positivity, RH progress, physical source authentication, or human psychological validation. Unperformed alternatives and ideal limits remain mathematical alternatives.

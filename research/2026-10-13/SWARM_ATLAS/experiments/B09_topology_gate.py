@@ -57,7 +57,7 @@ def process_tree_rss_kib(pid: int) -> int:
 
 
 def bounded_compile(command: list[str], root: Path, environment: dict[str, str],
-                    scratch: Path) -> dict:
+                    scratch: Path, timeout_seconds: float = 120) -> dict:
     started = time.monotonic()
     peak = 0
     minimum_available = None
@@ -77,7 +77,7 @@ def bounded_compile(command: list[str], root: Path, environment: dict[str, str],
                 reason = "RESIDENT MEMORY CAP"
             elif available < MIN_SYSTEM_AVAILABLE_MIB * 1024:
                 reason = "SYSTEM MEMORY HEADROOM CAP"
-            elif time.monotonic() - started > 120:
+            elif time.monotonic() - started > timeout_seconds:
                 reason = "TIMEOUT"
             if reason:
                 os.killpg(process.pid, signal.SIGTERM)
@@ -107,7 +107,7 @@ def main() -> None:
         "research/2026-10-13/SWARM_ATLAS/receipts/B09_topology.json"))
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[4]
-    lean = args.lean.resolve()
+    lean = args.lean.absolute()
     mathlib = args.mathlib_dir.resolve()
     if (root / "lean-toolchain").read_text().strip() != "leanprover/lean4:v4.14.0":
         raise SystemExit("Integration pin differs from Lean 4.14.0")

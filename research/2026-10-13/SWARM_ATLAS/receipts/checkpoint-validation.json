@@ -1,0 +1,32 @@
+{
+  "source_sha": "07b3d8a3c624273f58b7921e673ecbf62bca56b8",
+  "utc": "2026-10-13T07:54:34.108132+00:00",
+  "required_checks": [
+    {
+      "command": "python scripts/verify_provenance.py",
+      "exit_code": 0,
+      "log": "research/2026-10-13/SWARM_ATLAS/receipts/checkpoint-provenance.log",
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "command": "python scripts/observer_foundations_probe.py",
+      "exit_code": 0,
+      "log": "research/2026-10-13/SWARM_ATLAS/receipts/checkpoint-foundations.log",
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "command": "python scripts/ordinal_succ_report_probe.py",
+      "exit_code": 0,
+      "log": "research/2026-10-13/SWARM_ATLAS/receipts/checkpoint-ordinal.log",
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "exit_code": 0,
+      "tests": 1602,
+      "seconds": 123.73,
+      "log": "research/2026-10-13/SWARM_ATLAS/receipts/checkpoint-tests.log",
+      "sha256": "36664e7fb3d96a049d2fa792572e75ac1f93317b121586b92fc18b8a5f5595f1"
+    }
+  ]
+}

@@ -111,12 +111,12 @@
       "owner": "/root/a05",
       "state": "COMPLETED",
       "started_utc": "2026-10-13T07:19:06.112024+00:00",
-      "finished_utc": "2026-10-13T07:34:19.889401+00:00",
+      "finished_utc": "2026-10-13T07:49:32.958821+00:00",
       "status": "CLASSICAL / PROVED LOCAL",
       "witness_path": "research/2026-10-13/SWARM_ATLAS/A05_receipt.json",
-      "proof_state": "POINTWISE KAN EXTENSION/SLICE ADJUNCTION; REVIEW PENDING",
+      "proof_state": "INDEPENDENT PRINCIPAL PROOF/HYPOTHESIS REVIEW SURVIVES; PAPER",
       "commit": "ad6db3cfeb4cd9426b622f31d3d5c2892c3d7d37",
-      "integration": "PENDING"
+      "integration": "ACCEPTED"
     },
     {
       "id": "A06",
@@ -132,14 +132,14 @@
       "worktree": "/home/leah/succ_lab/swm-a06",
       "branch": "research/swm-a06-2026-10-13",
       "owner": "/root/a06",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T07:34:19.998704+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T07:49:32.958821+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/A06_receipt.json",
+      "proof_state": "INDEPENDENT PRINCIPAL PROOF/HYPOTHESIS REVIEW SURVIVES; PAPER",
+      "commit": "907c2bd93e3d80de584f944b0cf74592c6771bc2",
+      "integration": "ACCEPTED"
     },
     {
       "id": "A07",
@@ -270,9 +270,9 @@
       "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "worktree": "/home/leah/succ_lab/swm-b12",
       "branch": "research/swm-b12-2026-10-13",
-      "owner": null,
-      "state": "QUEUED",
-      "started_utc": null,
+      "owner": "/root/b12",
+      "state": "RUNNING",
+      "started_utc": "2026-10-13T07:49:32.958821+00:00",
       "finished_utc": null,
       "status": "UNVERIFIED",
       "witness_path": null,
@@ -294,9 +294,9 @@
       "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "worktree": "/home/leah/succ_lab/swm-b13",
       "branch": "research/swm-b13-2026-10-13",
-      "owner": null,
-      "state": "QUEUED",
-      "started_utc": null,
+      "owner": "/root/b13",
+      "state": "RUNNING",
+      "started_utc": "2026-10-13T07:54:34.108132+00:00",
       "finished_utc": null,
       "status": "UNVERIFIED",
       "witness_path": null,
@@ -411,12 +411,12 @@
       "owner": "/root/c18",
       "state": "COMPLETED",
       "started_utc": "2026-10-13T07:19:06.169202+00:00",
-      "finished_utc": "2026-10-13T07:34:19.945846+00:00",
-      "status": "PROVED LOCAL",
+      "finished_utc": "2026-10-13T07:49:32.958821+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
       "witness_path": "research/2026-10-13/SWARM_ATLAS/C18_receipt.json",
-      "proof_state": "SUPPORTED-FIBER LIKELIHOOD RANK CRITERION; REVIEW PENDING",
+      "proof_state": "INDEPENDENT PRINCIPAL PROOF/HYPOTHESIS REVIEW SURVIVES; PAPER",
       "commit": "8128bf406b41fd93acdf004245ca7cff2644f762",
-      "integration": "PENDING"
+      "integration": "ACCEPTED"
     },
     {
       "id": "C19",
@@ -570,15 +570,15 @@
       "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
       "worktree": "/home/leah/succ_lab/swm-d25",
       "branch": "research/swm-d25-2026-10-13",
-      "owner": null,
-      "state": "QUEUED",
-      "started_utc": null,
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "owner": "/root/d25",
+      "state": "COMPLETED",
+      "started_utc": "2026-10-13T07:49:32.958821+00:00",
+      "finished_utc": "2026-10-13T07:54:34.108132+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/D25_receipt.json",
+      "proof_state": "INDEPENDENT PRINCIPAL STRONGLY CONNECTED HIGHER-BLOCK PROOF REVIEW SURVIVES; PAPER",
+      "commit": "82625ce2e7e6368e778136c3f2cf0466ca4de2f5",
+      "integration": "ACCEPTED"
     },
     {
       "id": "D26",
@@ -755,14 +755,14 @@
       "worktree": "/home/leah/succ_lab/swm-e33",
       "branch": "research/swm-e33-2026-10-13",
       "owner": "/root/e33",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "started_utc": "2026-10-13T07:34:20.059913+00:00",
-      "finished_utc": null,
-      "status": "UNVERIFIED",
-      "witness_path": null,
-      "proof_state": "NOT RUN",
-      "commit": null,
-      "integration": "PENDING"
+      "finished_utc": "2026-10-13T07:49:32.958821+00:00",
+      "status": "CLASSICAL / PROVED LOCAL",
+      "witness_path": "research/2026-10-13/SWARM_ATLAS/E33_receipt.json",
+      "proof_state": "INDEPENDENT PRINCIPAL PROOF/HYPOTHESIS REVIEW SURVIVES; PAPER",
+      "commit": "abae499ee1cb6730db0626aa0be948bcf0e75dcd",
+      "integration": "ACCEPTED"
     },
     {
       "id": "E34",
@@ -1120,24 +1120,26 @@
       "owner": "/root/x01",
       "state": "COMPLETED",
       "status": "PROVED LOCAL",
-      "integration": "PENDING",
+      "integration": "ACCEPTED",
       "commit": "d9631e3008051628a45bd6373ef35e884d3a7384",
-      "proof_state": "PAPER PROOF; NATIVE A05 ADVERSARIAL REVIEW RUNNING",
-      "started_utc": "2026-10-13T07:17:39.114388+00:00"
+      "proof_state": "INDEPENDENT NATIVE A05 REVIEW SURVIVES; PAPER",
+      "started_utc": "2026-10-13T07:17:39.114388+00:00",
+      "finished_utc": "2026-10-13T07:49:32.958821+00:00"
     },
     {
       "id": "X02",
       "claim_id": "SWM-X02",
       "title": "Nonabelian holonomy x stochastic proof transport",
-      "parent_sha": null,
+      "parent_sha": "4b17f18",
       "worktree": "/home/leah/succ_lab/swm-x02",
-      "owner": null,
-      "state": "QUEUED",
-      "status": "UNVERIFIED",
+      "owner": "/root/x02",
+      "state": "COMPLETED",
+      "status": "PROVED LOCAL",
       "integration": "PENDING",
-      "commit": null,
-      "proof_state": "NOT RUN",
-      "started_utc": null
+      "commit": "090d6e593b2fa9b9ea431e898f653e72f933ab50",
+      "proof_state": "PAPER; NATIVE D25 REVIEW RUNNING",
+      "started_utc": "2026-10-13T07:49:32.958821+00:00",
+      "finished_utc": "2026-10-13T07:54:34.108132+00:00"
     },
     {
       "id": "X03",
@@ -1284,15 +1286,23 @@
     {
       "reviewer": "/root/c17/c17_crucible",
       "assignment": "C17",
-      "state": "RUNNING",
+      "state": "COMPLETED",
       "writes": "READ ONLY; PARENT C17 WRITES OWN DOSSIER",
-      "independence": "Separate native child, same model/provider; primary source/history lineage shared"
+      "independence": "Separate native child, same model/provider; primary source/history lineage shared",
+      "verdict": "SURVIVES WITH EXPLICIT HYPOTHESES"
     },
     {
       "reviewer": "/root/a05",
       "assignment": "X01",
+      "state": "COMPLETED",
+      "independence": "A05 investigator did not derive X01; first A05 mission completed before cross-pollination",
+      "verdict": "SURVIVES WITH EXPLICIT HYPOTHESES"
+    },
+    {
+      "assignment": "X02",
+      "reviewer": "/root/d25",
       "state": "RUNNING",
-      "independence": "A05 investigator did not derive X01; first A05 mission completed before cross-pollination"
+      "independence": "Different investigator; did not derive X02; reconstruction before author probe"
     }
   ],
   "native_agents_genuinely_spawned_so_far": [
@@ -1310,7 +1320,11 @@
     "/root/a05",
     "/root/c18",
     "/root/a06",
-    "/root/e33"
+    "/root/e33",
+    "/root/x02",
+    "/root/d25",
+    "/root/b12",
+    "/root/b13"
   ],
   "provider_capacity_receipts": [
     {

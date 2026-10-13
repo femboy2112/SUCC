@@ -1,0 +1,60 @@
+name: SWM pinned observational topology kernel
+
+on:
+  pull_request:
+    paths:
+      - 'formal/SWM_*.lean'
+      - 'scripts/swm_topology_bootstrap.py'
+      - 'research/2026-10-13/SWARM_ATLAS/experiments/B09_topology_gate.py'
+      - 'research/2026-10-13/SWARM_ATLAS/receipts/cache-bootstrap-wrapper.lean'
+      - '.github/workflows/swm-lean.yml'
+  push:
+    branches:
+      - 'research/many-worlds-atlas-*'
+    paths:
+      - 'formal/SWM_*.lean'
+      - 'scripts/swm_topology_bootstrap.py'
+      - 'research/2026-10-13/SWARM_ATLAS/experiments/B09_topology_gate.py'
+      - '.github/workflows/swm-lean.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: swm-topology-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  kernel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install exact standalone Lean pin
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --location \
+            https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh \
+            -o "$RUNNER_TEMP/swm-elan-init.sh"
+          sh "$RUNNER_TEMP/swm-elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Fetch pinned selective topology cache
+        run: |
+          python scripts/swm_topology_bootstrap.py \
+            --lean "$HOME/.elan/bin/lean" \
+            --mathlib-dir "$RUNNER_TEMP/swm-mathlib-4.14" \
+            --receipt "$RUNNER_TEMP/swm-bootstrap.json"
+      - name: Compile native topology and reject nonstandard axioms
+        run: |
+          python research/2026-10-13/SWARM_ATLAS/experiments/B09_topology_gate.py \
+            --lean "$HOME/.elan/bin/lean" \
+            --mathlib-dir "$RUNNER_TEMP/swm-mathlib-4.14" \
+            --receipt "$RUNNER_TEMP/swm-kernel.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: swm-pinned-kernel-receipts
+          path: |
+            ${{ runner.temp }}/swm-bootstrap.json
+            ${{ runner.temp }}/swm-kernel.json
