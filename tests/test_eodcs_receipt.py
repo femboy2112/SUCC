@@ -13,6 +13,11 @@ class TestEODCSReceipt(unittest.TestCase):
         self.assertEqual(c["minimal_connected_trivializing_cover_degree"], 2)
         self.assertEqual(c["minimal_cover_vertices"], 6)
         self.assertEqual(c["minimal_cover_arcs"], 6)
+        self.assertEqual(r["obstruction_trivializing_cover"]["nonabelian_S3_cover_degree"], 6)
+        self.assertEqual(r["obstruction_trivializing_cover"]["nonabelian_S3_cover_vertices"], 6)
+        self.assertEqual(r["obstruction_trivializing_cover"]["nonabelian_S3_cover_edges"], 12)
+        self.assertEqual(r["obstruction_trivializing_cover"]["nonabelian_cover_descent"]["cover_parallel_sections"], 3)
+        self.assertEqual(r["obstruction_trivializing_cover"]["nonabelian_cover_descent"]["base_parallel_sections"], 0)
         self.assertEqual(r["dependent_uncertain_observations"][
             "robust_posterior_interval"], ["2/3", "1"])
         self.assertEqual(r["blinded_8_to_4_source"]["seed_count"], 20)
