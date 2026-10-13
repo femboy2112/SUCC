@@ -1,0 +1,139 @@
+{
+  "all_checks_passed": true,
+  "assignment": "SWM-A01",
+  "commuting_squares_checked": 596,
+  "destructive_update_witness": {
+    "new_report": [
+      "erased"
+    ],
+    "observation_square_commutes": true,
+    "old_report": [
+      0,
+      1
+    ],
+    "original_claim_descends": false,
+    "original_sources": [
+      0,
+      1
+    ],
+    "original_support": [
+      1
+    ],
+    "pushed_support": [
+      0
+    ],
+    "report_transport": [
+      [
+        0,
+        "erased"
+      ],
+      [
+        1,
+        "erased"
+      ]
+    ],
+    "repulled_support": [
+      0,
+      1
+    ],
+    "update": [
+      0,
+      0
+    ]
+  },
+  "duplicate_pair_witness": {
+    "comparison": {
+      "codomain_sizes": [
+        1
+      ],
+      "domain_sizes": [
+        2
+      ],
+      "injective": false,
+      "surjective": true
+    },
+    "f": [
+      0
+    ],
+    "g": [
+      0
+    ],
+    "p": [
+      0,
+      0
+    ],
+    "q": [
+      0,
+      0
+    ]
+  },
+  "enumeration_bounds": {
+    "W_sizes": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "X_Y_Z_sizes": [
+      0,
+      1,
+      2
+    ],
+    "family_fibre_sizes": [
+      0,
+      1,
+      2
+    ]
+  },
+  "finite_family_checks": 4796,
+  "immutable_history_repair": {
+    "actual_available_receipt_assumed": true,
+    "map": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "mathematically_injective": true
+  },
+  "incomplete_commuting_squares": 392,
+  "kernel_verified": false,
+  "mathematical_proof_source": "A01.md sections 4 and 5",
+  "missing_pair_witness": {
+    "comparison_missing_pair": [
+      1,
+      0
+    ],
+    "f": [
+      0,
+      0
+    ],
+    "g": [
+      0
+    ],
+    "left": [
+      0
+    ],
+    "p": [
+      0
+    ],
+    "q": [
+      0
+    ],
+    "right": [],
+    "support": [
+      1
+    ]
+  },
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "physical_source_authenticated": false,
+  "predicate_checks": 2191,
+  "probe_sha256": "219633477d7a84e5929a4e8d58e009d4dffdaca479e408671a00e0ba8fde6ca7",
+  "python_version": "3.12.3",
+  "saturation_cases_checked": 29,
+  "weak_pullbacks_not_pullbacks": 130
+}
