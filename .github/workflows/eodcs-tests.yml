@@ -76,5 +76,7 @@ jobs:
         run: |
           python scripts/voyager_observer_probe.py > "$RUNNER_TEMP/voyager-observer.json"
           diff -u research/2026-10-13/VOYAGER_OBSERVATIONAL_COMPLETION_RECEIPT.json "$RUNNER_TEMP/voyager-observer.json"
-      - name: Execute finite adaptive Voyager source-pair no-go receipt
-        run: python scripts/voyager_adaptive_probe.py
+      - name: Reproduce byte-identical frozen adaptive Voyager no-go source receipt
+        run: |
+          python scripts/voyager_adaptive_probe.py > "$RUNNER_TEMP/voyager-adaptive.json"
+          diff -u research/2026-10-13/VOYAGER_ADAPTIVE_SOURCE_RECEIPT.json "$RUNNER_TEMP/voyager-adaptive.json"
