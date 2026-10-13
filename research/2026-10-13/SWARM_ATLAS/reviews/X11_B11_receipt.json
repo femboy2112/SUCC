@@ -1,0 +1,75 @@
+{
+  "author_commit": "30d630504ee429bfcba8be83f921eb57a2b8eb36",
+  "author_probe_or_receipt_read": false,
+  "command": "PYTHONDONTWRITEBYTECODE=1 timeout 30s python research/2026-10-13/SWARM_ATLAS/reviews/X11_B11_probe.py",
+  "countermodels": {
+    "branch_is_TP_channel": false,
+    "dimension_four_death_step": 3,
+    "dominance_branch_traces": [
+      "1/2",
+      "1"
+    ],
+    "negative_name_projector_labels": [
+      {
+        "excluded": null,
+        "survivors": [
+          0,
+          1
+        ]
+      },
+      {
+        "excluded": 0,
+        "survivors": [
+          1
+        ]
+      },
+      {
+        "excluded": 1,
+        "survivors": [
+          0
+        ]
+      }
+    ],
+    "reset_original_bit_identified": false,
+    "reset_safe_choices": [
+      0,
+      1
+    ],
+    "restricted_identity_toolkit_has_safe_incomparable_choices": true,
+    "two_outcome_stationary_delays": [
+      0,
+      3,
+      19
+    ],
+    "zero_probability_limit_prefix12": "282429536481/59604644775390625"
+  },
+  "cycle_kernel": {
+    "maps": 209,
+    "nilpotent_effect_ranks": [
+      2,
+      1,
+      0
+    ],
+    "plateau_checked_through_cycles": 6
+  },
+  "exit_code": 0,
+  "finite_controls_prove_universal_theorems": false,
+  "generator": {
+    "author_deadline_matches_later_prefixes": true,
+    "complete_tables": 205,
+    "reviewer_promised_one_cycle_deadline_matches": true,
+    "surviving_tables": 140
+  },
+  "hashes": {
+    "author_dossier_sha256": "3b95abc76ffef92fe69fd9b5d2de378af2f9a65e73fb1cd4045ed580ca72a2e6",
+    "review_probe_sha256": "351c398033a3fc06353f05360654fe6e2cbf41a12eb1e7f0c1b528dfe75b1dfe",
+    "root_candidate_sha256": "e5b9e5ef5e2d2e93692ccf3a246e5edca77b96bb8633e03301c38f7090c97a54"
+  },
+  "limits": {
+    "address_space_bytes": 268435456,
+    "cpu_seconds": 20
+  },
+  "provider_source_lineage_independent": false,
+  "review_parent": "f57d09eb456e49a1ae10f8a614bc2b8cc15993d0",
+  "status": "INDEPENDENT_EXACT_CONTROLS_PASS"
+}
