@@ -1,0 +1,68 @@
+{
+  "base_commit": "1cb30a3d92420f1197fc1615a68fb4309c0e036d",
+  "boundaries": {
+    "finite_runtime_bound_in_lean": false,
+    "independent_scholarly_novelty_established": false,
+    "physical_source_authenticated": false,
+    "python_program_formally_refined_to_lean": false,
+    "rh_or_weil_positivity_proved": false,
+    "stochastic_kernel_in_lean": false,
+    "unrestricted_grammar_invention": false
+  },
+  "design_precommitted_at": "93d67f25b1552f0aa78aff0589ca1a59baa32f7a",
+  "git_blob_sha": {
+    "formal/obstruction_synthesis/DiscoveredInstance.lean": "d233b7f5309fb884c91c1be6c31a74092131e589",
+    "formal/obstruction_synthesis/RepairKernel.lean": "6b42389f6e0cc1cdacb0cdfeac0bb351cc83b6e1",
+    "formal/obstruction_synthesis/lean-toolchain": "7aca1d8a939cc24c413eddd793671cdce7070b74",
+    "observational_succ/evolving_bridge_search.py": "18600bc529b6d2911a54d3b194238141d9b007ac",
+    "observational_succ/evolving_observer_categories.py": "9301bbd23f1bcce02cc89291a40cd73508a5c054",
+    "observational_succ/obstruction_discovery_lab.py": "8950686bccefd0ba270b5a28a4ed72dbd408c07e",
+    "observational_succ/source_aware_amalgamation.py": "5ef028a6ab3b8fcaae7285101a373fff91a5a29b",
+    "research/2026-10-13/DISCOVERY_PRECOMMIT.json": "8bc0b411e2730ad84a83ea0a2acd986a83345c9c",
+    "research/2026-10-13/EVOLUTIONARY_OBSTRUCTION_RECEIPT.json": "d8be49f9f594f869ff3955263c11fc3b63777115",
+    "scripts/evolutionary_obstruction_probe.py": "8c51b11e7346c275cc0492a578f38d9a0026d011",
+    "tests/test_evolving_amalgamation.py": "ef0b3894751381294f8699aabb2b822a1e9eb794",
+    "tests/test_evolving_bridge_discovery.py": "422089b0407964d7c72cecb0de1245273ea02d0b",
+    "tests/test_evolving_observer_categories.py": "649feb531f85c72487309f446a0720e07dad1c1c",
+    "tests/test_evolving_receipt.py": "34900f56d3bc3bd9d331cf95c2ddb8a2ce2a86dc"
+  },
+  "github": {
+    "dedicated_synthesis_workflow": 38349518393,
+    "false_theorem_control": "0=1 rejected as expected",
+    "full_both_versions": "success",
+    "full_repository_workflow": 38349518372,
+    "lean_artifact_id": 11790525900,
+    "lean_artifact_sha256": "97cbc14457f5b526169dddef8ef310343e047875f7670ff92ec38d203030759a",
+    "lean_compiler_commit": "6caaee842e94",
+    "lean_finite_instance_declarations": 9,
+    "lean_job": 115138464152,
+    "lean_universal_declarations": 15,
+    "lean_version": "4.19.0",
+    "new_python_suites_both_versions": "success",
+    "python_3_10_job": 115138464157,
+    "python_3_13_job": 115138464364,
+    "reported_standard_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "sorry_dependencies": []
+  },
+  "local": {
+    "combined_subset_tests_passed": 115,
+    "new_tests_passed": 59,
+    "parent_tests_passed": 56,
+    "python": "3.13.5",
+    "receipt_byte_replay_passed": true,
+    "source_scope": "pinned predecessor subset, not a complete repository clone"
+  },
+  "preserved_failure": {
+    "cause": "three finite existential statements lacked a Std Decidable instance",
+    "commit": "67be5d2e7823c64a5a58767bb38bb2f6a2682021",
+    "failed_job": 115137659454,
+    "repair": "explicit source witnesses; no statement or assumptions weakened",
+    "workflow": 38349259639
+  },
+  "schema": "succ-obstruction-synthesis-validation-v1",
+  "verified_code_commit": "d2a490f4ea8914e395819f3846de41b24beca06f"
+}
