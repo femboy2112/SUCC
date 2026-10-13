@@ -1,0 +1,316 @@
+{
+  "academic_novelty_established": false,
+  "cases": [
+    {
+      "center_size": 2,
+      "changed_readout_y_observer_group_size": 2,
+      "commutator_fixed_points": 0,
+      "core_trivial_witness": "L intersect B^-1 L B = {identity}",
+      "exact_pair_relation_checks": 36,
+      "hidden_noncommutation_y_report_witness": {
+        "A_then_B": [
+          1,
+          1,
+          0
+        ],
+        "B_then_A": [
+          1,
+          1,
+          1
+        ],
+        "start": [
+          0,
+          0,
+          0
+        ]
+      },
+      "matrix_and_permutation_product_checks": 64,
+      "modulus": 2,
+      "new_swap_breaks_old_quotient": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "new_swap_expanded_observer_states": 8,
+      "observer_states": 4,
+      "order_A_after_B": 4,
+      "orders_A_B_H": [
+        2,
+        2,
+        2
+      ],
+      "permutation_group_size": 8,
+      "source_fiber_size": 2,
+      "source_states": 8,
+      "stabilizer_size": 2
+    },
+    {
+      "center_size": 3,
+      "changed_readout_y_observer_group_size": 3,
+      "commutator_fixed_points": 0,
+      "core_trivial_witness": "L intersect B^-1 L B = {identity}",
+      "exact_pair_relation_checks": 378,
+      "hidden_noncommutation_y_report_witness": {
+        "A_then_B": [
+          1,
+          1,
+          0
+        ],
+        "B_then_A": [
+          1,
+          1,
+          1
+        ],
+        "start": [
+          0,
+          0,
+          0
+        ]
+      },
+      "matrix_and_permutation_product_checks": 729,
+      "modulus": 3,
+      "new_swap_breaks_old_quotient": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "new_swap_expanded_observer_states": 27,
+      "observer_states": 9,
+      "order_A_after_B": 3,
+      "orders_A_B_H": [
+        3,
+        3,
+        3
+      ],
+      "permutation_group_size": 27,
+      "source_fiber_size": 3,
+      "source_states": 27,
+      "stabilizer_size": 3
+    },
+    {
+      "center_size": 4,
+      "changed_readout_y_observer_group_size": 4,
+      "commutator_fixed_points": 0,
+      "core_trivial_witness": "L intersect B^-1 L B = {identity}",
+      "exact_pair_relation_checks": 2080,
+      "hidden_noncommutation_y_report_witness": {
+        "A_then_B": [
+          1,
+          1,
+          0
+        ],
+        "B_then_A": [
+          1,
+          1,
+          1
+        ],
+        "start": [
+          0,
+          0,
+          0
+        ]
+      },
+      "matrix_and_permutation_product_checks": 64,
+      "modulus": 4,
+      "new_swap_breaks_old_quotient": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "new_swap_expanded_observer_states": 64,
+      "observer_states": 16,
+      "order_A_after_B": 8,
+      "orders_A_B_H": [
+        4,
+        4,
+        4
+      ],
+      "permutation_group_size": 64,
+      "source_fiber_size": 4,
+      "source_states": 64,
+      "stabilizer_size": 4
+    },
+    {
+      "center_size": 5,
+      "changed_readout_y_observer_group_size": 5,
+      "commutator_fixed_points": 0,
+      "core_trivial_witness": "L intersect B^-1 L B = {identity}",
+      "exact_pair_relation_checks": 7875,
+      "hidden_noncommutation_y_report_witness": {
+        "A_then_B": [
+          1,
+          1,
+          0
+        ],
+        "B_then_A": [
+          1,
+          1,
+          1
+        ],
+        "start": [
+          0,
+          0,
+          0
+        ]
+      },
+      "matrix_and_permutation_product_checks": 125,
+      "modulus": 5,
+      "new_swap_breaks_old_quotient": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "new_swap_expanded_observer_states": 125,
+      "observer_states": 25,
+      "order_A_after_B": 5,
+      "orders_A_B_H": [
+        5,
+        5,
+        5
+      ],
+      "permutation_group_size": 125,
+      "source_fiber_size": 5,
+      "source_states": 125,
+      "stabilizer_size": 5
+    },
+    {
+      "center_size": 6,
+      "changed_readout_y_observer_group_size": 6,
+      "commutator_fixed_points": 0,
+      "core_trivial_witness": "L intersect B^-1 L B = {identity}",
+      "exact_pair_relation_checks": 23436,
+      "hidden_noncommutation_y_report_witness": {
+        "A_then_B": [
+          1,
+          1,
+          0
+        ],
+        "B_then_A": [
+          1,
+          1,
+          1
+        ],
+        "start": [
+          0,
+          0,
+          0
+        ]
+      },
+      "matrix_and_permutation_product_checks": 216,
+      "modulus": 6,
+      "new_swap_breaks_old_quotient": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "new_swap_expanded_observer_states": 216,
+      "observer_states": 36,
+      "order_A_after_B": 12,
+      "orders_A_B_H": [
+        6,
+        6,
+        6
+      ],
+      "permutation_group_size": 216,
+      "source_fiber_size": 6,
+      "source_states": 216,
+      "stabilizer_size": 6
+    },
+    {
+      "center_size": 7,
+      "changed_readout_y_observer_group_size": 7,
+      "commutator_fixed_points": 0,
+      "core_trivial_witness": "L intersect B^-1 L B = {identity}",
+      "exact_pair_relation_checks": 58996,
+      "hidden_noncommutation_y_report_witness": {
+        "A_then_B": [
+          1,
+          1,
+          0
+        ],
+        "B_then_A": [
+          1,
+          1,
+          1
+        ],
+        "start": [
+          0,
+          0,
+          0
+        ]
+      },
+      "matrix_and_permutation_product_checks": 343,
+      "modulus": 7,
+      "new_swap_breaks_old_quotient": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "new_swap_expanded_observer_states": 343,
+      "observer_states": 49,
+      "order_A_after_B": 7,
+      "orders_A_B_H": [
+        7,
+        7,
+        7
+      ],
+      "permutation_group_size": 343,
+      "source_fiber_size": 7,
+      "source_states": 343,
+      "stabilizer_size": 7
+    }
+  ],
+  "holds_for_composite_moduli": true,
+  "implementation": "standard-library integer/permutation/matrix arithmetic; no SUCC helper imports",
+  "negative_control": {
+    "claim": "All finite Heisenberg elements have order p for every prime p",
+    "prime": 2,
+    "status": "REFUTED",
+    "witness": "A o B has order 4 although A,B,H have order 2"
+  },
+  "physical_source_authenticated": false,
+  "schema": "succ-swm-f41-exact-independent-v1",
+  "scope": "declared finite simulator; general proof in F41.md; no Lean compilation in this expedition"
+}
