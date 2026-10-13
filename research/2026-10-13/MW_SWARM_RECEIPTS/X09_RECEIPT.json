@@ -1,0 +1,115 @@
+{
+  "bounded_geometric_positive_control": [
+    {
+      "actual_limit": "2",
+      "interval": [
+        "-2",
+        "2"
+      ],
+      "prefix_length": 0,
+      "upper_endpoint_exact": true
+    },
+    {
+      "actual_limit": "2",
+      "interval": [
+        "0",
+        "2"
+      ],
+      "prefix_length": 1,
+      "upper_endpoint_exact": true
+    },
+    {
+      "actual_limit": "2",
+      "interval": [
+        "15/8",
+        "2"
+      ],
+      "prefix_length": 5,
+      "upper_endpoint_exact": true
+    },
+    {
+      "actual_limit": "2",
+      "interval": [
+        "524287/262144",
+        "2"
+      ],
+      "prefix_length": 20,
+      "upper_endpoint_exact": true
+    }
+  ],
+  "gamma_independent_product_control": {
+    "cutoff": 19,
+    "defect": "12/23",
+    "integer_periodic_multiplier": "1",
+    "quarter_periodic_multiplier": "3/2",
+    "ratio": "57/23",
+    "target": "3",
+    "z": 3
+  },
+  "interpolation_phantoms": [
+    {
+      "exact_fit": true,
+      "max_coefficient": "12",
+      "necessary_common_bound": "4",
+      "samples": 2
+    },
+    {
+      "exact_fit": true,
+      "max_coefficient": "144",
+      "necessary_common_bound": "12",
+      "samples": 3
+    },
+    {
+      "exact_fit": true,
+      "max_coefficient": "44736",
+      "necessary_common_bound": "40",
+      "samples": 5
+    },
+    {
+      "exact_fit": true,
+      "max_coefficient": "30124931584/35",
+      "necessary_common_bound": "112",
+      "samples": 8
+    },
+    {
+      "exact_fit": true,
+      "max_coefficient": "2133370080865804288/1155",
+      "necessary_common_bound": "264",
+      "samples": 12
+    }
+  ],
+  "mission": "X09",
+  "no_nontrivial_zero_inputs": true,
+  "same_source_pair_control": {
+    "individual_constant_sources": [
+      "1",
+      "-1"
+    ],
+    "joint_source_exists": false,
+    "maximum_difference_in_K1": "1",
+    "observed_difference": "2",
+    "reports": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1/2",
+        "-1"
+      ]
+    ]
+  },
+  "source_base": "7913e101d6e83b697f4e13535cc3b1330b80f0c2",
+  "truth_status": {
+    "closed_coefficient_bound": "DECLARED GLOBAL HYPOTHESIS, not inferred from finite probes",
+    "compact_holomorphic_actualization": "PROVED LOCAL (paper proof; classical method)",
+    "formal_kernel_coverage": "None for X09 analytic theorem",
+    "unrestricted_finite_interpolation_implies_realization": "REFUTED"
+  },
+  "validation": {
+    "command": "python -m unittest discover -s tests -p 'test_swarm_cross09.py' -v",
+    "exact_domain": "fractions.Fraction; float and bool scalars rejected",
+    "probes_do_not_execute_infinite_limits": true,
+    "tests_passed": 8
+  }
+}

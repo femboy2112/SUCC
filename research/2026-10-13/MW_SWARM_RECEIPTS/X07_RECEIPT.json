@@ -1,0 +1,100 @@
+{
+  "C18_C23_review": {
+    "bayes_rank_one_cases": 729,
+    "duplicate_lr_expectation": "1",
+    "false_wealth_crossing": "1/4",
+    "marginal_reuse_expectation": "7/3",
+    "null_cases": 145,
+    "positive_cases": 584,
+    "purported_ville_bound": "1/9"
+  },
+  "assignment": "X07",
+  "base_commit": "508f16881a4b145dffa13d0d3d336d1abcbda98c",
+  "counterexamples": {
+    "commuting_null_event": {
+      "mass": 0,
+      "posterior": null
+    },
+    "mixed_preparation_not_single_F48_preparation": {
+      "mixed_outcome_supports": [
+        [
+          0
+        ],
+        [
+          0
+        ]
+      ],
+      "pure_outcome_supports": [
+        [
+          [
+            0
+          ],
+          []
+        ],
+        [
+          [],
+          [
+            0
+          ]
+        ]
+      ]
+    },
+    "positive_finite_prefixes_need_not_give_positive_infinite_event": [
+      "1",
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/16",
+      "1/32",
+      "1/64",
+      "1/128",
+      "1/256",
+      "1/512",
+      "1/1024",
+      "1/2048",
+      "1/4096",
+      "1/8192",
+      "1/16384",
+      "1/32768",
+      "1/65536"
+    ],
+    "same_normalized_joint_law_different_likelihoods": {
+      "ab_mass": "1/4",
+      "ba_mass": "1/8"
+    },
+    "same_outcome_mass_and_current_law_different_originals": {
+      "current": [
+        "1",
+        "0"
+      ],
+      "event_mass": "1/2",
+      "originals_ab": [
+        "1",
+        "0"
+      ],
+      "originals_ba": [
+        "0",
+        "1"
+      ]
+    },
+    "weak_unobserved_commutation": true
+  },
+  "kernel_grid": {
+    "commuting_pairs": 300,
+    "kernels": 36,
+    "law_composition_checks": 9072,
+    "null_composition_checks": 1917,
+    "ordered_kernel_pairs": 1296,
+    "positive_normalization_checks": 7155,
+    "support_composition_checks": 1296
+  },
+  "method": "exact Fraction arithmetic; no cohort imports",
+  "probe_sha256": "045838ce68cf038e1cb8b81685e5f1ba88f68be0305097e1a4346c5a7d46a033",
+  "trace_dag": {
+    "events": 4,
+    "joint_law_and_posterior_checks": 96,
+    "linear_extensions": 6,
+    "note": "fixed named events; only declared a<c and b<d dependencies",
+    "outcome_assignments": 16
+  }
+}

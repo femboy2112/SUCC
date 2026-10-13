@@ -1,0 +1,27 @@
+{
+  "assignment": "X05",
+  "base_commit": "508f16881a4b145dffa13d0d3d336d1abcbda98c",
+  "status": "PROVED LOCAL (paper theorem); exact finite audit controls",
+  "garbling": {
+    "binary_pairs": 625,
+    "feasible": 273,
+    "budget_fails_closed": true
+  },
+  "policies": {
+    "deterministic_action_pairs": 256,
+    "policy_comparisons": 1548,
+    "complete_depth2_trees_per_model": 202
+  },
+  "transport": {
+    "positive_history_nodes_depth4": 26,
+    "stochastic_transport": true,
+    "availability_cost_backaction_mutations_rejected": 3
+  },
+  "minimal_counterexample": {
+    "original_states": 2,
+    "first_report_alphabet": 1,
+    "good_continuation_cost": 1,
+    "erased_continuation": "impossible at every horizon"
+  },
+  "audited_module_sha256": "5de26231d72e20dbed0a747a1dcec128b47d12125b2194d861bc943755e79466"
+}

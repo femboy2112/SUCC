@@ -1,0 +1,420 @@
+{
+  "LES_negative_control": {
+    "NS_global_regularity_claimed": false,
+    "amplitudes": [
+      [
+        "1",
+        "-3"
+      ],
+      [
+        "1",
+        "-2"
+      ]
+    ],
+    "constant_stress": [
+      [
+        "1",
+        "-5/2"
+      ],
+      [
+        "-5/2",
+        "13/2"
+      ]
+    ],
+    "cos_x_stress": [
+      [
+        "1",
+        "-5/2"
+      ],
+      [
+        "-5/2",
+        "6"
+      ]
+    ],
+    "filter_radius": 1,
+    "modes": [
+      [
+        3,
+        1
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "projected_velocity": [
+      "0",
+      "0"
+    ],
+    "sin_x_divergence": [
+      "-1",
+      "5/2"
+    ],
+    "sin_x_leray_divergence": [
+      "0",
+      "5/2"
+    ],
+    "source_is_smooth_divergence_free": true
+  },
+  "arithmetic": "exact integer/Fraction",
+  "causal_access": {
+    "after": false,
+    "before": false,
+    "event_transformed": [
+      "-3/2",
+      "5/2"
+    ],
+    "observer_transformed": [
+      "5/4",
+      "-3/4"
+    ]
+  },
+  "claims": {
+    "NS_global_regularity": "NOT CLAIMED",
+    "closure_defect_horizon_bound": "CLASSICAL / PROVED LOCAL",
+    "deterministic_factor_criterion": "CLASSICAL / PROVED LOCAL",
+    "finite_delay_bound": "CLASSICAL / PROVED LOCAL",
+    "generic_logistic_renormalization": "BLOCKED",
+    "quotient_Conley_invariance": "REFUTED",
+    "strong_lumpability_criterion": "CLASSICAL / PROVED LOCAL"
+  },
+  "delay_reconstruction": {
+    "closed": true,
+    "factor_certificate": {
+      "factor": {
+        "(0, 0)": [
+          0,
+          1
+        ],
+        "(0, 1)": [
+          1,
+          0
+        ],
+        "(1, 0)": [
+          0,
+          0
+        ]
+      },
+      "valid": true
+    },
+    "injective": true,
+    "length": 2,
+    "words": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ]
+  },
+  "factor_countermodel": {
+    "distinct_next_reports": [
+      0,
+      1
+    ],
+    "same_report": 0,
+    "valid": false,
+    "witness_states": [
+      0,
+      1
+    ]
+  },
+  "frontier": [
+    {
+      "amplification": 1,
+      "final": [
+        "27/64",
+        "7/16"
+      ],
+      "final_diameter": "1/64",
+      "initial": [
+        "27/64",
+        "7/16"
+      ],
+      "initial_diameter": "1/64"
+    },
+    {
+      "amplification": 2,
+      "final": [
+        "27/32",
+        "7/8"
+      ],
+      "final_diameter": "1/32",
+      "initial": [
+        "27/64",
+        "7/16"
+      ],
+      "initial_diameter": "1/64"
+    },
+    {
+      "amplification": 4,
+      "final": [
+        "1/4",
+        "5/16"
+      ],
+      "final_diameter": "1/16",
+      "initial": [
+        "27/64",
+        "7/16"
+      ],
+      "initial_diameter": "1/64"
+    },
+    {
+      "amplification": 8,
+      "final": [
+        "1/2",
+        "5/8"
+      ],
+      "final_diameter": "1/8",
+      "initial": [
+        "27/64",
+        "7/16"
+      ],
+      "initial_diameter": "1/64"
+    },
+    {
+      "amplification": 16,
+      "final": [
+        "3/4",
+        "1"
+      ],
+      "final_diameter": "1/4",
+      "initial": [
+        "27/64",
+        "7/16"
+      ],
+      "initial_diameter": "1/64"
+    },
+    {
+      "amplification": 32,
+      "final": [
+        "0",
+        "1/2"
+      ],
+      "final_diameter": "1/2",
+      "initial": [
+        "27/64",
+        "7/16"
+      ],
+      "initial_diameter": "1/64"
+    },
+    {
+      "amplification": 64,
+      "final": [
+        "0",
+        "1"
+      ],
+      "final_diameter": "1",
+      "initial": [
+        "27/64",
+        "7/16"
+      ],
+      "initial_diameter": "1/64"
+    },
+    {
+      "amplification": 64,
+      "final": [
+        "0",
+        "1"
+      ],
+      "final_diameter": "1",
+      "initial": [
+        "27/64",
+        "7/16"
+      ],
+      "initial_diameter": "1/64"
+    },
+    {
+      "amplification": 64,
+      "final": [
+        "0",
+        "1"
+      ],
+      "final_diameter": "1",
+      "initial": [
+        "27/64",
+        "7/16"
+      ],
+      "initial_diameter": "1/64"
+    }
+  ],
+  "hidden_noise_closure": {
+    "defects": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+    ],
+    "delta": "1/4",
+    "kernel": [
+      [
+        "1/2",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "1/2"
+      ]
+    ],
+    "projected_rows": [
+      [
+        "3/4",
+        "1/4"
+      ],
+      [
+        "3/4",
+        "1/4"
+      ],
+      [
+        "1/4",
+        "3/4"
+      ],
+      [
+        "1/4",
+        "3/4"
+      ]
+    ],
+    "strongly_lumpable": false,
+    "witness_states": [
+      0,
+      2
+    ]
+  },
+  "noise_horizons": [
+    {
+      "actual": [
+        "1",
+        "0"
+      ],
+      "bound": "0",
+      "candidate": [
+        "1",
+        "0"
+      ],
+      "delta": "1/4",
+      "tv": "0"
+    },
+    {
+      "actual": [
+        "3/4",
+        "1/4"
+      ],
+      "bound": "1/4",
+      "candidate": [
+        "1/2",
+        "1/2"
+      ],
+      "delta": "1/4",
+      "tv": "1/4"
+    },
+    {
+      "actual": [
+        "3/4",
+        "1/4"
+      ],
+      "bound": "1/2",
+      "candidate": [
+        "1/2",
+        "1/2"
+      ],
+      "delta": "1/4",
+      "tv": "1/4"
+    },
+    {
+      "actual": [
+        "3/4",
+        "1/4"
+      ],
+      "bound": "3/4",
+      "candidate": [
+        "1/2",
+        "1/2"
+      ],
+      "delta": "1/4",
+      "tv": "1/4"
+    },
+    {
+      "actual": [
+        "3/4",
+        "1/4"
+      ],
+      "bound": "1",
+      "candidate": [
+        "1/2",
+        "1/2"
+      ],
+      "delta": "1/4",
+      "tv": "1/4"
+    },
+    {
+      "actual": [
+        "3/4",
+        "1/4"
+      ],
+      "bound": "1",
+      "candidate": [
+        "1/2",
+        "1/2"
+      ],
+      "delta": "1/4",
+      "tv": "1/4"
+    },
+    {
+      "actual": [
+        "3/4",
+        "1/4"
+      ],
+      "bound": "1",
+      "candidate": [
+        "1/2",
+        "1/2"
+      ],
+      "delta": "1/4",
+      "tv": "1/4"
+    }
+  ],
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "physical_authentication": false,
+  "schema": "SWM-D/1",
+  "special_phase_factor": {
+    "defects": [
+      "0",
+      "0",
+      "0"
+    ],
+    "delta": "0",
+    "kernel": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "projected_rows": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "strongly_lumpable": true,
+    "witness_states": null
+  }
+}

@@ -6,7 +6,10 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-ATLAS = ROOT / 'research/2026-10-13/SWARM_ATLAS'
+# Source-qualified: many-worlds-swarm (#50) is a parallel assembly of the same
+# swarm; the atlas (#49) is canonical in SWARM_ATLAS. These probes reproduce the
+# #50 receipts, kept distinct here so they do not collide with the atlas receipts.
+ATLAS = ROOT / 'research/2026-10-13/MW_SWARM_RECEIPTS'
 PAIRS = (
     ('swarm_categories_probe.py', 'A_CATEGORIES_RECEIPT.json'),
     ('swarm_completion_probe.py', 'B_COMPLETION_RECEIPT.json'),
