@@ -1,0 +1,110 @@
+{
+  "arithmetic": "integer/Fraction; no float",
+  "base_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "branch": "research/swm-d31-2026-10-13",
+  "claim_limits": [
+    "finite exact model, not physical attestation",
+    "written universal proof, not independent kernel verification",
+    "no empirical cognition, quantum mechanism or RH result"
+  ],
+  "command": "python research/2026-10-13/SWARM_ATLAS/D31_covariant_causal_probe.py",
+  "command_receipts": [
+    {
+      "baseline_output": "",
+      "command": "git status --short",
+      "exit_code": 0,
+      "state": "clean before D31 files"
+    },
+    {
+      "baseline_output": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+      "command": "git rev-parse HEAD",
+      "exit_code": 0
+    },
+    {
+      "command": "git log --diff-filter=A --format='%H %s' -- observational_succ/covariant_observer_frames.py observational_succ/galilean_lorentz_succ.py observational_succ/relativistic_shadow_tower.py research/2026-10-12/COVARIANT_PERCEPTUAL_MOMENTUM_AND_CAUSAL_DESCENT.md",
+      "exit_code": 0,
+      "origin_shas": [
+        "82f518cda67c9f80054a0b973a5c12bbd248a309",
+        "f44bb04b1d8f542b4ebb402ee93d3d534a5d66fe"
+      ]
+    }
+  ],
+  "exit_code": 0,
+  "native_origin_commits": {
+    "authoritative_correction": "c3839c78df53aaf0cc41cf5cbbb61841f62f15df",
+    "covariant_frames": "82f518cda67c9f80054a0b973a5c12bbd248a309",
+    "galilean_shadow": "f44bb04b1d8f542b4ebb402ee93d3d534a5d66fe"
+  },
+  "negative": {
+    "E_only_new_reports": [
+      "0",
+      "-3/4"
+    ],
+    "E_only_old_reports": [
+      0,
+      0
+    ],
+    "different_worldline_probe_squared": -16,
+    "erased_preparation_sources": [
+      0,
+      1
+    ],
+    "fixed_coordinate_cutoff_changes_sampling": true,
+    "galilean_null_squared": "-39/25",
+    "metric_preserving_time_reversal_is_future_oriented": false,
+    "noisy_transcripts_identify_original_bit_exactly": false,
+    "outside_cone_squared": -3,
+    "same_post_report": 0,
+    "simultaneity_boost_times": [
+      "3/4",
+      "-3/4"
+    ],
+    "stale_report_mutation_detected": true,
+    "unwired_diamond_event_received": false
+  },
+  "next_small_lemma": "prefix-dependent kernel covariance with stopping rules",
+  "origin_verification": {
+    "bytes": 31980,
+    "commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "git_blob_sha1": "04408ed96bd369b5063868eb5ad5664824d18043",
+    "local_object_command": "git cat-file -t ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "local_object_exit_code": 128,
+    "local_origin_object_available": false,
+    "matches_archive": true,
+    "path": "research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md",
+    "remote_http_status": 200,
+    "url": "https://raw.githubusercontent.com/femboy2112/FuckingRH/ba075348b7bcc66d938b3e0ca96c26e95bba340a/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md",
+    "verification_exit_code": 0,
+    "verification_method": "urllib.request remote bytes; Git blob SHA-1; exact archive byte equality"
+  },
+  "positive": {
+    "actual_ancestry": [
+      "prepare",
+      "probe",
+      "sample"
+    ],
+    "budget_accepted_indices": [
+      0
+    ],
+    "frames": 7,
+    "full_field_inverse_cases": 25,
+    "grid_vectors": 343,
+    "interval_cone_diamond_checks": 7203,
+    "noncommuting_frames": true,
+    "prefix_kernel_paths": 16
+  },
+  "schema": "D31-exact-finite-model-v1",
+  "sha256": {
+    "observational_succ/covariant_observer_frames.py": "19f8cf420725443f755bcd78ba7c8fd58f1be2841b5237995001c7a9a0c7b138",
+    "observational_succ/covariant_proof_descent.py": "4245d8c0f64e3968221c15ab62b91c009230de23569d21b63e3f5c0943336ed8",
+    "observational_succ/galilean_lorentz_succ.py": "fab10d9ea52485d93043db8f3f4a6c7aeff97db7eaca7e50532d2bc968bf888a",
+    "observational_succ/maxwell_transverse_shadow.py": "6e52c3091669c54a041bc386c619aa91ff948d71d9c1b5897a0f900c05d5eced",
+    "observational_succ/relativistic_shadow_tower.py": "ce3a9f7d1b0456d74c9fb6a727e0ee37412247454e17869e0e735fe87fdb8521",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+    "research/2026-10-13/SWARM_ATLAS/D31_COVARIANT_CAUSAL_OBSERVERS.md": "9b026365102cab9fd57e4b8b5da17cc84111d87b0edbd0f6faadb33ecf362824",
+    "research/2026-10-13/SWARM_ATLAS/D31_covariant_causal_probe.py": "74c57384c8e1117b55ca91f4edcee305836b06082efd43e7194fc6c31b9438f4"
+  },
+  "validation_scope": "D31 probe only; no full suite/compiler/push",
+  "verdict": "conditional covariance survives; covariance-implies-access refuted"
+}
