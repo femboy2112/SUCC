@@ -34,8 +34,52 @@ jobs:
         run: python -m pip install -e ".[test]"
       - name: Verify source Git blob provenance
         run: python scripts/verify_provenance.py
+      - name: Check carrier-relative ontology, proof policy and E meta tower receipts
+        run: |
+          python scripts/carrier_relative_frontier_probe.py > "$RUNNER_TEMP/carrier-relative.json"
+          python scripts/checkpoint_meta_tower_probe.py > "$RUNNER_TEMP/checkpoint-meta.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          a=json.loads((Path(os.environ["RUNNER_TEMP"])/"carrier-relative.json").read_text())
+          b=json.loads((Path(os.environ["RUNNER_TEMP"])/"checkpoint-meta.json").read_text())
+          assert a["ontology_pair_same_history_all_policies"] is True
+          assert a["original_parity_uniformly_decidable"] is False
+          assert a["hankel"]["verified_min_linear_state_dimension"] == 2
+          assert a["finite_horizon_internalization"]["all_observed_joint_probabilities_equal"] is True
+          assert b["destructive_full_order_enumeration"] == "MODEL_CERTIFIED_NO_FINITE_POLICY"
+          assert b["adaptive_succeeds_where_fixed_length_two_fails"] is True
+          assert b["conditional_worst_case_depth"] == 2
+          assert b["rule_growth_from_old_evidence"] == [False,True]
+          assert b["rule_growth_requires_new_empirical_events"] is False
+          assert b["checkpoint_e_knowledge"] == [{"index":1,"proved":False},{"index":2,"proved":True}]
+          assert b["source_authentication_claimed"] is False and b["physical_infinity_completed"] is False
+          assert a["RH_or_archimedean_identification_claimed"] is False and b["RH_claimed"] is False
+          PY
       - name: Run all mathematical, logic, quantum, source and hostile tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Reconstruct the historical Galilean-to-Lorentz SUCC repair
+        run: |
+          python scripts/historical_galilean_lorentz_probe.py > "$RUNNER_TEMP/historical-galileo-lorentz.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          d=json.loads((Path(os.environ["RUNNER_TEMP"])/"historical-galileo-lorentz.json").read_text())
+          r=d["results"]
+          assert r["mechanical_old_field_positive"]["free_particle_law_preserved"] is True
+          assert r["galilean_obstruction"]["galilean_quadratic_wave_failure"]=="-42/25"
+          assert r["galilean_obstruction"]["galilean_operator_defect"]==[["0","-3/5"],["-3/5","9/25"]]
+          assert r["galilean_obstruction"]["lorentz_operator_defect"]==[["0","0"],["0","0"]]
+          assert r["galilean_obstruction"]["two_light_rays_clock_sufficient"] is True
+          assert r["distributed_metric_shadows"]["insufficient"]["status"]=="UNRESOLVED"
+          assert r["distributed_metric_shadows"]["constructed"]["status"]=="GLOBAL_GEOMETRY_CONSTRUCTED"
+          assert r["distributed_metric_shadows"]["constructed"]["metric"]==[["1","0"],["0","-1"]]
+          assert r["transverse_maxwell_subsystem"]["maxwell_sector_covariance"] is True
+          assert r["transverse_maxwell_subsystem"]["galilean_principal_trace"]=="-6/5"
+          assert r["moving_medium_counter_repair"]["same_form_vacuum_operator"] is False
+          assert d["empirical_source_authentication"] is False
+          assert d["RH_or_Weil_positivity_proved"] is False
+          PY
       - name: Exact source-relative coverage and correlated-update checks
         run: |
           python scripts/coverage_lower_bounds_probe.py > "$RUNNER_TEMP/coverage-lower-bounds.json"
@@ -677,6 +721,27 @@ jobs:
           assert r["fully_independent_source_authentication"] is False
           PY
 
+      - name: Verify Lorentz covariance, causal receipt ancestry and proof descent
+        run: |
+          python scripts/covariant_perceptual_momentum_probe.py > "$RUNNER_TEMP/covariant-observer.json"
+          diff -u research/2026-10-12/COVARIANT_PERCEPTUAL_MOMENTUM_RECEIPT.json "$RUNNER_TEMP/covariant-observer.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          r=json.loads((Path(os.environ["RUNNER_TEMP"])/"covariant-observer.json").read_text())
+          assert r["lorentz"]["mismatch_only_spacelike"] is True
+          assert r["wigner_rotation"][1][1]=="40/41"
+          assert r["wigner_rotation"][2][1]=="9/41"
+          assert r["asynchronous_tower"]["early_status"]=="UNRESOLVED"
+          assert r["asynchronous_tower"]["late_status"]=="PROVED"
+          assert r["proof_transport"]["zero_claim_invariant"] is True
+          assert r["proof_transport"]["parity_claim_invariant"] is False
+          assert r["proof_transport"]["commuting_but_incomplete_square_rejected"] is True
+          assert r["destructive_observation_square_commutes"] is True
+          assert r["destructive_original_claim_decodable"] is False
+          assert r["physical_cognitive_lorentz_hypothesis_proved"] is False
+          assert r["source_authentication"] is False
+          PY
       - name: General SUCC CLI
         run: python -m observational_succ demo --output "$RUNNER_TEMP/observer-demo.json"
       - name: Gödel, Turing and ordinal proof evidence
@@ -741,6 +806,152 @@ jobs:
           assert actual["RH_claimed"] is False
           assert actual["generic_r_bifurcation_model_covered"] is False
           PY
+      - name: Verify diagonal Q / adelic zeta source and independent observer proof
+        run: |
+          python scripts/diagonal_adelic_zeta_probe.py > "$RUNNER_TEMP/diagonal-adelic-zeta.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          d=json.loads((Path(os.environ["RUNNER_TEMP"])/"diagonal-adelic-zeta.json").read_text())
+          assert d["additive_reciprocity_one_sixth"]["total_integer"]==1
+          assert d["multiplicative_reciprocity_one_sixth"]["global_product"]=="1"
+          assert d["succ_fucc_square"]["local_square_verified"] is True
+          assert d["exact_finite_fourier"]["exact_inverse"] is True
+          assert d["bounded_height_injection"]["injective"] is True
+          assert d["dual_observer_proof"]["status"]=="PROVED"
+          assert d["unbounded_escape"]["converges_in_finite_product"] is True
+          assert d["unbounded_escape"]["converges_to_zero_in_full_adeles"] is False
+          assert d["unbounded_escape"]["outside_prime_norm_product"]==str(int(d["unbounded_escape"]["diagonal_rational"].split("/")[1]))
+          assert d["s2_arch_completed_exact_interval"]["continuation_claimed"] is False
+          assert d["offcritical_zero_mutated_selfdual_arch"]["discriminant"] == "21/25"
+          assert d["offcritical_zero_mutated_selfdual_arch"]["zeros_inside_open_critical_strip"] is True
+          assert d["offcritical_zero_mutated_selfdual_arch"]["zeros_off_critical_line"] is True
+          assert d["offcritical_zero_mutated_selfdual_arch"]["actual_riemann_zeta_changed"] is False
+          assert d["nonunique_arch_selfdual_mutation"]["mellin_relative_to_standard"] == "3/2"
+          assert d["nonunique_arch_selfdual_mutation"]["pole_zero_normalization_C0"] == "1"
+          assert d["nonunique_arch_selfdual_mutation"]["pole_one_normalization_C1"] == "1"
+          assert d["gamma_forced_by_finite_prime_data"] is False
+          assert d["physical_entanglement_claimed"] is False
+          assert d["analytic_functional_equation_proved_in_code"] is False
+          assert d["rh_proved"] is False
+          PY
+      - name: Source-aware dynamic Fourier and virtual-zeta zeros
+        run: |
+          python scripts/dynamic_fourier_virtual_zeros_probe.py > "$RUNNER_TEMP/dynamic-fourier-virtual-zeros.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          r=json.loads((Path(os.environ["RUNNER_TEMP"])/"dynamic-fourier-virtual-zeros.json").read_text())
+          assert r["dft_refinement_square"] is True
+          assert r["alias_same_coarse_report"] is True
+          assert r["alias_different_full_source"] is True
+          assert r["alias_hidden_energy"]=="2"
+          assert r["finite_tower_step_debts"]==["1/2","1/4"]
+          assert r["finite_tower_total_debt"]=="3/4"
+          assert r["coarse_observer_knows_debt_from_own_report"] is False
+          assert r["counterfactual_completion"]["Mellin_C2"]=="413/188"
+          assert r["counterfactual_completion"]["zero_classification"]=="EXTRA_OFFLINE_ZEROS_INSIDE_OPEN_CRITICAL_STRIP"
+          assert r["virtual_zeros_initially_possible"] is True
+          assert r["virtual_zeros_after_canonical_probe"] is False
+          assert r["virtual_zeros_after_noncanonical_probe"] is True
+          assert r["source_update_descent_succ_shift"]["coarse_dynamics_exists"] is True
+          assert r["source_update_descent_shear_counterexample"]["coarse_dynamics_exists"] is False
+          assert r["source_update_descent_shear_counterexample"]["obstruction_revealed_report"]==["1","0"]
+          assert r["full_adelic_fourier_or_RH_proved"] is False
+          PY
+      - name: Verify empirical Shadow-SUCC and analytic stable-divisor certificates
+        run: |
+          python scripts/shadow_source_inference_probe.py > "$RUNNER_TEMP/shadow-source-inference.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          r=json.loads((Path(os.environ["RUNNER_TEMP"])/"shadow-source-inference.json").read_text())
+          saved=json.loads(Path("research/2026-10-12/SHADOW_SOURCE_INFERENCE_RECEIPT.json").read_text())
+          assert r==saved
+          assert r["construct_global_from_compatible_analytic_shadows"]["status"]=="GLOBAL_SOURCE_CONSTRUCTED"
+          assert r["construct_global_from_compatible_analytic_shadows"]["global_polynomial"]==["1","0","1"]
+          assert r["construct_global_from_compatible_analytic_shadows"]["global_factor_was_given_as_input"] is False
+          assert r["finite_shadow_fucc"]["proved_after_cross_tower"]["status"]=="PROVED"
+          assert r["finite_shadow_fucc"]["unresolved_countermodel"]["status"]=="UNRESOLVED"
+          assert r["canonical_mixture"]["variance_gap"]=="0"
+          assert r["finite_hermite_impostor"]["Mellin_C2_of_EXPLICIT_noncanonical_example"]=="1"
+          assert r["finite_hermite_impostor"]["normalization_and_fourier_claims"]["perturbation_nonzero"] is True
+          assert r["common_zero_divisor"]["global_decoder_instability"]["exact_auxiliary_zero_sets_disjoint"] is True
+          assert r["common_zero_divisor"]["global_decoder_instability"]["global_uniformly_bounded_bezout_decoder_exists"] is False
+          assert r["finite_prime_family_instability"]["prime_scales"]==[2,3,5,13]
+          assert r["finite_prime_family_instability"]["prime_logarithms_rationally_independent"] is True
+          assert r["finite_prime_family_instability"]["infimum_joint_absolute_multiplier_amplitude"]==0
+          assert r["finite_prime_family_instability"]["height_uniform_bounded_decoder_exists"] is False
+          assert r["RH_or_Weil_positivity_proved"] is False
+          assert r["canonical_real_gamma_from_finite_primes_alone"] is False
+          PY
+      - name: Exact field-relative closure and obstruction-to-repair certificates
+        run: |
+          python scripts/field_relative_obstruction_probe.py > "$RUNNER_TEMP/field-relative-obstruction.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          measured=json.loads((Path(os.environ["RUNNER_TEMP"])/"field-relative-obstruction.json").read_text())
+          pinned=json.loads(Path("research/2026-10-12/FIELD_RELATIVE_OBSTRUCTION_RECEIPT.json").read_text())
+          assert measured == pinned
+          assert measured["physical_source_authenticated"] is False
+          assert measured["omega_inferred_from_finite_scan"] is False
+          assert measured["rh_or_weil_sign_claimed"] is False
+          assert measured["two_bit"]["a_b_factors_xor"] is True
+          assert measured["local_realizability"]["minimal_unsat_core"] == 3
+          assert measured["source_holonomy"]["translation"] == [3]
+          assert measured["repair"]["minimum_probe_count"] == 2
+          assert measured["analytic_moonshot_falsifier"]["offcritical_zero_real"] == "1/4"
+          assert measured["analytic_moonshot_falsifier"]["offcritical_zero_imag"] == "1/10"
+          assert measured["analytic_moonshot_falsifier"]["actual_riemann_xi_modified"] is False
+          PY
+      - name: Verify source-faithful chaotic observer quotient and dual-E horizon
+        run: |
+          python -m unittest discover -s tests -p 'test_chaos_source_quotient.py' -v
+          python scripts/chaos_source_quotient_probe.py > "$RUNNER_TEMP/chaos-source-quotient.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])
+          actual=json.loads((root/'chaos-source-quotient.json').read_text())
+          expected=json.loads(Path('research/2026-10-12/CHAOS_SOURCE_QUOTIENT_RECEIPT.json').read_text())
+          assert actual==expected, 'Source-faithful chaos observer receipt drift'
+          assert actual['source_admissibility']['r3_actual_admissible_predecessors']==['1/8']
+          assert actual['source_admissibility']['relative_geometric_gap_lengths_not_dynamic_probabilities']['39/10']=='39/400'
+          assert actual['r4_model']['dual_E_overlapping_source_factors_by_lag']['5']['maximal_common_deterministic_component_count']==1
+          assert actual['r4_model']['after_5_rank_one_exact'] is True
+          assert actual['source_aware_dual_E']['true_posterior_mean_source']=='7/12'
+          assert actual['time_indexed_source_update']['different_step_reverse_kernels_required'] is True
+          assert actual['physical_source_authenticated'] is False
+          assert actual['RH_claimed'] is False
+          PY
+      - name: Verify exact Misiurewicz chaotic carrier and source-law-robust E phase
+        run: |
+          python -m unittest discover -s tests -p 'test_misiurewicz_phase_quotient.py' -v
+          python scripts/misiurewicz_phase_quotient_probe.py > "$RUNNER_TEMP/misiurewicz-phase.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])
+          actual=json.loads((root/'misiurewicz-phase.json').read_text())
+          expected=json.loads(Path('research/2026-10-12/MISIUREWICZ_PHASE_RECEIPT.json').read_text())
+          assert actual==expected, 'Misiurewicz exact evidence drift'
+          assert actual['parameter']['actual_critical_orbit_equalities'] is True
+          assert actual['certified_markov']['adjacency']==[[0,0,1],[0,0,1],[1,1,0]]
+          assert actual['certified_markov']['exact_topological_entropy_bits']=='1/2'
+          assert actual['chosen_symbolic_parry_law']['micro_entropy_bits_per_step']=='1/2'
+          assert actual['chosen_symbolic_parry_law']['phase_entropy_bits_per_step']=='0'
+          assert actual['symbolic_source_prior_ablation']['1/3']['stationary_phase_probabilities']==['1/2','1/2']
+          assert actual['symbolic_source_prior_ablation']['0']['microscopic_entropy_strictly_positive'] is False
+          assert actual['dual_E_parity_transport']['1']['raw_covariance']=='-1/4'
+          assert actual['dual_E_parity_transport']['51']['transported_covariance']=='1/4'
+          assert actual['moving_history_debt']['start_A_14_step_paths']==128
+          assert actual['real_carrier']['original_two_over_five_and_three_over_five_collapse'] is True
+          assert actual['hostile_controls']['fixed_point_prevents_everywhere_flipping'] is True
+          assert actual['hostile_controls']['metric_entropy_measured_from_physical_source'] is False
+          assert actual['hostile_controls']['physical_source_authenticated'] is False
+          assert actual['hostile_controls']['RH_claimed'] is False
+          PY
       - name: Persist verified finite evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -751,8 +962,16 @@ jobs:
             ${{ runner.temp }}/foundations.json
             ${{ runner.temp }}/ordinal.json
             ${{ runner.temp }}/prime-source.json
+            ${{ runner.temp }}/field-relative-obstruction.json
+            ${{ runner.temp }}/carrier-relative.json
+            ${{ runner.temp }}/checkpoint-meta.json
             ${{ runner.temp }}/shared-carrier-boundary.json
+            ${{ runner.temp }}/dynamic-fourier-virtual-zeros.json
+            ${{ runner.temp }}/shadow-source-inference.json
+            ${{ runner.temp }}/diagonal-adelic-zeta.json
             ${{ runner.temp }}/dual-boundary-observers.json
+            ${{ runner.temp }}/chaos-source-quotient.json
+            ${{ runner.temp }}/misiurewicz-phase.json
             ${{ runner.temp }}/logistic-observer-tree.json
             ${{ runner.temp }}/semantic-data-processing.json
             ${{ runner.temp }}/observer-trap.json

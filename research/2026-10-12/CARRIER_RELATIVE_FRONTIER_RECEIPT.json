@@ -1,0 +1,62 @@
+{
+  "RH_or_archimedean_identification_claimed": false,
+  "carrier_ontology_certain": false,
+  "delayed_impulse_minimal_linear_dimension_10": 10,
+  "destructive_parity_policy": "NO_UNIFORM_FINITE_POLICY",
+  "finite_horizon_internalization": {
+    "all_observed_joint_probabilities_equal": true,
+    "horizon": 3,
+    "number_of_legal_adaptive_histories": 8,
+    "simulation_state_count": 85
+  },
+  "finite_versus_limit": {
+    "late_alias_examples": {
+      "1": 2,
+      "3": 4,
+      "31": 32,
+      "7": 8
+    },
+    "source_bound_7_sufficient_probe_depth": 7,
+    "zero_finitely_certified_without_source_bound": false
+  },
+  "hankel": {
+    "global_recurrence_authenticated": false,
+    "minor_determinant": "4",
+    "observations": [
+      2,
+      0,
+      2,
+      0,
+      2,
+      0,
+      2,
+      0,
+      2
+    ],
+    "recurrence": [
+      "1",
+      "0"
+    ],
+    "verified_min_linear_state_dimension": 2
+  },
+  "minimal_source_relative_2bit_parity_suite": {
+    "probes": [
+      "left",
+      "right"
+    ],
+    "size": 2
+  },
+  "ontology_additional_probe_breaks_alias": true,
+  "ontology_pair_same_history_all_policies": true,
+  "original_parity_pairwise_separable": true,
+  "original_parity_uniformly_decidable": false,
+  "physical_entanglement_claimed": false,
+  "source_behavior_state_lower_bound": 1,
+  "status": "exact finite mathematical certificates; no physical source authentication",
+  "stochastic_ontology_risk": {
+    "always_positive_at_seven": true,
+    "one_trial": "1/4",
+    "one_trial_tv": "1/2",
+    "seven_trials": "289/4096"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "RH_claimed": false,
+  "biased_prior_mutation": {
+    "biased_stationary_law_exact_after_three_steps": true,
+    "one_probability": "1/3",
+    "uniform_arcsine_window_law_preserved": false,
+    "word_zero_stationary_probability": "8/27"
+  },
+  "generic_r_less_than_4_full_chaotic_regime_theorem_claimed": false,
+  "generic_r_less_than_4_symbolic_Markov_prior_identified": false,
+  "no_individual_trajectory_predictions_from_stationary_law": true,
+  "physical_source_authenticated": false,
+  "r4_model": {
+    "after_5_rank_one_exact": true,
+    "after_8_remains_equilibrium": true,
+    "bits_per_window": 5,
+    "deterministic_window_factor_claimed": false,
+    "dual_E_overlapping_source_factors_by_lag": {
+      "0": {
+        "fair_source_conditional_entropy_bits": 0,
+        "fair_source_mutual_information_bits": 5,
+        "lag": 0,
+        "maximal_common_deterministic_component_count": 32,
+        "shared_symbol_count": 5,
+        "terminal_conditional_support_count": 1
+      },
+      "1": {
+        "fair_source_conditional_entropy_bits": 1,
+        "fair_source_mutual_information_bits": 4,
+        "lag": 1,
+        "maximal_common_deterministic_component_count": 16,
+        "shared_symbol_count": 4,
+        "terminal_conditional_support_count": 2
+      },
+      "12": {
+        "fair_source_conditional_entropy_bits": 5,
+        "fair_source_mutual_information_bits": 0,
+        "lag": 12,
+        "maximal_common_deterministic_component_count": 1,
+        "shared_symbol_count": 0,
+        "terminal_conditional_support_count": 32
+      },
+      "4": {
+        "fair_source_conditional_entropy_bits": 4,
+        "fair_source_mutual_information_bits": 1,
+        "lag": 4,
+        "maximal_common_deterministic_component_count": 2,
+        "shared_symbol_count": 1,
+        "terminal_conditional_support_count": 16
+      },
+      "5": {
+        "fair_source_conditional_entropy_bits": 5,
+        "fair_source_mutual_information_bits": 0,
+        "lag": 5,
+        "maximal_common_deterministic_component_count": 1,
+        "shared_symbol_count": 0,
+        "terminal_conditional_support_count": 32
+      }
+    },
+    "ensemble_size": 32,
+    "equilibrium_each_word": "1/32",
+    "exact_cylinder_children": [
+      {
+        "branch": 0,
+        "child_interval": [
+          "19/64",
+          "5/16"
+        ],
+        "mass_ratio": "1/2",
+        "next_window": [
+          1,
+          1,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "branch": 1,
+        "child_interval": [
+          "9/32",
+          "19/64"
+        ],
+        "mass_ratio": "1/2",
+        "next_window": [
+          1,
+          1,
+          0,
+          1,
+          1
+        ]
+      }
+    ],
+    "fixed_initial_12_step_path_count": 4096,
+    "fixed_initial_12_step_terminal_support": 32,
+    "full_path_minimum_bits": 12,
+    "initial_word_7_next_words": [
+      14,
+      15
+    ],
+    "steps_4_terminal_support": 16,
+    "steps_5_terminal_support": 32,
+    "terminal_only_minimum_bits": 5,
+    "underlying_source_is_still_deterministic_and_chaotic": true
+  },
+  "source_admissibility": {
+    "r3_actual_admissible_predecessors": [
+      "1/8"
+    ],
+    "r3_admissible_equal_mean": "1/8",
+    "r3_declared_postimage_upper": "3/4",
+    "r3_full_algebraic_mean": "1/2",
+    "r3_full_algebraic_predecessors": [
+      "1/8",
+      "7/8"
+    ],
+    "r3_terminal": "21/64",
+    "r4_admits_both_for_same_witness": true,
+    "r_39_10_one_sided_witness": "1/80",
+    "r_39_10_postcritical_threshold": "1521/16000",
+    "relative_geometric_gap_lengths_not_dynamic_probabilities": {
+      "16/5": "16/25",
+      "19/5": "19/100",
+      "3": "3/4",
+      "39/10": "39/400",
+      "4": "0",
+      "5/2": "15/16"
+    }
+  },
+  "source_aware_dual_E": {
+    "dual_history_and_terminal_join_recovers_originals": true,
+    "merged_terminal": "2/3",
+    "naive_equal_branch_mean": "1/2",
+    "one_terminal_report_does_not_identify_original": true,
+    "physical_signature_verified": false,
+    "source": "logistic-finite-source",
+    "stale_source_rejected": true,
+    "true_posterior_mean_source": "7/12",
+    "two_initial_states": [
+      "1/3",
+      "2/3"
+    ],
+    "unequal_prior_weights": [
+      "1/4",
+      "3/4"
+    ],
+    "version": 3
+  },
+  "source_logistic_r4_natural_prior_is_arcsine": true,
+  "status": "PROVED_LOCAL_SOURCE_FAITHFUL_CHAOS_QUOTIENT_EXACT",
+  "time_indexed_source_update": {
+    "different_step_reverse_kernels_required": true,
+    "one_shot_source_oracle_equals_composed_Bayes": true,
+    "r4_initial_states": [
+      "0",
+      "1/2"
+    ],
+    "t1_law": {
+      "0": "1/3",
+      "1": "2/3"
+    },
+    "t2_law": {
+      "0": "1"
+    },
+    "two_step_original_source_target_posterior": "2/3"
+  }
+}
