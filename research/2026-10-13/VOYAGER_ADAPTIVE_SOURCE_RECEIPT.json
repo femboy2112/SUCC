@@ -1,0 +1,43 @@
+{
+  "finite_nonanticipatory_observer": {
+    "actual_reported_coordinates": [
+      [
+        0,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        7,
+        0
+      ],
+      [
+        12,
+        0
+      ],
+      [
+        11,
+        0
+      ]
+    ],
+    "both_witnesses_replay_same_exact_transcript": true,
+    "finite_adaptive_queries": 5,
+    "one_stream_eventually_zero": true,
+    "other_stream_eventually_zero": false,
+    "physical_adaptive_measurement_executed": false,
+    "source_authentication_claimed": false,
+    "source_id": "declared-adaptive-voyager",
+    "terminal_decision_for_both_source_classes_not_possible": true
+  },
+  "source_class_boundary": {
+    "RH_or_Weil_positivity_proved": false,
+    "eventual_zero_and_non_eventual_zero_both_fit_actual_finite_history": true,
+    "every_terminal_binary_classifier_misclassifies_one_witness": true,
+    "logical_Godel_independence_claimed": false,
+    "physical_instruments_created": false,
+    "source_empirically_authenticated": false
+  },
+  "status": "EXACT_VOYAGER_ADAPTIVE_SOURCE_PAIR_NO_GO"
+}
