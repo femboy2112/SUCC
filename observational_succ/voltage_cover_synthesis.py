@@ -212,6 +212,76 @@ class PermutationGraph:
             raise GeneticsError("Connected action graph required")
         return tree
 
+    def fundamental_loop_permutations(self) -> tuple[tuple[int, ...], ...]:
+        """Transport root→u, then edge, then inverse root→v.
+
+        This is a *based* holonomy computation. Raw edge permutations
+        at different vertices cannot be multiplied without transport.
+        """
+        tree = self.tree_transports()
+        gens = []
+        for u, v, p in self.edges:
+            inv_v = tuple(tree[v].index(i) for i in range(self.fiber_size))
+            loop = compose_permutations(compose_permutations(tree[u], p), inv_v)
+            gens.append(loop)
+        return tuple(gens)
+
+    def holonomy_group(self) -> tuple[tuple[int, ...], ...]:
+        """Exact finite image subgroup of Sym(X), not just a parity flag."""
+        identity = tuple(range(self.fiber_size))
+        generators = self.fundamental_loop_permutations()
+        seen = {identity}
+        queue = [identity]
+        for h in queue:
+            for gen in generators:
+                new_h = compose_permutations(h, gen)
+                if new_h not in seen:
+                    seen.add(new_h)
+                    queue.append(new_h)
+        return tuple(sorted(seen))
+
+    def minimal_connected_trivializing_cover(self) -> tuple[
+            frozenset[tuple[str, tuple[int, ...]]],
+            tuple[tuple[tuple[str, tuple[int, ...]],
+                        tuple[str, tuple[int, ...]], tuple[int, ...]], ...]]:
+        """Kernel cover of the based holonomy map π1→Sym(X).
+
+        Its degree is |image holonomy|, NOT simply the fiber dimension;
+        it can be 6 for an S3 action on only three fiber elements.
+        Even if the base has a parallel section, full transport
+        trivialization can require a nontrivial connected cover.
+        """
+        tree = self.tree_transports()
+        group = self.holonomy_group()
+        generators = self.fundamental_loop_permutations()
+        vertices = frozenset((v, h) for v in self.vertices for h in group)
+        arcs = []
+        adj = {v: [] for v in vertices}
+        for (u, v, p), loop in zip(self.edges, generators):
+            for h in group:
+                after = compose_permutations(h, loop)
+                if after not in group:
+                    raise AssertionError("Holonomy subgroup not closed")
+                a, b = (u, h), (v, after)
+                arcs.append((a, b, p))
+                adj[a].append(b)
+                adj[b].append(a)
+                # q_x(v,h)=t_v(h(x)) is lawful for every root fiber x.
+                if any(p[tree[u][h[x]]] != tree[v][after[x]]
+                       for x in range(self.fiber_size)):
+                    raise AssertionError("Lifted source edge transport failed")
+        root = (self.vertices[0], tuple(range(self.fiber_size)))
+        seen = {root}
+        queue = [root]
+        for at in queue:
+            for next_at in adj[at]:
+                if next_at not in seen:
+                    seen.add(next_at)
+                    queue.append(next_at)
+        if seen != set(vertices):
+            raise AssertionError("Kernel cover must be connected")
+        return vertices, tuple(arcs)
+
     def root_fixed_points(self) -> tuple[int, ...]:
         """Root values that survive EVERY fundamental cycle equation."""
         t = self.tree_transports()
