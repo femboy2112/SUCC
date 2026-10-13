@@ -7,8 +7,7 @@ standalone core formalization and all sibling toolchain identities.
 ```sh
 lake update
 lake exe cache get Mathlib/Topology/Compactness/Compact.lean Mathlib/Topology/Constructions.lean Mathlib/Topology/Separation/Basic.lean
-lake env lean SwarmTopology.lean
-lake env lean SwarmPolicyCompactness.lean
+lake build SwarmTopology SwarmPolicyCompactness SwarmX01CompletionTransport
 ```
 
 `SwarmTopology.lean` proves the genuine finite-coordinate closure criterion,
@@ -20,3 +19,7 @@ controls, executed host command, and remaining physical/effective boundaries.
 
 `SwarmPolicyCompactness.lean` checks the open bounded-halting-set compactness
 core. Continuity of policy history cylinders remains a separate paper proof.
+
+`SwarmX01CompletionTransport.lean` checks continuous completion transport,
+source naturality and actualization reflection under explicit transport gates.
+Its finite-coordinate injectivity criterion remains a paper proof.

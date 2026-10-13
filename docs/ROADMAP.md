@@ -487,6 +487,10 @@ The current research branch extends E's finite repair grammar (static → termin
 
 ## VOYAGER: projective observation completion and original-source realization (V0–V10)
 
+This section records the VOYAGER intake frontier. Its topology formalization
+targets below were completed by B09 in the subsequent swarm; the updated
+frontier is recorded in the next section.
+
 **Constructed:** the canonical causal trace into all legal finite-word contexts, and a proof/implementation boundary between an inverse-limit profile and an ORIGINAL state realizing all its finite shadows. Under finite discrete reports the complete finite-stage source images project surjectively; their limit is the closure of the actual trace image in product topology (classical Stone/profinite mathematics, *general topological statement not yet Lean-formalized*). The original trace image is dense, not necessarily closed.
 
 **Lean-kernel results:** action-word trace shift/naturality and congruence; finite N-source realization OR a refuting family of at most N finite probes; an eventually-zero original source that matches **every arbitrarily chosen finite set** of all-one observations but no global all-one source; and the deterministic zero-gap finite-memory theorem injecting Fin(2^k) distinct times into source states whenever the observed power-two pulse continues through time 2^(k+1). The latter supplies exact source complexity debt without an infinite measurement. Independent simulator checks cover nested stage restriction, pulse period-falsifiers, positive one-state all-one counter-control, prefix machines and dyadic finite ultrametric. [Dossier](../research/2026-10-13/VOYAGER_OBSERVATIONAL_PROFINITE_COMPLETION.md), claims O610–O630 and [receipt](../research/2026-10-13/VOYAGER_OBSERVATIONAL_COMPLETION_RECEIPT.json).
@@ -494,3 +498,15 @@ The current research branch extends E's finite repair grammar (static → termin
 **Next falsifiers:** Formalize the full inverse-limit ↔ closure and compact-source realization criterion in Lean with an actual topology library; transfer the result to history-dependent stochastic/source-changing observational fibration with correlated reports and physically executable sensors; calibrate source-space regularity assumptions rather than identifying physical infinity with analytic closure. General mathematical priority, physical carrier completeness, completed Weil/Suzuki positivity and RH remain UNVERIFIED.
 
 **VOYAGER finite-policy no-go (V11–V12):** A stronger Lean4 theorem constructs finite-support and cofinite-support streams preserving **any finite list** of observed target coordinate values while disagreeing on eventual-zero membership. Hence both classes are dense in Cantor observation topology and no everywhere-terminating finite-coordinate adaptive policy can classify all binary streams without an extra source promise. A history-dependent finite policy simulation verifies the same transcript can arise under opposite tail commitments; original physical probes/counterfactuals remain unavailable. Frozen [adaptive exact receipt](../research/2026-10-13/VOYAGER_ADAPTIVE_SOURCE_RECEIPT.json), ledger O631–O637. Next: verify policy theorem for genuinely changing carriers and compact positive sources, and formalize the inverse-limit topology itself.
+
+## Many-worlds swarm frontier (2026-10-13)
+
+The [mathematical atlas](../research/2026-10-13/SWARM_ATLAS/SUCC_MATHEMATICAL_ATLAS.md)
+records the completed expedition investigations and scoped cross-domain results.
+The actual product-topology inverse-limit/closure theorem is now kernel checked.
+The next targets are history-controller compression, necessary-and-sufficient
+stochastic continuation criteria beyond X05’s sufficient square,
+finite-coordinate recovery formalization, and an explicit history
+site with sound gluing. General renormalization, completed Weil-form identification
+and a universal sheaf of physical causal histories remain open; none is promoted
+by the finite models. The atlas ranks the next falsifiable statements.

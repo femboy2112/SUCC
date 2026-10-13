@@ -632,5 +632,268 @@
     "investigations_completed": 48,
     "investigations_unfinished": 0,
     "note": "Completed investigation does not mean original conjecture proved. Each proof_state records the earned result; broad D26, E38 and F48 targets remain blocked/open."
+  },
+  "cross_assignments": [
+    {
+      "id": "X01",
+      "owner": "cross01_repair_completion",
+      "question": "Repair \u00d7 completion",
+      "source_commit": "89b12583cb45a1be695cab815d99a5af3e35f8f1",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X01.md",
+      "proof_state": "PROVED LOCAL; scoped LEAN-KERNEL PROVED"
+    },
+    {
+      "id": "X02",
+      "owner": "cross02_holonomy_laws",
+      "question": "Holonomy \u00d7 stochastic law sections",
+      "source_commit": "11c2718f4e7476673d68c64dad5c8292509d50d7",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X02.md",
+      "proof_state": "PROVED LOCAL / CLASSICAL INGREDIENTS"
+    },
+    {
+      "id": "X03",
+      "owner": "cross03_gluing_cegis",
+      "question": "Gluing \u00d7 typed CEGIS",
+      "source_commit": "34facb77b9140f8281e7eb0a96120c48f2dbfa45",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X03.md",
+      "proof_state": "PROVED LOCAL / CLASSICAL INGREDIENTS"
+    },
+    {
+      "id": "X04",
+      "owner": "cross04_memory_chaos",
+      "question": "Memory \u00d7 symbolic chaos",
+      "source_commit": "d8a4f50c715e8894d577bada58e9421af0419db3",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X04.md",
+      "proof_state": "PROVED LOCAL / CLASSICAL INGREDIENTS"
+    },
+    {
+      "id": "X05",
+      "owner": "cross05_blackwell_policy",
+      "question": "Blackwell \u00d7 adaptive policies",
+      "source_commit": "7dbc0058dd6c6374a681c9c978d72fc16659e80f",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X05.md",
+      "proof_state": "PROVED LOCAL / CLASSICAL INGREDIENTS"
+    },
+    {
+      "id": "X06",
+      "owner": "cross06_cost_memory",
+      "question": "Resource geometry \u00d7 reversible memory",
+      "source_commit": "c20fbfbf584c55740d1af95e066d3c8665afa02c",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X06.md",
+      "proof_state": "PROVED LOCAL / CLASSICAL INGREDIENTS"
+    },
+    {
+      "id": "X07",
+      "owner": "cross07_stochastic_concurrency",
+      "question": "Stochastic laws \u00d7 causal partial orders",
+      "source_commit": "7f26762571284cf63983fb1529ccfa8cb511e5b0",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X07.md",
+      "proof_state": "PROVED LOCAL / CLASSICAL INGREDIENTS"
+    },
+    {
+      "id": "X08",
+      "owner": "cross08_arithmetic_actions",
+      "question": "Prime clocks \u00d7 noncommuting repair",
+      "source_commit": "0e49641428c5d53beaeb95817a3c784a8cf5e29c",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X08.md",
+      "proof_state": "PROVED LOCAL; scoped LEAN-KERNEL PROVED"
+    },
+    {
+      "id": "X09",
+      "owner": "cross09_analytic_actualization",
+      "question": "Analytic completion \u00d7 actualization",
+      "source_commit": "55ce4c9384c3b3d66ed9f36a6a3ef62a91be5209",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X09.md",
+      "proof_state": "PROVED LOCAL / CLASSICAL INGREDIENTS"
+    },
+    {
+      "id": "X10",
+      "owner": "cross10_koopman_repair",
+      "question": "Koopman algebra \u00d7 universal repair",
+      "source_commit": "11fa855db2f723e39599ee4aff709f260d26864f",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X10.md",
+      "proof_state": "PROVED LOCAL / CLASSICAL INGREDIENTS"
+    },
+    {
+      "id": "X11",
+      "owner": "cross11_domain_prooflimits",
+      "question": "Partial evidence \u00d7 limit proof barriers",
+      "source_commit": "3a6d297b151fcb85e4d47285aa20807ebc6218e9",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X11.md",
+      "proof_state": "PROVED LOCAL / CLASSICAL INGREDIENTS"
+    },
+    {
+      "id": "X12",
+      "owner": "cross12_history_selfupdate",
+      "question": "Lawful histories \u00d7 representation change",
+      "source_commit": "dffea18b3802672eb7120156560c53cfefe4a973",
+      "state": "INVESTIGATION_COMPLETE",
+      "integration": "INTEGRATED",
+      "dossier": "research/2026-10-13/SWARM_ATLAS/X12.md",
+      "proof_state": "PROVED LOCAL / CLASSICAL INGREDIENTS"
+    }
+  ],
+  "execution_accounting": {
+    "genuine_child_agents_spawned": 21,
+    "principal_agents": 1,
+    "cohort_agents": 6,
+    "cross_agents": 12,
+    "fresh_audit_agents": 3,
+    "independence_boundary": "Six initial cohort agents each handled eight distinct missions. This is not 48 independently spawned agents. Same-model independent processes are not independent human peer review."
+  },
+  "agents": [
+    {
+      "name": "/root/category_expeditions",
+      "role": "cohort",
+      "assignments": "A01\u2013A08",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/topology_logic_expeditions",
+      "role": "cohort",
+      "assignments": "B09\u2013B16",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/probability_causality_expeditions",
+      "role": "cohort",
+      "assignments": "C17\u2013C24",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/dynamics_expeditions",
+      "role": "cohort",
+      "assignments": "D25\u2013D32",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/arithmetic_expeditions",
+      "role": "cohort",
+      "assignments": "E33\u2013E40",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/discovery_moonshot_expeditions",
+      "role": "cohort",
+      "assignments": "F41\u2013F48",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross01_repair_completion",
+      "role": "cross",
+      "assignments": "X01",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross02_holonomy_laws",
+      "role": "cross",
+      "assignments": "X02",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross03_gluing_cegis",
+      "role": "cross",
+      "assignments": "X03",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross04_memory_chaos",
+      "role": "cross",
+      "assignments": "X04",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross05_blackwell_policy",
+      "role": "cross",
+      "assignments": "X05",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross06_cost_memory",
+      "role": "cross",
+      "assignments": "X06",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross07_stochastic_concurrency",
+      "role": "cross",
+      "assignments": "X07",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross08_arithmetic_actions",
+      "role": "cross",
+      "assignments": "X08",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross09_analytic_actualization",
+      "role": "cross",
+      "assignments": "X09",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross10_koopman_repair",
+      "role": "cross",
+      "assignments": "X10",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross11_domain_prooflimits",
+      "role": "cross",
+      "assignments": "X11",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/cross12_history_selfupdate",
+      "role": "cross",
+      "assignments": "X12",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/audit_categories",
+      "role": "independent_audit",
+      "assignments": "RA category review",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/audit_cross_bridges",
+      "role": "independent_audit",
+      "assignments": "RX X01/X04/X05/X08/X10/X12",
+      "state": "COMPLETE"
+    },
+    {
+      "name": "/root/audit_remaining_bridges",
+      "role": "independent_audit",
+      "assignments": "RY X02/X03/X06/X07/X09/X11",
+      "state": "COMPLETE"
+    }
+  ],
+  "cross_execution_summary": {
+    "assignments": 12,
+    "investigations_completed": 12,
+    "investigations_unfinished": 0
   }
 }
