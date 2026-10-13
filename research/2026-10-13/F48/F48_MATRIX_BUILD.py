@@ -53,7 +53,7 @@ F44;source→complete fixed-word laws→public adaptive output; source-blind pol
 F45;fair retained occurrences→nonnegative cost sum; mandatory originals, exhaustive legal scheduling, common cost/lower bound; weighted debt convergence is no finite completion or computable modulus; lawful alternative summable discharge
 F46;source-fiber radius, conflict coloring, exact repair; rational L∞ targets and unconstrained decoder; positive tolerance lacks coarsest repair, midpoint may be unrealizable; legal one-carrier tolerant encoder
 F47;calibration H/D, atomic pair averages, decoded invariant; known affine units/origins, committed events, covered blocks; raw agreement is no source-time lock, dyadic means need no finite equality; sharp calibration-error propagation
-F48;private-prefix fibration, incidence sheaf, pruning adapter; complete σ/memory/resource interfaces and all local branches; Kraus atoms and global fairness cannot be inferred from local prefixes; mechanize greatest surjective subsystem and fresh A03 audit
+F48;private-prefix fibration, incidence sheaf, pruning adapter; complete σ/memory/resource interfaces and all local branches; Kraus atoms and global fairness cannot be inferred from local prefixes; mechanize greatest surjective subsystem and lawful policy map
 X01;retained receipt limit E→labelled image closure; continuous discrete labels, compact/coercive supported receipt space; compact source alone misses empty receipt fiber; kernel supported-image exchange
 X02;holonomy orbit R/J and Reynolds projection; exact reported update commutation with JR; invariant laws cannot supply equivariant atomic selector; joint orbit law and source-target adapter
 X03;integral periods→bounded modular guard/CEGIS; actual integer access or proved generator bound, complete grammar; adaptive finite modular menu always leaves LCM alias; partial/history-dependent retained counterexample grammar
@@ -64,7 +64,7 @@ X07;positive ideal functor→greatest attained zero face; directed all finite id
 X08;affine prime itinerary→local balls and max-plus precision; genuine intermediate domains, cap and full offsets, ambient valuation; demand is itinerary invariant, not reduced groupoid/source-minimal depth; prime-realizable sharp-depth witnesses
 X09;supported analytic receipts→jets/order/precision cost; connected Hol domain, continuous labels, compact cost sublevels; complex coefficients use usual topology, cap covers every order/precision; source-labelled completed form plus uniform test estimate
 X10;future algebra π*C(Q), Hilbert H/W, PF resolvent; compact continuous source and stipulated invariant probability; future U-closure not reducing, two-delay recovery can miss ab in linear sector; nonlinear dictionary and inverse-time closure
-X11;CP support dominance, negative-information choice, periodic generator; fixed original class, filter-complete necessity, exact rational zeros, closed no-input generator; safe choice differs from original identification, stationary report word lacks deadline; fresh review then periodic support bound under full input types
+X11;CP support dominance, negative-information choice, periodic generator; fixed originals, filter-complete necessity, exact rational numerals, closed no-input generator; promised qubit bound μ+λ≤N is sharp, stationary report word lacks deadline; formalize promised cycle bound with full current interface
 X12;greatest hereditary feasible complex and exact face images; complete original/current/memory, homogeneous legality, lawful source squares; facet widening invents source/current, no canonical tolerant partition; nondeterministic branch-indexed exact-image hereditary repair
 '''.strip()
 
@@ -87,7 +87,7 @@ def main():
     assert {row[0] for row in rows} == set(records) and len(rows) == 60
     out = ['# F48 whole-swarm validation matrix', '',
            'All IDs below are **owned PR49 IDs**. PR50/51 comparisons remain branch-qualified in the phase2 architecture. Status is frozen from the hashed root registry in [receipt](F48_PHASE2_RECEIPT.json); it is not a new replay or proof promotion. Mathematical core, typed maps, domains and obstructions were inspected across all available author dossiers and reviews. Missing review files are not invented.', '',
-           'A = root accepted classical/paper result; K = only named kernel subclaims. F48 final phase2 acceptance is pending. X08–X10 may be authored but unaccepted in this snapshot; X11/X12 remain explicit missing inputs until supplied. Read each linked dossier and available review for the full quantifiers.', '',
+           'A = root accepted classical/paper result; K = only named kernel subclaims. All twelve synthesis inputs are accepted in this frozen snapshot. Fresh A03 review accepts F48 T1/T2 and the conditional type gates, without recertifying every input theorem. Final principal artifact review remains pending. Read each linked dossier and available review for the full quantifiers.', '',
            '| Slot / evidence | Status | Typed object and actual arrow | Required domain / hypotheses | Preserved boundary or no-go | Next small lemma |',
            '|---|---|---|---|---|---|']
     for ident, arrow, conditions, boundary, lemma in rows:
@@ -95,12 +95,12 @@ def main():
         label=f'[{ident}]({link(e["dossier"])})' if e['dossier_present'] else ident+' (missing)'
         if e['review_paths']:
             label += ' / ' + ', '.join(f'[R{i+1}]({link(p)})' for i,p in enumerate(e['review_paths']))
-        if ident=='F48': status='Initial A; K injection core; phase2 pending'
+        if ident=='F48': status='Initial A; K injection core; A03 phase2 A; principal artifacts pending'
         elif e['integration']=='ACCEPTED': status='A'
         else: status='TENTATIVE' if e['dossier_present'] else 'AWAITING_FINAL_INPUT'
         if ident in ('A01','B09','C19','X07'):status += '; K named core'
         out.append('| '+ ' | '.join([label,status,arrow,conditions,boundary,lemma])+' |')
-    out += ['', 'The strongest admitted architecture is a network of typed functors with separate original-source, lawful-access, probability, proof, resource and completion gates. Support is not joint law; cone positivity is not source identification; convergence is not an executed limit or finitary proof. Final status additionally requires integrated X11/X12 and fresh non-deriver A03 review.', '']
+    out += ['', 'The strongest admitted architecture is a network of typed functors with separate original-source, lawful-access, probability, proof, resource and completion gates. Support is not joint law; cone positivity is not source identification; convergence is not an executed limit or finitary proof. Aggregate E_n depth surjectivity does not imply onto restriction on a selected public-history arrow. Kraus families retain index multiplicity without supplying observed private paths. All synthesis inputs and fresh A03 core review are accepted; final principal artifact review remains pending.', '']
     (HERE/'F48_VALIDATION_MATRIX.md').write_text('\n'.join(out))
 
 

@@ -1,6 +1,7 @@
 # F48 phase2: a typed host and the causal extendability adapter
 
-**State: AWAITING_FINAL_ACCEPTANCE and fresh A03 review.** Initial independent
+**State: ALL SYNTHESIS INPUTS ACCEPTED; A03 CORE REVIEW ACCEPTED;
+FINAL PRINCIPAL ARTIFACT REVIEW PENDING.** Initial independent
 commit `6e751c0d996de3d27a91b09f44dc2d534db09c73` is preserved. The
 [validation matrix](F48_VALIDATION_MATRIX.md) covers 48 first-generation and
 12 synthesis slots. It records accepted statements, tentative inputs, and
@@ -21,7 +22,7 @@ functors and partial operations, with explicit comparison obligations.
 The new result below constructs the previously missing adapter from raw
 causal prefixes to complete-source restriction stages. A second precise no-go
 blocks canonical quantum private paths from unobserved Kraus indices. These
-are paper proofs of declared mathematics, **PROVED LOCAL subject to independent
+are paper proofs of declared mathematics, **PROVED LOCAL accepted by fresh A03
 crucible**. Finite checks have **TESTED MODEL** status. Academic novelty is
 UNVERIFIED; the ingredients are classical.
 
@@ -73,7 +74,10 @@ empty comma products supply no event receipt. Finite syntactic proof transport
 also needs inference/syntax maps, as B13 requires. For changing support A⊆B,
 T_B⇒T_A and ¬T_A⇒¬T_B; forward positive transport needs an additional source law.
 
-Classical nonnegative joint measures on `(σ,c)` travel **forward**:
+In the displayed C17 attachment, original/current/report tables are finite
+discrete sets with nonnegative rational sub-Markov selected-report rows and
+normalized complete instrument rows. Their joint measures on `(σ,c)` travel
+**forward**:
 
 \[
 (T_{h,a,o}\nu)(\sigma,c')
@@ -84,7 +88,10 @@ They define a covariant cone functor and discrete opfibration over the typed
 word grammar. Zero measures retain total lifts on impossible report words;
 normalization is partial at positive total mass. C17/X05 transport the
 original/current joint law, not two separate marginals. Taking positive support
-forgets weights. Classical support composes relationally because no signed
+forgets weights. This sum formula and discrete support criterion establish no
+continuous measurable-source kernel attachment; such an attachment requires
+measurability, integral pushforward and separate support/domain theorems.
+Classical discrete support composes relationally because no signed
 cancellation occurs, but supplies no inverse law or independence assumption.
 Consequently its backward prefix restriction and the forward measure update
 are not one variance. C18's conditional-product gluing additionally requires
@@ -147,8 +154,10 @@ family and exact enabled images. Maximal-facet completion is not an action:
 a singleton image can have two facet containers, either inventing a current
 state or an original source. Its homogeneous-legality contract is stronger
 than ordinary safe policy choice. Source-map naturality still requires the
-action, reflected-domain, report and target squares. This input remains
-tentative until root acceptance.
+action, reflected-domain, report and target squares. Root's independent X12
+review accepts these paper claims without a minimum-memory or canonical-center
+claim. Effective pruning needs complete action presentation and feasibility
+oracle, beyond finite source cardinality.
 
 ## 5. New theorem: greatest extendable prefix subsystem
 
@@ -236,8 +245,17 @@ None establishes scholarly originality for this local adapter.
 
 ## 7. Crucible and mechanisms that must remain distinct
 
-**Type clarifications from independent A03 review:** T_n and E_n aggregate all policy-consistent public outcomes at depth n. Surjectivity of their depth restrictions does not imply surjectivity for a fixed public-prefix arrow H(ha,o)→H(h): two prepared sources with deterministic first outcomes0 and1 give an onto aggregate restriction, while conditioning on outcome0 removes source1. The topology in T1 is the declared finite-prefix discrete cylinder topology, not an arbitrary preexisting carrier topology. Kraus representations in T2 are finite indexed families (K_i) indexed by distinguishable mathematical labels; the braces there denote those families and retain multiplicity, rather than literal sets collapsing duplicate operators. Sections5–6 remain byte-identical to the independently reviewed proof snapshot.
-
+**Type clarification, outside the frozen proof:** Tₙ and Eₙ aggregate all
+policy-consistent public outcomes at depth n. Their onto depth restrictions
+do not make a chosen public-prefix arrow H(ha,o)→H(h) onto: two prepared
+sources with deterministic first outcomes 0 and 1 cover the aggregate root,
+but conditioning on outcome 0 removes source 1. T1 uses finite-prefix discrete
+cylinder topology, rather than an arbitrary preexisting carrier topology.
+Kraus representations in T2 are finite indexed families `(K_i)`; its braces
+retain mathematical index multiplicity. They are not literal operator sets
+that collapse duplicates, nor necessarily observed environment outcomes.
+Zero-padding the one-Kraus family retains only one positive atom. Sections
+5–6 remain byte-identical to checkpoint `224d049964b02fc42ad4fcbaa078944ed91da0a7`.
 
 The independent probe checks 530 directed graphs on at most three states.
 Iterated dead-state deletion is compared to independent bounded walk/cycle
@@ -276,10 +294,18 @@ X11's authored source choice adds three distinct gates: original identification
 requires a singleton compatible original class; continuation-safe choice uses
 current support dominance, necessary only under its filter-complete toolkit;
 total source choice remains noncomputable/continuous without a stronger input.
-A closed no-input deterministic branch-word generator supplies its stated
-periodic deadline. A stationary one-state instrument with arbitrary report
-words can postpone the final kernel drop indefinitely. These authored X11
-claims await its fresh review and root acceptance here.
+A closed no-input deterministic N-state branch-word generator supplies the
+general qubit deadline μ+2λ≤2N. Fresh B11 review and independent principal
+integration prove the sharper promised bound μ+λ≤N: the final cycle dead
+subspace is proper, so on a qubit its first attained nonzero subspace is
+already final. An N-cycle ending in a projector attains this bound. The
+admitted-word promise, complete current interface, exact rational numerals,
+and closed no-input word generator are mandatory; a stationary one-state
+instrument with arbitrary report words can postpone the final kernel drop
+indefinitely. The support counterexample with images I/4 and P₀ is a CP
+trace-nonincreasing branch, not a trace-preserving channel. Source choice is
+not identification of the actually prepared source. These X11 claims are
+now accepted paper statements, separately from the original abstract kernels.
 
 ## 8. Geometry and analytic interfaces
 
@@ -294,7 +320,11 @@ enabledness persistence on a conflict-free occurrence set.
 
 D27/X10 observable pullback is contravariant. Full observable algebras,
 linear delay means, and Hilbert closures differ. Future closure is not reducing:
-the bilateral shift hides the past bit which becomes visible after one step.
+for the bilateral shift, `U g=q` concerns g at the **advanced** state. It does
+not acquire the original past bit by a forward q-read. The original past
+observable is `U⁻¹q=ω₋₁`, outside the future algebra; inverse-time access is an
+additional probe. The conditional-projection commutator still refutes reducing
+closure, as X10's valid operator countermodel shows.
 D25/D26/X04 finite-word realization does not automatically realize every infinite
 itinerary in the original boundary-excised source. D28's upper Lipschitz budget
 needs separate lower/co-Lipschitz hypotheses to become necessary. D29 proper
@@ -334,10 +364,18 @@ incidence sheaf, T1/T2 above, stochastic/quantum interpretation or this whole
 matrix. A01/B09/C19/X07 kernel scope is likewise limited to named statements.
 Root acceptance and receipts, not obsolete author-dossier review placeholders,
 control imported status. Source hashes preserve the exact inspected version.
-Current unaccepted synthesis slots are listed in the receipt. X11/X12 author
-inputs are present and read, but their final root acceptance is outstanding.
-Final F48 completion additionally requires integrated X11/X12 consideration and
-a fresh A03 non-deriver review of this derivation.
+All twelve synthesis slots, including X11/X12, are now root ACCEPTED. Their
+author and review hashes and the full sixty-slot input matrix are frozen in
+the receipt. Fresh A03 review `bb1c00ff04259d7d0c53727a18597b4fba3ee5cc`
+accepts T1/T2 and the host's conditional type gates; it does not independently
+recertify all sixty input proofs. Its clarifications are applied outside the
+frozen proof. The UTF-8 slice including the section-5 heading through before
+section 7 hashes to `59466bb9c0f2a5e8580a595ef1dfddc977238254266a874af229585de3618f8e`.
+The earlier receipt's slice excluding that heading has its separately retained
+hash; both remain unchanged. Final principal artifact acceptance follows this
+delivery. A new whole-parallel-source Kan/limit comparison
+remains outside this accepted input set until its principal review; nothing
+from that unfinished comparison is treated as a proved input here.
 
 ## 10. Next small lemma and honest stop
 
@@ -354,4 +392,6 @@ toolkit and proof pathway; σ still requires independent source-model correctnes
 Shared provider and inherited classical lineage are common provenance. No
 operational phasor basis is declared. The host is **SURVIVES WITH TYPED GATES**;
 unqualified universal sheaf/quantum-path identification is **REFUTED** with
-receipts. Whole-swarm acceptance remains **AWAITING_FINAL_ACCEPTANCE / A03 REVIEW**.
+receipts. Whole-swarm input synthesis and A03 core review are complete, with
+no missing or unaccepted synthesis slot. The delivery awaits only the final
+principal artifact review; no matrix-wide independent recertification is claimed.
