@@ -99,9 +99,51 @@ class VoltageGraph:
                    for u, v, w in self.edges
                    for level in range(self.modulus))
 
+    def minimal_connected_cover(self) -> tuple[
+            frozenset[tuple[str, int]],
+            tuple[tuple[tuple[str, int], tuple[str, int], int], ...]]:
+        """Construct the |im holonomy|-sheet kernel cover, not all m sheets.
+
+        Set d=gcd(m, fundamental residuals), k=m/d. In tree gauge all
+        edge defects are divisible by d. The normalized voltage w'/d
+        acts on sheets Z/k. q(v,s)=h(v)+d*s mod m is globally lawful on
+        the connected cover (but generally does NOT descend to the base).
+        """
+        h = self.tree_potentials()
+        d = gcd(self.modulus, *self.residuals())
+        sheets = self.modulus // d
+        arcs = []
+        adjacency = {(v, s): [] for v in self.vertices for s in range(sheets)}
+        for u, v, w in self.edges:
+            defect = (h[u] + w - h[v]) % self.modulus
+            if defect % d:
+                raise AssertionError("Generated holonomy lattice must contain defect")
+            jump = defect // d
+            for s in range(sheets):
+                a, b = (u, s), (v, (s+jump) % sheets)
+                arcs.append((a, b, w))
+                adjacency[a].append(b)
+                adjacency[b].append(a)
+                qa = (h[u] + d*s) % self.modulus
+                qb = (h[v] + d*((s+jump) % sheets)) % self.modulus
+                if (qb-qa) % self.modulus != w:
+                    raise AssertionError("Minimal cover does not preserve source law")
+        root = (self.vertices[0], 0)
+        visited = {root}
+        todo = [root]
+        for v in todo:
+            for w in adjacency[v]:
+                if w not in visited:
+                    visited.add(w)
+                    todo.append(w)
+        if len(visited) != len(adjacency):
+            raise AssertionError("Monodromy kernel cover should be connected")
+        return frozenset(visited), tuple(arcs)
+
     def cover_report(self) -> dict:
         subgroup = self.holonomy_subgroup()
         reached = self.lifted_reachable()
+        minimal_vertices, minimal_arcs = self.minimal_connected_cover()
         fiber_sizes = {v: sum((v, a) in reached
                               for a in range(self.modulus)) for v in self.vertices}
         if any(n != len(subgroup) for n in fiber_sizes.values()):
@@ -116,6 +158,8 @@ class VoltageGraph:
             "minimal_connected_trivializing_cover_degree": len(subgroup),
             "canonical_cover_components": self.modulus // len(subgroup),
             "connected_lift_vertices": len(reached),
+            "minimal_cover_vertices": len(minimal_vertices),
+            "minimal_cover_arcs": len(minimal_arcs),
             "fiber_sizes_on_one_lift_component": fiber_sizes,
             "scalar_on_cover_verified": self.verify_lifted_scalar(),
             "scalar_on_base_claimed_after_repair": False,
