@@ -21,16 +21,23 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - uses: leanprover/lean-action@v1
-        with:
-          build: false
-          test: false
-          lint: false
-          use-github-cache: false
-      - name: Compile and kernel-check the EODCS lemmas
+      # This repository is a standalone Lean file, not a Lake package:
+      # lean-action requires lake-manifest.json and is inappropriate here.
+      # Bootstrap Lean with the official elan installer, then pin the actual
+      # Lean compiler through the checked-in lean-toolchain file.
+      - name: Install pinned Lean 4 for standalone file
+        shell: bash
         run: |
-          lean --version
-          lean formal/EODCS_OrderAdjunction.lean
+          curl --fail --silent --show-error --location \
+            https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh \
+            -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Compile and kernel-check the EODCS lemmas
+        shell: bash
+        run: |
+          "$HOME/.elan/bin/lean" --version
+          "$HOME/.elan/bin/lean" formal/EODCS_OrderAdjunction.lean
       - name: Fail closed on placeholders and imported axioms
         run: |
           python - <<'PY'
