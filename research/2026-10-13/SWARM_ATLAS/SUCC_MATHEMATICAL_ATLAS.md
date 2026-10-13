@@ -53,6 +53,8 @@ Independent principal reviews are in [reviews](reviews/); X01 also has a [separa
 | Nonlinear projected derivative `PF=G P` | Entire finite source vector space, linear P and quadratic vector field; smooth torus instance separately | [D30](D30_PDE_CLOSURE.md): exact hidden/cross coefficient criterion; hidden divergence-free stress gives resolved acceleration |
 | Fair mandatory cost `h→sum c_e` | Nonnegative cost-preserving lawful events, exhaustive fair legal continuation; all original obligations retained | [F45](F45_PROOF_COST_SCHEDULING.md): order-independent total, summable debt tails and divergent lower-bound no-go |
 
+| Allowed experiment signature `s→(L_s(a^n,·))` | Complete causal word laws, source-blind policy/random tape/processing and declared safe instruments | [F44](F44.md): adaptive/computational no-go and original-target fiber gate; local quantum marginal equality needs autonomous local dynamics |
+
 ## Acquisition, representation revision and lawful new instruments
 
 An instrument begins with an original state s and current carrier q, produces a report o, and changes q. Retain the actual history h. A deterministic original target t is certified exactly when all alternatives compatible with that retained history agree on t. A stochastic claim instead needs the full original/current conditional law: support, separate outcome marginals, or identical endpoints cannot replace it. C17 supplies exact unnormalized transport; zero-probability branches have no posterior. Formal zero-measure fibers are algebraic objects, not performed events.
