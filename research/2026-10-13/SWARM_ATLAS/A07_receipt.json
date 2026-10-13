@@ -1,0 +1,69 @@
+{
+  "actual_hardware_observations": false,
+  "bounds": {
+    "maximum_apex": 512,
+    "maximum_depth": 4,
+    "states": 2
+  },
+  "claim_id": "SWM-A07",
+  "command": "python research/2026-10-13/SWARM_ATLAS/A07_probe.py",
+  "command_exit": 0,
+  "counterexample": {
+    "common_report": [
+      [
+        "Blind",
+        0,
+        1
+      ]
+    ],
+    "currents": [
+      1,
+      0
+    ],
+    "extended_outcomes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "minimal_states": 2,
+    "originals": [
+      0,
+      1
+    ]
+  },
+  "hostile_cells_rejected": 3,
+  "interchange_points": 32,
+  "native_deterministic_embedding": "exact EventRecord and endpoint replay for both inputs",
+  "parent_sha": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "pentagon_points": 512,
+  "quantum_order": {
+    "Weil_positivity_claimed": false,
+    "cognitive_realization_claimed": false,
+    "quantum_model": "real two-state, rational Kraus instruments",
+    "records_distinct": true,
+    "replayed_provenance": true,
+    "status": "EXACT_FINITE_QUANTUM_CAUSAL_ORDER",
+    "x_then_z_joint": "1/4",
+    "z_then_x_joint": "1/2"
+  },
+  "quantum_span_order_weights": [
+    "1/4",
+    "1/2"
+  ],
+  "sha256": {
+    "observational_succ/causal_nerode_succ.py": "0d41180c9a041400e1c781d3578d3f7652242719c5f6e46cdf4028ec779d7ddd",
+    "observational_succ/noncommuting_proof_transport.py": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a",
+    "observational_succ/quantum_records.py": "9a3f367fb0e2bcb1e73c1a561ffcd2450cf5866f4c28a7df84e3ecd1a387a4c5",
+    "observational_succ/yoneda.py": "4af0194e675406761c1dec151fe1407b65037e1e87e8bc8a950bd42bf914baca",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-13/SWARM_ATLAS/A07_probe.py": "35501b1dd021a9142e019fb0bd62c3c44f1322d40abdf74cf23d300b4a4567c7"
+  },
+  "status": "TESTED MODEL; universal statements have separate paper proofs",
+  "triangle_points": 32,
+  "unperformed_paths_actualized": false
+}
