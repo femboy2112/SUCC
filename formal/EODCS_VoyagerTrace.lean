@@ -121,12 +121,15 @@ theorem finite_enumeration_realization_or_refutation
   · right
     have mismatches : ∀ s : S, ∃ w, trace s w ≠ profile w := by
       intro s
-      by_contra no_mismatch
-      apply global
-      refine ⟨s, ?_⟩
-      intro w
-      by_contra unequal
-      exact no_mismatch ⟨w, unequal⟩
+      by_cases witnessed : ∃ w, trace s w ≠ profile w
+      · exact witnessed
+      · apply False.elim
+        apply global
+        refine ⟨s, ?_⟩
+        intro w
+        by_cases equal : trace s w = profile w
+        · exact equal
+        · exact False.elim (witnessed ⟨w, equal⟩)
     let chooseWord : S → W := fun s => Classical.choose (mismatches s)
     refine ⟨states.map chooseWord, ?_, ?_⟩
     · simp
@@ -149,8 +152,8 @@ theorem finite_enumeration_compatible_implies_realized
   rcases finite_enumeration_realization_or_refutation
       states cover trace profile with original | ⟨probes, _, forbids⟩
   · exact original
-  · obtain ⟨s, matches⟩ := compatible probes
+  · obtain ⟨s, agreesOnList⟩ := compatible probes
     obtain ⟨w, mem, wrong⟩ := forbids s
-    exact False.elim (wrong (matches w mem))
+    exact False.elim (wrong (agreesOnList w mem))
 
 end ObservationalSUCC
