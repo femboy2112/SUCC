@@ -84,5 +84,7 @@ jobs:
           python scripts/voyager_adaptive_probe.py > "$RUNNER_TEMP/voyager-adaptive.json"
           diff -u research/2026-10-13/VOYAGER_ADAPTIVE_SOURCE_RECEIPT.json "$RUNNER_TEMP/voyager-adaptive.json"
 
-      - name: Execute carrier-indexed original/current source receipt
-        run: python scripts/carrier_indexed_probe.py
+      - name: Reproduce exact frozen carrier-indexed source and actual-history receipt
+        run: |
+          python scripts/carrier_indexed_probe.py > "$RUNNER_TEMP/carrier-indexed.json"
+          diff -u research/2026-10-13/CARRIER_INDEXED_SOURCE_RECEIPT.json "$RUNNER_TEMP/carrier-indexed.json"
