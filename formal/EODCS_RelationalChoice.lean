@@ -109,4 +109,99 @@ theorem support_pair_universal
   · funext p
     exact propext (future s p)
 
+
+/-- The tight existential ("may") abstraction of successor reports
+over all original states with the same present observation o. -/
+def MayReport {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (o : O) (p : P) : Prop :=
+  ∃ s : S, q s = o ∧ FutureSupport next qNext s p
+
+/-- The common-possibility ("possible at every hidden state") lower bound.
+This is NOT "p must occur": it means p belongs to every hidden state's
+successor support. The must-occur proposition is instead that the entire
+may support satisfies a claimed predicate. -/
+def CommonPossible {S : Type u} {O : Type v}
+    {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (o : O) (p : P) : Prop :=
+  ∀ s : S, q s = o → FutureSupport next qNext s p
+
+theorem source_support_bounded_by_may_common
+    {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (s : S) (p : P) :
+    CommonPossible q next qNext (q s) p →
+    FutureSupport next qNext s p ∧
+    MayReport q next qNext (q s) p := by
+  intro common
+  have membership : FutureSupport next qNext s p :=
+    common s rfl
+  exact ⟨membership,⟨s,rfl,membership⟩⟩
+
+/-- If supports are fiber-invariant, then upper and lower approximations
+coincide on every observation in the source's image. -/
+theorem support_invariant_implies_exact_envelopes
+    {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (surj : ∀ o : O, ∃ s : S, q s = o)
+    (invariant : SupportCompatible q next qNext) :
+    ∀ o p, MayReport q next qNext o p ↔
+      CommonPossible q next qNext o p := by
+  intro o p
+  constructor
+  · rintro ⟨s, hs, supp⟩ t ht
+    exact (invariant s t (hs.trans ht.symm) p).mp supp
+  · intro common
+    obtain ⟨s,hs⟩ := surj o
+    exact ⟨s,hs,common s hs⟩
+
+/-- This equivalence exactly diagnoses the source-relative obstruction:
+may/must-common overlap collapses to a single support law iff the entire
+successor support descends through the observation quotient. -/
+theorem exact_envelopes_iff_support_transport
+    {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (surj : ∀ o : O, ∃ s : S, q s = o) :
+    (∀ o p, MayReport q next qNext o p ↔
+      CommonPossible q next qNext o p) ↔
+      SupportCompatible q next qNext := by
+  constructor
+  · intro equal s t same p
+    constructor
+    · intro sp
+      have may : MayReport q next qNext (q s) p :=
+        ⟨s,rfl,sp⟩
+      exact ((equal (q s) p).mp may) t same.symm
+    · intro tp
+      have may : MayReport q next qNext (q t) p :=
+        ⟨t,rfl,tp⟩
+      exact ((equal (q t) p).mp may) s same
+  · exact support_invariant_implies_exact_envelopes q next qNext surj
+
+/-- The may set is the least sound overapproximation at each report:
+any output predicate containing every source support must contain May. -/
+theorem may_is_least_sound_overapproximation
+    {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (upper : O → P → Prop)
+    (sound : ∀ s p, FutureSupport next qNext s p → upper (q s) p) :
+    ∀ o p, MayReport q next qNext o p → upper o p := by
+  intro o p
+  rintro ⟨s,hs,supp⟩
+  rw [← hs]
+  exact sound s p supp
+
+/-- The common possible set is the largest sound underapproximation:
+any output predicate lying inside *every* source support lies inside it. -/
+theorem common_is_greatest_sound_underapproximation
+    {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (lower : O → P → Prop)
+    (sound : ∀ s p, lower (q s) p → FutureSupport next qNext s p) :
+    ∀ o p, lower o p → CommonPossible q next qNext o p := by
+  intro o p low s hs
+  rw [← hs] at low
+  exact sound s p low
+
 end ObservationalSUCC
