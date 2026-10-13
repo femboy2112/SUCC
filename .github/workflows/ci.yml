@@ -883,6 +883,53 @@ jobs:
           assert measured["analytic_moonshot_falsifier"]["offcritical_zero_imag"] == "1/10"
           assert measured["analytic_moonshot_falsifier"]["actual_riemann_xi_modified"] is False
           PY
+      - name: Verify source-faithful chaotic observer quotient and dual-E horizon
+        run: |
+          python -m unittest discover -s tests -p 'test_chaos_source_quotient.py' -v
+          python scripts/chaos_source_quotient_probe.py > "$RUNNER_TEMP/chaos-source-quotient.json"
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])
+          actual=json.loads((root/'chaos-source-quotient.json').read_text())
+          expected=json.loads(Path('research/2026-10-12/CHAOS_SOURCE_QUOTIENT_RECEIPT.json').read_text())
+          assert actual==expected, 'Source-faithful chaos observer receipt drift'
+          assert actual['source_admissibility']['r3_actual_admissible_predecessors']==['1/8']
+          assert actual['source_admissibility']['relative_geometric_gap_lengths_not_dynamic_probabilities']['39/10']=='39/400'
+          assert actual['r4_model']['dual_E_overlapping_source_factors_by_lag']['5']['maximal_common_deterministic_component_count']==1
+          assert actual['r4_model']['after_5_rank_one_exact'] is True
+          assert actual['source_aware_dual_E']['true_posterior_mean_source']=='7/12'
+          assert actual['time_indexed_source_update']['different_step_reverse_kernels_required'] is True
+          assert actual['physical_source_authenticated'] is False
+          assert actual['RH_claimed'] is False
+          PY
+      - name: Verify exact Misiurewicz chaotic carrier and source-law-robust E phase
+        run: |
+          python -m unittest discover -s tests -p 'test_misiurewicz_phase_quotient.py' -v
+          python scripts/misiurewicz_phase_quotient_probe.py > "$RUNNER_TEMP/misiurewicz-phase.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])
+          actual=json.loads((root/'misiurewicz-phase.json').read_text())
+          expected=json.loads(Path('research/2026-10-12/MISIUREWICZ_PHASE_RECEIPT.json').read_text())
+          assert actual==expected, 'Misiurewicz exact evidence drift'
+          assert actual['parameter']['actual_critical_orbit_equalities'] is True
+          assert actual['certified_markov']['adjacency']==[[0,0,1],[0,0,1],[1,1,0]]
+          assert actual['certified_markov']['exact_topological_entropy_bits']=='1/2'
+          assert actual['chosen_symbolic_parry_law']['micro_entropy_bits_per_step']=='1/2'
+          assert actual['chosen_symbolic_parry_law']['phase_entropy_bits_per_step']=='0'
+          assert actual['symbolic_source_prior_ablation']['1/3']['stationary_phase_probabilities']==['1/2','1/2']
+          assert actual['symbolic_source_prior_ablation']['0']['microscopic_entropy_strictly_positive'] is False
+          assert actual['dual_E_parity_transport']['1']['raw_covariance']=='-1/4'
+          assert actual['dual_E_parity_transport']['51']['transported_covariance']=='1/4'
+          assert actual['moving_history_debt']['start_A_14_step_paths']==128
+          assert actual['real_carrier']['original_two_over_five_and_three_over_five_collapse'] is True
+          assert actual['hostile_controls']['fixed_point_prevents_everywhere_flipping'] is True
+          assert actual['hostile_controls']['metric_entropy_measured_from_physical_source'] is False
+          assert actual['hostile_controls']['physical_source_authenticated'] is False
+          assert actual['hostile_controls']['RH_claimed'] is False
+          PY
       - name: Persist verified finite evidence
         if: always()
         uses: actions/upload-artifact@v4
@@ -901,6 +948,8 @@ jobs:
             ${{ runner.temp }}/shadow-source-inference.json
             ${{ runner.temp }}/diagonal-adelic-zeta.json
             ${{ runner.temp }}/dual-boundary-observers.json
+            ${{ runner.temp }}/chaos-source-quotient.json
+            ${{ runner.temp }}/misiurewicz-phase.json
             ${{ runner.temp }}/logistic-observer-tree.json
             ${{ runner.temp }}/semantic-data-processing.json
             ${{ runner.temp }}/observer-trap.json
