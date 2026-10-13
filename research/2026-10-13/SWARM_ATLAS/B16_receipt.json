@@ -1,0 +1,185 @@
+{
+  "bounded_dyck": {
+    "depth": 3,
+    "quotient_map": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "dead": 4
+    },
+    "residual_classes": 5,
+    "source_states": 5
+  },
+  "collapsed_markers_states": 1,
+  "command": "timeout 30s python research/2026-10-13/SWARM_ATLAS/B16_probe.py",
+  "exact_arithmetic": true,
+  "finite_overlap_compatibility_nontransitive": true,
+  "finite_prefix_enumeration": [
+    {
+      "alphabet": "01",
+      "horizon": 4,
+      "machines": 4330,
+      "words": 16
+    },
+    {
+      "alphabet": "abc",
+      "horizon": 3,
+      "machines": 768,
+      "words": 27
+    }
+  ],
+  "infinite_computation_executed": false,
+  "native_sha256": {
+    "formal/EODCS_VoyagerMemoryDebt.lean": "ebd28c1b189f53ce73955b34a2176d365377068998e4760cc2f23a43e331d05f",
+    "observational_succ/eodcs_multi_action_source.py": "11025f6f7953ebdfa9b4cb1f11d8ce37d991a9d79a3d5e65e6489c07bcff913b",
+    "observational_succ/nerode_probe_growth.py": "16fa756fe170b589877e38fa7257623a79fdc406a0454812ca6422fe314d12e6",
+    "observational_succ/voyager_profinite_frontier.py": "9971e3b4dc389963be322bd96ddedb8ad2cbe2e5c2e4dcea2913f0485195ea34"
+  },
+  "nested_period_states": 4,
+  "parent": "5eb09e7cba36ec01b8f9d6834b78b5766fd93935",
+  "physical_source_authenticated": false,
+  "probe_sha256": "5b6e2c8c65a45c3df1740031c4e40b4ecf9753130da11bdd5ba64fb467216bc9",
+  "pulse_prefixes": [
+    {
+      "exact_prefix_minimum": 3,
+      "gap_bound": 2,
+      "horizon": 5,
+      "k": 1,
+      "witness_period": 3,
+      "witness_preperiod": 0
+    },
+    {
+      "exact_prefix_minimum": 7,
+      "gap_bound": 4,
+      "horizon": 9,
+      "k": 2,
+      "witness_period": 7,
+      "witness_preperiod": 0
+    },
+    {
+      "exact_prefix_minimum": 13,
+      "gap_bound": 8,
+      "horizon": 17,
+      "k": 3,
+      "witness_period": 8,
+      "witness_preperiod": 5
+    },
+    {
+      "exact_prefix_minimum": 25,
+      "gap_bound": 16,
+      "horizon": 33,
+      "k": 4,
+      "witness_period": 16,
+      "witness_preperiod": 9
+    },
+    {
+      "exact_prefix_minimum": 49,
+      "gap_bound": 32,
+      "horizon": 65,
+      "k": 5,
+      "witness_period": 32,
+      "witness_preperiod": 17
+    },
+    {
+      "exact_prefix_minimum": 97,
+      "gap_bound": 64,
+      "horizon": 129,
+      "k": 6,
+      "witness_period": 64,
+      "witness_preperiod": 33
+    }
+  ],
+  "reachable_six_cycle": {
+    "quotient_map": {
+      "0": 0,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0
+    },
+    "residual_states": 1,
+    "source_states": 6
+  },
+  "status": "TESTED MODEL",
+  "ternary_lassos_checked": 507,
+  "timeout_seconds": 30,
+  "unrestricted_dyck_six_residual_witnesses": [
+    [
+      0,
+      1,
+      ""
+    ],
+    [
+      0,
+      2,
+      ""
+    ],
+    [
+      0,
+      3,
+      ""
+    ],
+    [
+      0,
+      4,
+      ""
+    ],
+    [
+      0,
+      5,
+      ""
+    ],
+    [
+      1,
+      2,
+      ")"
+    ],
+    [
+      1,
+      3,
+      ")"
+    ],
+    [
+      1,
+      4,
+      ")"
+    ],
+    [
+      1,
+      5,
+      ")"
+    ],
+    [
+      2,
+      3,
+      "))"
+    ],
+    [
+      2,
+      4,
+      "))"
+    ],
+    [
+      2,
+      5,
+      "))"
+    ],
+    [
+      3,
+      4,
+      ")))"
+    ],
+    [
+      3,
+      5,
+      ")))"
+    ],
+    [
+      4,
+      5,
+      "))))"
+    ]
+  ]
+}
