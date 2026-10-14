@@ -154,5 +154,44 @@ class SignedOperatorProofTests(unittest.TestCase):
             h.simple_rank_one_negative(2,3.0)
 
 
+
+
+class HigherOrderSignTests(unittest.TestCase):
+    def test_pairwise_positive_threeway_negative(self):
+        u=(Q(1),Q(1),Q(-2))
+        M=tuple(tuple(Q(i==j)-Q(1,5)*u[i]*u[j] for j in range(3))
+                for i in range(3))
+        for i in range(3):
+            for j in range(i+1,3):
+                v=tuple(int(k==i)-int(k==j) for k in range(3))
+                self.assertGreater(h.exact_rayleigh(M,v),0)
+        self.assertEqual(h.exact_rayleigh(M,u),Q(-1,5))
+        minimum,vector=h.finite_multiway_search(M,amplitude=1)
+        self.assertLessEqual(minimum,Q(-1,5))
+        self.assertEqual(sum(vector),0)
+        self.assertGreaterEqual(max(abs(x) for x in vector),1)
+
+    def test_actual_multiway_search_has_source_gate(self):
+        st=h.stage(Q(1,2),3,3)
+        out=h.authenticated_multiway_witness(st,amplitude=1)
+        self.assertEqual(len(out["vector"]),3)
+        self.assertFalse(out["certified_global_positive"])
+        self.assertFalse(out["nontrivial_zero_input"])
+        self.assertEqual(out["source_upper_rayleigh"],
+                         out["rational_center_rayleigh"]+st.norm_error)
+
+    def test_forged_multiway_source_rejected(self):
+        st=h.stage(Q(1,2),3,3)
+        with self.assertRaises(h.WeilHierarchyError):
+            h.authenticated_multiway_witness(replace(st,norm_error=0))
+
+    def test_invalid_multidirection(self):
+        M=((Q(1),Q(0),Q(0)),(Q(0),Q(1),Q(0)),(Q(0),Q(0),Q(1)))
+        with self.assertRaises(h.WeilHierarchyError):
+            h.exact_rayleigh(M,(1,1,1))
+        with self.assertRaises(h.WeilHierarchyError):
+            h.finite_multiway_search(M,amplitude=0)
+
+
 if __name__=='__main__':
     unittest.main()
