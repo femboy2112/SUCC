@@ -9,10 +9,13 @@ sum_{k>K} 1/(k(k+1)) = 1/(K+1).  This yields a two-sided enclosure
     P_K + m/(K+1)  <=  E  <=  P_K + M/(K+1)
 
 where P_K is the exact finite prefix and (m, M) are the exact min/max of
-|1-F(k)|^2 over one full period.  Since M < (1 + sum|a_n|)^2 for every
-nonempty family (because |r_n(k)| <= (n-1)/n < 1), this enclosure is
-STRICTLY sharper than the prior ZCR-07 bound  E <= P_K + (1 + sum|a_n|)^2/(K+1),
-and it also supplies a strictly positive lower bound in the generic case.
+|1-F(k)|^2 over one full period.  Since |r_n(k)| <= (n-1)/n < 1, we get
+M <= (1 + sum|a_n|)^2 with STRICT inequality whenever at least one coefficient
+is nonzero (equality M == (1 + sum|a_n|)^2 == 1 occurs only for the all-zero
+family, where F == 0).  So this enclosure is strictly sharper than the prior
+ZCR-07 bound  E <= P_K + (1 + sum|a_n|)^2/(K+1)  for every family with a
+nonzero coefficient, and it supplies a strictly positive lower bound in the
+generic case.
 
 Pure exact rational arithmetic.  No float, no zeta zero, no Gamma/pole input.
 This is a finite certificate improvement, NOT a global L2 convergence proof
@@ -65,7 +68,9 @@ def defect_extremes(a: dict[int, Q]) -> tuple[Q, Q]:
         if type(c) not in (int, Q):
             raise PeriodicTailError("only exact rational coefficients")
     L = lcm(*a.keys())
-    _integer(L, 2, 100_000_000)
+    # L is capped at the residue-clock k-budget (1e6): defect_extremes samples
+    # k=1..L through residue(k,n), which itself enforces k <= 1e6.
+    _integer(L, 2, 1_000_000)
     d = [(Q(1) - value(k, a)) ** 2 for k in range(1, L + 1)]
     return min(d), max(d)
 

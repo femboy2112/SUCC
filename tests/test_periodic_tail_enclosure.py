@@ -87,3 +87,24 @@ class TestSharpEnclosure(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestRegressionRedTeam(unittest.TestCase):
+    """Regression locks for the three red-team findings (2026-10-13)."""
+
+    def test_lcm_beyond_k_budget_rejected_not_crash(self):
+        # F1: lcm in (1e6, 1e8] used to crash inside residue(); now cleanly rejected.
+        a = {999983: Q(1), 2: Q(1)}  # lcm = 1_999_966
+        with self.assertRaises(PeriodicTailError):
+            sharp_distance_interval(a, 64)
+        with self.assertRaises(PeriodicTailError):
+            defect_extremes(a)
+
+    def test_all_zero_family_not_claimed_sharper(self):
+        # F2: all-zero family has M == (1+sum|a|)^2 == 1; strictness is false.
+        r = sharpening_report({2: Q(0)})
+        self.assertFalse(r["strictly_sharper_upper"])
+        self.assertEqual(Q(r["new_upper_coeff"]), Q(r["old_upper_coeff"]))
+
+    def test_nonzero_family_still_sharper(self):
+        self.assertTrue(sharpening_report({2: Q(2)})["strictly_sharper_upper"])
