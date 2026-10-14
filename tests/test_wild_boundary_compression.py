@@ -74,6 +74,29 @@ class ExactCompressionTests(unittest.TestCase):
         with self.assertRaises(w.BoundarySourceError):
             w.gauge_conjugation(self.T,(1,2,1,1,1))
 
+
+    def test_boundary_commutator_survives_small_verified_error(self):
+        result=w.conditional_commutator_stability(F(1,10))
+        self.assertEqual(result["conditional_operator_lower_bound"],F(4,5))
+        self.assertFalse(result["genuine_arithmetic_gamma_error_verified"])
+        self.assertFalse(result["positive_weil_proved"])
+        self.assertEqual(w.conditional_commutator_stability(F(1,2))[
+                            "conditional_operator_lower_bound"],0)
+        with self.assertRaises(w.BoundarySourceError):
+            w.conditional_commutator_stability(0.1)
+
+    def test_independent_actual_perturbation_respects_bound(self):
+        eps=F(1,10)
+        B=w.add(self.C,tuple(tuple(eps if i==j==0 else F()
+                       for j in range(5)) for i in range(5)))
+        T=w.compress(self.T,self.window)
+        base=w.commutator(T,w.compress(self.C,self.window))
+        pert=w.commutator(T,w.compress(B,self.window))
+        self.assertNotEqual(base,pert)
+        # Exact column-coordinate lower bound on operator norm.
+        actual_lower=max(abs(pert[i][0]) for i in range(3))
+        self.assertGreaterEqual(actual_lower,F(4,5))
+
     def test_source_epoch_basis_and_invalid_windows(self):
         for fn in (
             lambda:w.finite_boundary_certificate(epoch=-1),
