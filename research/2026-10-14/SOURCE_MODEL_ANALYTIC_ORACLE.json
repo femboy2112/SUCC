@@ -1,0 +1,109 @@
+{
+  "N": 4,
+  "RH_proved": false,
+  "T": 16,
+  "cases": [
+    {
+      "continued_prime_current": "-2.6860917096128327911164787487248711",
+      "label": "critical midpoint",
+      "prime_current_error_vs_independent_zeta": "0.0",
+      "s": "0.5",
+      "xi_abs_error": "1.44999644755898e-24",
+      "xi_prime_abs_error": "2.76357393763022e-76",
+      "xi_prime_rigorous_omitted_tail_bound": "1.98558242916526e-14",
+      "xi_reference": "0.49712077818831410991277373968539772",
+      "xi_rigorous_omitted_tail_bound": "2.37482103008592e-15",
+      "xi_theta_approx": "0.49712077818831410991277518968184528"
+    },
+    {
+      "continued_prime_current": "0.56996099309453280640011859499242939",
+      "label": "Euler overlap 2",
+      "prime_current_error_vs_independent_zeta": "2.54234972699e-22",
+      "s": "2.0",
+      "xi_abs_error": "4.77938156239138e-23",
+      "xi_prime_abs_error": "1.36418059155251e-22",
+      "xi_prime_rigorous_omitted_tail_bound": "1.98558242916526e-14",
+      "xi_reference": "0.52359877559829887307710723054658381",
+      "xi_rigorous_omitted_tail_bound": "2.37482103008592e-15",
+      "xi_theta_approx": "0.5235987755982988730770594367309599"
+    },
+    {
+      "continued_prime_current": "0.16482268215827724018859523335885638",
+      "label": "Euler overlap 3",
+      "prime_current_error_vs_independent_zeta": "2.10183855938e-21",
+      "s": "3.0",
+      "xi_abs_error": "5.71045928694423e-22",
+      "xi_prime_abs_error": "1.27165134087182e-21",
+      "xi_prime_rigorous_omitted_tail_bound": "1.98558242916526e-14",
+      "xi_reference": "0.57393989404675551337522971036129921",
+      "xi_rigorous_omitted_tail_bound": "2.37482103008592e-15",
+      "xi_theta_approx": "0.57393989404675551337465866443260478"
+    },
+    {
+      "label": "trivial-zero completion -2",
+      "s": "-2.0",
+      "xi_abs_error": "5.71045928694423e-22",
+      "xi_prime_abs_error": "1.27165134087182e-21",
+      "xi_prime_rigorous_omitted_tail_bound": "1.98558242916526e-14",
+      "xi_reference": "0.57393989404675551337522971036129921",
+      "xi_rigorous_omitted_tail_bound": "2.37482103008592e-15",
+      "xi_theta_approx": "0.57393989404675551337465866443260478"
+    },
+    {
+      "continued_prime_current": "(0.053589835637808232590391295022388605 + 0.18178461444368875079125484131507751j)",
+      "label": "critical line imaginary 7",
+      "prime_current_error_vs_independent_zeta": "2.37474088965e-22",
+      "s": "(0.5 + 7.0j)",
+      "xi_abs_error": "2.68082928613772e-22",
+      "xi_prime_abs_error": "5.90921169011252e-23",
+      "xi_prime_rigorous_omitted_tail_bound": "1.98558242916526e-14",
+      "xi_reference": "(0.15220452428608928520967402930307131 + 9.9494885580679915791487094115028799e-69j)",
+      "xi_rigorous_omitted_tail_bound": "2.37482103008592e-15",
+      "xi_theta_approx": "(0.15220452428608928520940594637445753 + 0.0j)"
+    },
+    {
+      "continued_prime_current": "(-0.21423958029282442921724784286505985 + 0.13920308549622867415565894101117986j)",
+      "label": "inside strip complex",
+      "prime_current_error_vs_independent_zeta": "4.17485963801e-22",
+      "s": "(0.73 + 4.0j)",
+      "xi_abs_error": "7.86005813444019e-23",
+      "xi_prime_abs_error": "1.29663450863194e-22",
+      "xi_prime_rigorous_omitted_tail_bound": "1.98558242916526e-14",
+      "xi_reference": "(0.34191422760487796033185073070149836 + 0.014943078756567309956721269607619492j)",
+      "xi_rigorous_omitted_tail_bound": "2.37482103008592e-15",
+      "xi_theta_approx": "(0.3419142276048779603319240525338375 + 0.014943078756567309956692950704213681j)"
+    },
+    {
+      "continued_prime_current": "(-0.76134296013680877902690185997845753 + 0.54033125985747330007971907043188577j)",
+      "label": "outside Euler real strip",
+      "prime_current_error_vs_independent_zeta": "9.29188696952e-22",
+      "s": "(-1.25 + 2.0j)",
+      "xi_abs_error": "2.38265460777078e-22",
+      "xi_prime_abs_error": "4.63588113980091e-22",
+      "xi_prime_rigorous_omitted_tail_bound": "1.98558242916526e-14",
+      "xi_reference": "(0.48053445090495213919862658538009561 - 0.078516603273435541261153627094002466j)",
+      "xi_rigorous_omitted_tail_bound": "2.37482103008592e-15",
+      "xi_theta_approx": "(0.48053445090495213919866843721837218 - 0.078516603273435541261388188074202041j)"
+    }
+  ],
+  "completed_Weil_positive": false,
+  "critical_contact_C": "5.37218341922566558223295749744974228901453925",
+  "critical_contact_difference": "0.0",
+  "finite_P_theta_tiny_t_check": {
+    "h": 12,
+    "normalized_actual": "0.051311670117113256358",
+    "normalized_rational_upper": "1.1719022670313830848",
+    "primes": [
+      2,
+      3,
+      5
+    ],
+    "source_cutoff": 131072
+  },
+  "nontrivial_zero_locations_input": false,
+  "numeric_precision_digits": 65,
+  "source": "integer lattice Gaussian; all-prime Euler in Re>1; no zeros",
+  "status": "INDEPENDENT_NUMERICAL_ORACLE_NOT_INTERVAL_QUADRATURE",
+  "xi_derivative_error_same": "1.9855824291652590157e-14",
+  "xi_error_uniform_on_declared_strip_with_abs_s_at_most_10": "2.3748210300859219526e-15"
+}
