@@ -34,6 +34,36 @@ def square(h):
     return (point(-h,-h),point(h,-h),point(h,h),point(-h,h))
 
 
+def _cross(a,b,c):
+    return (b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0])
+
+
+def _on_segment(a,b,p):
+    return (_cross(a,b,p)==0 and min(a[0],b[0])<=p[0]<=max(a[0],b[0])
+            and min(a[1],b[1])<=p[1]<=max(a[1],b[1]))
+
+
+def _intersects(a,b,c,d):
+    x,y,z,w=(_cross(a,b,c),_cross(a,b,d),_cross(c,d,a),_cross(c,d,b))
+    if (x>0>y or x<0<y) and (z>0>w or z<0<w):return True
+    return (x==0 and _on_segment(a,b,c) or y==0 and _on_segment(a,b,d)
+            or z==0 and _on_segment(c,d,a) or w==0 and _on_segment(c,d,b))
+
+
+def simple_ccw(vertices):
+    n=len(vertices)
+    if n<3 or len(set(vertices))!=n:return False
+    area=sum(vertices[i][0]*vertices[(i+1)%n][1]
+             -vertices[(i+1)%n][0]*vertices[i][1] for i in range(n))
+    if area<=0:return False
+    for i in range(n):
+        a,b=vertices[i],vertices[(i+1)%n]
+        for j in range(i+1,n):
+            if j==i+1 or (i==0 and j==n-1):continue
+            if _intersects(a,b,vertices[j],vertices[(j+1)%n]):return False
+    return True
+
+
 def validate_polynomial(coeffs):
     if not coeffs or any(type(v) not in (tuple,list) or len(v)!=2 for v in coeffs):
         raise ContourError('exact complex coefficient pairs required')
@@ -101,7 +131,7 @@ def certified_contour(coefficients, contour, R, error=Q(), max_depth=15):
     coeffs=validate_polynomial(coefficients)
     vertices=tuple(point(*v) for v in contour)
     R=rat(R);E=rat(error)
-    if (R<=0 or E<0 or len(vertices)<3 or len(set(vertices))<3
+    if (R<=0 or E<0 or not simple_ccw(vertices)
         or type(max_depth) is not int or max_depth<0 or max_depth>22):
         raise ContourError('invalid bounded contour contract')
     if any(z[0]*z[0]+z[1]*z[1]>R*R for z in vertices):
