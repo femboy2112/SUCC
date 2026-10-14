@@ -1,0 +1,105 @@
+{
+  "Lean_kernel_check_claimed": false,
+  "RH_PROVED": false,
+  "academic_priority_claimed": false,
+  "arity_barrier": {
+    "arity_2_candidates": 32,
+    "arity_2_ghosts": 16,
+    "even_odd_indistinguishable_at_all_proper_arities": true,
+    "even_source_size": 16,
+    "minimum_new_ghost_separating_scope": [
+      "x0",
+      "x1",
+      "x2",
+      "x3",
+      "x4"
+    ],
+    "parity_bit_count": 5,
+    "reconstruction_arity": 5,
+    "source_repair_candidate_count": 16
+  },
+  "date": "2026-10-14",
+  "external_physical_source_authenticated": false,
+  "infinite_dimensional_gap_control": {
+    "bilateral_shift_almost_fixed_norm_sq_N_1000": "2/2001",
+    "zero_kernel_implies_uniform_coercivity": false
+  },
+  "joint_model_derivations": {
+    "AB_BC_implies_AC": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1"
+      ]
+    ],
+    "AC_CD_implies_AD": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "0"
+      ]
+    ],
+    "base_joint_candidates": 2,
+    "complete_join_witnesses": 4,
+    "original_declared_source_states": 2,
+    "physically_executed": false,
+    "second_recursion_is_conservative": true
+  },
+  "joint_orthogonal_meta_meta": {
+    "combined_resistance": "6",
+    "first_loop_strict_gap_rejected": true,
+    "global_coercivity_constant": "1/23",
+    "individual_loop_1_holonomy": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "-1"
+      ]
+    ],
+    "individual_loop_2_holonomy": [
+      [
+        "-1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "joint_cycle_Gram": [
+      [
+        "4",
+        "0"
+      ],
+      [
+        "0",
+        "4"
+      ]
+    ],
+    "joint_gap": "4",
+    "requires_original_source_operator_identification_for_Weil": true
+  },
+  "new_number_theory_theorem_claimed": false,
+  "original_nontrivial_zeta_zero_positions_used": false,
+  "parent_exact_commit": "8ce8ebbc4ea26d6a0f53f1f243a8b9a7932461c0",
+  "parent_repo": "femboy2112/SUCC",
+  "provenance": "declared mathematical source laws, not physical observations",
+  "schema": "succ-recursive-meta-1",
+  "signed_cycle": {
+    "boolean_frustration_minimum": "1",
+    "full_3node_coercivity_lower_bound": "2/17",
+    "holonomy": -1,
+    "resistance": "3",
+    "sharp_attained_energy": "4/3",
+    "sharp_root_energy_minimum": "4/3"
+  }
+}
