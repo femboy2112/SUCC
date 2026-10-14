@@ -377,13 +377,3 @@ def authenticated_prime_wavefront(a):
     return tuple(active)
 
 
-def normalized_radius_defect_inequality(a,b,depth_a,depth_b):
-    """Pure numeric assertion for theorem d_-(G_a)<=d_-(G_b) if 0<a<=b.
-
-    These user supplied depths are NOT source authenticated; use only as a
-    paper-lemma consistency witness, not as a zeta positivity certificate.
-    """
-    a=q(a);b=q(b);da=q(depth_a);db=q(depth_b)
-    if not 0<a<=b or da<0 or db<0:
-        raise WeilHierarchyError("positive radius and nonnegative depths")
-    return da<=db
