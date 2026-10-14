@@ -17,7 +17,9 @@ from observational_succ.prime_categorical_sphere import (
     sphere_homology_receipt, prime_phase_equator_action, chiral_mode_symbol,
     chiral_symbol_interval, chiral_diagonal_interval, chiral_finite_gram,
     gamma_chiral_identity_receipt, chiral_Hminus1_certificate,
-    affine_gamma_source_intertwiner, receipt,
+    affine_gamma_source_intertwiner, chiral_markov_model_certificate,
+    poisson_unit_mean_tail_bound, finite_markov_sphere_energy,
+    two_hemisphere_gaussian_fourier, receipt,
 )
 
 
@@ -261,6 +263,39 @@ class PrimeSphereTests(unittest.TestCase):
                 self.assertTrue(d['integer_SUCC_and_FUCC_source_laws_preserved'])
                 self.assertFalse(d['operator_intertwiner_constructed'])
         with self.assertRaises(SphereError):affine_gamma_source_intertwiner(3,6)
+
+    def test_31_chiral_markov_dirichlet_form_and_finite_compiler(self):
+        model=chiral_markov_model_certificate()
+        self.assertEqual(model['jump_variance'],'pi^2')
+        self.assertEqual(model['signed_chiral_differentiated_operator'],'pi*(I-P)')
+        self.assertFalse(model['full_original_Weil_operator'])
+        for v in ((Q(0),)*4,(Q(1),)*4,(Q(0),Q(1),Q(2),Q(3)),
+                  (Q(-1,4),Q(1,7),Q(2,9),Q(-1,3))):
+            energy=finite_markov_sphere_energy(v)
+            self.assertEqual(Q(energy['quadratic']),Q(energy['edge_energy']))
+            self.assertGreaterEqual(Q(energy['quadratic']),0)
+            self.assertFalse(energy['same_kernel_as_continuum_sech'])
+        old=Q(10)
+        for K in range(0,12):
+            new=poisson_unit_mean_tail_bound(K)
+            self.assertLess(new,old)
+            old=new
+
+    def test_32_two_law_cones_share_one_real_Fourier_apex(self):
+        for xi in (Q(0),Q(1,4),Q(1,2),Q(1)):
+            old_gap=None
+            for N in (8,16,32,64,128,256):
+                d=two_hemisphere_gaussian_fourier(N,xi)
+                self.assertLessEqual(d['Pascal_Fourier_lower'],
+                                     d['common_Gaussian']+1e-14)
+                self.assertLessEqual(d['common_Gaussian'],
+                                     d['Gamma_chiral_Fourier_upper']+1e-14)
+                gap=d['Gamma_chiral_Fourier_upper']-d['Pascal_Fourier_lower']
+                if old_gap is not None:self.assertLessEqual(gap,old_gap+1e-14)
+                old_gap=gap
+            self.assertLess(old_gap,0.01)
+        with self.assertRaises(SphereError):
+            two_hemisphere_gaussian_fourier(2,Q(2))
 
     def test_27_full_receipt_has_no_zeros_and_no_ghost_sphere(self):
         d=receipt()
