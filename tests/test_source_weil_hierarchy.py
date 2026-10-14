@@ -269,5 +269,50 @@ class CoupledResolutionTests(unittest.TestCase):
             h.gamma_refinement_delta(0.5,16,24)
 
 
+
+
+class GammaDiamondTests(unittest.TestCase):
+    def test_positive_tail_is_second_order(self):
+        for J in (1,2,3,4,8,16,32,64,128):
+            t=h.authentic_positive_gamma_tail_norm(J)
+            self.assertGreater(t,0)
+            self.assertLess(t,h.gamma_tail(J))
+        for J in range(1,20):
+            self.assertGreater(h.authentic_positive_gamma_tail_norm(J),
+                               h.authentic_positive_gamma_tail_norm(J+1))
+
+    def test_true_gamma_modes_increase_loewner_clock_energy(self):
+        indices=(-1,0,1)
+        for weights in ((1,-2,1),(1,0,-1),(1,-1,0)):
+            energies=[h.monotone_gamma_mode_rayleigh(indices,weights,j)
+                      for j in (1,2,3,4,5)]
+            self.assertTrue(all(b>a>0 for a,b in zip(energies,energies[1:])))
+
+    def test_source_spectrum_asymmetric_bounds_sharper(self):
+        st=h.stage(Q(1,2),4,4)
+        output=h.original_source_one_sided(st,iterations=6,amplitude=1)
+        self.assertEqual(output["source"],'AUTHENTIC_Q_ZETA_SUZUKI_2026_1_3')
+        self.assertLess(output["spatial_interval_norm_error"],st.norm_error)
+        old=h.certified_upper_negative_depth(st,iterations=6)+st.norm_error
+        self.assertLess(output["upper_negative_depth"],old)
+        self.assertGreaterEqual(output["upper_negative_depth"],
+                                output["lower_negative_depth"])
+        self.assertFalse(output["rh_proved"])
+        self.assertLess(output["positive_gamma_tail_norm_upper"],h.gamma_tail(st.J))
+
+    def test_true_gamma_tail_positive_without_source_mutation(self):
+        st=h.stage(Q(1,2),4,3)
+        out=h.original_source_one_sided(st,iterations=4,amplitude=1)
+        self.assertEqual(out["spatial_interval_norm_error"]+
+                         2*st.a*h.gamma_tail(st.J),st.norm_error)
+
+    def test_forged_stage_rejected_for_one_sided_sign(self):
+        st=h.stage(Q(1,2),3,3)
+        with self.assertRaises(h.WeilHierarchyError):
+            h.original_source_one_sided(replace(st,source="fake-Gamma"))
+        with self.assertRaises(h.WeilHierarchyError):
+            h.original_source_one_sided(replace(st,norm_error=Q()))
+
+
 if __name__=='__main__':
     unittest.main()
