@@ -57,3 +57,14 @@ As `K` grows with `L` fixed, the enclosure width `(M-m)/(K+1) -> 0`, so it is a 
 1. Combine the sharp enclosure with the ZCR-06 LCM structure to separate the tail into the synchronized `jL` cells (exactly computable) and the residual, refining the lower bound toward `1/L²` plus a residual term.
 2. For the optimal Báez-Duarte coefficient family `a_n = -mu(n)/n`, derive an explicit `L`-asymptotic for `M` and `m` and test whether the enclosure width remains useful as `K` grows.
 3. Attempt the same periodicity argument on the **matched Euler vs non-Euler (Davenport–Heilbronn)** mutation to confirm the enclosure is source-faithful (it must be, since it uses only `r_n` periodicity — verify it detects no source, i.e. it is a pure instrument).
+
+## Lean kernel check (node Q05)
+
+The load-bearing periodicity step is formalized in `formal/PeriodicResidue.lean`
+(standalone Lean 4.14.0, no mathlib) and checks with exit 0:
+
+- `residue_periodic`: `(k + L) % n = k % n` whenever `n > 0` and `n ∣ L` (depends only on `propext`);
+- `clock_periodic`: `(k + n) % n = k % n` (`propext` only);
+- `sum_periodic`: pointwise addition preserves period `L` (**axiom-free**).
+
+Run: `lean formal/PeriodicResidue.lean`. Together the first and third give, by structural induction over a modulus family, `F(k + L) = F(k)` for the integer shadow of the clock combination — the exact hypothesis that makes the periodic-tail enclosure valid.
