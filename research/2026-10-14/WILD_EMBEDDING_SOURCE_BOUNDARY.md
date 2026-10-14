@@ -168,3 +168,23 @@ Thus if a finite stage constructs a unit test vector u and proves
 In the exact five-cycle toy, m=1 is certified by the first coordinate basis vector and the compressed commutator \(\mathrm{diag}(-1,0,1)\). With a **declared** error bound \(\epsilon=1/10\), the rigorous conditional lower bound is \(4/5\). An independent exact rational C perturbation by the positive diagonal \(+\frac1{10}|e_0\rangle\langle e_0|\) satisfies the comparison and preserves a commutator of norm at least \(4/5\). \`conditional_commutator_stability\` preserves a conspicuous \`genuine_arithmetic_gamma_error_verified=False\` flag: this is NOT an actual certified approximation of the real Gamma convolution.
 
 The genuine arithmetic route can use this only after (i) producing source-correct \(P_a,T_{\log 2},C_\Gamma\), including their Hilbert spaces, (ii) independently bounding the precise \(C_\Gamma-C_{\Gamma,J}\) operator error in the same norm, and (iii) proving a test witness m on that precise source. Sibling PR #86 investigates this authentic route already; its stated continuum lower bound is **not** replicated or independently proved here. Even a nonzero authentic commutator cannot by itself dominate the full negative prime/pole/contact/half-density terms in Suzuki's completed Weil form.
+
+
+## 9. HOSTILE ABLATION: wild complement topology cannot become Weil-sign discontinuity — WES-11 (PROVED CLASSICAL NO-GO)
+
+The user's analogy is strongest in **observer representational access and witness compactness**, but it has a sharp mathematical limit that must be preserved.
+
+The map \(\Sigma\mapsto\pi_1(S^3\setminus\Sigma)\) is *not* invariantly continuous under Hausdorff approximation by tame spheres: Alexander's finite approximants can have simply connected exteriors while the wild limit has a nontrivial exterior group. However, the **positive operator cone** is closed even in the **strong operator topology** on bounded self-adjoint operators. If \(A_n\succeq0\) and \(A_nu\to Au\) for every fixed u, then
+\[
+ \langle Au,u\rangle=\lim_n\langle A_nu,u\rangle\ge0
+ \qquad(\forall u).
+\]
+Under the **stronger operator-norm control** already proved for genuine Suzuki \(G_{a,J,N}\) in ancestor PR #85, negative depth is even quantitatively Lipschitz:
+\[
+ \boxed{|d_-(A_n)-d_-(A)|\le\|A_n-A\|.}\tag{W11}
+\]
+Therefore a **true negative** Weil direction cannot first appear only *after* an infinite norm-convergent chain of wholly positive exact operators. If \(d_-(G_a)=d>0\), then for every sufficiently large certified stage with \(\|G_a-G_{a,J,N}\|<d/2\), its negative depth is \(>d/2\). This is an existential finite witness theorem, not an *effective finite cutoff*: d is unknown, and stage resource requirements may be astronomically large.
+
+The exact rational toy \(G_\infty=\operatorname{diag}(1,-1)\), \(G_n=\operatorname{diag}(1,-1+1/n)\) has \(\|G_n-G_\infty\|=1/n\) and \(d_-(G_n)=\max(0,1-1/n)\): at n=1 the observer sees a PSD stage, but by n=2 a negative direction must already be visible. The returned \`wild_limit_sign_pathology_possible=False\` is scope-labeled as **generic operator mathematics**, not an original Weil computation.
+
+**Crucial verdict:** Wild embedding supplies a compelling model for **why finite ambient probe languages may omit source structure or why stagewise homotopy witnesses fail to glue without uniform geometry**. It does **NOT** supply a mathematical mechanism by which *all* exact PSD, norm-convergent arithmetic Weil approximants could develop negative spectrum only at their limit. Any proposal making that analogy is **REFUTED** within the correct operator topology. Remaining source-specific RH difficulty is proving a universal *quantified sign theorem*, not overcoming a discontinuity of the PSD cone. This is an important falsification of the preferred intuitive frame, retained as a result rather than silently repaired.
