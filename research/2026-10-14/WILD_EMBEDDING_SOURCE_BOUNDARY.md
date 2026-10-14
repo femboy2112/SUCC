@@ -128,9 +128,9 @@ It satisfies (W6)–(W8) exactly; the full observer P=I or single-coordinate obs
 If a lawful source and test-domain transport is **unitary**, \(G\mapsto UGU^*\), then
 \[
  \boxed{d_-(UGU^*)=d_-(G),\qquad
- \langle UGu,Uu\rangle=\langle Gu,u\rangle .}\tag{W10}
+ \langle (UGU^*)(Uu),Uu\rangle=\langle Gu,u\rangle .}\tag{W10}
 \]
-The displayed quadratic identity should be read as \(\langle (UGU^*)(Uu),Uu\rangle=\langle Gu,u\rangle\). Thus a mere *re-embedding/relabeling of Hilbert coordinates* does not turn an indefinite Weil form into a positive one. An exact rational 3–4–5 orthogonal two-state witness transforms a \(-1\) Rayleigh direction to a new basis, retaining its exact \(-1\) value. No wild-to-Weil Hilbert intertwiner is given: topological ambient homeomorphisms need not preserve the analytic source, measure, Gamma, time parameter or compact test-function domain.
+Thus a mere *re-embedding/relabeling of Hilbert coordinates* does not turn an indefinite Weil form into a positive one. An exact rational 3–4–5 orthogonal two-state witness transforms a \(-1\) Rayleigh direction to a new basis, retaining its exact \(-1\) value. No wild-to-Weil Hilbert intertwiner is given: topological ambient homeomorphisms need not preserve the analytic source, measure, Gamma, time parameter or compact test-function domain.
 
 **Crucial boundary:** Neither perfect exterior \(\pi_1\) nor nontrivial compressed commutators supply \(G_a\succeq0\). A source-identified operator map with the original prime powers, half density, real Gamma/contact, poles, proper \(H_0^1\) and full test quantifiers remains necessary.
 
