@@ -1,6 +1,7 @@
 """Exact finite mini-carrier proofs, ghost controls, and source-closure tests."""
 import unittest
 from itertools import permutations
+from fractions import Fraction as Q
 from observational_succ.miniature_carrier import (
     Carrier, Mini, MiniatureContractError, compile_factor, compile_subcarrier,
     compile_dual_product, future_partition, dark_target_witness,
@@ -308,3 +309,15 @@ class ClockFamilyTheoremTests(unittest.TestCase):
             self.assertFalse(cyclic_successor_factor(m,n)['surjective_successor_factor_exists'])
         for n in (2,3,7):
             self.assertTrue(cyclic_successor_factor(n,n)['equivariant_subcarrier_section_exists'])
+
+
+class AllDepthMiniatureBoundaryTests(unittest.TestCase):
+    def test_arbitrary_depth_formula_controls(self):
+        from observational_succ.miniature_carrier import all_depth_successor_shell_defect
+        for q in (2,3,5,6):
+            for level in range(1,5):
+                c=all_depth_successor_shell_defect(q,level)
+                self.assertEqual(Q(c['signed_commutator']), Q(2,q**level+1))
+                self.assertEqual(c['detected_at_cell'],q**level-1)
+                self.assertTrue(c['nonzero_at_every_finite_depth_proved_by_formula'])
+                self.assertFalse(c['RH_proved'])

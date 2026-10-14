@@ -1,5 +1,15 @@
 {
   "RH_proved": false,
+  "all_depth_shell_commutator": {
+    "RH_proved": false,
+    "detected_at_cell": 8,
+    "level": 2,
+    "nonzero_at_every_finite_depth_proved_by_formula": true,
+    "physical_sensor_installed": false,
+    "q": 3,
+    "signed_commutator": "1/5",
+    "source_cell": 9
+  },
   "canonical_observable_quotient": 2,
   "ghost_dual_product_rejected": "ghost_joint_states",
   "independent_dual_product_certified": true,

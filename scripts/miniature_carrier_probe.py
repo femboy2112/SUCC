@@ -13,7 +13,7 @@ if str(ROOT) not in sys.path:
 
 from observational_succ.miniature_carrier import (  # noqa: E402
     Carrier, Mini, compile_factor, compile_subcarrier, compile_dual_product,
-    compile_nested_factor, future_partition, dark_target_witness, cyclic_successor_factor,
+    compile_nested_factor, future_partition, dark_target_witness, cyclic_successor_factor, all_depth_successor_shell_defect,
 )
 from observational_succ.miniature_stochastic import (  # noqa: E402
     StochasticCarrier, StochasticMini, joint_factor,
@@ -100,6 +100,7 @@ def receipt() -> dict:
         'virtual_factor_certified':factor['certified'],
         'canonical_observable_quotient':minst['final_model_states'],
         'whole_family_cyclic_nonsplit': cyclic_successor_factor(12,4),
+        'all_depth_shell_commutator': all_depth_successor_shell_defect(3,2),
         'independent_dual_product_certified':genuine_joint['certified'],
         'ghost_dual_product_rejected':fake_joint['reason'],
         'unobservable_original_source':dark['reason'],

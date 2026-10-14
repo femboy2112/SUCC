@@ -411,3 +411,30 @@ def cyclic_successor_factor(m: int, n: int) -> dict:
             "counterexample_if_not_factor": None if valid else
                  f"parent identity after {m} successors contradicts mini period {n}",
             "RH_proved": False}
+
+
+def all_depth_successor_shell_defect(q: int, level: int) -> dict:
+    """Exact finite certificate of [S*, P_level] delta_(q**level).
+
+    For every positive integer depth, the formal proof gives the signed
+    coefficient 2/(q**level+1) at cell q**level-1. This is a Wold-shell
+    non-intertwining obstruction, not a completed arithmetic Weil pairing.
+    """
+    if type(q) is not int or type(level) is not int or \
+            not 2 <= q <= 20 or not 1 <= level <= 8:
+        raise MiniatureContractError('finite dilation and positive depth required')
+    m = q ** level
+    if 2*m > 100_000:
+        raise MiniatureContractError('shell witness exceeds exact source budget')
+    from observational_succ.dual_shell_observer import project_level, shift_pullback
+    f = {m: Q(1)}
+    before = shift_pullback(project_level(f, q, level))
+    after = project_level(shift_pullback(f), q, level)
+    got = before.get(m-1, Q()) - after.get(m-1, Q())
+    expected = Q(2, m + 1)
+    if got != expected:
+        raise ArithmeticError('additive/dilation boundary witness mismatch')
+    return {'q': q, 'level': level, 'source_cell': m,
+            'detected_at_cell': m-1, 'signed_commutator': str(got),
+            'nonzero_at_every_finite_depth_proved_by_formula': True,
+            'physical_sensor_installed': False, 'RH_proved': False}

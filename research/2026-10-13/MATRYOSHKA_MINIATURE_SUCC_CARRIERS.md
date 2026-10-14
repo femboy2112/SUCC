@@ -154,6 +154,22 @@ For *finite reports* of a source supported on finitely many reciprocal cells and
 
 **Exact negative control remains:** for any fixed N, the parent source \(f_N=\mathbf1_{[q^N,2q^N)}\) has first N complementary shells zero, although \(f_N\ne0\). Its remaining energy is \(1/(2q^N)\). Thus no finite collection of shell-miniatures has global uniform operator-norm completeness over the full Hilbert source class. A miniature can be *complete for a declared finite target* without having completed infinite observation.
 
+**M07 — additive obstruction at *every* finite dual-E depth (PROVED LOCAL).** For any integer q>=2 and any n>=1 let m=q^n, f=delta_m, let P_n be the q-dilation range projection, and let T_S f(k)=f(k+1) be the additive successor pullback. At cell k=m-1, the full quotient-block formula gives
+
+\[
+(P_n\delta_m)(m)=\frac{m w_m}{w_1}=\frac{2}{m+1}.
+\]
+
+But T_S delta_m=delta_(m-1), whose support lies strictly before the first permitted P_n block; hence P_n(T_S delta_m)=0. Therefore
+
+\[
+\boxed{\bigl[(T_SP_n-P_nT_S)\delta_{q^n}\bigr](q^n-1)
+=\frac{2}{q^n+1}>0}\quad\forall q\ge2,\ n\ge1.
+\tag{M07}
+\]
+
+This strengthens the old single-depth 2/3 witness into a **uniform-in-depth algebraic counterexample** to naive SUCC-equivariance of the Wold-shell construction. The coefficient tends to zero as n grows, but it never vanishes at a finite positive depth; it does not assert a lower bound uniform in depth, operator norm divergence, or an RH obstruction. The exact new test runs q=2,3,5,6 and depths 1..4. Authentic prime labels are a *separate* source gate: q=6 obeys the same geometric formula.
+
 Additionally, the earlier exact additive-transport witness \( [T_S,P_1]\delta_2\vert_{k=1}=2/3\) survives. The dual-shell mini's extracted observations are not magically a new additive SUCC-equivariant instrument. Such transport needs an additional lawful connection and calibration.
 
 ## 9. What would actually make E more capable?
@@ -168,9 +184,9 @@ These are different repairs and must not be collapsed into 'E now has access to 
 
 **Code:** `observational_succ/miniature_carrier.py`, `observational_succ/miniature_stochastic.py`.
 
-**Tests:** `tests/test_miniature_carrier.py`, `tests/test_miniature_stochastic.py` (24 targeted tests, including 360 independently seeded finite automata, different-oracle pair-state BFS comparison, all twelve four-clock injections, finite-clock factor-family cases, source-marginal negative controls, exact expanded event traces, unsupported-preparation and original-source dark controls). Source code and theorem proofs share authorship; tests are regression and triangulation, not an independent academic referee.
+**Tests:** `tests/test_miniature_carrier.py`, `tests/test_miniature_stochastic.py` (25 targeted tests, including 360 independently seeded finite automata, different-oracle pair-state BFS comparison, all twelve four-clock injections, finite-clock factor-family cases, source-marginal negative controls, exact expanded event traces, unsupported-preparation and original-source dark controls). Source code and theorem proofs share authorship; tests are regression and triangulation, not an independent academic referee.
 
-**Receipt:** `python scripts/miniature_carrier_probe.py --output research/2026-10-13/MINIATURE_CARRIER_RECEIPT.json`, exact JSON returned deterministically. At the pinned local test environment, the **40 isolated prior+new Python tests** pass, of which **24 are new** (19 deterministic plus 5 stochastic). Full actual SUCC main + PR #59 union CI, Lean kernel for the new lemmas, physical calibration and academic novelty remain unverified until separately executed.
+**Receipt:** `python scripts/miniature_carrier_probe.py --output research/2026-10-13/MINIATURE_CARRIER_RECEIPT.json`, exact JSON returned deterministically. At the pinned local test environment, the **41 local isolated tests** pass (including one inherited locally updated shell test absent from the pinned remote parent). The exact remote stacked branch contains **40 tests** (15 from the parent plus 25 new: 20 deterministic and 5 stochastic). Full actual SUCC main + PR #59 union CI, Lean kernel for the new lemmas, physical calibration and academic novelty remain unverified until separately executed.
 
 **Important verdict:** E can formally produce *new miniature observer machines from old lawful carrier operations* and prove their correctness by complete finite simulation. Two construction routes—mono/invariant subcarrier and epi/quotient realization—are genuinely distinct, and nested machines compose with explicit event debt. Individually lawful minis cannot be freely multiplied into a source-independent ensemble. New physical probes and claimed real-world semantics must be separately authorized; a semantic model alone cannot grant them.
 

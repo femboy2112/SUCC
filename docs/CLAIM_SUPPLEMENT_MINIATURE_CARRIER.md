@@ -12,6 +12,7 @@
 | MC06 | All-prior stochastic public-law mini factor iff complete report-plus-next-current-state joint kernel pushes forward along decoder. | CLASSICAL/PROVED LOCAL; mutation controls |
 | MC07 | Recursive compilation under existing primitive tool closure cannot separate old-tool full-behaviorally equivalent original sources. | PROVED LOCAL; source-conditioned real physical instruments remain separate |
 | MC08 | Finite shell reports admit a bounded transcript automaton given actual coefficient access; no uniform finite Wold-shell deadline on full H. | CLASSICAL/conditional; prior pure-isometry negative control |
+| MC10 | For every finite n>=1, [T_S,P_n] delta_(q^n) has exact nonzero coefficient 2/(q^n+1) at q^n-1, for q>=2. | PROVED LOCAL and exact independent parameter checks; no uniform lower bound |
 | MC09 | Physical device creation, quantum/Higgs carrier selection, arithmetic Weil identification, and RH-positive completed construction. | UNVERIFIED |
 
 **Reproduction:** `python -m unittest discover -s tests -p 'test_miniature_*.py' -v`; `python scripts/miniature_carrier_probe.py`. Source-typed exact-rational receipt and the nonempty no-go witness are not independent physical data.
