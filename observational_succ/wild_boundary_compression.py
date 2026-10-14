@@ -156,7 +156,7 @@ def gauge_conjugation(A,signs):
     signs=tuple(signs)
     if len(A)!=len(A[0]) or len(signs)!=len(A) or any(type(s) is not int or s not in (-1,1) for s in signs):
         raise BoundarySourceError("declared diagonal unitary basis transport")
-    return tuple(tuple(signs[i]*A[i][j]*signs[j] for j in range(len(A)))
+    return tuple(tuple(signs[i]*A[i][j]*signs[j] for j in range(len(A))) for i in range(len(A)))
 
 
 def quadratic(A,vector):
