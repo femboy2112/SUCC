@@ -35,5 +35,11 @@ theorem sum_periodic {α : Type} [Add α]
   intro k
   rw [hf k, hg k]
 
-end PeriodicResidue
+/-- The synchronized cell `L` vanishes for every modulus dividing `L`:
+`L % n = 0`.  This is the exact reason the blackout defect `|1 - F(L)|^2 = 1`
+in the tail-split enclosure (TS-01): every residue clock reads 0 at the lcm
+cell. -/
+theorem blackout_cell_vanishes (n L : Nat) (hdiv : n ∣ L) : L % n = 0 :=
+  Nat.dvd_iff_mod_eq_zero.mp hdiv
 
+end PeriodicResidue
