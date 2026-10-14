@@ -314,5 +314,17 @@ class GammaDiamondTests(unittest.TestCase):
             h.original_source_one_sided(replace(st,norm_error=Q()))
 
 
+
+
+class NoFinitePositivityShortcutTests(unittest.TestCase):
+    def test_monotone_negative_stages_can_converge_to_zero(self):
+        values=[h.vanishing_positive_tail_toy(j) for j in (1,2,4,8,16,32,64)]
+        self.assertTrue(all(x<y<0 for x,y in zip(values,values[1:])))
+        for j in (1,8,64,1024):
+            self.assertLess(abs(h.vanishing_positive_tail_toy(j)),Q(1,j))
+        with self.assertRaises(h.WeilHierarchyError):
+            h.vanishing_positive_tail_toy(0)
+
+
 if __name__=='__main__':
     unittest.main()
