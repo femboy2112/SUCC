@@ -384,6 +384,7 @@ def gaussian_prime_phase_packets(primes,frequencies,scale_N,time_bound,window_ha
             'max_time_bound':str(T),'spatial_window_halfwidth':str(R),
             'all_characters_verified':True,
             'translation_residual_norm_squared_upper':str(err_squared),
+            'finite_intertwiner_operator_norm_squared_upper':str(len(chars)*err_squared),
             'offdiag_gram_operator_upper':str(gram_bound),
             'approximate_isometry_verified':gram_bound<1,
             'individual_compact_window_mass_upper':str(mass_bound),

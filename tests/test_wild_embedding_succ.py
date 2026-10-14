@@ -245,6 +245,7 @@ class WildMetricAndWeilControls(unittest.TestCase):
         self.assertTrue(p['approximate_isometry_verified'])
         self.assertLess(Q(p['offdiag_gram_operator_upper']),Q(1,5))
         self.assertLess(Q(p['translation_residual_norm_squared_upper']),Q(1,250))
+        self.assertEqual(Q(p['finite_intertwiner_operator_norm_squared_upper']),3*Q(p['translation_residual_norm_squared_upper']))
         self.assertEqual(Q(p['individual_compact_window_mass_upper']),Q(3,32))
         self.assertFalse(p['bounded_global_solenoid_to_L2_intertwiner_exists'])
         self.assertTrue(p['prime_character_source_is_circle_solenoid_not_sphere'])
