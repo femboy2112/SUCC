@@ -12,6 +12,7 @@ The handoff contract is [docs/RH_HANDOFF.md](../../docs/RH_HANDOFF.md). A docume
 - [Authenticated theta even-Taylor jets and Plato-cave obstruction](2026-10-14-theta-jets-cave.md) — 21 exact-rational coefficient enclosures, source-certified Rouché disk radius 11/2, positive-moment interaction laws and explicit finite-shadow off-line-zero impostor; **no Weil sign or RH proof**.
 - [Source-certified complex theta contour and original Weil spectral shadow](2026-10-14-theta-contour-Weil-local.md) — rational Rouché proof of one simple critical-line zero, source-typed positive local Weil spectral operator and explicit off-line finite-shadow impostor; **no global Weil sign or RH proof**.
 - [Unconditional signed Weil H¹ high-spectrum tail](2026-10-14-signed-Weil-H1-tail.md) — original-theta Jensen zero density, whole-H₀¹ signed spectral tail rate `70 a exp(a) log(16T)/T`, pinned positive first pair and honest unknown middle; **no completed Weil positivity or RH proof**.
+- [Wild embedding and carrier-locked SUCC holonomy](2026-10-14-wild-embedding-Weil.md) — Alexander horned-sphere free-group source, perfect yet nontrivial exterior, sharp nilpotent observer depth, prime-twisted sphere countermodel, and the Suzuki first-wavefront H¹ metric repair; **not a topology identification of zeta or a Weil sign theorem**.
 - [Template](TEMPLATE.md) — required mathematical scope, provenance, adversarial controls and next proof obligation.
 
 RH remains unsolved. A handoff document is **not** an assertion of an RH proof.
