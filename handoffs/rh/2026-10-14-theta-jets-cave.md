@@ -1,0 +1,11 @@
+# RH HANDOFF — certified original Xi even jets and analytic observability
+
+**Source:** femboy2112/SUCC, research/xi-theta-certified-jets-cave-2026-10-14, stacked on Gaussian PR #74 `6c9e1cb1d6bac0acb7ce38890ede6390881a2202`. Provenance is the original Jacobi theta / single-Gamma completed zeta of source-interaction PRs #72/#73, not a numerical zero list or invented positive test state.
+
+**RH PROVED: no.** The source-identified theorem gives rational enclosures of `a_0..a_20` for `xi(1/2+z)=sum a_j z^(2j)`, proved analytic tail and a rational Rouché zero count 0 in the closed disk radius 11/2. The source is the authentic integer theta, including `pi^(-s/2) Gamma(s/2)` and pole removal, with all-place source identity inherited. No nontrivial zeros or analytic-continuation oracle are used in constructing certificates.
+
+The global positive theta moment sequence `m_j=4^j(2j)!b_j` induces Hankel and shifted Hankel PSD constraints and an authentic cosh Gram `1/2(B(z+conj w)+B(z-conj w))`. These are positive **because** the original theta measure is positive; no claim that they equal Weil/Suzuki's signed quadratic form. A two-atomic-measure countermodel proves finite positive moments do not identify the hidden source; an even Fock polynomial with the identical authentic first two Xi coefficients has norm²<1 and a deliberately chosen offcritical zero at 20+20i, and the even Fock-space finite-observation no-unique-curve control survives. For odd primitive chi4, signs/parity/conductor change and these positive-measure claims must not be reused without proof.
+
+Proof reproduction: `python -m unittest discover -s tests -p test_theta_taylor_jets.py -v`; `python scripts/theta_taylor_jets_probe.py --verify research/2026-10-14/THETA_EVEN_JETS_RECEIPT.json`. Independent numeric holdout, not sign proof: `python scripts/theta_jet_independent_oracle.py`.
+
+**Missing global RH bridge:** certify a source-identified bilinear map from these jets/moments to the genuine completed signed Weil form with domain, Gamma, pole, half-density, true Euler source, χ4 parity and conductor controls, then derive a uniform all-test sign. An exact contour certificate proves only the zero count within its specific contour. The manuscript does not claim new special-function mathematics or theorem priority; no merge into FuckingRH has been made.
