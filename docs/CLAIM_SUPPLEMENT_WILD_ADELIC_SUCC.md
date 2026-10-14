@@ -22,6 +22,8 @@
 | WA-18 | Same abstract solenoid can have different complement `π1` under different ambient embeddings | EXTERNAL THEOREM / NEGATIVE CONTROL | Conner–Meilstrup–Repovš (2015) includes abelian and nonabelian exteriors |
 | WA-19 | Source-indexed additive solenoid = one **additive** adelic-class host; identity with multiplicative idele/Weil sign | ADDITIVE CLASSICAL / SIGN BRIDGE **UNVERIFIED** | Source-correct pole, Gamma, conductor, prime-power, half-density and fake-6 controls still required |
 
+| WA-20 | There is **no nonzero bounded** full real-flow-equivariant operator `L²(Σ_q,Haar)→L²(R,dx)` (nor reverse) | CLASSICAL ANALYSIS / DIRECT PAPER PROOF | Characters are pure-point eigenvectors on compact solenoid; Lebesgue translations have no `L²` eigenvectors. A unitary Haar solenoid = Weil real-line identification is refuted. |
+
 **Exact artifacts:** `observational_succ/wild_adelic_tower.py`, `tests/test_wild_adelic_tower.py`, `scripts/wild_adelic_tower_probe.py`, and `research/2026-10-14/WILD_ADELIC_SUCC_RECEIPT.json`. The deterministic receipt is a finite algebra audit, not a topological proof checker. Full manuscript: `research/2026-10-14/WILD_ARITHMETIC_COMPLETION.md`. Source originals preserved. Academic novelty unverified; no theorem-priority claim.
 
 **Next genuine moonshot:** prove a source-correct additive-to-multiplicative analytic/trace bridge from `Σ_Q` to the completed signed Weil form, on an explicitly identified common core. The arithmetic solenoid itself is a classical object; do not call it a Hilbert–Pólya operator or assume its positive Gram certifies ζ-zero positions.

@@ -198,6 +198,27 @@ class SourceFlowAndGlobalInverse(unittest.TestCase):
         ph[5]=(ph[5]+F(1,17))%1
         with self.assertRaises(WildTowerError): s.inverse_coordinate(0,3,tuple(ph))
 
+    def test_character_eigenphase_and_stage_naturality(self):
+        for s in (factorial(),dyadic()):
+            for n in range(5):
+                for k in range(n,8):
+                    for winding in (-7,-1,0,1,8):
+                        d=s.stage_map(n,k)
+                        for t in (F(-3,5), F(0), F(7,13)):
+                            self.assertEqual(s.flow_character_phase(n,winding,t),
+                                             s.flow_character_phase(k,winding*d,t))
+
+    def test_source_real_character_is_additive_and_nontrivial(self):
+        s=factorial()
+        q=s.localization_value(4,1)
+        self.assertEqual(q,F(1,120))
+        for t,u in ((F(1,13),F(2,7)),(F(-2,3),F(5,9))):
+            self.assertEqual(s.flow_character_phase(4,1,t+u),
+                             (s.flow_character_phase(4,1,t)+s.flow_character_phase(4,1,u))%1)
+        self.assertNotEqual(s.flow_character_phase(4,1,1),F(0))
+        with self.assertRaises(WildTowerError):
+            s.flow_character_phase(1,1,0.1)
+
     def test_wrong_report_type_rejected(self):
         s=factorial()
         with self.assertRaises(WildTowerError): s.real_flow_phases(0.1,3)

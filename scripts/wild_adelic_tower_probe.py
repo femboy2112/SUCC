@@ -74,6 +74,12 @@ def receipt():
             'folner_N_100':str(source_qualified_folner_energy(factorial,steps,100)),
             'folner_N_1000':str(source_qualified_folner_energy(factorial,steps,1000)),
             'no_uniform_gap_for_these_shifts':True,
+            'exact_character_half_at_real_1':str(factorial.flow_character_phase(1,1,1)),
+            'exact_character_one_twenty_at_real_7_over_13':str(
+                factorial.flow_character_phase(4,1,F(7,13))),
+            'solenoid_hilbert_real_flow_pure_point_external_theorem':True,
+            'Lebesgue_real_line_translation_no_L2_eigenfunctions_external_theorem':True,
+            'nonzero_bounded_real_flow_intertwiner_exists':False,
             'not_the_Weil_quadratic_form':True,
         },
         'ambient_conditioning_toy':{
@@ -85,6 +91,7 @@ def receipt():
             'WA-01_to_WA-04':'CLASSICAL / SOURCE-SPECIALIZED PAPER PROOFS',
             'WA-05_to_WA-13':'CLASSICAL TOPOLOGICAL INPUTS + EXACT ARITHMETIC CERTIFICATES',
             'WA-06B':'PROVED ELEMENTARY PRO-KERNEL + SOURCE EXACT TESTS',
+            'WA-20':'DIRECT PAPER NO-GO: PURE POINT TO CONTINUOUS FLOW, NO BOUNDED INTERTWINER',
             'WA-14_to_WA-15':'PAPER PROOF VIA ARZELA-ASCOLI, NO PRIORITY CLAIM',
             'WA-16_to_WA-17':'CLASSICAL COMPACTNESS + EXACT FINITE FOLNER',
             'explicit_geometric_Alexander_embedding_built':False,

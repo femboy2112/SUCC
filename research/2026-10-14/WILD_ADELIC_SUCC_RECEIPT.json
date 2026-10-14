@@ -13,6 +13,7 @@
     "WA-06B": "PROVED ELEMENTARY PRO-KERNEL + SOURCE EXACT TESTS",
     "WA-14_to_WA-15": "PAPER PROOF VIA ARZELA-ASCOLI, NO PRIORITY CLAIM",
     "WA-16_to_WA-17": "CLASSICAL COMPACTNESS + EXACT FINITE FOLNER",
+    "WA-20": "DIRECT PAPER NO-GO: PURE POINT TO CONTINUOUS FLOW, NO BOUNDED INTERTWINER",
     "Weil_form_identified_with_solenoid_gram": false,
     "additive_adele_class_identified_with_multiplicative_idele_class": false,
     "explicit_geometric_Alexander_embedding_built": false,
@@ -29,10 +30,15 @@
     "unknown_ambient_embedding_may_have_different_pi1": true
   },
   "exact_gram_gap_control": {
+    "Lebesgue_real_line_translation_no_L2_eigenfunctions_external_theorem": true,
+    "exact_character_half_at_real_1": "1/2",
+    "exact_character_one_twenty_at_real_7_over_13": "7/1560",
     "folner_N_100": "818/1407",
     "folner_N_1000": "818/14007",
     "no_uniform_gap_for_these_shifts": true,
+    "nonzero_bounded_real_flow_intertwiner_exists": false,
     "not_the_Weil_quadratic_form": true,
+    "solenoid_hilbert_real_flow_pure_point_external_theorem": true,
     "steps": [
       [
         "1/2",

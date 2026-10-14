@@ -253,6 +253,17 @@ class TowerLaw:
         _factors(m)
         return tuple(_mod1(m*x) for x in phases)
 
+    def flow_character_phase(self, level: int, winding: int, t: F | int) -> F:
+        """Character xi_(winding/D_level) evaluated at iota(t), as R/Z.
+
+        Exact algebra: chi_(r)(iota(t)) = exp(2*pi*i*r*t).
+        This is the PURE-POINT character law on the compact solenoid;
+        it is emphatically NOT a Lebesgue-Plancherel L2(R) plane wave.
+        """
+        if type(winding) is not int or type(t) not in (int, F):
+            raise WildTowerError('exact character and real-flow rational phase needed')
+        return _mod1(F(winding, self.D(level))*F(t))
+
     def finite_fiber_residues(self, integer: int, depth: int) -> tuple[int, ...]:
         if type(integer) is not int:
             raise WildTowerError('finite fiber index is integral')

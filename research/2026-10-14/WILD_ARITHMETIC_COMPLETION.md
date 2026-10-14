@@ -210,6 +210,30 @@ For an increasing sequence of open connected sets `Y_0⊂Y_1⊂...` with common 
 
 The intentionally noncompact toy `C_n={k∈N:k>=n}` has a witness at each finite stage but no common finite `k`: it demonstrates why claiming compatible global fillings from nonempty stagewise filler sets would be wrong. It is **not** a geometric realization of the horned sphere. Genuine topological noncontractibility relies on ambient inclusion maps, not this toy.
 
+## 5b. A decisive analytic obstruction: intrinsic solenoid spectrum is NOT the Weil real-line spectrum
+
+### WA-20 — no nonzero bounded real-flow intertwiner (CLASSICAL HARMONIC ANALYSIS, DIRECT PROOF)
+
+Let `H_sol=L²(Σ_q,Haar)` and let `R_t` be the unitary Koopman action by the genuine dense Archimedean one-parameter subgroup `ι(t)` of WA-3. Let `H_real=L²(R,dx)` and `(T_t v)(x)=v(x+t)` be the Lebesgue-translation representation used by the Archimedean Suzuki/Weil source. Then:
+
+\[
+\boxed{B:H_{sol}\to H_{real}\text{ bounded and }B R_t=T_tB\ \forall t\in\mathbb R
+\quad\Longrightarrow\quad B=0.}
+\tag{WA-20}
+\]
+
+The reverse direction is equally impossible for a **bounded** full-flow intertwiner.
+
+**Proof.** Pontryagin duality for the compact abelian solenoid supplies an orthonormal basis of Haar-`L²(Σ_q)` consisting of characters `χ_r` indexed by `r∈G_q`, characterized by `χ_(a/D_n)((z_j))=z_n^a`. Under the source-real flow,
+
+`R_t χ_r = exp(±2πi r t) χ_r`, with the sign depending solely on whether the Koopman convention uses `ι(t)` or `ι(-t)`. Thus `Bχ_r` would be an exact eigenfunction of `T_t` for *every* real `t`. But the Fourier transform on Lebesgue-`L²(R)` converts `T_t` to multiplication by `exp(itξ)`; a joint eigenfunction would have Fourier support in one frequency point, a Lebesgue-null set, so it is zero. Therefore `Bχ_r=0` for each `r`. Finite linear combinations of the characters are dense; boundedness yields `B=0`. If `C:H_real→H_sol` is a bounded intertwiner in the reverse direction, its adjoint intertwines from `H_sol` to `H_real` (both actions unitary and the equality holds for all `t`), hence `C*=0`, so `C=0`. QED.
+
+**Consequence.** Every finite circle has discrete Fourier frequencies, and the compact solenoid retains a *countable pure-point* Archimedean flow spectrum (rational frequencies `r∈G_q`). The genuine Lebesgue real-line Weil/Gamma operator has a continuous Fourier spectral representation and **no nonzero `L²(R)` translation eigenvectors**. This is a concrete representation/source mismatch, not just a philosophical objection: a naive unitary (or any bounded) flow-equivariant map cannot identify them. The code checks source-natural exact character phases `r t mod 1` across stages; it does NOT purport to test the infinite-dimensional spectral theorem numerically.
+
+There remain possible non-unitary and unbounded **distributional**, induced-representation, wave-packet, direct-integral, or decompactification bridges. Any proposed such bridge must specify domains and measure normalization and prove equality with the correct prime/Gamma/pole/contact terms. WA-20 excludes the simplest false shortcut, **not** the desired RH-hard mathematical possibility.
+
+In particular, the global solenoid power automorphism `A_p` acts by **rescaling** the real flow (`A_p τ_t=τ_(pt) A_p`), whereas the differentiated Weil prime contribution is a **log-translation** `T_(log p)` on `L²(R)`. It is a second distinct type error to identify these actions by their shared prime label. The solenoid contains a log-translation `τ_(log p)` through `ι`, but its Haar spectral type is still different. That discrepancy must be repaired with an explicit source-preserving analytic construction.
+
 ## 6. The RH-hard bridge remains missing; wildness is not a sign theorem
 
 Existing PR #86 constructs source-correct real-place Carleman plus true prime-2 window translations, proves an explicit compression-commutator lower bound and an infinite-dimensional 30-moment subspace positivity certificate for the signed Weil form. This branch adds an **additive-adelic compact model** with exact arithmetic and extrinsic topology, *not* a second copy of that Weil certificate.
