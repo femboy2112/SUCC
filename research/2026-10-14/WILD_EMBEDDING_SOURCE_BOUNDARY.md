@@ -153,3 +153,18 @@ Thus a mere *re-embedding/relabeling of Hilbert coordinates* does not turn an in
 **Next research instruments:** (i) build a *real* finite-stage PL Alexander model with measured ambient embeddings, protected exterior loops, and quantitative clearance/Lipschitz witness budgets (not a projected sphere image); (ii) develop original-source \(\pi_1\) and pro-\(\pi_1\) inclusion maps for **complement neighborhoods**, NOT the intrinsic sphere alone; (iii) use genuine Suzuki \(P_a\), full-line prime shifts and real Gamma convolution to prove a source-identified boundary defect inequality against the **signed** prime/pole/half-density contributions, preserving domain and all errors; (iv) hostile mutations: selfadjoint sign preserved by unitary, no source 6, wrong parity/conductor, no invented cross-place phase. A nontrivial commutator norm by itself is neither a positivity theorem nor a physical wild-embedding witness.
 
 **Verification:** \`observational_succ/wild_embedding_probes.py\` and \`wild_boundary_compression.py\`; two focused exact suites, deterministic JSON receipt and versioned workflow on Python 3.10/3.13, inherited source provenance. No Lean kernel result, independently validated wild finite meshes, full-repo CI or academic priority claimed until specifically checked.
+
+
+## 8. A robust **conditional** boundary detector for the genuine arithmetic next step — WES-10 (PROVED LOCAL with declared error)
+
+For a unitary global T, any orthogonal projection P and a bounded self-adjoint source bath C, suppose a finite, **independently certified** C₀ satisfies \(\|C-C_0\|\le\epsilon\). Then
+\[
+ \left\|[PTP,PCP]-[PTP,PC_0P]\right\|
+ \le 2\,\|PTP\|\,\|P(C-C_0)P\|\le2\epsilon.
+\]
+Thus if a finite stage constructs a unit test vector u and proves
+\(\|[PTP,PC_0P]u\|\ge m>2\epsilon\), the authentic compressed commutator is nonzero with operator-norm lower bound \(\ge m-2\epsilon\). This is a **model-of-model quantitative error transport**, valid independently of topology. It does NOT infer any signed quadratic form is PSD.
+
+In the exact five-cycle toy, m=1 is certified by the first coordinate basis vector and the compressed commutator \(\mathrm{diag}(-1,0,1)\). With a **declared** error bound \(\epsilon=1/10\), the rigorous conditional lower bound is \(4/5\). An independent exact rational C perturbation by the positive diagonal \(+\frac1{10}|e_0\rangle\langle e_0|\) satisfies the comparison and preserves a commutator of norm at least \(4/5\). \`conditional_commutator_stability\` preserves a conspicuous \`genuine_arithmetic_gamma_error_verified=False\` flag: this is NOT an actual certified approximation of the real Gamma convolution.
+
+The genuine arithmetic route can use this only after (i) producing source-correct \(P_a,T_{\log 2},C_\Gamma\), including their Hilbert spaces, (ii) independently bounding the precise \(C_\Gamma-C_{\Gamma,J}\) operator error in the same norm, and (iii) proving a test witness m on that precise source. Sibling PR #86 investigates this authentic route already; its stated continuum lower bound is **not** replicated or independently proved here. Even a nonzero authentic commutator cannot by itself dominate the full negative prime/pole/contact/half-density terms in Suzuki's completed Weil form.
