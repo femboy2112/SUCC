@@ -133,7 +133,7 @@ Assume `A>C_1` and `B>C_2`. For an integer power `L>=1`, define the *exact nonne
 
 `sum_(n>N) exp(-a*n^2*t) <= integral_N^infinity exp(-a*x^2*t) dx <= exp(-a*N^2*t)/(2*a*t*N)`.
 
-Also `log t<=t-1`, so `t^q<=exp(max(q,0)(t-1))`. Integrate the resulting decaying exponential. Apply `pi>3`, and finally `exp(-x)<=(1+x/L)^(-L)` from `exp(x/L)>=1+x/L`. The spectral series has coefficients `|c_m(k)|<=phi(m)` and `a=pi/m^2`; its exponent is `-(Re(s)+1)/2`. This gives precisely the displayed rational formulas, with no dependence on Im(s). The 41 targeted tests compare certificates against a **separate** analytic special-function/zeta evaluator on withheld points outside Euler convergence; that numerical comparison is a *diagnostic*, not the proof of the universal bound.
+Also `log t<=t-1`, so `t^q<=exp(max(q,0)(t-1))`. Integrate the resulting decaying exponential. Apply `pi>3`, and finally `exp(-x)<=(1+x/L)^(-L)` from `exp(x/L)>=1+x/L`. The spectral series has coefficients `|c_m(k)|<=phi(m)` and `a=pi/m^2`; its exponent is `-(Re(s)+1)/2`. This gives precisely the displayed rational formulas, with no dependence on Im(s). The 47 targeted tests compare certificates against a **separate** analytic special-function/zeta evaluator on withheld points outside Euler convergence; that numerical comparison is a *diagnostic*, not the proof of the universal bound.
 
 **Consequence:** for any fixed s away from poles and any requested positive rational tolerance, E can choose N,K (possibly enormous), compute the finite incomplete-Gamma formula and a mathematical tail bound, obtaining arbitrarily tight approximations to completed zeta across C. The s-plane is a **coordinate of the constructed mathematical model**; no physical observer has to actualize an infinity of distinct instruments. This is not a finite algorithm for deciding RH or the zero-free strip.
 
@@ -176,15 +176,47 @@ The untouched m=1 model is self-dual; model projections carry **source-controlle
 New executable artifacts:
 
 - `observational_succ/all_places_zeta.py`: exact Q place valuations/product formula, p-fractional additive reciprocity, p-clock Fourier projector, typed source atlas, CRT, Ramanujan/Möbius spectral coefficients, source theta refinements, global xi and m-sieve analytic continuations, uniform rational error bound, twisted reflection and fake-6 controls.
-- `tests/test_all_places_zeta.py`: **41 exact/numerical-hostile tests**; independent direct finite Fourier oracle, finite total enumeration, multibranch source diagram, reflection and all-s-plane evaluation, p=2/3/6 model collisions, rational bound diagnostics and analytic zero-order mutants.
+- `tests/test_all_places_zeta.py`: **47 exact/numerical-hostile tests**; independent direct finite Fourier oracle, finite total enumeration, multibranch source diagram, reflection and all-s-plane evaluation, p=2/3/6 model collisions, rational bound diagnostics and analytic zero-order mutants.
 - `scripts/all_places_zeta_probe.py`: deterministic frozen scientific receipt; no nontrivial zero-input calls.
 - `research/2026-10-14/ALL_PLACES_ZETA_RECEIPT.json`: source/epoch/gauge/validation and representative complex-plane values, exact rational uniform bound.
-- `docs/CLAIM_SUPPLEMENT_ALL_PLACES_ZETA.md`: AP-01..AP-17 statuses.
+- `docs/CLAIM_SUPPLEMENT_ALL_PLACES_ZETA.md`: AP-01..AP-19 statuses.
 - `.github/workflows/all-places-zeta.yml`: Python 3.10 +3.13 targeted checks, deterministic receipt and provenance gate.
 
-At the initial isolated source overlay (the exact published parent modules and receipts for structural coupling/Pascal/prime heat/completed Weil, with **no full Git checkout possible due to container network restrictions**) all **214/214** unittest cases passed on Python 3.13.5, and the scientific receipt replays byte-identically. This is **not** yet the full integrated >2000-test repository CI or a Lean kernel proof. The GitHub CI result for this branch must be checked at the exact pushed commit before promoting a status.
+At the initial isolated source overlay (the exact published parent modules and receipts for structural coupling/Pascal/prime heat/completed Weil, with **no full Git checkout possible due to container network restrictions**) all **220/220** unittest cases passed on Python 3.13.5, and the scientific receipt replays byte-identically. This is **not** yet the full integrated >2000-test repository CI or a Lean kernel proof. The GitHub CI result for this branch must be checked at the exact pushed commit before promoting a status.
 
-## 8. Highest-leverage next research gate
+## 8. Upgrading imported Poisson to an actual finite-SUCC Fourier limit (AP-18–19)
+
+A genuine improvement over merely citing Poisson summation is possible **within the original mathematical integer carrier**. Fix integer modulus m, positive rational heat t, a finite observer resolution R≥1, N=mR, and integer observed spectral frequency |k|≤N/2. Define the periodized Gaussian
+
+`G_(m,t)(x) = sum_(ell in Z) exp(-pi*t*(x+m*ell)^2)`.
+
+At finite observational resolution and finite periodization shell H≥2, E constructs the finite cyclic observer
+
+`c_(k,R,H) = 1/(mR) sum_(j=0)^(mR-1) [sum_(ell=-H)^H exp(-pi*t*(j/R+m*ell)^2)] * exp(-2pi*i*k*j/(mR))`.
+
+The sum requires **only finite SUCC positional reports, a selected Gaussian source law and a finite Fourier action**. It is not a physically measured Fourier transform. The classical Gaussian Fourier integral, independently evaluated without a lattice Poisson theorem, gives the *continuous Fourier series coefficient* of the infinite smooth m-periodic source:
+
+`gamma_k = 1/(m*sqrt(t)) * exp(-pi*k^2/(m^2*t))`.
+
+Because the Fourier coefficients have Gaussian decay, this series is absolutely/uniformly convergent, so finite character orthogonality yields the **exact aliasing identity** for full mathematical shell support:
+
+`c_(k,R,infty) = sum_(ell in Z) gamma_(k+ell*mR)`.
+
+For |k|≤mR/2, let a=3(mR−|k|)^2/(m²t), b=3R²/t, c=3tm²(H−1)^2. With any integer L≥1 the full analytic approximation is bounded by the **exact rational number**
+
+`epsilon_clock = (2/m)*max(1,1/t)*(1+a/L)^(-L)*(1+1/b) + (1+c/L)^(-L)/(3*t*m^2*(H−1))`.
+
+**Proof of the two error terms.** For ell≥1 the squared aliased frequencies obey
+
+`(ell*mR−|k|)^2 >= (mR−|k|)^2+(ell−1)*(mR)^2`,
+
+so the alias tail is bounded by a geometric series with ratio `exp(-pi*R²/t)`. Since `exp(-x)≤1/(1+x)`, its denominator inverse is at most `1+1/(3R²/t)`. Also `1/sqrt(t)≤max(1,1/t)` for t>0. For the omitted spatial shells, every location x in [0,m] is at distance at least m(H−1) from the first omitted Gaussian tail. Monotone Gaussian integral comparison gives `exp(-pi*t*m²*(H−1)^2)/(pi*t*m²*(H−1))`. Finally replace `pi>3` and `exp(-x)≤(1+x/L)^(-L)` in both. This is exactly the implemented rational `finite_clock_gaussian_rational_bound` formula; it bounds ideal mathematical sums, NOT mpmath floating-rounding error.
+
+**Consequence:** As R,H increase through lawful finite models, the measured mathematical DFT coefficients converge to the Archimedean Gaussian coefficients. Because the limiting smooth periodic source has a unique uniformly convergent Fourier series, one recovers the arithmetic-progression Gaussian Poisson identity in §3. This is a **finite-clock → Archimedean spectral transport proof route**, not an unexplained 90° rotation or a requirement to query infinitely many instruments in elapsed physical time. Its underlying techniques are classical Fourier analysis; the source/observer interface and calibrated hostile controls are new-to-SUCC packaging.
+
+**Hostile controls:** wrong DFT normalization, missing periodization shells, a requested frequency outside the clock Nyquist window, and too-low sampling resolution are all distinguishable. Six fresh tests compare independently evaluated real Gaussian coefficients with finite DFTs under their precomputed rational bounds. This brings the isolated lineage to **220/220 passing tests** (173 inherited + 47 new), with exact scientific receipt replay; branch remote full CI and formal Lean still require their own status checks.
+
+## 9. Highest-leverage next research gate
 
 **Take the source-indexed global theta/adelic gluing one level higher to a *completed Weil distribution* with actual test-space naturality.** Demand a commuting square of the prime-source additive/logarithmic derivative and the Archimedean gamma model against C_c^∞ test functions, preserving Weil's pole/contact and conductor/half-density, and a quantified uniform remainder in each interval's H¹ norm. This is *not* automatic from the all-s evaluation formula or finite Fourier shadows. The prior branch's signed form identification and O(J^-2) Gamma approximants are the correct audit baseline. A positive source-identified factorization, or an all-test sign lower bound, remains the genuine RH-bearing missing theorem. Compare against matched non-Euler L-functions (proper conductor and parity), fake composite 6 and incorrect Euler characters, with no zero-list construction inputs.
 

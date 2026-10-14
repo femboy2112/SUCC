@@ -19,6 +19,8 @@ from observational_succ.all_places_zeta import (
     squarefree_modulus, symmetric_model_mutant,
     theta_unit_sieve_mobius, theta_units_spatial, theta_units_spectral,
     totient, twisted_reflection_defect,
+    finite_clock_gaussian_fourier, analytic_gaussian_fourier,
+    finite_clock_gaussian_rational_bound,
 )
 
 
@@ -43,6 +45,9 @@ def receipt():
     val_m2=glued_unit_sieve(2,0,13,85,70)
     val_m6=glued_unit_sieve(6,0,13,85,70)
     val_m6_eps=glued_unit_sieve(6,mp.mpf('0.0000001'),13,85,70)/mp.mpf('0.0000001')
+    clock=finite_clock_gaussian_fourier(1,Q(1,2),8,1,8,70)
+    clock_target=analytic_gaussian_fourier(1,Q(1,2),1,70)
+    clock_error=finite_clock_gaussian_rational_bound(1,Q(1,2),8,1,8,24)
     theta_sp=theta_units_spatial(6,Q(1,2),30,70)
     theta_du=theta_units_spectral(6,Q(1,2),85,70)
     theta_mo=theta_unit_sieve_mobius(6,Q(1,2),30,70)
@@ -73,6 +78,12 @@ def receipt():
                                "ramanujan_c6_1":ramanujan_exact(6,1),
                                "ramanujan_c6_6":ramanujan_exact(6,6),
                                "crt_fourier_c6_6":ramanujan_crt_factorized((2,3),6)},
+        "finite_to_arch_clock":{"modulus":1,"heat":"1/2","resolution":8,"frequency":1,"spatial_shells":8,
+                                "finite_DFT":fmt(clock),
+                                "Gaussian_Fourier_integral":fmt(clock_target),
+                                "actual_numeric_difference":fmt(clock-clock_target),
+                                "exact_rational_error_upper_bound":qtext(clock_error),
+                                "source_law_is_mathematical_not_empirical":True},
         "sieve_phase":{"m":6,"t":"1/2",
                        "spatial":fmt(theta_sp),
                        "spectral":fmt(theta_du),

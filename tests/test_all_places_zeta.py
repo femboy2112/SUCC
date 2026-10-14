@@ -24,6 +24,8 @@ from observational_succ.all_places_zeta import (
     theta_unit_sieve_mobius, theta_units_spatial, theta_units_spectral,
     totient, truncated_omega_zero_leading, two_prime_cube_membership,
     unit_residue_labels, twisted_reflection_defect,
+    finite_clock_gaussian_fourier, finite_clock_gaussian_rational_bound,
+    analytic_gaussian_fourier,
 )
 
 class PlaceSourceTests(unittest.TestCase):
@@ -205,6 +207,55 @@ class CoupledResidueTests(unittest.TestCase):
         self.assertEqual(finite_sieved_dirichlet(m,s,N),direct)
         fake=sum((Q(1,n**s) for n in range(1,N+1) if n%m),Q(0))
         self.assertNotEqual(direct,fake)
+
+
+class FiniteToArchClockTests(unittest.TestCase):
+    def test_clock_gaussian_to_arch_integral_with_rational_certificates(self):
+        for m,t,R,k,H in ((1,Q(1,2),4,0,8),(1,Q(3,4),8,1,8),
+                          (2,Q(1,2),6,1,7),(3,Q(2),6,2,7),
+                          (6,Q(1,2),5,2,5),(6,Q(1),12,3,4)):
+            val=finite_clock_gaussian_fourier(m,t,R,k,H,65)
+            integral=analytic_gaussian_fourier(m,t,k,65)
+            bound=finite_clock_gaussian_rational_bound(m,t,R,k,H,24)
+            self.assertIsInstance(bound,Q)
+            self.assertGreater(bound,0)
+            self.assertLess(abs(val-integral),mp.mpf(bound.numerator)/bound.denominator)
+
+    def test_clock_convergence_as_resolution_grows(self):
+        errors=[]
+        for R in (2,4,8,16):
+            approx=finite_clock_gaussian_fourier(1,Q(1,2),R,1,7,65)
+            goal=analytic_gaussian_fourier(1,Q(1,2),1,65)
+            errors.append(abs(approx-goal))
+        self.assertLess(errors[-1],errors[0])
+        self.assertLess(errors[-1],mp.mpf('1e-20'))
+
+    def test_bad_fourier_normalization_is_detectable(self):
+        exact=analytic_gaussian_fourier(2,Q(1),0,65)
+        sampled=finite_clock_gaussian_fourier(2,Q(1),8,0,7,65)
+        self.assertLess(abs(exact-sampled),mp.mpf('1e-24'))
+        self.assertGreater(abs(exact-sampled*16),mp.mpf('3'))
+
+    def test_missing_periodic_spatial_shells_fails(self):
+        exact=analytic_gaussian_fourier(1,Q(1,2),0,65)
+        # H=0 would discard most of the real-line source and is refused.
+        with self.assertRaises(PlaceModelError):
+            finite_clock_gaussian_fourier(1,Q(1,2),8,0,0,65)
+        wrong=sum((mp.exp(-mp.pi*mp.mpf('0.5')*(mp.mpf(j)/8)**2)
+                   for j in range(8)),mp.mpf(0))/8
+        self.assertGreater(abs(wrong-exact),mp.mpf('0.1'))
+
+    def test_observer_nyquist_limit_is_real(self):
+        with self.assertRaises(PlaceModelError):
+            finite_clock_gaussian_rational_bound(2,Q(1),3,4)
+        with self.assertRaises(PlaceModelError):
+            finite_clock_gaussian_fourier(2,Q(1),3,4)
+
+    def test_exact_error_does_not_claim_machine_roundoff(self):
+        b1=finite_clock_gaussian_rational_bound(1,Q(1),8,1,8,16)
+        b2=finite_clock_gaussian_rational_bound(1,Q(1),16,1,8,16)
+        self.assertGreater(b1,b2)
+        self.assertGreater(b1,0)
 
 
 class AnalyticInteractionTests(unittest.TestCase):

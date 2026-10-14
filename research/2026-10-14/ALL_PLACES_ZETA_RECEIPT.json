@@ -61,6 +61,27 @@
     "selfdual_p2_r3_frequency7": 0,
     "selfdual_p2_r3_frequency8": 1
   },
+  "finite_to_arch_clock": {
+    "Gaussian_Fourier_integral": {
+      "imag": "0.0",
+      "real": "0.0026409628381364988422"
+    },
+    "actual_numeric_difference": {
+      "imag": "-8.6283595000871251312e-47",
+      "real": "-8.1398051130615261725e-47"
+    },
+    "exact_rational_error_upper_bound": "38241106483269301001235011189093200463221928710376126269910106643628032/163968613591635812310914017021685450779556313314815333637032579997292816638946533203125",
+    "finite_DFT": {
+      "imag": "-8.6283595000871251312e-47",
+      "real": "0.0026409628381364988422"
+    },
+    "frequency": 1,
+    "heat": "1/2",
+    "modulus": 1,
+    "resolution": 8,
+    "source_law_is_mathematical_not_empirical": true,
+    "spatial_shells": 8
+  },
   "negative_controls": {
     "fake6": {
       "counterexample_integer": 2,

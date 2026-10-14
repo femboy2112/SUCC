@@ -22,4 +22,7 @@
 | AP-16 | Arbitrary finite local Euler products yield true global continuation by themselves | REFUTED | Spurious imaginary-axis poles, invalid global limit outside σ>1 | Poisson/adelic law mandatory |
 | AP-17 | Global source-defined positivity or RH from all-place theta gluing | UNVERIFIED | No all-vector signed-Weil lower bound; zero-independent construction only | True Weil/test-domain isometry plus positivity proof |
 
-**Evidence discipline:** 41 newly added tests and exact scientific receipt make project-local computational results reproducible. They do not constitute a physical source experiment, a proof-assistant certification of external Tate theory, or an independent mathematical referee. Full CI/Lean statements are withheld until exact-head results actually arrive.
+| AP-18 | A finite cyclic SUCC Gaussian DFT converges to real Fourier coefficient via exact aliasing and shell truncation | CLASSICAL / PROVED LOCAL | Absolutely convergent smooth Fourier series; direct finite clock controls | Independent Lean integral/Fourier formalization |
+| AP-19 | Uniform ideal finite-clock to Arch Gaussian coefficient error admits an exact rational majorant | PROVED LOCAL / ANALYTIC | Frequency alias Gaussian/geometric tail and spatial Gaussian shell bound; independent high-precision tests | Verified interval arithmetic for actual floating outputs |
+
+**Evidence discipline:** 47 newly added tests and exact scientific receipt make project-local computational results reproducible. They do not constitute a physical source experiment, a proof-assistant certification of external Tate theory, or an independent mathematical referee. Full CI/Lean statements are withheld until exact-head results actually arrive.

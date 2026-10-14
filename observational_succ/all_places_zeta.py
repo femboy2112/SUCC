@@ -7,7 +7,9 @@ The mathematical construction is classical (Tate / Riemann / CRT / Ramanujan):
   - a source-derived, meromorphic theta/Mellin continuation for ANY finite
     squarefree prime-set sieve without evaluating zeta outside Re(s)>1,
   - an entire theta model xi(s) available at any complex argument,
-  - uniform compact-strip *rational* truncation certificates.
+  - uniform compact-strip *rational* truncation certificates,
+  - finite cyclic Fourier clocks converging to the Gaussian integral with
+    *rational* aliasing and spatial-shell error bounds.
 
 This is a theorem/proof-calibration laboratory on declared mathematical sources,
 not an experimentally authenticated observer, an algorithmic RH proof, a full
@@ -506,3 +508,65 @@ def twisted_reflection_defect(m:int,s,primal_cutoff:int=10,dual_cutoff:int=70,dp
     local=tuple(factors(m))
     return (reflected*prod((1-mp.power(p,-z) for p in local),start=mp.mpc(1))
             -forward*prod((1-mp.power(p,z-1) for p in local),start=mp.mpc(1)))
+
+
+def finite_clock_gaussian_fourier(m:int,t:int|Q,resolution:int,k:int,
+                                  spatial_shells:int=7,dps:int=55):
+    """One *finite* SUCC cyclic observer's Gaussian Fourier coefficient.
+
+    Carrier Z/(mR)Z, observed positions j/R, and a source-derived Gaussian
+    periodization sum_(ell=-H)^H exp(-pi*t*(m*ell+j/R)^2). The normalized DFT
+    is finite, unlike the target analytic Fourier integral.
+    """
+    _int(m,1);_int(resolution,1);_int(k);_int(spatial_shells,2)
+    tt=_rational(t)
+    if tt<=0 or m*resolution>2500 or spatial_shells>20:
+        raise PlaceModelError("Positive rational heat, bounded finite cyclic observer")
+    N=m*resolution
+    if abs(k)*2>N:
+        raise PlaceModelError("Use a frequency inside the Nyquist observational window")
+    mp=_mp(dps);time=mp.mpf(tt.numerator)/tt.denominator
+    acc=mp.mpc(0)
+    for j in range(N):
+        x=mp.mpf(j)/resolution
+        state=sum((mp.exp(-mp.pi*time*(m*ell+x)**2)
+                   for ell in range(-spatial_shells,spatial_shells+1)),mp.mpf(0))
+        acc+=state*mp.exp(-2j*mp.pi*k*j/N)
+    return acc/N
+
+
+def analytic_gaussian_fourier(m:int,t:int|Q,k:int,dps:int=55):
+    """Fourier integral c_k=(m sqrt(t))^-1 exp(-pi*k²/(m²t))."""
+    _int(m,1);_int(k)
+    tt=_rational(t)
+    if tt<=0:
+        raise PlaceModelError("Positive rational Gaussian source")
+    mp=_mp(dps);time=mp.mpf(tt.numerator)/tt.denominator
+    return mp.exp(-mp.pi*k*k/(m*m*time))/(m*mp.sqrt(time))
+
+
+def finite_clock_gaussian_rational_bound(m:int,t:int|Q,resolution:int,k:int,
+                                         spatial_shells:int=7,power:int=24)->Q:
+    """Exact rational error for finite sampled DFT to Gaussian Fourier.
+
+    Let N=mR and |k|<=N/2. Fourier alias frequencies k+l*N have
+    Gaussian coefficients exp(-pi*(k+l*N)^2/(m²t))/(m sqrt(t)). Their
+    tail is bounded by a geometric Gaussian majorant. The truncated
+    periodization omits spatial tails ell>H, bounded independently.
+
+    Uses pi>3, exp(-x)<=(1+x/L)^(-L), 1/sqrt(t)<=max(1,1/t).
+    Thus the numerical c_k is within returned exact Fraction of the
+    classical Gaussian Fourier integral (roundoff excluded).
+    """
+    _int(m,1);_int(resolution,1);_int(k);_int(spatial_shells,2);_int(power,1)
+    tt=_rational(t)
+    if tt<=0 or 2*abs(k)>m*resolution:
+        raise PlaceModelError("Positive rational t and non-aliased frequency needed")
+    N=m*resolution
+    lower=Q(3)*(N-abs(k))**2/(m*m*tt)
+    period=Q(3)*resolution*resolution/tt
+    e_alias=(Q(2,m)*max(Q(1),1/tt)*(1+lower/power)**(-power)
+             *(1+1/period))
+    x=Q(3)*tt*m*m*(spatial_shells-1)**2
+    e_spatial=(1+x/power)**(-power)/(3*tt*m*m*(spatial_shells-1))
+    return e_alias+e_spatial
