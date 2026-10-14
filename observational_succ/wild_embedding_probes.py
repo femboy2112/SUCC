@@ -234,3 +234,29 @@ def permutation_commutator_spectrum(n, even_only=False):
         "every_element_is_a_commutator":len(image)==len(G),
         "identity":tuple(range(n)),
     }
+
+
+def predicted_magnus_lie_polynomial(level):
+    """Independent binomial expansion of ad_X^level(Y), integer coefficients."""
+    from math import comb
+    _integer(level,1,7)
+    return {tuple([0]*(level-j)+[1]+[0]*j):(-1)**j*comb(level,j)
+            for j in range(level+1)}
+
+
+def verify_full_magnus_leading_form(level):
+    """Check EVERY coefficient in the first observable nonabelian layer."""
+    _integer(level,1,7)
+    w=nested_commutator(level)
+    polynomial=magnus_expansion(w,level+1)
+    homogeneous={mon:c for mon,c in polynomial.items()
+                 if len(mon)==level+1 and c}
+    expected=predicted_magnus_lie_polynomial(level)
+    return {
+        "level":level,
+        "no_lower_order_signal":all(not c or len(mon)>level
+                                    for mon,c in polynomial.items() if mon),
+        "full_free_lie_layer_matches":homogeneous==expected,
+        "nonzero_terms":len(homogeneous),
+        "not_an_alexander_sphere_group_presentation":True,
+    }
