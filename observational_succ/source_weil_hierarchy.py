@@ -55,7 +55,7 @@ def iv(x):
     if isinstance(x,I):return x
     v=q(x);return I(v,v)
 
-@lru_cache(maxsize=10000)
+@lru_cache(maxsize=10000, typed=True)
 def exp_pos(x):
     """Outward exp(x), 0<=x<=128 by scaled positive Taylor/geometric remainder."""
     x=q(x)
@@ -79,7 +79,7 @@ def _atan(z,K=32):
     nxt=(-1)**K*z**(2*K+1)/F(2*K+1)
     return I(down(min(total,total+nxt)),up(max(total,total+nxt)))
 
-@lru_cache(maxsize=1)
+@lru_cache(maxsize=1, typed=True)
 def pi_iv():
     a=_atan(F(1,5));b=_atan(F(1,239))
     return 16*a-4*b
@@ -93,10 +93,10 @@ def _atanh_log_unit(x,K=40):
     rem=2*t**(2*K+1)/(F(2*K+1)*(1-t*t))
     return I(down(total),up(total+rem))
 
-@lru_cache(maxsize=1)
+@lru_cache(maxsize=1, typed=True)
 def log2_iv():return _atanh_log_unit(F(2))
 
-@lru_cache(maxsize=2000)
+@lru_cache(maxsize=2000, typed=True)
 def log_iv(x):
     x=q(x)
     if x<=0:raise WeilHierarchyError("log positive")
@@ -120,12 +120,12 @@ def gamma_iv():
     upper=iv(constant)-log_iv(n)
     return I(down(upper.lo-F(1,240*n**8)),upper.hi)
 
-@lru_cache(maxsize=1)
+@lru_cache(maxsize=1, typed=True)
 def contact_iv():
     """-psi(1/4)+log(pi)=gamma+pi/2+3log2+log(pi)."""
     return gamma_iv()+pi_iv()/2+3*log2_iv()+log_interval(pi_iv())
 
-@lru_cache(maxsize=32)
+@lru_cache(maxsize=32, typed=True)
 def sqrt_inverse(n):
     if type(n) is not int or n<1:raise WeilHierarchyError("sqrt integer")
     Q=10**34
@@ -155,7 +155,7 @@ def assert_original_source_tape(tape=AUTHENTIC_TAPE):
 def positive_part_interval(z):
     z=iv(z);return I(max(F(),z.lo),max(F(),z.hi))
 
-@lru_cache(maxsize=4096)
+@lru_cache(maxsize=4096, typed=True)
 def screw_interval(r,J):
     """Suzuki signed g_J(r), 0<=r<=2, true original prime powers only."""
     r=q(r)
@@ -208,7 +208,7 @@ class FiniteSourceStage:
     source:str="AUTHENTIC_Q_ZETA_SUZUKI_2026_1_3"
     nontrivial_zeros_used:bool=False
 
-@lru_cache(maxsize=64)
+@lru_cache(maxsize=64, typed=True)
 def stage(a,J,N):
     a=q(a)
     if not 0<a<=1 or type(N) is not int or not 2<=N<=24:
