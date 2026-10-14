@@ -357,3 +357,33 @@ def authenticated_multiway_witness(st:FiniteSourceStage,amplitude=2):
             "certified_negative_original_weil":upper<0,
             "certified_global_positive":False,
             "nontrivial_zero_input":False}
+
+
+def authenticated_prime_wavefront(a):
+    """Return genuine visible p^k, n<=exp(2a), only in rational 0<a<=1.
+
+    Refuse a precision-ambiguous boundary rather than make a guessed
+    prime-activation declaration. This uses no zeta zero locations.
+    """
+    a=q(a)
+    if not 0<a<=1:raise WeilHierarchyError("authenticated radius 0<a<=1")
+    length=2*a
+    active=[]
+    for n,p in AUTHENTIC_TAPE:
+        l=log_iv(n)
+        if length<l.lo:continue
+        if length>=l.hi:active.append((n,p))
+        else:raise WeilHierarchyError("source wavefront interval too near boundary")
+    return tuple(active)
+
+
+def normalized_radius_defect_inequality(a,b,depth_a,depth_b):
+    """Pure numeric assertion for theorem d_-(G_a)<=d_-(G_b) if 0<a<=b.
+
+    These user supplied depths are NOT source authenticated; use only as a
+    paper-lemma consistency witness, not as a zeta positivity certificate.
+    """
+    a=q(a);b=q(b);da=q(depth_a);db=q(depth_b)
+    if not 0<a<=b or da<0 or db<0:
+        raise WeilHierarchyError("positive radius and nonnegative depths")
+    return da<=db
