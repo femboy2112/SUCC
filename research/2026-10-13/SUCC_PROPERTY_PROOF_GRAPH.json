@@ -1,0 +1,1177 @@
+{
+  "schema_version": "1.0",
+  "description": "Typed engineering/research prerequisite map, NOT a graph of proved logical implications. requires_any is OR of AND groups. Proof gates may depend on engineering audits; statuses refer only to scope, not promotion of descendants.",
+  "base": {
+    "repository": "femboy2112/SUCC",
+    "main_commit": "6e0d88f1b235b85188393bbcd64ac0436cb71a70",
+    "from_pr": 59,
+    "zero_centered_head": "b7fbba74fedd6e6734b1d2b129a72bdff4dd9843",
+    "other_open_prs": [
+      57,
+      58
+    ],
+    "branch": "research/property-proof-graph-bootstrap-2026-10-13"
+  },
+  "status_values": [
+    "CLASSICAL",
+    "PROVED_LOCAL",
+    "TESTED_MODEL",
+    "HYPOTHESIS",
+    "UNVERIFIED",
+    "REFUTED"
+  ],
+  "edge_semantics": {
+    "requires_all": "Research prerequisites that must be specified and established for this planned route, not logical necessity in every conceivable proof.",
+    "requires_any": "Alternative groups, each of which is an AND list; at least one group must be discharged.",
+    "nonimplication": "An exact finite positivity, a symmetric completion, a half-density representation, or formal coherence never alone implies an RH sign."
+  },
+  "root_exit": "R04",
+  "nodes": [
+    {
+      "id": "C01",
+      "layer": "carrier",
+      "title": "Typed finite source, events and actualized observations",
+      "status": "PROVED_LOCAL",
+      "requires_all": [],
+      "requires_any": [],
+      "scope": "Finite ObsSUCC source/event contracts; not a complete physics ontology",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C02",
+      "layer": "carrier",
+      "title": "Immutable causal records and source provenance",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C01"
+      ],
+      "requires_any": [],
+      "scope": "Finite replayable event histories, distinct from hidden source",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C03",
+      "layer": "carrier",
+      "title": "Lawful action menus, accessibility and interventions",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C01",
+        "C02"
+      ],
+      "requires_any": [],
+      "scope": "Declared finite observation menus only",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C04",
+      "layer": "carrier",
+      "title": "No-ghost causal descent and public-policy preservation",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C03"
+      ],
+      "requires_any": [],
+      "scope": "Specified finite source-indexed kernels, policies and common-chart access",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C05",
+      "layer": "carrier",
+      "title": "Full joint probabilistic couplings, not matched marginals",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C02",
+        "C03"
+      ],
+      "requires_any": [],
+      "scope": "Exact finite joint laws and explicitly declared couplings",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C06",
+      "layer": "carrier",
+      "title": "Cube coherence, causal order and accessible gluing",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C04",
+        "C05"
+      ],
+      "requires_any": [],
+      "scope": "Finite completed diagrams; no universal sheaf gluing without hypotheses",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C07",
+      "layer": "carrier",
+      "title": "Positive carrier realizability and nonnegative cones",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C03",
+        "C05"
+      ],
+      "requires_any": [],
+      "scope": "Finite rational/real toy carriers only; NOT arithmetic Weil positivity",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C08",
+      "layer": "carrier",
+      "title": "Rigidity: lawful representation uniqueness under full probes",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "C04",
+        "C06",
+        "C07"
+      ],
+      "requires_any": [],
+      "scope": "Uniform, source-identifying theorem beyond chosen finite models",
+      "next_probe": "Find nonisomorphic observationally identical models or a faithful comparison functor"
+    },
+    {
+      "id": "C09",
+      "layer": "carrier",
+      "title": "Profinite/projective completion versus actual source realization",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C02",
+        "C03"
+      ],
+      "requires_any": [],
+      "scope": "Specified compact classes; genuine no-realizer countermodels exist",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C10",
+      "layer": "carrier",
+      "title": "Compactness, tightness and quantified finite-to-global transport",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "C09",
+        "C08"
+      ],
+      "requires_any": [],
+      "scope": "Global unbounded horizons; show a topology and uniform estimates",
+      "next_probe": "Construct escaping defect with vanishing finite prefixes"
+    },
+    {
+      "id": "C11",
+      "layer": "carrier",
+      "title": "Gauge/frame covariance and basis-change naturality",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C01",
+        "C03"
+      ],
+      "requires_any": [],
+      "scope": "Declared finite frames or field charts; not arbitrary physical gauge theory",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C12",
+      "layer": "carrier",
+      "title": "Original-source calibration and open-world source-map adequacy",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "C02",
+        "C04",
+        "C11"
+      ],
+      "requires_any": [],
+      "scope": "Unbounded/unknown model languages; PR57 research pending",
+      "next_probe": "Blind held-out source dictionary drift"
+    },
+    {
+      "id": "C13",
+      "layer": "carrier",
+      "title": "Distinguish causal, semantic, quantum and analytic carriers",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C01",
+        "C11"
+      ],
+      "requires_any": [],
+      "scope": "Typed modelling separation, not equivalence of ontologies",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C14",
+      "layer": "carrier",
+      "title": "Operational Yoneda/descent and faithful probe families",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C03",
+        "C04",
+        "C11"
+      ],
+      "requires_any": [],
+      "scope": "Actual modular prime-clock examples; full source reconstruction unavailable",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C15",
+      "layer": "carrier",
+      "title": "Finite noncommuting observer dynamics and backaction controls",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C02",
+        "C05"
+      ],
+      "requires_any": [],
+      "scope": "Finite declared quantum instruments, not Weil signs",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "C16",
+      "layer": "carrier",
+      "title": "Independent mathematical realization beyond finite fitted grammar",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "C08",
+        "C10",
+        "C12",
+        "C14"
+      ],
+      "requires_any": [],
+      "scope": "Open-ended carrier innovation with holdout grammar",
+      "next_probe": "Demand new structure not in the input grammar"
+    },
+    {
+      "id": "A01",
+      "layer": "arithmetic",
+      "title": "SUCC shifts and FUCC prime-dilation semigroup algebra",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C01"
+      ],
+      "requires_any": [],
+      "scope": "Exact integers, prime checks and ax+b relation",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "A02",
+      "layer": "arithmetic",
+      "title": "Prime certification, valuation and genuine prime-power jets",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "A01",
+        "C02"
+      ],
+      "requires_any": [],
+      "scope": "Exact finite primes and prime powers",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "A03",
+      "layer": "arithmetic",
+      "title": "Dirichlet convolution, logarithm and Möbius inversion",
+      "status": "CLASSICAL",
+      "requires_all": [
+        "A01",
+        "A02"
+      ],
+      "requires_any": [],
+      "scope": "Arithmetic functions and local finite certificates",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "A04",
+      "layer": "arithmetic",
+      "title": "Euler product and logarithmic-derivative source identity",
+      "status": "CLASSICAL",
+      "requires_all": [
+        "A02",
+        "A03"
+      ],
+      "requires_any": [],
+      "scope": "Classical Re(s)>1 before analytic continuation",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "A05",
+      "layer": "arithmetic",
+      "title": "Finite prime-wavefront/source certificates",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "A02",
+        "A03"
+      ],
+      "requires_any": [],
+      "scope": "Finite genuine Lambda(n), log p and n^-1/2 intervals",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "A06",
+      "layer": "arithmetic",
+      "title": "Finite p-adic places and rational diagonal reciprocity",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "A01",
+        "A02"
+      ],
+      "requires_any": [],
+      "scope": "Rational source with finite precision; no complete adelic spectral object",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "A07",
+      "layer": "arithmetic",
+      "title": "Fake-composite, wrong log p and half-density mutations",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "A02",
+        "A05"
+      ],
+      "requires_any": [],
+      "scope": "Existing targeted finite negative controls",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "A08",
+      "layer": "arithmetic",
+      "title": "Euler-source rigidity and recovery from observable probes",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "A04",
+        "A06",
+        "C08",
+        "C12"
+      ],
+      "requires_any": [],
+      "scope": "All relevant source witnesses, not a fixed observed prefix",
+      "next_probe": "Construct adversarial fake source with identical admitted observations"
+    },
+    {
+      "id": "A09",
+      "layer": "arithmetic",
+      "title": "Matched Euler/Hecke versus Davenport–Heilbronn controls",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "A04",
+        "A07"
+      ],
+      "requires_any": [],
+      "scope": "Valid L-function conductors and normalization",
+      "next_probe": "Separate multiplicative genuine Euler data from non-Euler combinations"
+    },
+    {
+      "id": "A10",
+      "layer": "arithmetic",
+      "title": "Uniform prime tail and conductor-explicit error bounds",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "A05",
+        "A06"
+      ],
+      "requires_any": [],
+      "scope": "Horizon tends to infinity, source-uniform norms",
+      "next_probe": "Give interval tails on fixed test function classes"
+    },
+    {
+      "id": "A11",
+      "layer": "arithmetic",
+      "title": "Prime-phase alignment and arithmetic polarization",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "A08",
+        "A09",
+        "A10"
+      ],
+      "requires_any": [],
+      "scope": "Source-derived mixed structure, no fitted zero phases",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "A12",
+      "layer": "arithmetic",
+      "title": "Faithful arithmetic/analytic intertwiner (no zero input)",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "A04",
+        "A08",
+        "C14"
+      ],
+      "requires_any": [],
+      "scope": "Map actual prime-jet carrier to completed analytic observables",
+      "next_probe": "Intertwiner must commute with shifts/dilations on domain"
+    },
+    {
+      "id": "H01",
+      "layer": "archimedean",
+      "title": "Finite SUCC Gamma recurrence and compact Mellin limit",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "A01"
+      ],
+      "requires_any": [],
+      "scope": "Declared half-plane/compact sets, not complete arithmetic Gamma normalization",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "H02",
+      "layer": "archimedean",
+      "title": "Mellin transform, domains and analytic continuation",
+      "status": "CLASSICAL",
+      "requires_all": [],
+      "requires_any": [],
+      "scope": "Standard function spaces and continuation theorems",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "H03",
+      "layer": "archimedean",
+      "title": "Authentic archimedean Gamma, poles and conductor completion",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "H01",
+        "H02",
+        "A06"
+      ],
+      "requires_any": [],
+      "scope": "Completed zeta/L-function factor with correct residues",
+      "next_probe": "Reject periodic Gamma gauges and wrong pole cancellation"
+    },
+    {
+      "id": "H04",
+      "layer": "archimedean",
+      "title": "Theta/Poisson/Fourier duality with exact measures",
+      "status": "CLASSICAL",
+      "requires_all": [
+        "H02"
+      ],
+      "requires_any": [],
+      "scope": "Schwartz/tempered distributions and declared Fourier conventions",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "H05",
+      "layer": "archimedean",
+      "title": "Finite/archimedean place normalization and reciprocity",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "A06",
+        "A12",
+        "H03",
+        "H04"
+      ],
+      "requires_any": [],
+      "scope": "One global coherent source, not independent fitted charts",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "H06",
+      "layer": "archimedean",
+      "title": "Reciprocal-cell residue observer and Mellin zero annihilator",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "A01",
+        "A03",
+        "H02"
+      ],
+      "requires_any": [],
+      "scope": "PR59 finite cells plus classical zero-conditional formula",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "H07",
+      "layer": "archimedean",
+      "title": "Normalized dilation and half-density isometry",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "H06"
+      ],
+      "requires_any": [],
+      "scope": "One-sided L2(0,1) semigroup, not unitary group",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "H08",
+      "layer": "archimedean",
+      "title": "Pure isometry and no normalizable boundary eigenstate",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "H07"
+      ],
+      "requires_any": [],
+      "scope": "PR59 Wold-type pure shift argument",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "H09",
+      "layer": "archimedean",
+      "title": "Regular test-function domain, pole removal and adjoints",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "H02",
+        "H03",
+        "H04"
+      ],
+      "requires_any": [],
+      "scope": "Declared LF/Schwartz/Hardy spaces with bounded maps",
+      "next_probe": "Hostile test near origin, poles and unbounded supports"
+    },
+    {
+      "id": "H10",
+      "layer": "archimedean",
+      "title": "Source-first completed explicit formula from SUCC",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "A12",
+        "A10",
+        "H03",
+        "H04",
+        "H05",
+        "H09"
+      ],
+      "requires_any": [],
+      "scope": "Real Lambda/gamma/poles/conductor and correct Fourier signs",
+      "next_probe": "Independent equality of prime and spectral formulations"
+    },
+    {
+      "id": "H11",
+      "layer": "archimedean",
+      "title": "Classical explicit formula and completed zeta functional equation",
+      "status": "CLASSICAL",
+      "requires_all": [
+        "A04",
+        "H02",
+        "H04"
+      ],
+      "requires_any": [],
+      "scope": "External classical theorem; distinct from H10 source-first realization",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "H12",
+      "layer": "archimedean",
+      "title": "Uniform Archimedean integral/tail interval certificates",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "H03",
+        "H09"
+      ],
+      "requires_any": [],
+      "scope": "Rigorously bounded Gamma/log derivatives and poles",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "S01",
+      "layer": "operator",
+      "title": "Finite Hilbert carrier, adjoints and positivity semantics",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C07",
+        "H06"
+      ],
+      "requires_any": [],
+      "scope": "Exact finite Gram data, not full arithmetic Hilbert space",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "S02",
+      "layer": "operator",
+      "title": "Infinite operator realization with faithful arithmetic domain",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "A12",
+        "H05",
+        "S01"
+      ],
+      "requires_any": [],
+      "scope": "Dense invariant domains, closed/closable operators",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "S03",
+      "layer": "operator",
+      "title": "Deficiency indices, boundaries and essential self-adjointness",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "S02",
+        "H09"
+      ],
+      "requires_any": [],
+      "scope": "Specified unbounded operator and physical domain; no assumed SA",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "S04",
+      "layer": "operator",
+      "title": "Self-adjoint operator or unitary flow with correct source",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "S03",
+        "A08"
+      ],
+      "requires_any": [],
+      "scope": "Actual constructed operator, not Hilbert–Pólya slogan",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "S05",
+      "layer": "operator",
+      "title": "Spectral equivalence with ALL nontrivial completed zeta zeros",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "S04",
+        "H10"
+      ],
+      "requires_any": [],
+      "scope": "Two-direction equivalence, multiplicities and no extraneous roots",
+      "next_probe": "Inject fake completion factor and verify rejection"
+    },
+    {
+      "id": "S06",
+      "layer": "operator",
+      "title": "Trace regularization, completeness and determinant identity",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "S02",
+        "H10"
+      ],
+      "requires_any": [],
+      "scope": "Operator trace class or prescribed distributional regularization",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "S07",
+      "layer": "operator",
+      "title": "Spectral rigidity excluding fictitious eigenstates",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "S05",
+        "S06",
+        "C08"
+      ],
+      "requires_any": [],
+      "scope": "Global operator/test provenance, not only sampled spectrum",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "S08",
+      "layer": "operator",
+      "title": "Correct generalized boundary modes and normalizability",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "H07",
+        "H08"
+      ],
+      "requires_any": [],
+      "scope": "PR59 normalizability no-go; source-blind",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "S09",
+      "layer": "operator",
+      "title": "Source-faithful spectral positivity and no off-line spectrum",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "S04",
+        "S05",
+        "S07"
+      ],
+      "requires_any": [],
+      "scope": "Exclude zero-resonances without circular assumption",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "S10",
+      "layer": "operator",
+      "title": "Conjugation/reflection, real structure and functional symmetries",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "S02",
+        "H03"
+      ],
+      "requires_any": [],
+      "scope": "Fully completed source, not only abstract symmetric multiplier",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "S11",
+      "layer": "operator",
+      "title": "Two-way functional-analytic transport among SUCC, Mellin and Weil",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "S02",
+        "H06",
+        "H10"
+      ],
+      "requires_any": [],
+      "scope": "An identified, domain-correct intertwiner, not diagrammatic analogy",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P01",
+      "layer": "positivity",
+      "title": "Exact finite Gram certificates, interval/rational arithmetic",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C07",
+        "S01"
+      ],
+      "requires_any": [],
+      "scope": "Named finite-dimensional subspaces, no global positivity",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P02",
+      "layer": "positivity",
+      "title": "Prime-side finite Suzuki/Weil wavefront bounds",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "A05",
+        "H07"
+      ],
+      "requires_any": [],
+      "scope": "Finite authentic Lambda source, not full kernel",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P03",
+      "layer": "positivity",
+      "title": "Source-derived completed Weil/Suzuki quadratic form",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "H10",
+        "H11",
+        "H12",
+        "A09"
+      ],
+      "requires_any": [],
+      "scope": "Explicit full Gamma+pole+prime form on admissible dense tests",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P04",
+      "layer": "positivity",
+      "title": "Support-window matrix PSD with rigorous error intervals",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "P01",
+        "P03",
+        "H09"
+      ],
+      "requires_any": [],
+      "scope": "Uniform on declared finite windows; not arbitrary support",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P05",
+      "layer": "positivity",
+      "title": "Positive definite kernels and exact operator sign transfer",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "P03",
+        "S11"
+      ],
+      "requires_any": [],
+      "scope": "Prove equality of constructed PSD object and full Weil form",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P06",
+      "layer": "positivity",
+      "title": "Uniform limit of finite positivity with no escaping negatives",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "P04",
+        "C10",
+        "A10"
+      ],
+      "requires_any": [],
+      "scope": "Convergence strong enough to preserve every test-function value",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P07",
+      "layer": "positivity",
+      "title": "Global nonnegative Weil form for every admissible test",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "P03"
+      ],
+      "requires_any": [
+        [
+          "P05"
+        ],
+        [
+          "P06"
+        ]
+      ],
+      "scope": "Unconditional all-support source-derived proof; RH-equivalent gate",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P08",
+      "layer": "positivity",
+      "title": "Arithmetic polarization / Hodge-type index construction",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "A11",
+        "H05"
+      ],
+      "requires_any": [],
+      "scope": "Honest arithmetic intersection form, no Weil sign assumed",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P09",
+      "layer": "positivity",
+      "title": "Riemann–Roch, duality and ample class at arithmetic surface",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "P08",
+        "A12"
+      ],
+      "requires_any": [],
+      "scope": "Specified category/space with verified axioms, not analogy to F_q",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P10",
+      "layer": "positivity",
+      "title": "Positive source-derived intersection equals Weil functional",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "P08",
+        "P09",
+        "P03"
+      ],
+      "requires_any": [],
+      "scope": "Exact identification including Gamma, conductor, boundary corrections",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P11",
+      "layer": "positivity",
+      "title": "Positivity countermodels: symmetry does not imply RH",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "H11",
+        "A07"
+      ],
+      "requires_any": [],
+      "scope": "Fake self-dual completion with auxiliary off-line zeros",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P12",
+      "layer": "positivity",
+      "title": "Finite positive carriers do not establish Weil sign",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C07",
+        "P01",
+        "P11"
+      ],
+      "requires_any": [],
+      "scope": "Firewall demonstrated by nonidentification countermodels",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "P13",
+      "layer": "positivity",
+      "title": "Geometric positivity on full Weil test space",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "P10"
+      ],
+      "requires_any": [],
+      "scope": "Hodge/Weil sign with full noncompact domain, not local ample cone",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "N01",
+      "layer": "approximation",
+      "title": "Exact reciprocal-cell rational Gram and Möbius interpolation",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "H06",
+        "A03"
+      ],
+      "requires_any": [],
+      "scope": "Every finite K, exact weighted rational cells",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "N02",
+      "layer": "approximation",
+      "title": "LCM blind spots and nonuniform finite-observer obstruction",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "N01"
+      ],
+      "requires_any": [],
+      "scope": "Every finite collection of moduli; bound tends to zero with L",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "N03",
+      "layer": "approximation",
+      "title": "Classical Nyman–Beurling–Báez-Duarte RH criterion",
+      "status": "CLASSICAL",
+      "requires_all": [
+        "H02"
+      ],
+      "requires_any": [],
+      "scope": "Published equivalence, NOT new SUCC proof",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "N04",
+      "layer": "approximation",
+      "title": "Zero-centered bounded Mellin separator off critical line",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "N01",
+        "H02"
+      ],
+      "requires_any": [],
+      "scope": "Conditional on a genuine off-line zero, no zero as source input",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "N05",
+      "layer": "approximation",
+      "title": "Global source-first L2 approximation bound tending to zero",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "N01",
+        "N02",
+        "N03",
+        "A09",
+        "C10"
+      ],
+      "requires_any": [],
+      "scope": "Unbounded approximation horizon, real zeta-source and rigorous error",
+      "next_probe": "Prove norm->0 for zero-independent coefficients or certified best approximation"
+    },
+    {
+      "id": "N06",
+      "layer": "approximation",
+      "title": "Finite pointwise fits do not imply global Hilbert density",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "N01",
+        "N02"
+      ],
+      "requires_any": [],
+      "scope": "Nonuniform-limit and LCM counterexample",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "Q01",
+      "layer": "certification",
+      "title": "Source-provenance manifests and frozen dependency SHAs",
+      "status": "PROVED_LOCAL",
+      "requires_all": [
+        "C02"
+      ],
+      "requires_any": [],
+      "scope": "Repo provides source manifest and documented lineages",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "Q02",
+      "layer": "certification",
+      "title": "Zero-independent constructors, separate verification-only oracles",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "A07",
+        "Q01"
+      ],
+      "requires_any": [],
+      "scope": "Every candidate RH proof route, not just finite modules",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "Q03",
+      "layer": "certification",
+      "title": "Rigorous error budgets, positive/negative/null/mutation controls",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "P01",
+        "A07",
+        "Q01"
+      ],
+      "requires_any": [],
+      "scope": "Every new analytic claim; finite certificates already exist",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "Q04",
+      "layer": "certification",
+      "title": "Independent proof implementations and provenance-family ablations",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "Q03"
+      ],
+      "requires_any": [],
+      "scope": "Distinct algorithms/derivations; same-model swarms not independent",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "Q05",
+      "layer": "certification",
+      "title": "Lean/Coq kernel proof of exact theorem, no sorry axioms",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "Q03"
+      ],
+      "requires_any": [],
+      "scope": "Global analytic bridge, not only existing finite-scope kernels",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "Q06",
+      "layer": "certification",
+      "title": "Proof scope and claims audit against hostile countermodels",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "Q02",
+        "Q03",
+        "Q04",
+        "Q05"
+      ],
+      "requires_any": [],
+      "scope": "Whole RH exit route; open PR not merged into main",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "Q07",
+      "layer": "certification",
+      "title": "Source-calibrated controls across matched Euler and non-Euler families",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "A09",
+        "Q03"
+      ],
+      "requires_any": [],
+      "scope": "Actual Dirichlet and Davenport–Heilbronn examples, not guessed formulas",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "Q08",
+      "layer": "certification",
+      "title": "Reproducible CI, exact-head receipts and independent reviewer",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "Q06"
+      ],
+      "requires_any": [],
+      "scope": "Current candidate branches after completion, not last week's main CI",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "R01",
+      "layer": "rh_exit",
+      "title": "Weil criterion discharge",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "P07",
+        "H10",
+        "Q07"
+      ],
+      "requires_any": [
+        [
+          "P05"
+        ],
+        [
+          "P06"
+        ],
+        [
+          "P13"
+        ]
+      ],
+      "scope": "A full-source unconditional positivity theorem on all Weil tests",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "R02",
+      "layer": "rh_exit",
+      "title": "Nyman–Beurling density discharge",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "N03",
+        "N05",
+        "Q07"
+      ],
+      "requires_any": [],
+      "scope": "Unconditional global L2 density from source-first construction",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "R03",
+      "layer": "rh_exit",
+      "title": "Self-adjoint spectral realization discharge",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "S04",
+        "S05",
+        "S07",
+        "S09",
+        "Q07"
+      ],
+      "requires_any": [],
+      "scope": "A genuine operator with source-identified spectrum and no off-line zeros",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "R04",
+      "layer": "rh_exit",
+      "title": "Riemann Hypothesis theorem",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "Q06"
+      ],
+      "requires_any": [
+        [
+          "R01"
+        ],
+        [
+          "R02"
+        ],
+        [
+          "R03"
+        ]
+      ],
+      "scope": "At least one complete noncircular global mathematical proof with hostile audit",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    },
+    {
+      "id": "R05",
+      "layer": "rh_exit",
+      "title": "Independent mature observational SUCC theory",
+      "status": "UNVERIFIED",
+      "requires_all": [
+        "C16",
+        "C08",
+        "C10",
+        "C14"
+      ],
+      "requires_any": [],
+      "scope": "Valuable mathematical theorems independently of whether RH ever follows",
+      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+    }
+  ],
+  "canonical_negative_controls": [
+    "fake composite prime impulse at 6",
+    "wrong half-density epsilon",
+    "wrong log(2) phase",
+    "nonmultiplicative Davenport-Heilbronn match",
+    "symmetric selfdual fake completion with off-line auxiliary roots",
+    "finite-prefix ghost realizer",
+    "matched marginal vs incompatible joint law",
+    "unbounded finite-to-infinite defect",
+    "wrong Gamma gauge/pole subtraction",
+    "false self-adjoint extension",
+    "boundary nonnormalizability"
+  ],
+  "literature": [
+    "https://arxiv.org/abs/math/0202141",
+    "https://dlmf.nist.gov/25.4",
+    "https://dlmf.nist.gov/5.2",
+    "https://arxiv.org/abs/0705.0452"
+  ],
+  "notes": "RH PROVED: no. Status is relative to linked existing code/dossiers and may have changed after pinned heads. This is a bootstrap inventory, not mathematical priority or a claim that all premises are necessary."
+}
