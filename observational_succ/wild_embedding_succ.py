@@ -340,6 +340,84 @@ def two_chart_schur(a,b,c):
             'not_completed_Weil_certificate':True}
 
 
+
+def gaussian_prime_phase_packets(primes,frequencies,scale_N,time_bound,window_halfwidth):
+    """Finite prime-local source → approximate Archimedean translation packets.
+
+    With tau=N^-2 define h_(tau,r)(x)=(2*tau)^1/4 exp(-pi*tau*x²)
+      * exp(2*pi*i*r*x).  This is a normalized L² function, not an
+    exact translation eigenvector or an adelic/Hilbert equivalence.
+
+    Exact Gaussian integrals (PROVED in dossier):
+      ||T_t h_r - exp(2*pi*i*r*t) h_r||²
+           =2*(1-exp(-pi*tau*t²/2));
+      <h_r,h_s> = exp(-pi*(r-s)²/(2*tau)).
+    Bounds below are entirely rational using 3<pi<22/7 and exp(x)>=1+x.
+    """
+    # Use the same authentic prime-degree source labels for the CIRCLE
+    # solenoid character group Z[P^-1]; it is NOT the S² inverse-limit space.
+    source=periodic_prime_sphere(primes)
+    scale_N=_int(scale_N,lo=2,hi=1000000)
+    T,R=_rat(time_bound),_rat(window_halfwidth)
+    if T<0 or R<0:
+        raise WildSUCCError('nonnegative finite observation window required')
+    if type(frequencies) not in (tuple,list) or not 1<=len(frequencies)<=24:
+        raise WildSUCCError('finite source-character family required')
+    chars=tuple(_rat(r) for r in frequencies)
+    if len(set(chars))!=len(chars):
+        raise WildSUCCError('duplicate character is not independent source information')
+    if any(not localized_rational(r,source['source_prime_cycle']) for r in chars):
+        raise WildSUCCError('frequency outside genuine source prime-localized character group')
+    tau=Fraction(1,scale_N*scale_N)
+    min_squared=min(((a-b)**2 for i,a in enumerate(chars) for b in chars[i+1:]),
+                    default=None)
+    # exp(-x) <= 1/(1+x), with x>=3*d^2/(2*tau).
+    gram_bound=(Fraction(len(chars)-1,1)/(1+Fraction(3,2)*min_squared/tau)
+                if min_squared is not None else Fraction())
+    # |exp(-x)|>=1-x, and pi<22/7 => squared norm error <= (22/7)*tau*T^2.
+    err_squared=Fraction(22,7)*tau*T*T
+    # Spatial probability in [-R,R] <=2R sqrt(2*tau) < 3R/N.
+    mass_bound=Fraction(3)*R/scale_N
+    return {'source_prime_cycle':source['source_prime_cycle'],
+            'characters':[str(r) for r in chars],
+            'packet_scale_tau':str(tau),
+            'max_time_bound':str(T),'spatial_window_halfwidth':str(R),
+            'all_characters_verified':True,
+            'translation_residual_norm_squared_upper':str(err_squared),
+            'offdiag_gram_operator_upper':str(gram_bound),
+            'approximate_isometry_verified':gram_bound<1,
+            'individual_compact_window_mass_upper':str(mass_bound),
+            'exact_full_flow_intertwiner_constructed':False,
+            'bounded_global_solenoid_to_L2_intertwiner_exists':False,
+            'prime_character_source_is_circle_solenoid_not_sphere':True,
+            'distributional_limit_not_L2_limit':True,
+            'RH_proved':False}
+
+
+def dense_prime_clock_collision(prime,scale_N):
+    """For fixed Gaussian width, arbitrarily close prime characters
+    defeat uniform all-source orthogonality (dense G_p subset R).
+
+    Exact bound <h_0,h_delta> >=1-(11/7)*delta²*N².
+    """
+    p=genuine_prime(prime)
+    N=_int(scale_N,lo=2,hi=1000000)
+    depth=0
+    denom=1
+    while denom<=8*N:
+        denom*=p
+        depth+=1
+    delta=Fraction(1,denom)
+    lower=1-Fraction(11,7)*delta*delta*N*N
+    if not Fraction(9,10)<lower<1:
+        raise ArithmeticError('strict global frequency-collision control failed')
+    return {'genuine_prime':p,'fixed_packet_scale_N':N,
+            'source_character_gap':str(delta),
+            'deep_prime_clock_level':depth,
+            'Gram_offdiagonal_strict_lower':str(lower),
+            'no_uniform_all_frequency_isometry':True,
+            'RH_proved':False}
+
 def receipt():
     return {'source_model':'HATCHER_ALEXANDER_FREE_COMMUTATOR_DIRECT_LIMIT',
             'meridian_tower':[meridian_report(k) for k in range(5)],
@@ -352,6 +430,8 @@ def receipt():
             'wavefront':[dict((k,str(v) if isinstance(v,Fraction) else v)
                              for k,v in wavefront_shadow(Fraction(1,2**n),Fraction(2,3)).items())
                          for n in (1,2,3,4)],
+            'gaussian_prime_phase_bridge':gaussian_prime_phase_packets((2,3),(Fraction(0),Fraction(1,2),Fraction(1,3)),32,1,1),
+            'dense_prime_collision':dense_prime_clock_collision(2,32),
             'cross_chart':{k:str(v) if isinstance(v,Fraction) else v
                            for k,v in two_chart_schur(1,1,2).items()},
             'actual_horned_sphere_geometry_imported_not_proved':True,

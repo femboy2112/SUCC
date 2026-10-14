@@ -16,6 +16,7 @@ from observational_succ.wild_embedding_succ import (
     nilpotent_visibility, unitriangular_meridian, periodic_prime_sphere, localized_rational,
     delayed_prime_bonds, flattened_warp, benign_inverse_distortion,
     wavefront_shadow, escape_witness, two_chart_schur, receipt,
+    gaussian_prime_phase_packets, dense_prime_clock_collision,
 )
 
 
@@ -236,6 +237,48 @@ class WildMetricAndWeilControls(unittest.TestCase):
         for fn in funcs:
             with self.subTest(fn=str(fn)),self.assertRaises(WildSUCCError):
                 fn()
+
+    def test_source_typed_gaussian_solenoid_packets(self):
+        p=gaussian_prime_phase_packets((2,3), (Q(),Q(1,2),Q(1,3)),
+                                        32,Q(1),Q(1))
+        self.assertTrue(p['all_characters_verified'])
+        self.assertTrue(p['approximate_isometry_verified'])
+        self.assertLess(Q(p['offdiag_gram_operator_upper']),Q(1,5))
+        self.assertLess(Q(p['translation_residual_norm_squared_upper']),Q(1,250))
+        self.assertEqual(Q(p['individual_compact_window_mass_upper']),Q(3,32))
+        self.assertFalse(p['bounded_global_solenoid_to_L2_intertwiner_exists'])
+        self.assertTrue(p['prime_character_source_is_circle_solenoid_not_sphere'])
+        self.assertTrue(p['distributional_limit_not_L2_limit'])
+
+    def test_gaussian_packet_approximation_rate(self):
+        last_t=last_g=last_m=Q(100)
+        for n in (8,16,32,64,128):
+            p=gaussian_prime_phase_packets((2,), (Q(),Q(1,2)),n,Q(2),Q(3))
+            t=Q(p['translation_residual_norm_squared_upper'])
+            g=Q(p['offdiag_gram_operator_upper'])
+            m=Q(p['individual_compact_window_mass_upper'])
+            self.assertTrue(0<t<last_t and 0<g<last_g and 0<m<last_m)
+            last_t,last_g,last_m=t,g,m
+
+    def test_dense_local_frequencies_defeat_one_packet_scale(self):
+        for prime in (2,3,5):
+            for n in (2,7,32,1000):
+                x=dense_prime_clock_collision(prime,n)
+                self.assertGreater(Q(x['Gram_offdiagonal_strict_lower']),Q(9,10))
+                self.assertTrue(x['no_uniform_all_frequency_isometry'])
+                self.assertEqual(x['genuine_prime'],prime)
+
+    def test_gaussian_source_guards_not_generic_complex_wavepackets(self):
+        bad=[lambda:gaussian_prime_phase_packets((6,),(Q(),),8,1,1),
+             lambda:gaussian_prime_phase_packets((2,),(Q(1,3),),8,1,1),
+             lambda:gaussian_prime_phase_packets((2,), (Q(),Q()),8,1,1),
+             lambda:gaussian_prime_phase_packets((2,), (Q(1,2),),1,1,1),
+             lambda:gaussian_prime_phase_packets((2,), (Q(1,2),),8,-1,1),
+             lambda:gaussian_prime_phase_packets((2,), (Q(1,2),),8,1,-1),
+             lambda:gaussian_prime_phase_packets((2,), (Q(1,2),),8,.5,1),
+             lambda:dense_prime_clock_collision(6,10)]
+        for f in bad:
+            with self.subTest(f=str(f)),self.assertRaises(WildSUCCError):f()
 
     def test_exact_receipt_roundtrip_and_firewall(self):
         a=receipt()

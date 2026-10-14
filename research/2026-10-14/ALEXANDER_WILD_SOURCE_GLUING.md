@@ -109,7 +109,41 @@ But **no uniform rate in a, and no nonnegative sign, follows**. The first-prime 
 
 **Proposed next sign gate (not proved):** retain all original prime-power, Gamma/contact, rank-two pole and half-density terms and construct a wavefront-aligned low/high decomposition with a **certified source-relative Schur complement**. Find `A>0`, `B` and signed source cross term `C` with `B−C* A^-1 C >=0` on the entire unresolved low carrier, with genuine operator-domain and error certificates. In parallel require uniform inter-window boundary conditioning or explicitly account for its divergence. The wild homology-blind analogy becomes load-bearing only if a real source map identifies its nonabelian holonomy/inverse structure with those original Weil couplings. The arithmetic full-line multiplicative prime dilations and Gamma convolution already commute; do not import a nonabelian "horned" group by fiat. Actual noncommutation can arise upon additive SUCC or finite-interval compression, as separately demonstrated in #86.
 
-## W7 — adversarial controls / limits / citations
+## W7 — a precise source-Gaussian repair of the solenoid-to-Weil spectral mismatch (PROVED LOCAL / SIBLING IMPORT)
+
+**Read-only sibling update:** `research/wild-adelic-embedding-solenoid-2026-10-14@721778bf7df28ab52a57346c8d8f4f31bf2b2c13` (separately descended from genuine arithmetic meta-Weil #86) proves that the compact additive prime-solenoid's real translation-flow Haar-L² has **pure point** characters, whereas Lebesgue `L²(R)` translations have **no nonzero eigenvectors**. Consequently **every bounded exact full-flow-equivariant operator in either direction is zero**. This is a classical Fourier/Plancherel spectral-type argument, not established by this branch's finite source tests. The sibling further distinguishes the additive solenoid and multiplicative idele class, preventing a fake Weil identification.
+
+**The character frequencies `r` belong to the inverse-limit CIRCLE solenoid (or its Pontryagin dual), not to the suspended-sphere inverse-limit object of W3.** They share genuine-prime degree labels and the same localized integer group, but the topological carriers are different.
+
+**Repair the representation TYPE, not the theorem.** For `tau>0` and an authenticated additive prime-solenoid character frequency `r` in the rational localization `Z[P^-1]`, take the **normalized Gaussian packet**
+
+`h_(tau,r)(x)=(2tau)^(1/4) exp(-pi tau x²) exp(2pi i r x)`,  `x∈R`.
+
+This is an ordinary **L²(R)** state with exactly norm one. It is not a genuine joint translation eigenfunction. Direct Gaussian integration proves the exact identities, where `(T_t f)(x)=f(x+t)`:
+
+`||T_t h_(tau,r)-exp(2pi i r t)h_(tau,r)||² = 2(1-exp(-pi tau t²/2))`  (W8a),
+
+`<h_(tau,r), h_(tau,s)> = exp(-pi (r-s)²/(2tau))`  (W8b).
+
+This is **a finite-family approximate source intertwiner**, not a bounded exact map of the whole solenoid Hilbert space. For the budgeted unit `tau=N^-2`, for all rational `|t|≤T` and each fixed finite list of pairwise distinct source-local characters with squared separation `d²`:
+
+`translation residual² ≤(22/7)T²/N²`,
+
+`||Gram−I||_op ≤ (m−1)/[1+(3/2)d²N²]`   (W8c).
+
+Proof: `3<pi<22/7`, `1−e^(-x)≤x`, `e^x≥1+x`, and the Gershgorin/row-sum estimate. The probability mass in any fixed spatial window `[-R,R]` satisfies `∫|h|²≤(2R sqrt 2)/N <3R/N`. Thus for fixed finite source probes the packets become approximately translation-equivariant and orthogonal while **spreading out of every fixed spatial window**. There is no strong L² limit as N→∞; they converge weakly to zero. This is a mathematically exact **information/conditioning debt** appropriate to the user's IdealHard field language, *not* actual physical energy or quantum scattering.
+
+**Sharp source nonuniformity:** the additive prime character group `Z[P^-1]⊂R` is dense for any prime p repeated indefinitely. For any fixed finite N choose authenticated character gap `delta=1/p^k <1/(8N)`. By `e^(-x)≥1−x` and `pi<22/7`, the Gaussian Gram overlap obeys
+
+`<h_(N^-2,0),h_(N^-2,delta)> ≥ 1−(11/7)N²delta² >9/10`  (W8d).
+
+So **no one Gaussian packet width** yields a near-orthogonal isometry of all source characters. The actual original solenoid has no bounded nonzero flow intertwiner at all; this finite packet construction does not contradict that theorem because its frequency set and N are restricted and its covariance error is nonzero.
+
+**Even stronger Alexander obstruction:** Hatcher's original horned exterior group G is perfect, whereas every additive solenoid is abelian. Thus *any* abstract homomorphism G→Sigma is trivial. One must not identify the nonabelian embedded exterior loop group with the additive solenoid character group via a spurious 'sphere = arithmetic' arrow. The two source families are deliberately independent; combining them in a genuine Weil object requires a different, typed, nonabelian-to-analytic correspondence with verified arithmetic prime/Gamma/pole normalization.
+
+**Status:** Gaussian integrals, finite signed/Gram bounds and rational source authentication PROVED LOCAL; the pure-point/continuous-spectrum NO-GO belongs to separately reviewed sibling WA-20 CLASSICAL + IMPORT; exact sub-source implementations and hostile fixed-N collision tests TESTED. Full signed completed Weil sign / RH still UNVERIFIED.
+
+## W9 — adversarial controls / limits / citations
 
 - **Intrinsic =/= embedded:** Abstract `S²` homology and even H₁ of exterior miss Alexander wildness, which lives in nonabelian π₁ and ambient isotopy class.
 - **Finite-stage approximation ≠ completed infinity:** Exact subgroup injections preserve π₁ while nilpotent or abelian readouts eventually kill transported generators; no finite uniform observation horizon for unknown nested programs.
@@ -128,10 +162,11 @@ But **no uniform rate in a, and no nonnegative sign, follows**. The first-prime 
 3. Standard free group / Magnus theory: lower-central series and Magnus leading homogeneous term, e.g. Magnus–Karrass–Solitar, *Combinatorial Group Theory* (classical import; exact finite expansions supplied).
 4. Čech cohomology continuity and dyadic-solenoid example, e.g. https://www.math.uni-bielefeld.de/~drust/papers/thesis_corrections.pdf §1.2.21–22. Suspended degree-p S² tower follows by the suspension isomorphism.
 5. Classical Arzelà–Ascoli + topology of wild embeddings; contextual modern article https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/topo.12309 .
-6. Source-correct original Suzuki/Gamma/Weil work: SUCC draft PRs #64, #70, #71, #84, #85, #86. The numerical and source obligations differ; sibling PRs are **not ancestry**.
+6. Exact Gaussian Weyl-sequence / continuous-vs-pure-point spectral analysis, and independent sibling SUCC `research/wild-adelic-embedding-solenoid-2026-10-14@721778bf7d` (WA-20); separate ancestry and no shared numerical independence claim.
+7. Source-correct original Suzuki/Gamma/Weil work: SUCC draft PRs #64, #70, #71, #84, #85, #86. The numerical and source obligations differ; sibling PRs are **not ancestry**.
 
 ### Reproduction / epistemic scope
 
 `PYTHONPATH=. python -m unittest tests.test_wild_embedding_succ -v` is the exact focused suite, and `python scripts/wild_embedding_succ_probe.py --verify research/2026-10-14/WILD_EMBEDDING_SUCC_RECEIPT.json` is the byte-independent JSON receipt. Both include genuine-prime authentication, free-word and Magnus checks, group transition/cancellation, delayed sphere bonds, inverse-conditioning control, concentrated Weil proxy and the signed finite Schur control.
 
-**Statuses:** W1 geom = CLASSICAL IMPORT; W1/W2 algebra = PROVED LOCAL, TESTED finite; W3 = CLASSICAL Čech + TESTED source type; W4/W6 = PROVED general analysis, finite rational controls; W5 = PARENT genuine-source theorem + TESTED exact surrogate; any identification of an Alexander horned-sphere complement with Suzuki's completed Weil carrier or RH proof = UNVERIFIED. Academic novelty not claimed; no Lean kernel proof or empirical physical observation is asserted.
+**Statuses:** W1 geom = CLASSICAL IMPORT; W1/W2 algebra = PROVED LOCAL, TESTED finite; W3 = CLASSICAL Čech + TESTED source type; W4/W6 = PROVED general analysis, finite rational controls; W5 = PARENT genuine-source theorem + TESTED exact surrogate; W7/W8 Gaussian finite packet = CLASSICAL GAUSSIAN INTEGRALS/PROVED LOCAL with independent sibling spectral no-go; any identification of an Alexander horned-sphere complement with Suzuki's completed Weil carrier or RH proof = UNVERIFIED. Academic novelty not claimed; no Lean kernel proof or empirical physical observation is asserted.

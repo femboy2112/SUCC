@@ -9,6 +9,15 @@
     "not_completed_Weil_certificate": true,
     "schur_remainder": "-3"
   },
+  "dense_prime_collision": {
+    "Gram_offdiagonal_strict_lower": "1781/1792",
+    "RH_proved": false,
+    "deep_prime_clock_level": 9,
+    "fixed_packet_scale_N": 32,
+    "genuine_prime": 2,
+    "no_uniform_all_frequency_isometry": true,
+    "source_character_gap": "1/512"
+  },
   "explicit_exact_depth_detectors": [
     {
       "depth": 0,
@@ -47,6 +56,30 @@
       "source_free_rank": 8
     }
   ],
+  "gaussian_prime_phase_bridge": {
+    "RH_proved": false,
+    "all_characters_verified": true,
+    "approximate_isometry_verified": true,
+    "bounded_global_solenoid_to_L2_intertwiner_exists": false,
+    "characters": [
+      "0",
+      "1/2",
+      "1/3"
+    ],
+    "distributional_limit_not_L2_limit": true,
+    "exact_full_flow_intertwiner_constructed": false,
+    "individual_compact_window_mass_upper": "3/32",
+    "max_time_bound": "1",
+    "offdiag_gram_operator_upper": "6/131",
+    "packet_scale_tau": "1/1024",
+    "prime_character_source_is_circle_solenoid_not_sphere": true,
+    "source_prime_cycle": [
+      2,
+      3
+    ],
+    "spatial_window_halfwidth": "1",
+    "translation_residual_norm_squared_upper": "11/3584"
+  },
   "leading_Lie_terms": {
     "0": {
       "count": 1,
