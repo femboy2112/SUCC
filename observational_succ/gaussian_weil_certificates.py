@@ -190,3 +190,65 @@ def centered_screw_matrix(a,J,N,dps=55):
     row=[sum(A[i,j] for j in range(N))/N for i in range(N)]
     ave=sum(row)/N
     return mp.matrix([[A[i,j]-row[i]-row[j]+ave for j in range(N)] for i in range(N)])
+
+
+def pole_clock_quadratic(indices, weights):
+    """EXACT rational pole signed energy at x_i=2 log(2)*index_i.
+
+    Input weights are finite signed point-probe controls summing to zero.
+    These are not delta-function Hilbert test vectors.
+    Returns (direct, positive_rank_one, negative_rank_one).
+    """
+    if len(indices)!=len(weights) or not indices or any(type(k) is not int for k in indices):
+        raise GaussianSourceError("clock indices must be exact integers")
+    w=[F(x) for x in weights]
+    if sum(w)!=0: raise GaussianSourceError("pole compression requires sum weights=0")
+    c=sum(v*(F(2)**k+F(2)**(-k))/2 for k,v in zip(indices,w))
+    s=sum(v*(F(2)**k-F(2)**(-k))/2 for k,v in zip(indices,w))
+    pos=8*s*s;neg=-8*c*c
+    direct=sum(w[i]*w[j]*(-4)*(F(2)**(indices[i]-indices[j])
+                                 +F(2)**(indices[j]-indices[i])-2)
+               for i in range(len(w)) for j in range(len(w)))
+    assert direct==pos+neg
+    return direct,pos,neg
+
+
+def gamma_clock_quadratic(indices,weights,J):
+    """EXACT finite true-Gamma OU current on 2log2-indexed clock points."""
+    gamma_tail(J)
+    if len(indices)!=len(weights) or any(type(k) is not int for k in indices):
+        raise GaussianSourceError("clock dimension")
+    w=[F(x) for x in weights]
+    return sum(
+        F(4,(4*j+1)**2)*sum(
+            w[i]*w[k]*F(1,2)**((4*j+1)*abs(indices[i]-indices[k]))
+            for i in range(len(w)) for k in range(len(w)))
+        for j in range(J)
+    )
+
+
+def harmonic_dyadic_lower(q):
+    """Exact lower bound for 2 sum_{j<2^q} 1/(4j+1).
+
+    Divide j>=1 into dyadic blocks [2^m,2^(m+1)). Each block
+    contributes STRICTLY MORE than 1/4; includes j=0 contribution 2.
+    Complexity O(q), even for astronomical J.
+    """
+    if type(q) is not int or q<0 or q>1024:
+        raise GaussianSourceError("dyadic exponent must be exact 0..1024")
+    return F(2)+sum((F(2**(m+1),2**(m+3)-3) for m in range(q)),F(0))
+
+
+def source_spectral_moat(q, D_upper):
+    """Rational implication: IF verified D_a <= D_upper and this passes,
+    source spectral multiplier m_a(xi)>=0 for |xi|>=(4*2^q+1)/2.
+
+    This cannot authenticate its D_upper input, and says NOTHING about
+    low frequency or the signed polar rank-one mode.
+    """
+    bound=harmonic_dyadic_lower(q)
+    if type(D_upper) not in (int,F) or D_upper<=0:
+        raise GaussianSourceError("certified positive rational D upper required")
+    if bound<=D_upper:
+        raise GaussianSourceError("dyadic harmonic lower does not dominate source bound")
+    return (2**q,F(4*(2**q)+1,2),bound-F(D_upper))
