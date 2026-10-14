@@ -27,3 +27,8 @@ python scripts/wild_embedding_boundary_probe.py --verify research/2026-10-14/WIL
 python scripts/verify_provenance.py
 \`\`\`
 This is a mathematical and finite-executable calibration, not an empirical physical observer, a Lean certificate of Alexander topology or a genuine RH reduction. Whole-repo CI/dedicated exact-head CI need independent inspection.
+
+
+### WES-10 — boundary source stability, but no positivity transfer
+
+**PROVED LOCAL conditional norm theorem:** If a verified same-Hilbert-space global source satisfies \(\|C-C_J\|\le\epsilon\) and \(T\) is unitary, then \(\|[PTP,PCP]-[PTP,PC_JP]\|\le2\epsilon\). An exact witnessed finite commutator margin \(m>2\epsilon\) therefore yields a genuine nonzero compressed commutator. The rational five-cycle source toy proves a margin \(m=1\), so a **declared** error \(1/10\) conditionally gives lower bound \(4/5\). Direct rational perturbation controls agree. This is not a sourced enclosure of the real Gamma convolution; the code expressly returns \`genuine_arithmetic_gamma_error_verified=False\`, \`positive_weil_proved=False\`. Sibling PR #86 has a separate actual prime/Gamma source boundary study; no unverified identification or sign consequence is imported. Failing to obtain a source-correct same-space \(\epsilon\) is an **access/transport gap**, not proof of the RH sign.
