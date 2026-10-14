@@ -72,7 +72,7 @@ For the ordinary harmonic successor law, `H_N-log N -> gamma` (DLMF 5.2.3). For 
 
 `sum_(n<=X) Lambda(n)/n - log X -> -gamma`.
 
-The latter is a known theorem requiring genuine prime-distribution input (for example the prime number theorem plus a Tauberian argument, or a suitable analytic contour estimate), NOT a consequence of the finite graph's local observations or of the truncated Laurent series by itself. Distinguish *finite proof with universal assumptions* from *finite data*. The exact finite identity in §4 gives a bridge between additive and multiplicative laws, while the PNT/analytic theorem supplies the extra global asymptotic information.
+The latter is a known theorem requiring genuine prime-distribution input (for example the prime number theorem plus a Tauberian argument, or a suitable analytic contour estimate), NOT a consequence of the finite graph's local observations or of the truncated Laurent series by itself. Distinguish *finite proof with universal assumptions* from *finite data*. The exact finite identity in §4 and the positive residual in §5a give a bridge between additive and multiplicative laws, while the PNT/analytic theorem supplies the extra global asymptotic information.
 
 Independently, the **formal Laurent germ** `Z(1+z)=1/z+c+d z+O(z²)` satisfies
 
@@ -81,6 +81,21 @@ Independently, the **formal Laurent germ** `Z(1+z)=1/z+c+d z+O(z²)` satisfies
 This is verified exactly for all rational coefficient probes. For the AUTHENTIC zeta function, `c=gamma` by its classical Laurent expansion (DLMF 25.2.4), giving opposite constant terms without reading zeros. It is a local analytic coefficient identity; to promote it to the *unsmoothed prime partial-sum limit* still needs the stronger global prime-distribution theorem.
 
 **Scale/gauge defect:** replacing `log N` by `log(aN)` shifts the ordinary finite part by `-log a`; replacing the prime cutoff normalization by `log(bX)` shifts its finite part by `-log b`. Thus the matched sum of constants becomes `-log(ab)` unless `ab=1`. No arbitrary regularization is a carrier-invariant scalar. An observer must certify a common cutoff convention and source law before calling the paired finite part a meaningful defect. The program evaluates finite differences as **numerical diagnostics only**, with an explicit false `global_limit_certified` status.
+
+## 5a. A sharpened *positive finite quantization defect* — GMS-08
+
+The exact factorial/prime-floor identity supports a further **nonnegative scalar**, now independently implemented:
+
+`D_N = sum_(n<=N) Lambda(n)/n - log(N!)/N
+     = (1/N) sum_(n<=N) Lambda(n) {N/n} >= 0`.
+
+**Proof (every finite N, classical):** divide `log(N!)=sum_(n<=N) Lambda(n) floor(N/n)` by N. Subtract this from `sum Lambda(n)/n` and use `1/n-floor(N/n)/N={N/n}/N`. Each `Lambda(n)>=0`; the fractional part `{N/n}` lies in [0,1), so the scalar is nonnegative. Equality and sign are completely source-derived, and all sums are finite. The **integer coefficient** of each symbol log(p) is replaced by the exact rational residual `sum_(k>=1,p^k<=N) [1/p^k-floor(N/p^k)/N]`. The code compares this against an independently computed sum of Euclidean residues `sum_k (N mod p^k)/(N*p^k)` and tests all cutoffs N=1..259.
+
+At N=6 the exact coefficient vector is `(log2)/12 + 0*(log3) + (log5)/30`. Its nonnegativity does not rely on any floating-point approximation or even knowing Euler gamma.
+
+**Asymptotic bridge (CLASSICAL / IMPORTED, nontrivial):** Stirling gives `log(N!)/N=log N-1+o(1)`. Prime-distribution results give `sum_(n<=N) Lambda(n)/n=log N-gamma+o(1)`. Thus `D_N->1-gamma` and in particular `0<gamma<=1`. This does not follow from the finite formula alone; one must prove the asymptotic hypotheses (e.g. via PNT and a valid summatory theorem). The finite proof of the *identity* and the finite proof of the *global asymptotic* are distinct mathematical objects.
+
+**Sign firewall:** `D_N>=0` is a one-dimensional scalar floor/continuum bias. It is **not** the Weil quadratic form and provides no operator inequality. A scalar-positive artifact cannot be identified with the authentic Weil form without an actual source-preserving, test-space-correct pairing map. Indeed E38 and the fake-6 Suzuki counterexample defeat this shortcut. The numerical value `1-gamma` depends on the matching cutoff normalization; changing the unit convention changes finite parts.
 
 ## 6. Why this does not close Weil positivity — GMS-07
 

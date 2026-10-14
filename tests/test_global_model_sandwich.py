@@ -8,7 +8,8 @@ from observational_succ.global_model_sandwich import (
     rational_global_identity,poly_eval,poly_add,poly_scale,poly_mul,
     symmetric_finite_sample_mutant,harmonic,prime_current_coefficients,
     finite_part_observation,laurent_log_derivative_germ,noncompact_parity_alias,demo_receipt,
-    factorial_succ_coefficients,divisor_jet_coefficients,factorial_prime_sandwich
+    factorial_succ_coefficients,divisor_jet_coefficients,factorial_prime_sandwich,
+    carrier_quantization_defect,quantization_numeric_diagnostic
 )
 
 
@@ -185,6 +186,32 @@ class ArithmeticConstantAndDarknessTests(unittest.TestCase):
             self.assertNotEqual(fake3,actual)
         self.assertEqual(factorial_prime_sandwich(5)["fake_composite_six_produces_extra_log6_multiplicity"],0)
         with self.assertRaises(SandwichError):factorial_prime_sandwich(0)
+
+    def test_positive_carrier_floor_quantization_defect_all_finite_cutoffs(self):
+        for n in range(1,260):
+            c=dict(carrier_quantization_defect(n))
+            cur=dict(prime_current_coefficients(n)) if n>=2 else {}
+            fact=dict(factorial_succ_coefficients(n))
+            self.assertEqual(c,{p:cur[p]-F(fact[p],n) for p in cur})
+            self.assertTrue(all(v>=0 for v in c.values()))
+            for p in c:
+                # independent rational sum of fractional parts of N / p**k
+                power=p; brute=F(0)
+                while power<=n:
+                    brute+=F(n%power,n*power)
+                    power*=p
+                self.assertEqual(c[p],brute)
+        self.assertEqual(dict(carrier_quantization_defect(6)),{2:F(1,12),3:F(0),5:F(1,30)})
+        self.assertEqual(carrier_quantization_defect(1),())
+
+    def test_quantization_limit_not_inferred_from_finite_output(self):
+        for n in (10,100,1000):
+            r=quantization_numeric_diagnostic(n)
+            self.assertTrue(r["all_prime_weights_nonnegative"])
+            self.assertTrue(r["limit_1_minus_gamma_imported"])
+            self.assertFalse(r["finite_samples_prove_limit"])
+            self.assertGreaterEqual(r["value"],0)
+        with self.assertRaises(SandwichError):carrier_quantization_defect(0)
 
     def test_two_independent_finite_part_scale_shifts(self):
         u=finite_part_observation(100,1,1)

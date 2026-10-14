@@ -12,4 +12,6 @@
 | GMS-06 | CLASSICAL IMPORT / LOCAL GERMS CHECKED | Harmonic finite part gamma and authentic prime current finite part -gamma; matched Laurent zeta / -zeta'/zeta germs | Exact rational finite germ tests; source scale shifts; global prime sum requires PNT, not established from finite table |
 | GMS-07 | UNVERIFIED | Complete SUCC categorical analytic/Weil sign transport and any authentic source-derived all-test positivity | Hidden-negative direction, discontinuous sign predicate, fake 6 and non-Euler controls; needs independent all-test estimate |
 
+| GMS-08 | CLASSICAL / PROVED LOCAL finite; ASYMPTOTIC IMPORT | Exact nonnegative divisor-floor remainder `D_N = ΣΛ(n){N/n}/N`, with integer↔prime valuation independent formal-log coefficients; `D_N -> 1−γ` requires PNT-level summatory information plus Stirling | Every cutoff N≤259 exact double oracle, N=6 coefficient witness, fake-6/source and sign firewall. Scalar is NOT the Weil quadratic form |
+
 **Separate mathematics/evidence types:** passing finite tests is neither an empirical carrier attestation nor a proof of a general topological/analytic imported theorem. The tests are finite exact or numerical diagnostics as labeled. No new academic-priority claim.

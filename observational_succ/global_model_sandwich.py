@@ -336,6 +336,41 @@ def factorial_prime_sandwich(n: int):
             "physical_source_authenticated":False}
 
 
+
+def carrier_quantization_defect(n: int):
+    """Exact nonnegative source defect between prime density and discrete factorial.
+
+    D_N=sum_(p^k<=N) log(p) [1/p^k-floor(N/p^k)/N]
+       =(1/N) sum_(p^k<=N) log(p) fractional_part(N/p^k) >=0.
+    The global limit 1-gamma requires external prime-sum/PNT + Stirling.
+    """
+    if type(n) is not int or n<1:
+        raise SandwichError("positive factorial cutoff required")
+    prime=dict(prime_current_coefficients(n)) if n>=2 else {}
+    fact=dict(factorial_succ_coefficients(n))
+    if set(prime)!=set(fact):
+        raise AssertionError("real prime/source support differs")
+    result=[]
+    for p,c in sorted(prime.items()):
+        discrepancy=c-F(fact[p],n)
+        m=p;independent=F(0)
+        while m<=n:
+            independent+=F(n%m,m*n)
+            m*=p
+        if discrepancy!=independent or discrepancy<0:
+            raise AssertionError("source-residue floor/real defect failed")
+        result.append((p,discrepancy))
+    return tuple(result)
+
+
+def quantization_numeric_diagnostic(n: int):
+    coeff=carrier_quantization_defect(n)
+    return {"cutoff":n,"value":sum(float(c)*log(p) for p,c in coeff),
+            "all_prime_weights_nonnegative":all(c>=0 for _,c in coeff),
+            "limit_1_minus_gamma_imported":True,
+            "finite_samples_prove_limit":False}
+
+
 def finite_part_observation(n:int, ordinary_scale:float=1.0, prime_scale:float=1.0):
     if ordinary_scale<=0 or prime_scale<=0:raise SandwichError("positive cutoff scales required")
     a=float(harmonic(n))-log(ordinary_scale*n)
@@ -382,6 +417,7 @@ def demo_receipt():
     mutant=symmetric_finite_sample_mutant((F(0),F(1),F(1,2)))
     n=100
     arithmetic=factorial_prime_sandwich(100)
+    defect=carrier_quantization_defect(100)
     return {
         "status":"EXACT_FINITE_MODEL_SANDWICH_RECEIPT",
         "finite_model":{"individual_A_identifies_XOR":a.identified,
@@ -402,6 +438,11 @@ def demo_receipt():
            "prime_valuation_coefficients":[[p,k] for p,k in arithmetic["additive_coefficients"]],
            "fake_six_defect":arithmetic["fake_composite_six_produces_extra_log6_multiplicity"],
            "finite_proof_does_not_require_infinite_data":True},
+        "quantization_defect":{
+            "cutoff":100,"coefficients":[[p,str(c)] for p,c in defect],
+            "nonnegative":all(c>=0 for _,c in defect),
+            "limit_to_1_minus_gamma_is_classical_import":True,
+            "finite_data_solely_proves_limit":False},
         "finite_parts":{"cutoff":n,"harmonic_exact":str(harmonic(n)),
             "prime_log_coefficients":[[p,str(c)] for p,c in prime_current_coefficients(20)],
             "comparison":finite_part_observation(n),
