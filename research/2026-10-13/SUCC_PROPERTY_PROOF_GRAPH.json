@@ -603,8 +603,8 @@
         "A08"
       ],
       "requires_any": [],
-      "scope": "Actual constructed operator, not Hilbert–Pólya slogan",
-      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+      "scope": "Global source-faithful self-adjoint operator. Suzuki (arXiv:2606.09096, revised September 2026) builds finite-interval self-adjoint machinery; unbounded-domain global limit remains open.",
+      "next_probe": "Audit Suzuki Theorems 1.1/1.5 and prove or refute candidate source-first a->infinity operator limit without importing RH"
     },
     {
       "id": "S05",
@@ -616,8 +616,8 @@
         "H10"
       ],
       "requires_any": [],
-      "scope": "Two-direction equivalence, multiplicities and no extraneous roots",
-      "next_probe": "Inject fake completion factor and verify rejection"
+      "scope": "Exact *global* two-way zeta zero/spectral divisor identification, including multiplicities and no spurious roots; Suzuki 2026 Corollary 1.6 proposes a sufficient compact-uniform limit, not an established identity.",
+      "next_probe": "Recover authentic finite-interval W(a,theta;z), prove compact-uniform limit with normalization and source-derived tails, or exhibit countermodel"
     },
     {
       "id": "S06",
@@ -644,7 +644,7 @@
       ],
       "requires_any": [],
       "scope": "Global operator/test provenance, not only sampled spectrum",
-      "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
+      "next_probe": "Distinguish finite-interval all-real spectra from conjectural global xi limit; fake selfdual completions and wrong Gamma must fail"
     },
     {
       "id": "S08",
@@ -1163,7 +1163,8 @@
     "https://arxiv.org/abs/math/0202141",
     "https://dlmf.nist.gov/25.4",
     "https://dlmf.nist.gov/5.2",
-    "https://arxiv.org/abs/0705.0452"
+    "https://arxiv.org/abs/0705.0452",
+    "https://arxiv.org/abs/2606.09096"
   ],
-  "notes": "RH PROVED: no. Status is relative to linked existing code/dossiers and may have changed after pinned heads. This is a bootstrap inventory, not mathematical priority or a claim that all premises are necessary."
+  "notes": "RH PROVED: no. Status is relative to linked existing code/dossiers and may have changed after pinned heads. This is a bootstrap inventory, not mathematical priority or a claim that all premises are necessary. Suzuki 2026 supplies finite-interval operator results but not a proven RH-yielding a->infinity limit."
 }
