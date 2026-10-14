@@ -15,7 +15,7 @@ class PureDilationTests(unittest.TestCase):
             self.assertEqual(range_projection(pa,q),pa)
             self.assertEqual(inner(pa,b),inner(a,pb))
             self.assertLessEqual(norm2(pa),norm2(a))
-            self.assertEqual(inner(a,pa),norm2(pa)
+            self.assertEqual(inner(a,pa),norm2(pa))
 
     def test_omitted_lower_cells(self):
         for q in (2,3,6):
