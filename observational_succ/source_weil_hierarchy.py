@@ -377,3 +377,35 @@ def authenticated_prime_wavefront(a):
     return tuple(active)
 
 
+
+
+def gamma_refinement_delta(a,J,N):
+    """EXACT change in the certified analytic operator error from J to J+1.
+
+    Negative is an improvement; positive proves the current cell grid is
+    too coarse to benefit *in this error instrument* from one more Gamma rung.
+    This says nothing about the sign of the authentic Weil operator.
+    """
+    a=q(a)
+    if not 0<a<=1 or type(J) is not int or not 1<=J<128:
+        raise WeilHierarchyError("refinement domain")
+    if type(N) is not int or not 2<=N<=256:
+        raise WeilHierarchyError("resolution budget")
+    h=2*a/N
+    change=2*a*(gamma_tail(J+1)-gamma_tail(J)+h*F(2,4*J+1))
+    assert change==continuous_error(a,J+1,N)-continuous_error(a,J,N)
+    return change
+
+
+def minimum_improving_resolution(a,J):
+    """First integer N>=2 where increasing J improves the exact error.
+
+    Unbounded mathematical gate; code refuses excessively large artifacts.
+    N > 4a / ((4J+1)*(tau_J-tau_(J+1))).
+    """
+    a=q(a)
+    if not 0<a<=1 or type(J) is not int or not 1<=J<128:
+        raise WeilHierarchyError("refinement domain")
+    gap=gamma_tail(J)-gamma_tail(J+1)
+    threshold=4*a/(F(4*J+1)*gap)
+    return max(2,threshold.numerator//threshold.denominator+1)
