@@ -32,7 +32,7 @@ class PropertyGraphTests(unittest.TestCase):
         self.assertGreaterEqual(report["node_count"], 75)
         self.assertEqual(report["status"], "TYPED_DEPENDENCY_GRAPH_VALID")
         self.assertFalse(report["proves_RH"])
-        self.assertEqual(set(report["rh_exits"]["R04"]["alternatives"]),
+        self.assertEqual(set(tuple(g) for g in report["rh_exits"]["R04"]["alternatives"]),
                          {("R01",), ("R02",), ("R03",)})
         self.assertEqual(len(report["topological_order"]),report["node_count"])
 
