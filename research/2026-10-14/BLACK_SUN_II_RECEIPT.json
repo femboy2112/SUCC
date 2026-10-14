@@ -1,0 +1,75 @@
+{
+  "campaign": "OPERATION BLACK SUN II",
+  "date": "2026-10-14 (evening)",
+  "branch": "research/black-sun-ii-coverage-theory-2026-10-14",
+  "parent": "research/black-sun-independent-campaign-2026-10-14@cba5cca (PR #79)",
+  "intake": "PRs #80-#86 fetched and read before design; no overlap with coverage theory or Goldbach crossover",
+  "rh_proved": false,
+  "nontrivial_zero_inputs": false,
+  "claims": [
+    {
+      "id": "BS-II-1",
+      "statement": "Omega(u) = Re psi(1/4+iu/2) - log pi is strictly increasing on (0,inf); proof via termwise Im[1/(x+n+iy)^2] < 0 in the polygamma series",
+      "status": "PROVED LOCAL",
+      "test": "test_black_sun_coverage.py::TestOmegaBand::test_monotonicity_step (max Im psi' = -0.169 < 0)"
+    },
+    {
+      "id": "BS-II-2",
+      "statement": "Omega(2pi) in (-1.282e-3, -9.86e-4) rigorously (exact positive series + integral-test tail brackets); unique zero u_0 in (2pi, 6.4)",
+      "status": "PROVED LOCAL",
+      "test": "test_2pi_bracket_contains_direct, test_zero_bracket"
+    },
+    {
+      "id": "BS-II-3",
+      "statement": "Archimedean phase transition: lambda_0(A_a) crosses 0 at a* in (0.370, 0.372) (certified numerical bracket, 100x over resolution); windows a <= a* positive WITHOUT any prime atom; at the crossing lambda_1 = +1.0577e-3 ~ -Omega(2pi) = +1.06018e-3 (flagged observation, NOT claimed exact)",
+      "status": "TESTED MODEL (certified bracket at resolution)",
+      "test": "test_bracket, test_prime_free_positivity_below_transition"
+    },
+    {
+      "id": "BS-II-4",
+      "statement": "Coverage law: deficit(a)/budget(a) <= 0.44 everywhere probed (peak at the first window's edge a = log sqrt 3), stepping down at each prime shell toward ~0.20; lambda_0(Q_a) within 1e-3 of zero throughout",
+      "status": "TESTED MODEL",
+      "test": "test_coverage_ratios"
+    },
+    {
+      "id": "BS-II-5",
+      "statement": "Phase rescue: cos(2 pi log 2) = -0.3497 < 0 (prime-2 rescues the 2pi-band-edge deficit mode), cos(2 pi log 3) = +0.814 (anti-rescue); measured rescue factor on the deficit direction -0.29 ~ cos(2 pi log 2)*overlap; coverage is phase-modulated by the rationally independent phases {2 pi log p}",
+      "status": "PROVED LOCAL (signs and dichotomy) + TESTED MODEL (factor)",
+      "test": "test_rescue_phases, test_measured_rescue_factor"
+    },
+    {
+      "id": "BS-II-6",
+      "statement": "No-go: crude band-mass budget accounting fails: at a=0.549, crude deficit C_G*beta = 5.066 (beta >= 0.943 rigorous) vs triangle rescue 3.288: gap 1.778; true deficit 0.430: profile weighting recovers factor 11.8. Any positivity proof using (band-min Omega) + (prolate mass) + (triangle rescue) cannot close",
+      "status": "PROVED LOCAL",
+      "test": "test_nogo_gap_positive"
+    },
+    {
+      "id": "BS-G1",
+      "statement": "Goldbach Fourier dichotomy: (1/2pi) int F_N^2 e^{-iN theta} = R_Lambda(N) (sum diagonal) while (1/2pi) int |F_N|^2 e^{-iN theta} = 0 EXACTLY (difference diagonal has no support at N); positive-definite correlation routes through |F_N|^2 are structurally void for additive Goldbach",
+      "status": "PROVED LOCAL + machine-precision verification (N=20,30)",
+      "test": "test_black_sun_goldbach.py::TestFourierDichotomy"
+    },
+    {
+      "id": "BS-G2",
+      "statement": "Hyperbola identity: mean_G(X) = sum_{N<=X} R_Lambda(N) = sum_{n<=X-2} Lambda(n) psi(X-n) exactly",
+      "status": "PROVED LOCAL + verified to 1.5e-11",
+      "test": "test_exact"
+    },
+    {
+      "id": "BS-G3",
+      "statement": "Binary mean dictionary: mean_G(X) = X^2/2 + zero-detector error at matched exponent (classical Perron/Landau double-pole imports); numerics: error oscillates at the X^{3/2} scale (-0.115, -0.114, +1e-4 at X=500,1000,3000)",
+      "status": "EXTERNAL THEOREM (imports) + TESTED MODEL",
+      "test": "test_track_scale"
+    },
+    {
+      "id": "BS-G4",
+      "statement": "Exact prime-power bookkeeping: R_Lambda(N) decomposes exactly into pure-prime-pair mass and prime-power contamination (e.g. N=20: 16.208 + 6.230, pairs (3,17),(7,13))",
+      "status": "PROVED LOCAL",
+      "test": "test_N20"
+    }
+  ],
+  "boundary": "Nothing proves RH or Goldbach. The phase-transition and coverage numbers are float64 Rayleigh-Ritz at stated resolution; a* in (0.370,0.372) is a clean numerical bracket, not an interval certificate. The equidistribution framing of rescue phases is heuristic, labeled UNVERIFIED. The lambda_1 ~ -Omega(2pi) crossing observation is flagged, not claimed exact.",
+  "tests_run": "python -m unittest tests.test_black_sun_coverage tests.test_black_sun_goldbach (14 tests, PASS)",
+  "tests_round1": "tests.test_black_sun_window tests.test_black_sun_tauberian tests.test_black_sun_collatz re-run on this branch: PASS",
+  "baseline": "parent-stack tests pass; main untouched"
+}
