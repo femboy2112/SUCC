@@ -53,6 +53,24 @@ class MagnusProbeTests(unittest.TestCase):
             self.assertEqual(w.magnus_expansion((2,-2),depth),{():1})
             self.assertEqual(w.magnus_report(w.nested_commutator(depth),depth),())
 
+
+    def test_independent_full_lie_binomial_oracle(self):
+        for level in range(1,7):
+            certificate=w.verify_full_magnus_leading_form(level)
+            self.assertTrue(certificate["no_lower_order_signal"])
+            self.assertTrue(certificate["full_free_lie_layer_matches"])
+            self.assertEqual(certificate["nonzero_terms"],level+1)
+            self.assertTrue(certificate["not_an_alexander_sphere_group_presentation"])
+
+    def test_wrong_commutator_orientation_changes_the_source_phase(self):
+        forward=w.commutator((1,),(2,))
+        backward=w.commutator((2,),(1,))
+        p=dict(w.magnus_report(forward,2))
+        q=dict(w.magnus_report(backward,2))
+        self.assertEqual(p[(0,1)],1)
+        self.assertEqual(q[(0,1)],-1)
+        self.assertNotEqual(p,q)
+
     def test_bad_generator_and_probe_precision_guards(self):
         for fn in (
             lambda:w.nested_commutator(2.0),
