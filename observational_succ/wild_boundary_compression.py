@@ -157,3 +157,36 @@ def gauge_conjugation(A,signs):
     if len(A)!=len(A[0]) or len(signs)!=len(A) or any(type(s) is not int or s not in (-1,1) for s in signs):
         raise BoundarySourceError("declared diagonal unitary basis transport")
     return tuple(tuple(signs[i]*A[i][j]*signs[j] for j in range(len(A)))
+
+
+def quadratic(A,vector):
+    """Exact real Hermitian Rayleigh numerator on the declared vector."""
+    A=mat(A)
+    n=len(A)
+    if n!=len(A[0]) or len(vector)!=n:
+        raise BoundarySourceError("square matrix and typed state dimension")
+    v=tuple(_rat(x) for x in vector)
+    return sum((v[i]*A[i][j]*v[j] for i in range(n) for j in range(n)),F())
+
+
+def unitary_sign_invariance_control():
+    """Exact 2x2 rational 3-4-5 orthogonal transport cannot repair a sign.
+
+    Any genuine unitary intertwining of Weil G_a preserves negative depth.
+    THIS rational toy does not assert a wild-embedding->Weil unitary functor.
+    """
+    U=((F(3,5),-F(4,5)),(F(4,5),F(3,5)))
+    G=((F(1),F()),(F(),F(-1)))
+    if multiply(transpose(U),U)!=eye(2):
+        raise BoundarySourceError("rational unitary failed")
+    Gnew=multiply(multiply(U,G),transpose(U))
+    w=(F(),F(1))
+    Uw=tuple(sum((U[i][j]*w[j] for j in range(2)),F()) for i in range(2))
+    before=quadratic(G,w)
+    after=quadratic(Gnew,Uw)
+    assert before==after==F(-1)
+    return {"original_negative_rayleigh":before,
+            "transported_negative_rayleigh":after,
+            "unitary_basis_certified":True,
+            "actual_wild_to_weil_intertwiner":False,
+            "rh_proved":False}
