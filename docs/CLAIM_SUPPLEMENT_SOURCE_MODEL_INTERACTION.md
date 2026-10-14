@@ -18,6 +18,17 @@
 | SI-11 | `ξ_fake=(1+10s(s-1))ξ` preserves reflection and endpoint constants but invents off-line real zeros and fails original Euler overlap at s=2. | REFUTES "functional equation suffices" |
 | SI-12 | Entire ξ and analytic source continuation prove global Suzuki Weil positivity/RH. | **UNVERIFIED / no implication** |
 
-**Validation:** 42 exact unittest methods passed on an isolated authored research overlay. Frozen exact receipt and independent 65-digit mpmath crosscheck also passed. The latter is **not** a rigorous quadrature certificate for arbitrary complex values; SI-04b is a rigorous finite-integral enclosure only for its supported real arguments. The complete parent checkout, full repository CI and Lean checker are separate gates. All files must be hashed against uploaded Git blobs before commit.
+**Baseline validation:** 42 exact unittest methods passed before the character extension (54 methods in the combined current isolated overlay). Frozen exact receipt and independent 65-digit mpmath crosscheck also passed. The latter is **not** a rigorous quadrature certificate for arbitrary complex values; SI-04b is a rigorous finite-integral enclosure only for its supported real arguments. The complete parent checkout, full repository CI and Lean checker are separate gates. All files must be hashed against uploaded Git blobs before commit.
 
 **Known limitations / upcoming trials:** fully certified complex finite-interval quadrature, explicit source-specific zero-count proof on a designated compact contour, and an independent completed-Weil signed-form comparison with valid domains, genuine Gamma/pole/conductor, fake composite and non-Euler controls. Neither contour observations nor analytic continuation alone prove RH. Academic priority of any new-to-SUCC packaging is unverified.
+
+## Primitive-character extension (separate source and parity)
+
+| Claim ID | Statement | Scope and status |
+|---|---|---|
+| SI-13 | Primitive odd `χ₄`, conductor 4: correct Euler prime-local signs, p=2 ramification and exact Gaussian-integer Gauss sum `τ=2i`, root number 1. | CLASSICAL local theorem / TESTED exact finite source |
+| SI-14 | Source odd theta `Σnχ₄(n)e^{-πn²t/4}` has weight-3/2 modular transformation; completed β L-function entire and reflection-symmetric, positive on all REAL s; β(0)=1/2, simple negative odd trivial zeros. | CLASSICAL analytic Poisson, detailed derivation |
+| SI-15 | Exact rational signed-theta tail and first two derivative envelopes on whole vertical real strips; no certified finite complex quadrature. | PROVED LOCAL rational analytic tail |
+| SI-16 | Sibling PRIME-SPHERE chiral diagonal `k_C(0)=4β(2)=2πβ'(-1)`, requiring **correct** χ₄ conductor/parity. | CLASSICAL identities / new-to-SUCC cross-model correspondence; **not** Weil positivity |
+
+**Additional validation:** 12 more exact finite character tests, primitive character source/odd-parity negatives, independent 60-digit signed-theta oracle and frozen receipts. Combined isolated suite: **54 methods passed**. No genuine completed non-Euler Davenport–Heilbronn source analyzed yet; source-specific negative control remains open.

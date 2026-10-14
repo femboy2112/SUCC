@@ -42,3 +42,19 @@ This work constructs **the canonical analytic completed zeta** from one original
 - Core mathematics is classical Euler/Tate/Jacobi/Mellin/Gamma. New-to-project exact finite source certification and obstruction packaging; independent scholarly novelty review absent.
 
 No physical source was authenticated. Draft-only result; do not merge to main or forward to `femboy2112/FuckingRH` without explicit maintainer review.
+
+## Additional source-independent character validation (SI-13–SI-16)
+
+To test that the gluing framework is not simply hardcoding the ζ real-place Gamma factor, it was applied to the primitive odd Dirichlet character χ₄ of conductor 4. The ramified p=2 local factor and parity ε=1 require 
+
+    Λ_χ₄(s)=(4/π)^((s+1)/2) Γ((s+1)/2) β(s).
+
+Its actual signed theta 
+
+    Θ_χ₄(t)=∑_(n∈Z)nχ₄(n)e^{-πn²t/4}
+
+has the classical correct transport `Θ_χ₄(t)=t^-3/2 Θ_χ₄(1/t)` (finite Gauss sum `τ=2i`, root 1), yielding an entire reflection-symmetric completion through a convergent t≥1 integral without zero inputs. A signed-tail / derivative-tail certificate was derived in exact rational arithmetic; wrong parity cancels the input source exactly.
+
+The previous SUCC PRIME-SPHERE sibling's auxiliary chiral Gamma kernel has `k_C(0)=4β(2)`. The χ₄ source FE independently implies `β'(-1)=2β(2)/π`; hence `k_C(0)=2π β'(-1)` exactly. This is a source-sensitive classical **cross-model consistency check**, not a derivation of RH or identification of the true Suzuki completed Weil form with the auxiliary chiral operator.
+
+Artifacts: `observational_succ/source_character_interaction.py`, tests, exact character receipt/replay, optional independent 60-digit numerical oracle and frozen output. Total isolated exact tests: **54 passing** (42 earlier +12 primitive-character cases). No new Lean proof or full source checkout claimed.

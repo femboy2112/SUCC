@@ -251,3 +251,103 @@ The **2-cell** is the Poisson/Mellin overlap equality, not a freely invented com
 - Tate's thesis / additive Fourier on adeles, local zeta integrals and Poisson summation. Exposition: https://web.stanford.edu/~dkim04/blog/tate-thesis-1/ .
 - Suzuki, [*Weil's quadratic form via the screw function*, arXiv:2606.09096v3](https://arxiv.org/html/2606.09096v3).
 - Parent SUCC, `research/2026-10-14/PRIME_FORM_HEAT_MELLIN_SOURCE.md` (PH source/gluing) and `research/2026-10-14/COMPLETED_WEIL_SOURCE_TRANSPORT.md` (completed signed form). Sibling `research/2026-10-14/SUZUKI_MARKOV_GLUING_ROUND.md` under PR #70 (Carleman first prime). No assumption that PR #70 is an ancestor of this branch.
+
+---
+
+## 10. SI-13–16: a genuinely DIFFERENT all-place character model — χ₄ and the Γ/PRIME-SPHERE bridge
+
+**Research addendum, 2026-10-14.** This directly tests whether our model interaction construction is general enough to respect an independently specified finite-place parity/conductor source. It does not change the original ζ model, SUCC physical source claims, completed Weil form, or RH status. The classical modular theta/Dirichlet beta theory is an IMPORT with exact source-signed finite proofs and independent numerical controls.
+
+### SI-13 — true prime-local χ₄ source and the indispensable ramified place (CLASSICAL / EXACT source tests)
+
+Take the primitive, nonprincipal **odd** Dirichlet character of conductor 4:
+
+    χ₄(n) = 0 if n is even,
+            +1 if n ≡1 mod 4,
+            −1 if n ≡3 mod 4.
+
+At all unramified odd primes, the original character has the genuine Euler local factor `(1−χ₄(p)p^{-s})^{-1}`. The place p=2 is **RAMIFIED**, and its Euler local factor is 1—not the same unramified local setup as ζ's `1_{Z₂}`. The real local Gamma/parity factor is
+
+    Γ_χ₄,R(s)=(4/π)^((s+1)/2) Γ((s+1)/2),
+    Λ_χ₄(s)=Γ_χ₄,R(s) β(s),
+    β(s)=∑_(n>=1) χ₄(n)n^{-s}, Re s>1.
+
+The source's complete multiplicativity and prime-vs-composite controls are verified exactly. This is not an arbitrary interchange of Gamma models: the conductor `q=4` and odd parity `ε=1` originate with the specified primitive χ₄ and its local Fourier law. The finite Gauss sum, computed exactly in Gaussian integers, is
+
+    τ(χ₄)=∑_(a mod4)χ₄(a)i^a = 2i,
+    ε_root=τ(χ₄)/(i^ε sqrt4)=1.                                 (SI18)
+
+A composite dilation such as 6 does NOT become a primitive Euler place; a wrong *even*-parity theta would vanish identically because χ₄(-n)=−χ₄(n).
+
+### SI-14 — signed theta interaction yields an entire different completion (CLASSICAL)
+
+The correct odd source theta is
+
+    Θ_χ₄(t)=∑_(n∈Z) nχ₄(n) exp(−πn²t/4)
+            =2∑_(n>=1)nχ₄(n)exp(−πn²t/4).
+
+The primitive χ₄ finite Fourier/Gauss law (SI18), plus Gaussian Poisson on the same lattice source, supplies the classical transformation
+
+    Θ_χ₄(t)=t^{-3/2} Θ_χ₄(1/t).                             (SI19)
+
+Compare ζ's theta exponent `-1/2`: **the parity changes the source's scaling dimension**. For Re s>1, ordinary Mellin gives
+
+    Λ_χ₄(s) = (1/2)∫_0^∞ Θ_χ₄(t)t^((s+1)/2-1)dt.
+
+Split at t=1 and apply (SI19). Unlike the ζ case, there is no scalar zero-mode pole: `nχ₄(n)=0` at n=0. We obtain an entire, symmetric continuation
+
+    Λ_χ₄(s)=(1/2)∫_1^∞ Θ_χ₄(t)[t^((s-1)/2)+t^(−s/2)]dt,
+    Λ_χ₄(s)=Λ_χ₄(1−s).                                       (SI20)
+
+For every real t≥1 the series defining Θ_χ₄ is a strictly positive alternating series with monotonically decreasing term magnitudes: the ratio of successive terms is bounded by `3e^{-2πt}<1`, using `π>3`. For 0<t<1, (SI19) transports positivity back from 1/t. Hence Θ_χ₄(t)>0 for all t>0, and the completed Λ_χ₄(s) is **strictly positive at every real s**. In particular, the Gamma poles at `s=-1,-3,...` are cancelled by **simple** trivial zeros of β there. This is a classical analytic fact derived without reading any nontrivial zeros.
+
+**Explicit source difference:** from the beta(1)=π/4 Leibniz series, the root-one symmetry gives `Λ_χ₄(1)=Λ_χ₄(0)=1`, so `β(0)=1/2`. This illustrates why a parity-blind Gamma chart cannot reproduce the right analytic statements.
+
+### SI-15 — certified character-tail enclosures, all imaginary ordinates (PROVED LOCAL)
+
+The odd source is signed, so we cannot use the positive θ tail unchanged. Absolute values satisfy, for t≥1,
+
+    |Θ_χ₄(t)|≤2∑_(n>=1)n e^{-πn²t/4}≤8e^{-3t/4}.
+
+For N≥1 the omitted n>N terms satisfy
+
+    |Θ_χ₄(t)−Θ_χ₄,N(t)|≤4(N+2)e^{−3(N+1)²t/4}.
+
+**Proof:** replace n² by n in the first bound and by `(N+1)n` in the second; the resulting weighted geometric sums are bounded using `exp(3/4)>2`, certified by a finite rational exponential Taylor polynomial, and `π>3`. No assumption that a signed Euler factor is a positive measure is made.
+
+For σ_-≤Re(s)≤σ_+, let
+
+    B=max(0,ceil((σ_+−1)/2),ceil(−σ_-/2)).
+
+Then for r=0,1,2,
+
+    |Λ_χ₄^(r)(s)−Λ_χ₄,N,T^(r)(s)|
+     ≤2^{-r}[4(N+2)I_(B+r)(3(N+1)²/4,1)
+              +8 I_(B+r)(3/4,T)],                            (SI21)
+
+where `I_m` and its exact rational exponential enclosure are defined in SI-04. This is **uniform along the entire vertical strip** because the oscillatory factors have absolute value 1. It bounds missing theta modes/time tail; it does NOT certify the finite complex quadrature. The implementation uses exact rational values and has hostile signed-factor controls.
+
+### SI-16 — PRIME-SPHERE chiral diagonal meets a negative trivial-zero derivative (CLASSICAL; cross-branch source identity)
+
+The older PRIME-SPHERE PR #68 constructs the auxiliary signed chiral Gamma-kernel difference `C=B_+−B_-`, whose diagonal is exactly
+
+    k_C(0)=4∑_(j>=0)[1/(4j+1)^2−1/(4j+3)^2]
+          =4β(2)=4 Catalan.                                    (SI22)
+
+From (SI20), the pole of Γ((s+1)/2) at s=-1 has residue 2, and Λ_χ₄(-1)=Λ_χ₄(2). At s=2,
+
+    Λ_χ₄(2)=(4/π)^(3/2)Γ(3/2)β(2)=4β(2)/π.
+
+Therefore the negative trivial-zero derivative is
+
+    β'(-1)= Λ_χ₄(-1)/2 = 2β(2)/π,
+
+and the chiral diagonal becomes
+
+    **k_C(0)=4β(2)=2πβ'(-1).**                            (SI23)
+
+This is an exact new-to-SUCC **source-interaction bridge** across two independently developed models: one Gamma-mode operator, one conductor/parity-correct all-place analytic continuation. Every special-function identity is classical; no new number-theoretic theorem or Weil positivity is inferred. The sibling PRIME-SPHERE branch is not imported or silently merged into this child.
+
+**Independent oracle:** `scripts/source_character_analytic_oracle.py` tests the true finite Gauss/modular law, completed Λ_χ₄ across seven Euler and non-Euler complex arguments, and the Catalan/β'(-1) relation at 60 digits. It uses signed θ integrals plus `mpmath.dirichlet` reference evaluations (not nontrivial zero inputs). The numerical errors fit the independent rigorous SI21 *omitted-tail* envelope, but finite quadrature is explicitly not certified. The exact source and 12 new regression methods are in `observational_succ/source_character_interaction.py` and `tests/test_source_character_interaction.py`; frozen source and numeric receipts accompany them.
+
+**Math-falsifying negative controls:** wrong χ parity annihilates the unweighted theta; fake composite 6 is not a primitive prime; p=2 must be treated as ramified; signed local p≡3 factor cannot be called positive local mass; wrong Γ(s/2) rather than Γ((s+1)/2) fails the theta scaling/source law. This is a constructive successful alternate-character test, not the requested completed non-Euler Davenport–Heilbronn stress test. That remains a downstream obligation.
