@@ -7,6 +7,7 @@ from observational_succ.suzuki_first_prime import (
     genuine_prime_weight_interval, first_prime_wavefront, hs_squared,
     prime_differential_form, prime_kernel_form_piecewise, l2_piecewise, translated_overlap,
     neumann_quadratic, onset_archimedean_certificate,
+    derivative_norm2_piecewise, low_regularization_certificate,
 )
 
 
@@ -98,6 +99,18 @@ class SuzukiFirstPrimeTests(unittest.TestCase):
                             prime_differential_form(v,c,b/2))
         self.assertNotEqual(prime_differential_form(v,c,b),
                             prime_differential_form(v,Q(3,5),b))
+
+    def test_derivative_budget_and_hs_spectral_bound(self):
+        for sign in (1,-1):
+            v=wave_pair(sign)
+            self.assertGreater(derivative_norm2_piecewise(v),0)
+            for b in (Q(2,3),Q(9,13)):
+                r=low_regularization_certificate(v,Q(2,5),Q(7,10),b)
+                self.assertTrue(r["proved_cauchy_schwarz_for_test"])
+                self.assertFalse(r["uniform_L2_relative_bound_derived"])
+                self.assertFalse(r["RH_proved"])
+        with self.assertRaises(SuzukiWavefrontError):
+            low_regularization_certificate(wave_pair(1),Q(1,2),Q(7,10),Q(1))
 
     def test_exact_neumann_inverse_quadratic(self):
         for a in (Q(1,4),Q(2,5),Q(3,4),Q(7,5)):

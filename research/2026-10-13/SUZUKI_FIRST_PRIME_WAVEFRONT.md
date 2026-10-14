@@ -120,6 +120,14 @@ The spectral signs `±b` have infinite multiplicity: choose arbitrary orthonorma
 
 **Status/meaning:** This is a rigorously derived *operator-norm discontinuity of the isolated first-prime contribution under zero-extended embeddings*. It does not assert norm discontinuity of Suzuki's full self-adjoint `A_a`: the latter carries a varying domain, full real-place term and established continuous `λ_a`.
 
+**Finite observer frequency-budget inequality (PROVED LOCAL).** Hilbert–Schmidt Cauchy–Schwarz gives for every `v∈H_0^1(-a,a)`
+
+```
+|Q_2(v)| <= (b*w²/sqrt6) ||v' ||².
+```
+
+If a finite observer restricts to `||v'||<=M||v||`, its source-induced operator error on that observer is at most `(b*w²/sqrt6)M²||v||²`. This is a **valid fixed-bandwidth finite certificate**. It cannot be made uniform over the full L² completion since the translated corner states have unbounded derivative budgets as `w↓0`. Independent exact squared inequalities are implemented in `low_regularization_certificate()`.
+
 **Regularity-cost corollary.** Any smooth bump `v` supported in these two width-`w` endpoint strips obeys the 1D Poincaré bound
 
 ```
@@ -197,6 +205,32 @@ Embed all interval spaces by zero extension in `L²(R)`. As `a↓c/2`, the prime
 
 The first new prime is invisible to each fixed regular probe in the limit but remains detectable by a *moving*, increasingly localized normalized observer. This is the exact same strong-vs-operator-norm distinction seen in the reciprocal-cell Wold-shell PR #61, though no canonical SUCC-to-Suzuki intertwiner is asserted.
 
+## 2b. Moonshot falsifier: source Fourier symbol alone cannot be nonnegative
+
+**S1.6 (PROVED LOCAL; classical Fourier/Paley–Wiener algebra).** For `v∈C_c^∞(-a,a)` define
+
+```
+M_a(ξ)= 2 ∫_0^∞ (1-cos(t ξ)) h(t)dt
+        − (log(4pi)+gamma+log2+pi/2)
+        − 2 Σ_{q<=e^(2a)} (Λ(q)/sqrt(q)) cos(ξ log(q)).
+```
+
+Plancherel and S1.0 give the *exact* identity
+
+```
+Q_W(v) = (1/(2pi)) ∫_R M_a(ξ)|vhat(ξ)|² dξ
+         + 2 Re(A_+ conjugate(A_-)).
+```
+
+At `ξ=0`, the continuous real-place translation energy vanishes, so **for every finite a>0**
+
+```
+M_a(0)= −[log(4pi)+gamma+log2+pi/2]
+        − 2 Σ_{q<=e^(2a)} Λ(q)/sqrt(q) < 0.
+```
+
+Thus **pointwise positivity of the scalar Fourier multiplier is false on the authentic source**, even in the prime-free region. The `A_±` term and the finite-interval Paley–Wiener restriction are load-bearing. The rank-two term is itself indefinite: for an even real probe it is nonnegative (`A_+=A_-`), while for an odd real probe it is nonpositive (`A_+=−A_-`). Neither taking the continuous translation energy alone nor discarding the pole/boundary information proves Weil positivity. This is an exact *negative control for an entire proposed proof strategy*, not an assertion that `Q_W` is indefinite.
+
 ## 3. Independent exact Neumann metric control
 
 Suzuki §8.2 writes, on mean-zero `u∈L_0²(-a,a)`, `K_a=(-Δ_N)^(-1)` with kernel
@@ -234,4 +268,4 @@ C. **Dual observer connection / compact metric.** In source-faithful `H^1_0`, co
 
 D. **Global a→∞ / Suzuki (1.12).** Seek a valid normalization and limit only after a source-identified family and cross-interval deficiency/boundary transport exists. A finite interval's self-adjoint spectral function does not prove RH. No hidden use of zeros to construct the candidate.
 
-**Verdict:** A real local arithmetic/Archimedean coupling lemma was proved; an operator-topology pitfall was exposed; the exact domain of the missing global estimate has become sharper. `RH PROVED: no`. No full `G_a-c(a)K_a≽0` theorem, no spectral limit and no global Nyman bound are claimed.
+**Verdict:** A real local arithmetic/Archimedean coupling lemma was proved; an operator-topology pitfall and an invalid pointwise-symbol proof strategy were exposed; the exact domain of the missing global estimate has become sharper. `RH PROVED: no`. No full `G_a-c(a)K_a≽0` theorem, no spectral limit and no global Nyman bound are claimed.

@@ -145,6 +145,35 @@ def l2_piecewise(points: tuple[tuple[Q,Q], ...]) -> Q:
                 for (l,vl),(r,vr) in zip(t,t[1:])), Q())
 
 
+
+def derivative_norm2_piecewise(points: tuple[tuple[Q,Q],...]) -> Q:
+    """Exact H_0^1 weak-derivative squared norm, for piecewise affine probes."""
+    t=_knots(points)
+    return sum(((vr-vl)**2/(r-l) for (l,vl),(r,vr) in zip(t,t[1:])),Q())
+
+
+def low_regularization_certificate(points: tuple[tuple[Q,Q],...],
+                                   a: Q,c: Q,b: Q) -> dict:
+    """Exact test of |<R v',v'>| <= ||R||_HS ||v'||² (square comparison).
+
+    This finite probe bound is NOT a global L²-relative estimate, since
+    normalized translated corner modes can require ||v'||/||v|| ~ 1/w.
+    """
+    t=_knots(points)
+    if type(a) not in (int,Q) or t[0][0]!=-Q(a) or t[-1][0]!=Q(a):
+        raise SuzukiWavefrontError("original source interval not matched")
+    slope2=derivative_norm2_piecewise(t)
+    real_form=prime_differential_form(t,c,b)
+    hs2=hs_squared(a,c,b)
+    if real_form*real_form>hs2*slope2*slope2:
+        raise ArithmeticError("source spectral inequality failed")
+    return {"derivative_norm_squared":str(slope2),
+            "prime_source_quadratic":str(real_form),
+            "kernel_HS_squared":str(hs2),
+            "proved_cauchy_schwarz_for_test":True,
+            "uniform_L2_relative_bound_derived":False,
+            "RH_proved":False}
+
 def _product_linear_integral(l: Q,r: Q,fl: Q,fr: Q,gl: Q,gr: Q) -> Q:
     return (r-l)*(2*fl*gl + fl*gr + fr*gl + 2*fr*gr)/6
 
