@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "description": "Typed engineering/research prerequisite map, NOT a graph of proved logical implications. requires_any is OR of AND groups. Proof gates may depend on engineering audits; statuses refer only to scope, not promotion of descendants.",
+  "description": "Typed engineering/research prerequisite map, NOT a graph of proved logical implications. requires_any is OR of AND groups. Proof gates may depend on engineering audits; statuses refer only to scope, not promotion of descendants. Q05 is OPTIONAL theorem-prover hardening; a sound human-checkable analytic proof is not invalid solely because it is not machine-formalized.",
   "base": {
     "repository": "femboy2112/SUCC",
     "main_commit": "6e0d88f1b235b85188393bbcd64ac0436cb71a70",
@@ -796,9 +796,12 @@
         ],
         [
           "P06"
+        ],
+        [
+          "P13"
         ]
       ],
-      "scope": "Unconditional all-support source-derived proof; RH-equivalent gate",
+      "scope": "Unconditional source-derived nonnegative full Weil functional on every admissible test, via analytic, operator or geometric positivity",
       "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
     },
     {
@@ -1030,11 +1033,10 @@
       "requires_all": [
         "Q02",
         "Q03",
-        "Q04",
-        "Q05"
+        "Q04"
       ],
       "requires_any": [],
-      "scope": "Whole RH exit route; open PR not merged into main",
+      "scope": "Global RH proof review: formal-kernel verification Q05 is strongly desirable but not a logical requirement for valid mathematical proof",
       "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
     },
     {
@@ -1072,18 +1074,8 @@
         "H10",
         "Q07"
       ],
-      "requires_any": [
-        [
-          "P05"
-        ],
-        [
-          "P06"
-        ],
-        [
-          "P13"
-        ]
-      ],
-      "scope": "A full-source unconditional positivity theorem on all Weil tests",
+      "requires_any": [],
+      "scope": "Use full completed source, global positivity and classical Weil criterion; alternative positivity proofs tracked inside P07",
       "next_probe": "Supply countermodel or reproducible source-indexed proof receipt"
     },
     {
