@@ -243,3 +243,101 @@ At \(a=1/2\), the existing modest N=24 stage has an analytic norm error around 0
 ## XII. Source-map cache alias incident (OBSERVED AND REPAIRED)
 
 An adversarial type test discovered that Python's default \`functools.lru_cache\` can reuse a \`Fraction(1,2)\` result for a float \`0.5\` because their hashes and equality coincide, bypassing the **function-body** exact-type rejection if a certified rational key was already cached. Thus source validity is not protected by a post-cache argument validator. The dedicated CI failed this test on head \`7d565c2\`, preserving the actual failure receipt; the repair uses \`@lru_cache(..., typed=True)\` on **every** exact-source cache (\`stage\`, \`screw_interval\`, \`log_iv\`, \`exp_pos\`, etc.) with explicit warmed-cache float-alias regression. GitHub CI after the typed-cache patch passed both Python versions, confirming the particular alias no longer bypasses these source gates. This is a real implementation-level \(\sigma\)/source-map correctness issue, not a new theorem about Weil positivity. A Python cache key is not a physical source certificate.
+
+
+## XIII. MONOTONE GAMMA–GALERKIN CERTIFICATE DIAMOND — FSW-10/11 (PROVED LOCAL + CLASSICAL Fourier positivity)
+
+This is the strongest constructive refinement of this round and addresses the user's *models of interacting models* question directly.
+
+The previous full-kernel sup norm bound \(\|g-g_J\|_\infty=O(J^{-1})\) discarded **both** the mean-zero test domain and the physical/arithmetic sign of Suzuki's authentic Gamma bath. Correctly restore these constraints. In the original source formula (FS1), one Gamma rung has kernel
+\[
+-\frac4{d_j^2}(1-e^{-d_j|x-y|/2})
+=-\frac4{d_j^2}+\frac4{d_j^2}e^{-d_j|x-y|/2},
+\quad d_j=4j+1.
+\]
+For all \(u\in H_a=L_0^2(-a,a)\), the constant part annihilates quadratic pairings because \(\int u=0\). The remaining resolvent \(R_\alpha(x,y)=e^{-\alpha|x-y|}\) is **positive semidefinite** on the whole real line: under angular Fourier transform,
+\[
+\widehat R_\alpha(\xi)=\frac{2\alpha}{\alpha^2+\xi^2}>0.
+\]
+Therefore the genuine signed source after J Gamma rungs, denoted \(G_{a,J}\), has exact order
+\[
+\boxed{G_{a,J+1}-G_{a,J}=\frac4{(4J+1)^2}P_aR_{(4J+1)/2}P_a\succeq0.}\tag{FS12}
+\]
+This is a **source-specific Loewner monotonicity theorem**: each authentic Gamma mode *only repairs the signed operator's potential negativity*. It is not obtained by adding a hypothetical auxiliary chiral bath. It uses precisely the *original* Suzuki 1-mod-4 Gamma modes and the actual mean-zero source domain. It does not imply \(G_{a,J}\succeq0\) at a finite J or for J=∞.
+
+The true omitted operator
+\[
+T_{a,J}:=G_a-G_{a,J}
+=\sum_{j\ge J}\frac4{d_j^2}P_aR_{d_j/2}P_a\succeq0
+\]
+has a **much better** certified operator norm than the kernel-sup remainder. Young/Plancherel gives \(\|R_\alpha\|_{L^2(\mathbb R)}\le2/\alpha\), hence \(\|P_aR_{d/2}P_a\|\le4/d\). Therefore
+\[
+ \|T_{a,J}\|\le16\sum_{j\ge J}\frac1{(4j+1)^3}
+ \le\boxed{ \widehat\tau_J:=\frac2{(4J+1)^2}+\frac{16}{(4J+1)^3}}
+ =O(J^{-2}).\tag{FS13}
+\]
+This bound is **fully rational, unconditional in a, and is positive**. It improves the previously used \(O(J^{-1})\) symmetric tail estimate by an entire order, while respecting every source law.
+
+### FSW-10a — one-sided source-to-Weil certification
+
+Let \(\widetilde G_{a,J,N}\) be the outward-rational signed cell operator constructed in §II. Its **spatial plus arithmetic interval error alone** is
+\[
+ E_{\rm spatial}=2a(h L_J(a)+\eta),
+\]
+whereas the positive missing Gamma modes satisfy \(0\preceq T_{a,J}\preceq\widehat\tau_J I\). Consequently,
+\[
+ \boxed{\widetilde G_{a,J,N}-E_{\rm spatial}I
+ \preceq G_a\preceq
+ \widetilde G_{a,J,N}+(E_{\rm spatial}+\widehat\tau_J)I.}\tag{FS14}
+\]
+This pair of operator inequalities holds **on the full infinite-dimensional mean-zero space**, with \(\widetilde G\) extended as zero off the finite step subspace. Unlike the earlier symmetric enclosure, the **lower bound** incurs *NO Gamma-tail penalty*. It is an authentic source-specific analytic improvement, not an arbitrary numeric comparison.
+
+In terms of negative depth,
+\[
+ \boxed{
+ \max(0,d_-(\widetilde G)-E_{\rm spatial}-\widehat\tau_J)
+ \le d_-(G_a)\le d_-(\widetilde G)+E_{\rm spatial}.
+ }\tag{FS15}
+\]
+The left side can be made explicit through a finitely presented negative Rayleigh vector; the right through exact rational shifted LDL in the mean-zero contrast basis. Current code \`original_source_one_sided\` calculates those signed certificates, with a **full stage-replay proof gate**. If a source-true finite **whole-space** operator \(G_{a,J}\) is proven PSD at some J (not merely sampled), then \(G_a\succeq0\) for that a immediately, regardless of further Gamma rungs. This is a possible IdealHard pathway rather than a claim that a such J has been found.
+
+### FSW-11 — the model-of-model monotone minimax diamond
+
+Take nested finite-dimensional mean-zero subspaces \(V_N\subset H_a\), with dense union, and orthogonal projections \(P_N\). Let
+\[
+ b_{J,N}(a):=d_-(P_N G_{a,J} P_N)
+\]
+where the **exact** finite stage is considered (no rounding/truncation artifact in the stated theorem). By the two proved source/model orders:
+
+- **Increasing N** admits more test directions, so \(b_{J,N}\le b_{J,N+1}\).
+- **Increasing J** inserts an actual positive Gamma OU mode, so \(b_{J+1,N}\le b_{J,N}\).
+- Compactness yields \(\lim_N b_{J,N}=d_-(G_{a,J})\).
+- The \(\widehat\tau_J\) bound is **uniform in N**, so \(\lim_J b_{J,N}=d_-(P_NG_aP_N)\).
+
+Thus **the two competing proof/refinement directions commute at their extrema**:
+\[
+\boxed{
+\inf_{J\ge1}\sup_{N\ge1}b_{J,N}(a)
+=\sup_{N\ge1}\inf_{J\ge1}b_{J,N}(a)
+=d_-(G_a).
+}\tag{FS16}
+\]
+For the first equality chain, use norm convergence and (FS5). For the second, use nested Galerkin compactness. No noncompact minimax theorem or quantum mechanism is smuggled in. It is an ordinary, but source-specific, spectral/order theorem with a quantitative **uniform tail modulus** \(\widehat\tau_J\). It is *not* the assertion that a **finite** J,N achieves the common value exactly, and it does not assert that common value is zero.
+
+This is the precise **two-axis SUCC meta-interaction certificate** the earlier hierarchy lacked:
+
+\[
+\begin{array}{c}
+N\uparrow:\quad\text{more actual test contacts, negative debt can increase}\\
+J\uparrow:\quad\text{more authentic positive Gamma source, negative debt can decrease}\\
+\text{source-preserving norm convergence}:\quad\text{both routes meet at }d_-(G_a).
+\end{array}
+\]
+
+The remaining RH-hard question becomes *why this common, already identified and computably approximable source invariant must be zero for every a*. The existence/coherence of the two-axis limit itself is **settled** within the stated analytic assumptions. It is a genuine interaction calculus, not a positivity theorem and not a statistical posterior.
+
+**Hostile checks:** replace one true Gamma OU mode by its negative—the Loewner proof fails; remove mean-zero and the constant kernel is no longer invisible; insert artificial independent composite 6 in the prime tape—the source identification fails; infer strict coercivity from a compact positive tail—the conclusion fails at high Fourier frequency. Those controls remain separately typed.
+
+**Quantified resource improvement:** for J=64, the old global kernel sup tail bound is roughly 0.00395, while the new genuine mean-zero operator tail bound is roughly \(3.12\times10^{-5}\); the algebraic gain approaches one additional factor \(1/J\). This improves both the counterexample-witness error budget and the lower-sign frontier without changing the original arithmetic test space or assuming RH.
+
+**Novelty status:** authentic OU positivity is classical, the signed source-Gamma decomposition appears already in SUCC PRIME-SPHERE/#70 and Suzuki's kernel; this new-to-SUCC *paired Loewner/Galerkin monotone minimax certificate* should be credited as an assembly/explicit source proof instrument, **not independently claimed as an original published theorem**.
