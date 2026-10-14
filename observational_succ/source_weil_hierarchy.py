@@ -477,3 +477,14 @@ def monotone_gamma_mode_rayleigh(indices,weights,J):
     """
     from .gaussian_weil_certificates import gamma_clock_quadratic
     return gamma_clock_quadratic(indices,weights,J)
+
+
+def vanishing_positive_tail_toy(J):
+    """ONE-DIMENSIONAL countermodel: positive limit but no PSD finite stage.
+
+    G_inf=0; G_J=-1/(4J+1) strictly negative for every J.
+    J increments G_(J+1)-G_J>0 and ||G_J-G_inf||->0.
+    This is a scope-labelled toy, not the original zeta operator.
+    """
+    if type(J) is not int or J<1:raise WeilHierarchyError("toy J>=1")
+    return -F(1,4*J+1)
