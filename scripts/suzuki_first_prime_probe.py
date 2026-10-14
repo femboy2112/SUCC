@@ -1,6 +1,12 @@
 """Deterministic zero-free exact arithmetic receipt for Suzuki prime onset."""
 import json
+import sys
+from pathlib import Path
 from fractions import Fraction as Q
+
+# Make direct `python scripts/suzuki_first_prime_probe.py` work from repo root,
+# as well as module invocation, without an editable package installation.
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from observational_succ.suzuki_first_prime import (
     first_prime_wavefront, genuine_prime_weight_interval, hs_squared,
     prime_differential_form, l2_piecewise, neumann_quadratic,
