@@ -193,5 +193,23 @@ class HigherOrderSignTests(unittest.TestCase):
             h.finite_multiway_search(M,amplitude=0)
 
 
+
+
+class SourceWavefrontTests(unittest.TestCase):
+    def test_authentic_radius_prime_activation(self):
+        self.assertEqual(h.authenticated_prime_wavefront(Q(1,4)),())
+        self.assertEqual(h.authenticated_prime_wavefront(Q(1,2)),((2,2),))
+        self.assertEqual(h.authenticated_prime_wavefront(Q(1)),((2,2),(3,3),(4,2),(5,5),(7,7)))
+        self.assertNotIn((6,6),h.authenticated_prime_wavefront(Q(1)))
+
+    def test_wavefront_source_and_radius_gates(self):
+        with self.assertRaises(h.WeilHierarchyError):
+            h.authenticated_prime_wavefront(Q(0))
+        with self.assertRaises(h.WeilHierarchyError):
+            h.authenticated_prime_wavefront(Q(5,4))
+        with self.assertRaises(h.WeilHierarchyError):
+            h.authenticated_prime_wavefront(0.5)
+
+
 if __name__=='__main__':
     unittest.main()
