@@ -188,3 +188,58 @@ Proof graph (minimal cut):
 6. Classification of RH itself as FuckedSpace **UNVERIFIED**; IdealHard features are established, generic observer limitations are rigorous.
 
 **No finality claim**: success on the mathematical hierarchy and exact source enclosure only advances the probe/toolkit and strengthens falsifiability. It cannot turn a finite certificate covering a bounded interval or a fast numeric zero scan into RH. Review all theorem normalization constants and hostile cases on this branch before merge. No physical source or academic priority authenticated.
+
+
+## IX. Genuine higher-order sign obstruction: pairwise positivity is not enough — FSW-07 (PROVED LOCAL, finite toy; NO authentic RH conclusion)
+
+Our first exact finite signed test searched only pairwise mean-zero contrasts \(e_i-e_j\). A three-model source test refutes their completeness. Take
+\[
+ u=(1,1,-2),\quad M=I-\tfrac15 uu^T
+ =\begin{pmatrix}4/5&-1/5&2/5\\-1/5&4/5&2/5\\2/5&2/5&1/5\end{pmatrix}.
+\]
+On every pairwise contrast \(e_i-e_j\), the Rayleigh value is either \(1\) or \(1/10\), **strictly positive**. Yet \(Mu=-u/5\), hence the genuinely three-coordinate direction has Rayleigh quotient \(-1/5\). A model-of-pairwise-positive-models can therefore be **false about the whole signed interaction**. This is the elementary \(3\times3\) principal-minor/Schur phenomenon, not new operator theory or a source-lawful zeta mutation. The rational proof is independently executable, not numerical.
+
+\`finite_multiway_search\` now enumerates bounded integer mean-zero vectors, including \(u\), and finds a negative rational joint direction that all pairwise controls miss. \`authenticated_multiway_witness\` runs the SAME search on an original-source replayed Suzuki stage and only promotes a negative mathematical conclusion if its actual upper Rayleigh bound plus *every* analytic/interval error is strictly negative. No positive statement is inferred from the failure to find a witness. The finite source replay and source label remain required. This provides SUCC's recursive interaction calculus a **real test of probe completeness**, not an unconstrained “interesting vibe.”
+
+## X. Prime-wavefront and radial negative-debt monotonicity — FSW-08 (PROVED LOCAL + classical Suzuki continuity)
+
+**Original-source radius inclusion.** For \(0<a<b\), zero extension embeds \(H_a=L_0^2(-a,a)\) isometrically into \(H_b\). The quadratic form of the *same original* convolution kernel is preserved on embedded functions:
+\[
+\langle G_b\,\iota u,\iota u\rangle=\langle G_a u,u\rangle.
+\]
+Therefore
+\[
+ \boxed{d_-(G_a)\le d_-(G_b)\qquad(0<a<b).}\tag{FS9}
+\]
+Moreover \(a\mapsto d_-(G_a)\) is **continuous**: rescale \(H_a\to H_1\) unitarily by \(f\mapsto\sqrt a\,f(a\cdot)\); the rescaled continuous kernel is \(a\,g(a(x-y))\). Uniform continuity of g on bounded differences implies norm-continuity on every compact radius interval, and (FS5) transfers this to d. Near \(a=0\), \(\|G_a\|\le2a\sup_{|r|\le2a}|g(r)|\to0\), so \(d_-(G_a)\to0\).
+
+**Operational meaning:** if a negative source direction ever appears at radius \(a_0\), it persists at every larger radius and can never be “repaired” by a *larger exact source window*. Conversely, for RH it is necessary and sufficient that the debt vanish on any unbounded sequence of test radii, such as integer \(a=1,2,3,\ldots\). Earlier finite numerical stage output need not itself respect this monotonicity because its source truncation and interval budgets differ; its **rigorously bounded** error must account for apparent counter-trends. This is the radial companion to nested Galerkin monotonicity (FS7).
+
+**Authentic arithmetic wavefront:** a prime-power n first enters compact kernel differences when \(2a=\log n\), i.e. \(a=(\log n)/2\), since the source term is \((|x-y|-\log n)_+\). The source wavefront finder computes the actual n=p^k activation set for rational \(a\le1\) using outward logarithm intervals, refusing precision-ambiguous boundaries. At a=1/4: no prime atoms; at a=1/2: only n=2; at a=1: n=2,3,4,5,7. Composite 6 is not a new independent place. The **overall sign depth remains continuous across these activation thresholds**, since \((r-\log n)_+\) is continuous. There is no discontinuous “new zero created by opening a prime port” theorem.
+
+If RH is false, \(\{a:d_-(G_a)>0\}\) is a nonempty upper interval and the first obstruction radius \(a_*=\inf\{a:d_-(G_a)>0\}\) is mathematically well-defined. Suzuki/Yoshida's imported small-support positivity results suggest \(a_*>0\), but no numerical value or finite construction of \(a_*\) follows from this theorem. If RH is true, the set is empty. The classification is conditional, not a claim about the actual sign.
+
+## XI. A sharp certified resource tradeoff — FSW-09 (PROVED LOCAL)
+
+A subtle IdealHard-like phenomenon emerges directly from the true source's finite-Gamma/spatial approximation errors. More authentic Gamma modes always improve the **kernel's infinite-rung truncation**, but at a **fixed spatial observer resolution** they make the finite-truncated kernel more oscillatory / less cheaply Lipschitz. Our stated analytic error
+\[
+E_{a,J,N}^{\rm an}=2a\bigl(\tau_J+(2a/N)L_J^{\rm safe}(a)\bigr)
+\]
+uses \(\tau_J=(4J+1)^{-1}+4(4J+1)^{-2}\), and the rational safe Lipschitz ladder increments by exactly \(2/(4J+1)\). Consequently the **exact rational change in the proved error bound** on adding one Gamma rung is
+\[
+\boxed{
+E_{a,J+1,N}^{\rm an}-E_{a,J,N}^{\rm an}
+=2a\left[\tau_{J+1}-\tau_J+
+\frac{4a}{N(4J+1)}\right].}\tag{FS10}
+\]
+The error certificate improves **if and only if**
+\[
+\boxed{N>\frac{4a}{(4J+1)(\tau_J-\tau_{J+1})}.}\tag{FS11}
+\]
+For \(a=1/2,J=12\), the threshold is exactly \(137641/6010\simeq22.902\), so increasing J improves the bound at N=23 but **worsens it at N=22**. For J=16,N=24 it also worsens; at N=64 it improves. The source Gamma rung itself is genuine; the nonmonotonicity is in this *particular observer's quantitative approximation guarantee*, **not in d_-(G_a)**. This is an explicit two-resolution SUCC law: advancing one certified model coordinate requires enough capacity in the other coordinate to preserve overall approximation quality.
+
+At \(a=1/2\), the existing modest N=24 stage has an analytic norm error around 0.5 even when J is optimized; true first-window lowest spectral margins reported in sibling Black Sun #79 are \(\sim10^{-4}\) diagnostics. Thus a small finite Gram pass with this coarse certificate is nowhere near a definitive whole-test positivity proof. Demanding such a proof from this insufficient resource geometry would confuse an *instrument calibration wall* with a mathematical impossibility. To reach RH-relevant spectral scales the program needs better Galerkin/interpolation, adaptive wavefront meshing, stronger source-specific bounds or a structural positivity theorem—not merely more numerically sampled zeros.
+
+## XII. Source-map cache alias incident (OBSERVED AND REPAIRED)
+
+An adversarial type test discovered that Python's default \`functools.lru_cache\` can reuse a \`Fraction(1,2)\` result for a float \`0.5\` because their hashes and equality coincide, bypassing the **function-body** exact-type rejection if a certified rational key was already cached. Thus source validity is not protected by a post-cache argument validator. The dedicated CI failed this test on head \`7d565c2\`, preserving the actual failure receipt; the repair uses \`@lru_cache(..., typed=True)\` on **every** exact-source cache (\`stage\`, \`screw_interval\`, \`log_iv\`, \`exp_pos\`, etc.) with explicit warmed-cache float-alias regression. GitHub CI after the typed-cache patch passed both Python versions, confirming the particular alias no longer bypasses these source gates. This is a real implementation-level \(\sigma\)/source-map correctness issue, not a new theorem about Weil positivity. A Python cache key is not a physical source certificate.
