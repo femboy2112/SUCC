@@ -18,3 +18,5 @@ python3 scripts/verify_succ_property_graph.py
 ```
 
 **Next verdict changer:** refining the tail into the exactly-computable synchronized `jL` cells plus a residual, to push the lower bound from `m/(K+1)` toward `1/L²` plus a computable residual term — still a finite certificate, but a sharper one.
+
+| TS-01 | With `c_r=|1−F(r)|²` (`c_L=1` exact), `m'=min_{r<L}c_r`, `M'=max_{r<L}c_r`, `B=Σ_{jL>K}1/(jL(jL+1))`: `P_K+B+m'(1/(K+1)−B) ≤ E ≤ P_K+B+M'(1/(K+1)−B)`. Lower bound strictly sharper than PTE-01 always; upper strictly sharper when `M'≠1`; 65× tighter in the blackout-dominated regime (a₂=2 brackets 1−ln 2). | PROVED LOCAL | `observational_succ/tail_split_enclosure.py`, `tests/test_tail_split_enclosure.py` (9 assertions); exact residue split + telescoping; independent 4000-cell direct-sum check. |
