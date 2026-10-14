@@ -190,3 +190,27 @@ def unitary_sign_invariance_control():
             "unitary_basis_certified":True,
             "actual_wild_to_weil_intertwiner":False,
             "rh_proved":False}
+
+
+def conditional_commutator_stability(error):
+    """Zero-reading finite toy: if ||C_real-C_toy||<=error, a witness persists.
+
+    Exact finite source T is orthogonal, hence ||PTP||<=1; its compressed
+    commutator with C_toy has e_0 output (-1,0,0), Euclidean norm 1.
+    Thus ||[PTP,PC_realP]||>=max(0,1-2*error).
+    The supplied error is an ASSUMPTION, not a certificate of an authentic
+    Gamma/Weil source or of an actual wild-sphere embedding.
+    """
+    error=_rat(error)
+    if error<0:
+        raise BoundarySourceError("positive validated operator norm error required")
+    cert=finite_boundary_certificate()
+    if cert.norm_square_frobenius!=2 or cert.compressed_commutator[0][0]!=-1:
+        raise BoundarySourceError("exact finite model drift")
+    return {
+        "conditional_operator_lower_bound":max(F(),F(1)-2*error),
+        "declared_error":error,
+        "genuine_arithmetic_gamma_error_verified":False,
+        "positive_weil_proved":False,
+        "source":"FINITE_CYCLIC_TOY_BOUNDARY"
+    }
