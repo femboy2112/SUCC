@@ -378,6 +378,67 @@
       "root_detected": true,
       "trivial_abelian_character_on_root": true
     },
+    "finite_surjective_quotient": {
+      "actual_Alexander_exterior_quotient_uses_imported_Hatcher": true,
+      "actual_wild_geometry_simulated": false,
+      "direct_limit_surjection_follows_from_compatibility": true,
+      "root": [
+        1,
+        2,
+        0,
+        3,
+        4
+      ],
+      "stage_one_generators": [
+        [
+          0,
+          2,
+          1,
+          4,
+          3
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          3
+        ]
+      ],
+      "stage_two_generated_subgroup_order": 60,
+      "stage_two_generators": [
+        [
+          0,
+          1,
+          3,
+          4,
+          2
+        ],
+        [
+          0,
+          3,
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          3,
+          2,
+          4,
+          1
+        ],
+        [
+          3,
+          0,
+          2,
+          1,
+          4
+        ]
+      ],
+      "stage_two_is_surjective": true,
+      "weilian_positivity_claimed": false
+    },
     "group_order": 60,
     "source_to_arithmetic_Weil_map_constructed": false
   },

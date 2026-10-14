@@ -13,6 +13,7 @@ from observational_succ.wild_ambient_succ import (
     evidence_contract, reflection_positive_no_go,
     compressed_flat_operator_control,a5_holonomy_energy_sign_control,
     a5_conjugacy_invariant_observer,
+    generated_a5_subgroup, alexander_a5_finite_quotient,
 )
 
 FRAME=SourceFrame('original_Z3_embedding',4,'integer_xyz',1)
@@ -162,6 +163,26 @@ class PerfectCommutatorTower(unittest.TestCase):
         self.assertTrue(o['all_60_conjugations_certified'])
         self.assertTrue(o['class_detects_nonidentity'])
         self.assertFalse(o['real_world_instrument_authentication'])
+
+    def test_four_stage_two_loops_surject_onto_A5(self):
+        cert=alexander_a5_finite_quotient()
+        self.assertTrue(cert['stage_two_is_surjective'])
+        self.assertEqual(cert['stage_two_generated_subgroup_order'],60)
+        self.assertEqual(len(cert['stage_two_generators']),4)
+        self.assertFalse(cert['actual_wild_geometry_simulated'])
+
+    def test_independent_stage_two_subgroup_oracle_and_negative_controls(self):
+        cert=alexander_a5_finite_quotient()
+        values={ID}
+        seeds=list(cert['stage_two_generators'])
+        for _ in range(70):
+            nxt=values|{compose(a,b) for a in values for b in seeds}
+            if nxt==values:break
+            values=nxt
+        self.assertEqual(values,set(a5()))
+        self.assertEqual(len(generated_a5_subgroup((ID,))),1)
+        self.assertEqual(len(generated_a5_subgroup((cert['root'],))),3)
+        with self.assertRaises(AmbientError):generated_a5_subgroup(((0,1,2,3,3),))
 
     def test_mutated_commutator_relation_detected(self):
         root=(1,2,0,3,4)

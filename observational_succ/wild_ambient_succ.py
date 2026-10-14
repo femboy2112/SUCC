@@ -414,3 +414,46 @@ def a5_conjugacy_invariant_observer(root=(1,2,0,3,4)):
             'all_60_conjugations_certified':True,
             'basepoint_change_invariance':'conjugacy_only',
             'real_world_instrument_authentication':False}
+
+
+def generated_a5_subgroup(generators):
+    """Finite, terminating subgroup closure under multiplication and inversion."""
+    elements=set(a5())
+    gens=tuple(generators)
+    if any(g not in elements for g in gens):
+        raise AmbientError('Subgroup witness requires actual A5 elements')
+    steps=gens+tuple(invert(g) for g in gens)
+    observed={ID}
+    frontier=[ID]
+    while frontier:
+        x=frontier.pop()
+        for g in steps:
+            y=compose(x,g)
+            if y not in observed:
+                observed.add(y)
+                frontier.append(y)
+    return frozenset(observed)
+
+
+def alexander_a5_finite_quotient():
+    """Proof receipt: four stage-two labels generate the full finite A5 target.
+
+    Hatcher's exterior-group colimit identification remains an EXTERNAL theorem.
+    Finite subgroup closure plus the commutator table proves algebraic surjection.
+    """
+    root=(1,2,0,3,4)
+    witness=a5_commutator_witnesses()
+    stage1=witness[root]
+    stage2=tuple(v for x in stage1 for v in witness[x])
+    subgroup=generated_a5_subgroup(stage2)
+    if len(subgroup)!=60:
+        raise AssertionError('The chosen finite A5 model did not generate its quotient')
+    return {'root':root,
+            'stage_one_generators':stage1,
+            'stage_two_generators':stage2,
+            'stage_two_generated_subgroup_order':len(subgroup),
+            'stage_two_is_surjective':True,
+            'direct_limit_surjection_follows_from_compatibility':True,
+            'actual_Alexander_exterior_quotient_uses_imported_Hatcher':True,
+            'actual_wild_geometry_simulated':False,
+            'weilian_positivity_claimed':False}

@@ -15,6 +15,7 @@ from observational_succ.wild_ambient_succ import (
     intrinsic_vs_ambient_observer, alexander_imported_complement,
     commutator_tower_receipt, a5_commutator_witnesses,
     a5_tower_assignment, a5_conjugacy_invariant_observer,
+    alexander_a5_finite_quotient,
     abelian_character_of_expanded_root, covering_monodromy,
     solenoid_cohomology_class, compressed_flat_operator_control,
     a5_holonomy_energy_sign_control, reflection_positive_no_go,
@@ -65,6 +66,7 @@ def receipt():
             'commutator_image_size':len(a5_commutator_witnesses()),
             'finite_nesting':root_tower,
             'conjugacy_invariant':a5_conjugacy_invariant_observer(),
+            'finite_surjective_quotient':alexander_a5_finite_quotient(),
             'source_to_arithmetic_Weil_map_constructed':False,
         },
         'other_inverse_system':{
