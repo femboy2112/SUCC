@@ -226,6 +226,13 @@ def stage(a,J,N):
 def _authenticated(st):
     if type(st) is not FiniteSourceStage or st.source!="AUTHENTIC_Q_ZETA_SUZUKI_2026_1_3":
         raise WeilHierarchyError("source-authenticated finite signed stage required")
+    if (type(st.a) is not F or type(st.J) is not int or type(st.N) is not int
+        or type(st.norm_error) is not F or type(st.kernel_entry_radius) is not F
+        or type(st.center) is not tuple
+        or any(type(row) is not tuple or any(type(x) is not F for x in row)
+               for row in st.center)
+        or st.nontrivial_zeros_used is not False):
+        raise WeilHierarchyError("nonexact/laundered source certificate fields")
     if st!=stage(st.a,st.J,st.N):
         raise WeilHierarchyError("forged or stale signed source matrix/error")
 
@@ -240,6 +247,8 @@ def ldl_positive(M):
     n=len(M)
     if n==0:return False
     if any(len(row)!=n for row in M):raise WeilHierarchyError("square")
+    if any(type(x) not in (int,F) for row in M for x in row):
+        raise WeilHierarchyError("LDL accepts exact rational entries only")
     if any(M[i][j]!=M[j][i] for i in range(n) for j in range(n)):
         raise WeilHierarchyError("symmetric")
     d=[]
@@ -314,6 +323,8 @@ def exact_rayleigh(matrix, vector):
     n=len(matrix)
     if n<2 or any(len(row)!=n for row in matrix) or len(vector)!=n:
         raise WeilHierarchyError("finite exact source matrix dimensions")
+    if any(type(x) not in (int,F) for row in matrix for x in row):
+        raise WeilHierarchyError("non-exact quadratic-form matrix")
     if any(matrix[i][j]!=matrix[j][i] for i in range(n) for j in range(n)):
         raise WeilHierarchyError("non-Hermitian signed candidate")
     v=tuple(q(x) for x in vector)
