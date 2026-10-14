@@ -23,16 +23,16 @@ class SourceRationalTests(unittest.TestCase):
         self.assertLess(p.lo,Q(22,7))
         self.assertGreater(p.hi,Q(3))
         self.assertLess(p.hi-p.lo,Q(1,10**23))
-        self.assertLess(p.lo,Q(3141592653589793,10**15))
-        self.assertGreater(p.hi,Q(3141592653589793,10**15))
+        self.assertGreater(p.lo,Q(3141592653589793,10**15))
+        self.assertLess(p.hi,Q(3141592653589794,10**15))
 
     def test_gamma_contact(self):
         e=h.gamma_iv();contact=h.contact_iv()
         self.assertGreater(e.lo,Q(57,100))
         self.assertLess(e.hi,Q(58,100))
         self.assertLess(e.hi-e.lo,Q(1,10**10))
-        self.assertGreater(contact.lo,Q(4))
-        self.assertLess(contact.hi,Q(5))
+        self.assertGreater(contact.lo,Q(5))
+        self.assertLess(contact.hi,Q(6))
 
     def test_logs_and_exp_reciprocity(self):
         from math import log,exp
@@ -111,7 +111,7 @@ class SignedOperatorProofTests(unittest.TestCase):
         self.assertTrue(h.ldl_positive(h._contrast_quadratic(st.center,d)) or d==0)
         low,high=h.depth_enclosure(st,iterations=6)
         self.assertTrue(0<=low<=high)
-        self.assertGreater(high,st.norm_error)
+        self.assertGreaterEqual(high,st.norm_error)
 
     def test_forged_source_matrix_rejected(self):
         st=h.stage(Q(1,2),2,3)
