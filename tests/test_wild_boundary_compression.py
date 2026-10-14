@@ -97,6 +97,26 @@ class ExactCompressionTests(unittest.TestCase):
         actual_lower=max(abs(pert[i][0]) for i in range(3))
         self.assertGreaterEqual(actual_lower,F(4,5))
 
+
+    def test_wild_limit_pathology_cannot_be_a_weil_sign_jump(self):
+        for n in (1,2,3,10,100,1000):
+            r=w.signed_limit_nonwild_control(n)
+            self.assertEqual(r["distance_to_limit"],F(1,n))
+            self.assertEqual(r["limit_negative_depth"],F(1))
+            self.assertEqual(r["stage_negative_depth"],max(F(),F(1)-F(1,n)))
+            self.assertLessEqual(abs(r["stage_negative_depth"]-F(1)),F(1,n))
+            self.assertEqual(r["stage_negative_detected"],n>=2)
+            self.assertFalse(r["wild_limit_sign_pathology_possible"])
+            self.assertFalse(r["genuine_weil_operator"])
+
+    def test_negative_limit_has_finite_detectable_witness(self):
+        self.assertFalse(w.signed_limit_nonwild_control(1)["stage_negative_detected"])
+        self.assertTrue(w.signed_limit_nonwild_control(2)["stage_negative_detected"])
+        with self.assertRaises(w.BoundarySourceError):
+            w.signed_limit_nonwild_control(0)
+        with self.assertRaises(w.BoundarySourceError):
+            w.signed_limit_nonwild_control(2.0)
+
     def test_source_epoch_basis_and_invalid_windows(self):
         for fn in (
             lambda:w.finite_boundary_certificate(epoch=-1),
