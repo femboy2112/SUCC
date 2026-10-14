@@ -199,6 +199,25 @@ class HigherOrderSignTests(unittest.TestCase):
         with self.assertRaises(h.WeilHierarchyError):
             h.authenticated_multiway_witness(replace(st,norm_error=0))
 
+
+    def test_equality_launders_float_matrix_zero_without_strict_schema(self):
+        st=h.stage(Q(1,2),4,4)
+        rows=[list(r) for r in st.center]
+        self.assertEqual(rows[0][0],Q(0))
+        rows[0][0]=0.0
+        fake=replace(st,center=tuple(tuple(r) for r in rows))
+        # Standard dataclass equality is not a proof of exact element types.
+        self.assertEqual(fake,st)
+        with self.assertRaises(h.WeilHierarchyError):
+            h.depth_enclosure(fake,iterations=3)
+
+    def test_float_in_exact_spectral_probes_rejected(self):
+        for fn in (
+            lambda:h.ldl_positive(((1.0,),)),
+            lambda:h.exact_rayleigh(((1.0,0,0),(0,1,0),(0,0,1)),(1,-1,0)),
+        ):
+            with self.assertRaises(h.WeilHierarchyError):fn()
+
     def test_invalid_multidirection(self):
         M=((Q(1),Q(0),Q(0)),(Q(0),Q(1),Q(0)),(Q(0),Q(0),Q(1)))
         with self.assertRaises(h.WeilHierarchyError):
