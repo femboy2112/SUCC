@@ -214,3 +214,32 @@ def conditional_commutator_stability(error):
         "positive_weil_proved":False,
         "source":"FINITE_CYCLIC_TOY_BOUNDARY"
     }
+
+
+def signed_limit_nonwild_control(n):
+    """A mathematical no-go against directly exporting wild-limit π1 behavior.
+
+    G_inf=diag(1,-1); G_n=diag(1,-1+1/n), n>=1.
+    ||G_n-G_inf||=1/n, d_-(G_inf)=1 and
+    d_-(G_n)=max(0,1-1/n). Thus negative depth becomes visible already
+    at finite n=2, rather than appearing only at the infinite limit.
+
+    Operator positivity is closed even under strong operator limits;
+    the horned sphere's exterior pi1 is NOT continuous in the analogous
+    Hausdorff-embedding topology. The two limit problems differ.
+    """
+    if type(n) is not int or not 1<=n<=10**8:
+        raise BoundarySourceError("positive exact finite resolution only")
+    e=F(1,n)
+    G=((F(1),F()),(F(),F(-1)))
+    Gn=((F(1),F()),(F(),F(-1)+e))
+    return {
+        "source":"EXACT_GENERIC_SIGNED_OPERATOR_TOY",
+        "stage":n,
+        "genuine_weil_operator":False,
+        "distance_to_limit":e,
+        "limit_negative_depth":F(1),
+        "stage_negative_depth":max(F(),F(1)-e),
+        "stage_negative_detected":n>=2,
+        "wild_limit_sign_pathology_possible":False
+    }
