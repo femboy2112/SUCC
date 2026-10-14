@@ -1,0 +1,126 @@
+{
+  "Gamma_link_source_derived_from_discrete_Pascal": true,
+  "RH_proved": false,
+  "Suzuki_positive_bath": {
+    "RH_proved": false,
+    "finite_bath_multiplier": "2825327620873211457840828398983808/420822002700944158514793396834303",
+    "freq": "3/5",
+    "modes": 8,
+    "positive_terms": true,
+    "signed_completion_included": false,
+    "true_suzuki_arch_grid": true
+  },
+  "authentic_FUCC_prime_source_by_sole_affine_relation": false,
+  "fractional_half_square": [
+    {
+      "alpha": "1/2",
+      "beta": "1/2",
+      "equal": true,
+      "k": 0,
+      "left": "1",
+      "right": "1"
+    },
+    {
+      "alpha": "1/2",
+      "beta": "1/2",
+      "equal": true,
+      "k": 1,
+      "left": "1",
+      "right": "1"
+    },
+    {
+      "alpha": "1/2",
+      "beta": "1/2",
+      "equal": true,
+      "k": 2,
+      "left": "1",
+      "right": "1"
+    },
+    {
+      "alpha": "1/2",
+      "beta": "1/2",
+      "equal": true,
+      "k": 3,
+      "left": "1",
+      "right": "1"
+    },
+    {
+      "alpha": "1/2",
+      "beta": "1/2",
+      "equal": true,
+      "k": 4,
+      "left": "1",
+      "right": "1"
+    },
+    {
+      "alpha": "1/2",
+      "beta": "1/2",
+      "equal": true,
+      "k": 5,
+      "left": "1",
+      "right": "1"
+    }
+  ],
+  "global_Weil_operator_identified": false,
+  "ou_heat": {
+    "OU_fourier_multiplier": "100/61",
+    "alpha": "1/2",
+    "angular_frequency": "3/5",
+    "complete_Weil_sign_proved": false,
+    "exact": true,
+    "heat_laplace_multiplier": "100/61"
+  },
+  "pascal_affine_shadow": {
+    "3": 1,
+    "4": 1,
+    "5": 1,
+    "6": 2,
+    "7": 1,
+    "8": 1,
+    "9": 1,
+    "10": 1,
+    "12": 1
+  },
+  "random_walk": {
+    "Gaussian_limit_proved_by_finite_test": false,
+    "mean": "0",
+    "n": 24,
+    "normalized_mass": "1",
+    "second_moment": "24"
+  },
+  "sideways_geometric": {
+    "global": "1",
+    "infinite_to_finite_exact": true,
+    "k": 4,
+    "partial": "4294943827/4294967296",
+    "q": "1/2",
+    "tail": "23469/4294967296"
+  },
+  "source": "pascal_quarter_turn",
+  "two_adic_negative_control": {
+    "adelic_convergence_from_real_weak_limit": false,
+    "n": 16,
+    "probability_coefficient": "1/65536",
+    "raw_binomial_boundary": 1,
+    "real_absolute": "1/65536",
+    "two_adic_absolute": "65536",
+    "v2_normalized": -16
+  },
+  "weighted_dual": {
+    "N": 3,
+    "bare_transpose_is_not_generally_Hilbert_adjoint": true,
+    "equal_under_declared_carrier_metric": true,
+    "left": "3/2",
+    "right": "3/2",
+    "unweighted_transpose": [
+      "4",
+      "6",
+      "3"
+    ],
+    "weighted_adjoint": [
+      "3/2",
+      "3",
+      "3"
+    ]
+  }
+}
