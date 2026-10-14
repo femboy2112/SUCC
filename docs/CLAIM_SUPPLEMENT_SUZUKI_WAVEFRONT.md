@@ -15,4 +15,6 @@
 | SW-8 | Fake composite 6, wrong half-density, wrong `log n`, threshold violations and spurious positive covariance rejected/limited. | TESTED exact source typing / proof-status guards |
 | SW-9 | Source-derived full `G_a >= c(a)K_a` for all `a`, completed spectral limit Suzuki (1.12), actual RH. | **UNVERIFIED / RH OPEN** |
 
+| SW-10 | Independent original-Weil-functional sine trial formula with exact Arch tail, numerical positive-only reconnaissance through first prime, not a full spectral sign. | CLASSICAL source identity + TESTED numerical model; no interval quadrature certificate |
+
 **Important:** Small Hilbert–Schmidt kernel tail does not imply a small differentiated Weil-form tail. Dropping source-authenticated **positive** OU tails is valid in lower inequalities; replacing complete Weil by their positive sum is not. Academic priority not established.

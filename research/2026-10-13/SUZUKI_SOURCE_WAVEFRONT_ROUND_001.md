@@ -258,3 +258,38 @@ At `t=4/5`, it yields `[-0.042311733571,-0.042059406445]`. These brackets have i
 - The research snapshot `research/2026-10-13/SUZUKI_WAVEFRONT_RECEIPT.json` is a deterministic **mathematical** receipt, not a physical-source signature.
 
 The local *isolated* implementation passed **23 new tests**. The exact parent SUCC branch integrated CI is separately validated; remote CI for this child head must complete before claiming integrated success. The first-prime and Gamma formulae derive from Suzuki's primary arXiv paper; the OU Fourier transform, Schur test, Leibniz differentiation, Poincare/Plancherel are classical. **No theorem or numerical receipt here proves RH.**
+
+## SW-10. Independent source-form numerical scouting through the **original** Weil functional (TESTED MODEL, not a proof)
+
+To distinguish a genuine completed-source operator from an arbitrary positive OU background, `scripts/suzuki_weil_sine_scout.py` independently evaluates Suzuki's Weil functional *before* rewriting it with the screw kernel. For `a>0`, `j>=1`, the legal Dirichlet test is
+\[
+v_j(x)=\sin\left(\frac{j\pi(x+a)}{2a}\right)\mathbf 1_{[-a,a]}(x),\quad
+C_j(t)=\int v_j(x+t)v_j(x)dx=\frac12\left[(2a-t)\cos(k_jt)+\frac{\sin(k_jt)}{k_j}\right],\quad k_j=\frac{j\pi}{2a}
+\]
+for `0<=t<=2a`, with `C_j(0)=a`. The exact original Weil expression simplifies to
+\[
+\begin{aligned}
+Q_W(v_j)=&\;4\int_0^{2a}C_j(t)\cosh(t/2)dt
+-2\sum_{p^k\le e^{2a}}\frac{\log p}{p^{k/2}}C_j(k\log p)
+-(\log4\pi+\gamma)a\\
+&-\int_0^{2a}\frac{C_j(t)e^{t/2}-a}{\sinh t}dt
++2a\,\operatorname{artanh}(e^{-2a}).
+\end{aligned}
+\tag{SW-10}
+\]
+The last term is the **exact missing infinite tail** of the Archimedean functional beyond support `2a`; dropping it would be a source-identity error. Formula SW-10 follows directly by inserting the autocorrelation in Suzuki's displayed definition of `W`, splitting its integral at `2a`, and evaluating `int_(2a)^inf dt/(e^t-e^-t)=artanh(e^-2a)`.
+
+A standalone *uncertified* deterministic floating-point Simpson routine gives the following **minimum Rayleigh quotients among tested `j in {1,2,3,4,6}`** (not the true bottom eigenvalue):
+
+| `a` | Smallest tested `Q_W(v_j)/||v_j||²` | Active arithmetic jets |
+|---|---:|---|
+| `1/12` | `0.67209` | None |
+| `1/4` | `0.04984` | None |
+| `log2/2` | `0.00266` | None (boundary measure zero) |
+| `3 log2/5` | `0.00859` | `2` |
+| `0.45` | `0.00515` | `2` |
+| `0.50` | `0.00322` | `2` |
+
+**Scope:** These small positive values make the first-wavefront **spectral proof numerically delicate**; they do not establish positivity on an untested subspace. The scout recomputes true prime-power coefficients, includes full pole/Gamma infinite-tail terms, and has no zero inputs. It is an **independent formula route** from the `g`-kernel analysis but shares Suzuki's original arithmetic source. An independent scipy Gaussian quadrature run agreed with the stdlib Simpson diagnostic to better than `4e-14` for the displayed finite trials; neither supplies certified quadrature error. The JSON receipt is `research/2026-10-13/SUZUKI_NUMERICAL_SINE_SCOUT.json` and carries explicit `qualified=false` and `RH_proved=false` fields.
+
+**Verdict:** A generic coarse lower bound does not prove positivity near the real first-prime threshold. Next build rigorously interval-enclosed **trial-family quadratic values and full complementary spectral tails**, not simply larger floating-point matrices; a finite sampled positive Rayleigh test is always only an upper bound on the actual lowest eigenvalue.

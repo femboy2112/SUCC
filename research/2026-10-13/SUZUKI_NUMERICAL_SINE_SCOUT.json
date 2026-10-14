@@ -1,0 +1,400 @@
+{
+  "RH_proved": false,
+  "all_function_space_positivity_certified": false,
+  "date": "2026-10-13",
+  "evidence": "NUMERICAL_SCOUT_NOT_A_CERTIFICATE",
+  "no_nontrivial_zero_inputs": true,
+  "results": [
+    {
+      "Q_W": 0.05600731855752081,
+      "RH_proved": false,
+      "a": 0.08333333333333333,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 1,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 0.6720878226902497,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.1323662029986272,
+      "RH_proved": false,
+      "a": 0.08333333333333333,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 2,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 1.5883944359835265,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.1696034547597224,
+      "RH_proved": false,
+      "a": 0.08333333333333333,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 3,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 2.035241457116669,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.1976854922093798,
+      "RH_proved": false,
+      "a": 0.08333333333333333,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 4,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 2.3722259065125577,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.23438187373056488,
+      "RH_proved": false,
+      "a": 0.08333333333333333,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 6,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 2.8125824847667786,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.012461202577084718,
+      "RH_proved": false,
+      "a": 0.25,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 1,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 0.04984481030833887,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.12141206708112118,
+      "RH_proved": false,
+      "a": 0.25,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 2,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 0.4856482683244847,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.24766452995839827,
+      "RH_proved": false,
+      "a": 0.25,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 3,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 0.9906581198335931,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.31814491949204726,
+      "RH_proved": false,
+      "a": 0.25,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 4,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 1.272579677968189,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.42837765644793047,
+      "RH_proved": false,
+      "a": 0.25,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 6,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 1.7135106257917219,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.0009201962299530964,
+      "RH_proved": false,
+      "a": 0.34657359027997264,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 1,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 0.002655125075196105,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.05280127998148382,
+      "RH_proved": false,
+      "a": 0.34657359027997264,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 2,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 0.1523522895637528,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.24155357552725604,
+      "RH_proved": false,
+      "a": 0.34657359027997264,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 3,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 0.6969762910443399,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.3272616409491261,
+      "RH_proved": false,
+      "a": 0.34657359027997264,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 4,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 0.9442774929409774,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.4803977271352536,
+      "RH_proved": false,
+      "a": 0.34657359027997264,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 6,
+      "prime_jets": [],
+      "prime_q": 0,
+      "qualified": false,
+      "rayleigh": 1.3861348371847195,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.0035705754478610463,
+      "RH_proved": false,
+      "a": 0.4158883083359671,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 1,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": -0.00604071666251722,
+      "qualified": false,
+      "rayleigh": 0.008585419152915037,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.006598162906000682,
+      "RH_proved": false,
+      "a": 0.4158883083359671,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 2,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": 0.02221799329595759,
+      "qualified": false,
+      "rayleigh": 0.01586522817244116,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.1810777305181448,
+      "RH_proved": false,
+      "a": 0.4158883083359671,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 3,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": -0.04325596875774134,
+      "qualified": false,
+      "rayleigh": 0.4353999063899261,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.3781661443516353,
+      "RH_proved": false,
+      "a": 0.4158883083359671,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 4,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": 0.062068734275439984,
+      "qualified": false,
+      "rayleigh": 0.9092973684803404,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.5682463565064859,
+      "RH_proved": false,
+      "a": 0.4158883083359671,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 6,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": 0.06794631683661496,
+      "qualified": false,
+      "rayleigh": 1.3663436675585487,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.003474678246089047,
+      "RH_proved": false,
+      "a": 0.45,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 1,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": -0.016717625863661167,
+      "qualified": false,
+      "rayleigh": 0.007721507213531215,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.0023166227339488366,
+      "RH_proved": false,
+      "a": 0.45,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 2,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": 0.056832943019830634,
+      "qualified": false,
+      "rayleigh": 0.005148050519886304,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.11731592610776276,
+      "RH_proved": false,
+      "a": 0.45,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 3,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": -0.09560835937757324,
+      "qualified": false,
+      "rayleigh": 0.26070205801725055,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.4129598297740671,
+      "RH_proved": false,
+      "a": 0.45,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 4,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": 0.10694696709197846,
+      "qualified": false,
+      "rayleigh": 0.917688510609038,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.5215030155828511,
+      "RH_proved": false,
+      "a": 0.45,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 6,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": 0.01588063735201167,
+      "qualified": false,
+      "rayleigh": 1.1588955901841134,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.0016115067054511822,
+      "RH_proved": false,
+      "a": 0.5,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 1,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": -0.042400294721850654,
+      "qualified": false,
+      "rayleigh": 0.0032230134109023645,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.008244323314358482,
+      "RH_proved": false,
+      "a": 0.5,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 2,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": 0.125671402238592,
+      "qualified": false,
+      "rayleigh": 0.016488646628716963,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.034817742172839894,
+      "RH_proved": false,
+      "a": 0.5,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 3,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": -0.15858242375795448,
+      "qualified": false,
+      "rayleigh": 0.06963548434567979,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.37435116319936074,
+      "RH_proved": false,
+      "a": 0.5,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 4,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": 0.08806544385622107,
+      "qualified": false,
+      "rayleigh": 0.7487023263987215,
+      "zero_locations_read": false
+    },
+    {
+      "Q_W": 0.3641616254724362,
+      "RH_proved": false,
+      "a": 0.5,
+      "algorithm": "stdlib Simpson quadrature of Weil explicit formula; NO certified error",
+      "j": 6,
+      "prime_jets": [
+        2
+      ],
+      "prime_q": -0.144494350097736,
+      "qualified": false,
+      "rayleigh": 0.7283232509448724,
+      "zero_locations_read": false
+    }
+  ],
+  "source_formula": "Suzuki arXiv:2606.09096v3 Weil functional"
+}
