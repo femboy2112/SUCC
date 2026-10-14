@@ -102,3 +102,30 @@ The distribution is **not** one globally positive Gaussian, nor a free Gaussian 
 **Next verdict-changing instruments**: (a) replace the crude harmonic threshold with an adaptive source-certified lower envelope for \(m_a(\xi)\) on small real-frequency cells; (b) prove a joint inequality that trades the negative \(\cosh\) pole moment and band-limited spectral deficit against the genuine Gamma positive bath and positive odd pole, on **every** \(u=iv'\in L_0^2(-a,a)\); (c) build a rigorous *sinc/interval or Gaussian-Hermite Galerkin* source approximation with outward-rounded errors; (d) repeat against fake composite 6, wrong half-density, wrong Gamma normalization and a correctly completed non-Euler primitive character. If (b) holds for every a from original source laws, RH follows, but it remains **UNVERIFIED**.
 
 **Audit of novelty:** Suzuki 2026 §2.4 already proves an equivalent Fourier-form representation with \(\log|\xi|\) leading behavior and finite-prime oscillations. Our exact OU/rank-two separation, harmonic dominating cutoff and SUCC clock rational regressions are source-specific assembly/quantification; **no claim of an independently new spectral theorem** is justified without comparing scope to that literature.
+
+
+## GWC-7.5 — fully rational, zero-independent high-frequency certificates (PROVED LOCAL)
+
+The approximate minimal J table above is useful to design instruments but cannot serve as a rigorous certificate by itself. The following deliberately conservative two examples **have no transcendental rounding at all** in the final harmonic inequality and are fully justified by elementary analytic inequalities:
+
+**Claim A (no prime atom yet).** Fix any \(0<a\le1/4\). Then \(e^{2a}\le\sqrt{e}<2\), because the classical bound \(e<4\). Consequently \(\mathcal P_a=\emptyset\) and \(D_a=-c_\Gamma=\gamma+\pi/2+3\log2+\log\pi<8\), since \(0<\gamma<1\), \(\pi<4\), \(0<\log2<1\), and \(\log\pi<\log4<2\). Decompose the exactly rational harmonic sum at \(J=2^q\) into j=0 and q dyadic blocks \(2^m\le j<2^{m+1}\). Each block contributes more than \(1/4\):
+\[
+ 2\sum_{j=2^m}^{2^{m+1}-1}\frac1{4j+1}
+ \ge\frac{2^{m+1}}{2^{m+3}-3}>\frac14.
+\]
+Therefore \(\;2\sum_{j=0}^{2^q-1}(4j+1)^{-1}>2+q/4\).
+Take \(q=24\), \(J=2^{24}\); the harmonic sum is strictly greater than 8, therefore strictly greater than the authentic defect \(D_a\). By (P6),
+\[
+ \boxed{m_a(\xi)\ge0 \;\;\text{for ALL }|\xi|\ge (4\cdot2^{24}+1)/2
+ = 33554432.5,\qquad 0<a\le1/4.}\tag{P7}
+\]
+This exact certificate is *ridiculously conservative*, which is the point: real source truth and computationally useful conditioning are separate properties.
+
+**Claim B (true first-prime interaction).** Fix \(0<a\le1/2\). The elementary \(e<3\) gives \(e^{2a}\le e<3\), hence at most the authentic prime-power atom \(n=2\) occurs. Its true coefficient \(w_2=\log2/\sqrt2<1\), so \(D_a<8+2=10\). Taking q=32 produces \(2\sum_{j<2^{32}}(4j+1)^{-1}>2+32/4=10>D_a\), hence
+\[
+ \boxed{m_a(\xi)\ge0\quad\text{for ALL }|\xi|\ge(4\cdot2^{32}+1)/2
+ =8589934592.5,\qquad 0<a\le1/2.}\tag{P8}
+\]
+Both (P7) and (P8) retain the *true* source's pole and Gamma normalization and do not require zero coordinates, floating-point spectra, a probabilistic prior or millions/billions of explicitly enumerated rungs. Only the nonpolar multiplier is certified; the negative polar rank-one channel and arbitrary lower-frequency test contributions remain RH-hard.
+
+The corresponding **O(log J) exact-rational proof checker** is \`harmonic_dyadic_lower(q)\` / \`source_spectral_moat(q,D_upper)\`, with targeted independent regression for q=24,D=8 and q=32,D=10. The API makes a genuine semantic distinction: the caller must establish a real upper bound \(D_a\le D_{\rm upper}\) from the original arithmetic/Gamma source; supplying an arbitrary small upper bound would be a source-justification failure, not a valid proof.
