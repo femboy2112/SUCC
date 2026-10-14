@@ -175,3 +175,31 @@ Thus the diagram is
        Q̃_J^arith  ───── defect ≤ ε_J+δ(T) ────→  Q_≤T^spec
 
 and every arrow has an explicit source/domain contract, rather than an invented terminal/global observation.
+
+## 8. ST-09 — finite-shadow approximation numbers and an exact compactness theorem (PROVED LOCAL)
+
+A topologically sharper interpretation of ST-03 is possible. Equip the actual declared observer carrier `H=H₀¹(-a,a)` with its standard Sobolev inner product. The Hermitian completed Weil form `Q_W^a` is bounded **as a bilinear form on H** by Suzuki's compactly restricted continuous G kernel and differentiation, so its Riesz representative `A^(H)_a` is a bounded self-adjoint operator **on H**. This is NOT the original unbounded Suzuki Friedrichs operator `A_a` on `L²(-a,a)`; their domains and spectral meanings differ.
+
+For every height T≥2 define the mathematically exact finite-height zero-side form `Q_≤T` by the classical Weil identity. Because the source-derived Jensen count (ST-01) shows there are only finitely many zeros with |Imρ|≤T, each term is a product of two bounded evaluation functionals on H. Thus its H-Riesz operator `A^(H)_{a,≤T}` has
+
+    rank(A^(H)_{a,≤T}) ≤ N_abs(T) < 7T log(4T).
+
+The signed all-H¹ estimate ST-03 is precisely
+
+    ||A^(H)_a - A^(H)_{a,≤T}||_(H→H) ≤ δ_a(T).
+
+Since δ_a(T)→0, this proves **A^(H)_a is compact and self-adjoint on H**. More quantitatively, if `M(T)=ceil(7T log(4T))`, its singular values, with nonincreasing multiplicity count, obey
+
+    s_(M(T)+1)(A^(H)_a) ≤ δ_a(T)
+     = 70 a exp(a) log(16T)/T.                              (ST-09)
+
+This is classical finite-rank approximation-number reasoning applied to the **actual signed completed Weil form** with a source-only rank and error budget. It proves that every H¹ observer threshold δ has only finitely many *potentially* significant signed Weil directions, though it does NOT furnish their basis or roots from the theta tape. The implementation is careful: 
+
+- `finite_rank_upper` is a zero-count cap, not a list of constructed zeros;
+- `approximation_number_upper` is a genuine source-certified bound, not an eigenvalue estimate from a numerical matrix;
+- `s_(M+1)` describes the H¹ Riesz operator, NOT Suzuki's unbounded L² spectrum or its lowest eigenvalue `λ_a`;
+- the residual sign may be negative on the infinite-dimensional orthogonal complement, even if its norm is arbitrarily small.
+
+**IdealHard/Plato cave interpretation (precise):** finite observers can capture the globally authentic signed quadratic *observable* to arbitrarily small H¹ operator error, while no one finite observer can infer the exact sign of arbitrarily small unresolved directions. A finite-rank positive operator has an infinite-dimensional kernel and cannot provide a strictly positive global H¹ gap. Closing RH requires positive compatibility for an entire exhausting family, or an additional law proving the genuine source remainder is positive—not simply a smaller absolute error.
+
+This theorem does not claim *new academic priority*: compactness is also consistent with the existing Suzuki continuous-kernel formulation, and the quantitative Jensen/approximation-number realization is the source-specific new-to-project contribution.

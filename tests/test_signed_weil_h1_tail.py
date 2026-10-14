@@ -17,7 +17,8 @@ from observational_succ.signed_weil_h1_tail import (
     source_count, absolute_zero_tail_weight, signed_tail_operator_bound,
     first_pair_receipt, certified_pair_operator, spectral_split_contract,
     finite_shadow_countermodel, concentrated_tent_H1,
-    corrected_original_Gamma_error, two_chart_signed_gluing_bound, receipt,
+    corrected_original_Gamma_error, two_chart_signed_gluing_bound,
+    signed_finite_screen, receipt,
 )
 
 class SignedTailTests(unittest.TestCase):
@@ -201,7 +202,29 @@ class SignedTailTests(unittest.TestCase):
         z=Q(two_chart_signed_gluing_bound(Q(1,2),512,10**9)['two_chart_signed_H1_error_upper'])
         self.assertTrue(x>y>z>0)
 
-    def test_27_no_ell2_identification_from_phase(self):
+    def test_27_finite_screen_source_count_and_error(self):
+        x=signed_finite_screen(Q(1,2),1000)
+        self.assertEqual(x['finite_rank_upper'],source_count(1000)['absolute_count_upper'])
+        self.assertEqual(x['approximation_number_index'],x['finite_rank_upper']+1)
+        self.assertEqual(x['approximation_number_upper'],
+            signed_tail_operator_bound(Q(1,2),1000)['signed_remainder_form_norm_upper'])
+        self.assertTrue(x['compact_operator_proved_by_norm_limit_of_finite_rank'])
+        self.assertFalse(x['Suzuki_unbounded_L2_Aa_compact_claimed'])
+
+    def test_28_tiny_negative_direction_remains_undecided(self):
+        x=signed_finite_screen(Q(1,2),1000000)
+        self.assertTrue(x['infinite_orthogonal_blindspace_may_hide_tiny_negative_sign'])
+        self.assertTrue(x['small_signed_tail_does_not_force_global_PSD'])
+        self.assertFalse(x['finite_source_zero_coordinates_available'])
+        self.assertFalse(x['RH_proved'])
+
+    def test_29_large_observer_screen_improves_error(self):
+        x=signed_finite_screen(Q(1,2),100)
+        y=signed_finite_screen(Q(1,2),1000)
+        self.assertLess(Q(y['approximation_number_upper']),Q(x['approximation_number_upper']))
+        self.assertGreater(y['finite_rank_upper'],x['finite_rank_upper'])
+
+    def test_30_no_ell2_identification_from_phase(self):
         p=certified_pair_operator(Q(2,3))
         self.assertEqual(Q(p['midpoint_kernel_operator_error_upper']),8*Q(2,3)**2*Q(1,500))
         self.assertFalse(p['full_Weil_PSD'])

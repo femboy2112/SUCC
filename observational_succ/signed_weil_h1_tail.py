@@ -233,6 +233,33 @@ def two_chart_signed_gluing_bound(a,J:int,T)->dict:
             'RH_proved':False}
 
 
+def signed_finite_screen(a,T)->dict:
+    """Source-only approximation-number / observer-screen theorem.
+
+    There EXISTS a (not source-enumerated) rank <= M(T) finite spectral
+    operator A_{<=T}, M(T)=ceil(7 T log(4T)), with
+      ||A-A_{<=T}||_(H0^1 -> H0^1) <=delta_a(T).
+    Thus a_(M+1)(A)<=delta, and all remaining singular values are small.
+    A is the H¹-Riesz representative of ORIGINAL signed Weil Q, NOT Suzuki's
+    unbounded L² operator A_a. A finite screen is not an executable list of
+    zeros; if a zero is off-line its contribution may be indefinite.
+    """
+    a=rat(a);T=rat(T)
+    count=source_count(T)
+    tail=signed_tail_operator_bound(a,T)
+    return {'source':SOURCE,'halfwidth':str(a),'height':str(T),
+            'spectral_operator_carrier':'bounded_Riesz_representative_on_H0^1',
+            'finite_rank_upper':count['absolute_count_upper'],
+            'approximation_number_index':count['absolute_count_upper']+1,
+            'approximation_number_upper':tail['signed_remainder_form_norm_upper'],
+            'compact_operator_proved_by_norm_limit_of_finite_rank':True,
+            'infinite_orthogonal_blindspace_may_hide_tiny_negative_sign':True,
+            'small_signed_tail_does_not_force_global_PSD':True,
+            'finite_source_zero_coordinates_available':False,
+            'Suzuki_unbounded_L2_Aa_compact_claimed':False,
+            'RH_proved':False}
+
+
 def concentrated_tent_H1(epsilon):
     """H0^1 family with bounded norm but NO classical sixth derivative.
 
@@ -269,6 +296,7 @@ def receipt():
             'source_count_16':source_count(16),
             'sample_H2_bound':signed_tail_operator_bound(Q(1,2),1000,2),
             'signed_two_chart':two_chart_signed_gluing_bound(Q(1,2),64,10**6),
+            'finite_signed_screen':signed_finite_screen(Q(1,2),1000),
             'first_pair':certified_pair_operator(Q(1,2)),
             'full_signed_split':spectral_split_contract(Q(1,2),16),
             'hostile_finite_shadow':finite_shadow_countermodel(),

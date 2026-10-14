@@ -28,3 +28,7 @@ Completed-Weil PR #71 supplies the independent corrected signed Gamma truncation
         ≤ ε_J+70a exp(a)log(16T)/T.
 
 At a=1/2,J=64,T=10⁶, this is less than `11/10000` by outward rational arithmetic. The statement requires the original Weil explicit-formula equality and the genuine PR #71 corrected Gamma/contact source; an unknown low zero list is never presented as an evaluated finite spectral object. **Neither side is known nonnegative.** This creates a proof-bearing all-test mathematical model interaction, not an RH proof or a finite program enumerating the unknown zero divisor.
+
+## ST-09 addendum: finite significant signed modes on the H¹ carrier
+
+The completed Weil form's H₀¹ Riesz operator (not Suzuki's unbounded L² self-adjoint realization) is a norm-limit of rank≤`M(T)=ceil(7T log(4T))` authentic low-zero forms, with residual operator norm ≤`δ_a(T)`. Therefore it is **compact** and has singular values `s_(M(T)+1) ≤ δ_a(T)`. This is a source-grounded finite-shadow approximation theorem for the original **signed** Weil observable. It does not identify any off-line zero, supply actual eigenvectors, give a coercive gap, or prove nonnegativity; an arbitrarily small negative infinite-tail eigenvalue remains possible at finite resolution. This is a useful operator-theoretic formulation of the remaining IdealHard proof obligation, not RH.
