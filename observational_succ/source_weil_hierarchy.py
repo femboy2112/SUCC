@@ -118,8 +118,7 @@ def gamma_iv():
     H=sum((F(1,k) for k in range(1,n+1)),F())
     constant=H-F(1,2*n)+F(1,12*n*n)-F(1,120*n**4)+F(1,252*n**6)
     upper=iv(constant)-log_iv(n)
-    return upper-I(F(0),F(1,240*n**8)) if False else I(
-        down(upper.lo-F(1,240*n**8)),upper.hi)
+    return I(down(upper.lo-F(1,240*n**8)),upper.hi)
 
 @lru_cache(maxsize=1)
 def contact_iv():
@@ -209,6 +208,7 @@ class FiniteSourceStage:
     source:str="AUTHENTIC_Q_ZETA_SUZUKI_2026_1_3"
     nontrivial_zeros_used:bool=False
 
+@lru_cache(maxsize=64)
 def stage(a,J,N):
     a=q(a)
     if not 0<a<=1 or type(N) is not int or not 2<=N<=24:
@@ -222,6 +222,12 @@ def stage(a,J,N):
     # each normalized cell entry has <=h*entry error; operator <=N*h*entry
     total=continuous_error(a,J,N)+2*a*entry
     return FiniteSourceStage(a,J,N,M,entry,total)
+
+def _authenticated(st):
+    if type(st) is not FiniteSourceStage or st.source!="AUTHENTIC_Q_ZETA_SUZUKI_2026_1_3":
+        raise WeilHierarchyError("source-authenticated finite signed stage required")
+    if st!=stage(st.a,st.J,st.N):
+        raise WeilHierarchyError("forged or stale signed source matrix/error")
 
 def _contrast_quadratic(M,delta):
     """B^T(M+delta I)B, columns B=e_i-e_{N-1}, Gram B^TB=I+11^T."""
@@ -254,6 +260,7 @@ def certified_upper_negative_depth(st:FiniteSourceStage,iterations=12):
     """
     if type(iterations) is not int or not 0<=iterations<=20:
         raise WeilHierarchyError("iterations 0..20")
+    _authenticated(st)
     M=st.center
     def okay(d):return ldl_positive(_contrast_quadratic(M,d))
     if okay(F(0)):return F(0)
@@ -272,6 +279,7 @@ def certified_upper_negative_depth(st:FiniteSourceStage,iterations=12):
 
 def certified_lower_negative_depth(st:FiniteSourceStage):
     """Contrast Rayleigh witnesses. >0 proves actual negative Q_W direction."""
+    _authenticated(st)
     N=st.N;M=st.center
     qmax=F()
     for i in range(N):
