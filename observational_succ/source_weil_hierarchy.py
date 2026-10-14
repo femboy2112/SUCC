@@ -307,3 +307,53 @@ def simple_rank_one_negative(N,T):
     observed=F(1,2**T) if T is not None and T<=N else F()
     error=F(1,2**N)
     return -observed,error
+
+
+def exact_rayleigh(matrix, vector):
+    """Exact finite signed energy. Not a source certificate by itself."""
+    n=len(matrix)
+    if n<2 or any(len(row)!=n for row in matrix) or len(vector)!=n:
+        raise WeilHierarchyError("finite exact source matrix dimensions")
+    if any(matrix[i][j]!=matrix[j][i] for i in range(n) for j in range(n)):
+        raise WeilHierarchyError("non-Hermitian signed candidate")
+    v=tuple(q(x) for x in vector)
+    if sum(v)!=0 or all(x==0 for x in v):
+        raise WeilHierarchyError("nonzero mean-zero original test required")
+    return (sum((v[i]*matrix[i][j]*v[j] for i in range(n) for j in range(n)),F())
+            /sum((x*x for x in v),F()))
+
+
+def finite_multiway_search(matrix, amplitude=2):
+    """Rational multivariate contrasts; strictly stronger than pairwise tests.
+
+    Searches <=6 cell directions, bounded to a small integer grid. This is an
+    instrument, not a proof of positivity from absence of a counterexample.
+    """
+    from itertools import product
+    n=len(matrix)
+    if type(amplitude) is not int or not 1<=amplitude<=4 or n<2 or n>6:
+        raise WeilHierarchyError("bounded exact joint interaction witness")
+    best=F(1<<60);best_vector=None
+    for first in product(range(-amplitude,amplitude+1),repeat=n-1):
+        last=-sum(first);v=tuple(first)+(last,)
+        if not any(v):continue
+        val=exact_rayleigh(matrix,v)
+        if val<best:
+            best=val;best_vector=v
+    assert best_vector is not None
+    return best,best_vector
+
+
+def authenticated_multiway_witness(st:FiniteSourceStage,amplitude=2):
+    """Verified negative witness iff the source multivariate upper is < 0.
+
+    A non-witness says NOTHING about all tests or RH.
+    """
+    _authenticated(st)
+    minimum,vector=finite_multiway_search(st.center,amplitude)
+    upper=minimum+st.norm_error
+    return {"vector":vector,"rational_center_rayleigh":minimum,
+            "source_upper_rayleigh":upper,
+            "certified_negative_original_weil":upper<0,
+            "certified_global_positive":False,
+            "nontrivial_zero_input":False}
