@@ -1,4 +1,5 @@
 {
+  "Poisson_unit_mean_tail_upper_K8": "1/326592",
   "RH_proved": false,
   "affine_source_label_embedding": {
     "RH_proved": false,
@@ -76,6 +77,32 @@
       "source_analytic_global_bound_proved_in_dossier": true
     }
   ],
+  "chiral_Markov_differential": {
+    "Dirichlet_energy": "pi/2*intint q(x-y)|f(x)-f(y)|^2 dx dy",
+    "Fourier_characteristic": "sech(pi*xi)",
+    "Markov_semigroup": "exp(-pi*t)*sum_k (pi*t)^k/k! P^k",
+    "RH_proved": false,
+    "full_original_Weil_operator": false,
+    "jump_density": "sech(t/2)/(2*pi)",
+    "jump_density_positive_and_integrates_one": true,
+    "jump_mean": 0,
+    "jump_variance": "pi^2",
+    "signed_chiral_differentiated_operator": "pi*(I-P)",
+    "source": "B_plus genuine Suzuki OU, B_minus EXPLICIT AUXILIARY companion"
+  },
+  "finite_cycle_Markov_analog": {
+    "RH_proved": false,
+    "edge_energy": "1",
+    "exact": true,
+    "quadratic": "1",
+    "same_kernel_as_continuum_sech": false,
+    "values": [
+      "1",
+      "0",
+      "-1",
+      "0"
+    ]
+  },
   "gamma_dilation": {
     "alpha_source": "1/2",
     "alpha_target": "5/2",
@@ -474,6 +501,47 @@
       "not_an_arithmetic_space_realization": true,
       "prime": 7,
       "top_homology_action_verified_on_integer_chains": true
+    }
+  ],
+  "two_hemisphere_Gaussian_Fourier": [
+    {
+      "Gamma_chiral_Fourier_upper": 0.4672146921735227,
+      "N": 8,
+      "Pascal_Fourier_lower": 0.4437332428269139,
+      "RH_proved": false,
+      "analytic_uniform_all_N_proof": "in dossier",
+      "both_sources_identical_at_finite_N": false,
+      "common_Gaussian": 0.45593812776599624,
+      "common_limit_is_weak_real_law_not_adelic_source": true,
+      "frequency": "1/2",
+      "sandwich_observed": true,
+      "theta": 0.44311346272637897
+    },
+    {
+      "Gamma_chiral_Fourier_upper": 0.45883917303698185,
+      "N": 32,
+      "Pascal_Fourier_lower": 0.45297920000713704,
+      "RH_proved": false,
+      "analytic_uniform_all_N_proof": "in dossier",
+      "both_sources_identical_at_finite_N": false,
+      "common_Gaussian": 0.45593812776599624,
+      "common_limit_is_weak_real_law_not_adelic_source": true,
+      "frequency": "1/2",
+      "sandwich_observed": true,
+      "theta": 0.22155673136318949
+    },
+    {
+      "Gamma_chiral_Fourier_upper": 0.4566687349111512,
+      "N": 128,
+      "Pascal_Fourier_lower": 0.4552039035008321,
+      "RH_proved": false,
+      "analytic_uniform_all_N_proof": "in dossier",
+      "both_sources_identical_at_finite_N": false,
+      "common_Gaussian": 0.45593812776599624,
+      "common_limit_is_weak_real_law_not_adelic_source": true,
+      "frequency": "1/2",
+      "sandwich_observed": true,
+      "theta": 0.11077836568159474
     }
   ]
 }

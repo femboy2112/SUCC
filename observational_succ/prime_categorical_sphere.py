@@ -485,6 +485,10 @@ def receipt() -> dict:
             "chiral_Gamma_positivity":gamma_chiral_identity_receipt(),
             "positive_chiral_gram_pivots":[str(x) for x in ldlt_positive(chiral_finite_gram(31,4))],
             "chiral_Hminus1_probes":[chiral_Hminus1_certificate(w,12) for w in (Q(0),Q(2),Q(10))],
+            "chiral_Markov_differential":chiral_markov_model_certificate(),
+            "finite_cycle_Markov_analog":finite_markov_sphere_energy((Q(1),Q(0),Q(-1),Q(0))),
+            "Poisson_unit_mean_tail_upper_K8":str(poisson_unit_mean_tail_bound(8)),
+            "two_hemisphere_Gaussian_Fourier":[two_hemisphere_gaussian_fourier(n,Q(1,2)) for n in (8,32,128)],
             "operator_identity_euler_like_but_no_prime_gamma_weil_identification":True,
             "no_nontrivial_zero_inputs":True,"RH_proved":False}
 
@@ -611,4 +615,86 @@ def affine_gamma_source_intertwiner(n:int,p:int)->dict:
             "integer_SUCC_and_FUCC_source_laws_preserved":True,
             "full_Suzuki_Gamma_source_chart_preserved":n%4==1 and p%4==1,
             "operator_intertwiner_constructed":False,
+            "RH_proved":False}
+
+
+def chiral_markov_model_certificate()->dict:
+    """Paper-exact chiral Markov generator from REAL spectral source.
+
+    q(t)=sech(t/2)/(2pi), probability symmetric;
+    (Fourier q)(xi)=sech(pi xi).
+    For C=B_plus-B_minus, D* C D=pi(I-P), P f=q*f.
+    This algebraic form identity is analytic, not calculated from samples.
+    """
+    return {"source":"B_plus genuine Suzuki OU, B_minus EXPLICIT AUXILIARY companion",
+            "jump_density":"sech(t/2)/(2*pi)",
+            "jump_density_positive_and_integrates_one":True,
+            "jump_mean":0,"jump_variance":"pi^2",
+            "Fourier_characteristic":"sech(pi*xi)",
+            "signed_chiral_differentiated_operator":"pi*(I-P)",
+            "Dirichlet_energy":"pi/2*intint q(x-y)|f(x)-f(y)|^2 dx dy",
+            "Markov_semigroup":"exp(-pi*t)*sum_k (pi*t)^k/k! P^k",
+            "full_original_Weil_operator":False,"RH_proved":False}
+
+
+def poisson_unit_mean_tail_bound(K:int)->Q:
+    """Rational bound on Poisson(mean=1) tail after K terms.
+
+    e^-1 *sum_(j>K) 1/j! <= (1/(K+1)!)/(1-1/(K+2))
+    since e^-1<1 and ratio next/this <=1/(K+2).
+    This provides operator-norm truncation for the *analytic* Markov P
+    (||P||<=1) without inventing physical execution of its jumps.
+    """
+    from math import factorial
+    integer(K,0,100)
+    return Q(1,factorial(K+1))/(1-Q(1,K+2))
+
+
+def finite_markov_sphere_energy(values:tuple[Q,...])->dict:
+    """EXPLICIT TOY four-cycle Markov chain, not the exact real sech jump.
+
+    P(i,i)=1/2, P(i,i+/-1)=1/4, indexed cyclically.
+    Exact Dirichlet energy =sum_i (v_i-v_{i+1})²/4.
+    """
+    if type(values) is not tuple or len(values)!=4 or any(type(v) not in (int,Q)
+                                                    for v in values):
+        raise SphereError("4 exact rational phase values required")
+    v=tuple(Q(t) for t in values)
+    energy=sum((v[i]*(v[i]-(Q(1,2)*v[i]+Q(1,4)*v[(i-1)%4]+Q(1,4)*v[(i+1)%4]))
+                for i in range(4)),Q())
+    edges=sum(((v[i]-v[(i+1)%4])**2 for i in range(4)),Q())/4
+    if energy!=edges or energy<0:
+        raise ArithmeticError("finite four-cycle Markov energy failed")
+    return {"values":[str(x) for x in v],"quadratic":str(energy),
+            "edge_energy":str(edges),"exact":True,
+            "same_kernel_as_continuum_sech":False,"RH_proved":False}
+
+
+def two_hemisphere_gaussian_fourier(N:int,xi:Q)->dict:
+    """Numerical CALIBRATION, with exact Taylor proof in dossier.
+
+    Pascal/Rademacher normalized characteristic: cos(theta)^N.
+    Auxiliary chiral-Gamma hyperbolic-secant jump characteristic:
+      sech(theta)^N. theta=sqrt(2pi/N)*xi.
+    Both converge to e^-pi xi² and sandwich the target for theta<pi/2.
+    No analytic proof status follows from this finite float test.
+    """
+    import math
+    integer(N,1,100000)
+    if type(xi) not in (int,Q):
+        raise SphereError("exact rational test frequency required")
+    theta=math.sqrt(2*math.pi/N)*float(Q(xi))
+    if abs(theta)>=math.pi/2:
+        raise SphereError("outside certified two-hemisphere Fourier chart")
+    pascal=math.cos(theta)**N
+    chiral=math.cosh(theta)**(-N)
+    gaussian=math.exp(-math.pi*float(Q(xi))**2)
+    if pascal>gaussian+1e-13 or gaussian>chiral+1e-13:
+        raise ArithmeticError("two-source Gaussian sandwich failed")
+    return {"N":N,"frequency":str(xi),"theta":theta,
+            "Pascal_Fourier_lower":pascal,"common_Gaussian":gaussian,
+            "Gamma_chiral_Fourier_upper":chiral,
+            "sandwich_observed":True,"analytic_uniform_all_N_proof":"in dossier",
+            "both_sources_identical_at_finite_N":False,
+            "common_limit_is_weak_real_law_not_adelic_source":True,
             "RH_proved":False}

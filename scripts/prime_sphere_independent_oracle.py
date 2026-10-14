@@ -36,8 +36,39 @@ def run_oracle():
                         'closed_sech_value':mp.nstr(target,58),
                         'independent_cosine_transform':mp.nstr(cosine_source,58),
                         'max_absolute_residual':mp.nstr(maxerr,8)})
+    # Independent numerical audit of the source-derived stochastic jump law.
+    q=lambda t: mp.sech(t/2)/(2*mp.pi)
+    prob=2*mp.quad(q,[0,mp.inf])
+    variance=2*mp.quad(lambda t: t*t*q(t),[0,mp.inf])
+    if abs(prob-1)>mp.mpf('1e-45') or abs(variance-mp.pi**2)>mp.mpf('1e-43'):
+        raise ArithmeticError('chiral Markov density normalization failed')
+    char_checks=[]
+    for omega in (mp.mpf('0.25'),mp.mpf('1'),mp.mpf('2')):
+        fhat=mp.quadosc(lambda t:2*q(t)*mp.cos(omega*t),
+                        [0,mp.inf],omega=omega)
+        target=mp.sech(mp.pi*omega)
+        if abs(fhat-target)>mp.mpf('1e-43'):
+            raise ArithmeticError('jump characteristic function failed')
+        char_checks.append({'angular_omega':mp.nstr(omega,10),
+                            'cosine_integral':mp.nstr(fhat,60),
+                            'sech_target':mp.nstr(target,60)})
+    hemisphere=[]
+    for N in (8,32,128):
+        theta=mp.sqrt(2*mp.pi/N)/2  # fixed frequency xi=1/2
+        lo=mp.cos(theta)**N
+        apex=mp.exp(-mp.pi/4)
+        hi=mp.sech(theta)**N
+        if not lo<=apex<=hi:
+            raise ArithmeticError('two-hemisphere sandwich failed')
+        hemisphere.append({'N':N,'Pascal':mp.nstr(lo,48),
+                           'Gaussian':mp.nstr(apex,48),
+                           'Gamma_chiral':mp.nstr(hi,48)})
     return {'source':'independent mp analytic calibration; not theorem certificate',
             'precision_dps':70,'observations':outcome,
+            'positive_Markov_jump':{'normalization':mp.nstr(prob,60),
+                'variance':mp.nstr(variance,60),'pi_squared':mp.nstr(mp.pi**2,60),
+                'Fourier_checks':char_checks},
+            'two_hemisphere_Fourier_sandwich':hemisphere,
             'source_zero_coordinates_used':False,'RH_proved':False}
 
 

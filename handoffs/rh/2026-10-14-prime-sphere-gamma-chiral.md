@@ -13,6 +13,12 @@ Start with Suzuki's true Archimedean real-place OU bath `B_+ = sum_(j>=0) (2j+1/
 3. Quantitative positive metric `(8/3)||f||_H-1² <= <f,Cf> <=22||f||_H-1²`, but no L2 uniform gap. A high-frequency endpoint wave packet shows the *first true Suzuki prime-2 negative overlap* is NOT uniformly controlled by this auxiliary H-1 norm alone. This is a concrete no-go against a tempting source-blind shortcut.
 4. A four-phase double cone creates a finite S² whose actual prime mod4 automorphism degree equals `chi4(p)` for odd p. This is an exact source-indexed **toy topology**; it does not identify the adele-class or Suzuki global space with S².
 
+## Correct differentiated-variable bonus: an honest Markov jump energy (PS-10/11)
+
+This revises the bare-H^-1 no-go above: the correct Suzuki variable is u=i v', so the auxiliary chiral metric after differentiating has bounded multiplier `pi(1-sech(pi xi))`. Let `q(t)=sech(t/2)/(2pi)` and P=convolution by q. It is a genuine symmetric probability jump kernel with variance pi² and Fourier characteristic `sech(pi xi)`, and exactly **`D*C D=pi(I-P)`** with Dirichlet energy `(pi/2) intint q(x-y)|v(x)-v(y)|² dx dy`. The Markov semigroup is the norm-convergent Poissonized finite-SUCC series `e^-pi*t sum (pi*t)^k/k! P^k` with a rigorous rational tail at mean-one time. These are mathematical source-derived from the auxiliary paired Gamma sectors; no physical execution or true completed Weil identification.
+
+Further, normalizing the N-jump source and the N-step symmetric Pascal source to the same variance yields finite characteristic functions `sech(theta)^N` and `cos(theta)^N`, both approaching the canonical Gaussian `exp(-pi xi²)`, with a proved *two-sided Fourier sandwich* for `|theta|<pi/2`. This gives two lawful **probability-law** hemispheres meeting at one real Gaussian limit; the original arithmetic sources remain distinct, so it is not a global arithmetic-source gluing proof.
+
 ## Construction, domain, adversaries, and test status
 
 The whole-line OU sums converge in L2 operator norm (`||alpha^-2 R_alpha||=2/alpha³`), so the Fourier multiplier comparisons and interval compression are legitimate. The only Gamma modes identified with **actual** Suzuki source are `n=4j+1`; 3-mod-4 companion and dyadic completion are strictly labeled generated/test candidates. Fake composite 6 is rejected as a primitive Euler factor, 2+6 overlap gives a negative sieve coefficient at mode 6, dyadic normalization and source residue losses are recorded, and swapped/missing chart controls are present.

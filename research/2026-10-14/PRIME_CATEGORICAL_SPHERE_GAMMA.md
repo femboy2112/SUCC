@@ -231,7 +231,7 @@ Thus `x² sigma(x)<=8 sum_(j>=0)(1/(4j+1)-1/(4j+3))=2pi`. Therefore `(1+x²)sigm
 
 These inequalities identify the chiral positive operator with an honest **negative Sobolev-order metric**, not a uniform coercive `L²` gap. In particular `sigma(xi)~pi/xi²` for large |xi|, and `<f,Cf>` can be arbitrarily small for normalized high-frequency states. It has strictly positive Fourier symbol but zero lower `L²` spectral bound. It is a mathematically useful auxiliary metric for comparing dual SUCC observations, not automatically the metric of the true Weil operator.
 
-**Further source-coupling obstruction (PROVED LOCAL).** In Suzuki's first prime interaction interval `log2/2<a<log2`, choose a nonzero smooth left-strip profile and translate it right by log2. High-frequency modulation by `e^(i 2pi m x/log2)` leaves the negative prime-overlap pairing bounded away from zero (phase wraps to 1), while the auxiliary chiral norm tends to zero by `sigma(xi)->0` and dominated convergence. Hence **no uniform constant C** can bound the absolute first-prime overlap by `C*<v,Cv>` on all L² endpoint states. This does **not** say the real Suzuki form is negative: its full, high-frequency Gamma bath and remaining pole terms are absent from this auxiliary comparison. It kills a tempting shortcut that would use the positive chiral sector *alone* to dominate authentic signed prime transport.
+**Further source-coupling obstruction (PROVED LOCAL; qualified by the carrier metric).** If the auxiliary C is applied *directly to v*, rather than the correct Suzuki derivative variable u=i v', in Suzuki's first prime interaction interval `log2/2<a<log2`, choose a nonzero smooth left-strip profile and translate it right by log2. High-frequency modulation by `e^(i 2pi m x/log2)` leaves the negative prime-overlap pairing bounded away from zero (phase wraps to 1), while the auxiliary chiral norm tends to zero by `sigma(xi)->0` and dominated convergence. Hence **no uniform constant C** can bound the absolute first-prime overlap by `C*<v,Cv>` on all L² endpoint states. This does **not** say the real Suzuki form is negative: its full, high-frequency Gamma bath and remaining pole terms are absent from this auxiliary comparison. It kills a tempting shortcut that would use the positive chiral sector on **bare v** to dominate authentic signed prime transport. **This does NOT refute the correct differentiated pairing `<i v', C i v'>`; indeed that pairing yields the genuinely promising bounded Markov energy in PS-10.**
 
 ## PS-08 — a literal FINITE categorical sphere, and its source-authentication barrier (PROVED FINITE MODEL)
 
@@ -282,6 +282,77 @@ For cutoff K, its finite prefix `L_K` and remainder obey
 
 **Proof:** For n>K, `1/n<=1/(K+1)` and `n²>=(K+1)n`; bound the residual by the resulting geometric series. Exact `Fraction` code checks nested intervals and independent high-precision samples. This is a rigorous finite observation of a **positive** part of the authentic source at one special heat time, not a certified limit of the full signed Weil quadratic form.
 
+## PS-10 — the CORRECT differentiated Gamma chiral coupling is a bounded MARKOV DIRICHLET FORM (PROVED LOCAL)
+
+**This corrects an important metric issue in PS-07:** Suzuki's compact kernel operates on `u=i v'`, not on `v` directly. The auxiliary signed chiral operator `C=B_+-B_-` has multiplier `sigma(xi)=pi(1-sech(pi xi))/xi²`; therefore its differentiated form on `v` has the exact bounded nonnegative Fourier multiplier
+
+\[
+ \boxed{\widehat{D^*CD}(\xi)=\xi^2\sigma(\xi)
+       =\pi(1-\operatorname{sech}(\pi\xi)),\qquad
+       0\le D^*CD\le\pi I.}\tag{PS10a}
+\]
+
+This is not merely positivity in a weak Sobolev metric. It becomes a bounded positive order-zero operator on the **actual v-variable** after the correct differentiation. Let
+
+\[
+ \boxed{q(t)=\frac1{2\pi}\operatorname{sech}(t/2),\quad
+ P f=q*f.}\tag{PS10b}
+\]
+
+The classical Fourier-sech identity gives `hat q(xi)=sech(pi xi)`, and direct substitution `t=2y` and `int_R sech(y)dy=pi` show that `q>=0`, `q(-t)=q(t)`, and `int q=1`. Thus `P` is a genuine self-adjoint positivity-preserving **Markov** convolution operator with `||P||=1`, and
+
+\[
+ \boxed{D^* C D=\pi(I-P),\qquad
+ \langle v,D^*CDv\rangle
+ =\frac{\pi}{2}\iint_{\mathbb R^2}q(x-y)|v(x)-v(y)|^2\,dx\,dy.}\tag{PS10c}
+\]
+
+For `v` in Schwartz, prove this with Plancherel plus expansion of the double integral; both sides extend as bounded quadratic forms to all L². This is a **source-derived nonlocal jump-energy law**, since `q` is forced by the paired Gamma OU ladder spectra (one authentic Suzuki chart plus one explicitly auxiliary companion), rather than a PSD covariance invented to fit RH. It has no L² lower spectral gap because multiplier vanishes at xi=0; for high frequencies the multiplier tends to pi, **countering the bare-variable no-go in PS-07**. It is not the genuine completed Weil form, and the auxiliary companion must not be inserted into Suzuki's original arithmetic source without additional identification.
+
+**Finite-to-continuous SUCC of random jump units.** For time `t>=0`, the bounded Markov generator has the exact operator-norm convergent semigroup
+
+\[
+ \boxed{e^{-t\pi(I-P)}=e^{-\pi t}
+   \sum_{k=0}^\infty \frac{(\pi t)^k}{k!}P^k.}\tag{PS10d}
+\]
+
+Each `P^k` is the lawful transition law of `k` independent jumps of the *actual mathematical density* q; the Poisson weights are nonnegative and normalized. For `t=1/pi`, truncating after K transitions yields a (sub-Markov) positive operator whose omitted **operator norm** is at most the Poisson tail, and therefore bounded by the purely rational envelope
+
+\[
+ \boxed{\left\|e^{-(I-P)}-e^{-1}\sum_{k=0}^K\frac{P^k}{k!}\right\|
+ \le\sum_{j>K}\frac{e^{-1}}{j!}
+ \le\frac{1/(K+1)!}{1-1/(K+2)}.}\tag{PS10e}
+\]
+
+This proves a **bounded finite-implementation error** for the mathematical Markov source when the exact transition P is available. It does not supply an actual physical source preparation or finite automaton implementing unbounded continuous jumps. A separate 4-state symmetric Markov *toy* with rational probabilities (stay 1/2, move ±1 with probability 1/4) is exactly certified by `sum_i(v_i-v_(i+1))²/4`; the code explicitly marks it as **not identical to q**.
+
+## PS-11 — two independent finite SUCC hemispheres converge to ONE global Gaussian boundary, with a sharp Fourier sandwich (PROVED CLASSICAL ANALYTIC)
+
+There is now a genuine two-sided **boundary-in-law** realization of the maintainer's sphere intuition.
+
+1. **Pascal hemisphere:** let `eps_i` be independent symmetric ±1 increments and define `X_N=(sum_(i<=N) eps_i)/sqrt(2 pi N)`. The ordinary Pascal/binomial path law has cycles-Fourier characteristic
+   `hat(mu_N)(xi)=cos(theta_N)^N`, with `theta_N=sqrt(2pi/N)*xi`.
+2. **Gamma-chiral hemisphere:** let `J_i` be independent identically distributed jumps with **exact** positive source-derived density `q(t)=sech(t/2)/(2pi)`. Since `hat q(omega)=sech(pi omega)` in angular frequency, `Var(J_i)=pi²`. Set `Y_N=(sum J_i)/(pi sqrt(2pi N))`. Its cycles-Fourier characteristic is **exactly** `hat(nu_N)(xi)=sech(theta_N)^N`.
+
+Both have the same fixed scale and for every real xi with `|theta_N|<pi/2` obey the **sharp order in the real Fourier-observation variable**
+
+\[
+ \boxed{\cos(\theta_N)^N\ \le\ e^{-\pi\xi^2}\ \le\
+ \operatorname{sech}(\theta_N)^N.}\tag{PS11}
+\]
+
+**Proof:** for `0<=z<pi/2`, `tan z>=z` implies `log cos z<=-z²/2`; for all z>=0, `tanh z<=z` implies `log sech z>=-z²/2`. Both inequalities are even in z, exponentiation by positive N yields the sandwich. Taylor expansion provides opposite finite-depth defects:
+
+\[
+ \log\hat\mu_N(\xi)=-\pi\xi^2-\frac{\pi^2\xi^4}{3N}+O_\xi(N^{-2}),
+ \qquad
+ \log\hat\nu_N(\xi)=-\pi\xi^2+\frac{\pi^2\xi^4}{3N}+O_\xi(N^{-2}).
+\]
+
+The errors are uniform on any fixed compact Fourier-frequency interval for sufficiently large N. Both characteristic functions converge to `e^-pi xi²`, so Lévy's continuity theorem yields **weak convergence of both real probability laws to the same self-Fourier Gaussian** `g(x)=e^-pi x²`. This gives a precise meaning for a *common global/Archimedean boundary*: an identical **limiting observed probability law** approached from two distinct families of finite SUCC experiments, with one convergence from below and one from above in Fourier-observation value.
+
+**No illicit identification:** the two finite source preparations are different; their original histories and finite-prime p-adic normalizations are not thereby equal, a Fourier-characteristic sandwich is NOT an ordering of the underlying probability measures, and neither source is a physically executed infinity. The Gamma-chiral hemisphere uses an *auxiliary* gamma companion; proving that this legal mathematical bath supplies the true completed ζ Weil geometry remains open. The same Gaussian marginal is **not** a categorical Yoneda equivalence of all possible observations of the two sources.
+
 ## Serious negative controls / scope boundary
 
 1. Wrong Euler place: composite 6 has valid multiplication and source indices but is **not** a primitive prime. Coprime composites 4,9 produce positive sieve coefficients but still fail prime authentication.
@@ -290,10 +361,10 @@ For cutoff K, its finite prefix `L_K` and remainder obey
 4. Wrong half-density: forgetting the `p^-3` factor makes the spectral resolvent weights disagree exactly by p³.
 5. Wrong sphere semantics: the finite S² homology is a theorem about a **declared four-cycle**; no actual adelic/Suzuki global-topology identification follows.
 6. Wrong positive object: `C=B_+-B_-` and all its Fourier/Gamma identities are **auxiliary**; the complete Weil form includes signed prime powers, poles and the `-C K_a` term from the source and is not equal to `C`.
-7. False domination: positive H^-1 chiral metric does not uniformly bound high-frequency negative prime cross-strip overlap.
+7. False domination: the auxiliary positive H^-1 chiral metric **on bare v** does not uniformly bound high-frequency negative prime cross-strip overlap. The **correct differentiated** auxiliary pairing on u=i v' instead yields the Markov form PS-10; this is not yet the authentic completed Weil form.
 8. Wrong infinity: a positive infinite heat sum with a finite rational enclosure is an analytic theorem, not infinitely many physically realized measurements or completed RH.
 
-**Tests and reproducibility:** `observational_succ/prime_categorical_sphere.py`, `tests/test_prime_categorical_sphere.py` (29 named exact/source tests, plus extensive finite grids), `scripts/prime_categorical_sphere_probe.py` and frozen `research/2026-10-14/PRIME_CATEGORICAL_SPHERE_RECEIPT.json`. Independent 70-digit calibration `scripts/prime_sphere_independent_oracle.py` uses direct alternating Dirichlet-mode sums, oscillatory Fourier cosine integration and Gamma reflection, with **no zeta zeros**, saved in `PRIME_CATEGORICAL_SPHERE_NUMERIC_HOLDOUT.json`. The mathematical proofs stand independently of finite test coverage or high-precision decimals. Lean/kernel formalization is **NOT claimed**.
+**Tests and reproducibility:** `observational_succ/prime_categorical_sphere.py`, `tests/test_prime_categorical_sphere.py` (32 named exact/source tests, plus extensive finite grids), `scripts/prime_categorical_sphere_probe.py` and frozen `research/2026-10-14/PRIME_CATEGORICAL_SPHERE_RECEIPT.json`. Independent 70-digit calibration `scripts/prime_sphere_independent_oracle.py` uses direct alternating Dirichlet-mode sums, oscillatory Fourier cosine integration and Gamma reflection, with **no zeta zeros**, saved in `PRIME_CATEGORICAL_SPHERE_NUMERIC_HOLDOUT.json`. The mathematical proofs stand independently of finite test coverage or high-precision decimals. Lean/kernel formalization is **NOT claimed**.
 
 ## Frontier toward Suzuki / RH — *what would actually change the theorem status?*
 
@@ -302,4 +373,4 @@ For cutoff K, its finite prefix `L_K` and remainder obey
 - **F3 (first-wavefront signed comparison):** source-identify a nonnegative remainder or closed-form boundary Schur complement that dominates the **actual** negative prime-2 coupling on the appropriate logarithmic-energy domain; this dossier's H^-1 metric alone provably cannot.
 - **F4 (globality):** a justified all-a form inequality or the specific domain-correct, compact-uniform spectral limit of Suzuki's Corollary 1.6. No finite sphere or mode trace proves this.
 
-**Verdict:** There is a rigorous, source-correlated algebraic/analytic **prototype** of the user's categorical sphere: Kummer's local Pascal arithmetic, a `chi4`-graded Gamma conductor fibration with true prime transport and positive source-sieve remainders, a genuine positive signed Gamma operator with an explicit sech/Gamma spectral formula, and a literal topological S² toy complex carrying the same prime character as its degree. The unproved claim is that this *entire assembled picture* is one actual arithmetic/adelic/Suzuki carrier with a source-forced completed Weil positivity law. That is the correct next moonshot, not something this round assumes.
+**Verdict:** There is a rigorous, source-correlated algebraic/analytic **prototype** of the user's categorical sphere: Kummer's local Pascal arithmetic, a `chi4`-graded Gamma conductor fibration with true prime transport and positive source-sieve remainders, a genuine positive signed Gamma operator with an explicit sech/Gamma spectral formula, a source-derived **bounded Markov jump Dirichlet form**, two distinct finite SUCC hemispheres that sandwich the same Gaussian Fourier limit, and a literal topological S² toy complex carrying the same prime character as its degree. The unproved claim is that this *entire assembled picture* is one actual arithmetic/adelic/Suzuki carrier with a source-forced completed Weil positivity law. That is the correct next moonshot, not something this round assumes.
