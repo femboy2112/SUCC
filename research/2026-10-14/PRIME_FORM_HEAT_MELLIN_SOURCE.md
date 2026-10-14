@@ -177,7 +177,43 @@ Its Mellin multiplier is `(1−p^(−s))^(−1)`, for Re(s)>0. The weighting is 
 
 A still simpler countermodel assigns energy E_k=k and raw degeneracy p^k. Then `Σ_k p^k e^(−tk)` is not trace class at small t (diverges for t≤log p). Therefore a globally defined heat trace cannot be manufactured by merely declaring an infinite prime-depth tree: an actual spectral-energy growth, measure and summability theorem are required.
 
-## 8. Triangulated verdict / next verdict-changing proofs
+## 8. One global Archimedean gate after multiplicative finite-place assembly (the most consequential synthesis)
+
+This is the sharpest rigorous interpretation found of “infinitely many finite places flowing through one global Archimedean successor.” **Do not attach a separate Gamma factor to every prime. First multiply the genuine arithmetic sources; apply one global Gaussian heat/Mellin gate afterward.**
+
+Let `P={p1,...,pr}` be a **finite set of distinct genuine primes**, fix finite exponent depth `K`, and define the multiplicative multi-index carrier
+
+`C_(P,K)={α∈{0,...,K}^r}`, `n(α)=∏_(p∈P) p^(α_p)`.
+
+The fundamental theorem of arithmetic makes `n(α)` injective. Define ONE heat observable over the jointly realized carrier:
+
+`H_(P,K)(t)=Σ_(α∈C_(P,K)) exp[−πt n(α)^2]`.
+
+**PH-13 (one-Gamma finite Euler/heat gluing, CLASSICAL/PROVED):** for `Re(s)>0`, finite summation and the Gaussian Mellin identity give
+
+`∫_0^∞ H_(P,K)(t)t^(s/2−1)dt
+      = Γ_R(s) Σ_α n(α)^(-s)
+      = Γ_R(s) ∏_(p∈P) Σ_(k=0)^K p^(-ks).`
+
+**Only one `Γ_R(s)` occurs.** The tempting product `∏_(p∈P) [Γ_R(s)Σ_(k=0)^K p^(-ks)]` would instead introduce `Γ_R(s)^r` and is a WRONG identification when r>1. This is a precise analytic coupling law, not a metaphor about superconducting infinity. Independent algorithms check the exact rational product against an independently enumerated original-integer source; a separate finite Gaussian integral numerically checks the analytic gate. At `P={2,3,5}`, `K=3`, `s=2`, the 64 distinct smooth integers produce exactly `Σ n^-2=2836093/1822500` and one-Gamma Mellin `≈0.495339610445347291`. The incorrect per-prime-Gamma construction differs by approximately `0.445151214810090205`.
+
+For a **fixed finite** P, let K→∞. Each geometric series converges on Re(s)>0, so the corresponding infinite P-smooth source has an honest holomorphic Euler product `E_P(s)=∏_(p∈P)(1−p^(-s))^(-1)`. Let P grow through all primes. By unique factorization and absolute convergence, `E_P(s)→ζ(s)` for Re(s)>1; hence the **one global Gamma gate** gives `Γ_R(s)ζ(s)` on that domain, precisely matching the separately constructed additive integer-theta heat route. This is a classical source-justified local/global identification in the convergence region, not a Weil-sign theorem.
+
+**PH-14 (rigorous finite-place→global error, CLASSICAL/PROVED):** let P be the cutoff bound on allowed primes, so `E_P(s)=∏_(p≤P)(1−p^(-s))^(-1)`. For real σ>1, positive Dirichlet terms give
+
+`0≤ζ(σ)−E_P(σ)≤Σ_(n>P)n^(−σ)≤P^(1−σ)/(σ−1)`.
+
+The first inequality follows because every excluded integer has a prime factor >P, hence itself >P; the second is the elementary integral comparison for decreasing `x^(−σ)`. For complex s with Re(s)=σ>1 the analogous modulus bound holds. At P=29, σ=2 the exact rational bound is `1/29`, while the numerical residual is approximately `0.0118635763524872161`. This is not a claim to know ζ via finite computation alone: it is a theorem-backed enclosing majorant.
+
+**PH-15 (a sharp global domain obstruction, CLASSICAL/PROVED):** every finite-prime E_P(s) is defined for Re(s)>0, but **the prime-set limit does NOT converge on the positive real axis for 0<s≤1**. Every integer 1≤n≤P factors entirely over primes≤P, so for real σ>0,
+
+`E_P(σ)≥Σ_(n=1)^P n^(−σ)`.
+
+The right side diverges as P→∞ for 0<σ≤1. Thus finite-place completeness individually does not provide a **uniformly valid global Euler convergence domain**. Theta/Poisson analytic continuation is a genuine extra bridge with its own source, phase, topology and limit hypotheses. It cannot be treated as ordinary positive-term limit gluing into the critical strip. This gives SUCC a mathematically clean example of its environmental hard-field/finite-to-infinite transport debt.
+
+**Interpretation:** One Archimedean factor after multiplicative assembly is a valid *global analytic functional* on the declared integer source. It is not a proven unique global physical SUCC, and applying Mellin or theta continuation does not supply the missing arithmetic positivity.
+
+## 9. Triangulated verdict / next verdict-changing proofs
 
 | Candidate proposition | Verdict | Independent discriminator / remaining proof debt |
 |---|---|---|
@@ -189,6 +225,8 @@ A still simpler countermodel assigns energy E_k=k and raw degeneracy p^k. Then `
 | Zero-residue prime-form cut isolates authentic local Euler log factor | CLASSICAL/PROVED for actual Λ | m=4 truncated p=2; m=6 zero; fake additive primes rejected |
 | Source-identified prime-heat Mellin equals `Γ_R(s)(−ζ'/ζ)` | CLASSICAL/PROVED, Re(s)>1 | Exact analytic tail; valid only after summing authentic prime jets |
 | Arbitrary pure depth trace recovers the local Euler factor | REFUTED | Raw multiplicity shifts s to s−1; weighted functional is extra structure |
+| One global Gamma after finite-prime multiplicative assembly | CLASSICAL/PROVED on Re(s)>0 (finite P); Re(s)>1 (global P) | Separate per-prime Gamma factors give wrong multiplicity; no global Euler limit for real 0<s≤1 |
+| Finite-place prime limit transports through critical strip as positive Euler product | REFUTED | Source lower bound E_P(σ)≥Σ_(n≤P)n^-σ diverges for 0<σ≤1 |
 | Constructed heat is the global completed Weil form and automatically PSD | UNVERIFIED | Need full explicit formula/test-domain identification plus an *independent sign theorem* |
 | Construction proves RH | UNVERIFIED / NO PROOF | No globally identified positive Weil form, spectral zero exclusion, or Nyman limit |
 
@@ -196,9 +234,9 @@ A still simpler countermodel assigns energy E_k=k and raw degeneracy p^k. Then `
 
 **Parallel fruitful offshoot:** characterize source-weighted finite p-digit heat functors and their exchange/holonomy defects as operators on projective limits; test whether they form a bona fide natural transformation under `pq+b` composition with a declared Fourier/character transport. The finite type checks in this branch are a foundation, not a global physical transport functor.
 
-## 9. Provenance, reproduction, and outside literature
+## 10. Provenance, reproduction, and outside literature
 
-New-to-repo code: `observational_succ/prime_form_heat.py`; adversarial tests `tests/test_prime_form_heat.py`; deterministic receipt compiler `scripts/prime_form_heat_probe.py`; frozen output `research/2026-10-14/PRIME_FORM_HEAT_RECEIPT.json`; separate ledger `docs/CLAIM_SUPPLEMENT_PRIME_FORM_HEAT.md`. The isolated overlay includes the exact published parent modules and receipts for parent regression; 113 tests PASS in Python 3.13.5, of which 52 are new prime-form heat tests. This is *not* the full-repository CI report, and the basic classical theorems have not been translated to Lean here. Source file SHA/replay need to be checked against the published Git commit before upgrading operational statuses.
+New-to-repo code: `observational_succ/prime_form_heat.py`; adversarial tests `tests/test_prime_form_heat.py`; deterministic receipt compiler `scripts/prime_form_heat_probe.py`; frozen output `research/2026-10-14/PRIME_FORM_HEAT_RECEIPT.json`; separate ledger `docs/CLAIM_SUPPLEMENT_PRIME_FORM_HEAT.md`. The isolated overlay includes the exact published parent modules and receipts for parent regression; 121 tests PASS in Python 3.13.5, of which 60 are new prime-form heat tests. This is *not* the full-repository CI report, and the basic classical theorems have not been translated to Lean here. Source file SHA/replay need to be checked against the published Git commit before upgrading operational statuses.
 
 Primary/reference sources (their mathematical content is classical):
 - NIST DLMF [20.7(viii)](https://dlmf.nist.gov/20.7#viii), modular theta / Fourier Gaussian transform.

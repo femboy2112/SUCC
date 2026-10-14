@@ -465,4 +465,70 @@ class TestScientificReceipt(unittest.TestCase):
         self.assertEqual(actual['arithmetic_zero_cosets']['p5_local_log_coefficient_s2'],'1/24')
         self.assertEqual(actual['arithmetic_zero_cosets']['radix6_jets_upto_650'],[])
 
+class TestOneGlobalArchimedeanGate(unittest.TestCase):
+    def test_two_routes_to_finite_euler_product_match_exactly(self):
+        from observational_succ.prime_form_heat import smooth_finite_euler,smooth_word_dirichlet_independent
+        for primes in ((2,3),(2,5),(2,3,5),(3,5,7)):
+            for d in (0,1,2,3):
+                for s in (1,2,3):
+                    self.assertEqual(smooth_word_dirichlet_independent(primes,d,s),smooth_finite_euler(primes,d,s))
+
+    def test_unique_integer_carrier_at_multiplicative_depth(self):
+        from observational_succ.prime_form_heat import smooth_prime_word_source
+        for primes in ((2,3),(2,3,5),(5,7,11)):
+            words=smooth_prime_word_source(primes,2)
+            self.assertEqual(len(words),3**len(primes))
+            self.assertEqual(len({n for n,_ in words}),3**len(primes))
+            self.assertIn((1,(0,)*len(primes)),words)
+
+    def test_gamma_only_once_for_multi_prime_carrier(self):
+        import mpmath as mp
+        from observational_succ.prime_form_heat import truncated_global_heat_mellin,smooth_finite_euler
+        pp=(2,3,5);s=2;d=3
+        global_mellin=truncated_global_heat_mellin(pp,d,s,dps=45)
+        local_product=smooth_finite_euler(pp,d,s)
+        gamma=gaussian_arch_factor(s,dps=45)
+        self.assertLess(abs(global_mellin-gamma*mp.mpf(local_product.numerator)/local_product.denominator),mp.mpf('1e-41'))
+        wrong=gamma**len(pp)*mp.mpf(local_product.numerator)/local_product.denominator
+        self.assertGreater(abs(global_mellin-wrong),mp.mpf('0.05'))
+
+    def test_global_gaussian_integral_independent_of_factorized_euler(self):
+        import mpmath as mp
+        from observational_succ.prime_form_heat import smooth_heat_integral_numeric,truncated_global_heat_mellin
+        val=smooth_heat_integral_numeric((2,3),2,2,dps=36)
+        deriv=truncated_global_heat_mellin((2,3),2,2,dps=36)
+        self.assertLess(abs(val-deriv),mp.mpf('1e-27'))
+
+    def test_euler_finite_prime_to_all_lattice_error_bound(self):
+        import mpmath as mp
+        from observational_succ.prime_form_heat import full_prime_cutoff_euler,global_euler_to_lattice_tail_upper
+        for B in (3,5,7,13,29):
+            for s in (2,3):
+                prod=full_prime_cutoff_euler(B,s)
+                val=mp.mpf(prod.numerator)/prod.denominator
+                residual=mp.zeta(s)-val
+                bound=global_euler_to_lattice_tail_upper(B,s)
+                self.assertGreater(residual,0)
+                self.assertLessEqual(residual,mp.mpf(bound.numerator)/bound.denominator)
+
+    def test_finite_euler_contains_all_first_P_integer_addresses(self):
+        from observational_succ.prime_form_heat import full_prime_cutoff_euler,all_integer_prefix_dirichlet
+        for B in (5,7,11,19):
+            for s in (1,2,3):
+                self.assertGreaterEqual(full_prime_cutoff_euler(B,s),all_integer_prefix_dirichlet(B,s))
+
+    def test_global_euler_diverges_for_sigma_le_one(self):
+        # Finite prime sets satisfy E_P(1) >= H_P, a diverging lower bound.
+        from observational_succ.prime_form_heat import full_prime_cutoff_euler,all_integer_prefix_dirichlet
+        for B in (3,5,7,11,17,31):
+            self.assertGreaterEqual(full_prime_cutoff_euler(B,1),all_integer_prefix_dirichlet(B,1))
+        self.assertLess(full_prime_cutoff_euler(3,1),full_prime_cutoff_euler(31,1))
+
+    def test_fake_composite_prime_and_duplicated_prime_refused(self):
+        from observational_succ.prime_form_heat import smooth_prime_word_source,full_prime_cutoff_euler
+        with self.assertRaises(SourceHeatError):smooth_prime_word_source((2,6),2)
+        with self.assertRaises(SourceHeatError):smooth_prime_word_source((2,2),2)
+        with self.assertRaises(SourceHeatError):smooth_prime_word_source((2,3),11)
+        with self.assertRaises(SourceHeatError):full_prime_cutoff_euler(121,2)
+
 if __name__=="__main__":unittest.main()

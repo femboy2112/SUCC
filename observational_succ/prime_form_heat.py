@@ -597,3 +597,93 @@ def prime_mellin_heat_integral_numeric(s,N:int=30,dps:int=35):
         h=sum((mp.log(p)*mp.exp(-mp.pi*t*n*n) for n,p,_ in rows),mp.mpf(0))
         return h*mp.power(t,z/2-1)
     return mp.quad(integrand,[0,mp.mpf('0.01'),mp.mpf('0.1'),1,mp.inf])
+
+
+def smooth_prime_word_source(primes:Sequence[int],depth:int)->tuple[tuple[int,tuple[int,...]],...]:
+    """True-prime mixed multiplicative SUCC carrier, every multi-index 0..depth.
+
+    Unique factorization makes all addresses distinct. One global Gaussian
+    heat test acts on the COMPLETED n, not independently on each prime factor.
+    """
+    from itertools import product
+    integer(depth,0)
+    pp=tuple(primes)
+    if not pp or len(pp)>7 or depth>10 or len(set(pp))!=len(pp) or any(type(p) is not int or not prime(p) for p in pp):
+        raise SourceHeatError("Nonempty distinct certified primes and bounded depth")
+    rows=[]
+    for exponents in product(range(depth+1),repeat=len(pp)):
+        n=1
+        for p,k in zip(pp,exponents):
+            n*=p**k
+        rows.append((n,tuple(exponents)))
+    return tuple(sorted(rows))
+
+
+def smooth_finite_euler(primes:Sequence[int],depth:int,s:int)->Q:
+    """EXACT rational product of finite geometric chains for σ=s>=1."""
+    from math import prod
+    integer(depth,0);integer(s,1)
+    pp=tuple(primes)
+    if not pp or len(pp)>7 or depth>10 or len(set(pp))!=len(pp) or any(type(p) is not int or not prime(p) for p in pp):
+        raise SourceHeatError("Prime law and grammar bounded")
+    return prod((sum((Q(p)**(-k*s) for k in range(depth+1)),Q(0)) for p in pp),start=Q(1))
+
+
+def smooth_word_dirichlet_independent(primes:Sequence[int],depth:int,s:int)->Q:
+    """Independent enumerated word sum to check factorized Euler route."""
+    integer(s,1)
+    return sum((Q(n)**(-s) for n,_ in smooth_prime_word_source(primes,depth)),Q(0))
+
+
+def smooth_euler_full_local(primes:Sequence[int],s:int)->Q:
+    """Finite set of true primes, each geometric exponent depth ∞, Re(s)>0."""
+    from math import prod
+    integer(s,1)
+    pp=tuple(primes)
+    if not pp or len(pp)>20 or len(set(pp))!=len(pp) or any(type(p) is not int or not prime(p) for p in pp):
+        raise SourceHeatError("Certified prime set mandatory")
+    return prod((1/(1-Q(p)**(-s)) for p in pp),start=Q(1))
+
+
+def truncated_global_heat_mellin(primes:Sequence[int],depth:int,s:int,dps:int=50):
+    """ONE Γ_R(s) for smooth-number carrier, NOT Γ_R(s)^#primes."""
+    return gaussian_arch_factor(s,dps=dps)*_mp_time(smooth_finite_euler(primes,depth,s))
+
+
+def smooth_heat_integral_numeric(primes:Sequence[int],depth:int,s:int,dps:int=35):
+    """Independent numerical ∫ sum_{n smooth} e^-πtn² t^{s/2−1}dt.
+
+    Finite sum; no implicit limit over prime sets or time.
+    """
+    mp=_mp();mp.mp.dps=dps
+    integer(s,1)
+    words=smooth_prime_word_source(primes,depth)
+    def integrand(t):
+        h=sum((mp.exp(-mp.pi*t*n*n) for n,_ in words),mp.mpf(0))
+        return h*mp.power(t,mp.mpf(s)/2-1)
+    return mp.quad(integrand,[0,mp.mpf('0.001'),mp.mpf('0.1'),1,mp.inf])
+
+
+def full_prime_cutoff_euler(prime_bound:int,s:int)->Q:
+    integer(prime_bound,2);integer(s,1)
+    if prime_bound>120:
+        raise SourceHeatError("Finite exact rational bound")
+    return smooth_euler_full_local(tuple(p for p in range(2,prime_bound+1) if prime(p)),s)
+
+
+def global_euler_to_lattice_tail_upper(prime_bound:int,s:int)->Q:
+    """ζ(s)-E_P(s)<=P^(1−s)/(s−1), s integer >=2.
+
+    Every omitted non-P-smooth integer n must exceed P; integral comparison
+    of the positive decreasing Dirichlet tail. This is a rigorous rational
+    bound for P integer and real integer s; NOT continuation to σ<=1.
+    """
+    integer(prime_bound,2);integer(s,2)
+    return Q(prime_bound)**(1-s)/Q(s-1)
+
+
+def all_integer_prefix_dirichlet(N:int,s:int)->Q:
+    integer(N,1);integer(s,1)
+    if N>10000:
+        raise SourceHeatError("Finite Dirichlet source bound")
+    return sum((Q(n)**(-s) for n in range(1,N+1)),Q(0))

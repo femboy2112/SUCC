@@ -24,6 +24,10 @@ from observational_succ.prime_form_heat import (
     prime_jet_mellin_truncated,prime_jet_log_derivative,
     prime_tail_upper_numeric,prime_mellin_heat_integral_numeric,
     spectral_power_mellin_factor,
+    smooth_prime_word_source,smooth_finite_euler,smooth_word_dirichlet_independent,
+    smooth_euler_full_local,truncated_global_heat_mellin,
+    smooth_heat_integral_numeric,full_prime_cutoff_euler,
+    global_euler_to_lattice_tail_upper,all_integer_prefix_dirichlet,
 )
 
 
@@ -41,6 +45,10 @@ def num(z,digits=18):
             return mp.nstr(z.real,digits)
         return [mp.nstr(z.real,digits),mp.nstr(z.imag,digits)]
     return mp.nstr(z,digits)
+
+
+def _mp_quotient(q):
+    return mp.mpf(q.numerator)/q.denominator
 
 
 def receipt():
@@ -121,6 +129,32 @@ def receipt():
         "independent_finite_numeric_heat_integral_error":num(abs(prime_mellin_heat_integral_numeric(2,22,dps=38)-prime_jet_mellin_truncated(2,22,dps=38))),
         "heat_powers_are_exact_source_labels":True,
         "non_euler_radicand_mutants_accepted":False}
+    pp=(2,3,5);depth=3;s=2
+    words=smooth_prime_word_source(pp,depth)
+    exact_euler=smooth_finite_euler(pp,depth,s)
+    independent_word_sum=smooth_word_dirichlet_independent(pp,depth,s)
+    one_gate=truncated_global_heat_mellin(pp,depth,s,dps=48)
+    gamma=gaussian_arch_factor(s,dps=48)
+    wrong=gamma**len(pp)*_mp_quotient(exact_euler)
+    B=29
+    E_P=full_prime_cutoff_euler(B,2)
+    r["one_global_archimedean_gate"]={
+        "prime_factors":list(pp),
+        "exponent_depth":depth,
+        "smooth_state_count":len(words),
+        "unique_smooth_integer_count":len({n for n,_ in words}),
+        "exact_finite_euler_product":fs(exact_euler),
+        "independent_enumerated_word_sum":fs(independent_word_sum),
+        "one_gamma_gaussian_mellin":num(one_gate),
+        "wrong_gamma_per_prime_absolute_error":num(abs(one_gate-wrong)),
+        "independent_heat_integral_two_primes_error":num(abs(smooth_heat_integral_numeric((2,3),2,2,dps=36)-truncated_global_heat_mellin((2,3),2,2,dps=36))),
+        "P29_integer_sigma2_Euler":fs(E_P),
+        "P29_real_zeta2_difference":num(mp.zeta(2)-_mp_quotient(E_P)),
+        "P29_rigorous_tail_bound_exact":fs(global_euler_to_lattice_tail_upper(B,2)),
+        "P29_sigma1_Euler_greater_than_harmonic_prefix":full_prime_cutoff_euler(B,1)>=all_integer_prefix_dirichlet(B,1),
+        "global_Euler_product_sigma_le_1_diverges_on_positive_real_axis":True,
+        "analytic_continuation_required_beyond_sigma_1":True,
+        "one_gamma_is_not_full_weil_positivity":True}
     return r
 
 
