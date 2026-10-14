@@ -148,7 +148,7 @@ class ExactSpectralPolarization(unittest.TestCase):
     def test_exact_dyadic_source_moat_gate(self):
         self.assertEqual(g.harmonic_dyadic_lower(0),F(2))
         for q in range(1,30):
-            self.assertGreater(g.harmonic_dyadic_lower(q),F(2+q,4))
+            self.assertGreater(g.harmonic_dyadic_lower(q),F(2)+F(q,4))
             self.assertGreater(g.harmonic_dyadic_lower(q),g.harmonic_dyadic_lower(q-1))
         J,R,slack=g.source_spectral_moat(24,F(8))
         self.assertEqual(J,2**24)
