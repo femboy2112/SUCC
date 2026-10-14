@@ -225,5 +225,30 @@ class SourceWavefrontTests(unittest.TestCase):
             h.authenticated_prime_wavefront(0.5)
 
 
+
+
+class CoupledResolutionTests(unittest.TestCase):
+    def test_more_true_gamma_can_worsen_error_bound(self):
+        self.assertGreater(h.gamma_refinement_delta(Q(1,2),16,24),0)
+        self.assertLess(h.gamma_refinement_delta(Q(1,2),16,64),0)
+        self.assertLess(h.gamma_tail(17),h.gamma_tail(16))
+
+    def test_exact_first_improving_grid(self):
+        self.assertEqual(h.minimum_improving_resolution(Q(1,2),12),23)
+        for J in (2,4,8,12,16,20):
+            N=h.minimum_improving_resolution(Q(1,2),J)
+            self.assertLess(h.gamma_refinement_delta(Q(1,2),J,N),0)
+            if N>2:
+                self.assertGreaterEqual(h.gamma_refinement_delta(Q(1,2),J,N-1),0)
+
+    def test_invalid_grid_boundaries(self):
+        with self.assertRaises(h.WeilHierarchyError):
+            h.minimum_improving_resolution(Q(0),8)
+        with self.assertRaises(h.WeilHierarchyError):
+            h.gamma_refinement_delta(Q(1,2),16,1)
+        with self.assertRaises(h.WeilHierarchyError):
+            h.gamma_refinement_delta(0.5,16,24)
+
+
 if __name__=='__main__':
     unittest.main()
