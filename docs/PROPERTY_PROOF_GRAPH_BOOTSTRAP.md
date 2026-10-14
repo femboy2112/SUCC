@@ -66,6 +66,10 @@ The machine-readable graph gives each concrete property a stable ID, scope, stat
 
 Source/provenance, causal gluing, positive realization, and exact finite certificates already have substantial validated subcases. Do NOT have a swarm duplicate those as if there were no prior implementation.
 
+## September 2026 Suzuki spectral frontier
+
+**Primary update:** Suzuki, *Weil's quadratic form via the screw function*, arXiv:2606.09096 (September 25, 2026 revision): https://arxiv.org/abs/2606.09096. For each **finite** interval, the paper establishes a concrete Friedrichs-extension realization of a localized Weil form and real-rooted finite-interval characteristic functions. Its **Corollary 1.6** gives a *conditional* compact-uniform limiting identity that, if proved, yields RH. The required large-interval convergence/normalization and zero-divisor identification are explicitly not yet established. This is the primary external frontier for graph S04/S05/S07 and P03/P07: investigate a genuine arithmetic-source-controlled limit, including test domains, deficiency indices, Gamma/pole completion, extension selection and uniform tail estimates. A finite-interval self-adjoint model is NOT the missing Hilbert-Pólya proof.
+
 ## Bootstrap obstruction result
 
 `research/2026-10-13/PROPERTY_GRAPH_FINITE_POSITIVITY_OBSTRUCTION.md` proves two complementary elementary facts.
