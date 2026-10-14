@@ -341,3 +341,25 @@ The remaining RH-hard question becomes *why this common, already identified and 
 **Quantified resource improvement:** for J=64, the old global kernel sup tail bound is roughly 0.00395, while the new genuine mean-zero operator tail bound is roughly \(3.12\times10^{-5}\); the algebraic gain approaches one additional factor \(1/J\). This improves both the counterexample-witness error budget and the lower-sign frontier without changing the original arithmetic test space or assuming RH.
 
 **Novelty status:** authentic OU positivity is classical, the signed source-Gamma decomposition appears already in SUCC PRIME-SPHERE/#70 and Suzuki's kernel; this new-to-SUCC *paired Loewner/Galerkin monotone minimax certificate* should be credited as an assembly/explicit source proof instrument, **not independently claimed as an original published theorem**.
+
+
+## XIV. A source-specific finite-stage positivity NO-GO conditional on a true null vector — FSW-12 (CLASSICAL Fourier positivity + PROVED LOCAL)
+
+The exact source positivity of each missing Gamma tail does **not** license a shortcut of the form “if RH is true, one finite Gamma cutoff must already be positive.”
+
+Every omitted true OU rung is not merely PSD but **strictly positive as a quadratic form on every nonzero** \(u\in H_a\), since for \(\alpha>0\)
+\[
+ \langle u,R_\alpha u\rangle
+ =\frac1{2\pi}\int_{\mathbb R}\frac{2\alpha}{\alpha^2+\xi^2}
+ |\widehat u(\xi)|^2\,d\xi>0\qquad(u\neq0).
+\]
+(The whole-line zero extension has nonzero Fourier energy, and the multiplier is positive everywhere.) Thus \(T_{a,J}=G_a-G_{a,J}\) is *strictly* positive in quadratic-form values for every finite J. **Conditional theorem:** if the authentic limit \(G_a\) happens to have a nonzero null vector \(u\), then
+\[
+\boxed{\langle G_{a,J}u,u\rangle=-\langle T_{a,J}u,u\rangle<0
+\quad\text{for every finite }J.}\tag{FS17}
+\]
+That is true *even if* \(G_a\succeq0\). It is NOT asserted that any actual \(G_a\) has such a null vector; whether it does is a separate source-specific spectral question.
+
+An independent elementary negative control is the **one-dimensional toy** \(G_\infty=0,\ G_J=-1/(4J+1)\), with \(G_{J+1}-G_J>0\), \(G_J\nearrow0\), yet \(G_J\not\succeq0\) at every finite stage. An exact Fraction regression verifies this behavior. The toy is explicitly NOT the completed Weil source. This kills the shortcut “all sufficiently fine finite *source truncations* must be PSD if the true limit is PSD”; only the quantitative negative-depth limit is guaranteed by source-faithful convergence.
+
+For the user’s IdealHard/FuckedSpace framing, this is an important distinction: the observer can construct a hierarchy of arbitrarily reliable **one-sided certified lower bounds** without any finite stage ever presenting a complete yes-certificate. A novel global source law (such as a noncircular relative-form inequality for the authentic prime/pole terms) could still deliver a finite *proof* of the infinitely many inequalities. The example proves neither RH nor source-specific undecidability.
