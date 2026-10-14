@@ -1,0 +1,754 @@
+{
+  "boundaries": {
+    "RH_or_Weil_positivity_proved": false,
+    "actual_external_source_authenticated": false,
+    "analytic_global_completion": false,
+    "complete_only_within_declared_finite_grammar": true,
+    "experiments_are_synthetic": true,
+    "independent_academic_priority_claimed": false,
+    "mathematical_tables_stipulated": true,
+    "unbounded_source_model_invention": false
+  },
+  "cases": {
+    "C2_by_C2": {
+      "abstract_isomorphism_classes": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "action_multipliers": [
+        1
+      ],
+      "candidate_invariants": [
+        {
+          "abelian": true,
+          "action": 1,
+          "cohomology_signature": [
+            1,
+            0
+          ],
+          "order_histogram": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "wrap": 0
+        },
+        {
+          "abelian": true,
+          "action": 1,
+          "cohomology_signature": [
+            1,
+            1
+          ],
+          "order_histogram": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "wrap": 1
+        }
+      ],
+      "components": {
+        "kernel_order": 2,
+        "quotient_order": 2
+      },
+      "cyclic_cohomology_predicted_classes": 2,
+      "declared_licensed_actions": [
+        [
+          0,
+          1
+        ]
+      ],
+      "gauge_classes": 2,
+      "kernel_readout_plan": {
+        "minimax_depth": 2,
+        "status": "DECISIVE_IN_DECLARED_MODEL",
+        "synthetic_replays": [
+          {
+            "candidate": 0,
+            "identified": "V4",
+            "synthetic_event_word": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "synthetic_readouts": [
+              0,
+              0
+            ]
+          },
+          {
+            "candidate": 1,
+            "identified": "C4",
+            "synthetic_event_word": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "synthetic_readouts": [
+              0,
+              1
+            ]
+          }
+        ]
+      },
+      "quotient_only_all_horizon_no_go": true,
+      "raw_normalized_cocycles": 2,
+      "source_authenticated": false
+    },
+    "C3_by_C2": {
+      "abstract_isomorphism_classes": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "action_multipliers": [
+        1,
+        2
+      ],
+      "candidate_invariants": [
+        {
+          "abelian": true,
+          "action": 1,
+          "cohomology_signature": [
+            1,
+            0
+          ],
+          "order_histogram": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              6,
+              2
+            ]
+          ],
+          "wrap": 0
+        },
+        {
+          "abelian": false,
+          "action": 2,
+          "cohomology_signature": [
+            2,
+            0
+          ],
+          "order_histogram": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "wrap": 0
+        }
+      ],
+      "components": {
+        "kernel_order": 3,
+        "quotient_order": 2
+      },
+      "cyclic_cohomology_predicted_classes": 2,
+      "declared_licensed_actions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "gauge_classes": 2,
+      "kernel_readout_plan": {
+        "minimax_depth": 2,
+        "status": "DECISIVE_IN_DECLARED_MODEL",
+        "synthetic_replays": [
+          {
+            "candidate": 0,
+            "identified": "C6",
+            "synthetic_event_word": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "synthetic_readouts": [
+              0,
+              1
+            ]
+          },
+          {
+            "candidate": 1,
+            "identified": "S3",
+            "synthetic_event_word": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "synthetic_readouts": [
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      "quotient_only_all_horizon_no_go": true,
+      "raw_normalized_cocycles": 4,
+      "source_authenticated": false
+    },
+    "C3_by_C3": {
+      "abstract_isomorphism_classes": [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "action_multipliers": [
+        1
+      ],
+      "candidate_invariants": [
+        {
+          "abelian": true,
+          "action": 1,
+          "cohomology_signature": [
+            1,
+            0
+          ],
+          "order_histogram": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              8
+            ]
+          ],
+          "wrap": 0
+        },
+        {
+          "abelian": true,
+          "action": 1,
+          "cohomology_signature": [
+            1,
+            1
+          ],
+          "order_histogram": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              9,
+              6
+            ]
+          ],
+          "wrap": 1
+        },
+        {
+          "abelian": true,
+          "action": 1,
+          "cohomology_signature": [
+            1,
+            2
+          ],
+          "order_histogram": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              9,
+              6
+            ]
+          ],
+          "wrap": 2
+        }
+      ],
+      "components": {
+        "kernel_order": 3,
+        "quotient_order": 3
+      },
+      "cyclic_cohomology_predicted_classes": 3,
+      "declared_licensed_actions": [
+        [
+          0,
+          1
+        ]
+      ],
+      "gauge_classes": 3,
+      "kernel_readout_plan": {
+        "minimax_depth": 3,
+        "status": "DECISIVE_IN_DECLARED_MODEL",
+        "synthetic_replays": [
+          {
+            "candidate": 0,
+            "identified": "C3xC3",
+            "synthetic_event_word": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "synthetic_readouts": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "candidate": 1,
+            "identified": "C9_fr_1",
+            "synthetic_event_word": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "synthetic_readouts": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "candidate": 2,
+            "identified": "C9_fr_2",
+            "synthetic_event_word": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "synthetic_readouts": [
+              0,
+              0,
+              2
+            ]
+          }
+        ]
+      },
+      "quotient_only_all_horizon_no_go": true,
+      "raw_normalized_cocycles": 9,
+      "source_authenticated": false
+    },
+    "C4_by_C2": {
+      "abstract_isomorphism_classes": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "action_multipliers": [
+        1,
+        3
+      ],
+      "candidate_invariants": [
+        {
+          "abelian": true,
+          "action": 1,
+          "cohomology_signature": [
+            1,
+            0
+          ],
+          "order_histogram": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "wrap": 0
+        },
+        {
+          "abelian": true,
+          "action": 1,
+          "cohomology_signature": [
+            1,
+            1
+          ],
+          "order_histogram": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              8,
+              4
+            ]
+          ],
+          "wrap": 1
+        },
+        {
+          "abelian": false,
+          "action": 3,
+          "cohomology_signature": [
+            3,
+            0
+          ],
+          "order_histogram": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              4,
+              2
+            ]
+          ],
+          "wrap": 0
+        },
+        {
+          "abelian": false,
+          "action": 3,
+          "cohomology_signature": [
+            3,
+            2
+          ],
+          "order_histogram": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              4,
+              6
+            ]
+          ],
+          "wrap": 2
+        }
+      ],
+      "components": {
+        "kernel_order": 4,
+        "quotient_order": 2
+      },
+      "cyclic_cohomology_predicted_classes": 4,
+      "declared_licensed_actions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "gauge_classes": 4,
+      "kernel_readout_plan": {
+        "minimax_depth": 3,
+        "status": "DECISIVE_IN_DECLARED_MODEL",
+        "synthetic_replays": [
+          {
+            "candidate": 0,
+            "identified": "C4xC2",
+            "synthetic_event_word": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "synthetic_readouts": [
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "candidate": 1,
+            "identified": "C8",
+            "synthetic_event_word": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "synthetic_readouts": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "candidate": 2,
+            "identified": "D8",
+            "synthetic_event_word": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "synthetic_readouts": [
+              0,
+              3,
+              3
+            ]
+          },
+          {
+            "candidate": 3,
+            "identified": "Q8",
+            "synthetic_event_word": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "synthetic_readouts": [
+              0,
+              3,
+              1
+            ]
+          }
+        ]
+      },
+      "quotient_only_all_horizon_no_go": true,
+      "raw_normalized_cocycles": 6,
+      "source_authenticated": false
+    }
+  },
+  "conditional_bayesian_example": {
+    "after_first_licensed_synthetic_report": [
+      "1/2",
+      "1/2"
+    ],
+    "after_second_licensed_synthetic_report": [
+      "0",
+      "1"
+    ],
+    "not_mathematical_truth_probabilities": true,
+    "prior": [
+      "1/2",
+      "1/2"
+    ]
+  },
+  "contextual_heuristic_example": {
+    "context": "after one quotient-generator actuation and its synthetic kernel receipt",
+    "cost_mutation_action_ranking": [
+      {
+        "action": [
+          1,
+          0
+        ],
+        "declared_cost": "1",
+        "gain_per_cost": "1/4",
+        "target_gini_gain": "1/4"
+      },
+      {
+        "action": [
+          0,
+          1
+        ],
+        "declared_cost": "4",
+        "gain_per_cost": "1/8",
+        "target_gini_gain": "1/2"
+      }
+    ],
+    "ranking_is_heuristic_not_proof": true,
+    "uniform_prior_one_per_extension_class": "1/4",
+    "unit_cost_action_ranking": [
+      {
+        "action": [
+          0,
+          1
+        ],
+        "declared_cost": "1",
+        "gain_per_cost": "1/2",
+        "target_gini_gain": "1/2"
+      },
+      {
+        "action": [
+          1,
+          0
+        ],
+        "declared_cost": "1",
+        "gain_per_cost": "1/4",
+        "target_gini_gain": "1/4"
+      }
+    ]
+  },
+  "negative_controls": {
+    "bad_prior": true,
+    "out_of_model_observation": true,
+    "stale_epoch": true,
+    "unlicensed_action": true
+  },
+  "source_family": "C_k by C_q, action + normalized twisted 2-cocycle",
+  "source_map_gauge_control": {
+    "apparatus_map_empirically_authenticated": false,
+    "transported_agree": true,
+    "transported_signatures": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "untransported_differ": true,
+    "untransported_signatures": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ]
+  },
+  "status": "EXACT_DECLARED_FINITE_STRUCTURAL_COUPLING_RECEIPT"
+}
