@@ -138,3 +138,40 @@ Let `T_n→∞` be an unbounded sequence of heights. Suppose the original theta 
 - Original SUCC theta source/gaussian Fock bound and ξ(1/2) positive: PR #73/74; exact first contour and spectral pair: PR #82.
 - Independent sibling PR #83: smooth C⁷ spectral tail and rational argument-principle observer; method strength differs, no duplicate claim of priority.
 - Classical Jensen formula, compactly supported Fourier decay and Cauchy–Schwarz; explicit Rosser/Riemann–von Mangoldt **not needed** for the main theorem. Optional external comparison: Rosser (1941) / Hasanalizade–Shen–Wong (2021) zero count gives far sharper constants, but using it would no longer be a source-only proof of the count.
+
+## 7. ST-08 — A finite arithmetic ↔ spectral gluing law with a quantified H¹ defect (PROVED LOCAL; two inherited source-equalities)
+
+This is the natural operator-level completion of the user's request. **The arithmetic and spectral sides need not use the same finite representation or the same finite observation protocol.** They both map to the ONE authentic global source, with separately certified errors. The resulting diagram commutes to a rigorously bounded error, rather than asserting a diagrammatic equality by analogy.
+
+The independent source-first Completed-Weil PR #71 (already an ancestor of PR #82 via the all-place branch) proves CW-11 for the **signed**, contact-corrected finite Gamma-rung arithmetic Weil form `Q̃_J^arith`: for all `v,w∈H₀¹(-a,a)`, with `A_J=2J+1/2`,
+
+    |Q_W(v,w)-Q̃_J^arith(v,w)| ≤ ε_J ||v||H¹||w||H¹,
+    ε_J=max(9/(8 A_J²)+1/(2 A_J³), 1/(2 A_J²)+2/A_J³).             (ST-8a)
+
+CW-11 retains every *true* prime-power atom on the finite spatial interval, the Gamma contact correction, the pole terms and half-density. It is not an independent prime-cutoff and is **not positive by construction**. The analytic derivation and exact hypotheses are in `research/2026-10-14/COMPLETED_WEIL_SOURCE_TRANSPORT.md` §4, already published in the branch ancestry; its status is a mathematical source-theorem import, not re-proved by the new code.
+
+Our ST-03 gives, independently in the zero-side chart,
+
+    |Q_W(v,w)-Q_≤T^spec(v,w)| ≤ δ_a(T) ||v||H¹||w||H¹,
+    δ_a(T)=70a exp(a) log(16T)/T.                                    (ST-8b)
+
+Subtract and apply the triangle inequality **to one and the same original Weil form**:
+
+    |Q̃_J^arith(v,w)-Q_≤T^spec(v,w)|
+      ≤ [ε_J+δ_a(T)] ||v||H¹||w||H¹.                              (ST-08)
+
+Both independent limits can be taken: `ε_J→0` as J→∞, and `δ_a(T)→0` as T→∞, so the two chart systems converge toward their authentic shared Weil source **in H¹ form/operator norm**, not in the L² spectral norm of the unbounded Suzuki realization. This is a mathematical proof of a quantified commutative diagram of representations, not an assumption that their finite objects are identical or individually positive.
+
+For a=1/2, J=64, T=10⁶, `ε_J≈0.00006837`, `δ_a(T)≈0.00095722`, so the source-certified two-chart defect is `<11/10000` (0.0011). At J=512,T=10⁹, the bound drops below `3/10^6`. All official certificates are exact rational outward upper bounds for exp and logs, with source immutability constraints. These numbers are not eigenvalues or evidence that the finite spectral sum is nonnegative.
+
+**Crucial execution debt:** Computing the *values* of `Q_≤T^spec` requires complete certified spectral data below T, and this branch currently has only the already authenticated first pair. An expression with an unknown finite spectral middle is still an exact mathematically defined form, but it is **not a finite algorithm output supplied by the source tapes**. Source-only ST-08 certifies an operator error contract, not the actual finite zero list. Completing that enumeration and proving the low signed piece positive for unbounded heights remains RH-equivalent. Similarly, a source-correct numerical matrix approximation of `Q̃_J^arith` cannot upgrade ST-08 into positivity without an **all-vector** lower sign bound.
+
+Thus the diagram is
+
+    source original arithmetic (prime/Gamma/pole) -- CW-11 / ε_J --> Q_W
+                |                                           ↑
+          finite signed Gamma J                               | ST-03 / δ(T)
+                |                                           |
+       Q̃_J^arith  ───── defect ≤ ε_J+δ(T) ────→  Q_≤T^spec
+
+and every arrow has an explicit source/domain contract, rather than an invented terminal/global observation.

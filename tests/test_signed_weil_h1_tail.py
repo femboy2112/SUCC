@@ -16,7 +16,8 @@ from observational_succ.signed_weil_h1_tail import (
     SOURCE, SignedTailError, log_unit_bounds, log_bounds, exp_upper,
     source_count, absolute_zero_tail_weight, signed_tail_operator_bound,
     first_pair_receipt, certified_pair_operator, spectral_split_contract,
-    finite_shadow_countermodel, concentrated_tent_H1, receipt,
+    finite_shadow_countermodel, concentrated_tent_H1,
+    corrected_original_Gamma_error, two_chart_signed_gluing_bound, receipt,
 )
 
 class SignedTailTests(unittest.TestCase):
@@ -171,7 +172,36 @@ class SignedTailTests(unittest.TestCase):
             self.assertFalse(info['six_derivatives_classically_integrable'])
         self.assertGreater(Q(concentrated_tent_H1(Q(1,10))['norm_H1_squared']),2)
 
-    def test_23_no_ell2_identification_from_phase(self):
+    def test_23_corrected_original_Gamma_exact_CW11(self):
+        for J in (1,2,8,64,512):
+            A=Q(4*J+1,2)
+            expected=max(Q(9,8*A*A)+Q(1,2*A*A*A),
+                         Q(1,2*A*A)+Q(2,A*A*A))
+            self.assertEqual(corrected_original_Gamma_error(J),expected)
+        self.assertLess(corrected_original_Gamma_error(512),
+                        corrected_original_Gamma_error(64))
+
+    def test_24_two_chart_arithmetic_spectral_defect(self):
+        r=two_chart_signed_gluing_bound(Q(1,2),64,10**6)
+        eps=Q(r['arithmetic_signed_H1_error_upper'])
+        delta=Q(r['spectral_signed_H1_error_upper'])
+        self.assertEqual(Q(r['two_chart_signed_H1_error_upper']),eps+delta)
+        self.assertLess(eps+delta,Q(11,10000))
+        self.assertTrue(r['neither_chart_auto_positive'])
+        self.assertTrue(r['low_spectral_values_not_generated_by_this_bound'])
+        self.assertFalse(r['RH_proved'])
+
+    def test_25_invalid_arithmetic_rung(self):
+        for bad in (0,100001,True,Q(3,2)):
+            with self.assertRaises(SignedTailError):corrected_original_Gamma_error(bad)
+
+    def test_26_two_chart_bounds_decay_independently(self):
+        x=Q(two_chart_signed_gluing_bound(Q(1,2),8,1000)['two_chart_signed_H1_error_upper'])
+        y=Q(two_chart_signed_gluing_bound(Q(1,2),64,10**6)['two_chart_signed_H1_error_upper'])
+        z=Q(two_chart_signed_gluing_bound(Q(1,2),512,10**9)['two_chart_signed_H1_error_upper'])
+        self.assertTrue(x>y>z>0)
+
+    def test_27_no_ell2_identification_from_phase(self):
         p=certified_pair_operator(Q(2,3))
         self.assertEqual(Q(p['midpoint_kernel_operator_error_upper']),8*Q(2,3)**2*Q(1,500))
         self.assertFalse(p['full_Weil_PSD'])

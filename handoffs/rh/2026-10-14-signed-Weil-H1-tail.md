@@ -19,3 +19,12 @@ For `a>0` and `T>=2`, on real or complex `H₀¹(-a,a)`, original Weil spectral 
 **Files:** `observational_succ/signed_weil_h1_tail.py`, `tests/test_signed_weil_h1_tail.py`, `scripts/signed_weil_h1_tail_probe.py`, exact frozen JSON and `research/2026-10-14/SIGNED_WEIL_H1_SPECTRAL_TAIL.md`. No new physically certified observer instrument; no Lean kernel proof. Dedicated CI and full repository checks must be read from the exact branch head before claiming success.
 
 **Next missing lemma:** a source-derived lower bound on the *unknown finite-middle signed spectral form*, or a complete original arithmetic prime/Gamma/pole all-vector inequality; the present high-tail theorem is not that bound.
+
+## ST-08 addendum: source-correct arithmetic/spectral defect on the same H¹ space
+
+Completed-Weil PR #71 supplies the independent corrected signed Gamma truncation epsilon_J=`max(9/(8A_J²)+1/(2A_J³),1/(2A_J²)+2/A_J³)`, A_J=2J+1/2, on H₀¹. Combine it with the *present* δ_a(T) signed zero-side tail to obtain
+
+    ||Q̃_J^arith-Q_≤T^spec||_(H₀¹→H^-1)
+        ≤ ε_J+70a exp(a)log(16T)/T.
+
+At a=1/2,J=64,T=10⁶, this is less than `11/10000` by outward rational arithmetic. The statement requires the original Weil explicit-formula equality and the genuine PR #71 corrected Gamma/contact source; an unknown low zero list is never presented as an evaluated finite spectral object. **Neither side is known nonnegative.** This creates a proof-bearing all-test mathematical model interaction, not an RH proof or a finite program enumerating the unknown zero divisor.

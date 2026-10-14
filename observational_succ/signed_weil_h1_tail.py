@@ -197,6 +197,42 @@ def spectral_split_contract(a,T,receipt_path=SOURCE_FIRST_PAIR_PATH)->dict:
             'all_mid_zeros_known_critical':False,'RH_proved':False,
             'full_Weil_positive':False}
 
+def corrected_original_Gamma_error(J:int)->Q:
+    """Inherited CW-11 actual Weil arithmetic Gamma truncation H¹ error.
+
+    Source: PR #71 COMPLETED_WEIL_SOURCE_TRANSPORT.md, CW-11, signed
+    corrected J-rung Gamma approximation. This is a theorem import WITH
+    its complete prime/Gamma/contact/pole source, not a positive Gram.
+    """
+    if type(J) is not int or not 1<=J<=100000:
+        raise SignedTailError('integer original Gamma rung budget 1..100000')
+    A=Q(4*J+1,2)
+    return max(Q(9,8*A*A)+Q(1,2*A*A*A),
+               Q(1,2*A*A)+Q(2,A*A*A))
+
+
+def two_chart_signed_gluing_bound(a,J:int,T)->dict:
+    """Couple genuine arithmetic J-rung and genuine spectral <=T models.
+
+    ||Q_arch,J - Q_spec,<=T||_(H1->H-1) <=epsilon_J + delta_a(T)
+    by two independently proved source-normalized convergence contracts.
+    Spectrum <=T remains signed, and is not computed using untrusted zeros.
+    """
+    tail=signed_tail_operator_bound(a,T)
+    gamma=corrected_original_Gamma_error(J)
+    delta=Q(tail['signed_remainder_form_norm_upper'])
+    return {'original_source':'completed_Weil_prime_Gamma_pole_halfdensity',
+            'arithmetic_chart':'source_corrected_J_Gamma_rungs',
+            'spectral_chart':'entire_original_Xi_zeros_up_to_height_T',
+            'J':J,'T':str(rat(T)),'halfwidth':str(rat(a)),
+            'arithmetic_signed_H1_error_upper':str(gamma),
+            'spectral_signed_H1_error_upper':str(delta),
+            'two_chart_signed_H1_error_upper':str(gamma+delta),
+            'neither_chart_auto_positive':True,
+            'low_spectral_values_not_generated_by_this_bound':True,
+            'RH_proved':False}
+
+
 def concentrated_tent_H1(epsilon):
     """H0^1 family with bounded norm but NO classical sixth derivative.
 
@@ -232,6 +268,7 @@ def receipt():
             'T_grid':[signed_tail_operator_bound(Q(1,2),t) for t in (16,100,1000,10**6)],
             'source_count_16':source_count(16),
             'sample_H2_bound':signed_tail_operator_bound(Q(1,2),1000,2),
+            'signed_two_chart':two_chart_signed_gluing_bound(Q(1,2),64,10**6),
             'first_pair':certified_pair_operator(Q(1,2)),
             'full_signed_split':spectral_split_contract(Q(1,2),16),
             'hostile_finite_shadow':finite_shadow_countermodel(),
