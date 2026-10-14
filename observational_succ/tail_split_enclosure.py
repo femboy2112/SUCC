@@ -17,13 +17,15 @@ Then the global squared error E satisfies
     P_K + B + m' * (1/(K+1) - B)  <=  E  <=  P_K + B + M' * (1/(K+1) - B)
 
 because the non-blackout cells carry total weight 1/(K+1) - B and defect in
-[m', M'], while the blackout cells contribute exactly B.  The LOWER bound is strictly sharper than PTE-01 for every nonempty family
-(the blackout cells' exact contribution is added on top of the min-defect
-average).  The UPPER bound is strictly sharper whenever M' != 1 (i.e. the
-non-blackout max defect differs from the blackout defect 1), and is dramatic
-when the synchronized cells dominate (the LCM-blackout regime); when M' = 1
-exactly it coincides with PTE-01, and the truncation remainder 1/(J L^2) can
-epsilon-offset a vanishingly small gain -- it tends to 0 as J grows.
+[m', M'], while the blackout cells contribute exactly B.  The LOWER bound is
+strictly sharper than PTE-01 exactly when m' < 1 (the blackout cells' exact
+contribution is added on top of the min-defect average); when m' = 1 it
+DEGRADES by the truncation remainder 1/(J L^2) relative to PTE-01.  The UPPER
+bound is strictly sharper whenever M' != 1, and is dramatic when the
+synchronized cells dominate (the LCM-blackout regime); when M' = 1 exactly it
+also degrades by 1/(J L^2).  A family with m' = M' = 1 (e.g. F(k) in {0,2}
+everywhere, as with a_2 = 4) is therefore a pure (epsilon) regression for
+tail-split at finite J -- both degradations vanish as J grows.
 
 Exact rational arithmetic; the blackout tail is certified by truncating at J
 with remainder bound  sum_{j>J} 1/(jL(jL+1)) < 1/(J L^2).  No floats, no
@@ -45,6 +47,8 @@ def defect_by_residue(a: dict[int, Q]) -> tuple[dict[int, Q], int]:
         if type(c) not in (int, Q):
             raise PeriodicTailError("only exact rational coefficients")
     L = lcm(*a.keys())
+    if not 2 <= L <= 1_000_000:  # consistent with residue()'s k-budget
+        raise PeriodicTailError("period L out of the residue-clock k-budget (<= 1e6)")
     c = {r: (Q(1) - value(r, a)) ** 2 for r in range(1, L + 1)}
     # structural check: F(L) = 0, so c_L = 1 exactly
     if c[L] != 1:
