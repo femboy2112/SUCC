@@ -10,6 +10,8 @@
 | S1.3 | For `0<2a-log2<=log2/65536`, complete Weil form is `> (8/35)||v||²` on smooth tests supported in two edge strips | PROVED LOCAL; rational constants TESTED | proper subspace only; neither `lambda_a>0` nor RH |
 | S1.4 | Isolated prime operator tends strongly to zero at onset but not in norm | PROVED LOCAL | zero-extended common `L²(R)`; not a continuity assertion about full `A_a` |
 | S1.5 | Exact mean-zero Neumann inverse pairing matches Dirichlet primitive norm | CLASSICAL / exact TESTED finite | piecewise step probes; no Weil positivity |
+| S1.5b | Finite-bandwidth (derivative-bounded) first-prime HS perturbation inequality; fails to be uniform in L² | PROVED LOCAL / exact tests | fixed derivative budget only, no λ_a certificate |
+| S1.5c | Real-place Fourier symbol at ξ=0 is strictly negative; rank-two pole boundary and compact Paley–Wiener restriction cannot be dropped | PROVED LOCAL / classical | refutes naive scalar multiplier PSD route, not Weil PSD |
 | S1.6 | Full source-derived positive `G_a-c(a)K_a` on every `L_0²(-a,a)`, with verified all-scale error | UNVERIFIED | RH-strength for all `a`; finite Gram alone insufficient |
 | S1.7 | Source-controlled Suzuki compact-uniform spectral limit (1.12) | UNVERIFIED | Suzuki's stated conjectural limit; zeros not construction inputs |
 
