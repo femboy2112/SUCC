@@ -100,6 +100,15 @@ class ExactCompressionTests(unittest.TestCase):
         self.assertFalse(result.weil_sign_certified)
         self.assertFalse(result.gamma_source_identified)
 
+
+    def test_orthogonal_wild_reembedding_cannot_fix_signed_weil_toy(self):
+        receipt=w.unitary_sign_invariance_control()
+        self.assertEqual(receipt["original_negative_rayleigh"],F(-1))
+        self.assertEqual(receipt["transported_negative_rayleigh"],F(-1))
+        self.assertTrue(receipt["unitary_basis_certified"])
+        self.assertFalse(receipt["actual_wild_to_weil_intertwiner"])
+        self.assertFalse(receipt["rh_proved"])
+
     def test_leakage_bounds_direct_sum_component(self):
         # Exact leakage may be nonzero despite global [T,C]=0.
         leak_tc=w.leakage(self.T,self.C,self.window)
