@@ -420,3 +420,60 @@ def minimum_improving_resolution(a,J):
     gap=gamma_tail(J)-gamma_tail(J+1)
     threshold=4*a/(F(4*J+1)*gap)
     return max(2,threshold.numerator//threshold.denominator+1)
+
+
+def authentic_positive_gamma_tail_norm(J):
+    """True mean-zero missing Gamma operator is PSD, with O(J^-2) norm cap.
+
+    On L0² each omitted -(4/d²)(1-exp(-d|x-y|/2)) reduces to
+    +(4/d²) R_(d/2), Fourier symbol 2*(d/2)/((d/2)^2+xi²)>0.
+    ||R_(d/2)|| <= 4/d, so tail norm <=16 sum_(j>=J) d^-3
+    <= 2/(4J+1)^2 + 16/(4J+1)^3.
+    """
+    if type(J) is not int or J<1:raise WeilHierarchyError("J>=1")
+    d=4*J+1
+    return F(2,d*d)+F(16,d*d*d)
+
+
+def honest_spatial_error(st:FiniteSourceStage):
+    """Stage g_J -> midpoint cell source approximation, without Gamma tail."""
+    _authenticated(st)
+    h=2*st.a/st.N
+    return 2*st.a*(h*lipschitz_safe(st.a,st.J)+st.kernel_entry_radius)
+
+
+def original_source_one_sided(st:FiniteSourceStage,iterations=12,amplitude=1):
+    """Asymmetric finite->genuine Weil negative-depth certificate.
+
+    Gamma tail = TRUE PSD! Therefore a lower bound for g_J transfers
+    to genuine g with spatial error alone; only the proposed NEGATIVE
+    witness must add the O(J^-2) positive tail norm upper.
+    """
+    _authenticated(st)
+    E=honest_spatial_error(st)
+    T=authentic_positive_gamma_tail_norm(st.J)
+    D=certified_upper_negative_depth(st,iterations)
+    trial=authenticated_multiway_witness(st,amplitude)
+    lower=max(F(),-trial["rational_center_rayleigh"]-E-T)
+    upper=D+E
+    if lower>upper:
+        raise WeilHierarchyError("internal asymmetric certificate contradiction")
+    return {"lower_negative_depth":lower,
+            "upper_negative_depth":upper,
+            "positive_gamma_tail_norm_upper":T,
+            "spatial_interval_norm_error":E,
+            "finite_center_shift_upper":D,
+            "joint_rational_vector":trial["vector"],
+            "genuine_negative_witness":lower>0,
+            "rh_proved":False,
+            "source":"AUTHENTIC_Q_ZETA_SUZUKI_2026_1_3"}
+
+
+def monotone_gamma_mode_rayleigh(indices,weights,J):
+    """SOURCE-TRUE rational clock Gamma bath only; increasing in J.
+
+    The finite signed clock controls do not by themselves imply full
+    completed-Weil positivity or an all-interval kernel inequality.
+    """
+    from .gaussian_weil_certificates import gamma_clock_quadratic
+    return gamma_clock_quadratic(indices,weights,J)
