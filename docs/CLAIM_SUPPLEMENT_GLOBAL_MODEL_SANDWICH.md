@@ -14,4 +14,6 @@
 
 | GMS-08 | CLASSICAL / PROVED LOCAL finite; ASYMPTOTIC IMPORT | Exact nonnegative divisor-floor remainder `D_N = ΣΛ(n){N/n}/N`, with integer↔prime valuation independent formal-log coefficients; `D_N -> 1−γ` requires PNT-level summatory information plus Stirling | Every cutoff N≤259 exact double oracle, N=6 coefficient witness, fake-6/source and sign firewall. Scalar is NOT the Weil quadratic form |
 
+| GMS-09 | CLASSICAL ANALYTIC THEOREM / IMPORTED PRIME ASYMPTOTIC | Existence of finite limit of authentic nonnegative scalar D_N is equivalent to PNT, necessarily D_N -> 1−gamma; forward uses imported PNT-to-von-Mangoldt asymptotic, reverse from weighted interval bounds | Full geometric-ratio proof in dossier; NO assertion that finite positive D_N values certify their limit, Weil positivity or RH |
+
 **Separate mathematics/evidence types:** passing finite tests is neither an empirical carrier attestation nor a proof of a general topological/analytic imported theorem. The tests are finite exact or numerical diagnostics as labeled. No new academic-priority claim.

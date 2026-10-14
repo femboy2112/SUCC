@@ -97,6 +97,31 @@ At N=6 the exact coefficient vector is `(log2)/12 + 0*(log3) + (log5)/30`. Its n
 
 **Sign firewall:** `D_N>=0` is a one-dimensional scalar floor/continuum bias. It is **not** the Weil quadratic form and provides no operator inequality. A scalar-positive artifact cannot be identified with the authentic Weil form without an actual source-preserving, test-space-correct pairing map. Indeed E38 and the fake-6 Suzuki counterexample defeat this shortcut. The numerical value `1-gamma` depends on the matching cutoff normalization; changing the unit convention changes finite parts.
 
+## 5b. Global meaning of the scalar defect: a PNT-equivalent limit — GMS-09
+
+**Classical analytical theorem, not an executable finite-data inference:** for authentic von Mangoldt Lambda(n) and the source-defined `D_N` in §5a, the following are equivalent:
+
+1. The prime number theorem `psi(x)=sum_(n<=x) Lambda(n) ~ x`.
+2. The limit `lim_(N->infinity) D_N` exists as a finite real number.
+3. `D_N -> 1-gamma`.
+
+The nontrivial implication **PNT ⇒ (3)** invokes the established von Mangoldt asymptotic `A(x)=sum_(n<=x) Lambda(n)/n = log x-gamma+o(1)` together with Stirling; this theorem is *not* derived from any finite sample or by the code. For **(2) ⇒ PNT**, Stirling and the exact definition show `A(x)=log x+C+o(1)` for some finite `C`, first at integer x and then at arbitrary real x by taking the floor.
+
+Write `psi(x)=sum_(n<=x) Lambda(n)`. Since all Lambda(n) are nonnegative, for each fixed `h>1`,
+
+`x [A(hx)-A(x)] <= psi(hx)-psi(x) <= h x [A(hx)-A(x)]`.
+
+But `A(hx)-A(x)=log h+o(1)` as x tends to infinity. Partition `[x0,x]` into geometric intervals of ratio h and sum the preceding inequalities; discarding the fixed finite initial segment gives
+
+`log(h)/(h-1) <= liminf_(x->infinity) psi(x)/x
+ <= limsup_(x->infinity) psi(x)/x <= h log(h)/(h-1)`.
+
+Let `h` decrease to 1: both extremal bounds approach 1, so `psi(x)~x`. Thus **convergence of the exact SUCC quantization defect itself** encodes prime-number-theorem-strength asymptotic information; merely observing a finite sequence of positive `D_N` does not demonstrate that convergence.
+
+This is the clearest distinction between *an infinitely quantified conclusion with a finite proof* and *a conclusion inferred from finitely many observations*. It identifies the additional source theorem that the model graph must carry. It is **not equivalent to RH**: PNT is already proved and is weaker than RH. It is also one scalar limit, not the operator positivity of the Weil distribution.
+
+**Literature:** classical PNT / von Mangoldt asymptotic as traced to de la Vallée Poussin in the Max Planck mathematics preprint (2006/150, §proof), the DLMF Laurent coefficient at the zeta pole, and discussions of the PNT-equivalence on MathOverflow (question 95743). The easy geometric-interval converse is explicitly derived above, not attributed as new.
+
 ## 6. Why this does not close Weil positivity — GMS-07
 
 Existing SUCC has:
