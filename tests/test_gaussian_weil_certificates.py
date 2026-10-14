@@ -124,4 +124,41 @@ class SignedWeilBridge(unittest.TestCase):
         self.assertGreater(g.step_operator_error(a,J,N,L),0)
 
 
+
+
+class ExactSpectralPolarization(unittest.TestCase):
+    def test_true_pole_has_both_signs_exact(self):
+        sites=(-1,0,1)
+        even=g.pole_clock_quadratic(sites,(1,-2,1))
+        odd=g.pole_clock_quadratic(sites,(1,0,-1))
+        self.assertEqual(even,(F(-2),F(0),F(-2)))
+        self.assertEqual(odd,(F(18),F(18),F(0)))
+        with self.assertRaises(g.GaussianSourceError):
+            g.pole_clock_quadratic(sites,(1,1,1))
+
+    def test_gamma_positive_true_clock_components(self):
+        sites=(-1,0,1)
+        self.assertEqual(g.gamma_clock_quadratic(sites,(1,-2,1),1),F(10))
+        self.assertEqual(g.gamma_clock_quadratic(sites,(1,0,-1),1),F(6))
+        for weights in ((1,-2,1),(1,0,-1),(0,2,-2)):
+            values=[g.gamma_clock_quadratic(sites,weights,J) for J in (1,2,4,8)]
+            self.assertTrue(all(value>0 for value in values))
+            self.assertTrue(all(x<y for x,y in zip(values,values[1:])))
+
+    def test_exact_dyadic_source_moat_gate(self):
+        self.assertEqual(g.harmonic_dyadic_lower(0),F(2))
+        for q in range(1,30):
+            self.assertGreater(g.harmonic_dyadic_lower(q),F(2+q,4))
+            self.assertGreater(g.harmonic_dyadic_lower(q),g.harmonic_dyadic_lower(q-1))
+        J,R,slack=g.source_spectral_moat(24,F(8))
+        self.assertEqual(J,2**24)
+        self.assertEqual(R,F(4*(2**24)+1,2))
+        self.assertGreater(slack,0)
+        J2,R2,_=g.source_spectral_moat(32,F(10))
+        self.assertEqual(J2,2**32)
+        self.assertGreater(R2,R)
+        with self.assertRaises(g.GaussianSourceError):
+            g.source_spectral_moat(1,F(8))
+
+
 if __name__=="__main__": unittest.main()
