@@ -10,6 +10,7 @@ The handoff contract is [docs/RH_HANDOFF.md](../../docs/RH_HANDOFF.md). A docume
 - [Source-indexed all-place analytic model gluing](2026-10-14-source-model-analytic-gluing.md) — original rational diagonal, true finite-local Euler factors, canonical theta/Poisson interaction, exact finite-prime modular obstruction and rational certificates outside the Euler region; **completed Weil sign and RH remain open**. Stacked on PR #71; review before exporting to the separate RH repo.
 - [SUCC-Gaussian global-curve constraints](2026-10-14-succ-gaussian-global-constraints.md) — theta-derived source norm bound, finite-prime Gaussian boreholes, certified center zero-free disk and conditional Rouché protocol. **No RH or all-height claim**.
 - [Authenticated theta even-Taylor jets and Plato-cave obstruction](2026-10-14-theta-jets-cave.md) — 21 exact-rational coefficient enclosures, source-certified Rouché disk radius 11/2, positive-moment interaction laws and explicit finite-shadow off-line-zero impostor; **no Weil sign or RH proof**.
+- [Source-certified complex theta contour and original Weil spectral shadow](2026-10-14-theta-contour-Weil-local.md) — rational Rouché proof of one simple critical-line zero, source-typed positive local Weil spectral operator and explicit off-line finite-shadow impostor; **no global Weil sign or RH proof**.
 - [Template](TEMPLATE.md) — required mathematical scope, provenance, adversarial controls and next proof obligation.
 
 RH remains unsolved. A handoff document is **not** an assertion of an RH proof.
