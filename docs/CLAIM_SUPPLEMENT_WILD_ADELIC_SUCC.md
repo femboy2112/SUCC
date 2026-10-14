@@ -10,6 +10,7 @@
 | WA-04 | `A_m(z)_n=z_n^m` globally invertible iff `v_p(D_n)→∞` for every `p|m` | CLASSICAL / PROVED PAPER | Exact finite inverse depths, multiplicative controls; rational `q_n=6` allowed as covering but not Euler prime |
 | WA-05 | `|ker A_m|=∏_{p|m, v_p(D_n) bounded}p^{v_p(m)}` | CLASSICAL / PROVED PAPER | Exact factor counts for dyadic/factorial/distinct-prime/prefix laws |
 | WA-06 | Global inverse coordinate `y_n=z_k^(D_k/(mD_n))`, `m|D_k/D_n` | PROVED LOCAL | 5-level and cross-depth exact rational-phase tests; finite stage alone ambiguous |
+| WA-06B | Pro-kernel system `K_(n,m)=μ_m` has maps `×(D_k/D_n)` and image size `m/gcd(m,D_k/D_n)`; global kernel is inverse limit; arithmetic tails determine collapse | PROVED PAPER (ELEMENTARY) / EXACT TESTED | Source-stable depths; distinct-prime early-collapse/global-kernel counterexample; direct König surjectivity proof; no Pontryagin dependency for WA-04 |
 | WA-07 | Factorial `D_n=(n+1)!` yields `G_q=Q`, `Σ_Q=Qhat`, fiber `Zhat` | CLASSICAL / PROVED PAPER | Every denominator divides a factorial, exact arithmetic |
 | WA-08–10 | `Σ_Q=(R×Zhat)/anti-diagonal Z`, connecting `δ_m:μ_m≅Zhat/mZhat`, `δ(e^(2πir/m))=r mod m` | CLASSICAL EXACT SEQUENCE / PROVED PAPER | Exact rational residues; independent sign and quotient convention |
 | WA-11 | `A_m τ_t = τ_(mt) A_m` on complete source | PROVED PAPER | Exact coordinate algebra; no nontrivial unitary frustration implied |

@@ -10,6 +10,7 @@
     "RH_PROVED": false,
     "WA-01_to_WA-04": "CLASSICAL / SOURCE-SPECIALIZED PAPER PROOFS",
     "WA-05_to_WA-13": "CLASSICAL TOPOLOGICAL INPUTS + EXACT ARITHMETIC CERTIFICATES",
+    "WA-06B": "PROVED ELEMENTARY PRO-KERNEL + SOURCE EXACT TESTS",
     "WA-14_to_WA-15": "PAPER PROOF VIA ARZELA-ASCOLI, NO PRIORITY CLAIM",
     "WA-16_to_WA-17": "CLASSICAL COMPACTNESS + EXACT FINITE FOLNER",
     "Weil_form_identified_with_solenoid_gram": false,
@@ -48,7 +49,12 @@
     ]
   },
   "globalization": {
+    "distinct_prime_2_stage0_after_first_lift": 1,
+    "distinct_prime_2_stage1_persistent": 2,
+    "dyadic_mu2_stage0_after_one_lift": 1,
+    "dyadic_mu2_stage0_before_lift": 2,
     "finite_circle_m6_kernel": 6,
+    "finite_kernel_projections_can_hide_global_kernel": true,
     "inversion_deep_level": 5,
     "inversion_m": 6,
     "inversion_requested_level": 3,

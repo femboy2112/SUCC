@@ -116,6 +116,39 @@ class SourceFlowAndGlobalInverse(unittest.TestCase):
             for t in (F(0),F(2,7),F(-5,3),7,F(23,11)):
                 self.assertTrue(s.compatible_phases(s.real_flow_phases(t,9)))
 
+    def test_pro_kernel_collapse_exact_and_its_false_local_converse(self):
+        # Each finite stage has m distinct roots. In the dyadic global
+        # tower, the bonding map x->2x annihilates the mu_2 kernel.
+        s=dyadic()
+        for n in range(8):
+            self.assertEqual(s.finite_kernel_image_order(n,n,2),2)
+            self.assertEqual(s.finite_kernel_image_order(n,n+1,2),1)
+            self.assertEqual(s.kernel_collapse_depth(n,2),n+1)
+        # Prime p=2 appears just once. The earliest level n=0 sees a
+        # killed 2-kernel, yet a hidden kernel survives beyond n=1!
+        d=TowerLaw('s',0,'basis','distinct_primes')
+        self.assertEqual(d.finite_kernel_image_order(0,1,2),1)
+        for k in range(1,14):
+            self.assertEqual(d.finite_kernel_image_order(1,k,2),2)
+        self.assertEqual(d.dual_kernel_order(2),2)
+        with self.assertRaises(WildTowerError):
+            d.kernel_collapse_depth(1,2)
+
+    def test_global_kernel_iff_every_level_eventually_collapses(self):
+        for s in (factorial(),dyadic(),TowerLaw('s',0,'b','constant',6),
+                  TowerLaw('s',0,'b','distinct_primes')):
+            for m in range(1,40):
+                if s.scale_automorphism(m):
+                    for n in range(5):
+                        k=s.kernel_collapse_depth(n,m)
+                        self.assertEqual(s.finite_kernel_image_order(n,k,m),1)
+                        self.assertGreaterEqual(k,n)
+                else:
+                    # A noninvertible infinite law cannot license a
+                    # global inverse even if the n=0 stage looks unique.
+                    with self.assertRaises(WildTowerError):
+                        s.kernel_collapse_depth(0,m)
+
     def test_local_root_is_not_unique(self):
         s=factorial()
         n=3

@@ -14,7 +14,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from fractions import Fraction as F
-from math import gcd, lcm
+from math import gcd, lcm, isqrt
 from typing import Iterable
 
 
@@ -23,7 +23,7 @@ class WildTowerError(ValueError):
 
 
 def _prime(n: int) -> bool:
-    return type(n) is int and n > 1 and all(n % d for d in range(2, int(n**0.5) + 1))
+    return type(n) is int and n > 1 and all(n % d for d in range(2, isqrt(n) + 1))
 
 
 def _factors(n: int) -> dict[int, int]:
@@ -180,6 +180,26 @@ class TowerLaw:
                 answer *= p**exponent
         return answer
 
+    def finite_kernel_image_order(self, n: int, k: int, m: int) -> int:
+        """Image cardinality of the deeper m-fold circle kernel at level n.
+
+        Every circle stage kernel is mu_m = Z/m. The bonding map from
+        stage k to n is multiplication D_k/D_n on Z/m, with image size
+             m / gcd(m, D_k/D_n).
+        This is exact pro-kernel bookkeeping, NOT an assumption that the
+        coordinatewise kernels are globally compatible free choices.
+        """
+        _factors(m)
+        return m // gcd(m, self.stage_map(n, k))
+
+    def kernel_collapse_depth(self, n: int, m: int) -> int:
+        """Find a deeper stage where the local kernel image is trivial.
+        Such a stage exists for every n iff A_m is a global automorphism.
+        """
+        k = self.inverse_level(n, m)
+        assert self.finite_kernel_image_order(n, k, m) == 1
+        return k
+
     def inverse_level(self, n: int, m: int) -> int:
         """Least deeper coordinate needed for inverse at level n, if legal.
 
@@ -245,7 +265,7 @@ class TowerLaw:
         """
         if self.kind != 'factorial':
             raise WildTowerError('this exact Zhat snake contract uses factorial law')
-        if type(r) is not int or type(stage) is not int or stage < 0 or m < 1:
+        if type(r) is not int or type(stage) is not int or type(m) is not int or stage < 0 or m < 1:
             raise WildTowerError('integer root and stage required')
         if self.D(stage) % m:
             raise WildTowerError('stage does not resolve Zhat/mZhat')

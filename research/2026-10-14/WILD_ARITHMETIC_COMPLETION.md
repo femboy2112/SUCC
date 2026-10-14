@@ -84,6 +84,26 @@ This exponent is an integer. It is compatible across different sufficiently deep
 
 The operation has a source-specific *inversion depth cost* `d(n,m)=min{k−n:m | D_k/D_n}`. The code calculates it and rejects forged coordinates, wrong source/epoch, and noninvertible attempts. For a `p`-solenoid (`q_i=p`), WA-6 simplifies to `y_n=z_{n+1}` for `m=p`. An entire finite stage has `p` possible roots, but the next stage selects the one compatible with the global source.
 
+### WA-06B — recurse into the kernels of the interacting model system (INDEPENDENT ELEMENTARY PROOF)
+
+This is the most direct realization of the user's "model of models of interactions" instruction. For each individual stage, the power map `A_m:S¹→S¹` has **the same nontrivial kernel** `K_{n,m}=μ_m`, `|K_{n,m}|=m`. But the source-indexed *kernel* interaction tower has bonding maps `K_{k,m}→K_{n,m}`, `z→z^(D_k/D_n)`. On identifying `μ_m` with `Z/mZ`, the map is multiplication by `D_k/D_n`; its exact image size is
+
+\[
+\boxed{|\mathrm{im}(K_{k,m}\to K_{n,m})|=
+\frac{m}{\gcd(m,D_k/D_n)}.}
+\tag{WA-6B}
+\]
+
+The actual **global** kernel is `lim← K_{n,m}`, not a free Cartesian product of the finite kernels.
+
+**Direct proof of the global criterion without Pontryagin duality:** If every `p|m` has unbounded `v_p(D_n)`, then for every fixed `n` there exists `k≥n` with `m|D_k/D_n`, so the only level-`n` value compatible with an arbitrarily deep global kernel state is `1`. Therefore every coordinate is `1` and `ker A_m={1}`. Conversely if some `p|m` has bounded `v_p(D_n)`, then beyond the last `p`-divisible bonding factor all maps `μ_p→μ_p` are automorphisms. Choose a nonidentity value at that tail stage; extend it uniquely through every later stage by modular inversion, and extend it to earlier levels by bonding. This constructs a nonidentity coherent element in `ker A_m`. Chinese remaindering over the prime-power components of `μ_m` gives the full cardinality WA-5.
+
+**Surjectivity, also independently finite:** For any target `z∈Σ_q` and each depth `k`, choose *any* `m`th root `y_k` of `z_k`, then propagate it by the bonding maps to produce a compatible length-`k` prefix of roots. The rooted tree of all such prefixes has at most `m` children at every level and nodes at every depth; König's infinity lemma provides a global compatible root tower. Thus `A_m` is always onto. Combining this with the kernel criterion proves WA-4 directly from finite stage/source interactions plus compactness; no zero positions or probability priors occur.
+
+**False-local-converse control:** For the `q_n` consisting of **distinct primes**, take `m=2`. The first bonding map is multiplication `2` and annihilates the projection of `μ_2` to level `0`: the earliest observer falsely sees a trivial kernel. But from level `1` onward no degree is even; `μ_2` survives through all later levels, and the global kernel has two elements. Therefore **a single apparently collapsed finite kernel is not a source-derived global injectivity certificate**. The code checks this exact example and the full theorem on 39 multipliers across four independently defined tail laws.
+
+This is *not* an assertion that inverse limits of arbitrary surjective systems preserve every exact sequence; the surjectivity and finite branching conditions used above are explicit. The new-to-SUCC achievement is to make the meta-level itself (the **kernel of the finite models' interactions**) the proof object instead of relying only on first-level model reports.
+
 ## 3. The factorial SUCC proto-ladder is the universal additive adelic solenoid
 
 Choose `q_n=n+1`: its degree is the *ordinary additive SUCC counter advanced one rung*, and `D_n=(n+1)!`. Every positive integer divides some `D_n`, so
