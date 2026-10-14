@@ -144,3 +144,64 @@ Any recursively higher model that tries to deduce original-source Weil positivit
 5. **Provenance tomography.** Independently audit PR #79 spectral claims, both parent Gaussian branches #74/#76 and the separate concurrent meta-interaction branch. Same-model tests are not an independent theorem witness; distinguish actual source identities from duplicated derived inputs.
 
 **Primary mathematical references:** Masatoshi Suzuki, *Weil's quadratic form via the screw function*, [arXiv:2606.09096v3](https://arxiv.org/html/2606.09096v3), particularly the completed distribution (Introduction), Eq. (1.3) and the continuous compressed operator on \(L_0^2(-a,a)\). DLMF §20.10 on theta and Poisson, §25.4 on zeta reflection. Classical natural join/CSP and sheaf local-to-global compatibility; classical Schur complements; Cauchy estimates, Rouché and the complex argument principle. Parent THETA-JETS PR #78 contains exact coefficient and tail derivations; parent GMS PR #77 contains target-factorization and compactness, and is **not** falsely credited as ancestor of this branch.
+
+
+## 8. A new quantified lamp for the outer complex contour — MCD-10 (PROVED LOCAL, genuine source and elementary bounds)
+
+The preceding theta-jet contour only certifies the existing zero-free inner disk. To reach a large *nontrivially winding* rectangle, it is better to evaluate the **original theta integral itself** rather than extrapolate a polynomial beyond its inherited analytic error budget. We now prove a particularly simple **fully rational complex Simpson remainder theorem** at the first meaningful rectangle height, without reading zeros.
+
+Let \(z=x+iy\) with \(|x|\le1,\ |y|\le16\). In the same authentic source chart as PR #78, write
+\[
+B(z)=\int_1^\infty f_z(t)\,dt,\qquad
+f_z(t)=\psi(t)t^{-3/4}\cosh\!\left(\frac z2\log t\right),\quad
+\psi(t)=\sum_{n=1}^\infty e^{-\pi n^2t}.
+\]
+For \(t\ge1\), rewrite \(f_z(t)\) as half the sum over \(n\ge1\) and \(\alpha_\pm=-3/4\pm z/2\) of \(e^{-\pi n^2t}t^{\alpha_\pm}\). One has \(\Re\alpha_\pm\le-1/4\) and \(|\alpha_\pm|<9\) because \(|z|\le\sqrt{257}<33/2\).
+
+The fourth derivative of one summand obeys the **exact** Leibniz majorant
+\[
+\left|\frac{d^4}{dt^4}
+(e^{-\pi n^2 t}t^{\alpha})\right|
+ \le e^{-\pi n^2t}
+ \sum_{k=0}^4 {4\choose k}(\pi n^2)^{4-k}
+       |\alpha(\alpha-1)\cdots(\alpha-k+1)|
+ \le e^{-3n^2}(4n^2+12)^4.
+\]
+The last inequality uses \(\pi>3,\pi<4\), \(t^{\Re\alpha-k}\le1\), and every factor \(|\alpha-j|<12\).
+
+**A fully rational global sum estimate:** the first \(n=1\) summand is \(<16^4/20\), since the positive 8th-order Taylor partial sum for \(e^3\) is \(20+41/4480>20\). For \(n\ge2\), \(n^2\ge2n\), so
+\[
+e^{-3n^2}(4n^2+12)^4
+ < 16^4 n^8/400^n .
+\]
+Starting at \(n=2\), the ratio is bounded by \((3/2)^8/400\). Therefore
+\[
+\boxed{\sup_{t\ge1,\ |x|\le1,\ |y|\le16}|f_z^{(4)}(t)|
+ \le \frac{16^4}{20}
+       +\frac{16^4(2^8/400^2)}{1-(3/2)^8/400}
+ =\frac{8119566336}{2395975}<3500.}\tag{M10a}
+\]
+
+Composite Simpson quadrature of the **exact full-source integrand** on \(t\in[1,8]\), with **even** M cells, has an error in EACH real and imaginary component bounded by
+\[
+ E_{\rm S}(M)=\frac{3500\,7^5}{180 M^4}.
+\]
+The true omitted analytic tail is
+\[
+ \left|\int_8^\infty f_z(t)dt\right|
+ \le\sum_{n\ge1}\frac{e^{-24n^2}}{3n^2}
+ \le\frac{20^{-8}}{3(1-20^{-8})}=E_T.
+\]
+Since \(|z^2-1/4|\le257+1/4=1029/4\), the source-theta Xi representation \(F(z)=1/2+(z^2-1/4)B(z)\) gives
+\[
+ \boxed{
+ \left|F(z)-\left[\frac12+(z^2-1/4)
+   {\rm Simpson}_M(f_z;[1,8])\right]\right|
+ \le\frac{1029}{2}\left(\frac{3500\,7^5}{180M^4}
+      +\frac{20^{-8}}{3(1-20^{-8})}\right).}\tag{M10b}
+\]
+This inequality is **uniform on the whole declared complex rectangle**, and the exact rational bound for \(M=2048\) is STRICTLY **less than \(1/100000\)**. The 6 independent exact Fraction tests assert the Taylor and geometric inequalities, positive modulus, the \(M^{-4}\) scaling, domain guards and strict threshold. There is no hidden simulated original-zeta zero list.
+
+**Crucial incompleteness:** (M10b) treats Simpson node values of \(f_z(t)\) as **exact mathematical inputs**. The current module \`theta_complex_simpson_bounds.py\` computes **only the analytic quadrature-plus-tail budget**; it does NOT yet construct outward enclosures for the actual real/imaginary Simpson node values, nor does it execute the winding for the proposed outer rectangle. The missing work is a *precision transport step*: original theta modes with rigorously enclosed \(\pi\), the logarithm, sine/cosine/hyperbolic factors and rounding, followed by an independently controlled contour-edge variation bound. A 1e-5 truncation theorem is not itself a 1e-5 certified computation of \(\xi\).
+
+This is a promising **pathway repair** in the user's IdealHard terminology, not a claim that the difficult original-zero locations, RH or full Weil sign have been resolved. Once certified node values and boundary-clearance proof exist, the exact winding machinery in §3 can potentially count zeros on a rectangle that crosses several nontrivial imaginary ordinates. Before that, the number and alignment of those enclosed zeros are **UNVERIFIED** by this new implementation. A bounded count at finitely many heights still does not imply RH.
