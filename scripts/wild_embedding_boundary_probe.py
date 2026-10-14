@@ -32,7 +32,6 @@ def receipt():
     assert (a5["group_order"],a5["distinct_commutators"])==(60,60)
     boundary=b.finite_boundary_certificate()
     assert boundary.full_commutator==b.zero(5,5)
-    assert boundary.norm_square_frobenius_square if False else True
     assert boundary.norm_square_frobenius==2
     assert boundary.leakage_difference_matches and boundary.triple_coherence_zero
     inv=b.unitary_sign_invariance_control()
