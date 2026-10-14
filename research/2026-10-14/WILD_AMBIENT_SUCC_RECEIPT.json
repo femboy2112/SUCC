@@ -1,0 +1,419 @@
+{
+  "RH_proved": false,
+  "alexander_theorem_dependency": {
+    "actual_A5_quotient_via_imported_topology": true,
+    "actual_geometric_horns_constructed": false,
+    "alexander_exterior_H1": "zero",
+    "alexander_exterior_pi1": "nontrivial_perfect",
+    "ambient_equivalence": "obstructed_by_pi1",
+    "commutator_tower_is_classical_exterior_pi1_via_Hatcher": true,
+    "intrinsic": "S2",
+    "physical_A5_probe_realized": false,
+    "standard_exterior_pi1": "trivial",
+    "status": "EXTERNAL_CLASSICAL_NOT_CODE_DERIVED",
+    "theorem_source": "Alexander_1924_Hatcher_ch1_and_Alexander_duality"
+  },
+  "claim_boundaries": {
+    "abstract_group_direct_limit_proved_from_declared_rules": true,
+    "completed_weil_all_test_positive": false,
+    "general_wildness_decider_claimed": false,
+    "new_finite_nonabelian_source_diagnostic": true,
+    "original_weil_Q_identified_with_A5_connection": false,
+    "topological_exterior_source_provenance": "Alexander_1924_and_Hatcher_2B_imported"
+  },
+  "commutator_tower": {
+    "actual_topology_identification": "IMPORTED_HATCHER_P171_172",
+    "direct_limit_perfect_group_proof": "free_product_injection_and_commutator_generation",
+    "finite_stages": [
+      {
+        "abelian_image_zero": true,
+        "expected_word_length": 4,
+        "free_reduced_nonidentity": true,
+        "head": [
+          1,
+          2,
+          -1,
+          -2
+        ],
+        "intrinsic_source": "free_commutator_tower_not_alexander_pi1",
+        "leaf_generators": 2,
+        "stage": 1,
+        "tail": [
+          1,
+          2,
+          -1,
+          -2
+        ],
+        "word_length": 4
+      },
+      {
+        "abelian_image_zero": true,
+        "expected_word_length": 16,
+        "free_reduced_nonidentity": true,
+        "head": [
+          1,
+          2,
+          -1,
+          -2,
+          3,
+          4,
+          -3,
+          -4,
+          2,
+          1,
+          -2,
+          -1
+        ],
+        "intrinsic_source": "free_commutator_tower_not_alexander_pi1",
+        "leaf_generators": 4,
+        "stage": 2,
+        "tail": [
+          3,
+          4,
+          -3,
+          -4,
+          2,
+          1,
+          -2,
+          -1,
+          4,
+          3,
+          -4,
+          -3
+        ],
+        "word_length": 16
+      },
+      {
+        "abelian_image_zero": true,
+        "expected_word_length": 64,
+        "free_reduced_nonidentity": true,
+        "head": [
+          1,
+          2,
+          -1,
+          -2,
+          3,
+          4,
+          -3,
+          -4,
+          2,
+          1,
+          -2,
+          -1
+        ],
+        "intrinsic_source": "free_commutator_tower_not_alexander_pi1",
+        "leaf_generators": 8,
+        "stage": 3,
+        "tail": [
+          5,
+          6,
+          -5,
+          -6,
+          8,
+          7,
+          -8,
+          -7,
+          6,
+          5,
+          -6,
+          -5
+        ],
+        "word_length": 64
+      },
+      {
+        "abelian_image_zero": true,
+        "expected_word_length": 256,
+        "free_reduced_nonidentity": true,
+        "head": [
+          1,
+          2,
+          -1,
+          -2,
+          3,
+          4,
+          -3,
+          -4,
+          2,
+          1,
+          -2,
+          -1
+        ],
+        "intrinsic_source": "free_commutator_tower_not_alexander_pi1",
+        "leaf_generators": 16,
+        "stage": 4,
+        "tail": [
+          9,
+          10,
+          -9,
+          -10,
+          12,
+          11,
+          -12,
+          -11,
+          10,
+          9,
+          -10,
+          -9
+        ],
+        "word_length": 256
+      },
+      {
+        "abelian_image_zero": true,
+        "expected_word_length": 1024,
+        "free_reduced_nonidentity": true,
+        "head": [
+          1,
+          2,
+          -1,
+          -2,
+          3,
+          4,
+          -3,
+          -4,
+          2,
+          1,
+          -2,
+          -1
+        ],
+        "intrinsic_source": "free_commutator_tower_not_alexander_pi1",
+        "leaf_generators": 32,
+        "stage": 5,
+        "tail": [
+          17,
+          18,
+          -17,
+          -18,
+          20,
+          19,
+          -20,
+          -19,
+          18,
+          17,
+          -18,
+          -17
+        ],
+        "word_length": 1024
+      },
+      {
+        "abelian_image_zero": true,
+        "expected_word_length": 4096,
+        "free_reduced_nonidentity": true,
+        "head": [
+          1,
+          2,
+          -1,
+          -2,
+          3,
+          4,
+          -3,
+          -4,
+          2,
+          1,
+          -2,
+          -1
+        ],
+        "intrinsic_source": "free_commutator_tower_not_alexander_pi1",
+        "leaf_generators": 64,
+        "stage": 6,
+        "tail": [
+          33,
+          34,
+          -33,
+          -34,
+          36,
+          35,
+          -36,
+          -35,
+          34,
+          33,
+          -34,
+          -33
+        ],
+        "word_length": 4096
+      }
+    ],
+    "scalar_windings_mod_7": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "exact_PL_linking": {
+    "hopf": {
+      "absolute_linking": 1,
+      "certified_scope": "disjoint_oriented_PL_rectangle_and_square",
+      "crossings": [
+        {
+          "crossing": -1,
+          "edge": 3,
+          "xy": [
+            "0/1",
+            "1/1"
+          ]
+        }
+      ],
+      "disk_orientation": 1,
+      "linking": -1,
+      "source": "wild_ambient_exact_PL_source",
+      "thread_orientation": 1
+    },
+    "orientation_reversed": {
+      "absolute_linking": 1,
+      "certified_scope": "disjoint_oriented_PL_rectangle_and_square",
+      "crossings": [
+        {
+          "crossing": 1,
+          "edge": 3,
+          "xy": [
+            "0/1",
+            "1/1"
+          ]
+        }
+      ],
+      "disk_orientation": 1,
+      "linking": 1,
+      "source": "wild_ambient_exact_PL_source",
+      "thread_orientation": -1
+    },
+    "unlinked": {
+      "absolute_linking": 0,
+      "certified_scope": "disjoint_oriented_PL_rectangle_and_square",
+      "crossings": [],
+      "disk_orientation": 1,
+      "linking": 0,
+      "source": "wild_ambient_exact_PL_source",
+      "thread_orientation": 1
+    }
+  },
+  "frozen_parent": "205ffd020dd2a320eeac70a91a2a2700c969c048",
+  "intrinsic_vs_ambient": {
+    "abelian_complex_phase_distinguishes_alexander_exterior": false,
+    "ambient_difference_is_imported_topology": true,
+    "different_ambient_exterior": true,
+    "homology_H1_distinguishes_alexander_exterior": false,
+    "identical_intrinsic_S2": true,
+    "nonabelian_invariant_needed_to_detect_this_example": true,
+    "topology_implies_Weil_positivity": false
+  },
+  "no_go_controls": {
+    "A5_source_signed_energy": {
+      "connection_energy_nonnegative": true,
+      "fixed_constant_vector": true,
+      "full_Weil_form_identified": false,
+      "group": "A5",
+      "root_nonidentity": true,
+      "source_signed_toy_form": -5
+    },
+    "compressed_flat_matrices": {
+      "compressed_commutator": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "exact_boundary_leakage_identity": true,
+      "full_commutator_zero": true,
+      "nonzero_only_after_compression": true,
+      "projection_commutator_proves_real_wild_embedding": false
+    },
+    "reflection_symmetry_indefinite": {
+      "PSD_forced_by_reflection": false,
+      "Weil_identification": false,
+      "commutes": true,
+      "even_rayleigh": 1,
+      "odd_rayleigh": -1,
+      "reflection_invariant": true
+    }
+  },
+  "nonabelian_A5": {
+    "commutator_candidate_pairs": 3600,
+    "commutator_image_size": 60,
+    "conjugacy_invariant": {
+      "all_60_conjugations_certified": true,
+      "basepoint_change_invariance": "conjugacy_only",
+      "class_detects_nonidentity": true,
+      "identity_trace": 5,
+      "real_world_instrument_authentication": false,
+      "root_trace": 2
+    },
+    "finite_nesting": {
+      "actual_weil_form_positive_proved": false,
+      "all_edge_relations": true,
+      "depth": 6,
+      "independently_verified_geometry": false,
+      "nodes": 127,
+      "per_level_counts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ],
+      "representation_derived_using_imported_Hatcher_pi1_theorem": true,
+      "representation_is_of_abstract_direct_limit": true,
+      "representation_of_actual_alexander_exterior_proved": false,
+      "root": [
+        1,
+        2,
+        0,
+        3,
+        4
+      ],
+      "root_detected": true,
+      "trivial_abelian_character_on_root": true
+    },
+    "group_order": 60,
+    "source_to_arithmetic_Weil_map_constructed": false
+  },
+  "nontrivial_zeta_zero_coordinates_input": false,
+  "other_inverse_system": {
+    "actual_horned_sphere_is_solenoid": false,
+    "dyadic_cohomology_representatives": [
+      "1/1",
+      "1/2",
+      "1/4",
+      "1/8",
+      "1/16",
+      "1/32"
+    ],
+    "monodromy_degree_2_winding_1": {
+      "global_continuous_section_exists": false,
+      "sheet_permutation": [
+        1,
+        0
+      ],
+      "sheets": 2,
+      "trivial": false,
+      "winding": 1
+    },
+    "monodromy_degree_2_winding_2": {
+      "global_continuous_section_exists": false,
+      "sheet_permutation": [
+        0,
+        1
+      ],
+      "sheets": 2,
+      "trivial": true,
+      "winding": 2
+    }
+  },
+  "physical_A5_instrument_executed": false,
+  "physical_horn_geometry_constructed": false,
+  "status": "WILD_AMBIENT_SUCC_EXACT_SOURCE_MODEL"
+}
