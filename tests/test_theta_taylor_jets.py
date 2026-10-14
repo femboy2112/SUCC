@@ -191,6 +191,11 @@ class CertifiedThetaJets(unittest.TestCase):
         self.assertTrue(h['all_past_jets_preserved'])
         self.assertFalse(h['same_original_Euler_germ'])
 
+    def test_frozen_receipt_is_json_roundtrip_stable(self):
+        import json
+        raw=receipt()
+        self.assertEqual(json.loads(json.dumps(raw,sort_keys=True)),raw)
+
     def test_plato_cave_does_not_imply_weil_sign(self):
         r=receipt()
         self.assertTrue(r['rouche_radius_11_over_2']['certified_zero_free'])

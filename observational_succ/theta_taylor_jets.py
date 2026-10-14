@@ -461,7 +461,7 @@ def receipt():
             'both_strictly_positive_certified':hankel['both_strictly_positive_certified'],
             'completed_Weil_PSD_proved':False},
         'off_critical_finite_shadow_impostor':{
-            k:str(v) if isinstance(v,Q) else v
+            k:str(v) if isinstance(v,Q) else list(v) if isinstance(v,tuple) else v
             for k,v in fake_offline_zero_with_same_early_jets(data).items()},
         'positive_shadow_alias':{
             'shared_m0_m1':[str(x) for x in positive_shadow_countermodel()['shared_m0_m1']],

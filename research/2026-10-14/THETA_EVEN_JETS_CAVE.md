@@ -213,7 +213,7 @@ The finite positivity test on the true source **cannot** imply RH. The sibling I
 
 ## Validation and literature boundary
 
-- `python -m unittest discover -s tests -p test_theta_taylor_jets.py -v` — **23 new local exact tests passed** on the isolated newly-authored module.
+- `python -m unittest discover -s tests -p test_theta_taylor_jets.py -v` — **24 new local exact tests passed** on the isolated newly-authored module.
 - `python scripts/theta_taylor_jets_probe.py --verify research/2026-10-14/THETA_EVEN_JETS_RECEIPT.json` — exact deterministic replay.
 - `python scripts/theta_jet_independent_oracle.py` — separate 65-digit mpmath integral and xi-value holdouts, no zeros. **Not part of proof.**
 - SHA-1 `git hash-object` match for each published GitHub blob required before commit.
