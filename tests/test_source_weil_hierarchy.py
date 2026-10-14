@@ -81,6 +81,20 @@ class SourceRationalTests(unittest.TestCase):
         ):
             with self.assertRaises(h.WeilHierarchyError):fn()
 
+
+    def test_cache_source_type_alias_does_not_launder_float(self):
+        # Before the fix, lru_cache hashed Fraction(1,2) == float(.5) and
+        # returned the exact result without invoking its source type gate.
+        h.log_iv(Q(1,2));h.exp_pos(Q(1,2))
+        h.screw_interval(Q(1,2),3);h.stage(Q(1,2),3,3)
+        for bad in (
+            lambda:h.log_iv(0.5),
+            lambda:h.exp_pos(0.5),
+            lambda:h.screw_interval(0.5,3),
+            lambda:h.stage(0.5,3,3),
+        ):
+            with self.assertRaises(h.WeilHierarchyError):bad()
+
     def test_sqrt_inverse(self):
         x=h.sqrt_inverse(2)
         self.assertLessEqual(x.lo*x.lo*2,1)
