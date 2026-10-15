@@ -423,3 +423,53 @@ def prime_packet_low_moment_rank(n: int = 2, rank: int = 30) -> dict:
             "uniform_inverse_moment_norm_bound_supplied":False,
             "original_Legendre_low_Schur_sign_proved":False,
             "RH_proved":False}
+
+
+
+def true_prime2_coupled_thirty_moment_witness(power: int = 34) -> dict:
+    """Exact rational finite-smooth witness for PR107 HIGH and p2-active E.
+
+    On t∈(0,delta), phi=t^power(delta-t)^power, delta=1/64.
+    Let f0=D^30 phi (zero extension), and f1(t)=f0(t-log2)
+    on the second source packet. power>=34 => f0 is C³ globally,
+    hence H0¹; f0 has moments 0..29 by exact 30 integrations by
+    parts. Both packet translates inherit these 30 moment nulls
+    for ANY absolute x origin; therefore u=i(f0+f1)' has ZERO
+    projection onto authentic low Legendre modes 1..30.
+    The original n=2 shift overlap equals ||f0||²>0.
+    Source domain gives >3/5 ||f||², while independent PR107's
+    κ=369/10000 high inequality is a separate known statement.
+    Finite polynomial is not Cc∞; smooth approximations preserve
+    intended source domain, and direct H0¹ extension is certified.
+    """
+    if type(power) is not int or not 34<=power<=45:
+        raise PrimeDomainError("Exact high moment witness requires 34<=power<=45")
+    from math import comb
+    packet=prime_two_pair_packet_domain()
+    delta=packet["base_U"][1]-packet["base_U"][0]
+    vals=tuple([F()]*power+[F((-1)**k*comb(power,k))*delta**(power-k)
+                               for k in range(power+1)])
+    for _ in range(30):
+        vals=tuple((i+1)*vals[i+1] for i in range(len(vals)-1))
+    moments=tuple(sum((v*delta**(i+k+1)/F(i+k+1)
+                       for i,v in enumerate(vals)), F()) for k in range(30))
+    if any(moments):
+        raise ArithmeticError("Original source compact 30-moment annihilator failed")
+    norm=sum((vals[i]*vals[j]*delta**(i+j+1)/F(i+j+1)
+              for i in range(len(vals)) for j in range(len(vals))),F())
+    if norm<=0:
+        raise ArithmeticError("30-high true-p2 packet witness has zero norm")
+    return {"power":power,"derivative_order":30,
+            "one_packet_support_length":delta,
+            "vanishing_moments_0_to_29":True,
+            "original_low_Legendre_1_to_30_zero":True,
+            "one_packet_L2_squared":norm,
+            "two_packet_L2_squared":2*norm,
+            "genuine_prime2_translation_overlap":norm,
+            "actual_prime_overlap_ratio":F(1,2),
+            "polynomial_is_Cc_infinity":False,
+            "zero_extended_polynomial_C3_or_better":True,
+            "signed_Weil_source_packet_L2_floor":F(3,5),
+            "PR107_high_sector_kappa_for_original_amw":F(369,10000),
+            "PR107_full_low_schur_sign_proved":False,
+            "RH_proved":False}
