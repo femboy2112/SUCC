@@ -263,3 +263,46 @@ is a genuine, source-justified **positive Hilbert feature** satisfying
 The construction is abstract Hilbert completion, not a closed-form executable formula for the contraction. It follows from the independent original-source proof, so it is not circular. The K4 contraction remains UNVERIFIED for larger prime-active intervals and all a>0, which is the actual RH-hard obligation.
 
 **Reproduce:** exact SHA original constant/source checks in authentic_small_window_brownian_coercivity and authentic_sharp_small_window_hilbert_factor; tests in ApolloFullSmallIntervalPositiveKernel and ApolloUniformAuthenticPositiveHilbertFactorTests. These checks do not enumerate infinitely many point sets; the universal quantifiers are justified by the Fourier/Schur/Cauchy derivation above, while code verifies the finite rational inequalities and source preconditions. Full original Weil positivity, RH, academic novelty and global Connes spectral realization are NOT proved.
+
+
+## K7. Genuine completed Weil L2 coercivity on the whole small-test domain
+
+K6 proves authentic K_g >= (1/100) B in positive-kernel order on every finite point family in [-a,a], for 0<a<=1/12. Because the kernels are continuous, this finite-set positivity passes to integrals against ANY compactly supported smooth complex density by uniform Riemann approximation. In particular apply it to the derivative f'(x) of a compact smooth test f∈C_c^infinity(-a,a).
+
+The already source-identified mixed distributional second derivative is
+\[
+\partial_x\partial_y K_g(x,y)=W_\zeta(x-y),
+\qquad
+\partial_x\partial_y B(x,y)=\delta(x-y).
+\]
+Twice integrating by parts against f(x)conjugate(f(y)) (all boundary terms vanish) gives the full ORIGINAL completed signed Weil form:
+\[
+Q_\zeta(f)=W_\zeta(f*\widetilde f)
+=\iint K_g(x,y)f'(x)\overline{f'(y)}\,dx\,dy,
+\]
+and the Brownian identity yields
+\[
+\iint B(x,y)f'(x)\overline{f'(y)}\,dx\,dy
+=\int_{-a}^a |f(x)|^2\,dx.
+\]
+Therefore **for every complex smooth compact admissible test on the certified original zeta interval**
+\[
+\boxed{
+Q_\zeta(f)\ge \frac1{100}\|f\|_{L^2(-a,a)}^2
+\quad\forall f\in C_c^\infty(-a,a),\quad0<a\le1/12.
+}\tag{K7}
+\]
+This is the exact, correctly sourced Weil positivity inequality WITH a uniform L2 margin on that **restricted domain**, not a generic covariance and not a finite numerical sample. It retains source true pole, one Gamma, contact and all (in this window inactive) genuine prime places. It does not extend to a general a or RH; later prime-active intervals remain the hard problem.
+
+The result is compatible with Suzuki's compact screw-derivative operator no-fixed-L2-gap warning because the compact operator lives on a DIFFERENT u=v' Hilbert coordinate; K7's positive lower bound is in the original Weil test f norm, not a uniform coercivity assertion about the compact G operator on all its u modes.
+
+**Independent exact weak-derivative control:** choose a finitely smooth polynomial f(x)=x^m(a-x)^m on [0,a], zero elsewhere, m>=4. By the Brownian indicator representation for x,y>=0,
+\[
+\iint B(x,y)f'(x)f'(y)\,dxdy
+=\int_0^a\left[\int_t^a f'(x)dx\right]^2dt
+=\int_0^a f(t)^2dt
+=a^{4m+1}\frac{((2m)!)^2}{(4m+1)!}.
+\]
+The code computes the RHS independently by exact Fraction coefficient convolution/integration and factorial Beta evaluation; it is not passed off as a global Cc-infinity proof or as a numerical signed Weil evaluation. The universal K7 proof is the above distributional identity and source-derived K6 bound.
+
+**Claim K7: PROVED ANALYTIC on the declared original-source small domain, academic priority UNVERIFIED, RH PROVED: NO.** The K7 code functions simply certify original source rational hypotheses and an independent finite Brownian algebra control; they do not run an impossible exhaustive enumeration of all compact tests.
