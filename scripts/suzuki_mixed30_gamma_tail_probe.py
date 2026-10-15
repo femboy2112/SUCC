@@ -13,6 +13,7 @@ from observational_succ.suzuki_mixed30_gamma_tail import (
     gamma_mixed_spectral_tail,true_mixed_legendre_tail_bound,
     authentic_infinite_gamma_mixed_rows,
     completed_mixed_gamma_two_stage_intersection,
+    original_completed_first_mixed_negative_source,
 )
 
 
@@ -25,7 +26,17 @@ def main():
     assert not both["original_low_Schur_sign_proved"]
     assert gamma_mixed_spectral_tail(16)<gamma_mixed_spectral_tail(8)
     first=low.completed_matrix_enclosures[0][0]
+    strict=original_completed_first_mixed_negative_source(64)
+    true_lo,true_hi=strict["intersection_rigorous_negative"]
+    assert true_hi<0 and strict["source_first_mixed_M11_strictly_negative"]
+    assert strict["not_original_Weil_quadratic_eigenvalue"]
     value={
+        "true_completed_original_M11_signed_negative":True,
+        "true_completed_original_M11_enclosure":[str(true_lo),str(true_hi)],
+        "true_completed_original_M11_independent_flux_enclosure":[
+            str(x) for x in strict["independent_original_flux_identity_interval"]],
+        "true_completed_original_M11_Gamma_J":64,
+        "true_completed_original_M11_is_NOT_Weil_eigenvalue":True,
         "operation":"TRUE_SUZUKI_30MODE_MIXED_GAMMA_TAIL",
         "original_source_blob":low.original_source_blob,
         "source":"SHA_PINNED_AUTHENTIC_COMPLETED_ZETA_SUZUKI",
