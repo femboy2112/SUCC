@@ -11,7 +11,8 @@ from observational_succ.tate_observer_completion import (
     local_tate_fourier, tate_local_inversion_and_parseval,
     refine_local_precision, refine_local_support,
     local_padic_real_boundary_no_go, exact_local_biaxial_diamond,
-    exact_crt_product_fourier,
+    exact_crt_product_fourier,diagonal_rational_additive_character,
+    crt_three_prime_fourier,
 )
 from observational_succ.finite_fourier_carrier import CyclotomicElement
 
@@ -253,6 +254,66 @@ class RecursiveTwoDimensionalObserverCoherenceTests(unittest.TestCase):
         ):
             with self.assertRaises(AtomicDescentError):
                 exact_crt_product_fourier(*args)
+
+
+
+class GlobalTateDiagonalCharacterAndThreePrimeControls(unittest.TestCase):
+    def test_all_genuine_finite_additive_places_cancel_real_character_exactly(self):
+        for a,b in ((1,1),(-1,1),(1,6),(-1,6),(5,12),(7,45),
+                    (11,120),(-5,84),(17,999),(1,2),(1,5),
+                    (2,3),(0,12),(1000,64)):
+            r=diagonal_rational_additive_character(a,b)
+            self.assertTrue(r["exact_global_product_character_is_one"])
+            self.assertTrue(r["real_and_finite_phase_orientations_opposite"])
+            self.assertEqual(r["total_global_phase_integer"]%1,0)
+            self.assertFalse(r["global_adelic_Poisson_not_proved"] is False)
+            self.assertFalse(r["RH_proved"])
+        p=diagonal_rational_additive_character(1,6)
+        self.assertEqual(p["prime_place_local_fractions"],
+                         ((2,2,"1/2"),(3,3,"2/3")))
+        self.assertEqual(p["real_phase_exponent"],Q(-1,6))
+        self.assertEqual(p["finite_phase_exponent"],Q(7,6))
+        self.assertEqual(p["total_global_phase_integer"],1)
+
+    def test_missing_prime_or_reversed_real_sign_creates_genuine_phase_defect(self):
+        v=diagonal_rational_additive_character(1,6)
+        # Wrong real sign: would be exp(+2pi iq), not the declared Tate one.
+        reversed_total=v["finite_phase_exponent"]-v["real_phase_exponent"]
+        self.assertNotEqual(reversed_total.denominator,1)
+        # Omitting the 3-local p-adic fractional part is likewise unlawful.
+        lost=Q(1,2)+v["real_phase_exponent"]
+        self.assertNotEqual(lost.denominator,1)
+        for bad in ((True,6),(1,True),(1,0),(1,-3),(0,1000001),(1000001,2)):
+            with self.assertRaises(AtomicDescentError):
+                diagonal_rational_additive_character(*bad)
+
+    def test_three_genuine_prime_observers_have_one_global_CRT_phase(self):
+        factors=((2,(1,-1)),(3,(2,0,-1)),(5,(1,0,2,-2,3)))
+        vals={}
+        for ordering in (
+            factors,
+            (factors[1],factors[2],factors[0]),
+            (factors[2],factors[0],factors[1]),
+        ):
+            result=crt_three_prime_fourier(ordering)
+            self.assertTrue(result["all_three_source_Fourier_tensor_square_commutes"])
+            self.assertEqual(result["joint_observation_modulus"],30)
+            self.assertEqual(result["global_dual_frequencies_verified"],30)
+            self.assertFalse(result["global_adelic_Poisson_proved"])
+            self.assertFalse(result["RH_proved"])
+            vals[result["primes"]]=result["dual_CRT_inverse_transports"]
+        self.assertEqual(vals[(2,3,5)],(1,2,2))
+        self.assertEqual(vals[(3,5,2)],(2,2,1))
+
+    def test_ghost_composite_prime_and_untyped_source_are_rejected(self):
+        for f in (
+            ((2,(1,1)),(3,(1,0,0)),(3,(0,1,0))),
+            ((6,(1,)*6),(3,(1,)*3),(5,(1,)*5)),
+            ((2,(1,1)),(3,(1,2,3)),(7,(1,)*7)),
+            ((2,(1,1)),(3,(1,0.25,3)),(5,(1,)*5)),
+        ):
+            with self.assertRaises(AtomicDescentError):
+                crt_three_prime_fourier(f)
 
 
 def _conj_example(z:CyclotomicElement)->CyclotomicElement:
