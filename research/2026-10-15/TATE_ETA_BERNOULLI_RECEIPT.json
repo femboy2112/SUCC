@@ -1,5 +1,5 @@
 {
-  "schema": "SUCC_TATE_ETA_BERNOULLI_2026_10_15_v1",
+  "schema": "SUCC_TATE_ETA_BERNOULLI_2026_10_15_v2",
   "status": "CANONICAL_MODULAR_BRIDGE_NOT_RH",
   "bernoulli": {
     "zeta_minus_one": "-1/12",
@@ -53,6 +53,34 @@
     "original_Weil_archimedean": "pi^(-s/2)*Gamma(s/2)",
     "full_Weil_identification": false,
     "source_derived_all_test_positivity": false,
+    "RH_proved": false
+  },
+  "two_track_firewall": {
+    "Delta_cusp_coefficients_q1_through_q6": [
+      1,
+      -24,
+      252,
+      -1472,
+      4830,
+      -6048
+    ],
+    "Delta_q_log_derivative_coefficients_constant_to_q6": [
+      1,
+      -24,
+      -72,
+      -96,
+      -168,
+      -144,
+      -288
+    ],
+    "E2_source_is_not_Ramanujan_tau_source": true,
+    "completed_shifted_object": "xi(s)*xi(s-1)",
+    "completed_shifted_functional_equation": "X(2-s)=X(s)",
+    "conditional_two_critical_tracks": [
+      "1/2",
+      "3/2"
+    ],
+    "nontrivial_zero_locations_used": false,
     "RH_proved": false
   }
 }
