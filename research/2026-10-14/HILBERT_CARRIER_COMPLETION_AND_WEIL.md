@@ -188,3 +188,56 @@ Files:
 - \`docs/CLAIM_SUPPLEMENT_HILBERT_CARRIER.md\` and dedicated Python 3.10/3.13 CI + inherited genuine Weil focused regressions + original immutable provenance.
 
 This project **does not claim** construction of a physical sensor, scholarly priority, a globally smooth inverse, constructive sheaf-local global section, precise physical resource law or proof of RH. Full main suite and Lean kernel CI are separate from the dedicated feature workflow.
+
+
+## 6a. Full genuine finite-J signed Suzuki *cell integrals* with NO midpoint interpolation — HC-09 (PROVED LOCAL using classical elementary antiderivatives)
+
+A consequential mathematical extension of the source-first Hilbert traversal is that **the actual finite-J signed Suzuki kernel can be integrated over any rational rectangular cell exactly up to certified transcendental-constant enclosures**, without sampling \(g_J\) at a center and extrapolating across its kinks. The finite compressed matrix is an exact Galerkin object, not a midpoint surrogate.
+
+Let \(x\in[x_0,x_1]\), \(y\in[y_0,y_1]\). Define
+\[
+ F_b(x_0,x_1;y_0,y_1)=
+ \frac{(x_1-y_0-b)_+^3-(x_0-y_0-b)_+^3
+       -(x_1-y_1-b)_+^3+(x_0-y_1-b)_+^3}{6}.
+\tag{HC10}
+\]
+By two elementary integrations,
+\(\iint(x-y-b)_+\,dx\,dy=F_b\), hence
+\[
+\boxed{\iint(|x-y|-b)_+\,dx\,dy
+       =F_b(x_0,x_1;y_0,y_1)+F_b(y_0,y_1;x_0,x_1).}\tag{HC11}
+\]
+No smoothness restriction or "do not cross a prime-wavefront" assumption is needed. The formula **already handles the hinge exactly**. For genuine \(n=p^r\), substitute \(b=\log n\) and multiply by **exact source weight** \(w_n=\log p/\sqrt n\). Original SUCC \`source_weil_hierarchy.log_iv\` and \`sqrt_inverse\` provide rigorous outward rational intervals; because the entire hinge integral decreases monotonically in b, \([\log n]^-,[\log n]^+\) give source-certified rational lower/upper integrals with **zero spatial quadrature error**. Fake composite 6 is rejected, as are inactivated prime powers outside the window. This is the classical truncated-power/B-spline antiderivative mechanism, not novel calculus.
+
+**The original Gamma integral ALSO has a closed source form, including the diagonal.** For \(\alpha>0\) define
+\[
+ A_\alpha(t)=
+ \begin{cases}
+  [e^{-\alpha t}-1+\alpha t]/\alpha^2,&t>0,\\
+  0,&t\le0.
+ \end{cases}
+\]
+Then \(A_\alpha''(t)=e^{-\alpha t}\mathbf1_{t>0}\) as a locally integrable distribution, with no delta artifact because \(A_\alpha(0)=A_\alpha'(0)=0\). Thus the same four-corner difference as HC10, with \(A_\alpha\) in place of \((t)_+^3/6\), plus its exchanged x/y rectangle, gives
+\[
+\boxed{\iint e^{-\alpha|x-y|}\,dx\,dy}
+\tag{HC12}
+\]
+on every genuine rational cell (even a cell crossing \(x=y\)). Each finite original Suzuki Gamma rung
+\(-4(1-e^{-(4j+1)|x-y|/2})/(4j+1)^2\)
+therefore has an **exact cell integral**, enclosed by outward \(\exp\)-intervals. The authentic original pole
+\(-4(e^{(x-y)/2}+e^{-(x-y)/2}-2)\)
+integrates by separable exponentials; the original contact \(C_G|x-y|/2\) integrates via HC11 at b=0. Every term of \`source_weil_hierarchy.screw_interval\` is retained, with correct signs and one original real Gamma ladder. This construction is implemented by
+\`observational_succ/hilbert_suzuki_cell_integrals.py\`.
+
+For equal-width interval cells \(I_i,I_j\) with h=2a/N, the original \(\ell^2\)-normalized **finite projection** entry is
+\[
+ \boxed{\langle e_i,G_{a,J}e_j\rangle
+       =h^{-1}\int_{I_i}\int_{I_j}g_J(x-y)\,dx\,dy.}\tag{HC13}
+\]
+The source engine returns a rigorous exact-rational **interval enclosure** for every such matrix entry and visits the complete N² array in Hilbert order without changing any signs or sources. The **spatial quadrature error of the finite projected block is identically zero**; only outward transcendental interval uncertainty remains. A separate independent original \`stage(a,J,N)\` midpoint matrix must agree *within its established \(h^2 L_J+h\eta\) bound*. An independent high-precision **numerical holdout**, not used as proof authority, checks the actual original \`signed_suzuki_g\` integrated against a triangular cell-pair geometry.
+
+**Load-bearing distinction:** \(P_NG_{a,J}P_N\) still differs from the full compact operator \(G_{a,J}\) on all mean-zero L² directions. **No claim that \(\|G_{a,J}-P_NG_{a,J}P_N\|=0\)** follows from eliminating *midpoint quadrature error*. The original globally sourced projection and positive Gamma-tail bounds remain necessary. Nor does the finite compressed operator's sign prove the all-test signed Weil form.
+
+**Actual next computational experiment:** Couple these interval-exact original Galerkin entries with the proper mean-zero contrast basis and parity modes; certify finite Schur blocks with **validated original** high cross/resolvent enclosures. Compare their widths and resulting \(\lambda\)-gates with main \`suzuki_moment_schur.py\`'s already superior direct analytic 30-mode low Legendre formulas. Any improvement must be demonstrated, not presumed from Hilbert ordering. The source engine is deliberately budgeted to small N and finite J; it has **not** constructed the authentic complete zero-shift Schur matrix.
+
+**Adversarial findings retained:** a prime-only spatial quadtree misses the ORIGINAL \(x=y\) Gamma/contact singular locus; HC-08 includes it. At coarse k=2, a fully source-aware adaptive atlas can have **all 16** cells, so "adaptive beats uniform at every finite resolution" is **REFUTED**; only the asymptotic O(N) transition-cell theorem and measured high-k reductions are asserted. Exact antiderivative integration avoids the prime/Gamma kink crossing issue without needing adaptive refinement at all. This means adaptive Hilbert ordering's incremental value is **visit scheduling and possible efficient hierarchical compression**, not a source-sign or integration-accuracy shortcut when full analytic primitives already exist.
