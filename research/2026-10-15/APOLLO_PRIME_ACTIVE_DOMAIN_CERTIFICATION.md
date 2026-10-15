@@ -271,3 +271,36 @@ So the high subspace and the APOLLO **genuinely prime-active** packet Hilbert do
 **Executable exact Fraction receipt:** expand \(\phi=t^q(\delta-t)^q\) in the polynomial basis, differentiate 30 times exactly, verify 30 vanishing rational integrals and a strictly positive exact polynomial L² norm. The translation overlap equals this same exact L² norm by support geometry, without evaluating log2 numerically. This finite C³ control does not replace the analytic Cc-infinity theorem, and neither bound determines PR #107's low Schur matrix.
 
 **Verdict:** PROVED LOCAL high-sector / prime-coupling intersection, with an exact rational polynomial calibration; original low 30 Schur positivity remains UNVERIFIED.
+
+
+## 8b. A genuinely source-identified LOW-to-activated-prime cross term (exact rational lower)
+
+To go beyond declaring that low moments are reachable, choose the first normalized Legendre mode at a=1/2:
+\[
+u_1(x)=2\sqrt3\,x\quad (-1/2<x<1/2),\qquad
+v_1(x)=\int_{-1/2}^x u_1(t)dt=\sqrt3(x^2-1/4).
+\]
+This is exactly PR #107's low Neumann primitive (up to its harmless i-phase). Let U=(-7/16,-7/16+1/64), b=log2 (genuine), and for any integer q>=4 let f=f0+f1 with \(f_0(t)=s^q(\delta-s)^q\) for s=t−left(U), 0<s<δ, and \(f_1(t)=f_0(t-b)\) in U+b. This zero-extended polynomial is at least C³ and in H0¹(E2); the source-signed form extends to this domain. There are also smooth positive test approximants.
+
+The **PRIME-ONLY** original source cross term is, by polarization of the negative true n=2 translation,
+\[
+Q_2(v_1,f)=-w_2\{\langle T_b v_1,f\rangle+
+                 \langle v_1,T_b f\rangle\}
+=-w_2\sqrt3\int_U
+\big[(t+b)^2+t^2-\tfrac12\big]f_0(t)dt.
+\tag{S8-prime-cross}
+\]
+No other original prime is active at a=1/2. Exact original log intervals prove \(0<t+b<3/10\) on U, and \(|t|<7/16\). Hence the square bracket is strictly smaller than
+\[
+-c_*=-\left(\frac12-\frac{49}{256}-\frac9{100}\right)<0.
+\]
+Since the original half-density weight \(w_2=\log2/\sqrt2\) has a strictly positive source-certified Fraction lower \(\underline w_2\), and \(\sqrt3>1\), we obtain the exact **strict rational lower**
+\[
+\boxed{Q_2(v_1,f)>
+\underline w_2 c_*
+\delta^{2q+1}\frac{(q!)^2}{(2q+1)!}>0.}
+\tag{S8-cross-cert}
+\]
+The original-source coefficient interval is authenticated by the same pinned source as the previous theorem; no zeta zeros, source-blind Gram fitting or numerical quadrature is used.
+
+This is a real source-specific LOW-to-prime-coupled cross **COMPONENT**, exactly of the type PR #107's complete 30-low residual will need. It **does not certify the total completed signed Weil bilinear** Q_zeta(v1,f): the genuine Gamma/contact/pole pieces may offset the prime term. It does not certify any eigenvalue, sign of A, or low shorting. The true remainder is now a concrete cross-integral target, not an abstract plea for more positivity.
