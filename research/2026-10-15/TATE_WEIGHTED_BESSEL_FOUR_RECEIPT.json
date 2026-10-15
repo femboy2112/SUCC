@@ -1,0 +1,51 @@
+{
+  "schema": "SUCC_TATE_WEIGHTED_BESSEL_FOUR_2026_10_15_v1",
+  "source": "SHA_PINNED_ORIGINAL_ZETA_TATE_WEIL_SUZUKI",
+  "original_suzuki_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "radius": "1/2",
+  "genuine_prime_power_labels": [
+    2
+  ],
+  "four_vanishing_polynomial_test_moments": true,
+  "original_real_Gamma_modes": 128,
+  "weighted_Fourier_boundary": "13",
+  "exact_Gamma_multiplier_greater_than": "6097/1000",
+  "weighted_Bessel_loss_strictly_below": "2013/10000",
+  "rigorous_angular_modes": [
+    4,
+    15
+  ],
+  "rigorous_spherical_Bessel_series_order": 12,
+  "exact_frequency_cells": 96,
+  "Young_square_slack": "1/1000",
+  "missing_all_angular_modes_included": true,
+  "negative_sinh_polar_residual_strictly_below": "1/1000000",
+  "original_contact_plus_prime2_strictly_below": "47/8",
+  "elementary_source_bound": "20699/1000000",
+  "true_original_completed_Weil_L2_coercivity_strictly_above": "1/50",
+  "original_source_Gamma_loss_gap_sha256": "3bf2ddfaa032fd93768204fe48ba201211e1e743402467fb419fde20cf76c765",
+  "original_Suzuki_low": {
+    "low_4_modes": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "low_dimension": 4,
+    "reflection_parity_blocks": [
+      2,
+      2
+    ],
+    "original_high_K_relative_bound": "1/50",
+    "Neumann_inverse_primitive": "V*V=(-Delta_N)^-1 on meanzero derivative u",
+    "original_low_high_K_cross_rank": 2,
+    "true_zero_shift_R0_strict_upper": "121/32",
+    "actual_low_S0_PSD_proved": false,
+    "full_first_prime_all_test_positive_proved": false
+  },
+  "previous_rank_seven_high_K_relative_bound": "1/16",
+  "rank_three_proof_failure_is_NOT_an_original_negative_test": true,
+  "nontrivial_zeta_zero_positions_as_source_inputs": false,
+  "all_radii_low_sign_proved": false,
+  "RH_proved": false
+}
