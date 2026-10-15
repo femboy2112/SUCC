@@ -11,6 +11,7 @@ from observational_succ.tate_lattice_descent import (
     RationalSChart, TateLatticeError, character_naturality,
     finite_depth_alias, prime_atlas, s_integer, s_modulus_receipt, s_unit,
     successor_history_kernel, prime_extension_obstruction,
+    reversibility_descent_obstruction,
 )
 
 
@@ -219,6 +220,35 @@ class NonsplitPrimeExtensionTests(unittest.TestCase):
         self.assertEqual(r['dual_torsion_witness'], F(1, 5))
         self.assertFalse(s_integer(F(1, 5), ()))
         self.assertTrue(s_integer(F(1, 5), (5,)))
+
+
+class ReversibilityDescentTests(unittest.TestCase):
+    def test_reversible_on_big_atlas_only(self):
+        for S, p in (((), 2), ((2,), 3), ((2, 3), 5), ((3, 5), 2)):
+            receipt = reversibility_descent_obstruction(S, p)
+            self.assertTrue(receipt['large_map_reversible'])
+            self.assertFalse(receipt['inverse_exists_on_S'])
+            self.assertEqual(receipt['cover_degree_at_S'], p)
+            self.assertEqual(receipt['automorphism_degree_at_T'], 1)
+            self.assertTrue(receipt['lost_observer_class_survives_in_T_kernel_fiber'])
+
+    def test_inverse_at_smaller_atlas_rejected(self):
+        x = RationalSChart((2, 3), F(1, 5), (F(1, 5), F(1, 5)))
+        with self.assertRaises(TateLatticeError):
+            x.scale(F(1, 5))
+        with self.assertRaises(TateLatticeError):
+            x.scale(5, require_automorphism=True)
+        self.assertTrue(x.scale(5).equivalent(RationalSChart((2, 3), 0, (0, 0))))
+        with self.assertRaises(TateLatticeError):
+            reversibility_descent_obstruction((2, 3), 3)
+
+    def test_scaling_naturality_all_finite_tower_levels(self):
+        T = (2, 3, 5)
+        x = RationalSChart(T, F(17, 25), (F(3, 8), F(7, 27), F(-4, 125)))
+        for S in ((), (2,), (3,), (2, 3), T):
+            for q in (-1, 2, 3, 5, 6, 15):
+                self.assertTrue(x.scale(q).project(S).equivalent(
+                    x.project(S).scale(q)))
 
 
 if __name__ == '__main__':
