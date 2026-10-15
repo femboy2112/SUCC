@@ -386,6 +386,86 @@ def completed_two_critical_track_passport() -> dict:
     }
 
 
+def mobius_exact(n:int) -> int:
+    """True integer Möbius mu(n), no unknown source labels."""
+    val=_valuation(n)
+    if any(e>1 for e in val.values()):
+        return 0
+    return -1 if len(val)%2 else 1
+
+
+def eta_mobius_heat_transducer(N:int=128, fake_six:bool=False) -> dict:
+    """A DIRECT positive-output signed Möbius transducer in heat time.
+
+    F(t)=sum sigma1(n)e^(-nt) is the eta logarithmic divisor heat current.
+    T_mu F(t)=sum_{m>=1} mu(m)*m*F(m*t).
+    By sigma1 * (mu*id) = 1 exactly, this equals
+          H(t)=sum_{n>=1}e^(-nt)=1/(e^t-1)  for every t>0.
+    Absolute convergence at each t>0 follows from exponential bounds,
+    independent of any zeta zero positions.  Source weights include SIGNS;
+    positive output does not assert T_mu is a positive operator on all F.
+    """
+    if type(N) is not int or not 6<=N<=512:
+        raise EtaTransportError("Finite source coefficients horizon 6..512 required")
+    if type(fake_six) is not bool:
+        raise EtaTransportError("Explicit fake-six boolean mutation required")
+    coeff=[]
+    for n in range(1,N+1):
+        sig=sigma_one(n)+(1 if fake_six and n==6 else 0)
+        # We must mutate sigma1(6) WITHIN every divisor convolution term,
+        # not just the n=6 endpoint.  See inner loop below.
+        r=sum(mobius_exact(d)*d*
+              (sigma_one(n//d)+(1 if fake_six and n//d==6 else 0))
+              for d in _divisors(n))
+        coeff.append(r)
+    wrong=tuple(n for n,c in enumerate(coeff,1) if c!=1)
+    if not fake_six and wrong:
+        raise ArithmeticError("Eta/Möbius exact original heat transducer failed")
+    if fake_six and (6 not in wrong or coeff[5]!=2):
+        raise ArithmeticError("Composite-six mutant did not produce heat-source defect")
+    return {
+        "source":"ORIGINAL_DIVISOR_SIGMA1" if not fake_six else "FORGED_SIGMA1_AT_SIX",
+        "source_horizon":N,
+        "positive_output_coefficients":tuple(coeff),
+        "wrong_coefficient_indices":wrong,
+        "exact_heat_identity":not wrong,
+        "heat_output":"sum_n exp(-n*t) = 1/(exp(t)-1) for t>0",
+        "original_mellin_after_cancellation":"Gamma(s)*zeta(s) for Re(s)>1",
+        "operator_has_signed_Mobius_weights":True,
+        "source_positive_operator_on_every_positive_input_proved":False,
+        "Gaussian_real_place_positivity_preserved":False,
+        "RH_proved":False,
+    }
+
+
+def gaussian_linear_heat_positive_mixing_no_go() -> dict:
+    """Sharp no-go: NO source-blind positive Laplace mixing to Gaussian n^2.
+
+    Suppose for u>0 a positive measure K_u(dt) on t>=0 gave
+          exp(-pi*u*n^2) = integral exp(-n*t) K_u(dt)
+    for every integer n>=1 (a linear-heat -> Gaussian-heat positive
+    kernel that is independent of source label n).
+    Then a_n=integral exp(-n*t)K is a log-convex moment sequence:
+          a_(n+1)^2 <= a_n*a_(n+2) (Cauchy-Schwarz).
+    But Gaussian a_n gives
+          a_(n+1)^2/(a_n*a_(n+2)) = exp(2*pi*u)>1.
+    Contradiction for every u>0, already at labels n=1,2,3.
+    This only excludes this restricted positive Laplace mixture, not
+    all nonlinear, signed, source-indexed or Gaussian Poisson transport.
+    """
+    return {
+        "input_linear_spectrum":"exp(-n*t)",
+        "target_gaussian_spectrum":"exp(-pi*u*n*n)",
+        "required_positive_mixture_moment_inequality":"a_(n+1)^2<=a_n*a_(n+2)",
+        "gaussian_ratio_exact":"exp(2*pi*u)>1 for u>0",
+        "contradiction_at_labels":(1,2,3),
+        "source_blind_positive_laplace_mixing":False,
+        "source_indexed_or_signed_transport_ruled_out":False,
+        "actual_Tate_theta_Gamma_R_identified_solely_by_mixture":False,
+        "RH_proved":False,
+    }
+
+
 def primary_source_interface_status() -> dict:
     """Typed map explicitly prevents illicit eta->RH promotion."""
     return {
