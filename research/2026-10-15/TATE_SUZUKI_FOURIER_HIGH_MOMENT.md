@@ -297,7 +297,137 @@ with \(L_U=BU+U^*B^*-U^*DU\), \(C_U(i,j)=\langle[G(e_i-Ue_i)]',[G(e_j-Ue_j)]'\ra
 
 The ordinary \(\eta\)/Eisenstein/Möbius/Poisson source transducer from parent #114 matters here as a **source passport and reconstruction/normalization channel**; it does NOT make \(C_U\) vanish or identify an independent positive Hilbert source by itself.
 
-## 6. Hostile tests, source/observer boundaries, and next new transducers
+## 6. ALL-RADII MOONSHOT: explicit finite-codimension source positivity at every finite a (PROVED ANALYTIC, extreme resource debt)
+
+The special finite true-source first-prime rank \(r=16,18,30\) theorem is quantitatively useful. The SAME source structure also proves a nontrivial qualitative result for **every** finite interval, using a very expensive but completely explicit SUCC observer cutoff.
+
+**Theorem TSF-A: original Weil is coercive modulo finitely many polynomial moments on EVERY fixed interval.** For each real \(a>0\) and each prescribed real \(L\ge0\), there exists a finite integer \(r=r(a,L)\) such that for every nonzero complex \(f\in C_c^\infty(-a,a)\) with
+
+\[
+\int_{-a}^a t^k f(t)\,dt=0\qquad (0\le k<r),
+\]
+
+the **actual original completed zeta Weil form** satisfies
+
+\[
+\boxed{Q_\zeta(f)>L\|f\|_{L^2(-a,a)}^2.}\tag{TSF-A}
+\]
+
+It holds without RH, no zeros are read, and all finite Euler primes keep their genuine von Mangoldt/half-density weights. The finite-dimensional low sector is **NOT** proved positive, and the cutoff depends on a and L.
+
+### Fully explicit proof-address construction for rational a (all quantities exact)
+
+The original full Weil formula at any fixed a has one real Gamma ladder, contact \(C_\infty<43/8\), positive cosh-polar rank one, negative sinh-polar of norm bounded by \(2(\sinh a-a)\), and a FINITE set of prime-power translations \(b_n=\log n<2a\) with weights \(w_n=\Lambda(n)/\sqrt n>0\). The operator norm of a **single** translated \(S_{b_n}+S_{-b_n}\) is at most 2. Hence a valid actual-source negative budget is
+
+\[
+B_{\rm true}(a)<
+\frac{43}{8}+2(\sinh a-a)
++2\sum_{\substack{n=p^k\\\log n<2a}}\frac{\Lambda(n)}{\sqrt n}<\infty.
+\tag{TSF-A1}
+\]
+
+To manufacture an entirely rational, source-agnostic **majorant** (NOT replacement arithmetic places), use \(\log2>1/2\), \(\Lambda(n)\le\log n\le n\), and \(2\sinh a<e^a\).
+
+For rational a define integers
+
+\[
+N=2^{\lceil4a\rceil+1},\qquad E=2^{\lceil2a\rceil+1}.
+\]
+
+Since \(2\log2>1\), \(\exp(2a)<N,\ \exp(a)<E\). Every genuine active prime power has integer label \(n<N\), and all such original source weights obey \(w_n\le n\). Even summing over **all integers** as an upper bound (but NEVER inventing a composite primitive source) gives
+
+\[
+\boxed{
+B(a):=\frac{43}{8}+[N(N+1)-2]+E>B_{\rm true}(a).
+}\tag{TSF-A2}
+\]
+
+Fix a nonnegative rational target \(L\). Choose
+
+\[
+\boxed{
+M=\left\lceil\frac{17}{4}\bigl(B(a)+L+1\bigr)\right\rceil+1,
+\qquad J=2^M,\qquad \Omega=8J,
+\qquad r=\lceil4a\Omega\rceil+1.
+}\tag{TSF-A3}
+\]
+
+All are **finite positive integers**, though fantastically large. They are actual mathematical definitions, not an instruction to complete infinitely many computations in finite physical time.
+
+For the first J real Gamma modes, \(\alpha_j=(4j+1)/2<2J=\Omega/4\), hence
+
+\[
+\frac{\Omega^2}{\Omega^2+\alpha_j^2}>\frac{16}{17},
+\quad
+\beta_j=\frac4{4j+1}>\frac1{j+1}.
+\]
+
+The Gamma multiplier therefore satisfies
+
+\[
+m_J(\Omega)>\frac{16}{17}\sum_{j=1}^J\frac1j
+\ge\frac{16}{17}\left(1+\frac M2\right)
+>2(B(a)+L+1).
+\tag{TSF-A4}
+\]
+
+The middle inequality follows by grouping harmonic terms into M dyadic blocks: each block contributes at least \(1/2\). No transcendental numerical integration is used.
+
+Our r choice makes \(r>4a\Omega\). The elementary factorial inequality \(r!>(r/3)^r\) (because \(r!>(r/e)^r\) and \(e<3\)) then gives
+
+\[
+\varepsilon_r(a,\Omega)
+=\frac{2a\Omega}{3(2r+1)}
+\frac{(a\Omega)^{2r}}{(r!)^2}
+<\frac{a\Omega}{3r}\left(\frac34\right)^{2r}
+<\frac1{12}.
+\tag{TSF-A5}
+\]
+
+Combining the complete source inequality (TSF-07) and (TSF-A2–5),
+
+\[
+Q_\zeta(f)>
+\left[\frac{11}{12}\frac{16}{17}\left(1+\frac M2\right)-B(a)\right]\|f\|^2
+>L\|f\|^2.
+\]
+
+Thus **TSF-A is proved for every positive rational a** by explicitly defined finite proof-address values. For arbitrary real a>0 and L≥0 choose rational a'>a and L'>L and apply their certificates to tests supported in (-a,a); the moment conditions transfer identically. This proves TSF-A for all real finite intervals without claiming a single uniform rank.
+
+### Same source → every-a Suzuki high sector; what remains an RH obstacle
+
+By the exact primitive integration and Legendre derivative spanning argument in TSF-08–09, TSF-A implies that for every a>0 there exists a finite r(a,L) so that
+
+\[
+\boxed{Q_rG_aQ_r\succeq L\,Q_rK_aQ_r,\qquad
+K_a=V_a^*V_a,}\tag{TSF-A6}
+\]
+
+on the original mean-zero derivative carrier. For L>0 this is a positive high-sector \(K_a\)-relative domination; it NEVER asserts the impossible \(Q_rG_aQ_r\succeq cI\) on an infinite compact high subspace.
+
+The genuine screw \(g\) is \(W^{1,1}\) on every compact radius: its real Gamma log derivative is locally integrable, the polar/contact parts are smooth/Lipschitz away from the contact, and only finitely many original prime hinges activate. Hence the PR109 Douglas/Feshbach cross-range reasoning extends **in principle** to each fixed a with radius-dependent finite \(||g'||_{L^1[-2a,2a]}\), giving a finite low short \(S_{a,r}=A_{a,r}-R_{0,a,r}\). We have NOT produced the full source-real analytic derivative norm constants at arbitrary a or certified any \(S_{a,r}\succeq0\).
+
+Therefore the dependency graph is now:
+
+\[
+\text{correct original Tate/Weil source}
+\longrightarrow
+\boxed{\text{source-positive finite-codimension high at EVERY a}}
+\longrightarrow
+\boxed{\text{unknown finite-dimensional low Schur SIGN at each a}}
+\longrightarrow
+\text{all-a RH criterion}.
+\]
+
+**The all-a high arrow is proved; the low sign arrow remains entirely RH-hard.** In particular, a proof scheme relying solely on "all finite intervals have a positive high sector" is ruled out as sufficient for RH.
+
+### The resource/observability boundary is measurable
+
+At the real first-prime \(a=1/2\), the inexpensive source-tight TSF-09 theorem needs r=16 or 18, J=32. The generic all-a majorant instead has \(N=8,\ E=4,\ B=635/8\), selects a gamma index exponent \(M\) of several hundred, then formally sets \(J=2^M\) and \(r\sim16\cdot2^M\). At a=2 the crude exponent M already exceeds **one million**. The software accordingly returns **symbolic exact cutoff formulas and finite natural exponents**, without materializing astronomical Legendre matrices or falsely reporting tests over them. Source-tight local transport is therefore critically important for any practical RH campaign. This is a sharp illustration of SUCC's toolkit-relative resource/observer gap, not an absolute logical/physical nonconstructibility claim.
+
+**Runnable scope:** \`observational_succ/tate_suzuki_all_radii.py\` and \`tests/test_tate_suzuki_all_radii.py\` certify rational source budget arithmetic, finite small-J Gamma harmonic bounds, explicit symbolic J/r cutoff inequalities, fake-composite majorant separation and no-RH claims. The theorem for arbitrary real a is an analytical argument; it is NOT verified by enumerating unbounded real radii or evaluating the gigantic proposed moments.
+
+## 7. Hostile tests, source/observer boundaries, and next new transducers
 
 **Controls discharged / exact receipt:**
 - Native \(j\mapsto4j+1\) Tate real Gamma spectrum; wrong \(4j+3\) parity loses the 30-high proof margin.
