@@ -194,3 +194,17 @@ The exact source-checked chain at a=1/2 is now
 An independent Connes global realization must identify the SAME signed distribution **including its Fourier-normalized principal value**, not merely the same off-origin local clock traces. This is a separate missing representation arrow and does not supply sign by default.
 
 **No complete proof of RH is claimed.** The newly demonstrated local theorem has removed the requirement of a bounded D^-1 at shift zero from the certificate architecture and exposed concrete source matrices/residuals to compute, but it has not established their required sign or a universal all-radius family.
+
+
+## 1b. Connes/Tate contact gauge is exactly a translation of the original GENERALIZED Suzuki spectral pencil — ORS-01d (PROVED ALGEBRAICALLY; original source identity from ORS-01)
+
+The correct signed Suzuki spectral question is naturally a relative pencil \(\mathcal P_G(\mu)=G-\mu K_a\), not an arbitrary finite matrix eigenproblem. Because a contact discrepancy \(c\delta_0\) gives \(G_c=G+cK_a\), there is an exact **all-domain** operator/form identity
+\[
+\boxed{\mathcal P_{G_c}(\mu)=G_c-\mu K_a
+=G-(\mu-c)K_a=\mathcal P_G(\mu-c).}\tag{ORS1d}
+\]
+This is stronger than saying that isolated finite eigenvalues move by c: **the entire generalized spectral pencil is translated**, preserving every source-true low/high cross term and its two Neumann boundary channels. If a spectral-parameter domain permits taking the high shorted complement, its low Schur matrix must agree under this \(\mu\mapsto\mu-c\) translation. The identity is of quadratic forms, so it holds before attempting any potentially illegal high inverse at zero; it does not license one.
+
+An exact 3×3 finite rational countercontrol uses SPD \(K=\begin{psmallmatrix}2&1&0\\1&2&0\\0&0&1\end{psmallmatrix}\), symmetric \(G=\begin{psmallmatrix}4&1&0\\1&3&0\\0&0&3\end{psmallmatrix}\), a one-mode low cut, \(c=1/2,\mu=1/4\). True Schur of \(G_c-\mu K\) equals true Schur of \(G-(\mu-c)K\) exactly. A **fake contact correction applied only to the low block** gives a different Schur (because K has a nonzero cross), demonstrating the omitted source-coupling error directly. The toy source is not the full arithmetic zeta, and its finite high block happens to be invertible; this is not a theorem that the actual infinite compact \(D^{-1}\) exists.
+
+**How this constrains Connes:** the Fourier-normalized principal-value contact is not an arbitrary low-only renormalization. Any proposed Connes realization equal to authentic W must yield c=0, including the rank-two low/high K boundary contact channels. A finite off-identity local trace identity cannot establish c=0 by itself. This gives a falsifiable **normalization compatibility gate** in the same Hilbert space where the Suzuki sign problem lives, not a separate positivity theorem.
