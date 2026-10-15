@@ -219,7 +219,80 @@ The decisive next source calculation is **actual original low 4×4** signed matr
 \]
 with \(L_U=BU+U^*B^*-U^*DU\), where \(Q_4KQ_4\) controls the correct Sobolev remainder. Independent sign on a finite sampled Gram is NOT this theorem.
 
-## 6. Falsification, comparison to previous research, resource barrier
+## 6. WB4-C — AN ACTUAL POSITIVE COMPLETION OF THE ORIGINAL SIGNED OPERATOR WITH ONLY FOUR LOW-SOURCE COUNTERTERMS (PROVED; not original Weil positivity)
+
+The previous four-moment source theorem can do more than bound the negative index. It constructs a source-authenticated, finite-rank-corrected **positive Hilbert form on EVERY original test**, without assuming RH or inventing zeros. The correction is explicitly declared and is NOT the unmodified Weil form.
+
+Let \(P=P_4\) be the original \(L^2_0(-1/2,1/2)\) projection onto genuine low Legendre modes \(P_1,\ldots,P_4\), and \(Q=I-P\). The same source identity that gave Bessel-4 proves
+\[
+D=QGQ\succeq\frac1{50}QKQ,\qquad K=V^*V=(-\Delta_N)^{-1}.
+\]
+
+PR109's true original signed Suzuki derivative source proves \(\|g'\|_{L^1(-1,1)}<11/40\), and \(g(0)=0\). Integrate from the anchor \(g(0)\) to obtain \(\|g\|_{L^1(-1,1)}\le\|g'\|_{L^1(-1,1)}\); Young's convolution inequality and compression to meanzero H then yield the **source operator** bound
+
+\[
+\boxed{\|G\|_{\mathrm{op}}<\frac{11}{40}.}\tag{WB4-C1}
+\]
+
+As established in WB4-14, the true unshifted high/low response satisfies
+
+\[
+\boxed{0\preceq R_0\prec\frac{121}{32}I_4.}\tag{WB4-C2}
+\]
+
+**Theorem WB4-C:** For EVERY \(u=x+h\in H\), \(x=Pu,\ h=Qu\), the genuine signed quadratic satisfies
+
+\[
+\begin{aligned}
+\langle u,Gu\rangle
+&=\langle x,Ax\rangle+2\operatorname{Re}\langle B^*x,h\rangle+\langle h,Dh\rangle\\
+&\ge\langle x,Ax\rangle-\langle x,R_0x\rangle\\
+&>-\left(\frac{11}{40}+\frac{121}{32}\right)\|x\|^2
+=-\frac{649}{160}\|Pu\|^2.
+\end{aligned}\tag{WB4-C3}
+\]
+
+The middle bound is the authentic zero-shift variational (Douglas/Feshbach) inequality. It does NOT invert the compact infinite high block \(D\).
+
+Select the explicit rational rank-four counterterm \(\lambda=65/16=650/160\). We obtain the **positive finite-rank host**
+
+\[
+\boxed{
+\begin{aligned}
+\widetilde G&:=G+\frac{65}{16}P_4,\\
+\langle u,\widetilde G u\rangle
+&\ge\frac1{160}\|P_4u\|^2\ge0\qquad\forall u\in H.
+\end{aligned}}\tag{WB4-C4}
+\]
+
+If \(Pu=0\) and u≠0, positivity is already strict in the source-true K metric by \(D\succeq K/50\), so no L² spectral gap for compact G has been fabricated.
+
+**In original Weil test coordinates:** for \(u=f'\) and \(f\in C_c^\infty(I)\), this is
+
+\[
+\boxed{
+Q_\zeta(f)+\frac{65}{16}
+\sum_{j=1}^{4}
+\frac{|\langle f',P_j(\cdot/a)\rangle|^2}
+{\|P_j(\cdot/a)\|_{L^2(I)}^2}
+\ge0.
+}\tag{WB4-C5}
+\]
+
+All source parts in \(Q_\zeta\) remain the REAL prime-power, one Gamma, contact and polar channels; the **additional positive term is explicit, finite-rank and separately visible**. It is not represented as a new arithmetic Euler atom, an RH theorem, or a miraculous source-positive unmodified kernel.
+
+By the spectral theorem, \(\widetilde G^{1/2}\) is a legitimate source-defined positive Hilbert feature realization of the rank-four-CORRECTED signed object. Its existence is an ordinary positive-operator theorem, **not** a finite physical-time algorithm to construct all entries of an infinite square root.
+
+Two more sharp consequences follow, source independently of RH:
+
+1. Every subspace on which the TRUE original \(G\) form is strictly negative has dimension at most **4**; otherwise it contains a nonzero vector orthogonal to the four low modes, contradicting the Bessel-4 high positivity. Hence the Morse/negative index is at most four.
+2. \(\dim\ker G\le4\) because \(G\) has no nonzero null vector wholly in QH (such a vector would have \(0=\langle h,Gh\rangle\ge\|Vh\|^2/50>0\)).
+
+**Crucial RH firewall:** \(\widetilde G\ge0\) does not imply \(G\ge0\). Removing the actual \(\lambda P_4\) is exactly the missing 4×4 source low-short sign \(S_0=A-R_0\succeq0\). This finite-rank positive correction is a noncircular, genuinely source-coupled **prototype polarization** of original Weil, not the final RH-strength polarization.
+
+**Executable source:** \`observational_succ/tate_four_low_compensator.py\`; tests \`tests/test_tate_four_low_compensator.py\` check original rational constants and synthetic signed Schur countermodels in both directions; the actual all-u statement is the above analytical proof, not finite enumeration.
+
+## 7. Falsification, comparison to previous research, resource barrier
 
 - **The premise is the original completed source**: one \(\Gamma_{\mathbb R}\), correct original contact and both polar signs, true n=2 \(\Lambda(n)/\sqrt n\) impulse with exact shift norm 1, and every omitted Gamma mode PSD.
 - **Spherical Bessel source:** Derive the exact plane-wave projection and power series analytically; finite rational integration includes every real frequency interval, every omitted power-series term and every angular mode tail; no numerically fitted quadrature or RH-zero hypothesis.
