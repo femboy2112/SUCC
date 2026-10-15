@@ -282,6 +282,81 @@ def sigma_one_dirichlet_tail_majorant(sigma:int, N:int) -> F:
     return F(1,(sigma-3)*N**(sigma-3))
 
 
+def modular_discriminant_formal_passport(N:int=12) -> dict:
+    """Distinguish eta^24 cusp coefficients tau(n) from Eisenstein sigma1(n).
+
+    Delta(q)=q prod(1-q^n)^24 has Fourier coefficients tau(n), while
+    q dlog Delta/dq = E2 = 1-24 sum sigma1(n)q^n.
+    The two coefficient sequences are NOT the same arithmetic source.
+    All coefficients through q^N are computed by exact integer polynomial
+    multiplication and exact power-series reciprocal, not modular sampling.
+    """
+    if type(N) is not int or not 3<=N<=48:
+        raise EtaTransportError("Formal discriminant coefficient cutoff 3..48 required")
+    M=N-1
+    p=[0]*(M+1)
+    p[0]=1
+    for n in range(1,M+1):
+        for k in range(M,n-1,-1):
+            p[k]-=p[k-n]
+    power=[0]*(M+1)
+    power[0]=1
+    for _ in range(24):
+        new=[0]*(M+1)
+        for i in range(M+1):
+            if power[i]:
+                for k in range(M-i+1):
+                    if p[k]:
+                        new[i+k]+=power[i]*p[k]
+        power=new
+    coeff=(0,)+tuple(power)
+    inv=[0]*(M+1)
+    inv[0]=1
+    for n in range(1,M+1):
+        inv[n]=-sum(power[j]*inv[n-j] for j in range(1,n+1))
+    e2=[1]
+    for n in range(1,M+1):
+        e2.append(sum(j*power[j]*inv[n-j] for j in range(1,n+1)))
+    exact=(1,)+tuple(-24*sigma_one(n) for n in range(1,M+1))
+    if tuple(e2)!=exact or coeff[2]!=-24 or coeff[3]!=252:
+        raise ArithmeticError("The eta^24 cusp/Eisenstein source contrast failed")
+    return {
+        "Delta_q_coefficients_through_degree_N":coeff,
+        "q_dlog_Delta_coefficients_through_degree_N_minus_one":tuple(e2),
+        "E2_comparison_exact":True,
+        "Delta_Ramanujan_tau_coefficients_are_sigma1":False,
+        "Gamma_of_Delta_L_series_identified_with_Gamma_zeta":False,
+        "Delta_is_eta_to_24_power":True,
+        "cusp_order_exactly_one":True,
+        "RH_proved":False,
+    }
+
+
+def completed_two_critical_track_passport() -> dict:
+    """Functional-equation decomposition without consulting zeta zero positions.
+
+    For completed xi(s)=xi(1-s), X(s)=xi(s)*xi(s-1) satisfies
+       X(2-s)=X(s).
+    Every zero rho of xi yields product zero labels rho and 1+rho
+    (taking multiplicities). So even CONDITIONAL ON RH, the product
+    has two critical vertical tracks Re(s)=1/2 and Re(s)=3/2, not
+    a single track at its symmetry center Re(s)=1. This is a
+    structural warning, NOT a numerical scan or proof of RH.
+    """
+    return {
+        "completed_object":"xi(s)*xi(s-1)",
+        "functional_equation":"X(2-s)=X(s)",
+        "symmetry_center_real_part":F(1),
+        "conditional_on_RH_two_real_tracks":(F(1,2),F(3,2)),
+        "formal_zero_translation":"rho maps to rho and 1+rho",
+        "nontrivial_zero_locations_used_as_inputs":False,
+        "single_track_at_center_not_implied":True,
+        "source_projection_out_shifted_factor_required":True,
+        "original_Weil_positivity_proved":False,
+        "RH_proved":False,
+    }
+
+
 def primary_source_interface_status() -> dict:
     """Typed map explicitly prevents illicit eta->RH promotion."""
     return {
