@@ -1,0 +1,1637 @@
+{
+ "generated": "2026-10-14",
+ "campaign": "Operation Phoenix II",
+ "archive_ref_scheme": "archive/2026-10-14/<branch-name>  (immutable tip SHA; created+pushed only on explicit maintainer go)",
+ "integration_head": "8d77c73c789b",
+ "main_pre_merge": "6e0d88f1b235",
+ "total_remote_branches": 162,
+ "deletion_policy": "Remote deletion only for fully-incorporated branches with a verified archive ref and NO open PR. The 43 #57-99 branches keep their open PRs until the integration->main merge auto-closes them; nothing deleted without explicit maintainer go.",
+ "branches": {
+  "integration/gaussian-moat-audit-2026-10-12": {
+   "tip": "a851db14e335",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/integration/gaussian-moat-audit-2026-10-12"
+  },
+  "integration/succ-carrier-complete-2026-10-13": {
+   "tip": "4ca9ad445e2b",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/integration/succ-carrier-complete-2026-10-13"
+  },
+  "integration/succ-consolidation-2026-10-11": {
+   "tip": "9352f9c69362",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/integration/succ-consolidation-2026-10-11"
+  },
+  "main": {
+   "tip": "6e0d88f1b235",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/main"
+  },
+  "research/absorbing-hard-succ-finite-transmission-2026-10-10": {
+   "tip": "507d4f9314c5",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/absorbing-hard-succ-finite-transmission-2026-10-10"
+  },
+  "research/alexander-horned-source-observer-2026-10-14": {
+   "tip": "c15717961436",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/alexander-horned-source-observer-2026-10-14"
+  },
+  "research/alexander-wild-ambient-observer-2026-10-14": {
+   "tip": "2feb678f9d29",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/alexander-wild-ambient-observer-2026-10-14"
+  },
+  "research/all-places-model-interaction-zeta-2026-10-14": {
+   "tip": "b7ebe2a02aa1",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/all-places-model-interaction-zeta-2026-10-14"
+  },
+  "research/arithmetic-meta-weil-boundary-2026-10-14": {
+   "tip": "205ffd020dd2",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/arithmetic-meta-weil-boundary-2026-10-14"
+  },
+  "research/basis-indexed-boundary-transport-2026-10-11": {
+   "tip": "501b598014ce",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/basis-indexed-boundary-transport-2026-10-11"
+  },
+  "research/black-sun-ii-coverage-theory-2026-10-14": {
+   "tip": "1dc31daa660e",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/black-sun-ii-coverage-theory-2026-10-14"
+  },
+  "research/black-sun-iii-wild-limits-2026-10-14": {
+   "tip": "1031b21ea6ef",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/black-sun-iii-wild-limits-2026-10-14"
+  },
+  "research/black-sun-independent-campaign-2026-10-14": {
+   "tip": "cba5cca8a250",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/black-sun-independent-campaign-2026-10-14"
+  },
+  "research/black-sun-iv-zeno-completion-2026-10-14": {
+   "tip": "7b998bcc427a",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/black-sun-iv-zeno-completion-2026-10-14"
+  },
+  "research/cambrian-observational-realization-2026-10-13": {
+   "tip": "bdb1fcfce875",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/cambrian-observational-realization-2026-10-13"
+  },
+  "research/carrier-indexed-unification-2026-10-13": {
+   "tip": "9e7589e522af",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/carrier-indexed-unification-2026-10-13"
+  },
+  "research/carrier-locked-dual-succ-rigidity-2026-10-13": {
+   "tip": "e62b7cae95ac",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/carrier-locked-dual-succ-rigidity-2026-10-13"
+  },
+  "research/carrier-relative-identifiability-realization-2026-10-12": {
+   "tip": "3751caee7a1e",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/carrier-relative-identifiability-realization-2026-10-12"
+  },
+  "research/categorical-repair-discovery-2026-10-12": {
+   "tip": "a5462ea4ef65",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/categorical-repair-discovery-2026-10-12"
+  },
+  "research/cegis-categorical-discovery-2026-10-13": {
+   "tip": "34f2806a30cd",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/cegis-categorical-discovery-2026-10-13"
+  },
+  "research/certified-contour-suzuki-2026-10-14": {
+   "tip": "36a6b4fd12da",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/certified-contour-suzuki-2026-10-14"
+  },
+  "research/chaos-quotients-source-debt-2026-10-12": {
+   "tip": "8d32b2302f97",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/chaos-quotients-source-debt-2026-10-12"
+  },
+  "research/circle-cross-language-translation-2026-10-11": {
+   "tip": "cb2b4750ac2f",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/circle-cross-language-translation-2026-10-11"
+  },
+  "research/contextual-heuristic-inference-2026-10-12": {
+   "tip": "45597a575097",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/contextual-heuristic-inference-2026-10-12"
+  },
+  "research/covariant-epistemic-momentum-descent-2026-10-12": {
+   "tip": "82f518cda67c",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/covariant-epistemic-momentum-descent-2026-10-12"
+  },
+  "research/diagonal-adelic-zeta-source-reciprocity-2026-10-12": {
+   "tip": "04c04f715ed0",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/diagonal-adelic-zeta-source-reciprocity-2026-10-12"
+  },
+  "research/diagonal-ice-climber-tower-holonomy-2026-10-12": {
+   "tip": "a737061cf880",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/diagonal-ice-climber-tower-holonomy-2026-10-12"
+  },
+  "research/discrete-derivative-succ-integration-2026-10-11": {
+   "tip": "c6475f319a35",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/discrete-derivative-succ-integration-2026-10-11"
+  },
+  "research/dsv4-periodic-tail-enclosure-2026-10-13": {
+   "tip": "fb4fb91d4621",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/dsv4-periodic-tail-enclosure-2026-10-13"
+  },
+  "research/dual-e-boundary-correlation-2026-10-12": {
+   "tip": "dc109306a8b5",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/dual-e-boundary-correlation-2026-10-12"
+  },
+  "research/empirical-carrier-higgs-spectral-2026-10-13": {
+   "tip": "fb1380651bba",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/empirical-carrier-higgs-spectral-2026-10-13"
+  },
+  "research/eodcs-causal-nerode-moonshot-2026-10-13": {
+   "tip": "00bc0d44cb01",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/eodcs-causal-nerode-moonshot-2026-10-13"
+  },
+  "research/eodcs-posets-cegis-covers-2026-10-13": {
+   "tip": "091b9e6ecb0f",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/eodcs-posets-cegis-covers-2026-10-13"
+  },
+  "research/eodcs-relational-choice-2026-10-13": {
+   "tip": "b17c357e2aa6",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/eodcs-relational-choice-2026-10-13"
+  },
+  "research/euler-global-transport-minus-one-2026-10-11": {
+   "tip": "48a5ae5feea3",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/euler-global-transport-minus-one-2026-10-11"
+  },
+  "research/evolutionary-obstruction-synthesis-2026-10-13": {
+   "tip": "b2774ca485db",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/evolutionary-obstruction-synthesis-2026-10-13"
+  },
+  "research/field-relative-closure-obstruction-calculus-2026-10-12": {
+   "tip": "d1e64948f606",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/field-relative-closure-obstruction-calculus-2026-10-12"
+  },
+  "research/finite-source-weil-negative-depth-2026-10-14": {
+   "tip": "dc6b7e3adbfb",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/finite-source-weil-negative-depth-2026-10-14"
+  },
+  "research/gaussian-moat-certificate-duality-2026-10-12": {
+   "tip": "b606b78bb8ea",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/gaussian-moat-certificate-duality-2026-10-12"
+  },
+  "research/gaussian-moat-voltage-transport-2026-10-11": {
+   "tip": "68b33157df20",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/gaussian-moat-voltage-transport-2026-10-11"
+  },
+  "research/gaussian-weil-conditional-certificates-2026-10-14": {
+   "tip": "3270d4b9d992",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/gaussian-weil-conditional-certificates-2026-10-14"
+  },
+  "research/genetic-categorical-model-fusion-2026-10-12": {
+   "tip": "1cb30a3d9242",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/genetic-categorical-model-fusion-2026-10-12"
+  },
+  "research/global-model-sandwich-2026-10-14": {
+   "tip": "8ce8ebbc4ea2",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/global-model-sandwich-2026-10-14"
+  },
+  "research/historical-maxwell-lorentz-obstruction-repair-2026-10-12": {
+   "tip": "f44bb04b1d8f",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/historical-maxwell-lorentz-obstruction-repair-2026-10-12"
+  },
+  "research/ideal-frame-completion-trichotomy-2026-10-10": {
+   "tip": "c7908a9ed694",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/ideal-frame-completion-trichotomy-2026-10-10"
+  },
+  "research/knowledge-ladder-synchronization-2026-10-10": {
+   "tip": "12ec972eb8ec",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/knowledge-ladder-synchronization-2026-10-10"
+  },
+  "research/local-global-yoneda-gluing-2026-10-12": {
+   "tip": "8110536ecc68",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/local-global-yoneda-gluing-2026-10-12"
+  },
+  "research/logistic-observer-tree-2026-10-12": {
+   "tip": "2414c23eed77",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/logistic-observer-tree-2026-10-12"
+  },
+  "research/mahler-clock-kummer-succ-2026-10-11": {
+   "tip": "285d60efd00c",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/mahler-clock-kummer-succ-2026-10-11"
+  },
+  "research/many-worlds-atlas-2026-10-13": {
+   "tip": "bd0e0d6d2b50",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/many-worlds-atlas-2026-10-13"
+  },
+  "research/many-worlds-swarm-2026-10-13": {
+   "tip": "759c30c72a29",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/many-worlds-swarm-2026-10-13"
+  },
+  "research/meta-interaction-contour-descent-2026-10-14": {
+   "tip": "527cd89acc76",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/meta-interaction-contour-descent-2026-10-14"
+  },
+  "research/misiurewicz-chaotic-phase-e-2026-10-12": {
+   "tip": "b9d84bb39594",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/misiurewicz-chaotic-phase-e-2026-10-12"
+  },
+  "research/no-ghost-causal-gluing-2026-10-13": {
+   "tip": "c13b61465235",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/no-ghost-causal-gluing-2026-10-13"
+  },
+  "research/noncommuting-source-proof-transport-2026-10-11": {
+   "tip": "1c1a83d5194f",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/noncommuting-source-proof-transport-2026-10-11"
+  },
+  "research/observational-succ-foundation-import-2026-10-10": {
+   "tip": "b024a486d522",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/observational-succ-foundation-import-2026-10-10"
+  },
+  "research/observer-relative-dynamic-fourier-virtual-zeros-2026-10-12": {
+   "tip": "c17538418aed",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/observer-relative-dynamic-fourier-virtual-zeros-2026-10-12"
+  },
+  "research/operational-yoneda-policy-descent-2026-10-11": {
+   "tip": "f060d465a808",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/operational-yoneda-policy-descent-2026-10-11"
+  },
+  "research/pascal-quarter-turn-gamma-2026-10-14": {
+   "tip": "5a3f5cf4d415",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/pascal-quarter-turn-gamma-2026-10-14"
+  },
+  "research/pascal-rotated-gamma-transport-2026-10-14": {
+   "tip": "a29170d4ff76",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/pascal-rotated-gamma-transport-2026-10-14"
+  },
+  "research/positive-carrier-realization-2026-10-13": {
+   "tip": "619f07541d64",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/positive-carrier-realization-2026-10-13"
+  },
+  "research/prime-categorical-sphere-gamma-sieve-2026-10-14": {
+   "tip": "17f1c8da3948",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/prime-categorical-sphere-gamma-sieve-2026-10-14"
+  },
+  "research/prime-form-heat-mellin-2026-10-14": {
+   "tip": "53934b3a5a98",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/prime-form-heat-mellin-2026-10-14"
+  },
+  "research/proof-backaction-debt-zeno-2026-10-11": {
+   "tip": "3c350bee700c",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/proof-backaction-debt-zeno-2026-10-11"
+  },
+  "research/proof-carrier-backaction-2026-10-11": {
+   "tip": "78b5497e2088",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/proof-carrier-backaction-2026-10-11"
+  },
+  "research/property-proof-graph-bootstrap-2026-10-13": {
+   "tip": "11781889a382",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/property-proof-graph-bootstrap-2026-10-13"
+  },
+  "research/proto-succ-variable-unit-lift-2026-10-11": {
+   "tip": "45e98b9d273d",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/proto-succ-variable-unit-lift-2026-10-11"
+  },
+  "research/real-place-weil-identification-2026-10-14": {
+   "tip": "55307fec354b",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/real-place-weil-identification-2026-10-14"
+  },
+  "research/recursive-meta-interaction-coercivity-2026-10-14": {
+   "tip": "cc0d50bb2585",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/recursive-meta-interaction-coercivity-2026-10-14"
+  },
+  "research/relative-delta-basis-transport-2026-10-11": {
+   "tip": "9c20965fd3b0",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/relative-delta-basis-transport-2026-10-11"
+  },
+  "research/residue-one-adeles-and-zeta-p-2026-10-11": {
+   "tip": "aea86d916733",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/residue-one-adeles-and-zeta-p-2026-10-11"
+  },
+  "research/shadow-succ-fucc-global-inference-2026-10-12": {
+   "tip": "65f79f306770",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/shadow-succ-fucc-global-inference-2026-10-12"
+  },
+  "research/shared-carrier-boundary-descent-2026-10-12": {
+   "tip": "4733d5e5534b",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/shared-carrier-boundary-descent-2026-10-12"
+  },
+  "research/signed-weiI-h1-spectral-tail-2026-10-14": {
+   "tip": "bb5b6f96f78d",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/signed-weiI-h1-spectral-tail-2026-10-14"
+  },
+  "research/signed-weil-h1-spectral-tail-2026-10-14": {
+   "tip": "526bad9e55ec",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/signed-weil-h1-spectral-tail-2026-10-14"
+  },
+  "research/source-driven-dynamic-boundary-inverse-2026-10-12": {
+   "tip": "a085d754e037",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/source-driven-dynamic-boundary-inverse-2026-10-12"
+  },
+  "research/source-interaction-adelic-analytic-gluing-2026-10-14": {
+   "tip": "9405013730d8",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/source-interaction-adelic-analytic-gluing-2026-10-14"
+  },
+  "research/source-relative-coverage-2026-10-12": {
+   "tip": "a65acc4000ec",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/source-relative-coverage-2026-10-12"
+  },
+  "research/source-relative-precision-transport-2026-10-11": {
+   "tip": "8feac0a49095",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/source-relative-precision-transport-2026-10-11"
+  },
+  "research/structural-coupling-discovery-2026-10-13": {
+   "tip": "cf36f907ac04",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/structural-coupling-discovery-2026-10-13"
+  },
+  "research/succ-gaussian-global-constraint-2026-10-14": {
+   "tip": "6c9e1cb1d6ba",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/succ-gaussian-global-constraint-2026-10-14"
+  },
+  "research/suzuki-canonical-moment-schur-2026-10-14": {
+   "tip": "f6539057daaf",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/suzuki-canonical-moment-schur-2026-10-14"
+  },
+  "research/suzuki-carleman-markov-prime-gluing-2026-10-14": {
+   "tip": "c0393c93b02d",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/suzuki-carleman-markov-prime-gluing-2026-10-14"
+  },
+  "research/suzuki-first-prime-boundary-coercivity-2026-10-13": {
+   "tip": "573c8264a9dc",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/suzuki-first-prime-boundary-coercivity-2026-10-13"
+  },
+  "research/suzuki-signed-tail-resolvent-2026-10-14": {
+   "tip": "ddd8f7a1a3d4",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/suzuki-signed-tail-resolvent-2026-10-14"
+  },
+  "research/suzuki-source-boundary-wavefront-2026-10-13": {
+   "tip": "a10d994cf2c4",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/suzuki-source-boundary-wavefront-2026-10-13"
+  },
+  "research/suzuki-weil-finite-to-global-2026-10-13": {
+   "tip": "183f262a5ee4",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "1",
+   "manifest_category": "ACTIVE_RESEARCH",
+   "disposition": "KEEP_ACTIVE",
+   "archive_ref": "archive/2026-10-14/research/suzuki-weil-finite-to-global-2026-10-13"
+  },
+  "research/swm-a01-2026-10-13": {
+   "tip": "9e032ba01cc9",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-a01-2026-10-13"
+  },
+  "research/swm-a02-2026-10-13": {
+   "tip": "ae6313aa94f6",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-a02-2026-10-13"
+  },
+  "research/swm-a03-2026-10-13": {
+   "tip": "bb1c00ff0425",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-a03-2026-10-13"
+  },
+  "research/swm-a04-2026-10-13": {
+   "tip": "ea25dcc76244",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-a04-2026-10-13"
+  },
+  "research/swm-a05-2026-10-13": {
+   "tip": "b13b898af052",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-a05-2026-10-13"
+  },
+  "research/swm-a06-2026-10-13": {
+   "tip": "907c2bd93e3d",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-a06-2026-10-13"
+  },
+  "research/swm-a07-2026-10-13": {
+   "tip": "f1326308e212",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-a07-2026-10-13"
+  },
+  "research/swm-a08-2026-10-13": {
+   "tip": "0c1183a522de",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-a08-2026-10-13"
+  },
+  "research/swm-b09-2026-10-13": {
+   "tip": "e3c6cc115204",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-b09-2026-10-13"
+  },
+  "research/swm-b10-2026-10-13": {
+   "tip": "ed1a58c47c17",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-b10-2026-10-13"
+  },
+  "research/swm-b11-2026-10-13": {
+   "tip": "fb284c209e38",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-b11-2026-10-13"
+  },
+  "research/swm-b12-2026-10-13": {
+   "tip": "24842dfc2651",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-b12-2026-10-13"
+  },
+  "research/swm-b13-2026-10-13": {
+   "tip": "670fec92aead",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-b13-2026-10-13"
+  },
+  "research/swm-b14-2026-10-13": {
+   "tip": "f22efcf2aa86",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-b14-2026-10-13"
+  },
+  "research/swm-b15-2026-10-13": {
+   "tip": "531c29e1fec5",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-b15-2026-10-13"
+  },
+  "research/swm-b16-2026-10-13": {
+   "tip": "e9b53fa9839b",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-b16-2026-10-13"
+  },
+  "research/swm-c17-2026-10-13": {
+   "tip": "a999435614fd",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-c17-2026-10-13"
+  },
+  "research/swm-c18-2026-10-13": {
+   "tip": "8128bf406b41",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-c18-2026-10-13"
+  },
+  "research/swm-c19-2026-10-13": {
+   "tip": "e6c792b26f24",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-c19-2026-10-13"
+  },
+  "research/swm-c20-2026-10-13": {
+   "tip": "a497325e198c",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-c20-2026-10-13"
+  },
+  "research/swm-c21-2026-10-13": {
+   "tip": "553b3a60b965",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-c21-2026-10-13"
+  },
+  "research/swm-c22-2026-10-13": {
+   "tip": "5f4341eb3c25",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-c22-2026-10-13"
+  },
+  "research/swm-c23-2026-10-13": {
+   "tip": "f8bd942af0f6",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-c23-2026-10-13"
+  },
+  "research/swm-c24-2026-10-13": {
+   "tip": "f51ecf200d8a",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-c24-2026-10-13"
+  },
+  "research/swm-d25-2026-10-13": {
+   "tip": "7960148cc1f6",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-d25-2026-10-13"
+  },
+  "research/swm-d26-2026-10-13": {
+   "tip": "c9176a3955a0",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-d26-2026-10-13"
+  },
+  "research/swm-d27-2026-10-13": {
+   "tip": "8f3aa1b05d8f",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-d27-2026-10-13"
+  },
+  "research/swm-d28-2026-10-13": {
+   "tip": "6074afd28f60",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-d28-2026-10-13"
+  },
+  "research/swm-d29-2026-10-13": {
+   "tip": "0054cb46ebe3",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-d29-2026-10-13"
+  },
+  "research/swm-d30-2026-10-13": {
+   "tip": "bf58ce0cb2ee",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-d30-2026-10-13"
+  },
+  "research/swm-d31-2026-10-13": {
+   "tip": "c5b25dbeaa65",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-d31-2026-10-13"
+  },
+  "research/swm-d32-2026-10-13": {
+   "tip": "7133c2b54549",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-d32-2026-10-13"
+  },
+  "research/swm-e33-2026-10-13": {
+   "tip": "abae499ee1cb",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-e33-2026-10-13"
+  },
+  "research/swm-e34-2026-10-13": {
+   "tip": "6d6960b431c2",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-e34-2026-10-13"
+  },
+  "research/swm-e35-2026-10-13": {
+   "tip": "ec56f3e395d3",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-e35-2026-10-13"
+  },
+  "research/swm-e36-2026-10-13": {
+   "tip": "bb38e57f7091",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-e36-2026-10-13"
+  },
+  "research/swm-e37-2026-10-13": {
+   "tip": "80914ab37284",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-e37-2026-10-13"
+  },
+  "research/swm-e38-2026-10-13": {
+   "tip": "c05c2bd69d43",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-e38-2026-10-13"
+  },
+  "research/swm-e39-2026-10-13": {
+   "tip": "063db61b7eab",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-e39-2026-10-13"
+  },
+  "research/swm-e40-2026-10-13": {
+   "tip": "4e44507e0780",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-e40-2026-10-13"
+  },
+  "research/swm-f41-2026-10-13": {
+   "tip": "aeefd7ec2a7f",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-f41-2026-10-13"
+  },
+  "research/swm-f42-2026-10-13": {
+   "tip": "94916961e1fe",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-f42-2026-10-13"
+  },
+  "research/swm-f43-2026-10-13": {
+   "tip": "f7a9754c41ca",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-f43-2026-10-13"
+  },
+  "research/swm-f44-2026-10-13": {
+   "tip": "acc1942011cb",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-f44-2026-10-13"
+  },
+  "research/swm-f45-2026-10-13": {
+   "tip": "8669b2f614d9",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-f45-2026-10-13"
+  },
+  "research/swm-f46-2026-10-13": {
+   "tip": "202ee73782c2",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-f46-2026-10-13"
+  },
+  "research/swm-f47-2026-10-13": {
+   "tip": "bbd730929cd3",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-f47-2026-10-13"
+  },
+  "research/swm-f48-2026-10-13": {
+   "tip": "8dacc56cec68",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "1",
+   "manifest_category": "PRESERVED_EXPERIMENT",
+   "disposition": "PRESERVE_EXPERIMENT_ARCHIVE_ONLY",
+   "archive_ref": "archive/2026-10-14/research/swm-f48-2026-10-13"
+  },
+  "research/swm-parallel-audit-2026-10-13": {
+   "tip": "e0ae020047b9",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-parallel-audit-2026-10-13"
+  },
+  "research/swm-rx-c19-2026-10-13": {
+   "tip": "49445ea3437f",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-rx-c19-2026-10-13"
+  },
+  "research/swm-x01-2026-10-13": {
+   "tip": "d9631e300805",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x01-2026-10-13"
+  },
+  "research/swm-x02-2026-10-13": {
+   "tip": "090d6e593b2f",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x02-2026-10-13"
+  },
+  "research/swm-x03-2026-10-13": {
+   "tip": "51dd16c7ff0d",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x03-2026-10-13"
+  },
+  "research/swm-x04-2026-10-13": {
+   "tip": "c60f8cb8e611",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x04-2026-10-13"
+  },
+  "research/swm-x05-2026-10-13": {
+   "tip": "71fda26bd4c3",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x05-2026-10-13"
+  },
+  "research/swm-x06-2026-10-13": {
+   "tip": "a80d3d6d5e88",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x06-2026-10-13"
+  },
+  "research/swm-x07-2026-10-13": {
+   "tip": "57618f394b9f",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x07-2026-10-13"
+  },
+  "research/swm-x08-2026-10-13": {
+   "tip": "a9e7dd45dc88",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x08-2026-10-13"
+  },
+  "research/swm-x09-2026-10-13": {
+   "tip": "9f31555080a2",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x09-2026-10-13"
+  },
+  "research/swm-x10-2026-10-13": {
+   "tip": "01d7fe81855c",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x10-2026-10-13"
+  },
+  "research/swm-x11-2026-10-13": {
+   "tip": "30d630504ee4",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x11-2026-10-13"
+  },
+  "research/swm-x12-2026-10-13": {
+   "tip": "71b222fae2a8",
+   "open_pr": false,
+   "anc_main": false,
+   "anc_integ": false,
+   "unique_patches_vs_integ": "0",
+   "manifest_category": "INTEGRATED_BY_CONTENT",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/swm-x12-2026-10-13"
+  },
+  "research/tlica-genie-self-anchor-gauge-2026-10-13": {
+   "tip": "b877743765df",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/tlica-genie-self-anchor-gauge-2026-10-13"
+  },
+  "research/twin-frame-invariance-circle-2026-10-11": {
+   "tip": "61a0409a57fd",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/twin-frame-invariance-circle-2026-10-11"
+  },
+  "research/voyager-observational-profinite-completion-2026-10-13": {
+   "tip": "5eb09e7cba36",
+   "open_pr": false,
+   "anc_main": true,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "ARCHIVE_AND_DELETE_ELIGIBLE",
+   "archive_ref": "archive/2026-10-14/research/voyager-observational-profinite-completion-2026-10-13"
+  },
+  "research/weil-idealhard-obstruction-2026-10-14": {
+   "tip": "a6221339136d",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/weil-idealhard-obstruction-2026-10-14"
+  },
+  "research/wild-adelic-embedding-solenoid-2026-10-14": {
+   "tip": "721778bf7df2",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/wild-adelic-embedding-solenoid-2026-10-14"
+  },
+  "research/wild-embedding-boundary-descent-2026-10-14": {
+   "tip": "751bb22cea7b",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/wild-embedding-boundary-descent-2026-10-14"
+  },
+  "research/xi-complex-contour-weil-residue-2026-10-14": {
+   "tip": "bb5b6f96f78d",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/xi-complex-contour-weil-residue-2026-10-14"
+  },
+  "research/xi-theta-certified-jets-cave-2026-10-14": {
+   "tip": "96fbc5eac570",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/xi-theta-certified-jets-cave-2026-10-14"
+  },
+  "research/zeno-completion-ambient-weil-2026-10-14": {
+   "tip": "06fb76755624",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/zeno-completion-ambient-weil-2026-10-14"
+  },
+  "research/zeno-finite-global-proof-calculus-2026-10-14": {
+   "tip": "cd9091572d11",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/zeno-finite-global-proof-calculus-2026-10-14"
+  },
+  "research/zeno-limit-transport-calculus-2026-10-14": {
+   "tip": "3147a485b3c4",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/zeno-limit-transport-calculus-2026-10-14"
+  },
+  "research/zeno-proof-debt-synthesis-2026-10-14": {
+   "tip": "8f80abcbd58c",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/zeno-proof-debt-synthesis-2026-10-14"
+  },
+  "research/zero-centered-residue-observers-2026-10-13": {
+   "tip": "b7fbba74fedd",
+   "open_pr": true,
+   "anc_main": false,
+   "anc_integ": true,
+   "unique_patches_vs_integ": "0(ancestor)",
+   "manifest_category": "INTEGRATED_ANCESTOR",
+   "disposition": "RETIRE_AFTER_MERGE",
+   "archive_ref": "archive/2026-10-14/research/zero-centered-residue-observers-2026-10-13"
+  }
+ },
+ "category_counts": {
+  "INTEGRATED_ANCESTOR": 99,
+  "ACTIVE_RESEARCH": 1,
+  "INTEGRATED_BY_CONTENT": 61,
+  "PRESERVED_EXPERIMENT": 1
+ }
+}
