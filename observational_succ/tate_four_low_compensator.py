@@ -107,3 +107,63 @@ def exact_low_high_short_toy(A=F(-1,4),B=F(1,8),D=F(1,2),
         "source_original_zeta_identified":False,
         "RH_proved":False,
     }
+
+
+def exact_four_source_moment_polarization(moments,coefficient=F(65,16)):
+    """Complete explicit four-moment version of original Weil correction.
+
+    Let m_k=∫_{-1/2}^{1/2}t^k f(t)dt, k=0..3, for complex f∈H0¹.
+    Original derivative carrier u=f'. Genuine Legendre P_j(2t):
+      <u,P1> = -2 m0,
+      <u,P2> = -12 m1,
+      <u,P3> = +3 m0-60 m2,
+      <u,P4> = +30 m1-280 m3.
+    Their norms ||P_j(2t)||²=1/(2j+1). Therefore
+      ||P4 u||² =
+       3|-2m0|² +5|-12m1|²
+      +7|3m0-60m2|²+9|30m1-280m3|².
+    With coefficient 65/16 this is EXACT rank-four correction
+    to genuine original Weil Q_zeta(f). Its presence makes the
+    MODIFIED form PSD; it does NOT show original Q_zeta PSD.
+
+    All scalars modeled by rational (real,imag) pairs, not floating.
+    """
+    if type(moments) not in (tuple,list) or len(moments)!=4:
+        raise FourLowCompensatorError("Exactly four declared complex source moments required")
+    def c(x):
+        if type(x) in (int,F):
+            return (F(x),F())
+        if type(x) in (tuple,list) and len(x)==2 and all(
+            type(t) in (int,F) for t in x
+        ):
+            return (F(x[0]),F(x[1]))
+        raise FourLowCompensatorError("Moment coefficients require exact rational real/imag")
+    ms=tuple(c(x) for x in moments)
+    if type(coefficient) not in (int,F) or F(coefficient)<0:
+        raise FourLowCompensatorError("Only nonnegative exact polarization coefficient")
+    lam=F(coefficient)
+    def lin(x,y,alpha,beta):
+        return (alpha*x[0]+beta*y[0],alpha*x[1]+beta*y[1])
+    c1=lin(ms[0],ms[0],-2,F(0))
+    c2=lin(ms[1],ms[1],-12,F(0))
+    c3=lin(ms[0],ms[2],3,-60)
+    c4=lin(ms[1],ms[3],30,-280)
+    coords=(c1,c2,c3,c4)
+    energy=sum(((2*j+3)*(x*x+y*y)
+                for j,(x,y) in enumerate(coords)),F())
+    vanishes=energy==0
+    if vanishes != all(x==0 and y==0 for x,y in ms):
+        raise ArithmeticError("Original Legendre four-moment coefficient map lost rank")
+    return {
+        "source":"ORIGINAL_LEGENDRE_FOUR_LOW_MOMENT_POLARIZATION",
+        "radius":F(1,2),
+        "complex_test_moments_0_to_3":ms,
+        "derivative_Legendre_pairings_P1_to_P4":coords,
+        "source_Ker_P4_exactly_moment_null":True,
+        "L2_projection_P4_source_energy_exact":energy,
+        "finite_rank_correction_coefficient":lam,
+        "modified_positive_source_correction_exact":lam*energy,
+        "counterterm_vanishes_for_these_moments":vanishes,
+        "counterterm_alone_is_RH_positivity":False,
+        "RH_proved":False,
+    }
