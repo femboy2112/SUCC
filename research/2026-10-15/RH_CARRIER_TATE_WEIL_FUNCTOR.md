@@ -311,3 +311,36 @@ Attempt to define the source-indexed **log-test Weil functor**
 with an honest map of test domains, and compute BOTH original-source signed evaluations and any candidate positive operator evaluations on a DENSE family.
 
 A valid identification must hold for a general generating family (not a single tent), commute with transition/refinement maps, survive fake 6 and χ_4/non-Euler controls, and have errors uniform enough to survive the inductive-limit test topology. **Falsification:** produce φ with rigorously different two sides, or show one side is undefined. **Ambiguity:** finite numerical agreement without a certified bound. **Pass:** a theorem of distributional equality with proven domains, independent derivation or accepted classical source proof. Positivity requires its own further universal proof.
+
+
+## 15. CR-06 — GNS-type minimal positive Weil carrier exists **if and only if RH** (CLASSICAL / CONDITIONAL CONSTRUCTION)
+
+Here is a precise categorical answer to a much more constrained "minimal RH carrier" question.
+
+Fix the **actual original** Weil distribution W on the convolution *-algebra D=C_c^∞(R), with tilde g(t)=overline(g(-t)). Set
+
+    B_W(f,g)=W(f*tilde(g))  and  Q_W(f)=B_W(f,f).
+
+Assume W has its standard Hermitian symmetry, and that this bilinear form is defined and continuous on the stated test class (classical Weil explicit-formula theory).
+
+**Theorem (GNS-type pre-Hilbert equivalence).** There exists a positive Hilbert test realization whose inner product reproduces B_W exactly on ALL f,g∈D if and only if Q_W(f)>=0 for all f∈D.
+
+**Proof, necessity:** any representation J:D->H with B_W(f,g)=<Jf,Jg> satisfies Q_W(f)=||Jf||²>=0.
+
+**Proof, sufficiency:** If Q_W is PSD, Cauchy–Schwarz holds. Its null subspace N={f:Q_W(f)=0} is a linear radical, and B_W descends to a positive-definite inner product on D/N. Complete to H_W; the canonical map J:D->H_W has dense image. If f,g lie in D and τ_t denotes translation by t, then (τ_tf)*tilde(τ_tg)=f*tilde g, so translations act isometrically and extend to unitary operators. Continuity of W and smooth translations yields strong continuity under the usual test-function topology assumptions. The completion is minimal in the sense of being generated densely by its test vectors, and unique up to the natural isometric identification under those generation rules.
+
+By the **classical Weil positivity criterion**, Q_W>=0 for all smooth compactly supported tests is equivalent to RH. Thus
+
+    (a source-correct Hilbert test realization of the COMPLETE Weil form)
+       <=> (global Weil positivity)
+       <=> RH.                                                  (15.1)
+
+**Crucial firewall:** (15.1) is a valid characterization, but using H_W as a pre-existing positive carrier without deriving positivity would INSERT the desired conclusion as a premise. An ordinary L² Fourier Hilbert space of Tate functions exists regardless of the Weil sign and does not automatically identify with H_W.
+
+A source-derived argument capable of constructing J and PROVING exact B_W= <Jf,Jg> on the full test space (without having assumed RH) would be proof-bearing. On the contrary, a sound counterexample to the identification must be retained as a no-go rather than repaired by silently replacing B_W with an auxiliary PSD covariance.
+
+**Finite hostile controls:** a rational symmetric Gram matrix is PSD iff all its principal minors are nonnegative, not just its diagonal or leading minors. The exact module observational_succ/weil_gns_gate.py constructs (a) a positive auxiliary Gram matrix and (b) a signed target with negative Gram directions **on the same declared test basis**. Both are arbitrary model matrices, NOT certified matrices from the actual Weil distribution; their role is to kill the source-blind positivity inference. Full-Weil Hilbert quotient existence is NOT established by passing finitely many toy Gram checks.
+
+**Literature**: Weil's positivity criterion as presented and sourced in M. Suzuki, *Aspects of the screw function corresponding to the Riemann zeta-function*, JLMS (2023), §3.2; GNS/positive-type distribution constructions in classical functional analysis. Suzuki's 2026 nonlocal spectral limit is stated as a CONJECTURE, not an unconditional established positive carrier.
+
+**Interpretive result:** There is a canonical **conditional minimal positive carrier** under a stated universal property, whereas "the minimal RH carrier" without a category and a target is not meaningful. The existence of the conditional minimal positive carrier is exactly the RH-hard theorem and therefore cannot be presumed.
