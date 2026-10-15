@@ -254,3 +254,19 @@ and the original analytic Legendre coefficients are interval-certified source da
 **Status: partial authentic source milestone, NOT THE FINAL MATRIX.** The κ=369/10000 high gap is proved for the complement of the full **30** Legendre modes, not for m=1 or 3. The module refuses to mark \`original_30_mode_Q_projection_done\` or \`finite_high_response_DY_computed\`, and cannot feed its m=1/3 output directly into ORS5 as if it were the 30×30 authentic \(T_{r_J}\). Remaining tasks are scaling all 30 projected modes with controlled rational precision and real finite high Y, proving the source bounds are sharp enough for a genuine Schur sign. This is an arithmetic finite-to-global proof instrument, not a Weil-sign proof.
 
 Independent controls: original \`signed_suzuki_g\` 70-digit integration at several J and R, true low Legendre projection from separately written polynomial/OU formula, exact parity-even derivative of odd input, decreasing x-grid enclosure widths, false source/float/extra prime rejection. All numerical comparisons are diagnostic only; source-rational interval arithmetic plus the analytic source identity is the proof basis.
+
+
+### ORS-03d — first strict original-source derivative inequalities (PROVED LOCAL WITH EXACT OUTWARD FRACTIONS)
+
+The completely source-aligned first-prime directional implementation now produces nontrivial **strict rational inequalities** for the genuine *finite* \(J=2\) signed original \(G_{a,J}\), at \(a=1/2\), with test \(u_1(x)=P_1(2x)=2x\) and genuine L² Legendre projections \(P_1\), \(P_3\):
+\[
+ \boxed{
+ \|((I-P_1)G_{1/2,2}u_1)'\|_{L^2}^2 <\frac1{20},\qquad
+ \|((I-P_3)G_{1/2,2}u_1)'\|_{L^2}^2 <\frac1{25}.
+ }\tag{ORS12}
+\]
+The enclosure uses 128 rational x-cells, source analytic (ORS8)–(ORS9), original source signed low-Legendre coefficient intervals (to subtract the correct *L²* projection), and a proven \(L^2\) derivative variation bound; the test compares Fractions **exactly** to 1/20 and 1/25. Diagnostic CI prints the (non-proof) decimal upper approximations ~0.042600 and ~0.034168 respectively. The real theorem is the rational interval inequality, not the printout. No numerical zero data enters.
+
+This is a genuine source-data milestone beyond symbolic source identification, but **its scope is sharply limited**. The high relative Neumann κ estimate is for the first 30 modes, not P1/P3; Γ is truncated at J=2, and the finite response candidate Y and actual \(m=30\) derivative Gram \(T_{(B-DY)'}\) are not computed. Moreover a source-positive omitted Gamma tail does **not** imply a small derivative norm at this J without the separate H¹ tail budget δ_J (large at J=2). Thus ORS12 is neither a sign certificate of the full original \(G_a\) nor a proof of even the first-window completed Weil positivity. It demonstrates that the source-first operator-to-derivative-Gram computation can produce **quantitative, exact, zero-independent inequalities** that future 30-mode attempts can generalize.
+
+A hostile mathematical warning: L² projections \(P_1,P_3\) are **not orthogonal H¹ projections**, so the second upper estimate being smaller is an observed source-specific bound, not a general theorem that residual H¹ energies monotonically decrease with projection rank.
