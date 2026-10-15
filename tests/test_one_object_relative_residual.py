@@ -118,5 +118,25 @@ class InfiniteToyObstructionTests(unittest.TestCase):
             self.assertFalse(out["bounded_zero_shift_response"])
             self.assertFalse(out["authentic_weil"])
 
+
+    def test_no_uniform_high_residual_from_H1_bound_alone(self):
+        for N in (1,2,3,8,32,1024):
+            cert=r.high_frequency_residual_no_uniform_budget(N)
+            self.assertEqual(cert["hidden_high_index"],N+1)
+            self.assertEqual(cert["raw_source_coefficient"],F(1,N+1))
+            self.assertEqual(cert["source_H1_norm_squared"],F(1))
+            self.assertEqual(cert["actual_zero_shift_short_response"],F(1))
+            self.assertEqual(cert["missing_residual_H1_squared"],F(1))
+            self.assertTrue(cert["all_first_N_high_probes_zero"])
+            self.assertTrue(cert["uniform_H1_unit_ball_completion_rate_refuted"])
+            self.assertFalse(cert["fixed_original_zeta_source_falsified"])
+
+    def test_no_implicit_original_arithmetic_source_from_high_source_trap(self):
+        with self.assertRaises(r.ResidualSourceError):
+            r.high_frequency_residual_no_uniform_budget(0)
+        with self.assertRaises(r.ResidualSourceError):
+            r.high_frequency_residual_no_uniform_budget(3.0)
+
+
 if __name__=="__main__":
     unittest.main()
