@@ -32,3 +32,6 @@ Source: SHA-pinned original completed zeta Suzuki source_weil_hierarchy.py; unmo
 | S8c actual nonzero prime-2 transfer INSIDE 30-moment high sector | PROVED LOCAL with exact Fraction polynomial witness | f=(D^30 phi_q)+(D^30 phi_q)(·−log2) on two original source packets, phi_q=t^q(delta−t)^q, q>=34; all first 30 moments vanish, u=i f' has all 30 Legendre low projections zero, yet genuine translated overlap=||D^30 phi_q||²>0; original packet sign remains >3/5 | not full low Schur sign, finite polynomial C³ not falsely claimed Cc∞ |
 
 The original-source high-sector coupled witness is exposed by true_prime2_coupled_thirty_moment_witness with an exact positive rational norm and 30 moment-zero certificates. The analytic domain extends to H0¹(E2), with smooth approximation; PR #107 source-high evidence is an independent premise and not re-proved by same-model tests.
+
+
+| S8d authentic FIRST-LOW Legendre to genuine p2 packet PRIME-COMPONENT cross nonzero | PROVED LOCAL, exact original rational lower | low u1=2sqrt3 x, Neumann primitive v1=sqrt3(x²−1/4), paired translated positive polynomial, actual log2/sqrt2 coefficient; strict Q2(v1,f)>w2_lower*[1/2−(7/16)²−(3/10)²]*delta^(2q+1)*(q!)²/(2q+1)!>0 | completed signed total Q(v1,f) and 30-low short not certified |
