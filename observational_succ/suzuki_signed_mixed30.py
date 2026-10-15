@@ -100,12 +100,39 @@ def original_prime2_hinge_integral(poly):
     old=src.log2_iv()
     if lo>old.hi or hi<old.lo:
         raise OriginalMixedGaugeError("different prime clocks disagreed")
-    b=src.I(lo,hi)
-    out=src.iv(0)
+    if not F(0)<lo<=hi<F(1):
+        raise OriginalMixedGaugeError("real original log(2) not enclosed in (0,1)")
+    # For the monomial t^k, the exact positive hinge integral is
+    #
+    #   H_k(b) = 1/(k+2) - b/(k+1)
+    #            + b**(k+2)/((k+1)*(k+2)).
+    #
+    # H'_k(b)=-(1-b**(k+1))/(k+1) < 0 for 0<b<1.
+    # Thus its TRUE enclosure is [H_k(hi),H_k(lo)], retaining the
+    # correlation between both occurrences of the SAME original log2.
+    # Work with exact 190-digit rational endpoints throughout rather
+    # than exponentiating src.I (which has no __pow__) or rounding each
+    # enormous shifted-Legendre coefficient to the 32-digit source grid.
+    def hinge_monomial(k,b):
+        return (F(1,k+2)-b/F(k+1)
+                +b**(k+2)/F((k+1)*(k+2)))
+    lower=F()
+    upper=F()
     for k,c in enumerate(poly):
-        if c:
-            out+=q(c)*(F(1,k+2)-b/F(k+1)+b**(k+2)/F((k+1)*(k+2)))
-    return out
+        v=q(c)
+        if not v:
+            continue
+        term_lo=hinge_monomial(k,hi)
+        term_hi=hinge_monomial(k,lo)
+        if term_lo>term_hi:
+            raise ArithmeticError("original source prime hinge lost monotonicity")
+        if v>0:
+            lower+=v*term_lo
+            upper+=v*term_hi
+        else:
+            lower+=v*term_hi
+            upper+=v*term_lo
+    return src.I(lower,upper)
 
 @lru_cache(maxsize=512,typed=True)
 def signed_source_poly_moment(poly,J):
