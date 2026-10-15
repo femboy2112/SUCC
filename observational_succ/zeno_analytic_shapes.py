@@ -115,3 +115,31 @@ def signed_double_diagonal(n):
             "one_extra_column":signed_double_successor(n,n+1)["signed_rectangle_total"],
             "joint_limit_exists":False,
             "physical_time_order_is_source_dependent":True}
+
+
+def positive_double_successor(n,m):
+    """A lawful TWO-axis Zeno with a common global limit, unlike signed toy.
+
+    Source weights w_i=2^(-i-1) and v_j=2*3^(-j-1) are >=0, with
+    each infinite sum 1. Finite rectangle S=(1-2^-N)(1-3^-M).
+    The exact tail 1-S <=2^-N+3^-M proves uniform joint convergence.
+    Classical positive Tonelli is the general theorem.
+    """
+    index(n);index(m)
+    if m<1:raise AnalyticShapeError("positive grid needs m>=1")
+    nsum=sum((Q(1,2**(i+1)) for i in range(n)),Q())
+    msum=sum((Q(2,3**(j+1)) for j in range(m)),Q())
+    value=nsum*msum
+    formula=(1-Q(1,2**n))*(1-Q(1,3**m))
+    if value!=formula:raise ArithmeticError("positive source term factorization failed")
+    error=1-value
+    bound=Q(1,2**n)+Q(1,3**m)
+    if not 0<=error<=bound:
+        raise ArithmeticError("joint positive SUCC tail proof failed")
+    return {"source":"NONNEGATIVE_PRODUCT_SOURCE_TWO_SUCC",
+            "row_horizon":n,"column_horizon":m,
+            "finite_value":value,"global_limit":Q(1),
+            "tail_exact":error,"tail_2axis_upper":bound,
+            "both_iterated_limits_equal":True,
+            "joint_limit_with_effective_modulus":True,
+            "physical_omega_action_executed":False}
