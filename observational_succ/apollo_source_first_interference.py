@@ -376,3 +376,63 @@ def finite_feature_graph_criterion(positive,negative):
         "true_original_Weil_contraction_proved":False,
         "RH_proved":False,
     }
+
+
+def authentic_full_negative_feature_transfer_bound(a):
+    """Construct an UNCONDITIONAL bounded graph from positive to negative.
+
+    Fix 0<a<=2, true prime active set P_a from the SHA-pinned source.
+    In Brownian v∈L²(-a,a) source coordinates, true K2 has:
+       E_+(v) = Q_Gamma(v)+8|<v,s'>|²+
+                sum_{n∈P_a}w_n|| (S_bn-I)v ||²,
+       E_-(v) = (C_inf+2sum w_n)||v||²+8|<v,h'>|²,
+       h'(t)=sinh(t/2)/2.
+    First REAL Gamma rung >=gamma(a)||v||², gamma=4e^-a/2>0.
+    E_- <=[C_inf+2sum w_n+2(sinh a-a)]||v||².
+    Therefore positive feature F_+ is INJECTIVE and defines a
+    UNIQUE BOUNDED linear graph T_a(F_+ v)=F_- v with
+       ||T_a||² <= negative_budget/gamma(a).
+    This does NOT show ||T_a||<=1; that is exactly APOLLO K4/RH-hard.
+    """
+    aa=_positive(a)
+    if aa>2:
+        raise PrimeInterferenceError("Original source prime chart limited to 0<a<=2")
+    src=_source()
+    if src.contact_iv().hi>=F(43,8):
+        raise PrimeInterferenceError("True zeta real contact bound missing")
+    labels=true_third_prime_wavefronts(2*aa)
+    jets=[]
+    for z in labels:
+        weight=src.log_iv(z.p)*src.sqrt_inverse(z.n)
+        jets.append((z.n,weight.lo,weight.hi))
+    sum_hi=sum((hi for _,lo,hi in jets),F())
+    if aa<=F(1,2):
+        # Classical source small-interval polar bound, proved via sinh series.
+        pole_upper=F(1,16)
+    else:
+        # 2(sinh a-a)<e^a<2^(ceil(2a)+1), using log2>1/2.
+        pole_upper=F(2**(_ceil(2*aa)+1))
+    neg_upper=F(43,8)+2*sum_hi+pole_upper
+    gamma=gamma_positive_first_Brownian_recovery(aa)["Gamma0_L2_relative_lower"]
+    norm_squared_upper=neg_upper/gamma
+    if not gamma>0 or not norm_squared_upper>0:
+        raise ArithmeticError("Source first real Gamma failed finite-window graph coercivity")
+    return {
+        "source":"SHA_PINNED_ORIGINAL_COMPLETED_ZETA_KREIN",
+        "a":aa,
+        "true_active_prime_powers":tuple(n for n,_,_ in jets),
+        "true_prime_half_density_weight_intervals":tuple(jets),
+        "source_contact_upper":F(43,8),
+        "negative_pole_upper":pole_upper,
+        "negative_feature_energy_L2_upper":neg_upper,
+        "positive_first_Gamma_L2_lower":gamma,
+        "source_positive_to_negative_graph_operator_norm_squared_upper":
+            norm_squared_upper,
+        "positive_feature_injective_on_compact_Brownian_carrier":True,
+        "negative_feature_determined_by_positive_without_assuming_sign":True,
+        "unique_bounded_graph_on_minimal_positive_feature_span":True,
+        "this_bound_itself_certifies_contraction":norm_squared_upper<=1,
+        "RH_equivalent_all_windows_contraction_proved":False,
+        "physical_actualization_order_proved":False,
+        "RH_proved":False,
+    }
