@@ -22,5 +22,7 @@ jobs:
         run: python -m pip install -e ".[test]"
       - name: True completed Weil four-low analytic signed source interval at Gamma J32
         run: python scripts/tate_weighted_bessel_original_low4_scan.py --gamma-modes 32
+      - name: Deeper true real Gamma J64 same 4x4 signed low source and tail
+        run: python scripts/tate_weighted_bessel_original_low4_scan.py --gamma-modes 64
       - name: Verify original arithmetic source immutability
         run: python scripts/verify_provenance.py
