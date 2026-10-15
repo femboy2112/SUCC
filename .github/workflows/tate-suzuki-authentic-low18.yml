@@ -1,0 +1,27 @@
+name: Authentic Suzuki low18 signed interval scan
+
+on:
+  push:
+    branches:
+      - 'research/tate-suzuki-fourier-high-moment-*'
+  pull_request:
+    paths:
+      - 'scripts/tate_suzuki_authentic_low18_scan.py'
+      - 'observational_succ/tate_suzuki_fourier_schur.py'
+      - '.github/workflows/tate-suzuki-authentic-low18.yml'
+
+jobs:
+  genuine-original-low18:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install pinned numerical source tests
+        run: python -m pip install -e ".[test]"
+      - name: Execute COMPLETE actual source 18x18 low interval stage J2
+        run: python scripts/tate_suzuki_authentic_low18_scan.py
+      - name: Strict original source import provenance
+        run: python scripts/verify_provenance.py
