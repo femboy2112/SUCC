@@ -146,3 +146,34 @@ Reproduce targeted: python -m unittest discover -s tests -p 'test_tate_local_con
 **Primary references (not SUCC novelty claims):** Tate, *Fourier Analysis in Number Fields and Hecke's Zeta-Functions*, 1950 (Cassels–Fröhlich, Chapter XV): https://old.maa.org/node/110814 ; Suzuki, *Aspects of the screw function corresponding to the Riemann zeta-function*, J. London Math. Soc. 108 (2023): https://doi.org/10.1112/jlms.12785 ; Suzuki, *Weil's quadratic form via the screw function* (2026): https://arxiv.org/abs/2606.09096 ; Connes–Consani–Moscovici, *Zeta Spectral Triples* (2025): https://arxiv.org/abs/2511.22755 ; Connes, *Trace formula on the adele class space and Weil positivity*: https://www.researchgate.net/publication/265411204_Trace_formula_on_the_Adele_Class_Space_and_Weil_Positivity .
 
 **RH PROVED: NO.**
+
+
+## 8. Tate-to-signed-Weil source profile bridge T5
+
+The second implementation checkpoint, observational_succ/tate_weil_source_bridge.py, reuses the true prime-power tape from completed_weil_transport.py, rather than duplicating or replacing Suzuki's existing signed completed Weil operator. Immutable source profiles prevent replacing the zeta test by a ramified twist without explicitly changing conductor, Gamma parity, pole status and character coefficient. Both require half-density 1/2 and root number +1; the latter is the imported classical Gauss/Poisson fact.
+
+For Re(s)>1, zeta with xi(s)=s(s-1) pi^{-s/2} Gamma(s/2) zeta(s)/2 satisfies
+\[
+2\xi'/\xi(s)=2/s+2/(s-1)+\psi(s/2)-\log\pi
+-2\sum_{p,k\ge1}(\log p)p^{-ks}.
+\tag{T5-zeta}
+\]
+For primitive odd conductor-3 character, Lambda_chi(s)=(3/pi)^((s+1)/2) Gamma((s+1)/2)L(s,chi3):
+\[
+2\Lambda_\chi'/\Lambda_\chi(s)=
+\log(3/\pi)+\psi((s+1)/2)
+-2\sum_{p,k\ge1}(\log p)\chi_3(p)^k p^{-ks}.
+\tag{T5-chi3}
+\]
+No completed pole terms appear for chi3 and its ramified p=3 Euler factor is absent. These are **absolutely convergent Euler-source identities on Re(s)>1**. The separate classical Poisson continuation must not be conflated with continuing the Euler series term by term.
+
+For integer N>=3, including every genuine prime power n=p^k<=N, either source and every complex s with Re(s)=sigma>1 obey
+\[
+\left|2\frac{\Lambda'}{\Lambda}(s)-F_N(s)\right|
+\le 2 N^{1-\sigma}\left(\frac{\log N}{\sigma-1}+
+\frac{1}{(\sigma-1)^2}\right).
+\tag{T5-tail}
+\]
+Proof: |chi3(p)^k|<=1, von Mangoldt Lambda(n)<=log(n) and the CW-03 decreasing-integrand tail majorant. The numerical output of the RHS is **not** a directed-rounding interval. Both profiles have independent complex holdouts against directly differentiated zeta/Hurwitz expressions. Wrong Gamma parity, completed poles, conductor, half-density and fake composite atoms are negative controls.
+
+**T5 verdict:** CLASSICAL source identity / PROVED LOCAL typed wiring / TESTED numerical holdouts. This is a zero-independent logarithmic-derivative **germ** adapter, not a proven all-test Schwartz–Bruhat to signed Weil distribution map. It does not prove Suzuki all-interval positivity, the zero-shift resolvent range or the Connes spectral limit. RH PROVED: NO.
