@@ -117,7 +117,13 @@ if __name__=="__main__":
     data=receipt()
     if sys.argv[1:]==["--verify"]:
         file=Path(__file__).resolve().parents[1]/"research/2026-10-15/TATE_CENTRAL_REFLECTION_RECEIPT.json"
-        if json.loads(file.read_text(encoding="utf-8"))!=data:
+        expected=json.loads(file.read_text(encoding="utf-8"))
+        if expected!=data:
+            for key in sorted(set(data)|set(expected)):
+                if expected.get(key)!=data.get(key):
+                    print("SOURCE_RECEIPT_DIFF",key,
+                          "observed=",json.dumps(data.get(key),sort_keys=True),
+                          "expected=",json.dumps(expected.get(key),sort_keys=True))
             raise SystemExit("Original Tate central reflection source receipt MISMATCH")
         print("TATE reflection prime-power jets / Brownian center / non-Euler controls VERIFIED (not RH)")
     elif not sys.argv[1:]:
