@@ -9,9 +9,11 @@ on:
       - 'observational_succ/one_object_relative_residual.py'
       - 'observational_succ/one_object_source_residual.py'
       - 'observational_succ/one_object_contact_neumann.py'
+      - 'observational_succ/one_object_true_derivative.py'
       - 'tests/test_one_object_relative_residual.py'
       - 'tests/test_one_object_source_residual.py'
       - 'tests/test_one_object_contact_neumann.py'
+      - 'tests/test_one_object_true_derivative.py'
       - 'scripts/one_object_residual_probe.py'
       - 'research/2026-10-15/ONE_OBJECT_RESIDUAL_*'
       - '.github/workflows/one-object-relative-schur.yml'
@@ -36,7 +38,7 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: python -m pip install -e '.[test]'
       - name: Syntax and exact source modules
-        run: python -m compileall -q observational_succ/one_object_relative_residual.py observational_succ/one_object_source_residual.py observational_succ/one_object_contact_neumann.py tests/test_one_object_relative_residual.py tests/test_one_object_source_residual.py tests/test_one_object_contact_neumann.py scripts/one_object_residual_probe.py
+        run: python -m compileall -q observational_succ/one_object_relative_residual.py observational_succ/one_object_source_residual.py observational_succ/one_object_contact_neumann.py observational_succ/one_object_true_derivative.py tests/test_one_object_relative_residual.py tests/test_one_object_source_residual.py tests/test_one_object_contact_neumann.py tests/test_one_object_true_derivative.py scripts/one_object_residual_probe.py
       - name: Original high-sector source/Neumann zero-shift regressions
         run: |
           python -m unittest discover -s tests -p 'test_hilbert_weil_atlas.py' -v
@@ -47,6 +49,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_one_object_relative_residual.py' -v
           python -m unittest discover -s tests -p 'test_one_object_source_residual.py' -v
           python -m unittest discover -s tests -p 'test_one_object_contact_neumann.py' -v
+          python -m unittest discover -s tests -p 'test_one_object_true_derivative.py' -v
       - name: Frozen source and sign-debt receipt
         run: python scripts/one_object_residual_probe.py --verify research/2026-10-15/ONE_OBJECT_RESIDUAL_RECEIPT.json
       - name: Original immutable SUCC provenance
