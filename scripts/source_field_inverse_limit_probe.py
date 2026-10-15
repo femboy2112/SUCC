@@ -12,6 +12,7 @@ from pathlib import Path
 from observational_succ.tate_finite_bruhat_observers import (
     finite_bruhat_chart, exact_tate_finite_plancherel,
     finite_tate_refinement_square, conductor_three_probe_gap,
+    finite_tate_coset_discriminator,
 )
 from observational_succ.source_field_gluing import (
     recursive_positive_gram_stage, exact_scalar_schur_gluing,
@@ -46,8 +47,9 @@ def receipt():
     local_parseval=exact_tate_finite_plancherel(3,0,1,(0,1,-1))
     local_square=finite_tate_refinement_square(3,0,1,(0,1,-1))
     ramified=conductor_three_probe_gap()
+    separator=finite_tate_coset_discriminator(3,0,1,(0,1,-1),(0,0,0))
     return {
-        "schema":"SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v5",
+        "schema":"SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v6",
         "source_schemas_are_NOT_empirical_attestation":True,
         "simple":{
             "field":s["field"],
@@ -159,6 +161,13 @@ def receipt():
             "actual_ramified_chi3_fine_Fourier_phase":"sqrt(-3)/3",
             "actual_ramified_chi3_phase_norm_squared":
                 str(ramified["fine_phase_norm_squared"]),
+            "full_local_coset_family_jointly_separates":
+                separator["complete_coset_probe_family_jointly_separating"],
+            "finite_distinguishing_coset_index":
+                separator["first_distinguishing_coset"],
+            "finite_Haar_pairing_separation":
+                str(separator["exact_coset_Haar_pairing_difference"]),
+            "physical_probe_access_inferred":False,
             "full_Weil_sign_proved":False,
             "RH_proved":False,
         },
