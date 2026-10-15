@@ -377,3 +377,86 @@ def authentic_small_window_brownian_coercivity(a: int | F) -> dict:
         "all_RH_test_intervals_certified":False,
         "RH_proved":False,
     }
+
+
+
+def _exp_odd_taylor_lower(x: F, order: int = 9) -> F:
+    """Exact odd Taylor polynomial below exp(-x), x>=0, order=9.
+
+    Taylor's remainder has positive even degree (order+1), hence
+       exp(-x) >= P_9(x) = sum_{k=0}^9 (-x)^k/k!
+    for x>=0. P_9'(x)=-P_8(x)<0, since even P_8>exp(-x)>0.
+    """
+    z=_fraction(x)
+    if z<0 or order!=9:
+        raise OneObjectError("Only x>=0, rigorously odd Taylor order 9")
+    from math import factorial
+    return sum((F((-1)**k, factorial(k))*z**k for k in range(10)), F())
+
+
+def authentic_sharp_small_window_hilbert_factor(a: int | F) -> dict:
+    """ONE FULL SOURCE-TRUE POSITIVE HILBERT FACTOR over [-1/12,1/12].
+
+    Same genuine K_g=K_+-K_- as APOLLO K2, but proves uniformly
+       Σbar(z_i)z_j K_g(x_i,x_j) > (1/100)||v||²_B
+    for all finitely many x_i∈[-a,a], complex z_i, 0<a<=1/12.
+    Thus the source feature correspondence Φ_+ -> Φ_- extends
+    BY PROVED DOMINANCE to a contraction T_a. Consequently
+       Ψ_a(x)=(I-T_a* T_a)^1/2 Φ_+(x)
+    is a legitimate positive Hilbert feature with Gram TRUE K_g
+    on this entire small interval. The operator T_a is defined
+    via completion of the prescribed feature span; this is NOT
+    an explicit closed-form numerical kernel and not RH.
+
+    Improvement on 8-mode rough-Schur: R_alpha has integral kernel
+    (alpha/2)exp(-alpha|t-s|) on support [-a,a].
+    Its exact Schur maximum is 1-exp(-alpha a), not merely alpha a,
+    so Gamma j energy ≥ (4/(4j+1))exp(-alpha_j*a)||v||².
+    Use source-authentic first 20 Gamma modes, odd Taylor P_9 as
+    *rigorous rational lower* to exp(-alpha a).
+    Original C_inf<43/8 by SHA pinned source rational intervals,
+    and negative pole ≤ a³/(1-a). At a=1/12 the exact rational
+    margin exceeds 1/100; all gamma polynomial contributions
+    decrease in a since P_9'=-P_8<0. Thus margin at any a≤1/12
+    is ≥ its value at 1/12 >1/100. No primes active since
+    2a≤1/6<log2; original pole/Gamma/contact still ALL present.
+
+    This proves actual all-finite-set source positivity on a
+    nontrivial window; global all-a K4 contraction remains RH-hard.
+    """
+    aa=_fraction(a)
+    if not 0<aa<=F(1,12):
+        raise OneObjectError("Uniform source contraction certified only for 0<a<=1/12")
+    from .apollo_derivative_jets import _source
+    source=_source()
+    if not source.contact_iv().hi<F(43,8):
+        raise ArithmeticError("Original source contact C_inf<43/8 proof failed")
+    if not source.log2_iv().lo>F(1,6):
+        raise ArithmeticError("Original first-prime activation separation failed")
+    def gamma_lower(radius: F) -> F:
+        return sum((F(4,4*j+1)*_exp_odd_taylor_lower(F(4*j+1,2)*radius)
+                    for j in range(20)), F())
+    # Even endpoint P9>0 checked exactly; no signed Taylor artifice.
+    if _exp_odd_taylor_lower(F(77,2)*F(1,12))<=0:
+        raise ArithmeticError("The maximal first-20 Gamma Taylor lower is not positive")
+    original_real_margin=gamma_lower(aa)-F(43,8)-aa**3/(1-aa)
+    endpoint=F(1,12)
+    globally_minimal_margin=gamma_lower(endpoint)-F(43,8)-endpoint**3/(1-endpoint)
+    if globally_minimal_margin<=F(1,100) or original_real_margin<globally_minimal_margin:
+        raise ArithmeticError("Source-derived all-finite-set positivity margin not certified")
+    return {"a":aa,
+            "original_sha_pinned_source":True,
+            "real_gamma_rungs_used":20,
+            "gamma_taylor_order":9,
+            "original_real_contact_upper":F(43,8),
+            "original_first_prime_inactive":True,
+            "gamma_brownian_lower":gamma_lower(aa),
+            "negative_pole_brownian_upper":aa**3/(1-aa),
+            "exact_positive_coercivity_margin":original_real_margin,
+            "all_real_a_at_most_1over12_floor":F(1,100),
+            "all_finite_complex_source_gram_positive":True,
+            "contractive_Ta_exists_by_independent_coercivity_proof":True,
+            "positive_feature_Psi_a_exists_by_completion":True,
+            "feature_Psi_a_computed_in_closed_form":False,
+            "first_prime_crossed":False,
+            "all_a_and_RH_proved":False}
