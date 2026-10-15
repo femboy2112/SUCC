@@ -10,7 +10,8 @@ from observational_succ.tate_observer_completion import (
     normal_fourier_naturality, PadicBruhatChart,
     local_tate_fourier, tate_local_inversion_and_parseval,
     refine_local_precision, refine_local_support,
-    local_padic_real_boundary_no_go,
+    local_padic_real_boundary_no_go, exact_local_biaxial_diamond,
+    exact_crt_product_fourier,
 )
 from observational_succ.finite_fourier_carrier import CyclotomicElement
 
@@ -205,6 +206,53 @@ class LocalTateSchwartzBruhatChartTests(unittest.TestCase):
         self.assertFalse(w["real_is_pure_finite_inverse_limit"])
         self.assertFalse(w["finite_local_plus_Arch_Tate_completed"])
         self.assertFalse(w["RH_proved"])
+
+
+
+class RecursiveTwoDimensionalObserverCoherenceTests(unittest.TestCase):
+    def test_local_support_precision_biaxial_square_is_not_only_pairwise(self):
+        for p,r,s in ((2,0,1),(2,1,0),(2,0,2),(2,1,1),(3,0,1),(3,1,0)):
+            chart=PadicBruhatChart(p,r,s)
+            v=tuple(Q((k*k+2*k-3)%7-3,5) for k in range(chart.modulus))
+            result=exact_local_biaxial_diamond(chart,v)
+            self.assertTrue(result["strict_source_diamond_commutes"])
+            self.assertTrue(result["dual_Fourier_diamond_commutes"])
+            self.assertEqual(result["all_terminal_cells_verified"],chart.p**2*chart.modulus)
+            self.assertFalse(result["source_map_adequate_to_full_adele"])
+            self.assertFalse(result["RH_proved"])
+        with self.assertRaises(AtomicDescentError):
+            exact_local_biaxial_diamond(PadicBruhatChart(3,1,1),(1,)*9) # 81 cells >32
+
+    def test_crt_dual_pairing_requires_true_inverse_character_transport(self):
+        for p,ep,q,eq,a,b in (
+            (2,1,3,1,(1,-1),(2,0,-1)),
+            (2,2,3,1,(1,-2,3,0),(1,2,-2)),
+            (2,1,5,1,(1,2),(3,0,1,-1,2)),
+            (3,1,2,2,(2,1,-1),(1,0,2,-2)),
+            (3,1,5,1,(1,0,2),(0,1,-1,3,2)),
+            (2,2,5,1,(0,-2,3,1),(3,1,0,-1,2)),
+        ):
+            result=exact_crt_product_fourier(p,ep,q,eq,a,b)
+            self.assertTrue(result["exact_CRT_Fourier_product"])
+            self.assertEqual(result["global_dual_frequencies_verified"],len(a)*len(b))
+            self.assertEqual(result["actual_distinct_Euler_primes"],(p,q))
+            self.assertTrue(result["joint_composite_modulus_not_a_primitive_Euler_place"])
+            self.assertFalse(result["RH_proved"])
+        # k must be carried to CRT dual inverse phase, not copied by coordinate.
+        bad=exact_crt_product_fourier(2,1,3,1,(1,-1),(2,0,-1))
+        self.assertGreater(bad["naive_frequency_transport_disagreement_count"],0)
+
+    def test_crt_wrong_prime_and_source_tensor_mutants_rejected(self):
+        for args in (
+            (6,1,3,1,(1,)*6,(1,)*3),
+            (2,1,2,1,(1,2),(1,2)),
+            (2,1,3,1,(1,2,3),(1,0,2)),
+            (2,1,3,1,(1,2),(1,2,0.5)),
+            (2,2,11,1,(1,)*4,(1,)*11),
+            (True,1,3,1,(1,2),(1,2,3)),
+        ):
+            with self.assertRaises(AtomicDescentError):
+                exact_crt_product_fourier(*args)
 
 
 def _conj_example(z:CyclotomicElement)->CyclotomicElement:
