@@ -1,0 +1,83 @@
+name: Source-canonical Suzuki moment Schur certificates
+
+on:
+  push:
+    branches:
+      - research/suzuki-canonical-moment-schur-2026-10-14
+  pull_request:
+    paths:
+      - 'observational_succ/suzuki_moment_schur.py'
+      - 'tests/test_suzuki_moment_schur.py'
+      - 'tests/test_suzuki_legendre_source.py'
+      - 'observational_succ/suzuki_legendre_source.py'
+      - 'research/2026-10-14/SUZUKI_CANONICAL_SCHUR_RECEIPT.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  authentic-source-signed-schur:
+    name: Pinned prime/Gamma × moment Schur (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify original source provenance and receipt
+        run: |
+          python scripts/verify_provenance.py
+          python scripts/suzuki_moment_schur_probe.py --verify research/2026-10-14/SUZUKI_CANONICAL_SCHUR_RECEIPT.json
+      - name: Run all exact source/Legendre/Feshbach tests
+        run: python -m unittest discover -s tests -p 'test_suzuki_moment_schur.py' -v
+      - name: Exact rational direct Legendre/Gamma/prime polynomial proofs
+        run: |
+          python -m unittest discover -s tests -p 'test_suzuki_legendre_source.py' -v
+          python scripts/suzuki_direct_legendre_probe.py --verify research/2026-10-14/SUZUKI_DIRECT_LEGENDRE_RECEIPT.json
+      - name: ACTUAL ORIGINAL g_J direct 3x3 low Legendre analytic interval
+        run: |
+          python scripts/suzuki_direct_legendre_probe.py --source-stage --rank 3 --J 2 > "$RUNNER_TEMP/original-source-legendre.json"
+          python - <<'PYCI'
+          import json,os
+          from fractions import Fraction
+          from pathlib import Path
+          r=json.loads((Path(os.environ['RUNNER_TEMP'])/'original-source-legendre.json').read_text())
+          assert r['rank']==3 and r['J']==2 and r['RH_proved'] is False
+          M=r['matrix_interval']
+          assert len(M)==3 and len(M[0])==3
+          assert M[0][1]==['0','0'] and M[1][0]==['0','0']
+          assert all(Fraction(lo)<=Fraction(hi) for row in M for lo,hi in row)
+          assert Fraction(M[0][0][1])<0, 'Gamma-J2 signed low block is not certified negative as expected'
+          print('GENUINE_GAMMA_J2_PRIME2_POLE_CONTACT_LOW_MATRIX_CERTIFIED')
+          PYCI
+      - name: Mandatory true-Gamma 75-rung one-mode source-sign reversal
+        run: |
+          python scripts/suzuki_direct_legendre_probe.py --source-stage --rank 1 --J 75 > "$RUNNER_TEMP/original-source-legendre-J75.json"
+          python - <<'PYCI'
+          import json,os
+          from fractions import Fraction
+          from pathlib import Path
+          z=json.loads((Path(os.environ['RUNNER_TEMP'])/'original-source-legendre-J75.json').read_text())
+          assert z['rank']==1 and z['J']==75 and z['RH_proved'] is False
+          assert z['omitted_authentic_Gamma_tail_PSD'] is True
+          assert Fraction(z['matrix_interval'][0][0][0])>0
+          print('TRUE_SOURCE_GAMMA_J75_ONE_LEGENDRE_RAYLEIGH_STRICTLY_POSITIVE')
+          PYCI
+      - name: ACTUAL PINNED Suzuki finite source full 30-by-30 low Schur
+        run: |
+          python scripts/suzuki_moment_schur_probe.py --source-stage > "$RUNNER_TEMP/real-source-schur.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          r=json.loads((Path(os.environ['RUNNER_TEMP'])/'real-source-schur.json').read_text())
+          assert r['stage']=='authentic_Suzuki_PR85_J2_N4'
+          assert r['low_modes']==30 and r['parity_blocks']==[15,15]
+          assert r['source_gamma_gain'] is True and r['RH_proved'] is False
+          print('ORIGINAL_SUZUKI_30_LOW_MODE_MATRIX_CONSTRUCTED')
+          PY
