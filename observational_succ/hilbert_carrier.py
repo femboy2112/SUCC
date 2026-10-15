@@ -422,3 +422,31 @@ def target_preimage_tube(x,y,order):
         "preimage_parameter_computed_to_infinite_precision":False,
         "surjectivity_uses_classical_nested_compactness":True,
     }
+
+
+def no_global_lipschitz_space_filler(candidate_constant):
+    """Finite exact area-cover obstruction to any L-Lipschitz [0,1]->square.
+
+    Divide time into m equal intervals. A global Lipschitz bound L means
+    each image fits in a square of area <=(2L/m)^2. Their union occupies
+    area <=4L²/m<1 for m=floor(4L²)+1. Thus NO SUCH map fills the square.
+    This is a general classical mathematical implication. We do NOT
+    claim an actual Hilbert curve obeys an L-Lipschitz hypothesis.
+    """
+    L=exact(candidate_constant)
+    if L<0:
+        raise HilbertCarrierError("Lipschitz upper bound must be nonnegative")
+    m=(4*L*L).numerator//(4*L*L).denominator+1
+    area_bound=4*L*L/m
+    if not area_bound<1:
+        raise ArithmeticError("finite Lipschitz area obstruction failed")
+    return {
+        "hypothetical_Lipschitz_constant":L,
+        "finite_time_interval_cover_count":m,
+        "upper_area_of_image":area_bound,
+        "unit_square_area":Q(1),
+        "surjective_with_this_Lipschitz_bound":False,
+        "actual_Hilbert_curve_Lipschitz":False,
+        "requires_a_verified_global_Lipschitz_hypothesis":True,
+        "original_square_completion_proved_by_other_classical_topology":True,
+    }
