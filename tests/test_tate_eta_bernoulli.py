@@ -183,6 +183,17 @@ class IndependentClassicalNumericHoldouts(unittest.TestCase):
             wrongrhs=mp.sqrt(2*mp.pi/t)*eta_heat(td,wrong)
             self.assertGreater(abs(wronglhs-wrongrhs),mp.mpf("1e-3"))
 
+    def test_selfdual_Lambert_series_exact_modular_value(self):
+        """This is a numeric holdout; analytical authority is classical eta S."""
+        import mpmath as mp
+        with mp.workdps(85):
+            lhs=mp.fsum(
+                sigma_one(n)*mp.exp(-2*mp.pi*n) for n in range(1,80)
+            )
+            rhs=mp.mpf(1)/24 - 1/(8*mp.pi)
+            self.assertLess(abs(lhs-rhs),mp.mpf("1e-80"))
+            self.assertGreater(lhs,0)
+
     def test_independent_zeta_product_vs_finite_divisor_source_with_proved_tail(self):
         import mpmath as mp
         N=4000
