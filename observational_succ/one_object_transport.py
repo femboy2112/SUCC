@@ -271,3 +271,25 @@ def connes_trace_stabilization(p:int,unit:int,max_depth:int=6) -> dict:
             "stabilized_local_factor":stable,
             "trace_unbounded_in_depth_if_unit_one":unit==1,
             "global_adelic_trace_identified":False,"RH_proved":False}
+
+
+
+def sonin_compact_defect_countermodel(index: int) -> dict:
+    """Exact rank-one no-go for the tempting 'positive trace+compact defect' shortcut.
+
+    In the finite subspace of ℓ²(N), T=diag(2^-k) is positive;
+    rank-one D=-2*2^-index |e_index><e_index| is self-adjoint compact.
+    T+D has the NEGATIVE eigenvalue -2^-index. Moreover ||D||=2^(1-index)
+    tends to zero as index grows, so arbitrarily small compact corrections
+    can invert sign in directions without a uniform positive gap.
+
+    THIS IS A SYNTHETIC HILBERT COUNTERMODEL, NOT CONNES/WEIL SOURCE DATA.
+    """
+    n=_int(index,1,128)
+    t=F(1,2**n)
+    d=-2*t
+    return {"index":n,"positive_trace_diagonal":t,
+            "rank_one_defect":d,"combined_signed_eigenvalue":t+d,
+            "defect_norm":-d,"defect_rank":1,
+            "compactness_implies_Weil_sign":False,
+            "original_zeta_source":False,"RH_proved":False}
