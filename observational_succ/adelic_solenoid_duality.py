@@ -68,6 +68,12 @@ class RationalSolenoidChart:
     def diagonal_integer_shift(self,n:int)->"RationalSolenoidChart":
         """Gauge [t,z]=[t+n,z+n]. Keep an explicit source shift receipt."""
         k=_int(n,"diagonal gauge")
+        # This is a QUOTIENT-STATE chart, not a causal event receipt.
+        # The identity gauge must preserve its normal form literally;
+        # otherwise adding the symbolic zero changes dataclass structure
+        # even though every genuine modular observation is unchanged.
+        if k==0:
+            return self
         scalar=ProfiniteProgram.integer(k,source_id=self.source_id,epoch=self.epoch)
         return RationalSolenoidChart(self.real+k,self.integral_finite.add(scalar))
 
