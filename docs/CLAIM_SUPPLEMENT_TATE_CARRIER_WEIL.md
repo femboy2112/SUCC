@@ -28,6 +28,8 @@
 
 | TF-10 | Source-typed **free rational affine SUCC event paths** act functorially on a bona fide Tate Gaussian adelic tensor, commuting with all exact local Qp Fourier restrictions; event receipts retain history when bare maps collapse | PROVED RESTRICTED PAPER / EXACT FINITE SOURCE TESTED | GlobalSourceWord and independent SourceWord components; not a functor from arbitrary physical carrier experiments or complete Schwartz–Bruhat/Weil test spaces |
 
+| TF-11 | On compact tent autocorrelation with a=1, exact prime source support, the completed Weil model including pole/Gamma and halfdensity reacts to fake n=6 by -2δ log6 /sqrt6 h(log6) | TESTED NUMERICAL SOURCE CONTRAST; CLASSICAL SIGNED FORMULA IMPORTED | Existing compact_weil_tent with original vs mutant source, equal analytic Gamma/pole; mpmath equality test is not a rigorous interval sign certificate and fake6 violates true ζ |
+
 ## Stop conditions
 
 Fake composite n=6 is not a prime place, but multiplication by scalar 6 is allowed on an actual field Q_p. Likewise p is invertible in Q_p but not in Z/p^k. Do not declare source tampering lawful for the genuine ζ-function. Counterexample to finite prime observations with unspecified source tail is a *probe gap*, not proof of true RH undecidability.
