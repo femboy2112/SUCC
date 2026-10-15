@@ -1,0 +1,205 @@
+{
+  "arch_gamma_heat_resolvent": [
+    {
+      "N": 600,
+      "a": "2-1/2",
+      "arch_digamma": "-1.72194555075093303475",
+      "arch_fourier_integral": "-1.72194555075093303475",
+      "arch_real_integral": "-1.72194555075093303475",
+      "independent_zeta_derivative": "(0.1381324630600013524503 + 0.0j)",
+      "observed_heat_remainder_abs": "0.003360899530923540405471",
+      "pole_plus_arch_minus_prime_heat": "(0.1414933625909248928558 + 0.0j)",
+      "rigorous_prime_error_upper": "0.02465643218405382122949",
+      "s": 2
+    },
+    {
+      "N": 600,
+      "a": "3-1/2",
+      "arch_digamma": "-1.108239911870823653584",
+      "arch_fourier_integral": "-1.108239911870823653584",
+      "arch_real_integral": "-1.108239911870823653584",
+      "independent_zeta_derivative": "(0.2287813904792885327093 + 0.0j)",
+      "observed_heat_remainder_abs": "0.000002826489299208986363467",
+      "pole_plus_arch_minus_prime_heat": "(0.2287842169685877416956 + 0.0j)",
+      "rigorous_prime_error_upper": "0.00001915813793115596213569",
+      "s": 3
+    }
+  ],
+  "arithmetic_source": {
+    "fake6_non_euler_defect": "a(6)=1001 != a(2)a(3)=1",
+    "mutant_positive_coefficients": {
+      "1": "1",
+      "12": "1001",
+      "2": "1",
+      "3": "1",
+      "36": "501001",
+      "6": "1001"
+    },
+    "tested_first_primes": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        2
+      ],
+      [
+        9,
+        3
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        16,
+        2
+      ],
+      [
+        17,
+        17
+      ],
+      [
+        19,
+        19
+      ],
+      [
+        23,
+        23
+      ],
+      [
+        25,
+        5
+      ],
+      [
+        27,
+        3
+      ],
+      [
+        29,
+        29
+      ]
+    ]
+  },
+  "claims": {
+    "Suzuki_global_operator_limit": "UNVERIFIED",
+    "accelerated_H1_operator_form_remainder": "PROVED LOCAL WITH ANALYTIC BOUND O(J^-2)",
+    "digamma_to_completed_arch_distribution": "CLASSICAL DERIVED; contact constant preserved",
+    "fake6_positive_dirichlet_negative_kernel": "PROVED LOCAL BY RATIONAL UPPER BOUND",
+    "full_Weil_positivity": "UNVERIFIED; RH EQUIVALENT",
+    "heat_to_prime_vertical_line_uniqueness": "CLASSICAL PROVED; entire line required, finite samples do not suffice",
+    "independent_academic_priority_claimed": false,
+    "physical_carrier_attestation": false,
+    "screw_second_derivative_as_distribution": "PROVED LOCAL BY SOURCE WEDGE AND CLASSICAL EXPLICIT FORMULA",
+    "signed_Cc2_weil_identity": "CLASSICAL WEIL EXPLICIT FORMULA IMPORT",
+    "strict_H1_coercivity_forbidden": "CLASSICAL compact Suzuki signed kernel on each bounded interval",
+    "zero_positions_read_or_guessed": false
+  },
+  "compact_source_tests": [
+    {
+      "a": "1/4",
+      "arch_corrected_24": "-0.1139888702474946840881",
+      "arch_direct": "-0.1123927110987403059092",
+      "arch_finite_24": "-0.1122706571890754401019",
+      "observed_corrected_error": "0.00159615914875437817894",
+      "pole": "0.1253259025712504540126",
+      "prime_atoms": [],
+      "rigorous_C2_bound_exact": "21041/10952076",
+      "rigorous_H1_bilinear_bound_exact": "881/1825346",
+      "signed_prime": "0.0",
+      "support_radius": "1/2"
+    },
+    {
+      "a": "2/5",
+      "arch_corrected_24": "-0.3205934735237928626146",
+      "arch_direct": "-0.3195869945385699785263",
+      "arch_finite_24": "-0.3178443326303220722366",
+      "observed_corrected_error": "0.001006478985222884088272",
+      "pole": "0.3221397448605696410512",
+      "prime_atoms": [
+        2
+      ],
+      "rigorous_C2_bound_exact": "17512/13690095",
+      "rigorous_H1_bilinear_bound_exact": "881/1825346",
+      "signed_prime": "-0.001245739352645282688959",
+      "support_radius": "4/5"
+    },
+    {
+      "a": "4/5",
+      "arch_corrected_24": "-1.082121354945677914944",
+      "arch_direct": "-1.081667745586222474045",
+      "arch_finite_24": "-1.076623073158736334188",
+      "observed_corrected_error": "0.0004536093594554408992318",
+      "pole": "1.314545895102536086625",
+      "prime_atoms": [
+        2,
+        3,
+        4
+      ],
+      "rigorous_C2_bound_exact": "11399/13690095",
+      "rigorous_H1_bilinear_bound_exact": "881/1825346",
+      "signed_prime": "-0.2325345944915347532249",
+      "support_radius": "8/5"
+    }
+  ],
+  "negative_and_semantic_controls": {
+    "analytic_negative_1x1_kernel": "K_fake(2,2)=2*Psi_fake(2)<0",
+    "analytic_strict_Psi_fake_2_upper": "-49/3",
+    "conductor5_odd_arch_resolvent_s2": "0.5011980005632767210164",
+    "fake6_resolvent_delta_s2": "-99.54219273489194448958",
+    "fake6_same_zero_divisor_but_functional_equation_log_defect_s2_exact": "-53750/9",
+    "fake_composite_6_delta_b": "1000",
+    "modified_complete_function_has_infinite_order": true,
+    "numerical_fake_diagonal_kernel_2_2": "-304.5421358891407983054",
+    "numerical_fake_screw_2": "-152.2710679445703991527",
+    "true_source_remains_untouched": true
+  },
+  "parent_commit": "53934b3a5a980bb0f6e1001241822da5b6d928e5",
+  "source_scope": "authentic von Mangoldt prime powers, real Gaussian, zeta conductor 1 and even Gamma_R",
+  "status": "SOURCE_NORMALIZED_SIGNED_WEIL_TRANSPORT_EXACT_SCOPE",
+  "weil_identity_external": "Suzuki, On the Hilbert space derived from the Weil distribution (2025), equation (3.3)",
+  "zero_independent_suzuki_screw": [
+    {
+      "R": "1/4",
+      "observed_absolute_error": "0.009216035125799600383334",
+      "psi_24_rungs": "0.04201746115653408659982",
+      "psi_full_integral": "0.05123349628233368698315",
+      "rigorous_error_upper_exact": "909/75272"
+    },
+    {
+      "R": "1",
+      "observed_absolute_error": "0.005289876675552590313065",
+      "psi_24_rungs": "0.03871742856129993654715",
+      "psi_full_integral": "0.04400730523685252686022",
+      "rigorous_error_upper_exact": "303/18818"
+    },
+    {
+      "R": "2",
+      "observed_absolute_error": "0.00005499173239554926282874",
+      "psi_24_rungs": "0.05328613243946011970029",
+      "psi_full_integral": "0.05334112417185566896312",
+      "rigorous_error_upper_exact": "202/9409"
+    }
+  ]
+}

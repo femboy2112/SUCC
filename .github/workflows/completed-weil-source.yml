@@ -1,0 +1,40 @@
+name: Completed Weil source transport and signed Gamma ladder
+
+on:
+  push:
+    branches:
+      - 'research/real-place-weil-identification-*'
+  pull_request:
+    paths:
+      - 'observational_succ/completed_weil_transport.py'
+      - 'tests/test_completed_weil_transport.py'
+      - 'scripts/completed_weil_transport_probe.py'
+      - 'research/2026-10-14/COMPLETED_WEIL*'
+      - 'docs/CLAIM_SUPPLEMENT_COMPLETED_WEIL.md'
+      - '.github/workflows/completed-weil-source.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  signed_complete_source:
+    name: signed Weil source (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[test]'
+      - name: Source/mutant/analytic-bound tests
+        run: python -m unittest discover -s tests -p 'test_completed_weil_transport.py' -v
+      - name: Frozen source-first Weil scientific receipt
+        run: python scripts/completed_weil_transport_probe.py --verify research/2026-10-14/COMPLETED_WEIL_RECEIPT.json
+      - name: Source provenance preservation
+        run: python scripts/verify_provenance.py
