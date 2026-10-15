@@ -296,3 +296,73 @@ def first_missing_prime(prime_cutoff: int) -> dict:
         "Weil_full_test_factorization_from_finite_samples": False,
         "RH_proved": False,
     }
+
+
+
+def local_euler_logjet(p: int, s: int, depth: int) -> dict:
+    """Tate unramified local Mellin -> canonical prime-power logarithmic jet.
+
+    -d/ds log[(1-p^-s)^-1] = log(p) * sum_(k>=1) p^(-k*s)
+    for Re(s)>0. At positive integral s>=2 every ratio below is exact
+    Fraction, while log(p) remains a FORMAL positive prime log symbol.
+    """
+    _prime(p)
+    if type(s) is not int or not 2 <= s <= 20 or type(depth) is not int or not 0 <= depth <= 100:
+        raise TateFunctorError("Exact local logjet needs s>=2 and bounded depth")
+    ratio = F(p)**(-s)
+    partial = sum((ratio**k for k in range(1,depth+1)),F(0))
+    remainder = ratio**(depth+1)/(1-ratio)
+    full = ratio/(1-ratio)
+    if partial+remainder != full:
+        raise AssertionError("Source prime logarithmic derivative fails")
+    return {
+        "prime": p, "s": s,
+        "jet_labels": tuple((p**k,p) for k in range(1,depth+1)),
+        "formal_log_prime": p,
+        "coefficient_of_logp_partial": partial,
+        "coefficient_of_logp_tail": remainder,
+        "coefficient_of_logp_full": full,
+        "derivative_identity": "-d/ds log[(1-p^-s)^-1]",
+        "zero_inputs_used": False, "Weil_sign_proved": False,
+    }
+
+
+def finite_source_logjets(N: int, s: int) -> dict:
+    """Exact arithmetic cross-check against existing authentic Λ tape.
+
+    The *finite* coefficient grouping is an independent factorization
+    oracle. The all-prime Euler logarithmic derivative identity holds for
+    Re(s)>1 as an imported classical absolute-convergence theorem.
+    It MUST NOT be evaluated as that Dirichlet series at Re(s)=1/2.
+    """
+    from .completed_weil_transport import von_mangoldt_labels
+    if type(N) is not int or not 2 <= N <= 50_000:
+        raise TateFunctorError("Source prime-power cutoff in [2,50000] required")
+    if type(s) is not int or not 2 <= s <= 20:
+        raise TateFunctorError("Only absolutely convergent integer s>=2")
+    direct = []
+    for p in range(2,N+1):
+        if not prime(p):
+            continue
+        power = p
+        while power <= N:
+            direct.append((power,p))
+            power *= p
+    direct = tuple(sorted(direct))
+    imported = von_mangoldt_labels(N)
+    if direct != imported:
+        raise AssertionError("Independent prime-power source != inherited Λ oracle")
+    grouped={}
+    for n,p in direct:
+        grouped[p]=grouped.get(p,F(0))+F(n)**(-s)
+    if any(grouped[p] != sum((F(n)**(-s) for n,q in direct if q==p),F(0)) for p in grouped):
+        raise AssertionError("Grouped prime logarithmic coefficients inconsistent")
+    return {
+        "source_cutoff": N, "s": s, "prime_power_labels": direct,
+        "formal_logp_coefficients": tuple(sorted(grouped.items())),
+        "exact_original_von_Mangoldt_cross_oracle": True,
+        "all_prime_logderivative_requires_Re_s_gt_1": True,
+        "critical_line_dirichlet_series_converges": False,
+        "completed_archimedean_and_poles_included": False,
+        "RH_proved": False,
+    }
