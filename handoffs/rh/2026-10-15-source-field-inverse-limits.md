@@ -31,6 +31,8 @@ These high/source facts do NOT entitle us to call RH "uncomputable", "undecidabl
 
 The missing fourth gate is source-derived **all-test positivity**, which is not supplied by compactness, inverse-limit existence, source-indistinguishability or generic positive covariance. To close it, compute/certify a genuine 18×18 low-Schur sign plus continuum high residual at \(a=1/2\), then construct a source-correct all-radius low-sign transport invariant. Competing non-Euler, wrong half-density, altered contact, prime 2, fake 6 and character phase mutations remain essential.
 
+**Concrete ORIGINAL Weil source test (not toy):** At a=1/2 the pinned signed Suzuki G truncated at two true Gamma modes has an outward-rational **strictly negative** low Legendre (P_1(2x)) form, while the omitted genuine real Gamma OU tail is PSD with source norm bound 13/81. Since ∥P1∥²=1/3, the full original quadratic lies in [q_J.lo, q_J.hi+13/243], which straddles zero. Consequently the genuine finite-stage negative observation is **not** an RH-negative witness or an enduring phantom; it exposes precisely the stage-to-global sign transducer debt. Executable: `original_weil_finite_gamma_sign_gap`, exact source/regression CI.
+
 ## Scope, validation and transfer status
 
 - Proof and all examples: \`research/2026-10-15/SOURCE_FIELD_INVERSE_LIMIT_CALCULUS.md\`.
