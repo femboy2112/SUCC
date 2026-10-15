@@ -1,5 +1,5 @@
 {
-  "schema": "SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v2",
+  "schema": "SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v3",
   "source_schemas_are_NOT_empirical_attestation": true,
   "simple": {
     "field": "SimpleField",
@@ -83,5 +83,25 @@
     "full_original_low_mode_sign_proved": false,
     "field_status": "UNRESOLVED_STAGE_TO_GLOBAL_SIGN",
     "RH_proved": false
+  },
+  "recursive_global_positive_gluing": {
+    "source": "SYNTHETIC_RECURSIVE_BIDIAGONAL_GLOBAL_LAW",
+    "finite_stage_n": 4,
+    "finite_to_global_positive_law": "G=(I+t*S)(I+t*S)* on ell2",
+    "uniform_positive_gap": "1/4",
+    "finite_stage_factorization_exact": true,
+    "all_n_prefix_compatibility_by_formula": true,
+    "physically_executed_infinitely_many_matrices": false,
+    "synthetic_not_original_Weil": true
+  },
+  "singular_source_schur": {
+    "valid_rank_deficient_positive_block": true,
+    "valid_zero_schur": "0",
+    "ghost_parent_range_failed": true,
+    "ghost_negative_determinant": "-1/4",
+    "ghost_block_PSD": false,
+    "paired_neutral_signed_old_and_new_equal": true,
+    "paired_features_both_changed": true,
+    "original_source_all_a_contraction": false
   }
 }
