@@ -51,6 +51,37 @@ class ContactNeumannTests(unittest.TestCase):
                                  receipt["difference_in_Weil_test_form"])
                 self.assertGreater(receipt["original_mean_zero_energy"],0)
 
+
+    def test_wrong_Connes_identity_contact_leaks_into_exactly_two_low_high_modes(self):
+        one=c.contact_moment_boundary_channels(F(1))
+        self.assertEqual(one["radius"],F(1,2))
+        self.assertEqual(one["boundary_neumann_channels"],
+                         ((29,31,F(-1,906948)),(30,32,F(-1,999180))))
+        self.assertEqual(one["K_cross_rank_if_contact_discrepancy_nonzero"],2)
+        self.assertEqual(one["mutated_relative_high_gap_lower"],
+                         F(369,10000)+1)
+        self.assertFalse(one["original_zeta_normalization_preserved"])
+        self.assertFalse(one["finite_moment_Schur_cross_unchanged_under_wrong_contact"])
+        self.assertFalse(one["Connes_off_identity_normalizes_contact"])
+
+    def test_origin_normalization_preserves_only_original_source(self):
+        genuine=c.contact_moment_boundary_channels(F())
+        self.assertEqual(genuine["boundary_neumann_channels"],
+                         ((29,31,F()),(30,32,F())))
+        self.assertEqual(genuine["K_cross_rank_if_contact_discrepancy_nonzero"],0)
+        self.assertTrue(genuine["original_zeta_normalization_preserved"])
+        self.assertTrue(genuine["finite_moment_Schur_cross_unchanged_under_wrong_contact"])
+        with self.assertRaises(c.ContactTransportError):
+            c.contact_moment_boundary_channels(0.0)
+
+    def test_negative_contact_can_destroy_relative_high_gap_certificate(self):
+        kap=F(369,10000)
+        for offset, positive in ((-kap/2,True),(-kap,False),(-2*kap,False)):
+            r=c.contact_moment_boundary_channels(offset)
+            self.assertEqual(r["mutated_relative_high_gap_lower"],kap+offset)
+            self.assertEqual(r["strict_relative_high_gap_from_this_bound"],positive)
+            self.assertFalse(r["rh_proved"])
+
     def test_wrong_source_and_float_labels_rejected(self):
         for fn in (
             lambda:c.contact_shift_certificate(.5,(1,-1),2),
