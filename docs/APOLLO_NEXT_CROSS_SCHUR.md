@@ -65,3 +65,6 @@ The map Cc∞(U)→C^30 of low Legendre moments is SURJECTIVE for any nonempty p
 5. If any gate fails, retain the strongest valid source-local result and write the next falsification opportunity. RH remains open until ALL gates are satisfied.
 
 **No main merge or cross-repo push without independent review.** Source derivations are documented in research/2026-10-15/APOLLO_PRIME_ACTIVE_DOMAIN_CERTIFICATION.md and parallel PR #107.
+
+
+**New calibration control:** before any low-resolvent cross-program, use true_prime2_coupled_thirty_moment_witness to reproduce a compact H0¹(E2) test u=i f' that lies in the genuine PR #107 30-moment HIGH space while its true prime2 shift overlap is strictly nonzero. This splits a source-wavefront measurement from low-sector projection. Incorrect source adapters that equate a zero low moment with no arithmetic interaction must fail this test.
