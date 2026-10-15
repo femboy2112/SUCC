@@ -1,0 +1,17 @@
+# ONE OBJECT source-gluing claim ledger — 2026-10-15
+
+**Research branch:** research/one-object-tate-weil-suzuki-connes-2026-10-15, stacked on the Tate-source PR #103 at 940f0a47ef25b8b553c2f0b45032b37e68c23b02; pre-Phoenix main remains 03db44203147a7b28d445bb9f970fa71360e78c4. No academic novelty claim. **RH PROVED: NO.**
+
+| ID | Claim | Status | Proof/receipt | Missing source/probe |
+|---|---|---|---|---|
+| O1 | For every h in Cc² and every J>=0, original finite-Gamma signed Weil distribution equals negative distributional second derivative of **contact-matched** Suzuki g_J | CLASSICAL / PROVED LOCAL analytic derivation | explicit pole/ramp/contact/exponential distribution derivatives, rational contact identity; 9 independent quadratures | not sign |
+| O2 | C_J converges to Suzuki -psi(1/4)+log(pi); exact rational B_J bounds contact and gamma potential tails; compact g_J uniform error | CLASSICAL digamma + PROVED LOCAL | telescoping series, first-term+integral bound | no Gram global positivity |
+| O3 | Source/screw commuting diagram implies Hilbert PSD | REFUTED as a generic implication | exact w(delta_b+delta_-b) fake source; K(t,t)=-2w(t-b)<0 | original zeta could still be PSD |
+| O4 | Finite p-adic unit scaling traces are gcd(u-1,p^r); stabilize to local Connes fixed-point denominator away from identity | CLASSICAL / PROVED LOCAL | exact cyclic group kernel plus Fourier intertwiner; independent fixed-point brute oracle | no global adelic trace |
+| O5 | Off-identity distribution values determine identity/contact term | REFUTED | T and T+c delta_1 agree on all away-from-identity tests | Connes Fourier-normalized principal value needed |
+| O6 | Authentic K_g equals a true Hilbert Gram on **every** finite set iff RH | CLASSICAL EQUIVALENCE / CONDITIONAL SUFFICIENT | Suzuki screw criterion + Moore-Aronszajn; exact kernel equality with independently positive features unverified | **RH-hard, UNVERIFIED** |
+| O7 | Direct finite source evaluation verifies W_J(h)=-<g_J,h''> for nine compact polynomial C² bumps | TESTED NUMERICAL | independent pole/prime/arch vs polynomial second-derivative quadratures, 60-digit working precision; 1/3 contact mutation detected | floating rounding not interval-certified |
+
+Full statements, normalization, source family, derivations, caveats, next hostile probes: [ONE_OBJECT_TATE_WEIL_SUZUKI_CONNES.md](../research/2026-10-15/ONE_OBJECT_TATE_WEIL_SUZUKI_CONNES.md). Code: observational_succ/one_object_transport.py; exact tests plus numerical holdouts: tests/test_one_object_transport.py; deterministic receipt: scripts/one_object_transport_probe.py. Original prime-power list is imported from completed_weil_transport, with no zero positions as inputs. Contextual independent Suzuki source: https://arxiv.org/pdf/2606.09096 . Connes local trace: https://arxiv.org/pdf/math/9811068 .
+
+**Pending:** verified full Schwartz–Bruhat/adelic Connes principal-value distribution identification, authentic unconditional Hilbert-factor kernel, all-a sign/zero-shift range. Zero-reading, synthetic covariance and proof-by-positivity shortcuts prohibited. **RH OPEN.**
