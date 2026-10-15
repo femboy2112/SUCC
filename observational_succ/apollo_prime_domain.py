@@ -353,3 +353,70 @@ def isolated_prime_sixteen_packet(n: int, length: F = F(1,128)) -> dict:
             "source_positive_Hilbert_contraction_exists_on_CcE":True,
             "full_ambient_G_a_positive":False,
             "RH_proved":False}
+
+
+
+def source_support_union_gate(halfwidth: F,
+                              component_upper_measures: tuple[F,...]) -> dict:
+    """Exact source-indexed GLUING budget for multiple admissible supports.
+
+    For a=1/2 or any a<=1 the corresponding verified universal bound
+    survives a union if Σ component measure upper bounds <= source budget.
+    This is a SUFFICIENT condition by subadditivity of Lebesgue measure.
+    A rejected sum is UNVERIFIED, NOT an original zeta negative witness.
+    """
+    if type(halfwidth) is not F or halfwidth not in (F(1,2),F(1)):
+        raise PrimeDomainError("Only authenticated a=1/2 or a<=1 budget chart")
+    if (type(component_upper_measures) is not tuple
+            or not 1<=len(component_upper_measures)<=32
+            or any(type(m) is not F or m<=0 for m in component_upper_measures)):
+        raise PrimeDomainError("Nonempty tuple of exact positive measure upper bounds")
+    total=sum(component_upper_measures,F())
+    if halfwidth==F(1,2):
+        cert=first_prime_sparse_domain(total)
+    else:
+        cert=full_five_source_a_one_sparse_domain(total)
+    return {"chart_halfwidth":halfwidth,
+            "component_bounds":component_upper_measures,
+            "union_bound":total,
+            "all_cross_terms_covered_by_source_budget":True,
+            "source_certified_signed_Weil_L2_floor":cert.uniform_weil_l2_floor,
+            "componentwise_positivity_alone_would_be_insufficient":True,
+            "original_Weil_global_sign_proved":False,
+            "RH_proved":False}
+
+
+def prime_packet_low_moment_rank(n: int = 2, rank: int = 30) -> dict:
+    """Exact rational low-moment separation WITHIN one p=2 packet.
+
+    Distinct rational sample points in the first packet form a Vandermonde
+    with positive determinant. In the ANALYTIC domain Cc∞(U), the linear
+    moment map f -> (∫x^k f(x)dx)_{0<=k<rank} is onto R^rank:
+    a polynomial annihilating all such test integrals vanishes identically
+    on U, so the dual map is injective. The exact Vandermonde calibration
+    is NOT an explicit inverse moment/Suzuki low Schur certificate.
+    The map can be arbitrarily ill-conditioned for narrow U.
+    """
+    if n!=2 or type(n) is not int or type(rank) is not int or not 1<=rank<=30:
+        raise PrimeDomainError("Original p2 packet and 1..30 moment gate only")
+    domain=prime_two_pair_packet_domain()
+    lo,hi=domain["base_U"]
+    delta=hi-lo
+    nodes=tuple(lo+delta*F(k+1,rank+1) for k in range(rank))
+    if any(not lo<t<hi for t in nodes):
+        raise ArithmeticError("Exact source packet Vandermonde node exits domain")
+    determinant=F(1)
+    for j in range(rank):
+        for i in range(j):
+            determinant*=nodes[j]-nodes[i]
+    if determinant<=0:
+        raise ArithmeticError("Moment rank calibration unexpectedly singular")
+    return {"moment_rank":rank,
+            "interval_U":(lo,hi),
+            "strict_rational_nodes":nodes,
+            "Vandermonde_determinant_positive":True,
+            "Vandermonde_determinant":determinant,
+            "true_Cc_infinity_moment_map_surjective":True,
+            "uniform_inverse_moment_norm_bound_supplied":False,
+            "original_Legendre_low_Schur_sign_proved":False,
+            "RH_proved":False}
