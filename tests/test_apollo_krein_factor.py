@@ -10,6 +10,7 @@ from observational_succ.apollo_krein_factor import (
     original_suzuki_krein_finite_window,source_feature_contraction_diagnostic,
     prime_mixed_second_source_coefficients,gamma_mixed_second_source_coefficients,
     neutral_prime_activation_pair,authentic_prime_two_activation_on_old_window,
+    authentic_small_window_brownian_coercivity,
 )
 
 
@@ -172,6 +173,42 @@ class ApolloPrimeActivationGluing(unittest.TestCase):
                       (F(0),F(0),F(0)),(F(1),F(1),True)):
             with self.assertRaises(OneObjectError):
                 neutral_prime_activation_pair(x,y,b)
+
+
+class ApolloFullSmallIntervalPositiveKernel(unittest.TestCase):
+    def test_original_source_rational_uniform_brownian_coercivity(self):
+        for a in (F(1,24),F(1,32),F(1,64),F(1,500)):
+            proof=authentic_small_window_brownian_coercivity(a)
+            self.assertEqual(proof["gamma_modes_used"],8)
+            self.assertGreater(proof["strict_K_dominates_B_lower"],F(1,10))
+            self.assertEqual(proof["uniform_K_dominates_B_for_all_real_a_le_1over24"],F(1,10))
+            self.assertTrue(proof["holds_for_all_finite_point_sets_and_complex_coefficients"])
+            self.assertTrue(proof["gamma_tail_omitted_positive"])
+            self.assertTrue(proof["first_prime_absent"])
+            self.assertFalse(proof["all_RH_test_intervals_certified"])
+            self.assertFalse(proof["RH_proved"])
+        for bad in (0,-1,F(1,12),True,0.01):
+            with self.assertRaises(OneObjectError):
+                authentic_small_window_brownian_coercivity(bad)
+
+    def test_exact_eight_rung_bound_is_rigorous_without_approximate_eigenvalues(self):
+        proof=authentic_small_window_brownian_coercivity(F(1,24))
+        S8=sum(F(4,4*j+1) for j in range(8))
+        a=F(1,24)
+        self.assertEqual(proof["strict_K_dominates_B_lower"],
+                         S8-16*a-F(11,2)-a**3/(1-a))
+        self.assertLess(proof["original_contact_upper"],F(6))
+        self.assertGreater(proof["original_log2_lower"],F(1,12))
+        self.assertGreater(proof["strict_K_dominates_B_lower"],F(1,10))
+
+    def test_synthetic_exact_gram_minor_keeps_same_brownian_metric(self):
+        pts=(F(-1,24),F(-1,48),F(1,72),F(1,24))
+        br=exact_rational_gram_psd(pts,"brownian")
+        self.assertTrue(br["all_principal_minors_nonnegative"])
+        # A lower bound by B is not a uniform lower bound in coefficient ℓ²;
+        # clustering points can make Brownian eigenvalues arbitrarily small.
+        self.assertGreater(brownian_increment_kernel(F(1,100),F(1,100)),0)
+        self.assertEqual(brownian_increment_kernel(F(1,100),F(-1,100)),0)
 
 
 if __name__=="__main__":
