@@ -173,3 +173,53 @@ Even an exact product formula and a completed functional equation cannot imply t
 - SUCC base: observational_succ/diagonal_adele_zeta.py and docs/CLAIM_SUPPLEMENT_ALL_PLACES_ZETA.md; other relevant independent routes: observational_succ/wild_adelic_tower.py and observational_succ/recursive_meta_succ.py.
 
 **Academic priority claim:** none. The adelic and duality facts are classical. Our new research artifact is the typed source-indexed exact implementation, explicit causal-functor obstruction, adversarial controls, and a reviewable Weil/RH dependency frontier.
+
+
+## 8. The next atomic obstruction: adjoining one prime is nonsplit
+
+### TL-11: nonsplit prime-extension theorem (CLASSICAL GROUP THEORY / PROVED PAPER)
+
+Fix finite S and a genuine rational prime p not in S, T=S union {p}. The natural character-preserving map has the **short exact sequence of compact abelian groups**
+
+    0 --> Z_p --> X_T --pi_(T,S)--> X_S --> 0.
+
+The first map sends z in Z_p to the class of (0; zero on S, z at p). It is injective because an element of the diagonal lattice with real coordinate zero must be zero. The bonding map is onto, and if pi([x])=0 then subtract the principal part of the p-coordinate, then subtract the lifted Gamma_S zero class, leaving precisely a p-integral coordinate z. Hence this is the full kernel.
+
+**The sequence is not split, even as a continuous fiber bundle section.**
+
+**Dual proof (homomorphic splitting forbidden).** Dualizing gives
+
+    0 --> Gamma_S --> Gamma_T --> Q_p/Z_p --> 0,
+
+where Gamma_T/Gamma_S is the p-primary Pruefer group C_(p^infinity), containing the order-p class 1/p + Gamma_S. Gamma_T is torsion-free, since it is a subgroup of Q. A splitting would inject the nontrivial torsion quotient into the torsion-free Gamma_T, impossible.
+
+**Stronger proof (ANY continuous section forbidden).** Both X_S and X_T are connected compact groups since their character groups Gamma_S and Gamma_T are torsion-free. If pi had a continuous (not necessarily homomorphic) section sigma, the map
+
+    X_S x Z_p --> X_T,  (x,z) |--> sigma(x) + z
+
+would be a continuous bijection from compact to Hausdorff, hence a homeomorphism. But X_S x Z_p is disconnected (Z_p has nontrivial clopen subsets), whereas X_T is connected. Contradiction. A merely set-theoretic or measurable section is not ruled out.
+
+This **does not make the global inverse limit nonconstructible** in ordinary mathematics. It shows that a recursive observer cannot obtain a continuous *independent place-by-place splitting* of the next stage: it must retain the genuinely nontrivial extension/gluing structure.
+
+Exact tests use two necessary finite shadows: 1/p belongs to Gamma_T but not Gamma_S, has order exactly p modulo Gamma_S, and the class with omitted p-coordinate 1 is nonzero in X_T but projects to zero in X_S. The statements about all p-adic points, connectedness, and lack of a continuous section are paper proofs/classical imports, not computational results.
+
+### TL-12: an atomic conservation-defect decomposition (CLASSICAL / PROVED LOCAL)
+
+For q nonzero rational, let Delta_S(q) be the modulus of multiplication by q on G_S, even when q is not an allowed quotient endomorphism. Then
+
+    Delta_S(q) = |q|_infinity * product_(ell in S)|q|_ell
+               = product_(ell not in S) ell^(v_ell(q)).
+
+When T=S union {p},
+
+    Delta_T(q) = Delta_S(q) * p^(-v_p(q)).
+
+Thus each added true prime places cancels one *additive logarithmic valuation defect*
+
+    log Delta_S(q) - log Delta_T(q) = v_p(q)*log(p).
+
+This is the mathematically exact version of decomposing global multiplicative conservation into atomic prime-place correction terms. The terms in the additive **Fourier phase** reciprocity law are not equal to these real logarithmic terms, however: the former live in R/Z, the latter in R. Their coupling is mediated by a common underlying lattice plus Haar modulus and duality. Any claimed direct identification needs an explicit map between those two differently typed groups.
+
+A revealing contrast: the local correction terms can be computed independently, but the stage extension is **not** the product of independent compact observer spaces. Additive numerical decomposition does not imply categorical splitting.
+
+**Next source-level proof obligation:** define a history-faithful SUCC-to-framed-adelic-transition functor whose action on SUCC/FUCC generators intertwines the lattice extension and the Fourier/Mellin representations. Preserve the nontrivial extension class and sign/half-density conventions. Test full test-function-domain transport and completed Weil distribution next, not a surrogate PSD covariance.
