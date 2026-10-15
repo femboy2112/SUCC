@@ -1,5 +1,5 @@
 {
-  "schema": "SUCC_APOLLO_SOURCE_FIRST_INTERFERENCE_v1",
+  "schema": "SUCC_APOLLO_SOURCE_FIRST_INTERFERENCE_v2",
   "source_original_Euler_gamma_signed_Krein_without_zero_lookup": true,
   "synthetic_prebirth": {
     "source": "RATIONAL_CALIBRATION_NOT_TRUE_EULER",
@@ -28,7 +28,9 @@
     "in_phase_prime_rayleigh": "-log(2)/sqrt(2)",
     "anti_phase_prime_rayleigh": "+log(2)/sqrt(2)",
     "quarter_phase_prime_rayleigh": "0",
-    "wavefront_is_mathematical_distribution_not_physical_motion": true
+    "wavefront_is_mathematical_distribution_not_physical_motion": true,
+    "complete_original_Weil_positive_in_all_three_phase_families": true,
+    "complete_original_Weil_L2_margin_strictly_above": "1/24"
   },
   "original_full_negative_graph": {
     "first_real_Gamma_L2_lower": "3",
