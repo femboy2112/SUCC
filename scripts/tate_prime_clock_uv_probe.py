@@ -19,7 +19,7 @@ def exact_receipt():
     witness = exact_two_cell_negative_witness(F(1, 2), F(3, 4))
     original = genuine_first_prime_sparse_weil_certificate()
     return {
-        "schema": "SUCC_TATE_PRIME_CLOCK_UV_v1",
+        "schema": "SUCC_TATE_PRIME_CLOCK_UV_v2",
         "status": "SOURCE_RESTRICTED_POSITIVITY_NOT_RH",
         "synthetic_rational_clock": {
             "a": "1/2",
