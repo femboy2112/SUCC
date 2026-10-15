@@ -21,7 +21,8 @@ from fractions import Fraction as Q
 from . import source_weil_hierarchy as src
 from .hilbert_carrier import point,order_gate
 from .hilbert_prime_hinge_integrals import (
-    rat,source_rect,absolute_hinge_rect,authenticated_hinge_cell
+    rat,source_rect,absolute_hinge_rect,authenticated_hinge_cell,
+    HilbertHingeError
 )
 
 class SuzukiCellIntegralError(ValueError):
