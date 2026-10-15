@@ -6,6 +6,7 @@ from fractions import Fraction as F
 from observational_succ.tate_schwartz_functor import (
     PadicBall, PhaseAmplitude, SourceEvent, SourceWord, TateFunctorError,
     local_mellin_shell, critical_mellin_character, first_missing_prime,
+    local_euler_logjet, finite_source_logjets,
 )
 from observational_succ.finite_fourier_carrier import dilate_function
 from observational_succ.diagonal_adele_zeta import DiagonalSourceError
@@ -176,6 +177,46 @@ class MellinAndWeilFirewallTests(unittest.TestCase):
                         self.assertEqual(r["exact_full"], F(p)**(-k*s) / (1-F(p)**(-s)))
                         self.assertFalse(r["gamma_factor_present"])
                         self.assertFalse(r["analytic_continuation_claimed"])
+
+    def test_true_prime_logjet_and_absolute_convergence_scope(self):
+        for p in (2,3,5,7):
+            for s in (2,3,5):
+                for depth in (0,1,2,4,10):
+                    jet=local_euler_logjet(p,s,depth)
+                    self.assertEqual(
+                        jet["coefficient_of_logp_partial"]+
+                        jet["coefficient_of_logp_tail"],
+                        jet["coefficient_of_logp_full"]
+                    )
+                    self.assertEqual(jet["coefficient_of_logp_full"],
+                                     F(p)**(-s)/(1-F(p)**(-s)))
+                    self.assertEqual(jet["jet_labels"],
+                                     tuple((p**k,p) for k in range(1,depth+1)))
+                    self.assertFalse(jet["Weil_sign_proved"])
+
+    def test_logjet_cross_independent_existing_lambda_source(self):
+        for cutoff in (2,3,5,6,8,9,12,25,64,128):
+            r=finite_source_logjets(cutoff,2)
+            self.assertTrue(r["exact_original_von_Mangoldt_cross_oracle"])
+            self.assertFalse(r["critical_line_dirichlet_series_converges"])
+            self.assertNotIn(6,[n for n,p in r["prime_power_labels"]])
+            if cutoff>=6:
+                self.assertIn(4,[n for n,p in r["prime_power_labels"]])
+            if cutoff>=9:
+                self.assertIn(9,[n for n,p in r["prime_power_labels"]])
+            grouped=dict(r["formal_logp_coefficients"])
+            for p,c in grouped.items():
+                expected=sum((F(n)**(-2) for n,q in r["prime_power_labels"] if q==p), F(0))
+                self.assertEqual(c,expected)
+
+    def test_logjet_fake_composite_and_s_half_rejected(self):
+        for fake in (0,1,4,6,9,True):
+            with self.assertRaises(TateFunctorError):
+                local_euler_logjet(fake,2,3)
+        with self.assertRaises(TateFunctorError):
+            local_euler_logjet(3,1,2)
+        with self.assertRaises(TateFunctorError):
+            finite_source_logjets(8,1)
 
     def test_mutants_not_genuine_Euler_prime_places(self):
         for invalid in (1, 4, 6, 9, 15, True):
