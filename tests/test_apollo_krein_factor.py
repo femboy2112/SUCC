@@ -12,6 +12,8 @@ from observational_succ.apollo_krein_factor import (
     neutral_prime_activation_pair,authentic_prime_two_activation_on_old_window,
     authentic_small_window_brownian_coercivity,
     authentic_sharp_small_window_hilbert_factor, _exp_odd_taylor_lower,
+    authentic_small_window_completed_weil_coercivity,
+    brownian_compact_weak_derivative_certificate,
 )
 
 
@@ -251,6 +253,30 @@ class ApolloUniformAuthenticPositiveHilbertFactorTests(unittest.TestCase):
         self.assertGreater(sharp["exact_positive_coercivity_margin"],
                            loose["strict_K_dominates_B_lower"])
         self.assertGreater(sharp["exact_positive_coercivity_margin"],F(1,100))
+
+
+class ApolloFullOriginalSignedWeilSmallWindowTests(unittest.TestCase):
+    def test_global_over_compact_tests_on_true_source_small_intervals(self):
+        for a in (F(1,12),F(1,16),F(1,25),F(1,250)):
+            o=authentic_small_window_completed_weil_coercivity(a)
+            self.assertEqual(o["signed_source"],"AUTHENTIC_COMPLETED_WEIL_ZETA")
+            self.assertEqual(o["uniform_original_weil_L2_lower"],F(1,100))
+            self.assertTrue(o["holds_for_every_smooth_compact_test_on_window"])
+            self.assertEqual(o["actual_prime_activity"],"none_on_this_small_window")
+            self.assertFalse(o["all_global_Weil_tests_positive"])
+            self.assertFalse(o["RH_proved"])
+
+    def test_independently_exact_brownian_mixed_derivative_norm(self):
+        for a,m in product((F(1,12),F(1,20)),(4,5,8)):
+            c=brownian_compact_weak_derivative_certificate(a,m)
+            self.assertGreater(c["Brownian_mixed_second_energy"],0)
+            self.assertEqual(c["Brownian_mixed_second_energy"],
+                             c["independent_beta_energy"])
+            self.assertTrue(c["distributional_identity_calibrated"])
+            self.assertFalse(c["source_Weil_quadratic_evaluated"])
+        for a,power in ((0,4),(F(1,10),4),(F(1,12),3),(F(1,12),True)):
+            with self.assertRaises(OneObjectError):
+                brownian_compact_weak_derivative_certificate(a,power)
 
 
 if __name__=="__main__":
