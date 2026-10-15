@@ -17,7 +17,7 @@ from observational_succ.tate_eta_bernoulli import (
     primary_source_interface_status,
     modular_discriminant_formal_passport, completed_two_critical_track_passport,
     eta_mobius_heat_transducer, gaussian_linear_heat_positive_mixing_no_go,
-    tate_gaussian_fourier_stage
+    tate_gaussian_fourier_stage, tate_completed_theta_polar_split
 )
 
 
@@ -35,8 +35,9 @@ def frozen_receipt() -> dict:
     gaussian_no_go=gaussian_linear_heat_positive_mixing_no_go()
     gauss=tate_gaussian_fourier_stage(8,F(1,2),12)
     wrong_gauss=tate_gaussian_fourier_stage(3,F(1,2),8,F(1,2))
+    completed=tate_completed_theta_polar_split(F(5,2))
     return {
-        "schema":"SUCC_TATE_ETA_BERNOULLI_2026_10_15_v5",
+        "schema":"SUCC_TATE_ETA_BERNOULLI_2026_10_15_v6",
         "status":"CANONICAL_MODULAR_BRIDGE_NOT_RH",
         "bernoulli":{
             "zeta_minus_one":str(heat["zeta_of_minus_one"]),
@@ -118,6 +119,17 @@ def frozen_receipt() -> dict:
                 [str(v) for v in wrong_gauss["source_label_squares"]],
             "wrong_shift_detected":not wrong_gauss["authentic_integer_phase"],
             "source_zero_lookup":gauss["nontrivial_zero_locations_used"],
+            "RH_proved":False,
+        },
+        "Tate_completed_xi":{
+            "test_parameter_s":str(completed["s"]),
+            "two_pole_component":str(completed["completed_pole_part"]),
+            "completed_pole_cancellation":str(completed["completed_pole_cancellation_after_xi"]),
+            "real_Gamma":completed["real_Tate_archimedean"],
+            "classical_xi":completed["xi_definition"],
+            "functional_equation":completed["xi_functional_equation"],
+            "nontrivial_zero_lookup":completed["nontrivial_zero_lookup_used"],
+            "all_test_Weil_sign_proved":completed["all_test_Weil_sign_proved"],
             "RH_proved":False,
         },
         "missing_interfaces":{
