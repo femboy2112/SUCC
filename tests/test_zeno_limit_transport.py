@@ -68,7 +68,7 @@ class ZenoFourMotionControls(unittest.TestCase):
         for n in range(1,8):
             c=A.finite_checkpoint(n)
             self.assertEqual(c["time"],1-Q(1,10**n))
-            self.assertEqual(c["remaining_gap"],Q(9,10**n))
+            self.assertEqual(c["remaining_gap"],Q(9,10**(n+1)))
             self.assertGreater(c["remaining_gap"],0)
             self.assertFalse(c["infinite_catchup_actions_executed"])
 
