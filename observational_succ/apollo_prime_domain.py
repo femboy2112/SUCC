@@ -97,6 +97,8 @@ class SparseWeilDomain:
     source: str = "SHA_PINNED_AUTHENTIC_COMPLETED_WEIL_ZETA"
     conditional_on_measured_support: bool = True
     all_tests_in_domain: bool = True
+    h01_test_domain_extension_by_continuity: bool = True
+    bounded_operator_on_all_L2_claimed: bool = False
     full_ambient_weil_positivity_proved: bool = False
     RH_proved: bool = False
 
