@@ -70,7 +70,7 @@ class ExplicitWeilFourMomentSourcePolarization(unittest.TestCase):
 
     def test_exact_complex_moments_and_no_hidden_imaginary_freedom(self):
         z=exact_four_source_moment_polarization(
-            ((F(1),F(2)),(F(-1),F(1)),(F(2),F(-3)),(F(1,2),F(1,4)))
+            ((F(1),F(2)),(F(-1),F(1)),(F(2),F(-3)),(F(1,2),F(1,4))))
         self.assertGreater(z["L2_projection_P4_source_energy_exact"],0)
         self.assertTrue(z["source_Ker_P4_exactly_moment_null"])
         self.assertFalse(z["counterterm_vanishes_for_these_moments"])
