@@ -223,3 +223,31 @@ This is the mathematically exact version of decomposing global multiplicative co
 A revealing contrast: the local correction terms can be computed independently, but the stage extension is **not** the product of independent compact observer spaces. Additive numerical decomposition does not imply categorical splitting.
 
 **Next source-level proof obligation:** define a history-faithful SUCC-to-framed-adelic-transition functor whose action on SUCC/FUCC generators intertwines the lattice extension and the Fourier/Mellin representations. Preserve the nontrivial extension class and sign/half-density conventions. Test full test-function-domain transport and completed Weil distribution next, not a surrogate PSD covariance.
+
+
+### TL-13: reversible global FUCC becomes a noninjective observer covering (CLASSICAL / EXACT FINITE WITNESS)
+
+Take p not in S, T=S union {p}. The same multiplication operator m_p on the source additive spaces induces a commutative stage square:
+
+    X_T ---m_p (automorphism)---> X_T
+     |                            |
+    pi                           pi
+     |                            |
+     v                            v
+    X_S ---m_p (degree p)-------> X_S.
+
+Upstairs p belongs to Gamma_T^x, hence m_p is invertible with m_(1/p). Downstairs p belongs to Gamma_S but is *not* a unit: Delta_S(p)=p and [Gamma_S:p Gamma_S]=p. Thus m_p is a p-to-1 covering and m_(1/p) does not descend to X_S. The square is character-natural, but the inverse square cannot exist at S.
+
+A fully exact source witness is the nonzero order-p class
+
+    a_S = [(1/p; (1/p)_(ell in S))] in X_S.
+
+It is nonzero since 1/p is not in Gamma_S, yet p*a_S is diagonal 1 and therefore zero in X_S. Lift to
+
+    a_T = [(1/p; (1/p)_(ell in S), 0 at p)].
+
+It projects to a_S. Its image m_p(a_T) is not zero in X_T because its new p-coordinate is 0 while all other coordinates are 1. Nevertheless its projection downstairs vanishes. Thus the information apparently *destroyed* by a downstairs p-fold map has been transferred into the missing p-adic fiber upstairs, where the map remains an automorphism. This does **not** certify physical microscopic reversibility; it is an exact arithmetic model of observer-relative reversible access.
+
+The inverse-multiplier obstruction is source-typed, not a numerical instability. Test a mutated implementation that incorrectly declares m_(1/p) lawful on X_S: it must be rejected. Code: RationalSChart.scale and reversibility_descent_obstruction, with exact tests and scaling/projection naturality controls.
+
+**Interpretation for the user's SUCC proposal:** the globally lawful causal map and the observer's coarser state model need not agree on reversibility. A correct recursive modeling functor must preserve the covering and its missing-prime fiber, not artificially promote the coarse map to a bijection. This is a sharp, reusable finite-to-global obstruction theorem, but does not produce Weil-sign positivity or RH.
