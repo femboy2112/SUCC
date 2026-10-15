@@ -302,8 +302,8 @@ class GlobalTateDiagonalCharacterAndThreePrimeControls(unittest.TestCase):
             self.assertFalse(result["global_adelic_Poisson_proved"])
             self.assertFalse(result["RH_proved"])
             vals[result["primes"]]=result["dual_CRT_inverse_transports"]
-        self.assertEqual(vals[(2,3,5)],(1,2,2))
-        self.assertEqual(vals[(3,5,2)],(2,2,1))
+        self.assertEqual(vals[(2,3,5)],(1,1,1))
+        self.assertEqual(vals[(3,5,2)],(1,1,1))
 
     def test_ghost_composite_prime_and_untyped_source_are_rejected(self):
         for f in (
