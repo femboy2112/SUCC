@@ -1,0 +1,129 @@
+{
+  "RH_PROVED": false,
+  "academic_priority_claimed": false,
+  "base_main": "03db44203147a7b28d445bb9f970fa71360e78c4",
+  "blindness": {
+    "cell": [
+      1,
+      4
+    ],
+    "tent_center": [
+      "3/16",
+      "9/16"
+    ],
+    "tent_zero_on_other_63_centers": true,
+    "true_hidden_negative_depth": "1/16",
+    "unvisited_hilbert_index": 17
+  },
+  "date": "2026-10-14",
+  "full_Lean_formalization_claimed": false,
+  "hilbert_cube": {
+    "d": 5,
+    "deep_negative_witness": "-9/16384",
+    "deep_verdict": "CERTIFIED_NEGATIVE_FINITE_RANK",
+    "effective_zeno_horizon_M1_epsilon_one_third": {
+      "certified_error": "1/3",
+      "dimension": 2,
+      "mesh_level": 2,
+      "physical_execution": false,
+      "points": 16
+    },
+    "equality_to_full_H_psd_requires_all_coordinates": true,
+    "hidden_at_first_d4": true,
+    "holder_half_exponent_obstruction_dimension": 3,
+    "mesh_level": 2,
+    "n_grid_points": 1024,
+    "radius_squared": "1/3",
+    "sample_count_d_eq_n_eq_5": 33554432,
+    "shallow_global_positive_certified": false,
+    "two_axis_error_M1_d5_n2": "3/16"
+  },
+  "missing_RH_hard_gates": [
+    "actual signed 30-moment G source matrix with rigorous errors",
+    "global form-topology operator bound M",
+    "zero-shift cross-resolvent Douglas range / signed Schur inequality",
+    "all a>0 source-derived Weil sign; grid samples alone insufficient"
+  ],
+  "nontrivial_zero_coordinates_used": false,
+  "original_Suzuki_source_metric_SEPARATE_FROM_SIGNED_G": {
+    "interval_a": "1/2",
+    "normalized_legendre_P1_P2": [
+      [
+        "1/10",
+        "0"
+      ],
+      [
+        "0",
+        "1/42"
+      ]
+    ],
+    "signed_Weil_G_source_matrix_constructed": false,
+    "unnormalized_legendre_P1_P2": [
+      [
+        "1/30",
+        "0"
+      ],
+      [
+        "0",
+        "1/210"
+      ]
+    ],
+    "whole_operator_from_two_by_two_K": false
+  },
+  "original_weil_all_test_sign_proved": false,
+  "physical_observation_executed": false,
+  "schema": "succ-hilbert-zeno-cube-v1",
+  "source_prefix_completion": {
+    "Zeno_Linfty_remaining": "1/32",
+    "cell": [
+      4,
+      13
+    ],
+    "digits": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "exact_parent_child_4ary_blocks_level3": true,
+    "index": 99,
+    "lower_left": [
+      "1/4",
+      "13/16"
+    ],
+    "midpoint": [
+      "9/32",
+      "27/32"
+    ],
+    "omega_physical_actualization": false,
+    "upper_right": [
+      "5/16",
+      "7/8"
+    ]
+  },
+  "square": {
+    "adaptive_evaluations": 1,
+    "adaptive_verdict": "GLOBAL_NONNEGATIVE",
+    "adjacent_steps": true,
+    "cells": 64,
+    "first_cell": [
+      0,
+      0
+    ],
+    "global_lower": "7/8",
+    "global_upper": "9/8",
+    "inverse_replay": true,
+    "last_cell": [
+      7,
+      0
+    ],
+    "observed_max": "71/64",
+    "observed_min": "57/64",
+    "order": 3,
+    "path_length": "63/8",
+    "physical_probes": false,
+    "source_gradient_L": "1/8",
+    "unique_cells": 64,
+    "verdict": "GLOBAL_NONNEGATIVE"
+  }
+}
