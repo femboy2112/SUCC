@@ -128,3 +128,53 @@ def history_faithfulness_requirement()->dict:
         "actual_genuine_Weil_sign_proved":False,
         "RH_proved":False
     }
+
+
+
+def exact_finite_source_periodization(modulus:int,
+                                      source_lifts:tuple[tuple[int,int|Q],...])->dict:
+    """A finite original-lattice-source model of TATE'S PERIODIZATION STEP.
+
+    Given a finitely supported rational function phi:Z->Q, its correct
+    quotient-periodization on Z/N is
+       (P_N phi)(a) = sum_{k∈Z} phi(a+kN).
+    Since phi has finite support, this is a FINITE exact source sum.
+    Naively evaluating only phi(a) on the chosen representative
+    forgets genuine lattice lifts; same quotient-point representation
+    is NOT enough to reconstruct phi's periodized value.
+
+    The adelic Poisson construction analogously needs
+       P_Phi([x])=sum_{q∈Q} Phi(x+q)
+    with convergence and SOURCE-LABELED lifts. This finite toy proves
+    only the necessary categorical gate, NOT global Tate Poisson.
+    """
+    if (type(modulus) is not int or not 2<=modulus<=128
+            or type(source_lifts) is not tuple
+            or not 1<=len(source_lifts)<=64):
+        raise HistoryLiftError("Exact finite integer-lattice source and quotient required")
+    if any(type(z) is not tuple or len(z)!=2
+           or type(z[0]) is not int or type(z[1]) not in (int,Q)
+           or abs(z[0])>100000
+           for z in source_lifts):
+        raise HistoryLiftError("Typed rational finite-support original lattice function required")
+    places=[n for n,v in source_lifts]
+    if len(places)!=len(set(places)):
+        raise HistoryLiftError("Duplicate source lift would double count original event")
+    source={n:Q(v) for n,v in source_lifts}
+    periodized=tuple(sum((v for n,v in source.items() if n%modulus==a),Q())
+                     for a in range(modulus))
+    representative_only=tuple(source.get(a,Q()) for a in range(modulus))
+    lift_buckets=tuple(tuple(sorted(n for n in source if n%modulus==a))
+                       for a in range(modulus))
+    return {"source":"FINITE_SUPPORT_LATTICE_Z_WITH_ORDERED_LIFT_IDENTITIES",
+            "quotient":"Z_MOD_N",
+            "modulus":modulus,
+            "all_source_lifts":tuple(sorted(source)),
+            "correct_periodization":periodized,
+            "naive_representative_evaluation":representative_only,
+            "lattice_lift_buckets":lift_buckets,
+            "endpoint_quotient_alone_determines_periodization":
+                periodized==representative_only,
+            "Tate_adelic_infinite_periodization_constructed":False,
+            "Tate_global_Poisson_proved":False,
+            "RH_proved":False}
