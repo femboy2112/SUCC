@@ -18,6 +18,11 @@
 | TF-05 | Real original SUCC histories faithfully functor into the full adelic Schwartz–Bruhat/Weil category with controls and uniform limits | UNVERIFIED; partial typed model only | Current implementation is free declared event paths over rational Qp balls; must construct full adeles and source-lift category |
 | TF-06 | Fully completed source-derived Weil distribution is PSD for every compact smooth test | UNVERIFIED RH-HARD | Existing completed_weil_transport has signed prime/gamma/pole form on specific tests; no uniform sign theorem |
 
+| TF-07 | Real Gaussian × authentic finite-place indicators with q,d rational: the Fourier on diagonal rational ξ has phase 0, total q Haar modulus 1, finite support iff qξ in Z, Gaussian exponent (qξ)^2/t | CLASSICAL TATE/POISSON; EXACT RATIONAL LATTICE CONTROLS | Rational lattice index relabeling verified; infinitely many Gaussian terms are NOT summed/proved equal by finite checks |
+| TF-08 | For phi supported in [-a,a], every genuine prime-power term in h=phi*tildephi satisfies n<3^ceil(2a) | PROVED PAPER / EXACT INTEGER SOURCE PROBE | e<3; independent von_mangoldt_labels source; Gamma/poles and global PSD NOT inferred; countably many support windows remain |
+| TF-09 | Negative logarithmic derivative of Tate unramified Euler factor is log(p) sum_(k>=1) p^(-ks); all-prime form yields true Λ tape for Re(s)>1 | CLASSICAL / EXACT FRACTION FINITE CONTROLS | local_euler_logjet and finite_source_logjets cross real Λ oracle; no unqualified convergence on the critical line |
+| CR-05 | Fourier covariance/Parseval is source-blind and cannot itself force the completed signed Weil form PSD | PROVED ELEMENTARY NO-GO FOR CHEAP INFERENCE | Fake 6 and mutated prime source distinguish signed Weil, not Fourier norm; genuine source-specific equality still OPEN |
+
 ## Stop conditions
 
 Fake composite n=6 is not a prime place, but multiplication by scalar 6 is allowed on an actual field Q_p. Likewise p is invertible in Q_p but not in Z/p^k. Do not declare source tampering lawful for the genuine ζ-function. Counterexample to finite prime observations with unspecified source tail is a *probe gap*, not proof of true RH undecidability.
