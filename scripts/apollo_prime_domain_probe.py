@@ -15,6 +15,7 @@ from observational_succ.apollo_prime_domain import (
     any_five_prime_activation_pair, isolated_prime_sixteen_packet,
     source_support_union_gate, prime_packet_low_moment_rank,
     true_prime2_coupled_thirty_moment_witness,
+    original_first_legendre_prime2_cross_witness,
     dyadic_gamma_4096_lower, exact_packet_overlap_bump, synthetic_sparse_budget,
 )
 
@@ -43,7 +44,13 @@ def main():
     assert high["vanishing_moments_0_to_29"]
     assert high["original_low_Legendre_1_to_30_zero"]
     assert high["genuine_prime2_translation_overlap"]>0
+    low_cross=original_first_legendre_prime2_cross_witness(4)
+    assert low_cross["low_cross_prime_component_exact_rational_positive_lower"]>0
+    assert not low_cross["completed_signed_Weil_cross_sign_proved"]
     receipt={
+      "PR107_first_low_prime_ONLY_cross_strictly_nonzero":True,
+      "PR107_first_low_prime_ONLY_cross_rational_lower":str(low_cross["low_cross_prime_component_exact_rational_positive_lower"]),
+      "PR107_first_low_completed_total_cross_sign_proved":False,
       "PR107_original_30_high_true_p2_interaction_nonzero":True,
       "PR107_exact_30_high_moment_null":True,
       "PR107_exact_high_packet_one_norm":str(high["one_packet_L2_squared"]),
