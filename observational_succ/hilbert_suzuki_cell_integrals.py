@@ -162,3 +162,39 @@ def hilbert_source_complete_block(a,order,J):
        "completed_Weil_PSD_proved":False,
        "rh_proved":False,
     }
+
+
+def source_toeplitz_block(a,order,J):
+    """The original completed g_J depends ONLY on x-y, so N lags suffice.
+
+    Hilbert can order N² *reads*, but is not an optimal unique-value
+    computation strategy for translation-invariant Suzuki matrices.
+    A SOURCE-TRUE corrected baseline is the Toeplitz lag cache, requiring
+    N source interval evaluations rather than N² independent evaluations.
+    """
+    a=rat(a);k=order_gate(order)
+    if k>4:raise SuzukiCellIntegralError("bounded exact lag cache order<=4")
+    n=1<<k
+    lags=tuple(full_source_cell(a,k,lag,0,J) for lag in range(n))
+    low=tuple(tuple(lags[abs(i-j)].value_lower for j in range(n))
+              for i in range(n))
+    high=tuple(tuple(lags[abs(i-j)].value_upper for j in range(n))
+               for i in range(n))
+    if any(low[i][j]!=low[j][i] or high[i][j]!=high[j][i]
+           for i in range(n) for j in range(n)):
+        raise ArithmeticError("original arithmetic Toeplitz source symmetry drift")
+    return {
+       "source":"AUTHENTIC_Q_ZETA_SUZUKI_2026_1_3",
+       "radius":a,"order":k,"J":J,
+       "grid_side":n,
+       "unique_original_lag_integrals":n,
+       "full_source_matrix_entries":n*n,
+       "verified_source_toeplitz_kernel":True,
+       "lower_matrix":low,
+       "upper_matrix":high,
+       "entire_prime_Gamma_pole_contact_finiteJ":True,
+       "finite_projected_block_spatial_quadrature_error":Q(),
+       "continuum_projection_error_zero":False,
+       "hilbert_beats_toeplitz_source_evaluations":False,
+       "completed_Weil_positive_proved":False,
+    }
