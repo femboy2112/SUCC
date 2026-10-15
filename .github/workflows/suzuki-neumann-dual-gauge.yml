@@ -7,8 +7,10 @@ on:
   pull_request:
     paths:
       - 'observational_succ/suzuki_neumann_dual_gauge.py'
-      - 'observational_succ/suzuki_neumann_source_flux.py'
+      - 'observational_succ/suzuki_neumann_source_flux.py observational_succ/suzuki_signed_mixed30.py'
+      - 'observational_succ/suzuki_signed_mixed30.py'
       - 'tests/test_suzuki_neumann_*.py'
+      - 'tests/test_suzuki_signed_mixed30.py'
       - 'research/2026-10-15/SUZUKI_NEUMANN_DUAL_*'
       - '.github/workflows/suzuki-neumann-dual-gauge.yml'
   workflow_dispatch:
@@ -36,6 +38,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_suzuki_neumann_dual_gauge.py' -v
           python -m unittest discover -s tests -p 'test_suzuki_neumann_source_flux.py' -v
+          python -m unittest discover -s tests -p 'test_suzuki_signed_mixed30.py' -v
       - name: Inherited original source cancellation and Schur shorting
         run: python -m unittest discover -s tests -p 'test_one_object_residual_schur.py' -v
       - name: Original immutable source provenance
