@@ -411,7 +411,6 @@ def eta_mobius_heat_transducer(N:int=128, fake_six:bool=False) -> dict:
         raise EtaTransportError("Explicit fake-six boolean mutation required")
     coeff=[]
     for n in range(1,N+1):
-        sig=sigma_one(n)+(1 if fake_six and n==6 else 0)
         # We must mutate sigma1(6) WITHIN every divisor convolution term,
         # not just the n=6 endpoint.  See inner loop below.
         r=sum(mobius_exact(d)*d*
