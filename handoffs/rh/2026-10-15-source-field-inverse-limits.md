@@ -33,6 +33,8 @@ The missing fourth gate is source-derived **all-test positivity**, which is not 
 
 **Concrete ORIGINAL Weil source test (not toy):** At a=1/2 the pinned signed Suzuki G truncated at two true Gamma modes has an outward-rational **strictly negative** low Legendre (P_1(2x)) form, while the omitted genuine real Gamma OU tail is PSD with source norm bound 13/81. Since ∥P1∥²=1/3, the full original quadratic lies in [q_J.lo, q_J.hi+13/243], which straddles zero. Consequently the genuine finite-stage negative observation is **not** an RH-negative witness or an enduring phantom; it exposes precisely the stage-to-global sign transducer debt. Executable: `original_weil_finite_gamma_sign_gap`, exact source/regression CI.
 
+**A precise finite recursive positivity prototype:** Let (S) be the unilateral successor shift and (L=I+tS) for a declared rational |t|<1. The source-compatible finite truncations (G_n=L_nL_n^*) are EXACT rational positive Gram forms, and the **single global proof** < v,LL* v>=||L* v||²≥(1-|t|)²||v||² certifies positivity on the entire infinite carrier without executing all n. This is a SYNTHETIC SimpleField **proof-shape**, emphatically not a factorization of the authentic zeta Weil form. A real source extension must also satisfy the Schur coupling/range condition: even `A≥0,D≥0` fails for `[[0,1/2],[1/2,1]]`, which has determinant -1/4. The singular-parent source range obstruction and paired-neutral APOLLO feature births show exactly why separate local positivity cannot be glued without the authentic signed cross coupling.
+
 ## Scope, validation and transfer status
 
 - Proof and all examples: \`research/2026-10-15/SOURCE_FIELD_INVERSE_LIMIT_CALCULUS.md\`.
