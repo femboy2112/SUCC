@@ -421,6 +421,36 @@ It is NOT legal to replace the finite sum inside ETA-05F2 by the infinite Fourie
 
 This is the first **explicit Fourier rescue** of our positivity no-go, and it correctly puts the eta→Möbius→linear heat tower beside an independently sourced Gaussian theta tower. It still requires **actual full Weil distributional gluing** and a new global arithmetic sign theorem to address RH.
 
+### ETA-05G. The completed analytic zeta object is now explicitly reachable by Tate theta/Poisson (CLASSICAL, source-faithful)
+
+ETA-05D recovers genuine positive linear zeta heat, and ETA-05F supplies correctly phased Gaussian theta stages. The **full standard analytic completion** follows without consulting or feeding in any nontrivial zeros.
+
+Set \(\Theta_+(u)=\sum_{n\ge1}e^{-\pi n^2u}\). With the one-real-place additive Fourier character already declared, Poisson summation gives the exact theta duality
+\[
+1+2\Theta_+(u)=u^{-1/2}\bigl(1+2\Theta_+(1/u)\bigr).
+\tag{ETA-05G1}
+\]
+For Re(s)>1, Mellin yields \(\Gamma_{\mathbb R}(s)\zeta(s)=\int_0^\infty\Theta_+(u)u^{s/2-1}\,du\). Split the integral at u=1, replace the lower piece by the Poisson-dual upper piece, and integrate the two non-theta elementary terms. The resulting **exact full continuation** is
+\[
+\boxed{
+\Gamma_{\mathbb R}(s)\zeta(s)
+=\frac1{s-1}-\frac1s+
+\int_1^\infty\Theta_+(u)
+\left(u^{s/2-1}+u^{-(s+1)/2}\right)\,du .
+}\tag{ETA-05G2}
+\]
+The upper integral is entire in s by uniform Gaussian decay on compact s sets; the two polar terms are EXPLICIT and separately necessary. Original completed xi is
+\[
+\boxed{\xi(s)=\frac12s(s-1)\Gamma_{\mathbb R}(s)\zeta(s).}\tag{ETA-05G3}
+\]
+The pole pair cancels after multiplication, giving an entire function with \(\xi(s)=\xi(1-s)\), by the symmetric theta expression. The source-ledger implementation checks the exact polar identity
+\[
+\frac1{s-1}-\frac1s=\frac1{s(s-1)}
+\]
+at exact rational s>1, and the \(\frac12s(s-1)\) completion maps that rational pole component to EXACT \(1/2\). Wrong omission of either pole is caught. Independent numerical quadrature of the ORIGINAL theta upper integral against \(\pi^{-s/2}\Gamma(s/2)\zeta(s)\) is calibration only; the analytical identity rests on classical Poisson.
+
+**Precise frontier now:** The classical analytic completion of \(\xi\), including the real Gamma factor, both pole terms, and functional equation, is explicitly connected by source-preserving steps to our eta/Bernoulli normalization, Möbius-canceled integer heat, and Gaussian Fourier transport. It is STILL NOT the completed *signed Weil quadratic form on all Schwartz--Bruhat tests* nor a source-derived positive Hilbert representation. The latter is RH-hard. No finite run, modular gluing or analytic continuation converts the source equality into positivity.
+
 ### Revised transducer schematic (what is completed, what is still missing)
 
 \[
