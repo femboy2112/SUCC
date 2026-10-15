@@ -209,3 +209,48 @@ def source_feature_contraction_diagnostic(
             "combined_signed_psd_on_selected_finite_set":all(v>=0 for v in mk),
             "combined_minors":mk,
             "full_source_contraction_proved":False,"RH_proved":False}
+
+
+
+def prime_mixed_second_source_coefficients(weight: int | F = 1) -> dict:
+    """Exact distribution-valued ∂x∂y cancellation of *one* prime hinge.
+
+    Positive triangle feature w*b K_T has:
+       +2w δ_0 -w δ_{+b}-w δ_{-b}.
+    Negative 2w Brownian feature has: -2w δ_0.
+    Combining gives exactly -w(δ_{+b}+δ_{-b}), with NO invented
+    composite impulse and NO leftover contact delta.
+    """
+    w=_fraction(weight)
+    if w<=0:raise OneObjectError("Genuine prime source coefficient must be positive")
+    plus_origin=2*w
+    minus_origin=-2*w
+    return {"positive_triangle_origin":plus_origin,
+            "negative_brownian_origin":minus_origin,
+            "combined_origin":plus_origin+minus_origin,
+            "combined_plus_logprime_impulse":-w,
+            "combined_minus_logprime_impulse":-w,
+            "canonical_contact_cancelled":plus_origin+minus_origin==0,
+            "RH_proved":False}
+
+
+def gamma_mixed_second_source_coefficients(j: int) -> dict:
+    """Original real Gamma j-th OU feature -> exact signed Weil source.
+
+      c_j=4/(4j+1)², alpha=(4j+1)/2;
+      ∂x∂y c_j K_exp
+       =(4/(4j+1))δ_0 - exp(-alpha |x-y|).
+    Here the local delta coefficient has no finite J->infty limit by
+    itself: combine with contact and smooth rungs as a distribution.
+    """
+    index=_int(j,0,512)
+    d=4*index+1
+    c=F(4,d*d)
+    alpha=F(d,2)
+    if 2*c*alpha!=F(4,d) or c*alpha*alpha!=1:
+        raise ArithmeticError("Authentic Gamma normalization mismatch")
+    return {"gamma_index":j,"alpha":alpha,"positive_feature_weight":c,
+            "origin_delta_coefficient":F(4,d),
+            "smooth_exponential_coefficient":F(-1),
+            "separate_infinite_origin_series_is_illegal":True,
+            "RH_proved":False}
