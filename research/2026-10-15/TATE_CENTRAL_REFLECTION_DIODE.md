@@ -295,7 +295,88 @@ Thus \(\Lambda_{\mathrm{mut}}(s)=\Lambda(s)M_m(s)\) retains the same \(s\mapsto1
 \]
 NOT a counterexample to RH for actual zeta. The genuine prime-source data are a load-bearing additional constraint. A framework whose proofs treat \(\zeta_{\mathrm{mut}}\) as an admissible original prime source is invalid.
 
-## 8. Observer taxonomy and exactly what would move RH
+## 8. TRD-PARITY: the real reflection separates polar signs and admits a 15-dimensional first-prime low carrier (PROVED SOURCE ANALYTIC)
+
+The full completed original Weil form on \(I=(-1/2,1/2)\), in its already authenticated log-clock \(L^2\) test coordinate \(f\), is
+
+\[
+Q_\zeta(f)=\sum_{j\ge0}\beta_j\langle f,(I-R_{\alpha_j})f\rangle
+-C_\infty\|f\|^2
++2\Big|\int_I f\cosh(t/2)dt\Big|^2
+-2\Big|\int_I f\sinh(t/2)dt\Big|^2
+-w_2\langle f,(S_{\log2}+S_{-\log2})f\rangle.
+\]
+
+Here \(\alpha_j=(4j+1)/2\), \(\beta_j=4/(4j+1)\), \(w_2=\log2/\sqrt2\). Gamma OU, scalar contact and symmetric prime shifts **COMMUTE WITH PARITY** \(Jf(t)=f(-t)\). The cosh rank-one channel is even; the sinh rank-one channel is odd. Therefore the TRUE original completed signed source splits into even and odd quadratic subspaces with no mixed cross term.
+
+In particular, for **even** \(f\), the entire negative polar sinh channel vanishes. We can improve the original unconditional negative source bound on that subspace to
+
+\[
+\boxed{
+Q_\zeta(f)>
+\left[m_J(\Omega)(1-\varepsilon_m(1/2,\Omega))
+-\frac{47}{8}\right]\|f\|^2
+}
+\tag{TRD-P1}
+\]
+for even smooth f annihilating its first m power moments, where 47/8 = 43/8 contact +1/2 original true p2 prime-shift upper. Positive cosh pole remains a correct nonnegative contribution.
+
+Choose the EXACT rational Fourier clock \(\Omega=217/20\), **256 TRUE original real Gamma modes** and \(m=14\). Source-tested Fraction arithmetic proves
+
+\[
+\boxed{Q_\zeta(f)>\frac1{140}\|f\|^2
+\quad\text{for EVERY even smooth compact f with moments }0,\dots,13=0.}
+\tag{TRD-P2}
+\]
+
+For **odd** f, the positive cosh polar term vanishes, while the genuine negative sinh pole remains. The already proven source Fourier result (PR #116, J=32, Omega=12) gives
+
+\[
+\boxed{Q_\zeta(f)>\frac1{20}\|f\|^2
+\quad\text{for EVERY odd smooth compact f with moments }0,\dots,15=0.}
+\tag{TRD-P3}
+\]
+
+**A source-faithful NONCONTIGUOUS low Legendre selector now appears.** In the original Suzuki derivative-coordinate carrier \(H=L^2_0(I)\), let \(f=Vu\) and \(K=V^*V=(-\Delta_N)^{-1}\). The primitive V reverses parity: odd u→even f, even u→odd f, with both boundary traces zero. Orthogonality against \(P_j(x/a)\) for j=1..m implies vanishing first m power moments of f (Legendre derivatives span the polynomial test space).
+
+Therefore choose the **15-dimensional** low source space
+\[
+\boxed{
+F_{15}^{\mathrm{ref}}=
+\mathrm{span}\{P_1,P_2,\dots,P_{14},P_{16}\}
+}
+\tag{TRD-P4}
+\]
+with 7 odd-derivative modes \(P_1,P_3,\dots,P_{13}\) and 8 even-derivative modes \(P_2,P_4,\dots,P_{16}\). On its true high orthogonal complement:
+
+- odd u has no \(P_1,P_3,\dots,P_{13}\) component; all EVEN P_j vanish automatically by parity. Its even primitive f annihilates first **14** moments and obeys TRD-P2.
+- even u has no \(P_2,P_4,\dots,P_{16}\) component; all ODD P_j vanish automatically. Its odd primitive f annihilates first **16** moments and obeys TRD-P3.
+
+Since the genuine signed original quadratic and the Neumann K metric both preserve parity, the two positive high bounds sum:
+
+\[
+\boxed{
+Q_{15}^{\mathrm{ref}}GQ_{15}^{\mathrm{ref}}
+\succeq\frac1{140}
+Q_{15}^{\mathrm{ref}}KQ_{15}^{\mathrm{ref}}.
+}
+\tag{TRD-P5}
+\]
+
+This is a **genuine first-prime original-source 15-dimensional low Schur reduction**, split into 7+8 parity blocks. It is mathematically stronger as a *smaller-dimensional low description* than the earlier 16/18/30 cutoffs, but quantitatively MUCH weaker than PR #116's \(r=18,\kappa=1/16\). The inherited signed \(g'\) source norm <11/40 only gives the coarse zero-shift cross bound
+
+\[
+\boxed{0\preceq R_0\prec\frac{847}{80}I_{15}
+\quad (\approx10.5875 I),}
+\tag{TRD-P6}
+\]
+which is far too large to certify the source LOW signed Schur \(S_0=A-R_0\).
+
+This exposes a real research tradeoff: one can reduce the low-sector dimension by exploiting \(s\leftrightarrow1-s\)-compatible reflection parity and its polar channel signs, but the spectral positivity **margin** can deteriorate and make residual shorting harder. The 15-dimensional source trial \(U\) would also need a new noncontiguous source projection; the rank-two K boundary-channel formula for the contiguous 30-dimensional split cannot be reused without rederivation. None of these results proves even first-window all-test positivity, let alone RH.
+
+**Executable source certificate:** \`observational_succ/tate_reflection_parity_schur.py\`; exact tests \`tests/test_tate_reflection_parity_schur.py\`. The Γ/contact/p2 and original PR109 derivative sources are SHA checked, and the source claims carry no zero inputs.
+
+## 9. Observer taxonomy and exactly what would move RH
 
 **SimpleField aspects:** fixed local Tate rational charts, every declared unramified reflection ratio and finite source-prime tape, real theta Poisson/globally completed zeta by a finite mathematical functional equation, a certified high-prime-jet residual with \(1/(2P)\) truncation cost.
 
