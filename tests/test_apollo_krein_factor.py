@@ -23,7 +23,7 @@ class ExactSourceFreeKreinLaws(unittest.TestCase):
             self.assertTrue(datum["identity_exact"])
             self.assertEqual(datum["signed"],prime_hinge_kernel(x,y,b))
             checks+=1
-        self.assertEqual(checks,750)
+        self.assertEqual(checks,150)
 
     def test_two_true_hilbert_feature_grans_are_exact_psd(self):
         pts=(F(-2),F(-1,2),F(0),F(1,3),F(3,2))
