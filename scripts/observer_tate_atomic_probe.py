@@ -11,6 +11,10 @@ from observational_succ.tate_observer_completion import (
     exact_local_biaxial_diamond,exact_crt_product_fourier,
     crt_three_prime_fourier,diagonal_rational_additive_character,
 )
+from observational_succ.tate_adele_quotient_descent import (
+    LocalFractionalAdeleCell, FiniteAdeleCoset, add_cosets,
+    adele_solenoid_proof_contract,
+)
 from observational_succ.observer_global_sign_gate import (
     exact_scalar_schur_source_gate,unseen_sign_mutant,
     true_suzuki_anchored_two_point_source,dense_smooth_source_gate,
@@ -52,7 +56,27 @@ def main():
     assert double["naive_frequency_transport_disagreement_count"]>0
     assert triple["all_three_source_Fourier_tensor_square_commutes"]
     assert phase["total_global_phase_integer"]==1
+    finite_adele=FiniteAdeleCoset((
+        LocalFractionalAdeleCell(2,1,1),
+        LocalFractionalAdeleCell(3,1,2),
+    ))
+    coset=finite_adele.check()
+    solenoid=adele_solenoid_proof_contract()
+    carry=add_cosets(FiniteAdeleCoset((LocalFractionalAdeleCell(2,1,1),)),
+                     FiniteAdeleCoset((LocalFractionalAdeleCell(2,1,1),)))
+    assert coset["constructive_diagonal_Q_lift"]=="7/6"
+    assert coset["global_discrete_Q_mod_Z_class"]=="1/6"
+    assert carry["result_Q_over_Z"]=="0"
+    assert solenoid["adelic_quotient_compact"]
     report={
+        "finite_adele_original_source_prime_places":[2,3],
+        "finite_adele_constructive_rational_lift":coset["constructive_diagonal_Q_lift"],
+        "finite_adele_quotient_Q_mod_Z":coset["global_discrete_Q_mod_Z_class"],
+        "finite_adele_p2_carry_group_consistent":True,
+        "finite_adele_strong_approximation":"CLASSICAL_PROVED",
+        "real_profinite_solenoid_identifies_A_Q_mod_Q":"CLASSICAL_PROVED",
+        "real_profinite_solenoid_compact":solenoid["adelic_quotient_compact"],
+        "real_profinite_solenoid_global_Poisson_established":False,
         "local_support_precision_source_Fourier_cube":True,
         "CRT_two_prime_dual_transport_inverse_phase_detects_naive_error":True,
         "CRT_two_prime_naive_frequency_mismatches":double["naive_frequency_transport_disagreement_count"],
