@@ -17,6 +17,9 @@
 | TL-09 | Arbitrary SUCC source histories and operators admit a history-faithful, analytic Tate/Weil functor | HYPOTHESIS / UNVERIFIED | Need construct functor and compare actual source event laws |
 | TL-10 | Source-derived completed Weil form is PSD on entire legitimate test space | UNVERIFIED, RH-HARD | No construction or proof from TL-01–TL-09; preserve fake-composite and non-Euler controls |
 
+| TL-11 | For a new genuine prime p, the character-natural map X_(S+p) -> X_S has kernel Z_p and admits no continuous section (even as a set map) | CLASSICAL / PAPER PROOF | Pontryagin dual torsion class 1/p + Gamma_S, torsion-free Gamma_T; connected X_T cannot be a product with disconnected Z_p; code checks finite rational shadows only |
+| TL-12 | Adding prime p cancels one logarithmic modulus defect: Delta_(S+p)(q)=Delta_S(q) p^(-v_p(q)); multiplicative conservation decomposes by prime valuation, not by equating R and R/Z phases | CLASSICAL / EXACT ALGEBRA | Integer factorization and product formula; distinguish Haar modulus from Fourier character |
+
 ## Steelman / crucible / verdict
 
 **Steelman:** Additive Fourier phase compatibility and the discrete arithmetic lattice provide the missing mechanism for multiplicative reciprocity, while recursively compatible finite-place observer models have a canonical global object.
@@ -27,7 +30,7 @@
 
 ## Validation scope
 
-Isolated local tests performed against a temporary local copy of the existing prime/principal-part helper interface; the full repository suite and independent CI require checking the committed branch. Run:
+Isolated local tests (21 tests including extension controls) performed against a temporary local copy of the existing prime/principal-part helper interface; the full repository suite and independent CI require checking the committed branch. Run:
 
     python -m unittest discover -s tests -p 'test_tate_lattice_descent.py' -v
 
