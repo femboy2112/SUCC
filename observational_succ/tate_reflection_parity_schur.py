@@ -32,7 +32,9 @@ from .tate_suzuki_fourier_schur import (
     gamma_fourier_multiplier_lower, moment_taylor_low_fourier_fraction,
     source_first_prime_spectral_budget,
 )
-from .one_object_residual_schur import ORIGINAL_SUZUKI_BLOB
+from .one_object_residual_schur import (
+    ORIGINAL_SUZUKI_BLOB, original_source_cancellation_certificate,
+)
 
 
 def reflection_parity_15_low_source_certificate():
@@ -61,8 +63,10 @@ def reflection_parity_15_low_source_certificate():
             or len(source_low_indices)!=15):
         raise ArithmeticError("Parity source selector is not an honest 15D low carrier")
     kappa=F(1,140)
-    # Original source PR109 g' L1<11/40. The variational
-    # infinite-dimensional zero-shift R0 bound is finite, but weak:
+    derivative=original_source_cancellation_certificate()
+    if not derivative["gprime_L1_STRICT_upper"]<F(11,40):
+        raise ArithmeticError("PR109 original zeta gamma/pole/prime cancellation source failed")
+    # The true zero-shift variational Schur bound is finite but very weak.
     bound=F(11,40)**2/kappa
     return {
         "source":"TRUE_ZETA_TATE_GAMMA_REFLECTION_PARITY_WEIL",
