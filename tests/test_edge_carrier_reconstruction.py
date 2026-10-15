@@ -287,11 +287,15 @@ class ProfiniteCompletionTests(unittest.TestCase):
 
     def test_edge_contracts_do_not_upgrade_embeddings_to_isomorphisms(self):
         contracts=carrier_interface_contract()
-        self.assertEqual(len(contracts),5)
+        self.assertEqual(len(contracts),8)
         self.assertEqual(contracts[0]["kind"],"GROUP_COMPLETION_ISOMORPHISM_ON_HOM")
         self.assertEqual(contracts[1]["kind"],"LOCALIZATION_RING_ISOMORPHISM")
         self.assertEqual(contracts[3]["Z_to_Zhat"],"proper dense embedding, NOT ring isomorphism")
-        self.assertEqual(contracts[4]["kind"],"NOT_YET_EQUIVALENT")
+        self.assertEqual(contracts[4]["kind"],"METRIC_COMPLETION_FIELD_ISOMORPHISM_CLASSICAL")
+        self.assertEqual(contracts[5]["kind"],"LOCALIZATION_ADELIC_RING_ISOMORPHISM_CLASSICAL")
+        self.assertEqual(contracts[6]["kind"],"REAL_FINITE_PLACE_PRODUCT_CARRIER_ISOMORPHISM_CLASSICAL")
+        self.assertEqual(contracts[7]["kind"],"NOT_YET_EQUIVALENT_UNCOMPLETED")
+        self.assertFalse(contracts[5]["all_global_points_have_finite_code"])
 
 
 if __name__=="__main__":
