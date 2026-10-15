@@ -1,0 +1,111 @@
+{
+  "source_parent": "dc6b7e3adbfb67c2913c145a4efb95fe3d50b1bc",
+  "schema": "SUCC_WILD_EMBEDDING_PROBE_V1",
+  "intrinsic_s2": {
+    "V": 6,
+    "E": 12,
+    "F": 8,
+    "Euler": 2,
+    "Betti_Q": [
+      1,
+      0,
+      1
+    ]
+  },
+  "toy_magnus_invisible_until_depth": [
+    {
+      "level": 1,
+      "reduced_length": 4,
+      "abelianization": [
+        0,
+        0
+      ],
+      "vanishes_up_to_magnus_degree": 1,
+      "detected_at_degree": 2,
+      "leading_X_power_Y_coefficient": 1
+    },
+    {
+      "level": 2,
+      "reduced_length": 10,
+      "abelianization": [
+        0,
+        0
+      ],
+      "vanishes_up_to_magnus_degree": 2,
+      "detected_at_degree": 3,
+      "leading_X_power_Y_coefficient": 1
+    },
+    {
+      "level": 3,
+      "reduced_length": 20,
+      "abelianization": [
+        0,
+        0
+      ],
+      "vanishes_up_to_magnus_degree": 3,
+      "detected_at_degree": 4,
+      "leading_X_power_Y_coefficient": 1
+    },
+    {
+      "level": 4,
+      "reduced_length": 38,
+      "abelianization": [
+        0,
+        0
+      ],
+      "vanishes_up_to_magnus_degree": 4,
+      "detected_at_degree": 5,
+      "leading_X_power_Y_coefficient": 1
+    },
+    {
+      "level": 5,
+      "reduced_length": 72,
+      "abelianization": [
+        0,
+        0
+      ],
+      "vanishes_up_to_magnus_degree": 5,
+      "detected_at_degree": 6,
+      "leading_X_power_Y_coefficient": 1
+    }
+  ],
+  "finite_group_calibration": {
+    "S3_order": 6,
+    "S3_distinct_commutators": 3,
+    "A5_order": 60,
+    "A5_distinct_commutators": 60
+  },
+  "finite_boundary_toy": {
+    "source_id": "FINITE_CYCLIC_TOY",
+    "full_T_C_commute": true,
+    "compressed_commutator": [
+      [
+        "-1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "commutator_squared_frobenius": "2",
+    "leakage_difference_identity": true,
+    "three_model_associativity_identity": true,
+    "real_arithmetic_source_identified": false
+  },
+  "orthogonal_transport": {
+    "negative_rayleigh_before": "-1",
+    "negative_rayleigh_after": "-1",
+    "actual_weil_intertwiner_constructed": false
+  },
+  "actual_horned_sphere_fundamental_group_computed": false,
+  "actual_3d_wild_embedding_constructed": false,
+  "completed_weil_positivity_proved": false
+}

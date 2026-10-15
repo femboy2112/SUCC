@@ -1,0 +1,43 @@
+name: Wild embedding and source-boundary SUCC
+
+on:
+  push:
+    branches:
+      - 'research/wild-embedding-boundary-descent-*'
+  pull_request:
+    paths:
+      - 'observational_succ/wild_embedding_probes.py'
+      - 'observational_succ/wild_boundary_compression.py'
+      - 'tests/test_wild_*.py'
+      - 'research/2026-10-14/WILD_EMBEDDING_*'
+      - 'scripts/wild_embedding_boundary_probe.py'
+      - 'docs/CLAIM_SUPPLEMENT_WILD_EMBEDDING.md'
+      - '.github/workflows/wild-embedding-succ.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact_intrinsic_exterior_separation:
+    name: source wild observer (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[test]'
+      - name: Exact intrinsic, Magnus, perfect group and boundary leakage controls
+        run: python -m unittest discover -s tests -p 'test_wild_*.py' -v
+      - name: Full-parent authentic signed Weil focused regression
+        run: python -m unittest discover -s tests -p 'test_source_weil_hierarchy.py' -v
+      - name: Frozen exact finite-observer receipt
+        run: python scripts/wild_embedding_boundary_probe.py --verify research/2026-10-14/WILD_EMBEDDING_BOUNDARY_RECEIPT.json
+      - name: Verify historical source provenance
+        run: python scripts/verify_provenance.py
