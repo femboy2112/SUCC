@@ -19,6 +19,8 @@ from observational_succ.apollo_krein_factor import (
     authentic_small_window_brownian_coercivity,
     authentic_sharp_small_window_hilbert_factor,
     authentic_prime_two_activation_on_old_window,
+    authentic_small_window_completed_weil_coercivity,
+    brownian_compact_weak_derivative_certificate,
 )
 
 
@@ -61,7 +63,15 @@ def main():
     assert sharp["exact_positive_coercivity_margin"]>F(1,100)
     assert sharp["positive_feature_Psi_a_exists_by_completion"]
     assert birth["signed_zero"] and birth["Krein_neutral_source_birth"]
+    weil=authentic_small_window_completed_weil_coercivity(F(1,12))
+    brownian_cal=brownian_compact_weak_derivative_certificate(F(1,12),4)
+    assert weil["holds_for_every_smooth_compact_test_on_window"]
+    assert weil["uniform_original_weil_L2_lower"]==F(1,100)
+    assert brownian_cal["direct_polynomial_L2_energy"]==brownian_cal["independent_beta_energy"]
     result={
+       "AUTHENTIC_SIGNED_WEIL_all_Cc_infinity_small_window_lower":"1/100",
+       "AUTHENTIC_SIGNED_WEIL_all_Cc_infinity_radius":"1/12",
+       "AUTHENTIC_Brownian_D2_exact_beta_polynomial_control":True,
        "AUTHENTIC_FULL_WINDOW_small_positive_radius":"1/12",
        "AUTHENTIC_FULL_WINDOW_true_rational_margin_lower":str(sharp["exact_positive_coercivity_margin"]),
        "AUTHENTIC_FULL_WINDOW_universal_Brownian_floor":"1/100",
