@@ -275,7 +275,7 @@ def finite_tate_coset_discriminator(p,M,N,left,right):
             if delta==0:
                 raise ArithmeticError("Finite Haar coset test lost nonzero source")
             return {
-                "source":"GENUINE_LOCAL_TATE_SCHWARTZ_BIRKHOFF_COSET_OBSERVER",
+                "source":"GENUINE_LOCAL_TATE_SCHWARTZ_BRUHAT_COSET_OBSERVER",
                 "p":p,"M":M,"N":N,
                 "all_coefficients_identical":False,
                 "first_distinguishing_coset":j,
@@ -287,7 +287,7 @@ def finite_tate_coset_discriminator(p,M,N,left,right):
                 "RH_proved":False,
             }
     return {
-        "source":"GENUINE_LOCAL_TATE_SCHWARTZ_BIRKHOFF_COSET_OBSERVER",
+        "source":"GENUINE_LOCAL_TATE_SCHWARTZ_BRUHAT_COSET_OBSERVER",
         "p":p,"M":M,"N":N,
         "all_coefficients_identical":True,
         "first_distinguishing_coset":None,
