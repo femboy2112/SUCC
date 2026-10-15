@@ -194,8 +194,11 @@ def true_suzuki_anchored_two_point_source(x:int|Q,y:int|Q,J:int=128)->dict:
     from .suzuki_legendre_source import _pinned_source
     src=_pinned_source()
     xx,yy=Q(x),Q(y)
-    if not xx or not yy or xx==yy or max(abs(xx),abs(yy),abs(xx-yy))>2:
+    radius=max(abs(xx),abs(yy),abs(xx-yy))
+    if not xx or not yy or xx==yy or radius>2:
         raise GrowthGateError("Nonzero distinct points on original signed source window")
+    if Q(4*J-3,2)*radius>128:
+        raise GrowthGateError("Pinned original source exp evaluator exceeds its 128-domain")
     def interval(t):
         if t==0:
             return Q(),Q()
