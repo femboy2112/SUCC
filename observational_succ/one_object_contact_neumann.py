@@ -158,3 +158,57 @@ def contact_moment_boundary_channels(c):
       "completed_weil_global_positive_proved":False,
       "rh_proved":False
     }
+
+
+def contact_generalized_schur_pencil(G,K,low_rank,c,mu):
+    """Exact contact gauge = generalized spectral-parameter translation.
+
+    In G-mu*K (the actual Suzuki generalized Rayleigh pencil),
+       (G+cK)-mu K=G-(mu-c)K.
+    A block Schur on low/high preserves this equality ONLY if cK is
+    included in A, B and D. A fake low-only contact is exposed.
+
+    This matrix proof is a FINITE TOY with positive definite K.
+    A compact infinite high-block inverse is NOT taken or assumed.
+    """
+    from .one_object_relative_residual import (
+        matrix,pd,inv,mm,gram,add,ResidualSourceError
+    )
+    try:
+        G=matrix(G,square=True);K=matrix(K,square=True)
+        c=q(c);mu=q(mu)
+    except ResidualSourceError as exc:
+        raise ContactTransportError("exact source type required") from exc
+    n=len(G)
+    if (n!=len(K) or n<2 or type(low_rank) is not int
+        or not 1<=low_rank<n or not pd(K)):
+        raise ContactTransportError("proper positive K and declared low/high cut")
+    def short(M):
+        A=tuple(tuple(row[:low_rank]) for row in M[:low_rank])
+        B=tuple(tuple(row[:low_rank]) for row in M[low_rank:])
+        D=tuple(tuple(row[low_rank:]) for row in M[low_rank:])
+        return add(A,mm(gram(B,inv(D)),B),-1)
+    left=add(add(G,K,c),K,-mu)
+    right=add(G,K,-(mu-c))
+    if left!=right:raise ArithmeticError("Neumann pencil contact identity wrong")
+    full=short(left)
+    source=short(right)
+    if full!=source:
+        raise ArithmeticError("genuine contact spectral-pencil transport false")
+    wrong=[[x for x in row] for row in add(G,K,-mu)]
+    for i in range(low_rank):
+        for j in range(low_rank):
+            wrong[i][j]+=c*K[i][j]
+    wrongshort=short(tuple(tuple(row) for row in wrong))
+    return {
+       "source":"FINITE_DECLARED_GENERALIZED_SUZUKI_METRIC_TOY",
+       "contact_discrepancy":c,"generalized_spectral_parameter":mu,
+       "transported_parameter":mu-c,
+       "actual_gauge_Schur":full,
+       "parameter_translated_Schur":source,
+       "fake_low_only_contact_Schur":wrongshort,
+       "cross_channel_source_matters":full!=wrongshort,
+       "infinite_dimensional_D_inverse_constructed":False,
+       "authentic_zeta_compressed_G_calculated":False,
+       "rh_proved":False
+    }
