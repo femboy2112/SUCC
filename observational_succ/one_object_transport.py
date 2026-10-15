@@ -293,3 +293,21 @@ def sonin_compact_defect_countermodel(index: int) -> dict:
             "defect_norm":-d,"defect_rank":1,
             "compactness_implies_Weil_sign":False,
             "original_zeta_source":False,"RH_proved":False}
+
+
+
+def sonin_log_moment_annihilator(weight: int | F,
+                                derivative_coefficient: int | F = F(1, 2)) -> F:
+    """Exact local differential source map into the two Sonin moment nulls.
+
+    For phi in Cc^infty(R), v=phi''+c phi' has the SAME compact support;
+      integral e^(weight*x) v(x) dx
+        = weight*(weight-c) integral e^(weight*x) phi(x) dx
+    by two integrations by parts. In particular c=1/2 annihilates
+    weights 0 and 1/2, equivalent to additive Fourier zeros z=0,i/2
+    under the explicit convention hat(v)(z)=int v(x)exp(-izx)dx.
+    Pure coefficient algebra; NO source Weil sign or global Sonin trace.
+    """
+    lam=_fraction(weight)
+    c=_fraction(derivative_coefficient)
+    return lam*(lam-c)
