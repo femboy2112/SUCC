@@ -46,7 +46,8 @@ jobs:
           from fractions import Fraction
           from observational_succ.tate_suzuki_shorting import (verify_original_suzuki_source, PINNED_SOURCE_BLOB,
               authentic_suzuki_legendre_derivative_point,
-              original_suzuki_legendre_derivative_energy)
+              original_suzuki_legendre_derivative_energy,
+              original_suzuki_projected_derivative_energy)
           from observational_succ.suzuki_moment_schur import CANONICAL_KAPPA
           from observational_succ.suzuki_legendre_source import authentic_full_low_entry
           s=verify_original_suzuki_source()
@@ -65,6 +66,16 @@ jobs:
           assert 0<=e['finite_J_energy_lower']<=e['finite_J_energy_upper']
           assert e['infinite_true_G_derivative_energy_upper']>0
           assert e['true_high_projected_cross_energy_certified'] is False
+          # Fully original arithmetic source: ALL THIRTY low Legendre modes
+          # are subtracted before pointwise squaring, with a rigorous
+          # all-position derivative Lipschitz and positive-Gamma tail budget.
+          projected=original_suzuki_projected_derivative_energy(1,3,2)
+          assert projected['source']=='AUTHENTIC_COMPLETED_ZETA_SUZUKI_SIGNED'
+          assert projected['low_rank']==30
+          assert projected['finite_J_projected_energy_upper']>=projected['finite_J_projected_energy_lower']>=0
+          assert projected['true_untruncated_projected_cross_diagonal_upper']>=0
+          assert projected['true_full_30x30_Weil_low_high_Gram_certified'] is False
+          assert projected['unshifted_30x30_short_sign_certified'] is False
           print('GENUINE_TATE_SUZUKI_FIRST_PRIME_SOURCE_AND_DERIVATIVE_IDENTIFIED')
           PY
       - name: Byte-replay original source-model receipt

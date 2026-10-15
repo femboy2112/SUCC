@@ -590,3 +590,87 @@ def original_suzuki_legendre_derivative_energy(k,J,grid=8):
         "true_high_projected_cross_energy_certified":False,
         "original_all_test_weil_positive":False,
     }
+
+
+def original_suzuki_projected_derivative_energy(k, J=3, grid=2, *, low_rank=30):
+    """GENUINE ζ SOURCE: signed projected low->high derivative-energy enclosure.
+
+    At a=1/2, H=L²_0(-a,a), low=span{P_1(2x),...,P_30(2x)}, high=low^⊥.
+    Project the actual *original* completed Suzuki G_J, not an auxiliary PSD
+    bath, and bound the whole-interval norm
+                  || [P_high G_J P_k]' ||²_{L²(-a,a)}
+    using certified true-source polynomial/exponential low Legendre inner
+    products, true-source derivative-point enclosures and a source-derived
+    bounded-variation Lipschitz bound for every between-grid point.
+
+    The omitted original Gamma tail is controlled by the separately proven
+    source-specific projected derivative bound, so the true UNTRUNCATED
+    original Weil operator's projected cross-norm is likewise bounded.
+    This proves one DIAGONAL ENTRY of the low/high residual Gram, not the
+    whole 30x30 E matrix or its completed signed Schur matrix. No RH proof.
+    """
+    if type(low_rank) is not int or low_rank != 30:
+        raise ShortingContractError('true coercive high space has exactly 30 excluded moments')
+    if type(grid) is not int or not 2 <= grid <= 16:
+        raise ShortingContractError('projected true-source grid 2..16')
+    if type(k) is not int or not 1 <= k <= 4:
+        raise ShortingContractError('supported low Legendre k=1..4')
+    if type(J) is not int or not 1 <= J <= 20:
+        raise ShortingContractError('true-source projected Gamma J=1..20')
+    verify_original_suzuki_source()
+    from . import suzuki_legendre_source as L
+    source=L._pinned_source()
+    a=F(1,2)
+    # W_j=||P_j(2x)||²_{L²(-1/2,1/2)}=1/(2j+1).
+    # Every pair is from THE ORIGINAL SIGNED source, including one Gamma,
+    # true prime2, completed poles and contact, verified by source SHA.
+    coeff=[]
+    for j in range(1,low_rank+1):
+        if (j-k)%2:
+            coeff.append((F(),F()))
+            continue
+        low=L.authentic_full_low_entry(j,k,a=a,J=J)
+        coeff.append(((2*j+1)*low.lo,(2*j+1)*low.hi))
+    # Classical Markov polynomial inequality: on [-1,1], ||P_j'||∞<=j²,
+    # ||P_j''||∞<=j²(j−1)²<=j⁴; after x↦2x, ||[P_j(2x)]''||∞<=4 j⁴.
+    # The true source bounds on coefficients are INCLUDED before squaring.
+    bound_projection=sum((F(4*(j**4))*max(abs(ij[0]),abs(ij[1]))
+                          for j,ij in enumerate(coeff,1)),F())
+    lip=original_first_prime_derivative_bv_bound(J)*genuine_low_legendre_sup_coarse(k)+bound_projection
+    h=F(1,grid)
+    wiggle=lip*h/2
+    low_en=F(); high_en=F()
+    def add(a,b):return (a[0]+b[0],a[1]+b[1])
+    def sub(a,b):return (a[0]-b[1],a[1]-b[0])
+    def scale(a,x):return (a[0]*x,a[1]*x) if x>=0 else (a[1]*x,a[0]*x)
+    for m in range(grid):
+        x=-a+F(2*m+1,2*grid)
+        val=authentic_suzuki_legendre_derivative_point(k,x,J)
+        projection=(F(),F())
+        for j,C in enumerate(coeff,1):
+            if C==(F(),F()):continue
+            pj=L.legendre_polynomial(j,a)
+            dpj=L.poly_derivative(pj)
+            projection=add(projection,scale(C,L.poly_eval(dpj,x)))
+        pt=sub((val.lo,val.hi),projection)
+        l,u=pt[0]-wiggle,pt[1]+wiggle
+        maximum=max(abs(l),abs(u))
+        minimum=l if l>0 else -u if u<0 else F()
+        low_en+=h*minimum*minimum
+        high_en+=h*maximum*maximum
+    # Exact projected original gamma tail on the mean-zero full source:
+    # ||[(P_high(G−G_J)P_k)]'||≤962 eta_J ||P_k||₂.
+    eta=actual_source_high_derivative_truncation(J)
+    true_upper=2*high_en+2*eta*eta/F(2*k+1)
+    return {
+        'source':'AUTHENTIC_COMPLETED_ZETA_SUZUKI_SIGNED',
+        'low_rank':low_rank,'k':k,'J':J,'grid':grid,
+        'signed_source_projected':True,
+        'finite_J_projected_derivative_Lipschitz_bound':lip,
+        'finite_J_projected_energy_lower':low_en,
+        'finite_J_projected_energy_upper':high_en,
+        'true_untruncated_projected_cross_diagonal_upper':true_upper,
+        'true_full_30x30_Weil_low_high_Gram_certified':False,
+        'unshifted_30x30_short_sign_certified':False,
+        'RH_PROVED':False,
+    }

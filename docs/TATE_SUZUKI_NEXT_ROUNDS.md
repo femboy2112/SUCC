@@ -40,3 +40,18 @@ The code now computes **one-dimensional source derivative point** intervals dire
 ### TS-14 integration checkpoint: the first global derivative norm, not merely point samples
 
 `original_suzuki_legendre_derivative_energy(k,J,N)` now encloses, by exact rational bounds, the actual original Gamma-J signed operator's `L²` *derivative energy* on `P_k(2x)`, using a new source-derived distributional `g_J''` variation bound and midpoint intervals. Combining the certified J-to-∞ derivative remainder yields a rigorous bound for the TRUE full-source `G`, not just a finite truncation. **The next decisive implementation should symbolically subtract the source-projected 30 low Legendre components from `(G_Jw)'` before integrating their square.** Otherwise a crude projection norm multiplier (~961) buries the delicate source-sign cancellations. The genuine `M` entries exist in the analytic source module; the missing object remains the tight full-source **projected** residual Gram `E` and its shorted PSD verdict. These can be attempted without pretending a compact inverse has a positive L² gap.
+
+
+### R2b checkpoint: genuine projected energy diagonal achieved (TS-15)
+
+The new `original_suzuki_projected_derivative_energy` uses **all thirty**
+original-source low Legendre coefficients before squaring, then pays a
+rigorous Markov/BV Lipschitz grid remainder. This is a valid whole-interval
+**diagonal** high residual source bound at k<=4, J<=20, not a direct estimate
+of the entire unknown 30x30 `E` or a small bound relative to the signed
+low matrix. The next research task is a rigorously enclosed
+**offdiagonal product** integration with actual true-source low Legendre
+coefficient cancellation (rather than a Cauchy-only or huge 961||·|| bound),
+followed by adaptive J,N,precision refinement and a full-matrix PSD/negative
+witness test. For high J, source exponentials and cancellations demand
+adaptive precision and full test-domain error discipline.

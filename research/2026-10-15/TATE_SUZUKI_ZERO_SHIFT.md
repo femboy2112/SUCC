@@ -332,3 +332,98 @@ This is a quantifier-complete finite-to-global Hilbert/Zeno cell certificate: th
 \]
 
 This uses the elementary inequality `(u+v)²≤2u²+2v²`; it is conservative and can be loose. It is already a **genuine source-derived whole-test-functional analytic** bound for one low mode rather than a pointwise sample. It does **not** yet bound `||(P_HG P_k)'||²`: obtaining the necessary source-projected 30-dimensional derivative Gram requires combining these exact derivative cell envelopes with source-interval projection coefficients (the source low Legendre blocks), and then canceling the polynomial low component *before* squaring/integrating. Replacing that cancellation with the global bound 961 can be astronomically wasteful. No claim of nonnegative shorted matrix or RH is made.
+
+
+## 12. FOURTH ROUND: original **projected** low/high derivative-energy certificate (TS-15)
+
+The preceding round certified the whole-interval derivative energy of the
+**unprojected** authentic source vector `G_J P_k`. This round executes the
+missing finite-dimensional projection and proves a whole-interval bound on
+`(P_high G_J P_k)'` in **the actual 30-moment Suzuki Hilbert split** at
+`a=1/2`, where the high-space positivity from AMW-06B is known.
+
+Let `p_j(x)=P_j(2x)`, `1<=j<=30`, and let
+`W_j=∫_{-1/2}^{1/2}p_j(x)^2 dx=1/(2j+1)`. The authentic derivative-coordinate
+orthogonal projector has the exact finite formula
+
+\[
+(P_L f)(x)=\sum_{j=1}^{30} p_j(x)
+\frac{\langle p_j,f\rangle}{W_j},
+\quad P_H=I-P_L.
+\]
+
+For the **actual signed original-source** truncated operator `G_J`, set
+`c_{jk,J}=(2j+1)\langle p_j,G_J p_k\rangle`. Every coefficient uses the
+existing independently authored SHA-pinned original-source direct Legendre
+interval evaluator `suzuki_legendre_source.authentic_full_low_entry`, *not* a
+synthetic Gram or a fitted Fourier model. The original source includes genuine
+prime 2, its actual log2/sqrt2 half-density weight, one completed real Gamma,
+`C_G` contact, and both completed polar contributions. Parity forces
+`c_{jk,J}=0` if `j+k` is odd. Hence
+
+\[
+ r_{k,J}'(x)
+ =[(P_H G_J p_k)]'(x)
+ =(G_J p_k)'(x)-\sum_{j=1}^{30}c_{jk,J}p_j'(x).
+\tag{TS-15a}
+\]
+
+For `x ∈ [-1/2,1/2]`, the classical Markov polynomial bound on the unit
+interval gives `sup|p_j''(x)| <= 4 j^4`. If the original-source certified
+coefficient interval is `c_{jk,J}∈[c^-_{jk,J},c^+_{jk,J}]`, the actual
+projected derivative has the *source-certified whole-interval Lipschitz*
+constant
+
+\[
+L_{k,J}^{proj}=
+ V_J Q_k+
+ 4\sum_{j=1}^{30}j^4
+ \max(|c^-_{jk,J}|,|c^+_{jk,J}|),
+\quad V_J=16+8\sum_{j<J}(4j+1)^{-1}.
+\tag{TS-15b}
+\]
+
+At each rational midpoint `x_i` of one of `N` equal cells, compute both
+original-source intervals in (TS-15a); subtract **all 30 source Legendre
+projections first**, and widen by `L^{proj}/(2N)` before squaring. Summing
+certifies finite rational numbers `0<=L^{proj}_{k,J,N}<=U^{proj}_{k,J,N}` such that
+
+\[
+ \boxed{L^{proj}_{k,J,N}
+ \le\big\| [(P_HG_Jp_k)]'\big\|_{L^2}^2
+ \le U^{proj}_{k,J,N}.}
+\tag{TS-15c}
+\]
+
+Since the **source-positive original Gamma tail** obeys the previously
+proved projected derivative operator estimate
+`||(P_H(G-G_J)p_k)'||_2 <=962 η_J ||p_k||_2`, with
+`η_J=2/(4J+1)+8/(4J+1)^2` and `||p_k||²=1/(2k+1)`, the full authentic
+Suzuki operator obeys
+
+\[
+ \boxed{\big\| [(P_HG p_k)]'\big\|_{L^2}^2
+ \le2U^{proj}_{k,J,N}+
+  \frac{2(962\eta_J)^2}{2k+1}.}
+\tag{TS-15d}
+\]
+
+**What this actually discharges:** a properly **projected diagonal** cross
+energy bound, for an original source low mode and its exact codimension-30
+high counterpart. This is a stronger mathematical input to the unshifted
+residual Schur calculus than TS-14. The executable source research budget is
+currently `1<=k<=4`, `1<=J<=20`, `2<=N<=16`, exactly 30 source Legendre modes.
+The new source-adapter test executes `(k,J,N)=(1,3,2)` against the actual
+original SUCC source, rather than accepting a synthetic matrix as an
+arithmetic certificate. All arithmetic intervals are exact Fractions.
+
+**What still remains RH-hard:** (i) extend diagonal and offdiagonal energy
+bounds to every one of the thirty true source low modes; (ii) exploit genuine
+cancellation to produce *numerically useful* complete cross-residual Gram
+`E_{ij}=<[(P_HG p_i)]',[(P_HG p_j)]'>`, retaining correct operator and domain;
+(iii) independently enclose the true low signed matrix `M` sufficiently
+sharply that an authenticated unshifted Schur sign can be decided;
+(iv) carry this fixed-interval method to **all radii** with independently
+proved relative high positivity. The newly bounded diagonal here does not
+establish positivity of any original unshifted Schur matrix, and cannot be
+promoted into an RH theorem without those additional results.

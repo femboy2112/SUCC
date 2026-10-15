@@ -364,5 +364,29 @@ class IntegratedOriginalSource(unittest.TestCase):
 
 
 
+class SourceProjectedDerivativeEnergy(unittest.TestCase):
+    def test_projection_wrong_rank_rejected_before_source(self):
+        from observational_succ.tate_suzuki_shorting import original_suzuki_projected_derivative_energy
+        for rank in (0,1,2,29,31,True):
+            with self.assertRaises(ShortingContractError):
+                original_suzuki_projected_derivative_energy(1,3,2,low_rank=rank)
+
+    def test_true_suzuki_projected_low_high_derivative_energy(self):
+        try:
+            from observational_succ import suzuki_legendre_source
+        except ImportError:
+            self.skipTest('full SUCC original-source projection required by CI')
+        from observational_succ.tate_suzuki_shorting import original_suzuki_projected_derivative_energy
+        result=original_suzuki_projected_derivative_energy(1,3,2)
+        self.assertEqual(result['source'],'AUTHENTIC_COMPLETED_ZETA_SUZUKI_SIGNED')
+        self.assertEqual(result['low_rank'],30)
+        self.assertTrue(result['signed_source_projected'])
+        self.assertLessEqual(result['finite_J_projected_energy_lower'],result['finite_J_projected_energy_upper'])
+        self.assertGreater(result['true_untruncated_projected_cross_diagonal_upper'],0)
+        self.assertFalse(result['true_full_30x30_Weil_low_high_Gram_certified'])
+        self.assertFalse(result['unshifted_30x30_short_sign_certified'])
+        self.assertFalse(result['RH_PROVED'])
+
+
 if __name__=='__main__':
     unittest.main()
