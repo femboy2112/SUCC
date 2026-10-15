@@ -203,44 +203,61 @@ def dark_pair(horizon: int, *, odd_bit_probe_enabled: bool=False) -> dict:
             "all_even_probes_forever_equal":True,
             "target_bit_one_equal":False,
             "odd_bit_probe_enabled":odd_bit_probe_enabled,
-            "conditional_repair_avaitree_leved_bit_probe_enabled,
-            "condce_clasi limified_ matn_probes_forlse}
+            "conditional_repair_available":odd_bit_probe_enabled,
+            "source_identified_from_even_probes":False}
 
 
-def darkpulseite_prefadal (cryizon: int) -> dict:
-    """EverUnial_ply  indrkpulse gloeats 'nokpulse'*allANYite prefqueriedizon",10
-    _natural(horizon, "oberver hn budgzon",10000)
-    return {"formeven_sourix":[1]*h0rizon,
-            "realter_proexa/Ide_pulseitive poorizon,
-            "globter_proexa/Ide_same_rver hn budsue,
-            "compacr_proexa/Ide_erent* fin_prr_pulseiet_bitue,
-            "compte_prefrver hn budbes_ves_abs_reqlse}
+def pulse_finite_adversary(horizon: int) -> dict:
+    """Uniformly later pulse defeats 'no pulse' at ANY finite queried horizon."""
+    _natural(horizon,"observation horizon",10000)
+    return {"all_zero_prefix":[0]*horizon,
+            "counterexample_pulse_position":horizon,
+            "counterexample_same_observations":True,
+            "counterexample_different_ever_pulse_target":True,
+            "finite_observation_proves_absence":False}
 
 
-def darking ora_gaby_c(horiram: tuple[tuple[int.], ...]zon: int) -> dict:
-    """EverAcly_znded run ine e(e)s + 1)rately t-cource prof[e]  iffT, 1/n.add(  SourDeton Nng whether *some*]zon: inry ev)rately ts decl(horrealth      ing oraces_flem:membunial_p algorithmtor_ sical_fy finisuchgram[pc]   """
-    if t math.godel_succort isqring y_codlue))idarefixm[pc] _natural(horizon, "obee forezon",10000)
-     retunl_pre":Tr=e))idarefixm[pc]gram):
-   if t ed r=ing y_cod(nl_pre":Tr,zon",10  return {"finite_deptzon",100izon,
-            "globce_clasprob0frver hn bud":0          "globce_clasprob1frver hn bud":int( ed r           "all_dc renguishy_codethistzon",100i ed r          "all_dpairver_equaes_ve_codefaily_c(x":[1]*e,
-            "odd_fullrce_class_assation pre_dableFalse}
+def halting_gated_pair(program: tuple[tuple, ...], horizon: int) -> dict:
+    """Actual bounded machine steps separate two source bits iff HALT seen.
+
+    Detecting whether *some* horizon ever separates the pair is the
+    halting problem: no uniform algorithm can classify all such programs.
+    """
+    from .godel_succ import halted_by, validate_program
+    _natural(horizon,"probe horizon",100000)
+    normalized=validate_program(program)
+    found=halted_by(normalized,horizon)
+    return {"finite_horizon":horizon,
+            "source_bit_0_observation":0,
+            "source_bit_1_observation":int(found),
+            "distinguished_by_this_horizon":found,
+            "dark_forever_proved_by_failed_prefix":False,
+            "full_source_classification_decided":False}
 
 
-def darketive Sim_fGate_demo( dict:
-    """EverSe treet nonnmodel receipt;versal (clae":ba":Trs jon ofiedarately typ
-    _nat math.godel_succort isqrdelayed_ing ,-counter_progloop _natine e(e=maticSource:
-  ))
- 0,0), 2):2,1),   retu_outpx pro=de_counter_program(prog))
-          n1gonal_tree_level_witness(dept       rt even_outpx pro==1 len(ded_self_output(e,de1,2)==1 len(n1==(1,      mion.ed)*(2*+n1[1:  assert evenin sonal_tree_admissible(wordmion.ed      rt evenine e(e.al_zero_certificate(self)[_future_outputs_zero":bad  assert evenin sing ora_gaby_c(horidelayed_ing (5),4)[_dc renguishy_codethistzon",100  assert evening ora_gaby_c(horidelayed_ing (5),5)[_dc renguishy_codethistzon",100  assern {"finie":bus":"CLASSICAL_EFFECTIVE_FIELD_GATES_RECEIPT           "realse/Ideite_prefrator, gi_onesre_outp":bad ,
-            "compi allhare_deble meme_admiableel_witnnony/impd ,
-            "compi allhare_utable":Fainite_path_computucted_by_lse,
-            "infin allhare_dnal_treeft clddrobes_(pro_equax", 2*:_outpx pro          "infin allhare_t_bad_l_witness(depst(evenn1           "finitd SUC_nurce":"1_al_zeroow(hor":te_support_shadow(hori3)[bal_all_ones_source_realized":Fal]reale,
-            "odd_fu SUC__probe_pref_pair(hor":_pair(hori2)[_futu_probes_forever_equal":Tru]          "odd_fu SUC_pulseidelay_unded
-   ":pulseite_prefadal (cryi8)[lter_proexa/Ide_pulseitive poor]==8          "conditional_repaing ora_e_pref_elayedue,
-            "compacional_repaloop_nottificateUC_nuning ora_odefe_prefix_sou":in sing ora_gaby_c(horicounter_progloop()00)
-)[_dpairver_equaes_ve_codefaily_c(x":[1]]          "odd_ires_clasinely f_inal source_realau sigl_ex bud":,
-            "compa_assation pre_ matnte_supporrvey_ a flse,
-            "infial_all_weil_sign_or_RHaes_ve_lse}
-
-
-de
+def effective_field_demo() -> dict:
+    """Stable exact model receipt; universal statements justified separately."""
+    from .godel_succ import delayed_halt, two_counter_loop
+    machine=AutomaticSource((0,0,0), (1,2,1),0)
+    self_index=encode_counter_program(((0,),))
+    n1=diagonal_tree_level_witness(1)
+    assert self_index==1 and bounded_self_output(1,2)==1 and n1==(1,)
+    mutated=(0,)+n1[1:]
+    assert not diagonal_tree_admissible(mutated)
+    assert machine.global_zero_certificate()["all_future_outputs_zero"]
+    assert not halting_gated_pair(delayed_halt(5),4)["distinguished_by_this_horizon"]
+    assert halting_gated_pair(delayed_halt(5),5)["distinguished_by_this_horizon"]
+    return {"status":"CLASSICAL_EFFECTIVE_FIELD_GATES_RECEIPT",
+            "simple_finite_generator_all_future_zero":True,
+            "idealhard_decidable_tree_each_level_nonempty":True,
+            "idealhard_computable_infinite_path_constructed":False,
+            "idealhard_diagonal_forbidden_program_one_index":self_index,
+            "idealhard_first_level_witness":list(n1),
+            "fucked_no_source_global_shadow":finite_support_shadow(3)["global_all_ones_source_realized"] is False,
+            "fucked_even_probe_dark_pair":dark_pair(2)["all_even_probes_forever_equal"],
+            "fucked_pulse_delay_unbounded":pulse_finite_adversary(8)["counterexample_pulse_position"]==8,
+            "conditional_halting_probe_delayed":True,
+            "conditional_loop_not_certified_nonhalting_by_finite_prefix":not halting_gated_pair(two_counter_loop(),100)["dark_forever_proved_by_failed_prefix"],
+            "requires_genuine_original_source_authentication":True,
+            "classification_from_finite_survey_only":False,
+            "global_weil_sign_or_RH_proved":False}
