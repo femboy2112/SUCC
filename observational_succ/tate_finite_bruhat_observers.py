@@ -117,7 +117,7 @@ def exact_tate_finite_plancherel(p,M,N,coeffs):
     Q=chart["finite_complex_dimension"]
     c=_coefficients(coeffs,Q)
     input_energy=F(1,p**N)*sum((z*z for z in c),F())
-    output_energy=F(1,p**M+0)*F(1,p**(2*N))*sum(
+    output_energy=F(1,p**M)*F(1,p**(2*N))*sum(
         (c[j]*c[l]*cyclic_character_sum(Q,j-l)
          for j in range(Q) for l in range(Q)),F()
     )
@@ -200,6 +200,12 @@ def finite_tate_refinement_square(p,M,N,coeffs):
             raise ArithmeticError("Finite local Fourier conductor phase no-go failed")
     if len(b)!=newQ:
         raise ArithmeticError("True local constancy extension failed")
+    new_con=finite_cyclotomic_fourier(p,M,N+1,b)["dual_symbolic_rows"]
+    for kprime in range(0,newQ,p):
+        k=kprime//p
+        expected=tuple(sorted((p*e,z) for e,z in old[k]))
+        if tuple(sorted(new_con[kprime]))!=expected:
+            raise ArithmeticError("Tate constancy enlargement/Fourier supported coefficient square failed")
     return {
         "source":"GENUINE_LOCAL_QP_TATE_FOURIER_SCALE_NATURALITY",
         "p":p,"M":M,"N":N,
@@ -209,7 +215,7 @@ def finite_tate_refinement_square(p,M,N,coeffs):
         "character_orthogonality_for_wrong_dual_cosets":True,
         "Haar_factor_preserved":True,
         "direct_limit_of_all_finite_Schwartz_Bruhat_charts":True,
-        "inverse_limit_of_padic_carrier_residue_quotients":True,
+        "Zp_as_inverse_limit_of_residue_rings":True,
         "all_finite_place_information_executed":False,
         "full_Weil_quadratic_positivity_derived":False,
         "RH_proved":False,
