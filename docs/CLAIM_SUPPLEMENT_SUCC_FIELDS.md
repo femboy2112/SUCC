@@ -19,6 +19,9 @@
 | FT-09 | General source-to-field classifier is mathematically sound/complete for arbitrary physically available probes and proof systems | HYPOTHESIS / UNVERIFIED | Only bounded model receipts exist; must prove sound interface, implement cost model, and audit probe closure. |
 | FT-10 | The source-indexed field taxonomy itself proves completed Weil-form PSD and RH | REFUTED AS INFERENCE / UNVERIFIED AS TARGET | These are epistemic/computability statements, not sign identities; need exact signed Weil test-space identification and positivity. |
 
+| FT-11 | Target G descends uniquely to the observed image O(W) iff it is constant on fibers of the lawful report map O | CLASSICAL ELEMENTARY / PROVED PAPER AND FINITE | Necessary/sufficient factorization proof; existing FiniteField.factor provides exact finite counterexample/repair; computable infinite decoder is a separate gate. |
+| FT-12 | If X=lim X_n with X_n finite discrete and target f:X->finite discrete Y is continuous, f factors through one finite stage N | CLASSICAL COMPACTNESS / PROVED PAPER; FINITE CONTROL | Clopen-cylinder finite subcover proof; exact x=0 versus y=2^N shows f(x)=[x=0] on Z_2 is discontinuous and defeats every fixed clock depth. A proof of N's existence is not necessarily an algorithm extracting N. |
+
 ## Semantics and firewall
 
 - **Simple**: finite terminating global compilation/evaluation certificate for target, not instantaneous execution of infinitely many physical operations.
