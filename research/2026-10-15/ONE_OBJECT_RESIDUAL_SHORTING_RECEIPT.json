@@ -1,0 +1,23 @@
+{
+  "RH_proved": false,
+  "actual_schur": "1/120",
+  "cross_resolvent_upper": "3025/1476",
+  "gprime_L1_upper": "11/40",
+  "hilbert_stage": {
+    "Hilbert_depth": 8,
+    "RH_proved": false,
+    "authentic_gamma_tail_upper": "133/16641",
+    "cell_width": "1/256",
+    "is_operator_norm_not_just_pointwise": true,
+    "kernel_H1_projection_error_strict_upper": "1/320",
+    "requires_original_signed_source_cell_integrals": true,
+    "signed_gprime_L2_squared_cell_upper": "1008448074928301833985850271716334235329423027/6400000000000000000000000000000000000000000000",
+    "tiles": 65536,
+    "total_signed_operator_error_strict_upper": "59201/5325120"
+  },
+  "one_object_source_contract_requires_checkout": true,
+  "source": "SYNTHETIC_FINITE_BLOCK_PLUS_SEPARATE_AUTHENTIC_ANALYTIC_THEOREM",
+  "trial_correct_lower_schur": "1/120",
+  "trial_correct_upper_schur": "1/120",
+  "trial_zero_lower_schur": "-47/60"
+}

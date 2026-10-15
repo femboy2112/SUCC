@@ -1,0 +1,37 @@
+name: Suzuki authentic 30-mode completed Gamma mixed tail
+
+on:
+  push:
+    branches:
+      - 'research/suzuki-mixed30-gamma-tail-*'
+  pull_request:
+    paths:
+      - 'observational_succ/suzuki_mixed30_gamma_tail.py'
+      - 'tests/test_suzuki_mixed30_gamma_tail.py'
+      - 'scripts/suzuki_mixed30_gamma_tail_probe.py'
+      - '.github/workflows/suzuki-mixed30-completed-gamma.yml'
+
+jobs:
+  true-source-mixed-30:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install source arithmetic dependencies
+        run: python -m pip install -e ".[test]"
+      - name: True source completed Gamma mixed derivative tail proof controls
+        run: python -m unittest discover -s tests -p 'test_suzuki_mixed30_gamma_tail.py' -v
+      - name: True finite mixed Suzuki source parent regression
+        run: python -m unittest discover -s tests -p 'test_suzuki_signed_mixed30.py' -v
+      - name: Original thirty-mode dual geometry and source flux regression
+        run: python -m unittest discover -s tests -p 'test_suzuki_neumann_*.py' -v
+      - name: Exact original infinite-Gamma mixed derivative source receipt
+        run: python scripts/suzuki_mixed30_gamma_tail_probe.py
+      - name: Immutable original source provenance
+        run: python scripts/verify_provenance.py
