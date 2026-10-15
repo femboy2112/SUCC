@@ -559,3 +559,37 @@ def finite_prime_partition(n: int) -> dict:
         "all_primes_computed_in_this_finite_stage": False,
         "RH_proved": False,
     }
+
+
+
+def finite_cyclic_yoneda(modulus: int) -> dict:
+    """Exact finite Yoneda calibration on the one-object group B(Z/m).
+
+    Its representable presheaf is the regular Z/m-set. Naturality
+    f(x+a)=f(x)+a forces f(x)=x+k, k=f(0), and there are exactly
+    m such natural self-transformations, one for every edge k.
+
+    Brute enumeration of all m^m endofunctions is an INDEPENDENT
+    finite control, not a proof of general Yoneda from samples.
+    """
+    from itertools import product
+    if type(modulus) is not int or not 1 <= modulus <= 6:
+        raise EdgeCarrierError("Exact finite Yoneda calibration modulus 1..6")
+    n=modulus
+    natural=[]
+    for tup in product(range(n),repeat=n):
+        if all(tup[(x+a)%n] == (tup[x]+a)%n
+               for x in range(n) for a in range(n)):
+            natural.append(tup)
+    target=tuple(tuple((x+k)%n for x in range(n)) for k in range(n))
+    if tuple(sorted(natural)) != tuple(sorted(target)):
+        raise AssertionError("Representable Yoneda edge carrier failed full enumeration")
+    return {
+        "modulus":n,"candidate_endofunctions":n**n,
+        "naturality_constrained_endofunctions":len(natural),
+        "recovered_cyclic_edges":n,
+        "all_and_only_right_translations":True,
+        "natural_transformation_to_arrow_bijection":True,
+        "yoneda_full_faithfulness_generalized_by_samples":False,
+        "RH_proved":False,
+    }
