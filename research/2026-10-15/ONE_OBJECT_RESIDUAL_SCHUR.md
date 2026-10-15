@@ -270,3 +270,20 @@ The enclosure uses 128 rational x-cells, source analytic (ORS8)–(ORS9), origin
 This is a genuine source-data milestone beyond symbolic source identification, but **its scope is sharply limited**. The high relative Neumann κ estimate is for the first 30 modes, not P1/P3; Γ is truncated at J=2, and the finite response candidate Y and actual \(m=30\) derivative Gram \(T_{(B-DY)'}\) are not computed. Moreover a source-positive omitted Gamma tail does **not** imply a small derivative norm at this J without the separate H¹ tail budget δ_J (large at J=2). Thus ORS12 is neither a sign certificate of the full original \(G_a\) nor a proof of even the first-window completed Weil positivity. It demonstrates that the source-first operator-to-derivative-Gram computation can produce **quantitative, exact, zero-independent inequalities** that future 30-mode attempts can generalize.
 
 A hostile mathematical warning: L² projections \(P_1,P_3\) are **not orthogonal H¹ projections**, so the second upper estimate being smaller is an observed source-specific bound, not a general theorem that residual H¹ energies monotonically decrease with projection rank.
+
+
+## 4a. The uniform-H¹ spectral resolution shortcut fails without source regularity — ORS-04b (PROVED MATHEMATICAL COUNTERFAMILY, NOT zeta)
+
+Although the true arithmetic B maps each fixed 30-dimensional low source into H¹, that alone does not give a **source-independent uniform rate** for a sequence of finite Galerkin observers over the whole H¹ unit ball. An exact compact Neumann-model adversary illustrates the missing quantifier:
+
+Let \(H_h=\ell²(\mathbb N)\), \(D=K=\operatorname{diag}(j^{-2})\), \(\kappa=1\). At finite observation horizon N choose a DIFFERENT true declared source \(b^{(N)}=e_{N+1}/(N+1)\). The entire first N high measurements see zero, but
+\[
+\boxed{\|K^{-1/2}b^{(N)}\|_2^2=1,\qquad
+\sup_z\{2\langle b^{(N)},z\rangle-\langle Dz,z\rangle\}=1.}
+\tag{ORS13}
+\]
+For the first-N Galerkin Y_N=0, the missing source-response derivative Gram equals **1** for every N, despite \(\|b^{(N)}\|_{H¹}=1\), and despite a compact positive D with perfectly valid D≥κK. This is an exact finite witness family recorded by \`high_frequency_residual_no_uniform_budget\`, with no arithmetic prime data and no new zero input.
+
+**Quantifiers matter:** the source \(b^{(N)}\) CHANGES with N. For each fixed b in the appropriate H¹ source space, coordinate truncations may converge; this example disproves only an N-only **uniform unit-ball modulus** from the H¹ norm bound. It is NOT a construction proving the authentic fixed zeta source cannot be approximated. Its practical consequence is that any proposed source-first finite-to-global sign certificate must derive a **quantitative high-frequency/compactness/smoothness modulus for the actual original B−DY**, rather than assume uniform decay from Hilbert/Zeno dimension or a finite low-source count.
+
+This completes a genuine tool-relative falsification control: finding a Galerkin Y with small sampled residual is not yet a whole-high-space residual certificate; the H¹ Gram and its source tail must be independently bounded.
