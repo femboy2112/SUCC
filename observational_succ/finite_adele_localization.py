@@ -91,6 +91,8 @@ class FiniteAdeleSpan:
             d//=p
             v+=1
         modulus=p**k
+        if modulus > 2_000_000:
+            raise EdgeCarrierError('p-adic local probe exceeds source finite-clock resource bound')
         numerator=self.numerator.residue(modulus)
         integral=(numerator*pow(d,-1,modulus))%modulus
         return {
