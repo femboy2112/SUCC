@@ -217,6 +217,53 @@ The real completed Weil contact in APOLLO is \(C_\infty=-\psi(1/4)+\log\pi\), **
 
 The missing work is an **arithmetic, operator-domain-preserving polarization/transducer** carrying modular-Eisenstein/Tate normalization into the full *signed* Weil form and proving an independent domination estimate. This work provides neither the completed identification nor the domination.
 
+### ETA-05B. Full modular object versus its logarithmic-source shadow: they are NOT the same L-function
+
+The canonical 24th power of eta is the modular discriminant
+
+\[
+\Delta(\tau)=\eta(\tau)^{24}
+=q\prod_{n\ge1}(1-q^n)^{24}
+=\sum_{n\ge1}\tau(n)q^n,
+\]
+
+where the Ramanujan tau coefficients begin
+
+\[
+\Delta=q-24q^2+252q^3-1472q^4+4830q^5-6048q^6+\cdots.
+\]
+
+But taking the **logarithmic derivative** changes the source representation:
+
+\[
+\boxed{q\,d\log\Delta/dq=E_2
+=1-24\sum_{n\ge1}\sigma_1(n)q^n.}\tag{ETA-05B}
+\]
+
+The cusp-form coefficients \(\tau(n)\) are NOT \(\sigma_1(n)\); the Mellin/Euler identity \(\zeta(s)\zeta(s-1)\) belongs to the **Eisenstein logarithmic current**, not to the \(L\)-series of \(\Delta\). This is an exact and important source-typing boundary for SUCC's "complete modular object" moonshot.
+
+Independent arithmetic proof instrument: compute \(\Delta/q\) as an integer polynomial from \(\prod(1-q^n)^{24}\), invert it formally, then compute its logarithmic derivative to all degrees <=N-1. Compare that completely separate route with \(1-24\sigma_1(n)\) from divisors. The test checks both correct identities and expressly **refuses** to identify their coefficient sources.
+
+### ETA-05C. The completed Eisenstein object has TWO critical tracks even IF RH (STRUCTURAL NO-GO)
+
+Let the classical completed Riemann xi function satisfy \(\xi(s)=\xi(1-s)\). The canonical product of our divisor-source factors is
+
+\[
+X(s)=\xi(s)\xi(s-1).
+\]
+
+It obeys a functional symmetry centered at s=1:
+
+\[
+\boxed{X(2-s)=X(s).}\tag{ETA-05C}
+\]
+
+**Proof:** \(\xi(2-s)=\xi(s-1)\) and \(\xi(1-s)=\xi(s)\); multiply. This construction reads NO nontrivial-zero locations.
+
+If \(\rho\) denotes *any* nontrivial zero of xi, the zero divisor of X contains both \(\rho\) and \(1+\rho\) (with respective multiplicities). Therefore **even conditional on RH**, the two divisor families lie on the *two* real-part tracks \(1/2\) and \(3/2\), not on the symmetry center Re(s)=1. A functional equation about a center does not force all zeros onto that center, and a product of two completed sources is not a spectral proxy for just one of them.
+
+This is not a disproof of any proposed RH approach; it is an exact NO-GO for the shortcut "the centered completed Eisenstein object already has the original zeta one-line sign." The shift \(s\mapsto s-1\) must be removed (or justified as an independent carrier) **before** transporting a sign to the authentic zeta Weil object. Passing a large finite set of symmetric numerical checks would not fix this algebraic type error.
+
 ## ETA-06. Why the number 24 is worth following, but not worshiping
 
 1. **Heat finite part:** \(1/24=-\zeta(-1)/2\), recovered from rational Laurent coefficients of the additive tower (CLASSICAL).
