@@ -286,3 +286,45 @@ def rh_inverse_limit_interface():
         "not_authorized_to_label_RH_FuckedField":True,
         "RH_proved":False,
     }
+
+
+def original_weil_finite_gamma_sign_gap(J=2):
+    """Actually evaluate original first-prime LOW Legendre mode #1.
+
+    Genuine complete source low G_J comes from pinned Suzuki Γ/prime/poles/
+    contact intervals. For meanzero u=L1(x)=P1(2x), ||u||²=1/3.
+    Missing Γ modes R_J=G-G_J are PSD. On |I|=1 the true Γ-mode OU
+    coefficients give ||R_J|| <= gamma_tail(J) (source uniform bound).
+    Therefore
+      q_J.lo <= <u,Gu> <= q_J.hi+gamma_tail(J)/3.
+    A strict negative q_J with a positive upper does NOT disprove RH.
+    J=2 is an actual finite-source sign/probe-gap calibration; a claim of
+    a global negative mathematical witness is explicitly rejected.
+    """
+    if type(J) is not int or J!=2:
+        raise FieldClosureError("Original Γ-tail sign probe calibrated at J=2 only")
+    from .suzuki_legendre_source import authentic_full_low_entry
+    from .source_weil_hierarchy import gamma_tail
+    stage=authentic_full_low_entry(1,1,F(1,2),J)
+    missing=gamma_tail(J)
+    norm=F(1,3)
+    low=stage.lo
+    high=stage.hi+missing*norm
+    if not (low<0 and stage.hi<0 and high>0 and missing>0):
+        raise ArithmeticError("Original truncated sign/tail probe boundary has changed")
+    return {
+        "source":"ORIGINAL_PINNED_ZETA_WEIL_SUZUKI_LOW_LEGENDRE_1",
+        "a":F(1,2),
+        "legendre_index":1,
+        "Gamma_finite_stage":J,
+        "original_truncated_low_rayleigh_interval":(stage.lo,stage.hi),
+        "omitted_original_Gamma_tail_PSD":True,
+        "omitted_Gamma_kernel_uniform_upper":missing,
+        "low_mode_L2_norm_squared":norm,
+        "full_source_rayleigh_enclosure":(low,high),
+        "truncated_stage_is_strictly_negative":True,
+        "true_completed_low_mode_sign_decidable_from_this_stage":False,
+        "mathematically_permanent_phantom_or_RH_counterexample_inferred":False,
+        "field_label":"UNRESOLVED_STAGE_TO_GLOBAL_SIGN",
+        "RH_proved":False,
+    }
