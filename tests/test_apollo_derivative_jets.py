@@ -14,6 +14,7 @@ from observational_succ.apollo_derivative_jets import (
     polynomial_derivative, polynomial_moment, repeated_compact_primitive,
     compact_polynomial_moment_certificate,
     third_distribution_bump_pair, exact_local_gamma_slope_bound,
+    local_suzuki_first_second_third,
 )
 
 
@@ -145,6 +146,35 @@ class ApolloSourceDistributionalThirdTests(unittest.TestCase):
         for r,J in ((0,2),(Q(1),65),(Q(5),0),(True,1)):
             with self.assertRaises(OneObjectError):
                 third_distribution_bump_pair(r,J)
+
+
+class ApolloAuthenticSmallScaleDerivatives(unittest.TestCase):
+    def test_real_logarithmic_slope_has_rigorous_linear_error(self):
+        from mpmath import mp
+        for n in (4,8,16,64,256,1024):
+            r=Q(1,n)
+            out=local_suzuki_first_second_third(r,80)
+            bound=out["rigorous_elementary_error_bound"]
+            self.assertEqual(bound,3*r)
+            self.assertLess(out["slope_asymptotic_abs_error"],
+                            mp.mpf(bound.numerator)/bound.denominator)
+            self.assertFalse(out["prime_wavefront_in_window"])
+            self.assertFalse(out["RH_proved"])
+
+    def test_ordinary_derivatives_have_one_over_r_and_one_over_r_squared_limits(self):
+        import mpmath as mp
+        for n in (64,256,1024):
+            r=Q(1,n)
+            obj=local_suzuki_first_second_third(r,80)
+            self.assertLess(abs(mp.mpf(obj["scaled_second"])-mp.mpf("0.5")),
+                            mp.mpf(20)/n)
+            self.assertLess(abs(mp.mpf(obj["scaled_third"])+mp.mpf("0.5")),
+                            mp.mpf(20)/n)
+
+    def test_origin_is_not_an_ordinary_pointwise_third_derivative(self):
+        for bad in (0,-1,Q(1,2),True,0.125):
+            with self.assertRaises(OneObjectError):
+                local_suzuki_first_second_third(bad)
 
 
 if __name__=="__main__":
