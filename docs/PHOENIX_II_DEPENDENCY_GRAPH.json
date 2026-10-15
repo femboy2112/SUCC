@@ -1,0 +1,367 @@
+{
+ "generated": "2026-10-14",
+ "campaign": "Operation Phoenix II",
+ "main_pre_merge": "6e0d88f1b235",
+ "integration_head": "8d77c73c789b",
+ "note": "All 43 PR branches #57-99 fork from current main HEAD; ascending PR order is a valid topological order; each merge contributes exactly its incremental diff. Claimed chain parents verified as real git ancestors.",
+ "lookalike_hazard_C": {
+  "head": "bb5b6f96f78d",
+  "==#84_head": false,
+  "==#82_head": true,
+  "mb_with_84": "bb5b6f96f78d"
+ },
+ "divergent_conflict_files": [
+  "handoffs/rh/README.md",
+  "tests/test_zero_centered_purity.py",
+  "docs/CLAIM_SUPPLEMENT_BLACK_SUN.md",
+  ".github/workflows/wild-embedding-succ.yml",
+  "docs/CLAIM_SUPPLEMENT_WILD_EMBEDDING.md"
+ ],
+ "overlap_identical_count": 88,
+ "prs": {
+  "57": {
+   "branch": "research/tlica-genie-self-anchor-gauge-2026-10-13",
+   "claimed_parent": "main",
+   "parent_is_real_ancestor": true,
+   "inc_commits": 3,
+   "inc_files": 6,
+   "shortstat_vs_main": "6 files changed, 1074 insertions(+)"
+  },
+  "58": {
+   "branch": "research/empirical-carrier-higgs-spectral-2026-10-13",
+   "claimed_parent": 57,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 8,
+   "shortstat_vs_main": "14 files changed, 2361 insertions(+)"
+  },
+  "59": {
+   "branch": "research/zero-centered-residue-observers-2026-10-13",
+   "claimed_parent": "main",
+   "parent_is_real_ancestor": true,
+   "inc_commits": 4,
+   "inc_files": 17,
+   "shortstat_vs_main": "17 files changed, 940 insertions(+)"
+  },
+  "60": {
+   "branch": "research/property-proof-graph-bootstrap-2026-10-13",
+   "claimed_parent": 59,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 15,
+   "inc_files": 9,
+   "shortstat_vs_main": "26 files changed, 2804 insertions(+)"
+  },
+  "61": {
+   "branch": "research/carrier-locked-dual-succ-rigidity-2026-10-13",
+   "claimed_parent": 59,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 3,
+   "inc_files": 15,
+   "shortstat_vs_main": "32 files changed, 3157 insertions(+)"
+  },
+  "62": {
+   "branch": "research/dsv4-periodic-tail-enclosure-2026-10-13",
+   "claimed_parent": 60,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 10,
+   "inc_files": 23,
+   "shortstat_vs_main": "48 files changed, 4847 insertions(+)"
+  },
+  "63": {
+   "branch": "research/suzuki-first-prime-boundary-coercivity-2026-10-13",
+   "claimed_parent": "main",
+   "parent_is_real_ancestor": true,
+   "inc_commits": 32,
+   "inc_files": 54,
+   "shortstat_vs_main": "54 files changed, 5723 insertions(+)"
+  },
+  "64": {
+   "branch": "research/suzuki-source-boundary-wavefront-2026-10-13",
+   "claimed_parent": "main",
+   "parent_is_real_ancestor": true,
+   "inc_commits": 31,
+   "inc_files": 62,
+   "shortstat_vs_main": "62 files changed, 6940 insertions(+)"
+  },
+  "65": {
+   "branch": "research/structural-coupling-discovery-2026-10-13",
+   "claimed_parent": "main",
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 6,
+   "shortstat_vs_main": "6 files changed, 2083 insertions(+)"
+  },
+  "66": {
+   "branch": "research/pascal-quarter-turn-gamma-2026-10-14",
+   "claimed_parent": 64,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 6,
+   "shortstat_vs_main": "68 files changed, 7620 insertions(+)"
+  },
+  "67": {
+   "branch": "research/pascal-rotated-gamma-transport-2026-10-14",
+   "claimed_parent": 65,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 2,
+   "inc_files": 6,
+   "shortstat_vs_main": "12 files changed, 4328 insertions(+)"
+  },
+  "68": {
+   "branch": "research/prime-categorical-sphere-gamma-sieve-2026-10-14",
+   "claimed_parent": 66,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 2,
+   "inc_files": 10,
+   "shortstat_vs_main": "78 files changed, 9814 insertions(+)"
+  },
+  "69": {
+   "branch": "research/prime-form-heat-mellin-2026-10-14",
+   "claimed_parent": 67,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 2,
+   "inc_files": 7,
+   "shortstat_vs_main": "19 files changed, 6217 insertions(+)"
+  },
+  "70": {
+   "branch": "research/suzuki-carleman-markov-prime-gluing-2026-10-14",
+   "claimed_parent": 68,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 8,
+   "shortstat_vs_main": "86 files changed, 11042 insertions(+)"
+  },
+  "71": {
+   "branch": "research/real-place-weil-identification-2026-10-14",
+   "claimed_parent": 69,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 7,
+   "shortstat_vs_main": "26 files changed, 8092 insertions(+)"
+  },
+  "72": {
+   "branch": "research/all-places-model-interaction-zeta-2026-10-14",
+   "claimed_parent": 71,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 2,
+   "inc_files": 7,
+   "shortstat_vs_main": "33 files changed, 9655 insertions(+)"
+  },
+  "73": {
+   "branch": "research/source-interaction-adelic-analytic-gluing-2026-10-14",
+   "claimed_parent": 71,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 2,
+   "inc_files": 18,
+   "shortstat_vs_main": "44 files changed, 10421 insertions(+)"
+  },
+  "74": {
+   "branch": "research/succ-gaussian-global-constraint-2026-10-14",
+   "claimed_parent": 73,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 2,
+   "inc_files": 7,
+   "shortstat_vs_main": "50 files changed, 10754 insertions(+)"
+  },
+  "75": {
+   "branch": "research/weil-idealhard-obstruction-2026-10-14",
+   "claimed_parent": 72,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 1,
+   "shortstat_vs_main": "34 files changed, 9692 insertions(+)"
+  },
+  "76": {
+   "branch": "research/gaussian-weil-conditional-certificates-2026-10-14",
+   "claimed_parent": 73,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 12,
+   "inc_files": 7,
+   "shortstat_vs_main": "51 files changed, 11304 insertions(+)"
+  },
+  "77": {
+   "branch": "research/global-model-sandwich-2026-10-14",
+   "claimed_parent": 75,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 3,
+   "inc_files": 7,
+   "shortstat_vs_main": "41 files changed, 10989 insertions(+)"
+  },
+  "78": {
+   "branch": "research/xi-theta-certified-jets-cave-2026-10-14",
+   "claimed_parent": 74,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 3,
+   "inc_files": 11,
+   "shortstat_vs_main": "60 files changed, 12172 insertions(+)"
+  },
+  "79": {
+   "branch": "research/black-sun-independent-campaign-2026-10-14",
+   "claimed_parent": "main",
+   "parent_is_real_ancestor": true,
+   "inc_commits": 13,
+   "inc_files": 51,
+   "shortstat_vs_main": "51 files changed, 12974 insertions(+)"
+  },
+  "80": {
+   "branch": "research/recursive-meta-interaction-coercivity-2026-10-14",
+   "claimed_parent": 77,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 7,
+   "shortstat_vs_main": "48 files changed, 12739 insertions(+)"
+  },
+  "81": {
+   "branch": "research/meta-interaction-contour-descent-2026-10-14",
+   "claimed_parent": 78,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 19,
+   "inc_files": 15,
+   "shortstat_vs_main": "75 files changed, 13512 insertions(+)"
+  },
+  "82": {
+   "branch": "research/xi-complex-contour-weil-residue-2026-10-14",
+   "claimed_parent": 78,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 12,
+   "shortstat_vs_main": "71 files changed, 13317 insertions(+)"
+  },
+  "83": {
+   "branch": "research/certified-contour-suzuki-2026-10-14",
+   "claimed_parent": 78,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 8,
+   "shortstat_vs_main": "68 files changed, 13301 insertions(+)"
+  },
+  "84": {
+   "branch": "research/signed-weil-h1-spectral-tail-2026-10-14",
+   "claimed_parent": 82,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 3,
+   "inc_files": 11,
+   "shortstat_vs_main": "81 files changed, 14483 insertions(+)"
+  },
+  "85": {
+   "branch": "research/finite-source-weil-negative-depth-2026-10-14",
+   "claimed_parent": 76,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 29,
+   "inc_files": 7,
+   "shortstat_vs_main": "58 files changed, 12681 insertions(+)"
+  },
+  "86": {
+   "branch": "research/arithmetic-meta-weil-boundary-2026-10-14",
+   "claimed_parent": 80,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 7,
+   "shortstat_vs_main": "55 files changed, 14168 insertions(+)"
+  },
+  "87": {
+   "branch": "research/black-sun-ii-coverage-theory-2026-10-14",
+   "claimed_parent": 79,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 7,
+   "shortstat_vs_main": "57 files changed, 13849 insertions(+)"
+  },
+  "88": {
+   "branch": "research/wild-adelic-embedding-solenoid-2026-10-14",
+   "claimed_parent": 86,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 3,
+   "inc_files": 7,
+   "shortstat_vs_main": "62 files changed, 15595 insertions(+)"
+  },
+  "89": {
+   "branch": "research/alexander-horned-source-observer-2026-10-14",
+   "claimed_parent": 84,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 3,
+   "inc_files": 13,
+   "shortstat_vs_main": "93 files changed, 16008 insertions(+)"
+  },
+  "90": {
+   "branch": "research/wild-embedding-boundary-descent-2026-10-14",
+   "claimed_parent": 85,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 24,
+   "inc_files": 9,
+   "shortstat_vs_main": "67 files changed, 13939 insertions(+)"
+  },
+  "91": {
+   "branch": "research/black-sun-iii-wild-limits-2026-10-14",
+   "claimed_parent": 87,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 5,
+   "shortstat_vs_main": "61 files changed, 14375 insertions(+)"
+  },
+  "92": {
+   "branch": "research/alexander-wild-ambient-observer-2026-10-14",
+   "claimed_parent": 86,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 2,
+   "inc_files": 7,
+   "shortstat_vs_main": "62 files changed, 15689 insertions(+)"
+  },
+  "93": {
+   "branch": "research/black-sun-iv-zeno-completion-2026-10-14",
+   "claimed_parent": 91,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 5,
+   "shortstat_vs_main": "65 files changed, 14963 insertions(+)"
+  },
+  "94": {
+   "branch": "research/zeno-finite-global-proof-calculus-2026-10-14",
+   "claimed_parent": 88,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 7,
+   "shortstat_vs_main": "69 files changed, 16757 insertions(+)"
+  },
+  "95": {
+   "branch": "research/zeno-limit-transport-calculus-2026-10-14",
+   "claimed_parent": 85,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 31,
+   "inc_files": 15,
+   "shortstat_vs_main": "73 files changed, 14526 insertions(+)"
+  },
+  "96": {
+   "branch": "research/suzuki-canonical-moment-schur-2026-10-14",
+   "claimed_parent": 85,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 3,
+   "inc_files": 17,
+   "shortstat_vs_main": "74 files changed, 15065 insertions(+)"
+  },
+  "97": {
+   "branch": "research/zeno-completion-ambient-weil-2026-10-14",
+   "claimed_parent": 92,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 10,
+   "shortstat_vs_main": "72 files changed, 17197 insertions(+)"
+  },
+  "98": {
+   "branch": "research/zeno-proof-debt-synthesis-2026-10-14",
+   "claimed_parent": 94,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 8,
+   "shortstat_vs_main": "77 files changed, 18271 insertions(+)"
+  },
+  "99": {
+   "branch": "research/suzuki-signed-tail-resolvent-2026-10-14",
+   "claimed_parent": 96,
+   "parent_is_real_ancestor": true,
+   "inc_commits": 1,
+   "inc_files": 3,
+   "shortstat_vs_main": "77 files changed, 15222 insertions(+)"
+  }
+ }
+}
