@@ -16,7 +16,8 @@ from observational_succ.tate_eta_bernoulli import (
     eta_eisenstein_prime_transducer, sigma_one_dirichlet_tail_majorant,
     primary_source_interface_status,
     modular_discriminant_formal_passport, completed_two_critical_track_passport,
-    eta_mobius_heat_transducer, gaussian_linear_heat_positive_mixing_no_go
+    eta_mobius_heat_transducer, gaussian_linear_heat_positive_mixing_no_go,
+    tate_gaussian_fourier_stage
 )
 
 
@@ -32,8 +33,10 @@ def frozen_receipt() -> dict:
     heat_source=eta_mobius_heat_transducer(64)
     fake_heat=eta_mobius_heat_transducer(64,True)
     gaussian_no_go=gaussian_linear_heat_positive_mixing_no_go()
+    gauss=tate_gaussian_fourier_stage(8,F(1,2),12)
+    wrong_gauss=tate_gaussian_fourier_stage(3,F(1,2),8,F(1,2))
     return {
-        "schema":"SUCC_TATE_ETA_BERNOULLI_2026_10_15_v4",
+        "schema":"SUCC_TATE_ETA_BERNOULLI_2026_10_15_v5",
         "status":"CANONICAL_MODULAR_BRIDGE_NOT_RH",
         "bernoulli":{
             "zeta_minus_one":str(heat["zeta_of_minus_one"]),
@@ -101,6 +104,20 @@ def frozen_receipt() -> dict:
                 gaussian_no_go["source_blind_positive_laplace_mixing"],
             "signed_or_source_indexed_transports_still_possible":
                 not gaussian_no_go["source_indexed_or_signed_transport_ruled_out"],
+            "RH_proved":False,
+        },
+        "Tate_gaussian_Fourier_rescue":{
+            "declared_character":gauss["declared_Fourier_character"],
+            "Haar_normalization":gauss["Fourier_normalization"],
+            "source_N":gauss["source_N"],
+            "source_u":str(gauss["gaussian_u"]),
+            "integer_label_squares":[str(v) for v in gauss["source_label_squares"]],
+            "certified_rational_theta_tail_upper":
+                str(gauss["Gaussian_theta_tail_strict_rational_upper"]),
+            "wrong_half_shift_label_squares_1_to_3":
+                [str(v) for v in wrong_gauss["source_label_squares"]],
+            "wrong_shift_detected":not wrong_gauss["authentic_integer_phase"],
+            "source_zero_lookup":gauss["nontrivial_zero_locations_used"],
             "RH_proved":False,
         },
         "missing_interfaces":{
