@@ -417,6 +417,7 @@ def prime_packet_low_moment_rank(n: int = 2, rank: int = 30) -> dict:
             "Vandermonde_determinant_positive":True,
             "Vandermonde_determinant":determinant,
             "true_Cc_infinity_moment_map_surjective":True,
+            "Legendre_1_to_rank_projection_of_u_i_fprime_surjective":True,
             "uniform_inverse_moment_norm_bound_supplied":False,
             "original_Legendre_low_Schur_sign_proved":False,
             "RH_proved":False}
