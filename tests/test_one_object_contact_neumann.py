@@ -82,6 +82,37 @@ class ContactNeumannTests(unittest.TestCase):
             self.assertEqual(r["strict_relative_high_gap_from_this_bound"],positive)
             self.assertFalse(r["rh_proved"])
 
+
+    def test_normalized_contact_gauge_translates_full_schur_pencil(self):
+        # SPD K has a genuine nonzero low/high cross entry. Correct contact
+        # must adjust the high block and cross block, not merely the low.
+        G=((F(4),F(1),F()),(F(1),F(3),F()),(F(),F(),F(3)))
+        K=((F(2),F(1),F()),(F(1),F(2),F()),(F(),F(),F(1)))
+        out=c.contact_generalized_schur_pencil(G,K,1,F(1,2),F(1,4))
+        self.assertEqual(out["actual_gauge_Schur"],out["parameter_translated_Schur"])
+        self.assertTrue(out["cross_channel_source_matters"])
+        self.assertNotEqual(out["actual_gauge_Schur"],out["fake_low_only_contact_Schur"])
+        self.assertEqual(out["transported_parameter"],F(-1,4))
+        self.assertFalse(out["infinite_dimensional_D_inverse_constructed"])
+        self.assertFalse(out["authentic_zeta_compressed_G_calculated"])
+        self.assertFalse(out["rh_proved"])
+
+    def test_contact_zero_is_identity_even_with_high_low_neumann_cross(self):
+        G=((F(4),F(1)),(F(1),F(3)))
+        K=((F(2),F(1)),(F(1),F(2)))
+        original=c.contact_generalized_schur_pencil(G,K,1,F(0),F(1,4))
+        self.assertEqual(original["actual_gauge_Schur"],original["fake_low_only_contact_Schur"])
+        self.assertFalse(original["cross_channel_source_matters"])
+
+    def test_contact_pencil_wrong_metric_and_source_types_refused(self):
+        for fn in (
+            lambda:c.contact_generalized_schur_pencil(((1,0),(0,1)),((1,2),(2,1)),1,1,0),
+            lambda:c.contact_generalized_schur_pencil(((1,0),(0,1)),((1,0),(0,1)),2,1,0),
+            lambda:c.contact_generalized_schur_pencil(((1,0),(0,1)),((1,0),(0,1)),1,1.0,0),
+            lambda:c.contact_generalized_schur_pencil(((1,0),(0,1)),((1,0),(0,1)),1,1,0.0),
+        ):
+            with self.assertRaises(c.ContactTransportError):fn()
+
     def test_wrong_source_and_float_labels_rejected(self):
         for fn in (
             lambda:c.contact_shift_certificate(.5,(1,-1),2),
