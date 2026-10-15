@@ -8,6 +8,8 @@ from observational_succ.tate_observer_completion import (
     normal_fourier_naturality, PadicBruhatChart,
     tate_local_inversion_and_parseval, refine_local_precision,
     refine_local_support,local_padic_real_boundary_no_go,
+    exact_local_biaxial_diamond,exact_crt_product_fourier,
+    crt_three_prime_fourier,diagonal_rational_additive_character,
 )
 from observational_succ.observer_global_sign_gate import (
     exact_scalar_schur_source_gate,unseen_sign_mutant,
@@ -41,7 +43,25 @@ def main():
     assert not boundary["real_is_pure_finite_inverse_limit"]
     margin=original["determinant"][0]
     floor=F((margin.numerator*10**6)//margin.denominator,10**6)
+    cube=exact_local_biaxial_diamond(c,raw)
+    double=exact_crt_product_fourier(2,1,3,1,(1,-1),(2,0,-1))
+    triple=crt_three_prime_fourier((
+        (2,(1,-1)),(3,(2,0,-1)),(5,(1,0,2,-2,3))))
+    phase=diagonal_rational_additive_character(1,6)
+    assert cube["strict_source_diamond_commutes"] and cube["dual_Fourier_diamond_commutes"]
+    assert double["naive_frequency_transport_disagreement_count"]>0
+    assert triple["all_three_source_Fourier_tensor_square_commutes"]
+    assert phase["total_global_phase_integer"]==1
     report={
+        "local_support_precision_source_Fourier_cube":True,
+        "CRT_two_prime_dual_transport_inverse_phase_detects_naive_error":True,
+        "CRT_two_prime_naive_frequency_mismatches":double["naive_frequency_transport_disagreement_count"],
+        "CRT_three_prime_global_modulus":triple["joint_observation_modulus"],
+        "CRT_three_prime_exact_Fourier_tensor_all_frequencies":True,
+        "Tate_rational_1over6_p_fractions":list(phase["prime_place_local_fractions"]),
+        "Tate_rational_1over6_real_phase":str(phase["real_phase_exponent"]),
+        "Tate_global_additive_character_product_equals_one":True,
+        "Tate_diagonal_Poisson_unverified":True,
         "operation":"ATOM_OBSERVER_TATE_FINITE_TO_GLOBAL",
         "source_parent_main":"03db44203147a7b28d445bb9f970fa71360e78c4",
         "profinite_character_bijection":"CLASSICAL_PROVED_ON_COFINAL_ALL_STAGES",
