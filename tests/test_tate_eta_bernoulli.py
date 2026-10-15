@@ -12,7 +12,7 @@ from observational_succ.tate_eta_bernoulli import (
     modular_discriminant_formal_passport, completed_two_critical_track_passport,
     mobius_exact, eta_mobius_heat_transducer,
     gaussian_linear_heat_positive_mixing_no_go,
-    tate_gaussian_fourier_stage,
+    tate_gaussian_fourier_stage, tate_completed_theta_polar_split,
 )
 
 
@@ -250,6 +250,22 @@ class MobiusEtaToTateRealHeat(unittest.TestCase):
             with self.assertRaises(EtaTransportError):
                 tate_gaussian_fourier_stage(N,u,K)
 
+    def test_original_theta_poisson_completion_retains_two_exact_polar_terms(self):
+        for z in (F(2),F(3),F(5,2),F(11,4)):
+            c=tate_completed_theta_polar_split(z)
+            self.assertEqual(c["completed_pole_part"],F(1)/(z*(z-1)))
+            self.assertEqual(c["completed_pole_cancellation_after_xi"],F(1,2))
+            self.assertEqual(c["xi_definition"],
+                             "xi(s)=s*(s-1)/2*Gamma_R(s)*zeta(s)")
+            self.assertEqual(c["real_Tate_archimedean"],"pi^(-s/2)*Gamma(s/2)")
+            self.assertNotEqual(F(1)/(z-1),c["completed_pole_part"])
+            self.assertFalse(c["nontrivial_zero_lookup_used"])
+            self.assertFalse(c["all_test_Weil_sign_proved"])
+            self.assertFalse(c["RH_proved"])
+        for z in (0,1,-1,True,1.5):
+            with self.assertRaises(EtaTransportError):
+                tate_completed_theta_polar_split(z)
+
     def test_disallowed_mutation_inputs(self):
         for n in (0,1,5,True,513,1.0):
             with self.assertRaises(EtaTransportError):
@@ -278,6 +294,18 @@ class IndependentClassicalNumericHoldouts(unittest.TestCase):
             wronglhs=eta_heat(t,wrong)
             wrongrhs=mp.sqrt(2*mp.pi/t)*eta_heat(td,wrong)
             self.assertGreater(abs(wronglhs-wrongrhs),mp.mpf("1e-3"))
+
+    def test_classical_theta_poisson_completion_matches_zeta_independently(self):
+        """Numerical calibration of imported theta identity, not proof/RH."""
+        import mpmath as mp
+        with mp.workdps(75):
+            z=mp.mpf(5)/2
+            theta=lambda u: mp.fsum(mp.exp(-mp.pi*n*n*u) for n in range(1,17))
+            kernel=lambda u: theta(u)*(u**(z/2-1)+u**(-(z+1)/2))
+            analytic_poles=1/(z-1)-1/z
+            from_source=analytic_poles+mp.quad(kernel,[1,2,4,mp.inf])
+            direct=mp.power(mp.pi,-z/2)*mp.gamma(z/2)*mp.zeta(z)
+            self.assertLess(abs(from_source-direct),mp.mpf("1e-65"))
 
     def test_declared_Tate_real_Gaussian_Fourier_character(self):
         """Numeric holdout of imported Gaussian Fourier identity, not proof."""
