@@ -88,6 +88,21 @@ Construct explicitly
 
 **Interpretive result:** Every continuous character of the full uncountable profinite carrier has a finite cyclic conductor and hence an exactly executable finite formula on each source program admitting residue queries. This does **not** imply every profinite *point* has a finite program or a uniformly bounded distinguishing horizon. The mathematical global-dual theorem uses compactness and continuous character structure.
 
+### PD-13: per-character finiteness does not imply a uniform finite observer (PROVED PAPER / EXACT SOURCE FAMILY)
+
+For **every** fixed finite modulus \(n\), choose a genuine rational prime \(p>n\). The already-constructed CRT prime projector \(e_p\in\widehat{\mathbb Z}\) satisfies \(\pi_n(e_p)=0\), since \(p\nmid n\). Yet the legitimate continuous character of conductor \(p\) detects it:
+\[
+  \chi_{1/p}(e_p)=\exp(2\pi i/p)\ne1=\chi_{1/p}(0).
+\]
+Therefore
+\[
+  \forall n\ge1\;\exists p>n,\;e_p,\;\chi_{1/p}:
+  \pi_n(e_p)=\pi_n(0),\quad \chi_{1/p}(e_p)\ne\chi_{1/p}(0). \tag{3.2}
+\]
+There is **no universal finite observation clock** that simultaneously determines every continuous character, even though **each individual character** factors through some finite clock. For finitely many frequencies, replace \(n\) by the least common multiple of their conductors and the same obstruction applies.
+
+This is a quantifier distinction, not a paradox or an uncomputability theorem. The pure source class is \(\widehat{\mathbb Z}\), and the new prime projector is an exact lawful global mathematical element. Under any fixed finite tool closure, it produces a delayed discriminator; under the **full** family of all cyclic characters, points remain separated. The test routine \`no_uniform_character_conductor\` constructs the true prime, source projector, and separating character at any chosen bounded \(n\).
+
 Provenance: Pontryagin duality for inverse/direct limits; explicit version in Bell [B], §3, and Mathlib's finite abelian Pontryagin module [M].
 
 ## 4. PD-03: bidual recovery as compatible source residues (CLASSICAL)
