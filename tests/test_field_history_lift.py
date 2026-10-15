@@ -5,6 +5,7 @@ from observational_succ.field_history_lift import (
     HistoryLiftError,finite_successor_history_alias,
     exact_finite_refinement_repairs_fixed_history,
     diagonal_adelic_lift_history,history_faithfulness_requirement,
+    exact_finite_source_periodization,
 )
 
 
@@ -57,6 +58,38 @@ class ActualSUCCSourceHistoryVsQuotientPointTests(unittest.TestCase):
         for v in (0,True,1000001):
             with self.assertRaises(HistoryLiftError):
                 diagonal_adelic_lift_history(v)
+
+
+class TateSourceLatticeLiftPeriodizationTests(unittest.TestCase):
+    def test_true_quotient_periodization_counts_multiple_original_source_lifts(self):
+        for modulus in (2,3,4,6):
+            z=exact_finite_source_periodization(modulus,((0,1),(modulus,2),(2*modulus,3)))
+            self.assertEqual(z["correct_periodization"][0],6)
+            self.assertEqual(z["naive_representative_evaluation"][0],1)
+            self.assertEqual(z["lattice_lift_buckets"][0],(0,modulus,2*modulus))
+            self.assertFalse(z["endpoint_quotient_alone_determines_periodization"])
+            self.assertFalse(z["Tate_global_Poisson_proved"])
+            self.assertFalse(z["RH_proved"])
+
+    def test_source_support_with_one_lift_per_class_is_lawfully_simple(self):
+        r=exact_finite_source_periodization(4,((-1,2),(1,3),(9,5)))
+        self.assertEqual(r["correct_periodization"][1],8)
+        self.assertEqual(r["naive_representative_evaluation"][1],3)
+        self.assertEqual(r["correct_periodization"][3],2)
+        b=exact_finite_source_periodization(4,((0,2),(1,3)))
+        self.assertTrue(b["endpoint_quotient_alone_determines_periodization"])
+
+    def test_lattice_source_duplicate_and_invalid_tools_refused(self):
+        for modulus,data in (
+            (1,((0,1),)),
+            (2,()),
+            (2,((0,1),(0,2))),
+            (2,((0,1.0),)),
+            (2,((True,1),)),
+            (2,((0,True),)),
+        ):
+            with self.assertRaises(HistoryLiftError):
+                exact_finite_source_periodization(modulus,data)
 
 
 if __name__=="__main__":
