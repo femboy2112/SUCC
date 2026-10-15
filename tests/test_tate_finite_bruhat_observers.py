@@ -7,6 +7,7 @@ from observational_succ.tate_finite_bruhat_observers import (
     finite_cyclotomic_fourier, exact_tate_finite_plancherel,
     refine_support_chart, refine_constancy_chart,
     finite_tate_refinement_square, conductor_three_probe_gap,
+    finite_tate_coset_discriminator,
 )
 from observational_succ.tate_local_contract import unramified_ball_pair, ZETA3, QRootMinus3
 
@@ -84,6 +85,28 @@ class GenuineFiniteTateWindows(unittest.TestCase):
         self.assertTrue(r["fine_nonzero_Gauss_phase"])
         self.assertFalse(r["global_Weil_sign_proved"])
         self.assertFalse(r["RH_proved"])
+
+    def test_complete_conductor_coset_probes_separate_actual_source_from_zero(self):
+        a=finite_tate_coset_discriminator(3,0,1,(0,1,-1),(0,0,0))
+        self.assertEqual(a["source"],"GENUINE_LOCAL_TATE_SCHWARTZ_BRUHAT_COSET_OBSERVER")
+        self.assertEqual(a["first_distinguishing_coset"],1)
+        self.assertEqual(a["exact_coset_Haar_pairing_difference"],F(1,3))
+        self.assertTrue(a["finite_witness_of_distinct_source"])
+        self.assertTrue(a["complete_coset_probe_family_jointly_separating"])
+        self.assertFalse(a["observer_assumed_to_have_physical_probe_access"])
+        self.assertFalse(a["RH_proved"])
+        same=finite_tate_coset_discriminator(3,0,1,(0,1,-1),(0,1,-1))
+        self.assertTrue(same["all_coefficients_identical"])
+        self.assertIsNone(same["first_distinguishing_coset"])
+        self.assertFalse(same["finite_witness_of_distinct_source"])
+
+    def test_finite_arithmetic_source_probe_has_no_ontic_privilege(self):
+        x=finite_tate_coset_discriminator(2,0,2,(1,2,3,4),(1,2,-3,4))
+        self.assertEqual(x["first_distinguishing_coset"],2)
+        self.assertEqual(x["exact_coset_Haar_pairing_difference"],F(3,2))
+        self.assertFalse(x["observer_assumed_to_have_physical_probe_access"])
+        with self.assertRaises(TateFiniteFieldError):
+            finite_tate_coset_discriminator(6,0,1,(1,0),(0,0))
 
     def test_fake_composite_bad_Haar_and_wrong_coefficient_type_fail_closed(self):
         for p,M,N in ((6,0,0),(1,0,0),(2,-1,0),(3,1,-1),(True,0,0),
