@@ -104,6 +104,19 @@ class SourceProjectedDerivativeGramTests(unittest.TestCase):
         self.assertGreater(wprev,wcurr)
         self.assertGreater(prev["projected_derivative_Lipschitz_upper"],0)
 
+
+    def test_actual_genuine_suzuki_source_strict_H1_directional_margins(self):
+        # Independently derived rational source interval errors, no float
+        # oracle, prove these fixed finite-J rank1/rank3 bounds exactly.
+        # They do NOT apply to the untruncated G or high Q30 sector.
+        r1=d.genuine_projected_first_legendre_H1_energy(2,128,1)
+        r3=d.genuine_projected_first_legendre_H1_energy(2,128,3)
+        self.assertLess(r1["projected_derivative_squared_upper"],F(1,20))
+        self.assertLess(r3["projected_derivative_squared_upper"],F(1,25))
+        self.assertEqual(r1["source"],r3["source"])
+        self.assertFalse(r1["genuine_full_original_gamma_tail_included"])
+        self.assertFalse(r3["original_30_mode_Q_projection_done"])
+
     def test_source_projection_rank_and_spectral_scope_gates(self):
         for fn in (
             lambda:d.genuine_projected_first_legendre_H1_energy(1,8,0),
