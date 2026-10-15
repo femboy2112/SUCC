@@ -288,6 +288,50 @@ Two more sharp consequences follow, source independently of RH:
 1. Every subspace on which the TRUE original \(G\) form is strictly negative has dimension at most **4**; otherwise it contains a nonzero vector orthogonal to the four low modes, contradicting the Bessel-4 high positivity. Hence the Morse/negative index is at most four.
 2. \(\dim\ker G\le4\) because \(G\) has no nonzero null vector wholly in QH (such a vector would have \(0=\langle h,Gh\rangle\ge\|Vh\|^2/50>0\)).
 
+### The finite correction is EXACTLY a quadratic polynomial of FOUR test moments
+
+This supplies a more explicit SUCC finite-observer realization, rather than hiding P4 behind abstract notation.
+
+Let \(m_k=\int_{-1/2}^{1/2}t^k f(t)\,dt\) for k=0,1,2,3, and let \(u=f'\). Since f is zero at both endpoints, integration by parts with the source's exact Legendre polynomials \(P_j(2t)\) gives:
+
+\[
+\boxed{\begin{aligned}
+\langle u,P_1(2t)\rangle&=-2m_0,\\
+\langle u,P_2(2t)\rangle&=-12m_1,\\
+\langle u,P_3(2t)\rangle&=3m_0-60m_2,\\
+\langle u,P_4(2t)\rangle&=30m_1-280m_3.
+\end{aligned}}\tag{WB4-C6}
+\]
+
+Their true L² orthogonal norms on (-1/2,1/2) are \(\|P_j(2t)\|²=1/(2j+1)\). Consequently
+
+\[
+\boxed{
+\begin{aligned}
+\|P_4u\|_{L^2}^2
+={}&3|2m_0|^2+5|12m_1|^2\\
+&+7|60m_2-3m_0|^2
++9|280m_3-30m_1|^2.
+\end{aligned}}\tag{WB4-C7}
+\]
+
+This positive form vanishes **IF AND ONLY IF** all four complex moments vanish; the coefficient map is triangular with nonzero diagonal. The finite-rank completion theorem can now be written entirely as an **explicit source-observable inequality** for every actual original smooth test:
+
+\[
+\boxed{
+\begin{aligned}
+Q_\zeta(f)
++\frac{65}{16}\bigl[
+&3|2m_0|^2+5|12m_1|^2\\
+&+7|60m_2-3m_0|^2
++9|280m_3-30m_1|^2\bigr]\ge0.
+\end{aligned}}\tag{WB4-C8}
+\]
+
+This is the requested *source-first finite/global polarization prototype*: there is no independent Brownian nullspace freedom or invented primitive composite here. The correction is a **known explicit quadratic functional of four original source test moments**. Proving that the original \(Q_\zeta\) is nonnegative WITHOUT this moment correction is still the exact local RH-hard gate.
+
+The executable \`exact_four_source_moment_polarization\` computes WB4-C7 over exact rational complex pairs, checks kernel exactly and cross-verifies with independent source Legendre polynomial integrals, never a fitted numerical positive Gram.
+
 **Crucial RH firewall:** \(\widetilde G\ge0\) does not imply \(G\ge0\). Removing the actual \(\lambda P_4\) is exactly the missing 4×4 source low-short sign \(S_0=A-R_0\succeq0\). This finite-rank positive correction is a noncircular, genuinely source-coupled **prototype polarization** of original Weil, not the final RH-strength polarization.
 
 **Executable source:** \`observational_succ/tate_four_low_compensator.py\`; tests \`tests/test_tate_four_low_compensator.py\` check original rational constants and synthetic signed Schur countermodels in both directions; the actual all-u statement is the above analytical proof, not finite enumeration.
