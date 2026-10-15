@@ -473,3 +473,58 @@ def true_prime2_coupled_thirty_moment_witness(power: int = 34) -> dict:
             "PR107_high_sector_kappa_for_original_amw":F(369,10000),
             "PR107_full_low_schur_sign_proved":False,
             "RH_proved":False}
+
+
+
+def original_first_legendre_prime2_cross_witness(power: int = 4) -> dict:
+    """Nonzero TRUE primitive p2 SOURCE prime-only low/packet cross pairing.
+
+    At a=1/2, normalized u_1(x)=sqrt(3)*P_1(2x)=2sqrt(3)x,
+    its Neumann primitive v_1(x)=sqrt(3)*(x²-1/4).
+    Let U=(-7/16,-7/16+1/64), b=log2 (authentic), and take
+    f=f0+f0(.-b), f0(t)=t^q(delta-t)^q in U. Pair the genuine
+    PRIME-ONLY hermitian contribution in Q_zeta:
+      Q_2(v1,f)=-w2[<T_b v1,f>+<v1,T_b f>]
+                =-w2 sqrt(3) integral_U
+                    [(x+b)^2+x²-1/2] f0(x) dx.
+    Exact source rational bounds show on U:
+       |x|<=7/16, 0<x+b<3/10.
+    Thus [(x+b)^2+x²-1/2]<= -c0, with
+       c0=1/2-(7/16)^2-(3/10)^2 >0.
+    Hence Q_2(v1,f)>= w2_lower*c0*integral f0 >0
+    using sqrt3>1. The lower is EXACT rational from original
+    SHA-pinned w2 and beta-polynomial mass. This is a NONZERO
+    AUTHENTIC PRIME CROSS component, NOT the completed total Q(v1,f)
+    and does NOT prove the full low Schur sign.
+    """
+    if type(power) is not int or not 4<=power<=16:
+        raise PrimeDomainError("Exact C3-or-better source packet exponent 4..16")
+    src=_proof_source()
+    packet=prime_two_pair_packet_domain()
+    Ulo,Uhi=packet["base_U"]
+    b=src.log_iv(2)
+    if not Uhi+b.hi<F(3,10) or not Ulo+b.lo>0:
+        raise PrimeDomainError("Original p2/log source low-mode cross support not separated")
+    c0=F(1,2)-F(7,16)**2-F(3,10)**2
+    if not c0>0:
+        raise ArithmeticError("Wrong signed polar geometry on original low mode")
+    length=Uhi-Ulo
+    from math import factorial
+    q=power
+    mass=length**(2*q+1)*F(factorial(q)**2,factorial(2*q+1))
+    w=_upper_weight(src,2,2,F(1,2))
+    lower=w.lo*c0*mass
+    if not lower>0:
+        raise ArithmeticError("Original arithmetic low/packet cross positivity not established")
+    return {"ambient_halfwidth":F(1,2),
+            "source":"ORIGINAL_SHA_PINNED_GENUINE_P2",
+            "low_normalized_legendre":"u1=2*sqrt(3)*x",
+            "low_neumann_primitive":"v1=sqrt(3)*(x*x-1/4)",
+            "prime_shift_log_interval":(b.lo,b.hi),
+            "one_packet_polynomial_degree":2*q,
+            "one_packet_mass":mass,
+            "low_cross_prime_component_exact_rational_positive_lower":lower,
+            "only_prime_component_certified_nonzero":True,
+            "completed_signed_Weil_cross_sign_proved":False,
+            "original_30_low_Schur_sign_proved":False,
+            "RH_proved":False}
