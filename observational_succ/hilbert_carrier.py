@@ -368,3 +368,57 @@ def exact_cell_inner_product(order,table_a,table_b):
     if spatial!=pulled:
         raise ArithmeticError("Hilbert read order changed original L2 bilinear pairing")
     return spatial
+
+
+def parameter_tube(t,order):
+    """Finitely enclose H(t) via ONE nested spatial Hilbert dyadic square.
+
+    Parameter t is exact rational. The mathematical Hilbert point at a
+    rational parameter is in every nested square's closure. This is NOT
+    a finite computation of all its infinitely many coordinate digits.
+    """
+    t=exact(t)
+    k=order_gate(order)
+    if not 0<=t<=1:
+        raise HilbertCarrierError("true Hilbert parameter [0,1]")
+    total=4**k
+    d=min(total-1,(t*total).numerator//(t*total).denominator)
+    X,Y=spatial_cell(k,d)
+    cx,cy=center(k,d)
+    return {
+        "source":"CLASSICAL_HILBERT_DYADIC_LIMIT",
+        "parameter":t,"order":k,"source_index":d,
+        "time_cylinder":time_cell(k,d),
+        "spatial_enclosure":(X,Y),
+        "center":(cx,cy),
+        "squared_distance_to_completed_point_upper":Q(1,2*4**k),
+        "uniform_limit_carries_original_source":True,
+        "limit_point_physically_observed":False,
+    }
+
+def target_preimage_tube(x,y,order):
+    """Finitely enclose one possible parameter for any rational square point.
+
+    For boundary dyadic targets choose the right cell (or top/last cell),
+    with compatible orientation at every order; no global continuous
+    section/single-valued inverse is constructed.
+    """
+    x,y=exact(x),exact(y)
+    k=order_gate(order)
+    if not (0<=x<=1 and 0<=y<=1):
+        raise HilbertCarrierError("rational target in original closed square")
+    n=1<<k
+    cx=min(n-1,(x*n).numerator//(x*n).denominator)
+    cy=min(n-1,(y*n).numerator//(y*n).denominator)
+    d=index(k,cx,cy)
+    square=spatial_cell(k,d)
+    if not (square[0][0]<=x<=square[0][1] and
+            square[1][0]<=y<=square[1][1]):
+        raise ArithmeticError("genuine Hilbert preimage tube misses source target")
+    return {
+        "source":"RATIONAL_SQUARE_TARGET_CLASSICAL_SURJECTION",
+        "target":(x,y),"order":k,"time_cylinder":time_cell(k,d),
+        "spatial_tile":square,"cell_index":d,
+        "preimage_parameter_computed_to_infinite_precision":False,
+        "surjectivity_uses_classical_nested_compactness":True,
+    }
