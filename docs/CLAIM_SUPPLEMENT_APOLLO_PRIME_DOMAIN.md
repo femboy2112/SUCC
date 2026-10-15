@@ -27,3 +27,8 @@ Source: SHA-pinned original completed zeta Suzuki source_weil_hierarchy.py; unmo
 **Next verdict-changing probe:** compute/rigorously enclose authentic cross interaction of the prime-activated positive test Hilbert spans with all 30 Legendre low modes under PR #107's true Neumann K metric. Derive a source-uniform bound and test the original low short matrix at λ=0; a generic positive covariance, finite sign grid or surjective low moment map does not satisfy that obligation.
 
 **RH PROVED: NO.**
+
+
+| S8c actual nonzero prime-2 transfer INSIDE 30-moment high sector | PROVED LOCAL with exact Fraction polynomial witness | f=(D^30 phi_q)+(D^30 phi_q)(·−log2) on two original source packets, phi_q=t^q(delta−t)^q, q>=34; all first 30 moments vanish, u=i f' has all 30 Legendre low projections zero, yet genuine translated overlap=||D^30 phi_q||²>0; original packet sign remains >3/5 | not full low Schur sign, finite polynomial C³ not falsely claimed Cc∞ |
+
+The original-source high-sector coupled witness is exposed by true_prime2_coupled_thirty_moment_witness with an exact positive rational norm and 30 moment-zero certificates. The analytic domain extends to H0¹(E2), with smooth approximation; PR #107 source-high evidence is an independent premise and not re-proved by same-model tests.
