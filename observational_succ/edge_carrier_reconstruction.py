@@ -548,7 +548,7 @@ def finite_prime_partition(n: int) -> dict:
         d+=1
     if residue>1:primes.append(residue)
     e={p:ProfiniteProgram.projector(p).residue(n) for p in primes}
-    pairwise={ (p,q): (e[p]*e[q])%n
+    pairwise={ f'{p}:{q}': (e[p]*e[q])%n
                for i,p in enumerate(primes) for q in primes[i+1:] }
     if (sum(e.values())%n != (1%n)
         or any(x for x in pairwise.values())
