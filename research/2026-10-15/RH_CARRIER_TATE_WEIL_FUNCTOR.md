@@ -250,3 +250,64 @@ For the exhaustive global positivity goal, let a_m=m/2 (m=1,2,...). The supports
 **Test-domain caveat:** a fixed signed auxiliary covariance or a finitely sampled Gram matrix may be positive while this entire graded family contains negative directions; moving boundary leakage and lack of uniform lower bounds remain live obstructions.
 
 Implementation: observational_succ/tate_weil_window.py and tests/test_tate_weil_window.py. Genuine prime powers are imported from existing completed_weil_transport.von_mangoldt_labels, not a fitted sample or standalone fake 6.
+
+
+## 12. TF-09 — The Euler logarithmic derivative is the exact prime-jet-to-Weil arithmetic interface
+
+This is the most direct mathematical answer to the question "how do Tate's multiplicative shells become SUCC's additive log-time impulses?"
+
+Start from the true Tate unramified local zeta integral, initially in Re(s)>0,
+
+    Z_p(s) = Σ_(k>=0) p^(-ks) = (1-p^-s)^(-1).
+
+The **negative logarithmic derivative** is
+
+    -d/ds log Z_p(s)
+      = (log p) Σ_(k>=1) p^(-ks).                            (12.1)
+
+At a fixed true prime p the k-th term is carried by the actual multiplicative prime jet p^k; its additive log-time address is t=k log p=log(p^k), with authentic coefficient Λ(p^k)=log p. No zeros or scattering matrix are consulted.
+
+The global Euler product is absolutely convergent in Re(s)>1; there,
+
+    -ζ'(s)/ζ(s)
+      = Σ_p -d/ds log Z_p(s)
+      = Σ_(n>=2) Λ(n) n^(-s).                                (12.2)
+
+**Domain firewall:** It is INVALID to treat the rightmost Dirichlet series as an ordinarily convergent global sum at Re(s)=1/2. On the Weil side, the compact support of a log-test selects finitely many source impulses, and the Archimedean/pole completion supplies the distributional continuation. A source-positive local log-jet does **not** imply a positive completed Weil form.
+
+**SUCC source-level formalization:** \`local_euler_logjet\` computes exact rational finite prefixes and remainders of Σ_(k>=1)p^(-ks) while storing the real factor as the typed symbolic generator "log p"; \`finite_source_logjets\` independently generates all p^k<=N by true prime-power arithmetic and compares its labels to the existing \`completed_weil_transport.von_mangoldt_labels\` oracle. It rejects the fake standalone n=6 impulse and fake prime p=6. This directly connects Tate's local Mellin factors to the authentic prime-power input consumed by the signed Weil machinery already in SUCC.
+
+**Status:** (12.1) and (12.2) are CLASSICAL theorems/identities, **PROVED PAPER and EXACT FINITE TESTED** in the appropriate declared domains; they do NOT pay the global sign debt.
+
+## 13. CR-05 — An unavoidable two-sided Goldilocks requirement
+
+The source-complete **arithmetic** carrier (integers, true Λ) already determines a unique signed Weil distribution through the classical explicit formula once analytic continuation and domains are imported. There is no known duplicate *authentic* ζ-world with different RH outcome. Thus the Fucked/phantom category is not justified for the true arithmetic source merely by inventing a fake coefficient.
+
+On the other hand, the mere **positive Hilbert-space Fourier representation** of Tate's test functions exists for both genuine and arbitrary mutated arithmetic source labels: Fourier unitarity/Parseval do not depend on the ζ Euler tape at all. Therefore
+
+    Schwartz–Bruhat Fourier compatibility + positive L² norm
+          DOES NOT ENTAIL signed completed Weil positivity.
+
+This is an elementary counterexample to the cheap "transport any positive covariance" strategy: the same positive harmonic-analysis framework can be equipped with distinct source distributions, some of which exhibit negative signed Weil-type test values. The source-to-quadratic **identification** is the missing typed morphism.
+
+A useful Goldilocks carrier must simultaneously satisfy:
+
+1. **Fidelity:** source true Λ(p^k), the original finite+real places, phase, Gamma/poles, correct half-density.
+2. **Continuity:** a test topology enabling passage from exact finite source windows to the completed Weil distribution.
+3. **Rigidity:** sufficiently restrictive structure to derive a sign inequality, not merely to state an equivalent positivity criterion.
+4. **Probe completeness:** all compact supports and all legitimate test directions, with honest error/closure bounds.
+5. **History:** input source-event/cocycle records remain distinguishable even where quotient states and Fourier characters coincide.
+
+No argument here proves these five conditions can be realized by a sign-positive carrier, let alone that the chosen interface is mathematically optimal. The fourth gate remains exactly RH-hard.
+
+## 14. Next hostile theorem experiment
+
+Attempt to define the source-indexed **log-test Weil functor**
+
+    Tate Schwartz–Bruhat generator Φ
+       -> multiplicative norm pushforward f(t)
+       -> full prime/Gamma/pole completed Weil distribution W(f*tilde f)
+
+with an honest map of test domains, and compute BOTH original-source signed evaluations and any candidate positive operator evaluations on a DENSE family.
+
+A valid identification must hold for a general generating family (not a single tent), commute with transition/refinement maps, survive fake 6 and χ_4/non-Euler controls, and have errors uniform enough to survive the inductive-limit test topology. **Falsification:** produce φ with rigorously different two sides, or show one side is undefined. **Ambiguity:** finite numerical agreement without a certified bound. **Pass:** a theorem of distributional equality with proven domains, independent derivation or accepted classical source proof. Positivity requires its own further universal proof.
