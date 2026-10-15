@@ -6,7 +6,7 @@ from fractions import Fraction as F
 
 from observational_succ.tate_lattice_descent import (
     RationalSChart, character_naturality, finite_depth_alias,
-    s_modulus_receipt, successor_history_kernel,
+    s_modulus_receipt, successor_history_kernel, prime_extension_obstruction,
 )
 
 
@@ -23,6 +23,7 @@ def main() -> None:
         raise AssertionError('Missing-prime defect not caught')
     blind = finite_depth_alias(2, 16)
     history = successor_history_kernel((2, 3), F(1, 6))
+    extension = prime_extension_obstruction((2, 3), 5)
     report = {
         'theory': 'Tate finite-S lattice / SUCC local-global',
         'model_scope': 'dense rational stage charts, exact Fraction arithmetic',
@@ -30,6 +31,7 @@ def main() -> None:
         'missing_prime_defect_5': degree,
         'bounded_probe_alias': blind,
         'causal_event_kernel': history,
+        'nonsplit_prime_extension': extension,
         'tate_classical_imports_formally_verified': False,
         'establishes_completed_weil_positivity': False,
         'RH_proved': False,
