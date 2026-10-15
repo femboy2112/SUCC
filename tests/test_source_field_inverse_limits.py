@@ -7,6 +7,7 @@ from observational_succ.source_field_inverse_limits import (
     finite_kleene_tree_calibration, noncompact_descending_field,
     hidden_coordinate_phantom, moving_impostor, remote_negative_sign_shadow,
     rh_inverse_limit_interface, original_weil_finite_gamma_sign_gap,
+    synthetic_unique_branch_level, finite_unique_path_selector,
 )
 
 
@@ -34,6 +35,41 @@ class SimpleFieldSourceLaw(unittest.TestCase):
         for seed,n in ((-1,8),(True,4),(1,65),(1,4.5)):
             with self.assertRaises(FieldClosureError):
                 simple_residue_inverse_limit(seed,n)
+
+
+class ComputableUniqueLimitTheorem(unittest.TestCase):
+    def test_decidable_finite_tree_is_prefix_closed_and_unique_branch(self):
+        levels=[synthetic_unique_branch_level(n) for n in range(16)]
+        self.assertEqual(levels[0],("",))
+        self.assertEqual(levels[1],("0","1"))
+        self.assertEqual(levels[6][0],"000000")
+        for n in range(1,len(levels)):
+            self.assertTrue(all(node[:-1] in levels[n-1] for node in levels[n]))
+        self.assertNotIn("100000",levels[6])
+
+    def test_unknown_depth_is_not_a_proof_of_noncomputability(self):
+        for bit in (0,1,3,6):
+            budget=2*bit+6
+            earlier=finite_unique_path_selector(bit,budget-1)
+            solved=finite_unique_path_selector(bit,budget)
+            self.assertFalse(earlier["terminates_with_this_budget"])
+            self.assertIsNone(earlier["bit_value"])
+            self.assertEqual(earlier["field"],"RESOURCE_UNRESOLVED_NOT_FUCKED")
+            self.assertTrue(solved["terminates_with_this_budget"])
+            self.assertEqual(solved["searched_through_level"],budget)
+            self.assertEqual(solved["bit_value"],0)
+            self.assertEqual(solved["field"],"SimpleField")
+            self.assertTrue(solved["finite_prefix_agreement_is_a_proof_of_this_bit"])
+            self.assertFalse(solved["all_n_run_physically"])
+            self.assertFalse(solved["RH_proved"])
+
+    def test_invalid_stages_and_requests_fail_closed(self):
+        for bad in (-1,True,4097,1.5):
+            with self.assertRaises(FieldClosureError):
+                synthetic_unique_branch_level(bad)
+        for k,depth in ((-1,10),(True,10),(51,100),(0,4097)):
+            with self.assertRaises(FieldClosureError):
+                finite_unique_path_selector(k,depth)
 
 
 class IdealHardKleeneConstruction(unittest.TestCase):
