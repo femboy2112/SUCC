@@ -62,3 +62,19 @@ The user intuition about recursively building models could be load-bearing if it
 
 
 **ATOM-V carrier gate already discharged at classical object level:** constructive A_f=Q+Zhat, Q∩Zhat=Z, A_f/Zhat=Q/Z (DISCRETE quotient), and the actual compact real–profinite solenoid (R×Zhat)/Z≅A_Q/Q. The finite p-primary coset generator and rational diagonal Q lift have exact tests. This closes a genuine finite-to-Arch arithmetic *carrier* gap; the next Tate work is GLOBAL TEST FUNCTIONS + POISSON, not rediscovering the underlying additive adele quotient. The subsequent RH-sign bridge remains independent.
+
+
+## New source-relative compactness and effective-execution gate — ATOM II
+
+Before attempting T1/Tate or P1/Weil all-stage completion, the observer SOURCE must supply the correct executable contract:
+
+- For discrete finite quotient tables, finite exact entries and algebraic-source pullbacks are honest computable finite data.
+- For full Qp local Schwartz, compact support + finite resolution ensures every specified locally constant test admits a finite chart. The full space is an infinite two-axis filtered union with analytic topology, NOT a finite measurement of all tests.
+- For the real Schwartz factor, arbitrary exact real coefficients are NOT necessarily computable. A single exact halting-real source can encode noncomputable data. Require an explicit representation/precision/error oracle license.
+- For source lifting, either compact Hausdorff closed-fiber finite-intersection property, or a source-specific properness/limit theorem, must prevent phantom global objects; compactness without EFFECTIVE selection proves existence only.
+- For requested BIJECTION, require separating full observer closure and genuine SOURCE identity; the model-of-model profinite bijection is not a bijection onto original integers or physical sources.
+- For Suzuki sign growth, a common Hilbert pair with all FINITE source constraints feasible under a UNIFORM contraction bound gives a global contraction by WOT compactness. This is an EXACT classical finite->global theorem, not a sign law: source must independently verify ALL actual Weil finite Grams.
+
+The next proof-bearing test is not another finite successful prefix. Develop a source-derived extension estimate for authentic \(\Lambda(p^k)\), Gamma/contact/pole and the 30-low zero-shift short, proving the necessary cross Schur constraint for every nested test enlargement. A broad source inequality could change the problem from IdealHard-style unbounded proof search to Simple symbolic certificate. If no such estimate is found, mark it UNVERIFIED, not intrinsically Fucked.
+
+See research/2026-10-15/FIELD_LIMIT_TRICHOTOMY.md and docs/CLAIM_SUPPLEMENT_FIELD_LIMITS.md. The existing ATOM Tate/Weil sources are unchanged.
