@@ -9,6 +9,7 @@ The handoff contract is [docs/RH_HANDOFF.md](../../docs/RH_HANDOFF.md). A docume
 - [Certified prime-side Suzuki wavefront](2026-10-10-prime-source-certification.md) — exact rational interval arithmetic from genuine finite prime events with fake-composite controls; **Gamma+poles and global Weil positivity are missing**.
 - [Prime-correlated Gamma chiral sphere candidate](2026-10-14-prime-sphere-gamma-chiral.md) — source-correct positive signed companion Gamma/Dirichlet-chi4 operator, spectral transport and a sharp high-frequency no-go; **auxiliary object, NOT identified with completed Weil**.
 - [Source-indexed all-place analytic model gluing](2026-10-14-source-model-analytic-gluing.md) — original rational diagonal, true finite-local Euler factors, canonical theta/Poisson interaction, exact finite-prime modular obstruction and rational certificates outside the Euler region; **completed Weil sign and RH remain open**. Stacked on PR #71; review before exporting to the separate RH repo.
+- [SUCC-Gaussian global-curve constraints](2026-10-14-succ-gaussian-global-constraints.md) — theta-derived source norm bound, finite-prime Gaussian boreholes, certified center zero-free disk and conditional Rouché protocol. **No RH or all-height claim**.
 - [Template](TEMPLATE.md) — required mathematical scope, provenance, adversarial controls and next proof obligation.
 
 RH remains unsolved. A handoff document is **not** an assertion of an RH proof.
