@@ -210,7 +210,7 @@ class IndependentNumericalCalibrationOnly(unittest.TestCase):
             # infinite upper bound, which is analytic in the paper.
             high=mp.mpc(0)
             for p in range(P+1,1000):
-                if not all(p%d==0 for d in range(2,int(p**.5)+1)):
+                if all(p%d for d in range(2,__import__('math').isqrt(p)+1)):
                     z=mp.power(p,-s)
                     w=mp.power(p,-(1-s))
                     high+=mp.fsum((z**k-w**k)/k for k in range(8,25))
