@@ -73,8 +73,12 @@ def add_certified_node_error(contract, eta, *, authenticator=None):
         raise WeilZenoError("original-source stage contract required")
     a=rat(contract.get("real_place_radius"))
     k=contract.get("level")
-    if contract!=dyadic_stage(a,k):
-        raise WeilZenoError("forged or modified stage/refinement data")
+    canonical=dyadic_stage(a,k)
+    if (set(contract)!=set(canonical)
+        or any(type(contract[key]) is not type(canonical[key])
+               for key in canonical)
+        or contract!=canonical):
+        raise WeilZenoError("forged, inexact, or modified stage/refinement data")
     if authenticator is not None:
         raise WeilZenoError("unimplemented proof adapter: no external testimony accepted")
     return {
