@@ -12,7 +12,7 @@ from observational_succ.source_field_inverse_limits import (
     simple_residue_inverse_limit, finite_kleene_tree_calibration,
     noncompact_descending_field, hidden_coordinate_phantom,
     moving_impostor, remote_negative_sign_shadow,
-    rh_inverse_limit_interface,
+    rh_inverse_limit_interface, original_weil_finite_gamma_sign_gap,
 )
 
 
@@ -25,8 +25,9 @@ def receipt():
     blind=remote_negative_sign_shadow(7,7)
     visible=remote_negative_sign_shadow(8,7)
     rh=rh_inverse_limit_interface()
+    signed=original_weil_finite_gamma_sign_gap()
     return {
-        "schema":"SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v1",
+        "schema":"SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v2",
         "source_schemas_are_NOT_empirical_attestation":True,
         "simple":{
             "field":s["field"],
@@ -68,6 +69,18 @@ def receipt():
             "blind_at_seven":blind["finite_compressions_appear_identical"],
             "visible_at_eight":visible["negative_direction_is_visible"],
             "uniform_finite_visibility_bound":visible["uniform_cutoff_independent_of_hidden_index_exists"],
+        },
+        "true_low_mode_source_tail":{
+            "source":signed["source"],
+            "Gamma_J":signed["Gamma_finite_stage"],
+            "signed_stage_strictly_negative":signed["truncated_stage_is_strictly_negative"],
+            "missing_Gamma_tail_PSD":signed["omitted_original_Gamma_tail_PSD"],
+            "omitted_Gamma_bound":str(signed["omitted_Gamma_kernel_uniform_upper"]),
+            "full_original_source_sign_interval_straddles_zero":
+                signed["full_source_rayleigh_enclosure"][0]<0<signed["full_source_rayleigh_enclosure"][1],
+            "full_original_low_mode_sign_proved":False,
+            "field_status":signed["field_label"],
+            "RH_proved":False,
         },
         "original_Weil_RH_frontier":{
             "source":rh["source"],
