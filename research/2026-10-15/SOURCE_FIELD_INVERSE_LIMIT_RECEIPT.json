@@ -1,5 +1,5 @@
 {
-  "schema": "SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v1",
+  "schema": "SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v2",
   "source_schemas_are_NOT_empirical_attestation": true,
   "simple": {
     "field": "SimpleField",
@@ -71,6 +71,17 @@
     "all_radii_low_short_positive": false,
     "finite_stage_smooth_tests_are_finite": false,
     "RH_classified_by_this_calculus": "UNRESOLVED_TOOL_CLOSURE",
+    "RH_proved": false
+  },
+  "true_low_mode_source_tail": {
+    "source": "ORIGINAL_PINNED_ZETA_WEIL_SUZUKI_LOW_LEGENDRE_1",
+    "Gamma_J": 2,
+    "signed_stage_strictly_negative": true,
+    "missing_Gamma_tail_PSD": true,
+    "omitted_Gamma_bound": "13/81",
+    "full_original_source_sign_interval_straddles_zero": true,
+    "full_original_low_mode_sign_proved": false,
+    "field_status": "UNRESOLVED_STAGE_TO_GLOBAL_SIGN",
     "RH_proved": false
   }
 }
