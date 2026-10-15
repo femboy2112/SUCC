@@ -19,7 +19,11 @@ class ExactPolynomialSourceTest(unittest.TestCase):
             self.assertEqual(S.poly_eval(p,F(1)),(-1)**n)
         for n in (1,2,3,8,15,30):
             p=m.shifted_legendre(n)
-            norm=m.polynomial_integral(S.poly_mul(p,p))
+            # P_30 squared has degree 60; the signed-source *input*
+            # moment adapter is intentionally capped at degree 34.
+            # Check this independent Legendre norm with the existing
+            # unconstrained exact polynomial integration identity.
+            norm=S.poly_integral(S.poly_mul(p,p),F(0),F(1))
             self.assertEqual(norm,F(1,2*n+1))
 
     def test_original_prime2_hinge_interval_uses_same_log2_source_monotonically(self):
