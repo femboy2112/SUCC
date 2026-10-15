@@ -24,7 +24,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: ${{ matrix.python-version ${{
+          python-version: ${{ matrix.python-version }}
       - name: Exact independent classical tests
         run: python -m unittest discover -s tests -p 'test_classical_unit_origin.py' -v
       - name: Recompute receipt, reject drift
