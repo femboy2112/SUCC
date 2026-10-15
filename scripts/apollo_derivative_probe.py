@@ -8,9 +8,15 @@ from observational_succ.apollo_derivative_jets import (
     exact_source_gauge_negative_direction, true_third_prime_wavefronts,
     genuine_prime_third_jet, third_origin_contact_offset,
     cubic_gauge_discrimination, compact_polynomial_moment_certificate,
+    authentic_uniform_small_diagonal,
     third_distribution_bump_pair, exact_local_gamma_slope_bound,
 )
 from observational_succ.one_object_kernel_certificates import source_two_point_minor
+from observational_succ.apollo_krein_factor import (
+    original_suzuki_krein_finite_window,prime_krein_identity,
+    prime_mixed_second_source_coefficients,gamma_mixed_second_source_coefficients,
+    source_feature_contraction_diagnostic,
+)
 
 
 def main():
@@ -30,7 +36,31 @@ def main():
     assert q["absolute_error"]<q["analytic_tail_evaluation"]
     bound=src["determinant"][0]
     floor=F(bound.numerator*10**6//bound.denominator,10**6)
+    continuous=authentic_uniform_small_diagonal(F(1,8))
+    assert continuous["strict_for_every_real_radius_in_window"]
+    krein=original_suzuki_krein_finite_window(F(1,4),F(1,2),F(1,2),8,75)
+    assert krein["prime_labels"]==(2,)
+    assert krein["residual_abs"]<__import__("mpmath").mpf("1e-57")
+    primemix=prime_mixed_second_source_coefficients(F(1))
+    gamma0=gamma_mixed_second_source_coefficients(0)
+    assert primemix["combined_origin"]==0
+    assert gamma0["origin_delta_coefficient"]==4
+    synthetic=source_feature_contraction_diagnostic(
+      ((F(1),F(0)),(F(0),F(1))),
+      ((F(2),F(0)),(F(0),F(0)))
+    )
+    assert not synthetic["combined_signed_psd_on_selected_finite_set"]
+    assert prime_krein_identity(F(1,2),F(3,2),F(1))["identity_exact"]
     result={
+       "KREIN_finite_window":krein["window_halfwidth"],
+       "KREIN_original_prime_labels":list(krein["prime_labels"]),
+       "KREIN_source_plus_minus_residual_numerical":krein["residual"],
+       "KREIN_positive_feature_built":True,
+       "KREIN_negative_feature_built":True,
+       "KREIN_full_contraction_proved":False,
+       "KREIN_prime_contact_cancellation":True,
+       "AP8_uniform_original_diagonal_real_interval":"0<r<=1/8",
+       "AP8_original_diagonal_lower_r_over_8":True,
         "operation":"APOLLO_D2_D3_SOURCE_JETS",
         "parent_one_object_sha":"04b6d8ede12c58afe4a244b11297663c33260de1",
         "authentic_source":"SHA_PINNED_PR85_ORIGINAL_ZETA",
