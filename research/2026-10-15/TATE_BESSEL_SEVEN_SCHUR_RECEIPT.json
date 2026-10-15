@@ -1,0 +1,53 @@
+{
+  "schema": "SUCC_TATE_BESSEL_SEVEN_2026_10_15_v1",
+  "source": "PINNED_ORIGINAL_COMPLETED_ZETA_WEIL_FIRST_PRIME",
+  "original_suzuki_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "halfwidth": "1/2",
+  "true_active_prime_power_labels": [
+    2
+  ],
+  "Gamma_real_source_modes": 128,
+  "Fourier_boundary": "49/4",
+  "seven_vanishing_power_moments": true,
+  "spherical_Bessel_exact_integrated_ranks": [
+    7,
+    19
+  ],
+  "spherical_Bessel_series_order": 10,
+  "spherical_Bessel_infinite_l_tail_positive": true,
+  "low_Fourier_mass_upper_strictly_below": "1/61",
+  "Gamma_multiplier_strictly_above": "3019/500",
+  "true_negative_contact_plus_prime_budget_strictly_below": "47/8",
+  "negative_sinh_polar_moment_residual_below": "1/10000",
+  "simple_source_rational_lower": "38989/610000",
+  "full_source_L2_gap_strictly_above": "1/16",
+  "exact_gamma_mass_gap_sha256": "a0b6dc843477604f672dbd07664fabe18bae251a72e23c0c071838776d9d8547",
+  "true_suzuki": {
+    "low_modes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "low_dimension": 7,
+    "reflection_parity_low_sizes": [
+      4,
+      3
+    ],
+    "high_operator_K_relative_lower": "1/16",
+    "original_inverse_Neumann_K": "V*V=(-Delta_N)^(-1)",
+    "source_K_boundary_rank": 2,
+    "genuine_zero_shift_R0_strictly_below": "121/100",
+    "actual_original_7_low_Schur_positive_proved": false,
+    "all_first_window_Weil_tests_positive_proved": false
+  },
+  "prior_parity15_low_dimension": 15,
+  "prior_rank18_original_relative_high_lower": "1/16",
+  "rank_six_method_is_not_an_RH_negative_witness": true,
+  "nontrivial_zero_positions_used_as_inputs": false,
+  "source_all_radius_low_sign_proved": false,
+  "RH_proved": false
+}
