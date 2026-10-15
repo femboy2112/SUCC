@@ -45,7 +45,7 @@ def main() -> None:
             "rational_edge":rational.as_fraction(),
             "S_atlas":atlas.primes,
             "in_selected_S_integers":atlas.contains(rational),
-            "outside_one_prime_stage":not SLocalization((2,)).contains(rational),
+            "outside_one_prime_stage":not SLocalization((7,)).contains(rational),
         },
         "Z_i_and_Q_i": {
             "gaussian_pair":gauss.pair, "gaussian_norm":gauss.norm(),
@@ -71,7 +71,8 @@ def main() -> None:
         "typed_interfaces":carrier_interface_contract(),
     }
     assert checks["one_vertex_free_loop_to_Z"]["cancelled_composition_is_identity"]
-    assert not checks["Z_to_Q_localization"]["in_selected_S_integers"] is False
+    assert checks["Z_to_Q_localization"]["in_selected_S_integers"]
+    assert checks["Z_to_Q_localization"]["outside_one_prime_stage"]
     assert checks["Z_i_and_Q_i"]["gaussian_norm"]==25
     assert checks["finite_modular_edges_to_Zhat"]["e2_12"]==9
     assert checks["finite_modular_edges_to_Zhat"]["CRT_partition_at_60"]["sum_modulus"]==1
