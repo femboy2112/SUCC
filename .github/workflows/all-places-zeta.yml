@@ -1,0 +1,41 @@
+name: All-place source interaction and analytic zeta gluing
+
+on:
+  push:
+    branches:
+      - 'research/all-places-model-interaction-zeta-*'
+  pull_request:
+    paths:
+      - 'observational_succ/all_places_zeta.py'
+      - 'tests/test_all_places_zeta.py'
+      - 'scripts/all_places_zeta_probe.py'
+      - 'research/2026-10-14/ALL_PLACES*'
+      - 'docs/CLAIM_SUPPLEMENT_ALL_PLACES_ZETA.md'
+      - '.github/workflows/all-places-zeta.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  place_source:
+    name: all_place_math (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install verified mathematical package
+        run: python -m pip install -e '.[test]'
+      - name: Source coherence and exact analytic tests
+        run: python -m unittest discover -s tests -p 'test_all_places_zeta.py' -v
+      - name: Check frozen exact all-place receipt
+        run: python scripts/all_places_zeta_probe.py --verify research/2026-10-14/ALL_PLACES_ZETA_RECEIPT.json
+      - name: Verify repository historical provenance
+        run: python scripts/verify_provenance.py
