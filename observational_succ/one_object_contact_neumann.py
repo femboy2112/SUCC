@@ -114,3 +114,44 @@ def generalized_rayleigh_shift(G,K,vector,c):
       "genuine_completed_zeta_Weil_gram_authentic":False,
       "rh_proved":False
     }
+
+
+def contact_moment_boundary_channels(c):
+    """Same contact discrepancy creates exactly TWO high/low K boundary couplings.
+
+    At genuine a=1/2 and moment cut P=Legendre 1..30:
+      K_(29,31)=-1/906948; K_(30,32)=-1/999180
+    in UNNORMALIZED Legendre coordinates. Original source high G>=k K,
+    so wrong contact c merely yields D_c >= (k+c) QKQ; it
+    need NOT retain a positive relative high gap when k+c<=0.
+    Off-identity Connes fixed-point traces cannot see this c.
+
+    Rank of Q K P is exactly 2 for c!=0; the contact correction
+    to B is c QKP, NOT an all-low diagonal shift alone.
+    """
+    c=q(c)
+    profile=original_source_neumann_gate()
+    from . import suzuki_moment_schur as schur
+    boundary=schur.inverse_neumann_boundary_channels(F(1,2),rank=30)
+    expect=((29,31,"-1/906948"),(30,32,"-1/999180"))
+    if boundary["K_low_high_cross_rank"]!=2 or boundary["channels"]!=expect:
+        raise ContactTransportError("authentic Neumann boundary source changed")
+    kap=F(369,10000)
+    new_gap=kap+c
+    return {
+      "source":"ORIGINAL_ZETA_SUZUKI_PLUS_DECLARED_CONTACT_GAUGE",
+      "radius":F(1,2),
+      "original_suzuki_git_blob":profile["source_sha"],
+      "original_high_gap_kappa":kap,
+      "contact_discrepancy":c,
+      "mutated_relative_high_gap_lower":new_gap,
+      "strict_relative_high_gap_from_this_bound":new_gap>0,
+      "boundary_neumann_channels":tuple((i,j,F(z)*c)
+                                       for i,j,z in boundary["channels"]),
+      "K_cross_rank_if_contact_discrepancy_nonzero":2 if c else 0,
+      "original_zeta_normalization_preserved":c==0,
+      "finite_moment_Schur_cross_unchanged_under_wrong_contact":c==0,
+      "Connes_off_identity_normalizes_contact":False,
+      "completed_weil_global_positive_proved":False,
+      "rh_proved":False
+    }
