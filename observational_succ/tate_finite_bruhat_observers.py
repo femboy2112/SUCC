@@ -298,3 +298,89 @@ def finite_tate_coset_discriminator(p,M,N,left,right):
         "global_Weil_positivity_inferred":False,
         "RH_proved":False,
     }
+
+
+def exact_tate_distribution_dual_compatibility(p,M,N,old,support_refined,
+                                               constancy_refined):
+    """DUAL inverse-limit gluing of finite local Schwartz-Bruhat functionals.
+
+    Any functional at V_(M,N) is a coefficient row ell_j with
+      T(f)=sum_j ell_j*c_j.
+    Under source support inclusion c_j -> d_(p*j), dual restriction is
+      ell_old(j) = ell_sup(p*j).
+    Under constancy inclusion c_j -> d_(j+l*Q), dual restriction is
+      ell_old(j) = sum_(l=0..p-1) ell_con(j+l*Q).
+    Compatible systems of such rows across ALL finite charts define
+    a linear functional on their algebraic filtered union S(Q_p).
+    This is a dual INVERSE limit of finite-dimensional vector spaces,
+    NOT a finite-set Koenig proof or an all-test Weil PSD.
+    """
+    chart=finite_bruhat_chart(p,M,N)
+    Q=chart["finite_complex_dimension"]
+    if p*Q>64:
+        raise TateFiniteFieldError("Dual gluing next finite chart exceeds budget")
+    c=_coefficients(old,Q)
+    sup=_coefficients(support_refined,p*Q)
+    con=_coefficients(constancy_refined,p*Q)
+    s=tuple(sup[p*j] for j in range(Q))
+    t=tuple(sum((con[j+l*Q] for l in range(p)),F()) for j in range(Q))
+    return {
+        "source":"GENUINE_LOCAL_TATE_TEST_DUAL_INVERSE_SYSTEM",
+        "p":p,"M":M,"N":N,
+        "old_functional":c,
+        "restricted_support_dual":s,
+        "restricted_constancy_dual":t,
+        "support_square_commutes":s==c,
+        "constancy_square_commutes":t==c,
+        "source_functional_coherently_glued":s==c and t==c,
+        "dual_is_inverse_limit_of_finite_dimensional_vector_spaces":True,
+        "finite_dimensional_complex_stage_is_not_a_finite_set":True,
+        "unbounded_complex_stage_automatically_compact":False,
+        "actual_global_Weil_distribution_identified":False,
+        "RH_proved":False,
+    }
+
+
+def original_tate_haar_dual_and_fourier_contact(p,M,N,coeffs):
+    """True p-adic additive Haar distribution is coherent across scales.
+
+    On V_(M,N), integral f dx = p^-N sum_j c_j.
+    Its dual source rows are exactly p^-N on all Q cells.
+    Under M->M+1, restriction ell_(p*j)=p^-N.
+    Under N->N+1, p cells each have ell=p^-(N+1), sum=p^-N.
+    Fourier of this distribution is evaluation at zero:
+       integral_Qp \hat f(y)dy=f(0)
+    using finite group orthogonality, with NO numerical roots.
+    This is a local additive-contact identity, NOT Weil's global
+    logarithmic derivative/Connes contact/positivity theorem.
+    """
+    ch=finite_bruhat_chart(p,M,N)
+    Q=ch["finite_complex_dimension"]
+    c=_coefficients(coeffs,Q)
+    if p*Q>64:
+        raise TateFiniteFieldError("Authentic Haar refinement requires finite executable next chart")
+    old=(F(1,p**N),)*Q
+    sup=(F(1,p**N),)*(p*Q)
+    con=(F(1,p**(N+1)),)*(p*Q)
+    naturality=exact_tate_distribution_dual_compatibility(p,M,N,old,sup,con)
+    if not naturality["source_functional_coherently_glued"]:
+        raise ArithmeticError("Original additive Haar source does not glue")
+    input_integral=sum((old[j]*c[j] for j in range(Q)),F())
+    dual_integral=F(1,p**(M+N))*sum(
+        (c[j]*cyclic_character_sum(Q,j) for j in range(Q)),F()
+    )
+    if dual_integral!=c[0]:
+        raise ArithmeticError("True local Tate Fourier Haar-to-delta contact failed")
+    return {
+        "source":"GENUINE_TATE_LOCAL_HAAR_FOURIER_CONTACT",
+        "p":p,"M":M,"N":N,
+        "original_integral_exact":input_integral,
+        "original_Haar_dual_source_gluing":True,
+        "Fourier_dual_integral_exact":dual_integral,
+        "original_value_at_zero_exact":c[0],
+        "Fourier_Haar_distribution_equals_evaluation_at_zero":True,
+        "test_colimit_dual_distribution_inverse_limit":True,
+        "real_global_Weil_contact_identified":False,
+        "Weil_quadratic_sign_proved":False,
+        "RH_proved":False,
+    }
