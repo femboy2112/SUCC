@@ -402,3 +402,120 @@ def local_padic_real_boundary_no_go() -> dict:
             "p_adic_full_local_field_is_just_a_compact_residue_tower":False,
             "finite_local_plus_Arch_Tate_completed":False,
             "RH_proved":False}
+
+
+
+def exact_local_biaxial_diamond(chart: PadicBruhatChart,
+                               raw: tuple[int|Q,...]) -> dict:
+    """Proof instrument: support-growth and precision-growth commute STRICTLY.
+
+    Two construction paths (r,s)->(r+1,s)->(r+1,s+1)
+    and (r,s)->(r,s+1)->(r+1,s+1) give IDENTICAL source functions
+    on p^-(r+1)Zp / p^(s+1)Zp, then identical Fourier values.
+
+    This is the actual two-dimensional recursive model-of-model
+    coherence law for local compact support AND local resolution.
+    """
+    if not isinstance(chart,PadicBruhatChart):
+        raise AtomicDescentError("Original rational-place p-adic chart required")
+    source=chart.values(raw)
+    p=chart.p;n=chart.modulus
+    target=PadicBruhatChart(p,chart.support_depth+1,
+                           chart.precision_depth+1)
+    # support then precision: f_r(pa)=f(a), zeros otherwise,
+    # then repeat values modulo p*n
+    support_vals=[Q() for _ in range(p*n)]
+    for a,v in enumerate(source):
+        support_vals[p*a]=v
+    result_A=tuple(support_vals[k%(p*n)] for k in range(p*p*n))
+    # precision then support: f_s(a)=f(a mod n); then insert at p*a
+    precision_vals=tuple(source[k%n] for k in range(p*n))
+    support_prec=[Q() for _ in range(p*p*n)]
+    for a,v in enumerate(precision_vals):
+        support_prec[p*a]=v
+    result_B=tuple(support_prec)
+    if result_A!=result_B:
+        raise ArithmeticError("Tate p-adic support/precision model cube failed")
+    Fa=local_tate_fourier(target,result_A)
+    Fb=local_tate_fourier(target,result_B)
+    if Fa!=Fb:
+        raise ArithmeticError("Tate p-adic Fourier dual cube failed")
+    return {"prime":p,"base_chart":(chart.support_depth,chart.precision_depth),
+            "terminal_chart":(target.support_depth,target.precision_depth),
+            "all_terminal_cells_verified":target.modulus,
+            "strict_source_diamond_commutes":True,
+            "dual_Fourier_diamond_commutes":True,
+            "source_map_adequate_to_full_adele":False,
+            "RH_proved":False}
+
+
+def exact_crt_product_fourier(
+        a_prime:int, a_exponent:int,
+        b_prime:int, b_exponent:int,
+        a_values:tuple[int|Q,...], b_values:tuple[int|Q,...]) -> dict:
+    """Exact Fourier tensor square at TWO genuine, distinct finite places.
+
+    CRT x=a_coord * E_a + b_coord * E_b mod N, with
+       E_a=b*inv(b mod a), E_b=a*inv(a mod b).
+    The DUAL Fourier frequency is NOT naively (k mod a,k mod b):
+       k_a=k*inv(b mod a) mod a,
+       k_b=k*inv(a mod b) mod b.
+    Those inverse transports are SOURCE-NECESSARY. A stage N which is
+    composite is a legitimate joint observer quotient, not an Euler p=N.
+
+    Computes all N Fourier coefficients by two mathematically distinct
+    routes, in exact Q(zeta_N), no floating phases or RH zero inputs.
+    """
+    _integer(a_prime,2,11);_integer(b_prime,2,11)
+    _integer(a_exponent,1,4);_integer(b_exponent,1,4)
+    if not prime(a_prime) or not prime(b_prime) or a_prime==b_prime:
+        raise AtomicDescentError("Two DISTINCT genuine finite Euler places required")
+    a,b=a_prime**a_exponent,b_prime**b_exponent
+    N=a*b
+    if N>36:
+        raise AtomicDescentError("CRT exact cyclotomic proof budget N<=36")
+    if type(a_values) is not tuple or type(b_values) is not tuple:
+        raise AtomicDescentError("Complete original residue source tables required")
+    if len(a_values)!=a or len(b_values)!=b:
+        raise AtomicDescentError("CRT source tensor factors have wrong cardinalities")
+    fa=tuple(_rational(v) for v in a_values)
+    fb=tuple(_rational(v) for v in b_values)
+    inv_b=pow(b,-1,a)
+    inv_a=pow(a,-1,b)
+    source=tuple(fa[x%a]*fb[x%b] for x in range(N))
+    global_spec=tuple(z.scale(Q(1,N)) for z in exact_dft(source))
+    disagreement_naive=0
+    for k in range(N):
+        # The correct local tensor path, transported to one common phase root.
+        ca=(k*inv_b)%a
+        cb=(k*inv_a)%b
+        tA=CyclotomicElement.scalar(N,0)
+        for u,weight in enumerate(fa):
+            tA=tA+CyclotomicElement.root(N,b*ca*u).scale(weight)
+        tA=tA.scale(Q(1,a))
+        tB=CyclotomicElement.scalar(N,0)
+        for v,weight in enumerate(fb):
+            tB=tB+CyclotomicElement.root(N,a*cb*v).scale(weight)
+        tB=tB.scale(Q(1,b))
+        if global_spec[k]!=tA*tB:
+            raise ArithmeticError("CRT source Fourier tensor transport violated")
+        # Wrong transport: naively k mod a,b, not the dual CRT idempotents.
+        wrongA=CyclotomicElement.scalar(N,0)
+        for u,weight in enumerate(fa):
+            wrongA=wrongA+CyclotomicElement.root(N,b*(k%a)*u).scale(weight)
+        wrongA=wrongA.scale(Q(1,a))
+        wrongB=CyclotomicElement.scalar(N,0)
+        for v,weight in enumerate(fb):
+            wrongB=wrongB+CyclotomicElement.root(N,a*(k%b)*v).scale(weight)
+        wrongB=wrongB.scale(Q(1,b))
+        if global_spec[k]!=wrongA*wrongB:
+            disagreement_naive+=1
+    return {"actual_distinct_Euler_primes":(a_prime,b_prime),
+            "observation_moduli":(a,b),"joint_CRT_modulus":N,
+            "correct_dual_transports":(inv_b,inv_a),
+            "global_dual_frequencies_verified":N,
+            "exact_CRT_Fourier_product":True,
+            "naive_frequency_transport_disagreement_count":disagreement_naive,
+            "joint_composite_modulus_not_a_primitive_Euler_place":True,
+            "global_adelic_Poisson_not_constructed":True,
+            "RH_proved":False}
