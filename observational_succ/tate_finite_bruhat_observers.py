@@ -252,3 +252,49 @@ def conductor_three_probe_gap():
         "global_Weil_sign_proved":False,
         "RH_proved":False,
     }
+
+
+def finite_tate_coset_discriminator(p,M,N,left,right):
+    """Finite coset tests separate ALL distinct functions in a declared chart.
+
+    f,g ∈ V_(M,N)(p) have exact coefficients c_j,d_j. If f!=g then
+    choose j with c_j!=d_j and test against indicator of
+    j/p^M+p^N Z_p. The Haar pairing difference is
+       (c_j-d_j)*p^-N !=0.
+    Every DISTINCT pair in S(Q_p) has some finite common (M,N) chart
+    and a finite such discriminator. A restricted coarse observer need
+    not have this coset probe; no empirical access is assumed.
+    """
+    chart=finite_bruhat_chart(p,M,N)
+    Q=chart["finite_complex_dimension"]
+    c=_coefficients(left,Q)
+    d=_coefficients(right,Q)
+    for j,(x,y) in enumerate(zip(c,d)):
+        if x!=y:
+            delta=(x-y)*chart["input_additive_Haar_cell"]
+            if delta==0:
+                raise ArithmeticError("Finite Haar coset test lost nonzero source")
+            return {
+                "source":"GENUINE_LOCAL_TATE_SCHWARTZ_BIRKHOFF_COSET_OBSERVER",
+                "p":p,"M":M,"N":N,
+                "all_coefficients_identical":False,
+                "first_distinguishing_coset":j,
+                "exact_coset_Haar_pairing_difference":delta,
+                "finite_witness_of_distinct_source":True,
+                "complete_coset_probe_family_jointly_separating":True,
+                "observer_assumed_to_have_physical_probe_access":False,
+                "global_Weil_positivity_inferred":False,
+                "RH_proved":False,
+            }
+    return {
+        "source":"GENUINE_LOCAL_TATE_SCHWARTZ_BIRKHOFF_COSET_OBSERVER",
+        "p":p,"M":M,"N":N,
+        "all_coefficients_identical":True,
+        "first_distinguishing_coset":None,
+        "exact_coset_Haar_pairing_difference":F(0),
+        "finite_witness_of_distinct_source":False,
+        "complete_coset_probe_family_jointly_separating":True,
+        "observer_assumed_to_have_physical_probe_access":False,
+        "global_Weil_positivity_inferred":False,
+        "RH_proved":False,
+    }
