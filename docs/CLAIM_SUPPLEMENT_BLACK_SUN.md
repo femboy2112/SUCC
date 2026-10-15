@@ -35,3 +35,28 @@ quotient 0.0006 at a=0.54 is explained by the Shannon-number mechanism (BS-A3).
 §9): interval-arithmetic certification of `λ₀(0.36) > 0`, then the
 single-prime inequality `IH-2′` via [elementary barrier BS-A2] + [rank-2
 perturbation lemma] + [PR #70 CG5 exact path spectrum].
+## Round 2 (Black Sun II, branch `research/black-sun-ii-coverage-theory-2026-10-14`)
+
+Dossier: `research/2026-10-14/BLACK_SUN_II_COVERAGE_THEORY.md`; machine receipt:
+`research/2026-10-14/BLACK_SUN_II_RECEIPT.json`. Intake covered new PRs #80–#86
+(no overlap with the coverage theory or the Goldbach crossover below).
+
+| ID | Statement (actual scope) | Status | Validation |
+| --- | --- | --- | --- |
+| BS-II-1 | Ω(u)=Re ψ(¼+iu/2)−log π strictly increasing; proof via termwise Im[1/(x+n+iy)²]<0 | PROVED LOCAL | polygamma scan + proof |
+| BS-II-2 | Ω(2π) ∈ (−1.28e−3, −9.9e−4) rigorously (series + integral-test tail); zero u₀ ∈ (2π, 6.4) | PROVED LOCAL | bracket contains direct value |
+| BS-II-3 | Archimedean phase transition a*₀ ∈ (0.370, 0.372) (certified bracket); windows ≤ a*₀ prime-free positive; λ₁ ≈ −Ω(2π) at the crossing (flagged) | TESTED MODEL | refinement-certified bracket |
+| BS-II-4 | Coverage law: deficit/budget ≤ 0.44 (peak at first window edge), → ~0.20; λ₀(Q) ≈ 0 throughout | TESTED MODEL | coverage table |
+| BS-II-5 | Phase rescue: cos(2π log 2) < 0 rescues the 2π-mode; measured factor −0.29 ≈ cos(2π log 2)×overlap; {log p} phase geometry | PROVED LOCAL (signs) + TESTED MODEL (factor) | rescue tests |
+| BS-II-6 | No-go: crude budget accounting fails by 1.778 (exact constants, a=0.549); profile weighting recovers factor 11.8; (band-min)+(prolate-mass)+(triangle-rescue) proofs cannot close | PROVED LOCAL | gap test |
+| BS-G1 | Goldbach Fourier dichotomy: F_N²-pairing = R_Λ(N); \|F_N\|²-pairing ≡ 0 exactly (no support at N); positive-definite routes through \|F\|² void | PROVED LOCAL | machine-precision checks |
+| BS-G2 | Hyperbola identity mean_G(X) = ∑Λ(n)ψ(X−n) exactly | PROVED LOCAL | 1.5e−11 |
+| BS-G3 | Binary mean = zero-detector at matched exponent (Perron/Landau double-pole imports); X^{3/2}-scale oscillation numerics | EXTERNAL THEOREM + TESTED MODEL | tracking test |
+| BS-G4 | Exact prime-power bookkeeping of R_Λ(N) (pure-pair vs contamination) | PROVED LOCAL | N=20 hand-check |
+
+**Interactions:** BS-II-3/4/5 give the first structural map of the windowed
+Weil problem's arithmetic (where the archimedean form dies, how tightly the
+primes cover, and the phase geometry of the rescue); BS-II-6 kills the crude
+budget-accounting proof family, complementing PR #86's codim-30 moment
+positivity and PR #85's negative-depth framework; BS-G1 makes the campaign
+order's |F|² warning into an exact theorem.
