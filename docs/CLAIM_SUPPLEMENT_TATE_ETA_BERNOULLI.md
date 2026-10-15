@@ -9,6 +9,7 @@
 | ETA-01 | \(\sum_{n>=1}n e^{-nt}=t^{-2}-1/12+t^2/240+O(t^4)\) | CLASSICAL exact Bernoulli/heat formal calculus | Divergent \(\sum n\) is not ordinary convergent |
 | ETA-02 | In \(E_\alpha(t)=e^{-\alpha t}\prod_{n>=1}(1-e^{-nt})\), classical eta S transform for ALL t forces \(\alpha=1/24\) | CLASSICAL S import + PROVED exact uniqueness | Modular S is not Weil-positive Gram |
 | ETA-02b | At fixed t=2pi every altered alpha passes one-point S; alpha+1 also passes T multiplier; a nonfixed clock discriminates | PROVED exact SUCC probe-gap | Checking only selfdual or T is not enough |
+| ETA-02J | At S-fixed t=2pi every alpha passes value-only test, but derivative of log S-defect is exactly -2(alpha-1/24); one first jet resolves normalization | PROVED EXACT / elementary transport derivative | Source-justified normalization is NOT original Weil positivity |
 | ETA-03 | \(q\partial_q\log\eta=1/24-\sum\sigma_1(n)q^n=E_2/24\), coefficients via exact finite q product and divisor sum | CLASSICAL + PROVED exact finite oracle | Eta product over all n is NOT original prime Euler product |
 | ETA-03S | \(F(t)=1/24-1/(2t)+\pi^2/(6t^2)-(4\pi^2/t^2)F(4\pi^2/t)\), and selfdual \(F(2\pi)=1/24-1/(8\pi)\) | CLASSICAL derived from eta S | Not a new RH zero constraint |
 | ETA-04 | \(\int F(t)t^{s-1}dt=\Gamma(s)\zeta(s)\zeta(s-1)\) on Re(s)>2 | CLASSICAL Mellin/Euler | Gamma(s) not the original completed real Gamma_R(s) |
