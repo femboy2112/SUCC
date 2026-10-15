@@ -14,6 +14,7 @@ from observational_succ.edge_carrier_reconstruction import (
     RationalSpan, SLocalization, GaussianInteger, GaussianRational,
     ProfiniteProgram, finite_clock_collision, finite_prime_partition,
     prime_projector_is_not_integer, carrier_interface_contract,
+    finite_cyclic_yoneda,
 )
 
 
@@ -59,6 +60,21 @@ class NatToIntegerEdgeTests(unittest.TestCase):
                 self.assertEqual(IntegerLoop(1,1).cyclic_target(modulus,gen),0)
         with self.assertRaises(EdgeCarrierError):
             IntegerLoop(1).cyclic_target(1,0)
+
+    def test_yoneda_all_natural_endomaps_recover_exactly_all_edges(self):
+        for modulus in range(1,7):
+            receipt=finite_cyclic_yoneda(modulus)
+            self.assertEqual(receipt["candidate_endofunctions"],modulus**modulus)
+            self.assertEqual(receipt["naturality_constrained_endofunctions"],modulus)
+            self.assertTrue(receipt["natural_transformation_to_arrow_bijection"])
+            self.assertFalse(receipt["yoneda_full_faithfulness_generalized_by_samples"])
+
+    def test_naturality_not_just_an_arbitrary_cardinality_match(self):
+        modulus=5
+        counterfeit=tuple((2*x)%modulus for x in range(modulus))
+        self.assertEqual(len(counterfeit),modulus)
+        self.assertNotEqual(counterfeit[1],(counterfeit[0]+1)%modulus)
+        self.assertEqual(finite_cyclic_yoneda(modulus)["recovered_cyclic_edges"],5)
 
     def test_a_ray_is_a_tree_not_an_integer_loop_group(self):
         self.assertEqual(RayPath(0,(1,1,-1,-1)).thin_groupoid_arrow(),(0,0))
