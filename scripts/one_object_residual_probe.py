@@ -24,6 +24,7 @@ def receipt():
     after=r.finite_relative_short(A,D,B,K,F(1),(0,))
     negative=r.finite_relative_short(((F(4,5),),),D,B,K,F(1),(0,1,2))
     shift=c.contact_shift_certificate(F(1,2),(1,-1),F(2))
+    boundary=c.contact_moment_boundary_channels(F(1))
     infinite=r.finite_residual_approaching_zero(8)
     noH1=r.missing_H1_obstruction(8)
     assert before.whole_space_positive_from_lower_schur is False
@@ -35,6 +36,7 @@ def receipt():
     assert source["kappa"]==F(369,10000)
     assert tail["gamma_cross_H1_error_bound"]==F(66447,4225)
     assert noH1["finite_response"]==8
+    assert boundary["boundary_neumann_channels"]==((29,31,F(-1,906948)),(30,32,F(-1,999180)))
     return {
         "schema":"ONE_OBJECT_RELATIVE_NEUMANN_SCHUR_V1",
         "repo_parent_pr104":"88eca261bae1381b83d018163d0945c3434a3385",
@@ -47,6 +49,10 @@ def receipt():
         "original_first_two_legendre_neumann_K":["1/30","1/210"],
         "origin_contact_delta_to_K_exact":True,
         "contact_mutation_2_adds_true_neumann_energy":"1/6",
+        "contact_mismatch_raw_legendre_K_cross_P29_P31":"-1/906948",
+        "contact_mismatch_raw_legendre_K_cross_P30_P32":"-1/999180",
+        "contact_mismatch_low_high_cross_rank":2,
+        "identity_contact_not_authenticated_from_off_origin_trace":True,
         "Connes_off_identity_sufficient_for_contact":False,
         "toy_full_high_response":"31/36",
         "toy_no_response_sign_conclusive":False,
