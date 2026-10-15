@@ -171,3 +171,95 @@ What follows is NOT that a source-compatible family of contractions across inter
 Implementation: neutral_prime_activation_pair and authentic_prime_two_activation_on_old_window; exact Fraction adversarial checks in tests/test_apollo_krein_factor.py. Synthetic b=3/4 is used for algebraic verification on old rational points; the all-b identity together with the SHA-certified 1/2<log2<1 transfers the result to genuine b=log2 symbolically, without pretending that log2 is rational.
 
 **K5 PROVED LOCAL / source-authenticated original n=2.** New operator gluing existence remains UNVERIFIED. RH PROVED: NO.
+
+
+## K6. Universal ORIGINAL-source positive Gram on a nonzero interval — constructive local Hilbert factor
+
+**Status: PROVED ANALYTIC / exact Fraction source constants, local interval only. RH PROVED: NO.** Classical Yoshida/Suzuki positivity on sufficiently short intervals already exists, so no scholarly-priority novelty is claimed. The new-to-SUCC contribution is a completely source-derived quantitative domination via the explicit positive-minus-positive K2 feature carriers, with a constructible local contraction.
+
+For any finite family x_i in [-a,a] and complex coefficients z_i, form the oriented indicator
+\[
+v(t)=\sum_i z_i I_{x_i}(t),\qquad
+I_x=\mathbf1_{(0,x)}\ (x>0),\quad I_x=-\mathbf1_{(x,0)}\ (x<0).
+\]
+Its support is contained in [-a,a], and its squared L2 norm is the Brownian Gram:
+\[
+\|v\|_2^2=\sum_{ij}\overline{z_i}z_j B(x_i,x_j).
+\]
+There is no uniform lower bound of this Brownian norm by the Euclidean norm of the coefficients (coalescent points can make it arbitrarily small).
+
+**Real Gamma OU coercivity on this exact carrier.** For j>=0, d_j=4j+1, alpha_j=d_j/2, c_j=4/d_j², and beta_j=2alpha_j c_j=4/d_j, the Fourier spectral representation of the j-th original positive source mode yields
+\[
+Q_j(v)=\beta_j\langle v,(I-R_{\alpha_j})v\rangle,
+\]
+where R_alpha is convolution with (alpha/2)exp(-alpha|t|). By the exact Schur bound on the restricted support,
+\[
+\sup_{|t|\le a}\int_{-a}^a \frac\alpha2 e^{-\alpha|t-u|}\,du
+=1-e^{-\alpha a},
+\]
+so on EVERY such v,
+\[
+\boxed{Q_j(v)\ge\frac4{d_j}e^{-\alpha_j a}\|v\|_2^2.}\tag{K6.1}
+\]
+This is an infinite-dimensional Hilbert inequality, not sampling or pointwise positivity.
+
+**Original negative source budget.** SHA-pinned original rational special-function intervals establish C_infty=-psi(1/4)+log(pi)<43/8 and log2>1/6. For 0<a<=1/12, 2a<=1/6<log2, hence NO original prime impulse is active; real Gamma, completed pole and contact are retained. Let h(x)=cosh(x/2)-1. Since h'(t)=sinh(t/2)/2, Cauchy on the same oriented v proves
+\[
+8\left|\sum_i z_i h(x_i)\right|^2
+\le4a\sinh^2(a/2)\|v\|_2^2
+\le \frac{a^3}{1-a}\|v\|_2^2,\quad 0<a<1.
+\tag{K6.2}
+\]
+The last step uses sinh(x)<=x exp(x) and exp(a)<=1/(1-a). The positive sinh-pole rank-one and all omitted Gamma modes may be dropped from the lower bound.
+
+**First independent rational bound.** Weaken the Gamma Schur kernel bound to R_alpha<=alpha a. The first eight genuine Gamma rungs give
+\[
+K_g\succeq\left(\sum_{j=0}^{7}\frac4{4j+1}
+-16a-\frac{11}{2}-\frac{a^3}{1-a}\right)B
+\]
+using C_infty<11/2. At a=1/24 the rational coefficient is exactly
+1621015801/14858625600 >1/10, and it decreases in a. Therefore ALL real 0<a<=1/24 obey K_g>=B/10 on every finite point set. No original Euler or Gamma premise is lost.
+
+**Sharper second rational bound.** Let
+\[
+P_9(t)=\sum_{k=0}^9 (-t)^k/k!,
+\quad L_{20}(a)=\sum_{j=0}^{19}\frac4{4j+1}P_9((4j+1)a/2).
+\]
+Taylor remainder proves P_9(t)<=exp(-t) for all t>=0. Also P_9'(t)=-P_8(t)<0 because the eighth even Taylor truncation P_8(t)>exp(-t)>0. Therefore L_20(a) is decreasing in a, and K6.1 gives
+\[
+K_g\succeq\left(L_{20}(a)-43/8-\frac{a^3}{1-a}\right)B.
+\]
+The rational interval source and an exact Fraction calculation of the 20x10-term Taylor sum at a=1/12 prove
+\[
+\boxed{
+ L_{20}(1/12)-43/8-
+ (1/12)^3/(1-1/12) > 1/100.
+}\tag{K6.3}
+\]
+The minimum over real 0<a<=1/12 occurs at the endpoint. Thus we obtain the ACTUAL SOURCE-IDENTIFIED ALL-FINITE-TEST result:
+\[
+\boxed{
+\sum_{ij}\overline{z_i}z_j K_g(x_i,x_j)
+\ge \frac1{100}\sum_{ij}\overline{z_i}z_j B(x_i,x_j)\ge0
+\quad \text{for every finite }x_i\in[-a,a],\ 0<a\le1/12.
+}\tag{K6.4}
+\]
+It is a Brownian-feature-norm lower bound, not a positive Euclidean coefficient spectral gap.
+
+**Actual local Hilbert factor (not a global proof).** APOLLO K2 already supplies independent original positive and negative source Hilbert feature maps Phi_plus, Phi_minus. By K6.4, the source-prescribed linear map on the algebraic span,
+\[
+T_a^0(\sum_i z_i\Phi_+(x_i))=\sum_i z_i\Phi_-(x_i),
+\]
+is well-defined and contractive, by a proven source inequality rather than by assuming RH. It extends to T_a on the positive feature Hilbert-span closure. Then
+\[
+\Psi_a(x)=(I-T_a^*T_a)^{1/2}\Phi_+(x)
+\]
+is a genuine, source-justified **positive Hilbert feature** satisfying
+\[
+\boxed{\langle\Psi_a(x),\Psi_a(y)\rangle=K_g(x,y)
+\quad\text{for every }x,y\in[-a,a],\ a\le1/12.}
+\tag{K6.5}
+\]
+The construction is abstract Hilbert completion, not a closed-form executable formula for the contraction. It follows from the independent original-source proof, so it is not circular. The K4 contraction remains UNVERIFIED for larger prime-active intervals and all a>0, which is the actual RH-hard obligation.
+
+**Reproduce:** exact SHA original constant/source checks in authentic_small_window_brownian_coercivity and authentic_sharp_small_window_hilbert_factor; tests in ApolloFullSmallIntervalPositiveKernel and ApolloUniformAuthenticPositiveHilbertFactorTests. These checks do not enumerate infinitely many point sets; the universal quantifiers are justified by the Fourier/Schur/Cauchy derivation above, while code verifies the finite rational inequalities and source preconditions. Full original Weil positivity, RH, academic novelty and global Connes spectral realization are NOT proved.
