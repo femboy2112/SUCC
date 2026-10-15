@@ -98,10 +98,13 @@ def contact_shift_certificate(a,values,c):
 
 def generalized_rayleigh_shift(G,K,vector,c):
     """Exact finite generalized source spectral offset, including sign."""
-    from .one_object_relative_residual import matrix,quadratic,psd,positive_definite,add
-    G=matrix(G,square=True);K=matrix(K,square=True)
-    c=q(c);v=tuple(q(x) for x in vector)
-    if len(G)!=len(K) or len(v)!=len(G) or not positive_definite(K) or not any(v):
+    from .one_object_relative_residual import matrix,quadratic,pd,add,ResidualSourceError
+    try:
+        G=matrix(G,square=True);K=matrix(K,square=True)
+        c=q(c);v=tuple(q(x) for x in vector)
+    except ResidualSourceError as exc:
+        raise ContactTransportError("original Neumann metric type gate") from exc
+    if len(G)!=len(K) or len(v)!=len(G) or not pd(K) or not any(v):
         raise ContactTransportError("positive genuine-like metric finite toy only")
     Kg=quadratic(K,v)
     before=quadratic(G,v)/Kg
