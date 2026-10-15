@@ -19,8 +19,34 @@ class ExactPolynomialSourceTest(unittest.TestCase):
             self.assertEqual(S.poly_eval(p,F(1)),(-1)**n)
         for n in (1,2,3,8,15,30):
             p=m.shifted_legendre(n)
-            S=m.polynomial_integral(S.poly_mul(p,p))
-            self.assertEqual(S,F(1,2*n+1))
+            norm=m.polynomial_integral(S.poly_mul(p,p))
+            self.assertEqual(norm,F(1,2*n+1))
+
+    def test_original_prime2_hinge_interval_uses_same_log2_source_monotonically(self):
+        from observational_succ import suzuki_legendre_source as S
+        lo,hi=S.tight_log2(digits=190)
+        src=S._pinned_source()
+        old=src.log2_iv()
+        self.assertLessEqual(lo,old.hi)
+        self.assertGreaterEqual(hi,old.lo)
+        self.assertGreater(lo,F(0))
+        self.assertLess(hi,F(1))
+        # ∫_b^1 (t-b)dt=(1-b)^2/2. Endpoints are TRUE
+        # monotonic rational bounds, no illicit src.I exponentiation.
+        constant=m.original_prime2_hinge_integral((F(1),))
+        self.assertEqual(constant.lo,(1-hi)**2/2)
+        self.assertEqual(constant.hi,(1-lo)**2/2)
+        # The independent linear moment has primitive
+        # 1/3-b/2+b^3/6; again it is strictly decreasing in b.
+        moment=m.original_prime2_hinge_integral((F(0),F(1)))
+        H=lambda b:F(1,3)-b/2+b**3/6
+        self.assertEqual(moment.lo,H(hi))
+        self.assertEqual(moment.hi,H(lo))
+        # Signed polynomial coefficients must reverse outward endpoints.
+        negative=m.original_prime2_hinge_integral((F(-1),))
+        self.assertEqual((negative.lo,negative.hi),
+                         (-constant.hi,-constant.lo))
+        self.assertLessEqual(negative.lo,negative.hi)
 
     def test_genuine_polynomial_exponential_moments(self):
         for alpha in (F(-1,2),F(-5,2),F(-33,2),F(1,2)):
