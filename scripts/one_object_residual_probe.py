@@ -7,6 +7,7 @@ from fractions import Fraction as F
 from observational_succ import one_object_relative_residual as r
 from observational_succ import one_object_source_residual as s
 from observational_succ import one_object_contact_neumann as c
+from observational_succ import one_object_true_derivative as t
 
 def diag(values):
     return tuple(tuple(F(values[i]) if i==j else F()
@@ -27,6 +28,10 @@ def receipt():
     boundary=c.contact_moment_boundary_channels(F(1))
     infinite=r.finite_residual_approaching_zero(8)
     noH1=r.missing_H1_obstruction(8)
+    original_dir1=t.genuine_projected_first_legendre_H1_energy(2,128,1)
+    original_dir3=t.genuine_projected_first_legendre_H1_energy(2,128,3)
+    assert original_dir1["projected_derivative_squared_upper"]<F(1,20)
+    assert original_dir3["projected_derivative_squared_upper"]<F(1,25)
     assert before.whole_space_positive_from_lower_schur is False
     assert after.whole_space_positive_from_lower_schur is True
     assert after.true_response==((F(31,36),),)
@@ -62,6 +67,11 @@ def receipt():
         "toy_H1_residual_tail_at_level8":"1/8",
         "toy_nonH1_high_resolvent_diverges":True,
         "original_gamma_tail_H1_delta_J16":"66447/4225",
+        "true_source_finiteJ_first_legendre_Q1_H1_squared_upper_lt":"1/20",
+        "true_source_finiteJ_first_legendre_Q3_H1_squared_upper_lt":"1/25",
+        "true_source_finiteJ_gamma_modes":2,
+        "true_source_first_legendre_derivative_grid":128,
+        "actual_original_30_mode_projection_uncomputed":True,
         "source_authentic_finiteJ_residual_derivative_gram_constructed":False,
         "original_suzuki_low_schur_sign_proved":False,
         "original_all_radii_positive_proved":False,
