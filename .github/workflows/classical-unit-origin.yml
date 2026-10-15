@@ -7,9 +7,13 @@ on:
   pull_request:
     paths:
       - 'observational_succ/classical_unit_origin.py'
+      - 'observational_succ/classical_haar_clock.py'
       - 'tests/test_classical_unit_origin.py'
+      - 'tests/test_classical_haar_clock.py'
       - 'scripts/classical_unit_origin_probe.py'
+      - 'scripts/classical_haar_clock_probe.py'
       - 'research/2026-10-15/CLASSICAL_UNIT_ORIGIN_RECEIPT.json'
+      - 'research/2026-10-15/CLASSICAL_HAAR_CLOCK_RECEIPT.json'
       - '.github/workflows/classical-unit-origin.yml'
   workflow_dispatch:
 
@@ -26,8 +30,12 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Exact independent classical tests
-        run: python -m unittest discover -s tests -p 'test_classical_unit_origin.py' -v
-      - name: Recompute receipt, reject drift
-        run: python scripts/classical_unit_origin_probe.py --verify
+        run: |
+          python -m unittest discover -s tests -p 'test_classical_unit_origin.py' -v
+          python -m unittest discover -s tests -p 'test_classical_haar_clock.py' -v
+      - name: Recompute receipts, reject drift
+        run: |
+          python scripts/classical_unit_origin_probe.py --verify
+          python scripts/classical_haar_clock_probe.py --verify
       - name: Verify inherited research provenance
         run: python scripts/verify_provenance.py
