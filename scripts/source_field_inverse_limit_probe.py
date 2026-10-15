@@ -9,6 +9,10 @@ import sys
 from fractions import Fraction as F
 from pathlib import Path
 
+from observational_succ.tate_finite_bruhat_observers import (
+    finite_bruhat_chart, exact_tate_finite_plancherel,
+    finite_tate_refinement_square, conductor_three_probe_gap,
+)
 from observational_succ.source_field_gluing import (
     recursive_positive_gram_stage, exact_scalar_schur_gluing,
     paired_neutral_source_birth,
@@ -38,8 +42,12 @@ def receipt():
     neutral=paired_neutral_source_birth(3,2,F(1,4))
     candidate=finite_unique_path_selector(3,11)
     solved=finite_unique_path_selector(3,12)
+    local=finite_bruhat_chart(3,0,1)
+    local_parseval=exact_tate_finite_plancherel(3,0,1,(0,1,-1))
+    local_square=finite_tate_refinement_square(3,0,1,(0,1,-1))
+    ramified=conductor_three_probe_gap()
     return {
-        "schema":"SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v4",
+        "schema":"SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v5",
         "source_schemas_are_NOT_empirical_attestation":True,
         "simple":{
             "field":s["field"],
@@ -125,6 +133,33 @@ def receipt():
             "finite_agreement_proves_bit":solved["finite_prefix_agreement_is_a_proof_of_this_bit"],
             "math_theorem":"unique path of decidable infinite binary tree is computable",
             "unknown_depth_does_not_imply_noncomputable_path":True,
+            "RH_proved":False,
+        },
+        "actual_finite_Tate_local_chart":{
+            "source":local["source"],
+            "prime":local["p"],
+            "support_M":local["support_exponent_M"],
+            "constancy_N":local["constancy_exponent_N"],
+            "finite_complex_dimension":local["finite_complex_dimension"],
+            "Haar_cell":str(local["input_additive_Haar_cell"]),
+            "input_L2_squared":str(local_parseval["input_exact_L2_squared"]),
+            "dual_L2_squared":str(local_parseval["dual_exact_L2_squared"]),
+            "Fourier_inversion_and_isometry_exact":local_parseval[
+                "isometry_certified_by_character_orthogonality"],
+            "both_refinement_Fourier_squares_commute":
+                local_square["support_refinement_dual_constancy_square"] and
+                local_square["constancy_refinement_dual_support_square"],
+            "Schwartz_Bruhat_test_direct_limit":local_square[
+                "direct_limit_of_all_finite_Schwartz_Bruhat_charts"],
+            "carrier_Qp_has_infinite_points":local["entire_local_Qp_has_infinitely_many_points"],
+            "all_complex_coefficients_computable":local[
+                "all_complex_coefficients_automatically_computable"],
+            "actual_ramified_chi3_coarse_unit_zero":
+                str(ramified["true_coarse_unit_observation"]),
+            "actual_ramified_chi3_fine_Fourier_phase":"sqrt(-3)/3",
+            "actual_ramified_chi3_phase_norm_squared":
+                str(ramified["fine_phase_norm_squared"]),
+            "full_Weil_sign_proved":False,
             "RH_proved":False,
         },
         "original_Weil_RH_frontier":{
