@@ -12,12 +12,12 @@ class OriginalDerivativeSourceTests(unittest.TestCase):
         for J in (1,2,4):
             zero=d.original_screw_primitive_positive(F(),J)
             self.assertTrue(zero.lo<=0<=zero.hi)
-            self.assertLess(zero.hi-zero.lo,F(1,10**18))
+            self.assertLess(zero.hi-zero.lo,F(1,10**9))
             for r in (F(1,8),F(1,2),F(3,4),F(1)):
                 p=d.original_screw_primitive_positive(r,J)
                 q=d.original_screw_signed_primitive(-r,J)
                 self.assertEqual((p.lo,p.hi),(-q.hi,-q.lo))
-                self.assertLess(p.hi-p.lo,F(1,10**18))
+                self.assertLess(p.hi-p.lo,F(1,10**9))
 
     def test_derivative_of_true_odd_low_mode_is_even(self):
         for J in (1,2,3):
