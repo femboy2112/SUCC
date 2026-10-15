@@ -13,6 +13,7 @@ from observational_succ.one_object_transport import (
     analytic_shift_no_go, anchored_kernel, gram_two_point_determinant,
     connes_finite_clock_trace, connes_local_fixed_point_factor,
     connes_trace_stabilization, sonin_compact_defect_countermodel,
+    sonin_log_moment_annihilator,
 )
 
 
@@ -162,6 +163,38 @@ class SoninDefectControls(unittest.TestCase):
         for bad in (0,129,True,0.5,-1):
             with self.assertRaises(OneObjectError):
                 sonin_compact_defect_countermodel(bad)
+
+
+class SoninMomentDomainTests(unittest.TestCase):
+    def test_correct_two_weight_nulls_and_wrong_parity_mutant(self):
+        c=F(1,2)
+        self.assertEqual(sonin_log_moment_annihilator(F(0),c),F(0))
+        self.assertEqual(sonin_log_moment_annihilator(F(1,2),c),F(0))
+        self.assertEqual(sonin_log_moment_annihilator(F(1),c),F(1,2))
+        self.assertEqual(sonin_log_moment_annihilator(F(-1,2),c),F(1,2))
+        self.assertNotEqual(sonin_log_moment_annihilator(F(1,2),-c),0)
+        for bad in (True,0.5,"1/2"):
+            with self.assertRaises(OneObjectError):
+                sonin_log_moment_annihilator(bad)
+
+    def test_exact_integration_by_parts_polynomial_witness(self):
+        # phi(x)=(1-x^2)^3 on [-1,1] is Cc^2;
+        # v=phi''+phi'/2. Integration by parts holds without boundary terms.
+        # Derivative = (-6*x+12*x^3-6*x^5),
+        # second derivative = (-6+36*x^2-30*x^4).
+        from mpmath import mp
+        mp.dps=65
+        phi=lambda t:(1-t*t)**3 if abs(t)<1 else mp.mpf(0)
+        derivative=lambda t: (-6*t+12*t**3-6*t**5) if abs(t)<1 else mp.mpf(0)
+        second=lambda t: (-6+36*t**2-30*t**4) if abs(t)<1 else mp.mpf(0)
+        v=lambda t:second(t)+mp.mpf("0.5")*derivative(t)
+        for lam in (F(0),F(1,2),F(1)):
+            ell=mp.mpf(lam.numerator)/lam.denominator
+            left=mp.quad(lambda t:mp.exp(ell*t)*v(t),[-1,0,1])
+            p=mp.quad(lambda t:mp.exp(ell*t)*phi(t),[-1,0,1])
+            e=sonin_log_moment_annihilator(lam)
+            right=mp.mpf(e.numerator)/e.denominator*p
+            self.assertLess(abs(left-right),mp.mpf("1e-53"))
 
 
 if __name__ == '__main__':unittest.main()
