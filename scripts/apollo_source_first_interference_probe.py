@@ -30,7 +30,7 @@ def receipt():
     complete=authentic_full_negative_feature_transfer_bound(F(1,2))
     singular=finite_feature_graph_criterion(((1,0),(0,0)),((0,0),(0,1)))
     return {
-        "schema":"SUCC_APOLLO_SOURCE_FIRST_INTERFERENCE_v1",
+        "schema":"SUCC_APOLLO_SOURCE_FIRST_INTERFERENCE_v2",
         "source_original_Euler_gamma_signed_Krein_without_zero_lookup":True,
         "synthetic_prebirth":{
             "source":"RATIONAL_CALIBRATION_NOT_TRUE_EULER",
@@ -60,6 +60,10 @@ def receipt():
             "anti_phase_prime_rayleigh":real["anti_phase_prime_rayleigh"],
             "quarter_phase_prime_rayleigh":real["quarter_phase_prime_rayleigh"],
             "wavefront_is_mathematical_distribution_not_physical_motion":True,
+            "complete_original_Weil_positive_in_all_three_phase_families":
+                real["completed_original_Weil_all_three_phase_classes_positive_by_independent_sparse_theorem"],
+            "complete_original_Weil_L2_margin_strictly_above":
+                str(real["completed_original_Weil_each_L2_margin_strictly_above"]),
         },
         "original_full_negative_graph":{
             "first_real_Gamma_L2_lower":str(gamma["Gamma0_L2_relative_lower"]),
