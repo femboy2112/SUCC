@@ -40,7 +40,7 @@ class SourceIndexedFiniteIntersectionTests(unittest.TestCase):
             ((0,1),(0,)),
             ((0,True),),
             ((0,2),),
-            (((0,),)),
+            ((0,), (0,0,0.5)),
             ("0",),
         ):
             with self.assertRaises(FieldLimitError):
