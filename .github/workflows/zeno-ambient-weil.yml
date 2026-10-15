@@ -1,0 +1,42 @@
+name: Zeno successor completion and authentic Weil source interfaces
+
+on:
+  push:
+    branches:
+      - 'research/zeno-completion-ambient-*'
+  pull_request:
+    paths:
+      - 'observational_succ/zeno_ambient_weil.py'
+      - 'tests/test_zeno_ambient_weil.py'
+      - 'scripts/zeno_ambient_weil_probe.py'
+      - 'research/2026-10-14/ZENO_AMBIENT_WEIL*'
+      - 'docs/CLAIM_SUPPLEMENT_ZENO_AMBIENT_WEIL.md'
+      - '.github/workflows/zeno-ambient-weil.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact_source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install exact SUCC research environment
+        run: python -m pip install -e '.[test]'
+      - name: Test genuine prime/Carleman compression and Zeno proof shapes
+        run: python -m unittest discover -s tests -p 'test_zeno_ambient_weil.py' -v
+      - name: Preserve inherited Alexander finite-source observer
+        run: python -m unittest discover -s tests -p 'test_wild_ambient_succ.py' -q
+      - name: Exact scientific receipt replay
+        run: python scripts/zeno_ambient_weil_probe.py --verify research/2026-10-14/ZENO_AMBIENT_WEIL_RECEIPT.json
+      - name: Verify repository source provenance
+        run: python scripts/verify_provenance.py
