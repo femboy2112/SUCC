@@ -110,3 +110,90 @@ def adaptive_profile(a,order):
       "smooth_Gamma_pole_contact_quadrature_completed":False,
       "signed_Weil_positive_proved":False,
     }
+
+
+def absolute_value_diagonal_status(a,depth,ix,iy):
+    """g_J(|x-y|) may be nonsmooth at x=y even with NO prime active.
+
+    This is independent of the genuine prime hinges. In particular,
+    original |r| contact and finite OU exp(-alpha|r|) are piecewise smooth
+    but cannot be treated as one C² formula across the diagonal.
+    """
+    x0,x1,y0,y1=box(a,depth,ix,iy)
+    lo=x0-y1
+    hi=x1-y0
+    if lo>0:return "POSITIVE_SIDE"
+    if hi<0:return "NEGATIVE_SIDE"
+    return "DIAGONAL_TRANSITION"
+
+@dataclass(frozen=True)
+class CompleteSingularLeaf:
+    depth:int
+    x:int
+    y:int
+    hilbert_start:int
+    hilbert_span:int
+    diagonal_status:str
+    true_prime_power_status:tuple[tuple[int,str],...]
+
+def operator_singularity_profile(a,order,J):
+    """Adaptive ORIGINAL finite-J Suzuki g_J: diagonal AND all true p-wavefronts.
+
+    The allowed affine/smooth-in-each-cell decomposition is only VALID
+    when |x-y| has fixed sign and each (|x-y|-log n)_+ is fixed branch.
+    The finite Gamma and pole parts are analytic in r on such cells.
+    No actual second-derivative bound, quadrature or sign is returned.
+    """
+    a=_radius(a)
+    k=order_gate(order)
+    if k>8:raise PrimeWavefrontError("budget k<=8")
+    if type(J) is not int or not 1<=J<=36:
+        raise PrimeWavefrontError("genuine finite Gamma source rung cutoff")
+    active=source.authenticated_prime_wavefront(a)
+    leaves=[]
+    def recurse(depth,ix,iy):
+        dg=absolute_value_diagonal_status(a,depth,ix,iy)
+        ps=tuple((n,hinge_status(a,depth,ix,iy,n)) for n,p in active)
+        crossing=(dg=="DIAGONAL_TRANSITION" or
+                  any(status=="TRANSITION" for n,status in ps))
+        if depth==k or not crossing:
+            d=0 if depth==0 else index(depth,ix,iy)
+            leaves.append(CompleteSingularLeaf(depth,ix,iy,
+                         d*4**(k-depth),4**(k-depth),dg,ps))
+            return
+        for dx in (0,1):
+            for dy in (0,1):
+                recurse(depth+1,2*ix+dx,2*iy+dy)
+    recurse(0,0,0)
+    leaves=tuple(sorted(leaves,key=lambda item:item.hilbert_start))
+    next_start=0
+    for leaf in leaves:
+        if leaf.hilbert_start!=next_start:
+            raise ArithmeticError("nonsmooth operator atlas overlaps/misses source")
+        next_start+=leaf.hilbert_span
+    if next_start!=4**k:
+        raise ArithmeticError("source operator quadtree incomplete")
+    transition=tuple(leaf for leaf in leaves if leaf.depth==k and
+        (leaf.diagonal_status=="DIAGONAL_TRANSITION" or
+         any(s=="TRANSITION" for _,s in leaf.true_prime_power_status)))
+    n=1<<k
+    proven_count_cap=(4+8*len(active))*n
+    if len(transition)>proven_count_cap:
+        raise ArithmeticError("original source finite wavefront codimension bound failed")
+    total_area=sum(((2*a/(1<<v.depth))**2 for v in leaves),Q())
+    if total_area!=(2*a)**2:
+        raise ArithmeticError("finite Suzuki source carrier area changed")
+    return {
+        "source":"GENUINE_SUZUKI_G_J_DIAGONAL_PLUS_PRIME_WAVEFRONTS",
+        "radius":a,"order":k,"original_Gamma_rungs":J,
+        "original_prime_powers":active,
+        "ordered_leaves":leaves,
+        "leaf_count":len(leaves),
+        "uniform_grid_cells":4**k,
+        "finest_transition_cell_count":len(transition),
+        "analytic_codimension_one_upper":proven_count_cap,
+        "total_source_area":total_area,
+        "all_declared_nonsmooth_loci_classified":True,
+        "rigorous_C2_quadrature_done":False,
+        "original_Weil_operator_positive":False,
+    }
