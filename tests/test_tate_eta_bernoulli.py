@@ -10,6 +10,8 @@ from observational_succ.tate_eta_bernoulli import (
     formal_dirichlet_log_derivative, eta_eisenstein_prime_transducer,
     sigma_one_dirichlet_tail_majorant, primary_source_interface_status,
     modular_discriminant_formal_passport, completed_two_critical_track_passport,
+    mobius_exact, eta_mobius_heat_transducer,
+    gaussian_linear_heat_positive_mixing_no_go,
 )
 
 
@@ -176,6 +178,51 @@ class FullModularVsEisensteinSourceFirewall(unittest.TestCase):
                 modular_discriminant_formal_passport(N)
 
 
+
+class MobiusEtaToTateRealHeat(unittest.TestCase):
+    def test_direct_all_coefficient_linear_heat_identity(self):
+        out=eta_mobius_heat_transducer(128)
+        self.assertTrue(out["exact_heat_identity"])
+        self.assertTrue(all(c==1 for c in out["positive_output_coefficients"]))
+        self.assertEqual(out["wrong_coefficient_indices"],())
+        self.assertTrue(out["operator_has_signed_Mobius_weights"])
+        self.assertFalse(out["source_positive_operator_on_every_positive_input_proved"])
+        self.assertFalse(out["Gaussian_real_place_positivity_preserved"])
+        self.assertFalse(out["RH_proved"])
+
+    def test_true_Mobius_signs_not_a_fake_nonnegative_source(self):
+        self.assertEqual(tuple(mobius_exact(n) for n in range(1,13)),
+                         (1,-1,-1,0,-1,1,-1,0,0,1,-1,0))
+        with self.assertRaises(EtaTransportError):
+            mobius_exact(0)
+        with self.assertRaises(EtaTransportError):
+            mobius_exact(True)
+
+    def test_fake_six_is_detected_in_actual_heat_time(self):
+        good=eta_mobius_heat_transducer(24)
+        bad=eta_mobius_heat_transducer(24,True)
+        self.assertEqual(good["positive_output_coefficients"][5],1)
+        self.assertEqual(bad["positive_output_coefficients"][5],2)
+        self.assertIn(6,bad["wrong_coefficient_indices"])
+        self.assertFalse(bad["exact_heat_identity"])
+        self.assertFalse(bad["RH_proved"])
+
+    def test_gaussian_heat_cannot_be_positive_source_blind_mixing(self):
+        no=gaussian_linear_heat_positive_mixing_no_go()
+        self.assertEqual(no["contradiction_at_labels"],(1,2,3))
+        self.assertEqual(no["gaussian_ratio_exact"],"exp(2*pi*u)>1 for u>0")
+        self.assertFalse(no["source_blind_positive_laplace_mixing"])
+        self.assertFalse(no["source_indexed_or_signed_transport_ruled_out"])
+        self.assertFalse(no["RH_proved"])
+
+    def test_disallowed_mutation_inputs(self):
+        for n in (0,1,5,True,513,1.0):
+            with self.assertRaises(EtaTransportError):
+                eta_mobius_heat_transducer(n)
+        with self.assertRaises(EtaTransportError):
+            eta_mobius_heat_transducer(8,1)
+
+
 class IndependentClassicalNumericHoldouts(unittest.TestCase):
     """Separate independent numerical calibrations, never rigorous proof."""
 
@@ -196,6 +243,19 @@ class IndependentClassicalNumericHoldouts(unittest.TestCase):
             wronglhs=eta_heat(t,wrong)
             wrongrhs=mp.sqrt(2*mp.pi/t)*eta_heat(td,wrong)
             self.assertGreater(abs(wronglhs-wrongrhs),mp.mpf("1e-3"))
+
+    def test_independent_positive_output_of_signed_Mobius_heat_source(self):
+        import mpmath as mp
+        with mp.workdps(75):
+            t=mp.mpf(2)
+            source=mp.fsum(
+                mobius_exact(m)*m*
+                mp.fsum(sigma_one(n)*mp.exp(-n*m*t) for n in range(1,128))
+                for m in range(1,128)
+            )
+            simple=1/mp.expm1(t)
+            self.assertLess(abs(source-simple),mp.mpf("1e-70"))
+            self.assertGreater(source,0)
 
     def test_selfdual_Lambert_series_exact_modular_value(self):
         """This is a numeric holdout; analytical authority is classical eta S."""
