@@ -179,3 +179,61 @@ The exact standalone pure-math tests, original-source hash replay adapter, deter
 The strongest exact result is the **real source-indexed 15+15 regularized reduction**, plus a quantitative *one-sided* true-Gamma Schur bound and a proved instrument-resolution wall. Full RH is not proved, because the source low matrix and its high resolvent have not been certified to yield nonnegativity as λ↓0, nor has positivity at all radii a>0 been established.
 
 **Primary literature:** Suzuki, *Weil's quadratic form via the screw function* (arXiv:2606.09096v3); classical Anderson & Trapp, *Shorted Operators. II*, SIAM Journal on Applied Mathematics 28 (1975); Legendre/Galerkin standard polynomial identities. These imports are credited and distinguished from the source-specific combination.
+
+## Second checkpoint — analytic original-source Legendre blocks without a spatial cell grid (SM-10–13)
+
+**Status:** PROVED LOCAL algebra, source-true interval evaluation *conditional on pinned PR #85 module*, independent 55-digit numerical source calibration. **No positivity of the unrestricted Weil form.** New module: `observational_succ/suzuki_legendre_source.py`; exact `tests/test_suzuki_legendre_source.py`; deterministic `scripts/suzuki_direct_legendre_probe.py`; independent source oracle `scripts/suzuki_direct_legendre_oracle.py`. This is a second checkpoint on the same branch and is not claimed to solve the high resolvent or the λ→0 sign.
+
+### SM-10: exact analytic OU matrix with only two transcendental factors
+
+For `a,alpha` strictly positive rationals and each integer Legendre index `i,j>=1`, set `u_i(x)=P_i(x/a)` supported on `[-a,a]`. Define the genuine full-line exponentially decaying OU kernel `R_alpha(x,y)=exp(-alpha*abs(x-y))`. Then
+
+\[
+\boxed{\langle u_i,R_\alpha u_j\rangle
+       =A_{ij}(a,\alpha)+B_{ij}(a,\alpha)e^{-2\alpha a},\quad
+       A_{ij},B_{ij}\in\mathbb Q.}\tag{SM-10}
+\]
+
+The proof is explicit: for rational-coefficient polynomial `p`, define the unique polynomial antiderivatives `F_+`, `F_-` satisfying `d(e^(+alpha*x)F_+)/dx=e^(+alpha*x)p(x)` and the analogous negative exponential. They are finite sums `F_±(x)=sum_{k=0}^deg(p) (-1)^k p^(k)(x)/(±alpha)^(k+1)`. Integrate the kernel on the two triangles `x>=y` and `x<y`, substitute the primitive polynomials, and evaluate only at `x,y=±a`. The products of `exp(±alpha*a)` cancel except for `exp(-2alpha*a)`. Reflection proves `A=B=0` when `i+j` is odd. The two numbers are **exact rational functions in a,alpha**, so rigorous interval evaluation of a genuine Suzuki Gamma rung requires only a source-certified interval for `exp(-2alpha*a)` rather than two-dimensional floating quadrature.
+
+The original Gamma term in Suzuki's `g_J` has `d_j=4j+1`, `alpha_j=d_j/2` and on mean-zero tests contributes **exactly** `(4/d_j²) R_(alpha_j)`, PSD. Thus the original Gamma low block is the sum of the SM-10 analytic entries, and the **omitted** rungs are exactly the already proved positive `T_J`. Any ancillary alternative Gamma ladder is excluded.
+
+### SM-11: the true p=2 prime hinge is a polynomial in its logarithmic phase
+
+For 0≤t≤2a define the rational cross-correlation polynomial
+
+\[
+\rho_{ij}(t)=\int_{-a}^{a-t}[u_i(y+t)u_j(y)+u_j(y+t)u_i(y)]dy.
+\]
+
+Polynomial expansion and binomial integration show `rho_ij∈Q[t]`, with identically zero for opposite parity. At the actual first-prime window `a=1/2`, only n=2 has genuine weight `c_2=log(2)/sqrt(2)`, and the original source **positive hinge in derivative coordinates** contributes
+
+\[
+\boxed{G^{(2)}_{ij}=\frac{\log2}{\sqrt2}\,P_{ij}(\log2),
+  \qquad P_{ij}(b)=\int_b^{2a}(t-b)\rho_{ij}(t)dt\in\mathbb Q[b].}\tag{SM-11}
+\]
+
+This is valid only because `log2<2a`; general prime activation requires checking the actual certified source inequality. The exact coefficients of `P` are rational, and `P(2a)=P'(2a)=0`; `P(0)=-2K_ij` by the Neumann inverse contact identity. The **true** coefficient and first-prime activation are authenticated against the immutable #85 source. A fake independent 6 or missing prime cannot be substituted by calling the generic polynomial function.
+
+### SM-12: completed pole and contact remain in the analytic low matrix
+
+The `(C_G/2)|x-y|` contact gives `-C_G K_ij`, since `∫∫|x-y|u_i(x)u_j(y)dxdy=-2K_ij` for mean-zero Legendre modes. The original `-4(e^(t/2)+e^(-t/2)-2)` pole gives `-8 c_i c_j+8 s_i s_j` where `c_i=∫u_i(x)cosh(x/2)dx`, `s_i=∫u_i(x)sinh(x/2)dx`, both computable from exact polynomial exponential primitives and certified source intervals. **One** real place, actual half-density, original signed poles and contact; no supplementary positive covariance.
+
+Combining all source pieces yields, for `a=1/2`, exact rational-interval entries of the authentic **Gamma-truncated** compact Suzuki operator on all low Legendre modes,
+
+\[
+\boxed{
+  (A_J)_{ij}= \sum_{j'=0}^{J-1}\frac4{(4j'+1)^2}
+   [A_{i j}(a,\alpha_{j'})+B_{i j}(a,\alpha_{j'})e^{-2\alpha_{j'}a}]
+  -C_G K_{ij}-8c_i c_j+8s_i s_j
+  +\frac{\log2}{\sqrt2}P_{ij}(\log2).
+}\tag{SM-12}
+\]
+
+**Warning:** `A_J` is the low compressed *signed source operator*, not the full Feshbach Schur matrix; the high resolvent and true `B` cross are still required. The omitted Gamma tail remains positive on the whole L²_0, so the source one-sided Loewner ordering from the preceding checkpoint remains valid. Exact analytic source evaluation avoids the **particular** `≥11/N` spatial-cell Lipschitz budget and needs `O(Jr²)` analytic source terms for r low modes. Rigorous interval tightness at high Legendre degree has not yet been established because `A+B exp(-2alpha*a)` can undergo severe cancellation, and the source interval `1e-32` precision may be insufficient. Never claim certified unshifted positivity from broad intervals.
+
+### SM-13: independent source reconstruction and falsification controls
+
+The new pure rational suite checks: orthogonality/parity, `P_n` endpoints, the rational OU coefficients, cross-correlation symmetry, prime hinge double zeros at activation, exact `P(0)=-2K`, and the contact sign for every index through 10. The separately coded numerical holdout at 55 digits integrates **Suzuki's original `g_J` directly** against the independent polynomial correlation and compares it to SM-12 on `(1,1),(1,2),(1,3),(2,2),(2,4),(3,3)` for `J=1,2,3`: all 18 comparisons agree to better than `2e-48`. These are **numerical diagnostics only**, not rigorous spectral lower bounds. The `J=3` original-source diagonal `(1,1)` is numerically about `−0.00346754`, while after enough more authentic **positive** rungs it becomes positive, illustrating why a Gamma-truncated negative value cannot be attributed to the infinite completed Weil operator. Parent source-integrated `rank=3,J=2` exact rational interval matrix and fail-closed authentication are mandatory in GitHub Actions on both Python versions.
+
+**Unresolved:** certify the *whole* 30×30 analytic low source matrix at useful J with sufficiently tight intervals and construct a *finite-source high resolvent/cross response* on the correct mean-zero L² space. Prove both 15-dimensional low Schur blocks nonnegative **for all λ>0**, or find a strictly source-certified negative witness. Passing a low-block test alone is not an RH result or an original-source sign verdict.
