@@ -9,6 +9,9 @@ import json
 import sys
 from pathlib import Path
 from fractions import Fraction as F
+from observational_succ.tate_four_low_compensator import (
+    source_rank_four_positive_completion,
+)
 from observational_succ.tate_weighted_bessel_four_schur import (
     source_weighted_four_moment_certificate,true_four_low_suzuki_interface,
     weighted_Bessel_leakage_upper,
@@ -22,10 +25,11 @@ def receipt():
     d=source_weighted_four_moment_certificate()
     s=true_four_low_suzuki_interface()
     old=original_seven_moment_weil_certificate()
+    polar=source_rank_four_positive_completion()
     # This exact source parser never serializes the huge original signed
     # spectral fractions. Their byte-level SHA256 is compared instead.
     return {
-        "schema":"SUCC_TATE_WEIGHTED_BESSEL_FOUR_2026_10_15_v1",
+        "schema":"SUCC_TATE_WEIGHTED_BESSEL_FOUR_2026_10_15_v2",
         "source":"SHA_PINNED_ORIGINAL_ZETA_TATE_WEIL_SUZUKI",
         "original_suzuki_git_blob":d["source_suzuki_blob"],
         "radius":"1/2",
@@ -56,6 +60,23 @@ def receipt():
             "true_zero_shift_R0_strict_upper":str(s["genuine_R0_zero_shift_norm_upper"]),
             "actual_low_S0_PSD_proved":False,
             "full_first_prime_all_test_positive_proved":False,
+        },
+        "source_rank_four_positive_completion":{
+            "source":polar["source"],
+            "true_source_compensator":str(polar["source_rank_four_counterterm"]),
+            "source_negative_low_short_coarse_bound":
+                str(polar["coarse_source_low_short_negative_bound"]),
+            "modified_original_suzuki_strict_low_projection_gap":
+                str(polar["strict_modified_low_L2_gap"]),
+            "actual_modified_G_plus_counterterm_P4_PSD":
+                polar["G_plus_counterterm_P4_PSD_proved"],
+            "source_negative_Morse_index_upper":
+                polar["source_negative_Morse_index_at_most"],
+            "source_nullspace_dimension_upper":
+                polar["source_nullspace_dimension_at_most"],
+            "unmodified_original_Weil_PSD_proved":
+                polar["original_complete_Weil_all_test_positive_proved"],
+            "RH_proved":False,
         },
         "previous_rank_seven_high_K_relative_bound":"1/16",
         "rank_three_proof_failure_is_NOT_an_original_negative_test":True,
