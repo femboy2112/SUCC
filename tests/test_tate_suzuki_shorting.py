@@ -114,6 +114,17 @@ class OriginalGammaSource(unittest.TestCase):
             with self.assertRaises(ShortingContractError):
                 first_window_derivative_l1_cap(a)
 
+    def test_second_variation_original_signed_j_rungs(self):
+        from observational_succ.tate_suzuki_shorting import (original_first_prime_derivative_bv_bound,
+             genuine_low_legendre_sup_coarse)
+        self.assertEqual(original_first_prime_derivative_bv_bound(3),
+                         F(16)+8*(F(1)+F(1,5)+F(1,9)))
+        self.assertEqual([genuine_low_legendre_sup_coarse(k) for k in (1,2,3,4)],
+                         [F(1),F(2),F(4),F(17,2)])
+        for bad in (0,-1,21):
+            with self.assertRaises(ShortingContractError):
+                original_first_prime_derivative_bv_bound(bad)
+
     def test_gamma_rungs_decay(self):
         prev=original_gamma_derivative_l1_tail(1)
         for j in range(2,70):
@@ -323,6 +334,21 @@ class IntegratedOriginalSource(unittest.TestCase):
         for bad in (F(1,2),-F(1,2),F(3,4)):
             with self.assertRaises(ShortingContractError):
                 authentic_suzuki_legendre_derivative_point(1,bad,3)
+
+    def test_real_source_derivative_energy_quad(self):
+        try:
+            from observational_succ import suzuki_legendre_source
+        except ImportError:
+            self.skipTest('genuine interval source only in complete SUCC checkout; mandatory CI')
+        from observational_succ.tate_suzuki_shorting import original_suzuki_legendre_derivative_energy
+        got=original_suzuki_legendre_derivative_energy(1,3,4)
+        self.assertEqual(got['source'],'ACTUAL_ZETA_SUZUKI_G_J_FIRST_PRIME')
+        self.assertGreaterEqual(got['finite_J_energy_upper'],got['finite_J_energy_lower'])
+        self.assertGreater(got['infinite_true_G_derivative_energy_upper'],0)
+        self.assertFalse(got['true_high_projected_cross_energy_certified'])
+        self.assertFalse(got['original_all_test_weil_positive'])
+        with self.assertRaises(ShortingContractError):
+            original_suzuki_legendre_derivative_energy(1,3,1)
 
     def test_real_original_signed_low_legendre_passport(self):
         # Same true source must carry both signs as the Gamma rung count changes.

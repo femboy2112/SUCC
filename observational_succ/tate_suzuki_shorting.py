@@ -517,3 +517,76 @@ def authentic_suzuki_legendre_derivative_point(k, x, J, *, a=F(1,2)):
         gamma=L.interval_add(gamma,single)
     total=L.interval_add(L.interval_add(pole,contact),L.interval_add(prime,gamma))
     return L.source_interval_round(source,total)
+
+
+def original_first_prime_derivative_bv_bound(J):
+    """True g_J'' is a signed finite measure on [-1,1].
+
+    Its total variation has source-justified upper bound
+    V_J=16+8 sum_{j<J}1/(4j+1); all terms include original poles,
+    contact, genuine prime-2 atoms and genuine J Gamma rungs.
+    """
+    positive_integer(J)
+    if J > 20:
+        raise ShortingContractError("research g_J'' finite variation budget J<=20")
+    return F(16)+F(8)*sum((F(1,4*j+1) for j in range(J)),F())
+
+
+def genuine_low_legendre_sup_coarse(k):
+    """Exact polynomial coefficient sup bound on [-1/2,1/2].
+
+    P_k(2x) for k=1..4; sum |coeff_i| (1/2)^i is a sound
+    rational L-infinity bound, does not assume a floating Legendre oracle.
+    """
+    if type(k) is not int or k not in (1,2,3,4):
+        raise ShortingContractError("k=1..4 research first-prime Legendre bound")
+    coefficients={1:(F(),F(2)),
+                  2:(-F(1,2),F(),F(6)),
+                  3:(F(),-F(3),F(),F(20)),
+                  4:(F(3,8),F(),-F(15),F(),F(70))}[k]
+    return sum((abs(c)*F(1,2)**i for i,c in enumerate(coefficients)),F())
+
+
+def original_suzuki_legendre_derivative_energy(k,J,grid=8):
+    """AUTHENTIC SOURCE exact rational energy enclosure, not sample-only.
+
+    Finite J genuine signed ∫ |(G_J P_k)'|² dx on (-1/2,1/2)
+    bounded via finite midpoint source INTERVALS plus a proved global
+    Lipschitz constant V_J||P_k||_infinity for the derivative; the
+    variation measure g_J'' includes correct contact/prime atoms.
+
+    For untruncated true G, Gamma tail in W^{1,1} gives
+      ||(G P_k)'||² <= 2*upper_J + 2*eta_J²/(2k+1),
+    an exact source-derived, conservative Hilbert energy certificate.
+    This is NOT yet ||(P_H G P_k)'||² (the Schur cross residual).
+    """
+    if type(grid) is not int or not 2 <= grid <= 64:
+        raise ShortingContractError("finite first-prime quadrature grid 2..64")
+    verify_original_suzuki_source()
+    sup=genuine_low_legendre_sup_coarse(k)
+    lip=original_first_prime_derivative_bv_bound(J)*sup
+    h=F(1,grid)
+    wiggle=lip*h/2
+    lo_energy=F();hi_energy=F()
+    for i in range(grid):
+        x=-F(1,2)+F(2*i+1,2*grid)
+        v=authentic_suzuki_legendre_derivative_point(k,x,J)
+        low,high=v.lo-wiggle,v.hi+wiggle
+        umax=max(abs(low),abs(high))
+        if low>0:lmin=low
+        elif high<0:lmin=-high
+        else:lmin=F()
+        lo_energy+=h*lmin*lmin
+        hi_energy+=h*umax*umax
+    eta=original_gamma_derivative_l1_tail(J)
+    true_upper=2*hi_energy+F(2)*eta*eta/F(2*k+1)
+    return {
+        "source":"ACTUAL_ZETA_SUZUKI_G_J_FIRST_PRIME",
+        "k":k,"J":J,"grid":grid,
+        "derivative_Lipschitz_rational":lip,
+        "finite_J_energy_lower":lo_energy,
+        "finite_J_energy_upper":hi_energy,
+        "infinite_true_G_derivative_energy_upper":true_upper,
+        "true_high_projected_cross_energy_certified":False,
+        "original_all_test_weil_positive":False,
+    }

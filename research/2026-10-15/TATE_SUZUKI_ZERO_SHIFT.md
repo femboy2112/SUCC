@@ -292,3 +292,43 @@ All terms are rational polynomials in `x` and `a` plus exponentials of *nonnegat
 The exact source-first CI must verify these numerical-looking *rational inequalities* through the actual source intervals and fail if it cannot. The `P_2` derivative at zero is zero by reflection; the interval implementation must contain zero. No low-sector signed eigenvalue, nor any original unshifted Schur sign, follows from these point tests.
 
 **Actual next source step:** use the same polynomial/exponential piecewise structure to integrate products of the *high-projected derivatives* over the full interval, with exact breakpoints at `±(a−log2)`. Pair this finite-J Gram enclosure with TS-D to produce the genuine `E` matrix, then evaluate its source-certified shorted sign jointly with `M` for optimized high trials `Z`. Simply sampling the derivative at many Hilbert curve points without a uniform source envelope is not a proof of its `L²` norm.
+
+## 11. THIRD ROUND: all-test **actual** derivative energy enclosure via variation and finite source addresses (TS-14)
+
+The pointwise original-source derivative in §10 now extends to a **rigorously enclosed integral** of its square for low Legendre inputs, without guessing the interpolation error from samples. For `J<∞`, `g_J''` is a finite signed measure in the distributional sense on `(-1,1)`:
+
+\[
+ g_J''(t)=-(e^{t/2}+e^{-t/2})+
+ \sum_{j=0}^{J-1}e^{-(4j+1)|t|/2}
+ +\Big(C_G-4\sum_{j<J}\frac1{4j+1}\Big)\delta_0
+ +\frac{\log2}{\sqrt2}(\delta_{\log2}+\delta_{-\log2}).
+\]
+
+The bound uses *only* the authentic pole, prime, contact and Gamma terms: `∫_-1^1(e^{t/2}+e^{-t/2})dt<6`, `C_G<8`, `2log2/sqrt2<2`, and `∫_-1^1 e^{-d|t|/2}dt≤4/d`. Thus the total variation admits the **rational all-J** estimate
+
+\[
+ \boxed{\|g_J''\|_{\mathrm{TV}(-1,1)}
+ <V_J:=16+8\sum_{j=0}^{J-1}\frac1{4j+1}.}
+\]
+
+For `p(x)=P_k(2x)1_{(-1/2,1/2)}(x)`, the full-line zero extension is bounded by its *explicit rational polynomial coefficient* norm `Q_k=sum_i|p_i|2^-i` (`Q_1=1,Q_2=2,Q_3=4,Q_4=17/2`). Distributional convolution gives a whole-interval Lipschitz bound on the genuine derivative
+
+\[
+ \operatorname{Lip}[(G_Jp)']\le V_J Q_k.
+\]
+
+Take the finite exact mesh of `N` equal cells of length `h=1/N`, with rational midpoint `x_i`. Let `[\ell_i,u_i]` be an outward **authentic-source** interval for `(G_Jp)'(x_i)` from §10. Every point of that cell is contained in the (rational) interval `[\ell_i−V_JQ_kh/2,u_i+V_JQ_kh/2]`. The exact rational per-cell minima and maxima of `|·|²`, multiplied by `h` and summed, therefore give **a legitimate two-sided whole-interval bound**
+
+\[
+ \boxed{L_{k,J,N}\le\int_{-1/2}^{1/2}|(G_Jp)'(x)|^2dx\le U_{k,J,N}.}
+\]
+
+This is a quantifier-complete finite-to-global Hilbert/Zeno cell certificate: the local source point values do **not** supply the global claim without the *independent source-derived variation bound*. Both original polar signs, prime-2 source kink and real Gamma remain. The current pure-rational engine supports `1≤k≤4`, `1≤J≤20`, `2≤N≤64`, with a mandatory integrated exact original-source test at `(k,J,N)=(1,3,4)`. It returns the true source form's **untruncated** derivative bound using the separately proved L¹ Gamma derivative remainder and `||P_k(2x)||²₂=1/(2k+1)`:
+
+\[
+ \boxed{\|(G P_k(2x))'\|_2^2
+ \le 2U_{k,J,N}+\frac{2\eta_J^2}{2k+1},\qquad
+ \eta_J=\frac2{4J+1}+\frac8{(4J+1)^2}.}
+\]
+
+This uses the elementary inequality `(u+v)²≤2u²+2v²`; it is conservative and can be loose. It is already a **genuine source-derived whole-test-functional analytic** bound for one low mode rather than a pointwise sample. It does **not** yet bound `||(P_HG P_k)'||²`: obtaining the necessary source-projected 30-dimensional derivative Gram requires combining these exact derivative cell envelopes with source-interval projection coefficients (the source low Legendre blocks), and then canceling the polynomial low component *before* squaring/integrating. Replacing that cancellation with the global bound 961 can be astronomically wasteful. No claim of nonnegative shorted matrix or RH is made.
