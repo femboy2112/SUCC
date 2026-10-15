@@ -11,6 +11,7 @@ from pathlib import Path
 from fractions import Fraction as F
 from observational_succ.tate_four_low_compensator import (
     source_rank_four_positive_completion,
+    exact_four_source_moment_polarization,
 )
 from observational_succ.tate_weighted_bessel_four_schur import (
     source_weighted_four_moment_certificate,true_four_low_suzuki_interface,
@@ -26,10 +27,18 @@ def receipt():
     s=true_four_low_suzuki_interface()
     old=original_seven_moment_weil_certificate()
     polar=source_rank_four_positive_completion()
+    test_moment_energies=[
+        exact_four_source_moment_polarization(tuple(F(1) if k==j else F()
+                                                    for k in range(4)))[
+            "L2_projection_P4_source_energy_exact"]
+        for j in range(4)
+    ]
+    if test_moment_energies != [75,8820,25200,705600]:
+        raise ArithmeticError("Original Legendre four-test-moment coupling changed")
     # This exact source parser never serializes the huge original signed
     # spectral fractions. Their byte-level SHA256 is compared instead.
     return {
-        "schema":"SUCC_TATE_WEIGHTED_BESSEL_FOUR_2026_10_15_v2",
+        "schema":"SUCC_TATE_WEIGHTED_BESSEL_FOUR_2026_10_15_v3",
         "source":"SHA_PINNED_ORIGINAL_ZETA_TATE_WEIL_SUZUKI",
         "original_suzuki_git_blob":d["source_suzuki_blob"],
         "radius":"1/2",
@@ -76,6 +85,18 @@ def receipt():
                 polar["source_nullspace_dimension_at_most"],
             "unmodified_original_Weil_PSD_proved":
                 polar["original_complete_Weil_all_test_positive_proved"],
+            "RH_proved":False,
+        },
+        "explicit_Weil_four_moment_polarization":{
+            "moment_indices":[0,1,2,3],
+            "derivative_Legendre_source_pairings":[
+                "-2*m0","-12*m1","3*m0-60*m2","30*m1-280*m3"
+            ],
+            "squared_unnormalized_projection_coefficients":[3,5,7,9],
+            "standard_basis_source_moment_energies":[str(x) for x in test_moment_energies],
+            "positive_compensator":"65/16",
+            "counterterm_zero_iff_all_four_moments_zero":True,
+            "original_unmodified_Weil_positive_from_counterterm":False,
             "RH_proved":False,
         },
         "previous_rank_seven_high_K_relative_bound":"1/16",
