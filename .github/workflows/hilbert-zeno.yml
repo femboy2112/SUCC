@@ -1,0 +1,77 @@
+name: Hilbert Zeno exact source and compact global certificates
+
+on:
+  push:
+    branches:
+      - 'research/hilbert-curve-cube-*'
+    paths:
+      - 'observational_succ/hilbert_zeno.py'
+      - 'tests/test_hilbert_zeno.py'
+      - 'scripts/hilbert_zeno_probe.py'
+      - 'research/2026-10-14/HILBERT_ZENO*'
+      - 'docs/CLAIM_SUPPLEMENT_HILBERT_ZENO.md'
+      - 'docs/HILBERT_ZENO_ROADMAP.md'
+      - '.github/workflows/hilbert-zeno.yml'
+  pull_request:
+    paths:
+      - 'observational_succ/hilbert_zeno.py'
+      - 'tests/test_hilbert_zeno.py'
+      - 'scripts/hilbert_zeno_probe.py'
+      - 'research/2026-10-14/HILBERT_ZENO*'
+      - 'docs/CLAIM_SUPPLEMENT_HILBERT_ZENO.md'
+      - 'docs/HILBERT_ZENO_ROADMAP.md'
+      - '.github/workflows/hilbert-zeno.yml'
+  workflow_dispatch:
+
+jobs:
+  source-hilbert-zoo:
+    name: Exact Hilbert / Zeno source certificates (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Immutable imported source provenance
+        run: python scripts/verify_provenance.py
+      - name: Exact Hilbert finite-grid, prefix, compact operator and negative controls
+        run: PYTHONPATH=. python -m unittest tests.test_hilbert_zeno -v
+      - name: Verify integrated actual SUCC source adapter
+        run: |
+          PYTHONPATH=. python - <<'PY'
+          from fractions import Fraction as F
+          from observational_succ.hilbert_zeno import (
+              hilbert_source_bridge_check, exact_neumann_legendre_2x2,
+              normalized_neumann_legendre_2x2, SourceKey,
+          )
+          from observational_succ.suzuki_moment_schur import low_inverse_neumann
+          from observational_succ.zeno_certificate import Stamp
+          assert hilbert_source_bridge_check(F(1,2))
+          assert low_inverse_neumann(F(1,2),2) == exact_neumann_legendre_2x2(F(1,2))
+          assert normalized_neumann_legendre_2x2(F(1,2))[0][0] == F(1,10)
+          assert SourceKey.from_zeno_stamp(Stamp('s',2,'e_j','H1')) == SourceKey('s',2,'e_j','H1')
+          PY
+      - name: Replay immutable exact mathematical receipt
+        run: PYTHONPATH=. python scripts/hilbert_zeno_probe.py --verify research/2026-10-14/HILBERT_ZENO_RECEIPT.json
+      - name: Keep global sign and physical-omega firewall
+        run: |
+          python - <<'PY'
+          import json
+          with open('research/2026-10-14/HILBERT_ZENO_RECEIPT.json') as f:
+              r=json.load(f)
+          assert r['base_main']=='03db44203147a7b28d445bb9f970fa71360e78c4'
+          assert r['RH_PROVED'] is False
+          assert r['original_weil_all_test_sign_proved'] is False
+          assert r['nontrivial_zero_coordinates_used'] is False
+          assert r['physical_observation_executed'] is False
+          assert r['full_Lean_formalization_claimed'] is False
+          assert r['source_prefix_completion']['exact_parent_child_4ary_blocks_level3'] is True
+          assert r['source_prefix_completion']['omega_physical_actualization'] is False
+          assert r['hilbert_cube']['hidden_at_first_d4'] is True
+          assert r['hilbert_cube']['shallow_global_positive_certified'] is False
+          assert r['original_Suzuki_source_metric_SEPARATE_FROM_SIGNED_G']['signed_Weil_G_source_matrix_constructed'] is False
+          PY
