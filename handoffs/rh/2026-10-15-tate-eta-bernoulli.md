@@ -43,6 +43,8 @@ F(t)=\sum_{n\ge1}\sigma_1(n)e^{-nt},
 \]
 which yields \(F(2\pi)=1/24-1/(8\pi)\). All are classical identities; new-to-SUCC integration and adversarial tests are not claims of academic priority.
 
+**Second structural obstruction (exact, no zero lookup):** Eta's 24th power is the cusp discriminant `Delta=q-24q²+252q³-...` with Ramanujan tau coefficients, whereas the *logarithmic derivative* is Eisenstein E2 with sigma1 coefficients. These are distinct L-series and cannot be identified. Furthermore `X(s)=xi(s)xi(s-1)` obeys `X(2-s)=X(s)`, but each abstract xi zero rho contributes two shifted families rho and 1+rho; even assuming RH these are tracks Re=1/2 and 3/2, not the symmetry center 1. Any putative RH-positive single-track form must first lawfully remove the shifted arithmetic channel.
+
 ## What is STILL RH-hard
 
 The completed zeta real Gamma \(\Gamma_{\mathbb R}(s)=\pi^{-s/2}\Gamma(s/2)\), half-density, two completed poles, contact \(C_\infty=-\psi(1/4)+\log\pi\), and fully signed Weil distribution **do not arise automatically** from eta's \(\Gamma(s)\zeta(s)\zeta(s-1)\). The current Euler series is initially valid only on Re(s)>2; setting \(s=1/2+it\) termwise is invalid. In particular, the prime-2 negative two-bump family from DYS-07 remains a genuine signed-kernel adversarial control.
