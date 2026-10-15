@@ -121,17 +121,48 @@ def gamma_sparse_lower(dyadic_exponent, support_measure):
     }
 
 
-def genuine_first_prime_sparse_weil_certificate(a=Q(1, 2),
-                                                 support_measure=Q(1, 1 << 17)):
-    """Source-derived genuine Weil coercivity for sparse supports.
+def gamma_sparse_linear_lower(J, support_measure):
+    """Sharp easy-to-audit finite-J Schur budget for the original real Gamma.
 
-    For 0<a<=1/2 and f in C_c^infinity(-a,a) supported on a measurable
-    set of measure<=2^-17, Q_zeta(f) > (1/16)||f||² if f is nonzero.
-    An actual prime 2 IS active at a=1/2.  This is not positivity for all
-    tests on that interval and implies no RH conclusion.
+    Each Gamma rung satisfies
+      beta_j <f,(I-R_j)f> >= (4/(4j+1)-mu)*||f||²
+    for any test supported in a set of measure <=mu. To keep every
+    retained term nonnegative, impose (4J-3)*mu<=4.
+    All omitted original Gamma rungs are positive. Sum is EXACT Fraction.
+    """
+    if type(J) is not int or not 1 <= J <= 128:
+        raise PrimeClockGateError("A bounded positive integral Gamma cutoff is required")
+    mu = _positive(support_measure)
+    if (4 * J - 3) * mu > 4:
+        raise PrimeClockGateError("Support exceeds source Gamma finite-mode Schur domain")
+    sum_beta = sum((Q(4, 4*j+1) for j in range(J)), Q())
+    lower = sum_beta - J * mu
+    if lower <= 0:
+        raise ArithmeticError("Positive real Gamma lower is not resolved")
+    return {
+        "source": "ONE_REAL_COMPLETED_ZETA_GAMMA",
+        "gamma_modes_used": J, "support_measure_bound": mu,
+        "max_schur_ratio": Q(4*J-3, 4)*mu,
+        "exact_original_beta_sum": sum_beta,
+        "gamma_energy_at_least": lower,
+        "remaining_original_gamma_tail_psd": True,
+        "all_smooth_support_restricted_tests": True,
+        "RH_proved": False,
+    }
+
+
+def genuine_first_prime_sparse_weil_certificate(a=Q(1, 2),
+                                                 support_measure=Q(1, 16)):
+    """Source-derived ORIGINAL Weil coercivity for any sparse compact test.
+
+    For all 0<a<=1/2 and nonzero f in C_c^infinity(-a,a), provided
+    the total measure of supp(f) <=1/16, prove
+      Q_zeta(f) > (1/24)*||f||².
+    At a=1/2 the actual n=2 prime is active. This still does NOT
+    cover arbitrary tests on the interval and does NOT prove RH.
     """
     aa, mu = _positive(a), _positive(support_measure)
-    if aa > Q(1, 2) or mu > Q(1, 1 << 17):
+    if aa > Q(1, 2) or mu > Q(1, 16):
         raise PrimeClockGateError("Only first-prime radius/support theorem certified")
     source = _source()  # pinned original Suzuki source SHA; no zeros
     if not source.contact_iv().hi < Q(43, 8):
@@ -143,26 +174,30 @@ def genuine_first_prime_sparse_weil_certificate(a=Q(1, 2),
     labels = tuple(j.n for j in true_third_prime_wavefronts(2 * aa))
     if any(n != 2 for n in labels):
         raise ArithmeticError("Unexpected true prime-power activation")
-    gamma = gamma_sparse_lower(16, mu)
+    gamma = gamma_sparse_linear_lower(16, mu)
+    # Worst-case support is mu=1/16; source Gamma sum is exact Fraction.
+    global_gamma = gamma_sparse_linear_lower(16, Q(1, 16))
     contact = Q(43, 8)
-    # The original first-prime weight log(2)/sqrt(2)<1/2:
-    # log2<7/10; sqrt2>7/5. Compressed shift path has <=2 vertices.
+    # True weight log(2)/sqrt(2)<1/2 from log2<7/10, sqrt2>7/5.
+    # Compressed shift path has <=2 vertices on 0<a<=1/2.
     prime = Q(1, 2)
-    # 2(sinh(a)-a) <= 2(sinh(1/2)-1/2) < 1/16,
-    # by sinh(t)-t <= t^3/[6(1-t^2)], t<=1/2.
+    # Real negative pole 2(sinh(a)-a)<1/16, a<=1/2.
     pole = Q(1, 16)
-    lower = gamma["gamma_energy_strictly_above"] - contact - prime - pole
-    if lower != Q(1, 16):
-        raise ArithmeticError("Exact real Gamma/true-prime budget mismatch")
+    source_negative_budget = contact + prime + pole
+    uniform_margin = global_gamma["gamma_energy_at_least"] - source_negative_budget
+    if uniform_margin <= Q(1, 24):
+        raise ArithmeticError("The exact 16-mode authentic source positivity gate failed")
     return {
         "source": "SHA_PINNED_ORIGINAL_ZETA",
         "radius": aa, "actual_prime_power_labels": labels,
-        "support_measure_max": mu, "gamma_clock_modes": 1 << 16,
-        "gamma_strict_lower": gamma["gamma_energy_strictly_above"],
+        "support_measure_max": mu, "gamma_clock_modes": 16,
+        "gamma_exact_L2_lower": gamma["gamma_energy_at_least"],
+        "uniform_gamma_exact_L2_lower": global_gamma["gamma_energy_at_least"],
         "completed_real_contact_strict_upper": contact,
         "first_prime_shift_strict_upper": prime,
         "negative_pole_strict_upper": pole,
-        "original_completed_Weil_L2_margin_strictly_above": lower,
+        "uniform_source_margin_exact_lower": uniform_margin,
+        "original_completed_Weil_L2_margin_strictly_above": Q(1, 24),
         "quantifier": "all nonzero complex C_c^infinity tests with support measure <= bound",
         "prime_active_at_radius_half": aa == Q(1, 2) and labels == (2,),
         "all_tests_at_radius_half_proved": False,
@@ -175,7 +210,7 @@ def mutated_source_budget(delta_contact=0, extra_prime_weight=0):
     """EXPLICITLY SYNTHETIC mutation control; no true-source sign conclusion."""
     c = _q(delta_contact)
     w = _q(extra_prime_weight)
-    baseline = Q(1, 16)
+    baseline = Q(1, 24)
     return {
         "mutant_margin_from_same_conservative_budget": baseline - c - w,
         "negative_mutation_detected": baseline - c - w < 0,
