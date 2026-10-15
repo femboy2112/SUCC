@@ -1,0 +1,65 @@
+{
+  "RH_proved": false,
+  "Suzuki_global_limit_proved": false,
+  "all_interval_Weil_positivity_proved": false,
+  "arithmetic_wavefront": {
+    "RH_proved": false,
+    "boundary_width_lower": "2101114477212301635448963/19663631603011131900149700",
+    "boundary_width_upper": "16944471590421806016562/158577674217831708872175",
+    "differentiated_operator_norm_lower": "4396706711353742443247120000000000000000/8970507902737595602130942701310714654463",
+    "differentiated_operator_norm_upper": "17037238506495754855838496250000000000000/34760718123108182933677863463815104410857",
+    "first_onset": true,
+    "first_prime": 2,
+    "half_density_b_lower": "4396706711353742443247120000000000000000/8970507902737595602130942701310714654463",
+    "half_density_b_upper": "17037238506495754855838496250000000000000/34760718123108182933677863463815104410857",
+    "interval_a": "2/5",
+    "kernel_HS_lower": "1941006218168485864516302599836610431666355867270292178015382126631618728000000000000000000000000000000/849610980381250234384478128018555229533206610667205803898799394615666868373713118863611231910228230569533",
+    "kernel_HS_upper": "3913318988242924319825384859037998160903414916869617305711322976455668000000000000000000000000000000/1712925363671875470638831072823488569645790534951554609799466239161484223236246964536031691312261465617",
+    "log2_lower": "109917667783843561081178/158577674217831708872175",
+    "log2_upper": "13629790805196603884670797/19663631603011131900149700",
+    "only_zero_independent_source": true,
+    "prime_power_source": "Lambda(2)=log 2; no other active prime powers"
+  },
+  "authentic_prime_2_weight_bracket": {
+    "lower": "4396706711353742443247120000000000000000/8970507902737595602130942701310714654463",
+    "upper": "17037238506495754855838496250000000000000/34760718123108182933677863463815104410857"
+  },
+  "exact_synthetic_control": {
+    "kernel_HS_squared": "27/3380000",
+    "synthetic_phase_c": "7/10 (NOT log2)",
+    "synthetic_weight_b": "9/13 (NOT log2/sqrt2)",
+    "translated_pair_Rayleigh": "-9/13",
+    "translated_pair_form": "-3/130",
+    "translated_pair_norm_squared": "1/30"
+  },
+  "full_archimedean_boundary_certification": {
+    "RH_proved": false,
+    "all_Cc_infinity_positivity_proved": false,
+    "constant_inequality_checks": {
+      "e_below_68_over_25": true,
+      "exp11_below_65535": true,
+      "exp_13_over_5_exceeds_4pi_upper": true,
+      "first_wavefront_below_log3": true,
+      "four_sinh_a_below_3_over_2": true,
+      "gamma_below_3_over_5": true,
+      "inverse_sqrt2_above_7_over_10": true,
+      "log2_below_7_over_10": true,
+      "log2_over_sqrt2_below_half": true,
+      "wavefront_a_below_9_over_25": true
+    },
+    "full_Weil_form_lower_over_L2": "8/35",
+    "interval_type": "first prime only; two boundary strips",
+    "lambda_a_positive_proved": false,
+    "log_shift_energy_lower": "77/10",
+    "negative_and_prime_upper": "523/70",
+    "nontrivial_zero_positions_used": false,
+    "uses_complete_real_place": true,
+    "w_over_log2_max": "1/65536"
+  },
+  "neumann_K_q": "16/375",
+  "neumann_primitive_norm_squared": "16/375",
+  "original_nontrivial_zero_locations_used": false,
+  "physical_source_authenticated": false,
+  "primary": "https://arxiv.org/html/2606.09096v3",
+  "research": "Suzuki first genuine prime wavefront"
+}
