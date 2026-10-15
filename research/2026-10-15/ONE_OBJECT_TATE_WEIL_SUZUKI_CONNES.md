@@ -251,7 +251,7 @@ The nonnegative trace follows from an actual orthogonal Hilbert projection and a
 
 Even if one has an authentic positive trace $T$ and shows that the difference $D=W-T$ is a **compact** self-adjoint operator (even norm-small), this does **not** establish $W\succeq0$ without an independent sign/dominance inequality.
 
-Proof with a positive compact operator on $\ell^2(\mathbb N)$: $Te_k=2^{-k}e_k$ and $D_N=-2^{1-N}|e_N\rangle\langle e_N|/2=-2^{1-N}|e_N\rangle\langle e_N|$. Then $\|D_N\|=2^{1-N}\to0$, while $(T+D_N)e_N=-2^{-N}e_N$ is strictly **negative** for every $N$. Each $D_N$ is rank one. The function sonin_compact_defect_countermodel gives exact rational receipts for every $1\le N\le128$ and rejects untyped/out-of-domain inputs.
+Proof with a positive compact operator on $\ell^2(\mathbb N)$: $Te_k=2^{-k}e_k$ and $D_N=-2^{1-N}|e_N\rangle\langle e_N|$. Then $\|D_N\|=2^{1-N}\to0$, while $(T+D_N)e_N=-2^{-N}e_N$ is strictly **negative** for every $N$. Each $D_N$ is rank one. The function sonin_compact_defect_countermodel gives exact rational receipts for every $1\le N\le128$ and rejects untyped/out-of-domain inputs.
 
 Thus the Connes–Consani compression suggests a precise **alternative** RH-hard condition: transport the Sonin/scaling trace via a rigorously typed global Tate Schwartz–Bruhat source map and prove
 \[
