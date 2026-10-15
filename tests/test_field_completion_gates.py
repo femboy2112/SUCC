@@ -10,7 +10,7 @@ from observational_succ.field_completion_gates import (
     DyadicGlobalCode, FieldGateError, FiniteGlobalSource, HaltTrace,
     antidiagonal_stage, antidiagonal_tree_member, stagewise_candidate_failure,
     noncompact_escape, phantom_target_receipt, delayed_discriminator,
-    factorial_solenoid_clock,
+    factorial_solenoid_clock, dyadic_zero_boundary,
 )
 
 
@@ -62,6 +62,15 @@ class SimpleProgramControls(unittest.TestCase):
                 factorial_solenoid_clock(self.source, bad, 2)
         with self.assertRaises(FieldGateError):
             factorial_solenoid_clock(self.source, 1, 129)
+
+    def test_dyadic_exact_zero_discontinuity(self):
+        for depth in (0, 1, 2, 4, 16, 128):
+            r = dyadic_zero_boundary(depth)
+            self.assertTrue(r["same_residues_through_depth"])
+            self.assertEqual(r["zero_predicate_values"], (True, False))
+            self.assertEqual(r["distinguished_at_depth"], depth + 1)
+            self.assertFalse(r["Boolean_zero_target_continuous_on_Z2"])
+            self.assertFalse(r["all_depth_indistinguishable"])
 
     def test_malformed_depths_and_seeds_rejected(self):
         with self.assertRaises(FieldGateError):
