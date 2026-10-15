@@ -1,5 +1,5 @@
 {
-  "schema": "SUCC_TATE_ETA_BERNOULLI_2026_10_15_v4",
+  "schema": "SUCC_TATE_ETA_BERNOULLI_2026_10_15_v5",
   "status": "CANONICAL_MODULAR_BRIDGE_NOT_RH",
   "bernoulli": {
     "zeta_minus_one": "-1/12",
@@ -117,6 +117,31 @@
     "forbidden_positive_moment_ratio": "exp(2*pi*u)>1 for u>0",
     "source_blind_positive_laplace_mixture_exists": false,
     "signed_or_source_indexed_transports_still_possible": true,
+    "RH_proved": false
+  },
+  "Tate_gaussian_Fourier_rescue": {
+    "declared_character": "exp(-2*pi*i*(n+phase_shift)*x)",
+    "Haar_normalization": "1/sqrt(u)",
+    "source_N": 8,
+    "source_u": "1/2",
+    "integer_label_squares": [
+      "1",
+      "4",
+      "9",
+      "16",
+      "25",
+      "36",
+      "49",
+      "64"
+    ],
+    "certified_rational_theta_tail_upper": "77/2697074886468348984",
+    "wrong_half_shift_label_squares_1_to_3": [
+      "9/4",
+      "25/4",
+      "49/4"
+    ],
+    "wrong_shift_detected": true,
+    "source_zero_lookup": false,
     "RH_proved": false
   }
 }
