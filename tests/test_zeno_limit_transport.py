@@ -136,5 +136,44 @@ class PropertyTransportNegativeTests(unittest.TestCase):
         with self.assertRaises(z.ZenoError):s.affine_observer(2,0.5,0)
 
 
+
+
+class CompletenessAndInductionControls(unittest.TestCase):
+    def test_rational_cauchy_sqrt2_requires_real_completion(self):
+        for n in range(25):
+            r=z.rational_sqrt2_interval(n)
+            self.assertTrue(r["lower"]**2<=2<r["upper"]**2)
+            self.assertEqual(r["width"],Q(1,2**n))
+            self.assertFalse(r["rational_limit_exists"])
+            self.assertTrue(r["complete_real_endpoint_requires_extension"])
+        for n in range(10):
+            for m in range(n,20):
+                p=z.rational_sqrt2_cauchy_pair(n,m)
+                self.assertGreaterEqual(p["separation"],0)
+                self.assertLess(p["separation"],p["tail_bound"])
+                self.assertFalse(p["convergence_in_Q"])
+
+    def test_non_closed_strict_sign_vs_closed_nonnegative(self):
+        for n in (0,1,2,10,1000):
+            p=z.no_uniform_limit_of_strict_positivity(n)
+            self.assertGreater(p["finite_value"],0)
+            self.assertEqual(p["limit_value"],0)
+            self.assertFalse(p["limit_strictly_positive"])
+            self.assertTrue(p["nonnegative_closed_limit_holds"])
+
+    def test_induction_is_not_merely_limit_extrapolation(self):
+        for ratio in (Q(1,2),Q(2),Q(-1,3),Q(1)):
+            for n in (0,1,2,5,30):
+                p=z.telescoping_geometric_identity(ratio,n)
+                self.assertEqual(p["left"],p["right"])
+                self.assertTrue(p["universal_claim_requires_finite_symbolic_induction"])
+                self.assertTrue(p["limit_transport_requires_topology_and_contraction"])
+
+    def test_no_completion_outside_contract(self):
+        for bad in (0.5,-1):
+            with self.assertRaises(z.ZenoError):
+                z.rational_sqrt2_interval(bad)
+
+
 if __name__=="__main__":
     unittest.main()
