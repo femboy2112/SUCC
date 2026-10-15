@@ -36,12 +36,18 @@ def original_source_low_four_scan(J=32):
     for x,y in ((0,2),(1,3)):
         a=A[x][x];d=A[y][y];b=A[x][y]
         cross=max(abs(b.lo),abs(b.hi))
+        mincross=(F(0) if b.lo<=0<=b.hi
+                  else min(abs(b.lo),abs(b.hi)))
         lower=a.lo*d.lo-cross*cross
+        upper=a.hi*d.hi-mincross*mincross
         positive=(a.lo>0 and d.lo>0 and lower>0)
+        negative=(a.lo>0 and d.lo>0 and upper<0)
         blocks.append({
             "Legendre_indices":[x+1,y+1],
             "positive_diagonal_bounds":a.lo>0 and d.lo>0,
             "parity_2x2_principal_determinant_strict_lower":str(lower),
+            "parity_2x2_principal_determinant_strict_upper":str(upper),
+            "partial_Gamma_stage_block_negative_determinant_certified":negative,
             "source_parity_block_positive_definite":positive,
         })
     true_partial_PD=all(b["source_parity_block_positive_definite"] for b in blocks)
