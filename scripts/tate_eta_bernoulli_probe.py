@@ -13,7 +13,8 @@ from observational_succ.tate_eta_bernoulli import (
     bernoulli_heat_ledger, original_weil_margin_ablation,
     eta_modular_s_defect, eta_q_log_derivative_coefficients,
     eta_eisenstein_prime_transducer, sigma_one_dirichlet_tail_majorant,
-    primary_source_interface_status
+    primary_source_interface_status,
+    modular_discriminant_formal_passport, completed_two_critical_track_passport
 )
 
 
@@ -24,8 +25,10 @@ def frozen_receipt() -> dict:
     bad=eta_eisenstein_prime_transducer(64, True)
     q=eta_q_log_derivative_coefficients(12)
     passport=primary_source_interface_status()
+    delta=modular_discriminant_formal_passport(12)
+    shifts=completed_two_critical_track_passport()
     return {
-        "schema":"SUCC_TATE_ETA_BERNOULLI_2026_10_15_v1",
+        "schema":"SUCC_TATE_ETA_BERNOULLI_2026_10_15_v2",
         "status":"CANONICAL_MODULAR_BRIDGE_NOT_RH",
         "bernoulli":{
             "zeta_minus_one":str(heat["zeta_of_minus_one"]),
@@ -60,6 +63,19 @@ def frozen_receipt() -> dict:
             "mutated_6_basis":{str(k):v for k,v in bad["composite_six_residual_prime_log_basis"].items()},
             "mutated_6_discriminated":6 in bad["mismatch_indices"],
             "analytic_tail_bound_sigma5_N16":str(sigma_one_dirichlet_tail_majorant(5,16)),
+        },
+        "two_track_firewall":{
+            "Delta_cusp_coefficients_q1_through_q6":
+                list(delta["Delta_q_coefficients_through_degree_N"][1:7]),
+            "Delta_q_log_derivative_coefficients_constant_to_q6":
+                list(delta["q_dlog_Delta_coefficients_through_degree_N_minus_one"][:7]),
+            "E2_source_is_not_Ramanujan_tau_source":
+                not delta["Delta_Ramanujan_tau_coefficients_are_sigma1"],
+            "completed_shifted_object":shifts["completed_object"],
+            "completed_shifted_functional_equation":shifts["functional_equation"],
+            "conditional_two_critical_tracks":[str(k) for k in shifts["conditional_on_RH_two_real_tracks"]],
+            "nontrivial_zero_locations_used":shifts["nontrivial_zero_locations_used_as_inputs"],
+            "RH_proved":False,
         },
         "missing_interfaces":{
             "eta_archimedean":passport["eta_heat_archimedean"],
