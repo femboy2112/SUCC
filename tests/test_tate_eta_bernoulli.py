@@ -5,6 +5,7 @@ from fractions import Fraction as F
 from observational_succ.tate_eta_bernoulli import (
     EtaTransportError, bernoulli_heat_ledger, original_weil_margin_ablation,
     eta_modular_s_defect, eta_T_multiplier_exponent,
+    eta_selfdual_first_jet,
     sigma_one, eta_q_log_derivative_coefficients,
     formal_dirichlet_log_derivative, eta_eisenstein_prime_transducer,
     sigma_one_dirichlet_tail_majorant, primary_source_interface_status,
@@ -60,6 +61,19 @@ class DedekindModularSourceGates(unittest.TestCase):
         self.assertTrue(eta_T_multiplier_exponent(wrong)["S_still_required_to_fix_integer_gauge"])
         self.assertEqual(eta_T_multiplier_exponent(F(1,24))["eta_power_24_cusp_order"],1)
         self.assertFalse(eta_T_multiplier_exponent(F(1,22))["canonical_T_character"])
+
+    def test_one_first_jet_at_selfdual_point_repairs_blind_source_probe(self):
+        true=eta_selfdual_first_jet(F(1,24))
+        self.assertEqual(true["value_only_modular_S_defect"],0)
+        self.assertEqual(true["logarithmic_first_derivative_defect"],0)
+        self.assertTrue(true["canonical_alpha_identified_by_zero_first_jet"])
+        self.assertFalse(true["RH_proved"])
+        for wrong, slope in ((F(1,22),F(-1,132)),
+                             (F(25,24),F(-2)),(F(0),F(1,12))):
+            d=eta_selfdual_first_jet(wrong)
+            self.assertEqual(d["value_only_modular_S_defect"],0)
+            self.assertEqual(d["logarithmic_first_derivative_defect"],slope)
+            self.assertFalse(d["canonical_alpha_identified_by_zero_first_jet"])
 
     def test_independent_finite_q_product_logarithmic_coefficients(self):
         for N in (1,2,6,12,32,64):
