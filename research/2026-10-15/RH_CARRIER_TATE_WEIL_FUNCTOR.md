@@ -344,3 +344,31 @@ A source-derived argument capable of constructing J and PROVING exact B_W= <Jf,J
 **Literature**: Weil's positivity criterion as presented and sourced in M. Suzuki, *Aspects of the screw function corresponding to the Riemann zeta-function*, JLMS (2023), §3.2; GNS/positive-type distribution constructions in classical functional analysis. Suzuki's 2026 nonlocal spectral limit is stated as a CONJECTURE, not an unconditional established positive carrier.
 
 **Interpretive result:** There is a canonical **conditional minimal positive carrier** under a stated universal property, whereas "the minimal RH carrier" without a category and a target is not meaningful. The existence of the conditional minimal positive carrier is exactly the RH-hard theorem and therefore cannot be presumed.
+
+
+## 16. TF-10 — Faithful SUCC *history* functor into rational Tate Gaussian tensors (PROVED RESTRICTED, NOT FULL SUCC)
+
+Fix a source label, epoch, real Gaussian t>0, and a rational affine path whose primitive generator at each event is either a SUCC translation S_d: x->x+d or an invertible FUCC multiplier V_q: x->qx. A specially designated prime-jet FUCC requires q to be an authentic rational prime, although an arbitrary nonzero rational q is permitted as a scalar on the actual Q_p field.
+
+The paths form a FREE monoid/category of ordered source-typed words; they retain event identities and succession. Their affine action is given by the semidirect product Q⋊Q^×:
+
+    (A,B) acts by x->A x+B,
+    (A2,B2) after (A1,B1) = (A2 A1, A2 B1+B2).
+
+On the original Tate Gaussian tensor Φ_(q0,d0,t), this acts as
+
+    (A,B): Φ_(q0,d0,t) -> Φ_(Aq0,Ad0+B,t).                 (16.1)
+
+Associativity and identity follow from the affine law, and the code independently executes each primitive event and compares it with the accumulated (A,B). With local p-restriction R_p(Φ_(q,d,t)) =1_(d+q Z_p), we have an **exact commuting square for all genuine primes p**
+
+    R_p( (A,B) Φ ) = (A,B) R_p(Φ),                           (16.2)
+
+and the local Fourier affine identity (4.2) intertwines this square.
+
+The SOURCE-WORD functor to bare affine maps is generally NOT faithful: the nonempty path S_1; S_-1 has identity action. The functor to **receipt-decorated tensor paths**, however, retains ordered event IDs, source epoch and labels. This is a legitimate history-faithful representation of the *declared FREE source path category*, not a claim that arbitrary physically possible future E experiments or arbitrary SUCC semantic model updates have been implemented.
+
+A successful *unrestricted* SUCC→Tate functor must additionally model causal accessibility, original device and source-map provenance, nontrivial event effects on test-function domains, noncommuting operator/source model interactions, and correct refinement to the full restricted adelic product. These are NOT supplied by the restricted rational affine calculation.
+
+**Negative controls:** an event from a wrong source/epoch, an out-of-order receipt, q=0, fake prime-jet q=6, and a silently collapsed path are rejected or exposed. **Positive controls:** arbitrary composite *scalar* q=6 remains legal on Q_p, and inverse q=1/p is legitimate there. Source-event history is distinct from final observational state.
+
+Implementation: GlobalSourceWord in observational_succ/adelic_schwartz_source.py, tested against independent SourceWord at each selected genuine prime and against exact Fourier evaluations. This is the strongest *executed* SUCC→Tate step on the branch, not yet a theorem about the complete Weil form.
