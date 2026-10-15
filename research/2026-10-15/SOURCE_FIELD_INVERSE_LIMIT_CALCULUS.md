@@ -476,6 +476,31 @@ The coarse unit sum is \(1-1=0\), so this observer LOSES the signed character di
 
 This is an **authenticated original Tate source**, not the synthetic even-coordinate phantom. It is computed exactly in the parent's already-implemented \(\mathbb Q(\sqrt{-3})\) field. One *lawful conductor-level probe* repairs a source-map \(\sigma\) deficiency that a coarse observation could not distinguish. This is a vivid SimpleField/IdealHard/FuckedField operational boundary in the actual arithmetic domain.
 
+### 11e. Complete local coset observers have FINITE distinguishing witnesses (SCF-TATE9)
+
+The user's "real versus phantom unless a finite example exists somewhere between 0 and infinity" becomes sharply decidable *for the mathematical Schwartz–Bruhat source class*, once the allowed tests are explicitly complete.
+
+If \(f,g\in\mathcal S(\mathbb Q_p)\) are DIFFERENT, take a common sufficiently large finite support/constancy chart \(V_{M,N}\) containing both. Their coefficient vectors differ at some j: \(c_j\ne d_j\). Test against the genuine local indicator of this j-th cell,
+
+\[
+\varphi_j(x)=\mathbf1_{j/p^M+p^N\mathbb Z_p}(x).
+\]
+
+By ORIGINAL self-dual Haar,
+
+\[
+\boxed{
+\int_{\mathbb Q_p} (f-g)(x)\varphi_j(x)\,dx
+=(c_j-d_j)p^{-N}\ne0.
+}\tag{SCF-TATE9}
+\]
+
+Thus **every fixed pair of distinct Schwartz–Bruhat functions admits a finite local coset distinguishing experiment**, provided that specific indicator probe is available and its source values can actually be evaluated. The complete family of such indicator probes is jointly separating; a **coarse** observer that only sums ramified units need not be.
+
+This is the local analogue of full-prefix inverse-limit coordinate separation, now with an *actual Tate arithmetic source* rather than a synthetic bit model. It refutes any absolute claim that two different local Schwartz–Bruhat source functions could remain mathematically identical under ALL exact finite conductor/coset observations. It does **NOT** supply a globally uniform conductor or computation budget for all possible unknown pairs, actual physical source access, or a completed Weil-sign certificate. It is a theorem about the class, the probes and the Haar source law.
+
+Executable exact source test: \`finite_tate_coset_discriminator\`. For primitive chi(-3) on p=3, the source \((0,1,-1)\) differs from the zero function already on cell 1 with pairing exactly \(+1/3\), even though its coarse signed-unit sum is zero. This is a positive sigma/probe repair control.
+
 **RH status:** finite local \(p\)-adic Fourier isometry, stage gluing and character phase do NOT imply positivity of the completed global Weil form. To get an RH transducer, the restricted adelic tensor product, the real Gaussian \(\Gamma_{\mathbb R}\), conductor and the FULL signed pole/contact/prime map must all be correctly identified, and a separate positive global operator/Schur domination must be proved. No epsilon/phase or finite sampling makes that sign free.
 
 **Artifacts:** \`observational_succ/tate_finite_bruhat_observers.py\`, \`tests/test_tate_finite_bruhat_observers.py\`. Mathematical ingredients are classical finite local harmonic analysis and Tate normalizations; this is new-to-SUCC SOURCE GLUING/instrumentation, not new academic Fourier theory.
