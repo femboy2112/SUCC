@@ -21,3 +21,6 @@
 **Reproduce:** research/2026-10-15/APOLLO_PRIME_ACTIVE_DOMAIN_CERTIFICATION.md; observational_succ/apollo_prime_domain.py; tests/test_apollo_prime_domain.py; scripts/apollo_prime_domain_probe.py; .github/workflows/apollo-prime-domain.yml. No original source changes, no zero reading and no unreviewed cross-branch merge.
 
 **RH PROVED: NO.**
+
+
+**New high-sector original-coupling control S8c:** On the exact prime2 translated E2 packet define phi_q=t^q(delta−t)^q with delta=1/64 and q>=34, and f=D^30 phi_q plus its translate by true log2. After zero extension it is C³ and H0¹, and by exact polynomial integration by parts all moments ∫x^k f=0 for k=0..29. Hence u=i f' is orthogonal to the first 30 original meanzero Legendre low modes of PR107. Yet the genuine source p2 overlap is exactly ||D^30 phi_q||²>0, and the source-certified packet inequality gives Qζ(f)>3||f||²/5. This is a true arithmetic interaction that lives in PR107's *high sector*, not a fake zero-jet example. Exact Fraction 30-moment and nonzero norm checks are committed. This does NOT certify the original 30-low short matrix.
