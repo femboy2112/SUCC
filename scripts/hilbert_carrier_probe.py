@@ -8,6 +8,7 @@ from pathlib import Path
 from observational_succ import hilbert_carrier as h
 from observational_succ import hilbert_suzuki_stream as s
 from observational_succ import hilbert_prime_wavefront as p
+from observational_succ import hilbert_suzuki_cell_integrals as j
 
 MAIN="03db44203147a7b28d445bb9f970fa71360e78c4"
 
@@ -23,6 +24,12 @@ def receipt():
     bound=s.local_stream_bounds(original)
     rayleigh=s.source_matrix_pair_witness(original,(1,-1,0,0))
     wave=p.adaptive_profile(Q(1,2),5)
+    full=j.hilbert_source_complete_block(Q(1,2),2,2)
+    toeplitz=j.source_toeplitz_block(Q(1,2),2,2)
+    if (full["lower_matrix"]!=toeplitz["lower_matrix"]
+        or full["upper_matrix"]!=toeplitz["upper_matrix"]):
+        raise AssertionError("SIGNED_ORIGINAL_HILBERT_AND_TOEPLITZ_DISAGREE")
+
     assert geometry["cells"]==64
     assert nonlocality["max_index_separation_of_spatial_edge_neighbors"]==53
     assert numerical["absolute_error_exact"]==Q(1,384)
@@ -48,6 +55,16 @@ def receipt():
       "source_signed_operator_unchanged_by_Hilbert_order":True,
       "signed_stream_consecutive_change_bounded_by_original_source":True,
       "true_prime_power_window_first": [[2,2]],
+      "true_signed_Suzuki_finiteJ_full_analytic_cell_integral":full["all_original_source_components"],
+      "true_signed_Suzuki_finite_cell_spatial_quadrature_error_zero":
+          full["compressed_block_spatial_quadrature_error"]==0,
+      "true_signed_Suzuki_full_block_vs_toeplitz_exact_agreement":True,
+      "true_signed_Suzuki_number_original_unique_lag_integrals":
+          toeplitz["unique_original_lag_integrals"],
+      "true_signed_Suzuki_number_matrix_entries":
+          toeplitz["full_source_matrix_entries"],
+      "continuous_Suzuki_projection_operator_error_not_eliminated":
+          not full["continuum_finite_projection_norm_error_proved_zero"],
       "wavefront_adaptive_better_than_uniform_at_order5":True,
       "fake_independent_euler_place_six_accepted":False,
       "Hilbert_Curve_2d_L2_measure_isometry_classical":True,
