@@ -235,3 +235,34 @@ K(x,x)>0,\quad K(y,y)>0,\quad K(x,x)K(y,y)-K(x,y)^2>0.
 **Evidence:** exact Fraction arithmetic on SHA-checked imported source intervals; independent dedicated GitHub Actions success on Python 3.10 and 3.13 at ONE OBJECT checkpoint d831239cb13687f2f8727e9f7ad73cf68f4e01db, run 38681543132. One earlier exploratory exact-head run failed solely because interval arithmetic evaluated $g(|y|)-g(|y|)$ as two independent uncertain inputs; its failure is preserved by workflow history, then fixed by analytically justified anchored cancellation.
 
 **Scope:** this is a *two-point source-authentic* sign certificate, not a $\lambda\downarrow0$ Suzuki Schur proof, all-$a$ sign, Connes global trace, all-finite-set Hilbert embedding, or RH. It demonstrates that the finite construction can actually certify a positive principal minor of the original signed source, not merely a synthetic positive Gram or a numerical fit. The next adversarial instrument is a certified $3\times3$ principal-minor ladder plus a proof-capable uniform source-derived lower bound, rather than extrapolating this single finite witness.
+
+
+## O8. The Sonin-space alternative: source-normalized positive trace **plus defect**, not unconditional Weil positivity
+
+**Primary-source update:** Alain Connes and Caterina Consani, *Weil positivity and Trace formula: the archimedean place* (2020), arXiv:2006.13771, https://arxiv.org/pdf/2006.13771 , Theorem 1 and §§1–6. The paper proves an **Archimedean-only restricted-support** comparison involving the Sonin projection $\mathbf S$ onto the even $L^2(\mathbb R)$ functions whose functions and Fourier transforms vanish on $[-1,1]$. For $g$ supported in $[2^{-1/2},2^{1/2}]$ and with the prescribed Fourier vanishings at $i/2$ and $0$, their **opposite-real-local** Weil convention satisfies
+\[
+W_\infty(g*g^*)\ \ge\ 
+\operatorname{Tr}(\vartheta(g)\mathbf S\vartheta(g)^*)\ \ge\ 0.
+\tag{O8-Connes}
+\]
+The nonnegative trace follows from an actual orthogonal Hilbert projection and a trace-class product, *not* an arbitrary covariance chosen to fit zeta. The Connes–Consani paper controls the discrepancy with prolate spheroidal wave functions and hermitian Toeplitz matrices. **Its theorem as stated does not include the true p=2 wavefront or an all-place arithmetic Weil theorem.** Nor may its $W_\infty$ sign convention be silently identified with this repo's $W_\zeta$ before performing the proper Mellin/half-density and involution transport.
+
+### Exact compact-defect no-go O8B (PROVED LOCAL, synthetic)
+
+Even if one has an authentic positive trace $T$ and shows that the difference $D=W-T$ is a **compact** self-adjoint operator (even norm-small), this does **not** establish $W\succeq0$ without an independent sign/dominance inequality.
+
+Proof with a positive compact operator on $\ell^2(\mathbb N)$: $Te_k=2^{-k}e_k$ and $D_N=-2^{1-N}|e_N\rangle\langle e_N|/2=-2^{1-N}|e_N\rangle\langle e_N|$. Then $\|D_N\|=2^{1-N}\to0$, while $(T+D_N)e_N=-2^{-N}e_N$ is strictly **negative** for every $N$. Each $D_N$ is rank one. The function sonin_compact_defect_countermodel gives exact rational receipts for every $1\le N\le128$ and rejects untyped/out-of-domain inputs.
+
+Thus the Connes–Consani compression suggests a precise **alternative** RH-hard condition: transport the Sonin/scaling trace via a rigorously typed global Tate Schwartz–Bruhat source map and prove
+\[
+W_\zeta(f*f^\sharp)
+=\underbrace{\operatorname{Tr}(A_f\mathbf S A_f^*)}_{\ge0}
++\underbrace{\mathfrak D(f)}_{\text{source-identified defect}},
+\qquad 
+\boxed{\ \mathfrak D(f)\ge-\operatorname{Tr}(A_f\mathbf S A_f^*)\quad
+\forall f\ \text{admissible}. \ }
+\tag{O8-gate}
+\]
+This inequality is still **RH-strength** when it identifies the actual full signed $W_\zeta$, not a weaker model. The source map requires every finite Euler place, conductor/phase, the Archimedean term exactly once, principal-value/contact normalization, spectral domain and proven trace-class limits.
+
+**Next falsifiable probe:** replicate Connes–Consani's *restricted Archimedean Theorem 1* in SUCC's source chart, checking two Mellin vanishing conditions, Fourier/half-density and the **sign convention**. Then activate the first genuine prime-p=2 wavefront and derive a mathematically justified boundary/defect operator. A certified negative direction for a *proposed defect domination* refutes that attempt; finite numerical PSD, generic compactness, or fitted trace differences remain inconclusive. The original signed Weil all-test positivity and Sonin global trace remain UNVERIFIED. RH PROVED: NO.
