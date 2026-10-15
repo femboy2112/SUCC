@@ -8,7 +8,8 @@ from observational_succ.apollo_prime_domain import (
     gamma_sixteen_fraction,dyadic_gamma_4096_lower,
     first_prime_sparse_domain,prime_two_pair_packet_domain,
     full_five_source_a_one_sparse_domain,
-    any_five_prime_activation_pair,exact_packet_overlap_bump,
+    any_five_prime_activation_pair,isolated_prime_sixteen_packet,
+    exact_packet_overlap_bump,
     synthetic_sparse_budget,
 )
 from observational_succ.apollo_derivative_jets import genuine_prime_third_jet
@@ -163,3 +164,37 @@ class SignedWeilPacketPolynomialsAndPR107InterfaceTests(unittest.TestCase):
         for bad in (0,F(1,2),True,0.0125):
             with self.assertRaises(PrimeDomainError):
                 exact_packet_overlap_bump(bad)
+
+
+
+class SixteenGammaModeAuthenticIsolatedPrimeDomains(unittest.TestCase):
+    def test_all_five_genuine_prime_wavefronts_with_broader_support(self):
+        for n,p in ((2,2),(3,3),(4,2),(5,5),(7,7)):
+            d=isolated_prime_sixteen_packet(n)
+            self.assertEqual(d["active_original_prime_power"],n)
+            self.assertEqual(d["primitive_prime"],p)
+            self.assertEqual(d["Gamma_modes"],16)
+            self.assertEqual(d["halfwidth"],F(1))
+            self.assertEqual(d["support_measure_upper"],F(1,64))
+            self.assertEqual(d["half_shift_overlap_norm_ratio"],F(1,2))
+            self.assertTrue(d["isolated_wavefront"])
+            self.assertTrue(d["other_four_prime_overlaps_exactly_zero"])
+            self.assertGreater(d["strict_rational_margin"],F(1,2))
+            self.assertTrue(d["source_positive_Hilbert_contraction_exists_on_CcE"])
+            self.assertFalse(d["full_ambient_G_a_positive"])
+            self.assertFalse(d["RH_proved"])
+        # Compare to the more restrictive 4096-mode point carrier:
+        self.assertLess(isolated_prime_sixteen_packet(7)["strict_rational_margin"],
+                        any_five_prime_activation_pair(7)["strict_exact_margin"])
+
+    def test_isolated_packet_budget_controls(self):
+        for length in (F(1,128),F(1,256),F(1,1024)):
+            d=isolated_prime_sixteen_packet(7,length)
+            self.assertEqual(d["support_measure_upper"],2*length)
+            self.assertGreater(d["strict_rational_margin"],F(1,2))
+        for n in (6,8,0,1,True):
+            with self.assertRaises(PrimeDomainError):
+                isolated_prime_sixteen_packet(n)
+        for length in (F(1,64),F(0),True,0.005):
+            with self.assertRaises(PrimeDomainError):
+                isolated_prime_sixteen_packet(2,length)
