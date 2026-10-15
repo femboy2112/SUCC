@@ -1,0 +1,35 @@
+name: SUCC source theta Taylor certificates
+
+on:
+  push:
+    branches:
+      - research/xi-theta-certified-jets-cave-2026-10-14
+  pull_request:
+    paths:
+      - 'observational_succ/theta_taylor_jets.py'
+      - 'tests/test_theta_taylor_jets.py'
+      - 'scripts/theta_taylor_jets_probe.py'
+      - 'research/2026-10-14/THETA_EVEN_JETS_RECEIPT.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  original-theta-jets:
+    name: Certified theta jets (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Exact rational source theorem regressions
+        run: python -m unittest discover -s tests -p 'test_theta_taylor_jets.py' -v
+      - name: Recreate original theta jets and verify zero-independent frozen receipt
+        run: python scripts/theta_taylor_jets_probe.py --verify research/2026-10-14/THETA_EVEN_JETS_RECEIPT.json
