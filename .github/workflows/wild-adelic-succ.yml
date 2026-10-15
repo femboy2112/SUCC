@@ -1,0 +1,57 @@
+name: Wild Adelic SUCC exact source and embedding certificates
+
+on:
+  push:
+    branches:
+      - 'research/wild-adelic-*'
+    paths:
+      - 'observational_succ/wild_adelic_tower.py'
+      - 'tests/test_wild_adelic_tower.py'
+      - 'scripts/wild_adelic_tower_probe.py'
+      - 'research/2026-10-14/WILD_*'
+      - 'docs/CLAIM_SUPPLEMENT_WILD_ADELIC_SUCC.md'
+      - '.github/workflows/wild-adelic-succ.yml'
+  pull_request:
+    paths:
+      - 'observational_succ/wild_adelic_tower.py'
+      - 'tests/test_wild_adelic_tower.py'
+      - 'scripts/wild_adelic_tower_probe.py'
+      - 'research/2026-10-14/WILD_*'
+      - 'docs/CLAIM_SUPPLEMENT_WILD_ADELIC_SUCC.md'
+      - '.github/workflows/wild-adelic-succ.yml'
+  workflow_dispatch:
+
+jobs:
+  exact-wild-arithmetic-source:
+    name: Arithmetic inverse towers and embedding guards (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify immutable original source integrity
+        run: python scripts/verify_provenance.py
+      - name: Run finite-stage rational and hostile model tests
+        run: PYTHONPATH=. python -m unittest tests.test_wild_adelic_tower -v
+      - name: Replay exact mathematical source receipt
+        run: PYTHONPATH=. python scripts/wild_adelic_tower_probe.py --verify research/2026-10-14/WILD_ADELIC_SUCC_RECEIPT.json
+      - name: No imaginary RH or topological formalization
+        run: |
+          python - <<'PY'
+          import json
+          r=json.load(open('research/2026-10-14/WILD_ADELIC_SUCC_RECEIPT.json'))
+          c=r['claim_status']
+          assert c['RH_PROVED'] is False
+          assert c['Weil_form_identified_with_solenoid_gram'] is False
+          assert c['Lean_topology_kernel_claimed'] is False
+          assert c['real_physical_source_authenticated'] is False
+          assert c['explicit_geometric_Alexander_embedding_built'] is False
+          assert c['additive_adele_class_identified_with_multiplicative_idele_class'] is False
+          assert r['globalization']['m6_factorial_automorphism'] is True
+          assert r['globalization']['snake_delta_6_root_5'] == 5
+          PY
