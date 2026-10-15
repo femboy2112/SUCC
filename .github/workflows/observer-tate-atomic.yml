@@ -1,0 +1,62 @@
+name: Observer Tate atomic finite-to-global reconstruction
+
+on:
+  push:
+    branches:
+      - 'research/observer-tate-bijective-descent-*'
+  pull_request:
+    paths:
+      - 'observational_succ/tate_observer_completion.py'
+      - 'observational_succ/observer_global_sign_gate.py'
+      - 'observational_succ/tate_adele_quotient_descent.py'
+      - 'observational_succ/field_limit_trichotomy.py'
+      - 'observational_succ/field_limit_compactness.py'
+      - 'observational_succ/field_contractivity_compactness.py'
+      - 'observational_succ/field_history_lift.py'
+      - 'tests/test_tate_observer_completion.py'
+      - 'tests/test_observer_global_sign_gate.py'
+      - 'tests/test_tate_adele_quotient_descent.py'
+      - 'tests/test_field_limit_trichotomy.py'
+      - 'tests/test_field_limit_compactness.py'
+      - 'tests/test_field_contractivity_compactness.py'
+      - 'tests/test_field_history_lift.py'
+      - 'scripts/observer_tate_atomic_probe.py'
+      - 'scripts/field_limit_trichotomy_probe.py'
+      - '.github/workflows/observer-tate-atomic.yml'
+
+jobs:
+  exact-source-descent:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install test dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Finite model-of-model / Tate exact cyclotomic tests
+        run: python -m unittest discover -s tests -p 'test_tate_observer_completion.py' -v
+      - name: Additive strong approximation and original solenoid source tests
+        run: python -m unittest discover -s tests -p 'test_tate_adele_quotient_descent.py' -v
+      - name: Simple / IdealHard / Fucked observer-limit math and bounded universal TM tests
+        run: python -m unittest discover -s tests -p 'test_field_limit_trichotomy.py' -v
+      - name: Source compactness, finite closed-fiber gluing and unique-path effectivity
+        run: python -m unittest discover -s tests -p 'test_field_limit_compactness.py' -v
+      - name: Uniform Hilbert contraction FIP / source signed Krein proof firewall
+        run: python -m unittest discover -s tests -p 'test_field_contractivity_compactness.py' -v
+      - name: Genuine source action-history versus quotient-state faithfulness
+        run: python -m unittest discover -s tests -p 'test_field_history_lift.py' -v
+      - name: Source signed Weil and finite Schur observer growth tests
+        run: python -m unittest discover -s tests -p 'test_observer_global_sign_gate.py' -v
+      - name: Independent original source regression
+        run: python -m unittest discover -s tests -p 'test_finite_fourier_carrier.py' -v
+      - name: Exact deterministic source receipt
+        run: python scripts/observer_tate_atomic_probe.py
+      - name: Simple IdealHard Fucked source-limit reproducibility
+        run: python scripts/field_limit_trichotomy_probe.py
+      - name: Frozen source provenance verification
+        run: python scripts/verify_provenance.py
