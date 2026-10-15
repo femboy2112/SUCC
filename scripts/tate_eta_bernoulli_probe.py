@@ -15,7 +15,8 @@ from observational_succ.tate_eta_bernoulli import (
     eta_selfdual_first_jet,
     eta_eisenstein_prime_transducer, sigma_one_dirichlet_tail_majorant,
     primary_source_interface_status,
-    modular_discriminant_formal_passport, completed_two_critical_track_passport
+    modular_discriminant_formal_passport, completed_two_critical_track_passport,
+    eta_mobius_heat_transducer, gaussian_linear_heat_positive_mixing_no_go
 )
 
 
@@ -28,8 +29,11 @@ def frozen_receipt() -> dict:
     passport=primary_source_interface_status()
     delta=modular_discriminant_formal_passport(12)
     shifts=completed_two_critical_track_passport()
+    heat_source=eta_mobius_heat_transducer(64)
+    fake_heat=eta_mobius_heat_transducer(64,True)
+    gaussian_no_go=gaussian_linear_heat_positive_mixing_no_go()
     return {
-        "schema":"SUCC_TATE_ETA_BERNOULLI_2026_10_15_v3",
+        "schema":"SUCC_TATE_ETA_BERNOULLI_2026_10_15_v4",
         "status":"CANONICAL_MODULAR_BRIDGE_NOT_RH",
         "bernoulli":{
             "zeta_minus_one":str(heat["zeta_of_minus_one"]),
@@ -79,6 +83,24 @@ def frozen_receipt() -> dict:
             "completed_shifted_functional_equation":shifts["functional_equation"],
             "conditional_two_critical_tracks":[str(k) for k in shifts["conditional_on_RH_two_real_tracks"]],
             "nontrivial_zero_locations_used":shifts["nontrivial_zero_locations_used_as_inputs"],
+            "RH_proved":False,
+        },
+        "Mobius_heat_transducer":{
+            "true_source_output_1_through_12":list(heat_source["positive_output_coefficients"][:12]),
+            "all_exact_coefficients_to_64_are_one":heat_source["exact_heat_identity"],
+            "faked_sigma1_6_output_coefficient":fake_heat["positive_output_coefficients"][5],
+            "fake_source_flagged":6 in fake_heat["wrong_coefficient_indices"],
+            "output_function":"1/(exp(t)-1) for t>0",
+            "output_Mellin":"Gamma(s)*zeta(s) for Re(s)>1",
+            "input_operator_signed":heat_source["operator_has_signed_Mobius_weights"],
+        },
+        "Gaussian_positive_mixing_no_go":{
+            "three_test_labels":list(gaussian_no_go["contradiction_at_labels"]),
+            "forbidden_positive_moment_ratio":gaussian_no_go["gaussian_ratio_exact"],
+            "source_blind_positive_laplace_mixture_exists":
+                gaussian_no_go["source_blind_positive_laplace_mixing"],
+            "signed_or_source_indexed_transports_still_possible":
+                not gaussian_no_go["source_indexed_or_signed_transport_ruled_out"],
             "RH_proved":False,
         },
         "missing_interfaces":{
