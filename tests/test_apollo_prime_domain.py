@@ -13,6 +13,7 @@ from observational_succ.apollo_prime_domain import (
     synthetic_sparse_budget,source_support_union_gate,
     prime_packet_low_moment_rank,
     true_prime2_coupled_thirty_moment_witness,
+    original_first_legendre_prime2_cross_witness,
 )
 from observational_succ.apollo_derivative_jets import genuine_prime_third_jet
 from observational_succ.apollo_krein_factor import (
@@ -275,3 +276,25 @@ class ApolloGenuineHighAndPrimeCouplingIntersection(unittest.TestCase):
         for val in (0,30,33,46,True,34.0):
             with self.assertRaises(PrimeDomainError):
                 true_prime2_coupled_thirty_moment_witness(val)
+
+
+
+class ApolloTrueLowToPrimePacketSourceCrossTests(unittest.TestCase):
+    def test_authentic_first_legendre_prime2_cross_component_strictly_nonzero(self):
+        for power in (4,5,8,12):
+            o=original_first_legendre_prime2_cross_witness(power)
+            self.assertEqual(o["ambient_halfwidth"],F(1,2))
+            self.assertEqual(o["source"],"ORIGINAL_SHA_PINNED_GENUINE_P2")
+            self.assertGreater(o["low_cross_prime_component_exact_rational_positive_lower"],0)
+            self.assertGreater(o["one_packet_mass"],0)
+            self.assertTrue(o["only_prime_component_certified_nonzero"])
+            self.assertFalse(o["completed_signed_Weil_cross_sign_proved"])
+            self.assertFalse(o["original_30_low_Schur_sign_proved"])
+            self.assertFalse(o["RH_proved"])
+            self.assertGreater(o["prime_shift_log_interval"][0],F(2,3))
+            self.assertLess(o["prime_shift_log_interval"][1],F(7,10))
+
+    def test_prime_cross_false_polynomial_domains_refused(self):
+        for power in (0,-1,3,17,True,4.0):
+            with self.assertRaises(PrimeDomainError):
+                original_first_legendre_prime2_cross_witness(power)
