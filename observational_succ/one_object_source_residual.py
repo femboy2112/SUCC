@@ -53,6 +53,7 @@ def authenticated_first_window_gate():
        "low_signed_schur_positivity_proved":False,
        "Tate_full_test_source_gluing_verified":False,
        "Connes_global_principal_value_trace_glued":False,
+       "global_Connes_adelic_trace_identified":False,
        "rh_proved":False
     }
 
