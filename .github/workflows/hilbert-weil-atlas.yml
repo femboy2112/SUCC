@@ -1,0 +1,37 @@
+name: Hilbert dyadic Weil source atlas
+
+on:
+  push:
+    branches:
+      - research/hilbert-prime-weil-operator-atlas-2026-10-14
+  pull_request:
+    paths:
+      - 'observational_succ/hilbert_weil_atlas.py'
+      - 'tests/test_hilbert_weil_atlas.py'
+      - 'scripts/hilbert_weil_atlas_probe.py'
+      - 'research/2026-10-14/HILBERT_WEIL_ATLAS_RECEIPT.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-verified-hilbert:
+    name: Hilbert source/Weil operator (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify original SUCC source provenance
+        run: python scripts/verify_provenance.py
+      - name: Exact Hilbert/Weil source mathematics and integrated 30-moment coupling
+        run: python -m unittest discover -s tests -p 'test_hilbert_weil_atlas.py' -v
+      - name: Replay immutable rational finite-observer report
+        run: python scripts/hilbert_weil_atlas_probe.py --verify research/2026-10-14/HILBERT_WEIL_ATLAS_RECEIPT.json
