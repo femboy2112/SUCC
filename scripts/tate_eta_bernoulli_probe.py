@@ -12,6 +12,7 @@ from fractions import Fraction as F
 from observational_succ.tate_eta_bernoulli import (
     bernoulli_heat_ledger, original_weil_margin_ablation,
     eta_modular_s_defect, eta_q_log_derivative_coefficients,
+    eta_selfdual_first_jet,
     eta_eisenstein_prime_transducer, sigma_one_dirichlet_tail_majorant,
     primary_source_interface_status,
     modular_discriminant_formal_passport, completed_two_critical_track_passport
@@ -28,7 +29,7 @@ def frozen_receipt() -> dict:
     delta=modular_discriminant_formal_passport(12)
     shifts=completed_two_critical_track_passport()
     return {
-        "schema":"SUCC_TATE_ETA_BERNOULLI_2026_10_15_v2",
+        "schema":"SUCC_TATE_ETA_BERNOULLI_2026_10_15_v3",
         "status":"CANONICAL_MODULAR_BRIDGE_NOT_RH",
         "bernoulli":{
             "zeta_minus_one":str(heat["zeta_of_minus_one"]),
@@ -52,6 +53,9 @@ def frozen_receipt() -> dict:
                 str(eta_modular_s_defect(F(1,22),F(1))["log_defect_over_minus_pi"]),
             "wrong_exponent_selfdual_false_pass":
                 eta_modular_s_defect(F(25,24),F(2))["self_dual_false_pass_possible"],
+            "canonical_selfdual_first_jet":str(eta_selfdual_first_jet(F(1,24))["logarithmic_first_derivative_defect"]),
+            "wrong_1_over_22_selfdual_first_jet":str(eta_selfdual_first_jet(F(1,22))["logarithmic_first_derivative_defect"]),
+            "wrong_25_over_24_selfdual_first_jet":str(eta_selfdual_first_jet(F(25,24))["logarithmic_first_derivative_defect"]),
             "finite_q_constant":str(q[0]),
             "finite_q_coefficients_1_to_12":[str(x) for x in q[1:]],
         },
