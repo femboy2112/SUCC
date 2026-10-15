@@ -16,6 +16,7 @@ The handoff contract is [docs/RH_HANDOFF.md](../../docs/RH_HANDOFF.md). A docume
 - [Wild embedding and carrier-locked SUCC holonomy](2026-10-14-wild-embedding-Weil.md) — Alexander horned-sphere free-group source, perfect yet nontrivial exterior, sharp nilpotent observer depth, prime-twisted sphere countermodel, and the Suzuki first-wavefront H¹ metric repair; **not a topology identification of zeta or a Weil sign theorem**.
 - [Source-canonical Suzuki moment Schur](2026-10-14-canonical-moment-schur.md) — pinned PR #85 finite authentic Weil/Gamma source meets PR #86's 30-moment high positivity; canonical Legendre 15+15 source-signed low block and regularized one-sided Gamma Schur error, with an explicit grid-resolution wall. **No unshifted Weil sign or RH proof.**
 - [Tate local conductor and source-phase bridge](2026-10-14-tate-source-conductor.md) — exact unramified and ramified local Fourier–Mellin contracts, primitive conductor-3 theta completion and rational all-height strip tail bound; **original signed Weil positivity remains open**.
+- [ONE OBJECT — Weil/Suzuki finite contact gluing and Connes local trace](2026-10-15-one-object-tate-weil-suzuki-connes.md) — exact signed distribution/continuous screw commuting square and finite local Lefschetz denominator; **original global trace identity and positive Hilbert feature factor remain open**.
 - [Template](TEMPLATE.md) — required mathematical scope, provenance, adversarial controls and next proof obligation.
 
 RH remains unsolved. A handoff document is **not** an assertion of an RH proof.
