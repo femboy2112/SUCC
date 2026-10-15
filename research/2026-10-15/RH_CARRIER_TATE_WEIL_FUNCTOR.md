@@ -183,3 +183,70 @@ Citations / primary provenance:
 - M. Suzuki, *Aspects of the screw function corresponding to the Riemann zeta-function*, JLMS 108 (2023), https://doi.org/10.1112/jlms.12785 .
 - M. Suzuki, *Weil's quadratic form via the screw function*, arXiv:2606.09096 (2026), https://arxiv.org/abs/2606.09096 .
 - Notes on Tate's thesis, local characteristic Fourier test, https://mcm.amss.cas.cn/people/members/202108/W020140919372982530643.pdf .
+
+
+## 10. TF-07 — Standard adelic Gaussian tensor with exact original-source phase and volume (CLASSICAL IDENTITY; EXACT RATIONAL-LATTICE RECEIPT)
+
+Consider the actual Schwartz–Bruhat tensor on the rational adeles
+
+    Φ_(q,d,t)(x) =
+       exp(-π t ((x_inf-d)/q)^2)
+       * product_(all primes p) 1_(d+q Z_p)(x_p),
+
+with q∈Q^×, d∈Q, t∈Q_{>0}, real Archimedean Gaussian and p-adic indicators. **Only finitely many factors differ from the standard 1_(Z_p)**: those with v_p(q)≠0 or v_p(d)<0. The implementation records exactly this finite exceptional atlas plus the original rational generator (q,d,t), which is a legitimate *finite specification of a mathematically infinite object*.
+
+Choose the global additive Fourier pairing with real + phase exp(2πixξ) and p-adic - phase exp(-2πi {xξ}_p), and normalized additive Haar vol(Z_p)=1. By the elementary real Gaussian transform and the local formula (4.1),
+
+    F_A[Φ_(q,d,t)](ξ)
+      = (|q|_infty * product_p |q|_p) / sqrt(t)
+          * ψ_A(d ξ)
+          * exp(-π (q ξ_inf)^2/t)
+          * product_p 1_(q^-1 Z_p)(ξ_p).
+
+For rational nonzero q, the coefficient in parentheses is EXACTLY ONE by the product formula. For a **diagonally embedded rational** ξ∈Q, ψ_A(dξ)=1 by additive reciprocity, and the non-Archimedean support condition is equivalent to qξ∈Z (since a rational number belongs to every Z_p exactly when it is an integer). Hence
+
+    F_A[Φ_(q,d,t)](ξ) =
+       { t^-1/2 exp(-π (qξ)^2/t),  if qξ∈Z,
+         0,                            otherwise }.         (10.1)
+
+Likewise, on diagonal rationals x∈Q,
+
+    Φ_(q,d,t)(x) =
+       { exp(-π t ((x-d)/q)^2), if (x-d)/q∈Z,
+         0,                    otherwise }.                  (10.2)
+
+**Exact source-indexed receipt:** For each n∈Z, the two surviving rational-lattice points are x=d+qn and ξ=n/q. The primal and Fourier terms have Gaussian exponents respectively t n² and n²/t, with zero global phase and no residual q modulus. Therefore, the classical ADELIC Poisson formula for this bona fide Schwartz test reduces precisely to
+
+    Σ_(n∈Z) exp(-π t n²)
+      = t^-1/2 Σ_(n∈Z) exp(-π n²/t).
+
+This derivation **uses genuine analytic Poisson summation**; matching individual terms and index maps is not a proof of equality of the two infinite sums. The existing SUCC theta source and Tate framework import Poisson separately. No RH consequence follows from theta symmetry alone.
+
+**Independent hostile controls:**
+- Real scaling |q| without all local |q|_p factors leaves a source-dependent nontrivial modulus.
+- Real plus phase without p-adic minus phase leaves a nonzero rational diagonal character at dξ=1/30.
+- A finite selection of only the q/d primes misses a new probe prime dividing ξ (e.g. ξ=1/97); the evaluator expands the probe atlas using the original rational source.
+- A pure finite ring Z/p^k cannot invert multiplication by p; the actual Q_p-ball carrier can, with the level shift k→k+1 and the correct Haar factor p^-1.
+- The translation d is a *real source event* in the event log, even though its diagonal phase cancels in Fourier and one can re-index the integer theta sum; the observed quotient can forget causal history.
+
+Implementation: observational_succ/adelic_schwartz_source.py. Exact rational controls: tests/test_adelic_schwartz_source.py and scripts/tate_schwartz_functor_probe.py. No float is used to assert Gaussian equality; exponent and amplitude are symbolic rational expressions.
+
+## 11. TF-08 — Uniform *finite-source* cutoff for one Weil test-support window (CLASSICAL FINITENESS / EXACT SOURCE CERTIFICATE)
+
+Suppose φ∈C_c^∞(R) is supported in [-a,a] with a>0 rational. Then h=φ*tildeφ is supported in [-2a,2a]. The prime-power side of the completed Weil form can therefore involve only n=p^k with log n<2a (boundary values also vanish for smooth compactly supported h).
+
+Define L=ceil(2a), and N=3^L. Since e<3, one has
+
+    exp(2a) ≤ exp(L) < 3^L=N,
+
+so EVERY active arithmetic impulse satisfies n<N. We can construct all genuine (n,p) with n=p^k<N *using integer arithmetic alone*, without evaluating any exp, gamma or zeta zeros. The conservative finite list is a source cover: it may include extra n with log n>2a, but never misses a relevant genuine event.
+
+This is the exact finite-to-global SUCC receipt for the **PRIME SIDE ONLY** at one support size. The complete Weil evaluation additionally contains a pole part and an Archimedean Gamma distribution, requiring independent analytic bounds. The code does not silently declare the local finite list complete for the full signed form.
+
+For the exhaustive global positivity goal, let a_m=m/2 (m=1,2,...). The supports [-a_m,a_m] are cofinal among compact supports, so global Weil positivity is equivalent (given the classical distributional continuity/identification) to positivity for EVERY m and EVERY test in the corresponding space. Checking finitely many windows cannot close this universal claim.
+
+**Countable dense-test lemma (CLASSICAL):** Each fixed C_c^∞([-a,a]) is a separable Fréchet space under all smooth seminorms; choose a countable dense rational-complex linear span D_a. If Q_a(φ)=W(φ*tildeφ) is continuous on that space, Q_a≥0 on D_a implies Q_a≥0 everywhere by continuity. Conversely, a strict negative witness persists on a neighborhood and can be approximated by an element of D_a, giving a finite-support finite-combination witness. This is a mathematically honest reduction to COUNTABLY MANY finite checks, **not** a finite check or a computation establishing their uniform sign. Actual effective enumeration and rigorous sign bounds require extra work.
+
+**Test-domain caveat:** a fixed signed auxiliary covariance or a finitely sampled Gram matrix may be positive while this entire graded family contains negative directions; moving boundary leakage and lack of uniform lower bounds remain live obstructions.
+
+Implementation: observational_succ/tate_weil_window.py and tests/test_tate_weil_window.py. Genuine prime powers are imported from existing completed_weil_transport.von_mangoldt_labels, not a fitted sample or standalone fake 6.
