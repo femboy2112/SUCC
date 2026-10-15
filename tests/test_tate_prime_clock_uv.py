@@ -4,7 +4,8 @@ from fractions import Fraction as F
 
 from observational_succ.tate_prime_clock_uv import (
     PrimeClockGateError, shift_path_geometry, exact_two_cell_negative_witness,
-    gamma_sparse_lower, genuine_first_prime_sparse_weil_certificate,
+    gamma_sparse_lower, gamma_sparse_linear_lower,
+    genuine_first_prime_sparse_weil_certificate,
     mutated_source_budget,
 )
 from observational_succ.apollo_krein_factor import (
@@ -57,47 +58,65 @@ class SharpPrimePathTheorem(unittest.TestCase):
 
 
 class AuthenticTateGammaUV(unittest.TestCase):
-    def test_support_gamma_budget_is_exact_rational_and_infinite_tail_positive(self):
+    def test_asymptotic_logarithmic_gamma_gate_remains_valid(self):
         z = gamma_sparse_lower(16, F(1, 1 << 17))
         self.assertEqual(z["gamma_modes_used"], 65536)
         self.assertEqual(z["gamma_energy_strictly_above"], 6)
         self.assertLess(z["max_schur_ratio"], F(1,2))
         self.assertTrue(z["uncomputed_infinite_gamma_tail_is_positive"])
-        self.assertTrue(z["all_smooth_tests_on_any_measurable_support_of_this_size"])
         self.assertFalse(z["RH_proved"])
 
-    def test_gamma_clock_precision_is_not_optional(self):
+    def test_new_exact_sixteen_gamma_mode_certificate(self):
+        z = gamma_sparse_linear_lower(16, F(1,16))
+        self.assertEqual(z["gamma_modes_used"],16)
+        self.assertEqual(z["exact_original_beta_sum"],
+                         sum((F(4,4*j+1) for j in range(16)),F()))
+        self.assertEqual(z["gamma_energy_at_least"],
+                         z["exact_original_beta_sum"]-1)
+        self.assertEqual(z["max_schur_ratio"],F(61,64))
+        self.assertGreater(z["gamma_energy_at_least"]-F(95,16),F(1,24))
+        self.assertTrue(z["remaining_original_gamma_tail_psd"])
+        self.assertFalse(z["RH_proved"])
+
+    def test_clock_budget_precision_is_not_optional(self):
         for k, mu in ((0, F(1,8)), (True,F(1,8)), (16,F(1,100)),
                       (16,0), (16,0.001), (129,F(1,10**40))):
             with self.assertRaises(PrimeClockGateError):
                 gamma_sparse_lower(k,mu)
         self.assertEqual(gamma_sparse_lower(2,F(1,8))[
             "gamma_energy_strictly_above"], F(4,3))
+        for J,mu in ((0,F(1,32)),(129,F(1,32)),(True,F(1,32)),
+                     (16,F(1,8)),(16,0),(16,0.1)):
+            with self.assertRaises(PrimeClockGateError):
+                gamma_sparse_linear_lower(J,mu)
 
     def test_original_first_prime_window_is_source_authenticated(self):
         c = genuine_first_prime_sparse_weil_certificate()
         self.assertEqual(c["source"], "SHA_PINNED_ORIGINAL_ZETA")
         self.assertEqual(c["actual_prime_power_labels"], (2,))
         self.assertTrue(c["prime_active_at_radius_half"])
-        self.assertEqual(c["gamma_clock_modes"], 1<<16)
-        self.assertEqual(c["gamma_strict_lower"], 6)
+        self.assertEqual(c["support_measure_max"],F(1,16))
+        self.assertEqual(c["gamma_clock_modes"],16)
+        self.assertEqual(c["gamma_exact_L2_lower"],
+                         sum((F(4,4*j+1) for j in range(16)),F())-1)
         self.assertEqual(c["completed_real_contact_strict_upper"], F(43,8))
         self.assertEqual(c["first_prime_shift_strict_upper"], F(1,2))
         self.assertEqual(c["negative_pole_strict_upper"], F(1,16))
-        self.assertEqual(c["original_completed_Weil_L2_margin_strictly_above"], F(1,16))
+        self.assertGreater(c["uniform_source_margin_exact_lower"],F(1,24))
+        self.assertEqual(c["original_completed_Weil_L2_margin_strictly_above"], F(1,24))
         self.assertFalse(c["all_tests_at_radius_half_proved"])
         self.assertFalse(c["all_a_positivity_proved"])
         self.assertFalse(c["RH_proved"])
 
     def test_uniform_subwindows_and_monotone_support_budget(self):
         for a in (F(1,24), F(1,12), F(1,3), F(1,2)):
-            c = genuine_first_prime_sparse_weil_certificate(a, F(1,1<<18))
-            self.assertGreaterEqual(c["original_completed_Weil_L2_margin_strictly_above"], F(1,16))
+            c = genuine_first_prime_sparse_weil_certificate(a, F(1,32))
+            self.assertGreater(c["uniform_source_margin_exact_lower"], F(1,24))
             self.assertTrue(set(c["actual_prime_power_labels"]).issubset({2}))
 
     def test_source_spoofing_and_unjustified_support_promotion_rejected(self):
-        for a,mu in ((F(3,4),F(1,1<<17)),(F(1,2),F(1,100)),
-                     (True,F(1,1<<17)),(F(1,2),0),
+        for a,mu in ((F(3,4),F(1,16)),(F(1,2),F(1,8)),
+                     (True,F(1,16)),(F(1,2),0),
                      (F(1,2),0.001)):
             with self.assertRaises(PrimeClockGateError):
                 genuine_first_prime_sparse_weil_certificate(a,mu)
@@ -110,7 +129,7 @@ class AuthenticTateGammaUV(unittest.TestCase):
             self.assertFalse(mutant["authentic_source"])
             self.assertFalse(mutant["RH_proved"])
         self.assertEqual(mutated_source_budget()["mutant_margin_from_same_conservative_budget"],
-                         F(1,16))
+                         F(1,24))
         with self.assertRaises(PrimeClockGateError):
             mutated_source_budget(0,0.1)
 
