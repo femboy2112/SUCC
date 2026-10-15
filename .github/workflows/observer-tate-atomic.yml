@@ -10,10 +10,12 @@ on:
       - 'observational_succ/observer_global_sign_gate.py'
       - 'observational_succ/tate_adele_quotient_descent.py'
       - 'observational_succ/field_limit_trichotomy.py'
+      - 'observational_succ/field_limit_compactness.py'
       - 'tests/test_tate_observer_completion.py'
       - 'tests/test_observer_global_sign_gate.py'
       - 'tests/test_tate_adele_quotient_descent.py'
       - 'tests/test_field_limit_trichotomy.py'
+      - 'tests/test_field_limit_compactness.py'
       - 'scripts/observer_tate_atomic_probe.py'
       - '.github/workflows/observer-tate-atomic.yml'
 
@@ -37,6 +39,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_tate_adele_quotient_descent.py' -v
       - name: Simple / IdealHard / Fucked observer-limit math and bounded universal TM tests
         run: python -m unittest discover -s tests -p 'test_field_limit_trichotomy.py' -v
+      - name: Source compactness, finite closed-fiber gluing and unique-path effectivity
+        run: python -m unittest discover -s tests -p 'test_field_limit_compactness.py' -v
       - name: Source signed Weil and finite Schur observer growth tests
         run: python -m unittest discover -s tests -p 'test_observer_global_sign_gate.py' -v
       - name: Independent original source regression
