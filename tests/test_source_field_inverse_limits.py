@@ -6,7 +6,7 @@ from observational_succ.source_field_inverse_limits import (
     FieldClosureError, FieldSourcePassport, simple_residue_inverse_limit,
     finite_kleene_tree_calibration, noncompact_descending_field,
     hidden_coordinate_phantom, moving_impostor, remote_negative_sign_shadow,
-    rh_inverse_limit_interface,
+    rh_inverse_limit_interface, original_weil_finite_gamma_sign_gap,
 )
 
 
@@ -137,6 +137,24 @@ class FuckedFieldBoundary(unittest.TestCase):
 
 
 class TateSuzukiToolRelativeTruth(unittest.TestCase):
+    def test_real_negative_truncated_low_J2_can_be_rescued_by_true_Gamma_tail(self):
+        d=original_weil_finite_gamma_sign_gap(2)
+        self.assertEqual(d["source"],"ORIGINAL_PINNED_ZETA_WEIL_SUZUKI_LOW_LEGENDRE_1")
+        self.assertEqual(d["a"],F(1,2))
+        self.assertEqual(d["low_mode_L2_norm_squared"],F(1,3))
+        self.assertEqual(d["omitted_Gamma_kernel_uniform_upper"],F(13,81))
+        self.assertTrue(d["omitted_original_Gamma_tail_PSD"])
+        self.assertTrue(d["truncated_stage_is_strictly_negative"])
+        self.assertLess(d["original_truncated_low_rayleigh_interval"][1],0)
+        self.assertLess(d["full_source_rayleigh_enclosure"][0],0)
+        self.assertGreater(d["full_source_rayleigh_enclosure"][1],0)
+        self.assertFalse(d["true_completed_low_mode_sign_decidable_from_this_stage"])
+        self.assertFalse(d["mathematically_permanent_phantom_or_RH_counterexample_inferred"])
+        self.assertEqual(d["field_label"],"UNRESOLVED_STAGE_TO_GLOBAL_SIGN")
+        self.assertFalse(d["RH_proved"])
+        with self.assertRaises(FieldClosureError):
+            original_weil_finite_gamma_sign_gap(3)
+
     def test_actual_source_is_not_promoted_from_high_to_full_Weil_sign(self):
         result=rh_inverse_limit_interface()
         self.assertEqual(result["source"],"SHA_PINNED_ORIGINAL_COMPLETED_ZETA_WEIL_SUZUKI")
