@@ -208,3 +208,30 @@ The strongest next theorem would identify **a source-constructed positive Gram f
 The exact code performs only authenticated source prime-power enumeration; no nontrivial zero positions enter. All numerical output is explicitly labeled calibration rather than theorem certificates.
 
 **RH PROVED: NO.**
+
+
+## O7. Exact-rational source-authentic anchored Gram minor (PROVED FINITE, not RH)
+
+The companion one_object_kernel_certificates.py deliberately does not manufacture a positive kernel. It imports the *original signed zeta* interval evaluator source_weil_hierarchy.py only through suzuki_legendre_source._pinned_source(), which checks the inherited PR #85 Git blob ID against PARENT_SOURCE_BLOB. The authenticated source has true $n=p^k$ jets, original pole/contact/Gamma and half-density; no nontrivial zero inputs.
+
+For rational $t$ with $|t|\le2$, write $I_J(t)=[l_J(t),u_J(t)]$ for the previous source_weil_hierarchy.screw_interval evaluation. That original evaluator includes $C_\infty$ but only its first $J$ **negative** Gamma potential terms. Its independent proven tail bound is
+\[
+E_J=\frac1{4J+1}+\frac4{(4J+1)^2}.
+\]
+The authentic infinite $g(t)$ therefore belongs to the outward rational interval
+\[
+\boxed{g(t)\in [\,l_J(t)-E_J,\;u_J(t)\,].}
+\tag{O7-g}
+\]
+This is a **different but compatible** approximation convention from O1's exact contact-matched $g_J$, and the distinction is preserved.
+
+For real rational $x,y$ with $|x|,|y|,|x-y|\le2$, propagate these intervals through
+$K_g(x,y)=g(x-y)-g(x)-g(y)+g(0)$; use **symbolic cancellation** for $x=0$ or $y=0$ to avoid interval-dependency inflation. For the two-point Gram $[[K(x,x),K(x,y)],[K(x,y),K(y,y)]]$, interval multiplication and squaring produce an exact rational determinant enclosure.
+
+On the specific authentic source points $x=1/4,y=1/2$ at $J=128$, the outward enclosures certify
+\[
+K(x,x)>0,\quad K(y,y)>0,\quad K(x,x)K(y,y)-K(x,y)^2>0.
+\]
+**Evidence:** exact Fraction arithmetic on SHA-checked imported source intervals; independent dedicated GitHub Actions success on Python 3.10 and 3.13 at ONE OBJECT checkpoint d831239cb13687f2f8727e9f7ad73cf68f4e01db, run 38681543132. One earlier exploratory exact-head run failed solely because interval arithmetic evaluated $g(|y|)-g(|y|)$ as two independent uncertain inputs; its failure is preserved by workflow history, then fixed by analytically justified anchored cancellation.
+
+**Scope:** this is a *two-point source-authentic* sign certificate, not a $\lambda\downarrow0$ Suzuki Schur proof, all-$a$ sign, Connes global trace, all-finite-set Hilbert embedding, or RH. It demonstrates that the finite construction can actually certify a positive principal minor of the original signed source, not merely a synthetic positive Gram or a numerical fit. The next adversarial instrument is a certified $3\times3$ principal-minor ladder plus a proof-capable uniform source-derived lower bound, rather than extrapolating this single finite witness.
