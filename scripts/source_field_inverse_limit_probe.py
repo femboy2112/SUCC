@@ -6,8 +6,13 @@ No nontrivial zeta-zero location is read.
 """
 import json
 import sys
+from fractions import Fraction as F
 from pathlib import Path
 
+from observational_succ.source_field_gluing import (
+    recursive_positive_gram_stage, exact_scalar_schur_gluing,
+    paired_neutral_source_birth,
+)
 from observational_succ.source_field_inverse_limits import (
     simple_residue_inverse_limit, finite_kleene_tree_calibration,
     noncompact_descending_field, hidden_coordinate_phantom,
@@ -26,8 +31,12 @@ def receipt():
     visible=remote_negative_sign_shadow(8,7)
     rh=rh_inverse_limit_interface()
     signed=original_weil_finite_gamma_sign_gap()
+    synth=recursive_positive_gram_stage(4,F(1,2))
+    valid=exact_scalar_schur_gluing(1,F(1,2),F(1,4))
+    ghost=exact_scalar_schur_gluing(0,F(1,2),1)
+    neutral=paired_neutral_source_birth(3,2,F(1,4))
     return {
-        "schema":"SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v2",
+        "schema":"SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v3",
         "source_schemas_are_NOT_empirical_attestation":True,
         "simple":{
             "field":s["field"],
@@ -81,6 +90,27 @@ def receipt():
             "full_original_low_mode_sign_proved":False,
             "field_status":signed["field_label"],
             "RH_proved":False,
+        },
+        "recursive_global_positive_gluing":{
+            "source":synth["source"],
+            "finite_stage_n":synth["size_n"],
+            "finite_to_global_positive_law":"G=(I+t*S)(I+t*S)* on ell2",
+            "uniform_positive_gap":str(synth["uniform_infinite_positive_gap"]),
+            "finite_stage_factorization_exact":synth["exact_factorization_G_equals_L_Lstar"],
+            "all_n_prefix_compatibility_by_formula":synth["all_n_compatible_prefix_law_by_formula"],
+            "physically_executed_infinitely_many_matrices":False,
+            "synthetic_not_original_Weil":True,
+        },
+        "singular_source_schur":{
+            "valid_rank_deficient_positive_block":valid["complete_block_PSD"],
+            "valid_zero_schur":str(valid["true_schur_when_defined"]),
+            "ghost_parent_range_failed":not ghost["cross_in_parent_range"],
+            "ghost_negative_determinant":str(ghost["principal_determinant"]),
+            "ghost_block_PSD":ghost["complete_block_PSD"],
+            "paired_neutral_signed_old_and_new_equal":
+                neutral["old_signed_source_value"]==neutral["new_signed_source_value"],
+            "paired_features_both_changed":neutral["both_feature_carriers_changed"],
+            "original_source_all_a_contraction":False,
         },
         "original_Weil_RH_frontier":{
             "source":rh["source"],
