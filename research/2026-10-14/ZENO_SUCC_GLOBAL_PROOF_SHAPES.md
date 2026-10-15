@@ -18,7 +18,7 @@ A finite proof may establish an infinitely quantified law without physically enu
 
 These distinctions already appear in SUCC's Zeno proof-backaction debt, VOYAGER, ordinal-report core and signed Weil work; the research contribution here is an explicit common interface, exact compatible/hostile source models, a **place-indexed Zeno obstruction**, and a **true signed-Weil dyadic effective structural rate**.
 
-## 1. Historical Zeno versus the modern SUCC reconstruction — ZS-01 (CLASSICAL / PROVED LOCAL)
+## 1. Historical Zeno versus the modern SUCC reconstruction — ZSH-01 (CLASSICAL / PROVED LOCAL)
 
 The surviving formulations are largely second-hand through Aristotle and Simplicius. The [Stanford Encyclopedia of Philosophy's Zeno account](https://plato.stanford.edu/entries/paradox-zeno/) distinguishes the Dichotomy, Achilles, Arrow and Stadium; our last two are *minimal operational witness models*, not a claim to settle every disputed historical interpretation.
 
@@ -54,7 +54,7 @@ When \(0<u<v\), every finite gap is positive but it converges to 0; when \(u=0\)
 
 Let \(E_n\) be a finite physical record, \(x_n\) its mathematical sequence, and \(x_\infty\) the limit in a declared complete space. A mathematical proof of \(\forall\epsilon>0\exists N\forall n\ge N,\ d(x_n,x_\infty)<\epsilon\) does **not** itself establish any finite actual-world \(E_\omega\) event. Likewise "we have not observed endpoint 1 at finite n" does not refute mathematical endpoint 1. Zeno has exposed a *quantifier/typing* gap rather than universal impossibility of movement.
 
-## 2. The GENERAL ZENO TRANSPORT THEOREM — ZS-02 (CLASSICAL METRIC/UNIFORM COMPLETION)
+## 2. The GENERAL ZENO TRANSPORT THEOREM — ZSH-02 (CLASSICAL METRIC/UNIFORM COMPLETION)
 
 Let \((X,d)\) be a complete metric space. Let \(x_n\in X\) arise from a finite-description source-indexed SUCC process and suppose
 \[
@@ -93,7 +93,7 @@ The existing mathlib4 formalization [UniformSpace.Completion](https://leanprover
 
 The source executable \`observational_succ/zeno_limit_transport.py\` implements all named finite laws, exact Cauchy/modulus, observer Lipschitz affine target and hostile examples. Its rational \(\sqrt2\) construction is a genuine missing-completeness test; the code does not claim to construct \(\mathbb R\) from scratch.
 
-## 3. ADELIC ZENO — no global rational contraction — ZS-03 (CLASSICAL UFD/PRODUCT FORMULA + PROVED LOCAL)
+## 3. ADELIC ZENO — no global rational contraction — ZSH-03 (CLASSICAL UFD/PRODUCT FORMULA + PROVED LOCAL)
 
 This is the strongest arithmetic connection of the present round.
 
@@ -123,7 +123,7 @@ The exact module \`observational_succ/adelic_zeno.py\` authenticates prime facto
 
 **Consequential insight:** there is no single *nontrivial rational Zeno contraction scalar* that can be used unmodified to glue the real and all finite places of \(\mathbb Q\). A lawful "adelic Zeno" interface must be **place-indexed**, transporting distinct metric/uniform structures and the common original arithmetic source through a global reciprocity condition. This is independent of RH and stronger than a vague prime-clock analogy. It does not show that adelic mathematics itself cannot be built.
 
-## 4. SIGNED TWO-AXIS ZENO: finite interactions do not authorize limit interchange — ZS-04 (PROVED LOCAL exact source, CLASSICAL FUBINI)
+## 4. SIGNED TWO-AXIS ZENO: finite interactions do not authorize limit interchange — ZSH-04 (PROVED LOCAL exact source, CLASSICAL FUBINI)
 
 Define the absolutely explicit signed double law
 \[
@@ -147,7 +147,7 @@ This is particularly relevant to attempts to exchange prime cutoffs, Gamma ladde
 
 The code \`observational_succ/zeno_analytic_shapes.py\` gives independent double enumeration and closed-form witnesses, including diagonal versus one-extra-column controls. This countermodel is **not** a mutation of actual zeta coefficients; it refutes only the generic inference.
 
-## 5. ANALYTIC ZENO: uniqueness is not stable continuation — ZS-05 (CLASSICAL HADAMARD + PROVED LOCAL POLYNOMIAL CONTROLS)
+## 5. ANALYTIC ZENO: uniqueness is not stable continuation — ZSH-05 (CLASSICAL HADAMARD + PROVED LOCAL POLYNOMIAL CONTROLS)
 
 The analytic identity theorem makes an actual completed holomorphic function **unique** once it agrees with a source-authentic germ on a nonempty connected open domain. That does not mean finite numerical knowledge of the germ controls far-away values.
 
@@ -161,7 +161,7 @@ For a **verified monomial source**, \(M(2)^2=M(1)M(4)\) exactly. The unstable \(
 
 The module has a **conditional** three-circle source interface returning \(AB\), but never declares an arbitrary user-supplied B to be authenticated. Analytic continuation itself may be a classical theorem; numerical stability requires stronger **a priori source bounds**. PRs #74/#78/#83 already establish such source-specific growth control for \(\xi\) in selected regions, and their proofs—not a generic monomial—must authorize any zeta application.
 
-## 6. WEIL ZENO: a source-faithful explicit structural convergence schedule — ZS-06 (PROVED LOCAL using ancestor #85)
+## 6. WEIL ZENO: a source-faithful explicit structural convergence schedule — ZSH-06 (PROVED LOCAL using ancestor #85)
 
 The signed completed Weil operator from authentic Suzuki source is the central RH downstream application, not the definition of this general framework. Ancestor SUCC PR #85 already constructs \(G_a\) on \(H_a=L^2_0(-a,a)\) with prime powers, Gamma, pole/contact, half density, and the domain-correct identity \(Q_W(v)=\langle G_a(iv'),iv'\rangle\). Its true omitted **positive** Gamma modes have norm
 \[
@@ -288,7 +288,7 @@ python scripts/verify_provenance.py
 Remote exact-head CI and full repository/Lean integration are only claimed if independently checked; no blanket pass from an ancestor. Nothing has been merged.
 
 
-## 4a. Positive two-SUCC completion succeeds with a joint modulus — ZS-04b (PROVED LOCAL / classical Tonelli)
+## 4a. Positive two-SUCC completion succeeds with a joint modulus — ZSH-04b (PROVED LOCAL / classical Tonelli)
 
 A matched **nonnegative** two-axis source has terms \(b_{i,j}=2^{-i-1}\cdot2\cdot3^{-j-1}\), all positive. Every finite rectangle satisfies
 \[
@@ -300,7 +300,7 @@ This explicitly controls the **joint** two-axis limit, \(S^+(N,M)\to1\), indepen
 This result **does not imply** the genuine completed Weil form is positive: its arithmetic prime/pole/Gamma source is signed and different. Importing the nonnegative Tonelli theorem there without an actual positive factorization would be circular source substitution.
 
 
-## 10. THE FOURTEENTH SHAPE: renormalized distributional Zeno — ZS-07 (CLASSICAL source + PROVED LOCAL interval calibration)
+## 10. THE FOURTEENTH SHAPE: renormalized distributional Zeno — ZSH-07 (CLASSICAL source + PROVED LOCAL interval calibration)
 
 The concurrently advancing Black Sun IV Zeno PR #93 emphasizes another mathematically indispensable interface: **the finite mathematical kernel can diverge at a point even when its renormalized distributional pairing has a finite, source-faithful completion**.
 
