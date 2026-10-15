@@ -8,6 +8,8 @@ on:
     paths:
       - 'observational_succ/tate_local_contract.py'
       - 'tests/test_tate_local_contract.py'
+      - 'tests/test_tate_weil_source_bridge.py'
+      - 'observational_succ/tate_weil_source_bridge.py'
       - 'scripts/tate_local_contract_probe.py'
       - '.github/workflows/tate-source-conductor.yml'
 
@@ -26,7 +28,7 @@ jobs:
       - name: Install test dependencies
         run: python -m pip install -e ".[test]"
       - name: Exact local and completed chi3 tests
-        run: python -m unittest discover -s tests -p 'test_tate_local_contract.py' -v
+        run: python -m unittest discover -s tests -p 'test_tate_*.py' -v
       - name: Deterministic certificate receipt
         run: python scripts/tate_local_contract_probe.py
       - name: Preserve source provenance boundary
