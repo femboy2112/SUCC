@@ -1,0 +1,42 @@
+name: SUCC signed Weil H1 source spectral tail
+
+on:
+  push:
+    branches:
+      - research/signed-weil-h1-spectral-tail-2026-10-14
+  pull_request:
+    paths:
+      - 'observational_succ/signed_weil_h1_tail.py'
+      - 'tests/test_signed_weil_h1_tail.py'
+      - 'scripts/signed_weil_h1_tail_probe.py'
+      - 'research/2026-10-14/SIGNED_WEIL_H1_TAIL_RECEIPT.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-signed-H1:
+    name: Original Weil H1 test and source receipt (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Independently authenticate original Git-pinned contour source receipt
+        run: |
+          python - <<'PY'
+          from observational_succ.signed_weil_h1_tail import first_pair_receipt
+          a=first_pair_receipt()
+          assert a['positive_pair_exists'] and not a['RH_proved']
+          PY
+      - name: Source-only rational signed H1 theorem regressions
+        run: python -m unittest discover -s tests -p 'test_signed_weil_h1_tail.py' -v
+      - name: Exact zero-independent source receipt replay
+        run: python scripts/signed_weil_h1_tail_probe.py --verify research/2026-10-14/SIGNED_WEIL_H1_TAIL_RECEIPT.json

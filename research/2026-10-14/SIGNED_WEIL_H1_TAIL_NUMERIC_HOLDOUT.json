@@ -1,0 +1,74 @@
+{
+  "Xi_growth_points_no_zero_lookup": [
+    {
+      "absolute_Xi": "0.5450942070121344167544286",
+      "shifted_z": "2.0",
+      "theta_Jensen_growth_upper": "81.0"
+    },
+    {
+      "absolute_Xi": "0.5591804323279701446891029",
+      "shifted_z": "(3.0 + 2.0j)",
+      "theta_Jensen_growth_upper": "998.6940149690249282743922"
+    },
+    {
+      "absolute_Xi": "0.4160493331187113686755089",
+      "shifted_z": "(4.0 + 5.0j)",
+      "theta_Jensen_growth_upper": "99870.58184874902983625548"
+    },
+    {
+      "absolute_Xi": "0.3136508611055930414795501",
+      "shifted_z": "(5.0 + 7.0j)",
+      "theta_Jensen_growth_upper": "4647664.828210843396202182"
+    }
+  ],
+  "no_RH_assertion": true,
+  "no_zeta_zero_list_or_zero_finding": true,
+  "precision_digits": 45,
+  "source_only_H1_tail": [
+    {
+      "T": 16,
+      "delta": "19.9991137555125733721052",
+      "source_upper_count": 466
+    },
+    {
+      "T": 100,
+      "delta": "4.2573538147324268854664",
+      "source_upper_count": 4195
+    },
+    {
+      "T": 1000,
+      "delta": "0.558606617187813739331539",
+      "source_upper_count": 58059
+    },
+    {
+      "T": 1000000,
+      "delta": "0.000957220324331526891686238",
+      "source_upper_count": 106412635
+    }
+  ],
+  "source_pair_receipt_sha": "8f5ae1135701a933ba4946cb0b584bba4a355a47",
+  "status": "INDEPENDENT_NUMERICAL_CALIBRATION_NOT_PROOF",
+  "synthetic_offcritical_products": [
+    {
+      "absolute_spectral_product": "0.0000521808221992352640568755",
+      "perzero_H1_envelope": "0.01343402516866771082617419",
+      "synthetic_beta": "0.25",
+      "synthetic_gamma": 30,
+      "zero_is_authentic": false
+    },
+    {
+      "absolute_spectral_product": "0.000002572364216334822131176199",
+      "perzero_H1_envelope": "0.005247666081510824541474294",
+      "synthetic_beta": "0.5",
+      "synthetic_gamma": 48,
+      "zero_is_authentic": false
+    },
+    {
+      "absolute_spectral_product": "0.0000002654705681288430259008582",
+      "perzero_H1_envelope": "0.001492669463185301202908244",
+      "synthetic_beta": "0.75",
+      "synthetic_gamma": 90,
+      "zero_is_authentic": false
+    }
+  ]
+}
