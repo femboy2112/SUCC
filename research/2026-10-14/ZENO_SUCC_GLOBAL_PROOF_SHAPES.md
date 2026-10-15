@@ -298,3 +298,44 @@ A matched **nonnegative** two-axis source has terms \(b_{i,j}=2^{-i-1}\cdot2\cdo
 This explicitly controls the **joint** two-axis limit, \(S^+(N,M)\to1\), independent of how N and M jointly tend to infinity, and both iterated limits equal 1. Classical Tonelli/monotone convergence supplies the general theorem; the source-specific product and rational tail are elementary finite geometric identities. \`positive_double_successor\` independently enumerates both finite positive sums, verifies the closed form, and checks the joint tail. It is the **positive calibration** missing from the signed interchange obstruction in §4: a successful two-axis SUCC proof carries a *common-basis source* and a **joint** error modulus, not merely two independent paths of finite successes.
 
 This result **does not imply** the genuine completed Weil form is positive: its arithmetic prime/pole/Gamma source is signed and different. Importing the nonnegative Tonelli theorem there without an actual positive factorization would be circular source substitution.
+
+
+## 10. THE FOURTEENTH SHAPE: renormalized distributional Zeno — ZS-07 (CLASSICAL source + PROVED LOCAL interval calibration)
+
+The concurrently advancing Black Sun IV Zeno PR #93 emphasizes another mathematically indispensable interface: **the finite mathematical kernel can diverge at a point even when its renormalized distributional pairing has a finite, source-faithful completion**.
+
+For the original real Gamma ladder of completed zeta, the bare positive density on \(x>0\) is
+\[
+ K_\Gamma(x)=\sum_{j=0}^\infty e^{-(2j+1/2)x}
+ =\frac{e^{-x/2}}{1-e^{-2x}}.
+\tag{Z14}
+\]
+At \(x=0\), every finite partial term equals 1 and the infinite pointwise sum diverges; it is **not** a finite kernel value to be sampled or inserted into a Gram matrix. Suzuki's correct completed real-place distribution instead acts on a **source-subtracted test germ**
+\[
+ D_h(x)=h(x)+h(-x)-2e^{-x/2}h(0).
+\]
+For the *local constant germ* \(h(x)=1\) near the contact point (NOT an entire compactly supported Weil test by itself), \(D_h(x)=2(1-e^{-x/2})\). Then
+\[
+ \boxed{\lim_{x\downarrow0}D_h(x)K_\Gamma(x)=\frac12.}\tag{Z15}
+\]
+Proof: \((1-e^{-x/2})/x\to1/2\) and \((1-e^{-2x})/x\to2\), while \(e^{-x/2}\to1\). The divergent bare factor is canceled by the vanishing source-difference factor. Other compact test germs have the same prescribed \(h(0)\) leading contact; the *full* completed Weil formula also carries the exact separate \(\log(4\pi)+\gamma\) normalization, original prime powers, poles and half-density, so Z15 alone never identifies or signs it.
+
+\`observational_succ/zeno_gamma_contact.py\` uses the exact rational outward exponential intervals of ancestor SUCC #85, evaluates the genuine bare real-place Gamma density and the correct local cancellation at \(x=2^{-n}\) for finite n, and explicitly refuses a direct \(x=0\) evaluation. Its independent optional high-precision calibration checks several rational inputs. **This is a finite source-specific contact test, NOT a new general distribution-extension theorem and NOT a proof of RH.**
+
+This 14th bridge belongs beside measure/operator convergence: **test-function topology, counterterm/contact subtraction, distributional extension and source normalization** are load-bearing. Simply demanding pointwise convergence at the singularity would incorrectly classify a valid analytic completion as impossible.
+
+## 11. Cross-branch triangulation: same Zeno question, genuinely different instruments
+
+During development three parallel Zeno SUCC PRs advanced on **different original ancestries**:
+
+| Branch | Most consequential inherited or new-to-project mathematical instrument | What remains unpaid |
+|---|---|---|
+| [#93 BLACK SUN IV](https://github.com/femboy2112/SUCC/pull/93), head \`7b998bcc427a397a00fd8c2d7cb74280de187d0d\` | Gamma source ladder and contact subtraction at t=0; original Baez–Duarte distance lower-bound witness and first-window quantitative audit | BD distance limit 0 and signed window all-test margin, RH-hard |
+| [#94 ZENO SUCC](https://github.com/femboy2112/SUCC/pull/94), head \`cd9091572d11d85e0007e9b87e2004b6d3d85f63\` | Detailed four motion paradoxes; Thomson lamp; source-typed Banach/closed-set/Schur proof templates; real Gamma positive tail on original H¹; mathematical proof versus physical omega actualization | Authentic finite 30-moment source Schur matrices and globally sound sign rule |
+| **This #95 ZENO SHAPES**, original #85 signed hierarchy | **Place-indexed Zeno and product-formula global-contraction obstruction**; exact signed two-SUCC Fubini failure/positive Tonelli control; analytic three-circle stability; full shape atlas; dyadic explicit spatial/Gamma norm rate; local renormalization test | Uniform signed Weil all-test domination, source-authenticated huge dyadic matrices, Lean source-wrapper |
+
+**Provenance and priority discipline:** #93 and #94 were consulted during this round, but their files/commits were **not imported into this branch**. Shared citations to Suzuki/PRs #71 and #85 are shared mathematical provenance, not independent confirmations of an RH sign claim. Mathematical overlap is labelled, not presented as multiple discoveries. PR #94 owns the existing \`docs/CLAIM_SUPPLEMENT_ZENO_SUCC.md\` path; this branch uses the distinct \`docs/CLAIM_SUPPLEMENT_ZENO_SHAPES.md\` to avoid a known future merge collision.
+
+**Adversarial correction to the strongest proposal:** the sentence "every finite→global proof is a Zeno completion" is false if meant as *metric summable stages*. A single finite induction can establish \(\forall n,\ \sum_{d\mid n}\Lambda(d)=\log n\) under classical prime factorization without taking a limit of numerical stage values. The more general surviving claim is that global theorem export always needs a valid **proof-transport rule**—which may be induction, algebraic identity, finite support compactness, categorical descent, analytic limit or something else. That generalized interface is exactly what SUCC should formalize.
+
+**Recommended integration after independent maintainer review:** keep #94's four paradoxes/Thomson and Schur core, #93's Gamma contact/BD rate audit, and #95's adelic/measure/analytic/shape gate modules as **separate source-typed adapters**. Merge neither duplicate claim ledger nor incompatible branch ancestry silently; run full provenance and original Weil regressions, then use Lean4.14/mathlib completion as the formal common host. No user authorization to merge \`main\` was assumed.
