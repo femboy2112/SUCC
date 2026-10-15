@@ -1,0 +1,39 @@
+name: Prime-form heat and Mellin source exact research checks
+
+on:
+  push:
+    branches:
+      - 'research/prime-form-heat-*'
+  pull_request:
+    paths:
+      - 'observational_succ/prime_form_heat.py'
+      - 'tests/test_prime_form_heat.py'
+      - 'scripts/prime_form_heat_probe.py'
+      - 'research/2026-10-14/PRIME_FORM_HEAT*'
+      - 'docs/CLAIM_SUPPLEMENT_PRIME_FORM_HEAT.md'
+      - '.github/workflows/prime-form-heat.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prime_source_heat:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[test]'
+      - name: Finite source algebra and adversarial analytic checks
+        run: python -m unittest discover -s tests -p 'test_prime_form_heat.py' -v
+      - name: Deterministic finite source and Mellin receipt must replay
+        run: python scripts/prime_form_heat_probe.py --verify research/2026-10-14/PRIME_FORM_HEAT_RECEIPT.json
+      - name: Original source preservation gate
+        run: python scripts/verify_provenance.py

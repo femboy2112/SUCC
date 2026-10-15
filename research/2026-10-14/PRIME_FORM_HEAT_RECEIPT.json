@@ -1,0 +1,182 @@
+{
+  "affine_digit_carrier": {
+    "commutator_2_3_digits_1_1": -1,
+    "mixed_radices": [
+      2,
+      3,
+      5
+    ],
+    "radix6_affine_valid_not_arithmetic_prime": 23,
+    "sample_address": 29,
+    "sample_unique_decode": [
+      1,
+      2,
+      4
+    ],
+    "sample_word": [
+      1,
+      2,
+      4
+    ]
+  },
+  "archimedean_heat": {
+    "exponent1_vs_exponent2_error_s3": "0.0946518742254963574",
+    "mellin_gaussian_normalization": [
+      "0.174882864877231022",
+      "-0.096309485294648873"
+    ],
+    "pi_scaled_error_s2": "0.106103295394596891",
+    "real_gaussian_integral_error": "1.06910588403687826e-50"
+  },
+  "arithmetic_zero_cosets": {
+    "p5_jets_upto_650": [
+      5,
+      25,
+      125,
+      625
+    ],
+    "p5_local_log_coefficient_s2": "1/24",
+    "prime_power_labels_upto_15": [
+      [
+        2,
+        2,
+        1
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        4,
+        2,
+        2
+      ],
+      [
+        5,
+        5,
+        1
+      ],
+      [
+        7,
+        7,
+        1
+      ],
+      [
+        8,
+        2,
+        3
+      ],
+      [
+        9,
+        3,
+        2
+      ],
+      [
+        11,
+        11,
+        1
+      ],
+      [
+        13,
+        13,
+        1
+      ]
+    ],
+    "radix4_jets_upto_650": [
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "radix4_local_log_coefficient_s2": "1/12",
+    "radix6_jets_upto_650": [],
+    "radix6_local_zero": true
+  },
+  "finite_fourier_rotation": {
+    "coset": 2,
+    "dft_r1_error": "1.71056941445900521e-49",
+    "radix": 5,
+    "theta_direct": "0.00657367301227580833",
+    "theta_dual_error": "5.36198573649820411e-51",
+    "theta_modular_error_t_2_5": "0.0",
+    "time": "2/5"
+  },
+  "inner_pascal_heat": {
+    "character_bound_n_200_t_1_u_half": "1/2400",
+    "character_error_n_200": "0.0000811749752788626458",
+    "correlated_mutant_error_n_200": "1.61787231214785732",
+    "gaussian_x4_heat_constant_at_t_1_2": "3",
+    "n_20_t_1_2_x4_finite_infinite_gap": [
+      "29/10",
+      "3",
+      "1/10"
+    ],
+    "radix6_digit_heat_error_n_800": "0.0000128655904172220158"
+  },
+  "one_global_archimedean_gate": {
+    "P29_integer_sigma2_Euler": "86285158710179/52836150804480",
+    "P29_real_zeta2_difference": "0.0118635763524872161",
+    "P29_rigorous_tail_bound_exact": "1/29",
+    "P29_sigma1_Euler_greater_than_harmonic_prefix": true,
+    "analytic_continuation_required_beyond_sigma_1": true,
+    "exact_finite_euler_product": "2836093/1822500",
+    "exponent_depth": 3,
+    "global_Euler_product_sigma_le_1_diverges_on_positive_real_axis": true,
+    "independent_enumerated_word_sum": "2836093/1822500",
+    "independent_heat_integral_two_primes_error": "6.4308944944785705e-34",
+    "one_gamma_gaussian_mellin": "0.495339610445347291",
+    "one_gamma_is_not_full_weil_positivity": true,
+    "prime_factors": [
+      2,
+      3,
+      5
+    ],
+    "smooth_state_count": 64,
+    "unique_smooth_integer_count": 64,
+    "wrong_gamma_per_prime_absolute_error": "0.445151214810090205"
+  },
+  "prime_jet_to_gamma": {
+    "full_log_derivative_mellin": "0.181424218841121038",
+    "heat_powers_are_exact_source_labels": true,
+    "independent_finite_numeric_heat_integral_error": "3.67341984631964846e-40",
+    "max_integer": 500,
+    "non_euler_radicand_mutants_accepted": false,
+    "normalized_truncated_mellin": "0.180792549729325718",
+    "residual_abs": "0.000631669111795320016",
+    "rigorous_analytic_tail_majorant_evaluated_numeric": "0.0045929621653388446",
+    "s": 2
+  },
+  "source_measure_pole_shift": {
+    "p3_genuine_euler_s2": "9/8",
+    "p3_sigma2_per_state_p_inverse": "9/8",
+    "p3_sigma2_raw_count": "3/2",
+    "weighting_is_additional_functional_not_ordinary_trace": true
+  },
+  "source_pin": {
+    "RH_proved": false,
+    "arithmetic_carrier": "positive integers with exact primality and von Mangoldt prime powers",
+    "completed_weil_positivity_proved": false,
+    "parent_commit": "a29170d4ff76899b18f2ac17748f42cb336cd20d",
+    "source_authenticated_physical": false,
+    "spatial_carrier": "real Gaussian Fourier lattice with declared pi normalization"
+  },
+  "status": "EXACT_SOURCE_TYPED_PRIME_FORM_HEAT_MELLIN_RESEARCH",
+  "zero_independent_completed_global": {
+    "Lambda_at_negative_two_without_zeta_zero_input": "0.191313298015585171",
+    "analytic_continuation_is_not_RH": true,
+    "reflection_s_to_1_minus_s_error": "0.0",
+    "s": "0.6+8i",
+    "standard_pi_gamma_zeta_error": "2.24118134236075037e-51",
+    "theta_split_lambda": [
+      "-0.00320906316920582066",
+      "-0.000215405267283593403"
+    ],
+    "xi_at_one": "0.5",
+    "xi_at_zero": "0.5"
+  }
+}
