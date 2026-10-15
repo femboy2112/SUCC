@@ -218,6 +218,9 @@ With source-true \(w_2=\log2/\sqrt2\), their **prime-only** Rayleigh values are 
 }\tag{API-06b}
 \]
 
+
+
+**Completed source control (pre-existing DYS-04):** Each of the three genuine prime-2 phase tests has support measure at most 1/16 on a=1/2. Thus independently proved authentic completed Weil sparse positivity gives Q_zeta(v)>||v||²/24 for all three classes, including the in-phase class whose prime-only energy is negative. The 1/24 is a conservative inequality threshold, not a canonical eta normalization. This proves compensation on the declared restricted smooth-test family, NOT original all-window positivity or RH.
 These signs follow symbolically from support geometry and source-pinned outward rational \(\log2\) bounds, not from numerically fitting zeta zeros. The same genuine prime impulse is present in all three; phase determines the quadratic sign. The FULL completed Weil form adds Gamma, contact, poles and other active primes (at a=1/2 only the true n=2 prime). No RH counterexample follows.
 
 ## 6. API-07 — Operator boundary at a prime birth: strong/weak information versus norm
