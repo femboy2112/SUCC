@@ -13,6 +13,10 @@ from observational_succ.ordinal_ranked_succ import (
     goodstein_step,goodstein_prefix,giant_finite_path_certificate,
     gigantic_observer_proof_queue,OrdinalProofObligationQueue,
 )
+from observational_succ.ordinal_epoch_supermartingale import (
+    uniform_hazard_ordinal_epoch,summable_hazard_stuttering_countermodel,
+    omega_branch_infinite_expected_length,giant_geometric_ranked_succ_path,
+)
 from observational_succ.ordinal_martingale_boundary import (
     almost_sure_termination_source,ordinal_pathwise_rank_obstruction,
     ordinal_ranked_schur_normalization,ordinal_termination_not_weil_positive,
@@ -43,7 +47,23 @@ def main():
     assert killer["ordinal_termination_implies_original_Weil_PSD"] is False
     assert frontier["true_source_Weil_Schur_rank_function"]=="UNVERIFIED"
 
+    epochs=uniform_hazard_ordinal_epoch((1,0,0),F(1,2),40)
+    unfair=summable_hazard_stuttering_countermodel(40)
+    infinite_mean=omega_branch_infinite_expected_length(100)
+    huge_stochastic=giant_geometric_ranked_succ_path((1,0,0),128,F(1,2))
+    assert epochs["survival_upper_at_fixed_rank"]==F(1,2**40)
+    assert unfair["infinite_survival_probability_lower"]==F(1,2)
+    assert infinite_mean["full_expected_length"]=="INFINITE_BY_HARMONIC_DIVERGENCE"
+    assert huge_stochastic["expected_total_attempts"]==2**257
     receipt={
+        "Ordinal_epoch_uniform_hazard_law":str(epochs["conditional_progress_hazard_lower"]),
+        "Ordinal_epoch_survival_at_40":str(epochs["survival_upper_at_fixed_rank"]),
+        "Ordinal_epoch_a_s_termination_conditional_theorem":True,
+        "Ordinal_epoch_actual_zeta_terminal_positive_proved":False,
+        "Summable_positive_hazard_infinite_survival_lower":"1/2",
+        "Ordinal_strictly_ranked_infinite_branch_expected_time":"INFINITE",
+        "Ordinal_strictly_ranked_branch_is_surely_finite":True,
+        "Giant_source_geometric_expected_attempts":str(huge_stochastic["expected_total_attempts"]),
         "mission":"ORDINAL_SUCC_PROOF_NORMALIZATION_AND_MARTINGALE_SOURCE_FIREWALL",
         "pinned_parent_atom_head":"8ce326b28ed0b4a86d4f51c9a6923c507c06a947",
         "Goodstein_original_4_base_2":"4=2^(2^1)",
