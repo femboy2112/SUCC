@@ -12,7 +12,7 @@ from observational_succ.one_object_transport import (
     even_bump, even_bump_second, stage_identity_bump,
     analytic_shift_no_go, anchored_kernel, gram_two_point_determinant,
     connes_finite_clock_trace, connes_local_fixed_point_factor,
-    connes_trace_stabilization,
+    connes_trace_stabilization, sonin_compact_defect_countermodel,
 )
 
 
@@ -145,6 +145,23 @@ class ConnesTateFiniteTraceTests(unittest.TestCase):
                 self.assertLess(abs(ft(transported,k)-ft(vec,(u*k)%m)),1e-9)
             self.assertEqual(sum((u*x)%m==x for x in range(m)),
                              sum((u*k)%m==k for k in range(m)))
+
+
+class SoninDefectControls(unittest.TestCase):
+    def test_arbitrarily_small_compact_defect_breaks_positive_trace(self):
+        for n in (1,2,5,10,30,64,120):
+            d=sonin_compact_defect_countermodel(n)
+            self.assertEqual(d["positive_trace_diagonal"],F(1,2**n))
+            self.assertEqual(d["rank_one_defect"],-2*d["positive_trace_diagonal"])
+            self.assertEqual(d["combined_signed_eigenvalue"],-d["positive_trace_diagonal"])
+            self.assertEqual(d["defect_rank"],1)
+            self.assertLess(d["combined_signed_eigenvalue"],0)
+            self.assertFalse(d["compactness_implies_Weil_sign"])
+            self.assertFalse(d["original_zeta_source"])
+        self.assertLess(sonin_compact_defect_countermodel(30)["defect_norm"],F(1,10**8))
+        for bad in (0,129,True,0.5,-1):
+            with self.assertRaises(OneObjectError):
+                sonin_compact_defect_countermodel(bad)
 
 
 if __name__ == '__main__':unittest.main()
