@@ -15,6 +15,8 @@
 | ETA-04b/c | \(-D'/D\) prime source has \((1+n)\log p\) at true n=p^k, shifted subsource has \(n\log p\), difference exactly authentic \(\log p\) | CLASSICAL all-n Euler proof / PROVED exact formal-Dirichlet oracle | Does not preserve Weil-positive kernel order |
 | ETA-04c6 | Fake \(\sigma_1(6)+1\) yields nonzero composite source \(\log2+\log3\) at n=6 | REFUTED false Euler source via exact mutation | Numeric agreement at genuine primes alone is not enough |
 | ETA-04d | \(\sum_{n>N}\sigma_1(n)n^{-s}\) modulus \(\le N^{3-\sigma}/(\sigma-3)\) for sigma=Re(s)>=4 integer | PROVED analytical tail using \(\sigma_1(n)\le n^2\) | Does not cross into critical strip |
+| ETA-05B | \(\Delta=\eta^{24}\) has Ramanujan cusp coefficients \(\tau(n)\), but \(q\,d\log\Delta/dq=E_2=1-24\sum\sigma_1(n)q^n\); these are DIFFERENT arithmetic L-sources | CLASSICAL + exact independent polynomial oracle | Do not replace cusp-form L(Delta) by zeta(s)zeta(s-1) |
+| ETA-05C | \(X(s)=\xi(s)\xi(s-1)\) has \(X(2-s)=X(s)\), and any xi zero rho generates two tracks rho and 1+rho | PROVED CLASSICAL symbolically, no zero lookup | Even conditional RH gives tracks 1/2 and 3/2, not a single track Re=1 |
 | ETA-05 | Eta/Eisenstein modular source to full original signed Weil on Tate Schwartz--Bruhat via Gamma, poles, conductor, half density and contact | UNVERIFIED needed diagram | No original global Hilbert contraction, no RH |
 | RH | Original Weil quadratic form PSD for all compact smooth tests | UNVERIFIED / OPEN | Not obtained from modular normalization or finite source tests |
 
