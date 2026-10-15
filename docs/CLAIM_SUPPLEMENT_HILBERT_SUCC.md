@@ -1,0 +1,23 @@
+# Claim supplement — HILBERT–SUCC source strata, 2026-10-14
+
+Parent integration: `main@03db44203147a7b28d445bb9f970fa71360e78c4`. Original source: `source_weil_hierarchy.py`, immutable blob `0cc8510b71d178fc79e8d410a86d8b6014cf9178`. Method: [`AGENTS.md`](../AGENTS.md), [`docs/METHOD.md`](METHOD.md). No independent academic theorem precedence claimed. **RH PROVED: NO**.
+
+| Claim | Status | Exact theorem or finite certificate | Crucial boundary / hostile control |
+|---|---|---|---|
+| HSC-01 | CLASSICAL / PROVED LOCAL | Level-n Hilbert ordering of 4^n dyadic 2D cells is bijective and successive outputs are adjacent; index-floor/4 ↔ coordinate-floor/2 commute | Inverse, n-parent, duplicates and wrong-orientation tests; finite program does not create infinity |
+| HSC-02 | CLASSICAL / PROVED LOCAL | Compatible normalized dyadic indicator maps extend to unitary L²(square)→L²(interval) | Only almost-everywhere/measure-theoretic equivalence, not a continuous inverse or physical world-sensing law |
+| HSC-03 | CLASSICAL / PAPER | Standard Hilbert limit continuous, surjective, area measure-preserving, safely 1/2-Hölder with constant 4sqrt2 | An arbitrary enumeration of square cells need not preserve adjacency, ancestry or measure |
+| HSC-04 | CLASSICAL / PROVED LOCAL | For a DECLARED L-Lipschitz f in sup metric, midpoint Hilbert average has error ≤L/2^(n+1) | L must be source-derived; no general bound for discontinuous, distributional or moving f_n |
+| HSC-05 | PROVED LOCAL | For x^i y^j, 2D area, 1D diagonal and shifted 1D graph measures have three exact distinct rational formulas | A generic rational geometric b is not a primitive Euler source; no measure substitution allowed |
+| HSC-06 | PROVED LOCAL | With ε=N^-2, the Hilbert midpoint mass of normalized band `ε^-1 1_(|x-y|<ε/2)` is N while true area integral is 1-1/(4N²)→1 | Refutes unqualified joint spatial/regularization limit; same issue occurs for raster; not a physical impossibility theorem |
+| HSC-07 | CLASSICAL IMPORT / SOURCE-PINNED | Authentic Weil direct correlation uses Gamma 2D positive jump measure, signed diagonal contact, signed genuine prime-power graph correlations, opposite-rank-one poles | Exactly one Gamma, contact C_G, √n half-density, n=6 forbidden as primitive, source hash verified; full PSD NOT inferred |
+| HSC-08 | CLASSICAL IMPORT / PROVED LOCAL | After source-correct distributional integration, true signed Suzuki screw kernel g(x-y) is continuous and has source-valid gamma-truncated Lipschitz + tail estimates | Hilbert area scan applies to g, **not** to unsmoothed Weil distribution without extra measures |
+| HSC-09 | PROVED LOCAL / EXISTING SOURCE | Hilbert reorders EXACT existing original Suzuki step matrix M_ij=h*g_J(h|i-j|); existing operator-norm error 2a(τ_J+hL_J+η) unchanged | Source-pinned PR85 module, original mean-zero domain, signs retained; not a new RH improvement |
+| HSC-10 | PROVED LOCAL | Signed finite M Hilbert clock yields exact HS squared norm `(2a)^2 clock mean of (M/h)^2` | HS norm of **kernel data** does not imply positivity of source operator or a 1D multiplication identification |
+| HSC-11 | PROVED LOCAL | Consecutive authentic signed source Hilbert readouts differ by ≤h(L_J h+2η), a source-specific spatial Lipschitz budget | Does not reduce all-stage complexity or prove total-cost bound |
+| HSC-12 | CLASSICAL / PROVED LOCAL | Every α-Hölder surjection [0,1]→[0,1]^d satisfies α≤1/d; hence no dimension-free positive α Hilbert-cube filling modulus | Continuous surjections still possible; finite script only computes the covering exponent |
+| HSC-13 | UNVERIFIED | Full original Weil all-test positivity, λ↓0 canonical Schur sign, RH | Not supplied by Hilbert fractal, dyadic isometry, norm-convergent signed matrices or numerical scans |
+| HSC-14 | UNVERIFIED | Efficient adaptive Hilbert-block source quadrature for contact/prime graph/Gamma difference with a verified total resource law | Requires separate measures, source costs, and uniform error controlled near activation/diagonal |
+| HSC-15 | CONDITIONAL | Genuine full-H¹ source Schur positivity would follow from certified low-block, high range/cross bound and λ→0 control | Do not import a fictitious κI gap or fitted positive Gram; PR96/99 present exact needed block-domains |
+
+**Sources and proof:** [`HILBERT_SUCC_SOURCE_STRATA.md`](../research/2026-10-14/HILBERT_SUCC_SOURCE_STRATA.md). **Code:** [`hilbert_succ.py`](../observational_succ/hilbert_succ.py); exact tests/replay, including original parent source CI gate. Read parent PR #85/86/96/99 for signed Weil contract. All geometric and `L²` completion facts are classical, not an empirical observation.
