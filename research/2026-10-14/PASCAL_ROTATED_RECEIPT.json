@@ -1,0 +1,727 @@
+{
+  "algebra": {
+    "B_d_B_negative_d_identity_N5": true,
+    "coassociativity_through_degree_9": true,
+    "coproduct_row_6": [
+      [
+        [
+          6,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          5,
+          1
+        ],
+        6
+      ],
+      [
+        [
+          4,
+          2
+        ],
+        15
+      ],
+      [
+        [
+          3,
+          3
+        ],
+        20
+      ],
+      [
+        [
+          2,
+          4
+        ],
+        15
+      ],
+      [
+        [
+          1,
+          5
+        ],
+        6
+      ],
+      [
+        [
+          0,
+          6
+        ],
+        1
+      ]
+    ],
+    "formal_paths_row_6": [
+      [
+        [
+          6,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          5,
+          1
+        ],
+        6
+      ],
+      [
+        [
+          4,
+          2
+        ],
+        15
+      ],
+      [
+        [
+          3,
+          3
+        ],
+        20
+      ],
+      [
+        [
+          2,
+          4
+        ],
+        15
+      ],
+      [
+        [
+          1,
+          5
+        ],
+        6
+      ],
+      [
+        [
+          0,
+          6
+        ],
+        1
+      ]
+    ],
+    "pascal_row_6": [
+      [
+        0,
+        1,
+        "3"
+      ],
+      [
+        1,
+        6,
+        "19/6"
+      ],
+      [
+        2,
+        15,
+        "10/3"
+      ],
+      [
+        3,
+        20,
+        "7/2"
+      ],
+      [
+        4,
+        15,
+        "11/3"
+      ],
+      [
+        5,
+        6,
+        "23/6"
+      ],
+      [
+        6,
+        1,
+        "4"
+      ]
+    ],
+    "shifted_moments_example": [
+      "1",
+      "5/3",
+      "34/9",
+      "314/27",
+      "3784/81"
+    ],
+    "unit_steps": [
+      "1/2",
+      "2/3"
+    ]
+  },
+  "base": "femboy2112/SUCC research/structural-coupling-discovery-2026-10-13@cf36f907ac042f82c349b4c601083473836e34ca",
+  "boundary": {
+    "backwards_at_6_3_from_two_sources": [
+      [
+        [
+          2,
+          "1/2"
+        ],
+        [
+          3,
+          "1/2"
+        ]
+      ],
+      [
+        [
+          2,
+          "1/2"
+        ],
+        [
+          3,
+          "1/2"
+        ]
+      ]
+    ],
+    "global_point_forced_by_shape": false,
+    "mixed_row5": [
+      "123/2048",
+      "225/2048",
+      "135/1024",
+      "225/1024",
+      "615/2048",
+      "365/2048"
+    ],
+    "mixture_projects_to_row4": true,
+    "p_one_third_row6": [
+      "64/729",
+      "64/243",
+      "80/243",
+      "160/729",
+      "20/243",
+      "4/243",
+      "1/729"
+    ],
+    "p_two_thirds_row6": [
+      "1/729",
+      "4/243",
+      "20/243",
+      "160/729",
+      "80/243",
+      "64/243",
+      "64/729"
+    ],
+    "same_reverse_different_forward": true
+  },
+  "couplings": {
+    "distinct_c4_by_c2_candidates": 4,
+    "group_path_order_preserved": true,
+    "nonabelian_pascal_scalar_collapse_fails": true,
+    "ordered_word_fiber_diagnostics": [
+      {
+        "binomial_collapse_valid_at_n2": true,
+        "cocycle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "commuting_generators": true,
+        "invalid_commutative_n2_operator": [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            1
+          ]
+        ],
+        "ordered_AB_BA_witness": null,
+        "pascal_word_fiber_2_1": [
+          [
+            [
+              1,
+              1
+            ],
+            2
+          ]
+        ],
+        "rho": 1,
+        "true_n2_word_operator": [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            1
+          ]
+        ]
+      },
+      {
+        "binomial_collapse_valid_at_n2": true,
+        "cocycle": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "commuting_generators": true,
+        "invalid_commutative_n2_operator": [
+          [
+            [
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            1
+          ]
+        ],
+        "ordered_AB_BA_witness": null,
+        "pascal_word_fiber_2_1": [
+          [
+            [
+              1,
+              1
+            ],
+            2
+          ]
+        ],
+        "rho": 1,
+        "true_n2_word_operator": [
+          [
+            [
+              1,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            1
+          ]
+        ]
+      },
+      {
+        "binomial_collapse_valid_at_n2": false,
+        "cocycle": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "commuting_generators": false,
+        "invalid_commutative_n2_operator": [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            1
+          ]
+        ],
+        "ordered_AB_BA_witness": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "pascal_word_fiber_2_1": [
+          [
+            [
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            1
+          ]
+        ],
+        "rho": 3,
+        "true_n2_word_operator": [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      {
+        "binomial_collapse_valid_at_n2": false,
+        "cocycle": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "commuting_generators": false,
+        "invalid_commutative_n2_operator": [
+          [
+            [
+              1,
+              1
+            ],
+            2
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            2
+          ]
+        ],
+        "ordered_AB_BA_witness": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "pascal_word_fiber_2_1": [
+          [
+            [
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            1
+          ]
+        ],
+        "rho": 3,
+        "true_n2_word_operator": [
+          [
+            [
+              1,
+              1
+            ],
+            1
+          ],
+          [
+            [
+              2,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "fractional_gamma_succ": {
+    "convolution_shape": "2",
+    "fractional_shape_is_physical_half_event": false,
+    "gamma_source_rate_selected_not_derived": true,
+    "laplace_symbolic_rate2_u_2_3": [
+      "3/4",
+      "1/2"
+    ],
+    "moments_a_0_6": [
+      "1",
+      "1/4",
+      "3/16",
+      "15/64",
+      "105/256",
+      "945/1024",
+      "10395/4096"
+    ],
+    "moments_b_0_6": [
+      "1",
+      "3/4",
+      "15/16",
+      "105/64",
+      "945/256",
+      "10395/1024",
+      "135135/4096"
+    ],
+    "moments_convolution_0_6": [
+      "1",
+      "1",
+      "3/2",
+      "3",
+      "15/2",
+      "45/2",
+      "315/4"
+    ],
+    "moments_equal_direct_gamma_0_12": true,
+    "shape_a": "1/2",
+    "shape_b": "3/2",
+    "source_rate": "2"
+  },
+  "gamma": {
+    "delta1_integer_moments_0_6": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "exp1_integer_moments_0_6": [
+      1,
+      1,
+      2,
+      6,
+      24,
+      120,
+      720
+    ],
+    "exp_shift_unit_half_0_5": [
+      "1",
+      "3/2",
+      "13/4",
+      "79/8",
+      "633/16",
+      "6331/32"
+    ],
+    "first_exp_vs_2atom_disagreement": 4,
+    "gamma_forced_by_pascal_geometry_alone": false,
+    "gamma_moment_ibp_identity_0_10": true,
+    "generalized_half_row_0_7": [
+      "1",
+      "1/2",
+      "-1/8",
+      "1/16",
+      "-5/128",
+      "7/256",
+      "-21/1024",
+      "33/2048"
+    ],
+    "generalized_half_row_has_negative_coefficient": true,
+    "half_binomial_absolute_tail_bound": "119409675/9007199254740992",
+    "half_binomial_sum_z_half_cutoff18": "5515760526003069/4503599627370496",
+    "independent_sqrt_3_over_2_exact_bracket": [
+      "1224744871391/1000000000000",
+      "38273277231/31250000000"
+    ],
+    "positive_two_atom_moments_0_6": [
+      1,
+      1,
+      2,
+      6,
+      20,
+      68,
+      232
+    ],
+    "tail_interval_overlaps_exact_sqrt_bracket": true
+  },
+  "operational_rotation": {
+    "Gamma_entails_Poisson_source_not_Pascal_shape": false,
+    "certified_Bernoulli_to_Poisson_wait_survival": [
+      [
+        4,
+        {
+          "continuous_lower": "39299278806015611311/42730606179975168000",
+          "continuous_upper": "6563440628747948887/7136512557318144000",
+          "discrete_survival": "243/256",
+          "rigorous_comparison_pass": true,
+          "tv_bound": "1/4"
+        }
+      ],
+      [
+        8,
+        {
+          "continuous_lower": "39299278806015611311/42730606179975168000",
+          "continuous_upper": "6563440628747948887/7136512557318144000",
+          "discrete_survival": "15647317/16777216",
+          "rigorous_comparison_pass": true,
+          "tv_bound": "1/8"
+        }
+      ],
+      [
+        16,
+        {
+          "continuous_lower": "39299278806015611311/42730606179975168000",
+          "continuous_upper": "6563440628747948887/7136512557318144000",
+          "discrete_survival": "17077861724853515625/18446744073709551616",
+          "rigorous_comparison_pass": true,
+          "tv_bound": "1/16"
+        }
+      ],
+      [
+        32,
+        {
+          "continuous_lower": "39299278806015611311/42730606179975168000",
+          "continuous_upper": "6563440628747948887/7136512557318144000",
+          "discrete_survival": "1348464756327135640730240799295685865727534020049/1461501637330902918203684832716283019655932542976",
+          "rigorous_comparison_pass": true,
+          "tv_bound": "1/32"
+        }
+      ],
+      [
+        64,
+        {
+          "continuous_lower": "39299278806015611311/42730606179975168000",
+          "continuous_upper": "6563440628747948887/7136512557318144000",
+          "discrete_survival": "36295412779167760151804181461609318061730224930876058478962812098649567053085657558912205627272249272681082996512673/39402006196394479212279040100143613805079739270465446667948293404245721771497210611414266254884915640806627990306816",
+          "rigorous_comparison_pass": true,
+          "tv_bound": "1/64"
+        }
+      ]
+    ],
+    "colored_poisson_prefactor_N5": [
+      "4/3645",
+      "2/729",
+      "2/729",
+      "1/729",
+      "1/2916",
+      "1/29160"
+    ],
+    "false_fixed_p_scaling_negative_control": [
+      "1831/1152921504606846976",
+      "45025127913779406086595470498676529142943153669310125973615618718911507121356332539516415040386633311762911/48873677980689257489322752273774603865660850176000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "finite_pascal_wait_T3_eq5_p_half": "3/16",
+    "finite_wait_event_CDF_identity": true,
+    "poisson_count_color_joint_normalization_prefactor": "1/120",
+    "universal_count_time_adjunction_pathwise": true
+  },
+  "program": "PASCAL_ROTATED_SUCC_SOURCE_RELATIVE_RECEIPT",
+  "rotation": {
+    "adjoint_differs_from_inverse": true,
+    "finite_depth_6_cell_2_1_rotated": [
+      4,
+      1
+    ],
+    "metric_dependence": true,
+    "same_cell_depth_7_rotated": [
+      5,
+      1
+    ],
+    "weighted_adjoint_row0": [
+      "1",
+      "4/3",
+      "4/3",
+      "32/27",
+      "80/81",
+      "64/81"
+    ]
+  },
+  "scope": {
+    "Weil_form_RH_claimed": false,
+    "academic_priority_asserted": false,
+    "all_probabilities_exact_fraction": true,
+    "arbitrary_analytic_completion_from_finite_integer_moments_claimed": false,
+    "classical_Hopf_deFinetti_and_Gamma_context": true,
+    "finite_source_tables_declared_not_measured": true,
+    "physical_source_authenticated": false,
+    "positive_exponential_moment_all_n_uniqueness_paper_proof_only": true,
+    "real_90_degree_infinite_limit_constructed": false
+  },
+  "spectral": {
+    "C2_row5": [
+      "121/243",
+      "122/243"
+    ],
+    "cyclic_convolution_n2_plus_n3": true,
+    "parity_character_matches_cyclic_group_algebra": true,
+    "parity_character_row5": "-1/243"
+  }
+}
