@@ -19,6 +19,8 @@ from observational_succ.suzuki_legendre_source import (
     authentic_direct_low_matrix, authentic_gamma_low_entry,
     authentic_pole_low_entry,authentic_first_prime_low_entry,
     source_low_entry_gamma_prime_contact,
+    tight_exp_neg,tight_log2,adaptive_precision_budget, interval_add,
+    interval_scale,interval_poly_eval,
 )
 
 
@@ -168,8 +170,47 @@ class AuthenticLegendreLowTests(unittest.TestCase):
             assert mat[0][2].lo==mat[2][0].lo
             assert mat[0][0].lo<mat[0][0].hi
 
+    def test_adaptive_genuine_gamma_30th_mode_nontrivial_tight_interval(self):
+        # A naive 32-digit exp interval multiplied by |B_30,30|~10^118
+        # is useless. Source-compatible adaptive rational exp cures that.
+        A,B=source_ou_pair_affine(30,30,self.a,Q(1,2))
+        self.assertGreater(B,10**110)
+        digits=adaptive_precision_budget(B)
+        self.assertGreaterEqual(digits,160)
+        r=tight_exp_neg(Q(1,2),digits)
+        out=interval_add((A,A),interval_scale(r,B))
+        self.assertGreater(out[0],0)
+        self.assertLess(out[1],Q(1,100000))
+        self.assertLess(out[1]-out[0],Q(1,10**35))
+
+    def test_positive_log2_and_prime_hinge_high_order_interval(self):
+        b=tight_log2(100)
+        self.assertTrue(Q(2,3)<b[0]<b[1]<Q(7,10))
+        poly=prime_hinge_integral_polynomial(30,30,self.a)
+        h=interval_poly_eval(poly,b)
+        self.assertLess(h[1]-h[0],Q(1,10**55))
+        self.assertGreater(h[0],0)
+
+    def test_adaptive_precision_is_source_defined_not_a_float_parameter(self):
+        with self.assertRaises(SchurSourceError):tight_exp_neg(Q(1,2),1)
+        with self.assertRaises(SchurSourceError):tight_log2(301)
+        with self.assertRaises(SchurSourceError):tight_exp_neg(.5,60)
+        with self.assertRaises(SchurSourceError):adaptive_precision_budget(1.0)
+
+    def test_true_J75_analytic_single_mode_without_cell_grid(self):
+        # Mandatory unskipped remote CI executes the source path, not a toy.
+        try:
+            z=authentic_direct_low_matrix(rank=1,J=75)
+        except SchurSourceError as exc:
+            if 'pinned parent #85' not in str(exc):raise
+            self.skipTest('pinned #85 source required; mandatory CI source J75 path')
+        else:
+            self.assertGreater(z['interval_matrix'][0][0].lo,0)
+            self.assertFalse(z['RH_proved'])
+            self.assertTrue(z['omitted_gamma_tail_positive'])
+
     def test_source_J_invalid_budget_fail_closed(self):
-        with self.assertRaises(SchurSourceError):authentic_gamma_low_entry(1,1,self.a,65)
+        with self.assertRaises(SchurSourceError):authentic_gamma_low_entry(1,1,self.a,76)
 
 
 if __name__=='__main__':unittest.main()

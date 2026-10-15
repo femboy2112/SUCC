@@ -56,6 +56,19 @@ jobs:
           assert Fraction(M[0][0][1])<0, 'Gamma-J2 signed low block is not certified negative as expected'
           print('GENUINE_GAMMA_J2_PRIME2_POLE_CONTACT_LOW_MATRIX_CERTIFIED')
           PYCI
+      - name: Mandatory true-Gamma 75-rung one-mode source-sign reversal
+        run: |
+          python scripts/suzuki_direct_legendre_probe.py --source-stage --rank 1 --J 75 > "$RUNNER_TEMP/original-source-legendre-J75.json"
+          python - <<'PYCI'
+          import json,os
+          from fractions import Fraction
+          from pathlib import Path
+          z=json.loads((Path(os.environ['RUNNER_TEMP'])/'original-source-legendre-J75.json').read_text())
+          assert z['rank']==1 and z['J']==75 and z['RH_proved'] is False
+          assert z['omitted_authentic_Gamma_tail_PSD'] is True
+          assert Fraction(z['matrix_interval'][0][0][0])>0
+          print('TRUE_SOURCE_GAMMA_J75_ONE_LEGENDRE_RAYLEIGH_STRICTLY_POSITIVE')
+          PYCI
       - name: ACTUAL PINNED Suzuki finite source full 30-by-30 low Schur
         run: |
           python scripts/suzuki_moment_schur_probe.py --source-stage > "$RUNNER_TEMP/real-source-schur.json"

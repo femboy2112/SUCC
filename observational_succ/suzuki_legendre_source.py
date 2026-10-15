@@ -7,7 +7,7 @@ and the first J POSITIVE authentic Gamma OU modes on mean-zero u.
 """
 from __future__ import annotations
 from fractions import Fraction as F
-from math import comb
+from math import comb, factorial, isqrt
 from hashlib import sha1
 from pathlib import Path
 from functools import lru_cache
@@ -32,6 +32,102 @@ def _pinned_source():
     if digest!=PARENT_SOURCE_BLOB:
         raise SchurSourceError('pinned parent #85 source module SHA drift')
     return source
+
+
+def decimal_floor(x, digits):
+    """Directed rational rounding to a declared decimal grid."""
+    x=q(x)
+    digits=integer(digits,10,350)
+    S=10**digits
+    return F(x.numerator*S//x.denominator,S)
+
+
+def decimal_ceil(x,digits):
+    return -decimal_floor(-q(x),digits)
+
+
+def tight_exp_neg(x, digits=80):
+    """Rigorous arbitrary-precision exp(-rational), no floating point.
+
+    Positive Taylor for exp(y), geometric first-omitted bound, reciprocal,
+    then repeated squaring with directed rounding. This upgrades the original
+    PR85 32-decimal source primitive *without changing its mathematics*.
+    """
+    x=q(x);digits=integer(digits,20,300)
+    if x<0 or x>256:raise SchurSourceError('positive exp(-x) source range')
+    if not x:return F(1),F(1)
+    y=x;m=0
+    while y>F(1,2):y/=2;m+=1
+    # Reserve logarithmically many digits for m outward-squaring operations.
+    work=min(350,digits+max(8,m+3))
+    # Each positive term is exact. Its next term times a geometric majorant
+    # bounds the entire omitted tail while y<=1/2.
+    term=F(1);e=F(1);n=0
+    target=F(1,10**work)
+    while True:
+        n+=1
+        term=term*y/n;e+=term
+        nextterm=term*y/(n+1)
+        rem=nextterm/(1-y/F(n+2))
+        if rem<target:break
+        if n>max(300,2*work):raise SchurSourceError('positive exponential tail budget')
+    lo=decimal_floor(1/(e+rem),work)
+    hi=decimal_ceil(1/e,work)
+    for _ in range(m):
+        lo=decimal_floor(lo*lo,work)
+        hi=decimal_ceil(hi*hi,work)
+    return decimal_floor(lo,digits),decimal_ceil(hi,digits)
+
+
+def tight_log2(digits=80):
+    """Rational enclosure 2 atanh(1/3) with positive geometric tail."""
+    digits=integer(digits,20,300)
+    z=F(1,3);term=z;total=F();j=0
+    target=F(1,10**(digits+8))
+    while True:
+        total+=2*term/F(2*j+1)
+        j+=1
+        term*=z*z
+        rem=2*term/(F(2*j+1)*(1-z*z))
+        if rem<target:break
+        if j>max(400,2*digits):raise SchurSourceError('log2 atanh tail budget')
+    return decimal_floor(total,digits),decimal_ceil(total+rem,digits)
+
+
+def interval_add(a,b):
+    return a[0]+b[0],a[1]+b[1]
+
+
+def interval_scale(a,x):
+    x=q(x)
+    return (a[0]*x,a[1]*x) if x>=0 else (a[1]*x,a[0]*x)
+
+
+def interval_mul(a,b):
+    v=(a[0]*b[0],a[0]*b[1],a[1]*b[0],a[1]*b[1])
+    return min(v),max(v)
+
+
+def interval_poly_eval(poly,rng):
+    acc=(F(),F())
+    for c in reversed(poly):
+        acc=interval_add(interval_mul(acc,rng),(q(c),q(c)))
+    return acc
+
+
+def adaptive_precision_budget(coeff, guard=45):
+    """Sufficient decimal digits to tame exact rational cancellation, not runtime lower bound."""
+    coeff=q(coeff)
+    guard=integer(guard,10,80)
+    if not coeff:return guard
+    # Integer log10 bound without floating arithmetic.
+    size=max(abs(coeff.numerator)//coeff.denominator,1)
+    dec=len(str(size))
+    return min(300,max(60,dec+guard))
+
+
+def source_interval_round(source,rng):
+    return source.I(source.down(rng[0]),source.up(rng[1]))
 
 
 def poly_add(a,b,scale=F(1)):
@@ -171,12 +267,15 @@ def source_ou_pair_interval(i,j,a,alpha):
     source=_pinned_source()
     a,alpha=q(a),q(alpha)
     A,B=source_ou_pair_affine(i,j,a,alpha)
-    return source.iv(A)+B*source.exp_neg(2*alpha*a)
+    digits=adaptive_precision_budget(B)
+    exponential=tight_exp_neg(2*alpha*a,digits)
+    rng=interval_add((A,A),interval_scale(exponential,B))
+    return source_interval_round(source,rng)
 
 
 def authentic_gamma_low_entry(i,j,a,J):
     """Exactly the first J TRUE positive Gamma OU modes (not aux)."""
-    integer(J,1,64)
+    integer(J,1,75)
     source=_pinned_source()
     x=source.iv(0)
     for k in range(J):
@@ -194,7 +293,16 @@ def authentic_first_prime_low_entry(i,j,a=F(1,2)):
     b=source.log2_iv()
     if not b.hi<2*a:raise SchurSourceError('prime wavefront not source-verified')
     polynomial=prime_hinge_integral_polynomial(i,j,a)
-    return source.log2_iv()*source.sqrt_inverse(2)*polynomial_interval(polynomial,b)
+    digits=adaptive_precision_budget(max(polynomial,key=abs))
+    exact_log=tight_log2(digits)
+    # Same source as the immutable original PR85 log2 enclosure, refined by a
+    # separate positive rational series. Require exact interval consistency.
+    if not (exact_log[0]<=b.hi and exact_log[1]>=b.lo):
+        raise SchurSourceError('true prime-clock log2 source disagreement')
+    poly_rng=interval_poly_eval(polynomial,exact_log)
+    invsqrt2=source.sqrt_inverse(2)
+    source_weight=interval_mul(exact_log,(invsqrt2.lo,invsqrt2.hi))
+    return source_interval_round(source,interval_mul(source_weight,poly_rng))
 
 
 def source_low_entry_gamma_prime_contact(i,j,a=F(1,2),J=3):
@@ -203,7 +311,7 @@ def source_low_entry_gamma_prime_contact(i,j,a=F(1,2),J=3):
     This is an explicitly scoped partial operator; NEVER full Weil sign.
     The positive missing Gamma tail can be added by Loewner order.
     """
-    i=integer(i,1,30);j=integer(j,1,30);a=q(a);integer(J,1,64)
+    i=integer(i,1,30);j=integer(j,1,30);a=q(a);integer(J,1,75)
     source=_pinned_source()
     C=source.contact_iv()  # exact source: gamma + pi/2+3log2+logpi
     K=low_inverse_neumann(a,max(i,j))[i-1][j-1]
@@ -219,16 +327,24 @@ def authentic_pole_low_entry(i,j,a=F(1,2)):
     i=integer(i,1,30);j=integer(j,1,30);a=q(a)
     source=_pinned_source()
     if (i+j)%2:return source.iv(0)
-    ep=source.exp_pos(a/2);em=source.exp_neg(a/2)
+    # Polynomial exponential primitives can cancel >10^100 at degree 30:
+    # evaluate all signed combinations in arbitrary-precision rationals and
+    # round only the complete channel to the parent's proof interval.
     def channels(k):
         p=legendre_polynomial(k,a)
         plus=exp_antiderivative_poly(p,F(1,2),+1)
         minus=exp_antiderivative_poly(p,F(1,2),-1)
-        Eplus=ep*poly_eval(plus,a)-em*poly_eval(plus,-a)
-        Eminus=em*poly_eval(minus,a)-ep*poly_eval(minus,-a)
-        return (Eplus+Eminus)/2,(Eplus-Eminus)/2
+        xp=poly_eval(plus,a);xm=poly_eval(plus,-a)
+        yp=poly_eval(minus,a);ym=poly_eval(minus,-a)
+        digits=adaptive_precision_budget(max(map(abs,(xp,xm,yp,ym))))
+        em=tight_exp_neg(a/2,digits)
+        ep=(F(1)/em[1],F(1)/em[0])
+        Eplus=interval_add(interval_scale(ep,xp),interval_scale(em,-xm))
+        Eminus=interval_add(interval_scale(em,yp),interval_scale(ep,-ym))
+        return interval_scale(interval_add(Eplus,Eminus),F(1,2)),interval_scale(interval_add(Eplus,interval_scale(Eminus,-1)),F(1,2))
     ci,si=channels(i);cj,sj=channels(j)
-    return -8*ci*cj+8*si*sj
+    pole=interval_add(interval_scale(interval_mul(ci,cj),-8),interval_scale(interval_mul(si,sj),8))
+    return source_interval_round(source,pole)
 
 
 def authentic_full_low_entry(i,j,a=F(1,2),J=3):
@@ -253,7 +369,7 @@ def authentic_direct_low_matrix(rank=3,J=3,a=F(1,2)):
     rank, cancellations may make intervals broad; never silently turn them
     into sharp enclosures or assert positivity from a midpoint eigensystem.
     """
-    rank=integer(rank,1,30);J=integer(J,1,36);a=q(a)
+    rank=integer(rank,1,30);J=integer(J,1,75);a=q(a)
     if a!=F(1,2):raise SchurSourceError('a=1/2 genuine first-prime window')
     entries=[]
     for i in range(1,rank+1):
