@@ -11,6 +11,7 @@ from observational_succ.apollo_krein_factor import (
     prime_mixed_second_source_coefficients,gamma_mixed_second_source_coefficients,
     neutral_prime_activation_pair,authentic_prime_two_activation_on_old_window,
     authentic_small_window_brownian_coercivity,
+    authentic_sharp_small_window_hilbert_factor, _exp_odd_taylor_lower,
 )
 
 
@@ -209,6 +210,47 @@ class ApolloFullSmallIntervalPositiveKernel(unittest.TestCase):
         # clustering points can make Brownian eigenvalues arbitrarily small.
         self.assertGreater(brownian_increment_kernel(F(1,100),F(1,100)),0)
         self.assertEqual(brownian_increment_kernel(F(1,100),F(-1,100)),0)
+
+
+class ApolloUniformAuthenticPositiveHilbertFactorTests(unittest.TestCase):
+    def test_full_real_interval_contraction_from_original_source(self):
+        for a in (F(1,12),F(1,16),F(1,20),F(1,24),F(1,1000)):
+            cert=authentic_sharp_small_window_hilbert_factor(a)
+            self.assertEqual(cert["a"],a)
+            self.assertEqual(cert["real_gamma_rungs_used"],20)
+            self.assertEqual(cert["gamma_taylor_order"],9)
+            self.assertGreater(cert["exact_positive_coercivity_margin"],F(1,100))
+            self.assertTrue(cert["original_sha_pinned_source"])
+            self.assertTrue(cert["all_finite_complex_source_gram_positive"])
+            self.assertTrue(cert["contractive_Ta_exists_by_independent_coercivity_proof"])
+            self.assertTrue(cert["positive_feature_Psi_a_exists_by_completion"])
+            self.assertFalse(cert["feature_Psi_a_computed_in_closed_form"])
+            self.assertFalse(cert["first_prime_crossed"])
+            self.assertFalse(cert["all_a_and_RH_proved"])
+
+    def test_exact_gamma_taylor_lower_is_monotone_and_positive_in_required_range(self):
+        from math import factorial
+        for j in (0,3,10,19):
+            alpha=F(4*j+1,2)
+            x=alpha*F(1,12)
+            p=_exp_odd_taylor_lower(x)
+            self.assertEqual(p,sum((F((-1)**k,factorial(k))*x**k
+                                    for k in range(10)),F()))
+            self.assertGreater(p,0)
+            self.assertGreaterEqual(_exp_odd_taylor_lower(x/2),p)
+        for bad in (-1,True,0.15):
+            with self.assertRaises(OneObjectError):
+                _exp_odd_taylor_lower(bad)
+        for bad in (0,F(1,11),True,0.01):
+            with self.assertRaises(OneObjectError):
+                authentic_sharp_small_window_hilbert_factor(bad)
+
+    def test_two_independently_derived_small_window_source_bounds_consistent(self):
+        loose=authentic_small_window_brownian_coercivity(F(1,24))
+        sharp=authentic_sharp_small_window_hilbert_factor(F(1,24))
+        self.assertGreater(sharp["exact_positive_coercivity_margin"],
+                           loose["strict_K_dominates_B_lower"])
+        self.assertGreater(sharp["exact_positive_coercivity_margin"],F(1,100))
 
 
 if __name__=="__main__":
