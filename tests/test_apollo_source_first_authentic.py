@@ -19,6 +19,9 @@ class OriginalSourcePhase(unittest.TestCase):
         self.assertEqual(d["anti_phase_prime_rayleigh"],"+log(2)/sqrt(2)")
         self.assertEqual(d["quarter_phase_prime_rayleigh"],"0")
         self.assertTrue(d["same_true_prime_jet_all_three_cases"])
+        self.assertTrue(d["completed_original_Weil_all_three_phase_classes_positive_by_independent_sparse_theorem"])
+        self.assertEqual(d["completed_original_Weil_each_L2_margin_strictly_above"],F(1,24))
+        self.assertTrue(d["complete_original_source_positive_does_not_make_prime_component_positive"])
         self.assertFalse(d["completed_Weil_negative_witness_inferred"])
         self.assertFalse(d["RH_proved"])
     def test_prime_wavefront_source_contacts_cancel_not_pure_well(self):
