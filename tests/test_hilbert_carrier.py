@@ -160,5 +160,47 @@ class HilbertL2ObserverTests(unittest.TestCase):
         with self.assertRaises(h.HilbertCarrierError):
             h.exact_cell_inner_product(1,((0.0,1),(1,0)),((1,0),(0,1)))
 
+
+
+class HilbertLimitTubeTests(unittest.TestCase):
+    def test_fixed_parameter_has_nested_cells_with_exact_geometric_error(self):
+        for t in (Q(),Q(1),Q(1,4),Q(13,17),Q(1,2),Q(2,3)):
+            last=None
+            for k in range(1,8):
+                r=h.parameter_tube(t,k)
+                self.assertEqual(r["squared_distance_to_completed_point_upper"],
+                                 Q(1,2*4**k))
+                X,Y=r["spatial_enclosure"]
+                if last:
+                    A,B=last["spatial_enclosure"]
+                    self.assertTrue(A[0]<=X[0]<=X[1]<=A[1])
+                    self.assertTrue(B[0]<=Y[0]<=Y[1]<=B[1])
+                self.assertFalse(r["limit_point_physically_observed"])
+                last=r
+
+    def test_rational_target_surjection_preimage_tubes_are_nested(self):
+        for x,y in ((Q(0),Q(0)),(Q(1),Q(1)),(Q(1,2),Q(1,2)),
+                    (Q(1,3),Q(5,7)),(Q(1,8),Q(1,2))):
+            last=None
+            for k in range(1,7):
+                r=h.target_preimage_tube(x,y,k)
+                lo,hi=r["time_cylinder"]
+                self.assertEqual(hi-lo,Q(1,4**k))
+                if last is not None:
+                    l0,l1=last
+                    self.assertTrue(l0<=lo<=hi<=l1)
+                last=lo,hi
+                self.assertFalse(r["preimage_parameter_computed_to_infinite_precision"])
+
+    def test_source_target_domain_mutation_rejected(self):
+        for fn in (
+            lambda:h.parameter_tube(Q(-1),2),
+            lambda:h.parameter_tube(0.25,2),
+            lambda:h.target_preimage_tube(Q(2),Q(0),2),
+            lambda:h.target_preimage_tube(Q(0),0.5,2),
+        ):
+            with self.assertRaises(h.HilbertCarrierError):fn()
+
+
 if __name__=="__main__":
     unittest.main()
