@@ -1,0 +1,58 @@
+{
+  "schema": "SUCC_TATE_ETA_BERNOULLI_2026_10_15_v1",
+  "status": "CANONICAL_MODULAR_BRIDGE_NOT_RH",
+  "bernoulli": {
+    "zeta_minus_one": "-1/12",
+    "canonical_eta_exponent": "1/24",
+    "heat_t2": "1/240",
+    "ordinary_divergent_sum_not_equal_finite_value": true
+  },
+  "Weil_source": {
+    "parent": "SHA_PINNED_ORIGINAL_ZETA",
+    "exact_conservative_margin": "18140507408283703/386282620694770800",
+    "one_over_24_certified": true,
+    "one_over_22_certified": true,
+    "one_over_21_certified_by_this_same_bound": false,
+    "eta_exponent_equals_Weil_margin": false,
+    "modular_origin_of_Weil_margin_claimed": false
+  },
+  "eta_transport": {
+    "canonical_nonfixed_S_defect_over_minus_pi": "0",
+    "wrong_1_over_22_nonfixed_S_defect_over_minus_pi": "-1/88",
+    "wrong_exponent_selfdual_false_pass": true,
+    "finite_q_constant": "1/24",
+    "finite_q_coefficients_1_to_12": [
+      "-1",
+      "-3",
+      "-4",
+      "-7",
+      "-6",
+      "-12",
+      "-8",
+      "-15",
+      "-13",
+      "-18",
+      "-12",
+      "-28"
+    ]
+  },
+  "arithmetic_prime_transport": {
+    "horizon": 64,
+    "normalization": "Gamma(s)*zeta(s)*zeta(s-1) for Re(s)>2",
+    "authentic_transport_pass": true,
+    "true_composite_6_basis": {},
+    "mutated_6_basis": {
+      "2": 1,
+      "3": 1
+    },
+    "mutated_6_discriminated": true,
+    "analytic_tail_bound_sigma5_N16": "1/512"
+  },
+  "missing_interfaces": {
+    "eta_archimedean": "Gamma(s)",
+    "original_Weil_archimedean": "pi^(-s/2)*Gamma(s/2)",
+    "full_Weil_identification": false,
+    "source_derived_all_test_positivity": false,
+    "RH_proved": false
+  }
+}
