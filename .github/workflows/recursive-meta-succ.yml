@@ -1,0 +1,54 @@
+name: Recursive Meta-SUCC exact interaction certificates
+
+on:
+  push:
+    branches:
+      - 'research/recursive-meta-*'
+    paths:
+      - 'observational_succ/recursive_meta_succ.py'
+      - 'tests/test_recursive_meta_succ.py'
+      - 'scripts/recursive_meta_succ_probe.py'
+      - 'research/2026-10-14/RECURSIVE_META_SUCC*'
+      - 'docs/CLAIM_SUPPLEMENT_RECURSIVE_META_SUCC.md'
+      - '.github/workflows/recursive-meta-succ.yml'
+  pull_request:
+    paths:
+      - 'observational_succ/recursive_meta_succ.py'
+      - 'tests/test_recursive_meta_succ.py'
+      - 'scripts/recursive_meta_succ_probe.py'
+      - 'research/2026-10-14/RECURSIVE_META_SUCC*'
+      - 'docs/CLAIM_SUPPLEMENT_RECURSIVE_META_SUCC.md'
+      - '.github/workflows/recursive-meta-succ.yml'
+  workflow_dispatch:
+
+jobs:
+  exact-model-of-model-proof-gates:
+    name: Exact source and two-level holonomy (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify historical source integrity
+        run: python scripts/verify_provenance.py
+      - name: Exact finite meta-relation, arity and holonomy math
+        run: PYTHONPATH=. python -m unittest tests.test_recursive_meta_succ -v
+      - name: Deterministic mathematical source receipt
+        run: PYTHONPATH=. python scripts/recursive_meta_succ_probe.py --verify research/2026-10-14/RECURSIVE_META_SUCC_RECEIPT.json
+      - name: Assert no fake external mathematical claims
+        run: |
+          python - <<'PY'
+          import json
+          with open('research/2026-10-14/RECURSIVE_META_SUCC_RECEIPT.json') as f:
+              receipt = json.load(f)
+          assert receipt['RH_PROVED'] is False
+          assert receipt['Lean_kernel_check_claimed'] is False
+          assert receipt['external_physical_source_authenticated'] is False
+          assert receipt['original_nontrivial_zeta_zero_positions_used'] is False
+          assert receipt['joint_orthogonal_meta_meta']['global_coercivity_constant'] == '1/23'
+          PY
