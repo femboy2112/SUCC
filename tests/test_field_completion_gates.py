@@ -10,6 +10,7 @@ from observational_succ.field_completion_gates import (
     DyadicGlobalCode, FieldGateError, FiniteGlobalSource, HaltTrace,
     antidiagonal_stage, antidiagonal_tree_member, stagewise_candidate_failure,
     noncompact_escape, phantom_target_receipt, delayed_discriminator,
+    factorial_solenoid_clock,
 )
 
 
@@ -40,6 +41,27 @@ class SimpleProgramControls(unittest.TestCase):
         for depth in range(19):
             self.assertEqual(small.residue(depth), large.residue(depth))
         self.assertNotEqual(small.residue(19), large.residue(19))
+
+    def test_exact_factorial_circle_solenoid(self):
+        # All stages are full CONTINUOUS circles; this test only verifies
+        # exact rational phase coordinates for a fixed finite integer seed.
+        for t in (-31, -1, 0, 1, 17):
+            prev = None
+            for n in range(0, 16):
+                r = factorial_solenoid_clock(self.source, t, n)
+                self.assertTrue(r["circle_bonding_coherent"])
+                self.assertFalse(r["all_global_solenoid_points_finitely_executable"])
+                self.assertEqual(r["stage_topology"], "CONNECTED_CONTINUOUS_CIRCLE")
+                if prev is not None:
+                    self.assertEqual((r["phase_mod_1"]*(n+1))%1, prev)
+                prev = r["phase_mod_1"]
+
+    def test_circle_stage_cannot_be_decorative_finite_residue(self):
+        for bad in (True, 0.5, None):
+            with self.assertRaises(FieldGateError):
+                factorial_solenoid_clock(self.source, bad, 2)
+        with self.assertRaises(FieldGateError):
+            factorial_solenoid_clock(self.source, 1, 129)
 
     def test_malformed_depths_and_seeds_rejected(self):
         with self.assertRaises(FieldGateError):
