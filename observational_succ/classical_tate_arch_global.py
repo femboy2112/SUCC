@@ -113,7 +113,7 @@ def euler_tail_contract(prime_horizon: int, sigma: int) -> dict:
     exact_int(sigma, "positive half-plane bound", 2)
     places=tuple(p for p in range(2,prime_horizon+1) if is_prime(p))
     bound=Q(prime_horizon)**(1-sigma)/Q(sigma-1)
-    return {"primes":places,"sigma":sigma,"last_source_prime":places[-1],
+    return {"primes":list(places),"sigma":sigma,"last_source_prime":places[-1],
             "finite_local_euler_at_sigma":str(finite_true_euler_product(places,sigma)),
             "uniform_absolute_tail_upper":str(bound),
             "valid_for_all_complex_s_Re_ge_sigma":True,
