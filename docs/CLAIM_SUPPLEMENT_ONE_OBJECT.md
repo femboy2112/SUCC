@@ -26,3 +26,8 @@ The O8 certificate is isolated in observational_succ/one_object_kernel_certifica
 | O10 | A positive trace plus arbitrarily small rank-one/compact defect forces global nonnegativity | REFUTED shortcut | exact $\ell^2$ diagonal $T_k=2^{-k}$ and rank-one $D_N=-2^{1-N}|e_N\rangle\langle e_N|$, negative eigenvalue $-2^{-N}$, $\|D_N\|\to0$ | synthetic, not the authentic Weil/Connes defect |
 
 **New exact hostile control:** one_object_transport.sonin_compact_defect_countermodel, test SoninDefectControls. The required alternative is a **source-identified** distribution-level trace equality with a valid quadratic *dominance* bound on its defect. Compactness, source-blind fitting and arch-only restricted positivity cannot be promoted to RH.
+
+
+| O11 | Two Sonin Fourier-zero conditions have a support-preserving differential generator $v=D(D+1/2)\phi$ in the additive log-chart | CLASSICAL / PROVED LOCAL | integration by parts gives exponential moment multiplier $\lambda(\lambda-1/2)$; exact Fraction coefficients plus numeric compact-test holdout | actual Connes multiplicative input transport and complete Weil sign remain open |
+
+Implementation: one_object_transport.sonin_log_moment_annihilator; tests: SoninMomentDomainTests. This is a lawful construction of restricted test functions, not a new Weil Hilbert space or a general positivity theorem.
