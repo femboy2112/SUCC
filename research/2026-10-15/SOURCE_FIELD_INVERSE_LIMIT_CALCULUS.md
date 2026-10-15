@@ -96,6 +96,27 @@ The existence proof is finite mathematics **relative to the classical compactnes
 
 **Proof-system dependence:** Reverse mathematics distinguishes WKL from weaker effective systems (e.g. RCA_0). Calling existence "provable relative to carrier" must state the proof principles allowed; a finite proof in classical mathematics is not an executable selector.
 
+### SCF-03U. If the effective compact global path is UNIQUE, the selected path is computable (PROVED CLASSICAL / constructive search)
+
+There is an unexpectedly sharp separation between IdealHard and the user's feared "phantom" source.
+
+**Theorem:** Let T be a DECIDABLE infinite binary prefix tree with **exactly one** infinite path x. Then the unique path x is COMPUTABLE, even if no computable uniform advance bound for the relevant finite observation stage is supplied.
+
+**Proof/construction:** To compute x(k), enumerate the FINITE, decidable T-levels \(T\cap2^N\) for increasing N>k. The levels are always nonempty (the infinite unique path supplies a node). If **every** surviving length-N node has the same k-th bit b, emit b. This algorithm is sound because x's length-N prefix is among the nodes. It TERMINATES: otherwise both bit classes 0 and 1 at position k would have arbitrarily long finite extensions; by classical finitely branching König each would have its own infinite path, contradicting uniqueness. Thus
+
+\[
+\boxed{
+\text{decidable infinite binary source tree + exactly one path}
+\Longrightarrow\text{the path is computable}.
+}\tag{SCF-03U}
+\]
+
+**Consequences:** Merely not knowing a stopping bound is NOT proof of noncomputability. The Kleene IdealHard example from SCF-03, which has NO computable path, cannot be a singleton under the same decidable finite-branching source law. And if the source and observer jointly certify a unique admissible global path in an effective compact decidable tree, a SimpleField point-query constructor exists. This does NOT mean any finite observer can simultaneously emit all its infinitely many bits.
+
+**Exact hostile instrument:** The synthetic decidable tree \`synthetic_unique_branch_level\` has one true path \(0^\omega\) plus finite dead-end spurs \(0^k1\,0^m\) which die after stage \(2k+5\). A finite observer querying bit k with budget \(2k+5\) sees BOTH bit options and must return **UNRESOLVED_BUDGET**, not "Fucked" or "no computable path." Extending to stage \(2k+6\) makes all compatible nodes agree on bit 0 and yields a valid finite exact certificate. \`finite_unique_path_selector\` executes this law at finite requested stages; the all-tree conclusion is the paper theorem, not a claim from finitely many enumerated levels.
+
+**Boundary:** Replace decidable finite source levels with infinite noncompact levels, a hidden observer quotient, or an uncomputable membership oracle, and this construction may fail. Each hypothesis is load-bearing.
+
 ## 4. SCF-04 compactness boundary: all finite levels viable DOES force global existence when stages are finite (CLASSICAL)
 
 **Theorem:** For an inverse sequence of **nonempty finite sets** with total bonding maps, the inverse limit is nonempty.
