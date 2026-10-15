@@ -26,3 +26,9 @@ RH PROVED: NO.
 
 
 | K5 genuine prime-source activation yields a nontrivial Krein-neutral pair on prior observation domain | PROVED LOCAL / exact source law | for 2a0<log p^k, w b E_b=2w B on all old points; SHA-enclosed true log2 produces w2/2 equal nonzero channels at r=1/4 when moving a=1/4 to 1/2 | independent Hilbert+/- nesting not supplied, coherent all-a contraction UNVERIFIED |
+
+
+| K6A original signed K_g >= B/10 for ALL finite complex combinations on [-a,a] when 0<a<=1/24 | PROVED ANALYTIC / exact original-source rational bounds | first 8 genuine Gamma OU modes, interval-Schur bound alpha*a, C_infty<11/2, pole Cauchy bound a³/(1-a); source SHA verified; exact Fraction S8 margin | first prime absent, larger a and RH open |
+| K6B source-justified actual positive Hilbert factor for K_g on every [-a,a], 0<a<=1/12 | PROVED ANALYTIC (CLASSICAL small-window positivity context) | exact OU compressed-Schur factor exp(-alpha*a), Taylor odd P9 lower, first 20 real Gamma rungs, original C_infty<43/8, K_g > B/100 all finite test vectors, noncircular contractive-span extension | contraction for prime-active a and all-a RH not proved; no closed-form executable T_a |
+
+**Theorem K6 manuscript:** research/2026-10-15/APOLLO_KREIN_SOURCE_FACTOR.md. Direct exact original source and rational Taylor constant checks: observational_succ/apollo_krein_factor.py, functions authentic_small_window_brownian_coercivity and authentic_sharp_small_window_hilbert_factor; tests classes ApolloFullSmallIntervalPositiveKernel and ApolloUniformAuthenticPositiveHilbertFactorTests. Distinguish universal analytical quantifiers from the finite integer arithmetic calibration. Original source, Gamma, poles, contact and half-density retained, no nontrivial zeros or assumed positive Gram. Scholarly priority is UNVERIFIED; classical small-window positivity is known. **RH remains open beyond this certified window.**
