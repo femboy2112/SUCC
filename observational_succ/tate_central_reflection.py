@@ -327,6 +327,36 @@ def finite_prime_reflection_counterterm_tape(primes=(2,3),order=7):
     }
 
 
+def theta_selfdual_reflection_gauge(heat_log_weight=F(1,4)):
+    """Canonical quarter-density in HEAT log coordinate from theta Poisson.
+
+    Let Theta(t)=sum_(n∈Z)exp(-pi*n²*t), t>0. Its classically
+    imported Poisson law Theta(t)=t^-1/2*Theta(1/t) yields:
+       H_w(x)=exp(w*x)*Theta(exp(x)),
+       H_w(-x)/H_w(x)=exp((1/2-2w)*x).
+    Therefore H_w is even for every x iff w=1/4.
+    At x=0 the value reflection is blind to every w; its first
+    logarithmic derivative detects (1/2-2w), a true source-normalized
+    reflection-probe repair. This quarter-weight in log heat time is
+    not to be equated naively to the Dirichlet source n^-1/2.
+    """
+    w=_q(heat_log_weight)
+    return {
+        "source":"ORIGINAL_ONE_REAL_GAUSSIAN_THETA_POISSON",
+        "heat_log_density_exponent":w,
+        "unique_exact_theta_selfdual_exponent":F(1,4),
+        "log_reflection_ratio_slope_in_heat_log_coordinate":F(1,2)-2*w,
+        "Theta_poisson_identity_imported":
+            "Theta(t)=t^(-1/2)*Theta(1/t)",
+        "value_only_at_reflection_fixed_heat_time_t_one_blind":True,
+        "derivative_detects_wrong_normalization":w!=F(1,4),
+        "full_theta_log_kernel_even_for_all_x":w==F(1,4),
+        "real_Gamma_R_and_polar_completion_still_required":True,
+        "global_W_eil_sign_proved":False,
+        "RH_proved":False,
+    }
+
+
 def reflected_center_jet_offline_mutant(m):
     """Hostile NON-EULER control defeating finite center and pole observations.
 
