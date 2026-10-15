@@ -11,8 +11,9 @@ from observational_succ.finite_adele_localization import (
     FiniteAdeleSpan, RationalArchimedeanAdeleChart,
 )
 from observational_succ.tate_lattice_descent import (
-    s_integer, multiplicative_reciprocity, modulo_padic_integral,
+    s_integer, modulo_padic_integral,
 )
+from observational_succ.diagonal_adele_zeta import multiplicative_reciprocity
 
 
 class EdgeCarrierIntegrationControls(unittest.TestCase):
