@@ -6,7 +6,7 @@ from observational_succ.tate_prime_clock_uv import (
     PrimeClockGateError, shift_path_geometry, exact_two_cell_negative_witness,
     gamma_sparse_lower, gamma_sparse_linear_lower,
     genuine_first_prime_sparse_weil_certificate,
-    mutated_source_budget,
+    genuine_prime_two_balanced_bump_configuration, mutated_source_budget,
 )
 from observational_succ.apollo_krein_factor import (
     brownian_increment_kernel, prime_hinge_kernel,
@@ -120,6 +120,22 @@ class AuthenticTateGammaUV(unittest.TestCase):
                      (F(1,2),0.001)):
             with self.assertRaises(PrimeClockGateError):
                 genuine_first_prime_sparse_weil_certificate(a,mu)
+
+    def test_genuine_two_bump_prime_negative_is_absorbed_by_full_weil_source(self):
+        c = genuine_prime_two_balanced_bump_configuration()
+        self.assertEqual(c["source"], "SHA_PINNED_ORIGINAL_PRIME_2")
+        self.assertEqual(c["true_prime_labels"], (2,))
+        self.assertEqual(c["left_bump_support_open_interval"], (F(-31,64),F(-29,64)))
+        self.assertEqual(c["total_support_measure_at_most"], F(1,16))
+        self.assertEqual(c["prime_only_signed_energy_relative_to_L2"],
+                         "-log(2)/sqrt(2)")
+        self.assertTrue(c["prime_only_negative_bound_is_SHARP"])
+        self.assertTrue(c["both_bumps_inside_first_prime_window"])
+        self.assertTrue(c["actual_Weil_sign_from_full_source_is_positive"])
+        self.assertEqual(c["original_completed_Weil_L2_margin_strictly_above"],
+                         F(1,24))
+        self.assertFalse(c["whole_first_prime_window_all_tests_proved"])
+        self.assertFalse(c["RH_proved"])
 
     def test_fake_source_modifications_withdraw_positive_certificate(self):
         for delta_c, delta_w in ((F(1,2),0),(0,F(1)),
