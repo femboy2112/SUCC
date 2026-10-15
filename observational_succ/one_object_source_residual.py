@@ -47,6 +47,7 @@ def authenticated_first_window_gate():
        "low_legendre_modes":30,
        "reflection_parity_blocks":(15,15),
        "cross_mapping_to_H1_bounded":True,
+       "zero_shift_cross_resolvent_finite":True,
        "zero_shift_cross_resolvent_form_finite":True,
        "finite_candidate_galerkin_residual_derived":False,
        "low_signed_schur_positivity_proved":False,
