@@ -1,0 +1,26 @@
+name: Authentic signed Suzuki four-low source atlas
+
+on:
+  push:
+    branches:
+      - 'research/tate-weighted-bessel-four-low-*'
+  pull_request:
+    paths:
+      - 'scripts/tate_weighted_bessel_original_low4_scan.py'
+      - '.github/workflows/tate-weighted-bessel-original-low4.yml'
+
+jobs:
+  original-four-low-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install mathematical source tests
+        run: python -m pip install -e ".[test]"
+      - name: True completed Weil four-low analytic signed source interval at Gamma J32
+        run: python scripts/tate_weighted_bessel_original_low4_scan.py --gamma-modes 32
+      - name: Verify original arithmetic source immutability
+        run: python scripts/verify_provenance.py
