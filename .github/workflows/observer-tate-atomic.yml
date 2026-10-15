@@ -1,0 +1,39 @@
+name: Observer Tate atomic finite-to-global reconstruction
+
+on:
+  push:
+    branches:
+      - 'research/observer-tate-bijective-descent-*'
+  pull_request:
+    paths:
+      - 'observational_succ/tate_observer_completion.py'
+      - 'observational_succ/observer_global_sign_gate.py'
+      - 'tests/test_tate_observer_completion.py'
+      - 'tests/test_observer_global_sign_gate.py'
+      - 'scripts/observer_tate_atomic_probe.py'
+      - '.github/workflows/observer-tate-atomic.yml'
+
+jobs:
+  exact-source-descent:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install test dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Finite model-of-model / Tate exact cyclotomic tests
+        run: python -m unittest discover -s tests -p 'test_tate_observer_completion.py' -v
+      - name: Source signed Weil and finite Schur observer growth tests
+        run: python -m unittest discover -s tests -p 'test_observer_global_sign_gate.py' -v
+      - name: Independent original source regression
+        run: python -m unittest discover -s tests -p 'test_finite_fourier_carrier.py' -v
+      - name: Exact deterministic source receipt
+        run: python scripts/observer_tate_atomic_probe.py
+      - name: Frozen source provenance verification
+        run: python scripts/verify_provenance.py
