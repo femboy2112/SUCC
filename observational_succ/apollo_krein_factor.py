@@ -1,0 +1,211 @@
+"""APOLLO: source-authentic finite-window Krein (+ Hilbert) factorization.
+
+This module NEVER asserts its signed source kernel is globally positive.
+It constructs canonical source-identified positive-minus-positive pieces:
+  original Gamma OU increments + pole sinh + prime triangular increments
+  MINUS pole cosh-1 + Brownian with exact contact/prime counterweight.
+The existence of a contraction from positive feature space to negative
+feature space is an RH-strength *unproved* condition.
+"""
+from __future__ import annotations
+
+from fractions import Fraction as F
+from itertools import combinations
+from math import gcd
+
+from .one_object_transport import OneObjectError, _fraction, _int, _mp, _mfrac, _aligned_screw
+from .apollo_derivative_jets import true_third_prime_wavefronts
+
+
+def brownian_increment_kernel(x: int | F, y: int | F) -> F:
+    """Two-sided anchored Brownian Gram B=(|x|+|y|-|x-y|)/2>=PSD."""
+    a,b=_fraction(x),_fraction(y)
+    return (abs(a)+abs(b)-abs(a-b))/2
+
+
+def triangle_overlap(x: int | F, width: int | F) -> F:
+    """Normalized convolution of 1_[0,width] with itself."""
+    a,w=_fraction(x),_fraction(width)
+    if w<=0:
+        raise OneObjectError("Positive primitive clock span required")
+    return max(F(),1-abs(a)/w)
+
+
+def triangle_increment_kernel(x: int | F,y: int | F,
+                              width: int | F) -> F:
+    """PSD Gram of shifted, centered interval indicators in L2(R)."""
+    a,b,w=_fraction(x),_fraction(y),_fraction(width)
+    if w<=0:raise OneObjectError("Positive source clock width required")
+    return triangle_overlap(a-b,w)-triangle_overlap(a,w)-triangle_overlap(b,w)+1
+
+
+def prime_hinge_kernel(x: int | F,y: int | F,b: int | F) -> F:
+    """Anchored K for authentic functional SHAPE h_b(t)=(|t|-b)_+."""
+    a,c,width=_fraction(x),_fraction(y),_fraction(b)
+    if width<=0:raise OneObjectError("Positive log-prime hinge required")
+    h=lambda t:max(F(),abs(t)-width)
+    return h(a-c)-h(a)-h(c)
+
+
+def prime_krein_identity(x: int | F, y: int | F, b: int | F) -> dict:
+    """Exact REAL-source-independent polynomial identity.
+
+    (|x-y|-b)_+-(|x|-b)_+-(|y|-b)_+
+       = b*T_b_increment(x,y)-2*Brownian_increment(x,y).
+    BOTH component kernels are genuine positive Hilbert Grams. They are
+    NOT individually source sums for infinitely many primes: at a fixed
+    window only finitely many original prime hinge atoms contribute.
+    """
+    a,c,width=_fraction(x),_fraction(y),_fraction(b)
+    if width<=0:raise OneObjectError("Positive source interval width required")
+    signed=prime_hinge_kernel(a,c,width)
+    plus=width*triangle_increment_kernel(a,c,width)
+    minus=2*brownian_increment_kernel(a,c)
+    if signed!=plus-minus:
+        raise ArithmeticError("Krein source decomposition failed exact rational identity")
+    return {"signed":signed,"positive_triangle":plus,
+            "negative_brownian":minus,"identity_exact":True}
+
+
+def _det(A):
+    """Exact rational determinant, for finite PSD regression only."""
+    n=len(A)
+    if not n:return F(1)
+    if any(len(row)!=n for row in A):
+        raise OneObjectError("Square Gram matrix required")
+    m=[[F(c) for c in row] for row in A]
+    result=F(1)
+    for k in range(n):
+        pivot=next((j for j in range(k,n) if m[j][k]!=0),None)
+        if pivot is None:return F()
+        if pivot!=k:
+            m[k],m[pivot]=m[pivot],m[k]
+            result=-result
+        v=m[k][k]
+        result*=v
+        for i in range(k+1,n):
+            coeff=m[i][k]/v
+            for j in range(k,n):
+                m[i][j]-=coeff*m[k][j]
+    return result
+
+
+def exact_rational_gram_psd(points: tuple[F,...], kind: str,
+                             width: int | F = 1) -> dict:
+    """Every principal minor >=0, allowing singular positive Gram matrices.
+
+    The analytical PSD proofs use direct L2 Brownian/interval indicator
+    features; this is an independent exact Fraction finite oracle.
+    """
+    if type(points) is not tuple or not 1<=len(points)<=5 or any(type(v) not in (int,F) for v in points):
+        raise OneObjectError("Exact rational points tuple with 1..5 entries required")
+    if kind not in ("brownian","triangle"):
+        raise OneObjectError("Only declared positive primitive features supported")
+    pts=tuple(F(p) for p in points)
+    if kind=="brownian":
+        gram=tuple(tuple(brownian_increment_kernel(x,y) for y in pts) for x in pts)
+    else:
+        gram=tuple(tuple(triangle_increment_kernel(x,y,width) for y in pts) for x in pts)
+    mins=[]
+    for k in range(1,len(pts)+1):
+        for ids in combinations(range(len(pts)),k):
+            sub=tuple(tuple(gram[i][j] for j in ids) for i in ids)
+            mins.append(_det(sub))
+    return {"points":pts,"kind":kind,"matrix":gram,
+            "strictly_negative_principal_minors":tuple(z for z in mins if z<0),
+            "all_principal_minors_nonnegative":all(z>=0 for z in mins),
+            "finite_only":True,"RH_proved":False}
+
+
+def original_suzuki_krein_finite_window(
+        x: int | F, y: int | F,
+        a: int | F, J: int = 8, dps: int = 70) -> dict:
+    """Independent true-source identity of finite-J Suzuki vs plus-minus Grams.
+
+    x,y ∈ [-a,a], 0<a<=2. Original C_infty contact; first J authentic
+    real Gamma OU modes, original real pole, ALL local original prime powers
+    with log n<2a. These equal K_g^J. The omitted Gamma tail is itself
+    POSITIVE SEMIDEFINITE on every finite Gram, but does not establish
+    positivity of the signed full K.
+    """
+    xx,yy,aa=_fraction(x),_fraction(y),_fraction(a)
+    if not 0<aa<=2 or abs(xx)>aa or abs(yy)>aa:
+        raise OneObjectError("Exact window and source points |x|,|y|<=a<=2")
+    _int(J,0,128)
+    mp=_mp(dps)
+    prime_labels=true_third_prime_wavefronts(2*aa)
+    X,Y=_mfrac(mp,xx),_mfrac(mp,yy)
+    C=mp.euler+mp.pi/2+3*mp.log(2)+mp.log(mp.pi)
+    atoms=tuple((mp.log(j.n),mp.log(j.p)/mp.sqrt(j.n),j.n)
+                for j in prime_labels)
+    # Same true *infinite* contact as the pinned PR85 Suzuki source,
+    # but a finite Gamma potential. This is not the O1 finite-contact W_J.
+    g=lambda t:(-4*(mp.exp(abs(t)/2)+mp.exp(-abs(t)/2)-2)
+                +C*abs(t)/2
+                +mp.fsum(w*max(mp.mpf(0),abs(t)-b) for b,w,n in atoms)
+                -mp.fsum(mp.mpf(4)/(4*j+1)**2 *
+                       (1-mp.exp(-(4*j+1)*abs(t)/2)) for j in range(J)))
+    original=g(X-Y)-g(X)-g(Y)+g(0)
+    gamma=mp.fsum(mp.mpf(4)/(4*j+1)**2*(
+                  mp.exp(-(4*j+1)*abs(X-Y)/2)
+                 -mp.exp(-(4*j+1)*abs(X)/2)
+                 -mp.exp(-(4*j+1)*abs(Y)/2)+1)
+                  for j in range(J))
+    pole_plus=8*mp.sinh(X/2)*mp.sinh(Y/2)
+    pole_minus=8*(mp.cosh(X/2)-1)*(mp.cosh(Y/2)-1)
+    B=brownian_increment_kernel(xx,yy)
+    Bm=_mfrac(mp,B)
+    prime_plus=mp.fsum(w*b*(
+                   max(mp.mpf(0),1-abs(X-Y)/b)
+                  -max(mp.mpf(0),1-abs(X)/b)
+                  -max(mp.mpf(0),1-abs(Y)/b)+1)
+                   for b,w,n in atoms)
+    brownian_minus=(C+2*mp.fsum(w for b,w,n in atoms))*Bm
+    positive=gamma+pole_plus+prime_plus
+    negative=pole_minus+brownian_minus
+    residual=original-(positive-negative)
+    return {"source":"AUTHENTIC_GENUINE_ZETA_PRIME_POWERS",
+            "window_halfwidth":str(aa),"points":(str(xx),str(yy)),
+            "J":J,"prime_labels":tuple(n for b,w,n in atoms),
+            "positive_gram":mp.nstr(positive,40),
+            "negative_gram":mp.nstr(negative,40),
+            "signed_gram":mp.nstr(original,40),
+            "signed_difference":mp.nstr(positive-negative,40),
+            "residual_abs":abs(residual),"residual":mp.nstr(residual,14),
+            "gamma_modes_are_positive_Hilbert_features":True,
+            "triangular_prime_terms_are_positive_Hilbert_features":True,
+            "brownian_contact_term_is_negative_Hilbert_feature":True,
+            "source_hilbert_contraction_proved":False,"RH_proved":False}
+
+
+def source_feature_contraction_diagnostic(
+        plus: tuple[tuple[F,...],...],
+        minus: tuple[tuple[F,...],...]) -> dict:
+    """Exact finite algebra: K+=PSD and K-=PSD does NOT imply K+-K- PSD.
+
+    This is a finite diagnostic and NOT the RH-hard uniform contraction
+    test over full infinite feature spans.
+    """
+    n=len(plus)
+    if n==0 or n>5 or len(minus)!=n:
+        raise OneObjectError("1..5 dimensional matched Gram matrices")
+    if any(len(row)!=n for row in plus+minus):
+        raise OneObjectError("Same-size squared matrices required")
+    a=tuple(tuple(_fraction(z) for z in row) for row in plus)
+    b=tuple(tuple(_fraction(z) for z in row) for row in minus)
+    if any(a[i][j]!=a[j][i] or b[i][j]!=b[j][i]
+           for i in range(n) for j in range(n)):
+        raise OneObjectError("Symmetric positive feature blocks required")
+    def minors(A):
+        return tuple(_det(tuple(tuple(A[i][j] for j in ids) for i in ids))
+                     for k in range(1,n+1)
+                     for ids in combinations(range(n),k))
+    mp=minors(a); mn=minors(b)
+    if any(v<0 for v in mp+mn):
+        raise OneObjectError("Each individual feature Gram must be PSD")
+    k=tuple(tuple(a[i][j]-b[i][j] for j in range(n)) for i in range(n))
+    mk=minors(k)
+    return {"positive_feature_psd":True,"negative_feature_psd":True,
+            "combined_signed_psd_on_selected_finite_set":all(v>=0 for v in mk),
+            "combined_minors":mk,
+            "full_source_contraction_proved":False,"RH_proved":False}
