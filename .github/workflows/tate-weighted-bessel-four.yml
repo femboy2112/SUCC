@@ -8,6 +8,8 @@ on:
     paths:
       - 'observational_succ/tate_weighted_bessel_four_schur.py'
       - 'tests/test_tate_weighted_bessel_four_schur.py'
+      - 'observational_succ/tate_four_low_compensator.py'
+      - 'tests/test_tate_four_low_compensator.py'
       - 'scripts/tate_weighted_bessel_four_probe.py'
       - 'research/2026-10-15/TATE_WEIGHTED_BESSEL_FOUR_RECEIPT.json'
       - '.github/workflows/tate-weighted-bessel-four.yml'
@@ -30,6 +32,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_tate_weighted_bessel_four_schur.py' -v
       - name: Verify byte-serialized exact-rational weighted spectrum and original source
         run: python scripts/tate_weighted_bessel_four_probe.py --verify
+      - name: Prove rank four completed original signed operator compensation positivity
+        run: python -m unittest discover -s tests -p 'test_tate_four_low_compensator.py' -v
       - name: Preserve authenticated seven-moment Bessel and Neumann low7 results
         run: python -m unittest discover -s tests -p 'test_tate_bessel_seven_schur.py' -v
       - name: Preserve original Tate 1-s prime-power reflection source
