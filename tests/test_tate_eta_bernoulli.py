@@ -8,6 +8,7 @@ from observational_succ.tate_eta_bernoulli import (
     sigma_one, eta_q_log_derivative_coefficients,
     formal_dirichlet_log_derivative, eta_eisenstein_prime_transducer,
     sigma_one_dirichlet_tail_majorant, primary_source_interface_status,
+    modular_discriminant_formal_passport, completed_two_critical_track_passport,
 )
 
 
@@ -128,6 +129,37 @@ class EisensteinToGenuinePrimeJet(unittest.TestCase):
         self.assertNotEqual(s["eta_heat_archimedean"],s["original_zeta_archimedean"])
         self.assertTrue(s["eta_modular_transport_is_not_Weil_positivity"])
         self.assertFalse(s["RH_proved"])
+
+
+
+class FullModularVsEisensteinSourceFirewall(unittest.TestCase):
+    def test_delta_cusp_series_is_not_divisor_sigma1_even_though_dlog_is_E2(self):
+        c=modular_discriminant_formal_passport(12)
+        self.assertEqual(c["Delta_q_coefficients_through_degree_N"][:7],
+                         (0,1,-24,252,-1472,4830,-6048))
+        self.assertEqual(c["q_dlog_Delta_coefficients_through_degree_N_minus_one"][:7],
+                         (1,-24,-72,-96,-168,-144,-288))
+        self.assertTrue(c["E2_comparison_exact"])
+        self.assertTrue(c["Delta_is_eta_to_24_power"])
+        self.assertTrue(c["cusp_order_exactly_one"])
+        self.assertFalse(c["Delta_Ramanujan_tau_coefficients_are_sigma1"])
+        self.assertFalse(c["Gamma_of_Delta_L_series_identified_with_Gamma_zeta"])
+        self.assertFalse(c["RH_proved"])
+
+    def test_original_zeta_cannot_be_replaced_by_two_shifted_completed_copies(self):
+        d=completed_two_critical_track_passport()
+        self.assertEqual(d["symmetry_center_real_part"],F(1))
+        self.assertEqual(d["conditional_on_RH_two_real_tracks"],(F(1,2),F(3,2)))
+        self.assertEqual(d["functional_equation"],"X(2-s)=X(s)")
+        self.assertFalse(d["nontrivial_zero_locations_used_as_inputs"])
+        self.assertTrue(d["single_track_at_center_not_implied"])
+        self.assertTrue(d["source_projection_out_shifted_factor_required"])
+        self.assertFalse(d["RH_proved"])
+
+    def test_discriminant_q_cutoff_mutations_fail(self):
+        for N in (0,1,2,True,49,3.5):
+            with self.assertRaises(EtaTransportError):
+                modular_discriminant_formal_passport(N)
 
 
 class IndependentClassicalNumericHoldouts(unittest.TestCase):
