@@ -8,6 +8,7 @@ from observational_succ.field_limit_trichotomy import (
     kleene_source_tree_accepts,kleene_finite_stage,finite_prefix_versus_global_path,
     noncompact_escape_prefix,phantom_source_prefix,nonfaithful_toolkit_pair,
     effective_unique_compact_path_theorem,tate_rh_field_boundary,
+    single_real_oracle_shadow,
 )
 
 
@@ -144,6 +145,37 @@ class TrichotomyIsNotOneMagicalTruthScore(unittest.TestCase):
         self.assertFalse(d["RH_is_mathematically_unprovable"] is True)
         self.assertFalse(d["finite_symbolic_Tate_carrier_is_full_RH_proof"])
         self.assertFalse(d["RH_proved"])
+
+
+class SingleExactRealIsNotFiniteEffectiveInformation(unittest.TestCase):
+    def test_real_halting_information_has_valid_exact_rational_enclosures(self):
+        for n in (1,2,3,5,8,12):
+            r=single_real_oracle_shadow(n,4)
+            self.assertGreaterEqual(r["rational_lower"],0)
+            self.assertLessEqual(r["rational_upper"],F(1,3))
+            self.assertGreaterEqual(r["rational_upper"],r["rational_lower"])
+            self.assertEqual(r["infinite_unseen_tail_bound"],F(1,3*4**n))
+            self.assertFalse(r["exact_real_observer_oracle_authorized"])
+            self.assertFalse(r["Archimedean_Schwartz_test_data_automatically_computable"])
+            self.assertTrue(r["source_finite_interface_not_finite_effective_information"])
+            self.assertFalse(r["RH_proved"])
+
+    def test_more_time_shrinks_uncertainty_but_no_unbounded_halt_oracle(self):
+        for n in (3,5,9):
+            old=single_real_oracle_shadow(n,0)
+            for time_budget in (1,3,5,16):
+                nxt=single_real_oracle_shadow(n,time_budget)
+                self.assertGreaterEqual(nxt["rational_lower"],old["rational_lower"])
+                self.assertLessEqual(nxt["rational_upper"],old["rational_upper"])
+                old=nxt
+            self.assertGreaterEqual(old["rational_lower"],F(1,4))
+            self.assertEqual(old["exact_real_computable"],
+                             "PROVED_NO_BY_HALTING_DIGIT_REDUCTION")
+
+    def test_single_measurement_oracle_untyped_or_overbudget_input_rejected(self):
+        for depth,steps in ((0,1),(49,1),(3,-1),(2,513),(True,2),(2,True),(2.0,3)):
+            with self.assertRaises(FieldLimitError):
+                single_real_oracle_shadow(depth,steps)
 
 
 if __name__=="__main__":
