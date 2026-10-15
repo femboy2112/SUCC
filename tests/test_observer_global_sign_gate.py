@@ -108,13 +108,14 @@ class AuthenticSignedArithmeticSeparationTests(unittest.TestCase):
         self.assertFalse(z["RH_proved"])
 
     def test_source_truth_not_replaced_by_anarbitrary_grammar_gram(self):
-        z=true_suzuki_anchored_two_point_source(Q(-1,4),Q(1,2),128)
+        z=true_suzuki_anchored_two_point_source(Q(-1,4),Q(1,2),64)
         self.assertIn(z["certified_finite_sign"],("POSITIVE","NEGATIVE","AMBIGUOUS"))
         self.assertEqual(z["source"],"SHA_PINNED_AUTHENTIC_SIGNED_WEIL_SUZUKI")
         for args in (
             (0,Q(1,2),128),
             (Q(1,4),Q(1,4),128),
             (Q(1,4),Q(1,2),129),
+            (Q(-1,4),Q(1,2),128), # source exponent J/radius >128
             (Q(3),Q(1,2),128),
             (True,Q(1,2),128),
         ):
