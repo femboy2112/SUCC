@@ -15,3 +15,8 @@
 Full statements, normalization, source family, derivations, caveats, next hostile probes: [ONE_OBJECT_TATE_WEIL_SUZUKI_CONNES.md](../research/2026-10-15/ONE_OBJECT_TATE_WEIL_SUZUKI_CONNES.md). Code: observational_succ/one_object_transport.py; exact tests plus numerical holdouts: tests/test_one_object_transport.py; deterministic receipt: scripts/one_object_transport_probe.py. Original prime-power list is imported from completed_weil_transport, with no zero positions as inputs. Contextual independent Suzuki source: https://arxiv.org/pdf/2606.09096 . Connes local trace: https://arxiv.org/pdf/math/9811068 .
 
 **Pending:** verified full Schwartz–Bruhat/adelic Connes principal-value distribution identification, authentic unconditional Hilbert-factor kernel, all-a sign/zero-shift range. Zero-reading, synthetic covariance and proof-by-positivity shortcuts prohibited. **RH OPEN.**
+
+
+| O8 | Actual source anchored K_g at rational points x=1/4, y=1/2 has strictly positive 2x2 principal minor | PROVED FINITE SOURCE (SHA-pinned parent; exact outward Fraction) | source_weil_hierarchy.screw_interval + genuine Gamma tail; symbolic anchor-cancellation; GitHub two-Python success run 38681543132 | all other finite tuples / all test functions remain open |
+
+The O8 certificate is isolated in observational_succ/one_object_kernel_certificates.py and tests/test_one_object_kernel_certificates.py. Its finite Gram interval is not a fitted numerical spectrum. Exact source SHA is inherited from the existing suzuki_legendre_source parent; no upstream source mutation or academic priority asserted.
