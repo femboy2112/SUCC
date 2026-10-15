@@ -1,5 +1,6 @@
 """Prove scoped Simple/IdealHard/Fucked observer-limit distinctions by exact controls."""
 import unittest
+from fractions import Fraction as F
 from itertools import product
 
 from observational_succ.field_limit_trichotomy import (
