@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 from fractions import Fraction as F
+from observational_succ.one_object_kernel_certificates import source_two_point_minor
 from observational_succ.one_object_transport import (
     contact_rational_increment,contact_tail_majorant,
     screw_uniform_tail_majorant,original_prime_atoms,
@@ -28,7 +29,15 @@ def main():
     assert connes["traces"]==(3,9,9,9,9,9)
     g=lambda t:-t*t
     assert anchored_kernel(g,F(2),F(3))==12
+    minor=source_two_point_minor(F(1,4),F(1,2),128)
+    assert minor["verdict"]=="PROVED_FINITE_SOURCE_POSITIVE"
+    low=minor["determinant"][0]
+    floor_1e6=F(low.numerator*10**6//low.denominator,10**6)
     result={
+      "authentic_Suzuki_2x2_points":["1/4","1/2"],
+      "authentic_Suzuki_strict_positive_2x2":True,
+      "authentic_Suzuki_determinant_lower_floor_1e6":str(floor_1e6),
+      "authentic_Suzuki_provenance":"SHA_PINNED_ORIGINAL_SIGNED_ZETA",
       "kind":"ONE_OBJECT_TATE_WEIL_SUZUKI_CONNES",
       "parent_tate_head":"940f0a47ef25b8b553c2f0b45032b37e68c23b02",
       "source_zeta_genuine_prime_powers":list(source),
