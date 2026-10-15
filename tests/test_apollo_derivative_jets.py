@@ -15,6 +15,7 @@ from observational_succ.apollo_derivative_jets import (
     compact_polynomial_moment_certificate,
     third_distribution_bump_pair, exact_local_gamma_slope_bound,
     local_suzuki_first_second_third,
+    authentic_uniform_small_diagonal,
 )
 
 
@@ -175,6 +176,21 @@ class ApolloAuthenticSmallScaleDerivatives(unittest.TestCase):
         for bad in (0,-1,Q(1,2),True,0.125):
             with self.assertRaises(OneObjectError):
                 local_suzuki_first_second_third(bad)
+
+
+class ApolloContinuousDiagonalTheorem(unittest.TestCase):
+    def test_rational_source_certifies_a_uniform_real_interval(self):
+        for r in (Q(1,8),Q(1,16),Q(1,64),Q(1,1000)):
+            o=authentic_uniform_small_diagonal(r)
+            self.assertTrue(o["strict_for_every_real_radius_in_window"])
+            self.assertTrue(o["not_all_2by2_gram"])
+            self.assertEqual(o["rigorously_positive_K_diagonal_lower"],r/8)
+            self.assertLess(o["original_C_interval"][1],Q(5,4))
+            self.assertGreater(o["original_log2_interval"][0],Q(2,3))
+            self.assertFalse(o["RH_proved"])
+        for bad in (0,-1,Q(1,4),True,0.1):
+            with self.assertRaises(OneObjectError):
+                authentic_uniform_small_diagonal(bad)
 
 
 if __name__=="__main__":
