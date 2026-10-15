@@ -60,3 +60,17 @@ primes cover, and the phase geometry of the rescue); BS-II-6 kills the crude
 budget-accounting proof family, complementing PR #86's codim-30 moment
 positivity and PR #85's negative-depth framework; BS-G1 makes the campaign
 order's |F|² warning into an exact theorem.
+
+## Round 3 (Black Sun III, branch `research/black-sun-iii-wild-limits-2026-10-14`)
+
+Dossier: `research/2026-10-14/BLACK_SUN_III_WILD_LIMITS.md`; receipt:
+`research/2026-10-14/BLACK_SUN_III_RECEIPT.json`. Motivated by the operator's
+wild-embedding intuition; the correspondence is made precise with stated
+disanalogy.
+
+| ID | Statement (actual scope) | Status | Validation |
+| --- | --- | --- | --- |
+| BS-III-1 | BD distance instrument (Bagchi-weighted l2): closed-form Gram entries via digamma at rationals; γ₁ ≡ 0; ⟨γ,γ₂⟩ = (log 2)/2 exact; d_k sequence matches the published BD table | PROVED LOCAL (implementation) + EXTERNAL THEOREM (criterion) | 7 tests incl. closed-vs-direct and table lock |
+| BS-III-2 | Tame-tower faithfulness: finite windows see exactly n < e^{2A}; full tower determines the source; the transport is tame, the wildness is the ∀-quantifier | PROVED LOCAL | exact visibility/recovery tests |
+| BS-III-3 | Two-mode reduction at a = 1/2: diagonal 2×2; per-mode A/prime compensation (rescue +0.160 on the odd mode); complement margin λ₂ = +0.018 | TESTED MODEL | reduction structure tests |
+| ALEX-CORR | Alexander horned-sphere correspondence table + disanalogy | STUDY | — |
