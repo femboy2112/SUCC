@@ -1,0 +1,13 @@
+# RH handoff candidate — Tate conductor and character-source normalization
+
+**From:** SUCC branch research/tate-source-fourier-conductor-2026-10-14, parent main 03db44203147a7b28d445bb9f970fa71360e78c4. **RH PROVED: NO.** This is a candidate outbound result; do not push it into an independent RH repository without separate review.
+
+**Precise transferable local result (CLASSICAL / PROVED LOCAL):** for $\phi_a=1_{p^a\mathbb Z_p}$ and unramified $\omega=\pm1$ the forward/dual local Tate ratio is $(1-\omega^{-1}p^{s-1})/(1-\omega p^{-s})$, with fixed additive $\psi_p$, Haar and meromorphic domains. For primitive conductor-one $\chi_{-3}$ at $p=3$ and unit coset $\phi_u=1_{u+3\mathbb Z_3}$ it is $3^s/(i\sqrt3)$, with exact Gauss phase computed in $\mathbb Q(\sqrt{-3})$. The single coarse unit-ball observation is zero, while refined coset observations are $(+1/2,-1/2)$: a proven source-observability obstruction and repair.
+
+**Global completion control:** with conductor 3, *odd* Archimedean Gamma and root number $+1$, the source-derived theta's two incomplete-Gamma charts complete $L(s,\chi_{-3})$ as an entire function. For all $0\le\operatorname{Re}(s)\le1$, all heights, the truncated $n\le N$ source has error at most $e^{-N^2}/N^2$, upper-bounded by a rational $1/(N^2\sum_{k=0}^K N^{2k}/k!)$. This is conditional on the CLASSICAL primitive-character theta Poisson identity and separate from numerical roundoff. The independent Hurwitz-zeta oracle is used only in tests.
+
+**Adversarial source controls:** fake composite-6 place, reversed Fourier volume, missing conductor, character-mod-3 multiplicativity, ramified Euler factor at $p=3$ suppressed, negative genuine twisted prime jet at $p=2$, and symmetric fake multiplier that preserves the completed zeta reflection and residues while injecting zeros at $1/4,3/4$. This negative multiplier is not an authentic Euler source.
+
+**RH-hard missing arrow:** a test-space morphism from true Tate local/global Schwartz–Bruhat data to the original **signed** Weil quadratic distribution retaining every prime power, conductor, Gamma, half-density, pole and contact term. Then identify its true Suzuki operator, certify the low/30-high cross-resolvent range at $\lambda\downarrow0$, and ultimately all intervals; or identify Connes scaling trace with the exact same signed distribution. Neither arrow is presently proved.
+
+Reproduction: python -m unittest discover -s tests -p 'test_tate_local_contract.py'; python scripts/tate_local_contract_probe.py. Full proofs, assumptions and literature: research/2026-10-14/TATE_SOURCE_FOURIER_CONDUCTOR_BRIDGE.md. No source-derived global Weil positivity, RH proof, or measured physical carrier is asserted.
