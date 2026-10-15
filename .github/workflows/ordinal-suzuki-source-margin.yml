@@ -9,6 +9,8 @@ on:
       - 'observational_succ/ordinal_suzuki_source_margins.py'
       - 'tests/test_ordinal_suzuki_source_margins.py'
       - 'scripts/ordinal_suzuki_source_margin_probe.py'
+      - 'scripts/audit_local_push_state.py'
+      - 'tests/test_audit_local_push_state.py'
       - '.github/workflows/ordinal-suzuki-source-margin.yml'
 
 jobs:
@@ -33,5 +35,7 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_ordinal_ranked_succ.py' -v
       - name: Exact original source deterministic signed margin receipt
         run: python scripts/ordinal_suzuki_source_margin_probe.py
+      - name: Read-only git local-push audit isolation regression
+        run: python -m unittest discover -s tests -p 'test_audit_local_push_state.py' -v
       - name: Original source blob immutable provenance
         run: python scripts/verify_provenance.py
