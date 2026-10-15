@@ -1,6 +1,4 @@
 {
-  "academic_novelty_established": false,
-  "analytic_meromorphic_continuation_is_not_actual_negative_Re_s_integral": true,
   "arch_global": {
     "RH_or_Weil_sign_claimed": false,
     "critical_half_density_gaussian": {
@@ -63,68 +61,72 @@
     ],
     "true_euler_smooth_coefficient_6": 1
   },
-  "base_source": "classical SUCC unit-origin branch; not original Tate source clone",
-  "diagonal_rational_global_phase_1_over_6": {
-    "diagonal_global_character_equals_one": true,
-    "finite_places": [
+  "finite_atlas": {
+    "all_tests_infinite_local_source_identification": true,
+    "diagonal_rational_character": {
+      "diagonal_global_character_equals_one": true,
+      "finite_places": [
+        [
+          2,
+          "1/2"
+        ],
+        [
+          3,
+          "2/3"
+        ]
+      ],
+      "q": "1/6",
+      "real_signed_phase": "-1/6",
+      "total_integer_phase": 1
+    },
+    "exact_cyclotomic_Fourier_and_Parseval": true,
+    "full_coset_functional_equations_checked": 36,
+    "global_adelic_Poisson_derived": false,
+    "kind": "CLASSICAL_TATE_LOCAL_ATLAS_RECEIPT",
+    "signed_Weil_positivity_or_RH_proved": false,
+    "support_and_precision_contralateral_refinement": true,
+    "window_sizes": [
       [
         2,
-        "1/2"
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        1,
+        4
+      ],
+      [
+        2,
+        0,
+        3,
+        8
       ],
       [
         3,
-        "2/3"
+        0,
+        2,
+        9
+      ],
+      [
+        3,
+        1,
+        1,
+        9
+      ],
+      [
+        5,
+        0,
+        1,
+        5
       ]
-    ],
-    "q": "1/6",
-    "real_signed_phase": "-1/6",
-    "total_integer_phase": 1
-  },
-  "exact_all_window_fourier_inversion_plancherel": true,
-  "exact_full_coset_local_FE_at_sampled_regular_exponents": true,
-  "exact_two_axis_support_precision_naturality": true,
-  "finite_window_sizes": [
-    [
-      2,
-      0,
-      1,
-      2
-    ],
-    [
-      2,
-      1,
-      1,
-      4
-    ],
-    [
-      2,
-      0,
-      3,
-      8
-    ],
-    [
-      3,
-      0,
-      2,
-      9
-    ],
-    [
-      3,
-      1,
-      1,
-      9
-    ],
-    [
-      5,
-      0,
-      1,
-      5
     ]
-  ],
-  "finite_windows_have_not_proved_global_adelic_Poisson": true,
-  "higher_conductor_phase_lost_under_coarsening": true,
-  "kind": "CLASSICAL_TATE_SCHWARTZ_EXACT_RECEIPT",
+  },
+  "global_adelic_Poisson_deduced_from_finite_examples": false,
+  "kind": "CLASSICAL_TATE_SCHWARTZ_VERIFIED_BRIDGE_RECEIPT",
+  "local_Fourier_implemented_on_fixed_a_b_test_window": true,
   "signed_Weil_positivity_or_RH_proved": false,
-  "two_independent_local_residue_numerators": true,
-  "verified_local_coset_mellin_fourier_instances": 185
+  "unrestricted_source_unknown_support_or_precision_certified": false
 }
