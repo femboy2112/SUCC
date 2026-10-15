@@ -1,0 +1,40 @@
+name: Tate eta Bernoulli two-channel arithmetic transport
+
+on:
+  push:
+    branches:
+      - 'research/tate-eta-bernoulli-transducer-*'
+  pull_request:
+    paths:
+      - 'observational_succ/tate_eta_bernoulli.py'
+      - 'tests/test_tate_eta_bernoulli.py'
+      - 'research/2026-10-15/TATE_ETA_BERNOULLI_RECEIPT.json'
+      - 'scripts/tate_eta_bernoulli_probe.py'
+      - '.github/workflows/tate-eta-bernoulli.yml'
+
+jobs:
+  eta-two-source-proof:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install mathematical test dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Exact eta Bernoulli modular and formal Euler source controls
+        run: python -m unittest discover -s tests -p 'test_tate_eta_bernoulli.py' -v
+      - name: Verify machine-readable original source/Bernoulli proof receipt
+        run: python scripts/tate_eta_bernoulli_probe.py --verify
+      - name: Preserve DYSPON first-prime gamma source proof
+        run: python -m unittest discover -s tests -p 'test_tate_prime_clock_uv.py' -v
+      - name: Preserve APOLLO original signed Hilbert factor
+        run: python -m unittest discover -s tests -p 'test_apollo_krein_factor.py' -v
+      - name: Preserve Tate conductor/parity and source tests
+        run: python -m unittest discover -s tests -p 'test_tate_local_contract.py' -v
+      - name: Verify preserved original-source import/provenance
+        run: python scripts/verify_provenance.py
