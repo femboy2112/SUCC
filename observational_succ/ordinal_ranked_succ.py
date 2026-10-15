@@ -80,7 +80,8 @@ ZERO=OrdinalCNF()
 
 
 def ordinal_nat(n:int)->OrdinalCNF:
-    n=_nat(n)
+    if type(n) is not int or n<0 or n.bit_length()>1024:
+        raise OrdinalDescentError("Finite exact natural ordinal coefficient <=1024 bits")
     return ZERO if n==0 else OrdinalCNF(((ZERO,n),))
 
 
@@ -93,7 +94,7 @@ def ordinal_monomial(exponent:OrdinalCNF,coefficient:int=1)->OrdinalCNF:
 def ordinal_lex_counters(counters:tuple[int,...])->OrdinalCNF:
     """(c_k,..,c_0) -> omega^k*c_k+...+omega*c_1+c_0."""
     if (type(counters) is not tuple or not 1<=len(counters)<=8
-            or any(type(x) is not int or not 0<=x<=1000000 for x in counters)):
+            or any(type(x) is not int or x<0 or x.bit_length()>1024 for x in counters)):
         raise OrdinalDescentError("Finite exact natural lex-counter source required")
     terms=[]
     for power,count in zip(range(len(counters)-1,-1,-1),counters):
