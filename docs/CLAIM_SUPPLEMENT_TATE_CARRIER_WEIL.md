@@ -26,6 +26,8 @@
 | CR-06 | Conditional Weil GNS-type minimal generated positive Hilbert realization exists iff true full Weil quadratic is PSD on all compact smooth tests, equivalently RH | CLASSICAL / PROVED PAPER (CONDITIONAL); RH UNVERIFIED | Construct D/ker Q then complete if Q>=0; necessity from Hilbert norms. Actual source-derived positivity not constructed. Finite signed model checks are countercontrols, not authentic Weil Gram matrices |
 | CR-07 | Lagarias original natural-number source has bounded exact rational interval inequalities; finite prefixes do not certify universal RH | CLASSICAL EQUIVALENCE / EXACT FRACTION FINITE PROBES | source_weil_hierarchy outward interval exp/log; true sigma/H and fake-sigma mutation controls; no proof at n->infinity |
 
+| TF-10 | Source-typed **free rational affine SUCC event paths** act functorially on a bona fide Tate Gaussian adelic tensor, commuting with all exact local Qp Fourier restrictions; event receipts retain history when bare maps collapse | PROVED RESTRICTED PAPER / EXACT FINITE SOURCE TESTED | GlobalSourceWord and independent SourceWord components; not a functor from arbitrary physical carrier experiments or complete Schwartz–Bruhat/Weil test spaces |
+
 ## Stop conditions
 
 Fake composite n=6 is not a prime place, but multiplication by scalar 6 is allowed on an actual field Q_p. Likewise p is invertible in Q_p but not in Z/p^k. Do not declare source tampering lawful for the genuine ζ-function. Counterexample to finite prime observations with unspecified source tail is a *probe gap*, not proof of true RH undecidability.
