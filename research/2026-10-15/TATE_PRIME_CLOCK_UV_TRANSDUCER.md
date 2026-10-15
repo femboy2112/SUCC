@@ -173,7 +173,39 @@ The Gamma protection is **UV/localized**, and is insufficient for the *delocaliz
 
 **Pass/fail/ambiguous:** A proof of DYS-04 is genuine restricted positivity; any exact original negative Weil witness in its domain would refute the implementation/derivation. A synthetic negative *prime-only* witness is expected and is not such a contradiction. A positive sampled Gram outside the restricted cone is ambiguous. The global RH theorem remains UNVERIFIED.
 
-## 7. Reproduction / provenance / independence
+## 7. DYS-07: an ACTUAL prime-2 maximal negative direction protected by genuine completed positivity
+
+The earlier four-anchor path witness uses a synthetic rational clock b=3/4 solely to test exact operator geometry. The following source-faithful direction activates true arithmetic, not a stand-in.
+
+Take \(a=1/2\), \(b=\log2\) and the rational open cell
+\[
+J=(-31/64,-29/64), \qquad |J|=1/32.
+\]
+The independently SHA-pinned outward-rational log2 interval proves \(J+\log2\subset(-1/2,1/2)\) and \(J\cap(J+\log2)=\varnothing\). For **every nonzero** complex \(\phi\in C_c^\infty(J)\), form
+\[
+f(t)=\phi(t)+\phi(t-\log2).
+\]
+Then \(f\in C_c^\infty(-1/2,1/2)\) and \(|\operatorname{supp}f|\le1/16\). Since the two bumps are disjoint, \( \|f\|_2^2=2\|\phi\|_2^2\); also \(\langle f,S_{\log2}f\rangle=\|\phi\|_2^2\) because exactly one translated copy overlaps. Thus the GENUINE arithmetic prime-2 form saturates its maximally negative two-chain bound:
+
+\[
+\boxed{
+Q_{\text{prime }2}(f)
+=-2\frac{\log2}{\sqrt2}\,\|\phi\|_2^2
+=-\frac{\log2}{\sqrt2}\,\|f\|_2^2<0.
+}\tag{DYS-07a}
+\]
+
+However the exact ORIGINAL full Weil form, containing the independent real Gamma, polar terms and completed contact, satisfies DYS-04 for **every such \(\phi\)**:
+
+\[
+\boxed{Q_\zeta(f)>\frac1{24}\|f\|_2^2>0.}\tag{DYS-07b}
+\]
+
+**Meaning:** This first-prime positivity result does *not* evade arithmetic by choosing support that cannot interact with a prime. On the contrary, it contains an infinite-dimensional family of tests whose authentic prime clock extracts the sharpest possible negative relative energy, while the genuinely coupled completed source remains positive. That is a valid, sharply discriminating arithmetic positivity transducer.
+
+**Boundary:** The result does not control all f with large/delocalized support and cannot be extrapolated from the restricted 1/16 cone to RH. It is not a proof that every newly activated prime is harmless. It does establish a nontrivial actual-prime positive family beyond the older prime-free local window, rather than merely comparing toy operators.
+
+## 8. Reproduction / provenance / independence
 
 - \`observational_succ/tate_prime_clock_uv.py\`: exact rational clock geometry; original-source and contact pinned sparse theorem; never inserts nontrivial-zero data.
 - \`tests/test_tate_prime_clock_uv.py\`: path-boundaries, exact negative 4-anchor witness, original source labels at a=1/2, exact 16-rung Gamma support-Schur gate, contact/pole/prime budget and intentionally broken source cases.
