@@ -277,6 +277,12 @@ def true_prime_two_source_phase_triad():
             and lo+bb.lo>-aa and hi+bb.hi<aa
             and hi<lo+bb.lo and w.lo>0):
         raise PrimeInterferenceError("Original prime-2 source or support waveform failed")
+    from .tate_prime_clock_uv import genuine_first_prime_sparse_weil_certificate
+    original_full=genuine_first_prime_sparse_weil_certificate()
+    if not (original_full["actual_prime_power_labels"]==(2,)
+            and original_full["support_measure_max"]>=F(1,16)
+            and original_full["original_completed_Weil_L2_margin_strictly_above"]==F(1,24)):
+        raise ArithmeticError("The independent genuine Weil sparse test theorem is not available")
     return {
         "source":"SHA_PINNED_ORIGINAL_PRIME_TWO_JET",
         "a":aa,"true_prime_power_labels":labels,
@@ -289,6 +295,9 @@ def true_prime_two_source_phase_triad():
         "quarter_phase_prime_rayleigh":"0",
         "same_true_prime_jet_all_three_cases":True,
         "prime_jets_are_distribution_impulses_not_time_dynamics":True,
+        "completed_original_Weil_all_three_phase_classes_positive_by_independent_sparse_theorem":True,
+        "completed_original_Weil_each_L2_margin_strictly_above":F(1,24),
+        "complete_original_source_positive_does_not_make_prime_component_positive":True,
         "completed_Weil_negative_witness_inferred":False,
         "RH_proved":False,
     }
