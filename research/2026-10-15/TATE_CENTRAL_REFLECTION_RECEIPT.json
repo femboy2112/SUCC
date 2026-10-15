@@ -1,0 +1,90 @@
+{
+  "schema": "SUCC_TATE_REFLECTION_JET_v1",
+  "status": "TRUE_LOCAL_PRIME_GAMMA_CONTACT_NOT_RH_POSITIVITY",
+  "source": "SHA_PINNED_ORIGINAL_ZETA_TATE_COMPLETED_WEIL",
+  "center": {
+    "s": "1/2",
+    "Gamma_contact_between_5_and_43over8": true,
+    "central_zeta_log_derivative_is_original_contact_over_two": true,
+    "global_reflection_log_slope_is_original_C_infty": true,
+    "zeta_half_nonzero_without_looking_up_zeros": true,
+    "full_completed_Weil_sign_proved": false
+  },
+  "finite_primes": {
+    "prime_cutoff": 11,
+    "actual_prime_labels": [
+      2,
+      3,
+      5,
+      7,
+      11
+    ],
+    "each_local_reflection_exact_value_at_center": "1",
+    "all_finite_stage_log_slopes_strictly_negative": true,
+    "all_prime_raw_slope_to_minus_infinity": true,
+    "finite_samples_by_themselves_prove_divergence": false,
+    "twisted_odd_chi3_at_p2_has_opposite_positive_slope": true,
+    "ramified_p3_must_not_use_unramified_chart": true,
+    "real_sigma_two_fifths_raw_product": "+infinity",
+    "real_sigma_half_raw_product": "1",
+    "real_sigma_three_fifths_raw_product": "0"
+  },
+  "prime_power_counterterms": {
+    "true_source_tape": [
+      [
+        2,
+        2,
+        "1"
+      ],
+      [
+        4,
+        2,
+        "1/2"
+      ],
+      [
+        3,
+        3,
+        "1"
+      ],
+      [
+        9,
+        3,
+        "1/2"
+      ]
+    ],
+    "fake_primitive_six": false,
+    "high_power_k_three_plus_absolute": true,
+    "first_two_prime_power_layers_diverge": true,
+    "low_prime_jet_analytic_completion_by_high_tail_alone": false
+  },
+  "renormalized_reflection_residual": {
+    "vertical_real_strip": [
+      "1/4",
+      "3/4"
+    ],
+    "prime_cutoff": 64,
+    "remove_prime_jet_orders_1_to": 7,
+    "remaining_jet_starts_at": 8,
+    "absolute_complex_log_tail_upper": "1/128",
+    "uniform_in_imaginary_height": true,
+    "nonzero_reflection_and_center_phase": true,
+    "analytic_zeta_ratio_from_raw_high_tail_alone": false
+  },
+  "theta_half_density": {
+    "log_heat_selfdual_weight": "1/4",
+    "correct_first_jet_zero": "0",
+    "wrong_one_half_weight_first_jet": "-1/2",
+    "Poisson_source_fixes_weight": true
+  },
+  "hostile_non_Euler_mutant": {
+    "center_matching_derivatives_through_order": 5,
+    "preserves_zero_and_one_pole_residues": true,
+    "source_offline_zeros": [
+      "1/4",
+      "3/4"
+    ],
+    "preserves_original_Euler_product": false,
+    "RH_not_proved_by_reflection_alone": true
+  },
+  "RH_proved": false
+}
