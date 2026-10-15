@@ -3,7 +3,8 @@ import unittest
 from fractions import Fraction as F
 from observational_succ.apollo_source_first_interference import (
     PrimeInterferenceError,true_prime_two_source_phase_triad,
-    gamma_positive_first_Brownian_recovery,source_first_prime_interference)
+    gamma_positive_first_Brownian_recovery,source_first_prime_interference,
+    authentic_full_negative_feature_transfer_bound)
 from observational_succ.apollo_krein_factor import prime_mixed_second_source_coefficients
 
 class OriginalSourcePhase(unittest.TestCase):
@@ -41,6 +42,20 @@ class GammaFirstAndBrownianDeterminacy(unittest.TestCase):
             self.assertFalse(z["physical_Gamma_first_time_order_proved"])
             self.assertFalse(z["all_positive_to_negative_contraction_proved"])
             self.assertFalse(z["RH_proved"])
+    def test_full_original_Krein_negative_is_bounded_graph_of_positive_feature(self):
+        for a,labels in ((F(1,12),()),(F(1,4),()),(F(1,2),(2,)),
+                         (F(1),(2,3,4,5,7))):
+            d=authentic_full_negative_feature_transfer_bound(a)
+            self.assertEqual(d["true_active_prime_powers"],labels)
+            self.assertTrue(d["negative_feature_determined_by_positive_without_assuming_sign"])
+            self.assertTrue(d["unique_bounded_graph_on_minimal_positive_feature_span"])
+            self.assertTrue(d["positive_feature_injective_on_compact_Brownian_carrier"])
+            self.assertGreater(d["source_positive_to_negative_graph_operator_norm_squared_upper"],1)
+            self.assertFalse(d["this_bound_itself_certifies_contraction"])
+            self.assertFalse(d["RH_equivalent_all_windows_contraction_proved"])
+            self.assertFalse(d["physical_actualization_order_proved"])
+            self.assertFalse(d["RH_proved"])
+
     def test_illegal_timing_or_uncertified_numeric_input_cannot_be_accepted(self):
         for radius in (0,-1,True,2.0,129):
             with self.assertRaises(PrimeInterferenceError):
