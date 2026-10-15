@@ -9,6 +9,7 @@ from observational_succ.apollo_krein_factor import (
     prime_hinge_kernel,prime_krein_identity,exact_rational_gram_psd,
     original_suzuki_krein_finite_window,source_feature_contraction_diagnostic,
     prime_mixed_second_source_coefficients,gamma_mixed_second_source_coefficients,
+    neutral_prime_activation_pair,authentic_prime_two_activation_on_old_window,
 )
 
 
@@ -140,6 +141,37 @@ class ApolloDistributionalMixedSecondTests(unittest.TestCase):
         for bad in (-1,True,513):
             with self.assertRaises(OneObjectError):
                 gamma_mixed_second_source_coefficients(bad)
+
+
+class ApolloPrimeActivationGluing(unittest.TestCase):
+    def test_pre_wavefront_source_features_are_exactly_neutral(self):
+        sample=(F(-1,4),F(-1,8),F(0),F(1,8),F(1,4))
+        for x,y in product(sample,sample):
+            src=neutral_prime_activation_pair(x,y,F(3,4))
+            self.assertEqual(src["positive_channel"],src["negative_channel"])
+            self.assertEqual(src["signed_on_old_window"],0)
+            self.assertTrue(src["signed_restriction_compatible"])
+            self.assertFalse(src["independent_plus_minus_nesting_certified"])
+        d=neutral_prime_activation_pair(F(1,4),F(1,4),F(3,4))
+        self.assertEqual(d["positive_channel"],F(1,2))
+        self.assertTrue(d["nontrivial_paired_features"])
+
+    def test_actual_primitive_2_source_neutral_birth(self):
+        d=authentic_prime_two_activation_on_old_window()
+        self.assertEqual(d["source"],"ORIGINAL_PINNED_VON_MANGOLDT_2")
+        self.assertTrue(d["Krein_neutral_source_birth"])
+        self.assertTrue(d["signed_zero"])
+        self.assertEqual(d["unweighted_plus_equal_minus"],F(1,2))
+        self.assertGreater(d["prime_two_log_interval"][0],F(1,2))
+        self.assertLess(d["prime_two_log_interval"][1],F(1))
+        self.assertGreater(d["true_prime_weighted_positive_channel_interval"][0],0)
+        self.assertFalse(d["all_a_Hilbert_contraction_proved"])
+
+    def test_invalid_source_birth_boundary_rejected(self):
+        for x,y,b in ((F(1,2),F(-1,2),F(1)),(F(1),F(0),F(1,2)),
+                      (F(0),F(0),F(0)),(F(1),F(1),True)):
+            with self.assertRaises(OneObjectError):
+                neutral_prime_activation_pair(x,y,b)
 
 
 if __name__=="__main__":
