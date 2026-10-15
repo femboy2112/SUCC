@@ -251,7 +251,77 @@ These cases have different outcomes under a future increase of tools: raising B 
 
 **Reproduction:** \`observational_succ/source_field_inverse_limits.py\`; \`tests/test_source_field_inverse_limits.py\`; \`scripts/source_field_inverse_limit_probe.py --verify\`; frozen original-source-safe receipt \`research/2026-10-15/SOURCE_FIELD_INVERSE_LIMIT_RECEIPT.json\`. Python 3.10/3.13 CI also runs original Tate/Suzuki high-sector and provenance checks. Tests preserve mathematically PROVED versus executable finite CALIBRATION boundaries.
 
-## 10. Next truly RH-consequential transport
+## 10. A genuine finite recursive ALL-STAGE POSITIVITY TRANSDUCER (SCF-10; SYNTHETIC, CLASSICAL PROOF)
+
+The taxonomy should not stop at obstructions: **what exact kind of finite recursive mathematical mechanism COULD settle infinitely many source sign obligations?** Here is an independently executable minimal positive model showing the necessary proof shape, and a coupled-source countermodel showing what can break it.
+
+### 10a. Recursive source law yields a GLOBAL positive operator without executing infinitely many stages
+
+Fix rational \(|t|<1\). Let \(S:\ell^2(\mathbb N)\to\ell^2(\mathbb N)\) be the unilateral successor shift, \(Se_n=e_{n+1}\). Define the finite-law operator
+
+\[
+L=I+tS,\qquad G=LL^*.
+\]
+
+For any finite n, let \(L_n\) be its first-n×n lower bidiagonal block, with diagonal 1 and subdiagonal t. Define \(G_n=L_nL_n^*\). In exact rational entries:
+
+\[
+(G_n)_{ij}=
+\begin{cases}
+1&i=j=0,\\
+1+t^2&i=j\ge1,\\
+t&|i-j|=1,\\
+0&\text{otherwise}.
+\end{cases}
+\tag{SCF-10a}
+\]
+
+These are **compatible**: \(G_{n+1}|_{\{0,\ldots,n-1\}}=G_n\). The same *one finite source law* constructs the complete infinite operator and proves for EVERY \(v\in\ell^2\),
+
+\[
+\boxed{
+\langle v,Gv\rangle
+=\|L^*v\|^2
+\ge (1-|t|)^2\|v\|^2>0,
+}\tag{SCF-10b}
+\]
+
+since \(\|S^*\|\le1\) and the reverse triangle inequality gives \(\|(I+tS^*)v\|\ge(1-|t|)\|v\|\). This is the **SimpleField proof-of-property pattern** sought by SUCC: a finite, source-derived recursive law plus a UNIVERSAL analytic inequality replaces physically performing infinitely many matrix tests. The finite integer/rational tests check the explicit coefficient rule, perfect-square factorization, and stage coherence; they are not the proof of the infinite inequality.
+
+**Important:** This is a SYNTHETIC model. Neither \(G=LL^*\) nor the norm lower bound has been constructed for the **original** signed Weil/Suzuki \(G\); doing so without assuming its positivity would be RH-strength. Do not silently identify this positive toy with a zeta operator or infer global Weil sign.
+
+### 10b. The exact source-coupling Schur gate, including singular parents
+
+Suppose a new source layer extends an already checked symmetric positive block A through actual signed cross-coupling B and newborn block D:
+
+\[
+M=\begin{pmatrix}A&B\\B^*&D\end{pmatrix}.
+\]
+
+Even in the smallest scalar case, *A≥0 and D≥0 are insufficient*. If A>0, exact positivity is equivalent to
+
+\[
+\boxed{D-\frac{B^2}{A}\ge0.}\tag{SCF-10c}
+\]
+
+If the parent is singular A=0, positivity requires BOTH \(B=0\) (the source RANGE condition) and \(D\ge0\). A nonzero cross B with an unobservable/zero parent generates an indefinite matrix even when both diagonal blocks are positive. Exact counterexample:
+
+\[
+\begin{pmatrix}0&1/2\\1/2&1\end{pmatrix}
+\quad\text{has}\quad\det=-1/4<0.
+\]
+
+This is the finite-dimensional skeleton of the real Suzuki zero-shift Douglas/Feshbach gate. When passing to nontrivial Hilbert sectors, replace the finite inverse \(A^{-1}\) with justified range-inclusion/variational shorting and the authentic source-specific topology—never a compact \(D^{-1}\) asserted at zero.
+
+### 10c. A source-neutral feature birth is not a free proof of contraction
+
+APOLLO's exact genuine-prime neutral-pair identity adds **equal nonzero positive feature energy** to both independent \(K_+\) and \(K_-\) on a previously observed window, while their signed difference remains unchanged. The exact finite toy \((K_+,K_-)\mapsto(K_++w,K_-+w)\), w>0, preserves the report but not either Hilbert carrier. A source-preserving positive global contraction must account for the **coupled new features**; independently nesting both feature spaces is a type error.
+
+Executable instruments: \`source_field_gluing.exact_scalar_schur_gluing\`, \`recursive_positive_gram_stage\`, and \`paired_neutral_source_birth\`; exact hostile tests in \`tests/test_source_field_gluing.py\`. These routines return explicitly synthetic source identifiers. The all-n proof is the elementary operator calculation above, not finite-precision Gram positivity.
+
+**Translation into a potential RH proof program:** build the **actual source-defined** all-radius map of Weil low/high Schur data, prove a *uniform inductive source-coupled* positivity preservation theorem akin to SCF-10c, and verify a real base object. Such a finite correct law can certify infinitely many source stages without a finite-time traversal of infinity. We have NOT found that original zeta law. The field taxonomy tells us exactly which additional transport/probe contracts are needed.
+
+## 11. Next truly RH-consequential transport
 
 The proposed major theorem should be typed as
 
