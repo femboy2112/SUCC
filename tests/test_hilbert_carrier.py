@@ -202,5 +202,21 @@ class HilbertLimitTubeTests(unittest.TestCase):
             with self.assertRaises(h.HilbertCarrierError):fn()
 
 
+
+
+class HilbertLipschitzNoGo(unittest.TestCase):
+    def test_no_globally_lipschitz_interval_onto_square(self):
+        for L in (Q(),Q(1,100),Q(1),Q(3,2),Q(10),Q(111,3)):
+            theorem=h.no_global_lipschitz_space_filler(L)
+            self.assertLess(theorem["upper_area_of_image"],1)
+            self.assertGreaterEqual(theorem["finite_time_interval_cover_count"],1)
+            self.assertFalse(theorem["surjective_with_this_Lipschitz_bound"])
+            self.assertFalse(theorem["actual_Hilbert_curve_Lipschitz"])
+        with self.assertRaises(h.HilbertCarrierError):
+            h.no_global_lipschitz_space_filler(-1)
+        with self.assertRaises(h.HilbertCarrierError):
+            h.no_global_lipschitz_space_filler(0.5)
+
+
 if __name__=="__main__":
     unittest.main()
