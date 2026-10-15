@@ -28,3 +28,6 @@
 - dedicated .github/workflows/one-object-relative-schur.yml on Python 3.10 and 3.13 with PR #104 ancestor + original source regressions/provenance.
 
 **Status of CI/Lean:** verify the exact branch SHA and GitHub Actions; no Lean kernel proof claimed, full repository suite is independent of dedicated feature CI. No main modifications, releases, cross-repo publication or academic priority claims.
+
+
+**ORS-01d — PROVED ALGEBRAIC / finite exact hostile example:** The original genuine contact shift satisfies the *whole* generalized Suzuki pencil identity \((G+cK)-\mu K=G-(\mu-c)K\). Thus wherever the high-block Schur complement is lawfully defined, it must transform by exact parameter translation; correcting only low matrix A while keeping cross B and high D fixed violates the SAME arithmetic-object representation. Rational 3×3 SPD-K example with nonzero K cross tests the wrong-low-only difference; source is a declared toy, not a new result that the actual high compact D has bounded inverse.
