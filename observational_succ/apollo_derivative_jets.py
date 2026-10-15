@@ -314,3 +314,43 @@ def exact_local_gamma_slope_bound(r: int | Q, J: int, dps: int = 70) -> dict:
             "analytic_tail_evaluation":upper,
             "numerical_rounding_certified":False,
             "RH_proved":False}
+
+
+
+def local_suzuki_first_second_third(r: int | Q, dps: int = 75) -> dict:
+    """Genuine t>0 ORIGINAL Suzuki derivatives before the first prime wavefront.
+
+    For 0<r<=1/4<log2, the authentic prime contribution is absent.
+      g'(r)=-4 sinh(r/2)+C_inf/2-atanh(q)-atan(q), q=e^-r/2;
+      g''(r)=-2cosh(r/2)+q/(1-q^4);
+      g'''(r)=-sinh(r/2)-q/[2(1-q^4)]-2q^5/(1-q^4)^2.
+    These are ordinary derivatives ONLY for r>0 away from the wavefronts.
+    The full distributions at r=0 need Pf/contact renormalization.
+    """
+    rr=_fraction(r)
+    if not 0<rr<=Q(1,4):
+        raise OneObjectError("Authentic prime-free positive window 0<r<=1/4")
+    mp=_mp(dps)
+    x=_mfrac(mp,rr)
+    q=mp.exp(-x/2)
+    denom=-mp.expm1(-2*x)
+    C=mp.euler+mp.pi/2+3*mp.log(2)+mp.log(mp.pi)
+    slope=-4*mp.sinh(x/2)+C/2-mp.atanh(q)-mp.atan(q)
+    second=-2*mp.cosh(x/2)+q/denom
+    third=-mp.sinh(x/2)-q/(2*denom)-2*q**5/denom**2
+    leading_slope=(mp.log(x)+mp.euler+mp.log(2*mp.pi))/2
+    delta=abs(slope-leading_slope)
+    analytic=3*x
+    return {
+        "rational_radius":str(rr),
+        "slope":mp.nstr(slope,40),
+        "second":mp.nstr(second,40),
+        "third":mp.nstr(third,40),
+        "scaled_second":mp.nstr(x*second,35),
+        "scaled_third":mp.nstr(x*x*third,35),
+        "slope_asymptotic_abs_error":delta,
+        "rigorous_elementary_error_bound":3*rr,
+        "float_rounding_certified":False,
+        "prime_wavefront_in_window":False,
+        "RH_proved":False,
+    }
