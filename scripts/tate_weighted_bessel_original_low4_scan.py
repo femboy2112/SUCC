@@ -74,10 +74,63 @@ def original_source_low_four_scan(J=32):
     }
 
 
+def certify_original_low_four_gamma_stage_transition():
+    """Prove and replay the TRUE J32->J64 source sign transition.
+
+    Both stage matrices include one real Gamma, real pole/contact and p2.
+    At J32, the (P2,P4) parity 2x2 determinant has a STRICT negative
+    outward-rational upper; at J64 both parity blocks are STRICTLY PD.
+    The omitted genuine Gamma real OU contribution is PSD at all J,
+    so the complete original 4x4 LOW Galerkin A_inf is POSITIVE DEFINITE.
+
+    This does NOT prove the low ZERO-SHIFT SCHUR A_inf-R0 PSD.
+    All determinants and tails originate in original signed source.
+    """
+    a32=original_source_low_four_scan(32)
+    a64=original_source_low_four_scan(64)
+    b32=a32["source_2x2_blocks"]
+    b64=a64["source_2x2_blocks"]
+    if not (
+        a32["source_git_blob"]==a64["source_git_blob"]==ORIGINAL_SUZUKI_BLOB
+        and a32["true_active_prime_power_labels"]==[2]
+        and a64["true_active_prime_power_labels"]==[2]
+        and b32[0]["source_parity_block_positive_definite"]
+        and b32[1]["partial_Gamma_stage_block_negative_determinant_certified"]
+        and not a32["partial_source_true_Gamma_J_low4_positive_definite"]
+        and all(z["source_parity_block_positive_definite"] for z in b64)
+        and a64["full_original_A_infinite_Gamma_low4_PSD_if_partial_PD"]
+        and a64["omitted_Gamma_modes_PSD"]
+        and F(a64["omitted_Gamma_original_source_kernel_norm_upper"])<
+            F(a32["omitted_Gamma_original_source_kernel_norm_upper"])
+    ):
+        raise ArithmeticError("True signed source J32/J64 sign-gate proof changed")
+    return {
+        "source":"SHA_PINNED_ORIGINAL_ZETA_LOW4_GAMMA_SIGN_TRANSITION",
+        "original_suzuki_source_blob":ORIGINAL_SUZUKI_BLOB,
+        "a":"1/2","low_rank":4,"true_prime_atoms":[2],
+        "J32_truncated_P2_P4_determinant_strictly_negative":True,
+        "J64_truncated_low_A4_parity_blocks_both_strictly_positive":True,
+        "omitted_genuine_Gamma_mode_tail_PSD":True,
+        "completed_original_low_A4_strictly_positive_definite":True,
+        "J32_signed_low4_sha256":a32["source_signed_matrix_sha256"],
+        "J64_signed_low4_sha256":a64["source_signed_matrix_sha256"],
+        "J64_polar_and_original_contact_preserved":True,
+        "original_zero_shift_low_short_A_minus_R0_PSD_proved":False,
+        "original_all_test_first_prime_Weil_PSD_proved":False,
+        "RH_proved":False,
+    }
+
+
 if __name__=="__main__":
     parser=argparse.ArgumentParser()
     parser.add_argument("--gamma-modes",type=int,default=32)
+    parser.add_argument("--verify-stage-transition",action="store_true")
     args=parser.parse_args()
-    print("TRUE_ORIGINAL_FOUR_LOW_SOURCE_SCAN="+json.dumps(
-        original_source_low_four_scan(args.gamma_modes),sort_keys=True
-    ))
+    if args.verify_stage_transition:
+        print("TRUE_ORIGINAL_LOW4_SOURCE_SIGN_TRANSITION="+json.dumps(
+            certify_original_low_four_gamma_stage_transition(),sort_keys=True
+        ))
+    else:
+        print("TRUE_ORIGINAL_FOUR_LOW_SOURCE_SCAN="+json.dumps(
+            original_source_low_four_scan(args.gamma_modes),sort_keys=True
+        ))
