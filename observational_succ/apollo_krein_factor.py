@@ -254,3 +254,64 @@ def gamma_mixed_second_source_coefficients(j: int) -> dict:
             "smooth_exponential_coefficient":F(-1),
             "separate_infinite_origin_series_is_illegal":True,
             "RH_proved":False}
+
+
+
+def neutral_prime_activation_pair(x: int | F,y: int | F,
+                                  b: int | F) -> dict:
+    """Krein-neutral prime source on a smaller observation interval.
+
+    When b>|x|,|y|,|x-y|, true prime hinge is zero and
+    b*DeltaT_b(x,y) = 2 B(x,y), while *both Hilbert features need not
+    vanish*. Thus individual plus/minus Hilbert source carriers are NOT
+    canonically nested under activating a prime; only their signed
+    difference is canonically restricted. Source-neutral paired
+    identification is needed for coherent all-a contraction transport.
+    """
+    xx,yy,bb=_fraction(x),_fraction(y),_fraction(b)
+    if bb<=max(abs(xx),abs(yy),abs(xx-yy)):
+        raise OneObjectError("This theorem requires a pre-activation source window")
+    out=prime_krein_identity(xx,yy,bb)
+    if out["signed"]!=0 or out["positive_triangle"]!=out["negative_brownian"]:
+        raise ArithmeticError("Source-neutral prime activation identity failed")
+    return {"points":(xx,yy),"width":bb,
+            "positive_channel":out["positive_triangle"],
+            "negative_channel":out["negative_brownian"],
+            "signed_on_old_window":out["signed"],
+            "nontrivial_paired_features":out["positive_triangle"]!=0,
+            "independent_plus_minus_nesting_certified":False,
+            "signed_restriction_compatible":True,"RH_proved":False}
+
+
+def authentic_prime_two_activation_on_old_window() -> dict:
+    """Pinned ORIGINAL n=2 activation as a nontrivial neutral Krein pair.
+
+    The SUCC original source gives 1/2<log2<1 exactly by log intervals.
+    At a=1/4 no n=2 hinge is visible (2a=1/2<log2). But when
+    moving to a=1/2 the new plus and minus source channels each
+    contribute w2*1/2 at the old x=y=1/4, while the ORIGINAL signed
+    prime contribution stays zero. The law is exact symbolic algebra,
+    not a float or an RH positivity claim.
+    """
+    from .apollo_derivative_jets import genuine_prime_third_jet
+    label=genuine_prime_third_jet(2)
+    lo,hi=label.log_n_interval
+    if not F(1,2)<lo<=hi<1:
+        raise ArithmeticError("Original log(2) enclosure no longer separates source ages")
+    src=neutral_prime_activation_pair(F(1,4),F(1,4),F(3,4))
+    # The symbolic identity holds for EVERY b>1/2, including genuine log(2);
+    # rational b=3/4 witnesses the same structural representation.
+    if src["positive_channel"]!=F(1,2):
+        raise ArithmeticError("New-source neutral channel has wrong width")
+    return {"source": "ORIGINAL_PINNED_VON_MANGOLDT_2",
+            "prime_two_log_interval":(lo,hi),
+            "prime_two_weight_interval":label.delta_prime_weight_interval,
+            "old_halfwidth":F(1,4),"new_halfwidth":F(1,2),
+            "old_points":(F(1,4),F(1,4)),
+            "unweighted_plus_equal_minus":F(1,2),
+            "true_prime_weighted_positive_channel_interval":
+                (label.delta_prime_weight_interval[0]/2,
+                 label.delta_prime_weight_interval[1]/2),
+            "signed_zero":True,
+            "Krein_neutral_source_birth":True,
+            "all_a_Hilbert_contraction_proved":False,"RH_proved":False}
