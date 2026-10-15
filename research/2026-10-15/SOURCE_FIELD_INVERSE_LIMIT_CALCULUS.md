@@ -342,7 +342,145 @@ Executable instruments: \`source_field_gluing.exact_scalar_schur_gluing\`, \`rec
 
 **Translation into a potential RH proof program:** build the **actual source-defined** all-radius map of Weil low/high Schur data, prove a *uniform inductive source-coupled* positivity preservation theorem akin to SCF-10c, and verify a real base object. Such a finite correct law can certify infinitely many source stages without a finite-time traversal of infinity. We have NOT found that original zeta law. The field taxonomy tells us exactly which additional transport/probe contracts are needed.
 
-## 11. Next truly RH-consequential transport
+## 11. An actual TATE finite-place transducer: inverse-limit carrier versus finite-dimensional Schwartz–Bruhat tests (SCF-TATE)
+
+The maintainer's point "each finite-place stage still contains infinitely much mathematical information" is mathematically justified, but the precise Tate architecture exposes a **very useful finite exact interface**.
+
+### 11a. Infinite \(\mathbb Q_p\) carrier, yet each fixed support/conductor test has FINITELY MANY coefficients
+
+Fix a GENUINE rational prime p. For integers \(M,N\ge0\), let
+
+\[
+\boxed{
+V_{M,N}(p)=
+\{f:\mathbb Q_p\to\mathbb C:
+\operatorname{supp}f\subseteq p^{-M}\mathbb Z_p,\quad
+f(x+h)=f(x)\ \forall h\in p^N\mathbb Z_p\}.
+}\tag{SCF-TATE1}
+\]
+
+A source function in this chart is EXACTLY a function on the finite quotient
+
+\[
+p^{-M}\mathbb Z_p/p^N\mathbb Z_p
+\cong\mathbb Z/p^{M+N}\mathbb Z.
+\]
+
+Thus, with \(Q=p^{M+N}\),
+
+\[
+\boxed{\dim_{\mathbb C}V_{M,N}(p)=Q.}\tag{SCF-TATE2}
+\]
+
+Choose representatives \(x_j=j/p^M\) for j mod Q, and denote the source coefficients by \(c_j=f(x_j)\). Every coset still contains INFINITELY MANY \(p\)-adic source points. The finite integer Q counts independent complex coefficients, NOT the amount of information in arbitrary complex scalars. Restricting to exactly named rational/cyclotomic coefficients makes a finite executable local model; without that restriction, computing those coefficients is an independent probe/access question.
+
+**Crucial two categorical directions:**
+
+\[
+\boxed{
+\mathbb Z_p=\varprojlim_n\mathbb Z/p^n\mathbb Z
+\quad\text{(point carrier)}
+}
+\]
+
+but
+
+\[
+\boxed{
+\mathcal S(\mathbb Q_p)=
+\varinjlim_{M,N\ge0} V_{M,N}(p)
+\quad\text{(locally constant compact test functions)}.
+}\tag{SCF-TATE3}
+\]
+
+The second is a FILTERED DIRECT limit under inclusions as support expands or coset constancy is refined. The first is an inverse limit of finite residue rings. **Confusing these limits is a specific SUCC finite-to-global type error.** Every Schwartz–Bruhat test belongs to some finite-dimensional chart, but verifying a proposition for *every* chart still has infinitely many source/test obligations unless a uniform transport theorem is proved.
+
+### 11b. EXACT source-normalized Fourier turns an infinite local integral into a finite DFT
+
+Use the same declared local additive character/Haar as the existing PR #103:
+
+\[
+\psi_p(x)=e^{2\pi i\{x\}_p},\qquad dx(\mathbb Z_p)=1,
+\]
+
+with compensating Archimedean \(\psi_\infty(x)=e^{-2\pi ix}\). Each source cell \(x_j+p^N\mathbb Z_p\) has Haar volume \(p^{-N}\). Fourier duality gives
+
+\[
+\boxed{
+\widehat f(k/p^N)
+=p^{-N}\sum_{j=0}^{Q-1}c_j\,\zeta_Q^{jk},
+\qquad \zeta_Q=e^{2\pi i/Q}.
+}\tag{SCF-TATE4}
+\]
+
+The dual belongs to \(V_{N,M}(p)\): source support/constancy indices EXCHANGE, and the dual coset Haar volume is \(p^{-M}\).
+
+**Finite unitarity is exact, not numerical:**
+
+\[
+\sum_{k=0}^{Q-1}\zeta_Q^{(j-\ell)k}=Q\,\mathbf1_{j=\ell}
+\]
+
+implies
+
+\[
+\boxed{
+p^{-M}\sum_k|\widehat c_k|^2
+=p^{-N}\sum_j|c_j|^2.
+}\tag{SCF-TATE5}
+\]
+
+Applying the SAME Fourier transform twice gives \(\widehat{\widehat f}(x)=f(-x)\), since \(p^{-(M+N)}Q=1\). A finite Fourier presentation can therefore preserve all original local source \(L^2\) amplitudes exactly without any completion over infinitely many carrier points.
+
+**Executable precision:** \`finite_cyclotomic_fourier\` emits exact rational coefficients indexed by FORMAL root-of-unity powers; it does not confuse the unreduced group ring with a canonical cyclotomic number-field representation. \`exact_tate_finite_plancherel\` proves inversion and Parseval using modular character orthogonality, with no floating complex phases. It is an exact finite source instrument over a genuine prime p, not a global Hilbert positivity certificate.
+
+### 11c. Source-preserving SCALE REFINEMENT is a commuting Fourier square
+
+Two separate SUCC refinements act on the finite coefficient table \(c_j\):
+
+1. **Support enlargement** \((M,N)\to(M+1,N)\): extend by zero, assigning old \(c_j\) to new label \(j'=pj\) and zero to other new labels.
+2. **Constancy refinement** \((M,N)\to(M,N+1)\): replicate old \(c_j\) to all \(j'\equiv j\pmod{Q}\), the p subcosets of an old cell.
+
+Both have exactly \(pQ\) new labels and preserve the actual function on \(\mathbb Q_p\). The Fourier transform interchanges them:
+
+\[
+\boxed{
+\mathcal F\,\iota_{\rm support}
+=\iota_{\rm constancy}^{\vee}\,\mathcal F,
+\qquad
+\mathcal F\,\iota_{\rm constancy}
+=\iota_{\rm support}^{\vee}\,\mathcal F.
+}\tag{SCF-TATE6}
+\]
+
+The second equation's off-support cancellation is the finite exact character identity \(\sum_{\ell=0}^{p-1}\zeta_p^{\ell k'}=0\) unless \(p\mid k'\). These are ACTUAL, lawful, finite source/test gluing maps; no phantom local cosets are invented. Tested at p=2 and p=3 with exact Haar and formal phases.
+
+### 11d. A genuine ramified SOURCE OBSERVABILITY repair at p=3
+
+The real PR #103 primitive odd conductor-3 local character is \(+1\) on unit residue 1 and \(-1\) on residue 2. On \(V_{0,1}(3)\) its source coefficient vector is
+
+\[
+\boxed{(c_0,c_1,c_2)=(0,1,-1).}\tag{SCF-TATE7}
+\]
+
+The coarse unit sum is \(1-1=0\), so this observer LOSES the signed character distinction. The correctly normalized Fourier k=1 report is, however,
+
+\[
+\boxed{
+\widehat c_1
+=\frac{\zeta_3-\zeta_3^2}{3}
+=\frac{\sqrt{-3}}{3}\ne0,\qquad
+|\widehat c_1|^2=1/3.
+}\tag{SCF-TATE8}
+\]
+
+This is an **authenticated original Tate source**, not the synthetic even-coordinate phantom. It is computed exactly in the parent's already-implemented \(\mathbb Q(\sqrt{-3})\) field. One *lawful conductor-level probe* repairs a source-map \(\sigma\) deficiency that a coarse observation could not distinguish. This is a vivid SimpleField/IdealHard/FuckedField operational boundary in the actual arithmetic domain.
+
+**RH status:** finite local \(p\)-adic Fourier isometry, stage gluing and character phase do NOT imply positivity of the completed global Weil form. To get an RH transducer, the restricted adelic tensor product, the real Gaussian \(\Gamma_{\mathbb R}\), conductor and the FULL signed pole/contact/prime map must all be correctly identified, and a separate positive global operator/Schur domination must be proved. No epsilon/phase or finite sampling makes that sign free.
+
+**Artifacts:** \`observational_succ/tate_finite_bruhat_observers.py\`, \`tests/test_tate_finite_bruhat_observers.py\`. Mathematical ingredients are classical finite local harmonic analysis and Tate normalizations; this is new-to-SUCC SOURCE GLUING/instrumentation, not new academic Fourier theory.
+
+## 12. Next truly RH-consequential transport
 
 The proposed major theorem should be typed as
 
