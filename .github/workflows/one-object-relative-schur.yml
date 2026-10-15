@@ -50,6 +50,20 @@ jobs:
           python -m unittest discover -s tests -p 'test_one_object_source_residual.py' -v
           python -m unittest discover -s tests -p 'test_one_object_contact_neumann.py' -v
           python -m unittest discover -s tests -p 'test_one_object_true_derivative.py' -v
+      - name: Source-first directional H1 source budget (diagnostic display only)
+        run: |
+          python - <<'PY'
+          from fractions import Fraction as F
+          from observational_succ.one_object_true_derivative import genuine_projected_first_legendre_H1_energy
+          for m,n in ((1,32),(1,128),(3,32),(3,128)):
+              x=genuine_projected_first_legendre_H1_energy(2,n,m)
+              print("ACTUAL_SIGNED_ORIGINAL_G_J_SOURCE_Q_RANK",m,
+                    "GRID",n,
+                    "H1_SQ_INTERVAL",
+                    float(x["projected_derivative_squared_lower"]),
+                    float(x["projected_derivative_squared_upper"]),
+                    "NOT_Q30_NOT_RH")
+          PY
       - name: Frozen source and sign-debt receipt
         run: python scripts/one_object_residual_probe.py --verify research/2026-10-15/ONE_OBJECT_RESIDUAL_RECEIPT.json
       - name: Original immutable SUCC provenance
