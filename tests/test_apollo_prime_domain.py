@@ -34,6 +34,8 @@ class FirstActualPrimeActiveSparseDomainTests(unittest.TestCase):
             self.assertEqual(item.uniform_weil_l2_floor,F(1,10))
             self.assertTrue(item.conditional_on_measured_support)
             self.assertTrue(item.all_tests_in_domain)
+            self.assertTrue(item.h01_test_domain_extension_by_continuity)
+            self.assertFalse(item.bounded_operator_on_all_L2_claimed)
             self.assertFalse(item.full_ambient_weil_positivity_proved)
             self.assertFalse(item.RH_proved)
 
