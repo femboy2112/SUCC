@@ -109,6 +109,35 @@ def eta_modular_s_defect(alpha, t_over_pi):
     }
 
 
+def eta_selfdual_first_jet(alpha) -> dict:
+    """Weakest local probe repairing the exact modular S fixed-point gap.
+
+    The modular S defect of E_alpha is exp[-delta*(t-4*pi^2/t)].
+    At t0=2*pi its VALUE is 1 for every alpha, while
+      d/dt log defect at t0 = -2*delta.
+    Thus a single source-indexed FIRST DERIVATIVE, unlike a point
+    value, determines alpha uniquely within the declared family.
+    Equivalent sourced formula:
+       alpha = sum sigma1(n)*exp(-2*pi*n) + 1/(8*pi) = 1/24,
+    where the last equality follows from classical eta modular S
+    and its self-dual Lambert reciprocity.
+    No RH spectral zero observations or positive Weil claim.
+    """
+    aa=_rational(alpha)
+    delta=aa-F(1,24)
+    return {
+        "probe_clock":"t=2*pi",
+        "value_only_modular_S_defect":F(0),
+        "logarithmic_first_derivative_defect":-2*delta,
+        "first_jet_separates_normalization":True,
+        "canonical_alpha_identified_by_zero_first_jet":delta==0,
+        "source_current_formula":"alpha = F(2*pi)+1/(8*pi), F=sum sigma1(n)*exp(-n*t)",
+        "exact_alpha_if_classical_modular_S":F(1,24),
+        "all_Weil_tests_positive":False,
+        "RH_proved":False,
+    }
+
+
 def eta_T_multiplier_exponent(alpha) -> dict:
     """T: tau->tau+1 determines multiplier alpha mod Z, not the exact alpha."""
     aa=_rational(alpha)
