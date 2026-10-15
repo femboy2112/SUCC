@@ -19,6 +19,8 @@ Dedekind eta has \(q^{1/24}\prod_{n\ge1}(1-q^n)\). For \(\mathcal E_\alpha(t)=e^
 \]
 Requiring the full S transport law for ALL t forces \(\alpha=1/24\). At t=2π any alpha passes the one-point test — a literal SUCC probe-gap; T-phase alone fixes alpha modulo an integer. Rational clock tests \(t/\pi\in\mathbb Q_{>0}\) discriminate wrong alpha without evaluating an infinite q-product.
 
+**A stronger local source probe:** The selfdual eta S value at t=2π cannot distinguish exponents, but the derivative of the logarithmic S defect is exactly `−2(alpha−1/24)`; therefore one source-typed first jet fixes the canonical exponent. Equivalently alpha = F(2π)+1/(8π) = 1/24 for the true Lambert divisor current. Wrong alpha=1/22 has exact derivative error -1/132 despite passing the S fixed-point value. This is a genuine minimal-observer repair, not an RH sign theorem.
+
 The nonconstant logarithmic derivative is the divisor current:
 \[
 q\,d\log\eta/dq=1/24-\sum_{n\ge1}\sigma_1(n)q^n,\qquad
