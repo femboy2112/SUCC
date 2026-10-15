@@ -8,6 +8,7 @@ from observational_succ.apollo_krein_factor import (
     brownian_increment_kernel,triangle_overlap,triangle_increment_kernel,
     prime_hinge_kernel,prime_krein_identity,exact_rational_gram_psd,
     original_suzuki_krein_finite_window,source_feature_contraction_diagnostic,
+    prime_mixed_second_source_coefficients,gamma_mixed_second_source_coefficients,
 )
 
 
@@ -111,6 +112,34 @@ class AuthenticKreinSourceTests(unittest.TestCase):
                 ((F(1),F(2)),(F(2),F(1))),
                 ((F(1),F(0)),(F(0),F(1))),
             )
+
+
+class ApolloDistributionalMixedSecondTests(unittest.TestCase):
+    def test_authentic_prime_triangle_and_brownian_contacts_cancel_exactly(self):
+        for weight in (F(1,100),F(1,3),F(1),F(7,2)):
+            d=prime_mixed_second_source_coefficients(weight)
+            self.assertEqual(d["positive_triangle_origin"],2*weight)
+            self.assertEqual(d["negative_brownian_origin"],-2*weight)
+            self.assertEqual(d["combined_origin"],0)
+            self.assertEqual(d["combined_plus_logprime_impulse"],-weight)
+            self.assertEqual(d["combined_minus_logprime_impulse"],-weight)
+            self.assertTrue(d["canonical_contact_cancelled"])
+        for bad in (0,-1,True,0.25):
+            with self.assertRaises(OneObjectError):
+                prime_mixed_second_source_coefficients(bad)
+
+    def test_true_gamma_ou_normalization_derivative_distribution(self):
+        for j in (0,1,2,3,7,16,64,127):
+            k=gamma_mixed_second_source_coefficients(j)
+            d=4*j+1
+            self.assertEqual(k["origin_delta_coefficient"],F(4,d))
+            self.assertEqual(k["positive_feature_weight"],F(4,d*d))
+            self.assertEqual(k["smooth_exponential_coefficient"],-1)
+            self.assertEqual(k["alpha"],F(d,2))
+            self.assertTrue(k["separate_infinite_origin_series_is_illegal"])
+        for bad in (-1,True,513):
+            with self.assertRaises(OneObjectError):
+                gamma_mixed_second_source_coefficients(bad)
 
 
 if __name__=="__main__":
