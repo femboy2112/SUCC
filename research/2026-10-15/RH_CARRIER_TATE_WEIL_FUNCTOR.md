@@ -372,3 +372,21 @@ A successful *unrestricted* SUCC→Tate functor must additionally model causal a
 **Negative controls:** an event from a wrong source/epoch, an out-of-order receipt, q=0, fake prime-jet q=6, and a silently collapsed path are rejected or exposed. **Positive controls:** arbitrary composite *scalar* q=6 remains legal on Q_p, and inverse q=1/p is legitimate there. Source-event history is distinct from final observational state.
 
 Implementation: GlobalSourceWord in observational_succ/adelic_schwartz_source.py, tested against independent SourceWord at each selected genuine prime and against exact Fourier evaluations. This is the strongest *executed* SUCC→Tate step on the branch, not yet a theorem about the complete Weil form.
+
+
+## 17. TF-11 — Actually evaluate a source-indexed signed completed Weil test and mutate fake 6
+
+The new adapter observational_succ/tate_signed_weil_bridge.py does not stop at source-signature declarations. It calls the existing \`completed_weil_transport.compact_weil_tent\`, which constructs the original **signed** compact-tent arithmetic expression, including its genuine p^k impulses, the pole term, the Archimedean ladder, and half-density 1/2. Its original prime labels are checked against the exact all-place compact source bound proved in TF-08.
+
+At a=1 the tent autocorrelation h is supported [-2,2], and log 6<2, so a deliberately inserted fake n=6 contributes
+
+    Delta Q = -2 δ (log 6)/sqrt 6 * h(log 6) < 0, δ>0.
+
+The adapter evaluates the authentic and mutated expressions under IDENTICAL Gamma/pole data and compares the observed mpmath difference with this predicted signed term. The input \`fake6\` is explicitly labeled **NOT AN AUTHENTIC VON MANGOLDT EVENT**. The numeric comparison is a source-mutation diagnostic, not a sound interval evaluation of the entire functional: the existing analytic bound controls the **Archimedean ladder truncation** and does not automatically certify all mpmath quadrature/rounding.
+
+This is a concrete partial "Tate source → completed Weil observable" route on a designated test family: all source prime powers are reconstructed exactly and the other completed pieces are imported as the existing analytic machinery. It is not an all-test functor theorem, not a Hilbert realization, and not a positivity result. The remaining equality/continuity tests for a general Schwartz–Bruhat tensor and general smooth log-test are still **UNVERIFIED**.
+
+Reproduction:
+    python -m unittest discover -s tests -p 'test_tate_signed_weil_bridge.py' -v
+
+The full source-integrity firewall remains: fake 6 is an adversarial countermodel, not a second lawful Q zeta world.
