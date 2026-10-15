@@ -1,0 +1,26 @@
+# Claim supplement — True weighted Bessel-4 Weil positivity and source rank-four completion
+
+**2026-10-15.** Isolated child of PR #128 exact \`21a1d6854df56b99e9846b311a1035455a6d6d88\`, immutable original signed zeta Suzuki blob \`0cc8510b71d178fc79e8d410a86d8b6014cf9178\`. Main/other RH repo unchanged, no releases. Full derivation \`research/2026-10-15/TATE_WEIGHTED_BESSEL_FOUR_SCHUR.md\`. **RH PROVED: NO.**
+
+| ID | Mathematical source statement and quantifiers | Status | Essential limitation |
+|---|---|---|---|
+| WB4-01 | Original completed zeta Weil on a=1/2 retains one true real Gamma, original C∞, both polar signs, genuine n=2 half-density and its sharp shift norm one | CLASSICAL, original APOLLO/DYS/Suzuki source identified and SHA checked | Signed source, not intrinsically positive |
+| WB4-03/04 | Source finite Gamma m_J(ω) monotone, so Gamma energy ≥m_J(Ω)||f||² minus a WEIGHTED low-band Fourier deficiency | PROVED ANALYTIC all-f by Plancherel | Not a uniform constant substitution or a fake covariance |
+| WB4-05/09 | Moment-null plane-wave Legendre/spherical-Bessel projector bounds weighted deficiency; exact rational 96 cells, modes l4..15, order12 and omitted exact series/angular tails at a1/2, Ω13, J128 give W<2013/10000 | PROVED EXACT analytic all-f + certified Fraction arithmetic | A finitely computed bound on a universal analytic integral, not finite test-vector enumeration |
+| WB4-10 | Original real Gamma multiplier m128(13)>6097/1000 | PROVED EXACT original source coefficient sum | Wrong Γ 4j+3 parity fails |
+| WB4-11 | Four moment constraints suppress original NEGATIVE sinh polar to ≤1/4718592 <1/1000000 | PROVED Taylor/Cauchy, real polar sign preserved | Cannot omit full polar channel silently |
+| WB4-12 | ALL nonzero complex \(f\in C_c^\infty(-1/2,1/2)\) with moments degrees 0..3 zero satisfy original completed \(Q_\zeta(f)>20699/1000000\|f\|²>1/50\|f\|²\) | PROVED ANALYTIC original completed Weil source | Does not certify all tests on a=1/2, all a or RH |
+| WB4-13 | Actual original signed Suzuki high complement to Legendre P1..P4 has \(Q_4GQ_4\succeq Q_4KQ_4/50\), K=V*V inverse Neumann | PROVED original derivative-coordinate/source transport | NOT an L² spectral gap on compact G |
+| WB4-14 | True zero-shift response \(0\preceq R_0\prec121/32 I_4\); low sign remains 4×4, parity 2+2 | PROVED source PR109 variational bound | Crude 3.78125 norm is too weak to prove S0=A−R0 positive |
+| WB4-C3 | For ALL genuine source u∈mean-zero derivative H, \(\langle u,Gu\rangle>-(649/160)\|P_4u\|²\) | PROVED analytic source G norm, original high positivity and zero-shift variational inequality | Defect supported only in four LOW moment coordinates |
+| WB4-C4/5 | **SOURCE-DERIVED FINITE-RANK POSITIVE HOST** \(\widetilde G=G+(65/16)P_4\succeq (1/160)P_4\succeq0\) on EVERY u; equivalent exact four-mode derivative-polarization term on Q_zeta(f) | PROVED ANALYTIC original source plus DECLARED added rank-four positive term | **\(\widetilde G\) is NOT original G**. Its PSD is not Weil positivity or RH. No added fake arithmetic place |
+| WB4-index | Negative Morse index and nullspace dimension of original first-window compact selfadjoint G each ≤4, since Q4GQ4>0 in K | PROVED classical variational/minimax linear algebra over original source | Bounds do NOT imply zero negative directions |
+| WB4-SCAN | Actual signed original 4×4 Galerkin stage J32/J64 computed as rigorous outward-rational 2×2 parity determinant interval tests | SOURCE EXECUTABLE; any PSD/negative status scoped to finite J and positive omitted Gamma | Finite-J negative determinant cannot be promoted to completed original negative Weil witness |
+| WB4-m3 | At m=3 same conservative source-weighted method fails to certify sign | INCONCLUSIVE METHOD BOUND | Does NOT refute RH or prove actual negative Weil direction |
+| RH | Actual completed unmodified \(G\succeq0\) for every radius; equivalently all-a source contraction | UNVERIFIED / OPEN | The four-dimensional low S0 gate and source-faithful all-a gluing remain RH-hard |
+
+**Key distinction:** \(\widetilde G=G+(65/16)P_4\succeq0\) is the concrete source-derived Hilbert POSITIVE POLARIZATION of a **modified** original Weil operator. The existence of this positive host is unconditional; removal of the nonarithmetic finite counterterm is exactly the missing local proof. Do not disguise this correction as an Euler prime or Brownian source event.
+
+**Validation:** \`tests/test_tate_weighted_bessel_four_schur.py\`, \`tests/test_tate_four_low_compensator.py\`, exact \`scripts/tate_weighted_bessel_four_probe.py --verify\`, true signed source low atlas \`scripts/tate_weighted_bessel_original_low4_scan.py\`, Python 3.10/3.13 CI, inherited original sources and immutable provenance. Original \(\Gamma_{\mathbb R}\), p2, \(C_\infty\), pole and test-space coefficients are not modified.
+
+**Original mathematical background:** NIST DLMF 10.53/10.54, Tate harmonic analysis, Suzuki arXiv:2606.09096v3. Source-specific synthesis new-to-project; academic novelty/priority NOT established. **RH OPEN.**
