@@ -18,6 +18,7 @@ from observational_succ.source_field_inverse_limits import (
     noncompact_descending_field, hidden_coordinate_phantom,
     moving_impostor, remote_negative_sign_shadow,
     rh_inverse_limit_interface, original_weil_finite_gamma_sign_gap,
+    finite_unique_path_selector,
 )
 
 
@@ -35,8 +36,10 @@ def receipt():
     valid=exact_scalar_schur_gluing(1,F(1,2),F(1,4))
     ghost=exact_scalar_schur_gluing(0,F(1,2),1)
     neutral=paired_neutral_source_birth(3,2,F(1,4))
+    candidate=finite_unique_path_selector(3,11)
+    solved=finite_unique_path_selector(3,12)
     return {
-        "schema":"SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v3",
+        "schema":"SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v4",
         "source_schemas_are_NOT_empirical_attestation":True,
         "simple":{
             "field":s["field"],
@@ -111,6 +114,18 @@ def receipt():
                 neutral["old_signed_source_value"]==neutral["new_signed_source_value"],
             "paired_features_both_changed":neutral["both_feature_carriers_changed"],
             "original_source_all_a_contraction":False,
+        },
+        "unique_effective_compact_selector":{
+            "source":solved["source"],
+            "requested_bit_index":solved["requested_bit_index"],
+            "finite_budget_eleven_unresolved":
+                not candidate["terminates_with_this_budget"],
+            "finite_budget_twelve_computes_bit":solved["terminates_with_this_budget"],
+            "computed_bit":solved["bit_value"],
+            "finite_agreement_proves_bit":solved["finite_prefix_agreement_is_a_proof_of_this_bit"],
+            "math_theorem":"unique path of decidable infinite binary tree is computable",
+            "unknown_depth_does_not_imply_noncomputable_path":True,
+            "RH_proved":False,
         },
         "original_Weil_RH_frontier":{
             "source":rh["source"],
