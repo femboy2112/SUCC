@@ -257,3 +257,114 @@ def exact_quadrature(poly:RationalPolynomial,order):
        "actual_physical_observations":False,
        "measure_preserving_global_curve_is_classical_import":True,
     }
+
+
+def _integral_monomial_on_square(i,j,xlo,xhi,ylo,yhi):
+    return (((xhi**(i+1)-xlo**(i+1))/(i+1))
+            *((yhi**(j+1)-ylo**(j+1))/(j+1)))
+
+def cell_average(poly,order,d):
+    """Exact original polynomial conditional expectation on a dyadic tile."""
+    if type(poly) is not RationalPolynomial:
+        raise HilbertCarrierError("source-authenticated polynomial expected")
+    xx,yy=spatial_cell(order,d)
+    area=(xx[1]-xx[0])*(yy[1]-yy[0])
+    integral=sum((Q(c)*_integral_monomial_on_square(i,j,*xx,*yy)
+                  for i,j,c in poly.terms),Q())
+    return integral/area
+
+def square_integral(poly):
+    """Original L² source norm with exact polynomial cross terms."""
+    if type(poly) is not RationalPolynomial:
+        raise HilbertCarrierError("source polynomial for Hilbert L2 pullback")
+    return sum((Q(c)*Q(d)/((i+k+1)*(j+l+1))
+                for i,j,c in poly.terms for k,l,d in poly.terms),Q())
+
+def dyadic_conditional_L2(poly,order):
+    """L² conditional expectation on Hilbert parameter cylinders.
+
+    Area of tile = time-cylinder length =4^-k. At the infinite Hilbert
+    completion H, classical measure preservation gives E[f(H)|F_k]
+    equal to this tile mean. This finite routine evaluates both sides'
+    invariant rational cylinder norms. No H¹ transport is inferred.
+    """
+    if type(poly) is not RationalPolynomial:
+        raise HilbertCarrierError("declared source polynomial required")
+    k=order_gate(order)
+    if k>5:raise HilbertCarrierError("exact conditional-L2 budget k<=5")
+    P=4**k
+    means=[cell_average(poly,k,d) for d in range(P)]
+    approximate_norm_sq=sum((u*u for u in means),Q())/P
+    original=square_integral(poly)
+    residual=original-approximate_norm_sq
+    gx,gy=poly.gradient_sup_bound()
+    h=Q(1,2**k)
+    bound=h*h*(gx+gy)**2
+    if not 0<=residual<=bound:
+        raise ArithmeticError("dyadic Hilbert L2 orthogonal projection identity failed")
+    return {
+        "source":poly.source_id,
+        "order":k,
+        "time_cylinder_mass":Q(1,P),
+        "spatial_cell_mass":Q(1,P),
+        "original_L2_norm_squared":original,
+        "Hilbert_parameter_projection_norm_squared":approximate_norm_sq,
+        "L2_squared_error_exact":residual,
+        "L2_squared_error_source_bound":bound,
+        "finite_source_step_isometry":True,
+        "classical_measure_preserving_limit_used":True,
+        "Hilbert_pullback_H1_isometry_proved":False,
+    }
+
+def hidden_unit_Haar(order,d=0):
+    """A hidden + / - subcell oscillation: ||f||_2=1, E_k f=0.
+
+    For every finite Hilbert observed partition, this proves
+    ||I-E_k||_(L2->L2)=1 (classical projection upper bound),
+    despite strong L² convergence E_k f->f for each fixed f.
+    The witness DEPENDS on k and is not an authentic zeta mutation.
+    """
+    k,d=index_gate(order,d)
+    x,y=spatial_cell(k,d)
+    amp=Q(2**k)
+    area=(x[1]-x[0])*(y[1]-y[0])
+    signed=amp*(area/2)-amp*(area/2)
+    norm=amp*amp*area
+    if signed!=0 or norm!=1:
+        raise ArithmeticError("Haar source norm/mean proof failed")
+    return {
+        "source":"DECLARED_PIECEWISE_HAAR_NONARITHMETIC",
+        "order":k,"cell_index":d,"support":(x,y),
+        "positive_half":"left half of supporting dyadic tile",
+        "negative_half":"right half of supporting dyadic tile",
+        "amplitude":amp,
+        "cell_average":Q(),
+        "L2_norm_squared":norm,
+        "dyadic_observer_projection_norm_squared":Q(),
+        "operator_norm_I_minus_P_equals_one":True,
+        "universal_L2_unit_ball_rate_exists":False,
+        "actual_Weil_spectral_direction_authenticated":False,
+    }
+
+def exact_cell_inner_product(order,table_a,table_b):
+    """Hilbert parameter order preserves finite L² area-inner-product EXACTLY.
+
+    Data are original complete CARTESIAN cell rows, not independent runs.
+    Norm agreement is a permutation/source identity, not a covariance
+    or a Hilbert-space H¹ identification.
+    """
+    k=order_gate(order)
+    if k>6:raise HilbertCarrierError("finite isometry budget k<=6")
+    n=1<<k
+    if (type(table_a) is not tuple or type(table_b) is not tuple or
+        len(table_a)!=n or len(table_b)!=n or
+        any(type(row) is not tuple or len(row)!=n for row in table_a+table_b) or
+        any(type(v) not in (int,Q) for row in table_a+table_b for v in row)):
+        raise HilbertCarrierError("complete original-source exact square arrays required")
+    spatial=sum((Q(table_a[x][y])*Q(table_b[x][y])
+                 for x in range(n) for y in range(n)),Q())/n**2
+    pulled=sum((Q(table_a[x][y])*Q(table_b[x][y])
+               for x,y in (point(k,d) for d in range(n*n))),Q())/n**2
+    if spatial!=pulled:
+        raise ArithmeticError("Hilbert read order changed original L2 bilinear pairing")
+    return spatial
