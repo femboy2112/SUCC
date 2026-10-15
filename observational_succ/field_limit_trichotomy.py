@@ -343,3 +343,59 @@ def tate_rh_field_boundary()->dict:
         "finite_symbolic_Tate_carrier_is_full_RH_proof":False,
         "RH_proved":False
     }
+
+
+
+def single_real_oracle_shadow(depth:int,step_budget:int)->dict:
+    """Exact rational enclosure for ONE real encoding infinitely many halts.
+
+    Let H(e)=1 if program phi_e(e) ever halts with output bit 0 OR 1.
+    The mathematical scalar is Omega4 = sum_(e>=0) 4^(-(e+1))*H(e),
+    with digits in {0,1} so the base-4 expansion is unambiguous.
+    If Omega4 were a computable real, we could extract H(e)
+    recursively using a precision <= 4^(-(e+1))/6 and the digit gap:
+       bit=0 has remaining tail <=weight/3,
+       bit=1 has residual >=weight.
+    That would solve the halting problem, a contradiction.
+
+    The finite code only knows HALTS WITHIN B steps for e<depth.
+    Unknown early programs remain possible 0/1, and infinite tail
+    contributes <=4^(-depth)/3. Thus [lower,upper] is sound but
+    need not converge effectively in B. An oracle returning the
+    EXACT real would supply noncomputable infinite information in
+    one apparently finite observation; it is NOT a legitimate
+    ordinary finite executable SUCC source without an oracle license.
+    """
+    if (type(depth) is not int or type(step_budget) is not int
+            or not 1<=depth<=48 or not 0<=step_budget<=512):
+        raise FieldLimitError("Exact finite halting-real stage 1..48, time<=512")
+    lower=F()
+    unresolved=F()
+    halted=[]
+    for e in range(depth):
+        weight=F(1,4**(e+1))
+        bit=bounded_binary_turing_diagonal(e,step_budget)
+        if bit is None:
+            unresolved+=weight
+        else:
+            lower+=weight
+            halted.append(e)
+    infinite_tail=F(1,3*4**depth)
+    upper=lower+unresolved+infinite_tail
+    if lower<0 or upper>F(1,3) or lower>upper:
+        raise ArithmeticError("Source exact real Halting enclosure inconsistent")
+    return {
+        "single_observer_channel":"ONE EXACT REAL VALUE IF GIVEN AS AN ORACLE",
+        "mathematical_real":"Omega4=sum 4^(-(e+1)) * 1_phi_e(e)_halts",
+        "finite_simulated_indices":depth,
+        "finite_simulated_steps":step_budget,
+        "bounded_halt_indices":tuple(halted),
+        "rational_lower":lower,"rational_upper":upper,
+        "uncertainty":upper-lower,
+        "infinite_unseen_tail_bound":infinite_tail,
+        "exact_real_computable":"PROVED_NO_BY_HALTING_DIGIT_REDUCTION",
+        "exact_real_observer_oracle_authorized":False,
+        "source_finite_interface_not_finite_effective_information":True,
+        "Archimedean_Schwartz_test_data_automatically_computable":False,
+        "RH_proved":False,
+    }
