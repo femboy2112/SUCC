@@ -10,7 +10,8 @@ from observational_succ.apollo_prime_domain import (
     full_five_source_a_one_sparse_domain,
     any_five_prime_activation_pair,isolated_prime_sixteen_packet,
     exact_packet_overlap_bump,
-    synthetic_sparse_budget,
+    synthetic_sparse_budget,source_support_union_gate,
+    prime_packet_low_moment_rank,
 )
 from observational_succ.apollo_derivative_jets import genuine_prime_third_jet
 from observational_succ.apollo_krein_factor import (
@@ -198,3 +199,50 @@ class SixteenGammaModeAuthenticIsolatedPrimeDomains(unittest.TestCase):
         for length in (F(1,64),F(0),True,0.005):
             with self.assertRaises(PrimeDomainError):
                 isolated_prime_sixteen_packet(2,length)
+
+
+
+class ApolloGluingAndLowMomentDomainGuards(unittest.TestCase):
+    def test_exact_source_measure_union_keeps_all_cross_terms(self):
+        c=source_support_union_gate(F(1,2),(F(1,64),F(1,64)))
+        self.assertEqual(c["union_bound"],F(1,32))
+        self.assertEqual(c["source_certified_signed_Weil_L2_floor"],F(1,10))
+        self.assertTrue(c["all_cross_terms_covered_by_source_budget"])
+        self.assertTrue(c["componentwise_positivity_alone_would_be_insufficient"])
+        d=source_support_union_gate(F(1),(F(1,32768),F(1,32768)))
+        self.assertEqual(d["union_bound"],F(1,16384))
+        self.assertEqual(d["source_certified_signed_Weil_L2_floor"],F(1,2))
+        self.assertFalse(d["original_Weil_global_sign_proved"])
+
+    def test_too_large_union_is_unverified_not_a_negative_source_witness(self):
+        for a,parts in (
+            (F(1,2),(F(1,32),F(1,32))),
+            (F(1),(F(1,16384),F(1,16384))),
+            (F(1,2),(F(1,64),F(1,32))),
+        ):
+            with self.assertRaises(PrimeDomainError):
+                source_support_union_gate(a,parts)
+        for a,parts in (
+            (F(2), (F(1,32),)),
+            (F(1,2),(0,)),
+            (F(1,2),(True,)),
+            (F(1,2),()),
+        ):
+            with self.assertRaises(PrimeDomainError):
+                source_support_union_gate(a,parts)
+
+    def test_exact_vandermonde_all_30_low_moments_reachable_without_sign_claim(self):
+        for r in (1,2,5,12,30):
+            c=prime_packet_low_moment_rank(2,r)
+            self.assertEqual(c["moment_rank"],r)
+            self.assertEqual(len(c["strict_rational_nodes"]),r)
+            self.assertTrue(c["Vandermonde_determinant_positive"])
+            self.assertGreater(c["Vandermonde_determinant"],0)
+            self.assertTrue(c["true_Cc_infinity_moment_map_surjective"])
+            self.assertTrue(c["Legendre_1_to_rank_projection_of_u_i_fprime_surjective"])
+            self.assertFalse(c["uniform_inverse_moment_norm_bound_supplied"])
+            self.assertFalse(c["original_Legendre_low_Schur_sign_proved"])
+            self.assertFalse(c["RH_proved"])
+        for n,r in ((6,30),(2,0),(2,31),(True,30),(2,3.0)):
+            with self.assertRaises(PrimeDomainError):
+                prime_packet_low_moment_rank(n,r)
