@@ -501,6 +501,86 @@ This is the local analogue of full-prefix inverse-limit coordinate separation, n
 
 Executable exact source test: \`finite_tate_coset_discriminator\`. For primitive chi(-3) on p=3, the source \((0,1,-1)\) differs from the zero function already on cell 1 with pairing exactly \(+1/3\), even though its coarse signed-unit sum is zero. This is a positive sigma/probe repair control.
 
+### 11f. Duality completes the exact mathematical picture: DISTRIBUTIONS are inverse limits of finite test duals
+
+The preceding finite local test charts give an even more exact answer to the maintainer's inverse-limit intuition. Every \(V_{M,N}\) is a finite-dimensional complex VECTOR SPACE, not a finite SET. Its algebraic dual \(V_{M,N}^*\) has the same dimension, yet infinitely many possible complex coefficient rows.
+
+For a declared source distribution T restricted to a finite chart, write
+
+\[
+T_{M,N}(c)=\sum_{j=0}^{Q-1}\ell^{(M,N)}_j\,c_j.
+\]
+
+Because the primal tests embed under both support and constancy refinement, the dual functionals must satisfy INVERSE restriction equations:
+
+\[
+\boxed{
+\ell_j^{(M,N)}
+=\ell_{pj}^{(M+1,N)}
+=\sum_{h=0}^{p-1}\ell^{(M,N+1)}_{j+hQ}.
+}\tag{SCF-TATE10}
+\]
+
+Compatible functional rows across all M,N define a UNIQUE linear functional on the FILTERED UNION of all test charts; conversely every such global linear functional restricts compatibly. Algebraically,
+
+\[
+\boxed{
+\mathcal S(\mathbb Q_p)^*
+\;\cong\;
+\varprojlim_{M,N}V_{M,N}^*.
+}\tag{SCF-TATE11}
+\]
+
+For the standard Schwartz–Bruhat locally convex direct-limit topology, the corresponding continuous dual description also holds with the appropriate continuous restriction maps. This is not a free appeal to König: the dual stages are finite-dimensional over \(\mathbb C\), so their *underlying sets are infinite and noncompact without extra bounds*. **A "finite conductor" is not a finite-choice compact source stage.**
+
+We therefore have three explicitly DIFFERENT but interoperable completions:
+
+\[
+\boxed{\begin{aligned}
+\mathbb Z_p&=\varprojlim \mathbb Z/p^n\mathbb Z
+&&\text{(carrier points)},\\
+\mathcal S(\mathbb Q_p)&=\varinjlim V_{M,N}
+&&\text{(finite-scale test functions)},\\
+\mathcal S(\mathbb Q_p)^*&=\varprojlim V_{M,N}^*
+&&\text{(compatible test observations/distributions)}.
+\end{aligned}}\tag{SCF-TATE12}
+\]
+
+This precisely differentiates *mathematical existence*, *finite executable access* (requires exact coefficient names), and *source faithfulness* (requires both dual gluing identities, not merely matching finitely many observations).
+
+### 11g. Genuine additive Haar is a compatible global source, Fourier transports it to δ0
+
+With Tate's original additive Haar, each finite chart has dual coefficient row
+
+\[
+\ell_j^{(M,N)}=p^{-N}.
+\]
+
+Under support enlargement M+1 the value on index pj remains \(p^{-N}\); under constancy refinement N+1 each old coefficient splits into p weights \(p^{-(N+1)}\), summing to \(p^{-N}\). Thus actual local Haar is a **coherent inverse-limit family** across the entire test direct system.
+
+The Fourier transport gives another canonical source contact:
+
+\[
+\boxed{
+\int_{\mathbb Q_p}\widehat f(y)\,dy
+=f(0)
+\qquad\forall f\in\mathcal S(\mathbb Q_p).
+}\tag{SCF-TATE13}
+\]
+
+The exact finite proof for \(f\in V_{M,N}\) is
+
+\[
+p^{-M}\sum_k
+\left[p^{-N}\sum_j c_j\zeta_Q^{jk}\right]
+=p^{-(M+N)}\sum_j c_j\sum_k\zeta_Q^{jk}
+=c_0=f(0).
+\]
+
+This is the genuine source-normalized p-adic Fourier/Haar-to-Dirac-contact theorem. It is a useful **local analytic transducer** explaining how a globally defined integral functional can become a point-contact evaluation under Fourier. It is **NOT** the full completed Weil distribution's identity-contact normalization or Connes's principal-value trace, and does not manufacture positive Weil sign.
+
+The exact code \`exact_tate_distribution_dual_compatibility\` tests both dual restriction squares, including a DELIBERATELY forged constancy dual weight that violates the source law; \`original_tate_haar_dual_and_fourier_contact\` proves the actual Haar/δ0 identity with rational coefficients and finite character sums. No floating roots, extra primes or zero positions are used.
+
 **RH status:** finite local \(p\)-adic Fourier isometry, stage gluing and character phase do NOT imply positivity of the completed global Weil form. To get an RH transducer, the restricted adelic tensor product, the real Gaussian \(\Gamma_{\mathbb R}\), conductor and the FULL signed pole/contact/prime map must all be correctly identified, and a separate positive global operator/Schur domination must be proved. No epsilon/phase or finite sampling makes that sign free.
 
 **Artifacts:** \`observational_succ/tate_finite_bruhat_observers.py\`, \`tests/test_tate_finite_bruhat_observers.py\`. Mathematical ingredients are classical finite local harmonic analysis and Tate normalizations; this is new-to-SUCC SOURCE GLUING/instrumentation, not new academic Fourier theory.
