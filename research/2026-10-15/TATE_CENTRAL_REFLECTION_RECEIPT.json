@@ -1,5 +1,5 @@
 {
-  "schema": "SUCC_TATE_REFLECTION_JET_v1",
+  "schema": "SUCC_TATE_REFLECTION_JET_v2",
   "status": "TRUE_LOCAL_PRIME_GAMMA_CONTACT_NOT_RH_POSITIVITY",
   "source": "SHA_PINNED_ORIGINAL_ZETA_TATE_COMPLETED_WEIL",
   "center": {
@@ -86,5 +86,40 @@
     "preserves_original_Euler_product": false,
     "RH_not_proved_by_reflection_alone": true
   },
-  "RH_proved": false
+  "RH_proved": false,
+  "original_Weil_reflection_parity": {
+    "source": "TRUE_ZETA_TATE_GAMMA_REFLECTION_PARITY_WEIL",
+    "even_f_Gamma_modes": 256,
+    "even_f_Fourier_clock": "217/20",
+    "even_f_zero_moment_count": 14,
+    "even_f_source_L2_lower": "1/140",
+    "odd_f_zero_moment_count": 16,
+    "odd_f_source_L2_lower": "1/20",
+    "source_low_basis_indices": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16
+    ],
+    "source_low_dimension": 15,
+    "reflection_parity_block_dims": [
+      7,
+      8
+    ],
+    "source_K_relative_high_coercivity": "1/140",
+    "true_source_zero_shift_norm_upper": "847/80",
+    "source_original_low_15_schur_sign_proved": false,
+    "RH_proved": false
+  }
 }
