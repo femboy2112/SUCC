@@ -209,3 +209,68 @@ References:
 - Existing SUCC context: field_relative_closure.py, field_limit_countermodels.py, prime_clock_yoneda.py, operational_yoneda_descent.py, tate_observer_completion.py, tate_adele_quotient_descent.py, observer_global_sign_gate.py, and APOLLO/ONE OBJECT/TATE×SUZUKI draft dossiers (read only).
 
 **RH remains open.**
+
+
+## 10. One finite observation may contain noncomputable INFINITE information (effective input gate)
+
+“Finite-place stage” and “finite effectively available information” must never be identified merely because one model has a finite number of typed input slots. A single EXACT real number may encode infinitely many uncomputable digits.
+
+Enumerate all partial computable binary-output programs \(\varphi_e\) as in the explicit TM code above and define
+\[
+\boxed{
+\Omega_4=\sum_{e=0}^\infty4^{-(e+1)}
+       {\bf 1}_{\{\varphi_e(e)\ \mathrm{halts}\}}.
+}\tag{F-REAL-ORACLE}
+\]
+The base-four expansion uses only digits 0 and 1. Once the first e digits are determined, the unexamined tail after the e-th digit is at most one-third of the next digit's weight. Thus a computable real approximation with sufficiently small error would decide each halting digit successively, deciding the halting set—a contradiction. Therefore \(\Omega_4\) is a noncomputable real. The construction is classical and distinct from Chaitin's specific halting probability (we make NO prefix-free probability claim).
+
+The code evaluates ONLY the finite bounded halting predicates e<d, up to a declared step budget B. The rational lower is the sum of already observed terminating program weights. The rational upper is this lower PLUS weights of unresolved first-d programs and the exact infinite tail \(4^{-d}/3\). Increasing the bounded execution time can shrink the interval, but no finite B is promoted to an oracle deciding arbitrary nonhalting.
+
+**Consequence:** one “finite observer” endowed with an EXACT \(\Omega_4\) register would possess unbounded halting information as an ASSUMED oracle. This is not finite executable construction under ordinary Turing operations. Applied to Tate, the Archimedean Schwartz factor may have noncomputable arbitrary real parameters unless a computable dense effective presentation, approximation/evaluation oracle policy and error modulus are explicitly declared. Rational p-adic finite test charts do not license arbitrary exact real inputs silently.
+
+**Claim F-REAL-ORACLE: PROVED classical noncomputability plus exact rational bounded simulation enclosures.** No proof of global Tate, RH, or a physical model is asserted.
+
+## 11. Operator-compactness theorem: the true finite-to-global Hilbert contraction gate
+
+This is the strongest direct connection to APOLLO's source-positive Hilbert/Krein decomposition.
+
+Fix two **COMMON source Hilbert spaces** \(H_+,H_-\) and an indexed family \(v_i\in H_+\), \(w_i\in H_-\). For each finite F of indices let
+\[
+C_F=\{T\in B(H_+,H_-):\|T\|\le1,\
+Tv_i=w_i\ \forall i\in F\}.
+\]
+Then
+\[
+\boxed{\quad
+\exists T:\|T\|\le1,\ Tv_i=w_i\ \forall i
+\quad\Longleftrightarrow\quad
+C_F\ne\varnothing\ \text{for EVERY finite }F.
+\quad}\tag{HILBERT-COMPACT}
+\]
+
+**Proof by operator compactness:** the norm-unit ball of \(B(H_+,H_-)\) is compact in the weak operator topology (WOT), via Banach–Alaoglu/Tychonoff (bounded operator unit balls as products of weakly compact Hilbert balls, with linearity/norm bounds preserved by weak limits). Each equality \(Tv_i=w_i\) is WOT-closed, because it is equivalent to \(\langle Tv_i,z\rangle=\langle w_i,z\rangle\) for all \(z\in H_-\). The sets C_F are closed and have the finite-intersection property: the intersection of finitely many constraints is their union finite constraint. Compactness yields a T in their total intersection.
+
+**Constructive algebraic alternative:** suppose for every finite vector family the norm inequality
+\[
+\left\|\sum_i c_i w_i\right\|^2
+\le\left\|\sum_i c_i v_i\right\|^2
+\]
+holds. The map \(\sum_i c_i v_i\mapsto\sum_i c_i w_i\) is well-defined and contractive on the algebraic source span. It extends uniquely to the closure. Set T=0 on its orthogonal complement. This gives the canonical minimal extension. It is a mathematical existence construction, not necessarily an algorithm that outputs all infinite feature coordinates.
+
+**Exact finite executable prototype:** for rational vectors \(v_i\in\mathbb Q^d\), \(w_i\in\mathbb Q^e\), the source Gram condition is \(G_+-G_-\succeq0\). If true, select an independent source v-basis B, build the rational matrix \(T=W_B(B^TB)^{-1}B^T\), verify every \(Tv_i=w_i\) and \(I-T^TT\succeq0\) by exact Fraction principal minors. If false, provide a true negative principal minor. Implemented in field_contractivity_compactness.py with separate synthetic controls, NOT yet original Suzuki feature entries.
+
+### Why a UNIFORM boundedness law is essential
+
+Let \(H_+=H_-=\ell^2(\mathbb N)\), with source constraints \(Te_n=(n+1)e_n\). Every finite prefix has a bounded solution with norm at most its largest n+1, but no single bounded T can satisfy ALL constraints, since \(\|T\|\ge n+1\) for all n. This is a rigorously empty bounded-global target with individually feasible finite source stages. It violates the UNIFORM contraction premise, so it is no contradiction to HILBERT-COMPACT. The exact finite algorithm records the growing required operator norm.
+
+### Source identification: where APOLLO and RH actually sit
+
+APOLLO #110 defines original arithmetic \(K_g=K_+-K_-\), with independent positive feature families \(\Phi_\pm(x)\). For a fixed interval a, choose the actual H_+^(a),H_-^(a). A fixed-source contraction satisfying \(T\Phi_+(x)=\Phi_-(x)\) for ALL points exists iff the ORIGINAL signed Gram K_g is PSD on every finite set. This is RH-strength when imposed at every interval. HILBERT-COMPACT proves that all finite constraints *would* glue, but **we have NOT proved all those constraints are feasible**.
+
+Across different widths a, the two separate source Hilbert presentations can change by **paired neutral prime-feature births** (APOLLO K5). They are not automatically one fixed common Hilbert pair, so operator compactness cannot be used across a without coherent source-labeled embeddings and uniformly bounded transported maps.
+
+**The missing ingredient is now typed exactly:** a SOURCE-DERIVED proof of uniform finite Gram dominance/cross-block Schur positivity for the TRUE Weil/Krein features, rather than another finite observation or finite Fourier equivalence. This cannot be supplied by merely invoking Banach–Alaoglu. In particular, arbitrary positive+negative Hilbert factorization without the contraction remains insufficient.
+
+**Claims:** operator compactness CLASSICAL/PROVED; finite rational contraction constructor PROVED LOCAL; unbounded finite-prefix obstruction PROVED; actual Suzuki all-finite contractivity and RH **UNVERIFIED**.
+
+Mathematical background on WOT unit-ball compactness: https://www.math.uni-leipzig.de/~wirth/notes_ot_25.pdf and https://www.math.ucdavis.edu/~hunter/book/ch8.pdf; no new functional-analysis priority claim.
