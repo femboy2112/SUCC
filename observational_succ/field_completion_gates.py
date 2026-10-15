@@ -277,3 +277,28 @@ def factorial_solenoid_clock(source: FiniteGlobalSource,
         "full_topological_Q_solenoid_iso_proved_by_execution": False,
         "RH_proved": False,
     }
+
+
+def dyadic_zero_boundary(depth: int) -> dict:
+    """Finite witness: exact equality-to-zero has no uniform clock bound.
+
+    In Z_2, x=0 and y=2^depth have identical observations modulo every
+    2^k, k<=depth, while x==0 and y!=0. As depth grows, 2^depth -> 0
+    p-adically. This shows the Boolean predicate 'x==0' is not continuous.
+    The infinite conclusion follows from the paper argument, not finitely
+    many samples.
+    """
+    _natural(depth, "clock depth")
+    phantom = 2 ** depth
+    if phantom == 0 or any((phantom % (2**k)) != 0 for k in range(depth + 1)):
+        raise AssertionError("Dyadic exact-zero delayed target witness failed")
+    return {
+        "depth": depth, "source_zero": 0, "shadow_source": phantom,
+        "same_residues_through_depth": True,
+        "distinguished_at_depth": depth + 1,
+        "zero_predicate_values": (True, False),
+        "no_uniform_depth_for_exact_zero_predicate": True,
+        "Boolean_zero_target_continuous_on_Z2": False,
+        "all_depth_indistinguishable": False,
+        "full_topology_verified_by_execution": False,
+    }
