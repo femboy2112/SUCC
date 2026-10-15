@@ -68,3 +68,6 @@ The map Cc∞(U)→C^30 of low Legendre moments is SURJECTIVE for any nonempty p
 
 
 **New calibration control:** before any low-resolvent cross-program, use true_prime2_coupled_thirty_moment_witness to reproduce a compact H0¹(E2) test u=i f' that lies in the genuine PR #107 30-moment HIGH space while its true prime2 shift overlap is strictly nonzero. This splits a source-wavefront measurement from low-sector projection. Incorrect source adapters that equate a zero low moment with no arithmetic interaction must fail this test.
+
+
+**First exact source crossing executed:** original_first_legendre_prime2_cross_witness now certifies a strict nonzero rational lower for the REAL p2 prime-only polarized contribution between the rank-one normalized low Legendre Neumann primitive v1=sqrt3(x²−1/4) and an actual two-packet translated source polynomial. The remaining genuine Gamma/contact/pole pieces are explicitly NOT evaluated yet; the next finite cross experiment must enclose all pieces together, starting with this first low row and extending to all 30. Do not promote the component sign to the total signed cross sign.
