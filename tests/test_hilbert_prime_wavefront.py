@@ -71,5 +71,54 @@ class PrimeHingeHilbertTests(unittest.TestCase):
         with self.assertRaises(orig.WeilHierarchyError):
             orig.assert_original_source_tape(orig.AUTHENTIC_TAPE+((6,6),))
 
+
+
+class CompleteSuzukiNonSmoothAtlasTests(unittest.TestCase):
+    def test_diagonal_is_not_absent_before_first_prime(self):
+        for k in (2,3,5):
+            prime_only=w.adaptive_profile(Q(1,4),k)
+            full=w.operator_singularity_profile(Q(1,4),k,3)
+            self.assertEqual(prime_only["adaptive_leaf_count"],1)
+            self.assertGreater(full["leaf_count"],1)
+            self.assertGreater(full["finest_transition_cell_count"],0)
+            self.assertEqual(full["original_prime_powers"],())
+            self.assertTrue(full["all_declared_nonsmooth_loci_classified"])
+            self.assertFalse(full["rigorous_C2_quadrature_done"])
+
+    def test_signed_original_operator_wavefronts_and_diagonal(self):
+        for radius in (Q(1,4),Q(1,2),Q(1)):
+            for k in (2,3,5,6):
+                result=w.operator_singularity_profile(radius,k,5)
+                self.assertEqual(result["total_source_area"],(2*radius)**2)
+                self.assertLess(result["leaf_count"],4**k)
+                self.assertLessEqual(result["finest_transition_cell_count"],
+                                     result["analytic_codimension_one_upper"])
+                self.assertFalse(result["original_Weil_operator_positive"])
+
+    def test_original_full_source_diagonal_exact(self):
+        a=Q(1,2)
+        self.assertEqual(w.absolute_value_diagonal_status(a,3,0,0),
+                         "DIAGONAL_TRANSITION")
+        self.assertEqual(w.absolute_value_diagonal_status(a,3,7,0),
+                         "POSITIVE_SIDE")
+        self.assertEqual(w.absolute_value_diagonal_status(a,3,0,7),
+                         "NEGATIVE_SIDE")
+
+    def test_hilbert_prefix_adaptive_complete_at_multiple_depths(self):
+        for k in (2,3,5,7):
+            c=w.operator_singularity_profile(Q(1,2),k,4)
+            pos=0
+            for leaf in c["ordered_leaves"]:
+                self.assertEqual(leaf.hilbert_start,pos)
+                pos+=leaf.hilbert_span
+            self.assertEqual(pos,4**k)
+            self.assertEqual(c["original_prime_powers"],((2,2),))
+
+    def test_gamma_cutoff_source_gate(self):
+        for j in (0,37,3.5):
+            with self.assertRaises(w.PrimeWavefrontError):
+                w.operator_singularity_profile(Q(1,2),3,j)
+
+
 if __name__=="__main__":
     unittest.main()
