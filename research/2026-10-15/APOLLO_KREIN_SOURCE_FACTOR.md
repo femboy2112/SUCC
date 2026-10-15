@@ -147,3 +147,27 @@ The gamma tail K_+^(infty)-K_+^(J) is itself PSD, so genuinely proving K_+^(J)-K
 Code: observational_succ/apollo_krein_factor.py; tests/test_apollo_krein_factor.py; workflow .github/workflows/apollo-derivative-jets.yml; companion APOLLO_DERIVATIVE_SOURCE_THEOREMS.md. All original source files and other live PR branches untouched.
 
 **RH PROVED: NO.**
+
+
+## K5. True-prime source activation is a Krein-neutral extension, not independent Hilbert nesting
+
+The interval source index P_a jumps at a=log(p^k)/2. The authentic *signed* kernel K_g, however, remains compatible under restricting a larger interval to any smaller interval. K2's decomposition into positive/negative Hilbert carriers is **not** individually canonical under this transition.
+
+For a newly activated prime with source clock b=log(p^k), w=log(p)/sqrt(p^k), take any previous smaller interval [-a0,a0] with 2a0<b. For ALL x,y in that interval, |x|,|y|,|x-y|<b, so its genuine prime hinge is identically zero. Yet its positive and negative channel increments satisfy the EXACT identity
+\[
+\boxed{ w b E_b(x,y)=2w B(x,y),\quad |x|,|y|,|x-y|<b. }
+\tag{K5-neutral}
+\]
+Neither feature is necessarily the zero Hilbert feature: for x=y=r>0 and 2r<b,
+\[
+wb E_b(r,r)=2wr=2w B(r,r)>0.
+\]
+Thus adding a genuine prime to the positive-minus-negative source factorization of the extended interval **adds an equal positive and negative pair on the older observation carrier**. A would-be source gluing functor that independently and identically embeds each old positive Hilbert feature into a new one **without accounting for this neutral pair** is not justified by equality of the signed K.
+
+**Original n=2 numerical-free source example:** exact SHA-pinned source rational log intervals certify 1/2<log2<1, and the true half-density coefficient w2=log2/sqrt2>0 with outward rational bounds. At old half-width a0=1/4 the source n=2 is not active (2a0=1/2<log2). At new half-width a1=1/2 it is active (2a1=1>log2). On the old anchor r=1/4, the positive added n=2 feature energy is *exactly* w2/2 and the added negative Brownian feature energy is *exactly* w2/2; the signed source sum is precisely zero. This is a genuine **nontrivial neutral birth** with algebraic proof. It uses exact rationals to certify log2's wavefront ordering, no zero data, no fitted Gram.
+
+What follows is NOT that a source-compatible family of contractions across interval widths exists. Rather, any APOLLO K4 all-a contraction proof must either use each interval's independent positive/negative carriers, or construct a lawful *paired* source extension and verify coherence across every activation. A naïve positivity inheritance at source births is UNVERIFIED. This is a precise SUCC observability / gluing issue, not proof of RH.
+
+Implementation: neutral_prime_activation_pair and authentic_prime_two_activation_on_old_window; exact Fraction adversarial checks in tests/test_apollo_krein_factor.py. Synthetic b=3/4 is used for algebraic verification on old rational points; the all-b identity together with the SHA-certified 1/2<log2<1 transfers the result to genuine b=log2 symbolically, without pretending that log2 is rational.
+
+**K5 PROVED LOCAL / source-authenticated original n=2.** New operator gluing existence remains UNVERIFIED. RH PROVED: NO.
