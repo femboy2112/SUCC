@@ -1,5 +1,5 @@
 {
-  "schema": "SUCC_TATE_WEIGHTED_BESSEL_FOUR_2026_10_15_v1",
+  "schema": "SUCC_TATE_WEIGHTED_BESSEL_FOUR_2026_10_15_v2",
   "source": "SHA_PINNED_ORIGINAL_ZETA_TATE_WEIL_SUZUKI",
   "original_suzuki_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
   "radius": "1/2",
@@ -47,5 +47,16 @@
   "rank_three_proof_failure_is_NOT_an_original_negative_test": true,
   "nontrivial_zeta_zero_positions_as_source_inputs": false,
   "all_radii_low_sign_proved": false,
-  "RH_proved": false
+  "RH_proved": false,
+  "source_rank_four_positive_completion": {
+    "source": "SHA_PINNED_ORIGINAL_SUZUKI_PLUS_EXPLICIT_4RANK_COMPENSATOR",
+    "true_source_compensator": "65/16",
+    "source_negative_low_short_coarse_bound": "649/160",
+    "modified_original_suzuki_strict_low_projection_gap": "1/160",
+    "actual_modified_G_plus_counterterm_P4_PSD": true,
+    "source_negative_Morse_index_upper": 4,
+    "source_nullspace_dimension_upper": 4,
+    "unmodified_original_Weil_PSD_proved": false,
+    "RH_proved": false
+  }
 }
