@@ -252,3 +252,49 @@ def successor_history_kernel(primes: tuple[int, ...], d: int | F) -> dict:
         "quotient_state_functor_faithful_on_events": False,
         "required_extra_record": "source-indexed Gamma_S transition cocycle",
     }
+
+
+def prime_extension_obstruction(primes: tuple[int, ...], new_prime: int) -> dict:
+    """One-prime solenoidal extension and its nonsplitting witness.
+
+    Classical theorem (NOT proved by executing finite code):
+       0 -> Z_p -> X_(S union {p}) -> X_S -> 0
+    is an exact sequence of compact abelian groups. It has no continuous
+    section, even a non-homomorphic one. Pontryagin duality identifies its
+    quotient with the nonzero p-primary torsion group C_(p^infinity), while
+    the larger dual Gamma_T sits in torsion-free Q. Also X_T is connected
+    but a continuous section would trivialize it as X_S x Z_p, a
+    disconnected space. Here we verify only finite rational witnesses.
+    """
+    primes = prime_atlas(primes)
+    if not prime(new_prime) or new_prime in primes:
+        raise TateLatticeError('Adjoin exactly one genuinely new prime')
+    enlarged = tuple(sorted((*primes, new_prime)))
+    order_p = F(1, new_prime)
+    if not (s_integer(order_p, enlarged)
+            and not s_integer(order_p, primes)
+            and s_integer(new_prime * order_p, primes)):
+        raise AssertionError('Dual quotient p-torsion witness failed')
+    kernel_class = RationalSChart(enlarged, F(0), tuple(
+        F(1) if p == new_prime else F(0) for p in enlarged))
+    origin = RationalSChart(enlarged, F(0), tuple(F(0) for _ in enlarged))
+    small_origin = RationalSChart(primes, F(0), tuple(F(0) for _ in primes))
+    if kernel_class.equivalent(origin):
+        raise AssertionError('Proposed p-adic kernel must be nontrivial')
+    if not kernel_class.project(primes).equivalent(small_origin):
+        raise AssertionError('Proposed kernel point must project to identity')
+    return {
+        'S': primes,
+        'T': enlarged,
+        'added_prime': new_prime,
+        'dual_torsion_witness': order_p,
+        'order_in_dual_quotient': new_prime,
+        'nonzero_rational_kernel_class': True,
+        'projects_to_identity': True,
+        'infinite_kernel_type': 'Z_p (CLASSICAL; not constructed by finite code)',
+        'global_extension_split': False,
+        'continuous_section_exists': False,
+        'section_obstruction': 'connected X_T vs disconnected X_S x Z_p',
+        'full_topological_claim_proved_by_execution': False,
+        'RH_proved': False,
+    }
