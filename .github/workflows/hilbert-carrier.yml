@@ -34,7 +34,7 @@ jobs:
       - name: Install original repository test environment
         run: python -m pip install -e '.[test]'
       - name: Compile source and all new mathematical instruments
-        run: python -m compileall -q observational_succ/hilbert_carrier.py observational_succ/hilbert_prime_wavefront.py observational_succ/hilbert_prime_hinge_integrals.py observational_succ/hilbert_suzuki_stream.py tests/test_hilbert_carrier.py tests/test_hilbert_prime_wavefront.py tests/test_hilbert_prime_hinge_integrals.py tests/test_hilbert_suzuki_stream.py scripts/hilbert_carrier_probe.py
+        run: python -m compileall -q observational_succ/hilbert_carrier.py observational_succ/hilbert_prime_wavefront.py observational_succ/hilbert_prime_hinge_integrals.py observational_succ/hilbert_suzuki_cell_integrals.py observational_succ/hilbert_suzuki_stream.py tests/test_hilbert_carrier.py tests/test_hilbert_prime_wavefront.py tests/test_hilbert_prime_hinge_integrals.py tests/test_hilbert_suzuki_cell_integrals.py tests/test_hilbert_suzuki_stream.py scripts/hilbert_carrier_probe.py
       - name: Hilbert finite-to-global, analytic quadrature, Haar, original Weil
         run: python -m unittest discover -s tests -p 'test_hilbert_*.py' -v
       - name: Authentic Suzuki source original regression
