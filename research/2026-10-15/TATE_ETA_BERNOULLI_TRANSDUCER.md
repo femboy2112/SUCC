@@ -76,6 +76,40 @@ Also \(\Delta(\tau)=\eta(\tau)^{24}=q\prod_{n\ge1}(1-q^n)^{24}\), an established
 
 **Interpretation:** True 1/24 is an Archimedean/modular gluing normalization; the older 1/24 was a replaceable certified inequality constant. Their equality alone carries no proof weight.
 
+### ETA-02J. A first derivative at the modular fixed point repairs its value-only probe gap (PROVED EXACT)
+
+The preceding selfdual *value* probe at t=2π accepts every exponent alpha. But the same source-defined S defect has a **first derivative** that can distinguish all alternatives:
+
+\[
+L_\alpha(t)=\log\frac{E_\alpha(t)}
+{\sqrt{2\pi/t}\,E_\alpha(4\pi^2/t)}
+=-(\alpha-\tfrac1{24})(t-4\pi^2/t).
+\]
+Therefore
+\[
+\boxed{
+L_\alpha(2\pi)=0\quad\forall\alpha,
+\qquad
+L'_\alpha(2\pi)=-2(\alpha-\tfrac1{24}).
+}\tag{ETA-02J}
+\]
+
+Thus the **weakest improved local instrument** — one source-indexed derivative at the fixed point rather than another value at the same point — proves canonical alpha iff its defect vanishes. Wrong alpha=1/22 produces the **exact rational** derivative error -1/132; wrong alpha=25/24 produces -2, despite passing the T multiplier and fixed-point S value.
+
+This is a sharp finite observer/probe-gap repair: the missing source distinction lives in a jet rather than the observed value. It is not necessary to scan all modular times once the law's derivative is made available and correctly typed. This is an elementary consequence of ETA-02b, not novel modular theory.
+
+The same fact has a **direct Lambert-source interpretation**. With \(F(t)=\sum\sigma_1(n)e^{-nt}\) as below and \(\partial_t\log E_\alpha=-\alpha+F(t)\), the derivative of the transported S comparison at t=2π is
+
+\[
+L_\alpha'(2\pi)=
+-2\alpha+2F(2\pi)+\frac1{4\pi}.
+\]
+Requiring zero first-jet obstruction fixes
+\[
+\boxed{\alpha=F(2\pi)+\frac1{8\pi}=\frac1{24},}
+\]
+where the last equality is precisely the independently source-defined classical reciprocity ETA-03SD. This is a **justified source-normalization transducer**, not just a numerical association of 24s. The separate RH-hard Weil-positive operator gate remains untouched.
+
 ## ETA-03. Eta logarithmic derivative produces a genuine divisor current (CLASSICAL, exact independent q-polynomial proof)
 
 Set \(q=e^{2\pi i\tau}\), \(\sigma_1(m)=\sum_{d\mid m}d\). Term-by-term differentiating the absolutely convergent eta q-product for |q|<1 gives
