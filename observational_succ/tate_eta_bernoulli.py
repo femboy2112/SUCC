@@ -266,6 +266,22 @@ def eta_eisenstein_prime_transducer(N:int=64, fake_composite_six=False) -> dict:
     }
 
 
+def sigma_one_dirichlet_tail_majorant(sigma:int, N:int) -> F:
+    """Rigorous source-first absolute tail on Re(s)=sigma, sigma>=4.
+
+    sigma1(n)<=n^2 (at most n positive divisors, each <=n), hence
+    sum_{n>N} sigma1(n)/n^sigma
+    <=sum_{n>N}n^(2-sigma)
+    <=integral_N^infinity x^(2-sigma) dx
+    =N^(3-sigma)/(sigma-3).
+    The same bound holds for complex s with Re(s)=sigma.
+    It does NOT control s on or near the critical line.
+    """
+    if type(sigma) is not int or sigma<4 or type(N) is not int or N<2:
+        raise EtaTransportError("Source Mellin majorant requires integer sigma>=4,N>=2")
+    return F(1,(sigma-3)*N**(sigma-3))
+
+
 def primary_source_interface_status() -> dict:
     """Typed map explicitly prevents illicit eta->RH promotion."""
     return {
