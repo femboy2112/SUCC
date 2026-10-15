@@ -328,3 +328,68 @@ def original_weil_finite_gamma_sign_gap(J=2):
         "field_label":"UNRESOLVED_STAGE_TO_GLOBAL_SIGN",
         "RH_proved":False,
     }
+
+
+def synthetic_unique_branch_level(depth):
+    """Decidable finite tree with one infinite branch: all zeros.
+
+    Every node is either 0^n or 0^k 1 0^m with n=k+1+m<=2k+5.
+    Each fake '1' spur dies after a FINITE but k-dependent depth;
+    only 0^omega survives. Prefix closure is immediate.
+    This is a *synthetic* compact unique-branch source, not the Kleene
+    tree and not an RH source. It checks unknown-horizon selection.
+    """
+    n=_nat(depth,cap=4096)
+    nodes=["0"*n]
+    for k in range(n):
+        if n<=2*k+5:
+            nodes.append("0"*k+"1"+"0"*(n-k-1))
+    if len(nodes)!=len(set(nodes)):
+        raise ArithmeticError("Unique-path synthetic model has duplicate node")
+    return tuple(nodes)
+
+
+def finite_unique_path_selector(bit_index, search_depth):
+    """A finite reported query to the UNIQUE COMPUTABLE PATH tree.
+
+    At stage N>k enumerate all surviving finite tree nodes at level N.
+    If every node has the same k-th bit, return that bit. For a truly
+    UNIQUE path in ANY computable finitely branching infinite binary
+    tree, classical Koenig implies such an N exists for every k:
+    otherwise incompatible 0/1 bit classes would both have arbitrarily
+    deep extensions, hence two infinite paths.
+
+    This concrete synthetic tree has sole path 000..., and terminates
+    at N=2k+6, but a smaller caller budget returns INCONCLUSIVE,
+    not 'no global path' or 'noncomputable selector'.
+    """
+    k=_nat(bit_index,cap=50)
+    max_depth=_nat(search_depth,cap=4096)
+    for N in range(k+1,max_depth+1):
+        nodes=synthetic_unique_branch_level(N)
+        values={node[k] for node in nodes}
+        if len(values)==1:
+            return {
+                "source":"SYNTHETIC_DECIDABLE_UNIQUE_BRANCH_TREE",
+                "requested_bit_index":k,
+                "searched_through_level":N,
+                "bit_value":int(next(iter(values))),
+                "terminates_with_this_budget":True,
+                "unique_path_by_source_theorem":"0^omega",
+                "finite_prefix_agreement_is_a_proof_of_this_bit":True,
+                "all_n_run_physically":False,
+                "field":"SimpleField",
+                "RH_proved":False,
+            }
+    return {
+        "source":"SYNTHETIC_DECIDABLE_UNIQUE_BRANCH_TREE",
+        "requested_bit_index":k,
+        "searched_through_level":max_depth,
+        "bit_value":None,
+        "terminates_with_this_budget":False,
+        "unique_path_by_source_theorem":"0^omega",
+        "finite_prefix_agreement_is_a_proof_of_this_bit":False,
+        "all_n_run_physically":False,
+        "field":"RESOURCE_UNRESOLVED_NOT_FUCKED",
+        "RH_proved":False,
+    }
