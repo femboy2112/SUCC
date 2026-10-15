@@ -286,3 +286,15 @@ python scripts/verify_provenance.py
 \`\`\`
 
 Remote exact-head CI and full repository/Lean integration are only claimed if independently checked; no blanket pass from an ancestor. Nothing has been merged.
+
+
+## 4a. Positive two-SUCC completion succeeds with a joint modulus — ZS-04b (PROVED LOCAL / classical Tonelli)
+
+A matched **nonnegative** two-axis source has terms \(b_{i,j}=2^{-i-1}\cdot2\cdot3^{-j-1}\), all positive. Every finite rectangle satisfies
+\[
+\boxed{S^+(N,M)=\left(1-2^{-N}\right)\left(1-3^{-M}\right),\quad
+0\le1-S^+(N,M)\le2^{-N}+3^{-M}.}\tag{Z10b}
+\]
+This explicitly controls the **joint** two-axis limit, \(S^+(N,M)\to1\), independent of how N and M jointly tend to infinity, and both iterated limits equal 1. Classical Tonelli/monotone convergence supplies the general theorem; the source-specific product and rational tail are elementary finite geometric identities. \`positive_double_successor\` independently enumerates both finite positive sums, verifies the closed form, and checks the joint tail. It is the **positive calibration** missing from the signed interchange obstruction in §4: a successful two-axis SUCC proof carries a *common-basis source* and a **joint** error modulus, not merely two independent paths of finite successes.
+
+This result **does not imply** the genuine completed Weil form is positive: its arithmetic prime/pole/Gamma source is signed and different. Importing the nonnegative Tonelli theorem there without an actual positive factorization would be circular source substitution.
