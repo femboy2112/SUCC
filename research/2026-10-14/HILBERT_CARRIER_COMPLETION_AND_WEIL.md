@@ -241,3 +241,25 @@ The source engine returns a rigorous exact-rational **interval enclosure** for e
 **Actual next computational experiment:** Couple these interval-exact original Galerkin entries with the proper mean-zero contrast basis and parity modes; certify finite Schur blocks with **validated original** high cross/resolvent enclosures. Compare their widths and resulting \(\lambda\)-gates with main \`suzuki_moment_schur.py\`'s already superior direct analytic 30-mode low Legendre formulas. Any improvement must be demonstrated, not presumed from Hilbert ordering. The source engine is deliberately budgeted to small N and finite J; it has **not** constructed the authentic complete zero-shift Schur matrix.
 
 **Adversarial findings retained:** a prime-only spatial quadtree misses the ORIGINAL \(x=y\) Gamma/contact singular locus; HC-08 includes it. At coarse k=2, a fully source-aware adaptive atlas can have **all 16** cells, so "adaptive beats uniform at every finite resolution" is **REFUTED**; only the asymptotic O(N) transition-cell theorem and measured high-k reductions are asserted. Exact antiderivative integration avoids the prime/Gamma kink crossing issue without needing adaptive refinement at all. This means adaptive Hilbert ordering's incremental value is **visit scheduling and possible efficient hierarchical compression**, not a source-sign or integration-accuracy shortcut when full analytic primitives already exist.
+
+
+## 6b. EXACT efficiency ablation: true Suzuki is Toeplitz, Hilbert is NOT the winning original-source evaluation basis — HC-10 (PROVED LOCAL)
+
+On uniform equal-width cells, the original source satisfies \(g_J(x-y)\) and the integration rectangles depend only on integer lag \(\ell=|i-j|\). Therefore
+\[
+ \boxed{\langle e_i,G_{a,J}e_j\rangle = T^{(a,J,N)}_{|i-j|}.}\tag{HC14}
+\]
+This is a literal **Toeplitz identity** of original signed Suzuki, valid for the complete finite-J prime-power/Gamma/contact/pole kernel, including every wavefront crossing; not a special identity of an auxiliary smooth covariance.
+
+\`source_toeplitz_block(a,k,J)\` computes exactly N genuine source interval cell integrals \(T_0,\dots,T_{N-1}\) and reconstructs the **same** \(N\times N\) rigorous signed interval matrix which \`hilbert_source_complete_block\` computes by evaluating all N² cells independently. The independent-source equality is regression tested for \(a=1/4,1/2,1\) and multiple \((k,J)\); at k=4, original N=16 cells and matrix with 256 entries need only 16 true source evaluations. This is an \(N\)-fold **evaluation-count** improvement compared with naively constructing every Hilbert entry, not a measured wall-time or memory benchmark. A future vector multiply can also exploit Toeplitz convolution/FFT, once original source interval error propagation is rigorously controlled.
+
+**Negative result:** for the UNMODIFIED genuine Suzuki convolution operator on a uniform cell grid, Hilbert curve ordering is not an analytic or arithmetic simplification beyond source Toeplitz caching. A Hilbert traversal does NOT reduce original rank, change eigenvalues, improve source spectral gap, or eliminate the compact high-mode resolvent. Main already contains direct Legendre analytic low-block formulas which may be better still.
+
+**Where Hilbert is useful instead:** 
+(i) adaptive quadtree data where the grid is *not uniform* and translation invariance is broken by local refinement, 
+(ii) nonstationary scientific operators/observers with source-dependent local parameters, 
+(iii) spatially local streaming/range queries or compressed data layouts, and 
+(iv) certified 4-adic parameter \(\leftrightarrow\) 2D dyadic target completion.
+Any claim of performance superiority requires an apples-to-apples benchmark against Toeplitz/FFT **and** original main's direct Legendre/Gamma integrals.
+
+The frozen scientific receipt now checks actual full all-term finite-J source intervals, zero **spatial midpoint quadrature** error on its projected block, and exact equality with the source Toeplitz lag reconstruction. As before, the original continuum projection error remains nonzero and the RH-hard low/high Schur sign is untouched.
