@@ -101,6 +101,8 @@ This is a **FINITE** exact inverse reconstruction in the source-window carrier, 
 
 In particular, the Brownian input is uniquely determined by the positive PRIME-DIFFERENCE feature even after source birth. The inversion cost grows with a/b and need not be uniform as a→∞ or b→0. **Identity/reconstruction is not energy domination**: the positive feature can have lower energy than the forced Brownian subtraction in coherent configurations.
 
+**Field-classification boundary:** API-04 is a finite symbolic inverse with finitely many shifts at fixed a,b, but its positive input F remains an arbitrary L2 function with potentially infinite source information. Injectivity/reconstructibility of the mathematical source map does not grant a physical or bounded observer finite access to all values of F. In SUCC this resolves a pathway/identity claim, not automatically a SimpleField resource or an all-RH positivity proof.
+
 The code \`source_first_prime_interference\` proves this pointwise-a.e. on the FULL rational piecewise-constant continuum model by partitioning at every breakpoint of the source and its finite shifted copies. It also computes exact positive energy, Brownian correction, and phase correlation with disjoint complex-rational coefficients; no sampled quadrature is promoted to universal proof.
 
 ## 4. API-05 — EVEN THE COMPLETE SOURCE NEGATIVE CHANNEL is a unique bounded graph of positive features (PROVED ANALYTIC)
