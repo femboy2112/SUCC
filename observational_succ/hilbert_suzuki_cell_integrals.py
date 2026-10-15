@@ -105,7 +105,13 @@ def full_source_cell(a,order,ix,iy,J):
     if k>4 or not 0<a<=1:raise SuzukiCellIntegralError("certified finite-cell budget")
     if type(J) is not int or not 1<=J<=12:
         raise SuzukiCellIntegralError("original Gamma computational bound 1..12")
-    rect=source_rect(a,k,ix,iy)
+    # Validate BOTH original Cartesian source indices before changing basis.
+    source_rect(a,k,ix,iy)
+    # Original g_J(r) is exactly even and depends only on |x-y|.
+    # Canonicalizing to lag before transcendental interval evaluation prevents
+    # distinct yet mathematically equal absolute-coordinate formulas from
+    # generating different outward endpoint widths via cancellation.
+    rect=source_rect(a,k,abs(ix-iy),0)
     if src.assert_original_source_tape() is not True:
         raise SuzukiCellIntegralError("source prime tape drift")
     parts=[genuine_pole_rect(rect),genuine_contact_rect(rect),
