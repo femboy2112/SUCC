@@ -382,6 +382,45 @@ But Gaussian-square moments give the exact opposite inequality:
 \]
 Thus a **source-blind positivity-preserving Laplace mixture is mathematically impossible**, even on the discrete natural labels. This does NOT preclude a lawful *source-indexed nonlinear relabeling* \(n\mapsto n^2\), Fourier/Poisson transform, signed integral kernel, or another genuine operator transport; it kills one tempting shortcut precisely.
 
+### ETA-05F. The correct replacement is a DECLARED Fourier-phase source transport (CLASSICAL, source-aware)
+
+The previous no-go only forbids **positive source-blind Laplace mixing** of the \(e^{-nt}\) kernels. A different instrument works: Tate's real additive Fourier character.
+
+Declare \(\psi_\infty(x)=e^{-2\pi ix}\). For every \(u>0\) and every actual carrier label \(n\in\mathbb N\),
+
+\[
+\boxed{
+\frac1{\sqrt u}\int_{\mathbb R}
+e^{-\pi x^2/u}\,\psi_\infty(nx)\,dx
+=e^{-\pi u n^2}.
+}\tag{ETA-05F1}
+\]
+
+This is the classical self-dual Gaussian Fourier transform with explicit **orientation, Fourier phase and Haar normalization**; it is neither a positive Laplace mixture nor an RH theorem. It realizes exactly the necessary label-square change with the same source-index \(n\) and a declared oscillatory phase. The integrand is complex, not pointwise nonnegative, so it legitimately escapes ETA-05E's positive-mixing no-go.
+
+**Finite genuine SUCC operator:** For any N,
+\[
+\Theta_N(u)=\sum_{n=1}^N e^{-\pi u n^2}
+=\frac1{\sqrt u}\int_{\mathbb R}e^{-\pi x^2/u}
+\left(\sum_{n=1}^N e^{-2\pi i n x}\right)dx.
+\tag{ETA-05F2}
+\]
+Here exchange is legal because the n-sum is FINITE. For fixed \(u>0\), the omitted original **positive** theta heat tail obeys the analytic bound
+\[
+0<\Theta(u)-\Theta_N(u)
+\le\frac{e^{-\pi u N^2}}{2\pi u N}
+<\frac1{6uN\,\displaystyle\sum_{k=0}^{K}\frac{(3uN^2)^k}{k!}},
+\qquad \Theta(u)=\sum_{n\ge1}e^{-\pi u n^2}.
+\tag{ETA-05F3}
+\]
+Proof: the decreasing Gaussian series is bounded by an integral; \(x\ge N\) gives \(\int_N^\infty e^{-\pi ux^2}dx\le e^{-\pi uN^2}/(2\pi uN)\); then \(\pi>3\) and the positive exponential Taylor lower bound give the **exact Fraction right side** for rational u. No floating approximations are needed for that certified tail.
+
+It is NOT legal to replace the finite sum inside ETA-05F2 by the infinite Fourier series as an ordinary integrable function without distributional justification. The finite stages converge in their *Gaussian source output*, while the full Fourier-side comb belongs to a tempered-distribution/Poisson framework.
+
+**Mutations:** Replace \(e^{-2\pi i n x}\) with \(e^{-2\pi i(n+\delta)x}\). Its Fourier output becomes \(e^{-\pi u(n+\delta)^2}\), a different clock law even if its numerical spectrum looks superficially related. The source checker records the exact rational squared labels and rejects \(\delta\ne0\) as a faithful Tate prime/integer transport; similarly omitting \(u^{-1/2}\) destroys the declared self-dual normalization.
+
+This is the first **explicit Fourier rescue** of our positivity no-go, and it correctly puts the eta→Möbius→linear heat tower beside an independently sourced Gaussian theta tower. It still requires **actual full Weil distributional gluing** and a new global arithmetic sign theorem to address RH.
+
 ### Revised transducer schematic (what is completed, what is still missing)
 
 \[
