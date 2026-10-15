@@ -1,0 +1,61 @@
+"""Operation APOLLO deterministic source-jets and derivative gauge receipt."""
+from __future__ import annotations
+
+import json
+from fractions import Fraction as F
+
+from observational_succ.apollo_derivative_jets import (
+    exact_source_gauge_negative_direction, true_third_prime_wavefronts,
+    genuine_prime_third_jet, third_origin_contact_offset,
+    cubic_gauge_discrimination, compact_polynomial_moment_certificate,
+    third_distribution_bump_pair, exact_local_gamma_slope_bound,
+)
+from observational_succ.one_object_kernel_certificates import source_two_point_minor
+
+
+def main():
+    src=source_two_point_minor(F(1,4),F(1,2),128)
+    assert src["verdict"]=="PROVED_FINITE_SOURCE_POSITIVE"
+    fake=exact_source_gauge_negative_direction(F(1,4),64,128)
+    assert fake["strict_negative_mutant_certified"] and fake["third_derivative_unchanged"]
+    jets=true_third_prime_wavefronts(2)
+    assert tuple(j.n for j in jets)==(2,3,4,5,7)
+    proof=third_distribution_bump_pair(F(2),6,65)
+    assert proof["residual_abs"]<__import__("mpmath").mpf("1e-43")
+    wrong=third_distribution_bump_pair(F(2),6,65,F(2,7))
+    assert abs(wrong["residual_abs"]-__import__("mpmath").mpf(2)/7)<__import__("mpmath").mpf("1e-43")
+    moments=compact_polynomial_moment_certificate(3,8)
+    assert moments["unobserved_moment_dimension"]==3
+    q=exact_local_gamma_slope_bound(1,32,70)
+    assert q["absolute_error"]<q["analytic_tail_evaluation"]
+    bound=src["determinant"][0]
+    floor=F(bound.numerator*10**6//bound.denominator,10**6)
+    result={
+        "operation":"APOLLO_D2_D3_SOURCE_JETS",
+        "parent_one_object_sha":"04b6d8ede12c58afe4a244b11297663c33260de1",
+        "authentic_source":"SHA_PINNED_PR85_ORIGINAL_ZETA",
+        "true_prime_wavefronts_under_log_n_less_than_2":list(j.n for j in jets),
+        "true_prime_wavefronts_δprime_weights":[
+            {"n":j.n,"p":j.p,"exponent":j.exponent,
+             "coefficient_outward_interval":[str(a) for a in j.delta_prime_weight_interval]}
+            for j in jets
+        ],
+        "origin_delta_prime_rational_offset_J6":str(third_origin_contact_offset(6)),
+        "source_Weil_to_D3_Suzuki_residual_numeric":proof["residual"],
+        "wrong_contact_D3_defect_numeric":wrong["residual"],
+        "third_invisible_quadratic_gauge":True,
+        "original_2by2_gram_det_lower_floor_1e6":str(floor),
+        "quadratic_mutant_same_D3_but_negative_gram":fake["strict_negative_mutant_certified"],
+        "quadratic_mutant_original_source":False,
+        "one_mass_normalization_fixes_D3_gauge":cubic_gauge_discrimination(1,1)["source_Weil_pairing_difference"]==-2,
+        "Ccinfinity_D3_range_missing_polynomial_moments":3,
+        "second_third_jets_identify_source":True,
+        "third_derivative_alone_implies_positive_Weil":False,
+        "all_test_suzuki_feature_factor":"UNVERIFIED",
+        "RH_PROVED":False,
+    }
+    print(json.dumps(result,sort_keys=True,indent=2))
+
+
+if __name__=="__main__":
+    main()
