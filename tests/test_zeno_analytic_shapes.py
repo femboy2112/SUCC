@@ -84,5 +84,34 @@ class SignedTwoAxisZenoTests(unittest.TestCase):
             a.signed_double_successor(1.0,8)
 
 
+
+
+class PositiveTwoAxisGlobalization(unittest.TestCase):
+    def test_positive_tonelli_source_and_exact_joint_tail(self):
+        for N in range(0,9):
+            for M in range(1,9):
+                p=a.positive_double_successor(N,M)
+                self.assertEqual(p["finite_value"],
+                     (1-Q(1,2**N))*(1-Q(1,3**M)))
+                self.assertEqual(p["global_limit"],1)
+                self.assertEqual(p["tail_exact"],1-p["finite_value"])
+                self.assertLessEqual(p["tail_exact"],p["tail_2axis_upper"])
+                self.assertTrue(p["joint_limit_with_effective_modulus"])
+                self.assertTrue(p["both_iterated_limits_equal"])
+
+    def test_signed_and_positive_models_share_finite_axes_not_limits(self):
+        for N in (1,2,5,8):
+            signed=a.signed_double_diagonal(N)
+            unsigned=a.positive_double_successor(N,N)
+            self.assertFalse(signed["joint_limit_exists"])
+            self.assertTrue(unsigned["joint_limit_with_effective_modulus"])
+            self.assertNotEqual(unsigned["finite_value"],signed["equal_horizons"])
+
+    def test_positivity_and_rate_do_not_prove_physical_supertask(self):
+        p=a.positive_double_successor(8,12)
+        self.assertLess(p["tail_2axis_upper"],Q(1,100))
+        self.assertFalse(p["physical_omega_action_executed"])
+
+
 if __name__=="__main__":
     unittest.main()
