@@ -160,3 +160,48 @@ def completed_mixed_gamma_two_stage_intersection(
             "original_full_pure_H1_Gram_built":False,
             "original_low_Schur_sign_proved":False,
             "RH_proved":False}
+
+
+
+def original_completed_first_mixed_negative_source(J:int=64)->dict:
+    """REAL completed-source M_11<0, checked by two different derivations.
+
+    The first Legendre mode u1(x)=2x has u1'(x)=2. Thus
+       M_11=<2,(G u1)'> = 2*(F1(a)-F1(-a)).
+    For the even original source and odd u1, F1 is odd:
+       M_11=4*F1(a) = 2*mu,
+    where mu=2∫_0^1(1-2t)g(t)dt, the independently implemented
+    original TRUE Neumann dual flux in suzuki_neumann_source_flux.py.
+
+    The full true infinite-Gamma M_11 must lie in BOTH the J-stage
+    interval expanded by the analytic O(J^-2) tail and twice the
+    independently integrated completed-source flux interval. If
+    either source interval fails to enclose a strictly negative value,
+    return a hard failure instead of silently promoting a sign.
+    This is a sign of the MIXED derivative, NOT Weil PSD/Schur sign.
+    """
+    from .suzuki_neumann_source_flux import genuine_infinite_first_flux
+    M=authentic_infinite_gamma_mixed_rows(J,1,(1,))
+    mixed=M.completed_matrix_enclosures[0][0]
+    flux=genuine_infinite_first_flux(16)
+    f_lo,f_hi=flux["full_infinite_source_flux_interval"]
+    from_flux=(2*f_lo,2*f_hi)
+    lo=max(mixed.lo,from_flux[0])
+    hi=min(mixed.hi,from_flux[1])
+    if lo>hi:
+        raise ArithmeticError("Two genuine original-source Gamma completions disagree")
+    if hi>=0 or mixed.hi>=0 or from_flux[1]>=0:
+        raise ArithmeticError("Original strict first mixed negativity not source certified")
+    return {
+       "source":"ORIGINAL_ZETA_M11_COMPLETED_GAMMA_SHA_PINNED",
+       "true_mixed_source_J":J,
+       "mixed_analytic_tail_bound":true_mixed_legendre_tail_bound(J,1,1),
+       "original_Fourier_Legendre_infinite_source_interval":
+           (mixed.lo,mixed.hi),
+       "independent_original_flux_identity_interval":from_flux,
+       "intersection_rigorous_negative":(lo,hi),
+       "source_first_mixed_M11_strictly_negative":True,
+       "not_original_Weil_quadratic_eigenvalue":True,
+       "original_30_low_Schur_PSD_proved":False,
+       "RH_proved":False,
+    }
