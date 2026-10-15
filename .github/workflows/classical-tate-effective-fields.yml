@@ -1,0 +1,41 @@
+name: Classical Tate Fourier and Effective Field Gates
+
+on:
+  push:
+    branches:
+      - research/classical-tate-schwartz-gluing-2026-10-15
+  pull_request:
+    paths:
+      - 'observational_succ/classical_tate_*.py'
+      - 'observational_succ/effective_field_gates.py'
+      - 'tests/test_classical_tate_*.py'
+      - 'tests/test_effective_field_gates.py'
+      - 'scripts/classical_tate_bridge_probe.py'
+      - 'scripts/effective_field_probe.py'
+      - 'research/2026-10-15/*_RECEIPT.json'
+      - '.github/workflows/classical-tate-effective-fields.yml'
+  workflow_dispatch:
+
+jobs:
+  source-exactness:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Exact source Fourier and effective field controls
+        run: |
+          python -m unittest discover -s tests -p 'test_classical_tate_window.py' -v
+          python -m unittest discover -s tests -p 'test_classical_tate_bridge_source.py' -v
+          python -m unittest discover -s tests -p 'test_effective_field_gates.py' -v
+      - name: Exact source receipts
+        run: |
+          python scripts/classical_tate_bridge_probe.py --verify
+          python scripts/effective_field_probe.py --verify
+      - name: Historical source provenance
+        run: python scripts/verify_provenance.py
