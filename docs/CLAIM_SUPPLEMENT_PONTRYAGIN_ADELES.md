@@ -19,6 +19,8 @@
 | PD-11 | A source-derived positive Hilbert form matches the completed genuine Weil quadratic form on all admissible tests, thereby proving RH | UNVERIFIED RH-HARD | No identification/sign theorem; no nontrivial zeta zeros as construction inputs |
 | PD-12 | The exact finite source implementation plus classical duality provides a complete universal model of real-world SUCC causal observations | UNVERIFIED PHYSICAL GENERALIZATION | Source IDs, epochs and local finite mathematical probes are declared; no instrument attestation or physical ω-completion |
 
+| PD-13 | Every continuous character of Zhat factors through SOME finite modulus, but for EACH fixed modulus n there is a prime p>n and CRT source projector e_p invisible mod n but detected by character 1/p | CLASSICAL CONSEQUENCE / PROVED PAPER + EXACT FAMILY CONTROL | Genuine prime source, projector, finite residue and independently computed nonzero dual phase; quantifiers forbid a uniform clock while allowing per-character finite execution |
+
 **Proof and source boundaries:** See paper §§2–9 for proofs, external dependence, normalization, test domains, and edge morphism typing. The positive Q/Z character convention is NOT Tate's negative finite local convention; the explicit r→−r transport is mandatory. The finite cyclic group \(\mathbb Z/6\mathbb Z\) is legitimate; a made-up Euler place \(\mathbb Q_6\) is not.
 
 **Reproduction (pending observed CI completion):**
