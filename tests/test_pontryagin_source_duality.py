@@ -14,6 +14,7 @@ from observational_succ.edge_carrier_reconstruction import (
 from observational_succ.pontryagin_source_duality import (
     FiniteCyclicCharacter, RationalCircleCharacter, PontryaginSourceError,
     phase_separation, finite_character_orthogonality, wrong_dual_arrow_witness,
+    no_uniform_character_conductor,
 )
 
 
@@ -139,6 +140,20 @@ class PontryaginInfiniteSourceCharts(unittest.TestCase):
             self.assertNotEqual(ch.evaluate(left),ch.evaluate(right))
         # The full collection of character labels remains separating;
         # that does not impose a uniform finite experimental deadline.
+
+    def test_no_universal_finite_conductor_despite_individual_finite_characters(self):
+        for n in (1,2,3,4,6,7,12,20,42,100,1000,10000):
+            r=no_uniform_character_conductor(n)
+            self.assertTrue(r["same_declared_finite_observation"])
+            self.assertTrue(r["separated_by_genuinely_new_character"])
+            self.assertFalse(r["uniform_finite_clock_for_all_continuous_characters"])
+            self.assertEqual(r["source_point_residue"],0)
+            self.assertNotEqual(r["character_phase_at_hidden_source"],0)
+            self.assertGreater(r["adversarial_new_prime"],n)
+        with self.assertRaises(PontryaginSourceError):
+            no_uniform_character_conductor(0)
+        with self.assertRaises(PontryaginSourceError):
+            no_uniform_character_conductor(50001)
 
     def test_source_namespace_epoch_and_conductor_negative_controls(self):
         x=ProfiniteProgram.integer(7,source_id="old",epoch=3)
