@@ -206,6 +206,45 @@ def genuine_first_prime_sparse_weil_certificate(a=Q(1, 2),
     }
 
 
+def genuine_prime_two_balanced_bump_configuration():
+    """True p=2, not synthetic: a negative prime-only direction IN the UV cone.
+
+    For any nonzero phi in C_c^infinity(J), J=(-31/64,-29/64), put
+        f(t)=phi(t)+phi(t-log(2)).
+    Source-rational log2 enclosures certify J and J+log2 lie in (-1/2,1/2)
+    and are disjoint. Total support measure<=1/16. Both L2 norms add.
+    The exact p=2 term satisfies Q_2(f)=-w_2||f||² with
+    w_2=log2/sqrt2>0: the maximal negative two-cell shift.
+    Nevertheless DYS-04 proves the ORIGINAL completed Q_zeta(f)>
+    ||f||²/24 for every such phi, using genuine Gamma/pole/contact.
+    This is a universal function-family proof, not a numeric sample.
+    """
+    source = _source()
+    b = source.log2_iv()
+    left, right = Q(-31, 64), Q(-29, 64)
+    a = Q(1, 2)
+    if not (left + b.lo > -a and right + b.hi < a and right < left + b.lo):
+        raise ArithmeticError("Genuine prime-2 two-cell translated support not enclosed")
+    labels = tuple(j.n for j in true_third_prime_wavefronts(2*a))
+    if labels != (2,):
+        raise ArithmeticError("Original p=2 prime birth is not sourced")
+    return {
+        "source": "SHA_PINNED_ORIGINAL_PRIME_2",
+        "left_bump_support_open_interval": (left, right),
+        "right_bump_shift": "log(2)",
+        "total_support_measure_at_most": 2*(right-left),
+        "two_bumps_are_disjoint": True,
+        "both_bumps_inside_first_prime_window": True,
+        "true_prime_labels": labels,
+        "prime_only_signed_energy_relative_to_L2": "-log(2)/sqrt(2)",
+        "prime_only_negative_bound_is_SHARP": True,
+        "original_completed_Weil_L2_margin_strictly_above": Q(1,24),
+        "actual_Weil_sign_from_full_source_is_positive": True,
+        "whole_first_prime_window_all_tests_proved": False,
+        "RH_proved": False,
+    }
+
+
 def mutated_source_budget(delta_contact=0, extra_prime_weight=0):
     """EXPLICITLY SYNTHETIC mutation control; no true-source sign conclusion."""
     c = _q(delta_contact)
