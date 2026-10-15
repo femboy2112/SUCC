@@ -519,3 +519,115 @@ def exact_crt_product_fourier(
             "joint_composite_modulus_not_a_primitive_Euler_place":True,
             "global_adelic_Poisson_not_constructed":True,
             "RH_proved":False}
+
+
+
+def diagonal_rational_additive_character(
+        numerator:int, denominator:int) -> dict:
+    """Genuine ALL-PLACE additive character product on diagonal Q.
+
+    For q=a/b in lowest terms (b>0), each p|b with p^k||b has
+        {q}_p = (a*(b/p^k)^(-1) mod p^k)/p^k ∈ Q/Z.
+    For primes not dividing b it is 0. CRT proves
+        q - Σ_{p|b} {q}_p ∈ Z.
+    Thus ψ∞(q)*Π_p ψp(q) = exp(2πi[-q+Σfracp]) = 1
+    with ψ∞=exp(-2πi q), ψp=exp(+2πi{q}_p).
+
+    This is the exact SOURCE-derived finite/real phase interface of
+    Tate's global additive character. It DOES NOT establish Poisson,
+    analytic continuation, Weil positivity, or a physical observation.
+    """
+    if (type(numerator) is not int or type(denominator) is not int
+            or not 1<=denominator<=1000000 or abs(numerator)>1000000):
+        raise AtomicDescentError("Bounded exact diagonal Q source required")
+    q=Q(numerator,denominator)
+    a,b=q.numerator,q.denominator
+    rem=b
+    factors=[]
+    p=2
+    while p*p<=rem:
+        if rem%p==0:
+            pk=1
+            while rem%p==0:
+                rem//=p
+                pk*=p
+            factors.append((p,pk))
+        p+=1 if p==2 else 2
+    if rem>1:
+        factors.append((rem,rem))
+    pieces=[]
+    for p,pk in factors:
+        unit=b//pk
+        if gcd(unit,pk)!=1 or not prime(p):
+            raise ArithmeticError("True finite place denominator factorization broken")
+        v=(a*pow(unit,-1,pk))%pk
+        pieces.append((p,pk,Q(v,pk)))
+    finite_phase=sum((fraction for _p,_pk,fraction in pieces),Q())
+    real_phase=-q
+    total=finite_phase+real_phase
+    if total.denominator!=1:
+        raise ArithmeticError("Global Tate diagonal additive character not trivial")
+    return {"diagonal_rational":str(q),
+            "prime_place_local_fractions":tuple((p,pk,str(fr)) for p,pk,fr in pieces),
+            "real_phase_exponent":real_phase,
+            "finite_phase_exponent":finite_phase,
+            "total_global_phase_integer":total.numerator,
+            "exact_global_product_character_is_one":True,
+            "real_and_finite_phase_orientations_opposite":True,
+            "source_restricted_finite_places_only":True,
+            "global_adelic_Poisson_not_proved":True,
+            "RH_proved":False}
+
+
+def crt_three_prime_fourier(
+        source_factors: tuple[tuple[int,tuple[int|Q,...]],...]) -> dict:
+    """Exact 3-place restricted Fourier tensor NATURAL in the CRT grouping.
+
+    Each (p,values) has genuine DISTINCT prime p and len(values)=p.
+    By CRT idempotents E_p=(N/p)*((N/p)^-1 mod p), additive characters
+    of the product transport k to k*(N/p)^-1 mod p.
+    The global Fourier of f(x)=Π_p f_p(x mod p) equals the product
+    of THREE transported local Fourier coefficients at every k mod N.
+    Order of factors cannot affect global transform (CRT uniqueness).
+    """
+    if type(source_factors) is not tuple or len(source_factors)!=3:
+        raise AtomicDescentError("Exactly three genuine local finite charts")
+    primes=[]
+    factors=[]
+    for entry in source_factors:
+        if (type(entry) is not tuple or len(entry)!=2
+                or type(entry[0]) is not int
+                or not prime(entry[0])
+                or type(entry[1]) is not tuple or len(entry[1])!=entry[0]):
+            raise AtomicDescentError("Each CRT factor must be a true prime unit quotient")
+        primes.append(entry[0])
+        factors.append(tuple(_rational(v) for v in entry[1]))
+    if len(set(primes))!=3:
+        raise AtomicDescentError("CRT factors must be distinct actual Euler primes")
+    N=primes[0]*primes[1]*primes[2]
+    if N>36:
+        raise AtomicDescentError("Three-place exact cyclotomic budget <=36")
+    source=tuple(
+        factors[0][x%primes[0]]*
+        factors[1][x%primes[1]]*
+        factors[2][x%primes[2]] for x in range(N)
+    )
+    direct=tuple(v.scale(Q(1,N)) for v in exact_dft(source))
+    transports=tuple(pow(N//p,-1,p) for p in primes)
+    for k,global_value in enumerate(direct):
+        product=CyclotomicElement.scalar(N,1)
+        for p,fs,inv in zip(primes,factors,transports):
+            local=CyclotomicElement.scalar(N,0)
+            freq=(k*inv)%p
+            for a,v in enumerate(fs):
+                local=local+CyclotomicElement.root(N,(N//p)*freq*a).scale(v)
+            product=product*local.scale(Q(1,p))
+        if product!=global_value:
+            raise ArithmeticError("Three-prime CRT Fourier cube/gluing failed")
+    return {"primes":tuple(primes),"joint_observation_modulus":N,
+            "dual_CRT_inverse_transports":transports,
+            "global_dual_frequencies_verified":N,
+            "all_three_source_Fourier_tensor_square_commutes":True,
+            "composite_joint_modulus_is_NOT_new_Euler_place":True,
+            "global_adelic_Poisson_proved":False,
+            "RH_proved":False}
