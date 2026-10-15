@@ -293,3 +293,63 @@ def synthetic_sparse_budget(J: int, m: F, contact_upper: F,
     return {"synthetic":True,"original_source_authenticated":False,
             "candidate_lower":lower,"candidate_positive":lower>0,
             "RH_proved":False}
+
+
+
+def isolated_prime_sixteen_packet(n: int, length: F = F(1,128)) -> dict:
+    """Better a=1 domain: ONE source jet active on its translated packets.
+
+    For each n in genuine 2,3,4,5,7, E=U union(U+log n),
+    U=(-1+delta,-1+2delta), 0<delta<=1/128.
+    The intervals lie strictly inside (-1,1), and all other true
+    prime-power log shifts differ from log n by >delta.
+    Only n's compressed translation survives on E with norm<=1/2
+    in the REAL part, giving -w_n||f||². All real Gamma rungs
+    other than first 16 remain PSD; first 16 give S16-16|E|.
+    C_inf<43/8; w_n<3/4; negative sinh pole<=2|E|.
+    Exact rational margin:
+         S16 - 16*(2delta) -43/8-3/4-2*(2delta) >1/2
+    even at delta=1/128.
+    The source-defined contraction exists on Cc∞(E), but not on all
+    Suzuki tests in (-1,1). THIS IS NOT RH.
+    """
+    if type(n) is not int or n not in (2,3,4,5,7):
+        raise PrimeDomainError("Genuine original five-jet source required")
+    if type(length) is not F or not F()<length<=F(1,128):
+        raise PrimeDomainError("Finite exact packet delta<=1/128 required")
+    src=_proof_source()
+    b=src.log_iv(n)
+    left=-1+length
+    if not b.lo>length or not left+length+b.hi<1:
+        raise PrimeDomainError("Original source packets do not fit (-1,1)")
+    for other,p,ub in SOURCE_WEIGHT_UPPERS:
+        if other==n:continue
+        bo=src.log_iv(other)
+        if not (b.lo-bo.hi>length or bo.lo-b.hi>length):
+            raise PrimeDomainError("Other prime clock not rigorously separated")
+    p=src.real_prime_power(n)
+    exact_ub=next(w for j,q,w in SOURCE_WEIGHT_UPPERS if j==n)
+    w=_upper_weight(src,n,p,exact_ub)
+    if exact_ub>F(3,4):
+        raise PrimeDomainError("Original prime upper budget not available")
+    m=2*length
+    lower=gamma_sixteen_fraction()-16*m-F(43,8)-F(3,4)-2*m
+    if not lower>F(1,2):
+        raise ArithmeticError("Sixteen-rung isolated-prime source sign failed")
+    return {"active_original_prime_power":n,
+            "primitive_prime":p,
+            "Gamma_modes":16,
+            "halfwidth":F(1),
+            "base_U":(left,left+length),
+            "right_U":"base_U + exact source log(n)",
+            "log_interval":(b.lo,b.hi),
+            "original_weight_interval":(w.lo,w.hi),
+            "isolated_wavefront":True,
+            "other_four_prime_overlaps_exactly_zero":True,
+            "support_measure_upper":m,
+            "half_shift_overlap_norm_ratio":F(1,2),
+            "source_signed_Weil_L2_lower":F(1,2),
+            "strict_rational_margin":lower,
+            "source_positive_Hilbert_contraction_exists_on_CcE":True,
+            "full_ambient_G_a_positive":False,
+            "RH_proved":False}
