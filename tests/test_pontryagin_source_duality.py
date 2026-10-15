@@ -26,7 +26,8 @@ class FiniteCharacters(unittest.TestCase):
                 signature=tuple(c.phase(x) for x in range(n))
                 spectra.add(signature)
                 self.assertEqual(c.rational_frequency,F(k,n)%1)
-                self.assertEqual(c.phase(n+x if n else x),c.phase(x))
+                for x in (0,1,n-1,n+3):
+                    self.assertEqual(c.phase(n+x),c.phase(x))
             self.assertEqual(len(spectra),n)
 
     def test_dual_arrows_natural_on_nested_reduction(self):
