@@ -466,6 +466,54 @@ def gaussian_linear_heat_positive_mixing_no_go() -> dict:
     }
 
 
+def tate_gaussian_fourier_stage(N:int, u, taylor_order:int=20,
+                                phase_shift=F(0)) -> dict:
+    """Lawful FINITE Fourier/Poisson replacement for impossible positive mix.
+
+    Declare Tate real additive character psi_infinity(x)=exp(-2*pi*i*x).
+    Classical Gaussian Fourier self-duality says, for all integer n and u>0:
+      u^(-1/2)*int_R exp(-pi*x^2/u)*exp(-2*pi*i*n*x) dx
+        = exp(-pi*u*n^2).
+    Summing n=1..N is legitimate. The omitted positive theta tail obeys
+      sum_{n>N} exp(-pi*u*n^2)
+        <= exp(-pi*u*N^2)/(2*pi*u*N)
+        < 1/(6*u*N*sum_{k=0}^K (3*u*N^2)^k/k!)
+    using pi>3 and exp(z)>=sum_{k<=K} z^k/k!.
+    The output is EXACT rational; the Gaussian Fourier identity is a
+    stated classical analytical premise, not a finite numerical proof.
+    A wrong character phase n+delta changes the Gaussian label to
+    (n+delta)^2: it is not the authentic source unless delta=0.
+    """
+    if type(N) is not int or not 1<=N<=128:
+        raise EtaTransportError("Fourier stage finite source N in 1..128 required")
+    v=_rational(u)
+    sh=_rational(phase_shift)
+    if v<=0:
+        raise EtaTransportError("Positive real Gaussian clock required")
+    if type(taylor_order) is not int or not 0<=taylor_order<=64:
+        raise EtaTransportError("Rational exponential tail order 0..64 required")
+    z=3*v*N*N
+    denominator=sum((z**k/F(factorial(k)) for k in range(taylor_order+1)),F())
+    tail=F(1)/(6*v*N*denominator)
+    return {
+        "source_N":N,
+        "gaussian_u":v,
+        "declared_Fourier_character":"exp(-2*pi*i*(n+phase_shift)*x)",
+        "Fourier_normalization":"1/sqrt(u)",
+        "phase_shift":sh,
+        "source_label_squares":tuple((F(n)+sh)**2 for n in range(1,N+1)),
+        "authentic_integer_phase":sh==0,
+        "classical_Fourier_identity_for_each_label":True,
+        "Gaussian_theta_tail_strict_rational_upper":tail,
+        "theta_tail_uses_only_positive_source":True,
+        "real_Tate_Gamma_factor":"pi^(-s/2)*Gamma(s/2)",
+        "real_Tate_zeta_Mellin_domain":"Re(s)>1",
+        "nontrivial_zero_locations_used":False,
+        "global_Weil_distribution_identified":False,
+        "RH_proved":False,
+    }
+
+
 def primary_source_interface_status() -> dict:
     """Typed map explicitly prevents illicit eta->RH promotion."""
     return {
