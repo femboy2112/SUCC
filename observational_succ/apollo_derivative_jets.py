@@ -354,3 +354,35 @@ def local_suzuki_first_second_third(r: int | Q, dps: int = 75) -> dict:
         "prime_wavefront_in_window":False,
         "RH_proved":False,
     }
+
+
+
+def authentic_uniform_small_diagonal(r: int | Q) -> dict:
+    """Source-certified ORIGINAL zeta Suzuki K_g(r,r)>r/8 for 0<r<=1/8.
+
+    The theorem covers ALL real 0<r<=1/8, not only these rational API
+    arguments; proof is by AP-07's analytic |g'(r)-.5 log r-C|<=3r,
+    C=(EulerGamma+log(2*pi))/2 < 5/4, log(2)>2/3, and integration:
+      g(r)/r <= .5 log r + C-.5 +1.5r
+             < -3/2 log2+3/4+3/16 < -1/16.
+    Thus K_g(r,r)=-2g(r)>r/8.
+    Both input constant inequalities are checked by Git-blob pinned outward
+    Fraction interval primitives. This is DIAGONAL ONLY, not even 2x2 PSD.
+    """
+    rr=_fraction(r)
+    if not 0<rr<=Q(1,8):
+        raise OneObjectError("Exact positive small interval 0<r<=1/8")
+    src=_source()
+    from_exact=(src.gamma_iv()+src.log2_iv()+src.log_interval(src.pi_iv()))/2
+    if not from_exact.hi<Q(5,4):
+        raise ArithmeticError("Original rational normalization failed C<5/4")
+    if not src.log2_iv().lo>Q(2,3):
+        raise ArithmeticError("Original rational log2 lower bound lost")
+    return {"radius":rr,
+            "original_C_interval":(from_exact.lo,from_exact.hi),
+            "original_log2_interval":(src.log2_iv().lo,src.log2_iv().hi),
+            "rigorously_positive_K_diagonal_lower":rr/8,
+            "strict_for_every_real_radius_in_window":True,
+            "source":"ORIGINAL_SHA_PINNED_ZETA_SUZUKI",
+            "not_all_2by2_gram":True,
+            "RH_proved":False}
