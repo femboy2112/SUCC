@@ -1,0 +1,55 @@
+name: Zeno SUCC exact finite-to-global proof templates
+
+on:
+  push:
+    branches:
+      - 'research/zeno-*'
+    paths:
+      - 'observational_succ/zeno_certificate.py'
+      - 'tests/test_zeno_certificate.py'
+      - 'scripts/zeno_succ_probe.py'
+      - 'research/2026-10-14/ZENO_SUCC_*'
+      - 'docs/CLAIM_SUPPLEMENT_ZENO_SUCC.md'
+      - '.github/workflows/zeno-succ-global.yml'
+  pull_request:
+    paths:
+      - 'observational_succ/zeno_certificate.py'
+      - 'tests/test_zeno_certificate.py'
+      - 'scripts/zeno_succ_probe.py'
+      - 'research/2026-10-14/ZENO_SUCC_*'
+      - 'docs/CLAIM_SUPPLEMENT_ZENO_SUCC.md'
+      - '.github/workflows/zeno-succ-global.yml'
+  workflow_dispatch:
+
+jobs:
+  source-zeno-certificates:
+    name: Exact SUCC/Zeno and signed Gamma tail (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Preserve source integrity
+        run: python scripts/verify_provenance.py
+      - name: Run exact law, modality, hostile-control and matrix tests
+        run: PYTHONPATH=. python -m unittest tests.test_zeno_certificate -v
+      - name: Replay deterministic source-indexed Zeno receipt
+        run: PYTHONPATH=. python scripts/zeno_succ_probe.py --verify research/2026-10-14/ZENO_SUCC_RECEIPT.json
+      - name: No invented physical completion or RH proof
+        run: |
+          python - <<'PY'
+          import json
+          with open('research/2026-10-14/ZENO_SUCC_RECEIPT.json') as fp:
+              r=json.load(fp)
+          assert r['claimed_physical_supertask'] is False
+          assert r['claimed_Lean_theorems'] is False
+          assert r['RH_PROVED'] is False
+          assert r['nontrivial_zeta_zero_coordinates_used'] is False
+          assert r['AUTHENTIC_GAMMA_BUDGET']['first_rung_exceeds_false_Gemini_bound']
+          assert r['FINITE_SCHUR_GATE']['actual_Weil_cross_matrix_supplied'] is False
+          PY
