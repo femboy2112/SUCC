@@ -189,6 +189,7 @@ class GenuineMixedMoments:
     source:str
     J:int
     rank:int
+    low_modes:tuple
     matrix_intervals:tuple
     original_source_blob:str
     odd_even_parity_separated:bool=True
@@ -199,6 +200,7 @@ class GenuineMixedMoments:
     low_shorted_sign_proved:bool=False
     rh_proved:bool=False
 
+@lru_cache(maxsize=8,typed=True)
 def original_mixed_derivative_gram(J,rank=30,low_modes=None):
     """Entire source M_(j,i)=<u_j',(G_Ju_i)'>, dimension rank×len(low_modes).
 
@@ -234,7 +236,7 @@ def original_mixed_derivative_gram(J,rank=30,low_modes=None):
         matrix.append(tuple(row))
     return GenuineMixedMoments(
        source="AUTHENTIC_Q_ZETA_SUZUKI_G_J_TRUE_LOWHIGH_DERIVATIVE",
-       J=J,rank=rank,matrix_intervals=tuple(matrix),
+       J=J,rank=rank,low_modes=low_modes,matrix_intervals=tuple(matrix),
        original_source_blob="0cc8510b71d178fc79e8d410a86d8b6014cf9178")
 
 def _square_interval(v):
@@ -256,8 +258,14 @@ def projected_gauge_diag_energy(moments:GenuineMixedMoments):
         raise OriginalMixedGaugeError("exact true source mixed moment type")
     if moments.rank!=30 or any(len(row)!=30 for row in moments.matrix_intervals):
         raise OriginalMixedGaugeError("full 30x30 genuine source only")
-    if moments.J<1 or moments.original_source_blob!="0cc8510b71d178fc79e8d410a86d8b6014cf9178":
-        raise OriginalMixedGaugeError("original complete source drift")
+    if (moments.J<1 or moments.original_source_blob!="0cc8510b71d178fc79e8d410a86d8b6014cf9178"
+        or moments.low_modes!=tuple(range(1,31))
+        or any(type(r) is not tuple or any(
+            type(v) is not src.I or type(v.lo) is not F or type(v.hi) is not F
+            for v in r) for r in moments.matrix_intervals)):
+        raise OriginalMixedGaugeError("original source/coordinate/interval types drift")
+    if moments!=original_mixed_derivative_gram(moments.J,30,moments.low_modes):
+        raise OriginalMixedGaugeError("forged source moments or projection matrix")
     out=[]
     for col in range(30):
         total=src.iv(0)
