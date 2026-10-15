@@ -7,6 +7,7 @@ from observational_succ.ordinal_ranked_succ import (
     OrdinalDescentError,OrdinalCNF,ZERO,ordinal_nat,ordinal_monomial,
     ordinal_lex_counters,hereditary_base,goodstein_step,goodstein_prefix,
     HierarchicalCountdown,giant_finite_path_certificate,
+    OrdinalProofObligationQueue,gigantic_observer_proof_queue,
 )
 from observational_succ.ordinal_martingale_boundary import (
     almost_sure_termination_source,ordinal_pathwise_rank_obstruction,
@@ -204,6 +205,63 @@ class ProbabilityAndSignedWeilCountermodels(unittest.TestCase):
         for args in ((0,1,1),(-1,0,1),(1,True,1),(1,2,0.25)):
             with self.assertRaises(OrdinalDescentError):
                 ordinal_ranked_schur_normalization(*args)
+
+
+
+class OrdinalRecursiveModelOfModelsTests(unittest.TestCase):
+    def test_source_observer_higher_phase_spawns_lower_work_but_rank_strictly_drops(self):
+        original=OrdinalProofObligationQueue((2,1,0))
+        high=original.discharge_next(spawn_medium=18,spawn_low=1024)
+        self.assertEqual(high.counts,(1,19,1024))
+        self.assertLess(high.rank,original.rank)
+        another=high.discharge_next(spawn_medium=3,spawn_low=10)
+        self.assertEqual(another.counts,(0,22,1034))
+        self.assertLess(another.rank,high.rank)
+        medium=another.discharge_next(spawn_low=2**64)
+        self.assertEqual(medium.counts,(0,21,1034+2**64))
+        self.assertLess(medium.rank,another.rank)
+        self.assertFalse(medium.finished)
+        self.assertFalse(gigantic_observer_proof_queue(256)["RH_proved"])
+
+    def test_arbitrary_long_normalization_path_proved_without_execution(self):
+        proof=gigantic_observer_proof_queue(256)
+        self.assertEqual(proof["before_rank"],"ω^(2)")
+        self.assertEqual(proof["after_rank"],"ω + "+str(2**256))
+        self.assertEqual(proof["spawned_low_count"],2**256)
+        self.assertTrue(proof["rank_decreased_strictly"])
+        self.assertTrue(proof["source_observer_growth_tasks_can_increase"])
+        self.assertFalse(proof["source_completed_Weil_claim_proved"])
+
+    def test_all_three_phase_observer_normalizer_small_case_reaches_zero(self):
+        state=OrdinalProofObligationQueue((2,0,0))
+        steps=0
+        while not state.finished:
+            if state.counts[0]:
+                nxt=state.discharge_next(spawn_medium=1,spawn_low=2)
+            elif state.counts[1]:
+                nxt=state.discharge_next(spawn_low=1)
+            else:
+                nxt=state.discharge_next()
+            self.assertLess(nxt.rank,state.rank)
+            state=nxt
+            steps+=1
+            self.assertLess(steps,32)
+        self.assertTrue(state.finished)
+        self.assertEqual(state.rank,ZERO)
+        self.assertEqual(steps,2+2+4+2)
+        with self.assertRaises(OrdinalDescentError):
+            state.discharge_next()
+
+    def test_higher_priority_forgery_and_nonfinite_task_spawn_refused(self):
+        for counts in ((True,1,0),(-1,0,0),(1.5,0,0),(),(0,0,0,0)):
+            with self.assertRaises(OrdinalDescentError):
+                OrdinalProofObligationQueue(counts)
+        with self.assertRaises(OrdinalDescentError):
+            OrdinalProofObligationQueue((0,1,0)).discharge_next(spawn_medium=1)
+        with self.assertRaises(OrdinalDescentError):
+            OrdinalProofObligationQueue((0,0,1)).discharge_next(spawn_low=1)
+        with self.assertRaises(OrdinalDescentError):
+            OrdinalProofObligationQueue((1,0,0)).discharge_next(spawn_low=2**1025)
 
 
 if __name__=="__main__":
