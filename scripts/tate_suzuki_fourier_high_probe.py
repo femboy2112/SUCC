@@ -9,6 +9,9 @@ import sys
 from fractions import Fraction as F
 from pathlib import Path
 
+from observational_succ.tate_suzuki_all_radii import (
+    all_radius_formal_high_certificate,
+)
 from observational_succ.tate_suzuki_fourier_schur import (
     gamma_fourier_multiplier_lower, moment_taylor_low_fourier_fraction,
     source_first_prime_spectral_budget, tate_suzuki_zero_shift_interface,
@@ -22,6 +25,8 @@ def receipt():
     rank30=source_first_prime_spectral_budget(30)
     schur30=tate_suzuki_zero_shift_interface(30)
     mutation=verify_cross_source_failure_modes()
+    general_half=all_radius_formal_high_certificate(F(1,2),F(1))
+    general_two=all_radius_formal_high_certificate(F(2),F(1))
     gm=gamma_fourier_multiplier_lower(F(12),32)
     assert gm>6 and gm<F(601,100)
     assert rank16["original_Weil_L2_gap_strict_lower"]>F(1,20)
@@ -29,7 +34,7 @@ def receipt():
     assert rank30["original_Weil_L2_gap_strict_lower"]>F(1,16)
     assert schur30["zero_shift_R0_operator_norm_strict_upper"]==F(121,100)
     return {
-        "schema":"SUCC_TATE_SUZUKI_FOURIER_HIGH_v1",
+        "schema":"SUCC_TATE_SUZUKI_FOURIER_HIGH_v2",
         "origin":"SHA_PINNED_ZETA_TATE_WEIL_PR109_AND_DYSPON_II",
         "original_suzuki_blob":rank30["original_git_blob"],
         "original_halfwidth":"1/2",
@@ -63,6 +68,18 @@ def receipt():
         "naive_bound_cannot_certify_low":"-187/200",
         "wrong_contact_mutation_exhausts_rank16_budget":
             mutation["mutation_loses_rank16_kappa_1over20"],
+        "all_radius_high_source":{
+            "original_a_half_prime_upper_budget":str(general_half["prime_source_negative_budget"]),
+            "a_half_Gamma_J_formal_binary_exponent":
+                general_half["Gamma_index_cutoff_J_power_of_two_exponent"],
+            "a_two_Gamma_J_formal_binary_exponent":
+                general_two["Gamma_index_cutoff_J_power_of_two_exponent"],
+            "Gamma_J_formula":"2^M",
+            "moment_rank_formula":general_two["moment_rank_exact_formula"],
+            "source_high_positive_at_each_fixed_radius":True,
+            "gigantic_operators_were_not_instantiated":True,
+            "low_Schur_signs_all_radii_proved":False,
+        },
         "source_30x30_actual_low_short_sign_proved":False,
         "all_a_positive_Weil_proved":False,
         "RH_proved":False,
