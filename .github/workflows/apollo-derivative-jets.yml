@@ -1,0 +1,35 @@
+name: APOLLO signed second and third Suzuki jets
+
+on:
+  push:
+    branches:
+      - 'research/apollo-suzuki-second-third-jet-*'
+  pull_request:
+    paths:
+      - 'observational_succ/apollo_derivative_jets.py'
+      - 'tests/test_apollo_derivative_jets.py'
+      - 'scripts/apollo_derivative_probe.py'
+      - '.github/workflows/apollo-derivative-jets.yml'
+
+jobs:
+  apollo-derivative-source:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install research and test dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Run exact D2/D3 source and numeric holdout tests
+        run: python -m unittest discover -s tests -p 'test_apollo_derivative_jets.py' -v
+      - name: Replay deterministic APOLLO receipt
+        run: python scripts/apollo_derivative_probe.py
+      - name: Replay signed ONE OBJECT source regression
+        run: python -m unittest discover -s tests -p 'test_one_object*.py' -v
+      - name: Verify imported original-source provenance
+        run: python scripts/verify_provenance.py
