@@ -466,3 +466,54 @@ def source_hilbert_hilbert_schmidt_identity(scan: SourceHilbertScan) -> dict:
             "hilbert_clock_energy_scaled": rhs,
             "exact_L2_source_identity":True,
             "Hilbert_flattening_does_not_imply_PSD":True}
+
+
+@dataclass(frozen=True)
+class HilbertStreamingSourceRayleigh:
+    """Exactly sourced original signed finite statistic, streaming Hilbert cells."""
+    a: Q
+    J: int
+    level: int
+    original_signed_rayleigh: Q
+    source_operator_norm_error: Q
+    sampled_kernel_distances: int
+    traversed_interaction_cells: int
+    memory_kernel_values: int
+    original_source_sha: str = PINNED_WEIL_BLOB
+    new_Weil_positivity_proved: bool = False
+
+
+def genuine_suzuki_hilbert_streaming_rayleigh(a, J, level, vector) -> HilbertStreamingSourceRayleigh:
+    """Visit all Hilbert-ordered original Suzuki kernel entries with O(N) values.
+
+    This avoids MATERIALIZING the N x N signed source matrix, but costs N^2
+    algebraic observations in any exact full scan.  It retains PR85's full
+    norm-error certificate, NOT a free compression of the signed operator.
+    """
+    a = rational(a)
+    level = _level(level, maxlevel=4)
+    if level == 0 or not 0 < a <= 1 or type(J) is not int or not 1 <= J <= 36:
+        raise HilbertSourceError("source Hilbert streaming finite budget")
+    n = 1 << level
+    if type(vector) is not tuple or len(vector) != n:
+        raise HilbertSourceError("exact original mean-zero vector length required")
+    v = tuple(rational(x) for x in vector)
+    if sum(v,Q()) != 0 or all(x == 0 for x in v):
+        raise HilbertSourceError("original derivative carrier mean-zero violation")
+    src = _pinned_original_weil_source()
+    h = 2*a / n
+    interval_vals = tuple(src.screw_interval(h*k, J) for k in range(n))
+    radius = max(item.radius() for item in interval_vals)
+    g_mid = tuple(item.mid() for item in interval_vals)
+    energy = Q()
+    traversed = 0
+    for tile in hilbert_cells(level):
+        energy += h * g_mid[abs(tile.x-tile.y)] * v[tile.x] * v[tile.y]
+        traversed += 1
+    error = src.continuous_error(a, J, n) + 2*a*radius
+    return HilbertStreamingSourceRayleigh(
+        a, J, level, energy/sum((x*x for x in v),Q()), error,
+        sampled_kernel_distances=n,
+        traversed_interaction_cells=traversed,
+        memory_kernel_values=len(g_mid),
+    )

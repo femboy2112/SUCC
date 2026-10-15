@@ -21,6 +21,7 @@ from observational_succ.hilbert_succ import (
     source_locality_budget, source_scan_locality_check,
     source_certified_rayleigh_interval, original_weil_measure_strata,
     source_hilbert_hilbert_schmidt_identity,
+    genuine_suzuki_hilbert_streaming_rayleigh,
 )
 
 
@@ -283,6 +284,28 @@ class TestOriginalWeilHilbertAdapter(unittest.TestCase):
             source_rayleigh_by_hilbert_succ(replace(self.scan,hilbert_matrix_cells=self.scan.hilbert_matrix_cells[::-1]),(1,-1,2,-2))
         with self.assertRaises(HilbertSourceError):
             source_rayleigh_by_hilbert_succ(self.scan,(1,1,-1,0))
+
+    def test_streamed_original_source_exactly_matches_dense_signed_source(self):
+        v=(1,-1,2,-2)
+        streaming=genuine_suzuki_hilbert_streaming_rayleigh(Q(1,2),3,2,v)
+        dense=source_rayleigh_by_hilbert_succ(self.scan,v)
+        self.assertEqual(streaming.original_signed_rayleigh,dense)
+        self.assertEqual(streaming.source_operator_norm_error,
+                         self.scan.source_operator_norm_error)
+        self.assertEqual(streaming.memory_kernel_values,4)
+        self.assertEqual(streaming.traversed_interaction_cells,16)
+        self.assertEqual(streaming.sampled_kernel_distances,4)
+        self.assertFalse(streaming.new_Weil_positivity_proved)
+
+    def test_streaming_source_errors_are_fail_closed(self):
+        for args in ((Q(1,2),3,2,(1,1,-1,0)),
+                     (Q(1,2),3,2,(1,-1,2,0)),
+                     (Q(1,2),3,2,(1,-1,2,False)),
+                     (0.5,3,2,(1,-1,2,-2)),
+                     (Q(1,2),0,2,(1,-1,2,-2))):
+            with self.subTest(args=args):
+                with self.assertRaises(HilbertSourceError):
+                    genuine_suzuki_hilbert_streaming_rayleigh(*args)
 
     def test_true_source_stage_refinement_has_existing_error_not_hilbert_magic(self):
         n4=self.scan

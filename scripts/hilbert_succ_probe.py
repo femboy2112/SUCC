@@ -14,6 +14,7 @@ from observational_succ.hilbert_succ import (
     diagonal_zeno_mutant, monomial_strata, hilbert_dimension_obstruction,
     genuine_suzuki_hilbert_scan, source_scan_locality_check,
     original_weil_measure_strata, PINNED_WEIL_BLOB, PARENT_MAIN_SHA,
+    genuine_suzuki_hilbert_streaming_rayleigh, source_rayleigh_by_hilbert_succ,
 )
 
 
@@ -65,6 +66,11 @@ def source_probe():
     measure=original_weil_measure_strata(Q(1,2))
     stage=genuine_suzuki_hilbert_scan(Q(1,2),3,2)
     local=source_scan_locality_check(stage)
+    streaming=genuine_suzuki_hilbert_streaming_rayleigh(Q(1,2),3,2,(1,-1,2,-2))
+    if streaming.source_operator_norm_error != stage.source_operator_norm_error:
+        raise RuntimeError('original source streaming error lost during Hilbert transport')
+    if streaming.original_signed_rayleigh != source_rayleigh_by_hilbert_succ(stage,(1,-1,2,-2)):
+        raise RuntimeError('original source Hilbert stream disagrees with source matrix')
     if not local['all_consecutive_original_source_readouts_lipschitz_certified']:
         raise RuntimeError('source Hilbert locality certificate failed')
     if [j['n'] for j in measure['prime_shift_graphs']]!=[2]:
@@ -76,6 +82,9 @@ def source_probe():
                    'hilbert_measurement_count':len(stage.hilbert_matrix_cells),
                    'hilbert_locality_budget':local['declared_bound'],
                    'hilbert_max_source_jump':local['maximum_exact_difference'],
+                   'streamed_original_signed_rayleigh':streaming.original_signed_rayleigh,
+                   'streaming_kernel_memory_values':streaming.memory_kernel_values,
+                   'streaming_original_source_error':streaming.source_operator_norm_error,
                    'primitive_place_list':[j['n'] for j in measure['prime_shift_graphs']],
                    'positive_bulk_and_negative_contact_both_retained':True,
                    'RH_PROVED':False})

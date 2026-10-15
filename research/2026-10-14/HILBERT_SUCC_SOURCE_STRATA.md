@@ -164,13 +164,26 @@ Suppose a continuous surjection `F:[0,1]->[0,1]^d` is α-Hölder with constant C
 
 For the infinite product/Hilbert cube `X=[0,1]^N` with a conventional positive-weight product metric (e.g. sum 2^-j |x_j-y_j|), every coordinate projection to `[0,1]^d` is Lipschitz with a finite d-dependent constant. If an onto `F:[0,1]->X` were α-Hölder for any fixed α>0, every projection would be onto and α-Hölder, contradicting α<=1/d for d>1/α. **No uniform positive Hölder exponent can carry all dimensions at once.** A continuous surjection may nevertheless exist, with a slower modulus: this is a modulus/complexity gate, NOT a universal "FuckedSpace" or undecidability result. The checker returns exact rational covering-volume exponents, not a substitute for the classical covering proof.
 
+## HSC-16 — bounded-memory authentic signed Weil stream (PROVED LOCAL / source-pinned)
+
+A full Hilbert-order scan of the **existing original** N×N Suzuki matrix need not actually allocate the matrix. For N=2^n, source-pin the same g_J and evaluate exactly the N distinct distances `r_k=k(2a/N)` to obtain **N** original-source rational interval values. Traverse the N² Hilbert cells in order and accumulate the original mean-zero quadratic form using `M_ij=h*g_J(h|i-j|)`. The resulting source energy is
+
+\[
+R_{J,N}(u)=\frac{h\sum_{k<N^2}u_{x_k}u_{y_k}\,g_J(h|x_k-y_k|)}{\sum_{i<N}u_i^2},\qquad\sum_i u_i=0.
+\tag{HSC12}
+\]
+
+By the Hilbert bijection, this sum is **algebraically identical** to the row-major authenticated Suzuki matrix Rayleigh quotient on every original-source test vector. The same `eta` is the maximum radius among those N source intervals, and the original signed analytic+interval error remains **exactly** `2a[tau_J+h L_J+eta]`. Hence it provides a valid signed infinite-to-finite Rayleigh **interval** with O(N) cached kernel values and O(N²) arithmetic terms, versus O(N²) stored entries. The source J,N software budget remains unchanged, and N true source samples DO NOT mean only N pairwise correlations were established: all N² deterministic pair interactions are still traversed. No computational speedup in asymptotic work and no positivity or zero-location claim.
+
+The new routine `genuine_suzuki_hilbert_streaming_rayleigh` requires a pinned true-zeta source, original mean-zero vector, and exact rational coordinates; it refuses forged floats, source drift and nonzero-mean inputs. Independent dedicated CI compares it byte-for-byte at the algebraic Fraction level with the **original** row-major PR85 source matrix and its existing uniform operator error. The same frozen geometry-only receipt is preserved; the authentic source run is a separate fail-closed original-source CI fact.
+
 ## 7. Hostile controls, source constraints and validation
 
 - Complete all-cell inverse and no-duplicate check; all consecutive Hilbert SUCCs are edge neighbors and ancestry reports commute.
 - Exact dyadic L² refinement and spatial-clock reconstruction; no false topological inverse inferred from almost-everywhere Hilbert unitary.
 - Independent monomial integral identities (area/graph/contact) and sharp band counterexample HSC6; floats, booleans, wrong measures and impossible geometry refused.
 - Genuine PINNED parent original source matches Git blob `0cc8510...`; exact true-prime/false-6 activation and signed pole/channel gates. Full source replay runs in the integrated GitHub checkout, **not** in the isolated local geometry-only tree.
-- Original conservative source error bound HSC9, Hilbert consecutive-readout budget, exact Hilbert/Raster Rayleigh and exact HS norm identity. Missing source module => fail-closed remote source preflight.
+- Original conservative source error bound HSC9, Hilbert consecutive-readout budget, exact Hilbert/Raster and O(N)-cached streaming source Rayleigh, and exact HS norm identity. Missing source module => fail-closed remote source preflight.
 - No numerical zero list, no physical sensor, no new RH/Gamma completion claim; the actual full low/high Schur sign remains **UNVERIFIED**.
 
 Artifacts: `observational_succ/hilbert_succ.py`, `tests/test_hilbert_succ.py`, `scripts/hilbert_succ_probe.py`, `research/2026-10-14/HILBERT_SUCC_SOURCE_RECEIPT.json`, `docs/CLAIM_SUPPLEMENT_HILBERT_SUCC.md`, `.github/workflows/hilbert-succ.yml`.

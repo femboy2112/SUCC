@@ -7,7 +7,7 @@
 - **Geometry:** exact finite Hilbert 4-way successor, adjacent SUCC motions, dyadic parent-square functor, inverse index, bounded-source dimension and input controls.
 - **Completion:** finite L² isometries/refinement naturality and paper mathematical completion to genuine measure-theoretic Hilbert curve/unitary.
 - **Analysis:** certified Lipschitz midpoint integration; dimensional Hölder debt; a sharp two-axis diagonal mollifier countermodel.
-- **Authentic arithmetic host:** SHA-pinned original signed Weil source #85; fixed source catalog of 2D Gamma positive bath, 1D prime shift graphs and diagonal contact, opposite-sign poles; original screw operator Hilbert scan with **unchanged** source norm error and mean-zero Rayleigh semantics.
+- **Authentic arithmetic host:** SHA-pinned original signed Weil source #85; fixed source catalog of 2D Gamma positive bath, 1D prime shift graphs and diagonal contact, opposite-sign poles; original screw operator Hilbert scan with **unchanged** source norm error and mean-zero Rayleigh semantics. The source stream additionally computes the same signed energy with O(N) cached kernel values instead of N² stored matrix entries, at the same O(N²) pairwise operation count.
 - **Validation:** exact tests and scientific receipt; dedicated integrated-source workflow; original PRs/archives unchanged; no fake primitive Euler 6, no zero-location oracle, no altered numerical root evidence.
 
 ## Next execution wave — priority 1: genuine low-Suzuki Schur source bounds
