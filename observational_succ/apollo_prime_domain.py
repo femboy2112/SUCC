@@ -78,7 +78,9 @@ def dyadic_gamma_4096_lower() -> F:
 
 
 def _support_measure(m: int | F, limit: F) -> F:
-    amount = _fraction(m)
+    if type(m) not in (int, F):
+        raise PrimeDomainError("Support bound must be a typed exact int/Fraction")
+    amount = F(m)
     if not 0 < amount <= limit:
         raise PrimeDomainError("Declared measurable support budget outside proved domain")
     return amount
