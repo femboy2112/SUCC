@@ -71,3 +71,23 @@ The parent main's original finite_fourier_carrier, prime_clock_yoneda, operation
 Construct the **global Tate source Fourier object** by assembling restricted p-adic chart tensors with a separate real Schwartz factor, product additive character and diagonal rational lattice. Prove global Poisson with honest convergence, all conductors and multiplicative zeta integrals. THEN pass to the authentic complete signed Weil form and try a *source-derived positivity-aware growth mechanism* at the original 30-low Suzuki boundary of PRs #107/#109 or via an independently proved positive feature equality. Neither a finite test sweep nor a clever quotient presentation may substitute for the missing global sign.
 
 **RH PROVED: NO.**
+
+
+## ATOM V upgrade — the true finite-to-Arch adelic carrier is now constructible
+
+The companion [ATOM_ADELE_SOLENOID_SOURCE.md](ATOM_ADELE_SOLENOID_SOURCE.md) proves exact additive strong approximation
+\[
+\mathbb A_f=\mathbb Q+\widehat{\mathbb Z},\qquad
+\mathbb Q\cap\widehat{\mathbb Z}=\mathbb Z,\qquad
+\mathbb A_f/\widehat{\mathbb Z}\cong\mathbb Q/\mathbb Z,
+\]
+the last Q/Z with DISCRETE quotient topology. Its finite constructor takes any finitely many actual p-local fractional classes \(a_p/p^{r_p}\) and forms the rational diagonal source lift \(q=\sum_{p\in S}a_p/p^{r_p}\), verifying at ALL involved primes that no fractional source information was lost.
+
+Consequently the real place and profinite source assemble via the genuine topological isomorphism
+\[
+\boxed{(\mathbb R\times\widehat{\mathbb Z})/\mathbb Z
+\ \cong\ \mathbb A_\mathbb Q/\mathbb Q,}
+\]
+the compact adelic solenoid. This is an actual finite-to-global mathematical CARRIER connection, not an assertion that R is itself a profinite inverse limit. The injected rational diagonal Q is discrete, and the quotient compact; proof: additive CRT strong approximation, Q∩Zhat=Z, and [0,1]×Zhat compact fundamental domain.
+
+This strengthens ATOM's source reconstruction substantially. The **remaining complete Tate gap** is global Schwartz restricted tensor topology, Fourier/Poisson analytic convergence, multiplicative Haar/Hecke characters and conductors. The **separate RH gap** is full source-derived signed Weil quadratic positivity, not mere carrier existence. Both are UNVERIFIED. New program module and exact tests: observational_succ/tate_adele_quotient_descent.py and tests/test_tate_adele_quotient_descent.py.
