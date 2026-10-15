@@ -190,3 +190,37 @@ def finite_residual_approaching_zero(N):
             "infinite_high_inverse_vector_in_l2":False,
             "finite_scalar_zero_shift_response":True,
             "authentic_weil":False}
+
+
+def high_frequency_residual_no_uniform_budget(observation_horizon):
+    """EXACT compact Neumann-model anti-uniformity in the CORRECT H1 metric.
+
+    For each N choose a different SOURCE b^(N)=e_(N+1)/(N+1) in l2.
+    K=D=diag(1/j²), so ||b||_(H1)=||K^-1/2 b||=1,
+    R0=<b,D^-1 b>=1. The first N high response probes see b=0,
+    Galerkin Y_N=0 and missing derivative-Gram penalty remains ONE.
+
+    This family refutes an error rate uniform over every SOURCE b with
+    H1 norm <=1. It does NOT refute convergence for any fixed original b
+    nor supply an arithmetic-zeta counterexample.
+    """
+    if type(observation_horizon) is not int or not 1<=observation_horizon<=10**7:
+        raise ResidualSourceError("bounded exact high source horizon")
+    missed=observation_horizon+1
+    a=F(1,missed)
+    original_k=F(1,missed*missed)
+    if a*a/original_k!=1:raise ArithmeticError("H1 source normalization failed")
+    return {
+       "source":"CHANGING_SOURCE_NONUNIFORM_H1_TEST_FAMILY",
+       "finite_high_observer_horizon":observation_horizon,
+       "hidden_high_index":missed,
+       "raw_source_coefficient":a,
+       "positive_compact_Neumann_K_eigenvalue":original_k,
+       "all_first_N_high_probes_zero":True,
+       "source_H1_norm_squared":F(1),
+       "actual_zero_shift_short_response":F(1),
+       "missing_residual_H1_squared":F(1),
+       "uniform_H1_unit_ball_completion_rate_refuted":True,
+       "fixed_original_zeta_source_falsified":False,
+       "rh_proved":False
+    }
