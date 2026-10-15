@@ -188,6 +188,42 @@ Our SUCC/Tate/Suzuki imported branch proves \(D_{18}\succeq K/16\) at a=1/2 and 
 
 The architecture must classify the **specific proof obligation + toolkit**, not collapse all mathematics into one permanent field label.
 
+### SCF-RH-J2. REAL first-prime source example: a finite negative stage is NOT a global negative witness
+
+An actual arithmetic discriminator is now in the executable module rather than just the synthetic moving negative operator.
+
+Take the original completed zeta Suzuki signed kernel on \(a=1/2\), and the true low Legendre derivative basis mode \(u=L_1(x)=P_1(2x)\), with exactly \(\|u\|_{L^2(-1/2,1/2)}^2=1/3\).
+
+The pinned original source evaluator \`authentic_full_low_entry(1,1,a=1/2,J=2)\` retains the true prime p=2 half-density, TWO signed polar modes, contact, and the first two native \(4j+1\) real Gamma rungs. Its rigorous outward-rational interval satisfies
+
+\[
+\boxed{q_2=\langle u,G_2u\rangle<0.}\tag{SCF-RH-J2a}
+\]
+
+This is a NEGATIVE result for the **actually sourced truncated operator**, not a counterfeit example. However the omitted Gamma tail is a POSITIVE-definite-kernel correction on mean-zero derivative-coordinate functions, because the OU modes \(e^{-\alpha_j|x-y|}\) are PSD and the associated constant terms vanish on \(\int u=0\). On the original interval of length one, the source-proved \(\sum_{j\ge2}4/(4j+1)^2\le \tau_2=13/81\) gives the rigorous operator inequality
+
+\[
+\boxed{
+0\le \langle u,(G-G_2)u\rangle
+\le \frac{13}{81}\|u\|_2^2=\frac{13}{243}.
+}\tag{SCF-RH-J2b}
+\]
+
+Therefore the **FULL original-source** quadratic value is enclosed by
+
+\[
+\boxed{
+q_{\infty}\in
+\left[q_2^{\rm lo},\,q_2^{\rm hi}+\frac{13}{243}\right].
+}\tag{SCF-RH-J2c}
+\]
+
+The actual rigorously obtained q2 interval is strictly negative, but this **full-source enclosure contains zero**. No negative witness to RH follows. The imported PR #116 complete 18×18 J=2 low-block scan independently observed all 18 truncated low diagonal intervals strictly negative; their sign cannot be transferred to the full operator without the omitted source-positive correction and real high/low cross-resolvent.
+
+**Why this matters for the field taxonomy:** a finite model can be internally source-faithful while its property-of-interest changes after lawful completion. This is an **analytic/source-tail probe gap**, not source-map nonidentification or a proof of FuckedField global impossibility. The next instrument is stronger Gamma/J control and the genuine source-residual Schur \(A-L_U-\kappa^{-1}C_U\), NOT renaming the truncated negative mode a "phantom zero".
+
+Executable: \`original_weil_finite_gamma_sign_gap(J=2)\` with source blob assertion through the original analytic low adapter, source Gamma tail, exact Fraction sign tests and a frozen proof receipt. No nontrivial zeta zero is read.
+
 ## 8. Effective construction versus enormous finite resources (SCF-08)
 
 The existing all-radius source high theorem defines a finite \(J=2^M\) and Legendre cutoff r(a,L) for every finite rational input a,L, with an elementary closed-form proof. This is a total **computable mathematical construction**: even when M exceeds one million, the requested integers and individual finite stages exist in the ordinary Turing sense. It is not mathematically proven noncomputable just because actual hardware cannot enumerate them under an available budget.
