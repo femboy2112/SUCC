@@ -1,0 +1,38 @@
+{
+  "campaign": "OPERATION BLACK SUN IV",
+  "date": "2026-10-14 (night)",
+  "branch": "research/black-sun-iv-zeno-completion-2026-10-14",
+  "parent": "research/black-sun-iii-wild-limits-2026-10-14@1031b21 (PR #91)",
+  "intake": "Alexander swarm PRs #88-90, #92 read; sibling zeno-finite-global-proof-calculus branch noted (empty reservation at intake); this round is the concrete instruments lane",
+  "rh_proved": false,
+  "nontrivial_zero_inputs": false,
+  "claims": [
+    {
+      "id": "BS-IV-1",
+      "statement": "Zeno completion theorem (metric form) + the explicit Gamma-rung schedule: J(eps) = Theta(eps^{-1/2}) (J(1e-4)=53, J(1e-6)=531, J(1e-8)=5304), verified with ~5x safety factor on test functions",
+      "status": "PROVED LOCAL + TESTED MODEL (verification)",
+      "test": "test_black_sun_zeno.py::TestZenoSchedule"
+    },
+    {
+      "id": "BS-IV-2",
+      "statement": "The Gamma kernel is exactly a Zeno/geometric sum: k_G(t) = sum e^{-(2j+1/2)|t|} = e^{-|t|/2}/(1-e^{-2|t|}), ratio q = e^{-2|t|}: converges iff t != 0; the paradox point t=0 is the kernel singularity = the observer's own location = the round-3 wild point; the contact subtraction D_h = O(x) is the Zeno repair (the identity exact to 40 digits once repaired)",
+      "status": "PROVED LOCAL",
+      "test": "TestZenoIdentityAndParadoxPoint"
+    },
+    {
+      "id": "BS-IV-3",
+      "statement": "The arrow theorem: BD distances d_k are Zeno's remaining distance: monotone; UNCONDITIONAL FLOOR d_k^2 >= 1/(L_k(L_k+1)), L_k = lcm(2..k+1) (one-line proof at coordinate n = L_k); the floor is geometric (psi ~ k) while the measured advance is polynomial-slow (~k^{-1/2}): slower-than-Zeno; arrival (d_k -> 0) iff RH (classical)",
+      "status": "PROVED LOCAL (floor, monotonicity) + TESTED MODEL (rates) + EXTERNAL THEOREM (arrival iff RH)",
+      "test": "TestArrowTheorem"
+    },
+    {
+      "id": "BS-IV-4",
+      "statement": "The four-constant fight: zero-side budget 1.09e-3 (cos-bell, a=1/2; explicit constants; position-free modulo the classical initial-segment fact used as bound only) vs window margins 3e-4-scale vs contact trap 1.386 vs resolution 3e-6; classical zero-free regions give no schedule (de la Vallee Poussin budget = O(1)); the Zeno audit: exactly one sum in the Weil program is unscheduled (the elementary window margin) = the IH-2' gap",
+      "status": "PROVED LOCAL (bookkeeping) + TESTED MODEL (budget values)",
+      "test": "TestBudgetFight"
+    }
+  ],
+  "boundary": "Nothing proves RH. The floor theorem is unconditional, small, new-in-repo (novelty UNVERIFIED). The budget uses the classical no-zeros-below-14 fact strictly as a certification bound. The audit table's unscheduled verdicts restate the known state, not new obstructions.",
+  "tests_run": "python -m unittest tests.test_black_sun_zeno (9 tests); full battery rounds 1-4: 63 tests PASS",
+  "next_lemma": "a schedule for the elementary window margin: explicit g(a) with lambda_0(a) >= g(a) >= -B(a); the two-mode interval certificate is the concrete route"
+}

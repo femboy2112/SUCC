@@ -74,3 +74,21 @@ disanalogy.
 | BS-III-2 | Tame-tower faithfulness: finite windows see exactly n < e^{2A}; full tower determines the source; the transport is tame, the wildness is the ∀-quantifier | PROVED LOCAL | exact visibility/recovery tests |
 | BS-III-3 | Two-mode reduction at a = 1/2: diagonal 2×2; per-mode A/prime compensation (rescue +0.160 on the odd mode); complement margin λ₂ = +0.018 | TESTED MODEL | reduction structure tests |
 | ALEX-CORR | Alexander horned-sphere correspondence table + disanalogy | STUDY | — |
+
+## Round 4 (Black Sun IV, branch `research/black-sun-iv-zeno-completion-2026-10-14`)
+
+Dossier: `research/2026-10-14/BLACK_SUN_IV_ZENO.md`; receipt:
+`research/2026-10-14/BLACK_SUN_IV_RECEIPT.json`.
+
+| ID | Statement (actual scope) | Status | Validation |
+| --- | --- | --- | --- |
+| BS-IV-1 | Zeno completion theorem + explicit rung schedule J(ε) = Θ(ε^{−1/2}), verified with 5× safety | PROVED LOCAL + TESTED MODEL | schedule tests |
+| BS-IV-2 | Gamma kernel = geometric Zeno sum; paradox point t=0 = kernel singularity = observer's self-location = round-3 wild point; contact subtraction = the repair | PROVED LOCAL | 40-digit identity + divergence demo |
+| BS-IV-3 | Arrow theorem: d_k monotone; unconditional floor d_k² ≥ 1/(L_k(L_k+1)) (one-line proof); geometric floor vs polynomial-slow advance; arrival ⟺ RH | PROVED LOCAL + classical | floor proof + measured vs floor |
+| BS-IV-4 | Four-constant fight: budget 1.09e−3 vs margins 3e−4 vs contact 1.386 vs resolution 3e−6; classical regions give no schedule; the audit isolates ONE unscheduled sum (the window margin) = IH-2′ | PROVED LOCAL (bookkeeping) | budget tests |
+
+**The audit's answer to the operator's question:** reconstructing Zeno helps
+diagnostically — it separates the scheduled sums (harmless) from the two
+unscheduled ones (the arrow's rate; the window margin schedule), both
+RH-equivalent. A proof of RH by this route IS a Zeno schedule for the window
+margins.
