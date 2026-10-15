@@ -513,6 +513,42 @@ def tate_gaussian_fourier_stage(N:int, u, taylor_order:int=20,
     }
 
 
+def tate_completed_theta_polar_split(s) -> dict:
+    """EXACT rational polar calculation in the imported theta/Poisson completion.
+
+    With theta_plus(u)=sum_{n>=1} exp(-pi*n^2*u), classical Poisson gives
+      theta_plus(u)=u^-1/2 theta_plus(1/u)+(u^-1/2-1)/2.
+    On Re(s)>1:
+      Gamma_R(s)*zeta(s)
+       = 1/(s-1)-1/s
+         +int_1^infty theta_plus(u)*
+           [u^(s/2-1)+u^(-(s+1)/2)]du.
+    Rational s>1 checks the polar part by exact Fraction algebra.
+    Xi(s)=s(s-1)/2 times this completed zeta, analytically entire
+    and symmetric s<->1-s via the imported classical theta theorem.
+    This constructs no source-derived all-test Weil sign.
+    """
+    z=_rational(s)
+    if z<=1:
+        raise EtaTransportError("Original theta Mellin germ starts at Re(s)>1")
+    pole=F(1)/(z-1)-F(1)/z
+    if pole!=F(1)/(z*(z-1)):
+        raise ArithmeticError("Completed theta pole normalization failed")
+    return {
+        "s":z,
+        "declared_source":"theta_plus(u)=sum_n>=1 exp(-pi*n*n*u)",
+        "real_Tate_archimedean":"pi^(-s/2)*Gamma(s/2)",
+        "Poisson_transport":"theta_plus(u)=u^-1/2*theta_plus(1/u)+(u^-1/2-1)/2",
+        "completed_pole_part":pole,
+        "completed_pole_cancellation_after_xi":F(1,2),
+        "xi_definition":"xi(s)=s*(s-1)/2*Gamma_R(s)*zeta(s)",
+        "xi_functional_equation":"xi(s)=xi(1-s) (classical imported Poisson)",
+        "nontrivial_zero_lookup_used":False,
+        "all_test_Weil_sign_proved":False,
+        "RH_proved":False,
+    }
+
+
 def primary_source_interface_status() -> dict:
     """Typed map explicitly prevents illicit eta->RH promotion."""
     return {
