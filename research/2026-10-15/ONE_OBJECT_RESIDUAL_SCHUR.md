@@ -133,3 +133,64 @@ Classification: SAME SOURCE normalized convergence via Tate/Suzuki is a necessar
 - Receipt scripts/one_object_residual_probe.py and research/2026-10-15/ONE_OBJECT_RESIDUAL_RECEIPT.json.
 - Full source baselines: ancestor original atlas PR #104, imported original signed source SHA 0cc8510b71d178fc79e8d410a86d8b6014cf9178, consolidated main SHA 03db4420.
 - CI dedicated 3.10/3.13 plus original source provenance and existing atlas regression. Complete full-suite/Lean checks separately scoped.
+
+
+## 1a. Two authentic contact boundary channels — ORS-01b (PROVED LOCAL / classical Legendre–Neumann algebra)
+
+The source source difference cK_a is **NOT confined to the low 30-dimensional matrix block**. Decompose H=P_30 H⊕Q_30 H. In the same declared nonconstant Legendre basis \(L_i(x)=P_i(x/a)\), the actual inverse Neumann metric has exact matrix entries \(\langle L_i,K_aL_j\rangle=0\) unless \(|i-j|\in\{0,2\}\). This is the original integrated SUCC \`suzuki_moment_schur.inverse_neumann_entry\` classical identity. At a=1/2 the ONLY cross-cut pairs between low i≤30 and high j≥31 are:
+\[
+ \boxed{\langle L_{29},K_{1/2}L_{31}\rangle=-\frac1{906948},\qquad
+ \langle L_{30},K_{1/2}L_{32}\rangle=-\frac1{999180}.}\tag{ORS1b}
+\]
+These are **unnormalized** Legendre coefficients; normalization by \(2a/(2i+1)\) must be applied if using an orthonormal basis. Consequently if c≠0 then \(\operatorname{rank}(QKP)=2\) in this split, and
+\[
+ \boxed{A_c=A+cPKP,\quad B_c=B+cQKP,\quad D_c=D+cQKQ.}\tag{ORS1c}
+\]
+Even a *single* contact-normalization error leaks into **two** authentic low/high parity channels in Suzuki's moment Schur problem. It is incorrect to adjust A only, omit B_c, and claim the Connes- or Tate-shifted model represents the same Weil object.
+
+From the already-reported true high bound \(D\ge\kappa QKQ\), we have \(D_c\ge(\kappa+c)QKQ\). A negative shift \(c\le-\kappa\) destroys THIS derived positive-margin certificate (not necessarily the actual high positivity). An exact source gate verifies κ=369/10000, channels (-1/906948,-1/999180), original source blob, and refuses to call c≠0 the authentic Weil normalization. The quadratic contact shift still acts as \(A_a+cI\) in the *unbounded derivative-space Friedrichs realization*; both descriptions agree only when all low/high terms are transported, not if the cross boundary is dropped.
+
+This makes the principal-value normalization a tangible **Schur coupling source** rather than a decorative scalar.
+
+## 3a. Source-coupled Zeno schedule for arbitrarily expensive finite responses — ORS-03b (PROVED LOCAL; conditional on verified finite response norm)
+
+An actual finite high-sector approximation Y_N may have rapidly increasing \(L^2\) operator norm, especially when attempting to approach the unbounded zero-shift inverse. A fixed synchronized Gamma cutoff J=N is therefore NOT automatically adequate. The genuine derivative tail bound lets SUCC select a **source-compatible diagonal schedule** without assuming a bounded high inverse:
+\[
+ \delta_J=963\Big(\frac1{4J+1}+\frac4{(4J+1)^2}\Big)
+ < \frac{1926}{4J+1}\quad(J\ge1).
+\]
+Given an independently justified rational upper bound \(M\ge\|Y_N\|_{\rm op}\) and rational tolerance ε>0, choose
+\[
+\boxed{J=\max\bigl(1,\lfloor 1926(1+M)/(4\varepsilon)\rfloor+1\bigr).}\tag{ORS6}
+\]
+Then **the original source Γ tail**, including its derivative/Legendre projection effect, has
+\[
+ \boxed{\delta_J(1+\|Y_N\|)<\varepsilon.}\tag{ORS7}
+\]
+This is an exact rational finite Zeno resource law, proved by the monotone tail and the integer ceiling; no geometric, false Euler or zero-coordinate input. For each FINITE Y_N it gives a computable finite J, even if \(\|Y_N\|\to\infty\) along the sequence. It does **not** authenticate the input M, materialize the J×30 source Gamma integrals, or imply that the *uncorrected* residual \(\|(B-DY_N)'\|\) vanishes. Tests include enormous finite M and malicious non-exact coefficient inputs.
+
+This cleanly splits two uncertainties:
+1. SOURCE Γ truncation of the finite response can always be made negligible with sufficient finite source computation **once a bound M is known**.
+2. Whether there exist effective finite Y_N for which the **original arithmetic** residual derivative Gram shrinks is the genuinely missing source-specific approximation theorem.
+
+If the source independently provides \(\|(B-DY_N)'\|\to0\), choose ε_N→0 and J_N by ORS6; ORS2–ORS5 yield shrinking certified cross-response error. This conditional "diagonal completion" does not require a strong limit of the unbounded D^-1Y_N in \(L²\): the compact diagonal toy proves that such a strong inverse limit may not exist even when the scalar short converges.
+
+## 7. Refined last-gate dependency graph
+
+The exact source-checked chain at a=1/2 is now
+
+    Tate normalization / Fourier Haar / Euler ↔ completed W  [full cross-source equality PENDING]
+         ↓ source δ0 principal-value mismatch becomes cK exactly
+    Suzuki original G, K=(-Δ_N)^−1, mean-zero D=i∂
+         ↓ import AMW-06B D_high >= (369/10000) QKQ
+    Douglas range B∈Range(D_high^1/2)  [import PR104; zero-shift scalar finite]
+         ↓ this branch: finite Y residual ORS2 + true gamma budget ORS4/ORS6
+    Source-authenticated A, Y, exact finite-J T_(B−DY)'   [MISSING]
+         ↓ strict matrix inequality A−L_Y−κ^-1 Tupper >=0 at a=1/2
+    Source extension to every a with appropriate high positive complement [MISSING]
+         ↓ original signed Weil >=0 all H0¹ test functions
+    RH
+
+An independent Connes global realization must identify the SAME signed distribution **including its Fourier-normalized principal value**, not merely the same off-origin local clock traces. This is a separate missing representation arrow and does not supply sign by default.
+
+**No complete proof of RH is claimed.** The newly demonstrated local theorem has removed the requirement of a bounded D^-1 at shift zero from the certificate architecture and exposed concrete source matrices/residuals to compute, but it has not established their required sign or a universal all-radius family.
