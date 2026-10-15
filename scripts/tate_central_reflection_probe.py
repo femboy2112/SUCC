@@ -69,9 +69,9 @@ def receipt():
                 real_reflection_diodes(F(3,5))["ordinary_all_prime_product_extended_limit"],
         },
         "prime_power_counterterms":{
-            "true_source_tape":list((n,prime,str(weight))
+            "true_source_tape":[[n,prime,str(weight)]
                                     for n,prime,weight in tape[
-                                        "source_coefficients_n_parent_and_exact_1overk"]),
+                                        "source_coefficients_n_parent_and_exact_1overk"]],
             "fake_primitive_six":tape["primitive_composite_six_in_tape"],
             "high_power_k_three_plus_absolute":high[
                 "k_at_least_three_all_prime_source_absolutely_convergent"],
