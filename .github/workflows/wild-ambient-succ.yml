@@ -1,0 +1,40 @@
+name: Source-indexed wild ambient topology and nonabelian SUCC
+
+on:
+  push:
+    branches:
+      - 'research/alexander-wild-ambient-observer-*'
+  pull_request:
+    paths:
+      - 'observational_succ/wild_ambient_succ.py'
+      - 'tests/test_wild_ambient_succ.py'
+      - 'scripts/wild_ambient_succ_probe.py'
+      - 'research/2026-10-14/WILD_AMBIENT*'
+      - 'docs/CLAIM_SUPPLEMENT_WILD_AMBIENT_SUCC.md'
+      - '.github/workflows/wild-ambient-succ.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  finite_topology:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Compile exact model
+        run: python -m compileall -q observational_succ/wild_ambient_succ.py tests/test_wild_ambient_succ.py scripts/wild_ambient_succ_probe.py
+      - name: Exact mathematical and hostile source tests
+        run: python -m unittest discover -s tests -p 'test_wild_ambient_succ.py' -v
+      - name: Deterministic zero-reading-free source receipt
+        run: python scripts/wild_ambient_succ_probe.py --verify research/2026-10-14/WILD_AMBIENT_SUCC_RECEIPT.json
+      - name: Original source provenance unchanged
+        run: python scripts/verify_provenance.py
