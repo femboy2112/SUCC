@@ -8,10 +8,13 @@ on:
     paths:
       - 'observational_succ/classical_tate_*.py'
       - 'observational_succ/effective_field_gates.py'
+      - 'observational_succ/prime_completion_obstructions.py'
       - 'tests/test_classical_tate_*.py'
       - 'tests/test_effective_field_gates.py'
+      - 'tests/test_prime_completion_obstructions.py'
       - 'scripts/classical_tate_bridge_probe.py'
       - 'scripts/effective_field_probe.py'
+      - 'scripts/prime_completion_probe.py'
       - 'research/2026-10-15/*_RECEIPT.json'
       - '.github/workflows/classical-tate-effective-fields.yml'
   workflow_dispatch:
@@ -33,9 +36,11 @@ jobs:
           python -m unittest discover -s tests -p 'test_classical_tate_window.py' -v
           python -m unittest discover -s tests -p 'test_classical_tate_bridge_source.py' -v
           python -m unittest discover -s tests -p 'test_effective_field_gates.py' -v
+          python -m unittest discover -s tests -p 'test_prime_completion_obstructions.py' -v
       - name: Exact source receipts
         run: |
           python scripts/classical_tate_bridge_probe.py --verify
           python scripts/effective_field_probe.py --verify
+          python scripts/prime_completion_probe.py --verify
       - name: Historical source provenance
         run: python scripts/verify_provenance.py
