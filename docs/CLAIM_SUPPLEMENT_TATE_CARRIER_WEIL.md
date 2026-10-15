@@ -23,6 +23,9 @@
 | TF-09 | Negative logarithmic derivative of Tate unramified Euler factor is log(p) sum_(k>=1) p^(-ks); all-prime form yields true Λ tape for Re(s)>1 | CLASSICAL / EXACT FRACTION FINITE CONTROLS | local_euler_logjet and finite_source_logjets cross real Λ oracle; no unqualified convergence on the critical line |
 | CR-05 | Fourier covariance/Parseval is source-blind and cannot itself force the completed signed Weil form PSD | PROVED ELEMENTARY NO-GO FOR CHEAP INFERENCE | Fake 6 and mutated prime source distinguish signed Weil, not Fourier norm; genuine source-specific equality still OPEN |
 
+| CR-06 | Conditional Weil GNS-type minimal generated positive Hilbert realization exists iff true full Weil quadratic is PSD on all compact smooth tests, equivalently RH | CLASSICAL / PROVED PAPER (CONDITIONAL); RH UNVERIFIED | Construct D/ker Q then complete if Q>=0; necessity from Hilbert norms. Actual source-derived positivity not constructed. Finite signed model checks are countercontrols, not authentic Weil Gram matrices |
+| CR-07 | Lagarias original natural-number source has bounded exact rational interval inequalities; finite prefixes do not certify universal RH | CLASSICAL EQUIVALENCE / EXACT FRACTION FINITE PROBES | source_weil_hierarchy outward interval exp/log; true sigma/H and fake-sigma mutation controls; no proof at n->infinity |
+
 ## Stop conditions
 
 Fake composite n=6 is not a prime place, but multiplication by scalar 6 is allowed on an actual field Q_p. Likewise p is invertible in Q_p but not in Z/p^k. Do not declare source tampering lawful for the genuine ζ-function. Counterexample to finite prime observations with unspecified source tail is a *probe gap*, not proof of true RH undecidability.
@@ -30,6 +33,10 @@ Fake composite n=6 is not a prime place, but multiplication by scalar 6 is allow
 ## Reproduction
 
     python -m unittest discover -s tests -p 'test_tate_schwartz_functor.py' -v
+    python -m unittest discover -s tests -p 'test_adelic_schwartz_source.py' -v
+    python -m unittest discover -s tests -p 'test_tate_weil_window.py' -v
+    python -m unittest discover -s tests -p 'test_rh_arithmetic_carrier.py' -v
+    python -m unittest discover -s tests -p 'test_weil_gns_gate.py' -v
     python scripts/tate_schwartz_functor_probe.py
     python -m unittest discover -s tests -p 'test_*.py' -v
     python scripts/verify_provenance.py
