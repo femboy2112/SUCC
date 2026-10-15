@@ -1,0 +1,48 @@
+{
+  "program": "FINITE_SOURCE_WEIL_NEGATIVE_DEPTH",
+  "original_source": "AUTHENTIC_Q_ZETA_SUZUKI_2026_1_3",
+  "anchored_parent": "3270d4b9d992042c7c2bebbe784916f544ac565c",
+  "finite_stage": {
+    "a": "1/2",
+    "J": 4,
+    "N": 4
+  },
+  "true_prime_powers": [
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      7,
+      7
+    ],
+    [
+      8,
+      2
+    ]
+  ],
+  "gamma_rung_tail_J2": "13/81",
+  "gamma_rung_tail_J4": "21/289",
+  "zero_coordinates_used": false,
+  "all_test_weil_positivity_proved": false,
+  "finite_stage_source_replayed": true,
+  "finite_stage_hermitian": true,
+  "bounded_stage_spectral_enclosure_verified": true,
+  "analytic_hierarchy_error_decreases_in_demonstrated_stages": true,
+  "gamma_contact_interval_in_5_to_6": true,
+  "source_interval_width_below_1e_8": true,
+  "generic_late_horizon_alias": true,
+  "source_sign_certificate": "UNVERIFIED"
+}
