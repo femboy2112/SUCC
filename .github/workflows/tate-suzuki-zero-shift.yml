@@ -1,0 +1,74 @@
+name: Tate Suzuki source-identified unshifted range and residual certificates
+
+on:
+  push:
+    branches:
+      - 'research/tate-suzuki-zero-shift-*'
+    paths:
+      - 'observational_succ/tate_suzuki_shorting.py'
+      - 'tests/test_tate_suzuki_shorting.py'
+      - 'scripts/tate_suzuki_shorting_probe.py'
+      - 'research/2026-10-15/TATE_SUZUKI_ZERO_SHIFT*'
+      - 'docs/CLAIM_SUPPLEMENT_TATE_SUZUKI_SHORTING.md'
+      - 'docs/TATE_SUZUKI_NEXT_ROUNDS.md'
+      - '.github/workflows/tate-suzuki-zero-shift.yml'
+  pull_request:
+    paths:
+      - 'observational_succ/tate_suzuki_shorting.py'
+      - 'tests/test_tate_suzuki_shorting.py'
+      - 'scripts/tate_suzuki_shorting_probe.py'
+      - 'research/2026-10-15/TATE_SUZUKI_ZERO_SHIFT*'
+      - 'docs/CLAIM_SUPPLEMENT_TATE_SUZUKI_SHORTING.md'
+      - 'docs/TATE_SUZUKI_NEXT_ROUNDS.md'
+      - '.github/workflows/tate-suzuki-zero-shift.yml'
+  workflow_dispatch:
+
+jobs:
+  source-identified-zero-shift:
+    name: Tate/Suzuki genuine-source/Schur (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify mathematical-source provenance
+        run: python scripts/verify_provenance.py
+      - name: Exact finite source and zero-shift tests
+        run: PYTHONPATH=. python -m unittest tests.test_tate_suzuki_shorting -v
+      - name: HARD GATE actual signed source blob and low Legendre original Weil tests
+        run: |
+          python - <<'PY'
+          from fractions import Fraction
+          from observational_succ.tate_suzuki_shorting import verify_original_suzuki_source, PINNED_SOURCE_BLOB
+          from observational_succ.suzuki_moment_schur import CANONICAL_KAPPA
+          from observational_succ.suzuki_legendre_source import authentic_full_low_entry
+          s=verify_original_suzuki_source()
+          assert s['source_git_blob']==PINNED_SOURCE_BLOB
+          assert CANONICAL_KAPPA==Fraction(369,10000)
+          for J in (3,75):
+              a=authentic_full_low_entry(1,1,Fraction(1,2),J)
+              assert a.lo<a.hi
+              assert (a.hi<0 if J==3 else a.lo>0)
+          print('GENUINE_TATE_SUZUKI_FIRST_PRIME_SOURCE_IDENTIFIED')
+          PY
+      - name: Byte-replay original source-model receipt
+        run: PYTHONPATH=. python scripts/tate_suzuki_shorting_probe.py --verify research/2026-10-15/TATE_SUZUKI_ZERO_SHIFT_RECEIPT.json
+      - name: RH, trace and physical source honesty firewall
+        run: |
+          python - <<'PY'
+          import json
+          r=json.load(open('research/2026-10-15/TATE_SUZUKI_ZERO_SHIFT_RECEIPT.json'))
+          assert r['we_have_proved_rh'] is False
+          assert r['actual_Connes_trace_to_Suzuki_intertwiner'] is False
+          assert r['physical_source_attested'] is False
+          assert r['Lean_formalization_claimed'] is False
+          assert r['full_tate_poisson_reproved'] is False
+          assert r['zero_shift']['unshifted_true_30x30_short_sign_certified'] is False
+          assert r['zero_shift']['synthetic_algebra_is_real_zeta'] is False
+          assert r['source_first_prime']['derivative_L1_strict_upper']=='26'
+          PY
