@@ -10,7 +10,7 @@ from fractions import Fraction as F
 from observational_succ.tate_lattice_descent import (
     RationalSChart, TateLatticeError, character_naturality,
     finite_depth_alias, prime_atlas, s_integer, s_modulus_receipt, s_unit,
-    successor_history_kernel,
+    successor_history_kernel, prime_extension_obstruction,
 )
 
 
@@ -195,6 +195,30 @@ class FiniteObservabilityTests(unittest.TestCase):
         self.assertFalse(x.equivalent(z))
         self.assertEqual([x.character_phase(F(1, 2**j)) for j in range(10)], [F(0)]*10)
         self.assertEqual(x.character_phase(F(1, 2**21)), F(1, 2))
+
+
+class NonsplitPrimeExtensionTests(unittest.TestCase):
+    def test_p_extension_nonzero_kernel_and_dual_torsion(self):
+        for S, new_p in (((), 2), ((), 3), ((2,), 3), ((2, 3), 5), ((3, 5), 2)):
+            r = prime_extension_obstruction(S, new_p)
+            self.assertTrue(r['projects_to_identity'])
+            self.assertTrue(r['nonzero_rational_kernel_class'])
+            self.assertEqual(r['order_in_dual_quotient'], new_p)
+            self.assertFalse(r['global_extension_split'])
+            self.assertFalse(r['continuous_section_exists'])
+            self.assertFalse(r['full_topological_claim_proved_by_execution'])
+
+    def test_new_prime_must_be_genuine_and_not_repeated(self):
+        for S, p in (((2,), 2), ((2,), 6), ((), 1), ((), True), ((2, 3), 4)):
+            with self.subTest(S=S, p=p), self.assertRaises(TateLatticeError):
+                prime_extension_obstruction(S, p)
+
+    def test_kernel_nonzero_is_not_quasi_prime_multiplication(self):
+        r = prime_extension_obstruction((), 5)
+        self.assertEqual(r['T'], (5,))
+        self.assertEqual(r['dual_torsion_witness'], F(1, 5))
+        self.assertFalse(s_integer(F(1, 5), ()))
+        self.assertTrue(s_integer(F(1, 5), (5,)))
 
 
 if __name__ == '__main__':
