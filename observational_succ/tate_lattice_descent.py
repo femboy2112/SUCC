@@ -159,6 +159,21 @@ class RationalSChart:
                 other.primes, other.source_id, other.epoch):
             raise TateLatticeError("Different atlas/source/epoch is not a lawful comparison")
 
+    def scale(self, q: int | F, *, require_automorphism: bool = False) -> "RationalSChart":
+        """Affine FUCC multiplier on the local quotient when q belongs to Gamma_S.
+
+        For an S-integer that is not an S-unit the descended map is a covering,
+        not an automorphism. This is a model of loss of reversible access.
+        """
+        q = rational(q)
+        if q == 0 or not s_integer(q, self.primes):
+            raise TateLatticeError('Nonzero lattice-preserving multiplier required')
+        if require_automorphism and not s_unit(q, self.primes):
+            raise TateLatticeError('Inverse does not descend to this atlas')
+        return RationalSChart(self.primes, q * self.arch,
+                             tuple(q * x for x in self.loc),
+                             self.source_id, self.epoch)
+
     def character_phase(self, q: int | F) -> F:
         """Exact phase in Q/Z of chi_q(x)=exp(2pi*i(theta_S(q x))).
 
@@ -296,5 +311,54 @@ def prime_extension_obstruction(primes: tuple[int, ...], new_prime: int) -> dict
         'continuous_section_exists': False,
         'section_obstruction': 'connected X_T vs disconnected X_S x Z_p',
         'full_topological_claim_proved_by_execution': False,
+        'RH_proved': False,
+    }
+
+
+def reversibility_descent_obstruction(primes: tuple[int, ...], new_prime: int) -> dict:
+    """A T-unit p-automorphism projects to an S-map of degree p.
+
+    For T=S+{p}, multiplication by p on X_T is reversible, while on X_S
+    it is a p-fold covering. The inverse 1/p does not descend to X_S.
+    This is classical arithmetic, witnessed exactly on rational charts.
+    """
+    primes = prime_atlas(primes)
+    if not prime(new_prime) or new_prime in primes:
+        raise TateLatticeError('Need a new genuine prime')
+    T = tuple(sorted((*primes, new_prime)))
+    p = new_prime
+    if not s_unit(p, T) or s_unit(p, primes):
+        raise AssertionError('Prime multiplication atlas typing failed')
+    if s_modulus_receipt(p, primes)['quotient_cover_degree'] != p:
+        raise AssertionError('Missing-prime covering degree failed')
+    if s_modulus_receipt(p, T)['quotient_cover_degree'] != 1:
+        raise AssertionError('T-unit not reversible')
+    # Diagonal 1/p is not an S-integer, giving exact p-torsion in X_S.
+    x_s = RationalSChart(primes, F(1, p), tuple(F(1, p) for _ in primes))
+    z_s = RationalSChart(primes, F(0), tuple(F(0) for _ in primes))
+    if x_s.equivalent(z_s) or not x_s.scale(p).equivalent(z_s):
+        raise AssertionError('Expected nonzero p-kernel on smaller quotient')
+    # A lift with zero p-coordinate carries information invisible to X_S.
+    x_t = RationalSChart(T, F(1, p), tuple(
+        F(0) if q == p else F(1, p) for q in T))
+    if not x_t.project(primes).equivalent(x_s):
+        raise AssertionError('Large-stage lifted witness did not descend')
+    y_t = x_t.scale(p, require_automorphism=True)
+    z_t = RationalSChart(T, F(0), tuple(F(0) for _ in T))
+    if y_t.equivalent(z_t) or not y_t.project(primes).equivalent(z_s):
+        raise AssertionError('Missing p-information was not transferred to fiber')
+    if not y_t.scale(F(1, p), require_automorphism=True).equivalent(x_t):
+        raise AssertionError('Full-stage inverse failed')
+    return {
+        'S': primes,
+        'T': T,
+        'new_prime': p,
+        'cover_degree_at_S': p,
+        'automorphism_degree_at_T': 1,
+        'small_map_noninjective': True,
+        'large_map_reversible': True,
+        'inverse_exists_on_S': False,
+        'lost_observer_class_survives_in_T_kernel_fiber': True,
+        'valid_correlated_global_source_witness': True,
         'RH_proved': False,
     }
