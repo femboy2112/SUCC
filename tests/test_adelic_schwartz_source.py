@@ -3,7 +3,7 @@ import random
 import unittest
 from fractions import Fraction as F
 
-from observational_succ.adelic_schwartz_source import DiagonalGaussianTensor
+from observational_succ.adelic_schwartz_source import DiagonalGaussianTensor, GlobalSourceWord
 from observational_succ.tate_schwartz_functor import TateFunctorError
 from observational_succ.diagonal_adele_zeta import (
     additive_reciprocity, multiplicative_reciprocity, fractional_padic_part,
@@ -94,6 +94,47 @@ class GaussianTensorTests(unittest.TestCase):
                 if v:
                     mutated = F(p)**v
                     self.assertNotEqual(mutated, 1)
+
+    def test_global_event_word_tate_local_fourier_naturality(self):
+        obj=DiagonalGaussianTensor(F(2,3), F(-1,5), F(7,4), "source-Q", 9)
+        w=(GlobalSourceWord(obj,())
+           .append("SUCC", F(1,3))
+           .append("PRIME_JET_FUCC", 7)
+           .append("FUCC", F(1,7))
+           .append("SUCC", F(-1,3)))
+        self.assertEqual(w.affine(), (F(1), F(0)))
+        self.assertEqual(w.execute(), obj)
+        self.assertEqual(len(w.events), 4)
+        self.assertNotEqual(w.events, ())
+        for p in (2,3,5,7,11):
+            for xi in (F(0),F(1),F(1,p),F(p)):
+                r=w.verify_local_naturality(p,xi)
+                self.assertTrue(r["local_balls_equal"])
+                self.assertTrue(r["local_Fourier_naturality"])
+                self.assertEqual(len(r["faithful_source_receipts"]),4)
+                self.assertFalse(r["complete_Weil_positive"])
+
+    def test_global_event_generator_commutation_and_fake_prime(self):
+        x=DiagonalGaussianTensor(1,0,1,"g",1)
+        left=GlobalSourceWord(x,()).append("SUCC",1).append("PRIME_JET_FUCC",2)
+        right=GlobalSourceWord(x,()).append("PRIME_JET_FUCC",2).append("SUCC",1)
+        self.assertEqual(left.affine(),(F(2),F(2)))
+        self.assertEqual(right.affine(),(F(2),F(1)))
+        self.assertNotEqual(left.execute(),right.execute())
+        with self.assertRaises(TateFunctorError):
+            GlobalSourceWord(x,()).append("PRIME_JET_FUCC",6)
+        self.assertEqual(GlobalSourceWord(x,()).append("FUCC",6).affine(),(F(6),F(0)))
+
+    def test_global_event_source_forge_rejected(self):
+        from observational_succ.tate_schwartz_functor import SourceEvent
+        x=DiagonalGaussianTensor(1,0,1,"g",3)
+        for bad in (
+            SourceEvent("forged",3,0,"SUCC",1),
+            SourceEvent("g",4,0,"SUCC",1),
+            SourceEvent("g",3,8,"SUCC",1),
+        ):
+            with self.assertRaises(TateFunctorError):
+                GlobalSourceWord(x,(bad,))
 
     def test_bad_signs_clocks_and_source_rejected(self):
         for args in ((0, 0, 1), (1, 0, 0), (1, 0, -1),
