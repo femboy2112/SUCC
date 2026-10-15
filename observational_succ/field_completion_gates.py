@@ -150,12 +150,7 @@ def stagewise_candidate_failure(early: int, late: int,
     changed = before != after[:early]
     return {"early": early, "late": late, "early_legal": True,
             "late_legal": True, "canonical_stage_choices_nested": not changed,
-            "early_prefix_survives_at_late_stage":
-                antidiagonal_tree_member(before, tuple(
-                    HaltTrace(t.program, min(t.halt_at_step, early), t.value)
-                    for t in traces
-                    if t.program < early and t.halt_at_step <= late
-                )) if changed else True,
+            "early_prefix_survives_at_late_stage": not changed,
             "global_nonexistence_inferred": False,
             "global_noncomputability_proved_by_finite_trace": False}
 
@@ -214,8 +209,9 @@ def phantom_target_receipt(*, add_separating_probe: bool = False) -> dict:
         "hidden_target_identifiable": target.proved,
         "hidden_target_collision": target.counterexample,
         "public_target_identifiable": public.proved,
-        "model_only_recursion_can_separate_hidden_target": False
-            if not add_separating_probe else True,
+        "model_only_recursion_can_separate_hidden_target": False,
+        "new_source_probe_can_separate_hidden_target":
+            add_separating_probe,
         "new_source_probe_was_added": add_separating_probe,
         "physical_authentication": False,
         "rh_proved": False,
@@ -240,4 +236,44 @@ def delayed_discriminator(horizon: int) -> dict:
         "eventual_separation_exists": True,
         "uniform_depth_for_all_possible_sources_exists": False,
         "all_depth_indistinguishability_inferred": False,
+    }
+
+
+def factorial_solenoid_clock(source: FiniteGlobalSource,
+                             t: int, depth: int) -> dict:
+    """Finite exact circle-stage model for the classical Q-solenoid.
+
+    The stage n is the continuous circle S^1, NOT a finite discrete set;
+    bonding maps z -> z^(n+1), n>=1, use D_n=(n+1)!.
+    A chosen integer t yields a coherent rational-phase family
+      theta_n = t / D_n (mod 1).
+    This finite evaluator does not enumerate every point of the solenoid.
+    """
+    from math import factorial
+    from fractions import Fraction as F
+    if not isinstance(source, FiniteGlobalSource) or type(t) is not int:
+        raise FieldGateError("Finite source and exact integer winding needed")
+    _natural(depth, "factorial circle depth", 128)
+    D_n = factorial(depth + 1)
+    phase = F(t, D_n) % 1
+    if depth:
+        D_prior = factorial(depth)
+        previous = F(t, D_prior) % 1
+        if (phase * (depth + 1)) % 1 != previous:
+            raise AssertionError("Circle-power bonding square failed")
+    else:
+        previous = phase
+    return {
+        "source_id": source.source_id,
+        "depth": depth,
+        "winding_seed": t,
+        "D_n": D_n,
+        "phase_mod_1": phase,
+        "previous_phase_mod_1": previous,
+        "bonding_degree": depth + 1 if depth else 1,
+        "circle_bonding_coherent": True,
+        "stage_topology": "CONNECTED_CONTINUOUS_CIRCLE",
+        "all_global_solenoid_points_finitely_executable": False,
+        "full_topological_Q_solenoid_iso_proved_by_execution": False,
+        "RH_proved": False,
     }
