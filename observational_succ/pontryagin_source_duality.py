@@ -261,3 +261,45 @@ def wrong_dual_arrow_witness() -> dict:
             "mutant_phase":incorrect.phase(x), "correct_phase":lawful.phase(x),
             "bad_dual_arrow_refuted":True,
             "RH_proved":False}
+
+
+
+def no_uniform_character_conductor(modulus: int) -> dict:
+    """Witness that no fixed finite clock detects EVERY global character.
+
+    For any declared n, choose an authentic prime p>n. The nonzero
+    profinite projector e_p is invisible in Z/nZ (since p does not
+    divide n), but chi_(1/p)(e_p)=1/p mod 1 is nonzero. Thus:
+      forall n exists r,z: pi_n(z)=0 but chi_r(z)!=1.
+    Every particular chi_r still factors through its finite conductor.
+    This is a proved elementary family, NOT proof that an individual
+    continuous character is computationally inaccessible.
+    """
+    n=_modulus(modulus,maximum=50_000)
+    from .edge_carrier_reconstruction import prime
+    p=n+1
+    while not prime(p):
+        p+=1
+    x=ProfiniteProgram.projector(p)
+    zero=ProfiniteProgram.integer(0)
+    witness=RationalCircleCharacter(F(1,p))
+    coarse_equal=x.residue(n)==zero.residue(n)
+    fine_diff=witness.evaluate(x)!=witness.evaluate(zero)
+    if not coarse_equal or not fine_diff:
+        raise AssertionError("Source-defined hidden-prime character was not distinguishing")
+    return {
+        "observer_modulus":n,
+        "adversarial_new_prime":p,
+        "source_point_residue":x.residue(n),
+        "zero_residue":zero.residue(n),
+        "separating_frequency":F(1,p),
+        "character_phase_at_hidden_source":witness.evaluate(x),
+        "character_phase_at_zero":witness.evaluate(zero),
+        "same_declared_finite_observation":True,
+        "separated_by_genuinely_new_character":True,
+        "uniform_finite_clock_for_all_continuous_characters":False,
+        "every_single_continuous_character_has_finite_conductor":
+            "CLASSICAL_PONTRYAGIN_THEOREM",
+        "all_global_points_have_finite_codes":False,
+        "RH_proved":False,
+    }
