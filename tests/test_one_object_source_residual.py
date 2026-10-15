@@ -53,6 +53,28 @@ class AuthenticSourceResidualTests(unittest.TestCase):
                            high["conditional_residual_derivative_Gram_upper"][0][0])
         self.assertFalse(high["authentic_signed_low_A_minus_short_R0_positive_proved"])
 
+
+    def test_original_gamma_ladder_outpaces_any_finite_response_cost(self):
+        for M in (F(),F(1,10),F(1),F(10),F(1000)):
+            for eps in (F(20),F(1),F(1,10)):
+                x=s.adaptive_gamma_response_schedule(M,eps)
+                self.assertGreaterEqual(x["sufficient_finite_original_gamma_modes"],1)
+                self.assertLess(x["joint_response_gamma_error_upper"],eps)
+                self.assertTrue(x["strictly_below_target"])
+                self.assertFalse(x["actual_gamma_stage_built"])
+                self.assertFalse(x["original_high_response_norm_source_authenticated"])
+                self.assertFalse(x["true_residual_derivative_Gram_sign_evaluated"])
+
+    def test_gamma_zeno_schedule_refuses_unbounded_or_fake_cost(self):
+        for fn in (
+            lambda:s.adaptive_gamma_response_schedule(-1,1),
+            lambda:s.adaptive_gamma_response_schedule(0,0),
+            lambda:s.adaptive_gamma_response_schedule(0.5,F(1)),
+            lambda:s.adaptive_gamma_response_schedule(F(1),1e-100),
+            lambda:s.adaptive_gamma_response_schedule(F(100000000),F(1,1000000)),
+        ):
+            with self.assertRaises(s.ResidualSourceError):fn()
+
     def test_conditional_source_gram_type_and_math_validity(self):
         for fn in (
             lambda:s.conditional_original_residual_gram(((F(-1),),),
