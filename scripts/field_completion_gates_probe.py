@@ -7,7 +7,8 @@ import json
 from observational_succ.field_completion_gates import (
     DyadicGlobalCode, FiniteGlobalSource, HaltTrace, antidiagonal_stage,
     stagewise_candidate_failure, noncompact_escape,
-    phantom_target_receipt, delayed_discriminator, factorial_solenoid_clock
+    phantom_target_receipt, delayed_discriminator, factorial_solenoid_clock,
+    dyadic_zero_boundary
 )
 
 
@@ -26,6 +27,7 @@ def main() -> None:
     phantom = phantom_target_receipt()
     repaired = phantom_target_receipt(add_separating_probe=True)
     late = delayed_discriminator(1024)
+    zero_boundary = dyadic_zero_boundary(128)
     if not (dyadic["bonding_verified"]
             and solenoid["circle_bonding_coherent"]
             and finite_path["stage_member"]
@@ -33,7 +35,8 @@ def main() -> None:
             and empty_limit["inverse_limit_empty"]
             and not phantom["hidden_target_identifiable"]
             and repaired["hidden_target_identifiable"]
-            and late["eventual_separation_exists"]):
+            and late["eventual_separation_exists"]
+            and not zero_boundary["Boolean_zero_target_continuous_on_Z2"]):
         raise AssertionError("Field proof-gate positive/negative control failed")
     report = {
         "source_status": "DECLARED_EXACT_MODEL_NOT_EMPIRICALLY_AUTHENTICATED",
@@ -48,6 +51,7 @@ def main() -> None:
         "fucked_phantom": phantom,
         "new_source_probe_repair": repaired,
         "no_uniform_finite_deadline": late,
+        "profinite_discontinuous_exact_zero": zero_boundary,
         "finite_only_checks_establish_universal_global_results": False,
         "tate_schwartz_bruhat_functor_certified": False,
         "completed_weil_form_positive": False,
