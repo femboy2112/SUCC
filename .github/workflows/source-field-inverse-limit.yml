@@ -33,6 +33,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_source_field_inverse_limits.py' -v
       - name: Test recursive all-n source-positive gluing and singular phantom coupling
         run: python -m unittest discover -s tests -p 'test_source_field_gluing.py' -v
+      - name: Check local Tate finite Fourier
+        run: python -m unittest discover -s tests -p 'test_tate_finite_bruhat_observers.py' -v
       - name: Replay frozen source-indexed inverse-limit receipt
         run: python scripts/source_field_inverse_limit_probe.py --verify
       - name: Verify original Tate Suzuki high-sector source theorem
