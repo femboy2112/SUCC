@@ -56,62 +56,86 @@ The m=1 case is zero, and for \(b<2a\le2b\), m=2 and the sharp lower bound is \(
 
 **Prime birth obstruction:** as \(a\downarrow b/2\) from above, the unweighted point kernel tends uniformly to zero on the shrinking interval, while its Brownian-energy-relative negative operator norm remains 1. At \(2a=b\), the compressed translation is zero. This is a loss of uniform coercivity under naive observer-window comparison, not a physical supertask or a proof that the full Weil source is negative. The endpoint-localized maximizing vectors vary with a.
 
-## 3. DYS-03: positive real Gamma UV transducer on sparse support (PROVED ANALYTIC)
+## 3. DYS-03: positive real Gamma UV transducer, with a SHARP finite-mode refinement (PROVED ANALYTIC)
 
-Let E be any measurable subset of the line, with Lebesgue measure \(\mu\), and suppose f is supported in E. The elementary Schur estimate is
+Let E be any measurable subset of R with Lebesgue measure \(\mu\), and suppose f is supported in E. The elementary Schur estimate for the original \(\alpha/2\,e^{-\alpha|x-y|}\) source is
 
 \[
 0\le\langle f,R_\alpha f\rangle
-\le (\alpha\mu/2)\|f\|_2^2.
+\le \frac{\alpha\mu}{2}\|f\|_2^2.
 \tag{DYS-03a}
 \]
 
-For any integer J>=1 with \((4J-3)\mu\le2\), every original real Gamma mode j=0,...,J-1 obeys
-\[
-\beta_j\langle f,(I-R_{\alpha_j})f\rangle
-\ge \frac{2}{4j+1}\|f\|_2^2.
-\]
-
-The omitted Gamma modes remain PSD, so for J=2^k,
+**General logarithmic source gate.** For any integer J>=1 with \((4J-3)\mu\le2\), each original Gamma rung j<J has positive energy at least \(\frac{2}{4j+1}\|f\|^2\). If J=2^k, the integral estimate and log2>2/3 yield
 
 \[
-\boxed{
-Q_{\Gamma}(f)\ge \left(\sum_{j=0}^{J-1}\frac2{4j+1}\right)\|f\|_2^2
->\frac12\log(4J+1)\|f\|_2^2
->\frac{k+2}{3}\|f\|_2^2.
-}\tag{DYS-03b}
+Q_\Gamma(f)>
+\frac12\log(4J+1)\|f\|^2
+>\frac{k+2}{3}\|f\|^2.
+\tag{DYS-03b}
 \]
 
-Proof of the final fully rational bound: the summand is decreasing, so the sum dominates its integral; \(4J+1>2^{k+2}\) and the exact positive expansion \(\log2=2(1/3+1/(3\cdot3^3)+\cdots)>2/3\). No numerical eigenvalues, empirical smallness or imaginary zero positions are inputs.
+This is a genuinely nonzero small-support positivity budget at EVERY finite observation radius. It proves that some UV-controlled cone always exists, but is not optimally calibrated.
 
-**Geometric interpretation (not physical claim):** a negative prime shift can act on narrow translation-paired cells, but such cells must pay growing original Gamma energy in their own \(L^2\)-localized observation carrier. The UV positive budget grows at least like \((1/2)\log(1/\mu)\) as total support measure tends to zero. This applies to arbitrarily disconnected support, not only single bumps.
+**Sharper transducer — retain each rung's exact Schur loss.** From the SAME source kernel,
+
+\[
+\beta_j(1-\alpha_j\mu/2)
+=\frac4{4j+1}-\mu.
+\]
+
+Thus whenever \((4J-3)\mu\le4\), the first J source Gamma rungs are each nonnegative and
+
+\[
+\boxed{\quad Q_\Gamma(f)\ge
+\left(\sum_{j=0}^{J-1}\frac4{4j+1}-J\mu\right)\|f\|_2^2.\quad}\tag{DYS-03c}
+\]
+
+The omitted infinitely many original Gamma modes are PSD. This is a complete continuum **all-f restricted-support** theorem, not an approximation in finite-dimensional feature coefficient space. Importantly, the crucial first-prime certificate now needs only **16 actual real Gamma rungs**, not 65,536. Its exact rational sum can be audited directly.
+
+For J=16 and \(\mu=1/16\), the largest retained Schur ratio is \(61/64<1\); every kept Gamma term is positive. The exact sum is
+
+\[
+S_{16}:=\sum_{j=0}^{15}\frac4{4j+1}
+=\frac{168623511779891008}{24142663793423175},
+\qquad
+Q_\Gamma(f)\ge(S_{16}-1)\|f\|^2.
+\tag{DYS-03d}
+\]
+
+No directed floating-point Γ/zeta approximations, empirical eigenvalue fits or imaginary zero positions enter this bound. The full original Gamma tail is left in place as a nonnegative remainder.
+
+**Observation geometry:** A prime clock can pair narrowly localized cells across a translation, but its source companion pays original Gamma energy. The UV protection depends on *total source support measure*, allowing disconnected multi-cell configurations. It does NOT establish control over delocalized superpositions.
 
 ## 4. DYS-04: THE ORIGINAL FIRST-PRIME SPARSE-WEIL THEOREM (PROVED ANALYTIC, SOURCE-CONDITIONAL)
 
-**Theorem.** For every \(0<a\le1/2\) and every nonzero complex \(f\in C_c^\infty(-a,a)\) whose support has Lebesgue measure at most \(2^{-17}\),
+**Sharpened theorem.** For every \(0<a\le1/2\) and every nonzero complex \(f\in C_c^\infty(-a,a)\) whose support has Lebesgue measure at most **1/16**,
 
 \[
-\boxed{W_\zeta(f*\widetilde f)>\frac1{16}\|f\|_2^2.}\tag{DYS-04}
+\boxed{W_\zeta(f*\widetilde f)>\frac1{24}\|f\|_2^2.}\tag{DYS-04}
 \]
 
-In particular, this is a complete all-tests-in-the-restricted-cone positivity theorem **inside the original first prime-active observation window \(a=1/2\)**; it is NOT all-tests positivity at a=1/2. Smooth compact functions with very small support exist there in infinite-dimensional families.
+This is a universal exact restricted-support theorem inside the original **prime-active** window a=1/2. It is NOT the unconditional all-test Weil positivity that would imply RH. This revision makes the permissible support **8192 times larger** than the preliminary 2^-17 certificate, and drops the analytical Gamma cutoff from 65,536 to only 16 source modes.
 
-**Exact source proof:**
+**Exact original-source proof:**
 
-1. The pinned original Suzuki real source verifies \(C_\infty<43/8\). Genuine log 2 is between 2/3 and 7/10, and log 3>1, so in every window \(0<a\le1/2\) the only possible active prime-power is the authentic n=2 (active at a=1/2). The true weight \(w_2=\log2/\sqrt2<1/2\), since \(\log2<7/10\) and \(\sqrt2>7/5\). To prove the log upper using rationals, bound the tail of \(2\sum_{k\ge0}3^{-(2k+1)}/(2k+1)\) by 1/36 after the first term: \(\log2<25/36<7/10\).
-2. Since \(2a\le1<2\log2\), the true prime-shift chain has at most two vertices. DYS-02 bounds its entire negative energy from below by \(-\frac12\|f\|_2^2\). Missing/inactive primes contribute zero. The fake n=6 clock is not a source term.
-3. The original negative polar channel is at most \(2(\sinh a-a)\|f\|_2^2\). For \(a\le1/2\), the elementary series bound \(\sinh a-a\le a^3/[6(1-a^2)]\) gives \(2(\sinh a-a)\le1/18<1/16\). The positive polar channel is dropped only as a valid LOWER bound.
-4. Take J=2^16 and \(\mu=2^{-17}=1/(2J)\). Then \((4J-3)\mu<2\), and DYS-03b gives \(Q_\Gamma(f)>6\|f\|_2^2\). This is a finite-source lower inequality with a valid positive omitted infinite tail, not a 65,536-mode numerical sample.
-5. Hence the exact original completed form obeys
+1. The pinned original Suzuki zeta source certifies \(C_\infty<43/8\). Since \(2/3<\log2<7/10<1<\log3\), for \(0<a\le1/2\) the only genuine prime-power that can activate is n=2 (at a=1/2 it really activates). Original weight \(w_2=\log2/\sqrt2<1/2\); from the positive rational series for log2 one gets \(\log2<25/36<7/10\), while \(\sqrt2>7/5\).
+2. \(2a\le1<2\log2\), so the true prime-2 compressed clock has at most two vertices, and DYS-02 bounds its entire negative effect below by \(-\frac12\|f\|^2\). No composite-6 or wrong-conductor feature is admitted.
+3. The original negative polar channel costs at most \(2(\sinh a-a)\|f\|^2\). For \(a\le1/2\), the positive power series and \(\sinh a-a\le a^3/[6(1-a^2)]\) give \(2(\sinh a-a)<1/16\). The original positive polar term is simply omitted from a valid lower bound.
+4. With \(J=16\), \(\mu=1/16\), (DYS-03c) gives the **exact Fraction** positive real Gamma lower \(S_{16}-1\). The total source-negative budget is strictly below
+\[
+\frac{43}8+\frac12+\frac1{16}=\frac{95}{16}.
+\]
+Thus
 \[
 Q_\zeta(f)>
-\left[6-\frac{43}8-\frac12-\frac1{16}\right]\|f\|_2^2
-=\frac1{16}\|f\|_2^2.
+\left(S_{16}-1-\frac{95}{16}\right)\|f\|^2
+=\frac{18140507408283703}{386282620694770800}\|f\|^2
+>\frac1{24}\|f\|^2.
 \]
+5. This is exact rational arithmetic from the first 16 actual Gamma coefficients and SHA-pinned source contact. No hidden limits or samples substitute for the quantified smooth-function theorem. All omitted Gamma and the positive polar channel remain bona fide positive.
 
-This proof uses original true-prime and one real-place source data, one Gamma ladder, **both** polar channels, the actual negative contact, half-density \(\sqrt n^{-1}\), the genuine Weil test domain, and no zero lookup. The only numerical-looking constant in the argument, 43/8, is a preexisting source-backed outward-rational special-function interval certificate inherited from APOLLO. Source pin verification is executed through the original source adapter.
-
-**Domain warning:** Support measure \(\le2^{-17}\) is a substantial restriction. An arbitrary compactly supported test can occupy nearly all of (-1/2,1/2); the theorem cannot be extended by density because the sparse-support *class* is not norm-dense in all L² tests with a fixed support measure cap.
+**Critical limitations.** The theorem assumes a total support measure <=1/16, not diameter <=1/16: two far-separated small regions are allowed. Arbitrary compact smooth tests can occupy far more of (-1/2,1/2); a fixed bounded-support-measure cone is not dense in full L², so density cannot extend this result to all tests. A global RH conclusion would require one independent domination theorem covering **every** f and every finite a.
 
 ## 5. DYS-05: positive sparse-support cones exist for every finite interval (PROVED ABSTRACT from DYS-01)
 
@@ -129,7 +153,7 @@ Q_\zeta(f)>\left((k+2)/3-M_a\right)\|f\|_2^2>0.
 \tag{DYS-05}
 \]
 
-The proof is DYS-03 plus the genuine finite-clock and polar budgets. This establishes a **nonempty infinite-dimensional positive restricted cone for every finite a**, even far into prime-active windows, while preserving all source couplings. The bound may be extraordinarily small and says NOTHING about delocalized tests.
+The proof is DYS-03b plus the genuine finite-clock and polar budgets. This establishes a **nonempty infinite-dimensional positive restricted cone for every finite a**, even far into prime-active windows, while preserving all source couplings. The bound may be extraordinarily small and says NOTHING about delocalized tests.
 
 This is a derived local positivity theorem, NOT a globally positive Weil form. The contextually relevant prior literature includes Bombieri's finite-union-of-intervals localization questions and Connes–Consani localized lower-bounded forms, both discussed in Suzuki §1.1. Novel academic priority remains unverified.
 
@@ -152,7 +176,7 @@ The Gamma protection is **UV/localized**, and is insufficient for the *delocaliz
 ## 7. Reproduction / provenance / independence
 
 - \`observational_succ/tate_prime_clock_uv.py\`: exact rational clock geometry; original-source and contact pinned sparse theorem; never inserts nontrivial-zero data.
-- \`tests/test_tate_prime_clock_uv.py\`: path-boundaries, exact negative 4-anchor witness, original source labels at a=1/2, gamma support-Schur gate, contact/pole/prime budget and intentionally broken source cases.
+- \`tests/test_tate_prime_clock_uv.py\`: path-boundaries, exact negative 4-anchor witness, original source labels at a=1/2, exact 16-rung Gamma support-Schur gate, contact/pole/prime budget and intentionally broken source cases.
 - \`scripts/tate_prime_clock_uv_probe.py\`: printable deterministic receipt (no random fit).
 - \`.github/workflows/tate-prime-clock-uv.yml\`: required original source and regression checks on Python 3.10 and 3.13.
 - The crucial constant \(C_\infty<43/8\) and source SHA validation are inherited from APOLLO PR #110 K6, not rediscovered.
