@@ -267,38 +267,6 @@ Select the explicit rational rank-four counterterm \(\lambda=65/16=650/160\). We
 
 If \(Pu=0\) and u≠0, positivity is already strict in the source-true K metric by \(D\succeq K/50\), so no L² spectral gap for compact G has been fabricated.
 
-### Explicit source-observable reconstruction of the rank-four correction (WB4-C6)
-
-This is a source-facing, **finite observable** formula for the positive host that makes the unproved four-low sign unmistakably visible. For complex \(f\in H_0^1((-1/2,1/2))\), set \(m_k=\int_{-1/2}^{1/2}t^kf(t)\,dt\). The REAL, UNNORMALIZED genuine Legendre derivative test functions satisfy, by integration by parts and vanishing endpoint traces,
-
-\[
-\begin{aligned}
-\langle f',P_1(2t)\rangle&=-2m_0,&
-\langle f',P_2(2t)\rangle&=-12m_1,\\
-\langle f',P_3(2t)\rangle&=3m_0-60m_2,&
-\langle f',P_4(2t)\rangle&=30m_1-280m_3.
-\end{aligned}
-\]
-
-The source Legendre norms are \(\|P_j(2t)\|_{L^2(-1/2,1/2)}^2=1/(2j+1)\). Consequently the exact, positive, full-rank moment correction is
-
-\[
-\boxed{
-\begin{aligned}
-\|P_4 f'\|^2={}&3|-2m_0|^2+5|-12m_1|^2\\
- &+7|3m_0-60m_2|^2+9|30m_1-280m_3|^2.
-\end{aligned}}\tag{WB4-C6}
-\]
-
-This formula is valid for COMPLEX \(m_k\) and vanishes **if and only if** all four source moments vanish. The modified (not authentic) Weil form can thus be written
-\[
-\boxed{Q_\zeta(f)+\frac{65}{16}
-\bigl(3|-2m_0|^2+5|-12m_1|^2+
-7|3m_0-60m_2|^2+9|30m_1-280m_3|^2\bigr)\ge0.}
-\tag{WB4-C7}
-\]
-No new Euler place, spectral zero, independent Brownian source or hidden stochastic degree of freedom has been introduced. **Without this EXPLICIT correction, the global first-prime sign is not established.** The exact tests compare this formula against direct original Legendre polynomial integrations for a true nonzero compact-boundary polynomial \(f(t)=1/4-t^2\) and separately validate complex moments and each standard basis moment.
-
 **In original Weil test coordinates:** for \(u=f'\) and \(f\in C_c^\infty(I)\), this is
 
 \[
@@ -368,7 +336,46 @@ The executable \`exact_four_source_moment_polarization\` computes WB4-C7 over ex
 
 **Executable source:** \`observational_succ/tate_four_low_compensator.py\`; tests \`tests/test_tate_four_low_compensator.py\` check original rational constants and synthetic signed Schur countermodels in both directions; the actual all-u statement is the above analytical proof, not finite enumeration.
 
-## 7. Falsification, comparison to previous research, resource barrier
+## 7. A genuine low-sign transformation with Gamma completion: \(J=32\) versus \(J=64\) (SOURCE VERIFIED)
+
+A decisive original-source experiment now resolves the signed **LOW Galerkin A** sign, while explicitly leaving the ZERO-SHIFT low short \(A-R_0\) unproved.
+
+The unchanged original analytic interval evaluator \`authentic_direct_low_matrix(rank=4,J=J,a=1/2)\` retains all true contact, both signed poles, the genuine prime-2 half-density shift, and the first J true \(4j+1\) real Gamma modes. It returns a rigorous rational outward 4×4 interval matrix \(A_J\). By exact reflection, it separates into genuine 2×2 parity blocks on derivative Legendre indices \((1,3)\) and \((2,4)\).
+
+For each symmetric parity block \(\begin{pmatrix}a&b\\b&d\end{pmatrix}\) the source stage's strict interval determinant bounds are
+\[
+\boxed{
+a_{\rm lo}d_{\rm lo}-\max(|b_{\rm lo}|,|b_{\rm hi}|)^2
+\ \le\ ad-b^2\ \le\
+a_{\rm hi}d_{\rm hi}-\min_{x\in[b_{\rm lo},b_{\rm hi}]}|x|^2,
+}
+\]
+valid where the diagonal interval lower endpoints are positive, as independently verified in the actual source. Thus positive lower diagonals plus positive *lower determinant* establish definite positive block; negative *upper determinant* establishes definite indefinite block.
+
+The exact-source results, executed as rational **interval certificates**, are:
+
+| Stage | \((P_1,P_3)\) block | \((P_2,P_4)\) block | Consequence |
+|---|---|---|---|
+| \(J=32\) true Gamma modes | Strictly positive definite | **Strictly negative determinant** | Truncated \(A_{32}\) is indefinite |
+| \(J=64\) true Gamma modes | Strictly positive definite | Strictly positive definite | \(A_{64}\) is strictly positive definite |
+
+Every omitted original Gamma OU increment is PSD in the true Suzuki/Weil derivative representation. Therefore
+
+\[
+\boxed{A_\infty=A_{64}+(\text{authentic omitted Gamma PSD})\succ0.}\tag{WB4-LOW}
+\]
+
+**This is a proven positive low Galerkin block of the ACTUAL original completed Weil kernel**, not a positive synthetic substitute. More importantly, it explains the danger of identifying a negative *finite-stage* source with a negative *completed* source: even the sign of this 2×2 block changes under lawful positive Gamma completion.
+
+**CRUCIAL SIGN FIREWALL:** \(A_\infty\succ0\) does **NOT** imply the full first-prime Weil form is positive. The genuine infinite high response remains \(R_0\succeq0\), and its source-dependent cross-coupling may overwhelm \(A_\infty\). The actual open target is
+\[
+\boxed{S_0=A_\infty-R_0\succeq0.}
+\]
+No zero-resolvent cross term has been silently set to zero, and even the new \(G+(65/16)P_4\succeq0\) remains a separately marked **modified** operator.
+
+**Reproducible source verdict:** \`python scripts/tate_weighted_bessel_original_low4_scan.py --verify-stage-transition\`, plus separate \(J=32,64\) stage prints, verifies both strict original interval determinant signs and the source-gated positive-Gamma tail. The dedicated two-stage workflow, rank-four signed source theorem tests and immutable-provenance gates are mandatory.
+
+## 8. Falsification, comparison to previous research, resource barrier
 
 - **The premise is the original completed source**: one \(\Gamma_{\mathbb R}\), correct original contact and both polar signs, true n=2 \(\Lambda(n)/\sqrt n\) impulse with exact shift norm 1, and every omitted Gamma mode PSD.
 - **Spherical Bessel source:** Derive the exact plane-wave projection and power series analytically; finite rational integration includes every real frequency interval, every omitted power-series term and every angular mode tail; no numerically fitted quadrature or RH-zero hypothesis.
