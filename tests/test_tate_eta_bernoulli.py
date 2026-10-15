@@ -12,6 +12,7 @@ from observational_succ.tate_eta_bernoulli import (
     modular_discriminant_formal_passport, completed_two_critical_track_passport,
     mobius_exact, eta_mobius_heat_transducer,
     gaussian_linear_heat_positive_mixing_no_go,
+    tate_gaussian_fourier_stage,
 )
 
 
@@ -215,6 +216,40 @@ class MobiusEtaToTateRealHeat(unittest.TestCase):
         self.assertFalse(no["source_indexed_or_signed_transport_ruled_out"])
         self.assertFalse(no["RH_proved"])
 
+    def test_source_indexed_tate_Fourier_escape_from_laplace_no_go(self):
+        stage=tate_gaussian_fourier_stage(16,F(1,2),20)
+        self.assertTrue(stage["authentic_integer_phase"])
+        self.assertEqual(stage["source_label_squares"][:4],
+                         (F(1),F(4),F(9),F(16)))
+        self.assertEqual(stage["Fourier_normalization"],"1/sqrt(u)")
+        self.assertEqual(stage["real_Tate_Gamma_factor"],"pi^(-s/2)*Gamma(s/2)")
+        self.assertEqual(stage["real_Tate_zeta_Mellin_domain"],"Re(s)>1")
+        self.assertGreater(stage["Gaussian_theta_tail_strict_rational_upper"],0)
+        self.assertLess(stage["Gaussian_theta_tail_strict_rational_upper"],F(1,10000))
+        self.assertFalse(stage["nontrivial_zero_locations_used"])
+        self.assertFalse(stage["global_Weil_distribution_identified"])
+        self.assertFalse(stage["RH_proved"])
+
+    def test_wrong_fourier_phase_is_detected_in_exact_source_label_squares(self):
+        p=tate_gaussian_fourier_stage(3,F(2),8,phase_shift=F(1,2))
+        self.assertFalse(p["authentic_integer_phase"])
+        self.assertEqual(p["source_label_squares"],(F(9,4),F(25,4),F(49,4)))
+        self.assertFalse(p["RH_proved"])
+
+    def test_gaussian_certified_tail_refines_with_order_and_source_horizon(self):
+        a=tate_gaussian_fourier_stage(4,F(1,2),4)
+        b=tate_gaussian_fourier_stage(4,F(1,2),12)
+        c=tate_gaussian_fourier_stage(8,F(1,2),12)
+        self.assertGreater(a["Gaussian_theta_tail_strict_rational_upper"],
+                           b["Gaussian_theta_tail_strict_rational_upper"])
+        self.assertGreater(b["Gaussian_theta_tail_strict_rational_upper"],
+                           c["Gaussian_theta_tail_strict_rational_upper"])
+        for N,u,K in ((0,F(1),1),(129,F(1),1),(2,0,1),
+                      (2,F(-1),1),(2,True,1),(2,F(1),65),
+                      (2,F(1),True),(2,F(1),2.5)):
+            with self.assertRaises(EtaTransportError):
+                tate_gaussian_fourier_stage(N,u,K)
+
     def test_disallowed_mutation_inputs(self):
         for n in (0,1,5,True,513,1.0):
             with self.assertRaises(EtaTransportError):
@@ -243,6 +278,18 @@ class IndependentClassicalNumericHoldouts(unittest.TestCase):
             wronglhs=eta_heat(t,wrong)
             wrongrhs=mp.sqrt(2*mp.pi/t)*eta_heat(td,wrong)
             self.assertGreater(abs(wronglhs-wrongrhs),mp.mpf("1e-3"))
+
+    def test_declared_Tate_real_Gaussian_Fourier_character(self):
+        """Numeric holdout of imported Gaussian Fourier identity, not proof."""
+        import mpmath as mp
+        with mp.workdps(70):
+            u=mp.mpf(3)/4
+            for n in (1,2,3):
+                integral=mp.quad(lambda x: mp.exp(-mp.pi*x*x/u)*
+                                mp.cos(2*mp.pi*n*x),[-mp.inf,mp.inf])
+                got=integral/mp.sqrt(u)
+                expected=mp.exp(-mp.pi*u*n*n)
+                self.assertLess(abs(got-expected),mp.mpf("1e-60"))
 
     def test_independent_positive_output_of_signed_Mobius_heat_source(self):
         import mpmath as mp
