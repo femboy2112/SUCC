@@ -520,3 +520,42 @@ def carrier_interface_contract() -> tuple[dict,...]:
             "source_loss": "unverified if completion/source maps underspecified",
         },
     )
+
+
+
+def finite_prime_partition(n: int) -> dict:
+    """True CRT primitive idempotents partition unity at every finite stage.
+
+    At n=product p^v_p(n), e_p=1 mod p^v_p(n) and 0 at all other
+    prime powers; therefore sum_(p|n)e_p=1 and e_p e_q=0 for p!=q.
+    Passing to all n yields Zhat ~= product_p Zp as rings, CLASSICAL CRT.
+    """
+    if type(n) is not int or not 1 <= n <= 2_000_000:
+        raise EdgeCarrierError("A finite positive modulus <=2,000,000 required")
+    residue=n
+    primes=[]
+    d=2
+    while d*d<=residue:
+        if residue%d==0:
+            primes.append(d)
+            while residue%d==0:
+                residue//=d
+        d+=1
+    if residue>1:primes.append(residue)
+    e={p:ProfiniteProgram.projector(p).residue(n) for p in primes}
+    pairwise={ (p,q): (e[p]*e[q])%n
+               for i,p in enumerate(primes) for q in primes[i+1:] }
+    if (sum(e.values())%n != (1%n)
+        or any(x for x in pairwise.values())
+        or any(v*v%n!=v for v in e.values())):
+        raise AssertionError("CRT idempotent partition failed genuine source modulus")
+    return {
+        "modulus": n, "prime_places": tuple(primes),
+        "idempotent_residues": e, "pairwise_products": pairwise,
+        "sum_modulus": sum(e.values())%n,
+        "identity_modulus": 1%n,
+        "ring_partition_certified_at_finite_stage": True,
+        "all_places_topological_completion": "CLASSICAL_CRT_THEOREM",
+        "all_primes_computed_in_this_finite_stage": False,
+        "RH_proved": False,
+    }
