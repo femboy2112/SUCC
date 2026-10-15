@@ -1,0 +1,46 @@
+name: Zeno SUCC mathematical completion and place transport
+
+on:
+  push:
+    branches:
+      - 'research/zeno-limit-transport-calculus-*'
+  pull_request:
+    paths:
+      - 'observational_succ/zeno_limit_transport.py'
+      - 'observational_succ/adelic_zeno.py'
+      - 'observational_succ/zeno_weil_dyadic.py'
+      - 'tests/test_zeno_*.py'
+      - 'tests/test_adelic_zeno.py'
+      - 'scripts/zeno_limit_transport_probe.py'
+      - 'research/2026-10-14/ZENO_*'
+      - '.github/workflows/zeno-succ-completion.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source_typed_limit_transport:
+    name: exact real/adelic/Weil Zeno (${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[test]'
+      - name: Zeno paradoxes, explicit modulus, analytic adversarial proofs
+        run: python -m unittest discover -s tests -p 'test_zeno_*.py' -v
+      - name: Genuine-prime adelic Zeno and hidden-place controls
+        run: python -m unittest discover -s tests -p 'test_adelic_zeno.py' -v
+      - name: Original Weil source regression
+        run: python -m unittest discover -s tests -p 'test_source_weil_hierarchy.py' -v
+      - name: Frozen zero-independent global-shape receipt
+        run: python scripts/zeno_limit_transport_probe.py --verify research/2026-10-14/ZENO_SUCC_SOURCE_RECEIPT.json
+      - name: Verify original source provenance
+        run: python scripts/verify_provenance.py
