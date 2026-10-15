@@ -24,5 +24,7 @@ jobs:
         run: python scripts/tate_weighted_bessel_original_low4_scan.py --gamma-modes 32
       - name: Deeper true real Gamma J64 same 4x4 signed low source and tail
         run: python scripts/tate_weighted_bessel_original_low4_scan.py --gamma-modes 64
+      - name: Certify original J32 negative and J64 positive low Galerkin sign transition
+        run: python scripts/tate_weighted_bessel_original_low4_scan.py --verify-stage-transition
       - name: Verify original arithmetic source immutability
         run: python scripts/verify_provenance.py
