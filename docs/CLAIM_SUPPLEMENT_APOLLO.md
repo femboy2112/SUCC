@@ -23,3 +23,6 @@
 **Next exact verdict-changing test:** an independent feature generator F, rigorously normalized to the full original source, with either F_xy=W(x-y) on every Schwartz test or F_xxy=(W(x-y))_x plus one canonical scalar; AND independent Hilbert positivity. Equivalently, a contraction K4 for all intervals. Fixed a=1/2 cross-resolvent range claimed separately by PR #107 does not settle low Schur sign. Do not count source-signature matching or the uniform positive diagonal as RH evidence.
 
 RH PROVED: NO.
+
+
+| K5 genuine prime-source activation yields a nontrivial Krein-neutral pair on prior observation domain | PROVED LOCAL / exact source law | for 2a0<log p^k, w b E_b=2w B on all old points; SHA-enclosed true log2 produces w2/2 equal nonzero channels at r=1/4 when moving a=1/4 to 1/2 | independent Hilbert+/- nesting not supplied, coherent all-a contraction UNVERIFIED |
