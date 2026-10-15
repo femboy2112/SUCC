@@ -33,7 +33,7 @@ class GenuineOrdinalNormalFormTests(unittest.TestCase):
         for bad in (
             ((ZERO,1),(ordinal_nat(1),2)),
             ((ZERO,1),(ZERO,2)),
-            ((omega,1),(ordinal_nat(1),2)),
+            ((ordinal_nat(1),1),(omega,2)),
             ((ZERO,True),),
             ((ZERO,0),),
         ):
@@ -101,7 +101,7 @@ class SourceHereditaryGoodsteinTests(unittest.TestCase):
             with self.assertRaises(OrdinalDescentError):
                 goodstein_step(n,b)
         with self.assertRaises(OrdinalDescentError):
-            goodstein_step(4,2,max_bits=8) # replacement 27 fits; allowed but 9? check next
+            goodstein_step(16,2,max_bits=8) # genuine growth 3^27 far exceeds declared 8-bit budget
         with self.assertRaises(OrdinalDescentError):
             hereditary_base(1,1)
 
