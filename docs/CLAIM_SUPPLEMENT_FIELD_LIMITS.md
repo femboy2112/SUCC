@@ -27,3 +27,9 @@
 **Actual next RH proof debt:** source-authenticate the completed Weil distribution and construct a genuinely noncircular uniform all-finite-set Gram domination or all-interval high/low Schur sign theorem. The WOT compactness theorem only glues valid constraints—it cannot make invalid cross interactions positive.
 
 **RH PROVED: NO.**
+
+
+| FL-14 causal-history/object nonfaithfulness | CLASSICAL / PROVED SOURCE LOCAL | SUCC S^N shifts original integer source N times but same endpoint in Z/N; any fixed d detected by sufficiently fine modulus >|d|; on real–profinite solenoid diagonal k≠0 source lift event leaves quotient POINT invariant | Must carry source history/lift/cost labels to claim event faithfulness |
+| FL-15 periodization needs actual lattice lifts | PROVED FINITE exact source | Finite-support phi(0)=1,phi(N)=2,phi(2N)=3 gives true P_N phi(0)=6 but chosen representative phi(0)=1; exact Q arithmetic | Global Tate P_Phi([x])=sum_(q∈Q)Phi(x+q) requires Schwartz/convergence; not proved by finite control |
+
+**ATOM VI:** research/2026-10-15/ATOM_TATE_HISTORY_PERIODIZATION.md, observational_succ/field_history_lift.py, tests/test_field_history_lift.py. Parallel independent Tate lattice PR #113 was read, not merged. Full/source-path faithfulness is a stronger contract than the ATOM-I object-point bijection. RH OPEN.
