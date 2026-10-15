@@ -274,3 +274,14 @@ Across different widths a, the two separate source Hilbert presentations can cha
 **Claims:** operator compactness CLASSICAL/PROVED; finite rational contraction constructor PROVED LOCAL; unbounded finite-prefix obstruction PROVED; actual Suzuki all-finite contractivity and RH **UNVERIFIED**.
 
 Mathematical background on WOT unit-ball compactness: https://www.math.uni-leipzig.de/~wirth/notes_ot_25.pdf and https://www.math.ucdavis.edu/~hunter/book/ch8.pdf; no new functional-analysis priority claim.
+
+
+## 12. Object-bijection does NOT imply a source-faithful path functor or Tate periodization
+
+A source-indexed SUCC recursive model may target a STATE or an entire ACTION HISTORY. ATOM-I's canonical algebra-character duality establishes the former in its profinite category; it does not automatically establish full faithfulness on source paths.
+
+For integers with S(x)=x+1, the quotient observer modulo N identifies the empty path at x and the N-step path at x as the same endpoint, despite the latter's causal cost N. This is a finite TOOLKIT alias, not permanent: for a fixed N-step action, modulus N+1 separates endpoints. On the authentic real–profinite adelic quotient (R×Zhat)/Z, any diagonal integer k is by definition invisible at point-quotient level, though a source action labelled k can remain a distinct history. A proper event observer requires a source-identified lift or path cocycle, with actual authorization for the extra data.
+
+Tate's Poisson/periodization source makes this distinction analytic: \(P\Phi([x])=\sum_{q\in Q}\Phi(x+q)\) counts the actual diagonal rational LIFTS, not one representative. An exact finite Z/N countermodel with phi(0)=1, phi(N)=2 and phi(2N)=3 has true periodization 6 on class 0, whereas representative-only evaluation is 1. A quotient-object isomorphism without source history/lift and convergence data is therefore insufficient for Tate global test-function reconstruction, and even less sufficient for RH sign.
+
+Full theorem and exact source code: [ATOM_TATE_HISTORY_PERIODIZATION.md](ATOM_TATE_HISTORY_PERIODIZATION.md), field_history_lift.py and tests/test_field_history_lift.py. This necessary categorical/periodization gate is PROVED as a mathematical SOURCE DISTINCTION, while the true adelic infinite Poisson theorem and all-test Weil sign remain UNVERIFIED.
