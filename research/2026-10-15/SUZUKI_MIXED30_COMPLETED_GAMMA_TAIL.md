@@ -126,3 +126,39 @@ The next real RH-hard gate remains the ORIGINAL low Schur complement and source 
 - **Source mutation controls:** false Euler primitive n=6 refused by pinned original prime tape; corrupted SHA cannot pass the inherited _pinned_source; wrong parity/malformed source modes rejected.
 
 **Verdict:** genuine source finite→infinite real Gamma **mixed-derivative** transport now has an analytic O(J^-2) rational bound. Original global low 30 signed Schur and RH: **UNVERIFIED / OPEN**.
+
+
+## 6. A sign-separated ORIGINAL infinite-Gamma mixed first moment from two source derivations
+
+There is an unusually useful strictly signed **mixed derivative** quantity that can be certified without guessing a Weil eigenvalue.
+
+The first mean-zero Legendre mode is u1(x)=2x on [-1/2,1/2], with u1'(x)=2. Let F1(x)=(G∞u1)(x) for the **same** original signed, completed source. Because g∞ is even and u1 is odd, F1 is odd. Therefore, using the exact source interval length one,
+
+\[
+M^\infty_{1,1}
+=\int_{-1/2}^{1/2}2 F_1'(x)\,dx
+=2[F_1(1/2)-F_1(-1/2)]
+=4F_1(1/2).
+\]
+
+The existing **independently implemented** original source Neumann-flux adapter computes
+\[
+\mu_\infty=2\int_0^1(1-2t)g_\infty(t)\,dt
+=2F_1(1/2),
+\]
+so the two derivations must agree on the exact identity
+
+\[
+\boxed{M^\infty_{1,1}=2\mu_\infty.}
+\tag{GM30-5}
+\]
+
+There are two error mechanisms that fail differently:
+- our finite-J true original signed mixed derivative source \(\bigl[M^J_{1,1}\bigr]\), expanded by the separately derived O(J^-2) derivative-channel Gamma tail;
+- the prior original signed source flux \(\mu_\infty\), derived from weighted pole/contact/prime2/real-Gamma integrals and its independently bounded **positive** omitted Gamma tail.
+
+Both must enclose the SAME original M∞11; their intersection is used as a **hostile original-source consistency check**. An empty intersection raises ArithmeticError, never an invented value. A strict upper bound below zero from BOTH sources, after accounting for every authentic Gamma tail, would certify the TRUE signed mixed derivative M∞11<0. The new function original_completed_first_mixed_negative_source(J=64) performs this exact source-verified intersection, requiring strict negativity from each input, with explicit source provenance and no zero-reading.
+
+**Essential scope:** a negative mixed derivative \(\langle u'_1,(G u_1)'\rangle\) is NOT the original Weil quadratic \(\langle u_1,G u_1\rangle\), not a negative eigenvalue, and not the low Schur complement. It cannot refute RH. It is a valuable exact original signed source response for the eventual 30-low/source-high coupling.
+
+**No full 30-mode pure derivative Gram or RH sign is established.**
