@@ -117,3 +117,68 @@ def original_first_legendre_H1_energy(J,gridN=64):
       "full_original_Suzuki_infinite_Gamma_included":False,
       "RH_proved":False,
     }
+
+
+def genuine_projected_first_legendre_H1_energy(J,gridN=64,project_rank=1):
+    """TRUE low-mode source r=(I-P_m)G_J L1, SOURCE derivative Gram (1×1).
+
+    P_m is the genuine L²-orthogonal projector onto first m nonconstant
+    Legendre modes. Source G_J L1,L_j coefficients come from
+    suzuki_legendre_source.authentic_full_low_entry(j,1); no fitted
+    2D covariance or fake spectral zero coefficients are used.
+
+    This exact prototype supports m=1,3 only in the bounded execution.
+    The necessary m=30 authentic derivative Gram, high response DY,
+    and full-source L_Y/low S0 sign are STILL UNCOMPUTED.
+    """
+    if type(project_rank) is not int or project_rank not in (1,3):
+        raise DerivativeSourceError("small authentic rank-1/3 source prototype only")
+    if type(gridN) is not int or not 2<=gridN<=512:
+        raise DerivativeSourceError("bounded true source derivative grid")
+    if type(J) is not int or not 1<=J<=12:
+        raise DerivativeSourceError("finite genuine original Γ rungs 1..12")
+    from . import suzuki_legendre_source as low
+    a=Q(1,2)
+    h=2*a/gridN
+    L=source.lipschitz_safe(a,J)
+    project_data=[]
+    for j in range(1,project_rank+1):
+        inner=low.authentic_full_low_entry(j,1,a,J)
+        coefficient=inner/Q(2*a,2*j+1)
+        P=low.legendre_polynomial(j,a)
+        first=low.poly_derivative(P)
+        second=low.poly_derivative(first)
+        sup_second=sum((abs(c)*a**k for k,c in enumerate(second)),Q())
+        max_coefficient=max(abs(coefficient.lo),abs(coefficient.hi))
+        project_data.append((j,coefficient,first,sup_second,max_coefficient))
+    lip=4*L+sum((max_b*sup_second
+                   for j,b,p,sup_second,max_b in project_data),Q())
+    spread=lip*h/2
+    lower=Q();upper=Q()
+    for cell in range(gridN):
+        x=-a+Q(2*cell+1,2)*h
+        v=genuine_first_legendre_derivative_at(x,J)
+        for j,beta,deriv,sup2,absbeta in project_data:
+            v-=beta*low.poly_eval(deriv,x)
+        v=source.I(v.lo-spread,v.hi+spread)
+        part_lo,part_hi=_square_nonnegative_bounds(v)
+        lower+=h*part_lo;upper+=h*part_hi
+    if not Q()<=lower<=upper:
+        raise ArithmeticError("source low-projected derivative Gram lost bounds")
+    return {
+       "source":"ORIGINAL_SIGNED_SUZUKI_TRUE_PRIME_GAMMA_POLE_CONTACT",
+       "a":a,"gamma_scheme":"INFINITE_CONTACT_FINITE_GAMMA",
+       "gamma_modes":J,"first_legendre_source_mode":1,
+       "original_L2_legendre_projection_modes":tuple(range(1,project_rank+1)),
+       "grid_cells":gridN,
+       "projected_derivative_Lipschitz_upper":lip,
+       "projected_derivative_squared_lower":lower,
+       "projected_derivative_squared_upper":upper,
+       "source_full_original_prime_power_tape":source.authenticated_prime_wavefront(a),
+       "all_projection_coefficients_source_authenticated":True,
+       "original_30_mode_Q_projection_done":False,
+       "finite_high_response_DY_computed":False,
+       "genuine_full_original_gamma_tail_included":False,
+       "original_short_S0_sign_proved":False,
+       "rh_proved":False,
+    }
