@@ -1,0 +1,59 @@
+name: Zeno Proof Debt source-indexed finite-to-global certificates
+
+on:
+  push:
+    branches:
+      - 'research/zeno-proof-debt-*'
+    paths:
+      - 'observational_succ/zeno_proof_debt.py'
+      - 'tests/test_zeno_proof_debt.py'
+      - 'tests/test_zeno_epsilon_probes.py'
+      - 'scripts/zeno_proof_debt_probe.py'
+      - 'research/2026-10-14/ZENO_PROOF_DEBT*'
+      - 'docs/CLAIM_SUPPLEMENT_ZENO_PROOF_DEBT.md'
+      - '.github/workflows/zeno-proof-debt.yml'
+  pull_request:
+    paths:
+      - 'observational_succ/zeno_proof_debt.py'
+      - 'tests/test_zeno_proof_debt.py'
+      - 'tests/test_zeno_epsilon_probes.py'
+      - 'scripts/zeno_proof_debt_probe.py'
+      - 'research/2026-10-14/ZENO_PROOF_DEBT*'
+      - 'docs/CLAIM_SUPPLEMENT_ZENO_PROOF_DEBT.md'
+      - '.github/workflows/zeno-proof-debt.yml'
+  workflow_dispatch:
+
+jobs:
+  source-debt-calculus:
+    name: Exact original-source and signed-form debt (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Source archive remains untouched
+        run: python scripts/verify_provenance.py
+      - name: Inherited and new exact Zeno math
+        run: PYTHONPATH=. python -m unittest tests.test_zeno_certificate tests.test_zeno_proof_debt tests.test_zeno_epsilon_probes -v
+      - name: Replay complete mathematical source certificate receipt
+        run: PYTHONPATH=. python scripts/zeno_proof_debt_probe.py --verify research/2026-10-14/ZENO_PROOF_DEBT_RECEIPT.json
+      - name: Guard RH and physical-source firewalls
+        run: |
+          python - <<'PY'
+          import json
+          with open('research/2026-10-14/ZENO_PROOF_DEBT_RECEIPT.json') as f:
+              r=json.load(f)
+          assert r['RH_PROVED'] is False
+          assert r['source_first_all_test_weil_sign_proved'] is False
+          assert r['original_nontrivial_zero_coordinates_used'] is False
+          assert r['Lean_formalization_claimed'] is False
+          assert r['Gamma_authentic_tail']['J1_exact_lower_exceeds_false_constant'] is True
+          assert r['Schur']['cross_and_complement_are_source_assumptions'] is True
+          assert r['amortized']['universal_source_law_is_an_external_premise'] is True
+          assert r['finite_epsilon_cantor']['result']['physical_joint_executability_verified'] is False
+          PY
