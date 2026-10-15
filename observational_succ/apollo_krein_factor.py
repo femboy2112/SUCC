@@ -315,3 +315,65 @@ def authentic_prime_two_activation_on_old_window() -> dict:
             "signed_zero":True,
             "Krein_neutral_source_birth":True,
             "all_a_Hilbert_contraction_proved":False,"RH_proved":False}
+
+
+
+def authentic_small_window_brownian_coercivity(a: int | F) -> dict:
+    """ANALYTIC SOURCE-TRUE whole-Gram positivity on every 0<a<=1/24.
+
+    For all finite complex coefficients (c_i) and x_i in [-a,a], let
+    v(t)=Σ c_i 1_[0,x_i](t), with signed orientation at negative x_i.
+    Then Σ conj(c_i)c_j B(x_i,x_j)=||v||_L²².
+
+    Original source has no active prime hinge: 2a<=1/12<log2.
+    For Gamma OU mode alpha_j=(4j+1)/2,c_j=4/(4j+1)^2:
+      gamma_j energy = beta_j <v,(I-R_alpha_j)v>,
+      beta_j=4/(4j+1),
+      R_alpha kernel=(alpha/2) exp(-alpha|t-s|).
+    Since v supported [-a,a], Schur bound ||R||<=alpha*a, so
+      gamma_j>= (4/(4j+1)-2a)||v||².
+    First EIGHT original Gamma modes sum to S_8-16a.
+    Remaining Gamma modes, and +8sinh(x/2)sinh(y/2), are PSD.
+
+    Exact original contact C_inf<11/2 via SHA-pinned rational intervals.
+    Negative pole: h(x)=cosh(x/2)-1 is an integral of
+    h'(t)=sinh(t/2)/2 against v, so
+      8|Σ c_i h(x_i)|² <= 4a sinh²(a/2)||v||²
+      <= a³ exp(a)||v||² <= a³/(1-a)||v||².
+
+    Therefore K_g >= [S_8-16a-11/2-a³/(1-a)] B,
+    and the rational bracket is >1/10 for ALL real 0<a<=1/24.
+    This certifies source-true K_g PSD on ALL finite point configurations
+    within [-1/24,1/24], not a positive ℓ² counting-measure gap.
+    It proves a known type of LOCAL Weil positivity, not RH or all-a.
+    """
+    aa=_fraction(a)
+    if not 0<aa<=F(1,24):
+        raise OneObjectError("Source-true uniform coercivity requires 0<a<=1/24")
+    from .apollo_derivative_jets import _source
+    source=_source()
+    if not source.contact_iv().hi<F(11,2):
+        raise ArithmeticError("Pinned real source contact C_inf<11/2 not certified")
+    if not source.log2_iv().lo>F(1,2):
+        raise ArithmeticError("Pinned prime-2 wavefront lower bound failed")
+    gamma_S8=sum((F(4,4*j+1) for j in range(8)),F())
+    margin=gamma_S8-16*aa-F(11,2)-aa**3/(1-aa)
+    # The minimum across the full allowed interval is at a=1/24.
+    global_floor=gamma_S8-16*F(1,24)-F(11,2)-F(1,24)**3/(1-F(1,24))
+    if global_floor<=F(1,10) or margin<global_floor:
+        raise ArithmeticError("Exact Gamma/Brownian/source contact coercivity failed")
+    return {
+        "a":aa,"gamma_modes_used":8,
+        "real_source":"SHA_PINNED_ORIGINAL_ZETA",
+        "original_contact_upper":F(11,2),
+        "original_log2_lower":F(1,2),
+        "gamma_brownian_lower":gamma_S8-16*aa,
+        "negative_pole_brownian_upper":aa**3/(1-aa),
+        "strict_K_dominates_B_lower":margin,
+        "uniform_K_dominates_B_for_all_real_a_le_1over24":F(1,10),
+        "holds_for_all_finite_point_sets_and_complex_coefficients":True,
+        "gamma_tail_omitted_positive":True,
+        "first_prime_absent":True,
+        "all_RH_test_intervals_certified":False,
+        "RH_proved":False,
+    }
