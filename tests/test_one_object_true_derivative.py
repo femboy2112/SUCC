@@ -78,5 +78,42 @@ class OriginalDerivativeSourceTests(unittest.TestCase):
         ):
             with self.assertRaises(d.DerivativeSourceError):fn()
 
+
+
+class SourceProjectedDerivativeGramTests(unittest.TestCase):
+    def test_actual_suzuki_legendre_low_projection_derivative_gram(self):
+        for rank,J,N in ((1,1,16),(1,2,32),(3,1,16),(3,2,32)):
+            out=d.genuine_projected_first_legendre_H1_energy(J,N,rank)
+            self.assertEqual(out["source"],"ORIGINAL_SIGNED_SUZUKI_TRUE_PRIME_GAMMA_POLE_CONTACT")
+            self.assertEqual(out["original_L2_legendre_projection_modes"],
+                             tuple(range(1,rank+1)))
+            self.assertEqual(out["source_full_original_prime_power_tape"],((2,2),))
+            self.assertTrue(out["all_projection_coefficients_source_authenticated"])
+            self.assertLessEqual(out["projected_derivative_squared_lower"],
+                                 out["projected_derivative_squared_upper"])
+            self.assertFalse(out["original_30_mode_Q_projection_done"])
+            self.assertFalse(out["finite_high_response_DY_computed"])
+            self.assertFalse(out["original_short_S0_sign_proved"])
+            self.assertFalse(out["rh_proved"])
+
+    def test_projection_interval_refines_without_unwarranted_sign_promotion(self):
+        prev=d.genuine_projected_first_legendre_H1_energy(1,16,1)
+        curr=d.genuine_projected_first_legendre_H1_energy(1,32,1)
+        wprev=prev["projected_derivative_squared_upper"]-prev["projected_derivative_squared_lower"]
+        wcurr=curr["projected_derivative_squared_upper"]-curr["projected_derivative_squared_lower"]
+        self.assertGreater(wprev,wcurr)
+        self.assertGreater(prev["projected_derivative_Lipschitz_upper"],0)
+
+    def test_source_projection_rank_and_spectral_scope_gates(self):
+        for fn in (
+            lambda:d.genuine_projected_first_legendre_H1_energy(1,8,0),
+            lambda:d.genuine_projected_first_legendre_H1_energy(1,8,2),
+            lambda:d.genuine_projected_first_legendre_H1_energy(1,8,30),
+            lambda:d.genuine_projected_first_legendre_H1_energy(1,8,3.0),
+            lambda:d.genuine_projected_first_legendre_H1_energy(1,1,1),
+        ):
+            with self.assertRaises(d.DerivativeSourceError):fn()
+
+
 if __name__=="__main__":
     unittest.main()
