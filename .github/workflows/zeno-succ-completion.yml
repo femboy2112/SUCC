@@ -9,6 +9,7 @@ on:
       - 'observational_succ/zeno_limit_transport.py'
       - 'observational_succ/adelic_zeno.py'
       - 'observational_succ/zeno_weil_dyadic.py'
+      - 'observational_succ/zeno_analytic_shapes.py'
       - 'tests/test_zeno_*.py'
       - 'tests/test_adelic_zeno.py'
       - 'scripts/zeno_limit_transport_probe.py'
