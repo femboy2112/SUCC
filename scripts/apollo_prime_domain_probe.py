@@ -14,6 +14,7 @@ from observational_succ.apollo_prime_domain import (
     full_five_source_a_one_sparse_domain,
     any_five_prime_activation_pair, isolated_prime_sixteen_packet,
     source_support_union_gate, prime_packet_low_moment_rank,
+    true_prime2_coupled_thirty_moment_witness,
     dyadic_gamma_4096_lower, exact_packet_overlap_bump, synthetic_sparse_budget,
 )
 
@@ -38,7 +39,15 @@ def main():
     assert union["all_cross_terms_covered_by_source_budget"]
     assert low["Legendre_1_to_rank_projection_of_u_i_fprime_surjective"]
     assert not low["original_Legendre_low_Schur_sign_proved"]
+    high=true_prime2_coupled_thirty_moment_witness(34)
+    assert high["vanishing_moments_0_to_29"]
+    assert high["original_low_Legendre_1_to_30_zero"]
+    assert high["genuine_prime2_translation_overlap"]>0
     receipt={
+      "PR107_original_30_high_true_p2_interaction_nonzero":True,
+      "PR107_exact_30_high_moment_null":True,
+      "PR107_exact_high_packet_one_norm":str(high["one_packet_L2_squared"]),
+      "PR107_exact_high_packet_prime_overlap_ratio":"1/2",
       "all_five_isolated_prime_packets_16_Gamma_modes":True,
       "all_five_isolated_prime_packet_measure_upper":"1/64",
       "all_five_isolated_prime_packet_strict_margins":[str(p["strict_rational_margin"]) for p in packets16],
