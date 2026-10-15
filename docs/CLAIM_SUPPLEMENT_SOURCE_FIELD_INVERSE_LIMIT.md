@@ -1,0 +1,24 @@
+# Claim supplement — SimpleField / IdealHard / FuckedField inverse-limit interface
+
+**Date:** October 15, 2026. Research child of Tate/Suzuki PR #116 at \`e7d1f1cee0357ae78db07545fc8e2571f3aedd47\`. No main, release or separate RH-repository mutations. Full proof: \`research/2026-10-15/SOURCE_FIELD_INVERSE_LIMIT_CALCULUS.md\`. A finite executable probe is not automatically an infinitary proof or source authentication. **RH PROVED: NO.**
+
+| ID | Source-typed proposition | Status | Scope / next discriminator |
+|---|---|---|---|
+| SCF-01 | Inverse-limit existence E, finitely computable witness C, observational identity I, and desired property P are logically distinct gates | PROVED ELEMENTARY / typed definitions | E alone does not yield selector, identity or Weil sign |
+| SCF-02 | Fixed integer seed \(\to\mathbb Z_2\) with uniform exact n-coordinate decoder and global modular coherence | PROVED ELEMENTARY (SimpleField) | No physical infinite output was emitted |
+| SCF-03 | Decidable infinite binary diagonal tree T is inhabited by WKL but has **no computable infinite branch** using fixed acceptable universal numbering | CLASSICAL / PROVED PAPER via diagonalization; IdealHard | Finite toy halting records do NOT prove universality or no-computable-path |
+| SCF-04 | Nonempty finite discrete inverse system has nonempty global inverse limit | CLASSICAL COMPACTNESS / KÖNIG | Requires genuinely finite compact stages and compatible total bonds; finite-place stage may still have infinite test-space |
+| SCF-04N | Strictly decreasing natural tuple tree has a finite node at every depth but no infinite path | PROVED ELEMENTARY no-go (FuckedField/IMPOSSIBLE) | Infinite branching; cannot refute the compact finite-stage theorem |
+| SCF-05 | Actual 000... vs phantom 0101... are distinct lawful histories but all even-coordinate observations agree | PROVED EXACT (FuckedField/OBSERVER-NONIDENTIFIABLE) | One lawful odd-coordinate probe immediately separates; no permanent ontology claim |
+| SCF-06 | \(\forall n\exists y_n\ne x:\ O_n(y_n)=O_n(x)\) does **not** imply \(\exists y\ne x\forall n:\ O_n(y)=O_n(x)\) | PROVED EXACT moving-impostor countermodel | Full-prefix observers separate any fixed pair; no uniform finite global identification cutoff |
+| SCF-07 | For each probe horizon k, diagonal \(A_-=I-2|e_M\rangle\langle e_M|\) can hide at M≥k yet is exposed at finite M+1 | PROVED ELEMENTARY; predecessor SUCC IH-01 credited | Moving M is not a fixed indefinitely hidden negative original Weil witness |
+| SCF-07D | Bounded selfadjoint A with all dense finite compressions PSD must itself be PSD | CLASSICAL strong convergence proof | For unbounded Weil-like forms need explicit shared core and source/operator topology |
+| SCF-08 | All-radius SUCC high-sector finite-rank theorem may demand enormous but mathematical finite computable cutoff; resource locked not automatically noncomputable | PROVED TYPE/DISTINCTION against source PR #116 | Selection-IdealHard is much stronger than bounded-hardware IdealHard |
+| SCF-RH | Genuine Tate/Suzuki high K sign at a=1/2 and some high sector at each finite a; actual ALL-radius low Schur signs remain unknown | INHERITED SOURCE theorem + UNVERIFIED proof gate | Cannot classify RH as Simple, IdealHard or Fucked without a separate suitable proof/probe |
+| RH | Completed Weil PSD for every smooth compact original test at every radius | **UNVERIFIED/OPEN** | Do not manufacture an arithmetic positivity proof from inverse-limit compactness |
+
+**Negative controls:** synthetic Kleene trace explicitly NOT a universal Turing oracle; observer even/odd source-map mutation; infinite-branching finite-level negative control; two different quantifier orders; remote negative source eventually finite-visible; forged epistemic source/epoch mismatch; strictly original zeta gamma, conductor, contact, prime2/powers (no fake 6) from parent PR #116. All mathematical universals are justified in the full dossier; finite tests cannot establish them by enumeration.
+
+**External mathematical lineage:** Stillwell, *Reverse Mathematics* (2019) chapter 4; König/WKL and computable trees; inverse-limit compactness of finite discrete systems, Diestel et al. \`Profinite separation systems\`; standard infinite Hilbert dense-core convergence. Exact source-dependent combination new-to-project; academic originality unverified. No Lean formalization in this branch.
+
+**Next moonshot:** test source faithfulness and unshifted low Schur sign *separately*; construct a lawfully transported all-radius low-sign invariant or source-derived 18×18+tail certificate. Until then **RH OPEN**.
