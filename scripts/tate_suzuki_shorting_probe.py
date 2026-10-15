@@ -60,6 +60,12 @@ def receipt():
         "margin":str(hilbert['certified_margin']),
         "real_weil_30x30_low_matrix_certified":False,
       },
+      "source_derivative_point":{
+        "original_source_integrator_implemented":True,
+        "original_gamma_poles_contact_prime2_all_present":True,
+        "rational_source_sign_tests_must_pass_in_full_checkout":True,
+        "squared_high_residual_Gram_source_certified":False,
+      },
       "we_have_proved_rh":False,
       "actual_Connes_trace_to_Suzuki_intertwiner":False,
       "physical_source_attested":False,

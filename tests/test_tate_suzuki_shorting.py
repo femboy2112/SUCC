@@ -302,6 +302,28 @@ class IntegratedOriginalSource(unittest.TestCase):
                          '0cc8510b71d178fc79e8d410a86d8b6014cf9178')
         self.assertFalse(info['original_weil_sign_proved'])
 
+    def test_real_original_derivative_source_points(self):
+        # Mandatory full-checkout proof-interfaced diagnostics. Genuine
+        # J=3 pole/Gamma/contact/prime2, not a fitted matrix or ζ-zero scan.
+        try:
+            from observational_succ import suzuki_legendre_source
+        except ImportError:
+            self.skipTest('authentic source not installed in isolated overlay; mandatory CI')
+        from observational_succ.tate_suzuki_shorting import authentic_suzuki_legendre_derivative_point
+        p1=authentic_suzuki_legendre_derivative_point(1,F(1,4),3)
+        self.assertGreater(p1.lo,-F(1,50))
+        self.assertLess(p1.hi,-F(1,100))
+        p2=authentic_suzuki_legendre_derivative_point(2,F(1,4),3)
+        self.assertGreater(p2.lo,-F(1,25))
+        self.assertLess(p2.hi,-F(1,40))
+        origin=authentic_suzuki_legendre_derivative_point(2,F(0),3)
+        self.assertLessEqual(origin.lo,0)
+        self.assertGreaterEqual(origin.hi,0)
+        self.assertLess(origin.hi-origin.lo,F(1,10**20))
+        for bad in (F(1,2),-F(1,2),F(3,4)):
+            with self.assertRaises(ShortingContractError):
+                authentic_suzuki_legendre_derivative_point(1,bad,3)
+
     def test_real_original_signed_low_legendre_passport(self):
         # Same true source must carry both signs as the Gamma rung count changes.
         # The high-moment all-test sign is NOT inferred from these one-mode values.

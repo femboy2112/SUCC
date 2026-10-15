@@ -44,7 +44,8 @@ jobs:
         run: |
           python - <<'PY'
           from fractions import Fraction
-          from observational_succ.tate_suzuki_shorting import verify_original_suzuki_source, PINNED_SOURCE_BLOB
+          from observational_succ.tate_suzuki_shorting import (verify_original_suzuki_source, PINNED_SOURCE_BLOB,
+              authentic_suzuki_legendre_derivative_point)
           from observational_succ.suzuki_moment_schur import CANONICAL_KAPPA
           from observational_succ.suzuki_legendre_source import authentic_full_low_entry
           s=verify_original_suzuki_source()
@@ -54,7 +55,12 @@ jobs:
               a=authentic_full_low_entry(1,1,Fraction(1,2),J)
               assert a.lo<a.hi
               assert (a.hi<0 if J==3 else a.lo>0)
-          print('GENUINE_TATE_SUZUKI_FIRST_PRIME_SOURCE_IDENTIFIED')
+          # New original-source DERIVATIVE integration, not merely a toy Schur test.
+          v=authentic_suzuki_legendre_derivative_point(1,Fraction(1,4),3)
+          assert -Fraction(1,50)<v.lo<=v.hi<-Fraction(1,100)
+          w=authentic_suzuki_legendre_derivative_point(2,Fraction(1,4),3)
+          assert -Fraction(1,25)<w.lo<=w.hi<-Fraction(1,40)
+          print('GENUINE_TATE_SUZUKI_FIRST_PRIME_SOURCE_AND_DERIVATIVE_IDENTIFIED')
           PY
       - name: Byte-replay original source-model receipt
         run: PYTHONPATH=. python scripts/tate_suzuki_shorting_probe.py --verify research/2026-10-15/TATE_SUZUKI_ZERO_SHIFT_RECEIPT.json

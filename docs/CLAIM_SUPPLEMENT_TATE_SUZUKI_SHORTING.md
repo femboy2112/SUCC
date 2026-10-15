@@ -20,3 +20,9 @@ Parent `main@03db44203147a7b28d445bb9f970fa71360e78c4`; PR branch `research/tate
 ### Required before promoting to a global claim
 
 Provide full original arithmetic source, correct cutoff and conductor, certified interval `M/E` matrix with valid derivative norms, enough precision to decide signs (or return UNRESOLVED), the source `D>=κK` theorem with its exact radius and compact Sobolev domain, and extension to all radii for RH. Pure Gamma PSD, finite sample positivity, borrowed Hilbert-space gaps and a passing Python suite do NOT discharge this requirement.
+
+### Second source interval checkpoint (same branch; no new source assumptions)
+
+| ID | Precise claim | Status | Constraint |
+|---|---|---|---|
+| TS-13 | On genuine first-prime `G_J`, the derivative at rational x of a low Legendre convolution is finite analytic polynomial/exponential formula with the correct pole/contact/prime hinge/Gamma rungs; strict rational point-sign brackets are testable for `k=1,2,J=3,x=1/4`. | PROVED LOCAL algebra, integrated exact source interval test | Mandatory genuine SUCC original source Git blob check, rational outward intervals, excludes kink uncertainty; no full derivative norm or zero-shift Schur positivity claimed. |

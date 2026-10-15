@@ -429,3 +429,91 @@ def hilbert_boundary_matrix_certificate(A,level=4):
             "uniform_direction_error":budget,"certified_margin":mi-budget,
             "strictly_positive_definite":mi>budget,
             "interpretation":"PD if strict; otherwise UNRESOLVED"}
+
+
+def authentic_suzuki_legendre_derivative_point(k, x, J, *, a=F(1,2)):
+    """REAL ORIGINAL-SOURCE INTERVAL: (G_J P_k(x/a))'(x) at rational x.
+
+    This is a *pointwise* signed source derivative, NOT an integral of the
+    squared high residual, NOT a 30x30 shorted matrix and NOT an RH test.
+
+    Exact polynomial--exponential convolution on [-a,a], with the ORIGINAL
+    n=2 prime hinge, C_G contact, both signed poles and the first J real
+    Gamma rungs. All transcendental quantities enclosed by source-pinned
+    rational intervals, not a fitted mpmath oracle. The only permitted
+    radius is a=1/2, 1<=k<=4, 1<=J<=20, x rational with |x|<a and
+    no crossing of an uncertain prime activation boundary.
+    """
+    from . import suzuki_legendre_source as L
+    source = L._pinned_source()
+    verify_original_suzuki_source()
+    if type(a) is not F or a!=F(1,2) or type(k) is not int or not 1<=k<=4:
+        raise ShortingContractError("authenticated low Legendre k=1..4 at a=1/2 only")
+    if type(J) is not int or not 1<=J<=20:
+        raise ShortingContractError("source derivative J=1..20 budget")
+    x=rat(x)
+    if not -a<x<a:
+        raise ShortingContractError("strict compact window interior required")
+    poly=L.legendre_polynomial(k,a)
+    primitive=L.poly_primitive_zero_at_left(poly,a)
+    if L.poly_eval(primitive,a):
+        raise ShortingContractError("original meanzero/source domain violation")
+    # All arithmetic below retains exact rational ranges until the FINAL
+    # source quantization to 32 digits, rather than rounding each canceled
+    # polynomial exponential term separately.
+    digits=90
+    def constant(v):
+        v=rat(v); return v,v
+    def exp_minus(t):
+        t=rat(t)
+        if t>=0: return L.tight_exp_neg(t,digits)
+        lo,hi=L.tight_exp_neg(-t,digits)
+        return F(1,hi),F(1,lo)
+    def sub(left,right):
+        return L.interval_add(left,L.interval_scale(right,-1))
+    def mul(left,right):
+        return L.interval_mul(left,right)
+    # Original completed two-pole signed source, not a replacement Γ.
+    fp=L.exp_antiderivative_poly(poly,F(1,2),+1)
+    fm=L.exp_antiderivative_poly(poly,F(1,2),-1)
+    integral_plus=sub(mul(exp_minus(-a/2),constant(L.poly_eval(fp,a))),
+                      mul(exp_minus(a/2),constant(L.poly_eval(fp,-a))))
+    integral_minus=sub(mul(exp_minus(a/2),constant(L.poly_eval(fm,a))),
+                       mul(exp_minus(-a/2),constant(L.poly_eval(fm,-a))))
+    pole=L.interval_add(L.interval_scale(mul(exp_minus(-x/2),integral_minus),-2),
+                        L.interval_scale(mul(exp_minus(x/2),integral_plus),2))
+    # Exact original contact derivative: meanzero polynomial primitive.
+    cg=source.contact_iv()
+    contact=mul((cg.lo,cg.hi),constant(L.poly_eval(primitive,x)))
+    # Genuine p=2 only: derivative hinge of (|x-y|-log2)_+.
+    b=L.tight_log2(digits)
+    srcb=source.log2_iv()
+    if not (b[0]<=srcb.hi and srcb.lo<=b[1]):
+        raise ShortingContractError("prime/arch log2 phase source disagreement")
+    prim=constant(0)
+    lower=(x-b[1],x-b[0])
+    upper=(x+b[0],x+b[1])
+    if lower[0]>=-a:
+        prim=L.interval_add(prim,L.interval_poly_eval(primitive,lower))
+    elif lower[1]>-a:
+        raise ShortingContractError("uncertain left prime activation; refine x")
+    if upper[1]<=a:
+        prim=L.interval_add(prim,L.interval_poly_eval(primitive,upper))
+    elif upper[0]<a:
+        raise ShortingContractError("uncertain right prime activation; refine x")
+    srcinv=source.sqrt_inverse(2)
+    weight=mul(b,(srcinv.lo,srcinv.hi))
+    prime=mul(weight,prim)
+    # Real original Gamma ladder, differentiated from the authentic g_J.
+    gamma=constant(0)
+    for j in range(J):
+        d=4*j+1;alpha=F(d,2)
+        plus=L.exp_antiderivative_poly(poly,alpha,+1)
+        minus=L.exp_antiderivative_poly(poly,alpha,-1)
+        both=constant(L.poly_eval(plus,x)+L.poly_eval(minus,x))
+        edge1=mul(exp_minus(alpha*(x+a)),constant(L.poly_eval(plus,-a)))
+        edge2=mul(exp_minus(alpha*(a-x)),constant(L.poly_eval(minus,a)))
+        single=L.interval_scale(sub(sub(both,edge1),edge2),F(-2,d))
+        gamma=L.interval_add(gamma,single)
+    total=L.interval_add(L.interval_add(pole,contact),L.interval_add(prime,gamma))
+    return L.source_interval_round(source,total)

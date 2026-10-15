@@ -254,3 +254,41 @@ Thus `min_boundary_grid x^TAx > Lh(2+h)` rigorously implies `A≻0` by homogenei
 - TS-07 derivative-tail `O(J^-1)` bound: **PROVED LOCAL**, conservative.
 - TS-08 Hilbert normalized-boundary finite coverage: **CLASSICAL/PROVED LOCAL**, only 2D finite rational checker.
 - **RH PROVED: NO.** First-window sign, zero-shift 30×30 authentic shorted matrix, all interval radii, and independent Connes trace identification remain OPEN.
+
+## 10. SECOND ROUND: actual original-source Legendre derivative integrator (TS-13)
+
+The first checkpoint gave the true-source *abstract* differentiability and range gate; the second checkpoint begins constructing the missing **source derivative Gram** rather than only describing it. The new function `authentic_suzuki_legendre_derivative_point(k,x,J)` returns an outward `Fraction` interval enclosing the derivative of the **genuine original** Gamma-`J` screw operator on `P_k(2y)` at rational `x∈(-1/2,1/2)`, with initial fixed budget `k≤4,J≤20`. It invokes the immutable SHA-checked source, imported exact polynomial/exponential Legendre primitives, and source-validated intervals for `log2`, inverse sqrt2, the real Gamma scalar, and all completed pole channels. A scalar *pointwise* derivative is not the squared source Gram `E` and has no sign authority over the full Weil form.
+
+For an exact rational polynomial `p(y)=P_k(2y)`, let `F_p(x)=∫_{-a}^x p(y)dy` (with `F_p(a)=0` for `k≥1`), and define genuine signed exponential moments `I_±=∫_{-a}^a e^{±y/2}p(y)dy`. Then the original two-pole derivative is
+
+\[
+ \mathcal P'_p(x)=-2e^{x/2}I_-+2e^{-x/2}I_+,
+\]
+
+and the source contact derivative is exactly `C_G F_p(x)`. At the first prime, `b=log2` and `w=log2/sqrt2`, its hinge derivative is the **piecewise original-source** expression
+
+\[
+ \mathcal H'_p(x)=w\Big(\mathbf 1_{x-b>-a}F_p(x-b)
+       +\mathbf 1_{x+b<a}F_p(x+b)\Big).
+\]
+
+No derivative of an invented primitive `6` is allowed. For each real Gamma rung `d=4j+1`, `α=d/2`, take finite exact polynomials `F_±^{(α)}` satisfying `d(e^{±αy}F_±^{(α)}(y))/dy=e^{±αy}p(y)`. The differentiated convolution rung is precisely
+
+\[
+ \mathcal G'_{j,p}(x)=\frac{-2}{d}\big[ F_+^{(α)}(x)+F_-^{(α)}(x)
+ -e^{-α(x+a)}F_+^{(α)}(-a)
+ -e^{-α(a-x)}F_-^{(α)}(a)\big].
+\]
+
+All terms are rational polynomials in `x` and `a` plus exponentials of *nonnegative rational arguments* and the authenticated coefficients `b,w,C_G`. Their signs are retained. The source evaluator uses **outward rational exponential/log intervals** from `suzuki_legendre_source`, never machine floating point, and rejects any input whose rational point falls inside an unresolved source prime activation boundary. Summing `\mathcal P'+C_G F_p+\mathcal H'+Σ_{j<J}\mathcal G'_j` gives a genuine source-conditional interval for `∂_x[G_J P_k](x)`.
+
+**Independent calibration (not proof).** Direct 60-decimal-place mpmath integration of the independently written source derivative `g'_J(|x-y|)sgn(x-y)P_k(2y)` split at `y=x,x±log2` agrees with the independently written analytic moments to better than `4×10^-61` on `(k,x,J)=(1,0,3),(1,1/4,3),(2,0,3),(2,1/4,3)`. The observed values are approximately `−0.039823248419503`, `−0.0152680314638903`, `0`, and `−0.0303078671182131` respectively. They merely motivate the **rational strict source intervals** tested on the real GitHub checkout:
+
+\[
+ -1/50< (G_3P_1)'(1/4)<-1/100,\qquad
+ -1/25< (G_3P_2)'(1/4)<-1/40.
+\]
+
+The exact source-first CI must verify these numerical-looking *rational inequalities* through the actual source intervals and fail if it cannot. The `P_2` derivative at zero is zero by reflection; the interval implementation must contain zero. No low-sector signed eigenvalue, nor any original unshifted Schur sign, follows from these point tests.
+
+**Actual next source step:** use the same polynomial/exponential piecewise structure to integrate products of the *high-projected derivatives* over the full interval, with exact breakpoints at `±(a−log2)`. Pair this finite-J Gram enclosure with TS-D to produce the genuine `E` matrix, then evaluate its source-certified shorted sign jointly with `M` for optimized high trials `Z`. Simply sampling the derivative at many Hilbert curve points without a uniform source envelope is not a proof of its `L²` norm.

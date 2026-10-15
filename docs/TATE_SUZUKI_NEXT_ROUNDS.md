@@ -32,3 +32,7 @@
 ## Required governance
 
 Use a new branch per research round, exact source parent SHA, paper proofs with quantifiers, machine-readable claim status and independent negative controls; run full SUCC and dedicated CI on exact head. Never claim finite tests certify infinite signed positivity or that a source passport physically authenticates reality.
+
+### Concrete bootstrap established by source-interval round TS-13
+
+The code now computes **one-dimensional source derivative point** intervals directly from the original `suzuki_legendre_source` primitives and validates two first-prime negative derivative values with rational upper/lower bounds in mandatory real-checkout CI. This is not a mere proposed test or an empirical Gamma replacement; source code defines the algebra exactly, and the oracle is pinned by SHA. The remaining high-residual integral is **NOT yet computed**. Upgrade the scalar derivative point engine into a piecewise polynomial/exponential representation with certified interval `L²` integration and projection against all 30 Legendre low modes; use the source Γ-tail from TS-D for the all-J certificate. Only then evaluate the authentic original signed low Schur. Avoid treating point evaluations or positive Hilbert-cube scans as norm inequalities.
