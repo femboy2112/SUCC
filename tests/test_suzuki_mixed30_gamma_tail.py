@@ -6,6 +6,7 @@ from observational_succ.suzuki_mixed30_gamma_tail import (
     CompletedMixedGammaError,gamma_mixed_spectral_tail,
     true_mixed_legendre_tail_bound,authentic_infinite_gamma_mixed_rows,
     completed_mixed_gamma_two_stage_intersection,
+    original_completed_first_mixed_negative_source,
 )
 from observational_succ.suzuki_legendre_source import _pinned_source
 
@@ -95,6 +96,32 @@ class AuthenticatedCompletedSuzukiMixedMomentSourceTests(unittest.TestCase):
         ):
             with self.assertRaises((CompletedMixedGammaError,ValueError)):
                 authentic_infinite_gamma_mixed_rows(J,rank,modes)
+
+
+class OriginalFirstMixedSignIndependentTriangulation(unittest.TestCase):
+    def test_completed_true_m11_negative_with_independent_flux_adapter(self):
+        q=original_completed_first_mixed_negative_source(64)
+        self.assertEqual(q["source"],"ORIGINAL_ZETA_M11_COMPLETED_GAMMA_SHA_PINNED")
+        self.assertEqual(q["true_mixed_source_J"],64)
+        self.assertTrue(q["source_first_mixed_M11_strictly_negative"])
+        lo,hi=q["intersection_rigorous_negative"]
+        self.assertLess(lo,hi)
+        self.assertLess(hi,0)
+        f_lo,f_hi=q["independent_original_flux_identity_interval"]
+        g_lo,g_hi=q["original_Fourier_Legendre_infinite_source_interval"]
+        self.assertGreaterEqual(lo,max(f_lo,g_lo))
+        self.assertLessEqual(hi,min(f_hi,g_hi))
+        self.assertLess(q["mixed_analytic_tail_bound"],
+                        true_mixed_legendre_tail_bound(16,1,1))
+        self.assertTrue(q["not_original_Weil_quadratic_eigenvalue"])
+        self.assertFalse(q["original_30_low_Schur_PSD_proved"])
+        self.assertFalse(q["RH_proved"])
+
+    def test_strict_original_sign_requires_real_gamma_precision(self):
+        # A coarse J-stage cannot be silently promoted to a strict sign
+        # when its analytic gamma-tail enclosure still meets zero.
+        with self.assertRaises(ArithmeticError):
+            original_completed_first_mixed_negative_source(1)
 
 
 if __name__=="__main__":
