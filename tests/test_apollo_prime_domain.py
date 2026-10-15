@@ -12,6 +12,7 @@ from observational_succ.apollo_prime_domain import (
     exact_packet_overlap_bump,
     synthetic_sparse_budget,source_support_union_gate,
     prime_packet_low_moment_rank,
+    true_prime2_coupled_thirty_moment_witness,
 )
 from observational_succ.apollo_derivative_jets import genuine_prime_third_jet
 from observational_succ.apollo_krein_factor import (
@@ -248,3 +249,29 @@ class ApolloGluingAndLowMomentDomainGuards(unittest.TestCase):
         for n,r in ((6,30),(2,0),(2,31),(True,30),(2,3.0)):
             with self.assertRaises(PrimeDomainError):
                 prime_packet_low_moment_rank(n,r)
+
+
+
+class ApolloGenuineHighAndPrimeCouplingIntersection(unittest.TestCase):
+    def test_exact_thirty_vanishing_moments_and_nonzero_true_p2_transfer(self):
+        for power in (34,36):
+            item=true_prime2_coupled_thirty_moment_witness(power)
+            self.assertEqual(item["derivative_order"],30)
+            self.assertTrue(item["vanishing_moments_0_to_29"])
+            self.assertTrue(item["original_low_Legendre_1_to_30_zero"])
+            self.assertGreater(item["one_packet_L2_squared"],0)
+            self.assertEqual(item["two_packet_L2_squared"],
+                             2*item["one_packet_L2_squared"])
+            self.assertEqual(item["genuine_prime2_translation_overlap"],
+                             item["one_packet_L2_squared"])
+            self.assertEqual(item["actual_prime_overlap_ratio"],F(1,2))
+            self.assertEqual(item["signed_Weil_source_packet_L2_floor"],F(3,5))
+            self.assertTrue(item["zero_extended_polynomial_C3_or_better"])
+            self.assertFalse(item["polynomial_is_Cc_infinity"])
+            self.assertFalse(item["PR107_full_low_schur_sign_proved"])
+            self.assertFalse(item["RH_proved"])
+
+    def test_synthetic_fake_moment_domain_refused(self):
+        for val in (0,30,33,46,True,34.0):
+            with self.assertRaises(PrimeDomainError):
+                true_prime2_coupled_thirty_moment_witness(val)
