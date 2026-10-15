@@ -10,6 +10,9 @@ import sys
 from fractions import Fraction as F
 from pathlib import Path
 
+from observational_succ.tate_reflection_parity_schur import (
+    reflection_parity_15_low_source_certificate,
+)
 from observational_succ.tate_central_reflection import (
     central_Gamma_Brownian_contact,
     reflected_local_prime_central_jet,
@@ -32,11 +35,12 @@ def receipt():
     gauge=theta_selfdual_reflection_gauge(F(1,4))
     wrong=theta_selfdual_reflection_gauge(F(1,2))
     mutant=reflected_center_jet_offline_mutant(3)
+    parity=reflection_parity_15_low_source_certificate()
     if not (c["source_contact_C_infinity_interval"][0]>5 and
             c["source_contact_C_infinity_interval"][1]<F(43,8)):
         raise ArithmeticError("Original Brownian contact not imported")
     return {
-        "schema":"SUCC_TATE_REFLECTION_JET_v1",
+        "schema":"SUCC_TATE_REFLECTION_JET_v2",
         "status":"TRUE_LOCAL_PRIME_GAMMA_CONTACT_NOT_RH_POSITIVITY",
         "source":"SHA_PINNED_ORIGINAL_ZETA_TATE_COMPLETED_WEIL",
         "center":{
@@ -98,6 +102,24 @@ def receipt():
             "wrong_one_half_weight_first_jet":str(wrong[
                 "log_reflection_ratio_slope_in_heat_log_coordinate"]),
             "Poisson_source_fixes_weight":gauge["full_theta_log_kernel_even_for_all_x"],
+        },
+        "original_Weil_reflection_parity":{
+            "source":parity["source"],
+            "even_f_Gamma_modes":parity["even_f_Gamma_modes"],
+            "even_f_Fourier_clock":str(parity["even_f_Fourier_cutoff"]),
+            "even_f_zero_moment_count":parity["even_f_zero_moment_count"],
+            "even_f_source_L2_lower":"1/140",
+            "odd_f_zero_moment_count":parity["odd_f_zero_moment_count"],
+            "odd_f_source_L2_lower":"1/20",
+            "source_low_basis_indices":list(parity["source_low_indices"]),
+            "source_low_dimension":parity["low_dimension"],
+            "reflection_parity_block_dims":list(parity["reflection_parity_block_dimensions"]),
+            "source_K_relative_high_coercivity":str(
+                parity["full_true_high_operator_G_at_least_kappa_K"]),
+            "true_source_zero_shift_norm_upper":str(
+                parity["true_zero_shift_R0_operator_norm_strict_upper"]),
+            "source_original_low_15_schur_sign_proved":parity["rank15_low_Schur_sign_certified"],
+            "RH_proved":False,
         },
         "hostile_non_Euler_mutant":{
             "center_matching_derivatives_through_order":
