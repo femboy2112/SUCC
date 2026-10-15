@@ -1,0 +1,49 @@
+{
+  "schema": "SUCC_TATE_SUZUKI_FOURIER_HIGH_v1",
+  "origin": "SHA_PINNED_ZETA_TATE_WEIL_PR109_AND_DYSPON_II",
+  "original_suzuki_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "original_halfwidth": "1/2",
+  "actual_prime_power_labels": [
+    2
+  ],
+  "Gamma_real_modes": 32,
+  "Fourier_boundary": "12",
+  "Gamma_multiplier_exact": "515427492551616864421590973669314068177867020315573278882060078877962867215304550656390743810471960576/85884787338373075992233732366320853504047195678460101968254184311045157253843568906969835955735602375",
+  "Gamma_multiplier_strictly_above_six": true,
+  "rank16": {
+    "power_moments_vanishing": 16,
+    "low_Fourier_mass_strictly_below": "1/400",
+    "strict_original_Weil_L2_coercivity": "1/20",
+    "low_parity_split": [
+      8,
+      8
+    ]
+  },
+  "rank18": {
+    "power_moments_vanishing": 18,
+    "low_Fourier_mass_strictly_below": "1/30000",
+    "strict_original_Weil_L2_coercivity": "1/16",
+    "low_parity_split": [
+      9,
+      9
+    ]
+  },
+  "rank30": {
+    "power_moments_vanishing": 30,
+    "strict_original_Weil_L2_coercivity": "1/16",
+    "low_parity_split": [
+      15,
+      15
+    ]
+  },
+  "original_neumann_K": "V*V=(-Delta_N)^(-1) on mean-zero derivative",
+  "source_original_gprime_L1_strictly_below": "11/40",
+  "new_true_zero_shift_cross_R0_strictly_below": "121/100",
+  "old_PR109_30_high_relative_kappa": "369/10000",
+  "new_30_high_relative_kappa": "1/16",
+  "naive_bound_cannot_certify_low": "-187/200",
+  "wrong_contact_mutation_exhausts_rank16_budget": true,
+  "source_30x30_actual_low_short_sign_proved": false,
+  "all_a_positive_Weil_proved": false,
+  "RH_proved": false
+}
