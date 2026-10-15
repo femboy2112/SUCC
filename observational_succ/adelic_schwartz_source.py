@@ -164,3 +164,76 @@ class DiagonalGaussianTensor:
             "theta_functional_equation_proved_by_this_finite_index": False,
             "RH_proved": False,
         }
+
+
+
+@dataclass(frozen=True)
+class GlobalSourceWord:
+    """Restricted source-faithful *path* functor on rational affine generators.
+
+    A genuine path has ordered declared original events, not just its final
+    affine operator. There is no functor from arbitrary physical histories
+    here: the SOURCE category is explicitly the FREE event-word category
+    over one mathematical Q affine carrier with original receipt metadata.
+    """
+    initial: DiagonalGaussianTensor
+    events: tuple["SourceEvent", ...]
+
+    def __post_init__(self):
+        from .tate_schwartz_functor import SourceEvent
+        if not isinstance(self.initial, DiagonalGaussianTensor) or type(self.events) is not tuple:
+            raise TateFunctorError("Global event path requires an original tensor and exact tuple")
+        for i,event in enumerate(self.events):
+            if (not isinstance(event,SourceEvent) or
+                event.source_id != self.initial.source_id or
+                event.epoch != self.initial.epoch or event.ordinal != i):
+                raise TateFunctorError("Global causal source ID, epoch and event order must match")
+
+    def append(self, kind: str, amount: int | F) -> "GlobalSourceWord":
+        from .tate_schwartz_functor import SourceEvent
+        event=SourceEvent(self.initial.source_id,self.initial.epoch,len(self.events),kind,rational(amount))
+        return GlobalSourceWord(self.initial,self.events+(event,))
+
+    def affine(self) -> tuple[F,F]:
+        A,B=F(1),F(0)
+        for event in self.events:
+            if event.kind == "SUCC":
+                B+=event.amount
+            else:
+                A*=event.amount
+                B*=event.amount
+        return A,B
+
+    def execute(self) -> DiagonalGaussianTensor:
+        tensor=self.initial
+        for e in self.events:
+            tensor=(tensor.affine(1,e.amount) if e.kind=="SUCC"
+                    else tensor.affine(e.amount,0))
+        A,B=self.affine()
+        if tensor != self.initial.affine(A,B):
+            raise AssertionError("Actual Tate tensor action not functorial")
+        return tensor
+
+    def verify_local_naturality(self,p:int,xi:int|F)->dict:
+        """Component functor commutes with global source-word execution."""
+        from .tate_schwartz_functor import SourceWord
+        tensor=self.execute()
+        local_start=self.initial.local_ball(p)
+        local=SourceWord(local_start,self.events)
+        actual=local.execute()
+        expected=tensor.local_ball(p)
+        if actual != expected:
+            raise AssertionError("Local p-adic restriction of global SUCC path fails")
+        probe=local.fourier_receipt(xi)
+        return {
+            "original_source":self.initial.source_id,"prime":p,
+            "global_affine":self.affine(),
+            "local_balls_equal":True,
+            "local_Fourier_naturality":probe["fourier_naturality"],
+            "faithful_source_receipts":tuple((e.ordinal,e.kind,e.amount) for e in self.events),
+            "global_Tate_Fourier_diagonal_all_places_only":
+                tensor.fourier_at_rational(xi)["global_Haar_affine_scaling"]==1,
+            "full_adelic_Fourier_test_category_verified":False,
+            "complete_Weil_positive":False,
+            "RH_proved":False,
+        }
