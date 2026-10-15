@@ -217,3 +217,60 @@ def halting_alias_at_finite_horizon(horizon, later_halt):
             "candidate_limits":(Q(),Q(1)),
             "finite_prefix_identifies_global_limit":False,
             "external_halting_oracle_used":False}
+
+
+def rational_sqrt2_interval(n):
+    """Dyadic rational Cauchy approximants lack a rational endpoint.
+
+    Exactly q_n=floor(sqrt(2)*2^n)/2^n (integer isqrt), and
+    q_n^2 <= 2 < (q_n+2^-n)^2. The limit sqrt(2) is NOT in Q
+    by the classical parity proof. No floating sqrt is consulted.
+    """
+    from math import isqrt
+    natural(n,upper=1024)
+    D=2**n
+    floor=isqrt(2*D*D)
+    a=Q(floor,D)
+    b=Q(floor+1,D)
+    if not a*a<=2<b*b:
+        raise ArithmeticError("rational nested sqrt2 interval source failed")
+    return {"stage":n,"lower":a,"upper":b,"width":Q(1,D),
+            "rational_stage":True,
+            "rational_limit_exists":False,
+            "complete_real_endpoint_requires_extension":True,
+            "target_irrationality_uses_classical_parity_theorem":True}
+
+
+def rational_sqrt2_cauchy_pair(n,m):
+    natural(n,upper=1024);natural(m,upper=1024)
+    if m<n:raise ZenoError("nested precision must increase")
+    left=rational_sqrt2_interval(n)
+    right=rational_sqrt2_interval(m)
+    d=right["lower"]-left["lower"]
+    if not 0<=d<left["width"] or right["lower"]>=left["upper"]:
+        raise ArithmeticError("nested sqrt2 intervals lost Cauchy contract")
+    return {"separation":d,"tail_bound":left["width"],
+            "convergence_in_Q":False,"convergence_in_R":True,
+            "source":"INTEGER_ISQRT_SQRT2_REAL_COMPLETION"}
+
+
+def no_uniform_limit_of_strict_positivity(n):
+    """Exact x_n=1/(n+1)>0 yet limit 0; strict sign not closed."""
+    natural(n)
+    return {"finite_value":Q(1,n+1),"every_finite_strictly_positive":True,
+            "limit_value":Q(),"limit_strictly_positive":False,
+            "nonnegative_closed_limit_holds":True}
+
+
+def telescoping_geometric_identity(q,n):
+    """Exact finite SUCC identity; its universal proof is induction."""
+    q=rational(q);natural(n)
+    partial=sum((q**j for j in range(n)),Q())
+    left=(1-q)*partial
+    right=1-q**n
+    if left!=right:raise ArithmeticError("finite induction-shaped identity failed")
+    return {"stage":n,"source_ratio":q,
+            "left":left,"right":right,
+            "finite_identity_exact":True,
+            "universal_claim_requires_finite_symbolic_induction":True,
+            "limit_transport_requires_topology_and_contraction":True}
