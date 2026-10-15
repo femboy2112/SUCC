@@ -14,6 +14,7 @@ The handoff contract is [docs/RH_HANDOFF.md](../../docs/RH_HANDOFF.md). A docume
 - [Source-certified complex theta contour and original Weil spectral shadow](2026-10-14-theta-contour-Weil-local.md) — rational Rouché proof of one simple critical-line zero, source-typed positive local Weil spectral operator and explicit off-line finite-shadow impostor; **no global Weil sign or RH proof**.
 - [Unconditional signed Weil H¹ high-spectrum tail](2026-10-14-signed-Weil-H1-tail.md) — original-theta Jensen zero density, whole-H₀¹ signed spectral tail rate `70 a exp(a) log(16T)/T`, pinned positive first pair and honest unknown middle; **no completed Weil positivity or RH proof**.
 - [Wild embedding and carrier-locked SUCC holonomy](2026-10-14-wild-embedding-Weil.md) — Alexander horned-sphere free-group source, perfect yet nontrivial exterior, sharp nilpotent observer depth, prime-twisted sphere countermodel, and the Suzuki first-wavefront H¹ metric repair; **not a topology identification of zeta or a Weil sign theorem**.
+- [Source-canonical Suzuki moment Schur](2026-10-14-canonical-moment-schur.md) — pinned PR #85 finite authentic Weil/Gamma source meets PR #86's 30-moment high positivity; canonical Legendre 15+15 source-signed low block and regularized one-sided Gamma Schur error, with an explicit grid-resolution wall. **No unshifted Weil sign or RH proof.**
 - [Template](TEMPLATE.md) — required mathematical scope, provenance, adversarial controls and next proof obligation.
 
 RH remains unsolved. A handoff document is **not** an assertion of an RH proof.
