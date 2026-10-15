@@ -829,3 +829,15 @@ No new academic priority is established.
 | O677 | Filtered incompressible velocity alone always determines the filtered quadratic fluid term | REFUTED | F34 explicit divergence-free Fourier family has zero retained velocity but nonzero retained Leray-projected stress; no Navier–Stokes existence claim |
 | O678 | The finite TLICA observer model establishes a mechanism of human cognition or empirical neuroscience | UNVERIFIED / NOT CLAIMED | F36 typed phenomenological transition system and finite invariant only; no empirical validation |
 | O679 | The campaign learns an unrestricted new representation metagrammar, proves scholarly novelty, physically executes infinity, or establishes arithmetic Weil positivity/RH | UNVERIFIED / NOT CLAIMED | D20 declared constructors and exact teacher; C source/access gates; E/F analytic and physical limits; all audits retain these boundaries |
+
+
+## Carrier → Tate → Weil (2026-10-15)
+
+The [Carrier → Tate → Weil claim supplement](CLAIM_SUPPLEMENT_CARRIER_TATE_WEIL.md)
+records CTW-01–14: the independent Poisson audit, canonical zeta and chi4 Tate
+reconstruction, full signed Weil identification, analytic error bounds, and
+scoped positivity obstructions. It corrects the earlier necessity claim about
+noninteger rational scales while preserving the original record. These are
+classical analytic reconstructions and exact source interfaces; canonical
+autocorrelation positivity and RH remain unproved. See the linked synthesis
+for observer-relative execution/proof/access boundaries and validation.
