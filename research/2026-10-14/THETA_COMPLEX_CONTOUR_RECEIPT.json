@@ -1,0 +1,87 @@
+{
+  "F_center_interval": [
+    "-987532095384710501254700480487/25000000000000000000000000000000000000",
+    "10935718657797178516969748354921/100000000000000000000000000000000000000"
+  ],
+  "F_derivative_imag_interval": [
+    "13826084233800213263800961396446663/10000000000000000000000000000000000000",
+    "2765820892633579294549611941138283/2000000000000000000000000000000000000"
+  ],
+  "F_second_upper": "201964301796528967787436708563901310942469203803/269730089990000000000000000000000000000000000000",
+  "RH_proved": false,
+  "center_abs_upper": "10935718657797178516969748354921/100000000000000000000000000000000000000",
+  "certified_exactly_one": true,
+  "critical_line_by_reflection": true,
+  "derivative_abs_lower": "13826084233800213263800961396446663/10000000000000000000000000000000000000",
+  "entire_Weil_sign_claimed": false,
+  "false_global_curve_control": {
+    "RH_proved": false,
+    "below_source_Fock_bound_260_over_27": true,
+    "fake_factor_c": "204768/40972801",
+    "fake_factor_d": "256/40972801",
+    "fake_polynomial_symbolic": "(a0+(a1-a0*c)*z^2)*(1+c*z^2+d*z^4)",
+    "off_critical_inside_strip_root": "z=1/4+20i; s=3/4+20i",
+    "original_Weil_arithmetic_source": false,
+    "proof_obligation_not_disposed": "genuine completed signed Weil positivity",
+    "same_original_a0_a1": true,
+    "strict_fock_norm_squared_upper": "5006265552441/20000000000000"
+  },
+  "local_Weil": {
+    "RH_proved": false,
+    "all_other_zero_contributions_controlled": false,
+    "completed_Weil_global_PSD": false,
+    "local_contour_zero_count": 1,
+    "local_spectral_PSD": true,
+    "local_spectral_form": "abs(A_f(rho))^2",
+    "local_zero_on_critical_line": true,
+    "local_zero_simple": true,
+    "source": "AUTHENTIC_COMPLETED_XI_ZERO_FROM_GAUSSIAN_THETA",
+    "test_domain": "real C_c^infty(R)"
+  },
+  "local_residue_positive": true,
+  "no_external_zero_lookup": true,
+  "normalized_small_source_local_spectral_mass": {
+    "RH_proved": false,
+    "critical_zero_abs_ordinate_upper": "15",
+    "global_signed_Weil_PSD": false,
+    "halfwidth": "1/100",
+    "localized_rank_one_Weil_lower": "625681/640000",
+    "localized_transform_real_lower": "791/800",
+    "only_one_spectral_summand": true,
+    "positive": true
+  },
+  "radius": "1/500",
+  "site": "141347/10000",
+  "source": "AUTHENTIC_ONE_GAUSSIAN_INTEGER_THETA",
+  "source_bounds": {
+    "missing_integer_B_upper": "93976440826954164737913521/675000000000000000000000000000000000000",
+    "missing_integer_S_upper": "93976440826954164737913521/36450000000000000000000000000000000000000",
+    "simpson_B_upper": "14297724149449315836019442930321101753096543117355219562912111810461033101441589660508195720613493919110283105704774285766758227761299040378040423253335543024573673859113811392110566236494514999/41231686041600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "simpson_S_upper": "150918568077855993795776426433338295380518568922174318679815575225526189405122084046836528131379100080534939749850748252249305813560741055835252879884162132071163064732024302528995096128450634991/247390116249600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "time_B_upper": "943783636069774437911242387/37500000000000000000000000000000000000"
+  },
+  "strict_rouche_margin": "156218330774331429662434059297903657833347183197/134865044995000000000000000000000000000000000000000000",
+  "true_completed_Weil_pair_operator_window": {
+    "RH_proved": false,
+    "full_signed_Weil_PSD": false,
+    "midpoint_phase_operator_error_upper": "1/250",
+    "operator_norm_upper": "2",
+    "positive_original_pair_kernel": "2*cos(gamma*(x-y))",
+    "positive_rank_upper": 2,
+    "source_generated_phase": true,
+    "test_window_halfwidth": "1/2",
+    "theta_certified_frequency_interval": [
+      "141327/10000",
+      "141367/10000"
+    ]
+  },
+  "true_completed_Weil_pair_phase_at_1over2": {
+    "global_signed_Weil_positive": false,
+    "phase_uncertainty_exact_bound": "1/500",
+    "positive_source_pair_only": true,
+    "separation": "1/2",
+    "true_original_kernel_lower": "35348921923058837587844105355036892743/25000000000000000000000000000000000000",
+    "true_original_kernel_upper": "17724460961529418793922052677518460473/12500000000000000000000000000000000000"
+  },
+  "zero_is_simple": true
+}
