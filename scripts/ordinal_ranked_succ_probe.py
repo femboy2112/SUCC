@@ -9,6 +9,10 @@ from __future__ import annotations
 import json
 from fractions import Fraction as F
 
+from observational_succ.tate_observer_completion import PadicBruhatChart
+from observational_succ.tate_ordinal_chart_normalizer import (
+    complete_tate_source_chart,growing_tate_target_rank_no_go,
+)
 from observational_succ.ordinal_ranked_succ import (
     goodstein_step,goodstein_prefix,giant_finite_path_certificate,
     gigantic_observer_proof_queue,OrdinalProofObligationQueue,
@@ -55,7 +59,21 @@ def main():
     assert unfair["infinite_survival_probability_lower"]==F(1,2)
     assert infinite_mean["full_expected_length"]=="INFINITE_BY_HARMONIC_DIVERGENCE"
     assert huge_stochastic["expected_total_attempts"]==2**257
+    local_tate=complete_tate_source_chart(
+        PadicBruhatChart(2,0,1),(F(1),F(2)),1,2)
+    renewed=growing_tate_target_rank_no_go()
+    assert local_tate["initial_rank"]=="ω + 1"
+    assert local_tate["terminal_rank"]=="0"
+    assert local_tate["same_exact_cyclotomic_Fourier_under_opposite_refinement_order"]
+    assert not renewed["single_uniform_ordinal_descent_across_all_growing_targets"]
     receipt={
+        "Tate_true_padic_source_prime":local_tate["prime"],
+        "Tate_true_padic_ordinal_rank_initial":local_tate["initial_rank"],
+        "Tate_true_padic_ordinal_rank_terminal":local_tate["terminal_rank"],
+        "Tate_true_padic_source_terminal_cells":[str(x) for x in local_tate["terminal_source_values"]],
+        "Tate_source_Fourier_normalized_commutes_both_orders":True,
+        "Tate_growing_target_rank_resets":renewed["new_larger_target_started_rank"],
+        "Tate_whole_unbounded_colimit_finished_in_finite_time":False,
         "Ordinal_epoch_uniform_hazard_law":str(epochs["conditional_progress_hazard_lower"]),
         "Ordinal_epoch_survival_at_40":str(epochs["survival_upper_at_fixed_rank"]),
         "Ordinal_epoch_a_s_termination_conditional_theorem":True,
