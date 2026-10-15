@@ -208,3 +208,49 @@ This is stronger than saying that isolated finite eigenvalues move by c: **the e
 An exact 3×3 finite rational countercontrol uses SPD \(K=\begin{psmallmatrix}2&1&0\\1&2&0\\0&0&1\end{psmallmatrix}\), symmetric \(G=\begin{psmallmatrix}4&1&0\\1&3&0\\0&0&3\end{psmallmatrix}\), a one-mode low cut, \(c=1/2,\mu=1/4\). True Schur of \(G_c-\mu K\) equals true Schur of \(G-(\mu-c)K\) exactly. A **fake contact correction applied only to the low block** gives a different Schur (because K has a nonzero cross), demonstrating the omitted source-coupling error directly. The toy source is not the full arithmetic zeta, and its finite high block happens to be invertible; this is not a theorem that the actual infinite compact \(D^{-1}\) exists.
 
 **How this constrains Connes:** the Fourier-normalized principal-value contact is not an arbitrary low-only renormalization. Any proposed Connes realization equal to authentic W must yield c=0, including the rank-two low/high K boundary contact channels. A finite off-identity local trace identity cannot establish c=0 by itself. This gives a falsifiable **normalization compatibility gate** in the same Hilbert space where the Suzuki sign problem lives, not a separate positivity theorem.
+
+
+## 3b. FIRST ACTUAL authenticated finite-J derivative-response Gram, rank-one and rank-three — ORS-03c (PROVED LOCAL ORIGINAL SOURCE INTERVAL)
+
+The missing source-dependent \(T_{(B-DY)'}\) is not discharged by the abstract theorem ORS-02. This round therefore also implements a **first real arithmetic low-to-high response laboratory**. On \(a=1/2\), take the genuine first unnormalized Legendre \(u_1(y)=P_1(y/a)=y/a\) and the signed true Suzuki finite-J kernel \(g_J\) from the **original infinite-contact source scheme**, retaining the only real Γ, actual p=2, both original polar terms and contact. For
+\[
+ F_J(x)=(G_{a,J}u_1)(x)=\int_{-a}^a g_J(x-y)u_1(y)\,dy,
+\]
+two exact finite integrations by parts (using continuity/Lipschitz of the original \(g_J\)) give
+\[
+ \boxed{F'_J(x)=\frac1a\int_{x-a}^{x+a}g_J(t)\,dt
+                   -g_J(x-a)-g_J(x+a).}\tag{ORS8}
+\]
+The signed primitive \(H_J(R)=\int_0^R g_J(t)\,dt\), \(R\ge0\), has exact elementary source decomposition:
+\[
+\begin{aligned}
+H_J(R)={}&-8(e^{R/2}-1)+8(e^{-R/2}-1)+8R
+  +\frac{C_\infty R^2}{4}\\
+ &+\sum_{n=p^k\le e^R}\frac{\log p}{2\sqrt n}(R-\log n)^2\\
+ &-\sum_{j<J}\frac4{(4j+1)^2}
+ \left[R-\frac{2}{4j+1}(1-e^{-(4j+1)R/2})\right].
+\end{aligned}\tag{ORS9}
+\]
+Use the odd extension \(\operatorname{sgn}(x)H_J(|x|)\). At each R the original \(\log p,\sqrt n,\exp,\pi,\gamma\) values are enclosed by the immutable original-source rational interval functions. There is **NO interpolation across a prime hinge**, no fitted positive kernel, no input nontrivial zeros.
+
+With source-proved \(\operatorname{Lip}(g_J)\le L_J(a)\), (ORS8) immediately yields
+\[
+ \boxed{\operatorname{Lip}(F'_J)\le4L_J(a).}\tag{ORS10}
+\]
+Thus rational \(x\)-grid intervals of width h and node bounds \([F'_J(x_i)]\) extend uniformly to each entire cell via \(\pm2L_Jh\); exact squaring and integral summation give a rigorous **whole-domain** rational enclosure of \(\int_{-a}^a |F'_J|^2\,dx\). Implemented by \`one_object_true_derivative.original_first_legendre_H1_energy\`. This is genuine original-source directional information, not a 30-mode bounded-inverse theorem.
+
+For an additional SOURCE-IDENTIFIED projection, use the authentic direct original signed low block from integrated \`suzuki_legendre_source.authentic_full_low_entry(i,j,a,J)\`, which derives exact Legendre pair integrals of the same source g_J (not a numeric independent bath). On \(P_m=\operatorname{span}\{L_1,\ldots,L_m\}\), m=1 or 3 in the currently validated finite prototype, let
+\[
+ \beta_j=\frac{\langle L_j,G_J L_1\rangle}{\|L_j\|_2^2},
+ \qquad r_{J,m}=(I-P_m)G_J L_1.
+\]
+Then
+\[
+ \boxed{r'_{J,m}(x)=F'_J(x)-\sum_{j=1}^m\beta_j L'_j(x),}
+\tag{ORS11}
+\]
+and the original analytic Legendre coefficients are interval-certified source data. Exact polynomial derivatives and rational second-derivative bounds yield a whole-support rational enclosure \(0\le T_{J,m}\le M_{J,m}\) for the 1×1 **genuine directional** derivative Gram \(\|r'_{J,m}\|_2^2\). We intentionally DO NOT claim an orthogonal \(H^1\) projection or monotonic \(H^1\) error with increasing m; P is the L² Legendre projector.
+
+**Status: partial authentic source milestone, NOT THE FINAL MATRIX.** The κ=369/10000 high gap is proved for the complement of the full **30** Legendre modes, not for m=1 or 3. The module refuses to mark \`original_30_mode_Q_projection_done\` or \`finite_high_response_DY_computed\`, and cannot feed its m=1/3 output directly into ORS5 as if it were the 30×30 authentic \(T_{r_J}\). Remaining tasks are scaling all 30 projected modes with controlled rational precision and real finite high Y, proving the source bounds are sharp enough for a genuine Schur sign. This is an arithmetic finite-to-global proof instrument, not a Weil-sign proof.
+
+Independent controls: original \`signed_suzuki_g\` 70-digit integration at several J and R, true low Legendre projection from separately written polynomial/OU formula, exact parity-even derivative of odd input, decreasing x-grid enclosure widths, false source/float/extra prime rejection. All numerical comparisons are diagnostic only; source-rational interval arithmetic plus the analytic source identity is the proof basis.
