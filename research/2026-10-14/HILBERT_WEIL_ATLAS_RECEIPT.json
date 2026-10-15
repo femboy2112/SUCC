@@ -1,0 +1,230 @@
+{
+  "dyadic_diagonal_plan": {
+    "12": {
+      "J": 4096,
+      "N": 4096,
+      "RH_proved": false,
+      "all_test_low_schur_sign_verified": false,
+      "current_source_stage_software_supports_this_level": false,
+      "lambda": "1/4096",
+      "level": 12,
+      "operator_error_upper_conditional": "35841/8388608",
+      "shifted_cross_penalty_upper_conditional": "1284577281/17179869184",
+      "source_rounding_precision_assumption": "1/16777216",
+      "unshifted_zero_lambda_verified": false
+    },
+    "16": {
+      "J": 65536,
+      "N": 65536,
+      "RH_proved": false,
+      "all_test_low_schur_sign_verified": false,
+      "current_source_stage_software_supports_this_level": false,
+      "lambda": "1/65536",
+      "level": 16,
+      "operator_error_upper_conditional": "638977/2147483648",
+      "shifted_cross_penalty_upper_conditional": "408291606529/70368744177664",
+      "source_rounding_precision_assumption": "1/4294967296",
+      "unshifted_zero_lambda_verified": false
+    },
+    "4": {
+      "J": 16,
+      "N": 16,
+      "RH_proved": false,
+      "all_test_low_schur_sign_verified": false,
+      "current_source_stage_software_supports_this_level": true,
+      "lambda": "1/16",
+      "level": 4,
+      "operator_error_upper_conditional": "109/128",
+      "shifted_cross_penalty_upper_conditional": "11881/1024",
+      "source_rounding_precision_assumption": "1/256",
+      "unshifted_zero_lambda_verified": false
+    },
+    "8": {
+      "J": 256,
+      "N": 256,
+      "RH_proved": false,
+      "all_test_low_schur_sign_verified": false,
+      "current_source_stage_software_supports_this_level": false,
+      "lambda": "1/256",
+      "level": 8,
+      "operator_error_upper_conditional": "1985/32768",
+      "shifted_cross_penalty_upper_conditional": "3940225/4194304",
+      "source_rounding_precision_assumption": "1/65536",
+      "unshifted_zero_lambda_verified": false
+    }
+  },
+  "finite_to_complete_example": {
+    "depth": 5,
+    "euclidean_diameter_strict_upper": "1/16",
+    "index": 204,
+    "l_infinity_error_radius": "1/32",
+    "source_state_physically_observed_at_infinity": false,
+    "time": "1/5",
+    "x_interval": [
+      "3/16",
+      "7/32"
+    ],
+    "y_interval": [
+      "3/8",
+      "13/32"
+    ]
+  },
+  "geometry": {
+    "1": {
+      "adjacent": true,
+      "depth": 1,
+      "parent_refinement": true,
+      "physical_infinity_actualized": false,
+      "uniform_area_per_tile": "1/4",
+      "unique": true,
+      "visited_tiles": 4
+    },
+    "2": {
+      "adjacent": true,
+      "depth": 2,
+      "parent_refinement": true,
+      "physical_infinity_actualized": false,
+      "uniform_area_per_tile": "1/16",
+      "unique": true,
+      "visited_tiles": 16
+    },
+    "3": {
+      "adjacent": true,
+      "depth": 3,
+      "parent_refinement": true,
+      "physical_infinity_actualized": false,
+      "uniform_area_per_tile": "1/64",
+      "unique": true,
+      "visited_tiles": 64
+    },
+    "4": {
+      "adjacent": true,
+      "depth": 4,
+      "parent_refinement": true,
+      "physical_infinity_actualized": false,
+      "uniform_area_per_tile": "1/256",
+      "unique": true,
+      "visited_tiles": 256
+    }
+  },
+  "half_cell_commutator_sq": "1/2",
+  "hidden_negative_level_3": {
+    "coarse_block_zero": true,
+    "depth": 3,
+    "original_arithmetic_source": false,
+    "quadratic_unit_alternating": "-1",
+    "signed_even_difference_kernel": true
+  },
+  "main_parent": "03db44203147a7b28d445bb9f970fa71360e78c4",
+  "no_source_Weil_sign_or_RH_proof": true,
+  "original_Gamma_cross_H1_tail": {
+    "128": {
+      "J": 128,
+      "RH_proved": false,
+      "finite_J_true_derivative_Gram_computed": false,
+      "low_short_sign_verified": false,
+      "omitted_original_Gamma_derivative_L1_upper": "1034/263169",
+      "omitted_original_Gamma_kernel_Linfty_upper": "517/263169",
+      "source_high_cross_derivative_gain_upper": "55319/29241",
+      "unshifted_source_range_proved_by_uniform_analytic_argument": true
+    },
+    "2": {
+      "J": 2,
+      "RH_proved": false,
+      "finite_J_true_derivative_Gram_computed": false,
+      "low_short_sign_verified": false,
+      "omitted_original_Gamma_derivative_L1_upper": "26/81",
+      "omitted_original_Gamma_kernel_Linfty_upper": "13/81",
+      "source_high_cross_derivative_gain_upper": "1391/9",
+      "unshifted_source_range_proved_by_uniform_analytic_argument": true
+    },
+    "32": {
+      "J": 32,
+      "RH_proved": false,
+      "finite_J_true_derivative_Gram_computed": false,
+      "low_short_sign_verified": false,
+      "omitted_original_Gamma_derivative_L1_upper": "266/16641",
+      "omitted_original_Gamma_kernel_Linfty_upper": "133/16641",
+      "source_high_cross_derivative_gain_upper": "14231/1849",
+      "unshifted_source_range_proved_by_uniform_analytic_argument": true
+    },
+    "8": {
+      "J": 8,
+      "RH_proved": false,
+      "finite_J_true_derivative_Gram_computed": false,
+      "low_short_sign_verified": false,
+      "omitted_original_Gamma_derivative_L1_upper": "74/1089",
+      "omitted_original_Gamma_kernel_Linfty_upper": "37/1089",
+      "source_high_cross_derivative_gain_upper": "3959/121",
+      "unshifted_source_range_proved_by_uniform_analytic_argument": true
+    }
+  },
+  "p2_nonunit_control": {
+    "actual_parent": 1,
+    "child": 4,
+    "image_count": 8,
+    "invertible_on_index_clock": false,
+    "naive_parent": 0,
+    "refinement_square_commutes": false,
+    "toy_index_action_not_authenticated_original_FUCC": true
+  },
+  "p3_refinement_negative_control": {
+    "actual_parent": 1,
+    "child": 6,
+    "image_count": 16,
+    "invertible_on_index_clock": true,
+    "naive_parent": 0,
+    "refinement_square_commutes": false,
+    "toy_index_action_not_authenticated_original_FUCC": true
+  },
+  "prime2_trace_blindspot": {
+    "Connes_trace_distribution_identified": false,
+    "actual_genuine_prime": 2,
+    "actual_shift_nonzero_on_interval": true,
+    "depth": 4,
+    "naive_step_basis_translation_trace_interval": [
+      "0",
+      "0"
+    ],
+    "source_prime_power": 2,
+    "the_prime_term_is_offdiagonal_not_trace_visible": true,
+    "trace_identically_zero": true
+  },
+  "quadrature_exact_linear": "1",
+  "unshifted_range_analytic_certificate": {
+    "RH_proved": false,
+    "a": "1/2",
+    "high_relative_Neumann_gap": "369/10000",
+    "legendre_30_derivative_HS_norm_squared": 922560,
+    "legendre_projection_derivative_gain_strict_upper": "961",
+    "original_compact_G_operator_norm_strict_upper": "12",
+    "original_low_to_high_H1_gain_strict_upper": "11556",
+    "original_screw_derivative_L1_strict_upper": "24",
+    "original_screw_kernel_Linfty_strict_upper": "12",
+    "range_condition_proved_conditional_on_original_high_theorem": true,
+    "shorted_low_sign_proved": false,
+    "uniform_lambda_to_zero_cross_resolvent_upper": "148379040000/41"
+  },
+  "wavefront_a_half": {
+    "2": {
+      "active": 0,
+      "inactive": 10,
+      "threshold": 6
+    },
+    "3": {
+      "active": 2,
+      "inactive": 52,
+      "threshold": 10
+    },
+    "4": {
+      "active": 12,
+      "inactive": 226,
+      "threshold": 18
+    },
+    "5": {
+      "active": 72,
+      "inactive": 914,
+      "threshold": 38
+    }
+  }
+}
