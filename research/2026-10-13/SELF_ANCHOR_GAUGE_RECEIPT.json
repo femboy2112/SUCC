@@ -1,0 +1,228 @@
+{
+  "adaptive_equivariant_shadow": {
+    "actual_physical_probe_performed": false,
+    "all_available_actions_commute_with_gauge": true,
+    "alternative_reports": [
+      2,
+      2,
+      2
+    ],
+    "chosen_actions": [
+      0,
+      0
+    ],
+    "first_reports": [
+      2,
+      2,
+      2
+    ],
+    "paired_initial_sources_distinct": true,
+    "source_history_reports_identical": true
+  },
+  "claims_academic_priority": false,
+  "claims_general_language_discovery": false,
+  "claims_physical_calibration": false,
+  "claims_tlica_empirically_validated": false,
+  "corrected_change_under_declared_transport": false,
+  "drifting_mapping_even_full_calibration": false,
+  "false_raw_change_under_drift": true,
+  "language_adequacy_diagnostic": {
+    "expanded_dictionary_class": "AMBIGUOUS",
+    "physical_source_attestation": false,
+    "single_dictionary": "IDENTIFIED",
+    "unpredicted_sensor_output": "OUT_OF_MODEL"
+  },
+  "noninjective_sensor_repaired_by_calibration": false,
+  "permutation_bases": {
+    "1": {
+      "candidate_dictionaries": 1,
+      "cross_world_collision_witness": null,
+      "individual_world_decoders_valid": true,
+      "minimum_known_reference_count": 0,
+      "minimum_reference_sets": [
+        []
+      ],
+      "uncalibrated_cross_world_decoder": true
+    },
+    "2": {
+      "candidate_dictionaries": 2,
+      "cross_world_collision_witness": [
+        {
+          "report": [
+            1
+          ],
+          "state": 1,
+          "target": 1,
+          "world": "dictionary:0,1"
+        },
+        {
+          "report": [
+            1
+          ],
+          "state": 0,
+          "target": 0,
+          "world": "dictionary:1,0"
+        }
+      ],
+      "individual_world_decoders_valid": true,
+      "minimum_known_reference_count": 1,
+      "minimum_reference_sets": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "uncalibrated_cross_world_decoder": false
+    },
+    "3": {
+      "candidate_dictionaries": 6,
+      "cross_world_collision_witness": [
+        {
+          "report": [
+            2
+          ],
+          "state": 2,
+          "target": 2,
+          "world": "dictionary:0,1,2"
+        },
+        {
+          "report": [
+            2
+          ],
+          "state": 1,
+          "target": 1,
+          "world": "dictionary:0,2,1"
+        }
+      ],
+      "individual_world_decoders_valid": true,
+      "minimum_known_reference_count": 2,
+      "minimum_reference_sets": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "uncalibrated_cross_world_decoder": false
+    },
+    "4": {
+      "candidate_dictionaries": 24,
+      "cross_world_collision_witness": [
+        {
+          "report": [
+            3
+          ],
+          "state": 3,
+          "target": 3,
+          "world": "dictionary:0,1,2,3"
+        },
+        {
+          "report": [
+            3
+          ],
+          "state": 2,
+          "target": 2,
+          "world": "dictionary:0,1,3,2"
+        }
+      ],
+      "individual_world_decoders_valid": true,
+      "minimum_known_reference_count": 3,
+      "minimum_reference_sets": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "uncalibrated_cross_world_decoder": false
+    },
+    "5": {
+      "candidate_dictionaries": 120,
+      "cross_world_collision_witness": [
+        {
+          "report": [
+            4
+          ],
+          "state": 4,
+          "target": 4,
+          "world": "dictionary:0,1,2,3,4"
+        },
+        {
+          "report": [
+            4
+          ],
+          "state": 3,
+          "target": 3,
+          "world": "dictionary:0,1,2,4,3"
+        }
+      ],
+      "individual_world_decoders_valid": true,
+      "minimum_known_reference_count": 4,
+      "minimum_reference_sets": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          4
+        ],
+        [
+          0,
+          1,
+          3,
+          4
+        ],
+        [
+          0,
+          2,
+          3,
+          4
+        ],
+        [
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "uncalibrated_cross_world_decoder": false
+    }
+  },
+  "self_relative_pattern": [
+    0,
+    1,
+    0
+  ],
+  "source_model": "stipulated complete finite tables; stable mappings only when explicitly constrained",
+  "status": "EXACT_FINITE_MODEL_ONLY",
+  "tests": "python -m unittest discover -s tests -p test_self_anchor_gauge.py -v"
+}

@@ -1,0 +1,119 @@
+{
+  "campaign": "OPERATION BLACK SUN",
+  "date": "2026-10-14",
+  "branch": "research/black-sun-independent-campaign-2026-10-14",
+  "base_main": "6e0d88f1b235b85188393bbcd64ac0436cb71a70",
+  "parent_stack": "origin/research/global-model-sandwich-2026-10-14@8ce8ebb",
+  "rh_proved": false,
+  "nontrivial_zero_inputs": false,
+  "claims": [
+    {
+      "id": "BS-A0",
+      "statement": "Contact identity: int_0^inf (e^{-x/2}-e^{-x})/(1-e^{-2x}) dx = log2/2 + pi/4; hence C_G = gamma + pi/2 + 3 log2 + log pi is the exact contact constant of the completed Weil Carleman representation",
+      "status": "PROVED LOCAL",
+      "verification": "hand derivation (substitution s=e^{-x/2}, partial fractions of 2/(1-s^4)) + 25-digit agreement in test_identity_flat_indicator",
+      "test": "tests/test_black_sun_window.py::TestContactTailTrap::test_identity_flat_indicator"
+    },
+    {
+      "id": "BS-A1",
+      "statement": "Windowed Carleman representation of the completed Weil form (BS-A1 formula in research doc): W(v*tilde v) = E_G - C_G||v||^2 + 2|<v,cosh>|^2 - 2|<v,sinh>|^2 - 2 sum_{n<e^{2a}} (Lambda(n)/sqrt n) Re<tau_{log n} v, v>",
+      "status": "PROVED LOCAL (representation) + TESTED MODEL (25-digit verification)",
+      "verification": "independent re-derivation from the original Weil distribution; flat indicator a=1/2 agrees to 25 digits; random piecewise-linear v within documented layer-tail bound",
+      "test": "tests/test_black_sun_window.py::TestContactTailTrap"
+    },
+    {
+      "id": "BS-A2",
+      "statement": "Elementary barrier: rho_a(x) = Kbar(x+a)+Kbar(a-x) with Kbar(z) = (1/2)log((1+e^{-z/2})/(1-e^{-z/2})) + arctan(e^{-z/2}); E_G(v) = (1/2) iint_{WxW} k_G|v-v|^2 + int_W rho_a |v|^2",
+      "status": "PROVED LOCAL",
+      "verification": "closed form matches the defining series to 24+ digits at 6 values",
+      "test": "tests/test_black_sun_window.py::TestKbarClosedForm"
+    },
+    {
+      "id": "BS-A3",
+      "statement": "Windowed archimedean+pole form = (1/2pi) int |v_hat|^2 Omega(u) du + pole terms, Omega(u) = Re psi(1/4+iu/2) - log pi; Omega(0) = -C_G; Omega < 0 exactly on |u| < 2pi (numerically Omega(2pi) = -1.06e-3); Omega ~ log(u/2pi)",
+      "status": "PROVED LOCAL (representation) + TESTED MODEL (sign-change location)",
+      "verification": "Omega(0) = -C_G to 18 digits; band values tested",
+      "test": "tests/test_black_sun_window.py::TestWindowSpectrum::test_omega_band_structure"
+    },
+    {
+      "id": "BS-A4",
+      "statement": "First-window spectrum: lambda_min(0.36) = +8.5e-4 (stable +-2e-6); lambda_min in [0.42,1.0] within 3e-4 of zero (sign not certified); archimedean+pole part alone lambda_0 = -0.43 at a=log(sqrt3), rescued to ~0 by the prime-2 atom; two near-null modes matching Shannon number 4a = 2 at a = 1/2",
+      "status": "TESTED MODEL (float64 Rayleigh-Ritz, M up to 3200, resolution documented)",
+      "verification": "refinement M=800..3200; A-vs-Q decomposition; multi-prime recon to a=1.0",
+      "test": "tests/test_black_sun_window.py::TestWindowSpectrum"
+    },
+    {
+      "id": "BS-A5a",
+      "statement": "Fake-6 blindness: a fake primitive composite impulse at log 6 is exactly invisible to the first-window spectrum (2a < log 6), visible once 2a >= log 6",
+      "status": "PROVED LOCAL (exact support statement) + TESTED",
+      "test": "tests/test_black_sun_window.py::TestWindowSpectrum::test_fake6_blind_on_first_window"
+    },
+    {
+      "id": "BS-A5b",
+      "statement": "Wrong-contact sensitivity: perturbing C_G by +2 log 2 flips lambda_min(0.36) from +8.5e-4 to < -1; by -2 log 2 inflates it to > +1.3; the razor-thin margin is exactly 2log2-scale",
+      "status": "TESTED MODEL",
+      "test": "tests/test_black_sun_window.py::TestWindowSpectrum::test_wrong_contact_sensitivity"
+    },
+    {
+      "id": "BS-A-trap",
+      "statement": "Contact tail trap: the Gamma/contact integral of the completed Weil distribution must run to infinity; for h supported in [-2a,2a] the part beyond is exactly +2 h(0) atanh(e^{-2a}) = 0.7719 at a=1/2, h(0)=1; truncating at supp(h) breaks the Carleman identity by that amount",
+      "status": "PROVED LOCAL + regression locked",
+      "test": "tests/test_black_sun_window.py::TestContactTailTrap::test_truncation_without_tail_breaks_identity"
+    },
+    {
+      "id": "BS-B1",
+      "statement": "Tauberian transfer: A(x) = log x + C + O(x^{-delta}) implies S(x) = x + O(x^{1-delta}) with explicit constant (3+1/(1-delta))B; no positivity used",
+      "status": "PROVED LOCAL",
+      "verification": "exact-integer Abel identity check on 2 sequences",
+      "test": "tests/test_black_sun_tauberian.py::TestAbelTransferIdentity"
+    },
+    {
+      "id": "BS-B2",
+      "statement": "Sharpness: for every 0<delta<1 the spike sequence b(2^j)=floor(2^{j(1-delta)}) gives A(x)=log x+C_a+O(x^{-delta}) with O(1) scaled jumps while S(2^J)-2^J ~ c_delta 2^{J(1-delta)}: theta(delta)=delta is optimal in the nonnegative class",
+      "status": "PROVED LOCAL + TESTED (delta=1/2, J=12..16: constants match)",
+      "test": "tests/test_black_sun_tauberian.py::TestSpikeSharpness"
+    },
+    {
+      "id": "BS-B3",
+      "statement": "Two-way authentic-source dictionary: A(x) = log x - gamma + O(x^{-delta}) iff psi(x) = x + O(x^{1-delta}); classically both equivalent to zeta zero-free in Re s > 1-delta (EXTERNAL THEOREM imports)",
+      "status": "PROVED LOCAL (transfer) + classical imports",
+      "verification": "E_A and (psi-N)/N track at matched N",
+      "test": "tests/test_black_sun_tauberian.py::TestLambdaDictionary::test_transfer_two_way_tracking"
+    },
+    {
+      "id": "BS-B4",
+      "statement": "Quantitative defect dictionary: D_N - (1-gamma) = [A(N) - log N + gamma] - E_fac(N) with E_fac(N) = (1/2)log(2 pi N)/N + O(1/N^2); the factorial-prime defect measures the weighted prime error at the same exponent as the Chebyshev error and the zero-free strip",
+      "status": "PROVED LOCAL + TESTED",
+      "verification": "log N! = sum Lambda floor(N/n) to 5e-48; dictionary residual within 30/N at N=20000",
+      "test": "tests/test_black_sun_tauberian.py::TestLambdaDictionary"
+    },
+    {
+      "id": "BS-C1",
+      "statement": "Defect cocycle: the parity word eps gives the affine branch composition 2^m (word map)(x) = 3^k x + c_eps over Q; positive integer m-cycles through n exist iff n = c_eps/(2^m-3^k) is a positive integer",
+      "status": "PROVED LOCAL (affine-map identity, exact) + TESTED",
+      "test": "tests/test_black_sun_collatz.py::TestDefectCocycle"
+    },
+    {
+      "id": "BS-C2",
+      "statement": "Valuation dictionary: v_3(c_eps)=0 and v_3(2^m-3^k)=0 always, hence no Collatz cycle element is divisible by 3; for p>=5, v_p(n) = v_p(c_eps) - v_p(2^m-3^k) with {(m,k): v_p(2^m-3^k)>=1} an explicit lattice coset (p=5: m == 3k mod 4)",
+      "status": "PROVED LOCAL + TESTED (p=5 lattice vs actual valuations, m<=24, k<=12; all cycle candidates length<=16 coprime to 3)",
+      "test": "tests/test_black_sun_collatz.py::TestValuationDictionary"
+    },
+    {
+      "id": "BS-C3",
+      "statement": "Finite chart scope: no nontrivial positive integer m-cycle for m <= 18 via exact enumeration of the cycle equation (only the trivial cycle 1<->2 with all word alignments)",
+      "status": "TESTED MODEL (exact finite certificate, matches classical verification)",
+      "test": "tests/test_black_sun_collatz.py::TestNoSmallCycles"
+    }
+  ],
+  "hostile_controls": [
+    "fake-6 impulse invisible on first window / visible beyond (BS-A5a)",
+    "wrong contact +-2log2 flips/inflates the spectrum (BS-A5b)",
+    "finite-compression blindness (IH-01) unchanged; discriminating directions = prolate band modes",
+    "no negative spectral witness found at any probed window (a in [0.36, 1.0], resolution 3e-4)",
+    "W-vs-Carleman cross-validation caught 3 implementation traps (contact tail, cross-cell factor, series tail)"
+  ],
+  "boundary": "Nothing proves RH, ABC, Goldbach, or Collatz. Spectral signs at the 1e-4 scale are not certified (no interval arithmetic). Scholarly novelty UNVERIFIED where labeled. The first-window inequality program (IH-2') is a plan, not a theorem.",
+  "tests_run": "python -m unittest tests.test_black_sun_window tests.test_black_sun_tauberian tests.test_black_sun_collatz",
+  "baseline": "tests.test_completed_weil_transport + tests.test_global_model_sandwich pass on parent stack"
+}

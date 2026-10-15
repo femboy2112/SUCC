@@ -1,0 +1,15 @@
+# Draft RH handoff — a source-derived Suzuki OU factorization and rigorous small-interval bound
+
+**Origin:** `SUCC` offshoot `research/suzuki-source-boundary-wavefront-2026-10-13`, parent `fb4fb91d46218ac121f4a4887f7322e79d3d0b70`. **Status:** PROVED LOCAL + TESTED FINITE; academic priority UNVERIFIED. **RH PROVED: no.** This handoff is deliberately kept on a non-main SUCC research branch and is not pushed into `FuckingRH`.
+
+**Primary source:** Suzuki, *Weil's quadratic form via the screw function*, [arXiv:2606.09096v3](https://arxiv.org/html/2606.09096v3), (1.3),(2.5),(8.7). Exact theorem, proofs, tests, and hostile source controls: [`SUZUKI_SOURCE_WAVEFRONT_ROUND_001.md`](../../research/2026-10-13/SUZUKI_SOURCE_WAVEFRONT_ROUND_001.md).
+
+**What changes for RH:** A mathematically source-identified decomposition of Suzuki's **complete** Archimedean compact `G_a` into a positive OU-resolvent bath, explicitly signed inverse-Neumann and pole rank-one terms, and genuine von Mangoldt prime-shift corrections. The positive bath has rigorously bounded compact-op tails, but *unbounded* differentiated-form tails. Therefore a one-sided lower-bound route (keep finitely many positive terms; discard the rest) avoids an otherwise fatal topology mistake. Using 64 genuine OU modes, rational enclosures certify `lambda_a>=281025667/1e10>0` for every `0<a<=1/12`. This is an explicit constructive realization of Suzuki's classical small-a positivity, **not** an RH result.
+
+**Sharp negative control:** At a single authentic prime jet `n=p^k`, `ell=log n`, near `a=ell/2`, the raw continuous prime hinge has HS norm `c(2a-ell)^2/sqrt6` but the differentiated prime-shift operator has norm **exactly `c=log p/sqrt n` for every `a>ell/2`** in the two-strip regime. Positive and negative chiral endpoint tent states attain `±c`, with diverging H¹ cost. Small `G_a` error does not provide a safe generalized `G_a,K_a` error.
+
+**Source mutants:** `Lambda(6)=0`, prime powers 4/8/9 genuine, wrong density `n^{-2/3}` rejected, wrong phase `log2` at n=4 rejected, and wrong threshold invalid. A positive OU covariance from another source is not a Weil identity. No nontrivial zero positions were used.
+
+**Precise missing result:** Establish for all `a>0` the correct signed domination `G_a ≽ c(a)K_a`, `c(a)>0` (Yoshida/Suzuki equivalent to RH), or derive Suzuki's conjectural holomorphic compact-limit identity with noncircular, source-faithful normalization and correct test domain. The current elementary exponential-kernel Schur lower bound fails well before first prime onset; simply adding more OU modes cannot fix the infinite-mode bound. A new boundary-sensitive energy/index inequality is required.
+
+**Reproduction:** test files `tests/test_suzuki_*.py`; `python scripts/suzuki_wavefront_probe.py`; committed JSON mathematical receipt. The isolated new tests are 23/23 PASS. Integrated remote branch CI has not yet been declared complete. Do not merge historical archives or promote a global positivity claim.

@@ -1,0 +1,47 @@
+{
+  "RH_proved": false,
+  "all_depth_shell_commutator": {
+    "RH_proved": false,
+    "detected_at_cell": 8,
+    "level": 2,
+    "nonzero_at_every_finite_depth_proved_by_formula": true,
+    "physical_sensor_installed": false,
+    "q": 3,
+    "signed_commutator": "1/5",
+    "source_cell": 9
+  },
+  "canonical_observable_quotient": 2,
+  "ghost_dual_product_rejected": "ghost_joint_states",
+  "independent_dual_product_certified": true,
+  "invariant_section_rejected": "noncommuting_carrier_square",
+  "matched_marginal_joint_mutant_rejected": "joint_receipt_state_law_mismatch",
+  "nested_mini_compilation": {
+    "certified": true,
+    "expanded_parent_primitive_steps": 6,
+    "new_primitive_action_created": false
+  },
+  "no_gamma_or_Weil_positivity_claim": true,
+  "no_nontrivial_zeta_zeros_used": true,
+  "origin": "femboy2112/SUCC",
+  "original_source_labels_not_read_by_compiler": true,
+  "source_access_with_new_declared_probe": true,
+  "source_attestation": false,
+  "stacked_parent_commit": "2b56342524f93dcbf280bedd44bb64da92b13412",
+  "stochastic_joint_factor_certified": true,
+  "unobservable_original_source": "target_not_in_parent_observation_closure",
+  "virtual_factor_certified": true,
+  "whole_family_cyclic_nonsplit": {
+    "RH_proved": false,
+    "counterexample_if_not_factor": null,
+    "equivariant_subcarrier_section_exists": false,
+    "mini_clock": 4,
+    "parent_clock": 12,
+    "proper_factor_is_nonsplit": true,
+    "surjective_successor_factor_exists": true
+  },
+  "zero_centered_shell_connection": {
+    "first_four_complementary_shells_zero": true,
+    "remaining_source_energy": "1/32",
+    "successor_projection_commutator": "2/3"
+  }
+}

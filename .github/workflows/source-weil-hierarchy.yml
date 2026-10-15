@@ -1,0 +1,39 @@
+name: Authentic Weil finite-source hierarchy
+
+on:
+  push:
+    branches:
+      - 'research/finite-source-weil-negative-depth-*'
+  pull_request:
+    paths:
+      - 'observational_succ/source_weil_hierarchy.py'
+      - 'tests/test_source_weil_hierarchy.py'
+      - 'research/2026-10-14/FINITE_SOURCE_WEIL_*'
+      - 'scripts/source_weil_hierarchy_probe.py'
+      - '.github/workflows/source-weil-hierarchy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rational_source:
+    name: Exact source and spectral envelopes (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[test]'
+      - name: Original prime/Gamma/pole/half-density and countermodel tests
+        run: python -m unittest discover -s tests -p 'test_source_weil_hierarchy.py' -v
+      - name: Exact finite-source reproducibility receipt
+        run: python scripts/source_weil_hierarchy_probe.py --verify research/2026-10-14/FINITE_SOURCE_WEIL_RECEIPT.json
+      - name: Frozen source provenance
+        run: python scripts/verify_provenance.py

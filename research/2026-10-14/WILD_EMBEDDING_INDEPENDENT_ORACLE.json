@@ -1,0 +1,42 @@
+{
+  "RH_proved": false,
+  "source": "Alexander_Hatcher_group_substitution_not_3D_geometry",
+  "status": "INDEPENDENT_INTEGER_MATRIX_CALIBRATION",
+  "unitriangular_detectors": [
+    {
+      "all_lower_upper_entries_zero": true,
+      "depth": 0,
+      "matrix_dimension": 2,
+      "nilpotency_class": 1,
+      "top_right_entry": 1
+    },
+    {
+      "all_lower_upper_entries_zero": true,
+      "depth": 1,
+      "matrix_dimension": 3,
+      "nilpotency_class": 2,
+      "top_right_entry": 1
+    },
+    {
+      "all_lower_upper_entries_zero": true,
+      "depth": 2,
+      "matrix_dimension": 5,
+      "nilpotency_class": 4,
+      "top_right_entry": 1
+    },
+    {
+      "all_lower_upper_entries_zero": true,
+      "depth": 3,
+      "matrix_dimension": 9,
+      "nilpotency_class": 8,
+      "top_right_entry": 1
+    },
+    {
+      "all_lower_upper_entries_zero": true,
+      "depth": 4,
+      "matrix_dimension": 17,
+      "nilpotency_class": 16,
+      "top_right_entry": 1
+    }
+  ]
+}

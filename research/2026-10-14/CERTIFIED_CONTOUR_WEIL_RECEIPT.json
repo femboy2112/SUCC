@@ -1,0 +1,74 @@
+{
+  "RH_proved": false,
+  "actual_completed_weil_comparison": {
+    "RH_proved": false,
+    "compact_test_space": "C_c^infty(R)",
+    "finite_contour_weighted_residue": "residue_theorem",
+    "full_Weil_positive": false,
+    "global_signed_distribution": "classical_Weil_explicit_formula",
+    "positive_if_enclosed_zeros_verified_on_line": true,
+    "source": "authentic_completed_xi",
+    "tail_sign_determined": false
+  },
+  "authenticated_external_physical_source": false,
+  "certificates": [
+    {
+      "bound_abs_error_ceiling": "1091/1000000",
+      "contour_nonzero_margin_floor": "29639/62500",
+      "inputs_are_zero_list": false,
+      "name": "xi small rectangle",
+      "vertices": 128,
+      "zero_count": 0
+    },
+    {
+      "bound_abs_error_ceiling": "20539/250000",
+      "contour_nonzero_margin_floor": "2057/1000000",
+      "inputs_are_zero_list": false,
+      "name": "xi square radius 7.5",
+      "vertices": 8192,
+      "zero_count": 0
+    },
+    {
+      "bound_abs_error_ceiling": "117/500000",
+      "contour_nonzero_margin_floor": "1471/200000",
+      "inputs_are_zero_list": false,
+      "name": "xi centered difference double zero",
+      "vertices": 128,
+      "zero_count": 2
+    },
+    {
+      "bound_abs_error_ceiling": "6187/1000000",
+      "contour_nonzero_margin_floor": "1368639/500000",
+      "inputs_are_zero_list": false,
+      "name": "reflection-symmetric nonEuler xi mutant",
+      "vertices": 128,
+      "zero_count": 2
+    }
+  ],
+  "complete_Weil_positivity_certified": false,
+  "fake_local_weil_strict_negative": {
+    "genuine_zeta_weil_sign_proved": false,
+    "local_weil_pairing_strict_upper": "-2147483648/7200305058375",
+    "negative_certified_for_odd_test": true,
+    "positive_integral_C8": "32768/2078505",
+    "source": "fake_reflection_nonEuler",
+    "synthetic_offline_zero_pair_squared_distance": "3/20",
+    "zero_input_oracle_used": false
+  },
+  "non_uniform_H1_scaling": {
+    "H1_seminorm_factor_squared": "1",
+    "inverse_width": 4,
+    "sixth_derivative_L1_factor": "262144",
+    "uniform_H1_tail_claimed": false
+  },
+  "parent_theta_blob": "2657d92f15fcd77e2232f2cf305561a090ff28ce",
+  "separate_immutable_parent_authentication_required": true,
+  "status": "SOURCE_CONDITIONAL_EXACT_POLYGON_WINDING",
+  "zero_tail_external_count_contract": {
+    "cutoff_T": 16,
+    "source": "N(T)<=T^2 for T>=3",
+    "test_a": "1/4",
+    "upper_A": "45086194040835/256",
+    "upper_tail": "3005746269389/43200"
+  }
+}

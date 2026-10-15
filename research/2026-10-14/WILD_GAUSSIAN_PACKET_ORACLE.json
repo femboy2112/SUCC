@@ -1,0 +1,38 @@
+{
+  "RH_proved": false,
+  "cases": [
+    {
+      "N": 8,
+      "norm_error": "0.0",
+      "observed_Gram_overlap": "0.20787957635076190855",
+      "observed_shift_residual_squared": "0.048489890588619422096",
+      "shift_identity_error": "7.64684117e-57",
+      "source_Gram_identity_error": "0.0",
+      "source_frequency_gap": "0.125",
+      "time_shift": 1
+    },
+    {
+      "N": 16,
+      "norm_error": "0.0",
+      "observed_Gram_overlap": "0.20787957635076190855",
+      "observed_shift_residual_squared": "0.048489890588619422096",
+      "shift_identity_error": "7.64684117e-57",
+      "source_Gram_identity_error": "0.0",
+      "source_frequency_gap": "0.0625",
+      "time_shift": 2
+    },
+    {
+      "N": 32,
+      "norm_error": "0.0",
+      "observed_Gram_overlap": "0.20787957635076190855",
+      "observed_shift_residual_squared": "0.0030656096814542923837",
+      "shift_identity_error": "1.00763063e-56",
+      "source_Gram_identity_error": "0.0",
+      "source_frequency_gap": "0.03125",
+      "time_shift": 1
+    }
+  ],
+  "not_a_solenoid_Weil_intertwiner": true,
+  "oracle": "NUMERICAL_GAUSSIAN_SOURCE_CALIBRATION_NOT_PROOF",
+  "precision_dps": 55
+}

@@ -1,0 +1,38 @@
+{
+  "campaign": "OPERATION BLACK SUN III",
+  "date": "2026-10-14 (night)",
+  "branch": "research/black-sun-iii-wild-limits-2026-10-14",
+  "parent": "research/black-sun-ii-coverage-theory-2026-10-14@1dc31da (PR #87)",
+  "rh_proved": false,
+  "nontrivial_zero_inputs": false,
+  "motivation": "operator's wild-embedding intuition (Alexander horned sphere): tame finite stages, wild limit, global-loop detection",
+  "claims": [
+    {
+      "id": "BS-III-1",
+      "statement": "BD distance instrument: dist(gamma, span{gamma_2..gamma_{k+1}}) in Bagchi-weighted l2, Gram entries closed-form via digamma at rationals (periodic decomposition + telescoping weights); gamma_1 = 0 identically; <gamma,gamma_2> = (log 2)/2 exact; sequence matches the published BD table (d_1=0.553943, d_2=0.309431, d_3=0.256811...)",
+      "status": "PROVED LOCAL (implementation) + EXTERNAL THEOREM (criterion: RH iff d_k -> 0, Nyman/Beurling/Baez-Duarte/Bagchi)",
+      "test": "test_black_sun_wild.py::TestBDClosedForms, TestBDDistanceSequence"
+    },
+    {
+      "id": "BS-III-2",
+      "statement": "Tame-tower faithfulness: windows a <= A determine the source exactly on n < e^{2A} and are blind beyond; the source-to-tower transport is tame; the difficulty of RH is exclusively in the sign of stages and the universal quantifier, never in the identification",
+      "status": "PROVED LOCAL",
+      "test": "test_visibility, test_recovered_weight"
+    },
+    {
+      "id": "BS-III-3",
+      "statement": "Two-mode reduction at a=1/2: the 2x2 effective matrix diagonal in the eigenbasis (machine precision); per-mode A/prime compensation (even +0.0119/-0.0119, odd -0.1600/+0.1601: the phase rescue visible in reduced form); complement margin lambda_2 = +0.018",
+      "status": "TESTED MODEL",
+      "test": "test_reduction_structure"
+    },
+    {
+      "id": "ALEX-CORR",
+      "statement": "The Alexander correspondence table: finite stages = windows/dilation spans; horn loops = global orthogonal witnesses; Cantor wild set = zero-set geometry (BM); the disanalogy stated (Alexander proves wildness; SUCC towers have unknown limit questions)",
+      "status": "STUDY (no theorem claim)",
+      "test": null
+    }
+  ],
+  "boundary": "Nothing proves RH. The BD criterion is classical and cited. New-in-repo: the exact closed-form instrument, gamma_1=0 bookkeeping, published-table regression lock, the tame-tower theorem packaging, two-mode reduction data. Alexander material is study-level.",
+  "tests_run": "python -m unittest tests.test_black_sun_wild (8 tests, PASS)",
+  "next_lemmas": ["BD-rate bridge to window spectra (unify the two RH-meters)", "two-mode interval certificate (IA-positivity of the 2x2 + profile-weighted complement bound at the 0.018 margin)"]
+}

@@ -1,0 +1,51 @@
+name: Recursive meta-model and certified theta contour
+
+on:
+  push:
+    branches:
+      - 'research/meta-interaction-contour-descent-*'
+  pull_request:
+    paths:
+      - 'observational_succ/recursive_model_interactions.py'
+      - 'observational_succ/recursive_operator_gluing.py'
+      - 'observational_succ/certified_contour_observer.py'
+      - 'observational_succ/theta_complex_simpson_bounds.py'
+      - 'observational_succ/recursive_proof_capsules.py'
+      - 'tests/test_recursive_model_interactions.py'
+      - 'tests/test_recursive_operator_gluing.py'
+      - 'tests/test_certified_contour_observer.py'
+      - 'tests/test_theta_complex_simpson_bounds.py'
+      - 'tests/test_recursive_proof_capsules.py'
+      - 'research/2026-10-14/META_*'
+      - 'scripts/meta_contour_probe.py'
+      - '.github/workflows/meta-contour.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  finite_meta_and_real_xi_contour:
+    name: source-meta and contour (${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[test]'
+      - name: Exact recursive models and signed Schur
+        run: python -m unittest discover -s tests -p 'test_recursive*.py' -v
+      - name: Exact contour and genuine theta replay
+        run: python -m unittest discover -s tests -p 'test_certified_contour_observer.py' -v
+      - name: Exact theta Simpson analytic error envelope
+        run: python -m unittest discover -s tests -p 'test_theta_complex_simpson_bounds.py' -v
+      - name: Frozen zero-independent finite source receipt
+        run: python scripts/meta_contour_probe.py --verify research/2026-10-14/META_CONTOUR_FINITE_RECEIPT.json
+      - name: Immutable ancestor provenance
+        run: python scripts/verify_provenance.py

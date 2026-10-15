@@ -1,0 +1,88 @@
+{
+  "Catalan_beta_2": "0.9159655941772190150546035149323841107741",
+  "GRH_proved": false,
+  "RH_proved": false,
+  "analytic_mellin": [
+    {
+      "error": "9.0628361258169e-9",
+      "label": "Euler 2",
+      "reference_completed": "1.16624361612327512055353782587358",
+      "rigorous_omitted_tail_upper_only": "0.00010469926319483",
+      "s": "2.0",
+      "theta_completed": "1.1662436070604389947366303014122"
+    },
+    {
+      "error": "4.7023261468319e-8",
+      "label": "Euler 3",
+      "reference_completed": "1.570796326794896619231321691639751",
+      "rigorous_omitted_tail_upper_only": "0.00010469926319483",
+      "s": "3.0",
+      "theta_completed": "1.570796279771635150911850999053046"
+    },
+    {
+      "error": "1.5090326575717e-9",
+      "label": "critical half",
+      "reference_completed": "0.9807136140577135040713719492032827",
+      "rigorous_omitted_tail_upper_only": "0.00010469926319483",
+      "s": "0.5",
+      "theta_completed": "0.9807136125486808464996371325358339"
+    },
+    {
+      "error": "9.0628361258169e-9",
+      "label": "outside Euler negative one",
+      "reference_completed": "1.16624361612327512055353782587358",
+      "rigorous_omitted_tail_upper_only": "0.00010469926319483",
+      "s": "-1.0",
+      "theta_completed": "1.1662436070604389947366303014122"
+    },
+    {
+      "error": "2.457099271805e-7",
+      "label": "outside Euler negative three",
+      "reference_completed": "2.404824780937198603897582677738982",
+      "rigorous_omitted_tail_upper_only": "0.00010469926319483",
+      "s": "-3.0",
+      "theta_completed": "2.404824535227271423398657226078763"
+    },
+    {
+      "error": "8.029572162369e-10",
+      "label": "critical imaginary 7",
+      "reference_completed": "(-0.02224594269727147818146634996686024 - 6.108069169720409266337433735249646e-63j)",
+      "rigorous_omitted_tail_upper_only": "0.00010469926319483",
+      "s": "(0.5 + 7.0j)",
+      "theta_completed": "(-0.02224594350022869441836582254928556 + 0.0j)"
+    },
+    {
+      "error": "9.096102354787e-10",
+      "label": "noncentral complex",
+      "reference_completed": "(0.4637345494945047621860066801568133 + 0.07958403061137743435281728160062099j)",
+      "rigorous_omitted_tail_upper_only": "0.00010469926319483",
+      "s": "(0.82 + 3.0j)",
+      "theta_completed": "(0.4637345490781708920865632137469248 + 0.07958403142011527141476794797985974j)"
+    }
+  ],
+  "beta_prime_minus_one": "0.5831218080616375602767689129367898377281",
+  "chiral_origin_equals_2pi_beta_prime": true,
+  "nontrivial_zero_inputs": false,
+  "precision": 60,
+  "prime_source": "primitive odd Dirichlet chi4, genuine Euler, conductor4",
+  "status": "INDEPENDENT_NUMERICAL_ORACLE_CLASSICAL_CHI4",
+  "tail_envelope_is_rational_but_finite_quadrature_not_certified": true,
+  "theta_modular": [
+    {
+      "relative_modular_error": "2.3336307292e-61",
+      "t": "0.3"
+    },
+    {
+      "relative_modular_error": "0.0",
+      "t": "0.5"
+    },
+    {
+      "relative_modular_error": "0.0",
+      "t": "2.0"
+    },
+    {
+      "relative_modular_error": "9.72346137166e-63",
+      "t": "5.0"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "ambient_conditioning_toy": {
+    "resolution_12_inverse_lipschitz_lower": "4096",
+    "resolution_2_inverse_lipschitz_lower": "4",
+    "toy_is_not_an_Alexander_horned_sphere": true
+  },
+  "campaign_date": "2026-10-14",
+  "claim_status": {
+    "Lean_topology_kernel_claimed": false,
+    "RH_PROVED": false,
+    "WA-01_to_WA-04": "CLASSICAL / SOURCE-SPECIALIZED PAPER PROOFS",
+    "WA-05_to_WA-13": "CLASSICAL TOPOLOGICAL INPUTS + EXACT ARITHMETIC CERTIFICATES",
+    "WA-06B": "PROVED ELEMENTARY PRO-KERNEL + SOURCE EXACT TESTS",
+    "WA-14_to_WA-15": "PAPER PROOF VIA ARZELA-ASCOLI, NO PRIORITY CLAIM",
+    "WA-16_to_WA-17": "CLASSICAL COMPACTNESS + EXACT FINITE FOLNER",
+    "WA-20": "DIRECT PAPER NO-GO: PURE POINT TO CONTINUOUS FLOW, NO BOUNDED INTERTWINER",
+    "Weil_form_identified_with_solenoid_gram": false,
+    "additive_adele_class_identified_with_multiplicative_idele_class": false,
+    "explicit_geometric_Alexander_embedding_built": false,
+    "original_nontrivial_zeta_zero_positions_used": false,
+    "real_physical_source_authenticated": false
+  },
+  "dual_localization": {
+    "distinct_primes_group": "squarefree-denominator subgroup of Q",
+    "dyadic_group": "Z[1/2]",
+    "extrinsic_embedding_stipulated_not_geometrically_verified": true,
+    "factorial_group": "Q",
+    "factorial_intrinsic_cech_value": "5",
+    "factorial_unknotted_exterior_value": "5",
+    "unknown_ambient_embedding_may_have_different_pi1": true
+  },
+  "exact_gram_gap_control": {
+    "Lebesgue_real_line_translation_no_L2_eigenfunctions_external_theorem": true,
+    "exact_character_half_at_real_1": "1/2",
+    "exact_character_one_twenty_at_real_7_over_13": "7/1560",
+    "folner_N_100": "818/1407",
+    "folner_N_1000": "818/14007",
+    "no_uniform_gap_for_these_shifts": true,
+    "nonzero_bounded_real_flow_intertwiner_exists": false,
+    "not_the_Weil_quadratic_form": true,
+    "solenoid_hilbert_real_flow_pure_point_external_theorem": true,
+    "steps": [
+      [
+        "1/2",
+        "1"
+      ],
+      [
+        "-2/3",
+        "2"
+      ],
+      [
+        "4/5",
+        "1/7"
+      ]
+    ]
+  },
+  "globalization": {
+    "distinct_prime_2_stage0_after_first_lift": 1,
+    "distinct_prime_2_stage1_persistent": 2,
+    "dyadic_mu2_stage0_after_one_lift": 1,
+    "dyadic_mu2_stage0_before_lift": 2,
+    "finite_circle_m6_kernel": 6,
+    "finite_kernel_projections_can_hide_global_kernel": true,
+    "inversion_deep_level": 5,
+    "inversion_m": 6,
+    "inversion_requested_level": 3,
+    "inverted_real_coordinate": "7/1584",
+    "m2_distinct_primes_automorphism": false,
+    "m2_distinct_primes_kernel": 2,
+    "m2_dyadic_automorphism": true,
+    "m3_dyadic_automorphism": false,
+    "m6_dyadic_kernel": 3,
+    "m6_factorial_automorphism": true,
+    "m6_factorial_kernel": 1,
+    "m_times_inverse_is_target": true,
+    "original_target_coordinate": "7/264",
+    "snake_delta_6_root_5": 5,
+    "snake_delta_6_root_5_expected": 5
+  },
+  "schema": "succ-wild-adelic-1",
+  "source": {
+    "basis": "common-real-profinite-phase",
+    "epoch": 14,
+    "source_id": "Z-source:0"
+  },
+  "source_domains": {
+    "distinct_primes_1_to_6": [
+      2,
+      3,
+      5,
+      7,
+      11,
+      13
+    ],
+    "dyadic_D_0_to_6": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "factorial_D_0_to_6": [
+      1,
+      2,
+      6,
+      24,
+      120,
+      720,
+      5040
+    ],
+    "factorial_degrees_1_to_7": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  "tail_obstruction": {
+    "matching_prefix": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "p_invertible_if_p_tail": true,
+    "p_invertible_if_r_tail": false,
+    "prefix_product": 210,
+    "source_law_equality_claimed": false
+  }
+}
