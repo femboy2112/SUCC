@@ -298,6 +298,111 @@ If \(\rho\) denotes *any* nontrivial zero of xi, the zero divisor of X contains 
 
 This is not a disproof of any proposed RH approach; it is an exact NO-GO for the shortcut "the centered completed Eisenstein object already has the original zeta one-line sign." The shift \(s\mapsto s-1\) must be removed (or justified as an independent carrier) **before** transporting a sign to the authentic zeta Weil object. Passing a large finite set of symmetric numerical checks would not fix this algebraic type error.
 
+### ETA-05D. The missing transducer becomes an EXACT heat-time Möbius operator (PROVED SOURCE IDENTITY)
+
+This is a stronger construction than equality of Dirichlet logarithmic derivatives. The **eta divisor heat current itself** can be converted into ordinary zeta heat by a source-defined operator without reading zeros or analytically continuing an Euler series.
+
+Start with the genuinely all-integer Lambert/eta current
+\[
+F(t)=\sum_{n\ge1}\sigma_1(n)e^{-nt},
+\qquad t>0.
+\]
+Define the signed multiplicative dilation of this *actual function*
+\[
+\boxed{
+(\mathscr M_\mu F)(t)
+:=\sum_{m\ge1}\mu(m)m\,F(mt),
+}\tag{ETA-05D1}
+\]
+where \(\mu\) is the ordinary Möbius function. For each t>0 this sum is absolutely convergent: \(|\mu(m)|\le1,\;\sigma_1(n)\le n^2\), and \(\sum_{m,n}mn^2e^{-mnt}<\infty\).
+
+Expanding the double sum and grouping by \(r=mn\) gives
+\[
+(\mathscr M_\mu F)(t)
+=\sum_{r\ge1}e^{-rt}
+\sum_{m\mid r}\mu(m)m\,\sigma_1(r/m).
+\]
+The parent divisor law \(\sigma_1=\mathbf1*\mathrm{id}\), together with
+\[
+(\mathrm{id}*(\mu\mathrm{id}))(r)
+=r\sum_{d\mid r}\mu(d)=\delta_{r,1},
+\]
+implies \(\sigma_1*(\mu\mathrm{id})=\mathbf1\). Thus EVERY coefficient, not just any numerical sample, equals 1:
+
+\[
+\boxed{
+\sum_{m\ge1}\mu(m)m\,F(mt)
+=\sum_{r\ge1}e^{-rt}
+=\frac1{e^t-1}
+\quad\text{for every }t>0.
+}\tag{ETA-05D2}
+\]
+
+**This is an actual source-domain transducer**, not an analogy: the modular eta divisor observation is converted to the ordinary positive zeta *linear heat tower*. The Möbius dilation is signed; it is NOT a positive operator on every positive input, and the output's positivity here comes from exact original multiplicative arithmetic cancellation. Source mutation \(\sigma_1(6)\mapsto\sigma_1(6)+1\) causes coefficient r=6 to become **2**, while the original remains **1**; exact no-floating certificate through every source index n<=N.
+
+Now Mellin of the **output function**, with its own valid domain Re(s)>1, gives
+\[
+\boxed{\int_0^\infty\frac{t^{s-1}}{e^t-1}\,dt
+=\Gamma(s)\zeta(s).}\tag{ETA-05D3}
+\]
+
+Crucial domain distinction: ETA-04 initially gives the original divisor Mellin only for Re(s)>2, but ETA-05D2 constructs its Möbius-canceled output directly for t>0; the output's Mellin integral has its larger *independently justified* domain Re(s)>1. No forbidden termwise Euler continuation is being used.
+
+### ETA-05E. The remaining Archimedean transducer is not a positive Laplace mixer (PROVED NO-GO)
+
+The source-true completed real Tate factor is also a Mellin heat transform, but with Gaussian-square labels:
+\[
+\boxed{
+\int_0^\infty
+\left(\sum_{n\ge1}e^{-\pi n^2u}\right)u^{s/2-1}\,du
+=\Gamma_{\mathbb R}(s)\zeta(s),
+\quad
+\Gamma_{\mathbb R}(s)=\pi^{-s/2}\Gamma(s/2),\quad\Re s>1.
+}\tag{ETA-05E1}
+\]
+
+One might hope to convert each positive linear heat kernel \(e^{-nt}\) to \(e^{-\pi n^2u}\) with a single source-blind positive mixing \(K_u(dt)\):
+\[
+e^{-\pi n^2u}=\int_0^\infty e^{-nt}\,K_u(dt)
+\quad\text{for every integer }n\ge1.
+\]
+**No such nonnegative mixing measure exists for any fixed u>0.**
+
+**Proof (finite obstruction at labels 1,2,3):** By Cauchy–Schwarz, every positive Laplace-mixture moment sequence \(a_n=\int e^{-nt}\,K_u(dt)\) is log-convex:
+\[
+a_{n+1}^2\le a_na_{n+2}.
+\]
+But Gaussian-square moments give the exact opposite inequality:
+\[
+\boxed{
+\frac{a_{n+1}^2}{a_na_{n+2}}
+=e^{2\pi u}>1
+\qquad\forall n\ge1,\ u>0.
+}\tag{ETA-05E2}
+\]
+Thus a **source-blind positivity-preserving Laplace mixture is mathematically impossible**, even on the discrete natural labels. This does NOT preclude a lawful *source-indexed nonlinear relabeling* \(n\mapsto n^2\), Fourier/Poisson transform, signed integral kernel, or another genuine operator transport; it kills one tempting shortcut precisely.
+
+### Revised transducer schematic (what is completed, what is still missing)
+
+\[
+\boxed{
+\begin{aligned}
+\eta\text{ modularly normalized at }1/24
+&\longrightarrow F(t)=\sum\sigma_1(n)e^{-nt}\\
+&\xrightarrow{\;\sum\mu(m)mF(mt)\;}
+H(t)=\frac1{e^t-1}\\
+&\xrightarrow{\;\text{Mellin}\;}
+\Gamma(s)\zeta(s)\\
+&\xrightarrow[\text{NOT via positive label-blind Laplace mixing}]
+{\text{original Gaussian/theta source relabeling and Poisson}}
+\Gamma_{\mathbb R}(s)\zeta(s)\\
+&\dashrightarrow \text{signed completed Weil distribution}\\
+&\dashrightarrow \text{SOURCE-DERIVED ALL-TEST POSITIVITY (RH-HARD)}.
+\end{aligned}}
+\]
+
+This is the most concrete response yet to the maintainer's "missing transducer" hypothesis: **we constructed the exact arithmetic Möbius heat transducer, and proved a sharp restricted positivity NO-GO for the next real-place Gaussian transport.** Both are classical identities/inequalities assembled source-faithfully; academic novelty remains UNVERIFIED. Neither constructs a globally positive Weil form or solves RH.
+
 ## ETA-06. Why the number 24 is worth following, but not worshiping
 
 1. **Heat finite part:** \(1/24=-\zeta(-1)/2\), recovered from rational Laurent coefficients of the additive tower (CLASSICAL).
