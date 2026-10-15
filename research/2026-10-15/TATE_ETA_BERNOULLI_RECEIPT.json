@@ -1,5 +1,5 @@
 {
-  "schema": "SUCC_TATE_ETA_BERNOULLI_2026_10_15_v5",
+  "schema": "SUCC_TATE_ETA_BERNOULLI_2026_10_15_v6",
   "status": "CANONICAL_MODULAR_BRIDGE_NOT_RH",
   "bernoulli": {
     "zeta_minus_one": "-1/12",
@@ -142,6 +142,17 @@
     ],
     "wrong_shift_detected": true,
     "source_zero_lookup": false,
+    "RH_proved": false
+  },
+  "Tate_completed_xi": {
+    "test_parameter_s": "5/2",
+    "two_pole_component": "4/15",
+    "completed_pole_cancellation": "1/2",
+    "real_Gamma": "pi^(-s/2)*Gamma(s/2)",
+    "classical_xi": "xi(s)=s*(s-1)/2*Gamma_R(s)*zeta(s)",
+    "functional_equation": "xi(s)=xi(1-s) (classical imported Poisson)",
+    "nontrivial_zero_lookup": false,
+    "all_test_Weil_sign_proved": false,
     "RH_proved": false
   }
 }
