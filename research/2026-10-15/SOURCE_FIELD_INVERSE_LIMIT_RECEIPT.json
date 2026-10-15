@@ -1,5 +1,5 @@
 {
-  "schema": "SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v3",
+  "schema": "SUCC_SOURCE_FIELD_INVERSE_LIMIT_2026_10_15_v4",
   "source_schemas_are_NOT_empirical_attestation": true,
   "simple": {
     "field": "SimpleField",
@@ -103,5 +103,16 @@
     "paired_neutral_signed_old_and_new_equal": true,
     "paired_features_both_changed": true,
     "original_source_all_a_contraction": false
+  },
+  "unique_effective_compact_selector": {
+    "source": "SYNTHETIC_DECIDABLE_UNIQUE_BRANCH_TREE",
+    "requested_bit_index": 3,
+    "finite_budget_eleven_unresolved": true,
+    "finite_budget_twelve_computes_bit": true,
+    "computed_bit": 0,
+    "finite_agreement_proves_bit": true,
+    "math_theorem": "unique path of decidable infinite binary tree is computable",
+    "unknown_depth_does_not_imply_noncomputable_path": true,
+    "RH_proved": false
   }
 }
