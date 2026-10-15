@@ -26,3 +26,9 @@
 **Acceptance before any RH claim:** verified FULL Schwartz/Weil source, all-stage genuine signed Schur/range positivity via novel noncircular inequality or independently positive kernel identity, appropriate LF/form topology and all a, stringent fresh holdouts. Number of unit tests is not a universal positivity proof.
 
 **RH PROVED: NO.**
+
+
+| A15 | CLASSICAL / PROVED finite-adèle strong approximation | For all finitely supported p-local fractional cosets, q=sum a_p/p^r maps to every source class; A_f=Q+Zhat, Q∩Zhat=Z, so A_f/Zhat≅Q/Z with DISCRETE topology | Exact rational all-local class and addition receipts; original prime p=6 refused | Not global Poisson or signed Weil |
+| A16 | CLASSICAL / PROVED adelic real–profinite quotient | (R×Zhat)/Z ≅ A_Q/Q by constructive strong approximation; diagonal Q discrete, quotient compact | Analytic/topological proof in ATOM_ADELE_SOLENOID_SOURCE.md; finite exact source quotient controls | Global Schwartz/Hecke zeta and RH remain open |
+
+**New source interface:** observational_succ/tate_adele_quotient_descent.py, tests/test_tate_adele_quotient_descent.py. The classical topological quotient is a paper proof, not an infinitely executed computer run; a source label cannot attest actual physical adeles.
