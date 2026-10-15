@@ -1,7 +1,7 @@
 # Carrier → Tate → Weil: research synthesis and live boundary
 
 **Date:** 2026-10-15. **Parent:** `d239c27d3759de71de316180f48dfc097be6aff5`.
-**Branch:** `research/carrier-tate-weil-2026-10-15`, stacked above draft PR #129.
+**Branch:** `research/carrier-tate-weil-2026-10-15`, [draft PR #131](https://github.com/femboy2112/SUCC/pull/131), stacked above draft PR #129.
 **Status:** classical reconstruction, exact source interfaces, analytic bounds,
 and scoped refutations. Internal adversarial review is not external peer review.
 
@@ -145,8 +145,12 @@ they are not claimed observations of the canonical arithmetic source.
 
 ## 5. Validation policy and next verdict-changing experiment
 
-See `CARRIER_TATE_WEIL_VALIDATION.json` for executed commands, exact source
-state and checked CI. The parent exact head's full Python 3.10/3.13 repository
+The final local full suite passed **3,597 tests** and the focused suite passed
+**119** (52 inherited, 67 new). Required provenance and observer probes passed;
+the exact source receipt replays byte-for-byte. See
+`CARRIER_TATE_WEIL_VALIDATION.json` and retained compressed logs for commands,
+source hashes and results. Exact final-head remote CI observations are recorded
+in draft PR #131 separately from this prepublication local receipt. The parent exact head's full Python 3.10/3.13 repository
 CI was independently observed successful before this branch was published.
 The local runtime is Python 3.12; dependencies were initially missing, then
 installed from the project's declared test extra. The initial incomplete run
