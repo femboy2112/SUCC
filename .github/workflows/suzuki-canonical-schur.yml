@@ -1,0 +1,48 @@
+name: Source-canonical Suzuki moment Schur certificates
+
+on:
+  push:
+    branches:
+      - research/suzuki-canonical-moment-schur-2026-10-14
+  pull_request:
+    paths:
+      - 'observational_succ/suzuki_moment_schur.py'
+      - 'tests/test_suzuki_moment_schur.py'
+      - 'research/2026-10-14/SUZUKI_CANONICAL_SCHUR_RECEIPT.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  authentic-source-signed-schur:
+    name: Pinned prime/Gamma × moment Schur (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify original source provenance and receipt
+        run: |
+          python scripts/verify_provenance.py
+          python scripts/suzuki_moment_schur_probe.py --verify research/2026-10-14/SUZUKI_CANONICAL_SCHUR_RECEIPT.json
+      - name: Run all exact source/Legendre/Feshbach tests
+        run: python -m unittest discover -s tests -p 'test_suzuki_moment_schur.py' -v
+      - name: ACTUAL PINNED Suzuki finite source full 30-by-30 low Schur
+        run: |
+          python scripts/suzuki_moment_schur_probe.py --source-stage > "$RUNNER_TEMP/real-source-schur.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          r=json.loads((Path(os.environ['RUNNER_TEMP'])/'real-source-schur.json').read_text())
+          assert r['stage']=='authentic_Suzuki_PR85_J2_N4'
+          assert r['low_modes']==30 and r['parity_blocks']==[15,15]
+          assert r['source_gamma_gain'] is True and r['RH_proved'] is False
+          print('ORIGINAL_SUZUKI_30_LOW_MODE_MATRIX_CONSTRUCTED')
+          PY
