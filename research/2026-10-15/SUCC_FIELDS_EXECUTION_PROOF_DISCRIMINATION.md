@@ -209,3 +209,64 @@ Tests: tests/test_field_completion_gates.py
 Finite tests are exact integer/Fraction/finite tables. They do **not** execute the universal Turing-machine diagonal or validate the infinite topological proofs, source authentication, actual physical device access, or RH.
 
 **Academic priority:** classical source material is attributed. No unverified novelty claim. The useful contribution is the operational specification, target-relativized field semantics and its rigorous controls inside SUCC.
+
+
+## 12. FT-11 — The exact observational factorization gate (ELEMENTARY PROVED THEOREM)
+
+Let W be any set of source-valid global worlds, let O:W->R be their lawful complete observational transcript map, and let G:W->Y be a target. Define the actually observed image R_obs=O(W).
+
+**Theorem.** There exists a (necessarily unique on R_obs) set-theoretic decoder
+
+    g:R_obs->Y with G = g o O
+
+if and only if
+
+    for all w,w' in W, O(w)=O(w') implies G(w)=G(w').
+
+Proof: necessity is immediate by applying g. For sufficiency define g(r)=G(w) for any w with O(w)=r. The stated fiber-invariance guarantees independence of which w was selected. Uniqueness follows from surjectivity O:W->R_obs.
+
+For a complete finite W with explicit lawful probes, this is executable by exact grouping of reports and checking target values. SUCC already provides this via FiniteField.factor in field_relative_closure.py. **For an infinite carrier it is only an existence theorem.** Constructing a computable decoder, obtaining a finite list of *actual realizable probes*, proving source-completeness, and showing preservation by all causal histories are additional gates.
+
+A recursive meta-SUCC model made only by manipulating O(w) can at most factor through O. Therefore it cannot repair a failure of this theorem by adding more descriptions of descriptions. Repair requires at least one of:
+1. new original-source probe(s) that refine O and split the offending fiber;
+2. a stronger source-valid law proving G constant on each old fiber;
+3. changing the target to an invariant the probes actually determine.
+
+For full inverse-limit stage observations O(x)=(pi_n(x))_n, the canonical O is injective by the definition of inverse limit. Phantom pairs then require source information beyond that O, or a smaller experimentally available probe map. **Do not call the canonical inverse limit itself nonunique.**
+
+This is the atomic "model-of-model to finite/global proof" step: the global target must descend to the observer quotient, with a separate **computable/finite-proof** question about the descended map.
+
+## 13. FT-12 — Continuous finite targets on profinite limits have a finite uniform observation depth
+
+Let X=lim_n X_n be a nonempty inverse limit of finite discrete spaces, with the inverse-limit compact Hausdorff topology. Let Y be a FINITE discrete output space and f:X->Y be continuous.
+
+**Theorem (classical compactness).** There exists one finite stage N and a map f_N on the reachable stage image pi_N(X) such that
+
+    f = f_N o pi_N.
+
+Proof: continuous f has clopen fibers. Finite-stage cylinder sets pi_n^(-1)({a}) form a base of the inverse-limit topology. For every x choose a cylinder neighborhood on which f is constant. Compactness yields finitely many such cylinders covering X. Choose N larger than all their depths. Each nonempty depth-N cylinder lies inside at least one chosen cylinder, so f is constant on it. This defines f_N. No infinite evaluation is needed once an effective N and decoder are supplied.
+
+**Sharp control:** X=Z_2 and f(x)=1 iff x=0, else 0. For every N, points x=0 and y=2^N agree modulo 2^k for all k<=N but have different f-values. Thus no finite stage factors f: the Boolean exact-zero target is DISCONTINUOUS. Also y=2^N converges to 0 in the 2-adic topology, while f(y)=0 and f(0)=1.
+
+This is precisely why "there could be a distinguishing finite example unimaginably far out" must be typed:
+
+* For CONTINUOUS finite-valued targets on compact profinite towers, a uniform finite distinguishing stage EXISTS by theorem, though a given weak proof toolkit might not be able to EXTRACT it effectively.
+* For DISCONTINUOUS global predicates (such as exact equality-to-zero on Z_2), no uniform finite stage need exist, even though any known source element might admit a finite symbolic proof of the target.
+* For hidden source properties not represented in the inverse-limit topology, topological continuity of a different target does not solve the source-map ambiguity.
+* For NONCOMPACT towers, even existence of a global point can fail.
+
+**Tate qualification:** A_Q/Q is connected, not profinite. The theorem cannot be transported by silently replacing circle/Archimedean stage spaces with finite discrete sets. Moreover, any nonconstant continuous map from a connected space to a finite discrete set is impossible, but this says nothing directly about RH: the signed completed Weil functional is a different analytic object on a specified test space, not a generic Boolean function of a solenoid point.
+
+**Execution versus proof:** this compactness theorem proves existence of a finite N. It need not provide an executable *procedure extracting N* from an arbitrary presentation of f. Simple versus IdealHard still depends on effective naming, proof extraction, carrier access and the target.
+
+### Combined gate theorem (classical components, operational synthesis)
+
+A rigorous recursive finite-to-global SUCC certificate must discharge **three logically different requirements**:
+
+    (A) global existence / compatibility (compactness or actual source gluing);
+    (B) target descent / discrimination (G factors through lawful observation);
+    (C) effective witness or verified finite proof (relative to carrier and toolkit).
+
+FT-02 separates (A) from an executable witness (C); FT-03 refutes (A) without compactness; FT-05 refutes (B) with phantom source data; FT-12 provides a sufficient compact/continuous case where (B) admits a finite stage but effective bound extraction remains a separate (C) task.
+
+This is an interface specification for mathematical proofs, not a shortcut to Weil positivity.
