@@ -251,3 +251,10 @@ The code tests the analytic formulas with independent high-precision values at r
 The objective is source-correct **identification and discriminating probes**, not the assertion of an unproved RH breakthrough.
 
 **RH PROVED: NO.**
+
+
+## APOLLO source factorization phase — companion theorem
+
+The follow-on [APOLLO_KREIN_SOURCE_FACTOR.md](APOLLO_KREIN_SOURCE_FACTOR.md) supplies an **exact true-source** positive-minus-positive factorization of the original signed continuous Suzuki anchored kernel on every finite window. Its Gamma OU, real polar, genuine Euler prime-interval and Brownian contact channels reproduce the full signed Weil mixed D² and prime δ' mixed D³. Each channel is a separately genuine positive Hilbert feature, but their **difference** is not proven nonnegative. The resulting full-source Hilbert contraction K4 is RH-equivalent and UNVERIFIED.
+
+A new source-gluing obstruction K5 shows that genuine newly activated prime factors appear as a nontrivial equal positive/negative feature pair on previously observed intervals, although the signed kernel restriction is unchanged. Any coherent transport of contractions across all a must account for such Krein-neutral births; equality of signed kernels alone cannot justify literal inclusion of both positive and negative feature representations.
