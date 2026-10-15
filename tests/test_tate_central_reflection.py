@@ -8,7 +8,7 @@ from observational_succ.tate_central_reflection import (
     central_Gamma_Brownian_contact, actual_center_high_prime_power_tail,
     high_jet_reflection_residual_contract,
     finite_prime_reflection_counterterm_tape,
-    reflected_center_jet_offline_mutant,
+    reflected_center_jet_offline_mutant, theta_selfdual_reflection_gauge,
 )
 from observational_succ.source_weil_hierarchy import (
     contact_iv, log_iv, sqrt_inverse,
@@ -151,6 +151,27 @@ class HalfDensityPrimeJets(unittest.TestCase):
         for primes in ((2,6),(3,2),(2,2),(True,3),(),(2.0,3)):
             with self.assertRaises(TateReflectionGateError):
                 finite_prime_reflection_counterterm_tape(primes,2)
+
+
+class CanonicalRealThetaReflectionGauge(unittest.TestCase):
+    def test_poisson_forces_quarter_density_in_log_heat_source(self):
+        canonical=theta_selfdual_reflection_gauge()
+        self.assertEqual(canonical["source"],"ORIGINAL_ONE_REAL_GAUSSIAN_THETA_POISSON")
+        self.assertEqual(canonical["unique_exact_theta_selfdual_exponent"],F(1,4))
+        self.assertEqual(canonical["log_reflection_ratio_slope_in_heat_log_coordinate"],0)
+        self.assertTrue(canonical["full_theta_log_kernel_even_for_all_x"])
+        self.assertFalse(canonical["derivative_detects_wrong_normalization"])
+        self.assertTrue(canonical["real_Gamma_R_and_polar_completion_still_required"])
+        self.assertFalse(canonical["RH_proved"])
+        for w,slope in ((F(0),F(1,2)),(F(1,8),F(1,4)),
+                        (F(1,2),F(-1,2))):
+            x=theta_selfdual_reflection_gauge(w)
+            self.assertTrue(x["value_only_at_reflection_fixed_heat_time_t_one_blind"])
+            self.assertEqual(x["log_reflection_ratio_slope_in_heat_log_coordinate"],slope)
+            self.assertTrue(x["derivative_detects_wrong_normalization"])
+            self.assertFalse(x["full_theta_log_kernel_even_for_all_x"])
+        with self.assertRaises(TateReflectionGateError):
+            theta_selfdual_reflection_gauge(0.25)
 
 
 class ReflectionWithoutArithmeticIsNotRH(unittest.TestCase):
