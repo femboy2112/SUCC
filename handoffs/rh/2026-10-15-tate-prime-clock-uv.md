@@ -35,6 +35,8 @@ Q_\Gamma(f)\ge \bigg[\sum_{j=0}^{15}\frac4{4j+1}-16\cdot\frac1{16}\bigg]\|f\|^2 
 
 This is a **universal restricted-cone theorem**, not finite Gram sampling. It does NOT establish all-tests positivity, any enlarged all-a contraction, the conjectural global Suzuki spectral limit, or RH.
 
+**True-prime hostile holdout:** Choose any nonzero smooth bump phi compactly supported on J=(-31/64,-29/64), set f(t)=phi(t)+phi(t-log2). Pinned rational log2 intervals put both bumps inside (-1/2,1/2); combined support <=1/16. The genuine prime-2 contribution is EXACTLY -(log2/sqrt2)||f||² (sharp negative translation norm), yet the full Weil form is >||f||²/24 by the source Gamma/contact/polar proof. This is an infinite-dimensional authenticated source family, not a synthetic witness or sampled Gram. Still not RH.
+
 ## Adversarial controls
 
 - Original-shaped rational synthetic clock b=3/4, a=1/2, four anchored samples: signed prime-only energy -1/4, Brownian energy 1/4, exact relative negative -1. This REFUTES positive-per-prime and naive window-norm continuity.
