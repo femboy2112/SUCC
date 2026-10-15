@@ -59,3 +59,6 @@ The user intuition about recursively building models could be load-bearing if it
 - If T1/Tate source complete but P1 fails, report **Tate SUCC COMPLETE WITH RH STILL OPEN**, which is a legitimate achievement in its own right. If P1 is proved, independently audit every source and analytic limit before claiming RH.
 
 **RH PROVED: NO.**
+
+
+**ATOM-V carrier gate already discharged at classical object level:** constructive A_f=Q+Zhat, Q∩Zhat=Z, A_f/Zhat=Q/Z (DISCRETE quotient), and the actual compact real–profinite solenoid (R×Zhat)/Z≅A_Q/Q. The finite p-primary coset generator and rational diagonal Q lift have exact tests. This closes a genuine finite-to-Arch arithmetic *carrier* gap; the next Tate work is GLOBAL TEST FUNCTIONS + POISSON, not rediscovering the underlying additive adele quotient. The subsequent RH-sign bridge remains independent.
