@@ -17,6 +17,7 @@ The handoff contract is [docs/RH_HANDOFF.md](../../docs/RH_HANDOFF.md). A docume
 - [Source-canonical Suzuki moment Schur](2026-10-14-canonical-moment-schur.md) — pinned PR #85 finite authentic Weil/Gamma source meets PR #86's 30-moment high positivity; canonical Legendre 15+15 source-signed low block and regularized one-sided Gamma Schur error, with an explicit grid-resolution wall. **No unshifted Weil sign or RH proof.**
 - [ATOM — bijective finite-observer Tate construction](2026-10-15-observer-tate-atomic-descent.md) — canonical profinite model-of-model bijection, exact Qp two-axis Fourier and CRT finite/real additive character transport, with an explicit true-Weil Schur-growth obligation; **full Tate Poisson and RH remain open**.
 - [SUCC Simple/IdealHard/Fucked finite-to-global and Hilbert contraction](2026-10-15-field-limit-trichotomy-and-contraction.md) — exact effective Kleene-tree and source-phantom controls, compact closed-fiber reconstruction, and a uniform WOT-contraction gluing theorem; **authentic Weil all-test sign still open**.
+- [ORDINAL SUCC — Goodstein-ranked finite normalizers and probabilistic epochs](2026-10-15-ordinal-ranked-succ-martingales.md) — exact huge finite recursive task certificates, authentic p-adic Tate support/precision rank descent, a.s. hazard theorem, and honest missing Weil terminal-sign gate; **not RH**.
 - [Template](TEMPLATE.md) — required mathematical scope, provenance, adversarial controls and next proof obligation.
 
 RH remains unsolved. A handoff document is **not** an assertion of an RH proof.
