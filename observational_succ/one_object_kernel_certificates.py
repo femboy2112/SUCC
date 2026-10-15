@@ -38,6 +38,9 @@ def authentic_suzuki_g_interval(t: int | F, J: int = 128) -> tuple[F,F]:
 def authentic_kernel_interval(x: int | F, y: int | F, J: int = 128) -> tuple[F,F]:
     """K_g(x,y)=g(x-y)-g(x)-g(-y)+g(0), exact outward interval."""
     a,b=_fraction(x),_fraction(y)
+    if a==0 or b==0:
+        # Exact anchored cancellation: do not inflate a-b-b with interval dependency.
+        return F(),F()
     diff=authentic_suzuki_g_interval(a-b,J)
     gx=authentic_suzuki_g_interval(a,J)
     gy=authentic_suzuki_g_interval(b,J)
