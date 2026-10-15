@@ -267,6 +267,11 @@ class GaussianInteger:
     def __post_init__(self) -> None:
         if not isinstance(self.real, IntegerLoop) or not isinstance(self.imag, IntegerLoop):
             raise EdgeCarrierError("Gaussian coordinates require completed integers")
+        # Unlike the historical raw IntegerLoop event presentation, Z[i] is
+        # a QUOTIENT RING: equal group-completion arrows must have one
+        # canonical object-level representation.
+        object.__setattr__(self, "real", self.real.canonical())
+        object.__setattr__(self, "imag", self.imag.canonical())
 
     @classmethod
     def from_pair(cls, a: int, b: int) -> "GaussianInteger":
