@@ -158,3 +158,92 @@ For fixed admissible E, the original Cc-infinity domain extends by continuity to
 give a finite H¹ continuity modulus since \(\int_0^1t²k_G(t)dt<\infty\) and \(\int_1^\infty k_G(t)dt<\infty\). The finitely many authentic prime translations, contact and rank-two pole terms are H¹-continuous as well. S2–S5 therefore pass to H_0¹(E) by density. This does NOT assert an everywhere bounded operator on bare L²(E), nor a positive form on the whole ambient Sobolev space H_0¹(-a,a).
 
 **Source acceptance:** the software checks strict SHA, prime-power labels, original rational contact/log/sqrt bounds, exact rational measure BUDGETS and explicit translated packet endpoints. An arbitrary claimed bound for a user-supplied E is a conditional hypothesis, not an observed or measured event. Fixed packet E_2 and E_n are source-constructed mathematical objects with certified measure and placement.
+
+
+## 7. S7 — A true source-positive Hilbert contraction on each activated domain
+
+The parent APOLLO K2 constructs *independent* authentic Hilbert feature spaces H_plus and H_minus with true original point kernel
+\[
+K_g(x,y)=\langle\Phi_+(x),\Phi_+(y)\rangle
+-\langle\Phi_-(x),\Phi_-(y)\rangle
+\]
+for every x,y in a fixed bounded source window. This exact signed decomposition retains true Gamma OU modes, true prime-powers with their log/sqrt weights, one contact, and both pole signs. Neither feature family was synthesized by assuming RH.
+
+For any one FIXED admissible small-support E above, define for f∈C_c^\infty(E)
+\[
+A_\pm(f)=\int_{-a}^a f'(x)\Phi_\pm(x)\,dx.
+\]
+The Bochner integrals are well-defined since each source feature is continuous and bounded on the compact test window, and f' has compact support. Source identification plus two integrations by parts gives
+\[
+\|A_+f\|^2-\|A_-f\|^2=Q_\zeta(f)\ge c_E\|f\|_2^2.
+\]
+Consequently the map \(T_E^0(A_+f)=A_-f\) is WELL-DEFINED and contractive on the positive-feature image: if A_+f=0 then A_-f=0, and \(\|T_E^0z\|\le\|z\|\). It extends to the closed source-positive feature span. The Hilbert feature
+\[
+\Psi_E(f)=(I-T_E^*T_E)^{1/2}A_+(f)
+\]
+therefore obeys the **authentic source** polarized identity
+\[
+\boxed{\langle\Psi_E(f),\Psi_E(h)\rangle=Q_\zeta(f,h)
+\quad\forall f,h\in C_c^\infty(E).}\tag{S7}
+\]
+
+This is NOT a positive feature factor for K_g at all points in [-a,a]. It is a proof-earned contraction **on each certified fixed linear test domain**; the quadratic sign was obtained independently by Gamma/sparsity and original Euler bounds. S7 is genuine progress through nontrivial prime-active Hilbert domains, but does not produce RH or the global all-a T_a. Naively gluing independently constructed positive/negative point features across prime births is not legitimate: APOLLO K5 proves those births can be signed-neutral while altering both Hilbert feature carriers.
+
+## 8. S8 — Exact domain connection to PR #107's Suzuki low/high Neumann shorting
+
+The parallel TATE×SUZUKI PR #107 (head 44d7f699dc2e3e29225d2aad0557bfb1360c97e1 at audit) proves an authentic first-prime a=1/2 cross-range theorem conditional on the pinned AMW-06B high-sector source inequality. Its **low Schur sign remains UNVERIFIED**. No code from this concurrent branch is cherry-picked or rewritten here.
+
+On H=L²_0(-1/2,1/2), let G_{1/2} be the exact signed Suzuki compact operator, V the mean-zero Neumann primitive, and K=V*V=(-Δ_N)^-1. For every f∈C_c^\infty(E_2) set u=i f'. Then u∈H, V u=i f, and Suzuki's true source pairing yields
+\[
+\boxed{
+\langle G_{1/2}u,u\rangle
+=Q_\zeta(f)>\frac35\|f\|_2^2
+=\frac35\langle Ku,u\rangle .
+}\tag{S8}
+\]
+This is **Neumann-relative** (K), not a false constant L² gap for compact G. Its test vectors generally have BOTH low and high 30-Legendre components. Restriction to the sparse packet domain does not survive arbitrary orthogonal P_low / P_high projection, so this is NOT evidence that the full low Schur A-R_0≥0.
+
+The precise moment-map distinction is instructive. On ANY nonempty open packet U, the map \(f\mapsto(\int x^jf(x)dx)_{j<30}\) from C_c^\infinity(U) is SURJECTIVE. If a nonzero linear combination of these moments vanished on all f, its representing polynomial would vanish as a distribution on U and hence be identically zero, contradiction. A rational Vandermonde of 30 distinct points inside the original p2 packet is independently checked with exact Fraction arithmetic. For u=i f', integration by parts gives pairings with Legendre modes 1..30 through polynomials P_k' of degrees 0..29. Their leading coefficients are nonzero, so the low Legendre projection map is also SURJECTIVE.
+
+**Critical missing quantitative ingredient:** such a low moment realization can carry arbitrarily large high-sector or derivative norm as U becomes narrow. Surjectivity gives no uniformly bounded inverse and no sign of the authentic low Schur. The S7 local contraction on one sparse E is not invariant under the full Suzuki low/high decomposition. The missing actual 30×30 source pairings M_Z,E_Z and their sign, as highlighted by PR #107, remain the correct next computation.
+
+The two positive-sector programs do have a nontrivial INTERSECTION: if f=φ^(30) for smooth compact φ supported in an admissible E, then moments ∫x^jf=0 for 0≤j≤29. Thus u=i f' has zero pairings with low Legendre 1..30. Such f satisfy both the sparse-domain bound and the PR #107 high-sector estimate (given that independent theorem's hypotheses). Shared provenance is NOT an independent confirmation of that theorem, and neither program settles the low sign.
+
+## 9. Domain-sensible gluing and negative controls
+
+For E_1,E_2 each correctly source-certified, \(|E_1\cup E_2|\le |E_1|+|E_2|\). The source-aware union acceptance rule is:
+- at a=1/2: accept the combined domain ONLY if the sum of exact upper measures is <=1/32;
+- for a<=1: accept the combined domain under the five-prime 4096-mode theorem ONLY if the sum is <=1/16384.
+
+A union that fails the budget is **UNVERIFIED**, not a negative witness, even when both individual domains are known positive. This distinction is load bearing: positivity of Q(f_1) and Q(f_2) alone says nothing about the sign of \(Q(f_1+f_2)\) unless the cross pairing is controlled. The exact synthetic Gram [[1,-2],[-2,1]] has positive coordinate diagonals but negative determinant.
+
+Other falsification controls:
+- Fake primitive 6, n>=8 in a<=1, wrong prime p for n=4, unsorted/nonprimitive source and untyped support budgets are refused; original sha is checked.
+- Doubling the original p2 weight to a synthetic w=1 ruins the J=16 first sparse sign budget, but this is a failed method on a FAKE source, not a certified negative original-zeta direction.
+- Dropping the sixteenth positive real Gamma mode makes the displayed rational 1/10 certificate fail; no genuine negative witness follows from that.
+- Exact original log comparisons (log2, log3, log8, and pairwise gaps among log2, log3, log4, log5, log7) determine every source activation/separation, without trusting floating point near thresholds.
+- Source-matched controls for wrong half-density, conductor, parity, Gamma scale, and pole/contact were implemented in inherited Tate and ONE OBJECT PRs. They are not silently rewritten here.
+- An arbitrary declared E's length is an assumed domain constraint. The specially constructed E_2 and E_n are themselves mathematical witnesses with certified exact lengths and strict placement.
+
+## 10. Claim-status ledger and roadmap
+
+| ID | Status | Proven mathematical scope | Unpaid truth debt |
+|---|---|---|---|
+| S1 | CLASSICAL/PROVED ANALYTIC | TRUE Gamma Schur support-measure lower and original all-term signed Weil inequality for every Cc∞(E) | none in stated domain |
+| S1b | PROVED ANALYTIC | every fixed finite a admits some positive sparse support measure m_a with true Weil sign | m_a does NOT cover general tests |
+| S2 | PROVED ORIGINAL-SOURCE LOCAL | at a=1/2, source p2 active; all E of measure<=1/32, Q>||f||²/10 | broad-support tests |
+| S3 | PROVED SOURCE-ACTIVE LINEAR DOMAIN | E=U∪(U+log2), nonzero genuine p2 transfer, Q>3||f||²/5 | full ambient sign |
+| S4 | PROVED ORIGINAL-SOURCE LOCAL | every 0<a<=1, any E measure<=1/16384, all five authentic source jets budgeted, Q>||f||²/2 | broad-support tests |
+| S5 | PROVED SOURCE-ACTIVE LINEAR DOMAINS | five separate E_n with actual prime transfer, only 16 Gamma rungs, Q>||f||²/2 | contraction gluing over sums |
+| S6 | CLASSICAL/PROVED DOMAIN EXTENSION | source signed Q and inequalities extend from Cc∞(E) to H0¹(E) by translation difference estimate | not bounded L² on all test functions |
+| S7 | PROVED CONDITIONAL ON SOURCE FORMULA (LOCAL) | genuinely positive Hilbert factor of original signed Weil form on each E | global point-kernel feature equality |
+| S8 | CLASSICAL/PROVED DOMAIN RELATION | u=i f' transports S3 into exact PR107 G/K relative inequality; low moments reachable but no norm-controlled inverse | authentic low Schur 30×30 sign |
+| RH | UNVERIFIED | no all-a/all-test positivity or original global contraction is established | true global Weil-positive proof remains open |
+
+**Next verdict-changing instrument:** construct true analytic Gamma/contact/prime cross pairings between the 30 source-Legendre low modes and the S3/S5 prime-coupled packet Hilbert features, with a rigorous operator norm in the Neumann K geometry. Compare them against PR #107's source residual Schur \(M_Z-\kappa^{-1}E_Z\) without importing its unmerged files or treating an arbitrary positive surrogate as completed Weil. Calibrate cross-pairing source controls, a large-support negative model, and exact original 30-mode matrix residual. Proving all positive packet domains **is not** the same as proving that the union of their spans is positive.
+
+**Reproduction:** observational_succ/apollo_prime_domain.py; tests/test_apollo_prime_domain.py; scripts/apollo_prime_domain_probe.py; .github/workflows/apollo-prime-domain.yml; claim supplement and RH handoff on this draft branch. All full-suite GitHub workflow results must be checked separately from the targeted 3.10/3.13 gates. No physical-observer authentication or original mathematical priority is claimed.
+
+**External primary reference:** Masatoshi Suzuki, *Weil's quadratic form via the screw function* (arXiv:2606.09096v3, https://arxiv.org/html/2606.09096v3); R. G. Douglas (1966), DOI https://doi.org/10.1090/S0002-9939-1966-0203464-1. Source internal dependencies: research/2026-10-14/ARITHMETIC_META_WEIL_BOUNDARY.md, research/2026-10-14/SUZUKI_CANONICAL_MOMENT_SCHUR.md and APOLLO parent K2/K6/K7 source dossier.
+
+**RH PROVED: NO.**
