@@ -31,3 +31,6 @@ For varying interval a, source plus/minus feature spaces are not already coheren
 **Files:** research/2026-10-15/FIELD_LIMIT_TRICHOTOMY.md; observational_succ/field_limit_trichotomy.py, field_limit_compactness.py, field_contractivity_compactness.py; tests/test_field_limit_trichotomy.py, test_field_limit_compactness.py, test_field_contractivity_compactness.py; scripts/field_limit_trichotomy_probe.py and exact two-Python CI. Parent ATOM Tate files and original SHA-pinned source remain unchanged. No empirical physical observer implementation is claimed.
 
 **RH PROVED: NO.**
+
+
+**ATOM VI extra Tate proof debt:** Model-of-model global POINT bijection does not preserve all ordered source HISTORIES or diagonal rational lift multiplicities. On true real–profinite solenoid quotient (R×Zhat)/Z, translating by nonzero diagonal k gives the same quotient point but is a nontrivial source-labelled action. For Tate, finite periodization P_N phi(a)=Σ_k phi(a+kN) is NOT evaluating one quotient representative; exact source phi(0)=1,phi(N)=2,phi(2N)=3 yields P_Nphi(0)=6, not 1. Full adelic Poisson requires actual rational lattice lift sums, Schwartz convergence and source measure; object reconstruction alone does not justify it. See research/2026-10-15/ATOM_TATE_HISTORY_PERIODIZATION.md, observational_succ/field_history_lift.py and its exact tests. No RH sign result.
