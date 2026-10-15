@@ -1,5 +1,5 @@
 {
-  "schema": "SUCC_TATE_ETA_BERNOULLI_2026_10_15_v2",
+  "schema": "SUCC_TATE_ETA_BERNOULLI_2026_10_15_v3",
   "status": "CANONICAL_MODULAR_BRIDGE_NOT_RH",
   "bernoulli": {
     "zeta_minus_one": "-1/12",
@@ -34,7 +34,10 @@
       "-18",
       "-12",
       "-28"
-    ]
+    ],
+    "canonical_selfdual_first_jet": "0",
+    "wrong_1_over_22_selfdual_first_jet": "-1/132",
+    "wrong_25_over_24_selfdual_first_jet": "-2"
   },
   "arithmetic_prime_transport": {
     "horizon": 64,
