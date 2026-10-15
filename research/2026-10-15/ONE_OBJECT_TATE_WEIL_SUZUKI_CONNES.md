@@ -266,3 +266,21 @@ W_\zeta(f*f^\sharp)
 This inequality is still **RH-strength** when it identifies the actual full signed $W_\zeta$, not a weaker model. The source map requires every finite Euler place, conductor/phase, the Archimedean term exactly once, principal-value/contact normalization, spectral domain and proven trace-class limits.
 
 **Next falsifiable probe:** replicate Connes–Consani's *restricted Archimedean Theorem 1* in SUCC's source chart, checking two Mellin vanishing conditions, Fourier/half-density and the **sign convention**. Then activate the first genuine prime-p=2 wavefront and derive a mathematically justified boundary/defect operator. A certified negative direction for a *proposed defect domination* refutes that attempt; finite numerical PSD, generic compactness, or fitted trace differences remain inconclusive. The original signed Weil all-test positivity and Sonin global trace remain UNVERIFIED. RH PROVED: NO.
+
+
+## O9. Exact Sonin test-domain generator (PROVED LOCAL; a route, not an RH argument)
+
+With additive Fourier convention $\widehat v(z)=\int_{\mathbb R}v(x)e^{-izx}\,dx$, the two Connes–Consani Theorem 1 vanishings $\widehat v(0)=\widehat v(i/2)=0$ are equivalent to $\int v(x)\,dx=0$ and $\int e^{x/2}v(x)\,dx=0$. For **every** $\phi\in C_c^\infty(-a,a)$ set
+\[
+v=D(D+\tfrac12)\phi=\phi''+\tfrac12\phi',\qquad D=d/dx.
+\]
+Then $\operatorname{supp}(v)\subseteq\operatorname{supp}(\phi)\subset(-a,a)$ and for every complex weight $\lambda$,
+\[
+\int e^{\lambda x}v(x)\,dx
+=\lambda(\lambda-\tfrac12)\int e^{\lambda x}\phi(x)\,dx.
+\]
+Proof: integrate by parts twice (all boundary terms zero). Both required weights $\lambda=0$ and $1/2$ are annihilated; a wrong-sign mutation $D(D-\tfrac12)$ does **not** annihilate $1/2$. The coefficient identity is exact Fraction arithmetic and has an independent numerical integration-by-parts holdout on compact polynomial C² tests.
+
+**Strict domain caveat:** this constructs admissible **additive log-chart probes only**, not the Connes Sonin projection itself. To apply their theorem one must prove that $v(x)$ matches their multiplicative convolution input via $\rho=e^x$, preserving $\rho^{1/2}$ half-density, Fourier convention, complex conjugation and support $[2^{-1/2},2^{1/2}]$ (i.e. $a\le\frac12\log2$). The theorem applies to this restricted set, not to all original Weil test functions. The full source prime wavefront at $n=2$ lies *on the edge* of the restricted support condition, so extending it needs new estimates, not silent analytic extrapolation.
+
+Next operator task: transport these exact derivative-null probes through the Tate Fourier/Mellin chart, certify the Arch-only Sonin comparison on them, then cross the first true prime wavefront while keeping a trace-class defect with genuine lower bound. **RH PROVED: NO.**
