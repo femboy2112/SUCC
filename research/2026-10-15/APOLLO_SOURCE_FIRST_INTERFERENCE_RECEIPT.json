@@ -1,0 +1,54 @@
+{
+  "schema": "SUCC_APOLLO_SOURCE_FIRST_INTERFERENCE_v2",
+  "source_original_Euler_gamma_signed_Krein_without_zero_lookup": true,
+  "synthetic_prebirth": {
+    "source": "RATIONAL_CALIBRATION_NOT_TRUE_EULER",
+    "positive_energy": "1/4",
+    "forced_Brownian_energy": "1/4",
+    "signed_energy": "0",
+    "correct_subtraction_coefficient": "2",
+    "wrong_subtraction_three_ghost_factor": "-1"
+  },
+  "same_clock_phase_family": {
+    "clock": "3/4",
+    "halfwidth": "1/2",
+    "source_weight": "1",
+    "in_phase_energy": "-1",
+    "anti_phase_energy": "1",
+    "quadrature_energy": "0",
+    "positive_source_recovers_Brownian_all_three": true,
+    "reconstruction_shift_steps": 2
+  },
+  "true_prime_two": {
+    "source": "SHA_PINNED_ORIGINAL_PRIME_TWO_JET",
+    "active_prime_powers": [
+      2
+    ],
+    "weight_strictly_between_zero_and_half": true,
+    "in_phase_prime_rayleigh": "-log(2)/sqrt(2)",
+    "anti_phase_prime_rayleigh": "+log(2)/sqrt(2)",
+    "quarter_phase_prime_rayleigh": "0",
+    "wavefront_is_mathematical_distribution_not_physical_motion": true,
+    "complete_original_Weil_positive_in_all_three_phase_families": true,
+    "complete_original_Weil_L2_margin_strictly_above": "1/24"
+  },
+  "original_full_negative_graph": {
+    "first_real_Gamma_L2_lower": "3",
+    "true_active_prime_powers": [
+      2
+    ],
+    "unique_bounded_negative_feature_from_positive": true,
+    "graph_norm_squared_upper_gt_one": true,
+    "unproved_source_contraction": true,
+    "forbidden_null_negative_feature_detected": true
+  },
+  "moving_wavefront": {
+    "m": 5,
+    "in_phase_signed": "-1",
+    "anti_phase_signed": "1",
+    "fixed_test_strong_limit_zero": true,
+    "operator_norm_limit_zero": false
+  },
+  "complete_original_Weil_all_tests_positive_proved": false,
+  "RH_proved": false
+}

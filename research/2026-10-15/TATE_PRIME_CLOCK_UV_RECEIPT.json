@@ -1,0 +1,29 @@
+{
+  "schema": "SUCC_TATE_PRIME_CLOCK_UV_v2",
+  "status": "SOURCE_RESTRICTED_POSITIVITY_NOT_RH",
+  "synthetic_rational_clock": {
+    "a": "1/2",
+    "b": "3/4",
+    "path_vertices": 2,
+    "brownian_energy": "1/4",
+    "prime_only_signed_energy": "-1/4",
+    "sharp_relative_negative": "-1",
+    "not_a_genuine_prime": true
+  },
+  "original_zeta_source": {
+    "a": "1/2",
+    "prime_labels": [
+      2
+    ],
+    "test_support_measure_max": "1/16",
+    "gamma_modes_in_analytic_lower_bound": 16,
+    "real_contact_strictly_below": "43/8",
+    "prime_shift_strictly_below": "1/2",
+    "negative_pole_strictly_below": "1/16",
+    "Weil_L2_margin_strictly_above": "1/24",
+    "all_tests_at_a_half": false,
+    "RH_proved": false,
+    "gamma_exact_rational_lower": "144480847986467833/24142663793423175",
+    "uniform_margin_exact_lower": "18140507408283703/386282620694770800"
+  }
+}

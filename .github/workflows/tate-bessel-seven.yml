@@ -1,0 +1,42 @@
+name: Tate Bessel seven-moment original Weil positivity
+
+on:
+  push:
+    branches:
+      - 'research/tate-bessel-seven-low-schur-*'
+  pull_request:
+    paths:
+      - 'observational_succ/tate_bessel_seven_schur.py'
+      - 'tests/test_tate_bessel_seven_schur.py'
+      - 'scripts/tate_bessel_seven_probe.py'
+      - 'research/2026-10-15/TATE_BESSEL_SEVEN_SCHUR_RECEIPT.json'
+      - '.github/workflows/tate-bessel-seven.yml'
+
+jobs:
+  original-seven-moment-sign:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install mathematical proof test requirements
+        run: python -m pip install -e ".[test]"
+      - name: Prove genuine completed Weil seven-moment positivity with rational Bessel tails
+        run: python -m unittest discover -s tests -p 'test_tate_bessel_seven_schur.py' -v
+      - name: Replay exact original Gamma Bessel and signed Suzuki Neumann receipt
+        run: python scripts/tate_bessel_seven_probe.py --verify
+      - name: Preserve original source previous Tate Fourier high-moment theorem
+        run: python -m unittest discover -s tests -p 'test_tate_suzuki_fourier_schur.py' -v
+      - name: Preserve original reflection/odd-even 15-low theorem
+        run: python -m unittest discover -s tests -p 'test_tate_reflection_parity_schur.py' -v
+      - name: Preserve actual signed PR109 zero-shift kernel
+        run: python -m unittest discover -s tests -p 'test_one_object_residual_schur.py' -v
+      - name: Preserve original prime clock and sparse full Weil positivity
+        run: python -m unittest discover -s tests -p 'test_tate_prime_clock_uv.py' -v
+      - name: Verify immutable original arithmetic source provenance
+        run: python scripts/verify_provenance.py
