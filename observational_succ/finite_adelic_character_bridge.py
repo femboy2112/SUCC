@@ -223,7 +223,12 @@ def finite_adelic_extension_non_split(n: int) -> dict:
     multiplied=point.multiply(multiplier)
     phase_before=finite_adele_phase(point)
     phase_after=finite_adele_phase(multiplied)
-    if phase_before!=r or phase_after!=0 or multiplied.numerator.residue(2)!=1:
+    # n*(1/n)=1 as an ADELE, although its class in A_f/Zhat is zero.
+    # At modulus n+1 the cross-multiplied numerator differs from zero,
+    # giving an independent exact finite detection of the nonzero lift.
+    zero=FiniteAdeleSpan.diagonal_rational(RationalSpan(0))
+    nonzero_probe=multiplied.cross_relation_at(zero,n+1)
+    if phase_before!=r or phase_after!=0 or nonzero_probe["agrees_at_this_probe"]:
         raise AssertionError("Adelic lift torsion obstruction not calibrated")
     return {
         "quotient_torsion_class":r,"torsion_order":n,
