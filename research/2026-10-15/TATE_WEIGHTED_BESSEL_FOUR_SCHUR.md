@@ -267,6 +267,38 @@ Select the explicit rational rank-four counterterm \(\lambda=65/16=650/160\). We
 
 If \(Pu=0\) and u≠0, positivity is already strict in the source-true K metric by \(D\succeq K/50\), so no L² spectral gap for compact G has been fabricated.
 
+### Explicit source-observable reconstruction of the rank-four correction (WB4-C6)
+
+This is a source-facing, **finite observable** formula for the positive host that makes the unproved four-low sign unmistakably visible. For complex \(f\in H_0^1((-1/2,1/2))\), set \(m_k=\int_{-1/2}^{1/2}t^kf(t)\,dt\). The REAL, UNNORMALIZED genuine Legendre derivative test functions satisfy, by integration by parts and vanishing endpoint traces,
+
+\[
+\begin{aligned}
+\langle f',P_1(2t)\rangle&=-2m_0,&
+\langle f',P_2(2t)\rangle&=-12m_1,\\
+\langle f',P_3(2t)\rangle&=3m_0-60m_2,&
+\langle f',P_4(2t)\rangle&=30m_1-280m_3.
+\end{aligned}
+\]
+
+The source Legendre norms are \(\|P_j(2t)\|_{L^2(-1/2,1/2)}^2=1/(2j+1)\). Consequently the exact, positive, full-rank moment correction is
+
+\[
+\boxed{
+\begin{aligned}
+\|P_4 f'\|^2={}&3|-2m_0|^2+5|-12m_1|^2\\
+ &+7|3m_0-60m_2|^2+9|30m_1-280m_3|^2.
+\end{aligned}}\tag{WB4-C6}
+\]
+
+This formula is valid for COMPLEX \(m_k\) and vanishes **if and only if** all four source moments vanish. The modified (not authentic) Weil form can thus be written
+\[
+\boxed{Q_\zeta(f)+\frac{65}{16}
+\bigl(3|-2m_0|^2+5|-12m_1|^2+
+7|3m_0-60m_2|^2+9|30m_1-280m_3|^2\bigr)\ge0.}
+\tag{WB4-C7}
+\]
+No new Euler place, spectral zero, independent Brownian source or hidden stochastic degree of freedom has been introduced. **Without this EXPLICIT correction, the global first-prime sign is not established.** The exact tests compare this formula against direct original Legendre polynomial integrations for a true nonzero compact-boundary polynomial \(f(t)=1/4-t^2\) and separately validate complex moments and each standard basis moment.
+
 **In original Weil test coordinates:** for \(u=f'\) and \(f\in C_c^\infty(I)\), this is
 
 \[
