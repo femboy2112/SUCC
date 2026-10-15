@@ -74,6 +74,27 @@ class GenuineSuzukiIntegralTests(unittest.TestCase):
         self.assertFalse(sample.positive_full_weil_proved)
         self.assertEqual(sample.spatial_quadrature_error,0)
 
+
+    def test_true_source_toeplitz_lag_cache_matches_independent_full_hilbert(self):
+        for a,k,J in ((Q(1,4),2,2),(Q(1,2),2,3),(Q(1,2),3,2),
+                      (Q(1),2,2)):
+            exact=h.hilbert_source_complete_block(a,k,J)
+            cheaper=h.source_toeplitz_block(a,k,J)
+            self.assertEqual(exact["lower_matrix"],cheaper["lower_matrix"])
+            self.assertEqual(exact["upper_matrix"],cheaper["upper_matrix"])
+            self.assertEqual(cheaper["unique_original_lag_integrals"],2**k)
+            self.assertEqual(cheaper["full_source_matrix_entries"],4**k)
+            self.assertTrue(cheaper["verified_source_toeplitz_kernel"])
+            self.assertFalse(cheaper["hilbert_beats_toeplitz_source_evaluations"])
+            self.assertFalse(cheaper["completed_Weil_positive_proved"])
+
+    def test_source_at_k4_requires_only_sixteen_authentic_lags(self):
+        block=h.source_toeplitz_block(Q(1,2),4,1)
+        self.assertEqual(block["unique_original_lag_integrals"],16)
+        self.assertEqual(block["full_source_matrix_entries"],256)
+        self.assertFalse(block["continuum_projection_error_zero"])
+        self.assertEqual(block["finite_projected_block_spatial_quadrature_error"],0)
+
     def test_wrong_prime_fake6_and_bad_sources_rejected(self):
         for fn in (
             lambda:h.full_source_cell(0.5,2,0,3,3),
