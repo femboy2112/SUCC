@@ -294,3 +294,88 @@ def giant_finite_path_certificate(digits:tuple[int,...],reset_bits:int)->dict:
         "path_executed_in_full":False,
         "RH_proved":False,
     }
+
+
+
+@dataclass(frozen=True)
+class OrdinalProofObligationQueue:
+    """A model of finite recursive observer-normalization OBLIGATIONS.
+
+    counts=(high,medium,low); source stages may DISCOVER many lower-priority
+    tasks by discharging one higher-priority task. No transition may
+    create tasks of the same/higher priority or discard source history.
+    Rank ω² high+ω medium+low strictly decreases under these laws,
+    even if counts of low tasks expand astronomically.
+
+    This is a theorem about the declared symbolic QUEUE, not a claim
+    that all real Tate/Weil problems have such a terminating queue or
+    that any completed queue implies the desired arithmetic assertion.
+    """
+    counts:tuple[int,int,int]
+    source_tag:str="DECLARED_SYNTHETIC_OBSERVER_NORMALIZER_NOT_ZETA"
+
+    def __post_init__(self):
+        if (type(self.counts) is not tuple or len(self.counts)!=3
+                or any(type(v) is not int or v<0 or v.bit_length()>1024
+                       for v in self.counts)
+                or type(self.source_tag) is not str or not self.source_tag):
+            raise OrdinalDescentError("Exact sourced finite proof obligation ranks and source name")
+
+    @property
+    def rank(self)->OrdinalCNF:
+        return ordinal_lex_counters(self.counts)
+
+    @property
+    def finished(self)->bool:
+        return self.counts==(0,0,0)
+
+    def discharge_next(self,*,spawn_medium:int=0,
+                       spawn_low:int=0)->"OrdinalProofObligationQueue":
+        if self.finished:
+            raise OrdinalDescentError("Finished queue is terminal; no source step")
+        if (type(spawn_medium) is not int or type(spawn_low) is not int
+                or min(spawn_medium,spawn_low)<0
+                or max(spawn_medium,spawn_low).bit_length()>1024):
+            raise OrdinalDescentError("Only finite exact lower-priority obligations may spawn")
+        high,mid,low=self.counts
+        if high:
+            high-=1
+            mid+=spawn_medium
+            low+=spawn_low
+        elif mid:
+            if spawn_medium:
+                raise OrdinalDescentError("Medium normalizer cannot produce new medium/higher debts")
+            mid-=1
+            low+=spawn_low
+        else:
+            if spawn_medium or spawn_low:
+                raise OrdinalDescentError("Low normalizer cannot spawn equal/higher source debts")
+            low-=1
+        result=OrdinalProofObligationQueue((high,mid,low),self.source_tag)
+        if any(v.bit_length()>1024 for v in result.counts) or not result.rank<self.rank:
+            raise OrdinalDescentError("Source observer normalization cannot prove strict ordinal descent")
+        return result
+
+
+def gigantic_observer_proof_queue(bits:int=256)->dict:
+    """A one-step source proof that creates 2^bits LOWER obligations.
+
+    Rank ω² (one high obligation) -> ω + 2^bits (one medium and huge
+    finite low list). Decrease is guaranteed by ordinal CNF; we do
+    not execute the expansion or claim an authentic Weil sign proof.
+    """
+    if type(bits) is not int or not 1<=bits<=512:
+        raise OrdinalDescentError("Finite symbolic spawn bit budget 1..512")
+    parent=OrdinalProofObligationQueue((1,0,0))
+    child=parent.discharge_next(spawn_medium=1,spawn_low=1<<bits)
+    if not child.rank<parent.rank:
+        raise ArithmeticError("Observer recursive rank reset did not decrease")
+    return {"normalizer":"SOURCE_DECLARED_THREE_LEVEL_ORDINAL_QUEUE",
+            "before_rank":str(parent.rank),
+            "after_rank":str(child.rank),
+            "spawned_low_count":1<<bits,
+            "rank_decreased_strictly":True,
+            "source_observer_growth_tasks_can_increase":True,
+            "mathematical_no_infinite_strict_descent":"WELLFOUNDED_OMEGA_CUBE",
+            "source_completed_Weil_claim_proved":False,
+            "RH_proved":False}
