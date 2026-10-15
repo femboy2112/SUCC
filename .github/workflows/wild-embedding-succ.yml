@@ -1,0 +1,39 @@
+name: Wild SUCC exact source and complement-group certificates
+
+on:
+  push:
+    branches:
+      - research/alexander-horned-source-observer-2026-10-14
+  pull_request:
+    paths:
+      - 'observational_succ/wild_embedding_succ.py'
+      - 'tests/test_wild_embedding_succ.py'
+      - 'scripts/wild_embedding_succ_probe.py'
+      - 'research/2026-10-14/WILD_EMBEDDING_SUCC_RECEIPT.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checked-wild-source:
+    name: Alexander source-depth and SUCC boundary (Python ${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Validate original-source path/group, nilpotent and analytic metric controls
+        run: python -m unittest discover -s tests -p test_wild_embedding_succ.py -v
+      - name: Replay exact source group and signed boundary receipt
+        run: python scripts/wild_embedding_succ_probe.py --verify research/2026-10-14/WILD_EMBEDDING_SUCC_RECEIPT.json
+      - name: Check independently derived integral unitriangular detectors
+        run: |
+          python scripts/wild_embedding_independent_oracle.py > "$RUNNER_TEMP/wild-independent.json"
+          diff -u research/2026-10-14/WILD_EMBEDDING_INDEPENDENT_ORACLE.json "$RUNNER_TEMP/wild-independent.json"
