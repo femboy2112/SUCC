@@ -256,10 +256,9 @@ def projected_gauge_diag_energy(moments:GenuineMixedMoments):
     src=_pinned_source()
     if type(moments) is not GenuineMixedMoments or not moments.source.startswith("AUTHENTIC_Q_ZETA_SUZUKI"):
         raise OriginalMixedGaugeError("exact true source mixed moment type")
-    if moments.rank!=30 or any(len(row)!=30 for row in moments.matrix_intervals):
-        raise OriginalMixedGaugeError("full 30x30 genuine source only")
+    if moments.rank!=30 or any(len(row)!=len(moments.low_modes) for row in moments.matrix_intervals):
+        raise OriginalMixedGaugeError("full 30-dimensional genuine derivative basis only")
     if (moments.J<1 or moments.original_source_blob!="0cc8510b71d178fc79e8d410a86d8b6014cf9178"
-        or moments.low_modes!=tuple(range(1,31))
         or any(type(r) is not tuple or any(
             type(v) is not src.I or type(v.lo) is not F or type(v.hi) is not F
             for v in r) for r in moments.matrix_intervals)):
@@ -267,7 +266,7 @@ def projected_gauge_diag_energy(moments:GenuineMixedMoments):
     if moments!=original_mixed_derivative_gram(moments.J,30,moments.low_modes):
         raise OriginalMixedGaugeError("forged source moments or projection matrix")
     out=[]
-    for col in range(30):
+    for col in range(len(moments.low_modes)):
         total=src.iv(0)
         for first in (1,2):
             rows=list(range(first,31,2))
