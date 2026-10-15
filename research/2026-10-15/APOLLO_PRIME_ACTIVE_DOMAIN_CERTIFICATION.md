@@ -247,3 +247,27 @@ Other falsification controls:
 **External primary reference:** Masatoshi Suzuki, *Weil's quadratic form via the screw function* (arXiv:2606.09096v3, https://arxiv.org/html/2606.09096v3); R. G. Douglas (1966), DOI https://doi.org/10.1090/S0002-9939-1966-0203464-1. Source internal dependencies: research/2026-10-14/ARITHMETIC_META_WEIL_BOUNDARY.md, research/2026-10-14/SUZUKI_CANONICAL_MOMENT_SCHUR.md and APOLLO parent K2/K6/K7 source dossier.
 
 **RH PROVED: NO.**
+
+
+## 8a. An exact genuine prime-active HIGH-sector witness (new independent certificate)
+
+The S8 moment-surjectivity fact has a complementary **kernel intersection** with PR #107's actual high sector that we can exhibit without zeros or an abstract density argument.
+
+Let δ=1/64 and choose integer q>=34. On the source packet U, let φ_q be the affine translate of \(t^q(\delta-t)^q\), 0<t<δ, zero elsewhere. Set \(f_0=\phi_q^{(30)}\), and let \(f_1(x)=f_0(x-\log2)\) on the second genuine packet U+log2. Then f=f0+f1 is supported in E2 and is C³ or better after zero extension (its endpoint vanishing order is q−30>=4), hence is in H_0¹(E2). It is not falsely asserted Cc-infinity; smooth H_0¹ approximations are available for the form identity.
+
+For every integer 0<=k<=29, integration by parts 30 times gives
+\[
+\int_U x^k f_0(x)dx=0.
+\]
+The translated packet f1 also has these vanishing polynomial moments by expanding \((t+\log2)^k\) using the binomial theorem; therefore **the actual two-packet f has all 30 zero moments**. For u=i f', integration by parts against normalized Legendre low basis e_j (1<=j<=30), whose derivatives e_j' are polynomials of degree j−1<=29, yields \(\langle u,e_j\rangle=0\). Thus u lies in the **authentic high subspace** of PR #107.
+
+At the same time the original p=2 translation overlap is NOT zero:
+\[
+\langle T_{\log2}f,f\rangle=\|f_0\|_2^2>0,\quad
+\|f\|_2^2=2\|f_0\|_2^2.
+\]
+So the high subspace and the APOLLO **genuinely prime-active** packet Hilbert domain intersect in nonzero vectors. This is a source-specific independent test of the domain interface, not merely a formal statement of dense subspace compatibility. Our full packet inequality gives Qζ(f)>=3||f||²/5, while the independent PR #107 moment-high theorem supplies its separately sourced κ=369/10000 statement under its own assumptions.
+
+**Executable exact Fraction receipt:** expand \(\phi=t^q(\delta-t)^q\) in the polynomial basis, differentiate 30 times exactly, verify 30 vanishing rational integrals and a strictly positive exact polynomial L² norm. The translation overlap equals this same exact L² norm by support geometry, without evaluating log2 numerically. This finite C³ control does not replace the analytic Cc-infinity theorem, and neither bound determines PR #107's low Schur matrix.
+
+**Verdict:** PROVED LOCAL high-sector / prime-coupling intersection, with an exact rational polynomial calibration; original low 30 Schur positivity remains UNVERIFIED.
