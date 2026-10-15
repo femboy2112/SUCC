@@ -8,6 +8,8 @@ from observational_succ.tate_finite_bruhat_observers import (
     refine_support_chart, refine_constancy_chart,
     finite_tate_refinement_square, conductor_three_probe_gap,
     finite_tate_coset_discriminator,
+    exact_tate_distribution_dual_compatibility,
+    original_tate_haar_dual_and_fourier_contact,
 )
 from observational_succ.tate_local_contract import unramified_ball_pair, ZETA3, QRootMinus3
 
@@ -107,6 +109,43 @@ class GenuineFiniteTateWindows(unittest.TestCase):
         self.assertFalse(x["observer_assumed_to_have_physical_probe_access"])
         with self.assertRaises(TateFiniteFieldError):
             finite_tate_coset_discriminator(6,0,1,(1,0),(0,0))
+
+    def test_true_additive_Haar_is_coherent_inverse_limit_of_test_duals(self):
+        for p,M,N,c,input_exact,contact in (
+            (2,0,1,(1,-1),F(0),F(1)),
+            (3,0,1,(2,1,-1),F(2,3),F(2)),
+            (3,1,0,(1,0,0),F(1),F(1)),
+        ):
+            d=original_tate_haar_dual_and_fourier_contact(p,M,N,c)
+            self.assertEqual(d["original_integral_exact"],input_exact)
+            self.assertEqual(d["Fourier_dual_integral_exact"],contact)
+            self.assertEqual(d["original_value_at_zero_exact"],contact)
+            self.assertTrue(d["original_Haar_dual_source_gluing"])
+            self.assertTrue(d["Fourier_Haar_distribution_equals_evaluation_at_zero"])
+            self.assertTrue(d["test_colimit_dual_distribution_inverse_limit"])
+            self.assertFalse(d["real_global_Weil_contact_identified"])
+            self.assertFalse(d["RH_proved"])
+
+    def test_wrong_source_dual_coefficient_blocks_are_not_phantom_global_Haar(self):
+        p,M,N=3,0,1
+        old=(F(1,3),)*3
+        sup=(F(1,3),)*9
+        con=(F(1,9),)*9
+        good=exact_tate_distribution_dual_compatibility(p,M,N,old,sup,con)
+        self.assertTrue(good["source_functional_coherently_glued"])
+        self.assertTrue(good["support_square_commutes"])
+        self.assertTrue(good["constancy_square_commutes"])
+        self.assertTrue(good["dual_is_inverse_limit_of_finite_dimensional_vector_spaces"])
+        self.assertTrue(good["finite_dimensional_complex_stage_is_not_a_finite_set"])
+        self.assertFalse(good["unbounded_complex_stage_automatically_compact"])
+        bad_con=list(con);bad_con[0]+=F(1,9)
+        bad=exact_tate_distribution_dual_compatibility(
+            p,M,N,old,sup,tuple(bad_con)
+        )
+        self.assertTrue(bad["support_square_commutes"])
+        self.assertFalse(bad["constancy_square_commutes"])
+        self.assertFalse(bad["source_functional_coherently_glued"])
+        self.assertFalse(bad["RH_proved"])
 
     def test_fake_composite_bad_Haar_and_wrong_coefficient_type_fail_closed(self):
         for p,M,N in ((6,0,0),(1,0,0),(2,-1,0),(3,1,-1),(True,0,0),
