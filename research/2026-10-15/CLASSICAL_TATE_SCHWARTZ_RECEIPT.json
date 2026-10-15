@@ -1,0 +1,130 @@
+{
+  "academic_novelty_established": false,
+  "analytic_meromorphic_continuation_is_not_actual_negative_Re_s_integral": true,
+  "arch_global": {
+    "RH_or_Weil_sign_claimed": false,
+    "critical_half_density_gaussian": {
+      "common_special_value": "pi^(-1/4)*Gamma(1/4)",
+      "critical_s_half_source_duality": true,
+      "forward_prefactor": "1/4",
+      "fourier_dual_prefactor": "1/4",
+      "width": 256
+    },
+    "fake_composite_6_independent_factor_coefficient_6": 2,
+    "finite_euler_contract_sigma_2": {
+      "finite_local_euler_at_sigma": "206841635/127401984",
+      "last_source_prime": 17,
+      "primes": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13,
+        17
+      ],
+      "sigma": 2,
+      "uniform_absolute_tail_upper": "1/17",
+      "valid_for_all_complex_s_Re_ge_sigma": true,
+      "valid_on_critical_line": false
+    },
+    "gamma_s_plus_two_succ_recurrence": true,
+    "global_Poisson_or_completed_zeta_FE_derived_from_finite_windows": false,
+    "kind": "CLASSICAL_TATE_ARCH_GLOBAL_RECEIPT",
+    "real_gaussian_mellin_integer_values": [
+      [
+        "1",
+        0
+      ],
+      [
+        "1",
+        -1
+      ],
+      [
+        "1/2",
+        -1
+      ],
+      [
+        "1",
+        -2
+      ],
+      [
+        "3/4",
+        -2
+      ],
+      [
+        "2",
+        -3
+      ],
+      [
+        "15/8",
+        -3
+      ]
+    ],
+    "true_euler_smooth_coefficient_6": 1
+  },
+  "base_source": "classical SUCC unit-origin branch; not original Tate source clone",
+  "diagonal_rational_global_phase_1_over_6": {
+    "diagonal_global_character_equals_one": true,
+    "finite_places": [
+      [
+        2,
+        "1/2"
+      ],
+      [
+        3,
+        "2/3"
+      ]
+    ],
+    "q": "1/6",
+    "real_signed_phase": "-1/6",
+    "total_integer_phase": 1
+  },
+  "exact_all_window_fourier_inversion_plancherel": true,
+  "exact_full_coset_local_FE_at_sampled_regular_exponents": true,
+  "exact_two_axis_support_precision_naturality": true,
+  "finite_window_sizes": [
+    [
+      2,
+      0,
+      1,
+      2
+    ],
+    [
+      2,
+      1,
+      1,
+      4
+    ],
+    [
+      2,
+      0,
+      3,
+      8
+    ],
+    [
+      3,
+      0,
+      2,
+      9
+    ],
+    [
+      3,
+      1,
+      1,
+      9
+    ],
+    [
+      5,
+      0,
+      1,
+      5
+    ]
+  ],
+  "finite_windows_have_not_proved_global_adelic_Poisson": true,
+  "higher_conductor_phase_lost_under_coarsening": true,
+  "kind": "CLASSICAL_TATE_SCHWARTZ_EXACT_RECEIPT",
+  "signed_Weil_positivity_or_RH_proved": false,
+  "two_independent_local_residue_numerators": true,
+  "verified_local_coset_mellin_fourier_instances": 185
+}
