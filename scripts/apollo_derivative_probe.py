@@ -16,6 +16,9 @@ from observational_succ.apollo_krein_factor import (
     original_suzuki_krein_finite_window,prime_krein_identity,
     prime_mixed_second_source_coefficients,gamma_mixed_second_source_coefficients,
     source_feature_contraction_diagnostic,
+    authentic_small_window_brownian_coercivity,
+    authentic_sharp_small_window_hilbert_factor,
+    authentic_prime_two_activation_on_old_window,
 )
 
 
@@ -51,7 +54,24 @@ def main():
     )
     assert not synthetic["combined_signed_psd_on_selected_finite_set"]
     assert prime_krein_identity(F(1,2),F(3,2),F(1))["identity_exact"]
+    loose=authentic_small_window_brownian_coercivity(F(1,24))
+    sharp=authentic_sharp_small_window_hilbert_factor(F(1,12))
+    birth=authentic_prime_two_activation_on_old_window()
+    assert loose["strict_K_dominates_B_lower"]>F(1,10)
+    assert sharp["exact_positive_coercivity_margin"]>F(1,100)
+    assert sharp["positive_feature_Psi_a_exists_by_completion"]
+    assert birth["signed_zero"] and birth["Krein_neutral_source_birth"]
     result={
+       "AUTHENTIC_FULL_WINDOW_small_positive_radius":"1/12",
+       "AUTHENTIC_FULL_WINDOW_true_rational_margin_lower":str(sharp["exact_positive_coercivity_margin"]),
+       "AUTHENTIC_FULL_WINDOW_universal_Brownian_floor":"1/100",
+       "AUTHENTIC_FULL_WINDOW_local_positive_source_Hilbert_factor_exists":True,
+       "AUTHENTIC_FULL_WINDOW_all_intervals_RH":False,
+       "AUTHENTIC_Gamma_modes_used":20,
+       "AUTHENTIC_Gamma_Taylor_order":9,
+       "AUTHENTIC_Rough_8mode_radius":"1/24",
+       "AUTHENTIC_Rough_8mode_margin_floor":"1/10",
+       "AUTHENTIC_True_prime2_neutral_source_birth":True,
        "KREIN_finite_window":krein["window_halfwidth"],
        "KREIN_original_prime_labels":list(krein["prime_labels"]),
        "KREIN_source_plus_minus_residual_numerical":krein["residual"],
