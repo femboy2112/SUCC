@@ -107,3 +107,43 @@ def conditional_original_residual_gram(T_J,Y,J,eta):
       "authentic_signed_low_A_minus_short_R0_positive_proved":False,
       "all_radii_RH_proved":False
     }
+
+
+def adaptive_gamma_response_schedule(response_operator_bound,epsilon):
+    """Original SUCC Gamma refinement can outrun ANY GIVEN finite response cost.
+
+    If ||Y|| <= M is separately certified on the actual orthonormal
+    high/low Hilbert sectors, choose J with
+      delta_J*(1+M) < epsilon,
+      delta_J=963(1/d+4/d²), d=4J+1.
+    Since d>=5, delta_J < 1926/d. The finite rational J below
+    proves this bound *symbolically*, without evaluating an actual
+    30-mode original source derivative Gram and without a spectral sign.
+    A supplied M is NOT an authenticated original response norm.
+    """
+    M=q(response_operator_bound);eps=q(epsilon)
+    if M<0 or eps<=0:
+        raise ResidualSourceError("positive source tolerance / nonnegative Y norm")
+    gate=authenticated_first_window_gate()
+    rat=F(1926)*(1+M)/(4*eps)
+    J=max(1,rat.numerator//rat.denominator+1)
+    if J>10**7:
+        raise ResidualSourceError("finite schedule budget; not nonconvergence")
+    d=4*J+1
+    delta=F(963)*(F(1,d)+F(4,d*d))
+    if delta*(1+M)>=eps:
+        raise ArithmeticError("genuine gamma schedule source inequality failed")
+    return {
+       "source":gate["source"],
+       "radius":gate["radius"],
+       "response_norm_upper_input":M,
+       "goal_epsilon":eps,
+       "sufficient_finite_original_gamma_modes":J,
+       "source_gamma_H1_error_bound":delta,
+       "joint_response_gamma_error_upper":delta*(1+M),
+       "strictly_below_target":True,
+       "original_high_response_norm_source_authenticated":False,
+       "actual_gamma_stage_built":False,
+       "true_residual_derivative_Gram_sign_evaluated":False,
+       "rh_proved":False
+    }
