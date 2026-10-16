@@ -255,6 +255,14 @@ wall times, exact commands, dependency versions, logs and hashes are in the
 The original imported SyntaxWarning is retained; no unrelated historical source
 was rewritten to remove it. The final PR records the separately inspected hosted
 CI results at its exact head, avoiding a self-referential receipt/commit cycle.
+The first hosted certificate workflow failed because checkout omitted history:
+the exact source-origin and branch-ancestry probes correctly rejected a shallow
+clone. An isolated shallow clone reproduced both failures; fetching full history
+made both probes pass without changing their gates or mathematical code. The
+workflow now requests full history and uploads receipts even after failures.
+The [reproduction](arithmetic_resonance_receipts/ci-history-reproduction/manifest.json)
+and original failed hosted transcript are retained. This failure is not relabeled
+as an earlier pass.
 
 ## Most consequential next lemma
 

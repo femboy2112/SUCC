@@ -1,0 +1,115 @@
+{
+  "schema": "ARITHMETIC_RESONANCE_SPECTRAL_RESPONSE_V1",
+  "status": "FAIL",
+  "evidence": {},
+  "source_pins": {
+    "path": "observational_succ/source_weil_hierarchy.py",
+    "origin_commit": "dc6b7e3adbfb67c2913c145a4efb95fe3d50b1bc",
+    "expected_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "expected_sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+    "live_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "live_sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b"
+  },
+  "authority": {
+    "paper": "SR-01..04 conditional; SR-05..07 counterexamples",
+    "computation": "EXACT_FINITE_RATIONAL_AND_SPECIFIED_SERIES_ENCLOSURES",
+    "experiment": "NO_FLOAT_EXPERIMENT_USED_AS_CERTIFICATE",
+    "formal_kernel_proof": false,
+    "genuine_fractional_source_range": "UNVERIFIED",
+    "original_S0_sign": "OPEN",
+    "RH_PROVED": false
+  },
+  "execution": {
+    "time_utc": "2026-10-16T05:45:53.631320+00:00",
+    "command": "/tmp/succ-proof-teeth-py313/bin/python scripts/spectral_response_probe.py --output /media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance/research/2026-10-16/arithmetic_resonance_receipts/ci-history-reproduction/shallow-spectral_response.json",
+    "cwd": "/tmp/succ-arithmetic-shallow-8ia7mv2s/checkout",
+    "python": "3.13.13",
+    "executable": "/tmp/succ-proof-teeth-py313/bin/python",
+    "git_head": {
+      "returncode": 0,
+      "stdout": "5d748c7512661dba820face6e625863c5fc66135",
+      "stderr": ""
+    },
+    "git_branch": {
+      "returncode": 0,
+      "stdout": "research/arithmetic-wavefront-spectral-response-2026-10-16",
+      "stderr": ""
+    },
+    "git_status_before": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "source_origin_check": {
+      "returncode": 128,
+      "stdout": "dc6b7e3adbfb67c2913c145a4efb95fe3d50b1bc:observational_succ/source_weil_hierarchy.py",
+      "stderr": "fatal: path 'observational_succ/source_weil_hierarchy.py' exists on disk, but not in 'dc6b7e3adbfb67c2913c145a4efb95fe3d50b1bc'"
+    },
+    "environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": null,
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "full_suite_run": false,
+    "full_suite_owner": "principal",
+    "git_writes_performed": false,
+    "exit_code": 1,
+    "elapsed_seconds": 0.11508159106597304
+  },
+  "own_sha256_before": {
+    "observational_succ/spectral_response.py": "af060baf0d7371a9a236acb90e26fbf6c14a9d94c6f91d299103b96221dfeeba",
+    "tests/test_spectral_response.py": "c63a1b9844b219b3c6652077d14eed4138ff29a97bef4dcbd73edf9c63c68ba8",
+    "scripts/spectral_response_probe.py": "0708457afd94f05f8358ac5b38f1a0016941cdf7d00d23b8dc21d4ae7003be85",
+    "research/2026-10-16/SPECTRAL_RESPONSE_MEASURE.md": "c87988313f84db77ca931eb06807f23b5921cd496c14fb7352279106131528a3"
+  },
+  "read_sha256_before": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "observational_succ/recursive_operator_gluing.py": "0dda6bdf871dfdefffe48649c785ab9d18addab6cea5553ac1d4472a3094fd94",
+    "observational_succ/observer_schur.py": "f31fc87724569a2d573b7b1bbbdaadf2ff933d9653bb303c81a6d4cc7a13e3ae",
+    "observational_succ/compact_galerkin.py": "bba57c6aa8c3bb21ac1d4146c39b87c20ce09692f69abce04be7221e2fca0da4",
+    "research/2026-10-16/OBSERVER_SCHUR_ROUND_II.md": "3b3785cf1877af29f056230eec702b25283dc5094d1254689d2955cdc23cb502",
+    "research/2026-10-16/OBSERVER_SCHUR_THEOREMS.md": "60e550375456fd2c6d99e6bde054303f235419afc0498b8d0a894bc482ee4ddb",
+    "research/2026-10-16/OBSERVER_SCHUR_SOURCE.md": "0a269b8bc9b0840e132e3a31ab88fc3c1330c7a38b6013afdc426e0333f03dab",
+    "research/2026-10-16/COMPACT_SOURCE_GALERKIN.md": "6e44d42fedd72274d8732272315bd05a43564c13bc423338a4711c0746b3986e"
+  },
+  "tests": {
+    "run": 0,
+    "successful": false,
+    "reason": "SOURCE_PIN_MISMATCH"
+  },
+  "own_sha256_after": {
+    "observational_succ/spectral_response.py": "af060baf0d7371a9a236acb90e26fbf6c14a9d94c6f91d299103b96221dfeeba",
+    "tests/test_spectral_response.py": "c63a1b9844b219b3c6652077d14eed4138ff29a97bef4dcbd73edf9c63c68ba8",
+    "scripts/spectral_response_probe.py": "0708457afd94f05f8358ac5b38f1a0016941cdf7d00d23b8dc21d4ae7003be85",
+    "research/2026-10-16/SPECTRAL_RESPONSE_MEASURE.md": "c87988313f84db77ca931eb06807f23b5921cd496c14fb7352279106131528a3"
+  },
+  "read_sha256_after": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "observational_succ/recursive_operator_gluing.py": "0dda6bdf871dfdefffe48649c785ab9d18addab6cea5553ac1d4472a3094fd94",
+    "observational_succ/observer_schur.py": "f31fc87724569a2d573b7b1bbbdaadf2ff933d9653bb303c81a6d4cc7a13e3ae",
+    "observational_succ/compact_galerkin.py": "bba57c6aa8c3bb21ac1d4146c39b87c20ce09692f69abce04be7221e2fca0da4",
+    "research/2026-10-16/OBSERVER_SCHUR_ROUND_II.md": "3b3785cf1877af29f056230eec702b25283dc5094d1254689d2955cdc23cb502",
+    "research/2026-10-16/OBSERVER_SCHUR_THEOREMS.md": "60e550375456fd2c6d99e6bde054303f235419afc0498b8d0a894bc482ee4ddb",
+    "research/2026-10-16/OBSERVER_SCHUR_SOURCE.md": "0a269b8bc9b0840e132e3a31ab88fc3c1330c7a38b6013afdc426e0333f03dab",
+    "research/2026-10-16/COMPACT_SOURCE_GALERKIN.md": "6e44d42fedd72274d8732272315bd05a43564c13bc423338a4711c0746b3986e"
+  },
+  "source_pins_after": {
+    "path": "observational_succ/source_weil_hierarchy.py",
+    "origin_commit": "dc6b7e3adbfb67c2913c145a4efb95fe3d50b1bc",
+    "expected_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "expected_sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+    "live_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "live_sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b"
+  },
+  "preservation": {
+    "source_pin_matches": false,
+    "own_bytes_unchanged": true,
+    "read_bytes_unchanged": true,
+    "source_bytes_unchanged": true
+  }
+}

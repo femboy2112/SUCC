@@ -34,6 +34,9 @@ jobs:
       OMP_NUM_THREADS: '1'
     steps:
       - uses: actions/checkout@v4
+        with:
+          # The probes verify the exact originating source commit and ancestry.
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
@@ -42,3 +45,11 @@ jobs:
         run: python scripts/check_arithmetic_resonance_round.py --python python --focused-only --probes --output "$RUNNER_TEMP/arithmetic-resonance"
       - name: Retain unresolved source spectral-tail obligations
         run: python scripts/spectral_tail_contract_probe.py --output "$RUNNER_TEMP/tail-contract.json"
+      - name: Preserve probe receipts even when a gate fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: arithmetic-resonance-${{ matrix.python }}-${{ github.event_name }}
+          path: |
+            ${{ runner.temp }}/arithmetic-resonance/
+            ${{ runner.temp }}/tail-contract.json
