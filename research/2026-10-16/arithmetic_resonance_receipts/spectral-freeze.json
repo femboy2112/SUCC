@@ -1,0 +1,60 @@
+{
+  "schema": "ARITHMETIC_RESONANCE_SPECTRAL_FREEZE_V1",
+  "status": "READY_TO_FREEZE",
+  "time_utc": "2026-10-16T05:11:12.671555+00:00",
+  "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "frozen_sha256": {
+    "observational_succ/spectral_response.py": "af060baf0d7371a9a236acb90e26fbf6c14a9d94c6f91d299103b96221dfeeba",
+    "tests/test_spectral_response.py": "c63a1b9844b219b3c6652077d14eed4138ff29a97bef4dcbd73edf9c63c68ba8",
+    "scripts/spectral_response_probe.py": "0708457afd94f05f8358ac5b38f1a0016941cdf7d00d23b8dc21d4ae7003be85",
+    "research/2026-10-16/SPECTRAL_RESPONSE_MEASURE.md": "c87988313f84db77ca931eb06807f23b5921cd496c14fb7352279106131528a3",
+    "research/2026-10-16/arithmetic_resonance_receipts/spectral-development-failure.log": "46d382b8a93fc63677e5f9893cbf87c7ee08ed72517ac1682d9b3fa120b90c10",
+    "research/2026-10-16/arithmetic_resonance_receipts/spectral-py310.json": "8b92f80033efcb4386c625a06f9102b7b23ada5ccfbf8c6b95ca836f8abbf695",
+    "research/2026-10-16/arithmetic_resonance_receipts/spectral-py313.json": "6c32e0bffb487830bd50a713a27a1efb999b4f847a288e26753db027352926fa"
+  },
+  "focused_validation": [
+    {
+      "python": "3.10.20",
+      "tests": 26,
+      "status": "PASS",
+      "elapsed_seconds": 0.19129173690453172
+    },
+    {
+      "python": "3.13.13",
+      "tests": 26,
+      "status": "PASS",
+      "elapsed_seconds": 0.09890629281289876
+    }
+  ],
+  "evidence_equal_between_interpreters": true,
+  "cli_contract": {
+    "missing_output_exit_code": 2,
+    "missing_output_stderr": "usage: spectral_response_probe.py [-h] --output OUTPUT\nspectral_response_probe.py: error: the following arguments are required: --output\n",
+    "missing_output_created_files": false,
+    "arbitrary_extensionless_output_command": [
+      "/tmp/succ-proof-teeth-py313/bin/python",
+      "-B",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance/scripts/spectral_response_probe.py",
+      "--output",
+      "/tmp/spectral-cli-m0ypl7eg/gha-artifacts/spectral-evidence"
+    ],
+    "arbitrary_extensionless_output_exit_code": 0,
+    "arbitrary_output_stdout": "test_bad_atoms_and_shape_are_rejected (test_spectral_response.ContractTests.test_bad_atoms_and_shape_are_rejected) ... ok\ntest_bad_diagonal_inputs_are_rejected (test_spectral_response.ContractTests.test_bad_diagonal_inputs_are_rejected) ... ok\ntest_bad_domains_and_budgets_are_rejected (test_spectral_response.ContractTests.test_bad_domains_and_budgets_are_rejected) ... ok\ntest_fixed_exact_moment_aliases_have_unbounded_inverse_family (test_spectral_response.CounterexampleTests.test_fixed_exact_moment_aliases_have_unbounded_inverse_family) ... ok\ntest_infinite_enclosures_contain_larger_prefix_plus_its_tail (test_spectral_response.CounterexampleTests.test_infinite_enclosures_contain_larger_prefix_plus_its_tail) ... ok\ntest_no_power_lower_bounds_at_dyadic_shifts (test_spectral_response.CounterexampleTests.test_no_power_lower_bounds_at_dyadic_shifts) ... ok\ntest_positive_moments_converge_while_fractional_range_grams_grow (test_spectral_response.CounterexampleTests.test_positive_moments_converge_while_fractional_range_grams_grow) ... ok\ntest_slow_tail_prefix_inverse_weights_are_one_over_j_squared (test_spectral_response.CounterexampleTests.test_slow_tail_prefix_inverse_weights_are_one_over_j_squared) ... ok\ntest_tiny_perturbation_flips_short_and_has_original_negative_witness (test_spectral_response.CounterexampleTests.test_tiny_perturbation_flips_short_and_has_original_negative_witness) ... ok\ntest_fractional_bounds_half_power_with_noncommuting_weights (test_spectral_response.FractionalAndWeakBoundsTests.test_fractional_bounds_half_power_with_noncommuting_weights) ... ok\ntest_integer_fractional_grams_and_bounds (test_spectral_response.FractionalAndWeakBoundsTests.test_integer_fractional_grams_and_bounds) ... ok\ntest_rational_power_exact_or_rejected (test_spectral_response.FractionalAndWeakBoundsTests.test_rational_power_exact_or_rejected) ... ok\ntest_sharp_scalar_constants_and_finite_support_cap (test_spectral_response.FractionalAndWeakBoundsTests.test_sharp_scalar_constants_and_finite_support_cap) ... ok\ntest_single_atom_attains_response_and_completion_constants (test_spectral_response.FractionalAndWeakBoundsTests.test_single_atom_attains_response_and_completion_constants) ... ok\ntest_weak_mass_certificate_must_cover_intermediate_small_jump (test_spectral_response.FractionalAndWeakBoundsTests.test_weak_mass_certificate_must_cover_intermediate_small_jump) ... ok\ntest_weak_mass_gate_checks_all_jumps_and_matrix_order (test_spectral_response.FractionalAndWeakBoundsTests.test_weak_mass_gate_checks_all_jumps_and_matrix_order) ... ok\ntest_completion_gap_matches_original_signed_block_energy (test_spectral_response.SpectralMeasureTests.test_completion_gap_matches_original_signed_block_energy) ... ok\ntest_exact_stieltjes_identity_with_boundary_atom (test_spectral_response.SpectralMeasureTests.test_exact_stieltjes_identity_with_boundary_atom) ... ok\ntest_repeated_eigenvalues_and_unsorted_input (test_spectral_response.SpectralMeasureTests.test_repeated_eigenvalues_and_unsorted_input) ... ok\ntest_response_is_loewner_monotone_and_completely_monotone (test_spectral_response.SpectralMeasureTests.test_response_is_loewner_monotone_and_completely_monotone) ... ok\ntest_response_matches_rotated_full_matrix_inverse (test_spectral_response.SpectralMeasureTests.test_response_matches_rotated_full_matrix_inverse) ... ok\ntest_scalar_quadratic_measure_is_sum_of_squared_couplings (test_spectral_response.SpectralMeasureTests.test_scalar_quadratic_measure_is_sum_of_squared_couplings) ... ok\ntest_shift_and_trial_gap_are_distinct_positive_matrices (test_spectral_response.SpectralMeasureTests.test_shift_and_trial_gap_are_distinct_positive_matrices) ... ok\ntest_signed_off_diagonal_weights_are_retained (test_spectral_response.SpectralMeasureTests.test_signed_off_diagonal_weights_are_retained) ... ok\ntest_uncoupled_kernel_and_all_zero_measure_are_lawful (test_spectral_response.SpectralMeasureTests.test_uncoupled_kernel_and_all_zero_measure_are_lawful) ... ok\ntest_zero_atom_not_silently_pseudoinverted (test_spectral_response.SpectralMeasureTests.test_zero_atom_not_silently_pseudoinverted) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 0.057s\n\nOK\nstatus: PASS receipt: /tmp/spectral-cli-m0ypl7eg/gha-artifacts/spectral-evidence\nGenuine fractional range: UNVERIFIED. Original S0: OPEN. RH: NOT PROVED.\n",
+    "arbitrary_output_sha256": "c228a0325d766cff835265c5a9674e3c94e8a32b195431405254aed7ead4232b",
+    "arbitrary_output_evidence_matches": true,
+    "temporary_artifacts_cleaned_after_validation": true
+  },
+  "claim_labels": [
+    "SR-01",
+    "SR-02",
+    "SR-03",
+    "SR-04",
+    "SR-05",
+    "SR-06",
+    "SR-07"
+  ],
+  "full_suites": "RESERVED_FOR_PRINCIPAL",
+  "git_commit_or_push_performed": false,
+  "genuine_fractional_range": "UNVERIFIED; NOT ASSUMED",
+  "initial_failed_receipt_retained": "spectral-development-failure.log"
+}
