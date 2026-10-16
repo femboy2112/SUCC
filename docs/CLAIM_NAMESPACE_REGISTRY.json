@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "description": "Canonical single source of truth for SUCC claim-ID namespaces. Bare claim prefixes (e.g. PH-, PB-, TS-, WA-) were historically minted per-supplement and several bare prefixes are reused across DIFFERENT, disjoint-meaning claim families. Historical bare IDs are NEVER renamed: this registry is ADDITIVE and mints a stable, globally-unique fully-qualified ID (FQID) alias per namespace so downstream tooling (e.g. SUCC-to-YEAN proof extraction) has a collision-free key. Each FQID is a stable ASCII identifier; the bare ID remains valid within its own supplement file.",
+  "RH_PROVED": "NO",
+  "fqid_scheme": {
+    "format": "<fq_prefix>-<NN>",
+    "fq_prefix": "An ASCII identifier of the form <BARE>.<TAG> (uppercase letters/digits plus one disambiguating dot-segment). <BARE> is the historical bare prefix; <TAG> disambiguates namespaces that share that bare prefix. When a bare prefix is unique to one namespace the fq_prefix MAY equal the bare prefix; when two or more distinct-meaning families share a bare prefix, each gets its own <TAG>.",
+    "NN": "The historical bare ID's numeric part, zero-padded to width 2 (e.g. bare PH-01 -> ...-01, bare WA-15 -> ...-15). Alphabetic sub-suffixes (e.g. 06B) are not part of this scheme's numeric slot and are addressed per-supplement.",
+    "examples": {
+      "PROFINITE_HILBERT bare PH-01": "PH.PROF-01",
+      "PRIME_FORM_HEAT bare PH-01": "PH.PFH-01"
+    },
+    "note": "FQIDs are machine-parseable and stable: once minted here, a namespace's fq_prefix does not change, so a proof-extraction pipeline can key off it permanently."
+  },
+  "namespaces": [
+    {
+      "namespace": "PASCAL_ROTATED",
+      "bare_prefix": "PB",
+      "fq_prefix": "PB.PASC",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_PASCAL_ROTATED.md"],
+      "id_count": 15,
+      "status": "PROVED_LOCAL/CLASSICAL",
+      "topic": "Pascal bulk / rotated SUCC / Gamma: Hopf path fibers, divided powers, finite rotation maps",
+      "code": ["observational_succ/pascal_rotated_transport.py"]
+    },
+    {
+      "namespace": "PRIME_FORM_HEAT",
+      "bare_prefix": "PH",
+      "fq_prefix": "PH.PFH",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_PRIME_FORM_HEAT.md"],
+      "id_count": 15,
+      "status": "CLASSICAL",
+      "topic": "source-typed prime-form heat: radix-p Cuntz digit isometries, Gaussian residue heat, finite Fourier",
+      "code": ["observational_succ/prime_form_heat.py"]
+    },
+    {
+      "namespace": "PROFINITE_HILBERT",
+      "bare_prefix": "PH",
+      "fq_prefix": "PH.PROF",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_PROOF_TEETH.md"],
+      "id_count": 8,
+      "status": "PAPER_PROVED",
+      "topic": "profinite Hilbert / Fourier proof teeth: Haar pullback isometries, L2(Zhat) completion, ell2(Q/Z) Fourier unitary",
+      "code": ["observational_succ/profinite_hilbert.py"]
+    },
+    {
+      "namespace": "PROPERTY_BOOTSTRAP",
+      "bare_prefix": "PB",
+      "fq_prefix": "PB.PROP",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_PROPERTY_BOOTSTRAP.md"],
+      "id_count": 7,
+      "status": "MIXED (CLASSICAL/PROVED_LOCAL/REFUTED/UNVERIFIED)",
+      "topic": "property bootstrap: finite-compression positivity obstruction, property graph checker, finite-input counterexample",
+      "code": ["observational_succ/property_obstruction_controls.py", "scripts/verify_succ_property_graph.py"]
+    },
+    {
+      "namespace": "TAIL_SPLIT_ENCLOSURE",
+      "bare_prefix": "TS",
+      "fq_prefix": "TS.TAIL",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_PERIODIC_TAIL.md"],
+      "id_count": 1,
+      "status": "PROVED_LOCAL",
+      "topic": "tail-split enclosure (TS series inside the periodic-tail supplement): residue-split sharpening of the periodic-tail L2 bracket",
+      "code": ["observational_succ/tail_split_enclosure.py"]
+    },
+    {
+      "namespace": "TATE_SUZUKI_SHORTING",
+      "bare_prefix": "TS",
+      "fq_prefix": "TS.TATE",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_TATE_SUZUKI_SHORTING.md"],
+      "id_count": 15,
+      "status": "MIXED (CLASSICAL_IMPORT/DERIVED/PROVED_LOCAL/CONDITIONAL)",
+      "topic": "Tate-Suzuki source / unshifted shorting: local Tate integrals, completed log-derivative, first-prime screw kernel",
+      "code": ["observational_succ/tate_suzuki_shorting.py"]
+    },
+    {
+      "namespace": "WILD_ADELIC_SUCC",
+      "bare_prefix": "WA",
+      "fq_prefix": "WA.ADEL",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_WILD_ADELIC_SUCC.md"],
+      "id_count": 16,
+      "status": "CLASSICAL/PROVED_PAPER",
+      "topic": "wild adelic SUCC: arithmetic solenoid coverings, Cech H1 / Pontryagin duality, covering kernels",
+      "code": ["observational_succ/wild_adelic_tower.py", "scripts/wild_adelic_tower_probe.py"]
+    },
+    {
+      "namespace": "WILD_AMBIENT_SUCC",
+      "bare_prefix": "WA",
+      "fq_prefix": "WA.AMBI",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_WILD_AMBIENT_SUCC.md"],
+      "id_count": 10,
+      "status": "PROVED_LOCAL/CLASSICAL",
+      "topic": "wild/ambient nonabelian source observers: Alexander wild sphere, PL Hopf linking, perfect free-group word debt",
+      "code": ["observational_succ/wild_ambient_succ.py"]
+    }
+  ],
+  "resolved_collisions": [
+    {
+      "bare_prefix": "PB",
+      "namespaces": ["PASCAL_ROTATED", "PROPERTY_BOOTSTRAP"],
+      "resolution": "disambiguate by supplement file / fq_prefix (PB.PASC vs PB.PROP); neither historical bare ID renamed",
+      "integrity_note": "Genuine distinct-meaning collision: PB in PASCAL_ROTATED means 'Pascal bulk' (Hopf path fibers / rotated SUCC); PB in PROPERTY_BOOTSTRAP means 'Property Bootstrap' (finite-compression positivity). Same bare PB-01 denotes two unrelated claims; do not merge."
+    },
+    {
+      "bare_prefix": "PH",
+      "namespaces": ["PRIME_FORM_HEAT", "PROFINITE_HILBERT"],
+      "resolution": "disambiguate by supplement file / fq_prefix (PH.PROF vs PH.PFH); neither historical bare ID renamed",
+      "integrity_note": "Genuine distinct-meaning collision: PH in PROOF_TEETH is Profinite Hilbert (PAPER_PROVED, profinite_hilbert.py); PH in PRIME_FORM_HEAT is prime-form heat (CLASSICAL, prime_form_heat.py). Bare PH-01 resolves to PH.PROF-01 and PH.PFH-01 respectively; the two namespaces are disjoint in meaning and live in separate supplement files."
+    },
+    {
+      "bare_prefix": "TS",
+      "namespaces": ["TAIL_SPLIT_ENCLOSURE", "TATE_SUZUKI_SHORTING"],
+      "resolution": "disambiguate by supplement file / fq_prefix (TS.TAIL vs TS.TATE); neither historical bare ID renamed",
+      "integrity_note": "Genuine distinct-meaning collision: TS in CLAIM_SUPPLEMENT_PERIODIC_TAIL.md is the tail-split enclosure series (co-resident with the PTE and MS series in that file); TS in TATE_SUZUKI_SHORTING is Tate-Suzuki source/shorting. Same bare TS-01 denotes two unrelated claims; do not merge."
+    },
+    {
+      "bare_prefix": "WA",
+      "namespaces": ["WILD_ADELIC_SUCC", "WILD_AMBIENT_SUCC"],
+      "resolution": "disambiguate by supplement file / fq_prefix (WA.ADEL vs WA.AMBI); neither historical bare ID renamed",
+      "integrity_note": "Genuine distinct-meaning collision: WA in WILD_ADELIC_SUCC means 'Wild Adelic' (arithmetic solenoid coverings); WA in WILD_AMBIENT_SUCC means 'Wild Ambient' (nonabelian source observers / Alexander sphere). Same bare WA-01 denotes two unrelated claims; do not merge."
+    }
+  ]
+}

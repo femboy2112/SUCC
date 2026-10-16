@@ -47,7 +47,7 @@ Status vocabulary and the navigation crosswalk:
 |---|---|---|---|
 | A | YX-01–06 | YEAN proof kernels / proof-producing carrier bridges (#133/#134) | CLAIM_SUPPLEMENT_YEAN_PROOF_OPERATORS.md |
 | A | OS-01–08 | Observer Schur: exact energy/sign/fiber envelopes, compact Galerkin bounds (#135) | CLAIM_SUPPLEMENT_OBSERVER_SCHUR.md |
-| A | PH-01–08 ⚠ | profinite Hilbert/Fourier + minimum-observation proof teeth (#133–135) — ⚠ `PH-` prefix **collides** with pre-existing Prime Form Heat (see integrity note) | CLAIM_SUPPLEMENT_PROOF_TEETH.md |
+| A | PH-01–08 ⚠ | profinite Hilbert/Fourier + minimum-observation proof teeth (#133–135) — ⚠ `PH-` prefix **collides** with pre-existing Prime Form Heat (see integrity note); canonical FQIDs `PH.PROF-01..08` vs `PH.PFH-01..15`, governed by `CLAIM_NAMESPACE_REGISTRY.json` | CLAIM_SUPPLEMENT_PROOF_TEETH.md |
 | A | UPS-01–06 | unit→prime weighted SUCC equivalence (#136) | CLAIM_SUPPLEMENT_UNIT_PRIME_SUCC.md |
 | A | UPT-01–09 | canonical Tate completion / unit-prime log clocks (#138) | CLAIM_SUPPLEMENT_UNIT_PRIME_TATE_BRIDGE.md |
 | A | SR / AR | arithmetic resonance: source range + two-sided first-window Schur brackets (#137) | CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md |
@@ -55,6 +55,7 @@ Status vocabulary and the navigation crosswalk:
 | C | FGF | SUCC×FUCC factorial→Gamma moment lift, ordered-Beta law (#145) | CLAIM_SUPPLEMENT_FACTORIAL_GAMMA_FUCC.md |
 | C | TMF-01–10 | certified Gamma×prime-FUCC Tate–Mellin source transport (#146) | CLAIM_SUPPLEMENT_TATE_MELLIN_PRIME_TRANSPORT.md |
 | C | PWS-01–11 | exact prime-active signed Weil spline certificates (#147) | CLAIM_SUPPLEMENT_PRIME_ACTIVE_WEIL_SPLINES.md |
+| D (post-II research) | CFS-01–08 | certified exact two-sided Loewner enclosure of the original four-mode Schur `S_4`, 4↔30 transport, §3C open modulus (branch `research/original-four-schur-certified-trial-2026-10-16`) | CLAIM_SUPPLEMENT_CERTIFIED_FOUR_SCHUR.md |
 
 Integrity: this integration adds **no** new `O####` rows (the master-ledger `O####` count is unchanged
 from `main`) and introduces **no duplicate `O####` rows** (checked). **One prefix collision is flagged:**
@@ -66,6 +67,14 @@ future cleanup may renumber the newer Profinite-Hilbert IDs to a distinct prefix
 content plus its `profinite_hilbert.py` / receipt references was out of scope for this faithful
 integration, which preserves each PR's content verbatim.) **RH PROVED: NO** — the original signed Schur
 sign `S_4 = A_4 − R_4` remains OPEN across all three families.
+
+Canonical namespace scheme (additive, no bare ID renamed): the collision is now **REGISTERED+GUARDED**.
+Fully-qualified IDs disambiguate it — `PH.PROF-01..08` (Profinite Hilbert, PAPER_PROVED) vs
+`PH.PFH-01..15` (Prime Form Heat, CLASSICAL) — governed by the single source of truth
+[CLAIM_NAMESPACE_REGISTRY.json](CLAIM_NAMESPACE_REGISTRY.json) and guarded by
+`tests/test_claim_namespace_collisions.py`, whose guard also fails any *future* unregistered cross-file
+prefix collision. (The registry likewise records three further pre-existing distinct-meaning collisions on
+the bare prefixes `PB`, `TS`, `WA`.)
 
 ## Current-status corrections (originals preserved, pointers added)
 
