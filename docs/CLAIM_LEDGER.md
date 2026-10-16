@@ -22,6 +22,13 @@ Use these labels:
 - **UNVERIFIED** — required identification, noncircular global sign, or comprehensive physical validation not supplied.
 - **REFUTED** — specified candidate inference fails against a proved or explicit counterexample.
 
+Academic Main II (2026-10-16) adds a navigation crosswalk over these labels (an additive reading aid; it
+does **not** relabel any historical row): **CLASSICAL IMPORT** = CLASSICAL / EXTERNAL THEOREM;
+**VERIFIED EXACT MODEL** = PROVED LOCAL + TESTED MODEL verified by exact rational/interval computation;
+**NUMERICAL OBSERVATION** = TESTED MODEL; **CONDITIONAL** = HYPOTHESIS holding under an explicitly inherited,
+not-here-proved premise; **CONJECTURED** = HYPOTHESIS. See
+[SUCC_ACADEMIC_MAIN_II_RESEARCH_FRONTIER.md](SUCC_ACADEMIC_MAIN_II_RESEARCH_FRONTIER.md) §0.
+
 | ID | Statement (actual scope) | Status | Provenance / validation |
 | --- | --- | --- | --- |
 | O01 | Physical observer is modeled as a quantum/Hilbert carrier before constructing math | HYPOTHESIS / physical modeling premise | Original research framing; docs/FOUNDATIONS.md; not an ontology theorem |

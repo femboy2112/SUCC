@@ -158,6 +158,7 @@ does not give attainable response, a convergent energy-Galerkin method, a rate,
 or a positive Schur lower certificate. The inherited synthetic counterexamples
 retain their original domains. Cross-radius norm continuity and exact low blocks
 past prime3 and prime-square4 do not carry first-window coercivity to those radii.
+
 ## Collective Observer child branch (2026-10-16)
 
 ```

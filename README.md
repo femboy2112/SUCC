@@ -39,6 +39,16 @@ coercivity, and improved two-sided first-window Schur bounds. Fractional spectra
 rigidity and the original sign remain open; finite spectral moments alone cannot
 control inverse response.
 
+**Academic Main II integration (2026-10-16):** PRs #133–#147 (three families — proof machinery / arithmetic
+Schur, source-indexed observers, Gamma·FUCC·signed-Weil) consolidated into `main`. Navigation:
+[integration audit](docs/SUCC_ACADEMIC_MAIN_II_INTEGRATION_AUDIT_2026-10-16.md) ·
+[research frontier + status crosswalk](docs/SUCC_ACADEMIC_MAIN_II_RESEARCH_FRONTIER.md) ·
+[dependency graph](docs/SUCC_ACADEMIC_MAIN_II_DEPENDENCY_GRAPH.md) ·
+[merge coverage](docs/SUCC_ACADEMIC_MAIN_II_MERGE_COVERAGE.json) ·
+[next campaign](research/2026-10-16/SUCC_FUCC_TATE_WEIL_NEXT_CAMPAIGN.md). The red PR #138 interval test was
+repaired on the integration branch (exact rational ξ′/ξ translation). **RH remains OPEN; `S_4 = A_4 − R_4`
+is unresolved.** A positive covariance, Gram, or Galerkin block is **not** the signed completed Weil form.
+
 ## The central mathematical objects
 
 SUCC works with actual carriers — `N, Z, Q, R, C, Ẑ, Q_p, A_f, A_Q` — and groups, rings, fields,
