@@ -1,0 +1,453 @@
+{
+  "RH": "OPEN",
+  "code_head_at_seal": "d615490d738d8c955561bbee5f1bf9b40565ccdf",
+  "hosted_CI_is_separate": true,
+  "interpreters": {
+    "310": {
+      "current_code_matches_executed_snapshot": true,
+      "manifest": "research/2026-10-16/collective_observer_receipts/principal-py310/manifest.json",
+      "python": "3.10.20",
+      "runs": [
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "scripts/verify_provenance.py"
+          ],
+          "name": "provenance",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+          "wall_seconds": 0.065
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_source_lambda.py",
+            "-v"
+          ],
+          "name": "lambda-tests",
+          "returncode": 0,
+          "skipped": 0,
+          "stderr_sha256": "f94a496049bc9c59a0711a31f224e0ab9d119a242b2372b69d8b957507296641",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "test_seconds": 0.007,
+          "tests": 31,
+          "unittest_OK": true,
+          "wall_seconds": 0.215
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_consensus_lambda.py",
+            "-v"
+          ],
+          "name": "consensus-tests",
+          "returncode": 0,
+          "skipped": 0,
+          "stderr_sha256": "32f7f8737ad269001d588c26e14e445b449dde4382ba71258c64ad8c411c03d6",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "test_seconds": 0.047,
+          "tests": 30,
+          "unittest_OK": true,
+          "wall_seconds": 0.215
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_collective_*.py",
+            "-v"
+          ],
+          "name": "collective-tests",
+          "returncode": 0,
+          "skipped": 0,
+          "stderr_sha256": "f8a235c0280bae8c1c56447f875212aaada6cf76d1ff8e58bd05216658aece95",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "test_seconds": 8.825,
+          "tests": 110,
+          "unittest_OK": true,
+          "wall_seconds": 9.137
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "scripts/observer_foundations_probe.py"
+          ],
+          "name": "observer-foundations",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+          "wall_seconds": 0.115
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "scripts/ordinal_succ_report_probe.py"
+          ],
+          "name": "ordinal",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+          "wall_seconds": 3.322
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "scripts/source_lambda_probe.py"
+          ],
+          "name": "lambda",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e8b44170a202cb4d408b0fa180b8a9523862580e17f5ffb4601e03d69d6742f5",
+          "wall_seconds": 0.115
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "scripts/consensus_lambda_probe.py"
+          ],
+          "name": "consensus",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "a7e0e38358d7b4462dd9e97077c842332dd21a95f3df5cf1c5ef4d26822cb090",
+          "wall_seconds": 0.115
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "scripts/collective_effects_probe.py"
+          ],
+          "name": "effects",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "4c70580352b2a731d73881d8046f8d05bd4947de5d3534f6bfe7e1f997fe9d55",
+          "wall_seconds": 0.115
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "scripts/collective_modular_probe.py"
+          ],
+          "name": "modular",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "99a7375880479145fe4c798bcf012618593de16ae57efccea364b938eff535e2",
+          "wall_seconds": 0.516
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "scripts/collective_policy_probe.py"
+          ],
+          "name": "policy",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "be7830061fd268adc1f9f30846dfb129d1cc864c65092097aee021dd9e64dce4",
+          "wall_seconds": 1.569
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "scripts/collective_gamma_probe.py"
+          ],
+          "name": "gamma",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "8f91c334a35d594e5398548b2650ef15151ca1344f29080fa443aaec8e05e704",
+          "wall_seconds": 2.671
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "scripts/collective_spectral_probe.py"
+          ],
+          "name": "spectral",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "2aaa67f6deafc3f4f8b9d067ab49e40e130a37b8fd7e3593087ac5310ac87030",
+          "wall_seconds": 0.065
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "scripts/collective_spectral_probe.py",
+            "--source",
+            "--source-root",
+            "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance"
+          ],
+          "name": "spectral-source",
+          "returncode": 0,
+          "stderr_sha256": "511d315e38f55d14d3e99b3daa90b59472afd88f04d7c77fce72a9db21b6fcd5",
+          "stdout_sha256": "52efdea900594af1151a08fc3f6151b7a629c25defe90bf069928f5156234dbd",
+          "wall_seconds": 89.176
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py310/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_*.py",
+            "-v"
+          ],
+          "name": "full-tests",
+          "returncode": 0,
+          "skipped": 0,
+          "stderr_sha256": "baf25a19c62e95bd50f351c6ddff71512368fe4ee8aacf1492bc893226e44e63",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "test_seconds": 717.307,
+          "tests": 4509,
+          "unittest_OK": true,
+          "wall_seconds": 720.725
+        }
+      ],
+      "sha256": "953c26f5077ab510fc01c3cc77e5c955f43d8ced55e8a06f151f46a1366068ea",
+      "sources_stable": true
+    },
+    "313": {
+      "current_code_matches_executed_snapshot": true,
+      "manifest": "research/2026-10-16/collective_observer_receipts/principal-py313/manifest.json",
+      "python": "3.13.13",
+      "runs": [
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "scripts/verify_provenance.py"
+          ],
+          "name": "provenance",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+          "wall_seconds": 0.065
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_source_lambda.py",
+            "-v"
+          ],
+          "name": "lambda-tests",
+          "returncode": 0,
+          "skipped": 0,
+          "stderr_sha256": "bdec7341c839e1838e77c4aaa6d725cdd19f73f001800d79e4629509644bd844",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "test_seconds": 0.005,
+          "tests": 31,
+          "unittest_OK": true,
+          "wall_seconds": 0.215
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_consensus_lambda.py",
+            "-v"
+          ],
+          "name": "consensus-tests",
+          "returncode": 0,
+          "skipped": 0,
+          "stderr_sha256": "f814f009ae18921889b286b81891bf3288c356f500d38f71bc046c1b872b238d",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "test_seconds": 0.034,
+          "tests": 30,
+          "unittest_OK": true,
+          "wall_seconds": 0.216
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_collective_*.py",
+            "-v"
+          ],
+          "name": "collective-tests",
+          "returncode": 0,
+          "skipped": 0,
+          "stderr_sha256": "78eb9949d431cdcb9d2af8aebad0b009207809640750d34890c08f6fd6d63601",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "test_seconds": 4.659,
+          "tests": 110,
+          "unittest_OK": true,
+          "wall_seconds": 5.029
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "scripts/observer_foundations_probe.py"
+          ],
+          "name": "observer-foundations",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+          "wall_seconds": 0.115
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "scripts/ordinal_succ_report_probe.py"
+          ],
+          "name": "ordinal",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+          "wall_seconds": 2.57
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "scripts/source_lambda_probe.py"
+          ],
+          "name": "lambda",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "e8b44170a202cb4d408b0fa180b8a9523862580e17f5ffb4601e03d69d6742f5",
+          "wall_seconds": 0.115
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "scripts/consensus_lambda_probe.py"
+          ],
+          "name": "consensus",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "a7e0e38358d7b4462dd9e97077c842332dd21a95f3df5cf1c5ef4d26822cb090",
+          "wall_seconds": 0.115
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "scripts/collective_effects_probe.py"
+          ],
+          "name": "effects",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "4c70580352b2a731d73881d8046f8d05bd4947de5d3534f6bfe7e1f997fe9d55",
+          "wall_seconds": 0.115
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "scripts/collective_modular_probe.py"
+          ],
+          "name": "modular",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "99a7375880479145fe4c798bcf012618593de16ae57efccea364b938eff535e2",
+          "wall_seconds": 0.316
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "scripts/collective_policy_probe.py"
+          ],
+          "name": "policy",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "be7830061fd268adc1f9f30846dfb129d1cc864c65092097aee021dd9e64dce4",
+          "wall_seconds": 1.267
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "scripts/collective_gamma_probe.py"
+          ],
+          "name": "gamma",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "8f91c334a35d594e5398548b2650ef15151ca1344f29080fa443aaec8e05e704",
+          "wall_seconds": 1.718
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "scripts/collective_spectral_probe.py"
+          ],
+          "name": "spectral",
+          "returncode": 0,
+          "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "stdout_sha256": "2aaa67f6deafc3f4f8b9d067ab49e40e130a37b8fd7e3593087ac5310ac87030",
+          "wall_seconds": 0.115
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "scripts/collective_spectral_probe.py",
+            "--source",
+            "--source-root",
+            "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance"
+          ],
+          "name": "spectral-source",
+          "returncode": 0,
+          "stderr_sha256": "511d315e38f55d14d3e99b3daa90b59472afd88f04d7c77fce72a9db21b6fcd5",
+          "stdout_sha256": "52efdea900594af1151a08fc3f6151b7a629c25defe90bf069928f5156234dbd",
+          "wall_seconds": 60.894
+        },
+        {
+          "command": [
+            "/tmp/succ-proof-teeth-py313/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tests",
+            "-p",
+            "test_*.py",
+            "-v"
+          ],
+          "name": "full-tests",
+          "returncode": 0,
+          "skipped": 0,
+          "stderr_sha256": "5fb49468db3cb033fc1fe67d8589904252b36fbd404814d346bb91c84341a015",
+          "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "test_seconds": 509.575,
+          "tests": 4509,
+          "unittest_OK": true,
+          "wall_seconds": 513.365
+        }
+      ],
+      "sha256": "96b28caec3bdfd04b86e69978c0ef823dfdbe9b03b2298139ea763e87ac1fa07",
+      "sources_stable": true
+    }
+  },
+  "kernel_replay_is_separate": true,
+  "original_source_sign": "OPEN",
+  "schema": "COLLECTIVE_FINAL_LOCAL_VALIDATION_V1",
+  "source_count": 1
+}

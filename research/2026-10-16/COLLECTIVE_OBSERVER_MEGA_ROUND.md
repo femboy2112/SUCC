@@ -184,6 +184,23 @@ source blob and mathematical receipt coordinates are checked. It is not
 merged into this branch. The first midpoint projection-removal attempt
 certified no improvement; that receipt remains preserved.
 
+For the metric-normalized parity operators, the exact scalar Loewner brackets
+are now:
+
+| Sector | Previous lower cap | New lower cap | Unchanged upper cap |
+|---|---|---|---|
+| odd | -976510769/2147483648 | -7746694143/17179869184 | 300761/1073741824 |
+| even | -29141045707/34359738368 | -14373807789/17179869184 | 11742983/8589934592 |
+
+Each row means `lower*I <= S0_sector <= upper*I`; both intervals contain zero.
+The gain comes from the exact identity subtracting the first four polynomial
+moments of the **same finite Gamma-truncated derivative response**, followed
+by the full derivative Gamma remainder in norm. It does not subtract moments
+of one truncation from the energy of another. Exact interval antiderivatives
+and an independent Taylor-integral method agree. The source metric remains
+`W=diag(1/3,1/5,1/7,1/9)`. The inherited upper trial was not reintegrated;
+its pinned source receipt and normalized scalar PSD bounds were checked.
+
 There is also a genuine **conditional** witness-transport theorem: a negative
 unit-vector margin delta, together with the actual source compression bound
 `||G-P_N G P_N|| < 11/[40(N+1)]`, gives a finite Legendre rank and rational

@@ -1,0 +1,37 @@
+{
+  "all_equal": true,
+  "not_independent_source": true,
+  "results": {
+    "effects": {
+      "equal": true,
+      "py310_sha256": "4c70580352b2a731d73881d8046f8d05bd4947de5d3534f6bfe7e1f997fe9d55",
+      "py313_sha256": "4c70580352b2a731d73881d8046f8d05bd4947de5d3534f6bfe7e1f997fe9d55"
+    },
+    "gamma": {
+      "equal": true,
+      "py310_sha256": "8f91c334a35d594e5398548b2650ef15151ca1344f29080fa443aaec8e05e704",
+      "py313_sha256": "8f91c334a35d594e5398548b2650ef15151ca1344f29080fa443aaec8e05e704"
+    },
+    "modular": {
+      "equal": true,
+      "py310_sha256": "99a7375880479145fe4c798bcf012618593de16ae57efccea364b938eff535e2",
+      "py313_sha256": "99a7375880479145fe4c798bcf012618593de16ae57efccea364b938eff535e2"
+    },
+    "policy": {
+      "equal": true,
+      "py310_sha256": "be7830061fd268adc1f9f30846dfb129d1cc864c65092097aee021dd9e64dce4",
+      "py313_sha256": "be7830061fd268adc1f9f30846dfb129d1cc864c65092097aee021dd9e64dce4"
+    },
+    "spectral": {
+      "equal": true,
+      "py310_sha256": "2aaa67f6deafc3f4f8b9d067ab49e40e130a37b8fd7e3593087ac5310ac87030",
+      "py313_sha256": "2aaa67f6deafc3f4f8b9d067ab49e40e130a37b8fd7e3593087ac5310ac87030"
+    },
+    "spectral-source": {
+      "equal": true,
+      "py310_sha256": "52efdea900594af1151a08fc3f6151b7a629c25defe90bf069928f5156234dbd",
+      "py313_sha256": "52efdea900594af1151a08fc3f6151b7a629c25defe90bf069928f5156234dbd"
+    }
+  },
+  "schema": "CROSS_INTERPRETER_EXACT_REPLAY_V1"
+}

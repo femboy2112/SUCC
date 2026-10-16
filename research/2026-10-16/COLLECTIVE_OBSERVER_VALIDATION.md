@@ -27,7 +27,8 @@ The independent signed-source audit is isolated from current-package imports.
 New CI adds the same finite/source replay and independent audit under both
 interpreters. Existing CI retains its full suite and project research probes.
 The pinned sibling is mounted without a merge. No nontrivial zero coordinates
-are read or supplied to these calculations.
+are inputs to the new source Schur calculation. Historical full-suite tests
+remain separate calibration evidence; they are not inputs to that bound.
 
 ## Formal reproduction
 
@@ -74,5 +75,31 @@ annotations are preserved in `collective_observer_receipts/yean-exact-head-ci.js
   arithmetic calculation, passed. The failed logs/artifact are retained; the
   workflow now installs the repository's standard `.[test]` dependencies.
 
-Final cross-version and exact-head hosted outcomes are appended after execution.
-An unexecuted, pending, skipped, cancelled or billing-blocked job is not a pass.
+## Final local stable-snapshot validation
+
+| Interpreter | Full suite | Focused interfaces | Source replay and required gates |
+|---|---|---|---|
+| Python 3.10.20 | 4509 passed, 717.307s, zero skips | 31 lambda + 30 consensus + 110 collective passed | Passed |
+| Python 3.13.13 | 4509 passed, 509.575s, zero skips | 31 lambda + 30 consensus + 110 collective passed | Passed |
+
+Both source snapshots remained unchanged during execution. Every one of the
+4399 parent tests is retained; 110 new tests account for the final inventory.
+The earlier 4508 count is explicitly a development snapshot, not this final
+inventory. `principal-test-retention.json` checks that no parent test vanished.
+The six exact new probe outputs, including the source calculation, are
+byte-identical across interpreters. Nine independent hostile-audit sections
+also pass under both versions, with stable before/after hashes. The isolated
+signed-source moment and receipt audits are recorded separately and run in CI.
+
+`principal-py310/manifest.json`, `principal-py313/manifest.json` and
+`principal-validation-summary.json` bind the commands, logs and code snapshots.
+`formal-source-correspondence.json` rechecks the sealed formal manifest/logs,
+all 33 exact declaration types/axiom lists and eight current SUCC source files.
+This last check is byte integrity and an inspected application contract, not
+a new kernel run or a semantic runtime-extraction proof.
+
+The final receipt commit is pushed after these local executions. Hosted CI on
+that exact commit is checked separately and reported in the draft PR's current
+validation section, avoiding a self-referential receipt commit. Earlier failed
+and superseded run receipts remain frozen. An unexecuted, pending, skipped,
+cancelled or billing-blocked job is not a pass.

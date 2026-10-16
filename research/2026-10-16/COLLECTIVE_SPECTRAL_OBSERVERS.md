@@ -308,3 +308,15 @@ Tests are finite regressions, not infinite theorems. New proofs and source
 application are not Lean-checked. No independent agent review is represented.
 Byte checks certify provenance, not analytic truth. Exact commands, test counts,
 artifact hashes and replay equality belong to `spectral-validation.json`.
+
+### Principal integration addendum
+
+The preceding no-review statement describes the spectral lane's initial
+handoff. A subsequent [independent hostile audit](../../reviews/2026-10-16_COLLECTIVE_OBSERVER_HOSTILE_AUDIT.md)
+checked the signed moments using Taylor integration, moment subtraction,
+derivative-tail accounting and the normalized scalar PSD certificates. It
+retains the same original source and inherited continuum premises; it is not
+a second arithmetic source. The original freeze hashes remain historical.
+For a new replay use `/tmp/collective-spectral-source.json` as `--output`, or
+the principal validation runner with a fresh directory, rather than overwriting
+the frozen receipt shown in the lane's original command above.
