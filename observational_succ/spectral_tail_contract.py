@@ -92,11 +92,17 @@ def audit_tail_packet(packet, root):
                 or not 0 < eta <= F(1, 2) or c < 0):
             raise CapsuleError('conditional fractional theorem domain violated')
     root = Path(root).resolve()
+    source_file = root/'observational_succ/source_weil_hierarchy.py'
+    if (not source_file.is_file() or
+            sha256(source_file.read_bytes()).hexdigest() != packet['source']['sha256']):
+        raise CapsuleError('evidence root does not contain the pinned source model')
     if type(packet['evidence']) is not list or not packet['evidence']:
         raise CapsuleError('source/application evidence required')
     for item in packet['evidence']:
         if type(item) is not dict or set(item) != {'path', 'sha256', 'kind'}:
             raise CapsuleError('typed local evidence required')
+        if type(item['kind']) is not str or not item['kind'].strip():
+            raise CapsuleError('nonempty evidence kind required')
         relative = item['path']
         if type(relative) is not str or Path(relative).is_absolute():
             raise CapsuleError('relative evidence path required')
