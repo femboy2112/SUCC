@@ -1,0 +1,22 @@
+test_mod_four_gamma_filter_derivative_matches_real_gamma (test_observer_schur_source.DifferentSourceResponseTests) ... ok
+test_mutated_channels_cannot_hide_behind_parity (test_observer_schur_source.DifferentSourceResponseTests) ... ok
+test_new_response_is_whole_source_and_not_a_sign_certificate (test_observer_schur_source.DifferentSourceResponseTests) ... ok
+test_wrong_basis_cannot_borrow_a_source_matrix (test_observer_schur_source.DifferentSourceResponseTests) ... ok
+test_finite_positive_blocks_do_not_guarantee_positive_short (test_observer_schur_source.ExactParityAndResponseTests) ... ok
+test_threshold_basis_has_exact_Q_moments_and_parity (test_observer_schur_source.ExactParityAndResponseTests) ... ok
+test_two_sector_test_needs_both_diagonals_and_determinant (test_observer_schur_source.ExactParityAndResponseTests) ... ok
+test_all_coefficients_excluded_not_just_frozen_trials (test_observer_schur_source.ExactSourceAnsatzTests) ... ok
+test_certified_upper_short_uses_coordinate_metric_and_never_promotes_sign (test_observer_schur_source.ExactSourceAnsatzTests) ... ok
+test_exact_maximum_square_completion_for_complex_coefficients (test_observer_schur_source.ExactSourceAnsatzTests) ... ok
+test_gamma_extension_preserves_parent_intervals (test_observer_schur_source.ExactSourceAnsatzTests) ... ok
+test_independent_principal_minor_check_of_majorant (test_observer_schur_source.ExactSourceAnsatzTests) ... ok
+test_inherited_kappa_also_excludes_family (test_observer_schur_source.ExactSourceAnsatzTests) ... ok
+test_insufficient_interval_budget_stays_unresolved (test_observer_schur_source.ExactSourceAnsatzTests) ... ok
+test_interval_matrix_really_is_dominated_by_upper (test_observer_schur_source.ExactSourceAnsatzTests) ... ok
+test_proof_inputs_reject_bool_float_and_unsupported_budget (test_observer_schur_source.ExactSourceAnsatzTests) ... ok
+test_source_kappa_ceiling_does_not_manufacture_no_go (test_observer_schur_source.ExactSourceAnsatzTests) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 67.679s
+
+OK

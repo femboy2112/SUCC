@@ -26,6 +26,12 @@ and [claim supplement](docs/CLAIM_SUPPLEMENT_PROOF_TEETH.md) add the proved fini
 completion, exact minimum-observation certificates, paired YEAN Lean kernels,
 and authentic four-low Schur trial obstructions. The original Schur sign remains open.
 
+**Observer–Schur Round II:** [theorem and execution report](research/2026-10-16/OBSERVER_SCHUR_ROUND_II.md)
+and [claim supplement](docs/CLAIM_SUPPLEMENT_OBSERVER_SCHUR.md) separate exact energy,
+sign and fiber envelopes; add compact Galerkin bounds, relative-residual
+counterexamples, typed formal instances and an authentic-source trial-family obstruction.
+The original signed Schur problem remains open.
+
 ## The central mathematical objects
 
 SUCC works with actual carriers — `N, Z, Q, R, C, Ẑ, Q_p, A_f, A_Q` — and groups, rings, fields,

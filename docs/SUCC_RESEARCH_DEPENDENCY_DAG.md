@@ -87,3 +87,33 @@ the displayed zero/frozen trial sufficient inequalities. These add a failed
 method edge, not an edge to negative source sign or to RH. The original
 S0≥0 edge remains OPEN. All-stage positivity, source identification and form
 domains remain explicit premises in the capsule dependency graph.
+
+## Observer–Schur Round II
+
+The [Round-II supplement](CLAIM_SUPPLEMENT_OBSERVER_SCHUR.md) supplies these
+additional arrows, each with its required domain:
+
+```text
+Linear observation + Hermitian form
+  --kernel lies in radical [P]--> exact energy decoder on the image
+  --D≥0, actual sqrt(D) range [P]--> finite quadratic fiber envelope S0
+  --A≥αI and source reflection [P]--> two parity contraction problems
+  --certified genuine residual upper bound [U]--> original S0 sign [U]
+
+Actual compact source G + strong orthogonal Legendre chain
+  --signed derivative regularity [P]--> quantitative operator-norm compression
+  --"norm compression controls zero inverse" [R]--> REFUTED
+  --"ordinary Galerkin controls K-relative residual" [R]--> REFUTED generally
+  --bounded residual map [P]--> polynomial graph density
+  --target in residual-range closure + controlled approximation [U]--> sharp residual
+
+Pinned finite Python model -> fixed Lean instance grammar [X]
+  -> fresh exact-term kernel replay [formal, recorded separately]
+  -> universal Python/source identification [U, not supplied by hashes]
+```
+
+The authentic degree-eight even response family is excluded for the stated
+sufficient criterion by a rational interval matrix proof. This is a failed
+method edge, not negative original-source sign. The clamped-biharmonic example
+shows that even every trial can fail such a conservative method for a genuinely
+positive synthetic form. Neither counterexample is substituted for Suzuki.

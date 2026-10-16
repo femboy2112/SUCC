@@ -1,0 +1,158 @@
+{
+  "schema": "SUCC_CARRIER_PROOF_CERTIFICATE_v1",
+  "audit": "STRUCTURE_AND_BYTES_VALID",
+  "claims": [
+    {
+      "claim_id": "OS-ENERGY",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Real or complex vector space, linear O, Hermitian form"
+      ],
+      "retained_hypotheses": [
+        "Real or complex vector space, linear O, Hermitian form"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "OS-ENVELOPE",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Bounded self-adjoint G, D>=0",
+        "Ran(B*) subset actual Ran(sqrt(D))"
+      ],
+      "retained_hypotheses": [
+        "Bounded self-adjoint G, D>=0",
+        "Ran(B*) subset actual Ran(sqrt(D))"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "OS-CONTRACTION",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "A>=alpha I for alpha>0",
+        "The same G and P commute with the reflection"
+      ],
+      "retained_hypotheses": [
+        "A>=alpha I for alpha>0",
+        "Bounded self-adjoint G, D>=0",
+        "Ran(B*) subset actual Ran(sqrt(D))",
+        "The same G and P commute with the reflection"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "OS-COMPACT",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Compact operator and strongly convergent orthogonal projections",
+        "Quantitative Suzuki specialization uses the pinned signed derivative enclosure"
+      ],
+      "retained_hypotheses": [
+        "Compact operator and strongly convergent orthogonal projections",
+        "Quantitative Suzuki specialization uses the pinned signed derivative enclosure"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "OS-RANGE-OPEN",
+      "recorded_authority": "UNVERIFIED",
+      "conclusion_mode": "OPEN_TARGET",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [],
+      "retained_hypotheses": [],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "OS-RELATIVE-APPROX",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [
+        "OS-RANGE-OPEN"
+      ],
+      "declared_hypotheses": [
+        "ASSUME:OS-RANGE-OPEN",
+        "Source residual operator is bounded and trials have dense union"
+      ],
+      "retained_hypotheses": [
+        "ASSUME:OS-RANGE-OPEN",
+        "Source residual operator is bounded and trials have dense union"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "OS-APPROX-CONSUMER",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [
+        "OS-RANGE-OPEN"
+      ],
+      "declared_hypotheses": [
+        "ASSUME:OS-RANGE-OPEN"
+      ],
+      "retained_hypotheses": [
+        "ASSUME:OS-RANGE-OPEN",
+        "Source residual operator is bounded and trials have dense union"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "OS-ANSATZ-FAILURE",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Pinned original source, radius1/2, trial U(P2) in span(P6,P8)",
+        "The exact tested kappa range and whole-source interval proof in the dossier"
+      ],
+      "retained_hypotheses": [
+        "Pinned original source, radius1/2, trial U(P2) in span(P6,P8)",
+        "The exact tested kappa range and whole-source interval proof in the dossier"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "OS-NESTED-ENVELOPE",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Same finite source, nested observations, both staged PSD and cross-range conditions"
+      ],
+      "retained_hypotheses": [
+        "Same finite source, nested observations, both staged PSD and cross-range conditions"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "OS-SCHUR-OPEN",
+      "recorded_authority": "UNVERIFIED",
+      "conclusion_mode": "OPEN_TARGET",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [],
+      "retained_hypotheses": [],
+      "semantic_authority_issued": null
+    }
+  ],
+  "theorems_proved_by_this_audit": [],
+  "physical_source_authentication": false,
+  "RH_proved": false
+}
