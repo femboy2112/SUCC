@@ -29,6 +29,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
+      - name: Install the existing research and test dependencies
+        run: python -m pip install -e ".[test]"
       - name: Mount the pinned arithmetic sibling without merging it
         run: |
           git cat-file -e 95dbf40553e54c901e9998e14b1b9d67298fa89e^{commit}

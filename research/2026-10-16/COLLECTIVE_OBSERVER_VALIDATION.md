@@ -68,6 +68,11 @@ annotations are preserved in `collective_observer_receipts/yean-exact-head-ci.js
   failed improvement receipt remains alongside the successful exact moments.
 - Independent audit uses distinct partition, trajectory-tree, permutation,
   Taylor integration and PSD methods, while retaining common source premises.
+- The first new hosted replay workflow at `e736f17` omitted installation of
+  the existing test dependencies. Its ordinal probe failed with missing
+  `mpmath`, while all other requested replay commands, including the pinned
+  arithmetic calculation, passed. The failed logs/artifact are retained; the
+  workflow now installs the repository's standard `.[test]` dependencies.
 
 Final cross-version and exact-head hosted outcomes are appended after execution.
 An unexecuted, pending, skipped, cancelled or billing-blocked job is not a pass.
