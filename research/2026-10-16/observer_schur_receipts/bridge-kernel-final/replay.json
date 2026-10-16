@@ -1,0 +1,169 @@
+{
+  "schema": "FINITE_MODEL_KERNEL_REPLAY_v1",
+  "instances": [
+    {
+      "translation": {
+        "audit": "EXACT_INSTANCE_TRANSLATION_REPLAYED",
+        "packet_digest": "abe73795749dae8068b42e4dc8f80d069dc3b4b49ca31625429e8b88b1949d07",
+        "kernel_verification_performed": false,
+        "universal_python_correctness": false,
+        "retained_source_obligations": [
+          "Declared source identity and epoch match the intended mathematical carrier",
+          "Python execution implements the pinned source text in the declared runtime",
+          "External source identification, if requested, requires independent evidence"
+        ]
+      },
+      "source": "instance-0.lean",
+      "source_sha256": "b56d1149e89a82b66710e56db03edd9fea1d89f30b902334ec1a0981f270da3c",
+      "declarations": [
+        "Yean.SUCC.RuntimeInstance.normalized",
+        "Yean.SUCC.RuntimeInstance.prime_admission",
+        "Yean.SUCC.RuntimeInstance.all_inputs"
+      ],
+      "kernel_status": "EXACT_GENERATED_DECLARATIONS_CHECKED",
+      "argv": [
+        "lean",
+        "-j1",
+        "-M2304",
+        "-DElab.async=false",
+        "-t0",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-final/instance-0.lean"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/YEAN-observer-schur",
+      "exit_code": 0,
+      "elapsed_seconds": 2.275,
+      "axioms": {
+        "Yean.SUCC.RuntimeInstance.normalized": [
+          "propext"
+        ],
+        "Yean.SUCC.RuntimeInstance.prime_admission": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Yean.SUCC.RuntimeInstance.all_inputs": [
+          "propext"
+        ]
+      },
+      "full_elaborated_types": "instance-0-kernel.txt",
+      "log_sha256": "88e1b88a80a0121747bdb43aedb82afc6642a7c9df4f962fcce0a8e08d23349a"
+    },
+    {
+      "translation": {
+        "audit": "EXACT_INSTANCE_TRANSLATION_REPLAYED",
+        "packet_digest": "1d7b6f5a8c557fac9116481783b2c15944b66af4a718cd8a7e49784f042c67ba",
+        "kernel_verification_performed": false,
+        "universal_python_correctness": false,
+        "retained_source_obligations": [
+          "Declared source identity and epoch match the intended mathematical carrier",
+          "Python execution implements the pinned source text in the declared runtime",
+          "External source identification, if requested, requires independent evidence"
+        ]
+      },
+      "source": "instance-1.lean",
+      "source_sha256": "bbb4b495f50ed9d7529a8b2e286312642f7e2487e04f53b36ca29f844b840d7d",
+      "declarations": [
+        "Yean.SUCC.RuntimeInstance.pull_columns",
+        "Yean.SUCC.RuntimeInstance.average_columns",
+        "Yean.SUCC.RuntimeInstance.project_columns",
+        "Yean.SUCC.RuntimeInstance.retraction"
+      ],
+      "kernel_status": "EXACT_GENERATED_DECLARATIONS_CHECKED",
+      "argv": [
+        "lean",
+        "-j1",
+        "-M2304",
+        "-DElab.async=false",
+        "-t0",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-final/instance-1.lean"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/YEAN-observer-schur",
+      "exit_code": 0,
+      "elapsed_seconds": 5.383,
+      "axioms": {
+        "Yean.SUCC.RuntimeInstance.pull_columns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Yean.SUCC.RuntimeInstance.average_columns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Yean.SUCC.RuntimeInstance.project_columns": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "Yean.SUCC.RuntimeInstance.retraction": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "full_elaborated_types": "instance-1-kernel.txt",
+      "log_sha256": "1d45ca9ec53805f20b3c39e63aa099f469e81532610f94fb7af930debd089b4d"
+    }
+  ],
+  "kernel_verification_performed": true,
+  "source_obligations": [
+    "Declared source identity and epoch match the intended mathematical carrier",
+    "Python execution implements the pinned source text in the declared runtime",
+    "External source identification, if requested, requires independent evidence"
+  ],
+  "universal_python_correctness": false,
+  "physical_source_authenticated": false,
+  "hosted_CI_claimed": false,
+  "RH_proved": false,
+  "implementation_sha256": {
+    "scripts/formal_instance_bridge_probe.py": "a615cebcd4a9c05e83c68f2160bb44063d12e3066a3c770bc4a534af6f3f681f",
+    "observational_succ/formal_instance_bridge.py": "596899251e045b8266ec57a7b76faddea5efcdf59d0a8235601c4686f68d3877"
+  },
+  "kernel_mutants": [
+    {
+      "source": "mutant-0.lean",
+      "source_sha256": "2a656a093c44d64f75cb3a5270a075442d8684f2d8819764f04234363a36a7bc",
+      "mutation": "wrong affine offset",
+      "argv": [
+        "lean",
+        "-j1",
+        "-M2304",
+        "-DElab.async=false",
+        "-t0",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-final/mutant-0.lean"
+      ],
+      "exit_code": 1,
+      "rejected": true,
+      "log": "mutant-0-kernel.txt",
+      "log_sha256": "f024cdee28bf977fd9c67f44e8a21ce155f4da0d322365bd92fdaecf4706d9af"
+    },
+    {
+      "source": "mutant-1.lean",
+      "source_sha256": "f3497bd457c246b82c5f5e6424f61c5857db6839f093ad701ac5f6c7f58c2cf9",
+      "mutation": "omitted fiber normalization",
+      "argv": [
+        "lean",
+        "-j1",
+        "-M2304",
+        "-DElab.async=false",
+        "-t0",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-final/mutant-1.lean"
+      ],
+      "exit_code": 1,
+      "rejected": true,
+      "log": "mutant-1-kernel.txt",
+      "log_sha256": "4eb94a65997301680c2bc11c391a30f619f0a4858f9f61f315ce51307d0c1d59"
+    }
+  ],
+  "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "formal_manifest_sha256": "d2c3d093ca7140d926f4a36e196139eec992edab07e6f7493d685fc4c733c6b8",
+  "fresh_local_modules": [
+    "Yean.Core.SplitCodec",
+    "Yean.MemeSufficientArtifact",
+    "Yean.SUCC.AffineWord",
+    "Yean.SUCC.FiniteRetract",
+    "Yean.SUCC.TwoPoint"
+  ],
+  "implementation_unchanged": true
+}

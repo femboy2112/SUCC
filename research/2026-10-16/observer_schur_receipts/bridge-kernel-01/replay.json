@@ -1,0 +1,70 @@
+{
+  "schema": "FINITE_MODEL_KERNEL_REPLAY_v1",
+  "instances": [
+    {
+      "translation": {
+        "audit": "EXACT_INSTANCE_TRANSLATION_REPLAYED",
+        "packet_digest": "abe73795749dae8068b42e4dc8f80d069dc3b4b49ca31625429e8b88b1949d07",
+        "kernel_verification_performed": false,
+        "universal_python_correctness": false,
+        "retained_source_obligations": [
+          "Declared source identity and epoch match the intended mathematical carrier",
+          "Python execution implements the pinned source text in the declared runtime",
+          "External source identification, if requested, requires independent evidence"
+        ]
+      },
+      "source": "instance-0.lean",
+      "source_sha256": "f4b17c16e81a5f0ce5f7f77044d62094b49a5636928aed3ea3028edf42e8bda8",
+      "declarations": [
+        "Yean.SUCC.RuntimeInstance.normalized",
+        "Yean.SUCC.RuntimeInstance.prime_admission",
+        "Yean.SUCC.RuntimeInstance.all_inputs"
+      ],
+      "kernel_status": "FAILED",
+      "argv": [
+        "lean",
+        "-j1",
+        "-M2304",
+        "-t0",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-01/instance-0.lean"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/YEAN-observer-schur",
+      "exit_code": 1,
+      "elapsed_seconds": 2.213,
+      "axioms": {
+        "Yean.SUCC.RuntimeInstance.normalized": [
+          "propext"
+        ],
+        "Yean.SUCC.RuntimeInstance.prime_admission": [
+          "propext",
+          "sorryAx",
+          "Quot.sound"
+        ],
+        "Yean.SUCC.RuntimeInstance.all_inputs": [
+          "propext"
+        ]
+      },
+      "full_elaborated_types": "instance-0-kernel.txt",
+      "log_sha256": "4c63c6e9671989384006647943791431637c3eb46ff7b7d33edb1b40cfea43c8"
+    }
+  ],
+  "kernel_verification_performed": false,
+  "source_obligations": [
+    "Declared source identity and epoch match the intended mathematical carrier",
+    "Python execution implements the pinned source text in the declared runtime",
+    "External source identification, if requested, requires independent evidence"
+  ],
+  "universal_python_correctness": false,
+  "physical_source_authenticated": false,
+  "hosted_CI_claimed": false,
+  "RH_proved": false,
+  "lean_version": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+  "formal_manifest_sha256": "d2c3d093ca7140d926f4a36e196139eec992edab07e6f7493d685fc4c733c6b8",
+  "fresh_local_modules": [
+    "Yean.Core.SplitCodec",
+    "Yean.MemeSufficientArtifact",
+    "Yean.SUCC.AffineWord",
+    "Yean.SUCC.FiniteRetract",
+    "Yean.SUCC.TwoPoint"
+  ]
+}

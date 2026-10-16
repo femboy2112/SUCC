@@ -1,0 +1,17 @@
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-03/instance-0.lean:10:34: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+Yean.SUCC.RuntimeInstance.normalized : @Eq.{1} (Yean.SUCC.Affine.{0} Nat)
+  (@Yean.SUCC.Word.normalize.{0} Nat Nat.instSemiring Yean.SUCC.RuntimeInstance.word)
+  (@Yean.SUCC.Affine.mk.{0} Nat (@OfNat.ofNat.{0} Nat (nat_lit 6) (instOfNatNat (nat_lit 6)))
+    (@OfNat.ofNat.{0} Nat (nat_lit 15) (instOfNatNat (nat_lit 15))))
+'Yean.SUCC.RuntimeInstance.normalized' depends on axioms: [propext]
+Yean.SUCC.RuntimeInstance.prime_admission : Yean.SUCC.Word.PrimeWord Yean.SUCC.RuntimeInstance.word
+'Yean.SUCC.RuntimeInstance.prime_admission' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Yean.SUCC.RuntimeInstance.all_inputs : ∀ (x : Nat),
+  @Eq.{1} Nat (@Yean.SUCC.Word.run.{0} Nat Nat.instSemiring Yean.SUCC.RuntimeInstance.word x)
+    (@HAdd.hAdd.{0, 0, 0} Nat Nat Nat (@instHAdd.{0} Nat instAddNat)
+      (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+        (@OfNat.ofNat.{0} Nat (nat_lit 6) (instOfNatNat (nat_lit 6))) x)
+      (@OfNat.ofNat.{0} Nat (nat_lit 15) (instOfNatNat (nat_lit 15))))
+'Yean.SUCC.RuntimeInstance.all_inputs' depends on axioms: [propext]

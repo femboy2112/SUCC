@@ -1,0 +1,124 @@
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-02/instance-1.lean:9:93: error: unsolved goals
+case «0».«0»
+⊢ Fin.modNat 0 = 0
+
+case «0».«1»
+⊢ ¬Fin.modNat 1 = 0
+
+case «0».«2»
+⊢ ⟨2, ⋯⟩.modNat = 0
+
+case «0».«3»
+⊢ ¬⟨3, ⋯⟩.modNat = 0
+
+case «1».«0»
+⊢ ¬Fin.modNat 0 = 1
+
+case «1».«1»
+⊢ Fin.modNat 1 = 1
+
+case «1».«2»
+⊢ ¬⟨2, ⋯⟩.modNat = 1
+
+case «1».«3»
+⊢ ⟨3, ⋯⟩.modNat = 1
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-02/instance-1.lean:16:108: error: unsolved goals
+case «2».«0»
+⊢ {x | ↑x = 1}.card = 1
+
+case «3».«1»
+⊢ {x | 1 + 2 * ↑x = 3}.card = 1
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-02/instance-1.lean:23:108: error: unsolved goals
+case «2».«0»
+⊢ {x | ↑x = 1}.card = 1
+
+case «2».«2»
+⊢ {x | ↑x = 1}.card = 1
+
+case «3».«1»
+⊢ {x | 1 + 2 * ↑x = 3}.card = 1
+
+case «3».«3»
+⊢ {x | 1 + 2 * ↑x = 3}.card = 1
+Yean.SUCC.RuntimeInstance.pull_columns : ∀ (j : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+  (i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))),
+  @Eq.{1} Rat
+    (@Yean.SUCC.FiniteRetract.cyclicPull (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+      (fun (z : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) =>
+        @ite.{1} Rat (@Eq.{1} (Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) z j)
+          (instDecidableEqFin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) z j)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0))))
+      i)
+    (Yean.SUCC.RuntimeInstance.pullTable j i)
+'Yean.SUCC.RuntimeInstance.pull_columns' depends on axioms: [propext, sorryAx.{u}, Classical.choice.{u}, Quot.sound.{u}]
+Yean.SUCC.RuntimeInstance.average_columns : ∀ (j : Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4))))
+  (i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))),
+  @Eq.{1} Rat
+    (@Yean.SUCC.FiniteRetract.cyclicAverage (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+      (fun
+          (z :
+            Fin
+              (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))) =>
+        @ite.{1} Rat
+          (@Eq.{1}
+            (Fin
+              (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+            z j)
+          (instDecidableEqFin
+            (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+            z j)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0))))
+      i)
+    (Yean.SUCC.RuntimeInstance.averageTable j i)
+'Yean.SUCC.RuntimeInstance.average_columns' depends on axioms: [propext,
+ sorryAx.{u},
+ Classical.choice.{u},
+ Quot.sound.{u}]
+Yean.SUCC.RuntimeInstance.project_columns : ∀ (j i : Fin (@OfNat.ofNat.{0} Nat (nat_lit 4) (instOfNatNat (nat_lit 4)))),
+  @Eq.{1} Rat
+    (@Yean.SUCC.FiniteRetract.cyclicProject (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+      (fun
+          (z :
+            Fin
+              (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))) =>
+        @ite.{1} Rat
+          (@Eq.{1}
+            (Fin
+              (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+                (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))))
+            z j)
+          (instDecidableEqFin
+            (@HMul.hMul.{0, 0, 0} Nat Nat Nat (@instHMul.{0} Nat instMulNat)
+              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+              (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))))
+            z j)
+          (@OfNat.ofNat.{0} Rat (nat_lit 1) (@Rat.instOfNat (nat_lit 1)))
+          (@OfNat.ofNat.{0} Rat (nat_lit 0) (@Rat.instOfNat (nat_lit 0))))
+      i)
+    (Yean.SUCC.RuntimeInstance.projectTable j i)
+'Yean.SUCC.RuntimeInstance.project_columns' depends on axioms: [propext,
+ sorryAx.{u},
+ Classical.choice.{u},
+ Quot.sound.{u}]
+Yean.SUCC.RuntimeInstance.retraction : ∀ (f : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) → Rat),
+  @Eq.{1} ((r : Fin (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))) → Rat)
+    (@Yean.SUCC.FiniteRetract.cyclicAverage (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+      (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+      (@Yean.SUCC.FiniteRetract.cyclicPull (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2)))
+        (@OfNat.ofNat.{0} Nat (nat_lit 2) (instOfNatNat (nat_lit 2))) f))
+    f
+'Yean.SUCC.RuntimeInstance.retraction' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]

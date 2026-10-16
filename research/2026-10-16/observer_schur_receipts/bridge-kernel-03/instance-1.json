@@ -1,0 +1,104 @@
+{
+  "schema": "SUCC_YEAN_FINITE_INSTANCE_v1",
+  "kind": "CYCLIC_RATIONAL_RETRACT",
+  "source_id": "integer-residue-source",
+  "epoch": 0,
+  "inputs": {
+    "fine": 4,
+    "coarse": 2,
+    "fiber": 2
+  },
+  "outputs": {
+    "pull": [
+      [
+        "1",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0",
+        "1"
+      ]
+    ],
+    "average": [
+      [
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "1/2"
+      ]
+    ],
+    "project": [
+      [
+        "1/2",
+        "0",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "0",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "0",
+        "1/2"
+      ]
+    ]
+  },
+  "parameter_mapping": {
+    "coefficient_type": "Rat",
+    "chart": "r+n*t",
+    "fine_type": "Fin(k*n)",
+    "measure": "counting",
+    "pull_adjoint": "fiber sum",
+    "average": "fiber sum divided by k",
+    "table_order": "input column then output row",
+    "hypotheses": [
+      "0<n",
+      "1<k"
+    ]
+  },
+  "runtime_pins": {
+    "observational_succ/finite_affine_presentation.py": "aa3203171ddcca1f87b33e5199c4209c62f23908e977c47ca12d2c62b8d39167",
+    "observational_succ/finite_quotient_retract.py": "0d68dcd920962701c054b43410aa2a885ff99deef4a8825a0f431969b833edd7"
+  },
+  "lean_pins": {
+    "Yean/SUCC/AffineWord.lean": "77bfbe803999a61e72a3cbfeaad804a948f72d641a9ff55e8310e24488157d4b",
+    "Yean/SUCC/TwoPoint.lean": "0a46404ac95ccea592d54fe24334391836813801b5a72cd181ed1b2a443d07a4",
+    "Yean/SUCC/FiniteRetract.lean": "a2b915ee6034745222a1be6cc4c1607018007b555a78fbc38d6cc7d6d35be308",
+    "lean-toolchain": "7dc000621e0046d1aada809e2b7177e64454645cf4c741e9daaf79c99ec2e7a2",
+    "lake-manifest.json": "db796b63ff16b3e7b23530173e92cd7b9d8acaf9f8dcacbb3e175a69f076b1f2"
+  },
+  "source_obligations": [
+    "Declared source identity and epoch match the intended mathematical carrier",
+    "Python execution implements the pinned source text in the declared runtime",
+    "External source identification, if requested, requires independent evidence"
+  ],
+  "requested_scope": "SERIALIZED_MATHEMATICAL_INSTANCE",
+  "universal_python_correctness": false,
+  "physical_source_authenticated": false,
+  "digest": "1d7b6f5a8c557fac9116481783b2c15944b66af4a718cd8a7e49784f042c67ba"
+}
