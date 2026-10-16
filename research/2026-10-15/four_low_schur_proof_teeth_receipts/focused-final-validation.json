@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-16T01:35:36.980901+00:00",
+  "results": [
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_four_low_schur_proof_teeth.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "research/2026-10-15/four_low_schur_proof_teeth_receipts/focused-host-final.log",
+      "elapsed_seconds": 4.53265247005038
+    },
+    {
+      "command": [
+        "/tmp/succ-proof-teeth-py310/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_four_low_schur_proof_teeth.py",
+        "-v"
+      ],
+      "returncode": 0,
+      "log": "research/2026-10-15/four_low_schur_proof_teeth_receipts/focused-py310-final.log",
+      "elapsed_seconds": 2.9880968439392745
+    }
+  ],
+  "sha256": {
+    "observational_succ/four_low_schur_proof_teeth.py": "a2c3357b2307abae4d828f3e8da4beeb1d35f3925d454c1d523f48d918d1d121",
+    "tests/test_four_low_schur_proof_teeth.py": "0f613a16a09cd718d0fec6a312fe199621f1d34e4e536b0778461eec718d424f",
+    "scripts/four_low_schur_proof_teeth_probe.py": "3c1b21360593027def897af1cb61ad5b35d841d4a6d282276e97749fb2462f6d"
+  }
+}

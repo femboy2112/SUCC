@@ -1,0 +1,103 @@
+{
+  "utc": "2026-10-16T01:33:12.271090+00:00",
+  "results": [
+    {
+      "name": "focused-host",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_four_low_schur_proof_teeth.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-proof-teeth",
+      "status": "COMPLETED",
+      "returncode": 0,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 3.7816523760557175,
+      "log": "research/2026-10-15/four_low_schur_proof_teeth_receipts/focused-host.log"
+    },
+    {
+      "name": "focused-py310",
+      "command": [
+        "/tmp/succ-proof-teeth-py310/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_four_low_schur_proof_teeth.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-proof-teeth",
+      "status": "COMPLETED",
+      "returncode": 0,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.9668962680734694,
+      "log": "research/2026-10-15/four_low_schur_proof_teeth_receipts/focused-py310.log"
+    },
+    {
+      "name": "provenance",
+      "command": [
+        "/tmp/succ-proof-teeth-py310/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-proof-teeth",
+      "status": "COMPLETED",
+      "returncode": 0,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.06423235102556646,
+      "log": "research/2026-10-15/four_low_schur_proof_teeth_receipts/provenance.log"
+    },
+    {
+      "name": "observer",
+      "command": [
+        "/tmp/succ-proof-teeth-py310/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-proof-teeth",
+      "status": "COMPLETED",
+      "returncode": 0,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.11448806803673506,
+      "log": "research/2026-10-15/four_low_schur_proof_teeth_receipts/observer.log"
+    },
+    {
+      "name": "ordinal",
+      "command": [
+        "/tmp/succ-proof-teeth-py310/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-proof-teeth",
+      "status": "COMPLETED",
+      "returncode": 0,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 4.634249848080799,
+      "log": "research/2026-10-15/four_low_schur_proof_teeth_receipts/ordinal.log"
+    },
+    {
+      "name": "full-suite",
+      "command": [
+        "/tmp/succ-proof-teeth-py310/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-proof-teeth",
+      "status": "TIMEOUT",
+      "returncode": null,
+      "timeout_seconds": 240,
+      "elapsed_seconds": 240.03788097808138,
+      "log": "research/2026-10-15/four_low_schur_proof_teeth_receipts/full-suite.log"
+    }
+  ]
+}
