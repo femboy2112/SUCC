@@ -1,0 +1,167 @@
+{
+  "RH_proved": false,
+  "average_at_3": [
+    "7/12",
+    "1/6",
+    "-7/6"
+  ],
+  "baseline_commit": "0f86ba2478a72bf90cf33a4ee192cb2265d992dd",
+  "carrier_measure": "normalized real Haar probability; complex amplitudes",
+  "chi_one_third_energy_after_levels_2_4_8": [
+    "0",
+    "0",
+    "0"
+  ],
+  "common_provenance": "Shared cyclotomic arithmetic; tests are not independent proof",
+  "epoch": 7,
+  "haar_energy": [
+    "5/4"
+  ],
+  "kind": "PROFINITE_HILBERT_EXACT_FINITE_RECEIPT",
+  "nonunit_failure_4_to_2": {
+    "average_after_multiply": [
+      "1",
+      "0"
+    ],
+    "coarse": 2,
+    "commutes_for_all_vectors_by_PH_06": false,
+    "delta": [
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    "fiber_gcd": 2,
+    "fine": 4,
+    "multiplier": 2,
+    "multiply_after_average": [
+      "1/2",
+      "1/2"
+    ],
+    "offset": 1
+  },
+  "nonunit_on_carrier_but_commuting_6_to_2": {
+    "average_after_multiply": [
+      "1/3",
+      "1/3"
+    ],
+    "coarse": 2,
+    "commutes_for_all_vectors_by_PH_06": true,
+    "delta": [
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "fiber_gcd": 1,
+    "fine": 6,
+    "multiplier": 2,
+    "multiply_after_average": [
+      "1/3",
+      "1/3"
+    ],
+    "offset": 1
+  },
+  "norm_obstructions": [
+    {
+      "error_norm_squared": "1",
+      "frequency": "1/2",
+      "level": 1,
+      "operator_norm_I_minus_P_by_PH_05": 1,
+      "projection_norm_squared": "0",
+      "universal_proof_from_samples": false,
+      "witness_norm_squared": "1"
+    },
+    {
+      "error_norm_squared": "1",
+      "frequency": "1/4",
+      "level": 2,
+      "operator_norm_I_minus_P_by_PH_05": 1,
+      "projection_norm_squared": "0",
+      "universal_proof_from_samples": false,
+      "witness_norm_squared": "1"
+    },
+    {
+      "error_norm_squared": "1",
+      "frequency": "1/6",
+      "level": 3,
+      "operator_norm_I_minus_P_by_PH_05": 1,
+      "projection_norm_squared": "0",
+      "universal_proof_from_samples": false,
+      "witness_norm_squared": "1"
+    },
+    {
+      "error_norm_squared": "1",
+      "frequency": "1/12",
+      "level": 6,
+      "operator_norm_I_minus_P_by_PH_05": 1,
+      "projection_norm_squared": "0",
+      "universal_proof_from_samples": false,
+      "witness_norm_squared": "1"
+    },
+    {
+      "error_norm_squared": "1",
+      "frequency": "1/24",
+      "level": 12,
+      "operator_norm_I_minus_P_by_PH_05": 1,
+      "projection_norm_squared": "0",
+      "universal_proof_from_samples": false,
+      "witness_norm_squared": "1"
+    }
+  ],
+  "physical_source_authenticated": false,
+  "positive_character_negative_coefficient_phase": true,
+  "primary_reference": {
+    "title": "Terence Tao, 254A Notes 3, Haar measure and the Peter-Weyl theorem, Exercise 22",
+    "url": "https://terrytao.wordpress.com/2011/09/27/254a-notes-3-haar-measure-and-the-peter-weyl-theorem/",
+    "use": "Classical attribution; self-contained profinite proofs are in the local dossier"
+  },
+  "reproduction_command": "python scripts/profinite_hilbert_probe.py --verify",
+  "source_id": "proof-teeth-haar-source",
+  "source_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "observational_succ/classical_haar_clock.py": "d49534d96658a35112f6172fc3621705faad75ab8b04c18c99ff5b8d857807cf",
+    "observational_succ/classical_unit_origin.py": "c4dc78b381dfb4947b81932252ec2cbf42e7178fe7e1548e665ec43299f8b663",
+    "observational_succ/dynamic_fourier_tower.py": "4e05012124b4aea62e8ddcbc0f5ee6cd202efb389a053cf277a14a102e0419fd",
+    "observational_succ/finite_fourier_carrier.py": "4b3780ecc75fd189104d57632a423eef1ef4208a380adb5c0cfd9a2fb868984a",
+    "observational_succ/finite_quotient_retract.py": "0d68dcd920962701c054b43410aa2a885ff99deef4a8825a0f431969b833edd7",
+    "observational_succ/pontryagin_source_duality.py": "267514bbb058becbb7a802978a31abd69fb8ead818557dcbe5f1569aecd5275c",
+    "observational_succ/profinite_hilbert.py": "c008a627f645f8f24bdf68b4edc34ab4d3a8242e53e4e3db4680505efbab4a56",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-15/CLASSICAL_HAAR_TOWER_AND_NONUNIT_BRIDGE.md": "9913483491e98de01718a2fa1ba276ed0d8c560ae075d82c1df525c8792eac6f",
+    "research/2026-10-15/PONTRYAGIN_SOURCE_DUALITY_AND_ADELES.md": "97d78258dc100a6484a02b65de19804992f2ad9a9069e72e83366295bc7fb655",
+    "research/2026-10-15/PROFINITE_HILBERT_RECONSTRUCTION.md": "477c480551e8f7ff64c34e506fd5a5631a285ae2b13e72d540df2450d949b312",
+    "scripts/profinite_hilbert_probe.py": "cc26ba66efee5d2b9e5fa39764e3b5d96aa465ba2a67d1ac8ef52cf8f5849ae7",
+    "tests/test_profinite_hilbert.py": "b8775f99447c700d9ba796595cdc374aa54d3bd0a378435c6c9a0171246b3a74"
+  },
+  "source_vector_12": [
+    "-5/3",
+    "2/3",
+    "-2/3",
+    "5/3",
+    "1/3",
+    "-1",
+    "4/3",
+    "0",
+    "-4/3",
+    "1",
+    "-1/3",
+    "-5/3"
+  ],
+  "spectral_measure": "counting measure on Q/Z",
+  "theorem_ids": [
+    "PH-01",
+    "PH-02",
+    "PH-03",
+    "PH-04",
+    "PH-05",
+    "PH-06",
+    "PH-07",
+    "PH-08"
+  ],
+  "tower_adjoint_inversion_parseval": true,
+  "universal_theorems_proved_by_finite_tests": false
+}

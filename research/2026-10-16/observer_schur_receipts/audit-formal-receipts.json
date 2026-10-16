@@ -1,0 +1,87 @@
+{
+  "status": "RECEIPT_BYTES_AND_RECORDED_STATUS_VALIDATED",
+  "checks": [
+    [
+      "instance-0.lean",
+      true
+    ],
+    [
+      "instance-0-kernel.txt",
+      true
+    ],
+    [
+      "kernel-exit",
+      true
+    ],
+    [
+      "axiom-budget",
+      true
+    ],
+    [
+      "instance-1.lean",
+      true
+    ],
+    [
+      "instance-1-kernel.txt",
+      true
+    ],
+    [
+      "kernel-exit",
+      true
+    ],
+    [
+      "axiom-budget",
+      true
+    ],
+    [
+      "mutant-0.lean",
+      true
+    ],
+    [
+      "mutant-0-kernel.txt",
+      true
+    ],
+    [
+      "mutant-rejected",
+      true
+    ],
+    [
+      "mutant-1.lean",
+      true
+    ],
+    [
+      "mutant-1-kernel.txt",
+      true
+    ],
+    [
+      "mutant-rejected",
+      true
+    ],
+    [
+      "scripts/formal_instance_bridge_probe.py",
+      true
+    ],
+    [
+      "observational_succ/formal_instance_bridge.py",
+      true
+    ]
+  ],
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur",
+  "receipt_sha256": "1f7d3cd748bc48ad8c43b617e0f764c4ff0987d277cdf9ceaca72fb6af3d564d",
+  "kernel_reexecuted_by_auditor": false,
+  "declared_verified_names": [
+    "Yean.SUCC.RuntimeInstance.normalized",
+    "Yean.SUCC.RuntimeInstance.prime_admission",
+    "Yean.SUCC.RuntimeInstance.all_inputs",
+    "Yean.SUCC.RuntimeInstance.pull_columns",
+    "Yean.SUCC.RuntimeInstance.average_columns",
+    "Yean.SUCC.RuntimeInstance.project_columns",
+    "Yean.SUCC.RuntimeInstance.retraction"
+  ],
+  "declared_mutant_failures": [
+    "wrong affine offset",
+    "omitted fiber normalization"
+  ],
+  "hosted_CI_inferred": false
+}

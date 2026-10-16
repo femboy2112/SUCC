@@ -1,0 +1,87 @@
+[
+  {
+    "module": "Yean.SUCC.AffineWord",
+    "argv": [
+      "lean",
+      "-j1",
+      "-M2304",
+      "-t0",
+      "-o",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-01/build/Yean/SUCC/AffineWord.olean",
+      "/media/leah/SPANKBANK/SUCCYBOI/YEAN-observer-schur/Yean/SUCC/AffineWord.lean"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.376,
+    "source_sha256": "77bfbe803999a61e72a3cbfeaad804a948f72d641a9ff55e8310e24488157d4b",
+    "log": "compile-Yean.SUCC.AffineWord.txt",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "module": "Yean.MemeSufficientArtifact",
+    "argv": [
+      "lean",
+      "-j1",
+      "-M2304",
+      "-t0",
+      "-o",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-01/build/Yean/MemeSufficientArtifact.olean",
+      "/media/leah/SPANKBANK/SUCCYBOI/YEAN-observer-schur/Yean/MemeSufficientArtifact.lean"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.456,
+    "source_sha256": "05a314e84c8ee79cef4e4f607e3947108a499eca87cf9906f56a0944ee839883",
+    "log": "compile-Yean.MemeSufficientArtifact.txt",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "module": "Yean.SUCC.TwoPoint",
+    "argv": [
+      "lean",
+      "-j1",
+      "-M2304",
+      "-t0",
+      "-o",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-01/build/Yean/SUCC/TwoPoint.olean",
+      "/media/leah/SPANKBANK/SUCCYBOI/YEAN-observer-schur/Yean/SUCC/TwoPoint.lean"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 2.889,
+    "source_sha256": "0a46404ac95ccea592d54fe24334391836813801b5a72cd181ed1b2a443d07a4",
+    "log": "compile-Yean.SUCC.TwoPoint.txt",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "module": "Yean.Core.SplitCodec",
+    "argv": [
+      "lean",
+      "-j1",
+      "-M2304",
+      "-t0",
+      "-o",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-01/build/Yean/Core/SplitCodec.olean",
+      "/media/leah/SPANKBANK/SUCCYBOI/YEAN-observer-schur/Yean/Core/SplitCodec.lean"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 0.628,
+    "source_sha256": "430dd6272da45081f344217e6400c77948ca7b764a7b5467d7bdfff22ee544c0",
+    "log": "compile-Yean.Core.SplitCodec.txt",
+    "log_sha256": "5c508ff5ef404c9d46fc526713df3d71cd5cd71822a705c6896ba7b7fc858603"
+  },
+  {
+    "module": "Yean.SUCC.FiniteRetract",
+    "argv": [
+      "lean",
+      "-j1",
+      "-M2304",
+      "-t0",
+      "-o",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/research/2026-10-16/observer_schur_receipts/bridge-kernel-01/build/Yean/SUCC/FiniteRetract.olean",
+      "/media/leah/SPANKBANK/SUCCYBOI/YEAN-observer-schur/Yean/SUCC/FiniteRetract.lean"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 3.023,
+    "source_sha256": "a2b915ee6034745222a1be6cc4c1607018007b555a78fbc38d6cc7d6d35be308",
+    "log": "compile-Yean.SUCC.FiniteRetract.txt",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+]

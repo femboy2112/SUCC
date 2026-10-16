@@ -1,0 +1,61 @@
+{
+  "parent_succ": "0f86ba2478a72bf90cf33a4ee192cb2265d992dd",
+  "parent_yean": "f58cdf5147e96148aa82481c0a37ea53d21247cf",
+  "audit": [
+    {
+      "argv": [
+        "git",
+        "status",
+        "--short",
+        "--branch"
+      ],
+      "exit_code": 0,
+      "stdout": "## research/succ-yean-proof-teeth-ultra-2026-10-15...origin/research/succ-yean-proof-teeth-ultra-2026-10-15\n?? observational_succ/four_low_schur_proof_teeth.py\n?? observational_succ/profinite_hilbert.py\n?? observational_succ/proof_gluing.py\n?? observational_succ/source_proof_certificate.py\n?? research/2026-10-15/SOURCE_PROOF_CERTIFICATE_SPEC.md\n?? research/2026-10-15/four_low_schur_proof_teeth_receipts/\n?? scripts/four_low_schur_proof_teeth_probe.py\n?? scripts/profinite_hilbert_probe.py\n?? scripts/source_proof_certificate_probe.py\n?? tests/test_four_low_schur_proof_teeth.py\n?? tests/test_profinite_hilbert.py\n?? tests/test_proof_gluing.py\n?? tests/test_source_proof_certificate.py\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "worktree",
+        "list"
+      ],
+      "exit_code": 0,
+      "stdout": "/media/leah/SPANKBANK/SUCCYBOI/SUCC              7b998bc [research/black-sun-iv-zeno-completion-2026-10-14]\n/media/leah/SPANKBANK/SUCCYBOI/SUCC-proof-teeth  bed7553 [research/succ-yean-proof-teeth-ultra-2026-10-15]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "origin/main"
+      ],
+      "exit_code": 0,
+      "stdout": "02fc9f46ad3b914d49df7a658e304d06ed8a6200\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/home/leah/YEAN",
+        "worktree",
+        "list"
+      ],
+      "exit_code": 0,
+      "stdout": "/home/leah/YEAN                                  c9e2c03 [dev/yean-r5-ouroboros-memes-2026-10-13]\n/media/leah/SPANKBANK/SUCCYBOI/YEAN-proof-teeth  f58cdf5 [research/succ-proof-teeth-kernel-2026-10-15]\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"byte_identical_research_archives\": 17,\n  \"establishes_mathematical_truth\": false,\n  \"items\": 72,\n  \"mechanical_namespace_migrations\": 55,\n  \"source_commit\": \"ba075348b7bcc66d938b3e0ca96c26e95bba340a\",\n  \"status\": \"SOURCE_PROVENANCE_VERIFIED\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "python": "3.10.20",
+  "memory_lookup": "No relevant SUCC/YEAN registry hits; no memory fact used",
+  "originals_modified_by_this_session": false
+}

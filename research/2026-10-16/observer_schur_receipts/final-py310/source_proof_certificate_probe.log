@@ -1,0 +1,166 @@
+{
+  "RH_proved": false,
+  "audit": "STRUCTURE_AND_BYTES_VALID",
+  "claims": [
+    {
+      "claim_id": "PT-G01",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "declared_hypotheses": [
+        "Target is an abelian group"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "PAPER_PROVED",
+      "retained_hypotheses": [
+        "Target is an abelian group"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "PH-01",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "declared_hypotheses": [
+        "Positive integer moduli",
+        "Common source/epoch",
+        "One declared Fourier sign"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "PAPER_PROVED",
+      "retained_hypotheses": [
+        "Common source/epoch",
+        "One declared Fourier sign",
+        "Positive integer moduli"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "PH-GLOBAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "declared_hypotheses": [
+        "Classical regular Haar existence",
+        "Density of continuous functions in L2 for regular finite measure",
+        "Hilbert completion theorem"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "PAPER_PROVED",
+      "retained_hypotheses": [
+        "Classical regular Haar existence",
+        "Common source/epoch",
+        "Density of continuous functions in L2 for regular finite measure",
+        "Hilbert completion theorem",
+        "One declared Fourier sign",
+        "Positive integer moduli"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "PT-C02",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "declared_hypotheses": [
+        "n is a positive integer",
+        "Target is zero-extended integer chi4, not chi2 on Q2*"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "PAPER_PROVED",
+      "retained_hypotheses": [
+        "Target is zero-extended integer chi4, not chi2 on Q2*",
+        "n is a positive integer"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "PT-ADELE-NONSPLIT",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "declared_hypotheses": [
+        "Each Qp has characteristic zero",
+        "Q/Z is nonzero torsion"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "PAPER_PROVED",
+      "retained_hypotheses": [
+        "Each Qp has characteristic zero",
+        "Q/Z is nonzero torsion"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "PT-ALL-COMPRESSIONS",
+      "conclusion_mode": "OPEN_TARGET",
+      "declared_hypotheses": [
+        "One source operator",
+        "All n quantified"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "UNVERIFIED",
+      "retained_hypotheses": [
+        "All n quantified",
+        "One source operator"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "PT-DENSE-POSITIVITY",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "declared_hypotheses": [
+        "A is bounded and self-adjoint",
+        "Pn converge strongly to I",
+        "ASSUME:PT-ALL-COMPRESSIONS"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [
+        "PT-ALL-COMPRESSIONS"
+      ],
+      "recorded_authority": "PAPER_PROVED",
+      "retained_hypotheses": [
+        "A is bounded and self-adjoint",
+        "ASSUME:PT-ALL-COMPRESSIONS",
+        "All n quantified",
+        "One source operator",
+        "Pn converge strongly to I"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "PT-SCHUR-OPEN",
+      "conclusion_mode": "OPEN_TARGET",
+      "declared_hypotheses": [
+        "Source authentication and all analytic domains",
+        "High coercivity does not settle the low sign"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "UNVERIFIED",
+      "retained_hypotheses": [
+        "High coercivity does not settle the low sign",
+        "Source authentication and all analytic domains"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "PT-C05",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "declared_hypotheses": [
+        "a>0",
+        "Independent tape mutations are allowed",
+        "Mutants are not asserted to be genuine zeta sources"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "PAPER_PROVED",
+      "retained_hypotheses": [
+        "Independent tape mutations are allowed",
+        "Mutants are not asserted to be genuine zeta sources",
+        "a>0"
+      ],
+      "semantic_authority_issued": null
+    }
+  ],
+  "physical_source_authentication": false,
+  "schema": "SUCC_CARRIER_PROOF_CERTIFICATE_v1",
+  "theorems_proved_by_this_audit": []
+}

@@ -1,0 +1,224 @@
+{
+  "Lean_verification_performed_by_this_probe": false,
+  "RH_proved": false,
+  "chi4": [
+    {
+      "authority": "PAPER_PROVED",
+      "collision": [
+        0,
+        1
+      ],
+      "decoder_rule": null,
+      "epoch": 0,
+      "finite_check_authority": "EXACT_FINITE_CHECK",
+      "local_idele_character_is_zero_on_even_integers": false,
+      "minimal_modulus_under_divisibility": 4,
+      "modulus": 1,
+      "outcome": "REFUTED",
+      "proof": "PT-C02",
+      "source_domain": "Z",
+      "source_id": "chi4-standard-Tate",
+      "target": "chi4(x mod 4)",
+      "target_values": [
+        0,
+        1
+      ]
+    },
+    {
+      "authority": "PAPER_PROVED",
+      "collision": [
+        1,
+        3
+      ],
+      "decoder_rule": null,
+      "epoch": 0,
+      "finite_check_authority": "EXACT_FINITE_CHECK",
+      "local_idele_character_is_zero_on_even_integers": false,
+      "minimal_modulus_under_divisibility": 4,
+      "modulus": 2,
+      "outcome": "REFUTED",
+      "proof": "PT-C02",
+      "source_domain": "Z",
+      "source_id": "chi4-standard-Tate",
+      "target": "chi4(x mod 4)",
+      "target_values": [
+        1,
+        -1
+      ]
+    },
+    {
+      "authority": "PAPER_PROVED",
+      "collision": [
+        0,
+        3
+      ],
+      "decoder_rule": null,
+      "epoch": 0,
+      "finite_check_authority": "EXACT_FINITE_CHECK",
+      "local_idele_character_is_zero_on_even_integers": false,
+      "minimal_modulus_under_divisibility": 4,
+      "modulus": 3,
+      "outcome": "REFUTED",
+      "proof": "PT-C02",
+      "source_domain": "Z",
+      "source_id": "chi4-standard-Tate",
+      "target": "chi4(x mod 4)",
+      "target_values": [
+        0,
+        -1
+      ]
+    },
+    {
+      "authority": "PAPER_PROVED",
+      "collision": null,
+      "decoder_rule": "chi4(r mod 4)",
+      "epoch": 0,
+      "finite_check_authority": "EXACT_FINITE_CHECK",
+      "local_idele_character_is_zero_on_even_integers": false,
+      "minimal_modulus_under_divisibility": 4,
+      "modulus": 4,
+      "outcome": "PROVEN_FACTORIZATION",
+      "proof": "PT-C02",
+      "source_domain": "Z",
+      "source_id": "chi4-standard-Tate",
+      "target": "chi4(x mod 4)",
+      "target_values": null
+    },
+    {
+      "authority": "PAPER_PROVED",
+      "collision": null,
+      "decoder_rule": "chi4(r mod 4)",
+      "epoch": 0,
+      "finite_check_authority": "EXACT_FINITE_CHECK",
+      "local_idele_character_is_zero_on_even_integers": false,
+      "minimal_modulus_under_divisibility": 4,
+      "modulus": 8,
+      "outcome": "PROVEN_FACTORIZATION",
+      "proof": "PT-C02",
+      "source_domain": "Z",
+      "source_id": "chi4-standard-Tate",
+      "target": "chi4(x mod 4)",
+      "target_values": null
+    },
+    {
+      "authority": "PAPER_PROVED",
+      "collision": [
+        1,
+        11
+      ],
+      "decoder_rule": null,
+      "epoch": 0,
+      "finite_check_authority": "EXACT_FINITE_CHECK",
+      "local_idele_character_is_zero_on_even_integers": false,
+      "minimal_modulus_under_divisibility": 4,
+      "modulus": 10,
+      "outcome": "REFUTED",
+      "proof": "PT-C02",
+      "source_domain": "Z",
+      "source_id": "chi4-standard-Tate",
+      "target": "chi4(x mod 4)",
+      "target_values": [
+        1,
+        -1
+      ]
+    }
+  ],
+  "false_binomial_descent": {
+    "authority": "PAPER_PROVED",
+    "collision": [
+      0,
+      2
+    ],
+    "degree_bound": 2,
+    "difference_observations": [
+      1,
+      1
+    ],
+    "finite_check_authority": "EXACT_FINITE_CHECK",
+    "modulus": 2,
+    "outcome": "REFUTED",
+    "proof": "PT-C04"
+  },
+  "finite_certificates": [
+    {
+      "authority": "EXACT_FINITE_CHECK",
+      "collision": null,
+      "decoder": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "outcome": "PROVEN_FACTORIZATION",
+      "source_digest": "5e11f0c0dab4237a2f89326ec55880435cce3c7817a6f5f9fc7a4e2e5bc48a3a"
+    },
+    {
+      "authority": "EXACT_FINITE_CHECK",
+      "collision": [
+        0,
+        1
+      ],
+      "decoder": [],
+      "outcome": "REFUTED",
+      "source_digest": "9d1ad617c67b584b41c6595d01865205f696e44c57fc2c3dbcdb276aee71c862"
+    }
+  ],
+  "first_prime_window": {
+    "Gamma_poles_contact_included": false,
+    "active": [
+      [
+        2,
+        2,
+        [
+          "4885160137407771253400601118182930934216597868939146496/7047796304186638645984520552020312648059671845278255225",
+          "19540640549631085013602404472731818469789797150617764779/28191185216746554583938082208081250592238687381113020900"
+        ]
+      ]
+    ],
+    "authority": "PAPER_PROVED",
+    "canonical_character": "zeta",
+    "canonical_zero_coefficients_may_be_mutated": true,
+    "comparison_authority": "EXACT_FINITE_CHECK",
+    "epoch": 0,
+    "half_support": "1/2",
+    "integer_cutoff": 3,
+    "mutants_are_genuine_zeta_sources": false,
+    "mutation_class": "independent real coefficients at paired genuine prime-power atoms",
+    "outcome": "PROVEN_MINIMUM_FOR_TAPE_CLASS",
+    "outside": [],
+    "proof": "PT-C05",
+    "source_id": "canonical-rational-arithmetic",
+    "unresolved": []
+  },
+  "smooth_autocorrelation_witness": {
+    "atom": 2,
+    "authority": "PAPER_PROVED",
+    "autocorrelation_at_atom_lower_strict": "8650544667115469570335677735349432122448890230495256121/6089296006817255790130625756945550127923556474320412514400",
+    "centers": [
+      "-log(n)/2",
+      "+log(n)/2"
+    ],
+    "epsilon": "8650544667115469570335677735349432122448890230495256121/225529481733972436671504657664650004737909499048904167200",
+    "eta_formula": "exp(-1/(1-(t/epsilon)^2)) if |t|<epsilon, else 0",
+    "f_formula": "eta(t+log(n)/2)+eta(t-log(n)/2)",
+    "log_interval": [
+      "4885160137407771253400601118182930934216597868939146496/7047796304186638645984520552020312648059671845278255225",
+      "19540640549631085013602404472731818469789797150617764779/28191185216746554583938082208081250592238687381113020900"
+    ],
+    "mutants_are_genuine_zeta_sources": false,
+    "other_active_atoms": [],
+    "outcome": "PROVEN_SENSITIVE_AUTOCORRELATION",
+    "positive_separation_margins": [
+      "8650544667115469570335677735349432122448890230495256121/28191185216746554583938082208081250592238687381113020900",
+      "4885160137407771253400601118182930934216597868939146496/7047796304186638645984520552020312648059671845278255225",
+      "4885160137407771253400601118182930934216597868939146496/7047796304186638645984520552020312648059671845278255225"
+    ],
+    "proof": "PT-C05",
+    "support_check_authority": "EXACT_FINITE_CHECK",
+    "unit_paired_coefficient_response_abs_lower_strict": "8650544667115469570335677735349432122448890230495256121/3044648003408627895065312878472775063961778237160206257200"
+  }
+}

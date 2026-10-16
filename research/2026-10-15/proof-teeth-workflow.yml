@@ -1,0 +1,50 @@
+name: Proof Teeth source and certificate gates
+
+on:
+  push:
+    branches: ['research/**']
+    paths:
+      - 'observational_succ/minimal_observation.py'
+      - 'observational_succ/minimal_weil_window.py'
+      - 'observational_succ/source_proof_certificate.py'
+      - 'observational_succ/profinite_hilbert.py'
+      - 'observational_succ/proof_gluing.py'
+      - 'observational_succ/four_low_schur_proof_teeth.py'
+      - 'tests/test_*proof*'
+      - 'tests/test_minimal_observation.py'
+      - 'tests/test_profinite_hilbert.py'
+      - 'research/2026-10-15/*PROOF*'
+      - '.github/workflows/proof-teeth.yml'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  finite:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[test]'
+      - run: python scripts/verify_provenance.py
+      - name: Replay exact finite and adversarial gates
+        run: |
+          python -m unittest discover -s tests -p 'test_minimal_observation.py' -v
+          python -m unittest discover -s tests -p 'test_source_proof_certificate.py' -v
+          python -m unittest discover -s tests -p 'test_profinite_hilbert.py' -v
+          python -m unittest discover -s tests -p 'test_proof_gluing.py' -v
+          python -m unittest discover -s tests -p 'test_four_low_schur_proof_teeth.py' -v
+      - name: Replay capsule bytes and finite source examples
+        run: |
+          python scripts/source_proof_certificate_probe.py
+          python scripts/minimal_observation_probe.py
+          python scripts/profinite_hilbert_probe.py --verify

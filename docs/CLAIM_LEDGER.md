@@ -2,6 +2,10 @@
 
 **Policy:** A theorem, an exact computation, a finite experiment, an interpretation, and an RH-equivalent conjecture are different evidence types. This ledger governs current project claims; immutable founding documents retain their historically correct original wording and provenance.
 
+The [Observer–Schur Round II supplement](CLAIM_SUPPLEMENT_OBSERVER_SCHUR.md)
+records the new conditional envelope, compactness, source-method obstruction and
+formal-instance claims. It preserves the original signed four-low target as OPEN.
+
 Use these labels:
 
 - **CLASSICAL** — previously established mathematical theorem, attributed and cited.

@@ -1,0 +1,115 @@
+{
+  "baseline_commit": "0f86ba2478a72bf90cf33a4ee192cb2265d992dd",
+  "branch_at_capture": "research/succ-yean-proof-teeth-ultra-2026-10-15",
+  "captured_at_utc": "2026-10-16T01:38:12.888848+00:00",
+  "commits_or_pushes_by_swarm_A": false,
+  "earlier_runs_summary_only": [
+    {
+      "command": "python -m unittest tests.test_classical_haar_clock tests.test_dynamic_fourier_tower tests.test_pontryagin_source_duality tests.test_finite_quotient_retract",
+      "exit_code": 0,
+      "output_summary": "Ran 42 tests in 1.286s; OK"
+    },
+    {
+      "command": "python -m unittest tests.test_profinite_hilbert -v",
+      "exit_code": 0,
+      "output_summary": "Initial 15 tests passed in 0.298s; final expanded 16 tests passed in 0.308s on Python 3.12.3"
+    }
+  ],
+  "exact_receipt_sha256": "6e89550608a6ea445f242cd2255c2bca303c667776f184f6b9c4688e97e3d41d",
+  "executable_status": "TESTED_MODEL",
+  "expected_branch": "research/succ-yean-proof-teeth-ultra-2026-10-15",
+  "full_suite_launched_by_swarm_A": false,
+  "head_at_capture": "bed7553fa2c09cb2ae98549d3649f66eb6268741",
+  "machine_checked_proof": false,
+  "mathematical_status": "PAPER_PROVED",
+  "output_transcript": "research/2026-10-15/PROFINITE_HILBERT_VALIDATION_OUTPUT.txt",
+  "output_transcript_sha256": "b1419d2edf49ea995b94e96f93ddf41d396764d8d7b57a519a09a184dd89805e",
+  "records": [
+    {
+      "command": "/tmp/succ-proof-teeth-py310/bin/python -m unittest tests.test_profinite_hilbert -v",
+      "exit_code": 0,
+      "output_line_count": 21,
+      "output_sha256": "70bb5c2d8765b8bd0624b8b60726db3a1f0cc3cf79ba05bf69488213604fb23d",
+      "wall_time_seconds": 0.522427808
+    },
+    {
+      "command": "/tmp/succ-proof-teeth-py313/bin/python -m unittest tests.test_profinite_hilbert -v",
+      "exit_code": 0,
+      "output_line_count": 21,
+      "output_sha256": "dd7903fc857964892a24e458e7fcf29b248b4d16b94629fbe6bf9a4b88cdf0ee",
+      "wall_time_seconds": 0.399112334
+    },
+    {
+      "command": "python scripts/profinite_hilbert_probe.py --verify",
+      "exit_code": 0,
+      "output_line_count": 1,
+      "output_sha256": "2003be0517de0d9c54710d832385d90659aa9a703169cd766abdcc25a8626cfc",
+      "wall_time_seconds": 0.078946003
+    },
+    {
+      "command": "/tmp/succ-proof-teeth-py310/bin/python scripts/profinite_hilbert_probe.py --verify",
+      "exit_code": 0,
+      "output_line_count": 1,
+      "output_sha256": "2003be0517de0d9c54710d832385d90659aa9a703169cd766abdcc25a8626cfc",
+      "wall_time_seconds": 0.075311395
+    },
+    {
+      "command": "/tmp/succ-proof-teeth-py313/bin/python scripts/profinite_hilbert_probe.py --verify",
+      "exit_code": 0,
+      "output_line_count": 1,
+      "output_sha256": "2003be0517de0d9c54710d832385d90659aa9a703169cd766abdcc25a8626cfc",
+      "wall_time_seconds": 0.077210916
+    },
+    {
+      "command": "python scripts/verify_provenance.py",
+      "exit_code": 0,
+      "output_line_count": 8,
+      "output_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "wall_time_seconds": 1.9316e-05
+    },
+    {
+      "command": "python --version\n/tmp/succ-proof-teeth-py310/bin/python --version\n/tmp/succ-proof-teeth-py313/bin/python --version",
+      "exit_code": 0,
+      "output_line_count": 3,
+      "output_sha256": "900bee8ace5bba239c43dad0a8aea136d6b3231a7a2964daf55be4be2a8da091",
+      "wall_time_seconds": 2.0057e-05
+    },
+    {
+      "command": "git status --short -- observational_succ/profinite_hilbert.py tests/test_profinite_hilbert.py scripts/profinite_hilbert_probe.py research/2026-10-15/PROFINITE_HILBERT_RECONSTRUCTION.md research/2026-10-15/PROFINITE_HILBERT_RECEIPT.json\ngit diff --stat -- observational_succ/classical_haar_clock.py observational_succ/dynamic_fourier_tower.py observational_succ/pontryagin_source_duality.py observational_succ/finite_quotient_retract.py provenance",
+      "exit_code": 0,
+      "output_line_count": 5,
+      "output_sha256": "2504498ac657a39178c965adcfec8eebaddc688bd390eda1b5f3bef6eb2bf325",
+      "wall_time_seconds": 1.592e-05
+    }
+  ],
+  "schema_version": 1,
+  "scope": "Operation Proof Teeth Swarm A only",
+  "source_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "observational_succ/classical_haar_clock.py": "d49534d96658a35112f6172fc3621705faad75ab8b04c18c99ff5b8d857807cf",
+    "observational_succ/classical_unit_origin.py": "c4dc78b381dfb4947b81932252ec2cbf42e7178fe7e1548e665ec43299f8b663",
+    "observational_succ/dynamic_fourier_tower.py": "4e05012124b4aea62e8ddcbc0f5ee6cd202efb389a053cf277a14a102e0419fd",
+    "observational_succ/finite_fourier_carrier.py": "4b3780ecc75fd189104d57632a423eef1ef4208a380adb5c0cfd9a2fb868984a",
+    "observational_succ/finite_quotient_retract.py": "0d68dcd920962701c054b43410aa2a885ff99deef4a8825a0f431969b833edd7",
+    "observational_succ/pontryagin_source_duality.py": "267514bbb058becbb7a802978a31abd69fb8ead818557dcbe5f1569aecd5275c",
+    "observational_succ/profinite_hilbert.py": "c008a627f645f8f24bdf68b4edc34ab4d3a8242e53e4e3db4680505efbab4a56",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-15/CLASSICAL_HAAR_TOWER_AND_NONUNIT_BRIDGE.md": "9913483491e98de01718a2fa1ba276ed0d8c560ae075d82c1df525c8792eac6f",
+    "research/2026-10-15/PONTRYAGIN_SOURCE_DUALITY_AND_ADELES.md": "97d78258dc100a6484a02b65de19804992f2ad9a9069e72e83366295bc7fb655",
+    "research/2026-10-15/PROFINITE_HILBERT_RECONSTRUCTION.md": "477c480551e8f7ff64c34e506fd5a5631a285ae2b13e72d540df2450d949b312",
+    "scripts/profinite_hilbert_probe.py": "cc26ba66efee5d2b9e5fa39764e3b5d96aa465ba2a67d1ac8ef52cf8f5849ae7",
+    "tests/test_profinite_hilbert.py": "b8775f99447c700d9ba796595cdc374aa54d3bd0a378435c6c9a0171246b3a74"
+  },
+  "theorem_ids": [
+    "PH-01",
+    "PH-02",
+    "PH-03",
+    "PH-04",
+    "PH-05",
+    "PH-06",
+    "PH-07",
+    "PH-08"
+  ],
+  "validation_limit": "Finite exact specimens do not prove universal claims. No CI result. Source labels do not authenticate physical sources."
+}

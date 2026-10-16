@@ -1,0 +1,185 @@
+{
+  "schema": "OBSERVER_SCHUR_INDEPENDENT_HOSTILE_AUDIT_v1",
+  "timestamp_utc": "2026-10-16T03:00:35.375517+00:00",
+  "argv": [
+    "scripts/observer_schur_independent_audit.py",
+    "--output",
+    "research/2026-10-16/observer_schur_receipts/audit-independent-initial.json"
+  ],
+  "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "executable": "/tmp/succ-proof-teeth-py313/bin/python",
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur",
+  "repository": {
+    "head": "5d6d717312eebee648d3cfb092875eb4120bb4b3",
+    "branch": "research/observers-schur-complement-2026-10-16"
+  },
+  "source_sha256_before": {
+    "observational_succ/observer_schur.py": "f31fc87724569a2d573b7b1bbbdaadf2ff933d9653bb303c81a6d4cc7a13e3ae",
+    "observational_succ/compact_galerkin.py": "008d3cf4165c003a9732352edc9798034e8174e787de52d117b68bae152ec1f3",
+    "observational_succ/formal_instance_bridge.py": "43940b44d5704961e1beb506823ac86e23645be6871d5715d9e49f82cada748b",
+    "scripts/formal_instance_bridge_probe.py": "aa0ff8e351e5e30644b6fb4c4ea742a3829f9d6257de261e638f8b9671b99819",
+    "observational_succ/source_proof_certificate.py": "1d7ff7a250582620d81a9063f7c55fe1c71286647514ebe85eeea5dd617b00a4",
+    "observational_succ/finite_affine_presentation.py": "aa3203171ddcca1f87b33e5199c4209c62f23908e977c47ca12d2c62b8d39167",
+    "observational_succ/finite_quotient_retract.py": "0d68dcd920962701c054b43410aa2a885ff99deef4a8825a0f431969b833edd7",
+    "scripts/observer_schur_independent_audit.py": "ff4d230d9d24cbfc9d9edee8694358fb3c974b31c6cd23e908a56effbe53bfd2"
+  },
+  "source_sha256_after": {
+    "observational_succ/observer_schur.py": "f31fc87724569a2d573b7b1bbbdaadf2ff933d9653bb303c81a6d4cc7a13e3ae",
+    "observational_succ/compact_galerkin.py": "008d3cf4165c003a9732352edc9798034e8174e787de52d117b68bae152ec1f3",
+    "observational_succ/formal_instance_bridge.py": "43940b44d5704961e1beb506823ac86e23645be6871d5715d9e49f82cada748b",
+    "scripts/formal_instance_bridge_probe.py": "aa0ff8e351e5e30644b6fb4c4ea742a3829f9d6257de261e638f8b9671b99819",
+    "observational_succ/source_proof_certificate.py": "1d7ff7a250582620d81a9063f7c55fe1c71286647514ebe85eeea5dd617b00a4",
+    "observational_succ/finite_affine_presentation.py": "aa3203171ddcca1f87b33e5199c4209c62f23908e977c47ca12d2c62b8d39167",
+    "observational_succ/finite_quotient_retract.py": "0d68dcd920962701c054b43410aa2a885ff99deef4a8825a0f431969b833edd7",
+    "scripts/observer_schur_independent_audit.py": "ff4d230d9d24cbfc9d9edee8694358fb3c974b31c6cd23e908a56effbe53bfd2"
+  },
+  "counts": {
+    "direct_sum": 97,
+    "direct_sum_api": 32,
+    "energy": 980,
+    "energy_witness": 963,
+    "sign": 196,
+    "sign_witness": 149,
+    "envelope": 588,
+    "envelope_ray": 84,
+    "envelope_value": 504,
+    "PSD2": 343,
+    "source_identity": 1,
+    "bridge": 3,
+    "bridge_forged_hash": 22,
+    "bridge_mapping": 14,
+    "bridge_wrong_model": 5,
+    "bridge_authority": 2,
+    "bridge_domain": 2,
+    "capsule_authority": 1,
+    "capsule_regression": 10,
+    "source_stability": 1
+  },
+  "checks": 3997,
+  "failures": [],
+  "direct_sum": {
+    "R0": "4/9",
+    "relative_source_squared": "2/3",
+    "relative_map_HS_squared": "841/5355",
+    "source": "SYNTHETIC_DIRECT_SUM_NOT_SUZUKI",
+    "rows": [
+      {
+        "j": 1,
+        "odd_C": "2/3",
+        "odd_energy_gap": "7/36",
+        "even_C": "1/6",
+        "even_energy_gap": "1/9"
+      },
+      {
+        "j": 2,
+        "odd_C": "13/24",
+        "odd_energy_gap": "7/144",
+        "even_C": "1/24",
+        "even_energy_gap": "1/36"
+      },
+      {
+        "j": 3,
+        "odd_C": "49/96",
+        "odd_energy_gap": "7/576",
+        "even_C": "1/96",
+        "even_energy_gap": "1/144"
+      },
+      {
+        "j": 4,
+        "odd_C": "193/384",
+        "odd_energy_gap": "7/2304",
+        "even_C": "1/384",
+        "even_energy_gap": "1/576"
+      },
+      {
+        "j": 5,
+        "odd_C": "769/1536",
+        "odd_energy_gap": "7/9216",
+        "even_C": "1/1536",
+        "even_energy_gap": "1/2304"
+      },
+      {
+        "j": 6,
+        "odd_C": "3073/6144",
+        "odd_energy_gap": "7/36864",
+        "even_C": "1/6144",
+        "even_energy_gap": "1/9216"
+      },
+      {
+        "j": 7,
+        "odd_C": "12289/24576",
+        "odd_energy_gap": "7/147456",
+        "even_C": "1/24576",
+        "even_energy_gap": "1/36864"
+      },
+      {
+        "j": 8,
+        "odd_C": "49153/98304",
+        "odd_energy_gap": "7/589824",
+        "even_C": "1/98304",
+        "even_energy_gap": "1/147456"
+      },
+      {
+        "j": 9,
+        "odd_C": "196609/393216",
+        "odd_energy_gap": "7/2359296",
+        "even_C": "1/393216",
+        "even_energy_gap": "1/589824"
+      },
+      {
+        "j": 10,
+        "odd_C": "786433/1572864",
+        "odd_energy_gap": "7/9437184",
+        "even_C": "1/1572864",
+        "even_energy_gap": "1/2359296"
+      },
+      {
+        "j": 11,
+        "odd_C": "3145729/6291456",
+        "odd_energy_gap": "7/37748736",
+        "even_C": "1/6291456",
+        "even_energy_gap": "1/9437184"
+      },
+      {
+        "j": 12,
+        "odd_C": "12582913/25165824",
+        "odd_energy_gap": "7/150994944",
+        "even_C": "1/25165824",
+        "even_energy_gap": "1/37748736"
+      },
+      {
+        "j": 13,
+        "odd_C": "50331649/100663296",
+        "odd_energy_gap": "7/603979776",
+        "even_C": "1/100663296",
+        "even_energy_gap": "1/150994944"
+      },
+      {
+        "j": 14,
+        "odd_C": "201326593/402653184",
+        "odd_energy_gap": "7/2415919104",
+        "even_C": "1/402653184",
+        "even_energy_gap": "1/603979776"
+      },
+      {
+        "j": 15,
+        "odd_C": "805306369/1610612736",
+        "odd_energy_gap": "7/9663676416",
+        "even_C": "1/1610612736",
+        "even_energy_gap": "1/2415919104"
+      },
+      {
+        "j": 16,
+        "odd_C": "3221225473/6442450944",
+        "odd_energy_gap": "7/38654705664",
+        "even_C": "1/6442450944",
+        "even_energy_gap": "1/9663676416"
+      }
+    ]
+  },
+  "kernel_replayed_by_this_audit": false,
+  "full_suite_run": false,
+  "original_S0_sign": "OPEN",
+  "RH_proved": false,
+  "status": "PASS_WITH_DECLARED_SCOPE"
+}
