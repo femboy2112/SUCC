@@ -375,7 +375,8 @@ and their proof.
 this exact branch, verify HEAD,
 then run in a complete SUCC checkout:
 
-    python -m unittest tests.test_finite_affine_presentation tests.test_finite_quotient_retract
+    python -m unittest discover -s tests -p 'test_finite_affine_presentation.py'
+    python -m unittest discover -s tests -p 'test_finite_quotient_retract.py'
     python scripts/verify_provenance.py
     python -m unittest discover -s tests -p 'test_*.py'
 
