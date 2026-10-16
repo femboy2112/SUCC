@@ -1,0 +1,28 @@
+test_after_derivative_projection_gram_identity (test_prime_wavefront_geometry.ExactHingeTests.test_after_derivative_projection_gram_identity) ... ok
+test_boundary_and_coincident_edge_cases (test_prime_wavefront_geometry.ExactHingeTests.test_boundary_and_coincident_edge_cases) ... ok
+test_boundary_atoms_and_zero_frequency (test_prime_wavefront_geometry.ExactHingeTests.test_boundary_atoms_and_zero_frequency) ... ok
+test_derivative_gram_independent_quadrature (test_prime_wavefront_geometry.ExactHingeTests.test_derivative_gram_independent_quadrature) ... ok
+test_fail_closed_input_validation (test_prime_wavefront_geometry.ExactHingeTests.test_fail_closed_input_validation) ... ok
+test_hinge_prime_form_sign_by_integration_by_parts (test_prime_wavefront_geometry.ExactHingeTests.test_hinge_prime_form_sign_by_integration_by_parts) ... ok
+test_hs_and_derivative_hs_triangle_oracle (test_prime_wavefront_geometry.ExactHingeTests.test_hs_and_derivative_hs_triangle_oracle) ... ok
+test_hs_projection_audit_independent_bivariate_integration (test_prime_wavefront_geometry.ExactHingeTests.test_hs_projection_audit_independent_bivariate_integration) ... ok
+test_matrix_independent_triangles (test_prime_wavefront_geometry.ExactHingeTests.test_matrix_independent_triangles) ... ok
+test_mixed_signed_hinges_and_refinement (test_prime_wavefront_geometry.ExactHingeTests.test_mixed_signed_hinges_and_refinement) ... ok
+test_projection_after_output_can_amplify_hinge_derivative_input_tail (test_prime_wavefront_geometry.ExactHingeTests.test_projection_after_output_can_amplify_hinge_derivative_input_tail) ... ok
+test_projection_orders_are_distinct_for_actual_hinge (test_prime_wavefront_geometry.ExactHingeTests.test_projection_orders_are_distinct_for_actual_hinge) ... ok
+test_reuse_correlation_kernel (test_prime_wavefront_geometry.ExactHingeTests.test_reuse_correlation_kernel) ... ok
+test_second_weak_derivative_is_sum_of_shifts (test_prime_wavefront_geometry.ExactHingeTests.test_second_weak_derivative_is_sum_of_shifts) ... ok
+test_weak_identity_including_endpoint_terms (test_prime_wavefront_geometry.ExactHingeTests.test_weak_identity_including_endpoint_terms) ... ok
+test_full_bounded_tape_validation_even_for_invisible_fake6 (test_prime_wavefront_geometry.SourceTests.test_full_bounded_tape_validation_even_for_invisible_fake6) ... ok
+test_half_density_and_clock_mutants_rejected (test_prime_wavefront_geometry.SourceTests.test_half_density_and_clock_mutants_rejected) ... ok
+test_prime_free_window_and_limits (test_prime_wavefront_geometry.SourceTests.test_prime_free_window_and_limits) ... ok
+test_source_geometry_and_authentic_matrix (test_prime_wavefront_geometry.SourceTests.test_source_geometry_and_authentic_matrix) ... ok
+test_source_power_clock_and_weight (test_prime_wavefront_geometry.SourceTests.test_source_power_clock_and_weight) ... ok
+test_true_prime_only_projection_bound (test_prime_wavefront_geometry.SourceTests.test_true_prime_only_projection_bound) ... ok
+test_symbolic_finite_window_fourier_and_boundary_law (test_prime_wavefront_geometry.SymbolicOracleTests.test_symbolic_finite_window_fourier_and_boundary_law) ... ok
+test_symbolic_projected_derivative_hs_independent_integral (test_prime_wavefront_geometry.SymbolicOracleTests.test_symbolic_projected_derivative_hs_independent_integral) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 5.101s
+
+OK

@@ -144,6 +144,22 @@ uses a total-variation Lipschitz bound between points, and includes the entire
 omitted derivative Gamma ladder in operator norm. An independent auditor checked
 source pairings, the continuum cell argument, normalization and outward caps.
 
+A final exact principal-minor check of those matrices gives the outward scalar
+operator enclosures
+
+    -249986756855/549755813888 I <= S0_odd <= 300761/1073741824 I,
+    -932513462611/1099511627776 I <= S0_even <= 11742983/8589934592 I.
+
+Thus coarser decimal enclosures are [-0.454724,0.000280106] and
+[-0.848117,0.001367064]. These are intervals for normalized operator spectra,
+not estimates of an observed eigenvalue. The
+[normalization receipt](arithmetic_resonance_receipts/normalized-schur-bracket.json)
+pins the input packet and supplies rational diagonal/determinant witnesses.
+Replay requires, in each sector, the two diagonal entries and determinant of
+`exactlower - lower_cap*W` to be nonnegative, and the same check for
+`upper_cap*W - exactupper`. Forty steps of rational bisection produce the
+recorded lower caps; floating eigenvalue computations are unnecessary.
+
 Both lower matrices remain insufficient to settle the sign. Positive upper caps
 are not positivity evidence. The degree 12/16 whole-family obstruction attempts
 were inconclusive at their fixed budget and are preserved as such. Positive-shift
@@ -203,6 +219,17 @@ Validation is performed on frozen Python source bytes using
 ordinal and five new probes. Detailed final results and head mapping are recorded
 in the execution receipt; a receipt's starting commit is not misrepresented as a
 later commit. Hosted CI must be inspected at the publication head.
+
+Final local results: **4,631 full-suite tests and 141 focused replays passed on
+each of Python 3.10.20 and 3.13.13**, with no skips. This adds108 tests to the
+parent's4,523; the focused counts overlap the full suite. Both runs passed all
+five new probes and the72-entry provenance, observer and ordinal gates. Their
+Python source snapshots are identical and stable throughout both runs. Full-suite
+wall times, exact commands, dependency versions, logs and hashes are in the
+[execution summary](arithmetic_resonance_receipts/execution-summary.json).
+The original imported SyntaxWarning is retained; no unrelated historical source
+was rewritten to remove it. The final PR records the separately inspected hosted
+CI results at its exact head, avoiding a self-referential receipt/commit cycle.
 
 ## Most consequential next lemma
 
