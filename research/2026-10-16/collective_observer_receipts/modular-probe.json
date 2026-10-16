@@ -1,0 +1,712 @@
+{
+  "affine_nonunit": {
+    "E1U_entry00": "0",
+    "UE1_entry00": "1/6",
+    "a": 2,
+    "b": 1,
+    "input_conductor": 6,
+    "n": 6,
+    "norm_squared": 2,
+    "output_conductor": 3,
+    "phase_polynomial": [
+      "0",
+      "1"
+    ]
+  },
+  "analytic_boundary": "cylinders dense in C uniformly and Lp for finite p, not in all Linfinity",
+  "finite_portfolio_global_alias": {
+    "integers": [
+      0,
+      6
+    ],
+    "moduli": [
+      2,
+      3
+    ]
+  },
+  "independence": "distinct algorithms; same author and shared repository arithmetic",
+  "multi_menu": [
+    {
+      "ambient": 30,
+      "joint_modulus": 30,
+      "linear_dimension": 8,
+      "missing_dimension": 22,
+      "moduli": [
+        2,
+        3,
+        5
+      ],
+      "sectors": [
+        {
+          "conductor": 1,
+          "dimension": 1,
+          "minimum_joint_menus": 0,
+          "visible_in": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "conductor": 2,
+          "dimension": 1,
+          "minimum_joint_menus": 1,
+          "visible_in": [
+            0
+          ]
+        },
+        {
+          "conductor": 3,
+          "dimension": 2,
+          "minimum_joint_menus": 1,
+          "visible_in": [
+            1
+          ]
+        },
+        {
+          "conductor": 5,
+          "dimension": 4,
+          "minimum_joint_menus": 1,
+          "visible_in": [
+            2
+          ]
+        },
+        {
+          "conductor": 6,
+          "dimension": 2,
+          "minimum_joint_menus": 2,
+          "visible_in": []
+        },
+        {
+          "conductor": 10,
+          "dimension": 4,
+          "minimum_joint_menus": 2,
+          "visible_in": []
+        },
+        {
+          "conductor": 15,
+          "dimension": 8,
+          "minimum_joint_menus": 2,
+          "visible_in": []
+        },
+        {
+          "conductor": 30,
+          "dimension": 8,
+          "minimum_joint_menus": 3,
+          "visible_in": []
+        }
+      ]
+    },
+    {
+      "ambient": 30,
+      "joint_modulus": 30,
+      "linear_dimension": 22,
+      "missing_dimension": 8,
+      "moduli": [
+        6,
+        10,
+        15
+      ],
+      "sectors": [
+        {
+          "conductor": 1,
+          "dimension": 1,
+          "minimum_joint_menus": 0,
+          "visible_in": [
+            0,
+            1,
+            2
+          ]
+        },
+        {
+          "conductor": 2,
+          "dimension": 1,
+          "minimum_joint_menus": 1,
+          "visible_in": [
+            0,
+            1
+          ]
+        },
+        {
+          "conductor": 3,
+          "dimension": 2,
+          "minimum_joint_menus": 1,
+          "visible_in": [
+            0,
+            2
+          ]
+        },
+        {
+          "conductor": 5,
+          "dimension": 4,
+          "minimum_joint_menus": 1,
+          "visible_in": [
+            1,
+            2
+          ]
+        },
+        {
+          "conductor": 6,
+          "dimension": 2,
+          "minimum_joint_menus": 1,
+          "visible_in": [
+            0
+          ]
+        },
+        {
+          "conductor": 10,
+          "dimension": 4,
+          "minimum_joint_menus": 1,
+          "visible_in": [
+            1
+          ]
+        },
+        {
+          "conductor": 15,
+          "dimension": 8,
+          "minimum_joint_menus": 1,
+          "visible_in": [
+            2
+          ]
+        },
+        {
+          "conductor": 30,
+          "dimension": 8,
+          "minimum_joint_menus": 2,
+          "visible_in": []
+        }
+      ]
+    }
+  ],
+  "noncoprime_4_6": {
+    "cartesian_size": 24,
+    "compatible_image": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "compatible_size": 12,
+    "linear_dimension": 8,
+    "missing_dimension": 4,
+    "rejected_tuple": [
+      0,
+      1
+    ]
+  },
+  "nonuniform_counterexample": {
+    "E1_entry00": "2/7",
+    "E2E3_entry00": "1/3",
+    "unnormalized_weights": [
+      "2",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ]
+  },
+  "pair_2_3": {
+    "E2": [
+      [
+        "1/3",
+        "0",
+        "1/3",
+        "0",
+        "1/3",
+        "0"
+      ],
+      [
+        "0",
+        "1/3",
+        "0",
+        "1/3",
+        "0",
+        "1/3"
+      ],
+      [
+        "1/3",
+        "0",
+        "1/3",
+        "0",
+        "1/3",
+        "0"
+      ],
+      [
+        "0",
+        "1/3",
+        "0",
+        "1/3",
+        "0",
+        "1/3"
+      ],
+      [
+        "1/3",
+        "0",
+        "1/3",
+        "0",
+        "1/3",
+        "0"
+      ],
+      [
+        "0",
+        "1/3",
+        "0",
+        "1/3",
+        "0",
+        "1/3"
+      ]
+    ],
+    "E3": [
+      [
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "1/2"
+      ]
+    ],
+    "P6": [
+      [
+        "1/3",
+        "1/6",
+        "-1/6",
+        "-1/3",
+        "-1/6",
+        "1/6"
+      ],
+      [
+        "1/6",
+        "1/3",
+        "1/6",
+        "-1/6",
+        "-1/3",
+        "-1/6"
+      ],
+      [
+        "-1/6",
+        "1/6",
+        "1/3",
+        "1/6",
+        "-1/6",
+        "-1/3"
+      ],
+      [
+        "-1/3",
+        "-1/6",
+        "1/6",
+        "1/3",
+        "1/6",
+        "-1/6"
+      ],
+      [
+        "-1/6",
+        "-1/3",
+        "-1/6",
+        "1/6",
+        "1/3",
+        "1/6"
+      ],
+      [
+        "1/6",
+        "-1/6",
+        "-1/3",
+        "-1/6",
+        "1/6",
+        "1/3"
+      ]
+    ],
+    "basis": [
+      [
+        "2",
+        "1",
+        "-1",
+        "-2",
+        "-1",
+        "1"
+      ],
+      [
+        "0",
+        "1",
+        "1",
+        "0",
+        "-1",
+        "-1"
+      ]
+    ],
+    "character_product_labels_mod6": [
+      3,
+      4,
+      1
+    ],
+    "independent_prime_place_6": false,
+    "joint_dimension": 6,
+    "linear_dimension": 4,
+    "linear_projector": [
+      [
+        "2/3",
+        "-1/6",
+        "1/6",
+        "1/3",
+        "1/6",
+        "-1/6"
+      ],
+      [
+        "-1/6",
+        "2/3",
+        "-1/6",
+        "1/6",
+        "1/3",
+        "1/6"
+      ],
+      [
+        "1/6",
+        "-1/6",
+        "2/3",
+        "-1/6",
+        "1/6",
+        "1/3"
+      ],
+      [
+        "1/3",
+        "1/6",
+        "-1/6",
+        "2/3",
+        "-1/6",
+        "1/6"
+      ],
+      [
+        "1/6",
+        "1/3",
+        "1/6",
+        "-1/6",
+        "2/3",
+        "-1/6"
+      ],
+      [
+        "-1/6",
+        "1/6",
+        "1/3",
+        "1/6",
+        "-1/6",
+        "2/3"
+      ]
+    ],
+    "missing_dimension": 2,
+    "normalized_gram": [
+      [
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "2/3"
+      ]
+    ],
+    "product_of_local_functions": [
+      "2",
+      "1",
+      "-1",
+      "-2",
+      "-1",
+      "1"
+    ]
+  },
+  "path_count_oracle": {
+    "ambient_range": [
+      1,
+      24
+    ],
+    "ordered_divisor_pair_cases": 364
+  },
+  "proof_status": "paper proofs in dossier; finite runs do not certify universal claims",
+  "schema": "collective-modular-v1",
+  "scope": "uniform cyclic model, exact rational/cyclotomic arithmetic, no physical authentication",
+  "sha256": {
+    "observational_succ/all_places_zeta.py": "548350c5978953cbce14c8c54358160ce484c66011d7967365221f7d1925fa82",
+    "observational_succ/classical_haar_clock.py": "d49534d96658a35112f6172fc3621705faad75ab8b04c18c99ff5b8d857807cf",
+    "observational_succ/classical_unit_origin.py": "c4dc78b381dfb4947b81932252ec2cbf42e7178fe7e1548e665ec43299f8b663",
+    "observational_succ/collective_modular.py": "654840bf5305aa20e9428f9c40ce6bdb8f7afaf882bd10316303b5f1663adb92",
+    "observational_succ/consensus_lambda.py": "9c1078fc0dc807139e2a9d22fc7ff59db7b19e1fcb67520bad345d86584951de",
+    "observational_succ/diagonal_adele_zeta.py": "1fbf3353c643e6b952269f99fed818050a2a7a136cc8542c3c1803f91813fd75",
+    "observational_succ/dynamic_fourier_tower.py": "4e05012124b4aea62e8ddcbc0f5ee6cd202efb389a053cf277a14a102e0419fd",
+    "observational_succ/edge_carrier_reconstruction.py": "4d53d5f9cbc4d6b85cf9f5690ec16cd2d891dd5eecb369c5cfaa3d6ab5580917",
+    "observational_succ/finite_fourier_carrier.py": "4b3780ecc75fd189104d57632a423eef1ef4208a380adb5c0cfd9a2fb868984a",
+    "observational_succ/pascal_rotated_transport.py": "364ede6582344d237b4d79a7b2687e200378c6cca92d7c6d7e18254d4f3d2cfb",
+    "observational_succ/pontryagin_source_duality.py": "267514bbb058becbb7a802978a31abd69fb8ead818557dcbe5f1569aecd5275c",
+    "observational_succ/prime_form_heat.py": "4a7e4f41437907f4bb535c68de46d5c473fa84f06b7dcc7d22c12f41bce785cd",
+    "observational_succ/source_lambda.py": "13c2db896da68d186006ddd1c668e98213265a61fb12ce2450a2f735e89c71f6",
+    "observational_succ/structural_coupling.py": "d6ba5f394a1674ae77028022b569b0c7e016bff919d0034c35a7e4a45af2f4e1",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-16/COLLECTIVE_MODULAR_ALGEBRA.md": "1c33ad6d77c42e14bed9bdaf995bdcdce75c8f76de344aea049a208b5a84e669",
+    "scripts/collective_modular_probe.py": "6691c5a65392a47365ab5760ddc54b5cc6b4af482da7a4b4f142e32329c1e657",
+    "tests/test_collective_modular.py": "a8f16cb467d8bb61b3a9bcbf551c31e492a9f6a71d78b4c94b61486b5cf1a623"
+  },
+  "status": "EXACT_FINITE_CHECKS_PASSED",
+  "target_cover": {
+    "hidden_collision": {
+      "activation_paths": [],
+      "executed": false,
+      "model_only": true,
+      "observed_cross_target_pairs": 0,
+      "selected": [],
+      "status": "DARK_WITH_THIS_ACCESSIBLE_PORT_FAMILY",
+      "total_cross_target_pairs": 1,
+      "uncovered_pairs": [
+        [
+          "a",
+          "b"
+        ]
+      ]
+    },
+    "minimum_2_3": {
+      "activation_paths": [
+        [
+          "collective-modular",
+          "read-0-mod-2",
+          []
+        ],
+        [
+          "collective-modular",
+          "read-1-mod-3",
+          []
+        ]
+      ],
+      "executed": false,
+      "model_only": true,
+      "observed_cross_target_pairs": 15,
+      "selected": [
+        [
+          "collective-modular",
+          "read-0-mod-2"
+        ],
+        [
+          "collective-modular",
+          "read-1-mod-3"
+        ]
+      ],
+      "status": "MODEL_TARGET_SEPARATING_PORTFOLIO",
+      "total_cross_target_pairs": 15,
+      "uncovered_pairs": []
+    },
+    "minimum_2_3_6": {
+      "activation_paths": [
+        [
+          "collective-modular",
+          "read-2-mod-6",
+          []
+        ]
+      ],
+      "executed": false,
+      "model_only": true,
+      "observed_cross_target_pairs": 15,
+      "selected": [
+        [
+          "collective-modular",
+          "read-2-mod-6"
+        ]
+      ],
+      "status": "MODEL_TARGET_SEPARATING_PORTFOLIO",
+      "total_cross_target_pairs": 15,
+      "uncovered_pairs": []
+    },
+    "pairs": [
+      [
+        "0",
+        "1",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "0",
+        "2",
+        [
+          1
+        ]
+      ],
+      [
+        "0",
+        "3",
+        [
+          0
+        ]
+      ],
+      [
+        "0",
+        "4",
+        [
+          1
+        ]
+      ],
+      [
+        "0",
+        "5",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "1",
+        "2",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "1",
+        "3",
+        [
+          1
+        ]
+      ],
+      [
+        "1",
+        "4",
+        [
+          0
+        ]
+      ],
+      [
+        "1",
+        "5",
+        [
+          1
+        ]
+      ],
+      [
+        "2",
+        "3",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "2",
+        "4",
+        [
+          1
+        ]
+      ],
+      [
+        "2",
+        "5",
+        [
+          0
+        ]
+      ],
+      [
+        "3",
+        "4",
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        "3",
+        "5",
+        [
+          1
+        ]
+      ],
+      [
+        "4",
+        "5",
+        [
+          0,
+          1
+        ]
+      ]
+    ]
+  }
+}
