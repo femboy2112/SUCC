@@ -1,0 +1,652 @@
+{
+  "operation": "SUCC Academic Main (2026-10-15)",
+  "main_base": "03db44203147a7b28d445bb9f970fa71360e78c4",
+  "integration_head": "42f54854455156f4367e0d9730f3c61dac9789e3",
+  "n_prs": 31,
+  "true_terminal_tips": [
+    101,
+    102,
+    105,
+    107,
+    108,
+    111,
+    119,
+    124,
+    125,
+    130,
+    131
+  ],
+  "note": "PR base LABELS are unreliable; proper_ancestor_prs is true git ancestry computed with merge-base --is-ancestor.",
+  "nodes": [
+    {
+      "pr": 101,
+      "branch": "research/hilbert-fractal-source-strata-2026-10-14",
+      "head": "10d9a8195ba3",
+      "base_label": "main",
+      "ahead_of_main": 2,
+      "is_terminal_tip": true,
+      "true_ancestor_prs": [],
+      "title": "HILBERT\u2013SUCC: finite-to-global dyadic unitary, genuine signed Weil strata and Zeno resolution obstruction"
+    },
+    {
+      "pr": 102,
+      "branch": "research/hilbert-curve-cube-zeno-certificates-2026-10-14",
+      "head": "18a5de46ccc2",
+      "base_label": "main",
+      "ahead_of_main": 1,
+      "is_terminal_tip": true,
+      "true_ancestor_prs": [],
+      "title": "HILBERT\u2013ZENO: certified finite\u2192global addresses, Hilbert-cube sign calculus and source debt"
+    },
+    {
+      "pr": 103,
+      "branch": "research/tate-source-fourier-conductor-2026-10-14",
+      "head": "940f0a47ef25",
+      "base_label": "main",
+      "ahead_of_main": 14,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [],
+      "title": "TATE SOURCE: conductor-sensitive Fourier/Mellin, chi(-3) completion, and rational tail"
+    },
+    {
+      "pr": 104,
+      "branch": "research/hilbert-prime-weil-operator-atlas-2026-10-14",
+      "head": "88eca261bae1",
+      "base_label": "main",
+      "ahead_of_main": 1,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [],
+      "title": "HILBERT\u2013WEIL: authentic dyadic source atlas, zero-shift Suzuki range theorem and next sign gate"
+    },
+    {
+      "pr": 105,
+      "branch": "research/hilbert-carrier-completion-2026-10-14",
+      "head": "2da47bd86c63",
+      "base_label": "main",
+      "ahead_of_main": 34,
+      "is_terminal_tip": true,
+      "true_ancestor_prs": [],
+      "title": "HILBERT-CARRIER: 4-adic SUCC completion, L\u00b2 source transport, and exact signed Suzuki cell integrals"
+    },
+    {
+      "pr": 106,
+      "branch": "research/one-object-tate-weil-suzuki-connes-2026-10-15",
+      "head": "04b6d8ede12c",
+      "base_label": "research/tate-source-fourier-conductor-2026-10-14",
+      "ahead_of_main": 39,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        103
+      ],
+      "title": "ONE OBJECT: signed Weil\u2013Suzuki contact gluing, Connes fixed-point trace, exact authentic Gram gate"
+    },
+    {
+      "pr": 107,
+      "branch": "research/tate-suzuki-zero-shift-source-range-2026-10-15",
+      "head": "44d7f699dc2e",
+      "base_label": "main",
+      "ahead_of_main": 4,
+      "is_terminal_tip": true,
+      "true_ancestor_prs": [],
+      "title": "TATE \u00d7 SUZUKI: genuine arithmetic zero-shift range theorem and residual Weil-sign certificate"
+    },
+    {
+      "pr": 108,
+      "branch": "research/one-object-residual-schur-2026-10-15",
+      "head": "c6e1df0c52ff",
+      "base_label": "research/hilbert-prime-weil-operator-atlas-2026-10-14",
+      "ahead_of_main": 45,
+      "is_terminal_tip": true,
+      "true_ancestor_prs": [
+        104
+      ],
+      "title": "ONE OBJECT III: authentic Weil contact = Neumann K; zero-shift residual Schur and signed H1 certificates"
+    },
+    {
+      "pr": 109,
+      "branch": "research/one-object-signed-cancellation-shorting-2026-10-15",
+      "head": "6748cb8dd9d0",
+      "base_label": "research/one-object-tate-weil-suzuki-connes-2026-10-15",
+      "ahead_of_main": 40,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        106,
+        103
+      ],
+      "title": "ONE OBJECT II: certified original Suzuki source cancellation and two-sided zero-shift Schur gate"
+    },
+    {
+      "pr": 110,
+      "branch": "research/apollo-suzuki-second-third-jet-2026-10-15",
+      "head": "cb7b804d8624",
+      "base_label": "research/one-object-tate-weil-suzuki-connes-2026-10-15",
+      "ahead_of_main": 79,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        106,
+        103
+      ],
+      "title": "APOLLO: true-source Suzuki D\u00b2/D\u00b3 jets, finite-window Krein Hilbert carriers and RH contraction gate"
+    },
+    {
+      "pr": 111,
+      "branch": "research/apollo-prime-active-domain-2026-10-15",
+      "head": "2796c3ff2033",
+      "base_label": "research/apollo-suzuki-second-third-jet-2026-10-15",
+      "ahead_of_main": 112,
+      "is_terminal_tip": true,
+      "true_ancestor_prs": [
+        110,
+        106,
+        103
+      ],
+      "title": "APOLLO PRIME-ACTIVE: certify true Weil Hilbert domains across p=2 and five Euler jets; connect PR107 Neumann shorting"
+    },
+    {
+      "pr": 112,
+      "branch": "research/tate-prime-clock-uv-transducer-2026-10-15",
+      "head": "82b9f6730833",
+      "base_label": "research/apollo-suzuki-second-third-jet-2026-10-15",
+      "ahead_of_main": 100,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        110,
+        106,
+        103
+      ],
+      "title": "DYSPON-SPHERE I: original Tate prime-clock transducers and sparse Weil positivity"
+    },
+    {
+      "pr": 113,
+      "branch": "research/tate-lattice-finite-global-descent-2026-10-15",
+      "head": "1a1123d2f4cc",
+      "base_label": "main",
+      "ahead_of_main": 27,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [],
+      "title": "Tate finite-S Fourier descent: exact local/global bridge and SUCC history obstruction"
+    },
+    {
+      "pr": 114,
+      "branch": "research/tate-eta-bernoulli-transducer-2026-10-15",
+      "head": "9bcb7f4cc281",
+      "base_label": "research/tate-prime-clock-uv-transducer-2026-10-15",
+      "ahead_of_main": 147,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        112,
+        110,
+        106,
+        103
+      ],
+      "title": "DYSPON-SPHERE II: modular eta 1/24 \u2192 M\u00f6bius heat \u2192 Tate completed xi (RH sign open)"
+    },
+    {
+      "pr": 115,
+      "branch": "research/classical-affine-carrier-2026-10-15",
+      "head": "91d494b2d7f1",
+      "base_label": "main",
+      "ahead_of_main": 15,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [],
+      "title": "CLASSICAL SUCC: unit-origin 1\u2212s formal group, Hilbert no-go and Haar prime-clock repair"
+    },
+    {
+      "pr": 116,
+      "branch": "research/tate-suzuki-fourier-high-moment-2026-10-15",
+      "head": "e7d1f1cee035",
+      "base_label": "research/tate-eta-bernoulli-transducer-2026-10-15",
+      "ahead_of_main": 164,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        114,
+        112,
+        110,
+        106,
+        103
+      ],
+      "title": "TATE \u00d7 SUZUKI: original 16/18/30-moment Gamma coercivity and sharper first-prime Schur"
+    },
+    {
+      "pr": 117,
+      "branch": "research/field-closure-inverse-limit-rh-2026-10-15",
+      "head": "a7a5cd92ce00",
+      "base_label": "research/tate-suzuki-fourier-high-moment-2026-10-15",
+      "ahead_of_main": 215,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        116,
+        114,
+        112,
+        110,
+        106,
+        103
+      ],
+      "title": "SOURCE FIELDS \u00d7 TATE: inverse/direct limits, computable selection, local Fourier and Weil proof debt"
+    },
+    {
+      "pr": 118,
+      "branch": "research/observer-tate-bijective-descent-2026-10-15",
+      "head": "8ce326b28ed0",
+      "base_label": "main",
+      "ahead_of_main": 64,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [],
+      "title": "ATOM II: Simple/IdealHard/Fucked fields, bijective Tate observers, and uniform Hilbert gluing"
+    },
+    {
+      "pr": 119,
+      "branch": "research/classical-tate-schwartz-gluing-2026-10-15",
+      "head": "d7bb6010bc1a",
+      "base_label": "research/classical-affine-carrier-2026-10-15",
+      "ahead_of_main": 38,
+      "is_terminal_tip": true,
+      "true_ancestor_prs": [
+        115
+      ],
+      "title": "TATE \u00d7 FIELD GATES: exact Schwartz\u2013Bruhat Fourier and noncomputable IdealHard witness"
+    },
+    {
+      "pr": 120,
+      "branch": "research/rh-carrier-tate-functor-2026-10-15",
+      "head": "e1cfae4fba46",
+      "base_label": "research/tate-lattice-finite-global-descent-2026-10-15",
+      "ahead_of_main": 58,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        113
+      ],
+      "title": "Tate Schwartz\u2013Bruhat SUCC functor and RH carrier geometry (stacked research)"
+    },
+    {
+      "pr": 121,
+      "branch": "research/ordinal-ranked-succ-goodstein-2026-10-15",
+      "head": "0ad337829a97",
+      "base_label": "research/observer-tate-bijective-descent-2026-10-15",
+      "ahead_of_main": 87,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        118
+      ],
+      "title": "ORDINAL SUCC: \u03b5\u2080-ranked Goodstein normalization, long finite paths, and source-faithful Tate/martingale gates"
+    },
+    {
+      "pr": 122,
+      "branch": "research/apollo-prime-interference-source-determinacy-2026-10-15",
+      "head": "bf1bb848cfc9",
+      "base_label": "research/field-closure-inverse-limit-rh-2026-10-15",
+      "ahead_of_main": 233,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        117,
+        116,
+        114,
+        112,
+        110,
+        106,
+        103
+      ],
+      "title": "APOLLO: forced Brownian correction, positive-first reconstructibility and signed prime-phase births"
+    },
+    {
+      "pr": 123,
+      "branch": "research/suzuki-30mode-neumann-ci-recovery-2026-10-15",
+      "head": "d2a85cd1fdc6",
+      "base_label": "main",
+      "ahead_of_main": 53,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        109,
+        106,
+        103
+      ],
+      "title": "Recover pushed 30-mode Suzuki Neumann dual research and certify authentic log2 hinge"
+    },
+    {
+      "pr": 124,
+      "branch": "research/ordinal-authentic-suzuki-margin-2026-10-15",
+      "head": "2ace90518580",
+      "base_label": "research/ordinal-ranked-succ-goodstein-2026-10-15",
+      "ahead_of_main": 96,
+      "is_terminal_tip": true,
+      "true_ancestor_prs": [
+        121,
+        118
+      ],
+      "title": "ORDINAL \u00d7 genuine Suzuki: strict source sign-margin proof search, omega debt and safe Git push audit"
+    },
+    {
+      "pr": 125,
+      "branch": "research/suzuki-mixed30-gamma-tail-2026-10-15",
+      "head": "0d3bf50873fd",
+      "base_label": "research/suzuki-30mode-neumann-ci-recovery-2026-10-15",
+      "ahead_of_main": 62,
+      "is_terminal_tip": true,
+      "true_ancestor_prs": [
+        123,
+        109,
+        106,
+        103
+      ],
+      "title": "Suzuki mixed 30: complete original Gamma derivative moments with rigorous O(J\u207b\u00b2) source tail"
+    },
+    {
+      "pr": 126,
+      "branch": "research/tate-central-reflection-prime-jet-2026-10-15",
+      "head": "c0f35c6c7b9a",
+      "base_label": "research/apollo-prime-interference-source-determinacy-2026-10-15",
+      "ahead_of_main": 256,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        122,
+        117,
+        116,
+        114,
+        112,
+        110,
+        106,
+        103
+      ],
+      "title": "TATE 1\u2212s reflection: Brownian center jet, convergent prime-power residual and 15D Suzuki parity gate"
+    },
+    {
+      "pr": 127,
+      "branch": "research/edge-carrier-reconstruction-2026-10-15",
+      "head": "7cc16f9a3a23",
+      "base_label": "research/rh-carrier-tate-functor-2026-10-15",
+      "ahead_of_main": 80,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        120,
+        113
+      ],
+      "title": "Reconstruct larger carriers from SUCC edge categories: N\u2192Z\u2192Q, Q(i)\u2192C, Z\u0302\u2192finite ad\u00e8les"
+    },
+    {
+      "pr": 128,
+      "branch": "research/tate-bessel-seven-low-schur-2026-10-15",
+      "head": "21a1d6854df5",
+      "base_label": "research/tate-central-reflection-prime-jet-2026-10-15",
+      "ahead_of_main": 267,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        126,
+        122,
+        117,
+        116,
+        114,
+        112,
+        110,
+        106,
+        103
+      ],
+      "title": "BESSEL-7: authentic Weil seven-moment positivity and true seven-low Suzuki Schur"
+    },
+    {
+      "pr": 129,
+      "branch": "research/pontryagin-finite-adelic-duality-2026-10-15",
+      "head": "d239c27d3759",
+      "base_label": "research/edge-carrier-reconstruction-2026-10-15",
+      "ahead_of_main": 112,
+      "is_terminal_tip": false,
+      "true_ancestor_prs": [
+        127,
+        120,
+        113
+      ],
+      "title": "Pontryagin-to-Tate reconstruction: profinite duality, adelic solenoid, full Poisson and exact source controls"
+    },
+    {
+      "pr": 130,
+      "branch": "research/tate-weighted-bessel-four-low-2026-10-15",
+      "head": "e4572ffdd7da",
+      "base_label": "research/tate-bessel-seven-low-schur-2026-10-15",
+      "ahead_of_main": 298,
+      "is_terminal_tip": true,
+      "true_ancestor_prs": [
+        128,
+        126,
+        122,
+        117,
+        116,
+        114,
+        112,
+        110,
+        106,
+        103
+      ],
+      "title": "WEIGHTED BESSEL-4: authentic Weil 4-moment positivity, completed low A>0 and explicit rank-four positive host (RH open)"
+    },
+    {
+      "pr": 131,
+      "branch": "research/carrier-tate-weil-2026-10-15",
+      "head": "abc1063da53e",
+      "base_label": "research/pontryagin-finite-adelic-duality-2026-10-15",
+      "ahead_of_main": 114,
+      "is_terminal_tip": true,
+      "true_ancestor_prs": [
+        129,
+        127,
+        120,
+        113
+      ],
+      "title": "Carrier \u2192 Tate \u2192 Weil: canonical sources, full distribution, and positivity obstructions"
+    }
+  ],
+  "edges": [
+    {
+      "child": 106,
+      "parent": 103,
+      "all_true_ancestors": [
+        103
+      ]
+    },
+    {
+      "child": 108,
+      "parent": 104,
+      "all_true_ancestors": [
+        104
+      ]
+    },
+    {
+      "child": 109,
+      "parent": 106,
+      "all_true_ancestors": [
+        106,
+        103
+      ]
+    },
+    {
+      "child": 110,
+      "parent": 106,
+      "all_true_ancestors": [
+        106,
+        103
+      ]
+    },
+    {
+      "child": 111,
+      "parent": 110,
+      "all_true_ancestors": [
+        110,
+        106,
+        103
+      ]
+    },
+    {
+      "child": 112,
+      "parent": 110,
+      "all_true_ancestors": [
+        110,
+        106,
+        103
+      ]
+    },
+    {
+      "child": 114,
+      "parent": 112,
+      "all_true_ancestors": [
+        112,
+        110,
+        106,
+        103
+      ]
+    },
+    {
+      "child": 116,
+      "parent": 114,
+      "all_true_ancestors": [
+        114,
+        112,
+        110,
+        106,
+        103
+      ]
+    },
+    {
+      "child": 117,
+      "parent": 116,
+      "all_true_ancestors": [
+        116,
+        114,
+        112,
+        110,
+        106,
+        103
+      ]
+    },
+    {
+      "child": 119,
+      "parent": 115,
+      "all_true_ancestors": [
+        115
+      ]
+    },
+    {
+      "child": 120,
+      "parent": 113,
+      "all_true_ancestors": [
+        113
+      ]
+    },
+    {
+      "child": 121,
+      "parent": 118,
+      "all_true_ancestors": [
+        118
+      ]
+    },
+    {
+      "child": 122,
+      "parent": 117,
+      "all_true_ancestors": [
+        117,
+        116,
+        114,
+        112,
+        110,
+        106,
+        103
+      ]
+    },
+    {
+      "child": 123,
+      "parent": 109,
+      "all_true_ancestors": [
+        109,
+        106,
+        103
+      ]
+    },
+    {
+      "child": 124,
+      "parent": 121,
+      "all_true_ancestors": [
+        121,
+        118
+      ]
+    },
+    {
+      "child": 125,
+      "parent": 123,
+      "all_true_ancestors": [
+        123,
+        109,
+        106,
+        103
+      ]
+    },
+    {
+      "child": 126,
+      "parent": 122,
+      "all_true_ancestors": [
+        122,
+        117,
+        116,
+        114,
+        112,
+        110,
+        106,
+        103
+      ]
+    },
+    {
+      "child": 127,
+      "parent": 120,
+      "all_true_ancestors": [
+        120,
+        113
+      ]
+    },
+    {
+      "child": 128,
+      "parent": 126,
+      "all_true_ancestors": [
+        126,
+        122,
+        117,
+        116,
+        114,
+        112,
+        110,
+        106,
+        103
+      ]
+    },
+    {
+      "child": 129,
+      "parent": 127,
+      "all_true_ancestors": [
+        127,
+        120,
+        113
+      ]
+    },
+    {
+      "child": 130,
+      "parent": 128,
+      "all_true_ancestors": [
+        128,
+        126,
+        122,
+        117,
+        116,
+        114,
+        112,
+        110,
+        106,
+        103
+      ]
+    },
+    {
+      "child": 131,
+      "parent": 129,
+      "all_true_ancestors": [
+        129,
+        127,
+        120,
+        113
+      ]
+    }
+  ]
+}

@@ -258,7 +258,7 @@ A hostile experiment deliberately drops the finite Haar factor \(1/D\) at \(D=2\
 | AS-01 rational solenoid carrier and covolume | CLASSICAL / PAPER PROVED | Test diagonal rational gauge and Haar-normalized fundamental domain |
 | AS-02 all continuous solenoid characters indexed by discrete Q | CLASSICAL / PAPER PROVED | Require continuous character factorization, no numeric \(\omega\)-jump |
 | AS-03 global adelic self-duality and Q^\perp=Q | CLASSICAL / PAPER DERIVED from standard local duality | Wrong finite sign, nonintegral local character, false rational annihilator |
-| AS-04 rational finite-adèle compact-open generator span | CLASSICAL / PAPER PROVED | Must include arbitrary D∈Q_{>0}, not just integers or a single prime |
+| AS-04 rational finite-adèle compact-open generator span | CLASSICAL / PAPER PROVED | Must include arbitrary D∈Q_{>0}, not just integers or a single prime — **SUPERSEDED (integer conjunct): PR #131 / CTW-02 — integer scales with rational translates already span S(A_f) via exact disjoint refinement; only the "single prime" necessity stands. Original row preserved; see docs/CLAIM_SUPPLEMENT_CARRIER_TATE_WEIL.md CTW-02.** |
 | AS-05 exact Fourier of u+D Zhat | CLASSICAL / PAPER PROVED + FINITE EXACT TESTED | Omitted Haar 1/D, wrong annihilator D^-1, omitted shift |
 | AS-06 full Poisson for all S(A) via real Poisson | CLASSICAL / PAPER PROVED CONDITIONAL on familiar real Poisson | False test topology or missing linear spanning lemma |
 | AS-07 exact shifted Gaussian theta specialization | CLASSICAL / FINITE EXACT SOURCE TESTED | Wrong shift/conjugate phase, wrong Gaussian heat scaling |

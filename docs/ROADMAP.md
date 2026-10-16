@@ -3,6 +3,8 @@
 **ObsSUCC is an independent program.** Milestones should produce reusable observation/proof or information-theoretic results even if no RH theorem follows. An item is complete only when its mathematical scope, negative controls, documentation and reproducibility are adequate.
 
 > The research stack (PRs #6–#22) was consolidated into `main` on 2026-10-11; see the [integration audit](INTEGRATION_AUDIT_2026-10-11.md) for validation receipts, the adversarial-audit findings, and the open follow-ups it recorded.
+>
+> Subsequent consolidations: [Phoenix II](PHOENIX_II_INTEGRATION_AUDIT_2026-10-14.md) (PRs #57–#99, 2026-10-14) and [Academic Main](ACADEMIC_CARRIER_INTEGRATION_AUDIT_2026-10-15.md) (PRs #101–#131, 2026-10-15, carrier-first academic layer). Current open frontier: [RESEARCH_FRONTIER_2026-10-15.md](RESEARCH_FRONTIER_2026-10-15.md). **RH remains OPEN.**
 
 ## Stage 0: historical and software foundation — implemented in bootstrap PR
 
