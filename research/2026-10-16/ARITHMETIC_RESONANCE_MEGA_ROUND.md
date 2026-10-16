@@ -4,13 +4,14 @@
 This round improves both sides of the authentic zero-shift Schur enclosure and
 proves a conditional source-specific dense-response theorem. It does not prove
 fractional spectral rigidity or a computable vanishing inverse-spectral tail.
-No nontrivial zero coordinates were used as inputs.
+No nontrivial zero coordinates were used to construct these source certificates.
 
 ## Source, lineage and authority
 
 The isolated SUCC branch is
 `research/arithmetic-wavefront-spectral-response-2026-10-16`, a child of
 `24d0f18a103fb2add32ee817fdfefb4ff401ed27` ([parent draft #135](https://github.com/femboy2112/SUCC/pull/135)).
+The reviewable publication is [draft #137](https://github.com/femboy2112/SUCC/pull/137).
 The actual source blob remains `0cc8510b71d178fc79e8d410a86d8b6014cf9178`,
 SHA256 `183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b`,
 origin commit `dc6b7e3adbfb67c2913c145a4efb95fe3d50b1bc`.
@@ -106,6 +107,30 @@ make its closure compact, impossible in infinite dimension. Thus the dense range
 above is nonclosed. Some residual targets are unattainable, and there is no
 bounded right inverse on all M. This classical compactness argument does not
 decide attainment of any of the four particular low-source target columns.
+
+The late [independent residual-method review](../../reviews/2026-10-16_OPTIMAL_RESIDUAL_COROLLARY_AUDIT.md)
+closes a further qualitative implication. Let U_N minimize each actual continuum
+residual over span(P5,...,PN). Coercivity makes R_Q injective, so these finite
+minimizers exist uniquely. Projection onto the nested image spaces gives
+
+    C_N = R_P* (I-Pi_(R_Q X_N)) R_P decreasing to0 in low operator norm,
+    ||H_(U_N)-S0||, ||H_(U_N)-kappa^-1 C_N-S0|| <= kappa^-1 ||C_N|| ->0.
+
+These are source-specific, conditional paper consequences of the proved density
+and inherited Schur bracket. They establish convergence for the residual objective,
+not for ordinary energy Galerkin. The upper matrices themselves need not be
+monotone; the response norms may diverge. Thus a fixed conservative kappa does
+not obstruct eventual exact-trial certification of a strictly positive short,
+or detection of a strictly negative direction. Singular nonnegative shorts have
+no guaranteed finite stopping certificate. No degree/rate is supplied.
+
+The audit also constructs an injective diagonal residual model for which the
+approximating operator converges in norm and its unique finite minimizers have
+vanishing *approximate* residuals, while their true residuals diverge. An effective
+implementation must control source error multiplied by the trial norm. Exact
+continuum optimization, finite sampled fitting and a certified algorithm remain
+distinct. The conditional rational-trial semidecision route in that review is
+not represented as an implemented solver or a resource guarantee.
 
 An additional actual-source theorem rules out every finite upper comparison
 `D<=C K_Q`. Compactly supported, moment-corrected modulations make the Gamma

@@ -132,6 +132,8 @@ Authentic g' + real Gamma tower + poles/contact/prime2
        ker R_Q*=0, closure Ran R_Q=M
   --compactness of authentic g' response [P]-->
        dense nonclosed range, no bounded right inverse on all M
+  --exact continuum residual minimization on nested high spans [P]-->
+       C_N decreases to0; both Schur brackets converge in low operator norm
   --quantified approximation of the four targets [U]-->
        useful K-relative residual certificate [U]
 

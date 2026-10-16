@@ -12,6 +12,11 @@ as a positive source short. Preserve the actual source and metric W.
    of source-adapted responses. Ordinary L2 polynomial density is already solved;
    ordinary energy-Galerkin convergence is not the required estimate. Try an
    explicitly controlled primitive logarithmic equation or threshold-aware basis.
+   Exact continuum residual minimization on nested high Legendre spans now has a
+   conditional convergence proof (see the optimal-residual review). Turn it into
+   an effective certified computation; control approximation error times growing
+   response norms. The proof gives neither an a priori degree nor a guarantee of
+   finite termination at a singular nonnegative short.
 2. **Fractional route remains genuinely open.** Prove or refute a domain estimate
    for D^(-1/2-eta)B* on the true source. The audited dossier gives an explicit
    dyadic spectral-mass sufficient lemma and the precise primitive operator
