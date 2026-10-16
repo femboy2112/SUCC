@@ -149,7 +149,7 @@ def certify_dual_ports(left: MiniPort, right: MiniPort, passport: Passport,
     receipt = compile_dual_product(left.parent, left.mini, right.mini,
                 left.decoder, right.decoder, left_word, right_word, public_pair)
     return {"certified_joint_model": bool(receipt["certified"]),
-            "status": receipt["kind"] if receipt["certified"] else receipt["reason"],
+            "status": receipt["realization"] if receipt["certified"] else receipt["reason"],
             "original_source_authenticated": False,
             "two_physical_sensors_proved": False}
 

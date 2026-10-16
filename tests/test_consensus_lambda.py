@@ -314,6 +314,10 @@ class ExistingMiniAndWildIntegrationTests(unittest.TestCase):
         joint=certify_dual_ports(lp,rp,P,("a",),("b",),
                           {s:("L"+s[0],"R"+s[1]) for s in states})
         self.assertTrue(joint["certified_joint_model"])
+        # PR #140 failed here in full CI: _accept exposes `realization`,
+        # not `kind`. Keep the real MATRYOSHKA success contract unchanged.
+        self.assertEqual(joint["status"], "independent_joint_factor")
+        self.assertFalse(joint["original_source_authenticated"])
         world=World(P,tuple(Candidate(s,i,s) for i,s in enumerate(states)))
         la=EFrame(dev("L",(lp,))).record("left",parent_public_report="10")
         ra=EFrame(dev("R",(rp,))).record("right",parent_public_report="10")
@@ -372,6 +376,8 @@ class ExistingMiniAndWildIntegrationTests(unittest.TestCase):
                          {s:("L"+s[0],"R"+s[1]) for s in states})
         self.assertFalse(together["certified_joint_model"])
         self.assertEqual(together["status"],"ghost_joint_states")
+        self.assertFalse(together["original_source_authenticated"])
+        self.assertFalse(together["two_physical_sensors_proved"])
 
     def test_horned_sphere_many_abelian_observers_still_blind(self):
         try:
