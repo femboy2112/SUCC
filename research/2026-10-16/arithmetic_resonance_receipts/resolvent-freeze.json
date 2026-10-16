@@ -1,0 +1,59 @@
+{
+  "RH_PROVED": false,
+  "concrete_lower_dominates_inherited_symbolic_lower": true,
+  "cross_interpreter_mathematical_packets_equal": true,
+  "cross_interpreter_packet_metadata_differences": "Only producer probe hash and refined regularization-gap annotations; final py313 packet authoritative",
+  "full_suites_delegated_to_principal": true,
+  "git_commit_or_push_by_worker": false,
+  "lower_improvement_exact_positive_slack": [
+    [
+      "45403391474650722912039520720330691984907117488266049/42583642792459820140950000000000000000000000000000000",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "15928614934679084819695164041262101271634737893194073/28389095194973213427300000000000000000000000000000000",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "45403391474648755694388628877244615203916607472620781/99361833182406246995550000000000000000000000000000000",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "79643074673394812075206653854135209131352641038746657/255501856754758920845700000000000000000000000000000000"
+    ]
+  ],
+  "no_further_code_or_dossier_changes_without_message": true,
+  "original_source_sign": "OPEN",
+  "packet": "resolvent-final-py313-packet.json",
+  "packet_sha256": "92b984dcbb85f823016c4da145d077bb736ed3662f8f99445445c8b1e41b187e",
+  "producer_sha256": {
+    "observational_succ/arithmetic_resolvent.py": "c6b8c5dce161910615d20b8f7b249c48fc65134075dfc7d0afc51d92ff79395b",
+    "research/2026-10-16/AUTHENTIC_SCHUR_RESPONSE_CERTIFICATE.md": "78c113e4c1cbe09ff361e49ca51f4e0a57e4fb1af3ebd69673565aaa17222875",
+    "scripts/arithmetic_resolvent_probe.py": "61095d151be7ad33be0f7f4282bce775190b4890aa93c8756d201e40abfbc9ab",
+    "tests/test_arithmetic_resolvent.py": "5d6a0c66a30b7802f42c0a5b9e5acae88854efe43df17358e2bc98c5688745b9"
+  },
+  "python310": {
+    "RSS_KiB": 41160,
+    "outside_checkout_output_verified": true,
+    "seconds": 136.59903513500467,
+    "status": "PASS",
+    "tests": 26
+  },
+  "python313": {
+    "RSS_KiB": 50560,
+    "seconds": 87.42317408393137,
+    "status": "PASS",
+    "tests": 26
+  },
+  "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "status": "FROZEN_READY_FOR_PRINCIPAL_INTEGRATION"
+}
