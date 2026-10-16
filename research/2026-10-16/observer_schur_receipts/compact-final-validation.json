@@ -1,0 +1,95 @@
+{
+  "captured_utc": "2026-10-16T03:14:09.493982+00:00",
+  "lane": "COMPACT_GALERKIN",
+  "runs": {
+    "310": {
+      "receipt": "research/2026-10-16/observer_schur_receipts/compact-py310.json",
+      "sha256": "8356c7a3723c1092a6fd48b08f4bc7ddbff8957c0a10b202dea3782a6114ccab",
+      "python": "3.10.20",
+      "tests": 25,
+      "successful": true,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 21.349292144877836,
+      "source_bytes_unchanged": true,
+      "own_bytes_unchanged": true
+    },
+    "313": {
+      "receipt": "research/2026-10-16/observer_schur_receipts/compact-py313.json",
+      "sha256": "c0ff95d2022d0d5966b00db4668a03bb0f28de032d7cf38af01b667a703db19a",
+      "python": "3.13.13",
+      "tests": 25,
+      "successful": true,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "elapsed_seconds": 17.967644673073664,
+      "source_bytes_unchanged": true,
+      "own_bytes_unchanged": true
+    }
+  },
+  "exact_cross_interpreter_match_fields": [
+    "source",
+    "own_sha256",
+    "compact_source_bounds",
+    "fixed_source_graph_blocks",
+    "fixed_source_graph_stages",
+    "clamped_range_gap",
+    "conditional_Gamma_matrix_bound"
+  ],
+  "own_sha256": {
+    "observational_succ/compact_galerkin.py": "bba57c6aa8c3bb21ac1d4146c39b87c20ce09692f69abce04be7221e2fca0da4",
+    "tests/test_compact_galerkin.py": "ea0822711afba327818f6f4c2ac9f9eae92847de2f7a1353965c7a667b408582",
+    "scripts/compact_galerkin_probe.py": "52b7f114c9b45da9aecaf4032511e6e7af49bcc34c3e769f2c05139f4d75b314",
+    "research/2026-10-16/COMPACT_SOURCE_GALERKIN.md": "6e44d42fedd72274d8732272315bd05a43564c13bc423338a4711c0746b3986e"
+  },
+  "source": {
+    "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "prime_power_tape": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "half_density": "1/2",
+    "real_gamma_count": 1,
+    "original_weil_sign_proved": false,
+    "sha256": {
+      "observational_succ/source_weil_hierarchy.py": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+      "observational_succ/signed_gprime_enclosure.py": "b28647158ffa45cb83123063c7b19972fa96f0c7241f2555beb244976b972665",
+      "observational_succ/one_object_residual_schur.py": "96247ca82dd2fbc26c23470dfbb8a3282ca5be59f37c0ece37547b3e5ae2e8e6",
+      "observational_succ/tate_suzuki_shorting.py": "57fbbf3b2876d5e2e4a156d0f7a951595997d2eb3f7911cd1720e2662c8b8d42",
+      "observational_succ/suzuki_legendre_source.py": "15b82e7833e59d70cffe3cb00cd1ed3b96953a9a6fcc156cbdf0aab4f2ffe198",
+      "observational_succ/four_low_schur_proof_teeth.py": "a2c3357b2307abae4d828f3e8da4beeb1d35f3925d454c1d523f48d918d1d121",
+      "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+    }
+  },
+  "all_current_own_hashes_match": true,
+  "git_mutations_by_lane": false,
+  "full_suite_run_by_lane": false,
+  "hosted_CI_claim": null,
+  "Lean_kernel_claim": null,
+  "original_source_S0": "OPEN",
+  "RH_PROVED": false
+}

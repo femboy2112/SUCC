@@ -1,0 +1,736 @@
+{
+  "schema": "COMPACT_SOURCE_GALERKIN_ROUND_II_V1",
+  "time_utc": "2026-10-16T03:12:36.997056+00:00",
+  "command": "/tmp/succ-proof-teeth-py310/bin/python scripts/compact_galerkin_probe.py --output research/2026-10-16/observer_schur_receipts/compact-py310.json",
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur",
+  "python": "3.10.20",
+  "environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "git_head": {
+    "returncode": 0,
+    "stdout": "a50d939f7ad7b21b88b2b75085d1b39b9eb93365",
+    "stderr": ""
+  },
+  "git_branch": {
+    "returncode": 0,
+    "stdout": "research/observers-schur-complement-2026-10-16",
+    "stderr": ""
+  },
+  "origin_source_blob": {
+    "returncode": 0,
+    "stdout": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "stderr": ""
+  },
+  "source": {
+    "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "prime_power_tape": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "half_density": "1/2",
+    "real_gamma_count": 1,
+    "original_weil_sign_proved": false,
+    "sha256": {
+      "observational_succ/source_weil_hierarchy.py": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+      "observational_succ/signed_gprime_enclosure.py": "b28647158ffa45cb83123063c7b19972fa96f0c7241f2555beb244976b972665",
+      "observational_succ/one_object_residual_schur.py": "96247ca82dd2fbc26c23470dfbb8a3282ca5be59f37c0ece37547b3e5ae2e8e6",
+      "observational_succ/tate_suzuki_shorting.py": "57fbbf3b2876d5e2e4a156d0f7a951595997d2eb3f7911cd1720e2662c8b8d42",
+      "observational_succ/suzuki_legendre_source.py": "15b82e7833e59d70cffe3cb00cd1ed3b96953a9a6fcc156cbdf0aab4f2ffe198",
+      "observational_succ/four_low_schur_proof_teeth.py": "a2c3357b2307abae4d828f3e8da4beeb1d35f3925d454c1d523f48d918d1d121",
+      "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+    }
+  },
+  "matches_inherited_source_receipt": true,
+  "own_sha256": {
+    "observational_succ/compact_galerkin.py": "bba57c6aa8c3bb21ac1d4146c39b87c20ce09692f69abce04be7221e2fca0da4",
+    "tests/test_compact_galerkin.py": "ea0822711afba327818f6f4c2ac9f9eae92847de2f7a1353965c7a667b408582",
+    "scripts/compact_galerkin_probe.py": "52b7f114c9b45da9aecaf4032511e6e7af49bcc34c3e769f2c05139f4d75b314",
+    "research/2026-10-16/COMPACT_SOURCE_GALERKIN.md": "6e44d42fedd72274d8732272315bd05a43564c13bc423338a4711c0746b3986e"
+  },
+  "proof_authority": "PAPER_PROVED; exact executions support only their stated finite/enclosure scope",
+  "formal_kernel_proofs_run_by_this_lane": [],
+  "compact_source_bounds": [
+    {
+      "authority": "PAPER_PROVED_WITH_REPLAYED_EXACT_SOURCE_ENCLOSURE",
+      "source": {
+        "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+        "prime_power_tape": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "half_density": "1/2",
+        "real_gamma_count": 1,
+        "original_weil_sign_proved": false
+      },
+      "a": "1/2",
+      "mean_zero": true,
+      "projection": "orthogonal Legendre modes 1..N on (-1/2,1/2)",
+      "degree": 4,
+      "first_omitted_eigenvalue": 30,
+      "gprime_L1_strict_upper": "5486668289304754655712091/20480000000000000000000000",
+      "gprime_L2_squared_strict_upper": "1008448074928301833985850271716334235329423027/6400000000000000000000000000000000000000000000",
+      "operator_error_squared_strict_upper": "30103528916862362931934160207342793119574283592281/12582912000000000000000000000000000000000000000000000",
+      "hilbert_schmidt_error_squared_strict_upper": "1008448074928301833985850271716334235329423027/384000000000000000000000000000000000000000000000",
+      "operator_error_rational_strict_upper": "5486668289304754655712091/102400000000000000000000000",
+      "simple_operator_error_strict_upper": "11/200",
+      "gamma_modes": 64,
+      "positive_gamma_tail_operator_upper": "530/16974593",
+      "compressed_GJ_total_error_strict_upper": "93188233136954463245567869903963/1738198323200000000000000000000000",
+      "requires_exact_compression_or_separate_matrix_entry_error": true,
+      "inverse_or_zero_shift_error_certified": false,
+      "original_S0_sign": "OPEN",
+      "RH_PROVED": false
+    },
+    {
+      "authority": "PAPER_PROVED_WITH_REPLAYED_EXACT_SOURCE_ENCLOSURE",
+      "source": {
+        "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+        "prime_power_tape": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "half_density": "1/2",
+        "real_gamma_count": 1,
+        "original_weil_sign_proved": false
+      },
+      "a": "1/2",
+      "mean_zero": true,
+      "projection": "orthogonal Legendre modes 1..N on (-1/2,1/2)",
+      "degree": 20,
+      "first_omitted_eigenvalue": 462,
+      "gprime_L1_strict_upper": "5486668289304754655712091/20480000000000000000000000",
+      "gprime_L2_squared_strict_upper": "1008448074928301833985850271716334235329423027/6400000000000000000000000000000000000000000000",
+      "operator_error_squared_strict_upper": "4300504130980337561704880029620399017082040513183/27682406400000000000000000000000000000000000000000000",
+      "hilbert_schmidt_error_squared_strict_upper": "1008448074928301833985850271716334235329423027/5913600000000000000000000000000000000000000000000",
+      "operator_error_rational_strict_upper": "783809755614964950816013/61440000000000000000000000",
+      "simple_operator_error_strict_upper": "11/840",
+      "gamma_modes": 64,
+      "positive_gamma_tail_operator_upper": "530/16974593",
+      "compressed_GJ_total_error_strict_upper": "13337414790993494749366838557709/1042918993920000000000000000000000",
+      "requires_exact_compression_or_separate_matrix_entry_error": true,
+      "inverse_or_zero_shift_error_certified": false,
+      "original_S0_sign": "OPEN",
+      "RH_PROVED": false
+    },
+    {
+      "authority": "PAPER_PROVED_WITH_REPLAYED_EXACT_SOURCE_ENCLOSURE",
+      "source": {
+        "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+        "prime_power_tape": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "half_density": "1/2",
+        "real_gamma_count": 1,
+        "original_weil_sign_proved": false
+      },
+      "a": "1/2",
+      "mean_zero": true,
+      "projection": "orthogonal Legendre modes 1..N on (-1/2,1/2)",
+      "degree": 100,
+      "first_omitted_eigenvalue": 10302,
+      "gprime_L1_strict_upper": "5486668289304754655712091/20480000000000000000000000",
+      "gprime_L2_squared_strict_upper": "1008448074928301833985850271716334235329423027/6400000000000000000000000000000000000000000000",
+      "operator_error_squared_strict_upper": "30103528916862362931934160207342793119574283592281/4320971980800000000000000000000000000000000000000000000",
+      "hilbert_schmidt_error_squared_strict_upper": "1008448074928301833985850271716334235329423027/131865600000000000000000000000000000000000000000000",
+      "operator_error_rational_strict_upper": "5486668289304754655712091/2068480000000000000000000000",
+      "simple_operator_error_strict_upper": "11/4040",
+      "gamma_modes": 64,
+      "positive_gamma_tail_operator_upper": "530/16974593",
+      "compressed_GJ_total_error_strict_upper": "94230255536954463245567869903963/35111606128640000000000000000000000",
+      "requires_exact_compression_or_separate_matrix_entry_error": true,
+      "inverse_or_zero_shift_error_certified": false,
+      "original_S0_sign": "OPEN",
+      "RH_PROVED": false
+    },
+    {
+      "authority": "PAPER_PROVED_WITH_REPLAYED_EXACT_SOURCE_ENCLOSURE",
+      "source": {
+        "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+        "prime_power_tape": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "half_density": "1/2",
+        "real_gamma_count": 1,
+        "original_weil_sign_proved": false
+      },
+      "a": "1/2",
+      "mean_zero": true,
+      "projection": "orthogonal Legendre modes 1..N on (-1/2,1/2)",
+      "degree": 1000,
+      "first_omitted_eigenvalue": 1003002,
+      "gprime_L1_strict_upper": "5486668289304754655712091/20480000000000000000000000",
+      "gprime_L2_squared_strict_upper": "1008448074928301833985850271716334235329423027/6400000000000000000000000000000000000000000000",
+      "operator_error_squared_strict_upper": "4300504130980337561704880029620399017082040513183/60098504294400000000000000000000000000000000000000000000",
+      "hilbert_schmidt_error_squared_strict_upper": "1008448074928301833985850271716334235329423027/12838425600000000000000000000000000000000000000000000",
+      "operator_error_rational_strict_upper": "783809755614964950816013/2928640000000000000000000000",
+      "simple_operator_error_strict_upper": "1/3640",
+      "gamma_modes": 64,
+      "positive_gamma_tail_operator_upper": "530/16974593",
+      "compressed_GJ_total_error_strict_upper": "14857030790993494749366838557709/49712472043520000000000000000000000",
+      "requires_exact_compression_or_separate_matrix_entry_error": true,
+      "inverse_or_zero_shift_error_certified": false,
+      "original_S0_sign": "OPEN",
+      "RH_PROVED": false
+    }
+  ],
+  "noncompact_control": {
+    "source": "SYNTHETIC_DIAGONAL_L2",
+    "degree": 100,
+    "exponent": 0,
+    "operator_norm_error": "1",
+    "norm_I_minus_projection": "1",
+    "witness_index": 101,
+    "compact_iff_exponent_positive": false,
+    "authority": "EXACT_FINITE_CHECK_OF_PAPER_COUNTERMODEL",
+    "authentic_weil_source": false
+  },
+  "compact_control": {
+    "source": "SYNTHETIC_DIAGONAL_L2",
+    "degree": 100,
+    "exponent": 2,
+    "operator_norm_error": "1/10201",
+    "norm_I_minus_projection": "1",
+    "witness_index": 101,
+    "compact_iff_exponent_positive": true,
+    "authority": "EXACT_FINITE_CHECK_OF_PAPER_COUNTERMODEL",
+    "authentic_weil_source": false
+  },
+  "zero_shift_discontinuity": [
+    {
+      "source": "CHANGING_CROSS_SOURCE_FIXED_COMPACT_D_SYNTHETIC",
+      "index": 4,
+      "operator_norm_distance_to_limit": "1/4",
+      "active_high_eigenvalue": "1/16",
+      "cross_coefficient": "1/4",
+      "relative_source_norm_squared": "1",
+      "response_zero_shift": "1",
+      "limit_response_zero_shift": "0",
+      "short": "-1/2",
+      "limit_short": "1/2",
+      "negative_vector_low_high": [
+        "1",
+        "-4"
+      ],
+      "negative_energy": "-1/2",
+      "shift": "1/10",
+      "positive_shift_response": "5/13",
+      "authentic_weil_source": false
+    },
+    {
+      "source": "CHANGING_CROSS_SOURCE_FIXED_COMPACT_D_SYNTHETIC",
+      "index": 16,
+      "operator_norm_distance_to_limit": "1/16",
+      "active_high_eigenvalue": "1/256",
+      "cross_coefficient": "1/16",
+      "relative_source_norm_squared": "1",
+      "response_zero_shift": "1",
+      "limit_response_zero_shift": "0",
+      "short": "-1/2",
+      "limit_short": "1/2",
+      "negative_vector_low_high": [
+        "1",
+        "-16"
+      ],
+      "negative_energy": "-1/2",
+      "shift": "1/10",
+      "positive_shift_response": "5/133",
+      "authentic_weil_source": false
+    },
+    {
+      "source": "CHANGING_CROSS_SOURCE_FIXED_COMPACT_D_SYNTHETIC",
+      "index": 64,
+      "operator_norm_distance_to_limit": "1/64",
+      "active_high_eigenvalue": "1/4096",
+      "cross_coefficient": "1/64",
+      "relative_source_norm_squared": "1",
+      "response_zero_shift": "1",
+      "limit_response_zero_shift": "0",
+      "short": "-1/2",
+      "limit_short": "1/2",
+      "negative_vector_low_high": [
+        "1",
+        "-64"
+      ],
+      "negative_energy": "-1/2",
+      "shift": "1/10",
+      "positive_shift_response": "5/2053",
+      "authentic_weil_source": false
+    }
+  ],
+  "fixed_source_graph_blocks": [
+    {
+      "source": "FIXED_SYNTHETIC_DIRECT_SUM",
+      "index": 1,
+      "s": "1/2",
+      "D": [
+        [
+          "1/256",
+          "1/256"
+        ],
+        [
+          "1/256",
+          "1/64"
+        ]
+      ],
+      "K_scalar": "1/512",
+      "b": [
+        "1/32",
+        "0"
+      ],
+      "partial_Galerkin_u": [
+        "8",
+        "0"
+      ],
+      "partial_residual": [
+        "0",
+        "-1/32"
+      ],
+      "det_D_minus_K": "3/262144",
+      "D_minus_K_leading_minor": "1/512",
+      "block_response": "1/3",
+      "partial_response": "1/4",
+      "block_relative_source_squared": "1/2",
+      "partial_K_residual_squared": "1/2",
+      "relative_map_HS_squared": "19/128",
+      "exact_response_vector": [
+        "32/3",
+        "-8/3"
+      ],
+      "authentic_weil_source": false
+    },
+    {
+      "source": "FIXED_SYNTHETIC_DIRECT_SUM",
+      "index": 4,
+      "s": "1/16",
+      "D": [
+        [
+          "1/4294967296",
+          "1/536870912"
+        ],
+        [
+          "1/536870912",
+          "1/16777216"
+        ]
+      ],
+      "K_scalar": "1/8589934592",
+      "b": [
+        "1/1048576",
+        "0"
+      ],
+      "partial_Galerkin_u": [
+        "4096",
+        "0"
+      ],
+      "partial_residual": [
+        "0",
+        "-1/131072"
+      ],
+      "det_D_minus_K": "255/73786976294838206464",
+      "D_minus_K_leading_minor": "1/8589934592",
+      "block_response": "1/192",
+      "partial_response": "1/256",
+      "block_relative_source_squared": "1/128",
+      "partial_K_residual_squared": "1/2",
+      "relative_map_HS_squared": "65665/2147483648",
+      "exact_response_vector": [
+        "16384/3",
+        "-512/3"
+      ],
+      "authentic_weil_source": false
+    },
+    {
+      "source": "FIXED_SYNTHETIC_DIRECT_SUM",
+      "index": 8,
+      "s": "1/256",
+      "D": [
+        [
+          "1/18446744073709551616",
+          "1/144115188075855872"
+        ],
+        [
+          "1/144115188075855872",
+          "1/281474976710656"
+        ]
+      ],
+      "K_scalar": "1/36893488147419103232",
+      "b": [
+        "1/1099511627776",
+        "0"
+      ],
+      "partial_Galerkin_u": [
+        "16777216",
+        "0"
+      ],
+      "partial_residual": [
+        "0",
+        "-1/8589934592"
+      ],
+      "det_D_minus_K": "65535/1361129467683753853853498429727072845824",
+      "D_minus_K_leading_minor": "1/36893488147419103232",
+      "block_response": "1/49152",
+      "partial_response": "1/65536",
+      "block_relative_source_squared": "1/32768",
+      "partial_K_residual_squared": "1/2",
+      "relative_map_HS_squared": "4295000065/9223372036854775808",
+      "exact_response_vector": [
+        "67108864/3",
+        "-131072/3"
+      ],
+      "authentic_weil_source": false
+    }
+  ],
+  "fixed_source_graph_stages": [
+    {
+      "source": "FIXED_SYNTHETIC_DIRECT_SUM",
+      "index": 1,
+      "observed_coordinates": 1,
+      "complete_block": false,
+      "R0": "4/9",
+      "Galerkin_response": "1/4",
+      "true_D_relative_residual_squared": "7/36",
+      "full_K_relative_residual_squared": "2/3",
+      "full_relative_source_squared": "2/3",
+      "compact_relative_map_HS_squared": "841/5355",
+      "coercivity_kappa": "1",
+      "exact_response_in_l2": false,
+      "low_A": "1/2",
+      "true_short": "1/18",
+      "upper_short": "1/4",
+      "sufficient_lower": "-5/12",
+      "authentic_weil_source": false
+    },
+    {
+      "source": "FIXED_SYNTHETIC_DIRECT_SUM",
+      "index": 1,
+      "observed_coordinates": 2,
+      "complete_block": true,
+      "R0": "4/9",
+      "Galerkin_response": "1/3",
+      "true_D_relative_residual_squared": "1/9",
+      "full_K_relative_residual_squared": "1/6",
+      "full_relative_source_squared": "2/3",
+      "compact_relative_map_HS_squared": "841/5355",
+      "coercivity_kappa": "1",
+      "exact_response_in_l2": false,
+      "low_A": "1/2",
+      "true_short": "1/18",
+      "upper_short": "1/6",
+      "sufficient_lower": "0",
+      "authentic_weil_source": false
+    },
+    {
+      "source": "FIXED_SYNTHETIC_DIRECT_SUM",
+      "index": 4,
+      "observed_coordinates": 7,
+      "complete_block": false,
+      "R0": "4/9",
+      "Galerkin_response": "113/256",
+      "true_D_relative_residual_squared": "7/2304",
+      "full_K_relative_residual_squared": "193/384",
+      "full_relative_source_squared": "2/3",
+      "compact_relative_map_HS_squared": "841/5355",
+      "coercivity_kappa": "1",
+      "exact_response_in_l2": false,
+      "low_A": "1/2",
+      "true_short": "1/18",
+      "upper_short": "15/256",
+      "sufficient_lower": "-341/768",
+      "authentic_weil_source": false
+    },
+    {
+      "source": "FIXED_SYNTHETIC_DIRECT_SUM",
+      "index": 4,
+      "observed_coordinates": 8,
+      "complete_block": true,
+      "R0": "4/9",
+      "Galerkin_response": "85/192",
+      "true_D_relative_residual_squared": "1/576",
+      "full_K_relative_residual_squared": "1/384",
+      "full_relative_source_squared": "2/3",
+      "compact_relative_map_HS_squared": "841/5355",
+      "coercivity_kappa": "1",
+      "exact_response_in_l2": false,
+      "low_A": "1/2",
+      "true_short": "1/18",
+      "upper_short": "11/192",
+      "sufficient_lower": "7/128",
+      "authentic_weil_source": false
+    },
+    {
+      "source": "FIXED_SYNTHETIC_DIRECT_SUM",
+      "index": 8,
+      "observed_coordinates": 15,
+      "complete_block": false,
+      "R0": "4/9",
+      "Galerkin_response": "87379/196608",
+      "true_D_relative_residual_squared": "7/589824",
+      "full_K_relative_residual_squared": "49153/98304",
+      "full_relative_source_squared": "2/3",
+      "compact_relative_map_HS_squared": "841/5355",
+      "coercivity_kappa": "1",
+      "exact_response_in_l2": false,
+      "low_A": "1/2",
+      "true_short": "1/18",
+      "upper_short": "10925/196608",
+      "sufficient_lower": "-29127/65536",
+      "authentic_weil_source": false
+    },
+    {
+      "source": "FIXED_SYNTHETIC_DIRECT_SUM",
+      "index": 8,
+      "observed_coordinates": 16,
+      "complete_block": true,
+      "R0": "4/9",
+      "Galerkin_response": "21845/49152",
+      "true_D_relative_residual_squared": "1/147456",
+      "full_K_relative_residual_squared": "1/98304",
+      "full_relative_source_squared": "2/3",
+      "compact_relative_map_HS_squared": "841/5355",
+      "coercivity_kappa": "1",
+      "exact_response_in_l2": false,
+      "low_A": "1/2",
+      "true_short": "1/18",
+      "upper_short": "2731/49152",
+      "sufficient_lower": "5461/98304",
+      "authentic_weil_source": false
+    }
+  ],
+  "clamped_range_gap": [
+    {
+      "source": "SYNTHETIC_CLAMPED_BIHARMONIC",
+      "f": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "high_u_equals_fourth_derivative": [
+        "0"
+      ],
+      "mean_second_derivative": "0",
+      "first_moment_second_derivative": "0",
+      "f_squared": "0",
+      "df_squared": "0",
+      "ddf_squared": "0",
+      "L_U": "0",
+      "K_relative_residual_squared": "1",
+      "A": "1/6",
+      "R0": "1/12",
+      "true_S0": "1/12",
+      "coercivity_kappa_used": "1",
+      "sufficient_lower": "-5/6",
+      "all_trial_lower_upper": "-4/5",
+      "authentic_weil_source": false
+    },
+    {
+      "source": "SYNTHETIC_CLAMPED_BIHARMONIC",
+      "f": [
+        "0",
+        "0",
+        "1/24",
+        "-1/12",
+        "1/24"
+      ],
+      "high_u_equals_fourth_derivative": [
+        "1"
+      ],
+      "mean_second_derivative": "0",
+      "first_moment_second_derivative": "0",
+      "f_squared": "1/362880",
+      "df_squared": "1/30240",
+      "ddf_squared": "1/720",
+      "L_U": "83/30240",
+      "K_relative_residual_squared": "721/720",
+      "A": "1/6",
+      "R0": "1/12",
+      "true_S0": "1/12",
+      "coercivity_kappa_used": "1",
+      "sufficient_lower": "-5065/6048",
+      "all_trial_lower_upper": "-4/5",
+      "authentic_weil_source": false
+    },
+    {
+      "source": "SYNTHETIC_CLAMPED_BIHARMONIC",
+      "f": [
+        "0",
+        "0",
+        "-1/5",
+        "2/5",
+        "-1/5"
+      ],
+      "high_u_equals_fourth_derivative": [
+        "-24/5"
+      ],
+      "mean_second_derivative": "0",
+      "first_moment_second_derivative": "0",
+      "f_squared": "1/15750",
+      "df_squared": "2/2625",
+      "ddf_squared": "4/125",
+      "L_U": "-37/2625",
+      "K_relative_residual_squared": "129/125",
+      "A": "1/6",
+      "R0": "1/12",
+      "true_S0": "1/12",
+      "coercivity_kappa_used": "1",
+      "sufficient_lower": "-4469/5250",
+      "all_trial_lower_upper": "-4/5",
+      "authentic_weil_source": false
+    }
+  ],
+  "conditional_Gamma_matrix_bound": {
+    "authority": "CONDITIONAL_EXACT_FINITE_BOUND",
+    "gamma_modes": 64,
+    "derivative_tail_L1_upper": "522/66049",
+    "epsilon": "1/10",
+    "upper": [
+      [
+        "48017147651/43624704010",
+        "0"
+      ],
+      [
+        "0",
+        "48032134271/21812352005"
+      ]
+    ],
+    "requires_independently_verified": [
+      "same original signed source and same trial columns",
+      "CJ bounds the whole-continuum projected derivative Gram for GJ",
+      "W bounds the L2 Gram of those trial columns"
+    ],
+    "source_identification_inferred_from_PSD": false,
+    "original_S0_sign": "OPEN",
+    "RH_PROVED": false
+  },
+  "original_four_low_S0_sign": "OPEN",
+  "RH_PROVED": false,
+  "full_suite_run": false,
+  "git_writes_performed_by_lane": false,
+  "focused_tests": {
+    "run": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "output": "test_compact_diagonal_tail_uses_first_omitted_coordinate (test_compact_galerkin.CompactProjectionControls) ... ok\ntest_constant_has_zero_derivative_and_zero_tail (test_compact_galerkin.CompactProjectionControls) ... ok\ntest_noncompact_identity_has_exact_unit_obstruction (test_compact_galerkin.CompactProjectionControls) ... ok\ntest_only_exact_valid_parameters_admitted (test_compact_galerkin.CompactProjectionControls) ... ok\ntest_weighted_legendre_sum_independently_integrates_mixed_modes (test_compact_galerkin.CompactProjectionControls) ... ok\ntest_weighted_legendre_tail_equality_on_first_omitted_mode (test_compact_galerkin.CompactProjectionControls) ... ok\ntest_wrong_first_omitted_eigenvalue_is_detected (test_compact_galerkin.CompactProjectionControls) ... ok\ntest_clamped_range_gap_survives_signed_and_higher_degree_trials (test_compact_galerkin.RangeGapAndGammaControls) ... ok\ntest_clamped_source_constant_and_exact_polynomial_controls (test_compact_galerkin.RangeGapAndGammaControls) ... ok\ntest_dirichlet_poisson_maximizer_is_not_a_clamped_trial (test_compact_galerkin.RangeGapAndGammaControls) ... ok\ntest_gamma_tail_controls_independent_finite_sum_and_exact_integral_tail (test_compact_galerkin.RangeGapAndGammaControls) ... ok\ntest_matrix_gram_upper_retains_cross_terms (test_compact_galerkin.RangeGapAndGammaControls) ... ok\ntest_wrong_gram_and_zero_epsilon_rejected (test_compact_galerkin.RangeGapAndGammaControls) ... ok\ntest_independent_two_by_two_algebra_confirms_every_block (test_compact_galerkin.RelativeGraphControls) ... ok\ntest_infinite_stage_formulas_match_independent_finite_sum_and_exact_tail (test_compact_galerkin.RelativeGraphControls) ... ok\ntest_negative_sufficient_lower_is_not_negative_original_short (test_compact_galerkin.RelativeGraphControls) ... ok\ntest_no_bool_or_float_alias_for_graph_family (test_compact_galerkin.RelativeGraphControls) ... ok\ntest_residual_failure_survives_compact_hilbert_schmidt_relative_map (test_compact_galerkin.RelativeGraphControls) ... ok\ntest_authentic_source_and_sharp_budget_replayed (test_compact_galerkin.SourceCompressionControls) ... ok\ntest_error_budget_decreases_and_keeps_gamma_tail_separate (test_compact_galerkin.SourceCompressionControls) ... ok\ntest_live_source_hashes_match_previous_round_receipt (test_compact_galerkin.SourceCompressionControls) ... ok\ntest_no_inverse_or_sign_promotion_from_compactness (test_compact_galerkin.SourceCompressionControls) ... ok\ntest_norm_small_perturbation_has_fixed_short_sign_change (test_compact_galerkin.ZeroShiftControls) ... ok\ntest_regularized_perturbation_bound_on_independent_scalar_models (test_compact_galerkin.ZeroShiftControls) ... ok\ntest_regularized_responses_converge_at_each_fixed_positive_shift (test_compact_galerkin.ZeroShiftControls) ... ok\n\n----------------------------------------------------------------------\nRan 25 tests in 0.094s\n\nOK\n"
+  },
+  "source_bytes_unchanged": true,
+  "own_bytes_unchanged": true,
+  "elapsed_seconds": 21.349292144877836
+}
