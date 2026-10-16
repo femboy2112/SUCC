@@ -1,0 +1,30 @@
+test_mod_four_gamma_filter_derivative_matches_real_gamma (test_observer_schur_source.DifferentSourceResponseTests.test_mod_four_gamma_filter_derivative_matches_real_gamma) ... ok
+test_mutated_channels_cannot_hide_behind_parity (test_observer_schur_source.DifferentSourceResponseTests.test_mutated_channels_cannot_hide_behind_parity) ... ok
+test_new_response_is_whole_source_and_not_a_sign_certificate (test_observer_schur_source.DifferentSourceResponseTests.test_new_response_is_whole_source_and_not_a_sign_certificate) ... FAIL
+test_wrong_basis_cannot_borrow_a_source_matrix (test_observer_schur_source.DifferentSourceResponseTests.test_wrong_basis_cannot_borrow_a_source_matrix) ... ok
+test_finite_positive_blocks_do_not_guarantee_positive_short (test_observer_schur_source.ExactParityAndResponseTests.test_finite_positive_blocks_do_not_guarantee_positive_short) ... ok
+test_threshold_basis_has_exact_Q_moments_and_parity (test_observer_schur_source.ExactParityAndResponseTests.test_threshold_basis_has_exact_Q_moments_and_parity) ... ok
+test_two_sector_test_needs_both_diagonals_and_determinant (test_observer_schur_source.ExactParityAndResponseTests.test_two_sector_test_needs_both_diagonals_and_determinant) ... ok
+test_all_coefficients_excluded_not_just_frozen_trials (test_observer_schur_source.ExactSourceAnsatzTests.test_all_coefficients_excluded_not_just_frozen_trials) ... ok
+test_exact_maximum_square_completion_for_complex_coefficients (test_observer_schur_source.ExactSourceAnsatzTests.test_exact_maximum_square_completion_for_complex_coefficients) ... ok
+test_gamma_extension_preserves_parent_intervals (test_observer_schur_source.ExactSourceAnsatzTests.test_gamma_extension_preserves_parent_intervals) ... ok
+test_independent_principal_minor_check_of_majorant (test_observer_schur_source.ExactSourceAnsatzTests.test_independent_principal_minor_check_of_majorant) ... ok
+test_inherited_kappa_also_excludes_family (test_observer_schur_source.ExactSourceAnsatzTests.test_inherited_kappa_also_excludes_family) ... ok
+test_insufficient_interval_budget_stays_unresolved (test_observer_schur_source.ExactSourceAnsatzTests.test_insufficient_interval_budget_stays_unresolved) ... ok
+test_interval_matrix_really_is_dominated_by_upper (test_observer_schur_source.ExactSourceAnsatzTests.test_interval_matrix_really_is_dominated_by_upper) ... ok
+test_proof_inputs_reject_bool_float_and_unsupported_budget (test_observer_schur_source.ExactSourceAnsatzTests.test_proof_inputs_reject_bool_float_and_unsupported_budget) ... ok
+test_source_kappa_ceiling_does_not_manufacture_no_go (test_observer_schur_source.ExactSourceAnsatzTests.test_source_kappa_ceiling_does_not_manufacture_no_go) ... ok
+
+======================================================================
+FAIL: test_new_response_is_whole_source_and_not_a_sign_certificate (test_observer_schur_source.DifferentSourceResponseTests.test_new_response_is_whole_source_and_not_a_sign_certificate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur/tests/test_observer_schur_source.py", line 140, in test_new_response_is_whole_source_and_not_a_sign_certificate
+    self.assertLess(np.max(abs(reference-self.grid['source_matrix'][:4, :4])), 2e-8)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: np.float64(2.2621687541777864e-07) not less than 2e-08
+
+----------------------------------------------------------------------
+Ran 16 tests in 28.045s
+
+FAILED (failures=1)
