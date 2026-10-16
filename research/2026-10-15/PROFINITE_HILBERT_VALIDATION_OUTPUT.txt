@@ -1,0 +1,95 @@
+$ /tmp/succ-proof-teeth-py310/bin/python -m unittest tests.test_profinite_hilbert -v
+test_character_labels_lift_and_wrong_label_is_detected (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_coherent_tower_and_incomparable_projection_intersection (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_compatible_evaluation_cone_has_unbounded_norm_witness_family (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_complex_sesquilinear_and_coefficient_field_survives_averaging (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_exact_multiplier_commutation_criterion_with_nonunit_positive_control (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_existing_prime_clocks_and_both_source_charts (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_fourier_inversion_parseval_and_wrong_sign_mutation (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_fourier_naturality_and_counting_normalization_bridge (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_global_nonunit_character_counterexample (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_haar_isometry_adjoint_and_counting_mutant (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_nonunit_pullback_still_intertwines_and_norm_fiber_identity (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_probe_boundaries_and_counterexamples (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_source_affine_offset_cannot_be_silently_dropped (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_source_and_exactness_guards (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_strong_vs_norm_and_noncofinal_tower_controls (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+test_translation_commutes_on_basis_and_has_correct_phase (tests.test_profinite_hilbert.ProfiniteHilbertTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.468s
+
+OK
+
+exit_code=0
+
+$ /tmp/succ-proof-teeth-py313/bin/python -m unittest tests.test_profinite_hilbert -v
+test_character_labels_lift_and_wrong_label_is_detected (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_character_labels_lift_and_wrong_label_is_detected) ... ok
+test_coherent_tower_and_incomparable_projection_intersection (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_coherent_tower_and_incomparable_projection_intersection) ... ok
+test_compatible_evaluation_cone_has_unbounded_norm_witness_family (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_compatible_evaluation_cone_has_unbounded_norm_witness_family) ... ok
+test_complex_sesquilinear_and_coefficient_field_survives_averaging (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_complex_sesquilinear_and_coefficient_field_survives_averaging) ... ok
+test_exact_multiplier_commutation_criterion_with_nonunit_positive_control (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_exact_multiplier_commutation_criterion_with_nonunit_positive_control) ... ok
+test_existing_prime_clocks_and_both_source_charts (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_existing_prime_clocks_and_both_source_charts) ... ok
+test_fourier_inversion_parseval_and_wrong_sign_mutation (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_fourier_inversion_parseval_and_wrong_sign_mutation) ... ok
+test_fourier_naturality_and_counting_normalization_bridge (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_fourier_naturality_and_counting_normalization_bridge) ... ok
+test_global_nonunit_character_counterexample (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_global_nonunit_character_counterexample) ... ok
+test_haar_isometry_adjoint_and_counting_mutant (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_haar_isometry_adjoint_and_counting_mutant) ... ok
+test_nonunit_pullback_still_intertwines_and_norm_fiber_identity (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_nonunit_pullback_still_intertwines_and_norm_fiber_identity) ... ok
+test_probe_boundaries_and_counterexamples (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_probe_boundaries_and_counterexamples) ... ok
+test_source_affine_offset_cannot_be_silently_dropped (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_source_affine_offset_cannot_be_silently_dropped) ... ok
+test_source_and_exactness_guards (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_source_and_exactness_guards) ... ok
+test_strong_vs_norm_and_noncofinal_tower_controls (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_strong_vs_norm_and_noncofinal_tower_controls) ... ok
+test_translation_commutes_on_basis_and_has_correct_phase (tests.test_profinite_hilbert.ProfiniteHilbertTests.test_translation_commutes_on_basis_and_has_correct_phase) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.238s
+
+OK
+
+exit_code=0
+
+$ python scripts/profinite_hilbert_probe.py --verify
+PROFINITE_HILBERT: exact finite receipt and source hashes verified
+
+exit_code=0
+
+$ /tmp/succ-proof-teeth-py310/bin/python scripts/profinite_hilbert_probe.py --verify
+PROFINITE_HILBERT: exact finite receipt and source hashes verified
+
+exit_code=0
+
+$ /tmp/succ-proof-teeth-py313/bin/python scripts/profinite_hilbert_probe.py --verify
+PROFINITE_HILBERT: exact finite receipt and source hashes verified
+
+exit_code=0
+
+$ python scripts/verify_provenance.py
+{
+  "byte_identical_research_archives": 17,
+  "establishes_mathematical_truth": false,
+  "items": 72,
+  "mechanical_namespace_migrations": 55,
+  "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+  "status": "SOURCE_PROVENANCE_VERIFIED"
+}
+
+exit_code=0
+
+$ python --version
+/tmp/succ-proof-teeth-py310/bin/python --version
+/tmp/succ-proof-teeth-py313/bin/python --version
+Python 3.12.3
+Python 3.10.20
+Python 3.13.13
+
+exit_code=0
+
+$ git status --short -- observational_succ/profinite_hilbert.py tests/test_profinite_hilbert.py scripts/profinite_hilbert_probe.py research/2026-10-15/PROFINITE_HILBERT_RECONSTRUCTION.md research/2026-10-15/PROFINITE_HILBERT_RECEIPT.json
+git diff --stat -- observational_succ/classical_haar_clock.py observational_succ/dynamic_fourier_tower.py observational_succ/pontryagin_source_duality.py observational_succ/finite_quotient_retract.py provenance
+?? observational_succ/profinite_hilbert.py
+?? research/2026-10-15/PROFINITE_HILBERT_RECEIPT.json
+?? research/2026-10-15/PROFINITE_HILBERT_RECONSTRUCTION.md
+?? scripts/profinite_hilbert_probe.py
+?? tests/test_profinite_hilbert.py
+
+exit_code=0
