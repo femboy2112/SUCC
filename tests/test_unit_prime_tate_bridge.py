@@ -88,13 +88,47 @@ class TateBridgeTests(unittest.TestCase):
         self.assertGreater(r["completed_log_norm_variance_interval"].lo,0)
         self.assertTrue(r["completed_log_derivative_interval"].lo <
                         r["completed_log_derivative_interval"].hi)
+        # The polar correction 1/s+1/(s-1) at s=2 is exactly 3/2; the exact entire-xi
+        # identity must hold on BOTH endpoints (exact rational translation, no rounding).
         self.assertEqual(r["entire_xi_log_derivative_interval"].lo,
                          r["completed_log_derivative_interval"].lo+Q(3,2))
+        self.assertEqual(r["entire_xi_log_derivative_interval"].hi,
+                         r["completed_log_derivative_interval"].hi+Q(3,2))
         # The independent classical Basel identity gives Lambda(2)=pi/6.
         expected=pi_iv()/6
         self.assertLessEqual(r["completed_Lambda_interval"].lo,expected.hi)
         self.assertGreaterEqual(r["completed_Lambda_interval"].hi,expected.lo)
         self.assertFalse(r["RH_proved"])
+
+    def test_xi_shift_is_exact_rational_translation_not_outward_rounded(self):
+        """Hostile rounding regression for the completed->entire xi log-derivative shift.
+
+        xi'/xi(s) = Lambda'/Lambda(s) + 1/s + 1/(s-1) is an exact identity; the polar
+        correction is an exact rational, so the entire-xi interval must be the completed
+        interval translated by that exact rational -- both endpoints exact and the width
+        preserved. A prior implementation routed the correction through the engine's
+        outward-rounding addition, which floors the (off-grid, prime-denominator) lower
+        endpoint below the exact value by up to one 1/SCALE grid unit. This guards
+        against any reintroduction of that lossy path and pins the rounding budget.
+        """
+        grid=Q(1,10**32)
+        for P,beta in ((11,2),(5,2),(3,4),(7,6)):
+            with self.subTest(P=P,beta=beta):
+                r=completed_tate_clock(self.src,P,beta)
+                logder=r["completed_log_derivative_interval"]
+                xi=r["entire_xi_log_derivative_interval"]
+                c=Q(1,beta)+Q(1,beta-1)
+                # Exact identity on BOTH endpoints, width preserved exactly.
+                self.assertEqual(xi.lo,logder.lo+c)
+                self.assertEqual(xi.hi,logder.hi+c)
+                self.assertEqual(xi.hi-xi.lo,logder.hi-logder.lo)
+                # The lossy sequential-add enclosure is a valid superset whose endpoints
+                # sit outside the exact ones by strictly less than one grid unit.
+                lossy=logder+c
+                self.assertLessEqual(lossy.lo,xi.lo)
+                self.assertLess(xi.lo-lossy.lo,grid)
+                self.assertGreaterEqual(lossy.hi,xi.hi)
+                self.assertLess(lossy.hi-xi.hi,grid)
 
     def test_scaled_real_gaussian_does_not_preserve_canonical_completion(self):
         for beta in (2,4,6):

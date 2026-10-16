@@ -219,7 +219,14 @@ def completed_tate_clock(source, P: int, beta: int) -> dict:
     a=arch["arch_mean_log_abs"]
     c0,c1=prime_curr["full_prime_current_interval"]
     logder=I(a.lo-c1,a.hi-c0)
-    xi_logder=logder+Q(1,beta)+Q(1,beta-1)
+    # xi'/xi(s) = Lambda'/Lambda(s) + 1/s + 1/(s-1) is an EXACT identity and its
+    # polar correction is an exact rational. Translating a rational interval by an
+    # exact rational is lossless, so construct the shifted endpoints directly (as
+    # logder itself is built, one line above) rather than through the engine's
+    # outward-rounding __add__, which otherwise floors the off-grid lower endpoint
+    # down by up to one 1/SCALE grid unit and breaks the exact completion identity.
+    xi_polar_correction=Q(1,beta)+Q(1,beta-1)
+    xi_logder=I(logder.lo+xi_polar_correction,logder.hi+xi_polar_correction)
     av=arch["arch_variance_log_abs"]
     pv=prime_curr["full_prime_variance_interval"]
     total_variance=I(av.lo+pv[0],av.hi+pv[1]) if pv is not None else None
