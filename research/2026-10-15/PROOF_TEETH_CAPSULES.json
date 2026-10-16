@@ -1,0 +1,442 @@
+[
+  {
+    "access": {
+      "constructible_witness": "Integer difference and unique extension",
+      "execution_cost": "Finite symbolic proof; executable resource limits stated in modules",
+      "oracle": "None supplied; arbitrary global inputs are not finite programs",
+      "permitted_observations": "Exact natural pair (a,b)",
+      "probe_discrimination": "N itself is not a group; -1 outside unit image",
+      "proof_theory": "Classical mathematics with the listed imports and hypotheses"
+    },
+    "adversarial": {
+      "domain_tests": "See exact assumptions and linked tests; source tags are declarations",
+      "negative_examples": "N itself is not a group; -1 outside unit image",
+      "replay": "Read PT-G01 proof; python -m unittest discover -s tests -p 'test_edge_carrier_reconstruction.py'",
+      "source_mutations": "Epoch/identity mismatch refused; canonical source bytes retained"
+    },
+    "authority": "PAPER_PROVED",
+    "claim_id": "PT-G01",
+    "comparison_maps": "[(a,b)] maps to a-b",
+    "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+    "dependencies": [],
+    "evidence": [
+      {
+        "kind": "PAPER_PROOF",
+        "path": "research/2026-10-15/SOURCE_PROOF_CERTIFICATE_SPEC.md",
+        "sha256": "3d2e0e76a34f991df47a22ddb05462cbe0b9dd00342c574390dfdcf3ca3fd5f3"
+      },
+      {
+        "kind": "SOURCE_CODE",
+        "path": "observational_succ/edge_carrier_reconstruction.py",
+        "sha256": "4d53d5f9cbc4d6b85cf9f5690ec16cd2d891dd5eecb369c5cfaa3d6ab5580917"
+      }
+    ],
+    "hypotheses": [
+      "Target is an abelian group"
+    ],
+    "observation_morphisms": "Exact natural pair (a,b)",
+    "operations_relations": "Pair differences and cancellation",
+    "scope": "UNIVERSAL",
+    "source": "Natural additive monoid",
+    "source_epoch": 0,
+    "source_identity": "Declared mathematical source: Natural additive monoid",
+    "statement": "Gr(N,+) is isomorphic to (Z,+); the unit is proper and injective",
+    "target_carrier": "Integer additive group",
+    "topology_measure": "Discrete; no analytic completion",
+    "universal_property": "Unique extension of monoid homomorphisms to abelian groups"
+  },
+  {
+    "access": {
+      "constructible_witness": "Exact finite cyclotomic operations",
+      "execution_cost": "Finite symbolic proof; executable resource limits stated in modules",
+      "oracle": "None supplied; arbitrary global inputs are not finite programs",
+      "permitted_observations": "All residues of each declared finite carrier",
+      "probe_discrimination": "Wrong average, phase or root embedding fails; nontrivial E is not an invertible route",
+      "proof_theory": "Classical mathematics with the listed imports and hypotheses"
+    },
+    "adversarial": {
+      "domain_tests": "See exact assumptions and linked tests; source tags are declarations",
+      "negative_examples": "Wrong average, phase or root embedding fails; nontrivial E is not an invertible route",
+      "replay": "python -m unittest discover -s tests -p 'test_profinite_hilbert.py'; python scripts/profinite_hilbert_probe.py",
+      "source_mutations": "Epoch/identity mismatch refused; canonical source bytes retained"
+    },
+    "authority": "PAPER_PROVED",
+    "claim_id": "PH-01",
+    "comparison_maps": "q(x)=x mod n; dual injection a->(m/n)a; canonical cyclotomic embedding",
+    "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+    "dependencies": [],
+    "evidence": [
+      {
+        "kind": "PAPER_PROOF",
+        "path": "research/2026-10-15/PROFINITE_HILBERT_RECONSTRUCTION.md",
+        "sha256": "477c480551e8f7ff64c34e506fd5a5631a285ae2b13e72d540df2450d949b312"
+      },
+      {
+        "kind": "SOURCE_CODE",
+        "path": "observational_succ/profinite_hilbert.py",
+        "sha256": "c008a627f645f8f24bdf68b4edc34ab4d3a8242e53e4e3db4680505efbab4a56"
+      },
+      {
+        "kind": "NEGATIVE_CONTROLS",
+        "path": "tests/test_profinite_hilbert.py",
+        "sha256": "b8775f99447c700d9ba796595cdc374aa54d3bd0a378435c6c9a0171246b3a74"
+      }
+    ],
+    "hypotheses": [
+      "Positive integer moduli",
+      "Common source/epoch",
+      "One declared Fourier sign"
+    ],
+    "observation_morphisms": "All residues of each declared finite carrier",
+    "operations_relations": "Pullback, normalized average, adjoint, Fourier transform",
+    "scope": "UNIVERSAL",
+    "source": "Uniform probability cyclic carriers Z/n with n dividing m",
+    "source_epoch": 0,
+    "source_identity": "Declared mathematical source: Uniform probability cyclic carriers Z/n with n dividing m",
+    "statement": "Normalized quotient pullback is isometric, its adjoint averages fibers, AU=I and E=UA is orthogonal; normalized Fourier refines without a fiber-size factor",
+    "target_carrier": "Finite Hilbert spaces and character coordinates",
+    "topology_measure": "Normalized Haar 1/n on carrier; counting measure on frequencies",
+    "universal_property": "Isometric compatible inclusion and split orthogonal projection"
+  },
+  {
+    "access": {
+      "constructible_witness": "Finite cylinder algorithms and an analytic completion theorem",
+      "execution_cost": "Finite symbolic proof; executable resource limits stated in modules",
+      "oracle": "None supplied; arbitrary global inputs are not finite programs",
+      "permitted_observations": "Cylinder residues; each character has finite conductor",
+      "probe_discrimination": "Character 1/(2 k!) is invisible at level k!; a fixed prime tower is not cofinal",
+      "proof_theory": "Classical mathematics with the listed imports and hypotheses"
+    },
+    "adversarial": {
+      "domain_tests": "See exact assumptions and linked tests; source tags are declarations",
+      "negative_examples": "Character 1/(2 k!) is invisible at level k!; a fixed prime tower is not cofinal",
+      "replay": "Read PH density/universal-property proof; python scripts/profinite_hilbert_probe.py",
+      "source_mutations": "Epoch/identity mismatch refused; canonical source bytes retained"
+    },
+    "authority": "PAPER_PROVED",
+    "claim_id": "PH-GLOBAL",
+    "comparison_maps": "Jn f=f composed with residue projection; Fourier labels a/n mod 1",
+    "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+    "dependencies": [
+      "PH-01"
+    ],
+    "evidence": [
+      {
+        "kind": "PAPER_PROOF",
+        "path": "research/2026-10-15/PROFINITE_HILBERT_RECONSTRUCTION.md",
+        "sha256": "477c480551e8f7ff64c34e506fd5a5631a285ae2b13e72d540df2450d949b312"
+      },
+      {
+        "kind": "SOURCE_CODE",
+        "path": "observational_succ/profinite_hilbert.py",
+        "sha256": "c008a627f645f8f24bdf68b4edc34ab4d3a8242e53e4e3db4680505efbab4a56"
+      }
+    ],
+    "hypotheses": [
+      "Classical regular Haar existence",
+      "Density of continuous functions in L2 for regular finite measure",
+      "Hilbert completion theorem"
+    ],
+    "observation_morphisms": "Cylinder residues; each character has finite conductor",
+    "operations_relations": "Isometric direct limit, Haar integration, Fourier completion",
+    "scope": "UNIVERSAL",
+    "source": "Profinite integers with compatible residue quotients",
+    "source_epoch": 0,
+    "source_identity": "Declared mathematical source: Profinite integers with compatible residue quotients",
+    "statement": "Hilbert completion of the cyclic Haar direct limit is L2(Zhat), unitarily ell2(Q/Z); factorial projections converge strongly and ||I-Pk||=1",
+    "target_carrier": "Complete L2(Zhat) and ell2(Q/Z)",
+    "topology_measure": "Compact profinite topology and regular probability Haar; Hilbert norm completion",
+    "universal_property": "Unique bounded extension of uniformly bounded compatible linear maps into a Hilbert space"
+  },
+  {
+    "access": {
+      "constructible_witness": "For odd n use (0,n); for n=2 mod4 use (1,n+1)",
+      "execution_cost": "Finite symbolic proof; executable resource limits stated in modules",
+      "oracle": "None supplied; arbitrary global inputs are not finite programs",
+      "permitted_observations": "x mod n",
+      "probe_discrimination": "chi4(2)=0 but the local Hecke chi2(2)=1",
+      "proof_theory": "Classical mathematics with the listed imports and hypotheses"
+    },
+    "adversarial": {
+      "domain_tests": "See exact assumptions and linked tests; source tags are declarations",
+      "negative_examples": "chi4(2)=0 but the local Hecke chi2(2)=1",
+      "replay": "python scripts/minimal_observation_probe.py; python -m unittest discover -s tests -p 'test_minimal_observation.py'",
+      "source_mutations": "Epoch/identity mismatch refused; canonical source bytes retained"
+    },
+    "authority": "PAPER_PROVED",
+    "claim_id": "PT-C02",
+    "comparison_maps": "Decoder r->chi4(r mod 4)",
+    "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+    "dependencies": [],
+    "evidence": [
+      {
+        "kind": "PAPER_PROOF",
+        "path": "research/2026-10-15/MINIMAL_OBSERVATION_CARRIER_THEOREMS.md",
+        "sha256": "939688b57602388f354bf4ba8d9cd1b004306f42ac0fd9d75eede017b67e508b"
+      },
+      {
+        "kind": "SOURCE_CODE",
+        "path": "observational_succ/tate_chi4.py",
+        "sha256": "9e2d96dea08728a5510cd9b8ce05acc98d549022b3ada265204560ab8fe62835"
+      },
+      {
+        "kind": "SOURCE_CODE",
+        "path": "observational_succ/minimal_observation.py",
+        "sha256": "0c429dd4087d9be774e26dd0c5b975b20707aaba122d0b436a6353310950ef80"
+      }
+    ],
+    "hypotheses": [
+      "n is a positive integer",
+      "Target is zero-extended integer chi4, not chi2 on Q2*"
+    ],
+    "observation_morphisms": "x mod n",
+    "operations_relations": "Integer residue and primitive character table",
+    "scope": "UNIVERSAL",
+    "source": "Authentic periodic chi4 integer character",
+    "source_epoch": 0,
+    "source_identity": "Declared mathematical source: Authentic periodic chi4 integer character",
+    "statement": "For every n>=1, chi4:Z->Z factors through residue modulo n iff 4 divides n",
+    "target_carrier": "Reachable residue decoder or collision pair",
+    "topology_measure": "Discrete integer/residue topology",
+    "universal_property": "Least sufficient modulus in divisibility order is 4"
+  },
+  {
+    "access": {
+      "constructible_witness": "Finite quotient computation exists; additive representative selection does not",
+      "execution_cost": "Finite symbolic proof; executable resource limits stated in modules",
+      "oracle": "None supplied; arbitrary global inputs are not finite programs",
+      "permitted_observations": "Finite support of presented nonintegral local principal parts",
+      "probe_discrimination": "Any torsion-to-torsion-free homomorphism is zero; carry breaks a set-theoretic lift",
+      "proof_theory": "Classical mathematics with the listed imports and hypotheses"
+    },
+    "adversarial": {
+      "domain_tests": "See exact assumptions and linked tests; source tags are declarations",
+      "negative_examples": "Any torsion-to-torsion-free homomorphism is zero; carry breaks a set-theoretic lift",
+      "replay": "Read nonsplitting proof; python -m unittest discover -s tests -p 'test_proof_gluing.py'",
+      "source_mutations": "Epoch/identity mismatch refused; canonical source bytes retained"
+    },
+    "authority": "PAPER_PROVED",
+    "claim_id": "PT-ADELE-NONSPLIT",
+    "comparison_maps": "Principal parts; rational diagonal representatives",
+    "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+    "dependencies": [],
+    "evidence": [
+      {
+        "kind": "PAPER_PROOF",
+        "path": "research/2026-10-15/SOURCE_GLUING_PROOF_TEETH.md",
+        "sha256": "423006684176064adc8ec5204a05ef05c1fadbca18e41f2d6a2d6f26b20dfa86"
+      },
+      {
+        "kind": "SOURCE_CODE",
+        "path": "observational_succ/tate_adele_quotient_descent.py",
+        "sha256": "3ec27299a4022fa359b699fd6337924bef8936a59194b0c45ecae38041a14555"
+      }
+    ],
+    "hypotheses": [
+      "Each Qp has characteristic zero",
+      "Q/Z is nonzero torsion"
+    ],
+    "observation_morphisms": "Finite support of presented nonintegral local principal parts",
+    "operations_relations": "Quotient and principal parts",
+    "scope": "UNIVERSAL",
+    "source": "Finite rational adeles",
+    "source_epoch": 0,
+    "source_identity": "Declared mathematical source: Finite rational adeles",
+    "statement": "A_f/Zhat is Q/Z but its quotient has no additive group section",
+    "target_carrier": "Q/Z quotient and additive-section obstruction",
+    "topology_measure": "Restricted product; discrete quotient",
+    "universal_property": "Additive quotient universal property; no split extension"
+  },
+  {
+    "access": {
+      "constructible_witness": "No universal witness supplied by finite matrix testing",
+      "execution_cost": "Finite symbolic proof; executable resource limits stated in modules",
+      "oracle": "None supplied; arbitrary global inputs are not finite programs",
+      "permitted_observations": "All stages, not a finite prefix",
+      "probe_discrimination": "A negative direction can lie beyond every tested prefix",
+      "proof_theory": "Classical mathematics with the listed imports and hypotheses"
+    },
+    "adversarial": {
+      "domain_tests": "See exact assumptions and linked tests; source tags are declarations",
+      "negative_examples": "A negative direction can lie beyond every tested prefix",
+      "replay": "Inspect the actual all-stage proof if supplied; finite replay cannot discharge this node",
+      "source_mutations": "Epoch/identity mismatch refused; canonical source bytes retained"
+    },
+    "authority": "UNVERIFIED",
+    "claim_id": "PT-ALL-COMPRESSIONS",
+    "comparison_maps": "Pn A Pn on one common source",
+    "conclusion_mode": "OPEN_TARGET",
+    "dependencies": [],
+    "evidence": [
+      {
+        "kind": "OPEN_PREMISE_DOSSIER",
+        "path": "research/2026-10-15/SOURCE_GLUING_PROOF_TEETH.md",
+        "sha256": "423006684176064adc8ec5204a05ef05c1fadbca18e41f2d6a2d6f26b20dfa86"
+      }
+    ],
+    "hypotheses": [
+      "One source operator",
+      "All n quantified"
+    ],
+    "observation_morphisms": "All stages, not a finite prefix",
+    "operations_relations": "Orthogonal compression",
+    "scope": "UNIVERSAL",
+    "source": "An arbitrary specified bounded self-adjoint Hilbert operator A",
+    "source_epoch": 0,
+    "source_identity": "Declared mathematical source: An arbitrary specified bounded self-adjoint Hilbert operator A",
+    "statement": "Every compression of one specified bounded self-adjoint A along the entire dense chain is positive",
+    "target_carrier": "Universal positivity premise",
+    "topology_measure": "Hilbert norm topology",
+    "universal_property": "Premise to be supplied independently"
+  },
+  {
+    "access": {
+      "constructible_witness": "A conditional mathematical proof; no source-specific A positivity inferred",
+      "execution_cost": "Finite symbolic proof; executable resource limits stated in modules",
+      "oracle": "None supplied; arbitrary global inputs are not finite programs",
+      "permitted_observations": "Complete increasing dense projector chain",
+      "probe_discrimination": "Missing density, unbounded/discontinuous form, different source operators or a finite prefix invalidate inference",
+      "proof_theory": "Classical mathematics with the listed imports and hypotheses"
+    },
+    "adversarial": {
+      "domain_tests": "See exact assumptions and linked tests; source tags are declarations",
+      "negative_examples": "Missing density, unbounded/discontinuous form, different source operators or a finite prefix invalidate inference",
+      "replay": "Read dense-positivity proof; python -m unittest discover -s tests -p 'test_proof_gluing.py'",
+      "source_mutations": "Epoch/identity mismatch refused; canonical source bytes retained"
+    },
+    "authority": "PAPER_PROVED",
+    "claim_id": "PT-DENSE-POSITIVITY",
+    "comparison_maps": "<Pn x,A Pn x> tends to <x,A x>",
+    "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+    "dependencies": [
+      "PT-ALL-COMPRESSIONS"
+    ],
+    "evidence": [
+      {
+        "kind": "PAPER_PROOF",
+        "path": "research/2026-10-15/SOURCE_GLUING_PROOF_TEETH.md",
+        "sha256": "423006684176064adc8ec5204a05ef05c1fadbca18e41f2d6a2d6f26b20dfa86"
+      },
+      {
+        "kind": "SOURCE_CODE",
+        "path": "observational_succ/proof_gluing.py",
+        "sha256": "8c191ee1c20f3790c5a7eb83ee3340a2f2fb6b7a00dcf392a928e02a006d34ab"
+      }
+    ],
+    "hypotheses": [
+      "A is bounded and self-adjoint",
+      "Pn converge strongly to I",
+      "ASSUME:PT-ALL-COMPRESSIONS"
+    ],
+    "observation_morphisms": "Complete increasing dense projector chain",
+    "operations_relations": "Compatible orthogonal compression and norm continuity",
+    "scope": "UNIVERSAL",
+    "source": "One bounded self-adjoint operator on one Hilbert space",
+    "source_epoch": 0,
+    "source_identity": "Declared mathematical source: One bounded self-adjoint operator on one Hilbert space",
+    "statement": "For bounded self-adjoint A and Pn->I strongly, positivity of EVERY Pn A Pn implies A>=0",
+    "target_carrier": "Global quadratic-form nonnegativity",
+    "topology_measure": "Hilbert norm; bounded operator norm",
+    "universal_property": "Continuous extension from a dense subspace"
+  },
+  {
+    "access": {
+      "constructible_witness": "Finite trial responses and rigorous partial bounds; sign certificate absent",
+      "execution_cost": "Finite symbolic proof; executable resource limits stated in modules",
+      "oracle": "None supplied; arbitrary global inputs are not finite programs",
+      "permitted_observations": "True prime2, real Gamma, both poles, contact and full high response",
+      "probe_discrimination": "Positive A need not give positive A-R0; wrong Gamma/poles and fake composite are refused; auxiliary positive corrections change the form",
+      "proof_theory": "Classical mathematics with the listed imports and hypotheses"
+    },
+    "adversarial": {
+      "domain_tests": "See exact assumptions and linked tests; source tags are declarations",
+      "negative_examples": "Positive A need not give positive A-R0; wrong Gamma/poles and fake composite are refused; auxiliary positive corrections change the form",
+      "replay": "Read signed-Schur dossier; python scripts/four_low_schur_proof_teeth_probe.py; RH PROVED: NO",
+      "source_mutations": "Epoch/identity mismatch refused; canonical source bytes retained"
+    },
+    "authority": "UNVERIFIED",
+    "claim_id": "PT-SCHUR-OPEN",
+    "comparison_maps": "Source mixed derivative identity and actual low/high Legendre projection",
+    "conclusion_mode": "OPEN_TARGET",
+    "dependencies": [],
+    "evidence": [
+      {
+        "kind": "OPEN_PROBLEM_AND_BOUND",
+        "path": "research/2026-10-15/FOUR_LOW_SCHUR_CROSSPOLLINATION.md",
+        "sha256": "bf4da5742bb8b8430bc28f87cfdd8772fbb983bc0f44fc114369679f6baaf302"
+      },
+      {
+        "kind": "INHERITED_PROOF",
+        "path": "research/2026-10-15/TATE_WEIGHTED_BESSEL_FOUR_SCHUR.md",
+        "sha256": "491ab6fd5ff6a026b02eaafc01cb3ae62b44f6c8df6c76c79dba3a89c57cefaf"
+      },
+      {
+        "kind": "SOURCE_CODE",
+        "path": "observational_succ/four_low_schur_proof_teeth.py",
+        "sha256": "a2c3357b2307abae4d828f3e8da4beeb1d35f3925d454c1d523f48d918d1d121"
+      }
+    ],
+    "hypotheses": [
+      "Source authentication and all analytic domains",
+      "High coercivity does not settle the low sign"
+    ],
+    "observation_morphisms": "True prime2, real Gamma, both poles, contact and full high response",
+    "operations_relations": "Signed block decomposition, reflection, Douglas range and zero-shift limit",
+    "scope": "UNIVERSAL",
+    "source": "Pinned completed zeta Suzuki source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "source_epoch": 0,
+    "source_identity": "Declared mathematical source: Pinned completed zeta Suzuki source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "statement": "At a=1/2, the genuine completed Suzuki four-low Schur form S0=Ainf-R0 is nonnegative",
+    "target_carrier": "Original unmodified low Schur sign",
+    "topology_measure": "Mean-zero L2(-1/2,1/2), K=V*V, H1 range controls",
+    "universal_property": "Variational shorting, not a bounded inverse of compact D at zero"
+  },
+  {
+    "access": {
+      "constructible_witness": "Exact rational separation and smooth sensitivity witness for admitted finite budgets",
+      "execution_cost": "Finite symbolic proof; executable resource limits stated in modules",
+      "oracle": "None supplied; arbitrary global inputs are not finite programs",
+      "permitted_observations": "Coefficients at prime powers q with log(q)<2a",
+      "probe_discrimination": "Endpoints and outside atoms invisible; fake composite6 excluded; uncertain log comparisons remain unresolved",
+      "proof_theory": "Classical mathematics with the listed imports and hypotheses"
+    },
+    "adversarial": {
+      "domain_tests": "See exact assumptions and linked tests; source tags are declarations",
+      "negative_examples": "Endpoints and outside atoms invisible; fake composite6 excluded; uncertain log comparisons remain unresolved",
+      "replay": "python scripts/minimal_observation_probe.py; inspect PT-C05 support proof",
+      "source_mutations": "Epoch/identity mismatch refused; canonical source bytes retained"
+    },
+    "authority": "PAPER_PROVED",
+    "claim_id": "PT-C05",
+    "comparison_maps": "f=eta(t+log(q)/2)+eta(t-log(q)/2) isolates the q coordinate",
+    "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+    "dependencies": [],
+    "evidence": [
+      {
+        "kind": "PAPER_PROOF",
+        "path": "research/2026-10-15/MINIMAL_OBSERVATION_CARRIER_THEOREMS.md",
+        "sha256": "939688b57602388f354bf4ba8d9cd1b004306f42ac0fd9d75eede017b67e508b"
+      },
+      {
+        "kind": "SOURCE_CODE",
+        "path": "observational_succ/minimal_weil_window.py",
+        "sha256": "5b3599fbd66473a4f2a91e8915ff04d155f2f2cf15012c9b3d41ca38ee24ead0"
+      }
+    ],
+    "hypotheses": [
+      "a>0",
+      "Independent tape mutations are allowed",
+      "Mutants are not asserted to be genuine zeta sources"
+    ],
+    "observation_morphisms": "Coefficients at prime powers q with log(q)<2a",
+    "operations_relations": "Support restriction and smooth two-bump autocorrelation",
+    "scope": "UNIVERSAL",
+    "source": "Independently mutable real paired coefficients at genuine prime powers",
+    "source_epoch": 0,
+    "source_identity": "Declared mathematical source: Independently mutable real paired coefficients at genuine prime powers",
+    "statement": "The arithmetic functional on all autocorrelations in (-a,a) has coarsest sufficient tape restriction to log(q)<2a",
+    "target_carrier": "Arithmetic Weil functional on smooth autocorrelations",
+    "topology_measure": "Cc-infinity tests, ordinary convolution, fixed Gamma/contact/poles",
+    "universal_property": "Two tapes give the same full target functional iff their active coordinates agree"
+  }
+]
