@@ -6,6 +6,11 @@ The [Observer–Schur Round II supplement](CLAIM_SUPPLEMENT_OBSERVER_SCHUR.md)
 records the new conditional envelope, compactness, source-method obstruction and
 formal-instance claims. It preserves the original signed four-low target as OPEN.
 
+The [Arithmetic Resonance supplement](CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md)
+records source wavefront geometry, the conditional dense high-response theorem,
+the failure of a bounded upper K-comparison, and tighter authentic Schur brackets.
+Its formal finite identities do not discharge its infinite spectral-tail debt.
+
 Use these labels:
 
 - **CLASSICAL** — previously established mathematical theorem, attributed and cited.

@@ -117,3 +117,42 @@ sufficient criterion by a rational interval matrix proof. This is a failed
 method edge, not negative original-source sign. The clamped-biharmonic example
 shows that even every trial can fail such a conservative method for a genuinely
 positive synthetic form. Neither counterexample is substituted for Suzuki.
+
+## Arithmetic Resonance
+
+The [Arithmetic Resonance supplement](CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md)
+adds the following source-sensitive arrows. Here P means paper proof under the
+written hypotheses, X means exact finite/interval computation, U means open.
+
+```text
+Authentic g' + real Gamma tower + poles/contact/prime2
+  --Carleman exterior bound + endpoint distribution exclusion [P]-->
+       maximal distributional annihilator lies in logarithmic form domain
+  --moment-preserving form core + inherited D>=kappa K [P]-->
+       ker R_Q*=0, closure Ran R_Q=M
+  --compactness of authentic g' response [P]-->
+       dense nonclosed range, no bounded right inverse on all M
+  --quantified approximation of the four targets [U]-->
+       useful K-relative residual certificate [U]
+
+Same source Gamma multiplier
+  --moment-corrected high-frequency modulation [P]-->
+       D<=C K impossible for every finite C
+
+Source square-root range
+  --spectral theorem [P]--> finite matrix inverse-response measure
+  --stronger fractional range / effective weak-spectrum mass [U]-->
+       computable positive-shift-to-zero gap [U]
+  --finite nonnegative spectral moments alone [REFUTED]-->
+       no general inverse-response cap
+
+Frozen degree20 source response + full Gamma tail [X,P]--> improved S0 upper
+Low derivative cell bounds + full derivative tail + kappa [X,P]--> improved S0 lower
+Both bounds --> unresolved sign (not positivity)
+```
+
+The dense-range theorem removes a qualitative obstruction for this source. It
+does not give attainable response, a convergent energy-Galerkin method, a rate,
+or a positive Schur lower certificate. The inherited synthetic counterexamples
+retain their original domains. Cross-radius norm continuity and exact low blocks
+past prime3 and prime-square4 do not carry first-window coercivity to those radii.

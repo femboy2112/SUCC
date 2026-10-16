@@ -1,5 +1,7 @@
 # Claim Index
 
+Latest research: [Arithmetic Resonance claim supplement](CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md), with source-specific range and two-sided Schur bounds; original sign OPEN.
+
 A concise entry point into the full claim record. Nothing here replaces or deletes a historical
 entry; this index **points** into the ledger and the per-feature supplements, and records the few
 visible current-status corrections. Status vocabulary follows [AGENTS.md](../AGENTS.md):
