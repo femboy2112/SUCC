@@ -1,0 +1,669 @@
+{
+  "packet": {
+    "schema": "SUCC_SPECTRAL_RESPONSE_TAIL_v1",
+    "source": {
+      "git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+      "sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+      "radius": "1/2",
+      "active_prime_powers": [
+        [
+          2,
+          2
+        ]
+      ],
+      "carrier": "L2_0((-1/2,1/2),Lebesgue)",
+      "low_modes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "high_modes": "Legendre>=5",
+      "coordinate_metric": [
+        "1/3",
+        "1/5",
+        "1/7",
+        "1/9"
+      ],
+      "signed_channels": [
+        "real_Gamma_all_modes",
+        "pole_cosh",
+        "pole_sinh",
+        "contact_real_Gamma",
+        "genuine_prime_power_half_density"
+      ],
+      "source_epoch": "PR85:dc6b7e3adbfb67c2913c145a4efb95fe3d50b1bc"
+    },
+    "spectral_measure": "mu(E)=B 1_E(D) B*",
+    "spectral_domain": "(0,||D||]; inverse powers on actual ranges only",
+    "estimate": null,
+    "estimate_status": "UNVERIFIED_SOURCE_PREMISE",
+    "proof_authority": "PAPER_PROVED_CONDITIONAL_IMPLICATION_ONLY",
+    "outstanding_obligations": [
+      "SOURCE_MODEL_IDENTIFICATION",
+      "SOURCE_SPECTRAL_TAIL_RATE",
+      "ZERO_SHIFT_REGULARIZATION_GAP"
+    ],
+    "source_sign": "OPEN",
+    "global_conclusion": null,
+    "source_lower_matrix": null,
+    "source_upper_matrix": null,
+    "analytic_error_budgets": {
+      "spatial_compression": "CG-SOURCE:11/[40(N+1)]",
+      "Gamma_operator_tail": "2/(4J+1)^2+16/(4J+1)^3",
+      "Gamma_derivative_tail": "2/(4J+1)+8/(4J+1)^2",
+      "source_regularization_gap": "UNRESOLVED"
+    },
+    "capsules": [
+      {
+        "claim_id": "OS-ENERGY",
+        "statement": "Quadratic energy factors through linear O iff ker O lies in its Hermitian radical",
+        "source": "Explicit mathematical source in the linked theorem dossier",
+        "operations_relations": "Bounded linear observation and source-preserving form operations, as typed in the theorem",
+        "target_carrier": "The stated image, Hilbert low carrier or scalar quadratic report",
+        "observation_morphisms": "Actual O or orthogonal P specified in the exact theorem",
+        "topology_measure": "Declared Hilbert/subspace norms; Euclidean rational metric for finite instances",
+        "universal_property": "Factorization/envelope property only with the stated assumptions",
+        "comparison_maps": "Source-specific maps in the proof; no arbitrary isomorphism supplies arithmetic identification",
+        "source_identity": "SUCC Observer Schur Round II mathematical dossier",
+        "source_epoch": 0,
+        "hypotheses": [
+          "Real or complex vector space, linear O, Hermitian form"
+        ],
+        "dependencies": [],
+        "authority": "PAPER_PROVED",
+        "scope": "UNIVERSAL",
+        "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+        "evidence": [
+          {
+            "path": "research/2026-10-16/OBSERVER_SCHUR_THEOREMS.md",
+            "sha256": "60e550375456fd2c6d99e6bde054303f235419afc0498b8d0a894bc482ee4ddb",
+            "kind": "PAPER_DERIVATION"
+          }
+        ],
+        "access": {
+          "permitted_observations": "Declared source maps only",
+          "constructible_witness": "Exact finite witnesses where supplied; no general effective infinite minimizer",
+          "oracle": "No nontrivial zeta-zero oracle; no implicit access to unobserved coordinates",
+          "probe_discrimination": "Explicit exact counterexamples and retained source/range gates",
+          "proof_theory": "Classical paper proof; separate Lean terms and finite executions",
+          "execution_cost": "Explicit finite budgets; no uniform infinite decision procedure inferred"
+        },
+        "adversarial": {
+          "domain_tests": "Singular blocks, actual versus closure range, source and metric binding",
+          "negative_examples": "Cross-term, compact inverse, nonattainment and relative residual failures",
+          "source_mutations": "Changed source labels/hashes do not certify source semantics",
+          "replay": "Read the linked proof; replay the named exact probe and formal receipt separately"
+        }
+      },
+      {
+        "claim_id": "OS-ENVELOPE",
+        "statement": "The reduced Schur form equals the finite fiber infimum; attainment needs actual D range",
+        "source": "Explicit mathematical source in the linked theorem dossier",
+        "operations_relations": "Bounded linear observation and source-preserving form operations, as typed in the theorem",
+        "target_carrier": "The stated image, Hilbert low carrier or scalar quadratic report",
+        "observation_morphisms": "Actual O or orthogonal P specified in the exact theorem",
+        "topology_measure": "Declared Hilbert/subspace norms; Euclidean rational metric for finite instances",
+        "universal_property": "Factorization/envelope property only with the stated assumptions",
+        "comparison_maps": "Source-specific maps in the proof; no arbitrary isomorphism supplies arithmetic identification",
+        "source_identity": "SUCC Observer Schur Round II mathematical dossier",
+        "source_epoch": 0,
+        "hypotheses": [
+          "Bounded self-adjoint G, D>=0",
+          "Ran(B*) subset actual Ran(sqrt(D))"
+        ],
+        "dependencies": [],
+        "authority": "PAPER_PROVED",
+        "scope": "UNIVERSAL",
+        "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+        "evidence": [
+          {
+            "path": "research/2026-10-16/OBSERVER_SCHUR_THEOREMS.md",
+            "sha256": "60e550375456fd2c6d99e6bde054303f235419afc0498b8d0a894bc482ee4ddb",
+            "kind": "PAPER_DERIVATION"
+          }
+        ],
+        "access": {
+          "permitted_observations": "Declared source maps only",
+          "constructible_witness": "Exact finite witnesses where supplied; no general effective infinite minimizer",
+          "oracle": "No nontrivial zeta-zero oracle; no implicit access to unobserved coordinates",
+          "probe_discrimination": "Explicit exact counterexamples and retained source/range gates",
+          "proof_theory": "Classical paper proof; separate Lean terms and finite executions",
+          "execution_cost": "Explicit finite budgets; no uniform infinite decision procedure inferred"
+        },
+        "adversarial": {
+          "domain_tests": "Singular blocks, actual versus closure range, source and metric binding",
+          "negative_examples": "Cross-term, compact inverse, nonattainment and relative residual failures",
+          "source_mutations": "Changed source labels/hashes do not certify source semantics",
+          "replay": "Read the linked proof; replay the named exact probe and formal receipt separately"
+        }
+      },
+      {
+        "claim_id": "OS-CONTRACTION",
+        "statement": "S0>=0 iff norm(C A^-1/2)<=1, with two sectors under source parity",
+        "source": "Explicit mathematical source in the linked theorem dossier",
+        "operations_relations": "Bounded linear observation and source-preserving form operations, as typed in the theorem",
+        "target_carrier": "The stated image, Hilbert low carrier or scalar quadratic report",
+        "observation_morphisms": "Actual O or orthogonal P specified in the exact theorem",
+        "topology_measure": "Declared Hilbert/subspace norms; Euclidean rational metric for finite instances",
+        "universal_property": "Factorization/envelope property only with the stated assumptions",
+        "comparison_maps": "Source-specific maps in the proof; no arbitrary isomorphism supplies arithmetic identification",
+        "source_identity": "SUCC Observer Schur Round II mathematical dossier",
+        "source_epoch": 0,
+        "hypotheses": [
+          "A>=alpha I for alpha>0",
+          "The same G and P commute with the reflection"
+        ],
+        "dependencies": [
+          "OS-ENVELOPE"
+        ],
+        "authority": "PAPER_PROVED",
+        "scope": "UNIVERSAL",
+        "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+        "evidence": [
+          {
+            "path": "research/2026-10-16/OBSERVER_SCHUR_THEOREMS.md",
+            "sha256": "60e550375456fd2c6d99e6bde054303f235419afc0498b8d0a894bc482ee4ddb",
+            "kind": "PAPER_DERIVATION"
+          }
+        ],
+        "access": {
+          "permitted_observations": "Declared source maps only",
+          "constructible_witness": "Exact finite witnesses where supplied; no general effective infinite minimizer",
+          "oracle": "No nontrivial zeta-zero oracle; no implicit access to unobserved coordinates",
+          "probe_discrimination": "Explicit exact counterexamples and retained source/range gates",
+          "proof_theory": "Classical paper proof; separate Lean terms and finite executions",
+          "execution_cost": "Explicit finite budgets; no uniform infinite decision procedure inferred"
+        },
+        "adversarial": {
+          "domain_tests": "Singular blocks, actual versus closure range, source and metric binding",
+          "negative_examples": "Cross-term, compact inverse, nonattainment and relative residual failures",
+          "source_mutations": "Changed source labels/hashes do not certify source semantics",
+          "replay": "Read the linked proof; replay the named exact probe and formal receipt separately"
+        }
+      },
+      {
+        "claim_id": "OS-COMPACT",
+        "statement": "Compact source compression converges in operator norm; the Suzuki Legendre bound is source-relative",
+        "source": "Explicit mathematical source in the linked theorem dossier",
+        "operations_relations": "Bounded linear observation and source-preserving form operations, as typed in the theorem",
+        "target_carrier": "The stated image, Hilbert low carrier or scalar quadratic report",
+        "observation_morphisms": "Actual O or orthogonal P specified in the exact theorem",
+        "topology_measure": "Declared Hilbert/subspace norms; Euclidean rational metric for finite instances",
+        "universal_property": "Factorization/envelope property only with the stated assumptions",
+        "comparison_maps": "Source-specific maps in the proof; no arbitrary isomorphism supplies arithmetic identification",
+        "source_identity": "SUCC Observer Schur Round II mathematical dossier",
+        "source_epoch": 0,
+        "hypotheses": [
+          "Compact operator and strongly convergent orthogonal projections",
+          "Quantitative Suzuki specialization uses the pinned signed derivative enclosure"
+        ],
+        "dependencies": [],
+        "authority": "PAPER_PROVED",
+        "scope": "UNIVERSAL",
+        "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+        "evidence": [
+          {
+            "path": "research/2026-10-16/COMPACT_SOURCE_GALERKIN.md",
+            "sha256": "6e44d42fedd72274d8732272315bd05a43564c13bc423338a4711c0746b3986e",
+            "kind": "PAPER_DERIVATION"
+          }
+        ],
+        "access": {
+          "permitted_observations": "Declared source maps only",
+          "constructible_witness": "Exact finite witnesses where supplied; no general effective infinite minimizer",
+          "oracle": "No nontrivial zeta-zero oracle; no implicit access to unobserved coordinates",
+          "probe_discrimination": "Explicit exact counterexamples and retained source/range gates",
+          "proof_theory": "Classical paper proof; separate Lean terms and finite executions",
+          "execution_cost": "Explicit finite budgets; no uniform infinite decision procedure inferred"
+        },
+        "adversarial": {
+          "domain_tests": "Singular blocks, actual versus closure range, source and metric binding",
+          "negative_examples": "Cross-term, compact inverse, nonattainment and relative residual failures",
+          "source_mutations": "Changed source labels/hashes do not certify source semantics",
+          "replay": "Read the linked proof; replay the named exact probe and formal receipt separately"
+        }
+      },
+      {
+        "claim_id": "OS-RANGE-OPEN",
+        "statement": "Actual Suzuki target residual columns belong to closure of the high response range in the relative norm",
+        "source": "Explicit mathematical source in the linked theorem dossier",
+        "operations_relations": "Bounded linear observation and source-preserving form operations, as typed in the theorem",
+        "target_carrier": "The stated image, Hilbert low carrier or scalar quadratic report",
+        "observation_morphisms": "Actual O or orthogonal P specified in the exact theorem",
+        "topology_measure": "Declared Hilbert/subspace norms; Euclidean rational metric for finite instances",
+        "universal_property": "Factorization/envelope property only with the stated assumptions",
+        "comparison_maps": "Source-specific maps in the proof; no arbitrary isomorphism supplies arithmetic identification",
+        "source_identity": "SUCC Observer Schur Round II mathematical dossier",
+        "source_epoch": 0,
+        "hypotheses": [],
+        "dependencies": [],
+        "authority": "UNVERIFIED",
+        "scope": "UNIVERSAL",
+        "conclusion_mode": "OPEN_TARGET",
+        "evidence": [
+          {
+            "path": "research/2026-10-16/COMPACT_SOURCE_GALERKIN.md",
+            "sha256": "6e44d42fedd72274d8732272315bd05a43564c13bc423338a4711c0746b3986e",
+            "kind": "OPEN_DOSSIER"
+          }
+        ],
+        "access": {
+          "permitted_observations": "Declared source maps only",
+          "constructible_witness": "Exact finite witnesses where supplied; no general effective infinite minimizer",
+          "oracle": "No nontrivial zeta-zero oracle; no implicit access to unobserved coordinates",
+          "probe_discrimination": "Explicit exact counterexamples and retained source/range gates",
+          "proof_theory": "Classical paper proof; separate Lean terms and finite executions",
+          "execution_cost": "Explicit finite budgets; no uniform infinite decision procedure inferred"
+        },
+        "adversarial": {
+          "domain_tests": "Singular blocks, actual versus closure range, source and metric binding",
+          "negative_examples": "Cross-term, compact inverse, nonattainment and relative residual failures",
+          "source_mutations": "Changed source labels/hashes do not certify source semantics",
+          "replay": "Read the linked proof; replay the named exact probe and formal receipt separately"
+        }
+      },
+      {
+        "claim_id": "OS-RELATIVE-APPROX",
+        "statement": "Dense high trial spaces approximate the target in relative residual norm if the range-closure premise holds",
+        "source": "Explicit mathematical source in the linked theorem dossier",
+        "operations_relations": "Bounded linear observation and source-preserving form operations, as typed in the theorem",
+        "target_carrier": "The stated image, Hilbert low carrier or scalar quadratic report",
+        "observation_morphisms": "Actual O or orthogonal P specified in the exact theorem",
+        "topology_measure": "Declared Hilbert/subspace norms; Euclidean rational metric for finite instances",
+        "universal_property": "Factorization/envelope property only with the stated assumptions",
+        "comparison_maps": "Source-specific maps in the proof; no arbitrary isomorphism supplies arithmetic identification",
+        "source_identity": "SUCC Observer Schur Round II mathematical dossier",
+        "source_epoch": 0,
+        "hypotheses": [
+          "ASSUME:OS-RANGE-OPEN",
+          "Source residual operator is bounded and trials have dense union"
+        ],
+        "dependencies": [
+          "OS-RANGE-OPEN"
+        ],
+        "authority": "PAPER_PROVED",
+        "scope": "UNIVERSAL",
+        "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+        "evidence": [
+          {
+            "path": "research/2026-10-16/COMPACT_SOURCE_GALERKIN.md",
+            "sha256": "6e44d42fedd72274d8732272315bd05a43564c13bc423338a4711c0746b3986e",
+            "kind": "PAPER_DERIVATION"
+          }
+        ],
+        "access": {
+          "permitted_observations": "Declared source maps only",
+          "constructible_witness": "Exact finite witnesses where supplied; no general effective infinite minimizer",
+          "oracle": "No nontrivial zeta-zero oracle; no implicit access to unobserved coordinates",
+          "probe_discrimination": "Explicit exact counterexamples and retained source/range gates",
+          "proof_theory": "Classical paper proof; separate Lean terms and finite executions",
+          "execution_cost": "Explicit finite budgets; no uniform infinite decision procedure inferred"
+        },
+        "adversarial": {
+          "domain_tests": "Singular blocks, actual versus closure range, source and metric binding",
+          "negative_examples": "Cross-term, compact inverse, nonattainment and relative residual failures",
+          "source_mutations": "Changed source labels/hashes do not certify source semantics",
+          "replay": "Read the linked proof; replay the named exact probe and formal receipt separately"
+        }
+      },
+      {
+        "claim_id": "OS-APPROX-CONSUMER",
+        "statement": "The same conditional approximation theorem preserves range debt when used downstream",
+        "source": "Explicit mathematical source in the linked theorem dossier",
+        "operations_relations": "Bounded linear observation and source-preserving form operations, as typed in the theorem",
+        "target_carrier": "The stated image, Hilbert low carrier or scalar quadratic report",
+        "observation_morphisms": "Actual O or orthogonal P specified in the exact theorem",
+        "topology_measure": "Declared Hilbert/subspace norms; Euclidean rational metric for finite instances",
+        "universal_property": "Factorization/envelope property only with the stated assumptions",
+        "comparison_maps": "Source-specific maps in the proof; no arbitrary isomorphism supplies arithmetic identification",
+        "source_identity": "SUCC Observer Schur Round II mathematical dossier",
+        "source_epoch": 0,
+        "hypotheses": [
+          "ASSUME:OS-RANGE-OPEN"
+        ],
+        "dependencies": [
+          "OS-RELATIVE-APPROX"
+        ],
+        "authority": "PAPER_PROVED",
+        "scope": "UNIVERSAL",
+        "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+        "evidence": [
+          {
+            "path": "research/2026-10-16/COMPACT_SOURCE_GALERKIN.md",
+            "sha256": "6e44d42fedd72274d8732272315bd05a43564c13bc423338a4711c0746b3986e",
+            "kind": "PAPER_DERIVATION"
+          }
+        ],
+        "access": {
+          "permitted_observations": "Declared source maps only",
+          "constructible_witness": "Exact finite witnesses where supplied; no general effective infinite minimizer",
+          "oracle": "No nontrivial zeta-zero oracle; no implicit access to unobserved coordinates",
+          "probe_discrimination": "Explicit exact counterexamples and retained source/range gates",
+          "proof_theory": "Classical paper proof; separate Lean terms and finite executions",
+          "execution_cost": "Explicit finite budgets; no uniform infinite decision procedure inferred"
+        },
+        "adversarial": {
+          "domain_tests": "Singular blocks, actual versus closure range, source and metric binding",
+          "negative_examples": "Cross-term, compact inverse, nonattainment and relative residual failures",
+          "source_mutations": "Changed source labels/hashes do not certify source semantics",
+          "replay": "Read the linked proof; replay the named exact probe and formal receipt separately"
+        }
+      },
+      {
+        "claim_id": "OS-ANSATZ-FAILURE",
+        "statement": "Every declared degree-eight even response fails the specified sufficient certificate",
+        "source": "Explicit mathematical source in the linked theorem dossier",
+        "operations_relations": "Bounded linear observation and source-preserving form operations, as typed in the theorem",
+        "target_carrier": "The stated image, Hilbert low carrier or scalar quadratic report",
+        "observation_morphisms": "Actual O or orthogonal P specified in the exact theorem",
+        "topology_measure": "Declared Hilbert/subspace norms; Euclidean rational metric for finite instances",
+        "universal_property": "Factorization/envelope property only with the stated assumptions",
+        "comparison_maps": "Source-specific maps in the proof; no arbitrary isomorphism supplies arithmetic identification",
+        "source_identity": "SUCC Observer Schur Round II mathematical dossier",
+        "source_epoch": 0,
+        "hypotheses": [
+          "Pinned original source, radius1/2, trial U(P2) in span(P6,P8)",
+          "The exact tested kappa range and whole-source interval proof in the dossier"
+        ],
+        "dependencies": [],
+        "authority": "PAPER_PROVED",
+        "scope": "UNIVERSAL",
+        "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+        "evidence": [
+          {
+            "path": "research/2026-10-16/OBSERVER_SCHUR_SOURCE.md",
+            "sha256": "0a269b8bc9b0840e132e3a31ab88fc3c1330c7a38b6013afdc426e0333f03dab",
+            "kind": "PAPER_DERIVATION"
+          }
+        ],
+        "access": {
+          "permitted_observations": "Declared source maps only",
+          "constructible_witness": "Exact finite witnesses where supplied; no general effective infinite minimizer",
+          "oracle": "No nontrivial zeta-zero oracle; no implicit access to unobserved coordinates",
+          "probe_discrimination": "Explicit exact counterexamples and retained source/range gates",
+          "proof_theory": "Classical paper proof; separate Lean terms and finite executions",
+          "execution_cost": "Explicit finite budgets; no uniform infinite decision procedure inferred"
+        },
+        "adversarial": {
+          "domain_tests": "Singular blocks, actual versus closure range, source and metric binding",
+          "negative_examples": "Cross-term, compact inverse, nonattainment and relative residual failures",
+          "source_mutations": "Changed source labels/hashes do not certify source semantics",
+          "replay": "Read the linked proof; replay the named exact probe and formal receipt separately"
+        }
+      },
+      {
+        "claim_id": "OS-NESTED-ENVELOPE",
+        "statement": "Compatible finite Schur envelopes associate with all PSD and range obligations retained",
+        "source": "Explicit mathematical source in the linked theorem dossier",
+        "operations_relations": "Bounded linear observation and source-preserving form operations, as typed in the theorem",
+        "target_carrier": "The stated image, Hilbert low carrier or scalar quadratic report",
+        "observation_morphisms": "Actual O or orthogonal P specified in the exact theorem",
+        "topology_measure": "Declared Hilbert/subspace norms; Euclidean rational metric for finite instances",
+        "universal_property": "Factorization/envelope property only with the stated assumptions",
+        "comparison_maps": "Source-specific maps in the proof; no arbitrary isomorphism supplies arithmetic identification",
+        "source_identity": "SUCC Observer Schur Round II mathematical dossier",
+        "source_epoch": 0,
+        "hypotheses": [
+          "Same finite source, nested observations, both staged PSD and cross-range conditions"
+        ],
+        "dependencies": [],
+        "authority": "PAPER_PROVED",
+        "scope": "UNIVERSAL",
+        "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+        "evidence": [
+          {
+            "path": "research/2026-10-16/OBSERVER_DISCOVERY_EXPERIMENT.md",
+            "sha256": "a4d7131318095538f9c275df13331bec5a13e16a75a6a73f35dfdaa216c80acd",
+            "kind": "PAPER_DERIVATION"
+          }
+        ],
+        "access": {
+          "permitted_observations": "Declared source maps only",
+          "constructible_witness": "Exact finite witnesses where supplied; no general effective infinite minimizer",
+          "oracle": "No nontrivial zeta-zero oracle; no implicit access to unobserved coordinates",
+          "probe_discrimination": "Explicit exact counterexamples and retained source/range gates",
+          "proof_theory": "Classical paper proof; separate Lean terms and finite executions",
+          "execution_cost": "Explicit finite budgets; no uniform infinite decision procedure inferred"
+        },
+        "adversarial": {
+          "domain_tests": "Singular blocks, actual versus closure range, source and metric binding",
+          "negative_examples": "Cross-term, compact inverse, nonattainment and relative residual failures",
+          "source_mutations": "Changed source labels/hashes do not certify source semantics",
+          "replay": "Read the linked proof; replay the named exact probe and formal receipt separately"
+        }
+      },
+      {
+        "claim_id": "OS-SCHUR-OPEN",
+        "statement": "The original unmodified four-low signed short S0 is nonnegative at radius1/2",
+        "source": "Explicit mathematical source in the linked theorem dossier",
+        "operations_relations": "Bounded linear observation and source-preserving form operations, as typed in the theorem",
+        "target_carrier": "The stated image, Hilbert low carrier or scalar quadratic report",
+        "observation_morphisms": "Actual O or orthogonal P specified in the exact theorem",
+        "topology_measure": "Declared Hilbert/subspace norms; Euclidean rational metric for finite instances",
+        "universal_property": "Factorization/envelope property only with the stated assumptions",
+        "comparison_maps": "Source-specific maps in the proof; no arbitrary isomorphism supplies arithmetic identification",
+        "source_identity": "SUCC Observer Schur Round II mathematical dossier",
+        "source_epoch": 0,
+        "hypotheses": [],
+        "dependencies": [],
+        "authority": "UNVERIFIED",
+        "scope": "UNIVERSAL",
+        "conclusion_mode": "OPEN_TARGET",
+        "evidence": [
+          {
+            "path": "research/2026-10-16/OBSERVER_SCHUR_SOURCE.md",
+            "sha256": "0a269b8bc9b0840e132e3a31ab88fc3c1330c7a38b6013afdc426e0333f03dab",
+            "kind": "OPEN_DOSSIER"
+          }
+        ],
+        "access": {
+          "permitted_observations": "Declared source maps only",
+          "constructible_witness": "Exact finite witnesses where supplied; no general effective infinite minimizer",
+          "oracle": "No nontrivial zeta-zero oracle; no implicit access to unobserved coordinates",
+          "probe_discrimination": "Explicit exact counterexamples and retained source/range gates",
+          "proof_theory": "Classical paper proof; separate Lean terms and finite executions",
+          "execution_cost": "Explicit finite budgets; no uniform infinite decision procedure inferred"
+        },
+        "adversarial": {
+          "domain_tests": "Singular blocks, actual versus closure range, source and metric binding",
+          "negative_examples": "Cross-term, compact inverse, nonattainment and relative residual failures",
+          "source_mutations": "Changed source labels/hashes do not certify source semantics",
+          "replay": "Read the linked proof; replay the named exact probe and formal receipt separately"
+        }
+      }
+    ],
+    "evidence": [
+      {
+        "path": "research/2026-10-16/SPECTRAL_RESPONSE_MEASURE.md",
+        "sha256": "c87988313f84db77ca931eb06807f23b5921cd496c14fb7352279106131528a3",
+        "kind": "PAPER_SOURCE_APPLICATION"
+      },
+      {
+        "path": "research/2026-10-16/FRACTIONAL_SOURCE_RANGE_AUDIT.md",
+        "sha256": "30b689a3ceb109d97ce93ddbf28e4adb39e8a76ceab3c3f8964c8b05379c6d9d",
+        "kind": "PAPER_SOURCE_APPLICATION"
+      },
+      {
+        "path": "research/2026-10-16/AUTHENTIC_SCHUR_RESPONSE_CERTIFICATE.md",
+        "sha256": "78c113e4c1cbe09ff361e49ca51f4e0a57e4fb1af3ebd69673565aaa17222875",
+        "kind": "PAPER_SOURCE_APPLICATION"
+      }
+    ],
+    "kernel_proof_of_analytic_source": false,
+    "RH_proved": false,
+    "sha256": "5489b85fe3d737d57b366aa0c953825ea885823054a8afdaaf2f572c39729c51"
+  },
+  "audit": {
+    "integrity": "STRUCTURE_BYTES_AND_DECLARED_MAPPING_VALID",
+    "conditional_estimate_recorded": null,
+    "outstanding_obligations": [
+      "SOURCE_MODEL_IDENTIFICATION",
+      "SOURCE_SPECTRAL_TAIL_RATE",
+      "ZERO_SHIFT_REGULARIZATION_GAP"
+    ],
+    "dependency_audit": {
+      "schema": "SUCC_CARRIER_PROOF_CERTIFICATE_v1",
+      "audit": "STRUCTURE_AND_BYTES_VALID",
+      "claims": [
+        {
+          "claim_id": "OS-ENERGY",
+          "recorded_authority": "PAPER_PROVED",
+          "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+          "integrity": "HASHES_MATCH",
+          "open_dependencies": [],
+          "declared_hypotheses": [
+            "Real or complex vector space, linear O, Hermitian form"
+          ],
+          "retained_hypotheses": [
+            "Real or complex vector space, linear O, Hermitian form"
+          ],
+          "semantic_authority_issued": null
+        },
+        {
+          "claim_id": "OS-ENVELOPE",
+          "recorded_authority": "PAPER_PROVED",
+          "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+          "integrity": "HASHES_MATCH",
+          "open_dependencies": [],
+          "declared_hypotheses": [
+            "Bounded self-adjoint G, D>=0",
+            "Ran(B*) subset actual Ran(sqrt(D))"
+          ],
+          "retained_hypotheses": [
+            "Bounded self-adjoint G, D>=0",
+            "Ran(B*) subset actual Ran(sqrt(D))"
+          ],
+          "semantic_authority_issued": null
+        },
+        {
+          "claim_id": "OS-CONTRACTION",
+          "recorded_authority": "PAPER_PROVED",
+          "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+          "integrity": "HASHES_MATCH",
+          "open_dependencies": [],
+          "declared_hypotheses": [
+            "A>=alpha I for alpha>0",
+            "The same G and P commute with the reflection"
+          ],
+          "retained_hypotheses": [
+            "A>=alpha I for alpha>0",
+            "Bounded self-adjoint G, D>=0",
+            "Ran(B*) subset actual Ran(sqrt(D))",
+            "The same G and P commute with the reflection"
+          ],
+          "semantic_authority_issued": null
+        },
+        {
+          "claim_id": "OS-COMPACT",
+          "recorded_authority": "PAPER_PROVED",
+          "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+          "integrity": "HASHES_MATCH",
+          "open_dependencies": [],
+          "declared_hypotheses": [
+            "Compact operator and strongly convergent orthogonal projections",
+            "Quantitative Suzuki specialization uses the pinned signed derivative enclosure"
+          ],
+          "retained_hypotheses": [
+            "Compact operator and strongly convergent orthogonal projections",
+            "Quantitative Suzuki specialization uses the pinned signed derivative enclosure"
+          ],
+          "semantic_authority_issued": null
+        },
+        {
+          "claim_id": "OS-RANGE-OPEN",
+          "recorded_authority": "UNVERIFIED",
+          "conclusion_mode": "OPEN_TARGET",
+          "integrity": "HASHES_MATCH",
+          "open_dependencies": [],
+          "declared_hypotheses": [],
+          "retained_hypotheses": [],
+          "semantic_authority_issued": null
+        },
+        {
+          "claim_id": "OS-RELATIVE-APPROX",
+          "recorded_authority": "PAPER_PROVED",
+          "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+          "integrity": "HASHES_MATCH",
+          "open_dependencies": [
+            "OS-RANGE-OPEN"
+          ],
+          "declared_hypotheses": [
+            "ASSUME:OS-RANGE-OPEN",
+            "Source residual operator is bounded and trials have dense union"
+          ],
+          "retained_hypotheses": [
+            "ASSUME:OS-RANGE-OPEN",
+            "Source residual operator is bounded and trials have dense union"
+          ],
+          "semantic_authority_issued": null
+        },
+        {
+          "claim_id": "OS-APPROX-CONSUMER",
+          "recorded_authority": "PAPER_PROVED",
+          "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+          "integrity": "HASHES_MATCH",
+          "open_dependencies": [
+            "OS-RANGE-OPEN"
+          ],
+          "declared_hypotheses": [
+            "ASSUME:OS-RANGE-OPEN"
+          ],
+          "retained_hypotheses": [
+            "ASSUME:OS-RANGE-OPEN",
+            "Source residual operator is bounded and trials have dense union"
+          ],
+          "semantic_authority_issued": null
+        },
+        {
+          "claim_id": "OS-ANSATZ-FAILURE",
+          "recorded_authority": "PAPER_PROVED",
+          "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+          "integrity": "HASHES_MATCH",
+          "open_dependencies": [],
+          "declared_hypotheses": [
+            "Pinned original source, radius1/2, trial U(P2) in span(P6,P8)",
+            "The exact tested kappa range and whole-source interval proof in the dossier"
+          ],
+          "retained_hypotheses": [
+            "Pinned original source, radius1/2, trial U(P2) in span(P6,P8)",
+            "The exact tested kappa range and whole-source interval proof in the dossier"
+          ],
+          "semantic_authority_issued": null
+        },
+        {
+          "claim_id": "OS-NESTED-ENVELOPE",
+          "recorded_authority": "PAPER_PROVED",
+          "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+          "integrity": "HASHES_MATCH",
+          "open_dependencies": [],
+          "declared_hypotheses": [
+            "Same finite source, nested observations, both staged PSD and cross-range conditions"
+          ],
+          "retained_hypotheses": [
+            "Same finite source, nested observations, both staged PSD and cross-range conditions"
+          ],
+          "semantic_authority_issued": null
+        },
+        {
+          "claim_id": "OS-SCHUR-OPEN",
+          "recorded_authority": "UNVERIFIED",
+          "conclusion_mode": "OPEN_TARGET",
+          "integrity": "HASHES_MATCH",
+          "open_dependencies": [],
+          "declared_hypotheses": [],
+          "retained_hypotheses": [],
+          "semantic_authority_issued": null
+        }
+      ],
+      "theorems_proved_by_this_audit": [],
+      "physical_source_authentication": false,
+      "RH_proved": false
+    },
+    "semantic_authority_issued": null,
+    "source_tail_rate_proved": false,
+    "source_sign_proved": false,
+    "kernel_proof_of_analytic_source": false,
+    "RH_proved": false
+  }
+}

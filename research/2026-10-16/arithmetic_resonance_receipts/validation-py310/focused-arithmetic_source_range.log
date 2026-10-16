@@ -1,0 +1,19 @@
+test_gamma_primitive_ibp_exact_in_exponential_basis (test_arithmetic_source_range.ExactSourceRangeControls) ... ok
+test_invalid_exact_input_rejected (test_arithmetic_source_range.ExactSourceRangeControls) ... ok
+test_log_band_growing_lower_bound (test_arithmetic_source_range.ExactSourceRangeControls) ... ok
+test_multiplier_even_and_zero_frequency (test_arithmetic_source_range.ExactSourceRangeControls) ... ok
+test_no_fractional_or_sign_promotion (test_arithmetic_source_range.ExactSourceRangeControls) ... ok
+test_nonzero_boundary_terms_cannot_be_dropped (test_arithmetic_source_range.ExactSourceRangeControls) ... ok
+test_primitive_endpoint_and_moment_transport (test_arithmetic_source_range.ExactSourceRangeControls) ... ok
+test_source_pin_and_authority (test_arithmetic_source_range.ExactSourceRangeControls) ... ok
+test_whole_tower_bound_contains_independent_finite_extension (test_arithmetic_source_range.ExactSourceRangeControls) ... ok
+test_actual_odd_kernel_has_negative_adjoint_and_reverses_parity (test_arithmetic_source_range.NumericalInstrumentControls) ... ok
+test_complex_weighted_adjoint_and_wrong_conjugation_mutant (test_arithmetic_source_range.NumericalInstrumentControls) ... ok
+test_diagonal_and_domain_are_not_regularized_silently (test_arithmetic_source_range.NumericalInstrumentControls) ... ok
+test_full_source_derivative_inside_existing_rational_boxes (test_arithmetic_source_range.NumericalInstrumentControls) ... ok
+test_gamma_geometric_sum_and_carleman_majorant (test_arithmetic_source_range.NumericalInstrumentControls) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.463s
+
+OK

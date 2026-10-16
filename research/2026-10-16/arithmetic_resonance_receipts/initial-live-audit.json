@@ -1,0 +1,73 @@
+{
+  "time_utc": "2026-10-16T04:58:57.770219+00:00",
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "worktree",
+        "list",
+        "--porcelain"
+      ],
+      "exit": 0,
+      "stdout": "worktree /media/leah/SPANKBANK/SUCCYBOI/SUCC\nHEAD 7b998bcc427a397a00fd8c2d7cb74280de187d0d\nbranch refs/heads/research/black-sun-iv-zeno-completion-2026-10-14\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance\nHEAD 24d0f18a103fb2add32ee817fdfefb4ff401ed27\nbranch refs/heads/research/arithmetic-wavefront-spectral-response-2026-10-16\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur\nHEAD 24d0f18a103fb2add32ee817fdfefb4ff401ed27\nbranch refs/heads/research/observers-schur-complement-2026-10-16\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-proof-teeth\nHEAD 5d6d717312eebee648d3cfb092875eb4120bb4b3\nbranch refs/heads/research/succ-yean-proof-teeth-ultra-2026-10-15\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "status",
+        "--short"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main",
+        "refs/heads/research/observers-schur-complement-2026-10-16"
+      ],
+      "exit": 0,
+      "stdout": "02fc9f46ad3b914d49df7a658e304d06ed8a6200\trefs/heads/main\n24d0f18a103fb2add32ee817fdfefb4ff401ed27\trefs/heads/research/observers-schur-complement-2026-10-16\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "gh",
+        "pr",
+        "view",
+        "135",
+        "--repo",
+        "femboy2112/SUCC",
+        "--json",
+        "headRefOid,headRefName,baseRefName,state,isDraft,statusCheckRollup"
+      ],
+      "exit": 0,
+      "stdout": "{\"baseRefName\":\"research/succ-yean-proof-teeth-ultra-2026-10-15\",\"headRefName\":\"research/observers-schur-complement-2026-10-16\",\"headRefOid\":\"24d0f18a103fb2add32ee817fdfefb4ff401ed27\",\"isDraft\":true,\"state\":\"OPEN\",\"statusCheckRollup\":[{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:50:12Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846363551/job/116797688166\",\"name\":\"Python 3.10 mathematical and epistemic checks\",\"startedAt\":\"2026-10-16T03:36:32Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:46:51Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846347754/job/116797639141\",\"name\":\"Python 3.10 mathematical and epistemic checks\",\"startedAt\":\"2026-10-16T03:36:20Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:37:59Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846363889/job/116797689441\",\"name\":\"finite_source (3.10)\",\"startedAt\":\"2026-10-16T03:36:31Z\",\"status\":\"COMPLETED\",\"workflowName\":\"One Object II original source cancellation and zero-shift Schur\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:43:34Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846363551/job/116797688893\",\"name\":\"Python 3.13 mathematical and epistemic checks\",\"startedAt\":\"2026-10-16T03:36:32Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:46:40Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846347754/job/116797639099\",\"name\":\"Python 3.13 mathematical and epistemic checks\",\"startedAt\":\"2026-10-16T03:36:20Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:38:14Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846363889/job/116797689155\",\"name\":\"finite_source (3.13)\",\"startedAt\":\"2026-10-16T03:36:32Z\",\"status\":\"COMPLETED\",\"workflowName\":\"One Object II original source cancellation and zero-shift Schur\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:36:52Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846363551/job/116797688117\",\"name\":\"Contextual Bayesian SUCC heuristic guards (3.10)\",\"startedAt\":\"2026-10-16T03:36:32Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:36:47Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846347754/job/116797639075\",\"name\":\"Contextual Bayesian SUCC heuristic guards (3.10)\",\"startedAt\":\"2026-10-16T03:36:20Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:36:56Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846363551/job/116797688057\",\"name\":\"Contextual Bayesian SUCC heuristic guards (3.13)\",\"startedAt\":\"2026-10-16T03:36:31Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:36:42Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846347754/job/116797639151\",\"name\":\"Contextual Bayesian SUCC heuristic guards (3.13)\",\"startedAt\":\"2026-10-16T03:36:20Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:36:48Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846363551/job/116797687938\",\"name\":\"Typed genetic model fusion and source-coupling guards (3.10)\",\"startedAt\":\"2026-10-16T03:36:31Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:36:46Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846347754/job/116797639087\",\"name\":\"Typed genetic model fusion and source-coupling guards (3.10)\",\"startedAt\":\"2026-10-16T03:36:20Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:36:59Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846363551/job/116797688044\",\"name\":\"Typed genetic model fusion and source-coupling guards (3.13)\",\"startedAt\":\"2026-10-16T03:36:31Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:36:47Z\",\"conclusion\":\"SUCCESS\",\"detailsUrl\":\"https://github.com/femboy2112/SUCC/actions/runs/38846347754/job/116797639180\",\"name\":\"Typed genetic model fusion and source-coupling guards (3.13)\",\"startedAt\":\"2026-10-16T03:36:21Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Observational SUCC validation\"}]}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "gh",
+        "pr",
+        "view",
+        "136",
+        "--repo",
+        "femboy2112/YEAN",
+        "--json",
+        "headRefOid,headRefName,baseRefName,state,isDraft,statusCheckRollup"
+      ],
+      "exit": 0,
+      "stdout": "{\"baseRefName\":\"research/succ-proof-teeth-kernel-2026-10-15\",\"headRefName\":\"research/succ-observer-schur-kernel-2026-10-16\",\"headRefOid\":\"4bda4fc92f722464d17a3911ccc12f7f28193e6b\",\"isDraft\":true,\"state\":\"OPEN\",\"statusCheckRollup\":[{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:14:40Z\",\"conclusion\":\"FAILURE\",\"detailsUrl\":\"https://github.com/femboy2112/yean/actions/runs/38844531398/job/116791928851\",\"name\":\"validate\",\"startedAt\":\"2026-10-16T03:14:38Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Repository checks\"},{\"__typename\":\"CheckRun\",\"completedAt\":\"2026-10-16T03:14:05Z\",\"conclusion\":\"FAILURE\",\"detailsUrl\":\"https://github.com/femboy2112/yean/actions/runs/38844482680/job/116791775528\",\"name\":\"validate\",\"startedAt\":\"2026-10-16T03:14:04Z\",\"status\":\"COMPLETED\",\"workflowName\":\"Repository checks\"}]}\n",
+      "stderr": ""
+    }
+  ],
+  "source_sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+  "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "concurrent_original_yean_compilation_observed": true,
+  "no_other_worktree_modified": true
+}

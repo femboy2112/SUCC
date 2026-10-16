@@ -1,0 +1,55 @@
+name: Arithmetic wavefront and spectral-response certificates
+
+on:
+  push:
+    branches:
+      - 'research/arithmetic-wavefront-spectral-response-*'
+  pull_request:
+    paths:
+      - 'observational_succ/prime_wavefront_geometry.py'
+      - 'observational_succ/spectral_response.py'
+      - 'observational_succ/arithmetic_source_range.py'
+      - 'observational_succ/arithmetic_resolvent.py'
+      - 'observational_succ/cross_prime_wavefront.py'
+      - 'observational_succ/spectral_tail_contract.py'
+      - 'scripts/*wavefront*'
+      - 'scripts/*spectral*'
+      - 'scripts/arithmetic_*'
+      - '.github/workflows/arithmetic-resonance.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-response:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The probes verify the exact originating source commit and ancestry.
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[test]'
+      - name: Replay exact wavefront, source and spectral probes with provenance gates
+        run: python scripts/check_arithmetic_resonance_round.py --python python --focused-only --probes --output "$RUNNER_TEMP/arithmetic-resonance"
+      - name: Retain unresolved source spectral-tail obligations
+        run: python scripts/spectral_tail_contract_probe.py --output "$RUNNER_TEMP/tail-contract.json"
+      - name: Preserve probe receipts even when a gate fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: arithmetic-resonance-${{ matrix.python }}-${{ github.event_name }}
+          path: |
+            ${{ runner.temp }}/arithmetic-resonance/
+            ${{ runner.temp }}/tail-contract.json

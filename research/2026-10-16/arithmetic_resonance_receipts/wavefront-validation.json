@@ -1,0 +1,57 @@
+{
+  "default_stdout_probe": {
+    "argv": [
+      "/home/leah/.local/bin/python",
+      "-B",
+      "scripts/prime_wavefront_geometry_probe.py",
+      "--skip-tests"
+    ],
+    "exit_code": 0,
+    "source_and_implementation_hashes_match_final_receipt": true,
+    "status": "EVIDENCE_PASS_TESTS_NOT_RUN",
+    "stdout_sha256": "3136eaf9c75ec3bad08e53046b9ddb6b84089bb4d5c54e1d338f56ce54573f80"
+  },
+  "elapsed_seconds": 3.5644053199794143,
+  "final_receipt_sha256": "d6a14780c4b18706bfe70ab759e8086c037a952c24c8214c1ccf880231f8b796",
+  "focused_test_output_tail": [
+    "",
+    "----------------------------------------------------------------------",
+    "Ran 80 tests in 9.120s",
+    "",
+    "OK"
+  ],
+  "full_suites": "principal-owned, not run by this worker",
+  "repository_probes": [
+    {
+      "argv": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"byte_identical_research_archives\": 17,\n  \"establishes_mathematical_truth\": false,\n  \"items\": 72,\n  \"mechanical_namespace_migrations\": 55,\n  \"source_commit\": \"ba075348b7bcc66d938b3e0ca96c26e95bba340a\",\n  \"status\": \"SOURCE_PROVENANCE_VERIFIED\"\n}\n"
+    },
+    {
+      "argv": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"PA_formalization_completed\": false,\n  \"RH_proved\": false,\n  \"arithmetic_causal_history\": {\n    \"Hessian_fake_det\": \"41/343\",\n    \"Hessian_true_det\": \"13/108\",\n    \"Weil_correlation_equals_semantic_Hessian_proved\": false,\n    \"actualized_true_b6\": \"0\",\n    \"both_semantic_Hessians_PSD\": true,\n    \"fake_composite_a6\": 2,\n    \"fake_connected_b6\": \"1\"\n  },\n  \"finitary_omega_proof_support\": {\n    \"earliest_stage\": 1,\n    \"finite_proof_verified\": true,\n    \"formal_theorem\": \"finitary derivation from union already has finite axiom support\",\n    \"observed_finite_theory_stages\": 2,\n    \"omega_physically_executed\": false,\n    \"omega_rule_used\": false,\n    \"proof_code_sha256\": \"fc23321637ff7db55bc2d78763e31a42a2cafa26a0ebea06a1da0ec69b9fcb06\"\n  },\n  \"godel_fixed_point_syntax\": {\n    \"SubstGraph_representability_in_PA_proved\": false,\n    \"object_level_PA_equivalence_proved\": false,\n    \"sentence_code_bits\": 4377,\n    \"sentence_code_sha256\": \"d63e44fb44913f78742d3063e8ca407b791dbb490c9ec21db4926c979d6004df\",\n    \"theta_code_bits\": 1449,\n    \"theta_code_sha256\": \"0612b723b148a7690b7ac4e86d7347cdf706fda5a420f511ac2e48a81310f590\",\n    \"verified_substitution_code\": true\n  },\n  \"missing\": {\n    \"RH_side\": \"independent positive observer-to-FULL Weil distribution identity\",\n    \"analytic_side\": \"rigorous prime/Gamma interval oracle for Suzuki negative witness\",\n    \"quantum_side\": \"validated record-to-semantic covariance functor\",\n    \"theory_side\": \"representable G\\u00f6del substitution/derivability formalization\"\n  },\n  \"ordinal_reflection\": {\n    \"claimed_truth\": null,\n    \"declared_axiom_is_external\": \"EXTERNAL_ASSUMPTION_ONLY\",\n    \"reflection_follows_from_observation\": false,\n    \"successor_stages\": 3\n  },\n  \"physical_infinite_time_executed\": false,\n  \"rational_gram_certificates\": {\n    \"Suzuki_interval_oracle_built\": false,\n    \"bounded_search\": \"STRICT_NEGATIVE_WITNESS\",\n    \"negative_exact_quartic_upper\": \"-24\",\n    \"negative_status\": \"STRICT_NEGATIVE_WITNESS_CONDITIONAL_ON_INTERVAL_ORACLE\",\n    \"positive_exact_quadratic_lower\": \"0\",\n    \"positive_probe_status\": \"FINITE_PROBE_UNRESOLVED\",\n    \"source_is_actual_Suzuki\": false,\n    \"universal_positivity_proved\": false\n  },\n  \"status\": \"OBSERVATIONAL_SUCC_FORMAL_FOUNDATIONS\",\n  \"turing_observations\": {\n    \"delayed_prefix_17\": \"unresolved\",\n    \"delayed_prefix_19\": \"refuted\",\n    \"finite_survival_claims_are_universal_proofs\": false,\n    \"first_observed_counterexample\": 19,\n    \"loop_prefix_17\": \"unresolved\"\n  }\n}\n"
+    },
+    {
+      "argv": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"bounded_query_stabilization\": {\n    \"earlier_observer_stage\": 9,\n    \"later_observer_stage\": 28,\n    \"max_matrix_change\": \"0.0\",\n    \"rational_times\": [\n      \"0\",\n      \"-1\",\n      \"1\"\n    ],\n    \"scope\": \"prime wavefront exact by finite stage; Gamma response separately analytic\",\n    \"sufficient_stage\": 9\n  },\n  \"connected_source_second_order\": {\n    \"composite_event\": 6,\n    \"fake_connected_curvature\": \"1\",\n    \"fake_slope_jump\": \"-0.731482740234792026106494701286\",\n    \"finite_observation_time\": \"9/5\",\n    \"predicted_second_order_delta\": \"-log(6)/sqrt(6) at t=log(6)\",\n    \"primes\": [\n      2,\n      3\n    ],\n    \"true_connected_curvature\": \"0\",\n    \"two_time_Weil_diagonal_fake_minus_true\": \"-0.0120556120601029081022494377731\"\n  },\n  \"formal_ordinals\": {\n    \"finite_run_is_not_limit\": true,\n    \"finite_successor\": \"n->n+1, complete source prefix\",\n    \"global_PSD_predicate_proved\": false,\n    \"limit_omega\": \"filtered colimit/union of coherent finite observations\",\n    \"omega_plus_one\": \"mathematical retrospective Suzuki/Weil report\"\n  },\n  \"hilbert_critical_line_observer_escape\": {\n    \"H_256_lower_bound\": \"5\",\n    \"finite_norm_squared\": \"1\",\n    \"fixed_local_projector\": \"P_3\",\n    \"harmonic_H_256\": \"102120333780755602922415011407986918913493325085710168750386125102325162741298648605491283438121466698312402217/16674490806895842671659008751776385350270324508909651849955453691538889375930032935391666564679008085339616000\",\n    \"identity_expectation\": \"1\",\n    \"local_projector_expectation\": \"30569899812642378231374849378256706475495594933001028391584998434487963855871727048218055368578181489789296000/102120333780755602922415011407986918913493325085710168750386125102325162741298648605491283438121466698312402217\",\n    \"normalizable_omega_vector_exists\": false,\n    \"source_inert_and_not_RH\": true,\n    \"stage\": 256,\n    \"weak_limit_zero_not_strong\": true\n  },\n  \"next_theorem\": \"Source-defined positive-definite DISTRIBUTION Psi'' on complete test-function core; RH equivalent, NOT proved\",\n  \"no_RH_or_Weil_positive_sign_assumed\": true,\n  \"no_actual_infinite_ordinal_computed\": true,\n  \"positive_observations_are_not_positive_correlations\": {\n    \"isolated_prime_impulse_negative_determinant\": \"-0.007213596830721357871484304\",\n    \"oscillator_Hilbert_Gram_identity_error\": \"2.8298997121333476148466e-73\",\n    \"oscillator_second_curvature_can_be_negative\": true,\n    \"quartic_determinant\": \"-192\",\n    \"quartic_kernel\": [\n      [\n        \"2\",\n        \"-14\"\n      ],\n      [\n        \"-14\",\n        \"2\"\n      ]\n    ],\n    \"quartic_psi_nonnegative\": true,\n    \"quartic_quadratic_vector_ones\": \"-24\",\n    \"quartic_second_derivative_nonnegative\": true\n  },\n  \"semantic_second_derivative_information_geometry\": {\n    \"Weil_identification_established\": false,\n    \"both_information_geometries_PSD\": true,\n    \"fake_covariance_determinant\": \"41/343\",\n    \"fake_six_Hessian\": [\n      [\n        \"24/49\",\n        \"-1/49\"\n      ],\n      [\n        \"-1/49\",\n        \"12/49\"\n      ]\n    ],\n    \"genuine_Hessian\": [\n      [\n        \"5/9\",\n        \"-1/18\"\n      ],\n      [\n        \"-1/18\",\n        \"2/9\"\n      ]\n    ],\n    \"genuine_covariance_determinant\": \"13/108\",\n    \"source\": \"Hessian log finite positive evidence partition function\"\n  },\n  \"status\": \"FINITE_ORDINAL_SUCC_SECOND_ORDER_WEIL_PROBE\",\n  \"two_observer_mixed_finite_difference\": {\n    \"distributional_limit\": \"Psi''(t-u) = Weil distribution\",\n    \"h\": \"1/20\",\n    \"k\": \"1/30\",\n    \"mixed_covariance_increment\": \"0.000964653856973416905507178662116\",\n    \"positive_definiteness_proved\": false,\n    \"t\": \"3/5\",\n    \"u\": \"1/5\"\n  }\n}\n"
+    }
+  ],
+  "status": "PASS"
+}

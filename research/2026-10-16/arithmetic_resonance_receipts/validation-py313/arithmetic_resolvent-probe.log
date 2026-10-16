@@ -1,0 +1,39 @@
+Replaying inherited source coercivity and full derivative bound
+Candidates frozen; certifying full-source upper forms
+Certifying U=0 derivative lower bound, grid 512
+Preserving finite-family obstruction attempts
+Running focused hostile and algebraic controls
+test_W_metric_caps (test_arithmetic_resolvent.ArithmeticResolventTests.test_W_metric_caps) ... ok
+test_cached_entry_rejects_runtime_source_mutation (test_arithmetic_resolvent.ArithmeticResolventTests.test_cached_entry_rejects_runtime_source_mutation) ... ok
+test_cached_source_path_still_authenticates (test_arithmetic_resolvent.ArithmeticResolventTests.test_cached_source_path_still_authenticates) ... ok
+test_candidate_freeze_and_grid (test_arithmetic_resolvent.ArithmeticResolventTests.test_candidate_freeze_and_grid) ... ok
+test_correlation_against_double_integral (test_arithmetic_resolvent.ArithmeticResolventTests.test_correlation_against_double_integral) ... ok
+test_directed_square_root (test_arithmetic_resolvent.ArithmeticResolventTests.test_directed_square_root) ... ok
+test_exact_solve_multiple_columns (test_arithmetic_resolvent.ArithmeticResolventTests.test_exact_solve_multiple_columns) ... ok
+test_forged_candidate_rejected (test_arithmetic_resolvent.ArithmeticResolventTests.test_forged_candidate_rejected) ... ok
+test_forged_external_upper_is_no_longer_accepted (test_arithmetic_resolvent.ArithmeticResolventTests.test_forged_external_upper_is_no_longer_accepted) ... ok
+test_gamma_tail_propagated_as_positive_matrix (test_arithmetic_resolvent.ArithmeticResolventTests.test_gamma_tail_propagated_as_positive_matrix) ... ok
+test_high_projection_and_trial_metric (test_arithmetic_resolvent.ArithmeticResolventTests.test_high_projection_and_trial_metric) ... ok
+test_interval_majorant_all_corners (test_arithmetic_resolvent.ArithmeticResolventTests.test_interval_majorant_all_corners) ... ok
+test_ou_high_decay_enclosure (test_arithmetic_resolvent.ArithmeticResolventTests.test_ou_high_decay_enclosure) ... ok
+test_parity_forgery_rejected_even_with_new_hash (test_arithmetic_resolvent.ArithmeticResolventTests.test_parity_forgery_rejected_even_with_new_hash) ... ok
+test_parity_interval_rejected (test_arithmetic_resolvent.ArithmeticResolventTests.test_parity_interval_rejected) ... ok
+test_regularization_gap_can_flip_sign (test_arithmetic_resolvent.ArithmeticResolventTests.test_regularization_gap_can_flip_sign) ... ok
+test_residual_identity_with_nonorthonormal_metric (test_arithmetic_resolvent.ArithmeticResolventTests.test_residual_identity_with_nonorthonormal_metric) ... ok
+test_resource_and_type_guards (test_arithmetic_resolvent.ArithmeticResolventTests.test_resource_and_type_guards) ... ok
+test_shifted_certificate_keeps_gap_open (test_arithmetic_resolvent.ArithmeticResolventTests.test_shifted_certificate_keeps_gap_open) ... ok
+test_solve_rejects_indefinite (test_arithmetic_resolvent.ArithmeticResolventTests.test_solve_rejects_indefinite) ... ok
+test_source_caps_have_independent_2x2_slack (test_arithmetic_resolvent.ArithmeticResolventTests.test_source_caps_have_independent_2x2_slack) ... ok
+test_true_truncated_source_matches_inherited (test_arithmetic_resolvent.ArithmeticResolventTests.test_true_truncated_source_matches_inherited) ... ok
+test_whole_cell_lipschitz_integration (test_arithmetic_resolvent.ArithmeticResolventTests.test_whole_cell_lipschitz_integration) ... ok
+test_whole_gamma_tail_contains_further_rungs (test_arithmetic_resolvent.ArithmeticResolventTests.test_whole_gamma_tail_contains_further_rungs) ... ok
+test_zero_shift_residual_division_rejected (test_arithmetic_resolvent.ArithmeticResolventTests.test_zero_shift_residual_division_rejected) ... ok
+test_zero_trial_lower_includes_whole_tail (test_arithmetic_resolvent.ArithmeticResolventTests.test_zero_trial_lower_includes_whole_tail) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.086s
+
+OK
+Source bracket: {'odd': {'old_upper_cap': '1939731/4294967296', 'new_upper_cap': '300761/1073741824', 'strictly_improved': True, 'new_R0_cap': '405333569368851711757618861801/891024077979000000000000000000', 'old_R0_cap': '75625/20699', 'lower_correction_strictly_improved': True}, 'even': {'old_upper_cap': '3654297/2147483648', 'new_upper_cap': '11742983/8589934592', 'strictly_improved': True, 'new_R0_cap': '107959895025855318145227769087/127289153997000000000000000000', 'old_R0_cap': '75625/20699', 'lower_correction_strictly_improved': True}}
+Packet: /media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance/research/2026-10-16/arithmetic_resonance_receipts/validation-py313/arithmetic_resolvent-packet.json sha256 92b984dcbb85f823016c4da145d077bb736ed3662f8f99445445c8b1e41b187e
+PASS elapsed 97.10501974797808 RSS KiB 47960

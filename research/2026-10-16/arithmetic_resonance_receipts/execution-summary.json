@@ -1,0 +1,62 @@
+{
+  "status": "LOCAL_VALIDATION_PASSED",
+  "source_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "code_integration_commit": "6e179c6204360c17b39cbdec0599acf01e7213a9",
+  "runs": {
+    "py310": {
+      "manifest": "research/2026-10-16/arithmetic_resonance_receipts/validation-py310/validation.json",
+      "manifest_sha256": "08b0b19e9628d31861e1688da1b690649324447e7e7bddd8390170282f5b7591",
+      "full_tests": 4631,
+      "focused_tests": 141,
+      "all_commands_exit_zero": true,
+      "source_bytes_stable": true,
+      "start_commit": "612e243175f97f7c6adb3f49bbf825aecc1b41ea",
+      "source_snapshot_sha256": "6a536c949c1bd76a2db865c474b85e6917b84ac42e66e93b777bc0dcbd76a691",
+      "full_wall_seconds": 708.682,
+      "versions": "3.10.20 (main, Apr 14 2026, 14:28:08) [Clang 22.1.3 ]\n{'numpy': '2.2.6', 'scipy': '1.15.3', 'mpmath': '1.3.0', 'sympy': '1.14.0'}",
+      "probes": [
+        "prime_wavefront_geometry",
+        "spectral_response",
+        "arithmetic_source_range",
+        "arithmetic_resolvent",
+        "cross_prime_wavefront"
+      ],
+      "required_gates": [
+        "verify_provenance",
+        "observer_foundations_probe",
+        "ordinal_succ_report_probe"
+      ]
+    },
+    "py313": {
+      "manifest": "research/2026-10-16/arithmetic_resonance_receipts/validation-py313/validation.json",
+      "manifest_sha256": "32a988749934fc04c7b40b82bb8a415eeac24333391a25d82e017c076b11603f",
+      "full_tests": 4631,
+      "focused_tests": 141,
+      "all_commands_exit_zero": true,
+      "source_bytes_stable": true,
+      "start_commit": "1c79bf709800a7cfebd376af7ce3b185a10c623a",
+      "source_snapshot_sha256": "6a536c949c1bd76a2db865c474b85e6917b84ac42e66e93b777bc0dcbd76a691",
+      "full_wall_seconds": 450.056,
+      "versions": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]\n{'numpy': '2.5.4', 'scipy': '1.18.1', 'mpmath': '1.3.0', 'sympy': '1.14.0'}",
+      "probes": [
+        "prime_wavefront_geometry",
+        "spectral_response",
+        "arithmetic_source_range",
+        "arithmetic_resolvent",
+        "cross_prime_wavefront"
+      ],
+      "required_gates": [
+        "verify_provenance",
+        "observer_foundations_probe",
+        "ordinal_succ_report_probe"
+      ]
+    }
+  },
+  "counts_are_replays_not_distinct_test_population": true,
+  "hosted_SUCC_CI": "TO_BE_CHECKED_AT_PUBLICATION_HEAD",
+  "hosted_YEAN_CI": "BILLING_BLOCKED_BEFORE_STEPS",
+  "new_Python_tests": 108,
+  "semantic_source_proofs": "PAPER_ONLY",
+  "original_Schur_sign": "OPEN",
+  "RH_proved": false
+}

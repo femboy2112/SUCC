@@ -1,0 +1,131 @@
+{
+  "head": "2c44b033e400801ceceaf5758bc0671b4226e1e6",
+  "branch": "research/arithmetic-response-kernel-2026-10-16",
+  "pr": "https://github.com/femboy2112/YEAN/pull/137",
+  "local_status": "31 new theorems and 12 definitions kernel checked; 63 Rust tests passed",
+  "hosted_status": "BILLING_BLOCKED_BEFORE_EXECUTION",
+  "runs": [
+    {
+      "run_id": 38855573119,
+      "jobs": {
+        "total_count": 1,
+        "jobs": [
+          {
+            "id": 116826146702,
+            "run_id": 38855573119,
+            "workflow_name": "Repository checks",
+            "head_branch": "research/arithmetic-response-kernel-2026-10-16",
+            "run_url": "https://api.github.com/repos/femboy2112/yean/actions/runs/38855573119",
+            "run_attempt": 1,
+            "node_id": "CR_kwDOTmsBm88AAAAbM2GHjg",
+            "head_sha": "2c44b033e400801ceceaf5758bc0671b4226e1e6",
+            "url": "https://api.github.com/repos/femboy2112/yean/actions/jobs/116826146702",
+            "html_url": "https://github.com/femboy2112/yean/actions/runs/38855573119/job/116826146702",
+            "status": "completed",
+            "conclusion": "failure",
+            "created_at": "2026-10-16T05:24:03Z",
+            "started_at": "2026-10-16T05:24:03Z",
+            "completed_at": "2026-10-16T05:24:04Z",
+            "name": "validate",
+            "steps": [],
+            "check_run_url": "https://api.github.com/repos/femboy2112/yean/check-runs/116826146702",
+            "labels": [
+              "ubuntu-latest"
+            ],
+            "runner_id": 0,
+            "runner_name": "",
+            "runner_group_id": 0,
+            "runner_group_name": ""
+          }
+        ]
+      },
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/femboy2112/yean/blob/2c44b033e400801ceceaf5758bc0671b4226e1e6/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/femboy2112/yean/blob/2c44b033e400801ceceaf5758bc0671b4226e1e6/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "notice",
+          "title": "",
+          "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+          "raw_details": ""
+        }
+      ]
+    },
+    {
+      "run_id": 38855552207,
+      "jobs": {
+        "total_count": 1,
+        "jobs": [
+          {
+            "id": 116826077683,
+            "run_id": 38855552207,
+            "workflow_name": "Repository checks",
+            "head_branch": "research/arithmetic-response-kernel-2026-10-16",
+            "run_url": "https://api.github.com/repos/femboy2112/yean/actions/runs/38855552207",
+            "run_attempt": 1,
+            "node_id": "CR_kwDOTmsBm88AAAAbM2B58w",
+            "head_sha": "2c44b033e400801ceceaf5758bc0671b4226e1e6",
+            "url": "https://api.github.com/repos/femboy2112/yean/actions/jobs/116826077683",
+            "html_url": "https://github.com/femboy2112/yean/actions/runs/38855552207/job/116826077683",
+            "status": "completed",
+            "conclusion": "failure",
+            "created_at": "2026-10-16T05:23:48Z",
+            "started_at": "2026-10-16T05:23:48Z",
+            "completed_at": "2026-10-16T05:23:50Z",
+            "name": "validate",
+            "steps": [],
+            "check_run_url": "https://api.github.com/repos/femboy2112/yean/check-runs/116826077683",
+            "labels": [
+              "ubuntu-latest"
+            ],
+            "runner_id": 0,
+            "runner_name": "",
+            "runner_group_id": 0,
+            "runner_group_name": ""
+          }
+        ]
+      },
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/femboy2112/yean/blob/2c44b033e400801ceceaf5758bc0671b4226e1e6/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/femboy2112/yean/blob/2c44b033e400801ceceaf5758bc0671b4226e1e6/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "notice",
+          "title": "",
+          "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+          "raw_details": ""
+        }
+      ]
+    }
+  ]
+}

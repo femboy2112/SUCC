@@ -32,6 +32,13 @@ sign and fiber envelopes; add compact Galerkin bounds, relative-residual
 counterexamples, typed formal instances and an authentic-source trial-family obstruction.
 The original signed Schur problem remains open.
 
+**Arithmetic Resonance:** [source theorem and execution report](research/2026-10-16/ARITHMETIC_RESONANCE_MEGA_ROUND.md)
+and [claim supplement](docs/CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md) add exact prime-hinge
+geometry, a source-specific dense high-response theorem conditional on inherited
+coercivity, and improved two-sided first-window Schur bounds. Fractional spectral
+rigidity and the original sign remain open; finite spectral moments alone cannot
+control inverse response.
+
 ## The central mathematical objects
 
 SUCC works with actual carriers — `N, Z, Q, R, C, Ẑ, Q_p, A_f, A_Q` — and groups, rings, fields,

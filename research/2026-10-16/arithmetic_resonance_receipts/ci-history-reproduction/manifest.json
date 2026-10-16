@@ -1,0 +1,94 @@
+{
+  "status": "REPRODUCED_AND_REPAIRED",
+  "cause": "Shallow checkout omits pinned source origin and base ancestry",
+  "repair": "Checkout full history; no proof/provenance gate weakened",
+  "mathematical_code_changed": false,
+  "isolated_clone": "/tmp/succ-arithmetic-shallow-8ia7mv2s/checkout",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "clone",
+        "--no-local",
+        "--depth",
+        "1",
+        "--branch",
+        "research/arithmetic-wavefront-spectral-response-2026-10-16",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance",
+        "/tmp/succ-arithmetic-shallow-8ia7mv2s/checkout"
+      ],
+      "cwd": "None",
+      "label": "shallow-clone",
+      "exit": 0,
+      "elapsed": 0.9464274679776281
+    },
+    {
+      "argv": [
+        "/tmp/succ-proof-teeth-py313/bin/python",
+        "-B",
+        "scripts/spectral_response_probe.py",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance/research/2026-10-16/arithmetic_resonance_receipts/ci-history-reproduction/shallow-spectral_response.json"
+      ],
+      "cwd": "/tmp/succ-arithmetic-shallow-8ia7mv2s/checkout",
+      "label": "shallow-spectral_response",
+      "exit": 1,
+      "elapsed": 0.2525533789303154
+    },
+    {
+      "argv": [
+        "/tmp/succ-proof-teeth-py313/bin/python",
+        "-B",
+        "scripts/prime_wavefront_geometry_probe.py",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance/research/2026-10-16/arithmetic_resonance_receipts/ci-history-reproduction/shallow-prime_wavefront_geometry.json"
+      ],
+      "cwd": "/tmp/succ-arithmetic-shallow-8ia7mv2s/checkout",
+      "label": "shallow-prime_wavefront_geometry",
+      "exit": 1,
+      "elapsed": 7.939458906883374
+    },
+    {
+      "argv": [
+        "git",
+        "fetch",
+        "--unshallow",
+        "origin"
+      ],
+      "cwd": "/tmp/succ-arithmetic-shallow-8ia7mv2s/checkout",
+      "label": "fetch-full-history",
+      "exit": 0,
+      "elapsed": 0.5364221611525863
+    },
+    {
+      "argv": [
+        "/tmp/succ-proof-teeth-py313/bin/python",
+        "-B",
+        "scripts/spectral_response_probe.py",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance/research/2026-10-16/arithmetic_resonance_receipts/ci-history-reproduction/complete-spectral_response.json"
+      ],
+      "cwd": "/tmp/succ-arithmetic-shallow-8ia7mv2s/checkout",
+      "label": "complete-spectral_response",
+      "exit": 0,
+      "elapsed": 0.3176352621521801
+    },
+    {
+      "argv": [
+        "/tmp/succ-proof-teeth-py313/bin/python",
+        "-B",
+        "scripts/prime_wavefront_geometry_probe.py",
+        "--output",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance/research/2026-10-16/arithmetic_resonance_receipts/ci-history-reproduction/complete-prime_wavefront_geometry.json"
+      ],
+      "cwd": "/tmp/succ-arithmetic-shallow-8ia7mv2s/checkout",
+      "label": "complete-prime_wavefront_geometry",
+      "exit": 0,
+      "elapsed": 7.778730318881571
+    }
+  ],
+  "failed_hosted_runs": [
+    38856926803,
+    38856947380
+  ]
+}
