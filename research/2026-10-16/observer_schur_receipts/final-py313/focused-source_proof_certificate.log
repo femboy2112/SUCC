@@ -1,0 +1,13 @@
+test_conditional_retains_open_premise (test_source_proof_certificate.CapsuleTests.test_conditional_retains_open_premise) ... ok
+test_hash_audit_issues_no_truth_authority (test_source_proof_certificate.CapsuleTests.test_hash_audit_issues_no_truth_authority) ... ok
+test_missing_or_circular_premises (test_source_proof_certificate.CapsuleTests.test_missing_or_circular_premises) ... ok
+test_no_finite_to_global_or_lean_laundering (test_source_proof_certificate.CapsuleTests.test_no_finite_to_global_or_lean_laundering) ... ok
+test_open_target_cannot_wear_a_proof_label (test_source_proof_certificate.CapsuleTests.test_open_target_cannot_wear_a_proof_label) ... ok
+test_ordinary_hypotheses_survive_every_edge (test_source_proof_certificate.CapsuleTests.test_ordinary_hypotheses_survive_every_edge) ... ok
+test_path_escape_or_unsafe_epoch (test_source_proof_certificate.CapsuleTests.test_path_escape_or_unsafe_epoch) ... ok
+test_transitive_premise_laundering_is_rejected (test_source_proof_certificate.CapsuleTests.test_transitive_premise_laundering_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.007s
+
+OK

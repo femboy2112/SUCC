@@ -1,0 +1,150 @@
+{
+  "Neumann_metric": {
+    "K_identity": "int_{-a}^a f_i*f_j = <(-Delta_N)^-1 i*f_i_prime, i*f_j_prime>",
+    "cross": "259723/129024",
+    "diag": "151/63",
+    "eigenvalues": [
+      "63219/14336",
+      "7075/18432"
+    ]
+  },
+  "P30_projection": [
+    {
+      "center": "0",
+      "full_norm_sq": "250/3",
+      "leakage_norm_sq_outward": [
+        "13526152/10000000000",
+        "13526153/10000000000"
+      ],
+      "relative_leakage_below_1_over_60000": true,
+      "strictly_nonzero": true
+    },
+    {
+      "center": "1/10",
+      "full_norm_sq": "250/3",
+      "leakage_norm_sq_outward": [
+        "12941211/10000000000",
+        "12941212/10000000000"
+      ],
+      "relative_leakage_below_1_over_60000": true,
+      "strictly_nonzero": true
+    }
+  ],
+  "P4_projection": [
+    {
+      "P4_zero_shift_Schur_positive_proved": false,
+      "WB4_previous_full_A4_positive": true,
+      "center": "0",
+      "exact_high_fraction_of_L2": "2809/6250",
+      "high_residual_strictly_positive": true
+    },
+    {
+      "P4_zero_shift_Schur_positive_proved": false,
+      "WB4_previous_full_A4_positive": true,
+      "center": "1/10",
+      "exact_high_fraction_of_L2": "869/3125",
+      "high_residual_strictly_positive": true
+    }
+  ],
+  "RH_proved": false,
+  "certified_intervals": {
+    "cross": [
+      "75407118/10000000000",
+      "236090173/10000000000"
+    ],
+    "diag": [
+      "1047590104/10000000000",
+      "1208274987/10000000000"
+    ],
+    "eigen_minus": [
+      "811499931/10000000000",
+      "1132867868/10000000000"
+    ],
+    "eigen_plus": [
+      "1122997223/10000000000",
+      "1444365160/10000000000"
+    ],
+    "gamma_tail_bound": "409105/50923779",
+    "relative_K_lower_floor": "254659013/10000000000"
+  },
+  "numerical_calibrations_are_proofs": false,
+  "original_high_resolvent_response_computed": false,
+  "original_low_P1_P2_A": {
+    "A11": [
+      "1003541/10000000000",
+      "1257433/10000000000"
+    ],
+    "A12": "0 (exact parity)",
+    "A22": [
+      "2287523/10000000000",
+      "2418950/10000000000"
+    ],
+    "Neumann_metric_unscaled": [
+      "1/30",
+      "1/210"
+    ],
+    "both_original_A_diagonal_positive": true,
+    "original_R0_computed": false,
+    "original_S0_positive_proved": false
+  },
+  "original_low_schur_sign_verified": false,
+  "parent_branch_head": "d7545a1c5fe7b16d12af877513283f802f3d151d",
+  "schema": "SUCC_PWS_SOURCE_CERTIFIED_SPLINES_v2",
+  "source": {
+    "all_original_prime_power_tape_slices_equal": true,
+    "completed_poles": [
+      0,
+      1
+    ],
+    "conductor": 1,
+    "gamma_ladder_depth": 64,
+    "half_density": "1/2",
+    "nontrivial_zeros_as_inputs": false,
+    "object": "zeta",
+    "parity": 0,
+    "prime_tape": [
+      [
+        2,
+        2
+      ]
+    ],
+    "root_number": "1"
+  },
+  "source_mutations": {
+    "contact_delta": "-1/8",
+    "contact_negative_branch": [
+      "-4389262124/10000000000",
+      "-4067894187/10000000000"
+    ],
+    "fake6_impulse_change": [
+      "-12619/10000000000",
+      "-12618/10000000000"
+    ],
+    "non_euler_multiplier_A": "4738381338321616896",
+    "non_euler_multiplier_N": "7958661109946400884391936",
+    "non_euler_multiplier_zero_real_part": "3/4",
+    "non_euler_right_halfplane_max_error": "1/2821109907456"
+  },
+  "status": "PROVED_LOCAL_ORIGINAL_SIGNED_WEIL_NOT_LOW_SCHUR",
+  "strict_rational_theorem_checks": {
+    "contact_negative_mutant_upper_below_minus_quarter": true,
+    "fake6_larger_support_negative": true,
+    "fake6_outside_small_test_support": true,
+    "non_Euler_right_halfplane_uniform_defect_under_10e_minus_12": true,
+    "original_M_above_one_fiftieth_K": true,
+    "original_M_above_one_sixteenth_I": true,
+    "original_low_A11_above_one_over_10000": true,
+    "original_low_A22_above_one_over_5000": true
+  },
+  "test_basis": {
+    "autocorrelation": "1/h * B7((u-d)/h)",
+    "centers": [
+      "0",
+      "1/10"
+    ],
+    "mesh": "1/5",
+    "radius": "1/2",
+    "type": "two real cubic cardinal B3 translates"
+  },
+  "test_continuity_budget_scoped_premises": "C1 bounds given by caller; example budget 7/100"
+}

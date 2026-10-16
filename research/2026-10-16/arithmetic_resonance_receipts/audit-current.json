@@ -1,0 +1,1718 @@
+{
+  "schema": "ARITHMETIC_RESONANCE_INDEPENDENT_AUDIT_V1",
+  "utc": "2026-10-16T05:10:31.103506+00:00",
+  "argv": [
+    "scripts/arithmetic_resonance_independent_audit.py",
+    "--output",
+    "research/2026-10-16/arithmetic_resonance_receipts/audit-current.json"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "git_head": "b9c23031028bfc48e5a30c845477297774c1c5cb",
+  "status": "PASS_WITH_OPEN_SIGN",
+  "checks": [
+    {
+      "name": "live source and originating commit byte-identical",
+      "pass": true,
+      "blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+      "sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+      "origin": "dc6b7e3adbfb67c2913c145a4efb95fe3d50b1bc"
+    },
+    {
+      "name": "REFUTED derivative HS contraction through four-low compression",
+      "pass": true,
+      "G": "f tensor f, f=P6(2t)-P4(2t)/2",
+      "derivative_HS_squared": "147/26",
+      "compressed_derivative_HS_squared": "84/13",
+      "squared_ratio": "8/7"
+    },
+    {
+      "name": "projection AFTER derivative positive control",
+      "pass": true
+    },
+    {
+      "name": "weighted Legendre derivative contraction survives",
+      "pass": true,
+      "before": "443/117",
+      "after": "42/13"
+    },
+    {
+      "name": "finite response is LOWER; finite short is UPPER",
+      "pass": true,
+      "finite_response": "1/2",
+      "full_response": "2/3",
+      "finite_short": "1/10",
+      "true_short": "-1/15"
+    },
+    {
+      "name": "positive finite short does not certify full sign",
+      "pass": true
+    },
+    {
+      "name": "soft mode response remains one at n=2",
+      "pass": true,
+      "compact_eigenvalue": "1/4",
+      "cross_norm": "1/2"
+    },
+    {
+      "name": "soft mode response remains one at n=7",
+      "pass": true,
+      "compact_eigenvalue": "1/49",
+      "cross_norm": "1/7"
+    },
+    {
+      "name": "soft mode response remains one at n=31",
+      "pass": true,
+      "compact_eigenvalue": "1/961",
+      "cross_norm": "1/31"
+    },
+    {
+      "name": "unitary kernel factor and physical form division a=1/4",
+      "pass": true,
+      "physical_form": "-1/288",
+      "reference_form": "-1/144"
+    },
+    {
+      "name": "unitary primitive squared scale a=1/4",
+      "pass": true
+    },
+    {
+      "name": "unitary kernel factor and physical form division a=1/2",
+      "pass": true,
+      "physical_form": "-1/18",
+      "reference_form": "-1/18"
+    },
+    {
+      "name": "unitary primitive squared scale a=1/2",
+      "pass": true
+    },
+    {
+      "name": "unitary kernel factor and physical form division a=3/4",
+      "pass": true,
+      "physical_form": "-9/32",
+      "reference_form": "-3/16"
+    },
+    {
+      "name": "unitary primitive squared scale a=3/4",
+      "pass": true
+    },
+    {
+      "name": "unitary kernel factor and physical form division a=1",
+      "pass": true,
+      "physical_form": "-8/9",
+      "reference_form": "-4/9"
+    },
+    {
+      "name": "unitary primitive squared scale a=1",
+      "pass": true
+    },
+    {
+      "name": "independent hinge zero-threshold calibration 1,1",
+      "pass": true
+    },
+    {
+      "name": "independent hinge zero-threshold calibration 2,4",
+      "pass": true
+    },
+    {
+      "name": "independent hinge zero-threshold calibration 5,7",
+      "pass": true
+    },
+    {
+      "name": "prime-power support a=1/4",
+      "pass": true
+    },
+    {
+      "name": "primitive transport API a=1/4",
+      "pass": true
+    },
+    {
+      "name": "prime-power support a=1/2",
+      "pass": true
+    },
+    {
+      "name": "primitive transport API a=1/2",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1/2,n=2,i=1,j=1",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1/2,n=2,i=1,j=3",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1/2,n=2,i=2,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1/2,n=2,i=3,j=4",
+      "pass": true
+    },
+    {
+      "name": "prime-power support a=3/4",
+      "pass": true
+    },
+    {
+      "name": "primitive transport API a=3/4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=2,i=1,j=1",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=2,i=1,j=3",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=2,i=2,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=2,i=3,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=3,i=1,j=1",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=3,i=1,j=3",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=3,i=2,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=3,i=3,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=4,i=1,j=1",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=4,i=1,j=3",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=4,i=2,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=3/4,n=4,i=3,j=4",
+      "pass": true
+    },
+    {
+      "name": "prime-power support a=1",
+      "pass": true
+    },
+    {
+      "name": "primitive transport API a=1",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=2,i=1,j=1",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=2,i=1,j=3",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=2,i=2,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=2,i=3,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=3,i=1,j=1",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=3,i=1,j=3",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=3,i=2,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=3,i=3,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=4,i=1,j=1",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=4,i=1,j=3",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=4,i=2,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=4,i=3,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=5,i=1,j=1",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=5,i=1,j=3",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=5,i=2,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=5,i=3,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=7,i=1,j=1",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=7,i=1,j=3",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=7,i=2,j=4",
+      "pass": true
+    },
+    {
+      "name": "true hinge primitive-overlap enclosure a=1,n=7,i=3,j=4",
+      "pass": true
+    },
+    {
+      "name": "cross radius rejects Fraction(0, 1)",
+      "pass": true,
+      "exception": "WavefrontTransportError",
+      "message": "exact radius 0<a<=1 required"
+    },
+    {
+      "name": "cross radius rejects Fraction(-1, 1)",
+      "pass": true,
+      "exception": "WavefrontTransportError",
+      "message": "exact radius 0<a<=1 required"
+    },
+    {
+      "name": "cross radius rejects Fraction(1001, 1000)",
+      "pass": true,
+      "exception": "WavefrontTransportError",
+      "message": "exact radius 0<a<=1 required"
+    },
+    {
+      "name": "cross radius rejects 0.5",
+      "pass": true,
+      "exception": "WeilHierarchyError",
+      "message": "exact integer or Fraction required; float is not a proof"
+    },
+    {
+      "name": "cross radius rejects True",
+      "pass": true,
+      "exception": "WeilHierarchyError",
+      "message": "exact integer or Fraction required; float is not a proof"
+    },
+    {
+      "name": "cross rejects fake/unsupported address 6",
+      "pass": true,
+      "exception": "WavefrontTransportError",
+      "message": "genuine source prime-power address required"
+    },
+    {
+      "name": "cross rejects fake/unsupported address 9",
+      "pass": true,
+      "exception": "WavefrontTransportError",
+      "message": "genuine source prime-power address required"
+    },
+    {
+      "name": "cross rejects fake/unsupported address True",
+      "pass": true,
+      "exception": "WavefrontTransportError",
+      "message": "genuine source prime-power address required"
+    },
+    {
+      "name": "cross rejects fake/unsupported address 2.0",
+      "pass": true,
+      "exception": "WavefrontTransportError",
+      "message": "genuine source prime-power address required"
+    },
+    {
+      "name": "positive omitted Gamma exact cap a=1/2",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=0,j=0",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=0,j=1",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=0,j=2",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=0,j=3",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=1,j=0",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=1,j=1",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=1,j=2",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=1,j=3",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=2,j=0",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=2,j=1",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=2,j=2",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=2,j=3",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=3,j=0",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=3,j=1",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=3,j=2",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=1/2,i=3,j=3",
+      "pass": true
+    },
+    {
+      "name": "cross does not transfer high coercivity a=1/2",
+      "pass": true
+    },
+    {
+      "name": "positive omitted Gamma exact cap a=3/4",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=0,j=0",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=0,j=1",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=0,j=2",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=0,j=3",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=1,j=0",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=1,j=1",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=1,j=2",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=1,j=3",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=2,j=0",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=2,j=1",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=2,j=2",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=2,j=3",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=3,j=0",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=3,j=1",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=3,j=2",
+      "pass": true
+    },
+    {
+      "name": "full matrix Loewner bracket a=3/4,i=3,j=3",
+      "pass": true
+    },
+    {
+      "name": "cross does not transfer high coercivity a=3/4",
+      "pass": true
+    },
+    {
+      "name": "continuity uses whole-kernel O(1/J) remainder",
+      "pass": true,
+      "whole_kernel_tail": "37/1089",
+      "smaller_mean_zero_operator_tail": "82/35937"
+    },
+    {
+      "name": "missing prime cannot be replaced by finite menu",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=0,1,1",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=0,2,4",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=0,3,2",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=0,5,7",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=2/3,1,1",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=2/3,2,4",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=2/3,3,2",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=2/3,5,7",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=3/4,ell=1/3,1,1",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=3/4,ell=1/3,2,4",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=3/4,ell=1/3,3,2",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=3/4,ell=1/3,5,7",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=1,1,1",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=1,2,4",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=1,3,2",
+      "pass": true
+    },
+    {
+      "name": "rational hinge via primitive overlaps a=1/2,ell=1,5,7",
+      "pass": true
+    },
+    {
+      "name": "raw hinge HS exact b=0,c=1",
+      "pass": true
+    },
+    {
+      "name": "raw hinge HS exact b=1/3,c=2",
+      "pass": true
+    },
+    {
+      "name": "raw hinge HS exact b=3/4,c=-3",
+      "pass": true
+    },
+    {
+      "name": "raw hinge HS exact b=2,c=1",
+      "pass": true
+    },
+    {
+      "name": "zero-extension boundary atoms distribution duality degree=0",
+      "pass": true
+    },
+    {
+      "name": "zero-extension boundary atoms distribution duality degree=1",
+      "pass": true
+    },
+    {
+      "name": "zero-extension boundary atoms distribution duality degree=2",
+      "pass": true
+    },
+    {
+      "name": "zero-extension boundary atoms distribution duality degree=3",
+      "pass": true
+    },
+    {
+      "name": "zero-extension boundary atoms distribution duality degree=4",
+      "pass": true
+    },
+    {
+      "name": "zero-extension boundary atoms distribution duality degree=5",
+      "pass": true
+    },
+    {
+      "name": "zero-extension boundary atoms distribution duality degree=6",
+      "pass": true
+    },
+    {
+      "name": "piecewise jump cannot be discarded by weak derivative",
+      "pass": true,
+      "exception": "WavefrontGeometryError",
+      "message": "jump: weak derivative has a Dirac mass"
+    },
+    {
+      "name": "source geometry rejects missing half density",
+      "pass": true,
+      "exception": "WavefrontGeometryError",
+      "message": "wrong source half-density or logarithmic clock"
+    },
+    {
+      "name": "source geometry rejects fake invisible composite",
+      "pass": true,
+      "exception": "WeilHierarchyError",
+      "message": "false/composite/omitted independent source place"
+    },
+    {
+      "name": "spectral response versus rotated Schur solve shift=0",
+      "pass": true
+    },
+    {
+      "name": "spectral response versus rotated Schur solve shift=1/8",
+      "pass": true
+    },
+    {
+      "name": "spectral shift gap PSD and exact shift=1/8",
+      "pass": true
+    },
+    {
+      "name": "completion gap is distinct from regularization gap shift=1/8",
+      "pass": true
+    },
+    {
+      "name": "fractional matrix bounds retain cross terms shift=1/8",
+      "pass": true
+    },
+    {
+      "name": "spectral response versus rotated Schur solve shift=1",
+      "pass": true
+    },
+    {
+      "name": "spectral shift gap PSD and exact shift=1",
+      "pass": true
+    },
+    {
+      "name": "completion gap is distinct from regularization gap shift=1",
+      "pass": true
+    },
+    {
+      "name": "fractional matrix bounds retain cross terms shift=1",
+      "pass": true
+    },
+    {
+      "name": "spectral response versus rotated Schur solve shift=9",
+      "pass": true
+    },
+    {
+      "name": "spectral shift gap PSD and exact shift=9",
+      "pass": true
+    },
+    {
+      "name": "completion gap is distinct from regularization gap shift=9",
+      "pass": true
+    },
+    {
+      "name": "fractional matrix bounds retain cross terms shift=9",
+      "pass": true
+    },
+    {
+      "name": "Stieltjes tail exact boundary term and integral",
+      "pass": true
+    },
+    {
+      "name": "nonzero kernel coupling rejects zero response",
+      "pass": true,
+      "exception": "SpectralResponseError",
+      "message": "nonzero kernel coupling: zero response is not finite"
+    },
+    {
+      "name": "positive shift allows kernel coupling",
+      "pass": true
+    },
+    {
+      "name": "PSD atom requires full matrix not diagonal signs",
+      "pass": true,
+      "exception": "SpectralResponseError",
+      "message": "PSD weight required; signs are not repaired"
+    },
+    {
+      "name": "matched finite moments do not fix inverse order=0",
+      "pass": true
+    },
+    {
+      "name": "matched finite moments do not fix inverse order=1",
+      "pass": true
+    },
+    {
+      "name": "matched finite moments do not fix inverse order=3",
+      "pass": true
+    },
+    {
+      "name": "matched finite moments do not fix inverse order=5",
+      "pass": true
+    },
+    {
+      "name": "slow tail prefix respects infinite upper: response",
+      "pass": true
+    },
+    {
+      "name": "slow tail prefix respects infinite upper: shift_gap",
+      "pass": true
+    },
+    {
+      "name": "slow tail prefix respects infinite upper: completion_gap",
+      "pass": true
+    },
+    {
+      "name": "resolvent full-entry parity and finite enclosure 1,1",
+      "pass": true
+    },
+    {
+      "name": "resolvent full-entry parity and finite enclosure 1,3",
+      "pass": true
+    },
+    {
+      "name": "resolvent full-entry parity and finite enclosure 2,2",
+      "pass": true
+    },
+    {
+      "name": "resolvent full-entry parity and finite enclosure 3,4",
+      "pass": true
+    },
+    {
+      "name": "forged optional source upper certificate rejected",
+      "pass": true,
+      "exception": "TypeError",
+      "message": "shifted_certificate() got an unexpected keyword argument 'upper'"
+    },
+    {
+      "name": "zero shift cannot enter positive-shift certificate",
+      "pass": true,
+      "exception": "ResolventError",
+      "message": "strictly positive shift required; no zero-gap substitution"
+    },
+    {
+      "name": "resolvent soft mode counterexample index=3",
+      "pass": true
+    },
+    {
+      "name": "resolvent soft mode counterexample index=29",
+      "pass": true
+    },
+    {
+      "name": "resolvent cap uses correct metric odd",
+      "pass": true
+    },
+    {
+      "name": "resolvent cap uses correct metric even",
+      "pass": true
+    },
+    {
+      "name": "primitive high-domain independent coefficients n=5",
+      "pass": true
+    },
+    {
+      "name": "primitive high-domain independent coefficients n=6",
+      "pass": true
+    },
+    {
+      "name": "primitive high-domain independent coefficients n=11",
+      "pass": true
+    },
+    {
+      "name": "Gamma multiplier whole tower tail xi=0",
+      "pass": true
+    },
+    {
+      "name": "Gamma multiplier whole tower tail xi=3/2",
+      "pass": true
+    },
+    {
+      "name": "Gamma multiplier whole tower tail xi=33/2",
+      "pass": true
+    },
+    {
+      "name": "logarithmic spectral lower band n=1",
+      "pass": true
+    },
+    {
+      "name": "logarithmic spectral lower band n=8",
+      "pass": true
+    },
+    {
+      "name": "logarithmic spectral lower band n=32",
+      "pass": true
+    },
+    {
+      "name": "Gamma primitive integration-by-parts n=5,j=0",
+      "pass": true
+    },
+    {
+      "name": "Gamma primitive integration-by-parts n=6,j=2",
+      "pass": true
+    },
+    {
+      "name": "nonzero endpoint mutant retains boundary defect",
+      "pass": true
+    },
+    {
+      "name": "numerical derivative refuses singular diagonal",
+      "pass": true,
+      "exception": "SourceRangeError",
+      "message": "nonzero finite separation |r|<=1 required"
+    },
+    {
+      "name": "source range preserves fractional and Schur debt",
+      "pass": true
+    },
+    {
+      "name": "valid open packet grants no semantic authority",
+      "pass": true
+    },
+    {
+      "name": "canonical-rehashed packet forgery source_sign",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "unsupported status, analytic budget or premise discharge"
+    },
+    {
+      "name": "canonical-rehashed packet forgery proof_authority",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "unsupported status, analytic budget or premise discharge"
+    },
+    {
+      "name": "canonical-rehashed packet forgery outstanding_obligations",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "unsupported status, analytic budget or premise discharge"
+    },
+    {
+      "name": "canonical-rehashed packet forgery source_upper_matrix",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "unsupported status, analytic budget or premise discharge"
+    },
+    {
+      "name": "canonical-rehashed packet forgery source_lower_matrix",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "unsupported status, analytic budget or premise discharge"
+    },
+    {
+      "name": "canonical-rehashed packet forgery global_conclusion",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "unsupported status, analytic budget or premise discharge"
+    },
+    {
+      "name": "canonical-rehashed packet forgery estimate_status",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "unsupported status, analytic budget or premise discharge"
+    },
+    {
+      "name": "canonical-rehashed packet forgery RH_proved",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "unsupported status, analytic budget or premise discharge"
+    },
+    {
+      "name": "canonical-rehashed packet forgery kernel_proof_of_analytic_source",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "unsupported status, analytic budget or premise discharge"
+    },
+    {
+      "name": "canonical-rehashed packet forgery new_proof_claim",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "unsupported status, analytic budget or premise discharge"
+    },
+    {
+      "name": "canonical-rehashed source forgery coordinate_metric",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "source/radius/channel/metric mapping mismatch"
+    },
+    {
+      "name": "canonical-rehashed source forgery radius",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "source/radius/channel/metric mapping mismatch"
+    },
+    {
+      "name": "canonical-rehashed source forgery signed_channels",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "source/radius/channel/metric mapping mismatch"
+    },
+    {
+      "name": "canonical-rehashed source forgery source_epoch",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "source/radius/channel/metric mapping mismatch"
+    },
+    {
+      "name": "canonical-rehashed derivative budget substitution",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "unsupported status, analytic budget or premise discharge"
+    },
+    {
+      "name": "canonical-rehashed transitive open premise laundering",
+      "pass": true,
+      "exception": "CapsuleError",
+      "message": "Unproved premises cannot disappear from a theorem type"
+    },
+    {
+      "name": "hash-valid false prose remains nonauthoritative",
+      "pass": true
+    },
+    {
+      "name": "transitive dependency debt actually retained",
+      "pass": true
+    },
+    {
+      "name": "Legendre sup factorizations have positive residual discriminants",
+      "pass": true
+    },
+    {
+      "name": "independent non-Gamma BV constant fits 16",
+      "pass": true
+    },
+    {
+      "name": "resolvent-lower-initial.json source/BV/domain pins",
+      "pass": true
+    },
+    {
+      "name": "resolvent-lower-initial.json whole positive-half cells mode=1",
+      "pass": true
+    },
+    {
+      "name": "resolvent-lower-initial.json reflected exact cell integration mode=1",
+      "pass": true
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=1,cell=0",
+      "pass": true,
+      "independent": [
+        "-1146449145804301634849378896505159223473835620829242325789/100000000000000000000000000000000000000000000000000000000000",
+        "-11464491457800485353206861955838709506161696052042423257889/1000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "-573224572902150817424689448253/50000000000000000000000000000000",
+        "-1146449145780048535320686195583/100000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=1,cell=128",
+      "pass": true,
+      "independent": [
+        "3112692437390910604471568876040009406903439816765621236467/500000000000000000000000000000000000000000000000000000000000",
+        "1245076974992649105790939229058271714726707957956248494587/200000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "622538487478182120894313775207/100000000000000000000000000000000",
+        "62253848749632455289546961453/10000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=1,cell=255",
+      "pass": true,
+      "independent": [
+        "-1680927867987316067881424970981434949564287914436917413443/50000000000000000000000000000000000000000000000000000000000",
+        "-33618557359745374892500006473677730325209098132488348268859/1000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "-3361855735974632135762849941963/100000000000000000000000000000000",
+        "-3361855735974537489250000647367/100000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json whole positive-half cells mode=2",
+      "pass": true
+    },
+    {
+      "name": "resolvent-lower-initial.json reflected exact cell integration mode=2",
+      "pass": true
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=2,cell=0",
+      "pass": true,
+      "independent": [
+        "-61277952080696997565998052406888032223498956447040663247/500000000000000000000000000000000000000000000000000000000000",
+        "-122555904160920301781826325498907152867746623526405545243/1000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "-6127795208069699756599805241/50000000000000000000000000000000",
+        "-12255590416092030178182632549/100000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=2,cell=128",
+      "pass": true,
+      "independent": [
+        "2271385811033485918783534381967155614889341949555556387617/1000000000000000000000000000000000000000000000000000000000000",
+        "567846452781138105791084038389891598192770868324558042217/250000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "56784645275837147969588359549/25000000000000000000000000000000",
+        "56784645278113810579108403839/25000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=2,cell=255",
+      "pass": true,
+      "independent": [
+        "-17573707436425220280725438704583253317768814585378229509637/500000000000000000000000000000000000000000000000000000000000",
+        "-35147414872849495944887088551000598455136899991374134800523/1000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "-3514741487285044056145087740917/100000000000000000000000000000000",
+        "-35147414872849495944887088551/1000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json whole positive-half cells mode=3",
+      "pass": true
+    },
+    {
+      "name": "resolvent-lower-initial.json reflected exact cell integration mode=3",
+      "pass": true
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=3,cell=0",
+      "pass": true,
+      "independent": [
+        "-26432387085297057281058585502254223458697340932915074607/1000000000000000000000000000000000000000000000000000000000000",
+        "-26432387024665464937232521136813982993192583338597876807/1000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "-2643238708529705728105858551/100000000000000000000000000000000",
+        "-2643238702466546493723252113/100000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=3,cell=128",
+      "pass": true,
+      "independent": [
+        "-7736596444540434052197058255138055127833755213522611851027/1000000000000000000000000000000000000000000000000000000000000",
+        "-7736596444528651236628985804370456547488643954728989595701/1000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "-386829822227021702609852912757/50000000000000000000000000000000",
+        "-773659644452865123662898580437/100000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=3,cell=255",
+      "pass": true,
+      "independent": [
+        "-5584292819949696695148213141958267339186726873430446475497/250000000000000000000000000000000000000000000000000000000000",
+        "-5584292819949461233090755604813858227383429381569870501509/250000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "-139607320498742417378705328549/6250000000000000000000000000000",
+        "-89348685119191379729452089677/4000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json whole positive-half cells mode=4",
+      "pass": true
+    },
+    {
+      "name": "resolvent-lower-initial.json reflected exact cell integration mode=4",
+      "pass": true
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=4,cell=0",
+      "pass": true,
+      "independent": [
+        "-24583711725853541799594261907526126513244890684921397907/200000000000000000000000000000000000000000000000000000000000",
+        "-61459279314456221073794124208466908638500536552994857973/500000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "-6145927931463385449898565477/50000000000000000000000000000000",
+        "-12291855862891244214758824841/100000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=4,cell=128",
+      "pass": true,
+      "independent": [
+        "300089972261578987303863098039274792122064913135590192039/50000000000000000000000000000000000000000000000000000000000",
+        "6001799445259726158295613005777573494984285827455074763699/1000000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "300089972261578987303863098039/50000000000000000000000000000000",
+        "300089972262986307914780650289/50000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json independent displacement moments mode=4,cell=255",
+      "pass": true,
+      "independent": [
+        "-16618177526379364617271691664560111403346446508679654307969/500000000000000000000000000000000000000000000000000000000000",
+        "-16618177526378895534506695053095206013707533650505118949411/500000000000000000000000000000000000000000000000000000000000"
+      ],
+      "source_interval": [
+        "-3323635505275872923454338332913/100000000000000000000000000000000",
+        "-3323635505275779106901339010619/100000000000000000000000000000000"
+      ]
+    },
+    {
+      "name": "resolvent-lower-initial.json normalized sector trace/tail odd",
+      "pass": true
+    },
+    {
+      "name": "resolvent-lower-initial.json normalized sector trace/tail even",
+      "pass": true
+    },
+    {
+      "name": "original source unchanged at audit end",
+      "pass": true
+    },
+    {
+      "name": "inspected module stable during audit: observational_succ/prime_wavefront_geometry.py",
+      "pass": true
+    },
+    {
+      "name": "inspected module stable during audit: observational_succ/spectral_response.py",
+      "pass": true
+    },
+    {
+      "name": "inspected module stable during audit: observational_succ/arithmetic_source_range.py",
+      "pass": true
+    },
+    {
+      "name": "inspected module stable during audit: observational_succ/arithmetic_resolvent.py",
+      "pass": true
+    },
+    {
+      "name": "inspected module stable during audit: observational_succ/cross_prime_wavefront.py",
+      "pass": true
+    },
+    {
+      "name": "inspected module stable during audit: observational_succ/spectral_tail_contract.py",
+      "pass": true
+    }
+  ],
+  "failures": [],
+  "pending_modules": [],
+  "evidence": {
+    "source_before": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+    "range_countermodel": {
+      "D_n": "n^-4",
+      "b_n": "n^-3",
+      "energy_response_n": "1/n",
+      "inverse_response_n": "n",
+      "bounded_inverse_claim": "REFUTED",
+      "source_specific": false
+    },
+    "independent_hinges": [
+      {
+        "a": "1/2",
+        "n": 2,
+        "i": 1,
+        "j": 1,
+        "independent": [
+          "-760469276782587504944060762056989862009879252742335933597743362128667920094130999211947544048762194000839254218778543386021091438073984604305853852535488100795555035589323324058802211503856372098648147929932275825352433548838460670006287091290318260051781472528944821321203451763950252514125801701772609812187943527152449922622270057604486018077001830194792157010500123814900569562659970900763412538603588835730208028453/226274169979695207808270195873551692571147500060311691708268758078517184000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-47529329798911719059003797628561866375617453296395995849858960133041045001669787738840359083685007656900020656495721045146590539975872545636147059636983603911009243901084070397249043049192455901998660646404580150989121371083964966411449239357932085882713602591495210625865722820881550762155019710471706466862094892070709421691169701859833521002597282358284622497536112911862041029073542196558271629638641201347857346999/14142135623730950488016887242096980785696718753769480731766797379907325000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-21005194628788951110879242111/6250000000000000000000000000000",
+          "-84020778515155804443516968443/25000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1/2",
+        "n": 2,
+        "i": 1,
+        "j": 3,
+        "independent": [
+          "-79621019919941240973311484636039501423203842132784794913898185950489110167254676120455636759130224393361396975158460120907815989256690728254664481529306355201292715176803820385156087998925335471112543792692247825440218432389494563709805871201643775421448105063597964176606094250994051129431550501797871100615009894453467775212888463355664745517431551241730712086292391664469667654403810046160078830714830811920147396775178199617367738418812920132572193547089660804255670123810685989021344521034856538197212732140923656243751804274121396713916597196246555102437/63356767594314658186315654844594473919921300016887273678315252261984811520000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-4976313744996327560831967789752468838950240133299049682118636621905374586312544291463099165297541543749038612081885253735902324107565167361321135227568556246291912704071200688046359490203530567320307125746229073101962057207249316551681105796809153940887864559760121329531433875351838773292964664005621759305057493857239838672395949192500824228065079491917674294518654593023884743188958972035564581346653342814771031962941013628440066485858304843869919924189201547770508669594423405361858655407087748134101768191873457215053581971167395242002983433220168218871/3959797974644666136644728427787154619995081251055454604894703266374051000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-196360780937428964739533149/156250000000000000000000000000",
+          "-31417724949988634358325303839/25000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1/2",
+        "n": 2,
+        "i": 2,
+        "j": 4,
+        "independent": [
+          "599662518917869215850878063322368323889344959196672288285008946886280891717605212901293631538388313808888872371643302075868889599473156067767560005355694491615037073307488042048889402908585468457347833654622668596186557744454938519284835755588991283488160613402655029417531495450384967622805326834417389657897210180497345043114034943250751697877133321631403241745812294279079712213744316888134527785244604315500344350398593466040587873460158689110456253453360857545342043614357129219733066590465479513063856769010308689899014785543290113492852112104800636295842038916001704187913850593215256657318525756203212733349141130541095698504897626591923488963308474896768298346847153442335675638295157136171/3167838379715732909315782742229723695996065000844363683915762613099240800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "9594600302685907453614049013157893182229519347146756612560143150182979891185037850080243320562277099373173592243014971667106931636268648500014849384496318877661693311117148161125710658183730745169400303866690873581542886124368631276923675756132498525555762852586293073225763933982016933723529961436418341347174756511007378579524632754579862794239030867503675787266157040391504815655745918125825710463930812347907375482983188034279105497146671492311547277104331615993735808334577676081273537716018559056039144480712214238005733505471371283718054749227889202686901402492630569350847690116330141399019929658129423072891580156346147427993663536350789498035876580640479793284621348846567430320286986865537/50685414075451726549052523875675579135937040013509818942652201809587849216000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "2366213356865132047876180607/12500000000000000000000000000000",
+          "18929706854921056383009444861/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1/2",
+        "n": 2,
+        "i": 3,
+        "j": 4,
+        "independent": [
+          "0",
+          "0"
+        ],
+        "producer": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 2,
+        "i": 1,
+        "j": 1,
+        "independent": [
+          "-22717704963106570295401114024983724324765120062492167755609190395947197036837061084438320557605667013499852892742914183019565114536613336706989347602188624848651387605969891507045792788653532006313962774216552818611061524658708940787444172706487081869326696290452912857965161466871450252514125801701772609812187943527152449922622270057604486018077001830194792157010500123814900569562659970900763412538603588835730208028453/509116882454314217568607940715491308285081875135701306343604705676663664000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-4259569680582481930387708879684448310893460011717281454176723199240088302708138749429541430578016166265969363940028431243272999950801621810721119461227597518741050791183505546465704740230011988177618988292941834090471440524736072115778173736931862935775922075431466567382621035730144652286465059131415119400586284676212128265073509105579500563007791847074853867492608338735586123087220626589674814888915923604043572040997/95459415460183915794113988884154620303452851587943994939425882314374443750000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-139443083614652276931142420427/3125000000000000000000000000000",
+          "-223108933783443643089827872683/5000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 2,
+        "i": 1,
+        "j": 3,
+        "independent": [
+          "-177783304424639087571169979607876755627127348079983186487387269195507889699727584913187377626922018236583464103247991363895502951367468531298612579666804362223674606107262587889883196003148252121784709500778416915074799804787057763843339267022122267911251618665010127583810409470688845768081239554229978386569785708571717751270013714647989987048943025339733631071888143092504696218860700244107904190587646568481427443878318314231052534059830417161796027649584237257750810017687240855574477788719265219742458961734417665177678829182017342387702371028035222157491/45820519420888279581174714664394217745657368762213117570924423510899729760000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-33334369579619828919594371176476891680086377764996847466385112974156777064013525928233120461769727605686731922492285453487640614495586334916520463229312863185668023848786562557927970379377508845382517687358989846821768517565155022462756537461385750041431856815041037789794567764687052081974122921334613872209418261514090600188903430011384708613181941634280477183119956680282195214974557594090146691993542953672437309535467577269331457065367844933087108538938229234758789429826181459440796566603037606343186472082231481663594392273357455103715564328522929236659/8591347391416552421470258999573915827310756642914959544548329408293699937500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-387999321421032832158781525679/100000000000000000000000000000000",
+          "-15519972856841313286351261027/4000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 2,
+        "i": 2,
+        "j": 4,
+        "independent": [
+          "-555041201378201138337471003448091939467167297054076587052125587794328875056730582141462196763288127293920969851525388974401685005802098884056383120688986037902819727277118233021891350371293348161857998849978727983628213019494341234944394095291799826379927618968918876972069788519379516281881965158288426248213627544335286044379401397947396066098271837637786656204787999969271148789789406131909515305937996049225418540360243347165382679970107683930235465910718845316550549204593793829582335314624970342255724792667388314420322837656486690979656399099430665561213470827503158327421065275664429939400420030146515961540189322790137365388002715627278233072270338608296937231449447993351471101291305577057627/247430804872796709738343459187728775826549791315950834882991886958858540704000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-104070225258412713438275813146517238650093868197639360072273547711431532852994085174265989548141470226007330147549092073435547467577167474960418626013675249277062393139824066107551191358995739520617937998569742749076518348765623360946740354420643476771128092949463826926963595961052184129918165925922269481015930217878304177586450311491548472882474763151824265244492654968002351460642507051813542081460803616853012342038968324583633957286068898538878898615347688847394973105602834154043720270572108478631000693959030399495474293661806167838385512212280623446076060235679426380329825049237294670012019038313453012199979675689304305530493703051524669799904317675132726473554053659859854131322191940824923/46393275913649383075939398597699145467478085871740781540560978804785979662500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-28040223289069939740363423009/12500000000000000000000000000000",
+          "-56080446578139879480726846017/25000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 2,
+        "i": 3,
+        "j": 4,
+        "independent": [
+          "0",
+          "0"
+        ],
+        "producer": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 3,
+        "i": 1,
+        "j": 1,
+        "independent": [
+          "-679062600765254424262527374651711145993823236912054626413844243048391803732209232810268620350720447045287472825316852730539480262520414587792726473030183115773845098763567253435499060841864749892676141987754843550718583487622434470598393361377615491812305392340468471588326196228935031243942748175632148769137592296046549642993483461510290805646220218019279648346157016117303479570275697473190682866605867710236278161/66510751010644888071453939513825498890603721746318616117342988010954227200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-3055781703443644909181373185932700156972204566104245818862299093717720124599920683243095825164352499294733686434449082936559500916106422446464476370622352289524341654091352196047231983025661647061492263808187274884635924138144303019247344536027796308754223437678310253023619051734722465969743652357198286470378471619456028514565225757905393253392388211775754909344128142962293342131187084846612987244911308303076408553/299298379547901996321542727812214745007716747858433772528043446049294039680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-1020981706636528678440345198687/100000000000000000000000000000000",
+          "-1020981706636528678440345198679/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 3,
+        "i": 1,
+        "j": 3,
+        "independent": [
+          "-1071553742967223091805135369274088754433132548759051916318209552195397691904343346216525488715573874193462911640422264122865842576106433702728710508680713672451188990136919381448542681389903464015338675499174815155227000620954078280064041958184149612122154622594740540216819056221377588205202756876170720122498397497599604879819554818520701863864515288988941592697535762871103279567761750864969842075310493716230174960651101656749758737647275243845010770871427428357684843377030075373188834657578679368567053956643891759841890321853862405483673693201978167/239438703638321597057234182249771796006173398286747018022434756839435217920000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-33753942903467527391861764132133795764643675285910135364023600894153947828616784914108712115191936395376045310980863667916881159095055112365750705430607572528968606191599149423620069342019841500725636265114588182709595138611662728706460132246120639913095100289785139022939086494683022136861852606386275290509658625691308809241434716797849627904396531876037863493845627835027225101792948459525867975052222809456095265306839180428265184183035965916490579970445909936929098002080243783536782254332013466446401682131812810195783868321900426824492500339237224537/7542319164607130307302876740867811574194462046032531067706694840442209799936000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-111881843524536550195223196661/25000000000000000000000000000000",
+          "-447527374098146200780892786629/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 3,
+        "i": 2,
+        "j": 4,
+        "independent": [
+          "1848993553315086193208630334284076535578157134827888353112509490720829241355300669801572284789405817054305742228969485030242374765435653677740329918808952051176033485834134444479497211054470189175566000420808881382753271607802832278237877713102796478681175725692772276012337579140143382638887278524911389630187251775343252965557265788394016904135034479388538779746944085269182321955094707641654543327521554469194583619464155834421097504691154501296362177838445351763115502048753494219560552803061341723413536053874956356555414809005817566901540517568041118248624032191640916518429859609099852497760859650120137989555337604535255612656935871361989056791060227706156018181054632000243194744163760511/1629140939555140146377421376027447300026003801943026710624646085535517316786176000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "58698208041748768038369216961399255097719274121520265178174904467335298754030322574490049579071415535438066650768829231496499141020400045655881704976699841560873598063417191015018822798105998902685466930792976201177936937542988400584004129545644860412416744273783422228357838908665996474343937912424807651855311729563485720789977060943604269969368029970541271498871339403503641397998295091713190254508775970079876539630737374667805566766429887424516111188116639758977865754352671882639176821253993738454327243500422640445978557502632485389419361095235852220708331653470519635333993933350186349762836503374328210698903557915500106123209740362909804798645653421620611390862932562325664513533452401/51718759985877464964362583365950707937333454029937355892845907477318007070720000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "56747501349391535642194909299/50000000000000000000000000000000",
+          "113495002698783071284389818613/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 3,
+        "i": 3,
+        "j": 4,
+        "independent": [
+          "0",
+          "0"
+        ],
+        "producer": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 4,
+        "i": 1,
+        "j": 1,
+        "independent": [
+          "-4023130251086714780246080349119165476606869673144201203296057950630020724272400411934188427163363660419074342856343993591635534560555896053810729016658515590708810068273222470268935300700561859376441665166205860231553850024828155660303053262210150925849440487066204290975229644643000797439315275231891200429009934157015391879402770669055567231354021763558548636480123504688219364436189572667923659466063638109467081/25600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-83815213564306557921793340606649280762643118190504191735334540638083830832862115835952225774979679723087178119991431404057683579739335262369789232579982213034178983639974524132307054404742323746015624902980509500272201513638101877402814925756622943953175617918818690288937950578012276691727270167742964154290360450706956703244202634330114052247685823669439366974306735577854735339251006888341875211842794782267841/533333333333333333333333333333333333333333333333333333333333333333333360000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-15715352543307479610336251369/100000000000000000000000000000000",
+          "-98220953395671747564601571/625000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 4,
+        "i": 1,
+        "j": 3,
+        "independent": [
+          "-9227074735762629361416057827168323966905706288389408141298179985036770856326822185166673431287001999583832886786349374398391999156861939327840417507818381489145708921485178237290327202172532114805438813931590016292679323488785956502182431118450259168107992851055718654261014736916987702439593679024769823471754457144530454394928725358897334941401810154818670519212326239612034798272617608682878857404772579844217722406494049396040602071142215464822689132698020167448590765151290027488630397935310066873201024587300210312717185071893310186586045579816809/71680000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-192230723661721445029501204732673415977202214341446002943712083021482916380776884719432363693870745366322541136598991813207505752074000720914111704196138513550962191080737262386690990996069220415655759757148541069948200627095065255028669284423981343508722295750629037985832099484909305950064492803105676235225151764411440293607247252070247836302244361504414337366788223232348188681805760357196351033860085598368054978386765365346572586258541476950519355694432489610225975885564413506038047976230019331835562859395974427794398967788406750068786131620449/1493333333333333333333333333333333333333333333333333333333333333333333408000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-1609074137793427274242476603/12500000000000000000000000000000",
+          "-2574518620469483638787962561/20000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 4,
+        "i": 2,
+        "j": 4,
+        "independent": [
+          "1195886644681448157735966559694615684131299320338737828929698379627254144933226681177737059203565107837627417517525322857525790995628558240636974454746176572088524247418619654550815554323160536651320508645471673009001761929739284010502367628176431624576182657809144995447725140651563543480031338171052273320427249754988493389316846354086151014516476879349270613520686284929736942167993278996462447647283541398497620097058478707820201679445348749370224582918265064057566367306600131996991561289797800368645542481913467736688537835911803367672521631999264885030426721058573211737872738810122793789258865354039655881237447731253447229827280275329297008686596136700766036078444688105452092206509/11946666666666666666666666666666666666666666666666666666666666666666667264000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "57402558944709511571326394865341552838302367376259415788625522222152923549145876275214600864699219255850082143316787830895431459469385235491606683844678717364470228071122348811417207446810123392012252936692408698205360675158398372828158551447512739276308739364061523136382512159984063484338901784957830373854233093986766612803099015227019644191415352518454755346385789534492680821403724991131067893892240228154703766686947012415460665058109962307945233373179543132126818854674819398952052100389166570186420657692450333254444959790654333726445514883283164658365279309411891252735663640185241567206482000787347039723613567482303724177049404424458544331357271935576515730891592754248333881941269/573440000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "625638241846460741003051701/6250000000000000000000000000000",
+          "10010211869543371856048827247/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "3/4",
+        "n": 4,
+        "i": 3,
+        "j": 4,
+        "independent": [
+          "0",
+          "0"
+        ],
+        "producer": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 2,
+        "i": 1,
+        "j": 1,
+        "independent": [
+          "-142565549346030849692536446258698015330285309293751854874301932663636714313152485924606265294629408466451699830110054678064427115635180571544151151662681891977163905010257429648981146040430148619581217952799586446511054252212527612951857212567762550922311577035546468109266702688021950252514125801701772609812187943527152449922622270057604486018077001830194792157010500123814900569562659970900763412538603588835730208028453/905096679918780831233080783494206770284590000241246766833075032314068736000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-26731040502380784317350583673505877874428495492578472788931612374431846806177467174810565393196397032572842667934260342900356364969864194074132243723746394094281988214704138942679280573221672057559916533664260497182977147500813920218939530163333156285154815850151239877089654449904644652286465059131415119400586284676212128265073509105579500563007791847074853867492608338735586123087220626589674814888915923604043572040997/169705627484771405856202646905163769428360625045233768781201568558887900000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-3937854168209522638598935826667/25000000000000000000000000000000",
+          "-1968927084104761319299467913333/12500000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 2,
+        "i": 1,
+        "j": 3,
+        "independent": [
+          "-136390118000760763900344041065435046649270405222402333438210605303497912511616968834383144508432984561850393022037292515817313373364294615555878268643420627080134695681304889758117385070840311300217956605060962989402547275037345111237894793133656323447228998741496404863747772613552522192717884233773736539993561137623647909477582636051339015328593604969102005086911455623821361760694430036388680038871699213799774701670498199617367738418812920132572193547089660804255670123810685989021344521034856538197212732140923656243751804274121396713916597196246555102437/1013708281509034530981050477513511582718740800270196378853044036191756984320000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-25573147125142643231314507699769071246738200979200437519664488494368591314076025259898300437433668270556915833353325435243033999824950546032297158017871450503717504657044758311919542837409089233501161725926916854651157288074055664472898842430244770698355738564348459890558238920435216905417497084405470220338803299372590270801176447519981722694071484589857784639436922938040563690178939898165093183835577581874908465951503040885320199457574914531609759772567604643311526008783270216085575966221263244402305304575620371645160745913502185726008950299660504656613/190070302782943974558946964533783421759763900050661821034945756785954448000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-13454572729516090705699531271/100000000000000000000000000000000",
+          "-13454572729516090705699531267/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 2,
+        "i": 2,
+        "j": 4,
+        "independent": [
+          "-44993043217561153382642681472809924739718538116275585865075180618883872624039304715904841894054835668096791696618881637951987384492758713457398093109044970550758770507776833149283533633704240793139127761632563236436626372970909575043160243718219414671976422014386054671334509855231024285430654671475203283783043251956586494734424791711794036360416333840028250123752156396311953850387057363790128575272224537614637111816201305622122401266585825110295664325863914794105222917032180962576524582144106779697931540923631114982061047753351956167849843334817192316079671295792522108291947456929651009575802940211025611730781325259530961557716019009390947631505892370258078560620146135953460297709039139039403389/9731599502486731497418084584129711194099911682593885236989222747440867049472000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-8436195603292716259245502776151860888697225896801672349701596366040367169434315284729888459431378313834743061664342684280670198883710912860776827128792217083268860686422201940366283290273768898159834897654313726786441641475999260417631359924653622074427800653401688562165840403894537097484921474309182279013400399023676641621547581651913969602816546975401683335702873895305694748381828625912548557312918770226322912793596202130677161889611555494935957245531353519441306857923668513616103137184651287482865416253801240601016695719816189075114886541778834961911405421649755984662308775344661062690084133268194171085399857729825130138713455921360672688599330223725929085314878375619018978919255343585774461/1824674906716262155765890859524320848893733440486353481935479265145162700800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-57792456427722913953770159693/12500000000000000000000000000000",
+          "-23116982571089165581508063877/5000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 2,
+        "i": 3,
+        "j": 4,
+        "independent": [
+          "0",
+          "0"
+        ],
+        "producer": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 3,
+        "i": 1,
+        "j": 1,
+        "independent": [
+          "-32403309323910940085378549801574502720934125915320193450986785598502567853126666970762387982239245155839162428158681294165259960267248309016195640779991382687596968722698079387491748412169073368817310434700773143908547047532133070178274145303152259138251329985754173177102467452906805093731828244526896446307412776888139648928980450384530872416938660654057838945038471048351910438710827092419572048599817603130708834483/354724005390106069714421010740402660749886515980365952625829269391755878400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-48604963985866410128067824702361754081401188872980290176480178397753712357997486046792199727071340913363111537620990445978909845024326767391727137497647469892066058802612626979066947262009619434877375533973757888907481791588082069159113143664984699191153070617249309355509693699754722465969743652357198286470378471619456028514565225757905393253392388211775754909344128142962293342131187084846612987244911308303076408553/532086008085159104571631516110603991124829773970548928938743904087633848320000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-9134794609763033053471303517053/100000000000000000000000000000000",
+          "-9134794609763033053471303517043/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 3,
+        "i": 1,
+        "j": 3,
+        "independent": [
+          "-36696855894651092469333709708187279319459570522114204630534238604035942916710719842643868629666673790966924120943907990656915796058599313178283007082279395210407220670177959694994560276284349351038733325074819059408873828403296053360757440568263194729142413383886666049091635354685459640384158729785131365791055893256467426063819266000647406783771527384709283363123136870145166783190442523621693901510527882254827895910353304970249276212941825731535032312614282285073054530131090226119566503972736038105701161869931675279525670965561587216451021079605934501/2270233634496678846172294468738577028799273702274342096805307324107237621760000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-385316986893836470928003951935966432854325490482199148620609505342371317665383129832979932402723927557702179733258424098356940104027210338983929035417288578272992098873080037955363326086492081739182643949791658572833373367224321699292622690510734811866231291644047049908711580187867996638218904848278070368737447052920480401567345260631362933585211761318794697485541423416478679549851546692583337025049868024793416796557639180428265184183035965916490579970445909936929098002080243783536782254332013466446401682131812810195783868321900426824492500339237224537/23837453162215127884809091921755058802392373873880592016455726903125996404736000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-808217606704319505783804622681/50000000000000000000000000000000",
+          "-32328704268172780231352184907/2000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 3,
+        "i": 2,
+        "j": 4,
+        "independent": [
+          "-104016560220609201054947286129362340366569277523458518759086855164581628993638233785188928697796485363760600502127219190817747658823150518691868098729038612028034306119757168972659408874470334115031578404736602484645616994148338743800981187663809116000767069821413148403527953102196429106568748093675747852829069545804477728445075004102582829323511778317260728160752716788136126474400715134175713827285081345072633206222926183363817433896116483400481176031262036369225218425668417402803585844646554266467454370916404221620109937532237448656078776472220528005390151667866316396787818733331801240930651226965970162663736040189499990352435478148826381381941304234398126237194278857970394135133322509/26417264110506808391823062908957987244209730353737798944643576135066037780480000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-2120102242143593421502307920224944172765662038934022161766093842030894633942423113184089163386050090815175234017770005696155867578297900997167374735145991678770435789487906245713397532729779551152097047934525583748505631139850768912009952575666922746626976157539038974240056429998540967681146074358528176792278158579675790184167085725422527841032861235153769802005110515642815370430471399195704167159768413606729648411080985630901273953474062168738572058666830529132783930570508899055960972990342939417150816290402812012229590269493561233274832927493601617225375056929903475498915890611229420441308184726463521294732038964439102611020180242861059467247584692487873175401114433411750400309166837617/538446000840624065162746546938467210595215974562949843195235242988257801142272000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-196872317635722176608542250883/50000000000000000000000000000000",
+          "-393744635271444353217084501751/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 3,
+        "i": 3,
+        "j": 4,
+        "independent": [
+          "0",
+          "0"
+        ],
+        "producer": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 4,
+        "i": 1,
+        "j": 1,
+        "independent": [
+          "-7787205394253696050627182203463576186981163548081519960040892028197532773906107000542053238526988903264706236103926789897059443321491640371438492382474606097356531467673289394509386254994455635841132800198594412943181434637790887769576541941490078072414913367772391370020328236741787007176953837477087020803861089407413138526914624936021500105082186195872026937728321111542193974279925706154011312935194572742985203729/409600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-1460101011422568009492596663149420535058968165265284992507667255287026537718652824211824177386376039692575325419043793832144705094682255257738918369899205133912600432782275847806819906332424872317474160738983487205287383275328901732585277346176081552229555918705128594708106765056818994412029908883587180096497519196507263492962780413380739238232062551717224588724918845581806233562479331557955691892159266377363695121/76800000000000000000000000000000000000000000000000000000000000000000003840000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-1901173191956468762360151905147/100000000000000000000000000000000",
+          "-950586595978234381180075952569/50000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 4,
+        "i": 1,
+        "j": 3,
+        "independent": [
+          "-18635868433833104172953362346812445590253882135764943998132969694468585747998697140902210408774790564284220333044086788426452396619174489340718381471337794678699676361507737802094461007212113108009375904419273473857806801399568074582755727630203772754554659549004148306651348985046584788699939839491912385370471154915167709994341166965526296611426613095816394356682907764195079679383026780105102512240209135300684528245618002571582755538251788493235805402821219947651905121711036356032368437461822873630961326141653045290761441712974765446444781384566451647/2621440000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-3494225331343707032428755440027333548172602900455926999649931817712791184499162221239354746783979807134732754316146344793864622487155443734204604027042846215104582819293441797936111377969578869281638656717959796570202270379134278338646453625385433636699068547387008098536881387463246546163577583825101708508887758724773287718394378115084238154185944573802614371552100607729394604161097473211001727160969916204893498962120564564476807345054639533813846944328748754989407819488653779635128819567810240584701160760642809336837445263931106931542877869993043903/491520000000000000000000000000000000000000000000000000000000000000000024576000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-355450981785451968630854842129/50000000000000000000000000000000",
+          "-8886274544636299215771371053/1250000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 4,
+        "i": 2,
+        "j": 4,
+        "independent": [
+          "202111626033264738497159030183458613868405143550410306151666924050443725587901699192226079236992821199575903285104207246893515408746991872013887586857022718387155311873708486339238208164070886839429094606431584094113778696496867116241257523373520606722940245983894341426673206242682954435310912102716491920352126553238205761444124107632340492771609871993656946283583336434769375351723503816708671258739181514909237833019068913897485405819320334372633442544648218845446728602058798020505617977448982209516174991441683412122437476901334752601968052531934768727436269878656556646662364159714235278593426035251937506672913811956323085974955765379900936145996895965525882555447432399425659075842959521/188743680000000000000000000000000000000000000000000000000000000000000009437184000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "1077928672177411938651514827645112607298160765602188299475556928269172907607327249703792036691323407733316609984081829900683777968286513100741673376075884512978711136387022431019349893370478339261282694009721198952592444921944476911322265138143352221901053230117584659908685691911385482998396305887656303813971690159058394580574271058608316905258750179320437775092634333356270670405629770332704577176902902695697793691525499713606572844223081449620134350971195766948108462453468579507883103666861801476992157752207640367021456264967220028966345971399857799535406409407097686595676128054440731901068653733674561139410791838869114034967886721068041548064668336246157977129065701907648729457115079329/1006632960000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "107082592663905217116228225577/100000000000000000000000000000000",
+          "107082592663905217116228225607/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 4,
+        "i": 3,
+        "j": 4,
+        "independent": [
+          "0",
+          "0"
+        ],
+        "producer": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 5,
+        "i": 1,
+        "j": 1,
+        "independent": [
+          "-1661667731793141564776262876431868588762929437597991559252783399949286839326051053416596473226795358021179917342775647354307692916610177434395043360095582153197911559917099363037217949641834040099793308366571108319148911691467346523812931880346199952473190870507734850190725141642317967491287161551588409795984539837255482184020468919613354136277588320237149630807001325523411559512298097635196342995822955167192888648693/143108350559986540570187114798801679068199575015137646353337423706273337600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-49850031953794246943287886292956057662887883127939746777583501998477366034108148032879588857433185942633946149305891543419966019342546519530425695988247803271913027561021309661307900768739542741907851024452166119703223850569593360436247692598623762582267301463723270589725382106934149229146678826478297278576049953953817933916853471484358098914897681603010487856982386108507683811284207232767453287357995883005922229834689/4293250516799596217105613443964050372045987250454129390600122711188200320000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-580562813173023914442138598023/50000000000000000000000000000000",
+          "-1161125626346047828884277196021/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 5,
+        "i": 1,
+        "j": 3,
+        "independent": [
+          "-1058898936775707906811991595337843614078769078427819997650752304504932142274453190281322390516953804480640157129767259820478136643647771065864333561609651854509132201202032466048705819446788024403403120501652739120373535380517111286866260403188911761869644062189975839539994202631012792091307147571739736288905058088012259746523509994072217463621724144240261742750924545074852575399400928514006549625140174723976386243589538676792557634203945954381903476168722596409054588525671304713333406742821982374977286461701697601831923857105314117905040543525243356092013/160281352627184925438609568574657880556383524016954163915737914551026138112000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-31766968103271237204359747860135308422363072352834599929522569135146577920326131632330465784493263417849715379400032397156783338089236961968223139647219417427055432234350168308784527003761349324030692911329837669605051104952840263244428405621414157439405105082742336662863767834492093112377628575907139276413705078519693249120870363556278224122869821930575543051483465298059344604518123732263099488170985326767075246614212902984309367228650958576611092257411949394782469087887891610900215654525216098996567785723089900177575542187343565747018512318086968973321049/4808440578815547763158287057239736416691505720508624917472137436530784358400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-165162528176111527627449944457/25000000000000000000000000000000",
+          "-660650112704446110509799777757/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 5,
+        "i": 2,
+        "j": 4,
+        "independent": [
+          "135964579086605231605327769798560515840719975022908416559647289599297882013794716429281718920398434574840680180981675444862345379541199404250842048398819438653737372120975482925890211042462294934816517859048593162801794981270235695974916496754990596299301712473912701966330256557156590404320436255787367256947084159861963758614660414648768470666129029342940431079365713821368795582965458757475564827369747290452215751091662060333832279541425099838787797574954320551741979847579876253721037655617013691953624658453286003826167187107003665910723755814421715311157470553961843329899184564151453620541738894088471600552680339991462531067842585452677085633135468235549692752191486255837904447500588809208216663/46161029556629258526319555749501469600238454916882799207732519390695529840640000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "1510717545406724795614752997761783509341333055810093517329414328881235338369452119787280155567344791903258519458755121527765825645806730554884368066713713399309721551240954469308558708878736303418506506835365617392192026159976011643714964235147000847712662339814631331355653993456108042035662070092633964306748932030331524511159792547424975691333940513533321304602615384094099258033940409605965706514096196724133473106128056910182330658445473778244628289006304935064948204899676616161625934422894787278341186706149482148676957635362293951567212971338109045129649201299794989465749814365112629784128844960805564625849904555827143524875956325663341745895379604265970928776717394074736192910592415424094977/512900328406991761403550619438905217780427276854253324530361326563283641958400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "36818009799750865601728801491/12500000000000000000000000000000",
+          "294544078398006924813830412087/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 5,
+        "i": 3,
+        "j": 4,
+        "independent": [
+          "0",
+          "0"
+        ],
+        "producer": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 7,
+        "i": 1,
+        "j": 1,
+        "independent": [
+          "-191782153390531860437652416443727560973637522144251175273254541107679134420331532419615392786528663158838966012269535112502939330791725021823575344454132728520045174115400524676107461650518828357398981618613305467120088649930798211990698062699613295440394984203353828345871212592231543708584312587682406414997730315825394343832604608263045724571652883148769114597925895559532004366563702622285503467874877399551983117157/5079842517244013933763102246987380017363697631518304346307202161666052096000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-95891076695265930218826208221863780486818761072125587636627270553092332785101989725867955598313037607556950213096444467876407975336201628617741892504209185735157514004255271389956333726358550817168528620489092981588304866373166067744173523320868704824638617606868956374434584294631520171275634063772544543832762381467893732490745201015605068223514730631786806708246464557300850580599540169079688406911907660397713157457/2539921258622006966881551123493690008681848815759152173153601080833026144000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-3775356278063914339846382601/100000000000000000000000000000000",
+          "-755071255612782867969276509/20000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 7,
+        "i": 1,
+        "j": 3,
+        "independent": [
+          "-200508816507339230881926382273544949893165272353757560019033110428326458493451170639935858354750133662299446317685934087485652435489809730133506980765963805885952041935757335256157220886333362595408686376156148320950715333130177961489473986063908230370489010969856265121730102766168689098182105050509559332401664449431839027823152608253040780717531400293555663106679179140470734066761237043501036046861375186164666465914023552099184618389048667741940556685579455628325787545545941707019130008344603081901550701780896039446528504981798576240508553247047022767213/5689423619313295605814674516625865619447341347300500867864066421065978347520000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "-100254408253669615440963191136772474946582636176878780009516555213326327057762454491601446723060922017814020316212651432026185863004161987343080620016012279700110178008865685394720999403194310725449525104449975900104759913687655865461506258609579647341630571663662973151598678926574945685846746925508521875438035815022077581932651263137054812752937679594472950119512262114572504929803610196781161977528619000172469970247122421605295878518588177910308929922174889251778533944941956404951777952501137438502240837819559504889669417655116139448483771442005624249913/2844711809656647802907337258312932809723670673650250433932033210532989281280000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "-3524237777385617254507982437/100000000000000000000000000000000",
+          "-704847555477123450901596449/20000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 7,
+        "i": 2,
+        "j": 4,
+        "independent": [
+          "884983380104576800109980526089530822365349325218116903113681491505808080478787966864728627922549888973329922717146083979950551688220545075719764860161773037333373868186083845568975691350893586258659425357127736533996801751261299594289673837772702079554757657000299952061033727796060444476095524992773507322915985453706149445946879594067093030149753073448797537980738124293715356409774617880904794501082087470409334664049518453942935321152913851798576383852862819509509958199119495450724151826103696040589163435665969965934825453745960533044007585123232322515599503330416021019979239982097294784567809421280586299121587794595128651793906908997639585622608251014904382895488211394720090622299719107050919/27309233372703818907910437679804154973347238467042404165747518821116697100288000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "1769966760209153600219961052179061644730698650436233806227362983027684675024463961441848152886392967822803102641092368744220425075413020990954921635727260454149630576654929175888914632218469018686383217064042416773684030159834721024455828838844083314181702632112976613457241536945303535333357444590550980503037906187553572551240609053782643382262217202784256457389682688890956639886070253558479243387924798093341002739338000490683252659498766601854804398699866917447854938431708170475964707915913858976283949977931342912920131108823079958501613300515535091279859212107994744054513825451497254977725322253790905766628741889423361419275927995123207305730835635969870991235257101555379294416903485117080819/54618466745407637815820875359608309946694476934084808331495037642233392136192000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        ],
+        "producer": [
+          "3240601330790695896411625519/100000000000000000000000000000000",
+          "3240601330790695896411626269/100000000000000000000000000000000"
+        ]
+      },
+      {
+        "a": "1",
+        "n": 7,
+        "i": 3,
+        "j": 4,
+        "independent": [
+          "0",
+          "0"
+        ],
+        "producer": [
+          "0",
+          "0"
+        ]
+      }
+    ],
+    "lower_receipt_replays": [
+      {
+        "path": "research/2026-10-16/arithmetic_resonance_receipts/resolvent-lower-initial.json",
+        "sha256": "f4e321b11d6be5866701693d64d7469ca1b393bc6c7f07fef8e69fa7f5dbae72",
+        "caps": {
+          "odd": "405333569368851711757618861801/891024077979000000000000000000",
+          "even": "107959895025855318145227769087/127289153997000000000000000000"
+        },
+        "sample_scope": "three independent midpoint checks per column; all cell sums replayed"
+      }
+    ]
+  },
+  "inspected_module_sha256": {
+    "observational_succ/prime_wavefront_geometry.py": "8b10f772c4217cc60fad9c5f829decb9c8e362117050ecc07ea6f506aadb786f",
+    "observational_succ/spectral_response.py": "af060baf0d7371a9a236acb90e26fbf6c14a9d94c6f91d299103b96221dfeeba",
+    "observational_succ/arithmetic_source_range.py": "3edb94ba15b76fa1a543adcd901457e69c9683c307abbfb08011edba7274a7a6",
+    "observational_succ/arithmetic_resolvent.py": "c6b8c5dce161910615d20b8f7b249c48fc65134075dfc7d0afc51d92ff79395b",
+    "observational_succ/cross_prime_wavefront.py": "f79622d28df46414ba0ca47ad2befb3e6c231ccfb654a7cadc6a44dfa8b04caf",
+    "observational_succ/spectral_tail_contract.py": "62cb802035750a3d656c585a8cb96414f4b1eb1c1f65508ad446e490b294415b"
+  },
+  "audit_script_sha256": "7c7c284b351d70658aeedfa05f7910c592b22a1b1a4b47ab484edcfe0e1da2b8",
+  "elapsed_seconds": 1.138591106981039,
+  "peak_rss_kib": 403656,
+  "limits": {
+    "address_space_MiB": 768,
+    "CPU_seconds": 180,
+    "wall_seconds": 240
+  },
+  "source_S0_sign": "OPEN",
+  "RH_PROVED": false,
+  "nontrivial_zeros_used": false,
+  "formal_kernel_claim": false,
+  "full_test_suite_run": false,
+  "independence": "Independent primitive-overlap hinge implementation and exact synthetic controls; source lineage shared."
+}

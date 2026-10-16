@@ -1,0 +1,52 @@
+{
+  "completed_utc": "2026-10-16T17:57:43.935848+00:00",
+  "dependencies": [
+    "declared finite operational tables",
+    "Hatcher exterior-group import",
+    "inherited whole-high source coercivity",
+    "spectral lane grid512 execution",
+    "pinned inherited upper trial integration"
+  ],
+  "full_suite_or_Lean_run": false,
+  "git_mutations_by_auditor": false,
+  "implementations_modified_by_auditor": false,
+  "owned_sha256": {
+    "reviews/2026-10-16_COLLECTIVE_OBSERVER_HOSTILE_AUDIT.md": "cc3629e3e6edfd17398c2b6f0a8ef93fc72c8d840d8ac4303ee832234f012321",
+    "scripts/collective_observer_independent_audit.py": "646075ccd171bd91075305f0208499c1eba783053d3967ea140432b6f38fe7fd"
+  },
+  "receipt_records": {
+    "audit-independent-final.json": {
+      "elapsed_seconds": 10.2879,
+      "sections": {
+        "adaptive": "PASS_FINITE_EXHAUSTIVE",
+        "ambient": "PASS_FINITE_EXHAUSTIVE_WITH_RECURSIVE_PROOF",
+        "effects": "PASS_TARGETED_HOSTILE_CHAINS",
+        "gamma": "PASS_EXACT_PERIOD_LATTICE_AND_SOURCE_CONTROLS",
+        "modular": "PASS_FINITE_EXHAUSTIVE",
+        "parent140": "PASS_REAL_CONTRACT_AND_HISTORICAL_MUTATION",
+        "policy": "PASS_INDEPENDENT_RAW_POLICY_ENUMERATION",
+        "spectral": "PASS_EXHAUSTIVE_SMALL_FORMS_AND_SOURCE_GUARDS",
+        "spectral_projection": "PASS_INDEPENDENT_POLYNOMIAL_AND_PROJECTION_CONTROLS"
+      },
+      "sha256": "e5b394b9f6ca60a5ac64c0b6ee9b18ed64c05aebbec6a4482efbb30a02022eea"
+    },
+    "audit-spectral-receipt-final.json": {
+      "elapsed_seconds": 0.0163,
+      "sections": {
+        "spectral_receipt": "PASS_SOURCE_RECEIPT_ARITHMETIC_WITH_INDEPENDENT_MOMENTS"
+      },
+      "sha256": "ef90c17bc5dbda67d8774a4f3b8950c50083c5abc9545590a3d5a8aef4848345"
+    },
+    "audit-spectral-source-moments-v1.json": {
+      "elapsed_seconds": 2.014,
+      "sections": {
+        "spectral_source": "PASS_INDEPENDENT_SIGNED_SOURCE_MOMENT_INTEGRATION"
+      },
+      "sha256": "b4231f487d93e78cdfea22cc10b6cfa31cf2d6ace5e203570342658811bb1d8e"
+    }
+  },
+  "source_independent_count_spectral": 1,
+  "spectral_sign": "OPEN",
+  "status": "SCOPED_AUDIT_PASS_WITH_EXPLICIT_PAPER_AND_SOURCE_DEPENDENCIES",
+  "unresolved_implementation_counterexamples": []
+}

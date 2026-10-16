@@ -1,0 +1,54 @@
+{
+  "cli_controls": 8,
+  "cli_validation_sha256": "be589b4fdaa609cb75131b3bc07e275b27acf8ac89c342e473a8f53ded86ec9a",
+  "code_modified_after_freeze_request": false,
+  "drift_after_final_validation": [],
+  "frozen_utc": "2026-10-16T18:02:55.311793+00:00",
+  "git_mutations": false,
+  "implementations_or_workflow_modified": false,
+  "owned_sha256": {
+    "reviews/2026-10-16_COLLECTIVE_OBSERVER_HOSTILE_AUDIT.md": "3db431bffb9be998f55f956668635d9289f02022ed397b5de71b965658224961",
+    "scripts/collective_observer_independent_audit.py": "dd7ffe42fd781d5b845ee4811bb7410889d11105523a223cdb18b298fa9a42de"
+  },
+  "receipt_records": {
+    "audit-ci-default-final.json": {
+      "elapsed_seconds": 9.358,
+      "exit_code": 0,
+      "python": "3.12.3",
+      "sections": {
+        "adaptive": "PASS_FINITE_EXHAUSTIVE",
+        "ambient": "PASS_FINITE_EXHAUSTIVE_WITH_RECURSIVE_PROOF",
+        "effects": "PASS_TARGETED_HOSTILE_CHAINS",
+        "gamma": "PASS_EXACT_PERIOD_LATTICE_AND_SOURCE_CONTROLS",
+        "modular": "PASS_FINITE_EXHAUSTIVE",
+        "parent140": "PASS_REAL_CONTRACT_AND_HISTORICAL_MUTATION",
+        "policy": "PASS_INDEPENDENT_RAW_POLICY_ENUMERATION",
+        "spectral": "PASS_EXHAUSTIVE_SMALL_FORMS_AND_SOURCE_GUARDS",
+        "spectral_projection": "PASS_INDEPENDENT_POLYNOMIAL_AND_PROJECTION_CONTROLS"
+      },
+      "sha256": "8712fde8c4c8c83d88f967eeaad4501685c0d76a4ef48631e3fe4b29add93b04"
+    },
+    "audit-ci-source.json": {
+      "elapsed_seconds": 1.6266,
+      "exit_code": 0,
+      "python": "3.12.3",
+      "sections": {
+        "spectral_source": "PASS_INDEPENDENT_SIGNED_SOURCE_MOMENT_INTEGRATION"
+      },
+      "sha256": "e6c89bdf2c487c393146d432d21b1c6d9b6825ca12317abaed0821e6fb44cf42"
+    },
+    "audit-ci-spectral-receipt.json": {
+      "elapsed_seconds": 0.0158,
+      "exit_code": 0,
+      "python": "3.12.3",
+      "sections": {
+        "spectral_receipt": "PASS_SOURCE_RECEIPT_ARITHMETIC_WITH_INDEPENDENT_MOMENTS"
+      },
+      "sha256": "ce06d97f8c96f7c0b4e9c82f8a1dbb385acec7ab75aa977fb498e0222b09ee2c"
+    }
+  },
+  "spectral_independent_source_count": 1,
+  "spectral_sign": "OPEN",
+  "status": "FROZEN_CLI_AND_SCOPED_AUDIT_PASS",
+  "validation_scope": "Local Python 3.12.3; principal owns full Python 3.10/3.13 integration"
+}

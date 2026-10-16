@@ -1,0 +1,23 @@
+test_failed_staged_range_is_not_an_extended_real_conclusion (test_observer_discovery.EnvelopeDiscoveryTests) ... ok
+test_forgeries_do_not_become_proof_authority (test_observer_discovery.EnvelopeDiscoveryTests) ... ok
+test_identity_observation_and_noncontiguous_coordinates (test_observer_discovery.EnvelopeDiscoveryTests) ... ok
+test_independent_gram_expansion_checks_all_matrix_coefficients (test_observer_discovery.EnvelopeDiscoveryTests) ... ok
+test_invalid_scalar_types_and_dimension (test_observer_discovery.EnvelopeDiscoveryTests) ... ok
+test_negative_high_block_rejected (test_observer_discovery.EnvelopeDiscoveryTests) ... ok
+test_nested_singular_envelope_and_type_mismatch (test_observer_discovery.EnvelopeDiscoveryTests) ... ok
+test_signed_blocks_do_not_imply_positive_short (test_observer_discovery.EnvelopeDiscoveryTests) ... ok
+test_singular_range_is_required_not_inferred_from_psd (test_observer_discovery.EnvelopeDiscoveryTests) ... ok
+test_source_epoch_coefficients_and_basis_are_binding (test_observer_discovery.EnvelopeDiscoveryTests) ... ok
+test_chi4_joint_bits_need_both_probes (test_observer_discovery.SearchAndMenuTests) ... ok
+test_empty_menu_constant_target_and_true_joint_obstruction (test_observer_discovery.SearchAndMenuTests) ... ok
+test_exhaustion_and_conditional_rules_never_promote_samples (test_observer_discovery.SearchAndMenuTests) ... ok
+test_five_smallest_countermodels_replay_without_envelope_helper (test_observer_discovery.SearchAndMenuTests) ... ok
+test_global_minimum_not_confused_with_irredundancy (test_observer_discovery.SearchAndMenuTests) ... ok
+test_joint_menu_independent_exhaustive_decoders (test_observer_discovery.SearchAndMenuTests) ... ok
+test_menu_budget_and_source_hash_guards (test_observer_discovery.SearchAndMenuTests) ... ok
+test_search_reproducibility_and_budget_prefix_minimality (test_observer_discovery.SearchAndMenuTests) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.239s
+
+OK

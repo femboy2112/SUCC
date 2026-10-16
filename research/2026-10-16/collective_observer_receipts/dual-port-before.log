@@ -1,0 +1,17 @@
+..........E...................
+======================================================================
+ERROR: test_source_preserving_matryoshka_miniature_port_and_dual (test_consensus_lambda.ExistingMiniAndWildIntegrationTests.test_source_preserving_matryoshka_miniature_port_and_dual)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-collective-observer/tests/test_consensus_lambda.py", line 314, in test_source_preserving_matryoshka_miniature_port_and_dual
+    joint=certify_dual_ports(lp,rp,P,("a",),("b",),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-collective-observer/observational_succ/consensus_lambda.py", line 152, in certify_dual_ports
+    "status": receipt["kind"] if receipt["certified"] else receipt["reason"],
+              ~~~~~~~^^^^^^^^
+KeyError: 'kind'
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.041s
+
+FAILED (errors=1)

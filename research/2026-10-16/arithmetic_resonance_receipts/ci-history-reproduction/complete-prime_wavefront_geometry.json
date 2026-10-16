@@ -1,0 +1,525 @@
+{
+  "checks": {
+    "all_inputs_unchanged_during_probe": true,
+    "all_negative_source_controls_rejected": true,
+    "finite_window_total_distribution_mass_zero": true,
+    "focused_tests_passed": true,
+    "frozen_source_blob_matches": true,
+    "projection_commutation_refuted": true,
+    "requested_base_is_ancestor": true,
+    "true_prime_only_contraction_bound": true
+  },
+  "claim_status": {
+    "RH": "NOT_PROVED",
+    "full_source_four_low_sign": "OPEN",
+    "general_hinge_and_distribution_identities": "CONDITIONAL_PAPER_PROOF; stated analytic hypotheses",
+    "prime_only_source_bounds": "EXACT_OUTWARD_RATIONAL_ENCLOSURE plus stated paper perturbation bound",
+    "rational_matrix_gram_and_boundary_instances": "EXACT_COMPUTATION"
+  },
+  "evidence": {
+    "hinge_input_tail_amplification_control": {
+      "D_Q_T_Q_HS_squared": "4846/42471",
+      "D_T_Q_HS_squared": "10/99",
+      "Q_D_T_Q_HS_squared": "1/11",
+      "output_projection_before_derivative_contracts_this_instance": true,
+      "raw_D_T_HS_squared": "1"
+    },
+    "negative_source_controls": [
+      {
+        "authority": "exact source contract, not spectral fitting",
+        "name": "fake6_outside_window",
+        "reason": "false/composite/omitted independent source place",
+        "rejected": true
+      },
+      {
+        "authority": "exact source contract, not spectral fitting",
+        "name": "missing2",
+        "reason": "false/composite/omitted independent source place",
+        "rejected": true
+      },
+      {
+        "authority": "exact source contract, not spectral fitting",
+        "name": "duplicate2",
+        "reason": "false/composite/omitted independent source place",
+        "rejected": true
+      },
+      {
+        "authority": "exact source contract, not spectral fitting",
+        "name": "wrong_half_density",
+        "reason": "wrong source half-density or logarithmic clock",
+        "rejected": true
+      },
+      {
+        "authority": "exact source contract, not spectral fitting",
+        "name": "wrong_clock",
+        "reason": "wrong source half-density or logarithmic clock",
+        "rejected": true
+      }
+    ],
+    "projection_order_counterexample": {
+      "D_Q_T_p_minus_Q_D_T_p_L2_squared": "4363/1968300",
+      "input_polynomial": [
+        0,
+        1
+      ],
+      "radius": "1/2",
+      "refuted": "derivative commutes with output projection",
+      "removed_modes": [
+        1,
+        2
+      ],
+      "threshold": "2/3"
+    },
+    "rational_geometry": {
+      "authority": "EXACT_COMPUTATION; isolated signed rational hinges",
+      "basis": "unnormalized P_n(x/a), real rational form coordinates",
+      "basis_modes": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "hinges": [
+        {
+          "threshold": "1/4",
+          "weight": "-1"
+        },
+        {
+          "threshold": "2/3",
+          "weight": "3/2"
+        }
+      ],
+      "matrix": [
+        [
+          "47551/1244160",
+          "0",
+          "-4061941/627056640",
+          "0"
+        ],
+        [
+          "0",
+          "310573/41803776",
+          "0",
+          "298977187/541776936960"
+        ],
+        [
+          "-4061941/627056640",
+          "0",
+          "-848053529/541776936960",
+          "0"
+        ],
+        [
+          "0",
+          "298977187/541776936960",
+          "0",
+          "-126197389807/85817466814464"
+        ]
+      ],
+      "output_projected_derivative_gram": [
+        [
+          "1633370401/42998169600",
+          "0",
+          "12565794347/3095868211200",
+          "0"
+        ],
+        [
+          "0",
+          "462588289973/728148203274240",
+          "0",
+          "-455112348726229/377472028577366016"
+        ],
+        [
+          "12565794347/3095868211200",
+          "0",
+          "39750231975241/10922223049113600",
+          "0"
+        ],
+        [
+          "0",
+          "-455112348726229/377472028577366016",
+          "0",
+          "44857954001343010019/10762482478797859848192"
+        ]
+      ],
+      "quotient_derivative_gram": [
+        [
+          "3039379/1719926784",
+          "0",
+          "2143371767/866843099136",
+          "0"
+        ],
+        [
+          "0",
+          "162119303371/312063515688960",
+          "0",
+          "-93145824638507/161773726533156864"
+        ],
+        [
+          "2143371767/866843099136",
+          "0",
+          "1559657709451/436888921964544",
+          "0"
+        ],
+        [
+          "0",
+          "-93145824638507/161773726533156864",
+          "0",
+          "3418581651714843421/4612492490913368506368"
+        ]
+      ],
+      "radius": "1/2",
+      "raw_derivative_gram": [
+        [
+          "68353/1244160",
+          "0",
+          "-819689/313528320",
+          "0"
+        ],
+        [
+          "0",
+          "3910841/209018880",
+          "0",
+          "-2191638329/541776936960"
+        ],
+        [
+          "-819689/313528320",
+          "0",
+          "2933462473/541776936960",
+          "0"
+        ],
+        [
+          "0",
+          "-2191638329/541776936960",
+          "0",
+          "312926253713/85817466814464"
+        ]
+      ]
+    },
+    "source_nonidentification": {
+      "fake6_locally_invisible_at_this_radius": true,
+      "interpretation": "Local kernel agreement cannot authenticate the global Euler tape."
+    },
+    "true_prime_geometry": {
+      "RH_proved": false,
+      "atoms": [
+        {
+          "n": 2,
+          "prime": 2,
+          "raw_HS_squared": {
+            "hi": "35496877206387703873624565489/100000000000000000000000000000000",
+            "lo": "35496877206387703873624565487/100000000000000000000000000000000"
+          },
+          "raw_derivative_HS_squared": {
+            "hi": "8835704789731624436893179467/390625000000000000000000000000",
+            "lo": "45238808523425917116893078871/2000000000000000000000000000000"
+          },
+          "threshold": {
+            "hi": "34657359027997265470861606072909/50000000000000000000000000000000",
+            "lo": "69314718055994530941723212145817/100000000000000000000000000000000"
+          },
+          "weight": {
+            "hi": "24506453586713679792847543090881/50000000000000000000000000000000",
+            "lo": "76582667458480249352648572159/156250000000000000000000000000"
+          }
+        }
+      ],
+      "full_signed_source_included": false,
+      "radius": "1/2",
+      "scope": "individual raw prime hinges only",
+      "source_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178"
+    },
+    "true_prime_matrix_modes_1_to_4": [
+      [
+        {
+          "hi": "-336083114060623217774067873773/100000000000000000000000000000000",
+          "lo": "-21005194628788951110879242111/6250000000000000000000000000000"
+        },
+        {
+          "hi": "0",
+          "lo": "0"
+        },
+        {
+          "hi": "-31417724949988634358325303839/25000000000000000000000000000000",
+          "lo": "-125670899799954537433301215359/100000000000000000000000000000000"
+        },
+        {
+          "hi": "0",
+          "lo": "0"
+        }
+      ],
+      [
+        {
+          "hi": "0",
+          "lo": "0"
+        },
+        {
+          "hi": "15519094750279389404719869007/10000000000000000000000000000000",
+          "lo": "155190947502793894047198690067/100000000000000000000000000000000"
+        },
+        {
+          "hi": "0",
+          "lo": "0"
+        },
+        {
+          "hi": "946485342746052819150472243/5000000000000000000000000000000",
+          "lo": "18929706854921056383009444857/100000000000000000000000000000000"
+        }
+      ],
+      [
+        {
+          "hi": "-31417724949988634358325303839/25000000000000000000000000000000",
+          "lo": "-125670899799954537433301215359/100000000000000000000000000000000"
+        },
+        {
+          "hi": "0",
+          "lo": "0"
+        },
+        {
+          "hi": "-28341442194331081958880325921/100000000000000000000000000000000",
+          "lo": "-7085360548582770489720081481/25000000000000000000000000000000"
+        },
+        {
+          "hi": "0",
+          "lo": "0"
+        }
+      ],
+      [
+        {
+          "hi": "0",
+          "lo": "0"
+        },
+        {
+          "hi": "946485342746052819150472243/5000000000000000000000000000000",
+          "lo": "18929706854921056383009444857/100000000000000000000000000000000"
+        },
+        {
+          "hi": "0",
+          "lo": "0"
+        },
+        {
+          "hi": "-13786912742119239343647279433/100000000000000000000000000000000",
+          "lo": "-3446728185529809835911819859/25000000000000000000000000000000"
+        }
+      ]
+    ],
+    "true_prime_only_projection_contraction": {
+      "DP_operator_squared_upper": "600",
+      "D_G2_HS_squared_interval": {
+        "hi": "44980464034680712986042791973/2500000000000000000000000000000",
+        "lo": "899609280693614259720855839459/50000000000000000000000000000000"
+      },
+      "D_Q_G2_Q_HS_squared_upper": "74273192681135043724444632999/25000000000000000000000000000000",
+      "epsilon": "1/100",
+      "full_signed_source_included": false,
+      "rational_reference_threshold": "693147/1000000",
+      "removed_modes_including_constant": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "source": "true prime 2 only, mean-zero carrier, a=1/2",
+      "source_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+      "source_threshold_interval": {
+        "hi": "34657359027997265470861606072909/50000000000000000000000000000000",
+        "lo": "69314718055994530941723212145817/100000000000000000000000000000000"
+      },
+      "source_weight_interval": {
+        "hi": "24506453586713679792847543090881/50000000000000000000000000000000",
+        "lo": "76582667458480249352648572159/156250000000000000000000000000"
+      },
+      "squared_ratio_strictly_below_one_fifth": true,
+      "strict_contraction_certified_this_prime_only": true,
+      "threshold_error_upper": "9027997265470861606072909/50000000000000000000000000000000",
+      "universal_output_projection_contraction": false,
+      "unweighted_derivative_perturbation_squared_upper": "4514243146939306851100881083511011783988001007071166843/6250000000000000000000000000000000000000000000000000000000000",
+      "unweighted_reference_audit": {
+        "D_Q_T_Q_HS_squared": "22617832142139088045045412300543533761498543972115654247182737100065316228104299821068670292401005326721550478788278362908016171777767/1858106250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "D_T_Q_HS_squared": "166047169815759573192636666680821569151259965117957282521720572707/12375000000000000000000000000000000000000000000000000000000000000000",
+        "Q_D_T_Q_HS_squared": "4894141732323624633281853126507064899340140668224032888616111174719132354173859239763025126687566068488453/495000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+        "output_projection_before_derivative_contracts_this_instance": true,
+        "raw_D_T_HS_squared": "94158763609/1000000000000"
+      }
+    },
+    "window_boundary_distribution": {
+      "boundary_free_mass_mutant": "4",
+      "hinge": {
+        "threshold": "2/3",
+        "weight": "2"
+      },
+      "second_derivative": {
+        "atoms": [
+          [
+            "-3/2",
+            "-2",
+            "5/3"
+          ],
+          [
+            "-2/3",
+            "2",
+            "0"
+          ],
+          [
+            "2/3",
+            "2",
+            "0"
+          ],
+          [
+            "3/2",
+            "-2",
+            "-5/3"
+          ]
+        ],
+        "regular": {
+          "breaks": [
+            "-3/2",
+            "-2/3",
+            "2/3",
+            "3/2"
+          ],
+          "pieces": [
+            [
+              "0"
+            ],
+            [
+              "0"
+            ],
+            [
+              "0"
+            ]
+          ]
+        }
+      },
+      "total_second_derivative_mass": "0",
+      "window": "3/2"
+    }
+  },
+  "execution": {
+    "argv": [
+      "scripts/prime_wavefront_geometry_probe.py",
+      "--output",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance/research/2026-10-16/arithmetic_resonance_receipts/ci-history-reproduction/complete-prime_wavefront_geometry.json"
+    ],
+    "base_ancestry_check": {
+      "argv": [
+        "git",
+        "merge-base",
+        "--is-ancestor",
+        "24d0f18a103fb2add32ee817fdfefb4ff401ed27",
+        "HEAD"
+      ],
+      "elapsed_seconds": 0.003018,
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    "cwd": "/tmp/succ-arithmetic-shallow-8ia7mv2s/checkout",
+    "elapsed_seconds": 7.62496,
+    "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+    "serial": true,
+    "started_at_utc": "2026-10-16T05:46:02.684186+00:00",
+    "test_command": {
+      "argv": [
+        "/tmp/succ-proof-teeth-py313/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "tests.test_prime_wavefront_geometry",
+        "tests.test_hilbert_prime_hinge_integrals",
+        "tests.test_hilbert_prime_wavefront",
+        "tests.test_suzuki_legendre_source",
+        "tests.test_suzuki_prime_boundary",
+        "-v"
+      ],
+      "elapsed_seconds": 7.466351,
+      "exit_code": 0,
+      "stderr": "test_after_derivative_projection_gram_identity (tests.test_prime_wavefront_geometry.ExactHingeTests.test_after_derivative_projection_gram_identity) ... ok\ntest_boundary_and_coincident_edge_cases (tests.test_prime_wavefront_geometry.ExactHingeTests.test_boundary_and_coincident_edge_cases) ... ok\ntest_boundary_atoms_and_zero_frequency (tests.test_prime_wavefront_geometry.ExactHingeTests.test_boundary_atoms_and_zero_frequency) ... ok\ntest_derivative_gram_independent_quadrature (tests.test_prime_wavefront_geometry.ExactHingeTests.test_derivative_gram_independent_quadrature) ... ok\ntest_fail_closed_input_validation (tests.test_prime_wavefront_geometry.ExactHingeTests.test_fail_closed_input_validation) ... ok\ntest_hinge_prime_form_sign_by_integration_by_parts (tests.test_prime_wavefront_geometry.ExactHingeTests.test_hinge_prime_form_sign_by_integration_by_parts) ... ok\ntest_hs_and_derivative_hs_triangle_oracle (tests.test_prime_wavefront_geometry.ExactHingeTests.test_hs_and_derivative_hs_triangle_oracle) ... ok\ntest_hs_projection_audit_independent_bivariate_integration (tests.test_prime_wavefront_geometry.ExactHingeTests.test_hs_projection_audit_independent_bivariate_integration) ... ok\ntest_matrix_independent_triangles (tests.test_prime_wavefront_geometry.ExactHingeTests.test_matrix_independent_triangles) ... ok\ntest_mixed_signed_hinges_and_refinement (tests.test_prime_wavefront_geometry.ExactHingeTests.test_mixed_signed_hinges_and_refinement) ... ok\ntest_projection_after_output_can_amplify_hinge_derivative_input_tail (tests.test_prime_wavefront_geometry.ExactHingeTests.test_projection_after_output_can_amplify_hinge_derivative_input_tail) ... ok\ntest_projection_orders_are_distinct_for_actual_hinge (tests.test_prime_wavefront_geometry.ExactHingeTests.test_projection_orders_are_distinct_for_actual_hinge) ... ok\ntest_reuse_correlation_kernel (tests.test_prime_wavefront_geometry.ExactHingeTests.test_reuse_correlation_kernel) ... ok\ntest_second_weak_derivative_is_sum_of_shifts (tests.test_prime_wavefront_geometry.ExactHingeTests.test_second_weak_derivative_is_sum_of_shifts) ... ok\ntest_weak_identity_including_endpoint_terms (tests.test_prime_wavefront_geometry.ExactHingeTests.test_weak_identity_including_endpoint_terms) ... ok\ntest_full_bounded_tape_validation_even_for_invisible_fake6 (tests.test_prime_wavefront_geometry.SourceTests.test_full_bounded_tape_validation_even_for_invisible_fake6) ... ok\ntest_half_density_and_clock_mutants_rejected (tests.test_prime_wavefront_geometry.SourceTests.test_half_density_and_clock_mutants_rejected) ... ok\ntest_prime_free_window_and_limits (tests.test_prime_wavefront_geometry.SourceTests.test_prime_free_window_and_limits) ... ok\ntest_source_geometry_and_authentic_matrix (tests.test_prime_wavefront_geometry.SourceTests.test_source_geometry_and_authentic_matrix) ... ok\ntest_source_power_clock_and_weight (tests.test_prime_wavefront_geometry.SourceTests.test_source_power_clock_and_weight) ... ok\ntest_true_prime_only_projection_bound (tests.test_prime_wavefront_geometry.SourceTests.test_true_prime_only_projection_bound) ... ok\ntest_symbolic_finite_window_fourier_and_boundary_law (tests.test_prime_wavefront_geometry.SymbolicOracleTests.test_symbolic_finite_window_fourier_and_boundary_law) ... ok\ntest_symbolic_projected_derivative_hs_independent_integral (tests.test_prime_wavefront_geometry.SymbolicOracleTests.test_symbolic_projected_derivative_hs_independent_integral) ... ok\ntest_all_real_original_prime_powers_and_never_fake_six (tests.test_hilbert_prime_hinge_integrals.GenuineArithmeticCellIntegralTests.test_all_real_original_prime_powers_and_never_fake_six) ... ok\ntest_complete_prime_part_original_row_column_symmetry (tests.test_hilbert_prime_hinge_integrals.GenuineArithmeticCellIntegralTests.test_complete_prime_part_original_row_column_symmetry) ... ok\ntest_first_prime_inactive_vs_activated_cell (tests.test_hilbert_prime_hinge_integrals.GenuineArithmeticCellIntegralTests.test_first_prime_inactive_vs_activated_cell) ... ok\ntest_full_source_signed_operator_is_not_prime_only_positive_entries (tests.test_hilbert_prime_hinge_integrals.GenuineArithmeticCellIntegralTests.test_full_source_signed_operator_is_not_prime_only_positive_entries) ... ok\ntest_true_original_log_sqrt_n_outward_holdout (tests.test_hilbert_prime_hinge_integrals.GenuineArithmeticCellIntegralTests.test_true_original_log_sqrt_n_outward_holdout) ... ok\ntest_disjoint_activated_rectangle_analytic (tests.test_hilbert_prime_hinge_integrals.RationalDoubleHingeTests.test_disjoint_activated_rectangle_analytic) ... ok\ntest_independent_midpoint_Riemann_sum_bound (tests.test_hilbert_prime_hinge_integrals.RationalDoubleHingeTests.test_independent_midpoint_Riemann_sum_bound) ... ok\ntest_independent_unit_square_probability_triangle_identity (tests.test_hilbert_prime_hinge_integrals.RationalDoubleHingeTests.test_independent_unit_square_probability_triangle_identity) ... ok\ntest_positive_part_and_source_domains (tests.test_hilbert_prime_hinge_integrals.RationalDoubleHingeTests.test_positive_part_and_source_domains) ... ok\ntest_diagonal_is_not_absent_before_first_prime (tests.test_hilbert_prime_wavefront.CompleteSuzukiNonSmoothAtlasTests.test_diagonal_is_not_absent_before_first_prime) ... ok\ntest_gamma_cutoff_source_gate (tests.test_hilbert_prime_wavefront.CompleteSuzukiNonSmoothAtlasTests.test_gamma_cutoff_source_gate) ... ok\ntest_hilbert_prefix_adaptive_complete_at_multiple_depths (tests.test_hilbert_prime_wavefront.CompleteSuzukiNonSmoothAtlasTests.test_hilbert_prefix_adaptive_complete_at_multiple_depths) ... ok\ntest_original_full_source_diagonal_exact (tests.test_hilbert_prime_wavefront.CompleteSuzukiNonSmoothAtlasTests.test_original_full_source_diagonal_exact) ... ok\ntest_signed_original_operator_wavefronts_and_diagonal (tests.test_hilbert_prime_wavefront.CompleteSuzukiNonSmoothAtlasTests.test_signed_original_operator_wavefronts_and_diagonal) ... ok\ntest_adaptive_hilbert_cylinders_partition_without_ghost (tests.test_hilbert_prime_wavefront.PrimeHingeHilbertTests.test_adaptive_hilbert_cylinders_partition_without_ghost) ... ok\ntest_exact_wavefront_inequalities (tests.test_hilbert_prime_wavefront.PrimeHingeHilbertTests.test_exact_wavefront_inequalities) ... ok\ntest_fake_euler_source_and_precision_type_rejected (tests.test_hilbert_prime_wavefront.PrimeHingeHilbertTests.test_fake_euler_source_and_precision_type_rejected) ... ok\ntest_first_no_prime_window_has_single_smooth_leaf (tests.test_hilbert_prime_wavefront.PrimeHingeHilbertTests.test_first_no_prime_window_has_single_smooth_leaf) ... ok\ntest_multilevel_source_wavefront_never_adds_fake_six (tests.test_hilbert_prime_wavefront.PrimeHingeHilbertTests.test_multilevel_source_wavefront_never_adds_fake_six) ... ok\ntest_true_first_prime_two_wavefront (tests.test_hilbert_prime_wavefront.PrimeHingeHilbertTests.test_true_first_prime_two_wavefront) ... ok\ntest_wavefront_codimension_one_growth (tests.test_hilbert_prime_wavefront.PrimeHingeHilbertTests.test_wavefront_codimension_one_growth) ... ok\ntest_actual_original_full_matrix_when_checked_out (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_actual_original_full_matrix_when_checked_out) ... ok\ntest_adaptive_genuine_gamma_30th_mode_nontrivial_tight_interval (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_adaptive_genuine_gamma_30th_mode_nontrivial_tight_interval) ... ok\ntest_adaptive_precision_is_source_defined_not_a_float_parameter (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_adaptive_precision_is_source_defined_not_a_float_parameter) ... ok\ntest_contact_exact_Neumann_identity (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_contact_exact_Neumann_identity) ... ok\ntest_cross_polynomial_reflection (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_cross_polynomial_reflection) ... ok\ntest_cross_polynomial_symmetry (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_cross_polynomial_symmetry) ... ok\ntest_cross_polynomial_zero_at_endpoint (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_cross_polynomial_zero_at_endpoint) ... ok\ntest_exact_legendre_polynomials (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_exact_legendre_polynomials) ... ok\ntest_exponential_poly_antiderivative (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_exponential_poly_antiderivative) ... ok\ntest_hinge_integral_polynomial_vanishes_at_source_threshold (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_hinge_integral_polynomial_vanishes_at_source_threshold) ... ok\ntest_hinge_polynomial_constant_equals_contact (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_hinge_polynomial_constant_equals_contact) ... ok\ntest_hinge_polynomial_exact_source_control (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_hinge_polynomial_exact_source_control) ... ok\ntest_hinge_polynomial_integral_at_fake_phase (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_hinge_polynomial_integral_at_fake_phase) ... ok\ntest_hinge_polynomial_integral_is_negative_on_true_L1 (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_hinge_polynomial_integral_is_negative_on_true_L1) ... ok\ntest_illegal_legs_and_typed_floats (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_illegal_legs_and_typed_floats) ... ok\ntest_odd_source_entry_must_authenticate_too (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_odd_source_entry_must_authenticate_too) ... ok\ntest_ou_affine_known_exact_values (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_ou_affine_known_exact_values) ... ok\ntest_ou_affine_source_is_symmetric (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_ou_affine_source_is_symmetric) ... ok\ntest_ou_parity_kills_opposite_chart (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_ou_parity_kills_opposite_chart) ... ok\ntest_parent_failure_or_source_interval (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_parent_failure_or_source_interval) ... ok\ntest_parity_and_orthogonality (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_parity_and_orthogonality) ... ok\ntest_poly_primitive_correct_boundary (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_poly_primitive_correct_boundary) ... ok\ntest_positive_log2_and_prime_hinge_high_order_interval (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_positive_log2_and_prime_hinge_high_order_interval) ... ok\ntest_source_J_invalid_budget_fail_closed (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_source_J_invalid_budget_fail_closed) ... ok\ntest_true_J75_analytic_single_mode_without_cell_grid (tests.test_suzuki_legendre_source.AuthenticLegendreLowTests.test_true_J75_analytic_single_mode_without_cell_grid) ... ok\ntest_bad_types_not_ghost_sources (tests.test_suzuki_prime_boundary.SuzukiPrimeBoundaryTests.test_bad_types_not_ghost_sources) ... ok\ntest_conditional_bound_not_wrongly_called_observation (tests.test_suzuki_prime_boundary.SuzukiPrimeBoundaryTests.test_conditional_bound_not_wrongly_called_observation) ... ok\ntest_exact_rational_fourier_debt_certificate (tests.test_suzuki_prime_boundary.SuzukiPrimeBoundaryTests.test_exact_rational_fourier_debt_certificate) ... ok\ntest_exact_two_block_chirality (tests.test_suzuki_prime_boundary.SuzukiPrimeBoundaryTests.test_exact_two_block_chirality) ... ok\ntest_first_window_integer_inequality (tests.test_suzuki_prime_boundary.SuzukiPrimeBoundaryTests.test_first_window_integer_inequality) ... ok\ntest_independent_trial_division_source (tests.test_suzuki_prime_boundary.SuzukiPrimeBoundaryTests.test_independent_trial_division_source) ... ok\ntest_independently_integrated_tent_moments (tests.test_suzuki_prime_boundary.SuzukiPrimeBoundaryTests.test_independently_integrated_tent_moments) ... ok\ntest_jet_geometric_shape (tests.test_suzuki_prime_boundary.SuzukiPrimeBoundaryTests.test_jet_geometric_shape) ... ok\ntest_source_authentication_mutations_without_fitted_phases (tests.test_suzuki_prime_boundary.SuzukiPrimeBoundaryTests.test_source_authentication_mutations_without_fitted_phases) ... ok\ntest_source_negative_controls (tests.test_suzuki_prime_boundary.SuzukiPrimeBoundaryTests.test_source_negative_controls) ... ok\ntest_source_prime_powers_not_fake_six (tests.test_suzuki_prime_boundary.SuzukiPrimeBoundaryTests.test_source_prime_powers_not_fake_six) ... ok\n\n----------------------------------------------------------------------\nRan 80 tests in 6.991s\n\nOK\n",
+      "stdout": ""
+    }
+  },
+  "independence": "Triangle, rational interpolatory and SymPy integrals use distinct calculation paths; same worker and shared mathematical source. No blind-agent independence claimed.",
+  "nonclaims": [
+    "no zero-coordinate inputs",
+    "no manufactured positivity",
+    "no full Gamma/contact/pole derivative Gram",
+    "no universal output-projection contraction",
+    "no new source range-closure theorem",
+    "no Lean proof or hosted CI claim"
+  ],
+  "schema_version": "arithmetic-resonance.wavefront.v1",
+  "source_pins": {
+    "after": {
+      "observational_succ/prime_wavefront_geometry.py": {
+        "git_blob": "233f06fdc39271d6e414429440a0db61dd788747",
+        "sha256": "8b10f772c4217cc60fad9c5f829decb9c8e362117050ecc07ea6f506aadb786f"
+      },
+      "observational_succ/source_weil_hierarchy.py": {
+        "git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+        "sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b"
+      },
+      "observational_succ/suzuki_legendre_source.py": {
+        "git_blob": "c96290e42b15e5e01879da9554c5273bfb59d9fb",
+        "sha256": "15b82e7833e59d70cffe3cb00cd1ed3b96953a9a6fcc156cbdf0aab4f2ffe198"
+      },
+      "observational_succ/suzuki_moment_schur.py": {
+        "git_blob": "3fe298855d18079d0ebf1f7ff8b89f5aa88d7eae",
+        "sha256": "ca40245dab827069f5b144abf3dad3538b0e35c0db9deca2f048dfd5021649a5"
+      },
+      "provenance/IMPORT_MANIFEST.json": {
+        "git_blob": "a8805a8e4d64f35ff61937a36755d9b6d1ba3fae",
+        "sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+      },
+      "research/2026-10-16/PRIME_WAVEFRONT_HILBERT_SCHMIDT.md": {
+        "git_blob": "701c82d536866cd621800229087c0cb005121b9c",
+        "sha256": "b24a4e053552d498c19c13682db3c8c4dfb98e265eeaaffeb43e86cd5a7b3e45"
+      },
+      "scripts/prime_wavefront_geometry_probe.py": {
+        "git_blob": "19c636ba8b0e6e687cca7cff392037854bc5d646",
+        "sha256": "cc39ba9859860d17dce07de6305e65a6d4f3b5d05aea9377250c8563d6006792"
+      },
+      "tests/test_prime_wavefront_geometry.py": {
+        "git_blob": "fee290f8f2c6f46bb6823d454f23f23a6c66e666",
+        "sha256": "d91fed6177ec24914e309928450a6a68e52be1ccef665123aaddb1b753943459"
+      }
+    },
+    "before": {
+      "observational_succ/prime_wavefront_geometry.py": {
+        "git_blob": "233f06fdc39271d6e414429440a0db61dd788747",
+        "sha256": "8b10f772c4217cc60fad9c5f829decb9c8e362117050ecc07ea6f506aadb786f"
+      },
+      "observational_succ/source_weil_hierarchy.py": {
+        "git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+        "sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b"
+      },
+      "observational_succ/suzuki_legendre_source.py": {
+        "git_blob": "c96290e42b15e5e01879da9554c5273bfb59d9fb",
+        "sha256": "15b82e7833e59d70cffe3cb00cd1ed3b96953a9a6fcc156cbdf0aab4f2ffe198"
+      },
+      "observational_succ/suzuki_moment_schur.py": {
+        "git_blob": "3fe298855d18079d0ebf1f7ff8b89f5aa88d7eae",
+        "sha256": "ca40245dab827069f5b144abf3dad3538b0e35c0db9deca2f048dfd5021649a5"
+      },
+      "provenance/IMPORT_MANIFEST.json": {
+        "git_blob": "a8805a8e4d64f35ff61937a36755d9b6d1ba3fae",
+        "sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+      },
+      "research/2026-10-16/PRIME_WAVEFRONT_HILBERT_SCHMIDT.md": {
+        "git_blob": "701c82d536866cd621800229087c0cb005121b9c",
+        "sha256": "b24a4e053552d498c19c13682db3c8c4dfb98e265eeaaffeb43e86cd5a7b3e45"
+      },
+      "scripts/prime_wavefront_geometry_probe.py": {
+        "git_blob": "19c636ba8b0e6e687cca7cff392037854bc5d646",
+        "sha256": "cc39ba9859860d17dce07de6305e65a6d4f3b5d05aea9377250c8563d6006792"
+      },
+      "tests/test_prime_wavefront_geometry.py": {
+        "git_blob": "fee290f8f2c6f46bb6823d454f23f23a6c66e666",
+        "sha256": "d91fed6177ec24914e309928450a6a68e52be1ccef665123aaddb1b753943459"
+      }
+    },
+    "live_head": "5d748c7512661dba820face6e625863c5fc66135",
+    "requested_base": "24d0f18a103fb2add32ee817fdfefb4ff401ed27",
+    "required_source_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178"
+  },
+  "status": "PASS"
+}

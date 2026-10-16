@@ -1,0 +1,281 @@
+{
+  "kind": "PINNED_FORMAL_EVIDENCE_WITH_UNDISCHARGED_SOURCE_BRIDGE",
+  "yean_commit": "2c44b033e400801ceceaf5758bc0671b4226e1e6",
+  "yean_branch": "research/arithmetic-response-kernel-2026-10-16",
+  "draft_pr": "https://github.com/femboy2112/YEAN/pull/137",
+  "replay_manifest": {
+    "manifest": "research/arithmetic_response_2026-10-16/receipts/run-20261016T051815Z-1910041/manifest.json",
+    "sha256": "56b3a4f0cfc101850ce25f44d4f391f00e1ebf0333bd8a4a9bda0e17a4fd85df"
+  },
+  "new_theorems": 31,
+  "new_definitions": 12,
+  "axioms_per_declaration": {
+    "Yean.SUCC.ArithmeticResponse.diagonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.diagonalSolve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.diagonal_positive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.diagonal_range_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.diagonal_solve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.diagonal_solve_of_compatible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.diagonal_symmetric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.dot": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.dot_comm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.dot_sub_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.dot_sub_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hinge": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hingeOverlap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hingeOverlap_active": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hingeOverlap_inactive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hingeOverlap_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hingePrimitive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hingePrimitive_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hingePrimitive_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hingePrimitive_increment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hinge_active": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hinge_inactive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.hinge_product_active": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.polyDerivAux": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.polyDerivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.polyEval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.positive_resolvent_antitone": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.positive_resolvent_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.scalar_resolvent_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.spectralSum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.spectralSum_antitone": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.spectralSum_antitone_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.spectralSum_difference": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.spectralSum_eq_response": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.spectralSum_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.spectralSum_strict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.spectralSum_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.triangleOverlap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.triangleOverlap_formula": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.triangleOverlap_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.weightedHingePrimitive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.weightedHingePrimitive_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Yean.SUCC.ArithmeticResponse.weightedHingePrimitive_eval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "versions": {
+    "cargo": "cargo 1.85.1 (d73d2caf9 2024-12-31)",
+    "lake": "Lake version 5.0.0-src+f72c35b (Lean version 4.29.1)",
+    "lean": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+    "python3": "Python 3.12.3",
+    "rustc": "rustc 1.85.1 (4eb161250 2025-03-15)"
+  },
+  "rust_tests": 63,
+  "historical_theorems_freshly_replayed": false,
+  "source_snapshot_comparison": {
+    "observational_succ/spectral_response.py": {
+      "historical_snapshot_sha256": "af060baf0d7371a9a236acb90e26fbf6c14a9d94c6f91d299103b96221dfeeba",
+      "current_sha256": "af060baf0d7371a9a236acb90e26fbf6c14a9d94c6f91d299103b96221dfeeba",
+      "same_bytes": true
+    },
+    "observational_succ/arithmetic_resolvent.py": {
+      "historical_snapshot_sha256": "c6b8c5dce161910615d20b8f7b249c48fc65134075dfc7d0afc51d92ff79395b",
+      "current_sha256": "c6b8c5dce161910615d20b8f7b249c48fc65134075dfc7d0afc51d92ff79395b",
+      "same_bytes": true
+    },
+    "observational_succ/prime_wavefront_geometry.py": {
+      "historical_snapshot_sha256": "8b10f772c4217cc60fad9c5f829decb9c8e362117050ecc07ea6f506aadb786f",
+      "current_sha256": "8b10f772c4217cc60fad9c5f829decb9c8e362117050ecc07ea6f506aadb786f",
+      "same_bytes": true
+    },
+    "observational_succ/arithmetic_source_range.py": {
+      "historical_snapshot_sha256": "3edb94ba15b76fa1a543adcd901457e69c9683c307abbfb08011edba7274a7a6",
+      "current_sha256": "3edb94ba15b76fa1a543adcd901457e69c9683c307abbfb08011edba7274a7a6",
+      "same_bytes": true
+    },
+    "observational_succ/suzuki_legendre_source.py": {
+      "historical_snapshot_sha256": "15b82e7833e59d70cffe3cb00cd1ed3b96953a9a6fcc156cbdf0aab4f2ffe198",
+      "current_sha256": "15b82e7833e59d70cffe3cb00cd1ed3b96953a9a6fcc156cbdf0aab4f2ffe198",
+      "same_bytes": true
+    },
+    "research/2026-10-16/SPECTRAL_RESPONSE_MEASURE.md": {
+      "historical_snapshot_sha256": "c87988313f84db77ca931eb06807f23b5921cd496c14fb7352279106131528a3",
+      "current_sha256": "c87988313f84db77ca931eb06807f23b5921cd496c14fb7352279106131528a3",
+      "same_bytes": true
+    }
+  },
+  "source_to_Lean_identification_status": "SPECIFIED_OBLIGATION_NOT_EXECUTABLE_EXTRACTION",
+  "infinite_source_theorems_kernel_checked": false,
+  "source_tail_rate_proved": false,
+  "obligations": [
+    "Construct exact finite rational parameter and metric map",
+    "Discharge solve equations and denominator/range assumptions for each instance",
+    "Prove scalarization and Python implementation identification",
+    "Supply real integral identification for formal hinge primitive",
+    "Prove infinite source spectral range and limit identification separately"
+  ],
+  "hosted_ci_receipt": "yean-exact-head-ci.json"
+}

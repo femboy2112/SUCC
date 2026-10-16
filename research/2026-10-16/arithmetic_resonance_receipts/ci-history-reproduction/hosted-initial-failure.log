@@ -1,0 +1,62 @@
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	﻿2026-10-16T05:40:05.1962873Z ##[group]Run python scripts/check_arithmetic_resonance_round.py --python python --focused-only --probes --output "$RUNNER_TEMP/arithmetic-resonance"
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.1963907Z [36;1mpython scripts/check_arithmetic_resonance_round.py --python python --focused-only --probes --output "$RUNNER_TEMP/arithmetic-resonance"[0m
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.2020780Z shell: /usr/bin/bash -e {0}
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.2020998Z env:
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.2021165Z   OPENBLAS_NUM_THREADS: 1
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.2021359Z   OMP_NUM_THREADS: 1
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.2021612Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.16/x64
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.2021960Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib/pkgconfig
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.2022290Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.2022594Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.2022894Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.16/x64
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.2023421Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.16/x64/lib
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.2023722Z ##[endgroup]
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:05.7212137Z versions: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:09.7515061Z focused-prime_wavefront_geometry: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:09.9792340Z focused-spectral_response: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:10.4175548Z focused-arithmetic_source_range: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:13.0189529Z focused-arithmetic_resolvent: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:13.6556490Z focused-cross_prime_wavefront: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:13.8793536Z focused-spectral_tail_contract: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:14.0430165Z focused-source_proof_certificate: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:33.2237874Z focused-compact_galerkin: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:33.2524498Z verify_provenance: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:33.3805188Z observer_foundations_probe: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:35.6423581Z ordinal_succ_report_probe: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:42.5880541Z prime_wavefront_geometry-probe: exit 1
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:42.8396114Z spectral_response-probe: exit 1
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:43.3557338Z arithmetic_source_range-probe: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:42:15.7080068Z arithmetic_resolvent-probe: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:42:18.4137869Z cross_prime_wavefront-probe: exit 0
+source-response (3.13)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:42:18.4524958Z ##[error]Process completed with exit code 1.
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	﻿2026-10-16T05:39:58.8013615Z ##[group]Run python scripts/check_arithmetic_resonance_round.py --python python --focused-only --probes --output "$RUNNER_TEMP/arithmetic-resonance"
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8014206Z [36;1mpython scripts/check_arithmetic_resonance_round.py --python python --focused-only --probes --output "$RUNNER_TEMP/arithmetic-resonance"[0m
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8068031Z shell: /usr/bin/bash -e {0}
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8068191Z env:
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8068306Z   OPENBLAS_NUM_THREADS: 1
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8068437Z   OMP_NUM_THREADS: 1
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8068607Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.22/x64
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8068837Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.22/x64/lib/pkgconfig
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8069063Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.22/x64
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8069412Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.22/x64
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8069616Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.22/x64
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8069820Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.22/x64/lib
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:58.8070034Z ##[endgroup]
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:39:59.1495014Z versions: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:03.3338452Z focused-prime_wavefront_geometry: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:03.5254580Z focused-spectral_response: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:03.9467523Z focused-arithmetic_source_range: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:06.4026091Z focused-arithmetic_resolvent: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:07.0308264Z focused-cross_prime_wavefront: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:07.1871036Z focused-spectral_tail_contract: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:07.2984155Z focused-source_proof_certificate: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:23.6024698Z focused-compact_galerkin: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:23.6262271Z verify_provenance: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:23.7209748Z observer_foundations_probe: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:25.8058505Z ordinal_succ_report_probe: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:33.8219876Z prime_wavefront_geometry-probe: exit 1
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:34.0072643Z spectral_response-probe: exit 1
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:40:34.5367583Z arithmetic_source_range-probe: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:42:14.0359763Z arithmetic_resolvent-probe: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:42:17.0319492Z cross_prime_wavefront-probe: exit 0
+source-response (3.10)	Replay exact wavefront, source and spectral probes with provenance gates	2026-10-16T05:42:17.0584023Z ##[error]Process completed with exit code 1.

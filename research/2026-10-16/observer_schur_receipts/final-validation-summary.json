@@ -1,0 +1,32 @@
+{
+  "timestamp_utc": "2026-10-16T03:35:16.329865+00:00",
+  "runs": {
+    "310": {
+      "receipt": "research/2026-10-16/observer_schur_receipts/final-py310/validation.json",
+      "sha256": "dacc220ea7f05a6f933218ae347bb4fb4efeaf4a37f91bd10f27fc1faf953bbb",
+      "tests": 4523,
+      "test_seconds": 657.401,
+      "focused_tests": 103,
+      "all_16_commands_passed": true,
+      "no_skips": true,
+      "all_current_code_hashes_match": true
+    },
+    "313": {
+      "receipt": "research/2026-10-16/observer_schur_receipts/final-py313/validation.json",
+      "sha256": "5e84e34cee63b9b999facbc1a8610cbbefa31ed0ef6e25f6754fc04776811f63",
+      "tests": 4523,
+      "test_seconds": 426.057,
+      "focused_tests": 103,
+      "all_16_commands_passed": true,
+      "no_skips": true,
+      "all_current_code_hashes_match": true
+    }
+  },
+  "authority": "LOCAL_RUNTIME_AND_EXACT_FINITE_CHECKS; not hosted CI or analytic truth",
+  "source_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "formal_yean_commit": "4bda4fc92f722464d17a3911ccc12f7f28193e6b",
+  "new_lean_theorems": 28,
+  "generated_instance_theorems": 7,
+  "original_S0_sign": "OPEN",
+  "RH_PROVED": false
+}

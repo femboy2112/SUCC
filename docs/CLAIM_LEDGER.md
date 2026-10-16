@@ -2,6 +2,15 @@
 
 **Policy:** A theorem, an exact computation, a finite experiment, an interpretation, and an RH-equivalent conjecture are different evidence types. This ledger governs current project claims; immutable founding documents retain their historically correct original wording and provenance.
 
+The [Observer–Schur Round II supplement](CLAIM_SUPPLEMENT_OBSERVER_SCHUR.md)
+records the new conditional envelope, compactness, source-method obstruction and
+formal-instance claims. It preserves the original signed four-low target as OPEN.
+
+The [Arithmetic Resonance supplement](CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md)
+records source wavefront geometry, the conditional dense high-response theorem,
+the failure of a bounded upper K-comparison, and tighter authentic Schur brackets.
+Its formal finite identities do not discharge its infinite spectral-tail debt.
+
 Use these labels:
 
 - **CLASSICAL** — previously established mathematical theorem, attributed and cited.
@@ -12,6 +21,13 @@ Use these labels:
 - **HYPOTHESIS** — proposed general structural or empirical claim, unproved.
 - **UNVERIFIED** — required identification, noncircular global sign, or comprehensive physical validation not supplied.
 - **REFUTED** — specified candidate inference fails against a proved or explicit counterexample.
+
+Academic Main II (2026-10-16) adds a navigation crosswalk over these labels (an additive reading aid; it
+does **not** relabel any historical row): **CLASSICAL IMPORT** = CLASSICAL / EXTERNAL THEOREM;
+**VERIFIED EXACT MODEL** = PROVED LOCAL + TESTED MODEL verified by exact rational/interval computation;
+**NUMERICAL OBSERVATION** = TESTED MODEL; **CONDITIONAL** = HYPOTHESIS holding under an explicitly inherited,
+not-here-proved premise; **CONJECTURED** = HYPOTHESIS. See
+[SUCC_ACADEMIC_MAIN_II_RESEARCH_FRONTIER.md](SUCC_ACADEMIC_MAIN_II_RESEARCH_FRONTIER.md) §0.
 
 | ID | Statement (actual scope) | Status | Provenance / validation |
 | --- | --- | --- | --- |
@@ -832,6 +848,12 @@ No new academic priority is established.
 
 
 ## Carrier → Tate → Weil (2026-10-15)
+
+Later branch-scoped extension:
+[Collective Observer CO-01–17](CLAIM_SUPPLEMENT_COLLECTIVE_OBSERVER.md) records
+lawful joint distinguishability, finite policy synthesis, Gamma alias no-go,
+new exact source projections and their unchanged open sign boundary. The original
+ledger rows below remain historical; this link does not promote an analytic debt.
 
 The [Carrier → Tate → Weil claim supplement](CLAIM_SUPPLEMENT_CARRIER_TATE_WEIL.md)
 records CTW-01–14: the independent Poisson audit, canonical zeta and chi4 Tate

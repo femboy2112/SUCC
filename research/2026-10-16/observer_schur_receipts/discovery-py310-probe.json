@@ -1,0 +1,687 @@
+{
+  "commands": [
+    "python -m unittest discover -s tests -p test_observer_discovery.py -v",
+    "python scripts/observer_discovery_probe.py"
+  ],
+  "experiment": {
+    "Lean_kernel_replayed": false,
+    "RH_proved": false,
+    "authentic_Weil_source_loaded": false,
+    "candidate_generation": "predeclared classical identities and deliberate false weakenings",
+    "grammar": "RationalForm -> CoordinateObservation -> FiniteSchurEnvelope -> Coarsen",
+    "illegal_compositions_rejected": 1,
+    "nested_exact_instances": 28,
+    "ranking_rule": "number of explicit outstanding application obligations, then rule ID",
+    "refutation_candidates": [
+      {
+        "assumptions": [
+          "D=0"
+        ],
+        "authority": "EXACT_FINITE_CHECK",
+        "candidate": "ZERO_HIDDEN_ENERGY_IMPLIES_FACTORIZATION",
+        "matrices_examined": 6,
+        "outcome": "REFUTED",
+        "universal_truth_inferred_from_search": false,
+        "witness": {
+          "energies": [
+            0,
+            2
+          ],
+          "form": {
+            "axes": [
+              "x",
+              "y"
+            ],
+            "coefficients": [
+              [
+                "0",
+                "1"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            "epoch": 0,
+            "source_id": "declared-rational-countermodel"
+          },
+          "hidden_kernel_energy": 0,
+          "observation": "x",
+          "vectors": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      {
+        "assumptions": [
+          "A>0",
+          "D>0"
+        ],
+        "authority": "EXACT_FINITE_CHECK",
+        "candidate": "POSITIVE_DIAGONAL_BLOCKS_IMPLIES_POSITIVE_SHORT",
+        "matrices_examined": 42,
+        "outcome": "REFUTED",
+        "universal_truth_inferred_from_search": false,
+        "witness": {
+          "A_positive": true,
+          "D_positive": true,
+          "energy": "-3",
+          "form": {
+            "axes": [
+              "x",
+              "y"
+            ],
+            "coefficients": [
+              [
+                "1",
+                "2"
+              ],
+              [
+                "2",
+                "1"
+              ]
+            ],
+            "epoch": 0,
+            "source_id": "declared-rational-countermodel"
+          },
+          "short": "-3",
+          "vector": [
+            "1",
+            "-2"
+          ]
+        }
+      },
+      {
+        "assumptions": [
+          "D>0"
+        ],
+        "authority": "EXACT_FINITE_CHECK",
+        "candidate": "COMPRESSION_EQUALS_ENVELOPE",
+        "matrices_examined": 7,
+        "outcome": "REFUTED",
+        "universal_truth_inferred_from_search": false,
+        "witness": {
+          "compression": 0,
+          "envelope": "-1",
+          "fiber_x": 1,
+          "form": {
+            "axes": [
+              "x",
+              "y"
+            ],
+            "coefficients": [
+              [
+                "0",
+                "1"
+              ],
+              [
+                "1",
+                "1"
+              ]
+            ],
+            "epoch": 0,
+            "source_id": "declared-rational-countermodel"
+          },
+          "minimizer_y": "-1"
+        }
+      },
+      {
+        "assumptions": [
+          "fine observation is identity",
+          "D>0"
+        ],
+        "authority": "EXACT_FINITE_CHECK",
+        "candidate": "COARSENING_PRESERVES_FINE_ENVELOPE_VALUE",
+        "matrices_examined": 2,
+        "outcome": "REFUTED",
+        "universal_truth_inferred_from_search": false,
+        "witness": {
+          "coarse_envelope_at_x_zero": 0,
+          "fine_envelope": 1,
+          "form": {
+            "axes": [
+              "x",
+              "y"
+            ],
+            "coefficients": [
+              [
+                "0",
+                "0"
+              ],
+              [
+                "0",
+                "1"
+              ]
+            ],
+            "epoch": 0,
+            "source_id": "declared-rational-countermodel"
+          },
+          "source_vector": [
+            0,
+            1
+          ]
+        }
+      },
+      {
+        "assumptions": [
+          "D=0>=0"
+        ],
+        "authority": "EXACT_FINITE_CHECK",
+        "candidate": "SINGULAR_PSD_ALONE_ENSURES_FINITE_ENVELOPE",
+        "matrices_examined": 6,
+        "outcome": "REFUTED",
+        "universal_truth_inferred_from_search": false,
+        "witness": {
+          "energy_along_ray": {
+            "constant": 0,
+            "linear": -2,
+            "quadratic": 0
+          },
+          "fiber_x": 1,
+          "form": {
+            "axes": [
+              "x",
+              "y"
+            ],
+            "coefficients": [
+              [
+                "0",
+                "1"
+              ],
+              [
+                "1",
+                "0"
+              ]
+            ],
+            "epoch": 0,
+            "source_id": "declared-rational-countermodel"
+          },
+          "infimum": "-infinity",
+          "ray_y": -1,
+          "x_zero_fiber_infimum": "0"
+        }
+      }
+    ],
+    "search_order": {
+      "alphabet": [
+        0,
+        1,
+        -1,
+        2,
+        -2
+      ],
+      "dimension": 2,
+      "matrix_budget": 125,
+      "smallest_witness_scope": "first matrix in the declared finite order only",
+      "upper_triangle_order": [
+        "a",
+        "b",
+        "d"
+      ]
+    },
+    "search_proves_universal_theorems": false,
+    "singular_nested_instance": {
+      "authority": "EXACT_FINITE_CHECK",
+      "dependency_graph": [
+        {
+          "depends_on": [],
+          "input": "87f0df54beff56a6f7b62df3034c9e9b6e2f203c38daf45306c59581695e7e14",
+          "node": "fine",
+          "output": "052ae78fff6f4411fb708fe96ccc592883e46dd51d9ad7af9bdfd7e6b388b300",
+          "rule": "OD-01"
+        },
+        {
+          "depends_on": [
+            "fine"
+          ],
+          "input": "052ae78fff6f4411fb708fe96ccc592883e46dd51d9ad7af9bdfd7e6b388b300",
+          "node": "coarse-after-fine",
+          "output": "d161fc4e3ce540146b95e3dad407fa3c8ac23f15b7c87b2bb39cd4e9e60e6e62",
+          "rule": "OD-01"
+        },
+        {
+          "depends_on": [],
+          "input": "87f0df54beff56a6f7b62df3034c9e9b6e2f203c38daf45306c59581695e7e14",
+          "node": "coarse-direct",
+          "output": "d161fc4e3ce540146b95e3dad407fa3c8ac23f15b7c87b2bb39cd4e9e60e6e62",
+          "rule": "OD-01"
+        },
+        {
+          "depends_on": [
+            "coarse-after-fine",
+            "coarse-direct"
+          ],
+          "node": "nested-identity",
+          "rule": "OD-02"
+        }
+      ],
+      "direct": {
+        "authority": "EXACT_FINITE_CHECK",
+        "observation": {
+          "form_digest": "87f0df54beff56a6f7b62df3034c9e9b6e2f203c38daf45306c59581695e7e14",
+          "retained_axes": [
+            "x"
+          ]
+        },
+        "response": [
+          [
+            "1"
+          ],
+          [
+            "0"
+          ]
+        ],
+        "result": {
+          "axes": [
+            "x"
+          ],
+          "coefficients": [
+            [
+              "-2"
+            ]
+          ],
+          "epoch": 0,
+          "source_id": "declared-singular-nested-model"
+        },
+        "rule": "OD-01"
+      },
+      "equal": true,
+      "external_source_identified": false,
+      "first": {
+        "authority": "EXACT_FINITE_CHECK",
+        "observation": {
+          "form_digest": "87f0df54beff56a6f7b62df3034c9e9b6e2f203c38daf45306c59581695e7e14",
+          "retained_axes": [
+            "x",
+            "y"
+          ]
+        },
+        "response": [
+          [
+            "1",
+            "1"
+          ]
+        ],
+        "result": {
+          "axes": [
+            "x",
+            "y"
+          ],
+          "coefficients": [
+            [
+              "-2",
+              "0"
+            ],
+            [
+              "0",
+              "0"
+            ]
+          ],
+          "epoch": 0,
+          "source_id": "declared-singular-nested-model"
+        },
+        "rule": "OD-01"
+      },
+      "paper_rule": "OD-02",
+      "second": {
+        "authority": "EXACT_FINITE_CHECK",
+        "observation": {
+          "form_digest": "052ae78fff6f4411fb708fe96ccc592883e46dd51d9ad7af9bdfd7e6b388b300",
+          "retained_axes": [
+            "x"
+          ]
+        },
+        "response": [
+          [
+            "0"
+          ]
+        ],
+        "result": {
+          "axes": [
+            "x"
+          ],
+          "coefficients": [
+            [
+              "-2"
+            ]
+          ],
+          "epoch": 0,
+          "source_id": "declared-singular-nested-model"
+        },
+        "rule": "OD-01"
+      },
+      "source_digest": "87f0df54beff56a6f7b62df3034c9e9b6e2f203c38daf45306c59581695e7e14"
+    },
+    "surviving_rules": [
+      {
+        "Lean_kernel_replayed": false,
+        "conclusion": "inf_y Q(x,y) = x'(A-X'DX)x; a minimizer is y=-Xx",
+        "external_source_identified": false,
+        "name": "finite Schur envelope by completed square",
+        "outstanding_application_obligations": [
+          "identify the actual target/source with these declared finite objects",
+          "supply and replay every retained hypothesis on that application"
+        ],
+        "proof_location": "research/2026-10-16/OBSERVER_DISCOVERY_EXPERIMENT.md#od-01",
+        "recorded_authority": "PAPER_PROVED",
+        "retained_hypotheses": [
+          "real symmetric finite source form in an orthonormal basis",
+          "D is positive semidefinite",
+          "D X = C for every low column"
+        ],
+        "rule": "OD-01",
+        "runtime_issued_universal_proof": false
+      },
+      {
+        "Lean_kernel_replayed": false,
+        "conclusion": "Schur_coarse(Schur_fine(G)) = Schur_coarse(G)",
+        "external_source_identified": false,
+        "name": "compatible nested envelopes associate",
+        "outstanding_application_obligations": [
+          "identify the actual target/source with these declared finite objects",
+          "supply and replay every retained hypothesis on that application"
+        ],
+        "proof_location": "research/2026-10-16/OBSERVER_DISCOVERY_EXPERIMENT.md#od-02",
+        "recorded_authority": "PAPER_PROVED",
+        "retained_hypotheses": [
+          "same source form and nested coordinate observations",
+          "both staged eliminated blocks are positive semidefinite",
+          "both staged cross-column range equations have solutions"
+        ],
+        "rule": "OD-02",
+        "runtime_issued_universal_proof": false
+      },
+      {
+        "Lean_kernel_replayed": false,
+        "conclusion": "minimum cardinality among the declared fixed probe subsets is certified",
+        "external_source_identified": false,
+        "name": "joint probe minimality from complete tables and ablation pairs",
+        "outstanding_application_obligations": [
+          "identify the actual target/source with these declared finite objects",
+          "supply and replay every retained hypothesis on that application"
+        ],
+        "proof_location": "research/2026-10-16/OBSERVER_DISCOVERY_EXPERIMENT.md#od-04",
+        "recorded_authority": "PAPER_PROVED",
+        "retained_hypotheses": [
+          "entire declared finite source is enumerated",
+          "only deterministic functions of the declared menu are allowed",
+          "all subsets of the declared menu are tested; ablation alone proves only irredundancy"
+        ],
+        "rule": "OD-04",
+        "runtime_issued_universal_proof": false
+      },
+      {
+        "Lean_kernel_replayed": false,
+        "conclusion": "inf_(y,z) q(x,y,z) = inf_y inf_z q(x,y,z)",
+        "external_source_identified": false,
+        "name": "extended-real nested infima associate",
+        "outstanding_application_obligations": [
+          "identify the actual target/source with these declared finite objects",
+          "supply and replay every retained hypothesis on that application",
+          "extended-real infima are a paper rule, not a matrix output in this grammar"
+        ],
+        "proof_location": "research/2026-10-16/OBSERVER_DISCOVERY_EXPERIMENT.md#od-03",
+        "recorded_authority": "PAPER_PROVED",
+        "retained_hypotheses": [
+          "one fixed real-valued source function on a nonempty product fiber",
+          "nested observations identify the SAME union of source fibers",
+          "use extended-real infima, never subtract infinity"
+        ],
+        "rule": "OD-03",
+        "runtime_issued_universal_proof": false
+      }
+    ]
+  },
+  "full_suite_executed_by_this_probe": false,
+  "git_head_at_replay": "5d6d717312eebee648d3cfb092875eb4120bb4b3",
+  "hosted_CI_checked_by_this_probe": false,
+  "imported_local_dependency_hashes_sha256": {
+    "observational_succ/__init__.py": "8c0d1b7b73ef96c6ae9b9f1a4e4872a21a0b93dd2400272cc2407b137db289b4",
+    "observational_succ/adelic_gaussian_interval.py": "21d8e99d87dd2113c8a5f2ad06c4b19666f73131c0237da9a3072f8c06b60def",
+    "observational_succ/adelic_poisson_reconstruction.py": "015c85b06efb437d8f772fc3d4e82726633b8e9d6b9f592e0cbd3c14c25c2454",
+    "observational_succ/all_places_zeta.py": "548350c5978953cbce14c8c54358160ce484c66011d7967365221f7d1925fa82",
+    "observational_succ/arithmetic.py": "25398e89306bdacb6fe17e419cf695ad4f1c5bb41f4536200260862b6e0b579e",
+    "observational_succ/balanced_theta_li.py": "ca9791abf755ee49dbddb6240231a12bb7083e95d30e06aac427dd3d65e8773b",
+    "observational_succ/circle_transport.py": "7e0dce72df006a3f86c39461c4c8a345736e95ba0425390fffaa19b2a8999625",
+    "observational_succ/core.py": "236af6c33af15ba7c78a10f7d4ef840f41137a81854d130ff299fc74d33bdcd1",
+    "observational_succ/covariant_proof_descent.py": "4245d8c0f64e3968221c15ab62b91c009230de23569d21b63e3f5c0943336ed8",
+    "observational_succ/diagonal_adele_zeta.py": "1fbf3353c643e6b952269f99fed818050a2a7a136cc8542c3c1803f91813fd75",
+    "observational_succ/dirichlet_lambert.py": "d0b123bbe1f30388cb5da931e5bfc26960b7c40b014568746b8d7df9675320bf",
+    "observational_succ/edge_carrier_reconstruction.py": "4d53d5f9cbc4d6b85cf9f5690ec16cd2d891dd5eecb369c5cfaa3d6ab5580917",
+    "observational_succ/engine.py": "824960f7d4af1bbae71dca4b2e78dd569b27bc70a43c59f681cf8fc420c8dd8c",
+    "observational_succ/finite_adele_localization.py": "080927e5e6f1864dbd1be5f3baac943f26485c039e2b8530499fbcb54c0db947",
+    "observational_succ/finite_adelic_character_bridge.py": "e35238ca558a7ee3fd8eca0f562cc10df1b96170d7ce6c28895db2afd2b341c2",
+    "observational_succ/finite_fourier_carrier.py": "4b3780ecc75fd189104d57632a423eef1ef4208a380adb5c0cfd9a2fb868984a",
+    "observational_succ/gamma_interferometer.py": "55c3e9d85d8bc521685aa417712b2626e4b961209bd336db67c72c90b51f244d",
+    "observational_succ/gamma_succ_path.py": "3b8f86c616a1e52da8a7ef134e5f35910262d7e5c9e46683ca3627586f52ed0d",
+    "observational_succ/hasse_theta_seam.py": "09d0c527a2ad0a638abd5dc3e4adc4157817c757f4d1c3c338b941a90eb3a3c3",
+    "observational_succ/infinite_realization.py": "cbd880c48302375523d7d4023aa5c5a1c5758311dce15aa51612a0d921dbe66a",
+    "observational_succ/lambert_succ.py": "183d86ebcb3f5b60a379c17b60ae904533f103f07d6cc6a667525b0083c22c56",
+    "observational_succ/local_global.py": "c8c7370115c4e83c7ec2cdab92acb3380ac6aa721e0d0387edcd254f05548d0e",
+    "observational_succ/minimal_observation.py": "0c429dd4087d9be774e26dd0c5b975b20707aaba122d0b436a6353310950ef80",
+    "observational_succ/observer_discovery.py": "4f274f99e495b6d3382a000ab56ca8ab2852778dbfd5ec66fbf570cef0c04ea2",
+    "observational_succ/observer_logic.py": "462c03a16a4c38a8a3a48c62070113e19aad912e4edf3d64b113e92bd8184b5f",
+    "observational_succ/observer_reflection.py": "d03fb9678ef092127bcad9680acc7353f90dbc02db7ed9784c2c67cf67c8f174",
+    "observational_succ/phenomenology.py": "ce7c2fdd2ddfc83f8ffc51ca2bda056deaad9d8c20ac5fbd2b3876f88171ecca",
+    "observational_succ/pontryagin_source_duality.py": "267514bbb058becbb7a802978a31abd69fb8ead818557dcbe5f1569aecd5275c",
+    "observational_succ/prime_form_heat.py": "4a7e4f41437907f4bb535c68de46d5c473fa84f06b7dcc7d22c12f41bce785cd",
+    "observational_succ/recursive_operator_gluing.py": "0dda6bdf871dfdefffe48649c785ab9d18addab6cea5553ac1d4472a3094fd94",
+    "observational_succ/resource_probe.py": "e971c82ce17a9ed24fb0de5126f6fff3e1536698876546619406f87c74b3438b",
+    "observational_succ/source_character_interaction.py": "bba4d098f6bf452f8c741d09912f2567fb4555377d72375b085b858a6e6d63e3",
+    "observational_succ/source_model_interaction.py": "da7e9ab20280dc40a290f294a6f1864204caf3f99a157a8fed4078095abfe22d",
+    "observational_succ/source_prime_certificates.py": "827b157f217d4cf10fa6b6d18c066864c856b9cfcb31a766020d8fb5b5c2e6fa",
+    "observational_succ/source_weil_hierarchy.py": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+    "observational_succ/succ_shadow_window.py": "fcff90412c4378c181a31322809cd0a43bd55fabfe0a2ec575079f85cc8cbb0b",
+    "observational_succ/tate_chi4.py": "9e2d96dea08728a5510cd9b8ce05acc98d549022b3ada265204560ab8fe62835",
+    "observational_succ/tate_schwartz_functor.py": "1f9f8e93cf8d99e50748727b7aebf12f42020d139ec14b1bbdf96b754a17a1c6",
+    "observational_succ/yoneda.py": "4af0194e675406761c1dec151fe1407b65037e1e87e8bc8a950bd42bf914baca"
+  },
+  "inherited_hashes_match_previous_receipt": {
+    "observational_succ/__init__.py": true,
+    "observational_succ/adelic_gaussian_interval.py": true,
+    "observational_succ/adelic_poisson_reconstruction.py": true,
+    "observational_succ/all_places_zeta.py": true,
+    "observational_succ/arithmetic.py": true,
+    "observational_succ/balanced_theta_li.py": true,
+    "observational_succ/circle_transport.py": true,
+    "observational_succ/core.py": true,
+    "observational_succ/covariant_proof_descent.py": true,
+    "observational_succ/diagonal_adele_zeta.py": true,
+    "observational_succ/dirichlet_lambert.py": true,
+    "observational_succ/edge_carrier_reconstruction.py": true,
+    "observational_succ/engine.py": true,
+    "observational_succ/finite_adele_localization.py": true,
+    "observational_succ/finite_adelic_character_bridge.py": true,
+    "observational_succ/finite_fourier_carrier.py": true,
+    "observational_succ/gamma_interferometer.py": true,
+    "observational_succ/gamma_succ_path.py": true,
+    "observational_succ/hasse_theta_seam.py": true,
+    "observational_succ/infinite_realization.py": true,
+    "observational_succ/lambert_succ.py": true,
+    "observational_succ/local_global.py": true,
+    "observational_succ/minimal_observation.py": true,
+    "observational_succ/observer_logic.py": true,
+    "observational_succ/observer_reflection.py": true,
+    "observational_succ/phenomenology.py": true,
+    "observational_succ/pontryagin_source_duality.py": true,
+    "observational_succ/prime_form_heat.py": true,
+    "observational_succ/recursive_operator_gluing.py": true,
+    "observational_succ/resource_probe.py": true,
+    "observational_succ/source_character_interaction.py": true,
+    "observational_succ/source_model_interaction.py": true,
+    "observational_succ/source_prime_certificates.py": true,
+    "observational_succ/source_weil_hierarchy.py": true,
+    "observational_succ/succ_shadow_window.py": true,
+    "observational_succ/tate_chi4.py": true,
+    "observational_succ/tate_schwartz_functor.py": true,
+    "observational_succ/yoneda.py": true
+  },
+  "joint_chi4_bits": {
+    "ablation_pairs": [
+      {
+        "removed_probe": 0,
+        "source_pair": [
+          0,
+          1
+        ],
+        "subset": [
+          0,
+          1
+        ],
+        "target_values": [
+          0,
+          1
+        ]
+      },
+      {
+        "removed_probe": 1,
+        "source_pair": [
+          1,
+          3
+        ],
+        "subset": [
+          0,
+          1
+        ],
+        "target_values": [
+          1,
+          -1
+        ]
+      }
+    ],
+    "adaptive_optimality_claimed": false,
+    "all_subset_receipts": [
+      {
+        "certificate": {
+          "authority": "EXACT_FINITE_CHECK",
+          "collision": [
+            0,
+            1
+          ],
+          "decoder": [],
+          "outcome": "REFUTED",
+          "source_digest": "6b2a88de2069588cab894c154eac2609a1c31324d1811693b9a0a2361c85eefe"
+        },
+        "problem_digest": "6b2a88de2069588cab894c154eac2609a1c31324d1811693b9a0a2361c85eefe",
+        "subset": []
+      },
+      {
+        "certificate": {
+          "authority": "EXACT_FINITE_CHECK",
+          "collision": [
+            1,
+            3
+          ],
+          "decoder": [],
+          "outcome": "REFUTED",
+          "source_digest": "41e9908df1ed4eeaf8797bc63b8a64ee777666b77e8e71f0b33ede4cfcc5caf0"
+        },
+        "problem_digest": "41e9908df1ed4eeaf8797bc63b8a64ee777666b77e8e71f0b33ede4cfcc5caf0",
+        "subset": [
+          0
+        ]
+      },
+      {
+        "certificate": {
+          "authority": "EXACT_FINITE_CHECK",
+          "collision": [
+            0,
+            1
+          ],
+          "decoder": [],
+          "outcome": "REFUTED",
+          "source_digest": "5ae0bd74e7706301001b6e2cddf9dcacdeb2e79376748b825542ba62780a9241"
+        },
+        "problem_digest": "5ae0bd74e7706301001b6e2cddf9dcacdeb2e79376748b825542ba62780a9241",
+        "subset": [
+          1
+        ]
+      },
+      {
+        "certificate": {
+          "authority": "EXACT_FINITE_CHECK",
+          "collision": null,
+          "decoder": [
+            [
+              [
+                0,
+                0
+              ],
+              0
+            ],
+            [
+              [
+                1,
+                0
+              ],
+              1
+            ],
+            [
+              [
+                0,
+                1
+              ],
+              0
+            ],
+            [
+              [
+                1,
+                1
+              ],
+              -1
+            ]
+          ],
+          "outcome": "PROVEN_FACTORIZATION",
+          "source_digest": "c180dd7a7800ae5980e3a1351ae91ef905900310a67c1a6c1e132ed6365ed3aa"
+        },
+        "problem_digest": "c180dd7a7800ae5980e3a1351ae91ef905900310a67c1a6c1e132ed6365ed3aa",
+        "subset": [
+          0,
+          1
+        ]
+      }
+    ],
+    "authority": "EXACT_FINITE_CHECK",
+    "external_source_identified": false,
+    "inclusion_minimal_subsets": [
+      [
+        0,
+        1
+      ]
+    ],
+    "menu_digest": "295ec4ec94bbf803aa3c7e56a355c9c22d6c9924b5c480ebc91e44a6aabd2d3d",
+    "minimum_cardinality": 2,
+    "minimum_subsets": [
+      [
+        0,
+        1
+      ]
+    ],
+    "outcome": "PROVEN_MINIMUM_IN_POWERSET",
+    "rule": "OD-04",
+    "source_digest": "2957aeb02bc50e46a1d4e88f1288246c14931a954e72d3a2b20e57da0f48990d"
+  },
+  "proof_authority_boundary": "Finite matrix identities and whole finite tables only; paper rules retained",
+  "python": "3.10.20",
+  "source_hashes_sha256": {
+    "observational_succ/covariant_proof_descent.py": "4245d8c0f64e3968221c15ab62b91c009230de23569d21b63e3f5c0943336ed8",
+    "observational_succ/minimal_observation.py": "0c429dd4087d9be774e26dd0c5b975b20707aaba122d0b436a6353310950ef80",
+    "observational_succ/observer_discovery.py": "4f274f99e495b6d3382a000ab56ca8ab2852778dbfd5ec66fbf570cef0c04ea2",
+    "observational_succ/proof_gluing.py": "8c191ee1c20f3790c5a7eb83ee3340a2f2fb6b7a00dcf392a928e02a006d34ab",
+    "observational_succ/recursive_operator_gluing.py": "0dda6bdf871dfdefffe48649c785ab9d18addab6cea5553ac1d4472a3094fd94",
+    "observational_succ/source_character_interaction.py": "bba4d098f6bf452f8c741d09912f2567fb4555377d72375b085b858a6e6d63e3",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-15/proof_teeth_receipts/final-py313.json": "bd5f718089131f115c6ff0fd0a092f62664d38f6edae256ca41df47291731ca9",
+    "research/2026-10-16/OBSERVER_DISCOVERY_EXPERIMENT.md": "a4d7131318095538f9c275df13331bec5a13e16a75a6a73f35dfdaa216c80acd",
+    "scripts/observer_discovery_probe.py": "86e6592f0a271d571edd10ad6abb284c0336fd08a9f1332308e0a781ba177c03",
+    "tests/test_observer_discovery.py": "0024ef02d41b5e69be842e87f442e099f8673036fdd05163204af9cde161faec"
+  },
+  "source_identity_boundary": "Hashes pin bytes; external analytic identification is not issued"
+}

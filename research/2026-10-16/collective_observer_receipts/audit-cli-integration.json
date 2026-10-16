@@ -1,0 +1,114 @@
+{
+  "checks": [
+    {
+      "case": "workflow_external_output",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-collective-observer/scripts/collective_observer_independent_audit.py",
+        "--output",
+        "/tmp/collective-audit-cli-dg8idl9_/collective-audit.json"
+      ],
+      "elapsed_seconds": 9.4667,
+      "returncode": 0,
+      "sources_stable": true,
+      "status": "PASS"
+    },
+    {
+      "case": "stdout_only",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-collective-observer/scripts/collective_observer_independent_audit.py",
+        "--sections",
+        "adaptive"
+      ],
+      "elapsed_seconds": 0.1255,
+      "returncode": 0,
+      "sources_stable": true,
+      "status": "PASS"
+    },
+    {
+      "case": "explicit_pinned_source",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-collective-observer/scripts/collective_observer_independent_audit.py",
+        "--sections",
+        "spectral_source",
+        "--source-root",
+        "/tmp/collective-audit-cli-dg8idl9_/pinned-sibling",
+        "--output",
+        "/tmp/collective-audit-cli-dg8idl9_/moments.json"
+      ],
+      "elapsed_seconds": 1.6994,
+      "returncode": 0,
+      "sources_stable": true,
+      "status": "PASS"
+    },
+    {
+      "case": "explicit_source_receipt",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-collective-observer/scripts/collective_observer_independent_audit.py",
+        "--sections",
+        "spectral_receipt",
+        "--source-root",
+        "/tmp/collective-audit-cli-dg8idl9_/pinned-sibling"
+      ],
+      "elapsed_seconds": 0.0757,
+      "returncode": 0,
+      "sources_stable": true,
+      "status": "PASS"
+    },
+    {
+      "case": "bad_explicit_source_does_not_fallback",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-B",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-collective-observer/scripts/collective_observer_independent_audit.py",
+        "--sections",
+        "spectral_source",
+        "--source-root",
+        "/tmp/collective-audit-cli-dg8idl9_/not-a-checkout"
+      ],
+      "elapsed_seconds": 0.0872,
+      "returncode": 1,
+      "sources_stable": true,
+      "status": "FAIL_SECTION"
+    },
+    {
+      "case": "source_modify",
+      "returncode": 1,
+      "scope": "disposable source fixtures only; no implementation mutation",
+      "source_changes": [
+        "observational_succ/collective_control.py"
+      ],
+      "status": "FAIL_SOURCE_INSTABILITY"
+    },
+    {
+      "case": "source_add",
+      "returncode": 1,
+      "scope": "disposable source fixtures only; no implementation mutation",
+      "source_changes": [
+        "observational_succ/collective_added.py"
+      ],
+      "status": "FAIL_SOURCE_INSTABILITY"
+    },
+    {
+      "case": "source_delete",
+      "returncode": 1,
+      "scope": "disposable source fixtures only; no implementation mutation",
+      "source_changes": [
+        "observational_succ/collective_control.py"
+      ],
+      "status": "FAIL_SOURCE_INSTABILITY"
+    }
+  ],
+  "completed_utc": "2026-10-16T18:02:03.541219+00:00",
+  "git_mutations": false,
+  "implementations_modified": false,
+  "script_sha256": "dd7ffe42fd781d5b845ee4811bb7410889d11105523a223cdb18b298fa9a42de",
+  "status": "PASS_CLI_INTEGRATION_CONTROLS"
+}

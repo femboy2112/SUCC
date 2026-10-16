@@ -1,0 +1,39 @@
+{
+  "recorded_at_utc": "2026-10-16T01:50:53.858266+00:00",
+  "repository": "https://github.com/femboy2112/YEAN",
+  "head": "bf49477d9758e17070e9603526ead3e3e11122a1",
+  "manifest_sha256": "1558042d7c64de71a3511a8f5388f2f5d0def0b968883e91e0526e6bc5bd0ce5",
+  "fresh_principal_source_hash_rechecks": 3245,
+  "command_logs_rechecked": 49,
+  "command_failures": [],
+  "axiom_allowlist": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "audited_declarations": 101,
+  "fresh_local_module_count": 21,
+  "new_modules": {
+    "Yean/SUCC/AffineWord.lean": {
+      "sha256": "77bfbe803999a61e72a3cbfeaad804a948f72d641a9ff55e8310e24488157d4b",
+      "theorems": 14
+    },
+    "Yean/SUCC/FiniteRetract.lean": {
+      "sha256": "a2b915ee6034745222a1be6cc4c1607018007b555a78fbc38d6cc7d6d35be308",
+      "theorems": 28
+    },
+    "Yean/SUCC/TwoPoint.lean": {
+      "sha256": "0a46404ac95ccea592d54fe24334391836813801b5a72cd181ed1b2a443d07a4",
+      "theorems": 20
+    }
+  },
+  "versions": {
+    "cargo": "cargo 1.85.1 (d73d2caf9 2024-12-31)",
+    "lake": "Lake version 5.0.0-src+f72c35b (Lean version 4.29.1)",
+    "lean": "Lean (version 4.29.1, x86_64-unknown-linux-gnu, commit f72c35b3f637c8c6571d353742168ab66cc22c00, Release)",
+    "python3": "Python 3.12.3",
+    "rustc": "rustc 1.85.1 (4eb161250 2025-03-15)"
+  },
+  "compiler_run_authority": "Actual serial Lean executions recorded in paired repository; this principal follow-up verifies sources and logs, not a second compile",
+  "artifact_sidecars_rehashed_in_this_followup": false
+}

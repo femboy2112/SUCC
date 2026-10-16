@@ -1,0 +1,140 @@
+{
+  "G": [
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ]
+  ],
+  "actual_source_negative_direction_found": false,
+  "complex_sign_control": {
+    "imag": "2",
+    "real": "0"
+  },
+  "conditional_witness_budgets": [
+    {
+      "candidate_count_log2_strict_upper": 240,
+      "candidate_count_power": [
+        4037,
+        20
+      ],
+      "certification_error_allowance": "1/40",
+      "coefficient_denominator": 440,
+      "compression_error_upper": "1/40",
+      "conditional_on_actual_negative_unit_direction": true,
+      "degree": 10,
+      "density_rate_assumed": false,
+      "integer_numerator_absolute_bound": 2018,
+      "quadratic_rounding_error_upper": "89/7040",
+      "rational_quadratic_upper": "-439/7040",
+      "rounding_L2_error_upper": "1/44"
+    },
+    {
+      "candidate_count_log2_strict_upper": 4578,
+      "candidate_count_power": [
+        1419491,
+        218
+      ],
+      "certification_error_allowance": "1/400",
+      "coefficient_denominator": 47960,
+      "compression_error_upper": "1/400",
+      "conditional_on_actual_negative_unit_direction": true,
+      "degree": 109,
+      "density_rate_assumed": false,
+      "integer_numerator_absolute_bound": 709745,
+      "quadratic_rounding_error_upper": "881/704000",
+      "rational_quadratic_upper": "-4399/704000",
+      "rounding_L2_error_upper": "1/440"
+    },
+    {
+      "candidate_count_log2_strict_upper": 63742,
+      "candidate_count_power": [
+        453516385,
+        2198
+      ],
+      "certification_error_allowance": "1/4000",
+      "coefficient_denominator": 4835600,
+      "compression_error_upper": "1/4000",
+      "conditional_on_actual_negative_unit_direction": true,
+      "degree": 1099,
+      "density_rate_assumed": false,
+      "integer_numerator_absolute_bound": 226758192,
+      "quadratic_rounding_error_upper": "8801/70400000",
+      "rational_quadratic_upper": "-43999/70400000",
+      "rounding_L2_error_upper": "1/4400"
+    }
+  ],
+  "hidden_soft_modes": [
+    {
+      "D_mm": "1/1024",
+      "b_m": "1/32",
+      "full_short": "-1/2",
+      "hidden_mode": 5,
+      "square_root_response_norm_squared": "1",
+      "synthetic": true,
+      "unit_witness_negative_margin": "1/2050",
+      "visible_short": "1/2",
+      "witness_high_coefficient": "-32"
+    },
+    {
+      "D_mm": "1/4398046511104",
+      "b_m": "1/2097152",
+      "full_short": "-1/2",
+      "hidden_mode": 21,
+      "square_root_response_norm_squared": "1",
+      "synthetic": true,
+      "unit_witness_negative_margin": "1/8796093022210",
+      "visible_short": "1/2",
+      "witness_high_coefficient": "-2097152"
+    },
+    {
+      "D_mm": "1/6427752177035961102167848369364650410088811975131171341205504",
+      "b_m": "1/2535301200456458802993406410752",
+      "full_short": "-1/2",
+      "hidden_mode": 101,
+      "square_root_response_norm_squared": "1",
+      "synthetic": true,
+      "unit_witness_negative_margin": "1/12855504354071922204335696738729300820177623950262342682411010",
+      "visible_short": "1/2",
+      "witness_high_coefficient": "-2535301200456458802993406410752"
+    }
+  ],
+  "intersection": {
+    "authority": "EXACT_INTERSECTION_CONDITIONAL_ON_EACH_INPUT_BOUND",
+    "independence_established": false,
+    "interval": [
+      "-1/2",
+      "1/3"
+    ],
+    "provenance_components": [
+      [
+        "inherited",
+        "new-derivation"
+      ]
+    ]
+  },
+  "private_diagonals": [
+    "1",
+    "1"
+  ],
+  "q_minus": "-2",
+  "q_plus": "6",
+  "recovered_pairing": {
+    "imag": "0",
+    "real": "2"
+  },
+  "rejected_mutations": [
+    "source",
+    "radius",
+    "basis",
+    "channels",
+    "metric",
+    "target",
+    "convention"
+  ],
+  "schema": "COLLECTIVE_SPECTRAL_EXACT_V1",
+  "status": "EXACT_FINITE_TESTS_AND_CONDITIONAL_PAPER_THEOREMS"
+}

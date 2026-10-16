@@ -1,0 +1,252 @@
+{
+  "operation": "SUCC Academic Main II",
+  "generated_utc": "2026-10-16T21:24:49Z",
+  "pre_merge_main": "02fc9f46ad3b914d49df7a658e304d06ed8a6200",
+  "integration_branch": "integration/succ-academic-main-ii-2026-10-16",
+  "integration_head_code_final": "325309bf1824c5da42f30c4e9cea4cb9ebbe0ea7",
+  "families": {
+    "A": {
+      "name": "Mathematical proof machinery / arithmetic Schur",
+      "chain": "133->134->135->{136->138, 137}",
+      "tips": [
+        138,
+        137
+      ]
+    },
+    "B": {
+      "name": "Source-indexed observer computation",
+      "chain": "139->140->143->144",
+      "tips": [
+        144
+      ]
+    },
+    "C": {
+      "name": "Gamma/factorial/FUCC/signed Weil",
+      "chain": "141->142->145->146->147",
+      "tips": [
+        147
+      ]
+    }
+  },
+  "terminal_tips": {
+    "138": "7705897a1eee363bbbc3d48b05612e3db2c298d9",
+    "137": "95dbf40553e54c901e9998e14b1b9d67298fa89e",
+    "144": "dc497bc5ea9c6fb655e9ea48adb0b237e7dd8fc9",
+    "147": "8bfc4a7c34645614221eeebe06540a375fdab958"
+  },
+  "merge_base_137_138": "24d0f18a103fb2add32ee817fdfefb4ff401ed27",
+  "all_15_covered": true,
+  "merge_commits": [
+    {
+      "pr": 138,
+      "merge": "c470a029",
+      "type": "--no-ff"
+    },
+    {
+      "fix": "8e9fd88",
+      "desc": "repair #138 red interval test (exact rational xi shift)"
+    },
+    {
+      "pr": 137,
+      "merge": "18fa247",
+      "type": "--no-ff",
+      "note": "docs auto-merged"
+    },
+    {
+      "pr": 144,
+      "merge": "effb595",
+      "type": "--no-ff",
+      "note": "SUCC_RESEARCH_DEPENDENCY_DAG.md additive-union conflict resolved"
+    },
+    {
+      "pr": 147,
+      "merge": "325309b",
+      "type": "--no-ff"
+    }
+  ],
+  "ci_at_tip_heads": {
+    "137": "pass (3.10+3.13 math/epistemic + finite_source + source-response)",
+    "138": "RED at source head (math/epistemic 3.10+3.13) -> REPAIRED on integration branch (commit 8e9fd88)",
+    "144": "pass (3.10+3.13)",
+    "147": "pass (3.10+3.13)"
+  },
+  "ci_note_140": "PR #140 historically RED (KeyError 'kind' in consensus_lambda.py); repaired by #143; historical receipt preserved, not reinterpreted as green",
+  "conflict_surface": {
+    "distinct_changed_paths": 641,
+    "multi_tip_paths": 249,
+    "byte_identical": 245,
+    "diverged": [
+      "README.md",
+      "docs/CLAIM_INDEX.md",
+      "docs/CLAIM_LEDGER.md",
+      "docs/SUCC_RESEARCH_DEPENDENCY_DAG.md"
+    ],
+    "git_conflicts_requiring_manual_resolution": [
+      "docs/SUCC_RESEARCH_DEPENDENCY_DAG.md (additive union)"
+    ]
+  },
+  "validation_local_py312": {
+    "verify_provenance": "SOURCE_PROVENANCE_VERIFIED/72/establishes_mathematical_truth:false",
+    "observer_foundations": "finite_survival_claims_are_universal_proofs:false",
+    "ordinal": "positive_definiteness_proved:false",
+    "compileall": "exit 0 (2 benign docstring SyntaxWarnings)",
+    "focused_new_modules": "637 tests OK (33 files)",
+    "full_suite": "4975 tests OK (536.9s, py3.12)"
+  },
+  "firewall": "RH PROVED: NO. RH remains OPEN. S_4 = A_4 - R_4 OPEN.",
+  "prs": [
+    {
+      "pr": 133,
+      "branch": "research/yean-proof-kernel-crosspollination-2026-10-15",
+      "head": "0f86ba2478a72bf90cf33a4ee192cb2265d992dd",
+      "family": "A",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        138,
+        137
+      ]
+    },
+    {
+      "pr": 134,
+      "branch": "research/succ-yean-proof-teeth-ultra-2026-10-15",
+      "head": "5d6d717312eebee648d3cfb092875eb4120bb4b3",
+      "family": "A",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        138,
+        137
+      ]
+    },
+    {
+      "pr": 135,
+      "branch": "research/observers-schur-complement-2026-10-16",
+      "head": "24d0f18a103fb2add32ee817fdfefb4ff401ed27",
+      "family": "A",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        138,
+        137
+      ]
+    },
+    {
+      "pr": 136,
+      "branch": "research/unit-prime-succ-equivalence-2026-10-16",
+      "head": "53c53e91bd1b46071d6437fed0e68c9b337892a0",
+      "family": "A",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        138
+      ]
+    },
+    {
+      "pr": 137,
+      "branch": "research/arithmetic-wavefront-spectral-response-2026-10-16",
+      "head": "95dbf40553e54c901e9998e14b1b9d67298fa89e",
+      "family": "A",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        137
+      ]
+    },
+    {
+      "pr": 138,
+      "branch": "research/unit-prime-tate-log-clock-2026-10-16",
+      "head": "7705897a1eee363bbbc3d48b05612e3db2c298d9",
+      "family": "A",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        138
+      ]
+    },
+    {
+      "pr": 139,
+      "branch": "research/succ-lambda-observation-calculus-2026-10-16",
+      "head": "f4f3d83f4cd38722a49ff9605b3667db0816bfad",
+      "family": "B",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        144
+      ]
+    },
+    {
+      "pr": 140,
+      "branch": "research/e-ladder-consensus-lambda-2026-10-16",
+      "head": "940f089d10926ecbdf24ee9e3483c993042b9275",
+      "family": "B",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        144
+      ]
+    },
+    {
+      "pr": 141,
+      "branch": "research/dirac-comb-gamma-continuum-2026-10-16",
+      "head": "849b241801578542997972eb46f3c8d309b36d0c",
+      "family": "C",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        147
+      ]
+    },
+    {
+      "pr": 142,
+      "branch": "research/gamma-band-dealias-interleaving-2026-10-16",
+      "head": "6623fd11b710a40dc5f9cd2375ba74d759be0245",
+      "family": "C",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        147
+      ]
+    },
+    {
+      "pr": 143,
+      "branch": "research/collective-observer-2026-10-16",
+      "head": "f7cc849d588629fec0db1d73a5418456b5087ed2",
+      "family": "B",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        144
+      ]
+    },
+    {
+      "pr": 144,
+      "branch": "research/cofinal-schur-telescope-2026-10-16",
+      "head": "dc497bc5ea9c6fb655e9ea48adb0b237e7dd8fc9",
+      "family": "B",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        144
+      ]
+    },
+    {
+      "pr": 145,
+      "branch": "research/fucc-succ-factorial-gamma-moment-lift-2026-10-16",
+      "head": "b8e147d8d53d4c3bd2e48d1f0ad06f3e59bf1b21",
+      "family": "C",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        147
+      ]
+    },
+    {
+      "pr": 146,
+      "branch": "research/tate-mellin-prime-fucc-escape-2026-10-16",
+      "head": "d7545a1c5fe7b16d12af877513283f802f3d151d",
+      "family": "C",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        147
+      ]
+    },
+    {
+      "pr": 147,
+      "branch": "research/prime-active-source-weil-spline-schur-2026-10-16",
+      "head": "8bfc4a7c34645614221eeebe06540a375fdab958",
+      "family": "C",
+      "is_ancestor_of_integration_head": true,
+      "covered_by_tips": [
+        147
+      ]
+    }
+  ]
+}

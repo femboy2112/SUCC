@@ -1,0 +1,20 @@
+{
+  "RH_proved": false,
+  "joint_modulus": 6,
+  "joint_value": 5,
+  "original_source_authenticated": false,
+  "origins": [
+    "A:2:0",
+    "B:3:0"
+  ],
+  "physical_measurements_performed": 0,
+  "replayed_origin_count": 1,
+  "replays": 8,
+  "status": "EXACT_FINITE_DECLARED_MODEL",
+  "transitive_debts": [
+    "FINITE_MATRIX_TO_ORIGINAL_SOURCE_IDENTIFICATION",
+    "IMPORTED_STATEMENT_PROOF_NOT_REPLAYED",
+    "OPEN_SOURCE_TAIL",
+    "SOURCE_TO_THEOREM_IDENTIFICATION"
+  ]
+}

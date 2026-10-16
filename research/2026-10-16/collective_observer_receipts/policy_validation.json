@@ -1,0 +1,125 @@
+{
+  "branch": "research/collective-observer-2026-10-16",
+  "checks": [
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_collective_policy.py",
+        "-v"
+      ],
+      "elapsed_seconds": 2.451193,
+      "exit_code": 0,
+      "log": "policy_tests.log",
+      "sha256": "8cce80546a67bc66b3d8134fe64d2e6a1bcc647086dbcbd821b7294d250861b3",
+      "started_utc": "2026-10-16T17:53:33.229781+00:00"
+    },
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "elapsed_seconds": 0.147828,
+      "exit_code": 0,
+      "log": "policy_provenance.log",
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "started_utc": "2026-10-16T17:53:35.681082+00:00"
+    },
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "elapsed_seconds": 0.27776,
+      "exit_code": 0,
+      "log": "policy_foundations.log",
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "started_utc": "2026-10-16T17:53:35.828983+00:00"
+    },
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "elapsed_seconds": 4.535685,
+      "exit_code": 0,
+      "log": "policy_ordinal.log",
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "started_utc": "2026-10-16T17:53:36.106810+00:00"
+    },
+    {
+      "PYTHONHASHSEED": "1",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/collective_policy_probe.py"
+      ],
+      "elapsed_seconds": 2.532987,
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "be7830061fd268adc1f9f30846dfb129d1cc864c65092097aee021dd9e64dce4"
+    },
+    {
+      "PYTHONHASHSEED": "29",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/collective_policy_probe.py"
+      ],
+      "elapsed_seconds": 2.593343,
+      "exit_code": 0,
+      "stderr": "",
+      "stdout_sha256": "be7830061fd268adc1f9f30846dfb129d1cc864c65092097aee021dd9e64dce4"
+    }
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-collective-observer",
+  "deterministic_across_hash_seeds": true,
+  "full_suite_owner": "principal",
+  "git_mutations_by_policy_worker": false,
+  "head_at_end": "8fcde04dbd4f43f550b18ae73e9ba242d5ef146c",
+  "head_at_start": "8fcde04dbd4f43f550b18ae73e9ba242d5ef146c",
+  "probe_sha256": "be7830061fd268adc1f9f30846dfb129d1cc864c65092097aee021dd9e64dce4",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "schema": "policy-command-validation-v1",
+  "source_last_commits": {
+    "AGENTS.md": "4a8e5817fba3be7c853e45ba22194553b25cde1c",
+    "docs/METHOD.md": "4a8e5817fba3be7c853e45ba22194553b25cde1c",
+    "observational_succ/absorbing_frames.py": "08096bd1ff3a9024254efbc6c497bd7ae42405db",
+    "observational_succ/adaptive_proof_policy.py": "5483f077745cdf31f363ef0da6b96d214188503b",
+    "observational_succ/collective_policy.py": null,
+    "observational_succ/consensus_lambda.py": "52e5505f2bf73c0a2d69c0baafc8414745da3593",
+    "observational_succ/interobserver_channels.py": "e1ccede60f77838f626194f81cc69c3efab69d0d",
+    "observational_succ/knowledge_ladder.py": "2615a2f4a73b87bc021266e356c0d5e10e6ab470",
+    "observational_succ/miniature_carrier.py": "e62b7cae95ac07e548c4112a6bb97398e7d69bd4",
+    "observational_succ/miniature_stochastic.py": "4248d49a849327c92dff02586dab544b89dc69bb",
+    "observational_succ/noncommuting_proof_transport.py": "89caebe3289ffd1ca97b4c30f4af00c4c990b828",
+    "observational_succ/operational_yoneda_descent.py": "5b85b01c2b5ff2e3b993dcec85bc78a641cb6a7b",
+    "observational_succ/source_lambda.py": "91688cff4ee35adb4a6e5226876d5b53ebde567e",
+    "provenance/IMPORT_MANIFEST.json": "4f7aaff242dafc4d6a9bfc60982d1f3a8e4db672",
+    "research/2026-10-16/COLLECTIVE_POLICY_THEOREM.md": null,
+    "scripts/collective_policy_probe.py": null,
+    "tests/test_collective_policy.py": null
+  },
+  "source_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "observational_succ/absorbing_frames.py": "2a4dc7f0af07b536dcd6fe259069a0e78890358180b4c5490d7c7bd4d71eb95e",
+    "observational_succ/adaptive_proof_policy.py": "433c32b2c81128be615f8dc9cb39d556ff6781bed3a869524fe6effb41f2da4d",
+    "observational_succ/collective_policy.py": "9414cb686f509c403cf9ae2608378caaa20fd56d1754f765eb9673fcd11f168f",
+    "observational_succ/consensus_lambda.py": "9c1078fc0dc807139e2a9d22fc7ff59db7b19e1fcb67520bad345d86584951de",
+    "observational_succ/interobserver_channels.py": "5a3c9d72dc84427d3bf72410f8b8ed36fcdb3fc9800c9e1f48cd85532bc88db6",
+    "observational_succ/knowledge_ladder.py": "befad197c6898321dcbcd5ee025972c15b1669d1ad99338c8f7c6c7093e361a2",
+    "observational_succ/miniature_carrier.py": "3930f452b242b9182b9c51769b845922c7bb28c0ef7682c56f03cc3312ac2802",
+    "observational_succ/miniature_stochastic.py": "83b4b5526492c9609cf7c894f58bba01bfd371dfe1dfb86228b74df6109ce896",
+    "observational_succ/noncommuting_proof_transport.py": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a",
+    "observational_succ/operational_yoneda_descent.py": "c9db557825a01bec76e8bc38f32d3f59cd2dd17d7a2670e15373aedeedc67e0c",
+    "observational_succ/source_lambda.py": "13c2db896da68d186006ddd1c668e98213265a61fb12ce2450a2f735e89c71f6",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-16/COLLECTIVE_POLICY_THEOREM.md": "612e7d5f0ccf9a617263096a64ac48806671c3acba963aa483a494490ecd73fe",
+    "scripts/collective_policy_probe.py": "bb893c02dc6d0dad068f3e4d30264a367a7f8c5b13258b34dcb0bb304b132aa6",
+    "tests/test_collective_policy.py": "1fa0c2ea41f40bda8ecc774eb1e6a3e7006b307e215c3a2d8d617fb348110412"
+  }
+}

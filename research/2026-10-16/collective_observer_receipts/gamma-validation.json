@@ -1,0 +1,73 @@
+{
+  "records": [
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-S",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_collective_gamma.py",
+        "-v"
+      ],
+      "elapsed_ns": 2416677573,
+      "exit_code": 0,
+      "log": "gamma-tests.log",
+      "sha256": "e61b1cfb25e138bc66f5aaf4fc52e170abb979c8e48c87adaee47c7ab9a8650a"
+    },
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "elapsed_ns": 39659738,
+      "exit_code": 0,
+      "log": "gamma-provenance.log",
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "elapsed_ns": 114254751,
+      "exit_code": 0,
+      "log": "gamma-foundations.log",
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "elapsed_ns": 3167011305,
+      "exit_code": 0,
+      "log": "gamma-ordinal.log",
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "byte_identical": true,
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-S",
+        "scripts/collective_gamma_probe.py",
+        "--verify"
+      ],
+      "elapsed_ns": 6906172986,
+      "exit_codes": [
+        0,
+        0
+      ],
+      "receipt": "gamma-probe.json",
+      "runs": 2,
+      "sha256": "8f91c334a35d594e5398548b2650ef15151ca1344f29080fa443aaec8e05e704"
+    }
+  ],
+  "runtime": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "schema": "gamma-validation-v1",
+  "scope": "worker targeted tests and required small probes; full suite belongs to principal",
+  "timing_is_observed_not_deterministic": true
+}

@@ -1,0 +1,38 @@
+{
+  "captured_at_utc": "2026-10-16T01:59:38.079281+00:00",
+  "implementation_checkpoint": "ab91d630b5d25184bb31d086d04ba12c48428bf5",
+  "full_suites": [
+    {
+      "python": "Python 3.10.20",
+      "full_tests": 4428,
+      "unittest_seconds": 585.5,
+      "skipped": 0,
+      "source_stable": true,
+      "required_and_research_probes_exit_zero": 6,
+      "receipt": "final-py310.json"
+    },
+    {
+      "python": "Python 3.13.13",
+      "full_tests": 4428,
+      "unittest_seconds": 380.214,
+      "skipped": 0,
+      "source_stable": true,
+      "required_and_research_probes_exit_zero": 6,
+      "receipt": "final-py313.json"
+    }
+  ],
+  "focused_tests_per_interpreter": 81,
+  "full_test_counts_are_not_theorem_counts": true,
+  "capsule_count": 9,
+  "schur_independent_replay": {
+    "exit_code": 0,
+    "log": "schur-independent-replay.log",
+    "sha256": "234b235d041c7ee8cbc61187a9c0f289427d5bb0dfdb76e64c70592e30ee2de0",
+    "method": "Execute first Python fence of the independent Schur audit; no project arithmetic imports"
+  },
+  "profinite_exact_receipt_verify": {
+    "python310_exit": 0,
+    "python313_exit": 0
+  },
+  "RH_proved": false
+}

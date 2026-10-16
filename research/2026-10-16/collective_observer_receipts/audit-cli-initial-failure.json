@@ -1,0 +1,7 @@
+{
+  "status": "AUDIT_HARNESS_FAILURE",
+  "check": "stdout_file_byte_equality",
+  "cause": "print(data) added a second newline to stdout while file contained one",
+  "main_audit_exit_code": 0,
+  "main_audit_status": "PASS"
+}

@@ -1,0 +1,30 @@
+test_compact_diagonal_tail_uses_first_omitted_coordinate (test_compact_galerkin.CompactProjectionControls) ... ok
+test_constant_has_zero_derivative_and_zero_tail (test_compact_galerkin.CompactProjectionControls) ... ok
+test_noncompact_identity_has_exact_unit_obstruction (test_compact_galerkin.CompactProjectionControls) ... ok
+test_only_exact_valid_parameters_admitted (test_compact_galerkin.CompactProjectionControls) ... ok
+test_weighted_legendre_sum_independently_integrates_mixed_modes (test_compact_galerkin.CompactProjectionControls) ... ok
+test_weighted_legendre_tail_equality_on_first_omitted_mode (test_compact_galerkin.CompactProjectionControls) ... ok
+test_wrong_first_omitted_eigenvalue_is_detected (test_compact_galerkin.CompactProjectionControls) ... ok
+test_clamped_range_gap_survives_signed_and_higher_degree_trials (test_compact_galerkin.RangeGapAndGammaControls) ... ok
+test_clamped_source_constant_and_exact_polynomial_controls (test_compact_galerkin.RangeGapAndGammaControls) ... ok
+test_dirichlet_poisson_maximizer_is_not_a_clamped_trial (test_compact_galerkin.RangeGapAndGammaControls) ... ok
+test_gamma_tail_controls_independent_finite_sum_and_exact_integral_tail (test_compact_galerkin.RangeGapAndGammaControls) ... ok
+test_matrix_gram_upper_retains_cross_terms (test_compact_galerkin.RangeGapAndGammaControls) ... ok
+test_wrong_gram_and_zero_epsilon_rejected (test_compact_galerkin.RangeGapAndGammaControls) ... ok
+test_independent_two_by_two_algebra_confirms_every_block (test_compact_galerkin.RelativeGraphControls) ... ok
+test_infinite_stage_formulas_match_independent_finite_sum_and_exact_tail (test_compact_galerkin.RelativeGraphControls) ... ok
+test_negative_sufficient_lower_is_not_negative_original_short (test_compact_galerkin.RelativeGraphControls) ... ok
+test_no_bool_or_float_alias_for_graph_family (test_compact_galerkin.RelativeGraphControls) ... ok
+test_residual_failure_survives_compact_hilbert_schmidt_relative_map (test_compact_galerkin.RelativeGraphControls) ... ok
+test_authentic_source_and_sharp_budget_replayed (test_compact_galerkin.SourceCompressionControls) ... ok
+test_error_budget_decreases_and_keeps_gamma_tail_separate (test_compact_galerkin.SourceCompressionControls) ... ok
+test_live_source_hashes_match_previous_round_receipt (test_compact_galerkin.SourceCompressionControls) ... ok
+test_no_inverse_or_sign_promotion_from_compactness (test_compact_galerkin.SourceCompressionControls) ... ok
+test_norm_small_perturbation_has_fixed_short_sign_change (test_compact_galerkin.ZeroShiftControls) ... ok
+test_regularized_perturbation_bound_on_independent_scalar_models (test_compact_galerkin.ZeroShiftControls) ... ok
+test_regularized_responses_converge_at_each_fixed_positive_shift (test_compact_galerkin.ZeroShiftControls) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 23.020s
+
+OK

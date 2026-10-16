@@ -1,0 +1,84 @@
+{
+  "time_utc": "2026-10-16T03:16:07.642141+00:00",
+  "pr": {
+    "baseRefName": "research/succ-proof-teeth-kernel-2026-10-15",
+    "headRefOid": "4bda4fc92f722464d17a3911ccc12f7f28193e6b",
+    "isDraft": true,
+    "statusCheckRollup": [
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-16T03:14:40Z",
+        "conclusion": "FAILURE",
+        "detailsUrl": "https://github.com/femboy2112/yean/actions/runs/38844531398/job/116791928851",
+        "name": "validate",
+        "startedAt": "2026-10-16T03:14:38Z",
+        "status": "COMPLETED",
+        "workflowName": "Repository checks"
+      },
+      {
+        "__typename": "CheckRun",
+        "completedAt": "2026-10-16T03:14:05Z",
+        "conclusion": "FAILURE",
+        "detailsUrl": "https://github.com/femboy2112/yean/actions/runs/38844482680/job/116791775528",
+        "name": "validate",
+        "startedAt": "2026-10-16T03:14:04Z",
+        "status": "COMPLETED",
+        "workflowName": "Repository checks"
+      }
+    ],
+    "url": "https://github.com/femboy2112/yean/pull/136"
+  },
+  "job": {
+    "id": 116791928851,
+    "run_id": 38844531398,
+    "workflow_name": "Repository checks",
+    "head_branch": "research/succ-observer-schur-kernel-2026-10-16",
+    "run_url": "https://api.github.com/repos/femboy2112/yean/actions/runs/38844531398",
+    "run_attempt": 1,
+    "node_id": "CR_kwDOTmsBm88AAAAbMVdoEw",
+    "head_sha": "4bda4fc92f722464d17a3911ccc12f7f28193e6b",
+    "url": "https://api.github.com/repos/femboy2112/yean/actions/jobs/116791928851",
+    "html_url": "https://github.com/femboy2112/yean/actions/runs/38844531398/job/116791928851",
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-10-16T03:14:38Z",
+    "started_at": "2026-10-16T03:14:38Z",
+    "completed_at": "2026-10-16T03:14:40Z",
+    "name": "validate",
+    "steps": [],
+    "check_run_url": "https://api.github.com/repos/femboy2112/yean/check-runs/116791928851",
+    "labels": [
+      "ubuntu-latest"
+    ],
+    "runner_id": 0,
+    "runner_name": "",
+    "runner_group_id": 0,
+    "runner_group_name": ""
+  },
+  "annotations": [
+    {
+      "path": ".github",
+      "blob_href": "https://github.com/femboy2112/yean/blob/4bda4fc92f722464d17a3911ccc12f7f28193e6b/.github",
+      "start_line": 1,
+      "start_column": null,
+      "end_line": 1,
+      "end_column": null,
+      "annotation_level": "failure",
+      "title": "",
+      "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+      "raw_details": ""
+    },
+    {
+      "path": ".github",
+      "blob_href": "https://github.com/femboy2112/yean/blob/4bda4fc92f722464d17a3911ccc12f7f28193e6b/.github",
+      "start_line": 1,
+      "start_column": null,
+      "end_line": 1,
+      "end_column": null,
+      "annotation_level": "notice",
+      "title": "",
+      "message": "\"The ubuntu-latest label will migrate to Ubuntu 26 beginning October 19, 2026. For more information, see https://github.com/actions/runner-images/issues/14748\"",
+      "raw_details": ""
+    }
+  ]
+}

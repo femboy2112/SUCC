@@ -1,0 +1,27 @@
+{
+  "RH_proved": false,
+  "actual_source_authenticated": false,
+  "applied_program_potential_reads": [
+    5
+  ],
+  "crt_actual_recorded_reads": [
+    2,
+    3
+  ],
+  "crt_derived_value_mod6": 0,
+  "deep_status": "NOT_CERTIFIED",
+  "epoch": 1,
+  "finite_signed_energy": "-2",
+  "global_completeness_proved": false,
+  "latent_function_reads": [
+    5
+  ],
+  "program_type": "Residue(5)",
+  "program_values": [
+    0,
+    1
+  ],
+  "shallow_status": "CERTIFIED_FINITE_AGREEMENT",
+  "sign_status": "EXACT_FINITE_NEGATIVE",
+  "source_id": "source-lambda-demo"
+}

@@ -13,6 +13,13 @@ Documented completely in [CARRIER_ATLAS.md](CARRIER_ATLAS.md) §1. No open obstr
 beyond the honest access boundary (uncountable carriers have only a finite computable subclass of
 points). Nothing here bears on RH.
 
+**Proof Teeth branch extension:** PH-01–08 now prove the normalized cyclic Haar
+direct-limit completion `L²(Zhat)≅ell²(Q/Z)`, its bounded-cone universal property,
+strong convergence and the exact norm obstruction. PT-C01–05 implement minimum
+observations with explicit collisions/descent gates. Paired YEAN commit `bf49477d`
+kernel-checks 62 finite algebra theorems; analytic completion and Fourier transport
+are still paper proofs. See [the scoped supplement](CLAIM_SUPPLEMENT_PROOF_TEETH.md).
+
 ## Track 2 — Source-faithful categorical / observer / proof systems
 
 **Status: PROVED LOCAL / CLASSICAL.** The four-class field taxonomy (Simple / IdealHard / Fucked /
@@ -72,6 +79,13 @@ This is a **scoped research result requiring continuing hostile review**, not a 
 the remaining source Schur sign is unresolved.
 
 ### The named open obstructions (the firewall)
+
+**Proof Teeth branch refinement:** the full cross/resolvent parity reduction and
+compressed-K quotient residual are derived, eight authentic trial-certificate
+failures are certified, and the inherited scalar response cap sharpens to
+`75625/20699`. The explicit corrected operator may use `4P4`; it remains a modified
+operator. The genuine `Ainf−R0` sign is still OPEN. See
+[the analytic dossier](../research/2026-10-15/FOUR_LOW_SCHUR_CROSSPOLLINATION.md).
 
 1. **Low Schur sign.** For every window the finite low block `S0 = A − R0` (the all-test sign at
    that radius) is **UNVERIFIED**. "Every high sector positive ⇒ full Weil positive" is **REFUTED

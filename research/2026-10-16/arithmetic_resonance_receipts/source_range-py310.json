@@ -1,0 +1,482 @@
+{
+  "schema": "ARITHMETIC_SOURCE_RANGE_V1",
+  "status": "PASS_SCOPED_CHECKS",
+  "time_utc": "2026-10-16T05:19:58.600832+00:00",
+  "command": "/tmp/succ-proof-teeth-py310/bin/python scripts/arithmetic_source_range_probe.py --output research/2026-10-16/arithmetic_resonance_receipts/source_range-py310.json",
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance",
+  "python": "3.10.20",
+  "git_head": {
+    "exit_code": 0,
+    "stdout": "8d6d8797c79f7123e6cf14a992fec9b971960b8c",
+    "stderr": ""
+  },
+  "git_branch": {
+    "exit_code": 0,
+    "stdout": "research/arithmetic-wavefront-spectral-response-2026-10-16",
+    "stderr": ""
+  },
+  "origin_blob": {
+    "exit_code": 0,
+    "stdout": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "stderr": ""
+  },
+  "source": {
+    "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "prime_power_tape": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "half_density": "1/2",
+    "real_gamma_count": 1,
+    "original_weil_sign_proved": false,
+    "origin_commit": "dc6b7e3adbfb67c2913c145a4efb95fe3d50b1bc",
+    "sha256": {
+      "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+      "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+      "observational_succ/source_weil_hierarchy.py": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+      "observational_succ/suzuki_legendre_source.py": "15b82e7833e59d70cffe3cb00cd1ed3b96953a9a6fcc156cbdf0aab4f2ffe198",
+      "observational_succ/signed_gprime_enclosure.py": "b28647158ffa45cb83123063c7b19972fa96f0c7241f2555beb244976b972665",
+      "observational_succ/tate_suzuki_shorting.py": "57fbbf3b2876d5e2e4a156d0f7a951595997d2eb3f7911cd1720e2662c8b8d42",
+      "observational_succ/tate_weighted_bessel_four_schur.py": "5ea6b0a79f7ce24971e813a1be24561fcfc72c9d554fbd78991253c0337a7b9c",
+      "observational_succ/compact_galerkin.py": "bba57c6aa8c3bb21ac1d4146c39b87c20ce09692f69abce04be7221e2fca0da4",
+      "observational_succ/four_low_schur_proof_teeth.py": "a2c3357b2307abae4d828f3e8da4beeb1d35f3925d454c1d523f48d918d1d121",
+      "research/2026-10-16/COMPACT_SOURCE_GALERKIN.md": "6e44d42fedd72274d8732272315bd05a43564c13bc423338a4711c0746b3986e",
+      "research/2026-10-16/OBSERVER_SCHUR_SOURCE.md": "0a269b8bc9b0840e132e3a31ab88fc3c1330c7a38b6013afdc426e0333f03dab",
+      "research/2026-10-16/OBSERVER_SCHUR_THEOREMS.md": "60e550375456fd2c6d99e6bde054303f235419afc0498b8d0a894bc482ee4ddb",
+      "research/2026-10-16/OBSERVER_SCHUR_ROUND_II.md": "3b3785cf1877af29f056230eec702b25283dc5094d1254689d2955cdc23cb502",
+      "reviews/2026-10-16_OBSERVER_SCHUR_HOSTILE_AUDIT.md": "1dac0eeda50ec83900438b34153e971434a778b15d31a74ce45e2bdb61e591a1"
+    }
+  },
+  "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "own_sha256": {
+    "observational_succ/arithmetic_source_range.py": "3edb94ba15b76fa1a543adcd901457e69c9683c307abbfb08011edba7274a7a6",
+    "tests/test_arithmetic_source_range.py": "62d9766f1c77db5abbd8af33da5552e2eb4eeb8dacb002b9e80f28dc50db6a7f",
+    "scripts/arithmetic_source_range_probe.py": "75134b414199f48338902d2551fef8c136f6d36c0c41156d06c95eefc6f19b21",
+    "research/2026-10-16/FRACTIONAL_SOURCE_RANGE_AUDIT.md": "30b689a3ceb109d97ce93ddbf28e4adb39e8a76ceab3c3f8964c8b05379c6d9d"
+  },
+  "claims": {
+    "adjoint": "PAPER_DERIVED: R_Q*=-Q T|M; T=g' convolution",
+    "dense_range": "CONDITIONAL_PAPER_PROOF: genuine source and inherited D>=kappa K_Q",
+    "strong_H01_annihilator_regularity_assumed": false,
+    "fractional_D_power_above_half": "OPEN; no implication from bounded H1 map",
+    "bounded_relative_upper_D_le_CK": "PAPER_REFUTED_FOR_THIS_SOURCE_BY_LOG_MULTIPLIER",
+    "quantitative_residual_rate": "OPEN",
+    "source_S0_sign": "OPEN",
+    "RH_PROVED": false,
+    "kernel_proof": false
+  },
+  "evidence": {
+    "multiplier_enclosures": [
+      {
+        "frequency": "0",
+        "terms": 64,
+        "lower": "0",
+        "upper": "0",
+        "tail_upper": "0",
+        "authority": "EXACT_RATIONAL_WHOLE_GAMMA_BOUND",
+        "compressed_operator_eigenvalue": false
+      },
+      {
+        "frequency": "1",
+        "terms": 64,
+        "lower": "184938049492089991961653961755701809467371167575084585584923726037125406218505430647872977046704043736803620145131120590039718055563047427113513880900097430034572732729438799436815158848354875667259146678013289589929985416192/55254763043813822146827199508803147066020975005333741515320289796535290568818160434800062508448759956717172017837850938542102578101802935364024293237689233228537323492519661800036910671749604110479640210782545512167147509125",
+        "upper": "12215087180414387370615118389324293037899289263185255283115759942713224996975876370281714183265652185716800128371093998874869630903893034515582902182899001986289724481562076942682181156590773390301579745509297097779454667408461658/3649521844280859138975789700356939060563619378127288293345389820771359406779870678558109328620532146381212494606172216639767333181045982077858440544056136165511661679357431142230637912958389601893069756281976348533127925830197125",
+        "tail_upper": "530/16974593",
+        "authority": "EXACT_RATIONAL_WHOLE_GAMMA_BOUND",
+        "compressed_operator_eigenvalue": false
+      },
+      {
+        "frequency": "4",
+        "terms": 64,
+        "lower": "788558220476047439972770176839865813820606981437692751968636116009878583863989657050578640784707263244507936018291761101899678758109415325145064253495253319775967220979228392549803158759078517329106936222589954478602573490776096768/160358709311874238997603197097879284609981760251604813449920628743180447796626273952429380479426542029218415071943389203735775017991384520968578567886311822369979958355350843854255964382806926888485034073230929902098861286413776125",
+        "upper": "52088773117665899750102741282125052064404946179728883005975105685993054905466564885004939466770707995314355919612269571589207210590682262852287724545472484277624872324942866897793871364310152099007983069822423663223251720242110060649632/10591532391339981611552693565117828869204685282858246323553807607858325396519368768284008151285643674487847097086788913517544204163312956225453645830323009555714806269412567885729752191520014714057548015502829689103727689106343499280125",
+        "tail_upper": "8480/16974593",
+        "authority": "EXACT_RATIONAL_WHOLE_GAMMA_BOUND",
+        "compressed_operator_eigenvalue": false
+      },
+      {
+        "frequency": "16",
+        "terms": 64,
+        "lower": "63220450980288840786095499264654722480684730411218242658886734118064532600316575783487260825224354531587219953722066767463254610194710776025483946179050321507670473252128483438307882782642221315408067299884443127093809415961847623581696/10036712582894332145566978352186898338209061801796693243642438819173510247662218081807771548537238628570312494922996926727698099317220734076973250904436347823902512763630398928260854053735016294351581568557561013012994117308810225918625",
+        "upper": "1074503205830101197771281686772137918004101865550420078649137550852344850496008354827692051636733084398523122715222070719532803541544226684946311345105998257784599754504036762599103351605069938455794193919369258992310290697356526309769130889728/170369111152610050177816211768183259223475172997345536556680236482870932835395353415927626273399371063859226484132439171453497062783399852117851605989688898717180825839931224234864195394552031444986296032566195268563278852711308899206710494625",
+        "tail_upper": "135680/16974593",
+        "authority": "EXACT_RATIONAL_WHOLE_GAMMA_BOUND",
+        "compressed_operator_eigenvalue": false
+      },
+      {
+        "frequency": "64",
+        "terms": 64,
+        "lower": "52739657343893291393125843253676897217611157021281364069209047885454611552986216877857052883779809701946912891946219406667572142743158349127849634923529295096602265761987095981704819929419694188892275679544925952866412932115867154920737513482170816852070598967296/6956978847658007329300838588551580234505224371993503322558949579245833200721010400664084545211870819848154669502005281918506392872335743097653943152364291460630818440740591165487747680147256768314076044545699204961108398041730922145804585294895989240932742031125",
+        "upper": "3542167255302931796808353274272669020510756903424189688920327596247843756668561062918084952292405126199969322786648114954454360230979426960984387198973153699952425584919069105411318311766794209393420863453917940681363867283051776735857396145201736099863018271426453504/459501495908963726092991087935243322908835564545798900951696060759608037074422015953462120126698855780150767765937946865435428742824903495856945291270509086683204927192475305889300246526046162290376408666198886788476248582258285676808247054142585193374366678413775125",
+        "tail_upper": "2170880/16974593",
+        "authority": "EXACT_RATIONAL_WHOLE_GAMMA_BOUND",
+        "compressed_operator_eigenvalue": false
+      },
+      {
+        "frequency": "256",
+        "terms": 64,
+        "lower": "107912428693281586396858381523934025278577279563763846762188097212093135141448034032381364283433648447060243122455406250181068054124779146276107828819439390367724856401557006481881222526682667223059316059600048601806654332497765658072844974284577931708025966051300221419110166164636523041409387507619984637427712/13046070798080124804812760599503011486964131838582586081057952924496359532426565004409742448413899665682752331911166056544601286722092373330673578955007511540745361277621431498244009963944226315778498859583840744565907812935000791767228286736375865181248536242839312270284947433615542671634590772380272231831625",
+        "upper": "8890711375471422820472211348994106611613587751182815091240716580293409178319629226996851464897381669236294348644041542598383312004584402667633768730090278000456896543368403745925381044129594508389991232057464820719450697404457578818949247005215543886382244221378671124281464901797949104914459556327828031162669989888/861679930142394163233078024836574405702493943806541228067796732710060050757242191976259078975289659018680108770400606868714370386707479166117659216399291129754690367025617929027518614108552203930854071176653097337833645136543867295433661110650889519356284570303293736140050493042872977918793085924944600640246999625",
+        "tail_upper": "34734080/16974593",
+        "authority": "EXACT_RATIONAL_WHOLE_GAMMA_BOUND",
+        "compressed_operator_eigenvalue": false
+      }
+    ],
+    "logarithmic_lower_bounds": [
+      {
+        "frequency": "5/2",
+        "bands": 1,
+        "lower": "2",
+        "authority": "EXACT_RATIONAL_BOUND_PLUS_PAPER_DIVERGENCE"
+      },
+      {
+        "frequency": "17/2",
+        "bands": 4,
+        "lower": "1624/585",
+        "authority": "EXACT_RATIONAL_BOUND_PLUS_PAPER_DIVERGENCE"
+      },
+      {
+        "frequency": "65/2",
+        "bands": 16,
+        "lower": "84311755889945504/24142663793423175",
+        "authority": "EXACT_RATIONAL_BOUND_PLUS_PAPER_DIVERGENCE"
+      },
+      {
+        "frequency": "257/2",
+        "bands": 64,
+        "lower": "199257803905080095639371753034855226810518943856298622849186440853881216/47541758969384918530067006838833671984380943255424841024104919785141625",
+        "authority": "EXACT_RATIONAL_BOUND_PLUS_PAPER_DIVERGENCE"
+      },
+      {
+        "frequency": "1025/2",
+        "bands": 256,
+        "lower": "235211598693240743146765353641667702774097336199973359525582142887664574638660998596132958408929160507738351797388057463514113498807473640118853667002742403124852682665291839781104609339479187223217830551931543584731033975820765368850761478039196790597436193265021906136708103293473453613756928/48141611409271093478443540157209940596959935711704102318546290478348377719299981121873919391829815846536944286589101411667151425249423907982948701247744897620575364209257179902520208559559732246841687877916703682689507085639772386294027977887026211058326141408448032927926606423516883652886875",
+        "authority": "EXACT_RATIONAL_BOUND_PLUS_PAPER_DIVERGENCE"
+      }
+    ],
+    "primitive_moment_controls": [
+      {
+        "mode": 5,
+        "u": [
+          "0",
+          "15/4",
+          "0",
+          "-70",
+          "0",
+          "252"
+        ],
+        "primitive": [
+          "-1/32",
+          "0",
+          "15/8",
+          "0",
+          "-35/2",
+          "0",
+          "42"
+        ],
+        "primitive_endpoints": [
+          "0",
+          "0"
+        ],
+        "u_moments_through_4": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "primitive_moments_through_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "K_energy": "1/2574",
+        "authority": "EXACT_POLYNOMIAL_IDENTITY"
+      },
+      {
+        "mode": 6,
+        "u": [
+          "-5/16",
+          "0",
+          "105/4",
+          "0",
+          "-315",
+          "0",
+          "924"
+        ],
+        "primitive": [
+          "0",
+          "-5/16",
+          "0",
+          "35/4",
+          "0",
+          "-63",
+          "0",
+          "132"
+        ],
+        "primitive_endpoints": [
+          "0",
+          "0"
+        ],
+        "u_moments_through_4": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "primitive_moments_through_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "K_energy": "1/4290",
+        "authority": "EXACT_POLYNOMIAL_IDENTITY"
+      },
+      {
+        "mode": 9,
+        "u": [
+          "0",
+          "315/64",
+          "0",
+          "-1155/4",
+          "0",
+          "9009/2",
+          "0",
+          "-25740",
+          "0",
+          "48620"
+        ],
+        "primitive": [
+          "-7/512",
+          "0",
+          "315/128",
+          "0",
+          "-1155/16",
+          "0",
+          "3003/4",
+          "0",
+          "-6435/2",
+          "0",
+          "4862"
+        ],
+        "primitive_endpoints": [
+          "0",
+          "0"
+        ],
+        "u_moments_through_4": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "primitive_moments_through_3": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "K_energy": "1/13566",
+        "authority": "EXACT_POLYNOMIAL_IDENTITY"
+      }
+    ],
+    "gamma_primitive_identity": [
+      {
+        "mode": 5,
+        "rung": 0,
+        "boundary_mutant": false,
+        "endpoints": [
+          "0",
+          "0"
+        ],
+        "source_energy_affine": [
+          "327334479014064/11",
+          "-49062119834912"
+        ],
+        "primitive_energy_affine": [
+          "327334479014064/11",
+          "-49062119834912"
+        ],
+        "difference_affine": [
+          "0",
+          "0"
+        ],
+        "authority": "EXACT_RATIONAL_AFFINE_EXPONENTIAL_IDENTITY"
+      },
+      {
+        "mode": 5,
+        "rung": 1,
+        "boundary_mutant": false,
+        "endpoints": [
+          "0",
+          "0"
+        ],
+        "source_energy_affine": [
+          "11106142730992/2685546875",
+          "-12300046091552/244140625"
+        ],
+        "primitive_energy_affine": [
+          "11106142730992/2685546875",
+          "-12300046091552/244140625"
+        ],
+        "difference_affine": [
+          "0",
+          "0"
+        ],
+        "authority": "EXACT_RATIONAL_AFFINE_EXPONENTIAL_IDENTITY"
+      },
+      {
+        "mode": 5,
+        "rung": 7,
+        "boundary_mutant": false,
+        "endpoints": [
+          "0",
+          "0"
+        ],
+        "source_energy_affine": [
+          "77324813412528112/3273140559433794098291",
+          "-578982425002206752/297558232675799463481"
+        ],
+        "primitive_energy_affine": [
+          "77324813412528112/3273140559433794098291",
+          "-578982425002206752/297558232675799463481"
+        ],
+        "difference_affine": [
+          "0",
+          "0"
+        ],
+        "authority": "EXACT_RATIONAL_AFFINE_EXPONENTIAL_IDENTITY"
+      },
+      {
+        "mode": 6,
+        "rung": 0,
+        "boundary_mutant": false,
+        "endpoints": [
+          "0",
+          "0"
+        ],
+        "source_energy_affine": [
+          "-749886283292450704/13",
+          "95104112759271200"
+        ],
+        "primitive_energy_affine": [
+          "-749886283292450704/13",
+          "95104112759271200"
+        ],
+        "difference_affine": [
+          "0",
+          "0"
+        ],
+        "authority": "EXACT_RATIONAL_AFFINE_EXPONENTIAL_IDENTITY"
+      },
+      {
+        "mode": 6,
+        "rung": 1,
+        "boundary_mutant": false,
+        "endpoints": [
+          "0",
+          "0"
+        ],
+        "source_energy_affine": [
+          "-26200339065586896/79345703125",
+          "24552728662295072/6103515625"
+        ],
+        "primitive_energy_affine": [
+          "-26200339065586896/79345703125",
+          "24552728662295072/6103515625"
+        ],
+        "difference_affine": [
+          "0",
+          "0"
+        ],
+        "authority": "EXACT_RATIONAL_AFFINE_EXPONENTIAL_IDENTITY"
+      },
+      {
+        "mode": 6,
+        "rung": 7,
+        "boundary_mutant": false,
+        "endpoints": [
+          "0",
+          "0"
+        ],
+        "source_energy_affine": [
+          "54663977980377782064/3253204157844515534237773",
+          "2063128968686540595488/250246473680347348787521"
+        ],
+        "primitive_energy_affine": [
+          "54663977980377782064/3253204157844515534237773",
+          "2063128968686540595488/250246473680347348787521"
+        ],
+        "difference_affine": [
+          "0",
+          "0"
+        ],
+        "authority": "EXACT_RATIONAL_AFFINE_EXPONENTIAL_IDENTITY"
+      }
+    ],
+    "retained_nonzero_boundary_mutant": {
+      "mode": 5,
+      "rung": 0,
+      "boundary_mutant": true,
+      "endpoints": [
+        "1",
+        "1"
+      ],
+      "source_energy_affine": [
+        "5728607360",
+        "-9444876800"
+      ],
+      "primitive_energy_affine": [
+        "5728940808",
+        "-9445426568"
+      ],
+      "difference_affine": [
+        "-333448",
+        "549768"
+      ],
+      "authority": "EXACT_RATIONAL_AFFINE_EXPONENTIAL_IDENTITY"
+    },
+    "focused_tests": {
+      "count": 14,
+      "success": true,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "log": "test_gamma_primitive_ibp_exact_in_exponential_basis (test_arithmetic_source_range.ExactSourceRangeControls) ... ok\ntest_invalid_exact_input_rejected (test_arithmetic_source_range.ExactSourceRangeControls) ... ok\ntest_log_band_growing_lower_bound (test_arithmetic_source_range.ExactSourceRangeControls) ... ok\ntest_multiplier_even_and_zero_frequency (test_arithmetic_source_range.ExactSourceRangeControls) ... ok\ntest_no_fractional_or_sign_promotion (test_arithmetic_source_range.ExactSourceRangeControls) ... ok\ntest_nonzero_boundary_terms_cannot_be_dropped (test_arithmetic_source_range.ExactSourceRangeControls) ... ok\ntest_primitive_endpoint_and_moment_transport (test_arithmetic_source_range.ExactSourceRangeControls) ... ok\ntest_source_pin_and_authority (test_arithmetic_source_range.ExactSourceRangeControls) ... ok\ntest_whole_tower_bound_contains_independent_finite_extension (test_arithmetic_source_range.ExactSourceRangeControls) ... ok\ntest_actual_odd_kernel_has_negative_adjoint_and_reverses_parity (test_arithmetic_source_range.NumericalInstrumentControls) ... ok\ntest_complex_weighted_adjoint_and_wrong_conjugation_mutant (test_arithmetic_source_range.NumericalInstrumentControls) ... ok\ntest_diagonal_and_domain_are_not_regularized_silently (test_arithmetic_source_range.NumericalInstrumentControls) ... ok\ntest_full_source_derivative_inside_existing_rational_boxes (test_arithmetic_source_range.NumericalInstrumentControls) ... ok\ntest_gamma_geometric_sum_and_carleman_majorant (test_arithmetic_source_range.NumericalInstrumentControls) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.524s\n\nOK\n"
+    }
+  },
+  "failures": [],
+  "full_suite_run": false,
+  "git_writes_performed": false,
+  "nontrivial_zero_coordinates_used": false,
+  "source_bytes_unchanged": true,
+  "own_bytes_unchanged": true,
+  "elapsed_seconds": 0.7168024079874158,
+  "exit_code": 0
+}

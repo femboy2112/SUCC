@@ -1,0 +1,276 @@
+{
+  "command": [
+    "scripts/collective_observer_independent_audit.py",
+    "--output",
+    "research/2026-10-16/collective_observer_receipts/principal-audit-py313.json"
+  ],
+  "elapsed_seconds": 13.6432,
+  "exit_code": 0,
+  "limits": {
+    "address_space_MiB": 768,
+    "concurrency": 1,
+    "cpu_seconds": 90
+  },
+  "python": "3.13.13",
+  "sections": {
+    "adaptive": {
+      "boundary": "paper induction needs joint conditional kernels; finite count is not universal proof",
+      "elapsed_seconds": 0.0549,
+      "fiber_comparisons": 41472,
+      "horizon": 2,
+      "marginal_only_refutation": {
+        "world0": [
+          "00",
+          "11"
+        ],
+        "world1": [
+          "01",
+          "10"
+        ]
+      },
+      "models": 1296,
+      "mutations": {
+        "cost": [
+          [
+            "read",
+            0,
+            1
+          ],
+          [
+            "read",
+            0,
+            2
+          ]
+        ],
+        "hidden_initial_memory": [
+          [
+            "action_A",
+            0
+          ],
+          [
+            "action_B",
+            0
+          ]
+        ],
+        "hidden_transition": [
+          [
+            "move",
+            0,
+            "read",
+            0
+          ],
+          [
+            "move",
+            0,
+            "read",
+            1
+          ]
+        ],
+        "history": [
+          [
+            "read_after_A",
+            0
+          ],
+          [
+            "read_after_B",
+            0
+          ]
+        ],
+        "legality": [
+          [
+            "read",
+            "OK",
+            0
+          ],
+          [
+            "read",
+            "FORBIDDEN",
+            null
+          ]
+        ]
+      },
+      "policies": 16,
+      "status": "PASS_FINITE_EXHAUSTIVE"
+    },
+    "ambient": {
+      "commutator_pairs": 3600,
+      "complete_rule_entries": 60,
+      "elapsed_seconds": 0.3704,
+      "global_A5_quotient": "established by complete rule + colimit compatibility",
+      "identity_trace": 5,
+      "recursive_relations_checked": 127,
+      "root_trace": 2,
+      "source_dependency": "Hatcher 2B.2 pp171-172 exterior group import; no physical realization",
+      "stage_two_generated_order": 60,
+      "status": "PASS_FINITE_EXHAUSTIVE_WITH_RECURSIVE_PROOF"
+    },
+    "effects": {
+      "boundary": "immutable counterfactual reuse is allowed; no joint execution certified",
+      "counts": {
+        "compressed_read_attacks": 16,
+        "debt_checks": 72,
+        "raw_relay_checks": 2
+      },
+      "elapsed_seconds": 0.0263,
+      "macro": {
+        "effects": [
+          "CERTIFIED_MINIATURE_ACTION_MODEL",
+          "SOURCE_CHANGING_MODEL_INTERVENTION"
+        ],
+        "new_observations": 0,
+        "original_source_retained": true,
+        "physical_action_executed": false,
+        "status": "EXACT_FINITE_TRANSITION_MODEL",
+        "word": [
+          "left"
+        ]
+      },
+      "status": "PASS_TARGETED_HOSTILE_CHAINS"
+    },
+    "gamma": {
+      "decoder_boundary": "decode_lanes is untyped arithmetic; cooperative_gamma validates complete lane identity",
+      "dependencies": [
+        "normative Euler Gamma integral",
+        "padded Decimal exp contract",
+        "paper contour/tail bounds"
+      ],
+      "elapsed_seconds": 0.5342,
+      "exact_counterexample": "cos(-pi/2)=cos(pi/2)=0 inside one fundamental interval",
+      "injectivity_boundary": "no common nonzero period does not establish injection",
+      "known_Gamma_R_1_radius": "3942998572598817/1000000000000000000000000",
+      "rational_mesh_pairs": 441,
+      "status": "PASS_EXACT_PERIOD_LATTICE_AND_SOURCE_CONTROLS"
+    },
+    "modular": {
+      "bounds": "all N=1..18 divisor pairs; N=1..10 divisor triples",
+      "control": {
+        "N": 6,
+        "joint_rank": 6,
+        "linear_rank": 4,
+        "lost_vector": [
+          2,
+          1,
+          -1,
+          -2,
+          -1,
+          1
+        ],
+        "moduli": [
+          2,
+          3
+        ]
+      },
+      "counts": {
+        "clocks": 18,
+        "pairs": 224,
+        "sectors": 58,
+        "triples": 279
+      },
+      "elapsed_seconds": 2.0256,
+      "oracle": "partition indicator rank plus cyclotomic polynomial character sums",
+      "status": "PASS_FINITE_EXHAUSTIVE"
+    },
+    "parent140": {
+      "current": {
+        "certified_joint_model": true,
+        "original_source_authenticated": false,
+        "status": "independent_joint_factor",
+        "two_physical_sensors_proved": false
+      },
+      "elapsed_seconds": 0.0264,
+      "historical_logs": [
+        "research/2026-10-16/collective_observer_receipts/dual-port-before.log",
+        "research/2026-10-16/collective_observer_receipts/parent-140-failed-ci.log"
+      ],
+      "old_schema_mutation": "KeyError('kind')",
+      "status": "PASS_REAL_CONTRACT_AND_HISTORICAL_MUTATION"
+    },
+    "policy": {
+      "boundary": "declared tables and public-history central scheduler; physical and distributed realization external",
+      "bounded_comparisons": 2643,
+      "depths": [
+        0,
+        1,
+        2
+      ],
+      "deterministic_two_action_models": 625,
+      "elapsed_seconds": 0.7912,
+      "ladder_worst_cost": [
+        8,
+        4,
+        4,
+        1,
+        1,
+        9
+      ],
+      "nondeterministic_one_action_models": 256,
+      "oracle": "all labeled public binary trees on raw concrete trajectories; no belief recursion",
+      "status": "PASS_INDEPENDENT_RAW_POLICY_ENUMERATION",
+      "winning_certificates_replayed": 708
+    },
+    "spectral": {
+      "budget_margins": 200,
+      "dependencies": "typed bounds remain conditional; caller data are not authenticated",
+      "elapsed_seconds": 9.6251,
+      "hidden_soft_modes": 24,
+      "pairings": 15625,
+      "source_coordinate_mutants_rejected": [
+        "source_blob",
+        "source_commit",
+        "radius",
+        "basis",
+        "channels",
+        "metric_diagonal",
+        "target",
+        "convention"
+      ],
+      "source_replay": "not rerun here: independent audit uses scalar/form algebra, sibling replay belongs to spectral lane",
+      "status": "PASS_EXHAUSTIVE_SMALL_FORMS_AND_SOURCE_GUARDS"
+    },
+    "spectral_projection": {
+      "Rodrigues_orthogonality_pairs": 36,
+      "elapsed_seconds": 0.1802,
+      "exact_and_interval_energy_controls": 243,
+      "full_square_moment_identities": 160,
+      "normalization": "input trace weights2j+1; output form subtract c/(2j+1)",
+      "paper_dependency": "inherited D>=kappa V*V; all source moments and energies at same finite J",
+      "same_J_counterexample": "h_J=l4; tail=l0: finite energy1/9 minus full low energy1 is negative",
+      "status": "PASS_INDEPENDENT_POLYNOMIAL_AND_PROJECTION_CONTROLS",
+      "tail_counterexample": {
+        "finite_residual_norm": 1,
+        "incorrect_sum_of_squares": 2,
+        "tail_norm": 1,
+        "true_squared_norm": 4
+      }
+    }
+  },
+  "source_changes": [],
+  "source_root": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance",
+  "source_sha256_after": {
+    "observational_succ/collective_effects.py": "62061b06026687906568ddc116da87240d440fe18619e7e032ddfa8b223ff86f",
+    "observational_succ/collective_gamma.py": "c6bad28d87fe95aa95df899e48519e76ef4eb9351db7707974fdcb467248b0f5",
+    "observational_succ/collective_modular.py": "654840bf5305aa20e9428f9c40ce6bdb8f7afaf882bd10316303b5f1663adb92",
+    "observational_succ/collective_policy.py": "9414cb686f509c403cf9ae2608378caaa20fd56d1754f765eb9673fcd11f168f",
+    "observational_succ/collective_spectral.py": "062a99f8531e7dee4ec3e5537bcecdc5446ac62e859ca7bf5ae120ec5540d20e",
+    "observational_succ/consensus_lambda.py": "9c1078fc0dc807139e2a9d22fc7ff59db7b19e1fcb67520bad345d86584951de",
+    "observational_succ/wild_ambient_succ.py": "01b6a30459571425b35013eef09b2861bc3811641abadb13daeebbc3921658fb",
+    "observational_succ/wild_embedding_succ.py": "09652957b6e2290855722e0e3a8be59f7ec2aab74a85d6bf7b130be71616186e",
+    "scripts/collective_observer_independent_audit.py": "dd7ffe42fd781d5b845ee4811bb7410889d11105523a223cdb18b298fa9a42de",
+    "scripts/collective_spectral_probe.py": "57e09474cd8435e5780a45550d4f6027ca578358895d8eea38a4c5e13ecf4361"
+  },
+  "source_sha256_before": {
+    "observational_succ/collective_effects.py": "62061b06026687906568ddc116da87240d440fe18619e7e032ddfa8b223ff86f",
+    "observational_succ/collective_gamma.py": "c6bad28d87fe95aa95df899e48519e76ef4eb9351db7707974fdcb467248b0f5",
+    "observational_succ/collective_modular.py": "654840bf5305aa20e9428f9c40ce6bdb8f7afaf882bd10316303b5f1663adb92",
+    "observational_succ/collective_policy.py": "9414cb686f509c403cf9ae2608378caaa20fd56d1754f765eb9673fcd11f168f",
+    "observational_succ/collective_spectral.py": "062a99f8531e7dee4ec3e5537bcecdc5446ac62e859ca7bf5ae120ec5540d20e",
+    "observational_succ/consensus_lambda.py": "9c1078fc0dc807139e2a9d22fc7ff59db7b19e1fcb67520bad345d86584951de",
+    "observational_succ/wild_ambient_succ.py": "01b6a30459571425b35013eef09b2861bc3811641abadb13daeebbc3921658fb",
+    "observational_succ/wild_embedding_succ.py": "09652957b6e2290855722e0e3a8be59f7ec2aab74a85d6bf7b130be71616186e",
+    "scripts/collective_observer_independent_audit.py": "dd7ffe42fd781d5b845ee4811bb7410889d11105523a223cdb18b298fa9a42de",
+    "scripts/collective_spectral_probe.py": "57e09474cd8435e5780a45550d4f6027ca578358895d8eea38a4c5e13ecf4361"
+  },
+  "sources_stable_during_run": true,
+  "started_utc": "2026-10-16T18:07:25.461103+00:00",
+  "status": "PASS"
+}

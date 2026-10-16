@@ -21,6 +21,34 @@ hypothesis**. RH is a demanding downstream application, not SUCC's definition.
 > and no positive Hilbert covariance is identified with the signed completed Weil form. See the
 > [claim index](docs/CLAIM_INDEX.md) and [claim ledger](docs/CLAIM_LEDGER.md).
 
+**Proof Teeth research checkpoint:** [round report](research/2026-10-15/SUCC_PROOF_TEETH_MEGA_ROUND.md)
+and [claim supplement](docs/CLAIM_SUPPLEMENT_PROOF_TEETH.md) add the proved finite-Haar-to-profinite-Hilbert
+completion, exact minimum-observation certificates, paired YEAN Lean kernels,
+and authentic four-low Schur trial obstructions. The original Schur sign remains open.
+
+**Observer–Schur Round II:** [theorem and execution report](research/2026-10-16/OBSERVER_SCHUR_ROUND_II.md)
+and [claim supplement](docs/CLAIM_SUPPLEMENT_OBSERVER_SCHUR.md) separate exact energy,
+sign and fiber envelopes; add compact Galerkin bounds, relative-residual
+counterexamples, typed formal instances and an authentic-source trial-family obstruction.
+The original signed Schur problem remains open.
+
+**Arithmetic Resonance:** [source theorem and execution report](research/2026-10-16/ARITHMETIC_RESONANCE_MEGA_ROUND.md)
+and [claim supplement](docs/CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md) add exact prime-hinge
+geometry, a source-specific dense high-response theorem conditional on inherited
+coercivity, and improved two-sided first-window Schur bounds. Fractional spectral
+rigidity and the original sign remain open; finite spectral moments alone cannot
+control inverse response.
+
+**Academic Main II integration (2026-10-16):** PRs #133–#147 (three families — proof machinery / arithmetic
+Schur, source-indexed observers, Gamma·FUCC·signed-Weil) consolidated into `main`. Navigation:
+[integration audit](docs/SUCC_ACADEMIC_MAIN_II_INTEGRATION_AUDIT_2026-10-16.md) ·
+[research frontier + status crosswalk](docs/SUCC_ACADEMIC_MAIN_II_RESEARCH_FRONTIER.md) ·
+[dependency graph](docs/SUCC_ACADEMIC_MAIN_II_DEPENDENCY_GRAPH.md) ·
+[merge coverage](docs/SUCC_ACADEMIC_MAIN_II_MERGE_COVERAGE.json) ·
+[next campaign](research/2026-10-16/SUCC_FUCC_TATE_WEIL_NEXT_CAMPAIGN.md). The red PR #138 interval test was
+repaired on the integration branch (exact rational ξ′/ξ translation). **RH remains OPEN; `S_4 = A_4 − R_4`
+is unresolved.** A positive covariance, Gram, or Galerkin block is **not** the signed completed Weil form.
+
 ## The central mathematical objects
 
 SUCC works with actual carriers — `N, Z, Q, R, C, Ẑ, Q_p, A_f, A_Q` — and groups, rings, fields,
@@ -43,6 +71,12 @@ mathematical objects does not mean the original smaller carriers were already eq
   counterexamples, verification, and a bounded originality statement.
 
 ## Source-indexed observation and proof access
+
+The [Collective Observer research round](research/2026-10-16/COLLECTIVE_OBSERVER_MEGA_ROUND.md)
+adds exact modular observer algebras, chronological cooperative policies,
+source-preserving evidence effects, certified Gamma clock approximations and
+finite Lean proofs. Its small improvement to the authentic first-window Schur
+enclosures leaves both signs open; see the [claim supplement](docs/CLAIM_SUPPLEMENT_COLLECTIVE_OBSERVER.md).
 
 The SUCC-specific layer is the **source-indexed** structure: which lawful transition was available
 to a finite observer, and what it costs. A target's accessibility is a property of a triple
@@ -80,7 +114,7 @@ git clone https://github.com/femboy2112/SUCC.git
 cd SUCC
 python -m pip install -e ".[test]"
 python scripts/verify_provenance.py                       # SOURCE_PROVENANCE_VERIFIED, truth:false
-python -m unittest discover -s tests -p 'test_*.py'       # full suite (4338 tests at this head)
+python -m unittest discover -s tests -p 'test_*.py'       # full suite; current counts in round receipts
 python -m observational_succ demo
 python scripts/observer_foundations_probe.py              # finite survival ≠ universal proof
 python scripts/ordinal_succ_report_probe.py               # positive-definiteness NOT proved

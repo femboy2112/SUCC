@@ -1,0 +1,66 @@
+{
+  "schema": "ARITHMETIC_SOURCE_RANGE_FREEZE_V1",
+  "status": "READY_FROZEN",
+  "time_utc": "2026-10-16T05:20:00.293048+00:00",
+  "git_head": "8d6d8797c79f7123e6cf14a992fec9b971960b8c",
+  "owned_files": [
+    "observational_succ/arithmetic_source_range.py",
+    "tests/test_arithmetic_source_range.py",
+    "scripts/arithmetic_source_range_probe.py",
+    "research/2026-10-16/FRACTIONAL_SOURCE_RANGE_AUDIT.md"
+  ],
+  "sha256": {
+    "observational_succ/arithmetic_source_range.py": "3edb94ba15b76fa1a543adcd901457e69c9683c307abbfb08011edba7274a7a6",
+    "tests/test_arithmetic_source_range.py": "62d9766f1c77db5abbd8af33da5552e2eb4eeb8dacb002b9e80f28dc50db6a7f",
+    "scripts/arithmetic_source_range_probe.py": "75134b414199f48338902d2551fef8c136f6d36c0c41156d06c95eefc6f19b21",
+    "research/2026-10-16/FRACTIONAL_SOURCE_RANGE_AUDIT.md": "30b689a3ceb109d97ce93ddbf28e4adb39e8a76ceab3c3f8964c8b05379c6d9d"
+  },
+  "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "source_sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+  "final_checks": {
+    "py310": {
+      "python": "3.10.20",
+      "count": 14,
+      "skips": 0,
+      "exit_code": 0,
+      "receipt": "research/2026-10-16/arithmetic_resonance_receipts/source_range-py310.json",
+      "sha256": "6ed59479f84fcbadb4c4835f8aa7a8c959c3be6f2861f1857e99e0581eb30241"
+    },
+    "py313": {
+      "python": "3.13.13",
+      "count": 14,
+      "skips": 0,
+      "exit_code": 0,
+      "receipt": "research/2026-10-16/arithmetic_resonance_receipts/source_range-py313.json",
+      "sha256": "b83b017729468667e760fdabd0496dab8a1e4b615f9a0efbb826ad3c26350216"
+    }
+  },
+  "numerical_receipt": "research/2026-10-16/arithmetic_resonance_receipts/source_range-numerical-initial.json",
+  "numerical_receipt_sha256": "5a5fbed5f9652ccced5193472bfc4c58d0cbdf72e40625fa62dcf34bf1b9272d",
+  "numerical_executable_bytes_match_frozen_files": true,
+  "provenance": {
+    "status": "SOURCE_PROVENANCE_VERIFIED",
+    "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "items": 72,
+    "mechanical_namespace_migrations": 55,
+    "byte_identical_research_archives": 17,
+    "establishes_mathematical_truth": false
+  },
+  "full_suite_run_by_worker": false,
+  "git_commit_or_push_by_worker": false,
+  "paper_status": "PRINCIPAL_REPORTED_PRINCIPAL_AND_INDEPENDENT_AUDIT_ACCEPTED_CONDITIONAL_PAPER_PROOF",
+  "density_dependency": "Actual Gamma kernel plus inherited D>=20699/1000000 K_Q",
+  "fractional_above_half": "OPEN",
+  "source_S0_sign": "OPEN",
+  "RH_PROVED": false,
+  "development_failures_retained": {
+    "mathematical_routes": [
+      "H01 regularity inferred from logarithmic domain: not justified",
+      "D<=C K_Q: refuted for actual source",
+      "raising Loewner inequality to 2alpha>1: invalid route"
+    ],
+    "orchestration": [
+      "One JS patch invocation failed to parse before executing; no files changed. Corrected invocation passed."
+    ]
+  }
+}

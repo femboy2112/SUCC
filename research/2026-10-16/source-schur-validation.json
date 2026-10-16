@@ -1,0 +1,64 @@
+{
+  "schema": "OBSERVER_SCHUR_SOURCE_LANE_VALIDATION_V1",
+  "completed_utc": "2026-10-16T03:20:11.581909+00:00",
+  "code_tests_probe_frozen": true,
+  "worker_staged_committed_or_pushed": false,
+  "full_suite_run_by_this_worker": false,
+  "base_head": "5d6d717312eebee648d3cfb092875eb4120bb4b3",
+  "final_probe_exit_code": 0,
+  "final_probe_command": "/tmp/succ-proof-teeth-py313/bin/python scripts/observer_schur_source_probe.py --numerical --fit-nodes 8 --holdout-nodes 16 --output research/2026-10-16/source-schur-final.json",
+  "final_probe_seconds": 52.77012475207448,
+  "final_probe_receipt": "research/2026-10-16/source-schur-final.json",
+  "stable_source_bytes": true,
+  "stable_owned_code_bytes": true,
+  "focused_tests": [
+    {
+      "python": "Python 3.10.20",
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 /tmp/succ-proof-teeth-py310/bin/python -B -m unittest discover -s tests -p test_observer_schur_source.py -v",
+      "tests": 17,
+      "skips": 0,
+      "seconds": 63.125,
+      "exit_code": 0,
+      "log": "research/2026-10-16/source-schur-tests-py310.log"
+    },
+    {
+      "python": "Python 3.13.13",
+      "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 /tmp/succ-proof-teeth-py313/bin/python -B -m unittest discover -s tests -p test_observer_schur_source.py -v",
+      "tests": 17,
+      "skips": 0,
+      "seconds": 34.317,
+      "exit_code": 0,
+      "log": "research/2026-10-16/source-schur-tests-py313.log"
+    }
+  ],
+  "initial_failed_quadrature_control_retained": "research/2026-10-16/source-schur-tests-py313-initial.log",
+  "initial_failure": "4-node calibration error 2.2621687541777864e-7 exceeds unchanged 2e-8 tolerance; increased nodes to8",
+  "new_formal_theorems_in_this_lane": 0,
+  "source_sign": "OPEN",
+  "RH_PROVED": false,
+  "exact_whole_family_failure_constants": [
+    "20699/1000000",
+    "1/10",
+    "1/5"
+  ],
+  "S0_upper_caps": {
+    "odd": "1939731/4294967296",
+    "even": "3654297/2147483648"
+  },
+  "every_admissible_kappa_upper": "13997479742430415646730052502637873/17109250000000000000000000000000000",
+  "source_bound_kappa_at_most_one_fifth_proved": false,
+  "artifact_sha256": {
+    "observational_succ/observer_schur_source.py": "e6d6ed9de6cc0b8a56a72b8e1e3cb7e731cf5edc1c4d3b7fc3cb2e245e794fec",
+    "tests/test_observer_schur_source.py": "6ff24fb118c7eda7f79698eed259dbd18becc74922910905bd4cb08769898d44",
+    "scripts/observer_schur_source_probe.py": "ddcbc02cb14b2c0006168234b6b91038d3c5cb684c1f31eacbbc708582c14619",
+    "research/2026-10-16/OBSERVER_SCHUR_SOURCE.md": "0a269b8bc9b0840e132e3a31ab88fc3c1330c7a38b6013afdc426e0333f03dab",
+    "research/2026-10-16/source-schur-exact.json": "e2b7eb5fcf36b28ee7818799e23ea940f2f90104a57dc64ac82a82de1dfcf87f",
+    "research/2026-10-16/source-schur-experiment.json": "b1cf4b9d2c7ec906c7a80cb64caf20848f7a88b431b54fda1539ffc4ebaaff9f",
+    "research/2026-10-16/source-schur-experiment.log": "53fac291370490a58f0353786928f0182435f80569ba82040f60b5392bf70d63",
+    "research/2026-10-16/source-schur-final.json": "56870bbbaf835fc44593f0ba9ee167aa63c5e873955a402d3e0dc6011033cd46",
+    "research/2026-10-16/source-schur-final.log": "e033fc98e51551535f99a90f1e3581628ce01005904ac6565987ef018b173ac6",
+    "research/2026-10-16/source-schur-tests-py310.log": "3a9c464510015d9813a7c4f03a47ae5d4e6ac2c67a4c01ebdb8cc5c723be3866",
+    "research/2026-10-16/source-schur-tests-py313-initial.log": "df8af8b76d66968b38527315abd9203325c3946a5e035007bdf9d4dfb399c883",
+    "research/2026-10-16/source-schur-tests-py313.log": "10229184d76fd560b00e1dd6577204864d9fe5ad7caa16f4de86f457357310ea"
+  }
+}

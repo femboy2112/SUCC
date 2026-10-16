@@ -1,0 +1,115 @@
+{
+  "time_utc": "2026-10-16T05:37:21.908713+00:00",
+  "commands": [
+    {
+      "argv": [
+        "git",
+        "worktree",
+        "list",
+        "--porcelain"
+      ],
+      "exit": 0,
+      "stdout": "worktree /media/leah/SPANKBANK/SUCCYBOI/SUCC\nHEAD 7b998bcc427a397a00fd8c2d7cb74280de187d0d\nbranch refs/heads/research/black-sun-iv-zeno-completion-2026-10-14\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance\nHEAD 6e179c6204360c17b39cbdec0599acf01e7213a9\nbranch refs/heads/research/arithmetic-wavefront-spectral-response-2026-10-16\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur\nHEAD 24d0f18a103fb2add32ee817fdfefb4ff401ed27\nbranch refs/heads/research/observers-schur-complement-2026-10-16\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-proof-teeth\nHEAD 5d6d717312eebee648d3cfb092875eb4120bb4b3\nbranch refs/heads/research/succ-yean-proof-teeth-ultra-2026-10-15\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "ls-remote",
+        "origin",
+        "refs/heads/main",
+        "refs/heads/research/observers-schur-complement-2026-10-16"
+      ],
+      "exit": 0,
+      "stdout": "02fc9f46ad3b914d49df7a658e304d06ed8a6200\trefs/heads/main\n24d0f18a103fb2add32ee817fdfefb4ff401ed27\trefs/heads/research/observers-schur-complement-2026-10-16\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "rev-parse",
+        "main"
+      ],
+      "exit": 0,
+      "stdout": "6e0d88f1b235b85188393bbcd64ac0436cb71a70\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "../SUCC",
+        "status",
+        "--porcelain"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "../SUCC-observer-schur",
+        "status",
+        "--porcelain"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "/home/leah/YEAN",
+        "status",
+        "--porcelain"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "../YEAN-arithmetic-resonance",
+        "worktree",
+        "list",
+        "--porcelain"
+      ],
+      "exit": 0,
+      "stdout": "worktree /home/leah/YEAN\nHEAD e7360375d195c864431be7b4f781a19b5325d66f\nbranch refs/heads/dev/yean-r5-ouroboros-memes-2026-10-13\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/YEAN-arithmetic-resonance\nHEAD 2c44b033e400801ceceaf5758bc0671b4226e1e6\nbranch refs/heads/research/arithmetic-response-kernel-2026-10-16\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/YEAN-observer-schur\nHEAD 4bda4fc92f722464d17a3911ccc12f7f28193e6b\nbranch refs/heads/research/succ-observer-schur-kernel-2026-10-16\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/YEAN-proof-teeth\nHEAD bf49477d9758e17070e9603526ead3e3e11122a1\nbranch refs/heads/research/succ-proof-teeth-kernel-2026-10-15\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "-C",
+        "../YEAN-arithmetic-resonance",
+        "status",
+        "--porcelain"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "hash-object",
+        "observational_succ/source_weil_hierarchy.py"
+      ],
+      "exit": 0,
+      "stdout": "0cc8510b71d178fc79e8d410a86d8b6014cf9178\n",
+      "stderr": ""
+    }
+  ],
+  "notes": [
+    "SUCC remote main remains02fc9f46; local main is an older ref and was intentionally not moved",
+    "Original YEAN dev advanced in a concurrent session and has dirty files; none were edited by this round",
+    "Only the two isolated Arithmetic Resonance worktrees were modified",
+    "No merge, release, archive rewrite or force push"
+  ]
+}

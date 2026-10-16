@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-16T01:37:25.323725+00:00",
+  "owned_files": [
+    "observational_succ/four_low_schur_proof_teeth.py",
+    "tests/test_four_low_schur_proof_teeth.py",
+    "scripts/four_low_schur_proof_teeth_probe.py",
+    "research/2026-10-15/FOUR_LOW_SCHUR_CROSSPOLLINATION.md"
+  ],
+  "base_head": "0f86ba2478a72bf90cf33a4ee192cb2265d992dd",
+  "current_head": "bed7553fa2c09cb2ae98549d3649f66eb6268741",
+  "worker_committed_or_pushed": false,
+  "source_bytes_match_probe_and_final": true,
+  "final_probe_exit_code": 0,
+  "focused_host_tests": {
+    "run": 11,
+    "passed": 11,
+    "skipped": 0
+  },
+  "focused_py310_tests": {
+    "run": 11,
+    "passed": 9,
+    "skipped": 2
+  },
+  "full_suite": "TIMEOUT_240_SECONDS_INCOMPLETE_NO_RERUN",
+  "analytic_status": "D2-D13 conditional/local as explicitly scoped in dossier",
+  "source_S0_sign": "OPEN",
+  "RH_PROVED": false,
+  "artifact_sha256": {
+    "observational_succ/four_low_schur_proof_teeth.py": "a2c3357b2307abae4d828f3e8da4beeb1d35f3925d454c1d523f48d918d1d121",
+    "tests/test_four_low_schur_proof_teeth.py": "0f613a16a09cd718d0fec6a312fe199621f1d34e4e536b0778461eec718d424f",
+    "scripts/four_low_schur_proof_teeth_probe.py": "3c1b21360593027def897af1cb61ad5b35d841d4a6d282276e97749fb2462f6d",
+    "research/2026-10-15/FOUR_LOW_SCHUR_CROSSPOLLINATION.md": "bf4da5742bb8b8430bc28f87cfdd8772fbb983bc0f44fc114369679f6baaf302",
+    "research/2026-10-15/four_low_schur_proof_teeth_receipts/focused-final-validation.json": "290fe72667432709ee81bdb43e5cde2e0ea334f77e865c24bfa12a6f5702f1d4",
+    "research/2026-10-15/four_low_schur_proof_teeth_receipts/focused-host-final.log": "a8d004cadcebe38aec789ed9df4a720b05e69703df6a0005be918aa0b2d61794",
+    "research/2026-10-15/four_low_schur_proof_teeth_receipts/focused-host.log": "07d24816455d9aaad4950b2dd4896fd8a68c6e2587c86268e57329d6377dac61",
+    "research/2026-10-15/four_low_schur_proof_teeth_receipts/focused-py310-final.log": "b7f831151f52a4c3e7ac384b49252faa2133dc2e963814c45381237ae4b5f575",
+    "research/2026-10-15/four_low_schur_proof_teeth_receipts/focused-py310.log": "a2db2ecbba5a3a8d71accdd6b7be65f2d1d6d32e33ebf8390d639e65a80d4760",
+    "research/2026-10-15/four_low_schur_proof_teeth_receipts/full-suite.log": "d4b076cabc802ced3b1091644aaebc8ba1ff10ca7d2975eef6e1d1c386f18746",
+    "research/2026-10-15/four_low_schur_proof_teeth_receipts/observer.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "research/2026-10-15/four_low_schur_proof_teeth_receipts/ordinal.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "research/2026-10-15/four_low_schur_proof_teeth_receipts/probe.json": "8acd68fb183102dcc0aa5c01901e86b5219271f4e6c73bd11b08538ce00365a1",
+    "research/2026-10-15/four_low_schur_proof_teeth_receipts/provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "research/2026-10-15/four_low_schur_proof_teeth_receipts/validation.json": "133bfa7c9106f35f910a4f1b1d3a732c80c34f006e675a07ffacdc8c277a117e"
+  }
+}

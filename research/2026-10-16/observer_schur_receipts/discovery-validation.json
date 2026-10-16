@@ -1,0 +1,105 @@
+{
+  "Lean_kernel_replayed": false,
+  "RH_proved": false,
+  "authentic_Suzuki_source_identified": false,
+  "branch_at_validation": "research/observers-schur-complement-2026-10-16",
+  "captured_at_utc": "2026-10-16T03:02:50.630756+00:00",
+  "commands": [
+    {
+      "command": [
+        "/tmp/succ-proof-teeth-py310/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_observer_discovery.py",
+        "-v"
+      ],
+      "elapsed_seconds": 0.543,
+      "exit_code": 0,
+      "sha256": "78c552f164d060eb370e60b8a899464e68a09100eb12d2cf1b10028429e3fe39",
+      "stdout_stderr_log": "research/2026-10-16/observer_schur_receipts/discovery-py310-tests.log"
+    },
+    {
+      "all_inherited_hashes_match": true,
+      "command": [
+        "/tmp/succ-proof-teeth-py310/bin/python",
+        "scripts/observer_discovery_probe.py"
+      ],
+      "elapsed_seconds": 0.238,
+      "exit_code": 0,
+      "inherited_dependency_count": 38,
+      "python": "3.10.20",
+      "sha256": "6236af35dd461355b1152b6d95a6397c268825646cc9bfed08e8aeff0c460b17",
+      "stderr": "",
+      "stdout_stderr_log": "research/2026-10-16/observer_schur_receipts/discovery-py310-probe.json"
+    },
+    {
+      "command": [
+        "/tmp/succ-proof-teeth-py313/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_observer_discovery.py",
+        "-v"
+      ],
+      "elapsed_seconds": 0.399,
+      "exit_code": 0,
+      "sha256": "1ddf7d4b4c1f0124c007b825aef41310478daa9c20f15d8371a79faae27720cb",
+      "stdout_stderr_log": "research/2026-10-16/observer_schur_receipts/discovery-py313-tests.log"
+    },
+    {
+      "all_inherited_hashes_match": true,
+      "command": [
+        "/tmp/succ-proof-teeth-py313/bin/python",
+        "scripts/observer_discovery_probe.py"
+      ],
+      "elapsed_seconds": 0.254,
+      "exit_code": 0,
+      "inherited_dependency_count": 38,
+      "python": "3.13.13",
+      "sha256": "123de262df1d6eec2cb8f40ceb3aafd5f1eb0662a25bf04da72c86bf2dd2c454",
+      "stderr": "",
+      "stdout_stderr_log": "research/2026-10-16/observer_schur_receipts/discovery-py313-probe.json"
+    }
+  ],
+  "environment": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "focused_tests_per_interpreter": 18,
+  "full_suite_run": false,
+  "git_head_at_validation": "5d6d717312eebee648d3cfb092875eb4120bb4b3",
+  "git_mutations_by_lane": false,
+  "hosted_CI_checked": false,
+  "source_after": {
+    "observational_succ/covariant_proof_descent.py": "4245d8c0f64e3968221c15ab62b91c009230de23569d21b63e3f5c0943336ed8",
+    "observational_succ/minimal_observation.py": "0c429dd4087d9be774e26dd0c5b975b20707aaba122d0b436a6353310950ef80",
+    "observational_succ/observer_discovery.py": "4f274f99e495b6d3382a000ab56ca8ab2852778dbfd5ec66fbf570cef0c04ea2",
+    "observational_succ/proof_gluing.py": "8c191ee1c20f3790c5a7eb83ee3340a2f2fb6b7a00dcf392a928e02a006d34ab",
+    "observational_succ/recursive_operator_gluing.py": "0dda6bdf871dfdefffe48649c785ab9d18addab6cea5553ac1d4472a3094fd94",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-16/OBSERVER_DISCOVERY_EXPERIMENT.md": "a4d7131318095538f9c275df13331bec5a13e16a75a6a73f35dfdaa216c80acd",
+    "scripts/observer_discovery_probe.py": "86e6592f0a271d571edd10ad6abb284c0336fd08a9f1332308e0a781ba177c03",
+    "tests/test_observer_discovery.py": "0024ef02d41b5e69be842e87f442e099f8673036fdd05163204af9cde161faec"
+  },
+  "source_before": {
+    "observational_succ/covariant_proof_descent.py": "4245d8c0f64e3968221c15ab62b91c009230de23569d21b63e3f5c0943336ed8",
+    "observational_succ/minimal_observation.py": "0c429dd4087d9be774e26dd0c5b975b20707aaba122d0b436a6353310950ef80",
+    "observational_succ/observer_discovery.py": "4f274f99e495b6d3382a000ab56ca8ab2852778dbfd5ec66fbf570cef0c04ea2",
+    "observational_succ/proof_gluing.py": "8c191ee1c20f3790c5a7eb83ee3340a2f2fb6b7a00dcf392a928e02a006d34ab",
+    "observational_succ/recursive_operator_gluing.py": "0dda6bdf871dfdefffe48649c785ab9d18addab6cea5553ac1d4472a3094fd94",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-16/OBSERVER_DISCOVERY_EXPERIMENT.md": "a4d7131318095538f9c275df13331bec5a13e16a75a6a73f35dfdaa216c80acd",
+    "scripts/observer_discovery_probe.py": "86e6592f0a271d571edd10ad6abb284c0336fd08a9f1332308e0a781ba177c03",
+    "tests/test_observer_discovery.py": "0024ef02d41b5e69be842e87f442e099f8673036fdd05163204af9cde161faec"
+  },
+  "source_stable": true
+}

@@ -1,0 +1,16 @@
+test_bool_and_float_do_not_become_exact_proof_inputs (test_four_low_schur_proof_teeth.QuotientAndSourceControls) ... ok
+test_frozen_real_Galerkin_trial_has_continuum_obstruction (test_four_low_schur_proof_teeth.QuotientAndSourceControls) ... ok
+test_interval_source_blocks_keep_original_parity_and_tail (test_four_low_schur_proof_teeth.QuotientAndSourceControls) ... ok
+test_low_polynomial_lifts_vanish_in_exact_quotient (test_four_low_schur_proof_teeth.QuotientAndSourceControls) ... ok
+test_parity_on_quotient_keeps_derivative_parity_reversal (test_four_low_schur_proof_teeth.QuotientAndSourceControls) ... ok
+test_quotient_is_invariant_under_low_source_coordinate_lifts (test_four_low_schur_proof_teeth.QuotientAndSourceControls) ... ok
+test_real_source_pin_and_fake_primitive6_control (test_four_low_schur_proof_teeth.QuotientAndSourceControls) ... ok
+test_source_specific_zero_trial_criterion_obstruction_is_rational (test_four_low_schur_proof_teeth.QuotientAndSourceControls) ... ok
+test_trial_obstruction_refuses_a_low_witness (test_four_low_schur_proof_teeth.QuotientAndSourceControls) ... ok
+test_independent_full_source_integrations_and_finite_trial (test_four_low_schur_proof_teeth.RealSourceNumericalRegression) ... skipped 'optional independent numerical convolution requires host scipy'
+test_source_mutations_are_detectable_but_parity_is_insufficient (test_four_low_schur_proof_teeth.RealSourceNumericalRegression) ... skipped 'optional independent numerical convolution requires host scipy'
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.876s
+
+OK (skipped=2)
