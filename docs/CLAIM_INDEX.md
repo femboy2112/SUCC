@@ -52,6 +52,13 @@ supplements unchanged.
 
 ## How to navigate
 
+The [Collective Observer supplement](CLAIM_SUPPLEMENT_COLLECTIVE_OBSERVER.md)
+adds CO-01–17 on the #140 child branch: modular algebra and conductor interaction,
+chronological cooperative policies, rational Gamma aliases, source-preserving
+effects, finite formal proofs and the sharper conditional signed-source bounds.
+Its dependency manifest explicitly pins sibling mathematics instead of implying
+that the independent source branches were merged.
+
 Carrier reconstructions → [CARRIER_ATLAS.md](CARRIER_ATLAS.md). Proof-access classification →
 [OBSERVER_PROOF_ACCESS.md](OBSERVER_PROOF_ACCESS.md). What is open and why →
 [RESEARCH_FRONTIER_2026-10-15.md](RESEARCH_FRONTIER_2026-10-15.md) and

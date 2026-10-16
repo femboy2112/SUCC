@@ -1,0 +1,118 @@
+{
+  "authority": {
+    "Lean": "LEAN_KERNEL_PROVED exact displayed finite types only",
+    "finite_algebra": "PAPER_PROVED and EXACT_FINITE_CHECK",
+    "finite_policy": "PAPER_PROVED relative to declared complete public-coordinator tables",
+    "gamma": "PAPER_PROVED analytic bound plus directed interval execution with documented Decimal.exp premise",
+    "physical_authentication": "UNVERIFIED",
+    "source_count": 1,
+    "source_lower": "PAPER_PROVED conditional source inequality plus EXACT_FINITE_CHECK of outward source arithmetic",
+    "source_upper": "inherited pinned certified trial, scalar PSD rechecked; trial integration not rerun"
+  },
+  "branch": "research/collective-observer-2026-10-16",
+  "formal": {
+    "audited_declarations": 33,
+    "axiom_budget": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice"
+    ],
+    "branch": "research/collective-observer-kernel-2026-10-16",
+    "head": "e62db63cad4da87ce357b62cb4379f873f3daf7c",
+    "hosted_status": "BILLING_BLOCKED_NO_STEPS",
+    "new_theorems": 20,
+    "nondeterministic_runtime_formalized": false,
+    "pr": 138,
+    "proof_manifest_sha256": "32b23769136753dade4a9d3caa2b7fce51bc2e676fdb20edfb00eb3629ef284c",
+    "repo": "femboy2112/yean",
+    "runtime_extraction": false
+  },
+  "hashes_prove_byte_integrity_only": true,
+  "main_unchanged": "02fc9f46ad3b914d49df7a658e304d06ed8a6200",
+  "open_dependencies": [
+    {
+      "discharged": false,
+      "id": "runtime-to-Lean",
+      "statement": "Sound encoding of nondeterministic support policies into formal certificates"
+    },
+    {
+      "discharged": false,
+      "id": "effective-high-response",
+      "statement": "Computable source-specific weak inverse-spectral tail or quotient-residual convergence modulus"
+    },
+    {
+      "discharged": false,
+      "id": "original-sign",
+      "statement": "Actual first-window S0 nonnegative or a genuine negative direction"
+    },
+    {
+      "discharged": false,
+      "id": "all-support",
+      "statement": "All-radius completed Weil positivity / RH"
+    }
+  ],
+  "original_suzuki": {
+    "channels": [
+      "real Gamma",
+      "contact",
+      "both poles",
+      "prime-2 half-density"
+    ],
+    "git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "high_coercivity": "20699/1000000",
+    "metric": [
+      "1/3",
+      "1/5",
+      "1/7",
+      "1/9"
+    ],
+    "origin": "dc6b7e3adbfb67c2913c145a4efb95fe3d50b1bc",
+    "path": "observational_succ/source_weil_hierarchy.py",
+    "radius": "1/2",
+    "sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+    "zero_coordinates_used": false
+  },
+  "parent": {
+    "head": "940f089d10926ecbdf24ee9e3483c993042b9275",
+    "pr": 140,
+    "verified_git_ancestor": true
+  },
+  "schema": "COLLECTIVE_OBSERVER_DEPENDENCIES_V1",
+  "siblings_not_merged": [
+    {
+      "head": "95dbf40553e54c901e9998e14b1b9d67298fa89e",
+      "pr": 137,
+      "use": "isolated source runtime and paper imports"
+    },
+    {
+      "head": "849b241801578542997972eb46f3c8d309b36d0c",
+      "pr": 141,
+      "use": "normalized Dirac source and alias/Mellin laws"
+    },
+    {
+      "head": "6623fd11b710a40dc5f9cd2375ba74d759be0245",
+      "pr": 142,
+      "use": "credited contour strip and complete-lane interleaving proofs"
+    }
+  ],
+  "source_hashes": {
+    "observational_succ/collective_effects.py": "62061b06026687906568ddc116da87240d440fe18619e7e032ddfa8b223ff86f",
+    "observational_succ/collective_gamma.py": "c6bad28d87fe95aa95df899e48519e76ef4eb9351db7707974fdcb467248b0f5",
+    "observational_succ/collective_modular.py": "654840bf5305aa20e9428f9c40ce6bdb8f7afaf882bd10316303b5f1663adb92",
+    "observational_succ/collective_policy.py": "9414cb686f509c403cf9ae2608378caaa20fd56d1754f765eb9673fcd11f168f",
+    "observational_succ/collective_spectral.py": "062a99f8531e7dee4ec3e5537bcecdc5446ac62e859ca7bf5ae120ec5540d20e",
+    "research/2026-10-16/COLLECTIVE_EFFECT_CALCULUS.md": "5e9af211686e95bb3f5d460d6206aca0dfaeb4f7a1872dc32bec228a414910cd",
+    "research/2026-10-16/COLLECTIVE_GAMMA_CLOCKS.md": "02cca8c02587aedb6e00cb5ba76af034cefe19cd19e93125ab261006d2e4d97e",
+    "research/2026-10-16/COLLECTIVE_MODULAR_ALGEBRA.md": "1c33ad6d77c42e14bed9bdaf995bdcdce75c8f76de344aea049a208b5a84e669",
+    "research/2026-10-16/COLLECTIVE_OBSERVER_MEGA_ROUND.md": "c16637b88edea808ce84ddbbfd6cf722d3f9e306f4e5bdfb2ed82fb8a4856ab8",
+    "research/2026-10-16/COLLECTIVE_OBSERVER_NEXT_ROUND.md": "330e656457359e974425edd680c8b4833cca4671dbfaa4ef0baea22710d74231",
+    "research/2026-10-16/COLLECTIVE_OBSERVER_VALIDATION.md": "e0f862e1a385c4383639ed5dd51f987b27334e43f367f71b7b7d113065986f9c",
+    "research/2026-10-16/COLLECTIVE_POLICY_THEOREM.md": "612e7d5f0ccf9a617263096a64ac48806671c3acba963aa483a494490ecd73fe",
+    "research/2026-10-16/COLLECTIVE_SPECTRAL_OBSERVERS.md": "5d90f020cadbedcdda59dde16376e7e163294b94908e852682c09a7e31dc341d",
+    "tests/test_collective_effects.py": "fd5b34ff8b855b7638731b2fc64320debb323e8d8f8b641e75b3ea62d50a18ee",
+    "tests/test_collective_gamma.py": "2c064cc3185b8c91a6250a1e10ab8d72976c3e4be1976c75b9877a40e47bc02c",
+    "tests/test_collective_modular.py": "a8f16cb467d8bb61b3a9bcbf551c31e492a9f6a71d78b4c94b61486b5cf1a623",
+    "tests/test_collective_policy.py": "1fa0c2ea41f40bda8ecc774eb1e6a3e7006b307e215c3a2d8d617fb348110412",
+    "tests/test_collective_spectral.py": "95831a312f2c94c965a986719f2f454adf6e7f9fe40716ce45271c5cfd10b8d5"
+  }
+}

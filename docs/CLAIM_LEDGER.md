@@ -833,6 +833,12 @@ No new academic priority is established.
 
 ## Carrier → Tate → Weil (2026-10-15)
 
+Later branch-scoped extension:
+[Collective Observer CO-01–17](CLAIM_SUPPLEMENT_COLLECTIVE_OBSERVER.md) records
+lawful joint distinguishability, finite policy synthesis, Gamma alias no-go,
+new exact source projections and their unchanged open sign boundary. The original
+ledger rows below remain historical; this link does not promote an analytic debt.
+
 The [Carrier → Tate → Weil claim supplement](CLAIM_SUPPLEMENT_CARRIER_TATE_WEIL.md)
 records CTW-01–14: the independent Poisson audit, canonical zeta and chi4 Tate
 reconstruction, full signed Weil identification, analytic error bounds, and

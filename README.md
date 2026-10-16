@@ -44,6 +44,12 @@ mathematical objects does not mean the original smaller carriers were already eq
 
 ## Source-indexed observation and proof access
 
+The [Collective Observer research round](research/2026-10-16/COLLECTIVE_OBSERVER_MEGA_ROUND.md)
+adds exact modular observer algebras, chronological cooperative policies,
+source-preserving evidence effects, certified Gamma clock approximations and
+finite Lean proofs. Its small improvement to the authentic first-window Schur
+enclosures leaves both signs open; see the [claim supplement](docs/CLAIM_SUPPLEMENT_COLLECTIVE_OBSERVER.md).
+
 The SUCC-specific layer is the **source-indexed** structure: which lawful transition was available
 to a finite observer, and what it costs. A target's accessibility is a property of a triple
 `(Source, Target, Tools)`, classified as **SimpleField / IdealHardField / FuckedField / Unresolved**.

@@ -65,3 +65,26 @@ model · `[I]` implementation only · `[U]` unverified construction · `[R]` ref
 
 Cross-references: [CARRIER_ATLAS.md](CARRIER_ATLAS.md) · [OBSERVER_PROOF_ACCESS.md](OBSERVER_PROOF_ACCESS.md)
 · [RESEARCH_FRONTIER_2026-10-15.md](RESEARCH_FRONTIER_2026-10-15.md) · [CLAIM_LEDGER.md](CLAIM_LEDGER.md).
+
+## Collective Observer child branch (2026-10-16)
+
+```
+#139 source-lambda -> #140 consensus -> receipt repair + typed effects [P,X]
+finite cyclic Haar -> commuting E_m -> linear pool / algebra join [C,P,X]
+                                             -> primitive conductor sectors [C,P,X]
+declared joint transitions + original/current beliefs -> bounded AND/OR policy [P,X]
+  full quotient-compatible legality/cost/outcome laws -> adaptive no-go [P,X]
+#141 normalized Dirac clocks + #142 analytic band proofs (pinned, not merged)
+  -> common rational period [P,X] -> global tuple-decoder obstruction [P]
+  -> finite strip + replicas + sample tails + directed evaluation [P,X]
+#137 pinned original signed source + high coercivity + derivative tail [P imports]
+  -> exact polynomial moment subtraction -> sharper response cap [P,X]
+  -> improved S0 lower enclosure; inherited upper -> BOTH SIGNS OPEN [U]
+YEAN #138 exact types + local kernel/axiom audit -> finite implications [kernel]
+  -> runtime model identification / nondeterministic extraction .... OPEN [U]
+```
+
+The [dependency manifest](../research/2026-10-16/COLLECTIVE_OBSERVER_DEPENDENCIES.json)
+pins source identity, coordinate metric and shared premises. Independent finite
+methods share one original arithmetic source; they are not independent sources.
+See [CO-01–17](CLAIM_SUPPLEMENT_COLLECTIVE_OBSERVER.md) for domains and falsifiers.

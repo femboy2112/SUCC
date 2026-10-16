@@ -1,0 +1,183 @@
+{
+  "command": [
+    "scripts/collective_observer_independent_audit.py",
+    "--output",
+    "research/2026-10-16/collective_observer_receipts/audit-independent-initial.json"
+  ],
+  "elapsed_seconds": 1.6303,
+  "exit_code": 1,
+  "limits": {
+    "address_space_MiB": 768,
+    "concurrency": 1,
+    "cpu_seconds": 90
+  },
+  "python": "3.12.3",
+  "sections": {
+    "adaptive": {
+      "boundary": "paper induction needs joint conditional kernels; finite count is not universal proof",
+      "elapsed_seconds": 0.0355,
+      "fiber_comparisons": 41472,
+      "horizon": 2,
+      "marginal_only_refutation": {
+        "world0": [
+          "00",
+          "11"
+        ],
+        "world1": [
+          "01",
+          "10"
+        ]
+      },
+      "models": 1296,
+      "mutations": {
+        "cost": [
+          [
+            "read",
+            0,
+            1
+          ],
+          [
+            "read",
+            0,
+            2
+          ]
+        ],
+        "hidden_initial_memory": [
+          [
+            "action_A",
+            0
+          ],
+          [
+            "action_B",
+            0
+          ]
+        ],
+        "hidden_transition": [
+          [
+            "move",
+            0,
+            "read",
+            0
+          ],
+          [
+            "move",
+            0,
+            "read",
+            1
+          ]
+        ],
+        "history": [
+          [
+            "read_after_A",
+            0
+          ],
+          [
+            "read_after_B",
+            0
+          ]
+        ],
+        "legality": [
+          [
+            "read",
+            "OK",
+            0
+          ],
+          [
+            "read",
+            "FORBIDDEN",
+            null
+          ]
+        ]
+      },
+      "policies": 16,
+      "status": "PASS_FINITE_EXHAUSTIVE"
+    },
+    "ambient": {
+      "commutator_pairs": 3600,
+      "complete_rule_entries": 60,
+      "elapsed_seconds": 0.2357,
+      "global_A5_quotient": "established by complete rule + colimit compatibility",
+      "identity_trace": 5,
+      "recursive_relations_checked": 127,
+      "root_trace": 2,
+      "source_dependency": "Hatcher 2B.2 pp171-172 exterior group import; no physical realization",
+      "stage_two_generated_order": 60,
+      "status": "PASS_FINITE_EXHAUSTIVE_WITH_RECURSIVE_PROOF"
+    },
+    "effects": {
+      "detail": "sum/equality require residues in the same cyclic carrier",
+      "elapsed_seconds": 0.0068,
+      "error": "TypeFault",
+      "status": "FAIL"
+    },
+    "modular": {
+      "bounds": "all N=1..18 divisor pairs; N=1..10 divisor triples",
+      "control": {
+        "N": 6,
+        "joint_rank": 6,
+        "linear_rank": 4,
+        "lost_vector": [
+          2,
+          1,
+          -1,
+          -2,
+          -1,
+          1
+        ],
+        "moduli": [
+          2,
+          3
+        ]
+      },
+      "counts": {
+        "clocks": 18,
+        "pairs": 224,
+        "sectors": 58,
+        "triples": 279
+      },
+      "elapsed_seconds": 1.3367,
+      "oracle": "partition indicator rank plus cyclotomic polynomial character sums",
+      "status": "PASS_FINITE_EXHAUSTIVE"
+    },
+    "parent140": {
+      "current": {
+        "certified_joint_model": true,
+        "original_source_authenticated": false,
+        "status": "independent_joint_factor",
+        "two_physical_sensors_proved": false
+      },
+      "elapsed_seconds": 0.0122,
+      "historical_logs": [
+        "research/2026-10-16/collective_observer_receipts/dual-port-before.log",
+        "research/2026-10-16/collective_observer_receipts/parent-140-failed-ci.log"
+      ],
+      "old_schema_mutation": "KeyError('kind')",
+      "status": "PASS_REAL_CONTRACT_AND_HISTORICAL_MUTATION"
+    }
+  },
+  "source_sha256_after": {
+    "observational_succ/collective_effects.py": "62061b06026687906568ddc116da87240d440fe18619e7e032ddfa8b223ff86f",
+    "observational_succ/collective_gamma.py": "c6bad28d87fe95aa95df899e48519e76ef4eb9351db7707974fdcb467248b0f5",
+    "observational_succ/collective_modular.py": "654840bf5305aa20e9428f9c40ce6bdb8f7afaf882bd10316303b5f1663adb92",
+    "observational_succ/collective_policy.py": "c992073596d6233950866d8b10424320e72e1c5315472614af3fa5f737e05bfb",
+    "observational_succ/collective_spectral.py": "6aef082898cc877e5b86d6bc80d93a71115c08cdcfd3023a8f9db91ceff36e79",
+    "observational_succ/consensus_lambda.py": "9c1078fc0dc807139e2a9d22fc7ff59db7b19e1fcb67520bad345d86584951de",
+    "observational_succ/wild_ambient_succ.py": "01b6a30459571425b35013eef09b2861bc3811641abadb13daeebbc3921658fb",
+    "observational_succ/wild_embedding_succ.py": "09652957b6e2290855722e0e3a8be59f7ec2aab74a85d6bf7b130be71616186e",
+    "scripts/collective_observer_independent_audit.py": "da622662d65d0c89fa41ff5a11be8cbdc9528decc9c056828e72aa83b0830584"
+  },
+  "source_sha256_before": {
+    "observational_succ/collective_effects.py": "62061b06026687906568ddc116da87240d440fe18619e7e032ddfa8b223ff86f",
+    "observational_succ/collective_gamma.py": "c6bad28d87fe95aa95df899e48519e76ef4eb9351db7707974fdcb467248b0f5",
+    "observational_succ/collective_modular.py": "654840bf5305aa20e9428f9c40ce6bdb8f7afaf882bd10316303b5f1663adb92",
+    "observational_succ/collective_policy.py": "c992073596d6233950866d8b10424320e72e1c5315472614af3fa5f737e05bfb",
+    "observational_succ/collective_spectral.py": "6aef082898cc877e5b86d6bc80d93a71115c08cdcfd3023a8f9db91ceff36e79",
+    "observational_succ/consensus_lambda.py": "9c1078fc0dc807139e2a9d22fc7ff59db7b19e1fcb67520bad345d86584951de",
+    "observational_succ/wild_ambient_succ.py": "01b6a30459571425b35013eef09b2861bc3811641abadb13daeebbc3921658fb",
+    "observational_succ/wild_embedding_succ.py": "09652957b6e2290855722e0e3a8be59f7ec2aab74a85d6bf7b130be71616186e",
+    "scripts/collective_observer_independent_audit.py": "da622662d65d0c89fa41ff5a11be8cbdc9528decc9c056828e72aa83b0830584"
+  },
+  "sources_stable_during_run": true,
+  "started_utc": "2026-10-16T17:44:05.146291+00:00"
+}
+
