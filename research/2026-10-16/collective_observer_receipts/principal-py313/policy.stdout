@@ -1,0 +1,1142 @@
+{
+  "accounting": {
+    "certificate": "declared per-path verification units, not minimal proof length or policy tree size",
+    "communication_bits": "fixed-width payload alphabet per explicit send; framing excluded",
+    "observation_bits": "fixed-width (public outcome, actor-private readout) alphabet per physical action",
+    "resource_stock": "joint-state component, separate from cumulative costs"
+  },
+  "cost_coordinate_order": [
+    "depth",
+    "actions",
+    "messages",
+    "communication_bits",
+    "observation_bits",
+    "certificate"
+  ],
+  "cross_enabled": {
+    "coalition_winning": {
+      "A": false,
+      "A+B": true,
+      "B": false,
+      "empty": false
+    },
+    "existing_knowledge_ladder_signature_matches": true,
+    "explored": 10,
+    "model": {
+      "actions": [
+        {
+          "actor": "A",
+          "cost": {
+            "actions": 1,
+            "certificate": 1,
+            "communication_bits": 0,
+            "depth": 1,
+            "messages": 0,
+            "observation_bits": 0
+          },
+          "kind": "probe",
+          "name": "p0",
+          "receiver": null,
+          "rows": [
+            [
+              {
+                "after": 1,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 10,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "actor": "A",
+          "cost": {
+            "actions": 0,
+            "certificate": 1,
+            "communication_bits": 0,
+            "depth": 1,
+            "messages": 1,
+            "observation_bits": 0
+          },
+          "kind": "message",
+          "name": "send:p0",
+          "receiver": "B",
+          "rows": [
+            [],
+            [
+              {
+                "after": 2,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 11,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "actor": "B",
+          "cost": {
+            "actions": 1,
+            "certificate": 1,
+            "communication_bits": 0,
+            "depth": 1,
+            "messages": 0,
+            "observation_bits": 0
+          },
+          "kind": "probe",
+          "name": "p1",
+          "receiver": null,
+          "rows": [
+            [],
+            [],
+            [
+              {
+                "after": 3,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 12,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "actor": "B",
+          "cost": {
+            "actions": 0,
+            "certificate": 1,
+            "communication_bits": 0,
+            "depth": 1,
+            "messages": 1,
+            "observation_bits": 0
+          },
+          "kind": "message",
+          "name": "send:p1",
+          "receiver": "A",
+          "rows": [
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 4,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 13,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "actor": "A",
+          "cost": {
+            "actions": 1,
+            "certificate": 1,
+            "communication_bits": 0,
+            "depth": 1,
+            "messages": 0,
+            "observation_bits": 0
+          },
+          "kind": "probe",
+          "name": "p2",
+          "receiver": null,
+          "rows": [
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 5,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 14,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "actor": "A",
+          "cost": {
+            "actions": 0,
+            "certificate": 1,
+            "communication_bits": 0,
+            "depth": 1,
+            "messages": 1,
+            "observation_bits": 0
+          },
+          "kind": "message",
+          "name": "send:p2",
+          "receiver": "B",
+          "rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 6,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 15,
+                "public": "recorded",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            []
+          ]
+        },
+        {
+          "actor": "B",
+          "cost": {
+            "actions": 1,
+            "certificate": 1,
+            "communication_bits": 0,
+            "depth": 1,
+            "messages": 0,
+            "observation_bits": 1
+          },
+          "kind": "probe",
+          "name": "p3",
+          "receiver": null,
+          "rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 7,
+                "public": "recorded",
+                "readout": "0"
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 16,
+                "public": "recorded",
+                "readout": "1"
+              }
+            ],
+            [],
+            []
+          ]
+        },
+        {
+          "actor": "B",
+          "cost": {
+            "actions": 0,
+            "certificate": 1,
+            "communication_bits": 1,
+            "depth": 1,
+            "messages": 1,
+            "observation_bits": 0
+          },
+          "kind": "message",
+          "name": "send:p3",
+          "receiver": "A",
+          "rows": [
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 8,
+                "public": "0",
+                "readout": null
+              }
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+              {
+                "after": 17,
+                "public": "1",
+                "readout": null
+              }
+            ],
+            []
+          ]
+        }
+      ],
+      "initial": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "leaf_cost": {
+        "actions": 0,
+        "certificate": 1,
+        "communication_bits": 0,
+        "depth": 0,
+        "messages": 0,
+        "observation_bits": 0
+      },
+      "observers": [
+        "A",
+        "B"
+      ],
+      "source_id": "declared-cross-enabled-v1",
+      "sources": [
+        {
+          "name": "s0",
+          "target": "0"
+        },
+        {
+          "name": "s1",
+          "target": "1"
+        }
+      ],
+      "states": [
+        {
+          "carrier": "0",
+          "local": [
+            "ready:p0",
+            "locked"
+          ],
+          "resources": [
+            8
+          ]
+        },
+        {
+          "carrier": "0",
+          "local": [
+            "obs:p0",
+            "locked"
+          ],
+          "resources": [
+            7
+          ]
+        },
+        {
+          "carrier": "0",
+          "local": [
+            "obs:p0",
+            "ready:p1"
+          ],
+          "resources": [
+            6
+          ]
+        },
+        {
+          "carrier": "0",
+          "local": [
+            "obs:p0",
+            "obs:p1"
+          ],
+          "resources": [
+            5
+          ]
+        },
+        {
+          "carrier": "0",
+          "local": [
+            "ready:p2",
+            "obs:p1"
+          ],
+          "resources": [
+            4
+          ]
+        },
+        {
+          "carrier": "0",
+          "local": [
+            "obs:p2",
+            "obs:p1"
+          ],
+          "resources": [
+            3
+          ]
+        },
+        {
+          "carrier": "0",
+          "local": [
+            "obs:p2",
+            "ready:p3"
+          ],
+          "resources": [
+            2
+          ]
+        },
+        {
+          "carrier": "0",
+          "local": [
+            "obs:p2",
+            "obs:p3:0"
+          ],
+          "resources": [
+            1
+          ]
+        },
+        {
+          "carrier": "0",
+          "local": [
+            "received:0",
+            "obs:p3:0"
+          ],
+          "resources": [
+            0
+          ]
+        },
+        {
+          "carrier": "1",
+          "local": [
+            "ready:p0",
+            "locked"
+          ],
+          "resources": [
+            8
+          ]
+        },
+        {
+          "carrier": "1",
+          "local": [
+            "obs:p0",
+            "locked"
+          ],
+          "resources": [
+            7
+          ]
+        },
+        {
+          "carrier": "1",
+          "local": [
+            "obs:p0",
+            "ready:p1"
+          ],
+          "resources": [
+            6
+          ]
+        },
+        {
+          "carrier": "1",
+          "local": [
+            "obs:p0",
+            "obs:p1"
+          ],
+          "resources": [
+            5
+          ]
+        },
+        {
+          "carrier": "1",
+          "local": [
+            "ready:p2",
+            "obs:p1"
+          ],
+          "resources": [
+            4
+          ]
+        },
+        {
+          "carrier": "1",
+          "local": [
+            "obs:p2",
+            "obs:p1"
+          ],
+          "resources": [
+            3
+          ]
+        },
+        {
+          "carrier": "1",
+          "local": [
+            "obs:p2",
+            "ready:p3"
+          ],
+          "resources": [
+            2
+          ]
+        },
+        {
+          "carrier": "1",
+          "local": [
+            "obs:p2",
+            "obs:p3:1"
+          ],
+          "resources": [
+            1
+          ]
+        },
+        {
+          "carrier": "1",
+          "local": [
+            "received:1",
+            "obs:p3:1"
+          ],
+          "resources": [
+            0
+          ]
+        }
+      ],
+      "target_id": "original-bit"
+    },
+    "one_less_coordinate_winning": {
+      "actions": false,
+      "certificate": false,
+      "communication_bits": false,
+      "depth": false,
+      "messages": false,
+      "observation_bits": false
+    },
+    "policy": {
+      "action": "p0",
+      "branches": [
+        [
+          "recorded",
+          {
+            "action": "send:p0",
+            "branches": [
+              [
+                "recorded",
+                {
+                  "action": "p1",
+                  "branches": [
+                    [
+                      "recorded",
+                      {
+                        "action": "send:p1",
+                        "branches": [
+                          [
+                            "recorded",
+                            {
+                              "action": "p2",
+                              "branches": [
+                                [
+                                  "recorded",
+                                  {
+                                    "action": "send:p2",
+                                    "branches": [
+                                      [
+                                        "recorded",
+                                        {
+                                          "action": "p3",
+                                          "branches": [
+                                            [
+                                              "recorded",
+                                              {
+                                                "action": "send:p3",
+                                                "branches": [
+                                                  [
+                                                    "0",
+                                                    {
+                                                      "action": null,
+                                                      "branches": [],
+                                                      "claim": "0"
+                                                    }
+                                                  ],
+                                                  [
+                                                    "1",
+                                                    {
+                                                      "action": null,
+                                                      "branches": [],
+                                                      "claim": "1"
+                                                    }
+                                                  ]
+                                                ],
+                                                "claim": null
+                                              }
+                                            ]
+                                          ],
+                                          "claim": null
+                                        }
+                                      ]
+                                    ],
+                                    "claim": null
+                                  }
+                                ]
+                              ],
+                              "claim": null
+                            }
+                          ]
+                        ],
+                        "claim": null
+                      }
+                    ]
+                  ],
+                  "claim": null
+                }
+              ]
+            ],
+            "claim": null
+          }
+        ]
+      ],
+      "claim": null
+    },
+    "replay": {
+      "concrete_prefixes": 18,
+      "leaves": [
+        {
+          "claim": "0",
+          "cost": {
+            "actions": 4,
+            "certificate": 9,
+            "communication_bits": 1,
+            "depth": 8,
+            "messages": 4,
+            "observation_bits": 1
+          },
+          "current": {
+            "carrier": "0",
+            "local": [
+              "received:0",
+              "obs:p3:0"
+            ],
+            "resources": [
+              0
+            ]
+          },
+          "history": [
+            [
+              "p0",
+              "recorded"
+            ],
+            [
+              "send:p0",
+              "recorded"
+            ],
+            [
+              "p1",
+              "recorded"
+            ],
+            [
+              "send:p1",
+              "recorded"
+            ],
+            [
+              "p2",
+              "recorded"
+            ],
+            [
+              "send:p2",
+              "recorded"
+            ],
+            [
+              "p3",
+              "recorded"
+            ],
+            [
+              "send:p3",
+              "0"
+            ]
+          ],
+          "original": "s0"
+        },
+        {
+          "claim": "1",
+          "cost": {
+            "actions": 4,
+            "certificate": 9,
+            "communication_bits": 1,
+            "depth": 8,
+            "messages": 4,
+            "observation_bits": 1
+          },
+          "current": {
+            "carrier": "1",
+            "local": [
+              "received:1",
+              "obs:p3:1"
+            ],
+            "resources": [
+              0
+            ]
+          },
+          "history": [
+            [
+              "p0",
+              "recorded"
+            ],
+            [
+              "send:p0",
+              "recorded"
+            ],
+            [
+              "p1",
+              "recorded"
+            ],
+            [
+              "send:p1",
+              "recorded"
+            ],
+            [
+              "p2",
+              "recorded"
+            ],
+            [
+              "send:p2",
+              "recorded"
+            ],
+            [
+              "p3",
+              "recorded"
+            ],
+            [
+              "send:p3",
+              "1"
+            ]
+          ],
+          "original": "s1"
+        }
+      ],
+      "policy_nodes": 10,
+      "public_leaves": 2
+    },
+    "two_factor_winning_interaction": 1,
+    "worst_cost": {
+      "actions": 4,
+      "certificate": 9,
+      "communication_bits": 1,
+      "depth": 8,
+      "messages": 4,
+      "observation_bits": 1
+    }
+  },
+  "exhaustive_oracle": {
+    "budget_comparisons": 10572,
+    "deterministic_two_action_models": 2500,
+    "nondeterministic_one_action_models": 1024,
+    "replayed_winners": 6702,
+    "winning_comparisons": 6702
+  },
+  "hostile_capacity_controls": [
+    {
+      "bits": 2,
+      "capacity": 1,
+      "collision_witnesses": [
+        {
+          "originals": [
+            "00",
+            "01"
+          ],
+          "performed": [
+            0
+          ],
+          "same_public_history": [
+            [
+              "p0",
+              "0"
+            ]
+          ],
+          "targets": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "originals": [
+            "00",
+            "10"
+          ],
+          "performed": [
+            1
+          ],
+          "same_public_history": [
+            [
+              "p1",
+              "0"
+            ]
+          ],
+          "targets": [
+            "0",
+            "1"
+          ]
+        }
+      ],
+      "explored": 5,
+      "full_capacity_winning": true,
+      "winning": false
+    },
+    {
+      "bits": 3,
+      "capacity": 2,
+      "collision_witnesses": [
+        {
+          "originals": [
+            "000",
+            "001"
+          ],
+          "performed": [
+            0,
+            1
+          ],
+          "same_public_history": [
+            [
+              "p0",
+              "0"
+            ],
+            [
+              "p1",
+              "0"
+            ]
+          ],
+          "targets": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "originals": [
+            "000",
+            "010"
+          ],
+          "performed": [
+            0,
+            2
+          ],
+          "same_public_history": [
+            [
+              "p0",
+              "0"
+            ],
+            [
+              "p2",
+              "0"
+            ]
+          ],
+          "targets": [
+            "0",
+            "1"
+          ]
+        },
+        {
+          "originals": [
+            "000",
+            "100"
+          ],
+          "performed": [
+            1,
+            2
+          ],
+          "same_public_history": [
+            [
+              "p1",
+              "0"
+            ],
+            [
+              "p2",
+              "0"
+            ]
+          ],
+          "targets": [
+            "0",
+            "1"
+          ]
+        }
+      ],
+      "explored": 19,
+      "full_capacity_winning": true,
+      "winning": false
+    }
+  ],
+  "independence_boundary": "distinct algorithms; same author and shared declared tables; no independent physical witness",
+  "miniport": {
+    "policy": {
+      "action": "mini:flip",
+      "branches": [
+        [
+          "[\"R0\"]",
+          {
+            "action": null,
+            "branches": [],
+            "claim": "T1"
+          }
+        ],
+        [
+          "[\"R1\"]",
+          {
+            "action": null,
+            "branches": [],
+            "claim": "T0"
+          }
+        ]
+      ],
+      "claim": null
+    },
+    "replay": {
+      "concrete_prefixes": 4,
+      "leaves": [
+        {
+          "claim": "T1",
+          "cost": {
+            "actions": 1,
+            "certificate": 2,
+            "communication_bits": 0,
+            "depth": 1,
+            "messages": 0,
+            "observation_bits": 1
+          },
+          "current": {
+            "carrier": "0",
+            "local": [
+              "ready"
+            ],
+            "resources": []
+          },
+          "history": [
+            [
+              "mini:flip",
+              "[\"R0\"]"
+            ]
+          ],
+          "original": "1"
+        },
+        {
+          "claim": "T0",
+          "cost": {
+            "actions": 1,
+            "certificate": 2,
+            "communication_bits": 0,
+            "depth": 1,
+            "messages": 0,
+            "observation_bits": 1
+          },
+          "current": {
+            "carrier": "1",
+            "local": [
+              "ready"
+            ],
+            "resources": []
+          },
+          "history": [
+            [
+              "mini:flip",
+              "[\"R1\"]"
+            ]
+          ],
+          "original": "0"
+        }
+      ],
+      "policy_nodes": 3,
+      "public_leaves": 2
+    },
+    "validation": {
+      "factor": {
+        "RH_proved": false,
+        "certified": true,
+        "common_source_squares_checked": 2,
+        "decoding_is_not_new_sensing": true,
+        "full_macro_histories": [
+          {
+            "carrier_state": "0",
+            "expanded_parent_actions": [
+              "flip"
+            ],
+            "intermediate_reports": [
+              "P0",
+              "P1"
+            ],
+            "mini_action": "flip",
+            "source_state_trace": [
+              "0",
+              "1"
+            ]
+          },
+          {
+            "carrier_state": "1",
+            "expanded_parent_actions": [
+              "flip"
+            ],
+            "intermediate_reports": [
+              "P1",
+              "P0"
+            ],
+            "mini_action": "flip",
+            "source_state_trace": [
+              "1",
+              "0"
+            ]
+          }
+        ],
+        "maximum_macro_cost": 1,
+        "new_physical_instrument_created": false,
+        "parent_states": 2,
+        "realization": "lawful_behavioral_factor",
+        "source_authenticated_externally": false,
+        "states": 2
+      },
+      "hidden_decoder_exposed": false,
+      "passport": {
+        "basis": "modular-Z",
+        "epoch": 0,
+        "source_id": "policy-mini-table"
+      },
+      "physical_authentication": false,
+      "public_macro_histories_exposed": true
+    },
+    "worst_cost": {
+      "actions": 1,
+      "certificate": 2,
+      "communication_bits": 0,
+      "depth": 1,
+      "messages": 0,
+      "observation_bits": 1
+    }
+  },
+  "model_boundary": "declared complete finite source/current-state/resource/readout tables; no physical authentication",
+  "nondeterminism": {
+    "missing_branch_replay_rejection": "missing, duplicated, or fictional public outcome branch",
+    "retry_at_depth_four_winning": false
+  },
+  "schema": "collective-policy-exact-v1",
+  "source_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/METHOD.md": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+    "observational_succ/absorbing_frames.py": "2a4dc7f0af07b536dcd6fe259069a0e78890358180b4c5490d7c7bd4d71eb95e",
+    "observational_succ/adaptive_proof_policy.py": "433c32b2c81128be615f8dc9cb39d556ff6781bed3a869524fe6effb41f2da4d",
+    "observational_succ/collective_policy.py": "9414cb686f509c403cf9ae2608378caaa20fd56d1754f765eb9673fcd11f168f",
+    "observational_succ/consensus_lambda.py": "9c1078fc0dc807139e2a9d22fc7ff59db7b19e1fcb67520bad345d86584951de",
+    "observational_succ/interobserver_channels.py": "5a3c9d72dc84427d3bf72410f8b8ed36fcdb3fc9800c9e1f48cd85532bc88db6",
+    "observational_succ/knowledge_ladder.py": "befad197c6898321dcbcd5ee025972c15b1669d1ad99338c8f7c6c7093e361a2",
+    "observational_succ/miniature_carrier.py": "3930f452b242b9182b9c51769b845922c7bb28c0ef7682c56f03cc3312ac2802",
+    "observational_succ/miniature_stochastic.py": "83b4b5526492c9609cf7c894f58bba01bfd371dfe1dfb86228b74df6109ce896",
+    "observational_succ/noncommuting_proof_transport.py": "4584d1678c51772aaaeeab512d34198b5372278a488011c0a092e756d1fa420a",
+    "observational_succ/operational_yoneda_descent.py": "c9db557825a01bec76e8bc38f32d3f59cd2dd17d7a2670e15373aedeedc67e0c",
+    "observational_succ/source_lambda.py": "13c2db896da68d186006ddd1c668e98213265a61fb12ce2450a2f735e89c71f6",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "research/2026-10-16/COLLECTIVE_POLICY_THEOREM.md": "612e7d5f0ccf9a617263096a64ac48806671c3acba963aa483a494490ecd73fe",
+    "scripts/collective_policy_probe.py": "bb893c02dc6d0dad068f3e4d30264a367a7f8c5b13258b34dcb0bb304b132aa6",
+    "tests/test_collective_policy.py": "1fa0c2ea41f40bda8ecc774eb1e6a3e7006b307e215c3a2d8d617fb348110412"
+  },
+  "status": "TESTED_MODEL_FINITE_CHRONOLOGICAL_AND_OR"
+}

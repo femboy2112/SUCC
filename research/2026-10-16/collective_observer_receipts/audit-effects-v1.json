@@ -1,0 +1,66 @@
+{
+  "command": [
+    "scripts/collective_observer_independent_audit.py",
+    "--sections",
+    "effects",
+    "--output",
+    "research/2026-10-16/collective_observer_receipts/audit-effects-v1.json"
+  ],
+  "elapsed_seconds": 0.103,
+  "exit_code": 0,
+  "limits": {
+    "address_space_MiB": 768,
+    "concurrency": 1,
+    "cpu_seconds": 90
+  },
+  "python": "3.12.3",
+  "sections": {
+    "effects": {
+      "boundary": "immutable counterfactual reuse is allowed; no joint execution certified",
+      "counts": {
+        "compressed_read_attacks": 16,
+        "debt_checks": 72,
+        "raw_relay_checks": 2
+      },
+      "elapsed_seconds": 0.0999,
+      "macro": {
+        "effects": [
+          "CERTIFIED_MINIATURE_ACTION_MODEL",
+          "SOURCE_CHANGING_MODEL_INTERVENTION"
+        ],
+        "new_observations": 0,
+        "original_source_retained": true,
+        "physical_action_executed": false,
+        "status": "EXACT_FINITE_TRANSITION_MODEL",
+        "word": [
+          "left"
+        ]
+      },
+      "status": "PASS_TARGETED_HOSTILE_CHAINS"
+    }
+  },
+  "source_sha256_after": {
+    "observational_succ/collective_effects.py": "62061b06026687906568ddc116da87240d440fe18619e7e032ddfa8b223ff86f",
+    "observational_succ/collective_gamma.py": "c6bad28d87fe95aa95df899e48519e76ef4eb9351db7707974fdcb467248b0f5",
+    "observational_succ/collective_modular.py": "654840bf5305aa20e9428f9c40ce6bdb8f7afaf882bd10316303b5f1663adb92",
+    "observational_succ/collective_policy.py": "c992073596d6233950866d8b10424320e72e1c5315472614af3fa5f737e05bfb",
+    "observational_succ/collective_spectral.py": "6aef082898cc877e5b86d6bc80d93a71115c08cdcfd3023a8f9db91ceff36e79",
+    "observational_succ/consensus_lambda.py": "9c1078fc0dc807139e2a9d22fc7ff59db7b19e1fcb67520bad345d86584951de",
+    "observational_succ/wild_ambient_succ.py": "01b6a30459571425b35013eef09b2861bc3811641abadb13daeebbc3921658fb",
+    "observational_succ/wild_embedding_succ.py": "09652957b6e2290855722e0e3a8be59f7ec2aab74a85d6bf7b130be71616186e",
+    "scripts/collective_observer_independent_audit.py": "8667bc5d5f237d8fd3750f6003675bd57369bfa9af04f1a3807a71b652cbf612"
+  },
+  "source_sha256_before": {
+    "observational_succ/collective_effects.py": "62061b06026687906568ddc116da87240d440fe18619e7e032ddfa8b223ff86f",
+    "observational_succ/collective_gamma.py": "c6bad28d87fe95aa95df899e48519e76ef4eb9351db7707974fdcb467248b0f5",
+    "observational_succ/collective_modular.py": "654840bf5305aa20e9428f9c40ce6bdb8f7afaf882bd10316303b5f1663adb92",
+    "observational_succ/collective_policy.py": "c992073596d6233950866d8b10424320e72e1c5315472614af3fa5f737e05bfb",
+    "observational_succ/collective_spectral.py": "6aef082898cc877e5b86d6bc80d93a71115c08cdcfd3023a8f9db91ceff36e79",
+    "observational_succ/consensus_lambda.py": "9c1078fc0dc807139e2a9d22fc7ff59db7b19e1fcb67520bad345d86584951de",
+    "observational_succ/wild_ambient_succ.py": "01b6a30459571425b35013eef09b2861bc3811641abadb13daeebbc3921658fb",
+    "observational_succ/wild_embedding_succ.py": "09652957b6e2290855722e0e3a8be59f7ec2aab74a85d6bf7b130be71616186e",
+    "scripts/collective_observer_independent_audit.py": "8667bc5d5f237d8fd3750f6003675bd57369bfa9af04f1a3807a71b652cbf612"
+  },
+  "sources_stable_during_run": true,
+  "started_utc": "2026-10-16T17:44:48.112573+00:00"
+}

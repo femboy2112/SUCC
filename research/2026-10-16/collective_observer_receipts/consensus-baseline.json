@@ -1,0 +1,74 @@
+{
+  "RH_proved": false,
+  "actual_physical_source_authenticated": false,
+  "completed_Weil_form_identified": false,
+  "exact_cross_energy": "-3",
+  "finite_access_sphere_radius": 1,
+  "global_source_identified": false,
+  "joint_candidates": [
+    "s3"
+  ],
+  "joint_consensus": "SOURCE_IDENTIFIED_IN_DECLARED_MODEL",
+  "local_diagonal_positive_but_joint_negative": true,
+  "model_epoch": 0,
+  "model_source": "example-consensus-source",
+  "optimal_portfolio": [
+    [
+      "E1",
+      "mod2"
+    ],
+    [
+      "E2",
+      "mod3"
+    ]
+  ],
+  "parent_branch": "research/succ-lambda-observation-calculus-2026-10-16",
+  "portfolio_activations": [
+    [
+      "E1",
+      "mod2",
+      [
+        "unlock"
+      ]
+    ],
+    [
+      "E2",
+      "mod3",
+      []
+    ]
+  ],
+  "receiver_channel": {
+    "decoder_correct_for_all_declared_sources": true,
+    "minimum_codewords": 2,
+    "minimum_fixed_width_bits": 1,
+    "naive_sender_view_bits": 1,
+    "no_RH_sign_authority": true,
+    "original_source_authenticated": false,
+    "recipient_performed_senders_probe": false,
+    "sender_alphabet_size": 2,
+    "source_coherent": true,
+    "status": "MODEL_OPTIMAL_ZERO_ERROR_CONSENSUS_MESSAGE"
+  },
+  "relayed_same_evidence_candidates": [
+    "s1",
+    "s3"
+  ],
+  "wild_blindspot": {
+    "RH_proved": false,
+    "all_observers_blind": true,
+    "consensus_is_not_source_authentication": true,
+    "depth": 3,
+    "iterated_word_length": 64,
+    "lower_central_depth": 8,
+    "no_global_nilpotent_representation_from_stage_detector": true,
+    "stage_detector": {
+      "depth": 3,
+      "detects_at_exact_depth": true,
+      "matrix_dimension": 9,
+      "nilpotency_class": 8,
+      "nonzero_top_right": 1,
+      "not_compatible_with_entire_perfect_direct_limit": true,
+      "source_free_rank": 8
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "command": [
+    "scripts/collective_observer_independent_audit.py",
+    "--sections",
+    "spectral_receipt",
+    "--output",
+    "research/2026-10-16/collective_observer_receipts/audit-spectral-receipt-final.json"
+  ],
+  "elapsed_seconds": 0.0163,
+  "exit_code": 0,
+  "limits": {
+    "address_space_MiB": 768,
+    "concurrency": 1,
+    "cpu_seconds": 90
+  },
+  "python": "3.12.3",
+  "sections": {
+    "spectral_receipt": {
+      "elapsed_seconds": 0.0136,
+      "historical_zero_removal_preserved": true,
+      "original_source_count": 1,
+      "receipt_sha256": "52efdea900594af1151a08fc3f6151b7a629c25defe90bf069928f5156234dbd",
+      "sectors": {
+        "even": {
+          "lower_cap": "-14373807789/17179869184",
+          "new_response_cap": "46594796936736757485815562001/55689004873687500000000000000",
+          "old_response_cap": "107959895025855318145227769087/127289153997000000000000000000",
+          "sign": "OPEN",
+          "upper_cap": "11742983/8589934592"
+        },
+        "odd": {
+          "lower_cap": "-7746694143/17179869184",
+          "new_response_cap": "401942050279861710702382408729/891024077979000000000000000000",
+          "old_response_cap": "405333569368851711757618861801/891024077979000000000000000000",
+          "sign": "OPEN",
+          "upper_cap": "300761/1073741824"
+        }
+      },
+      "source_pin": "95dbf40553e54c901e9998e14b1b9d67298fa89e",
+      "status": "PASS_SOURCE_RECEIPT_ARITHMETIC_WITH_INDEPENDENT_MOMENTS",
+      "unreplayed_dependencies": [
+        "512-cell source grid was executed by spectral lane",
+        "inherited high coercivity and analytic source proofs",
+        "upper trial integration is inherited; lower/upper scalar slacks independently rechecked here"
+      ]
+    }
+  },
+  "source_sha256_after": {
+    "observational_succ/collective_effects.py": "62061b06026687906568ddc116da87240d440fe18619e7e032ddfa8b223ff86f",
+    "observational_succ/collective_gamma.py": "c6bad28d87fe95aa95df899e48519e76ef4eb9351db7707974fdcb467248b0f5",
+    "observational_succ/collective_modular.py": "654840bf5305aa20e9428f9c40ce6bdb8f7afaf882bd10316303b5f1663adb92",
+    "observational_succ/collective_policy.py": "9414cb686f509c403cf9ae2608378caaa20fd56d1754f765eb9673fcd11f168f",
+    "observational_succ/collective_spectral.py": "062a99f8531e7dee4ec3e5537bcecdc5446ac62e859ca7bf5ae120ec5540d20e",
+    "observational_succ/consensus_lambda.py": "9c1078fc0dc807139e2a9d22fc7ff59db7b19e1fcb67520bad345d86584951de",
+    "observational_succ/wild_ambient_succ.py": "01b6a30459571425b35013eef09b2861bc3811641abadb13daeebbc3921658fb",
+    "observational_succ/wild_embedding_succ.py": "09652957b6e2290855722e0e3a8be59f7ec2aab74a85d6bf7b130be71616186e",
+    "scripts/collective_observer_independent_audit.py": "646075ccd171bd91075305f0208499c1eba783053d3967ea140432b6f38fe7fd",
+    "scripts/collective_spectral_probe.py": "57e09474cd8435e5780a45550d4f6027ca578358895d8eea38a4c5e13ecf4361"
+  },
+  "source_sha256_before": {
+    "observational_succ/collective_effects.py": "62061b06026687906568ddc116da87240d440fe18619e7e032ddfa8b223ff86f",
+    "observational_succ/collective_gamma.py": "c6bad28d87fe95aa95df899e48519e76ef4eb9351db7707974fdcb467248b0f5",
+    "observational_succ/collective_modular.py": "654840bf5305aa20e9428f9c40ce6bdb8f7afaf882bd10316303b5f1663adb92",
+    "observational_succ/collective_policy.py": "9414cb686f509c403cf9ae2608378caaa20fd56d1754f765eb9673fcd11f168f",
+    "observational_succ/collective_spectral.py": "062a99f8531e7dee4ec3e5537bcecdc5446ac62e859ca7bf5ae120ec5540d20e",
+    "observational_succ/consensus_lambda.py": "9c1078fc0dc807139e2a9d22fc7ff59db7b19e1fcb67520bad345d86584951de",
+    "observational_succ/wild_ambient_succ.py": "01b6a30459571425b35013eef09b2861bc3811641abadb13daeebbc3921658fb",
+    "observational_succ/wild_embedding_succ.py": "09652957b6e2290855722e0e3a8be59f7ec2aab74a85d6bf7b130be71616186e",
+    "scripts/collective_observer_independent_audit.py": "646075ccd171bd91075305f0208499c1eba783053d3967ea140432b6f38fe7fd",
+    "scripts/collective_spectral_probe.py": "57e09474cd8435e5780a45550d4f6027ca578358895d8eea38a4c5e13ecf4361"
+  },
+  "sources_stable_during_run": true,
+  "started_utc": "2026-10-16T17:56:51.955812+00:00"
+}
+

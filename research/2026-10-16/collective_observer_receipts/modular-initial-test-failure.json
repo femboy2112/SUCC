@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/home/leah/.local/bin/python",
+    "-S",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_collective_modular.py",
+    "-v"
+  ],
+  "exit_code": 1,
+  "sha256": {
+    "observational_succ/collective_modular.py": "654840bf5305aa20e9428f9c40ce6bdb8f7afaf882bd10316303b5f1663adb92",
+    "tests/test_collective_modular.py": "b0e706f87700622491ac84a6ab7a8d7d879ecd1f80d7027a8e6528abc16cb0d9"
+  },
+  "stderr": "test_affine_character_covariance_including_nonunits (test_collective_modular.CollectiveModularTests.test_affine_character_covariance_including_nonunits) ... ok\ntest_affine_nonunit_rank_norm_and_phase_mutation (test_collective_modular.CollectiveModularTests.test_affine_nonunit_rank_norm_and_phase_mutation) ... ok\ntest_affine_unit_commutes_and_nonunit_does_not_always (test_collective_modular.CollectiveModularTests.test_affine_unit_commutes_and_nonunit_does_not_always) ... ok\ntest_conductor_six_basis_and_multiplication (test_collective_modular.CollectiveModularTests.test_conductor_six_basis_and_multiplication) ... ok\ntest_crt_actual_image_and_incompatible_tuples (test_collective_modular.CollectiveModularTests.test_crt_actual_image_and_incompatible_tuples) ... ok\ntest_crt_source_lambda_join_integration (test_collective_modular.CollectiveModularTests.test_crt_source_lambda_join_integration) ... ok\ntest_cylinder_algebra_and_compatible_refinements (test_collective_modular.CollectiveModularTests.test_cylinder_algebra_and_compatible_refinements) ... ok\ntest_existing_prime_clock_and_tower_integration (test_collective_modular.CollectiveModularTests.test_existing_prime_clock_and_tower_integration) ... ok\ntest_expectation_composition_against_cyclic_orbit_oracle (test_collective_modular.CollectiveModularTests.test_expectation_composition_against_cyclic_orbit_oracle) ... FAIL\ntest_fail_closed_on_wrong_carriers_and_inexact_inputs (test_collective_modular.CollectiveModularTests.test_fail_closed_on_wrong_carriers_and_inexact_inputs) ... ok\ntest_hidden_source_collision_and_finite_alias (test_collective_modular.CollectiveModularTests.test_hidden_source_collision_and_finite_alias) ... ok\ntest_joint_sector_depths (test_collective_modular.CollectiveModularTests.test_joint_sector_depths) ... ok\ntest_linear_projector_and_missing_ambient_boundary (test_collective_modular.CollectiveModularTests.test_linear_projector_and_missing_ambient_boundary) ... ok\ntest_linear_rank_vs_joint_product_rank (test_collective_modular.CollectiveModularTests.test_linear_rank_vs_joint_product_rank) ... ok\ntest_minimum_portfolio_against_all_subset_decoders (test_collective_modular.CollectiveModularTests.test_minimum_portfolio_against_all_subset_decoders) ... ok\ntest_nonuniform_measure_breaks_gcd_identity (test_collective_modular.CollectiveModularTests.test_nonuniform_measure_breaks_gcd_identity) ... ok\ntest_primitive_orthogonal_resolution (test_collective_modular.CollectiveModularTests.test_primitive_orthogonal_resolution) ... ok\ntest_primitive_projectors_against_exact_character_sums (test_collective_modular.CollectiveModularTests.test_primitive_projectors_against_exact_character_sums) ... ok\ntest_projection_self_adjoint_and_rank (test_collective_modular.CollectiveModularTests.test_projection_self_adjoint_and_rank) ... ok\ntest_six_character_basis_in_one_field (test_collective_modular.CollectiveModularTests.test_six_character_basis_in_one_field) ... ok\n\n======================================================================\nFAIL: test_expectation_composition_against_cyclic_orbit_oracle (test_collective_modular.CollectiveModularTests.test_expectation_composition_against_cyclic_orbit_oracle)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/media/leah/SPANKBANK/SUCCYBOI/SUCC-collective-observer/tests/test_collective_modular.py\", line 79, in test_expectation_composition_against_cyclic_orbit_oracle\n    self.assertEqual(count, 271)\nAssertionError: 224 != 271\n\n----------------------------------------------------------------------\nRan 20 tests in 2.067s\n\nFAILED (failures=1)\n",
+  "stdout": ""
+}

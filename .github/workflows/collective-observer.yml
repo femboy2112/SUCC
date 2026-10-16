@@ -1,0 +1,56 @@
+name: Collective observer source and certificate replay
+
+on:
+  push:
+    branches: ['research/collective-observer-*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: collective-observer-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  collective:
+    name: Collective observer exact replay (${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install the existing research and test dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Mount the pinned arithmetic sibling without merging it
+        run: |
+          git cat-file -e 95dbf40553e54c901e9998e14b1b9d67298fa89e^{commit}
+          git worktree add --detach "$RUNNER_TEMP/succ-arithmetic-pin" 95dbf40553e54c901e9998e14b1b9d67298fa89e
+      - name: Replay exact finite and authenticated source calculations
+        run: |
+          python scripts/check_collective_observer.py --output "$RUNNER_TEMP/collective-replay" --source-root "$RUNNER_TEMP/succ-arithmetic-pin"
+      - name: Independently challenge the mathematical interfaces
+        run: |
+          python scripts/collective_observer_independent_audit.py --output "$RUNNER_TEMP/collective-audit.json"
+          python scripts/collective_observer_independent_audit.py --sections spectral_source --source-root "$RUNNER_TEMP/succ-arithmetic-pin" --output "$RUNNER_TEMP/collective-source-audit.json"
+          python scripts/collective_observer_independent_audit.py --sections spectral_receipt --source-root "$RUNNER_TEMP/succ-arithmetic-pin" --output "$RUNNER_TEMP/collective-receipt-audit.json"
+      - name: Retain successful and failed receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: collective-observer-${{ matrix.python }}
+          path: |
+            ${{ runner.temp }}/collective-replay/
+            ${{ runner.temp }}/collective-audit.json
+            ${{ runner.temp }}/collective-source-audit.json
+            ${{ runner.temp }}/collective-receipt-audit.json
+          if-no-files-found: error
