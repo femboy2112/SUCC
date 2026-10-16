@@ -1,0 +1,36 @@
+name: One Object II original source cancellation and zero-shift Schur
+on:
+  push:
+    branches:
+      - 'research/one-object-residual-shorting-2026-10-15'
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  finite_source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install the source-checked mathematical dependencies
+        run: python -m pip install -e '.[test]'
+      - name: Enforce source provenance
+        run: python scripts/verify_provenance.py
+      - name: Exact rational source-cancelled Gamma/Weil and Schur tests
+        run: python -m unittest -v tests.test_one_object_residual_schur tests.test_signed_gprime_enclosure
+      - name: Fail closed on absent or changed actual original source
+        run: python scripts/one_object_residual_schur_probe.py --require-authentic-source
+      - name: Replay strict outward-rational receipt without numerical source substitution
+        run: python scripts/one_object_residual_schur_probe.py --verify research/2026-10-15/ONE_OBJECT_RESIDUAL_SHORTING_RECEIPT.json
+      - name: Original parent Tate, Weil, Suzuki and Connes tests
+        run: python -m unittest -v tests.test_tate_local_contract tests.test_one_object_transport tests.test_one_object_kernel_certificates tests.test_suzuki_moment_schur
+      - name: Verify no source or stale Python compilation errors
+        run: python -m compileall -q observational_succ/one_object_residual_schur.py observational_succ/signed_gprime_enclosure.py tests/test_one_object_residual_schur.py tests/test_signed_gprime_enclosure.py

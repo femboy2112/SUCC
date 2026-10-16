@@ -1,0 +1,132 @@
+{
+  "arch_global": {
+    "RH_or_Weil_sign_claimed": false,
+    "critical_half_density_gaussian": {
+      "common_special_value": "pi^(-1/4)*Gamma(1/4)",
+      "critical_s_half_source_duality": true,
+      "forward_prefactor": "1/4",
+      "fourier_dual_prefactor": "1/4",
+      "width": 256
+    },
+    "fake_composite_6_independent_factor_coefficient_6": 2,
+    "finite_euler_contract_sigma_2": {
+      "finite_local_euler_at_sigma": "206841635/127401984",
+      "last_source_prime": 17,
+      "primes": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13,
+        17
+      ],
+      "sigma": 2,
+      "uniform_absolute_tail_upper": "1/17",
+      "valid_for_all_complex_s_Re_ge_sigma": true,
+      "valid_on_critical_line": false
+    },
+    "gamma_s_plus_two_succ_recurrence": true,
+    "global_Poisson_or_completed_zeta_FE_derived_from_finite_windows": false,
+    "kind": "CLASSICAL_TATE_ARCH_GLOBAL_RECEIPT",
+    "real_gaussian_mellin_integer_values": [
+      [
+        "1",
+        0
+      ],
+      [
+        "1",
+        -1
+      ],
+      [
+        "1/2",
+        -1
+      ],
+      [
+        "1",
+        -2
+      ],
+      [
+        "3/4",
+        -2
+      ],
+      [
+        "2",
+        -3
+      ],
+      [
+        "15/8",
+        -3
+      ]
+    ],
+    "true_euler_smooth_coefficient_6": 1
+  },
+  "finite_atlas": {
+    "all_tests_infinite_local_source_identification": true,
+    "diagonal_rational_character": {
+      "diagonal_global_character_equals_one": true,
+      "finite_places": [
+        [
+          2,
+          "1/2"
+        ],
+        [
+          3,
+          "2/3"
+        ]
+      ],
+      "q": "1/6",
+      "real_signed_phase": "-1/6",
+      "total_integer_phase": 1
+    },
+    "exact_cyclotomic_Fourier_and_Parseval": true,
+    "full_coset_functional_equations_checked": 36,
+    "global_adelic_Poisson_derived": false,
+    "kind": "CLASSICAL_TATE_LOCAL_ATLAS_RECEIPT",
+    "signed_Weil_positivity_or_RH_proved": false,
+    "support_and_precision_contralateral_refinement": true,
+    "window_sizes": [
+      [
+        2,
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        1,
+        4
+      ],
+      [
+        2,
+        0,
+        3,
+        8
+      ],
+      [
+        3,
+        0,
+        2,
+        9
+      ],
+      [
+        3,
+        1,
+        1,
+        9
+      ],
+      [
+        5,
+        0,
+        1,
+        5
+      ]
+    ]
+  },
+  "global_adelic_Poisson_deduced_from_finite_examples": false,
+  "kind": "CLASSICAL_TATE_SCHWARTZ_VERIFIED_BRIDGE_RECEIPT",
+  "local_Fourier_implemented_on_fixed_a_b_test_window": true,
+  "signed_Weil_positivity_or_RH_proved": false,
+  "unrestricted_source_unknown_support_or_precision_certified": false
+}

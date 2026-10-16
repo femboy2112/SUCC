@@ -1,0 +1,45 @@
+name: Hilbert carrier completion and original signed Weil provenance
+
+on:
+  push:
+    branches:
+      - 'research/hilbert-carrier-completion-*'
+  pull_request:
+    paths:
+      - 'observational_succ/hilbert_*.py'
+      - 'tests/test_hilbert_*.py'
+      - 'scripts/hilbert_carrier_probe.py'
+      - 'research/2026-10-14/HILBERT_*'
+      - 'docs/CLAIM_SUPPLEMENT_HILBERT_CARRIER.md'
+      - '.github/workflows/hilbert-carrier.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  hilbert_source_gate:
+    name: Hilbert source and operator gate (${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install original repository test environment
+        run: python -m pip install -e '.[test]'
+      - name: Compile source and all new mathematical instruments
+        run: python -m compileall -q observational_succ/hilbert_carrier.py observational_succ/hilbert_prime_wavefront.py observational_succ/hilbert_prime_hinge_integrals.py observational_succ/hilbert_suzuki_cell_integrals.py observational_succ/hilbert_suzuki_stream.py tests/test_hilbert_carrier.py tests/test_hilbert_prime_wavefront.py tests/test_hilbert_prime_hinge_integrals.py tests/test_hilbert_suzuki_cell_integrals.py tests/test_hilbert_suzuki_stream.py scripts/hilbert_carrier_probe.py
+      - name: Hilbert finite-to-global, analytic quadrature, Haar, original Weil
+        run: python -m unittest discover -s tests -p 'test_hilbert_*.py' -v
+      - name: Authentic Suzuki source original regression
+        run: python -m unittest discover -s tests -p 'test_source_weil_hierarchy.py' -v
+      - name: Exact finite source receipt
+        run: python scripts/hilbert_carrier_probe.py --verify research/2026-10-14/HILBERT_SOURCE_COMPLETION_RECEIPT.json
+      - name: Protected historical source provenance
+        run: python scripts/verify_provenance.py

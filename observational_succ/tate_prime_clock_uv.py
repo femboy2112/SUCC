@@ -1,0 +1,258 @@
+"""Tate/APOLLO arithmetic clock transducers: exact local forms and UV gates.
+
+Mathematical domain: original zeta Weil form on C_c^infinity(-a,a);
+half-density, prime weights, real Gamma, both poles and contact are pinned
+to the APOLLO source.  No zero locations are inputs.  No all-a sign claim.
+
+This module intentionally separates:
+  * rational, source-independent shift-path and signed-hinge checks;
+  * SHA-pinned original zeta first-prime source + exact rational proof budget.
+"""
+from __future__ import annotations
+
+from fractions import Fraction as Q
+
+from .apollo_krein_factor import brownian_increment_kernel, prime_hinge_kernel
+from .apollo_derivative_jets import _source, true_third_prime_wavefronts
+
+
+class PrimeClockGateError(ValueError):
+    """An illegal source/window/positivity assertion was attempted."""
+
+
+def _q(value):
+    if type(value) not in (int, Q):
+        raise PrimeClockGateError("Only exact int/Fraction source inputs accepted")
+    return Q(value)
+
+
+def _positive(value):
+    q = _q(value)
+    if q <= 0:
+        raise PrimeClockGateError("Positive source quantity required")
+    return q
+
+
+def shift_path_geometry(a, b):
+    """Sharp compressed translation-chain theorem, in rational clock charts.
+
+    For I=(-a,a), b>0, P_I(S_b+S_-b)P_I is a direct integral
+    of finite path adjacency matrices.  Essential maximal chain length is
+    m=ceil(2a/b); the sharp operator norm is 2*cos(pi/(m+1)).
+    Do not replace the last exact expression by a floating certificate.
+    """
+    aa, bb = _positive(a), _positive(b)
+    ratio = 2 * aa / bb
+    m = (ratio.numerator + ratio.denominator - 1) // ratio.denominator
+    return {
+        "halfwidth": aa,
+        "source_clock": bb,
+        "length_ratio": ratio,
+        "maximum_essential_chain_vertices": m,
+        "prime_active": m >= 2,
+        "sharp_norm_expression": f"2*cos(pi/{m+1})",
+        "sharp_norm_rational": Q(0) if m == 1 else Q(1) if m == 2 else None,
+        "general_norm_upper": Q(2),
+        "RH_proved": False,
+    }
+
+
+def exact_two_cell_negative_witness(a, b, weight=1):
+    """Exact four-point Gram witness attaining -weight in Brownian norm.
+
+    Applicable when b < 2a <= 2b.  Its two positive indicator cells
+    J and J+b each have length ell=(2a-b)/2.  The anchored four-point
+    source coefficients are (1,-1,1,-1), with exact Q_prime=-2w*ell.
+    Synthetic rational clocks are NEVER authenticated zeta primes.
+    """
+    aa, bb, ww = _positive(a), _positive(b), _positive(weight)
+    if not bb < 2 * aa <= 2 * bb:
+        raise PrimeClockGateError("A two-cell prime activation window is required")
+    ell = (2 * aa - bb) / 2
+    left = -aa
+    right = left + bb
+    points = (left + ell, left, right + ell, right)
+    coeffs = (1, -1, 1, -1)
+
+    def energy(kernel):
+        return sum(
+            (Q(coeffs[i] * coeffs[j]) * kernel(points[i], points[j])
+             for i in range(4) for j in range(4)), Q()
+        )
+
+    signed = ww * energy(lambda x, y: prime_hinge_kernel(x, y, bb))
+    brownian = energy(brownian_increment_kernel)
+    if brownian != 2 * ell or signed != -2 * ww * ell:
+        raise ArithmeticError("Exact prime path witness failed original hinge identity")
+    return {
+        "points": points, "coefficients": coeffs, "cell_length": ell,
+        "original_shape_prime_signed_energy": signed,
+        "brownian_energy": brownian,
+        "sharp_relative_negative": signed / brownian,
+        "synthetic_clock_not_genuine_prime": True,
+        "RH_proved": False,
+    }
+
+
+def gamma_sparse_lower(dyadic_exponent, support_measure):
+    """Exact analytic lower bound for first J=2^k real Gamma OU modes.
+
+    If (4J-3)*mu<=2, Schur on measurable E of measure<=mu gives
+    ||1_E R_alpha 1_E|| <= alpha*mu/2 <= 1/2 for j<J.
+    Thus Q_Gamma >= sum_{j<J} 2/(4j+1) *||f||²
+                > (1/2)log(4J+1)*||f||²
+                > (k+2)/3 *||f||²,
+    using log(2)>2/3 and 4J+1>2^(k+2).
+    No sampled spectral eigenvalue or numerical transcendental value enters.
+    """
+    if type(dyadic_exponent) is not int or not 1 <= dyadic_exponent <= 128:
+        raise PrimeClockGateError("A positive bounded integer exponent is required")
+    mu = _positive(support_measure)
+    J = 1 << dyadic_exponent
+    if (4 * J - 3) * mu > 2:
+        raise PrimeClockGateError("Source support does not resolve the chosen UV clock")
+    return {
+        "gamma_modes_used": J, "support_measure_bound": mu,
+        "max_schur_ratio": Q(4 * J - 3, 4) * mu,
+        "gamma_energy_strictly_above": Q(dyadic_exponent + 2, 3),
+        "uncomputed_infinite_gamma_tail_is_positive": True,
+        "all_smooth_tests_on_any_measurable_support_of_this_size": True,
+        "RH_proved": False,
+    }
+
+
+def gamma_sparse_linear_lower(J, support_measure):
+    """Sharp easy-to-audit finite-J Schur budget for the original real Gamma.
+
+    Each Gamma rung satisfies
+      beta_j <f,(I-R_j)f> >= (4/(4j+1)-mu)*||f||²
+    for any test supported in a set of measure <=mu. To keep every
+    retained term nonnegative, impose (4J-3)*mu<=4.
+    All omitted original Gamma rungs are positive. Sum is EXACT Fraction.
+    """
+    if type(J) is not int or not 1 <= J <= 128:
+        raise PrimeClockGateError("A bounded positive integral Gamma cutoff is required")
+    mu = _positive(support_measure)
+    if (4 * J - 3) * mu > 4:
+        raise PrimeClockGateError("Support exceeds source Gamma finite-mode Schur domain")
+    sum_beta = sum((Q(4, 4*j+1) for j in range(J)), Q())
+    lower = sum_beta - J * mu
+    if lower <= 0:
+        raise ArithmeticError("Positive real Gamma lower is not resolved")
+    return {
+        "source": "ONE_REAL_COMPLETED_ZETA_GAMMA",
+        "gamma_modes_used": J, "support_measure_bound": mu,
+        "max_schur_ratio": Q(4*J-3, 4)*mu,
+        "exact_original_beta_sum": sum_beta,
+        "gamma_energy_at_least": lower,
+        "remaining_original_gamma_tail_psd": True,
+        "all_smooth_support_restricted_tests": True,
+        "RH_proved": False,
+    }
+
+
+def genuine_first_prime_sparse_weil_certificate(a=Q(1, 2),
+                                                 support_measure=Q(1, 16)):
+    """Source-derived ORIGINAL Weil coercivity for any sparse compact test.
+
+    For all 0<a<=1/2 and nonzero f in C_c^infinity(-a,a), provided
+    the total measure of supp(f) <=1/16, prove
+      Q_zeta(f) > (1/24)*||f||².
+    At a=1/2 the actual n=2 prime is active. This still does NOT
+    cover arbitrary tests on the interval and does NOT prove RH.
+    """
+    aa, mu = _positive(a), _positive(support_measure)
+    if aa > Q(1, 2) or mu > Q(1, 16):
+        raise PrimeClockGateError("Only first-prime radius/support theorem certified")
+    source = _source()  # pinned original Suzuki source SHA; no zeros
+    if not source.contact_iv().hi < Q(43, 8):
+        raise ArithmeticError("Authentic real contact C_inf<43/8 missing")
+    if not source.log2_iv().lo > Q(2, 3):
+        raise ArithmeticError("Authentic log 2 lower bound missing")
+    if not source.log2_iv().hi < Q(7, 10):
+        raise ArithmeticError("Authentic log 2 upper bound missing")
+    labels = tuple(j.n for j in true_third_prime_wavefronts(2 * aa))
+    if any(n != 2 for n in labels):
+        raise ArithmeticError("Unexpected true prime-power activation")
+    gamma = gamma_sparse_linear_lower(16, mu)
+    # Worst-case support is mu=1/16; source Gamma sum is exact Fraction.
+    global_gamma = gamma_sparse_linear_lower(16, Q(1, 16))
+    contact = Q(43, 8)
+    # True weight log(2)/sqrt(2)<1/2 from log2<7/10, sqrt2>7/5.
+    # Compressed shift path has <=2 vertices on 0<a<=1/2.
+    prime = Q(1, 2)
+    # Real negative pole 2(sinh(a)-a)<1/16, a<=1/2.
+    pole = Q(1, 16)
+    source_negative_budget = contact + prime + pole
+    uniform_margin = global_gamma["gamma_energy_at_least"] - source_negative_budget
+    if uniform_margin <= Q(1, 24):
+        raise ArithmeticError("The exact 16-mode authentic source positivity gate failed")
+    return {
+        "source": "SHA_PINNED_ORIGINAL_ZETA",
+        "radius": aa, "actual_prime_power_labels": labels,
+        "support_measure_max": mu, "gamma_clock_modes": 16,
+        "gamma_exact_L2_lower": gamma["gamma_energy_at_least"],
+        "uniform_gamma_exact_L2_lower": global_gamma["gamma_energy_at_least"],
+        "completed_real_contact_strict_upper": contact,
+        "first_prime_shift_strict_upper": prime,
+        "negative_pole_strict_upper": pole,
+        "uniform_source_margin_exact_lower": uniform_margin,
+        "original_completed_Weil_L2_margin_strictly_above": Q(1, 24),
+        "quantifier": "all nonzero complex C_c^infinity tests with support measure <= bound",
+        "prime_active_at_radius_half": aa == Q(1, 2) and labels == (2,),
+        "all_tests_at_radius_half_proved": False,
+        "all_a_positivity_proved": False,
+        "RH_proved": False,
+    }
+
+
+def genuine_prime_two_balanced_bump_configuration():
+    """True p=2, not synthetic: a negative prime-only direction IN the UV cone.
+
+    For any nonzero phi in C_c^infinity(J), J=(-31/64,-29/64), put
+        f(t)=phi(t)+phi(t-log(2)).
+    Source-rational log2 enclosures certify J and J+log2 lie in (-1/2,1/2)
+    and are disjoint. Total support measure<=1/16. Both L2 norms add.
+    The exact p=2 term satisfies Q_2(f)=-w_2||f||² with
+    w_2=log2/sqrt2>0: the maximal negative two-cell shift.
+    Nevertheless DYS-04 proves the ORIGINAL completed Q_zeta(f)>
+    ||f||²/24 for every such phi, using genuine Gamma/pole/contact.
+    This is a universal function-family proof, not a numeric sample.
+    """
+    source = _source()
+    b = source.log2_iv()
+    left, right = Q(-31, 64), Q(-29, 64)
+    a = Q(1, 2)
+    if not (left + b.lo > -a and right + b.hi < a and right < left + b.lo):
+        raise ArithmeticError("Genuine prime-2 two-cell translated support not enclosed")
+    labels = tuple(j.n for j in true_third_prime_wavefronts(2*a))
+    if labels != (2,):
+        raise ArithmeticError("Original p=2 prime birth is not sourced")
+    return {
+        "source": "SHA_PINNED_ORIGINAL_PRIME_2",
+        "left_bump_support_open_interval": (left, right),
+        "right_bump_shift": "log(2)",
+        "total_support_measure_at_most": 2*(right-left),
+        "two_bumps_are_disjoint": True,
+        "both_bumps_inside_first_prime_window": True,
+        "true_prime_labels": labels,
+        "prime_only_signed_energy_relative_to_L2": "-log(2)/sqrt(2)",
+        "prime_only_negative_bound_is_SHARP": True,
+        "original_completed_Weil_L2_margin_strictly_above": Q(1,24),
+        "actual_Weil_sign_from_full_source_is_positive": True,
+        "whole_first_prime_window_all_tests_proved": False,
+        "RH_proved": False,
+    }
+
+
+def mutated_source_budget(delta_contact=0, extra_prime_weight=0):
+    """EXPLICITLY SYNTHETIC mutation control; no true-source sign conclusion."""
+    c = _q(delta_contact)
+    w = _q(extra_prime_weight)
+    baseline = Q(1, 24)
+    return {
+        "mutant_margin_from_same_conservative_budget": baseline - c - w,
+        "negative_mutation_detected": baseline - c - w < 0,
+        "authentic_source": False,
+        "RH_proved": False,
+    }

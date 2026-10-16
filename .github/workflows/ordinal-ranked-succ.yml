@@ -1,0 +1,48 @@
+name: ORDINAL Goodstein SUCC well-founded and martingale proof gates
+
+on:
+  push:
+    branches:
+      - 'research/ordinal-ranked-succ-goodstein-*'
+  pull_request:
+    paths:
+      - 'observational_succ/ordinal_ranked_succ.py'
+      - 'observational_succ/ordinal_martingale_boundary.py'
+      - 'observational_succ/ordinal_epoch_supermartingale.py'
+      - 'observational_succ/tate_ordinal_chart_normalizer.py'
+      - 'tests/test_ordinal_ranked_succ.py'
+      - 'tests/test_ordinal_epoch_supermartingale.py'
+      - 'tests/test_tate_ordinal_chart_normalizer.py'
+      - 'scripts/ordinal_ranked_succ_probe.py'
+      - '.github/workflows/ordinal-ranked-succ.yml'
+
+jobs:
+  exact-ordinal-proof-gates:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install mathematical source test requirements
+        run: python -m pip install -e ".[test]"
+      - name: Exact epsilon0 finite CNF Goodstein and giant path checks
+        run: python -m unittest discover -s tests -p 'test_ordinal_ranked_succ.py' -v
+      - name: Ordinal milestones and genuine probabilistic supermartingale boundary
+        run: python -m unittest discover -s tests -p 'test_ordinal_epoch_supermartingale.py' -v
+      - name: Genuine source p-adic Tate chart 2-axis ordinal normalizer
+        run: python -m unittest discover -s tests -p 'test_tate_ordinal_chart_normalizer.py' -v
+      - name: Original formal ordinal omega and Suzuki/Weil proof boundary regression
+        run: python -m unittest discover -s tests -p 'test_ordinal_succ_report.py' -v
+      - name: Original LR evidence martingale null-model regression
+        run: python -m unittest discover -s tests -p 'test_heuristic_evidence_martingales.py' -v
+      - name: Source-relative Simple IdealHard Fucked test regression
+        run: python -m unittest discover -s tests -p 'test_field_limit_trichotomy.py' -v
+      - name: Deterministic ordinal and signed-Schur receipt
+        run: python scripts/ordinal_ranked_succ_probe.py
+      - name: Frozen original source provenance verification
+        run: python scripts/verify_provenance.py

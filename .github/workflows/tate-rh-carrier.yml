@@ -1,0 +1,73 @@
+name: Tate RH carrier focused exact checks
+
+on:
+  push:
+    branches:
+      - 'research/rh-carrier-tate-functor-*'
+  pull_request:
+    paths:
+      - 'observational_succ/tate_schwartz_functor.py'
+      - 'observational_succ/adelic_schwartz_source.py'
+      - 'observational_succ/tate_weil_window.py'
+      - 'observational_succ/rh_arithmetic_carrier.py'
+      - 'observational_succ/weil_gns_gate.py'
+      - 'observational_succ/tate_signed_weil_bridge.py'
+      - 'tests/test_tate_schwartz_functor.py'
+      - 'tests/test_adelic_schwartz_source.py'
+      - 'tests/test_tate_weil_window.py'
+      - 'tests/test_rh_arithmetic_carrier.py'
+      - 'tests/test_weil_gns_gate.py'
+      - 'tests/test_tate_signed_weil_bridge.py'
+      - '.github/workflows/tate-rh-carrier.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  mathematical-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install verified test dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Compile only new source and tests
+        run: |
+          python -m compileall -q observational_succ/tate_schwartz_functor.py observational_succ/adelic_schwartz_source.py observational_succ/tate_weil_window.py observational_succ/rh_arithmetic_carrier.py observational_succ/weil_gns_gate.py observational_succ/tate_signed_weil_bridge.py
+          python -m compileall -q tests/test_tate_schwartz_functor.py tests/test_adelic_schwartz_source.py tests/test_tate_weil_window.py tests/test_rh_arithmetic_carrier.py tests/test_weil_gns_gate.py tests/test_tate_signed_weil_bridge.py
+      - name: Exact Tate local and global rational-source tests
+        run: |
+          python -m unittest discover -s tests -p 'test_tate_schwartz_functor.py' -v
+          python -m unittest discover -s tests -p 'test_adelic_schwartz_source.py' -v
+          python -m unittest discover -s tests -p 'test_tate_weil_window.py' -v
+      - name: Low arithmetic and conditional high signed-form tests
+        run: |
+          python -m unittest discover -s tests -p 'test_rh_arithmetic_carrier.py' -v
+          python -m unittest discover -s tests -p 'test_weil_gns_gate.py' -v
+          python -m unittest discover -s tests -p 'test_tate_signed_weil_bridge.py' -v
+      - name: Source-typed probes and original provenance
+        run: |
+          python scripts/tate_schwartz_functor_probe.py > "$RUNNER_TEMP/tate.json"
+          python scripts/rh_carrier_gates_probe.py > "$RUNNER_TEMP/rh-carriers.json"
+          python scripts/verify_provenance.py
+      - name: Fail if probe claimed solved RH
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          root=Path(os.environ["RUNNER_TEMP"])
+          for name in ("tate","rh-carriers"):
+              doc=json.loads((root/(name+".json")).read_text())
+              assert doc["RH_proved"] is False
+          a=json.loads((root/"rh-carriers.json").read_text())
+          assert a["source_derived_all_test_positivity"]=="UNVERIFIED_RH_HARD"
+          assert a["RH_field_class"]=="UNRESOLVED_NOT_IDEALHARD_OR_FUCKED_PROVED"
+          PY

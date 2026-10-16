@@ -1,0 +1,137 @@
+{
+  "GRH_proved": false,
+  "RH_proved": false,
+  "branch": "research/carrier-tate-weil-2026-10-15",
+  "branch_ci": {
+    "report_location": "Exact final-head run IDs and observed results will be recorded in draft PR #131; this prepublication receipt does not claim they have passed.",
+    "result": "PENDING_FINAL_VALIDATION_COMMIT"
+  },
+  "date": "2026-10-15",
+  "draft_pr": "https://github.com/femboy2112/SUCC/pull/131",
+  "focused": {
+    "command": "12-suite unittest discovery as specified in .github/workflows/carrier-tate-weil.yml",
+    "inherited_tests": 52,
+    "new_tests": 67,
+    "result": "PASS",
+    "tests": 119
+  },
+  "formal_verification": {
+    "lean_and_lake_available": false,
+    "new_Lean_proof": false
+  },
+  "full_suite": {
+    "command": "python -m unittest discover -s tests -p 'test_*.py' -v",
+    "exit_code": 0,
+    "prior_intermediate_run": {
+      "boundary": "Started before final chi4 and other additions; not the final source snapshot",
+      "result": "PASS",
+      "seconds": 287.034,
+      "tests": 3573
+    },
+    "result": "PASS",
+    "seconds": 279.418,
+    "tests": 3597
+  },
+  "initial_attempt": {
+    "cause": "mpmath was initially absent; declared project test extras were then installed",
+    "passing": false,
+    "result": "INCOMPLETE_DEPENDENCY_FAILURE",
+    "retained_output": "baseline-unittest.log.gz"
+  },
+  "installation": "python -m pip install -e '.[test]'",
+  "mandatory_probes": {
+    "python scripts/observer_foundations_probe.py": {
+      "exit_code": 0
+    },
+    "python scripts/ordinal_succ_report_probe.py": {
+      "exit_code": 0
+    },
+    "python scripts/verify_provenance.py": {
+      "byte_identical_research_archives": 17,
+      "establishes_mathematical_truth": false,
+      "items": 72,
+      "mechanical_namespace_migrations": 55,
+      "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+      "status": "SOURCE_PROVENANCE_VERIFIED"
+    }
+  },
+  "parent_ci": {
+    "commit": "d239c27d3759de71de316180f48dfc097be6aff5",
+    "observed": "completed_success",
+    "python_versions": [
+      "3.10",
+      "3.13"
+    ],
+    "runs": [
+      {
+        "id": 38817232923,
+        "name": "Pontryagin finite-ad\u00e8le source duality",
+        "result": "success"
+      },
+      {
+        "id": 38817232413,
+        "name": "Observational SUCC validation",
+        "result": "success"
+      }
+    ]
+  },
+  "parent_commit": "d239c27d3759de71de316180f48dfc097be6aff5",
+  "proof_boundary": "Internal paper derivations and same-model adversarial audit; classical dependencies explicitly imported; numeric quadrature not certified",
+  "receipt_replay": {
+    "byte_equal": true,
+    "command": "python scripts/carrier_tate_weil_probe.py",
+    "sha256": "d10321e51b95090db147e4f23148adf93db51911687d95d93eea88a08e156591"
+  },
+  "retained_outputs": {
+    "baseline-unittest.log": {
+      "path": "research/2026-10-15/receipts/carrier-tate-weil/baseline-unittest.log.gz",
+      "stored_sha256": "0df28790730f6cac5e864b98b94be73a8a2a3bc6a6eec4b2839f8e11d23f9204",
+      "uncompressed_sha256": "9513b34846de3d735aeff8f6866e1b706b70f8e9eac2411c35564f64fcd7364f"
+    },
+    "final-foundations.json": {
+      "path": "research/2026-10-15/receipts/carrier-tate-weil/final-foundations.json",
+      "stored_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "uncompressed_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    "final-ordinal.json": {
+      "path": "research/2026-10-15/receipts/carrier-tate-weil/final-ordinal.json",
+      "stored_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "uncompressed_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    "final-provenance.json": {
+      "path": "research/2026-10-15/receipts/carrier-tate-weil/final-provenance.json",
+      "stored_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "uncompressed_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    "focused-final.log": {
+      "path": "research/2026-10-15/receipts/carrier-tate-weil/focused-final.log.gz",
+      "stored_sha256": "893bac988f12091e585eea956f216fe18f07afae2c7d7349f53220ba29137a0f",
+      "uncompressed_sha256": "39fbb55c4c97ace48d85f524920ef7d64f1a201ae4b50957ad74b09195d54fdb"
+    },
+    "full-unittest-final.log": {
+      "path": "research/2026-10-15/receipts/carrier-tate-weil/full-unittest-final.log.gz",
+      "stored_sha256": "0298613ef2f78f6f5c0f61e6f930411f0aba7589c049c215cb71331a29e102ee",
+      "uncompressed_sha256": "d3fa2d76308f3f36dd4d896340ba7a530581e43754a29328d4f7996cd534216a"
+    }
+  },
+  "runtime": {
+    "mpmath": "1.4.1",
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  },
+  "source_checkpoint": "ad688458cbb6649b5d2f2d4e6c0c7d2d332c0536",
+  "source_sha256": {
+    "observational_succ/tate_chi4.py": "9e2d96dea08728a5510cd9b8ce05acc98d549022b3ada265204560ab8fe62835",
+    "observational_succ/tate_idelic_zeta.py": "69659b88158e5fbf9c2d1aa4f007e8c8f2af05e378370f69a0fa9296c2b7b084",
+    "observational_succ/tate_positivity_obstruction.py": "7e64ec40914909d72bf5595aa75a306be7b0a81a3fc7b1a4f95015b5fe9b0072",
+    "observational_succ/tate_weil_distribution.py": "c0c27a6e280ccd3a730a8d8223dc1c1729f8ebe8b6989e3001a27e9e035389f0",
+    "scripts/carrier_tate_weil_probe.py": "23cda7cfdb80b479befa35bd84630ff12ea9637ded51aeb231d14f26fd45c42d",
+    "tests/test_carrier_poisson_audit.py": "8948cf49f41b6119227004cc31969f9c1a87f382558fe0d70e76e4ea66082d8f",
+    "tests/test_tate_chi4.py": "dab96db73bb7f8e413b42ec6f001e1b6d93731f600de6198d998c7270a4792c5",
+    "tests/test_tate_idelic_zeta.py": "0101ca78e99048af53183dea0714a9b9da31458dab67f6161251051e78ec8c01",
+    "tests/test_tate_positivity_obstruction.py": "8f54eaed9e326f35099b17c9549329b66bea0733d51b6143bb1fa8692a8587a5",
+    "tests/test_tate_weil_distribution.py": "aae6f19fde2d5c2114cf64b73133d94ea3062ec36092adde142d32fea105d1fb"
+  },
+  "status": "LOCAL_VALIDATION_PASSED_REMOTE_CI_PENDING",
+  "zero_positions_as_construction_inputs": false
+}

@@ -1,0 +1,358 @@
+"""Hostile exact audits of the 1/24 coincidence and Tate/eta source transport."""
+import unittest
+from fractions import Fraction as F
+
+from observational_succ.tate_eta_bernoulli import (
+    EtaTransportError, bernoulli_heat_ledger, original_weil_margin_ablation,
+    eta_modular_s_defect, eta_T_multiplier_exponent,
+    eta_selfdual_first_jet,
+    sigma_one, eta_q_log_derivative_coefficients,
+    formal_dirichlet_log_derivative, eta_eisenstein_prime_transducer,
+    sigma_one_dirichlet_tail_majorant, primary_source_interface_status,
+    modular_discriminant_formal_passport, completed_two_critical_track_passport,
+    mobius_exact, eta_mobius_heat_transducer,
+    gaussian_linear_heat_positive_mixing_no_go,
+    tate_gaussian_fourier_stage, tate_completed_theta_polar_split,
+)
+
+
+class BernoulliOneTwentyFourthClaim(unittest.TestCase):
+    def test_sign_is_negative_half_zeta_minus_one_not_plus(self):
+        d=bernoulli_heat_ledger()
+        self.assertEqual(d["B2"], F(1,6))
+        self.assertEqual(d["zeta_of_minus_one"], F(-1,12))
+        self.assertEqual(d["heat_laurent_constant"], F(-1,12))
+        self.assertEqual(d["heat_laurent_t_squared"], F(1,240))
+        self.assertEqual(d["canonical_eta_exponent"], F(1,24))
+        self.assertEqual(-d["zeta_of_minus_one"]/2,F(1,24))
+        self.assertFalse(d["RH_proved"])
+
+    def test_actual_original_weil_margin_falsifies_canonical_identification(self):
+        c=original_weil_margin_ablation()
+        self.assertEqual(c["source"],"SHA_PINNED_ORIGINAL_ZETA")
+        self.assertEqual(c["original_source_lower"],
+                         F(18140507408283703,386282620694770800))
+        self.assertTrue(c["one_twenty_fourth_works"])
+        self.assertTrue(c["one_twenty_second_works"])
+        self.assertTrue(c["one_twenty_first_not_certified_by_this_bound"])
+        self.assertFalse(c["equal_to_eta_exponent"])
+        self.assertFalse(c["arithmetic_eta_normalization_inferred_from_Weil_bound"])
+        self.assertFalse(c["RH_proved"])
+
+
+class DedekindModularSourceGates(unittest.TestCase):
+    def test_eta_exponent_fixed_by_S_on_multiple_clocks(self):
+        for c in (F(1,2),F(1),F(2),F(3),F(4),F(11,2)):
+            a=eta_modular_s_defect(F(1,24),c)
+            self.assertEqual(a["log_defect_over_minus_pi"],0)
+            self.assertTrue(a["S_transport_passes_at_this_clock"])
+            self.assertTrue(a["all_positive_clocks_S_transport"])
+        m=eta_modular_s_defect(F(1,22),1)
+        self.assertNotEqual(m["log_defect_over_minus_pi"],0)
+        self.assertFalse(m["S_transport_passes_at_this_clock"])
+        self.assertFalse(m["all_positive_clocks_S_transport"])
+
+    def test_self_dual_probe_blind_spot_and_T_mod_one_are_adversarial(self):
+        wrong=F(25,24)  # passes T character, fails S except at t=2*pi
+        same=eta_modular_s_defect(wrong,2)
+        fresh=eta_modular_s_defect(wrong,3)
+        self.assertTrue(same["S_transport_passes_at_this_clock"])
+        self.assertTrue(same["self_dual_false_pass_possible"])
+        self.assertFalse(fresh["S_transport_passes_at_this_clock"])
+        self.assertFalse(fresh["self_dual_false_pass_possible"])
+        self.assertTrue(eta_T_multiplier_exponent(wrong)["canonical_T_character"])
+        self.assertTrue(eta_T_multiplier_exponent(wrong)["S_still_required_to_fix_integer_gauge"])
+        self.assertEqual(eta_T_multiplier_exponent(F(1,24))["eta_power_24_cusp_order"],1)
+        self.assertFalse(eta_T_multiplier_exponent(F(1,22))["canonical_T_character"])
+
+    def test_one_first_jet_at_selfdual_point_repairs_blind_source_probe(self):
+        true=eta_selfdual_first_jet(F(1,24))
+        self.assertEqual(true["value_only_modular_S_defect"],0)
+        self.assertEqual(true["logarithmic_first_derivative_defect"],0)
+        self.assertTrue(true["canonical_alpha_identified_by_zero_first_jet"])
+        self.assertFalse(true["RH_proved"])
+        for wrong, slope in ((F(1,22),F(-1,132)),
+                             (F(25,24),F(-2)),(F(0),F(1,12))):
+            d=eta_selfdual_first_jet(wrong)
+            self.assertEqual(d["value_only_modular_S_defect"],0)
+            self.assertEqual(d["logarithmic_first_derivative_defect"],slope)
+            self.assertFalse(d["canonical_alpha_identified_by_zero_first_jet"])
+
+    def test_independent_finite_q_product_logarithmic_coefficients(self):
+        for N in (1,2,6,12,32,64):
+            result=eta_q_log_derivative_coefficients(N)
+            self.assertEqual(result[0],F(1,24))
+            self.assertEqual(result[1:],tuple(-sigma_one(n) for n in range(1,N+1)))
+            self.assertEqual(
+                eta_q_log_derivative_coefficients(N,F(1,22))[1:],result[1:])
+        self.assertEqual(eta_q_log_derivative_coefficients(6),
+                         (F(1,24),F(-1),F(-3),F(-4),F(-7),F(-6),F(-12)))
+
+    def test_hostile_inputs_cannot_launder_source_clocks(self):
+        for a,t in ((0,0),(F(1,24),0),(F(1,24),-1),(True,1),(0,0.2)):
+            with self.assertRaises(EtaTransportError):
+                eta_modular_s_defect(a,t)
+        for n in (0,True,0.5,300):
+            with self.assertRaises(EtaTransportError):
+                eta_q_log_derivative_coefficients(n)
+
+
+class EisensteinToGenuinePrimeJet(unittest.TestCase):
+    def test_dirichlet_and_q_series_are_different_but_related(self):
+        d=eta_eisenstein_prime_transducer(80)
+        self.assertEqual(d["source_type"],"EISENSTEIN_SIGMA1")
+        self.assertTrue(d["transport_preserves_genuine_von_mangoldt"])
+        self.assertEqual(d["mismatch_indices"],())
+        self.assertEqual(d["composite_six_residual_prime_log_basis"],{})
+        self.assertTrue(d["source_authentic"])
+        self.assertFalse(d["all_critical_line_transport_certified"])
+        self.assertFalse(d["original_Weil_Gamma_contact_identified"])
+        self.assertFalse(d["RH_proved"])
+
+    def test_expected_true_prime_power_two_channel_weights(self):
+        N=36
+        coeff=(0,)+(tuple(sigma_one(n) for n in range(1,N+1)))
+        d=formal_dirichlet_log_derivative(coeff)
+        self.assertEqual(d[2],{2:3})
+        self.assertEqual(d[4],{2:5})
+        self.assertEqual(d[8],{2:9})
+        self.assertEqual(d[9],{3:10})
+        self.assertEqual(d[25],{5:26})
+        for n in (6,10,12,15,18,20,21,30,36):
+            self.assertEqual(d[n],{},msg=f"composite source defect n={n}")
+
+    def test_fake_composite_six_is_detected_exactly(self):
+        c=eta_eisenstein_prime_transducer(48,True)
+        self.assertFalse(c["source_authentic"])
+        self.assertFalse(c["transport_preserves_genuine_von_mangoldt"])
+        self.assertIn(6,c["mismatch_indices"])
+        self.assertEqual(c["composite_six_residual_prime_log_basis"],{2:1,3:1})
+        self.assertFalse(c["RH_proved"])
+
+    def test_exact_finite_dirichlet_tail_does_not_become_critical_strip_bound(self):
+        self.assertEqual(sigma_one_dirichlet_tail_majorant(4,16),F(1,16))
+        self.assertEqual(sigma_one_dirichlet_tail_majorant(5,16),F(1,512))
+        self.assertEqual(sigma_one_dirichlet_tail_majorant(6,10),F(1,3000))
+        for sigma,N in ((3,100),(4,1),(4,True),(4,1.2),(True,9)):
+            with self.assertRaises(EtaTransportError):
+                sigma_one_dirichlet_tail_majorant(sigma,N)
+
+    def test_changing_zeta_and_original_eta_gammas_is_type_error(self):
+        s=primary_source_interface_status()
+        self.assertEqual(s["canonical_Bernoulli_eta_q_exponent"],F(1,24))
+        self.assertEqual(s["original_zeta_Weil_half_density"],F(1,2))
+        self.assertEqual(s["eta_heat_archimedean"],"Gamma(s)")
+        self.assertEqual(s["original_zeta_archimedean"],"pi^(-s/2)*Gamma(s/2)")
+        self.assertNotEqual(s["eta_heat_archimedean"],s["original_zeta_archimedean"])
+        self.assertTrue(s["eta_modular_transport_is_not_Weil_positivity"])
+        self.assertFalse(s["RH_proved"])
+
+
+
+class FullModularVsEisensteinSourceFirewall(unittest.TestCase):
+    def test_delta_cusp_series_is_not_divisor_sigma1_even_though_dlog_is_E2(self):
+        c=modular_discriminant_formal_passport(12)
+        self.assertEqual(c["Delta_q_coefficients_through_degree_N"][:7],
+                         (0,1,-24,252,-1472,4830,-6048))
+        self.assertEqual(c["q_dlog_Delta_coefficients_through_degree_N_minus_one"][:7],
+                         (1,-24,-72,-96,-168,-144,-288))
+        self.assertTrue(c["E2_comparison_exact"])
+        self.assertTrue(c["Delta_is_eta_to_24_power"])
+        self.assertTrue(c["cusp_order_exactly_one"])
+        self.assertFalse(c["Delta_Ramanujan_tau_coefficients_are_sigma1"])
+        self.assertFalse(c["Gamma_of_Delta_L_series_identified_with_Gamma_zeta"])
+        self.assertFalse(c["RH_proved"])
+
+    def test_original_zeta_cannot_be_replaced_by_two_shifted_completed_copies(self):
+        d=completed_two_critical_track_passport()
+        self.assertEqual(d["symmetry_center_real_part"],F(1))
+        self.assertEqual(d["conditional_on_RH_two_real_tracks"],(F(1,2),F(3,2)))
+        self.assertEqual(d["functional_equation"],"X(2-s)=X(s)")
+        self.assertFalse(d["nontrivial_zero_locations_used_as_inputs"])
+        self.assertTrue(d["single_track_at_center_not_implied"])
+        self.assertTrue(d["source_projection_out_shifted_factor_required"])
+        self.assertFalse(d["RH_proved"])
+
+    def test_discriminant_q_cutoff_mutations_fail(self):
+        for N in (0,1,2,True,49,3.5):
+            with self.assertRaises(EtaTransportError):
+                modular_discriminant_formal_passport(N)
+
+
+
+class MobiusEtaToTateRealHeat(unittest.TestCase):
+    def test_direct_all_coefficient_linear_heat_identity(self):
+        out=eta_mobius_heat_transducer(128)
+        self.assertTrue(out["exact_heat_identity"])
+        self.assertTrue(all(c==1 for c in out["positive_output_coefficients"]))
+        self.assertEqual(out["wrong_coefficient_indices"],())
+        self.assertTrue(out["operator_has_signed_Mobius_weights"])
+        self.assertFalse(out["source_positive_operator_on_every_positive_input_proved"])
+        self.assertFalse(out["Gaussian_real_place_positivity_preserved"])
+        self.assertFalse(out["RH_proved"])
+
+    def test_true_Mobius_signs_not_a_fake_nonnegative_source(self):
+        self.assertEqual(tuple(mobius_exact(n) for n in range(1,13)),
+                         (1,-1,-1,0,-1,1,-1,0,0,1,-1,0))
+        with self.assertRaises(EtaTransportError):
+            mobius_exact(0)
+        with self.assertRaises(EtaTransportError):
+            mobius_exact(True)
+
+    def test_fake_six_is_detected_in_actual_heat_time(self):
+        good=eta_mobius_heat_transducer(24)
+        bad=eta_mobius_heat_transducer(24,True)
+        self.assertEqual(good["positive_output_coefficients"][5],1)
+        self.assertEqual(bad["positive_output_coefficients"][5],2)
+        self.assertIn(6,bad["wrong_coefficient_indices"])
+        self.assertFalse(bad["exact_heat_identity"])
+        self.assertFalse(bad["RH_proved"])
+
+    def test_gaussian_heat_cannot_be_positive_source_blind_mixing(self):
+        no=gaussian_linear_heat_positive_mixing_no_go()
+        self.assertEqual(no["contradiction_at_labels"],(1,2,3))
+        self.assertEqual(no["gaussian_ratio_exact"],"exp(2*pi*u)>1 for u>0")
+        self.assertFalse(no["source_blind_positive_laplace_mixing"])
+        self.assertFalse(no["source_indexed_or_signed_transport_ruled_out"])
+        self.assertFalse(no["RH_proved"])
+
+    def test_source_indexed_tate_Fourier_escape_from_laplace_no_go(self):
+        stage=tate_gaussian_fourier_stage(16,F(1,2),20)
+        self.assertTrue(stage["authentic_integer_phase"])
+        self.assertEqual(stage["source_label_squares"][:4],
+                         (F(1),F(4),F(9),F(16)))
+        self.assertEqual(stage["Fourier_normalization"],"1/sqrt(u)")
+        self.assertEqual(stage["real_Tate_Gamma_factor"],"pi^(-s/2)*Gamma(s/2)")
+        self.assertEqual(stage["real_Tate_zeta_Mellin_domain"],"Re(s)>1")
+        self.assertGreater(stage["Gaussian_theta_tail_strict_rational_upper"],0)
+        self.assertLess(stage["Gaussian_theta_tail_strict_rational_upper"],F(1,10000))
+        self.assertFalse(stage["nontrivial_zero_locations_used"])
+        self.assertFalse(stage["global_Weil_distribution_identified"])
+        self.assertFalse(stage["RH_proved"])
+
+    def test_wrong_fourier_phase_is_detected_in_exact_source_label_squares(self):
+        p=tate_gaussian_fourier_stage(3,F(2),8,phase_shift=F(1,2))
+        self.assertFalse(p["authentic_integer_phase"])
+        self.assertEqual(p["source_label_squares"],(F(9,4),F(25,4),F(49,4)))
+        self.assertFalse(p["RH_proved"])
+
+    def test_gaussian_certified_tail_refines_with_order_and_source_horizon(self):
+        a=tate_gaussian_fourier_stage(4,F(1,2),4)
+        b=tate_gaussian_fourier_stage(4,F(1,2),12)
+        c=tate_gaussian_fourier_stage(8,F(1,2),12)
+        self.assertGreater(a["Gaussian_theta_tail_strict_rational_upper"],
+                           b["Gaussian_theta_tail_strict_rational_upper"])
+        self.assertGreater(b["Gaussian_theta_tail_strict_rational_upper"],
+                           c["Gaussian_theta_tail_strict_rational_upper"])
+        for N,u,K in ((0,F(1),1),(129,F(1),1),(2,0,1),
+                      (2,F(-1),1),(2,True,1),(2,F(1),65),
+                      (2,F(1),True),(2,F(1),2.5)):
+            with self.assertRaises(EtaTransportError):
+                tate_gaussian_fourier_stage(N,u,K)
+
+    def test_original_theta_poisson_completion_retains_two_exact_polar_terms(self):
+        for z in (F(2),F(3),F(5,2),F(11,4)):
+            c=tate_completed_theta_polar_split(z)
+            self.assertEqual(c["completed_pole_part"],F(1)/(z*(z-1)))
+            self.assertEqual(c["completed_pole_cancellation_after_xi"],F(1,2))
+            self.assertEqual(c["xi_definition"],
+                             "xi(s)=s*(s-1)/2*Gamma_R(s)*zeta(s)")
+            self.assertEqual(c["real_Tate_archimedean"],"pi^(-s/2)*Gamma(s/2)")
+            self.assertNotEqual(F(1)/(z-1),c["completed_pole_part"])
+            self.assertFalse(c["nontrivial_zero_lookup_used"])
+            self.assertFalse(c["all_test_Weil_sign_proved"])
+            self.assertFalse(c["RH_proved"])
+        for z in (0,1,-1,True,1.5):
+            with self.assertRaises(EtaTransportError):
+                tate_completed_theta_polar_split(z)
+
+    def test_disallowed_mutation_inputs(self):
+        for n in (0,1,5,True,513,1.0):
+            with self.assertRaises(EtaTransportError):
+                eta_mobius_heat_transducer(n)
+        with self.assertRaises(EtaTransportError):
+            eta_mobius_heat_transducer(8,1)
+
+
+class IndependentClassicalNumericHoldouts(unittest.TestCase):
+    """Separate independent numerical calibrations, never rigorous proof."""
+
+    def test_eta_S_inversion_and_cusp_are_correct(self):
+        import mpmath as mp
+        with mp.workdps(75):
+            def eta_heat(t,alpha):
+                q=mp.exp(-t)
+                # at t=pi the omitted n>=128 factors are <1e-170
+                return mp.exp(-alpha*t)*mp.fprod(1-q**n for n in range(1,128))
+            t=mp.pi
+            td=4*mp.pi
+            a=mp.mpf(1)/24
+            lhs=eta_heat(t,a)
+            rhs=mp.sqrt(2*mp.pi/t)*eta_heat(td,a)
+            self.assertLess(abs(lhs-rhs),mp.mpf("1e-70"))
+            wrong=mp.mpf(1)/22
+            wronglhs=eta_heat(t,wrong)
+            wrongrhs=mp.sqrt(2*mp.pi/t)*eta_heat(td,wrong)
+            self.assertGreater(abs(wronglhs-wrongrhs),mp.mpf("1e-3"))
+
+    def test_classical_theta_poisson_completion_matches_zeta_independently(self):
+        """Numerical calibration of imported theta identity, not proof/RH."""
+        import mpmath as mp
+        with mp.workdps(75):
+            z=mp.mpf(5)/2
+            theta=lambda u: mp.fsum(mp.exp(-mp.pi*n*n*u) for n in range(1,17))
+            kernel=lambda u: theta(u)*(u**(z/2-1)+u**(-(z+1)/2))
+            analytic_poles=1/(z-1)-1/z
+            from_source=analytic_poles+mp.quad(kernel,[1,2,4,mp.inf])
+            direct=mp.power(mp.pi,-z/2)*mp.gamma(z/2)*mp.zeta(z)
+            self.assertLess(abs(from_source-direct),mp.mpf("1e-65"))
+
+    def test_declared_Tate_real_Gaussian_Fourier_character(self):
+        """Numeric holdout of imported Gaussian Fourier identity, not proof."""
+        import mpmath as mp
+        with mp.workdps(70):
+            u=mp.mpf(3)/4
+            for n in (1,2,3):
+                integral=mp.quad(lambda x: mp.exp(-mp.pi*x*x/u)*
+                                mp.cos(2*mp.pi*n*x),[-mp.inf,mp.inf])
+                got=integral/mp.sqrt(u)
+                expected=mp.exp(-mp.pi*u*n*n)
+                self.assertLess(abs(got-expected),mp.mpf("1e-60"))
+
+    def test_independent_positive_output_of_signed_Mobius_heat_source(self):
+        import mpmath as mp
+        with mp.workdps(75):
+            t=mp.mpf(2)
+            source=mp.fsum(
+                mobius_exact(m)*m*
+                mp.fsum(sigma_one(n)*mp.exp(-n*m*t) for n in range(1,128))
+                for m in range(1,128)
+            )
+            simple=1/mp.expm1(t)
+            self.assertLess(abs(source-simple),mp.mpf("1e-70"))
+            self.assertGreater(source,0)
+
+    def test_selfdual_Lambert_series_exact_modular_value(self):
+        """This is a numeric holdout; analytical authority is classical eta S."""
+        import mpmath as mp
+        with mp.workdps(85):
+            lhs=mp.fsum(
+                sigma_one(n)*mp.exp(-2*mp.pi*n) for n in range(1,80)
+            )
+            rhs=mp.mpf(1)/24 - 1/(8*mp.pi)
+            self.assertLess(abs(lhs-rhs),mp.mpf("1e-80"))
+            self.assertGreater(lhs,0)
+
+    def test_independent_zeta_product_vs_finite_divisor_source_with_proved_tail(self):
+        import mpmath as mp
+        N=4000
+        with mp.workdps(50):
+            finite=mp.fsum(mp.mpf(sigma_one(n))/n**5 for n in range(1,N+1))
+            infinite=mp.zeta(5)*mp.zeta(4)
+            bound=sigma_one_dirichlet_tail_majorant(5,N)
+            self.assertLess(abs(infinite-finite),mp.mpf(bound.numerator)/bound.denominator)
+            self.assertGreater(infinite-finite,0)
+
+
+if __name__=="__main__":
+    unittest.main()

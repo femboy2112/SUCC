@@ -1,0 +1,35 @@
+name: APOLLO genuine prime-active Weil domain certificates
+
+on:
+  push:
+    branches:
+      - 'research/apollo-prime-active-domain-*'
+  pull_request:
+    paths:
+      - 'observational_succ/apollo_prime_domain.py'
+      - 'tests/test_apollo_prime_domain.py'
+      - 'scripts/apollo_prime_domain_probe.py'
+      - '.github/workflows/apollo-prime-domain.yml'
+
+jobs:
+  genuine-source-domain:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install research dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Genuine prime-2 / five-jet source-domain mathematical tests
+        run: python -m unittest discover -s tests -p 'test_apollo_prime_domain.py' -v
+      - name: Deterministic real-source domain receipt
+        run: python scripts/apollo_prime_domain_probe.py
+      - name: Inherited APOLLO derivative and Krein feature regression
+        run: python -m unittest discover -s tests -p 'test_apollo_*.py'
+      - name: Original SOURCE blob provenance firewall
+        run: python scripts/verify_provenance.py

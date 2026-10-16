@@ -1,0 +1,46 @@
+{
+  "kind": "CLASSICAL_PRIME_COMPLETION_OBSTRUCTIONS_RECEIPT",
+  "unit_origin_phantom_stage": {
+    "prime": 3,
+    "precision": 3,
+    "modulus": 27,
+    "actual_source_n": 27,
+    "actual_source_positive": true,
+    "actual_after_multiplication": 189,
+    "phantom_n": 0,
+    "phantom_n_in_source": false,
+    "source_chart_residue": 26,
+    "phantom_chart_residue": 26,
+    "all_multipliers_fix_the_formal_chart_point_minus_one": true,
+    "finite_modular_observation_separates_actual_source_from_phantom": false,
+    "original_source_has_nontrivial_multiplicative_fixed_point": false
+  },
+  "idealhard_2adic_finite_haar_masses": [
+    "1/2",
+    "1/4",
+    "1/4",
+    "1/8",
+    "1/8",
+    "1/8"
+  ],
+  "idealhard_2adic_stage_counts": [
+    1,
+    1,
+    2,
+    2,
+    4,
+    8
+  ],
+  "idealhard_2adic_nested_residue_constraints": true,
+  "idealhard_cylinder_exact_fourier_parseval": true,
+  "explicit_immediately_halting_program_indices": [
+    1,
+    3,
+    10,
+    66
+  ],
+  "closed_set_nonempty_proved_in_code": false,
+  "global_computable_2adic_path_constructed": false,
+  "global_haar_zero_claim_backed_by_paper_padding_proof": true,
+  "completed_Weil_positivity_or_RH_proved": false
+}

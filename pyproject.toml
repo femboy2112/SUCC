@@ -23,8 +23,11 @@ classifiers = [
 # numpy is required only by the Black Sun numerical campaign (PRs #79/#87/#91/#93);
 # pinned <3 and >=2.1 so pip resolves per-interpreter (2.2.x on 3.10, 2.5.x on 3.13).
 # Its near-zero sampled eigenvalues are TESTED MODEL, never rational positivity certificates.
-research = ["mpmath>=1.3,<2", "numpy>=2.1,<3"]
-test = ["mpmath>=1.3,<2", "numpy>=2.1,<3"]
+# sympy is imported only by scripts/suzuki_schur_independent_oracle.py (an independent
+# verification oracle, not exercised by CI or any test); declared so `.[test]`/`.[research]`
+# genuinely install everything the integrated code imports (Academic Main audit F-note).
+research = ["mpmath>=1.3,<2", "numpy>=2.1,<3", "sympy>=1.12,<2"]
+test = ["mpmath>=1.3,<2", "numpy>=2.1,<3", "sympy>=1.12,<2"]
 
 [tool.setuptools.packages.find]
 where = ["."]

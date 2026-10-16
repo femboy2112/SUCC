@@ -4,6 +4,8 @@
 
 **Keep the general observer/knowledge theory independent of RH.** Maintain a small, auditable core for causal actualization, computational syntax, proof authority and physically motivated finite quantum instruments. Preserve imported number-theoretic laboratories as optional applications rather than treating RH as axiomatic.
 
+> **Academic navigation layer (2026-10-15).** The carrier-first front door is the [README](../README.md) → [Carrier Atlas](CARRIER_ATLAS.md), [Carrier Foundations Synthesis](../research/2026-10-15/SUCC_CARRIER_FOUNDATIONS_SYNTHESIS.md), [Observer & Proof Access](OBSERVER_PROOF_ACCESS.md), [Research Frontier](RESEARCH_FRONTIER_2026-10-15.md), [Dependency DAG](SUCC_RESEARCH_DEPENDENCY_DAG.md) and [Claim Index](CLAIM_INDEX.md). Consolidation record: [Academic Main integration audit](ACADEMIC_CARRIER_INTEGRATION_AUDIT_2026-10-15.md) (PRs #101–#131).
+
 ## Conceptual layers
 
 | Layer | Mathematical responsibility | Modules |
