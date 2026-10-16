@@ -65,3 +65,25 @@ model · `[I]` implementation only · `[U]` unverified construction · `[R]` ref
 
 Cross-references: [CARRIER_ATLAS.md](CARRIER_ATLAS.md) · [OBSERVER_PROOF_ACCESS.md](OBSERVER_PROOF_ACCESS.md)
 · [RESEARCH_FRONTIER_2026-10-15.md](RESEARCH_FRONTIER_2026-10-15.md) · [CLAIM_LEDGER.md](CLAIM_LEDGER.md).
+
+## Proof Teeth branch supplement
+
+The [new claim supplement](CLAIM_SUPPLEMENT_PROOF_TEETH.md) adds a proved
+finite-Haar → Hilbert-direct-limit → L²(Zhat) → ell²(Q/Z) chain. Its completion
+arrow requires density and uniformly bounded compatible maps. Factorial
+projections converge strongly, while norm(I−Pn)=1 at every finite stage.
+
+Finite observation → coimage decoder is exact when the target is constant on
+observation fibers. Extending linear decoders after completion additionally
+requires one uniform bound ||hx||≤C||Ox||. Finite-stage invertibility alone
+fails for O=diag(1/n), h=I. The separate Lean branch proves affine two-point
+and rational cyclic-retract instances; it does not formally prove the Hilbert
+completion arrow.
+
+For the genuine four-low signed source, parity now splits the low space into
+two 2×2 blocks, and the K-relative residual is a derivative norm modulo the
+four low polynomial moments. Eight exact whole-Gamma-tail certificates reject
+the displayed zero/frozen trial sufficient inequalities. These add a failed
+method edge, not an edge to negative source sign or to RH. The original
+S0≥0 edge remains OPEN. All-stage positivity, source identification and form
+domains remain explicit premises in the capsule dependency graph.

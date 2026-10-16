@@ -1,0 +1,28 @@
+[
+  {
+    "argv": [
+      "/tmp/succ-proof-teeth-py310/bin/python",
+      "-c",
+      "import unittest; s=unittest.TestSuite(); names=['test_minimal_observation.py', 'test_source_proof_certificate.py', 'test_profinite_hilbert.py', 'test_proof_gluing.py', 'test_four_low_schur_proof_teeth.py']; [s.addTests(unittest.defaultTestLoader.discover(\"tests\",pattern=p)) for p in names]; r=unittest.TextTestRunner(verbosity=2).run(s); raise SystemExit(not r.wasSuccessful())"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 7.787669220007956,
+    "log": "research/2026-10-15/proof_teeth_receipts/focused-final-py310.log",
+    "sha256": "a5cb0bbabb1dbd47afb07634aa534e7a0e825c03aac54ff9c557ac673174c6ea",
+    "tests": 81,
+    "skipped": 0
+  },
+  {
+    "argv": [
+      "/tmp/succ-proof-teeth-py313/bin/python",
+      "-c",
+      "import unittest; s=unittest.TestSuite(); names=['test_minimal_observation.py', 'test_source_proof_certificate.py', 'test_profinite_hilbert.py', 'test_proof_gluing.py', 'test_four_low_schur_proof_teeth.py']; [s.addTests(unittest.defaultTestLoader.discover(\"tests\",pattern=p)) for p in names]; r=unittest.TextTestRunner(verbosity=2).run(s); raise SystemExit(not r.wasSuccessful())"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 4.675832988927141,
+    "log": "research/2026-10-15/proof_teeth_receipts/focused-final-py313.log",
+    "sha256": "94920ae73c5ec0118a26ef8afff356a158b33d084f7cd373f3e94ab6073bfa47",
+    "tests": 81,
+    "skipped": 0
+  }
+]

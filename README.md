@@ -21,6 +21,11 @@ hypothesis**. RH is a demanding downstream application, not SUCC's definition.
 > and no positive Hilbert covariance is identified with the signed completed Weil form. See the
 > [claim index](docs/CLAIM_INDEX.md) and [claim ledger](docs/CLAIM_LEDGER.md).
 
+**Proof Teeth research checkpoint:** [round report](research/2026-10-15/SUCC_PROOF_TEETH_MEGA_ROUND.md)
+and [claim supplement](docs/CLAIM_SUPPLEMENT_PROOF_TEETH.md) add the proved finite-Haar-to-profinite-Hilbert
+completion, exact minimum-observation certificates, paired YEAN Lean kernels,
+and authentic four-low Schur trial obstructions. The original Schur sign remains open.
+
 ## The central mathematical objects
 
 SUCC works with actual carriers — `N, Z, Q, R, C, Ẑ, Q_p, A_f, A_Q` — and groups, rings, fields,
@@ -80,7 +85,7 @@ git clone https://github.com/femboy2112/SUCC.git
 cd SUCC
 python -m pip install -e ".[test]"
 python scripts/verify_provenance.py                       # SOURCE_PROVENANCE_VERIFIED, truth:false
-python -m unittest discover -s tests -p 'test_*.py'       # full suite (4338 tests at this head)
+python -m unittest discover -s tests -p 'test_*.py'       # full suite; current counts in round receipts
 python -m observational_succ demo
 python scripts/observer_foundations_probe.py              # finite survival ≠ universal proof
 python scripts/ordinal_succ_report_probe.py               # positive-definiteness NOT proved

@@ -36,6 +36,14 @@ supplements unchanged.
 
 ## Current-status corrections (originals preserved, pointers added)
 
+- **Proof Teeth research update:** [new claim supplement](CLAIM_SUPPLEMENT_PROOF_TEETH.md)
+  records PH-01–08 (profinite Hilbert/Fourier), PT-C01–05 (minimum observations),
+  genuine Lean upgrades for YX-01/YX-02 and the rational part of YX-03, and
+  source-specific Schur trial obstructions. Fourier/analytic Lean proof and the
+  original signed Schur positivity remain unproved. The inherited synthesis P5
+  phrase treating `sqrt(2)+i*r` (r rational) as noncomputable is corrected there:
+  it is computable and witnesses proper inclusion only.
+
 - **AS-04 (integer conjunct) → CTW-02.** `research/2026-10-15/ADELIC_SOLENOID_POISSON_RECONSTRUCTION.md`
   AS-04 preserved the original "finite-adèle span must include *non-integer* scales" necessity. PR
   #131 / **CTW-02** proves integer scales with rational translates already span `S(A_f)` (exact
