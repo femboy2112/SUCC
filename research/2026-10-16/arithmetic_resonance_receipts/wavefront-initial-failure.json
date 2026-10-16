@@ -1,0 +1,14 @@
+{
+  "command": "python -B -m unittest tests.test_prime_wavefront_geometry -v",
+  "interpreter": "Python 3.12.3",
+  "exit_code": 1,
+  "tests_run": 23,
+  "failures": 1,
+  "elapsed_seconds_reported_by_unittest": "6.059",
+  "failed_test": "ExactHingeTests.test_hs_projection_audit_independent_bivariate_integration",
+  "assertion": "Fraction(44211169, 1953045675) != Fraction(553573, 25259850)",
+  "cause": "Incorrect hand-entered expected fraction in test fixture.",
+  "independent_control": "SymbolicOracleTests.test_symbolic_projected_derivative_hs_independent_integral passed in the same run; direct two-variable symbolic integration agrees with 44211169/1953045675.",
+  "repair": "Correct expected fixture fraction; preserve original failure. No production formula or acceptance tolerance changed.",
+  "status": "FAILED_INITIAL_RUN_RETAINED"
+}
