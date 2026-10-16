@@ -1,0 +1,99 @@
+{
+  "recorded_at_utc": "2026-10-16T03:06:03.992058+00:00",
+  "git_head": "5ebf0c033a2d04650b7c7bca28693f30ce3470ea",
+  "git_branch": "research/observers-schur-complement-2026-10-16",
+  "assigned_files_before": {
+    "observational_succ/observer_schur.py": "f31fc87724569a2d573b7b1bbbdaadf2ff933d9653bb303c81a6d4cc7a13e3ae",
+    "tests/test_observer_schur.py": "c611f45c511d9cd537c3f641b80b14677627f1d417412f54fe370f2200fab0b5",
+    "scripts/observer_schur_probe.py": "a95a8ffd760cb52eaf3aa9890e514f18d8ce01220736f6197edc3ba61869d7f8",
+    "research/2026-10-16/OBSERVER_SCHUR_THEOREMS.md": "60e550375456fd2c6d99e6bde054303f235419afc0498b8d0a894bc482ee4ddb"
+  },
+  "assigned_files_after": {
+    "observational_succ/observer_schur.py": "f31fc87724569a2d573b7b1bbbdaadf2ff933d9653bb303c81a6d4cc7a13e3ae",
+    "tests/test_observer_schur.py": "c611f45c511d9cd537c3f641b80b14677627f1d417412f54fe370f2200fab0b5",
+    "scripts/observer_schur_probe.py": "a95a8ffd760cb52eaf3aa9890e514f18d8ce01220736f6197edc3ba61869d7f8",
+    "research/2026-10-16/OBSERVER_SCHUR_THEOREMS.md": "60e550375456fd2c6d99e6bde054303f235419afc0498b8d0a894bc482ee4ddb"
+  },
+  "assigned_source_stable": true,
+  "environment": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "commands": [
+    {
+      "argv": [
+        "/tmp/succ-proof-teeth-py310/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_observer_schur.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.699536558939144,
+      "log": "research/2026-10-16/observer-schur-py310-tests.log",
+      "sha256": "4a6f4e974eab509576109174553327d2ee94f2a895f49c17f3bd43e539376e55"
+    },
+    {
+      "argv": [
+        "/tmp/succ-proof-teeth-py310/bin/python",
+        "-B",
+        "scripts/observer_schur_probe.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.16348702600225806,
+      "log": "research/2026-10-16/observer-schur-py310-probe.json",
+      "sha256": "7b823b0ee9698544fce64e9d4753dd50b9c204efb6c01650ed05c8316b8e1cd8"
+    },
+    {
+      "argv": [
+        "/tmp/succ-proof-teeth-py313/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_observer_schur.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.4256129548884928,
+      "log": "research/2026-10-16/observer-schur-py313-tests.log",
+      "sha256": "2a2abb275ced823a511d5a9de84ddd38425cb3aa8dde55de8dc09c0410a8a080"
+    },
+    {
+      "argv": [
+        "/tmp/succ-proof-teeth-py313/bin/python",
+        "-B",
+        "scripts/observer_schur_probe.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.16840669489465654,
+      "log": "research/2026-10-16/observer-schur-py313-probe.json",
+      "sha256": "e0cea5a171ce7389c799d8305e611a02027f3211eab5350099dbb231fc966386"
+    }
+  ],
+  "focused_tests_per_interpreter": 27,
+  "skips": 0,
+  "full_suite_run": false,
+  "Lean_kernel_replayed": false,
+  "hosted_CI_checked": false,
+  "original_source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "paper_correction_history": [
+    {
+      "defect": "OS05 initial complex square used conj(z)/a in place of z/a",
+      "witness": "a=d=1,z=i,x=i,y=1: actual4, wrong0, corrected4",
+      "status": "CORRECTED_AND_EXACT_REGRESSION_RETAINED"
+    }
+  ],
+  "RH_proved": false
+}
