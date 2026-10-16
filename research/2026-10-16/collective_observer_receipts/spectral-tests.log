@@ -1,0 +1,31 @@
+test_bad_contracts (test_collective_spectral.IntersectionTests.test_bad_contracts) ... ok
+test_bridge_dependency_transitive_closure (test_collective_spectral.IntersectionTests.test_bridge_dependency_transitive_closure) ... ok
+test_disjoint_labels_still_do_not_prove_independence (test_collective_spectral.IntersectionTests.test_disjoint_labels_still_do_not_prove_independence) ... ok
+test_empty_duplicate_and_inconsistent_bounds_rejected (test_collective_spectral.IntersectionTests.test_empty_duplicate_and_inconsistent_bounds_rejected) ... ok
+test_every_source_coordinate_mismatch_rejected (test_collective_spectral.IntersectionTests.test_every_source_coordinate_mismatch_rejected) ... ok
+test_shared_source_not_independence (test_collective_spectral.IntersectionTests.test_shared_source_not_independence) ... ok
+test_touching_bounds_allowed (test_collective_spectral.IntersectionTests.test_touching_bounds_allowed) ... ok
+test_complex_linear_first_sign_and_blind_real_probes (test_collective_spectral.PolarizationTests.test_complex_linear_first_sign_and_blind_real_probes) ... ok
+test_exhaustive_gaussian_rational_polarization (test_collective_spectral.PolarizationTests.test_exhaustive_gaussian_rational_polarization) ... ok
+test_inexact_inputs_rejected (test_collective_spectral.PolarizationTests.test_inexact_inputs_rejected) ... ok
+test_nonhermitian_and_dimension_errors (test_collective_spectral.PolarizationTests.test_nonhermitian_and_dimension_errors) ... ok
+test_real_apparatus_does_not_supply_imaginary_superpositions (test_collective_spectral.PolarizationTests.test_real_apparatus_does_not_supply_imaginary_superpositions) ... ok
+test_signed_collective_detection (test_collective_spectral.PolarizationTests.test_signed_collective_detection) ... ok
+test_antisymmetric_correlation_against_independent_square_integrals (test_collective_spectral.ProjectionCertificateTests.test_antisymmetric_correlation_against_independent_square_integrals) ... ok
+test_constant_column_projection_exact (test_collective_spectral.ProjectionCertificateTests.test_constant_column_projection_exact) ... ok
+test_cubic_polynomial_true_residual_is_included (test_collective_spectral.ProjectionCertificateTests.test_cubic_polynomial_true_residual_is_included) ... ok
+test_derivative_tail_remains_when_finite_part_vanishes (test_collective_spectral.ProjectionCertificateTests.test_derivative_tail_remains_when_finite_part_vanishes) ... ok
+test_directed_square_root (test_collective_spectral.ProjectionCertificateTests.test_directed_square_root) ... ok
+test_exact_cell_legendre_moments (test_collective_spectral.ProjectionCertificateTests.test_exact_cell_legendre_moments) ... ok
+test_exact_moments_sharpen_but_conflicts_reject (test_collective_spectral.ProjectionCertificateTests.test_exact_moments_sharpen_but_conflicts_reject) ... ok
+test_linear_column_certified_without_sampling_claim (test_collective_spectral.ProjectionCertificateTests.test_linear_column_certified_without_sampling_claim) ... ok
+test_missing_or_wrong_cells_rejected (test_collective_spectral.ProjectionCertificateTests.test_missing_or_wrong_cells_rejected) ... ok
+test_exact_a_priori_degrees (test_collective_spectral.WitnessDepthTests.test_exact_a_priori_degrees) ... ok
+test_hidden_mode_has_fixed_short_but_decaying_full_margin (test_collective_spectral.WitnessDepthTests.test_hidden_mode_has_fixed_short_but_decaying_full_margin) ... ok
+test_rounding_grid_error_bound (test_collective_spectral.WitnessDepthTests.test_rounding_grid_error_bound) ... ok
+test_witness_budget_invalid_inputs (test_collective_spectral.WitnessDepthTests.test_witness_budget_invalid_inputs) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.119s
+
+OK

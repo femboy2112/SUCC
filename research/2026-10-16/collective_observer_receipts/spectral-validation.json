@@ -1,0 +1,106 @@
+{
+  "actual_source_negative_direction_found": false,
+  "actual_source_sign": "OPEN",
+  "arithmetic_replay": {
+    "algebra_byte_equal": true,
+    "algebra_sha256": "2aaa67f6deafc3f4f8b9d067ab49e40e130a37b8fd7e3593087ac5310ac87030",
+    "arithmetic_exact_replay_equal": true,
+    "arithmetic_sha256_after": "3a5315c44e6c4ab0127ce948859b13f976144eb032c353ee76699b4f03476d18",
+    "arithmetic_sha256_before": "3a5315c44e6c4ab0127ce948859b13f976144eb032c353ee76699b4f03476d18",
+    "before_has_enumeration_metadata": false,
+    "enumeration_metadata_present": true,
+    "full_receipt_sha256": "52efdea900594af1151a08fc3f6151b7a629c25defe90bf069928f5156234dbd",
+    "scope": "Arithmetic experiment only; witness enumeration metadata was extended between runs"
+  },
+  "branch": "research/collective-observer-2026-10-16",
+  "commands": [
+    {
+      "command": "python -B -m unittest discover -s tests -p test_collective_spectral.py -v",
+      "exit_code": 0,
+      "log": "spectral-tests.log",
+      "tests": 26
+    },
+    {
+      "command": "python -B scripts/collective_spectral_probe.py --source --output research/2026-10-16/collective_observer_receipts/spectral-source.json",
+      "exit_code": 0,
+      "log": "spectral-source.log"
+    },
+    {
+      "command": "python -B scripts/verify_provenance.py",
+      "exit_code": 0,
+      "log": "spectral-provenance.log"
+    },
+    {
+      "command": "python -B scripts/observer_foundations_probe.py",
+      "exit_code": 0,
+      "log": "spectral-foundations.log"
+    },
+    {
+      "command": "python -B scripts/ordinal_succ_report_probe.py",
+      "exit_code": 0,
+      "log": "spectral-ordinal.log"
+    },
+    {
+      "command": "python -B -m unittest discover -s tests -p 'test_*.py'",
+      "exit_code": 0,
+      "log": "spectral-full-suite.log",
+      "scope": "Existing shared-tree run completed before freeze; not a frozen full-repository snapshot. Final own files independently passed the focused suite. Principal owns stable 3.10/3.13 validation.",
+      "status": "PASSED",
+      "tests": 4508,
+      "wall_seconds": "551.784"
+    }
+  ],
+  "density_rate_assumed": false,
+  "executable": "/home/leah/.local/bin/python",
+  "git_commit_or_push_performed": false,
+  "head_at_freeze": "577bc496508e4a81141a4fddba87521694b19917",
+  "inherited_continuum_premises": [
+    "actual source identification",
+    "whole-high coercivity",
+    "Young, Legendre, projection and spectral-calculus paper arguments"
+  ],
+  "kernel_formalization": false,
+  "loaded_pinned_module_count": 44,
+  "lower_authority": "FRESH_EXACT_SOURCE_CELLS_PLUS_NEW_CONDITIONAL_PAPER_PROOF",
+  "other_agent_files_modified": false,
+  "own_files_sha256": {
+    "observational_succ/collective_spectral.py": "062a99f8531e7dee4ec3e5537bcecdc5446ac62e859ca7bf5ae120ec5540d20e",
+    "research/2026-10-16/COLLECTIVE_SPECTRAL_OBSERVERS.md": "5d90f020cadbedcdda59dde16376e7e163294b94908e852682c09a7e31dc341d",
+    "scripts/collective_spectral_probe.py": "57e09474cd8435e5780a45550d4f6027ca578358895d8eea38a4c5e13ecf4361",
+    "tests/test_collective_spectral.py": "95831a312f2c94c965a986719f2f454adf6e7f9fe40716ce45271c5cfd10b8d5"
+  },
+  "own_files_stable_since_freeze": true,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "receipts_sha256": {
+    "spectral-algebra.json": "2aaa67f6deafc3f4f8b9d067ab49e40e130a37b8fd7e3593087ac5310ac87030",
+    "spectral-determinism.json": "621821d36dbaf41dad7de11bf314dedba705a7b77ff941d06b3fa446c4e63e48",
+    "spectral-foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "spectral-full-suite.log": "35e5288c46fdd4e58686531d33a95d4eb50a436b63fc541a3e458ab190afef71",
+    "spectral-ordinal.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "spectral-projection-grid512-failed.json": "1c86a09b43adf445ac4677fbeda94070d2bb01628ae42e39af9dac7f9f23d464",
+    "spectral-projection-grid512-failed.log": "df63992983e06b7161eee423edcc9314d6fe68024d57982b1d1f6156c16f82ab",
+    "spectral-provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "spectral-source.json": "52efdea900594af1151a08fc3f6151b7a629c25defe90bf069928f5156234dbd",
+    "spectral-source.log": "df63992983e06b7161eee423edcc9314d6fe68024d57982b1d1f6156c16f82ab",
+    "spectral-tests.log": "dbdfa946df314816e59decd8f5035fed55371bf5616496876180fec126dd8661"
+  },
+  "remaining_lane_processes": 0,
+  "schema": "COLLECTIVE_SPECTRAL_VALIDATION_V1",
+  "source_caps": {
+    "even": {
+      "new_R0_cap": "46594796936736757485815562001/55689004873687500000000000000",
+      "old_R0_cap": "107959895025855318145227769087/127289153997000000000000000000",
+      "strict_response_improvement": true,
+      "unchanged_upper": "11742983/8589934592"
+    },
+    "odd": {
+      "new_R0_cap": "401942050279861710702382408729/891024077979000000000000000000",
+      "old_R0_cap": "405333569368851711757618861801/891024077979000000000000000000",
+      "strict_response_improvement": true,
+      "unchanged_upper": "300761/1073741824"
+    }
+  },
+  "source_pin": "95dbf40553e54c901e9998e14b1b9d67298fa89e",
+  "status": "FROZEN_LOCAL_VALIDATION_PASSED_PENDING_PRINCIPAL_CROSS_VERSION_VALIDATION",
+  "upper_authority": "PINNED_PR137_TRIAL_RECEIPT_AND_EXACT_SCALAR_PSD_RECHECK; trial integration not rerun"
+}
