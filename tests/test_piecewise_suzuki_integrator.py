@@ -45,7 +45,7 @@ class AuthenticSourceAnalyticVerification(unittest.TestCase):
                 expected=authentic_suzuki_mode_derivative_point(k,x,2)
                 result=(center if x<cut.lo else activated).value(x,digits=100)
                 self.assertTrue(result.intersects(I(expected.lo,expected.hi)),
-                                f"mode {k} at {x} disagrees with independent point oracle")
+                                f"mode {k} at {x}: analytic {[float(result.lo),float(result.hi)]} vs source {[float(expected.lo),float(expected.hi)]}")
             if k in (1,2):
                 # The genuine wavefront makes an observable nonzero difference.
                 self.assertFalse(center.value(F(2,5)).intersects(
