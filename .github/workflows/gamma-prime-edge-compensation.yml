@@ -8,9 +8,11 @@ on:
     paths:
       - 'observational_succ/prime_hinge_chiral_edge.py'
       - 'observational_succ/gamma_edge_compensation.py'
+      - 'observational_succ/gamma_carleman_gluing.py'
       - 'observational_succ/gamma_prime_phase_lock.py'
       - 'tests/test_prime_hinge_chiral_edge.py'
       - 'tests/test_gamma_edge_compensation.py'
+      - 'tests/test_gamma_carleman_gluing.py'
       - 'tests/test_gamma_prime_phase_lock.py'
       - 'scripts/prime_hinge_chiral_edge_probe.py'
       - 'scripts/gamma_prime_compensation_probe.py'
@@ -45,6 +47,8 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_gamma_edge_compensation.py' -v
           python scripts/gamma_prime_compensation_probe.py --source --verify > "$RUNNER_TEMP/gamma-compensation.json"
+      - name: Original Gamma jump Dirichlet form, touching Carleman and no-gap gluing
+        run: python -m unittest discover -s tests -p 'test_gamma_carleman_gluing.py' -v
       - name: Prime-power/Gamma ladder half-density phase lock and fake-composite control
         run: python -m unittest discover -s tests -p 'test_gamma_prime_phase_lock.py' -v
       - name: Original observer and ordinal proof-access firewalls
