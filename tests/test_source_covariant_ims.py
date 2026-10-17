@@ -71,6 +71,41 @@ class ExactSignedLocalization(unittest.TestCase):
         self.assertEqual(only_far_lag.components(f)['prime_shift'],0)
         self.assertGreater(only_far_lag.components(f)['Gamma_jump'],0)
 
+    def test_discrete_FUCC_jump_positive_and_compensation_is_exact(self):
+        for f in ((1,1,1,1,1,1),(1,-1,1,-1,1,-1),(0,0,1,0,0,0)):
+            r=model().components(tuple(F(z) for z in f))
+            self.assertGreaterEqual(r['positive_FUCC_jump'],0)
+            self.assertEqual(r['prime_shift'],r['positive_FUCC_jump']
+                            +r['compensating_negative_FUCC_potential'])
+            self.assertEqual(r['total'],r['positive_Gamma_FUCC_transport']
+                            +r['signed_contact_and_FUCC_potential']
+                            +r['completed_polar'])
+
+    def test_zero_prime_overlap_still_has_compensating_jump(self):
+        only_far_lag=FiniteToySource(model().jump, ((4,F(1)),), F(0),
+                                      tuple(F(0) for _ in range(6)),
+                                      tuple(F(0) for _ in range(6)))
+        f=(F(2),F(-3),F(0),F(0),F(0),F(0))
+        r=only_far_lag.components(f)
+        self.assertEqual(r['prime_shift'],0)
+        self.assertEqual(r['positive_FUCC_jump'],26)
+        self.assertEqual(r['compensating_negative_FUCC_potential'],-26)
+
+    def test_one_shift_transparent_chart_not_simultaneously_transparent(self):
+        # Finite graph model: a genuinely different second shift creates an
+        # interface on a chart that exactly commutes with the first shift.
+        n=6
+        source=FiniteToySource(model().jump, ((2,F(1)),(3,F(1))), F(0),
+            tuple(F(0) for _ in range(n)), tuple(F(0) for _ in range(n)))
+        c1=tuple(F(3,5) if i%2==0 else F(4,5) for i in range(n))
+        c2=tuple(F(4,5) if i%2==0 else F(3,5) for i in range(n))
+        f=(F(1),)*n
+        merged=finite_ims(source,f,(c1,c2))
+        self.assertGreater(merged['prime_interface'],0)  # only shift 3 pays
+        source2=FiniteToySource(model().jump, ((2,F(1)),), F(0),
+            tuple(F(0) for _ in range(n)), tuple(F(0) for _ in range(n)))
+        self.assertEqual(finite_ims(source2,f,(c1,c2))['prime_interface'],0)
+
     def test_forged_partition_not_normalized(self):
         bad=((F(1),)*6,(F(1),)*6)
         with self.assertRaises(LocalizationError):finite_ims(model(),(1,)*6,bad)
