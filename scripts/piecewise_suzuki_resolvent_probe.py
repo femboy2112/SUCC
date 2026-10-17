@@ -8,6 +8,9 @@ from observational_succ.source_riesz_high_comparison import coercivity_slack_no_
 from observational_succ.direct_quotient_schur import exact_psd
 from observational_succ.contact_ladder_projection import exact_contact_low4_certificate
 from observational_succ.source_schur_response_search import source_response_analytic_trial
+from observational_succ.endpoint_null_suzuki_trials import (
+    endpoint_null_gamma_tail_certificate,genuine_endpoint_null_S4_trial,
+)
 
 
 def main():
@@ -20,6 +23,7 @@ def main():
     diag_old=tuple(oldq[i][i] for i in range(4))
     diag_new=tuple(newq[i][i] for i in range(4))
     optimized=source_response_analytic_trial(rank=6,J_source=64,J_deriv=2)
+    endpoint_trial=genuine_endpoint_null_S4_trial(J_deriv=2,J_galerkin=64)
     receipt={
         "source":"PINNED_SUZUKI_FIRST_PRIME",
         "base":"research/direct-quotient-pontryagin-transfer-2026-10-17",
@@ -43,6 +47,9 @@ def main():
             "authentic_first_window_verdict":optimized["genuine_first_window_verdict"],
             "RH_proved":False,
         },
+        "endpoint_null_gamma_tail_J20":endpoint_null_gamma_tail_certificate(20),
+        "endpoint_null_original_S4_verdict":endpoint_trial["first_window_verdict"],
+        "endpoint_null_original_source_verified":endpoint_trial["original_source_authentication"],
         "RH_PROVED":False,
     }
     print(json.dumps(receipt,indent=2,default=str))

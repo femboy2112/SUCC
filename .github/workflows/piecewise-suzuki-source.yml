@@ -47,5 +47,7 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_source_riesz_high_comparison.py' -v
       - name: Genuine source-U rational high-response and infinite recertification
         run: python -m unittest discover -s tests -p 'test_source_schur_response_search.py' -v
+      - name: Endpoint-null Gamma tail minimax and original signed source
+        run: python -m unittest discover -s tests -p 'test_endpoint_null_suzuki_trials.py' -v
       - name: Exact analytic vs midpoint source audit
         run: python scripts/piecewise_suzuki_resolvent_probe.py

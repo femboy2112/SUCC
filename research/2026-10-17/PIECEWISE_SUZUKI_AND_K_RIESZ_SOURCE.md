@@ -188,3 +188,23 @@ This gives a potential contact-*endpoint* source certification that avoids pertu
 The existing source \`CertifiedTrial\` verifies \(G_J\) and provides exact outward intervals for the authentic low/high Galerkin block. The new \`source_schur_response_search.py\` uses only the exact rational midpoint matrix on original modes \(1,\ldots,m\), \(5\le m\le8\), to form a **candidate** high response \(U\approx (D_{\rm mid}+\lambda I)^{-1}B_{\rm mid}\). If a finite midpoint block is not SPD, a declared positive rational ridge \(\lambda\) is used; no property of that auxiliary matrix is promoted to the original infinite \(D_4\). The response is rounded to fixed-denominator rationals with strict parity zeros. It is then separately re-evaluated by the *complete original-source* analytic first-window Schur lower (pinned source + true Gamma remainder + source parity coercivity). It is not a Hilbert-matrix positivity shortcut.
 
 **Important methodological boundary:** Numerically optimizing a finite or uncertified surrogate and reporting its eigenvalues as original source evidence is disallowed. The candidate is only a search heuristic; the fully signed source and form-domain certificate are the arbiter. A report remaining AMBIGUOUS is an honest failed sign search, not a hidden RH theorem.
+
+
+## 11. Endpoint-null high response and sharp B3 tail geometry (PEX-07)
+
+The actual original Gamma H1 tail bound retains a distinct boundary contribution:
+\[
+\eta_J(v)\le2\|v'\|_2(d^{-2}+8d^{-3})
++(|v(1/2)|+|v(-1/2)|)(2/(3d^{3/2})+4/d^{5/2}),\quad d=4J+1.
+\]
+Construct the **source-lawful high response** \(v_k=u_k-u_{m_k}\), \(u_k=P_k(2t)\), where \(k=1,\ldots,4\) and \(m_k\) is the *smallest index ≥5* of equal parity: \(m=(5,6,5,6)\). Then \(v_k(\pm1/2)=0\) exactly and the Gamma boundary contribution is identically zero, giving genuine **O(J^-2)** rather than O(J^-3/2) IBP control, for every such polynomial trial.
+
+The derivative covariance is exactly
+\[
+\langle u_k',u_l'\rangle =
+\begin{cases} 2n(n+1),&k\equiv l\pmod2,\ n=\min(k,l),\\0,&k\not\equiv l\pmod2.\end{cases}
+\]
+Consequently \(\|v_k'\|_2^2=2[m_k(m_k+1)-k(k+1)]=(56,72,36,44)\).
+**Sharp minimax theorem:** over *all finite high Legendre combinations* \(h=\sum_{m\ge5}c_m u_m\) with \(u_k-h\) vanishing at both endpoints, \(h=u_{m_k}\) minimizes \(\|(u_k-h)'\|_2^2\). Proof: parity separates. In the source mode parity class, the boundary condition forces \(\sum c_m=1\). Expand \(u_k'-h'=(u_k'-u_{m_k}')+(u_{m_k}'-h')\); the two summands are orthogonal by the derivative min-index covariance, so their squared energies add. Opposite parity high components only increase derivative energy. Equality forces \(h=u_{m_k}\) by linear independence.
+
+The resulting source-sound B3 *numerical bound* is not uniformly sharper at small J: increasing \(\|v_k'\|\) can outweigh endpoint cancellation. The exact certificate reports for J=2 that some tail bounds worsen, while at J=20 all four improve. This is not a claim of monotone S4 positivity. The source-independent theorem, exact rational derivative checks, and genuine \`CertifiedAnalyticSuzukiTrial\` U recertification are tests. A negative Schur lower remains AMBIGUOUS, even if Gamma-tail improvement is certified.
