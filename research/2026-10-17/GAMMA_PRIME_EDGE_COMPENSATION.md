@@ -309,3 +309,114 @@ It does not follow that the required `c_B` is known or that an arbitrary source 
 **An explicit inverse-Ramsey-style proof compression.** If `M>=2^k`, harmonic grouping proves `H_M>=1+k/2`: each dyadic group contributes ≥1/2. Hence `c_E(delta)>=k/2−5−delta/4` with **no need to enumerate** the M individual OU modes. At `delta=2^-36`, `M=2^32=4,294,967,296`; the exact rational certificate gives `c_E>10.9999999999` using only `k=32`. For a *hypothetical separately certified authentic bulk* `c_B=1/2` on `beta=1/4`, the Carleman/polar cross satisfies the exact rational upper `eta_0²<4.94`. Thus the conditional test `(edge margin)*c_B>eta_0²` succeeds **without simulating over four billion Gamma rungs**. The large budget is a theorem-derived witness to the observer's resource-depth bottleneck, not a physical clock, a source-proof of the bulk margin, or an RH result.
 
 **This changes the next proof target:** seek a source-attested bulk margin at the same irrational radius and a nonlocal IMS gluing estimate for general primitives with nonzero interface traces. Do not attempt to infer a global theorem from two positive charts without controlling their actual mixed Carleman kernel.
+
+
+## 10. SC-09 — A *nonhypothetical*, source-conditional original bulk margin from WB4
+
+The general SC-08 no-gap gluing theorem leaves a separate bulk-margin premise.
+A **particular nontrivial bulk grammar** can pay that premise using a theorem
+already established in SUCC Academic Main III, without inventing a bulk sensor.
+This is a *new synthesis of existing source-specific coercivity with SC-08*,
+not an independent proof of WB4 or a global positivity theorem.
+
+**Definition of the actual source-certified bulk class.** Fix
+
+\[
+ \delta=2^{-100},\quad a=\frac{\log2+\delta}{2}<\frac12,
+ \quad E_L=(-a,-a+\delta),\quad E_R=(a-\delta,a).
+\]
+
+Let `F_e` be *any* nonzero `H0^1` primitive supported in `E_L ∪ E_R`.
+It is not required to be orthogonal to any low Legendre mode. Let the bulk
+primitive `F_b ∈ H0^1(B)` be supported in a *single* interval `B` of length
+`β=1/4` strictly between the two edge supports, which **may touch the inner
+endpoint of the left edge**. Impose the actual four moment constraints
+
+\[
+ \boxed{\int_B t^j F_b(t)dt=0\qquad(j=0,1,2,3).}\tag{SC-27}
+\]
+
+Such a nonzero class exists: rescale/translate the polynomial profile
+`φ_4(t)=d^4/dt^4[t^5(1−t)^5]` from SC-07. In particular the source
+`u_b=F_b'` has zero integral (mean zero) and for k=1,...,4,
+
+\[
+ \int_{-1/2}^{1/2}t^k u_b(t)dt
+ =-k\int_B t^{k-1}F_b(t)dt=0.\tag{SC-28}
+\]
+
+Thus the **zero extension** of `u_b` to the established `I_{1/2}` is genuinely
+in `Q4 H`, the high space of the *same original* Suzuki source. The original
+signed screw convolution kernel `g(x−y)` is independent of `a` and both
+functions vanish outside `I_a`, so its quadratic energy is **identical** at
+radius `a` and in the larger `1/2` window. `Vu_b=F_b` also retains the same
+L² norm. Hence inherited audited PDQ-08/WB4 gives the actual source-specific
+bulk inequality, not a hypothetical source label:
+
+\[
+ \boxed{Q_{G_a}(u_b)=Q_{G_{1/2}}(u_b)
+ \ge\frac{63}{500}\|F_b\|_2^2.}\tag{SC-29}
+\]
+
+The source theorem `D4(1/2)≥(63/500)K` remains an **inherited
+source-conditional analytic paper premise** and must be independently verified
+in any formal proof. The live source adapter reruns
+`source_parity_split_four_moment_coercivity_certificate`, checks its original
+source Git blob matches the first-edge source and that its global rational
+coercivity is precisely `63/500`. Only then reports the bulk margin as proved
+under those inherited analytic premises.
+
+**Actual exact no-gap positive class.** SC-08 bounds the original mixed
+Carleman/Gamma and both polar cross couplings by
+
+\[
+ \eta^2\le2\left(\frac{11}{7}+\frac{11}{3}\sqrt{\delta\beta}\right)^2<5
+ \quad\text{at}\quad \delta=2^{-100},\ \beta=1/4. \tag{SC-30}
+\]
+
+The genuine prime hinge cross is identically zero because its support
+requires `|x−y|>log2`, whereas the bulk is entirely between the two edge
+strips and every edge/bulk separation is at most `2a−δ=log2`.
+
+The Gamma edge dyadic certificate uses
+`M=floor(1/(16δ))=2^96` genuine first OU rungs. Without enumerating them,
+`H_M≥1+96/2=49`, hence the source full-edge energy margin
+
+\[
+ c_E>49-\frac18-\frac{47}8-\frac\delta4>42.\tag{SC-31}
+\]
+
+Therefore the **exact rational Schur determinant** satisfies
+
+\[
+ c_Ec_B>42\frac{63}{500}=\frac{2646}{500}>5>\eta^2.\tag{SC-32}
+\]
+
+**SC-09 theorem [SOURCE-CONDITIONAL PAPER / EXACT RATIONAL CHECK]:**
+
+\[
+ \boxed{Q_{G_a}(F_e'+F_b')>0\quad
+   \text{for every nonzero allowed pair }(F_e,F_b).}\tag{SC-33}
+\]
+
+This is a **nontrivial mixed low/high original-source sector**: choose `F_e`
+with `∫ F_e ≠0`, then `u_e=F_e'` has a nonvanishing degree-one moment and the
+sum `u_e+u_b` is **not** in the inherited `Q4 H` on the larger interval.
+Therefore SC-33 is not merely restating WB4's full-high positivity. It is a
+new sufficient region assembled through the genuine signed Gamma/primes/poles
+cross estimate, preserving a common source.
+
+**Limitations:** This holds at the extremely narrow one-stage window
+`a=(log2+2^-100)/2`, for the specified two-edge-plus-moment-annihilating-bulk
+direct sum. It does not prove positivity on all `H`, on arbitrary `Q4` in this
+smaller radius, on `S4` at `a=1/2`, across all prime hinges, or RH. Its
+`2^96` source modes are **a compressed analytic proof bound**, not executed
+finite events or a physical measurement. A completely overlapping or general
+nonlocal partition still requires a source-faithful IMS gluing theorem.
+
+**Reproduction:** run
+`python -m unittest discover -s tests -p 'test_gamma_carleman_gluing.py' -v`
+plus `python scripts/gamma_prime_compensation_probe.py --source --verify`
+in the full actual Git checkout. The standalone test can only prove the algebra
+SC-30–32; source authentication requires the inherited WB4 code and frozen
+source present in the repository. Do not count isolated fixture skips as green.
