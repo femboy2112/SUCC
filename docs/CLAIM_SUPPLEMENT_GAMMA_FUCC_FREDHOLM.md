@@ -13,3 +13,9 @@
 | First-window `S4`, all-radius Weil and RH | **OPEN** | Needs actual unmodified all-domain source positivity or negative witness, beyond any J prefix or single low direction |
 
 **Proof dossier:** `research/2026-10-17/GAMMA_FUCC_FINITE_BATH_FREDHOLM.md`. **Original frozen source:** Git blob `0cc8510b71d178fc79e8d410a86d8b6014cf9178`; `Lambda(2)=log2`, half-density 1/sqrt2; n=6 fake independent atom refused. Never regard generated positive Fredholm reference as an auxiliary Weil identity.
+
+## Later source-validation results
+
+- **GB-06 — SOURCE-VERIFIED at earlier exact GitHub head `e74c9bf...`:** Both Python 3.10 and 3.13 dedicated workflows passed 25/25 tests without skips and original source P1 Gamma 18th/19th rung inequalities. This verifies the originally numerical source-crossing result for ONE test direction, without expanding its sign scope.
+- **GB-07 — current new-head SOURCE-GATED candidate:** First positive Gamma truncation depth on the authentic signed source appears to be `P1:19; P2:10; P3:20; P4:7`. The independent numerical values are in the dossier. The new source code requires eight original-source outward-rational inequalities and will fail if one is not certified. Until new exact-head hosted check finishes, label this four-mode matrix of crossing depths **NUMERICAL DISCOVERY + PENDING SOURCE REPLAY**, not SOURCE-VERIFIED.
+- Every diagonal direction can become positive before the complete joint matrix does, and a positive four-low matrix is already separately inherited; none of this certifies `S4` or RH.
