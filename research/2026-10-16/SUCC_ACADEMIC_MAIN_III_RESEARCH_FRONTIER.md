@@ -16,7 +16,7 @@ Five independent read-only re-derivations (different methods, able to fail diffe
 |---|---|---|
 | PDQ-04/07 complete 4-moment quotient `E*P⁻¹E = 30c₁ᵀc₁+210c₂ᵀc₂+(1/24)M₃ᵀM₃+(1/40)M₄ᵀM₄` | **VERIFIED EXACT MODEL** | Loewner (sector rank-one, Gershgorin radius), not entrywise; coefficients confirmed 3 ways |
 | PDQ-08 parity-split coercivity `κ_odd=63/500`, `κ_even=153/500` | **VERIFIED EXACT MODEL (source-conditional)** | Genuine all-`f` Cauchy–Schwarz bound; same footing as WB4 `1/50`; no falsifier possible |
-| PDQ-09 B1+B3 derivative-energy bracket `(−0.029, −0.015)` | **VERIFIED EXACT MODEL** | Exact-Fraction, no float; integrand continuous across the prime-2 hinge (mean-zero ⇒ primitive vanishes at both ends), so midpoint-Lipschitz enclosure is sound |
+| PDQ-09 B1+B3 derivative-energy bracket `(−0.029159, −0.015175)` | **VERIFIED EXACT MODEL (sound but loose)** | Exact-Fraction, no float; the prime-2 kink is in the kernel `g'`, so the integrand `g'*v` is continuous/Lipschitz (no jump cells) and the midpoint-Lipschitz enclosure is sound. But `V_J≈30.4 ≫` true Lipschitz `~0.8–1.5`: radius ≈`18× H'`, `≳98%` of the gap to 0 is enclosure, grid-specific (`~1/grid²`); radius-removed residual `≈(−5e-4,−6e-4)` still negative — refinement alone cannot flip the sign |
 | PDQ-01/02/03/05/11/13 | PROVED PAPER/LOCAL | Unchanged |
 | **1A** off-critical parity universal sign | **REFUTED → corrected** | `4Re(E²−O²)` indefinite `(2,2)`; split is real/imag, not parity |
 | **1B** `ψ_e,ψ_o` normalization | manuscript-only | fixed; no computed number affected |
@@ -32,7 +32,9 @@ Five independent read-only re-derivations (different methods, able to fail diffe
 3. **Complete degree-≤3 moment subtraction** `E*P⁻¹E` as an exact Loewner lower bound (PDQ-04/07),
    capturing `~25.8%` of the odd-mode-1 derivative energy via the boundary channels.
 4. **Two-sided certified enclosure** of `S_4` (CFS-02) with the B1+B3 differentiated-convolution Gram
-   tightening the `U=0` lower bracket to `(−0.029, −0.015)` (PDQ-09) — still negative.
+   moving the `U=0` lower bracket to `(−0.029159, −0.015175)` (PDQ-09) — still negative, and a sound-but-
+   **loose, grid-specific** bracket (radius ≈`18× H'`; radius-removed residual `≈(−5e-4,−6e-4)`). This B1
+   looseness is precisely the motivation for the direct quotient-energy certification in §4.
 
 ## 2. The genuine remaining first-window sign obstruction (the exact wall)
 

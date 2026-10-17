@@ -23,8 +23,10 @@ In this campaign, we execute a hostile audit of PR #150 and deliver five interco
 | Odd-mode-1 subtracted moment energy $(E^* P^{-1} E)_{11}$ | $3.783 \times 10^{-7}$ ($30 c_{1,1}^2$) | **$2.346 \times 10^{-5}$** ($30 c_{1,1}^2 + \frac{1}{24}M_{3,1}^2$) | **$62.0\times$ larger subtraction** |
 | High-sector coercivity $\kappa_{\mathrm{odd}}$ on $Q_4 H_{\mathrm{odd}}$ | $1/50 = 0.020$ | **$63/500 = 0.126$** | **$6.3\times$ stronger** |
 | High-sector coercivity $\kappa_{\mathrm{even}}$ on $Q_4 H_{\mathrm{even}}$ | $1/50 = 0.020$ | **$153/500 = 0.306$** | **$15.3\times$ stronger** |
-| Certified $U=0$ odd-sector $\lambda_{\min}(S_4^{\mathrm{lower}})$ | $-1.260304$ | **$-0.029142$** | **$43.2\times$ closer to $0$** |
-| Certified $U=0$ even-sector $\lambda_{\min}(S_4^{\mathrm{lower}})$ | $-0.756015$ | **$-0.015150$** | **$49.9\times$ closer to $0$** |
+| Certified $U=0$ odd-sector $\lambda_{\min}(S_4^{\mathrm{lower}})$ | $-1.260304$ | **$-0.029159$** | $\approx 43\times$ (bracket; see note) |
+| Certified $U=0$ even-sector $\lambda_{\min}(S_4^{\mathrm{lower}})$ | $-0.756015$ | **$-0.015175$** | $\approx 50\times$ (bracket; see note) |
+
+> **Note (Academic Main III audit of PDQ-09).** The corrected values at $J_{\mathrm{deriv}}=20,\mathrm{grid}=256$ are $(-0.029159, -0.015175)$ (the earlier $(-0.029142,-0.015150)$ differed in the 5th digit). These are **grid-specific bracket** numbers, **not** tight residuals: the B1 midpoint–Lipschitz enclosure is sound (exact rational; the integrand $g'\!*v$ is continuous across the prime-2 kink) but **loose** — the total-variation constant $V_J\approx30.42$ at $J=20$ far exceeds the true Lipschitz $\sim0.8$–$1.5$, so the bracket radius is $\approx18\times H'$ and $\gtrsim98\%$ of the gap to $0$ is enclosure radius. The bracket improves $\sim1/\mathrm{grid}^2$ ($\mathrm{grid}=512\Rightarrow(-0.0105,-0.0063)$), but the **radius-removed diagnostic residual** is $\approx(-5\times10^{-4},-6\times10^{-4})$, still strictly negative — so grid refinement alone **cannot** flip the sign, and the "$43\times/50\times$" is a bracket-to-bracket comparison dominated by enclosure looseness, not a tightness theorem. $V_J$ itself is prose-proved (`TATE_SUZUKI_ZERO_SHIFT.md` §11), independently re-derived by hand this round; a sharper machine-checked TV bound ($\sim6.3$) is a NUMERICAL target, not yet certified.
 
 ---
 
@@ -81,7 +83,7 @@ Both the signed Suzuki operator $G$ and the inverse-Neumann operator $K = V^*V =
   $$\boxed{\|((G - G_J) v_i)'\|_{L^2(-1/2,1/2)} \le 2 \|v_i'\|_{L^2}\left(\frac{1}{d^2} + \frac{8}{d^3}\right) + \bigl(|v_i(1/2)| + |v_i(-1/2)|\bigr)\left(\frac{2}{3 d^{3/2}} + \frac{4}{d^{5/2}}\right),}$$
   improving the $O(J^{-1})$ Young tail $\eta_J = \frac{2}{d} + \frac{8}{d^2}$ by **$5.7\times$** at $J=20$ ($0.00263$ vs $0.01496$ on mode 1).
 
-Combining Routes B1 + B3 with Moonshots A and C in `CertifiedDerivativeEnergyTrial` tightens the certified $U=0$ $S_4$ lower bracket minimum eigenvalues from $(-1.260304, -0.756015)$ to **$(-0.029142, -0.015150)$** at $J_{\mathrm{deriv}}=20, \mathrm{grid}=256$.
+Combining Routes B1 + B3 with Moonshots A and C in `CertifiedDerivativeEnergyTrial` moves the certified $U=0$ $S_4$ lower bracket minimum eigenvalues from $(-1.260304, -0.756015)$ to **$(-0.029159, -0.015175)$** at $J_{\mathrm{deriv}}=20, \mathrm{grid}=256$ — but see the §1 note: this is a sound-but-loose, grid-specific **bracket** (B1 radius $\approx18\times H'$, improving $\sim1/\mathrm{grid}^2$), with radius-removed diagnostic residual $\approx(-5\times10^{-4},-6\times10^{-4})$ still negative; the sign cannot be flipped by refinement alone.
 
 ---
 
