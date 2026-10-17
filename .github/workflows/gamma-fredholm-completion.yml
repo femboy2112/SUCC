@@ -32,7 +32,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_gamma_fredholm_completion.py' -v > "$RUNNER_TEMP/completion-tests.txt" 2>&1 || { cat "$RUNNER_TEMP/completion-tests.txt"; exit 1; }
           cat "$RUNNER_TEMP/completion-tests.txt"
-          grep -q 'Ran 23 tests' "$RUNNER_TEMP/completion-tests.txt"
+          grep -q 'Ran 24 tests' "$RUNNER_TEMP/completion-tests.txt"
           grep -q '^OK$' "$RUNNER_TEMP/completion-tests.txt"
           if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/completion-tests.txt"; then exit 1; fi
       - name: Replay exact source fifth-mode sign reversal and finite feature Gram
