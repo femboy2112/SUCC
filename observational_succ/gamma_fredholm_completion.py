@@ -334,3 +334,62 @@ def authentic_fredholm_feature_gram(J=8,N=16):
        'source_positivity_certified':False,
        'result':'INCONCLUSIVE_FINITE_GAMMA_SUFFICIENT_TEST',
        'RH_proved':False}
+
+
+def authentic_endpoint_zero_four_dimensional_compensation(J=64):
+    """Original-source exact FULL Gamma positivity on four lawful endpoint-zero modes.
+
+    span(P1-P3,P3-P5,P2-P4,P4-P6) is four dimensional, H^1_0 and mean-zero.
+    Fourier-tail Loewner bound is an operator inequality on this whole span;
+    unlike testing four unrelated diagonal modes, we check both 2x2 blocks.
+    """
+    if type(J) is not int or J!=64:
+        raise CompletionError('this source theorem is pinned to J=64')
+    from .tate_suzuki_shorting import verify_original_suzuki_source
+    from .suzuki_legendre_source import authentic_full_low_entry
+    from . import source_weil_hierarchy as src
+    verified=verify_original_suzuki_source()
+    if src.authenticated_prime_wavefront(F(1,2))!=((2,2),):raise CompletionError('fake prime tape')
+    t=F(4,(4*J+1)**4)+F(64,(4*J+1)**5)
+    a=F(2,(4*J+1)**2)
+    proof={}
+    cases={
+      'odd_u_even_primitive':((1,3,5),((F(10,21),F(-1,7)),(F(-1,7),F(18,77))),((F(20),F(0)),(F(0),F(36)))),
+      'even_u_odd_primitive':((2,4,6),((F(14,45),F(-1,9)),(F(-1,9),F(22,117))),((F(28),F(0)),(F(0),F(44))))
+    }
+    for sector,(indices,M,D) in cases.items():
+        i,j,k=indices
+        entries={(r,s):authentic_full_low_entry(r,s,F(1,2),J)
+                 for r,s in ((i,i),(i,j),(i,k),(j,j),(j,k),(k,k))}
+        # INTERVAL proxy needs actual source's .lo and .hi, not an invented source!
+        E={(r,s):IV(z.lo,z.hi) for (r,s),z in entries.items()}
+        low11=E[i,i]+E[j,j]-2*E[i,j]
+        low22=E[j,j]+E[k,k]-2*E[j,k]
+        low12=E[i,j]-E[i,k]-E[j,j]+E[j,k]
+        W11=low11+a*M[0][0]-t*D[0][0]
+        W22=low22+a*M[1][1]-t*D[1][1]
+        W12=low12+a*M[0][1]-t*D[0][1]
+        det_lower=W11.lo*W22.lo-interval_abs_hi(W12)**2
+        if not (W11.lo>0 and W22.lo>0 and det_lower>0):
+            raise CompletionError('full original completed Gamma endpoint-zero 2x2 PSD NOT certified for '+sector)
+        proof[sector]={
+          'raw_basis':(f'P{i}-P{j}',f'P{j}-P{k}'),
+          'u_norm_gram_exact':tuple(tuple(str(z) for z in r) for r in M),
+          'du_norm_gram_exact':tuple(tuple(str(z) for z in r) for r in D),
+          'full_Gamma_2x2_Loewner_lower':(
+             ((str(W11.lo),str(W11.hi)),(str(W12.lo),str(W12.hi))),
+             ((str(W12.lo),str(W12.hi)),(str(W22.lo),str(W22.hi)))),
+          'determinant_strict_positive_lower':str(det_lower),
+          'matrix_strictly_positive_certified':True,
+          'original_source_complete_test_sector':True,
+        }
+    return {'original_source_git_blob':verified['source_git_blob'],
+            'source_a':'1/2','gamma_prefix':J,
+            'genuine_prime_power_tape':((2,2),),
+            'gamma_H01_tail_Loewner_norm_multiplier':str(a),
+            'gamma_H01_tail_Loewner_derivative_subtraction':str(t),
+            'source_complete_two_parity_blocks':proof,
+            'strict_completed_original_source_positive_on_four_dimensional_subspace':True,
+            'not_positive_on_arbitrary_test_space_claimed':True,
+            'original_first_window_S4_proved':False,
+            'RH_proved':False}
