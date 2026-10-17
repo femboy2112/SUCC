@@ -8,6 +8,10 @@ import json
 from fractions import Fraction as F
 
 from observational_succ.source_four_prime_schur import CertifiedFourPrimeSchurTrial
+from observational_succ.source_four_center_gram import (
+    authenticated_center_rankone_cross_intervals,
+    authentic_four_center_certificate,
+)
 from observational_succ.source_four_edge_gram import authentic_four_edge_moments
 from observational_succ.source_four_phase_schur import CertifiedFourPrimeFullPhaseSchurTrial
 
@@ -33,6 +37,13 @@ def main():
         "all_four_actual_source_center_moment_intervals":tuple(
             tuple(str(t) for t in pair) for pair in r["center_interval_moments"]),
         "moment_order":("int_C0 g1", "int_C0 x*g2", "int_C0 g3", "int_C0 x*g4"),
+        "source_certified_center_rankone_offdiagonal_cross_intervals":{
+            key:{"lower":str(value["lower"]),"upper":str(value["upper"]),
+                 "sign":value["sign"],
+                 "NOT_entire_center_cross_sign":value["whole_Gram_cross_sign_NOT_certified"]}
+            for key,value in authenticated_center_rankone_cross_intervals(
+                authentic_four_center_certificate(J=64,J_G=64)).items()
+        },
         "center_odd/even_offdiagonal_nominal":(
             str(r["center_ranktwo_nominal_matrix"][0][2]),
             str(r["center_ranktwo_nominal_matrix"][1][3]),

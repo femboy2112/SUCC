@@ -43,6 +43,19 @@ class OriginalFourDerivativeSource(unittest.TestCase):
             self.assertGreater(B3_weighted_center_tail_upper(k,20,t),
                                B3_weighted_center_tail_upper(k,64,t))
 
+    def test_real_even_block_offdiagonal_measured_rankone_sign(self):
+        from observational_succ.source_four_center_gram import authenticated_center_rankone_cross_intervals
+        c=authentic_four_center_certificate(J=64,J_G=64)
+        cross=authenticated_center_rankone_cross_intervals(c)
+        pair=cross["P2_P4_measured_odd_center"]
+        self.assertGreater(pair["lower"],0)
+        self.assertEqual(pair["sign"],"STRICT_POSITIVE")
+        self.assertTrue(pair["whole_Gram_cross_sign_NOT_certified"])
+        other=cross["P1_P3_measured_even_center"]
+        self.assertLessEqual(other["lower"],0)
+        self.assertGreaterEqual(other["upper"],0)
+        self.assertEqual(other["sign"],"AMBIGUOUS")
+
     def test_full_source_center_intervals_and_parity_block(self):
         c=authentic_four_center_certificate(J=64,J_G=64)
         self.assertEqual(c["source_sha"],"0cc8510b71d178fc79e8d410a86d8b6014cf9178")

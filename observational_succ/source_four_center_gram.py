@@ -260,6 +260,31 @@ def authentic_four_center_certificate(J=64,J_G=64):
     }
 
 
+def authenticated_center_rankone_cross_intervals(c):
+    """Exact ORIGINAL-SOURCE interval products for measured center channels.
+
+    This is the rank-one two-observable PROJECTION contribution, not a
+    fabricated interval for the total L2 center Gram offdiagonal, which may
+    include extra orthogonal components of either sign.
+    """
+    cert=c["intervals"]
+    answer={}
+    for name,i,j,weight in (
+        ("P1_P3_measured_even_center",0,2,F(4)),
+        ("P2_P4_measured_odd_center",1,3,F(768)),
+    ):
+        a,b=cert[i],cert[j]
+        corners=tuple(weight*x*y for x in a for y in b)
+        lower,upper=min(corners),max(corners)
+        answer[name]={
+            "lower":lower,"upper":upper,
+            "sign":"STRICT_POSITIVE" if lower>0 else
+                   "STRICT_NEGATIVE" if upper<0 else "AMBIGUOUS",
+            "whole_Gram_cross_sign_NOT_certified":True,
+        }
+    return answer
+
+
 def robust_center_energy_for_direction(c,x):
     """Exact all-x source lower on center residual Gram, not a matrix fit.
 
