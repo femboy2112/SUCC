@@ -56,7 +56,8 @@ from .suzuki_legendre_source import authentic_full_low_entry
 from .source_weil_hierarchy import authentic_positive_gamma_tail_norm, authenticated_prime_wavefront
 from .tate_suzuki_shorting import verify_original_suzuki_source
 from .one_object_residual_schur import original_source_cancellation_certificate
-from .four_schur_dual_quotient import quotient_derivative_cap
+from .four_schur_dual_quotient import (quotient_derivative_cap,
+                                       vanishing_boundary_moment_lower)
 
 A_RADIUS = F(1, 2)
 KAPPA = F(1, 50)
@@ -411,6 +412,45 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
     source_dual_U_lower = _mat_sub(_scalar_shift(mid, r),
                                   source_dual_correction)
 
+    # NEW authentic partial four-moment subtraction; no missing endpoint data.
+    # phi_e(t)=t^2-1/4, phi_o(t)=t(t^2-1/4) vanish at both endpoints.
+    # Their derivative channels are exactly -<P1,Gv>, -(1/2)<P2,Gv>.
+    # Their squared norms are 1/30 and 1/840 respectively, so the true
+    # high K-dual correction is <= ||(Gv)'||^2 -
+    #                      [30 <P1,Gv>^2 + 210 <P2,Gv>^2].
+    # The first two source Galerkin rows are already authenticated in Gblk.
+    # Account independently for the omitted positive Gamma operator T_J:
+    # |<Pj,T_J v_i>| <= ||Pj|| * tau_J * ||v_i||
+    #                   <= tau_J * sum_m |V[m,i]|  (a=1/2, ||Pm||<=1).
+    from .source_weil_hierarchy import iv
+    source_rows_mid = []
+    source_rows_err = []
+    for jj in (0, 1):
+        row_mid = []
+        row_err = []
+        for i in range(4):
+            acc = iv(0)
+            for k in range(rank):
+                if V[k][i]:
+                    acc += V[k][i] * Gblk[jj][k]
+            omitted_gamma_row_error = tail_J * sum(
+                abs(V[k][i]) for k in range(rank)
+            )
+            row_mid.append((acc.lo + acc.hi) / 2)
+            row_err.append((acc.hi - acc.lo) / 2 + omitted_gamma_row_error)
+        source_rows_mid.append(tuple(row_mid))
+        source_rows_err.append(tuple(row_err))
+    # A conservative exact Loewner lower: with eta=1/2,
+    # c*c >= (1/2)m*m - ||delta||^2 I.
+    # This lower can be indefinite: do not clamp its negative eigendirections.
+    source_boundary_moment_lower = vanishing_boundary_moment_lower(
+        source_rows_mid, source_rows_err
+    )
+    source_dual_boundary_lower = _mat_add(
+        source_dual_U_lower,
+        _scale(source_boundary_moment_lower, F(1) / KAPPA)
+    )
+
     # Requested precision is a measurable source-trial-energy width target,
     # not a promise of arbitrary-precision Schur sign. It now affects a
     # verifiable acceptance flag. J/rank are bounded; unmet targets stay unmet.
@@ -432,6 +472,9 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
     dual_pb = parity_blocks(source_dual_U_lower, 4)
     dual_lower_is_pd = (positive_definite(dual_pb['odd'])
                         and positive_definite(dual_pb['even']))
+    boundary_pb = parity_blocks(source_dual_boundary_lower, 4)
+    boundary_lower_is_pd = (positive_definite(boundary_pb['odd'])
+                            and positive_definite(boundary_pb['even']))
     # NEGATIVE gate: upper_bracket genuinely NOT PSD (a strictly-negative direction),
     # tested exactly on the 2x2 parity blocks -- a PSD-singular upper stays AMBIGUOUS.
     upper_is_psd = _block_is_psd(up_pb['odd']) and _block_is_psd(up_pb['even'])
@@ -442,7 +485,7 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
     up_max = max_eig_upper(up_pb['odd']), max_eig_upper(up_pb['even'])
 
     # ---- verdict ----
-    if lower_is_pd or dual_lower_is_pd:
+    if lower_is_pd or dual_lower_is_pd or boundary_lower_is_pd:
         verdict = "POSITIVE_CERTIFIED"            # S_4 >= lower_bracket > 0
     elif upper_has_strict_negative_direction:
         # S_4 <= upper_bracket, which has a strictly negative direction -> S_4 not PSD
@@ -473,13 +516,27 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
         "source_dual_U_lower_is_pd": dual_lower_is_pd,
         "source_dual_U_certified": True,
         "source_dual_U_uses_unprojected_derivative_pairing": True,
-        "source_dual_U_has_authenticated_moments": False,
+        "source_dual_U_has_authenticated_moments": True,
+        "source_dual_U_authenticated_moment_scope": (
+            "TWO endpoint-vanishing polynomial derivative channels only; "
+            "the full four polynomial moment rows remain uncomputed."
+        ),
+        "source_dual_boundary_moment_lower": tuple(
+            tuple(str(x) for x in row) for row in source_boundary_moment_lower),
+        "source_dual_boundary_lower_bracket": tuple(
+            tuple(str(x) for x in row) for row in source_dual_boundary_lower),
+        "source_dual_boundary_lower_is_pd": boundary_lower_is_pd,
+        "source_dual_boundary_rows_mid": tuple(tuple(str(x) for x in row)
+                                                for row in source_rows_mid),
+        "source_dual_boundary_rows_error": tuple(tuple(str(x) for x in row)
+                                                  for row in source_rows_err),
         "source_dual_U_note": (
-            "CERTIFIED alternate lower via primitive K-duality, full (Gv)' "
-            "and ||g'||_L1<11/40; no claim that L2 projection contracts H1. "
-            "Can be weaker than inherited U=0 floor. Moment subtraction is "
-            "mathematically available but source-attested derivative moments "
-            "have not been computed."
+            "CERTIFIED primitive K-dual lower plus two ORIGINAL-SOURCE "
+            "endpoint-vanishing derivative-moment rows obtained from the "
+            "first two low Galerkin channels with independently bounded "
+            "omitted Gamma tail. This is a Loewner lower, not a signed "
+            "Weil sign verdict. Full degree<=3 derivative moments and "
+            "the exact differentiated convolution energy remain open."
         ),
         "upper_bracket_min_eig_lower_by_parity": {k: str(v) for k, v in up_eig.items()},
         "upper_bracket_min_eig_lower": str(up_min),
