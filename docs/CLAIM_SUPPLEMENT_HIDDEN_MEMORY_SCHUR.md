@@ -11,6 +11,7 @@ Read [`research/2026-10-17/HIDDEN_MEMORY_SCHUR_AND_TEMPORAL_OBSERVERS.md`](../re
 | HM-03 | Spectral P of `Lplus` kills its Gamma/FUCC high memory; signed completed poles restore rank-two memory | Classical exact form/matrix finite controls, not claiming Nature-equivalence |
 | HM-04 | Two independent-time visible Gaussian reports shrink conditional hidden variance from 1 to `nu/(g²+nu)`; g=0 does not | Exact finite model (not experiment or thermodynamic work) |
 | HM-05 | Distinct 1- and 2-hidden-mode baths share two lag moments `k0=1,k1=1/2` but yield opposite S signs at `A=9/8`; four exact moments can reconstruct **finite two-mode** bath | Exact rational counterexample and limited finite Prony proof; **not** source authentic |
+| HM-07 | The **explicit** 453-cell source observer has complete signed high gap >9/16, source spectral multiplier gives cross-squared cap 249901074 and dyadic tail <=444268576/2^N; original cell source values remain uncomputed | SOURCE-CONDITIONAL PAPER + exact rational coefficients; no spectral eigenvectors required, but not a numerical source certificate |
 | HM-06 | Certified source-true high delayed resolvents, spectral projector, first-window positivity / RH | OPEN / UNVERIFIED |
 
 **Physical source:** Muruga, Ginot, Loos, Bechinger, "The extraction of work from hidden degrees of freedom," Nature Physics (Oct 16, 2026), https://doi.org/10.1038/s41567-026-03442-w. Experimental Brownian non-Markovian information/work; no inference to SUCC energetics or positivity.
