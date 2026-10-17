@@ -270,6 +270,8 @@ def original_high_surplus_certificate(modes=(5,6,7,8),*,prime=2):
     geometry=center_feature_gram(modes)
     from .suzuki_moment_schur import inverse_neumann_entry
     from .suzuki_legendre_source import polynomial_interval
+    from .source_weil_hierarchy import I as SourceInterval
+    source_lag=SourceInterval(*src["log2_interval"])
     k=geometry["modes"];n=len(k);kl=src["kappa_odd"];ke=src["kappa_even"]
     wfloor=src["positive_source_weight_floor"]
     K=tuple(tuple(inverse_neumann_entry(F(1,2),i,j) for j in k) for i in k)
@@ -286,7 +288,7 @@ def original_high_surplus_certificate(modes=(5,6,7,8),*,prime=2):
                 row.append((F(0),F(0)));continue
             poly=edge_mass_polynomial_in_b(geometry["primitives"][i],
                                            geometry["primitives"][j])
-            iv=polynomial_interval(poly,src["log2_interval"])
+            iv=polynomial_interval(poly,source_lag)
             row.append((iv.lo,iv.hi))
         mass.append(tuple(row))
     from .source_jump_spectral import is_psd
