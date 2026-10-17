@@ -175,8 +175,12 @@ def authentic_mode_piecewise(k,J,*,digits=100):
     ea=_exp_iv(F(1,4),digits);em=_exp_iv(F(-1,4),digits)
     integral_plus=ea*L.poly_eval(plus,a)-em*L.poly_eval(plus,-a)
     integral_minus=em*L.poly_eval(minus,a)-ea*L.poly_eval(minus,-a)
-    base=base+ExponentialPolynomial(((F(-1,2),(-2*integral_minus,)),
-                                     (F(1,2),(2*integral_plus,))))
+    # IMPORTANT sign/orientation: the original source has
+    # -2*exp_minus(-x/2)*I_minus + 2*exp_minus(x/2)*I_plus.
+    # exp_minus(-x/2)=exp(+x/2). Reversing these pole exponents is a
+    # very plausible but DECISIVELY REFUTED source-normalization mutation.
+    base=base+ExponentialPolynomial(((F(1,2),(-2*integral_minus,)),
+                                     (F(-1,2),(2*integral_plus,))))
     # Authentic Gamma OU coefficients. Finite J can be integrated analytically.
     for j in range(J):
         d=4*j+1;alpha=F(d,2)
