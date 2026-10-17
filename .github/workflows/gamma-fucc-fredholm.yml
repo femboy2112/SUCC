@@ -33,7 +33,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_finite_gamma_fucc_fredholm.py' -v > "$RUNNER_TEMP/gamma-fredholm-tests.txt" 2>&1
           cat "$RUNNER_TEMP/gamma-fredholm-tests.txt"
-          grep -q 'Ran 25 tests' "$RUNNER_TEMP/gamma-fredholm-tests.txt"
+          grep -q 'Ran 26 tests' "$RUNNER_TEMP/gamma-fredholm-tests.txt"
           grep -q '^OK$' "$RUNNER_TEMP/gamma-fredholm-tests.txt"
           if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/gamma-fredholm-tests.txt"; then exit 1; fi
       - name: Replay deterministic original-source Gamma rung sign transition
