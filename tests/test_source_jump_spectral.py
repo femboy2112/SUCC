@@ -175,12 +175,18 @@ class MatrixModelTests(unittest.TestCase):
             from observational_succ import suzuki_legendre_source
         except ImportError:
             self.skipTest('original SUCC source package absent in isolated testing fixture')
-        for k in (1,2):
-            r=authentic_primitive_ritz_packet(k,12)
+        records={k:authentic_primitive_ritz_packet(k,12) for k in (1,2)}
+        for k,r in records.items():
             self.assertEqual(r['original_source_blob'],'0cc8510b71d178fc79e8d410a86d8b6014cf9178')
             self.assertGreater(r['primitive_K_norm_squared'],0)
             self.assertLessEqual(*r['positive_jump_ritz_rayleigh_interval'])
             self.assertFalse(r['source_generated_jump_eigenfunction_claimed'])
+        # A REAL original-source strictly negative baseline EVEN direction,
+        # despite the inherited WB4 original signed low A4 > 0.
+        self.assertTrue(records[1]['baseline_rigorously_negative_on_this_trial'])
+        self.assertLess(records[1]['polar_free_baseline_energy_interval'][1],F(-56,1000))
+        # One strictly positive ODD baseline test does NOT certify the sector.
+        self.assertGreater(records[2]['polar_free_baseline_energy_interval'][0],F(0))
 
 
 if __name__=='__main__':
