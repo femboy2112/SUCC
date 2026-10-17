@@ -53,7 +53,34 @@ def CertifiedFourPrimeFullPhaseSchurTrial(*,J_center=64,J_G=64,J_deriv=2,
                    for i in range(4)))
     if any(new[i][j]!=new[j][i] for i in range(4) for j in range(4)):
         raise ArithmeticError("genuine source phase cannot break reflection symmetry")
-    verdict="POSITIVE_CERTIFIED_FIRST_WINDOW" if exact_psd(new) else "AMBIGUOUS"
+    # Unlike a fixed uncertain-rank-one Loewner matrix, this classical
+    # two-variable exact cone decision preserves EVERY guaranteed directional
+    # source gain. The source high form and original low signed bound are
+    # already independently SHA-attested above.
+    from .exact_source_two_dim_cone import exact_nonnegative_two_dimensional_source_cone
+    baseline=_mat(center["source_original_trial_signed_scalar_S4_lower"])
+    centerm=center["center_source_moment_nominal"]
+    centere=center["center_interval_radii"]
+    edgem=edge["nominal"];edgee=edge["errors"]
+    widthmax=edge["edge_width_interval"][1]
+    factors={0:F(4),1:F(768)}
+    edgeweights={0:F(12)/widthmax**3,1:F(1)/widthmax}
+    cone={}
+    for parity,(i,j) in (("odd_derivative",(0,2)),("even_derivative",(1,3))):
+        p=i%2
+        features=(
+            (centerm[i],centerm[j],centere[i],centere[j],
+             center["per_parity_center_inverse_saving_coefficient"][p]*factors[p]),
+            (edgem[i],edgem[j],edgee[i],edgee[j],
+             cphase[p]*edgeweights[p]),
+        )
+        base=((baseline[i][i],baseline[i][j]),
+              (baseline[j][i],baseline[j][j]))
+        cone[parity]=exact_nonnegative_two_dimensional_source_cone(base,features)
+    cone_positive=all(x["robust_lower_nonnegative_for_ALL_real_directions"]
+                      for x in cone.values())
+    first_window_positive=exact_psd(new) or cone_positive
+    verdict="POSITIVE_CERTIFIED_FIRST_WINDOW" if first_window_positive else "AMBIGUOUS"
     directions={}
     xlist={
         "P1":(1,0,0,0),"P2":(0,1,0,0),"P3":(0,0,1,0),"P4":(0,0,0,1),
@@ -87,7 +114,10 @@ def CertifiedFourPrimeFullPhaseSchurTrial(*,J_center=64,J_G=64,J_deriv=2,
         "center_original_four_Loewner_lower":sourcebase,
         "edge_source_four_Loewner_improvement_lower":phasedelta,
         "original_complete_S4_center_plus_edge_Loewner_lower":new,
-        "source_positive_S4_first_window":exact_psd(new),
+        "source_positive_S4_first_window":first_window_positive,
+        "source_Loewner_lower_PSD":exact_psd(new),
+        "exact_all_direction_source_robust_cone_PSD":cone_positive,
+        "source_parity_cone_certificates":cone,
         "original_S4_verdict":verdict,
         "full_source_direction_certificates":directions,
         "edge_in_Loewner_improvement_is_PSD":exact_psd(phasedelta),
