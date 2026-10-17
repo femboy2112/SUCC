@@ -169,7 +169,7 @@ python scripts/ordinal_succ_report_probe.py
 python -m unittest discover -s tests -p 'test_*.py'
 ```
 
-Isolated fixture: **33 discovered / 30 passed / 3 skipped source integration**. The dedicated CI must execute and pass all 33, **zero skips**, against the original frozen source under Python 3.10/3.13. No original analytic spectral projector or true-source temporal K_j is computed. No merge, publication or RH claim.
+Isolated fixture: **40 discovered / 35 passed / 5 skipped source integration**. The dedicated CI must execute and pass all 40, **zero skips**, against the original frozen source under Python 3.10/3.13. No original analytic spectral projector or true-source temporal K_j is computed. No merge, publication or RH claim.
 
 ## 9. HM-07 — an **explicit 453-cell observer** with finite high gap, no spectral eigenbasis needed
 
@@ -230,3 +230,33 @@ At k=64 the absolute operator error is strictly below `2.41e-11`, **provided the
 **Next effective gate:** compute and certify `E_NHE_N` from the original nonlocal jump kernel and original two poles; then construct certified positive-shift Q_cell solves with two-sided residual errors, rather than merely postulating the `BR^jB*` observations. In particular avoid calling a finite numerical matrix an authentic source projector or creating false independence between repeated measurements.
 
 **HM-07 claim:** SOURCE-CONDITIONAL PAPER upper and exact rational coefficient; dedicated original-source source hash and inherited JS-02 rank/gap packet are replayed. Actual true-source cell matrix, effective Green resolvent and original sign: OPEN.
+
+## 10. HM-08 — arithmetic resonance-tuned observer clocks: 453 vs 642 cells
+
+The 453-cell partition in HM-07 was chosen to satisfy the genuine Gamma high-energy estimate, **without reference to prime2's phase**. An unexpected arithmetic feature is that its source SUCC coordinate grid also almost aligns with the one genuine active FUCC lag `b=log2`. Define the finite-cell basis `e_i=sqrt(N)1_[i/N,(i+1)/N]` (translated to I). For any primitive `F=sum_i f_i e_i`, zero-extended, write `m=floor(Nb)`, `t=Nb-m` (0<t<1). The **exact source-defined** lag correlation is
+
+`<F,T_b F>=(1-t) sum_i f_i f_(i+m)+t sum_i f_i f_(i+m+1)`
+
+(with out-of-range indices zero). Thus the genuine prime2 quadratic is exactly a two-band sparse integer SUCC shift, not an arbitrary dense operator. With `k=round(Nb)` and `epsilon=|Nb-k|`, each one-step shift is a contraction on the finite vector space, so
+
+`|<F,T_bF>-sum_i f_i f_(i+k)| <=2 epsilon||F||²`.
+
+The authentic source weight `w_2=log2/sqrt2<1/2` then gives the strict **original-prime-only** signed energy bound
+
+`|Q_prime(F') - (-2w_2 sum_i f_i f_(i+k))| <2 epsilon||F||²`.
+
+Using the pinned original SHA's rational atanh series for log2 (or a separate 40-term rational atanh enclosure) gives **exact strict rational phase statements**
+
+`314-1/200 <453 log2<314`,
+
+`445 <642 log2<445+1/2000`.
+
+Therefore the 453-cell prime2 channel is within **1/100** of the 314-cell SUCC translation in operator-form norm, whereas the 642-cell prime2 channel is within **1/1000** of its 445-cell SUCC translation. The latter is a nearly exact prime-FUCC/int-SUCC resonance with just **two** actual nonzero source shift bands; the small second band's sign/weight cannot be silently dropped in a proof. The Fourier Gamma jump, original contact and both completed polar contributions remain nonlocal and are not controlled by the prime-only approximation.
+
+Because the existing Gamma cell lower bound is `mu76(1-76/(3N))²`, it **improves** whenever N>=453. Hence the 642-cell mathematical observer retains the same signed high gap >9/16. The source-coupling Hilbert–Schmidt budget scales conservatively as `N(810+1216N)`; at N=642, it equals exactly 501711444, so the signed memory-tail bound is
+
+**`S_642,j - 891931456*2^(-j) I <= S_642 <= S_642,j`.**
+
+This roughly doubles the already conservative high-memory budget while improving the prime phase alignment by almost an order of magnitude. Inverse-Ramsey framing: a physically/source-legal finite partition can be selected for both **high spectral access** and **genuine prime-clock synchronization**, without declaring an independent fake-6 jet or importing zeta zero locations.
+
+**Scope & Falsifier:** For each N the correct phase may land on either neighboring integer shift. We authenticate its direction and interval from original source log2, never treat a decimal rounded value as exact. The normalized cell carrier lies in the closed primitive log-Gamma form domain but requires approximation by smooth test primitives for direct original Weil-core statements. Its actual original Gamma/pole/contact low matrix, shifted resolvents, and all-radii sign are still uncomputed. This is SOURCE-CONDITIONAL PAPER arithmetic-interface result plus an independently executable exact-rational synthetic observation computation; **not** an original-source signed positivity proof.
