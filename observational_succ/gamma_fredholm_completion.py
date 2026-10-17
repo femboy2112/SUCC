@@ -168,7 +168,31 @@ def finite_feature_gram_model(Binverse,features,D):
             'RH_proved':False}
 
 
-# The 34-dimensional original-source feature Gram adapter below deliberately
+def strict_PD_fraction_gram(matrix):
+    """Exact rational LDL strict-PD sufficient test; no source-negative verdict.
+
+    Unlike finite_gamma_fucc_fredholm.psd (<=7 synthetic-control dimensions),
+    this scalable n-dimensional computation is used for the source feature
+    packet. For a singular PSD matrix it deliberately returns False rather than
+    assuming strictness or inverting a zero pivot.
+    """
+    A=tuple(tuple(rat(v) for v in row) for row in matrix)
+    n=len(A)
+    if not n or any(len(row)!=n for row in A) or any(A[i][j]!=A[j][i] for i in range(n) for j in range(i+1,n)):
+        raise CompletionError('exact symmetric square rational PSD certificate required')
+    L=[[F(0) for _ in range(n)] for _ in range(n)]
+    d=[]
+    for j in range(n):
+        v=A[j][j]-sum((L[j][k]**2*d[k] for k in range(j)),F(0))
+        if v<=0:return False
+        d.append(v);L[j][j]=F(1)
+        for i in range(j+1,n):
+            z=A[i][j]-sum((L[i][k]*L[j][k]*d[k] for k in range(j)),F(0))
+            L[i][j]=z/v
+    return True
+
+
+# The finite-dimensional original-source feature Gram adapter below deliberately
 # takes authentic parameters from the archived source and never infers a sign
 # unless its rational Loewner interval test succeeds.
 
@@ -315,9 +339,8 @@ def authentic_fredholm_feature_gram(J=8,N=16):
     prod=[[sum((D[i][k]*Wmid[k][j] for k in range(dim)),F()) for j in range(dim)] for i in range(dim)]
     M=[[Wmid[i][j]+sum((Wmid[i][k]*prod[k][j] for k in range(dim)),F()) for j in range(dim)] for i in range(dim)]
     # A strict certified positive packet needs exact LDL on M-perturbI.
-    from .finite_gamma_fucc_fredholm import psd
     # eps floor bound not sign: M may be indefinite, cannot infer actual source negativity.
-    positive_certified=psd(tuple(tuple(M[i][j]-(perturb if i==j else 0) for j in range(dim)) for i in range(dim)))
+    positive_certified=strict_PD_fraction_gram(tuple(tuple(M[i][j]-(perturb if i==j else 0) for j in range(dim)) for i in range(dim)))
     if positive_certified: raise CompletionError('unexpected certificate: independently audit before promoting first window')
     return {'source_sha':receipt['source_git_blob'],
        'true_prime_wavefront':((2,2),),'rungs':J,'cell_count':N,'dimension':dim,
