@@ -217,3 +217,51 @@ Even a source-certified strictly positive complete first-prime form would not pr
 ### Exact source-hostile reference budget repair
 
 The original initial hosted source gate rejected `J=8,N=8`: the generic compression allowance `2J/(3N)=2/3` EXCEEDS the first-prime positive cubic-swap baseline gap `~0.4135`, so no positive reference inverse is licensed. **This was a correct model failure, not a source positivity obstruction.** The guarded source adapter now requires `N>=14` and uses `N=16`, where `2J/(3N)=1/3` and the reference gap remains positive. A new explicit regression confirms that the underresolved N8 source packet is rejected. Positive Gram is still NOT assumed.
+
+## C-06. A four-dimensional completed-source positivity theorem beyond the original four low modes [EXACT FROZEN-SOURCE GATE]
+
+The one-vector C-03 certificate extends **uniformly over a four-dimensional linear family** of legitimate endpoint-zero mean-zero tests. Define
+
+\[
+U_{odd}=\operatorname{span}\{P_1(2t)-P_3(2t),\ P_3(2t)-P_5(2t)\},
+\quad
+U_{even}=\operatorname{span}\{P_2(2t)-P_4(2t),\ P_4(2t)-P_6(2t)\}.
+\]
+
+Every vector in both spaces is a true original test (or an H¹ limit of smooth compact tests) with zero endpoint traces and mean zero. Because the archived source is reflection invariant, mixed odd/even source entries vanish identically. Exact rational polynomial integration gives the **full** L² and derivative Grams, including cross terms:
+
+\[
+M_o=\begin{pmatrix}10/21&-1/7\\-1/7&18/77\end{pmatrix},\quad
+D_o=\begin{pmatrix}20&0\\0&36\end{pmatrix},
+\qquad
+M_e=\begin{pmatrix}14/45&-1/9\\-1/9&22/117\end{pmatrix},\quad
+D_e=\begin{pmatrix}28&0\\0&44\end{pmatrix}.
+\]
+
+Let `A_(J,sector)` be the original finite Gamma J signed two-by-two Gram on the pair of difference modes, computed **directly from six archive-authenticated complete signed source entries** in each parity. From the same Fourier source tail inequality (C7), on each whole sector we get the genuine **matrix Loewner lower**
+
+\[
+\boxed{A_{\infty,sector}\succeq
+ A_{64,sector}+\frac2{257²}M_{sector}
+  -\left(\frac4{257⁴}+\frac{64}{257⁵}\right)D_{sector}.}\tag{C11}
+\]
+
+The executable source adapter performs a **full outward rational 2×2 determinant test** for each sector: diagonal lower endpoints strictly positive and
+
+\[
+\boxed{\det_{lower}=L_{11}^{lo}L_{22}^{lo}-\max(|L_{12}^{lo}|,|L_{12}^{hi}|)^2>0.}
+\]
+
+If the exact original source passes these independent strict determinant inequalities, then
+
+\[
+\boxed{Q_{a=1/2}^{\mathrm{original},\Gamma_\infty}(u)>0
+\quad\forall u\in U_{odd}\oplus U_{even}\setminus\{0\}.}\tag{C12}
+\]
+
+This tests true **mixed correlations**, not four unrelated positive diagonal readings. The fifth-mode witness (C3) lies in `U_odd` because
+`6P1−10P3+4P5 = 6(P1−P3)−4(P3−P5)`.
+
+**Independent numerical discovery (not the proof):** with the original Gamma/prime/contact/polar formula and 2,048 spatial cells, the smallest generalized low eigenvalue for `(C11)` at J64 is about `+1.5e-6` in the odd sector and `+2.5e-5` in the even sector. The authentic outward rational determinant checks are therefore genuinely nontrivial and fail closed if the source intervals are not sharp enough. No claim about directions orthogonal to these four vectors, 6a=1/2 complete operator, S4, arbitrary radius or RH follows.
+
+This is the next meaningful finite-dimensional **quasi-RH laboratory**: a subspace where the entire infinite Gamma bath can be controlled with a short, source-faithful uniform Loewner proof rather than enumerated to infinity. Extending `(C11)` to a cofinal family of increasingly rich exact source subspaces with uniformly effective positive margins remains **OPEN and RH-hard**.
