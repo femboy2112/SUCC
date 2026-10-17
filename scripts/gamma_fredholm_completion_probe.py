@@ -20,6 +20,7 @@ def build(source=False):
        'gamma_tail_J64_upper':str(C.gamma_tail_source_upper(64,w['norm_sq'])),
        'original_signed_source_authenticated':source,
        'authentic_fifth_mode_completion':C.authentic_fifth_mode_completion(64) if source else None,
+       'authentic_four_dimensional_complete_subspace':C.authentic_endpoint_zero_four_dimensional_compensation(64) if source else None,
        'authentic_J8_feature_gram':C.authentic_fredholm_feature_gram(8,16) if source else None,
        'certified_complete_first_window_sign':False,
        'all_radii_Weil_sign_proved':False,
@@ -37,6 +38,7 @@ def main():
         if args.source:
             assert d['authentic_fifth_mode_completion']['fully_completed_same_vector_positive_strict']
             assert d['authentic_fifth_mode_completion']['truncated_negative_strict']
+            assert d['authentic_four_dimensional_complete_subspace']['strict_completed_original_source_positive_on_four_dimensional_subspace']
             assert d['authentic_J8_feature_gram']['dimension']==18
             assert not d['authentic_J8_feature_gram']['source_positivity_certified']
         assert not d['RH_proved']
