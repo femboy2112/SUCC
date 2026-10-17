@@ -56,6 +56,7 @@ from .suzuki_legendre_source import authentic_full_low_entry
 from .source_weil_hierarchy import authentic_positive_gamma_tail_norm, authenticated_prime_wavefront
 from .tate_suzuki_shorting import verify_original_suzuki_source
 from .one_object_residual_schur import original_source_cancellation_certificate
+from .four_schur_dual_quotient import quotient_derivative_cap
 
 A_RADIUS = F(1, 2)
 KAPPA = F(1, 50)
@@ -330,6 +331,12 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
     if type(J) is not int or not 1 <= J <= 75:
         return {"verdict": "INVALID_SOURCE", "reason": "J out of [1,75]",
                 "RH_proved": False}
+    try:
+        requested_precision = _q(precision)
+        if requested_precision <= 0:
+            raise CertifiedTrialError("precision must be strictly positive")
+    except CertifiedTrialError as exc:
+        return {"verdict": "INVALID_SOURCE", "reason": str(exc), "RH_proved": False}
 
     # normalize U and rank
     U = tuple(tuple(r) for r in U) if U else ()
@@ -388,6 +395,28 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
                            for j in range(4)) for i in range(4))
     A4_lower_loewner = _scalar_shift(A4_mid, A4_rad)                        # A_4 >= A4_mid - A4_rad I
     lower_bracket = _mat_sub(A4_lower_loewner, _scale(W_L2_low, ZERO_SHIFT_CAP))
+
+    # NEW: proof-bearing U-dependent alternative. For v=x-Ux and any high w,
+    #   <QGv,w>=<Gv,w>=-<(Gv)', Vw>,
+    # where Vw is the primitive and K=V*V. The ORIGINAL anchored source has
+    #   ||(Gv)'||_2 <= ||g'||_1 ||v||_2 < (11/40)||v||_2.
+    # Combining with D >= (1/50)QKQ yields the valid variational correction
+    # (121/32) ||v||_2^2 without the FALSE H1 contraction of Q.
+    # M(v) >= mid-rI because omitted authentic Gamma modes are PSD.
+    # This new LOWER is rigorous for every U but can be WEAKER than the old
+    # U=0 floor; preserve both, never form an unjustified matrix maximum.
+    source_dual_correction = quotient_derivative_cap(
+        W_L2, gprime_L1=GPRIME_L1_UPPER, kappa=KAPPA
+    )["residual_correction_upper"]
+    source_dual_U_lower = _mat_sub(_scalar_shift(mid, r),
+                                  source_dual_correction)
+
+    # Requested precision is a measurable source-trial-energy width target,
+    # not a promise of arbitrary-precision Schur sign. It now affects a
+    # verifiable acceptance flag. J/rank are bounded; unmet targets stay unmet.
+    w_maxrowsum = max(sum(abs(x) for x in row) for row in W_L2)
+    source_trial_energy_width = 2*r + tail_J*w_maxrowsum
+    requested_precision_met = source_trial_energy_width <= requested_precision
     lower_short = _scalar_shift(mid, r)   # (A_4 - L_U) lower, for the per-U diagnostic only
 
     # enforce exact symmetry (round-off impossible with Fractions, but assert intent)
@@ -400,6 +429,9 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
     lo_pb = parity_blocks(lower_bracket, 4)
     # POSITIVE gate: lower_bracket strictly PD (exact LDL) on both parity blocks.
     lower_is_pd = positive_definite(lo_pb['odd']) and positive_definite(lo_pb['even'])
+    dual_pb = parity_blocks(source_dual_U_lower, 4)
+    dual_lower_is_pd = (positive_definite(dual_pb['odd'])
+                        and positive_definite(dual_pb['even']))
     # NEGATIVE gate: upper_bracket genuinely NOT PSD (a strictly-negative direction),
     # tested exactly on the 2x2 parity blocks -- a PSD-singular upper stays AMBIGUOUS.
     upper_is_psd = _block_is_psd(up_pb['odd']) and _block_is_psd(up_pb['even'])
@@ -410,7 +442,7 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
     up_max = max_eig_upper(up_pb['odd']), max_eig_upper(up_pb['even'])
 
     # ---- verdict ----
-    if lower_is_pd:
+    if lower_is_pd or dual_lower_is_pd:
         verdict = "POSITIVE_CERTIFIED"            # S_4 >= lower_bracket > 0
     elif upper_has_strict_negative_direction:
         # S_4 <= upper_bracket, which has a strictly negative direction -> S_4 not PSD
@@ -422,7 +454,10 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
         "verdict": verdict,
         "source": "AUTHENTIC_Q_ZETA_SUZUKI_2026_1_3",
         "a": str(A_RADIUS), "kappa": str(KAPPA), "gamma_modes_J": J, "rank": rank,
-        "requested_precision": str(_q(precision)),
+        "requested_precision": str(requested_precision),
+        "requested_precision_met_for_trial_energy": requested_precision_met,
+        "source_trial_energy_width_operator_upper": str(source_trial_energy_width),
+        "source_trial_energy_midpoint": tuple(tuple(str(x) for x in row) for row in mid),
         "U": tuple(tuple(str(x) for x in row) for row in U),
         "U_is_zero": all(x == 0 for row in U for x in row),
         "gamma_positive_tail_norm_upper": str(tail_J),
@@ -433,6 +468,19 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
         # certified Loewner brackets  lower_bracket <= S_4 <= upper_bracket
         "upper_bracket": tuple(tuple(str(x) for x in row) for row in upper_bracket),
         "lower_bracket": tuple(tuple(str(x) for x in row) for row in lower_bracket),
+        "source_dual_U_lower_bracket": tuple(tuple(str(x) for x in row)
+                                            for row in source_dual_U_lower),
+        "source_dual_U_lower_is_pd": dual_lower_is_pd,
+        "source_dual_U_certified": True,
+        "source_dual_U_uses_unprojected_derivative_pairing": True,
+        "source_dual_U_has_authenticated_moments": False,
+        "source_dual_U_note": (
+            "CERTIFIED alternate lower via primitive K-duality, full (Gv)' "
+            "and ||g'||_L1<11/40; no claim that L2 projection contracts H1. "
+            "Can be weaker than inherited U=0 floor. Moment subtraction is "
+            "mathematically available but source-attested derivative moments "
+            "have not been computed."
+        ),
         "upper_bracket_min_eig_lower_by_parity": {k: str(v) for k, v in up_eig.items()},
         "upper_bracket_min_eig_lower": str(up_min),
         "upper_bracket_max_eig_upper_by_parity": [str(up_max[0]), str(up_max[1])],
@@ -445,7 +493,9 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
         "certified": True,
         "lower_bracket_mode": ("INHERITED_WB4_ZERO_SHIFT_CAP: S_4 >= A_4 - (121/32) W_L2(low), "
                                "U-independent and rigorous. Per-U residual-theorem tightening "
-                               "A_4 - L_U - 50 T_{r_U} needs the open 3C modulus; diagnostic only."),
+                               "A_4 - L_U - 50 T_{r_U} needs the open 3C modulus; diagnostic only. "
+                "A separate CERTIFIED U-dependent primitive-dual alternative is "
+                "returned as source_dual_U_lower_bracket, possibly weaker than this floor."),
         "first_window_only_not_RH": True,
         "nontrivial_zero_coordinates_used": False,
         "RH_proved": False,
