@@ -1,0 +1,15 @@
+# SUCC source-covariant IMS & finite Fourier witness claim supplement
+
+Research-only. Source parent #154, unmodified Suzuki blob `0cc8510b71d178fc79e8d410a86d8b6014cf9178`. The complete signed Weil distribution is known/classically imported. **S4 sign OPEN; RH OPEN.** No nontrivial-zero data used.
+
+| Claim | Paper / model status | What is *not* justified |
+|---|---|---|
+| SCIMS-01 | PAPER DERIVED from authentic signed screw function: exact Gamma jump, genuine prime-power `log n` shifts, contact and both polar channels in primitive coordinates | The positive Gamma piece is not the full Weil form; a prime correlation may be zero |
+| SCIMS-02 | CLASSICAL algebra: source finite-support logarithmic placement intertwines `V_p` with `log p` translation; the affine SUCC/FUCC braid survives | No Hilbert unitary identification; additive SUCC has state-dependent logarithmic increment |
+| SCIMS-03 | PAPER DERIVED, EXACT FINITE MODEL: nonlocal Gamma IMS and prime-shift interface formulas with signed polar reassembly | No dropping interface channels and no assumption their signs are positive; discrete toy matrices are not the authentic Weil source |
+| SCIMS-04 | CLASSICAL: continuous chart globally commuting with both incommensurate `log2` and `log3` translations must be constant | No claim that all finite tests have nonzero prime correlations or that local partitions are prohibited |
+| SCIMS-05 | PAPER DERIVED, SOURCE-CONDITIONAL EXACT RATIONAL GATE: authentic Gamma multiplier dominates `(4/5)log|xi|`; negative original fixed-window test implies at least half primitive Fourier mass below explicit source radius | No actual negative test is found; no global all-radius cutoff; the cutoff is very conservative |
+| SCIMS-06 | PAPER DERIVED: finite rational Fourier grid of `2^49` readouts for `a=1/2` would capture more than one third of a negative test's primitive norm; fixed-radius finite negative index follows by trace | Sampling an unknown test is not a negativity certificate or physical source access; WB4's <=4 index at a=1/2 is much stronger |
+| SCIMS-07 | OPEN MOONSHOT: quantitative prime-covariant nonlocal IMS operator bound small enough to decide authentic S4 and eventually all supports | Need source-specific cross compensation, true high response, signed polar terms and all-radius transport |
+
+**Validations:** standalone isolated tests, deterministic exact receipt; exact-head hosted SUCC package source gate must be checked separately. The mathematical proofs are in [`SOURCE_COVARIANT_IMS_AND_BAND_CUTOFF.md`](../research/2026-10-17/SOURCE_COVARIANT_IMS_AND_BAND_CUTOFF.md). No automatic transfer to YEAN and no new formal Lean analysis theorem claimed.
