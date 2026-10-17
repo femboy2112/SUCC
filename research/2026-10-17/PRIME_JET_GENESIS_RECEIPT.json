@@ -1,0 +1,99 @@
+{
+  "RH_proved": false,
+  "calibration_only_countermodel": {
+    "braid_defects": 28,
+    "first_arch_cell_mass": "1",
+    "first_braid_failure": {
+      "Sx": "2",
+      "defect": -1,
+      "generator": "g_0",
+      "q": "2",
+      "rank_q": 2,
+      "rank_qSx": 3,
+      "rank_qx": 2,
+      "x": "1"
+    },
+    "interior_rectangles": 36,
+    "replaced_generator": "3 -> 9/2",
+    "unique_atoms": true
+  },
+  "collision_free_countermodel": {
+    "all_atom_masses_one": true,
+    "atoms": 59,
+    "braid_defects": 66,
+    "first_arch_cell_mass": "1/2",
+    "first_braid_failure": {
+      "Sx": "3/2",
+      "defect": -1,
+      "generator": "g_0",
+      "q": "2",
+      "rank_q": 3,
+      "rank_qSx": 5,
+      "rank_qx": 3,
+      "x": "1"
+    },
+    "interior_rectangles": 89,
+    "replaced_generator": "3 -> 3/2"
+  },
+  "construction": "Pi=J/t; mu=exp_*(Pi); Pi=log_*(mu)",
+  "endpoint_example": {
+    "backward_edges": 1,
+    "forward_edges": 3,
+    "from": "7",
+    "meet": "1",
+    "minimum_fucc_edges": 4,
+    "ratio": "8/7",
+    "to": "8"
+  },
+  "fake_six": {
+    "composite_atom_mass": "2",
+    "source_detects_ghost": true
+  },
+  "genuine_horizon_30": {
+    "atoms": 30,
+    "defects": 0,
+    "first_arch_cell_mass": "1",
+    "interior_braid_rectangles": 33,
+    "rediscovered_primitive_sizes": [
+      "2",
+      "3",
+      "5",
+      "7",
+      "11",
+      "13",
+      "17",
+      "19",
+      "23",
+      "29"
+    ],
+    "unit_atom_masses": true
+  },
+  "global_braid_proved_by_enumeration": false,
+  "missing_five": {
+    "atoms": 24,
+    "observed_five": false
+  },
+  "mutated_jet_scale_2": {
+    "at_two_mass": "2",
+    "rejected": true
+  },
+  "scale_countermodel": {
+    "atoms": 30,
+    "braid_defects": 0,
+    "first_arch_cell_mass": "3",
+    "generator_scale": "q_j -> q_j^2",
+    "interior_rectangles": 33
+  },
+  "scope": "exact finite rational source chart; no universal completeness claim",
+  "signed_completed_Weil_positivity_proved": false,
+  "source_law_forcing_braid_discovered": false,
+  "systematic_holdout": {
+    "exp_log_direct_replay": true,
+    "generator_triples": 56,
+    "systems_with_mass_collisions": 46
+  },
+  "unseen_future_source": {
+    "horizon_101_discriminator": true,
+    "horizon_30_indistinguishable": true
+  }
+}
