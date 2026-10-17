@@ -70,7 +70,7 @@ At Gamma depth J, the parent original-source interval block and positive omitted
 
 The upper is already present in `certified_four_schur_trial`. The lower is the additional **source-verified U-dependent** alternative. It may be weaker than the inherited U=0 floor, so preserve BOTH, never manufacture a matrix maximum, and use either only if it separately certifies the desired sign. Convex rational combinations of two certified lower forms are also valid but cannot establish a sign unless the combination is rigorously checked.
 
-## PDQ-04. The EXACT derivative polynomial-quotient improvement (PROVED; SOURCE MOMENTS NOT YET ATTESTED)
+## PDQ-04. The EXACT derivative polynomial-quotient improvement (PROVED; FULL FOUR SOURCE MOMENTS NOT YET ATTESTED)
 
 Define h_i=G(e_i−Ue_i) in H¹(I) for i=1..4 and let `E_{ji}=int_{−a}^a t^j h_i′(t)dt` (j=0..3), a `4×4` derivative-moment matrix. Let `P_{jk}=int_I t^{j+k}dt`, the **positive definite exact rational polynomial Gram**.
 
@@ -87,16 +87,75 @@ Thus a certified upper bound `H'⪯c²N_U` and a **separately authenticated** de
 \boxed{S_4\succeq M_U-κ^{-1}(c²N_U-E^*P^{-1}E).}\tag{PDQ7}
 \]
 
-This **does** potentially improve the U=0 floor, depending on exact source moments. No tail in the high *Legendre derivative coefficients* is required to state or prove this quotient formula. The missing work shifts to certifying E (which involves source endpoint values and low polynomial moments) and, ideally, improving `H'` beyond its global Young upper. For polynomials the exact moments obey, with a=1/2:
+This **does** potentially improve the U=0 floor, depending on exact source moments. No tail in the high *Legendre derivative coefficients* is required to state or prove this quotient formula. The remaining full-moment work shifts to certifying all four rows of E, while PDQ-04b below source-certifies two endpoint-vanishing polynomial combinations and, ideally, improving `H'` beyond its global Young upper. For polynomials the exact moments obey, with a=1/2:
 
 - E_0=h(a)−h(−a),
 - E_1=a[h(a)+h(−a)]−int h,
 - E_2=a²[h(a)−h(−a)]−2 int t h,
 - E_3=a³[h(a)+h(−a)]−3 int t² h.
 
-Since Gv is in the meanzero carrier, `int h=0`. The other interior integrals can be read from authentic low Galerkin source entries; the **endpoint values still require a new certified source evaluation**, for example exact polynomial-exponential integrals of g_J(a−s)v(s), with certified g−g_J tails. Arbitrary numeric E data must NOT be used in a signed Weil certificate. Future `CertifiedTrial` should consume source-attested E, not a caller's Boolean claim of authenticity.
+Since Gv is in the meanzero carrier, `int h=0`. The other interior integrals can be read from authentic low Galerkin source entries; the **remaining full source endpoint values still require a new certified source evaluation**, for example exact polynomial-exponential integrals of g_J(a−s)v(s), with certified g−g_J tails. Arbitrary numeric E data must NOT be used in a signed Weil certificate. Future `CertifiedTrial` should consume source-attested E, not a caller's Boolean claim of authenticity.
 
 The source-neutral module `four_schur_dual_quotient.py` implements P, exact inverse, exact projection Gram and source-consistency rejection `c²N−E*P⁻¹E ⪰ 0`. It explicitly says a supplied moment matrix is **not** source-authenticated. Fast exact tests exercise counterfeits, projections, parity and a strictly smaller quotient bound on synthetic models.
+
+
+## PDQ-04b. Two real source-CERTIFIED derivative-moment channels without endpoint data
+
+At a=1/2, choose the even/odd polynomials
+
+\[
+\phi_e(t)=t^2-\tfrac14,\qquad \phi_o(t)=t(t^2-\tfrac14).
+\]
+
+Both vanish at the endpoints, are mutually orthogonal and have EXACT rational norms
+
+\[
+\|\phi_e\|_2^2=\tfrac1{30},\qquad \|\phi_o\|_2^2=\tfrac1{840}.
+\]
+
+For h_i=G(e_i-Ue_i), integration by parts gives
+
+\[
+\langle h_i',\phi_e\rangle=-\langle P_1(2t),h_i\rangle=-c_{1i},
+\quad
+\langle h_i',\phi_o\rangle=-\tfrac12\langle P_2(2t),h_i\rangle=-\tfrac12c_{2i}.
+\]
+
+Therefore the degree<=3 polynomial projection energy dominates
+
+\[
+\boxed{\quad \|\Pi_{\le3}h_x'\|^2\ge x^T(30c_1^Tc_1+210c_2^Tc_2)x.\quad}\tag{PDQ8}
+\]
+
+These c1,c2 rows are genuine completed signed Suzuki **low Galerkin rows already authenticated** in the parent source. They preserve true prime2, Gamma parity, half-density, contact and both poles. No unknown endpoint values are needed for this two-dimensional subprojection.
+
+For the finite-J original Gamma stage, c_ji(J) is a sum of authenticated G_J matrix intervals. The omitted authentic Gamma operator has \|G-G_J\|_op <= tau_J, and for every trial input vector v_i one has
+
+\[
+|c_{ji}-c_{ji}^{(J)}|
+\le\tau_J\|P_j\|_2\|v_i\|_2
+\le\tau_J\sum_m|V_{mi}|.\tag{PDQ9}
+\]
+
+Use this exact rational error plus the finite-J source interval radius. If a row c belongs to the componentwise box m±e, then for 0<eta<1,
+
+\[
+cc^T\succeq(1-\eta)mm^T-(\eta^{-1}-1)\|e\|_2^2 I.\tag{PDQ10}
+\]
+
+The proof is the exact scalar square identity (A+B)^2 >= (1-eta)A^2 -(eta^-1-1)B^2, plus |delta·x|^2 <= \|e\|^2 \|x\|^2. Weight the first row by 30 and the second by 210; call the resulting Loewner lower P_van,lo. This matrix can be indefinite: do not clamp its negative part or treat it as a positive source substitute.
+
+Combining the primitive-dual variational theorem and the source moment projection yields an actual source-certified third lower:
+
+\[
+\boxed{\quad S_4\succeq (M_{U,J}^{mid}-r_JI)-
+(121/32)N_U+50P_{\mathrm{van,lo}}.\quad}\tag{PDQ11}
+\]
+
+The authenticated CertifiedTrial implementation now reports its source rows, rational error bounds, moment Loewner correction and third lower matrix, and uses that lower to issue a POSITIVE verdict only if both parity blocks are rigorously PD.
+
+**Open:** source authenticity of the remaining two polynomial derivative moments requiring endpoint evaluations; a sharper source-specific upper bound on the full differentiated convolution energy H'; and the sign of the original S4. The addition is a real original-source-information correction, NOT a claim of global Weil positivity. Independent SymPy polynomial integration confirmed the exact norms 1/30 and 1/840 and the low-channel pairings.
+
 
 ## PDQ-05. Correctness constraints and remaining gate
 
