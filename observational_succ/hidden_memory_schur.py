@@ -335,7 +335,7 @@ def finite_hankel_nonnegative(moments, block_rank):
             'declared_rational_bath_only':True,'completed_Weil_sign_proved':False}
 
 
-def explicit_cell_source_memory_budget(depth=64):
+def explicit_cell_source_memory_budget(depth=64, cell_count=453):
     """Explicit **453-cell**, source-derived high-memory telescope bound.
 
     The cell projection is NOT the jump spectral projection, hence mixed
@@ -360,15 +360,18 @@ def explicit_cell_source_memory_budget(depth=64):
         or src['cell_rank_upper']!=453 or src['high_cell_complement_energy_floor']<=7
         or src['full_negative_budget_upper']!=F(103,16)):
         raise HiddenMemoryError("original source cell/Gamma source contract mismatch")
-    n=453
+    if type(cell_count) is not int or cell_count not in (453,642):
+        raise HiddenMemoryError("only authenticated 453/642 source cell refinements")
+    n=cell_count
+    if not F(3927,500)*(1-F(76,3*n))**2>7:
+        raise HiddenMemoryError("genuine Gamma high-cell energy gate failed")
     squared_coupling_cap=n*(810+1216*n)
-    assert squared_coupling_cap==249901074
     base=F(16,9)*squared_coupling_cap
-    assert base==F(444268576)
+    assert (n,squared_coupling_cap,base) in ((453,249901074,F(444268576)),(642,501711444,F(891931456)))
     return {
         'original_source_blob':src['source_contract']['source_git_blob'],
         'radius':F(1,2),
-        'explicit_equal_cell_observation_rank':453,
+        'explicit_equal_cell_observation_rank':n,
         'observable_cell_mean_projection':True,
         'source_positive_carrier_memory_may_be_nonzero':True,
         'polar_cross_only':False,
@@ -383,13 +386,99 @@ def explicit_cell_source_memory_budget(depth=64):
     }
 
 
-def finite_cell_algebraic_budget(depth):
+def finite_cell_algebraic_budget(depth, cell_count=453):
     """Source-independent Fraction arithmetic part; no original-source gate."""
     if type(depth) is not int or depth<0:raise HiddenMemoryError("nonnegative depth")
-    n=453
+    if type(cell_count) is not int or cell_count not in (453,642):
+        raise HiddenMemoryError("only validated source-conservative equal-cell cuts")
+    n=cell_count
     b=n*(810+1216*n)
-    if b!=249901074 or b*16//9!=444268576:
+    if (n,b,F(16,9)*b) not in ((453,249901074,F(444268576)),(642,501711444,F(891931456))):
         raise ArithmeticError("source paper integer budget drift")
     return {'rank':n,'squared_cross_cap':b,
-            'tail_upper':F(444268576,2**depth),
+            'tail_upper':F(16,9)*b/F(2**depth),
             'source_verified':False}
+
+
+def log2_rational_interval(series_terms=40):
+    """All-rational atanh(1/3) enclosure; no floating-point log oracle."""
+    if type(series_terms) is not int or not 1<=series_terms<=128:
+        raise HiddenMemoryError("finite analytic atanh source series budget")
+    z=F(1,3)
+    total=sum((2*z**(2*k+1)/F(2*k+1) for k in range(series_terms)),F())
+    j=series_terms
+    tail=2*z**(2*j+1)/(F(2*j+1)*(1-z*z))
+    return total,total+tail
+
+
+def exact_prime_cell_shift(values, N, b):
+    """Actual zero-extended integer-cell projection of shift by rational b.
+
+    Correlation C=<F,T_b F> for F=sum_i values_i sqrt(N) 1_cell_i,
+    where cells cover an interval of length 1. No claim that rational b is
+    the true log2; original-source SHA adapter supplies that interval.
+    """
+    v=vec(values);b=q(b)
+    if type(N) is not int or N!=len(v) or b<=0 or b>=1:
+        raise HiddenMemoryError("unit support N cells and genuine positive lag length")
+    alpha=N*b
+    m=alpha.numerator//alpha.denominator
+    f=alpha-m
+    def corr(lag):
+        return sum((v[i]*v[i+lag] for i in range(N-lag)),F()) if 0<=lag<N else F()
+    actual=(1-f)*corr(m)+f*corr(m+1)
+    near=m if f<=F(1,2) else m+1
+    proxy=corr(near)
+    delta=min(f,1-f)
+    total=sum((x*x for x in v),F())
+    error=2*delta*total
+    if abs(actual-proxy)>error:
+        raise ArithmeticError("wrong FUCC lag-to-unit-SUCC shift certificate")
+    return {'true_shift_correlation':actual,'nearest_integer_clock_correlation':proxy,
+            'cell_count':N,'floor_lag':m,'fractional_part':f,
+            'nearest_clock_lag':near,'lag_displacement_error':delta,
+            'correlation_error_cap':error,
+            'source_authentic_log2_claimed':False}
+
+
+def source_prime2_cell_alignment(cell_count=642):
+    """Genuine prime-2 FUCC maps nearly to an integer SUCC cell shift.
+
+    At first-prime window a=1/2, all other Euler independent impulse labels
+    are rejected. Source log2_iv is outward rational and tied to SHA-pinned
+    original signed completed Weil source. Return only certified interval and
+    source phase/density errors, not a certified Weil-sign result.
+    """
+    if type(cell_count) is not int or cell_count not in (453,642):
+        raise HiddenMemoryError("pre-certified source-aligned clock counts 453/642 only")
+    from . import source_weil_hierarchy as src
+    from .tate_suzuki_shorting import verify_original_suzuki_source
+    contract=verify_original_suzuki_source()
+    if src.authenticated_prime_wavefront(F(1,2))!=((2,2),):
+        raise HiddenMemoryError("unfaithful original prime-power wavefront")
+    b=src.log2_iv()
+    phase_lo,phase_hi=cell_count*b.lo,cell_count*b.hi
+    nearest=314 if cell_count==453 else 445
+    eps=max(abs(phase_lo-nearest),abs(phase_hi-nearest))
+    accepted=F(1,200) if cell_count==453 else F(1,2000)
+    if not eps<accepted or not 0<phase_lo<phase_hi<cell_count:
+        raise HiddenMemoryError("source phase alignment interval failed")
+    # actual normalized FUCC quadratic -2w <F,T_log2 F>.
+    # Comparing to nearest-cell SUCC correlation costs at most
+    # 2*w*2*eps ||F||^2 =4*w*eps ||F||^2 <2*eps ||F||^2.
+    w=src.log2_iv()*src.sqrt_inverse(2)
+    if not 0<w.lo<=w.hi<F(1,2):
+        raise HiddenMemoryError("authentic prime half-density invalid")
+    return {
+        'original_source_blob':contract['source_git_blob'],
+        'halfwidth':F(1,2),'true_prime':2,
+        'cell_count':cell_count,'nearest_SUCC_integer_shift':nearest,
+        'source_phase_interval':(phase_lo,phase_hi),
+        'phase_error_certified_upper':eps,
+        'phase_error_simple_rational_upper':accepted,
+        'genuine_prime_weight_interval':(w.lo,w.hi),
+        'prime_quadratic_Succ_vs_Fucc_error_bound_per_unit_norm':2*accepted,
+        'actual_source_prime2_coupling_sparse_two_diagonals':True,
+        'gamma_contact_both_poles_not_in_this_prime_only_approximation':True,
+        'source_first_window_schur_sign_proved':False,'RH_proved':False,
+    }
