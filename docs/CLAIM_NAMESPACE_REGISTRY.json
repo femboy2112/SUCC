@@ -28,6 +28,21 @@
       ]
     },
     {
+      "namespace": "FOUR_SCHUR_DUAL_QUOTIENT",
+      "bare_prefix": "PDQ",
+      "fq_prefix": "PDQ",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_DUAL_QUOTIENT_SCHUR.md"
+      ],
+      "id_count": 6,
+      "status": "MIXED (PROVED PAPER/EXACT FINITE/CONDITIONAL)",
+      "topic": "original four-mode primitive K-duality, moment projection and conditional nested Schur bounds",
+      "code": [
+        "observational_succ/four_schur_dual_quotient.py",
+        "observational_succ/nested_schur_envelopes.py"
+      ]
+    },
+    {
       "namespace": "PASCAL_ROTATED",
       "bare_prefix": "PB",
       "fq_prefix": "PB.PASC",
