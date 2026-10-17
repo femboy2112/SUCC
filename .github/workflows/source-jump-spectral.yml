@@ -44,7 +44,8 @@ jobs:
           import json,os
           from pathlib import Path
           x=json.loads((Path(os.environ['RUNNER_TEMP'])/'jump-spectral-source.json').read_text())
-          assert x['rank_gap_paper']['cell_rank_upper']==262144
+          assert x['rank_gap_paper']['cell_rank_upper']==453
+          assert x['rank_gap_paper']['original_real_Gamma_prefix_rungs']==256
           assert x['original_source_rank_gap']['source_contract']['source_git_blob']=='0cc8510b71d178fc79e8d410a86d8b6014cf9178'
           assert len(x['original_source_primitive_Ritz'])==2
           assert x['original_source_rank_gap']['negative_jump_baseline_index_upper']==5
