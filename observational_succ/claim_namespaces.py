@@ -68,7 +68,7 @@ def fqid(namespace, bare_id):
     # Crucial authority gate: a namespace prefix does NOT grant the authority to
     # mint arbitrary numbered claims. The exact bare ID must occur as the first
     # Markdown table cell of an assigned, registered supplement file.
-    row = re.compile(r"^\\|\\s*" + re.escape(raw) + r"\\s*\\|", re.MULTILINE)
+    row = re.compile(r"^\|\s*" + re.escape(raw) + r"\s*\|", re.MULTILINE)
     if not any(
         row.search((_REPO_ROOT / rel).read_text(encoding="utf-8"))
         for rel in entry["supplement_files"]
