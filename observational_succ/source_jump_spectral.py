@@ -297,7 +297,19 @@ def authenticate_original_jump_rank_budget():
     if not (C.lo>0 and C.hi<F(43,8) and w.lo>0 and w.hi<F(1,2)):
         raise JumpSpectralError('original Gamma prime/contact normalization failed')
     packet=effective_gamma_rank_budget()
+    # Independent inherited ORIGINAL-source WB4 theorem: true four-low
+    # complement positive, so negative index(full signed H) <=4.  Subtracting
+    # one even cosh rank-one can add at most one negative baseline mode.
+    from .tate_weighted_bessel_four_schur import source_parity_split_four_moment_coercivity_certificate
+    wb4=source_parity_split_four_moment_coercivity_certificate()
+    if (wb4['source_suzuki_blob'] !=contract['source_git_blob'] or
+        wb4['global_kappa_lower'] != F(63,500)):
+        raise JumpSpectralError('genuine infinite-source WB4 high positivity not authenticated')
     return dict(packet,
+                negative_jump_baseline_index_upper=5,
+                negative_even_jump_baseline_index_upper=3,
+                negative_odd_jump_baseline_index_upper=2,
+                source_high_WB4_global_kappa=wb4['global_kappa_lower'],
                 source_contract=contract,
                 contact_upper_rational=C.hi,
                 true_prime2_half_density_upper=w.hi,
