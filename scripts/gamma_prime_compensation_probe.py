@@ -12,6 +12,9 @@ from observational_succ.gamma_edge_compensation import (
     buffered_edge_bulk_gluing,countermodel_gluing,source_authenticated_compensation,
 )
 from observational_succ.gamma_prime_phase_lock import phase_lock,source_verified_phase_lock
+from observational_succ.gamma_carleman_gluing import (
+    gamma_ou_dirichlet_channel,touching_carleman_moment_witness,
+    dyadic_gamma_edge_lower,touching_source_gluing_gate)
 
 
 def serialize(v):
@@ -34,6 +37,10 @@ def main():
             'phase_lock_prime_2_j_3':phase_lock(2,3),
             'phase_lock_prime_square_4_j_3':phase_lock(4,3),
             'gluing_example_conditional':buffered_edge_bulk_gluing(Q(1,4096),Q(1,16),Q(1,4),Q(1)),
+            'Gamma_dirichlet_rung_j3':gamma_ou_dirichlet_channel(3),
+            'touching_Carleman_Q4_limiting_witness':touching_carleman_moment_witness(4),
+            'dyadic_four_billion_modes_compressed':dyadic_gamma_edge_lower(Q(1,2**36)),
+            'zero_gap_gluing_conditional_bulk_example':touching_source_gluing_gate(Q(1,2**36),Q(1,4),Q(1,2)),
             'no_ghost_negative_gluing':countermodel_gluing(),
             'authentic_source_installed':False,
             'whole_operator_positive':False,'first_window_S4_sign':'OPEN','RH_proved':False}
@@ -48,6 +55,9 @@ def main():
         assert packet['first_edge_delta_1_32']['total_K_relative_lower']>Q(11,128)
         assert packet['no_ghost_negative_gluing']['negative_joint_energy']==-2
         assert packet['phase_lock_prime_square_4_j_3']['resulting_exact_rational_log_p_multiplier']==Q(1,4**7)
+        assert packet['zero_gap_gluing_conditional_bulk_example']['strict_gluing_condition'] is True
+        assert packet['zero_gap_gluing_conditional_bulk_example']['source_bulk_margin_proved'] is False
+        assert packet['touching_Carleman_Q4_limiting_witness']['positive_carlemann_half_limit_greater_than']>0
         if args.source:
             assert packet['original_source_compensation']['source_checked'] is True
             assert packet['original_source_phase_lock']['source_verified'] is True
