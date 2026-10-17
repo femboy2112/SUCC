@@ -64,6 +64,33 @@ class PhCollisionTests(unittest.TestCase):
         with self.assertRaises(KeyError):
             fqid("NO_SUCH_NAMESPACE", "PH-01")
 
+    def test_wrong_prefix_must_not_mint_a_fake_ph_claim(self):
+        with self.assertRaises(ValueError):
+            fqid("PROFINITE_HILBERT", "TS-01")
+        with self.assertRaises(ValueError):
+            fqid("PRIME_FORM_HEAT", "PB-01")
+
+    def test_nonexistent_number_rejected_even_with_correct_prefix(self):
+        for family, bare in (
+            ("PROFINITE_HILBERT", "PH-99"),
+            ("PRIME_FORM_HEAT", "PH-99"),
+            ("CERTIFIED_FOUR_SCHUR", "CFS-99"),
+        ):
+            with self.subTest(family=family), self.assertRaises(ValueError):
+                fqid(family, bare)
+
+    def test_existing_claims_include_unambiguous_CFS(self):
+        self.assertEqual(fqid("CERTIFIED_FOUR_SCHUR", "CFS-01"), "CFS-01")
+        self.assertEqual(fqid("CERTIFIED_FOUR_SCHUR", "CFS-08"), "CFS-08")
+        self.assertEqual(fqid("PRIME_FORM_HEAT", "PH-15"), "PH.PFH-15")
+
+    def test_invalid_type_and_reversed_prefix(self):
+        with self.assertRaises(ValueError):
+            fqid("PROFINITE_HILBERT", True)
+        with self.assertRaises(ValueError):
+            fqid("PROFINITE_HILBERT", "PH.PROF-01")
+
+
 
 class GuardTests(unittest.TestCase):
     def test_no_unregistered_prefix_collisions(self):
