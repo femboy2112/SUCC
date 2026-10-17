@@ -85,6 +85,12 @@ class CompleteSource(unittest.TestCase):
     def test_nonpositive_reference_rejected_at_eight_cells(self):
         if not self._has_source():self.skipTest('Isolated fixture lacks original protected Suzuki module')
         with self.assertRaises(C.CompletionError):C.authentic_fredholm_feature_gram(8,8)
+    def test_full_Gamma_endpoint_zero_four_dimensional_positivity(self):
+        if not self._has_source():self.skipTest('Isolated fixture lacks original protected Suzuki module')
+        x=C.authentic_endpoint_zero_four_dimensional_compensation(64)
+        self.assertTrue(x['strict_completed_original_source_positive_on_four_dimensional_subspace'])
+        self.assertFalse(x['original_first_window_S4_proved'])
+        self.assertEqual(tuple(sorted(x['source_complete_two_parity_blocks'])),('even_u_odd_primitive','odd_u_even_primitive'))
     def test_authentic_fake_composite_rejected(self):
         if not self._has_source():self.skipTest('Isolated fixture lacks original protected Suzuki module')
         from observational_succ import source_weil_hierarchy as s
