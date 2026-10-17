@@ -7,6 +7,7 @@ from observational_succ.source_minimality import (
     missing_power_infinite_shadow, unique_pointed_clock_map,
     authenticate_prime_word)
 from observational_succ.carry_clock_lift import CarryClock, carry_vs_uncoupled
+from observational_succ.clock_compiler import ClockCompilerSource
 from observational_succ.renewal_rigidity import (
     MUTANT_A, MUTANT_B, mutant_atoms, calibration_atoms,
     renewal_residual, first_unit_cell, affine_counterexample,
@@ -180,6 +181,55 @@ class CarryClockTests(unittest.TestCase):
         with self.assertRaises(SourceLawError): CarryClock(4,2,1.5)
         with self.assertRaises(SourceLawError): CarryClock(100,100)
         with self.assertRaises(SourceLawError): CarryClock(4,2).step((4,0))
+
+
+class FiniteClockCompilerTests(unittest.TestCase):
+    def test_compile_genuine_360_clock_with_new_carry_and_crt(self):
+        source=ClockCompilerSource((2,3,5),'declared-finite-C30')
+        m=source.compile(((2,3),(3,2),(5,1)))
+        self.assertEqual(m.order,360)
+        receipt=m.verify()
+        self.assertTrue(receipt['full_orbit_certified_finite'])
+        self.assertFalse(receipt['all_power_clocks_already_observed_in_parent_source'])
+        self.assertEqual(receipt['carry_events_by_level']['2^1'],180)
+        self.assertEqual(receipt['carry_events_by_level']['2^2'],90)
+        self.assertEqual(receipt['carry_events_by_level']['3^1'],120)
+
+    def test_no_ghost_from_missing_prime_seed(self):
+        source=ClockCompilerSource((2,3,5),'declared-finite-C30')
+        with self.assertRaises(SourceLawError): source.compile(((7,1),))
+        with self.assertRaises(SourceLawError): source.compile(((2,1),(7,1)))
+
+    def test_no_ghost_from_unauthorized_carry(self):
+        source=ClockCompilerSource((2,3,5),'no-carry',allow_carry=False)
+        self.assertEqual(source.compile(((2,1),)).order,2)
+        with self.assertRaises(SourceLawError): source.compile(((2,2),))
+
+    def test_no_ghost_from_unauthorized_crt(self):
+        source=ClockCompilerSource((2,3,5),'no-crt',allow_crt=False)
+        self.assertEqual(source.compile(((2,3),)).order,8)
+        with self.assertRaises(SourceLawError): source.compile(((2,1),(3,1)))
+
+    def test_invalid_source_and_word_guards(self):
+        with self.assertRaises(SourceLawError): ClockCompilerSource((3,2),'wrong-order')
+        with self.assertRaises(SourceLawError): ClockCompilerSource((6,),'fake-composite')
+        with self.assertRaises(SourceLawError): ClockCompilerSource((2,), '')
+        with self.assertRaises(SourceLawError): ClockCompilerSource((2,), 'bad-epoch',-1)
+        s=ClockCompilerSource((2,3,5),'bounded')
+        with self.assertRaises(SourceLawError): s.compile(((2,11),),state_budget=1000)
+        with self.assertRaises(SourceLawError): s.compile(((2,1),(2,1)))
+        with self.assertRaises(SourceLawError): s.compile(((2,0),))
+
+    def test_all_small_finite_powers_reproduce_direct_time_oracle(self):
+        source=ClockCompilerSource((2,3,5),'small-proof-source')
+        for a in range(1,5):
+            for b in range(1,4):
+                for c in range(1,3):
+                    n=(2**a)*(3**b)*(5**c)
+                    if n>800: continue
+                    model=source.compile(((2,a),(3,b),(5,c)),state_budget=800)
+                    self.assertEqual(model.order,n)
+                    self.assertEqual(model.successor(model.state_at(n-1)),model.origin)
 
 
 class RenewalRationalMutationTests(unittest.TestCase):

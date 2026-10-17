@@ -8,6 +8,7 @@ on:
     paths:
       - 'observational_succ/source_minimality.py'
       - 'observational_succ/carry_clock_lift.py'
+      - 'observational_succ/clock_compiler.py'
       - 'observational_succ/renewal_rigidity.py'
       - 'tests/test_source_minimality.py'
       - 'scripts/source_minimality_probe.py'

@@ -86,6 +86,13 @@
       84
     ],
     "pro2_infinite_depth_no_odd_primes": true,
+    "source_gated_clock_compiler_period": 360,
+    "source_gated_compiler_actual_carry_counts": {
+      "2^1": 180,
+      "2^2": 90,
+      "3^1": 120
+    },
+    "source_gated_compiler_did_not_observe_universal_completion": true,
     "squarefree_every_prime_no_prime_square": true,
     "verified_carry_models": 1440
   },

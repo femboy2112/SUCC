@@ -85,6 +85,16 @@ When `p|m`, uncoupled diagonal `(x+1 mod m,y+1 mod p)` has only `m` states in it
 
 **Generative corollary (conditional, paper proved):** If every primitive simple `C_p` can be constructed, its carry update and high-counter memory are source-authorized at every depth, and coprime rooted products are lawful, then all finite periods are constructible. This yields the universal procyclic inverse diagram, whose mathematical completion is `Zhat`. The carry operation supplies (L) constructively; it does **not** generate missing prime species. Finite smoke tests do not verify physical/semantic access to unlimited storage, memory or energy. Exact resource budgets must grow with m,p and depth.
 
+### SM-04B — A finite, proof-producing clock compiler (new source program)
+
+`observational_succ/clock_compiler.py` accepts an explicitly declared passport of *observed primitive simple clock indices*, plus independent capability flags `allow_carry` and `allow_crt`, source ID/epoch and an explicit finite state budget. Given a requested finite prime-power factor word `((p_1,e_1),...,(p_r,e_r))`, it builds each p-adic odometer as an e-digit base-p register with **actual cascaded carries**, then forms the simultaneous product across coprime powers. The resulting transition system has `n=prod p_i^{e_i}` states in **one rooted cycle**. This is not a label-only “expected period”: the generated machine verifies each of the n distinct states against an independent direct modular-time oracle, and returns to the origin exactly at time n.
+
+**Source discipline:** A finite `C_30` may certify primitive seeds 2,3,5 without certifying an already-existing `C_{360}` quotient. Given newly authorized carry and CRT construction actions, however, a *new machine* `C_{360}` can be built. The compiler's receipt explicitly reports `all_power_clocks_already_observed_in_parent_source=false`, and refuses missing seed 7, unauthorized carry, unauthorized CRT, oversized memory budgets or duplicate/fake composite seeds. It does NOT upgrade declared source IDs into a physically authenticated observation; it is a finite program theorem with an auditable transition history.
+
+For `n=2^3*3^2*5=360`, the exact completed orbit has 360 states. The register for 2 carries 180 times to its second digit and 90 times to its third; the register for 3 carries 120 times to its second. In general, over n steps the p-register carry into digit j (1<=j<e) occurs exactly n/p^j times, giving a precise causal-budget/cost observable beyond the mere final arithmetic size.
+
+This compiler proves *finite constructive adequacy conditional on the allowed-source program constructors*. It does not, from one 360-state run, prove a physically executed all-n system or source-independent universal procyclic completion. A uniform program schema plus ordinary induction justifies each finite target in metatheory, with finite time/state resources increasing as the target grows.
+
 ## 5. SM-05: virtual FUCC words are not automatically real source clocks
 
 This is a concrete boundary inherited from PIG #157. At finite stage `C_30`, the simple subgroup indices are {2,3,5}; freely generating words from the extracted primes yields a formal value 4=2^2. But the finite source `C_30` has **no** subgroup of index 4, since 4 does not divide 30. So formal FUCC `V_2^2` is computationally nameable but **not authenticated as an observed clock subgroup**. Similarly a squarefree infinite diagram has all primitive species but none of their square refinements. The new `authenticate_prime_word` reports `formal_free_word_exists` separately from `source_authenticated` and Haar mass. The latter is defined only if that exact finite quotient is supported.
@@ -186,7 +196,7 @@ RH AND ORIGINAL COMPLETED SIGNED WEIL POSITIVITY: OPEN.
 
 ## 9. Implementation, validation and finite evidence limits
 
-New additive source modules: `observational_succ/source_minimality.py`, `observational_succ/carry_clock_lift.py`, `observational_succ/renewal_rigidity.py`. Each uses exact integer/Fraction arithmetic and no numerical ζ, Gamma, nontrivial zero or complex analytic approximation. Test suite `tests/test_source_minimality.py` covers rooted map laws, CRT orbit sizes, 2-adic and squarefree countermodels, infinite same-finite-shadow procyclic sources, source-authenticated word costs, finite carry machines, density-one analytic normalization and genuine renewal/affine falsification. The independent deterministic probe and pinned JSON receipt use fixed systematic finite tests and explicitly **do not** promote them to universal analytic proofs.
+New additive source modules: `observational_succ/source_minimality.py`, `observational_succ/carry_clock_lift.py`, `observational_succ/clock_compiler.py`, `observational_succ/renewal_rigidity.py`. Each uses exact integer/Fraction arithmetic and no numerical ζ, Gamma, nontrivial zero or complex analytic approximation. Test suite `tests/test_source_minimality.py` covers rooted map laws, CRT orbit sizes, 2-adic and squarefree countermodels, infinite same-finite-shadow procyclic sources, source-authenticated word costs, finite carry machines, density-one analytic normalization and genuine renewal/affine falsification. The independent deterministic probe and pinned JSON receipt use fixed systematic finite tests and explicitly **do not** promote them to universal analytic proofs.
 
 To replay from a real SUCC checkout:
 
@@ -216,6 +226,7 @@ The previous PR #157 CI/claim ledger are inherited by the stacked PR. Main and h
 | SM-02 | Simple exposure + power-lift under closure equivalent to universality | PAPER PROVED, conditional finite-observer category |
 | SM-03 | Finite transcript shadowed by proper finite **and infinite all-simple** procyclic source | PAPER PROVED / finite EXACT TESTED |
 | SM-04 | Skew-product period `mp/gcd(c,p)` and root-preserving projection | PAPER PROVED / finite EXACT TESTED |
+| SM-04B | Authenticated primitive seeds + allowed carry/CRT compile a verified full finite rooted period; exact carry budgets | PAPER PROVED / finite EXACT TESTED, conditional source constructors |
 | SM-05 | Free finite-stage FUCC word is actual clock subgroup | REFUTED (C30 virtual 4) |
 | SM-06 | Exact shift-renewal forces integer counting comb | PAPER PROVED, assumes global additive-real source law |
 | SM-07 | Collision-free `9/2,35/11` Beurling source has unit first cell, density1, PNT, same critical-strip zero divisor but fails braid | PAPER PROVED from classical ζ continuation/PNT + EXACT FINITE TESTED |

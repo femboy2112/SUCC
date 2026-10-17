@@ -15,6 +15,7 @@ from observational_succ.source_minimality import (
     matching_finite_shadow, rooted_diagonal_orbit, unique_pointed_clock_map,
     authenticate_prime_word, divisors)
 from observational_succ.carry_clock_lift import CarryClock,carry_vs_uncoupled
+from observational_succ.clock_compiler import ClockCompilerSource
 from observational_succ.renewal_rigidity import (
     MUTANT_A,MUTANT_B,mutant_atoms,calibration_atoms,
     renewal_residual,first_unit_cell,affine_counterexample,density_residue_certificate)
@@ -50,6 +51,11 @@ def exact_receipt():
                 clock=CarryClock(m,p,c)
                 assert len(clock.orbit())==clock.period()
                 carry_validation+=1
+    compiler=ClockCompilerSource((2,3,5),'bounded-primitive-seed-receipt')
+    machine=compiler.compile(((2,3),(3,2),(5,1)))
+    compiled=machine.verify()
+    assert compiled['period']==360
+    assert compiled['carry_events_by_level']=={'2^1':180,'2^2':90,'3^1':120}
     triples=0
     for m in range(1,51):
         for n in divisors(m):
@@ -101,6 +107,9 @@ def exact_receipt():
             'C4_by_C2_carry_period':carry['rooted_period'],
             'C4_by_C2_bad_carry_period':corrupt_carry['rooted_period'],
             'verified_carry_models':carry_validation,
+            'source_gated_clock_compiler_period':compiled['period'],
+            'source_gated_compiler_actual_carry_counts':compiled['carry_events_by_level'],
+            'source_gated_compiler_did_not_observe_universal_completion':not compiled['full_profinite_completion_observed'],
         },
         'analytic_camouflage':{
             'replaced_generator_3':str(MUTANT_A),
