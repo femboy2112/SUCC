@@ -177,6 +177,45 @@ def quotient_derivative_cap(norm_gram, gprime_L1=F(11,40),
             "RH_proved":False}
 
 
+
+def vanishing_boundary_moment_lower(mid_rows, error_rows, eta=F(1,2)):
+    """Exact Loewner lower for two original-source derivative projection channels.
+
+    At a=1/2, phi_e=t^2-1/4 and phi_o=t*(t^2-1/4) vanish at both
+    endpoints. For h_i=Gv_i, integration by parts gives
+       <h_i',phi_e> = - <P1(2t), h_i>,
+       <h_i',phi_o> = -(1/2)<P2(2t),h_i>.
+    ||phi_e||^2=1/30 and ||phi_o||^2=1/840, orthogonal by parity.
+    Therefore the true degree<=3 projection energy dominates the matrix
+       30 c1*c1^T + 210 c2*c2^T,
+    where c_j,i=<P_j,Gv_i> are authentic *source* channels.
+
+    Given exact interval rows c_k,i in [mid_k,i +- error_k,i], bound for
+    every x using (a+b)^2 >= (1-eta)a^2 -(eta^-1-1)b^2:
+       c_k c_k^T >= (1-eta) mid_k mid_k^T
+                       -(eta^-1-1)||error_k||^2 I.
+    Returning a matrix that may be INDEFINITE is mathematically valid as a
+    lower Loewner bound; never clamp its negative eigenvalues to zero.
+
+    This function does NOT authenticate rows. Only parent source-gated
+    CertifiedTrial may call it with pinned G_J plus rigorous Gamma-tail errors.
+    """
+    M=_matrix(mid_rows,rows=2)
+    E=_matrix(error_rows,rows=2,cols=len(M[0]))
+    t=_f(eta)
+    if not 0<t<1 or any(x<0 for row in E for x in row):
+        raise DualQuotientError("0<eta<1 and nonnegative row error bounds required")
+    n=len(M[0])
+    result=[[F(0)]*n for _ in range(n)]
+    for weight,row,errors in ((F(30),M[0],E[0]),(F(210),M[1],E[1])):
+        radius2=sum((x*x for x in errors),F())
+        for i in range(n):
+            for j in range(n):
+                result[i][j]+=weight*((1-t)*row[i]*row[j]
+                                      - ((1/t)-1)*radius2*(i==j))
+    return tuple(tuple(row) for row in result)
+
+
 def trace_primitive_polynomial_countermodel():
     """Exact h=P5(2t)-P3(2t): derivative projection is NOT contractive.
 
@@ -192,4 +231,5 @@ def trace_primitive_polynomial_countermodel():
 
 __all__=["DualQuotientError","polynomial_moment_gram",
          "derivative_moment_projection_gram","quotient_derivative_cap",
+         "vanishing_boundary_moment_lower",
          "trace_primitive_polynomial_countermodel"]
