@@ -164,6 +164,9 @@ class MatrixModelTests(unittest.TestCase):
         self.assertEqual(r['source_contract']['source_git_blob'],'0cc8510b71d178fc79e8d410a86d8b6014cf9178')
         self.assertFalse(r['original_signed_Weil_certified'])
         self.assertEqual(r['cell_rank_upper'],262144)
+        self.assertEqual(r['negative_jump_baseline_index_upper'],5)
+        self.assertEqual(r['negative_even_jump_baseline_index_upper'],3)
+        self.assertEqual(r['negative_odd_jump_baseline_index_upper'],2)
 
     def test_authentic_primitive_ritz(self):
         try:
