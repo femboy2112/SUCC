@@ -81,10 +81,41 @@ class HiddenMemoryFiniteTests(unittest.TestCase):
         self.assertLess(x['tail_upper'],F(1,10**9))
         self.assertFalse(x['source_verified'])
 
+    def test_642_source_clock_observer_budget(self):
+        x=H.finite_cell_algebraic_budget(64,642)
+        self.assertEqual(x['rank'],642)
+        self.assertEqual(x['squared_cross_cap'],501711444)
+        self.assertEqual(x['tail_upper'],F(891931456,2**64))
+        self.assertLess(x['tail_upper'],F(1,10**9))
+
     def test_453_cell_depth_halves(self):
         for n in (0,1,8,32):
             self.assertEqual(H.finite_cell_algebraic_budget(n+1)['tail_upper']*2,
                              H.finite_cell_algebraic_budget(n)['tail_upper'])
+
+    def test_rational_log2_453_642_alignment(self):
+        lo,hi=H.log2_rational_interval(40)
+        self.assertTrue(F(313)+F(199,200) < 453*lo <453*hi<F(314))
+        self.assertLess(F(314)-453*lo,F(1,200))
+        self.assertLess(642*hi-F(445),F(1,2000))
+        self.assertGreater(642*lo,F(445))
+
+    def test_true_fractional_cell_shift_sparse(self):
+        v=(F(1),F(2),F(3),F(4),F(5))
+        x=H.exact_prime_cell_shift(v,5,F(11,20))
+        self.assertEqual(x['floor_lag'],2)
+        self.assertEqual(x['fractional_part'],F(3,4))
+        self.assertEqual(x['true_shift_correlation'],F(1,4)*(1*3+2*4+3*5)+F(3,4)*(1*4+2*5))
+        self.assertGreaterEqual(x['correlation_error_cap'],abs(x['true_shift_correlation']-x['nearest_integer_clock_correlation']))
+
+    def test_pure_integer_shift_zero_residual(self):
+        x=H.exact_prime_cell_shift((1,2,3,4,5),5,F(2,5))
+        self.assertEqual(x['lag_displacement_error'],0)
+        self.assertEqual(x['true_shift_correlation'],x['nearest_integer_clock_correlation'])
+
+    def test_prime_cell_invalid_fabricated_atom(self):
+        with self.assertRaises(H.HiddenMemoryError):
+            H.exact_prime_cell_shift((1,2),2,F(3,2))
 
     def test_zero_depth_and_zero_cross(self):
         z=H.rational_memory_telescope(((1,),),((0,),),((1,),),0,step=1,high_gap=1,coupling_sq_upper=0)
@@ -211,6 +242,27 @@ class AuthenticSourceInterface(unittest.TestCase):
         self.assertTrue(packet['source_positive_carrier_memory_may_be_nonzero'])
         self.assertFalse(packet['polar_cross_only'])
         self.assertFalse(packet['first_window_Weil_sign_proved'])
+
+    def test_actual_prime_clock_source_alignment(self):
+        try:
+            from observational_succ.source_weil_hierarchy import log2_iv
+        except ImportError:
+            self.skipTest("isolated test missing frozen authentic prime tape")
+        x=H.source_prime2_cell_alignment(453)
+        y=H.source_prime2_cell_alignment(642)
+        self.assertEqual(x['nearest_SUCC_integer_shift'],314)
+        self.assertEqual(y['nearest_SUCC_integer_shift'],445)
+        self.assertLess(y['phase_error_certified_upper'],F(1,2000))
+        self.assertEqual(y['prime_quadratic_Succ_vs_Fucc_error_bound_per_unit_norm'],F(1,1000))
+
+    def test_real_642_source_clock_observer_budget(self):
+        try:
+            from observational_succ.source_jump_spectral import authenticate_original_jump_rank_budget
+        except ImportError:
+            self.skipTest("original-Suzuki only; CI source must execute")
+        packet=H.explicit_cell_source_memory_budget(64,642)
+        self.assertEqual(packet['explicit_equal_cell_observation_rank'],642)
+        self.assertEqual(packet['source_conditional_memory_tail_upper'],F(891931456,2**64))
 
     def test_original_source_budget_decay(self):
         try:
