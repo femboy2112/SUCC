@@ -214,3 +214,26 @@ The new fail-closed `source_original_four_mode_gamma_clock()` evaluates the eigh
 **Evidence status:** Numerical discovery is not source proof. The previous exact GitHub head `e74c9bf...` did prove J18<0<J19 for P1 under Python3.10/3.13 and original archived source, with zero skips. The **new** expanded four-mode source gate must separately pass exact-head hosted CI before the other three crossings can be promoted. No individual diagonal positivity implies positivity of the joint four-mode Gram, let alone the original four-mode Schur complement or RH.
 
 **Research interpretation:** The Archimedean Gamma tower is not simply a smooth positive background. Its finite, true OU rungs restore positive energy to source test directions at different depths, even with identical active prime2 source tape. That resembles delayed revelation of hidden degrees of freedom in the mathematical SUCC observer telescope, while all signed polar/prime contributions remain fixed. The time/rung number is a mathematical reconstruction index rather than physical elapsed time.
+
+## GB-08 — an explicit *four-body*, source-true Gamma-rung positivity threshold [EXACT SOURCE GATE]
+
+The same direct-original-source numerical discovery reveals that the **full four-mode low Suzuki/Weil Gram** `A_(4,J)` first becomes strictly positive definite at `J=64`. This is stronger than the GB-07 four individual diagonal tests and sharpens the historical WB4/CFS first low positivity at J=64 (previous work did not establish the **minimal** J). The numerical even-block smallest eigenvalues are approximately `−5.85970816e−8` at `J=63` and `+9.24760878e−8` at `J=64`; these decimals are **discovery only**, not proof.
+
+The new `source_original_four_mode_PD_transition()` is a **fail-closed genuine-source certificate**. It calls the original `authentic_full_low_entry(i,j,a=1/2,J)` for the actual six same-parity Gram entries at both J=63 and J=64, retaining the **one real Gamma, contact, genuine p2 half-density, and both completed polar terms**, with the archive's outward rational source arithmetic.
+
+At J=63 it tests the explicit **rational source vector**
+
+\[
+\boxed{u=24P_2(2t)-25P_4(2t),\quad
+Q_{G_{63}}(u)=576A_{22}^{(63)}-1200A_{24}^{(63)}+625A_{44}^{(63)}<0.}
+\]
+
+The upper bound is formed conservatively as `576 A22.hi − 1200 A24.lo + 625 A44.hi` and must be *strictly* negative. At J=64, reflection parity makes `A_(4,64)` two Hermitian 2×2 blocks `(1,3)` and `(2,4)`. Each is **strictly positive** provided its two exact interval diagonal lower endpoints are positive and its exact determinant lower
+
+\[
+\boxed{\det_{\rm lo}=A_{ii}^{lo}A_{kk}^{lo}-\max(|A_{ik}^{lo}|,|A_{ik}^{hi}|)^2>0.}
+\]
+
+The arithmetic checker rejects missing source channels or failed determinant margins. Since each true added Gamma rung is nonnegative as a quadratic form (GB-01), `A_(4,J)` is Loewner nondecreasing in J. Thus the negative J=63 witness proves every earlier `1<=J<=63` fails PSD, and strict J=64 block positivity establishes **the first PD stage at exactly 64**. This needs only one exact negative rational combination at J=63 and a six-entry rational interval matrix at J=64, rather than 63 separate positive-definiteness computations.
+
+**Boundary:** This statement is about the unshorted true **four-low** `A_4` after only J genuine Gamma rungs. It is **not** the signed completed all-test Weil form, not `S_4=A_4-R_4`, and not RH. Even a strict four-low Gram can hide a negative high response. The new source gate awaits exact-head GitHub CI; the earlier source ΓJ18/19 P1 gate was verified independently at the prior head. Once CI passes the four-body stage will be labeled SOURCE-VERIFIED with original SHA and no numerical sign inference.
