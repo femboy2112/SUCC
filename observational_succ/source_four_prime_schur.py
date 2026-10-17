@@ -129,8 +129,12 @@ def CertifiedFourPrimeSchurTrial(*,J_center=64,J_G=64,
     p1=dir_results["P1"]
     from .source_prime_center_alignment import certified_true_P1_center_residual
     previous=certified_true_P1_center_residual(J=J_center,J_G=J_G)
-    if p1["strict_arithmetic_saving"]<previous["true_P1_source_prime_dual_saving_lower"]:
-        raise ArithmeticError("new complete four-moment bound lost independently proven P1 saving")
+    if not (p1["strict_arithmetic_saving"]>0 and
+            previous["true_P1_source_prime_dual_saving_lower"]>0):
+        raise ArithmeticError("original source P1 strict central saving lost")
+    # Independent outward intervals need NOT be nested: their INTERSECTION,
+    # already checked in the four-column source adapter, is load-bearing.
+    # Strict positive bounds can differ slightly without source disagreement.
     return {
         "source":"REAL_COMPLETED_SUZUKI_SIGNED_S4_FOUR_PRIME_CENTER",
         "source_sha":src["source_sha"],

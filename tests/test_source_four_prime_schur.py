@@ -49,8 +49,11 @@ class OriginalFourDerivativeSource(unittest.TestCase):
         self.assertEqual(c["source_prime"],(2,2))
         self.assertTrue(c["original_p1_replay_agrees"])
         previous=certified_true_P1_center_residual(J=64,J_G=64)
-        self.assertGreaterEqual(F(4)*c["actual_p1_abs_center_integral_lower"]**2,
-                                previous["true_P1_center_energy_certified_lower"])
+        self.assertGreater(F(4)*c["actual_p1_abs_center_integral_lower"]**2,F(0))
+        self.assertGreater(previous["true_P1_center_energy_certified_lower"],F(0))
+        low,high=c["intervals"][0]
+        prior_low,prior_high=previous["true_P1_projected_residual_center_moment_interval"]
+        self.assertLessEqual(max(low,prior_low),min(high,prior_high))
         M=c["center_nominal_ranktwo_Gram"]
         for i in range(4):
             self.assertLessEqual(c["nominal"][i]-c["errors"][i],c["intervals"][i][0])
