@@ -38,12 +38,14 @@ def report(use_source=False):
         'two_mode':M.reconstruct_two_hidden_lags(mem_b),
         'opposite_S_signs':True},
      'measured_hidden_gaussian':M.two_read_hidden_gaussian(),
+     'explicit_cell_algebraic_budget':M.finite_cell_algebraic_budget(64),
      'source_contract':'ORIGINAL_SUZUKI_SOURCE_ADAPTER_ONLY_ON_SOURCE_MODE',
      'source_spectral_projector_computed':False,
      'Suzuki_first_window_sign_proved':False,'RH_proved':False,
     }
     if use_source:
         x['authentic_suzuki_first_prime_source']=M.original_source_memory_budget(12)
+        x['authentic_explicit_453_cell_source']=M.explicit_cell_source_memory_budget(64)
         assert x['authentic_suzuki_first_prime_source']['discrete_hidden_memory_tail_upper']==F(121,262144)
     else:x['authentic_suzuki_first_prime_source']='NOT_MOUNTED_STANDALONE'
     return enc(x)
