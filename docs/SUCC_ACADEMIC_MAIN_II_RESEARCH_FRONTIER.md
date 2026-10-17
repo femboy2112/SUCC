@@ -4,8 +4,15 @@ Companion to the [integration audit](SUCC_ACADEMIC_MAIN_II_INTEGRATION_AUDIT_202
 [dependency graph](SUCC_ACADEMIC_MAIN_II_DEPENDENCY_GRAPH.md). Prior frontier:
 [`RESEARCH_FRONTIER_2026-10-15.md`](RESEARCH_FRONTIER_2026-10-15.md).
 
-**RH PROVED: NO. The Riemann hypothesis remains open.** No result in this integration constructs the
-signed completed Weil form, and no positive covariance / Gram / Galerkin block is identified with it.
+**RH PROVED: NO. The Riemann hypothesis remains open.** The completed *signed* Weil distribution itself is
+already **classically identified** — constructed in
+[`research/2026-10-15/TATE_TO_WEIL_DISTRIBUTION.md`](../research/2026-10-15/TATE_TO_WEIL_DISTRIBUTION.md)
+§4–5 and recorded as claim **CTW-08**, subject to the imported Tate reconstruction, meromorphic
+continuation, functional equation and the classical contour / zero-count estimates (no nontrivial zero
+positions are construction inputs). What no result here or upstream supplies is a **noncircular
+source-derived positive factorization** of that signed distribution, and **no positive covariance / Gram /
+Galerkin block is identified with it**. Existence of the signed form is *not* its positivity; the latter is
+the open, RH-hard object (the `S_4 = A_4 − R_4` sign below).
 
 ---
 
@@ -31,8 +38,14 @@ their original labels; this crosswalk is an **additive** navigation aid, not a r
 Lawful source-indexed carriers and the arithmetic/analytic interfaces between them: unit→prime weighted
 SUCC equivalence (#136/#138), the SUCC-λ observation calculus and collective observers (#139/#143/#144),
 three consistent Gamma representations and a prime-FUCC Tate–Mellin transport (#141/#142/#145/#146), and
-exact prime-active signed Weil spline certificates (#147). It constructs **pieces** of the original signed
-Weil operator and **finite** spectral certificates — never the completed signed form itself.
+exact prime-active signed Weil spline certificates (#147). Within its own PRs this integration constructs
+**pieces** of the original signed Weil operator and **finite** spectral certificates; it does not rebuild
+the completed signed *distribution* itself — because that object is **already classically identified**
+upstream (claim **CTW-08**,
+[`TATE_TO_WEIL_DISTRIBUTION.md`](../research/2026-10-15/TATE_TO_WEIL_DISTRIBUTION.md) §4–5, subject to the
+imported Tate / continuation / functional-equation / contour package). What is *never* supplied — here or
+upstream — is a source-derived **positive factorization** of that signed form; the gap is positivity, not
+existence.
 
 ## 2. Strongest established results (within stated source hypotheses)
 
