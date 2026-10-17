@@ -48,5 +48,7 @@ jobs:
           python -m unittest discover -s tests -p 'test_piecewise_suzuki_integrator.py' -v
           python -m unittest discover -s tests -p 'test_contact_ladder_projection.py' -v
           python -m unittest discover -s tests -p 'test_piecewise_suzuki_high_holdout.py' -v
+      - name: Source-only Gamma-depth four-mode S4 signed Loewner sweep
+        run: python scripts/source_four_schur_gamma_sweep.py
       - name: Produce reproducible original source 4x4 Schur certificate
         run: python scripts/source_full_four_prime_schur_probe.py
