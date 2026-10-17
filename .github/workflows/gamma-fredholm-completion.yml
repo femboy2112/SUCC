@@ -32,7 +32,7 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_gamma_fredholm_completion.py' -v > "$RUNNER_TEMP/completion-tests.txt" 2>&1 || { cat "$RUNNER_TEMP/completion-tests.txt"; exit 1; }
           cat "$RUNNER_TEMP/completion-tests.txt"
-          grep -q 'Ran 21 tests' "$RUNNER_TEMP/completion-tests.txt"
+          grep -q 'Ran 22 tests' "$RUNNER_TEMP/completion-tests.txt"
           grep -q '^OK$' "$RUNNER_TEMP/completion-tests.txt"
           if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/completion-tests.txt"; then exit 1; fi
       - name: Replay exact source fifth-mode sign reversal and finite feature Gram
@@ -48,7 +48,7 @@ jobs:
           assert F(p['J64_full_signed_source_energy'][1])<0
           assert F(p['complete_true_gamma_energy_lower'])>0
           assert p['original_S4_positive_proved'] is False
-          assert r['authentic_J8_feature_gram']['dimension']==10
+          assert r['authentic_J8_feature_gram']['dimension']==18
           assert r['authentic_J8_feature_gram']['source_positivity_certified'] is False
           assert r['RH_proved'] is False
           PY
