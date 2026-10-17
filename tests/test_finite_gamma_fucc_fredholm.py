@@ -167,6 +167,15 @@ class AuthenticSourceTests(unittest.TestCase):
         self.assertEqual(out['source_sha'],'0cc8510b71d178fc79e8d410a86d8b6014cf9178')
         self.assertFalse(out['original_full_Schur_sign_proved'])
 
+    def test_actual_four_low_J63_to_J64_first_PD(self):
+        if not self._has_source():self.skipTest('isolated environment without authentic SUCC modules')
+        out=A.source_original_four_mode_PD_transition()
+        self.assertEqual(out['first_strict_positive_four_low_gram_gamma_J'],64)
+        self.assertEqual(out['negative_63_rung_original_rational_test'],(0,24,0,-25))
+        self.assertLess(F(out['negative_63_rung_test_energy_strict_upper']),0)
+        self.assertTrue(out['four_low_A4_positive_CERTIFIED'])
+        self.assertFalse(out['four_low_S4_positive_CERTIFIED'])
+
     def test_true_source_only_prime2(self):
         if not self._has_source():self.skipTest('isolated environment without authentic SUCC modules')
         from observational_succ import source_weil_hierarchy as src
