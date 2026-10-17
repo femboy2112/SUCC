@@ -242,19 +242,35 @@ def exact_polar_schur(operator, eigenvalues, contact, cosh, sinh, cutoff, reflec
     }
 
 
-def effective_gamma_rank_budget():
-    """All-rational PAPER constants; actual original source separately checked.
+def exact_gamma_prefix_multiplier(radius, rungs):
+    """Entirely rational finite prefix of the ORIGINAL real-Gamma symbol.
 
-    At a=1/2, mGamma(xi)>=4/5 log|xi| and log2>69/100.  For
-    R=2^16, the uniform cell-average approximation with cell size 1/(4R)
-    produces a codimension-4R subspace on which E_Gamma(F)>=2783/375 ||F||².
-    Thus source jump eigenprojector for eigenvalues <=7 has rank <=4R.
-    This function DOES NOT COMPUTE the infinite spectral projector.
+    Each d=4j+1 is a genuine Gamma OU rung, not an independent arithmetic
+    source/prime.  Every term increases with |xi|, and omitted terms are PSD.
     """
-    R=2**16
-    mu=F(4,5)*16*F(69,100)
-    # pi > 3 implies cell size h=1/(4R) satisfies hR/pi <1/12
-    coercivity=mu*F(11,12)**2
+    if type(radius) is not int or radius<1 or type(rungs) is not int or not 1<=rungs<=4096:
+        raise JumpSpectralError('positive integer Gamma multiplier inputs')
+    R=radius
+    return sum((F(16*R*R,(4*j+1)*(4*R*R+(4*j+1)**2))
+                for j in range(rungs)),F())
+
+
+def effective_gamma_rank_budget():
+    """Source *PAPER* spectral rank bound with direct finite Gamma coefficient.
+
+    True 256-rung mGamma(76)>3927/500 (Fraction EXACT).  On the kernel of
+    averaging over 453 cells in I=(-1/2,1/2):
+      E_gamma(F) >= [3927/500]*(1-76/(3*453))² ||F||² > 7||F||².
+    Any source jump spectral low subspace at eigenvalue<=7 therefore has
+    dimension <=453.  No original jump eigenvector is computed here.
+    """
+    R=76; J=256; N=453
+    gamma_prefix=exact_gamma_prefix_multiplier(R,J)
+    finite_floor=F(3927,500)
+    if not gamma_prefix>finite_floor:
+        raise ArithmeticError('source real-Gamma rung lower bound failed')
+    # ||F_R - cell_average(F_R)|| <=h R/pi ||F|| and pi>3; h=1/N.
+    coercivity=finite_floor*(1-F(R,3*N))**2
     cap_M=F(51,8)
     cap_s_sq=F(1,32)
     B=cap_M+2*cap_s_sq
@@ -265,9 +281,13 @@ def effective_gamma_rank_budget():
         'radius':F(1,2),
         'cutoff':cutoff,
         'frequency_band_radius':R,
-        'cell_rank_upper':4*R,
-        'band_Gamma_energy_floor':mu,
+        'original_real_Gamma_prefix_rungs':J,
+        'Gamma_exact_prefix_greater_than':finite_floor,
+        'Gamma_source_prefix_checked_in_exact_Fraction':True,
+        'cell_rank_upper':N,
+        'band_Gamma_energy_floor':finite_floor,
         'high_cell_complement_energy_floor':coercivity,
+        'legacy_crude_cell_rank_upper':262144,
         'negative_source_potential_upper':cap_M,
         'sinh_norm_squared_upper':cap_s_sq,
         'full_negative_budget_upper':B,
