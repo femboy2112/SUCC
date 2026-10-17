@@ -14,7 +14,8 @@ from observational_succ.gamma_edge_compensation import (
 from observational_succ.gamma_prime_phase_lock import phase_lock,source_verified_phase_lock
 from observational_succ.gamma_carleman_gluing import (
     gamma_ou_dirichlet_channel,touching_carleman_moment_witness,
-    dyadic_gamma_edge_lower,touching_source_gluing_gate)
+    dyadic_gamma_edge_lower,touching_source_gluing_gate,
+    high_bulk_moment_gluing_algebra,original_source_high_bulk_gluing)
 
 
 def serialize(v):
@@ -42,11 +43,13 @@ def main():
             'dyadic_four_billion_modes_compressed':dyadic_gamma_edge_lower(Q(1,2**36)),
             'zero_gap_gluing_conditional_bulk_example':touching_source_gluing_gate(Q(1,2**36),Q(1,4),Q(1,2)),
             'no_ghost_negative_gluing':countermodel_gluing(),
+            'enlarged_halfwidth_WB4_to_touching_bulk_conditional':high_bulk_moment_gluing_algebra(),
             'authentic_source_installed':False,
             'whole_operator_positive':False,'first_window_S4_sign':'OPEN','RH_proved':False}
     if args.source:
         packet['original_source_compensation']=source_authenticated_compensation()
         packet['original_source_phase_lock']=source_verified_phase_lock(4,3)
+        packet['source_certified_touching_WB4_bulk']=original_source_high_bulk_gluing()
         packet['authentic_source_installed']=True
     if args.verify:
         c=packet['source_constants_independent_rational']
@@ -58,9 +61,13 @@ def main():
         assert packet['zero_gap_gluing_conditional_bulk_example']['strict_gluing_condition'] is True
         assert packet['zero_gap_gluing_conditional_bulk_example']['source_bulk_margin_proved'] is False
         assert packet['touching_Carleman_Q4_limiting_witness']['positive_carlemann_half_limit_greater_than']>0
+        assert packet['enlarged_halfwidth_WB4_to_touching_bulk_conditional']['strict_gluing_condition'] is True
+        assert packet['enlarged_halfwidth_WB4_to_touching_bulk_conditional']['source_bulk_margin_proved'] is False
         if args.source:
             assert packet['original_source_compensation']['source_checked'] is True
             assert packet['original_source_phase_lock']['source_verified'] is True
+            assert packet['source_certified_touching_WB4_bulk']['source_bulk_margin_proved'] is True
+            assert packet['source_certified_touching_WB4_bulk']['strict_gluing_condition'] is True
     print(json.dumps(serialize(packet),sort_keys=True,indent=2))
 
 if __name__=='__main__':main()
