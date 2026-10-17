@@ -37,7 +37,7 @@ jobs:
       - name: Require every actual source test to execute, zero skips
         run: |
           python -m unittest discover -s tests -p 'test_hidden_memory_schur.py' -v 2>&1 | tee "$RUNNER_TEMP/hidden-memory.log"
-          grep -q 'Ran 30 tests' "$RUNNER_TEMP/hidden-memory.log"
+          grep -q 'Ran 33 tests' "$RUNNER_TEMP/hidden-memory.log"
           grep -q '^OK$' "$RUNNER_TEMP/hidden-memory.log"
           if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/hidden-memory.log"; then exit 1; fi
       - name: Replay original source and independent deterministic finite matrices
@@ -53,6 +53,10 @@ jobs:
           assert r['source_low_rank_upper']==453
           assert r['discrete_hidden_memory_tail_upper']=='121/262144'
           assert r['signed_high_gap_lower']=='9/16'
+          cell=d['authentic_explicit_453_cell_source']
+          assert cell['source_conditional_memory_tail_upper']==str(__import__('fractions').Fraction(444268576,2**64))
+          assert cell['explicit_equal_cell_observation_rank']==453
+          assert not cell['polar_cross_only'] and not cell['actual_original_source_cell_cross_computed']
           assert not r['source_high_projector_built'] and not r['source_delayed_resolvent_probes_computed']
           assert d['two_hidden_baths']['opposite_S_signs'] is True
           assert not d['Suzuki_first_window_sign_proved'] and not d['RH_proved']
