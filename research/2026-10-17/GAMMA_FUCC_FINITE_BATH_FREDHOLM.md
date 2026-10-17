@@ -197,3 +197,20 @@ python scripts/verify_provenance.py
 ```
 
 Dedicated GitHub PR exact-head two-interpreter checks must execute every original-source test **without skips**. The full repository suite is separate. No merge, release or archive rewrite without explicit authorization.
+
+## GB-07 — four different clocks of positivity in the *same* authentic arithmetic source [EXACT SOURCE GATE]
+
+Our source-independent numerical discovery found **different first positivity thresholds** for the four original low test directions, after the true signed contact, genuine prime2, and **both** completed polar channels had been included:
+
+| Original unnormalized low SUCC mode `u=P_k(2x)` | Last predicted strictly negative Γ-rung prefix | First predicted strictly positive Γ-rung prefix | Numerical discovery values before / after (not sign proof) |
+|---|---:|---:|---|
+| k=1 (odd u, even primitive) | 18 | **19** | ~−2.33331e−6 / +1.02530e−5 |
+| k=2 (even u, odd primitive) | 9 | **10** | ~−2.38705e−5 / +2.28078e−5 |
+| k=3 (odd u, even primitive) | 19 | **20** | ~−3.10914e−6 / +1.00168e−6 |
+| k=4 (even u, odd primitive) | 6 | **7** | ~−1.09366e−5 / +3.64272e−5 |
+
+The new fail-closed `source_original_four_mode_gamma_clock()` evaluates the eight required **actual source interval inequalities**, `Q_(G_(J−1))(P_k)<0<Q_(G_J)(P_k)`, via `suzuki_legendre_source.authentic_full_low_entry(k,k,J)` and checks the original SHA/tape before admitting them as proved. Because each newly added Gamma rung is a PSD original-source operator (GB-01), the eight strict signs prove the **first** positive rung for each specific mode *without* enumerating all preceding Γ stages. This is a rigorous mathematical example of four source-locked observation channels having different finite-depth information-access thresholds; it is not a redefinition of Γ, not an artificial bath, and not a claim about a person's ability to harvest thermodynamic work.
+
+**Evidence status:** Numerical discovery is not source proof. The previous exact GitHub head `e74c9bf...` did prove J18<0<J19 for P1 under Python3.10/3.13 and original archived source, with zero skips. The **new** expanded four-mode source gate must separately pass exact-head hosted CI before the other three crossings can be promoted. No individual diagonal positivity implies positivity of the joint four-mode Gram, let alone the original four-mode Schur complement or RH.
+
+**Research interpretation:** The Archimedean Gamma tower is not simply a smooth positive background. Its finite, true OU rungs restore positive energy to source test directions at different depths, even with identical active prime2 source tape. That resembles delayed revelation of hidden degrees of freedom in the mathematical SUCC observer telescope, while all signed polar/prime contributions remain fixed. The time/rung number is a mathematical reconstruction index rather than physical elapsed time.
