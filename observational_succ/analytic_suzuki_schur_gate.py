@@ -67,6 +67,30 @@ def CertifiedAnalyticSuzukiTrial(U=(),*,J_deriv=6,J_galerkin=64,
     tail_half=F(2,3)/(d*s)+F(4)/(d*d*s)
     tail_bulk=F(1,d*d)+F(8,d*d*d)
     W=_L2_gram_of_trial(V,rk)
+    # Correlated contact: actual C_inf = chosen rational midpoint + epsilon,
+    # |epsilon| <= source radius. Project Q BEFORE bounding epsilon.
+    # The derivative contact term is exactly epsilon * primitive(v_i).
+    from .direct_quotient_schur import _monomial_gram,_inverse
+    moment_gram_inv=_inverse(_monomial_gram(A_RADIUS,3))
+    source_contact_radius=packet["contact_source_rational_radius"]
+    contact_projection_norm2=[]
+    for i in range(4):
+        p=(F(0),)
+        for k in range(rk):
+            if V[k][i]:
+                primitive=L.poly_primitive_zero_at_left(polys[k+1],A_RADIUS)
+                p=L.poly_add(p,primitive,V[k][i])
+        norm2=L.poly_integral(L.poly_mul(p,p),-A_RADIUS,A_RADIUS)
+        monomial_moments=tuple(
+            sum((coeff*(A_RADIUS**(j+t+1)-(-A_RADIUS)**(j+t+1))
+                 /F(j+t+1) for t,coeff in enumerate(p)),F(0))
+            for j in range(4))
+        polynomial_energy=sum((monomial_moments[j]*moment_gram_inv[j][t]*
+                               monomial_moments[t] for j in range(4) for t in range(4)),F(0))
+        qnorm2=norm2-polynomial_energy
+        if qnorm2<0:
+            raise ArithmeticError("invalid exact contact primitive projection energy")
+        contact_projection_norm2.append(qnorm2)
     tail=[]
     for i in range(4):
         norm2=sum((V[k][i]*V[l][i]*deriv_gram[k+1,l+1]
@@ -76,7 +100,10 @@ def CertifiedAnalyticSuzukiTrial(U=(),*,J_deriv=6,J_galerkin=64,
                               for k in range(rk)),F(0)))
         ibp=2*_sqrt_rat_upper(norm2)*tail_bulk+(endpoint_pos+endpoint_neg)*tail_half
         young=original_gamma_derivative_l1_tail(J_deriv)*_sqrt_rat_upper(W[i][i])
-        tail.append(min(ibp,young))
+        # Gamma remainder and shared contact-source uncertainty are different
+        # source channels. Their L2 upper bounds add by the triangle inequality.
+        tail.append(min(ibp,young)+
+                    source_contact_radius*_sqrt_rat_upper(contact_projection_norm2[i]))
 
     for sector in ((0,2),(1,3)):
         total=sum((tail[i] for i in sector),F(0))
@@ -96,6 +123,28 @@ def CertifiedAnalyticSuzukiTrial(U=(),*,J_deriv=6,J_galerkin=64,
         Qupper[i][j]/(KAPPA_ODD_LOWER if i%2==0 else KAPPA_EVEN_LOWER)
         for j in range(4)) for i in range(4))
     source_positive=exact_psd(lower)
+    # Source interval expressions may have >4300 decimal digits due to exact
+    # rational antiderivatives. Export separate outward Loewner matrices with
+    # finite 18-digit rational denominators, NOT false exact point estimates.
+    from math import floor
+    def compact_bound(matrix, direction):
+        scale=10**18
+        raw=tuple(tuple(F(v.numerator*scale//v.denominator,scale) for v in row)
+                  for row in matrix)
+        # Every element lies within 1/scale above its downward representative.
+        # Gershgorin gives spectral comparison error <= 4/scale.
+        correction=F(4,scale)*(1 if direction=="upper" else -1)
+        return tuple(tuple(raw[i][j]+(correction if i==j else 0)
+                           for j in range(4)) for i in range(4))
+    reported_upper=compact_bound(Qupper,"upper")
+    reported_lower=compact_bound(lower,"lower")
+    if not exact_psd(tuple(tuple(reported_upper[i][j]-Qupper[i][j]
+                           for j in range(4)) for i in range(4))):
+        raise ArithmeticError("outward quotient reporting not Loewner upper")
+    if not exact_psd(tuple(tuple(lower[i][j]-reported_lower[i][j]
+                           for j in range(4)) for i in range(4))):
+        raise ArithmeticError("outward Schur reporting not Loewner lower")
+
     return {
         "source":"PINNED_ORIGINAL_SUZUKI_ANALYTIC_GAMMA_PRIME2_FIRST_WINDOW",
         "verdict":"POSITIVE_CERTIFIED" if source_positive else "AMBIGUOUS",
@@ -103,11 +152,17 @@ def CertifiedAnalyticSuzukiTrial(U=(),*,J_deriv=6,J_galerkin=64,
         "rank":rk,"Gamma_J":J_deriv,"Galerkin_J":J_galerkin,
         "prime2_hinge":(str(packet["genuine_prime2_hinge"].lo),
                         str(packet["genuine_prime2_hinge"].hi)),
-        "finite_quotient_gram_midpoint":tuple(tuple(str(qmat[i][j].mid()) for j in range(4)) for i in range(4)),
+        "finite_quotient_gram_midpoint_diagnostic_18digits":tuple(
+            tuple(str(F(qmat[i][j].mid().numerator*10**18//
+                        qmat[i][j].mid().denominator,10**18))
+                  for j in range(4)) for i in range(4)),
         "finite_quotient_gram_radius_parity":{k:str(v) for k,v in rs.items()},
-        "omitted_Gamma_derivative_L2_upper":tuple(str(x) for x in tail),
-        "true_quotient_gram_upper":tuple(tuple(str(v) for v in row) for row in Qupper),
-        "true_S4_Loewner_lower":tuple(tuple(str(v) for v in row) for row in lower),
+        "omitted_Gamma_and_contact_derivative_L2_upper":tuple(
+            str(x) for x in tail),
+        "contact_source_radius":str(source_contact_radius),
+        "contact_projected_primitive_norm2":tuple(str(x) for x in contact_projection_norm2),
+        "true_quotient_gram_upper":tuple(tuple(str(v) for v in row) for row in reported_upper),
+        "true_S4_Loewner_lower":tuple(tuple(str(v) for v in row) for row in reported_lower),
         "source_S4_lower_psd":source_positive,
         "RH_proved":False,
     }
