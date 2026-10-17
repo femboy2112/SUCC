@@ -169,4 +169,64 @@ python scripts/ordinal_succ_report_probe.py
 python -m unittest discover -s tests -p 'test_*.py'
 ```
 
-Isolated fixture: **30 discovered / 28 passed / 2 skipped source integration**. The dedicated CI must execute and pass all 30, **zero skips**, against the original frozen source under Python 3.10/3.13. No original analytic spectral projector or true-source temporal K_j is computed. No merge, publication or RH claim.
+Isolated fixture: **33 discovered / 30 passed / 3 skipped source integration**. The dedicated CI must execute and pass all 33, **zero skips**, against the original frozen source under Python 3.10/3.13. No original analytic spectral projector or true-source temporal K_j is computed. No merge, publication or RH claim.
+
+## 9. HM-07 — an **explicit 453-cell observer** with finite high gap, no spectral eigenbasis needed
+
+The spectral partition P in HM-01–02 is source-canonical but not yet computationally constructed. There is a **different** mathematically explicit, source-faithful decomposition already latent in JS-02. Let `E_N` be ordinary orthogonal averaging onto the N=453 equal subinterval cells on the primitive interval I=(-1/2,1/2), with normalized indicators `e_i=sqrt(N)1_cell_i`. This is a fully specified, actual finite-rank mathematical observation algebra with no spectral-eigenvector search. The source-proof first-prime Gamma cell inequality from JS-02 establishes
+
+`<F,Lplus F> > 7||F||²` for every `F` with `E_N F=0`.
+
+The *original full signed* high cell block `D_cell=(I-E_N)H(I-E_N)` thus has
+
+`D_cell > (7-B_a) I > (9/16)I`,
+
+where the authentic negative source bound `B_a<103/16` includes full negative contact/prime potential and the completed sinh polar loss. Importantly `E_N` does **not** commute with Lplus. Consequently its positive Gamma+FUCC memory is generally nonzero and its low/high coupling need not have rank two. Claiming the spectral-polar-only cross for E_N is a **REFUTED TYPE MISMATCH**.
+
+### HM-07a — source upper multiplier with actual discontinuous cell tests
+
+For r=|xi|>=1, split the *authentic* nonnegative Gamma OU symbol at true `d_j=4j+1<=2r`. Its low-j sum is at most `5+log(2+r)` using `4/d_j<=1/j` for j>=1. Its positive high-j tail is at most `16r²[(2r)^(-3)+(8(2r)²)^(-1)]<=5/2`. The only authentic p=2 FUCC jump symbol is at most `4w_2<2`. Therefore the **complete positive source** symbol satisfies
+
+`0<=hplus(xi)<10+log(2+r)<=10+8r^(1/4)` for r>=1.
+
+For 0<=r<=1, the Gamma symbol is increasing in r and the genuine p=2 trigonometric component is also increasing because `r log2<1<pi`; the previous estimate at r=1 gives `hplus<18`. These are simple analytic source bounds, not a reconstructed fake Euler product.
+
+The normalized interval indicator has exact unitary Fourier magnitude
+
+`|Fhat(e_i)(xi)|²=(N/(2pi)) |2sin(xi/(2N))/xi|² <=(2N)/(pi xi²)`,
+
+and `||e_i||²=1`. Its jump discontinuities are legitimate on the **logarithmic Gamma form domain**: for r>=1, `hplus²<200+128 sqrt(r)`, so the high tail is integrable against `r^-2`. Consequently e_i even belongs to the operator domain of the positive Dirichlet jump generator Lplus (zero-exterior Fourier multiplier, compressed to I). Direct integration and pi>3 give the all-rational uniform estimate
+
+`||Lplus e_i||² <324+(4N/pi)(200+256)<324+608N`.
+
+The original bounded negative potential and **both** rank-one poles satisfy
+
+`||H-Lplus||<=M+2(||c||²+||s||²)<51/8+48/23<9`.
+
+Thus by `(x+y)²<=2x²+2y²`
+
+`||H e_i||²<810+1216 N`.
+
+The true cross block `B_cell=E_N H (I-E_N)` obeys the exact Hilbert–Schmidt upper
+
+`||B_cell||² <= sum_i ||H e_i||² <N(810+1216N)`
+
+`=249901074` at N=453. This is large but finite, and it is derived from the source's actual analytic Gamma/prime symbol, contact, and completed poles. No spectral projector, finite-matrix fitted source, or zero input is required.
+
+### HM-07b — dyadic no-projector memory response bound
+
+With `h=16/9` and `R_cell=(I+h D_cell)^-1<=I/2`, define
+
+`S_cell,k = E_N H E_N -(16/9)sum_(j=1)^k B_cell R_cell^j B_cell*`.
+
+Applying HM-02 with the authentic N=453 source bounds gives the **explicit-source-observer** estimate
+
+**`S_cell,k - 444268576*2^(-k)I <= S_cell <= S_cell,k`.**
+
+At k=64 the absolute operator error is strictly below `2.41e-11`, **provided the k delayed-response matrices are evaluated accurately against the true source**. The constant identity `(16/9)*453*(810+1216*453)=444268576` is exactly checked in Fractions. This is a source-conditional mathematical convergence/budget theorem; we have neither computed the 453x453 original low block nor the high shifted-resolvent memory samples. The finite-cell projectors and their source definitions are explicit; the actual source *values* remain an unresolved certified-integration task.
+
+**Trade-off:** the source-*spectral* P has hidden rank-≤2 polar B and a small error constant 121/64 but unknown eigenvectors; the explicit *spatial* E_N has 453 known observation functions and a huge but explicit error constant 444268576, and necessarily retains Gamma/FUCC high memory. This trade-off is structurally aligned with the Nature experimental observation that choosing an accessible limited interface exposes environmental memory. It does not establish that laboratory work, heat, or physical information has anything to do with the signed Weil form.
+
+**Next effective gate:** compute and certify `E_NHE_N` from the original nonlocal jump kernel and original two poles; then construct certified positive-shift Q_cell solves with two-sided residual errors, rather than merely postulating the `BR^jB*` observations. In particular avoid calling a finite numerical matrix an authentic source projector or creating false independence between repeated measurements.
+
+**HM-07 claim:** SOURCE-CONDITIONAL PAPER upper and exact rational coefficient; dedicated original-source source hash and inherited JS-02 rank/gap packet are replayed. Actual true-source cell matrix, effective Green resolvent and original sign: OPEN.
