@@ -173,6 +173,35 @@ subtracting the *single* even rank-one positive cosh term can add at most one ne
 
 This is a strictly stronger **index/rank bound at the moving threshold M**, not a replacement for the quantitative gap at fixed cutoff 7. An eigenvalue could equal M, and the next spectral gap above M is not source-quantified. Choosing a cutoff just above M could include more than five modes; the computation of actual polar projections and high scalar Green responses is still open. The `source_jump_spectral.authenticate_original_jump_rank_budget()` adapter **replays the original source WB4 infinity-source certificate**, verifies its original source blob and global κ=63/500, and reports the 3/2/5 bounds as conditional paper results. This uses true source coercivity, not a fictitious positive finite compression.
 
+## 3C. An authentic arithmetic baseline is **strictly negative**, yet the completed polar source repairs it (JS-09)
+
+The full installed-original-source integration now evaluates the first two *genuine* primitive Legendre Ritz vectors, without accessing zeros. For \(u=P_1(2t)=2t\) define \(F=Vu=t^2-1/4\); this is an **EVEN** primitive. The strict real-source packet subtracts the entire completed genuine polar pairing **once** from the original signed \(G_J\) in u-coordinates and carries the positive omitted-Gamma tail \(\tau_J\|u\|^2\). At 12 true Gamma modes, exact rational interval arithmetic and the protected source SHA produce
+
+\[
+\boxed{-0.056408<\langle F,(\mathcal L^+-M)F\rangle<-0.056084<0.}\tag{12c}
+\]
+
+The omitted original Gamma contribution has a **positive** sign, so a negative upper endpoint (including the tail) is a true, source-conditional negative direction for the *bare* jump-minus-potential baseline. It is **not** a negative direction of the complete signed Weil form. The already established source WB4 theorem gives complete original four-low \(A_4>0\), hence this same test's **completed** signed energy is positive; the authentic positive completed cosh-polar rank-one term therefore genuinely repairs a negative baseline value. Numerically the signed polar correction is around +0.05625, but the sign assertions rely on source intervals and inherited WB4, not that decimal estimate.
+
+The corresponding **ODD** primitive \(F=VP_2(2t)\) has a strictly positive certified bare-baseline Ritz value in the same source test,
+
+\[
+0.000225<\langle VP_2,(\mathcal L^+-M)VP_2\rangle<0.000420,
+\]
+
+which does **not** imply positivity of the entire odd jump sector.
+
+Since \(\mathcal L^+\) has compact resolvent, (12c) proves at least one genuine **even jump eigenvalue strictly below M**. Combined with inherited WB4 and JS-08,
+
+\[
+\boxed{1\le\#\{\lambda_j(\mathcal L^+_{even})<M\}\le3,\quad
+0\le\#\{\lambda_j(\mathcal L^+_{odd})<M\}\le2.}\tag{12d}
+\]
+
+This is an actual new source-specific spectral *index* certificate, not an invented model and not a false RH counterexample. It determines that the rank-one even polar correction is mathematically essential. **It does not locate any eigenvalue of L+ or prove that the positive polar channel repairs every possible negative baseline direction.** Under a hypothetical proof of complete even-sector positivity, rank-one inertia would force the even bare baseline to have *exactly one* negative eigenvalue. That conditional rigidity suggests testing the lower jump spectrum itself, not endlessly expanding arbitrary positive Gram samples.
+
+**Reproduction:** \`authenticate_original_jump_rank_budget()\` replays WB4; \`authentic_primitive_ritz_packet(1,12)\` certifies the strict negative bare energy with full omitted Γ tail. The dedicated GitHub source test asserts the strict sign; the true source partial integration has its original byte provenance, not a synthetic source label. Hosted 3.10 and 3.13 runs at the earlier head independently printed the same outward rational bounds; the new strict assertion awaits exact-head replay before promotion to hosted PASS.
+
 ## 4. A fully constructive alternative: monotone Fourier-band lower envelopes (JS-04)
 
 A stronger form of “effective partition” avoids needing the exact spectral eigenspaces to write a *finite sufficient sign certificate*.
