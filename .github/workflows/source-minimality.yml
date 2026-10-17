@@ -11,6 +11,9 @@ on:
       - 'observational_succ/clock_compiler.py'
       - 'observational_succ/renewal_rigidity.py'
       - 'tests/test_source_minimality.py'
+      - 'tests/test_claim_namespace_collisions.py'
+      - 'docs/CLAIM_NAMESPACE_REGISTRY.json'
+      - 'docs/CLAIM_SUPPLEMENT_SOURCE_MINIMALITY.md'
       - 'scripts/source_minimality_probe.py'
       - 'research/2026-10-17/SOURCE_MINIMALITY_RECEIPT.json'
       - '.github/workflows/source-minimality.yml'
@@ -31,3 +34,4 @@ jobs:
       - run: python scripts/source_minimality_probe.py --verify
       - run: python -m unittest discover -s tests -p 'test_prime_jet_genesis.py' -v
       - run: python -m unittest discover -s tests -p 'test_profinite_index_genesis.py' -v
+      - run: python -m unittest discover -s tests -p 'test_claim_namespace_collisions.py' -v

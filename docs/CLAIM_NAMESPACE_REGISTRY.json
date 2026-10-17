@@ -104,6 +104,37 @@
       ]
     },
     {
+      "namespace": "SOURCE_MINIMALITY",
+      "bare_prefix": "SM",
+      "fq_prefix": "SM.MIN",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SOURCE_MINIMALITY.md"
+      ],
+      "id_count": 11,
+      "status": "MIXED (CLASSICAL/PAPER_PROVED/REFUTED/UNVERIFIED)",
+      "topic": "source minimality: procyclic observation cofinality, carry-coupled clock lifts, renewal rigidity, Beurling camouflage",
+      "code": [
+        "observational_succ/source_minimality.py",
+        "observational_succ/carry_clock_lift.py",
+        "observational_succ/clock_compiler.py",
+        "observational_succ/renewal_rigidity.py"
+      ]
+    },
+    {
+      "namespace": "SUZUKI_MOMENT_SCHUR",
+      "bare_prefix": "SM",
+      "fq_prefix": "SM.SUZ",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SUZUKI_MOMENT_SCHUR.md"
+      ],
+      "id_count": 9,
+      "status": "MIXED (CLASSICAL/PROVED/REFUTED/UNVERIFIED)",
+      "topic": "authentic Suzuki thirty-moment low-high Schur, parity, compact spectra, Feshbach enclosure",
+      "code": [
+        "observational_succ/suzuki_moment_schur.py"
+      ]
+    },
+    {
       "namespace": "TAIL_SPLIT_ENCLOSURE",
       "bare_prefix": "TS",
       "fq_prefix": "TS.TAIL",
@@ -179,6 +210,15 @@
       ],
       "resolution": "disambiguate by supplement file / fq_prefix (PH.PROF vs PH.PFH); neither historical bare ID renamed",
       "integrity_note": "Genuine distinct-meaning collision: PH in PROOF_TEETH is Profinite Hilbert (PAPER_PROVED, profinite_hilbert.py); PH in PRIME_FORM_HEAT is prime-form heat (CLASSICAL, prime_form_heat.py). Bare PH-01 resolves to PH.PROF-01 and PH.PFH-01 respectively; the two namespaces are disjoint in meaning and live in separate supplement files."
+    },
+    {
+      "bare_prefix": "SM",
+      "namespaces": [
+        "SOURCE_MINIMALITY",
+        "SUZUKI_MOMENT_SCHUR"
+      ],
+      "resolution": "disambiguate by registered supplement file and FQID (SM.MIN for Source Minimality, SM.SUZ for Suzuki Moment Schur); preserve original bare IDs in both supplements",
+      "integrity_note": "Real distinct-meaning collision: SM-01 through SM-09 are reused by SOURCE_MINIMALITY (finite cyclic clock source laws) and SUZUKI_MOMENT_SCHUR (authentic signed Weil/Suzuki Schur). These claim families have different provenance, derivations and RH implications; never merge their identities or assert shared evidence."
     },
     {
       "bare_prefix": "TS",

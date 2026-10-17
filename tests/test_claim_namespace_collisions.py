@@ -109,5 +109,51 @@ class GuardTests(unittest.TestCase):
         )
 
 
+
+class SmCollisionTests(unittest.TestCase):
+    """Disjoint meanings of SM must remain source-typed and stable."""
+
+    def test_sm_namespace_entries_and_explicit_resolution(self):
+        registry = load_registry()
+        entries = [item for item in registry["namespaces"]
+                   if item["bare_prefix"] == "SM"]
+        self.assertEqual(
+            {item["namespace"] for item in entries},
+            {"SOURCE_MINIMALITY", "SUZUKI_MOMENT_SCHUR"},
+        )
+        resolved = [item for item in registry["resolved_collisions"]
+                    if item["bare_prefix"] == "SM"]
+        self.assertEqual(len(resolved), 1)
+        self.assertEqual(
+            set(resolved[0]["namespaces"]),
+            {"SOURCE_MINIMALITY", "SUZUKI_MOMENT_SCHUR"},
+        )
+
+    def test_sm_claims_are_distinct_and_existing_only(self):
+        self.assertEqual(fqid("SOURCE_MINIMALITY", "SM-01"), "SM.MIN-01")
+        self.assertEqual(fqid("SUZUKI_MOMENT_SCHUR", "SM-01"), "SM.SUZ-01")
+        self.assertEqual(fqid("SOURCE_MINIMALITY", "SM-04B"), "SM.MIN-04B")
+        self.assertNotEqual(fqid("SOURCE_MINIMALITY", "SM-09"),
+                            fqid("SUZUKI_MOMENT_SCHUR", "SM-09"))
+        for family, bare in (
+            ("SOURCE_MINIMALITY", "SM-11"),
+            ("SUZUKI_MOMENT_SCHUR", "SM-10"),
+            ("SUZUKI_MOMENT_SCHUR", "SM-04B"),
+        ):
+            with self.subTest(family=family, bare=bare), self.assertRaises(ValueError):
+                fqid(family, bare)
+
+    def test_sm_census_finds_the_two_actual_sources_only(self):
+        census = scan_supplement_prefixes()
+        self.assertEqual(
+            set(census["SM"]),
+            {
+                "docs/CLAIM_SUPPLEMENT_SOURCE_MINIMALITY.md",
+                "docs/CLAIM_SUPPLEMENT_SUZUKI_MOMENT_SCHUR.md",
+            },
+        )
+        self.assertEqual(unregistered_prefix_collisions(), [])
+
+
 if __name__ == "__main__":
     unittest.main()
