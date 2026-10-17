@@ -1,0 +1,113 @@
+{
+  "RH_proved": false,
+  "authentic_source_installed": false,
+  "first_edge_delta_1_32": {
+    "RH_proved": false,
+    "contact_plus_prime_upper": "47/8",
+    "delta": "1/32",
+    "finite_gamma_relative_lower": "144480847986467833/24142663793423175",
+    "gamma_modes": 16,
+    "negative_pole_magnitude_upper": "1/128",
+    "positive_rational_margin": true,
+    "source_checked": false,
+    "support_measure": "1/16",
+    "total_K_relative_lower": "314122705820231849/3090260965558166400",
+    "uniform_11_over_128_if_16_modes": true
+  },
+  "first_window_S4_sign": "OPEN",
+  "gamma_growth_sample": {
+    "RH_proved": false,
+    "exact_used_rung_lower": "1324845430445704889/193141310347385400",
+    "logarithmic_growth": true,
+    "number_of_gamma_rungs": 16,
+    "source_calibration_required": true,
+    "support_length": "1/128",
+    "whole_gamma_K_lower": "2346469/720720"
+  },
+  "gamma_sixteen_mode_exact": {
+    "RH_proved": false,
+    "claimed_K_margin": "11/128",
+    "modal_terms": 16,
+    "partial_sum_better_than": "223/32",
+    "true_gamma_partial_sum": "168623511779891008/24142663793423175",
+    "uniform_K_margin_lower": "314122705820231849/3090260965558166400"
+  },
+  "gluing_example_conditional": {
+    "RH_proved": false,
+    "buffer_gap": "1/16",
+    "bulk_margin_assumption": "1",
+    "bulk_source_coercivity_authenticated": false,
+    "bulk_support_measure": "1/4",
+    "delta": "1/4096",
+    "edge_K_margin": "11/128",
+    "mixed_cross_coefficient_squared_upper": "1225/73728",
+    "positive_if_bulk_proved_and_product_strict": true,
+    "source_overlap_geometry_declaration_required": true
+  },
+  "no_ghost_negative_gluing": {
+    "RH_proved": false,
+    "mathematically_synthetic": true,
+    "negative_joint_energy": "-2",
+    "negative_joint_vector": [
+      "1",
+      "-1"
+    ],
+    "positive_local_diagonals": [
+      "1",
+      "1"
+    ]
+  },
+  "phase_lock_prime_2_j_3": {
+    "RH_proved": false,
+    "e_minus_alpha_log_n": "n^(-2j-1/2)",
+    "exact_rational_times_inv_sqrt_n": "1/64",
+    "gamma_ou_decay_rate": "13/2",
+    "original_euler_half_density": "1/sqrt(n)",
+    "prime_parent": 2,
+    "product_with_prime_weight": "log(p)/n^(2j+1)",
+    "resulting_exact_rational_log_p_multiplier": "1/128",
+    "source_product_not_assumed": true,
+    "true_source_n": 2
+  },
+  "phase_lock_prime_square_4_j_3": {
+    "RH_proved": false,
+    "e_minus_alpha_log_n": "n^(-2j-1/2)",
+    "exact_rational_times_inv_sqrt_n": "1/4096",
+    "gamma_ou_decay_rate": "13/2",
+    "original_euler_half_density": "1/sqrt(n)",
+    "prime_parent": 2,
+    "product_with_prime_weight": "log(p)/n^(2j+1)",
+    "resulting_exact_rational_log_p_multiplier": "1/16384",
+    "source_product_not_assumed": true,
+    "true_source_n": 4
+  },
+  "source_constants_independent_rational": {
+    "RH_proved": false,
+    "analytic_remainders_imported_classical": true,
+    "combined_upper": "1465578122740225622435463229996531277/250000000000000000000000000000000000",
+    "contact": [
+      "5372183419225658765925166795271330247/1000000000000000000000000000000000000",
+      "335761463701664305850441119920761407/62500000000000000000000000000000000"
+    ],
+    "gamma_euler": [
+      "577215664901526044298721387910764833/1000000000000000000000000000000000000",
+      "577215664902496171980612511364554317/1000000000000000000000000000000000000"
+    ],
+    "log2": [
+      "34657359027997265470861606072908661/50000000000000000000000000000000000",
+      "693147180559945309417232121458176581/1000000000000000000000000000000000000"
+    ],
+    "pi": [
+      "3141592653589793238462643383271236577/1000000000000000000000000000000000000",
+      "628318530717958647692528676655971039/200000000000000000000000000000000000"
+    ],
+    "source_import_used": false,
+    "strictly_below_47_over_8": true,
+    "weight2": [
+      "122532267933568398947055352743491891/250000000000000000000000000000000000",
+      "122532267933568399033698750313485649/250000000000000000000000000000000000"
+    ]
+  },
+  "status": "PAPER_DERIVED_LOCAL_SOURCE_CONDITIONAL",
+  "whole_operator_positive": false
+}
