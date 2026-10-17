@@ -148,3 +148,81 @@ def touching_source_gluing_gate(delta, bulk_measure, source_bulk_margin):
             'covers_all_primitive_F_decompositions':False,
             'original_signed_source_all_channel_identity_required':True,
             'RH_proved':False}
+
+
+def high_bulk_moment_gluing_algebra(delta=Q(1, 2**100), bulk_measure=Q(1, 4),
+                                    kappa=Q(63, 500)):
+    """Exact *conditional-on-WB4* arithmetic for a genuinely high-moment bulk.
+
+    The bulk primitive F_b is in H0^1(B), where B is an interval of the stated
+    measure between the two edge strips (it may touch the left strip). Require
+    int_B t^j F_b(t)dt=0 for j=0,...,3. Then u_b=F_b' is orthogonal to
+    t^k for k=0,...,4 on the larger I=(-1/2,1/2), by integration by parts.
+    Thus the **existing original-source** theorem D4(1/2)>=kappa K applies
+    to u_b after extension by zero, and the same source kernel restricts to
+    I_a. This is not automatically true for an arbitrary central bulk.
+
+    The algebraic check here remains conditional until the original WB4
+    package is imported and run by the separately named source verifier below.
+    """
+    d,b,c=map(rational,(delta,bulk_measure,kappa))
+    if c != Q(63, 500):
+        raise CompensationError('only audited original WB4 lower bound 63/500 is admitted')
+    cert=touching_source_gluing_gate(d,b,c)
+    if not cert['strict_gluing_condition']:
+        raise CompensationError('insufficient edge/Gamma compensation for claimed bulk class')
+    if d!=Q(1,2**100) or b!=Q(1,4):
+        raise CompensationError('this exact class-level theorem is pinned to delta=2^-100, beta=1/4')
+    if not (cert['full_source_edge_K_margin_from_dyadic_proof']>Q(42)):
+        raise ArithmeticError('dyadic original Gamma lower bound insufficient')
+    # A transparent exact-rational certificate avoiding any computed pi/log:
+    # sqrt(delta*beta)=2^-51<2^-10, so eta^2< 2(11/7+11/(3*2^10))^2<5,
+    # while c_edge*c_bulk > 42*(63/500)>5.
+    if not (cert['original_gamma_plus_pole_cross_eta_squared_upper'] < Q(5)
+            < Q(42)*Q(63,500)):
+        raise ArithmeticError('original two-chart exact strict PSD inequality failed')
+    return {**cert,
+            'WB4_source_margin_has_to_be_replayed':True,
+            'bulk_H0_1_support_interval_may_touch_edge':True,
+            'bulk_primitive_zeroth_through_third_moments_required':True,
+            'bulk_derivative_high_moment_zeroth_through_fourth':True,
+            'restriction_from_halfwidth_1_2_source_is_exact':True,
+            'bulk_source_margin_certified_by_this_algebra_alone':False,
+            'exact_lower_positive_product_at_least':Q(42)*Q(63,500),
+            'exact_cross_square_under':Q(5),
+            'RH_proved':False}
+
+
+def original_source_high_bulk_gluing():
+    """Actually replay both independent SHA-pinned source gates for SC-09.
+
+    Audits original first-prime edge source plus inherited a=1/2 four-moment
+    parity Bessel coercivity. The latter controls any central F_b with moments
+    through order 3 vanishing, via the zero-extension restriction theorem.
+    Does NOT claim arbitrary central bulk or whole first-window positivity.
+    """
+    from .gamma_edge_compensation import source_authenticated_compensation
+    from .tate_weighted_bessel_four_schur import (
+        source_parity_split_four_moment_coercivity_certificate,
+        KAPPA_GLOBAL_SHARPENED,
+    )
+    delta=Q(1,2**100)
+    base=source_authenticated_compensation(delta)
+    upper=source_parity_split_four_moment_coercivity_certificate()
+    source_sha=base['source_receipt']['source_git_blob']
+    if not (base['source_checked'] and upper['source_suzuki_blob']==source_sha
+            and upper['global_kappa_lower']==KAPPA_GLOBAL_SHARPENED==Q(63,500)
+            and upper['halfwidth']==Q(1,2)
+            and upper['parity_split_valid_by_reflection_commutation']):
+        raise CompensationError('parent source or WB4 signed coercivity authentication failed')
+    packet=high_bulk_moment_gluing_algebra(delta,Q(1,4),KAPPA_GLOBAL_SHARPENED)
+    return {**packet,
+            'source_bulk_margin_proved':True,
+            'bulk_source_margin_certified_by_this_algebra_alone':False,
+            'bulk_source_certifier':'INHERITED_PARITY_SPLIT_WB4_REPLAYED_ON_GENUINE_SOURCE',
+            'edge_original_source_blob':source_sha,
+            'bulk_original_source_blob':upper['source_suzuki_blob'],
+            'bulk_moment_membership_still_required_for_each_test':True,
+            'positivity_applies_only_to_declared_edge_plus_Q4_bulk_grammar':True,
+            'all_radius_Weil_positive':False,
+            'RH_proved':False}
