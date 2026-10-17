@@ -13,7 +13,7 @@ Parent: SUCC #160 @ `b9bb7324e7e7ccbc51e6fe3c5af61d08e238911e`. Original immutab
 | Completed all-radius Weil criterion / RH | OPEN | Needs authentic all-radius noncircular sign mechanism |
 
 Reproduce isolated tests `python -m unittest discover -s tests -p test_gamma_fredholm_completion.py -v` plus `python scripts/gamma_fredholm_completion_probe.py --verify`.
-Source workflow must run **all 23 tests** (zero skips), verify exact frozen source and full `--source --verify` deterministic results; historical parent CI is not proof of this head.
+Source workflow must run **all 24 tests** (zero skips), verify exact frozen source and full `--source --verify` deterministic results; historical parent CI is not proof of this head.
 
 Main paper: `research/2026-10-17/AUTHENTIC_FREDHOLM_COMPLETION_AND_QUASIRH_FRONTIER.md`.
 
