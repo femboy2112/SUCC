@@ -7,7 +7,7 @@ from observational_succ.source_jump_spectral import (
     witness, is_psd, exact_spectral_projectors, exact_polar_schur,
     effective_gamma_rank_budget, authenticate_original_jump_rank_budget,
     authentic_primitive_ritz_packet, canonical_cycle_control,
-    source_fourier_band_certificate_budget, exact_feature_gram_decision,
+    source_fourier_band_certificate_budget, exact_feature_gram_decision, exact_gamma_prefix_multiplier,
 )
 
 
@@ -114,10 +114,12 @@ class MatrixModelTests(unittest.TestCase):
 
     def test_source_ranks_exact(self):
         r=effective_gamma_rank_budget()
-        self.assertEqual(r['frequency_band_radius'],65536)
-        self.assertEqual(r['cell_rank_upper'],262144)
-        self.assertEqual(r['band_Gamma_energy_floor'],F(1104,125))
-        self.assertEqual(r['high_cell_complement_energy_floor'],F(2783,375))
+        self.assertEqual(r['frequency_band_radius'],76)
+        self.assertEqual(r['cell_rank_upper'],453)
+        self.assertEqual(r['original_real_Gamma_prefix_rungs'],256)
+        self.assertEqual(r['band_Gamma_energy_floor'],F(3927,500))
+        self.assertGreater(exact_gamma_prefix_multiplier(76,256),F(3927,500))
+        self.assertEqual(r['high_cell_complement_energy_floor'],F(3927,500)*(1-F(76,3*453))**2)
         self.assertEqual(r['full_negative_budget_upper'],F(103,16))
         self.assertEqual(r['high_signed_spectral_gap_lower'],F(9,16))
         self.assertEqual(r['odd_polar_effective_strength_upper'],F(20,9))
@@ -163,7 +165,7 @@ class MatrixModelTests(unittest.TestCase):
         r=authenticate_original_jump_rank_budget()
         self.assertEqual(r['source_contract']['source_git_blob'],'0cc8510b71d178fc79e8d410a86d8b6014cf9178')
         self.assertFalse(r['original_signed_Weil_certified'])
-        self.assertEqual(r['cell_rank_upper'],262144)
+        self.assertEqual(r['cell_rank_upper'],453)
         self.assertEqual(r['negative_jump_baseline_index_upper'],5)
         self.assertEqual(r['negative_even_jump_baseline_index_upper'],3)
         self.assertEqual(r['negative_odd_jump_baseline_index_upper'],2)
