@@ -7,6 +7,7 @@ from observational_succ.source_direct_quotient_gate import CertifiedSourceDirect
 from observational_succ.source_riesz_high_comparison import coercivity_slack_no_go
 from observational_succ.direct_quotient_schur import exact_psd
 from observational_succ.contact_ladder_projection import exact_contact_low4_certificate
+from observational_succ.source_schur_response_search import source_response_analytic_trial
 
 
 def main():
@@ -18,6 +19,7 @@ def main():
     difference=tuple(tuple(oldq[i][j]-newq[i][j] for j in range(4)) for i in range(4))
     diag_old=tuple(oldq[i][i] for i in range(4))
     diag_new=tuple(newq[i][i] for i in range(4))
+    optimized=source_response_analytic_trial(rank=6,J_source=64,J_deriv=2)
     receipt={
         "source":"PINNED_SUZUKI_FIRST_PRIME",
         "base":"research/direct-quotient-pontryagin-transfer-2026-10-17",
@@ -34,6 +36,13 @@ def main():
         "new_analytic_schur_lower_positive":analytic["source_S4_lower_psd"],
         "operator_comparison_no_ghost":coercivity_slack_no_go(),
         "contact_low4_norms":tuple(str(exact_contact_low4_certificate()["gram"][i][i]) for i in range(4)),
+        "finite_U_genuine_source_search":{
+            "U":optimized["candidate"]["U"],
+            "ridge":optimized["candidate"]["ridge"],
+            "original_source_checked":optimized["genuine_S4_source_audited"],
+            "authentic_first_window_verdict":optimized["genuine_first_window_verdict"],
+            "RH_proved":False,
+        },
         "RH_PROVED":False,
     }
     print(json.dumps(receipt,indent=2,default=str))

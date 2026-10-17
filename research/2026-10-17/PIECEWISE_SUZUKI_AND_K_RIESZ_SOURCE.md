@@ -181,3 +181,10 @@ If both high compressions remain coercive on the correct common form domain, the
 \boxed{S_4(G_{C_2})\preceq S_4(G_{C_1}).}
 \]
 This gives a potential contact-*endpoint* source certification that avoids perturbative contact-tail estimates. The whole \(A,B,D\) source packet and inherited high-sector bound must be changed coherently; changing only the derivative contact in the residual and leaving a trial-energy lower from a different source would be a **no-ghost violation**. This alternative source envelope is a future test, not silently implemented as an RH sign.
+
+
+## 10. Rational finite-source response selection and recertification (PEX-06)
+
+The existing source \`CertifiedTrial\` verifies \(G_J\) and provides exact outward intervals for the authentic low/high Galerkin block. The new \`source_schur_response_search.py\` uses only the exact rational midpoint matrix on original modes \(1,\ldots,m\), \(5\le m\le8\), to form a **candidate** high response \(U\approx (D_{\rm mid}+\lambda I)^{-1}B_{\rm mid}\). If a finite midpoint block is not SPD, a declared positive rational ridge \(\lambda\) is used; no property of that auxiliary matrix is promoted to the original infinite \(D_4\). The response is rounded to fixed-denominator rationals with strict parity zeros. It is then separately re-evaluated by the *complete original-source* analytic first-window Schur lower (pinned source + true Gamma remainder + source parity coercivity). It is not a Hilbert-matrix positivity shortcut.
+
+**Important methodological boundary:** Numerically optimizing a finite or uncertified surrogate and reporting its eigenvalues as original source evidence is disallowed. The candidate is only a search heuristic; the fully signed source and form-domain certificate are the arbiter. A report remaining AMBIGUOUS is an honest failed sign search, not a hidden RH theorem.
