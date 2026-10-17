@@ -51,6 +51,7 @@ jobs:
           assert x['original_source_rank_gap']['negative_jump_baseline_index_upper']==5
           assert x['original_source_rank_gap']['negative_even_jump_baseline_index_upper']==3
           assert x['original_source_rank_gap']['negative_odd_jump_baseline_index_upper']==2
+          assert x['original_source_primitive_Ritz'][0]['baseline_rigorously_negative_on_this_trial'] is True
           for trial in x['original_source_primitive_Ritz']:
               lo,hi=trial['polar_free_baseline_energy_interval']
               print('SOURCE_PRIMITIVE_RITZ',trial['mode'],float(lo.split('/')[0])/float(lo.split('/')[1]) if '/' in lo else float(lo),float(hi.split('/')[0])/float(hi.split('/')[1]) if '/' in hi else float(hi), 'rigorously_negative_baseline=',trial['baseline_rigorously_negative_on_this_trial'])
