@@ -353,3 +353,39 @@ def source_authenticated_fredholm_packet(J=8,N=8):
       'source_prefix_signed_positivity_certified':False,
       'original_Schur_sign_proved':False,'RH_proved':False,
     }
+
+
+def source_original_four_mode_gamma_clock():
+    """Source-authenticated first Γ-rung positivity for each original P1..P4.
+
+    Discovery targets 19/10/20/7 were selected by an independent, explicitly
+    NON-CERTIFIED scipy integral. This checker derives all eight strict sign
+    inequalities from ORIGINAL frozen completed Q-zeta Suzuki interval entries.
+    Every genuine Γ rung is PSD, so bracketing J-1<0<J proves first-positive J
+    without silently checking all earlier integer J or using nontrivial zeros.
+    DOES NOT prove the 4x4 low Gram PSD or Schur sign.
+    """
+    from .tate_suzuki_shorting import verify_original_suzuki_source
+    from .suzuki_legendre_source import authentic_full_low_entry
+    contract=verify_original_suzuki_source()
+    from . import source_weil_hierarchy as src
+    if src.authenticated_prime_wavefront(F(1,2))!=((2,2),):
+        raise FredholmError('fake independent Euler source / wrong prime window')
+    crosses=((1,19),(2,10),(3,20),(4,7))
+    report=[]
+    for mode,J in crosses:
+        before=authentic_full_low_entry(mode,mode,F(1,2),J-1)
+        after=authentic_full_low_entry(mode,mode,F(1,2),J)
+        if not (before.hi<0<after.lo):
+            raise FredholmError(f'authentic Gamma-clock rung {mode},{J} was not rigorously certified')
+        report.append({'true_original_low_mode':mode,
+                       'first_strictly_positive_gamma_rungs':J,
+                       'previous_true_source_energy_interval':(str(before.lo),str(before.hi)),
+                       'crossed_true_source_energy_interval':(str(after.lo),str(after.hi)),
+                       'completed_Gamma_tail_kept_positive':True,
+                       'four_low_Gram_positive_proved_here':False})
+    return {'source_sha':contract['source_git_blob'],
+            'original_signed_completed_polar_pair_retained':True,
+            'genuine_four_mode_first_positive_clock':tuple(report),
+            'no_nontrivial_zeta_zero_coordinates':True,
+            'original_full_Schur_sign_proved':False,'RH_proved':False}
