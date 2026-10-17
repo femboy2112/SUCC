@@ -55,11 +55,27 @@ def fqid(namespace, bare_id):
     entry = _namespace_map().get(namespace)
     if entry is None:
         raise KeyError(f"unknown namespace: {namespace!r}")
-    match = re.match(r"^[A-Z]{2,6}[0-9]*-([0-9]+)([A-Z]?)$", bare_id.strip())
+    if type(bare_id) is not str:
+        raise ValueError("bare claim ID must be a string")
+    raw = bare_id.strip()
+    match = re.fullmatch(r"([A-Z]{2,6}[0-9]*)-([0-9]+)([A-Z]?)", raw)
     if match is None:
         raise ValueError(f"unparseable bare claim ID: {bare_id!r}")
-    number = int(match.group(1))
-    suffix = match.group(2)  # preserved verbatim; not part of the zero-padded slot
+    if match.group(1) != entry["bare_prefix"]:
+        raise ValueError(
+            f"claim {raw!r} has wrong bare prefix for namespace {namespace!r}"
+        )
+    # Crucial authority gate: a namespace prefix does NOT grant the authority to
+    # mint arbitrary numbered claims. The exact bare ID must occur as the first
+    # Markdown table cell of an assigned, registered supplement file.
+    row = re.compile(r"^\\|\\s*" + re.escape(raw) + r"\\s*\\|", re.MULTILINE)
+    if not any(
+        row.search((_REPO_ROOT / rel).read_text(encoding="utf-8"))
+        for rel in entry["supplement_files"]
+    ):
+        raise ValueError(f"claim {raw!r} is not declared in namespace {namespace!r}")
+    number = int(match.group(2))
+    suffix = match.group(3)
     return f"{entry['fq_prefix']}-{number:02d}{suffix}"
 
 
