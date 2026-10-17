@@ -30,8 +30,8 @@ h'_{k,J}(x)=R_{k,J}(x)
 \]
 where
 \[
-R_{k,J}(x)=C_\infty v_k(x)-2I^-_k e^{-x/2}
-+2I^+_k e^{x/2}
+R_{k,J}(x)=C_\infty v_k(x)-2I^-_k e^{x/2}
++2I^+_k e^{-x/2}
 +\sum_{j=0}^{J-1}\left[
 -\frac2{4j+1}\bigl(F_{j,+}(x)+F_{j,-}(x)\bigr)
 +\frac{2e^{-\alpha_j a}}{4j+1}
@@ -41,6 +41,9 @@ R_{k,J}(x)=C_\infty v_k(x)-2I^-_k e^{-x/2}
 Here \(d(e^{\pm\alpha_j x}F_{j,\pm}(x))/dx=e^{\pm\alpha_j x}u_k(x)\), and \(I^\pm_k=\int_I e^{\pm y/2}u_k(y)\,dy\). All coefficients are polynomials in \(x\) with rational coefficients, except genuine source-interval factors \(C_\infty,b,1/\sqrt2,e^{-\alpha_j a},e^{\pm a/2}\). The **single** source activation boundary on \(x\ge0\) is \(b-a\in(0,a)\). Negative-side values are fixed by the original reflection parity.
 
 **Proof.** Substitute source oracle's exact polynomial antiderivatives into its pole, contact and finite-Gamma derivative formulas. For the true prime-2 shifted term, on \(x\ge0\) the shift \(x+b>a\) cannot contribute; \(x-b\) enters the source interval only when \(x>b-a\). The source's \(\Lambda(2)=\log2\) and half-density supply \(b/\sqrt2\). All expressions are finite exponential-polynomials on the two regions. This is an identity of the actual truncated source; it introduces no synthetic kernel. The imported full signed source, its authentic gamma tail and the signs remain separate.
+
+
+**Hostile source-orientation correction (observed and repaired).** An initial analytic reconstruction assigned \(e^{-x/2}\) to the negative pole coefficient and \(e^{+x/2}\) to the positive coefficient. The independently exercised original derivative oracle decisively rejected it (for \(P_2\) at \(x=1/8\), the result differed by \(0.002094012759\ldots\)). The original implementation uses \(\mathrm{exp\_minus}(-x/2)=e^{+x/2}\) in the negative term and \(\mathrm{exp\_minus}(x/2)=e^{-x/2}\) in the positive term. The formula above is corrected; the regression oracle makes wrong pole orientation a killed route, not an editable convention.
 
 ## 3. Exact analytic projected Gram enclosure (PEX-02)
 
