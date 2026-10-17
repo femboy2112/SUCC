@@ -77,11 +77,14 @@ class CompleteSource(unittest.TestCase):
         self.assertFalse(p['original_S4_positive_proved'])
     def test_true_fredholm_feature_gram_J8(self):
         if not self._has_source():self.skipTest('Isolated fixture lacks original protected Suzuki module')
-        p=C.authentic_fredholm_feature_gram(8,8)
-        self.assertEqual(p['dimension'],10)
-        self.assertEqual(len(p['closed_source_W_interval']),10)
+        p=C.authentic_fredholm_feature_gram(8,16)
+        self.assertEqual(p['dimension'],18)
+        self.assertEqual(len(p['closed_source_W_interval']),18)
         self.assertGreater(F(p['positive_baseline_gap_rational']),0)
         self.assertEqual(p['result'],'INCONCLUSIVE_FINITE_GAMMA_SUFFICIENT_TEST')
+    def test_nonpositive_reference_rejected_at_eight_cells(self):
+        if not self._has_source():self.skipTest('Isolated fixture lacks original protected Suzuki module')
+        with self.assertRaises(C.CompletionError):C.authentic_fredholm_feature_gram(8,8)
     def test_authentic_fake_composite_rejected(self):
         if not self._has_source():self.skipTest('Isolated fixture lacks original protected Suzuki module')
         from observational_succ import source_weil_hierarchy as s
