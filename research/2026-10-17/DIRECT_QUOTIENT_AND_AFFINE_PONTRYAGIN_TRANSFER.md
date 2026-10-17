@@ -107,3 +107,21 @@ On Fourier dual \(\widehat{\mathbb Z}\), \(e_n\) is exactly the indicator of \(n
 **Highest-value next discriminator:** Evaluate the *authentic* first-window direct-quotient trial on source-valid \(U,J,\mathrm{grid},\eta\) and report exactly which error term dominates, with the inherited independently certified \(H'-E^*P^{-1}E\) result as a hostile baseline. If the lower is indefinite, do not increase precision blindly: seek source-derived spectral/anisotropic \(C\) and a sound \(D_4\succeq C\) proof. Independently lift the arithmetic transfer to the appropriate Hecke/C*-completion with external reference matching, while guarding event-history loss and the absence of any positivity transport to completed Weil.
 
 **RH PROVED: NO.**
+
+
+## E. Hosted hostile audit and exact midpoint-resolution theorem (DQ-04)
+
+The genuine pinned-source projector-first probe passed on Python 3.10 and 3.13, but **remained AMBIGUOUS**. At U=0, J_deriv=2, grid=8, J_galerkin=64 its exact rational lower diagonal, shown as decimals solely for diagnosis, was approximately (-93.551088, -36.590469, -88.937304, -35.336774). This is MUCH weaker than the inherited B1+B3 Schur lower. The new method is mathematically valid, **not yet a quantitatively better authenticated source bound**. Its global variation/Lipschitz bound dominates the error.
+
+**DQ-04: PROVED, both parities, unrestricted Lipschitz carrier.** For any even N>=2 and L>0, two continuous L-Lipschitz functions on [-1/2,1/2], one odd and one even, are zero at every cell midpoint, have all polynomial moments of degrees 0..3 equal to zero, and have quotient energies exactly
+
+\[
+\|Qf_{\rm odd}\|_2^2 = \frac{L^2}{7211490 N^2},\qquad
+\|Qf_{\rm even}\|_2^2 = \frac{2L^2}{82475415 N^2}.
+\]
+
+**Constructive proof.** On reference cell [-1/2,1/2], let o(t)=P5(2t)-P7(2t) and e(t)=75P4(2t)+13P6(2t)-88P8(2t). Exact orthogonality gives zero moments to degree 3, and both vanish at t=-1/2,0,+1/2. The exact squared norms are 26/165 and 18590/17; coefficient triangle estimates bound derivative suprema by 1066 and 212355, respectively. In each length h=1/N cell centered at c, insert L h o((x-c)/h)/1066 or L h e((x-c)/h)/212355. Endpoint vanishing glues continuously; derivative bounded by L; midpoint data identically zero. Cellwise expansion of (c+ht)^j gives zero global degree<=3 moments. Integrating squared norms over N cells gives the displayed N^-2 energies and reflection parity. A generic upper using only midpoint reports and global L therefore cannot improve upon the *order* N^-2; the implemented upper already has this order. For the authentic Suzuki response space, additional source structure may eliminate these adversarial functions. **This theorem is NOT an RH impossibility or a Suzuki source counterexample.**
+
+## F. Original Pontryagin cross-oracle
+
+The typed affine pullback now accepts SUCC's existing RationalCircleCharacter and fails closed on mismatched source ID or epoch; an exact test compares the transported rational frequency/phase with genuine integer and prime-CRT-projector ProfiniteProgram evaluations. This is a source-type contract, not physical authentication or Bost-Connes C*-completion.

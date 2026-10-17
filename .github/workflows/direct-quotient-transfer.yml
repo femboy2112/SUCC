@@ -48,6 +48,8 @@ jobs:
           python -m unittest discover -s tests -p 'test_affine_pontryagin_transfer.py'
           python -m unittest discover -s tests -p 'test_direct_quotient_schur.py'
           python -m unittest discover -s tests -p 'test_direct_quotient_hidden_residual.py'
+          python -m unittest discover -s tests -p 'test_lipschitz_quotient_resolution.py'
+          python -m unittest discover -s tests -p 'test_affine_pontryagin_cross_oracle.py'
           python -m unittest discover -s tests -p 'test_source_direct_quotient_gate.py'
       - name: Reproduce direct-quotient plus transfer receipt
         run: python scripts/direct_quotient_transfer_probe.py

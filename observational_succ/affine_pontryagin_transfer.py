@@ -180,6 +180,16 @@ class AffineSourceWord:
         a,b=self.normal_form()
         return ((a*r)%1, (b*r)%1)
 
+    def dual_pontryagin_character(self, character):
+        """Source-typed character pullback; phase remains a rational class."""
+        from .pontryagin_source_duality import RationalCircleCharacter
+        if not isinstance(character, RationalCircleCharacter) or (
+            character.source_id, character.epoch
+        ) != (self.source_id, self.epoch):
+            raise TransferContractError("source-indexed character transport mismatch")
+        new_frequency, phase = self.dual_character(character.frequency)
+        return RationalCircleCharacter(new_frequency, self.source_id, self.epoch), phase
+
     def then(self, other):
         if not isinstance(other, AffineSourceWord) or (self.source_id,self.epoch)!=(other.source_id,other.epoch):
             raise TransferContractError("cannot compose histories from unrelated sources")
