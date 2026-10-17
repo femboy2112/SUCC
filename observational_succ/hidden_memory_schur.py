@@ -333,3 +333,63 @@ def finite_hankel_nonnegative(moments, block_rank):
     M=tuple(tuple(a[i+j] for j in range(block_rank)) for i in range(block_rank))
     return {'hankel_matrix':M,'nonnegative':is_psd(M),
             'declared_rational_bath_only':True,'completed_Weil_sign_proved':False}
+
+
+def explicit_cell_source_memory_budget(depth=64):
+    """Explicit **453-cell**, source-derived high-memory telescope bound.
+
+    The cell projection is NOT the jump spectral projection, hence mixed
+    Gamma+FUCC coupling survives and is NOT rank two. Unlike the spectral P
+    route it is exactly defined without computing an infinite eigenspace.
+
+    Source-paper multiplier bound on |xi|>=1: h(xi)<=10+8|xi|^(1/4),
+    and on |xi|<=1: h(xi)<18. For normalized cell indicator e_i,
+    ||L e_i||^2<324+608*N, using its Fourier sinc tail and pi>3.
+    ||(H-L)e_i||<9, hence ||H e_i||^2<810+1216*N.
+    Thus ||P H Q||^2 <= N*(810+1216*N), with N=453.
+    High signed D_cell >=9/16, hstep=16/9 => response tail
+    < 16/9*N*(810+1216*N)*2^-depth =444268576*2^-depth.
+
+    Paper/source-conditional estimate, NOT a numerical calculation of B or K.
+    """
+    if type(depth) is not int or depth<0:
+        raise HiddenMemoryError("nonnegative integer source-memory depth")
+    from .source_jump_spectral import authenticate_original_jump_rank_budget
+    src=authenticate_original_jump_rank_budget()
+    if (src['source_contract']['source_git_blob']!='0cc8510b71d178fc79e8d410a86d8b6014cf9178'
+        or src['cell_rank_upper']!=453 or src['high_cell_complement_energy_floor']<=7
+        or src['full_negative_budget_upper']!=F(103,16)):
+        raise HiddenMemoryError("original source cell/Gamma source contract mismatch")
+    n=453
+    squared_coupling_cap=n*(810+1216*n)
+    assert squared_coupling_cap==249901074
+    base=F(16,9)*squared_coupling_cap
+    assert base==F(444268576)
+    return {
+        'original_source_blob':src['source_contract']['source_git_blob'],
+        'radius':F(1,2),
+        'explicit_equal_cell_observation_rank':453,
+        'observable_cell_mean_projection':True,
+        'source_positive_carrier_memory_may_be_nonzero':True,
+        'polar_cross_only':False,
+        'signed_high_gap_lower':F(9,16),
+        'rational_backward_euler_step':F(16,9),
+        'cell_source_coupling_squared_cap':squared_coupling_cap,
+        'depth':depth,
+        'source_conditional_memory_tail_upper':base/F(2**depth),
+        'actual_original_source_cell_cross_computed':False,
+        'actual_original_source_memory_timeline_computed':False,
+        'first_window_Weil_sign_proved':False,'RH_proved':False,
+    }
+
+
+def finite_cell_algebraic_budget(depth):
+    """Source-independent Fraction arithmetic part; no original-source gate."""
+    if type(depth) is not int or depth<0:raise HiddenMemoryError("nonnegative depth")
+    n=453
+    b=n*(810+1216*n)
+    if b!=249901074 or b*16//9!=444268576:
+        raise ArithmeticError("source paper integer budget drift")
+    return {'rank':n,'squared_cross_cap':b,
+            'tail_upper':F(444268576,2**depth),
+            'source_verified':False}
