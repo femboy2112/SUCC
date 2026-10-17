@@ -1,6 +1,25 @@
 {
+  "Gamma_dirichlet_rung_j3": {
+    "RH_proved": false,
+    "alpha": "13/2",
+    "d": 13,
+    "j": 3,
+    "jump_mass": "4/13",
+    "one_half_dirichlet_prefactor": "1/2",
+    "source_is_original_gamma_only": true
+  },
   "RH_proved": false,
   "authentic_source_installed": false,
+  "dyadic_four_billion_modes_compressed": {
+    "RH_proved": false,
+    "conceptual_true_Gamma_mode_count": 4294967296,
+    "delta": "1/68719476736",
+    "dyadic_group_depth": 32,
+    "full_source_edge_K_margin_from_dyadic_proof": "3023656976383/274877906944",
+    "lower_harmonic_sum": "17",
+    "only_logarithmic_cost_to_describe_many_rungs": true,
+    "source_constants_need_original_gate": true
+  },
   "first_edge_delta_1_32": {
     "RH_proved": false,
     "contact_plus_prime_upper": "47/8",
@@ -109,5 +128,33 @@
     ]
   },
   "status": "PAPER_DERIVED_LOCAL_SOURCE_CONDITIONAL",
-  "whole_operator_positive": false
+  "touching_Carleman_Q4_limiting_witness": {
+    "RH_proved": false,
+    "applies_even_at_four_moment_high_cut": true,
+    "complete_Weil_global_sign": false,
+    "high_moment_cut": 4,
+    "polynomial_norm_squared": "800/143",
+    "positive_carlemann_half_limit_greater_than": "13/90531302400",
+    "touching_gamma_cross_does_not_vanish_in_K_limit": true,
+    "uses_true_gamma_jump_kernel": true
+  },
+  "whole_operator_positive": false,
+  "zero_gap_gluing_conditional_bulk_example": {
+    "RH_proved": false,
+    "bulk_K_margin_assumption": "1/2",
+    "bulk_support_measure": "1/4",
+    "conceptual_true_Gamma_mode_count": 4294967296,
+    "covers_all_primitive_F_decompositions": false,
+    "delta": "1/68719476736",
+    "dyadic_group_depth": 32,
+    "full_source_edge_K_margin_from_dyadic_proof": "3023656976383/274877906944",
+    "lower_harmonic_sum": "17",
+    "only_logarithmic_cost_to_describe_many_rungs": true,
+    "original_gamma_plus_pole_cross_eta_squared_upper": "121001077018798620516894681/24500000000000000000000000",
+    "original_signed_source_all_channel_identity_required": true,
+    "source_bulk_margin_proved": false,
+    "source_constants_need_original_gate": true,
+    "strict_gluing_condition": true,
+    "touching_no_gap": true
+  }
 }
