@@ -1,0 +1,53 @@
+name: Source-covariant SUCC/FUCC IMS and negative-frequency band
+
+on:
+  push:
+    branches: ['research/source-covariant-ims-*']
+  pull_request:
+    paths:
+      - 'observational_succ/source_covariant_ims.py'
+      - 'tests/test_source_covariant_ims.py'
+      - 'scripts/source_covariant_ims_probe.py'
+      - 'research/2026-10-17/SOURCE_COVARIANT_IMS_AND_BAND_CUTOFF.md'
+      - '.github/workflows/source-covariant-ims.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-ims:
+    name: Original arithmetic IMS finite-source checks (${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install mathematical test dependencies
+        run: python -m pip install -e '.[test]'
+      - name: Check immutable original source archive and exact mathematical source identity
+        run: python scripts/verify_provenance.py
+      - name: Exact finite signed IMS, arithmetic braid and Legendre hinge crosscheck (NO SKIPS)
+        run: |
+          python -m unittest discover -s tests -p 'test_source_covariant_ims.py' -v \
+            > "$RUNNER_TEMP/ims-tests.log" 2>&1
+          cat "$RUNNER_TEMP/ims-tests.log"
+          if grep -Eq 'skipped=[1-9]|FAILED \(' "$RUNNER_TEMP/ims-tests.log"; then exit 1; fi
+          grep -q 'Ran 15 tests' "$RUNNER_TEMP/ims-tests.log"
+      - name: Replay genuine completed source gamma/prime finite-band receipt
+        run: python scripts/source_covariant_ims_probe.py --source --verify > "$RUNNER_TEMP/source-covariant-ims.json"
+      - name: Preserve test/source results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-covariant-ims-${{ matrix.python }}
+          path: |
+            ${{ runner.temp }}/ims-tests.log
+            ${{ runner.temp }}/source-covariant-ims.json
+          if-no-files-found: ignore
