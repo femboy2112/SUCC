@@ -238,6 +238,41 @@ negative_index(Q_a) < 4 a R / pi.                           (10)
 
 This proves a finite negative index for **each fixed finite radius under the source formula**; it is not a global RH sign theorem. At a=1/2 this crude estimate is weaker than the inherited WB4 `negative_index<=4`; it may be useful as a general arithmetic radius-dependent spectral horizon when stronger Bessel estimates have not been established. Infinite time-bandwidth resolution at all a remains open.
 
+## 6B. Canonical carrier-derived **spectral** partition and finite-dimensional signed Schur [SCIMS-09]
+
+The positive jump form in SCIMS-08 suggests a more source-coherent partition than multiplying by arbitrary spatial cutoffs. Consider the Friedrichs operator `L_a^+` of the **complete original Gamma+finite-genuine-FUCC positive Dirichlet form** `E_(Gamma+FUCC,a)` on `L2(I)` with zero exterior extension. On the core `Cc^infty(I)`, its Fourier energy is the integral of `h_a^+(xi)|hat F(xi)|²`, with `h_a^+(xi)>=m_Gamma(xi)` and `m_Gamma(xi)->infinity` logarithmically.
+
+**PAPER THEOREM (classical spectral theorem / compact form embedding):** For every fixed finite a with its finite genuine prime-wavefront, `L_a^+` is nonnegative self-adjoint with **compact resolvent**. Proof: its quadratic form is closed by definition from the positive measure, and the unitary Fourier multiplier bound (5) makes all Fourier tails uniformly small on the unit form ball. The functions are supported on fixed compact I, and truncated low Fourier pieces are precompact in `L2(I)` (Hilbert–Schmidt truncated Fourier transform); hence the form-domain embedding is compact. Positive finite-shift contributions change neither compactness nor the Gamma high-frequency lower bound.
+
+Write `c_a=1_I cosh(x/2)`, `s_a=1_I sinh(x/2)`, `M_a=C+2 sum_n w_n`. The **unchanged signed completed source** is exactly the quadratic form of
+
+```
+H_a = L_a^+ - M_a I + 2 |c_a><c_a| - 2 |s_a><s_a|.   (13)
+```
+
+Let `lambda > B_a = M_a + 2||s_a||²` and let `P=1_[0,lambda](L_a^+)`, `Q=I-P`. `P` has finite rank. The **genuine high block** obeys
+
+```
+Q H_a Q >= (lambda - B_a) Q > 0.                     (14)
+```
+
+Because `P` is a spectral projection **of the source-generated combined positive Gamma/FUCC operator**, it commutes with `L_a^+` and with the scalar `M_a I`. Thus *all* mixed low/high coupling is the **at most rank-two original completed polar term**:
+
+```
+P H_a Q = 2 P|c_a><c_a|Q - 2 P|s_a><s_a|Q.       (15)
+```
+
+The high inverse exists **boundedly**, unlike the original compact zero-shift high block in the Legendre-u decomposition. Standard block completion on the form domain yields the exact equivalence
+
+```
+H_a >= 0  <==>  S_lambda := P H_a P
+                - (P H_a Q)(Q H_a Q)^(-1)(Q H_a P) >= 0.  (16)
+```
+
+This is a **finite-dimensional, source-defined sign reduction at each fixed a**. It is **not yet an effective certified finite matrix algorithm**: we do not have arbitrary-precision original-source spectral projectors `P`, a certified realization of the high inverse action on `Qc_a,Qs_a`, or the radius-cofinal uniform inequalities. The preceding Legendre CertifiedTrial has certified exact original-source entries in a different basis but does not directly supply these jump-adapted projectors. A claim of RH from this finite-dimensional equivalence would be false: even one sign at a=1/2 would only prove first-window positivity, and the finite dimensions/radii depend on `a`.
+
+**Why it is worth pursuing:** choosing the **carrier's own** positive jump spectral partition eliminates Gamma and FUCC **cross-block gluing debt by construction**. Only a *rank-two* completed pole interface survives, instead of arbitrary spatial IMS errors. This is a proposed source-adapted computational coordinate system, not proof that negative potential or polar sign defects are harmless. It supplies a more precise E-carrier interpretation of 'the globally coherent corresponding partition'.
+
 ## 7. Consequential next mathematical test [SCIMS-07, OPEN]
 
 The user's proposed 'carrier resonance' becomes a concrete program:
