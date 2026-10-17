@@ -56,6 +56,11 @@ class StandaloneAlgebra(unittest.TestCase):
         with self.assertRaises(C.CompletionError):C.cubic_baseline_inverse_coeff(1,2)
     def test_cell_overlap_exact_odd(self):
         self.assertEqual(C._overlap(F(0),F(1,2),F(1,3),F(1)),F(1,6))
+    def test_full_dimension_ldl_sufficient_certificate(self):
+        self.assertTrue(C.strict_PD_fraction_gram(((F(2),F(1)),(F(1),F(2)))))
+        self.assertFalse(C.strict_PD_fraction_gram(((F(1),F(2)),(F(2),F(1)))))
+        self.assertFalse(C.strict_PD_fraction_gram(((F(1),F(1)),(F(1),F(1)))))
+        self.assertTrue(C.strict_PD_fraction_gram(tuple(tuple(F(2 if i==j else 0) for j in range(18)) for i in range(18))))
     def test_fraction_fixed_rational_model_math(self):
         # A source-independent two-feature mixed signed model.
         q=C.IV(F(1),F(2));self.assertEqual(C.interval_abs_hi(q),2)
