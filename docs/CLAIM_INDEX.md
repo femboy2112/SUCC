@@ -56,6 +56,7 @@ Status vocabulary and the navigation crosswalk:
 | C | TMF-01–10 | certified Gamma×prime-FUCC Tate–Mellin source transport (#146) | CLAIM_SUPPLEMENT_TATE_MELLIN_PRIME_TRANSPORT.md |
 | C | PWS-01–11 | exact prime-active signed Weil spline certificates (#147) | CLAIM_SUPPLEMENT_PRIME_ACTIVE_WEIL_SPLINES.md |
 | D (post-II research) | CFS-01–08 | certified exact two-sided Loewner enclosure of the original four-mode Schur `S_4`, 4↔30 transport, §3C open modulus (branch `research/original-four-schur-certified-trial-2026-10-16`) | CLAIM_SUPPLEMENT_CERTIFIED_FOUR_SCHUR.md |
+| D (post-II research) | PDQ-01–06 | primitive K-dual four-moment quotient, genuine source U-dependent alternative, conditional nested short monotonicity and falsifying derivative countermodel (#150; sign open) | CLAIM_SUPPLEMENT_DUAL_QUOTIENT_SCHUR.md |
 
 Integrity: this integration adds **no** new `O####` rows (the master-ledger `O####` count is unchanged
 from `main`) and introduces **no duplicate `O####` rows** (checked). **One prefix collision is flagged:**
