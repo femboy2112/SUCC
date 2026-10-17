@@ -175,3 +175,30 @@ The original true b=log2 lies in (a,2a), so this proof applies to the **actual f
 The new test model constructs an exact rational 4x5 moment matrix on FIVE pairs of perfectly shift-correlated left/right cells with b=7/10, solves an exact nonzero rational null vector, and verifies all moments vanish while the modeled edge mismatch and center energy are exactly zero. The piecewise-constant model is NOT mislabeled smooth; the smooth theorem comes from the independent finite-codimension argument.
 
 **Implication for RH:** strengthening the original high sector by retaining prime2 energy is legitimate, and its diagonal P5/P6 gains are large, but the operator's nullspace forces any universal Schur proof to use actual coupling alignment, the positive Gamma source, completed polar contacts, or a nontrivial interaction theorem. One cannot close S4 merely by asserting a new uniform prime-induced spectral gap.
+
+
+## 8. Actual original P1 low/high residual overlap with arithmetic surplus (ES-08; pending hosted exact-head source verification)
+
+The previous ES-06 inequality required a **genuine source-derived**, not synthetic, low/high K-dual residual \(g_1=-Q_{\mathcal P_{\le3}}(G P_1(2x))'\). A new independent source adapter evaluates its center moment on a certified fixed C0=[-1/8,1/8] included in the actual prime-2 central strip. Exact symbolic integration of the original (unmodified) finite-J signed Suzuki derivative through C0 retains BOTH completed poles, the original contact scalar, and J REAL Gamma rungs; the genuine prime2 convolution term is exactly absent on C0 (since true log2>5/8). It does NOT fit a free g. Its analytic pole orientation is copied from and checked against the frozen original SHA-pinned source rather than guessed.
+
+The source center derivative integral interval is extended to full Gamma by an independently stated original polynomial B3 differentiated OU tail estimate. For \(d=4J+1\) and genuine Legendre polynomial \(u=P_1(2x)\),
+\[
+\|(G-G_J)u)'\|_2\le 2\|u'\|_2(d^{-2}+8d^{-3})+
+(|u(1/2)|+|u(-1/2)|)\left(\frac{2}{3d^{3/2}}+\frac4{d^{5/2}}\right).
+\]
+Center integration costs only \(\|1_{C0}\|_2=1/2\). Original independently authenticated *completed* degree-0 and degree-2 derivative-Legendre moments \(L_0,L_2\) are obtained via \`certified_four_schur_trial.CertifiedTrial\` — NOT the new analytic center integrator. Since \(\int_{C0}P_0=1/4\) and \(\int_{C0}P_2=-15/128\), the exact projected residual moment is
+\[
+m_1=\int_{C0}(GP_1)'\,dx-\frac14L_0+\frac{75}{128}L_2 .
+\]
+A source interval \([m_-,m_+]\) excluding zero would prove
+\[
+\|g_1|_{C0}\|_2^2\ge 4\min(|m_-|,|m_+|)^2>0
+\]
+and therefore the **genuine** first-window low-mode P1 original-source Schur upper correction is STRICTLY smaller than the old scalar \(\kappa_{\rm odd}^{-1}\|g_1\|_2^2\), by a certified amount
+\[
+\boxed{\Delta_1\ge\frac{12/25}{(63/500)(63/500+12/25)}
+             4\min(|m_-|,|m_+|)^2.}
+\]
+This would be a source-attested arithmetic **off-diagonal low/high overlap** and a real step toward the original four-mode Schur residual. However, **a strict positive P1 dual saving does not imply S4 positive**: the complete 4×4 residual coupling and trial-energy lower remain necessary. The proof/test status will only be promoted if the exact-head hosted Python 3.10+3.13 source CI confirms the strict interval sign, true source and Gamma tail. Any zero-overlapping interval stays AMBIGUOUS, never an invented strict result.
+
+Important analytic scope: the stated B3 Gamma tail estimate is an analytic series bound for any integer J≥1, although earlier source-point derivative evaluators were capped at J≤20 for computational reasons. This adapter evaluates J=64 with rational exponential integrals for the finite prefix (not the earlier sampled point oracle). It must validate the series-tail derivation on its own terms; finite success is not an RH proof.

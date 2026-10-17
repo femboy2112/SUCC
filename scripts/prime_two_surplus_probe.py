@@ -12,6 +12,9 @@ from observational_succ.prime_surplus_nullspace import (
     source_prime_kernel_no_uniform_gap,
     exact_finite_four_moment_edge_kernel,
 )
+from observational_succ.source_prime_center_alignment import (
+    certified_true_P1_center_residual,
+)
 
 
 def _floor_decimal(x,digits=18):
@@ -41,6 +44,7 @@ def main():
         raise ArithmeticError("center-source rank-two extra margin missing")
     if not source5["source_arithmetic_dual_saving_lower"]>0:
         raise ArithmeticError("strict original arithmetic center dual saving absent")
+    p1_source=certified_true_P1_center_residual(J=64,J_G=64)
     receipt={
         "operation":"SOURCE-EDGE first-prime arithmetic high-sector surplus",
         "parent_source_sha":src["source_sha"],
@@ -71,6 +75,14 @@ def main():
         "phase_coherent_real_source_nullspace":source_prime_kernel_no_uniform_gap(),
         "five_cell_exact_null_witness_nonzero":
             exact_finite_four_moment_edge_kernel()["whole_primitive_norm2"]>0,
+        "actual_signed_P1_center_residual_verified":
+            p1_source["actual_p1_low_high_residual_not_model"],
+        "actual_P1_projected_center_interval":
+            tuple(str(x) for x in p1_source["true_P1_projected_residual_center_moment_interval"]),
+        "actual_P1_prime_arithmetic_dual_saving_strict_lower":
+            str(p1_source["true_P1_source_prime_dual_saving_lower"]),
+        "actual_P1_source_center_saving_strictly_positive":
+            p1_source["true_P1_source_prime_dual_saving_lower"]>0,
         "actual_signed_S4_source_residual_evaluated":False,
         "original_S4_sign":"UNVERIFIED",
         "RH_PROVED":False,
