@@ -1,0 +1,137 @@
+# OPERATION FOUR-SOURCE SCHUR: completed arithmetic center residual Gram and full signed S₄ enclosure
+
+**Date:** 2026-10-17. **Research branch:** \`research/full-four-prime-residual-schur-2026-10-17\`, child of SOURCE-EDGE PR #161 at \`eb62620300add80f8b38ebf0f7cd54c2a3c5ae36\`. **Independently imported exact blobs** from analytic-Suzuki PR #155 at \`1a84799575ca38a33ed552cf94a0850b5632525e\`, without changing the original source or main. The signed Weil/Suzuki source is frozen at Git blob \`0cc8510b71d178fc79e8d410a86d8b6014cf9178\`. **Original S₄ SIGN OPEN; RH PROVED: NO.**
+
+## 1. Scope and correct source domains (FS-01)
+
+On \(I=(-1/2,1/2)\), let \(H=L^2_0(I)\), \(u_k=P_k(2x)\), \(F_4=\operatorname{span}\{u_1,\ldots,u_4\}\), \(Q_4=I-P_{F_4}\), \(K=V^*V\) with \(Vw(x)=\int_{-1/2}^x w(t)\,dt\). The **unmodified original source** is \(G\), including prime2, one completed real Gamma, contact, and BOTH signed poles. The four low-to-high source residuals are
+\[
+r_k=Q_4G u_k,\quad
+g_k=-Q_{\mathcal P_{\le3}}(G u_k)'\in E:=\mathcal P_{\le3}^{\perp}\subset L^2(I).
+\]
+The source dual identity identifies \(r_k\) on the correct high-form domain with \(g_k\). The original positive high source obeys, by the inherited Bessel plus true prime-2 surplus theorem (PR #161),
+\[
+D_{4,\pi}\succeq \kappa_\pi K_\pi+
+w_2 V^*(I-A_{\log2}) V,
+\quad
+(\kappa_{\rm odd},\kappa_{\rm even})=(63/500,153/500),
+\quad w_2=\log2/\sqrt2>12/25.
+\]
+Parity label \(\pi\) refers to the derivative-coordinate carrier: \(g_1,g_3\) are even; \(g_2,g_4\) odd. No finite sampled PSD matrix substitutes for this **source-conditional all-high form**.
+
+PR #155 established a grid-free original-source analytic finite-J derivative Gram and a rigorous omitted-Gamma tail plus a verified first-window \(4\times4\) low signed source trial. This campaign integrates that already independently tested mathematics via **exact Git blobs**, not by inventing an alternative source; all imported code is checked against the frozen original source point oracle.
+
+## 2. Four authentic center source observations (FS-02)
+
+True \(b=\log2>5/8\) means **the entire** \(C_0=[-1/8,1/8]\) is outside the finite first-prime activation support of the ORIGINAL derivative responses. For each \(k=1,\ldots,4\), and source Gamma truncation \(J\), the actual finite derivative \((G_J u_k)'(x)\) on \(C_0\) is the sum of the following ORIGINAL completed source channels:
+
+- pole: \(-2I_k^-e^{x/2}+2I_k^+e^{-x/2}\), with \(I_k^\pm=\int_I e^{\pm y/2}u_k(y)\,dy\) and both signs preserved;
+- contact: \(C_\infty\, Vu_k(x)\) from the original \(-C_\infty K\) source;
+- Gamma: \(-\sum_{j<J}2/d_j\,[F_{j,+}(x)+F_{j,-}(x)-e^{-\alpha_j(x+a)}F_{j,+}(-a)-e^{-\alpha_j(a-x)}F_{j,-}(a)]\), \(d_j=4j+1,\alpha_j=d_j/2\);
+- genuine prime: **zero identically on C₀** because \(x\pm\log2\notin I\) there, *not* because the prime term was deleted from the full signed source.
+
+The first two components and each Gamma rung admit EXACT rational-polynomial/exponential antiderivatives of \(x^t\), \(t=0,1\). No spatial quadrature, made-up contact independence, fitted high response, or nontrivial zero is used. For \(J=64\), the inherited rigorous original B3 derivative tail \(\eta_{k,J}\) gives the true weighted omitted-Gamma error
+\[
+\left|\int_{C_0}x^t((G-G_J)u_k)'dx\right|
+\le\eta_{k,J}\,\|x^t\|_{L^2(C_0)},\qquad
+\|1\|^2=1/4,\quad\|x\|^2=1/768.
+\]
+
+The **independent original** completed mixed derivative rows \(L_{qk}=\langle P_q(2x),(Gu_k)'\rangle\), \(q=0,\ldots,3\), are taken from the SHA-pinned \`CertifiedTrial\` source (not from this new integrator). Writing \(z_k=Q_{\mathcal P_{\le3}}(Gu_k)'\), the exact source center observations are
+\[
+\boxed{
+m_k^{(t)}=\int_{C_0}x^t z_k\,dx
+=\int_{C_0}x^t(Gu_k)'dx-
+\sum_{q=0}^3(2q+1)L_{qk}\int_{C_0}x^tP_q(2x)\,dx.}
+\]
+By reflection, only four entries are nonzero:
+\[
+\mu_{\rm even}=(m_1^{(0)},m_3^{(0)}),\qquad
+\mu_{\rm odd}=(m_2^{(1)},m_4^{(1)}).
+\]
+The 4-channel source interval vector includes the authentic contact/pole/Gamma errors, full derivative projection and true half density. It also must INTERSECT the independently certified P1 original-source interval from PR #161; distinct outward interval certificates need not be nested.
+
+## 3. Genuine full \(4\times4\) source center Gram and off-diagonal correlations (FS-03)
+
+Let \(g_x=\sum_{k=1}^4x_kg_k\), with \(x\in\mathbb R^4\), and let \(m_k\) mean its source-attested center-moment vector (the common negative sign of all \(g_k\) is irrelevant to Gram and squares). Original prime parity and exact Bessel on C₀ give
+\[
+\boxed{
+\|g_x|_{C_0}\|_2^2\ge
+4|x_1m_1+x_3m_3|^2+
+768|x_2m_2+x_4m_4|^2.}
+\]
+Consequently the genuinely positive center Gram of the original four-column response has source-derived rank-one *off-diagonal* entries
+\[
+4m_1m_3,\quad 768m_2m_4,
+\]
+and exactly zero cross reflection parity entries. These are **not** copied from diagonals; they encode correlated original arithmetic response amplitudes, including their relative signs.
+
+**Critical interval trap (FS-04):** if source values are only enclosed as \(m_i\in[\bar m_i-\epsilon_i,\bar m_i+\epsilon_i]\), the unknown rank-one direction rotates inside its interval cone. In general no nonzero fixed PSD matrix lies below every possible \(mm^*\). Therefore **do not** place \(\bar m\bar m^*\) into a signed Schur lower as if it were a certified true positive matrix.
+
+Two valid alternatives are implemented:
+
+1. **Exact all-directions nonlinear lower:**
+\[
+\begin{aligned}
+E_C(x)\ge{}&
+4\bigl(|x_1\bar m_1+x_3\bar m_3|-|x_1|\epsilon_1-|x_3|\epsilon_3\bigr)_+^2\\
+&+768\bigl(|x_2\bar m_2+x_4\bar m_4|-|x_2|\epsilon_2-|x_4|\epsilon_4\bigr)_+^2,
+\end{aligned}
+\]
+where \((y)_+=\max(0,y)\). This is an **authenticated directional form lower**, preserving both off-diagonals without inventing fixed matrix rank.
+
+2. **True fixed rational Loewner lower** for any \(0<\eta\le1\):
+\[
+\boxed{
+mm^*\succeq
+(1-\eta)\bar m\bar m^*-
+(\eta^{-1}-1)\operatorname{diag}
+   \left(\epsilon_i\sum_j\epsilon_j\right).}
+\]
+Proof: expanding \(m=\bar m+\delta\), matrix Young bounds \(2\Re\,\bar m\delta^*\succeq-\eta\bar m\bar m^*-\eta^{-1}\delta\delta^*\); \(\delta\delta^*\preceq\operatorname{diag}(\epsilon_i\sum_j\epsilon_j)\) by weighted Cauchy. Perform this **within each parity block only**, multiplied by weights \(4\) or \(768\). The lower may have a negative direction: it is still a valid LOWER on a positive source Gram, and must not be projected/clamped to PSD. Hostile corner checks exercise all 16 interval signs.
+
+## 4. Fully signed low-sector and arithmetic high-inverse comparison (FS-05)
+
+Let \(A_{4,\rm lower}\) be the authentic signed lower source matrix from the inherited original finite \(G_{J_G}\), with TRUE omitted Gamma tail positive and both source poles. Let \(T_{\rm upper}\) be the **separately verified** PR #155 source-exp-polynomial derivative quotient upper with the inherited B3 Gamma \(H^1\) tail, computed before any interval approximation. Source \(S_4=A_4-R_4\), and the genuine arithmetic comparator \(B_\pi=\kappa_\pi I+(12/25)(I-A_{\log2})\) has on the ambient primitive Hilbert carrier the exact inverse gain
+\[
+c_\pi=\frac{12/25}{\kappa_\pi(\kappa_\pi+12/25)}
+\]
+on center energy, plus a separately **nonnegative** edge-phase saving. Discard the latter to remain source-conservative, and retain the authenticated four-column center Gram:
+\[
+\boxed{
+S_4\succeq
+S_{\rm scalar,lower}
++c_{\rm odd}L_{\rm even\ center}
++c_{\rm even}L_{\rm odd\ center},}
+\]
+where \(S_{\rm scalar,lower}=A_{4,\rm lower}-\operatorname{diag}(\kappa_\pi^{-1})T_{\rm upper}\), with inherited exact source/rounding conventions, and \(L_{\cdot}\) are the two source-interval Young Loewner floors from FS-04. This is a **complete original-source \(4\times4\) rational Loewner lower**, not a synthetic finite S4. Exact PSD on this lower would certify source S4 for the **first window only**; a negative lower means AMBIGUOUS, not that the genuine source form has a negative vector.
+
+For any requested rational real low direction \(x\), a potentially stronger lower is
+\[
+\boxed{
+\langle x,S_4x\rangle\ge
+\langle x,S_{\rm scalar,lower}x\rangle+
+c_{\rm odd}E_{C,\rm even}(x)+
+c_{\rm even}E_{C,\rm odd}(x),}
+\]
+with *nonlinear* robust bounds from §3. The signed source low energy is never swapped for a generic positive covariance.
+
+## 5. Hostile contracts, research authority and next routes
+
+The authentic source derivative center formula is tested against the previous independent original \(P_1\) source interval. The true Gamma tail is error-propagated as an L² bound before integrating center test weights; source even/odd parity is **enforced algebraically**, not sampled. Both genuine pole signs and true \(p=2\) activation are retained. Additional controls: four Legendre projection weights, full source SHA, non-integral indices, source Γ truncation, coefficient-uncertainty rank-one error cone, fake cross-parity coupling, fake uniform surplus scalar from PR #161's infinite phase-locked nullspace, and no zeta-zero reading.
+
+**Claim ledger**
+
+| ID | Status | What would falsify it |
+|---|---|---|
+| FS-01 original four-mode source center analytic formula | PAPER SOURCE-CONDITIONAL + hosted exact original interval replay | wrong pole, contact, gamma rung, log2 hinge, source normalization |
+| FS-02 full four completed mixed-moment source intervals | ORIGINAL SHA-PINNED SOURCE; host checks | no reflection parity or mismatch with previous independent P1 |
+| FS-03 rank-two genuine four-column center Gram / cross terms | PROVED SOURCE-CONDITIONAL FROM Bessel in real center | wrong true center support/weights, wrong parity |
+| FS-04 nonlinear robust and fixed Young Loewner floors | PROVED EXACT MATRIX LAW | some legal interval-vector corner violates Loewner bound |
+| FS-05 signed original first-window S4 lower | SOURCE-CONDITIONAL, exact-head CI pending | false derivative Q contraction, invalid Γ tail, wrong high source comparator |
+| Positive original S4 | OPEN unless source lower actually PSD | need decisive sign of authenticated full 4x4 |
+| Weil all-radius source positivity / RH | OPEN | no finite first-window result alone suffices |
+
+**Next:** source-certify the true *edge mismatch residual* on all four columns (not merely the center), potentially using PR #155's source-true piecewise exp-polynomial derivatives and original completed low moment source. Its exact two-edge flip inverse is source-derived. Optimize signed four-column \(U\) only if true \(G\)-source completed trial energy, Gamma tails, and exact test domains are transported together. Preserve the source-positive Gamma/FUCC and pole channels; no made-up physical observer or RH proof.
+
+No source code archives or main modifications, release, tag, merge or academic priority claims are authorized. This research is a reviewable draft contribution, not a completed RH proof.
