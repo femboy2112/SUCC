@@ -135,3 +135,55 @@ The authentic source derivative center formula is tested against the previous in
 **Next:** source-certify the true *edge mismatch residual* on all four columns (not merely the center), potentially using PR #155's source-true piecewise exp-polynomial derivatives and original completed low moment source. Its exact two-edge flip inverse is source-derived. Optimize signed four-column \(U\) only if true \(G\)-source completed trial energy, Gamma tails, and exact test domains are transported together. Preserve the source-positive Gamma/FUCC and pole channels; no made-up physical observer or RH proof.
 
 No source code archives or main modifications, release, tag, merge or academic priority claims are authorized. This research is a reviewable draft contribution, not a completed RH proof.
+
+
+## 6. Whole true p=2 edge-mismatch residual Gram (FS-06)
+
+The inherited original source is more structured than a generic high-sector operator. At b=log2 with b>1/2, the two actual prime-connected edge strips are L=(-1/2,1/2-b), R=(b-1/2,1/2). On R, reflect the original source derivative residual h'_k=(GP_k)' with parity (-1)^(k+1), and define z_k=Q_poly<=3 h'_k. Then for x in R the true shifted difference is
+
+D_k(x)=z_k(x)-z_k(x-b)=
+ - z_k(x)-z_k(b-x) if k even derivative parity,
+ + z_k(x)-z_k(b-x) if k odd derivative parity,
+
+with the actual signs set by P_k reflection: k=1,3 gives z_k(x)-z_k(b-x) and k=2,4 gives z_k(x)+z_k(b-x). The first difference is odd around midpoint x=b/2; the second is even. Hence their cross-parity inner products on R vanish EXACTLY, and two independent source edge test-functionals suffice for a nontrivial lower on the entire true four-column **edge mismatch Gram**:
+
+- For k=1,3, set m_k^edge = 2 integral_R (x-b/2) z_k(x) dx. Then ||x-b/2||²_R=(1-b)^3/12.
+- For k=2,4, set m_k^edge = 2 integral_R z_k(x) dx. Then ||1||²_R=1-b.
+
+Using Bessel in each reflection sector,
+\[
+\boxed{
+\|D_x\|_{L^2(R)}^2\ge
+\frac{12}{(1-b)^3}|x_1m_1^{edge}+x_3m_3^{edge}|^2
++\frac{1}{1-b}|x_2m_2^{edge}+x_4m_4^{edge}|^2.}
+\tag{FS-06}
+\]
+This is a TRUE prime-phase source observation, not a generic PSD covariance. It includes off-diagonal source correlations m1*m3 and m2*m4, with phase/derivative parity proved rather than sampled.
+
+The \`source_four_edge_gram.py\` adapter imports the SOURCE-TRUE analytic exp-polynomial positive-edge expression from the byte-pinned PR #155, including original real Gamma J modes, true prime2 hinge, BOTH original pole terms and shared contact midpoint. It integrates that function over the true source b-dependent right edge analytically (no spatial quadrature), **subtracts all FOUR completed independent source mixed derivative moments**, then adds the actual omitted Gamma H1 derivative bound with L2 Cauchy on the edge observation test, plus the single SOURCE contact uncertainty bound. Every original source interval is carried outward. The exact source record for b and half-density is cross-checked against the frozen original code SHA.
+
+Let ell_hi be the authenticated upper interval bound for ell=1-log2. In any source rank-one Gram lower, replacing 12/ell³ by 12/ell_hi³ and 1/ell by 1/ell_hi is safe. The same exact nonlinear interval-direction and rational Young/Gershgorin error controls from FS-04 apply. Their outputs may be ZERO or INDEFINITE when source error dominates; no fabricated positive edge observation is allowed. Independent rational source edge-mismatch polynomial controls, all interval corners, wrong parity, invalid J and SOURCE provenance are executable regressions.
+
+## 7. Complete original signed FOUR-MODE center+edge Schur lower (FS-07)
+
+The exact original first-prime source dual on the primitive Hilbert space has for each derivative parity sector
+\[
+\langle g,B^{-1}g\rangle =
+\kappa^{-1}\|g\|^2 -
+\frac{w}{\kappa(\kappa+w)}\|g_C\|^2 -
+\frac{w}{\kappa(\kappa+2w)}\|g_R-T_bg_L\|^2,
+\quad B=\kappa I+w(I-A_b),
+\]
+with w the SOURCE-CERTIFIED positive floor 12/25<=true w2. The source high moment-null space E is not invariant under the edge flip, hence the ambient B inverse remains a true **UPPER** for the high Schur correction. Both positive subtractions from the same source operator can be retained simultaneously; their signs must not be changed or the center/edge costs counted twice.
+
+Using independent true-Suzuki source enclosures for all four g_k, the new signed rational lower is
+\[
+\boxed{ S_4\succeq
+S_{\rm signed,scalar}^{\rm original\ lower}
++ c_C L_{\rm center}^{\rm true\ source}
++ c_E L_{\rm edge}^{\rm true\ source}.}
+\tag{FS-07}
+\]
+The two source Gram lower matrices preserve all allowed cross-parity and same-parity entries. Both are conservative: a negative eigenvalue of either lower or of the signed 4x4 sum CANNOT certify negativity of the true signed Weil source. The nonlinear all-low-direction bound is also emitted; for any rational x, it retains guaranteed positive center/edge savings and may be quantitatively sharper than the fixed Loewner lower.
+
+**Boundary of rigor:** this is a coherent assembly of paper-proved first-prime all-high arithmetic coercivity, actually SHA-verified Suzuki source intervals, true omitted Gamma derivative norm estimates and original signed low A4 source. It has not solved the complete original S4 sign, which remains an exact-head CI-determined question; no finite first-prime sign would by itself imply RH.

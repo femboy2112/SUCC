@@ -19,6 +19,7 @@ certificate under uncertain angle, no imaginary off-parity coupling.
 from __future__ import annotations
 
 from fractions import Fraction as F
+from functools import lru_cache
 from .source_four_center_gram import (
     SourceCenterError,authentic_four_center_certificate,
     robust_center_energy_for_direction
@@ -64,6 +65,7 @@ def _min_eig_lower(A,depth=40):
     return min_eig_lower(A,depth=depth)
 
 
+@lru_cache(maxsize=10)
 def CertifiedFourPrimeSchurTrial(*,J_center=64,J_G=64,
                                  J_deriv=2,digits=100,eta=F(1,8)):
     """Real original signed source FOUR-MODE source-dependent Schur enclosure.

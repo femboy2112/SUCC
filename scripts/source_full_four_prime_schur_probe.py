@@ -8,6 +8,7 @@ import json
 from fractions import Fraction as F
 
 from observational_succ.source_four_prime_schur import CertifiedFourPrimeSchurTrial
+from observational_succ.source_four_phase_schur import CertifiedFourPrimeFullPhaseSchurTrial
 
 
 def _clip_fraction(x,digits=15):
@@ -19,6 +20,8 @@ def _clip_fraction(x,digits=15):
 def main():
     r=CertifiedFourPrimeSchurTrial(J_center=64,J_G=64,J_deriv=2,
                                    digits=100,eta=F(1,8))
+    phase=CertifiedFourPrimeFullPhaseSchurTrial(J_center=64,J_G=64,J_deriv=2,
+                                                J_edge=8,digits=100,eta=F(1,8))
     out={
         "source":r["source"],
         "original_frozen_source_sha":r["source_sha"],
@@ -55,6 +58,22 @@ def main():
         "P1_agrees_with_independent_original_source_certificate":
             r["actual_source_P1_independent_replay"],
         "first_window_not_RH":True,
+        "original_true_prime_edge_moment_intervals":tuple(
+            tuple(str(t) for t in p) for p in phase["source_edge_intervals"]),
+        "original_true_source_complete_center_plus_edge_S4_verdict":
+            phase["original_S4_verdict"],
+        "original_true_source_edge_interval_width":tuple(
+            str(t) for t in phase["source_edge_width"]),
+        "signed_original_complete_center_plus_edge_4x4_Loewner_lower":tuple(
+            tuple(str(t) for t in row)
+            for row in phase["original_complete_S4_center_plus_edge_Loewner_lower"]),
+        "source_two_edge_four_mode_direction_savings":{
+            k:{
+                "center":_clip_fraction(v["arithmetic_center_strict_saving"]),
+                "edge":_clip_fraction(v["arithmetic_prime_edge_strict_saving"]),
+                "total":_clip_fraction(v["total_arithmetic_strict_saving"]),
+            } for k,v in phase["full_source_direction_certificates"].items()
+        },
         "RH_PROVED":False,
     }
     if not out["P1_agrees_with_independent_original_source_certificate"]:
