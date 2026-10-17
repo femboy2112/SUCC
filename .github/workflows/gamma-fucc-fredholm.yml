@@ -1,0 +1,68 @@
+name: Authentic finite-Gamma FUCC Fredholm and hidden-memory clocks
+on:
+  push:
+    branches: ['research/gamma-fucc-finite-bath-fredholm-*']
+  pull_request:
+    paths:
+      - 'observational_succ/finite_gamma_fucc_fredholm.py'
+      - 'tests/test_finite_gamma_fucc_fredholm.py'
+      - 'scripts/finite_gamma_fucc_fredholm_probe.py'
+      - 'research/2026-10-17/GAMMA_FUCC_FINITE_BATH_FREDHOLM.md'
+      - '.github/workflows/gamma-fucc-fredholm.yml'
+permissions:
+  contents: read
+jobs:
+  source-ode-fredholm:
+    name: Frozen Gamma-FUCC signed source and exact Fredholm (${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install SUCC test extras
+        run: python -m pip install -e '.[test]'
+      - name: Verify immutable source provenance
+        run: python scripts/verify_provenance.py
+      - name: Execute strict exact source and hostile mathematical controls
+        run: |
+          python -m unittest discover -s tests -p 'test_finite_gamma_fucc_fredholm.py' -v > "$RUNNER_TEMP/gamma-fredholm-tests.txt" 2>&1
+          cat "$RUNNER_TEMP/gamma-fredholm-tests.txt"
+          grep -q 'Ran 25 tests' "$RUNNER_TEMP/gamma-fredholm-tests.txt"
+          grep -q '^OK$' "$RUNNER_TEMP/gamma-fredholm-tests.txt"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/gamma-fredholm-tests.txt"; then exit 1; fi
+      - name: Replay deterministic original-source Gamma rung sign transition
+        run: |
+          python scripts/finite_gamma_fucc_fredholm_probe.py --source --verify --output "$RUNNER_TEMP/gamma-fredholm-source.json"
+          python - <<'PY'
+          import json,os
+          from fractions import Fraction as F
+          from pathlib import Path
+          p=Path(os.environ['RUNNER_TEMP'])/'gamma-fredholm-source.json'
+          d=json.loads(p.read_text())
+          s=d['original_finite_Gamma_source_packet']
+          assert d['actual_suzuki_source_authenticated'] is True
+          assert s['source_sha']=='0cc8510b71d178fc79e8d410a86d8b6014cf9178'
+          assert F(s['genuine_Gamma18_original_P1_interval'][1])<0
+          assert F(s['genuine_Gamma19_original_P1_interval'][0])>0
+          assert F(s['negative_index_trace_upper_rational'])<20
+          assert d['RH_proved'] is False and s['original_Schur_sign_proved'] is False
+          PY
+      - name: Preserve archived frozen original source algebra
+        run: |
+          python -m unittest discover -s tests -p 'test_source_jump_spectral.py' -q
+          python -m unittest discover -s tests -p 'test_hidden_memory_schur.py' -q
+      - name: Retain receipts even on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gamma-fucc-fredholm-${{ matrix.python }}
+          path: |
+            ${{ runner.temp }}/gamma-fredholm-tests.txt
+            ${{ runner.temp }}/gamma-fredholm-source.json
+          if-no-files-found: warn
