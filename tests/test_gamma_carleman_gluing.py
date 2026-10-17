@@ -58,3 +58,27 @@ class DirichletCarlemanTests(unittest.TestCase):
             with self.assertRaises(CompensationError):touching_source_gluing_gate(d,b,c)
 
 if __name__=='__main__':unittest.main()
+
+class TrueWB4BulkGluingTests(unittest.TestCase):
+    def test_exact_algebraic_a_stronomical_source_certificate(self):
+        from observational_succ.gamma_carleman_gluing import high_bulk_moment_gluing_algebra
+        r=high_bulk_moment_gluing_algebra()
+        self.assertEqual(r['conceptual_true_Gamma_mode_count'],2**96)
+        self.assertGreater(r['full_source_edge_K_margin_from_dyadic_proof'],42)
+        self.assertLess(r['original_gamma_plus_pole_cross_eta_squared_upper'],5)
+        self.assertGreater(r['exact_lower_positive_product_at_least'],5)
+        self.assertFalse(r['bulk_source_margin_certified_by_this_algebra_alone'])
+        with self.assertRaises(CompensationError):
+            high_bulk_moment_gluing_algebra(F(1,2**100), F(1,4), F(1,2))
+
+    def test_actual_frozen_WB4_bulk_moment_source_replay(self):
+        import importlib.util
+        if importlib.util.find_spec('observational_succ.tate_weighted_bessel_four_schur') is None:
+            self.skipTest('full source WB4 module absent in standalone fixture')
+        from observational_succ.gamma_carleman_gluing import original_source_high_bulk_gluing
+        cert=original_source_high_bulk_gluing()
+        self.assertTrue(cert['source_bulk_margin_proved'])
+        self.assertTrue(cert['strict_gluing_condition'])
+        self.assertEqual(cert['bulk_original_source_blob'],cert['edge_original_source_blob'])
+        self.assertFalse(cert['all_radius_Weil_positive'])
+        self.assertFalse(cert['RH_proved'])
