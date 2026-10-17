@@ -58,8 +58,36 @@ class SourceDualIntegrationTests(unittest.TestCase):
             self.assertEqual(CertifiedTrial(U=(),J=3,rank=6,precision=p)['verdict'],
                              'INVALID_SOURCE')
 
+    def test_authentic_boundary_moment_loewner_formula(self):
+        # The new source-attested moment correction is an *additional* 
+        # rigorous lower, NEVER a mathematical maximum of unrelated matrices.
+        for out in (self.zero,self.nonzero):
+            low=mat(out['source_dual_U_lower_bracket'])
+            boost=mat(out['source_dual_boundary_moment_lower'])
+            actual=mat(out['source_dual_boundary_lower_bracket'])
+            for i in range(4):
+                for j in range(4):
+                    self.assertEqual(actual[i][j],low[i][j]+50*boost[i][j])
+                    self.assertEqual(actual[i][j],actual[j][i])
+            self.assertTrue(out['source_dual_U_has_authenticated_moments'])
+            self.assertFalse(out['RH_proved'])
+
+    def test_true_source_moment_interval_geometry(self):
+        # Two rows 4-column exact intervals, no source oracle supplied by caller.
+        out=self.nonzero
+        mids=mat(out['source_dual_boundary_rows_mid'])
+        err=mat(out['source_dual_boundary_rows_error'])
+        self.assertEqual(len(mids),2)
+        self.assertEqual(len(mids[0]),4)
+        self.assertTrue(all(x>=0 for row in err for x in row))
+        # Original G parity: first P1 row odd input only, P2 row even only.
+        for i in (1,3):self.assertEqual(mids[0][i],0)
+        for i in (0,2):self.assertEqual(mids[1][i],0)
+
     def test_no_projected_derivative_shortcut(self):
         self.assertTrue(self.nonzero['source_dual_U_uses_unprojected_derivative_pairing'])
-        self.assertFalse(self.nonzero['source_dual_U_has_authenticated_moments'])
+        self.assertTrue(self.nonzero['source_dual_U_has_authenticated_moments'])
+        self.assertIn('TWO endpoint-vanishing', 
+                      self.nonzero['source_dual_U_authenticated_moment_scope'])
 
 if __name__=='__main__':unittest.main()
