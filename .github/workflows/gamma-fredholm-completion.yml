@@ -1,0 +1,67 @@
+name: Authentic Gamma completion and signed Fredholm feature Gram
+on:
+  push:
+    branches: ['research/authentic-fredholm-completion-*']
+  pull_request:
+    paths:
+      - 'observational_succ/gamma_fredholm_completion.py'
+      - 'tests/test_gamma_fredholm_completion.py'
+      - 'scripts/gamma_fredholm_completion_probe.py'
+      - '.github/workflows/gamma-fredholm-completion.yml'
+permissions:
+  contents: read
+jobs:
+  original-completion:
+    name: Gamma completion source certificate (${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install the project's actual test package
+        run: python -m pip install -e '.[test]'
+      - name: Verify original Git blob and import manifest
+        run: python scripts/verify_provenance.py
+      - name: Run actual frozen Suzuki signed source tests (NO skips)
+        run: |
+          python -m unittest discover -s tests -p 'test_gamma_fredholm_completion.py' -v > "$RUNNER_TEMP/completion-tests.txt" 2>&1
+          cat "$RUNNER_TEMP/completion-tests.txt"
+          grep -q 'Ran 21 tests' "$RUNNER_TEMP/completion-tests.txt"
+          grep -q '^OK$' "$RUNNER_TEMP/completion-tests.txt"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/completion-tests.txt"; then exit 1; fi
+      - name: Replay exact source fifth-mode sign reversal and finite feature Gram
+        run: |
+          python scripts/gamma_fredholm_completion_probe.py --source --verify --output "$RUNNER_TEMP/completion-source.json"
+          python - <<'PY'
+          import json,os
+          from fractions import Fraction as F
+          from pathlib import Path
+          r=json.loads((Path(os.environ['RUNNER_TEMP'])/'completion-source.json').read_text())
+          p=r['authentic_fifth_mode_completion']
+          assert p['source_git_blob']=='0cc8510b71d178fc79e8d410a86d8b6014cf9178'
+          assert F(p['J64_full_signed_source_energy'][1])<0
+          assert F(p['complete_true_gamma_energy_lower'])>0
+          assert p['original_S4_positive_proved'] is False
+          assert r['authentic_J8_feature_gram']['dimension']==10
+          assert r['authentic_J8_feature_gram']['source_positivity_certified'] is False
+          assert r['RH_proved'] is False
+          PY
+      - name: Run parent original full Fredholm source cases
+        run: |
+          python -m unittest discover -s tests -p 'test_finite_gamma_fucc_fredholm.py' -q
+          python -m unittest discover -s tests -p 'test_source_jump_spectral.py' -q
+      - name: Upload exact original-source receipt
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gamma-completion-${{ matrix.python }}
+          path: |
+            ${{ runner.temp }}/completion-tests.txt
+            ${{ runner.temp }}/completion-source.json
+          if-no-files-found: warn
