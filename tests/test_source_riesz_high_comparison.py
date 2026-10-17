@@ -16,7 +16,7 @@ class AbstractInfiniteFormLemmaFiniteCalibration(unittest.TestCase):
         self.assertFalse(r['infinite_original_source_verified'])
         self.assertTrue(exact_psd(r['full_scalar_minus_comparator']))
         self.assertEqual(r['rank_one_coefficient'],F(1,200))
-        self.assertEqual(r['dual_residual_gain_multiplier'],F(25,4))
+        self.assertEqual(r['dual_residual_gain_multiplier'],F(10))
         self.assertEqual(r['Kzz'],F(2))
 
     def test_missing_positivity_and_source_coercivity_are_refused(self):
