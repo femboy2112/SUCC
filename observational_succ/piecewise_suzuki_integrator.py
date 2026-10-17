@@ -164,7 +164,11 @@ def authentic_mode_piecewise(k,J,*,digits=100):
     v=L.poly_primitive_zero_at_left(p,a)
     if L.poly_eval(v,a):raise ArithmeticError("mean-zero source violation")
     contact=src.contact_iv()
-    base=ExponentialPolynomial.polynomial(v).scale(I(contact.lo,contact.hi))
+    # One SHARED global scalar C_inf, never independent interval copies inside
+    # products: exact midpoint packet; omitted correlated uncertainty is bounded
+    # on the polynomial quotient by the source Schur adapter.
+    contact_mid=(contact.lo+contact.hi)/2
+    base=ExponentialPolynomial.polynomial(v).scale(I.of(contact_mid))
     # Both genuine completed pole channels in source derivative convention.
     plus=L.exp_antiderivative_poly(p,F(1,2),+1)
     minus=L.exp_antiderivative_poly(p,F(1,2),-1)
@@ -237,6 +241,11 @@ def genuine_piecewise_gram(J=3,rank=4,*,digits=100):
         "moments":tuple(tuple(row) for row in moments),
         "polynomial_projection_gram":tuple(tuple(row) for row in projection),
         "quotient_gram":tuple(tuple(row) for row in projected),
+        "contact_midpoint_only":True,
+        "contact_source_rational_mid":(L._pinned_source().contact_iv().lo+
+                                       L._pinned_source().contact_iv().hi)/2,
+        "contact_source_rational_radius":(L._pinned_source().contact_iv().hi-
+                                          L._pinned_source().contact_iv().lo)/2,
         "source_authenticated":True,"Gamma_J":J,"rank":rank,
         "spatial_quadrature_used":False,"RH_proved":False
     }
