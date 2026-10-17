@@ -39,7 +39,7 @@ jobs:
             > "$RUNNER_TEMP/ims-tests.log" 2>&1
           cat "$RUNNER_TEMP/ims-tests.log"
           if grep -Eq 'skipped=[1-9]|FAILED \(' "$RUNNER_TEMP/ims-tests.log"; then exit 1; fi
-          grep -q 'Ran 15 tests' "$RUNNER_TEMP/ims-tests.log"
+          grep -q 'Ran 18 tests' "$RUNNER_TEMP/ims-tests.log"
       - name: Replay genuine completed source gamma/prime finite-band receipt
         run: python scripts/source_covariant_ims_probe.py --source --verify > "$RUNNER_TEMP/source-covariant-ims.json"
       - name: Preserve test/source results
