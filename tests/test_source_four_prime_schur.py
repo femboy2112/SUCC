@@ -53,8 +53,8 @@ class OriginalFourDerivativeSource(unittest.TestCase):
                                 previous["true_P1_center_energy_certified_lower"])
         M=c["center_nominal_ranktwo_Gram"]
         for i in range(4):
-            self.assertLessEqual(c["intervals"][i][0],c["nominal"][i]-c["errors"][i])
-            self.assertGreaterEqual(c["intervals"][i][1],c["nominal"][i]+c["errors"][i]) if False else None
+            self.assertLessEqual(c["nominal"][i]-c["errors"][i],c["intervals"][i][0])
+            self.assertGreaterEqual(c["nominal"][i]+c["errors"][i],c["intervals"][i][1])
             for j in range(4):
                 self.assertEqual(M[i][j],M[j][i])
                 if (i-j)%2:self.assertEqual(M[i][j],0)
