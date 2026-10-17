@@ -47,6 +47,12 @@ jobs:
           assert x['rank_gap_paper']['cell_rank_upper']==262144
           assert x['original_source_rank_gap']['source_contract']['source_git_blob']=='0cc8510b71d178fc79e8d410a86d8b6014cf9178'
           assert len(x['original_source_primitive_Ritz'])==2
+          assert x['original_source_rank_gap']['negative_jump_baseline_index_upper']==5
+          assert x['original_source_rank_gap']['negative_even_jump_baseline_index_upper']==3
+          assert x['original_source_rank_gap']['negative_odd_jump_baseline_index_upper']==2
+          for trial in x['original_source_primitive_Ritz']:
+              lo,hi=trial['polar_free_baseline_energy_interval']
+              print('SOURCE_PRIMITIVE_RITZ',trial['mode'],float(lo.split('/')[0])/float(lo.split('/')[1]) if '/' in lo else float(lo),float(hi.split('/')[0])/float(hi.split('/')[1]) if '/' in hi else float(hi), 'rigorously_negative_baseline=',trial['baseline_rigorously_negative_on_this_trial'])
           assert x['source_jump_projector_computed'] is False
           assert x['original_signed_Weil_positivity_proved'] is False
           assert x['RH_proved'] is False
