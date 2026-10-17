@@ -211,9 +211,6 @@ def authentic_four_center_certificate(J=64,J_G=64):
     odd=(0,2);even=(1,3)
     # Source-parity double-check: exact mathematical support, not numerical.
     nominal=tuple(_out((z.lo+z.hi)/2) for z in center_intervals)
-    errors=tuple(_out(max(z.hi-m,zlo) if False else
-                    max(z.hi-(z.lo+z.hi)/2,(z.lo+z.hi)/2-z.lo),side="upper")
-                 for z in center_intervals)
     # Quantities above are outward-rounded diagnostics; contain the entire
     # original true moment interval by increasing eps by the midpoint shift.
     eps=tuple(max(abs(center_intervals[i].lo-nominal[i]),
