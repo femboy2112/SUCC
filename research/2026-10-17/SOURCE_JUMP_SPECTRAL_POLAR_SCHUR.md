@@ -145,6 +145,30 @@ The high correction has at most **two source-polar channels**, one per parity. N
 
 **Open cost:** the actual jump operator's low spectral eigenvectors, \(\alpha_c\), \(\alpha_s\), and their rigorous finite matrix intervals have not been computed. Equation (7) is an upper bound on rank, not an implemented `rank <=262144` eigenanalysis. An unknown eigenvalue on the threshold is included in P, keeping the high bound valid; a numerical eigenvalue near threshold is not a certified spectral projector.
 
+## 3B. Source-conditional **at most five** genuinely negative bare-jump modes (JS-08)
+
+There is an important source-specific improvement to the coarse `rank P_[0,7] <=262144`. It does **not** construct an eigenspace but dramatically limits how many modes can actually lie *below the true contact threshold* `M`.
+
+The independently inherited and source-gated WB4 theorem proves the **complete signed original** high block `D_4 >= (63/500)K` on the genuine mean-zero four-mode orthogonal complement at a=1/2. Since `K` is injective, this implies the Morse negative index of the full signed Weil form is at most **four** (two even and two odd): any negative subspace of dimension five would intersect that positive high complement nontrivially. Passing from derivative u to its primitive F is an invertible linear map on the original test core and does not change finite negative index; closure follows by form continuity.
+
+The bare jump baseline is `A_0=L^+ - M I`. Because
+
+```
+A_0 = H - 2|c><c| + 2|s><s|,
+H_even = A_0_even +2|c><c|,
+H_odd  = A_0_odd  -2|s><s|,
+```
+
+subtracting the *single* even rank-one positive cosh term can add at most one negative direction. To prove it without spectral perturbation terminology, restrict any A0-negative subspace to the codimension-one condition `<F,c>=0`; on that restricted subspace `Q_H(F) <= Q_A0(F)<0`. Similarly A0-odd negativity implies original H-odd negativity because its pole is negative. The authentic source WB4 therefore gives the actual jump spectrum the bounds
+
+\[
+oxed{\#\{\lambda_j(\mathcal L_{1/2,even}^+)<M\}\le3,\qquad
+\#\{\lambda_j(\mathcal L_{1/2,odd}^+)<M\}\le2,\qquad
+\#\{\lambda_j(\mathcal L_{1/2}^+)<M\}\le5.}	ag{12b}
+\]
+
+This is a strictly stronger **index/rank bound at the moving threshold M**, not a replacement for the quantitative gap at fixed cutoff 7. An eigenvalue could equal M, and the next spectral gap above M is not source-quantified. Choosing a cutoff just above M could include more than five modes; the computation of actual polar projections and high scalar Green responses is still open. The `source_jump_spectral.authenticate_original_jump_rank_budget()` adapter **replays the original source WB4 infinity-source certificate**, verifies its original source blob and global κ=63/500, and reports the 3/2/5 bounds as conditional paper results. This uses true source coercivity, not a fictitious positive finite compression.
+
 ## 4. A fully constructive alternative: monotone Fourier-band lower envelopes (JS-04)
 
 A stronger form of “effective partition” avoids needing the exact spectral eigenspaces to write a *finite sufficient sign certificate*.
