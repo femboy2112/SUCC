@@ -70,27 +70,15 @@ def CertifiedAnalyticSuzukiTrial(U=(),*,J_deriv=6,J_galerkin=64,
     # Correlated contact: actual C_inf = chosen rational midpoint + epsilon,
     # |epsilon| <= source radius. Project Q BEFORE bounding epsilon.
     # The derivative contact term is exactly epsilon * primitive(v_i).
-    from .direct_quotient_schur import _monomial_gram,_inverse
-    moment_gram_inv=_inverse(_monomial_gram(A_RADIUS,3))
+    # The ORIGINAL source has one shared contact C, not independent
+    # per-mode intervals. Closed-form Legendre primitive recurrence gives
+    # the exact polynomial-orthogonal contact Gram in sparse parity bands.
+    from .contact_ladder_projection import projected_contact_trial_gram
     source_contact_radius=packet["contact_source_rational_radius"]
-    contact_projection_norm2=[]
-    for i in range(4):
-        p=(F(0),)
-        for k in range(rk):
-            if V[k][i]:
-                primitive=L.poly_primitive_zero_at_left(polys[k+1],A_RADIUS)
-                p=L.poly_add(p,primitive,V[k][i])
-        norm2=L.poly_integral(L.poly_mul(p,p),-A_RADIUS,A_RADIUS)
-        monomial_moments=tuple(
-            sum((coeff*(A_RADIUS**(j+t+1)-(-A_RADIUS)**(j+t+1))
-                 /F(j+t+1) for t,coeff in enumerate(p)),F(0))
-            for j in range(4))
-        polynomial_energy=sum((monomial_moments[j]*moment_gram_inv[j][t]*
-                               monomial_moments[t] for j in range(4) for t in range(4)),F(0))
-        qnorm2=norm2-polynomial_energy
-        if qnorm2<0:
-            raise ArithmeticError("invalid exact contact primitive projection energy")
-        contact_projection_norm2.append(qnorm2)
+    contact_gram=projected_contact_trial_gram(V,degree=3)
+    contact_projection_norm2=[contact_gram[i][i] for i in range(4)]
+    if any(v<0 for v in contact_projection_norm2):
+        raise ArithmeticError("source contact projected Gram not PSD")
     tail=[]
     for i in range(4):
         norm2=sum((V[k][i]*V[l][i]*deriv_gram[k+1,l+1]
