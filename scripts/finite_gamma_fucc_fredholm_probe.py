@@ -27,6 +27,7 @@ def build(source=False):
       'finite_model_Birman_Schwinger_equivalent':model_positive['compact_Birman_Schwinger_positive'] and not model_negative['compact_Birman_Schwinger_positive'],
       'actual_suzuki_source_authenticated':bool(source),
       'original_finite_Gamma_source_packet':M.source_authenticated_fredholm_packet(8,8) if source else None,
+      'original_4mode_Gamma_clock_filtration':M.source_original_four_mode_gamma_clock() if source else None,
       'signed_Weil_first_window_sign_proved':False,
       'RH_proved':False,
     }
@@ -48,6 +49,8 @@ def main():
             assert original['Gamma_P1_first_certified_positive_rung']==19
             assert F(original['genuine_Gamma18_original_P1_interval'][1])<0
             assert F(original['genuine_Gamma19_original_P1_interval'][0])>0
+            clock=report['original_4mode_Gamma_clock_filtration']
+            assert tuple((z['true_original_low_mode'],z['first_strictly_positive_gamma_rungs']) for z in clock['genuine_four_mode_first_positive_clock'])==((1,19),(2,10),(3,20),(4,7))
     raw=json.dumps(report,sort_keys=True,indent=2)+'\n'
     if args.output:Path(args.output).write_text(raw)
     else:print(raw,end='')
