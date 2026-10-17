@@ -313,3 +313,212 @@ def true_four_low_suzuki_interface():
         "all_a_global_Weil_positive_proved":False,
         "RH_proved":False,
     }
+
+
+KAPPA_ODD_LOWER = F(63, 500)
+KAPPA_EVEN_LOWER = F(153, 500)
+KAPPA_GLOBAL_SHARPENED = F(63, 500)
+
+
+def _parity_bessel_integral_polynomial(m, L, order):
+    """Exact antiderivative for sum_{ell=m, ell==m (mod 2)}^{L-1} (2*ell+1) P_ell(z)^2.
+
+    When w in Q_4 H has definite reflection parity, f = Vw in H_0^1(-a,a) has the
+    OPPOSITE reflection parity:
+      - w odd  => f = Vw even => <f, P_{2k+1}> = 0 for all k => only even ell=4,6,8,... active.
+      - w even => f = Vw odd  => <f, P_{2k}> = 0 for all k (including P_4!) => only odd ell=5,7,9,... active.
+    """
+    mm = _integer(m, 1, 20)
+    LL = _integer(L, mm + 1, 32)
+    K = _integer(order, 0, 24)
+    group = {}
+    modes = []
+    for ell in range(mm, LL, 2):
+        c = _bessel_source_coefficients(ell, K)
+        modes.append((ell, c))
+        for i, ci in enumerate(c):
+            for j, cj in enumerate(c):
+                power = 2 * ell + 2 * (i + j) + 1
+                group[power] = group.get(power, F()) + F(2 * ell + 1) * ci * cj / power
+    return tuple(sorted(group.items())), tuple(modes)
+
+
+def parity_weighted_Bessel_leakage_upper(
+    sector="odd", J=256, Omega=None, a=F(1, 2),
+    angular_modes=20, series_order=14,
+    error_slack=F(1, 2000), spectral_cells=128,
+):
+    """Parity-refined weighted low-Fourier Bessel leakage upper bound on Q_4 H_{sector}.
+
+    Uses:
+      1. Exact parity selection on f = Vw:
+         - sector='odd'  (w odd,  f=Vw even): active angular modes ell in {4, 6, 8, ...};
+         - sector='even' (w even, f=Vw odd):  active angular modes ell in {5, 7, 9, ...}.
+      2. Source-pinned 2/pi upper bound `2 / _source().pi_iv().lo < 2/3`.
+    """
+    if sector not in ("odd", "even"):
+        raise WeightedBesselSourceError("sector must be 'odd' or 'even'")
+    m_start = 4 if sector == "odd" else 5
+    if Omega is None:
+        Omega = F(16) if sector == "odd" else F(18)
+    j = _integer(J, 1, 256)
+    O = _q(Omega)
+    aa = _q(a)
+    slack = _q(error_slack)
+    L = _integer(angular_modes, m_start + 2, 32)
+    K = _integer(series_order, 0, 24)
+    cells = _integer(spectral_cells, 2, 256)
+    if O <= 0 or aa <= 0 or slack <= 0:
+        raise WeightedBesselSourceError("Positive Fourier/source geometry required")
+    A = aa * O
+    if A >= 2 * L + 3:
+        raise WeightedBesselSourceError("High spherical Bessel angular tail not geometrically controlled")
+    src = _source()
+    two_over_pi_hi = F(2) / src.pi_iv().lo
+    if not F(3, 5) < two_over_pi_hi < F(2, 3):
+        raise WeightedBesselSourceError("Pinned source pi interval invalid")
+    antiderivative, modes = _parity_bessel_integral_polynomial(m_start, L, K)
+
+    def Fpoly(z):
+        return sum((coef * z ** power for power, coef in antiderivative), F())
+
+    gamma = gamma_fourier_multiplier_lower(O, j)
+    weighted = F()
+    prev_Z = F()
+    prev_poly = F()
+    for i in range(cells):
+        freq_lo = O * i / cells
+        freq_hi = O * (i + 1) / cells
+        Z = aa * freq_hi
+        next_poly = Fpoly(Z)
+        polynomial_piece = next_poly - prev_poly
+        if polynomial_piece < 0:
+            raise ArithmeticError("Exact integral of positive squared polynomial went negative")
+        band_slack = (1 + slack) * polynomial_piece
+        remainder = F()
+        for ell, co in modes:
+            d = _bessel_series_absolute_error(ell, co, Z)
+            remainder += (2 * ell + 1) * d * d
+        band_slack += (1 + 1 / slack) * (Z - prev_Z) * remainder
+        left_multiplier = F(0) if i == 0 else gamma_fourier_multiplier_lower(freq_lo, j)
+        gap = gamma - left_multiplier
+        if gap < 0 or band_slack < 0:
+            raise ArithmeticError("Gamma monotone source or positive Bessel bound broken")
+        weighted += gap * band_slack
+        prev_Z = Z
+        prev_poly = next_poly
+    geom = (A / F(2 * L + 3)) ** 2
+    if not 0 < geom < 1:
+        raise ArithmeticError("Spectral angular tail ratio must lie in (0,1)")
+    angular_tail = A ** (2 * L + 1) / odd_double_factorial(2 * L + 1) ** 2 / (1 - geom)
+    W = two_over_pi_hi * (weighted + gamma * angular_tail)
+    return {
+        "source": "PARITY_REFINED_LEGENDRE_BESSEL_GAMMA_WEIGHTED_ENCLOSURE",
+        "derivative_sector": sector,
+        "primitive_Vw_parity": "even" if sector == "odd" else "odd",
+        "first_active_angular_mode": m_start,
+        "active_angular_modes": tuple(ell for ell, _ in modes),
+        "a": aa,
+        "Omega": O,
+        "Gamma_real_modes": j,
+        "Gamma_multiplier_exact": gamma,
+        "two_over_pi_upper": two_over_pi_hi,
+        "weighted_low_Fourier_leakage_exact_upper": W,
+        "RH_proved": False,
+    }
+
+
+def source_parity_split_four_moment_coercivity_certificate():
+    """Sharpened high-sector K-coercivity certificate on Q_4 H = Q_4 H_odd (+) Q_4 H_even:
+
+        D_{4,odd}  >= (63/500)  K_odd   (kappa_odd  = 0.126 > 6.3  * (1/50))
+        D_{4,even} >= (153/500) K_even  (kappa_even = 0.306 > 15.3 * (1/50))
+        D_4        >= (63/500)  Q_4 K Q_4.
+
+    Mathematical mechanism:
+      1. Both G and K = V^*V commute with reflection (Rf)(t) = f(-t), so Q_4 H splits
+         orthogonally into Q_4 H_odd and Q_4 H_even.
+      2. For w in Q_4 H_odd, f = Vw is EVEN: <f, sinh(t/2)> = 0 identically (zero
+         negative pole leakage) and only even spherical Bessel modes ell=4,6,8,... enter.
+      3. For w in Q_4 H_even, f = Vw is ODD: <f, P_4(2t)> = 0 automatically, so f in V_5
+         (5 vanishing moments 0..4) and only odd spherical Bessel modes ell=5,7,9,... enter.
+      4. Uses the pinned source interval upper bounds `contact_iv().hi` and
+         `(log2_iv() * sqrt_inverse(2)).hi` (< 5.83902 vs coarse 47/8 = 5.875) and
+         `2 / pi_iv().lo` (< 0.63662 vs coarse 2/3).
+    """
+    src = _source()
+    source_contract = parent_original_source_contract()
+    if source_contract["source_git_blob_sha"] != ORIGINAL_SUZUKI_BLOB:
+        raise WeightedBesselSourceError("Original Suzuki source blob mismatch")
+    p = tuple(x.n for x in true_third_prime_wavefronts(F(1)))
+    if p != (2,):
+        raise WeightedBesselSourceError("Only true p=2 prime wavefront active at a=1/2")
+    c_hi = src.contact_iv().hi
+    w2_hi = (src.log2_iv() * src.sqrt_inverse(2)).hi
+    if not (F(5) < c_hi < F(43, 8) and F(0) < w2_hi < F(1, 2)):
+        raise WeightedBesselSourceError("Pinned source contact/prime2 interval out of bounds")
+    contact_plus_p2_hi = c_hi + w2_hi
+
+    odd_leak = parity_weighted_Bessel_leakage_upper(
+        sector="odd", J=256, Omega=F(16), a=F(1, 2),
+        angular_modes=20, series_order=14, error_slack=F(1, 2000), spectral_cells=128,
+    )
+    even_leak = parity_weighted_Bessel_leakage_upper(
+        sector="even", J=256, Omega=F(18), a=F(1, 2),
+        angular_modes=21, series_order=14, error_slack=F(1, 2000), spectral_cells=128,
+    )
+    # Odd derivative sector: f = Vw is even => <f, sinh(t/2)> = 0 identically!
+    odd_polar = F(0)
+    # Even derivative sector: f = Vw is odd in V_5 => m=5 polar bound 8*(1/4)^10 / (5!)^2
+    even_polar = F(8) * (F(1, 4) ** 10) / (factorial(5) ** 2)
+
+    kappa_odd_exact = (
+        odd_leak["Gamma_multiplier_exact"]
+        - odd_leak["weighted_low_Fourier_leakage_exact_upper"]
+        - contact_plus_p2_hi
+        - odd_polar
+    )
+    kappa_even_exact = (
+        even_leak["Gamma_multiplier_exact"]
+        - even_leak["weighted_low_Fourier_leakage_exact_upper"]
+        - contact_plus_p2_hi
+        - even_polar
+    )
+    if not (kappa_odd_exact > KAPPA_ODD_LOWER > F(1, 8) > F(1, 50)):
+        raise ArithmeticError("Certified odd-sector coercivity fell below 63/500")
+    if not (kappa_even_exact > KAPPA_EVEN_LOWER > F(3, 10) > KAPPA_ODD_LOWER):
+        raise ArithmeticError("Certified even-sector coercivity fell below 153/500")
+
+    return {
+        "source": "SHA_PINNED_PARITY_SPLIT_BESSEL_FOUR_MOMENT_COERCIVITY",
+        "source_suzuki_blob": ORIGINAL_SUZUKI_BLOB,
+        "halfwidth": F(1, 2),
+        "genuine_prime_power_labels": p,
+        "contact_plus_p2_exact_upper": contact_plus_p2_hi,
+        "odd_sector": {
+            "Fourier_Omega": F(16),
+            "real_Gamma_J": 256,
+            "active_angular_modes": odd_leak["active_angular_modes"],
+            "Gamma_multiplier_exact": odd_leak["Gamma_multiplier_exact"],
+            "weighted_Bessel_leakage_upper": odd_leak["weighted_low_Fourier_leakage_exact_upper"],
+            "negative_pole_leakage_upper": odd_polar,
+            "kappa_odd_exact_lower": kappa_odd_exact,
+            "kappa_odd_certified_rational": KAPPA_ODD_LOWER,
+            "improvement_factor_over_1_over_50": KAPPA_ODD_LOWER / F(1, 50),
+        },
+        "even_sector": {
+            "Fourier_Omega": F(18),
+            "real_Gamma_J": 256,
+            "active_angular_modes": even_leak["active_angular_modes"],
+            "Gamma_multiplier_exact": even_leak["Gamma_multiplier_exact"],
+            "weighted_Bessel_leakage_upper": even_leak["weighted_low_Fourier_leakage_exact_upper"],
+            "negative_pole_leakage_upper": even_polar,
+            "kappa_even_exact_lower": kappa_even_exact,
+            "kappa_even_certified_rational": KAPPA_EVEN_LOWER,
+            "improvement_factor_over_1_over_50": KAPPA_EVEN_LOWER / F(1, 50),
+        },
+        "global_kappa_lower": KAPPA_GLOBAL_SHARPENED,
+        "parity_split_valid_by_reflection_commutation": True,
+        "RH_proved": False,
+    }
+

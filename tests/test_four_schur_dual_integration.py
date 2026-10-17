@@ -90,4 +90,59 @@ class SourceDualIntegrationTests(unittest.TestCase):
         self.assertIn('TWO endpoint-vanishing', 
                       self.nonzero['source_dual_U_authenticated_moment_scope'])
 
+    def test_complete_four_moment_and_parity_kappa_brackets(self):
+        for out in (self.zero, self.nonzero):
+            E_mid = mat(out['source_full_four_moment_E_mid'])
+            E_err = mat(out['source_full_four_moment_E_error'])
+            self.assertEqual(len(E_mid), 4)
+            self.assertEqual(len(E_mid[0]), 4)
+            # Parity structure of E_{j,i} = int t^j h_i'(t) dt:
+            for j in range(4):
+                for i in range(4):
+                    if (j - i) % 2:
+                        self.assertEqual(E_mid[j][i], F(0))
+                        self.assertEqual(E_err[j][i], F(0))
+                    else:
+                        self.assertGreater(E_err[j][i], F(0))
+            low = mat(out['source_dual_U_lower_bracket'])
+            full_mom = mat(out['source_full_four_moment_lower'])
+            four_br = mat(out['source_dual_four_moment_lower_bracket'])
+            for i in range(4):
+                for j in range(4):
+                    self.assertEqual(four_br[i][j], low[i][j] + 50 * full_mom[i][j])
+            self.assertEqual(out['parity_kappa_lower']['odd'], '63/500')
+            self.assertEqual(out['parity_kappa_lower']['even'], '153/500')
+            pk_eig = out['source_dual_parity_kappa_min_eig_lower_by_parity']
+            lo_eig = out['lower_bracket_min_eig_lower_by_parity']
+            self.assertGreater(F(pk_eig['odd']), F(lo_eig['odd']))
+            self.assertGreater(F(pk_eig['even']), F(lo_eig['even']))
+
+    def test_certified_derivative_energy_trial_b1_b3(self):
+        from observational_succ.certified_four_schur_trial import CertifiedDerivativeEnergyTrial
+        res = CertifiedDerivativeEnergyTrial(U=(), J_deriv=3, grid=8, J_galerkin=3, rank=6)
+        self.assertEqual(res['verdict'], 'AMBIGUOUS')
+        self.assertFalse(res['RH_proved'])
+        ibp_tails = tuple(F(x) for x in res['gamma_tail_ibp_O_J_minus_3_2'])
+        yng_tails = tuple(F(x) for x in res['gamma_tail_young_O_J_minus_1'])
+        for i in range(4):
+            self.assertGreater(ibp_tails[i], F(0))
+            self.assertGreater(yng_tails[i], F(0))
+        pk_eig = res['certified_Hprime_parity_kappa_min_eig_lower_by_parity']
+        k50_eig = res['certified_Hprime_kappa50_min_eig_lower_by_parity']
+        self.assertGreater(F(pk_eig['odd']), F(k50_eig['odd']))
+        self.assertGreater(F(pk_eig['even']), F(k50_eig['even']))
+
+    def test_30_to_4_middle_block_obstruction(self):
+        from observational_succ.four_thirty_schur_transport import (
+            source_30mode_middle_block_obstruction_certificate,
+        )
+        obs = source_30mode_middle_block_obstruction_certificate(J=4)
+        self.assertTrue(obs['middle_block_5_to_30_strictly_negative_definite'])
+        self.assertFalse(obs['monotone_nested_short_hypothesis_satisfied'])
+        self.assertEqual(obs['universal_middle_loewner_upper_factor_moment30'], -F(26191, 14760))
+        self.assertEqual(obs['universal_middle_loewner_upper_factor_fourier30'], -F(187, 200))
+        self.assertFalse(obs['RH_proved'])
+
+
 if __name__=='__main__':unittest.main()
+

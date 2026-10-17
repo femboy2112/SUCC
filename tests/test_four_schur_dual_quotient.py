@@ -76,8 +76,6 @@ class PrimitiveDualTests(unittest.TestCase):
         r=derivative_moment_projection_gram(M)
         self.assertEqual(r,((1,0),(0,F(1,12))))
 
-if __name__=='__main__':unittest.main()
-
 class VanishingBoundaryMomentTests(unittest.TestCase):
     def test_exact_source_row_formula_no_error(self):
         from observational_succ.four_schur_dual_quotient import vanishing_boundary_moment_lower
@@ -104,3 +102,90 @@ class VanishingBoundaryMomentTests(unittest.TestCase):
         odd=G[3][3]-2*a*a*G[1][3]+a**4*G[1][1]
         self.assertEqual(even,F(1,30))
         self.assertEqual(odd,F(1,840))
+
+
+class CompleteFourMomentAndHodgeTests(unittest.TestCase):
+    def test_parity_isolated_two_moment_no_signal_loss_and_no_cross_leakage(self):
+        from observational_succ.four_schur_dual_quotient import parity_isolated_two_moment_lower
+        # At zero error, preserves 100% of 30 c1^2 and 210 c2^2 (not 50%).
+        M0 = parity_isolated_two_moment_lower([[1, 0], [0, 1]], [[0, 0], [0, 0]])
+        self.assertEqual(M0, ((F(30), F(0)), (F(0), F(210))))
+        # Even error does not contaminate odd diagonal entry [0][0]:
+        M_err = parity_isolated_two_moment_lower([[1, 0], [0, 0]], [[0, 0], [0, F(1, 10)]])
+        self.assertEqual(M_err[0][0], F(30))
+        self.assertEqual(M_err[1][1], -F(21, 10))
+        # Cross-parity nonzero entry rejected when strict_parity=True:
+        with self.assertRaises(DualQuotientError):
+            parity_isolated_two_moment_lower([[0, 1], [0, 0]], [[0, 0], [0, 0]])
+
+    def test_complete_four_moment_matches_monomial_and_legendre_routes(self):
+        from observational_succ.four_schur_dual_quotient import (
+            monomial_moments_from_mixed_rows,
+            legendre_moments_from_mixed_rows,
+            complete_four_moment_lower,
+            legendre_four_moment_lower,
+        )
+        # Arbitrary parity-respecting mixed moments M_1..M_4 on 4 columns:
+        # Recall M_1 = 2 E_0, M_3 = 12(E_0 - 5 c_1) => c_1 = (M_1/2 - M_3/12)/5 = M_1/10 - M_3/60
+        # M_2 = 12 E_1, M_4 = 20(2 E_1 - 7 c_2) => c_2 = (M_2/6 - M_4/20)/7 = M_2/42 - M_4/140
+        M_mid = (
+            (F(2), F(0), -F(1), F(0)),
+            (F(0), F(6), F(0), F(3)),
+            (F(12), F(0), F(6), F(0)),
+            (F(0), F(20), F(0), -F(10)),
+        )
+        Z_err = tuple(tuple(F(0) for _ in range(4)) for _ in range(4))
+        c1_row = tuple(M_mid[0][i] / 10 - M_mid[2][i] / 60 for i in range(4))
+        c2_row = tuple(M_mid[1][i] / 42 - M_mid[3][i] / 140 for i in range(4))
+        E_mid, _ = monomial_moments_from_mixed_rows(M_mid, Z_err)
+        L_mid, L_err = legendre_moments_from_mixed_rows(M_mid, Z_err)
+        gram_monomial = derivative_moment_projection_gram(E_mid)
+        gram_complete = complete_four_moment_lower(
+            (c1_row, c2_row), (Z_err[0], Z_err[1]),
+            (M_mid[2], M_mid[3]), (Z_err[2], Z_err[3]),
+        )
+        gram_legendre = legendre_four_moment_lower(L_mid, L_err)
+        self.assertEqual(gram_monomial, gram_complete)
+        self.assertEqual(gram_monomial, gram_legendre)
+
+    def test_hodge_legendre_general_m_endpoint_free_gram(self):
+        from observational_succ.four_schur_dual_quotient import (
+            hodge_legendre_endpoint_free_gram,
+            general_endpoint_free_moment_lower,
+        )
+        h4 = hodge_legendre_endpoint_free_gram(m=4, radius=F(1, 2))
+        self.assertEqual(h4["K_gram"], ((F(1, 30), F(0)), (F(0), F(1, 210))))
+        self.assertEqual(h4["K_inverse"], ((F(30), F(0)), (F(0), F(210))))
+        h5 = hodge_legendre_endpoint_free_gram(m=5, radius=F(1, 2))
+        self.assertEqual(
+            h5["K_inverse"],
+            (
+                (F(168, 5), F(0), F(252, 5)),
+                (F(0), F(210), F(0)),
+                (F(252, 5), F(0), F(3528, 5)),
+            ),
+        )
+        # At m=4, general_endpoint_free_moment_lower equals parity_isolated_two_moment_lower
+        g4 = general_endpoint_free_moment_lower([[F(1), 0], [0, F(1)]], [[0, 0], [0, 0]])
+        self.assertEqual(g4, ((F(30), F(0)), (F(0), F(210))))
+
+    def test_observer_synergy_and_cross_gauge_no_ghost(self):
+        from observational_succ.four_schur_dual_quotient import (
+            observer_interior_boundary_synergy_certificate,
+            cross_contact_gauge_no_ghost_countermodel,
+        )
+        syn = observer_interior_boundary_synergy_certificate()
+        self.assertEqual(syn["interior_observer_c1_c2_energy"], F(0))
+        self.assertEqual(syn["joined_observer_complete_4moment_energy"], F(24))
+        self.assertEqual(syn["residual_under_joined_observer"], F(0))
+        self.assertTrue(syn["strict_synergy_over_sum_of_parts"])
+        self.assertFalse(syn["RH_proved"])
+
+        ng = cross_contact_gauge_no_ghost_countermodel()
+        self.assertTrue(ng["violates_bessel_inequality"])
+        self.assertLess(ng["forged_apparent_residual"], F(0))
+        self.assertFalse(ng["RH_proved"])
+
+
+if __name__=='__main__':unittest.main()
+

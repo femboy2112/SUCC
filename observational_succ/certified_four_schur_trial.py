@@ -47,6 +47,7 @@ from __future__ import annotations
 
 from fractions import Fraction as F
 from functools import lru_cache
+from math import isqrt
 
 from .suzuki_moment_schur import (
     SchurSourceError, positive_definite, parity_blocks, symmetric,
@@ -56,8 +57,17 @@ from .suzuki_legendre_source import authentic_full_low_entry
 from .source_weil_hierarchy import authentic_positive_gamma_tail_norm, authenticated_prime_wavefront
 from .tate_suzuki_shorting import verify_original_suzuki_source
 from .one_object_residual_schur import original_source_cancellation_certificate
-from .four_schur_dual_quotient import (quotient_derivative_cap,
-                                       vanishing_boundary_moment_lower)
+from .suzuki_mixed30_gamma_tail import authentic_infinite_gamma_mixed_rows
+from .tate_weighted_bessel_four_schur import KAPPA_ODD_LOWER, KAPPA_EVEN_LOWER
+from .four_schur_dual_quotient import (
+    quotient_derivative_cap,
+    vanishing_boundary_moment_lower,
+    parity_isolated_two_moment_lower,
+    monomial_moments_from_mixed_rows,
+    legendre_moments_from_mixed_rows,
+    complete_four_moment_lower,
+    legendre_four_moment_lower,
+)
 
 A_RADIUS = F(1, 2)
 KAPPA = F(1, 50)
@@ -75,6 +85,24 @@ def _q(x):
     return F(x)
 
 
+def _sqrt_rat_upper(val, denom=10**12):
+    val = _q(val)
+    if val < 0:
+        raise CertifiedTrialError("nonnegative radicand required")
+    n = isqrt(val.numerator * denom * denom // val.denominator)
+    if F(n * n, denom * denom) < val:
+        n += 1
+    return F(n, denom)
+
+
+def _sqrt_rat_lower(val, denom=10**12):
+    val = _q(val)
+    if val < 0:
+        raise CertifiedTrialError("nonnegative radicand required")
+    n = isqrt(val.numerator * denom * denom // val.denominator)
+    return F(n, denom)
+
+
 @lru_cache(maxsize=64)
 def _g_block(rank, J):
     """Cached exact interval source block G_J on Legendre modes 1..rank at a=1/2.
@@ -87,6 +115,16 @@ def _g_block(rank, J):
     return tuple(tuple(authentic_full_low_entry(i, j, A_RADIUS, J)
                        for j in range(1, rank + 1))
                  for i in range(1, rank + 1))
+
+
+@lru_cache(maxsize=64)
+def _mixed_4_block(rank, J_mixed):
+    """Cached infinite-Gamma-completed mixed derivative rows M_{k,m} = <u_k', (G u_m)'>
+    for k=1..4 and m=1..rank at a=1/2."""
+    cert = authentic_infinite_gamma_mixed_rows(
+        J_mixed, rank=4, low_modes=tuple(range(1, rank + 1))
+    )
+    return cert.completed_matrix_enclosures
 
 
 def _rational_matrix(M, rows, cols):
@@ -451,6 +489,86 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
         _scale(source_boundary_moment_lower, F(1) / KAPPA)
     )
 
+    # ---- COMPLETE FOUR-MOMENT QUOTIENT & PARITY-SPLIT COERCIVITY (Moonshots A & C) ----
+    # 1. Parity-zeroed, Cauchy-Schwarz-sharpened interior low Galerkin channels c_1, c_2:
+    #    |<P_{jj+1}, (G - G_J) v_i>| = 0 when (jj - i) is odd by reflection symmetry,
+    #    and <= tail_J * ||P_{jj+1}||_L2 * ||v_i||_L2 when (jj - i) is even.
+    c_sharp_mid = []
+    c_sharp_err = []
+    for jj in (0, 1):
+        rmid = []
+        rerr = []
+        for i in range(4):
+            if (jj - i) % 2:
+                rmid.append(F(0))
+                rerr.append(F(0))
+            else:
+                acc = iv(0)
+                for k in range(rank):
+                    if V[k][i]:
+                        acc += V[k][i] * Gblk[jj][k]
+                cs_err = tail_J * _sqrt_rat_upper(legendre_L2_norm2(jj + 1) * W_L2[i][i])
+                rmid.append((acc.lo + acc.hi) / 2)
+                rerr.append((acc.hi - acc.lo) / 2 + cs_err)
+        c_sharp_mid.append(tuple(rmid))
+        c_sharp_err.append(tuple(rerr))
+    c_sharp_mid = tuple(c_sharp_mid)
+    c_sharp_err = tuple(c_sharp_err)
+
+    # 2. Infinite-Gamma-completed mixed derivative rows M_{k,i} = <u_k', (G v_i)'> (k=1..4):
+    J_mixed = min(J, 64)
+    M_blk = _mixed_4_block(rank, J_mixed)
+    mixed_mid = []
+    mixed_err = []
+    for k in range(4):
+        rmid = []
+        rerr = []
+        for i in range(4):
+            if (k - i) % 2:
+                rmid.append(F(0))
+                rerr.append(F(0))
+            else:
+                acc = iv(0)
+                for m in range(rank):
+                    if V[m][i]:
+                        acc += V[m][i] * M_blk[k][m]
+                rmid.append((acc.lo + acc.hi) / 2)
+                rerr.append((acc.hi - acc.lo) / 2)
+        mixed_mid.append(tuple(rmid))
+        mixed_err.append(tuple(rerr))
+    mixed_mid = tuple(mixed_mid)
+    mixed_err = tuple(mixed_err)
+
+    E_full_mid, E_full_err = monomial_moments_from_mixed_rows(mixed_mid, mixed_err)
+    L_full_mid, L_full_err = legendre_moments_from_mixed_rows(mixed_mid, mixed_err)
+    source_full_four_moment_lower = complete_four_moment_lower(
+        c_sharp_mid, c_sharp_err, mixed_mid[2:4], mixed_err[2:4]
+    )
+    source_legendre_four_moment_lower = legendre_four_moment_lower(L_full_mid, L_full_err)
+
+    # 3. Full 4-moment lower bracket at inherited kappa = 1/50:
+    source_dual_four_moment_lower = _mat_add(
+        source_dual_U_lower,
+        _scale(source_full_four_moment_lower, F(1) / KAPPA),
+    )
+
+    # 4. Parity-split coercivity (kappa_odd = 63/500, kappa_even = 153/500) + full 4-moment:
+    young_minus_4mom = _mat_sub(
+        _scale(W_L2, GPRIME_L1_UPPER ** 2),
+        source_full_four_moment_lower,
+    )
+    parity_scaled_residual = tuple(
+        tuple(
+            young_minus_4mom[i][j] / (KAPPA_ODD_LOWER if i % 2 == 0 else KAPPA_EVEN_LOWER)
+            for j in range(4)
+        )
+        for i in range(4)
+    )
+    source_dual_parity_kappa_four_moment_lower = _mat_sub(
+        _scalar_shift(mid, r),
+        parity_scaled_residual,
+    )
+
     # Requested precision is a measurable source-trial-energy width target,
     # not a promise of arbitrary-precision Schur sign. It now affects a
     # verifiable acceptance flag. J/rank are bounded; unmet targets stay unmet.
@@ -475,6 +593,12 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
     boundary_pb = parity_blocks(source_dual_boundary_lower, 4)
     boundary_lower_is_pd = (positive_definite(boundary_pb['odd'])
                             and positive_definite(boundary_pb['even']))
+    four_mom_pb = parity_blocks(source_dual_four_moment_lower, 4)
+    four_mom_lower_is_pd = (positive_definite(four_mom_pb['odd'])
+                            and positive_definite(four_mom_pb['even']))
+    parity_kappa_pb = parity_blocks(source_dual_parity_kappa_four_moment_lower, 4)
+    parity_kappa_lower_is_pd = (positive_definite(parity_kappa_pb['odd'])
+                                and positive_definite(parity_kappa_pb['even']))
     # NEGATIVE gate: upper_bracket genuinely NOT PSD (a strictly-negative direction),
     # tested exactly on the 2x2 parity blocks -- a PSD-singular upper stays AMBIGUOUS.
     upper_is_psd = _block_is_psd(up_pb['odd']) and _block_is_psd(up_pb['even'])
@@ -482,10 +606,12 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
 
     up_eig, up_min = _parity_block_min_eig(upper_bracket)
     lo_eig, lo_min = _parity_block_min_eig(lower_bracket)
+    pk_eig, pk_min = _parity_block_min_eig(source_dual_parity_kappa_four_moment_lower)
     up_max = max_eig_upper(up_pb['odd']), max_eig_upper(up_pb['even'])
 
     # ---- verdict ----
-    if lower_is_pd or dual_lower_is_pd or boundary_lower_is_pd:
+    if (lower_is_pd or dual_lower_is_pd or boundary_lower_is_pd
+            or four_mom_lower_is_pd or parity_kappa_lower_is_pd):
         verdict = "POSITIVE_CERTIFIED"            # S_4 >= lower_bracket > 0
     elif upper_has_strict_negative_direction:
         # S_4 <= upper_bracket, which has a strictly negative direction -> S_4 not PSD
@@ -518,8 +644,10 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
         "source_dual_U_uses_unprojected_derivative_pairing": True,
         "source_dual_U_has_authenticated_moments": True,
         "source_dual_U_authenticated_moment_scope": (
-            "TWO endpoint-vanishing polynomial derivative channels only; "
-            "the full four polynomial moment rows remain uncomputed."
+            "TWO endpoint-vanishing polynomial derivative channels in "
+            "source_dual_boundary_lower_bracket; COMPLETE four-moment "
+            "degree<=3 polynomial projection certified in "
+            "source_dual_four_moment_lower_bracket."
         ),
         "source_dual_boundary_moment_lower": tuple(
             tuple(str(x) for x in row) for row in source_boundary_moment_lower),
@@ -530,13 +658,39 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
                                                 for row in source_rows_mid),
         "source_dual_boundary_rows_error": tuple(tuple(str(x) for x in row)
                                                   for row in source_rows_err),
+        # Complete 4-moment quotient and parity-split coercivity outputs
+        "source_full_four_moment_E_mid": tuple(
+            tuple(str(x) for x in row) for row in E_full_mid),
+        "source_full_four_moment_E_error": tuple(
+            tuple(str(x) for x in row) for row in E_full_err),
+        "source_full_four_moment_L_mid": tuple(
+            tuple(str(x) for x in row) for row in L_full_mid),
+        "source_full_four_moment_L_error": tuple(
+            tuple(str(x) for x in row) for row in L_full_err),
+        "source_full_four_moment_lower": tuple(
+            tuple(str(x) for x in row) for row in source_full_four_moment_lower),
+        "source_legendre_four_moment_lower": tuple(
+            tuple(str(x) for x in row) for row in source_legendre_four_moment_lower),
+        "source_dual_four_moment_lower_bracket": tuple(
+            tuple(str(x) for x in row) for row in source_dual_four_moment_lower),
+        "source_dual_four_moment_lower_is_pd": four_mom_lower_is_pd,
+        "parity_kappa_lower": {
+            "odd": str(KAPPA_ODD_LOWER),
+            "even": str(KAPPA_EVEN_LOWER),
+            "global": str(KAPPA_ODD_LOWER),
+        },
+        "source_dual_parity_kappa_four_moment_lower_bracket": tuple(
+            tuple(str(x) for x in row) for row in source_dual_parity_kappa_four_moment_lower),
+        "source_dual_parity_kappa_four_moment_lower_is_pd": parity_kappa_lower_is_pd,
+        "source_dual_parity_kappa_min_eig_lower_by_parity": {
+            k: str(v) for k, v in pk_eig.items()
+        },
+        "source_dual_parity_kappa_min_eig_lower": str(pk_min),
         "source_dual_U_note": (
-            "CERTIFIED primitive K-dual lower plus two ORIGINAL-SOURCE "
-            "endpoint-vanishing derivative-moment rows obtained from the "
-            "first two low Galerkin channels with independently bounded "
-            "omitted Gamma tail. This is a Loewner lower, not a signed "
-            "Weil sign verdict. Full degree<=3 derivative moments and "
-            "the exact differentiated convolution energy remain open."
+            "CERTIFIED primitive K-dual lower with BOTH the legacy two-channel "
+            "endpoint-vanishing subtraction and the COMPLETE four-moment degree<=3 "
+            "polynomial projection E^* P^{-1} E (plus parity-split coercivity "
+            "kappa_odd=63/500, kappa_even=153/500)."
         ),
         "upper_bracket_min_eig_lower_by_parity": {k: str(v) for k, v in up_eig.items()},
         "upper_bracket_min_eig_lower": str(up_min),
@@ -575,5 +729,288 @@ def CertifiedTrial(U, J=64, precision=F(1, 1000), rank=None, diagnostic=False):
     return result
 
 
-__all__ = ["CertifiedTrial", "CertifiedTrialError", "min_eig_lower", "max_eig_upper",
-           "legendre_L2_norm2", "KAPPA", "ZERO_SHIFT_CAP", "GPRIME_L1_UPPER"]
+@lru_cache(maxsize=4096)
+def authentic_suzuki_mode_derivative_point(k, x, J, *, a=F(1, 2)):
+    """Pointwise original-source derivative interval (G_J P_k(x/a))'(x) for 1 <= k <= 12
+    at rational x in (-a, a), a = 1/2, 1 <= J <= 20.
+    """
+    from . import suzuki_legendre_source as L
+    source = L._pinned_source()
+    verify_original_suzuki_source()
+    if type(a) is not F or a != F(1, 2) or type(k) is not int or not 1 <= k <= 12:
+        raise CertifiedTrialError("authenticated Legendre mode k=1..12 at a=1/2 required")
+    if type(J) is not int or not 1 <= J <= 20:
+        raise CertifiedTrialError("source derivative J=1..20 required")
+    x = _q(x)
+    if not -a < x < a:
+        raise CertifiedTrialError("strict compact window interior required")
+    poly = L.legendre_polynomial(k, a)
+    primitive = L.poly_primitive_zero_at_left(poly, a)
+    if L.poly_eval(primitive, a):
+        raise CertifiedTrialError("original meanzero/source domain violation")
+    digits = 90
+
+    def constant(v):
+        v = _q(v)
+        return v, v
+
+    def exp_minus(t):
+        t = _q(t)
+        if t >= 0:
+            return L.tight_exp_neg(t, digits)
+        lo, hi = L.tight_exp_neg(-t, digits)
+        return F(1, hi), F(1, lo)
+
+    def sub(left, right):
+        return L.interval_add(left, L.interval_scale(right, -1))
+
+    def mul(left, right):
+        return L.interval_mul(left, right)
+
+    fp = L.exp_antiderivative_poly(poly, F(1, 2), +1)
+    fm = L.exp_antiderivative_poly(poly, F(1, 2), -1)
+    integral_plus = sub(mul(exp_minus(-a / 2), constant(L.poly_eval(fp, a))),
+                        mul(exp_minus(a / 2), constant(L.poly_eval(fp, -a))))
+    integral_minus = sub(mul(exp_minus(a / 2), constant(L.poly_eval(fm, a))),
+                         mul(exp_minus(-a / 2), constant(L.poly_eval(fm, -a))))
+    pole = L.interval_add(L.interval_scale(mul(exp_minus(-x / 2), integral_minus), -2),
+                          L.interval_scale(mul(exp_minus(x / 2), integral_plus), 2))
+    cg = source.contact_iv()
+    contact = mul((cg.lo, cg.hi), constant(L.poly_eval(primitive, x)))
+    b = L.tight_log2(digits)
+    srcb = source.log2_iv()
+    if not (b[0] <= srcb.hi and srcb.lo <= b[1]):
+        raise CertifiedTrialError("prime/arch log2 phase source disagreement")
+    prim = constant(0)
+    lower = (x - b[1], x - b[0])
+    upper = (x + b[0], x + b[1])
+    if lower[0] >= -a:
+        prim = L.interval_add(prim, L.interval_poly_eval(primitive, lower))
+    elif lower[1] > -a:
+        raise CertifiedTrialError("uncertain left prime activation; refine x")
+    if upper[1] <= a:
+        prim = L.interval_add(prim, L.interval_poly_eval(primitive, upper))
+    elif upper[0] < a:
+        raise CertifiedTrialError("uncertain right prime activation; refine x")
+    srcinv = source.sqrt_inverse(2)
+    weight = mul(b, (srcinv.lo, srcinv.hi))
+    prime = mul(weight, prim)
+    gamma = constant(0)
+    for j in range(J):
+        d = 4 * j + 1
+        alpha = F(d, 2)
+        plus = L.exp_antiderivative_poly(poly, alpha, +1)
+        minus = L.exp_antiderivative_poly(poly, alpha, -1)
+        both = constant(L.poly_eval(plus, x) + L.poly_eval(minus, x))
+        edge1 = mul(exp_minus(alpha * (x + a)), constant(L.poly_eval(plus, -a)))
+        edge2 = mul(exp_minus(alpha * (a - x)), constant(L.poly_eval(minus, a)))
+        single = L.interval_scale(sub(sub(both, edge1), edge2), F(-2, d))
+        gamma = L.interval_add(gamma, single)
+    total = L.interval_add(L.interval_add(pole, contact), L.interval_add(prime, gamma))
+    return L.source_interval_round(source, total)
+
+
+def CertifiedDerivativeEnergyTrial(U=(), J_deriv=20, grid=128, J_galerkin=64, rank=None):
+    """Moonshots B, C, E: Source-certified differentiated convolution Gram enclosure
+    H'_{ij} = <h_i', h_j'>_{L^2(-1/2,1/2)} (h_i = G(e_i - U e_i)), combined with
+    complete 4-moment subtraction E^* P^{-1} E and parity-split coercivity
+    (kappa_odd = 63/500, kappa_even = 153/500).
+
+    Combines:
+      - Approach B1 (Real-Space Midpoint-Lipschitz Integration): integrates
+        (G_{J_deriv} v_i)'(x) (G_{J_deriv} v_j)'(x) across `grid` cells using
+        reflection symmetry and the proved BV Lipschitz bound
+        L_i = V_{J_deriv} * sum_m |V[m,i]| (since ||P_m(2x)||_inf = 1).
+      - Approach B3 (Sharpened O(J_deriv^{-3/2}) Polynomial IBP Gamma Tail):
+        for omitted Gamma rungs j >= J_deriv (d = 4*J_deriv + 1), integration by parts gives
+        ||((G - G_{J_deriv}) v_i)'||_2 <= 2 ||v_i'||_2 (1/d^2 + 8/d^3)
+                                         + (|v_i(1/2)| + |v_i(-1/2)|) (2/(3 d^{3/2}) + 4/d^{5/2}).
+      - Moonshot A (Complete 4-Moment Subtraction): subtracts E^* P^{-1} E.
+      - Moonshot C (Parity-Split Coercivity): divides odd sector by kappa_odd = 63/500
+        and even sector by kappa_even = 153/500.
+    """
+    from .tate_suzuki_shorting import (
+        original_first_prime_derivative_bv_bound,
+        original_gamma_derivative_l1_tail,
+    )
+    from . import suzuki_legendre_source as L
+
+    base = CertifiedTrial(U=U, J=J_galerkin, rank=rank)
+    if base["verdict"] == "INVALID_SOURCE":
+        return base
+    if type(J_deriv) is not int or not 1 <= J_deriv <= 20:
+        return {"verdict": "INVALID_SOURCE", "reason": "J_deriv out of [1,20]", "RH_proved": False}
+    if type(grid) is not int or not 4 <= grid <= 512 or grid % 2 != 0:
+        return {"verdict": "INVALID_SOURCE", "reason": "even grid in [4,512] required", "RH_proved": False}
+
+    rk = base["rank"]
+    U_norm = tuple(tuple(F(x) for x in r) for r in base["U"])
+    V = _trial_matrix_V(U_norm, rk)
+    W_L2 = _L2_gram_of_trial(V, rk)
+    h = F(1, grid)
+    bv = original_first_prime_derivative_bv_bound(J_deriv)
+    lip_col = tuple(bv * sum((abs(V[m][i]) for m in range(rk)), F(0)) for i in range(4))
+
+    # Evaluate mode derivatives at positive-half midpoints
+    active_modes = tuple(m + 1 for m in range(rk) if any(V[m][i] != 0 for i in range(4)))
+    mode_pts = {
+        k: tuple(authentic_suzuki_mode_derivative_point(k, F(2 * q + 1, 2 * grid), J_deriv)
+                 for q in range(grid // 2))
+        for k in active_modes
+    }
+
+    # Combine into column midpoint intervals for (G_{J_deriv} v_i)'(x_q)
+    col_pts = []
+    for i in range(4):
+        pts_i = []
+        for q in range(grid // 2):
+            lo = hi = F(0)
+            for m in range(rk):
+                c = V[m][i]
+                if not c:
+                    continue
+                iv_m = mode_pts[m + 1][q]
+                if c > 0:
+                    lo += c * iv_m.lo
+                    hi += c * iv_m.hi
+                else:
+                    lo += c * iv_m.hi
+                    hi += c * iv_m.lo
+            pts_i.append((lo, hi))
+        col_pts.append(tuple(pts_i))
+
+    H_J_mid = [[F(0)] * 4 for _ in range(4)]
+    H_J_rad = [[F(0)] * 4 for _ in range(4)]
+    for i in range(4):
+        for j in range(4):
+            if (i - j) % 2:
+                continue
+            L1, L2 = lip_col[i], lip_col[j]
+            mid_sum = rad_sum = F(0)
+            for q in range(grid // 2):
+                f_lo, f_hi = col_pts[i][q]
+                g_lo, g_hi = col_pts[j][q]
+                f_m = (f_lo + f_hi) / 2
+                r_f = (f_hi - f_lo) / 2
+                g_m = (g_lo + g_hi) / 2
+                r_g = (g_hi - g_lo) / 2
+                mid_sum += 2 * h * (f_m * g_m)
+                cell_err = (
+                    (abs(f_m) * r_g + abs(g_m) * r_f + r_f * r_g) * h
+                    + (abs(f_m) * L2 + abs(g_m) * L1 + r_f * L2 + r_g * L1) * (h * h / 4)
+                    + (L1 * L2) * (h * h * h / 12)
+                )
+                rad_sum += 2 * cell_err
+            H_J_mid[i][j] = mid_sum
+            H_J_rad[i][j] = rad_sum
+
+    # Exact polynomial derivative Gram <u_m', u_n'> on (-1/2, 1/2) for ||v_i'||_2
+    polys = {m: L.legendre_polynomial(m, A_RADIUS) for m in range(1, rk + 1)}
+    ders = {m: L.poly_derivative(polys[m]) for m in range(1, rk + 1)}
+    D_poly = {
+        (m, n): L.poly_integral(L.poly_mul(ders[m], ders[n]), -A_RADIUS, A_RADIUS)
+        for m in range(1, rk + 1) for n in range(1, rk + 1)
+    }
+
+    d = 4 * J_deriv + 1
+    sqrt_d_lo = _sqrt_rat_lower(F(d))
+    tail_ibp_32 = F(2, 3) / (d * sqrt_d_lo) + F(4, 1) / (d * d * sqrt_d_lo)
+    tail_ibp_2 = F(1, d * d) + F(8, d * d * d)
+    eta_young_scalar = original_gamma_derivative_l1_tail(J_deriv)
+
+    eta_ibp_vec = []
+    eta_young_vec = []
+    eta_best_vec = []
+    norm_hJ_hi = []
+    for i in range(4):
+        vi_deriv_sq = sum(
+            (V[m][i] * V[n][i] * D_poly[(m + 1, n + 1)]
+             for m in range(rk) for n in range(rk) if V[m][i] and V[n][i]),
+            F(0),
+        )
+        vi_deriv_l2 = _sqrt_rat_upper(vi_deriv_sq)
+        vi_pos = abs(sum((V[m][i] for m in range(rk)), F(0)))
+        vi_neg = abs(sum((V[m][i] * (-1 if (m + 1) % 2 else 1) for m in range(rk)), F(0)))
+        eta_ibp = 2 * vi_deriv_l2 * tail_ibp_2 + (vi_pos + vi_neg) * tail_ibp_32
+        eta_yng = eta_young_scalar * _sqrt_rat_upper(W_L2[i][i])
+        eta_ibp_vec.append(eta_ibp)
+        eta_young_vec.append(eta_yng)
+        eta_best_vec.append(min(eta_ibp, eta_yng))
+        norm_hJ_hi.append(_sqrt_rat_upper(H_J_mid[i][i] + H_J_rad[i][i]))
+
+    H_full_rad = [[F(0)] * 4 for _ in range(4)]
+    for i in range(4):
+        for j in range(4):
+            if (i - j) % 2 == 0:
+                tail_ij = (
+                    norm_hJ_hi[i] * eta_best_vec[j]
+                    + norm_hJ_hi[j] * eta_best_vec[i]
+                    + eta_best_vec[i] * eta_best_vec[j]
+                )
+                H_full_rad[i][j] = H_J_rad[i][j] + tail_ij
+
+    # Sector-isolated Loewner upper bound on H'
+    H_prime_upper = [[F(0)] * 4 for _ in range(4)]
+    for sector in ((0, 2), (1, 3)):
+        r_sec = max(sum(H_full_rad[i][j] for j in sector) for i in sector)
+        for i in sector:
+            for j in sector:
+                H_prime_upper[i][j] = H_J_mid[i][j] + (r_sec if i == j else F(0))
+    H_prime_upper = tuple(tuple(r) for r in H_prime_upper)
+
+    four_mom_lower = tuple(tuple(F(x) for x in r) for r in base["source_full_four_moment_lower"])
+    T_quot_upper = _mat_sub(H_prime_upper, four_mom_lower)
+
+    M_U_lower = _scalar_shift(
+        tuple(tuple(F(x) for x in r) for r in base["source_trial_energy_midpoint"]),
+        F(base["interval_loewner_radius_GJ"]),
+    )
+    lower_kappa_50 = _mat_sub(M_U_lower, _scale(T_quot_upper, F(1) / KAPPA))
+    lower_parity_kappa = tuple(
+        tuple(
+            M_U_lower[i][j] - T_quot_upper[i][j] / (KAPPA_ODD_LOWER if i % 2 == 0 else KAPPA_EVEN_LOWER)
+            for j in range(4)
+        )
+        for i in range(4)
+    )
+    pb_k50 = parity_blocks(lower_kappa_50, 4)
+    pb_pk = parity_blocks(lower_parity_kappa, 4)
+    k50_is_pd = positive_definite(pb_k50["odd"]) and positive_definite(pb_k50["even"])
+    pk_is_pd = positive_definite(pb_pk["odd"]) and positive_definite(pb_pk["even"])
+    eig_k50, min_k50 = _parity_block_min_eig(lower_kappa_50)
+    eig_pk, min_pk = _parity_block_min_eig(lower_parity_kappa)
+
+    verdict = base["verdict"]
+    if k50_is_pd or pk_is_pd:
+        verdict = "POSITIVE_CERTIFIED"
+
+    return {
+        "verdict": verdict,
+        "source": "AUTHENTIC_Q_ZETA_SUZUKI_DERIVATIVE_GRAM_B1_B3",
+        "J_deriv": J_deriv,
+        "grid": grid,
+        "J_galerkin": J_galerkin,
+        "rank": rk,
+        "H_prime_J_midpoint": tuple(tuple(str(x) for x in r) for r in H_J_mid),
+        "H_prime_full_radius": tuple(tuple(str(x) for x in r) for r in H_full_rad),
+        "H_prime_loewner_upper": tuple(tuple(str(x) for x in r) for r in H_prime_upper),
+        "gamma_tail_ibp_O_J_minus_3_2": tuple(str(x) for x in eta_ibp_vec),
+        "gamma_tail_young_O_J_minus_1": tuple(str(x) for x in eta_young_vec),
+        "T_quot_loewner_upper": tuple(tuple(str(x) for x in r) for r in T_quot_upper),
+        "certified_Hprime_kappa50_lower_bracket": tuple(tuple(str(x) for x in r) for r in lower_kappa_50),
+        "certified_Hprime_kappa50_min_eig_lower_by_parity": {k: str(v) for k, v in eig_k50.items()},
+        "certified_Hprime_kappa50_min_eig_lower": str(min_k50),
+        "certified_Hprime_parity_kappa_lower_bracket": tuple(tuple(str(x) for x in r) for r in lower_parity_kappa),
+        "certified_Hprime_parity_kappa_min_eig_lower_by_parity": {k: str(v) for k, v in eig_pk.items()},
+        "certified_Hprime_parity_kappa_min_eig_lower": str(min_pk),
+        "certified_Hprime_parity_kappa_is_pd": pk_is_pd,
+        "RH_proved": False,
+    }
+
+
+__all__ = ["CertifiedTrial", "CertifiedDerivativeEnergyTrial",
+           "authentic_suzuki_mode_derivative_point",
+           "CertifiedTrialError", "min_eig_lower", "max_eig_upper",
+           "legendre_L2_norm2", "KAPPA", "KAPPA_ODD_LOWER", "KAPPA_EVEN_LOWER",
+           "ZERO_SHIFT_CAP", "GPRIME_L1_UPPER"]
+

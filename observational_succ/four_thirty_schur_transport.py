@@ -146,5 +146,80 @@ def demo():
             "kappa_4": str(KAPPA_4), "kappa_30": str(KAPPA_30), "RH_proved": False}
 
 
+def source_30mode_middle_block_obstruction_certificate(J=16):
+    """Moonshot D: Exact quantitative obstruction to nested 30->4 Schur transport
+    using the 30-mode Young/L1 lower bracket L_30 = A_30 - ((11/40)^2 / kappa_30) W_{L2,30}.
+
+    Theorem D.1:
+      1. Since ||G||_{op} <= ||g||_{L^1(-1,1)} <= ||g'||_{L^1(-1,1)} < 11/40, we have
+         A_30 < (11/40) W_{L2,30} in Loewner order.
+      2. Consequently, on the discarded 26-mode middle subspace M_{5:30} = span{P_5..P_30}:
+           L_30|_{5..30} < (11/40 - (11/40)^2 / kappa_30) W_{L2,5..30}.
+         - At kappa_30 = 369/10000 (source_moment30_certificate):
+             11/40 - 3025/1476 = -26191/14760 < 0.
+         - At kappa_30 = 1/16 (tate_suzuki_fourier_schur):
+             11/40 - 121/100 = -187/200 < 0.
+         Hence L_30|_{5..30} is strictly NEGATIVE-DEFINITE on all 26 modes, violating
+         the monotone nested shorting hypothesis L|_{5..30} > 0.
+      3. Entrywise on the authentic source at modes m in {5, 6, 29, 30}, (A_30)_{m,m} / W_{m,m}
+         decays as O(m^{-2}) (from ~0.0040 at m=5 to ~0.00075 at m=30) because G is compact,
+         whereas the Young residual penalty (11/40)^2 / kappa_30 is O(1).
+    """
+    from .suzuki_legendre_source import authentic_full_low_entry
+    from .source_weil_hierarchy import authentic_positive_gamma_tail_norm
+    from .tate_suzuki_shorting import verify_original_suzuki_source
+
+    if type(J) is not int or not 1 <= J <= 64:
+        raise SchurSourceError("J must be an integer in 1..64")
+    verify_original_suzuki_source()
+    gprime_l1 = F(11, 40)
+    penalty_moment30 = (gprime_l1 ** 2) / KAPPA_30               # 3025/1476
+    penalty_fourier30 = (gprime_l1 ** 2) / F(1, 16)              # 121/100
+    universal_upper_factor_moment30 = gprime_l1 - penalty_moment30   # -26191/14760
+    universal_upper_factor_fourier30 = gprime_l1 - penalty_fourier30 # -187/200
+
+    tail_J = authentic_positive_gamma_tail_norm(J)
+    sampled_modes = {}
+    for m in (5, 6, 29, 30):
+        iv = authentic_full_low_entry(m, m, F(1, 2), J)
+        w_mm = F(1, 2 * m + 1)
+        a_mm_upper = iv.hi + tail_J * w_mm
+        normalized_a_upper = a_mm_upper / w_mm
+        l30_diag_upper = a_mm_upper - penalty_moment30 * w_mm
+        sampled_modes[m] = {
+            "W_mm": w_mm,
+            "A_mm_upper": a_mm_upper,
+            "A_mm_over_W_mm_upper": normalized_a_upper,
+            "L30_mm_upper": l30_diag_upper,
+            "strictly_negative": l30_diag_upper < 0,
+        }
+    if not (universal_upper_factor_moment30 == -F(26191, 14760) < 0
+            and universal_upper_factor_fourier30 == -F(187, 200) < 0
+            and all(v["strictly_negative"] for v in sampled_modes.values())):
+        raise ArithmeticError("30-mode middle block obstruction invariant failed")
+    return {
+        "source": "AUTHENTIC_Q_ZETA_SUZUKI_30_TO_4_MIDDLE_BLOCK_OBSTRUCTION",
+        "J": J,
+        "kappa_30_moment": KAPPA_30,
+        "kappa_30_fourier": F(1, 16),
+        "young_penalty_moment30": penalty_moment30,
+        "young_penalty_fourier30": penalty_fourier30,
+        "universal_middle_loewner_upper_factor_moment30": universal_upper_factor_moment30,
+        "universal_middle_loewner_upper_factor_fourier30": universal_upper_factor_fourier30,
+        "middle_block_5_to_30_strictly_negative_definite": True,
+        "monotone_nested_short_hypothesis_satisfied": False,
+        "sampled_authentic_middle_diagonals": sampled_modes,
+        "structural_cause": (
+            "G is compact on L^2_0(-1/2,1/2) so (A_30)_{m,m}/W_{m,m} = O(m^{-2}), "
+            "whereas the unprojected Young derivative cap subtracts an O(1) multiple "
+            "of W_{m,m} across all middle modes 5..30."
+        ),
+        "RH_proved": False,
+    }
+
+
 __all__ = ["short_to", "haynsworth_transitivity_holds",
-           "coercivity_does_not_transport_example", "demo", "KAPPA_4", "KAPPA_30"]
+           "coercivity_does_not_transport_example", "demo",
+           "source_30mode_middle_block_obstruction_certificate",
+           "KAPPA_4", "KAPPA_30"]
+

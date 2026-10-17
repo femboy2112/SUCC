@@ -34,12 +34,16 @@
       "supplement_files": [
         "docs/CLAIM_SUPPLEMENT_DUAL_QUOTIENT_SCHUR.md"
       ],
-      "id_count": 6,
-      "status": "MIXED (PROVED PAPER/EXACT FINITE/CONDITIONAL)",
-      "topic": "original four-mode primitive K-duality, moment projection and conditional nested Schur bounds",
+      "id_count": 14,
+      "status": "MIXED (PROVED PAPER/VERIFIED EXACT MODEL/PROVED LOCAL/CONDITIONAL)",
+      "topic": "original four-mode primitive K-duality, complete 4-moment projection, parity-split coercivity, B1+B3 derivative Gram, 30->4 obstruction, Hodge-Legendre isomorphism, contact rigidity, and Wave II braid/resonance/capsules",
       "code": [
         "observational_succ/four_schur_dual_quotient.py",
-        "observational_succ/nested_schur_envelopes.py"
+        "observational_succ/certified_four_schur_trial.py",
+        "observational_succ/tate_weighted_bessel_four_schur.py",
+        "observational_succ/four_thirty_schur_transport.py",
+        "observational_succ/nested_schur_envelopes.py",
+        "observational_succ/fucc_braid_resonance_capsules.py"
       ]
     },
     {
