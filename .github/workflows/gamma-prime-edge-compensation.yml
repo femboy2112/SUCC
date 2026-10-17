@@ -1,0 +1,64 @@
+name: Genuine Gamma-prime edge compensation certificates
+
+on:
+  push:
+    branches:
+      - 'research/prime-hinge-chiral-edge-*'
+  pull_request:
+    paths:
+      - 'observational_succ/prime_hinge_chiral_edge.py'
+      - 'observational_succ/gamma_edge_compensation.py'
+      - 'observational_succ/gamma_prime_phase_lock.py'
+      - 'tests/test_prime_hinge_chiral_edge.py'
+      - 'tests/test_gamma_edge_compensation.py'
+      - 'tests/test_gamma_prime_phase_lock.py'
+      - 'scripts/prime_hinge_chiral_edge_probe.py'
+      - 'scripts/gamma_prime_compensation_probe.py'
+      - '.github/workflows/gamma-prime-edge-compensation.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  source-edge:
+    name: Original signed-source edge compensation (${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install actual package and test dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Check immutable source and historical research provenance
+        run: python scripts/verify_provenance.py
+      - name: Original single-hinge exact algebra with authentic source gate
+        run: |
+          python -m unittest discover -s tests -p 'test_prime_hinge_chiral_edge.py' -v
+          python scripts/prime_hinge_chiral_edge_probe.py --source --verify > "$RUNNER_TEMP/edge-chiral.json"
+      - name: Complete signed-source Gamma-vs-prime edge compensation
+        run: |
+          python -m unittest discover -s tests -p 'test_gamma_edge_compensation.py' -v
+          python scripts/gamma_prime_compensation_probe.py --source --verify > "$RUNNER_TEMP/gamma-compensation.json"
+      - name: Prime-power/Gamma ladder half-density phase lock and fake-composite control
+        run: python -m unittest discover -s tests -p 'test_gamma_prime_phase_lock.py' -v
+      - name: Original observer and ordinal proof-access firewalls
+        run: |
+          python scripts/observer_foundations_probe.py > "$RUNNER_TEMP/observer.json"
+          python scripts/ordinal_succ_report_probe.py > "$RUNNER_TEMP/ordinal.json"
+      - name: Preserve complete evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gamma-prime-edge-${{ matrix.python }}
+          path: |
+            ${{ runner.temp }}/edge-chiral.json
+            ${{ runner.temp }}/gamma-compensation.json
+            ${{ runner.temp }}/observer.json
+            ${{ runner.temp }}/ordinal.json
+          if-no-files-found: warn
