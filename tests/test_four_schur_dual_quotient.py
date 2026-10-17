@@ -77,3 +77,30 @@ class PrimitiveDualTests(unittest.TestCase):
         self.assertEqual(r,((1,0),(0,F(1,12))))
 
 if __name__=='__main__':unittest.main()
+
+class VanishingBoundaryMomentTests(unittest.TestCase):
+    def test_exact_source_row_formula_no_error(self):
+        from observational_succ.four_schur_dual_quotient import vanishing_boundary_moment_lower
+        M=vanishing_boundary_moment_lower([[1,0],[0,1]], [[0,0],[0,0]])
+        self.assertEqual(M, ((F(15), F(0)),(F(0),F(105))))
+
+    def test_uncertainty_penalty_is_not_silently_clamped(self):
+        from observational_succ.four_schur_dual_quotient import vanishing_boundary_moment_lower
+        M=vanishing_boundary_moment_lower([[0,0],[0,0]], [[F(1,10),0],[0,F(1,10)]])
+        self.assertEqual(M,((-F(12,5),0),(0,-F(12,5))))
+
+    def test_eta_boundary_rejected(self):
+        from observational_succ.four_schur_dual_quotient import vanishing_boundary_moment_lower
+        for eta in (F(0),F(1),F(2)):
+            with self.assertRaises(DualQuotientError):
+                vanishing_boundary_moment_lower([[1,0],[0,1]], [[0,0],[0,0]],eta)
+
+    def test_symbolic_integral_shape(self):
+        from observational_succ.four_schur_dual_quotient import polynomial_moment_gram
+        a=F(1,2)
+        G=polynomial_moment_gram(a,3)
+        # exact norms for t^2-a^2 and t^3-a^2t
+        even=G[2][2]-2*a*a*G[0][2]+a**4*G[0][0]
+        odd=G[3][3]-2*a*a*G[1][3]+a**4*G[1][1]
+        self.assertEqual(even,F(1,30))
+        self.assertEqual(odd,F(1,840))
