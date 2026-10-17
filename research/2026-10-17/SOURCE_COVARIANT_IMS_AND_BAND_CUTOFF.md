@@ -45,6 +45,47 @@ int int (|x-y|-b)_+ (2x)(2y) dxdy = -2*(1-b)^3*(1+3b+b²)/30.
 
 The latter also follows directly from `rho_11(r)=2(r-1)(2r²+2r-1)/3` integrated against `(r-b)` on `[b,1]`. This is an exact symbolic/rational bridge to `suzuki_legendre_source.prime_hinge_integral_polynomial`. Multiplying by the genuinely source-authenticated `w2=(log2)/sqrt2` recovers the original prime-2 sign. This calibration is **not** the full signed source.
 
+## 1B. A positive **combined Gamma+FUCC jump generator** plus compensated source mass [SCIMS-08]
+
+There is a useful *exact rearrangement* of the signed prime term, **without deleting its negative contribution**. Extend `F` by zero to the real line and let `T_bF(x)=F(x+b)`, an L2-unitary. For every genuine active prime-power `n`,
+
+```
+-2 w_n Re<F,T_(b_n) F>
+    = w_n ||F-T_(b_n) F||² - 2 w_n ||F||².              (11)
+```
+
+Define the symmetric source jump measure for **fixed finite a**
+
+```
+nu_a(dh) = J(|h|) dh + sum_(genuine p^k: log n<2a)
+            w_n [delta_(b_n)(dh) + delta_(-b_n)(dh)].
+```
+
+Then the exact *positive* transported component and the full *signed* original source are
+
+```
+E_(Gamma+FUCC,a)(F)
+   = (1/2) int_R dx int_R nu_a(dh) |F(x)-F(x+h)|² >=0,
+Q_a(F') = E_(Gamma+FUCC,a)(F)
+          - (C+2 sum_n w_n)||F||²
+          + 2 |<F,cosh(x/2)>|² - 2 |<F,sinh(x/2)>|².          (12)
+```
+
+This is **not** a new positive covariance replacing Weil. The negative contact/prime mass and indefinite rank-two completed poles remain exactly where the original source puts them. Formally the positive component is the nonlocal Dirichlet/Lévy generator
+
+```
+L_a^+ = L_Gamma + sum_n w_n(2I-T_(b_n)-T_(-b_n)),
+multiplier h_a^+(xi)=m_Gamma(xi)+2sum_n w_n(1-cos(xi b_n)).
+```
+
+It is positive at the quadratic-form level, and is the precise mathematical sense in which *Gamma and FUCC act coherently on the same primitive*. Each source lag generates an actual graph edge, not a hypothetical extra sensor. Its exact IMS interface is equation (3), because the constant compensator `-2w||F||²` localizes under `sum chi_j²=1`.
+
+**Subtle but essential countercontrol:** if `F` has support diameter `<b_n`, then `<F,T_bF>=0`, hence the *net original prime response* is zero; nevertheless `w||F-T_bF||²=2w||F||²` and the **negative** compensator `-2w||F||²` are both nonzero and cancel **exactly**. Thus `"prime resonance always exists"` is correctly interpreted as a source operator/compensated jump relation, not a universally nonzero net quadratic reading. The exact finite Fraction implementation tests this identity in a no-overlap case.
+
+**Do not separate divergent pieces at infinite radius:** for fixed compact `F` and arbitrarily large prime powers `n`, the positive shift energy and negative mass compensator are both `2w_n||F||²`, but their **net** signed source contribution is zero. The sums of separate nonnegative energy and negative mass terms may diverge as `a→∞`, even when their pairwise-compensated original expression remains finite. The source-faithful large-radius limit must keep their exact cancellation, rather than posit a free positive global FUCC bath.
+
+**Arithmetic phase obstruction:** since `2 sum w_n(1-cos(xi b_n))` is a finite nonnegative trigonometric sum at each a, compact-torus recurrence gives arbitrarily large `xi` where all active prime phases are simultaneously close to zero. Therefore its presence alone does not give a uniform **strict** high-frequency spectral gap; the genuine Gamma multiplier's logarithmic growth in (5) is the universal high-frequency protection. This is a classical almost-periodic/Dirichlet-approximation observation, not a zero-location theorem.
+
 ## 2. The source action SUCC→FUCC [SCIMS-02]
 
 In integer carrier coordinates, `S e_n=e_(n+1)` and `V_p e_n=e_(pn)` obey `V_p S = S^p V_p`. Define the *distribution-valued* logarithmic placement `Phi:c_00(N)->D'(R)`, `Phi(e_n)=delta_(log n)`. Then, on finitely supported arithmetic vectors,
