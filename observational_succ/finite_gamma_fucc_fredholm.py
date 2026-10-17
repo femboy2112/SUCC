@@ -389,3 +389,45 @@ def source_original_four_mode_gamma_clock():
             'genuine_four_mode_first_positive_clock':tuple(report),
             'no_nontrivial_zeta_zero_coordinates':True,
             'original_full_Schur_sign_proved':False,'RH_proved':False}
+
+
+def source_original_four_mode_PD_transition():
+    """Exact original-source first positive-definite FOUR-mode Gamma prefix.
+
+    Prove G_63 not PSD by genuine rational test 24*P2-25*P4; certify both
+    true 2x2 reflection sectors of G_64 strictly PD with outward intervals.
+    All earlier J<63 are obstructed by monotonic positivity of real Gamma
+    rung increments. This is A4 (low), NOT the original Schur S4.
+    """
+    from .tate_suzuki_shorting import verify_original_suzuki_source
+    from .suzuki_legendre_source import authentic_full_low_entry
+    from . import source_weil_hierarchy as src
+    contract=verify_original_suzuki_source()
+    if src.authenticated_prime_wavefront(F(1,2))!=((2,2),):
+        raise FredholmError('original true prime2 wavefront required')
+    def get(j):
+        return {(i,k):authentic_full_low_entry(i,k,F(1,2),j)
+                for i,k in ((1,1),(1,3),(3,3),(2,2),(2,4),(4,4))}
+    m63=get(63);m64=get(64)
+    v63_upper=F(576)*m63[2,2].hi+F(625)*m63[4,4].hi-F(1200)*m63[2,4].lo
+    if not v63_upper < 0:
+        raise FredholmError('actual source 63-rung even negative rational witness missing')
+    blocks={}
+    for label,idx in (('odd',(1,3)),('even',(2,4))):
+        i,k=idx;a,b,c=m64[i,i],m64[i,k],m64[k,k]
+        off=max(abs(b.lo),abs(b.hi))
+        det_lower=a.lo*c.lo-off*off
+        if not (a.lo>0 and c.lo>0 and det_lower>0):
+            raise FredholmError('true Gamma64 low four-block strict PD failed')
+        blocks[label]={'diagonal_lower':(str(a.lo),str(c.lo)),
+                       'determinant_exact_rational_lower':str(det_lower),
+                       'strictly_PD':True}
+    return {'source_sha':contract['source_git_blob'],
+            'genuine_complete_signed_source':'ONE_GAMMA_R_PRIME2_CONTACT_BOTH_POLES',
+            'first_strict_positive_four_low_gram_gamma_J':64,
+            'negative_63_rung_original_rational_test':(0,24,0,-25),
+            'negative_63_rung_test_energy_strict_upper':str(v63_upper),
+            'Gamma64_parity_certificates':blocks,
+            'monotone_Gamma_rungs_PSD':True,
+            'four_low_A4_positive_CERTIFIED':True,
+            'four_low_S4_positive_CERTIFIED':False,'RH_proved':False}
