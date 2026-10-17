@@ -39,68 +39,72 @@ The separate positive shift jump and negative compensating mass must **not** be 
 
 Initially (1) is the original smooth-primitive Weil form. Define \(\mathcal L_a^+\) by the closure of the nonnegative full-line jump quadratic restricted to zero-extended compactly supported primitives. The Fourier logarithmic growth makes the form densely defined, closed on its completion, with the smooth test core taken by definition; the source potential and polar forms are bounded on \(L^2(I)\). Equality with the original Weil sign on smooth tests is enough for the RH criterion. Any additional assertion that all closed-domain eigenvectors represent physically performed observations is specifically **NOT CLAIMED**.
 
-## 2. Explicit finite spectral cutoff and high coercivity (JS-02)
+## 2. Effective finite spectral cutoff: **453 original-source jump modes** (JS-02)
 
-Let \(P=\mathbf1_{[0,7]}(\mathcal L_{1/2}^+)\), \(Q=I-P\). A spectral projector **exists** by the self-adjoint spectral theorem. Its *numerical entries have not been computed*. We obtain a **fully explicit, finite, source-conditional rank bound**.
+Let \(P=\mathbf1_{[0,7]}(\mathcal L_{1/2}^+)\), \(Q=I-P\). This spectral projector exists by the self-adjoint spectral theorem, and its range is finite-dimensional. **Its eigenfunctions and matrix entries have not been computed.** The remarkable source-specific result of this round is an explicit, moderate **rank upper bound**.
 
-For \(|\xi|\ge1\) the true Gamma multiplier satisfies
-
-\[
-m_\Gamma(\xi)\ge\tfrac45\log|\xi|.\tag{3}
-\]
-
-Each source gamma rung with \(d=4j+1\le |\xi|\) contributes at least `16/(5d)` and the reciprocal arithmetic-progressions integrate to the logarithm. Independently the alternating rational atanh series proves `log 2 > 69/100`.
-
-Choose **exactly**
+The genuine Gamma Fourier multiplier has the source-given positive OU rungs
 
 \[
- R=2^{16}=65536,\quad N=4R=262144,\quad h=1/N.\tag{4}
+ m_\Gamma(\xi)=\sum_{j\ge0}\frac{4\xi^2}{d_j(\xi^2+d_j^2/4)},\qquad d_j=4j+1.
 \]
 
-For every \(F\in L^2(I)\), let \(F_R\) be its full-line Fourier band-pass `|xi|<=R`, and let `E_N` average F on the N equally sized cells of I. Plancherel and the cellwise mean-zero Poincaré inequality give
+Each rung is monotone in \(|\xi|\). Evaluate the first `J=256` genuine Gamma rungs at the INTEGER source-independent test frequency `R=76` using exact rational arithmetic:
 
 \[
-\|(I-E_N)F\|_2\le
-\|F-F_R\|_2+\|(I-E_N)F_R\|_2
-\le \sqrt{\frac{\mathcal E_a^+(F)}{\mu_R}}
-+\frac{hR}{\pi}\|F\|_2,
-\quad \mu_R:=\frac45\log R>\frac{1104}{125}.\tag{5}
+\boxed{
+\mu_{76}:=\sum_{j=0}^{255}\frac{16\,76^2}
+{(4j+1)[4\,76^2+(4j+1)^2]}>\frac{3927}{500}.}
+\tag{3}
 \]
 
-Indeed the first bound uses positive Gamma high-frequency energy; the second uses the sharp one-cell Poincaré constant \(h/\pi\) and \(\|F_R'\|\le R\|F\|\). The band-limited F_R need not be supported in I, but restriction, averaging and the derivative inequality remain valid; this is not a false H¹ contraction through the **Legendre** projector.
+No floating point, Gamma rescaling, fitted spectrum, prime substitution or zero data are involved. The direct exact `fractions.Fraction` comparison is executed by `exact_gamma_prefix_multiplier(76,256)`, which checks the genuine source coefficient formula. All omitted Gamma rungs are positive, so \(m_\Gamma(\xi)>3927/500\) for all \(|\xi|\ge76\).
 
-For `E_N F=0`, `h R/pi =1/(4pi)<1/12` (use pi>3), so
+Partition the unit-length interval \(I=(-1/2,1/2)\) into **N=453 equally spaced cells** and let \(E_N\) be their L² orthogonal averaging projector. For every zero-extended F in the full original Gamma/FUCC positive form domain, let F_R be the full-line Fourier truncation at R=76. The band Fourier tail and cellwise mean-zero Poincaré inequality imply
 
 \[
-\mathcal E_a^+(F)>\frac{1104}{125}\left(\frac{11}{12}\right)^2\|F\|^2
-=\boxed{\frac{2783}{375}\|F\|^2}>7\|F\|^2.\tag{6}
+\|(I-E_N)F\|_2
+\le\|F-F_R\|_2+\|(I-E_N)F_R\|_2
+\le\sqrt{\frac{\mathcal E_a^+(F)}{\mu_{76}}}
++\frac{76}{453\pi}\|F\|_2.\tag{4}
 \]
 
-If the eigenspace of \(\mathcal L_{1/2}^+\) with eigenvalues ≤7 had dimension >N, it would intersect the codimension-N kernel of E_N in a nonzero vector, contradicting (6). **Thus**
+Proof: the first norm squares to a Fourier tail; on the full-line band \(\|F'_R\|_{L²(\mathbb R)}\le76\|F\|\); restriction to I and the **ordinary cell-average** Wirtinger/Poincaré inequality give the second term. This is **not** the false derivative-after-Legendre-projection contraction already refuted in SUCC #135/#155.
+
+When \(E_NF=0\), since π>3 and equation (3),
 
 \[
-\boxed{\operatorname{rank}\mathbf1_{[0,7]}(\mathcal L_{1/2}^+)\le262144.}\tag{7}
+\boxed{
+\mathcal E_a^+(F)>
+\frac{3927}{500}\left(1-\frac{76}{3\cdot453}\right)^2\|F\|^2
+=\frac{2154730501}{307813500}\|F\|^2
+>7\|F\|^2.}\tag{5}
 \]
 
-This is an *effective bound on spectral rank*, not an explicit eigenfunction/projector algorithm. Compact resolvent follows more generally by the same Fourier-tail/compact-time-band argument as in parent SCIMS-09.
+If the spectral subspace of \(\mathcal L_{1/2}^+\) with eigenvalues ≤7 had dimension >453, it would contain a nonzero vector in the codimension-453 kernel of E_N, violating (5). **Thus**
 
-### Bound on the *signed* high block
+\[
+\boxed{\operatorname{rank}\mathbf1_{[0,7]}(\mathcal L_{1/2}^+)\le453.}\tag{6}
+\]
 
-The original source rational intervals at a=1/2 prove
-`C_infty <43/8`, `w_2<1/2`, and `||s||²=sinh(1/2)-1/2<1/32`. Therefore
+Our earlier rough logarithmic-only estimate produced a **valid but far weaker rank bound 262,144** using R=65536 and N=4R. The source-true finite OU prefix shrinks that proof budget by a factor >570. Neither is an actual spectral-projector computation.
+
+### Bound on the *complete signed* high block
+
+The pinned original first-prime source intervals prove `C_infty <43/8`, `w_2<1/2`, and `||s||²=sinh(1/2)-1/2<1/32`. Hence
 
 \[
  M_{1/2}<51/8,\qquad B=M+2\|s\|^2<103/16.
 \]
 
-On \(Q\), the positive jump energy is at least `7 ||F||²`, positive cosh may be discarded, and negative sinh costs at most `2||s||²`. Consequently
+On Q, the positive jump energy is at least `7 ||F||²`, the positive cosh channel may be discarded, and the only negative polar channel costs at most `2||s||²`. Consequently
 
 \[
-\boxed{QH_aQ\succeq\bigl(7-B\bigr)Q\succ\frac9{16}Q,}
-\quad \boxed{\|(QH_aQ)^{-1}\|<16/9.}\tag{8}
+\boxed{QH_aQ\succeq(7-B)Q\succ\frac9{16}Q,}
+\qquad\boxed{\|(QH_aQ)^{-1}\|<\frac{16}{9}.}\tag{7}
 \]
 
-This is fundamentally different from the original Legendre-u high operator D, whose inverse is unbounded at the zero shift. It does not say that the *low* signed form is positive.
+This bounded high inverse is a different object from the compact original zero-shift inverse in the Legendre-u Schur decomposition. It does **not** prove the low signed source positive. The first-prime radius a=1/2 and true Gamma/prime data are load-bearing; no uniform all-a bound follows.
 
 ## 3. Complete polar Schur — just one scalar per parity (JS-03)
 
@@ -262,7 +266,7 @@ Because the finite midpoint quadrature and source-transcendental evaluations can
 - **Main source:** frozen original source SHA, genuine prime wavefront `(2,2)`, one real Gamma, complete pole pair, original contact; no zero-coordinate input. These are checked by the hosted source adapter. Source-domain identification is inherited paper mathematics, not certified merely by matching bytes.
 - **Finite rational spectral solver:** Lagrange spectral projectors validated against the actual finite matrix annihilator; reflection/within-eigenspace polar orthogonality checked; exact Sherman–Morrison polar corrections; finite all-mode PSD compared with low short; synthetic negative contact and removed-positive-pole mutants return exact rational negative witnesses.
 - **Negative control:** `c·s=0` alone does not imply they decouple in every source spectral eigenspace; the solver rejects this insufficient condition. A false high gap or forged eigenvalue list is rejected.
-- **Spectral rank:** a cell-average approximation in *ordinary* L² is the lawful tool for the positive Gamma jump operator; it is **not** the refuted derivative-after-Legendre-projection inequality. All numerical constants are rational with stated π/log2 inequalities.
+- **Spectral rank:** a cell-average approximation in *ordinary* L² is the lawful tool for the positive Gamma jump operator; it is **not** the refuted derivative-after-Legendre-projection inequality. The primary rank certificate uses exact rational Gamma OU prefixes and π>3; the coarser Fourier-band certificate also uses the stated log2 inequality.
 - **Finite Fourier sufficient route:** uniform midpoint quadrature error depends on true support `I`, Gamma derivative and original prime2 phase; false composite prime addition, wrong half-density, wrong Gaussian parity would invalidate those particular bounds. Synthetic Gram matrices never promote to source Weinstein/Weil positivity.
 - **Other SUCC research:** sibling #155's exact piecewise derivative-Gram source integral directly improves the old Legendre-u zero-shift method. This branch is orthogonal: it attacks the *new* source-generated positive jump spectrum/compact polar channel. Its derivations do not overwrite or supersede #155.
 
@@ -282,7 +286,7 @@ In the **isolated** standard-library fixture, 25 tests are discovered, 23 pass a
 
 ## 7. Next precise research targets (JS-07)
 
-1. **Actual spectral projector construction:** Use source-certified resolvent or form-Galerkin bounds to produce intervals for \(P_{[0,7]}c\), \(P_{[0,7]}s\), the restricted low jump eigenvalues and scalar high resolvents \(\alpha_c,\alpha_s\). A source-certified eigenvalue exclusion/gap is needed before approximated projectors can be safely identified. The rank ≤262144 alone does not provide these data.
+1. **Actual spectral projector construction:** Use source-certified resolvent or form-Galerkin bounds to produce intervals for \(P_{[0,7]}c\), \(P_{[0,7]}s\), the restricted low jump eigenvalues and scalar high resolvents \(\alpha_c,\alpha_s\). A source-certified eigenvalue exclusion/gap is needed before approximated projectors can be safely identified. The rank ≤453 alone does not provide these data.
 2. **Efficient band-Gamma kernel evaluator:** Replace the `N~1.85×10^11` generic midpoint budget with rigorous piecewise analytic Fourier integrals, high-order Taylor/Chebyshev quadrature, validated prolate spheroidal compression, or finite interval Fredholm determinants. Certify the exact source positivity from matrix (19), if feasible; reject false lower signs as inconclusive.
 3. **Parity and bounded polar rank:** On the actual jump spectrum, use the full odd/even scalar renormalizations (10) with strictly source-attested \(\alpha\) enclosures to test finite sign. If the even baseline has ≥2 negative modes or the odd baseline has ≥1, then an independently certified source-specific negative witness exists; otherwise determine whether the completed poles repair all low defects.
 4. **Global radius:** Every fixed radius has a finite genuine prime-power tape and logarithmic Gamma growth, but source mass M_a and the low spectral rank bound generally grow with a. A uniform all-radius positivity theorem would require an additional arithmetic compensation mechanism; neither of these fixed-window constructions proves RH.
