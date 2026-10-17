@@ -87,7 +87,7 @@ For a strictly positive `B_0`, the finite-feature equivalence is
 
 Indeed decompose the transformed Hilbert space into the span of `B_0^{-1/2}Phi` and its orthogonal complement, where the operator is the identity. This holds even for signed `D`. If `W` has a kernel, interpreting positivity on `Ran W` via the `W+WDW` quadratic is still valid, without assuming an unjustified inverse of `W`.
 
-The implemented `authentic_fredholm_feature_gram(J=8,N=8)` constructs **all 100 interval entries of `W`, the entire signed `D`, and the rigorous finite matrix interval-error envelope** from the archived original source. This is an actual source-evaluated matrix, NOT a claimed positive Fredholm certificate. The current generic `J=8` sufficient test is expected to return `INCONCLUSIVE`: the source itself has certified negative low tests at this Gamma depth. Source tests refuse any fabricated `source_positivity_certified=True`.
+The implemented `authentic_fredholm_feature_gram(J=8,N=16)` constructs **all 324 interval entries of `W`, the entire signed `D`, and the rigorous finite matrix interval-error envelope** from the archived original source. This is an actual source-evaluated matrix, NOT a claimed positive Fredholm certificate. The current generic `J=8` sufficient test is expected to return `INCONCLUSIVE`: the source itself has certified negative low tests at this Gamma depth. Source tests refuse any fabricated `source_positivity_certified=True`.
 
 Any eventual verified rational Loewner certificate `W+WDW >=0` at some actual `(J,N)` proves the FULL first-prime signed source nonnegative on every lawful smooth test at `a=1/2`, *without a Legendre compact zero-shift inverse*. This implication is sound and one meaningful certificate is enough for **this one radius**. The construction currently does not produce such a PSD certificate, let alone one uniformly over all radii.
 
@@ -202,7 +202,7 @@ The alternative exact refutation semidecision is source-certified negativity: if
 5. **Endpoint trace**: Gamma-tail *lower* needs H¹ zero extension, unlike weaker upper bounds for arbitrary L² u.
 6. **Truncated source negativity** is not original-source negativity; original Γ tail is **positive** and dominates selected fifth-mode finite deficit.
 7. **Finite Gram negative** is inconclusive about actual original source since it is a sufficient lower packet; no false RH disproof.
-8. **Source N/J budget**: original parent `gamma_cell_interval_matrix` has J<=40/N<=32 and auth archived source; adapter intentionally uses J8/N8 to keep independently auditably small matrix.
+8. **Source N/J budget**: original parent `gamma_cell_interval_matrix` has J<=40/N<=32 and auth archived source; adapter intentionally uses J8/N16 to keep independently auditably small matrix.
 9. **Unbounded radius**: original module source tape valid only within declared radius; don't pretend an all-radius source detector is implemented.
 10. **Independent mathematics**: exact polynomial norms, rational Gamma Fourier inequality, and local numerical diagnostics are independently written; GitHub SHA-pinned source arithmetic validates provenance but does not kernel-prove infinite distribution identities.
 
@@ -213,3 +213,7 @@ Compute and certify an actual positive Fredholm packet for the **complete first-
 Even a source-certified strictly positive complete first-prime form would not prove Weil positivity at later prime thresholds. A noncircular **all-radius source transfer theorem** must also be found. That second requirement is not a small bookkeeping step: it currently contains RH-hard information.
 
 **Claim status:** finite algebra EXACT; C-01 paper conditional on inherited certified K-cell norm error and archived source; C-02/03 source-adapter status determined by actual hosted CI; C-04 OPEN universal premise; **RH OPEN.** Main, import archives and original source unchanged. Draft non-main PR only.
+
+### Exact source-hostile reference budget repair
+
+The original initial hosted source gate rejected `J=8,N=8`: the generic compression allowance `2J/(3N)=2/3` EXCEEDS the first-prime positive cubic-swap baseline gap `~0.4135`, so no positive reference inverse is licensed. **This was a correct model failure, not a source positivity obstruction.** The guarded source adapter now requires `N>=14` and uses `N=16`, where `2J/(3N)=1/3` and the reference gap remains positive. A new explicit regression confirms that the underresolved N8 source packet is rejected. Positive Gram is still NOT assumed.
