@@ -7,9 +7,12 @@ on:
   pull_request:
     paths:
       - 'observational_succ/prime_jet_genesis.py'
+      - 'observational_succ/profinite_index_genesis.py'
       - 'tests/test_prime_jet_genesis.py'
+      - 'tests/test_profinite_index_genesis.py'
       - 'scripts/prime_jet_genesis_probe.py'
       - 'research/2026-10-17/PRIME_JET_GENESIS_RECEIPT.json'
+      - 'research/2026-10-17/PROFINITE_INDEX_SOURCE_GENESIS.md'
       - '.github/workflows/prime-jet-genesis.yml'
 
 jobs:
@@ -25,4 +28,5 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: python -m unittest discover -s tests -p 'test_prime_jet_genesis.py' -v
+      - run: python -m unittest discover -s tests -p 'test_profinite_index_genesis.py' -v
       - run: python scripts/prime_jet_genesis_probe.py --verify
