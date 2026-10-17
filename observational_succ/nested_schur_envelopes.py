@@ -133,7 +133,13 @@ def monotone_nested_short_bounds(lower,upper,low_rank):
 
 
 def sign_switch_countermodel():
-    """When discarded block crosses 0, even L<=U cannot order Schur forms."""
+    """When the discarded middle block is not strictly PD, L<=U NEED NOT order the
+    Schur forms: ordering is no longer guaranteed, though it may still hold. Strict
+    positivity of the discarded block is SUFFICIENT (not necessary) for monotone
+    transport. This example exhibits a genuine reversal (Short(L)=+1 > -1=Short(U));
+    the diagonal pair L=diag(0,-2), U=diag(1,-1) is a companion case where order
+    instead HOLDS (0<=1) despite negative middle blocks -- hence 'no guarantee',
+    not 'always fails'."""
     L=((F(0),F(1)),(F(1),F(-1)))
     U=((F(0),F(1)),(F(1),F(1)))
     return {"lower":L,"upper":U,"short_lower":short_to_low(L,1),

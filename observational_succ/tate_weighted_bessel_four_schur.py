@@ -443,8 +443,11 @@ def source_parity_split_four_moment_coercivity_certificate():
       3. For w in Q_4 H_even, f = Vw is ODD: <f, P_4(2t)> = 0 automatically, so f in V_5
          (5 vanishing moments 0..4) and only odd spherical Bessel modes ell=5,7,9,... enter.
       4. Uses the pinned source interval upper bounds `contact_iv().hi` and
-         `(log2_iv() * sqrt_inverse(2)).hi` (< 5.83902 vs coarse 47/8 = 5.875) and
-         `2 / pi_iv().lo` (< 0.63662 vs coarse 2/3).
+         `(log2_iv() * sqrt_inverse(2)).hi`, giving contact+prime2 <= 5.862313 (exact
+         Fraction; sharper than the coarse 47/8 = 5.875) and `2 / pi_iv().lo` (< 0.63662
+         vs coarse 2/3). These kappa lower bounds are source-conditional: they inherit the
+         SHA-pinned signed-Weil decomposition (one real Gamma_R, contact, prime-2, poles),
+         exactly as the global WB4 1/50 certificate does.
     """
     src = _source()
     source_contract = parent_original_source_contract()

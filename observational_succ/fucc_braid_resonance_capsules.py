@@ -216,22 +216,37 @@ def fucc_succ_functoriality_obstructions():
 # ============================================================================
 
 def odd_bubble_offline_pair_certificate(Delta=F(1, 4), gamma=F(14), a=F(1, 2)):
-    """Theorem H-T1: Signature-(2,2) Even/Odd Sector Decomposition of an Off-Critical
-    Zero Quadruplet {1/2 +- Delta +- i*gamma} (Delta > 0, gamma > 0).
+    """Theorem H-T1 (CORRECTED): the off-critical zero quadruplet form is a
+    signature-(2,2) INDEFINITE real quadratic form -- it is NOT sign-definite on
+    either reflection-parity sector.
 
-    For f = f_even + f_odd in L^2(-a,a) and g = f * tilde{f}:
+    For f = f_even + f_odd in L^2(-a,a), g = f * tilde{f}, and z = Delta + i*gamma,
+    the functional-equation-symmetric quadruplet {1/2 +- Delta +- i*gamma} contributes
         Z_{Delta,gamma}(g) := sum_{rho in {1/2+-Delta+-i*gamma}} hat{g}(rho - 1/2)
-                            = 2 * (|L f_even(Delta + i*gamma)|^2 - |L f_odd(Delta + i*gamma)|^2),
-    where (L h)(z) = int_{-a}^a h(t) e^{z t} dt.
-    In particular:
-      - Every even test function f_even produces a NONNEGATIVE quadruplet contribution!
-      - Every odd test function f_odd with (L f_odd)(Delta + i*gamma) != 0 produces a
-        STRICTLY NEGATIVE quadruplet contribution!
-    Evaluates the algebraic polynomial-exponential structure of (L f_odd)(z) for the
-    compactly supported odd bubble f_odd(t) = t * (a^2 - t^2) in H_0^1(-a,a):
-        (L f_odd)(z) = (4 a / z^3) * ((3 / z) * sinh(a z) - a * cosh(a z) + ...),
-        exact integration by parts:
-        int_{-a}^a (a^2 t - t^3) e^{z t} dt = ((6 a^2 z + 12) / z^4) sinh(a z) - ((2 a^3 z^2 + 12 a) / z^4) cosh(a z).
+                            = 4 * Re( (L f_even)(z)^2 - (L f_odd)(z)^2 ),
+    where (L h)(z) = int_{-a}^a h(t) e^{z t} dt, E = L f_even, O = L f_odd. This is
+    the real part of a SQUARE (E^2, O^2), NOT a modulus-square |E|^2 (the previous
+    version wrote 2(|E|^2 - |O|^2), which is false). On the critical line (Re z = 0)
+    f real gives F(-z) = conj F(z) and the form collapses to |F|^2 >= 0 (Weil
+    positivity); that |.|^2 positivity does NOT persist off the line (Delta != 0) --
+    which is exactly the obstruction a spectral RH attack must confront, not a lemma
+    it gets for free.
+
+    Writing E = Er + i Ei, O = Or + i Oi, Z = 4(Er^2 - Ei^2 - Or^2 + Oi^2) =
+    diag(+4,-4,-4,+4) in coordinates (Re E, Im E, Re O, Im O): POSITIVE directions
+    {Re E, Im O}, NEGATIVE directions {Im E, Re O}, overall inertia (2,2). The sign
+    split is the REAL-vs-IMAGINARY transform axis, NOT even-vs-odd input parity:
+    restricted to even tests Z = 4((Re E)^2 - (Im E)^2), signature (1,1); restricted
+    to odd tests Z = 4((Im O)^2 - (Re O)^2), signature (1,1).
+
+    REFUTED (was asserted here): "every even test >= 0" and "every odd test <= 0".
+    Interval-certified counterexample (smooth C^1 bump, Delta=1/4, gamma=14, a=1/2):
+    an even pair at t0 = pi/(2 gamma) gives 4 Re(E^2) < 0; and the default odd bubble
+    f_odd(t) = t(a^2 - t^2) below yields a strictly POSITIVE contribution (approx
+    +9.3e-5 at gamma=14), not negative -- the named witness refutes its own old label.
+
+    The exact H_0^1 norms of the odd bubble f_odd(t) = t(a^2 - t^2) are retained
+    (used elsewhere), computed by exact integration by parts.
     """
     D = _q(Delta)
     gam = _q(gamma)
@@ -245,12 +260,19 @@ def odd_bubble_offline_pair_certificate(Delta=F(1, 4), gamma=F(14), a=F(1, 2)):
     h1_semi_sq = F(8, 5) * (aa ** 5)
     h1_norm_sq = l2_norm_sq + h1_semi_sq
     return {
-        "theorem": "H-T1_ODD_BUBBLE_SIGNATURE_2_2_DECOMPOSITION",
+        "theorem": "H-T1_OFFLINE_QUADRUPLET_INDEFINITE_FORM_4Re(E^2-O^2)_SIGNATURE_2_2",
         "Delta": D,
         "gamma": gam,
         "a": aa,
-        "even_sector_quadruplet_sign": "NONNEGATIVE_FOR_ALL_EVEN_TESTS",
-        "odd_sector_quadruplet_sign": "NONPOSITIVE_AND_STRICTLY_NEGATIVE_ON_ODD_BUBBLE",
+        "quadruplet_form": "Z = 4*Re((L f_even)(z)^2 - (L f_odd)(z)^2), z = Delta + i*gamma",
+        "even_sector_quadruplet_sign": "INDEFINITE_SIGNATURE_1_1 (Z_even = 4((Re E)^2 - (Im E)^2))",
+        "odd_sector_quadruplet_sign": "INDEFINITE_SIGNATURE_1_1 (Z_odd = 4((Im O)^2 - (Re O)^2)); default bubble POSITIVE (~+9.3e-5) at gamma=14",
+        "false_universal_parity_sign_refuted": True,
+        "on_line_absolute_square_positivity_persists_off_line": False,
+        "positive_directions": ("Re E", "Im O"),
+        "negative_directions": ("Im E", "Re O"),
+        "even_sector_signature": (1, 1),
+        "odd_sector_signature": (1, 1),
         "odd_bubble_formula": "f_odd(t) = t * (a^2 - t^2) in H_0^1(-a, a)",
         "odd_bubble_L2_norm_squared": l2_norm_sq,
         "odd_bubble_H1_seminorm_squared": h1_semi_sq,
@@ -271,15 +293,25 @@ def even_sector_small_window_submersion_certificate(
     for 0 < x < 1), the off-critical excess over the critical-line pair satisfies:
         eta_even(a, Delta, gamma) <= (8 / 5) * (Delta^2 * gamma^2 * a^7 * cosh_upper(Delta*a)^2) / (1 + a^2).
     Comparing against the high-frequency tail bound delta_a(T) = (8(1+a)/(1+a^2)) * (log(T)/T)
-    from `signed_weil_h1_tail.py`, whenever eta_even < delta_a(T) the off-critical perturbation
-    is completely submerged below the truncation noise at bandwidth T!
+    from `signed_weil_h1_tail.py`: whenever eta_even_upper < delta_a_T_lower, the off-critical
+    even-sector signal's certified upper bound lies below the truncation-error ALLOWANCE
+    delta_a(T) of THIS bandwidth-T H^1-tail certificate -- hence THIS certificate at bandwidth T
+    cannot RESOLVE the off-critical perturbation. This is instrument/bandwidth-relative
+    NON-RESOLUTION, NOT universal undetectability: delta_a(T) is a one-sided worst-case error
+    allowance, not an observation-noise floor, and the signal RE-EMERGES at a larger bandwidth
+    T' ~ `minimum_bandwidth_T_over_logT_scale` below. (The prior wording "completely submerged
+    below the truncation noise" overstated a one-sided allowance as a noise floor.)
+
+    Domain: the certified `delta_a_T_lower = 8(1+a)/((1+a^2)T)` uses log(T) >= 1, which holds
+    only for T >= e; we require T >= 3 so the lower bound is sound (at T in (2, e), log(T) < 1
+    and the bound would OVERSTATE the tail, falsely reporting non-resolution).
     """
     D = _q(Delta)
     gam = _q(gamma)
     aa = _q(a)
     TT = _q(T)
-    if D <= 0 or gam <= 0 or aa <= 0 or TT <= 2:
-        raise WaveTTCapsuleError("Valid positive parameters required")
+    if D <= 0 or gam <= 0 or aa <= 0 or TT < 3:
+        raise WaveTTCapsuleError("Valid positive parameters required; T >= 3 so log(T) >= 1")
     da = D * aa
     if da >= 1:
         raise WaveTTCapsuleError("Small-window regime requires Delta * a < 1")
@@ -301,7 +333,9 @@ def even_sector_small_window_submersion_certificate(
         "T": TT,
         "eta_even_rayleigh_upper": eta_even_upper,
         "delta_a_T_tail_lower": delta_a_T_lower,
+        "signal_below_this_certificate_error_allowance_at_T": eta_even_upper < delta_a_T_lower,
         "submerged_below_tail_at_T": eta_even_upper < delta_a_T_lower,
+        "instrument_bandwidth_relative_nonresolution_not_universal": True,
         "minimum_bandwidth_T_over_logT_scale": T_horizon_scale,
         "window_scaling_exponent_a": 7,
         "RH_proved": False,

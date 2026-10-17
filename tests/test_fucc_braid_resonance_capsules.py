@@ -63,6 +63,35 @@ class AgentHResonanceTests(unittest.TestCase):
         self.assertEqual(sub_cert["window_scaling_exponent_a"], 7)
         self.assertFalse(sub_cert["RH_proved"])
 
+    def test_offcritical_quadruplet_is_indefinite_not_parity_signed(self):
+        # Regression guard: the off-critical quadruplet form is 4*Re(E^2 - O^2),
+        # an INDEFINITE form of signature (2,2) whose split is real/imaginary, NOT
+        # even/odd parity. The old universal per-parity sign law was FALSE and must
+        # never be reintroduced (see dalembert / PDQ_MEGASWARM audit receipts).
+        cert = odd_bubble_offline_pair_certificate(Delta=F(1, 4), gamma=F(14), a=F(1, 2))
+        self.assertTrue(cert["false_universal_parity_sign_refuted"])
+        self.assertFalse(cert["on_line_absolute_square_positivity_persists_off_line"])
+        self.assertEqual(cert["even_sector_signature"], (1, 1))
+        self.assertEqual(cert["odd_sector_signature"], (1, 1))
+        # the sign-string fields must no longer assert a universal nonnegative/nonpositive law
+        for key in ("even_sector_quadruplet_sign", "odd_sector_quadruplet_sign"):
+            val = cert[key]
+            self.assertIn("INDEFINITE", val)
+            self.assertNotIn("NONNEGATIVE_FOR_ALL", val)
+            self.assertNotIn("NONPOSITIVE_AND_STRICTLY_NEGATIVE", val)
+
+    def test_submersion_domain_guard_requires_T_at_least_3(self):
+        # delta_a_T_lower uses log(T) >= 1, valid only for T >= e; T in (2, e) would
+        # OVERSTATE the tail and could falsely report non-resolution. Guard rejects T < 3.
+        with self.assertRaises(WaveTTCapsuleError):
+            even_sector_small_window_submersion_certificate(
+                Delta=F(1, 20), gamma=F(14), a=F(1, 4), T=F(5, 2)
+            )
+        ok = even_sector_small_window_submersion_certificate(
+            Delta=F(1, 20), gamma=F(14), a=F(1, 4), T=F(3)
+        )
+        self.assertTrue(ok["instrument_bandwidth_relative_nonresolution_not_universal"])
+
     def test_delayed_detection_aliasing_countermodels(self):
         cm = delayed_detection_aliasing_countermodels(Delta=F(1, 5), gamma=F(10), kappa=F(1, 2))
         self.assertTrue(cm["H_C2_strictly_positive_on_all_L2_minus_a_to_a"])

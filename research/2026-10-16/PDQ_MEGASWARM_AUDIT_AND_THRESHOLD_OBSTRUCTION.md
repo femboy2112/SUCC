@@ -42,7 +42,7 @@ Five independent agents re-derived the load-bearing PDQ results from scratch (no
 | 2 | IBP identities `E₀..E₃` | **PROVED** | All four correct, no sign/factor error (exact sympy residual 0; ~50-digit numeric on 7 functions). `∫h=0` simplifies `E₁`; the `−3∫t²h` term in `E₃` is **not** removable but **is** sourced by the authenticated `c₂` row (`−3∫t²h = −c₂/2`). The genuine unresolved input is the **endpoint pair** `{h(a),h(−a)}`. |
 | 3 | PDQ-02 quotient identity | **PROVED as supremum** | `sup_{w∈Q₄H} |⟨Q₄h,w⟩|²/⟨Kw,w⟩ = ‖(I−P₃)h'‖²`. **Found a flaw in my own intermediate chain** (`Q₄H = span{1,t,t²,t³}^⊥∩H` is *false* — misses the `⟨w,t⁴⟩=0` constraint; witness `w=P₄(2t)`); the repo's PDQ-01 (closure of the *image*) is correct. The supremum is **not attained** (maximizer has `ψ*'∉Q₄H`). |
 | 4 | High coercivity `κ` | **IMPROVEMENT PROVED** | `1/50` is **not optimal**: certified `κ′ = 0.0389832818322773` (1.9492× / residual amplification 25.65 vs 50), from exact source endpoints + Ω=13 method optimum + resolution saturation. Also: `K` is exactly parity block-diagonal; `K|F₄` has condition number 20.31, so **no scalar is optimal** — the exact object is operator-valued. |
-| 5 | Nested 30→4 shorting | **CONDITIONAL / OBSTRUCTED** | Exact re-derivation + correct hypothesis: monotone shorting holds **iff** the discarded middle block of `L` is strictly PD. Practical obstruction: an interval packet's middle compression is certifiably PD only if its radii fall below `ρ* = min_{‖v‖₁=1} vᵀD_ctr v`; for a realistic toy (margin 0.02) `ρ* ≈ 1.72e−3` (relative ≈ 0.0285). The signed modes 5..30 carry **no source coercivity**, so the needed margin is not source-guaranteed. |
+| 5 | Nested 30→4 shorting | **CONDITIONAL / OBSTRUCTED** | Exact re-derivation + correct hypothesis: monotone shorting is **guaranteed if** the discarded middle block of `L` is strictly PD (**sufficient, not necessary** — with a negative middle block the order may still hold, e.g. `L=diag(0,−2) ⪯ U=diag(1,−1)` gives `Short(L)=0 ≤ 1=Short(U)`, or may reverse, e.g. `sign_switch_countermodel`). Practical obstruction: an interval packet's middle compression is certifiably PD only if its radii fall below `ρ* = min_{‖v‖₁=1} vᵀD_ctr v`; for a realistic toy (margin 0.02) `ρ* ≈ 1.72e−3` (relative ≈ 0.0285). This is a gap in the **computed lower enclosure** of the intermediate 5..30 effective block, **not** absence of source coercivity in the true complement: the inherited WB4 theorem `D_4 ⪰ (1/50) Q_4 K Q_4` applies to the true high complement, which contains modes 5..30. |
 
 (The sixth audit — a certified `H'` operator upper bound — remained in flight; the sibling's
 `a6b7b98` independently delivered Routes B1+B3 for that channel, so it is covered.)
@@ -61,15 +61,25 @@ With `U=0, rank=12, J=64`:
 - `W_L2(low) = diag(1/3, 1/5, 1/7, 1/9)`, max eig `1/3`.
 - Present Young cap `(1/κ)‖g'‖₁² = 121/32 = 3.78125`.
 
-**Theorem (threshold).** Bisecting the scalar cap `τ` in
-`(A₄-Interval-Lower) − τ·W_L2(low) ⪰ 0`, positivity begins at
+**Theorem (threshold).** The exact threshold is
+`τ* = sup{τ : (A₄-Interval-Lower) − τ·W_L2(low) ⪰ 0}`, i.e. the **smallest generalized
+eigenvalue** of the pair `(A₄-Interval-Lower, W_L2(low))` in the `W_L2` (Legendre-mass)
+metric — **not** the Euclidean `λ_min` (that is the separate `9.2476e−8` A₄ figure). Because
+`A₄-Interval-Lower` is exactly parity-block-diagonal, `τ*` decouples into two 2×2 blocks; the
+**even** block (modes 2,4) is binding, with exact quadratic
+`(1/45)τ² − (625303051402592294271718146011/9e30)τ + C = 0`. Its smallest root is bracketed
+by exact det sign-change (see `scripts/pdq_threshold_obstruction.py`):
 
 ```
-τ* = 346751125023 / 576460752303423488 = 6.01517316898767e−07  (exact rational)
+τ* ∈ (6.015173631357e−07, 6.015173631582e−07)   (certified rational bracket, even block)
 ```
 
-Equivalently `S₄ ≻ 0` cannot be certified on the Young channel unless the residual cap drops
-below `6.02e−7`. The present cap is **6.286e6× too large**.
+The earlier dyadic value `346751125023/2^59 ≈ 6.0151732e−7` was an *80-step bisection endpoint*
+using a conservative `min_eig_lower`, which halts ~4.62e−14 **below** `τ*`; it is a valid lower
+witness that positivity holds there, but it is **not exact and not the generalized eigenvalue**
+(and it was already stale versus the committed script's own `2^79` output). The corrected `τ*`
+does not change the headline: `S₄ ≻ 0` cannot be certified on the scalar-Young channel unless
+the residual cap drops below `≈6.015e−7`, and the present `121/32` cap is **≈6.286e6× too large**.
 
 **Corollary (why the improvements do not close it).** Sweeping certified coercivity constants:
 
@@ -98,8 +108,8 @@ moment data can decide the sign.
 | AUD-02 | IBP identities `E₀..E₃` (incl. `−3∫t²h=−c₂/2`) | **PROVED** | Exact sympy; 50-digit numeric; endpoint pair is the only new input |
 | AUD-03 | PDQ-02 quotient identity as supremum | **PROVED** | Independent derivation; corrected my own domain slip |
 | AUD-04 | κ′ = 0.038983 > 1/50 (1.95×) | **PROVED (conditional on WB4)** | Exact source endpoints + Ω=13 optimum |
-| AUD-05 | Nested shorting gate = "discarded middle strictly PD"; obstruction at `ρ*` | **PROVED FINITE** | Exhaustive exact 2×2/3-7-dim sweep; toy threshold `ρ*≈1.72e−3` |
-| AUD-06 | Positivity-threshold cap `τ* = 6.015e−7`; Young channel 6.29e6× too loose | **PROVED FINITE (exact rational)** | Bisection to exact rational; κ-sweep |
+| AUD-05 | Nested shorting gate "discarded middle strictly PD" is **sufficient, not necessary**; enclosure obstruction at `ρ*` | **PROVED FINITE** | Exhaustive exact 2×2/3-7-dim sweep; toy threshold `ρ*≈1.72e−3`; both counterexamples (order-holds and order-reverses) exact |
+| AUD-06 | Threshold `τ* ∈ (6.0151736313e−7, 6.0151736314e−7)` (even-block generalized eigenvalue, Legendre metric); Young channel ≈6.29e6× too loose | **PROVED FINITE (certified rational bracket)** | Exact even-block quadratic + det sign-change; dyadic `2^59/2^79` endpoints were conservative lower witnesses, not the threshold; κ-sweep |
 | — | Original-source sign of `S₄` | **OPEN (AMBIGUOUS)** | Both certificates present; margin `O(1e−8)` |
 | — | Riemann hypothesis | **OPEN — NOT PROVED** | No zero coordinates used |
 
