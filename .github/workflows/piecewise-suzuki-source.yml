@@ -40,7 +40,9 @@ jobs:
       - name: Original signed Suzuki source hash and tape
         run: python scripts/verify_provenance.py
       - name: Exact analytic source integrator hostile controls
-        run: python -m unittest discover -s tests -p 'test_piecewise_suzuki_integrator.py' -v
+        run: |
+          python -m unittest discover -s tests -p 'test_piecewise_suzuki_integrator.py' -v
+          python -m unittest discover -s tests -p 'test_contact_ladder_projection.py' -v
       - name: Infinite form and K-Riesz source controls
         run: python -m unittest discover -s tests -p 'test_source_riesz_high_comparison.py' -v
       - name: Exact analytic vs midpoint source audit

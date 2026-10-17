@@ -150,3 +150,34 @@ This obstruction closes the route “take a nice positive finite high matrix, tr
 | Completed all-support Weil positivity and RH | OPEN | Genuine source positivity across all test radii and complete signed form |
 
 **Next verdict-changing work:** run real source \(U,J\) analytic packet, compare its Loewner upper against previous B1+B3 and PR #153, establish exact margin/error budget. If analytic precision ceases to be limiting yet \(S_4\) lower remains negative, abandon purely numerical refinement; find *new* high-sector source information controlling the positive spectral remainder \(D-\kappa_*K\) or direct source-constrained residual alignment. An all-radius RH result does not follow from a successful first-window result.
+
+
+## 8. Exact sparse contact-gauge projector (PEX-04)
+
+For the authentic source carrier \(u_k(x)=P_k(2x)\), the classical Legendre primitive identity is
+\[
+Vu_k=(u_{k+1}-u_{k-1})/(2(2k+1)).
+\]
+For \(Q=I-\Pi_{\mathcal P_{\le3}}\), define
+\[
+B_{jk}=\frac{\mathbf1_{j=k+1}-\mathbf1_{j=k-1}}{2(2k+1)},\qquad j\ge4.
+\]
+Since \(\langle u_j,u_l\rangle=\delta_{jl}/(2j+1)\),
+\[
+\boxed{V^*QV=B^*\operatorname{diag}_{j\ge4}((2j+1)^{-1})B.}
+\]
+For pure low modes \(1,\ldots,4\) the exact diagonal is
+\(\boxed{(0,0,1/1764,1/3564)}\).
+Thus the genuine contact uncertainty does not enter the polynomial-orthogonal differentiated response for the first two low modes. On arbitrary source-identified trial columns \(v_i\), it contributes at most
+\(|C-C_0|\sqrt{\langle v_i,V^*QVv_i\rangle}\) in \(L^2\).
+The source adapter now uses this sparse **exact** Legendre Gram; independent tests derive the same result using direct polynomial integration and inversion of the four-moment Gram.
+
+## 9. Monotone source-contact Schur comparison (PEX-05, theorem / next probe)
+
+The original signed derivative-carrier contact is \(-C K\), since \((Ku)'=-Vu\) and the point-derivative source contact is \(+C Vu\). Hence for \(C_2\ge C_1\),
+\(G_{C_2}\preceq G_{C_1}\).
+If both high compressions remain coercive on the correct common form domain, then by the infimum characterization of the Schur shorting,
+\[
+\boxed{S_4(G_{C_2})\preceq S_4(G_{C_1}).}
+\]
+This gives a potential contact-*endpoint* source certification that avoids perturbative contact-tail estimates. The whole \(A,B,D\) source packet and inherited high-sector bound must be changed coherently; changing only the derivative contact in the residual and leaving a trial-energy lower from a different source would be a **no-ghost violation**. This alternative source envelope is a future test, not silently implemented as an RH sign.

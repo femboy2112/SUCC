@@ -71,6 +71,8 @@ class AuthenticSourceAnalyticVerification(unittest.TestCase):
         self.assertFalse(result["RH_proved"])
         self.assertIn(result["verdict"],("AMBIGUOUS","POSITIVE_CERTIFIED"))
         self.assertEqual(len(result["true_S4_Loewner_lower"]),4)
+        self.assertEqual(tuple(F(x) for x in result["contact_projected_primitive_norm2"]),
+                         (F(0),F(0),F(1,1764),F(1,3564)))
 
     def test_invalid_eta_refuses_claim(self):
         self.assertEqual(CertifiedAnalyticSuzukiTrial(young_eta=0)["verdict"],

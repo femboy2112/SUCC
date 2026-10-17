@@ -6,6 +6,7 @@ from observational_succ.analytic_suzuki_schur_gate import CertifiedAnalyticSuzuk
 from observational_succ.source_direct_quotient_gate import CertifiedSourceDirectQuotientTrial
 from observational_succ.source_riesz_high_comparison import coercivity_slack_no_go
 from observational_succ.direct_quotient_schur import exact_psd
+from observational_succ.contact_ladder_projection import exact_contact_low4_certificate
 
 
 def main():
@@ -32,6 +33,7 @@ def main():
         "old_and_new_use_no_zeta_zero_coordinates":True,
         "new_analytic_schur_lower_positive":analytic["source_S4_lower_psd"],
         "operator_comparison_no_ghost":coercivity_slack_no_go(),
+        "contact_low4_norms":tuple(str(exact_contact_low4_certificate()["gram"][i][i]) for i in range(4)),
         "RH_PROVED":False,
     }
     print(json.dumps(receipt,indent=2,default=str))
