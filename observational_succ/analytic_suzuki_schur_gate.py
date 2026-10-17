@@ -156,7 +156,10 @@ def CertifiedAnalyticSuzukiTrial(U=(),*,J_deriv=6,J_galerkin=64,
             tuple(str(F(qmat[i][j].mid().numerator*10**18//
                         qmat[i][j].mid().denominator,10**18))
                   for j in range(4)) for i in range(4)),
-        "finite_quotient_gram_radius_parity":{k:str(v) for k,v in rs.items()},
+        # Directed upper decimal rationals are diagnostics with finite text size.
+        "finite_quotient_gram_radius_parity":{
+            k:str(F((v.numerator*10**18+v.denominator-1)//v.denominator,10**18))
+            for k,v in rs.items()},
         "omitted_Gamma_and_contact_derivative_L2_upper":tuple(
             str(x) for x in tail),
         "contact_source_radius":str(source_contact_radius),
