@@ -231,7 +231,7 @@ def _interval_with_lipschitz(v,delta,L):
     return IV(v.lo-L*delta,v.hi+L*delta).bound_round()
 
 
-def authentic_fredholm_feature_gram(J=8,N=8):
+def authentic_fredholm_feature_gram(J=8,N=16):
     """Build entire original-source (N+2)x(N+2) rigorous feature Gram packet.
 
     A lower operator for original H_J is H_lb=B_safe - P_N K_J P_N
@@ -241,8 +241,8 @@ def authentic_fredholm_feature_gram(J=8,N=8):
     D fixed rational contains the true cell OU Loewner MAJORANT plus polar pair.
     The packet does NOT assert W+WDW PSD unless separately certified.
     """
-    if type(J) is not int or J!=8 or type(N) is not int or not 4<=N<=16:
-        raise CompletionError('small original-source proof budget J8 and 4<=N<=16')
+    if type(J) is not int or J!=8 or type(N) is not int or not 14<=N<=16:
+        raise CompletionError('original proof budget J8 with 14<=N<=16 needed for safe B reference')
     from . import source_weil_hierarchy as src
     from .tate_suzuki_shorting import verify_original_suzuki_source
     from .finite_gamma_fucc_fredholm import gamma_scalar_prefix,gamma_cell_interval_matrix,RationalInterval
