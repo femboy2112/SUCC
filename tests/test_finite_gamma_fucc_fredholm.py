@@ -159,6 +159,14 @@ class AuthenticSourceTests(unittest.TestCase):
         self.assertLess(F(out['gamma_compact_cell_matrix_trace_interval'][1]),8)
         self.assertLess(F(out['negative_index_trace_upper_rational']),20)
 
+    def test_four_mode_Archimedean_source_clock_filtration(self):
+        if not self._has_source():self.skipTest('isolated environment without authentic SUCC modules')
+        out=A.source_original_four_mode_gamma_clock()
+        pairs=tuple((z['true_original_low_mode'],z['first_strictly_positive_gamma_rungs']) for z in out['genuine_four_mode_first_positive_clock'])
+        self.assertEqual(pairs,((1,19),(2,10),(3,20),(4,7)))
+        self.assertEqual(out['source_sha'],'0cc8510b71d178fc79e8d410a86d8b6014cf9178')
+        self.assertFalse(out['original_full_Schur_sign_proved'])
+
     def test_true_source_only_prime2(self):
         if not self._has_source():self.skipTest('isolated environment without authentic SUCC modules')
         from observational_succ import source_weil_hierarchy as src
