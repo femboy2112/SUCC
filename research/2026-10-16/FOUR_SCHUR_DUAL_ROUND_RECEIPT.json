@@ -1,0 +1,26 @@
+{
+  "operation": "SUCC four-Schur primitive dual quotient and nested monotone gate",
+  "date": "2026-10-16",
+  "parent_pr": 149,
+  "parent_head": "8a65f0bb5babb6be625059b81d63824c4526234b",
+  "research_branch": "research/dual-variational-schur-source-gates-2026-10-16",
+  "result_status": "PROVED FINITE/PAPER CONDITIONAL; RH OPEN",
+  "core_equalities": {
+    "primitive_high_range_closure": "P_{poly<=3}^perp",
+    "K_dual_Qh_squared": "||(I-P_{poly<=3})h_prime||_2^2",
+    "source_U_lower": "V*G_J V - enclosure_radius I - (121/32)V*V",
+    "source_U_upper": "V*G_J V + enclosure_radius I + tau_J V*V",
+    "projected_derivative_contraction_counterexample": "h=P5(2t)-P3(2t): full derivative energy 36, (Qh) derivative energy 60, true K-dual energy 36"
+  },
+  "moments_status": "Source-neutral exact Gram implemented; original Suzuki differentiated endpoint moments NOT certified; no moment-subtraction sign claim",
+  "nested_status": "Finite conditional monotone Schur transport; no original 30-mode effective packet",
+  "tests_local": {
+    "test_four_schur_dual_quotient.py": 11,
+    "test_nested_schur_envelopes.py": 7,
+    "count": 18,
+    "passed": 18,
+    "note": "Stand-alone exact rational checks; integrated source-dependent suite requires hosted SUCC CI"
+  },
+  "original_source_weil_sign_certified": false,
+  "RH_PROVED": "NO"
+}
