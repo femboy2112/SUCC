@@ -216,3 +216,96 @@ python -m unittest discover -s tests -p 'test_*.py'
 The full repository CI must be checked independently after the exact pushed head. Synthetic standalone tests skip authentic import integrations only when required modules are absent; **a full installed SUCC checkout MUST execute and pass them**. Source snapshots, exact rational packets and negative mutation controls should be retained. Avoid merging or publishing without explicit maintainer review.
 
 **Research verdict:** We have now established one rigorous original-source **local compensation mechanism** and one explicitly conditional **gluing theorem**, together with the exact gamma/prime endpoint phase-lock algebra. The genuine sign of `S4` and the all-support positivity criterion remain open. An operator-valued global Gamma-versus-boundary estimate without artificial gaps would be a much more decisive next lemma.
+
+## 8. SC-06 — the genuine Gamma term is a nonlocal Markov/Dirichlet jump energy
+
+**Theorem [CLASSICAL distribution algebra; applied to the authenticated original Gamma rungs].** For zero-extended `F=Vu in H_0^1(I)`, the **exact** Gamma quadratic energy in SC-5 admits a positive double-integral representation
+
+\[
+\boxed{Q_\Gamma(F')=\frac12\iint_{\mathbb R^2}
+ J(|x-y|)\,|F(x)-F(y)|^2\,dx\,dy,\quad
+ J(r)=\sum_{j\ge0}e^{-(4j+1)r/2}=\frac{e^{-r/2}}{1-e^{-2r}}.}\tag{SC-18}
+\]
+
+This equality is **not** the full signed Weil form: SC-1 additionally carries original negative contact, polar channels and genuine prime currents. Proof: for each genuine OU rung, `∫_R e^{-(4j+1)|x-y|/2}dy=4/(4j+1)`. Expand the square `|F(x)-F(y)|²`, divide by two, and recover precisely the positive-mode SC-5. Every summand is nonnegative, so monotone convergence allows summing the full tower. For `F in H¹_0` the original operator is finite, and no fictitious independent gamma bath was introduced. The jump kernel obeys `J(r)~1/(2r)` near zero; this is the **logarithmic spectral resistance** behind SC-10 and the Carleman source-range obstruction already appearing in SUCC's earlier papers.
+
+**Important observer-relative conclusion:** if `F_e,F_b` have disjoint supports, the Gamma quadratic on `F_e+F_b` has a *negative* mixed term
+
+\[
+Q_\Gamma(F_e'+F_b')-Q_\Gamma(F_e')-Q_\Gamma(F_b')
+=-2\operatorname{Re}\iint_{E\times B}F_e(x)\overline{F_b(y)}J(|x-y|)dxdy.\tag{SC-19}
+\]
+
+Thus positive Dirichlet self-energy does **not** mean positive cross energy between two independently lawful E measurements. This is a genuine analytic instance of SUCC's collective-observer distinction between marginal positivity and signed relational coupling.
+
+## 9. SC-07 — touching interfaces have a non-vanishing Carleman coupling
+
+Let the left edge and central bulk support intervals touch at an endpoint `x0`; each has width `delta>0`. For **any fixed** polynomial-moment cut `m`, take the nonzero exact edge profile `phi_m(z)=d^m/dz^m[z^(m+1)(1-z)^(m+1)]` and define normalized primitive packets
+
+\[
+F_e(x_0-\delta s)=\delta^{-1/2}\varphi_m(s)/\|\varphi_m\|_2,
+\quad F_b(x_0+\delta t)=\delta^{-1/2}\varphi_m(t)/\|\varphi_m\|_2
+\qquad (0\le s,t\le1).\tag{SC-20}
+\]
+
+They vanish at strip endpoints and extend by zero to `H¹_0`, so their derivatives are lawful mean-zero input functions. Integration by parts makes **each** derivative orthogonal to polynomial modes through degree `m`: the individual translated primitive profiles annihilate all moments through degree `m−1`. In particular they lie in `Q4` when `m=4`; this is not a counterexample living only outside SUCC's actual high sector.
+
+The normalized unsigned Gamma *bilinear* edge/bulk interaction satisfies
+
+\[
+ \lim_{\delta\downarrow0}\iint_{E\times B}F_e(x)F_b(y)J(|x-y|)dxdy
+=\frac1{2\|\varphi_m\|_2^2}\int_0^1\!\int_0^1
+ \frac{\varphi_m(s)\varphi_m(t)}{s+t}\,ds\,dt=:\mathcal C_m>0.\tag{SC-21}
+\]
+
+**Proof.** With `r=delta(s+t)`, `delta J(delta(s+t)) →1/[2(s+t)]`. The rational upper `J(r)<=1+1/(2r)` dominates the rescaled integrand because `phi_m` vanishes at each boundary and is polynomial. The Carleman denominator has the **positive Laplace factorization** `1/(s+t)=∫_0^∞e^{-λs}e^{-λt}dλ`. Hence the double integral is `∫_0^∞|∫_0^1 e^{-λt}phi_m(t)dt|²dλ`, strictly positive for nonzero phi. More constructively, m integrations by parts give `∫e^{-λt}phi_m(t)dt=λ^m∫e^{-λt}t^(m+1)(1-t)^(m+1)dt`; on λ∈[1,2] this is at least `e^-2 B(m+2,m+2)`. Since `e<3`, the exact rational lower is
+
+\[
+\boxed{\mathcal C_m>
+\frac{B(m+2,m+2)^2}{162\|\varphi_m\|_2^2}>0,\quad
+\mathcal C_4>\frac{13}{90531302400}.}\tag{SC-22}
+\]
+
+**This refutes a crucial shortcut:** the gamma cross between touching observer windows is **not** `o(1)` in the `K`-relative metric merely because the windows' lengths shrink. Even imposing *any fixed number of vanishing polynomial moments* does not make it so. SC-04's positive-gap hypothesis genuinely does useful work. But the full Gamma **diagonal** edge energy grows logarithmically (SC-10), so an order-one mixed Carleman coupling does *not* prevent conditional positivity at sufficiently fine resolution.
+
+### SC-08 — conditional no-gap source gluing, with an explicit enormous finite certificate
+
+For the *same source* (SC-1), let `F_e` have the two authentic edge supports and `F_b` have a central support `B` of length `beta` whose closure **may meet** the edge boundaries. Both belong to `H_0^1(I)` and their supports are disjoint. Assume, as a **separate original-source theorem rather than a program label**, that `Q_G(F_b') >= c_B ||F_b||²` for some `c_B>0` throughout the relevant bulk test class. The Gamma cross kernel is `J(s+t)<=1+1/[2(s+t)]`. The classical Carleman integral operator `C f(s)=∫_0^∞ f(t)/(s+t)dt` has `L²` norm at most π by the exact Schur weight `s^(-1/2)`:
+
+\[
+ \int_0^\infty\frac{t^{-1/2}}{s+t}dt
+ =\frac\pi{\sqrt s}.\tag{SC-23}
+\]
+
+There are two edge/bulk interfaces. Each contributes at most `(π/2+sqrt(delta beta)) ||F_{e,i}|| ||F_b||`; Cauchy over edges yields total Gamma coefficient at most `sqrt2(π/2+sqrt(delta beta))`. The two genuine pole channels add at most `2sqrt(2 delta beta)cosh(a)` to that cross coefficient. Contact is diagonal on disjoint primitive supports, and the genuine n=2 hinge depends exclusively on the edge pair (so has zero bulk cross). Using source `a<1/2`, `π/2<11/7`, `cosh(a)<4/3`, and the exact outward rational upper on `sqrt(delta beta)`, define
+
+\[
+\eta_0^2\le 2\left(\frac{11}7+\frac{11}3\sqrt{\delta\beta}\right)^2.\tag{SC-24}
+\]
+
+Then
+
+\[
+Q_G(F_e'+F_b')\ge
+c_E(\delta)\|F_e\|²+c_B\|F_b\|²
+-2\eta_0\|F_e\|\|F_b\|,\tag{SC-25}
+\]
+
+where **every source channel is preserved** and the edge margin can be amplified using SC-10:
+
+\[
+M=\left\lfloor\frac1{16\delta}\right\rfloor,
+\qquad c_E(\delta)\ge H_M-\frac18-\frac{47}8-\frac\delta4.
+\]
+
+This diverges logarithmically as `delta→0`. The exact source-conditional **no-gap** sufficient positivity condition is
+
+\[
+\boxed{c_E(\delta)c_B>\eta_0^2.}\tag{SC-26}
+\]
+
+It does not follow that the required `c_B` is known or that an arbitrary source test can be split into two `H¹_0` packets which vanish at their shared endpoint. Any general partition of unity with overlapping supports needs its own rigorously controlled **nonlocal IMS** error. The no-gap theorem is conditional for a restricted direct-sum support grammar, not a claim of all-radius Weil positivity.
+
+**An explicit inverse-Ramsey-style proof compression.** If `M>=2^k`, harmonic grouping proves `H_M>=1+k/2`: each dyadic group contributes ≥1/2. Hence `c_E(delta)>=k/2−5−delta/4` with **no need to enumerate** the M individual OU modes. At `delta=2^-36`, `M=2^32=4,294,967,296`; the exact rational certificate gives `c_E>10.9999999999` using only `k=32`. For a *hypothetical separately certified authentic bulk* `c_B=1/2` on `beta=1/4`, the Carleman/polar cross satisfies the exact rational upper `eta_0²<4.94`. Thus the conditional test `(edge margin)*c_B>eta_0²` succeeds **without simulating over four billion Gamma rungs**. The large budget is a theorem-derived witness to the observer's resource-depth bottleneck, not a physical clock, a source-proof of the bulk margin, or an RH result.
+
+**This changes the next proof target:** seek a source-attested bulk margin at the same irrational radius and a nonlocal IMS gluing estimate for general primitives with nonzero interface traces. Do not attempt to infer a global theorem from two positive charts without controlling their actual mixed Carleman kernel.
