@@ -73,6 +73,19 @@ class HiddenMemoryFiniteTests(unittest.TestCase):
             if last is not None:self.assertLessEqual(out['finite_upper_S'][0][0],last)
             last=out['finite_upper_S'][0][0]
 
+    def test_453_cell_rational_budget(self):
+        x=H.finite_cell_algebraic_budget(64)
+        self.assertEqual(x['rank'],453)
+        self.assertEqual(x['squared_cross_cap'],249901074)
+        self.assertEqual(x['tail_upper'],F(444268576,2**64))
+        self.assertLess(x['tail_upper'],F(1,10**9))
+        self.assertFalse(x['source_verified'])
+
+    def test_453_cell_depth_halves(self):
+        for n in (0,1,8,32):
+            self.assertEqual(H.finite_cell_algebraic_budget(n+1)['tail_upper']*2,
+                             H.finite_cell_algebraic_budget(n)['tail_upper'])
+
     def test_zero_depth_and_zero_cross(self):
         z=H.rational_memory_telescope(((1,),),((0,),),((1,),),0,step=1,high_gap=1,coupling_sq_upper=0)
         self.assertEqual(z['finite_upper_S'],z['actual_finite_S'])
@@ -186,6 +199,18 @@ class AuthenticSourceInterface(unittest.TestCase):
         self.assertFalse(r['source_high_projector_built'])
         self.assertFalse(r['source_delayed_resolvent_probes_computed'])
         self.assertFalse(r['RH_proved'])
+
+    def test_real_453_cell_observer_bound(self):
+        try:
+            from observational_succ.source_jump_spectral import authenticate_original_jump_rank_budget
+        except ImportError:
+            self.skipTest("standalone fixture; original SHA source required")
+        packet=H.explicit_cell_source_memory_budget(64)
+        self.assertEqual(packet['source_conditional_memory_tail_upper'],F(444268576,2**64))
+        self.assertEqual(packet['explicit_equal_cell_observation_rank'],453)
+        self.assertTrue(packet['source_positive_carrier_memory_may_be_nonzero'])
+        self.assertFalse(packet['polar_cross_only'])
+        self.assertFalse(packet['first_window_Weil_sign_proved'])
 
     def test_original_source_budget_decay(self):
         try:
