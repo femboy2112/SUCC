@@ -208,3 +208,24 @@ Consequently \(\|v_k'\|_2^2=2[m_k(m_k+1)-k(k+1)]=(56,72,36,44)\).
 **Sharp minimax theorem:** over *all finite high Legendre combinations* \(h=\sum_{m\ge5}c_m u_m\) with \(u_k-h\) vanishing at both endpoints, \(h=u_{m_k}\) minimizes \(\|(u_k-h)'\|_2^2\). Proof: parity separates. In the source mode parity class, the boundary condition forces \(\sum c_m=1\). Expand \(u_k'-h'=(u_k'-u_{m_k}')+(u_{m_k}'-h')\); the two summands are orthogonal by the derivative min-index covariance, so their squared energies add. Opposite parity high components only increase derivative energy. Equality forces \(h=u_{m_k}\) by linear independence.
 
 The resulting source-sound B3 *numerical bound* is not uniformly sharper at small J: increasing \(\|v_k'\|\) can outweigh endpoint cancellation. The exact certificate reports for J=2 that some tail bounds worsen, while at J=20 all four improve. This is not a claim of monotone S4 positivity. The source-independent theorem, exact rational derivative checks, and genuine \`CertifiedAnalyticSuzukiTrial\` U recertification are tests. A negative Schur lower remains AMBIGUOUS, even if Gamma-tail improvement is certified.
+
+
+## 12. Exact positive source-surplus range criterion (RZ-03)
+
+The no-free-positivity theorem in §6 reduces any proposed *new* rank-one improvement to a genuine positive source remainder
+\[
+A_*:=D_4-\kappa_*K\succeq0,\qquad
+A_*\stackrel{?}{\succeq}\delta\frac{|Kz\rangle\langle Kz|}{\langle Kz,z\rangle}.
+\]
+The relevant **classical Douglas square-root range theorem** supplies a necessary-and-sufficient (not merely heuristic) criterion. For any positive Hilbert-form operator \(A\) and \(v\), a \(\delta>0\) with \(A\succeq\delta\,vv^*\) exists iff
+\[
+M_v:=\sup_{\langle Aw,w\rangle>0}
+   \frac{|\langle v,w\rangle|^2}{\langle Aw,w\rangle}<\infty
+\]
+with \(\langle v,w\rangle=0\) on \(\ker A\), equivalently \(v\in\operatorname{Ran}(A^{1/2})\) (under standard operator-domain hypotheses). The **sharp** gain is \(\delta_{\max}=1/M_v\). Applied to a source high-sector comparison, the corresponding \(v\) is \(Kz/\sqrt{\langle Kz,z\rangle}\) and \(A=A_*\). Hence the new load-bearing theorem required for RH-facing progress is **source-derived square-root range membership of an actual target coupling in the surplus form**, with quantified dual energy—*not* additional finite positivity samples.
+
+This obstruction is calibrated against exact spectral families:
+\(A=\operatorname{diag}(n^{-4})_{n\ge1}\), \(v_n=n^{-2}\) gives
+\(\sum_{n\le N}|v_n|^2/\lambda_n=N\) and finite best gain \(\delta_N=1/N\to0\), despite all finite compressions being strictly positive. Meanwhile \(v_n=n^{-3}\) gives \(\sum_{n\ge1}n^{-2}<2\) and uniform valid gain \(\delta=1/2\). The implemented finite-source-free gate obtains exact \(\delta_{\max}=1/(v^TA^{+}v)\) by rational row reduction and checks the Loewner inequality at the optimal value. It rejects PSD surplus directions not in the source range, including the toy \(A=\begin{psmallmatrix}1&1\\1&1\end{psmallmatrix}\), \(v=(1,0)\). These are theorem calibrations; **the genuine Suzuki surplus \(D_4-\kappa_*K\) has NOT yet been proved to possess this directional range**, and no RH sign claim follows.
+
+This cross-pollinates the earlier SUCC arithmetic spectral range program with the exact new \(K\)-Riesz coercivity interface: supply an analytic range theorem for the **surplus** and an actual original-source vector \(Kz\), or declare the directional upgrade unavailable.
