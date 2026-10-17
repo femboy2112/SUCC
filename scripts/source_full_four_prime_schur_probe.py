@@ -8,6 +8,7 @@ import json
 from fractions import Fraction as F
 
 from observational_succ.source_four_prime_schur import CertifiedFourPrimeSchurTrial
+from observational_succ.source_four_edge_gram import authentic_four_edge_moments
 from observational_succ.source_four_phase_schur import CertifiedFourPrimeFullPhaseSchurTrial
 
 
@@ -22,6 +23,7 @@ def main():
                                    digits=100,eta=F(1,8))
     phase=CertifiedFourPrimeFullPhaseSchurTrial(J_center=64,J_G=64,J_deriv=2,
                                                 J_edge=8,digits=100,eta=F(1,8))
+    edge20=authentic_four_edge_moments(J=20,J_G=64,digits=100)
     out={
         "source":r["source"],
         "original_frozen_source_sha":r["source_sha"],
@@ -58,10 +60,18 @@ def main():
         "P1_agrees_with_independent_original_source_certificate":
             r["actual_source_P1_independent_replay"],
         "first_window_not_RH":True,
+        "original_true_prime_edge_J20_moment_intervals":tuple(
+            tuple(str(t) for t in p) for p in edge20["intervals"]),
+        "original_true_prime_edge_J20_direction_flags":tuple(
+            bool(low>0 or high<0) for low,high in edge20["intervals"]),
         "original_true_prime_edge_moment_intervals":tuple(
             tuple(str(t) for t in p) for p in phase["source_edge_intervals"]),
         "original_true_source_complete_center_plus_edge_S4_verdict":
             phase["original_S4_verdict"],
+        "exact_source_all_real_cone_S4_certificate":
+            phase["exact_all_direction_source_robust_cone_PSD"],
+        "signed_four_source_Loewner_certified":
+            phase["source_Loewner_lower_PSD"],
         "original_true_source_edge_interval_width":tuple(
             str(t) for t in phase["source_edge_width"]),
         "signed_original_complete_center_plus_edge_4x4_Loewner_lower":tuple(

@@ -142,8 +142,8 @@ No source code archives or main modifications, release, tag, merge or academic p
 The inherited original source is more structured than a generic high-sector operator. At b=log2 with b>1/2, the two actual prime-connected edge strips are L=(-1/2,1/2-b), R=(b-1/2,1/2). On R, reflect the original source derivative residual h'_k=(GP_k)' with parity (-1)^(k+1), and define z_k=Q_poly<=3 h'_k. Then for x in R the true shifted difference is
 
 D_k(x)=z_k(x)-z_k(x-b)=
- - z_k(x)-z_k(b-x) if k even derivative parity,
- + z_k(x)-z_k(b-x) if k odd derivative parity,
+ z_k(x)+z_k(b-x) if k even derivative parity,
+ z_k(x)-z_k(b-x) if k odd derivative parity,
 
 with the actual signs set by P_k reflection: k=1,3 gives z_k(x)-z_k(b-x) and k=2,4 gives z_k(x)+z_k(b-x). The first difference is odd around midpoint x=b/2; the second is even. Hence their cross-parity inner products on R vanish EXACTLY, and two independent source edge test-functionals suffice for a nontrivial lower on the entire true four-column **edge mismatch Gram**:
 
@@ -187,3 +187,20 @@ S_{\rm signed,scalar}^{\rm original\ lower}
 The two source Gram lower matrices preserve all allowed cross-parity and same-parity entries. Both are conservative: a negative eigenvalue of either lower or of the signed 4x4 sum CANNOT certify negativity of the true signed Weil source. The nonlinear all-low-direction bound is also emitted; for any rational x, it retains guaranteed positive center/edge savings and may be quantitatively sharper than the fixed Loewner lower.
 
 **Boundary of rigor:** this is a coherent assembly of paper-proved first-prime all-high arithmetic coercivity, actually SHA-verified Suzuki source intervals, true omitted Gamma derivative norm estimates and original signed low A4 source. It has not solved the complete original S4 sign, which remains an exact-head CI-determined question; no finite first-prime sign would by itself imply RH.
+
+
+## 8. The interval-rank-one NO-GO and source-optimal zero comparator (FS-08)
+
+The first true original J_edge=8 edge certificate had ALL FOUR outward source-moment intervals straddling zero. This is NOT an analytic statement that the original edge response is zero: it is a measured proof-information deficit from the inherited differentiated Γ tail. For a single reflection-parity rank-one moment Gram m*m^T where the declared possible interval vector contains m=0, any fixed PSD matrix L universally satisfying L<=m*m^T for all interval-admissible m must satisfy L<=0 (choose m=0), hence L=0. Therefore **zero is the strongest certifiable PSD Loewner lower from ONLY these interval observations**. A Young/Gershgorin lower with negative diagonals is still mathematically valid but *can worsen* the combined signed S4 lower; the implementation chooses the exact ZERO PSD floor whenever all four edge intervals contain 0. This cannot fabricate a positive edge gain, and a new J_edge=20 source interval is independently computed to test whether deeper original Gamma information resolves any edge direction.
+
+## 9. Entire-continuum exact 2D source-sign gate (FS-09)
+
+Even when the fixed Young 4x4 Loewner floor is indefinite, the **all-low-direction nonlinear** source inequality from §§3 and 7 retains additional information. Reflection reduces the source problem to two 2×2 real symmetric blocks. For any block and each independent center/edge row with authentic rational nominal (m1,m2), errors (e1,e2), positive weight λ, the guaranteed directional lower is
+\[
+q(x,y)=a x^2+2b xy+c y^2+
+\sum_j\lambda_j
+\left(|m_{j1}x+m_{j2}y|-e_{j1}|x|-e_{j2}|y|\right)_+^2.
+\]
+For x≠0 set x=1,y=t, and check x=0 separately. On each semiaxis t≥0 and t≤0 the positive part is exactly the maximum of three affine functions with rational coefficients. Partition the semiaxes at their finitely many *exact rational intersections*. On each resulting interval q(1,t) is a **rational quadratic polynomial**, so positivity for ALL real t is decided by exact endpoint/vertex checks, including both unbounded tails, with no angular grids, unsourced floating eigenvalues, dense finite matrices or guessed zero ordinates. A successful exact test certifies nonnegative signed first-window S4 under inherited source hypotheses. A failed test witnesses negativity ONLY of the conservative computed LOWER, not of genuine S4. The proof-producing routine is \`observational_succ/exact_source_two_dim_cone.py\` and its exact synthetic/source controls.
+
+This exact interval-aware sign calculus also strengthens SUCC's general observational semantics: information carried as per-coordinate bounds is not the same as a fixed global rank-one direction, and its loss must be charged explicitly instead of repaired by a made-up PSD covariance.

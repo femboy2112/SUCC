@@ -41,6 +41,8 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_source_four_prime_schur.py' -v
       - name: Original prime-connected full-four edge and signed S4 source replay
         run: python -m unittest discover -s tests -p 'test_source_four_edge_gram.py' -v
+      - name: Entire real 2x2 parity cone source-sign theorem and no-ghost controls
+        run: python -m unittest discover -s tests -p 'test_exact_source_two_dim_cone.py' -v
       - name: Imported original source exponential polynomial independent checks
         run: |
           python -m unittest discover -s tests -p 'test_piecewise_suzuki_integrator.py' -v

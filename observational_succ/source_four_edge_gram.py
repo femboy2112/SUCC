@@ -155,6 +155,14 @@ def phase_edge_Young_gram_lower(cert,eta=F(1,8)):
     if type(eta) not in (int,F) or not 0<F(eta)<=1:
         raise SourceCenterError("rational Young eta in (0,1] required")
     eta=F(eta)
+    # Important: all four J=8 source moment intervals can contain zero.
+    # Their Cartesian product then includes the zero vector. No nonzero
+    # POSITIVE semidefinite Loewner lower for a rank-one uncertainty Gram
+    # can be justified from these observations alone. The exact ZERO
+    # comparator is optimal in the PSD Loewner cone in this case; it
+    # prevents error-only negative diagonals from worsening the S4 lower.
+    if all(lo<=0<=hi for lo,hi in cert["intervals"]):
+        return tuple(tuple(F(0) for _ in range(4)) for _ in range(4))
     ell=cert["edge_width_interval"][1]
     odd=_parity_lower((0,2),cert["nominal"],cert["errors"],
                       F(12)/ell**3,eta)
