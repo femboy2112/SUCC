@@ -113,13 +113,28 @@ class FiniteToySource:
             raise LocalizationError("source vector length mismatch")
         gamma = sum((self.jump[i][j] * (f[i] - f[j]) ** 2
                      for i in range(n) for j in range(n)), F()) / 2
-        prime = sum((-2 * w * sum((f[i] * f[i + lag] for i in range(n - lag)), F())
-                     for lag, w in self.lag_weights), F())
-        contact = -self.contact * sum((z * z for z in f), F())
+        mass = sum((z * z for z in f), F())
+        prime_corr = tuple((lag, w, sum((f[i] * f[i + lag]
+                                        for i in range(n - lag)), F()))
+                           for lag, w in self.lag_weights)
+        # Treat all f as zero-extended outside {0,...,n-1}. The *positive*
+        # discrete FUCC jump and negative mass potential cancel exactly when
+        # a genuine source lag has no self-overlap. No additional atom at 6.
+        prime_jump = sum((2 * w * (mass - corr)
+                          for lag, w, corr in prime_corr), F())
+        prime_potential = -2 * sum((w for lag, w, corr in prime_corr), F()) * mass
+        prime = -2 * sum((w * corr for lag, w, corr in prime_corr), F())
+        if prime != prime_jump + prime_potential or prime_jump < 0:
+            raise ArithmeticError("loss of FUCC jump/potential compensation")
+        contact = -self.contact * mass
         c = sum((self.pole_cosh[i] * f[i] for i in range(n)), F())
         s = sum((self.pole_sinh[i] * f[i] for i in range(n)), F())
         polar = 2 * (c * c - s * s)
         return {"Gamma_jump":gamma,"prime_shift":prime,"contact":contact,
+                "positive_FUCC_jump":prime_jump,
+                "compensating_negative_FUCC_potential":prime_potential,
+                "positive_Gamma_FUCC_transport":gamma + prime_jump,
+                "signed_contact_and_FUCC_potential":contact + prime_potential,
                 "completed_polar":polar,"total":gamma + prime + contact + polar}
 
 
