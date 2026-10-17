@@ -158,3 +158,20 @@ The source \(g\) must still be computed from the ORIGINAL Suzuki low/high respon
 Source files: observational_succ/authentic_prime_surplus.py and prime_surplus_dual.py; exact and authenticated tests; scripts/prime_two_surplus_probe.py. The true positive Gamma tail can supply still further source-positive spectral surplus; this campaign does NOT double count it.
 
 **Highest leverage next actual original-source probe:** use the source-exact piecewise derivative representation from PR #155 to derive a rigorous, outward-interval lower bound on either the center energy \(\|g_C\|^2\) or phase mismatch \(\|g_R-T_bg_L\|^2\) for the TRUE low residual g, then insert the positive savings from ES-06 into the four-low Schur lower. A finite matched sample, a hypothetical Hilbert g, a rank-only source projector, or a generic scalar κ shift cannot discharge this remaining source-interface obligation. Main and archived originals must remain unchanged.
+
+
+## 7. A genuine arithmetic no-uniform-gap theorem (ES-07)
+
+The positivity in ES-03 is directional. It **cannot** be promoted to a strictly positive scalar lower bound for the prime mismatch operator on the full moment-null high space. In fact the original first-prime source has an **infinite-dimensional smooth nullspace** for the isolated prime mismatch, even after all four polynomial moment constraints.
+
+**Theorem (PROVED PAPER, genuine source b=log2).** Let b in (a,2a), F any C_c^infty(I) primitive, and E the subspace orthogonal to polynomial moments 0..3. Choose any smooth compactly supported function phi in the left edge L and extend
+  F=phi+T_b phi.
+The supports are disjoint, entirely inside L union R; the center is zero and F_R=T_b F_L exactly. Hence M_b(F)=0 and ||F||>0 for phi not identically zero. The four global moments reduce to four linear functionals
+  int_L [x^j+(x+b)^j] phi(x) dx=0 for j=0..3.
+Choose **five** linearly independent smooth bumps phi_i in L. The homogeneous 4x5 linear system has a nonzero combination phi, hence a nonzero F with all four moments zero and exactly M_b(F)=0. Choosing arbitrarily many linearly independent bumps shows an infinite-dimensional kernel in E. Then u=F' is a genuine mean-zero original high derivative-carrier test, since <u,P_k(2x)>=-<F,P'_k(2x)>=0 for k=1..4.
+
+The original true b=log2 lies in (a,2a), so this proof applies to the **actual first-prime geometry** without synthesizing any new Euler source. It refutes the tempting statement \(\mathcal M_b(F)\ge\epsilon\|F\|^2\) for some uniform epsilon>0 on the four-moment high space; the true Gamma/coercive and completed polar terms remain present in the whole signed Weil source and are NOT refuted.
+
+The new test model constructs an exact rational 4x5 moment matrix on FIVE pairs of perfectly shift-correlated left/right cells with b=7/10, solves an exact nonzero rational null vector, and verifies all moments vanish while the modeled edge mismatch and center energy are exactly zero. The piecewise-constant model is NOT mislabeled smooth; the smooth theorem comes from the independent finite-codimension argument.
+
+**Implication for RH:** strengthening the original high sector by retaining prime2 energy is legitimate, and its diagonal P5/P6 gains are large, but the operator's nullspace forces any universal Schur proof to use actual coupling alignment, the positive Gamma source, completed polar contacts, or a nontrivial interaction theorem. One cannot close S4 merely by asserting a new uniform prime-induced spectral gap.

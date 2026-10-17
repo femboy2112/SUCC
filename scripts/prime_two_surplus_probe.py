@@ -8,6 +8,10 @@ from observational_succ.authentic_prime_surplus import (
 from observational_succ.prime_surplus_dual import (
     source_dual_coefficients,rational_polynomial_dual_center_witness,
 )
+from observational_succ.prime_surplus_nullspace import (
+    source_prime_kernel_no_uniform_gap,
+    exact_finite_four_moment_edge_kernel,
+)
 
 
 def _floor_decimal(x,digits=18):
@@ -64,6 +68,9 @@ def main():
         "source_odd_P5_center_dual_strict_saving_lower":str(
             source5["source_arithmetic_dual_saving_lower"]
         ),
+        "phase_coherent_real_source_nullspace":source_prime_kernel_no_uniform_gap(),
+        "five_cell_exact_null_witness_nonzero":
+            exact_finite_four_moment_edge_kernel()["whole_primitive_norm2"]>0,
         "actual_signed_S4_source_residual_evaluated":False,
         "original_S4_sign":"UNVERIFIED",
         "RH_PROVED":False,
