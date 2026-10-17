@@ -1,0 +1,174 @@
+{
+  "operation": "OPERATION SUCC x FUCC MEGASWARM: THE FOUR-BODY BREAKOUT",
+  "date": "2026-10-16",
+  "parent_pr": 150,
+  "parent_head": "6a067c1c40e644f589d170a4eaaa1923a25fc200",
+  "research_branch": "research/deepseek-pdq-megaswarm-2026-10-16",
+  "a": "1/2",
+  "result_status": "PROVED FINITE/SOURCE-CERTIFIED ENCLOSURES; S_4 SIGN OPEN; RH OPEN",
+  "moonshot_A_complete_four_moment_quotient": {
+    "claim_ids": [
+      "PDQ-04",
+      "PDQ-07"
+    ],
+    "identity": "E^T P^{-1} E = 30 c_1^T c_1 + 210 c_2^T c_2 + (1/24) M_3^T M_3 + (1/40) M_4^T M_4 = L^T diag(1,3,5,7) L",
+    "U0_J64_two_moment_lower_diag_dec": [
+      "-7.46736029989e-7",
+      "0.00000487340047908",
+      "-9.22064569001e-7",
+      "0.00000441208227076"
+    ],
+    "U0_J64_four_moment_lower_diag_dec": [
+      "0.0000204650594699",
+      "0.00000934927284701",
+      "-0.00000239299269052",
+      "0.0000150449324326"
+    ],
+    "U0_J64_two_moment_lower_bracket_diag_dec": [
+      "-1.26034170840",
+      "-0.755771113981",
+      "-0.540187507679",
+      "-0.419701569744"
+    ],
+    "U0_J64_four_moment_lower_bracket_diag_dec": [
+      "-1.25928111863",
+      "-0.755547320363",
+      "-0.540261054085",
+      "-0.419169927236"
+    ]
+  },
+  "moonshot_B_certified_derivative_energy": {
+    "claim_ids": [
+      "PDQ-09"
+    ],
+    "routes": [
+      "B1: exact real-space midpoint-Lipschitz quadrature of authentic_suzuki_mode_derivative_point",
+      "B3: sharpened O(J^{-3/2}) polynomial integration-by-parts infinite Gamma tail"
+    ],
+    "J_deriv": 20,
+    "grid": 256,
+    "J_galerkin": 64,
+    "H_prime_J_midpoint_diag_dec": [
+      "0.0000908092430883",
+      "0.000208125589989",
+      "0.0000349748800257",
+      "0.000152302939002"
+    ],
+    "H_prime_loewner_upper_diag_dec": [
+      "0.00370608207146",
+      "0.00465828058680",
+      "0.00365024770840",
+      "0.00460245793582"
+    ],
+    "gamma_tail_ibp_O_J_minus_3_2_dec": [
+      "0.00263434699242",
+      "0.00312473084970",
+      "0.00360532655258",
+      "0.00408280664650"
+    ],
+    "gamma_tail_young_O_J_minus_1_dec": [
+      "0.0149595405826",
+      "0.0115876103086",
+      "0.00979331815450",
+      "0.00863689478232"
+    ]
+  },
+  "moonshot_C_parity_split_bessel_coercivity": {
+    "claim_ids": [
+      "PDQ-08"
+    ],
+    "kappa_baseline": "1/50",
+    "kappa_odd_lower": "63/500",
+    "kappa_even_lower": "153/500",
+    "odd_improvement_factor": "63/10",
+    "even_improvement_factor": "153/10",
+    "odd_weighted_Bessel_leakage_upper_dec": "0.317830326207",
+    "even_weighted_Bessel_leakage_upper_dec": "0.255397108597",
+    "kappa_odd_exact_lower_dec": "0.126100390719",
+    "kappa_even_exact_lower_dec": "0.306221035948",
+    "U0_J64_young_parity_kappa_min_eig_by_parity_dec": {
+      "odd": "-0.199791421439",
+      "even": "-0.0491657757843"
+    },
+    "U0_J64_young_parity_kappa_min_eig_lower_dec": "-0.199791421439"
+  },
+  "moonshot_D_nested_30_to_4_obstruction": {
+    "claim_ids": [
+      "PDQ-10"
+    ],
+    "middle_block_5_to_30_strictly_negative_definite": true,
+    "universal_middle_loewner_upper_factor_moment30": "-26191/14760",
+    "universal_middle_loewner_upper_factor_fourier30": "-187/200",
+    "monotone_nested_short_hypothesis_satisfied": false
+  },
+  "moonshot_E_integrated_S4_brackets": {
+    "U0_baseline_young_kappa50_min_eig_by_parity_dec": {
+      "odd": "-1.26030437288",
+      "even": "-0.756014935550"
+    },
+    "U0_baseline_young_kappa50_min_eig_dec": "-1.26030437288",
+    "U0_young_4moment_parity_kappa_min_eig_by_parity_dec": {
+      "odd": "-0.199791421439",
+      "even": "-0.0491657757843"
+    },
+    "U0_young_4moment_parity_kappa_min_eig_dec": "-0.199791421439",
+    "U0_Hprime_4moment_kappa50_min_eig_by_parity_dec": {
+      "odd": "-0.184350197494",
+      "even": "-0.238570308467"
+    },
+    "U0_Hprime_4moment_kappa50_min_eig_dec": "-0.238570308467",
+    "U0_Hprime_4moment_parity_kappa_min_eig_by_parity_dec": {
+      "odd": "-0.0291585261606",
+      "even": "-0.0151747302158"
+    },
+    "U0_Hprime_4moment_parity_kappa_min_eig_dec": "-0.0291585261606",
+    "S4_verdict": "AMBIGUOUS"
+  },
+  "wave_II_discoveries": {
+    "agent_G_fucc_braid": {
+      "all_gauss_legendre_factorizations_exact": true,
+      "all_kummer_valuations_equal_digit_sum": true,
+      "frobenius_scale_invariance_verified": true,
+      "successor_step_valuation_law_verified": true,
+      "G_O1_strict_additive_homomorphism_refuted": true
+    },
+    "agent_H_spectral_resonance": {
+      "signature_on_4D_quadruplet_span": [
+        2,
+        2
+      ],
+      "window_scaling_exponent_a": 7,
+      "submerged_below_tail_at_T20": true,
+      "H_C3_fourth_cumulant_discrepancy": "-196/25"
+    },
+    "agent_I_rational_ldlt_capsule": {
+      "claim_id": "PDQ-13",
+      "capsule_schema": "SUCC_YEAN_RATIONAL_SCHUR_CAPSULE_v1",
+      "finite_algebra_verified": true,
+      "division_free_ring_check": true
+    },
+    "agent_J_observer_synergy_and_no_ghost": {
+      "claim_id": "PDQ-14",
+      "strict_synergy_over_sum_of_parts": true,
+      "residual_under_interior_only": "24",
+      "residual_under_joined_observer": "0",
+      "stitched_ghost_projection_energy": "7/10",
+      "violates_bessel_inequality": true
+    },
+    "agent_K_contact_rigidity": {
+      "claim_id": "PDQ-12",
+      "exact_single_moment_recovery": true,
+      "M_Ka_is_strictly_diagonal": true,
+      "boundary_moments_M31_M42_contact_invariant": true
+    },
+    "agent_L_hodge_legendre_isomorphism": {
+      "claim_id": "PDQ-11",
+      "m5_K_inverse_00": "168/5",
+      "m5_K_inverse_02": "252/5",
+      "m5_K_inverse_11": "210",
+      "m5_K_inverse_22": "3528/5"
+    }
+  },
+  "original_source_weil_sign_certified": false,
+  "RH_PROVED": "NO"
+}
