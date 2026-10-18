@@ -138,7 +138,7 @@ def original_source_transport_contract():
         raise TransportError("source log2 violates exact edge geometry")
     return {
         "source_type":"ORIGINAL_SUZUKI_FIRST_PRIME_REAL_GAMMA",
-        "source_git_blob":sha,"prime_wavefront":((2,2)),
+        "source_git_blob":sha,"prime_wavefront":((2,2),),
         "source_log2_interval":(str(b.lo),str(b.hi)),
         "first_real_gamma_alpha":"1/2",
         "single_rung_continuum_boundary_rank":4,
