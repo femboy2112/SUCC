@@ -21,7 +21,7 @@ def main():
  p.add_argument("--verify",action="store_true")
  args=p.parse_args()
  cells=[]
- for j,M in ((4,56),(8,80),(12,100),(16,128)):
+ for j,M in ((4,56),(8,80),(12,100),(16,128),(24,192)):
   r=source_residual_schur_trial(J=j,M=M,P=18,fit=True)
   if args.verify:
    assert r["frozen_source_git_blob"]==SOURCE_SHA
