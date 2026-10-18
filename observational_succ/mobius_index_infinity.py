@@ -287,3 +287,34 @@ def sign_mutant_control(p):
         "mutant_idempotent":False,
         "nonnegative_coefficients_alone_source_correct":False,
     }
+
+
+
+def sieve_succ_commutator(primes,n):
+    """Exact [S,E_P]|n> = (E_P(n)-E_P(n+1))|n+1>.
+
+    Strong P-exhaustion gives [S,P1]=|2><1|. If P is a finite
+    genuine prime set CONTAINING 2, choose any omitted prime q>3:
+    E_P(q-1)=0 (even), E_P(q)=1, so [S,E_P]|q-1>=-|q>.
+    The limiting [S,P1] vanishes on |q-1>. Thus the commutator
+    convergence is STRONG but NEVER operator norm, with distance
+    at least one. This is a source-dynamics obstruction to erasing
+    an apparently negligible zero-density sieve frontier.
+    """
+    _primes(primes)
+    n=_natural_source(n)
+    if n>=2_000_000:
+        raise IndexBoundaryError("original unit SUCC endpoint exceeds finite horizon")
+    before=sieve_projection(n,primes)["projection_diagonal"]
+    after=sieve_projection(n+1,primes)["projection_diagonal"]
+    coef=before-after
+    limit_coef=int(n==1)
+    return {
+        "genuine_primes":primes,"original_SUCC_edge":(n,n+1),
+        "finite_sieve_edge_coefficient":coef,
+        "strong_limit_unit_boundary_edge_coefficient":limit_coef,
+        "difference_from_limit":coef-limit_coef,
+        "cofinal_operator_norm_difference_at_least_one_if_2_in_P":2 in primes,
+        "finite_stage_source_outcome_equals_global":coef==limit_coef,
+        "completed_Weil_trace_or_contact_identified":False,
+    }
