@@ -147,6 +147,21 @@ The equalities are algebraic on the finite-support source core. They explain why
 
 **New discriminating gate:** any proposed functor to Connes' adelic trace that factors only through Koszul homology must send every V_p and [H,V_p] to zero. It cannot then recover the actual nonzero prime-power fixed-point/explicit-formula response without separately retained boundary, equivariant chain data, or a rigorously defined trace anomaly. The missing “information” must be shown source-redundant only AFTER such an enhanced action is transported and tested; homology alone provably forgets too much.
 
+
+## ERW-10. What is NOT redundant: the canonical identity contact (PROVED EXACT TEST)
+
+The off-identity Connes local factor and the homotopy prime distribution can agree on every test whose support avoids the identity, while their extensions around the identity still differ by c*delta_1 in the multiplicative chart (c*delta_0 in the additive log chart). This is a real source-map ambiguity until Fourier/Haar/contact normalization has been independently supplied. It can change the Weil quadratic form even on ORIGINAL admissible autocorrelation tests.
+
+A calibrated concrete test is f(t)=(1-t²)^3 for |t|<=1 and zero elsewhere. This is a genuine C_c² function: its first two derivatives vanish at the boundary. Let h=f*tilde(f), so h(0)=||f||². Exact integration gives
+
+    h(0)=int_-1^1 (1-t²)^6 dt = 2048/3003 > 0.
+
+Therefore
+
+    (W+c delta_0)(h)-W(h)=c*(2048/3003).
+
+The prime-power distribution away from log-time zero is unchanged, and every off-identity local Connes test has the same value, yet an authentic Weil autocorrelation changes unless c=0. This directly proves that the canonical contact datum is NOT redundant under the required full test algebra. It cannot be freely chosen to manufacture a positive form. The implementation checks the rational integral independently by the beta recurrence I_m=(2m)/(2m+1)*I_(m-1), I_0=2, as well as both positive and negative mutations. The result does not claim the original canonical c is nonzero or that an actual Weil witness is negative; it diagnoses insufficiency of off-identity data.
+
 ## ERW-07. Exact no-ghost / positivity comparison and what can falsify it
 
 The completed signed Weil form on the appropriate convolution tests is RH-equivalent to positivity. An auxiliary positive Koszul-Hodge Laplacian only certifies energy positivity in its constructed carrier; the required equality with W has NOT been proved. An all-test reconstruction must satisfy:
@@ -177,4 +192,4 @@ The completed signed Weil form on the appropriate convolution tests is RH-equiva
 
 **Reproduction:** python -m unittest discover -s tests -p 'test_equivariant_koszul_descent.py' -v; analogous test_observable_redundancy_forms.py, test_stabilized_exterior_source.py, test_source_homotopy_defect.py; scripts/verify_provenance.py. Focused GitHub workflow runs Python 3.10 and Python 3.13 and the inherited Koszul regression. Full repository test validation is separate and is not inferred from focused tests. Status flags in all APIs retain RH_proved=False and full Connes/Weil identification=False.
 
-**Ledger:** ERW-01/02/03/04/05/06 proved local or classical; ERW-07 full global transport and RH UNVERIFIED. Nothing is a proof of RH or a new independent academic priority.
+**Ledger:** ERW-01/02/03/04/05/06/09/10 proved local or classical; ERW-07 full global transport and RH UNVERIFIED. Nothing is a proof of RH or a new independent academic priority.
