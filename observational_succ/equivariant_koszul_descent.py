@@ -311,3 +311,51 @@ def normalized_prime_clock_retraction(n,p):
         "canonical_Connes_trace_proved":False,
         "original_Weil_positive":False,
     }
+
+
+
+def prime_multiplication_nullhomotopy(n,p):
+    """Exact full-polynomial Koszul chain identity V_p=d epsilon_p+epsilon_p d.
+
+    On the total-degree alpha complex K_n, exterior creation epsilon_p
+    acts K_n -> K_(p*n) and raises the chain degree by one. It is defined
+    whether p is newly active OR already divides n. The target includes
+    p in its exterior support, so the creation operator is source-typed.
+
+    Since {iota_q,epsilon_p}=delta_qp and d=sum x_q iota_q
+    globally, the anticommutator is multiplication x_p=V_p. We verify
+    every basis state with independent source differential evaluation.
+
+    V_p is NONZERO on the original integer carrier, but null-homotopic
+    as a chain map. Thus passing to Koszul homology destroys arithmetic
+    multiplication. Its commutator with log H is still log p V_p at the
+    CHAIN level and must not be discarded when reconstructing sources.
+    """
+    witness=prime_chain_lift(n,p)
+    src=_fiber(n)
+    dst=_fiber(n*p)
+    receipts=[]
+    for S in src.basis():
+        output={}
+        for T,a in dst.exterior_creation(p,S):
+            for U,b in dst.boundary(T):
+                output[U]=output.get(U,F(0))+F(a*b)
+        for T,a in src.boundary(S):
+            for U,b in dst.exterior_creation(p,T):
+                output[U]=output.get(U,F(0))+F(a*b)
+        actual={T:v for T,v in output.items() if v}
+        if actual!={S:F(1)}:
+            raise AssertionError("KOSZUL_PRIME_MULTIPLICATION_NULLHOMOTOPY_FAILED")
+        receipts.append((S,actual))
+    return {
+        "n":n,"p":p,"target_n":n*p,
+        "chain_map_original_Vp_nonzero":True,
+        "exact_d_epsilon_plus_epsilon_d_is_Vp":True,
+        "checked_source_wedges":tuple(receipts),
+        "Koszul_homology_faithfully_represents_original_FUCC":False,
+        "first_activation_extra_homology_retained_as_relative_defect":
+            witness["origin_to_prime_homology_defect"],
+        "source_prime_log_commutator_still_nonzero":True,
+        "source_test_and_global_trace_not_identified":True,
+        "RH_proved":False,
+    }
