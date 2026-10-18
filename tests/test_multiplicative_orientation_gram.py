@@ -1,5 +1,6 @@
 """Exact independent SUCC/FUCC Gram, log energy, and two-completion controls."""
 import unittest
+from itertools import combinations
 from fractions import Fraction as Q
 
 from observational_succ.multiplicative_orientation_gram import (
@@ -114,6 +115,15 @@ class MultiplicativeOrientationGramTests(unittest.TestCase):
             r=mobius_euler_vacuum_certificate(primes)
             self.assertEqual(r['vacuum_norm_squared'],r['direct_euler_norm_squared'])
             self.assertGreater(r['vacuum_norm_squared'],prev)
+            independent = {}
+            for depth in range(len(primes)+1):
+                for subset in combinations(primes,depth):
+                    d=1
+                    for p in subset:
+                        d*=p
+                    independent[d]=((-1)**depth,Q(1,d))
+            actual={d:(sign,squared) for d,sign,squared in r['squarefree_vacuum_terms']}
+            self.assertEqual(actual,independent)
             self.assertTrue(r['each_finite_BstarB_is_PSD'])
             self.assertFalse(r['unnormalized_infinite_vacuum_has_finite_norm'])
             prev=r['vacuum_norm_squared']
@@ -125,7 +135,14 @@ class MultiplicativeOrientationGramTests(unittest.TestCase):
     def test_actual_multiplication_shift_indefinite_but_factorization_PSD(self):
         for p in (2,3,5,7):
             r=single_prime_shift_sign_control(p)
-            self.assertEqual(r['selfadjoint_shift_compression'],((0,1),(1,0)))
+            labels=(1,p)
+            independent=tuple(tuple(int(i==p*j)+int(j==p*i)
+                                    for j in labels) for i in labels)
+            self.assertEqual(r['selfadjoint_shift_compression'],independent)
+            for coeffs,expected in (((1,1),2),((1,-1),-2)):
+                value=sum(coeffs[i]*independent[i][j]*coeffs[j]
+                          for i in range(2) for j in range(2))
+                self.assertEqual(value,expected)
             self.assertEqual(r['positive_direction_rayleigh'],2)
             self.assertEqual(r['negative_direction_rayleigh'],-2)
             self.assertTrue(r['factorized_PSD_by_BstarB'])
