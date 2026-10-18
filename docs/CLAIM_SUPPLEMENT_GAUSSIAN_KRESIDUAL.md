@@ -19,3 +19,5 @@ All historical source blobs unchanged. Draft review only; no release/merge. Clai
 | GKR-09 exact complete ramified Gaussian p2 Euler prime-power tower matches rational ζ local p2 tower | CLASSICAL / EXACT SOURCE-GATED | χ_-4(2)=0, coefficients 1 at every depth; Gaussian split/inert negatives mandatory |
 | GKR-10 split5 vs inert3 local amplitude and source distinction | CLASSICAL / EXACT Fraction | p5 has two norm-p jets, p3 has no norm3 shell; no completed global equality |
 | Gaussian versus rational global completed Weil identity | UNVERIFIED AND NOT CLAIMED | Different Archimedean Gamma, conductor, all other prime split data; no RH inference |
+
+| GKR-11 original completed signed Weil/Suzuki q∞ >= (1/2) K on entire 2D clamped high parity trial span | SOURCE-CONDITIONAL PAPER + exact outward authentic J8 matrix, genuine positive omitted Γ | No inference to full high sector, invariance, S4, RH; both parity signs checked |
