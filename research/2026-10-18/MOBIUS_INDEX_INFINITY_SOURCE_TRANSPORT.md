@@ -125,6 +125,17 @@ Tests use exact rational partial memory series with integral-test LOWER/UPPER ta
 
 A nonzero constant periodic ghost added to the backward memory tail leaves its recurrence unchanged but violates decay and adds probability mass L*c. It is not observationally redundant under the physical source. As in ERW, redundancy must be certified against the actual source measure and all future actions.
 
+
+## MII-09. Hostile source-map blindness: the same positive sieve accepts incompatible completed L-sources (PROVED NON-IDENTIFICATION)
+
+The projector E_P was built solely from the literal integer multiplication isometries V_p and genuine prime divisibility. It contains NO Dirichlet character, conductor, Archimedean Gamma or canonical identity-contact datum. That omission is mathematically decisive and is not a harmless simplification.
+
+Take the two source-typed arithmetic profiles already independently implemented upstream: standard Q zeta, and primitive chi_{-3} with conductor 3, odd Archimedean parity and missing Euler factor at p=3. The SAME V_2,V_3 and hence SAME positive sieve E_{2,3} act on the underlying integer Hilbert space, but the original convergent log-derivative coefficient at p=2 is +log 2 for zeta and -log 2 for chi_{-3}; at p=3 zeta has a source Euler impulse while the chi_{-3} Euler factor is absent. Consequently a construction depending only on V_p/E_P CANNOT uniquely reconstruct both signed explicit formula distributions, since one common input cannot have two different prescribed first-prime outputs.
+
+Independently, the upstream original test f(t)=(1-t²)^3 1_{|t|<=1} has autocorrelation h(0)=2048/3003. Mutating the original signed Weil distribution by +delta_0 changes W(h) by +2048/3003, while all V_p and sieve E_P remain exactly unchanged. This furnishes a SECOND, analytically distinct source-map nonidentification witness (identity contact, not character/conductor).
+
+The executable control imports the ORIGINAL source profiles and the ORIGINAL-source autocorrelation oracle from the pinned SUCC ancestor; it does not construct mutant profiles from arbitrary guessed data. This proves **character, conductor, archimedean parity and canonical contact cannot be dismissed as redundant relative to the full Weil test algebra**, even though E_P itself is an authentic positive arithmetic projection. It is a no-go for a SOURCE-BLIND candidate map, not for an enriched source-aware Connes/Weil construction, nor is it evidence against RH.
+
 ## MII-08. What remains RH-hard / falsification gate
 
 All constructions above are genuine classical arithmetic/Hilbert identities with explicit source scopes, and test the user's redundancy intuition. They are not an identification of the COMPLETE signed Weil quadratic:
