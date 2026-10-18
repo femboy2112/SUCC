@@ -224,7 +224,7 @@ class MobiusIndexAtInfinityTests(unittest.TestCase):
         data=json.loads(run.stdout)
         self.assertEqual(data['prime_sieve_source_count_at_210'],56)
         self.assertEqual(data['true_Connes_Cp_squared'],'1/8')
-        self.assertEqual(data['physical_cut_L30_naive_shift_norm_squared_strict_lower'],200)
+        self.assertEqual(F(data['physical_cut_L30_naive_shift_norm_squared_strict_lower']),200)
         self.assertFalse(data['RH_proved'])
         self.assertFalse(data['source_signed_completed_Weil_distribution_equated'])
 
