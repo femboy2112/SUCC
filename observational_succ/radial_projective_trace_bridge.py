@@ -194,3 +194,40 @@ def classical_tate_positive_euler_crosscheck(p,beta,depth=4):
         "actual_source_equal_to_negative":False,
         "gamma_pole_contact_and_global_trace_proved":False,
     }
+
+
+
+def original_weil_prime_tape_gate(N):
+    """Cross-check EVERY genuine p^k <= N against pinned actual Weil source.
+
+    Independent integer prime enumeration constructs the same (n,p) pairs.
+    This is an exact proof-scoped magnitude identification; signs/contact,
+    Gamma and all-test trace remain deliberately separate.
+    """
+    if type(N) is not int or not 2<=N<=500:
+        raise RadialTraceError("exact finite full-prime horizon 2..500")
+    from .completed_weil_transport import von_mangoldt_labels
+    original=von_mangoldt_labels(N)
+    candidate=[]
+    for p in range(2,N+1):
+        if p>2 and any(p%d==0 for d in range(2,isqrt(p)+1)):
+            continue
+        k=1
+        while p**k<=N:
+            rec=radial_squared_amplitude(p,k)
+            n=p**k
+            if rec["normalized_amplitude_squared"]!=Q(1,n):
+                raise AssertionError("wrong complete original source weight")
+            candidate.append((n,p,k))
+            k+=1
+    expected=tuple(sorted((n,p) for n,p,k in candidate))
+    if expected!=original or (6,6) in expected:
+        raise AssertionError("MUTATED_ORIGINAL_WEIL_PRIME_SOURCE")
+    return {
+        "horizon":N,"original_prime_power_tape":original,
+        "radial_prime_jet_tape":tuple(sorted(candidate)),
+        "exact_all_prime_power_labels_and_half_density_squares":True,
+        "fake_prime6_not_in_source":(6,6) not in expected,
+        "original_signed_Weil_distribution_identified":False,
+        "arch_gamma_contact_added":False,"RH_proved":False,
+    }
