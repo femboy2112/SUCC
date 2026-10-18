@@ -9,9 +9,11 @@ on:
       - 'observational_succ/oriented_mobius_adelic.py'
       - 'observational_succ/radial_projective_trace_bridge.py'
       - 'observational_succ/full_prime_tower_transport.py'
+      - 'observational_succ/mobius_tate_gamma_remainder.py'
       - 'tests/test_oriented_mobius_adelic.py'
       - 'tests/test_radial_projective_trace_bridge.py'
       - 'tests/test_full_prime_tower_transport.py'
+      - 'tests/test_mobius_tate_gamma_remainder.py'
       - 'research/2026-10-18/ORIENTED_COUNTING_TO_ADELIC_TRACE.md'
       - 'docs/CLAIM_SUPPLEMENT_ORIENTED_COUNTING_ADELIC.md'
       - '.github/workflows/oriented-mobius-adelic-descent.yml'
@@ -40,9 +42,11 @@ jobs:
           python -m compileall -q observational_succ/oriented_mobius_adelic.py
           python -m compileall -q observational_succ/radial_projective_trace_bridge.py
           python -m compileall -q observational_succ/full_prime_tower_transport.py
+          python -m compileall -q observational_succ/mobius_tate_gamma_remainder.py
           python -m compileall -q tests/test_oriented_mobius_adelic.py
           python -m compileall -q tests/test_radial_projective_trace_bridge.py
           python -m compileall -q tests/test_full_prime_tower_transport.py
+          python -m compileall -q tests/test_mobius_tate_gamma_remainder.py
       - name: Signed counting Boolean versus p-square exact controls
         run: python -m unittest discover -s tests -p 'test_oriented_mobius_adelic.py' -v
       - name: Radial projective all-jet and original Connes Tate crosschecks
@@ -51,5 +55,7 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_full_prime_tower_transport.py' -v
       - name: Run source p-adic ball test
         run: python -m unittest discover -s tests -p 'test_connes_compact_open_test_bridge.py' -v
+      - name: Complete Mobius convolution and authenticated Tate Gamma remainder
+        run: python -m unittest discover -s tests -p 'test_mobius_tate_gamma_remainder.py' -v
       - name: Verify frozen source provenance
         run: python scripts/verify_provenance.py
