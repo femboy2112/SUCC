@@ -11,6 +11,7 @@ from observational_succ.equivariant_koszul_descent import (
     EquivariantDescentError, matrix_chain_diagonal,
     trace_obstruction, prime_chain_lift, unit_succ_dimension_control,
     original_prime_source_supertrace_gate, normalized_prime_clock_retraction,
+    prime_multiplication_nullhomotopy,
 )
 from observational_succ.koszul_prime_cancellation import source_multidegree
 from observational_succ.completed_weil_transport import von_mangoldt_labels
@@ -107,6 +108,25 @@ class EquivariantKoszulDescentTests(unittest.TestCase):
         self.assertFalse(r["genuine_SUCC_observables_preserved_by_an_invented_ancilla"])
         self.assertTrue(unit_succ_dimension_control(1)["literal_fiberwise_isometric_S_possible"])
         self.assertFalse(unit_succ_dimension_control(1)["genuine_SUCC_observables_preserved_by_an_invented_ancilla"])
+
+    def test_genuine_fucc_is_exact_chain_boundary_even_at_prime_origin(self):
+        for p in (2,3,5,7,11):
+            for n in (1,2,3,4,6,8,9,12,25,30,36):
+                rec=prime_multiplication_nullhomotopy(n,p)
+                self.assertTrue(rec["exact_d_epsilon_plus_epsilon_d_is_Vp"])
+                self.assertTrue(rec["chain_map_original_Vp_nonzero"])
+                self.assertEqual(rec["target_n"],p*n)
+                self.assertFalse(rec["Koszul_homology_faithfully_represents_original_FUCC"])
+                self.assertEqual(len(rec["checked_source_wedges"]),
+                                 len(source_multidegree(n).basis()))
+                for S,output in rec["checked_source_wedges"]:
+                    self.assertEqual(output,{S:F(1)})
+        self.assertTrue(prime_multiplication_nullhomotopy(1,2)
+                        ["first_activation_extra_homology_retained_as_relative_defect"])
+        self.assertFalse(prime_multiplication_nullhomotopy(4,2)
+                         ["first_activation_extra_homology_retained_as_relative_defect"])
+        with self.assertRaises(EquivariantDescentError):
+            prime_multiplication_nullhomotopy(2,6)
 
     def test_source_restricted_trace_removes_augmented_wedge_multiplicity(self):
         for n,p in ((1,2),(2,3),(6,5),(4,2),(9,3),(30,7),(72,2)):
