@@ -65,6 +65,32 @@ class ArchivedOriginalSignedSuzuki(unittest.TestCase):
         self.assertGreater(p["dc"],0)
         self.assertTrue(p["source_type"]=="ORIGINAL_SUZUKI_SIGNED_PRIMITIVE")
 
+    def test_true_infinite_Gamma_H1_source_domain_and_two_tail_routes(self):
+        from observational_succ.clamped_k_residual_bridge import gamma_action_tail
+        src=R.authentic_real_Gamma_H1_source_domain()
+        self.assertEqual(src["source_SHA"],R.SOURCE_SHA)
+        self.assertEqual(src["original_Gamma_multiplier_H1_bound"],F(5))
+        self.assertTrue(src["operator_domain_contains_H1_0"])
+        for J in (1,4,8,24,64):
+            h=R.high_boundary_match(1,F(1,20))["h"]
+            p=R.authentic_Gamma_tail_action_dual(h,J)
+            self.assertTrue(p["H2_upper"] is not None)
+            self.assertEqual(p["selected"],min(p["H1_upper"],p["H2_upper"]))
+            self.assertLessEqual(p["selected"],p["H2_upper"])
+            d=4*J+1
+            self.assertEqual(p["H1_upper"],
+              (F(1,d)+F(4,d*d))*B.sqrt_up(R.derivative_norm_squared(h)))
+            self.assertEqual(p["H2_upper"],
+              gamma_action_tail(J)*B.sqrt_up(R.norm_squared(
+                   B.derivative(B.derivative(h)))))
+        low=R.low_primitive(1)
+        v=R.authentic_Gamma_tail_action_dual(low,8)
+        self.assertEqual(v["route"],"H1_ONLY")
+        self.assertIsNone(v["H2_upper"])
+        with self.assertRaises(R.OriginalResidualError):
+            R.authentic_Gamma_tail_action_dual((F(1),),8)
+        self.assertFalse(src["original_S4_positive_proved"])
+
     def test_authentic_infinite_gamma_tail_lower_is_true_quadratic_form(self):
         from observational_succ.gamma_fredholm_completion import gamma_tail_H01_lower
         h=R.high_boundary_match(1)["h"]
