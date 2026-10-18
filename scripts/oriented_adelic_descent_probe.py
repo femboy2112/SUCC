@@ -19,6 +19,7 @@ from observational_succ.full_prime_tower_transport import (
     projective_from_tate_crosscheck, finite_tower_tate_crosscheck,
 )
 from observational_succ.connes_compact_open_test_bridge import LocalScaleBall
+from observational_succ.koszul_prime_cancellation import source_multidegree
 from observational_succ.mobius_tate_gamma_remainder import (
     finite_tate_gamma_remainder, exact_divisor_cancel,
 )
@@ -37,6 +38,8 @@ def receipt():
     tate=finite_tower_tate_crosscheck((2,3,5),2,5)
     ball=LocalScaleBall(3,Q(4),2)
     gamma=finite_tate_gamma_remainder((2,3,5),2)
+    k2=source_multidegree(4).theorem_receipt()
+    kh=source_multidegree(36).weighted_log_clock_factorization()
     if ball.trace_pairing!=Q(1,2) or not gamma["finite_places_exactly_cancel"]:
         raise AssertionError("Connes/Tate source-matched local contract failed")
     return {
@@ -59,6 +62,9 @@ def receipt():
         "genuine_padic_compact_open_trace_test":ball.trace_pairing,
         "Connes_test_reciprocal_half_density_invariant":
             ball.reciprocal_transport()["symmetric_half_density_invariant"],
+        "koszul_real_p_square_acyclic":k2["positive_multidegree_chain_contracted"],
+        "koszul_p_square_Euler":k2["signed_euler_characteristic"],
+        "positive_weighted_supercharge_log36":kh["weighted_Hodge_laplacian_symbol"],
         "mobius_divisor_source_n36":exact_divisor_cancel(36)["arithmetic_convolution_sum"],
         "Tate_finite_zeta_times_full_mobius_equals_one":gamma["finite_places_exactly_cancel"],
         "remaining_arch_Gamma_R_beta2_symbolic":gamma["remaining_archimedean_Gamma_R_monomial"],
