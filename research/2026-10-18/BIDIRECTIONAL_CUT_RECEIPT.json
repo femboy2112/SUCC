@@ -1,0 +1,87 @@
+{
+  "Basel_in_source_mean": "1/12 = (1/(2*pi^2))*zeta(2); independent carry proof also exists",
+  "RH_proved": false,
+  "domain": "exact rational clock source + classical Hilbert assertions",
+  "finite_orthogonal_ghost": {
+    "all_forward_readings_zero": true,
+    "surviving_residual_sq": "1",
+    "target_norm_sq": "1"
+  },
+  "mixed_signed_trial_1_minus_1_plus_1": {
+    "L2_tail_upper": "1/96",
+    "full_L2_lower": "1289593792387/1000000000000",
+    "full_L2_upper": "1291780006379/1000000000000",
+    "periodic_Haar_energy": "4/9"
+  },
+  "new_math": "Jordan J2 square root of periodic backward modular clock tail",
+  "pair_correlation_2_3": "19/72",
+  "source_passport": "mathematical declaration, not external attestation",
+  "tail_only_counterexample": {
+    "N": 1,
+    "coefficient": "3/2",
+    "periodic_optimum": "1/4",
+    "true_L2_residual_lower": "2567746987881/1000000000000",
+    "true_L2_residual_upper": "1284186873603/500000000000",
+    "verdict": "refutes tail optimum => full Hilbert optimum",
+    "zero_coefficient_true_L2_upper": "1"
+  },
+  "tail_optimal_1_to_8": [
+    {
+      "N": 1,
+      "S_N": "1",
+      "b_cut_obstruction": "9/4",
+      "full_minimum_not_implied": true,
+      "mean_square_minimum": "1/4"
+    },
+    {
+      "N": 2,
+      "S_N": "4/3",
+      "b_cut_obstruction": "36/25",
+      "full_minimum_not_implied": true,
+      "mean_square_minimum": "1/5"
+    },
+    {
+      "N": 3,
+      "S_N": "11/6",
+      "b_cut_obstruction": "144/169",
+      "full_minimum_not_implied": true,
+      "mean_square_minimum": "2/13"
+    },
+    {
+      "N": 4,
+      "S_N": "13/6",
+      "b_cut_obstruction": "16/25",
+      "full_minimum_not_implied": true,
+      "mean_square_minimum": "2/15"
+    },
+    {
+      "N": 5,
+      "S_N": "17/6",
+      "b_cut_obstruction": "144/361",
+      "full_minimum_not_implied": true,
+      "mean_square_minimum": "2/19"
+    },
+    {
+      "N": 6,
+      "S_N": "3",
+      "b_cut_obstruction": "9/25",
+      "full_minimum_not_implied": true,
+      "mean_square_minimum": "1/10"
+    },
+    {
+      "N": 7,
+      "S_N": "15/4",
+      "b_cut_obstruction": "576/2401",
+      "full_minimum_not_implied": true,
+      "mean_square_minimum": "4/49"
+    },
+    {
+      "N": 8,
+      "S_N": "49/12",
+      "b_cut_obstruction": "576/2809",
+      "full_minimum_not_implied": true,
+      "mean_square_minimum": "4/53"
+    }
+  ],
+  "unverified": "uniform global L2 Nyman--Beurling residual convergence"
+}
