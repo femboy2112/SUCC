@@ -159,9 +159,12 @@ def original_multimode_source_schur(count=2,J=12,M=100,P=18,eta=F(1,4),
         genuine_tail=R.authentic_Gamma_tail_energy_lower_matrix(
             tuple(samples[i]["primitive"] for i in ii),J)
         if G[0][1]!=G[1][0]:raise ArithmeticError("false source residual Gram symmetry")
+        tail_psd=(genuine_tail[0][0]>=0 and genuine_tail[1][1]>=0
+                  and genuine_tail[0][0]*genuine_tail[1][1]>=genuine_tail[0][1]**2)
+        tail_used=genuine_tail if tail_psd else ((F(0),F(0)),(F(0),F(0)))
         errorsq=sum((samples[i]["total_residual_error"]**2 for i in ii),F())
         lower=[[
-            Amid[i][j]+genuine_tail[i][j]-
+            Amid[i][j]+tail_used[i][j]-
             (sum(Arad[i]) if i==j else F()) -
             ((1+eta)*G[i][j]+((1+1/eta)*errorsq if i==j else F()))/kappa
             for j in range(2)] for i in range(2)]
@@ -177,6 +180,8 @@ def original_multimode_source_schur(count=2,J=12,M=100,P=18,eta=F(1,4),
                 tuple(tuple(tuple(map(str,A[i][j])) for j in range(2)) for i in range(2)),
             "genuine_complete_Gamma_positive_tail_Gram_lower":
                 tuple(tuple(str(genuine_tail[a][b]) for b in range(2)) for a in range(2)),
+            "source_tail_matrix_is_PSD":bool(tail_psd),
+            "source_tail_selected":"FOURIER_QUADRATIC_TAIL" if tail_psd else "POSITIVE_ZERO_TAIL",
             "surrogate_projected_action_Gram":
                 tuple(tuple(str(G[i][j]) for j in range(2)) for i in range(2)),
             "real_Gamma_tail_errors":tuple(str(samples[i]["real_Gamma_tail_error"]) for i in ii),
