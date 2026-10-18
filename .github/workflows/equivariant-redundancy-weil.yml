@@ -8,8 +8,10 @@ on:
     paths:
       - 'observational_succ/equivariant_koszul_descent.py'
       - 'observational_succ/observable_redundancy_forms.py'
+      - 'observational_succ/stabilized_exterior_source.py'
       - 'tests/test_equivariant_koszul_descent.py'
       - 'tests/test_observable_redundancy_forms.py'
+      - 'tests/test_stabilized_exterior_source.py'
       - 'research/2026-10-18/EQUIVARIANT_REDUNDANCY_WEIL.md'
       - 'docs/CLAIM_SUPPLEMENT_EQUIVARIANT_REDUNDANCY.md'
       - '.github/workflows/equivariant-redundancy-weil.yml'
@@ -37,12 +39,16 @@ jobs:
         run: |
           python -m compileall -q observational_succ/equivariant_koszul_descent.py
           python -m compileall -q observational_succ/observable_redundancy_forms.py
+          python -m compileall -q observational_succ/stabilized_exterior_source.py
           python -m compileall -q tests/test_equivariant_koszul_descent.py
           python -m compileall -q tests/test_observable_redundancy_forms.py
+          python -m compileall -q tests/test_stabilized_exterior_source.py
       - name: Koszul relative homology and source supertrace falsifiers
         run: python -m unittest discover -s tests -p 'test_equivariant_koszul_descent.py' -v
       - name: Exact null quotient and signed Schur correction controls
         run: python -m unittest discover -s tests -p 'test_observable_redundancy_forms.py' -v
+      - name: Stabilized SUCC-FUCC observability and activated ghosts
+        run: python -m unittest discover -s tests -p 'test_stabilized_exterior_source.py' -v
       - name: Inherited full-prime Koszul and original source tests
         run: python -m unittest discover -s tests -p 'test_koszul_prime_cancellation.py' -v
       - name: Independent provenance gate
