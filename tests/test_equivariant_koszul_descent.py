@@ -137,6 +137,8 @@ class EquivariantKoszulDescentTests(unittest.TestCase):
             self.assertEqual(r["normalized_trace_prime_log_coefficient"],F(1))
             self.assertEqual(r["symbolic_clock_result"],f"log({p})")
             self.assertTrue(r["source_prime_jet_energy_survives"])
+            self.assertTrue(r["isometric_source_inclusion"])
+            self.assertEqual(r["surjective_to_target_fiber"],p in source_multidegree(n).active)
             self.assertFalse(r["canonical_Connes_trace_proved"])
             if p not in source_multidegree(n).active:
                 self.assertEqual(r["target_wedge_dimension"],2*r["source_wedge_dimension"])
