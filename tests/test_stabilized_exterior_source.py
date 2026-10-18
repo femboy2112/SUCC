@@ -75,8 +75,8 @@ class StabilizedExteriorSourceTests(unittest.TestCase):
                 self.assertEqual({U:v for U,v in second.items() if v},{})
 
     def test_no_go_simultaneous_Q_and_Qadjoint_equivariance_with_arithmetic_H(self):
-        c=StabilizedExteriorCarrier((2,3))
-        for n in (1,2,3,6,9,17):
+        c=StabilizedExteriorCarrier((2,3,5,7))
+        for n in (1,2,3,4,5,6,7,8,9):
             r=c.source_shift_no_go(n)
             self.assertTrue(r["SUCC_isometry_on_common_fock"])
             self.assertTrue(r["H_cannot_commute_with_S"])
@@ -92,6 +92,8 @@ class StabilizedExteriorSourceTests(unittest.TestCase):
         self.assertTrue(r["first_ghost_reactivated_by_prime_FUCC"]["newly_observable"])
         self.assertFalse(r["global_Hodge_Weil_form_identified"])
         self.assertFalse(r["RH_proved"])
+        with self.assertRaises(StabilizedCarrierError):
+            StabilizedExteriorCarrier((2,3)).source_shift_no_go(6)
 
     def test_reject_fake_ghost_sources_and_malformed_steps(self):
         for primes in ((6,),(2,2),(3,2),(True,),(2,)*9):
