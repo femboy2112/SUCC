@@ -117,3 +117,29 @@ Hostile controls: wrong SHA, fake composite n=6, altered alpha step 4, invalid r
 **Next verdict-changing task:** transfer the H1 boundary control through the actual high-response Douglas/Riesz domain and quantify a source-signed S4 change, or produce a counterexample showing the derivative-space bound is insufficient. Full source Gamma/prime/pole/contact inputs remain mandatory.
 
 **Prior art:** Carleman norm and spectral Mellin representation are classical (Pushnitski/Yafaev 2015, https://doi.org/10.1016/j.jfa.2014.12.005; https://link.springer.com/article/10.1007/s13373-013-0044-0). A separate originality literature audit is required before any academic priority claim for the SUCC-specific source embedding.
+
+## 8. Stronger exact corollary: the full essential spectral band and phase transition (IGC-06)
+
+The sharp essential norm is only the outer radius of a stronger spectral statement. The Carleman corner, after the Mellin/logarithmic coordinate change, becomes convolution by
+
+    h(t)=1/[4*cosh(t/2)].
+
+Its Fourier multiplier is exactly
+
+    m(tau)=pi/[2*cosh(pi*tau)], tau in R.
+
+For each fixed tau and each given nonempty source corner, take normalized plane-wave logarithmic plateaus of increasing length, transported increasingly far into the negative-log endpoint. They are weakly null, stay inside the singular corner, and are approximate eigenfunctions with multiplier m(tau) because h is integrable and translation invariant on the full log line. Take the appropriate +/- i superpositions of edge and center packet components for the self-adjoint operator i D_inf. Compact source remainders vanish on these Weyl sequences. Reflection-symmetric and antisymmetric copies keep them inside EACH of the two invariant parity sectors.
+
+As tau varies, m(tau) takes every value in (0,pi/2], with zero in its closure; the two +/- boundary orientations supply both signs. Weyl's criterion yields the entire interval [-pi/2,pi/2] INSIDE the essential spectrum. Conversely the already-proved sharp essential norm bounds the essential spectrum inside that same interval. Consequently
+
+    sigma_essential(i D_inf | parity_even)
+      = sigma_essential(i D_inf | parity_odd)
+      = [-pi/2, pi/2].                          (H)
+
+This is a theorem for the BOUNDED limiting commutator D_inf, not for the unbounded completed Gamma generator. It is classical Carleman/Mellin machinery embedded in the genuine first-prime boundary, and is not a proof of RH.
+
+**Source-independent boundary-threshold comparison.** More generally fix a=1/2, keep the same true real-Gamma rung schedule, and vary a COMPARISON lag b in (1/2,1), explicitly NOT replacing the original log2 in the zeta source. The two nonempty corners persist, however small, so equations (C) and (H) remain EXACTLY unchanged for every fixed b in that open range. At b>=1=2a the compressed shift A_b is zero, hence the commutator is identically zero and its essential spectrum is {0}. The essential spectral band thus jumps discontinuously at the coverage threshold, even though smooth source-test bilinear probes can behave more regularly. The code's rational comparison-b witnesses b=3/4, 999/1000 and 999999/1000000 retain a strict dyadic lower >=3/32 while b=1 yields the trivial zero-shift case.
+
+This is another concrete instance of the user's distinction: **the structural boundary law and essential band are transport-invariant throughout one source-geometry phase, while individual values and supports change with the carrier.** Crossing the structural phase threshold changes the law itself. The original zeta application remains exclusively b=log2, not the comparison b mutation.
+
+**Proof status:** IGC-06 is PAPER PROVED by Mellin spectral multiplier, Weyl weakly null sequences and the previously established compact-equivalence of edge blocks; the finite rational threshold tests are a distinct negative/positive control. No Lean kernel formalization of essential spectrum or source-topology phase transition is claimed.
