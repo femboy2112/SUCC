@@ -74,7 +74,7 @@ def analytic_gamma_kernel_window(s, J):
     finite = [exp_negative_interval(alpha(j)*s) for j in range(J)]
     flo = sum((v[0] for v in finite),F(0))
     fhi = sum((v[1] for v in finite),F(0))
-    if not inf_lo <= inf_hi and flo <= fhi:
+    if not (inf_lo <= inf_hi and flo <= fhi):
         raise ArithmeticError("invalid Gamma source series bracket")
     return {"s":str(s),"J":J,
        "infinite_exact_series_lower":str(inf_lo),
