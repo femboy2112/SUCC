@@ -108,7 +108,7 @@ The code checks rational t, integer-square-root enclosure, and strictly decreasi
 | IGC-02 bounded skew strong L2 limit | PAPER PROVED using Carleman, dominated convergence, source-specific corner geometry |
 | IGC-03 essential norm exactly pi/2 in both parity sectors | PAPER PROVED with Mellin + compact cutoffs; independent rational >=3/32 no-go |
 | IGC-04 H1_0 x H1_0 tail O(J^-3/2) | PAPER PROVED with endpoint traces; exact rational majorant regression |
-| IGC-05 geometric telescoping and authentic source spacing | Lean 4.14 FINITE KERNEL only; Carleman NOT formalized |
+| IGC-05 authentic source-index spacing and finite recursive prefix | Lean 4.14 FINITE KERNEL only; exact rational Python checks the closed geometric ratio; Carleman NOT formalized |
 | Entire unbounded operator commutator identity | UNVERIFIED; not assumed |
 | Authentic source S4 positivity / all-radius Weil / RH | OPEN; RH PROVED: NO |
 
