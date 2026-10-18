@@ -136,11 +136,13 @@ def original_multimode_source_schur(count=2,J=12,M=100,P=18,eta=F(1,4),
         piece=R.exact_piecewise_primitive_action(h,J,M,P,params)
         qp=R.projected_piece_gram(piece["pieces"],piece["pieces"])
         if qp<0:raise ArithmeticError("actual Q_E projected action not PSD")
-        tail=B.gamma_action_tail(J)*B.sqrt_up(R.norm_squared(B.derivative(B.derivative(h))))
+        tail_pack=R.authentic_Gamma_tail_action_dual(h,J)
+        tail=tail_pack["selected"]
         er=piece["finite_source_action_error_upper"]
         samples[i]={"coeff":coeff,"derivative_coeff":dercoeff,
             "primitive":h,"action_piece":piece,"approx_Q_norm_sq":qp,
             "source_action_analytic_error":er,"real_Gamma_tail_error":tail,
+            "real_Gamma_tail_selected_route":tail_pack["route"],
             "total_residual_error":er+tail}
     groups={}
     for label,ii,kappa in (("odd_derivative",(1,3),F(63,500)),
@@ -185,6 +187,7 @@ def original_multimode_source_schur(count=2,J=12,M=100,P=18,eta=F(1,4),
             "surrogate_projected_action_Gram":
                 tuple(tuple(str(G[i][j]) for j in range(2)) for i in range(2)),
             "real_Gamma_tail_errors":tuple(str(samples[i]["real_Gamma_tail_error"]) for i in ii),
+            "real_Gamma_tail_routes":tuple(samples[i]["real_Gamma_tail_selected_route"] for i in ii),
             "source_analytic_action_errors":tuple(str(samples[i]["source_action_analytic_error"]) for i in ii),
             "source_S4_lower":
                 tuple(tuple(str(lower[i][j]) for j in range(2)) for i in range(2)),
