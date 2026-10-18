@@ -172,3 +172,33 @@ def original_source_infinite_gamma_contract():
             "infinite_carleman_boundary":"PAPER_PROVED_NOT_ZERO_INPUT",
             "essential_norm_pi_over_two":"PAPER_PROVED_WITH_MELLIN",
             "source_S4_positive_proved":False,"RH_proved":False}
+
+
+def comparison_prime_threshold_packet(b, cutoff):
+    """A comparison lag parameter, NOT the fixed genuine b=log 2 source.
+
+    Every 1/2<b<1 has nonempty L/C/R and paper essential norm pi/2;
+    at b>=1 the compressed symmetric shift vanishes identically.
+    The dyadic lower bound survives as b approaches 1 from below.
+    """
+    b, J = rational(b), integer(cutoff)
+    if b <= F(1,2):
+        raise GammaTowerError("two-edge theorem requires b>1/2")
+    if b >= 1:
+        return {"shift":str(b),"cutoff":J,
+                "comparison_not_original_log2":True,
+                "nontrivial_edges":False,
+                "limit_boundary_essential_norm":"0",
+                "compressed_prime_shift_zero":True,"RH_proved":False}
+    ell,center = 1-b,2*b-1
+    delta = min(F(1,32*(J+1)),ell/4,center/4)
+    floor = F(1,8)-(J+F(1,4))*delta
+    if not (delta>0 and 2*delta<ell and 2*delta<center
+            and floor>=F(3,32)):
+        raise ArithmeticError("comparison prime-threshold corner fails")
+    return {"shift":str(b),"cutoff":J,
+            "comparison_not_original_log2":True,
+            "nontrivial_edges":True,"corner_delta":str(delta),
+            "nonnorm_rational_floor":str(floor),
+            "limit_boundary_essential_norm":"pi/2 (PAPER theorem)",
+            "compressed_prime_shift_zero":False,"RH_proved":False}
