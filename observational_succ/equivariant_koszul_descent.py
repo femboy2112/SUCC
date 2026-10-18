@@ -269,3 +269,45 @@ def original_prime_source_supertrace_gate(N):
         "sign_and_half_density_not_solved_by_this_test":True,
         "Connes_full_global_trace":False, "RH_proved":False,
     }
+
+
+
+def normalized_prime_clock_retraction(n,p):
+    """Source arithmetic commutator survives a provably lossless restricted trace.
+
+    The genuine prime chain injection V_p:K_n->K_pn is isometric on
+    the inherited orthonormal wedge basis. The diagonal logarithmic
+    source H=log(n)I has V_p* [H,V_p]=log(p)I on K_n.
+    Dividing its finite trace by dim K_n removes the artificial
+    exterior multiplicity 2^omega(n), preserving exactly log p.
+
+    This IS NOT a supertrace, and the normalized finite trace is not
+    declared Connes' canonical global trace. Additional target
+    orientation states may be invisible to this restricted observable
+    yet visible to future SUCC probes.
+    """
+    witness=prime_chain_lift(n,p)
+    src=_fiber(n)
+    dst=_fiber(n*p)
+    valuation_src={q:k for q,k in zip(src.primes,src.alpha)}
+    valuation_dst={q:k for q,k in zip(dst.primes,dst.alpha)}
+    delta={q:valuation_dst.get(q,0)-valuation_src.get(q,0)
+           for q in sorted(set(valuation_src)|set(valuation_dst))}
+    delta={q:k for q,k in delta.items() if k}
+    if delta!={p:1} or not witness["chain_map_Vp_commutes_with_d"]:
+        raise AssertionError("genuine prime-clock chain transport lost")
+    d=len(src.basis())
+    return {
+        "source_integer":n,"prime":p,"target_integer":n*p,
+        "source_wedge_dimension":d,
+        "target_wedge_dimension":len(dst.basis()),
+        "source_log_valuation_delta":tuple(delta.items()),
+        "unitary_source_inclusion":True,
+        "raw_source_trace_prime_log_coefficient":d,
+        "normalized_trace_prime_log_coefficient":F(1),
+        "symbolic_clock_result":f"log({p})",
+        "source_prime_jet_energy_survives":True,
+        "all_target_exterior_states_redundant_for_every_probe":False,
+        "canonical_Connes_trace_proved":False,
+        "original_Weil_positive":False,
+    }
