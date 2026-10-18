@@ -168,6 +168,12 @@ The same Clifford identity proves
 
 Therefore the known SUCC logarithmic arithmetic generator H|n>=log(n)|n> has a rigorous graded source-positive factorization in an enlarged exterior Hilbert carrier. The relative signs are load-bearing: they force the off-diagonal cross terms to vanish. This is NOT the original polynomial-R-linear Koszul differential (weights depend on each n), and it is not the signed Weil quadratic form or RH. It is an exact construction of a distinct positive source operator, with the missing Weil identification clearly visible.
 
+There is an honest infinite arithmetic Hilbert-carrier completion of this AUXILIARY construction. Let E_n be the finite-dimensional exterior fiber with basis indexed by subsets of the DISTINCT primes dividing n, and let H_aux=direct_sum_{n>=1} E_n. Put Q=direct_sum Q_n initially on the dense finite-integer-support core. The direct sum of finite-dimensional Q_n operators is a closable densely defined operator; the closure's adjoint is the direct sum of Q_n* with its natural domain. On the common finite-support core one has Q²=0 and {Q,Q*}=H, where H acts diagonally by log n. The positive quadratic form extends to D(H^(1/2)) and satisfies
+
+    ||Q psi||² + ||Q* psi||² = sum_n log(n) ||psi_n||² >= 0.
+
+The standard diagonal multiplication operator H is positive self-adjoint on its maximal domain, so the core identity determines an actual closed positive quadratic form; it does NOT produce the completed Weil form. This is a scoped all-integer Hilbert realization, not a mathematical global adelic/archimedean trace or RH proof.
+
 Independent exact rational Clifford/matrix controls verify {iota_p,epsilon_q}=delta_pq and a fully weighted example with weights 2,3,5 producing Laplacian (2²+3²+5²)I=38I. The log weights are handled symbolically, no fabricated floating interval certification. The source integer n can be recovered from unique factorization for every tested multidegree.
 
 ## OM-08: The remaining authenticated RH-hard square (UNVERIFIED)
