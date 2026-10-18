@@ -4,7 +4,7 @@ from fractions import Fraction as F
 from observational_succ.clamped_k_residual_bridge import (
  KResidualError, checked_trial, CLAMPED, gamma_action_tail,
  low_primitive_norm_sq, sqrt_up, conditional_schur_residual_envelope,
- authentic_clamped_signed_source, interval_form,
+ authentic_clamped_signed_source, authenticated_two_parity_clamped_K_margin, interval_form,
 )
 
 class ExactClampedJacobi(unittest.TestCase):
@@ -103,6 +103,21 @@ class ActualOriginalSignedSuzuki(unittest.TestCase):
     self.assertGreaterEqual(F(m["completed_signed_interval"][1]),
                             F(m["genuine_finite_signed_interval"][1]))
   self.assertFalse(s["RH_proved"])
+ def test_original_signed_positive_entire_two_dimensional_K_half_margin(self):
+  data=authenticated_two_parity_clamped_K_margin(J=8)
+  self.assertEqual(data["original_source_sha"],"0cc8510b71d178fc79e8d410a86d8b6014cf9178")
+  self.assertEqual(F(data["entire_two_dimensional_clamped_high_span_K_gap_at_least"]),F(1,2))
+  self.assertTrue(data["exact_reflection_opposite_parity_cross_zero"])
+  self.assertFalse(data["full_high_space_K_gap_improved"])
+  for name,packet in data["independent_parity_directions"].items():
+   self.assertGreater(F(packet["strict_above_half_K_margin"]),0)
+   self.assertGreater(F(packet["completed_signed_source_lower_by_positive_Gamma_tail"]),
+                      F(1,2)*F(packet["primitive_original_K_norm_squared"]))
+  self.assertFalse(data["original_S4_positive_proved"])
+  self.assertFalse(data["RH_proved"])
+  with self.assertRaises(KResidualError):
+   authenticated_two_parity_clamped_K_margin(7)
+
  def test_invalid_Gamma_cutoff_rejected(self):
   for bad in (0,76,1.1,False):
    with self.assertRaises(KResidualError):authentic_clamped_signed_source(J=bad)
