@@ -194,3 +194,78 @@ This package sharpens the earlier draft Connes interface. The next serious gate 
 - Python tests are finite calibration of stated proved identities, not their proof. An isolated local run passed ten purely arithmetic groups; an additional integration cross-oracle needs the authentic previous branch module, so only CI on the **exact final GitHub head** can certify integrated execution. Record its actual status rather than assuming success.
 
 **Citations / provenance:** Smith's classical GCD matrix determinant (1876) and later GCD Gram theory; Connes–Consani *Weil positivity and Trace formula: the archimedean place*, arXiv:2006.13771 (restricted Sonin-compressed scaling positivity); prior SUCC O1–O8 dossier research/2026-10-15/ONE_OBJECT_TATE_WEIL_SUZUKI_CONNES.md and COT-01–08. **New academic priority NOT asserted. RH PROVED: NO.**
+
+
+## MOG-10. Repairing the completion diagnosis: p+1 is a genuine local projective normalization (PROVED finite; CLASSICAL infinite extension)
+
+The earlier MOG-09 no-go is **strictly representation-relative**: it rules out the *unnormalized* Euler vacuum product as a strong vector in the standard \(\ell^2(\mathbb N)\) with fixed prime-empty reference. It neither forbids normalized compatible states, an infinite tensor-product/GNS Hilbert space, nor a different analytically regularized limit. Calling it a global “failure of completion” without this qualification would be misleading.
+
+### Arithmetic algebra, local geometry and chosen orientation
+
+For every genuine prime p,
+\[
+1+\frac1p=\frac{p+1}{p}=
+\frac{\#\mathbb P^1(\mathbb F_p)}{\#\mathbb A^1(\mathbb F_p)}.
+\]
+Indeed \(\mathbb P^1(\mathbb F_p)=\mathbb F_p\cup\{\infty\}\) has exactly p+1 directions. The Bruhat–Tits tree for \(\mathrm{PGL}_2(\mathbb Q_p)\) is \((p+1)\)-regular: upon selecting one end at infinity, each vertex has one edge toward the end and p edges away. This is a genuine classical geometric **correspondence of multiplicities**, not an identification of Connes' \(\mathrm{GL}_1\) idèle-class dynamical system with a \(\mathrm{PGL}_2\) tree.
+
+In the Hilbert space with basis \(\{|a\rangle:a\in\mathbb F_p\}\cup\{|\infty\rangle\}\), group affine directions as
+\[
+|\mathrm{aff}_p\rangle=p^{-1/2}\sum_{a\in\mathbb F_p}|a\rangle.
+\]
+Then the exact signed unit vector
+\[
+\boxed{
+|\psi_p^-\rangle=
+\frac{\sum_a|a\rangle-|\infty\rangle}{\sqrt{p+1}}
+=\sqrt{\frac{p}{p+1}}|\mathrm{aff}_p\rangle
+-\frac1{\sqrt{p+1}}|\infty\rangle
+=\frac{|\mathrm{aff}_p\rangle-p^{-1/2}|\infty\rangle}
+{\sqrt{1+p^{-1}}}
+}
+\]
+is exactly the normalized local Möbius **vacuum-sector** factor (under the explicit 2-sector identification). Its squared weights are p/(p+1) and 1/(p+1), reflecting p versus 1. The local sign \(-1\) is a declared Möbius phase, **not** derived from the combinatorial counting or from the choice of an end: replacing it by \(+1\) leaves all squared weights unchanged. A source-sensitive interferometric/trace test would have to distinguish those two alternatives. The two-sector identification does NOT itself intertwine the full FUCC shift \(V_p\) on every valuation level.
+
+### Compatible finite cylinders give a legitimate global normalized state
+
+For any finite genuine prime set F, define the two-sector tensor vector \(\Psi_F=\bigotimes_{p\in F}\psi_p^-\), of exact norm one. For a subset S⊆F, put d=∏_{p∈S}p and \(Z_F=\prod_{p\in F}(1+1/p)\); its coefficient has squared magnitude
+\[
+\boxed{\mathbb P_F(S)=\frac{1}{d\,Z_F}
+=\prod_{p\in S}\frac1{p+1}\prod_{p\in F\setminus S}\frac p{p+1}},
+\qquad\mathrm{phase}=\mu(d).
+\]
+These cylinder distributions are **exactly projectively compatible**: marginalizing from G to F⊆G returns \(\mathbb P_F\), since each omitted prime's probabilities sum to 1. In fact the stronger *density matrix* compatibility also holds:
+\[
+\mathrm{Tr}_{G\setminus F}(|\Psi_G\rangle\langle\Psi_G|)
+=|\Psi_F\rangle\langle\Psi_F|.
+\]
+Thus the finite vectors define a normalized pure product state on the quasi-local tensor algebra, and its GNS/incomplete tensor-product Hilbert representation exists. This is a **legitimate alternative global completion**. It is not a claim that the vacuum lies in the initial \(\ell^2(\mathbb N)\) representation. The associated classical Kolmogorov product measure on \(\{0,1\}^{\mathbb P}\) has independent inclusion probabilities \(q_p=1/(p+1)\).
+
+Since \(\sum_p1/(p+1)=\infty\) (it differs from \(\sum_p1/p\) by a convergent sum), the second Borel–Cantelli lemma gives infinitely many included primes almost surely. Thus this global **probability carrier is supported on infinite prime subsets**, not on finite natural-number labels. That explicitly records the cost of changing from \(\ell^2(\mathbb N)\) to the new completed carrier. In the old representation, the normalized \(\Psi_F\) embedded with empty unobserved primes still converges weakly to zero, not strongly: every fixed finite-squarefree label's probability tends to zero. There is no contradiction between these statements.
+
+### A second, analytically normalized global answer: distinct from the product state
+
+For Re(s)>1, independently of the above probabilistic Hilbert completion,
+\[
+Z(s)=\prod_p(1+p^{-s})
+=\frac{\zeta(s)}{\zeta(2s)}
+=\sum_{\substack{n\ge1\\n\text{ squarefree}}}n^{-s}.
+\]
+At its boundary, the **global analytic residue** is
+\[
+\boxed{\lim_{s\to1^+}(s-1)Z(s)=\frac1{\zeta(2)}=\frac6{\pi^2}.}
+\]
+This analytically normalized quantity is not the unnormalized infinite vector, nor a replacement for its local projective cylinder state. Under a prime cutoff x, a different renormalization is \(\prod_{p\le x}(1+1/p)/\log x\to (6/\pi^2)e^\gamma\) by the classical Mertens theorem: the differing \(e^\gamma\) reflects the normalization scheme. **Normalization is essential but its value is not source-free or automatically unique.**
+
+For the standard completed zeta, \(\Gamma_{\mathbb R}(1)=\pi^{-1/2}\Gamma(1/2)=1\); it does not itself cancel the pole at s=1. The analytic pole cancellation uses \(s-1\), and \(\xi(s)=\frac12s(s-1)\Gamma_{\mathbb R}(s)\zeta(s)\) incorporates that global correction. The **projective point** \(\infty\in\mathbb P^1(\mathbb F_p)\), the **boundary end** of the local Bruhat–Tits tree, and the **Archimedean place** of \(\mathbb Q\) are three different mathematical objects; equal wording must not collapse them.
+
+### Research verdict and next falsifiers
+
+This repairs the misleading global-no-completion inference while preserving the correctly proved old-\(\ell^2\) no-go. We now have two rigorous completion mechanisms (quasi-local normalized product state; analytic s→1 residue), a natural local p:1 orientation geometry, and an exact sign mutation. **Neither state is shown to carry Connes' global trace, Tate's original all-place Schwartz–Bruhat distribution, Suzuki's screw form, or Weil positivity.**
+
+The next discriminating instruments should test:
+1. A source-derived, representation-theoretic map from the local \(\mathrm{PGL}_2\) p+1 projective/Hecke sector to the actual \(\mathrm{GL}_1\) idèle dilation, preserving the phase and full prime-power orbit weight, not just the 0/1 valuation vacuum.
+2. Both ± signs under phase-sensitive tests; probabilities alone cannot select the arithmetic Möbius sign.
+3. The exact Archimedean Gamma/pole/contact with a declared normalization scheme, including test-space topology, gamma tails and all primes, before asserting a Connes/Weil trace identity.
+
+**References:** classical Bruhat–Tits tree construction and p+1 valency, e.g. [J. Raimbault, PGL2 tree and Hecke operators](https://perso.math.univ-toulouse.fr/jraimbau/2016/04/25/arbre-du-groupe-pgl2-et-operateurs-de-hecke/); squarefree Dirichlet Euler product e.g. [D. Burde, Analytic Number Theory notes, §3.2](https://homepage.univie.ac.at/dietrich.burde/papers/burde_81_annt_course.pdf). All-P cylinder extension/Borel–Cantelli, Mertens' product theorem, and Γ identities are attributed classical inputs. Claims originate in project synthesis, not asserted academic priority. **RH PROVED: NO.**
