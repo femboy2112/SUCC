@@ -208,6 +208,26 @@ class MobiusIndexAtInfinityTests(unittest.TestCase):
                 prev=x["fixed_basis_probability"]
         self.assertEqual(finite_normalized_trace_escape(2,11)["fixed_basis_probability"],0)
 
+    def test_deterministic_source_receipt_from_external_workdir(self):
+        import os
+        import json
+        import subprocess
+        import sys
+        from pathlib import Path
+        root=Path(__file__).resolve().parents[1]
+        run=subprocess.run(
+            [sys.executable,str(root/'scripts/mobius_index_infinity_probe.py')],
+            cwd='/',env={**os.environ,'PYTHONPATH':''},
+            capture_output=True,text=True,timeout=25,check=False,
+        )
+        self.assertEqual(run.returncode,0,run.stderr)
+        data=json.loads(run.stdout)
+        self.assertEqual(data['prime_sieve_source_count_at_210'],56)
+        self.assertEqual(data['true_Connes_Cp_squared'],'1/8')
+        self.assertEqual(data['physical_cut_L30_naive_shift_norm_squared_strict_lower'],200)
+        self.assertFalse(data['RH_proved'])
+        self.assertFalse(data['source_signed_completed_Weil_distribution_equated'])
+
     def test_source_type_and_horizon_rejections(self):
         with self.assertRaises(IndexBoundaryError):
             squarefree_mobius_tape((3,2))
