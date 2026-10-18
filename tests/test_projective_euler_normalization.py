@@ -46,7 +46,9 @@ class ProjectiveEulerNormalizationTests(unittest.TestCase):
             state=ProjectiveCylinder(tuple(OrientedPrime(p) for p in ps))
             witness=mobius_euler_vacuum_certificate(ps)
             self.assertEqual(state.raw_norm_squared,witness['vacuum_norm_squared'])
-            self.assertEqual(state.squarefree_coefficients(),witness['squarefree_vacuum_terms'])
+            expected=tuple((d,sign,squared/witness['vacuum_norm_squared'])
+                           for d,sign,squared in witness['squarefree_vacuum_terms'])
+            self.assertEqual(state.squarefree_coefficients(),expected)
             self.assertEqual(sum((v for v,_ in state.distribution().values()),Q(0)),1)
         self.assertEqual(ProjectiveCylinder(tuple(OrientedPrime(p) for p in (2,3,5))).raw_norm_squared,Q(12,5))
 
