@@ -133,3 +133,34 @@ The exact module observational_succ/gaussian_euler_shell_controls.py implements 
 **New-to-project structural answer:** at the uniquely ramified p=2, the ordinary ζ_Q and Gaussian ζ_{Q(i)} *finite local prime-power distribution coefficients* agree in **all** k (not only k=1). But Gaussian and rational GLOBAL completed sources differ: ζ_{Q(i)} has a complex Archimedean Gamma factor, different conductor/discriminant, other finite-place multiplicities and poles/contact. This is NOT a signed-Weil intertwinement nor a proof of ζ RH via Gaussian primes.
 
 External classical source verification: CMU number theory notes, Gaussian prime splitting, chapter 10 https://www.math.cmu.edu/users/vahagn/lecture_notes/numbertheory.pdf ; Dedekind-zeta local factor descriptions https://encyclopediaofmath.org/wiki/Dedekind_zeta-function . See also the already active SUCC Gaussian walk/coset research branches for independent arithmetic controls, not imported as source for this proof.
+
+
+## 8. New *actual* infinite-source two-dimensional high-sector margin (GKR-11)
+
+An unexpected stronger theorem follows from the original signed J=8 source entries—not from invented positivity.
+
+Let F_e=(1−4t²)^2 P_4^(2,2)(2t) (even primitive, odd derivative) and F_o=(1−4t²)^2 P_5^(2,2)(2t) (odd primitive, even derivative). Both are original lawful high trial functions. The original signed SOURCE, including authentic prime2 half-density, contact, one real-Gamma prefix and BOTH completed pole channels, is exactly reflection invariant, so its mixed F_e/F_o energy is ZERO. Their primitive K inner product is also zero by parity.
+
+The SHA-authenticated outward-rational J8 source evaluates (approximate displayed decimals only; code stores exact rational intervals)
+
+    q_G8(F_o) > 0.1248864316290, ||F_o||²=56448/230945 ≈0.2444218320,
+    q_G8(F_e) > 0.1622194761577, ||F_e||²=640/2431 ≈0.2632661456.
+
+Each displayed lower is from the actual original signed matrix entries, not a float sign test. Both satisfy the STRICT exact inequalities
+
+    q_G8(F_o) > (1/2)||F_o||²,
+    q_G8(F_e) > (1/2)||F_e||².
+
+Every genuinely omitted real-Gamma rung is positive semidefinite on the original primitive source, with all non-Gamma channels unchanged, so q_G∞>=q_G8. Reflection parity splits the span exactly. Therefore for every pair of real c_e,c_o,
+
+    boxed:
+    q_G∞(c_e F_e+c_o F_o)
+       > (1/2)*(c_e²||F_e||²+c_o²||F_o||²)
+       = (1/2)||c_e F_e+c_o F_o||²
+    whenever (c_e,c_o) != (0,0).
+
+This is a **genuine signed infinite-source coercivity theorem on the full TWO-DIMENSIONAL clamped HIGH SUBSPACE**. It is NOT a proof of a 1/2 global K-gap, an invariant/eigenspace of G, the true D4 high resolvent, positive S4, or RH. A finite positive compression cannot furnish a global Loewner surplus, as independently refuted in existing SUCC PR #155/#161.
+
+This numerical rational constant 1/2 is merely a valid convenient **K-margin floor**. It is mathematically unrelated to the Weil exponent 1/2 or the Gaussian norm-2 half-density unless an additional source-identification theorem is proved. The source adapter explicitly labels this boundary. Exact-head GitHub CI requires both whole-parity source inequalities and rejects a source-mutant prime tape or wrong J.
+
+**Sharper next probe:** use the two clamped high vectors as source-verified trial directions in the corrected K-Hilbert variational residual identity. To CERTIFY S4 positivity, however, one must source-evaluate the FULL continuum action residual, not only these strictly positive source energies. A separate H_J action integrator / analytic residual tail will be needed, ideally independently transported from PR #155 and checked against the original SHA.
