@@ -1,0 +1,65 @@
+name: Authentic infinite Gamma Carleman and H01 theorem controls
+on:
+  push:
+    branches: ['research/infinite-gamma-carleman-*']
+  pull_request:
+    paths:
+      - 'observational_succ/infinite_gamma_carleman.py'
+      - 'tests/test_infinite_gamma_carleman.py'
+      - 'scripts/infinite_gamma_boundary_probe.py'
+      - 'formal/InfiniteGammaGeometric.lean'
+      - '.github/workflows/infinite-gamma-carleman.yml'
+permissions:
+  contents: read
+jobs:
+  source-rational:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install actual source modules
+        run: python -m pip install -e '.[test]'
+      - name: Check frozen source Git blob provenance
+        run: python scripts/verify_provenance.py
+      - name: Run exact finite and source-linked tests, zero skips
+        run: |
+          python -m unittest discover -s tests -p 'test_infinite_gamma_carleman.py' -v > "$RUNNER_TEMP/tower-tests.txt" 2>&1 || { cat "$RUNNER_TEMP/tower-tests.txt"; exit 1; }
+          cat "$RUNNER_TEMP/tower-tests.txt"
+          grep -q '^OK$' "$RUNNER_TEMP/tower-tests.txt"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/tower-tests.txt"; then exit 1; fi
+      - name: Verify independent exact rational packets, outward series, and source
+        run: |
+          PYTHONPATH=. python scripts/infinite_gamma_boundary_probe.py --verify
+          PYTHONPATH=. python scripts/infinite_gamma_boundary_probe.py --source --verify
+      - name: Parent real source boundary/finite Gamma packet holdouts
+        run: |
+          python -m unittest discover -s tests -p 'test_transported_gamma_boundary.py' -q
+          python -m unittest discover -s tests -p 'test_gamma_packet_certificates.py' -q
+  finite-lean-kernel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned standalone Lean 4
+        run: |
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+      - name: Kernel check source step and finite geometric lemma
+        run: |
+          "$HOME/.elan/bin/lean" --version
+          "$HOME/.elan/bin/lean" formal/InfiniteGammaGeometric.lean
+      - name: Reject proof bypass
+        run: |
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          s=Path('formal/InfiniteGammaGeometric.lean').read_text()
+          core=s.split('namespace ObservationalSUCC.InfiniteGammaGeometric',1)[1]
+          assert re.search(r'\b(sorry|admit|axiom|unsafe|native_decide)\b',core) is None
+          PY
