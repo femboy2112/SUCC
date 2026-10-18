@@ -14,7 +14,7 @@ class ExactClampedJacobi(unittest.TestCase):
    self.assertTrue(a["source_Q4_constraints"])
    self.assertTrue(a["zero_value_AND_zero_derivative_traces"])
    self.assertFalse(a["RH_proved"])
-  self.assertEqual(checked_trial("odd_derivative")["high_legendre_modes"],
+  self.assertEqual(checked_trial("odd_derivative")["legendre_high_modes"],
                    ((5,"-240/13"),(7,"240/13")))
   self.assertEqual(checked_trial("even_derivative")["high_legendre_modes"],
                    ((6,"-112/5"),(8,"112/5")))
@@ -39,8 +39,8 @@ class ExactClampedJacobi(unittest.TestCase):
                 for d in range(d0,d0+4*15,4)),F(0))
     self.assertLessEqual(finite,xi*xi*bound)
   self.assertGreater(gamma_action_tail(20),gamma_action_tail(64))
-  self.assertEqual(sqrt_up(F(4,9),3),F(667,1000))
-  self.assertEqual(sqrt_up(F(1,4),3),F(1,2))
+  self.assertEqual(sqrt_up(F(4,9),1000),F(667,1000))
+  self.assertEqual(sqrt_up(F(1,4),1000),F(1,2))
 
  def test_original_K_primitive_relative_not_derivative_I(self):
   a=conditional_schur_residual_envelope(F(63,500),
@@ -75,7 +75,7 @@ class ExactClampedJacobi(unittest.TestCase):
   # This is a known two-completion exact countermodel, not original source.
   for bad in (False,3.4,"3"):
    with self.assertRaises(KResidualError):gamma_action_tail(bad)
-  for bad in (True,0,-1.5):
+  for bad in (True,"0",-1.5):
    with self.assertRaises(KResidualError):sqrt_up(bad)
   with self.assertRaises(KResidualError):checked_trial("fake")
   with self.assertRaises(KResidualError):
