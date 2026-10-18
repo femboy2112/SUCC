@@ -21,6 +21,8 @@ from fractions import Fraction as F
 from itertools import combinations
 from math import isqrt
 
+from .koszul_prime_cancellation import source_multidegree
+
 
 class StabilizedCarrierError(ValueError):
     """Unsourceful ghost carrier, fake prime or unsupported finite action."""
@@ -184,6 +186,9 @@ class StabilizedExteriorCarrier:
         _positive(n)
         if n==100_000:
             raise StabilizedCarrierError("n+1 unavailable")
+        all_source_primes=set(source_multidegree(n).active)|set(source_multidegree(n+1).active)
+        if not all_source_primes.issubset(set(self.primes)):
+            raise StabilizedCarrierError("both source log-clock energies require a complete declared finite prime atlas")
         return {
             "source_n":n, "target_n":n+1,
             "formal_H_source":f"log({n})","formal_H_target":f"log({n+1})",
