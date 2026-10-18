@@ -419,6 +419,16 @@ def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
                  tuple(map(str,pairs[a][b])) for b in range(2)) for a in range(2)),
             "surrogate_QE_action_residual_gram_exact":
                 tuple(tuple(str(qm[a][b]) for b in range(2)) for a in range(2)),
+            "source_qJ_original_diagonal_lower":
+                tuple(str(pairs[a][a][0]) for a in range(2)),
+            "source_qJ_original_diagonal_upper":
+                tuple(str(pairs[a][a][1]) for a in range(2)),
+            "surrogate_projected_action_diagonal_squared":
+                tuple(str(qm[a][a]) for a in range(2)),
+            "finite_source_action_error_each":
+                tuple(str(inputs[i]["finite_source_error"]) for i in indices),
+            "genuine_omitted_Gamma_action_error_each":
+                tuple(str(inputs[i]["gamma_full_tail_action"]) for i in indices),
             "combined_residual_norm_upper_each":
                 tuple(str(inputs[i]["residual"]) for i in indices),
             "genuine_source_2x2_Schur_Loewner_lower":
