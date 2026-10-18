@@ -32,7 +32,7 @@ class WeightedClockCocycleTests(unittest.TestCase):
             for u,a in ((F(1,2),1),(F(3,2),1),(F(0),-1),
                         (F(L-1,2),F(1,2))):
                 if not 0<=u<L:continue
-                r=ratio_square_interval(L,u,a,depth=15)
+                r=ratio_square_interval(L,u,a,J=15)
                 v=clock_phase(u-a,L)
                 direct=approximate_weight(v,L,300)/approximate_weight(u,L,300)
                 self.assertLessEqual(r["RN_cocycle_square_lower"],direct)
