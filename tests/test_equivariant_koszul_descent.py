@@ -10,7 +10,7 @@ from itertools import combinations
 from observational_succ.equivariant_koszul_descent import (
     EquivariantDescentError, matrix_chain_diagonal,
     trace_obstruction, prime_chain_lift, unit_succ_dimension_control,
-    original_prime_source_supertrace_gate,
+    original_prime_source_supertrace_gate, normalized_prime_clock_retraction,
 )
 from observational_succ.koszul_prime_cancellation import source_multidegree
 from observational_succ.completed_weil_transport import von_mangoldt_labels
@@ -107,6 +107,21 @@ class EquivariantKoszulDescentTests(unittest.TestCase):
         self.assertFalse(r["genuine_SUCC_observables_preserved_by_an_invented_ancilla"])
         self.assertTrue(unit_succ_dimension_control(1)["literal_fiberwise_isometric_S_possible"])
         self.assertFalse(unit_succ_dimension_control(1)["genuine_SUCC_observables_preserved_by_an_invented_ancilla"])
+
+    def test_source_restricted_trace_removes_augmented_wedge_multiplicity(self):
+        for n,p in ((1,2),(2,3),(6,5),(4,2),(9,3),(30,7),(72,2)):
+            r=normalized_prime_clock_retraction(n,p)
+            self.assertEqual(r["source_log_valuation_delta"],((p,1),))
+            self.assertEqual(r["raw_source_trace_prime_log_coefficient"],
+                             len(source_multidegree(n).basis()))
+            self.assertEqual(r["normalized_trace_prime_log_coefficient"],F(1))
+            self.assertEqual(r["symbolic_clock_result"],f"log({p})")
+            self.assertTrue(r["source_prime_jet_energy_survives"])
+            self.assertFalse(r["canonical_Connes_trace_proved"])
+            if p not in source_multidegree(n).active:
+                self.assertEqual(r["target_wedge_dimension"],2*r["source_wedge_dimension"])
+        with self.assertRaises(EquivariantDescentError):
+            normalized_prime_clock_retraction(2,6)
 
     def test_original_von_mangoldt_tape_has_nonzero_acyclic_witnesses(self):
         for N in (4,9,30,75,140):
