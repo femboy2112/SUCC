@@ -13,6 +13,7 @@ from fractions import Fraction as F
 from observational_succ.equivariant_koszul_descent import (
     prime_chain_lift, trace_obstruction, unit_succ_dimension_control,
     normalized_prime_clock_retraction, original_prime_source_supertrace_gate,
+    prime_multiplication_nullhomotopy,
 )
 from observational_succ.observable_redundancy_forms import (
     ExactSourceExtension, redundancy_controls,
@@ -31,6 +32,9 @@ def receipt():
     repeat=prime_chain_lift(4,2)
     clock=normalized_prime_clock_retraction(6,5)
     ghost=exact_stabilized_source_controls()
+    null_fucc=prime_multiplication_nullhomotopy(1,2)
+    null_power=prime_multiplication_nullhomotopy(4,2)
+    null_cross=prime_multiplication_nullhomotopy(6,7)
     pivot=pivot_invariance(30)
     local=signed_prime_distribution_receipt(40,{
         2:(F(1),F(1)),4:(F(2),F(-1)),
@@ -45,6 +49,7 @@ def receipt():
         not ghost["first_ghost_reactivated_by_SUCC"]["newly_observable"] or
         signed["positive_hidden_C_indefinite_full_example"]["effective_source_form"]!=((F(-3),),) or
         not pivot["distinct_homotopies_give_same_source_trace"] or
+        not all(t["exact_d_epsilon_plus_epsilon_d_is_Vp"] for t in (null_fucc,null_power,null_cross)) or
         not local["no_composite6_source_term"] or
         not source["nonzero_original_prime_power_distribution_missing"]):
         raise AssertionError("source-relative redundancy crucible failed")
@@ -54,6 +59,10 @@ def receipt():
         "new_p_at_n6_quotient_acyclic":new["quotient_acyclic"],
         "p_squared_continuation_chain_isomorphism":not repeat["new_exterior_basis"],
         "source_clock_normalized_trace_log5":clock["symbolic_clock_result"],
+        "genuine_fucc_chain_nullhomotopy_origin":null_fucc["exact_d_epsilon_plus_epsilon_d_is_Vp"],
+        "genuine_fucc_chain_nullhomotopy_p_squared":null_power["exact_d_epsilon_plus_epsilon_d_is_Vp"],
+        "genuine_fucc_chain_nullhomotopy_crossprime":null_cross["exact_d_epsilon_plus_epsilon_d_is_Vp"],
+        "homology_forgets_original_prime_multiplication":not null_fucc["Koszul_homology_faithfully_represents_original_FUCC"],
         "source_chains_prime_trace_erased":source["nonzero_original_prime_power_distribution_missing"],
         "homotopy_prime30_orientation_independence":pivot["distinct_homotopies_give_same_source_trace"],
         "original_signed_prime_test_terms":local["prime_terms"],
