@@ -143,3 +143,17 @@ This is a theorem for the BOUNDED limiting commutator D_inf, not for the unbound
 This is another concrete instance of the user's distinction: **the structural boundary law and essential band are transport-invariant throughout one source-geometry phase, while individual values and supports change with the carrier.** Crossing the structural phase threshold changes the law itself. The original zeta application remains exclusively b=log2, not the comparison b mutation.
 
 **Proof status:** IGC-06 is PAPER PROVED by Mellin spectral multiplier, Weyl weakly null sequences and the previously established compact-equivalence of edge blocks; the finite rational threshold tests are a distinct negative/positive control. No Lean kernel formalization of essential spectrum or source-topology phase transition is claimed.
+
+## 9. Exact lawful-domain refutation of a tempting RH shortcut (IGC-08)
+
+One must NOT convert the H1_0 estimate (F) into an original all-high K-relative inequality merely by rewriting norms. A completely explicit source-admissible primitive exposes the missing inequality. For every integer n>=3, on I=(-1/2,1/2) define F_n(x)=max(0,1-n|x|). This is a continuous piecewise-linear, endpoint-zero element of H1_0(I), with u_n=F_n' in L2_0(I); it is therefore a LAWFUL Suzuki primitive shape, not a forbidden impulse.
+
+Exact rational integration gives
+
+    ||F_n||_2^2 = 2/(3n),
+    ||F_n'||_2^2 = 2n,
+    ||F_n'||_2^2 / ||F_n||_2^2 = 3n^2 -> infinity.
+
+Thus there is NO universal inequality ||F'||<=C||F|| on the full original H1_0 carrier. A form bound proportional to ||F'|| ||G'|| cannot be substituted for a K-relative bound proportional to ||F|| ||G|| without further operator-specific source structure. This is an independent elementary no-go witness, NOT a direction of negative original signed Weil energy. The exact tests verify n=3,8,32,128,4096 and reject nonadmissible n; RH remains OPEN.
+
+**IGC-08 status:** PAPER PROVED by direct elementary rational integration; executed exact standard-library countermodel.
