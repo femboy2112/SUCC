@@ -183,9 +183,9 @@ def signed_prime_distribution_receipt(N, log_test_values):
     return {
         "original_Tate_prime_power_tape":tape,
         "prime_terms":tuple(terms),
-        "fake_composite_log_test_values_ignored":all(
-            n in dict(tape) or n not in log_test_values
-            for n,p in tape),
+        "ignored_nonprimepower_log_probe_labels":tuple(sorted(
+            set(log_test_values)-{n for n,p in tape})),
+        "no_composite6_source_term":all(t["original_prime_power"]!=6 for t in terms),
         "exact_finite_signed_prime_distribution_only":True,
         "global_Connes_trace_identified":False,
         "completed_Weil_PSD_proved":False,
