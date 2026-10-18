@@ -64,3 +64,31 @@ jobs:
           name: original-suzuki-continuum-cutoff-ablation
           path: ${{ runner.temp }}/continuum-sweep.json
           if-no-files-found: error
+
+  multi-high-boundary-source-ablation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install original signed source research package
+        run: python -m pip install -e '.[test]'
+      - name: Verify frozen original source separately
+        run: python scripts/verify_provenance.py
+      - name: Exact Jacobi/Legendre multimode clamped source proofs
+        run: |
+          python -m unittest discover -s tests -p 'test_multimode_original_residual.py' -v > "$RUNNER_TEMP/multimode-tests.txt" 2>&1 || { cat "$RUNNER_TEMP/multimode-tests.txt"; exit 1; }
+          cat "$RUNNER_TEMP/multimode-tests.txt"
+          grep -q '^OK$' "$RUNNER_TEMP/multimode-tests.txt"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/multimode-tests.txt"; then exit 1; fi
+      - name: Source-authentic multi-mode Schur holdout sweep
+        run: |
+          PYTHONPATH=. python scripts/original_multimode_residual_sweep.py --verify > "$RUNNER_TEMP/multimode-sweep.json"
+          cat "$RUNNER_TEMP/multimode-sweep.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: original-suzuki-multi-high-source-ablation
+          path: ${{ runner.temp }}/multimode-sweep.json
+          if-no-files-found: error
