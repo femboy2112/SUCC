@@ -49,5 +49,7 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_radial_projective_trace_bridge.py' -v
       - name: Full Tate p-power tower and projective conditioning probes
         run: python -m unittest discover -s tests -p 'test_full_prime_tower_transport.py' -v
+      - name: Run source p-adic ball test
+        run: python -m unittest discover -s tests -p 'test_connes_compact_open_test_bridge.py' -v
       - name: Verify frozen source provenance
         run: python scripts/verify_provenance.py
