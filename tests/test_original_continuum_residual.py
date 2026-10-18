@@ -65,6 +65,22 @@ class ArchivedOriginalSignedSuzuki(unittest.TestCase):
         self.assertGreater(p["dc"],0)
         self.assertTrue(p["source_type"]=="ORIGINAL_SUZUKI_SIGNED_PRIMITIVE")
 
+    def test_authentic_infinite_gamma_tail_lower_is_true_quadratic_form(self):
+        from observational_succ.gamma_fredholm_completion import gamma_tail_H01_lower
+        h=R.high_boundary_match(1)["h"]
+        p=R.authentic_Gamma_tail_energy_lower_matrix((h,),16)
+        self.assertEqual(p[0][0],gamma_tail_H01_lower(16,
+                           R.derivative_norm_squared(h),
+                           R.norm_squared(B.derivative(B.derivative(h)))))
+        for J in (4,8,12,16):
+            F1=R.high_boundary_match(1)["h"]
+            F3=R.high_boundary_match(3)["h"]
+            g=R.authentic_Gamma_tail_energy_lower_matrix((F1,F3),J)
+            self.assertEqual(g[0][1],g[1][0])
+            self.assertEqual(len(g),2)
+        with self.assertRaises(R.OriginalResidualError):
+            R.authentic_Gamma_tail_energy_lower_matrix((R.low_primitive(1),),8)
+
     def test_original_exp_antiderivative_vs_independent_entire_action(self):
         h=R.frozen_operator_matrix_holdout(J=2,M=44,P=18)
         self.assertEqual(h["original_source_sha"],R.SOURCE_SHA)
