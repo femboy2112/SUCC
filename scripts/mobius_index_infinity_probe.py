@@ -25,6 +25,7 @@ from observational_succ.mobius_index_infinity import (
     finite_normalized_trace_escape,sign_mutant_control,
     completed_source_blindness_controls,
 )
+from observational_succ.adelic_mobius_tate_test import FiniteTateMobiusTest
 from observational_succ.weighted_clock_cocycle import (
     memory_weight_bounds, finite_cocycle_composition,
     finite_grid_cocycle, cut_jump_and_unweighted_shift_lower,
@@ -48,6 +49,8 @@ def receipt():
     wrong=sign_mutant_control(2)
     trace_state=finite_normalized_trace_escape(300,1)
     blind=completed_source_blindness_controls()
+    full_tate=FiniteTateMobiusTest(prime_set)
+    fourier=full_tate.exact_plancherel()
     if not (finite["integer_source_trace"]==56 and
             finite["additive_profinite_unit_Haar"]==F(4,15) and
             index["finite_commutator_trace"]==0 and
@@ -66,7 +69,10 @@ def receipt():
             blind["zeta_primitive_p2_dirichlet_coefficient"]==1 and
             blind["chi_minus_3_primitive_p2_coefficient"]==-1 and
             blind["unit_W_contact_mutation_effect"]==F(2048,3003) and
-            not blind["full_signed_completed_W_identifiable_from_Vp_only"]):
+            not blind["full_signed_completed_W_identifiable_from_Vp_only"] and
+            fourier["original_additive_haar_norm_sq"]==F(4,15) and
+            fourier["dual_original_Fourier_norm_sq"]==F(4,15) and
+            full_tate.ramanujan_oracle(1)["actual_finite_Tate_Fourier"]==F(-1,30)):
         raise AssertionError("MII_SOURCE_INDEX_GENUINE_PROBE_FAILED")
     return {
         "source":"original integer SUCC + genuine prime FUCC",
@@ -76,6 +82,10 @@ def receipt():
         "finite_FUCC_p3_bulk_Haar":fucc["limit_defect_bulk_trace_density"],
         "prime_sieve_source_count_at_210":finite["integer_source_trace"],
         "prime_sieve_unit_Haar":finite["additive_profinite_unit_Haar"],
+        "actual_Tate_finite_compact_open_source_mass":full_tate.additive_haar()["actual_RationalCoset_source_mass"],
+        "true_Ramanujan_Fourier_at_1_over_30":full_tate.ramanujan_oracle(1)["actual_finite_Tate_Fourier"],
+        "full_finite_Tate_Fourier_Plancherel":fourier["exact_finite_Tate_Poisson_Plancherel"],
+        "source_integer_to_Tate_test_commutes":full_tate.on_integer(17)["exact_source_restriction_commutes"],
         "signed_Mobius_positive_projection_at_7":sieve_projection(7,prime_set)["projection_diagonal"],
         "sieve_strong_limit_basis_unit":"|1><1|",
         "moving_SUCC_sieve_commutator_at_6":source_commutator["finite_sieve_edge_coefficient"],
