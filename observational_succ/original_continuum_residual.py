@@ -200,7 +200,8 @@ def source_parameters():
     return {"b":b0,"db":db,"w":w0,"dw":dw,
             "contact":c0,"dc":dc,
             "sha":receipt["source_git_blob"],"real_gamma_count":1,
-            "half_density":"1/2","snap_denominator":10**12}
+            "half_density":"1/2","snap_denominator":10**12,
+            "source_type":"ORIGINAL_SUZUKI_SIGNED_PRIMITIVE"}
 
 
 def exact_piecewise_primitive_action(h,J=8,M=80,P=18,parameters=None):
@@ -423,7 +424,9 @@ def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
             "genuine_source_2x2_Schur_Loewner_lower":
                 tuple(tuple(str(lower[a][b]) for b in range(2)) for a in range(2)),
             "source_Schur_lower_PSD_certified":bool(sign),
-            "trial_is_in_original_high_domain":True}
+            "trial_is_in_original_high_domain":True,
+            "missing_full_residual_norm_source_certificate":False,
+            "source_continuum_residual_norm_certified":True}
     return {"frozen_source_git_blob":params["sha"],
         "authentic_first_prime_wavefront":((2,2),),
         "one_real_Gamma_contact_two_completed_poles":True,
