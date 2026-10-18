@@ -101,7 +101,7 @@ class FiniteTateMobiusTest:
         for d,sign,c in self.terms():
             t=c.dual_diagonal(q)
             total+=sign*t["finite_haar_amplitude"]
-            if t["dual_within_finite_support"]!=(d*q).denominator==1:
+            if t["dual_within_finite_support"] != ((d*q).denominator == 1):
                 raise AssertionError("original Tate finite source dual support mutated")
         return {"frequency":q,"Fourier_value":total,
                 "real_Tate_character_phase_zero_for_unshifted_cosets":True,
