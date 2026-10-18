@@ -8,7 +8,7 @@ Parent draft PR #170. Frozen original Suzuki source SHA 0cc8510b71d178fc79e8d410
 | IGC-02 bounded skew STRONG limit of finite rank-four boundary commutators | PAPER PROVED using truncated Carleman, source b/log2 and bounded remainder | uncontrolled translated-diagonal singularity |
 | IGC-03 exact essential norm pi/2 in BOTH reflection parities | PAPER PROVED via Mellin + compact cutoffs; independent 3/32 rational counterpacket | false operator-norm convergence of finite rank |
 | IGC-04 source H1_0 x H1_0 boundary-tail O(J^-3/2) | PAPER PROVED with true endpoint zeros; exact Fraction majorant | illegal application to arbitrary L2 |
-| IGC-05 finite geometric telescoping, authentic rung spacing | LEAN KERNEL only, with pinned Lean 4.14; NO formal Carleman proof | false claims of full analytic formalization |
+| IGC-05 source-index spacing and finite geometric recursion | LEAN KERNEL only; closed-ratio equality checked by exact Fraction, with pinned Lean 4.14; NO formal Carleman proof | false claims of full analytic formalization |
 | Fully unbounded Gamma commutator as an unrestricted operator composition | UNVERIFIED domain interface | do not substitute the strong limit for an unproved domain statement |
 | Original signed Weil four-mode Schur S4, all-radius positivity, RH | OPEN; RH PROVED NO | skew boundary commutator is not positive quadratic source |
 
