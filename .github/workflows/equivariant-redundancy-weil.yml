@@ -14,6 +14,7 @@ on:
       - 'tests/test_observable_redundancy_forms.py'
       - 'tests/test_stabilized_exterior_source.py'
       - 'tests/test_source_homotopy_defect.py'
+      - 'scripts/equivariant_redundancy_weil_probe.py'
       - 'research/2026-10-18/EQUIVARIANT_REDUNDANCY_WEIL.md'
       - 'docs/CLAIM_SUPPLEMENT_EQUIVARIANT_REDUNDANCY.md'
       - '.github/workflows/equivariant-redundancy-weil.yml'
@@ -47,6 +48,7 @@ jobs:
           python -m compileall -q tests/test_observable_redundancy_forms.py
           python -m compileall -q tests/test_stabilized_exterior_source.py
           python -m compileall -q tests/test_source_homotopy_defect.py
+          python -m compileall -q scripts/equivariant_redundancy_weil_probe.py
       - name: Koszul relative homology and source supertrace falsifiers
         run: python -m unittest discover -s tests -p 'test_equivariant_koszul_descent.py' -v
       - name: Exact null quotient and signed Schur correction controls
@@ -57,5 +59,7 @@ jobs:
         run: python -m unittest discover -s tests -p 'test_source_homotopy_defect.py' -v
       - name: Inherited full-prime Koszul and original source tests
         run: python -m unittest discover -s tests -p 'test_koszul_prime_cancellation.py' -v
+      - name: Reproduce complete source-indexed redundant-information crucible receipt
+        run: python scripts/equivariant_redundancy_weil_probe.py
       - name: Independent provenance gate
         run: python scripts/verify_provenance.py
