@@ -89,6 +89,29 @@ class ArchivedOriginalSignedSuzuki(unittest.TestCase):
             self.assertTrue(e["independent_enclosures_intersect"],name)
             self.assertGreater(F(e["rigorous_action_pair_error_upper"]),0)
 
+    def test_unfitted_genuine_high_mode_action_J8_holdouts(self):
+        x=R.frozen_operator_matrix_holdout(J=8,M=80,P=18)
+        self.assertEqual(x["original_source_sha"],R.SOURCE_SHA)
+        self.assertEqual(len(x["independent_exp_matrix_vs_Taylor_continuum_action"]),8)
+        self.assertTrue(x["independent_exp_matrix_vs_Taylor_continuum_action"]
+                        ["P3_P7"]["independent_enclosures_intersect"])
+        self.assertTrue(x["independent_exp_matrix_vs_Taylor_continuum_action"]
+                        ["P4_P8"]["independent_enclosures_intersect"])
+
+    def test_counterfeit_contact_and_missing_halfdensity_are_observable(self):
+        from observational_succ.suzuki_legendre_source import authentic_full_low_entry
+        orig=authentic_full_low_entry(1,1,F(1,2),2)
+        h=R.low_primitive(1)
+        p=R.source_parameters()
+        for tag,wrong in (("missing_contact",dict(p,contact=p["contact"]+1)),
+                          ("missing_prime_halfdensity",dict(p,w=F(0)))):
+            action=R.exact_piecewise_primitive_action(h,2,44,18,wrong)
+            center=sum((R.definite(B.mul(h,t),l,r)
+                        for l,r,t in action["pieces"]),F(0))
+            err=B.sqrt_up(R.norm_squared(h))*action["finite_source_action_error_upper"]
+            self.assertTrue(center+err<orig.lo or center-err>orig.hi,
+                            "mutant escaped genuine signed original source "+tag)
+
     def test_original_four_mode_continuum_residual_scoped(self):
         result=R.source_residual_schur_trial(J=8,M=80,P=18,fit=True)
         self.assertEqual(result["frozen_source_git_blob"],R.SOURCE_SHA)
