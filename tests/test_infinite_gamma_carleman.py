@@ -6,6 +6,7 @@ from observational_succ.infinite_gamma_carleman import (
     exp_negative_interval, analytic_gamma_kernel_window,
     dyadic_nonnorm_witness, sqrt_lower, h01_tail_bound,
     original_source_infinite_gamma_contract, comparison_prime_threshold_packet,
+    lawful_tent_domain_obstruction,
 )
 
 
@@ -86,6 +87,15 @@ class ExactOriginalGammaTower(unittest.TestCase):
         for bad in (0,True,0.5,-3):
             with self.assertRaises(GammaTowerError):
                 h01_tail_bound(bad)
+
+    def test_lawful_H01_high_modes_refute_K_relative_shortcut(self):
+        for n in (3,8,32,128,4096):
+            z=lawful_tent_domain_obstruction(n)
+            self.assertEqual(F(z["derivative_to_L2_ratio_squared"]),3*n*n)
+            self.assertTrue(z["uniform_H01_to_L2_inverse_control_refuted"])
+            self.assertFalse(z["RH_proved"])
+        with self.assertRaises(GammaTowerError):
+            lawful_tent_domain_obstruction(2)
 
     def test_original_signed_source_SHA_genuine_prime_and_gamma(self):
         try:
