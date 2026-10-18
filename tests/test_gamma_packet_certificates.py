@@ -55,6 +55,36 @@ class ExactPacketAlgebra(unittest.TestCase):
                                  F(2136,77),1296,max_stop=65)
 
 
+
+class GenuinePrimeGammaCommutator(unittest.TestCase):
+    def test_exact_no_commutation_for_true_shift_range(self):
+        from observational_succ.prime_gamma_packet_commutator import first_gamma_rung_prime_commutator
+        x=first_gamma_rung_prime_commutator(F(693,1000),F(694,1000))
+        self.assertGreater(F(x["gamma_integral_strict_lower"]),F(3,16))
+        self.assertFalse(x["prime_shift_and_gamma_rung_commute"])
+        self.assertFalse(x["RH_proved"])
+
+    def test_fake_geometry_rejected(self):
+        from observational_succ.prime_gamma_packet_commutator import (
+            first_gamma_rung_prime_commutator, NoncommutationError)
+        for lo,hi in ((F(1,2),F(7,10)), (F(7,10),F(4,5)),
+                      (F(7,10),F(69,100)), (0.7,F(7,10))):
+            with self.assertRaises(NoncommutationError):
+                first_gamma_rung_prime_commutator(lo,hi)
+
+    def test_authentic_prime_gamma_commutator(self):
+        try:
+            import observational_succ.tate_suzuki_shorting
+        except ImportError:
+            self.skipTest("original Suzuki signed source unavailable")
+        from observational_succ.prime_gamma_packet_commutator import original_source_commutator_witness
+        r=original_source_commutator_witness()
+        self.assertEqual(r["source_git_blob"],
+                         "0cc8510b71d178fc79e8d410a86d8b6014cf9178")
+        self.assertGreater(F(r["gamma_integral_strict_lower"]),F(3,16))
+        self.assertFalse(r["prime_shift_and_gamma_rung_commute"])
+
+
 class ActualSuzukiSource(unittest.TestCase):
     def test_original_strict_finite_gamma_packet(self):
         try:
