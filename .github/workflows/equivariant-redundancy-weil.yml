@@ -36,9 +36,13 @@ jobs:
       - name: Compile source and independent oracles
         run: |
           python -m compileall -q observational_succ/equivariant_koszul_descent.py
+          python -m compileall -q observational_succ/observable_redundancy_forms.py
           python -m compileall -q tests/test_equivariant_koszul_descent.py
+          python -m compileall -q tests/test_observable_redundancy_forms.py
       - name: Koszul relative homology and source supertrace falsifiers
         run: python -m unittest discover -s tests -p 'test_equivariant_koszul_descent.py' -v
+      - name: Exact null quotient and signed Schur correction controls
+        run: python -m unittest discover -s tests -p 'test_observable_redundancy_forms.py' -v
       - name: Inherited full-prime Koszul and original source tests
         run: python -m unittest discover -s tests -p 'test_koszul_prime_cancellation.py' -v
       - name: Independent provenance gate
