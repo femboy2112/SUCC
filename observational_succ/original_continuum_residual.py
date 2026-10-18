@@ -308,6 +308,50 @@ def _actual_signed_interval(coeff_a,coeff_b,J,entry_cache):
     return lo,hi
 
 
+
+def frozen_operator_matrix_holdout(J=4,M=56,P=18):
+    """Independent ARCHIVED exp source vs Taylor-moment continuum action.
+
+    Exact integrated polynomial pairing, with a charged L2 source error.
+    This compares all original prime/Gamma/contact/both-pole channels.
+    """
+    params=source_parameters()
+    sample=[
+      ("P1_P1",1,1),
+      ("P1_P5",1,5),
+      ("P5_P5",5,5),
+      ("P2_P2",2,2),
+      ("P2_P6",2,6),
+      ("P1_P3",1,3),
+    ]
+    cache={}
+    action_cache={}
+    results={}
+    for tag,i,j in sample:
+        ha=anchor_integral(B.legendre(i))
+        hb=anchor_integral(B.legendre(j))
+        if any(B.value(p,end)!=0 for p in (ha,hb) for end in (-A,A)):
+            raise OriginalResidualError("source zero-extended primitive H1 trace")
+        if j not in action_cache:
+            action_cache[j]=exact_piecewise_primitive_action(hb,J,M,P,params)
+        packet=action_cache[j]
+        nominal=sum((definite(B.mul(ha,p),l,r)
+                     for l,r,p in packet["pieces"]),F(0))
+        action_error=B.sqrt_up(norm_squared(ha))*packet["finite_source_action_error_upper"]
+        original=_actual_signed_interval(((i,F(1)),),((j,F(1)),),J,cache)
+        if original[0]>nominal+action_error or original[1]<nominal-action_error:
+            raise ArithmeticError("FROZEN ORIGINAL signed matrix and independently derived true primitive H_J action disagree: "+tag)
+        results[tag]={"original_sha":params["sha"],
+           "signed_original_interval":tuple(map(str,original)),
+           "independent_action_pair":str(nominal),
+           "rigorous_action_pair_error_upper":str(action_error),
+           "independent_enclosures_intersect":True}
+    return {"original_source_sha":params["sha"],"J":J,"M":M,
+        "all_original_signed_channels_tested":True,
+        "independent_exp_matrix_vs_Taylor_continuum_action":results,
+        "RH_proved":False}
+
+
 def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
     """Full source-authentic FOUR-mode Schur Loewner lower.
 
