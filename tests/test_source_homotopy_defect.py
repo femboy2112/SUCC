@@ -86,6 +86,18 @@ class SourceHomotopyDefectTests(unittest.TestCase):
             self.assertFalse(term["contact_Gamma_or_pole_included"])
         self.assertFalse(r["completed_Weil_PSD_proved"])
 
+    def test_independent_second_original_weil_primepower_oracle(self):
+        from observational_succ.source_weil_hierarchy import real_prime_power
+        for N in (9,30,75,140):
+            tape=dict(von_mangoldt_labels(N))
+            second={n:real_prime_power(n) for n in range(2,N+1)
+                    if real_prime_power(n) is not None}
+            self.assertEqual(tape,second)
+            self.assertNotIn(6,tape)
+            self.assertEqual(tape[4],2)
+            if N>=30:
+                self.assertEqual(tape[27],3)
+
     def test_source_even_prime_square_not_accidentally_deleted(self):
         r=signed_prime_distribution_receipt(40,{
             2:(F(1),F(0)),4:(F(2),F(3)),8:(F(3),F(-1)),
