@@ -9,6 +9,13 @@ from __future__ import annotations
 
 import json
 from fractions import Fraction as F
+from pathlib import Path
+import sys
+
+# Replay from any working directory without an undeclared editable install.
+ROOT=Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0,str(ROOT))
 
 from observational_succ.mobius_index_infinity import (
     finite_succ_boundary, finite_fucc_boundary,
