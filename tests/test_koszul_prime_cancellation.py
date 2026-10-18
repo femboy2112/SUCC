@@ -134,6 +134,51 @@ class PrimeKoszulCancellationTests(unittest.TestCase):
             self.assertTrue(r['oriented_chain_homology_unchanged'])
             self.assertFalse(r['unital_arithmetic_ring_sign_reversal_licensed'])
 
+    def test_exterior_Clifford_anticommutators_and_weighted_positive_Laplacian(self):
+        c=PrimeKoszul((2,3,5),(2,1,3))
+        active=c.active
+        def compose(S,op1,p,op2,q):
+            total={}
+            for T,a in getattr(c,op2)(q,S):
+                for U,b in getattr(c,op1)(p,T):
+                    total[U]=total.get(U,Q(0))+a*b
+            return total
+        for S in c.basis():
+            for p in active:
+                for q in active:
+                    left=compose(S,"exterior_annihilation",p,"exterior_creation",q)
+                    right=compose(S,"exterior_creation",q,"exterior_annihilation",p)
+                    result={T:left.get(T,0)+right.get(T,0) for T in set(left)|set(right)}
+                    result={T:v for T,v in result.items() if v}
+                    self.assertEqual(result,{S:1} if p==q else {})
+            weights={2:Q(2),3:Q(3),5:Q(5)}
+            def weighted_map(chain,creation):
+                result={}
+                method="exterior_creation" if creation else "exterior_annihilation"
+                for T,a in chain.items():
+                    for p,w in weights.items():
+                        for U,b in getattr(c,method)(p,T):
+                            result[U]=result.get(U,Q(0))+a*w*b
+                return {T:v for T,v in result.items() if v}
+            e={S:Q(1)}
+            ddstar=weighted_map(weighted_map(e,True),False)
+            dstard=weighted_map(weighted_map(e,False),True)
+            lap={T:ddstar.get(T,0)+dstard.get(T,0) for T in set(ddstar)|set(dstard)}
+            lap={T:v for T,v in lap.items() if v}
+            self.assertEqual(lap,{S:Q(38)})
+        self.assertTrue(c.hodge_laplacian_receipt()['positive_semidefinite_on_every_exterior_chain'])
+
+    def test_fiberwise_weighted_supercharge_recovers_original_log_n(self):
+        for n in (1,2,3,4,6,8,9,12,18,30,36,72,120):
+            c=source_multidegree(n)
+            h=c.weighted_log_clock_factorization()
+            self.assertEqual(h['source_integer'],n)
+            self.assertEqual(h['weighted_Hodge_laplacian_symbol'],f"log({n})*I")
+            self.assertEqual(c.hodge_laplacian_receipt()['hodge_eigenvalue'],len(c.active))
+            self.assertTrue(h['Clifford_cross_terms_cancel'])
+            self.assertFalse(h['Weil_functional_identified'])
+        self.assertEqual(source_multidegree(1).hodge_laplacian_receipt()['hodge_eigenvalue'],0)
+
     def test_original_source_and_bad_wedge_mutations(self):
         for ps,exponents in (((6,),(1,)),((3,2),(1,1)),
                              ((2,2),(1,1)),((2,),(True,)),
