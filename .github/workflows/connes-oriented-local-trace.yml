@@ -10,6 +10,8 @@ on:
       - 'tests/test_connes_oriented_scaling.py'
       - 'observational_succ/multiplicative_orientation_gram.py'
       - 'tests/test_multiplicative_orientation_gram.py'
+      - 'observational_succ/projective_euler_normalization.py'
+      - 'tests/test_projective_euler_normalization.py'
       - 'research/2026-10-18/MULTIPLICATIVE_ORIENTATION_GRAM.md'
       - 'docs/CLAIM_SUPPLEMENT_MULTIPLICATIVE_ORIENTATION_GRAM.md'
       - 'research/2026-10-18/CONNES_ORIENTED_LOCAL_TRACE_BRIDGE.md'
@@ -42,9 +44,13 @@ jobs:
           python -m compileall -q tests/test_connes_oriented_scaling.py
           python -m compileall -q observational_succ/multiplicative_orientation_gram.py
           python -m compileall -q tests/test_multiplicative_orientation_gram.py
+          python -m compileall -q observational_succ/projective_euler_normalization.py
+          python -m compileall -q tests/test_projective_euler_normalization.py
       - name: Finite analytic and hostile orientation controls
         run: python -m unittest discover -s tests -p 'test_connes_oriented_scaling.py' -v
       - name: Exact arithmetic and archimedean Gram, valuation and cross-oracle checks
         run: python -m unittest discover -s tests -p 'test_multiplicative_orientation_gram.py' -v
+      - name: Projective p+1 normalization and phase-sensitive source controls
+        run: python -m unittest discover -s tests -p 'test_projective_euler_normalization.py' -v
       - name: Verify historical provenance manifests
         run: python scripts/verify_provenance.py
