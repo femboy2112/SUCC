@@ -112,6 +112,58 @@ def high_boundary_match(i,t=F(0)):
         "H2_zero_extended":True,"RH_proved":False}
 
 
+
+def authentic_real_Gamma_H1_source_domain():
+    """Source-true GLOBAL H1_0 -> L2 original Gamma action theorem.
+
+    Original real-Gamma multiplier:
+      m_j(xi)=16 xi²/[d_j(d_j²+4xi²)]
+             <=4|xi|/d_j²   by (d_j-2|xi|)²>=0.
+    sum_j>=0 4/d_j² <=4+integral_0^inf 4/(4t+1)² dt=5.
+    Thus m_infty(xi)<=5|xi| and ||Gamma_inf F||<=5||F'||.
+    Every zero-extended H1_0 primitive belongs to the real Gamma operator
+    domain; this does NOT assert the other source channels are positive.
+    """
+    p=source_parameters()
+    if p["sha"]!=SOURCE_SHA:raise OriginalResidualError("frozen source mismatch")
+    return {"source_SHA":p["sha"],"original_rung_indices":"4j+1",
+            "original_Gamma_multiplier_H1_bound":F(5),
+            "operator_domain_contains_H1_0":True,
+            "full_operator_requires_original_pole_contact_and_prime":True,
+            "original_S4_positive_proved":False,"RH_proved":False}
+
+
+def authentic_Gamma_tail_action_dual(h,J):
+    """Sharpen true Gamma-tail action by TWO independently valid norms.
+
+    For H1_0 F, sum_j>=J 4/d_j² <= sigma_J=1/d+4/d² and
+      ||Gamma_tail F||<=sigma_J ||F'||.
+    If F also zero-extends to H2 (F=F'=0 at endpoints), additionally
+      ||Gamma_tail F||<=tau_J ||F''||
+      tau_J=2/d²+16/d³.  Select the lesser of two REAL bounds,
+    NEVER a fitted or source-blind Gamma replacement.
+    """
+    if type(J) is not int or not 1<=J<=100000:
+        raise OriginalResidualError("genuine positive real Gamma rung cutoff")
+    h=tuple(rat(x) for x in h)
+    if any(B.value(h,e)!=0 for e in (-A,A)):
+        raise OriginalResidualError("zero-extended H1_0 source primitive required")
+    d=4*J+1
+    sigma=F(1,d)+F(4,d*d)
+    h1=sigma*B.sqrt_up(derivative_norm_squared(h))
+    if all(B.value(B.derivative(h),e)==0 for e in (-A,A)):
+        h2=B.gamma_action_tail(J)*B.sqrt_up(
+                         norm_squared(B.derivative(B.derivative(h))))
+        selected=min(h1,h2)
+        route="H2_SECOND_DERIVATIVE" if h2<=h1 else "H1_FIRST_DERIVATIVE"
+    else:
+        h2=None
+        selected=h1
+        route="H1_ONLY"
+    return {"selected":selected,"H1_upper":h1,"H2_upper":h2,
+            "route":route,"source_gamma_D":d,"RH_proved":False}
+
+
 def _shift_moment(p,k):
     # Integral (y+1/2)^k p(y) dy exact.
     shifted_power=tuple(F(comb(k,j))*A**(k-j) for j in range(k+1))
@@ -413,11 +465,13 @@ def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
         if projected_sq<0:
             raise ArithmeticError("exact projected primitive norm must be PSD")
         finiteerr=x["finite_source_action_error_upper"]
-        tail=B.gamma_action_tail(J)*B.sqrt_up(obj["second_derivative_norm_sq"])
+        tail_pack=authentic_Gamma_tail_action_dual(obj["h"],J)
+        tail=tail_pack["selected"]
         budget=B.sqrt_up(projected_sq)+finiteerr+tail
         inputs[i]={"h":obj,"approx":x,"residual":budget,
             "finite_residual_norm_squared":projected_sq,
-            "finite_source_error":finiteerr,"gamma_full_tail_action":tail}
+            "finite_source_error":finiteerr,"gamma_full_tail_action":tail,
+            "gamma_tail_route":tail_pack["route"]}
     results={}
     for parity,indices,kappa in (
         ("odd_derivative",(1,3),F(63,500)),
@@ -477,6 +531,8 @@ def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
                 tuple(str(qm[a][a]) for a in range(2)),
             "finite_source_action_error_each":
                 tuple(str(inputs[i]["finite_source_error"]) for i in indices),
+            "genuine_omitted_Gamma_action_route_each":
+                tuple(inputs[i]["gamma_tail_route"] for i in indices),
             "genuine_omitted_Gamma_action_error_each":
                 tuple(str(inputs[i]["gamma_full_tail_action"]) for i in indices),
             "combined_residual_norm_upper_each":
