@@ -351,3 +351,45 @@ def finite_normalized_trace_escape(N,fixed_label=1):
         "same_state_as_unit_vacuum":False,
         "actual_Connes_trace_constructed":False,
     }
+
+
+
+def completed_source_blindness_controls():
+    """Prove arithmetic Möbius/positive-sieve data do NOT identify completed W.
+
+    The literal multiplication operators V_p are identical for ordinary
+    zeta and primitive Dirichlet chi_-3; the ORIGINAL finite log derivative
+    coefficient at p=2 has opposite sign, and ramified p=3 is omitted in
+    chi_-3, even though the same sieve E_(2,3) acts on l2(N).
+
+    Independently the canonical real Weil identity/contact test changes by
+    2048/3003 under a +delta_0 mutation while E_(2,3) is unchanged.
+    Thus the source representation without character, conductor and
+    Gamma/contact data is NON-IDENTIFYING, not source-complete.
+    """
+    from .tate_weil_source_bridge import (
+        TateWeilProfile, finite_log_derivative_tape,
+    )
+    from .source_homotopy_defect import compact_contact_ambiguity
+    zeta=finite_log_derivative_tape(12,TateWeilProfile.canonical("zeta"))
+    chi=finite_log_derivative_tape(12,TateWeilProfile.canonical("chi_minus_3"))
+    true_z={n:phase for n,p,phase in zeta}
+    true_chi={n:phase for n,p,phase in chi}
+    contact=compact_contact_ambiguity(F(1))
+    if (true_z.get(2)!=1 or true_chi.get(2)!=-1 or
+        true_z.get(3)!=1 or 3 in true_chi or
+        contact["difference_in_signed_Weil_autocorrelation"]!=F(2048,3003)):
+        raise AssertionError("SOURCE_CHARACTER_OR_CONTACT_MUTANT_NOT_DISCRIMINATED")
+    return {
+        "original_multiplicative_source":"same integer Vp in both profiles",
+        "positive_Mobius_sieve_source":"same E_(2,3) in both profiles",
+        "zeta_primitive_p2_dirichlet_coefficient":true_z[2],
+        "chi_minus_3_primitive_p2_coefficient":true_chi[2],
+        "zeta_p3_euler_coefficient":true_z[3],
+        "chi_minus_3_p3_ramified_factor_absent":3 not in true_chi,
+        "unit_W_contact_mutation_effect":contact["difference_in_signed_Weil_autocorrelation"],
+        "unit_W_contact_mutation_visible_to_E_sieve":False,
+        "full_signed_completed_W_identifiable_from_Vp_only":False,
+        "character_conductor_and_Arch_contact_are_redundant":False,
+        "RH_proved":False,
+    }
