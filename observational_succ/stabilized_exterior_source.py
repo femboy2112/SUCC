@@ -141,7 +141,9 @@ class StabilizedExteriorCarrier:
             for T,a in self.source_differential(n,S):
                 for U,b in self.source_adjoint(n,T):
                     result[U]=result.get(U,F(0))+a*b
-            if {k:v for k,v in result.items() if v}!={S:F(len(active))} if active else {}:
+            expected={S:F(len(active))} if active else {}
+            observed={k:v for k,v in result.items() if v}
+            if observed!=expected:
                 raise AssertionError("STABILIZED_CLIFFORD_HODGE_BROKEN")
         return {
             "n":n,"common_fock_dim":len(self.common_basis),
