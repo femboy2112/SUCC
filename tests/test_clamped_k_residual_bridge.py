@@ -16,7 +16,7 @@ class ExactClampedJacobi(unittest.TestCase):
    self.assertFalse(a["RH_proved"])
   self.assertEqual(checked_trial("odd_derivative")["legendre_high_modes"],
                    ((5,"-240/13"),(7,"240/13")))
-  self.assertEqual(checked_trial("even_derivative")["high_legendre_modes"],
+  self.assertEqual(checked_trial("even_derivative")["legendre_high_modes"],
                    ((6,"-112/5"),(8,"112/5")))
 
  def test_exact_unfitted_independent_integrated_norms(self):
