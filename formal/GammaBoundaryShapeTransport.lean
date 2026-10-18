@@ -1,10 +1,10 @@
+import Std.Tactic
 /-!
 Transported FORM does not imply unchanged VALUES. Lean 4.14 core+Std.
 Only this finite algebraic kernel fact is formalized here.
 This file does not claim a Lean proof of continuous OU operator rank,
 original source provenance, first-window S4 or RH.
 -/
-import Std.Tactic
 
 namespace ObservationalSUCC.GammaBoundaryShapeTransport
 
