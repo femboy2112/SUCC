@@ -37,6 +37,10 @@ jobs:
           cat "$RUNNER_TEMP/gaussian.txt"
           grep -q '^OK$' "$RUNNER_TEMP/gaussian.txt"
           if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/gaussian.txt"; then exit 1; fi
+      - name: Exact original source and Gaussian negative-control receipts
+        run: |
+          PYTHONPATH=. python scripts/gaussian_kresidual_probe.py --verify
+          PYTHONPATH=. python scripts/gaussian_kresidual_probe.py --source --verify
       - name: Recheck parent source-complete infinite Gamma and parity
         run: |
           python -m unittest discover -s tests -p 'test_infinite_gamma_carleman.py' -q
