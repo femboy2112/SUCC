@@ -353,6 +353,39 @@ def frozen_operator_matrix_holdout(J=4,M=56,P=18):
         "RH_proved":False}
 
 
+
+def authentic_Gamma_tail_energy_lower_matrix(primitives,J):
+    """A genuine SOURCE-TRUE positive-tail lower on a whole polynomial span.
+
+    For h in H2_0, u=h' in H1_0 and the unchanged original real-Gamma:
+      Q_(Gamma,j)(u)>=16/d_j³ ||u||² -64/d_j^5 ||u'||².
+    Summing the inherited comparison bounds produces the matrix
+      T_J >= a_J Gram(h') - b_J Gram(h'')
+    with a_J=2/d² and b_J=4/d⁴+64/d⁵, d=4J+1.
+    T itself may have a negative direction; DO NOT PSD-clamp it.
+    """
+    if type(J) is not int or J<1:
+        raise OriginalResidualError("original true Gamma integer shell")
+    dd=4*J+1
+    a=F(2,dd*dd)
+    b=F(4,dd**4)+F(64,dd**5)
+    poly=tuple(tuple(rat(x) for x in h) for h in primitives)
+    if not poly:raise OriginalResidualError("nonempty original source high packet")
+    for h in poly:
+        if any(B.value(v,e)!=0 for v in (h,B.derivative(h))
+               for e in (-A,A)):
+            raise OriginalResidualError("tail lower only for actual H2_0 source packets")
+    d1=tuple(B.derivative(h) for h in poly)
+    d2=tuple(B.derivative(v) for v in d1)
+    matrix=tuple(tuple(a*B.integral_product(d1[i],d1[j])-
+                       b*B.integral_product(d2[i],d2[j])
+                       for j in range(len(poly))) for i in range(len(poly)))
+    if any(matrix[i][j]!=matrix[j][i]
+           for i in range(len(poly)) for j in range(len(poly))):
+        raise ArithmeticError("original genuine Gamma tail comparison asymmetric")
+    return matrix
+
+
 def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
     """Full source-authentic FOUR-mode Schur Loewner lower.
 
@@ -402,10 +435,13 @@ def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
         qm=[[projected_piece_gram(inputs[i]["approx"]["pieces"],
                                    inputs[j]["approx"]["pieces"])
              for j in indices] for i in indices]
+        extra_tail=authentic_Gamma_tail_energy_lower_matrix(
+                           tuple(inputs[i]["h"]["h"] for i in indices),J)
         epssq=sum(((inputs[i]["finite_source_error"]+inputs[i]["gamma_full_tail_action"])**2
                    for i in indices),F(0))
         lower=[[
-            mid[a][b]-(sum(rad[a]) if a==b else F(0))-
+            mid[a][b]+extra_tail[a][b]-
+            (sum(rad[a]) if a==b else F(0))-
             ((1+eta)*qm[a][b]+
              ((1+1/eta)*epssq if a==b else F(0)))/kappa
             for b in range(2)] for a in range(2)]
@@ -417,6 +453,8 @@ def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
             "fitted_high_coefficients":tuple(str(fitted[i]) for i in indices),
             "genuine_signed_qJ_intervals":tuple(tuple(
                  tuple(map(str,pairs[a][b])) for b in range(2)) for a in range(2)),
+            "genuine_infinite_Gamma_tail_lower_Gram":
+                tuple(tuple(str(extra_tail[a][b]) for b in range(2)) for a in range(2)),
             "surrogate_QE_action_residual_gram_exact":
                 tuple(tuple(str(qm[a][b]) for b in range(2)) for a in range(2)),
             "source_qJ_original_diagonal_lower":
