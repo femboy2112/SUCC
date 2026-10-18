@@ -85,7 +85,7 @@ class OriginalSignedSourceConditionalComparison(unittest.TestCase):
             self.assertTrue(z["source_high_surplus_comparator_is_SIBLING_PR161_CONDITIONAL"])
             self.assertFalse(z["chosen_Schur_lower_PSD_certified"]
                              and not c["conditional_first_window_S4_PSD"])
-            self.assertGreaterEqual(F(z["chosen_Schur_lower"][0][0]),
+            self.assertGreaterEqual(F(z["chosen_source_Schur_lower"][0][0]),
                                      min(F(z["old_original_Schur_lower"][0][0]),
                                          F(z["new_conditional_source_Schur_lower"][0][0])))
         self.assertFalse(c["RH_proved"])
