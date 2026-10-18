@@ -120,6 +120,56 @@ Mutations fail: substituting projective p+1 norm factor (1+p^-beta) does NOT can
 
 Reproduce via observational_succ/mobius_tate_gamma_remainder.py and tests/test_mobius_tate_gamma_remainder.py (independent n<=250 divisor inverse, all genuine p-places in finite stages, gamma and omitted-prime source controls).
 
+
+
+## OM-10: The correct repair of the p² sign paradox is a Koszul exterior resolution (PROVED CLASSICAL)
+
+The full integer multiplicative carrier is not an exclusively Boolean lattice. For a finite authentic prime set P let R=Q[x_p:p in P] be the polynomial algebra, containing EVERY monomial x^alpha and all p^k. Adjoin the exterior module E with anti-commuting generators theta_p and theta_p∧theta_p=0. The Koszul chain groups K_j=R tensor Lambda^j(E) carry the graded differential
+
+    d(f theta_{p1}∧...∧theta_{pj})
+      = sum_{a=1}^j (-1)^(a-1)
+           (x_{pa} f) theta_{p1}∧... omit theta_{pa} ...∧theta_{pj}.
+
+The commuting x_p and anti-commuting theta_p imply d²=0 for every finite P. Fix a valuation multidegree alpha in the polynomial grading, meaning the polynomial part of a wedge basis vector for subset S is x^(alpha -1_S). Exactly those S⊆supp(alpha) occur. On this fixed-alpha fiber the differential is simply alternating exterior deletion with coefficient ±1. If alpha≠0, choose its least active prime p0 and let h be wedge multiplication by theta_p0. Exterior anticommutation gives the explicit contraction
+
+    d h + h d = I.
+
+So the complex is **acyclic in every nonzero prime-power multidegree**; only alpha=0 retains H0=Q. It follows that its alternating count is
+
+    chi(alpha) = sum_{S⊆supp(alpha)} (-1)^|S|
+               = 1 if alpha=0, else 0.
+
+This is the exact full integer arithmetic identity sum_{d|n} μ(d)=δ_{n,1}. At n=p² the two chain states x_p² (degree 0) and x_p theta_p (degree 1) are mapped bijectively by d: this gives 1−1=0 WITHOUT deleting the actual p² state, repairing the earlier false J Z J coefficient. The squarefree nilpotent exterior variables are auxiliary CANCELLATION generators; polynomial prime exponents remain completely unbounded. This is the precise categorical mechanism suggested by “negative counting before the number line.”
+
+The full polynomial (“bosonic”) Hilbert series is prod_p(1-z_p)^-1. The signed exterior super-Euler series is prod_p(1-z_p). Their product is identically one. At z_p=p^-s, Re(s)>1, this is the genuine all-powers ζ(s)/ζ(s) cancellation; it is NOT uniform minus phase ∏(1+p^-s)^-1. Reversing the entire exterior chain orientation by J=(-1)^homological degree conjugates d to -d and leaves homology unchanged. With original multiplicative unit, fixed Weil tests and idelic source this does NOT grant arbitrary sign/gamma choices. The exterior model is classical Koszul resolution, not new academic priority.
+
+The source code proves d²=0, dh+hd=I, exact integer Euler cancellation for all finite prime dimensions/multidegrees, and source conditions. An INDEPENDENT rational Gaussian elimination oracle recovers each boundary rank: for m active primes, rank(d_j)=binomial(m-1,j-1), j>=1. Removing the required wedge sign at degree two yields d²=2 rather than zero, a hostile calibration. Genuine p^k, p²q, p²q³ and composites are retained; fake local prime 6 is rejected.
+
+## OM-11: Koszul-Hodge positivity and the ORIGINAL arithmetic log generator (PROVED AUXILIARY)
+
+Equip each fixed multidegree exterior fiber with the standard positive Hilbert inner product, making the ordered wedge basis orthonormal. Write iota_p for contraction and epsilon_p for exterior creation. The Clifford relation is
+
+    iota_p epsilon_q + epsilon_q iota_p = delta_pq I.
+
+Thus if d=sum_{p|n} iota_p and d*=sum_{p|n} epsilon_p,
+
+    Δ = d d* + d* d = omega(n) I,
+
+where omega(n) is the number of DISTINCT prime divisors. This is an EXACT positive-semidefinite Hodge Laplacian, strictly positive on each fiber except n=1. The same exterior signs that created negative chain counts now cause the off-diagonal terms to cancel, giving a positive operator.
+
+There is also a source-weighted, **fiberwise** factorization: set
+
+    Q_n = sum_{p|n} sqrt(v_p(n) log(p)) iota_p,
+    Q_n* = sum_{p|n} sqrt(v_p(n) log(p)) epsilon_p.
+
+The same Clifford identity proves
+
+    {Q_n,Q_n*} = (sum_p v_p(n) log(p)) I = log(n) I.
+
+Therefore the known SUCC logarithmic arithmetic generator H|n>=log(n)|n> has a rigorous graded source-positive factorization in an enlarged exterior Hilbert carrier. The relative signs are load-bearing: they force the off-diagonal cross terms to vanish. This is NOT the original polynomial-R-linear Koszul differential (weights depend on each n), and it is not the signed Weil quadratic form or RH. It is an exact construction of a distinct positive source operator, with the missing Weil identification clearly visible.
+
+Independent exact rational Clifford/matrix controls verify {iota_p,epsilon_q}=delta_pq and a fully weighted example with weights 2,3,5 producing Laplacian (2²+3²+5²)I=38I. The log weights are handled symbolically, no fabricated floating interval certification. The source integer n can be recovered from unique factorization for every tested multidegree.
+
 ## OM-08: The remaining authenticated RH-hard square (UNVERIFIED)
 
 Prior SUCC research/2026-10-15/ONE_OBJECT_TATE_WEIL_SUZUKI_CONNES.md constructs the original signed completed finite-Gamma Weil W_J on all C_c² tests with genuine prime powers, real Gamma, pole/contact and source-domain controls. We have NOT derived a Connes global trace distribution equaling that same W_J, including the canonical identity singularity and its analytic limit, from the positive projective/radial source; still less have we proved universal positivity.
@@ -132,6 +182,6 @@ Precisely missing: (1) PGL2 spherical/radial to GL1 idelic scaling intertwiner o
 
 Imported classical mathematics: incidence Möbius inversion, Grothendieck K0, p-adic Haar, Tate local Mellin, PGL2 Bruhat–Tits spheres, real continuous characters, rational product formula, unique factorization. Primary mathematical references: Alain Connes, Trace formula in noncommutative geometry and the zeros of the Riemann zeta function, Selecta Math. 5 (1999), arXiv:math/9811068; Connes–Consani, Weil positivity and Trace formula, the archimedean place, arXiv:2006.13771 (updated 2026), with the restricted Sonin compression; J. Raimbault, Arbre du groupe PGL2 et opérateurs de Hecke (2016); Tate's thesis (1950/1967 reprint) with normalized real Gaussian and finite 1_Zp.
 
-Implementation (standard-library exact arithmetic, no zeros): observational_succ/oriented_mobius_adelic.py; radial_projective_trace_bridge.py; full_prime_tower_transport.py; connes_compact_open_test_bridge.py; mobius_tate_gamma_remainder.py. Five matched independent test suites, a source claim supplement, and dedicated CI for Python 3.10 and 3.13. Execution receipts are restricted to actual GitHub CI results at exact commit SHA, not inferred from finite proof examples.
+Implementation (standard-library exact arithmetic, no zeros): observational_succ/oriented_mobius_adelic.py; radial_projective_trace_bridge.py; full_prime_tower_transport.py; connes_compact_open_test_bridge.py; mobius_tate_gamma_remainder.py; koszul_prime_cancellation.py. Six matched independent test suites, a source claim supplement, and dedicated CI for Python 3.10 and 3.13. Execution receipts are restricted to actual GitHub CI results at exact commit SHA, not inferred from finite proof examples.
 
 **No RH proof, no new global trace formula, no new academic priority.**
