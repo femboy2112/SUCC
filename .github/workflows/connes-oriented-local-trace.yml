@@ -8,6 +8,10 @@ on:
     paths:
       - 'observational_succ/connes_oriented_scaling.py'
       - 'tests/test_connes_oriented_scaling.py'
+      - 'observational_succ/multiplicative_orientation_gram.py'
+      - 'tests/test_multiplicative_orientation_gram.py'
+      - 'research/2026-10-18/MULTIPLICATIVE_ORIENTATION_GRAM.md'
+      - 'docs/CLAIM_SUPPLEMENT_MULTIPLICATIVE_ORIENTATION_GRAM.md'
       - 'research/2026-10-18/CONNES_ORIENTED_LOCAL_TRACE_BRIDGE.md'
       - 'docs/CLAIM_SUPPLEMENT_CONNES_ORIENTED_SCALING.md'
       - '.github/workflows/connes-oriented-local-trace.yml'
@@ -36,7 +40,11 @@ jobs:
         run: |
           python -m compileall -q observational_succ/connes_oriented_scaling.py
           python -m compileall -q tests/test_connes_oriented_scaling.py
+          python -m compileall -q observational_succ/multiplicative_orientation_gram.py
+          python -m compileall -q tests/test_multiplicative_orientation_gram.py
       - name: Finite analytic and hostile orientation controls
         run: python -m unittest discover -s tests -p 'test_connes_oriented_scaling.py' -v
+      - name: Exact arithmetic and archimedean Gram, valuation and cross-oracle checks
+        run: python -m unittest discover -s tests -p 'test_multiplicative_orientation_gram.py' -v
       - name: Verify historical provenance manifests
         run: python scripts/verify_provenance.py
