@@ -223,3 +223,50 @@ def log_gcd_gram_certificate(labels, coefficients):
     return {"prime_log_coefficients":result,
             "positive_gram_for_arbitrary_signed_coefficients":True,
             "origin_anchored_at_1":True, "Weil_identification_proved":False}
+
+
+
+def mobius_euler_vacuum_certificate(primes):
+    """Exact finite Euler factorization on vacuum |1> from prime isometries.
+
+    B_P=prod_p(I-p^-1/2 V_p); V_p|n>=|pn>. Expanding:
+    B_P|1> = sum_{d|primorial(P)} mu(d)/sqrt(d)|d>.
+    The vacuum norm squared is prod_p(1+1/p). Finite B_P*B_P is PSD.
+    Along ALL primes the norm diverges (classical sum 1/p divergence);
+    a bounded/strong all-place limit is NOT supplied by finite positivity.
+    """
+    if type(primes) is not tuple or not 1<=len(primes)<=8 or any(
+            type(p) is not int or p<2 or p>100000 or prime_valuations(p)!={p:1}
+            for p in primes) or primes != tuple(sorted(set(primes))):
+        raise MultiplicativeGramError("1..8 distinct sorted genuine prime places required")
+    terms=((1,1,Fraction(1)),)
+    for p in primes:
+        terms=terms+tuple((d*p,-sign,sq/Fraction(p)) for d,sign,sq in terms)
+    total=sum((sq for _,_,sq in terms),Fraction(0))
+    expected=Fraction(1)
+    for p in primes:
+        expected *= 1+Fraction(1,p)
+    if total!=expected or len(terms)!=(1<<len(primes)):
+        raise AssertionError("squarefree Euler operator expansion inconsistent")
+    return {"source_primes":primes, "squarefree_vacuum_terms":tuple(sorted(terms)),
+            "vacuum_norm_squared":total,"direct_euler_norm_squared":expected,
+            "each_finite_BstarB_is_PSD":True,
+            "unnormalized_infinite_vacuum_has_finite_norm":False,
+            "global_Connes_trace_proved":False,"RH_proved":False}
+
+
+def single_prime_shift_sign_control(p):
+    """An ACTUAL SUCC multiplication operator can be indefinite.
+
+    Compress V_p+V_p* to e1,e_p: [[0,1],[1,0]], eigenvalues +/-1.
+    Yet (I-V_p/sqrt(p))*(I-V_p/sqrt(p)) is PSD and has negative
+    offdiagonal entries on that same subspace.
+    """
+    if type(p) is not int or p<2 or prime_valuations(p)!={p:1}:
+        raise MultiplicativeGramError("authentic prime SUCC multiplication required")
+    return {"prime":p,"selfadjoint_shift_compression":((0,1),(1,0)),
+            "positive_direction_rayleigh":2,"negative_direction_rayleigh":-2,
+            "factorized_gram_diagonal":1+Fraction(1,p),
+            "factorized_negative_offdiag_squared":Fraction(1,p),
+            "factorized_PSD_by_BstarB":True,
+            "semigroup_multiplication_alone_does_not_force_PSD":True}
