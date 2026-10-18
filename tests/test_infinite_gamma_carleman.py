@@ -5,7 +5,7 @@ from observational_succ.infinite_gamma_carleman import (
     GammaTowerError, alpha, finite_geometric, gamma_spacing_coefficient,
     exp_negative_interval, analytic_gamma_kernel_window,
     dyadic_nonnorm_witness, sqrt_lower, h01_tail_bound,
-    original_source_infinite_gamma_contract,
+    original_source_infinite_gamma_contract, comparison_prime_threshold_packet,
 )
 
 
@@ -43,6 +43,23 @@ class ExactOriginalGammaTower(unittest.TestCase):
             self.assertLess(2*F(w["corner_interval_delta"]),F(1,4))
             self.assertTrue(w["operator_norm_convergence_refuted"])
             self.assertFalse(w["RH_proved"])
+
+    def test_comparison_prime_threshold_noncompact_jump(self):
+        for b in (F(3,4),F(999,1000),F(999999,1000000)):
+            for J in (8,64,189):
+                w=comparison_prime_threshold_packet(b,J)
+                self.assertTrue(w["nontrivial_edges"])
+                self.assertGreaterEqual(F(w["nonnorm_rational_floor"]),F(3,32))
+                self.assertEqual(w["limit_boundary_essential_norm"],
+                                 "pi/2 (PAPER theorem)")
+                self.assertTrue(w["comparison_not_original_log2"])
+        for b in (F(1),F(11,10),F(5,4)):
+            w=comparison_prime_threshold_packet(b,64)
+            self.assertFalse(w["nontrivial_edges"])
+            self.assertEqual(w["limit_boundary_essential_norm"],"0")
+            self.assertTrue(w["compressed_prime_shift_zero"])
+        with self.assertRaises(GammaTowerError):
+            comparison_prime_threshold_packet(F(1,2),64)
 
     def test_rational_sqrt_bounds_and_H01_rate(self):
         for q in (F(1,2),F(7,5),F(128),F(757,2)):
