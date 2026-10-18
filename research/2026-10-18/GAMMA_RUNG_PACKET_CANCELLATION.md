@@ -33,3 +33,19 @@ The finite packet strictly repairs that **same source direction**. It does not c
 ## Next independent holdout
 
 Compute the actual original Q_J interval via `authentic_full_low_entry` at one independent Gamma depth near the certified bound, and verify the predicted positive sign without using the packet construction to fit that test. Next explore whether reflection parity and authentic prime-edge partial-shift eigenspaces yield useful almost-invariant packets under the Gamma OU operator. Do not assume the OU and prime swap commute: that commutator is a falsifiable obstruction. External originality unassessed; the fundamental tail inequalities are inherited classical/Fourier facts.
+
+## 5. Decisive packet-no-go: true prime-edge swap does NOT commute with even the first Gamma OU rung
+
+**GPK-06 [PAPER PROVED + EXACT ORIGINAL SOURCE GATE].** Let `b=log 2` (source certifies `5/8<b<3/4`), `I=(-1/2,1/2)`, and `A_b=T_b+T_-b` with zero extension. Let `E_alpha` have kernel `exp(-alpha|x-y|)`, original first real Gamma rung `alpha=1/2`. Choose the legal `f=1_[-1/8,1/8]` (primitive-space L2 test; smooth center approximants exist). Because the support lies strictly in the unshifted center, `A_b f=0`. At `x=-3/8`, `z=x+b in (1/4,3/8)`, while `y in [-1/8,1/8]`. Hence `0<z-y<1/2` and `exp(-(z-y)/2)>1-(z-y)/2>3/4`. Therefore
+
+```
+[A_b,E_(1/2)]f(-3/8)
+ = (A_b E_(1/2)f)(-3/8) - (E_(1/2) A_b f)(-3/8)
+ > (1/4)(3/4) = 3/16.
+```
+
+The expression is continuous near the chosen point, so the commutator is nonzero as an L2 operator, not just one anomalous point value. Since the original Gamma rung is `4 I-E_(1/2)`, it too fails to commute with the true prime partial shift. **Thus independent prime-swap eigenmode packets cannot generally be invariant Gamma packets**; diagonally grouping those modes and declaring independent cancellation is invalid. Reflection parity still commutes with both operators, and remains a mathematically legitimate coarse split. This supports studying off-diagonal compensated packets *within parity sectors* rather than inventing a universal simultaneous eigenbasis.
+
+Exact rational geometry and strict `3/16` proof are in `observational_succ/prime_gamma_packet_commutator.py`. Source adapter pins original Git blob, genuine prime2 and log2 interval. This noncommutation theorem is **not** a negative Weil quadratic witness, does not decide S4, and does not alter the valid positive Gamma packet result.
+
+**Independent Q_189 evaluation remains a source-access gap:** the inherited `authentic_full_low_entry` adapter routes through a Gamma cutoff guard `J<=75`. A direct high-J original-source holdout requires an independently extended exact analytic evaluator and fresh provenance/interval controls; do not bypass the guard by silently altering historical code.
