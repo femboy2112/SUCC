@@ -15,7 +15,7 @@ theorem exact_recovery_requires_injective
     {X : Type u} {Report : Type v}
     (observe : X → Report) (decode : Report → X)
     (recover : ∀ x, decode (observe x) = x) :
-    Function.Injective observe := by
+    ∀ x y, observe x = observe y → x = y := by
   intro x y hxy
   calc
     x = decode (observe x) := (recover x).symm
