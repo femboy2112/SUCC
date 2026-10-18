@@ -104,3 +104,32 @@ Positive controls: independent Jacobi-vs-Legendre polynomials, direct rational i
 The project can claim paper-proved source-conditional finite-trial and H² Gamma statements plus exact source mixed CI, not RH, novel half-density physics, or first-window positivity. A PR with this exact scope is academically more useful than declaring a universal sign from an unrelated PSD Gram.
 
 **References:** protected SUCC derivations in research/2026-10-17/PIECEWISE_SUZUKI_AND_K_RIESZ_SOURCE.md, PR #155; source-four PR #163; infinite-Carleman PR #171; Connes-local-half-density PRs #169/#172; classical Gaussian splitting in CMU notes chapter 10, https://www.math.cmu.edu/users/vahagn/lecture_notes/numbertheory.pdf.
+
+
+## 7. Exact genuine Gaussian prime-ideal shell discrimination (GKR-09)
+
+The relation 2=N(1+i) can be tested at the level of **complete local prime-power towers**, not just a first numerical coefficient. Classical algebraic number theory gives the Euler-factor decomposition, for Re(s)>1,
+
+    ζ_{Q(i)}(s)=ζ_Q(s) L(s,χ_{−4}),
+    χ_{−4}(2)=0,
+    χ_{−4}(p)=+1 for p=1 mod4,
+    χ_{−4}(p)=−1 for p=3 mod4.
+
+For t=p^(−s), the complete Gaussian local factor is
+
+    (1−t)^−1(1−χ_{−4}(p)t)^−1.
+
+Three source-distinguishing regimes follow algebraically, with ZERO nontrivial-zero coordinates:
+- **p=2 ramified:** (1−2^(−s))^−1. Precisely the rational ζ_Q local factor, at ALL depths k: the logarithmic derivative shell at norm 2^k has coefficient (log2) and half-density 2^(−k/2).
+- **p=5 split:** (1−5^(−s))^−2. Two norm-5 Gaussian prime ideals yield coefficient **2log5** at every norm 5^k, not log5. The source must NOT label this as a second "rational 5" jet.
+- **p=3 inert:** (1−3^(−2s))^−1. No norm-3 Gaussian prime ideal: the first nonzero source shell is norm 9 with coefficient log9=2log3 and half-density 1/3; norms 3^(odd k) have zero coefficient.
+
+For arbitrary genuine rational p and k>=1, the coefficient relative to log p at ideal norm p^k is precisely
+
+    c_{p,k}=1+χ_{−4}(p)^k.
+
+The exact module observational_succ/gaussian_euler_shell_controls.py implements this full prime-power coefficient and the complete local Euler factor for rational convergent integer σ>=2. It compares an independent splitting-type formula with the product ζ_p L_p and checks original frozen Suzuki prime2 and true p^k source labels, and rejects a fake composite impulse n=6. It does not read zeros or replace any signed original source.
+
+**New-to-project structural answer:** at the uniquely ramified p=2, the ordinary ζ_Q and Gaussian ζ_{Q(i)} *finite local prime-power distribution coefficients* agree in **all** k (not only k=1). But Gaussian and rational GLOBAL completed sources differ: ζ_{Q(i)} has a complex Archimedean Gamma factor, different conductor/discriminant, other finite-place multiplicities and poles/contact. This is NOT a signed-Weil intertwinement nor a proof of ζ RH via Gaussian primes.
+
+External classical source verification: CMU number theory notes, Gaussian prime splitting, chapter 10 https://www.math.cmu.edu/users/vahagn/lecture_notes/numbertheory.pdf ; Dedekind-zeta local factor descriptions https://encyclopediaofmath.org/wiki/Dedekind_zeta-function . See also the already active SUCC Gaussian walk/coset research branches for independent arithmetic controls, not imported as source for this proof.
