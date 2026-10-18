@@ -1,0 +1,31 @@
+name: Tessaiga Iroh exact clock-factorial duality
+
+on:
+  push:
+    branches:
+      - 'research/tessaiga-iroh-clock-factorial-2026-10-17'
+  pull_request:
+    paths:
+      - 'observational_succ/clock_factorial_duality.py'
+      - 'tests/test_clock_factorial_duality.py'
+      - 'scripts/tessaiga_iroh_probe.py'
+      - 'research/2026-10-17/TESSAIGA_IROH_CLOCK_FACTORIAL_DUALITY_RECEIPT.json'
+
+jobs:
+  exact-clock:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Verify frozen provenance manifest
+        run: python scripts/verify_provenance.py
+      - name: Run eleven exact and adversarial tests
+        run: python -m unittest discover -s tests -p 'test_clock_factorial_duality.py' -v
+      - name: Verify pinned finite receipt
+        run: python scripts/tessaiga_iroh_probe.py --verify
