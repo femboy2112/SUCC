@@ -5,12 +5,20 @@ No nontrivial zeros, RH conclusion, or nonzero unperformed source measurement.
 """
 import argparse
 import json
+import sys
 from fractions import Fraction as F
 from pathlib import Path
+
+# Script-path execution sets sys.path[0] to scripts/, not the repository root.
+# Recover only this checked-in parent for the independently reproducible probe.
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 from observational_succ.bidirectional_cut import (
     bernoulli_clock_covariance, square_root_tail_energy,
     clock_period_integral,clock_tail_optimum,certified_cut_residual,
     SourcePassport)
+from observational_succ.clock_memory_resolvent import (
+    memory_bounds, backward_ladder_mutation, folded_memory_energy_bounds,
+)
 from observational_succ.bidirectional_hilbert import (
     orthogonal_innovations,hidden_target_counterexample)
 
@@ -49,6 +57,14 @@ def build():
     assert witness['lower']>1 and nontrivial['minimum']==F(1,4)
     assert certified_cut_residual((F(0),),R=28,terms=14)['upper']==1
     sample=certified_cut_residual((F(1),F(-1),F(1)),R=48,terms=14)
+    # Second independent source: fold the full weighted infinity-tail onto
+    # one finite modular clock. Preserve the required decay-at-infinity gate.
+    memory=memory_bounds(F(0),1,depth=128)
+    ghost=backward_ladder_mutation(F(1,2),3,depth=24,ghost=F(1,5))
+    folded=folded_memory_energy_bounds((F(1),F(-1),F(1)),6,J=20,subdivisions=10)
+    assert folded['full_squared_error_lower']<=sample['upper']
+    assert folded['full_squared_error_upper']>=sample['lower']
+    assert ghost['boundary_decay_certified'] is False
     witness3=hidden_target_counterexample()
     assert witness3['surviving']==1
     src=SourcePassport('declared-positive-clocks',0,tuple(range(1,9)))
@@ -73,7 +89,16 @@ def build():
             'full_L2_upper':outward(sample['upper'],'upper'),
             'L2_tail_upper':sample['tail_upper'],
         },
-        'finite_orthogonal_ghost':{
+        'backward_clock_memory':{
+            'origin_reciprocal_square_tail_lower':outward(memory['lower'],'lower'),
+            'origin_reciprocal_square_tail_upper':outward(memory['upper'],'upper'),
+            'ghost_shift_equation_indistinguishable':ghost['shift_law_cannot_discriminate_ghost'],
+            'ghost_does_not_decay_at_infinity':not ghost['boundary_decay_certified'],
+            'folded_weighted_full_L2_lower':outward(folded['full_squared_error_lower'],'lower'),
+            'folded_weighted_full_L2_upper':outward(folded['full_squared_error_upper'],'upper'),
+            'rational_memory_tail_sourced_from_positive_clock':True,
+        },
+        'finite_orthogonal_ghost':{ 
             'target_norm_sq':witness3['norm_sq'],
             'all_forward_readings_zero':not any(witness3['innovation_energies']),
             'surviving_residual_sq':witness3['surviving'],

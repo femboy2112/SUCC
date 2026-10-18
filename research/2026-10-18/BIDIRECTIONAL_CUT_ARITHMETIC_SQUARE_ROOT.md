@@ -134,3 +134,45 @@ This theorem separates existence of a lawful mathematical functional, identifica
 **Best next probe:** derive a **two-boundary gluing inequality** controlling weighted cells `x≈1,...,L_N` from authenticated finite SUCC clocks *and* the backwards modular Haar square-root, with explicit norm dependence on coefficients and a non-circular rate. Require (a) true input source and counterterm identification, (b) a constructive sequence of coefficients with a certified full `L²(dx/x²)` bound, (c) holdout beyond the fitted clock horizon, and (d) agreement with the known Burnol lower bound. This would distinguish genuine progress from another source-positive but RH-irrelevant covariance.
 
 **Source references:** Báez-Duarte (2003), arXiv:math/0202141; arXiv:math/0205003; Burnol *Adv. Math.* 170 (2002) 56–70, doi:10.1006/aima.2001.2066; SUCC PRs #136, #157, #162, #165; original SUCC Tate/Weil source dossier. Proof originality outside elementary classical identities: **UNVERIFIED**.
+
+## 9. BDC-09 — the backward-from-infinity memory kernel is an exact SUCC resolvent (PAPER PROVED)
+
+**This is the sharper source comparison.** Uniform cyclic Haar averaging in BDC-02 omitted the real-line weight. The *actual* infinite Hilbert error can nevertheless be folded over one finite common clock, provided the complete reciprocal-square memory of its unseen future is retained.
+
+For `L=lcm(1,...,N)`, write `x=u+jL`, `0<=u<L`, `j>=0`. Since `A_c(x+L)=A_c(x)`, Tonelli for the nonnegative squared error gives
+
+`||h-F_c||² = b² + ∫_0^L A_c(u)² W_L(u) du`, `b=Σ c_n/n`,
+
+where
+
+`W_L(u) = R_L(u)` for `0<=u<1`, and
+
+`W_L(u) = u^(-2)+R_L(u)` for `1<=u<L`,
+
+`R_L(u)=Σ_(j>=1) 1/(u+jL)^2 = L^-2 ψ_1(1+u/L)`. (BDC.7)
+
+The last identity uses the classical trigamma series; it is **not** an identification with the real Gamma component of the signed Weil form. The weight is nonconstant, changes one-sided behavior at the cut u=1, and carries exactly the information that normalized finite-clock Haar averaging discarded.
+
+### Backward SUCC recurrence and the no-ghost boundary
+
+For every `u>=0`, the kernel satisfies the exact backward-step identity
+
+`R_L(u) - R_L(u+L) = 1/(u+L)^2`, (BDC.8)
+
+and the infinity boundary `R_L(u+kL)->0`. This is a *well-posed discrete Poisson/renewal law with a boundary condition at infinity*. Conversely, every solution of (BDC.8) differs from `R_L` by an arbitrary L-periodic function. Enforcing decay at infinity kills that periodic ghost, proving **uniqueness**. It makes precise which part of a backwards Dedekind-style reconstruction is an equation and which part is an additional asymptotic boundary law. No finite list of shift equalities authenticates the boundary law by itself.
+
+This may be written `R_L=(I-S_L)^(-1)a_L` pointwise on the restricted source `a_L(u)=(u+L)^(-2)` using a convergent Neumann series. **Do not** claim `(I-S_L)^(-1)` is a bounded inverse on all of `C_0`: the shift there has norm one and the Neumann inverse requires a suitable domain.
+
+### Rigorous rational interval instrument
+
+For depth `J>=1`, put `R_(L,J)(u)=Σ_(j=1)^J (u+jL)^(-2)`. The omitted tail has the exact source-independent bounds
+
+`1/[L(u+(J+1)L)] <= R_L(u)-R_(L,J)(u) <= 1/[L(u+J L)]`. (BDC.9)
+
+`clock_memory_resolvent.py` implements these in rational arithmetic; its weighted-clock integration uses exact subcell integrals of `A_c²` and monotone endpoint enclosures for `W_L`. The **one-sided cut boundary** is load-bearing: using the `u=1` right branch when enclosing a subcell below 1 creates a false lower bound (an adversarial development regression caught and corrected before commit). The independent all-line rational cutoff instrument `certified_cut_residual` encloses all the new folded-clock trial intervals, with no interpolated zeta zeros.
+
+For `L=1`, `R_1(0)=Σj^-2=ζ(2)` exactly: the infinite reciprocal-square sum is the **backward memory at the origin**. The Basel constant thus appears twice, both in the uniform finite-clock covariance and in the *weighted* infinity-memory kernel, but these are different source functionals and cannot be identified by positivity alone.
+
+### Verdict
+
+The backward compactification is now a rigorous **finite-clock plus uniquely decaying memory kernel**. The hard part is no longer how to write the correct weighted norm; we can. It is to prove that the source-generated coefficient innovations drive this norm to zero for the specific upper cut as `N→∞`. That step remains precisely the RH-equivalent Báez-Duarte closure; no noncircular bound or Weil sign is obtained. Source access to arbitrarily large clocks is separately conditional on the SUCC observer constructor laws.

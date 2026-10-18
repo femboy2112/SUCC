@@ -8,8 +8,10 @@ on:
     paths:
       - 'observational_succ/bidirectional_cut.py'
       - 'observational_succ/bidirectional_hilbert.py'
+      - 'observational_succ/clock_memory_resolvent.py'
       - 'tests/test_bidirectional_cut.py'
       - 'tests/test_bidirectional_hilbert.py'
+      - 'tests/test_clock_memory_resolvent.py'
       - 'tests/test_claim_namespace_collisions.py'
       - 'scripts/bidirectional_cut_probe.py'
       - 'docs/CLAIM_NAMESPACE_REGISTRY.json'
@@ -28,5 +30,6 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - run: python -m unittest discover -s tests -p 'test_bidirectional_*.py' -v
-      - run: python scripts/bidirectional_cut_probe.py --verify
+      - run: python -m unittest discover -s tests -p 'test_clock_memory_resolvent.py' -v
+      - run: PYTHONPATH=. python scripts/bidirectional_cut_probe.py --verify
       - run: python -m unittest discover -s tests -p 'test_claim_namespace_collisions.py' -v

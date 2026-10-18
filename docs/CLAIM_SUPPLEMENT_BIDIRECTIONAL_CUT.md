@@ -12,5 +12,6 @@ Companion: [`research/2026-10-18/BIDIRECTIONAL_CUT_ARITHMETIC_SQUARE_ROOT.md`](.
 | BDC-06 | Forward innovation differences of squared norms telescope to backward residual | CLASSICAL/PAPER PROVED; completeness of the specific target remains RH-equivalent |
 | BDC-07 | Compatible bounded functional family iff unique extension to closure; boundedness need not kill orthogonal target | CLASSICAL/PAPER PROVED, finite ghost controls; source passports not physical attestation |
 | BDC-08 | The actual unmodified signed completed Weil form has been square-root factored by BDC arithmetic energy | UNVERIFIED; no Gamma/pole/contact bridge, no signed-Weil positivity, no RH proof |
+| BDC-09 | Exact weighted upper-cut Hilbert error equals one LCM clock with backward reciprocal-square memory `R_L`; unique decay boundary kills periodic ghosts | PAPER PROVED / RATIONAL FINITE TESTED; does not imply full Nyman closure or original signed Weil sign |
 
 Validation: `tests/test_bidirectional_cut.py`, `tests/test_bidirectional_hilbert.py`, and `scripts/bidirectional_cut_probe.py --verify`, with exact pinned rational receipt. No nontrivial zeros or original Tate/Weil files used as numerical inputs.
