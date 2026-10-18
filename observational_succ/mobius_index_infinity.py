@@ -318,3 +318,36 @@ def sieve_succ_commutator(primes,n):
         "finite_stage_source_outcome_equals_global":coef==limit_coef,
         "completed_Weil_trace_or_contact_identified":False,
     }
+
+
+
+def finite_normalized_trace_escape(N,fixed_label=1):
+    """An exact probability state can lose ALL mass on fixed basis vectors.
+
+    rho_N=P_N/N has Tr(rho_N)=1, but <n|rho_N|n>=1/N for
+    every fixed n<=N and tends to zero. No trace-class positive
+    density rho with Tr(rho)=1 can have ALL its diagonal entries
+    zero, because Tr(rho)=sum_n<n|rho|n> for any orthonormal basis.
+    Consequently a weak-* limit of normalized finite matrix traces
+    (when taken via subsequences/subnets on bounded observables)
+    is SINGULAR/non-normal, not an ordinary Hilbert-space density.
+
+    This is a classical warning about 'normalization at infinity':
+    the source observer state/topology matters. It does NOT identify
+    a Dixmier trace or the Connes canonical trace functional.
+    """
+    N=_natural_source(N)
+    n=_natural_source(fixed_label)
+    prob=F(1,N) if n<=N else F(0)
+    return {
+        "finite_rank_source_cutoff":N,
+        "fixed_original_integer_basis_label":n,
+        "finite_density_matrix_trace":F(1),
+        "density_matrix_operator_norm":F(1,N),
+        "fixed_basis_probability":prob,
+        "limit_fixed_basis_probability_for_every_n":F(0),
+        "candidate_normal_state_with_all_zero_diagonals_possible":False,
+        "source_tracial_state_at_infinity_can_be_nonnormal":True,
+        "same_state_as_unit_vacuum":False,
+        "actual_Connes_trace_constructed":False,
+    }
