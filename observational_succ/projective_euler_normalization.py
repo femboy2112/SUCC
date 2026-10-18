@@ -101,9 +101,9 @@ class ProjectiveCylinder:
     def __post_init__(self):
         if type(self.local) is not tuple:
             raise ProjectiveEulerError("tuple of local source states required")
-        ps=_stage(tuple(c.p for c in self.local))
         if any(type(c) is not OrientedPrime for c in self.local):
             raise ProjectiveEulerError("authentic OrientedPrime objects required")
+        ps=_stage(tuple(c.p for c in self.local))
         if self.local and len({(c.source_id,c.epoch) for c in self.local})!=1:
             raise ProjectiveEulerError("unrelated source IDs or epochs cannot be glued")
         if ps!=tuple(c.p for c in self.local):
