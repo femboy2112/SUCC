@@ -27,6 +27,10 @@ The full P-coordinate matrices are tensor products of these two-state matrices. 
 
 **This exactly realizes the hypothesis that negative-first counting can be isomorphic to positive counting via orientation**—provided the source really is squarefree Boolean incidence and every operator/test is transported. The signs are forced by the inverse-of-accumulation constraint, not selected by fitting desired RH values.
 
+
+
+**Positivity vocabulary firewall:** Z having entries in {0,1} is *coordinatewise nonnegative incidence data*, not a Hermitian positive-semidefinite matrix. Indeed Z_1 is not symmetric. The identity M=JZJ proves equivalence of an inverse under orientation, NOT Weil's self-adjoint positivity. Orientation alone does not make a non-Hermitian incidence operator into a positive quadratic form. Any future Hilbert/Weil functor must prove the actual adjoint and pairing identities on its declared test domain.
+
 ## OM-03: Prime squares give the first decisive failure (PROVED COUNTERMODEL)
 
 On a FULL prime-valuation chain 0,1,2 (states 1,p,p²):
@@ -57,7 +61,7 @@ The Bruhat–Tits tree for PGL2(Q_p) is (p+1)-regular. With a root and no backtr
 
     ((p+1)/p)/N_k = 1/p^k  for all k>=1.
 
-Taking positive square roots yields EXACTLY p^(-k/2), including p²,p³,... rather than only the first jet. The project code independently compares (i) this radial amplitude squared, (ii) the authentic Connes p-adic off-identity squared half-density C_p(p^k)^2, and (iii) the norm of the genuine single-p-place Tate idèle p^k, all equal to p^-k. This is not a proof of an intertwinining representation on the full trace test space, nor does geometry uniquely prescribe the chosen normalization; it is a source-checkable candidate with exactly the required magnitude.
+Taking positive square roots yields EXACTLY p^(-k/2), including p²,p³,... rather than only the first jet. The project code also cross-checks ALL genuine prime-power labels through a declared finite horizon against the pinned original von-Mangoldt tape (including p² and p³, rejecting composite 6). It independently compares (i) this radial amplitude squared, (ii) the authentic Connes p-adic off-identity squared half-density C_p(p^k)^2, and (iii) the norm of the genuine single-p-place Tate idèle p^k, all equal to p^-k. This is not a proof of an intertwinining representation on the full trace test space, nor does geometry uniquely prescribe the chosen normalization; it is a source-checkable candidate with exactly the required magnitude.
 
 The primitive log clock is supplied by the already-established [H,V_p]=log(p)V_p, H|n>=log(n)|n>. Together this recovers the *magnitude* log(p)/p^(k/2) of the original Weil prime-power term. Signed distribution and identity-contact remain absent.
 
