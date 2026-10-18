@@ -191,3 +191,36 @@ def signed_prime_distribution_receipt(N, log_test_values):
         "completed_Weil_PSD_proved":False,
         "RH_proved":False,
     }
+
+
+
+def compact_contact_ambiguity(c):
+    """Exact original Cc^2 autocorrelation where identity contact is OBSERVABLE.
+
+    Choose f(t)=(1-t^2)^3 on [-1,1] and 0 outside. f is C_c^2,
+    h=f*tilde(f) is a lawful original Weil autocorrelation. We have
+
+       h(0)=||f||_2^2 = int_-1^1 (1-t^2)^6 dt = 2048/3003.
+
+    Adding c*delta_0 to any signed Weil/Connes distribution leaves all
+    off-identity tests identical, but changes h by c*2048/3003.
+    Thus identity-contact normalization is NOT observationally redundant,
+    and prime-power-only transport never determines a full Weil form.
+    """
+    from math import comb
+    if type(c) not in (int,F):
+        raise HomotopyDefectError("exact rational contact mutation required")
+    norm=2*sum((F((-1)**k*comb(6,k),2*k+1) for k in range(7)),F(0))
+    if norm!=F(2048,3003) or norm<=0:
+        raise AssertionError("independent polynomial compact bump norm failed")
+    return {
+        "source_test":"f(t)=(1-t²)^3 on |t|<=1, else 0",
+        "f_is_Cc2":True,
+        "autocorrelation_at_origin":norm,
+        "contact_mutation":F(c),
+        "difference_in_signed_Weil_autocorrelation":F(c)*norm,
+        "all_off_identity_local_tests_unchanged":True,
+        "contact_is_source_observationally_redundant":F(c)==0,
+        "canonical_Connes_principal_value_matched":False,
+        "original_completed_Weil_PSD_proved":False,
+    }
