@@ -325,6 +325,8 @@ def frozen_operator_matrix_holdout(J=4,M=56,P=18):
       ("P2_P6",2,6),
       ("P1_P3",1,3),
     ]
+    if J>=8:
+        sample.extend((("P3_P7",3,7),("P4_P8",4,8)))
     cache={}
     action_cache={}
     results={}
