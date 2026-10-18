@@ -7,7 +7,7 @@ from observational_succ.radial_projective_trace_bridge import (
     radial_adjacency_coeff_square, radial_boundary_defect,
     tree_adjacency_sign_transport, independent_three_route_prime_jet,
     independent_ball_sphere_oracle, rooted_ball_vertices,
-    classical_tate_positive_euler_crosscheck,
+    classical_tate_positive_euler_crosscheck, original_weil_prime_tape_gate,
 )
 
 
@@ -83,6 +83,17 @@ class PrimeTreeRadialTraceTests(unittest.TestCase):
                 self.assertTrue(rec['actual_source_equal_to_positive'])
                 self.assertFalse(rec['actual_source_equal_to_negative'])
                 self.assertNotEqual(rec['negative_twist_factor'],rec['Tate_actual_local_factor'])
+
+    def test_full_original_weil_source_tape_not_just_selected_primes(self):
+        for horizon in (8,36,120,300):
+            result=original_weil_prime_tape_gate(horizon)
+            self.assertTrue(result['exact_all_prime_power_labels_and_half_density_squares'])
+            self.assertTrue(result['fake_prime6_not_in_source'])
+            self.assertFalse(result['original_signed_Weil_distribution_identified'])
+            self.assertIn((4,2),result['original_prime_power_tape'])
+            if horizon>=36:
+                self.assertIn((27,3),result['original_prime_power_tape'])
+                self.assertNotIn((6,6),result['original_prime_power_tape'])
 
     def test_fake_place_depth_and_source_mutants(self):
         for bad in (1,0,4,6,True,2.4):
