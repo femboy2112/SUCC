@@ -37,6 +37,8 @@ jobs:
         run: |
           PYTHONPATH=. python scripts/infinite_gamma_boundary_probe.py --verify
           PYTHONPATH=. python scripts/infinite_gamma_boundary_probe.py --source --verify
+      - name: Independently scout Mellin essential band (NUMERICAL ONLY)
+        run: PYTHONPATH=. python scripts/infinite_gamma_mellin_scout.py --verify
       - name: Parent real source boundary/finite Gamma packet holdouts
         run: |
           python -m unittest discover -s tests -p 'test_transported_gamma_boundary.py' -q
