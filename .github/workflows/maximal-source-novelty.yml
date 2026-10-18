@@ -1,0 +1,53 @@
+name: Maximal source novelty exact and Lean kernel
+on:
+  push:
+    branches:
+      - 'research/maximal-source-entropy-*'
+  pull_request:
+    paths:
+      - 'observational_succ/maximal_novelty_source.py'
+      - 'tests/test_maximal_novelty_source.py'
+      - 'scripts/maximal_novelty_source_probe.py'
+      - 'formal/MaximalSourceFactor.lean'
+      - '.github/workflows/maximal-source-novelty.yml'
+permissions:
+  contents: read
+jobs:
+  exact-source-novelty:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Exact window and source countermodel tests
+        run: python -m unittest discover -s tests -p 'test_maximal_novelty_source.py' -v
+      - name: Reproduce maximal finite block novelty control
+        run: python scripts/maximal_novelty_source_probe.py --verify
+  finite-lean-kernel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned standalone Lean4
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+      - name: Lean proof kernel check
+        run: |
+          "$HOME/.elan/bin/lean" --version
+          "$HOME/.elan/bin/lean" formal/MaximalSourceFactor.lean
+      - name: Reject proof bypass and claim overreach
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          s=Path("formal/MaximalSourceFactor.lean").read_text()
+          code=s.split("namespace ObservationalSUCC.MaximalSourceFactor",1)[1]
+          import re
+          assert re.search(r'\b(sorry|admit|axiom|unsafe|native_decide)\b',code) is None
+          PY
