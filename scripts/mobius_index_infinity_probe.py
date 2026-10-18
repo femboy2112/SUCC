@@ -23,6 +23,7 @@ from observational_succ.mobius_index_infinity import (
     strong_sieve_limit, sieve_succ_commutator,
     exact_prime_jets_from_index_density,
     finite_normalized_trace_escape,sign_mutant_control,
+    completed_source_blindness_controls,
 )
 from observational_succ.weighted_clock_cocycle import (
     memory_weight_bounds, finite_cocycle_composition,
@@ -46,6 +47,7 @@ def receipt():
     ghost=periodic_ghost_mutant(6,F(1,5))
     wrong=sign_mutant_control(2)
     trace_state=finite_normalized_trace_escape(300,1)
+    blind=completed_source_blindness_controls()
     if not (finite["integer_source_trace"]==56 and
             finite["additive_profinite_unit_Haar"]==F(4,15) and
             index["finite_commutator_trace"]==0 and
@@ -60,7 +62,11 @@ def receipt():
             cut["source_density_ratio_strict_lower"]==200 and
             ghost["integrated_source_mass_added"]==F(6,5) and
             not wrong["mutant_idempotent"] and
-            trace_state["fixed_basis_probability"]==F(1,300)):
+            trace_state["fixed_basis_probability"]==F(1,300) and
+            blind["zeta_primitive_p2_dirichlet_coefficient"]==1 and
+            blind["chi_minus_3_primitive_p2_coefficient"]==-1 and
+            blind["unit_W_contact_mutation_effect"]==F(2048,3003) and
+            not blind["full_signed_completed_W_identifiable_from_Vp_only"]):
         raise AssertionError("MII_SOURCE_INDEX_GENUINE_PROBE_FAILED")
     return {
         "source":"original integer SUCC + genuine prime FUCC",
@@ -85,6 +91,10 @@ def receipt():
             cut["source_density_ratio_strict_lower"],
         "periodic_ghost_changes_source_mass":ghost["integrated_source_mass_added"],
         "finite_normalized_trace_unit_basis_mass":trace_state["fixed_basis_probability"],
+        "character_source_p2_zeta":blind["zeta_primitive_p2_dirichlet_coefficient"],
+        "character_source_p2_chi_minus3":blind["chi_minus_3_primitive_p2_coefficient"],
+        "Weil_contact_mutation_autocorrelation_effect":blind["unit_W_contact_mutation_effect"],
+        "pure_positive_sieve_identifies_completed_Weil":blind["full_signed_completed_W_identifiable_from_Vp_only"],
         "Connes_canonical_principal_value_matched":False,
         "archimedean_Gamma_two_poles_contact_derived":False,
         "source_signed_completed_Weil_distribution_equated":False,
