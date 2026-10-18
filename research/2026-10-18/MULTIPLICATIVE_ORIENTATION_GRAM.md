@@ -133,6 +133,49 @@ On \(\mathbb Q_{>0}^\times\), the multiplication-invariant divisor kernel is a p
 
 This does NOT preclude an adelic or other topology retaining prime valuations; it refutes an unqualified one-dimensional Archimedean-continuity identification of the bare divisor kernel. SUCC's unit-successor \(n\mapsto n+1\) supplies a decisive source-differentiating probe: near-neighbors are close in real-log chart but arithmetically coprime.
 
+
+## MOG-08. Literal positive-integer multiplication shifts: the strong orientation test (PROVED)
+
+The preceding two kernels are genuinely multiplicative Gram constructions. To remove any ambiguity, work directly on \(\ell^2(\mathbb N)\) with the original basis \(e_n\) and **literal** FUCC multiplication:
+\[
+V_p e_n=e_{pn},\quad V_p^*V_p=I.
+\]
+The self-adjoint multiplication adjacency \(H_p=V_p+V_p^*\) has compression on the two basis states \(e_1,e_p\) equal to
+\[
+\begin{pmatrix}0&1\\1&0\end{pmatrix},
+\]
+with eigenvalues \(+1,-1\) and quadratic values \(+2,-2\) on \(e_1\pm e_p\). Thus even an operator **literally built from multiplication on positive integers** is not automatically PSD.
+
+However, the half-density-oriented multiplication factor
+\[
+A_p=(I-p^{-1/2}V_p)^*(I-p^{-1/2}V_p)
+=(1+p^{-1})I-p^{-1/2}(V_p+V_p^*)
+\]
+is necessarily PSD. Its \(e_1,e_p\) compression has diagonal \(1+1/p\) and *negative* off-diagonal entries \(-1/\sqrt p\), while its eigenvalues are \((1\pm p^{-1/2})^2>0\). This precisely realizes the legitimate version of the hypothesis that normalized coefficients may be negative while the quadratic form is positive for structural reasons. Unlike a tautological GNS representation of the unknown Weil form, these are explicitly given original prime-multiplication operators.
+
+The energy generator \(H e_n=(\log n)e_n\) satisfies \([H,V_p]=(\log p)V_p\) on the finite-support core, providing a second original-source route to the fundamental prime-clock \(\log p\) without reading zeros. This commutator is a classical equality and cannot alone fix Weil's contact/Gamma terms.
+
+## MOG-09. The Möbius finite-Euler factor is positive, but the critical vacuum blows up (PROVED)
+
+For a finite genuine prime set \(P\), put \(N_P=\prod_{p\in P}p\) and define
+\[
+B_P=\prod_{p\in P}(I-p^{-1/2}V_p)
+=\sum_{d\mid N_P}\frac{\mu(d)}{\sqrt d}\,V_d.
+\]
+All factors commute because distinct prime multipliers commute. \(B_P^*B_P\) is PSD on ALL of \(\ell^2(\mathbb N)\), including arbitrary signed input vectors; Möbius signs are allowed. On the cyclic vacuum \(e_1\),
+\[
+B_Pe_1=\sum_{d\mid N_P}\frac{\mu(d)}{\sqrt d}\,e_d,\qquad
+\|B_Pe_1\|^2=\sum_{d\mid N_P}\frac{\mu(d)^2}{d}
+=\prod_{p\in P}\left(1+\frac1p\right).
+\]
+These identities are exact, independent of numerical prime tests.
+
+As \(P\) exhausts all primes, Euler's divergence \(\sum_p1/p=\infty\) implies \(\prod_p(1+1/p)=\infty\). Therefore **the unnormalized product cannot converge strongly at half-density, already on e1**, even though every finite factorization is PSD. This is a concrete failure of the inference “all finite multiplicative orientation stages are positive, therefore the global half-density operator exists.” The known convergence boundary comes from elementary harmonic analysis / Euler sums, not RH.
+
+Even dividing \(B_Pe_1\) by its growing norm cannot supply a nonzero strong vacuum: the normalized vectors all have norm 1 but converge weakly to zero, since each fixed \(e_n\) coefficient tends to zero and finitely supported tests are dense. They therefore have no strong limit. A nontrivial global object requires a different completion, renormalization or space, with source-justified test/trace pairing; it cannot be imposed by wishful passage to infinity.
+
+The direct source test enumerates finite squarefree divisors with exact Möbius signs and amplitude-square 1/d, independently checking the exact rational product formula. The one-prime test checks the true multiplication-shift negative direction and the positive factored alternative. For \(P=\{2,3,5\}\), the exact norm square is \(12/5\). Composite 6 is explicitly rejected as a fake prime place. No global Weil positivity, trace class, canonical principal value, or RH result is inferred.
+
 ## MOG-05. Weil/Suzuki/Connes transfer remains a separate, falsifiable obligation (UNVERIFIED)
 
 The positive source kernels act on finitely supported coefficient sequences indexed by integers, not automatically on the full Schwartz–Bruhat/Weil test space. The already-authenticated full completed Weil source contains **signed prime-power impulses plus the one real Gamma, pole/contact**, and the claimed equality
