@@ -8,7 +8,7 @@ from observational_succ.mobius_index_infinity import (
     IndexBoundaryError, squarefree_mobius_tape, sieve_projection,
     finite_sieve_count, prime_shell, shell_trace, finite_succ_boundary,
     finite_fucc_boundary, strong_sieve_limit, exact_prime_jets_from_index_density,
-    sign_mutant_control,
+    sign_mutant_control, sieve_succ_commutator,
 )
 
 
@@ -159,6 +159,22 @@ class MobiusIndexAtInfinityTests(unittest.TestCase):
                 sieve_projection(q,ps)["projection_diagonal"],-1)
             # Meanwhile P1 has commutator zero on e_(q-1), q>3.
             self.assertEqual(int(q-1==1)-int(q==1),0)
+
+    def test_source_SUCC_commutator_strong_but_not_norm_limit(self):
+        for ps in ((2,),(2,3),(2,3,5),(2,3,5,7)):
+            for n in range(1,100):
+                w=sieve_succ_commutator(ps,n)
+                left=sieve_projection(n,ps)["projection_diagonal"]
+                right=sieve_projection(n+1,ps)["projection_diagonal"]
+                self.assertEqual(w["finite_sieve_edge_coefficient"],left-right)
+                self.assertEqual(w["difference_from_limit"],left-right-int(n==1))
+                self.assertTrue(w["cofinal_operator_norm_difference_at_least_one_if_2_in_P"])
+                self.assertFalse(w["completed_Weil_trace_or_contact_identified"])
+            q=next(q for q in range(11,200) if _genuine_prime(q) and q not in ps)
+            witness=sieve_succ_commutator(ps,q-1)
+            self.assertEqual(witness["finite_sieve_edge_coefficient"],-1)
+            self.assertEqual(witness["strong_limit_unit_boundary_edge_coefficient"],0)
+            self.assertEqual(witness["difference_from_limit"],-1)
 
     def test_orientation_sign_mutant_not_idempotent_even_though_coefficients_positive(self):
         for p in (2,3,5,7):
