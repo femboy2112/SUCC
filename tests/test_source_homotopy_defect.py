@@ -5,6 +5,7 @@ from fractions import Fraction as F
 from observational_succ.source_homotopy_defect import (
     HomotopyDefectError, homotopy_defect_trace, grade_zero_defect,
     pivot_invariance, signed_prime_distribution_receipt,
+    compact_contact_ambiguity,
 )
 from observational_succ.koszul_prime_cancellation import source_multidegree
 from observational_succ.completed_weil_transport import von_mangoldt_labels
@@ -119,6 +120,26 @@ class SourceHomotopyDefectTests(unittest.TestCase):
             r=grade_zero_defect(n)
             self.assertEqual(r["homotopy_defect_supertrace"],r["ordinary_source_supertrace"])
             self.assertTrue(r["orientation_auxiliary_removed"])
+
+    def test_exact_allowed_Cc2_contact_source_is_not_redundant(self):
+        # Independent integration by beta-function recurrence:
+        # I_m = [2m/(2m+1)] I_(m-1), I_0=2.
+        independent=F(2)
+        for m in range(1,7):
+            independent*=F(2*m,2*m+1)
+        self.assertEqual(independent,F(2048,3003))
+        for contact in (F(-3,2),F(-1),F(0),F(1,3),F(7)):
+            r=compact_contact_ambiguity(contact)
+            self.assertTrue(r["f_is_Cc2"])
+            self.assertEqual(r["autocorrelation_at_origin"],independent)
+            self.assertEqual(r["difference_in_signed_Weil_autocorrelation"],
+                             contact*independent)
+            self.assertTrue(r["all_off_identity_local_tests_unchanged"])
+            self.assertEqual(r["contact_is_source_observationally_redundant"],contact==0)
+            self.assertFalse(r["canonical_Connes_principal_value_matched"])
+        for bad in (True,1.25,None):
+            with self.assertRaises(HomotopyDefectError):
+                compact_contact_ambiguity(bad)
 
     def test_source_contract_rejects_float_fake_pivot_and_partial_oracles(self):
         for n in (2,6,30):
