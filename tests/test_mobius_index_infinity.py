@@ -9,6 +9,7 @@ from observational_succ.mobius_index_infinity import (
     finite_sieve_count, prime_shell, shell_trace, finite_succ_boundary,
     finite_fucc_boundary, strong_sieve_limit, exact_prime_jets_from_index_density,
     sign_mutant_control, sieve_succ_commutator, finite_normalized_trace_escape,
+    completed_source_blindness_controls,
 )
 
 
@@ -227,6 +228,18 @@ class MobiusIndexAtInfinityTests(unittest.TestCase):
         self.assertEqual(F(data['physical_cut_L30_naive_shift_norm_squared_strict_lower']),200)
         self.assertFalse(data['RH_proved'])
         self.assertFalse(data['source_signed_completed_Weil_distribution_equated'])
+
+    def test_character_gamma_contact_source_blindness_not_redundant(self):
+        r=completed_source_blindness_controls()
+        self.assertEqual(r["zeta_primitive_p2_dirichlet_coefficient"],1)
+        self.assertEqual(r["chi_minus_3_primitive_p2_coefficient"],-1)
+        self.assertEqual(r["zeta_p3_euler_coefficient"],1)
+        self.assertTrue(r["chi_minus_3_p3_ramified_factor_absent"])
+        self.assertEqual(r["unit_W_contact_mutation_effect"],F(2048,3003))
+        self.assertFalse(r["unit_W_contact_mutation_visible_to_E_sieve"])
+        self.assertFalse(r["full_signed_completed_W_identifiable_from_Vp_only"])
+        self.assertFalse(r["character_conductor_and_Arch_contact_are_redundant"])
+        self.assertFalse(r["RH_proved"])
 
     def test_source_type_and_horizon_rejections(self):
         with self.assertRaises(IndexBoundaryError):
