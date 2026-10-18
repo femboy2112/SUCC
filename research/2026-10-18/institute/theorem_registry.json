@@ -1,0 +1,1215 @@
+{
+  "schema": "SUCC_INSTITUTE_v1",
+  "claims": [
+    {
+      "claim_id": "INS-01",
+      "authority": "LEAN_KERNEL_PROVED",
+      "statement": "For all such S,A,L,q, fiber congruence iff a commuting quotient exists and every finite accepted word lifts from every source representative.",
+      "source": "Declared partial labelled source system",
+      "operations_relations": "For all such S,A,L,q, fiber congruence iff a commuting quotient exists and every finite accepted word lifts from every source representative.",
+      "target_carrier": "arbitrary sets, finite action words",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "set-level; no completion",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "q is surjective onto the declared quotient carrier.",
+        "Actions are partial deterministic maps S x A -> Option(L x S); labels retained exactly."
+      ],
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_CAUSAL_DESCENT.md",
+          "sha256": "357747719930ecebed9def16bbfa63fc0cc665020c9777a3533101c844d6696e",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "formal/InstituteCausal.lean",
+          "sha256": "7d88fe4123e07d0b5776f229d82c4b1ab593435bbe62fa1106d50fadf53016fc",
+          "kind": "LEAN_SOURCE"
+        },
+        {
+          "path": "research/2026-10-18/institute/kernel_receipt.json",
+          "sha256": "f1b2ce6f49d62a50d6cc67d8b105f7e6e6f076f07dcd629a3980be3ebaec6941",
+          "kind": "LEAN_RECEIPT"
+        },
+        {
+          "path": "research/2026-10-18/institute/axioms.json",
+          "sha256": "c360a9a8535b0b9438554165673d09b4c731d8ce9ada571448a729ef3b280ebb",
+          "kind": "AXIOM_MANIFEST"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "observational_succ/institute_causal.py",
+          "sha256": "79d6a9e345adc7578237bf37766042e5b7810f783a319f35141348ebe20fb01a",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_causal.py",
+          "sha256": "d9aceefcfac8e2a0940f97c27f1053e2b17e22464da3f43c42990036448055c9",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "Declared partial labelled source system",
+        "carrier": "arbitrary sets, finite action words",
+        "topology": "set-level; no completion"
+      },
+      "quantifiers": "For all such S,A,L,q, fiber congruence iff a commuting quotient exists and every finite accepted word lifts from every source representative.",
+      "prior_art": "Partial Mealy coalgebra congruences, Silva et al. arXiv:1302.1046v2; classical specialization.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "formal/NoGhost.lean",
+          "blob": "bcf7615af3d07369aeb9db6f41ed240706bac51d"
+        }
+      ],
+      "kernel_declarations": [
+        "ObservationalSUCC.InstituteCausal.quotient_exists_iff_fiber_congruent",
+        "ObservationalSUCC.InstituteCausal.run_naturality",
+        "ObservationalSUCC.InstituteCausal.every_representative_lifts",
+        "ObservationalSUCC.InstituteCausal.lawful_quotient_iff"
+      ],
+      "research_label": "INS.CAUSAL.01"
+    },
+    {
+      "claim_id": "INS-02",
+      "authority": "LEAN_KERNEL_PROVED",
+      "statement": "For every relational source edge and finite report word, reachability iff one complete source path; no path iff a constructive backward exclusion; source-invariant edges preserve source along paths.",
+      "source": "Declared partial labelled source system",
+      "operations_relations": "For every relational source edge and finite report word, reachability iff one complete source path; no path iff a constructive backward exclusion; source-invariant edges preserve source along paths.",
+      "target_carrier": "arbitrary sets, finite action words",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "set-level; no completion",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Arbitrary relation S x L x S; finite word.",
+        "Source-identity preservation assumes each edge preserves that identity."
+      ],
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_CAUSAL_DESCENT.md",
+          "sha256": "357747719930ecebed9def16bbfa63fc0cc665020c9777a3533101c844d6696e",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "formal/InstituteCausal.lean",
+          "sha256": "7d88fe4123e07d0b5776f229d82c4b1ab593435bbe62fa1106d50fadf53016fc",
+          "kind": "LEAN_SOURCE"
+        },
+        {
+          "path": "research/2026-10-18/institute/kernel_receipt.json",
+          "sha256": "f1b2ce6f49d62a50d6cc67d8b105f7e6e6f076f07dcd629a3980be3ebaec6941",
+          "kind": "LEAN_RECEIPT"
+        },
+        {
+          "path": "research/2026-10-18/institute/axioms.json",
+          "sha256": "c360a9a8535b0b9438554165673d09b4c731d8ce9ada571448a729ef3b280ebb",
+          "kind": "AXIOM_MANIFEST"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "observational_succ/institute_causal.py",
+          "sha256": "79d6a9e345adc7578237bf37766042e5b7810f783a319f35141348ebe20fb01a",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_causal.py",
+          "sha256": "d9aceefcfac8e2a0940f97c27f1053e2b17e22464da3f43c42990036448055c9",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "Declared partial labelled source system",
+        "carrier": "arbitrary sets, finite action words",
+        "topology": "set-level; no completion"
+      },
+      "quantifiers": "For every relational source edge and finite report word, reachability iff one complete source path; no path iff a constructive backward exclusion; source-invariant edges preserve source along paths.",
+      "prior_art": "Classical mathematics specialized to explicitly declared source types.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "formal/NoGhost.lean",
+          "blob": "bcf7615af3d07369aeb9db6f41ed240706bac51d"
+        }
+      ],
+      "kernel_declarations": [
+        "ObservationalSUCC.InstituteCausal.reachable_iff_single_source_path",
+        "ObservationalSUCC.InstituteCausal.path_preserves_source",
+        "ObservationalSUCC.InstituteCausal.exclusion_refutes_path",
+        "ObservationalSUCC.InstituteCausal.no_path_iff_excluded"
+      ],
+      "research_label": "INS.CAUSAL.02"
+    },
+    {
+      "claim_id": "INS-03",
+      "authority": "PAPER_PROVED",
+      "statement": "For every declared finite deterministic system, Moore refinement terminates at the coarsest lawful refinement of current reports; separate pair-BFS supplies actual finite distinguishing words.",
+      "source": "Declared partial labelled source system",
+      "operations_relations": "For every declared finite deterministic system, Moore refinement terminates at the coarsest lawful refinement of current reports; separate pair-BFS supplies actual finite distinguishing words.",
+      "target_carrier": "arbitrary sets, finite action words",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "set-level; no completion",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Complete finite declared state/action tables; current observation and exact cost labels."
+      ],
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_CAUSAL_DESCENT.md",
+          "sha256": "357747719930ecebed9def16bbfa63fc0cc665020c9777a3533101c844d6696e",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "observational_succ/institute_causal.py",
+          "sha256": "79d6a9e345adc7578237bf37766042e5b7810f783a319f35141348ebe20fb01a",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_causal.py",
+          "sha256": "d9aceefcfac8e2a0940f97c27f1053e2b17e22464da3f43c42990036448055c9",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "Declared partial labelled source system",
+        "carrier": "arbitrary sets, finite action words",
+        "topology": "set-level; no completion"
+      },
+      "quantifiers": "For every declared finite deterministic system, Moore refinement terminates at the coarsest lawful refinement of current reports; separate pair-BFS supplies actual finite distinguishing words.",
+      "prior_art": "Classical Nerode/Moore minimization and bisimulation; no new academic priority.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        }
+      ],
+      "research_label": "INS.CAUSAL.03"
+    },
+    {
+      "claim_id": "INS-04",
+      "authority": "CLASSICAL_IMPORTED",
+      "statement": "For every positive integer a, mu(aA)=mu(A)/a; U_a is isometric, U_a* f(x)=a^-1/2 f(ax), and U_a U_a* is multiplication by 1_(aZhat).",
+      "source": "positive-integer multiplication and profinite additive Haar",
+      "operations_relations": "For every positive integer a, mu(aA)=mu(A)/a; U_a is isometric, U_a* f(x)=a^-1/2 f(ax), and U_a U_a* is multiplication by 1_(aZhat).",
+      "target_carrier": "ell2(N+) and L2(Zhat,Haar)",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "Hilbert norm; strong operator limits explicitly distinguished",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities."
+      ],
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_ATOMIC_HAAR.md",
+          "sha256": "af274722e2e685c0960127073403da72f3a0e46cc3d0657f89c9dbfcdafcbcca",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "observational_succ/institute_atomic_haar.py",
+          "sha256": "9fa29923db622b43de545acb657e5ddccaeac73046a2b062fa5a16193063acf8",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_atomic_haar.py",
+          "sha256": "084b3ea0d10e45933705c8c853588ada3eec5bb173b1e4a8a1a65788f15d61a0",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "ell2(N+) and L2(Zhat,Haar)",
+        "topology": "Hilbert norm; strong operator limits explicitly distinguished"
+      },
+      "quantifiers": "For every positive integer a, mu(aA)=mu(A)/a; U_a is isometric, U_a* f(x)=a^-1/2 f(ax), and U_a U_a* is multiplication by 1_(aZhat).",
+      "prior_art": "Haar uniqueness, finite-index scaling and CRT; proof reproduced in Section1.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        }
+      ],
+      "research_label": "INS.HAAR.00"
+    },
+    {
+      "claim_id": "INS-05",
+      "authority": "PAPER_PROVED",
+      "statement": "Every bounded complex-linear all-prime shift-and-adjoint intertwiner in either direction is zero; finite Mobius projectors converge strongly to the atomic vacuum and zero respectively.",
+      "source": "positive-integer multiplication and profinite additive Haar",
+      "operations_relations": "Every bounded complex-linear all-prime shift-and-adjoint intertwiner in either direction is zero; finite Mobius projectors converge strongly to the atomic vacuum and zero respectively.",
+      "target_carrier": "ell2(N+) and L2(Zhat,Haar)",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "Hilbert norm; strong operator limits explicitly distinguished",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities."
+      ],
+      "dependencies": [
+        "INS-04"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_ATOMIC_HAAR.md",
+          "sha256": "af274722e2e685c0960127073403da72f3a0e46cc3d0657f89c9dbfcdafcbcca",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "observational_succ/institute_atomic_haar.py",
+          "sha256": "9fa29923db622b43de545acb657e5ddccaeac73046a2b062fa5a16193063acf8",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_atomic_haar.py",
+          "sha256": "084b3ea0d10e45933705c8c853588ada3eec5bb173b1e4a8a1a65788f15d61a0",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "ell2(N+) and L2(Zhat,Haar)",
+        "topology": "Hilbert norm; strong operator limits explicitly distinguished"
+      },
+      "quantifiers": "Every bounded complex-linear all-prime shift-and-adjoint intertwiner in either direction is zero; finite Mobius projectors converge strongly to the atomic vacuum and zero respectively.",
+      "prior_art": "Classical Haar/Euler/Wold ingredients; exact SUCC calibration proved here.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        }
+      ],
+      "research_label": "INS.HAAR.01"
+    },
+    {
+      "claim_id": "INS-06",
+      "authority": "PAPER_PROVED",
+      "statement": "For every subset S of primes, a nonzero bounded star-intertwiner exists iff sum_(p in S)1/p is finite; then the restricted tuples are unitarily equivalent and all intertwiners are multiplicity-space maps.",
+      "source": "positive-integer multiplication and profinite additive Haar",
+      "operations_relations": "For every subset S of primes, a nonzero bounded star-intertwiner exists iff sum_(p in S)1/p is finite; then the restricted tuples are unitarily equivalent and all intertwiners are multiplicity-space maps.",
+      "target_carrier": "ell2(N+) and L2(Zhat,Haar)",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "Hilbert norm; strong operator limits explicitly distinguished",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities."
+      ],
+      "dependencies": [
+        "INS-04"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_ATOMIC_HAAR.md",
+          "sha256": "af274722e2e685c0960127073403da72f3a0e46cc3d0657f89c9dbfcdafcbcca",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "observational_succ/institute_atomic_haar.py",
+          "sha256": "9fa29923db622b43de545acb657e5ddccaeac73046a2b062fa5a16193063acf8",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_atomic_haar.py",
+          "sha256": "084b3ea0d10e45933705c8c853588ada3eec5bb173b1e4a8a1a65788f15d61a0",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "ell2(N+) and L2(Zhat,Haar)",
+        "topology": "Hilbert norm; strong operator limits explicitly distinguished"
+      },
+      "quantifiers": "For every subset S of primes, a nonzero bounded star-intertwiner exists iff sum_(p in S)1/p is finite; then the restricted tuples are unitarily equivalent and all intertwiners are multiplicity-space maps.",
+      "prior_art": "Finite Wold: Sarkar1304.7454. Infinite-sequence caveats: Dan-Guo1907.05815v2. Exact prior art of this arithmetic threshold remains unresolved.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        }
+      ],
+      "research_label": "INS.HAAR.02"
+    },
+    {
+      "claim_id": "INS-07",
+      "authority": "PAPER_PROVED",
+      "statement": "All algebraic star-intertwiners c00->Dprime correspond exactly to unit-supported distributions eta through J_eta e_n=n^-1/2(m_n)_*eta; nonzero eta gives injection.",
+      "source": "positive-integer multiplication and profinite additive Haar",
+      "operations_relations": "All algebraic star-intertwiners c00->Dprime correspond exactly to unit-supported distributions eta through J_eta e_n=n^-1/2(m_n)_*eta; nonzero eta gives injection.",
+      "target_carrier": "c00 and locally constant test-function dual Dprime(Zhat)",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "inductive-limit tests and weak dual; specified weighted domains",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities.",
+        "D is the locally constant test space with its inductive-limit topology; distribution actions transpose the opposite test adjoints."
+      ],
+      "dependencies": [
+        "INS-04"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_ATOMIC_HAAR.md",
+          "sha256": "af274722e2e685c0960127073403da72f3a0e46cc3d0657f89c9dbfcdafcbcca",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "observational_succ/institute_atomic_haar.py",
+          "sha256": "9fa29923db622b43de545acb657e5ddccaeac73046a2b062fa5a16193063acf8",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_atomic_haar.py",
+          "sha256": "084b3ea0d10e45933705c8c853588ada3eec5bb173b1e4a8a1a65788f15d61a0",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "c00 and locally constant test-function dual Dprime(Zhat)",
+        "topology": "inductive-limit tests and weak dual; specified weighted domains"
+      },
+      "quantifiers": "All algebraic star-intertwiners c00->Dprime correspond exactly to unit-supported distributions eta through J_eta e_n=n^-1/2(m_n)_*eta; nonzero eta gives injection.",
+      "prior_art": "Classical distribution transposition and clopen support separation; project-local classification.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        }
+      ],
+      "research_label": "INS.HAAR.03"
+    },
+    {
+      "claim_id": "INS-08",
+      "authority": "PAPER_PROVED",
+      "statement": "The canonical weighted Dirac map is continuous on X=sum |a_n|/sqrt(n)<infinity and weighted ell2(n^s), s>0, but its c00 graph from unweighted ell2 to weak Dprime is not closable.",
+      "source": "positive-integer multiplication and profinite additive Haar",
+      "operations_relations": "The canonical weighted Dirac map is continuous on X=sum |a_n|/sqrt(n)<infinity and weighted ell2(n^s), s>0, but its c00 graph from unweighted ell2 to weak Dprime is not closable.",
+      "target_carrier": "c00 and locally constant test-function dual Dprime(Zhat)",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "inductive-limit tests and weak dual; specified weighted domains",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities.",
+        "D is the locally constant test space with its inductive-limit topology; distribution actions transpose the opposite test adjoints.",
+        "eta=delta_1 for the canonical map."
+      ],
+      "dependencies": [
+        "INS-07"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_ATOMIC_HAAR.md",
+          "sha256": "af274722e2e685c0960127073403da72f3a0e46cc3d0657f89c9dbfcdafcbcca",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "observational_succ/institute_atomic_haar.py",
+          "sha256": "9fa29923db622b43de545acb657e5ddccaeac73046a2b062fa5a16193063acf8",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_atomic_haar.py",
+          "sha256": "084b3ea0d10e45933705c8c853588ada3eec5bb173b1e4a8a1a65788f15d61a0",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "c00 and locally constant test-function dual Dprime(Zhat)",
+        "topology": "inductive-limit tests and weak dual; specified weighted domains"
+      },
+      "quantifiers": "The canonical weighted Dirac map is continuous on X=sum |a_n|/sqrt(n)<infinity and weighted ell2(n^s), s>0, but its c00 graph from unweighted ell2 to weak Dprime is not closable.",
+      "prior_art": "Classical summability and harmonic residue equidistribution; no academic priority established.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        }
+      ],
+      "research_label": "INS.HAAR.04"
+    },
+    {
+      "claim_id": "INS-09",
+      "authority": "PAPER_PROVED",
+      "statement": "For every J>=1 and real xi, the two-sided logarithmic envelope (1) holds; shift2 is optimal uniformly within its stated logarithmic upper-bound family.",
+      "source": "original one-real-Gamma with d_j=4j+1",
+      "operations_relations": "For every J>=1 and real xi, the two-sided logarithmic envelope (1) holds; shift2 is optimal uniformly within its stated logarithmic upper-bound family.",
+      "target_carrier": "zero-extended H1_0 and H2_0 interval primitives",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "Fourier multiplier and L2 action norm",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "J is an integer at least 1; d=4J+1.",
+        "Authentic single real Gamma multiplier m_J is the displayed positive infinite sum."
+      ],
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_ARITHMETIC_ANALYSIS.md",
+          "sha256": "ee1bf333e93b58d2f8b58b717fad23f450eb0c3f4b27913305fb969e45e9cb97",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "scripts/institute_schur_probe.py",
+          "sha256": "ea04689cde1d74f4e389c6aa951021bac381fbebd72bfea3e033664a6099dc22",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_schur.py",
+          "sha256": "bdee2df8331633e7172ee1927933a83b0c14c791e5489745ce67d5be8d510469",
+          "kind": "ADVERSARIAL_TESTS"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_GAMMA_RECEIPT.json",
+          "sha256": "f705de666372a8c68b3bb26d948448aa0c0c13f3a8a1bb09a8b5ca8396fcadab",
+          "kind": "EXACT_FINITE_CALIBRATION"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "original one-real-Gamma with d_j=4j+1",
+        "carrier": "zero-extended H1_0 and H2_0 interval primitives",
+        "topology": "Fourier multiplier and L2 action norm"
+      },
+      "quantifiers": "For every J>=1 and real xi, the two-sided logarithmic envelope (1) holds; shift2 is optimal uniformly within its stated logarithmic upper-bound family.",
+      "prior_art": "Classical convex midpoint/trapezoidal quadrature and digamma series; source-specific inequality newly implemented.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "observational_succ/source_weil_hierarchy.py",
+          "blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178"
+        }
+      ],
+      "research_label": "INS.GAMMA.01"
+    },
+    {
+      "claim_id": "INS-10",
+      "authority": "PAPER_PROVED",
+      "statement": "For every bounded interval I, Gamma_tail action is bounded by13/[16(d-2)]||Fprime|| on H1_0 and2/(d-2)^2||Fsecond|| on H2_0.",
+      "source": "original one-real-Gamma with d_j=4j+1",
+      "operations_relations": "For every bounded interval I, Gamma_tail action is bounded by13/[16(d-2)]||Fprime|| on H1_0 and2/(d-2)^2||Fsecond|| on H2_0.",
+      "target_carrier": "zero-extended H1_0 and H2_0 interval primitives",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "Fourier multiplier and L2 action norm",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "J is an integer at least 1; d=4J+1.",
+        "Authentic single real Gamma multiplier m_J is the displayed positive infinite sum.",
+        "Zero extension is in H1(R), or H2(R) with both value and derivative trace zero for the second estimate."
+      ],
+      "dependencies": [
+        "INS-09"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_ARITHMETIC_ANALYSIS.md",
+          "sha256": "ee1bf333e93b58d2f8b58b717fad23f450eb0c3f4b27913305fb969e45e9cb97",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "scripts/institute_schur_probe.py",
+          "sha256": "ea04689cde1d74f4e389c6aa951021bac381fbebd72bfea3e033664a6099dc22",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_schur.py",
+          "sha256": "bdee2df8331633e7172ee1927933a83b0c14c791e5489745ce67d5be8d510469",
+          "kind": "ADVERSARIAL_TESTS"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_GAMMA_RECEIPT.json",
+          "sha256": "f705de666372a8c68b3bb26d948448aa0c0c13f3a8a1bb09a8b5ca8396fcadab",
+          "kind": "EXACT_FINITE_CALIBRATION"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "original one-real-Gamma with d_j=4j+1",
+        "carrier": "zero-extended H1_0 and H2_0 interval primitives",
+        "topology": "Fourier multiplier and L2 action norm"
+      },
+      "quantifiers": "For every bounded interval I, Gamma_tail action is bounded by13/[16(d-2)]||Fprime|| on H1_0 and2/(d-2)^2||Fsecond|| on H2_0.",
+      "prior_art": "Classical Plancherel and proved multiplier envelope; precise operator domains retained.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "observational_succ/source_weil_hierarchy.py",
+          "blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178"
+        }
+      ],
+      "research_label": "INS.GAMMA.02"
+    },
+    {
+      "claim_id": "INS-11",
+      "authority": "UNVERIFIED",
+      "statement": "The complete pinned PR177 source adapter and inherited all-high K-relative coercivity inequalities satisfy every analytic hypothesis needed for the reported S4 enclosure.",
+      "source": "original signed Suzuki source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+      "operations_relations": "The complete pinned PR177 source adapter and inherited all-high K-relative coercivity inequalities satisfy every analytic hypothesis needed for the reported S4 enclosure.",
+      "target_carrier": "four low modes and original infinite K-relative high space",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "K primitive completion; source-relative Schur order",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Original source identity alone is insufficient to prove its analytic estimates."
+      ],
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_ARITHMETIC_ANALYSIS.md",
+          "sha256": "ee1bf333e93b58d2f8b58b717fad23f450eb0c3f4b27913305fb969e45e9cb97",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "OPEN_TARGET",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "original signed Suzuki source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+        "carrier": "four low modes and original infinite K-relative high space",
+        "topology": "K primitive completion; source-relative Schur order"
+      },
+      "quantifiers": "The complete pinned PR177 source adapter and inherited all-high K-relative coercivity inequalities satisfy every analytic hypothesis needed for the reported S4 enclosure.",
+      "prior_art": "Classical mathematics specialized to explicitly declared source types.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independently certify the inherited high inequalities and adapter identities on the same primitive domain.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [
+        "Full independent audit of inherited infinite-high coercivity and all source adapters not performed in this run."
+      ],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "observational_succ/source_weil_hierarchy.py",
+          "blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178"
+        },
+        {
+          "commit": "f309d9104ba480c1999c962af1df7c50f19e1bfe",
+          "path": "observational_succ/original_continuum_residual.py",
+          "blob": "f5dd37fa99a109ca614ae52dd6b67d2cadcb4f48"
+        }
+      ],
+      "research_label": "INS.SCHUR.PREMISES"
+    },
+    {
+      "claim_id": "INS-12",
+      "authority": "PAPER_PROVED",
+      "statement": "Conditional on the explicitly assumed source premises, the same J8 trials and errors yield strictly improved original Schur lower bounds; both computed lower blocks remain non-PSD.",
+      "source": "original signed Suzuki source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+      "operations_relations": "Conditional on the explicitly assumed source premises, the same J8 trials and errors yield strictly improved original Schur lower bounds; both computed lower blocks remain non-PSD.",
+      "target_carrier": "four low modes and original infinite K-relative high space",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "K primitive completion; source-relative Schur order",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "J is an integer at least 1; d=4J+1.",
+        "Authentic single real Gamma multiplier m_J is the displayed positive infinite sum.",
+        "Zero extension is in H1(R), or H2(R) with both value and derivative trace zero for the second estimate.",
+        "Original source identity alone is insufficient to prove its analytic estimates.",
+        "ASSUME:INS-11"
+      ],
+      "dependencies": [
+        "INS-10",
+        "INS-11"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_ARITHMETIC_ANALYSIS.md",
+          "sha256": "ee1bf333e93b58d2f8b58b717fad23f450eb0c3f4b27913305fb969e45e9cb97",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "scripts/institute_schur_probe.py",
+          "sha256": "ea04689cde1d74f4e389c6aa951021bac381fbebd72bfea3e033664a6099dc22",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_schur.py",
+          "sha256": "bdee2df8331633e7172ee1927933a83b0c14c791e5489745ce67d5be8d510469",
+          "kind": "ADVERSARIAL_TESTS"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_GAMMA_RECEIPT.json",
+          "sha256": "f705de666372a8c68b3bb26d948448aa0c0c13f3a8a1bb09a8b5ca8396fcadab",
+          "kind": "EXACT_FINITE_CALIBRATION"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_GAMMA_SCHUR_REPLAY.json",
+          "sha256": "504482cdcd2cfbd2bebb247b70286b45cce08be0378db3c35acfe3268ddec2db",
+          "kind": "EXACT_SOURCE_REPLAY"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_GAMMA_SCHUR_J24.json",
+          "sha256": "4dea6b2f886cc6d075d45c15993f06fb0f9b8c6285ff370438c7d50c98ad70df",
+          "kind": "EXACT_SOURCE_REPLAY"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "original signed Suzuki source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+        "carrier": "four low modes and original infinite K-relative high space",
+        "topology": "K primitive completion; source-relative Schur order"
+      },
+      "quantifiers": "Conditional on the explicitly assumed source premises, the same J8 trials and errors yield strictly improved original Schur lower bounds; both computed lower blocks remain non-PSD.",
+      "prior_art": "Classical mathematics specialized to explicitly declared source types.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Use the actual residual spectral distribution to reduce the remaining source-relative upper error.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [
+        "INS-11"
+      ],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "observational_succ/source_weil_hierarchy.py",
+          "blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178"
+        },
+        {
+          "commit": "f309d9104ba480c1999c962af1df7c50f19e1bfe",
+          "path": "observational_succ/original_continuum_residual.py",
+          "blob": "f5dd37fa99a109ca614ae52dd6b67d2cadcb4f48"
+        }
+      ],
+      "research_label": "INS.GAMMA.03"
+    },
+    {
+      "claim_id": "INS-13",
+      "authority": "UNVERIFIED",
+      "statement": "Original S4>=0 and all-radii signed completed Weil positivity remain unresolved.",
+      "source": "original signed Suzuki source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+      "operations_relations": "Original S4>=0 and all-radii signed completed Weil positivity remain unresolved.",
+      "target_carrier": "four low modes and original infinite K-relative high space",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "K primitive completion; source-relative Schur order",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "All source, topology and infinite-high response obligations must be discharged."
+      ],
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_ARITHMETIC_ANALYSIS.md",
+          "sha256": "ee1bf333e93b58d2f8b58b717fad23f450eb0c3f4b27913305fb969e45e9cb97",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "OPEN_TARGET",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "original signed Suzuki source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+        "carrier": "four low modes and original infinite K-relative high space",
+        "topology": "K primitive completion; source-relative Schur order"
+      },
+      "quantifiers": "Original S4>=0 and all-radii signed completed Weil positivity remain unresolved.",
+      "prior_art": "Classical mathematics specialized to explicitly declared source types.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Source-authenticated infinite high-response bound strong enough to decide the first sign; then separate all-radii analysis.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [
+        "First-window sign not decided.",
+        "All-radii requirement separate and open."
+      ],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "observational_succ/source_weil_hierarchy.py",
+          "blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178"
+        }
+      ],
+      "research_label": "INS.RH.OPEN"
+    },
+    {
+      "claim_id": "INS-14",
+      "authority": "PAPER_PROVED",
+      "statement": "For each retained J24 parity pair T,M and positive kappa, kappa*T11-M11<0; hence for every eta>0 and every positive semidefinite D, T-[(1+eta)M+D]/kappa is not positive semidefinite, including zero error allowance D=0.",
+      "source": "Pinned PR177 J24 rational decomposition",
+      "operations_relations": "For each retained J24 parity pair T,M and positive kappa, kappa*T11-M11<0; hence for every eta>0 and every positive semidefinite D, T-[(1+eta)M+D]/kappa is not positive semidefinite, including zero error allowance D=0.",
+      "target_carrier": "two-by-two real symmetric matrices",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "finite-dimensional quadratic order",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "T,M,kappa are precisely the retained rational J24/M192/P18 decomposition; M is positive semidefinite and kappa>0.",
+        "The conclusion concerns only the displayed sufficient-bound family, not the actual signed source form."
+      ],
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/INSTITUTE_ARITHMETIC_ANALYSIS.md",
+          "sha256": "ee1bf333e93b58d2f8b58b717fad23f450eb0c3f4b27913305fb969e45e9cb97",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_HOSTILE_AUDIT.md",
+          "sha256": "25d50f502858715856a7d32cd68a35e2c31fa89b762a85c7341436b532c0f214",
+          "kind": "HOSTILE_REVIEW"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_GAMMA_ETA_SOURCE.json",
+          "sha256": "0a24144e8a22178296ad314e846ea13ab41a67efc291a42b6764f73d61e0d7aa",
+          "kind": "EXACT_SOURCE_DECOMPOSITION"
+        },
+        {
+          "path": "research/2026-10-18/INSTITUTE_GAMMA_ETA_SEARCH.json",
+          "sha256": "f2ca68a76b0fd54d5dd233a4064188c228588f3ba2f87aa89ecd15560272a011",
+          "kind": "EXACT_FINITE_CALIBRATION"
+        },
+        {
+          "path": "scripts/institute_eta_probe.py",
+          "sha256": "c497566d05a8085b57745139ce790dca124318c69ad3ca175f6ab1ad0898a8ee",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_institute_hostile.py",
+          "sha256": "ca9422ac8aa9226a2badc730ec94668e5be91fa5fdbeb7be8c7531ae9bac28c8",
+          "kind": "INDEPENDENT_RECONSTRUCTION"
+        },
+        {
+          "path": "tests/test_institute_eta.py",
+          "sha256": "8e98a30a3f4d3ba1a4af619263f7cbeba3b357e2f3c9f22e0e2f07f277f37fb2",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "Pinned PR177 J24 rational decomposition",
+        "carrier": "two-by-two real symmetric matrices",
+        "topology": "finite-dimensional quadratic order"
+      },
+      "quantifiers": "For each retained J24 parity pair T,M and positive kappa, kappa*T11-M11<0; hence for every eta>0 and every positive semidefinite D, T-[(1+eta)M+D]/kappa is not positive semidefinite, including zero error allowance D=0.",
+      "prior_art": "Classical quadratic-order obstruction and Young inequality; exact source-instance certificate is new to this project.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Change the legal trials, residual geometry or proved high-response bound; reducing column error budgets alone cannot repair these retained matrices.",
+      "independent_check": "Fresh-context hostile audit, principal replay; shared model family, not independent external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "observational_succ/source_weil_hierarchy.py",
+          "blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178"
+        },
+        {
+          "commit": "f309d9104ba480c1999c962af1df7c50f19e1bfe",
+          "path": "observational_succ/original_continuum_residual.py",
+          "blob": "f5dd37fa99a109ca614ae52dd6b67d2cadcb4f48"
+        }
+      ],
+      "research_label": "INS.SCHUR.METHOD_NOGO"
+    }
+  ],
+  "transports": [
+    {
+      "from": "INS-04",
+      "to": "INS-07",
+      "input": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "ell2(N+) and L2(Zhat,Haar)",
+        "topology": "Hilbert norm; strong operator limits explicitly distinguished"
+      },
+      "output": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "c00 and locally constant test-function dual Dprime(Zhat)",
+        "topology": "inductive-limit tests and weak dual; specified weighted domains"
+      },
+      "authority": "PAPER_PROVED",
+      "obligation": "Locally constant domain invariance and opposite-test-adjoint transpose; this is not a bounded Hilbert transport.",
+      "evidence": {
+        "path": "research/2026-10-18/INSTITUTE_ATOMIC_HAAR.md",
+        "sha256": "af274722e2e685c0960127073403da72f3a0e46cc3d0657f89c9dbfcdafcbcca",
+        "kind": "PAPER_PROOF"
+      }
+    },
+    {
+      "from": "INS-10",
+      "to": "INS-12",
+      "input": {
+        "source": "original one-real-Gamma with d_j=4j+1",
+        "carrier": "zero-extended H1_0 and H2_0 interval primitives",
+        "topology": "Fourier multiplier and L2 action norm"
+      },
+      "output": {
+        "source": "original signed Suzuki source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+        "carrier": "four low modes and original infinite K-relative high space",
+        "topology": "K primitive completion; source-relative Schur order"
+      },
+      "authority": "PAPER_PROVED",
+      "obligation": "Insert the proved Gamma action norm in the original residual error ledger on identical H2_0 trials; preserve source-conditional K geometry.",
+      "evidence": {
+        "path": "research/2026-10-18/INSTITUTE_ARITHMETIC_ANALYSIS.md",
+        "sha256": "ee1bf333e93b58d2f8b58b717fad23f450eb0c3f4b27913305fb969e45e9cb97",
+        "kind": "PAPER_PROOF"
+      }
+    }
+  ],
+  "semantics": "Recorded authorities are not issued by the integrity auditor. Finite evidence cannot establish the displayed universal statements."
+}

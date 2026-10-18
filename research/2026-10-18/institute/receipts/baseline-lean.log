@@ -1,0 +1,19 @@
+Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)
+Negative control: False proof rejected with exit 1 and expected decide diagnostic.
+error: tactic 'decide' proved that the proposition
+  False
+is false
+Source gate: no placeholders, custom axioms, unsafe code, or native_decide.
+'ObservationalSUCC.NoGhost.ConstraintCover.glue_restricts' does not depend on any axioms
+'ObservationalSUCC.NoGhost.ConstraintCover.glue_unique' depends on axioms: [Quot.sound]
+'ObservationalSUCC.NoGhost.ConstraintCover.glue_preserves_complete_constraints' does not depend on any axioms
+'ObservationalSUCC.NoGhost.ConstraintCover.source_supported_constraint_gluing' depends on axioms: [Quot.sound]
+'ObservationalSUCC.NoGhost.CompleteKernel.complete_kernel_implies_all_prior_laws' does not depend on any axioms
+'ObservationalSUCC.NoGhost.CompleteKernel.source_indexed_all_priors_iff_complete_kernel' does not depend on any axioms
+'ObservationalSUCC.NoGhost.RigidTransport.path_preserves_invariant' does not depend on any axioms
+'ObservationalSUCC.NoGhost.RigidTransport.invariant_transport_path_independent' does not depend on any axioms
+'ObservationalSUCC.NoGhost.RigidTransport.invariant_comparisons_are_inverse' does not depend on any axioms
+'ObservationalSUCC.NoGhost.Countermodels.bit_comparison_involutive' does not depend on any axioms
+'ObservationalSUCC.NoGhost.Countermodels.bit_comparisons_fail_braid' does not depend on any axioms
+'ObservationalSUCC.NoGhost.Countermodels.omitted_joint_constraint_blocks_gluing' does not depend on any axioms
+PASS: 12 declarations kernel-checked; exact axiom sets verified.

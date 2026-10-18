@@ -1,5 +1,9 @@
 # Research claim ledger
 
+The [Institute supplement](CLAIM_SUPPLEMENT_INSTITUTE.md) adds INS-01–INS-13
+without renumbering historical claims: partial-source descent, atomic/Haar
+interfaces, exact Gamma improvement, and explicit inherited analytic debt.
+
 **Policy:** A theorem, an exact computation, a finite experiment, an interpretation, and an RH-equivalent conjecture are different evidence types. This ledger governs current project claims; immutable founding documents retain their historically correct original wording and provenance.
 
 The [Observer–Schur Round II supplement](CLAIM_SUPPLEMENT_OBSERVER_SCHUR.md)

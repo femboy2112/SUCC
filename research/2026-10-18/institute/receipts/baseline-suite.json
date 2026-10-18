@@ -1,0 +1,22 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-institute",
+  "started_utc": "2026-10-18T22:45:47.943548+00:00",
+  "finished_utc": "2026-10-18T22:54:30.880216+00:00",
+  "elapsed_seconds": 522.92386,
+  "exit_code": 0,
+  "timeout": false,
+  "git_head": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+  "git_status_before": "?? research/2026-10-18/\n?? scripts/institute_run_receipt.py\n",
+  "log": "research/2026-10-18/institute/receipts/baseline-suite.log",
+  "log_sha256": "8e56b2fbd536f1da206c9235ad6777525a448353e840fd1521f1f979fe7c4280"
+}

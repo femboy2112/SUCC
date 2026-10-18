@@ -1,0 +1,16 @@
+{
+  "command": [
+    "bash",
+    "scripts/verify_no_ghost_lean.sh"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-institute",
+  "started_utc": "2026-10-18T22:46:22.017526+00:00",
+  "finished_utc": "2026-10-18T22:46:23.496075+00:00",
+  "elapsed_seconds": 1.467545,
+  "exit_code": 0,
+  "timeout": false,
+  "git_head": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+  "git_status_before": "?? research/2026-10-18/\n?? scripts/institute_run_receipt.py\n?? scripts/institute_snapshot.py\n",
+  "log": "research/2026-10-18/institute/receipts/baseline-lean.log",
+  "log_sha256": "bf0eb1be7dc0a7d15590ed1fea282a3cf2ae4df319bbd89aef108ca1e009ba0f"
+}

@@ -21,6 +21,13 @@ hypothesis**. RH is a demanding downstream application, not SUCC's definition.
 > and no positive Hilbert covariance is identified with the signed completed Weil form. See the
 > [claim index](docs/CLAIM_INDEX.md) and [claim ledger](docs/CLAIM_LEDGER.md).
 
+**Institute nucleus research checkpoint (2026-10-18):**
+[execution report](research/2026-10-18/INSTITUTE_EXECUTION_REPORT.md) and
+[claim supplement](docs/CLAIM_SUPPLEMENT_INSTITUTE.md) provide eight core Lean
+declarations, an atomic/Haar representation paper candidate, sharper authentic
+Gamma-tail bounds and a fixed-method Schur obstruction. Academic novelty and
+the true signed Schur sign remain unestablished.
+
 **Proof Teeth research checkpoint:** [round report](research/2026-10-15/SUCC_PROOF_TEETH_MEGA_ROUND.md)
 and [claim supplement](docs/CLAIM_SUPPLEMENT_PROOF_TEETH.md) add the proved finite-Haar-to-profinite-Hilbert
 completion, exact minimum-observation certificates, paired YEAN Lean kernels,

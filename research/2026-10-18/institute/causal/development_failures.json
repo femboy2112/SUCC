@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "status": "REPAIRED_DEVELOPMENT_FAILURE_NOT_PROOF_EVIDENCE",
+  "command": "lean formal/InstituteCausal.lean",
+  "observed_returncode": 1,
+  "failed_edit": "Replacing a successful simpa proof with rw [hr, hl] while the cases tactic had already rewritten the target",
+  "diagnostic_excerpt_copied_from_actual_tool_output": "formal/InstituteCausal.lean:97:10: error: tactic 'rewrite' failed, did not find instance of the pattern in the target expression\n  run step word s\n...\n⊢ some (ls, t) = some (labels, t)",
+  "failed_build_axiom_output": "Failed declarations temporarily printed sorryAx as Lean's error-recovery artifact; that failed build is not used for kernel authority",
+  "repair": "Use rw [hl] after destructing run, since the target is already an equality of some constructors",
+  "final_evidence": "lean.stdout and receipt.json contain the subsequent actual clean build, with no sorryAx",
+  "mathematical_conjecture_refuted": false
+}

@@ -159,6 +159,24 @@
       "code": [
         "observational_succ/wild_ambient_succ.py"
       ]
+    },
+    {
+      "namespace": "INSTITUTE_NUCLEUS",
+      "bare_prefix": "INS",
+      "fq_prefix": "INS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_INSTITUTE.md"
+      ],
+      "id_count": 14,
+      "status": "MIXED (LEAN_KERNEL/PAPER/CLASSICAL/CONDITIONAL/UNVERIFIED)",
+      "topic": "partial causal descent, atomic-Haar threshold, distributional obstruction and authentic Gamma tail",
+      "code": [
+        "observational_succ/institute_causal.py",
+        "observational_succ/institute_atomic_haar.py",
+        "observational_succ/institute_audit.py",
+        "scripts/institute_schur_probe.py",
+        "scripts/institute_eta_probe.py"
+      ]
     }
   ],
   "resolved_collisions": [

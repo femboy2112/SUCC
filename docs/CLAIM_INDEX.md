@@ -1,5 +1,10 @@
 # Claim Index
 
+2026-10-18 research: [Institute nucleus](CLAIM_SUPPLEMENT_INSTITUTE.md), with
+eight core Lean declarations, atomic/Haar representation obstructions, a sharper
+authentic Gamma tail, and a source-typed machine claim graph. This research branch
+does not integrate drafts #153–#177. First-window Schur sign and RH remain open.
+
 Latest research: [Arithmetic Resonance claim supplement](CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md), with source-specific range and two-sided Schur bounds; original sign OPEN.
 
 A concise entry point into the full claim record. Nothing here replaces or deletes a historical

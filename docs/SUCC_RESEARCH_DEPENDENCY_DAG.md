@@ -1,5 +1,22 @@
 # SUCC Research Dependency DAG
 
+2026-10-18 branch addition: the [Institute graph](../research/2026-10-18/institute/theorem_registry.json)
+is machine-checked by `scripts/institute_audit.py`; recorded proof authority is
+distinct from metadata integrity. Its new arrows are:
+
+```text
+partial labelled source -- fiber congruence [Lean] --> lawful quotient + finite lifts
+relational source -- exact path/exclusion duality [Lean] --> no-ghost finite gluing
+atomic/Haar prime tuples -- reciprocal-prime threshold [Paper] --> equivalent or disjoint
+c00 -- weighted Dirac [Paper] --> distributions (unweighted ell2 graph nonclosable)
+original Gamma tail -- optimal log envelope [Paper] --> H1/H2 action budgets
+budgets + inherited high premises [Conditional] --> tighter S4 lower (sign still open)
+fixed J24 residual matrices [Exact + Paper] --> all-positive-Young bound-family obstruction
+```
+
+The [claim supplement](CLAIM_SUPPLEMENT_INSTITUTE.md) records domains, source
+credentials, classical prior art, proof debt and failed inference witnesses.
+
 One canonical proof-dependency graph, from carrier mathematics through to the RH application. Every
 arrow carries a status so the reader sees immediately **which arrows are closed and which remain
 open**. This is the *conceptual* proof DAG; for the *git* PR-dependency DAG of the Academic Main
