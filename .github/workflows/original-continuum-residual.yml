@@ -42,3 +42,25 @@ jobs:
         run: |
           python -m unittest discover -s tests -p 'test_clamped_k_residual_bridge.py' -q
           python -m unittest discover -s tests -p 'test_infinite_gamma_carleman.py' -q
+
+  exact-source-depth-ablation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install frozen signed Suzuki
+        run: python -m pip install -e '.[test]'
+      - name: Check source provenance independently
+        run: python scripts/verify_provenance.py
+      - name: Complete original continuum norm and signed S4 cutoff sweep
+        run: |
+          PYTHONPATH=. python scripts/original_continuum_cutoff_sweep.py --verify > "$RUNNER_TEMP/continuum-sweep.json"
+          cat "$RUNNER_TEMP/continuum-sweep.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: original-suzuki-continuum-cutoff-ablation
+          path: ${{ runner.temp }}/continuum-sweep.json
+          if-no-files-found: error
