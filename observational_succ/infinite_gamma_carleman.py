@@ -202,3 +202,26 @@ def comparison_prime_threshold_packet(b, cutoff):
             "nonnorm_rational_floor":str(floor),
             "limit_boundary_essential_norm":"pi/2 (PAPER theorem)",
             "compressed_prime_shift_zero":False,"RH_proved":False}
+
+
+def lawful_tent_domain_obstruction(n):
+    """A true H01 primitive shows derivative strength is not L2-controlled.
+
+    F_n(x)=max(0,1-n*abs(x)), n>=3, on original (-1/2,1/2).
+    Exact integrals: ||F||^2=2/(3n), ||F'||^2=2n,
+    derivative/L2 squared ratio=3n^2. Thus no uniform K-relative
+    replacement of an H01 error by a constant times ||F||^2.
+    This is a DOMAIN negative control, not a negative Weil direction.
+    """
+    n=integer(n,3)
+    norm=F(2,3*n)
+    derivative=F(2*n)
+    ratio=derivative/norm
+    if ratio!=3*n*n:
+        raise ArithmeticError("H01 tent no-go polynomial integration failed")
+    return {"source_domain":"H01(-1/2,1/2) ENDPOINT_ZERO",
+            "tent_parameter":n,"norm_sq":str(norm),
+            "derivative_norm_sq":str(derivative),
+            "derivative_to_L2_ratio_squared":str(ratio),
+            "uniform_H01_to_L2_inverse_control_refuted":True,
+            "source_S4_positive_proved":False,"RH_proved":False}
