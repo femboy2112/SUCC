@@ -92,3 +92,31 @@ jobs:
           name: original-suzuki-multi-high-source-ablation
           path: ${{ runner.temp }}/multimode-sweep.json
           if-no-files-found: error
+
+  prime-phase-conditional:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install authentic frozen Suzuki research source
+        run: python -m pip install -e '.[test]'
+      - name: Audit protected Suzuki Git provenance
+        run: python scripts/verify_provenance.py
+      - name: Exact true-source phase/center/edge conditional proofs
+        run: |
+          python -m unittest discover -s tests -p 'test_source_residual_phase_savings.py' -v > "$RUNNER_TEMP/phase-tests.txt" 2>&1 || { cat "$RUNNER_TEMP/phase-tests.txt"; exit 1; }
+          cat "$RUNNER_TEMP/phase-tests.txt"
+          grep -q '^OK$' "$RUNNER_TEMP/phase-tests.txt"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/phase-tests.txt"; then exit 1; fi
+      - name: Original signed residual with conditional SOURCE-EDGE source provenance
+        run: |
+          PYTHONPATH=. python scripts/source_residual_phase_savings_probe.py --verify > "$RUNNER_TEMP/phase-source.json"
+          cat "$RUNNER_TEMP/phase-source.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: original-suzuki-phase-conditional-source-ablation
+          path: ${{ runner.temp }}/phase-source.json
+          if-no-files-found: error
