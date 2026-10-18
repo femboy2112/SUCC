@@ -45,6 +45,24 @@ For every integer a,m,n≥1,
 
 The normalization \(1/\sqrt n\) is forced if one demands that each original feature vector, with squared raw norm n, be of norm one; this is a true all-finite-set PSD mechanism. It does **not** uniquely choose a representation of the full arithmetic source.
 
+
+### Actual multiplication-isometry representations on one Hilbert space
+
+Both feature families may be placed in the SAME \(\ell^2(\mathbb N)\): replace the real interval \((0,n]\) by its unit cells \(1\le j\le n\), so \(A_n(j)=n^{-1/2}\mathbf1_{j\le n}\). The arithmetic family \(D_n(d)=\sqrt{\varphi(d)/n}\mathbf1_{d\mid n}\) likewise lives in \(\ell^2(\mathbb N)\). **Both spans are dense:** for the interval features \(\sqrt n A_n-\sqrt{n-1}A_{n-1}=e_n\) (with \(A_0=0\)); for divisor features, induct on n since \(D_n(n)=\sqrt{\varphi(n)/n}>0\) and every other supporting coordinate divides n and is smaller.
+
+Their common Gram invariance proves that for each \(a\in\mathbb N_{>0}\), the assignments
+\[
+T_a^D D_n=D_{an},\qquad T_a^A A_n=A_{an}
+\]
+are well-defined isometries on the dense spans: a vanishing linear combination stays zero because its norm is unchanged. They extend uniquely to isometries on \(\ell^2(\mathbb N)\), and \(T_aT_b=T_{ab}\) on dense generators, hence everywhere. **Thus we have two legitimate representations of the SAME multiplicative semigroup by isometries on the SAME Hilbert space, with the SAME normalized unit vector \(D_1=A_1=e_1\).** They are not generally the literal basis shift \(e_n\mapsto e_{an}\).
+
+No unitary can intertwine both representations while fixing \(e_1\), because it would preserve all cyclic orbit inner products. But
+\[
+\langle T_2^De_1,T_3^De_1\rangle=1/\sqrt6,\qquad
+\langle T_2^Ae_1,T_3^Ae_1\rangle=2/\sqrt6.
+\]
+This is a rigorous **vacuum-preserving representation inequivalence**: the choice of multiplication action and orientation is not alone sufficient to force the *specific* global covariance. It is stronger than merely inventing two PSD matrices.
+
 ## MOG-02. A real gluing defect, not merely an artificial negative toy (PROVED)
 
 For incomparable m,n, gcd(m,n)<min(m,n). Thus \(K_A(m,n)-K_D(m,n)>0\), although the two kernels share identical diagonal entries. Already on labels (2,3),
@@ -128,7 +146,7 @@ This package sharpens the earlier draft Connes interface. The next serious gate 
 
 ### Exact executable receipts / independence
 
-- observ​ational_succ/multiplicative_orientation_gram.py: separate integer factorization, totient divisor sums, interval indicator quadratics, explicit signed valuation energies and zero-sum mutation, symbolic log-prime weights without floating transcendental tests.
+- observational_succ/multiplicative_orientation_gram.py: separate integer factorization, totient divisor sums, interval indicator quadratics, explicit signed valuation energies and zero-sum mutation, symbolic log-prime weights without floating transcendental tests.
 - tests/test_multiplicative_orientation_gram.py: independent exact source/feature evaluations, cross-prime indefinite difference, chain invariance, discontinuous near-neighbors, fake p=6 projection and wrong-domain mutants; independent cross-oracle to observational_succ/connes_oriented_scaling.py.
 - Python tests are finite calibration of stated proved identities, not their proof. An isolated local run passed ten purely arithmetic groups; an additional integration cross-oracle needs the authentic previous branch module, so only CI on the **exact final GitHub head** can certify integrated execution. Record its actual status rather than assuming success.
 
