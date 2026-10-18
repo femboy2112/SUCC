@@ -136,6 +136,64 @@ Independently, the upstream original test f(t)=(1-t²)^3 1_{|t|<=1} has autocorr
 
 The executable control imports the ORIGINAL source profiles and the ORIGINAL-source autocorrelation oracle from the pinned SUCC ancestor; it does not construct mutant profiles from arbitrary guessed data. This proves **character, conductor, archimedean parity and canonical contact cannot be dismissed as redundant relative to the full Weil test algebra**, even though E_P itself is an authentic positive arithmetic projection. It is a no-go for a SOURCE-BLIND candidate map, not for an enriched source-aware Connes/Weil construction, nor is it evidence against RH.
 
+
+## MII-11. The Möbius operator is an AUTHENTIC finite-adèle Schwartz–Bruhat test (PROVED CLASSICAL, FULL FINITE PLACE ALGEBRA)
+
+The source-positive sieve admits a stronger interface than scalar Haar matching. Write Zhat=product over all finite primes Z_p, and let P be any finite true prime set, M=product P. On the genuine finite adeles A_f define
+
+    Phi_P(x_f)
+       = product_(p in P) 1_(Z_p^times)(x_p)
+         product_(q not in P) 1_(Z_q)(x_q)
+       = sum_(d|M) mu(d) 1_(d Zhat)(x_f).
+
+The second equality is literal compact-open inclusion–exclusion, since 1_(Z_p^times)=1_(Z_p)-1_(p Z_p), with true prime factors and the default restricted tensor 1_(Z_q) at unlisted places. Each 1_(d Zhat) is the EXISTING inherited SUCC finite-adele RationalCoset(shift=0,scale=d), not an invented residue model. Consequently Phi_P is an actual Schwartz–Bruhat finite test, supported inside Zhat, taking only values 0 and 1.
+
+Its diagonal restriction to every positive integer agrees exactly with the original SUCC/FUCC projection:
+
+    Phi_P(n) = sum_(d|gcd(n,M)) mu(d) = <n|E_P|n>.
+
+Its normalized **additive** Haar integral is
+
+    integral_(A_f) Phi_P(x) dx = sum_(d|M)mu(d)/d
+                              = product_(p in P)(1-1/p).
+
+This is an EXACT commuting square from the original integer carrier, through actual finite Tate compact-open tests, to finite-place Haar. It upgrades the prior scalar local match to a genuine test-function interface with all finite places present. It is NOT yet the multiplicative idèle-class trace nor the Weil quadratic.
+
+### Fully source-normalized finite Fourier transform (MII-12)
+
+Under the self-dual finite additive Fourier convention already implemented in SUCC, the original compact-open generator satisfies
+
+    Fourier_f[1_(d Zhat)](y) = (1/d) 1_(d^-1 Zhat)(y).
+
+Therefore
+
+    Fourier_f Phi_P(y) = sum_(d|M) mu(d)/d * 1_(d^-1 Zhat)(y).
+
+The transform is supported on M^-1 Zhat and invariant under addition by Zhat, hence determined by the COMPLETE finite dual quotient M^-1 Zhat/Zhat, represented by y=a/M for a mod M.
+
+On that exact quotient,
+
+    Fourier_f Phi_P(a/M)
+       = (1/M) sum_(e|gcd(M,a)) e mu(M/e)
+       = c_M(a)/M,
+
+where c_M(a) is the classical Ramanujan sum. Since M is squarefree, its CRT product is
+
+    c_M(a) = product_(p in P) [p-1 if p divides a, else -1].
+
+No transcendental root evaluation is needed to calculate these exact rational values; they agree with the original RationalCoset dual-source Fourier/annihilator oracle. In particular Fourier_f Phi_P can be NEGATIVE even though Phi_P=Phi_P²>=0 as a function and E_P is a positive orthogonal projector. **Negative Fourier coefficients do not imply a negative Hilbert quadratic form.**
+
+The full finite quotient satisfies exact Fourier Plancherel, not merely selected samples:
+
+    sum_(a mod M) |c_M(a)/M|²
+       = (1/M²) product_(p in P) [ (p-1)²+(p-1) ]
+       = product_(p in P)(1-1/p)
+       = integral_(A_f) |Phi_P|² dx.
+
+Thus the Fourier transform conserves all L² information on this entire finite compact-open source class. The squarefree sign cancellations are legitimate, and the finite Fourier transport is lossless on its declared domain. This does **not** imply that arbitrary added information, Weil's contact, the Archimedean Gamma, or Connes' canonical principal value has become redundant.
+
+**Next actual transport gate:** tensor Phi_P with a genuine Schwartz function at the real place and construct the global Tate Poisson/Mellin test before declaring any equality with the CONNES multiplicative scaling trace. The inherited adelic Poisson source already provides real Gaussian/finite-coset tensors; this new finite Mobius test lies in their *finite linear span*. A valid global comparison must preserve both direct and Fourier-dual tests, zero modes, one real Gamma and poles/contact, with source-blind chi_-3 mutants rejected. The next missing map is now **explicitly typed**, not an arbitrary positive Gram.
+
 ## MII-08. What remains RH-hard / falsification gate
 
 All constructions above are genuine classical arithmetic/Hilbert identities with explicit source scopes, and test the user's redundancy intuition. They are not an identification of the COMPLETE signed Weil quadratic:
