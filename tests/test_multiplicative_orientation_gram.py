@@ -7,7 +7,8 @@ from observational_succ.multiplicative_orientation_gram import (
     normalized_overlap_squared, quadratic_certificate, cross_prime_contrast,
     log_valuation_negative_type, prime_power_projection,
     prime_jet_Weil_weight_contract, archimedean_log_discontinuity,
-    log_gcd_gram_certificate,
+    log_gcd_gram_certificate, mobius_euler_vacuum_certificate,
+    single_prime_shift_sign_control,
 )
 
 
@@ -106,6 +107,31 @@ class MultiplicativeOrientationGramTests(unittest.TestCase):
             self.assertEqual(r['archimedean_normalized_squared'],Q(n,n+1))
             self.assertEqual(r['log_gap_ratio'],Q(n+1,n))
             self.assertFalse(r['same_log_continuous_extension_possible'])
+
+    def test_mobius_euler_finite_PSD_and_critical_vacuum_norm(self):
+        prev=Q(0)
+        for primes in ((2,),(2,3),(2,3,5),(2,3,5,7),(2,3,5,7,11)):
+            r=mobius_euler_vacuum_certificate(primes)
+            self.assertEqual(r['vacuum_norm_squared'],r['direct_euler_norm_squared'])
+            self.assertGreater(r['vacuum_norm_squared'],prev)
+            self.assertTrue(r['each_finite_BstarB_is_PSD'])
+            self.assertFalse(r['unnormalized_infinite_vacuum_has_finite_norm'])
+            prev=r['vacuum_norm_squared']
+        self.assertEqual(mobius_euler_vacuum_certificate((2,3,5))['vacuum_norm_squared'],
+                         Q(12,5))
+        with self.assertRaises(MultiplicativeGramError):
+            mobius_euler_vacuum_certificate((2,6))
+
+    def test_actual_multiplication_shift_indefinite_but_factorization_PSD(self):
+        for p in (2,3,5,7):
+            r=single_prime_shift_sign_control(p)
+            self.assertEqual(r['selfadjoint_shift_compression'],((0,1),(1,0)))
+            self.assertEqual(r['positive_direction_rayleigh'],2)
+            self.assertEqual(r['negative_direction_rayleigh'],-2)
+            self.assertTrue(r['factorized_PSD_by_BstarB'])
+            self.assertEqual(r['factorized_negative_offdiag_squared'],Q(1,p))
+        with self.assertRaises(MultiplicativeGramError):
+            single_prime_shift_sign_control(6)
 
     def test_source_and_domain_mutants_rejected(self):
         for bad in (True,0,-2,1.1,Q(2)):
