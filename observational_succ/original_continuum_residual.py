@@ -189,23 +189,18 @@ def source_parameters():
     contact=src.contact_iv()
     if not F(5,8)<b.lo<=b.hi<F(3,4) or not F(0)<w.lo<=w.hi<F(1):
         raise OriginalResidualError("source prime2 normalization invalid")
-    return {"b":b.mid(),"db":b.radius(),"w":w.mid(),"dw":w.radius(),
-            "contact":contact.mid(),"dc":contact.radius(),
+    def snap(v,den=10**12):
+        raw=v.mid()*den
+        n=(raw+F(1,2)).numerator//(raw+F(1,2)).denominator
+        v0=F(n,den)
+        return v0,max(abs(v.lo-v0),abs(v.hi-v0))
+    b0,db=snap(b)
+    w0,dw=snap(w)
+    c0,dc=snap(contact)
+    return {"b":b0,"db":db,"w":w0,"dw":dw,
+            "contact":c0,"dc":dc,
             "sha":receipt["source_git_blob"],"real_gamma_count":1,
-            "half_density":"1/2"}
-
-
-def _piece_map(polynomial,prime_lag,weight):
-    """Three source-active intervals, not a sampled convolution grid."""
-    b, w=rat(prime_lag),rat(weight)
-    if not A<b<2*A:
-        raise OriginalResidualError("true source only first prime-active window")
-    left=A-b
-    right=b-A
-    center=polynomial
-    return ((-A,left,B.add(center,B.scale(shifted(_piece_map.current_h,b),-w))),
-            (left,right,center),
-            (right,A,B.add(center,B.scale(shifted(_piece_map.current_h,-b),-w))))
+            "half_density":"1/2","snap_denominator":10**12}
 
 
 def exact_piecewise_primitive_action(h,J=8,M=80,P=18,parameters=None):
@@ -313,19 +308,6 @@ def _actual_signed_interval(coeff_a,coeff_b,J,entry_cache):
     return lo,hi
 
 
-def _source_moment_holdout(p,h,coeff_a,coeff_b,J,entry_cache):
-    """Cross-check polynomial H_J against ARCHIVED original source matrix.
-
-    The original Suzuki code computes ∫ h_a H_J h_b by a completely
-    different polynomial-exponential exact-source implementation.
-    """
-    a,b=p
-    surrogate=_integrate_piece_pair(a["pieces"],
-                    tuple((l,r,h) for l,r,_ in a["pieces"])) # unused sanity
-    # Interface intentionally replaced by the exact crosscheck below.
-    return surrogate
-
-
 def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
     """Full source-authentic FOUR-mode Schur Loewner lower.
 
@@ -375,7 +357,8 @@ def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
         qm=[[projected_piece_gram(inputs[i]["approx"]["pieces"],
                                    inputs[j]["approx"]["pieces"])
              for j in indices] for i in indices]
-        epssq=sum((inputs[i]["residual"]**2 for i in indices),F(0))
+        epssq=sum(((inputs[i]["finite_source_error"]+inputs[i]["gamma_full_tail_action"])**2
+                   for i in indices),F(0))
         lower=[[
             mid[a][b]-(sum(rad[a]) if a==b else F(0))-
             ((1+eta)*qm[a][b]+
