@@ -193,3 +193,33 @@ def archimedean_log_discontinuity(n):
                 n,n+1,chart="archimedean"),
             "log_gap_ratio":Fraction(n+1,n),
             "same_log_continuous_extension_possible":False}
+
+
+
+def log_gcd_gram_certificate(labels, coefficients):
+    """Classical unconditional PSD for log(gcd): return exact log(p) coefficients.
+
+    log gcd(m,n)=sum_{p,h>=1} log(p)*1_{p^h|m}*1_{p^h|n}.
+    Any finitely supported signed coefficients work, without a zero-sum
+    condition; zero-sum recovers the centered log K quadratic.
+    """
+    if type(labels) not in (tuple, list) or not labels or len(labels)>32:
+        raise MultiplicativeGramError("1..32 source integers required")
+    if type(coefficients) not in (tuple, list) or len(coefficients)!=len(labels):
+        raise MultiplicativeGramError("matching exact coefficients required")
+    ns=tuple(_integer(n) for n in labels)
+    cs=tuple(_coefficient(c) for c in coefficients)
+    valuations=tuple(prime_valuations(n) for n in ns)
+    result={}
+    for p in sorted({p for row in valuations for p in row}):
+        vs=tuple(row.get(p,0) for row in valuations)
+        direct=sum((cs[i]*cs[j]*min(vs[i],vs[j])
+                    for i in range(len(ns)) for j in range(len(ns))), Fraction(0))
+        squares=sum((sum((cs[i] for i in range(len(ns)) if vs[i]>h),
+                         Fraction(0))**2 for h in range(max(vs))), Fraction(0))
+        if direct!=squares or direct<0:
+            raise AssertionError("log gcd incidence Gram identity failed")
+        result[p]=direct
+    return {"prime_log_coefficients":result,
+            "positive_gram_for_arbitrary_signed_coefficients":True,
+            "origin_anchored_at_1":True, "Weil_identification_proved":False}
