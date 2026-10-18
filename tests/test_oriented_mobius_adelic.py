@@ -112,9 +112,11 @@ class NegativeCountingAndAdelicDescentTests(unittest.TestCase):
                 self.assertEqual(minus['coefficient_at_p'],-1)
 
     def test_source_mutants_and_invalid_incidence_rejected(self):
-        for bad in (0,-1,True,2.5):
+        for bad in (-1,True,2.5):
+            # Zero is a valid empty finite collection; do NOT mutate it away.
             with self.assertRaises(NegativeCountingError):
                 DifferenceCount(bad,1)
+        self.assertEqual(DifferenceCount(0,1).integer_value(),-1)
         with self.assertRaises(NegativeCountingError):
             PrimeIncidence((6,),(1,))
         with self.assertRaises(NegativeCountingError):
