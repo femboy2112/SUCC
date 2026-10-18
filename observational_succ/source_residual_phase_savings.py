@@ -115,7 +115,7 @@ def source_conditional_phase_saving(J=16,M=128,P=18,
         raise PhaseSavingError("original prime2 weight not above 12/25")
     original={}
     for i in (1,2,3,4):
-        t=R.rat(baseline["four_original_parity_Schur_blocks"][
+        t=F(baseline["four_original_parity_Schur_blocks"][
                "odd_derivative" if i%2 else "even_derivative"][
                "fitted_high_coefficients"][(i-1)//2])
         h=R.high_boundary_match(i,t)["h"]
