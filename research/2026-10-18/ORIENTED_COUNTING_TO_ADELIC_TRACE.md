@@ -88,6 +88,38 @@ To descend to an idèle-class character using only a continuous unitary positive
 
 This statement DOES NOT preclude global Hecke characters with nontrivial ramified unit characters and conductors. Valid all-place norm characters have χ_v(x)=|x|_v^(it), whose product on diagonal q is 1 by the rational product formula. Their local prime phases are p^(-it), which are NOT a universal -1. The code verifies exact prime-log coefficient cancellation with no floating logarithm approximation.
 
+
+
+## OM-09: EXACT negative counting cancels every finite-place Euler factor and leaves the real Gamma (PROVED CLASSICAL, convergent domain only)
+
+This supplies a more faithful realization of the user's cancellation hypothesis than the free phase sign or an auxiliary positive covariance. Define the ordinary divisor-summation operator Z(n)=sum_{d|n}f(d) and its arithmetic Möbius inverse M by Dirichlet convolution. Unique factorization proves for all n>=1,
+
+    sum_{d|n} mu(d) = product_{p|n}(1-1) = 1 if n=1, else 0.
+
+No spectral data enter. For Re(s)>1, all Dirichlet series and Euler products below are absolutely convergent:
+
+    zeta(s) * (sum_n mu(n)n^-s) = 1
+    zeta(s) * product_p (1-p^-s) = 1.
+
+On the actual Tate source, the completed meromorphic factor before xi-polynomial removal is Lambda(s)=Gamma_R(s)zeta(s), with Gamma_R(s)=pi^(-s/2)Gamma(s/2). Multiplication by the genuine full Möbius Dirichlet series yields
+
+    Lambda(s) * (sum mu(n)n^-s) = Gamma_R(s)
+
+on the convergent half-plane. This is a mathematically exact **finite-place cancellation leaving the Archimedean contribution**, not a claim that Gamma is itself a globally positive spectral quadratic form.
+
+For ANY finite set P of original genuine prime places and beta even integer >=2, the exact rational identity
+
+    product_{p in P}(1-p^-beta)^-1
+    * product_{p in P}(1-p^-beta) = 1
+
+is independently reconstructed from the original Tate shell implementation. The real factor Gamma_R(2m)=(m-1)!pi^-m is retained symbolically (integer coefficient, integer power), and original Tate zero-mode residues (-1,+1) are checked instead of forged. This is not a numerical approximation to Gamma.
+
+Mutations fail: substituting projective p+1 norm factor (1+p^-beta) does NOT cancel a true Euler factor, and substituting uniform full-tower (-1)^k phases gives 1/(1+p^-beta), also not an inverse. Omitting even one original prime from the positive side while retaining its Möbius inverse leaves a real residual factor (1-p^-beta) rather than pure Gamma. A fake prime 6 is forbidden as an Euler place.
+
+**Why this is not RH:** The Dirichlet series for 1/zeta(s) is absolutely convergent only for Re(s)>1. Its meromorphic continuation has poles at the zeros of zeta; a single formal incidence inverse is not automatically a bounded self-adjoint source operator on critical-line test functions. Multiplication by 1/zeta across unknown zero locations can be an illicit unbounded inversion. Furthermore the completed signed Weil distribution has Gamma, poles/contact and prime spectral couplings on a declared test space; the scalar identity Lambda(s)/zeta(s)=Gamma_R(s) is not a trace equality or an all-test positive factorization. It is a necessary arithmetic source cancellation datum, not a proof of Weil positivity.
+
+Reproduce via observational_succ/mobius_tate_gamma_remainder.py and tests/test_mobius_tate_gamma_remainder.py (independent n<=250 divisor inverse, all genuine p-places in finite stages, gamma and omitted-prime source controls).
+
 ## OM-08: The remaining authenticated RH-hard square (UNVERIFIED)
 
 Prior SUCC research/2026-10-15/ONE_OBJECT_TATE_WEIL_SUZUKI_CONNES.md constructs the original signed completed finite-Gamma Weil W_J on all C_c² tests with genuine prime powers, real Gamma, pole/contact and source-domain controls. We have NOT derived a Connes global trace distribution equaling that same W_J, including the canonical identity singularity and its analytic limit, from the positive projective/radial source; still less have we proved universal positivity.
@@ -100,6 +132,6 @@ Precisely missing: (1) PGL2 spherical/radial to GL1 idelic scaling intertwiner o
 
 Imported classical mathematics: incidence Möbius inversion, Grothendieck K0, p-adic Haar, Tate local Mellin, PGL2 Bruhat–Tits spheres, real continuous characters, rational product formula, unique factorization. Primary mathematical references: Alain Connes, Trace formula in noncommutative geometry and the zeros of the Riemann zeta function, Selecta Math. 5 (1999), arXiv:math/9811068; Connes–Consani, Weil positivity and Trace formula, the archimedean place, arXiv:2006.13771 (updated 2026), with the restricted Sonin compression; J. Raimbault, Arbre du groupe PGL2 et opérateurs de Hecke (2016); Tate's thesis (1950/1967 reprint) with normalized real Gaussian and finite 1_Zp.
 
-Implementation (standard-library exact arithmetic, no zeros): observational_succ/oriented_mobius_adelic.py; radial_projective_trace_bridge.py; full_prime_tower_transport.py; connes_compact_open_test_bridge.py. Four matched independent test suites, a source claim supplement, and dedicated CI for Python 3.10 and 3.13. Execution receipts are restricted to actual GitHub CI results at exact commit SHA, not inferred from finite proof examples.
+Implementation (standard-library exact arithmetic, no zeros): observational_succ/oriented_mobius_adelic.py; radial_projective_trace_bridge.py; full_prime_tower_transport.py; connes_compact_open_test_bridge.py; mobius_tate_gamma_remainder.py. Five matched independent test suites, a source claim supplement, and dedicated CI for Python 3.10 and 3.13. Execution receipts are restricted to actual GitHub CI results at exact commit SHA, not inferred from finite proof examples.
 
 **No RH proof, no new global trace formula, no new academic priority.**
