@@ -126,6 +126,27 @@ This is a **universal (all compact tests) but only PRIME-SECTOR equality**, not 
 
 The added homotopy's specific pivot **does cancel**; the original prime-power weight **does not**. The surviving invariant is the source-relative defect [P0,d], not an arbitrary global choice of positive/negative sign. This gives a concrete mathematical target for a possible Connes-to-Weil transport: derive the relevant even test operator T_h FROM a genuine adelic scaling/test representation and prove its defect trace agrees with the canonical local/global trace, including the identity singularity. It would be circular to choose T_h solely by fitting the desired Weil coefficients.
 
+
+## ERW-09. Stronger “redundancy” theorem: the original FUCC multiplication is a KOSZUL BOUNDARY (PROVED CLASSICAL)
+
+This is a nontrivial strengthening of ERW-03. Work in the complete prime-polynomial Koszul module K=R tensor Lambda(theta_p) with differential d=sum_q x_q iota_q. Write epsilon_p for exterior wedge with theta_p. The Clifford relation {iota_q,epsilon_p}=delta_qp yields on the full module, with the natural homogeneous degree maps:
+
+    d epsilon_p + epsilon_p d = x_p I = V_p.
+
+Both terms map source multidegree n to the original target p*n. This holds at first prime activation (even n=1), repeated prime powers, and cross-prime multidegrees, WITHOUT truncating actual p²/p³ states. The implementation constructs the source/target chain map and independently checks both terms on every genuine exterior wedge.
+
+**Consequently the nonzero original FUCC operator V_p is null-homotopic as a map of Koszul complexes.** In the derived/homology quotient its class is zero, although V_p|n>=|pn> is absolutely nonzero on the original integer source. The original arithmetic carrier and its observational action are *not faithfully represented by Koszul homology*. This gives a source-indexed mathematical reason why “homologically redundant” cannot mean “safe to erase for all arithmetic measurements.”
+
+The source arithmetic logarithm acts by H|n,S>=log(n)|n,S> on each total-degree fiber. Therefore epsilon_p raises arithmetic energy by log(p), with the exact graded identities
+
+    [H,epsilon_p] = log(p) epsilon_p,
+    [H,V_p] = [H,{d,epsilon_p}] = log(p) {d,epsilon_p}
+            = log(p) V_p.
+
+The equalities are algebraic on the finite-support source core. They explain why the log-prime clock survives at CHAIN LEVEL as the energy of a nullhomotopy witness even though ordinary homology erases the multiplication map itself. Its canonical source-restricted trace is ERW-04. This is not a new RH operator construction, and the unbounded full-infinite-places trace/domain remains unbuilt.
+
+**New discriminating gate:** any proposed functor to Connes' adelic trace that factors only through Koszul homology must send every V_p and [H,V_p] to zero. It cannot then recover the actual nonzero prime-power fixed-point/explicit-formula response without separately retained boundary, equivariant chain data, or a rigorously defined trace anomaly. The missing “information” must be shown source-redundant only AFTER such an enhanced action is transported and tested; homology alone provably forgets too much.
+
 ## ERW-07. Exact no-ghost / positivity comparison and what can falsify it
 
 The completed signed Weil form on the appropriate convolution tests is RH-equivalent to positivity. An auxiliary positive Koszul-Hodge Laplacian only certifies energy positivity in its constructed carrier; the required equality with W has NOT been proved. An all-test reconstruction must satisfy:
