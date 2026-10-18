@@ -437,10 +437,17 @@ def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
              for j in indices] for i in indices]
         extra_tail=authentic_Gamma_tail_energy_lower_matrix(
                            tuple(inputs[i]["h"]["h"] for i in indices),J)
+        # Tail positivity supplies 0 as an independent PSD source lower.
+        # The Fourier/trace estimate T is valid as a signed Loewner lower,
+        # but may have a NEGATIVE direction. Never silently clamp T_+.
+        # Use the ENTIRE T only if exact 2x2 PSD, otherwise zero.
+        tail_psd=(extra_tail[0][0]>=0 and extra_tail[1][1]>=0
+                  and extra_tail[0][0]*extra_tail[1][1]>=extra_tail[0][1]**2)
+        tail_used=extra_tail if tail_psd else ((F(0),F(0)),(F(0),F(0)))
         epssq=sum(((inputs[i]["finite_source_error"]+inputs[i]["gamma_full_tail_action"])**2
                    for i in indices),F(0))
         lower=[[
-            mid[a][b]+extra_tail[a][b]-
+            mid[a][b]+tail_used[a][b]-
             (sum(rad[a]) if a==b else F(0))-
             ((1+eta)*qm[a][b]+
              ((1+1/eta)*epssq if a==b else F(0)))/kappa
@@ -455,6 +462,9 @@ def source_residual_schur_trial(J=8,M=80,P=18,fit=True,eta=F(1,4)):
                  tuple(map(str,pairs[a][b])) for b in range(2)) for a in range(2)),
             "genuine_infinite_Gamma_tail_lower_Gram":
                 tuple(tuple(str(extra_tail[a][b]) for b in range(2)) for a in range(2)),
+            "source_tail_matrix_is_PSD":bool(tail_psd),
+            "entire_tail_source_inequality_selected":
+                "FOURIER_QUADRATIC_TAIL" if tail_psd else "POSITIVE_ZERO_TAIL",
             "surrogate_QE_action_residual_gram_exact":
                 tuple(tuple(str(qm[a][b]) for b in range(2)) for a in range(2)),
             "source_qJ_original_diagonal_lower":
