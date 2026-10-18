@@ -10,6 +10,7 @@ on:
       - 'observational_succ/weighted_clock_cocycle.py'
       - 'tests/test_mobius_index_infinity.py'
       - 'tests/test_weighted_clock_cocycle.py'
+      - 'scripts/mobius_index_infinity_probe.py'
       - 'research/2026-10-18/MOBIUS_INDEX_INFINITY_SOURCE_TRANSPORT.md'
       - 'docs/CLAIM_SUPPLEMENT_MOBIUS_INDEX_INFINITY.md'
       - '.github/workflows/mobius-index-infinity.yml'
@@ -40,9 +41,12 @@ jobs:
           python -m compileall -q observational_succ/weighted_clock_cocycle.py
           python -m compileall -q tests/test_mobius_index_infinity.py
           python -m compileall -q tests/test_weighted_clock_cocycle.py
+          python -m compileall -q scripts/mobius_index_infinity_probe.py
       - name: All exact Möbius, SUCC index, FUCC and prime shell tests
         run: python -m unittest discover -s tests -p 'test_mobius_index_infinity.py' -v
       - name: Exact Radon Nikodym bidirectional clock, cocycle and cut ghosts
         run: python -m unittest discover -s tests -p 'test_weighted_clock_cocycle.py' -v
+      - name: Reproduce exact multi-route source arithmetic receipt
+        run: python scripts/mobius_index_infinity_probe.py
       - name: Frozen import/source manifest
         run: python scripts/verify_provenance.py
