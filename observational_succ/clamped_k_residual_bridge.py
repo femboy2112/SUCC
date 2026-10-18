@@ -184,3 +184,45 @@ def conditional_schur_residual_envelope(kappa,pair_interval,energy_interval,
             "actual_original_S4_sign_proved":False,
             "full_source_action_residual_certified_by_this_function":False,
             "RH_proved":False}
+
+
+def authenticated_two_parity_clamped_K_margin(J=8):
+    """Original signed source Q>=1/2*K ON this 2D clamped HIGH span.
+
+    Opposite primitive reflection parity gives exact source mixed zero.
+    Genuine omitted Gamma rungs are PSD, hence complete signed source is
+    >= the actual finite-J original signed source on each direction.
+    This proves an exact TWO-DIMENSIONAL subspace margin, NOT an all-high
+    directional Loewner improvement or first-window Schur S4 positivity.
+    """
+    if type(J) is not int or J != 8:
+        raise KResidualError("verified positive margin is pinned to original J8 only")
+    from .suzuki_legendre_source import authentic_full_low_entry
+    s=authentic_clamped_signed_source(J)
+    source_cross=authentic_full_low_entry(5,6,F(1,2),J)
+    if source_cross.lo!=0 or source_cross.hi!=0:
+        raise KResidualError("original reflection cross-parity symmetry lost")
+    minimum=F(1,2)
+    proofs={}
+    for name,model in CLAMPED.items():
+        p=s["parity_clamped_high_packets"][name]
+        qlo=F(p["genuine_finite_high_energy"][0])
+        qhi=F(p["genuine_finite_high_energy"][1])
+        n=model["norm"]
+        margin=qlo-minimum*n
+        if not (margin>0 and qhi>=qlo):
+            raise KResidualError("original source DOES NOT certify 1/2 K margin")
+        proofs[name]={"exact_original_Gamma_J_low_signed_lower":str(qlo),
+          "exact_original_Gamma_J_low_signed_upper":str(qhi),
+          "primitive_original_K_norm_squared":str(n),
+          "strict_above_half_K_margin":str(margin),
+          "completed_signed_source_lower_by_positive_Gamma_tail":str(qlo),
+          "all_original_source_pole_contact_prime_preserved":True}
+    return {"original_source_sha":s["source_git_blob"],
+      "source_first_prime_window":"1/2","true_prime_wavefront":((2,2),),
+      "entire_two_dimensional_clamped_high_span_K_gap_at_least":str(minimum),
+      "exact_reflection_opposite_parity_cross_zero":True,
+      "independent_parity_directions":proofs,
+      "one_half_K_margin_is_NOT_prime_half_density_derivation":True,
+      "full_high_space_K_gap_improved":False,
+      "original_S4_positive_proved":False,"RH_proved":False}
