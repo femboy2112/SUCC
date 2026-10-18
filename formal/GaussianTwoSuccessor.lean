@@ -20,7 +20,7 @@ theorem gaussian_step_twice (x y : Int) :
     gaussianStep (gaussianStep x y).1 (gaussianStep x y).2 =
       (-2*y,2*x) := by
   simp only [gaussianStep]
-  constructor <;> omega
+  apply Prod.ext <;> omega
 
 /-- The Gaussian prime 1+i has norm 2. -/
 theorem first_gaussian_norm_two :
