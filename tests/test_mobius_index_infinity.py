@@ -8,7 +8,7 @@ from observational_succ.mobius_index_infinity import (
     IndexBoundaryError, squarefree_mobius_tape, sieve_projection,
     finite_sieve_count, prime_shell, shell_trace, finite_succ_boundary,
     finite_fucc_boundary, strong_sieve_limit, exact_prime_jets_from_index_density,
-    sign_mutant_control, sieve_succ_commutator,
+    sign_mutant_control, sieve_succ_commutator, finite_normalized_trace_escape,
 )
 
 
@@ -193,6 +193,20 @@ class MobiusIndexAtInfinityTests(unittest.TestCase):
         # V_6 exists as a COMPOSITE dilation and is V_2 V_3.
         self.assertEqual(2*3*7,6*7)
         self.assertEqual(sum(n%6==0 for n in range(1,61)),10)
+
+    def test_normalized_matrix_states_escape_every_fixed_basis_label(self):
+        for n in (1,2,3,11):
+            prev=F(2)
+            for N in (20,40,100,1000):
+                x=finite_normalized_trace_escape(N,n)
+                self.assertEqual(x["finite_density_matrix_trace"],1)
+                self.assertEqual(x["fixed_basis_probability"],F(1,N))
+                self.assertLess(x["fixed_basis_probability"],prev)
+                self.assertEqual(x["density_matrix_operator_norm"],F(1,N))
+                self.assertFalse(x["candidate_normal_state_with_all_zero_diagonals_possible"])
+                self.assertFalse(x["same_state_as_unit_vacuum"])
+                prev=x["fixed_basis_probability"]
+        self.assertEqual(finite_normalized_trace_escape(2,11)["fixed_basis_probability"],0)
 
     def test_source_type_and_horizon_rejections(self):
         with self.assertRaises(IndexBoundaryError):
