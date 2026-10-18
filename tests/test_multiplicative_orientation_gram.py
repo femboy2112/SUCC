@@ -7,6 +7,7 @@ from observational_succ.multiplicative_orientation_gram import (
     normalized_overlap_squared, quadratic_certificate, cross_prime_contrast,
     log_valuation_negative_type, prime_power_projection,
     prime_jet_Weil_weight_contract, archimedean_log_discontinuity,
+    log_gcd_gram_certificate,
 )
 
 
@@ -63,6 +64,17 @@ class MultiplicativeOrientationGramTests(unittest.TestCase):
                          {2:Q(1),3:Q(1)})
         self.assertEqual(log_valuation_negative_type((1,8),(1,-1))['prime_log_energy_coefficients'],
                          {2:Q(3)})
+
+    def test_unrestricted_log_gcd_psd_and_conditional_centering(self):
+        samples=(((1,2),(1,-1)),((2,3),(1,1)),
+                 ((1,2,3,6),(1,3,-2,-2)),((2,4,9,18),(4,-1,2,3)))
+        for ns,cs in samples:
+            receipt=log_gcd_gram_certificate(ns,cs)
+            self.assertTrue(receipt['positive_gram_for_arbitrary_signed_coefficients'])
+            self.assertTrue(all(v>=0 for v in receipt['prime_log_coefficients'].values()))
+            if not sum(cs):
+                self.assertEqual(receipt['prime_log_coefficients'],
+                                 log_valuation_negative_type(ns,cs)['prime_log_energy_coefficients'])
 
     def test_prime_jets_reconstruct_magnitude_not_signed_distribution(self):
         for p in (2,3,5,7,11):
