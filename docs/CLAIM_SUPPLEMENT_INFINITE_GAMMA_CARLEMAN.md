@@ -13,3 +13,9 @@ Parent draft PR #170. Frozen original Suzuki source SHA 0cc8510b71d178fc79e8d410
 | Original signed Weil four-mode Schur S4, all-radius positivity, RH | OPEN; RH PROVED NO | skew boundary commutator is not positive quadratic source |
 
 The new infinite-rung operator is bounded and noncompact on L2, strongly approached by finite rank, but not approximable by finite rank in operator norm. The H1_0 bilinear-tail bound is useful for lawful smooth source probes, but its derivative budget does not by itself bound the authentic K-relative high resolvent. Historical archive and source remain unchanged.
+
+
+| IGC-06 exact essential spectrum of i D_inf equals [-pi/2,pi/2] in BOTH parities | PAPER PROVED via Mellin plane-wave Weyl sequences + compact-corner reduction; separate numerical scout NOT proof | incomplete Weyl sequence or missed compact remainder |
+| IGC-07 comparison lag phase threshold: pi/2 for each 1/2<b<1, zero at b>=1 | PAPER PROVED with fixed a=1/2; exact rational dyadic negative/positive controls | invalid extension to genuine modified Weil source, or missing nonempty corners |
+
+**Source distinction:** IGC-07 varies a COMPARISON lag b, not the authentic Weil b=log2; the original zeta source remains unchanged. The spectral band applies to the bounded limit of finite Gamma commutators, not an unrestricted commutator with the unbounded completed Gamma operator. The numerical Mellin scout is a separate calibrated diagnostic with no proof authority.
