@@ -37,6 +37,39 @@ jobs:
           cat "$RUNNER_TEMP/gaussian.txt"
           grep -q '^OK$' "$RUNNER_TEMP/gaussian.txt"
           if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/gaussian.txt"; then exit 1; fi
+      - name: Independent Q(i) ramified two versus inert/split genuine Euler controls
+        run: |
+          python -m unittest discover -s tests -p 'test_gaussian_euler_shell_controls.py' -v > "$RUNNER_TEMP/euler.txt" 2>&1 || { cat "$RUNNER_TEMP/euler.txt"; exit 1; }
+          cat "$RUNNER_TEMP/euler.txt"
+          grep -q '^OK
+        run: |
+          PYTHONPATH=. python scripts/gaussian_kresidual_probe.py --verify
+          PYTHONPATH=. python scripts/gaussian_kresidual_probe.py --source --verify
+      - name: Recheck parent source-complete infinite Gamma and parity
+        run: |
+          python -m unittest discover -s tests -p 'test_infinite_gamma_carleman.py' -q
+          python -m unittest discover -s tests -p 'test_transported_gamma_boundary.py' -q
+  lean-index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned official Lean compiler
+        run: |
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+      - name: Kernel-check successor/Gaussian two-step without bypass
+        run: |
+          "$HOME/.elan/bin/lean" --version
+          "$HOME/.elan/bin/lean" formal/GaussianTwoSuccessor.lean
+          python - <<'PY'
+          import re
+          from pathlib import Path
+          code=Path("formal/GaussianTwoSuccessor.lean").read_text().split("namespace ObservationalSUCC.GaussianTwoSuccessor",1)[1]
+          assert re.search(r'\b(sorry|admit|axiom|unsafe|native_decide)\b',code) is None
+          PY
+ "$RUNNER_TEMP/euler.txt"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/euler.txt"; then exit 1; fi
       - name: Exact original source and Gaussian negative-control receipts
         run: |
           PYTHONPATH=. python scripts/gaussian_kresidual_probe.py --verify
