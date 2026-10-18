@@ -27,7 +27,7 @@ jobs:
       - name: Exact window and source countermodel tests
         run: python -m unittest discover -s tests -p 'test_maximal_novelty_source.py' -v
       - name: Reproduce maximal finite block novelty control
-        run: python scripts/maximal_novelty_source_probe.py --verify
+        run: PYTHONPATH=. python scripts/maximal_novelty_source_probe.py --verify
   finite-lean-kernel:
     runs-on: ubuntu-latest
     timeout-minutes: 15
