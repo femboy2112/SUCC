@@ -34,9 +34,16 @@ class WeightedClockCocycleTests(unittest.TestCase):
                 if not 0<=u<L:continue
                 r=ratio_square_interval(L,u,a,J=15)
                 v=clock_phase(u-a,L)
-                direct=approximate_weight(v,L,300)/approximate_weight(u,L,300)
-                self.assertLessEqual(r["RN_cocycle_square_lower"],direct)
-                self.assertGreaterEqual(r["RN_cocycle_square_upper"],direct)
+                # A RATIO of two truncated positive series is NOT
+                # necessarily an enclosure of the ratio of their full
+                # limits. Compare independently enclosed ratios instead.
+                fine=ratio_square_interval(L,u,a,J=300)
+                self.assertLessEqual(r["RN_cocycle_square_lower"],
+                                     fine["RN_cocycle_square_lower"])
+                self.assertGreaterEqual(r["RN_cocycle_square_upper"],
+                                        fine["RN_cocycle_square_upper"])
+                self.assertLessEqual(fine["RN_cocycle_square_lower"],
+                                     fine["RN_cocycle_square_upper"])
                 self.assertTrue(r["unitary_in_original_weighted_L2"])
                 self.assertFalse(r["original_Haar_shift_without_cocycle_unitary"])
 
