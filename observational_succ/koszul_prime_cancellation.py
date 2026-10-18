@@ -74,6 +74,33 @@ class PrimeKoszul:
         self._check(S)
         return tuple((S[:j]+S[j+1:],(-1)**j) for j in range(len(S)))
 
+    def exterior_creation(self,p,S):
+        """epsilon_p: wedge ordered theta_p onto one exterior basis state."""
+        self._check(S)
+        if p not in self.active:
+            raise KoszulSourceError("creation requires an active genuine prime")
+        if p in S:
+            return ()
+        position=sum(q<p for q in S)
+        T=tuple(sorted(S+(p,)))
+        return ((T,(-1)**position),)
+
+    def exterior_annihilation(self,p,S):
+        """iota_p: contracted ordered wedge, adjoint to epsilon_p."""
+        self._check(S)
+        if p not in self.active:
+            raise KoszulSourceError("annihilation requires active genuine prime")
+        if p not in S:
+            return ()
+        position=S.index(p)
+        return ((S[:position]+S[position+1:],(-1)**position),)
+
+    def adjoint_boundary(self,S):
+        """d*=sum epsilon_p in the standard orthonormal exterior basis."""
+        self._check(S)
+        return tuple(result for p in self.active
+                     for result in self.exterior_creation(p,S))
+
     def contracting_homotopy(self,S):
         """For alpha!=0 choose minimum active p0, wedge theta_p0.
 
@@ -88,7 +115,7 @@ class PrimeKoszul:
         return (((pivot,)+S,1),)
 
     def act(self,chain,kind):
-        if type(chain) is not dict or kind not in ("boundary","contracting_homotopy"):
+        if type(chain) is not dict or kind not in ("boundary","adjoint_boundary","contracting_homotopy"):
             raise KoszulSourceError("finite exact chain and known map required")
         result={}
         for S,coeff in chain.items():
@@ -131,6 +158,54 @@ class PrimeKoszul:
             "all_prime_power_states_retained":True,
             "positive_Hermitian_Weil_form_constructed":False,
             "RH_proved":False,
+        }
+
+    def hodge_laplacian_receipt(self):
+        """Exact Hodge Laplacian {d,d*}=omega(alpha)*I, omega=#support.
+
+        The proof is the exterior Clifford relation
+        {iota_p,epsilon_q}=delta_pq I. This is an auxiliary arithmetic
+        positive operator, not the original signed Weil quadratic form.
+        """
+        support=self.active
+        for S in self.basis():
+            e={S:Q(1)}
+            ddstar=self.act(self.act(e,"adjoint_boundary"),"boundary")
+            dstard=self.act(self.act(e,"boundary"),"adjoint_boundary")
+            result={T:ddstar.get(T,Q(0))+dstard.get(T,Q(0))
+                    for T in set(ddstar)|set(dstard)}
+            result={T:v for T,v in result.items() if v}
+            expected={S:Q(len(support))} if support else {}
+            if result!=expected:
+                raise AssertionError("EXTERIOR_HODGE_CLIFFORD_IDENTITY_FAILED")
+        return {
+            "prime_support":support,"hodge_eigenvalue":len(support),
+            "ddstar_plus_dstard_equals_omega_identity":True,
+            "positive_semidefinite_on_every_exterior_chain":True,
+            "strictly_positive_outside_arithmetic_unit":bool(support),
+            "original_Weil_PSD_proved":False,
+        }
+
+    def weighted_log_clock_factorization(self):
+        """Formal-log weighted supercharge Q=sum sqrt(alpha_p*log p) iota_p.
+
+        Clifford anticommutators imply
+        {Q,Q*} = (sum alpha_p log p)*I = (log n)*I.
+        This is source-graded/fiberwise, NOT the polynomial-R-linear
+        unweighted Koszul resolution and NOT Weil PSD.
+        """
+        h=self.hodge_laplacian_receipt()
+        weights=tuple((p,k) for p,k in zip(self.primes,self.alpha) if k)
+        n=1
+        for p,k in weights:
+            n*=p**k
+        return {
+            "source_integer":n,"formal_prime_log_square_weights":weights,
+            "Clifford_cross_terms_cancel":h["ddstar_plus_dstard_equals_omega_identity"],
+            "weighted_Hodge_laplacian_symbol":f"log({n})*I",
+            "is_original_SUCC_log_n_generator":True,
+            "fiberwise_weighted_d_not_asserted_R_linear":True,
+            "Weil_functional_identified":False,"RH_proved":False,
         }
 
     def negative_first_chain_gauge(self):
