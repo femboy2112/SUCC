@@ -18,6 +18,7 @@ from observational_succ.bidirectional_cut import (
     SourcePassport)
 from observational_succ.clock_memory_resolvent import (
     memory_bounds, backward_ladder_mutation, folded_memory_energy_bounds,
+    haar_memory_transport_obstruction,
 )
 from observational_succ.bidirectional_hilbert import (
     orthogonal_innovations,hidden_target_counterexample)
@@ -61,6 +62,7 @@ def build():
     # one finite modular clock. Preserve the required decay-at-infinity gate.
     memory=memory_bounds(F(0),1,depth=128)
     ghost=backward_ladder_mutation(F(1,2),3,depth=24,ghost=F(1,5))
+    separation=haar_memory_transport_obstruction(840,28)
     folded=folded_memory_energy_bounds((F(1),F(-1),F(1)),6,J=20,subdivisions=10)
     assert folded['full_squared_error_lower']<=sample['upper']
     assert folded['full_squared_error_upper']>=sample['lower']
@@ -97,6 +99,8 @@ def build():
             'folded_weighted_full_L2_lower':outward(folded['full_squared_error_lower'],'lower'),
             'folded_weighted_full_L2_upper':outward(folded['full_squared_error_upper'],'upper'),
             'rational_memory_tail_sourced_from_positive_clock':True,
+            'total_variation_840_lower':separation['total_variation_distance_lower'],
+            'Hilbert_transport_norm_sq_lower':separation['L2_norm_transport_squared_lower'],
         },
         'finite_orthogonal_ghost':{ 
             'target_norm_sq':witness3['norm_sq'],

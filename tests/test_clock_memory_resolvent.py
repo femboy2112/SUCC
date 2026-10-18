@@ -5,7 +5,7 @@ from math import lcm
 from observational_succ.bidirectional_cut import CutSourceError, certified_cut_residual
 from observational_succ.clock_memory_resolvent import (
     memory_bounds, upper_cut_weight_bounds, backward_ladder_mutation,
-    folded_memory_energy_bounds,
+    folded_memory_energy_bounds, haar_memory_transport_obstruction,
 )
 
 
@@ -76,6 +76,22 @@ class BackwardMemoryTests(unittest.TestCase):
         )
         self.assertEqual(result.returncode,0,result.stderr)
         self.assertIn('BIDIRECTIONAL_CUT_RECEIPT_VERIFIED',result.stdout)
+
+    def test_total_variation_separation_is_source_certified(self):
+        a=haar_memory_transport_obstruction(840,28)
+        self.assertGreater(a['total_variation_distance_lower'],F(93,100))
+        self.assertEqual(a['L2_norm_transport_squared_lower'],840)
+        # Even though both source measures are bona fide probabilities,
+        # their Hilbert metrics cannot be uniformly identified as L grows.
+        self.assertTrue(a['growing_clock_not_uniformly_norm_equivalent'])
+        self.assertTrue(haar_memory_transport_obstruction(2310,48)
+                        ['total_variation_distance_lower']>a['total_variation_distance_lower'])
+
+    def test_invalid_haar_memory_transport_domains(self):
+        with self.assertRaises(CutSourceError): haar_memory_transport_obstruction(1,1)
+        with self.assertRaises(CutSourceError): haar_memory_transport_obstruction(6,7)
+        with self.assertRaises(CutSourceError): haar_memory_transport_obstruction(6,1)
+        with self.assertRaises(CutSourceError): haar_memory_transport_obstruction(True,2)
 
     def test_memory_exact_reciprocal_square_identity_at_origin(self):
         a=memory_bounds(F(0),1,depth=128)

@@ -2,13 +2,15 @@
   "Basel_in_source_mean": "1/12 = (1/(2*pi^2))*zeta(2); independent carry proof also exists",
   "RH_proved": false,
   "backward_clock_memory": {
+    "Hilbert_transport_norm_sq_lower": "840",
     "folded_weighted_full_L2_lower": "627455978979/500000000000",
     "folded_weighted_full_L2_upper": "1327151281473/1000000000000",
     "ghost_does_not_decay_at_infinity": true,
     "ghost_shift_equation_indistinguishable": true,
     "origin_reciprocal_square_tail_lower": "822451971469/500000000000",
     "origin_reciprocal_square_tail_upper": "328992900991/200000000000",
-    "rational_memory_tail_sourced_from_positive_clock": true
+    "rational_memory_tail_sourced_from_positive_clock": true,
+    "total_variation_840_lower": "261/280"
   },
   "domain": "exact rational clock source + classical Hilbert assertions",
   "finite_orthogonal_ghost": {

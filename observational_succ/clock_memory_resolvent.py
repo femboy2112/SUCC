@@ -128,3 +128,33 @@ def folded_memory_energy_bounds(coeffs, period, *, J=12, subdivisions=1,
             "full_squared_error_lower":low+b*b,
             "full_squared_error_upper":high+b*b,
             "RH_proved":False}
+
+
+def haar_memory_transport_obstruction(period, window):
+    """Source-invariant lower bound separating uniform and inverse-square clocks.
+
+    Uniform Haar on [0,L): H(B)=|B|/L. Backward memory probability:
+      omega(B)=integral_B W_L(u)du,
+    where omega is the pushforward of x^-2 dx on x>=1 by x mod L.
+    For B=[1,R), 1<R<=L:
+      omega(B)>=integral_1^R dx/x²=1-1/R,
+      H(B)=(R-1)/L.
+    Thus TV(omega,H)>=max(0,1-1/R-(R-1)/L).
+    On a positive-measure set approaching 1 from the right W_L(u)>=u^-2,
+    so the identity L²(H)->L²(omega) has squared norm >=L (L>1).
+    No infinite-closure norm bound independent of clock period follows.
+    """
+    small_n(period,maximum=100000)
+    R=rat(window)
+    if period<2 or not 1<R<=period:
+        raise CutSourceError("nontrivial bounded window 1<R<=L required")
+    haar=F(R-1,period)
+    mem=F(1)-1/R
+    delta=max(F(0),mem-haar)
+    return {"period":period,"window":R,
+            "haar_window_probability":haar,
+            "memory_window_probability_lower":mem,
+            "total_variation_distance_lower":delta,
+            "L2_norm_transport_squared_lower":F(period),
+            "growing_clock_not_uniformly_norm_equivalent":True,
+            "RH_proved":False}

@@ -176,3 +176,30 @@ For `L=1`, `R_1(0)=Σj^-2=ζ(2)` exactly: the infinite reciprocal-square sum is 
 ### Verdict
 
 The backward compactification is now a rigorous **finite-clock plus uniquely decaying memory kernel**. The hard part is no longer how to write the correct weighted norm; we can. It is to prove that the source-generated coefficient innovations drive this norm to zero for the specific upper cut as `N→∞`. That step remains precisely the RH-equivalent Báez-Duarte closure; no noncircular bound or Weil sign is obtained. Source access to arbitrarily large clocks is separately conditional on the SUCC observer constructor laws.
+
+## 10. BDC-10 — asymptotically singular source measures; an exact transport no-go
+
+Define two normalized probability measures on the same finite clock `[0,L)`:
+
+- `H_L(du)=du/L`, the traditional uniform finite cyclic Haar source;
+- `omega_L(du)=W_L(u)du`, where `W_L` is the genuine backward-memory weight from BDC-09. It is a probability because it is the pushforward of `1_{x>=1} dx/x²`, whose total mass is one.
+
+**Theorem (PAPER PROVED, no zeta zeros):** For every `1<R<=L`, take the fixed physical-cut observation window `B=[1,R)`. Then
+
+`omega_L(B) >= 1 - 1/R`, while `H_L(B) = (R-1)/L`. Therefore
+
+`TV(omega_L,H_L) >= 1 - 1/R - (R-1)/L`, clipped below at 0. (BDC.10)
+
+For any sequence `L→∞` choose `R=floor(sqrt(L))` (for L>=4). The right side approaches 1; since TV of probabilities is at most 1,
+
+`lim_(L→∞) TV(omega_L,H_L)=1`. (BDC.11)
+
+**No uniform Hilbert norm transport:** Let `I_L` be the identity on test functions regarded as a map `L²(H_L) -> L²(omega_L)`. Its squared operator norm is `L * esssup_u W_L(u)`. At `u↓1` from the right, `W_L(u) >= u^-2 ->1`. Hence for every L>1,
+
+`||I_L||² >= L`, `||I_L|| >= sqrt(L)`. (BDC.12)
+
+The two positive arithmetic source measures are equivalent for each *fixed* finite L but **not uniformly equivalent under cofinal SUCC growth**. Any proof that transports a periodic-Haar Gram bound directly into the genuine weighted upper-cut Hilbert norm without paying a divergent comparison cost is invalid. This is a proved obstruction to a particular shortcut, not a proof of RH-hard residual non-closure.
+
+Exact witness: `L=840` (all clocks through 8) and `R=28` yield `TV >= 1 - 1/28 - 27/840 > 93/100` and transport norm at least `sqrt(840)`. Source code and tests compute these inequalities as exact Fractions, never from a sampled density.
+
+**Status:** BDC-10 is an elementary theorem about finite clock pushforwards and their cofinal sequence; academic novelty is not asserted. The next viable probe must work in the **correct changing weighted measure** with its cut boundary, not in a flat uniform clock model.
