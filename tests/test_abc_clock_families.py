@@ -6,7 +6,7 @@ import unittest
 from observational_succ.abc_clock_families import (
     ABCClockError, ABCTriple, exact_local_clock, finite_envelope,
     prime, prime_factors, prime_progression_lifts, radical, radical_sieve,
-    residue_clock_indicator, ris, valuation,
+    residue_clock_indicator, ris, valuation, local_energy_tail,
 )
 
 
@@ -131,6 +131,17 @@ class ABCClockTests(unittest.TestCase):
         for i in range(len(es)-1):
             self.assertGreaterEqual(vals[i]**es[i+1].denominator,
                                     vals[i+1]**es[i].denominator)
+
+    def test_local_gibbs_energy_tail_and_p2_critical_lower_bound(self):
+        for p in (2, 3, 5):
+            for exponent in (1, 2, 3):
+                from_law = 3 * exact_local_clock(p, exponent+1)["each_slot_at_least_depth"]
+                self.assertEqual(local_energy_tail(p, exponent), from_law)
+                if p == 2:
+                    self.assertEqual(from_law, F(1, 2**exponent))
+        for bad in ((4,1), (3,0)):
+            with self.assertRaises(ABCClockError):
+                local_energy_tail(*bad)
 
     def test_forged_radical_is_detected(self):
         t = ABCTriple(1,4374,4375)
