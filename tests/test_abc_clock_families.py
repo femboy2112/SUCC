@@ -7,6 +7,7 @@ from observational_succ.abc_clock_families import (
     ABCClockError, ABCTriple, exact_local_clock, finite_envelope,
     prime, prime_factors, prime_progression_lifts, radical, radical_sieve,
     residue_clock_indicator, ris, valuation, local_energy_tail, prime_ap_shadow_fan,
+    modular_additive_count,
 )
 
 
@@ -131,6 +132,30 @@ class ABCClockTests(unittest.TestCase):
         for i in range(len(es)-1):
             self.assertGreaterEqual(vals[i]**es[i+1].denominator,
                                     vals[i+1]**es[i].denominator)
+
+    def test_finite_fourier_orthogonality_matches_independent_direct_counts(self):
+        a, b, c = (1,2,2,4), (1,3,6), (3,4,5,8,10)
+        for modulus in (2,3,5,7,11,23):
+            direct = sum((x+y-z) % modulus == 0
+                         for x in a for y in b for z in c)
+            self.assertEqual(modular_additive_count(a,b,c,modulus),direct)
+        exact = sum(x+y == z for x in a for y in b for z in c)
+        self.assertEqual(modular_additive_count(a,b,c,23,require_exact=True),exact)
+        with self.assertRaises(ABCClockError):
+            modular_additive_count(a,b,c,7,require_exact=True)
+
+    def test_small_modulus_false_abc_is_rejected_before_transport(self):
+        self.assertEqual(modular_additive_count((1,),(1,),(5,),3),1)
+        self.assertEqual(modular_additive_count((1,),(1,),(5,),6,require_exact=True),0)
+        with self.assertRaises(ABCClockError):
+            modular_additive_count((1,),(1,),(5,),3,require_exact=True)
+        layers = ABCTriple(1,8,9).exponent_layers()
+        a,b,c = tuple(__import__("math").prod(row[i]**row[0] for row in layers)
+                      for i in (1,2,3))
+        self.assertEqual(modular_additive_count((a,),(b,),(c,),24,
+                                                require_exact=True),1)
+        with self.assertRaises(ABCClockError):
+            modular_additive_count((1,), (2,), (), 11)
 
     def test_prime_exponent_layers_are_a_canonical_monomial_certificate(self):
         for a, b in ((1,8),(3,125),(5,1024),(125,128),(63,1)):
