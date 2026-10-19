@@ -7,6 +7,8 @@ from observational_succ.green_tao_clock_ap import (
     ClockAPError, all_clocks_at_one, clock_check, exact_character_label,
     is_prime_exact, local_prime_factors, local_step_requirement,
     prime_clock_progression, prime_predecessor_factorization, search_first_grid,
+    exact_factorization, exact_rad, flat_rad_ladder_condition,
+    verify_flat_rad_prime_ladder, search_flat_rad_ladder,
     verify_prime_clock_grid, wheel_arithmetic,
 )
 
@@ -161,6 +163,68 @@ class GreenTaoClockAPTest(unittest.TestCase):
                     self.assertFalse(all(independent_prime(1+W*(start+j*step))
                                          for j in range(1, 5)))
         self.assertEqual(search.endpoint_primes[-1], 392896351)
+
+    def test_exact_flat_rad_ladder_support_equivalence(self):
+        # All R in this finite window checked against a different direct
+        # factorization oracle and the literal ALL-j statement.
+        for length in range(2, 7):
+            for R in range(1, 601):
+                oracle = all(
+                    prod(q for q in range(2, R*j+1)
+                         if R*j % q == 0 and independent_prime(q)) == R
+                    for j in range(1, length+1))
+                self.assertEqual(flat_rad_ladder_condition(R, length), oracle,
+                                 (R, length))
+
+    def test_flat_rad_prime_ladders_three_four_five(self):
+        for R, length, expected in (
+            (210, 3, (211, 421, 631)),
+            (330, 4, (331, 661, 991, 1321)),
+            (247710, 5, (247711, 495421, 743131, 990841, 1238551)),
+        ):
+            ladder = verify_flat_rad_prime_ladder(R, length)
+            self.assertEqual(ladder.prime_endpoints, expected)
+            self.assertEqual(ladder.residual_values, tuple(range(1, length+1)))
+            self.assertEqual(ladder.length, length)
+            self.assertTrue(all(exact_rad(p-1) == R for p in expected))
+            self.assertTrue(all(independent_prime(p) for p in expected))
+        self.assertEqual(search_flat_rad_ladder(3, 6).radical, 6)
+        self.assertEqual(search_flat_rad_ladder(4, 330).radical, 330)
+        self.assertEqual(search_flat_rad_ladder(5, 247710).radical, 247710)
+        self.assertIsNone(search_flat_rad_ladder(5, 10000))
+
+    def test_stronger_five_by_five_grid_also_constant_rad(self):
+        # Five clocks are genuine 5,11,17,23,29 prime AP, while five
+        # prime endpoints are an AP of step R itself. Relative to the
+        # *whole* factorization of each p-1, RAD=R and RIS=1,...,5.
+        q = prime_clock_progression(5, 6, 5)
+        R = 71533328790
+        self.assertEqual(R, 6 * prod(q) * 19117)
+        self.assertEqual(exact_factorization(19117), ((7, 1), (2731, 1)))
+        ladder = verify_flat_rad_prime_ladder(R, 5)
+        expected = (71533328791, 143066657581, 214599986371,
+                    286133315161, 357666643951)
+        self.assertEqual(ladder.prime_endpoints, expected)
+        self.assertEqual(ladder.residual_values, (1, 2, 3, 4, 5))
+        self.assertTrue(all(exact_rad(p-1) == R for p in expected))
+        self.assertTrue(all(all_clocks_at_one(p, q) for p in expected))
+        self.assertTrue(all(independent_prime(p) for p in expected))
+        self.assertEqual(ladder.radical_factors,
+                         ((2, 1), (3, 1), (5, 1), (7, 1),
+                          (11, 1), (17, 1), (23, 1), (29, 1),
+                          (2731, 1)))
+
+    def test_flat_rad_condition_does_not_force_primality(self):
+        self.assertTrue(flat_rad_ladder_condition(210, 4))
+        with self.assertRaises(ClockAPError):
+            verify_flat_rad_prime_ladder(210, 4)  # 1+4*210=841=29^2
+        self.assertFalse(flat_rad_ladder_condition(12, 4))
+        self.assertFalse(flat_rad_ladder_condition(10, 3))  # missing prime 3
+        self.assertTrue(flat_rad_ladder_condition(30, 5))
+        with self.assertRaises(ClockAPError):
+            verify_flat_rad_prime_ladder(30, 5)  # p_3=91 is composite
+        with self.assertRaises(ClockAPError):
+            verify_flat_rad_prime_ladder(71533328790, True)
 
     def test_hostile_composite_and_step_sources(self):
         for bad in ((5, 11, 17, 24), (7, 5, 11), (5, 5),
