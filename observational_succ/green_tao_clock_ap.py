@@ -350,3 +350,64 @@ def search_flat_rad_ladder(length: int, radical_cap: int
         if all(is_prime_exact(1+j*R) for j in range(1, length+1)):
             return verify_flat_rad_prime_ladder(R, length)
     return None
+
+
+@dataclass(frozen=True)
+class MaynardClockFamily:
+    """Only finite algebraic admissibility; prime-rich infinitude is EXTERNAL."""
+    prescribed_clocks: tuple[int, ...]
+    form_count: int
+    anchor_modulus: int
+    linear_coefficients: tuple[int, ...]
+
+
+def maynard_clock_family(clocks: tuple[int, ...], form_count: int
+                         ) -> MaynardClockFamily:
+    """Construct exact finite admissible forms 1+j*A*t, j=1..K.
+
+    Each finite prime r has witness t=0 mod r making ALL forms 1 mod r.
+    That local theorem is elementary; MAYNARD--TAO external theory is needed
+    to assert infinitely many t with >=m prime forms for sufficient K.
+    """
+    wheel = wheel_arithmetic(clocks)
+    _typed(form_count, "finite affine family length", 2, 12)
+    required = set(wheel.clocks) | set(small_primes(form_count))
+    anchor = prod(sorted(required))
+    _typed(anchor * form_count, "largest affine coefficient", 2, MAX_PRIME_INPUT)
+    return MaynardClockFamily(wheel.clocks, form_count, anchor,
+                              tuple(j*anchor for j in range(1, form_count+1)))
+
+
+@dataclass(frozen=True)
+class ObservedClockFiber:
+    """Exact data for one t, never an asymptotic proof or prime-count guarantee."""
+    anchor_modulus: int
+    parameter: int
+    step_R: int
+    full_radical: int
+    full_ris: int
+    endpoints: tuple[int, ...]
+    prime_positions: tuple[int, ...]
+    ris_values: tuple[int, ...]
+
+
+def observe_maynard_clock_fiber(family: MaynardClockFamily,
+                                parameter: int) -> ObservedClockFiber:
+    if not isinstance(family, MaynardClockFamily):
+        raise ClockAPError("family must be a source-validated Maynard clock chart")
+    _typed(parameter, "positive affine parameter", 1, MAX_PRIME_INPUT)
+    R = family.anchor_modulus * parameter
+    _typed(1 + R * family.form_count, "largest endpoint", 2, MAX_PRIME_INPUT)
+    base_radical = exact_rad(R)
+    base_ris = R // base_radical
+    endpoints = tuple(1+j*R for j in range(1, family.form_count+1))
+    for j, p in enumerate(endpoints, start=1):
+        if exact_rad(p-1) != base_radical or (p-1) // base_radical != j*base_ris:
+            raise AssertionError("Maynard-clock support or depth identity failed")
+    return ObservedClockFiber(
+        family.anchor_modulus, parameter, R, base_radical, base_ris,
+        endpoints,
+        tuple(j for j, p in enumerate(endpoints, start=1)
+              if is_prime_exact(p)),
+        tuple(j*base_ris for j in range(1, family.form_count+1)),
+    )
