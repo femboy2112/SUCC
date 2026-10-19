@@ -232,3 +232,23 @@ The number of **distinct square lifts** is exactly
 For all lifts \(c/\operatorname{rad}(abc)<1/3\), regardless of their repeated-prime energy. Green--Tao gives arbitrarily long prime progressions as an **external theorem**, hence unbounded quadratic fans of individually benign lifts. This sharply falsifies any inference from *many* synchronized prime subprogressions to high ABC quality. The exact code prime_ap_shadow_fan authenticates primes and the original progression; its five-prime example (5,11,17,23,29) yields four distinct lifts, including one with spacing twice the base AP step. No proof of Green--Tao is claimed here.
 
 **Updated local validation:** 14 isolated standard-library unit tests passed under Python 3.13. Full existing SUCC test suite and hosted CI are UNVERIFIED pending an actual complete-checkout run.
+
+
+## 10. Exact finite additive Fourier interface and source-alias boundary
+
+Given finite **multisets** \(A,B,C\subset\mathbb N\) and a positive integer modulus \(m\), define their residue-count functions \(\alpha,\beta,\gamma:\mathbb Z/m\mathbb Z\to\mathbb N\). Then the exact count of ordered modular additive solutions is
+\[
+N_m(A,B,C)=\sum_{r,s\in\mathbb Z/m\mathbb Z}
+\alpha(r)\beta(s)\gamma(r+s)
+=\frac1m\sum_{j=0}^{m-1}
+\widehat\alpha(j)\widehat\beta(j)\widehat\gamma(-j),
+\]
+where \(\widehat f(j)=\sum_{r\bmod m} f(r)e^{-2\pi i jr/m}\) and the final character sign on gamma is adjusted consistently for the chosen convention. **Precise convention** for this displayed equation: because \(\widehat\alpha(j)\widehat\beta(j)\widehat\gamma(-j)\) with the negative-exponent transform gives \(e^{-2\pi ij(r+s-t)/m}\), the Kronecker projector is exact; no floating-point roots of unity are needed.
+
+The function modular_additive_count implements the first formula in integer group-algebra coordinates. To transport the **modular equality** to ordinary integer addition without aliasing, it imposes the sufficient source-bound
+\[
+m>\max(\max A+\max B,\max C).
+\]
+Indeed for positive \(a\in A,b\in B,c\in C\), the integer \(a+b-c\) has absolute value \(<m\), so congruence to 0 mod m implies equality. Without the bound, an apparent ABC relation can be false: \(1+1\equiv5\bmod3\), although \(1+1\neq5\). The hostile test detects this exact alias. Other tests compare the group-algebra implementation with independent direct triple-loop enumeration, retaining multiset multiplicities.
+
+This is a transparent finite character-orthogonality bridge from actual prime-exponent monomial layers to additive SUCC. It does **not** establish a Fourier cancellation bound for arithmetic sums, a growing-modulus transference theorem, any Green--Tao pseudorandom majorant, or ABC/RH.
