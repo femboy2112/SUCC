@@ -14,6 +14,22 @@
   },
   "namespaces": [
     {
+      "namespace": "BIDIRECTIONAL_CUT",
+      "bare_prefix": "BDC",
+      "fq_prefix": "BDC",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_BIDIRECTIONAL_CUT.md"
+      ],
+      "id_count": 10,
+      "status": "MIXED (CLASSICAL/PAPER_PROVED/EXACT_FINITE/REFUTED/UNVERIFIED)",
+      "topic": "forward-backward integer dilation Hilbert cut, exact Basel/GCD/Jordan arithmetic tail square root, Riesz no-ghost and Nyman residual firewall",
+      "code": [
+        "observational_succ/bidirectional_cut.py",
+        "observational_succ/bidirectional_hilbert.py",
+        "scripts/bidirectional_cut_probe.py"
+      ]
+    },
+    {
       "namespace": "CERTIFIED_FOUR_SCHUR",
       "bare_prefix": "CFS",
       "fq_prefix": "CFS",
