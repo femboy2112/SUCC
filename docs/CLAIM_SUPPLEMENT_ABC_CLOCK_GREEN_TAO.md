@@ -29,9 +29,6 @@ The 2026 Bernert–Browning–Lichtman–Teräväinen [paper](https://arxiv.org/
 | ABC-CLK-11 | Canonical source-indexed prime-exponent layers reconstruct \((a,b,c)\) and the radical exactly | **PROVED LOCAL** (classical factorization) / **TESTED MODEL** | ABCTriple.exponent_layers, tests; bounded-truncation and harmonic estimates still missing |
 | ABC-CLK-12 | Current elementary exception-set count improves or matches the best 2026 published theorem | **REFUTED** | Primary theorem \(X^{3/5+\delta}\) in 2026 paper dwarfs ABC-CLK-03 exponent; scholarly priority unverified |
 
-**Updated validation:** 14 tests on isolated new Python source passed locally (Python 3.13); full upstream SUCC suite and any future hosted CI not locally certified.
-
-
 | ABC-CLK-13 | Any three finite nonempty positive-integer multisets and modulus m: exact group-algebra coefficient equals the discrete Fourier projector and the count of x+y=z mod m; if m exceeds max(max A+max B, max C), no alias occurs | **PROVED LOCAL** (classical Fourier orthogonality) and **TESTED MODEL** | modular_additive_count, independent brute force, exact hostile alias (1,1,5,m=3); no infinite Fourier cancellation or RH claim |
+**Updated validation:** 16 tests on isolated new Python source passed locally (Python 3.13); full upstream SUCC suite and any future hosted CI not locally certified.
 
-**Updated isolated local test count: 16/16** on Python 3.13; full existing SUCC test suite / hosted workflow still UNVERIFIED.
