@@ -1,0 +1,131 @@
+{
+  "compiler": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "historical_inputs": {
+    "FutureSafeForgetting": {
+      "path": "formal/FutureSafeForgetting.lean",
+      "commit": "81684b4b8956f9f5da56c376ba7e4339277eb665",
+      "origin_path": "formal/FutureSafeForgetting.lean",
+      "git_blob": "b0b1a395de924f343777da728fb56fdb1a558c32",
+      "sha256": "986609101f0efafdf56453edc6da4919971ad00f34d4d76b417ecb234cd087f6"
+    },
+    "InstituteCausal": {
+      "path": "research/2026-10-19/formal_inputs/InstituteCausal.PR178.lean",
+      "commit": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+      "origin_path": "formal/InstituteCausal.lean",
+      "git_blob": "360ba66fc1a271d2411fb7c7a0942e350b9fa8ad",
+      "sha256": "7d88fe4123e07d0b5776f229d82c4b1ab593435bbe62fa1106d50fadf53016fc"
+    }
+  },
+  "modules": {
+    "FutureSafeForgetting": {
+      "sha256": "986609101f0efafdf56453edc6da4919971ad00f34d4d76b417ecb234cd087f6",
+      "exit": 0,
+      "axioms": {
+        "fiber_safe_iff_descent": [],
+        "descended_structure_unique": [],
+        "finite_trace_preserved": [
+          "propext"
+        ],
+        "availability_reflected": [
+          "propext"
+        ],
+        "quotient_step_lifts_from_each_representative": [],
+        "quotient_path_lifts_from_each_representative": [
+          "propext"
+        ]
+      },
+      "stdout": "'ObservationalSUCC.FutureSafeForgetting.fiber_safe_iff_descent' does not depend on any axioms\n'ObservationalSUCC.FutureSafeForgetting.descended_structure_unique' does not depend on any axioms\n'ObservationalSUCC.FutureSafeForgetting.finite_trace_preserved' depends on axioms: [propext]\n'ObservationalSUCC.FutureSafeForgetting.availability_reflected' depends on axioms: [propext]\n'ObservationalSUCC.FutureSafeForgetting.quotient_step_lifts_from_each_representative' does not depend on any axioms\n'ObservationalSUCC.FutureSafeForgetting.quotient_path_lifts_from_each_representative' depends on axioms: [propext]\n"
+    },
+    "InstituteCausal": {
+      "sha256": "7d88fe4123e07d0b5776f229d82c4b1ab593435bbe62fa1106d50fadf53016fc",
+      "exit": 0,
+      "axioms": {
+        "quotient_exists_iff_fiber_congruent": [
+          "Classical.choice"
+        ],
+        "run_naturality": [],
+        "every_representative_lifts": [
+          "propext"
+        ],
+        "lawful_quotient_iff": [
+          "propext",
+          "Classical.choice"
+        ],
+        "path_preserves_source": [],
+        "reachable_iff_single_source_path": [
+          "propext"
+        ],
+        "exclusion_refutes_path": [],
+        "no_path_iff_excluded": []
+      },
+      "stdout": "'ObservationalSUCC.InstituteCausal.quotient_exists_iff_fiber_congruent' depends on axioms: [Classical.choice]\n'ObservationalSUCC.InstituteCausal.run_naturality' does not depend on any axioms\n'ObservationalSUCC.InstituteCausal.every_representative_lifts' depends on axioms: [propext]\n'ObservationalSUCC.InstituteCausal.lawful_quotient_iff' depends on axioms: [propext, Classical.choice]\n'ObservationalSUCC.InstituteCausal.path_preserves_source' does not depend on any axioms\n'ObservationalSUCC.InstituteCausal.reachable_iff_single_source_path' depends on axioms: [propext]\n'ObservationalSUCC.InstituteCausal.exclusion_refutes_path' does not depend on any axioms\n'ObservationalSUCC.InstituteCausal.no_path_iff_excluded' does not depend on any axioms\n"
+    },
+    "ForgeQuotientAdapters": {
+      "sha256": "900b4af41b1bde3f2393999231fe92a1c4c5f11025506e189dc4ff8a15e35137",
+      "exit": 0,
+      "axioms": {
+        "swap_involutive": [],
+        "swap_injective": [],
+        "project_adapt": [],
+        "fiber_safe_iff_label_congruence": [],
+        "successful_run_compatibility": [],
+        "label_congruence_does_not_preserve_current_report": [],
+        "failed_runs_can_hide_different_traces": [
+          "propext",
+          "Quot.sound"
+        ]
+      },
+      "stdout": "'ObservationalSUCC.ForgeQuotientAdapters.swap_involutive' does not depend on any axioms\n'ObservationalSUCC.ForgeQuotientAdapters.swap_injective' does not depend on any axioms\n'ObservationalSUCC.ForgeQuotientAdapters.project_adapt' does not depend on any axioms\n'ObservationalSUCC.ForgeQuotientAdapters.fiber_safe_iff_label_congruence' does not depend on any axioms\n'ObservationalSUCC.ForgeQuotientAdapters.successful_run_compatibility' does not depend on any axioms\n'ObservationalSUCC.ForgeQuotientAdapters.label_congruence_does_not_preserve_current_report' does not depend on any axioms\n'ObservationalSUCC.ForgeQuotientAdapters.failed_runs_can_hide_different_traces' depends on axioms: [propext, Quot.sound]\n"
+    },
+    "ForgeGameCertificates": {
+      "sha256": "14a93d89ae1e8095f5a9925ada75864236f3f11efc43f6ae4d70a3d8c6d8a0a4",
+      "exit": 0,
+      "axioms": {
+        "positive_policy_is_lawful": [],
+        "lawful_path_preserves_origin": [],
+        "adversary_run_shorter_than_rank": [],
+        "ranked_certificate_forces_finite_failure": [],
+        "positive_and_ranked_regions_disjoint": [],
+        "alternating_adversary_run_shorter_than_rank": [],
+        "alternating_ranked_forces_finite_failure": [],
+        "alternating_certificates_disjoint": []
+      },
+      "stdout": "'ObservationalSUCC.ForgeGameCertificates.positive_policy_is_lawful' does not depend on any axioms\n'ObservationalSUCC.ForgeGameCertificates.lawful_path_preserves_origin' does not depend on any axioms\n'ObservationalSUCC.ForgeGameCertificates.adversary_run_shorter_than_rank' does not depend on any axioms\n'ObservationalSUCC.ForgeGameCertificates.ranked_certificate_forces_finite_failure' does not depend on any axioms\n'ObservationalSUCC.ForgeGameCertificates.positive_and_ranked_regions_disjoint' does not depend on any axioms\n'ObservationalSUCC.ForgeGameCertificates.alternating_adversary_run_shorter_than_rank' does not depend on any axioms\n'ObservationalSUCC.ForgeGameCertificates.alternating_ranked_forces_finite_failure' does not depend on any axioms\n'ObservationalSUCC.ForgeGameCertificates.alternating_certificates_disjoint' does not depend on any axioms\n"
+    }
+  },
+  "controls": {
+    "positive_all_outcomes": {
+      "expected_acceptance": true,
+      "exit": 0,
+      "source": "import ForgeGameCertificates\nopen ObservationalSUCC.ForgeGameCertificates\ndef trap : AlternatingGame Bool Unit Unit := {\n  requested := fun _ _ => True\n  enabled := fun _ _ _ => True\n  outcome := fun _ _ _ _ => True }\nexample : AlternatingPositive trap (fun _ => True) (fun _ _ => ()) := by\n  intro s hs r hr\n  exact \u27e8True.intro, \u27e8false, True.intro\u27e9, fun _ _ => True.intro\u27e9\n",
+      "stdout": ""
+    },
+    "false_proposition": {
+      "expected_acceptance": false,
+      "exit": 1,
+      "source": "example : False := by decide\n",
+      "stdout": "/tmp/succ-forge-lean-lqico3vd/false_proposition.lean:1:22: error: tactic 'decide' proved that the proposition\n  False\nis false\n"
+    },
+    "existential_outcome_is_not_universal": {
+      "expected_acceptance": false,
+      "exit": 1,
+      "source": "import ForgeGameCertificates\nopen ObservationalSUCC.ForgeGameCertificates\ndef trap : AlternatingGame Bool Unit Unit := {\n  requested := fun _ _ => True\n  enabled := fun _ _ _ => True\n  outcome := fun _ _ _ _ => True }\nexample : AlternatingPositive trap (fun s => s = false) (fun _ _ => ()) := by\n  intro s hs r hr\n  refine \u27e8True.intro, \u27e8false, True.intro\u27e9, ?_\u27e9\n  intro t ht\n  cases t\n  \u00b7 rfl\n  \u00b7 decide\n",
+      "stdout": "/tmp/succ-forge-lean-lqico3vd/existential_outcome_is_not_universal.lean:13:4: error: tactic 'decide' proved that the proposition\n  true = false\nis false\n"
+    },
+    "nonstrict_rank_cannot_force_failure": {
+      "expected_acceptance": false,
+      "exit": 1,
+      "source": "example : (1 : Nat) < 1 := by decide\n",
+      "stdout": "/tmp/succ-forge-lean-lqico3vd/nonstrict_rank_cannot_force_failure.lean:1:30: error: tactic 'decide' proved that the proposition\n  1 < 1\nis false\n"
+    },
+    "lost_current_report": {
+      "expected_acceptance": false,
+      "exit": 1,
+      "source": "example : false = true := by decide\n",
+      "stdout": "/tmp/succ-forge-lean-lqico3vd/lost_current_report.lean:1:29: error: tactic 'decide' proved that the proposition\n  false = true\nis false\n"
+    }
+  },
+  "kernel_checks_are_actual": true,
+  "algorithms_formalized": false,
+  "public_belief_compiler_formalized": false
+}

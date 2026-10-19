@@ -1,0 +1,560 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,amsmath,amssymb,amsthm,mathtools}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Zhat}{\widehat{\mathbb Z}}
+\newcommand{\Hd}{H_{\mathrm d}}
+\newcommand{\Hc}{H_{\mathrm c}}
+\newcommand{\D}{\mathcal D}
+\newcommand{\one}{\mathbf 1}
+\newcommand{\supp}{\operatorname{supp}}
+\newcommand{\spancl}{\overline{\operatorname{span}}}
+\newcommand{\WOT}{\mathrm{WOT}}
+\title{Weak collapse of finite arithmetic intertwiners\\
+and a typed distributional completion}
+\author{Observational SUCC research program\\Theorem Forge II, Paper B}
+\date{19 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+On $\ell^2(\N_{\geq1})$ and $L^2(\Zhat,\mu)$, consider the atomic
+multiplicative shifts and normalized additive-Haar dilation isometries.
+We prove that any uniformly bounded sequence intertwining the forward
+shifts for increasing finite prime sets converges weakly to zero whenever
+the reciprocal sum of the selected primes diverges.  Adjoint intertwining
+is unnecessary for this conclusion.  With adjoints it yields an exact
+valuation-shell support constraint and a sharp bounded-test coefficient
+bound.  We reconstruct the complementary summable-prime star-intertwiner
+classification, distinguish weak from strong convergence for finite-prime
+unitaries, and exhibit a distributional completion with an explicit
+universal property relative to the locally constant test topology.
+That completion does not extend the atomic Hilbert norm.  All proofs are
+given; exact finite controls are supplementary.  Scholarly priority for
+the specific arithmetic refinements remains unverified.
+\end{abstract}
+
+\section{Scope and calibrated operators}
+
+The mathematical statements below have status \textbf{PROVED LOCAL, PAPER};
+they are not claims of formal verification.  This paper reconstructs the
+atomic/Haar results of the separately inspected repository head
+\texttt{e42096ec0186228dd0f748767599e470f2ca2e1d} (PR178), then strengthens its
+all-prime star-disjointness to forward disjointness and a finite-to-global
+limit theorem.  Its implementation base is PR179,
+\texttt{81684b4b8956f9f5da56c376ba7e4339277eb665}; PR178 is not silently treated
+as an ancestor.  No analytic source form, zeta zero, or positivity assumption
+is used.
+
+Write $\N_+=\N_{\geq1}$, $\Hd=\ell^2(\N_+)$ with basis $(e_n)$, and
+$\Hc=L^2(\Zhat,\mu)$, where $\mu$ is normalized \emph{additive} Haar measure.
+For $a\in\N_+$ define
+\[
+ V_ae_n=e_{an},\qquad
+ U_af(x)=\sqrt a\,\one_{a\Zhat}(x)f(x/a).
+\]
+Division is used only on $a\Zhat$.  Multiplication $m_a:x\mapsto ax$
+is an injective homeomorphism onto this clopen subgroup, and
+\begin{equation}\label{eq:haar}
+ \mu(aA)=a^{-1}\mu(A)
+\end{equation}
+for measurable $A$.  Indeed $\Zhat=\prod_p\mathbb Z_p$, the subgroup has
+index $a$, and normalized Haar uniqueness gives the restricted scaling law.
+Consequently both operators are isometries, and direct change of variables
+gives
+\begin{equation}\label{eq:adjoints}
+ V_a^*e_n=\begin{cases}e_{n/a}&a\mid n,\\0&a\nmid n,\end{cases}
+ \qquad U_a^*g(y)=a^{-1/2}g(ay),\qquad
+ U_aU_a^*=M_{\one_{a\Zhat}}.
+\end{equation}
+These formulas are well defined on almost-everywhere equivalence classes
+by \eqref{eq:haar}.  Each family is multiplicative; distinct prime
+isometries doubly commute, as follows from
+$qx\in p\Zhat\iff x\in p\Zhat$ for $p\ne q$.
+
+For a set $P$ of primes write
+\[
+ \mathcal M_P=\{k\geq1:\text{all prime factors of }k\text{ belong to }P\},
+ \qquad C_P=\{r\geq1:p\nmid r\text{ for every }p\in P\}.
+\]
+Every $n\geq1$ factors uniquely as $n=d_P(n)r$, with
+$d_P(n)\in\mathcal M_P$ and $r\in C_P$.  For finite $F$ put
+\[
+ E_F=\bigcap_{p\in F}(\Zhat\setminus p\Zhat),\quad
+ \alpha_F=\prod_{p\in F}(1-p^{-1}),\quad
+ d_F(n)=\prod_{p\in F}p^{v_p(n)},\quad K_{F,n}=d_F(n)E_F .
+\]
+Empty products are one.  CRT and \eqref{eq:haar} give
+\begin{equation}\label{eq:shellmass}
+ K_{F,n}=\{x:v_p(x)=v_p(n)\ (p\in F)\},\qquad
+ \mu(K_{F,n})=\frac{\alpha_F}{d_F(n)}.
+\end{equation}
+Here $v_p$ is the valuation of the $p$-adic coordinate; its possible value
+$+\infty$ does not satisfy any of the finite equalities in this display.
+
+\section{The finite-to-global theorem needs only forward intertwining}
+
+\begin{lemma}[Finite backward eigenvector calculation]\label{lem:eigen}
+Let $G$ be a finite prime set, and let $h\in\Hd$ satisfy
+$V_p^*h=\lambda_ph$ for $p\in G$, where $|\lambda_p|^2=1/p$.
+Writing $h_n$ for its coordinates, one has
+\[
+ h_{kr}=\lambda_k h_r\quad(k\in\mathcal M_G,\ r\in C_G),\qquad
+ \|h\|^2=\alpha_G^{-1}\sum_{r\in C_G}|h_r|^2,
+\]
+where $\lambda_k=\prod_{p\in G}\lambda_p^{v_p(k)}$.  In particular
+\begin{equation}\label{eq:eigenbound}
+ |h_n|\leq\|h\|\sqrt{\alpha_G/d_G(n)}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+The adjoint equation says $h_{pr}=\lambda_ph_r$ for every $r$.
+Iterate it and use the unique factorization $n=kr$.
+Nonnegative summation and the finite geometric product give
+\[
+ \sum_{k\in\mathcal M_G}|\lambda_k|^2
+ =\prod_{p\in G}\sum_{j\geq0}p^{-j}=\alpha_G^{-1}.
+\]
+This proves the norm identity.  The $r$-summand corresponding to
+$r=n/d_G(n)$ gives \eqref{eq:eigenbound}.
+\end{proof}
+
+Let $\D_m\subset\Hc$ be the $m$-dimensional space of functions depending
+only on $x\bmod m$.
+
+\begin{theorem}[Forward-only cylinder estimate and weak collapse]\label{thm:forward}
+Suppose a bounded $T:\Hd\to\Hc$ satisfies $TV_p=U_pT$ for $p$ in a finite
+set $F$.  For $g\in\D_m$, put $G=\{p\in F:p\nmid m\}$.  Then
+\begin{equation}\label{eq:cylinderbound}
+ |\langle Te_n,g\rangle|
+ \leq \|T\|\sqrt{\frac{m\alpha_G}{d_G(n)}}\,\|g\|_2.
+\end{equation}
+If $g$ is a joint eigenvector for the multiplication permutations
+$g(x)\mapsto g(px)$ on $\D_m$, for $p\in G$, the factor $\sqrt m$
+can be omitted.
+
+Let $F_1\subset F_2\subset\cdots$ be finite sets with union $P$ and
+$\sum_{p\in P}p^{-1}=\infty$.  If
+\[
+ \sup_j\|T_j\|<\infty,\qquad T_jV_p=U_pT_j\quad(p\in F_j),
+\]
+then $T_j\longrightarrow0$ in the weak operator topology.
+In particular every bounded global forward intertwiner for $P$ is zero.
+\end{theorem}
+\begin{proof}
+For $p\nmid m$, the operator $R_pg(x)=g(px)$ on $\D_m$ permutes the
+residue classes and hence is unitary for the normalized counting inner
+product.  These operators commute.  Finite-dimensional simultaneous
+diagonalization gives an orthonormal joint eigenbasis $g_1,\ldots,g_m$.
+For each eigenvector $g_\ell$,
+$U_p^*g_\ell=p^{-1/2}\omega_{p,\ell}g_\ell$ with
+$|\omega_{p,\ell}|=1$.  Taking the adjoint of the \emph{forward}
+intertwining equation gives
+\[
+ V_p^*T^*g_\ell=T^*U_p^*g_\ell
+   =p^{-1/2}\omega_{p,\ell}T^*g_\ell.
+\]
+Apply Lemma~\ref{lem:eigen} to $h=T^*g_\ell$, whose norm is at most $\|T\|$.
+For $g=\sum_\ell c_\ell g_\ell$, the triangle inequality and
+$\sum_\ell|c_\ell|\leq\sqrt m\,\|g\|_2$ give
+\eqref{eq:cylinderbound}.  No equation $TV_p^*=U_p^*T$ was assumed.
+
+For a fixed $m$, removing the finitely many primes dividing $m$ leaves
+the reciprocal sum divergent.  Since
+$-\log(1-1/p)\geq1/p$, the corresponding products $\alpha_{G_j}$
+converge to zero.  Thus \eqref{eq:cylinderbound} proves convergence for
+every fixed $e_n$ and every cylinder test $g$.
+The finite linear span of the $e_n$ is dense in $\Hd$, and
+$\bigcup_m\D_m$ is dense in $\Hc$: congruence cylinders generate the
+profinite Borel sigma algebra and their simple functions are dense in
+$L^2$.  The common norm bound extends the conclusion first to all
+$g\in\Hc$, then to all $f\in\Hd$.  Explicitly the error from replacing
+$(f,g)$ by $(f_0,g_0)$ is at most
+$M\|f-f_0\|\|g\|+M\|f_0\|\|g-g_0\|$, where $M=\sup_j\|T_j\|$.
+Finally a global intertwiner gives a constant sequence, so it must vanish.
+\end{proof}
+
+\begin{remark}[What was strengthened]
+The star-intertwiner obstruction in PR178 remains true, but its adjoint
+hypothesis is not necessary for atomic-to-Haar bounded disjointness.
+Adjoints have a different role: they yield the following exact support
+constraint for arbitrary Haar tests.  No forward-only classification in
+the summable regime is inferred from a star-intertwiner classification.
+\end{remark}
+
+\section{Sharp support under star intertwining}
+
+\begin{theorem}[Exact shell constraint]\label{thm:shell}
+Suppose $T:\Hd\to\Hc$ is bounded and
+$TV_p=U_pT$, $TV_p^*=U_p^*T$ for every $p$ in a finite prime set $F$.
+For every $n\geq1$, $Te_n$ vanishes almost everywhere off $K_{F,n}$, and
+\begin{align}
+ |\langle Te_n,g\rangle|
+ &\leq\|T\|\,\|\one_{K_{F,n}}g\|_2
+ &&(g\in L^2(\Zhat,\mu)),\label{eq:localtest}\\
+ |\langle Te_n,g\rangle|
+ &\leq\|T\|\,\|g\|_\infty
+       \sqrt{\alpha_F/d_F(n)}
+ &&(g\in L^\infty(\Zhat,\mu)).\label{eq:boundedtest}
+\end{align}
+The constant in \eqref{eq:boundedtest} is optimal for every $F,n$.
+If $P$ is all primes, then for each fixed $n$ and all sufficiently large
+$j$, $d_{F_j}(n)=n$, yielding the factor $\sqrt{\alpha_{F_j}/n}$.
+For a proper prime subset one must retain $d_{F_j}(n)$.
+\end{theorem}
+\begin{proof}
+Put $d=d_F(n)$ and $r=n/d$.  Since $r\in C_F$, $V_p^*e_r=0$
+for all $p\in F$.  Therefore $U_p^*Te_r=0$.  By \eqref{eq:adjoints},
+the joint kernel is exactly $L^2(E_F)$, so $Te_r$ is supported on $E_F$.
+Forward intertwining gives $Te_n=U_dTe_r$, supported on $dE_F$.
+Cauchy--Schwarz, $\|Te_n\|\leq\|T\|$, and \eqref{eq:shellmass} prove
+both estimates.
+
+For optimality use the orthogonal shell decompositions established in
+Proposition~\ref{prop:boundary} (whose proof is independent of this estimate).
+On the atomic wandering space send $e_r$ to
+$\alpha_F^{-1/2}\one_{E_F}$ and every other basis vector to zero, and
+extend by the same selected shifts.  This gives a norm-one star
+intertwiner $S$ satisfying
+\[
+ Se_n=\sqrt{d/\alpha_F}\,\one_{dE_F}.
+\]
+The test $g=1$ attains equality in \eqref{eq:boundedtest}.
+\end{proof}
+
+\section{The summable complement and the topology boundary}
+
+For an arbitrary prime set $P$ define
+$E_P=\bigcap_{p\in P}(\Zhat\setminus p\Zhat)$ and
+$\alpha_P=\mu(E_P)=\prod_{p\in P}(1-1/p)$, by continuity from above.
+
+\begin{proposition}[Reconstructed sharp star-intertwiner classification]\label{prop:boundary}
+The following conditions are equivalent:
+\begin{enumerate}
+\item $\sum_{p\in P}1/p<\infty$;
+\item $\alpha_P>0$;
+\item the restricted atomic and Haar tuples are unitarily equivalent;
+\item a nonzero bounded star intertwiner $\Hd\to\Hc$ exists.
+\end{enumerate}
+In this regime put $W_{\mathrm d}=\ell^2(C_P)$ and
+$W_{\mathrm c}=L^2(E_P,\mu)$.  There are orthogonal decompositions
+\begin{equation}\label{eq:wold}
+ \Hd=\bigoplus_{k\in\mathcal M_P}V_kW_{\mathrm d},\qquad
+ \Hc=\bigoplus_{k\in\mathcal M_P}U_kW_{\mathrm c}.
+\end{equation}
+Relative to these identifications, all bounded star intertwiners are
+$I_{\ell^2(\mathcal M_P)}\otimes B$, for arbitrary bounded
+$B:W_{\mathrm d}\to W_{\mathrm c}$, with the same norm.
+\end{proposition}
+\begin{proof}
+For $p\geq2$,
+$1/p\leq-\log(1-1/p)\leq2/p$; this proves (1)$\Leftrightarrow$(2).
+If the sum diverges, Theorem~\ref{thm:forward} excludes even a nonzero
+bounded forward intertwiner.
+
+Assume $\alpha_P>0$.  Unique integer factorization proves the atomic
+decomposition.  The Haar sets $kE_P$, $k\in\mathcal M_P$, are pairwise
+disjoint, since their selected valuations specify $k$.  They have masses
+$\alpha_P/k$.  Monotone finite Euler products give
+\[
+ \sum_{k\in\mathcal M_P}\frac1k
+ =\lim_{F\uparrow P}\prod_{p\in F}(1-1/p)^{-1}
+ =\alpha_P^{-1}.
+\]
+Thus these sets cover Haar measure one.  The isometry $U_k$ maps
+$L^2(E_P)$ onto $L^2(kE_P)$, proving the Haar decomposition.
+
+The complement of $P$ is infinite, because the reciprocal sum over all
+primes diverges.  In particular $C_P$ is countably infinite.
+Also $E_P$ leaves the $\mathbb Z_q$ coordinate unrestricted for any
+$q\notin P$; hence its positive finite measure is nonatomic and its
+$L^2$ space is infinite-dimensional and separable.  Thus the two wandering
+spaces are unitarily equivalent.  Any bounded $B$ extends by
+$T(V_kw)=U_kBw$ on the orthogonal sums; norm equality and both
+intertwining equations follow directly, including the lowering at
+exponent zero.  A unitary $B$ yields a unitary $T$.
+
+Conversely a star intertwiner sends the joint adjoint kernel
+$W_{\mathrm d}$ into $W_{\mathrm c}$; forward intertwining determines
+its values on every summand in \eqref{eq:wold}.  This proves the
+classification and the remaining implications.
+\end{proof}
+
+\begin{corollary}[Finite unitaries collapse only weakly]\label{cor:unitary}
+For every finite $F$ a unitary star intertwiner exists.  If $F_j$ exhausts
+a prime set with divergent reciprocal sum, \emph{every} choice of such
+unitaries $T_j$ converges WOT to zero.  It cannot have a strongly
+convergent subsequence, and cannot converge in operator norm.
+\end{corollary}
+\begin{proof}
+Use Proposition~\ref{prop:boundary} and Theorem~\ref{thm:forward}.
+A strong subsequential limit would also be the weak limit zero, but
+$\|T_jf\|=\|f\|$ for every $f$.  This is impossible for nonzero $f$.
+Norm convergence implies strong convergence.
+\end{proof}
+
+\begin{proposition}[All possible weak limits and failures of hypotheses]\label{prop:mutations}
+For increasing $F_j$ with union $P$, every WOT cluster point of a uniformly
+bounded family of finite-$F_j$ star intertwiners is a global $P$ star
+intertwiner.  Conversely every bounded global star intertwiner is the
+limit of a constant such family.  Thus, for a prescribed norm bound $M$,
+the possible cluster points across all such families are exactly the
+global star intertwiners of norm at most $M$.
+
+Uniform boundedness cannot be omitted from the weak-collapse theorem.
+Reciprocal divergence cannot be omitted even for unitary star intertwiners.
+Adjoints cannot be omitted from the exact shell support conclusion,
+although they can be omitted from weak collapse.
+\end{proposition}
+\begin{proof}
+Multiplication on either side by a fixed bounded operator is WOT
+continuous.  Every selected prime belongs to all sufficiently late $F_j$,
+so the intertwining equations pass to cluster points.  Norm-closed balls
+are WOT closed.  The converse is the constant-family construction.
+Existence of cluster points follows, if needed, from compactness of the
+bounded operator ball in WOT; it is metrizable here because both Hilbert
+spaces are separable.
+
+For the first failure, choose a finite-$F$ star intertwiner $R_F$ whose
+wandering restriction sends $e_1$ to $\alpha_F^{-1}\one_{E_F}$ and
+annihilates all other atomic wandering basis vectors.  The construction
+in Proposition~\ref{prop:boundary} gives
+$\|R_F\|=\alpha_F^{-1/2}$ and
+$\langle R_Fe_1,1\rangle=1$.  Along a divergent exhaustion this is not
+weakly zero.
+
+For the second failure take any summable $P$, including an infinite
+sparse choice of distinct primes $p_j>2^j$.  A global unitary $T$ exists,
+so $T_j=T$ does not collapse.  The family $T_j=(-1)^jT$ shows that no
+convergence is automatic even in that regime.
+
+For the third failure take $F=\{2\}$ and a norm-one star intertwiner
+$S$ with $Se_1=\sqrt2\,\one_{E_F}$.  Then $T=U_2S$ still intertwines the
+forward shift $V_2$, but $Te_1=2\one_{2E_F}$ is supported off $E_F$.
+Furthermore $U_2^*Te_1=Se_1\ne0=TV_2^*e_1$, explicitly detecting the
+missing adjoint relation.
+\end{proof}
+
+\section{Distributional transport: an exact interface category}
+
+Let $\D=\bigcup_{m\geq1}\D_m$ be the complex locally constant functions
+on $\Zhat$, with the locally convex inductive limit topology along
+$\D_{j!}$.  Each stage is finite-dimensional.  Every algebraic linear
+functional is continuous, because its restrictions to the stages are
+continuous and the inductive limit has that universal property.
+Equip $\D'$ with the weak dual topology
+$\sigma(\D',\D)$ and use the \emph{bilinear} distribution pairing.
+The operators $U_p$ and $U_p^*$ preserve $\D$ continuously: each sends a
+finite cylinder stage into a finite cylinder stage.  Their transposes
+are the continuous weak-dual operators
+\[
+ \langle\mathsf U_p\eta,\phi\rangle=\langle\eta,U_p^*\phi\rangle,\qquad
+ \langle\mathsf A_p\eta,\phi\rangle=\langle\eta,U_p\phi\rangle .
+\]
+The symbol $\mathsf A_p$ is a transpose action, not a Hilbert adjoint on
+$\D'$.  On Dirac distributions they act as
+\begin{equation}\label{eq:dirac}
+ \mathsf U_p\delta_x=p^{-1/2}\delta_{px},\qquad
+ \mathsf A_p\delta_x=
+ \begin{cases}\sqrt p\,\delta_{x/p}&x\in p\Zhat,\\0&x\notin p\Zhat.\end{cases}
+\end{equation}
+
+\begin{proposition}[Algebraic vacuum classification]\label{prop:vacuum}
+Linear maps $J_\eta:c_{00}(\N_+)\to\D'$ satisfying
+$J_\eta V_p=\mathsf U_pJ_\eta$ and
+$J_\eta V_p^*=\mathsf A_pJ_\eta$ for every prime are in bijection with
+distributions $\eta$ supported on $\Zhat^\times$, by
+\begin{equation}\label{eq:jeta}
+ J_\eta e_n=n^{-1/2}(m_n)_*\eta,\qquad \eta=J_\eta e_1.
+\end{equation}
+Every nonzero such $J_\eta$ is injective.
+\end{proposition}
+\begin{proof}
+Forward equations force \eqref{eq:jeta}.  The lowering equations at $e_1$
+give $\mathsf A_p\eta=0$.  The image $U_p\D$ consists of all locally
+constant tests supported in $p\Zhat$, up to the harmless scalar
+$\sqrt p$.  Hence $\eta$ annihilates tests supported there.  A locally
+constant test supported off $\Zhat^\times$ has compact support covered
+by finitely many such clopen sets; refining their Boolean partition
+shows that it too is annihilated.  This is precisely the asserted support
+condition.
+
+Conversely, support on the units makes the lowered image in
+\eqref{eq:jeta} zero when $p\nmid n$ and makes it
+$J_\eta e_{n/p}$ when $p\mid n$, by \eqref{eq:dirac} or the same test
+calculation for general distributions.  This proves both equations.
+For distinct $n$, the compact sets $n\Zhat^\times$ are disjoint: their
+valuations at all primes recover $n$.  A finite collection of disjoint
+compact sets can be separated by clopen neighborhoods.  The pushforward
+under $m_n$ is injective on distributions, since every test on $\Zhat$
+can be transferred to $n\Zhat$ and extended by zero.  Therefore no
+nontrivial finite linear combination of the nonzero distributions
+$(m_n)_*\eta$ can vanish.  This proves injectivity.
+\end{proof}
+
+Fix the additional choice $\eta=\delta_1$, and write
+$Je_n=n^{-1/2}\delta_n$.  Put on $c_{00}(\N_+)$ the initial locally convex
+topology $\tau_J$ generated by
+\begin{equation}\label{eq:tau}
+ a\longmapsto\left|\sum_n a_n n^{-1/2}\phi(n)\right|,
+ \qquad \phi\in\D .
+\end{equation}
+This topology is specified by the chosen tests, not by the atomic norm.
+
+\begin{theorem}[Typed completion and universal property]\label{thm:completion}
+The map $J$ identifies $(c_{00}(\N_+),\tau_J)$ with a dense linear
+subspace of the complete Hausdorff locally convex space
+$(\D',\sigma(\D',\D))$.  Thus $\D'$ is its completion.
+For every complete Hausdorff locally convex space $Y$ and every continuous
+linear $L:(c_{00},\tau_J)\to Y$, there is a unique continuous linear
+$\overline L:\D'\to Y$ satisfying $\overline L J=L$.
+
+More particularly, suppose $Y$ carries continuous linear operators
+$B_p,C_p$ and $L$ satisfies $LV_p=B_pL$, $LV_p^*=C_pL$.
+Then its unique extension satisfies
+$\overline L\mathsf U_p=B_p\overline L$ and
+$\overline L\mathsf A_p=C_p\overline L$.
+\end{theorem}
+\begin{proof}
+Injectivity follows from Proposition~\ref{prop:vacuum}, or separation
+of any finite set of distinct integers by residue tests.  The initial
+topology makes $J$ a topological embedding.
+For density fix $\eta\in\D'$ and a finite family of tests.  All those
+tests lie in one $\D_m$.  Put
+$b_r=\langle\eta,\one_{r+m\Zhat}\rangle$ for $r=0,\ldots,m-1$, and let
+\[
+ a=\sum_{n=1}^m\sqrt n\,b_{n\bmod m}e_n.
+\]
+Then $Ja$ agrees exactly with $\eta$ on every test in $\D_m$.
+It therefore meets every weak neighborhood specified by the chosen
+finite tests, proving density.
+
+A pointwise Cauchy net of linear functionals on $\D$ has a pointwise
+limit which is a linear functional.  Every such functional is continuous
+for the stated inductive limit topology, so the limit belongs to $\D'$.
+This proves weak-dual completeness; the topology is Hausdorff because
+the tests separate functionals.  Equivalently $\D'$ is the closed
+subspace of $\mathbb C^{\D}$ cut out by the linearity equations.
+
+A continuous linear map between topological vector spaces is uniformly
+continuous for their additive uniformities.  Given $\eta$, take a
+Cauchy net $Ja_i\to\eta$; completeness of $Y$ supplies the limit of
+$La_i$.  Uniform continuity makes that limit independent of the
+approximating net, and defines a continuous linear extension.  Density
+and Hausdorffness give uniqueness.  These are exactly the completion
+extension properties, not a universal property in a larger undeclared
+category.  Finally all source and target actions are continuous, so
+the equivariance equations on the dense image of $J$ extend to $\D'$.
+\end{proof}
+
+\begin{proposition}[Why this completion cannot preserve the Hilbert interface]\label{prop:hilbert}
+There is no continuous extension of $J$ from the unweighted Hilbert space
+$\Hd$ to weak $\D'$.  There is no continuous linear map
+$R:\D'\to\Hd$ satisfying $RJe_n=e_n$ for every $n$.
+More generally, every continuous linear map from $(c_{00},\tau_J)$ into
+a normed space factors through one finite cylinder projection
+$a\mapsto Ja|_{\D_m}$, and therefore has finite rank.
+Thus Theorem~\ref{thm:completion} does not supply a universal carrier
+preserving both all locally constant tests and the atomic Hilbert norm.
+\end{proposition}
+\begin{proof}
+Evaluation at the constant test $1$ would make
+$a\mapsto\sum_n a_n/\sqrt n$ a bounded functional on $\ell^2$.
+But for $H_N=\sum_{n=1}^N1/n$ and
+$a^{(N)}=H_N^{-1/2}\sum_{n=1}^N n^{-1/2}e_n$, one has
+$\|a^{(N)}\|=1$ and $\langle Ja^{(N)},1\rangle=\sqrt{H_N}\to\infty$.
+For the second claim, $Je_n\to0$ weakly in $\D'$ since
+$|\langle Je_n,\phi\rangle|\leq\|\phi\|_\infty/\sqrt n$ for every
+locally constant $\phi$.  A continuous $R$ would force $e_n\to0$ in
+Hilbert norm, a contradiction.
+For the last assertion, continuity at zero bounds the norm of $La$ by
+a constant times the maximum of finitely many defining seminorms
+\eqref{eq:tau}.  To see the bound also when all those seminorms vanish,
+apply continuity to every scalar multiple of $a$; then $La=0$.
+All the finitely many tests lie in some $\D_m$, so
+$\ker(a\mapsto Ja|_{\D_m})\subseteq\ker L$.  This yields the claimed
+factorization through the $m$-dimensional cylinder dual.
+\end{proof}
+
+\begin{remark}[The choice of interface is substantive]
+The topology $\tau_J$ is the weakest locally convex topology making the
+specified test pairings continuous.  The completion theorem is a
+classical completion principle applied to an explicit dense arithmetic
+map.  It does not say that $\D'$ is initial among all action-preserving
+carriers, nor that $\delta_1$ is forced by the actions: every
+unit-supported vacuum in Proposition~\ref{prop:vacuum} is allowed.
+For example $\delta_u$ for $u\in\Zhat^\times$ yields another map.
+Requiring the integer-point origin fixes $\delta_1$ as additional data.
+Nor do the transpose actions define a positive or signed Weil form.
+\end{remark}
+
+\section{Prior art, receipts, and the remaining boundary}
+
+Finite doubly commuting pure isometries admit the standard wandering-space
+model; Sarkar's Corollary~3.2 and Theorem~3.3~\cite{sarkar} explicitly give
+the finite-tuple decomposition and its multiplicity-space interpretation.
+Thus the mechanism behind the finite cases of
+Proposition~\ref{prop:boundary} is classical.  Dan--Guo's
+Definition~1.1 and Corollary~1.4 distinguish the additional
+Beurling-generation property for infinite sequences; their
+Proposition~3.4 and Remark~3.5 exhibit the failure of nonzero joint
+defect without that property~\cite{danguo}.  No novelty is claimed for
+failure of a naive countable Wold extension.  Bost--Connes~\cite{bc}
+is adjacent arithmetic operator-algebra context, not a cited proof of
+the present selected-prime criterion or coefficient estimates.
+
+The contributions new to this repository are the finite-family
+quantifiers, the sharp $d_F(n)$ shell estimate, the forward-only
+cylinder argument, and the explicit completion interface and its
+counterexamples.  The methods are elementary CRT, geometric series,
+finite simultaneous diagonalization, density, and completion theory.
+The bounded literature check above does not establish scholarly priority
+for these specific refinements; that status is \textbf{UNVERIFIED}.
+
+The independent module
+\texttt{observational\_succ/forge\_operator\_transport.py} and its seven
+tests enumerate rational congruence cylinders, check selected valuations
+against direct counts, detect an unselected-factor normalization error,
+check permutation failures at primes dividing the test modulus, verify
+finite geometric orbit masses, and construct exact finite distribution
+interpolants.  These checks do not prove reciprocal divergence, WOT
+convergence, Hilbert-space classification, or a completion property.
+Those are the mathematical arguments above.
+
+The next discriminating work is a broader priority search for the
+forward-only disjointness theorem and a formal measure-theoretic
+verification of its density step.  Neither is a missing premise of
+the written proofs.  There is no inference from any result here to an
+identification with an original signed Weil form or to all-radius
+positivity.  RH proved: \textbf{no}.
+
+\begin{thebibliography}{9}
+\bibitem{sarkar}
+J.~Sarkar, \emph{Wold decomposition for doubly commuting isometries},
+Linear Algebra Appl.\ \textbf{445} (2014), 289--301,
+\href{https://doi.org/10.1016/j.laa.2013.12.011}{doi:10.1016/j.laa.2013.12.011}.
+Author manuscript:
+\url{https://www.isibang.ac.in/~jay/papers/wold_n_var.pdf}.
+\bibitem{danguo}
+H.~Dan and K.~Guo,
+\emph{Dilation theory and analytic model theory for doubly commuting
+sequences of $C_{\cdot0}$-contractions},
+Sci.\ China Math.\ \textbf{66} (2023), 303--340,
+\href{https://doi.org/10.1007/s11425-020-1965-1}{doi:10.1007/s11425-020-1965-1}.
+Version inspected: \url{https://arxiv.org/abs/1907.05815v2}.
+\bibitem{bc}
+J.-B.~Bost and A.~Connes,
+\emph{Hecke algebras, type III factors and phase transitions with
+spontaneous symmetry breaking in number theory},
+Selecta Math.\ (N.S.) \textbf{1} (1995), 411--457,
+\href{https://doi.org/10.1007/BF01589495}{doi:10.1007/BF01589495}.
+Primary publisher record checked; used here for context only.
+\end{thebibliography}
+\end{document}
