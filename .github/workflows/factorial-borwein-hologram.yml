@@ -33,5 +33,5 @@ jobs:
           python -m py_compile observational_succ/factorial_borwein_hologram.py tests/test_factorial_borwein_hologram.py scripts/factorial_borwein_hologram_probe.py
           python -m unittest discover -s tests -p 'test_borwein_prime_clock.py' -v
           python -m unittest discover -s tests -p 'test_factorial_borwein_hologram.py' -v
-          python scripts/factorial_borwein_hologram_probe.py > /tmp/factorial_borwein_receipt.json
+          python -m scripts.factorial_borwein_hologram_probe > /tmp/factorial_borwein_receipt.json
           python -m json.tool /tmp/factorial_borwein_receipt.json >/dev/null
