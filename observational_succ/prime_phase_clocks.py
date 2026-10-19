@@ -291,3 +291,63 @@ def backward_factorial_primes(m: int, max_multiplier: int = 40,
             if len(result) == max_count:
                 break
     return tuple(result)
+
+
+@dataclass(frozen=True)
+class FixedWindowLaw:
+    """Exact CRT law on reduced residue classes; prime-limit law uses PNT-AP.
+
+    The rational coefficients are derived by finite polynomial multiplication
+    across genuine coprime prime moduli, NOT by fitting a finite prime sample.
+    """
+    clocks: tuple[int, ...]
+    modulus: int
+    reduced_residue_count: int
+    residue_sum_distribution: tuple[tuple[int, Fraction], ...]
+    sync_count_distribution: tuple[tuple[int, Fraction], ...]
+    expected_residue_sum: Fraction
+    variance_residue_sum: Fraction
+    expected_sync_count: Fraction
+    variance_sync_count: Fraction
+    all_locked_fraction: Fraction
+
+
+def fixed_window_crt_law(clocks: tuple[int, ...]) -> FixedWindowLaw:
+    """Two exact finite distributions; asymptotic prime use requires PNT-AP.
+
+    Only modest windows are expanded into full rational polynomials. This
+    deliberately does not let the modulus grow with the prime search horizon.
+    """
+    _clock_check(clocks)
+    if any(q > 31 for q in clocks):
+        raise PhaseClockError("polynomial enumeration admits clocks <=31")
+    reduced = prod(q - 1 for q in clocks)
+    if reduced > 200_000:
+        raise PhaseClockError("too many CRT reduced residue vectors")
+    raw = {0: 1}
+    locked = {0: 1}
+    for q in clocks:
+        next_raw = {}
+        for total, count in raw.items():
+            for r in range(1, q):
+                next_raw[total + r] = next_raw.get(total + r, 0) + count
+        raw = next_raw
+        next_locked = {}
+        for total, count in locked.items():
+            next_locked[total] = next_locked.get(total, 0) + count * (q - 2)
+            next_locked[total + 1] = next_locked.get(total + 1, 0) + count
+        locked = next_locked
+    if sum(raw.values()) != reduced or sum(locked.values()) != reduced:
+        raise AssertionError("finite CRT distribution failed normalization")
+    residue_distribution = tuple(
+        (s, Fraction(count, reduced)) for s, count in sorted(raw.items()))
+    lock_distribution = tuple(
+        (s, Fraction(count, reduced)) for s, count in sorted(locked.items()))
+    residue_expectation = sum((Fraction(q, 2) for q in clocks), Fraction())
+    residue_variance = sum((Fraction(q * (q - 2), 12) for q in clocks), Fraction())
+    sync_expectation = sum((Fraction(1, q - 1) for q in clocks), Fraction())
+    sync_variance = sum((Fraction(q - 2, (q - 1)**2) for q in clocks), Fraction())
+    all_locked = Fraction(1, reduced)
+    return FixedWindowLaw(clocks, prod(clocks), reduced, residue_distribution,
+                          lock_distribution, residue_expectation, residue_variance,
+                          sync_expectation, sync_variance, all_locked)
