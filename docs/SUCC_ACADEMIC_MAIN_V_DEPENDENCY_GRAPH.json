@@ -1,0 +1,36 @@
+{
+  "operation": "SUCC Academic Main V",
+  "date": "2026-10-19",
+  "verified_base_main": "4de865766d53ea448555386d98f3e88e3ec605b6",
+  "base_label": "Academic Main IV merge (PR #183)",
+  "integration_branch": "integration/succ-academic-main-v-2026-10-19",
+  "integration_head": "37bec225ed0cd8ea55e20bc24480c7462a2e5ed5",
+  "method": "history-preserving --no-ff merges; true DAG derived from git rev-list ancestry (NOT PR base labels)",
+  "nodes": {
+    "main": {"sha": "4de865766d53ea448555386d98f3e88e3ec605b6"},
+    "184": {"head": "eeadf00729dafff3c784251c969ec2afd331818f", "root": "main", "over_main": 14, "family": "RRT", "topic": "RAD/RIS prime gates, CRT successor no-go, ABC-quality interface"},
+    "185": {"head": "74436bcfb346781eba5796c52baea59accb6734e", "root": "main", "over_main": 31, "family": "PPC", "topic": "primorial/factorial prime-phase clocks, no-go proofs"},
+    "186": {"head": "7e8984e0cb5d138760719018e5ac6ec2ab511b26", "root": "main", "over_main": 59, "family": "GTC", "topic": "Green-Tao W-trick synchronized prime-clock APs"},
+    "187": {"head": "b6c9f5003648a3bf688f76d9c6aa84f643bc3bda", "root": "main", "over_main": 19, "family": "ABC-CLK", "topic": "ABC prime-clock energy families, profinite moment threshold", "independent": true},
+    "188": {"head": "9dbf9402103b24234cb701530179545b28467ffa", "root": "main", "over_main": 19, "family": "MCD", "topic": "generative choice, choice-free descent metatheory", "independent": true},
+    "189": {"head": "414efb07f396af4a8d15ffed9fe36d6567fda95a", "root": "main", "over_main": 68, "family": "BDW", "topic": "Borwein simplex factorial x prime delta gates x SUCC/Brownian"},
+    "190": {"head": "329c71c7deeae13f292a291b58d40820a2f3f23f", "root": "main", "over_main": 77, "family": "FBH", "topic": "factorial Borwein hologram, uniformly stable cardinal lift"}
+  },
+  "ancestry_edges": [
+    {"child": "185", "ancestor": "184"},
+    {"child": "186", "ancestor": "185"},
+    {"child": "189", "ancestor": "186"},
+    {"child": "190", "ancestor": "189"}
+  ],
+  "ancestry_note": "verified by pairwise `git merge-base --is-ancestor`: 184 ⊂ 185 ⊂ 186 ⊂ 189 ⊂ 190 is a strict linear chain; 187 and 188 are independent roots off main. All seven merge-base with main == main.",
+  "true_dag_ascii": "main -> #184 -> #185 -> #186 -> #189 -> #190 ; main -> #187 ; main -> #188",
+  "terminal_tips": ["190", "187", "188"],
+  "terminal_tips_note": "merging {190,187,188} alone covers all 7 PRs; the 7 staged merges below preserve development stages (equivalent ancestry coverage)",
+  "out_of_scope_sibling": {
+    "branch": "research/borwein-abc-height-contact-2026-10-19",
+    "head": "b073a3dfce62cd1e2e48fcf65838349c085d9ac3",
+    "merge_base_with_190": "414efb07f396af4a8d15ffed9fe36d6567fda95a",
+    "relation": "divergent sibling off #189 (8 unique vs #190's 9 unique commits); NO open PR; carries unique borwein_abc_bridge/contacts/height modules",
+    "disposition": "PRESERVED on origin, NOT merged (unreviewed, outside the authorized 7-PR scope)"
+  }
+}

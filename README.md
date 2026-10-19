@@ -32,6 +32,19 @@ prime-two inverse corrections (#181, #182) are **alternative** enclosures of the
 the better single bound, **never the sum**. **RH remains OPEN; `S₄ = A₄ − R₄` is OPEN (AMBIGUOUS).** No
 positive Hilbert covariance is identified with the signed completed Weil form.
 
+**Academic Main V integration (2026-10-19):** the seven stacked draft PRs **#184–#190** — RAD/RIS arithmetic,
+primorial/factorial and Green–Tao prime clocks, ABC clock-energy families, Borwein/factorial holographic
+transport, and the generative-choice / source-certified descent metatheory — consolidated history-preserving
+into `main` from `4de8657` over 7 ancestry-aware `--no-ff` merges (true DAG `main→#184→#185→#186→#189→#190`,
+`main→#187`, `main→#188`). Navigation:
+[integration audit](docs/SUCC_ACADEMIC_MAIN_V_INTEGRATION_AUDIT_2026-10-19.md) ·
+[dependency graph](docs/SUCC_ACADEMIC_MAIN_V_DEPENDENCY_GRAPH.json) ·
+[merge coverage](docs/SUCC_ACADEMIC_MAIN_V_MERGE_COVERAGE.json) ·
+[research frontier](docs/SUCC_ACADEMIC_MAIN_V_RESEARCH_FRONTIER.md). Three independent, methodologically
+distinct hostile audits (number theory · operator/sampling · logic/provenance) returned **CLEAN**; the new
+metatheory compiles choice-free under Lean 4.14 (`#print axioms`: no `Classical.choice`). **ABC, RH, and the
+signed `S₄` sign all remain OPEN.**
+
 **Borwein sinc × prime delta clocks (2026-10-19):** [exact factorial/Borwein/CRT research dossier](research/2026-10-19/BORWEIN_DELTA_PRIME_CLOCK.md) · [scoped claims](docs/CLAIM_SUPPLEMENT_BORWEIN_DELTA.md). Exact simplex-factorial leakage, a prime-width first crossing at 29, genuinely source-derived phase ±1/nonzero projectors, rational sub-Markov SUCC gates, and strictly separated Poisson/Brownian limits. Sinc widths alone do not read arithmetic residues. **ABC/RH/sign OPEN.**
 
 **Green–Tao synchronized prime-clock APs (2026-10-19):** [mathematical dossier](research/2026-10-19/GREEN_TAO_SYNCHRONIZED_CLOCK_AP.md) · [GTC-01–14 scoped claims](docs/CLAIM_SUPPLEMENT_GREEN_TAO_CLOCK_AP.md) · [exact Python probe](scripts/green_tao_clock_ap_probe.py). Genuine W-tricked source counts, exact Fourier phase locking, necessary local AP-step gates, a verified 5×5 prime-progression rectangle (25 synchronizations), **flat-RAD prime ladders** with RIS=1,2,3,4,5, and an **unconditional Maynard–Tao corollary** giving infinitely many prime-rich constant-RAD fibers (at least m of K positions, not every position). A two-sided arbitrary-length existence theorem is an **external Green–Tao/PNT-AP corollary**, not a new or internal proof. No fixed-gap conjecture, ABC, RH, or completed Weil positivity proof.

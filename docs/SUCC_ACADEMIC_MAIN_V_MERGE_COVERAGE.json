@@ -1,0 +1,28 @@
+{
+  "operation": "SUCC Academic Main V",
+  "date": "2026-10-19",
+  "integration_branch": "integration/succ-academic-main-v-2026-10-19",
+  "integration_head": "37bec225ed0cd8ea55e20bc24480c7462a2e5ed5",
+  "base": "4de865766d53ea448555386d98f3e88e3ec605b6",
+  "merge_strategy": "ort, --no-ff, 7 staged merge commits in ancestry-preserving order",
+  "merge_sequence": [
+    {"order": 1, "pr": "188", "merge_commit": "ae539a9bf84dcf19fc02001e5b69d233ab45e3a7", "pr_head": "9dbf9402103b24234cb701530179545b28467ffa", "conflicts": "none", "covers": ["188"]},
+    {"order": 2, "pr": "184", "merge_commit": "89b3f943d775b106967a36800ff70b27db254671", "pr_head": "eeadf00729dafff3c784251c969ec2afd331818f", "conflicts": "README.md (auto-merged, additive)", "covers": ["184"]},
+    {"order": 3, "pr": "185", "merge_commit": "65f4ef5daae2cf281711581da407839d6e463e91", "pr_head": "74436bcfb346781eba5796c52baea59accb6734e", "conflicts": "none", "covers": ["184", "185"]},
+    {"order": 4, "pr": "186", "merge_commit": "0809a6a32690c8b7bb60293aee3228ceeec89976", "pr_head": "7e8984e0cb5d138760719018e5ac6ec2ab511b26", "conflicts": "none", "covers": ["184", "185", "186"]},
+    {"order": 5, "pr": "189", "merge_commit": "491938135b199bb33e3eeb43703567c7d727a5db", "pr_head": "414efb07f396af4a8d15ffed9fe36d6567fda95a", "conflicts": "none", "covers": ["184", "185", "186", "189"]},
+    {"order": 6, "pr": "190", "merge_commit": "b06fc92cb9bb2b512063f2fe96959e3d81b670cf", "pr_head": "329c71c7deeae13f292a291b58d40820a2f3f23f", "conflicts": "none", "covers": ["184", "185", "186", "189", "190"]},
+    {"order": 7, "pr": "187", "merge_commit": "4bbe75ee382e6bc1201dbbedea58af67d8052af5", "pr_head": "b6c9f5003648a3bf688f76d9c6aa84f643bc3bda", "conflicts": "none", "covers": ["187"]}
+  ],
+  "post_merge_commits": [
+    {"sha": "37bec225ed0cd8ea55e20bc24480c7462a2e5ed5", "note": "claim-navigation reconciliation: register FBH/ABC-CLK/MCD namespaces + CLAIM_INDEX + README front door"}
+  ],
+  "all_seven_heads_ancestors_of_integration_head": true,
+  "ancestor_verification": {
+    "184": true, "185": true, "186": true, "187": true, "188": true, "189": true, "190": true
+  },
+  "conflict_surface_total": ["README.md"],
+  "conflict_resolution": "README.md front-door paragraphs are additive across #188 and the #184 chain; git ort auto-merged different hunks. All claim-supplement, registry, CLAIM_INDEX and workflow files were touched by exactly one independent line (no textual conflict).",
+  "diffstat_vs_main": {"files_changed": 42, "insertions_at_merge_point_4bbe75e": 6553, "insertions_at_nav_head_37bec225": 6611, "deletions": 0, "note": "42 files from the 7 merges; the nav reconcile commit added +58 insertions to already-counted README/registry/index; zero deletions — no archival file removed. The final Academic Main V docs commit adds the audit/graph/coverage/frontier files on top."},
+  "frozen_blob_preserved": {"path": "formal/EODCS_RelationalChoice.lean", "sha": "3d5601391dccda0c2c89f695b7c699bb08de6131", "status": "byte-identical to base"}
+}
