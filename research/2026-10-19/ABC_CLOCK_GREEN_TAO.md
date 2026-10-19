@@ -182,3 +182,53 @@ Formalization debt: YEAN's additive/multiplicative normalizers might certify the
 * Related unrefereed 2026 preprint for comparison: R. Laniewski, *Radical defects, Wieferich primes, and the abc conjecture*, https://arxiv.org/abs/2609.00039. No exhaustive scholarly priority audit has been completed.
 
 **Next verdict-changing lamp:** moving-prime-support correlation control with an explicit, uniform high-depth tail. **ABC OPEN. RH OPEN.**
+
+
+## 7. Primary-literature correction: our moment bound is a baseline, not a record
+
+**External theorem (2026):** C. Bernert, T. Browning, J. D. Lichtman and J. Teräväinen, *Bounds on the exceptional set in the abc conjecture*, https://arxiv.org/html/2410.12234 (v2; current 2026 paper). For \(N_\lambda(X)\) counting primitive \(a+b=c\) with \(c\le X\) and \(\operatorname{rad}(abc)<c^\lambda\), Theorem 1.3 establishes
+\[
+N_\lambda(X)\ll_{\lambda,\delta} X^{3/5+\delta}\quad (0<\lambda<1).
+\]
+Theorem 1.2 also gives \(X^{(23\lambda+3)/40+\delta}\) for \(0<\lambda\le2\); de Bruijn's classical bound gives \(X^{2\lambda/3+\delta}\), sometimes better than 3/5 for small \(\lambda\). Our epsilon>0 exceptional condition corresponds to \(\lambda=1/(1+\varepsilon)<1\), so their 3/5 bound vastly outperforms section 2. At epsilon=0 (lambda=1), Theorem 1.2 gives exponent 13/20, not 3/5. We make **no novelty or best-known bound claim** for section 2.
+
+Their section 2 already implements a powerful prime-power *anatomic decomposition*: \(n=n_0\prod_{j\le d}n_j^j\), with quantified residual and radical control (Lemma 2.2 and Proposition 2.1). Sections 3 and 4 then apply Fourier and geometry-of-numbers estimates. Thus this work's energy stratification overlaps known, deeper theory. The source-indexed output of ABCTriple.exponent_layers(), which canonically retains all prime labels and slots, satisfies the exact identities
+\[
+(a,b,c)=\left(\prod_k a_k^k,\prod_k b_k^k,\prod_k c_k^k\right),
+\qquad R(abc)=\prod_k a_kb_kc_k.
+\]
+It lacks their **bounded-d truncation and uniform analytic savings**, which are the essential next comparison. Our next probe should reproduce one quantitative Fourier or geometric estimate on a fully specified prime-layer family, against the published sharp bound. Tao/Green--Tao transference alone does not supply these estimates.
+
+## 8. Exact profinite Gibbs energy threshold (PROVED LOCAL in a declared probability model)
+
+Construct the normalized *profinite primitive Haar* model: independently at each genuine prime p choose Haar-uniform \((a_p,b_p)\in\mathbb Z_p^2\) conditioned on not both being divisible by p; set \(c_p=a_p+b_p\). Define \(V_p=v_p(a_pb_pc_p)\) and \(H_p=p^{(V_p-1)_+}\). The infinite product \(H_{\mathrm{loc}}=\prod_p H_p\) is a random variable of the **profinite model**, not the ris of an ordinary randomly chosen integer triple.
+
+**Theorem ABC-CLK-09.** The product is almost surely finite, and for each integer \(k\ge1\)
+\[
+\boxed{\Pr(H_p\ge p^k)=\frac{3}{(p+1)p^k}}.
+\]
+For \(0\le s<1\) its moment factor equals
+\[
+\boxed{Z_p(s)=\mathbb E H_p^s=
+\frac{p-2}{p+1}+\frac{3(p-1)}{p(p+1)(1-p^{s-1})}}.
+\]
+The global moment \(\mathbb E H_{\mathrm{loc}}^s=\prod_pZ_p(s)\) is finite for \(0\le s<1\), and infinite for \(s\ge1\).
+
+**Proof.** Section 1 yields \(\Pr(V_p=0)=(p-2)/(p+1)\) and \(\Pr(V_p=j)=3(p-1)/((p+1)p^j)\) for \(j\ge1\). Sum the geometric series defining \(Z_p(s)\); at each fixed p it diverges for \(s\ge1\). For \(s<1\), \(Z_p(s)-1=O_s(p^{s-2})\); the sum of these positive increments over primes converges as \(s-2<-1\). Hence the infinite product is finite. Also \(\sum_p\Pr(H_p>1)=\sum_p3/[p(p+1)]<\infty\), so Borel--Cantelli gives finitely many active \(H_p\) almost surely. Independence for fixed sets of p and monotone convergence establish the global product identity. QED.
+
+**Source firewall.** The almost-sure finiteness of this abstract source-indexed product does **not** give a uniform moment bound for \(H(abc)\) on growing integer boxes. That transfer is a separate, still UNVERIFIED local-to-global problem. The threshold is a moment singularity in a p-adic probability model, not a physical energy, an RH sign or quantum evidence.
+
+## 9. Exact Green--Tao shadow fan in an L-term progression
+
+Given an odd-prime AP \(p_0,\ldots,p_{L-1}\) with step d, every \(j=1,\ldots,L-2\) and every \(k=1,\ldots,\min(j,L-1-j)\) supplies a three-prime subprogression and the primitive ABC triple
+\[
+(p_{j-k}p_{j+k})+(kd)^2=p_j^2.
+\]
+The number of **distinct square lifts** is exactly
+\[
+\sum_{j=1}^{L-2}\min(j,L-1-j)
+=\left\lfloor\frac{(L-1)^2}{4}\right\rfloor.
+\]
+For all lifts \(c/\operatorname{rad}(abc)<1/3\), regardless of their repeated-prime energy. Green--Tao gives arbitrarily long prime progressions as an **external theorem**, hence unbounded quadratic fans of individually benign lifts. This sharply falsifies any inference from *many* synchronized prime subprogressions to high ABC quality. The exact code prime_ap_shadow_fan authenticates primes and the original progression; its five-prime example (5,11,17,23,29) yields four distinct lifts, including one with spacing twice the base AP step. No proof of Green--Tao is claimed here.
+
+**Updated local validation:** 14 isolated standard-library unit tests passed under Python 3.13. Full existing SUCC test suite and hosted CI are UNVERIFIED pending an actual complete-checkout run.
