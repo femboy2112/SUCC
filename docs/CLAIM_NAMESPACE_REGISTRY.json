@@ -292,6 +292,21 @@
         "observational_succ/prime_phase_clocks.py",
         "scripts/prime_phase_clocks_probe.py"
       ]
+    },
+    {
+      "namespace": "GREEN_TAO_CLOCK_AP",
+      "bare_prefix": "GTC",
+      "fq_prefix": "GTC",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_GREEN_TAO_CLOCK_AP.md"
+      ],
+      "id_count": 14,
+      "status": "MIXED (CLASSICAL/EXTERNAL THEOREM/PROVED LOCAL/TESTED FINITE/REFUTED/UNVERIFIED)",
+      "topic": "faithful squarefree Fourier phase clocks, Tao W-trick fixed class, nested prime arithmetic progressions, exact local singular series and ABC/RH firewall",
+      "code": [
+        "observational_succ/green_tao_clock_ap.py",
+        "scripts/green_tao_clock_ap_probe.py"
+      ]
     }
   ],
   "resolved_collisions": [

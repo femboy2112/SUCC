@@ -9,6 +9,8 @@ does not integrate drafts #153–#177. First-window Schur sign and RH remain ope
 inverses are alternative enclosures: take the better single bound, never the sum. RH and the signed
 S₄ sign remain OPEN.)**
 
+2026-10-19 stacked continuation: [Green–Tao synchronized-clock prime APs](CLAIM_SUPPLEMENT_GREEN_TAO_CLOCK_AP.md) (GTC-01–14). Exact CRT/finite Fourier and local-singular-factor certificates, imported fixed-modulus PNT-AP and Green–Tao dense-subset theorem, rigorous 5×5 prime grid, and a separate flat-RAD/RIS prime-ladder family (stronger than Green–Tao) and an externally derived Maynard–Tao prime-rich-fiber theorem, hostile composite and fixed-gap controls. Scholarly novelty and ABC/RH implications unverified.
+
 2026-10-19 stacked research: [Primorial/factorial prime-phase clocks](CLAIM_SUPPLEMENT_PRIME_PHASE_CLOCKS.md) (PPC-01–10). Classical CRT/Dirichlet construction, first-digit vs full prime-power completion, exact no-go results for all-prior/all-sieve clocks, prime-source counterexamples, ABC firewall. No claim of academic priority.
 
 2026-10-19 additional claim family: [RAD/RIS prime-gated successor transport](CLAIM_SUPPLEMENT_RAD_RIS.md) (RRT-01–10), with exact arithmetic and CRT proofs, a finite prime-window nonidentification witness, Euler/Gibbs scope and ABC/RH firewalls. Academic novelty unverified.
