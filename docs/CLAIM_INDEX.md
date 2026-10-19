@@ -9,6 +9,8 @@ does not integrate drafts #153–#177. First-window Schur sign and RH remain ope
 inverses are alternative enclosures: take the better single bound, never the sum. RH and the signed
 S₄ sign remain OPEN.)**
 
+2026-10-19 additional claim family: [RAD/RIS prime-gated successor transport](CLAIM_SUPPLEMENT_RAD_RIS.md) (RRT-01–10), with exact arithmetic and CRT proofs, a finite prime-window nonidentification witness, Euler/Gibbs scope and ABC/RH firewalls. Academic novelty unverified.
+
 Latest research: [Arithmetic Resonance claim supplement](CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md), with source-specific range and two-sided Schur bounds; original sign OPEN.
 
 A concise entry point into the full claim record. Nothing here replaces or deletes a historical
