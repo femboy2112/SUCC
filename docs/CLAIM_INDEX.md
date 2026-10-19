@@ -17,6 +17,12 @@ S₄ sign remain OPEN.)**
 
 2026-10-19 additional claim family: [RAD/RIS prime-gated successor transport](CLAIM_SUPPLEMENT_RAD_RIS.md) (RRT-01–10), with exact arithmetic and CRT proofs, a finite prime-window nonidentification witness, Euler/Gibbs scope and ABC/RH firewalls. Academic novelty unverified.
 
+2026-10-19 stacked continuation: [Factorial Borwein hologram](CLAIM_SUPPLEMENT_FACTORIAL_BORWEIN_HOLOGRAM.md) (FBH-01–10). Bounded injective ℓ²(ℤ)→L²(ℝ) factorial cardinal lift with range-only reconstruction (NOT all of L²), Legendre variance windows, Newton source reconstruction, authentic prime-clock gate, and a fixed-W Poisson no-uniform-mixing bound; FBH-09 REFUTED (first-prime-width mutation). No ABC/RH or signed-Weil claim.
+
+2026-10-19 independent research: [ABC prime-clock energy families](CLAIM_SUPPLEMENT_ABC_CLOCK_GREEN_TAO.md) (ABC-CLK-01–13). Primitive p-adic conditional-Haar clock laws, ris^θ moment bound, and an elementary X^(8/5−…) exceptional-set baseline that is **strictly inferior** to the 2026 Bernert–Browning–Lichtman–Teräväinen X^(3/5+ε) benchmark (ABC-CLK-12 REFUTED as a priority claim); ABC-CLK-08 REFUTES the inference that these positive moments identify the signed completed Weil form or prove RH. ABC OPEN. (Bare IDs carry a hyphenated tag the claim_namespaces regex does not auto-census; registered additively, no historical ID renamed.)
+
+2026-10-19 independent research: [SUCC metatheory — generative choice and source-certified descent](CLAIM_SUPPLEMENT_META_CHOICE_DESCENT.md) (MCD-01–10). Witnessed dependent choice, Diaconescu choice/LEM firewall, choice-free support transport on q-fibers (Lean-kernel verified, no `Classical.choice`), the F₂ odd-loop global-section obstruction, and the existential-support left adjoint; MCD-09 UNVERIFIED (no novel arithmetic/Weil/RH result claimed). New-to-project synthesis, not original topos theory.
+
 Latest research: [Arithmetic Resonance claim supplement](CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md), with source-specific range and two-sided Schur bounds; original sign OPEN.
 
 A concise entry point into the full claim record. Nothing here replaces or deletes a historical
