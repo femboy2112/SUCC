@@ -869,3 +869,15 @@ noninteger rational scales while preserving the original record. These are
 classical analytic reconstructions and exact source interfaces; canonical
 autocorrelation positivity and RH remain unproved. See the linked synthesis
 for observer-relative execution/proof/access boundaries and validation.
+
+## R2S — whole-residual prime-two inverse (2026-10-18)
+
+[Claim supplement](CLAIM_SUPPLEMENT_FULL_PRIME_RESOLVENT.md) and
+[machine-audited capsules](../research/2026-10-18/ROUND2_SIGNED_CAPSULES.json).
+The paper audits the original source on fixed primitive parity spaces,
+including its closed form domain, and applies the non-scalar prime mismatch
+inverse to complete nominal continuum residuals before charging source errors.
+The exact J8 and J24 instances strictly improve both signed Schur lower
+blocks. Both resulting lower blocks remain negative definite, so the true
+source sign is **UNVERIFIED**, not refuted. Universal paper proofs and exact
+finite evidence remain distinct. No Lean or RH authority is claimed.

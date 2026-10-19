@@ -1,0 +1,92 @@
+{
+  "RH_proved": false,
+  "both_blocks_strictly_improved": true,
+  "execution": {
+    "argv": [
+      "scripts/full_prime_resolvent_probe.py",
+      "--source",
+      "--J",
+      "8",
+      "--M",
+      "80",
+      "--output",
+      "research/2026-10-18/ROUND2_FULL_PRIME_J8.json"
+    ],
+    "authority": "PAPER_PROVED with exact rational instance check; no Lean authority",
+    "elapsed_seconds": 18.67030256986618,
+    "peak_KiB": 27400,
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "resource_caps": "240 CPU seconds; 1 GiB address space; single process"
+  },
+  "first_window_sign_certified": false,
+  "sectors": {
+    "even_derivative": {
+      "gain_PD": true,
+      "gain_approx": [
+        [
+          0.00031043420924732867,
+          0.00021853652407525915
+        ],
+        [
+          0.00021853652407525915,
+          0.0001548767718763711
+        ]
+      ],
+      "new_lower_PSD": false,
+      "new_lower_approx": [
+        [
+          -0.012392441391700053,
+          5.136256005300569e-05
+        ],
+        [
+          5.136256005300569e-05,
+          -0.0120905642240665
+        ]
+      ],
+      "old_lower_approx": [
+        [
+          -0.012702875600947383,
+          -0.00016717396402225344
+        ],
+        [
+          -0.00016717396402225344,
+          -0.01224544099594287
+        ]
+      ]
+    },
+    "odd_derivative": {
+      "gain_PD": true,
+      "gain_approx": [
+        [
+          0.00013474239129733417,
+          5.239343588402596e-05
+        ],
+        [
+          5.239343588402596e-05,
+          2.5875027412001636e-05
+        ]
+      ],
+      "new_lower_PSD": false,
+      "new_lower_approx": [
+        [
+          -0.0272942446330339,
+          0.00010841894358157377
+        ],
+        [
+          0.00010841894358157377,
+          -0.026946583162610838
+        ]
+      ],
+      "old_lower_approx": [
+        [
+          -0.027428987024331233,
+          5.6025507697547814e-05
+        ],
+        [
+          5.6025507697547814e-05,
+          -0.02697245819002284
+        ]
+      ]
+    }
+  }
+}

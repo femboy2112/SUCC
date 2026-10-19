@@ -116,3 +116,5 @@ Carrier reconstructions → [CARRIER_ATLAS.md](CARRIER_ATLAS.md). Proof-access c
 [RESEARCH_FRONTIER_2026-10-15.md](RESEARCH_FRONTIER_2026-10-15.md) and
 [SUCC_RESEARCH_DEPENDENCY_DAG.md](SUCC_RESEARCH_DEPENDENCY_DAG.md). How #101–#131 were consolidated →
 [ACADEMIC_CARRIER_INTEGRATION_AUDIT_2026-10-15.md](ACADEMIC_CARRIER_INTEGRATION_AUDIT_2026-10-15.md).
+
+- **R2S-SOURCE / HIGH / INVERSE / STRICT / SIGN:** [whole-residual prime-two inverse certificates](CLAIM_SUPPLEMENT_FULL_PRIME_RESOLVENT.md); paper high-domain/source audit and strict exact first-window signed Schur enclosure improvements; true sign remains open.

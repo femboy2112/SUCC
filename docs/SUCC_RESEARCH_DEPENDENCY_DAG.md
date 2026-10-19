@@ -206,3 +206,20 @@ pins all PR157–177 heads and records which are ancestors. The
 The foundational and arithmetic results are independent contributions. They
 neither authenticate a physical observer nor supply missing signed positivity.
 Scholarly novelty is unverified; no sibling branch is silently treated as merged.
+## R2S: complete source residual in the prime-two inverse metric
+
+```mermaid
+flowchart LR
+  RS[R2S-SOURCE: original closed primitive source] --> RH[R2S-HIGH: fixed parity infinite coercivity and mismatch]
+  RH --> RI[R2S-INVERSE: whole nominal inverse then source error]
+  RI --> RF[R2S-STRICT: exact J8 and J24 strict Loewner gains]
+  RH --> RO[R2S-SIGN: true signed S4 positivity remains OPEN]
+  RF -. failed sufficient bound .-> RO
+```
+
+[Typed capsules](../research/2026-10-18/ROUND2_SIGNED_CAPSULES.json) retain
+source hashes, quantifiers, hypotheses and paper/exact authority separately.
+The last edge records an unresolved research target, not an implication of
+positivity. Both actual certified lower matrices remain negative definite;
+no actual negative source energy has been established. This branch imports
+no new Gamma constants from PR178 or PR179.
