@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Read-only Git/GitHub research ancestry snapshot; PR labels are not ancestry."""
+import argparse
 from concurrent.futures import ThreadPoolExecutor
 import datetime as dt
 import json
@@ -37,11 +38,15 @@ def ancestor(a, b):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--prs", nargs="+", type=int, default=list(range(153,178)))
+    parser.add_argument("--output", default="research/2026-10-18/institute/github_snapshot.json")
+    args = parser.parse_args()
     repo = api("")
     default = repo["default_branch"]
     head = run("git", "rev-parse", "origin/"+default)
     with ThreadPoolExecutor(max_workers=3) as pool:
-        prs = list(pool.map(pr, range(153, 178)))
+        prs = list(pool.map(pr, args.prs))
     for p in prs:
         for check in p["check_runs"]["check_runs"]:
             for key in list(check):
@@ -68,7 +73,7 @@ def main():
                   duplicate_patch_families=[dict(patch_id=k, commits=v)
                       for k,v in families.items() if len(v)>1],
                   interpretation="Ancestry and byte/patch identity only; not theorem verification.")
-    path = Path("research/2026-10-18/institute/github_snapshot.json")
+    path = Path(args.output)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(record, indent=2)+"\n")
     print(json.dumps({"path":str(path), "default_head":head, "prs":len(prs),

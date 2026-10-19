@@ -19,7 +19,9 @@ def main():
     root = Path(__file__).resolve().parents[1]
     manifest_path = root/'research/2026-10-18/round2/operators_axioms.json'
     manifest = json.loads(manifest_path.read_text())
-    source = root/manifest['source']
+    source = root/'formal/round2/ResidueTransfer.lean'
+    if manifest['source'] != source.relative_to(root).as_posix():
+        raise ValueError('Unexpected fixed kernel source')
     pin = (root/'lean-toolchain').read_text().strip()
     if pin != manifest['toolchain'] or pin != 'leanprover/lean4:v4.14.0':
         raise ValueError('Unexpected toolchain')
@@ -54,7 +56,7 @@ def main():
             declarations[match.group(1)] = [] if empty else [x.strip() for x in match.group(2).split(',')]
         if declarations != manifest['declarations']:
             raise ValueError('Exact axiom audit mismatch')
-        record = dict(status='PASS', scope=manifest['scope'], toolchain=pin, compiler_version=version,
+        record = dict(status='PASS', exit_code=checked.returncode, scope=manifest['scope'], toolchain=pin, compiler_version=version,
                       source=manifest['source'], source_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
                       manifest_sha256=hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
                       declarations=declarations, compiler_output=checked.stdout,

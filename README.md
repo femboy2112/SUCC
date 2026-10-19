@@ -21,6 +21,8 @@ hypothesis**. RH is a demanding downstream application, not SUCC's definition.
 > and no positive Hilbert covariance is identified with the signed completed Weil form. See the
 > [claim index](docs/CLAIM_INDEX.md) and [claim ledger](docs/CLAIM_LEDGER.md).
 
+**Institute Round II:** [execution and proof-authority report](research/2026-10-18/ROUND2_EXECUTION_REPORT.md), [forward-only operator manuscript](research/2026-10-18/ROUND2_OPERATORS.md), and [completion-cost theorems](research/2026-10-18/ROUND2_COMPLETION.md). Thirteen new core-Lean declarations; source-signed analysis stays on its separate continuation. RH remains open.
+
 **Institute nucleus research checkpoint (2026-10-18):**
 [execution report](research/2026-10-18/INSTITUTE_EXECUTION_REPORT.md) and
 [claim supplement](docs/CLAIM_SUPPLEMENT_INSTITUTE.md) provide eight core Lean

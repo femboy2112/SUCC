@@ -8,13 +8,13 @@
   "command": [
     "lean",
     "-o",
-    "/tmp/succ-round2-causal-j2of1usq/PublicBelief.olean",
-    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-causal/formal/round2/PublicBelief.lean"
+    "/tmp/succ-round2-causal-2im9y88h/PublicBelief.olean",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2/formal/round2/PublicBelief.lean"
   ],
-  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-causal",
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2",
   "exit_code": 0,
   "negative_control_exit_code": 1,
-  "negative_control_output": "/tmp/succ-round2-causal-j2of1usq/FalseControl.lean:1:35: error: tactic 'decide' proved that the proposition\n  False\nis false\n",
+  "negative_control_output": "/tmp/succ-round2-causal-2im9y88h/FalseControl.lean:1:35: error: tactic 'decide' proved that the proposition\n  False\nis false\n",
   "compiler_output": "'ObservationalSUCC.Round2.PublicBelief.belief_safe_iff_all_sources' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.uniform_controller_iff' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.exact_quotient_exists_iff' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.quotient_enabled_iff' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.image_post_iff' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.source_policy_descent_iff' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.belief_policy_descent_iff' depends on axioms: [propext]\n'ObservationalSUCC.Round2.PublicBelief.private_choices_do_not_glue' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.guard_safe_iff_absent' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.differing_beliefs_have_separating_guard' does not depend on any axioms\n",
   "declarations": {
     "ObservationalSUCC.Round2.PublicBelief.belief_safe_iff_all_sources": [],
@@ -30,7 +30,7 @@
     "ObservationalSUCC.Round2.PublicBelief.guard_safe_iff_absent": [],
     "ObservationalSUCC.Round2.PublicBelief.differing_beliefs_have_separating_guard": []
   },
-  "checked_utc": "2026-10-19T00:23:06.133349+00:00",
+  "checked_utc": "2026-10-19T00:26:26.024292+00:00",
   "resource_limits": {
     "address_space_bytes": 1073741824,
     "cpu_seconds": 60

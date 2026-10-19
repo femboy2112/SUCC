@@ -198,3 +198,10 @@ The [dependency manifest](../research/2026-10-16/COLLECTIVE_OBSERVER_DEPENDENCIE
 pins source identity, coordinate metric and shared premises. Independent finite
 methods share one original arithmetic source; they are not independent sources.
 See [CO-01–17](CLAIM_SUPPLEMENT_COLLECTIVE_OBSERVER.md) for domains and falsifiers.
+
+Round II extends the existing [Institute supplement](CLAIM_SUPPLEMENT_INSTITUTE.md)
+with INS-15–INS-22: forward-only obstruction, quantified completion, nondeterministic
+public safety and exact menu-interface obstruction. The machine graph records typed
+Haar-to-distribution/WOT comparisons; the 13 new kernel declarations cover only
+residue algebra and public-policy/quotient results. Signed-source work stays on its
+separate #177 continuation.

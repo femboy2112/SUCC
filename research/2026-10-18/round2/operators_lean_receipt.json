@@ -1,5 +1,6 @@
 {
   "status": "PASS",
+  "exit_code": 0,
   "scope": "Residue transfer, within-class injection, monoid membership and prefix bound only; no analytic FWD theorem",
   "toolchain": "leanprover/lean4:v4.14.0",
   "compiler_version": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
@@ -17,8 +18,8 @@
   },
   "compiler_output": "'ObservationalSUCC.Round2.residue_transfer' depends on axioms: [propext]\n'ObservationalSUCC.Round2.transfer_injective' does not depend on any axioms\n'ObservationalSUCC.Round2.controlled_monoid_transfer' depends on axioms: [propext]\n",
   "negative_control_exit_code": 1,
-  "negative_control_output": "/tmp/succ-residue-lean-a0hls0b0/Negative.lean:1:35: error: tactic 'decide' proved that the proposition\n  False\nis false\n",
-  "checked_utc": "2026-10-19T00:17:45.159895+00:00",
+  "negative_control_output": "/tmp/succ-residue-lean-46iqct2h/Negative.lean:1:35: error: tactic 'decide' proved that the proposition\n  False\nis false\n",
+  "checked_utc": "2026-10-19T00:24:00.624309+00:00",
   "resource_limits": {
     "address_space_bytes": 1073741824,
     "cpu_seconds": 60

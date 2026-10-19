@@ -17,7 +17,7 @@ separate gates.
 | INS-02 | Finite relational reachability iff one source path; backward exclusion iff no path; edge invariants propagate | LEAN KERNEL; arbitrary relations, finite words; no probability coupling or infinite completion |
 | INS-03 | Exact finite Moore refinement with independently found distinguishing words | CLASSICAL / PAPER; finite declared tables; no universal empirical identification |
 | INS-04 | Haar scaling, isometries, adjoints and range projections | CLASSICAL; normalized additive Haar and correct half-density |
-| INS-05 | All-prime bounded star-intertwiners vanish; atomic/Haar sieve strong limits differ | PAPER PROVED; boundedness and both action identities essential |
+| INS-05 | All-prime bounded star-intertwiners vanish; atomic/Haar sieve strong limits differ | PAPER PROVED; earlier proof assumes both actions; INS-15 removes the adjoint hypothesis |
 | INS-06 | For any prime subset S, unitary equivalence iff its reciprocal prime sum converges; otherwise disjoint | PAPER PROVED; full countable shell decomposition and multiplicities explicit |
 | INS-07 | Algebraic distribution intertwiners classified by unit-supported distributions | PAPER PROVED; transpose actions on locally constant tests, not Hilbert adjoints |
 | INS-08 | Weighted Dirac extension domains and nonclosable unweighted graph | PAPER PROVED; weak distribution topology; explicit harmonic sequence tends to (0,Haar) |
@@ -52,3 +52,32 @@ Novelty: foundational claims are classical specializations. Infinite-family
 Wold failures are known (Dan–Guo). The sharp arithmetic subset classification,
 distribution interface and Gamma bound are proved project results; independent
 academic novelty and publication significance remain unestablished.
+
+## Round II continuation (INS-15–INS-22)
+
+The same machine graph now contains 22 records; historical IDs stay fixed.
+The continuation is based on #178 `e42096ec0186228dd0f748767599e470f2ca2e1d`.
+The separate #177 signed-source continuation is not merged into this graph.
+Its source/coercivity audit does not silently promote the broad historical
+INS-11 adapter claim or decide INS-13.
+
+| ID | Claim | Authority and boundary |
+|---|---|---|
+| INS-15 | Forward-only atomic/Haar intertwiner exists in either direction iff the selected reciprocal-prime sum converges | PAPER; arbitrary prime subsets, every atomic component; no adjoint assumption |
+| INS-16 | Exact vacuum overlap cost; arbitrary finite-prime unitaries escape WOT to zero under eventual divergent exhaustion | PAPER; norm preserved, no strong convergence; asymptotic variant requires uniform bound |
+| INS-17 | Genuine normalized GCD Gram, exact spectral bounds, and uniform Bessel completion criterion | CLASSICAL / PAPER; positive finite matrices alone insufficient |
+| INS-18 | Weighted Dirac weak-distribution extension iff sum 1/(nw_n) converges, exact TV norm and separate action-ratio criteria | PAPER; weighted Hilbert adjoint is not original backward action |
+| INS-19 | One public policy is belief-safe iff safe for every compatible source; fixed-controller quantifiers and guard separation | LEAN KERNEL; well-founded trees, separate finite Horizon condition |
+| INS-20 | Exact representative-wise relational quotient iff uniform projected successors; all public policy safety descends | LEAN KERNEL; off-image behavior unconstrained; stochastic weights not inferred |
+| INS-21 | Weakest finite safe interface iff policy safety/transcripts match; trace counterexample and exponential menu-monitor obstruction | PAPER + EXACT MODEL; not a new complexity class or winning-memory lower bound |
+| INS-22 | Residue transfer, injectivity and controlled monoid prefix | LEAN KERNEL; harmonic divergence and Fourier analysis remain paper |
+
+Thirteen new declarations are audited against pinned core Lean4.14 manifests:
+ten public-belief declarations and three residue lemmas. Ten use no axioms;
+three use only `propext`. No `sorry`, custom axiom or imported analysis library.
+
+Manuscripts: [operators](../research/2026-10-18/ROUND2_OPERATORS.md),
+[completion costs](../research/2026-10-18/ROUND2_COMPLETION.md),
+[causal descent](../research/2026-10-18/ROUND2_CAUSAL.md).
+Novelty remains unestablished; these proofs and counterexamples extend the
+project's mathematical capability without claiming independent priority.

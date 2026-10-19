@@ -1,0 +1,7 @@
+{
+  "command": "python scripts/institute_audit.py",
+  "exit_code": 1,
+  "error": "CapsuleError: Kernel execution or negative control failed",
+  "cause": "Operator kernel recorder omitted the required exit_code field despite successful compilation. Existing fail-closed graph rejected it.",
+  "repair": "Record actual checked.returncode and rerun pinned compiler and negative control; no fabricated receipt field or weakened auditor."
+}

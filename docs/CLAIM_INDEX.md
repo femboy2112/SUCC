@@ -121,3 +121,10 @@ Carrier reconstructions → [CARRIER_ATLAS.md](CARRIER_ATLAS.md). Proof-access c
 [RESEARCH_FRONTIER_2026-10-15.md](RESEARCH_FRONTIER_2026-10-15.md) and
 [SUCC_RESEARCH_DEPENDENCY_DAG.md](SUCC_RESEARCH_DEPENDENCY_DAG.md). How #101–#131 were consolidated →
 [ACADEMIC_CARRIER_INTEGRATION_AUDIT_2026-10-15.md](ACADEMIC_CARRIER_INTEGRATION_AUDIT_2026-10-15.md).
+
+Round II extends the existing [Institute supplement](CLAIM_SUPPLEMENT_INSTITUTE.md)
+with INS-15–INS-22: forward-only obstruction, quantified completion, nondeterministic
+public safety and exact menu-interface obstruction. The machine graph records typed
+Haar-to-distribution/WOT comparisons; the 13 new kernel declarations cover only
+residue algebra and public-policy/quotient results. Signed-source work stays on its
+separate #177 continuation.

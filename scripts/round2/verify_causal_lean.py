@@ -17,8 +17,7 @@ from scripts.verify_institute_lean import limits, strip_comments
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path,
-                        default=ROOT / "research/2026-10-18/round2/causal_kernel_receipt.json")
+    parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     source = ROOT / "formal/round2/PublicBelief.lean"
     manifest_path = ROOT / "research/2026-10-18/round2/causal_axioms.json"
@@ -74,10 +73,10 @@ def main():
                        compiler_output=checked.stdout, declarations=observed,
                        checked_utc=datetime.now(timezone.utc).isoformat(),
                        resource_limits=dict(address_space_bytes=1024**3, cpu_seconds=60))
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(receipt, indent=2) + "\n")
-    print(json.dumps({"status": "PASS", "declarations": len(observed),
-                      "output": str(args.output)}, indent=2))
+    if args.output:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(json.dumps(receipt, indent=2) + "\n")
+    print(json.dumps(receipt, indent=2))
 
 
 if __name__ == "__main__":

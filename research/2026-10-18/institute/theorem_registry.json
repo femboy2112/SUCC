@@ -1165,6 +1165,704 @@
         }
       ],
       "research_label": "INS.SCHUR.METHOD_NOGO"
+    },
+    {
+      "claim_id": "INS-15",
+      "authority": "PAPER_PROVED",
+      "statement": "For every subset S of primes, a nonzero bounded complex-linear forward-only intertwiner in either direction between the atomic shifts and normalized additive-Haar dilations exists iff sum_(p in S)1/p is finite. In the convergent case a unitary exists; in the divergent case every such intertwiner is zero.",
+      "source": "positive-integer multiplication and profinite additive Haar",
+      "operations_relations": "For every subset S of primes, a nonzero bounded complex-linear forward-only intertwiner in either direction between the atomic shifts and normalized additive-Haar dilations exists iff sum_(p in S)1/p is finite. In the convergent case a unitary exists; in the divergent case every such intertwiner is zero.",
+      "target_carrier": "ell2(N+) and L2(Zhat,Haar)",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "Hilbert norm; strong operator limits explicitly distinguished",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities.",
+        "All intertwining conclusions quantify only over bounded complex-linear maps and subsets of genuine primes; forward-only claims impose no adjoint equation on the map."
+      ],
+      "dependencies": [
+        "INS-04"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/ROUND2_OPERATORS.md",
+          "sha256": "051fdd969270ed34bbe540653fd0eb39f1b05fec5cee4016fda477573cfa4245",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "observational_succ/round2_operators.py",
+          "sha256": "3ff0842a1926056f505126047b1292032cedb51e6d809edf706a3892a0bbb522",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_round2_operators.py",
+          "sha256": "5127ab3f92abf747a88aad08a98f81f40bc77401aebf14eb8bf6f41c6dba7d54",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "ell2(N+) and L2(Zhat,Haar)",
+        "topology": "Hilbert norm; strong operator limits explicitly distinguished"
+      },
+      "quantifiers": "For every subset S of primes, a nonzero bounded complex-linear forward-only intertwiner in either direction between the atomic shifts and normalized additive-Haar dilations exists iff sum_(p in S)1/p is finite. In the convergent case a unitary exists; in the divergent case every such intertwiner is zero.",
+      "prior_art": "Classical Euler products, finite-group coset transfer, Fourier/Bessel bounds and Wold shell construction. Related Dirichlet-convolution obstructions in Hilberdink; exact academic priority unknown.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Search exact arithmetic representation prior art and formalize the measure/Fourier argument beyond the checked residue core.",
+      "independent_check": "Principal derivation and separate authoring-stream review, alternative exact oracles and kernel runs; shared model/source lineage, not external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        },
+        {
+          "commit": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+          "path": "research/2026-10-18/INSTITUTE_ATOMIC_HAAR.md",
+          "blob": "223122cde9d0d5c11682b113cd156da555348668"
+        }
+      ],
+      "research_label": "INS.ROUND2.FORWARD"
+    },
+    {
+      "claim_id": "INS-16",
+      "authority": "PAPER_PROVED",
+      "statement": "For finite F subset G, normalized avoidance vacua have overlap sqrt(alpha_G/alpha_F) and squared distance 2(1-sqrt(alpha_G/alpha_F)). For every eventually exhaustive sequence of finite prime sets with divergent reciprocal sum, every choice of exact finite-prime unitary intertwiners converges WOT to zero, while preserving each basis norm. Uniformly bounded asymptotically forward-intertwining sequences also converge WOT to zero.",
+      "source": "positive-integer multiplication and profinite additive Haar",
+      "operations_relations": "For finite F subset G, normalized avoidance vacua have overlap sqrt(alpha_G/alpha_F) and squared distance 2(1-sqrt(alpha_G/alpha_F)). For every eventually exhaustive sequence of finite prime sets with divergent reciprocal sum, every choice of exact finite-prime unitary intertwiners converges WOT to zero, while preserving each basis norm. Uniformly bounded asymptotically forward-intertwining sequences also converge WOT to zero.",
+      "target_carrier": "ell2(N+) and L2(Zhat,Haar)",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "Hilbert norms and WOT explicitly distinguished; no strong or norm convergence of unitaries",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities.",
+        "All intertwining conclusions quantify only over bounded complex-linear maps and subsets of genuine primes; forward-only claims impose no adjoint equation on the map.",
+        "For the escape assertion, each fixed selected prime is eventually included, its reciprocal sum diverges, and the finite maps are unitary; the asymptotic variant assumes a uniform operator norm bound and WOT intertwining defects tending to zero."
+      ],
+      "dependencies": [
+        "INS-15"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/ROUND2_COMPLETION.md",
+          "sha256": "1b91898bfd2238166a1bbbbd93ba712dc46d9e913cff152555baf7d8466f241a",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "observational_succ/round2_completion.py",
+          "sha256": "ee34356bf5872c325611a71e0b954d3e9b587cfda92821e83f4d7f1306a78a96",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_round2_completion.py",
+          "sha256": "90ec2ac5f0cc68004319bc811e8388f5f9665309868cbed5d3bb50e042b6f5ce",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "ell2(N+) and L2(Zhat,Haar)",
+        "topology": "Hilbert norms and WOT explicitly distinguished; no strong or norm convergence of unitaries"
+      },
+      "quantifiers": "For finite F subset G, normalized avoidance vacua have overlap sqrt(alpha_G/alpha_F) and squared distance 2(1-sqrt(alpha_G/alpha_F)). For every eventually exhaustive sequence of finite prime sets with divergent reciprocal sum, every choice of exact finite-prime unitary intertwiners converges WOT to zero, while preserving each basis norm. Uniformly bounded asymptotically forward-intertwining sequences also converge WOT to zero.",
+      "prior_art": "Classical Haar continuity, weak-operator compactness and unitary adjoint identities; arithmetic specialization.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Sharp quantitative decay for specified finite Fourier test families and exact priority comparison.",
+      "independent_check": "Principal derivation and separate authoring-stream review, alternative exact oracles and kernel runs; shared model/source lineage, not external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        },
+        {
+          "commit": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+          "path": "research/2026-10-18/INSTITUTE_ATOMIC_HAAR.md",
+          "blob": "223122cde9d0d5c11682b113cd156da555348668"
+        }
+      ],
+      "research_label": "INS.ROUND2.COMPLETION"
+    },
+    {
+      "claim_id": "INS-17",
+      "authority": "PAPER_PROVED",
+      "statement": "For every N>=1, the normalized GCD Gram of U_n1 is gcd(m,n)/sqrt(mn), with determinant product(phi(n)/n)>0, norm squared at least H_N and the exact divisor Rayleigh value R_N. R_N=(2/pi^2)(log N)^2+O(log N). More generally a fixed consistent synthesis extends boundedly from ell2 iff all finite Grams share one uniform upper bound.",
+      "source": "positive-integer multiplication and profinite additive Haar",
+      "operations_relations": "For every N>=1, the normalized GCD Gram of U_n1 is gcd(m,n)/sqrt(mn), with determinant product(phi(n)/n)>0, norm squared at least H_N and the exact divisor Rayleigh value R_N. R_N=(2/pi^2)(log N)^2+O(log N). More generally a fixed consistent synthesis extends boundedly from ell2 iff all finite Grams share one uniform upper bound.",
+      "target_carrier": "finite GCD Grams; consistent synthesis into a fixed Hilbert space",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "quadratic order and Hilbert operator norm",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities.",
+        "Natural initial segment 1..N; all spectral finite certificates use exact rational bounds.",
+        "The general Bessel completion criterion uses fixed vectors in one complete Hilbert target, consistent columns and one bound uniform over all finite index sets."
+      ],
+      "dependencies": [
+        "INS-04"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/ROUND2_OPERATORS.md",
+          "sha256": "051fdd969270ed34bbe540653fd0eb39f1b05fec5cee4016fda477573cfa4245",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "observational_succ/round2_operators.py",
+          "sha256": "3ff0842a1926056f505126047b1292032cedb51e6d809edf706a3892a0bbb522",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_round2_operators.py",
+          "sha256": "5127ab3f92abf747a88aad08a98f81f40bc77401aebf14eb8bf6f41c6dba7d54",
+          "kind": "ADVERSARIAL_TESTS"
+        },
+        {
+          "path": "research/2026-10-18/ROUND2_COMPLETION.md",
+          "sha256": "1b91898bfd2238166a1bbbbd93ba712dc46d9e913cff152555baf7d8466f241a",
+          "kind": "PAPER_PROOF"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "finite GCD Grams; consistent synthesis into a fixed Hilbert space",
+        "topology": "quadratic order and Hilbert operator norm"
+      },
+      "quantifiers": "For every N>=1, the normalized GCD Gram of U_n1 is gcd(m,n)/sqrt(mn), with determinant product(phi(n)/n)>0, norm squared at least H_N and the exact divisor Rayleigh value R_N. R_N=(2/pi^2)(log N)^2+O(log N). More generally a fixed consistent synthesis extends boundedly from ell2 iff all finite Grams share one uniform upper bound.",
+      "prior_art": "Smith GCD determinant and classical Bessel criterion; Bondarenko-Seip critical GCD bounds and Hilberdink. No optimal largest-eigenvalue asymptotic claimed.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Improve certified spectral brackets and compare arithmetic lower bounds to critical GCD spectral theory.",
+      "independent_check": "Principal derivation and separate authoring-stream review, alternative exact oracles and kernel runs; shared model/source lineage, not external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        },
+        {
+          "commit": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+          "path": "research/2026-10-18/INSTITUTE_ATOMIC_HAAR.md",
+          "blob": "223122cde9d0d5c11682b113cd156da555348668"
+        }
+      ],
+      "research_label": "INS.ROUND2.GRAM"
+    },
+    {
+      "claim_id": "INS-18",
+      "authority": "PAPER_PROVED",
+      "statement": "For every sequence 0<w_n<infinity, J(e_n)=n^-1/2 delta_n extends continuously ell2(w)->weak Dprime(Zhat) iff Cw^2=sum1/(n*w_n)<infinity; equivalently it is bounded into measures with exact TV operator norm Cw. The forward and original backward actions are bounded exactly when sup w_pn/w_n and sup w_n/w_pn are finite. Summability alone does not bound the forward action; the weighted Hilbert adjoint is different.",
+      "source": "positive-integer multiplication and profinite additive Haar",
+      "operations_relations": "For every sequence 0<w_n<infinity, J(e_n)=n^-1/2 delta_n extends continuously ell2(w)->weak Dprime(Zhat) iff Cw^2=sum1/(n*w_n)<infinity; equivalently it is bounded into measures with exact TV operator norm Cw. The forward and original backward actions are bounded exactly when sup w_pn/w_n and sup w_n/w_pn are finite. Summability alone does not bound the forward action; the weighted Hilbert adjoint is different.",
+      "target_carrier": "weighted ell2, finite measures and locally constant test dual",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "weighted Hilbert norm; total variation; weak distribution topology",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities.",
+        "D is the locally constant LF test space, with weak distribution dual; all weights are finite and strictly positive.",
+        "Distribution actions are opposite-test-adjoint transposes; no Hilbert star-equivalence is asserted."
+      ],
+      "dependencies": [
+        "INS-04"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/ROUND2_COMPLETION.md",
+          "sha256": "1b91898bfd2238166a1bbbbd93ba712dc46d9e913cff152555baf7d8466f241a",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "observational_succ/round2_completion.py",
+          "sha256": "ee34356bf5872c325611a71e0b954d3e9b587cfda92821e83f4d7f1306a78a96",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_round2_completion.py",
+          "sha256": "90ec2ac5f0cc68004319bc811e8388f5f9665309868cbed5d3bb50e042b6f5ce",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "weighted ell2, finite measures and locally constant test dual",
+        "topology": "weighted Hilbert norm; total variation; weak distribution topology"
+      },
+      "quantifiers": "For every sequence 0<w_n<infinity, J(e_n)=n^-1/2 delta_n extends continuously ell2(w)->weak Dprime(Zhat) iff Cw^2=sum1/(n*w_n)<infinity; equivalently it is bounded into measures with exact TV operator norm Cw. The forward and original backward actions are bounded exactly when sup w_pn/w_n and sup w_n/w_pn are finite. Summability alone does not bound the forward action; the weighted Hilbert adjoint is different.",
+      "prior_art": "Classical weighted Hilbert duality, total variation and Bruhat distribution transposition; exact project interface criterion.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Formalize measure-valued extension and derive optimal domain choices for a specified bounded source-action grammar.",
+      "independent_check": "Principal derivation and separate authoring-stream review, alternative exact oracles and kernel runs; shared model/source lineage, not external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        },
+        {
+          "commit": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+          "path": "research/2026-10-18/INSTITUTE_ATOMIC_HAAR.md",
+          "blob": "223122cde9d0d5c11682b113cd156da555348668"
+        }
+      ],
+      "research_label": "INS.ROUND2.WEIGHT"
+    },
+    {
+      "claim_id": "INS-19",
+      "authority": "LEAN_KERNEL_PROVED",
+      "statement": "For every relation E, belief B and well-founded public policy P, belief sure-safety iff P is source-safe from every s in B. The same-controller existence equivalence holds at each finite Horizon n; Boolean private existential choices need not glue to one public action. For guard_j enabled iff s differs from j, its uniform availability is equivalent to absence of j from the belief.",
+      "source": "Declared source-indexed nondeterministic relation",
+      "operations_relations": "For every relation E, belief B and well-founded public policy P, belief sure-safety iff P is source-safe from every s in B. The same-controller existence equivalence holds at each finite Horizon n; Boolean private existential choices need not glue to one public action. For guard_j enabled iff s differs from j, its uniform availability is equivalent to absence of j from the belief.",
+      "target_carrier": "arbitrary states, outcomes and well-founded public policy trees",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "set-level sure safety; no probability or infinite-run theorem",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "E is the entire declared relation S x A x O x S; a policy sees only retained outcomes.",
+        "Policies are well-founded public trees; the Horizon predicate separately imposes uniform finite depth."
+      ],
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/ROUND2_CAUSAL.md",
+          "sha256": "d755b49cfa646ea430c7bf1586d9aa6cb9306d0112110c26e4538c7fc2651bb5",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "formal/round2/PublicBelief.lean",
+          "sha256": "f3e76871f9f4b05732c4d2d6b5321c038c71ccd97d79e384a9e0ced5c02fe29b",
+          "kind": "LEAN_SOURCE"
+        },
+        {
+          "path": "research/2026-10-18/round2/causal_kernel_receipt.json",
+          "sha256": "41e84c3164c1f75604f7f32ff2e4694f6a5223c39fa506f01e6cb746f4ff68f0",
+          "kind": "LEAN_RECEIPT"
+        },
+        {
+          "path": "research/2026-10-18/round2/causal_axioms.json",
+          "sha256": "6ad8bc98a91c7b2d34fa4c8a67aeb97daff282df15ae974633989231a6587f83",
+          "kind": "AXIOM_MANIFEST"
+        },
+        {
+          "path": "observational_succ/round2_causal.py",
+          "sha256": "d4e3ecaa4c2d420cbf375a6fb0c4545fc6111f9731fbb48609bd1b8153d3cba8",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_round2_causal.py",
+          "sha256": "27f074ba46244c39ee93494a21c40408864350e508a437e95bfb7f223f52efbb",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "Declared source-indexed nondeterministic relation",
+        "carrier": "arbitrary states, outcomes and well-founded public policy trees",
+        "topology": "set-level sure safety; no probability or infinite-run theorem"
+      },
+      "quantifiers": "For every relation E, belief B and well-founded public policy P, belief sure-safety iff P is source-safe from every s in B. The same-controller existence equivalence holds at each finite Horizon n; Boolean private existential choices need not glue to one public action. For guard_j enabled iff s differs from j, its uniform availability is equivalent to absence of j from the belief.",
+      "prior_art": "Classical knowledge-set/sure-safety games and quantifier separation; new precise kernel specialization.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Principal derivation and separate authoring-stream review, alternative exact oracles and kernel runs; shared model/source lineage, not external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        },
+        {
+          "commit": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+          "path": "research/2026-10-18/INSTITUTE_CAUSAL_DESCENT.md",
+          "blob": "80817037261f4959947026d7478f048ffa90bd7b"
+        }
+      ],
+      "kernel_declarations": [
+        "ObservationalSUCC.Round2.PublicBelief.belief_safe_iff_all_sources",
+        "ObservationalSUCC.Round2.PublicBelief.uniform_controller_iff",
+        "ObservationalSUCC.Round2.PublicBelief.private_choices_do_not_glue",
+        "ObservationalSUCC.Round2.PublicBelief.guard_safe_iff_absent",
+        "ObservationalSUCC.Round2.PublicBelief.differing_beliefs_have_separating_guard"
+      ],
+      "research_label": "INS.ROUND2.POLICY"
+    },
+    {
+      "claim_id": "INS-20",
+      "authority": "LEAN_KERNEL_PROVED",
+      "statement": "For every q:S->Q and relation E, an exact representative-wise relational quotient exists iff projected successor predicates are constant on each fiber; every such quotient commutes with full belief update and preserves and reflects every public policy safety judgment.",
+      "source": "Declared source-indexed nondeterministic relation",
+      "operations_relations": "For every q:S->Q and relation E, an exact representative-wise relational quotient exists iff projected successor predicates are constant on each fiber; every such quotient commutes with full belief update and preserves and reflects every public policy safety judgment.",
+      "target_carrier": "arbitrary states, outcomes and well-founded public policy trees",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "set-level sure safety; no probability or infinite-run theorem",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "E is the entire declared relation S x A x O x S; a policy sees only retained outcomes.",
+        "Policies are well-founded public trees; the Horizon predicate separately imposes uniform finite depth.",
+        "Exactness means down(qs,a,o,y) iff exists t:E(s,a,o,t) and qt=y, for each fixed s. Off-image behavior is unconstrained."
+      ],
+      "dependencies": [
+        "INS-19"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/ROUND2_CAUSAL.md",
+          "sha256": "d755b49cfa646ea430c7bf1586d9aa6cb9306d0112110c26e4538c7fc2651bb5",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "formal/round2/PublicBelief.lean",
+          "sha256": "f3e76871f9f4b05732c4d2d6b5321c038c71ccd97d79e384a9e0ced5c02fe29b",
+          "kind": "LEAN_SOURCE"
+        },
+        {
+          "path": "research/2026-10-18/round2/causal_kernel_receipt.json",
+          "sha256": "41e84c3164c1f75604f7f32ff2e4694f6a5223c39fa506f01e6cb746f4ff68f0",
+          "kind": "LEAN_RECEIPT"
+        },
+        {
+          "path": "research/2026-10-18/round2/causal_axioms.json",
+          "sha256": "6ad8bc98a91c7b2d34fa4c8a67aeb97daff282df15ae974633989231a6587f83",
+          "kind": "AXIOM_MANIFEST"
+        },
+        {
+          "path": "observational_succ/round2_causal.py",
+          "sha256": "d4e3ecaa4c2d420cbf375a6fb0c4545fc6111f9731fbb48609bd1b8153d3cba8",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_round2_causal.py",
+          "sha256": "27f074ba46244c39ee93494a21c40408864350e508a437e95bfb7f223f52efbb",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "Declared source-indexed nondeterministic relation",
+        "carrier": "arbitrary states, outcomes and well-founded public policy trees",
+        "topology": "set-level sure safety; no probability or infinite-run theorem"
+      },
+      "quantifiers": "For every q:S->Q and relation E, an exact representative-wise relational quotient exists iff projected successor predicates are constant on each fiber; every such quotient commutes with full belief update and preserves and reflects every public policy safety judgment.",
+      "prior_art": "Classical relational coalgebra/bisimulation quotient, strengthened project kernel beyond deterministic partial actions.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Principal derivation and separate authoring-stream review, alternative exact oracles and kernel runs; shared model/source lineage, not external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        },
+        {
+          "commit": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+          "path": "research/2026-10-18/INSTITUTE_CAUSAL_DESCENT.md",
+          "blob": "80817037261f4959947026d7478f048ffa90bd7b"
+        }
+      ],
+      "kernel_declarations": [
+        "ObservationalSUCC.Round2.PublicBelief.exact_quotient_exists_iff",
+        "ObservationalSUCC.Round2.PublicBelief.quotient_enabled_iff",
+        "ObservationalSUCC.Round2.PublicBelief.image_post_iff",
+        "ObservationalSUCC.Round2.PublicBelief.source_policy_descent_iff",
+        "ObservationalSUCC.Round2.PublicBelief.belief_policy_descent_iff"
+      ],
+      "research_label": "INS.ROUND2.QUOTIENT"
+    },
+    {
+      "claim_id": "INS-21",
+      "authority": "PAPER_PROVED",
+      "statement": "For finite declared sources, equality of safe menus and report successors along common safe prefixes iff all public finite-policy safety judgments and all shared-safe-policy possible transcripts agree. Trace equivalence alone fails. For every n>=1 an n-state source has 2^n-1 reachable beliefs with pairwise different safe menus, forcing that many states in any exact deterministic explicit menu monitor.",
+      "source": "Declared source-indexed nondeterministic relation",
+      "operations_relations": "For finite declared sources, equality of safe menus and report successors along common safe prefixes iff all public finite-policy safety judgments and all shared-safe-policy possible transcripts agree. Trace equivalence alone fails. For every n>=1 an n-state source has 2^n-1 reachable beliefs with pairwise different safe menus, forcing that many states in any exact deterministic explicit menu monitor.",
+      "target_carrier": "finite source-indexed belief interfaces and complete public policy experiments",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "exact finite support; stochastic kernels separate",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "E is the entire declared relation S x A x O x S; a policy sees only retained outcomes.",
+        "Policies are well-founded public trees; the Horizon predicate separately imposes uniform finite depth.",
+        "Finite complete source tables; original tags immutable; initial full support; no absent transition is replaced by a failure event.",
+        "The exponential bound is explicit monitor state size, not winning-controller memory or a new complexity-class lower bound."
+      ],
+      "dependencies": [
+        "INS-19"
+      ],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/ROUND2_CAUSAL.md",
+          "sha256": "d755b49cfa646ea430c7bf1586d9aa6cb9306d0112110c26e4538c7fc2651bb5",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "observational_succ/round2_causal.py",
+          "sha256": "d4e3ecaa4c2d420cbf375a6fb0c4545fc6111f9731fbb48609bd1b8153d3cba8",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_round2_causal.py",
+          "sha256": "27f074ba46244c39ee93494a21c40408864350e508a437e95bfb7f223f52efbb",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "Declared source-indexed nondeterministic relation",
+        "carrier": "finite source-indexed belief interfaces and complete public policy experiments",
+        "topology": "exact finite support; stochastic kernels separate"
+      },
+      "quantifiers": "For finite declared sources, equality of safe menus and report successors along common safe prefixes iff all public finite-policy safety judgments and all shared-safe-policy possible transcripts agree. Trace equivalence alone fails. For every n>=1 an n-state source has 2^n-1 reachable beliefs with pairwise different safe menus, forcing that many states in any exact deterministic explicit menu monitor.",
+      "prior_art": "Classical process semantics, partial-observation games and subset construction; source-bound counterexamples and exact independent oracles new to SUCC.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Mechanize weakest safe-interface theorem; test an explicitly specified quantitative stochastic extension against exact kernel mutations.",
+      "independent_check": "Principal derivation and separate authoring-stream review, alternative exact oracles and kernel runs; shared model/source lineage, not external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        },
+        {
+          "commit": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+          "path": "research/2026-10-18/INSTITUTE_CAUSAL_DESCENT.md",
+          "blob": "80817037261f4959947026d7478f048ffa90bd7b"
+        }
+      ],
+      "research_label": "INS.ROUND2.INTERFACE"
+    },
+    {
+      "claim_id": "INS-22",
+      "authority": "LEAN_KERNEL_PROVED",
+      "statement": "For natural q,r,t,n, a fixed inverse residue multiplier transfers n mod q=r mod q to tn mod q=1 mod q; positive multiplication is injective. A multiplicatively closed predicate is retained and t<=C,n<=N implies tn<=CN. Existence of inverse representatives and harmonic divergence are not kernel claims.",
+      "source": "natural multiplication and declared modular equalities",
+      "operations_relations": "For natural q,r,t,n, a fixed inverse residue multiplier transfers n mod q=r mod q to tn mod q=1 mod q; positive multiplication is injective. A multiplicatively closed predicate is retained and t<=C,n<=N implies tn<=CN. Existence of inverse representatives and harmonic divergence are not kernel claims.",
+      "target_carrier": "Nat and multiplicatively closed predicates",
+      "observation_morphisms": "Precisely the maps in the cited theorem.",
+      "topology_measure": "discrete algebra; no series or Hilbert completion",
+      "universal_property": "Only the equivalence/bound explicitly stated.",
+      "comparison_maps": "Identity unless an explicit graph transport is recorded.",
+      "source_identity": "Pinned mathematical source; no physical-source attestation.",
+      "source_epoch": 0,
+      "hypotheses": [
+        "Explicit modular inverse equality, residue membership and multiplicative closure hypotheses; t>0 for injectivity."
+      ],
+      "dependencies": [],
+      "evidence": [
+        {
+          "path": "research/2026-10-18/ROUND2_OPERATORS.md",
+          "sha256": "051fdd969270ed34bbe540653fd0eb39f1b05fec5cee4016fda477573cfa4245",
+          "kind": "PAPER_PROOF"
+        },
+        {
+          "path": "formal/round2/ResidueTransfer.lean",
+          "sha256": "3d9311b5501a676b205c5b5ef62f91abd72f130b03fc455a9320fa5a63b2563c",
+          "kind": "LEAN_SOURCE"
+        },
+        {
+          "path": "research/2026-10-18/round2/operators_lean_receipt.json",
+          "sha256": "22e81970ff0fc55a6eb55317f4d1af679717a264089fd5ad099bfbcb04412a29",
+          "kind": "LEAN_RECEIPT"
+        },
+        {
+          "path": "research/2026-10-18/round2/operators_axioms.json",
+          "sha256": "4e4abf712dfdd2dd5d9dabaf9c3fc2e21e0bb5d53b2f5c431112fc46a83457ac",
+          "kind": "AXIOM_MANIFEST"
+        },
+        {
+          "path": "observational_succ/round2_operators.py",
+          "sha256": "3ff0842a1926056f505126047b1292032cedb51e6d809edf706a3892a0bbb522",
+          "kind": "IMPLEMENTATION"
+        },
+        {
+          "path": "tests/test_round2_operators.py",
+          "sha256": "5127ab3f92abf747a88aad08a98f81f40bc77401aebf14eb8bf6f41c6dba7d54",
+          "kind": "ADVERSARIAL_TESTS"
+        }
+      ],
+      "scope": "UNIVERSAL",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "access": {
+        "permitted_observations": "Declared source grammar and cited test domain only.",
+        "constructible_witness": "Paper construction, Lean theorem, or exact finite receipt as labelled.",
+        "oracle": "No nontrivial zeta-zero inputs; no physical observation fabricated.",
+        "probe_discrimination": "Counterexamples and mutation controls in cited paper/tests.",
+        "proof_theory": "Core Lean4.14 for kernel claims; ordinary mathematics for paper claims.",
+        "execution_cost": "Commands and bounded runtimes retained in institute receipts."
+      },
+      "adversarial": {
+        "domain_tests": "Availability, source identity, topology and zero-extension boundaries.",
+        "negative_examples": "Concrete failed claims retained in the cited paper.",
+        "source_mutations": "Exact source/normalization controls; see scoped test files.",
+        "replay": "python scripts/institute_audit.py; focused tests; verify_institute_lean.py"
+      },
+      "signature": {
+        "source": "natural multiplication and declared modular equalities",
+        "carrier": "Nat and multiplicatively closed predicates",
+        "topology": "discrete algebra; no series or Hilbert completion"
+      },
+      "quantifiers": "For natural q,r,t,n, a fixed inverse residue multiplier transfers n mod q=r mod q to tn mod q=1 mod q; positive multiplication is injective. A multiplicatively closed predicate is retained and t<=C,n<=N implies tn<=CN. Existence of inverse representatives and harmonic divergence are not kernel claims.",
+      "prior_art": "Elementary modular arithmetic and cancellation; scoped algebra core of the paper finite-group transfer.",
+      "novelty": "PROJECT_LOCAL; academic novelty not established.",
+      "next_discriminator": "Independent source and domain audit of the displayed quantified theorem.",
+      "independent_check": "Principal derivation and separate authoring-stream review, alternative exact oracles and kernel runs; shared model/source lineage, not external referees.",
+      "proof_debt": [],
+      "git_sources": [
+        {
+          "commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+          "path": "docs/FOUNDATIONS.md",
+          "blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414"
+        },
+        {
+          "commit": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+          "path": "research/2026-10-18/INSTITUTE_ATOMIC_HAAR.md",
+          "blob": "223122cde9d0d5c11682b113cd156da555348668"
+        }
+      ],
+      "kernel_declarations": [
+        "ObservationalSUCC.Round2.residue_transfer",
+        "ObservationalSUCC.Round2.transfer_injective",
+        "ObservationalSUCC.Round2.controlled_monoid_transfer"
+      ],
+      "research_label": "INS.ROUND2.RESIDUE"
     }
   ],
   "transports": [
@@ -1207,6 +1905,90 @@
       "evidence": {
         "path": "research/2026-10-18/INSTITUTE_ARITHMETIC_ANALYSIS.md",
         "sha256": "ee1bf333e93b58d2f8b58b717fad23f450eb0c3f4b27913305fb969e45e9cb97",
+        "kind": "PAPER_PROOF"
+      }
+    },
+    {
+      "from": "INS-15",
+      "to": "INS-16",
+      "input": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "ell2(N+) and L2(Zhat,Haar)",
+        "topology": "Hilbert norm; strong operator limits explicitly distinguished"
+      },
+      "output": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "ell2(N+) and L2(Zhat,Haar)",
+        "topology": "Hilbert norms and WOT explicitly distinguished; no strong or norm convergence of unitaries"
+      },
+      "authority": "PAPER_PROVED",
+      "obligation": "Explicit source-preserving restriction/extension and topology obligations proved in the cited Round II manuscript; no finite-to-infinite promotion.",
+      "evidence": {
+        "path": "research/2026-10-18/ROUND2_COMPLETION.md",
+        "sha256": "1b91898bfd2238166a1bbbbd93ba712dc46d9e913cff152555baf7d8466f241a",
+        "kind": "PAPER_PROOF"
+      }
+    },
+    {
+      "from": "INS-04",
+      "to": "INS-17",
+      "input": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "ell2(N+) and L2(Zhat,Haar)",
+        "topology": "Hilbert norm; strong operator limits explicitly distinguished"
+      },
+      "output": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "finite GCD Grams; consistent synthesis into a fixed Hilbert space",
+        "topology": "quadratic order and Hilbert operator norm"
+      },
+      "authority": "PAPER_PROVED",
+      "obligation": "Explicit source-preserving restriction/extension and topology obligations proved in the cited Round II manuscript; no finite-to-infinite promotion.",
+      "evidence": {
+        "path": "research/2026-10-18/ROUND2_OPERATORS.md",
+        "sha256": "051fdd969270ed34bbe540653fd0eb39f1b05fec5cee4016fda477573cfa4245",
+        "kind": "PAPER_PROOF"
+      }
+    },
+    {
+      "from": "INS-04",
+      "to": "INS-18",
+      "input": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "ell2(N+) and L2(Zhat,Haar)",
+        "topology": "Hilbert norm; strong operator limits explicitly distinguished"
+      },
+      "output": {
+        "source": "positive-integer multiplication and profinite additive Haar",
+        "carrier": "weighted ell2, finite measures and locally constant test dual",
+        "topology": "weighted Hilbert norm; total variation; weak distribution topology"
+      },
+      "authority": "PAPER_PROVED",
+      "obligation": "Explicit source-preserving restriction/extension and topology obligations proved in the cited Round II manuscript; no finite-to-infinite promotion.",
+      "evidence": {
+        "path": "research/2026-10-18/ROUND2_COMPLETION.md",
+        "sha256": "1b91898bfd2238166a1bbbbd93ba712dc46d9e913cff152555baf7d8466f241a",
+        "kind": "PAPER_PROOF"
+      }
+    },
+    {
+      "from": "INS-19",
+      "to": "INS-21",
+      "input": {
+        "source": "Declared source-indexed nondeterministic relation",
+        "carrier": "arbitrary states, outcomes and well-founded public policy trees",
+        "topology": "set-level sure safety; no probability or infinite-run theorem"
+      },
+      "output": {
+        "source": "Declared source-indexed nondeterministic relation",
+        "carrier": "finite source-indexed belief interfaces and complete public policy experiments",
+        "topology": "exact finite support; stochastic kernels separate"
+      },
+      "authority": "PAPER_PROVED",
+      "obligation": "Explicit source-preserving restriction/extension and topology obligations proved in the cited Round II manuscript; no finite-to-infinite promotion.",
+      "evidence": {
+        "path": "research/2026-10-18/ROUND2_CAUSAL.md",
+        "sha256": "d755b49cfa646ea430c7bf1586d9aa6cb9306d0112110c26e4538c7fc2651bb5",
         "kind": "PAPER_PROOF"
       }
     }

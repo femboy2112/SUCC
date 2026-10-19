@@ -64,7 +64,7 @@ def main():
               run("provenance", [sys.executable, "scripts/verify_provenance.py"]),
               run("observer", [sys.executable, "scripts/observer_foundations_probe.py"]),
               run("ordinal", [sys.executable, "scripts/ordinal_succ_report_probe.py"]),
-              run("kernel", [sys.executable, "scripts/round2/verify_causal_lean.py"])]
+              run("kernel", [sys.executable, "scripts/round2/verify_causal_lean.py", "--output", "research/2026-10-18/round2/causal_kernel_receipt.json"])]
     A, B = split_combined()
     initial = frozenset({"root"})
     source_records = []

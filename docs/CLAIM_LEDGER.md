@@ -1,6 +1,6 @@
 # Research claim ledger
 
-The [Institute supplement](CLAIM_SUPPLEMENT_INSTITUTE.md) adds INS-01–INS-13
+The [Institute supplement](CLAIM_SUPPLEMENT_INSTITUTE.md) adds INS-01–INS-22
 without renumbering historical claims: partial-source descent, atomic/Haar
 interfaces, exact Gamma improvement, and explicit inherited analytic debt.
 
