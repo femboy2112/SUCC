@@ -114,6 +114,24 @@ The natural density exists and is `D/M`. In `1<=n<=X`, the exact count differs f
 
 **Scope:** finite fixed prime constraints, not a distributional ABC bound for unrestricted support.
 
+### The exact signed successor-contact covariance (RRT-10)
+
+Let `B_p(n)=1_{p|n}` and `C_q(n)=1_{q|n+1}`. Take expectations as **natural-density limits** of the uniform distribution on `1<=n<=X`, *not* under the Gibbs distribution of section 6. Elementary residue counts yield
+
+\[
+ \Pr(B_p=1)=1/p,\qquad \Pr(C_q=1)=1/q,\qquad
+ \Pr(B_p=C_q=1)=\begin{cases}0,&p=q,\\1/(pq),&p\ne q.\end{cases}
+\]
+
+Thus for genuine primes `p,q`,
+
+\[
+ \boxed{\lim_{X\to\infty}\operatorname{Cov}_{n\leq X}(B_p(n),C_q(n))
+ = \begin{cases}-1/p^2,&p=q,\\0,&p\ne q.\end{cases}}
+\]
+
+Proof: for `p=q`, a prime cannot divide consecutive numbers. For distinct primes, CRT gives exactly one admissible residue class modulo `pq` for the conjunction `p|n`, `q|n+1`, while either marginal occupies one residue modulo its own prime. Using a complete cycle modulo `lcm(p,q)` already gives exactly these rational moments. The executable probes compare the derived values to an independent direct cycle count. This is a **negative contact covariance at the same prime, and zero cross-prime contact covariance**. It does not contradict the **positive** within-integer Gibbs covariance of support and residual multiplicity: those are different random variables under different measures. Neither quantity is the signed completed Weil kernel. **Status: CLASSICAL CRT / paper proved, finite full-cycle check.**
+
 ## 5. A two-variable Euler deformation separating support and depth (RRT-06)
 
 For complex `s,u` with `Re(s)>1`, `Re(u)>0`, define
