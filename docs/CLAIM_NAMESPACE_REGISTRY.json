@@ -307,6 +307,20 @@
         "observational_succ/green_tao_clock_ap.py",
         "scripts/green_tao_clock_ap_probe.py"
       ]
+    },
+    {
+      "namespace": "BORWEIN_DELTA_WALK",
+      "bare_prefix": "BDW",
+      "fq_prefix": "BDW",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_BORWEIN_DELTA.md"
+      ],
+      "id_count": 6,
+      "status": "MIXED (CLASSICAL/PROVED LOCAL/REFUTED/UNVERIFIED)",
+      "topic": "Borwein sinc/random-walk simplex factorial, authentic prime-clock delta projectors, exact gated SUCC transport and distinct Brownian/Poisson scaling",
+      "code": [
+        "observational_succ/borwein_prime_clock.py"
+      ]
     }
   ],
   "resolved_collisions": [
