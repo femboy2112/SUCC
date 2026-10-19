@@ -1,4 +1,4 @@
-# Green–Tao synchronized-clock arithmetic progression claims (GTC-01–13)
+# Green–Tao synchronized-clock arithmetic progression claims (GTC-01–14)
 
 Companion: [the complete W-trick / double prime-progression research dossier](../research/2026-10-19/GREEN_TAO_SYNCHRONIZED_CLOCK_AP.md).
 Source: genuine primes; cyclic SUCC n→n+1; declared phase 1. Scope: finite squarefree Q wheels, external Green–Tao/PNT-AP/Dirichlet theorem imports.
@@ -21,5 +21,7 @@ Code: `observational_succ/green_tao_clock_ap.py`, independent tests `tests/test_
 | GTC-11 | For each ℓ≥2, rad(jR)=R for all 1≤j≤ℓ iff R squarefree and divisible by every prime ≤ℓ; consequently ris(jR)=j | CLASSICAL elementary / exact paper proof, independently enumerated factor oracle |
 | GTC-12 | Genuine finite prime ladders p_j=1+jR with flat RAD and sequential RIS for lengths 3,4,5; 5×5 q-AP/endpoint-AP full-RAD witness with R=71533328790 | PROVED LOCAL exact primality/factorization, bounded minimum-R calibrations only |
 | GTC-13 | Infinitely many anchored flat-RAD prime ladders do NOT follow from Green–Tao: one-variable forms 1+jR are affinely dependent and outside finite-complexity theory | UNVERIFIED prime-tuple-type infinitude; false "Green–Tao directly proves it" inference REFUTED by missing hypothesis |
+
+| GTC-14 | For each finite clock set Q and m≥2, infinitely many R admit ≥m prime values among 1+jR, 1≤j≤K(m), with all predecessor RAD equal rad(R) and RIS=j ris(R) | EXTERNAL generalized Maynard–Tao theorem for admissible unequal-slope linear forms + PROVED LOCAL exact support lemma; **selected indices need not be consecutive, R need not be squarefree** |
 
 **Next discriminators:** source-faithful character/Gowers correlations with declared error bounds; uniform moving-window W(x) with genuine PNT-AP hypotheses; independently proved additive-multiplicative inequality for primitive ABC triples; authentic signed Gamma/prime/pole Suzuki form. None is certified by the current finite-grid or classical-corollary result.
