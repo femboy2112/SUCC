@@ -10,6 +10,7 @@ from observational_succ.green_tao_clock_ap import (
     prime_clock_progression, prime_predecessor_factorization,
     search_first_grid, verify_prime_clock_grid, wheel_arithmetic,
     verify_flat_rad_prime_ladder, search_flat_rad_ladder,
+    maynard_clock_family, observe_maynard_clock_fiber,
 )
 
 
@@ -96,6 +97,19 @@ def probe() -> dict:
             "first_R_length_4_with_cap_330": search_flat_rad_ladder(4, 330).radical,
             "first_R_length_5_with_cap_247710": search_flat_rad_ladder(5, 247710).radical,
             "infinitely_many_anchored_ladders_proved": False,
+        },
+        "maynard_tao_affine_family_finite_probe": {
+            "external_generalized_Maynard_Tao_theorem_imported": True,
+            "infinite_prime_rich_rad_fiber_proved_in_python": False,
+            "five_clock_source": [5, 11, 17, 23, 29],
+            "finite_family_anchor": maynard_clock_family(q5, 5).anchor_modulus,
+            "t_1_prime_positions": list(observe_maynard_clock_fiber(
+                maynard_clock_family(q5, 5), 1).prime_positions),
+            "t_19117_prime_positions": list(observe_maynard_clock_fiber(
+                maynard_clock_family(q5, 5), 19117).prime_positions),
+            "t_19117_radical": observe_maynard_clock_fiber(
+                maynard_clock_family(q5, 5), 19117).full_radical,
+            "selected_m_of_K_guaranteed_for_sufficiently_large_K_only": True,
         },
         "Green_Tao_reconstructed_inside_SUCC": False,
         "GT_positive_density_and_PNT_AP_used_as_external_theorems": True,
