@@ -9,6 +9,8 @@ does not integrate drafts #153–#177. First-window Schur sign and RH remain ope
 inverses are alternative enclosures: take the better single bound, never the sum. RH and the signed
 S₄ sign remain OPEN.)**
 
+2026-10-19 stacked research: [Primorial/factorial prime-phase clocks](CLAIM_SUPPLEMENT_PRIME_PHASE_CLOCKS.md) (PPC-01–09). Classical CRT/Dirichlet construction, first-digit vs full prime-power completion, exact no-go results for all-prior/all-sieve clocks, prime-source counterexamples, ABC firewall. No claim of academic priority.
+
 2026-10-19 additional claim family: [RAD/RIS prime-gated successor transport](CLAIM_SUPPLEMENT_RAD_RIS.md) (RRT-01–10), with exact arithmetic and CRT proofs, a finite prime-window nonidentification witness, Euler/Gibbs scope and ABC/RH firewalls. Academic novelty unverified.
 
 Latest research: [Arithmetic Resonance claim supplement](CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md), with source-specific range and two-sided Schur bounds; original sign OPEN.
