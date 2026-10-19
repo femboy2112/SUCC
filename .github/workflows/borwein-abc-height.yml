@@ -1,0 +1,36 @@
+name: Borwein ABC height and delta clock exact tests
+
+on:
+  push:
+    branches:
+      - 'research/borwein-abc-height-contact-*'
+  pull_request:
+    paths:
+      - 'observational_succ/borwein_abc_height.py'
+      - 'observational_succ/borwein_abc_contacts.py'
+      - 'tests/test_borwein_abc_height.py'
+      - 'tests/test_borwein_abc_contacts.py'
+      - '.github/workflows/borwein-abc-height.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-primitive-height:
+    name: CRT/height/Poisson oracles (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Compile and run independent exact source oracles
+        run: |
+          python -m py_compile observational_succ/borwein_abc_height.py observational_succ/borwein_abc_contacts.py
+          python -m unittest discover -s tests -p 'test_borwein_abc_*.py' -v
