@@ -1,0 +1,53 @@
+name: Original prime-2 arithmetic surplus and dual Schur
+
+on:
+  push:
+    branches:
+      - research/prime-two-surplus-dual-resolvent-2026-10-17
+    paths:
+      - "observational_succ/authentic_prime_surplus.py"
+      - "observational_succ/prime_surplus_dual.py"
+      - "tests/test_authentic_prime_surplus.py"
+      - "tests/test_authentic_prime_surplus_source.py"
+      - "tests/test_prime_surplus_dual.py"
+      - "scripts/prime_two_surplus_probe.py"
+      - ".github/workflows/original-prime-two-surplus.yml"
+  pull_request:
+    paths:
+      - "observational_succ/authentic_prime_surplus.py"
+      - "observational_succ/prime_surplus_dual.py"
+      - "tests/test_authentic_prime_surplus.py"
+      - "tests/test_authentic_prime_surplus_source.py"
+      - "tests/test_prime_surplus_dual.py"
+      - "scripts/prime_two_surplus_probe.py"
+      - ".github/workflows/original-prime-two-surplus.yml"
+
+jobs:
+  real-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install complete mathematical and source dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Verify original Weil source identity and all import provenance
+        run: python scripts/verify_provenance.py
+      - name: Exact arithmetic edge polynomial and hostile controls
+        run: python -m unittest discover -s tests -p 'test_authentic_prime_surplus.py' -v
+      - name: Frozen original prime and Bessel-source cross-oracle
+        run: python -m unittest discover -s tests -p 'test_authentic_prime_surplus_source.py' -v
+      - name: Exact edge inverse and source-derived Schur saving
+        run: python -m unittest discover -s tests -p 'test_prime_surplus_dual.py' -v
+      - name: Exact four-moment phase-locked nullspace and original-source no-go
+        run: python -m unittest discover -s tests -p 'test_prime_surplus_nullspace.py' -v
+      - name: Original completed P1 low-high center response and Gamma tail
+        run: python -m unittest discover -s tests -p 'test_source_prime_center_alignment.py' -v
+      - name: Produce deterministic actual-prime source receipt
+        run: python scripts/prime_two_surplus_probe.py

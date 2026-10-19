@@ -1,0 +1,54 @@
+name: Authentic full-four first-prime Schur and source interval correlations
+
+on:
+  push:
+    branches:
+      - research/full-four-prime-residual-schur-2026-10-17
+    paths:
+      - "observational_succ/source_four_center_gram.py"
+      - "observational_succ/source_four_prime_schur.py"
+      - "observational_succ/piecewise_suzuki_integrator.py"
+      - "observational_succ/analytic_suzuki_schur_gate.py"
+      - "tests/test_source_four_prime_schur.py"
+      - "scripts/source_full_four_prime_schur_probe.py"
+      - ".github/workflows/source-four-prime-schur.yml"
+  pull_request:
+    paths:
+      - "observational_succ/source_four_center_gram.py"
+      - "observational_succ/source_four_prime_schur.py"
+      - "tests/test_source_four_prime_schur.py"
+      - "scripts/source_full_four_prime_schur_probe.py"
+      - ".github/workflows/source-four-prime-schur.yml"
+
+jobs:
+  exact-original-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 38
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install source and mathematical test dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Original signed Weil source provenance and no fabricated prime tape
+        run: python scripts/verify_provenance.py
+      - name: Original full-four center and signed S4 interval mathematics
+        run: python -m unittest discover -s tests -p 'test_source_four_prime_schur.py' -v
+      - name: Original prime-connected full-four edge and signed S4 source replay
+        run: python -m unittest discover -s tests -p 'test_source_four_edge_gram.py' -v
+      - name: Entire real 2x2 parity cone source-sign theorem and no-ghost controls
+        run: python -m unittest discover -s tests -p 'test_exact_source_two_dim_cone.py' -v
+      - name: Imported original source exponential polynomial independent checks
+        run: |
+          python -m unittest discover -s tests -p 'test_piecewise_suzuki_integrator.py' -v
+          python -m unittest discover -s tests -p 'test_contact_ladder_projection.py' -v
+          python -m unittest discover -s tests -p 'test_piecewise_suzuki_high_holdout.py' -v
+      - name: Source-only Gamma-depth four-mode S4 signed Loewner sweep
+        run: python scripts/source_four_schur_gamma_sweep.py
+      - name: Produce reproducible original source 4x4 Schur certificate
+        run: python scripts/source_full_four_prime_schur_probe.py
