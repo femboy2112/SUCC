@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-10-19T00:38:34.073691+00:00",
+  "failed_head": "d4ed8b5dce54c1882b54126c956661d8a54e5398",
+  "workflow_run": 39180964539,
+  "job": 117833420008,
+  "log_command": [
+    "gh",
+    "api",
+    "repos/femboy2112/SUCC/actions/jobs/117833420008/logs"
+  ],
+  "raw_log_sha256": "b5748508dcc3324511592ef84151ee5368ca3529729b68924aa6caa88b4037ac",
+  "compressed_log_sha256": "6bb25ad223c1c3751d90b2c2636c2989884840bfab1ce4688529e8be52a99f66",
+  "failed_suite": {
+    "tests": 5149,
+    "seconds": 406.217,
+    "errors": 1,
+    "cause": "Missing pinned Git source object in shallow checkout"
+  },
+  "repair": "Full Git history for general Python test job; strict auditor unchanged",
+  "local_recheck": {
+    "command": [
+      "/tmp/succ-institute-venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_round2_registry.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log_sha256": "b2a9f139df2a0cb48ecbac7be83f1b55df95a0164ec7f83cc353a8264f897d9a",
+    "scope": "Existing full-history local checkout; hosted repaired checkout remains separate verification"
+  }
+}

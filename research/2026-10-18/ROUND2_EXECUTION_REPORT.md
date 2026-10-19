@@ -162,6 +162,16 @@ Python's integer-string conversion cap; its failure log is retained and a bounde
 its initial audit-rational serialization failure. No failed execution is labeled
 passing validation.
 
+Hosted validation at `d4ed8b5dce54c1882b54126c956661d8a54e5398` then exposed
+a checkout obligation: the general Python job's shallow checkout lacked the
+pinned historical Git objects required by the new actual-registry test. Its
+Python3.10 run completed 5,149 tests with one error, `Missing pinned Git source
+object`. The full raw job log is preserved as
+`round2/receipts/hosted-shallow-history-failure.log.gz`. The general test job
+now fetches full history, as the institute job already did; neither the registry
+auditor nor its source obligations was weakened. Final-head CI must be checked
+again after this repair.
+
 Preserved refutations: trace support as public availability; private action
 choices as one public controller; safe-interface equivalence as bisimulation;
 finite positive Gram as bounded synthesis; union-only prime coverage as eventual
