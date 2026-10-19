@@ -4,6 +4,10 @@
 eight core Lean declarations, atomic/Haar representation obstructions, a sharper
 authentic Gamma tail, and a source-typed machine claim graph. This research branch
 does not integrate drafts #153–#177. First-window Schur sign and RH remain open.
+**(Superseded 2026-10-18 — Academic Main IV consolidated drafts #153–#182 into `main`; see the
+[integration audit](SUCC_ACADEMIC_MAIN_IV_INTEGRATION_AUDIT_2026-10-18.md). The #181/#182 prime-two
+inverses are alternative enclosures: take the better single bound, never the sum. RH and the signed
+S₄ sign remain OPEN.)**
 
 Latest research: [Arithmetic Resonance claim supplement](CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md), with source-specific range and two-sided Schur bounds; original sign OPEN.
 

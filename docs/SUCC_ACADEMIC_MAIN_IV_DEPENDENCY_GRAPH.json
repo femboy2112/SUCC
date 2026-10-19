@@ -1,0 +1,394 @@
+{
+  "operation": "SUCC Academic Main IV",
+  "date": "2026-10-18",
+  "base_main": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+  "integration_commit": "e706ecda7c66443be01400756dbc9bd7a60abdfb",
+  "integration_branch": "integration/succ-academic-main-iv-2026-10-18",
+  "n_prs": 30,
+  "terminal_tips": [
+    {
+      "pr": 155,
+      "head": "1a84799575ca38a33ed552cf94a0850b5632525e",
+      "branch": "research/piecewise-suzuki-certified-resolvent-2026-10-17",
+      "unique_commits": 35,
+      "title": "Source-exact prime-hinge Suzuki integrals and infinite K-Riesz coercivity/no-go"
+    },
+    {
+      "pr": 163,
+      "head": "f038076a377b8906789994524664023bc8dd871f",
+      "branch": "research/full-four-prime-residual-schur-2026-10-17",
+      "unique_commits": 107,
+      "title": "SOURCE-FOUR: authentic arithmetic center/edge residual Gram and signed Suzuki S4 enclosure"
+    },
+    {
+      "pr": 167,
+      "head": "e1b1676202410dc206791d693749f047a0fefeed",
+      "branch": "research/maximal-source-entropy-2026-10-18",
+      "unique_commits": 16,
+      "title": "MSN: maximally incompressible source vs free orbits and continuous clock factors"
+    },
+    {
+      "pr": 173,
+      "head": "a2ea6859416f0cb6a2939ec577453c6ea9227a84",
+      "branch": "research/bidirectional-cut-hilbert-2026-10-18",
+      "unique_commits": 9,
+      "title": "BDC: forward/backward Hilbert cut, exact Basel\u2013Jordan clock square root, and residual no-go"
+    },
+    {
+      "pr": 176,
+      "head": "a17197697c0ea0259592500b233419fbedf691cf",
+      "branch": "research/mobius-index-infinity-2026-10-18",
+      "unique_commits": 137,
+      "title": "MII: M\u00f6bius-positive FUCC sieve, SUCC index at infinity, and source-weighted clock transport"
+    },
+    {
+      "pr": 180,
+      "head": "b40601fc44584da249d2cc894126edd07cce3eb4",
+      "branch": "research/round2-morphism-2026-10-18",
+      "unique_commits": 6,
+      "title": "Forward-only disjointness, completion debt and nondeterministic causal descent"
+    },
+    {
+      "pr": 181,
+      "head": "a84d2ed9767b893ed6f698cefd92f8de190643b4",
+      "branch": "research/round2-signed-2026-10-18",
+      "unique_commits": 222,
+      "title": "Use the full prime-two inverse for the original signed Schur bound"
+    },
+    {
+      "pr": 182,
+      "head": "e7938edc24feb2528f0c5d39aa6d652d60539f3b",
+      "branch": "research/theorem-forge-ii-2026-10-19",
+      "unique_commits": 224,
+      "title": "Theorem Forge II: source repair, forward transport collapse and arithmetic rigidity"
+    }
+  ],
+  "roots_off_main": [
+    153,
+    154,
+    157,
+    178
+  ],
+  "edges_note": "child covered_by ancestor-tips; computed from git rev-list set-membership vs base_main, not PR base labels",
+  "prs": {
+    "153": {
+      "head": "c8ed4929cb4659de5dfbd8c8c11475e723ec2c2d",
+      "branch": "research/direct-quotient-pontryagin-transfer-2026-10-17",
+      "unique_commits": 11,
+      "covered_by_tips": [
+        155,
+        176
+      ],
+      "is_terminal_tip": false,
+      "title": "Projector-first authentic Suzuki Schur gate and source-indexed Bost\u2013Connes transfer"
+    },
+    "154": {
+      "head": "e9e09201b4414ed6e5e98183bde1b150ef74fdb2",
+      "branch": "research/prime-hinge-chiral-edge-relative-jump-2026-10-17",
+      "unique_commits": 26,
+      "covered_by_tips": [
+        163,
+        181,
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "SOURCE-CIRCUIT: genuine Gamma stabilizes prime-2 chiral edge and exact endpoint phase lock"
+    },
+    "155": {
+      "head": "1a84799575ca38a33ed552cf94a0850b5632525e",
+      "branch": "research/piecewise-suzuki-certified-resolvent-2026-10-17",
+      "unique_commits": 35,
+      "covered_by_tips": [
+        155
+      ],
+      "is_terminal_tip": true,
+      "title": "Source-exact prime-hinge Suzuki integrals and infinite K-Riesz coercivity/no-go"
+    },
+    "156": {
+      "head": "b49904ca529de4204e602c415842159fe7a3ebf6",
+      "branch": "research/source-covariant-ims-fucc-resonance-2026-10-17",
+      "unique_commits": 41,
+      "covered_by_tips": [
+        163,
+        181,
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "Research: source-covariant SUCC/FUCC IMS and finite-band Weil witness constraint"
+    },
+    "157": {
+      "head": "1bcebd265ee78ae6faef5995467df6c1d85b42cf",
+      "branch": "research/prime-jet-genesis-affine-rigidity-2026-10-17",
+      "unique_commits": 2,
+      "covered_by_tips": [
+        167,
+        173
+      ],
+      "is_terminal_tip": false,
+      "title": "PJG: prime-jet convolution, affine rigidity, and profinite-index source reconstruction"
+    },
+    "158": {
+      "head": "a60e52a05459b619f2c8cbf557636f4a76b68e65",
+      "branch": "research/source-jump-spectral-polar-schur-2026-10-17",
+      "unique_commits": 61,
+      "covered_by_tips": [
+        163,
+        181,
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "Research: original Gamma\u2013FUCC spectral cutoff, exact rank-two polar Schur and finite Fourier certificate"
+    },
+    "159": {
+      "head": "6c3f768de3cca5c494ec46681f8997b28e482608",
+      "branch": "research/hidden-memory-schur-telescope-2026-10-17",
+      "unique_commits": 82,
+      "covered_by_tips": [
+        163,
+        181,
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "Research: source-generated hidden-memory Schur telescope, dyadic tail and delayed-observer no-go"
+    },
+    "160": {
+      "head": "b9bb7324e7e7ccbc51e6fe3c5af61d08e238911e",
+      "branch": "research/gamma-fucc-finite-bath-fredholm-2026-10-17",
+      "unique_commits": 103,
+      "covered_by_tips": [
+        181,
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "GAMMA-BATH: original prime-2 partial involution, OU Fredholm and source Gamma-rung polarity"
+    },
+    "161": {
+      "head": "eb62620300add80f8b38ebf0f7cd54c2a3c5ae36",
+      "branch": "research/prime-two-surplus-dual-resolvent-2026-10-17",
+      "unique_commits": 86,
+      "covered_by_tips": [
+        163
+      ],
+      "is_terminal_tip": false,
+      "title": "SOURCE-EDGE: genuine prime-2 arithmetic high surplus and exact Schur dual savings"
+    },
+    "162": {
+      "head": "3512c24bd582f8572d98bc0728d2cf947b7e7d2f",
+      "branch": "research/source-minimality-clock-carry-renewal-2026-10-17",
+      "unique_commits": 5,
+      "covered_by_tips": [
+        167,
+        173
+      ],
+      "is_terminal_tip": false,
+      "title": "SM: clock-source cofinality, carry/CRT compiler, renewal rigidity, and isozero no-go"
+    },
+    "163": {
+      "head": "f038076a377b8906789994524664023bc8dd871f",
+      "branch": "research/full-four-prime-residual-schur-2026-10-17",
+      "unique_commits": 107,
+      "covered_by_tips": [
+        163
+      ],
+      "is_terminal_tip": true,
+      "title": "SOURCE-FOUR: authentic arithmetic center/edge residual Gram and signed Suzuki S4 enclosure"
+    },
+    "164": {
+      "head": "0fa1fb4e05acbed9bee48f865ddf7e9933f049dc",
+      "branch": "research/authentic-fredholm-completion-witness-2026-10-17",
+      "unique_commits": 128,
+      "covered_by_tips": [
+        181,
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "Gamma completion: authentic signed Fredholm feature Gram and fifth-mode hidden-source witness"
+    },
+    "165": {
+      "head": "dea8b7f982fd3eb2361ccd5a12d360bcadfa3689",
+      "branch": "research/orbit-clock-genesis-lcm-mobius-2026-10-17",
+      "unique_commits": 6,
+      "covered_by_tips": [
+        167,
+        173
+      ],
+      "is_terminal_tip": false,
+      "title": "OCG: source-free orbit threshold, LCM/M\u00f6bius prime jets, and continuous-clock no-go"
+    },
+    "166": {
+      "head": "9b6833569d9baf8407faf8d5dff860bb0ff2e8de",
+      "branch": "research/tessaiga-iroh-clock-factorial-2026-10-17",
+      "unique_commits": 13,
+      "covered_by_tips": [
+        167
+      ],
+      "is_terminal_tip": false,
+      "title": "TESSAIGA \u00d7 IROH: exact factorial\u2013LCM duality, Mertens Green response and RH-hard sensitivity"
+    },
+    "167": {
+      "head": "e1b1676202410dc206791d693749f047a0fefeed",
+      "branch": "research/maximal-source-entropy-2026-10-18",
+      "unique_commits": 16,
+      "covered_by_tips": [
+        167
+      ],
+      "is_terminal_tip": true,
+      "title": "MSN: maximally incompressible source vs free orbits and continuous clock factors"
+    },
+    "168": {
+      "head": "089467b38e5ae2f096dba49a91ab96e9ff48c671",
+      "branch": "research/gamma-cancellation-packets-2026-10-18",
+      "unique_commits": 135,
+      "covered_by_tips": [
+        181,
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "GPK: finite genuine Gamma packet repairs Suzuki fifth-mode sign"
+    },
+    "169": {
+      "head": "64aa0810d9016c9c6948034d0543424f46db011e",
+      "branch": "research/connes-oriented-local-trace-2026-10-18",
+      "unique_commits": 38,
+      "covered_by_tips": [
+        176
+      ],
+      "is_terminal_tip": false,
+      "title": "Connes local scaling trace: genuine id\u00e8le places, half-density orientation and obstruction controls"
+    },
+    "170": {
+      "head": "d479e5007cb253facf77b6926547b2d490f21fd4",
+      "branch": "research/gamma-boundary-form-covariance-2026-10-18",
+      "unique_commits": 144,
+      "covered_by_tips": [
+        181,
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "TBF: form-covariant Gamma/prime transport and exact rank-four boundary anomaly"
+    },
+    "171": {
+      "head": "8c46cca801b57a6381dfac08e41731ca70d38904",
+      "branch": "research/infinite-gamma-carleman-boundary-2026-10-18",
+      "unique_commits": 165,
+      "covered_by_tips": [
+        181,
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "IGC: entire genuine Gamma tower forms a noncompact Carleman boundary, with H\u00b9\u2080 tail control"
+    },
+    "172": {
+      "head": "793f559ecf4fee9c9b03b98020bb20e3d7e36f3e",
+      "branch": "research/oriented-mobius-adelic-descent-2026-10-18",
+      "unique_commits": 71,
+      "covered_by_tips": [
+        176
+      ],
+      "is_terminal_tip": false,
+      "title": "MINUS BEFORE COUNTING \u2014 M\u00f6bius orientation, full Tate prime towers, and genuine Connes local trace"
+    },
+    "173": {
+      "head": "a2ea6859416f0cb6a2939ec577453c6ea9227a84",
+      "branch": "research/bidirectional-cut-hilbert-2026-10-18",
+      "unique_commits": 9,
+      "covered_by_tips": [
+        173
+      ],
+      "is_terminal_tip": true,
+      "title": "BDC: forward/backward Hilbert cut, exact Basel\u2013Jordan clock square root, and residual no-go"
+    },
+    "174": {
+      "head": "6fb1dba87ed273350a636b14b248fccacfb88934",
+      "branch": "research/gaussian-halfdensity-kresidual-2026-10-18",
+      "unique_commits": 188,
+      "covered_by_tips": [
+        181,
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "GKR: Gaussian two-SUCC half-density controls and authentic clamped K-relative Suzuki response"
+    },
+    "175": {
+      "head": "8216c6fc042704aecd5fb7872facd681216e4be7",
+      "branch": "research/equivariant-redundancy-weil-2026-10-18",
+      "unique_commits": 106,
+      "covered_by_tips": [
+        176
+      ],
+      "is_terminal_tip": false,
+      "title": "Equivariant redundancy \u2192 homotopy-defect Weil prime trace (source-faithful no-ghost gate)"
+    },
+    "176": {
+      "head": "a17197697c0ea0259592500b233419fbedf691cf",
+      "branch": "research/mobius-index-infinity-2026-10-18",
+      "unique_commits": 137,
+      "covered_by_tips": [
+        176
+      ],
+      "is_terminal_tip": true,
+      "title": "MII: M\u00f6bius-positive FUCC sieve, SUCC index at infinity, and source-weighted clock transport"
+    },
+    "177": {
+      "head": "f309d9104ba480c1999c962af1df7c50f19e1bfe",
+      "branch": "research/original-continuum-residual-schur-2026-10-18",
+      "unique_commits": 221,
+      "covered_by_tips": [
+        181,
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "OCR: complete original Suzuki continuum residual and source-certified four-mode Schur bounds"
+    },
+    "178": {
+      "head": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+      "branch": "research/institute-nucleus-2026-10-18",
+      "unique_commits": 1,
+      "covered_by_tips": [
+        180
+      ],
+      "is_terminal_tip": false,
+      "title": "Institute nucleus: causal Lean, atomic/Haar classification and Schur obstruction"
+    },
+    "179": {
+      "head": "81684b4b8956f9f5da56c376ba7e4339277eb665",
+      "branch": "research/academic-transmutation-2026-10-18",
+      "unique_commits": 222,
+      "covered_by_tips": [
+        182
+      ],
+      "is_terminal_tip": false,
+      "title": "Research: exact forgetting, arithmetic nonidentification and authentic Gamma audit"
+    },
+    "180": {
+      "head": "b40601fc44584da249d2cc894126edd07cce3eb4",
+      "branch": "research/round2-morphism-2026-10-18",
+      "unique_commits": 6,
+      "covered_by_tips": [
+        180
+      ],
+      "is_terminal_tip": true,
+      "title": "Forward-only disjointness, completion debt and nondeterministic causal descent"
+    },
+    "181": {
+      "head": "a84d2ed9767b893ed6f698cefd92f8de190643b4",
+      "branch": "research/round2-signed-2026-10-18",
+      "unique_commits": 222,
+      "covered_by_tips": [
+        181
+      ],
+      "is_terminal_tip": true,
+      "title": "Use the full prime-two inverse for the original signed Schur bound"
+    },
+    "182": {
+      "head": "e7938edc24feb2528f0c5d39aa6d652d60539f3b",
+      "branch": "research/theorem-forge-ii-2026-10-19",
+      "unique_commits": 224,
+      "covered_by_tips": [
+        182
+      ],
+      "is_terminal_tip": true,
+      "title": "Theorem Forge II: source repair, forward transport collapse and arithmetic rigidity"
+    }
+  }
+}

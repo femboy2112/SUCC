@@ -21,6 +21,17 @@ hypothesis**. RH is a demanding downstream application, not SUCC's definition.
 > and no positive Hilbert covariance is identified with the signed completed Weil form. See the
 > [claim index](docs/CLAIM_INDEX.md) and [claim ledger](docs/CLAIM_LEDGER.md).
 
+**Academic Main IV integration (2026-10-18):** the 30 stacked draft PRs **#153–#182** (foundations,
+arithmetic, operator theory, and the two original-source inverses) consolidated history-preserving into
+`main` from `610efac` over 8 ancestry-aware `--no-ff` merges. Navigation:
+[integration audit](docs/SUCC_ACADEMIC_MAIN_IV_INTEGRATION_AUDIT_2026-10-18.md) ·
+[dependency graph](docs/SUCC_ACADEMIC_MAIN_IV_DEPENDENCY_GRAPH.json) ·
+[merge coverage](docs/SUCC_ACADEMIC_MAIN_IV_MERGE_COVERAGE.json). An independent six-dimension hostile
+audit returned **GO-WITH-CORRECTIONS** with no firewall breach and no zeta-zero construction input. The two
+prime-two inverse corrections (#181, #182) are **alternative** enclosures of the same Schur residual — take
+the better single bound, **never the sum**. **RH remains OPEN; `S₄ = A₄ − R₄` is OPEN (AMBIGUOUS).** No
+positive Hilbert covariance is identified with the signed completed Weil form.
+
 **Institute Round II:** [execution and proof-authority report](research/2026-10-18/ROUND2_EXECUTION_REPORT.md), [forward-only operator manuscript](research/2026-10-18/ROUND2_OPERATORS.md), and [completion-cost theorems](research/2026-10-18/ROUND2_COMPLETION.md). Thirteen new core-Lean declarations; source-signed analysis stays on its separate continuation. RH remains open.
 
 **Institute nucleus research checkpoint (2026-10-18):**
