@@ -6,11 +6,12 @@
   "run": {
     "method": "local standalone module and identical test/probe source, no complete SUCC checkout",
     "python": "3.13.5",
-    "command_tests": "PYTHONPATH=/mnt/data/abc_succ_work python -m unittest discover -s /mnt/data/abc_succ_work/tests -p 'test_*.py' -q",
-    "new_tests_passed": 11,
+    "command_tests": "PYTHONPATH=/mnt/data/abc_succ_work python -m unittest discover -s /mnt/data/abc_succ_work/tests -p 'test_*.py' -v",
+    "new_tests_passed": 14,
     "new_tests_failed": 0,
     "full_succ_suite": "NOT RUN; repository was not available to local container",
-    "command_probe": "PYTHONPATH=/mnt/data/abc_succ_work python scripts/abc_clock_green_tao_probe.py --limit 1200"
+    "command_probe": "PYTHONPATH=/mnt/data/abc_succ_work python scripts/abc_clock_green_tao_probe.py --limit 1200",
+    "validation_scope": "Only self-contained new files executed in Python3.13.5; full SUCC checkout/CI not run here."
   },
   "census": {
     "training_c": "3..600",
@@ -59,12 +60,35 @@
       64
     ],
     "nonprime_c_over_rad": "32/21",
-    "primitive_p2_depth2_local_exact_probability": "1/12"
+    "primitive_p2_depth2_local_exact_probability": "1/12",
+    "five_prime_progression": [
+      5,
+      11,
+      17,
+      23,
+      29
+    ],
+    "five_prime_shadow_fan_unique_lifts": 4,
+    "profinite_p2_local_energy_ge_2_to_k": "2^(-k), for k>=1"
   },
   "claims": {
-    "proven": "elementary local clock law; ris moment; subquadratic exceptional-triple bound; prime 3AP energy contrast",
-    "external": "Green-Tao prime progression infinitude (Annals 2008)",
+    "proven": "elementary local clock law; ris moment; subquadratic exceptional-triple bound; prime 3AP energy contrast; exact profinite product critical s=1 theorem; canonical monomial exponent layers; quadratic prime AP shadow fan",
+    "external": "Green-Tao prime progression infinitude (Annals 2008); Bernert Browning Lichtman Teräväinen 2026 bound O(X^(3/5+delta)) for 0<lambda<1",
     "unverified": "global ABC bound; high-depth W-trick transference; theorem novelty; RH/Weil positivity"
   },
-  "caution": "Reported validation is restricted to self-contained new files, not SUCC full-suite CI. Finite enumeration is a lower-bound census, not universal ABC evidence."
+  "caution": "Reported validation is restricted to self-contained new files, not SUCC full-suite CI. Finite enumeration is a lower-bound census, not universal ABC evidence.",
+  "literature_benchmark": {
+    "title": "Bounds on the exceptional set in the abc conjecture",
+    "authors": [
+      "Bernert",
+      "Browning",
+      "Lichtman",
+      "Teräväinen"
+    ],
+    "year": 2026,
+    "primary_source": "https://arxiv.org/html/2410.12234",
+    "theorem_1_3": "N_lambda(X) << X^(3/5+delta) for 0<lambda<1",
+    "theorem_1_2": "N_lambda(X) << X^((23lambda+3)/40+delta) for 0<lambda<=2",
+    "verdict": "Our moment-bound exponent is an inferior baseline, not novel"
+  }
 }
