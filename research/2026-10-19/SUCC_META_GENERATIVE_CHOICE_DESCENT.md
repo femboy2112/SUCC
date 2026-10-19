@@ -145,7 +145,7 @@ V(o,p):=\exists s:S,\;q(s)=o\wedge F(s,p).
 
 Then `F(s,p)⇒V(q(s),p)` with witness `s`. If `V(q(s),p)`, choose the **already furnished existential proof witness** `t` in the proof, with `q(t)=q(s)` and `F(t,p)`; compatibility gives `F(s,p)`. No globally computed `pick:O→S` has been constructed. □
 
-**Lean location:** the new `support_transition_exists_choice_free` and `support_transport_iff_fiber_invariance_choice_free` declarations in `formal/EODCS_RelationalChoice.lean`.
+**Lean location:** the new `support_transition_exists_choice_free` and `support_transport_iff_fiber_invariance_choice_free` declarations in `formal/MetaChoiceRelationalDescent.lean`, imported from the byte-frozen `formal/EODCS_RelationalChoice.lean` via the dedicated pinned compilation workflow. The original EODCS III source is unchanged.
 
 Existing `support_transition_exists_of_fiber_invariance` is preserved for backwards compatibility, although its `surj` and `Classical.choose` inputs were unnecessary to get this weaker *relation-valued* objective.
 
@@ -323,7 +323,7 @@ This schema extends `docs/CARRIER_ATLAS.md`, not a replacement for it. A proven 
 |---|---|---|---|
 | MC-0 | “Choice is trivial” = witnessed dependent-type choice | projections construct a choice function from supplied dependent pairs | **CLASSICAL/CONSTRUCTIVE**, with *witnessed* domain only |
 | MC-FALSE-AC | Full internal choice may be assumed while LEM need not hold | Diaconescu's theorem in an elementary topos | **REFUTED in that joint interpretation** |
-| MC-1 | Support-compatible relation factors over observation quotient without AC or surjectivity | explicit existential pushforward; Lean strengthening added | **PROVED ON PAPER; Lean compilation pending check** |
+| MC-1 | Support-compatible relation factors over observation quotient without AC or surjectivity | explicit existential pushforward; Lean strengthening added | **PROVED PAPER / LEAN KERNEL VERIFIED on dedicated imported gate** |
 | MC-1E | May and common-possible coincide at every report without surjectivity | unreachable report gives `May=⊥`, `Common=⊤` | **REFUTED; repaired on image(q)** |
 | MC-2 | Every locally satisfiable edge transport glues globally | odd triangle; verified parity obstruction | **REFUTED** |
 | MC-3 | Finite `F_2` graph transport descends iff all closed-walk parity vanishes | spanning-forest proof and exact finite oracle | **CLASSICAL PROVED PAPER; finite tests pending CI** |
@@ -336,7 +336,7 @@ No proof-status promotion from a finite test, a user-level analogy, or a shared-
 
 ## 8. Research campaigns with explicit verdict-changing probes
 
-**A. Relational choice removal (immediate).** Run the pinned Lean compiler on `formal/EODCS_RelationalChoice.lean` and inspect axioms of the new theorems. Verify that the choice-free declarations do not invoke the `Classical.choose` path. Preserve the older theorem and compare normal forms under surjective and nonsurjective observations.
+**A. Relational choice removal (verified base; further probes open).** Preserve the byte-frozen `formal/EODCS_RelationalChoice.lean`, compile it to an importable `.olean`, compile `formal/MetaChoiceRelationalDescent.lean`, and inspect axioms of the new theorems. Verify that the choice-free declarations do not invoke the `Classical.choose` path. Preserve the older theorem and compare normal forms under surjective and nonsurjective observations.
 
 **B. Fiber/counterfactual transport.** Add typed refinements of `MayReport` and `CommonPossible` for reachable-image contexts; independently mutate support versus probability distributions, and verify that support descent does not imply statistical descent.
 
@@ -379,6 +379,6 @@ The long-term point is not that global truth becomes optional; it is that **the 
 - The Stacks Project, [Sheaves §6.7](https://stacks.math.columbia.edu/tag/006S) and the matching-family/equalizer definitions.
 - [nLab: internal logic](https://ncatlab.org/nlab/show/internal%2Blogic) for the opens/Heyting interpretation.
 - S. Mac Lane and I. Moerdijk, *Sheaves in Geometry and Logic* (1992), established categorical logical framework (not claimed new here).
-- This repository: `formal/EODCS_RelationalChoice.lean`, `formal/EODCS_CausalDescent.lean`, `formal/EODCS_CarrierIndexed.lean`, `docs/CLAIM_SUPPLEMENT_NO_GHOST.md`, `docs/OBSERVER_PROOF_ACCESS.md` and `research/2026-10-15/SOURCE_FIELD_INVERSE_LIMIT_CALCULUS.md`.
+- This repository: `formal/EODCS_RelationalChoice.lean` (frozen), `formal/MetaChoiceRelationalDescent.lean` (new imported module), `formal/EODCS_MetaChoiceParity.lean`, `formal/EODCS_CausalDescent.lean`, `formal/EODCS_CarrierIndexed.lean`, `docs/CLAIM_SUPPLEMENT_NO_GHOST.md`, `docs/OBSERVER_PROOF_ACCESS.md` and `research/2026-10-15/SOURCE_FIELD_INVERSE_LIMIT_CALCULUS.md`.
 
 **Attribution boundary:** the philosophy and specific SUCC research priorities originate in the author's program. Diaconescu, sheaf logic, graph cohomology, and the local-to-global descent theorems are classical. The choice-free Lean strengthening and exact finite program are *new to this repository round*, not an assertion of academic priority. Only successful compilation, test receipts, and later independent mathematical review can raise their formal or novelty statuses.
