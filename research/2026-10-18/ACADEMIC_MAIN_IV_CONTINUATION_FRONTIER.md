@@ -105,3 +105,30 @@ be a genuine (still first-window, still not all-radii, still not RH) positivity 
 - A certified positive S₄ first-window margin is a first-window theorem, **not RH**.
 - Non-main branch, draft PR, no merge / tag / license / external publication without maintainer
   authorization; do not alter the YEAN repository without separate authorization.
+
+---
+
+## Delivered this round (2026-10-18) — first exact instrument per track
+
+All three are exact (Fraction / sound interval; float is never a certificate), carry `RH_proved:False`,
+use no zeta-zero ordinate input, and were independently re-verified by the coordinator. **RH stays OPEN;
+S₄ sign stays OPEN (AMBIGUOUS).**
+
+- **A — `observational_succ/nonvanishing_transport.py`** (`tests/test_nonvanishing_transport.py`, 17 ok).
+  Transport criterion + diagonal Γ heat-kernel witness: rank-one `c_J` strictly increases
+  `c₁₆≈1.5515 → c₃₂≈1.5727 → c₆₄≈1.5804`, exact Cauchy remainders `≤0.173/0.036/0.0056`, structural
+  floor `c_∞ ≥ exp(−1/256) > 0`. Atomic–Haar hostile control correctly **REFUSED** (coefficient → 0).
+  **VERIFIED-EXACT-MODEL + HOSTILE-CONTROL-REFUSED.** OPEN: non-diagonal Suzuki OU persistence (hyp iii).
+
+- **B — `observational_succ/repair_control_pareto.py`** (`tests/test_repair_control_pareto.py`, 11 ok).
+  Exact 3-way Pareto frontier (retained-info / cost / fidelity): 7 non-dominated rational vertices;
+  classical corner `(33/50,0,1)` recovered and verified unreachable at zero cost; acausal + premature
+  falsifiers rejected. **VERIFIED-EXACT-MODEL** (corner CLASSICAL). Caveat: order-2 (Gini) info measure,
+  not Shannon; static schedules.
+
+- **C — `observational_succ/prime_two_directional_holdout.py`** (`tests/test_prime_two_directional_holdout.py`, 16 ok).
+  Fresh holdout (B fit J8/M80, eval J24/M192): B-normalized corrected lower is **negative-definite both
+  sectors** (det>0 ∧ trace<0, exact) → `fresh_holdout_flips_S4_sign=False`, **S₄ OPEN**. Never-sum rule
+  enforced in code (`better_single_enclosure` / `reject_double_count`). **VERIFIED-EXACT-MODEL**; refutes
+  only "a fresh holdout flips the first-window sign". Binding constraint still the `1/κ=50` amplification
+  / sharper even-parity `κ′`.
