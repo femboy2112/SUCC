@@ -1,0 +1,6 @@
+2026-10-18 initial inline J8/M80 replay: mathematical computation and assertions returned; receipt serialization failed. No receipt was produced and this is NOT a successful saved run.
+Command: /tmp/succ-institute-venv/bin/python inline script calling source_schur_improvement(), then json.dumps(default=str); RLIMIT_CPU=120, RLIMIT_AS=1GiB; sys.set_int_max_str_digits(50000).
+Failure:
+ValueError: Exceeds the limit (50000 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
+Location: fractions.py __str__, invoked by json.dumps on an exact all-high Bessel-budget Fraction.
+Repair: exact calculations remain Fraction; massive source-budget values are exported as outward rational brackets plus SHA256 of their exact signed numerator/denominator hex encoding. Complete Schur and saving matrices retain exact rational strings. Full reproducibility uses the formula implementation, never the decimal display.

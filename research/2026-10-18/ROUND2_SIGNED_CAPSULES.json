@@ -1,0 +1,306 @@
+[
+  {
+    "access": {
+      "constructible_witness": "Exact rational matrices and clamped polynomial primitives in J8/J24 receipts",
+      "execution_cost": "J8 18.67s27MiB; J24 177.09s43MiB; hard240CPU seconds1GiB",
+      "oracle": "Fraction arithmetic plus frozen outward source intervals",
+      "permitted_observations": "Original prime2, realGamma, contact and both poles; no nontrivial zero input",
+      "probe_discrimination": "Whole continuum residual, full center/edge Gram, exact Sylvester minors",
+      "proof_theory": "Paper proof and exact instance arithmetic; no Lean declarations"
+    },
+    "adversarial": {
+      "domain_tests": "Primitive moments, fixed parity, H1/H2 zero-extension and true shift cells checked",
+      "negative_examples": "New signed lower blocks remain negative definite; actual signed form is undecided",
+      "replay": "python scripts/full_prime_resolvent_probe.py --source --J 24 --M 192 --output receipt.json; python -m unittest discover -s tests -p test_full_prime_resolvent.py",
+      "source_mutations": "Wrong prime lag/weight, Gamma count, half-density, contact or sourceSHA rejected"
+    },
+    "authority": "PAPER_PROVED",
+    "claim_id": "R2S-SOURCE",
+    "comparison_maps": "D_sigma >= compression of kappa I+(12/25)(I-A_log2); ambient inverse only via variational relaxation",
+    "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+    "dependencies": [],
+    "evidence": [
+      {
+        "kind": "PAPER_PROOF",
+        "path": "research/2026-10-18/ROUND2_SIGNED_PRIME_RESOLVENT.md",
+        "sha256": "9413f6f2146f0bdb5366b88d5118769490ada35c4cb9f74461ab3b631354b045"
+      },
+      {
+        "kind": "FROZEN_SOURCE",
+        "path": "observational_succ/source_weil_hierarchy.py",
+        "sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b"
+      },
+      {
+        "kind": "INHERITED_SOURCE_DEPENDENCY",
+        "path": "observational_succ/original_continuum_residual.py",
+        "sha256": "a9b7b6087280a3f6a2feecd7d51d2c3ee79209ab93918d16e8f16a422ba9063e"
+      },
+      {
+        "kind": "INHERITED_SOURCE_DEPENDENCY",
+        "path": "observational_succ/clamped_k_residual_bridge.py",
+        "sha256": "690c64ca81be77d330b86f1809c9587d2116a14d4dd8ddd66cba047287af3522"
+      },
+      {
+        "kind": "INHERITED_SOURCE_DEPENDENCY",
+        "path": "observational_succ/suzuki_legendre_source.py",
+        "sha256": "15b82e7833e59d70cffe3cb00cd1ed3b96953a9a6fcc156cbdf0aab4f2ffe198"
+      },
+      {
+        "kind": "INHERITED_SOURCE_DEPENDENCY",
+        "path": "observational_succ/tate_suzuki_shorting.py",
+        "sha256": "57fbbf3b2876d5e2e4a156d0f7a951595997d2eb3f7911cd1720e2662c8b8d42"
+      },
+      {
+        "kind": "INHERITED_SOURCE_DEPENDENCY",
+        "path": "provenance/IMPORT_MANIFEST.json",
+        "sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+      }
+    ],
+    "hypotheses": [
+      "Interval I=(-1/2,1/2); authentic original source normalization; zero extension and Lebesgue measure"
+    ],
+    "next_discriminating_experiment": "Fit lawful clamped trials in the non-scalar inverse metric with complete source residual",
+    "observation_morphisms": "Original derivative u maps to anchored primitive F=Vu; actual source action projected to E_sigma",
+    "operations_relations": "Primitive V, four moment projection Q_E, fixed reflection parity, exact prime shift A_log2, closed source form and inverse",
+    "prior_art": "Fourier-Legendre/Bessel estimates, Young inequality and variational compression are classical; PR161 supplied source mismatch comparator; new full residual application has project novelty only",
+    "proof_debt": "No Lean formalization or external blind review; actual S4 positivity remains open",
+    "scope": "UNIVERSAL",
+    "source": "Original completed signed Suzuki source, arXiv:2606.09096v3; frozen source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "source_epoch": 177,
+    "source_identity": "Suzuki source Git blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178 at base f309d9104ba480c1999c962af1df7c50f19e1bfe; no PR178/179 imports",
+    "statement": "On smooth zero-mean derivative tests in the first-prime window, the completed signed source equals the primitive FourierGamma plus exact contact, prime2 and two-pole form; the stated Q completion is its closed primitive extension.",
+    "target_carrier": "E_sigma inside zero-extended L2((-1/2,1/2)); source closed Fourier form domain Q",
+    "topology_measure": "Lebesgue L2; Gamma weighted Fourier form norm; K=V*V on derivative coordinates",
+    "universal_property": "Friedrichs closure and variational inverse restricted to the declared parity carrier"
+  },
+  {
+    "access": {
+      "constructible_witness": "Exact rational matrices and clamped polynomial primitives in J8/J24 receipts",
+      "execution_cost": "J8 18.67s27MiB; J24 177.09s43MiB; hard240CPU seconds1GiB",
+      "oracle": "Fraction arithmetic plus frozen outward source intervals",
+      "permitted_observations": "Original prime2, realGamma, contact and both poles; no nontrivial zero input",
+      "probe_discrimination": "Whole continuum residual, full center/edge Gram, exact Sylvester minors",
+      "proof_theory": "Paper proof and exact instance arithmetic; no Lean declarations"
+    },
+    "adversarial": {
+      "domain_tests": "Primitive moments, fixed parity, H1/H2 zero-extension and true shift cells checked",
+      "negative_examples": "New signed lower blocks remain negative definite; actual signed form is undecided",
+      "replay": "python scripts/full_prime_resolvent_probe.py --source --J 24 --M 192 --output receipt.json; python -m unittest discover -s tests -p test_full_prime_resolvent.py",
+      "source_mutations": "Wrong prime lag/weight, Gamma count, half-density, contact or sourceSHA rejected"
+    },
+    "authority": "PAPER_PROVED",
+    "claim_id": "R2S-HIGH",
+    "comparison_maps": "D_sigma >= compression of kappa I+(12/25)(I-A_log2); ambient inverse only via variational relaxation",
+    "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+    "dependencies": [
+      "R2S-SOURCE"
+    ],
+    "evidence": [
+      {
+        "kind": "PAPER_PROOF",
+        "path": "research/2026-10-18/ROUND2_SIGNED_PRIME_RESOLVENT.md",
+        "sha256": "9413f6f2146f0bdb5366b88d5118769490ada35c4cb9f74461ab3b631354b045"
+      },
+      {
+        "kind": "EXACT_AUDIT_IMPLEMENTATION",
+        "path": "observational_succ/full_prime_resolvent.py",
+        "sha256": "9514a7e172e032f95bba39d2ceb1ab09e6fb4e8712df3c9382c307aedf27de7b"
+      },
+      {
+        "kind": "ADVERSARIAL_TESTS",
+        "path": "tests/test_full_prime_resolvent.py",
+        "sha256": "c6fd503815cdea2b73956f2c11ec8b8592d87f7c3610ec6d85cb049f4b43fcd1"
+      },
+      {
+        "kind": "INDEPENDENT_IMPLEMENTATION_COMPARISON",
+        "path": "observational_succ/tate_weighted_bessel_four_schur.py",
+        "sha256": "7191b811125821e96dccb1f34eb391c8272518e9f697595fbea754eeaffd3659"
+      }
+    ],
+    "hypotheses": [
+      "Fixed primitive parity sigma; four zero moments; genuine b=log2 and w=b/sqrt2"
+    ],
+    "next_discriminating_experiment": "Fit lawful clamped trials in the non-scalar inverse metric with complete source residual",
+    "observation_morphisms": "Original derivative u maps to anchored primitive F=Vu; actual source action projected to E_sigma",
+    "operations_relations": "Primitive V, four moment projection Q_E, fixed reflection parity, exact prime shift A_log2, closed source form and inverse",
+    "prior_art": "Fourier-Legendre/Bessel estimates, Young inequality and variational compression are classical; PR161 supplied source mismatch comparator; new full residual application has project novelty only",
+    "proof_debt": "No Lean formalization or external blind review; actual S4 positivity remains open",
+    "scope": "UNIVERSAL",
+    "source": "Original completed signed Suzuki source, arXiv:2606.09096v3; frozen source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "source_epoch": 177,
+    "source_identity": "Suzuki source Git blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178 at base f309d9104ba480c1999c962af1df7c50f19e1bfe; no PR178/179 imports",
+    "statement": "For every F in Q intersect E_sigma, q(F)>=kappa_sigma||F||^2+w(||F_C||^2+||F_R-T_b F_L||^2), with kappa_evenprimitive=63/500 and kappa_oddprimitive=153/500.",
+    "target_carrier": "E_sigma inside zero-extended L2((-1/2,1/2)); source closed Fourier form domain Q",
+    "topology_measure": "Lebesgue L2; Gamma weighted Fourier form norm; K=V*V on derivative coordinates",
+    "universal_property": "Friedrichs closure and variational inverse restricted to the declared parity carrier"
+  },
+  {
+    "access": {
+      "constructible_witness": "Exact rational matrices and clamped polynomial primitives in J8/J24 receipts",
+      "execution_cost": "J8 18.67s27MiB; J24 177.09s43MiB; hard240CPU seconds1GiB",
+      "oracle": "Fraction arithmetic plus frozen outward source intervals",
+      "permitted_observations": "Original prime2, realGamma, contact and both poles; no nontrivial zero input",
+      "probe_discrimination": "Whole continuum residual, full center/edge Gram, exact Sylvester minors",
+      "proof_theory": "Paper proof and exact instance arithmetic; no Lean declarations"
+    },
+    "adversarial": {
+      "domain_tests": "Primitive moments, fixed parity, H1/H2 zero-extension and true shift cells checked",
+      "negative_examples": "New signed lower blocks remain negative definite; actual signed form is undecided",
+      "replay": "python scripts/full_prime_resolvent_probe.py --source --J 24 --M 192 --output receipt.json; python -m unittest discover -s tests -p test_full_prime_resolvent.py",
+      "source_mutations": "Wrong prime lag/weight, Gamma count, half-density, contact or sourceSHA rejected"
+    },
+    "authority": "PAPER_PROVED",
+    "claim_id": "R2S-INVERSE",
+    "comparison_maps": "D_sigma >= compression of kappa I+(12/25)(I-A_log2); ambient inverse only via variational relaxation",
+    "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+    "dependencies": [
+      "R2S-HIGH"
+    ],
+    "evidence": [
+      {
+        "kind": "PAPER_PROOF",
+        "path": "research/2026-10-18/ROUND2_SIGNED_PRIME_RESOLVENT.md",
+        "sha256": "9413f6f2146f0bdb5366b88d5118769490ada35c4cb9f74461ab3b631354b045"
+      },
+      {
+        "kind": "IMPLEMENTATION",
+        "path": "observational_succ/full_prime_resolvent.py",
+        "sha256": "9514a7e172e032f95bba39d2ceb1ab09e6fb4e8712df3c9382c307aedf27de7b"
+      },
+      {
+        "kind": "ADVERSARIAL_TESTS",
+        "path": "tests/test_full_prime_resolvent.py",
+        "sha256": "c6fd503815cdea2b73956f2c11ec8b8592d87f7c3610ec6d85cb049f4b43fcd1"
+      }
+    ],
+    "hypotheses": [
+      "Same fixed parity and kappa for D_sigma and residuals; eta>0; p_i,e_i in L2; complete source error allowances"
+    ],
+    "next_discriminating_experiment": "Fit lawful clamped trials in the non-scalar inverse metric with complete source residual",
+    "observation_morphisms": "Original derivative u maps to anchored primitive F=Vu; actual source action projected to E_sigma",
+    "operations_relations": "Primitive V, four moment projection Q_E, fixed reflection parity, exact prime shift A_log2, closed source form and inverse",
+    "prior_art": "Fourier-Legendre/Bessel estimates, Young inequality and variational compression are classical; PR161 supplied source mismatch comparator; new full residual application has project novelty only",
+    "proof_debt": "No Lean formalization or external blind review; actual S4 positivity remains open",
+    "scope": "UNIVERSAL",
+    "source": "Original completed signed Suzuki source, arXiv:2606.09096v3; frozen source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "source_epoch": 177,
+    "source_identity": "Suzuki source Git blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178 at base f309d9104ba480c1999c962af1df7c50f19e1bfe; no PR178/179 imports",
+    "statement": "For every pair of true residuals r_i=p_i+e_i in the same E_sigma with ||e_i||<=delta_i, the whole nominal B^-1 Young bound of Theorem2 controls the true high response; source interval transport gives the exact saving G.",
+    "target_carrier": "E_sigma inside zero-extended L2((-1/2,1/2)); source closed Fourier form domain Q",
+    "topology_measure": "Lebesgue L2; Gamma weighted Fourier form norm; K=V*V on derivative coordinates",
+    "universal_property": "Friedrichs closure and variational inverse restricted to the declared parity carrier"
+  },
+  {
+    "access": {
+      "constructible_witness": "Exact rational matrices and clamped polynomial primitives in J8/J24 receipts",
+      "execution_cost": "J8 18.67s27MiB; J24 177.09s43MiB; hard240CPU seconds1GiB",
+      "oracle": "Fraction arithmetic plus frozen outward source intervals",
+      "permitted_observations": "Original prime2, realGamma, contact and both poles; no nontrivial zero input",
+      "probe_discrimination": "Whole continuum residual, full center/edge Gram, exact Sylvester minors",
+      "proof_theory": "Paper proof and exact instance arithmetic; no Lean declarations"
+    },
+    "adversarial": {
+      "domain_tests": "Primitive moments, fixed parity, H1/H2 zero-extension and true shift cells checked",
+      "negative_examples": "New signed lower blocks remain negative definite; actual signed form is undecided",
+      "replay": "python scripts/full_prime_resolvent_probe.py --source --J 24 --M 192 --output receipt.json; python -m unittest discover -s tests -p test_full_prime_resolvent.py",
+      "source_mutations": "Wrong prime lag/weight, Gamma count, half-density, contact or sourceSHA rejected"
+    },
+    "authority": "EXACT_FINITE_CHECK",
+    "claim_id": "R2S-STRICT",
+    "comparison_maps": "D_sigma >= compression of kappa I+(12/25)(I-A_log2); ambient inverse only via variational relaxation",
+    "conclusion_mode": "INSTANCE_ONLY",
+    "dependencies": [
+      "R2S-INVERSE"
+    ],
+    "evidence": [
+      {
+        "kind": "EXACT_RECEIPT",
+        "path": "research/2026-10-18/ROUND2_FULL_PRIME_J8.json",
+        "sha256": "fcf50928078e512452f2a0c7d4d044eaa5ba69f29faba4877f92e7c222bd718d"
+      },
+      {
+        "kind": "EXACT_RECEIPT",
+        "path": "research/2026-10-18/ROUND2_FULL_PRIME_J24.json",
+        "sha256": "7bd25ee59e856836870b7fb856a873dd2e59e289b4630d9c9fa34d329502f04e"
+      },
+      {
+        "kind": "ADVERSARIAL_TESTS",
+        "path": "tests/test_full_prime_resolvent.py",
+        "sha256": "c6fd503815cdea2b73956f2c11ec8b8592d87f7c3610ec6d85cb049f4b43fcd1"
+      }
+    ],
+    "hypotheses": [
+      "Only the fixed rational trials and budgets recorded in the exact receipts; source error allowances unchanged"
+    ],
+    "next_discriminating_experiment": "Fit lawful clamped trials in the non-scalar inverse metric with complete source residual",
+    "observation_morphisms": "Original derivative u maps to anchored primitive F=Vu; actual source action projected to E_sigma",
+    "operations_relations": "Primitive V, four moment projection Q_E, fixed reflection parity, exact prime shift A_log2, closed source form and inverse",
+    "prior_art": "Fourier-Legendre/Bessel estimates, Young inequality and variational compression are classical; PR161 supplied source mismatch comparator; new full residual application has project novelty only",
+    "proof_debt": "No Lean formalization or external blind review; actual S4 positivity remains open",
+    "scope": "FINITE_INSTANCE",
+    "source": "Original completed signed Suzuki source, arXiv:2606.09096v3; frozen source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "source_epoch": 177,
+    "source_identity": "Suzuki source Git blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178 at base f309d9104ba480c1999c962af1df7c50f19e1bfe; no PR178/179 imports",
+    "statement": "For the exact J8/M80 and J24/M192 PR177 clamped trials at eta=1/4, both parity gains Lnew-Lold are positive definite while both new lowers are negative definite.",
+    "target_carrier": "E_sigma inside zero-extended L2((-1/2,1/2)); source closed Fourier form domain Q",
+    "topology_measure": "Lebesgue L2; Gamma weighted Fourier form norm; K=V*V on derivative coordinates",
+    "universal_property": "Friedrichs closure and variational inverse restricted to the declared parity carrier"
+  },
+  {
+    "access": {
+      "constructible_witness": "Exact rational matrices and clamped polynomial primitives in J8/J24 receipts",
+      "execution_cost": "J8 18.67s27MiB; J24 177.09s43MiB; hard240CPU seconds1GiB",
+      "oracle": "Fraction arithmetic plus frozen outward source intervals",
+      "permitted_observations": "Original prime2, realGamma, contact and both poles; no nontrivial zero input",
+      "probe_discrimination": "Whole continuum residual, full center/edge Gram, exact Sylvester minors",
+      "proof_theory": "Paper proof and exact instance arithmetic; no Lean declarations"
+    },
+    "adversarial": {
+      "domain_tests": "Primitive moments, fixed parity, H1/H2 zero-extension and true shift cells checked",
+      "negative_examples": "New signed lower blocks remain negative definite; actual signed form is undecided",
+      "replay": "python scripts/full_prime_resolvent_probe.py --source --J 24 --M 192 --output receipt.json; python -m unittest discover -s tests -p test_full_prime_resolvent.py",
+      "source_mutations": "Wrong prime lag/weight, Gamma count, half-density, contact or sourceSHA rejected"
+    },
+    "authority": "UNVERIFIED",
+    "claim_id": "R2S-SIGN",
+    "comparison_maps": "D_sigma >= compression of kappa I+(12/25)(I-A_log2); ambient inverse only via variational relaxation",
+    "conclusion_mode": "OPEN_TARGET",
+    "dependencies": [
+      "R2S-SOURCE",
+      "R2S-HIGH"
+    ],
+    "evidence": [
+      {
+        "kind": "OPEN_PROBLEM_DOSSIER",
+        "path": "research/2026-10-18/ROUND2_SIGNED_PRIME_RESOLVENT.md",
+        "sha256": "9413f6f2146f0bdb5366b88d5118769490ada35c4cb9f74461ab3b631354b045"
+      },
+      {
+        "kind": "LOWER_BOUND_FAILURE_RECEIPT",
+        "path": "research/2026-10-18/ROUND2_FULL_PRIME_J8.json",
+        "sha256": "fcf50928078e512452f2a0c7d4d044eaa5ba69f29faba4877f92e7c222bd718d"
+      },
+      {
+        "kind": "LOWER_BOUND_FAILURE_RECEIPT",
+        "path": "research/2026-10-18/ROUND2_FULL_PRIME_J24.json",
+        "sha256": "7bd25ee59e856836870b7fb856a873dd2e59e289b4630d9c9fa34d329502f04e"
+      }
+    ],
+    "hypotheses": [
+      "True original infinite high response; first window alone would still not prove RH"
+    ],
+    "next_discriminating_experiment": "Fit lawful clamped trials in the non-scalar inverse metric with complete source residual",
+    "observation_morphisms": "Original derivative u maps to anchored primitive F=Vu; actual source action projected to E_sigma",
+    "operations_relations": "Primitive V, four moment projection Q_E, fixed reflection parity, exact prime shift A_log2, closed source form and inverse",
+    "prior_art": "Fourier-Legendre/Bessel estimates, Young inequality and variational compression are classical; PR161 supplied source mismatch comparator; new full residual application has project novelty only",
+    "proof_debt": "No Lean formalization or external blind review; actual S4 positivity remains open",
+    "scope": "UNIVERSAL",
+    "source": "Original completed signed Suzuki source, arXiv:2606.09096v3; frozen source blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "source_epoch": 177,
+    "source_identity": "Suzuki source Git blob 0cc8510b71d178fc79e8d410a86d8b6014cf9178 at base f309d9104ba480c1999c962af1df7c50f19e1bfe; no PR178/179 imports",
+    "statement": "The true original first-window signed Schur form S4 is positive semidefinite.",
+    "target_carrier": "E_sigma inside zero-extended L2((-1/2,1/2)); source closed Fourier form domain Q",
+    "topology_measure": "Lebesgue L2; Gamma weighted Fourier form norm; K=V*V on derivative coordinates",
+    "universal_property": "Friedrichs closure and variational inverse restricted to the declared parity carrier"
+  }
+]

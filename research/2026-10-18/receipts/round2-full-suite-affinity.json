@@ -1,0 +1,16 @@
+{
+  "enforced_cpu": 0,
+  "previous_allowed_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "reason": "Limit inherited numerical-library threads to one CPU for the remaining full suite; source probes were single-process exact Fraction arithmetic.",
+  "running_full_suite_pid": 2591977,
+  "threads_observed": 8
+}
