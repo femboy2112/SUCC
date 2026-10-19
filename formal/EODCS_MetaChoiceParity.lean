@@ -18,7 +18,7 @@ universe u v w z
 
 /-- Witnessed dependent choice: the selector is literally the first field
 of supplied dependent witness data. No `Classical.choose` is used. -/
-theorem witnessed_dependent_choice
+def witnessed_dependent_choice
     {X : Type u} {Y : X → Type v}
     (R : (x : X) → Y x → Prop)
     (witness : (x : X) → {y : Y x // R x y}) :
@@ -46,7 +46,7 @@ theorem odd_triangle_has_no_global_section :
     ¬ (∃ a b c : Bool,
       b = !a ∧ c = !b ∧ a = !c) := by
   rintro ⟨a, b, c, hab, hbc, hca⟩
-  cases a <;> cases b <;> cases c <;> simp_all
+  cases a <;> cases b <;> cases c <;> simp at hab hbc hca
 
 /-- The parity-even control has an explicit global section. -/
 theorem even_triangle_has_global_section :
