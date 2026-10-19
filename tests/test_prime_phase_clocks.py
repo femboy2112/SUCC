@@ -6,7 +6,7 @@ from math import factorial, gcd, isqrt, prod
 from observational_succ.prime_phase_clocks import (
     PhaseClockError, aligned_primes, backward_factorial_primes, euclid_witness,
     factorial_locked, factorial_prime_power_profile, factorial_witness,
-    factorization, ghost_two_adic_pair, phase_window, prime, prime_clock_profile,
+    factorization, fixed_window_crt_law, ghost_two_adic_pair, phase_window, prime, prime_clock_profile,
     prime_prefix, primes_up_to, primorial, sqrt_window_perfect,
 )
 from observational_succ.rad_ris_transport import rad, ris
@@ -160,6 +160,42 @@ class PrimorialClockPhaseTest(unittest.TestCase):
                 self.assertEqual(window.perfectly_locked, (p - 1) % 2310 == 0)
                 self.assertEqual(window.residue_sum, len(clock_candidates)
                                  + sum((p % q) - 1 for q in clock_candidates))
+
+    def test_full_crt_phase_distribution_against_independent_residue_oracle(self):
+        from collections import Counter
+        for clocks in ((2,), (2, 3), (2, 3, 5), (2, 3, 5, 7)):
+            law = fixed_window_crt_law(clocks)
+            modulus = prod(clocks)
+            allowed = [a for a in range(1, modulus + 1) if gcd(a, modulus) == 1]
+            raw_oracle = Counter(sum(a % q for q in clocks) for a in allowed)
+            sync_oracle = Counter(sum(a % q == 1 for q in clocks) for a in allowed)
+            denominator = len(allowed)
+            self.assertEqual(law.modulus, modulus)
+            self.assertEqual(law.reduced_residue_count, denominator)
+            self.assertEqual(dict(law.residue_sum_distribution),
+                             {s: Fraction(c, denominator) for s, c in raw_oracle.items()})
+            self.assertEqual(dict(law.sync_count_distribution),
+                             {s: Fraction(c, denominator) for s, c in sync_oracle.items()})
+            self.assertEqual(law.all_locked_fraction, Fraction(1, denominator))
+            e_raw = sum((Fraction(s * c, denominator)
+                         for s, c in raw_oracle.items()), Fraction())
+            e_sync = sum((Fraction(s * c, denominator)
+                          for s, c in sync_oracle.items()), Fraction())
+            self.assertEqual(law.expected_residue_sum, e_raw)
+            self.assertEqual(law.expected_sync_count, e_sync)
+            self.assertEqual(law.variance_residue_sum,
+                             sum((Fraction(c, denominator) * (s-e_raw)**2
+                                  for s, c in raw_oracle.items()), Fraction()))
+            self.assertEqual(law.variance_sync_count,
+                             sum((Fraction(c, denominator) * (s-e_sync)**2
+                                  for s, c in sync_oracle.items()), Fraction()))
+        law = fixed_window_crt_law((2, 3, 5, 7))
+        self.assertEqual(law.reduced_residue_count, 48)
+        self.assertEqual(law.expected_sync_count, Fraction(23, 12))
+        self.assertEqual(law.expected_residue_sum, Fraction(17, 2))
+        self.assertEqual(law.variance_residue_sum, Fraction(53, 12))
+        with self.assertRaises(PhaseClockError):
+            fixed_window_crt_law((37,))
 
     def test_hostile_input_and_type_controls(self):
         for bad in (False, 0, -1, 1.5, 250000001):
