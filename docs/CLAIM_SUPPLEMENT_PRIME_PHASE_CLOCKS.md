@@ -16,7 +16,6 @@ Inherited RAD/RIS research: [RRT-01–10](CLAIM_SUPPLEMENT_RAD_RIS.md).
 | PPC-07 | Ascending genuine-prime sequences may tend to 1 in prime-field product without tending to 1 in full Zhat; factorial-locked ascending primes tend to 1 in full Zhat | CLASSICAL + EXTERNAL Dirichlet; no finite simulation establishes infinite limit |
 | PPC-08 | For prime p>2, the triple 1+(p−1)=p has ABC quality strictly <1, even with many synchronized prime clocks | PROVED LOCAL exact / refutes naive ABC quality promotion |
 | PPC-09 | Composite Euclid, wrong clock, duplicate/orientation, 2-adic ghost and invented universal completion claims fail typed hostile controls | REFUTED interpretations / finite exact counterexamples |
-
 | PPC-10 | For every fixed finite genuine-prime clock set, the entire residue-sum and phase-1 match-count distribution over primes converges to the exact independent CRT polynomial; full limiting moments follow | CLASSICAL CRT + EXTERNAL PNT-AP for prime limit; PROVED LOCAL exact rational full residue oracle; NO growing-modulus bound |
 
 **Next verification debt:** cross-prime character source/valuation laws, moving-modulus uniformity, real inequality for nontrivial primitive ABC triples, and separately original Weil-sign source positivity. No claim of academic priority, high-score physics or automatic generalization from bounded search.
