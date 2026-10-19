@@ -1,0 +1,186 @@
+{
+  "RH_proved": false,
+  "authority": "PAPER_PROOF_PLUS_EXACT_RATIONAL_CERTIFICATES",
+  "coefficient_comparison": [
+    {
+      "H1_improvement_fraction": "107/432",
+      "H2_improvement_fraction": "0",
+      "J": 1,
+      "d": 5,
+      "midpoint_H2": "2/9",
+      "new_H1": "13/48",
+      "old_H1": "9/25",
+      "old_H2": "26/125",
+      "selected_H2": "26/125"
+    },
+    {
+      "H1_improvement_fraction": "31/112",
+      "H2_improvement_fraction": "104/833",
+      "J": 2,
+      "d": 9,
+      "midpoint_H2": "2/49",
+      "new_H1": "13/112",
+      "old_H1": "13/81",
+      "old_H2": "34/729",
+      "selected_H2": "2/49"
+    },
+    {
+      "H1_improvement_fraction": "1283/5040",
+      "H2_improvement_fraction": "712/5625",
+      "J": 4,
+      "d": 17,
+      "midpoint_H2": "2/225",
+      "new_H1": "13/240",
+      "old_H1": "21/289",
+      "old_H2": "50/4913",
+      "selected_H2": "2/225"
+    },
+    {
+      "H1_improvement_fraction": "4195/18352",
+      "H2_improvement_fraction": "3464/39401",
+      "J": 8,
+      "d": 33,
+      "midpoint_H2": "2/961",
+      "new_H1": "13/496",
+      "old_H1": "37/1089",
+      "old_H2": "82/35937",
+      "selected_H2": "2/961"
+    },
+    {
+      "H1_improvement_fraction": "31203/153520",
+      "H2_improvement_fraction": "34952/947625",
+      "J": 24,
+      "d": 97,
+      "midpoint_H2": "2/9025",
+      "new_H1": "13/1520",
+      "old_H1": "101/9409",
+      "old_H2": "210/912673",
+      "selected_H2": "2/9025"
+    },
+    {
+      "H1_improvement_fraction": "206243/1064880",
+      "H2_improvement_fraction": "257032/17231625",
+      "J": 64,
+      "d": 257,
+      "midpoint_H2": "2/65025",
+      "new_H1": "13/4080",
+      "old_H1": "261/66049",
+      "old_H2": "530/16974593",
+      "selected_H2": "2/65025"
+    }
+  ],
+  "full_S4_sign_decided": false,
+  "independent_prefix_calibrations": [
+    {
+      "J": 1,
+      "frequency": "0",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 1,
+      "frequency": "1/100",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 1,
+      "frequency": "1",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 1,
+      "frequency": "7",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 1,
+      "frequency": "100",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 2,
+      "frequency": "0",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 2,
+      "frequency": "1/100",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 2,
+      "frequency": "1",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 2,
+      "frequency": "7",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 2,
+      "frequency": "100",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 8,
+      "frequency": "0",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 8,
+      "frequency": "1/100",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 8,
+      "frequency": "1",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 8,
+      "frequency": "7",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 8,
+      "frequency": "100",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 24,
+      "frequency": "0",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 24,
+      "frequency": "1/100",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 24,
+      "frequency": "1",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 24,
+      "frequency": "7",
+      "independent_interval_inside_derivative_bounds": true
+    },
+    {
+      "J": 24,
+      "frequency": "100",
+      "independent_interval_inside_derivative_bounds": true
+    }
+  ],
+  "linear_log_certificate": {
+    "constant": "13/16",
+    "local_minimum_left": "487/250",
+    "local_minimum_right": "1949/1000",
+    "positive_local_minimum_margin": "3501648663760291218755489252980144318121838975995620719854581898535466040612395404552691419886388840729172675257895689855034989985492152342894119704577644336207622769538245509121462054864255166059561366117917545668501497396150032463855516859778325732405358005714255437161067025379018325571865177585119000271595452937529713648211710017335951948556369710226683222220407955718320252181431119694748014468866648503705695326310772072907747687819844452584320535388192846128950900297022705290513194267510008598134479400507921608079737757706438045488124979271892050367645219257500760545243408173902931700609662024440907499590196146110609258590752935650177844619868368521304492029451014868541478373115680769583889960221798053049597193903856492506381973905847719379982366886758145018335013954893183216468741094843896133661190312880894315803249911803591417873848836413218997014770605200544169644614589622690312468184622390730159814865741997882932438177/242738798675656066326306874793355261812641555491255243029615834853050909626842213628209478947162722490500196417273399410047491991317726598547947622196501264102582442133105179548255231581502085736070877205469208809819772250317012829670841832452769523579824414681054024382370582950194355522110068776542278842219245863604389498110288439282333850121362618649600858966785968104200035082186653949592467747077214023224951243811741815295531778514269902036172064113186683356330798630025047489831843359580899572866441335942308848942482394004327216347040914114505065982105589769774288185918025704571095505576308215211684246918112749051718513437994297680327854836403431779383695796977035474057384122665412706661317008330016871581043111728475882928483879760246007708813964957319686916478299008911959449607917827985891622146951487609724929486765905329945447102883088422894027664225811092053523253908946600186894504129157242492972011469116060387639736000000"
+  },
+  "source": {
+    "git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "path": "observational_succ/source_weil_hierarchy.py",
+    "source_parameter": "d_j=4j+1; alpha_j=d_j/2; one real Gamma"
+  }
+}

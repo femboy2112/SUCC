@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2/scripts/round2_signed_receipt_review.py", line 54, in <module>
+    out=json.dumps(review(args.source_packet),indent=2)+'\n'
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2/scripts/round2_signed_receipt_review.py", line 32, in review
+    C,E,gain,old,new=map(mat,('center_Gram','edge_Gram_lower','gain','old_lower','new_lower'))
+    ^^^^^^^^^^^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2/scripts/round2_signed_receipt_review.py", line 31, in <lambda>
+    mat=lambda key:[[Q(x) for x in row]for row in s[key]]
+                     ^^^^
+  File "/usr/lib/python3.12/fractions.py", line 241, in __new__
+    numerator = int(m.group('num') or '0')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Exceeds the limit (4300 digits) for integer string conversion: value has 5040 digits; use sys.set_int_max_str_digits() to increase the limit

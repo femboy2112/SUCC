@@ -1,0 +1,117 @@
+{
+  "source_id": "institute-hidden-source-splice-v1",
+  "basis": "immutable-root-and-public-report",
+  "source_states": [
+    "left0",
+    "left1",
+    "right1",
+    "right2"
+  ],
+  "original": {
+    "left0": "L",
+    "left1": "L",
+    "right1": "R",
+    "right2": "R"
+  },
+  "observation": {
+    "left0": "start",
+    "left1": "middle",
+    "right1": "middle",
+    "right2": "end"
+  },
+  "transitions": [
+    {
+      "before": "left0",
+      "action": "a",
+      "target": "left1",
+      "outcome": "ok",
+      "cost": "1"
+    },
+    {
+      "before": "right1",
+      "action": "b",
+      "target": "right2",
+      "outcome": "ok",
+      "cost": "1"
+    }
+  ],
+  "initial": [
+    "left0"
+  ],
+  "transcript": [
+    {
+      "action": "a",
+      "outcome": "ok",
+      "cost": "1",
+      "observation": "middle"
+    },
+    {
+      "action": "b",
+      "outcome": "ok",
+      "cost": "1",
+      "observation": "end"
+    }
+  ],
+  "forward": {
+    "status": "NO_PATH_FOUND",
+    "source_id": "institute-hidden-source-splice-v1",
+    "basis": "immutable-root-and-public-report",
+    "path": null,
+    "excluded": null
+  },
+  "exclusion_certificate": {
+    "status": "SOURCE_HISTORY_IMPOSSIBLE",
+    "source_id": "institute-hidden-source-splice-v1",
+    "basis": "immutable-root-and-public-report",
+    "path": null,
+    "excluded": [
+      [
+        "left0",
+        "left1",
+        "right1",
+        "right2"
+      ],
+      [
+        "left0",
+        "left1",
+        "right2"
+      ],
+      []
+    ]
+  },
+  "certificate_verified": true,
+  "public_audit": {
+    "status": "PUBLIC_ACTION_UNAVAILABLE",
+    "at_step": 1,
+    "witness_path": [
+      "left0",
+      "left1"
+    ]
+  },
+  "public_report_quotient_audit": {
+    "lawful": false,
+    "reason": "AVAILABILITY_LOSS",
+    "witness": [
+      "left1",
+      "right1",
+      "b"
+    ]
+  },
+  "refined_quotient": {
+    "left0": "class_0",
+    "left1": "class_1",
+    "right1": "class_2",
+    "right2": "class_3"
+  },
+  "refinement_counterexamples": [
+    [
+      "left1",
+      "right1",
+      [
+        "b"
+      ]
+    ]
+  ],
+  "model_only_not_physical_execution": true,
+  "RH_proved": false
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "base_commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+  "branch": "research/institute-nucleus-2026-10-18",
+  "source_sha256": {
+    "observational_succ/institute_causal.py": "79d6a9e345adc7578237bf37766042e5b7810f783a319f35141348ebe20fb01a",
+    "tests/test_institute_causal.py": "d9aceefcfac8e2a0940f97c27f1053e2b17e22464da3f43c42990036448055c9",
+    "formal/InstituteCausal.lean": "7d88fe4123e07d0b5776f229d82c4b1ab593435bbe62fa1106d50fadf53016fc",
+    "research/2026-10-18/INSTITUTE_CAUSAL_DESCENT.md": "fc230cb7a755f8b97485f32731cbf70aa440d961109cc293f38885d136fbb9c4",
+    "research/2026-10-18/institute/causal/replay.py": "fe9254d3fdaf5633248701194a388144a00ef5e84b821d3f8d8ca6bf3e994d3f"
+  },
+  "checks": [
+    {
+      "name": "python_version",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "--version"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-institute",
+      "started_utc": "2026-10-18T22:53:58.467635+00:00",
+      "elapsed_seconds": 0.0020687109790742397,
+      "returncode": 0,
+      "stdout": "python_version.stdout",
+      "stderr": "python_version.stderr",
+      "address_space_limit_bytes": null
+    },
+    {
+      "name": "lean_version",
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-institute",
+      "started_utc": "2026-10-18T22:53:58.469729+00:00",
+      "elapsed_seconds": 0.055861640023067594,
+      "returncode": 0,
+      "stdout": "lean_version.stdout",
+      "stderr": "lean_version.stderr",
+      "address_space_limit_bytes": null
+    },
+    {
+      "name": "focused_tests",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-m",
+        "unittest",
+        "tests.test_institute_causal",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-institute",
+      "started_utc": "2026-10-18T22:53:58.525609+00:00",
+      "elapsed_seconds": 0.1579381669871509,
+      "returncode": 0,
+      "stdout": "focused_tests.stdout",
+      "stderr": "focused_tests.stderr",
+      "address_space_limit_bytes": null
+    },
+    {
+      "name": "causal_regression",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-m",
+        "unittest",
+        "tests.test_institute_causal",
+        "tests.test_no_ghost",
+        "tests.test_no_ghost_policy",
+        "tests.test_no_ghost_coherence",
+        "tests.test_field_history_lift",
+        "tests.test_eodcs_causal_nerode",
+        "-q"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-institute",
+      "started_utc": "2026-10-18T22:53:58.683583+00:00",
+      "elapsed_seconds": 0.6711048430297524,
+      "returncode": 0,
+      "stdout": "causal_regression.stdout",
+      "stderr": "causal_regression.stderr",
+      "address_space_limit_bytes": null
+    },
+    {
+      "name": "lean",
+      "command": [
+        "lean",
+        "formal/InstituteCausal.lean"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-institute",
+      "started_utc": "2026-10-18T22:53:59.354713+00:00",
+      "elapsed_seconds": 0.40485166595317423,
+      "returncode": 0,
+      "stdout": "lean.stdout",
+      "stderr": "lean.stderr",
+      "address_space_limit_bytes": 1073741824
+    }
+  ],
+  "passed": true,
+  "finite_enumeration_scope": {
+    "primal_dual_cartesian_cases": 800,
+    "quotient_cost_models": 81,
+    "two_action_quotient_and_lift_models": 81
+  },
+  "novelty_status": "CLASSICAL_SPECIALIZATION_PROJECT_INTEGRATION",
+  "independence_boundary": "Distinct algorithms share model specification and authoring session",
+  "RH_proved": false
+}

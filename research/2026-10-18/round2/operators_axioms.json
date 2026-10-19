@@ -1,0 +1,10 @@
+{
+  "toolchain": "leanprover/lean4:v4.14.0",
+  "source": "formal/round2/ResidueTransfer.lean",
+  "scope": "Residue transfer, within-class injection, monoid membership and prefix bound only; no analytic FWD theorem",
+  "declarations": {
+    "ObservationalSUCC.Round2.residue_transfer": ["propext"],
+    "ObservationalSUCC.Round2.transfer_injective": [],
+    "ObservationalSUCC.Round2.controlled_monoid_transfer": ["propext"]
+  }
+}

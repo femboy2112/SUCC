@@ -1,0 +1,43 @@
+test_adaptive_two_report_models_against_full_policy_trees (test_round2_causal.Round2CausalTests.test_adaptive_two_report_models_against_full_policy_trees) ... ok
+test_bounds_types_and_empty_belief (test_round2_causal.Round2CausalTests.test_bounds_types_and_empty_belief) ... ok
+test_existing_farkas_oracle_independently_confirms_split (test_round2_causal.Round2CausalTests.test_existing_farkas_oracle_independently_confirms_split) ... ok
+test_full_nondeterministic_tables_against_cartesian_policy_enumeration (test_round2_causal.Round2CausalTests.test_full_nondeterministic_tables_against_cartesian_policy_enumeration) ... ok
+test_guard_family_exact_exponential_interface_bound (test_round2_causal.Round2CausalTests.test_guard_family_exact_exponential_interface_bound) ... ok
+test_legal_stochastic_laws_need_more_than_support (test_round2_causal.Round2CausalTests.test_legal_stochastic_laws_need_more_than_support) ... ok
+test_reject_missing_or_counterfeit_policy_branches (test_round2_causal.Round2CausalTests.test_reject_missing_or_counterfeit_policy_branches) ... ok
+test_required_split_example_relations (test_round2_causal.Round2CausalTests.test_required_split_example_relations) ... ok
+test_source_bound_certificates_reject_false_source_mutations (test_round2_causal.Round2CausalTests.test_source_bound_certificates_reject_false_source_mutations) ... ok
+test_trace_and_public_interface_still_do_not_imply_bisimulation (test_round2_causal.Round2CausalTests.test_trace_and_public_interface_still_do_not_imply_bisimulation) ... ok
+test_constant_test_extremizer (test_round2_completion.CompletionTests.test_constant_test_extremizer) ... ok
+test_crt_all_pairs (test_round2_completion.CompletionTests.test_crt_all_pairs) ... ok
+test_fake_prime_rejected (test_round2_completion.CompletionTests.test_fake_prime_rejected) ... ok
+test_harmonic_failure_not_infinity_claim (test_round2_completion.CompletionTests.test_harmonic_failure_not_infinity_claim) ... ok
+test_invalid_weights (test_round2_completion.CompletionTests.test_invalid_weights) ... ok
+test_nonnested_mutation (test_round2_completion.CompletionTests.test_nonnested_mutation) ... ok
+test_power_shift_norms (test_round2_completion.CompletionTests.test_power_shift_norms) ... ok
+test_summability_does_not_bound_source_shift (test_round2_completion.CompletionTests.test_summability_does_not_bound_source_shift) ... ok
+test_transpose_pairings_and_domain (test_round2_completion.CompletionTests.test_transpose_pairings_and_domain) ... ok
+test_weighted_adjoint_is_not_original_backward (test_round2_completion.CompletionTests.test_weighted_adjoint_is_not_original_backward) ... ok
+test_haar_overlap_by_independent_residue_count (test_round2_operators.GCDControls.test_haar_overlap_by_independent_residue_count) ... ok
+test_resource_caps_and_exact_authority (test_round2_operators.GCDControls.test_resource_caps_and_exact_authority) ... ok
+test_spectral_bounds_on_known_two_by_two_and_mutant (test_round2_operators.GCDControls.test_spectral_bounds_on_known_two_by_two_and_mutant) ... ok
+test_spectral_upper_by_independent_psd_elimination (test_round2_operators.GCDControls.test_spectral_upper_by_independent_psd_elimination) ... ok
+test_squarefree_tensor_entries (test_round2_operators.GCDControls.test_squarefree_tensor_entries) ... ok
+test_totient_factorization_and_smith_determinant (test_round2_operators.GCDControls.test_totient_factorization_and_smith_determinant) ... ok
+test_every_residue_class_transfers_with_bounded_overlap (test_round2_operators.ResidueControls.test_every_residue_class_transfers_with_bounded_overlap) ... ok
+test_fourier_identity_in_exact_group_algebra (test_round2_operators.ResidueControls.test_fourier_identity_in_exact_group_algebra) ... ok
+test_independent_product_enumeration (test_round2_operators.ResidueControls.test_independent_product_enumeration) ... ok
+test_no_generator_in_identity_class_is_required (test_round2_operators.ResidueControls.test_no_generator_in_identity_class_is_required) ... ok
+test_prime_domain_and_empty_family (test_round2_operators.ResidueControls.test_prime_domain_and_empty_family) ... ok
+test_wrong_character_phase_and_atomic_component_controls (test_round2_operators.ResidueControls.test_wrong_character_phase_and_atomic_component_controls) ... ok
+test_fake_source_identity_is_rejected (test_round2_registry.ActualGraphControls.test_fake_source_identity_is_rejected) ... ok
+test_inherited_hypothesis_deletion_is_rejected (test_round2_registry.ActualGraphControls.test_inherited_hypothesis_deletion_is_rejected) ... ok
+test_paper_forward_proof_cannot_become_kernel (test_round2_registry.ActualGraphControls.test_paper_forward_proof_cannot_become_kernel) ... ok
+test_real_graph_retains_history_and_checks_new_sources (test_round2_registry.ActualGraphControls.test_real_graph_retains_history_and_checks_new_sources) ... ok
+test_stale_kernel_evidence_is_rejected (test_round2_registry.ActualGraphControls.test_stale_kernel_evidence_is_rejected) ... ok
+test_topology_mutation_is_rejected (test_round2_registry.ActualGraphControls.test_topology_mutation_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 38 tests in 2.548s
+
+OK

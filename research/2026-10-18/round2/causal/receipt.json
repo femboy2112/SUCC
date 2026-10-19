@@ -1,0 +1,126 @@
+{
+  "base_commit": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+  "branch": "research/round2-causal-2026-10-18",
+  "checks": [
+    {
+      "name": "python_version",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "--version"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-causal",
+      "started_utc": "2026-10-19T00:23:00.857184+00:00",
+      "elapsed_seconds": 0.002511925995349884,
+      "returncode": 0,
+      "stdout": "python_version.stdout",
+      "stderr": "python_version.stderr"
+    },
+    {
+      "name": "focused_tests",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-m",
+        "unittest",
+        "tests.test_round2_causal",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-causal",
+      "started_utc": "2026-10-19T00:23:00.859722+00:00",
+      "elapsed_seconds": 0.360298020998016,
+      "returncode": 0,
+      "stdout": "focused_tests.stdout",
+      "stderr": "focused_tests.stderr"
+    },
+    {
+      "name": "causal_regression",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-m",
+        "unittest",
+        "tests.test_round2_causal",
+        "tests.test_institute_causal",
+        "tests.test_no_ghost",
+        "tests.test_no_ghost_policy",
+        "tests.test_no_ghost_coherence",
+        "tests.test_field_history_lift",
+        "tests.test_eodcs_causal_nerode",
+        "-q"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-causal",
+      "started_utc": "2026-10-19T00:23:01.220050+00:00",
+      "elapsed_seconds": 0.8775275279767811,
+      "returncode": 0,
+      "stdout": "causal_regression.stdout",
+      "stderr": "causal_regression.stderr"
+    },
+    {
+      "name": "provenance",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-causal",
+      "started_utc": "2026-10-19T00:23:02.097647+00:00",
+      "elapsed_seconds": 0.05338728986680508,
+      "returncode": 0,
+      "stdout": "provenance.stdout",
+      "stderr": "provenance.stderr"
+    },
+    {
+      "name": "observer",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-causal",
+      "started_utc": "2026-10-19T00:23:02.151063+00:00",
+      "elapsed_seconds": 0.1103608631528914,
+      "returncode": 0,
+      "stdout": "observer.stdout",
+      "stderr": "observer.stderr"
+    },
+    {
+      "name": "ordinal",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-causal",
+      "started_utc": "2026-10-19T00:23:02.261456+00:00",
+      "elapsed_seconds": 3.073023954872042,
+      "returncode": 0,
+      "stdout": "ordinal.stdout",
+      "stderr": "ordinal.stderr"
+    },
+    {
+      "name": "kernel",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/round2/verify_causal_lean.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-causal",
+      "started_utc": "2026-10-19T00:23:05.334525+00:00",
+      "elapsed_seconds": 0.8148875960614532,
+      "returncode": 0,
+      "stdout": "kernel.stdout",
+      "stderr": "kernel.stderr"
+    }
+  ],
+  "passed": true,
+  "source_sha256": {
+    "observational_succ/round2_causal.py": "d4e3ecaa4c2d420cbf375a6fb0c4545fc6111f9731fbb48609bd1b8153d3cba8",
+    "tests/test_round2_causal.py": "27f074ba46244c39ee93494a21c40408864350e508a437e95bfb7f223f52efbb",
+    "formal/round2/PublicBelief.lean": "f3e76871f9f4b05732c4d2d6b5321c038c71ccd97d79e384a9e0ced5c02fe29b",
+    "scripts/round2/verify_causal_lean.py": "6e66890536c270e2dbf9743c74fe97ce4e736dadb0022488707480e69b08fe4a",
+    "research/2026-10-18/ROUND2_CAUSAL.md": "d755b49cfa646ea430c7bf1586d9aa6cb9306d0112110c26e4538c7fc2651bb5",
+    "research/2026-10-18/round2/causal_axioms.json": "6ad8bc98a91c7b2d34fa4c8a67aeb97daff282df15ae974633989231a6587f83",
+    "research/2026-10-18/round2/causal/replay.py": "57e4e51d2d530beb3c092b7cbc81c2d61f0b9fee94f02527144ad4e0c767ec48"
+  },
+  "finite_scope": {
+    "full_relation_policy_cases": 2304,
+    "adaptive_policy_cases": 192,
+    "guard_beliefs": 120
+  },
+  "proof_boundary": "Kernel: policy and exact quotient core; paper: operational interface and counting",
+  "RH_proved": false
+}

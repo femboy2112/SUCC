@@ -5,6 +5,9 @@ records exact future-safe forgetting, causal lifting, the uniform arithmetic
 nonidentification family, Gamma bounds and two historical operator corrections.
 Priority and the original Weil sign remain unresolved. No historical row below
 is silently changed.
+The [Institute supplement](CLAIM_SUPPLEMENT_INSTITUTE.md) adds INS-01–INS-22
+without renumbering historical claims: partial-source descent, atomic/Haar
+interfaces, exact Gamma improvement, and explicit inherited analytic debt.
 
 **Policy:** A theorem, an exact computation, a finite experiment, an interpretation, and an RH-equivalent conjecture are different evidence types. This ledger governs current project claims; immutable founding documents retain their historically correct original wording and provenance.
 
