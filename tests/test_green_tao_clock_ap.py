@@ -9,6 +9,7 @@ from observational_succ.green_tao_clock_ap import (
     prime_clock_progression, prime_predecessor_factorization, search_first_grid,
     exact_factorization, exact_rad, flat_rad_ladder_condition,
     verify_flat_rad_prime_ladder, search_flat_rad_ladder,
+    maynard_clock_family, observe_maynard_clock_fiber,
     verify_prime_clock_grid, wheel_arithmetic,
 )
 
@@ -226,6 +227,41 @@ class GreenTaoClockAPTest(unittest.TestCase):
             verify_flat_rad_prime_ladder(30, 5)  # p_3=91 is composite
         with self.assertRaises(ClockAPError):
             verify_flat_rad_prime_ladder(71533328790, True)
+
+    def test_maynard_affine_family_admissibility_and_fiber(self):
+        clocks = prime_clock_progression(5, 6, 5)
+        family = maynard_clock_family(clocks, 5)
+        self.assertEqual(family.anchor_modulus, 3741870)
+        self.assertEqual(family.linear_coefficients,
+                         tuple(3741870*j for j in range(1, 6)))
+        for r in (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43):
+            # Independent mod-r oracle: t=0 ALWAYS avoids divisibility.
+            good = [t for t in range(r)
+                    if all((1 + a*t) % r != 0
+                           for a in family.linear_coefficients)]
+            self.assertIn(0, good)
+        sparse = observe_maynard_clock_fiber(family, 1)
+        self.assertEqual(sparse.full_radical, family.anchor_modulus)
+        self.assertEqual(sparse.ris_values, (1, 2, 3, 4, 5))
+        self.assertEqual(sparse.prime_positions, ())  # local admissibility != primality
+        full = observe_maynard_clock_fiber(family, 19117)
+        self.assertEqual(full.step_R, 71533328790)
+        self.assertEqual(full.full_radical, 71533328790)
+        self.assertEqual(full.full_ris, 1)
+        self.assertEqual(full.prime_positions, (1, 2, 3, 4, 5))
+        self.assertEqual(full.ris_values, (1, 2, 3, 4, 5))
+        for t in (2, 3, 4, 7, 13):
+            obs = observe_maynard_clock_fiber(family, t)
+            self.assertEqual(obs.full_radical, exact_rad(obs.step_R))
+            self.assertEqual(obs.ris_values,
+                             tuple(j*obs.full_ris for j in range(1, 6)))
+            self.assertTrue(all(all_clocks_at_one(p, clocks) for p in obs.endpoints))
+        with self.assertRaises(ClockAPError):
+            maynard_clock_family((4, 5), 5)
+        with self.assertRaises(ClockAPError):
+            maynard_clock_family(clocks, True)
+        with self.assertRaises(ClockAPError):
+            observe_maynard_clock_fiber(family, 0)
 
     def test_hostile_composite_and_step_sources(self):
         for bad in ((5, 11, 17, 24), (7, 5, 11), (5, 5),
