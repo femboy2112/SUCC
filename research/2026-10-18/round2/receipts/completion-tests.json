@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/tmp/succ-institute-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_round2_completion.py",
+    "-v"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2",
+  "started_utc": "2026-10-19T00:13:54.810851+00:00",
+  "finished_utc": "2026-10-19T00:13:55.044662+00:00",
+  "elapsed_seconds": 0.214774,
+  "exit_code": 0,
+  "timeout": false,
+  "git_head": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+  "git_status_before": " M scripts/institute_snapshot.py\n?? observational_succ/round2_completion.py\n?? research/2026-10-18/ROUND2_COMPLETION.md\n?? research/2026-10-18/round2/\n?? tests/test_round2_completion.py\n",
+  "log": "research/2026-10-18/round2/receipts/completion-tests.log",
+  "log_sha256": "e41e10500292d23c74a5bf9731b1094a4f912b643bc766ae30cac6d9030eab5d"
+}

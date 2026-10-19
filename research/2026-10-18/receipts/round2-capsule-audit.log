@@ -1,0 +1,87 @@
+{
+  "RH_proved": false,
+  "audit": "STRUCTURE_AND_BYTES_VALID",
+  "claims": [
+    {
+      "claim_id": "R2S-SOURCE",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "declared_hypotheses": [
+        "Interval I=(-1/2,1/2); authentic original source normalization; zero extension and Lebesgue measure"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "PAPER_PROVED",
+      "retained_hypotheses": [
+        "Interval I=(-1/2,1/2); authentic original source normalization; zero extension and Lebesgue measure"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "R2S-HIGH",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "declared_hypotheses": [
+        "Fixed primitive parity sigma; four zero moments; genuine b=log2 and w=b/sqrt2"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "PAPER_PROVED",
+      "retained_hypotheses": [
+        "Fixed primitive parity sigma; four zero moments; genuine b=log2 and w=b/sqrt2",
+        "Interval I=(-1/2,1/2); authentic original source normalization; zero extension and Lebesgue measure"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "R2S-INVERSE",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "declared_hypotheses": [
+        "Same fixed parity and kappa for D_sigma and residuals; eta>0; p_i,e_i in L2; complete source error allowances"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "PAPER_PROVED",
+      "retained_hypotheses": [
+        "Fixed primitive parity sigma; four zero moments; genuine b=log2 and w=b/sqrt2",
+        "Interval I=(-1/2,1/2); authentic original source normalization; zero extension and Lebesgue measure",
+        "Same fixed parity and kappa for D_sigma and residuals; eta>0; p_i,e_i in L2; complete source error allowances"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "R2S-STRICT",
+      "conclusion_mode": "INSTANCE_ONLY",
+      "declared_hypotheses": [
+        "Only the fixed rational trials and budgets recorded in the exact receipts; source error allowances unchanged"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "EXACT_FINITE_CHECK",
+      "retained_hypotheses": [
+        "Fixed primitive parity sigma; four zero moments; genuine b=log2 and w=b/sqrt2",
+        "Interval I=(-1/2,1/2); authentic original source normalization; zero extension and Lebesgue measure",
+        "Only the fixed rational trials and budgets recorded in the exact receipts; source error allowances unchanged",
+        "Same fixed parity and kappa for D_sigma and residuals; eta>0; p_i,e_i in L2; complete source error allowances"
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "R2S-SIGN",
+      "conclusion_mode": "OPEN_TARGET",
+      "declared_hypotheses": [
+        "True original infinite high response; first window alone would still not prove RH"
+      ],
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "recorded_authority": "UNVERIFIED",
+      "retained_hypotheses": [
+        "Fixed primitive parity sigma; four zero moments; genuine b=log2 and w=b/sqrt2",
+        "Interval I=(-1/2,1/2); authentic original source normalization; zero extension and Lebesgue measure",
+        "True original infinite high response; first window alone would still not prove RH"
+      ],
+      "semantic_authority_issued": null
+    }
+  ],
+  "physical_source_authentication": false,
+  "schema": "SUCC_CARRIER_PROOF_CERTIFICATE_v1",
+  "theorems_proved_by_this_audit": []
+}

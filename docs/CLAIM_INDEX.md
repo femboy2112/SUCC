@@ -1,5 +1,14 @@
 # Claim Index
 
+2026-10-18 research: [Institute nucleus](CLAIM_SUPPLEMENT_INSTITUTE.md), with
+eight core Lean declarations, atomic/Haar representation obstructions, a sharper
+authentic Gamma tail, and a source-typed machine claim graph. This research branch
+does not integrate drafts #153–#177. First-window Schur sign and RH remain open.
+**(Superseded 2026-10-18 — Academic Main IV consolidated drafts #153–#182 into `main`; see the
+[integration audit](SUCC_ACADEMIC_MAIN_IV_INTEGRATION_AUDIT_2026-10-18.md). The #181/#182 prime-two
+inverses are alternative enclosures: take the better single bound, never the sum. RH and the signed
+S₄ sign remain OPEN.)**
+
 Latest research: [Arithmetic Resonance claim supplement](CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md), with source-specific range and two-sided Schur bounds; original sign OPEN.
 
 A concise entry point into the full claim record. Nothing here replaces or deletes a historical
@@ -116,3 +125,11 @@ Carrier reconstructions → [CARRIER_ATLAS.md](CARRIER_ATLAS.md). Proof-access c
 [RESEARCH_FRONTIER_2026-10-15.md](RESEARCH_FRONTIER_2026-10-15.md) and
 [SUCC_RESEARCH_DEPENDENCY_DAG.md](SUCC_RESEARCH_DEPENDENCY_DAG.md). How #101–#131 were consolidated →
 [ACADEMIC_CARRIER_INTEGRATION_AUDIT_2026-10-15.md](ACADEMIC_CARRIER_INTEGRATION_AUDIT_2026-10-15.md).
+
+- **R2S-SOURCE / HIGH / INVERSE / STRICT / SIGN:** [whole-residual prime-two inverse certificates](CLAIM_SUPPLEMENT_FULL_PRIME_RESOLVENT.md); paper high-domain/source audit and strict exact first-window signed Schur enclosure improvements; true sign remains open.
+Round II extends the existing [Institute supplement](CLAIM_SUPPLEMENT_INSTITUTE.md)
+with INS-15–INS-22: forward-only obstruction, quantified completion, nondeterministic
+public safety and exact menu-interface obstruction. The machine graph records typed
+Haar-to-distribution/WOT comparisons; the 13 new kernel declarations cover only
+residue algebra and public-policy/quotient results. Signed-source work stays on its
+separate #177 continuation.

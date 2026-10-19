@@ -21,6 +21,26 @@ hypothesis**. RH is a demanding downstream application, not SUCC's definition.
 > and no positive Hilbert covariance is identified with the signed completed Weil form. See the
 > [claim index](docs/CLAIM_INDEX.md) and [claim ledger](docs/CLAIM_LEDGER.md).
 
+**Academic Main IV integration (2026-10-18):** the 30 stacked draft PRs **#153–#182** (foundations,
+arithmetic, operator theory, and the two original-source inverses) consolidated history-preserving into
+`main` from `610efac` over 8 ancestry-aware `--no-ff` merges. Navigation:
+[integration audit](docs/SUCC_ACADEMIC_MAIN_IV_INTEGRATION_AUDIT_2026-10-18.md) ·
+[dependency graph](docs/SUCC_ACADEMIC_MAIN_IV_DEPENDENCY_GRAPH.json) ·
+[merge coverage](docs/SUCC_ACADEMIC_MAIN_IV_MERGE_COVERAGE.json). An independent six-dimension hostile
+audit returned **GO-WITH-CORRECTIONS** with no firewall breach and no zeta-zero construction input. The two
+prime-two inverse corrections (#181, #182) are **alternative** enclosures of the same Schur residual — take
+the better single bound, **never the sum**. **RH remains OPEN; `S₄ = A₄ − R₄` is OPEN (AMBIGUOUS).** No
+positive Hilbert covariance is identified with the signed completed Weil form.
+
+**Institute Round II:** [execution and proof-authority report](research/2026-10-18/ROUND2_EXECUTION_REPORT.md), [forward-only operator manuscript](research/2026-10-18/ROUND2_OPERATORS.md), and [completion-cost theorems](research/2026-10-18/ROUND2_COMPLETION.md). Thirteen new core-Lean declarations; source-signed analysis stays on its separate continuation. RH remains open.
+
+**Institute nucleus research checkpoint (2026-10-18):**
+[execution report](research/2026-10-18/INSTITUTE_EXECUTION_REPORT.md) and
+[claim supplement](docs/CLAIM_SUPPLEMENT_INSTITUTE.md) provide eight core Lean
+declarations, an atomic/Haar representation paper candidate, sharper authentic
+Gamma-tail bounds and a fixed-method Schur obstruction. Academic novelty and
+the true signed Schur sign remain unestablished.
+
 **Proof Teeth research checkpoint:** [round report](research/2026-10-15/SUCC_PROOF_TEETH_MEGA_ROUND.md)
 and [claim supplement](docs/CLAIM_SUPPLEMENT_PROOF_TEETH.md) add the proved finite-Haar-to-profinite-Hilbert
 completion, exact minimum-observation certificates, paired YEAN Lean kernels,
@@ -151,6 +171,25 @@ theorem, export a self-contained, status-labeled, adversarially tested handoff r
 converting general observational insight into an RH proof claim.
 
 ## Research history (consolidation audits)
+
+The [Academic Transmutation research audit](docs/ACADEMIC_TRANSMUTATION_AUDIT_2026-10-18.md)
+adds exact forgetting and causal-lifting contracts, an all-horizon arithmetic
+nonidentification theorem, six kernel-checked lemmas, and an authentic Gamma
+tail refinement whose tested Schur route remains ambiguous. Includes a
+[six-page foundations draft](research/2026-10-18/ACADEMIC_TRANSMUTATION_FOUNDATIONS.pdf)
+and explicit classical/novelty boundaries. That research branch is based on draft PR177;
+it is not an integration of every open research branch.
+
+The [Theorem Forge II audit](research/2026-10-19/THEOREM_FORGE_II_AUDIT.md)
+builds on draft PR179, with separately pinned PR178 inputs. It adds exact
+information-acquisition and online-control certificates, forward-only weak
+collapse of arithmetic intertwiners, finite Euler and conditional infinite-source
+rigidity, 15 new checked Lean declarations, and a rigorous obstruction for the
+selected original Suzuki inverse-response family. Three complete manuscript
+drafts cover [source information](output/pdf/Paper_A_Source_Information.pdf),
+[operator transport](output/pdf/Paper_B_Atomic_Haar_Transport.pdf), and
+[arithmetic rigidity](output/pdf/Paper_C_Prime_Rigidity.pdf).
+Academic novelty remains unverified; RH remains open.
 
 The project has been consolidated in documented waves, each preserving its results, status labels,
 and counterexamples — nothing is discarded:

@@ -1,0 +1,92 @@
+{
+  "RH_proved": false,
+  "both_blocks_strictly_improved": true,
+  "execution": {
+    "argv": [
+      "scripts/full_prime_resolvent_probe.py",
+      "--source",
+      "--J",
+      "24",
+      "--M",
+      "192",
+      "--output",
+      "research/2026-10-18/ROUND2_FULL_PRIME_J24.json"
+    ],
+    "authority": "PAPER_PROVED with exact rational instance check; no Lean authority",
+    "elapsed_seconds": 177.08997699595056,
+    "peak_KiB": 43316,
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "resource_caps": "240 CPU seconds; 1 GiB address space; single process"
+  },
+  "first_window_sign_certified": false,
+  "sectors": {
+    "even_derivative": {
+      "gain_PD": true,
+      "gain_approx": [
+        [
+          0.0006514114951630625,
+          0.0005369906957950291
+        ],
+        [
+          0.0005369906957950291,
+          0.00044525095048181875
+        ]
+      ],
+      "new_lower_PSD": false,
+      "new_lower_approx": [
+        [
+          -0.0006133622673227309,
+          -0.00030678372722423865
+        ],
+        [
+          -0.00030678372722423865,
+          -0.0004961892554013795
+        ]
+      ],
+      "old_lower_approx": [
+        [
+          -0.0012647737624857935,
+          -0.0008437744230192678
+        ],
+        [
+          -0.0008437744230192678,
+          -0.0009414402058831982
+        ]
+      ]
+    },
+    "odd_derivative": {
+      "gain_PD": true,
+      "gain_approx": [
+        [
+          0.0003035971203728865,
+          0.00019610590962218678
+        ],
+        [
+          0.00019610590962218678,
+          0.0001286145763928045
+        ]
+      ],
+      "new_lower_PSD": false,
+      "new_lower_approx": [
+        [
+          -0.0006774809910580288,
+          -0.00021646438854381646
+        ],
+        [
+          -0.00021646438854381646,
+          -0.00044011992025001084
+        ]
+      ],
+      "old_lower_approx": [
+        [
+          -0.0009810781114309153,
+          -0.00041257029816600324
+        ],
+        [
+          -0.00041257029816600324,
+          -0.0005687344966428153
+        ]
+      ]
+    }
+  }
+}

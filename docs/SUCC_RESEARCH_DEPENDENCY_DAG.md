@@ -1,5 +1,22 @@
 # SUCC Research Dependency DAG
 
+2026-10-18 branch addition: the [Institute graph](../research/2026-10-18/institute/theorem_registry.json)
+is machine-checked by `scripts/institute_audit.py`; recorded proof authority is
+distinct from metadata integrity. Its new arrows are:
+
+```text
+partial labelled source -- fiber congruence [Lean] --> lawful quotient + finite lifts
+relational source -- exact path/exclusion duality [Lean] --> no-ghost finite gluing
+atomic/Haar prime tuples -- reciprocal-prime threshold [Paper] --> equivalent or disjoint
+c00 -- weighted Dirac [Paper] --> distributions (unweighted ell2 graph nonclosable)
+original Gamma tail -- optimal log envelope [Paper] --> H1/H2 action budgets
+budgets + inherited high premises [Conditional] --> tighter S4 lower (sign still open)
+fixed J24 residual matrices [Exact + Paper] --> all-positive-Young bound-family obstruction
+```
+
+The [claim supplement](CLAIM_SUPPLEMENT_INSTITUTE.md) records domains, source
+credentials, classical prior art, proof debt and failed inference witnesses.
+
 One canonical proof-dependency graph, from carrier mathematics through to the RH application. Every
 arrow carries a status so the reader sees immediately **which arrows are closed and which remain
 open**. This is the *conceptual* proof DAG; for the *git* PR-dependency DAG of the Academic Main
@@ -181,3 +198,51 @@ The [dependency manifest](../research/2026-10-16/COLLECTIVE_OBSERVER_DEPENDENCIE
 pins source identity, coordinate metric and shared premises. Independent finite
 methods share one original arithmetic source; they are not independent sources.
 See [CO-01–17](CLAIM_SUPPLEMENT_COLLECTIVE_OBSERVER.md) for domains and falsifiers.
+
+
+## Academic Transmutation child of PR177 (2026-10-18)
+
+The [manifest](../research/2026-10-18/ACADEMIC_TRANSMUTATION_DEPENDENCIES.json)
+pins all PR157–177 heads and records which are ancestors. The
+[audit](ACADEMIC_TRANSMUTATION_AUDIT_2026-10-18.md) and
+[ATX supplement](CLAIM_SUPPLEMENT_ACADEMIC_TRANSMUTATION.md) add these edges:
+
+| Premises / source | Mechanism | Conclusion / authority |
+|---|---|---|
+| B15/causal Nerode + declared partial reports/costs | Fiber congruence and finite-word induction | Autonomous descent and every-representative path lifting [CLASSICAL, PROVED LOCAL; six Lean declarations] |
+| Finite system + hidden residual budget + successful cost receipts | Weighted synchronized pair graph | Exact minimum distinguishing budget [PROVED LOCAL; priority UNVERIFIED] |
+| Private source-indexed transition graph | Support propagation, integral path flow and closed cut | Finite lift/obstruction and uniform support invariant [CLASSICAL, PROVED LOCAL] |
+| Uniform existential lifting | Adversarial future action | Online resolver does not follow [REFUTED implication] |
+| PR157/162/165 rigidity audit + generalized-prime source class | Arbitrarily late rational two-prime replacements | Prefix + density + PNT + strip-zero data do not authenticate the braid [PROVED LOCAL no-go] |
+| MOG08 / MII06 pinned statements | Exact compression / isometry trace test | Two corrected operator claims; positivity/nonnormality survive [PROVED LOCAL] |
+| PR171/174/177 authentic Gamma action, domains and coercivity | Endpoint-paid resolvent expansion | Retained Laplacian plus rigorous remainder [PROVED LOCAL] |
+| Same parent trial + smaller Gamma error | Full signed residual reevaluation | J24 lower certificate worsens; original S4 sign stays OPEN [TESTED MODEL with rational certificate] |
+| Authentic four low couplings + original high inverse | Effective directional inverse-response enclosure [OPEN TARGET] | Positive original first-window Schur margin [UNVERIFIED] |
+| First-window positivity, if obtained | Additional every-radius signed positivity | RH criterion [UNRESOLVED; not supplied by this campaign] |
+
+The foundational and arithmetic results are independent contributions. They
+neither authenticate a physical observer nor supply missing signed positivity.
+Scholarly novelty is unverified; no sibling branch is silently treated as merged.
+## R2S: complete source residual in the prime-two inverse metric
+
+```mermaid
+flowchart LR
+  RS[R2S-SOURCE: original closed primitive source] --> RH[R2S-HIGH: fixed parity infinite coercivity and mismatch]
+  RH --> RI[R2S-INVERSE: whole nominal inverse then source error]
+  RI --> RF[R2S-STRICT: exact J8 and J24 strict Loewner gains]
+  RH --> RO[R2S-SIGN: true signed S4 positivity remains OPEN]
+  RF -. failed sufficient bound .-> RO
+```
+
+[Typed capsules](../research/2026-10-18/ROUND2_SIGNED_CAPSULES.json) retain
+source hashes, quantifiers, hypotheses and paper/exact authority separately.
+The last edge records an unresolved research target, not an implication of
+positivity. Both actual certified lower matrices remain negative definite;
+no actual negative source energy has been established. This branch imports
+no new Gamma constants from PR178 or PR179.
+Round II extends the existing [Institute supplement](CLAIM_SUPPLEMENT_INSTITUTE.md)
+with INS-15–INS-22: forward-only obstruction, quantified completion, nondeterministic
+public safety and exact menu-interface obstruction. The machine graph records typed
+Haar-to-distribution/WOT comparisons; the 13 new kernel declarations cover only
+residue algebra and public-policy/quotient results. Signed-source work stays on its
+separate #177 continuation.

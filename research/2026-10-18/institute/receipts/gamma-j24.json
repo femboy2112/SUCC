@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/tmp/succ-institute-venv/bin/python",
+    "scripts/institute_schur_probe.py",
+    "--replay-pr177",
+    "--gamma-cutoff",
+    "24",
+    "--taylor-degree",
+    "192",
+    "--output",
+    "research/2026-10-18/INSTITUTE_GAMMA_SCHUR_J24.json"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-institute",
+  "started_utc": "2026-10-18T22:59:30.706298+00:00",
+  "finished_utc": "2026-10-18T23:00:38.286020+00:00",
+  "elapsed_seconds": 67.562734,
+  "exit_code": 0,
+  "timeout": false,
+  "git_head": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+  "git_status_before": " M docs/CLAIM_INDEX.md\n M docs/CLAIM_LEDGER.md\n M docs/CLAIM_NAMESPACE_REGISTRY.json\n M docs/SUCC_RESEARCH_DEPENDENCY_DAG.md\n?? .github/workflows/institute.yml\n?? docs/CLAIM_SUPPLEMENT_INSTITUTE.md\n?? formal/InstituteCausal.lean\n?? observational_succ/institute_atomic_haar.py\n?? observational_succ/institute_audit.py\n?? observational_succ/institute_causal.py\n?? research/2026-10-18/\n?? scripts/build_institute_registry.py\n?? scripts/institute_audit.py\n?? scripts/institute_run_receipt.py\n?? scripts/institute_schur_probe.py\n?? scripts/institute_snapshot.py\n?? scripts/verify_institute_lean.py\n?? tests/test_institute_atomic_haar.py\n?? tests/test_institute_audit.py\n?? tests/test_institute_causal.py\n?? tests/test_institute_hostile.py\n?? tests/test_institute_schur.py\n",
+  "log": "research/2026-10-18/institute/receipts/gamma-j24.log",
+  "log_sha256": "4dea6b2f886cc6d075d45c15993f06fb0f9b8c6285ff370438c7d50c98ad70df"
+}

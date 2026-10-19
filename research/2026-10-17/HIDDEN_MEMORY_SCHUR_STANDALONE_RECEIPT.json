@@ -1,0 +1,87 @@
+{
+  "RH_proved": false,
+  "Suzuki_first_window_sign_proved": false,
+  "aligned_642_cell_algebraic_budget": {
+    "rank": 642,
+    "source_verified": false,
+    "squared_cross_cap": 501711444,
+    "tail_upper": "13936429/288230376151711744"
+  },
+  "authentic_suzuki_first_prime_source": "NOT_MOUNTED_STANDALONE",
+  "exact_rational_finite_models_only": true,
+  "explicit_cell_algebraic_budget": {
+    "rank": 453,
+    "source_verified": false,
+    "squared_cross_cap": 249901074,
+    "tail_upper": "13883393/576460752303423488"
+  },
+  "measured_hidden_gaussian": {
+    "Suzuki_positivity_claimed": false,
+    "conditional_mutual_information_nats_symbolic": "(1/2)*log((g^2+noise)/noise)",
+    "hidden_prior_variance": "1",
+    "independent_environment_negative_control": false,
+    "one_read_hidden_conditional_variance": "1",
+    "thermodynamic_work_claimed": false,
+    "two_read_hidden_conditional_variance": "1/2",
+    "variance_gain": "1/2"
+  },
+  "negative_trial": {
+    "S": [
+      [
+        "-1/2"
+      ]
+    ],
+    "verdict": "NEGATIVE_FINITE_MODEL"
+  },
+  "positive_trial": {
+    "S": [
+      [
+        "1/2"
+      ]
+    ],
+    "tail": "1/4096",
+    "verdict": "POSITIVE_FINITE_MODEL"
+  },
+  "program": "SUCC_SOURCE_HIDDEN_MEMORY_SCHUR_2026_10_17",
+  "singular_ambiguous_trial": {
+    "S": [
+      [
+        "0"
+      ]
+    ],
+    "verdict": "AMBIGUOUS"
+  },
+  "source_contract": "ORIGINAL_SUZUKI_SOURCE_ADAPTER_ONLY_ON_SOURCE_MODE",
+  "source_spectral_projector_computed": false,
+  "two_hidden_baths": {
+    "identical_first_two_observations": [
+      "1",
+      "1/2"
+    ],
+    "one_mode": {
+      "modes": [
+        "1/2"
+      ],
+      "original_Weil_source_authenticated": false,
+      "physical_thermodynamic_work_computed": false,
+      "weights": [
+        "1"
+      ],
+      "zero_shift_inverse_response": "1"
+    },
+    "opposite_S_signs": true,
+    "two_mode": {
+      "modes": [
+        "13/50",
+        "127/200"
+      ],
+      "original_Weil_source_authenticated": false,
+      "physical_thermodynamic_work_computed": false,
+      "weights": [
+        "9/25",
+        "16/25"
+      ],
+      "zero_shift_inverse_response": "3349/2701"
+    }
+  }
+}

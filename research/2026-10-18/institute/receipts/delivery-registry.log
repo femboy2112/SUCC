@@ -1,0 +1,244 @@
+{
+  "schema": "SUCC_INSTITUTE_AUDIT_v1",
+  "audit": "CONTRACTS_AND_BYTES_VALID",
+  "claims": [
+    {
+      "claim_id": "INS-01",
+      "recorded_authority": "LEAN_KERNEL_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "q is surjective onto the declared quotient carrier.",
+        "Actions are partial deterministic maps S x A -> Option(L x S); labels retained exactly."
+      ],
+      "retained_hypotheses": [
+        "Actions are partial deterministic maps S x A -> Option(L x S); labels retained exactly.",
+        "q is surjective onto the declared quotient carrier."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-02",
+      "recorded_authority": "LEAN_KERNEL_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Arbitrary relation S x L x S; finite word.",
+        "Source-identity preservation assumes each edge preserves that identity."
+      ],
+      "retained_hypotheses": [
+        "Arbitrary relation S x L x S; finite word.",
+        "Source-identity preservation assumes each edge preserves that identity."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-03",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Complete finite declared state/action tables; current observation and exact cost labels."
+      ],
+      "retained_hypotheses": [
+        "Complete finite declared state/action tables; current observation and exact cost labels."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-04",
+      "recorded_authority": "CLASSICAL_IMPORTED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities."
+      ],
+      "retained_hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-05",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities."
+      ],
+      "retained_hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-06",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities."
+      ],
+      "retained_hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-07",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities.",
+        "D is the locally constant test space with its inductive-limit topology; distribution actions transpose the opposite test adjoints."
+      ],
+      "retained_hypotheses": [
+        "D is the locally constant test space with its inductive-limit topology; distribution actions transpose the opposite test adjoints.",
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-08",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities.",
+        "D is the locally constant test space with its inductive-limit topology; distribution actions transpose the opposite test adjoints.",
+        "eta=delta_1 for the canonical map."
+      ],
+      "retained_hypotheses": [
+        "D is the locally constant test space with its inductive-limit topology; distribution actions transpose the opposite test adjoints.",
+        "Normalized additive Haar on Zhat.",
+        "Operators use the sqrt(p) cutoff-division normalization and preserve the stated adjoint identities.",
+        "eta=delta_1 for the canonical map."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-09",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "J is an integer at least 1; d=4J+1.",
+        "Authentic single real Gamma multiplier m_J is the displayed positive infinite sum."
+      ],
+      "retained_hypotheses": [
+        "Authentic single real Gamma multiplier m_J is the displayed positive infinite sum.",
+        "J is an integer at least 1; d=4J+1."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-10",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "J is an integer at least 1; d=4J+1.",
+        "Authentic single real Gamma multiplier m_J is the displayed positive infinite sum.",
+        "Zero extension is in H1(R), or H2(R) with both value and derivative trace zero for the second estimate."
+      ],
+      "retained_hypotheses": [
+        "Authentic single real Gamma multiplier m_J is the displayed positive infinite sum.",
+        "J is an integer at least 1; d=4J+1.",
+        "Zero extension is in H1(R), or H2(R) with both value and derivative trace zero for the second estimate."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-11",
+      "recorded_authority": "UNVERIFIED",
+      "conclusion_mode": "OPEN_TARGET",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "Original source identity alone is insufficient to prove its analytic estimates."
+      ],
+      "retained_hypotheses": [
+        "Original source identity alone is insufficient to prove its analytic estimates."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-12",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [
+        "INS-11"
+      ],
+      "declared_hypotheses": [
+        "J is an integer at least 1; d=4J+1.",
+        "Authentic single real Gamma multiplier m_J is the displayed positive infinite sum.",
+        "Zero extension is in H1(R), or H2(R) with both value and derivative trace zero for the second estimate.",
+        "Original source identity alone is insufficient to prove its analytic estimates.",
+        "ASSUME:INS-11"
+      ],
+      "retained_hypotheses": [
+        "ASSUME:INS-11",
+        "Authentic single real Gamma multiplier m_J is the displayed positive infinite sum.",
+        "J is an integer at least 1; d=4J+1.",
+        "Original source identity alone is insufficient to prove its analytic estimates.",
+        "Zero extension is in H1(R), or H2(R) with both value and derivative trace zero for the second estimate."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-13",
+      "recorded_authority": "UNVERIFIED",
+      "conclusion_mode": "OPEN_TARGET",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "All source, topology and infinite-high response obligations must be discharged."
+      ],
+      "retained_hypotheses": [
+        "All source, topology and infinite-high response obligations must be discharged."
+      ],
+      "semantic_authority_issued": null
+    },
+    {
+      "claim_id": "INS-14",
+      "recorded_authority": "PAPER_PROVED",
+      "conclusion_mode": "THEOREM_UNDER_HYPOTHESES",
+      "integrity": "HASHES_MATCH",
+      "open_dependencies": [],
+      "declared_hypotheses": [
+        "T,M,kappa are precisely the retained rational J24/M192/P18 decomposition; M is positive semidefinite and kappa>0.",
+        "The conclusion concerns only the displayed sufficient-bound family, not the actual signed source form."
+      ],
+      "retained_hypotheses": [
+        "T,M,kappa are precisely the retained rational J24/M192/P18 decomposition; M is positive semidefinite and kappa>0.",
+        "The conclusion concerns only the displayed sufficient-bound family, not the actual signed source form."
+      ],
+      "semantic_authority_issued": null
+    }
+  ],
+  "transport_edges": 2,
+  "theorems_proved_by_this_audit": [],
+  "physical_source_authentication": false,
+  "RH_proved": false
+}

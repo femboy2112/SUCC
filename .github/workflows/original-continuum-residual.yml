@@ -1,0 +1,122 @@
+name: Original entire continuum Suzuki projected residual certificate
+on:
+  push:
+    branches:
+      - 'research/original-continuum-residual-*'
+  pull_request:
+    paths:
+      - 'observational_succ/original_continuum_residual.py'
+      - 'tests/test_original_continuum_residual.py'
+      - 'scripts/original_continuum_residual_probe.py'
+      - 'research/2026-10-18/ORIGINAL_CONTINUUM_RESIDUAL_SCHUR.md'
+      - '.github/workflows/original-continuum-residual.yml'
+permissions:
+  contents: read
+jobs:
+  full-original-source-continuum:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install original genuine Suzuki research sources
+        run: python -m pip install -e '.[test]'
+      - name: Frozen source Git provenance
+        run: python scripts/verify_provenance.py
+      - name: Exact original finite analytic continuum and H2 Schur tests (NO SKIPS)
+        run: |
+          python -m unittest discover -s tests -p 'test_original_continuum_residual.py' -v > "$RUNNER_TEMP/continuum-tests.txt" 2>&1 || { cat "$RUNNER_TEMP/continuum-tests.txt"; exit 1; }
+          cat "$RUNNER_TEMP/continuum-tests.txt"
+          grep -q '^OK$' "$RUNNER_TEMP/continuum-tests.txt"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/continuum-tests.txt"; then exit 1; fi
+      - name: Reproduce independent original source continuum certificate
+        run: |
+          PYTHONPATH=. python scripts/original_continuum_residual_probe.py --verify --source
+      - name: Parent original high clamped/Gamma hostile regressions
+        run: |
+          python -m unittest discover -s tests -p 'test_clamped_k_residual_bridge.py' -q
+          python -m unittest discover -s tests -p 'test_infinite_gamma_carleman.py' -q
+
+  exact-source-depth-ablation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install frozen signed Suzuki
+        run: python -m pip install -e '.[test]'
+      - name: Check source provenance independently
+        run: python scripts/verify_provenance.py
+      - name: Complete original continuum norm and signed S4 cutoff sweep
+        run: |
+          PYTHONPATH=. python scripts/original_continuum_cutoff_sweep.py --verify > "$RUNNER_TEMP/continuum-sweep.json"
+          cat "$RUNNER_TEMP/continuum-sweep.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: original-suzuki-continuum-cutoff-ablation
+          path: ${{ runner.temp }}/continuum-sweep.json
+          if-no-files-found: error
+
+  multi-high-boundary-source-ablation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install original signed source research package
+        run: python -m pip install -e '.[test]'
+      - name: Verify frozen original source separately
+        run: python scripts/verify_provenance.py
+      - name: Exact Jacobi/Legendre multimode clamped source proofs
+        run: |
+          python -m unittest discover -s tests -p 'test_multimode_original_residual.py' -v > "$RUNNER_TEMP/multimode-tests.txt" 2>&1 || { cat "$RUNNER_TEMP/multimode-tests.txt"; exit 1; }
+          cat "$RUNNER_TEMP/multimode-tests.txt"
+          grep -q '^OK$' "$RUNNER_TEMP/multimode-tests.txt"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/multimode-tests.txt"; then exit 1; fi
+      - name: Source-authentic multi-mode Schur holdout sweep
+        run: |
+          PYTHONPATH=. python scripts/original_multimode_residual_sweep.py --verify > "$RUNNER_TEMP/multimode-sweep.json"
+          cat "$RUNNER_TEMP/multimode-sweep.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: original-suzuki-multi-high-source-ablation
+          path: ${{ runner.temp }}/multimode-sweep.json
+          if-no-files-found: error
+
+  prime-phase-conditional:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install authentic frozen Suzuki research source
+        run: python -m pip install -e '.[test]'
+      - name: Audit protected Suzuki Git provenance
+        run: python scripts/verify_provenance.py
+      - name: Exact true-source phase/center/edge conditional proofs
+        run: |
+          python -m unittest discover -s tests -p 'test_source_residual_phase_savings.py' -v > "$RUNNER_TEMP/phase-tests.txt" 2>&1 || { cat "$RUNNER_TEMP/phase-tests.txt"; exit 1; }
+          cat "$RUNNER_TEMP/phase-tests.txt"
+          grep -q '^OK$' "$RUNNER_TEMP/phase-tests.txt"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/phase-tests.txt"; then exit 1; fi
+      - name: Original signed residual with conditional SOURCE-EDGE source provenance
+        run: |
+          PYTHONPATH=. python scripts/source_residual_phase_savings_probe.py --verify > "$RUNNER_TEMP/phase-source.json"
+          cat "$RUNNER_TEMP/phase-source.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: original-suzuki-phase-conditional-source-ablation
+          path: ${{ runner.temp }}/phase-source.json
+          if-no-files-found: error

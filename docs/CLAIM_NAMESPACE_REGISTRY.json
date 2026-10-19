@@ -14,6 +14,22 @@
   },
   "namespaces": [
     {
+      "namespace": "BIDIRECTIONAL_CUT",
+      "bare_prefix": "BDC",
+      "fq_prefix": "BDC",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_BIDIRECTIONAL_CUT.md"
+      ],
+      "id_count": 10,
+      "status": "MIXED (CLASSICAL/PAPER_PROVED/EXACT_FINITE/REFUTED/UNVERIFIED)",
+      "topic": "forward-backward integer dilation Hilbert cut, exact Basel/GCD/Jordan arithmetic tail square root, Riesz no-ghost and Nyman residual firewall",
+      "code": [
+        "observational_succ/bidirectional_cut.py",
+        "observational_succ/bidirectional_hilbert.py",
+        "scripts/bidirectional_cut_probe.py"
+      ]
+    },
+    {
       "namespace": "CERTIFIED_FOUR_SCHUR",
       "bare_prefix": "CFS",
       "fq_prefix": "CFS",
@@ -44,6 +60,23 @@
         "observational_succ/four_thirty_schur_transport.py",
         "observational_succ/nested_schur_envelopes.py",
         "observational_succ/fucc_braid_resonance_capsules.py"
+      ]
+    },
+    {
+      "namespace": "ORBIT_CLOCK_GENESIS",
+      "bare_prefix": "OCG",
+      "fq_prefix": "OCG",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_ORBIT_CLOCK_GENESIS.md"
+      ],
+      "id_count": 12,
+      "status": "MIXED (CLASSICAL/PAPER_PROVED/EXACT_FINITE_TESTED/REFUTED/UNVERIFIED)",
+      "topic": "source orbit quotient universality, fresh clock splicing, LCM and Möbius prime-jet genesis, continuous topological factor no-go",
+      "code": [
+        "observational_succ/orbit_clock_genesis.py",
+        "observational_succ/clock_incidence_inversion.py",
+        "observational_succ/topological_clock_factors.py",
+        "scripts/orbit_clock_genesis_probe.py"
       ]
     },
     {
@@ -104,6 +137,37 @@
       ]
     },
     {
+      "namespace": "SOURCE_MINIMALITY",
+      "bare_prefix": "SM",
+      "fq_prefix": "SM.MIN",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SOURCE_MINIMALITY.md"
+      ],
+      "id_count": 11,
+      "status": "MIXED (CLASSICAL/PAPER_PROVED/REFUTED/UNVERIFIED)",
+      "topic": "source minimality: procyclic observation cofinality, carry-coupled clock lifts, renewal rigidity, Beurling camouflage",
+      "code": [
+        "observational_succ/source_minimality.py",
+        "observational_succ/carry_clock_lift.py",
+        "observational_succ/clock_compiler.py",
+        "observational_succ/renewal_rigidity.py"
+      ]
+    },
+    {
+      "namespace": "SUZUKI_MOMENT_SCHUR",
+      "bare_prefix": "SM",
+      "fq_prefix": "SM.SUZ",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SUZUKI_MOMENT_SCHUR.md"
+      ],
+      "id_count": 9,
+      "status": "MIXED (CLASSICAL/PROVED/REFUTED/UNVERIFIED)",
+      "topic": "authentic Suzuki thirty-moment low-high Schur, parity, compact spectra, Feshbach enclosure",
+      "code": [
+        "observational_succ/suzuki_moment_schur.py"
+      ]
+    },
+    {
       "namespace": "TAIL_SPLIT_ENCLOSURE",
       "bare_prefix": "TS",
       "fq_prefix": "TS.TAIL",
@@ -159,6 +223,46 @@
       "code": [
         "observational_succ/wild_ambient_succ.py"
       ]
+    },
+    {
+      "namespace": "ACADEMIC_TRANSMUTATION",
+      "bare_prefix": "ATX",
+      "fq_prefix": "ATX",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_ACADEMIC_TRANSMUTATION.md"
+      ],
+      "id_count": 12,
+      "status": "MIXED (CLASSICAL / PROVED LOCAL / REFUTED / UNVERIFIED)",
+      "topic": "Exact future-safe quotient, private causal gluing, arithmetic source nonidentification, authentic Gamma tail and additive operator corrections",
+      "code": [
+        "observational_succ/future_safe_quotient.py",
+        "observational_succ/lawful_history_gluing.py",
+        "observational_succ/arithmetic_source_minimality.py",
+        "observational_succ/gamma_tail_resolvent_refinement.py",
+        "formal/FutureSafeForgetting.lean",
+        "scripts/check_academic_certificate.py"
+      ]
+    },
+    {
+      "namespace": "INSTITUTE_NUCLEUS",
+      "bare_prefix": "INS",
+      "fq_prefix": "INS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_INSTITUTE.md"
+      ],
+      "id_count": 22,
+      "status": "MIXED (LEAN_KERNEL/PAPER/CLASSICAL/CONDITIONAL/UNVERIFIED)",
+      "topic": "partial causal descent, atomic-Haar threshold, distributional obstruction and authentic Gamma tail",
+      "code": [
+        "observational_succ/institute_causal.py",
+        "observational_succ/institute_atomic_haar.py",
+        "observational_succ/institute_audit.py",
+        "scripts/institute_schur_probe.py",
+        "scripts/institute_eta_probe.py",
+        "observational_succ/round2_operators.py",
+        "observational_succ/round2_completion.py",
+        "observational_succ/round2_causal.py"
+      ]
     }
   ],
   "resolved_collisions": [
@@ -179,6 +283,15 @@
       ],
       "resolution": "disambiguate by supplement file / fq_prefix (PH.PROF vs PH.PFH); neither historical bare ID renamed",
       "integrity_note": "Genuine distinct-meaning collision: PH in PROOF_TEETH is Profinite Hilbert (PAPER_PROVED, profinite_hilbert.py); PH in PRIME_FORM_HEAT is prime-form heat (CLASSICAL, prime_form_heat.py). Bare PH-01 resolves to PH.PROF-01 and PH.PFH-01 respectively; the two namespaces are disjoint in meaning and live in separate supplement files."
+    },
+    {
+      "bare_prefix": "SM",
+      "namespaces": [
+        "SOURCE_MINIMALITY",
+        "SUZUKI_MOMENT_SCHUR"
+      ],
+      "resolution": "disambiguate by registered supplement file and FQID (SM.MIN for Source Minimality, SM.SUZ for Suzuki Moment Schur); preserve original bare IDs in both supplements",
+      "integrity_note": "Real distinct-meaning collision: SM-01 through SM-09 are reused by SOURCE_MINIMALITY (finite cyclic clock source laws) and SUZUKI_MOMENT_SCHUR (authentic signed Weil/Suzuki Schur). These claim families have different provenance, derivations and RH implications; never merge their identities or assert shared evidence."
     },
     {
       "bare_prefix": "TS",

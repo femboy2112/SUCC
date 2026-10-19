@@ -1,0 +1,203 @@
+{
+  "actions": [
+    "fast",
+    "a",
+    "b"
+  ],
+  "certificate": {
+    "blocks": [
+      [
+        "p",
+        "p_copy"
+      ],
+      [
+        "q"
+      ],
+      [
+        "u"
+      ],
+      [
+        "v"
+      ],
+      [
+        "z"
+      ]
+    ],
+    "separators": [
+      {
+        "left": "p",
+        "right": "q",
+        "word": [
+          "fast"
+        ]
+      },
+      {
+        "left": "p",
+        "right": "u",
+        "word": [
+          "fast"
+        ]
+      },
+      {
+        "left": "p",
+        "right": "v",
+        "word": [
+          "fast"
+        ]
+      },
+      {
+        "left": "p",
+        "right": "z",
+        "word": []
+      },
+      {
+        "left": "q",
+        "right": "u",
+        "word": [
+          "fast"
+        ]
+      },
+      {
+        "left": "q",
+        "right": "v",
+        "word": [
+          "fast"
+        ]
+      },
+      {
+        "left": "q",
+        "right": "z",
+        "word": []
+      },
+      {
+        "left": "u",
+        "right": "v",
+        "word": [
+          "b"
+        ]
+      },
+      {
+        "left": "u",
+        "right": "z",
+        "word": []
+      },
+      {
+        "left": "v",
+        "right": "z",
+        "word": []
+      }
+    ]
+  },
+  "edges": [
+    {
+      "action": "fast",
+      "cost": [
+        7,
+        1
+      ],
+      "start": "p",
+      "target": "z"
+    },
+    {
+      "action": "fast",
+      "cost": [
+        7,
+        1
+      ],
+      "start": "p_copy",
+      "target": "z"
+    },
+    {
+      "action": "a",
+      "cost": [
+        1,
+        3
+      ],
+      "start": "p",
+      "target": "u"
+    },
+    {
+      "action": "a",
+      "cost": [
+        1,
+        3
+      ],
+      "start": "p_copy",
+      "target": "u"
+    },
+    {
+      "action": "fast",
+      "cost": [
+        7,
+        1
+      ],
+      "start": "q",
+      "target": "q"
+    },
+    {
+      "action": "a",
+      "cost": [
+        1,
+        3
+      ],
+      "start": "q",
+      "target": "v"
+    },
+    {
+      "action": "b",
+      "cost": [
+        1,
+        2
+      ],
+      "start": "u",
+      "target": "z"
+    },
+    {
+      "action": "b",
+      "cost": [
+        1,
+        2
+      ],
+      "start": "v",
+      "target": "v"
+    }
+  ],
+  "states": [
+    {
+      "name": "p",
+      "observation": "0",
+      "source": "declared-source",
+      "tasks": []
+    },
+    {
+      "name": "p_copy",
+      "observation": "0",
+      "source": "declared-source",
+      "tasks": []
+    },
+    {
+      "name": "q",
+      "observation": "0",
+      "source": "declared-source",
+      "tasks": []
+    },
+    {
+      "name": "u",
+      "observation": "0",
+      "source": "declared-source",
+      "tasks": []
+    },
+    {
+      "name": "v",
+      "observation": "0",
+      "source": "declared-source",
+      "tasks": []
+    },
+    {
+      "name": "z",
+      "observation": "1",
+      "source": "declared-source",
+      "tasks": []
+    }
+  ]
+}

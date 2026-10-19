@@ -1,0 +1,15 @@
+{
+  "audited_source_sha256": "71537c275f6704309478a9d4e0a28bda62df12f96c1842d2d1c46751dd9054ee",
+  "boundary": "Finite exact tests; positional completeness relies on the proof. Only raw model dataclasses are shared with the oracle. All costs are observed; all originals stay fixed during simulation.",
+  "counts": {
+    "advice_budget_comparisons": 482,
+    "exhaustive_two_origin_models": 6561,
+    "fresh_three_origin_models": 140,
+    "maximum_stationary_policies": 256,
+    "rejected_rank_mutations": 497,
+    "rejected_value_mutations": 1527
+  },
+  "seed": 202610199113,
+  "skipped_models": 0,
+  "status": "PASS"
+}

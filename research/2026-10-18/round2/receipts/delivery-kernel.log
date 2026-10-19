@@ -1,0 +1,38 @@
+{
+  "toolchain": "leanprover/lean4:v4.14.0",
+  "compiler_version": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "source": "formal/round2/PublicBelief.lean",
+  "source_sha256": "f3e76871f9f4b05732c4d2d6b5321c038c71ccd97d79e384a9e0ced5c02fe29b",
+  "manifest": "research/2026-10-18/round2/causal_axioms.json",
+  "manifest_sha256": "6ad8bc98a91c7b2d34fa4c8a67aeb97daff282df15ae974633989231a6587f83",
+  "command": [
+    "lean",
+    "-o",
+    "/tmp/succ-round2-causal-o8ayb71z/PublicBelief.olean",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2/formal/round2/PublicBelief.lean"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2",
+  "exit_code": 0,
+  "negative_control_exit_code": 1,
+  "negative_control_output": "/tmp/succ-round2-causal-o8ayb71z/FalseControl.lean:1:35: error: tactic 'decide' proved that the proposition\n  False\nis false\n",
+  "compiler_output": "'ObservationalSUCC.Round2.PublicBelief.belief_safe_iff_all_sources' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.uniform_controller_iff' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.exact_quotient_exists_iff' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.quotient_enabled_iff' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.image_post_iff' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.source_policy_descent_iff' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.belief_policy_descent_iff' depends on axioms: [propext]\n'ObservationalSUCC.Round2.PublicBelief.private_choices_do_not_glue' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.guard_safe_iff_absent' does not depend on any axioms\n'ObservationalSUCC.Round2.PublicBelief.differing_beliefs_have_separating_guard' does not depend on any axioms\n",
+  "declarations": {
+    "ObservationalSUCC.Round2.PublicBelief.belief_safe_iff_all_sources": [],
+    "ObservationalSUCC.Round2.PublicBelief.uniform_controller_iff": [],
+    "ObservationalSUCC.Round2.PublicBelief.exact_quotient_exists_iff": [],
+    "ObservationalSUCC.Round2.PublicBelief.quotient_enabled_iff": [],
+    "ObservationalSUCC.Round2.PublicBelief.image_post_iff": [],
+    "ObservationalSUCC.Round2.PublicBelief.source_policy_descent_iff": [],
+    "ObservationalSUCC.Round2.PublicBelief.belief_policy_descent_iff": [
+      "propext"
+    ],
+    "ObservationalSUCC.Round2.PublicBelief.private_choices_do_not_glue": [],
+    "ObservationalSUCC.Round2.PublicBelief.guard_safe_iff_absent": [],
+    "ObservationalSUCC.Round2.PublicBelief.differing_beliefs_have_separating_guard": []
+  },
+  "checked_utc": "2026-10-19T00:27:59.047899+00:00",
+  "resource_limits": {
+    "address_space_bytes": 1073741824,
+    "cpu_seconds": 60
+  }
+}

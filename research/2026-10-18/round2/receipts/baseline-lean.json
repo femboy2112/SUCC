@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/tmp/succ-institute-venv/bin/python",
+    "scripts/verify_institute_lean.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2",
+  "started_utc": "2026-10-19T00:11:57.817404+00:00",
+  "finished_utc": "2026-10-19T00:12:00.902722+00:00",
+  "elapsed_seconds": 3.074331,
+  "exit_code": 0,
+  "timeout": false,
+  "git_head": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+  "git_status_before": " M scripts/institute_snapshot.py\n?? research/2026-10-18/round2/\n",
+  "log": "research/2026-10-18/round2/receipts/baseline-lean.log",
+  "log_sha256": "476540d3a177552afa49e6b5e804ba40e3ad51f96473c62f70a4e3fd2204aac5"
+}

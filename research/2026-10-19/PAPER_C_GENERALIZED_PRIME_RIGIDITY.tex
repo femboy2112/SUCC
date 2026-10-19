@@ -1,0 +1,377 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,hyperref}
+\hypersetup{hidelinks}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\Z}{\mathbb Z}\newcommand{\N}{\mathbb N}
+\newcommand{\R}{\mathbb R}\newcommand{\C}{\mathbb C}
+\newcommand{\dd}{\,d}\newcommand{\comb}[1]{\delta_{#1}}
+\title{Finite Euler reflection rigidity and a positive Poisson boundary\\
+\large Paper C: Theorem Forge II}
+\author{Observational SUCC research dossier}
+\date{19 October 2026}
+\begin{document}\maketitle
+\begin{abstract}
+A finite quotient of Euler factors with real bases greater than one cannot
+satisfy reflection about a nonzero real center unless its two base multisets
+are identical. Equal cardinality is a conclusion, not an assumption. We give
+an exact reflection failure for a density-one Beurling counterfeit. For infinite
+sources we prove a separate sufficient theorem: a positive tempered measure
+with a normalized atom at zero, a unit gap and Fourier self-duality is the
+integer Dirac comb. An explicit contour-decay hypothesis converts the usual
+Gaussian-completed functional equation into this rigidity criterion, including
+for generalized real exponents. No growth estimate is inferred from a formal
+functional equation. These are source-identification results, not a proof of
+the Riemann hypothesis. Scholarly novelty remains unverified.
+\end{abstract}
+
+\section{Contract and source boundary}
+The finite theorem concerns finite multisets of real numbers greater than
+one, with multiplicities retained. The infinite theorem concerns positive
+source measures and states all analytic hypotheses separately. The earlier
+repository result ASM-01 constructs, beyond every finite observation horizon,
+a collision-free Beurling source with density one, the ordinary prime number
+theorem, residue one and the same critical-strip zeta divisor as ordinary
+arithmetic, but a failed additive-rank braid. Its finite Euler quotient is
+holomorphic and nonzero on the right half-plane; it does not preserve
+the completed functional equation. We identify a precise extra condition that
+excludes this family and a sufficient infinite-source extension.
+
+The base is PR179, commit
+\texttt{81684b4b8956f9f5da56c376ba7e4339277eb665}; the predecessor proof is
+\texttt{research/2026-10-18/ARITHMETIC\_SOURCE\_MINIMALITY.md}.
+Nothing below assumes that sibling PR178 has been merged. No zero ordinate
+is an input to a construction or a test.
+
+\section{Finite factors: no cardinality assumption}
+For finite multisets $U,V\subset(1,\infty)$ define the meromorphic function
+\[
+ F(s)=\frac{\prod_{u\in U}(1-u^{-s})}{\prod_{v\in V}(1-v^{-s})},
+ \qquad u^{-s}=e^{-s\log u}.
+\]
+Empty products equal one. Factors and their multiplicities are literal;
+coincident powers of different bases are not identified.
+
+\begin{theorem}[Finite reflection rigidity]\label{thm:finite}
+Let $c\in\R\setminus\{0\}$. If $F(s)=F(c-s)$ as meromorphic functions on
+$\C$, then $F\equiv1$ and $U=V$ as multisets. In particular the statement
+holds for $c=1$, without assuming $|U|=|V|$.
+\end{theorem}
+\begin{proof}
+Put $\epsilon=(-1)^{|U|+|V|}$ and
+$C=\prod_{u\in U}u/\prod_{v\in V}v>0$. The elementary factor identity
+$1-u^x=-u^x(1-u^{-x})$ gives, for real $t$ sufficiently large,
+\begin{equation}\label{eq:inversion}
+ F(c-t)=\epsilon C^{t-c}F(t-c).
+\end{equation}
+Both $F(t)$ and $F(t-c)$ are strictly positive and tend to one as
+$t\to\infty$. Reflection and \eqref{eq:inversion} first imply
+$\epsilon=1$, and then
+$C^{t-c}=F(t)/F(t-c)\to1$, so $C=1$. Consequently $F(t)=F(t-c)$ for
+all sufficiently large $t$. Whether $c$ is positive or negative, this gives
+$F(t)=F(t+n|c|)$ for every $n\geq0$ and every sufficiently large $t$.
+Taking $n\to\infty$ proves $F(t)=1$. The meromorphic identity theorem
+gives $F\equiv1$.
+
+Cancel equal bases on the two sides with their full multiplicities. If any
+base remains, let $b$ be the least one and let $m_b\ne0$ be its signed
+multiplicity (numerator minus denominator). On the positive real axis the
+real logarithm is defined and
+\[
+ \log F(t)=\sum_a m_a\log(1-a^{-t}),\qquad
+ \lim_{t\to\infty}b^t\log F(t)=-m_b.
+\]
+Indeed $\log(1-z)=-z+O(z^2)$ as $z\to0$; every remaining base $a>b$
+contributes a quantity tending to zero after multiplication by $b^t$, and
+the sum is finite. This contradicts $F\equiv1$. Thus no base remains.
+\end{proof}
+
+There is also a direct cardinality check when $c=1$. Each factor has a
+simple zero at zero, so $\operatorname{ord}_0F=|U|-|V|$. Since $F(1)$ is
+finite and strictly positive, reflection forces this order to vanish.
+This independently handles unequal counts. Possible poles on the imaginary
+axis cause no defect in the proof: its real-axis ratios have no zero or pole,
+and all other locations are handled by meromorphic continuation.
+
+\begin{remark}[Sharp excluded center]
+For $U=\{2,6\}$ and $V=\{3,4\}$, the counts and products agree and
+\eqref{eq:inversion} gives $F(s)=F(-s)$. The quotient is nonconstant by the
+least-base argument. Thus the restriction $c\ne0$ is necessary. Equal
+counts and equal products alone are insufficient at $c=1$.
+\end{remark}
+
+\subsection{An exact counterfeit rejected by completion}
+Delete ordinary primes $p=3,q=11$ and introduce primitive values
+$a=9/2,b=77/17$. Retain every other ordinary prime and count formal
+commutative words. The rational valuations at the deleted primes are
+\[
+ (v_3(a),v_{11}(a))=(2,0),\qquad
+ (v_3(b),v_{11}(b))=(0,1),
+\]
+so distinct words have distinct values. For $\Re s>1$ its zeta function is
+$Z_B(s)=\zeta(s)F(s)$ with $U=\{3,11\}$ and $V=\{9/2,77/17\}$.
+The identity
+\[
+ (1-a^{-1})(1-b^{-1})=(1-3^{-1})(1-11^{-1})
+\]
+gives $F(1)=1$. None of these factors vanishes in $\Re s>0$, so the same
+critical-strip divisor and residue one follow from ordinary zeta there.
+But exact rational evaluation yields
+\begin{equation}\label{eq:counterfeit}
+ F(2)=\frac{504}{517},\qquad F(-1)=\frac{34}{21}.
+\end{equation}
+In particular the same Gaussian completion cannot obey reflection. More
+generally, if $\Lambda_B=\Lambda_\zeta F$ and both completed functions
+obey reflection, meromorphic cancellation of the nonzero function
+$\Lambda_\zeta$ forces $F(s)=F(1-s)$. Theorem~\ref{thm:finite} then
+forbids every nontrivial finite alteration of primitive bases, including
+alterations with repeated generators or coincident powers.
+
+\section{A positive Poisson rigidity lemma}
+Use the Fourier convention
+$\widehat f(\xi)=\int_\R f(x)e^{-2\pi i x\xi}\dd x$ and its
+extension to tempered distributions. Write
+$\comb{a\Z}=\sum_{k\in\Z}\delta_{ak}$.
+
+\begin{theorem}[Unit gap and positive self-duality]\label{thm:gap}
+Let $\mu$ be a positive tempered Radon measure on $\R$ with
+\[
+ \mu(\{0\})=1,\qquad \mu((-1,1)\setminus\{0\})=0,
+ \qquad \widehat\mu=\mu.
+\]
+Then $\mu=\comb{\Z}$. Equivalently, an arbitrary positive mass $\rho$
+at zero gives $\mu=\rho\comb{\Z}$ under the other two hypotheses.
+\end{theorem}
+\begin{proof}
+Set
+\[
+ \phi(x)=\left(\frac{\sin\pi x}{\pi x}\right)^2,\quad \phi(0)=1,
+ \qquad T(\xi)=(1-|\xi|)_+.
+\]
+The Fourier identity $\widehat\phi=T$ follows by squaring the inverse
+transform of $\mathbf1_{[-1/2,1/2]}$ and convolving that interval with
+itself. Since $\phi$ is not Schwartz, we do not pair it with an arbitrary
+tempered measure before proving integrability. Instead put
+\[
+ \phi_\varepsilon(x)=e^{-\pi\varepsilon x^2}\phi(x),\qquad
+ G_\varepsilon(\xi)=\varepsilon^{-1/2}e^{-\pi\xi^2/\varepsilon}.
+\]
+For $\varepsilon>0$ these are Schwartz functions and
+$\widehat{\phi_\varepsilon}=T*G_\varepsilon\geq0$. Self-duality gives
+\begin{equation}\label{eq:smoothing}
+ \int\phi_\varepsilon\dd\mu
+   =\int(T*G_\varepsilon)\dd\mu.
+\end{equation}
+The right side tends to $\int T\dd\mu=1$. Here are the needed tail
+details. A positive tempered measure has polynomial mass growth: testing
+against a nonnegative Schwartz function that is at least one on $[-1,1]$
+and dilating it bounds $\mu([-R,R])$ by a fixed polynomial in $R\geq1$.
+On compact sets $0\leq T*G_\varepsilon\leq1$ and pointwise convergence
+to the continuous function $T$ holds, including at $\pm1$. For
+$|\xi|\geq2$ and $0<\varepsilon\leq1$, integration over $[-1,1]$
+and $|\xi-y|\geq|\xi|-1$ give
+\[
+ (T*G_\varepsilon)(\xi)
+ \leq 2\varepsilon^{-1/2}
+        e^{-\pi(|\xi|-1)^2/\varepsilon}
+ \leq2e^{-\pi(|\xi|-1)^2}.
+\]
+The last inequality follows by maximizing
+$v^{1/2}e^{-\pi d^2v}$ for $v\geq1,d\geq1$. This Gaussian envelope
+is integrable against a measure of polynomial growth. Dominated convergence
+therefore applies to the right side of \eqref{eq:smoothing}.
+
+On the left, $\phi_\varepsilon\uparrow\phi$ as
+$\varepsilon\downarrow0$. Monotone convergence proves
+$\int\phi\dd\mu=1$, now including finiteness. The atom at zero
+already contributes one. Positivity forces all other mass into the zeros of
+$\phi$, namely the nonzero integers. Thus $\operatorname{supp}\mu\subset\Z$.
+Because $\widehat\mu=\mu$ is a measure supported on $\Z$,
+$(e^{2\pi i\xi}-1)\widehat\mu=0$. The Fourier translation rule then
+implies that $\mu$ is invariant under translation by one. All integer atoms
+therefore have the same mass, equal to one. Rescaling proves the final claim.
+\end{proof}
+
+\subsection{Decisive mutations and an exact local obstruction}
+The gap cannot be omitted. The positive measure
+\[
+ \mu_* =\frac23\comb{2\Z}+\frac13\comb{\Z/2}
+\]
+has $\mu_*(\{0\})=1$ and is self-dual, because
+$\widehat{\comb{a\Z}}=a^{-1}\comb{\Z/a}$. It has an atom of weight
+$1/3$ at $1/2$, so it is not the integer comb. Its positive-frequency
+Dirichlet series is
+\[
+ Z_*(s)=\frac{2^s+2^{1-s}}3\zeta(s).
+\]
+The multiplier is reflection invariant and equals one at $s=1$; this
+control retains residue and completion. It is not a Beurling word source
+with all primitive values greater than one, since it has frequencies below
+one. Conversely, $\comb{\Z}+\delta_{3/2}+\delta_{-3/2}$ retains positivity,
+normalization and the gap but fails self-duality by the proof above.
+
+Suppose a positive unit-gap measure has atoms of mass at least $w>0$ at
+$\pm x$, where $x\geq1$ is not an integer. Write
+$d=\operatorname{dist}(x,\Z)\in(0,1/2]$. Concavity of sine on
+$[0,\pi/2]$ gives $\sin(\pi d)\geq2d$, hence
+\begin{equation}\label{eq:obstruction}
+ \pi^2\left(\int\phi\dd\mu-\mu(\{0\})\right)
+ \geq \frac{8wd^2}{x^2}>0,
+\end{equation}
+with an infinite left side allowed. This contradicts self-duality without
+an infinite numerical sum. The counterfeit atom $x=9/2,w=1$ already gives
+the exact pair contribution $8/81$ to the left side. The rational code
+certifies this lower bound; it does not certify the Fourier identity by a
+finite sample.
+
+\section{What an infinite-source completion must actually supply}
+Let $B$ be a locally finite multiset in $[1,\infty)$, with multiplicities
+$m_b\in\N$ and $m_1=1$. A Beurling word multiset is a special case: take
+primitive real bases greater than one, finitely many at most each bound,
+and count all their finite commutative words, including the unit. Assume
+$Z_B(s)=\sum_{b\in B}m_b b^{-s}$ converges absolutely in some right
+half-plane, where the sum here and below is over distinct values.
+No Euler product is required for the first conclusion of the next theorem.
+
+\begin{theorem}[A sufficient infinite-source rigidity contract]
+\label{thm:infinite}
+Define $\Lambda_B(s)=\pi^{-s/2}\Gamma(s/2)Z_B(s)$ in its initial
+half-plane. Suppose that for some $c>1$ in that half-plane:
+\begin{enumerate}
+\item $\Lambda_B$ extends meromorphically to $\C$, with exactly two
+simple poles, at $0,1$, with residues $-\rho,\rho$, where $\rho>0$;
+\item $\Lambda_B(s)=\Lambda_B(1-s)$;
+\item uniformly for $1-c\leq\sigma\leq c$ as $|t|\to\infty$,
+$|\Lambda_B(\sigma+it)|=O((1+|t|)^{-2})$.
+\end{enumerate}
+Then $\rho=1$ and $B$ is the positive integer multiset, each integer
+having multiplicity one. If $B$ is a Beurling word multiset, its primitive
+multiset is exactly the ordinary primes, with multiplicity one.
+\end{theorem}
+\begin{proof}
+Absolute convergence at $c$ implies
+$\sum_{b\leq X}m_b\leq X^c Z_B(c)$, so the symmetric source measure
+below is tempered and all Gaussian sums converge. Put
+$f(t)=\sum_bm_b e^{-\pi b^2t}$ for $t>0$. Mellin inversion of the
+exponential, followed by absolutely justified summation, gives
+\begin{equation}\label{eq:mellin}
+ f(t)=\frac1{4\pi i}\int_{\Re s=c}\Lambda_B(s)t^{-s/2}\dd s.
+\end{equation}
+The absolute justification on this line follows from
+$\sum_bm_b b^{-c}<\infty$ and the integrability of
+$\Gamma((c+iy)/2)$ in $y$. Shift the contour to $\Re s=1-c$.
+The uniform decay hypothesis makes the horizontal edges vanish and both
+vertical integrals absolutely convergent. The residues at $1$ and $0$
+give respectively $\rho t^{-1/2}/2$ and $-\rho/2$. Substituting
+$s=1-w$ in the remaining vertical integral and using reflection yields
+\[
+ f(t)=t^{-1/2}f(1/t)+\frac\rho2(t^{-1/2}-1).
+\]
+Consequently $\theta(t)=\rho+2f(t)$ obeys
+$\theta(t)=t^{-1/2}\theta(1/t)$.
+
+Define the positive even tempered measure
+\[
+ \mu=\rho\delta_0+\sum_bm_b(\delta_b+\delta_{-b}).
+\]
+For $g_t(x)=e^{-\pi tx^2}$, the Gaussian transform formula and theta
+reciprocity imply $\langle\mu-\widehat\mu,g_t\rangle=0$ for every
+$t>0$. The even-distribution separation argument in
+Lemma~\ref{lem:gaussians} below gives $\mu=\widehat\mu$.
+Theorem~\ref{thm:gap}, after rescaling by $\rho$, gives
+$\mu=\rho\comb{\Z}$. The source atom at $1$ has mass $m_1=1$,
+so $\rho=1$. Thus $B=\N_{>0}$ with multiplicity one.
+
+For a Beurling word source, each primitive must now be an integer at least
+two. Each ordinary prime must occur as a primitive, since a product of
+integers at least two can equal a prime only when it is a single factor.
+A repeated primitive or any composite primitive would give at least two
+different words at the same integer (using ordinary prime factors),
+contradicting multiplicity one. This identifies the primitive multiset.
+\end{proof}
+
+\begin{lemma}[Centered Gaussians separate even tempered distributions]
+\label{lem:gaussians}
+If $T\in\mathcal S'(\R)$ is even and
+$\langle T,e^{-\pi tx^2}\rangle=0$ for every $t>0$, then $T=0$.
+\end{lemma}
+\begin{proof}
+The map $t\mapsto e^{-\pi tx^2}$ is smooth with values in Schwartz
+space on $t>0$. Differentiating at $t=1$ shows that $T$ annihilates
+$x^{2k}e^{-\pi x^2}$ for every $k\geq0$. It thus annihilates every
+even dilated Hermite function with Gaussian factor $e^{-\pi x^2}$,
+using the oscillator $-d^2/dx^2+4\pi^2x^2$. Its polynomial factor is even.
+The corresponding dilated Hermite
+expansions of Schwartz functions converge in the Schwartz topology, so
+these functions span a dense subspace of the even Schwartz functions.
+For completeness, the topology assertion follows by applying powers of the
+harmonic oscillator: the Hermite coefficients of a Schwartz function
+decay faster than every inverse power of the index, while every Schwartz
+seminorm of a Hermite function grows at most polynomially, by the raising
+and lowering identities. Therefore the expansion and its derivatives with
+polynomial weights converge in every Schwartz seminorm. Continuity of $T$
+shows that it annihilates all even Schwartz functions. Its evenness makes
+it annihilate odd Schwartz functions as well, proving $T=0$.
+\end{proof}
+
+\paragraph{Analytic boundary.}
+The strip decay in Theorem~\ref{thm:infinite} is a strong, sufficient
+condition chosen to make every contour step explicit. It is not deduced
+from the displayed functional equation, residue data, finite Euler jets or
+finite observations. Absolute convergence on a right half-plane suffices
+for polynomial source growth, so a separate density-one hypothesis is not
+needed. The theorem is not a classification without growth conditions,
+nor a claim that every generalized prime zeta has the ordinary completion.
+It excludes all nonordinary positive Beurling word sources satisfying its
+complete contract; it does not establish that contract from the repository's
+observer axioms.
+
+\section{Prior art, status and the next falsifier}
+Hilberdink and Lapidus~\cite{HL} develop generalized prime zeta functions
+and relate Mellin functional equations to modular identities under explicit
+analytic hypotheses (Theorem 3.2). Their paired completions need not be the
+same Gaussian completion. This supplies context, not a classification
+premise for Theorem~\ref{thm:infinite}.
+
+Burnol~\cite{Burnol} recalls Hamburger's converse for ordinary integer
+Dirichlet series and gives extensions, including generalized exponents.
+One cannot apply the ordinary-support theorem to reconstruct integer
+support by assuming that support at the outset. Our positive-gap proof
+makes that step explicit under the stronger contour contract stated here.
+
+Baake, Spindeler and Strungaru~\cite{BSS} study Fourier eigenmeasures far
+beyond a single lattice and record the lattice Poisson formula and Hermite
+framework. Self-duality alone is therefore not our identifying premise.
+The added positive unit gap yields an extremal sinc argument of classical
+Fourier type; priority for this particular formulation is unverified.
+
+All three theorems have complete proofs above and exact adverse controls.
+Their status is \emph{proved locally, scholarly novelty unverified}. The
+finite tests exercise arithmetic identities and witnesses, not universal
+analytic claims. The cheapest falsifier for finite camouflage is
+\eqref{eq:counterfeit}; for a noninteger positive source atom it is
+\eqref{eq:obstruction}. The remaining source lemma is to derive the
+full normalized Gaussian-completed continuation and strip control from
+independent source axioms, or to exhibit a nonordinary source that passes
+those axioms while violating one of these analytic hypotheses. Merely
+renaming reflection as a source law does not close that dependency.
+
+\begin{thebibliography}{9}
+\bibitem{HL} T. Hilberdink and M. L. Lapidus,
+\emph{Beurling Zeta Functions, Generalised Primes, and Fractal Membranes},
+Acta Appl. Math. 94 (2006), 21--48.
+\href{https://doi.org/10.1007/s10440-006-9063-0}{doi:10.1007/s10440-006-9063-0}.
+Primary full text: \url{https://arxiv.org/abs/math/0410270}.
+\bibitem{Burnol} J.-F. Burnol,
+\emph{Deux extensions de Th\'eor\`emes de Hamburger}, 2011, version 2.
+\url{https://arxiv.org/abs/1106.4749}.
+\bibitem{BSS} M. Baake, T. Spindeler and N. Strungaru,
+\emph{On Eigenmeasures Under Fourier Transform},
+J. Fourier Anal. Appl. 29 (2023), article 65.
+\href{https://doi.org/10.1007/s00041-023-10045-z}{doi:10.1007/s00041-023-10045-z}.
+\end{thebibliography}
+\end{document}

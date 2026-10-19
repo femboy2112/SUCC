@@ -1,0 +1,13 @@
+{
+  "toolchain": "leanprover/lean4:v4.14.0",
+  "declarations": {
+    "ObservationalSUCC.InstituteCausal.quotient_exists_iff_fiber_congruent": ["Classical.choice"],
+    "ObservationalSUCC.InstituteCausal.run_naturality": [],
+    "ObservationalSUCC.InstituteCausal.every_representative_lifts": ["propext"],
+    "ObservationalSUCC.InstituteCausal.lawful_quotient_iff": ["propext", "Classical.choice"],
+    "ObservationalSUCC.InstituteCausal.reachable_iff_single_source_path": ["propext"],
+    "ObservationalSUCC.InstituteCausal.path_preserves_source": [],
+    "ObservationalSUCC.InstituteCausal.exclusion_refutes_path": [],
+    "ObservationalSUCC.InstituteCausal.no_path_iff_excluded": []
+  }
+}

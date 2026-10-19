@@ -1,0 +1,35 @@
+name: Bidirectional SUCC exact arithmetic cut checks
+
+on:
+  push:
+    branches:
+      - 'research/bidirectional-cut-*'
+  pull_request:
+    paths:
+      - 'observational_succ/bidirectional_cut.py'
+      - 'observational_succ/bidirectional_hilbert.py'
+      - 'observational_succ/clock_memory_resolvent.py'
+      - 'tests/test_bidirectional_cut.py'
+      - 'tests/test_bidirectional_hilbert.py'
+      - 'tests/test_clock_memory_resolvent.py'
+      - 'tests/test_claim_namespace_collisions.py'
+      - 'scripts/bidirectional_cut_probe.py'
+      - 'docs/CLAIM_NAMESPACE_REGISTRY.json'
+      - '.github/workflows/bidirectional-cut.yml'
+
+jobs:
+  exact-source:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10','3.13']
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m unittest discover -s tests -p 'test_bidirectional_*.py' -v
+      - run: python -m unittest discover -s tests -p 'test_clock_memory_resolvent.py' -v
+      - run: PYTHONPATH=. python scripts/bidirectional_cut_probe.py --verify
+      - run: python -m unittest discover -s tests -p 'test_claim_namespace_collisions.py' -v

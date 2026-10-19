@@ -1,0 +1,36 @@
+name: Authentic finite Gamma-rung packet
+on:
+  push:
+    branches: ['research/gamma-cancellation-packets-*']
+  pull_request:
+    paths:
+      - 'observational_succ/gamma_packet_certificates.py'
+      - 'tests/test_gamma_packet_certificates.py'
+      - 'scripts/gamma_packet_probe.py'
+      - '.github/workflows/gamma-packet-cancellation.yml'
+permissions:
+  contents: read
+jobs:
+  source-packet:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[test]'
+      - run: python scripts/verify_provenance.py
+      - name: Test actual authenticated Suzuki packet
+        run: |
+          python -m unittest discover -s tests -p 'test_gamma_packet_certificates.py' -v > "$RUNNER_TEMP/packets.txt" 2>&1 || { cat "$RUNNER_TEMP/packets.txt"; exit 1; }
+          cat "$RUNNER_TEMP/packets.txt"
+          grep -q '^OK$' "$RUNNER_TEMP/packets.txt"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/packets.txt"; then exit 1; fi
+      - run: PYTHONPATH=. python scripts/gamma_packet_probe.py --verify
+      - run: PYTHONPATH=. python scripts/gamma_packet_probe.py --source --verify
+      - name: Parent signed-source regression gate
+        run: python -m unittest discover -s tests -p 'test_gamma_fredholm_completion.py' -q

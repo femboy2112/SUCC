@@ -1,0 +1,22 @@
+{
+  "method": "Independent direct 2x2 inverse and exact packet reconstruction; no source-action or infinite-domain reexecution.",
+  "input_sha256": "fcf50928078e512452f2a0c7d4d044eaa5ba69f29faba4877f92e7c222bd718d",
+  "J": 8,
+  "M": 80,
+  "P": 18,
+  "results": {
+    "even_derivative": {
+      "gain_PD": true,
+      "gain_determinant_lower": "320835853323854598247/1000000000000000000000000000000",
+      "new_first_diagonal_negative": true,
+      "inverse_formula_directly_verified": true
+    },
+    "odd_derivative": {
+      "gain_PD": true,
+      "gain_determinant_lower": "741390944643632681131/1000000000000000000000000000000",
+      "new_first_diagonal_negative": true,
+      "inverse_formula_directly_verified": true
+    }
+  },
+  "RH_proved": false
+}

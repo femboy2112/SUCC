@@ -1,0 +1,57 @@
+name: Exact Suzuki exp-polynomial and source K-Riesz
+
+on:
+  push:
+    branches:
+      - research/piecewise-suzuki-certified-resolvent-2026-10-17
+    paths:
+      - "observational_succ/piecewise_suzuki_integrator.py"
+      - "observational_succ/analytic_suzuki_schur_gate.py"
+      - "observational_succ/source_riesz_high_comparison.py"
+      - "tests/test_piecewise_suzuki_integrator.py"
+      - "tests/test_source_riesz_high_comparison.py"
+      - "scripts/piecewise_suzuki_resolvent_probe.py"
+      - ".github/workflows/piecewise-suzuki-source.yml"
+  pull_request:
+    paths:
+      - "observational_succ/piecewise_suzuki_integrator.py"
+      - "observational_succ/analytic_suzuki_schur_gate.py"
+      - "observational_succ/source_riesz_high_comparison.py"
+      - "tests/test_piecewise_suzuki_integrator.py"
+      - "tests/test_source_riesz_high_comparison.py"
+      - "scripts/piecewise_suzuki_resolvent_probe.py"
+      - ".github/workflows/piecewise-suzuki-source.yml"
+
+jobs:
+  original-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install full test dependencies
+        run: python -m pip install -e ".[test]"
+      - name: Original signed Suzuki source hash and tape
+        run: python scripts/verify_provenance.py
+      - name: Exact analytic source integrator hostile controls
+        run: |
+          python -m unittest discover -s tests -p 'test_piecewise_suzuki_integrator.py' -v
+          python -m unittest discover -s tests -p 'test_contact_ladder_projection.py' -v
+      - name: Fresh high-mode Suzuki original-source holdouts
+        run: python -m unittest discover -s tests -p 'test_piecewise_suzuki_high_holdout.py' -v
+      - name: Infinite form and K-Riesz source controls
+        run: python -m unittest discover -s tests -p 'test_source_riesz_high_comparison.py' -v
+      - name: Genuine source-U rational high-response and infinite recertification
+        run: python -m unittest discover -s tests -p 'test_source_schur_response_search.py' -v
+      - name: Endpoint-null Gamma tail minimax and original signed source
+        run: python -m unittest discover -s tests -p 'test_endpoint_null_suzuki_trials.py' -v
+      - name: Certified rank-one source-surplus range and hostile infinite tails
+        run: python -m unittest discover -s tests -p 'test_source_surplus_range.py' -v
+      - name: Exact analytic vs midpoint source audit
+        run: python scripts/piecewise_suzuki_resolvent_probe.py

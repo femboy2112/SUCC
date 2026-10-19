@@ -1,5 +1,23 @@
 # Research claim ledger
 
+The additive [Academic Transmutation supplement ATX-01–12](CLAIM_SUPPLEMENT_ACADEMIC_TRANSMUTATION.md)
+records exact future-safe forgetting, causal lifting, the uniform arithmetic
+nonidentification family, Gamma bounds and two historical operator corrections.
+Priority and the original Weil sign remain unresolved. No historical row below
+is silently changed.
+The [Institute supplement](CLAIM_SUPPLEMENT_INSTITUTE.md) adds INS-01–INS-22
+without renumbering historical claims: partial-source descent, atomic/Haar
+interfaces, exact Gamma improvement, and explicit inherited analytic debt.
+
+**Academic Main IV (2026-10-18)** consolidated drafts #153–#182 into `main` (history-preserving,
+8 ancestry-aware merges); see the [integration audit](SUCC_ACADEMIC_MAIN_IV_INTEGRATION_AUDIT_2026-10-18.md).
+Two current-status corrections from the hostile audit, with no historical row changed: (a) the #163
+output key `true_complete_signed_S4_sign_proved` was renamed to `source_positive_S4_first_window`
+(its value is the first-window PSD test, not the all-radii sign); (b) the #181 and #182 prime-two
+inverse corrections are **alternative** lower bounds on the same operator excess — take the better
+single enclosure, **never their sum** (no common operator inequality licenses adding them). The
+signed four-mode Schur sign `S₄` and RH remain OPEN.
+
 **Policy:** A theorem, an exact computation, a finite experiment, an interpretation, and an RH-equivalent conjecture are different evidence types. This ledger governs current project claims; immutable founding documents retain their historically correct original wording and provenance.
 
 The [Observer–Schur Round II supplement](CLAIM_SUPPLEMENT_OBSERVER_SCHUR.md)
@@ -863,3 +881,15 @@ noninteger rational scales while preserving the original record. These are
 classical analytic reconstructions and exact source interfaces; canonical
 autocorrelation positivity and RH remain unproved. See the linked synthesis
 for observer-relative execution/proof/access boundaries and validation.
+
+## R2S — whole-residual prime-two inverse (2026-10-18)
+
+[Claim supplement](CLAIM_SUPPLEMENT_FULL_PRIME_RESOLVENT.md) and
+[machine-audited capsules](../research/2026-10-18/ROUND2_SIGNED_CAPSULES.json).
+The paper audits the original source on fixed primitive parity spaces,
+including its closed form domain, and applies the non-scalar prime mismatch
+inverse to complete nominal continuum residuals before charging source errors.
+The exact J8 and J24 instances strictly improve both signed Schur lower
+blocks. Both resulting lower blocks remain negative definite, so the true
+source sign is **UNVERIFIED**, not refuted. Universal paper proofs and exact
+finite evidence remain distinct. No Lean or RH authority is claimed.

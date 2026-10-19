@@ -1,0 +1,69 @@
+name: Institute theorem contracts and core Lean
+
+on:
+  push:
+    branches: ['research/**', main]
+    paths:
+      - 'observational_succ/institute_*.py'
+      - 'observational_succ/round2_*.py'
+      - 'tests/test_round2_*.py'
+      - 'scripts/*round2*.py'
+      - 'scripts/round2/**'
+      - 'formal/round2/**'
+      - 'research/2026-10-18/ROUND2*'
+      - 'research/2026-10-18/round2/**'
+      - 'tests/test_institute_*.py'
+      - 'scripts/*institute*.py'
+      - 'formal/InstituteCausal.lean'
+      - 'research/2026-10-18/INSTITUTE*'
+      - 'research/2026-10-18/institute/**'
+      - '.github/workflows/institute.yml'
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: institute-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  contracts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Preserve archival source and check exact contracts
+        run: |
+          python scripts/verify_provenance.py
+          python -m unittest discover -s tests -p 'test_institute_*.py' -v
+          python -m unittest discover -s tests -p 'test_round2_*.py' -v
+          python scripts/institute_audit.py
+          python scripts/round2_operators_probe.py
+      - name: Exact source-normalized Gamma certificate
+        run: python scripts/institute_schur_probe.py
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install elan and pinned core Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Kernel, false-proof control, exact axiom manifest
+        run: |
+          python3 scripts/verify_institute_lean.py
+          python3 scripts/verify_round2_operators_lean.py
+          python3 scripts/round2/verify_causal_lean.py

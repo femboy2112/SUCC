@@ -1,0 +1,80 @@
+{
+  "audit_date": "2026-10-19",
+  "repository": "femboy2112/SUCC",
+  "main": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+  "base": "81684b4b8956f9f5da56c376ba7e4339277eb665",
+  "pull_requests": [
+    {
+      "number": 176,
+      "url": "https://github.com/femboy2112/SUCC/pull/176",
+      "head": "research/mobius-index-infinity-2026-10-18",
+      "head_sha": "a17197697c0ea0259592500b233419fbedf691cf",
+      "base": "research/equivariant-redundancy-weil-2026-10-18",
+      "base_sha": "8216c6fc042704aecd5fb7872facd681216e4be7",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 177,
+      "url": "https://github.com/femboy2112/SUCC/pull/177",
+      "head": "research/original-continuum-residual-schur-2026-10-18",
+      "head_sha": "f309d9104ba480c1999c962af1df7c50f19e1bfe",
+      "base": "research/gaussian-halfdensity-kresidual-2026-10-18",
+      "base_sha": "6fb1dba87ed273350a636b14b248fccacfb88934",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 178,
+      "url": "https://github.com/femboy2112/SUCC/pull/178",
+      "head": "research/institute-nucleus-2026-10-18",
+      "head_sha": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+      "base": "main",
+      "base_sha": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "number": 179,
+      "url": "https://github.com/femboy2112/SUCC/pull/179",
+      "head": "research/academic-transmutation-2026-10-18",
+      "head_sha": "81684b4b8956f9f5da56c376ba7e4339277eb665",
+      "base": "research/original-continuum-residual-schur-2026-10-18",
+      "base_sha": "f309d9104ba480c1999c962af1df7c50f19e1bfe",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    }
+  ],
+  "base_pr_triggered_runs": [
+    {
+      "id": 39178976570,
+      "name": "Observational SUCC validation",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 39178976679,
+      "name": "One Object II original source cancellation and zero-shift Schur",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 39178976684,
+      "name": "Academic transmutation exact and formal certificates",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 39178976590,
+      "name": "Collective observer source and certificate replay",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "source_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "scope": "Fresh read-only branch metadata, Git ancestry checked separately; PR178 and PR176 are not ancestors of PR179."
+}

@@ -1,0 +1,101 @@
+{
+  "RH_proved": false,
+  "analytic_camouflage": {
+    "affine_counterexample": {
+      "Sx": "9/2",
+      "defect": -1,
+      "q": "2",
+      "rank_q": 2,
+      "rank_qSx": 9,
+      "rank_qx": 8,
+      "x": "4"
+    },
+    "critical_strip_zero_locations_loaded": false,
+    "finite_horizons": {
+      "160": 159,
+      "240": 240,
+      "40": 38,
+      "400": 397,
+      "80": 79
+    },
+    "first_reconstructed_atoms": [
+      "1",
+      "2",
+      "35/11",
+      "4",
+      "9/2",
+      "70/11",
+      "7",
+      "8",
+      "9",
+      "1225/121"
+    ],
+    "first_unit_cell": "1",
+    "rational_mutant_atom_count_240": 240,
+    "renewal_residual_at_3": "-1",
+    "renewal_residual_at_35_over_11": "1",
+    "replaced_generator_3": "9/2",
+    "replaced_generator_5": "35/11",
+    "residue_identity": {
+      "all_nontrivial_zero_coordinates_read": false,
+      "new_local_euler_product": "8/15",
+      "original_local_density": "8/15",
+      "proof_of_density_one_is_analytic_not_finite_enumeration": true,
+      "same_prime_count_as_ordinary_up_to_constant": true,
+      "zeta_factor_at_one": "1"
+    }
+  },
+  "finite_clock": {
+    "C4_by_C2_bad_carry_period": 4,
+    "C4_by_C2_carry_period": 8,
+    "C4_times_C6_cartesian_size": 24,
+    "C4_times_C6_rooted_diagonal_size": 12,
+    "actual_clock_probe_triples": 564,
+    "closure_lcm": 840,
+    "finite_C30_virtual_four_not_authenticated": true,
+    "independent_divisor_lcm_closed_families": 845,
+    "infinite_countermodel": {
+      "capped_depth": 3,
+      "capped_prime": 2,
+      "declared_infinite_procyclic_all_simple_quotients": true,
+      "first_missing_power": 16,
+      "observationally_equal_on_queries": true,
+      "observed": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        12,
+        15,
+        30,
+        84
+      ]
+    },
+    "observed_moduli": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      8,
+      12,
+      15,
+      30,
+      84
+    ],
+    "pro2_infinite_depth_no_odd_primes": true,
+    "source_gated_clock_compiler_period": 360,
+    "source_gated_compiler_actual_carry_counts": {
+      "2^1": 180,
+      "2^2": 90,
+      "3^1": 120
+    },
+    "source_gated_compiler_did_not_observe_universal_completion": true,
+    "squarefree_every_prime_no_prime_square": true,
+    "verified_carry_models": 1440
+  },
+  "next_proof_gate": "derive prime-totality plus unbounded prime-power lift, or exact renewal, from independent source-indexed causal laws",
+  "status": "exact finite and symbolic identities only; no global observation theorem from tests"
+}

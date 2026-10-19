@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python",
+    "scripts/round2_signed_receipt_review.py",
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-signed/research/2026-10-18/ROUND2_FULL_PRIME_J24.json"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2",
+  "started_utc": "2026-10-19T00:25:07.365359+00:00",
+  "finished_utc": "2026-10-19T00:25:07.612041+00:00",
+  "elapsed_seconds": 0.214913,
+  "exit_code": 1,
+  "timeout": false,
+  "git_head": "a46032adf099938823fe64ff0c40778b8037949e",
+  "git_status_before": " M research/2026-10-18/institute/theorem_registry.json\n M research/2026-10-18/round2/operators_lean_receipt.json\n M scripts/build_institute_registry.py\n M scripts/institute_snapshot.py\n M scripts/verify_round2_operators_lean.py\n?? observational_succ/round2_completion.py\n?? research/2026-10-18/ROUND2_COMPLETION.md\n?? research/2026-10-18/ROUND2_RECONSTRUCTION.md\n?? research/2026-10-18/round2/environment.json\n?? research/2026-10-18/round2/github_snapshot.json\n?? research/2026-10-18/round2/receipts/\n?? scripts/round2_signed_receipt_review.py\n?? tests/test_round2_completion.py\n",
+  "log": "research/2026-10-18/round2/receipts/signed-review-digit-failure.log",
+  "log_sha256": "1cd8d3b93f89f7dbd98c128f79fa7065d851a13776a8664637490374a1c4a06a"
+}

@@ -1,0 +1,112 @@
+{
+  "operation": "SUCC Academic Main IV",
+  "date": "2026-10-18",
+  "base_main": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+  "integration_commit": "e706ecda7c66443be01400756dbc9bd7a60abdfb",
+  "merge_method": "8 terminal tips merged --no-ff in ancestry order",
+  "merge_order": [
+    182,
+    181,
+    163,
+    176,
+    155,
+    167,
+    173,
+    180
+  ],
+  "all_30_heads_are_ancestors_of_integration": true,
+  "conflicts_resolved": [
+    {
+      "file": "docs/SUCC_RESEARCH_DEPENDENCY_DAG.md",
+      "at_merge": 181,
+      "resolution": "additive union (ATX + R2S sections)"
+    },
+    {
+      "file": "docs/CLAIM_NAMESPACE_REGISTRY.json",
+      "at_merge": 180,
+      "resolution": "structural union: ATX + INS as separate objects; JSON re-parses; all fq_prefix unique"
+    },
+    {
+      "file": "docs/CLAIM_INDEX.md",
+      "at_merge": 180,
+      "resolution": "additive union"
+    },
+    {
+      "file": "docs/CLAIM_LEDGER.md",
+      "at_merge": 180,
+      "resolution": "additive union"
+    },
+    {
+      "file": "docs/SUCC_RESEARCH_DEPENDENCY_DAG.md",
+      "at_merge": 180,
+      "resolution": "additive union (+ Round II INS paragraph)"
+    }
+  ],
+  "tips_to_covered_prs": {
+    "155": [
+      153,
+      155
+    ],
+    "163": [
+      154,
+      156,
+      158,
+      159,
+      161,
+      163
+    ],
+    "167": [
+      157,
+      162,
+      165,
+      166,
+      167
+    ],
+    "173": [
+      157,
+      162,
+      165,
+      173
+    ],
+    "176": [
+      153,
+      169,
+      172,
+      175,
+      176
+    ],
+    "180": [
+      178,
+      180
+    ],
+    "181": [
+      154,
+      156,
+      158,
+      159,
+      160,
+      164,
+      168,
+      170,
+      171,
+      174,
+      177,
+      181
+    ],
+    "182": [
+      154,
+      156,
+      158,
+      159,
+      160,
+      164,
+      168,
+      170,
+      171,
+      174,
+      177,
+      179,
+      182
+    ]
+  }
+}

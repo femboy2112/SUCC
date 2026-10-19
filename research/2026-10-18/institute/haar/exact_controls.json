@@ -1,0 +1,113 @@
+{
+  "authority": "EXACT_FINITE_CONTROLS_ONLY",
+  "haar_unit_masses": [
+    {
+      "atomic_vacuum_survives": 1,
+      "euler": "1",
+      "primes": [],
+      "residue_count": "1"
+    },
+    {
+      "atomic_vacuum_survives": 1,
+      "euler": "1/2",
+      "primes": [
+        2
+      ],
+      "residue_count": "1/2"
+    },
+    {
+      "atomic_vacuum_survives": 1,
+      "euler": "1/3",
+      "primes": [
+        2,
+        3
+      ],
+      "residue_count": "1/3"
+    },
+    {
+      "atomic_vacuum_survives": 1,
+      "euler": "4/15",
+      "primes": [
+        2,
+        3,
+        5
+      ],
+      "residue_count": "4/15"
+    },
+    {
+      "atomic_vacuum_survives": 1,
+      "euler": "8/35",
+      "primes": [
+        2,
+        3,
+        5,
+        7
+      ],
+      "residue_count": "8/35"
+    },
+    {
+      "atomic_vacuum_survives": 1,
+      "euler": "16/77",
+      "primes": [
+        2,
+        3,
+        5,
+        7,
+        11
+      ],
+      "residue_count": "16/77"
+    }
+  ],
+  "missing_sqrt_two_mutation": {
+    "atomic_vacuum_norm_squared": "1",
+    "unnormalized_cutoff_norm_squared": "1/2"
+  },
+  "not_certified_by_finite_report": [
+    "vanishing of the infinite Euler product",
+    "strong operator convergence",
+    "distributional support classification",
+    "academic novelty"
+  ],
+  "omitted_prime_mutation": {
+    "after_adding_7": 0,
+    "finite_projector_value": 1,
+    "selected_primes": [
+      2,
+      3,
+      5
+    ],
+    "witness_integer": 7
+  },
+  "unweighted_dirac_mutation": {
+    "J_V2_e1_pairing_squared": "1",
+    "U2_distribution_J_e1_pairing_squared": "1/2",
+    "prime": 2,
+    "test": "constant_one"
+  },
+  "weak_dual_extension_obstruction": [
+    {
+      "cutoff": 1,
+      "functional_norm_squared": "1"
+    },
+    {
+      "cutoff": 2,
+      "functional_norm_squared": "3/2"
+    },
+    {
+      "cutoff": 4,
+      "functional_norm_squared": "25/12"
+    },
+    {
+      "cutoff": 8,
+      "functional_norm_squared": "761/280"
+    },
+    {
+      "cutoff": 16,
+      "functional_norm_squared": "2436559/720720"
+    },
+    {
+      "cutoff": 64,
+      "functional_norm_squared": "623171679694215690971693339/131362987122535807501262400"
+    }
+  ]
+}

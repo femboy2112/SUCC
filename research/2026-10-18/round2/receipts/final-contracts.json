@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/tmp/succ-institute-venv/bin/python",
+    "scripts/institute_audit.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-round2",
+  "started_utc": "2026-10-19T00:26:24.255953+00:00",
+  "finished_utc": "2026-10-19T00:26:24.735264+00:00",
+  "elapsed_seconds": 0.46513,
+  "exit_code": 0,
+  "timeout": false,
+  "git_head": "45585185adeed789f33d2afc29b6f6a18fda6fc9",
+  "git_status_before": " M .github/workflows/institute.yml\n M docs/CLAIM_INDEX.md\n M docs/CLAIM_LEDGER.md\n M docs/CLAIM_NAMESPACE_REGISTRY.json\n M docs/CLAIM_SUPPLEMENT_INSTITUTE.md\n M docs/SUCC_RESEARCH_DEPENDENCY_DAG.md\n M research/2026-10-18/institute/theorem_registry.json\n M research/2026-10-18/round2/operators_lean_receipt.json\n M scripts/build_institute_registry.py\n M scripts/institute_snapshot.py\n M scripts/verify_round2_operators_lean.py\n?? observational_succ/round2_completion.py\n?? research/2026-10-18/ROUND2_COMPLETION.md\n?? research/2026-10-18/ROUND2_RECONSTRUCTION.md\n?? research/2026-10-18/round2/environment.json\n?? research/2026-10-18/round2/github_snapshot.json\n?? research/2026-10-18/round2/receipts/\n?? scripts/round2_signed_receipt_review.py\n?? tests/test_round2_completion.py\n?? tests/test_round2_registry.py\n",
+  "log": "research/2026-10-18/round2/receipts/final-contracts.log",
+  "log_sha256": "d87079d6a3faf7d50cf1481cbfdc3600d5aa5192a463a8959e9a9ac291a2d2a3"
+}

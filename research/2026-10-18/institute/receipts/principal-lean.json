@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "scripts/verify_institute_lean.py",
+    "--output",
+    "research/2026-10-18/institute/kernel_receipt.json"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-institute",
+  "started_utc": "2026-10-18T22:51:31.050589+00:00",
+  "finished_utc": "2026-10-18T22:51:31.776585+00:00",
+  "elapsed_seconds": 0.716039,
+  "exit_code": 0,
+  "timeout": false,
+  "git_head": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+  "git_status_before": "?? formal/InstituteCausal.lean\n?? observational_succ/institute_atomic_haar.py\n?? observational_succ/institute_audit.py\n?? observational_succ/institute_causal.py\n?? research/2026-10-18/\n?? scripts/institute_audit.py\n?? scripts/institute_run_receipt.py\n?? scripts/institute_schur_probe.py\n?? scripts/institute_snapshot.py\n?? scripts/verify_institute_lean.py\n?? tests/test_institute_atomic_haar.py\n?? tests/test_institute_audit.py\n?? tests/test_institute_causal.py\n?? tests/test_institute_schur.py\n",
+  "log": "research/2026-10-18/institute/receipts/principal-lean.log",
+  "log_sha256": "36c31c39020c47a18b096414627d2e32ab4ce0fb509f0e84a108fe1823ff80cc"
+}

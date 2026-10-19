@@ -1,0 +1,79 @@
+name: Original hidden-memory Schur and delayed observer source tests
+
+on:
+  push:
+    branches:
+      - 'research/hidden-memory-schur-*'
+  pull_request:
+    paths:
+      - 'observational_succ/hidden_memory_schur.py'
+      - 'tests/test_hidden_memory_schur.py'
+      - 'scripts/hidden_memory_schur_probe.py'
+      - 'research/2026-10-17/HIDDEN_MEMORY_SCHUR_AND_TEMPORAL_OBSERVERS.md'
+      - '.github/workflows/hidden-memory-schur.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  hidden-memory:
+    name: Hidden spectral memory and signed Schur (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Check original source SHA, packages, and provenance
+        run: |
+          python -m pip install -e '.[test]'
+          python scripts/verify_provenance.py
+      - name: Require every actual source test to execute, zero skips
+        run: |
+          python -m unittest discover -s tests -p 'test_hidden_memory_schur.py' -v 2>&1 | tee "$RUNNER_TEMP/hidden-memory.log"
+          grep -q 'Ran 40 tests' "$RUNNER_TEMP/hidden-memory.log"
+          grep -q '^OK$' "$RUNNER_TEMP/hidden-memory.log"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/hidden-memory.log"; then exit 1; fi
+      - name: Replay original source and independent deterministic finite matrices
+        run: |
+          python scripts/hidden_memory_schur_probe.py --source --verify > "$RUNNER_TEMP/hidden-memory.json"
+          python - <<'PY'
+          import json,os
+          from fractions import Fraction as F
+          from pathlib import Path
+          d=json.loads((Path(os.environ['RUNNER_TEMP'])/'hidden-memory.json').read_text())
+          r=d['authentic_suzuki_first_prime_source']
+          assert r['original_source_blob']=='0cc8510b71d178fc79e8d410a86d8b6014cf9178'
+          assert r['source_low_rank_upper']==453
+          assert r['discrete_hidden_memory_tail_upper']=='121/262144'
+          assert r['signed_high_gap_lower']=='9/16'
+          cell=d['authentic_explicit_453_cell_source']
+          assert cell['source_conditional_memory_tail_upper']==str(__import__('fractions').Fraction(444268576,2**64))
+          assert cell['explicit_equal_cell_observation_rank']==453
+          sync=d['authentic_prime2_SUCC_clock_resonance']
+          assert sync['nearest_SUCC_integer_shift']==445
+          assert F(sync['phase_error_certified_upper'])<F(1,2000)
+          assert sync['original_source_blob']==r['original_source_blob']
+          aligned=d['authentic_aligned_642_cell_source']
+          assert aligned['explicit_equal_cell_observation_rank']==642
+          assert aligned['source_conditional_memory_tail_upper']==str(F(891931456,2**64))
+          assert not cell['polar_cross_only'] and not cell['actual_original_source_cell_cross_computed']
+          assert not r['source_high_projector_built'] and not r['source_delayed_resolvent_probes_computed']
+          assert d['two_hidden_baths']['opposite_S_signs'] is True
+          assert not d['Suzuki_first_window_sign_proved'] and not d['RH_proved']
+          PY
+      - name: Preserve exact mathematical receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hidden-memory-${{ matrix.python-version }}
+          if-no-files-found: warn
+          path: |
+            ${{ runner.temp }}/hidden-memory.log
+            ${{ runner.temp }}/hidden-memory.json
