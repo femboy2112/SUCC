@@ -103,6 +103,19 @@ class ABCTriple:
         result.sort()
         return tuple(result)
 
+    def exponent_layers(self) -> tuple[tuple[int, int, int, int], ...]:
+        """Source-indexed monomial anatomy: (exponent, a_k, b_k, c_k).
+
+        Reconstruction is exact: a=product(a_k**k), and likewise b,c;
+        product of a_k*b_k*c_k is rad(abc). Unlike an aggregate energy,
+        each layer retains the occupied source slot and exponent.
+        """
+        layers: dict[int, list[int]] = {}
+        for p, slot, k in self.clock_signature():
+            slot_factors = layers.setdefault(k, [1, 1, 1])
+            slot_factors["abc".index(slot)] *= p
+        return tuple((k, *layers[k]) for k in sorted(layers))
+
     def family_key(self) -> tuple[int, int, int, int, int]:
         """(support width, repeated depth, occupied slot counts a,b,c)."""
         signature = self.clock_signature()
@@ -166,6 +179,28 @@ def prime_progression_lifts(p_minus: int, p_mid: int, p_plus: int) -> tuple[ABCT
     d = p_mid-p_minus
     return (ABCTriple(p_minus, p_plus, 2*p_mid),
             ABCTriple(p_minus*p_plus, d*d, p_mid*p_mid))
+
+
+def prime_ap_shadow_fan(primes: tuple[int, ...]) -> tuple[ABCTriple, ...]:
+    """All symmetric prime-3AP square lifts inside one actual prime L-AP.
+
+    Exactly floor((L-1)**2/4) outputs for any L>=3; duplicates as
+    integer values cannot occur for distinct middle prime/step pairs.
+    This is a finite exact identity, not a proof of Green--Tao.
+    """
+    if (not isinstance(primes, tuple) or len(primes) < 3
+            or any(not prime(p) or p == 2 for p in primes)
+            or not all(primes[j+1]-primes[j] == primes[1]-primes[0]
+                       for j in range(len(primes)-1))
+            or primes[1] <= primes[0]):
+        raise ABCClockError("a distinct odd-prime arithmetic progression is required")
+    results = []
+    for j in range(1, len(primes)-1):
+        for k in range(1, min(j, len(primes)-1-j)+1):
+            _, square = prime_progression_lifts(primes[j-k], primes[j], primes[j+k])
+            results.append(square)
+    assert len(results) == (len(primes)-1)**2 // 4
+    return tuple(results)
 
 
 def radical_sieve(limit: int) -> tuple[int, ...]:
