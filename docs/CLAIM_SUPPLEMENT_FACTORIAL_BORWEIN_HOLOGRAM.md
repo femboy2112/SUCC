@@ -1,4 +1,4 @@
-# Factorial Borwein hologram claim supplement (FBH-01–FBH-09)
+# Factorial Borwein hologram claim supplement (FBH-01–FBH-10)
 
 Full derivations, hypothesis boundaries, source mappings, controls and next falsifier:
 [Factorial Borwein arithmetic hologram](../research/2026-10-19/FACTORIAL_BORWEIN_HOLOGRAPHIC_CLOCK.md).
@@ -18,8 +18,12 @@ Full derivations, hypothesis boundaries, source mappings, controls and next fals
 | FBH-08 | All N>=4, integer and half-integer samples do not identify factorial label N, whereas a selected rational off-grid point distinguishes N=4 from N=6; a different rational point remains flat | **PROVED LOCAL / TESTED MODEL**: explicit exact CDF and independent width-spectrum source |
 | FBH-09 | Replacing repeated prime occupations by first prime reciprocal widths p=2,3,5 preserves lattice delta | **REFUTED**: exact `B_mutated(1)=1/43200>0` and reciprocal budget 31/30>1 |
 
-**Execution:** `python -m unittest discover -s tests -p 'test_factorial_borwein_hologram.py' -v`; `python scripts/factorial_borwein_hologram_probe.py`. Local isolated test harness in Python 3.13 reported **13/13 passed**, with a mathematical surrogate of the upstream Borwein CDF API. Hosted CI against the complete parent implementation is the separate acceptance gate. No Lean proof or large-scale number-theoretic inference is claimed.
+| FBH-10 | Fixed W>=2 Poissonized SUCC on Z/WZ has exact Fourier damping with gap 1-cos(2pi/W) in [8/W^2,2pi^2/W^2]; total variation from Haar is bounded below by half its slow Fourier amplitude, so no uniform mixing at fixed t as W grows | **CLASSICAL / PROVED LOCAL** via character diagonalization; moving-CRT prime randomness is NOT supplied |
+
+**Execution:** `python -m unittest discover -s tests -p 'test_factorial_borwein_hologram.py' -v`; `python -m scripts.factorial_borwein_hologram_probe`. Local isolated test harness in Python 3.13 reported **13/13 passed**, with a mathematical surrogate of the upstream Borwein CDF API. Hosted CI against the complete parent implementation is the separate acceptance gate. No Lean proof or large-scale number-theoretic inference is claimed.
 
 **External primary source:** D. Borwein and J. M. Borwein, *Some Remarkable Properties of Sinc and Related Integrals* (2001), Ramanujan J. 5, 73–89, https://gwern.net/doc/math/humor/2001-borwein.pdf. Their sinc/convolution theorem is **classical**, not a proof of our indexing or academic priority.
 
 **Next discriminator:** The actual source-triple constraint `a+b=c` with simultaneous (p^k)-clock gates for three pairwise-coprime slots and noncircular, family-uniform analytic bounds; compare explicitly against published ABC exceptional-set estimates, not only fitted examples.
+
+**Hosted focused CI:** on the corrected workflow, the inherited 8 Borwein tests plus 13 new tests passed under Python 3.10 and 3.13; full SUCC repository validation remains independent.
