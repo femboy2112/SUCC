@@ -1,0 +1,43 @@
+{
+  "instances": [
+    {
+      "n": 1,
+      "source_digest": "c6be66c165390f2e209a079547dcf35a5030835e67aa7ed906db9b362c19ea78",
+      "distinct_safe_menus": 1,
+      "expected": 1
+    },
+    {
+      "n": 2,
+      "source_digest": "bf660d63a09272b1f9f09185d9022772bb543b6722c13395ae83eb6cca3d834f",
+      "distinct_safe_menus": 3,
+      "expected": 3
+    },
+    {
+      "n": 3,
+      "source_digest": "36fb6f8c8fdd4bf8104b1c353b9704321dc36fee9ae7e6b79594b800b64c036c",
+      "distinct_safe_menus": 7,
+      "expected": 7
+    },
+    {
+      "n": 4,
+      "source_digest": "a5467d985a6b30eae6caa9f496fde5ac4ccd106d93c784802a4bb54ecb2a2e2b",
+      "distinct_safe_menus": 15,
+      "expected": 15
+    },
+    {
+      "n": 5,
+      "source_digest": "778ff4b9aa83b6050a42585f26cffd5dc1055cb81fb9854bb917aa1466659a2f",
+      "distinct_safe_menus": 31,
+      "expected": 31
+    },
+    {
+      "n": 6,
+      "source_digest": "a19ee66265eb45b522852b33564fd51fe7a524683f9b3de6bacb3b1c8907e8cf",
+      "distinct_safe_menus": 63,
+      "expected": 63
+    }
+  ],
+  "theorem_scope": "EXACT_MENU_MONITOR_STATE_SIZE",
+  "winning_policy_memory_lower_bound": false,
+  "academic_novelty_established": false
+}

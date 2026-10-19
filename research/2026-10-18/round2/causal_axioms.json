@@ -1,0 +1,16 @@
+{
+  "toolchain": "leanprover/lean4:v4.14.0",
+  "source": "formal/round2/PublicBelief.lean",
+  "declarations": {
+    "ObservationalSUCC.Round2.PublicBelief.belief_safe_iff_all_sources": [],
+    "ObservationalSUCC.Round2.PublicBelief.uniform_controller_iff": [],
+    "ObservationalSUCC.Round2.PublicBelief.exact_quotient_exists_iff": [],
+    "ObservationalSUCC.Round2.PublicBelief.quotient_enabled_iff": [],
+    "ObservationalSUCC.Round2.PublicBelief.image_post_iff": [],
+    "ObservationalSUCC.Round2.PublicBelief.source_policy_descent_iff": [],
+    "ObservationalSUCC.Round2.PublicBelief.belief_policy_descent_iff": ["propext"],
+    "ObservationalSUCC.Round2.PublicBelief.private_choices_do_not_glue": [],
+    "ObservationalSUCC.Round2.PublicBelief.guard_safe_iff_absent": [],
+    "ObservationalSUCC.Round2.PublicBelief.differing_beliefs_have_separating_guard": []
+  }
+}

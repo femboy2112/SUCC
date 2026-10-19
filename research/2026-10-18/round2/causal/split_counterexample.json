@@ -1,0 +1,823 @@
+{
+  "sources": [
+    {
+      "source": {
+        "source_id": "split-2",
+        "basis": "private-origin-public-label-cost",
+        "digest": "2d14a7fc25b26ed140cd864cfe4cd9cac5e793ad3928ab0caebd589d0b6ec109",
+        "states": [
+          "root",
+          "s0",
+          "s1",
+          "end"
+        ],
+        "actions": [
+          "a",
+          "b0",
+          "b1"
+        ],
+        "original": {
+          "root": "split-2",
+          "s0": "split-2",
+          "s1": "split-2",
+          "end": "split-2"
+        },
+        "observation": {
+          "root": "root",
+          "s0": "middle",
+          "s1": "middle",
+          "end": "end"
+        },
+        "transitions": [
+          {
+            "before": "root",
+            "action": "a",
+            "edges": [
+              {
+                "target": "s0",
+                "outcome": "ok",
+                "cost": "1"
+              },
+              {
+                "target": "s1",
+                "outcome": "ok",
+                "cost": "1"
+              }
+            ]
+          },
+          {
+            "before": "s0",
+            "action": "b0",
+            "edges": [
+              {
+                "target": "end",
+                "outcome": "done",
+                "cost": "1"
+              }
+            ]
+          },
+          {
+            "before": "s1",
+            "action": "b1",
+            "edges": [
+              {
+                "target": "end",
+                "outcome": "done",
+                "cost": "1"
+              }
+            ]
+          }
+        ]
+      },
+      "certificate": {
+        "status": "NO_PUBLIC_POLICY",
+        "source_digest": "2d14a7fc25b26ed140cd864cfe4cd9cac5e793ad3928ab0caebd589d0b6ec109",
+        "initial": [
+          "root"
+        ],
+        "horizon": 2,
+        "policy": null,
+        "loss": {
+          "blockers": [
+            {
+              "action": "a",
+              "unavailable_state": null,
+              "report": {
+                "outcome": "ok",
+                "cost": "1",
+                "observation": "middle"
+              },
+              "child": {
+                "blockers": [
+                  {
+                    "action": "a",
+                    "unavailable_state": "s0",
+                    "report": null,
+                    "child": null
+                  },
+                  {
+                    "action": "b0",
+                    "unavailable_state": "s1",
+                    "report": null,
+                    "child": null
+                  },
+                  {
+                    "action": "b1",
+                    "unavailable_state": "s0",
+                    "report": null,
+                    "child": null
+                  }
+                ]
+              }
+            },
+            {
+              "action": "b0",
+              "unavailable_state": "root",
+              "report": null,
+              "child": null
+            },
+            {
+              "action": "b1",
+              "unavailable_state": "root",
+              "report": null,
+              "child": null
+            }
+          ]
+        },
+        "checked_nodes": 2
+      },
+      "certificate_verified": true,
+      "chance_source_id": "split-2-explicit-chance",
+      "chance_rows": [
+        {
+          "public_prefix": [],
+          "action": "a",
+          "original": "split-2",
+          "state": "root",
+          "atoms": [
+            {
+              "outcome": "ok",
+              "after": "s0",
+              "branch": "0",
+              "probability": "1/2"
+            },
+            {
+              "outcome": "ok",
+              "after": "s1",
+              "branch": "1",
+              "probability": "1/2"
+            }
+          ]
+        },
+        {
+          "public_prefix": [
+            [
+              "a",
+              "ok"
+            ]
+          ],
+          "action": "b0",
+          "original": "split-2",
+          "state": "s0",
+          "atoms": [
+            {
+              "outcome": "done",
+              "after": "end",
+              "branch": "0",
+              "probability": "1"
+            }
+          ]
+        },
+        {
+          "public_prefix": [
+            [
+              "a",
+              "ok"
+            ]
+          ],
+          "action": "b1",
+          "original": "split-2",
+          "state": "s1",
+          "atoms": [
+            {
+              "outcome": "done",
+              "after": "end",
+              "branch": "0",
+              "probability": "1"
+            }
+          ]
+        }
+      ],
+      "LP": {
+        "variables": [
+          [
+            "node",
+            []
+          ],
+          [
+            "node",
+            [
+              [
+                "a",
+                "ok"
+              ]
+            ]
+          ],
+          [
+            "action",
+            [],
+            "a"
+          ]
+        ],
+        "matrix": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "1",
+            "-1"
+          ],
+          [
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "rhs": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "result": {
+          "status": "PROBABILITY_COUPLING_FAILURE",
+          "primal": null,
+          "dual": [
+            "-1",
+            "-1",
+            "-1",
+            "-1",
+            "0"
+          ],
+          "checked_bases": 0,
+          "reason": "exact linear inconsistency"
+        },
+        "verified": true
+      }
+    },
+    {
+      "source": {
+        "source_id": "combined-2",
+        "basis": "private-origin-public-label-cost",
+        "digest": "1053fe48d0c4941271c987d65fe67102c0ad8b0e936ae1fe4cd8f0a99d9e2891",
+        "states": [
+          "root",
+          "middle",
+          "end"
+        ],
+        "actions": [
+          "a",
+          "b0",
+          "b1"
+        ],
+        "original": {
+          "root": "combined-2",
+          "middle": "combined-2",
+          "end": "combined-2"
+        },
+        "observation": {
+          "root": "root",
+          "middle": "middle",
+          "end": "end"
+        },
+        "transitions": [
+          {
+            "before": "root",
+            "action": "a",
+            "edges": [
+              {
+                "target": "middle",
+                "outcome": "ok",
+                "cost": "1"
+              }
+            ]
+          },
+          {
+            "before": "middle",
+            "action": "b0",
+            "edges": [
+              {
+                "target": "end",
+                "outcome": "done",
+                "cost": "1"
+              }
+            ]
+          },
+          {
+            "before": "middle",
+            "action": "b1",
+            "edges": [
+              {
+                "target": "end",
+                "outcome": "done",
+                "cost": "1"
+              }
+            ]
+          }
+        ]
+      },
+      "certificate": {
+        "status": "PUBLIC_POLICY_EXISTS",
+        "source_digest": "1053fe48d0c4941271c987d65fe67102c0ad8b0e936ae1fe4cd8f0a99d9e2891",
+        "initial": [
+          "root"
+        ],
+        "horizon": 2,
+        "policy": {
+          "action": "a",
+          "branches": [
+            [
+              {
+                "outcome": "ok",
+                "cost": "1",
+                "observation": "middle"
+              },
+              {
+                "action": "b0",
+                "branches": [
+                  [
+                    {
+                      "outcome": "done",
+                      "cost": "1",
+                      "observation": "end"
+                    },
+                    {
+                      "action": null,
+                      "branches": []
+                    }
+                  ]
+                ]
+              }
+            ]
+          ]
+        },
+        "loss": null,
+        "checked_nodes": 3
+      },
+      "certificate_verified": true,
+      "chance_source_id": "combined-2-explicit-chance",
+      "chance_rows": [
+        {
+          "public_prefix": [],
+          "action": "a",
+          "original": "combined-2",
+          "state": "root",
+          "atoms": [
+            {
+              "outcome": "ok",
+              "after": "middle",
+              "branch": "0",
+              "probability": "1"
+            }
+          ]
+        },
+        {
+          "public_prefix": [
+            [
+              "a",
+              "ok"
+            ]
+          ],
+          "action": "b0",
+          "original": "combined-2",
+          "state": "middle",
+          "atoms": [
+            {
+              "outcome": "done",
+              "after": "end",
+              "branch": "0",
+              "probability": "1"
+            }
+          ]
+        },
+        {
+          "public_prefix": [
+            [
+              "a",
+              "ok"
+            ]
+          ],
+          "action": "b1",
+          "original": "combined-2",
+          "state": "middle",
+          "atoms": [
+            {
+              "outcome": "done",
+              "after": "end",
+              "branch": "0",
+              "probability": "1"
+            }
+          ]
+        }
+      ],
+      "LP": {
+        "variables": [
+          [
+            "node",
+            []
+          ],
+          [
+            "node",
+            [
+              [
+                "a",
+                "ok"
+              ]
+            ]
+          ],
+          [
+            "node",
+            [
+              [
+                "a",
+                "ok"
+              ],
+              [
+                "b0",
+                "done"
+              ]
+            ]
+          ],
+          [
+            "node",
+            [
+              [
+                "a",
+                "ok"
+              ],
+              [
+                "b1",
+                "done"
+              ]
+            ]
+          ],
+          [
+            "action",
+            [],
+            "a"
+          ],
+          [
+            "action",
+            [
+              [
+                "a",
+                "ok"
+              ]
+            ],
+            "b0"
+          ],
+          [
+            "action",
+            [
+              [
+                "a",
+                "ok"
+              ]
+            ],
+            "b1"
+          ]
+        ],
+        "matrix": [
+          [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "-1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-1"
+          ],
+          [
+            "0",
+            "0",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "rhs": [
+          "1",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "1"
+        ],
+        "result": {
+          "status": "LAWFUL_GLUING",
+          "primal": [
+            "1",
+            "1",
+            "1",
+            "0",
+            "1",
+            "1",
+            "0"
+          ],
+          "dual": null,
+          "checked_bases": 1,
+          "reason": "exact nonnegative solution; operational constraints only if supplied"
+        },
+        "verified": true
+      }
+    }
+  ],
+  "original_possible_histories": [
+    {
+      "states": [
+        "root",
+        "s0",
+        "end"
+      ],
+      "actions": [
+        "a",
+        "b0"
+      ],
+      "verified": true,
+      "original_tags": [
+        "split-2",
+        "split-2",
+        "split-2"
+      ]
+    },
+    {
+      "states": [
+        "root",
+        "s1",
+        "end"
+      ],
+      "actions": [
+        "a",
+        "b1"
+      ],
+      "verified": true,
+      "original_tags": [
+        "split-2",
+        "split-2",
+        "split-2"
+      ]
+    }
+  ],
+  "may_trace_comparison": {
+    "status": "EQUIVALENT",
+    "witness": [],
+    "reason": "",
+    "checked_pairs": 3
+  },
+  "public_interface_comparison": {
+    "status": "DISTINGUISHED",
+    "witness": [
+      [
+        "a",
+        {
+          "outcome": "ok",
+          "cost": "1",
+          "observation": "middle"
+        }
+      ]
+    ],
+    "reason": "PUBLIC_MENU",
+    "checked_pairs": 2
+  },
+  "simulation_A_by_B": [
+    [
+      "end",
+      "end"
+    ],
+    [
+      "root",
+      "root"
+    ],
+    [
+      "s0",
+      "middle"
+    ],
+    [
+      "s1",
+      "middle"
+    ]
+  ],
+  "simulation_B_by_A": [
+    [
+      "end",
+      "end"
+    ]
+  ],
+  "bisimulation": [
+    [
+      "end",
+      "end"
+    ]
+  ],
+  "output_variant": {
+    "sources": [
+      {
+        "source_id": "output-split",
+        "basis": "output-only-branching",
+        "digest": "3383c489afeb689fcb08a3881fe11b64a9b035f59edfe10bef2207f0a81f121d",
+        "states": [
+          "root",
+          "u",
+          "v",
+          "end"
+        ],
+        "actions": [
+          "tick"
+        ],
+        "original": {
+          "root": "output-split",
+          "u": "output-split",
+          "v": "output-split",
+          "end": "output-split"
+        },
+        "observation": {
+          "root": "root",
+          "u": "middle",
+          "v": "middle",
+          "end": "end"
+        },
+        "transitions": [
+          {
+            "before": "root",
+            "action": "tick",
+            "edges": [
+              {
+                "target": "u",
+                "outcome": "a",
+                "cost": "1"
+              },
+              {
+                "target": "v",
+                "outcome": "a",
+                "cost": "1"
+              }
+            ]
+          },
+          {
+            "before": "u",
+            "action": "tick",
+            "edges": [
+              {
+                "target": "end",
+                "outcome": "b",
+                "cost": "1"
+              }
+            ]
+          },
+          {
+            "before": "v",
+            "action": "tick",
+            "edges": [
+              {
+                "target": "end",
+                "outcome": "c",
+                "cost": "1"
+              }
+            ]
+          },
+          {
+            "before": "end",
+            "action": "tick",
+            "edges": [
+              {
+                "target": "end",
+                "outcome": "z",
+                "cost": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "source_id": "output-combined",
+        "basis": "output-only-branching",
+        "digest": "62e9858e238664802bfc17fee8d2b51ae36c97384d55d9cbf4466c94e71d1a0f",
+        "states": [
+          "root",
+          "m",
+          "end"
+        ],
+        "actions": [
+          "tick"
+        ],
+        "original": {
+          "root": "output-combined",
+          "m": "output-combined",
+          "end": "output-combined"
+        },
+        "observation": {
+          "root": "root",
+          "m": "middle",
+          "end": "end"
+        },
+        "transitions": [
+          {
+            "before": "root",
+            "action": "tick",
+            "edges": [
+              {
+                "target": "m",
+                "outcome": "a",
+                "cost": "1"
+              }
+            ]
+          },
+          {
+            "before": "m",
+            "action": "tick",
+            "edges": [
+              {
+                "target": "end",
+                "outcome": "b",
+                "cost": "1"
+              },
+              {
+                "target": "end",
+                "outcome": "c",
+                "cost": "1"
+              }
+            ]
+          },
+          {
+            "before": "end",
+            "action": "tick",
+            "edges": [
+              {
+                "target": "end",
+                "outcome": "z",
+                "cost": "1"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "public_interface": {
+      "status": "EQUIVALENT",
+      "witness": [],
+      "reason": "",
+      "checked_pairs": 3
+    },
+    "bisimulation": [
+      [
+        "end",
+        "end"
+      ]
+    ]
+  },
+  "forced_b_probability": "UNDEFINED_ORIGINAL_ACTION_UNAVAILABLE_ON_HIDDEN_BRANCH",
+  "repaired_failed_proposal": "Do not totalize absent row as invented half-probability failure",
+  "RH_proved": false
+}
