@@ -221,6 +221,34 @@ The main finite-complexity machinery for linear equations in primes does **not**
 
 **Frontier:** use the two-variable W-tricked rectangle as the solved classical comparison, and the one-variable anchored ladder as an honestly UNVERIFIED strengthened arithmetic conjecture; characterize which additional source correlations would be needed to bridge them without assuming prime-tuple theorems. This explicit split is the primary mathematical diagnostic produced by this round.
 
+## GTC-14 — An unconditional infinite prime-rich constant-RAD fiber theorem (EXTERNAL generalized Maynard–Tao + elementary proof)
+
+There is a rigorous intermediate result between (a) Green–Tao's arbitrary length *two-variable* progressions and (b) the open claim that **all** first ℓ anchored positions 1+jR are prime.
+
+**Theorem (classical corollary, external Maynard–Tao generalized admissible affine-forms sieve).** Let Q be any fixed finite set of genuine primes, and m≥2. There exists an integer K≥m such that for **infinitely many positive integers R** one has:
+
+1. R is divisible by every q∈Q and by every prime≤K.
+2. Every j=1,...,K has **the same** radical:
+   \(\operatorname{rad}(jR)=\operatorname{rad}(R)\) and
+   \(\operatorname{ris}(jR)=j\operatorname{ris}(R)\).
+3. At least m distinct indices j∈{1,...,K} make \(p_j=1+jR\) a genuine prime. Every such endpoint is phase 1 at each declared Q clock.
+
+The chosen indices need **not** be consecutive or constitute a prime AP; R need **not** be squarefree. There is no claim that all K terms are prime or that RIS steps by 1.
+
+**Proof.** Take K large enough that the generalized Maynard–Tao theorem holds for **any admissible K-tuple of affine-linear forms** with different positive leading coefficients. Let M_K=prod_{r≤K, r prime}r and A=lcm(M_K,prod_{q∈Q}q), a fixed positive integer. The K forms
+
+\[
+ L_j(t)=1+jAt,\qquad j=1,\ldots,K
+\]
+
+are distinct and admissible: for every prime r, the residue t=0 mod r makes **all** L_j(t)=1 mod r, so no prime r divides the product for every t. Maynard–Tao (external) therefore guarantees **infinitely many** positive t for which at least m of these K forms have prime values. Put R=At. Since every prime dividing j≤K also divides A, \(\operatorname{supp}(jR)=\operatorname{supp}(R)\), so rad(jR)=rad(R); the RIS identity follows on dividing jR by this radical. All q∈Q divide R, so each prime endpoint 1+jR reads 1 in every q-clock. Since A is fixed, infinitely many distinct t give infinitely many distinct R. QED, conditional only on the already established named external Maynard–Tao theorem, not a new hypothesis.
+
+**Provenance and precise hypothesis.** The **general linear forms** extension is essential: the coefficients jA are unequal. Tao explicitly confirms that fixed unequal coefficients are permitted in [MathOverflow, *Does the Maynard–Tao theorem apply to general tuples of linear forms?*](https://mathoverflow.net/questions/162741/does-the-maynard-tao-theorem-apply-to-general-tuples-of-linear-forms), and a published precise formulation is Lemma 2 in [*Solutions of φ(n)=φ(n+k) and σ(n)=σ(n+k)*, International Mathematics Research Notices](https://academic.oup.com/imrn/article/2022/5/3561/5896974). The underlying sieve comes from Maynard, [*Small gaps between primes*, Annals 181 (2015)](https://annals.math.princeton.edu/2015/181-1/p07). The original theorem requires a sufficiently large K depending on m; no specific effective K or finite first R is claimed here.
+
+**Finite source instrumentation.** The code constructs the typed affine family for bounded K and A and checks the local non-divisibility witness t≡0 mod each tested prime. It also checks the exact RAD/RIS fiber at selected finite t. For Q=(5,11,17,23,29), K=5, A=3741870: t=1 gives **zero** prime endpoints despite full local admissibility, while t=19117 gives the earlier five-prime flat-RAD witness. Those are finite outcomes; we do **not** claim Maynard's theorem guarantees 5 primes from K=5.
+
+**Verdict:** genuinely **unconditional infinite existence of arbitrarily prime-rich constant-RAD fibers**, imported as a proven Maynard–Tao consequence; **all-K anchored prime ladders remain a Dickson-type open target**. This distinction is stronger and more informative than declaring the entire one-variable pathway impossible or solved.
+
 ## GTC-09/10 — Crucible, failure receipts, and the next discriminatory probe
 
 - **Composite fully locked candidate:** 30030+1=30031=59×509. No wheel phase certifies primality.
