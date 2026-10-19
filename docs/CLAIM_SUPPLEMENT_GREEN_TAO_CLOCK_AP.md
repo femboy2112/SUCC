@@ -1,4 +1,4 @@
-# Green–Tao synchronized-clock arithmetic progression claims (GTC-01–10)
+# Green–Tao synchronized-clock arithmetic progression claims (GTC-01–13)
 
 Companion: [the complete W-trick / double prime-progression research dossier](../research/2026-10-19/GREEN_TAO_SYNCHRONIZED_CLOCK_AP.md).
 Source: genuine primes; cyclic SUCC n→n+1; declared phase 1. Scope: finite squarefree Q wheels, external Green–Tao/PNT-AP/Dirichlet theorem imports.
@@ -17,5 +17,9 @@ Code: `observational_succ/green_tao_clock_ap.py`, independent tests `tests/test_
 | GTC-08 | For fixed Q=(5,11,17,23,29), all finite candidate grids with t_last<630 fail; the first 5×5 grid ends at prime 392896351 | PROVED LOCAL bounded exhaustive enumeration + independent oracle; no unbounded minimality |
 | GTC-09 | RAD/RIS of p−1 retain extra synchronized primes and multiplicity beyond the fixed clock product; 870871 has t=RIS=1 only because Q is full support | CLASSICAL algebra / PROVED LOCAL exact factors |
 | GTC-10 | Composite W+1, forbidden d, fake composite clock, fixed-varying modulus and full Weil positivity confusions explicitly rejected | REFUTED candidate inferences with exact finite receipts; ABC/RH remains UNVERIFIED |
+
+| GTC-11 | For each ℓ≥2, rad(jR)=R for all 1≤j≤ℓ iff R squarefree and divisible by every prime ≤ℓ; consequently ris(jR)=j | CLASSICAL elementary / exact paper proof, independently enumerated factor oracle |
+| GTC-12 | Genuine finite prime ladders p_j=1+jR with flat RAD and sequential RIS for lengths 3,4,5; 5×5 q-AP/endpoint-AP full-RAD witness with R=71533328790 | PROVED LOCAL exact primality/factorization, bounded minimum-R calibrations only |
+| GTC-13 | Infinitely many anchored flat-RAD prime ladders do NOT follow from Green–Tao: one-variable forms 1+jR are affinely dependent and outside finite-complexity theory | UNVERIFIED prime-tuple-type infinitude; false "Green–Tao directly proves it" inference REFUTED by missing hypothesis |
 
 **Next discriminators:** source-faithful character/Gowers correlations with declared error bounds; uniform moving-window W(x) with genuine PNT-AP hypotheses; independently proved additive-multiplicative inequality for primitive ABC triples; authentic signed Gamma/prime/pole Suzuki form. None is certified by the current finite-grid or classical-corollary result.
