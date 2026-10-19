@@ -278,4 +278,23 @@ theorem empty_observation_fiber_separates_envelopes
   · intro s same
     exact False.elim (unreachable s same)
 
+
+/-- A concrete discordant source-fiber pair blocks ANY report-level
+successor-support relation. This is an exact obstruction witness, not a
+global undecidability theorem or an empirical source identity test. -/
+theorem fiber_disagreement_refutes_relational_descent
+    {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (different : ∃ s t : S, ∃ p : P,
+      q s = q t ∧ FutureSupport next qNext s p ∧
+      ¬ FutureSupport next qNext t p) :
+    ¬ (∃ V : O → P → Prop,
+        ∀ s p, V (q s) p ↔ FutureSupport next qNext s p) := by
+  intro descended
+  have invariant : SupportCompatible q next qNext :=
+    (support_transport_iff_fiber_invariance_choice_free q next qNext).mp
+      descended
+  obtain ⟨s, t, p, same, yes, no⟩ := different
+  exact no ((invariant s t same p).mp yes)
+
 end ObservationalSUCC
