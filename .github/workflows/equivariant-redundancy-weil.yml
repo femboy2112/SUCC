@@ -1,0 +1,65 @@
+name: Equivariant redundancy, prime-source trace and Weil firewall
+
+on:
+  push:
+    branches:
+      - 'research/equivariant-redundancy-weil-*'
+  pull_request:
+    paths:
+      - 'observational_succ/equivariant_koszul_descent.py'
+      - 'observational_succ/observable_redundancy_forms.py'
+      - 'observational_succ/stabilized_exterior_source.py'
+      - 'observational_succ/source_homotopy_defect.py'
+      - 'tests/test_equivariant_koszul_descent.py'
+      - 'tests/test_observable_redundancy_forms.py'
+      - 'tests/test_stabilized_exterior_source.py'
+      - 'tests/test_source_homotopy_defect.py'
+      - 'scripts/equivariant_redundancy_weil_probe.py'
+      - 'research/2026-10-18/EQUIVARIANT_REDUNDANCY_WEIL.md'
+      - 'docs/CLAIM_SUPPLEMENT_EQUIVARIANT_REDUNDANCY.md'
+      - '.github/workflows/equivariant-redundancy-weil.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install source package
+        run: python -m pip install -e .
+      - name: Compile source and independent oracles
+        run: |
+          python -m compileall -q observational_succ/equivariant_koszul_descent.py
+          python -m compileall -q observational_succ/observable_redundancy_forms.py
+          python -m compileall -q observational_succ/stabilized_exterior_source.py
+          python -m compileall -q observational_succ/source_homotopy_defect.py
+          python -m compileall -q tests/test_equivariant_koszul_descent.py
+          python -m compileall -q tests/test_observable_redundancy_forms.py
+          python -m compileall -q tests/test_stabilized_exterior_source.py
+          python -m compileall -q tests/test_source_homotopy_defect.py
+          python -m compileall -q scripts/equivariant_redundancy_weil_probe.py
+      - name: Koszul relative homology and source supertrace falsifiers
+        run: python -m unittest discover -s tests -p 'test_equivariant_koszul_descent.py' -v
+      - name: Exact null quotient and signed Schur correction controls
+        run: python -m unittest discover -s tests -p 'test_observable_redundancy_forms.py' -v
+      - name: Stabilized SUCC-FUCC observability and activated ghosts
+        run: python -m unittest discover -s tests -p 'test_stabilized_exterior_source.py' -v
+      - name: Pivot-independent original signed Weil prime source via homotopy defect
+        run: python -m unittest discover -s tests -p 'test_source_homotopy_defect.py' -v
+      - name: Inherited full-prime Koszul and original source tests
+        run: python -m unittest discover -s tests -p 'test_koszul_prime_cancellation.py' -v
+      - name: Reproduce complete source-indexed redundant-information crucible receipt
+        run: python scripts/equivariant_redundancy_weil_probe.py
+      - name: Independent provenance gate
+        run: python scripts/verify_provenance.py

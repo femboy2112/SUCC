@@ -1,0 +1,58 @@
+name: Möbius Index Infinity and Source Haar Shells
+
+on:
+  push:
+    branches:
+      - 'research/mobius-index-infinity-*'
+  pull_request:
+    paths:
+      - 'observational_succ/mobius_index_infinity.py'
+      - 'observational_succ/weighted_clock_cocycle.py'
+      - 'observational_succ/adelic_mobius_tate_test.py'
+      - 'tests/test_mobius_index_infinity.py'
+      - 'tests/test_weighted_clock_cocycle.py'
+      - 'tests/test_adelic_mobius_tate_test.py'
+      - 'scripts/mobius_index_infinity_probe.py'
+      - 'research/2026-10-18/MOBIUS_INDEX_INFINITY_SOURCE_TRANSPORT.md'
+      - 'docs/CLAIM_SUPPLEMENT_MOBIUS_INDEX_INFINITY.md'
+      - '.github/workflows/mobius-index-infinity.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  arithmetic-index:
+    name: Exact SUCC index and prime Haar
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install SUCC package
+        run: python -m pip install -e .
+      - name: Compile exact source and independent probes
+        run: |
+          python -m compileall -q observational_succ/mobius_index_infinity.py
+          python -m compileall -q observational_succ/weighted_clock_cocycle.py
+          python -m compileall -q observational_succ/adelic_mobius_tate_test.py
+          python -m compileall -q tests/test_mobius_index_infinity.py
+          python -m compileall -q tests/test_weighted_clock_cocycle.py
+          python -m compileall -q tests/test_adelic_mobius_tate_test.py
+          python -m compileall -q scripts/mobius_index_infinity_probe.py
+      - name: All exact Möbius, SUCC index, FUCC and prime shell tests
+        run: python -m unittest discover -s tests -p 'test_mobius_index_infinity.py' -v
+      - name: Exact Radon Nikodym bidirectional clock, cocycle and cut ghosts
+        run: python -m unittest discover -s tests -p 'test_weighted_clock_cocycle.py' -v
+      - name: Genuine finite Tate compact-open Möbius Fourier and Plancherel
+        run: python -m unittest discover -s tests -p 'test_adelic_mobius_tate_test.py' -v
+      - name: Reproduce exact multi-route source arithmetic receipt
+        run: python scripts/mobius_index_infinity_probe.py
+      - name: Frozen import/source manifest
+        run: python scripts/verify_provenance.py
