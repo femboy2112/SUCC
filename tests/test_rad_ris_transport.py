@@ -7,7 +7,7 @@ from observational_succ.rad_ris_transport import (
     ABCSnapshot, RadRis, RadRisError, abc_snapshot, crt_successor_valuations,
     from_radical_layers, gibbs_prime_moments, is_prime, joint_rad_ris_local_factor,
     prime_powers, prime_window_successor_witness, rad,
-    radical_layers, ris, successor_balance,
+    radical_layers, ris, successor_balance, successor_prime_support_moments,
 )
 
 
@@ -138,6 +138,20 @@ class RadRisTransportTest(unittest.TestCase):
                                   for k in range(1, 6)), Fraction())
                 tail = Fraction(1, p ** (s + 5 * u)) / (1 - Fraction(1, p ** u))
                 self.assertEqual(prefix + tail, exact)
+
+    def test_successor_prime_contact_covariance(self):
+        for p, q in ((2, 2), (3, 3), (2, 3), (3, 5), (7, 11)):
+            first, second, joint, covariance = successor_prime_support_moments(p, q)
+            period = p * q // gcd(p, q)
+            brute_a = Fraction(sum(n % p == 0 for n in range(1, period + 1)), period)
+            brute_b = Fraction(sum((n + 1) % q == 0 for n in range(1, period + 1)), period)
+            brute_ab = Fraction(sum(n % p == 0 and (n + 1) % q == 0
+                                    for n in range(1, period + 1)), period)
+            self.assertEqual((first, second, joint), (brute_a, brute_b, brute_ab))
+            self.assertEqual(covariance, brute_ab - brute_a * brute_b)
+            self.assertEqual(covariance, -Fraction(1, p * p) if p == q else 0)
+        with self.assertRaises(RadRisError):
+            successor_prime_support_moments(4, 3)
 
     def test_hostile_input_mutations(self):
         for n in (0, -1, True, 1.5, 1000001):
