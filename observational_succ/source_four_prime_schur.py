@@ -163,6 +163,6 @@ def CertifiedFourPrimeSchurTrial(*,J_center=64,J_G=64,
         "source_direction_certificates":dir_results,
         "old_analytic_source_verdict":analytic["verdict"],
         "actual_source_P1_independent_replay":center["original_p1_replay_agrees"],
-        "true_complete_signed_S4_sign_proved":src_sign,
+        "source_positive_S4_first_window":src_sign,
         "RH_proved":False,
     }

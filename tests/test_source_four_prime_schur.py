@@ -131,7 +131,7 @@ class SignedS4AllFourSource(unittest.TestCase):
                                  c["source_corrected_four_S4_Loewner_lower"][j][i])
                 if (i-j)%2:
                     self.assertEqual(c["center_Loewner_improvement_matrix"][i][j],F(0))
-        self.assertFalse(c["true_complete_signed_S4_sign_proved"] and c["RH_proved"])
+        self.assertFalse(c["source_positive_S4_first_window"] and c["RH_proved"])
 
     def test_bad_interval_Young_parameter_fail_closed(self):
         for eta in (0,-F(1,10),True,F(2),0.5):
