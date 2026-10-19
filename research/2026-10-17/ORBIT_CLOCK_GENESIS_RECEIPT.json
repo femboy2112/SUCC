@@ -1,0 +1,188 @@
+{
+  "RH_proved": false,
+  "claim_scope": "classical paper theorems and exact finite authenticated-machine models only",
+  "finite_clock": {
+    "M8_with_all_clocks": 840,
+    "M8_without_C8": 420,
+    "essential_lattice_periods_through_40": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      13,
+      16,
+      17,
+      19,
+      23,
+      25,
+      27,
+      29,
+      31,
+      32,
+      37
+    ],
+    "exact_clock_information_bound_N30": {
+      "binary_bits_needed": 42,
+      "bound_checked_exactly": true,
+      "central_binomial_coefficient": 77558760,
+      "elementary_exponential_bound_denominator": 30,
+      "elementary_exponential_bound_numerator": 536870912,
+      "horizon": 30,
+      "least_period": 2329089562800,
+      "state_lower_bound": 2329089562800
+    },
+    "fresh_clock_splices_executed_through": 40,
+    "jet_bases_through_40": {
+      "11": 11,
+      "13": 13,
+      "16": 2,
+      "17": 17,
+      "19": 19,
+      "2": 2,
+      "23": 23,
+      "25": 5,
+      "27": 3,
+      "29": 29,
+      "3": 3,
+      "31": 31,
+      "32": 2,
+      "37": 37,
+      "4": 2,
+      "5": 5,
+      "7": 7,
+      "8": 2,
+      "9": 3
+    },
+    "lcm_120": "955888052326228459513511038256280353796626534577600",
+    "minimum_universal_period_sequence_through_12": [
+      1,
+      2,
+      6,
+      12,
+      60,
+      60,
+      420,
+      840,
+      2520,
+      2520,
+      27720,
+      27720
+    ],
+    "n6_has_zero_jet": true,
+    "n8_prime_power_source_jet": 2
+  },
+  "independent_incidence": {
+    "comparison_through": 120,
+    "finite_beta2_log_current": {
+      "11": "1/121",
+      "13": "1/169",
+      "17": "1/289",
+      "19": "1/361",
+      "2": "341/1024",
+      "23": "1/529",
+      "29": "1/841",
+      "3": "91/729",
+      "31": "1/961",
+      "37": "1/1369",
+      "5": "26/625",
+      "7": "1/49"
+    },
+    "incidence_product_120": "955888052326228459513511038256280353796626534577600",
+    "mobius_first_12": [
+      1,
+      -1,
+      -1,
+      0,
+      -1,
+      1,
+      -1,
+      0,
+      0,
+      1,
+      -1,
+      0
+    ],
+    "quotient_mutation_gate": {
+      "arrow_was_required": true,
+      "missing_actual_factor_period": 2,
+      "mutation_rejected_by_canonical_divisor_oracle": true,
+      "n": 6,
+      "source_is_full_quotient_diagram": false
+    }
+  },
+  "not_certified": [
+    "physical source access to all new finite observers",
+    "global no-return from finite transcripts",
+    "continuous cyclic quotients from discrete orbit injectivity alone",
+    "RH or signed Weil positivity"
+  ],
+  "source_orbit": {
+    "finite_prefix_shadow_100": {
+      "actual_repetition_at": 102,
+      "free_orbit_certified": false,
+      "observed_edges": 100,
+      "shadow_period": 102,
+      "states_before_horizon_all_distinct": true
+    },
+    "finite_transient_countermodel": {
+      "C2_factor_exists": false,
+      "C3_factor_exists": true,
+      "eventual_period": 3,
+      "preperiod": 1
+    },
+    "free_ray_is_symbolic_constructor": true,
+    "self_generated_instrument_no_ghost_C4_and_C5": {
+      "distinct_source_id_preserved": true,
+      "instrument_constructed_period": 5,
+      "instrument_is_source_factor": false,
+      "joint_synchronized_period": 20,
+      "new_instrument_cannot_authenticate_new_source_prime": true,
+      "source_period": 4
+    }
+  },
+  "topology": {
+    "contraction_injective_orbit_but_no_continuous_finite_factor": "proved analytically using common fixed-point limit",
+    "finite_close_residue_control": {
+      "clock_residues": [
+        0,
+        1
+      ],
+      "distinct_residues": true,
+      "gap": "1/1125899906842624",
+      "gap_strictly_below_tolerance": true,
+      "global_continuity_conclusion_is_paper_theorem": true,
+      "n": 49,
+      "next": 50,
+      "tolerance": "1/1000000000000000",
+      "x": "562949953421311/562949953421312",
+      "y": "1125899906842623/1125899906842624"
+    },
+    "full_factor_map_isomorphism_requires_point_separation": true,
+    "profinite_factor_with_hidden_continuous_coordinate": {
+      "all_sampled_profinite_residues_zero": true,
+      "distance_of_hidden_coordinate_from_limit": "2^(-40320)",
+      "limit_hidden_coordinate": "1",
+      "n": 40320,
+      "no_finite_check_proves_infinite_noninjective_fiber": true,
+      "observed_moduli": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        15
+      ],
+      "root_hidden_coordinate": "0",
+      "same_global_profinite_point_in_limit_paper_theorem": true
+    }
+  }
+}

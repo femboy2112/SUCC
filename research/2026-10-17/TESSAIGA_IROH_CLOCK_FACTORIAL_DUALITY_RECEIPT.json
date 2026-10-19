@@ -1,0 +1,126 @@
+{
+  "RH_proved": false,
+  "coherent_prime_weight_response_at_120": {
+    "2": [
+      6,
+      6
+    ],
+    "3": [
+      4,
+      4
+    ],
+    "5": [
+      2,
+      2
+    ],
+    "7": [
+      2,
+      2
+    ]
+  },
+  "completed_signed_Weil_positive": "UNVERIFIED",
+  "fake_composite_6_rejected": true,
+  "horizons_checked": 120,
+  "mertens_24": -2,
+  "mobius_1_to_24": [
+    1,
+    -1,
+    -1,
+    0,
+    -1,
+    1,
+    -1,
+    0,
+    0,
+    1,
+    -1,
+    0,
+    -1,
+    1,
+    1,
+    0,
+    -1,
+    0,
+    -1,
+    0,
+    1,
+    1,
+    -1,
+    0
+  ],
+  "not_certified": [
+    "source-physical universal rooted quotient tower",
+    "square-root-plus-epsilon Mertens bound",
+    "RH-scale psi(N)-N error",
+    "completed signed Weil positivity / Suzuki S4 sign",
+    "hosted exact-head CI, until an actual workflow runs"
+  ],
+  "samples": {
+    "100": {
+      "L_N": "69720375229712477164533808935312303556800",
+      "M_floor_N_over_2": -3,
+      "incidence_kernel_sum": 1,
+      "incidence_linf_norm": 101,
+      "kernel_gram_trace": 143,
+      "prime_power_increment": "1",
+      "strict_lower_norm_bound": 50
+    },
+    "12": {
+      "L_N": "27720",
+      "M_floor_N_over_2": -1,
+      "incidence_kernel_sum": 1,
+      "incidence_linf_norm": 11,
+      "kernel_gram_trace": 13,
+      "prime_power_increment": "1",
+      "strict_lower_norm_bound": 6
+    },
+    "120": {
+      "L_N": "955888052326228459513511038256280353796626534577600",
+      "M_floor_N_over_2": -1,
+      "incidence_kernel_sum": 1,
+      "incidence_linf_norm": 119,
+      "kernel_gram_trace": 167,
+      "prime_power_increment": "1",
+      "strict_lower_norm_bound": 60
+    },
+    "24": {
+      "L_N": "5354228880",
+      "M_floor_N_over_2": -2,
+      "incidence_kernel_sum": 1,
+      "incidence_linf_norm": 23,
+      "kernel_gram_trace": 29,
+      "prime_power_increment": "1",
+      "strict_lower_norm_bound": 12
+    },
+    "6": {
+      "L_N": "60",
+      "M_floor_N_over_2": -1,
+      "incidence_kernel_sum": 1,
+      "incidence_linf_norm": 5,
+      "kernel_gram_trace": 5,
+      "prime_power_increment": "1",
+      "strict_lower_norm_bound": 3
+    },
+    "60": {
+      "L_N": "9690712164777231700912800",
+      "M_floor_N_over_2": -3,
+      "incidence_kernel_sum": 1,
+      "incidence_linf_norm": 59,
+      "kernel_gram_trace": 81,
+      "prime_power_increment": "1",
+      "strict_lower_norm_bound": 30
+    },
+    "8": {
+      "L_N": "840",
+      "M_floor_N_over_2": -1,
+      "incidence_kernel_sum": 1,
+      "incidence_linf_norm": 7,
+      "kernel_gram_trace": 9,
+      "prime_power_increment": "2",
+      "strict_lower_norm_bound": 4
+    }
+  },
+  "scope": "classical exact identities, paper proofs, finite integer tests",
+  "single_site_and_valuation_source_types_not_conflated": true,
+  "source_parent": "OCG PR165 @ dea8b7f982fd3eb2361ccd5a12d360bcadfa3689"
+}

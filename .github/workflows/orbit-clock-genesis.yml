@@ -1,0 +1,37 @@
+name: Orbit clock genesis exact source checks
+
+on:
+  push:
+    branches:
+      - 'research/orbit-clock-genesis-*'
+  pull_request:
+    paths:
+      - 'observational_succ/orbit_clock_genesis.py'
+      - 'observational_succ/clock_incidence_inversion.py'
+      - 'observational_succ/topological_clock_factors.py'
+      - 'tests/test_orbit_clock_genesis.py'
+      - 'tests/test_clock_incidence_inversion.py'
+      - 'tests/test_topological_clock_factors.py'
+      - 'scripts/orbit_clock_genesis_probe.py'
+      - 'research/2026-10-17/ORBIT_CLOCK_GENESIS_RECEIPT.json'
+      - 'docs/CLAIM_SUPPLEMENT_ORBIT_CLOCK_GENESIS.md'
+      - 'docs/CLAIM_NAMESPACE_REGISTRY.json'
+      - '.github/workflows/orbit-clock-genesis.yml'
+
+jobs:
+  exact-stdlib:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m unittest discover -s tests -p 'test_orbit_clock_genesis.py' -v
+      - run: python -m unittest discover -s tests -p 'test_clock_incidence_inversion.py' -v
+      - run: python -m unittest discover -s tests -p 'test_topological_clock_factors.py' -v
+      - run: python scripts/orbit_clock_genesis_probe.py --verify
+      - run: python -m unittest discover -s tests -p 'test_claim_namespace_collisions.py' -v
