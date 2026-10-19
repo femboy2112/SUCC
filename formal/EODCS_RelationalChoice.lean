@@ -297,4 +297,23 @@ theorem fiber_disagreement_refutes_relational_descent
   obtain ⟨s, t, p, same, yes, no⟩ := different
   exact no ((invariant s t same p).mp yes)
 
+
+/-- The existential direct image MayReport is left adjoint, in the
+pointwise implication order on report predicates, to precomposition by
+q. This is the precise categorical universal property of relation-valued
+source pushforward, constructively proved without AC/LEM/surjectivity. -/
+theorem may_report_left_adjunction
+    {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (upper : O → P → Prop) :
+    (∀ o p, MayReport q next qNext o p → upper o p) ↔
+      (∀ s p, FutureSupport next qNext s p → upper (q s) p) := by
+  constructor
+  · intro bound s p support
+    exact bound (q s) p ⟨s, rfl, support⟩
+  · intro pointwise o p
+    rintro ⟨s, same, support⟩
+    cases same
+    exact pointwise s p support
+
 end ObservationalSUCC
