@@ -14,7 +14,7 @@ an arbitrary-graph cohomology formalization, and not an empirical claim.
 namespace ObservationalSUCC
 namespace MetaChoice
 
-universe u v
+universe u v w z
 
 /-- Witnessed dependent choice: the selector is literally the first field
 of supplied dependent witness data. No `Classical.choose` is used. -/
@@ -52,6 +52,36 @@ theorem odd_triangle_has_no_global_section :
 theorem even_triangle_has_global_section :
     ∃ a b c : Bool, b = !a ∧ c = !b ∧ a = c := by
   exact ⟨false, true, false, rfl, rfl, rfl⟩
+
+
+/-- Existential direct image is functorial under composition of ordinary
+source-report maps: a two-stage quotient carries exactly the same
+relation-valued support as the composed quotient. Constructive, no choice. -/
+theorem existential_pushforward_composes
+    {S : Type u} {O : Type v} {Q : Type w} {P : Type z}
+    (q : S → O) (h : O → Q) (support : S → P → Prop) :
+    ∀ target p,
+      (∃ o : O, h o = target ∧
+        ∃ s : S, q s = o ∧ support s p) ↔
+      (∃ s : S, h (q s) = target ∧ support s p) := by
+  intro target p
+  constructor
+  · rintro ⟨o, ho, s, hs, supp⟩
+    exact ⟨s, (congrArg h hs).trans ho, supp⟩
+  · rintro ⟨s, hs, supp⟩
+    exact ⟨q s, hs, s, rfl, supp⟩
+
+/-- Existential direct image along identity changes no support proposition. -/
+theorem existential_pushforward_identity
+    {S : Type u} {P : Type v} (support : S → P → Prop) :
+    ∀ s p, (∃ t : S, t = s ∧ support t p) ↔ support s p := by
+  intro s p
+  constructor
+  · rintro ⟨t, ht, supp⟩
+    cases ht
+    exact supp
+  · intro supp
+    exact ⟨s, rfl, supp⟩
 
 end MetaChoice
 end ObservationalSUCC
