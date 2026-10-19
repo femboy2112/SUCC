@@ -1,0 +1,1217 @@
+[
+  {
+    "edges": [],
+    "frustration_index": 0,
+    "is_bipartite": true,
+    "is_forest": true,
+    "max_cut": 0,
+    "maxcut_identity_holds": true,
+    "n_vertices": 1,
+    "num_edges": 0,
+    "optimal_assignment": [
+      0
+    ],
+    "repair_cost_star": 0
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ]
+    ],
+    "frustration_index": 0,
+    "is_bipartite": true,
+    "is_forest": true,
+    "max_cut": 1,
+    "maxcut_identity_holds": true,
+    "n_vertices": 2,
+    "num_edges": 1,
+    "optimal_assignment": [
+      0,
+      1
+    ],
+    "repair_cost_star": 0
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "frustration_index": 0,
+    "is_bipartite": true,
+    "is_forest": true,
+    "max_cut": 2,
+    "maxcut_identity_holds": true,
+    "n_vertices": 3,
+    "num_edges": 2,
+    "optimal_assignment": [
+      0,
+      1,
+      1
+    ],
+    "repair_cost_star": 0
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 2,
+    "maxcut_identity_holds": true,
+    "n_vertices": 3,
+    "num_edges": 3,
+    "optimal_assignment": [
+      0,
+      0,
+      1
+    ],
+    "repair_cost_star": 1
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "frustration_index": 0,
+    "is_bipartite": true,
+    "is_forest": true,
+    "max_cut": 3,
+    "maxcut_identity_holds": true,
+    "n_vertices": 4,
+    "num_edges": 3,
+    "optimal_assignment": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "repair_cost_star": 0
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 3,
+    "maxcut_identity_holds": true,
+    "n_vertices": 4,
+    "num_edges": 4,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "repair_cost_star": 1
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 4,
+    "maxcut_identity_holds": true,
+    "n_vertices": 4,
+    "num_edges": 5,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "repair_cost_star": 1
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "frustration_index": 2,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 4,
+    "maxcut_identity_holds": true,
+    "n_vertices": 4,
+    "num_edges": 6,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "repair_cost_star": 2
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "frustration_index": 0,
+    "is_bipartite": true,
+    "is_forest": true,
+    "max_cut": 3,
+    "maxcut_identity_holds": true,
+    "n_vertices": 4,
+    "num_edges": 3,
+    "optimal_assignment": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "repair_cost_star": 0
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "frustration_index": 0,
+    "is_bipartite": true,
+    "is_forest": false,
+    "max_cut": 4,
+    "maxcut_identity_holds": true,
+    "n_vertices": 4,
+    "num_edges": 4,
+    "optimal_assignment": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "repair_cost_star": 0
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "frustration_index": 0,
+    "is_bipartite": true,
+    "is_forest": true,
+    "max_cut": 4,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 4,
+    "optimal_assignment": [
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "repair_cost_star": 0
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 4,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 5,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "repair_cost_star": 1
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 5,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 6,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "repair_cost_star": 1
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 6,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 7,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "repair_cost_star": 1
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "frustration_index": 2,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 6,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 8,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "repair_cost_star": 2
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "frustration_index": 3,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 6,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 9,
+    "optimal_assignment": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "repair_cost_star": 3
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "frustration_index": 4,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 6,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 10,
+    "optimal_assignment": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "repair_cost_star": 4
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "frustration_index": 2,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 5,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 7,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "repair_cost_star": 2
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "frustration_index": 2,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 5,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 7,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "repair_cost_star": 2
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "frustration_index": 2,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 6,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 8,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "repair_cost_star": 2
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "frustration_index": 2,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 4,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 6,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    "repair_cost_star": 2
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 5,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 6,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "repair_cost_star": 1
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 6,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 7,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "repair_cost_star": 1
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 4,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 5,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "repair_cost_star": 1
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 5,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 6,
+    "optimal_assignment": [
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "repair_cost_star": 1
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 4,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 5,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "repair_cost_star": 1
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ]
+    ],
+    "frustration_index": 0,
+    "is_bipartite": true,
+    "is_forest": true,
+    "max_cut": 4,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 4,
+    "optimal_assignment": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "repair_cost_star": 0
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "frustration_index": 0,
+    "is_bipartite": true,
+    "is_forest": false,
+    "max_cut": 5,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 5,
+    "optimal_assignment": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "repair_cost_star": 0
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "frustration_index": 0,
+    "is_bipartite": true,
+    "is_forest": false,
+    "max_cut": 6,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 6,
+    "optimal_assignment": [
+      0,
+      1,
+      1,
+      1,
+      0
+    ],
+    "repair_cost_star": 0
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ]
+    ],
+    "frustration_index": 0,
+    "is_bipartite": true,
+    "is_forest": true,
+    "max_cut": 4,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 4,
+    "optimal_assignment": [
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "repair_cost_star": 0
+  },
+  {
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "frustration_index": 1,
+    "is_bipartite": false,
+    "is_forest": false,
+    "max_cut": 4,
+    "maxcut_identity_holds": true,
+    "n_vertices": 5,
+    "num_edges": 5,
+    "optimal_assignment": [
+      0,
+      0,
+      1,
+      1,
+      0
+    ],
+    "repair_cost_star": 1
+  }
+]
