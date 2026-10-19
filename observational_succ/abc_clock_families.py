@@ -218,3 +218,14 @@ def finite_envelope(limit: int, epsilons: tuple[Fraction, ...], lower_c: int = 3
     assert all(max(val for val, _ in groups.values()) == maxima[e][0]
                for e, groups in families.items())
     return {"count": count, "hits_eps0": hits, "maxima": maxima, "families": families}
+
+
+def local_energy_tail(p: int, exponent: int) -> Fraction:
+    """Conditional Haar P(local ris contribution >= p**exponent), exponent>=1.
+
+    This is 3/((p+1)*p**exponent). It does NOT estimate joint moments
+    of bounded ordinary integers with infinitely many prime places.
+    """
+    if not prime(p) or type(exponent) is not int or exponent < 1:
+        raise ABCClockError("actual prime and positive energy exponent required")
+    return Fraction(3, (p+1) * p**exponent)
