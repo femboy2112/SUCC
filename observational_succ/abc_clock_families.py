@@ -6,6 +6,7 @@ independence assertions for growing sets of primes in bounded integer boxes.
 """
 from __future__ import annotations
 
+from collections import Counter
 from dataclasses import dataclass
 from fractions import Fraction
 from functools import lru_cache
@@ -164,6 +165,34 @@ def residue_clock_indicator(a: int, b: int, modulus: int) -> int:
     if any(type(n) is not int for n in (a, b, modulus)) or modulus < 1:
         raise ABCClockError("integer residues and positive modulus required")
     return int((a+b) % modulus == 0)
+
+
+def modular_additive_count(a_values: tuple[int, ...], b_values: tuple[int, ...],
+                           c_values: tuple[int, ...], modulus: int,
+                           *, require_exact: bool = False) -> int:
+    """Exact Z/m group-algebra coefficient <A*B,C> (finite Fourier projector).
+
+    Counts ordered choices x in a_values, y in b_values, z in c_values
+    with x+y == z (mod m). Source multiset multiplicities are retained.
+    The Fourier-character sum is implemented by exact cyclic convolution,
+    with zero rounding; it is NOT a new analytic Fourier estimate.
+
+    If require_exact, reject modulus <= max(max(A)+max(B), max(C)), so
+    x+y==z mod m is provably equivalent to x+y=z for positive inputs.
+    This detects a small-modulus alias instead of reporting a false equality.
+    """
+    if type(modulus) is not int or modulus < 1:
+        raise ABCClockError("positive integer quotient modulus required")
+    for vals in (a_values, b_values, c_values):
+        if not isinstance(vals, tuple) or not vals or any(type(v) is not int or v < 1
+                                                           for v in vals):
+            raise ABCClockError("nonempty tuples of positive source values required")
+    if require_exact and modulus <= max(max(a_values)+max(b_values), max(c_values)):
+        raise ABCClockError("quotient modulus too small: additive alias not excluded")
+    A, B, C = (Counter(v % modulus for v in vals)
+               for vals in (a_values, b_values, c_values))
+    return sum(n_a*n_b*C[(r+s) % modulus]
+               for r,n_a in A.items() for s,n_b in B.items())
 
 
 def prime_progression_lifts(p_minus: int, p_mid: int, p_plus: int) -> tuple[ABCTriple, ABCTriple]:
