@@ -129,6 +129,32 @@ class TestMetaChoiceDescent(unittest.TestCase):
             self.assertFalse(result.physical_source_authenticated)
             self.assertFalse(result.general_sheaf_descent_proved)
 
+    def test_exact_probe_receipt_and_independent_count(self):
+        # Exercise the actual command-line entrypoint, not a duplicated
+        # in-test receipt object. Its published counts are fixed by the
+        # independent subgraph/coboundary enumeration in the manuscript.
+        import json
+        import subprocess
+        import sys
+        from pathlib import Path
+        root = Path(__file__).resolve().parents[1]
+        run = subprocess.run(
+            [sys.executable, "scripts/meta_choice_descent_probe.py"],
+            cwd=root, capture_output=True, text=True, check=True,
+        )
+        report = json.loads(run.stdout)
+        self.assertEqual(report["all_four_vertex_simple_labeled_graphs"], 729)
+        self.assertEqual(report["flat_graphs"], 393)
+        self.assertEqual(report["obstructed_graphs"], 336)
+        self.assertEqual(report["odd_triangle_global_sections"], 0)
+        self.assertEqual(report["even_triangle_global_sections"], 2)
+        self.assertTrue(report["odd_triangle_obstruction_verified"])
+        self.assertTrue(report["independent_exhaustive_oracle_agrees"])
+        self.assertFalse(report["source_provenance_authenticated"])
+        self.assertFalse(report["full_sheaf_or_topos_semantics_formalized"])
+        self.assertFalse(report["LEM_proved"])
+        self.assertFalse(report["RH_proved"])
+
     def test_uniform_oracle_budget_restriction(self):
         big = graph(tuple("v" + str(i) for i in range(17)), [])
         self.assertEqual(solve_parity_descent(big).number_of_sections, 1 << 17)
