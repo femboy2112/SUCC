@@ -264,3 +264,89 @@ def prime_predecessor_factorization(p: int) -> tuple[tuple[int, int], ...]:
     if n > 1:
         output.append((n, 1))
     return tuple(output)
+
+
+def exact_factorization(n: int) -> tuple[tuple[int, int], ...]:
+    """All prime exponents of any positive bounded n, without primality assumptions."""
+    _typed(n, "integer being factored", 1, MAX_PRIME_INPUT)
+    output = []
+    d = 2
+    while d * d <= n:
+        if n % d == 0:
+            k = 0
+            while n % d == 0:
+                n //= d
+                k += 1
+            output.append((d, k))
+        d = 3 if d == 2 else d + 2
+    if n > 1:
+        output.append((n, 1))
+    return tuple(output)
+
+
+def exact_rad(n: int) -> int:
+    return prod(q for q, _ in exact_factorization(n))
+
+
+def flat_rad_ladder_condition(radical: int, length: int) -> bool:
+    """iff for all j=1,...,length: rad(radical*j)=radical.
+
+    This pure factorization condition DOES NOT assert that any 1+j*radical
+    is prime. Equivalence needs squarefree radical and every prime <=length.
+    """
+    _typed(radical, "proposed fixed radical", 1, MAX_PRIME_INPUT)
+    _typed(length, "ladder length", 2, MAX_GRID_LENGTH)
+    factors = exact_factorization(radical)
+    support = {q for q, _ in factors}
+    return all(e == 1 for _, e in factors) and all(
+        q in support for q in small_primes(length))
+
+
+@dataclass(frozen=True)
+class FlatRadPrimeLadder:
+    """Finite source-certified prime ladder, constant RAD and linear RIS."""
+    radical: int
+    prime_endpoints: tuple[int, ...]
+    radical_factors: tuple[tuple[int, int], ...]
+    residual_values: tuple[int, ...]
+
+    @property
+    def length(self) -> int:
+        return len(self.prime_endpoints)
+
+
+def verify_flat_rad_prime_ladder(radical: int, length: int
+                                 ) -> FlatRadPrimeLadder:
+    """Check ALL primes p_j=1+j*radical, RAD(p_j-1)=R, RIS(p_j-1)=j."""
+    _typed(radical, "fixed radical", 2, MAX_PRIME_INPUT)
+    _typed(length, "ladder length", 2, MAX_GRID_LENGTH)
+    _typed(1+radical*length, "largest prime endpoint", 3, MAX_PRIME_INPUT)
+    if not flat_rad_ladder_condition(radical, length):
+        raise ClockAPError("flat RAD needs squarefree R containing every prime <=length")
+    endpoints = tuple(1+j*radical for j in range(1, length+1))
+    if not all(is_prime_exact(p) for p in endpoints):
+        raise ClockAPError("locally admissible flat RAD does not guarantee prime endpoints")
+    for j in range(1, length+1):
+        if exact_rad(j*radical) != radical or (j*radical)//radical != j:
+            raise AssertionError("flat RAD/RIS witness violated factorization theorem")
+    return FlatRadPrimeLadder(radical, endpoints,
+                              exact_factorization(radical),
+                              tuple(range(1, length+1)))
+
+
+def search_flat_rad_ladder(length: int, radical_cap: int
+                           ) -> FlatRadPrimeLadder | None:
+    """Exhaustive bounded first RAD; no claim of unbounded or infinite existence.
+
+    Only multiples of squarefree product of genuine primes <=length need
+    examination, by the independently proved flat-RAD support criterion.
+    """
+    _typed(length, "prime ladder length", 2, MAX_GRID_LENGTH)
+    _typed(radical_cap, "bounded radical search cap", 2, 1_000_000)
+    baseline = prod(small_primes(length))
+    for R in range(baseline, radical_cap+1, baseline):
+        if not flat_rad_ladder_condition(R, length):
+            continue
+        if all(is_prime_exact(1+j*R) for j in range(1, length+1)):
+            return verify_flat_rad_prime_ladder(R, length)
+    return None
