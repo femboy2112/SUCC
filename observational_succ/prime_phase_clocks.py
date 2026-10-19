@@ -340,9 +340,9 @@ def fixed_window_crt_law(clocks: tuple[int, ...]) -> FixedWindowLaw:
     if sum(raw.values()) != reduced or sum(locked.values()) != reduced:
         raise AssertionError("finite CRT distribution failed normalization")
     residue_distribution = tuple(
-        (s, Fraction(count, reduced)) for s, count in sorted(raw.items()))
+        (s, Fraction(count, reduced)) for s, count in sorted(raw.items()) if count)
     lock_distribution = tuple(
-        (s, Fraction(count, reduced)) for s, count in sorted(locked.items()))
+        (s, Fraction(count, reduced)) for s, count in sorted(locked.items()) if count)
     residue_expectation = sum((Fraction(q, 2) for q in clocks), Fraction())
     residue_variance = sum((Fraction(q * (q - 2), 12) for q in clocks), Fraction())
     sync_expectation = sum((Fraction(1, q - 1) for q in clocks), Fraction())
