@@ -163,10 +163,10 @@ Here the **other** 1/m! arises from a Poisson jump count / time ordering, not a 
 
 ## Reproduction
 
-\`\`\`sh
+```sh
 python -m unittest discover -s tests -p 'test_borwein_prime_clock.py' -v
 python -m compileall -q observational_succ/borwein_prime_clock.py tests/test_borwein_prime_clock.py
-\`\`\`
+```
 
 Full SUCC CI and source provenance checks are independent gates; no all-tests pass may be claimed without an actual hosted receipt.
 
