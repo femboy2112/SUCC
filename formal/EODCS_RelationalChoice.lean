@@ -204,4 +204,78 @@ theorem common_is_greatest_sound_underapproximation
   rw [← hs] at low
   exact sound s p low
 
+/-!
+## EODCS IV: choice-free relational descent (2026-10-19)
+
+This strengthens the earlier classical representative-selector construction.
+No surjectivity or choice is needed to construct a RELATION on reports:
+the existential source pushforward (MayReport) already does the job.
+The comparison law is asserted only on realized q(s) observations.
+
+For reports outside image(q), MayReport is empty while CommonPossible
+is vacuously true. This prevents silently globalizing image-local claims.
+Theorems here use no `classical` tactic or `Classical.choose`.
+-/
+
+/-- Exact successor-support descent through an observation quotient without
+choice and without surjectivity; construction is the existing MayReport. -/
+theorem support_transition_exists_choice_free
+    {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (invariant : SupportCompatible q next qNext) :
+    ∃ V : O → P → Prop,
+      ∀ s p, V (q s) p ↔ FutureSupport next qNext s p := by
+  refine ⟨MayReport q next qNext, ?_⟩
+  intro s p
+  constructor
+  · rintro ⟨t, same, support⟩
+    exact (invariant t s same p).mp support
+  · intro support
+    exact ⟨s, rfl, support⟩
+
+/-- The source-indexed RELATIONAL descent theorem has no global-choice
+or source-surjectivity premise. This is not a deterministic selector. -/
+theorem support_transport_iff_fiber_invariance_choice_free
+    {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P) :
+    (∃ V : O → P → Prop,
+        ∀ s p, V (q s) p ↔ FutureSupport next qNext s p) ↔
+      SupportCompatible q next qNext := by
+  constructor
+  · rintro ⟨V, square⟩
+    exact support_transition_requires_fiber_invariance q next qNext V square
+  · intro invariant
+    exact support_transition_exists_choice_free q next qNext invariant
+
+/-- Tight may/common-possible bounds agree on the OBSERVED image under
+fiber invariance, even if unreachable reports exist in O. -/
+theorem exact_envelopes_on_image_choice_free
+    {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (invariant : SupportCompatible q next qNext) :
+    ∀ s p, MayReport q next qNext (q s) p ↔
+      CommonPossible q next qNext (q s) p := by
+  intro s p
+  constructor
+  · rintro ⟨t, same, support⟩ x eqx
+    exact (invariant t x (same.trans eqx.symm) p).mp support
+  · intro common
+    exact ⟨s, rfl, common s rfl⟩
+
+/-- Outside image(q), existential may-support is false and the universal
+common-possible relation is true by empty quantification. Hence
+unrestricted equality of envelopes needs an image/inhabitation hypothesis. -/
+theorem empty_observation_fiber_separates_envelopes
+    {S : Type u} {O : Type v} {T : Type w} {P : Type z}
+    (q : S → O) (next : S → T → Prop) (qNext : T → P)
+    (o : O) (p : P)
+    (unreachable : ∀ s : S, q s ≠ o) :
+    ¬ MayReport q next qNext o p ∧
+      CommonPossible q next qNext o p := by
+  constructor
+  · rintro ⟨s, same, _⟩
+    exact unreachable s same
+  · intro s same
+    exact False.elim (unreachable s same)
+
 end ObservationalSUCC
