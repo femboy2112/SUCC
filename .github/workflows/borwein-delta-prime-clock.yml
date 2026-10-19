@@ -1,0 +1,34 @@
+name: Borwein delta prime-clock exact controls
+
+on:
+  push:
+    branches:
+      - 'research/borwein-delta-prime-clock-*'
+  pull_request:
+    paths:
+      - 'observational_succ/borwein_prime_clock.py'
+      - 'tests/test_borwein_prime_clock.py'
+      - '.github/workflows/borwein-delta-prime-clock.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-borwein:
+    name: Borwein simplex and modular-clock oracle (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Syntax and exact oracle
+        run: |
+          python -m py_compile observational_succ/borwein_prime_clock.py tests/test_borwein_prime_clock.py
+          python -m unittest discover -s tests -p 'test_borwein_prime_clock.py' -v

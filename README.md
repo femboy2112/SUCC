@@ -32,6 +32,31 @@ prime-two inverse corrections (#181, #182) are **alternative** enclosures of the
 the better single bound, **never the sum**. **RH remains OPEN; `S₄ = A₄ − R₄` is OPEN (AMBIGUOUS).** No
 positive Hilbert covariance is identified with the signed completed Weil form.
 
+**Academic Main V integration (2026-10-19):** the seven stacked draft PRs **#184–#190** — RAD/RIS arithmetic,
+primorial/factorial and Green–Tao prime clocks, ABC clock-energy families, Borwein/factorial holographic
+transport, and the generative-choice / source-certified descent metatheory — consolidated history-preserving
+into `main` from `4de8657` over 7 ancestry-aware `--no-ff` merges (true DAG `main→#184→#185→#186→#189→#190`,
+`main→#187`, `main→#188`). Navigation:
+[integration audit](docs/SUCC_ACADEMIC_MAIN_V_INTEGRATION_AUDIT_2026-10-19.md) ·
+[dependency graph](docs/SUCC_ACADEMIC_MAIN_V_DEPENDENCY_GRAPH.json) ·
+[merge coverage](docs/SUCC_ACADEMIC_MAIN_V_MERGE_COVERAGE.json) ·
+[research frontier](docs/SUCC_ACADEMIC_MAIN_V_RESEARCH_FRONTIER.md). Three independent, methodologically
+distinct hostile audits (number theory · operator/sampling · logic/provenance) returned **CLEAN**; the new
+metatheory compiles choice-free under Lean 4.14 (`#print axioms`: no `Classical.choice`). **ABC, RH, and the
+signed `S₄` sign all remain OPEN.**
+
+**Borwein sinc × prime delta clocks (2026-10-19):** [exact factorial/Borwein/CRT research dossier](research/2026-10-19/BORWEIN_DELTA_PRIME_CLOCK.md) · [scoped claims](docs/CLAIM_SUPPLEMENT_BORWEIN_DELTA.md). Exact simplex-factorial leakage, a prime-width first crossing at 29, genuinely source-derived phase ±1/nonzero projectors, rational sub-Markov SUCC gates, and strictly separated Poisson/Brownian limits. Sinc widths alone do not read arithmetic residues. **ABC/RH/sign OPEN.**
+
+**Green–Tao synchronized prime-clock APs (2026-10-19):** [mathematical dossier](research/2026-10-19/GREEN_TAO_SYNCHRONIZED_CLOCK_AP.md) · [GTC-01–14 scoped claims](docs/CLAIM_SUPPLEMENT_GREEN_TAO_CLOCK_AP.md) · [exact Python probe](scripts/green_tao_clock_ap_probe.py). Genuine W-tricked source counts, exact Fourier phase locking, necessary local AP-step gates, a verified 5×5 prime-progression rectangle (25 synchronizations), **flat-RAD prime ladders** with RIS=1,2,3,4,5, and an **unconditional Maynard–Tao corollary** giving infinitely many prime-rich constant-RAD fibers (at least m of K positions, not every position). A two-sided arbitrary-length existence theorem is an **external Green–Tao/PNT-AP corollary**, not a new or internal proof. No fixed-gap conjecture, ABC, RH, or completed Weil positivity proof.
+
+**Primorial/factorial prime-phase clocks (2026-10-19):** [rigorous dossier](research/2026-10-19/PRIMORIAL_FACTORIAL_PHASE_CLOCKS.md) · [claim supplement](docs/CLAIM_SUPPLEMENT_PRIME_PHASE_CLOCKS.md). Backward prime-congruence searches, phase-1 clock/RAD predecessor correspondence, fixed-window CRT phase-score distributions, exact moving-window no-go results, and the strict primorial-field versus factorial-full-profinite completion distinction. Existing RAD/RIS branch required. **No ABC/RH proof.**
+
+**RAD/RIS prime-gated successor transport (2026-10-19):** [research dossier](research/2026-10-19/RAD_RIS_SUCC_CRT_AND_ABC.md) · [claim supplement](docs/CLAIM_SUPPLEMENT_RAD_RIS.md). Exact squarefree-support/multiplicity operators, nested prime-depth layers, CRT successor-visibility no-go, exact signed contact covariance and valuation densities, a joint Euler chart, and an ABC-quality restatement. Elementary derivations and finite independent tests; **ABC/RH remain unproved**, and no signed Weil positivity is inferred.
+
+**Factorial Borwein hologram (2026-10-19):** [arithmetic-hologram dossier](research/2026-10-19/FACTORIAL_BORWEIN_HOLOGRAPHIC_CLOCK.md) · [FBH-01–10 scoped claims](docs/CLAIM_SUPPLEMENT_FACTORIAL_BORWEIN_HOLOGRAM.md). A factorial-labelled Borwein uniform convolution gives a bounded injective `ℓ²(ℤ)→L²(ℝ)` cardinal lift reversible **only on its own range** — point evaluation is *not* bounded on arbitrary L² classes, so the reconstruction theorem is **not** globalized to all of L² — plus exact Legendre variance windows, Newton source reconstruction, an authentic ±1/nonzero prime-clock gate, and a fixed-`W` Poisson no-uniform-mixing lower bound. Borwein simplex factorials, Poisson jump-time factorials and the arithmetic valuation `v_p(N!)` are kept **distinct**. **ABC/RH/signed-S₄ OPEN.**
+
+**ABC prime-clock energy families (2026-10-19):** [research dossier](research/2026-10-19/ABC_CLOCK_GREEN_TAO.md) · [ABC-CLK-01–13 scoped claims](docs/CLAIM_SUPPLEMENT_ABC_CLOCK_GREEN_TAO.md). Exact primitive p-adic conditional-Haar valuation laws, a `ris^θ` moment bound, and an elementary `X^(8/5−…)` exceptional-set estimate — a **strictly inferior baseline**, not a competitive bound: the 2026 Bernert–Browning–Lichtman–Teräväinen theorem gives `X^(3/5+ε)` on its stated range. Local profinite independence is **not** promoted to global independence, and positive elementary moments do **not** identify the signed completed Weil form. **ABC OPEN; RH OPEN.**
+
 **Institute Round II:** [execution and proof-authority report](research/2026-10-18/ROUND2_EXECUTION_REPORT.md), [forward-only operator manuscript](research/2026-10-18/ROUND2_OPERATORS.md), and [completion-cost theorems](research/2026-10-18/ROUND2_COMPLETION.md). Thirteen new core-Lean declarations; source-signed analysis stays on its separate continuation. RH remains open.
 
 **Institute nucleus research checkpoint (2026-10-18):**
@@ -68,6 +93,10 @@ Schur, source-indexed observers, Gamma·FUCC·signed-Weil) consolidated into `ma
 [next campaign](research/2026-10-16/SUCC_FUCC_TATE_WEIL_NEXT_CAMPAIGN.md). The red PR #138 interval test was
 repaired on the integration branch (exact rational ξ′/ξ translation). **RH remains OPEN; `S_4 = A_4 − R_4`
 is unresolved.** A positive covariance, Gram, or Galerkin block is **not** the signed completed Weil form.
+
+## SUCC metatheory — generative choice and source-certified descent (2026-10-19)
+
+The proposed organizing principle is **construct categorically, verify relationally, certify globally through lawful source interfaces**. Local witness availability, global compatibility, source realization, and proof authority are independent gates. A new [metatheory manuscript](research/2026-10-19/SUCC_META_GENERATIVE_CHOICE_DESCENT.md) gives a choice/LEM firewall (Diaconescu), a choice-free relational support-descent theorem compiled in `formal/MetaChoiceRelationalDescent.lean` against the byte-frozen original `EODCS_RelationalChoice.lean`, and exact finite `F_2` odd-loop obstruction certificates with hostile graph-oracle controls. This is *new-to-project synthesis*, not a claim of general topos formalization, academic novelty, source authentication, Weil positivity, or RH. See [claim supplement](docs/CLAIM_SUPPLEMENT_META_CHOICE_DESCENT.md).
 
 ## The central mathematical objects
 

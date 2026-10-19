@@ -263,6 +263,112 @@
         "observational_succ/round2_completion.py",
         "observational_succ/round2_causal.py"
       ]
+    },
+    {
+      "namespace": "RAD_RIS_TRANSPORT",
+      "bare_prefix": "RRT",
+      "fq_prefix": "RRT",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_RAD_RIS.md"
+      ],
+      "id_count": 10,
+      "status": "MIXED (CLASSICAL/PROVED LOCAL/REFUTED/UNVERIFIED)",
+      "topic": "RAD/RIS squarefree support, multiplicity filtration, prime-gated FUCC, CRT successor locality obstruction and ABC boundary",
+      "code": [
+        "observational_succ/rad_ris_transport.py"
+      ]
+    },
+    {
+      "namespace": "PRIMORIAL_PHASE_CLOCKS",
+      "bare_prefix": "PPC",
+      "fq_prefix": "PPC",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PRIME_PHASE_CLOCKS.md"
+      ],
+      "id_count": 10,
+      "status": "MIXED (CLASSICAL/EXTERNAL THEOREM/PROVED LOCAL/REFUTED/UNVERIFIED)",
+      "topic": "prime-clock phase-1 residue alignment, backward primorial/factorial search, CRT and profinite completion, complete growing-window obstructions, ABC falsification",
+      "code": [
+        "observational_succ/prime_phase_clocks.py",
+        "scripts/prime_phase_clocks_probe.py"
+      ]
+    },
+    {
+      "namespace": "GREEN_TAO_CLOCK_AP",
+      "bare_prefix": "GTC",
+      "fq_prefix": "GTC",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_GREEN_TAO_CLOCK_AP.md"
+      ],
+      "id_count": 14,
+      "status": "MIXED (CLASSICAL/EXTERNAL THEOREM/PROVED LOCAL/TESTED FINITE/REFUTED/UNVERIFIED)",
+      "topic": "faithful squarefree Fourier phase clocks, Tao W-trick fixed class, nested prime arithmetic progressions, exact local singular series and ABC/RH firewall",
+      "code": [
+        "observational_succ/green_tao_clock_ap.py",
+        "scripts/green_tao_clock_ap_probe.py"
+      ]
+    },
+    {
+      "namespace": "BORWEIN_DELTA_WALK",
+      "bare_prefix": "BDW",
+      "fq_prefix": "BDW",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_BORWEIN_DELTA.md"
+      ],
+      "id_count": 6,
+      "status": "MIXED (CLASSICAL/PROVED LOCAL/REFUTED/UNVERIFIED)",
+      "topic": "Borwein sinc/random-walk simplex factorial, authentic prime-clock delta projectors, exact gated SUCC transport and distinct Brownian/Poisson scaling",
+      "code": [
+        "observational_succ/borwein_prime_clock.py"
+      ]
+    },
+    {
+      "namespace": "FACTORIAL_BORWEIN_HOLOGRAM",
+      "bare_prefix": "FBH",
+      "fq_prefix": "FBH",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_FACTORIAL_BORWEIN_HOLOGRAM.md"
+      ],
+      "id_count": 10,
+      "status": "MIXED (PROVED LOCAL/TESTED MODEL/REFUTED)",
+      "topic": "factorial-labelled Borwein uniform-convolution hologram: bounded injective ell2(Z)->L2(R) cardinal lift with range-only reconstruction (NOT all of L2), Legendre variance windows, Newton source reconstruction, authentic prime-clock +1/-1/nonzero gate, and fixed-W Poisson no-uniform-mixing lower bound",
+      "code": [
+        "observational_succ/factorial_borwein_hologram.py",
+        "scripts/factorial_borwein_hologram_probe.py"
+      ]
+    },
+    {
+      "namespace": "ABC_CLOCK_GREEN_TAO",
+      "bare_prefix": "ABC-CLK",
+      "fq_prefix": "ABC-CLK",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_ABC_CLOCK_GREEN_TAO.md"
+      ],
+      "id_count": 13,
+      "status": "MIXED (PROVED LOCAL/CLASSICAL/CONDITIONAL/TESTED MODEL/REFUTED/UNVERIFIED)",
+      "topic": "primitive p-adic conditional-Haar clock laws, ris^theta moment bound, elementary X^(8/5-...) exceptional-set baseline (strictly inferior to the 2026 Bernert-Browning-Lichtman-Teravainen X^(3/5+eps) benchmark), Green-Tao/Maynard-Tao prime-AP lifts, and the REFUTED inference that these positive moments identify the signed completed Weil form or prove RH",
+      "note": "bare IDs are of the form ABC-CLK-NN; the hyphenated tag is NOT parsed by the current claim_namespaces _CLAIM_ROW_RE/fqid regex ([A-Z]{2,6}[0-9]*), so these IDs are absent from the automated census and the fqid() mapper. Registered additively for navigation; the bare IDs remain valid within their supplement. A SUCC->YEAN FQID extractor keying off ABC-CLK would need a regex extension. No historical ID renamed.",
+      "code": [
+        "observational_succ/abc_clock_families.py",
+        "scripts/abc_clock_green_tao_probe.py"
+      ]
+    },
+    {
+      "namespace": "META_CHOICE_DESCENT",
+      "bare_prefix": "MCD",
+      "fq_prefix": "MCD",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_META_CHOICE_DESCENT.md"
+      ],
+      "id_count": 10,
+      "status": "MIXED (CLASSICAL/CONSTRUCTIVE/LEAN_KERNEL/PROVED PAPER/REFUTED/UNVERIFIED)",
+      "topic": "source-certified generative choice and relational descent: witnessed dependent choice, Diaconescu choice/LEM firewall, choice-free support transport on q-fibers, F_2 odd-loop global-section obstruction, existential-support left adjoint, and the UNVERIFIED gate to any novel arithmetic/Weil/RH result",
+      "code": [
+        "observational_succ/meta_choice_descent.py",
+        "formal/MetaChoiceRelationalDescent.lean",
+        "formal/EODCS_MetaChoiceParity.lean",
+        "scripts/meta_choice_descent_probe.py"
+      ]
     }
   ],
   "resolved_collisions": [
