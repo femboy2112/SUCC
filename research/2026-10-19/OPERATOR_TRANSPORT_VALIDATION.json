@@ -1,0 +1,103 @@
+{
+  "generated_utc": "2026-10-19T00:39:54.941845+00:00",
+  "base_commit": "81684b4b8956f9f5da56c376ba7e4339277eb665",
+  "reference_commit": "e42096ec0186228dd0f748767599e470f2ca2e1d",
+  "status": "FOCUSED_VALIDATION_PASSED",
+  "infinite_theorems_certified_by_finite_tests": false,
+  "full_repository_suite_run_by_this_lane": false,
+  "reference_baseline": {
+    "path": "/workspace/scratch/a77cd3c6f908/forge-reference-178",
+    "test_pattern": "test_institute_atomic_haar.py",
+    "tests": 10,
+    "exit_code": 0
+  },
+  "checks": [
+    {
+      "command": [
+        "python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "output_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "diagnostic_lines": [
+        "  \"status\": \"SOURCE_PROVENANCE_VERIFIED\""
+      ]
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_forge_operator_transport.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "output_sha256": "838fb5c0352b00742e0e14c090323e4f56c860ce7bff6c94f4238bd8ac266194",
+      "diagnostic_lines": [
+        "Ran 7 tests in 0.384s",
+        "OK"
+      ]
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-output-directory=/tmp",
+        "research/2026-10-19/PAPER_B_ATOMIC_HAAR_TRANSPORT.tex"
+      ],
+      "exit_code": 0,
+      "output_sha256": "b05f20081fb48908888ddf6bd51997958c59766d222d537340065c99d7aafd19",
+      "diagnostic_lines": [
+        "LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.",
+        "Output written on /tmp/PAPER_B_ATOMIC_HAAR_TRANSPORT.pdf (8 pages, 385117 bytes"
+      ]
+    },
+    {
+      "command": [
+        "pdflatex",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-output-directory=/tmp",
+        "research/2026-10-19/PAPER_B_ATOMIC_HAAR_TRANSPORT.tex"
+      ],
+      "exit_code": 0,
+      "output_sha256": "0f6f25c1be897d6de31275c3628501b8490f533f66d91bf81d7bbc663280d7fa",
+      "diagnostic_lines": [
+        "Output written on /tmp/PAPER_B_ATOMIC_HAAR_TRANSPORT.pdf (8 pages, 385117 bytes"
+      ]
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "diagnostic_lines": []
+    }
+  ],
+  "files": [
+    {
+      "path": "observational_succ/forge_operator_transport.py",
+      "sha256": "5d403ad6604f0443b4cee507f08b629a973ba0425fe478306b8e6eb109399f50"
+    },
+    {
+      "path": "tests/test_forge_operator_transport.py",
+      "sha256": "36a32a614989a735338777c2f1cfa49879bc43430d70b67b02964887ac950cff"
+    },
+    {
+      "path": "research/2026-10-19/PAPER_B_ATOMIC_HAAR_TRANSPORT.tex",
+      "sha256": "069be0b01da387c5f46c566d718ed86b8750d8f69704f5e358ff2bfec192b90d"
+    },
+    {
+      "path": "research/2026-10-19/OPERATOR_TRANSPORT_PROOF_DOSSIER.md",
+      "sha256": "cac7e5d4dba3c7c9ebec56bd39d3614e484d9a94c2ec401a704345f03af50ba6"
+    }
+  ]
+}

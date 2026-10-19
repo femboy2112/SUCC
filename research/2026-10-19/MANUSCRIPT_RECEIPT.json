@@ -1,0 +1,36 @@
+{
+  "status": "DRAFTS_COMPILED_AND_RENDERED",
+  "papers": [
+    {
+      "source": "research/2026-10-19/paper_a_source_information.tex",
+      "source_sha256": "5ec492340bcd06c4ce9b0b39bb316d1e852d965877b902405409105783da0c43",
+      "pdf": "output/pdf/Paper_A_Source_Information.pdf",
+      "pdf_sha256": "c6c8535b3ed685090adfa3b59e5f7c23a3be5b3e11298ee2a2358c187a054ba9",
+      "pages": 8,
+      "pdflatex_passes": 3,
+      "final_latex_warnings": [],
+      "all_pages_rendered_and_visually_reviewed": true
+    },
+    {
+      "source": "research/2026-10-19/PAPER_B_ATOMIC_HAAR_TRANSPORT.tex",
+      "source_sha256": "069be0b01da387c5f46c566d718ed86b8750d8f69704f5e358ff2bfec192b90d",
+      "pdf": "output/pdf/Paper_B_Atomic_Haar_Transport.pdf",
+      "pdf_sha256": "8a5dcfa847b8da56c0978fa2e0df240f9f5baa56c4bff8bfba50b91b3cb8b6e6",
+      "pages": 8,
+      "pdflatex_passes": 3,
+      "final_latex_warnings": [],
+      "all_pages_rendered_and_visually_reviewed": true
+    },
+    {
+      "source": "research/2026-10-19/PAPER_C_GENERALIZED_PRIME_RIGIDITY.tex",
+      "source_sha256": "6b51deb8e65a38640d3b3701fff0ed447c1ee02d8beb70859211863a7f70ac23",
+      "pdf": "output/pdf/Paper_C_Prime_Rigidity.pdf",
+      "pdf_sha256": "8aa540403fee2da999f72ae4ccaa9ce267f8465746085b07477abd059da4dceb",
+      "pages": 6,
+      "pdflatex_passes": 3,
+      "final_latex_warnings": [],
+      "all_pages_rendered_and_visually_reviewed": true
+    }
+  ],
+  "publication_ready_claimed": false
+}

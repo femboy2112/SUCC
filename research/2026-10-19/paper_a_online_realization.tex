@@ -1,0 +1,217 @@
+% Section fragment for paper_a_source_information.tex.
+% Uses the parent's amsmath/amssymb and theorem/proposition environments.
+\section{Online source realization and public command interfaces}
+\label{online-realization}
+
+Offline history existence and online control have different quantifiers.
+For a finite source with private states $X$, reports $q:X\to Y$, and lawful
+labelled transitions $x\xrightarrow a x'$, fix an abstract transition relation
+on $Y$. Original provenance is a map $\sigma:X\to\Sigma$ preserved by every
+source edge. Current carrier and epoch may change inside $x$. Neither this
+metadata nor a mathematical observation refinement is automatically public.
+
+In the perfect-information realization game, the environment requests an
+abstract transition $q(x)\xrightarrow a y'$. The resolver then chooses a
+matching private transition $x\xrightarrow a x'$ with $q(x')=y'$, before seeing
+the next request. An unanswered request is a loss. Absence of any abstract
+request means safe termination, not satisfaction of a progress objective.
+
+\subsection{Exact winning regions and finite certificates}
+\label{online-certificates}
+
+It is useful to allow a further adversarial outcome after the resolver's
+command. Let $V$ be finite; let $\operatorname{Req}(v)$ be its requests,
+$\operatorname{Resp}(v,r)$ its commands, and
+$\varnothing\ne\operatorname{Out}(v,r,c)\subseteq V$ their complete outcome
+sets. Empty response sets express refusal. Define
+\[
+ F(Z)=\{v\in V:\ \forall r\in\operatorname{Req}(v)\ \exists c\in
+ \operatorname{Resp}(v,r),\ \operatorname{Out}(v,r,c)\subseteq Z\}.
+\]
+The source-realization game is the special case in which each selected private
+successor is a response with a singleton outcome set.
+
+\begin{theorem}[Finite sure-safety certificate]
+\label{online-safety}
+The greatest fixed point $W=\nu F$ is exactly the sure-winning region, and
+positional resolver strategies suffice. Its complement has ranks
+$\rho:V\setminus W\to\{1,\ldots,|V|\}$, a chosen request at every losing
+position, and for every response a chosen lower-rank outcome. These choices
+force refusal within at most $\rho(v)$ requests from $v$.
+
+A positive response table closed in $W$, together with a ranked negative table
+on its complement, certifies the exact winning region independently of the
+algorithm that found it.
+\end{theorem}
+
+\emph{Proof.}
+The map $F$ is monotone. Iterating $Z_0=V$, $Z_{k+1}=F(Z_k)$ gives a decreasing
+sequence stabilizing after at most $|V|$ strict deletions. Every postfixed set
+is contained in every $Z_k$, so its limit is $\nu F$. Choose in this limit one
+response whose complete outcome set remains in the limit for every request.
+Induction on play length proves sure safety.
+
+Give a state first removed at stage $k$ rank $k$. Its removal supplies a
+request for which every response has an outcome outside $Z_{k-1}$, hence of
+smaller rank. At rank one there is no response. Following these chosen outcomes
+strictly decreases a positive integer after every completed round and defeats
+any history-dependent resolver. The same arguments verify any supplied pair
+of positive and ranked-negative tables directly. Their regions cannot overlap;
+if they partition $V$, they identify the winning region exactly.\hfill$\square$
+
+This is classical safety-game and alternating-simulation mathematics; compare
+Alur, Henzinger, Kupferman and Vardi, \emph{Alternating Refinement Relations}
+(CONCUR 1998). Its role here is to make control ownership and refusal explicit.
+
+For example, take states $p,u,v$ with one report and initial state $p$.
+Either action $a,b$ sends $p$ to either $u,v$. Only $a$ is available at $u$,
+and only $b$ at $v$; either enabled action again permits both successors.
+Every finite word has a private lift, since its support becomes $\{u,v\}$
+after the first letter and stays there. Yet online ranks are
+$\rho(p)=2$, $\rho(u)=\rho(v)=1$, so there is no online resolver. This is a
+finite history-determinism obstruction, not a new separation from automata
+theory; compare Boker and Lehtinen, \emph{Token Games and History-Deterministic
+Quantitative Automata}, arXiv:2110.14308.
+
+\subsection{Public observation requires a command interface}
+\label{online-public-command-interface}
+
+When $x$ is hidden, ``choose a successor'' is not a public action specification.
+Declare instead commands $c\in C$ and complete implementation rows
+$T_{a,c}(x)\subseteq X$, each contained in the lawful $a$-successors of $x$.
+Nature chooses their outcomes adversarially. The public observer sees
+$h:X\to O$, where $h$ retains $q$, and has perfect recall of signals, requests,
+and its own commands. It does not know the original label unless that label
+is available through $h$. Beliefs may contain multiple original labels.
+
+At a nonempty homogeneous belief $B$, the command $c$ answers request $(a,y')$
+only if
+\[
+ \forall x\in B:\quad
+ \varnothing\ne T_{a,c}(x)\subseteq q^{-1}(y').
+\]
+All actual outcomes must be checked before conditioning: discarding outputs
+with the wrong report would introduce postselection. After a legal command
+and observed signal $o$, update by
+\[
+ B_o=\left(\bigcup_{x\in B}T_{a,c}(x)\right)\cap h^{-1}(o),
+ \qquad B_o\ne\varnothing.
+\]
+The belief game has these sets as positions and all nonempty $B_o$ as
+adversarial command outcomes. It has at most
+$\sum_o(2^{|h^{-1}(o)|}-1)$ positions.
+
+\begin{theorem}[Public sure-safety reduction]
+\label{online-public-safety}
+A pure public-history strategy is surely safe from $B$ if and only if $B$ is
+winning in the belief game. A strategy depending on the current belief and
+request suffices, although the current report alone may be insufficient.
+\end{theorem}
+
+\emph{Proof.}
+Induction over a public history shows that the belief is exactly the endpoints
+of all private histories compatible with it. A command must work at each such
+endpoint, and its possible next signals yield exactly the displayed update.
+Thus a winning belief strategy yields a lawful public strategy. Conversely,
+fix a public strategy at a losing belief. The ranked certificate supplies a
+finite sequence of requests and successor signals leading to a command which
+is unavailable or has a wrong-report outcome at some compatible endpoint.
+The whole finite signal history has one compatible private history by the
+same support induction. Choosing that witness gives a concrete failure of
+sure safety. This reasoning never switches the realized original source
+between successive steps.\hfill$\square$
+
+This is the safety specialization of the knowledge construction of Chatterjee,
+Doyen, Henzinger and Raskin, \emph{Algorithms for Omega-Regular Games with
+Imperfect Information}, LMCS 3(3:4), 2007, Section 3.1. It makes no claim
+about almost-sure objectives or stochastic belief sufficiency.
+
+\begin{proposition}[The source relation does not identify public control]
+\label{online-command-nonidentifiability}
+The same private transition relation, initial uncertainty and public reports
+can have opposite public online winners under different command interfaces.
+\end{proposition}
+
+\emph{Proof.}
+Take indistinguishable initial states $0,1$, a terminal state $d$, and edges
+$0\xrightarrow a d$, $1\xrightarrow a d$. One command implementing both rows
+is surely successful. Two commands, one available only at $0$ and one only
+at $1$, have the same union of private edges but neither is surely legal at
+belief $\{0,1\}$.\hfill$\square$
+
+\subsection{Probe repair: a structural no-go and a hypergraph criterion}
+\label{online-probe-repair}
+
+\begin{proposition}[Information cannot repair structural losing states]
+\label{online-structural-no-go}
+If $x$ is losing in the perfect-information private-successor game, no truthful
+nondestructive probes and public memory can make it surely winning while
+keeping the source edges and requested abstract relation fixed.
+\end{proposition}
+
+\emph{Proof.}
+A perfect-information private resolver can emulate any such public controller
+and choose a lawful outcome of each selected command. Sure success of the
+public controller would contradict the private losing rank certificate.
+Equivalently, observing more information does not create an edge that escapes
+the certificate's rank decrease.\hfill$\square$
+
+The converse fails by Proposition~\ref{online-command-nonidentifiability}.
+An information defect and a structural control defect require different
+repairs. A state-changing probe is outside this no-go's assumptions.
+
+For an exact positive result, consider a one-step terminal control problem
+with one current report and one request. Let $E_x\subseteq C$ be the commands
+that successfully complete the task at private state $x$. Let $\mathcal H$
+contain precisely the inclusion-minimal nonempty sets $H\subseteq X$ with
+$\bigcap_{x\in H}E_x=\varnothing$. Supply a finite menu of total truthful
+nondestructive probes $p:X\to O_p$, each with an exact nonnegative cost $c_p$.
+A fixed bundle is acquired before the request, and its outputs are retained.
+
+\begin{theorem}[Minimal fixed-bundle command repair]
+\label{online-probe-hitting}
+A probe bundle $S$ permits a surely successful command if and only if every
+$H\in\mathcal H$ is split by some $p\in S$. Hence minimum acquisition cost
+is exactly the weighted hitting-set optimum whose probe $p$ covers the
+hyperedges on which it is nonconstant. A hyperedge split by no available
+probe certifies impossibility. A singleton hyperedge cannot be repaired by
+any nondestructive observation.
+\end{theorem}
+
+\emph{Proof.}
+Apply Lemma~\ref{lem:hereditary} to the hereditary family consisting of the
+empty set and all nonempty state sets having a common legal command.
+A hyperedge is monochromatic under the
+joint probe output exactly when all selected probes are constant on it.
+Therefore adequacy is precisely the asserted hitting condition, with the
+same declared additive cost.\hfill$\square$
+
+\begin{proposition}[No coarsest online-safe repair]
+\label{online-no-coarsest}
+Unlike exact autonomous behavior preservation, command-safe observation can
+have incomparable minimal adequate refinements and no coarsest one.
+\end{proposition}
+
+\emph{Proof.}
+Take $E_0=\{a,b\}$, $E_1=\{b,c\}$, $E_2=\{a,c\}$. Every pair shares a
+command, but the triple does not. Thus $\mathcal H=\{\{0,1,2\}\}$: pairwise
+conflict graphs miss the obstruction. Both partitions
+$\{0,1\}\mid\{2\}$ and $\{0\}\mid\{1,2\}$ are adequate. Any common
+coarsening identifies $0\sim1\sim2$, so is constant and inadequate. No
+coarsest adequate refinement exists.\hfill$\square$
+
+This hypergraph mechanism is classical. It prevents equating the coarsest
+autonomous quotient with a least online-capability repair. The theorem is
+about supplied fixed probes, not adaptive destructive acquisition.
+
+\paragraph{Verification and authority.}
+The accompanying exact Python solver emits positive strategy and negative
+rank tables checked by a separate verifier. All 256 two-state/two-command
+arenas and 60 further three-state/two-request arenas agree with a distinct
+positional-strategy enumeration oracle. A separate public-policy tree oracle
+over complete private histories checks 256 public command tables and 768
+initial beliefs. These tests validate implementations; the proofs establish
+the quantified statements. Generic certificate soundness has a separately
+kernel-checked Lean development in \texttt{ForgeGameCertificates.lean}; the
+fixed-point algorithm and public-belief compiler are not formalized there.
+No academic priority or physical source authentication is asserted.

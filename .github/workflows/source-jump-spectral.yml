@@ -1,0 +1,76 @@
+name: Source-generated Gamma-FUCC spectral polar Schur
+on:
+  push:
+    branches: ['research/source-jump-spectral-*']
+  pull_request:
+    paths:
+      - 'observational_succ/source_jump_spectral.py'
+      - 'tests/test_source_jump_spectral.py'
+      - 'scripts/source_jump_spectral_probe.py'
+      - 'research/2026-10-17/SOURCE_JUMP_SPECTRAL_POLAR_SCHUR.md'
+      - 'docs/CLAIM_SUPPLEMENT_SOURCE_JUMP_SPECTRAL.md'
+      - '.github/workflows/source-jump-spectral.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact-jump-spectral:
+    name: Source jump and polar Schur (${{ matrix.python }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install standard SUCC math dependencies
+        run: python -m pip install -e '.[test]'
+      - name: Check archived authentic source and proof discipline
+        run: python scripts/verify_provenance.py
+      - name: Exact rational spectral algebra and source-gated test
+        run: |
+          python -m unittest discover -s tests -p 'test_source_jump_spectral.py' -v 2>&1 | tee "$RUNNER_TEMP/jump-spectral-tests.log"
+          grep -q 'Ran 25 tests' "$RUNNER_TEMP/jump-spectral-tests.log"
+          grep -q '^OK$' "$RUNNER_TEMP/jump-spectral-tests.log"
+          if grep -Eq 'skipped=[1-9]|FAILED \(|ERROR:' "$RUNNER_TEMP/jump-spectral-tests.log"; then exit 1; fi
+      - name: Replay original first-prime Ritz and rank-gap packets
+        run: |
+          python scripts/source_jump_spectral_probe.py --source --verify > "$RUNNER_TEMP/jump-spectral-source.json"
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          x=json.loads((Path(os.environ['RUNNER_TEMP'])/'jump-spectral-source.json').read_text())
+          assert x['rank_gap_paper']['cell_rank_upper']==453
+          assert x['rank_gap_paper']['original_real_Gamma_prefix_rungs']==256
+          assert x['original_source_rank_gap']['source_contract']['source_git_blob']=='0cc8510b71d178fc79e8d410a86d8b6014cf9178'
+          assert len(x['original_source_primitive_Ritz'])==2
+          assert x['original_source_rank_gap']['negative_jump_baseline_index_upper']==5
+          assert x['original_source_rank_gap']['negative_even_jump_baseline_index_upper']==3
+          assert x['original_source_rank_gap']['negative_odd_jump_baseline_index_upper']==2
+          assert x['original_source_primitive_Ritz'][0]['baseline_rigorously_negative_on_this_trial'] is True
+          for trial in x['original_source_primitive_Ritz']:
+              lo,hi=trial['polar_free_baseline_energy_interval']
+              print('SOURCE_PRIMITIVE_RITZ',trial['mode'],float(lo.split('/')[0])/float(lo.split('/')[1]) if '/' in lo else float(lo),float(hi.split('/')[0])/float(hi.split('/')[1]) if '/' in hi else float(hi), 'rigorously_negative_baseline=',trial['baseline_rigorously_negative_on_this_trial'])
+          assert x['source_jump_projector_computed'] is False
+          assert x['original_signed_Weil_positivity_proved'] is False
+          assert x['RH_proved'] is False
+          PY
+      - name: Preserve original source-dependent analytic guards
+        run: |
+          python scripts/observer_foundations_probe.py > "$RUNNER_TEMP/observer-foundations.json"
+          python scripts/ordinal_succ_report_probe.py > "$RUNNER_TEMP/ordinal.json"
+      - name: Retain exact and failure receipts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: source-jump-spectral-${{ matrix.python }}
+          path: |
+            ${{ runner.temp }}/jump-spectral-source.json
+            ${{ runner.temp }}/jump-spectral-tests.log
+            ${{ runner.temp }}/observer-foundations.json
+            ${{ runner.temp }}/ordinal.json
+          if-no-files-found: warn

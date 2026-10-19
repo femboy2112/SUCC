@@ -1,0 +1,447 @@
+{
+  "contract": {
+    "target": "original class",
+    "costs_observed": true,
+    "refusal_oracle": false,
+    "controller_memory_bounded": false,
+    "source_restoration_certified": false
+  },
+  "problem": {
+    "carriers": [
+      "x",
+      "y",
+      "z",
+      "u",
+      "v"
+    ],
+    "actions": [
+      "a",
+      "b",
+      "reveal"
+    ],
+    "edges": [
+      {
+        "start": "x",
+        "action": "a",
+        "target": "x",
+        "receipt": "alone",
+        "cost": [
+          1,
+          1
+        ]
+      },
+      {
+        "start": "y",
+        "action": "a",
+        "target": "u",
+        "receipt": "merged",
+        "cost": [
+          1,
+          1
+        ]
+      },
+      {
+        "start": "z",
+        "action": "a",
+        "target": "u",
+        "receipt": "merged",
+        "cost": [
+          1,
+          1
+        ]
+      },
+      {
+        "start": "x",
+        "action": "b",
+        "target": "v",
+        "receipt": "merged",
+        "cost": [
+          1,
+          1
+        ]
+      },
+      {
+        "start": "y",
+        "action": "b",
+        "target": "v",
+        "receipt": "merged",
+        "cost": [
+          1,
+          1
+        ]
+      },
+      {
+        "start": "z",
+        "action": "b",
+        "target": "z",
+        "receipt": "alone",
+        "cost": [
+          1,
+          1
+        ]
+      },
+      {
+        "start": "u",
+        "action": "a",
+        "target": "u",
+        "receipt": "destroyed",
+        "cost": [
+          0,
+          1
+        ]
+      },
+      {
+        "start": "u",
+        "action": "b",
+        "target": "u",
+        "receipt": "destroyed",
+        "cost": [
+          0,
+          1
+        ]
+      },
+      {
+        "start": "u",
+        "action": "reveal",
+        "target": "u",
+        "receipt": "destroyed",
+        "cost": [
+          0,
+          1
+        ]
+      },
+      {
+        "start": "v",
+        "action": "a",
+        "target": "v",
+        "receipt": "destroyed",
+        "cost": [
+          0,
+          1
+        ]
+      },
+      {
+        "start": "v",
+        "action": "b",
+        "target": "v",
+        "receipt": "destroyed",
+        "cost": [
+          0,
+          1
+        ]
+      },
+      {
+        "start": "v",
+        "action": "reveal",
+        "target": "v",
+        "receipt": "destroyed",
+        "cost": [
+          0,
+          1
+        ]
+      },
+      {
+        "start": "x",
+        "action": "reveal",
+        "target": "x",
+        "receipt": "x",
+        "cost": [
+          2,
+          1
+        ]
+      },
+      {
+        "start": "y",
+        "action": "reveal",
+        "target": "y",
+        "receipt": "y",
+        "cost": [
+          2,
+          1
+        ]
+      },
+      {
+        "start": "z",
+        "action": "reveal",
+        "target": "z",
+        "receipt": "z",
+        "cost": [
+          2,
+          1
+        ]
+      }
+    ],
+    "origins": [
+      "x",
+      "y",
+      "z"
+    ],
+    "initial": [
+      "x",
+      "y",
+      "z"
+    ],
+    "target": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "q": [
+      "q",
+      "q",
+      "q"
+    ]
+  },
+  "certificate": {
+    "starts": [
+      [
+        [
+          "x",
+          "x"
+        ]
+      ],
+      [
+        [
+          "y",
+          "y"
+        ]
+      ],
+      [
+        [
+          "z",
+          "z"
+        ]
+      ],
+      [
+        [
+          "x",
+          "x"
+        ],
+        [
+          "y",
+          "y"
+        ]
+      ],
+      [
+        [
+          "x",
+          "x"
+        ],
+        [
+          "z",
+          "z"
+        ]
+      ],
+      [
+        [
+          "y",
+          "y"
+        ],
+        [
+          "z",
+          "z"
+        ]
+      ],
+      [
+        [
+          "x",
+          "x"
+        ],
+        [
+          "y",
+          "y"
+        ],
+        [
+          "z",
+          "z"
+        ]
+      ]
+    ],
+    "beliefs": [
+      [
+        [
+          "x",
+          "v"
+        ]
+      ],
+      [
+        [
+          "x",
+          "v"
+        ],
+        [
+          "y",
+          "v"
+        ]
+      ],
+      [
+        [
+          "x",
+          "x"
+        ]
+      ],
+      [
+        [
+          "x",
+          "x"
+        ],
+        [
+          "y",
+          "y"
+        ]
+      ],
+      [
+        [
+          "x",
+          "x"
+        ],
+        [
+          "y",
+          "y"
+        ],
+        [
+          "z",
+          "z"
+        ]
+      ],
+      [
+        [
+          "x",
+          "x"
+        ],
+        [
+          "z",
+          "z"
+        ]
+      ],
+      [
+        [
+          "y",
+          "u"
+        ]
+      ],
+      [
+        [
+          "y",
+          "u"
+        ],
+        [
+          "z",
+          "u"
+        ]
+      ],
+      [
+        [
+          "y",
+          "v"
+        ]
+      ],
+      [
+        [
+          "y",
+          "y"
+        ]
+      ],
+      [
+        [
+          "y",
+          "y"
+        ],
+        [
+          "z",
+          "z"
+        ]
+      ],
+      [
+        [
+          "z",
+          "u"
+        ]
+      ],
+      [
+        [
+          "z",
+          "z"
+        ]
+      ]
+    ],
+    "values": [
+      [
+        0,
+        1
+      ],
+      null,
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      null,
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "policy": [
+      null,
+      null,
+      null,
+      "a",
+      "reveal",
+      "a",
+      null,
+      null,
+      null,
+      null,
+      "b",
+      null,
+      null
+    ],
+    "ranks": [
+      0,
+      null,
+      0,
+      1,
+      1,
+      1,
+      0,
+      null,
+      0,
+      0,
+      1,
+      0,
+      0
+    ]
+  }
+}

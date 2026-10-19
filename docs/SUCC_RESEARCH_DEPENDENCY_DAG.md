@@ -181,3 +181,28 @@ The [dependency manifest](../research/2026-10-16/COLLECTIVE_OBSERVER_DEPENDENCIE
 pins source identity, coordinate metric and shared premises. Independent finite
 methods share one original arithmetic source; they are not independent sources.
 See [CO-01–17](CLAIM_SUPPLEMENT_COLLECTIVE_OBSERVER.md) for domains and falsifiers.
+
+
+## Academic Transmutation child of PR177 (2026-10-18)
+
+The [manifest](../research/2026-10-18/ACADEMIC_TRANSMUTATION_DEPENDENCIES.json)
+pins all PR157–177 heads and records which are ancestors. The
+[audit](ACADEMIC_TRANSMUTATION_AUDIT_2026-10-18.md) and
+[ATX supplement](CLAIM_SUPPLEMENT_ACADEMIC_TRANSMUTATION.md) add these edges:
+
+| Premises / source | Mechanism | Conclusion / authority |
+|---|---|---|
+| B15/causal Nerode + declared partial reports/costs | Fiber congruence and finite-word induction | Autonomous descent and every-representative path lifting [CLASSICAL, PROVED LOCAL; six Lean declarations] |
+| Finite system + hidden residual budget + successful cost receipts | Weighted synchronized pair graph | Exact minimum distinguishing budget [PROVED LOCAL; priority UNVERIFIED] |
+| Private source-indexed transition graph | Support propagation, integral path flow and closed cut | Finite lift/obstruction and uniform support invariant [CLASSICAL, PROVED LOCAL] |
+| Uniform existential lifting | Adversarial future action | Online resolver does not follow [REFUTED implication] |
+| PR157/162/165 rigidity audit + generalized-prime source class | Arbitrarily late rational two-prime replacements | Prefix + density + PNT + strip-zero data do not authenticate the braid [PROVED LOCAL no-go] |
+| MOG08 / MII06 pinned statements | Exact compression / isometry trace test | Two corrected operator claims; positivity/nonnormality survive [PROVED LOCAL] |
+| PR171/174/177 authentic Gamma action, domains and coercivity | Endpoint-paid resolvent expansion | Retained Laplacian plus rigorous remainder [PROVED LOCAL] |
+| Same parent trial + smaller Gamma error | Full signed residual reevaluation | J24 lower certificate worsens; original S4 sign stays OPEN [TESTED MODEL with rational certificate] |
+| Authentic four low couplings + original high inverse | Effective directional inverse-response enclosure [OPEN TARGET] | Positive original first-window Schur margin [UNVERIFIED] |
+| First-window positivity, if obtained | Additional every-radius signed positivity | RH criterion [UNRESOLVED; not supplied by this campaign] |
+
+The foundational and arithmetic results are independent contributions. They
+neither authenticate a physical observer nor supply missing signed positivity.
+Scholarly novelty is unverified; no sibling branch is silently treated as merged.

@@ -1,0 +1,284 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm,booktabs,hyperref}
+\usepackage[margin=1in]{geometry}
+\hypersetup{hidelinks}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\title{Source-indexed information repair:\\stable representations, lawful acquisition, and online realization}
+\author{Observational SUCC research program\\Technical manuscript; academic priority unverified}
+\date{19 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We distinguish three finite mathematical problems: autonomously retaining
+future-task information, lawfully acquiring an original source label through
+possibly destructive probes, and realizing abstract requests online. Stable
+partition refinement gives a canonical deterministic repair and a sharp
+fixed-width auxiliary-memory bound. For acquisition, a source-indexed belief
+construction yields exact rational minimax values with locally checkable
+cost and termination certificates. The minimal retained advice at a given
+probe budget is characterized by weak coloring of the hypergraph of minimal
+infeasible source sets. A three-source example has all pairs identifiable at
+unit cost but no joint identification strategy. The general ingredients are
+classical; the contribution is a precise integration with explicit resource,
+provenance, and information boundaries, not a claim of established novelty.
+\end{abstract}
+
+\section{Scope and mathematical interfaces}
+All carriers in the constructive results are complete finite declared models.
+An original source label records provenance as a mathematical parameter; it
+does not authenticate physical reality. All costs are nonnegative rationals.
+There are no probabilistic, asymptotic, physical-energy, or Riemann-hypothesis
+conclusions.
+
+Our baseline is PR179, commit
+\texttt{81684b4b8956f9f5da56c376ba7e4339277eb665}.
+Sibling PR178, commit
+\texttt{e42096ec0186228dd0f748767599e470f2ca2e1d}, was inspected separately.
+The sibling's invariant private source tag differs from the baseline's
+preserved source output; their failed-run journals also differ. We reuse
+their common local kernel-congruence requirement, not an identification of
+their full semantics. In particular, acquisition below has no refusal oracle:
+all probes must be lawful throughout the current uncertainty set.
+
+\section{The least autonomous repair}
+Fix a nonempty finite state space $X$, output $o:X\to O$, and partial
+deterministic actions $\delta_a:D_a\to X$ with costs
+$c_a:D_a\to\mathbb Q_{\ge0}$. Any immutable source identity or designated
+proof-task result that must be retained is included in $o$. Let $q:X\to Y$
+be an existing representation. An equivalence is \emph{stable} when it
+preserves output, enabledness, cost, and successor equivalence for every
+action. Let $R_*$ be the greatest stable equivalence contained in $\ker q$.
+
+\begin{theorem}[Classical stable refinement and factorization]
+$R_*$ exists and is obtained by finite partition refinement starting from
+$\ker(q,o)$. There are at most $|X|-|(q,o)(X)|$ strict refinements. If
+$r:X\twoheadrightarrow Z$ is any autonomous sufficient repair retaining $q$,
+there is a unique map $f:Z\to X/R_*$ such that $\pi_*=f\circ r$.
+\end{theorem}
+\begin{proof}
+Refine by each action's unavailability or pair of cost and previous successor
+class. Agreement through $k$ actions is exactly the $k$th partition, by
+induction. A plateau is stable. Every strict refinement increases the number
+of blocks, giving termination. Any stable equivalence refining $(q,o)$
+refines every stage by induction, hence refines the terminal partition.
+The kernel of $r$ is such an equivalence. Therefore $f(r(x))=[x]_{R_*}$ is
+well-defined and unique by surjectivity.
+\end{proof}
+
+This is enriched Moore/Nerode minimization, within classical coalgebraic
+semantics \cite{Moore,Rutten}. It is not merely the intersection of $\ker q$
+with the old behavioral equivalence: future values of $q$ must be preserved
+as well. For example, let all old outputs be constant and let the only action
+send $u\mapsto u$, $v\mapsto w$, $w\mapsto w$, at zero cost. If
+$q(u)=q(v)\ne q(w)$, the old behavior is constant, but the repair separates
+all three states.
+
+\begin{theorem}[Sharp final auxiliary alphabet]
+Put $K=\max_y|q^{-1}(y)/R_*|$. The smallest alphabet for an auxiliary label
+$\alpha:X\to\{0,\ldots,k-1\}$ making $(q,\alpha)$ an autonomous sufficient
+repair has size $K$. Its smallest fixed binary width is $\lceil\log_2K\rceil$.
+\end{theorem}
+\begin{proof}
+Any repair kernel lies inside $R_*$. Within one $q$-fiber, distinct $R_*$
+classes therefore need distinct auxiliary labels. Conversely, enumerate the
+classes separately in each fiber and reuse the same alphabet between fibers.
+Then $\ker(q,\alpha)=R_*$. Binary capacity gives the ceiling formula.
+\end{proof}
+
+The encoder may inspect the source state, while the decoder knows $q$.
+This is an existence and retention bound, not a construction of an observation
+instrument. The supplemental label need not update autonomously without $q$.
+No smaller code is obtained by supposing an unperformed acquisition occurred.
+
+\section{Acquiring an original label through destructive probes}
+Let $X_0$ be the original source set, $Z$ a finite carrier, $i:X_0\to Z$ an
+initialization, and $t:X_0\to T$ the target original repair class. A probe
+maps its domain in $Z$ to receipt, exact cost, and new carrier. A belief is
+a nonempty set $B\subseteq X_0\times Z$ with at most one carrier for each
+original source. A probe is lawful only if defined at every carrier in $B$.
+For a receipt/cost outcome $h=(\rho,c)$, its successor is
+\[
+ B_{a,h}=\{(x,d_a(z)):(x,z)\in B,\ (\rho_a(z),c_a(z))=h\}.
+\]
+The original coordinate remains fixed even when current carriers merge.
+Success means all originals in the terminal belief have the same $t$-value.
+Policies must terminate on every possible original. Their cost is the
+maximum total charge over those originals.
+
+\begin{theorem}[Exact terminating acquisition cost]
+Let the reachable belief arena, stopped at success, have $N$ states. Initialize
+$V_0=0$ at success and $V_0=\infty$ elsewhere. At nonsuccessful beliefs set
+\[
+ V_{n+1}(B)=\min\left(V_n(B),\min_{a\text{ lawful}}
+       \max_{h:B_{a,h}\ne\varnothing}\{c(h)+V_n(B_{a,h})\}\right).
+\]
+Then $V_N$ is the exact optimum among terminating policies. A finite optimum
+is attained and rational.
+\end{theorem}
+\begin{proof}
+Induction identifies $V_n$ with optimal identification trees of height at most
+$n$. If a finite successful tree repeats a belief on a branch, replace its
+earlier occurrence by the later subtree. The source/current belief is equal,
+so the substituted policy is lawful and correct. Deleted costs are
+nonnegative; no original source pays more. Repeated deletion leaves height
+at most $N$. There are finitely many trees of this bounded height, proving
+attainment and the stated recurrence bound.
+\end{proof}
+
+\begin{proposition}[Local optimality certificate]
+An exact value certificate assigns $L(B)\in\mathbb Q_{\ge0}\cup\{\infty\}$.
+Success states have value zero and stop. Every lawful action obeys
+\[
+ L(B)\le\max_h\{c(h)+L(B_{a,h})\}.
+\]
+At each finite nonsuccessful state a selected action obeys the reverse
+inequality, has finite-valued children, and strictly decreases a supplied
+nonnegative integer rank along every outcome. These conditions imply $L=V$.
+\end{proposition}
+\begin{proof}
+Induction on any finite policy tree proves that $L$ lower-bounds its worst
+cost. This also excludes a finite successful policy at an infinity-labelled
+state. Induction on the selected policy's decreasing rank proves termination
+and an upper cost bound $L$. The two inequalities give equality.
+
+Such ranks exist for the optimal values. Call an action optimal when its
+cost-plus-optimal-child maximum is at most the parent's finite value.
+Form the goal attractor using only these actions. If finite-valued states
+remain outside, choose their minimum value $m$, then a state of value $m$
+with a shortest optimal tree. Its root action is optimal, so some child is
+still outside the attractor. Nonnegative cost and minimality force that
+child's value to be $m$ and its entering cost to be zero. Its subtree has
+cost at most $m$, hence is optimal and shorter, a contradiction. Attractor
+ranks therefore supply one proper positional optimal policy. This argument
+does not assume that every branch of a root-optimal tree is locally optimal.
+\end{proof}
+
+A zero-cost nonidentifying loop satisfies the spurious Bellman equation
+$v=0+v$ with $v=0$; it fails the rank condition. Thus an arbitrary fixed point
+is not a termination certificate. The synthesis makes no claim that
+destructive acquisition restores the carrier for later task execution.
+That conclusion needs a separate source-preserving restoration or simulation
+map. Full transcript/controller memory is available during acquisition.
+
+\section{The hypergraph of acquisition obstructions}
+For budget $C$ and original observation $y$, let $\mathcal F_C(y)$ be the
+nonempty subsets of $q^{-1}(y)$ identifiable within cost $C$. Restricting a
+policy to fewer originals preserves lawfulness and cannot increase worst-case
+cost. Consequently $\mathcal F_C(y)$ is hereditary and contains all
+singletons. Let $\mathcal H_C(y)$ be its minimal infeasible subsets.
+
+\begin{lemma}[Finite hereditary families]\label{lem:hereditary}
+A finite set is feasible in a hereditary family exactly when it contains no
+minimal infeasible subset. The minimum number of feasible blocks partitioning
+the vertex set equals the weak chromatic number of its minimal-infeasible
+hypergraph, where no hyperedge may be monochromatic.
+\end{lemma}
+\begin{proof}
+Every infeasible finite set contains a minimal one; a feasible set cannot
+contain an infeasible subset. A coloring is therefore valid exactly when
+each color class is feasible.
+\end{proof}
+
+\begin{theorem}[Exact prior-advice/acquisition tradeoff]
+Suppose $q(x)$ and an auxiliary source label $\alpha(x)$ are already retained
+before probing. The minimum common advice alphabet permitting cost-$C$
+identification is
+\[
+ K_{\rm prior}(C)=\max_y\chi(\mathcal H_C(y)),\qquad
+ b_{\rm prior}(C)=\lceil\log_2K_{\rm prior}(C)\rceil.
+\]
+\end{theorem}
+\begin{proof}
+After observing $(y,\alpha)$, the whole joint fiber must be identifiable.
+Thus every advice color class must be feasible. Conversely, use a feasible
+policy for each color class of a valid coloring. Apply
+Lemma~\ref{lem:hereditary} within each $q$-fiber and reuse colors between
+fibers. The binary formula follows from alphabet capacity.
+\end{proof}
+
+Advice may split inside a final repair class. It must have been acquired or
+retained earlier; this theorem does not provide a free source oracle. Prior
+advice width, final autonomous repair width, and temporary controller memory
+are three distinct quantities. Budget breakpoints are among the finitely
+many exact initial-subset values. Exhaustive finite synthesis gives a precise
+frontier, without a polynomial-time claim.
+
+\subsection*{A three-source obstruction and sharp frontier}
+Originals $x,y,z$ share $q$ and have distinct target labels. A unit-cost probe
+$a$ distinguishes $x$ but sends $y,z$ to the same carrier $u$ with the same
+receipt. A unit-cost probe $b$ distinguishes $z$ but merges $x,y$ into carrier
+$v$. At $u,v$ every probe loops with the same receipt. Each pair is identifiable
+at cost 1, but every first action from the triple has an irreversibly
+indistinguishable branch. No joint identification policy exists.
+
+At budget 1 the unique minimal forbidden set is $\{x,y,z\}$. Its pairwise
+conflict graph has no edges, but its weak chromatic number is 2. Add a
+nondestructive identifying probe of cost 2 at $x,y,z$. The exact frontier is
+\[
+ (b_{\rm prior},C)=(2,0),\quad(1,1),\quad(0,2).
+\]
+This proves that pairwise minimum distinguishing costs do not determine
+joint acquisition feasibility. Forgetting the original coordinate would
+falsely declare the merged carrier resolved and change the task itself.
+
+\input{paper_a_online_realization.tex}
+
+\section{Authority, prior art, and remaining questions}
+The stable quotient and coding arguments are classical. Adaptive
+identification and its failures belong to established finite-state testing
+\cite{Gunicen,Hierons}; in particular, incomplete distinguishing-sequence
+covering is close prior art to the feasible-block formulation. Classical
+original/current state bookkeeping is explicit in that work's Lemma 6.2 and
+Section 7.1; it is not a new source-indexing invention. Minimum-cost adaptive
+identification is also established research \cite{TurkerCost}. Classical
+zero-error coding connects information with coloring \cite{Witsenhausen}.
+The present forbidden hyperedges may have size three with no forbidden
+pairs, which is why a pair-confusability graph alone is insufficient here.
+Academic novelty of the exact combined cost/source-memory formulation remains
+unverified. This manuscript should not be described as a new general
+automata or information theory.
+
+The implementation uses exact rational arithmetic and checks local cost
+inequalities plus termination ranks. Tests include 160 fresh four-state
+repair models compared with exhaustive partitions and 90 fresh two-original
+probe models compared with independent enumeration of stationary policies
+simulating each fixed original. A complete 13-belief certificate accompanies
+the three-source example. A separate raw-table oracle rebuilds beliefs and
+checks all 6,561 two-carrier probe tables plus 140 fresh three-origin models,
+including 482 advice-budget comparisons. These are finite implementation checks, not
+replacement proofs or external source authentication.
+
+The highest-value extensions are a total finite-controller memory bound and
+a source-preserving restoration requirement after acquisition. Both modify
+the feasible family and require new arguments. Unbounded carriers,
+infinite completion, richer proof authority, and physical access remain
+outside the present theorems.
+
+\begin{thebibliography}{9}
+\bibitem{Moore} E. F. Moore, Gedanken-experiments on sequential machines,
+\emph{Automata Studies}, Princeton University Press, 1956, pp. 129--153.
+\bibitem{Rutten} J. J. M. M. Rutten, Universal coalgebra: a theory of systems,
+\emph{Theoretical Computer Science} 249 (2000), 3--80.
+\bibitem{Gunicen} C. G\"uni\c cen, G.-V. Jourdan and H. Yenig\"un,
+Using multiple adaptive distinguishing sequences for checking sequence
+generation, author manuscript, \url{https://www.site.uottawa.ca/~gvj/papers/C52.pdf}.
+\bibitem{Hierons} R. M. Hierons and U. C. T\"urker, Incomplete distinguishing
+sequences for finite state machines, \emph{The Computer Journal} 58 (2015),
+3089--3113, doi:10.1093/comjnl/bxv041.
+\bibitem{Witsenhausen} H. S. Witsenhausen, The zero-error side information
+problem and chromatic numbers, \emph{IEEE Transactions on Information Theory}
+22 (1976), 592--593.
+\bibitem{TurkerCost} U. C. T\"urker, T. \"Unl\"uyurt and H. Yenig\"un,
+Effective algorithms for constructing minimum cost adaptive distinguishing
+sequences, \emph{Information and Software Technology} 74 (2016), 69--85,
+doi:10.1016/j.infsof.2016.02.001.
+\end{thebibliography}
+\end{document}

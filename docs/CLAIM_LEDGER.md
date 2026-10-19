@@ -1,5 +1,11 @@
 # Research claim ledger
 
+The additive [Academic Transmutation supplement ATX-01–12](CLAIM_SUPPLEMENT_ACADEMIC_TRANSMUTATION.md)
+records exact future-safe forgetting, causal lifting, the uniform arithmetic
+nonidentification family, Gamma bounds and two historical operator corrections.
+Priority and the original Weil sign remain unresolved. No historical row below
+is silently changed.
+
 **Policy:** A theorem, an exact computation, a finite experiment, an interpretation, and an RH-equivalent conjecture are different evidence types. This ledger governs current project claims; immutable founding documents retain their historically correct original wording and provenance.
 
 The [Observer–Schur Round II supplement](CLAIM_SUPPLEMENT_OBSERVER_SCHUR.md)

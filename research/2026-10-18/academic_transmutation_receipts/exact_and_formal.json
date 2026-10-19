@@ -1,0 +1,169 @@
+{
+  "RH_proved": false,
+  "arithmetic": {
+    "braid_witness": {
+      "defect": -1,
+      "rank_2": 2,
+      "rank_V2_successor_x": 101,
+      "rank_V2_x": 100,
+      "successor_x": 51,
+      "x": 50
+    },
+    "density_multiplier": "1",
+    "first_omitted_prime": 101,
+    "matched_horizon": 100,
+    "replacement_values": [
+      "10201/100",
+      "103141311/20311"
+    ],
+    "second_replaced_prime": 10211
+  },
+  "finite_quotient": {
+    "actions": 3,
+    "availability_assumed_observable": false,
+    "blocks": 5,
+    "coarsest_for_declared_contract": true,
+    "generator_imported": false,
+    "local_squares_checked": 18,
+    "physical_source_authenticated": false,
+    "separators_checked": 10,
+    "states": 6,
+    "status": "EXACT_FINITE_CERTIFICATE_ACCEPTED",
+    "universal_analytic_positivity_claimed": false,
+    "witnesses": [
+      {
+        "kind": "PRESERVED_OUTPUT",
+        "left": "p",
+        "right": "q",
+        "word": [
+          "fast"
+        ]
+      },
+      {
+        "kind": "STRUCTURAL_LAWFULNESS",
+        "left": "p",
+        "right": "u",
+        "word": [
+          "fast"
+        ]
+      },
+      {
+        "kind": "STRUCTURAL_LAWFULNESS",
+        "left": "p",
+        "right": "v",
+        "word": [
+          "fast"
+        ]
+      },
+      {
+        "kind": "PRESERVED_OUTPUT",
+        "left": "p",
+        "right": "z",
+        "word": []
+      },
+      {
+        "kind": "STRUCTURAL_LAWFULNESS",
+        "left": "q",
+        "right": "u",
+        "word": [
+          "fast"
+        ]
+      },
+      {
+        "kind": "STRUCTURAL_LAWFULNESS",
+        "left": "q",
+        "right": "v",
+        "word": [
+          "fast"
+        ]
+      },
+      {
+        "kind": "PRESERVED_OUTPUT",
+        "left": "q",
+        "right": "z",
+        "word": []
+      },
+      {
+        "kind": "PRESERVED_OUTPUT",
+        "left": "u",
+        "right": "v",
+        "word": [
+          "b"
+        ]
+      },
+      {
+        "kind": "PRESERVED_OUTPUT",
+        "left": "u",
+        "right": "z",
+        "word": []
+      },
+      {
+        "kind": "PRESERVED_OUTPUT",
+        "left": "v",
+        "right": "z",
+        "word": []
+      }
+    ]
+  },
+  "formal": {
+    "axioms": {
+      "availability_reflected": [
+        "propext"
+      ],
+      "descended_structure_unique": [],
+      "fiber_safe_iff_descent": [],
+      "finite_trace_preserved": [
+        "propext"
+      ],
+      "quotient_path_lifts_from_each_representative": [
+        "propext"
+      ],
+      "quotient_step_lifts_from_each_representative": []
+    },
+    "compiler": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+    "false_controls": {
+      "changed_cost": "REJECTED",
+      "false": "REJECTED",
+      "phantom_availability": "REJECTED"
+    },
+    "kernel_exit": 0,
+    "source_sha256": "986609101f0efafdf56453edc6da4919971ad00f34d4d76b417ecb234cd087f6"
+  },
+  "gluing": {
+    "actions": [
+      "a",
+      "b"
+    ],
+    "cut_layers": [
+      [
+        "p"
+      ],
+      [
+        "u"
+      ],
+      []
+    ],
+    "local_report_compatibility": true,
+    "obstruction_bound": 5,
+    "private_lift": false,
+    "reports": [
+      "P",
+      "M",
+      "Z"
+    ]
+  },
+  "minimum_budget": {
+    "shortest_word": [
+      "fast"
+    ],
+    "shortest_word_cost": "7",
+    "value": "5/6",
+    "word": [
+      "a",
+      "b"
+    ]
+  },
+  "original_S4_sign": "OPEN",
+  "physical_source_authenticated": false,
+  "status": "EXACT_SPINE_VERIFIED"
+}

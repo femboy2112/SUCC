@@ -152,6 +152,25 @@ converting general observational insight into an RH proof claim.
 
 ## Research history (consolidation audits)
 
+The [Academic Transmutation research audit](docs/ACADEMIC_TRANSMUTATION_AUDIT_2026-10-18.md)
+adds exact forgetting and causal-lifting contracts, an all-horizon arithmetic
+nonidentification theorem, six kernel-checked lemmas, and an authentic Gamma
+tail refinement whose tested Schur route remains ambiguous. Includes a
+[six-page foundations draft](research/2026-10-18/ACADEMIC_TRANSMUTATION_FOUNDATIONS.pdf)
+and explicit classical/novelty boundaries. That research branch is based on draft PR177;
+it is not an integration of every open research branch.
+
+The [Theorem Forge II audit](research/2026-10-19/THEOREM_FORGE_II_AUDIT.md)
+builds on draft PR179, with separately pinned PR178 inputs. It adds exact
+information-acquisition and online-control certificates, forward-only weak
+collapse of arithmetic intertwiners, finite Euler and conditional infinite-source
+rigidity, 15 new checked Lean declarations, and a rigorous obstruction for the
+selected original Suzuki inverse-response family. Three complete manuscript
+drafts cover [source information](output/pdf/Paper_A_Source_Information.pdf),
+[operator transport](output/pdf/Paper_B_Atomic_Haar_Transport.pdf), and
+[arithmetic rigidity](output/pdf/Paper_C_Prime_Rigidity.pdf).
+Academic novelty remains unverified; RH remains open.
+
 The project has been consolidated in documented waves, each preserving its results, status labels,
 and counterexamples — nothing is discarded:
 

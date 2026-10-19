@@ -1,0 +1,167 @@
+"""Exact continuum signed Suzuki action, source-pinned and fail-closed tests."""
+import unittest
+from fractions import Fraction as F
+from observational_succ import original_continuum_residual as R
+from observational_succ import clamped_k_residual_bridge as B
+
+
+class IndependentTaylorConvolution(unittest.TestCase):
+    def test_ou_absolute_moments_by_closed_polynomials(self):
+        K=R._convolution_powers((F(1),),2)
+        self.assertEqual(K[0],(F(1),))
+        self.assertEqual(K[1],(F(1,4),F(0),F(1)))
+        self.assertEqual(K[2],(F(1,12),F(0),F(1)))
+        W=R._convolution_powers((F(0),F(1)),1)
+        self.assertEqual(W[0],(F(0),))
+        self.assertEqual(W[1],(F(0),-F(1,4),F(0),F(1,3)))
+
+    def test_taylor_source_independent_three_small_rungs(self):
+        for p in ((F(1),),(F(0),F(1)),(F(0),F(0),F(1))):
+            for J,M in ((1,24),(2,32),(4,56)):
+                approx,e=R.gamma_ou_taylor_sum(p,J,M)
+                self.assertGreaterEqual(e,0)
+                self.assertLess(e,F(1,10**6))
+                self.assertIsInstance(approx,tuple)
+                self.assertTrue(all(type(z) is F for z in approx))
+
+    def test_source_free_lawful_matching_primitives_and_parities(self):
+        for i in range(1,5):
+            x=R.high_boundary_match(i)
+            self.assertTrue(x["H2_zero_extended"])
+            self.assertEqual(x["low"],i)
+            self.assertEqual(x["matched_high"],(5,6,5,6)[i-1])
+            self.assertEqual(x["norm_sq"],R.norm_squared(x["h"]))
+            self.assertEqual(B.value(x["h"],F(1,2)),0)
+            self.assertEqual(B.value(B.derivative(x["h"]),F(-1,2)),0)
+            for t in (F(1,2),-F(1,3),F(3,4)):
+                z=R.high_boundary_match(i,t)
+                self.assertEqual(B.value(B.derivative(z["h"]),F(1,2)),0)
+                self.assertGreater(z["second_derivative_norm_sq"],0)
+        for bad in (0,5,True,3.4):
+            with self.assertRaises(R.OriginalResidualError):
+                R.high_boundary_match(bad)
+
+    def test_polar_even_odd_and_source_free_approximation_error(self):
+        c,s,e=R.polar_taylor(18)
+        self.assertEqual(c[1],0)
+        self.assertEqual(s[0],0)
+        self.assertGreater(e,0)
+        self.assertLess(e,F(1,10**24))
+        with self.assertRaises(R.OriginalResidualError):
+            R.polar_taylor(1)
+        for bad in (0,True,1.25,33):
+            with self.assertRaises(R.OriginalResidualError):
+                R.gamma_ou_taylor_sum((F(1),),bad,40)
+
+
+class ArchivedOriginalSignedSuzuki(unittest.TestCase):
+    def test_frozen_signed_source_parameters(self):
+        p=R.source_parameters()
+        self.assertEqual(p["sha"],R.SOURCE_SHA)
+        self.assertEqual(p["real_gamma_count"],1)
+        self.assertEqual(p["half_density"],"1/2")
+        self.assertTrue(F(5,8)<p["b"]<F(3,4))
+        self.assertGreater(p["db"],0)
+        self.assertGreater(p["dc"],0)
+        self.assertTrue(p["source_type"]=="ORIGINAL_SUZUKI_SIGNED_PRIMITIVE")
+
+    def test_true_infinite_Gamma_H1_source_domain_and_two_tail_routes(self):
+        from observational_succ.clamped_k_residual_bridge import gamma_action_tail
+        src=R.authentic_real_Gamma_H1_source_domain()
+        self.assertEqual(src["source_SHA"],R.SOURCE_SHA)
+        self.assertEqual(src["original_Gamma_multiplier_H1_bound"],F(5))
+        self.assertTrue(src["operator_domain_contains_H1_0"])
+        for J in (1,4,8,24,64):
+            h=R.high_boundary_match(1,F(1,20))["h"]
+            p=R.authentic_Gamma_tail_action_dual(h,J)
+            self.assertTrue(p["H2_upper"] is not None)
+            self.assertEqual(p["selected"],min(p["H1_upper"],p["H2_upper"]))
+            self.assertLessEqual(p["selected"],p["H2_upper"])
+            d=4*J+1
+            self.assertEqual(p["H1_upper"],
+              (F(1,d)+F(4,d*d))*B.sqrt_up(R.derivative_norm_squared(h)))
+            self.assertEqual(p["H2_upper"],
+              gamma_action_tail(J)*B.sqrt_up(R.norm_squared(
+                   B.derivative(B.derivative(h)))))
+        low=R.low_primitive(1)
+        v=R.authentic_Gamma_tail_action_dual(low,8)
+        self.assertEqual(v["route"],"H1_ONLY")
+        self.assertIsNone(v["H2_upper"])
+        with self.assertRaises(R.OriginalResidualError):
+            R.authentic_Gamma_tail_action_dual((F(1),),8)
+        self.assertFalse(src["original_S4_positive_proved"])
+
+    def test_authentic_infinite_gamma_tail_lower_is_true_quadratic_form(self):
+        from observational_succ.gamma_fredholm_completion import gamma_tail_H01_lower
+        h=R.high_boundary_match(1)["h"]
+        p=R.authentic_Gamma_tail_energy_lower_matrix((h,),16)
+        self.assertEqual(p[0][0],gamma_tail_H01_lower(16,
+                           R.derivative_norm_squared(h),
+                           R.norm_squared(B.derivative(B.derivative(h)))))
+        for J in (4,8,12,16):
+            F1=R.high_boundary_match(1)["h"]
+            F3=R.high_boundary_match(3)["h"]
+            g=R.authentic_Gamma_tail_energy_lower_matrix((F1,F3),J)
+            self.assertEqual(g[0][1],g[1][0])
+            self.assertEqual(len(g),2)
+        with self.assertRaises(R.OriginalResidualError):
+            R.authentic_Gamma_tail_energy_lower_matrix((R.low_primitive(1),),8)
+
+    def test_original_exp_antiderivative_vs_independent_entire_action(self):
+        h=R.frozen_operator_matrix_holdout(J=2,M=44,P=18)
+        self.assertEqual(h["original_source_sha"],R.SOURCE_SHA)
+        self.assertEqual(len(h["independent_exp_matrix_vs_Taylor_continuum_action"]),6)
+        for name,e in h["independent_exp_matrix_vs_Taylor_continuum_action"].items():
+            self.assertTrue(e["independent_enclosures_intersect"],name)
+            self.assertGreater(F(e["rigorous_action_pair_error_upper"]),0)
+
+    def test_unfitted_genuine_high_mode_action_J8_holdouts(self):
+        x=R.frozen_operator_matrix_holdout(J=8,M=80,P=18)
+        self.assertEqual(x["original_source_sha"],R.SOURCE_SHA)
+        self.assertEqual(len(x["independent_exp_matrix_vs_Taylor_continuum_action"]),8)
+        self.assertTrue(x["independent_exp_matrix_vs_Taylor_continuum_action"]
+                        ["P3_P7"]["independent_enclosures_intersect"])
+        self.assertTrue(x["independent_exp_matrix_vs_Taylor_continuum_action"]
+                        ["P4_P8"]["independent_enclosures_intersect"])
+
+    def test_counterfeit_contact_and_missing_halfdensity_are_observable(self):
+        from observational_succ.suzuki_legendre_source import authentic_full_low_entry
+        orig=authentic_full_low_entry(1,1,F(1,2),2)
+        h=R.low_primitive(1)
+        p=R.source_parameters()
+        for tag,wrong in (("missing_contact",dict(p,contact=p["contact"]+1)),
+                          ("missing_prime_halfdensity",dict(p,w=F(0)))):
+            action=R.exact_piecewise_primitive_action(h,2,44,18,wrong)
+            center=sum((R.definite(B.mul(h,t),l,r)
+                        for l,r,t in action["pieces"]),F(0))
+            err=B.sqrt_up(R.norm_squared(h))*action["finite_source_action_error_upper"]
+            self.assertTrue(center+err<orig.lo or center-err>orig.hi,
+                            "mutant escaped genuine signed original source "+tag)
+
+    def test_original_four_mode_continuum_residual_scoped(self):
+        result=R.source_residual_schur_trial(J=8,M=80,P=18,fit=True)
+        self.assertEqual(result["frozen_source_git_blob"],R.SOURCE_SHA)
+        self.assertTrue(result["one_real_Gamma_contact_two_completed_poles"])
+        self.assertEqual(len(result["four_original_parity_Schur_blocks"]),2)
+        self.assertFalse(result["RH_proved"])
+        for key,block in result["four_original_parity_Schur_blocks"].items():
+            self.assertEqual(len(block["combined_residual_norm_upper_each"]),2)
+            self.assertTrue(block["trial_is_in_original_high_domain"])
+            self.assertFalse(block["missing_full_residual_norm_source_certificate"])
+            self.assertGreater(F(block["source_kappa"]),0)
+        # Do NOT force positivity; original source result must report actual sign.
+
+    def test_no_source_positivity_laundered_by_Galerkin(self):
+        for bad in (0,-1,1.0,True):
+            with self.assertRaises((R.OriginalResidualError,TypeError)):
+                R.safe_ratio_round(1,bad)
+        with self.assertRaises(R.OriginalResidualError):
+            R.source_residual_schur_trial(J=0)
+        with self.assertRaises(R.OriginalResidualError):
+            R.source_residual_schur_trial(J=33)
+        with self.assertRaises(R.OriginalResidualError):
+            R.source_residual_schur_trial(eta=0)
+
+
+if __name__=="__main__":
+    unittest.main()

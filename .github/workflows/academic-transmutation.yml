@@ -1,0 +1,83 @@
+name: Academic transmutation exact and formal certificates
+on:
+  push:
+    branches: ['research/academic-transmutation-*']
+  pull_request:
+    paths:
+      - 'observational_succ/future_safe_quotient.py'
+      - 'observational_succ/lawful_history_gluing.py'
+      - 'observational_succ/arithmetic_source_minimality.py'
+      - 'observational_succ/gamma_tail_resolvent_refinement.py'
+      - 'formal/FutureSafeForgetting.lean'
+      - 'lean-toolchain'
+      - 'scripts/cambrian_audit_c_lean.py'
+      - 'scripts/academic_transmutation_probe.py'
+      - 'scripts/check_academic_certificate.py'
+      - 'scripts/gamma_tail_resolvent_refinement_probe.py'
+      - 'tests/test_*_quotient.py'
+      - 'tests/test_lawful_history_gluing.py'
+      - 'tests/test_arithmetic_source_minimality.py'
+      - 'tests/test_gamma_tail_resolvent_refinement.py'
+      - 'tests/test_academic_certificate_checker.py'
+      - '.github/workflows/academic-transmutation.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install -e '.[test]'
+      - run: python scripts/verify_provenance.py
+      - name: Exact theorem and hostile certificate controls
+        run: |
+          python -m unittest discover -s tests -p 'test_future_safe_quotient.py' -v
+          python -m unittest discover -s tests -p 'test_lawful_history_gluing.py' -v
+          python -m unittest discover -s tests -p 'test_arithmetic_source_minimality.py' -v
+          python -m unittest discover -s tests -p 'test_gamma_tail_resolvent_refinement.py' -v
+          python -m unittest discover -s tests -p 'test_academic_certificate_checker.py' -v
+      - name: Independent checker roundtrip and original source holdouts
+        run: |
+          python scripts/academic_transmutation_probe.py --certificate-output "$RUNNER_TEMP/quotient.json"
+          python scripts/check_academic_certificate.py "$RUNNER_TEMP/quotient.json"
+          python scripts/gamma_tail_resolvent_refinement_probe.py --source --verify
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install unchanged root pinned Lean
+        run: |
+          curl --fail --silent --show-error --location https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+      - name: Kernel acceptance, exact axiom manifest, and rejected false controls
+        run: python scripts/academic_transmutation_probe.py --lean "$HOME/.elan/bin/lean" --output "$RUNNER_TEMP/formal.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: academic-transmutation-kernel
+          path: ${{ runner.temp }}/formal.json
+  paired-original-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -e '.[test]'
+      - run: python scripts/verify_provenance.py
+      - name: Same-trial complete original Schur comparison
+        run: python scripts/gamma_tail_resolvent_refinement_probe.py --source --verify --compare --depth 24 --output "$RUNNER_TEMP/gamma-paired.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: academic-transmutation-original-Gamma-paired
+          path: ${{ runner.temp }}/gamma-paired.json
