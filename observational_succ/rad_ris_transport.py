@@ -273,6 +273,21 @@ def joint_rad_ris_local_factor(p: int, support_power: int, excess_power: int) ->
     return 1 + q_support / (1 - q_excess)
 
 
+
+def successor_prime_support_moments(p: int, q: int) -> tuple[Fraction, Fraction, Fraction, Fraction]:
+    """Natural-density moments for 1_(p|n) and 1_(q|n+1).
+
+    Returns (first marginal, second marginal, joint, covariance). These are
+    limits of uniform integer-prefix counts, NOT Gibbs or finite-sample rates.
+    The CRT calculation is proved in the dossier, not inferred by sampling.
+    """
+    if not is_prime(p) or not is_prime(q):
+        raise RadRisError("both successor-support probes require genuine primes")
+    first, second = Fraction(1, p), Fraction(1, q)
+    joint = Fraction(0) if p == q else first * second
+    return first, second, joint, joint - first * second
+
+
 def gibbs_prime_moments(primes: tuple[int, ...], beta: int) -> tuple[tuple[int, Fraction, Fraction, Fraction], ...]:
     """Finite prime Gibbs factors: (p, P(support), E(excess exponent), covariance).
 
