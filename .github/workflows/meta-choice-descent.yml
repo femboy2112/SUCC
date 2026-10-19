@@ -1,0 +1,90 @@
+name: Meta Choice / Source Descent imported Lean kernel
+
+on:
+  push:
+    branches:
+      - 'research/eodcs-choice-descent-meta-*'
+  pull_request:
+    paths:
+      - 'formal/MetaChoiceRelationalDescent.lean'
+      - 'formal/EODCS_MetaChoiceParity.lean'
+      - 'formal/EODCS_RelationalChoice.lean'
+      - '.github/workflows/meta-choice-descent.yml'
+      - 'lean-toolchain'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  choice_free_descent:
+    name: Frozen-source import, constructive descent, and axiom audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install the repository's pinned Lean compiler
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --location \
+            https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh \
+            -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+
+      - name: Assert the EODCS III original remains byte-for-byte frozen
+        shell: bash
+        run: |
+          python - <<'PY'
+          from hashlib import sha256
+          import json
+          from pathlib import Path
+          frozen=json.loads(Path('research/2026-10-13/CAMBRIAN_AUDIT_C_RAW.json').read_text())
+          path=Path('formal/EODCS_RelationalChoice.lean')
+          assert sha256(path.read_bytes()).hexdigest()==frozen['formal_source_hashes'][str(path)]
+          print('ORIGINAL_EODCS_RELATIONAL_SOURCE_HASH_MATCHES_ARCHIVE')
+          PY
+
+      - name: Compile frozen EODCS and new imported Lean proofs
+        shell: bash
+        run: |
+          LEAN="$HOME/.elan/bin/lean"
+          "$LEAN" --version
+          "$LEAN" -o "$RUNNER_TEMP/EODCS_RelationalChoice.olean" formal/EODCS_RelationalChoice.lean
+          LEAN_PATH="$RUNNER_TEMP" "$LEAN" -o "$RUNNER_TEMP/MetaChoiceRelationalDescent.olean" formal/MetaChoiceRelationalDescent.lean
+          "$LEAN" -o "$RUNNER_TEMP/EODCS_MetaChoiceParity.olean" formal/EODCS_MetaChoiceParity.lean
+          cat > "$RUNNER_TEMP/MetaChoiceAxioms.lean" <<'LEAN_AUDIT'
+          import MetaChoiceRelationalDescent
+          import EODCS_MetaChoiceParity
+          #print axioms ObservationalSUCC.support_transition_exists_choice_free
+          #print axioms ObservationalSUCC.support_transport_iff_fiber_invariance_choice_free
+          #print axioms ObservationalSUCC.exact_envelopes_on_image_choice_free
+          #print axioms ObservationalSUCC.empty_observation_fiber_separates_envelopes
+          #print axioms ObservationalSUCC.fiber_disagreement_refutes_relational_descent
+          #print axioms ObservationalSUCC.may_report_left_adjunction
+          #print axioms ObservationalSUCC.MetaChoice.witnessed_dependent_choice
+          #print axioms ObservationalSUCC.MetaChoice.odd_triangle_has_no_global_section
+          #print axioms ObservationalSUCC.MetaChoice.existential_pushforward_composes
+          LEAN_AUDIT
+          LEAN_PATH="$RUNNER_TEMP" "$LEAN" "$RUNNER_TEMP/MetaChoiceAxioms.lean" > "$RUNNER_TEMP/axiom-audit.log"
+          cat "$RUNNER_TEMP/axiom-audit.log"
+          if grep -Fq 'Classical.choice' "$RUNNER_TEMP/axiom-audit.log"; then
+            echo 'Unexpected global choice dependency in new constructive declarations' >&2
+            exit 1
+          fi
+
+      - name: Fail closed on placeholders and direct new axiom declarations
+        shell: bash
+        run: |
+          python - <<'PY'
+          import re, sys
+          from pathlib import Path
+          sys.path.insert(0, 'scripts')
+          from cambrian_audit_c_lean import uncomment
+          forbidden=re.compile(r'\b(sorry|admit|axiom|unsafe|native_decide)\b')
+          for name in ('formal/MetaChoiceRelationalDescent.lean',
+                       'formal/EODCS_MetaChoiceParity.lean'):
+              assert not forbidden.search(uncomment(Path(name).read_text())), name
+          print('NO_NEW_PROOF_PLACEHOLDERS_OR_AXIAL_OVERRIDES')
+          PY
