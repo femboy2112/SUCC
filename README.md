@@ -32,7 +32,7 @@ prime-two inverse corrections (#181, #182) are **alternative** enclosures of the
 the better single bound, **never the sum**. **RH remains OPEN; `S₄ = A₄ − R₄` is OPEN (AMBIGUOUS).** No
 positive Hilbert covariance is identified with the signed completed Weil form.
 
-**Primorial/factorial prime-phase clocks (2026-10-19):** [rigorous dossier](research/2026-10-19/PRIMORIAL_FACTORIAL_PHASE_CLOCKS.md) · [claim supplement](docs/CLAIM_SUPPLEMENT_PRIME_PHASE_CLOCKS.md). Backward prime-congruence searches, phase-1 clock/RAD predecessor correspondence, exact moving-window no-go results, and the strict primorial-field versus factorial-full-profinite completion distinction. Existing RAD/RIS branch required. **No ABC/RH proof.**
+**Primorial/factorial prime-phase clocks (2026-10-19):** [rigorous dossier](research/2026-10-19/PRIMORIAL_FACTORIAL_PHASE_CLOCKS.md) · [claim supplement](docs/CLAIM_SUPPLEMENT_PRIME_PHASE_CLOCKS.md). Backward prime-congruence searches, phase-1 clock/RAD predecessor correspondence, fixed-window CRT phase-score distributions, exact moving-window no-go results, and the strict primorial-field versus factorial-full-profinite completion distinction. Existing RAD/RIS branch required. **No ABC/RH proof.**
 
 **RAD/RIS prime-gated successor transport (2026-10-19):** [research dossier](research/2026-10-19/RAD_RIS_SUCC_CRT_AND_ABC.md) · [claim supplement](docs/CLAIM_SUPPLEMENT_RAD_RIS.md). Exact squarefree-support/multiplicity operators, nested prime-depth layers, CRT successor-visibility no-go, exact signed contact covariance and valuation densities, a joint Euler chart, and an ABC-quality restatement. Elementary derivations and finite independent tests; **ABC/RH remain unproved**, and no signed Weil positivity is inferred.
 
