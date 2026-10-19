@@ -149,6 +149,78 @@ For fixed Q=(5,11,17,23,29) and the explicit bound t_last≤630, the final large
 
 Importantly p_0-1=W×366 is squarefree, while p_1-1=W×432 has 2⁴·3³. Both endpoints have the SAME declared five phase-1 clocks but different additional support and multiplicity (RAD/RIS). This is precisely the source-information boundary in the earlier RRT results.
 
+## GTC-11 — Constant RAD and arithmetic RIS are equivalent to a squarefree primorial support condition
+
+This is a strict strengthening of the unconstrained Green–Tao progressions. Fix length ℓ≥2, a positive integer R, and ask that the *whole* RAD/RIS chart of the ℓ consecutive predecessors R,2R,...,ℓR remain on one support fiber:
+
+\[
+ \operatorname{rad}(jR)=R,\quad
+ \operatorname{ris}(jR)=j,\qquad j=1,\ldots,\ell.
+\]
+
+**Theorem (elementary, exact).** Writing M_ℓ=prod_{q≤ℓ, q prime}q, the following are equivalent:
+
+1. rad(jR)=R for all 1≤j≤ℓ.
+2. R is squarefree and M_ℓ divides R.
+
+**Proof:** j=1 in (1) implies rad(R)=R, so R squarefree. For each prime q≤ℓ choose j=q; the equality rad(qR)=R forces q|R. Thus M_ℓ|R. Conversely if R is squarefree and includes every prime≤ℓ, then each 1≤j≤ℓ has prime support contained in that of R; rad(jR)=R and (jR)/rad(jR)=j. QED.
+
+Now if **every p_j=1+jR is itself prime**, the AP of endpoints p_1,...,p_ℓ has constant RAD(p_j−1)=R and RIS(p_j−1)=j exactly. These are truly *flat support / linearly increasing depth* SUCC prime ladders. Their difference is R, so
+
+\[
+ \boxed{p_j=1+j\,\mathrm{RAD}(p_j-1),\qquad \mathrm{RIS}(p_j-1)=j.}
+\]
+
+If a prescribed prime-clock AP Q also must be synchronized in every p_j, the necessary support size is
+
+\[
+ \boxed{\operatorname{lcm}(W,M_\ell)\mid R,\qquad R\text{ squarefree}},
+\]
+
+where W=prod Q. This is much stronger than p_j≡1 mod W: it fixes the entire predecessor radical, not merely the selected clock residues.
+
+## GTC-12 — Verified flat-RAD ladders of lengths 3, 4 and 5
+
+The following are exact prime sequences checked by an independent primality oracle and full factorization of every predecessor:
+
+| R | Verified prime ladder p_j=1+jR | Common RAD of p_j−1 | RIS values |
+|---:|---|---:|---|
+| 210 | 211,421,631 | 210 | 1,2,3 |
+| 330 | 331,661,991,1321 | 330 | 1,2,3,4 |
+| 247710 | 247711,495421,743131,990841,1238551 | 247710 | 1,2,3,4,5 |
+
+An even more structured **5×5 clock-AP × prime-AP configuration with constant radical** uses clock primes Q=(5,11,17,23,29), a genuine five-term prime AP with difference 6, and
+
+\[
+ R=71533328790
+  =2\cdot3\cdot5\cdot7\cdot11\cdot17\cdot23\cdot29\cdot2731.
+\]
+
+All factors are genuine distinct primes, and R is divisible by M_5=30 and by W=623645. Then all five numbers
+
+\[
+ \boxed{71533328791,\quad143066657581,\quad214599986371,\quad
+ 286133315161,\quad357666643951}
+\]
+
+are genuine primes, with common difference R. Every one of the 25 Q-clock readings is 1 **and** every predecessor has the **same full radical R** with RIS respectively 1,2,3,4,5. Complete trial division establishes each finite primality result. The wheel minimal support for these prescribed Q and ℓ=5 is lcm(W,M_5)=3741870. This example has R=3741870×19117. The extra factor 19117=7×2731 illustrates the *additional arithmetic search cost* not forced by the support lower bound.
+
+Bounded least-R calibrations (not global theorems of least primes): the first squarefree R≥M_4 with p_j=1+jR all prime for j≤4 is R=330; for length 5, the first squarefree R≥M_5 giving all five primes is R=247710, by an exhaustive finite search with exact trial-factor and independent direct primality checks. These are finite observations, not evidence that all lengths succeed.
+
+## GTC-13 — Green–Tao does not solve anchored flat-RAD ladders
+
+The ordinary Green–Tao AP model uses two independent integer variables a,d and forms a+jd. Our stronger flat RAD problem fixes a=1 and varies only R in the one-variable linear forms L_j(R)=1+jR. For distinct i,j, these forms are affinely dependent; in fact
+
+\[
+ \boxed{L_j(R)-1=\frac ji\bigl(L_i(R)-1\bigr).}
+\]
+
+The main finite-complexity machinery for linear equations in primes does **not** cover this degeneracy: see Green–Tao, *Linear Equations in Primes*, Annals of Mathematics 171 (2010), 1753–1850, https://annals.math.princeton.edu/2010/171-3/p08, and Tao's lecture https://terrytao.wordpress.com/2010/06/05/254b-lecture-notes-7-the-transference-principle-and-linear-equations-in-primes/ . The corresponding infinitude assertion would be a special case of the currently open Dickson / Hardy–Littlewood prime-tuple conjecture for the variable R restricted to multiples of M_ℓ, with no prime/power exceptions hidden in the proof. Even for ℓ=2, the two forms 1+R and 1+2R are an unproved infinite prime-pair pattern; finite witnesses prove nothing about infinitude.
+
+**Discriminating negative control:** R=210 is squarefree, includes primes 2 and 3 and so gives flat RAD for j≤4, but the fourth proposed prime 1+4·210=841=29² is composite. Thus the support criterion alone does *not* force primality, and merely citing Green–Tao is not a proof of the stronger ladder hypothesis.
+
+**Frontier:** use the two-variable W-tricked rectangle as the solved classical comparison, and the one-variable anchored ladder as an honestly UNVERIFIED strengthened arithmetic conjecture; characterize which additional source correlations would be needed to bridge them without assuming prime-tuple theorems. This explicit split is the primary mathematical diagnostic produced by this round.
+
 ## GTC-09/10 — Crucible, failure receipts, and the next discriminatory probe
 
 - **Composite fully locked candidate:** 30030+1=30031=59×509. No wheel phase certifies primality.
