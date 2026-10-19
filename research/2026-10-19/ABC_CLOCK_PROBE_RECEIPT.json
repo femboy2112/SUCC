@@ -7,7 +7,7 @@
     "method": "local standalone module and identical test/probe source, no complete SUCC checkout",
     "python": "3.13.5",
     "command_tests": "PYTHONPATH=/mnt/data/abc_succ_work python -m unittest discover -s /mnt/data/abc_succ_work/tests -p 'test_*.py' -v",
-    "new_tests_passed": 14,
+    "new_tests_passed": 16,
     "new_tests_failed": 0,
     "full_succ_suite": "NOT RUN; repository was not available to local container",
     "command_probe": "PYTHONPATH=/mnt/data/abc_succ_work python scripts/abc_clock_green_tao_probe.py --limit 1200",
@@ -69,10 +69,37 @@
       29
     ],
     "five_prime_shadow_fan_unique_lifts": 4,
-    "profinite_p2_local_energy_ge_2_to_k": "2^(-k), for k>=1"
+    "profinite_p2_local_energy_ge_2_to_k": "2^(-k), for k>=1",
+    "finite_additive_fourier": {
+      "source": "Z/m exact cyclic convolution",
+      "mode": "integer group-algebra coefficient",
+      "independent_brute_force_for_moduli": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        23
+      ],
+      "hostile_alias": {
+        "A": [
+          1
+        ],
+        "B": [
+          1
+        ],
+        "C": [
+          5
+        ],
+        "m": 3,
+        "modular_count": 1,
+        "ordinary_integer_count": 0,
+        "anti_alias_rejects": true
+      }
+    }
   },
   "claims": {
-    "proven": "elementary local clock law; ris moment; subquadratic exceptional-triple bound; prime 3AP energy contrast; exact profinite product critical s=1 theorem; canonical monomial exponent layers; quadratic prime AP shadow fan",
+    "proven": "elementary local clock law; ris moment; subquadratic exceptional-triple bound; prime 3AP energy contrast; exact profinite product critical s=1 theorem; canonical monomial exponent layers; quadratic prime AP shadow fan; finite cyclic additive Fourier projector with provable anti-alias gate",
     "external": "Green-Tao prime progression infinitude (Annals 2008); Bernert Browning Lichtman Teräväinen 2026 bound O(X^(3/5+delta)) for 0<lambda<1",
     "unverified": "global ABC bound; high-depth W-trick transference; theorem novelty; RH/Weil positivity"
   },
