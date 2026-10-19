@@ -277,6 +277,21 @@
       "code": [
         "observational_succ/rad_ris_transport.py"
       ]
+    },
+    {
+      "namespace": "PRIMORIAL_PHASE_CLOCKS",
+      "bare_prefix": "PPC",
+      "fq_prefix": "PPC",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PRIME_PHASE_CLOCKS.md"
+      ],
+      "id_count": 10,
+      "status": "MIXED (CLASSICAL/EXTERNAL THEOREM/PROVED LOCAL/REFUTED/UNVERIFIED)",
+      "topic": "prime-clock phase-1 residue alignment, backward primorial/factorial search, CRT and profinite completion, complete growing-window obstructions, ABC falsification",
+      "code": [
+        "observational_succ/prime_phase_clocks.py",
+        "scripts/prime_phase_clocks_probe.py"
+      ]
     }
   ],
   "resolved_collisions": [
