@@ -38,6 +38,10 @@ jobs:
           python-version: ${{ matrix.python }}
       - run: python -m pip install -e '.[test]'
       - run: python scripts/verify_provenance.py
+      - name: Fetch the separately pinned sibling receipt for source replay
+        run: |
+          git fetch --no-tags --depth=1 origin e42096ec0186228dd0f748767599e470f2ca2e1d
+          test "$(git rev-parse FETCH_HEAD)" = e42096ec0186228dd0f748767599e470f2ca2e1d
       - name: Exact source games, information repair, arithmetic and operator controls
         run: |
           python -m unittest tests.test_information_repair tests.test_online_source_games tests.test_finite_euler_rigidity tests.test_forge_operator_transport tests.test_directional_source_inverse -v

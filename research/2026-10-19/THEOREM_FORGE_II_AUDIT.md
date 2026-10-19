@@ -195,6 +195,20 @@ countermodels and references. They are not claimed publication-ready or refereed
 
 ## 7. Reproduction
 
+The source comparison reads a receipt from sibling PR178. A fresh shallow
+checkout must fetch that exact object first; ancestry is not changed by fetching:
+
+```sh
+git fetch --no-tags --depth=1 origin e42096ec0186228dd0f748767599e470f2ca2e1d
+```
+
+The first hosted exact jobs at `ec9895d4baab1b8c5a0713f87bdbd5aadfc07338`
+passed all 47 tests but failed at that missing Git object. The dedicated workflow
+now fetches and verifies the pinned commit before replay. This is a checkout
+repair, with no mathematical implementation or certificate changed.
+The fetch was reproduced in a fresh shallow repository and the extracted
+130,168-byte receipt matched its pinned SHA256 exactly.
+
 ```sh
 python scripts/verify_provenance.py
 python scripts/theorem_forge_probe.py
