@@ -167,11 +167,12 @@ class GreenTaoClockAPTest(unittest.TestCase):
     def test_exact_flat_rad_ladder_support_equivalence(self):
         # All R in this finite window checked against a different direct
         # factorization oracle and the literal ALL-j statement.
+        independent_primes = tuple(p for p in range(2, 3601)
+                                   if independent_prime(p))
         for length in range(2, 7):
             for R in range(1, 601):
                 oracle = all(
-                    prod(q for q in range(2, R*j+1)
-                         if R*j % q == 0 and independent_prime(q)) == R
+                    prod(q for q in independent_primes if R*j % q == 0) == R
                     for j in range(1, length+1))
                 self.assertEqual(flat_rad_ladder_condition(R, length), oracle,
                                  (R, length))
