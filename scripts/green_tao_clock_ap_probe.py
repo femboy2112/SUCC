@@ -9,6 +9,7 @@ from observational_succ.green_tao_clock_ap import (
     exact_character_label, local_prime_factors, local_step_requirement,
     prime_clock_progression, prime_predecessor_factorization,
     search_first_grid, verify_prime_clock_grid, wheel_arithmetic,
+    verify_flat_rad_prime_ladder, search_flat_rad_ladder,
 )
 
 
@@ -81,6 +82,20 @@ def probe() -> dict:
             "d66_all_local_factors_positive_to_11": all(
                 v.singular_series_factor > 0 for v in allowed),
             "fixed_difference_prime_tuple_infinitude_claimed": False,
+        },
+        "flat_rad_prime_ladders": {
+            "3": list(verify_flat_rad_prime_ladder(210, 3).prime_endpoints),
+            "4": list(verify_flat_rad_prime_ladder(330, 4).prime_endpoints),
+            "5": list(verify_flat_rad_prime_ladder(247710, 5).prime_endpoints),
+            "5x5_all_clocks_and_flat_RAD": {
+                "clocks": [5, 11, 17, 23, 29],
+                "radical": 71533328790,
+                "primes": list(verify_flat_rad_prime_ladder(71533328790, 5).prime_endpoints),
+                "ris_values": list(verify_flat_rad_prime_ladder(71533328790, 5).residual_values),
+            },
+            "first_R_length_4_with_cap_330": search_flat_rad_ladder(4, 330).radical,
+            "first_R_length_5_with_cap_247710": search_flat_rad_ladder(5, 247710).radical,
+            "infinitely_many_anchored_ladders_proved": False,
         },
         "Green_Tao_reconstructed_inside_SUCC": False,
         "GT_positive_density_and_PNT_AP_used_as_external_theorems": True,
