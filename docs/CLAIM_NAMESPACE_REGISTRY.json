@@ -263,6 +263,20 @@
         "observational_succ/round2_completion.py",
         "observational_succ/round2_causal.py"
       ]
+    },
+    {
+      "namespace": "RAD_RIS_TRANSPORT",
+      "bare_prefix": "RRT",
+      "fq_prefix": "RRT",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_RAD_RIS.md"
+      ],
+      "id_count": 9,
+      "status": "MIXED (CLASSICAL/PROVED LOCAL/REFUTED/UNVERIFIED)",
+      "topic": "RAD/RIS squarefree support, multiplicity filtration, prime-gated FUCC, CRT successor locality obstruction and ABC boundary",
+      "code": [
+        "observational_succ/rad_ris_transport.py"
+      ]
     }
   ],
   "resolved_collisions": [
