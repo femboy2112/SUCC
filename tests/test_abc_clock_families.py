@@ -6,7 +6,7 @@ import unittest
 from observational_succ.abc_clock_families import (
     ABCClockError, ABCTriple, exact_local_clock, finite_envelope,
     prime, prime_factors, prime_progression_lifts, radical, radical_sieve,
-    residue_clock_indicator, ris, valuation, local_energy_tail,
+    residue_clock_indicator, ris, valuation, local_energy_tail, prime_ap_shadow_fan,
 )
 
 
@@ -131,6 +131,31 @@ class ABCClockTests(unittest.TestCase):
         for i in range(len(es)-1):
             self.assertGreaterEqual(vals[i]**es[i+1].denominator,
                                     vals[i+1]**es[i].denominator)
+
+    def test_prime_exponent_layers_are_a_canonical_monomial_certificate(self):
+        for a, b in ((1,8),(3,125),(5,1024),(125,128),(63,1)):
+            t = ABCTriple(a,b,a+b)
+            parts = t.exponent_layers()
+            self.assertEqual(tuple(k for k, *_ in parts),
+                             tuple(sorted(set(k for _,_,k in t.clock_signature()))))
+            values = tuple(__import__("math").prod(row[i]**row[0] for row in parts)
+                           for i in (1,2,3))
+            self.assertEqual(values,(t.a,t.b,t.c))
+            self.assertEqual(__import__("math").prod(row[1]*row[2]*row[3] for row in parts),
+                             t.radical)
+        self.assertEqual(ABCTriple(1,8,9).exponent_layers(),
+                         ((2,1,1,3),(3,1,2,1)))
+
+    def test_green_tao_prime_ap_fan_exactly_quadratic_and_still_subcritical(self):
+        prime_fan = prime_ap_shadow_fan((5,11,17,23,29))
+        self.assertEqual(len(prime_fan),4)
+        self.assertEqual(len(set((t.a,t.b,t.c) for t in prime_fan)),4)
+        self.assertTrue(all(t.ris > 1 and
+                            t.abc_quality_excess(F(0)) < F(1,3) for t in prime_fan))
+        with self.assertRaises(ABCClockError):
+            prime_ap_shadow_fan((7,8,9))
+        with self.assertRaises(ABCClockError):
+            prime_ap_shadow_fan((5,11,19))
 
     def test_local_gibbs_energy_tail_and_p2_critical_lower_bound(self):
         for p in (2, 3, 5):
