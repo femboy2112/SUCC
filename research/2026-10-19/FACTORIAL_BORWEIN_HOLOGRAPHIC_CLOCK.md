@@ -191,8 +191,58 @@ Exact independent CDF calculation. Thus the restriction to repeated occupations 
 
 - Module: \`observational_succ/factorial_borwein_hologram.py\` (exact Fractions, authentic p, bounded analytic subset sums).
 - Tests: \`tests/test_factorial_borwein_hologram.py\`; **13 tests** with independent factorial valuation, prime/nonprime, 2-implementations of spline/CDF, exact Gram, half-grid nonidentification, source gates, and first-occupation mutation.
-- Probe: \`python scripts/factorial_borwein_hologram_probe.py\`.
+- Probe: \`python -m scripts.factorial_borwein_hologram_probe\`.
 - CI: \`.github/workflows/factorial-borwein-hologram.yml\` in Python 3.10/3.13. Local standalone Python 3.13 used a mathematical surrogate of upstream Borwein CDF; actual parent integration must be established by hosted CI before claiming complete compatibility.
 - Algebra/probability statuses: **PROVED LOCAL** from displayed proofs; **TESTED MODEL** for the executable rational certificates; **UNVERIFIED** for Lean, academic priority, ABC/RH implications, and growing-modulus prime-tuple correlations.
 
 **Next verdict-changing probe:** couple \`(I_{N_a},I_{N_b},I_{N_c})\` to authentic primitive \`a+b=c\` cancellation **with the shared residue moduli explicitly transported across all three slots**, then test whether any derived family inequality outperforms the established Bernert–Browning–Lichtman–Teräväinen 2026 ABC exceptional-set benchmark. A width/cumulant fit without such source-authenticated arithmetic and an independent holdout is not a new ABC theorem.
+
+
+## 9. Prime-wheel spectral mixing: factorial normalization is NOT uniform in growing W (CLASSICAL, PROVED LOCAL)
+
+Fix a wheel \`W>=2\`, a nonempty residue set \`A\subset Z/WZ\`, and the declared SUCC orientation \`n->n+1\`. The factorial-normalized Poisson clock function is
+\[
+F_{W,A}(t,n)=\frac{W}{|A|}e^{-t}
+\sum_{k=0}^{\infty}\frac{t^k}{k!}\mathbf1_{n+k\bmod W\in A}.
+\]
+Discrete Fourier orthogonality gives the **exact** spectral representation
+\[
+F_{W,A}(t,n)
+=\frac1{|A|}\sum_{j=0}^{W-1}
+\widehat{\mathbf1_A}(j)
+e^{2\pi i jn/W}\,
+\exp\{t(e^{2\pi ij/W}-1)\},
+\quad
+\widehat{\mathbf1_A}(j)=\sum_{r\in A}e^{-2\pi ijr/W}.
+\]
+The \`j=0\` term is exactly 1. Nonzero modes decay at rates \`1-cos(2*pi*j/W)\`; the slowest rate is
+\[
+\boxed{\Delta_W=1-\cos(2\pi/W)=2\sin^2(\pi/W),\qquad
+8/W^2\le\Delta_W\le2\pi^2/W^2.}
+\]
+The bounds follow from \`2u/pi<=sin(u)<=u\` for \`u in [0,pi/2]\`.
+
+In particular, for the Poisson SUCC displacement on \`Z/WZ\`, a first Fourier character is a normalized bounded test with mean zero under uniform Haar, so the total-variation distance to uniform satisfies
+\[
+\boxed{
+\tfrac12 e^{-t\Delta_W}
+\le \mathrm{TV}(\operatorname{Pois}(t)\bmod W,\mathrm{Haar}_W)
+\le\min\!\bigl(1,\tfrac{W-1}{2}e^{-t\Delta_W}\bigr).
+}
+\]
+The upper bound is Fourier inversion and triangle inequality; the lower bound tests \`exp(2*pi*i n/W)\` against the difference of measures. **Consequently, no fixed time t makes prime wheels mix uniformly as W grows**. The relaxation scale is at least order \`W²\`; using a factorial denominator \`k!\` does not erase an expanding CRT period. For W=870870, the slow Fourier rate is about \`2.6e-11\`, illustrative only; the inequality itself is exact.
+
+**What this rules out:** extracting growing-wheel prime independence or a uniform ABC \`K_eps\` simply by Poissonizing the SUCC clock. Green–Tao's transference needs pseudorandom majorants and control of arithmetic linear forms, not merely a finite-wheel heat kernel. No RH/Weil positivity statement follows.
+
+## 10. Validation correction
+
+The first hosted CI attempt completed **8/8 parent tests and 13/13 child tests on both Python 3.10 and 3.13**, but failed *after the tests* because the receipt script was run as \`python scripts/...\` without the repository root on \`sys.path\`. The workflow was corrected to
+\`python -m scripts.factorial_borwein_hologram_probe\` and then **passed** on both interpreters. This is a repository-execution import-path correction, not a mathematical patch. The directly reproducible checkout commands are:
+
+\`\`\`sh
+python -m unittest discover -s tests -p 'test_borwein_prime_clock.py' -v
+python -m unittest discover -s tests -p 'test_factorial_borwein_hologram.py' -v
+python -m scripts.factorial_borwein_hologram_probe
+\`\`\`
+
+The remaining full existing SUCC validation status is controlled by its independent workflow, not inferred from the focused proof-access gate.
