@@ -39,7 +39,8 @@ def receipt() -> dict:
             assert verdict.obstruction is not None
             assert verify_loop(graph, verdict.obstruction)
         cases += 1
-    assert cases == 729 and obstructed + flat == cases
+    # Independent 4-vertex parity-fiber count: sum_H 2**(4-c(H)) = 393.
+    assert cases == 729 and flat == 393 and obstructed == 336
     assert not odd_result.section_exists and odd_result.number_of_sections == 0
     assert verify_loop(odd, odd_result.obstruction)
     assert even_result.number_of_sections == 2
