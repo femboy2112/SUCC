@@ -141,6 +141,48 @@ In contrast, choose increasing primes b_m≡1 (mod m!), again by Dirichlet. Ever
 
 This is a valid constructive-existence theorem **conditional on the externally proved Dirichlet theorem**, not a claim that finite experiments prove the infinite sequence or that a physical supertask has completed.
 
+### 7a. The entire limiting fixed-window phase distribution, without RH (PPC-10)
+
+Let P be a **fixed, finite set of genuine primes**, let M=prod_{q in P}q, and let phi(M)=prod_{q in P}(q-1). Define the two integer observables at prime p>max(P):
+
+\[
+ C_P(p)=\sum_{q\in P}(p\bmod q),\qquad
+ A_P(p)=\sum_{q\in P}1_{p\bmod q=1}.
+\]
+
+CRT identifies every reduced residue class modulo M with an independent selection of one unit r_q in {1,...,q-1} at each q. There are exactly phi(M) equally weighted tuples under the uniform reduced-residue *finite* measure. **External analytic input:** the ordinary PNT in arithmetic progressions says that as x→infinity, the primes p<=x become equidistributed among these phi(M) reduced residue classes when M remains fixed. Therefore their **limiting** phase-score probability generating functions are
+
+\[
+ \boxed{\lim_{x\to\infty}
+ \frac{1}{\pi(x)}\sum_{\substack{p\leq x\\p\ \mathrm{prime}}}z^{C_P(p)}
+ = \prod_{q\in P}\frac{z+z^2+\cdots+z^{q-1}}{q-1},}
+\]
+
+\[
+ \boxed{\lim_{x\to\infty}
+ \frac{1}{\pi(x)}\sum_{\substack{p\leq x\\p\ \mathrm{prime}}}z^{A_P(p)}
+ = \prod_{q\in P}\frac{q-2+z}{q-1}.}
+\]
+
+These are finite polynomial limits coefficient by coefficient (and thus as polynomials in z). In particular, the q-clock match indicator is asymptotically Bernoulli **1/(q-1)**, not 1/q: primes above q occupy only nonzero residue classes modulo q. Different q match indicators become independent in the fixed-window limit.
+
+Consequently,
+
+\[
+ \mathbb E_\infty[C_P]=\frac12\sum_{q\in P}q,\quad
+ \operatorname{Var}_\infty(C_P)=\frac1{12}\sum_{q\in P}q(q-2),
+\]
+
+\[
+ \mathbb E_\infty[A_P]=\sum_{q\in P}\frac1{q-1},\quad
+ \operatorname{Var}_\infty(A_P)=\sum_{q\in P}\frac{q-2}{(q-1)^2},
+ \quad \Pr_\infty(A_P=|P|)=\frac1{\phi(M)}.
+\]
+
+For P=(2,3,5,7), M=210, phi(M)=48. Thus perfect phase-1 synchronization has limiting prime frequency **1/48**, E(C)=17/2, Var(C)=53/12, and E(A)=23/12. An exact independent finite CRT-class enumerator confirms **all coefficients** of both polynomials and their moments; it does not by itself verify the external PNT-AP step.
+
+**Critical quantifier firewall:** fixed P **before** x→infinity. This theorem gives no error uniform in a changing M=M(x) and cannot justify applying the same Bernoulli-independent law to "all primes smaller than p", a regime already ruled out for perfect locks by PPC-04. It also does not identify any Fourier or Gibbs covariance with the authentic signed completed Weil form. Status: **CLASSICAL CRT + EXTERNAL PNT-AP** for the prime limit; **PROVED LOCAL / exact finite** for the CRT polynomial oracle.
+
 ## 8. ABC crucible: the most tempting conclusion is false (PPC-08)
 
 For a prime p>2, take the trivial primitive additive triple 1+(p-1)=p. Because gcd(p,p-1)=1,
