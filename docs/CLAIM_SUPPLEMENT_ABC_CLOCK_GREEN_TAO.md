@@ -16,3 +16,17 @@ Full proofs, assumptions, controls and falsification targets are in [the researc
 **Reproduction:** `python -m unittest tests.test_abc_clock_families` or `python -m unittest discover -s tests -p 'test_abc_clock_families.py'`, plus `python scripts/abc_clock_green_tao_probe.py --limit 1200`. All new numerical comparisons are exact rationals; no historical source bytes were changed.
 
 Primary sources: Green and Tao (2008), https://annals.math.princeton.edu/2008/167-2/p03 ; Tao's transference/W-trick lecture, https://terrytao.wordpress.com/2010/06/05/254b-lecture-notes-7-the-transference-principle-and-linear-equations-in-primes/ .
+
+
+## Literature correction and additional calibrated claims
+
+The 2026 Bernert–Browning–Lichtman–Teräväinen [paper](https://arxiv.org/html/2410.12234), Theorems 1.2–1.3, proves \(N_\lambda(X)\ll X^{(23\lambda+3)/40+\delta}\) for \(0<\lambda\le2\), and \(N_\lambda(X)\ll X^{3/5+\delta}\) when \(0<\lambda<1\). Its prime-exponent anatomy (Lemma 2.2) and Fourier/geometry argument are **prior external research**. ABC-CLK-03 is only an elementary **inferior baseline**, not a new exponent or priority claim.
+
+| ID | Exact scope | Status | Evidence / falsifier |
+| --- | --- | --- | --- |
+| ABC-CLK-09 | Independent conditional-p-adic primitive clocks, random product \(H_{\mathrm{loc}}=\prod_p p^{(v_p(a_pb_pc_p)-1)_+}\): a.s. finite, \(\mathbb EH_{\mathrm{loc}}^s<\infty\) for \(0\le s<1\), infinite for \(s\ge1\) | **PROVED LOCAL** in specified profinite probability model | Closed local geometric moments, convergence of prime factors, Borel–Cantelli, monotone convergence; NOT an integer-box claim |
+| ABC-CLK-10 | A genuine odd-prime L-AP yields exactly floor((L-1)^2/4) distinct prime-3AP square-completion triples with \(c/\operatorname{rad}(abc)<1/3\) | **PROVED LOCAL**, infinite AP length **EXTERNAL THEOREM** | Exact combinatorial center-distance count; hostile composite AP; prime_ap_shadow_fan |
+| ABC-CLK-11 | Canonical source-indexed prime-exponent layers reconstruct \((a,b,c)\) and the radical exactly | **PROVED LOCAL** (classical factorization) / **TESTED MODEL** | ABCTriple.exponent_layers, tests; bounded-truncation and harmonic estimates still missing |
+| ABC-CLK-12 | Current elementary exception-set count improves or matches the best 2026 published theorem | **REFUTED** | Primary theorem \(X^{3/5+\delta}\) in 2026 paper dwarfs ABC-CLK-03 exponent; scholarly priority unverified |
+
+**Updated validation:** 14 tests on isolated new Python source passed locally (Python 3.13); full upstream SUCC suite and any future hosted CI not locally certified.
