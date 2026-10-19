@@ -177,6 +177,25 @@ The new `exact_envelopes_on_image_choice_free` proves equality on the image. `em
 - Two source states may share a report but have different *probabilities* while having the same support; neither `V` nor equality of supports transports their stochastic kernels. Retain existing EODCS III mutant controls.
 - An abstract `q`, `N`, and `r` do not attest that an actual observer can perform `N`; source access remains a separate gate.
 
+### 3.3 A categorical universal property obtained without categorical overreach
+
+For `q:S→O`, define the existential direct image `(∃_q F)(o,p) := ∃s, q(s)=o ∧ F(s,p)`. For any report predicate `G:O×P→Prop`, order predicates by pointwise implication. Then:
+
+\[
+\boxed{\quad (\exists_q F\leq G)\ \Longleftrightarrow\ (F\leq q^*G)\quad}
+\]
+
+where `(q*G)(s,p)=G(q(s),p)`. **Proof:** forward, apply the left inequality to the witness `s` at report `q(s)`; backward, destruct the explicit witness of `∃_q F(o,p)`, and apply the right inequality. This is the classical adjunction `∃_q ⊣ q^*` between predicate preorders, proved constructively. It is an exact realization of **category-shaped set reasoning**: the map's universal property packages all source witnesses without choosing a representative.
+
+The new Lean declaration `may_report_left_adjunction` formalizes this property using the repository's exact `FutureSupport`/`MayReport` types. The standalone `EODCS_MetaChoiceParity.lean` additionally proves the direct-image **identity and composition** laws, again without classical choice:
+
+\[
+\exists_{\mathrm{id}}F\equiv F,\qquad
+\exists_h(\exists_qF)\equiv\exists_{h\circ q}F.
+\]
+
+These equivalences concern proposition-valued relations and do not supply computational witness selection. Their novelty is an explicit, source-aware SUCC use and Lean encoding, not the underlying adjunction.
+
 ## 4. Exact finite obstruction: an odd-loop cannot descend
 
 Let `G=(V,E)` be a finite undirected multigraph viewed as a one-dimensional CW complex, and let every edge `e=(u,v)` carry a parity `t_e∈F_2`. An assignment of local states `x_v∈F_2` is a global section of this transport problem if
@@ -222,6 +241,18 @@ forces `0=1` in `F_2`. This **refutes** the false meta-principle `every local ed
 **Hostile test domain:** all `3^6=729` simple undirected edge-labeled graphs on four named vertices (edge absent, parity 0, or parity 1), each compared against all `2^4=16` vertex assignments. Triangle parity masks, parallel-edge contradictions, self-loops, disconnected graphs, proof-witness mutations, and source/basis mismatch are extra controls. These are exhaustive **within that finite grammar**, not for all graphs.
 
 Command: `python -m unittest tests.test_eodcs_meta_choice_descent -v` (or `python -m unittest discover -s tests -p 'test_eodcs_meta_choice_descent.py'`), `python scripts/meta_choice_descent_probe.py`.
+
+### 4.0a Independent combinatorial count of the four-vertex grammar
+
+The `729=3^6` graph contracts have `393` flat transport assignments and `336` obstructed ones. This count can be derived without consulting either the spanning-forest solver or the vertex-assignment oracle. For a fixed subgraph `H⊆K_4` with `c(H)` connected components, the coboundary map `F_2^4→F_2^{E(H)}` has kernel of size `2^{c(H)}`, so its image contains exactly `2^{4-c(H)}` flat edge assignments. Sum over the `64` unlabeled-by-parity edge subsets:
+
+\[
+N_{\mathrm{flat}}
+=\sum_{H\subseteq K_4}2^{4-c(H)}
+=1+12+60+144+120+48+8=\boxed{393}.
+\]
+
+The terms are grouped by the number of edges `m=0,1,2,3,4,5,6`; for `m=3`, four triangles plus isolated vertices give `4×4` and sixteen spanning trees give `16×8`. All other edge-count classes have constant component count. The remaining `729-393=336` have an odd closed-walk obstruction. The standalone probe hard-asserts these exact totals; they are independent paper-level acceptance targets, not outputs to be invented if runtime tests fail.
 
 ### 4.1 Why a cover does not magically solve the original task
 
