@@ -152,6 +152,14 @@ converting general observational insight into an RH proof claim.
 
 ## Research history (consolidation audits)
 
+The [Academic Transmutation research audit](docs/ACADEMIC_TRANSMUTATION_AUDIT_2026-10-18.md)
+adds exact forgetting and causal-lifting contracts, an all-horizon arithmetic
+nonidentification theorem, six kernel-checked lemmas, and an authentic Gamma
+tail refinement whose tested Schur route remains ambiguous. Includes a
+[six-page foundations draft](research/2026-10-18/ACADEMIC_TRANSMUTATION_FOUNDATIONS.pdf)
+and explicit classical/novelty boundaries. This branch is based on draft PR177;
+it is not an integration of every open research branch.
+
 The project has been consolidated in documented waves, each preserving its results, status labels,
 and counterexamples — nothing is discarded:
 

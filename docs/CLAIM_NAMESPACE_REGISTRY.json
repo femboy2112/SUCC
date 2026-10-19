@@ -159,6 +159,25 @@
       "code": [
         "observational_succ/wild_ambient_succ.py"
       ]
+    },
+    {
+      "namespace": "ACADEMIC_TRANSMUTATION",
+      "bare_prefix": "ATX",
+      "fq_prefix": "ATX",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_ACADEMIC_TRANSMUTATION.md"
+      ],
+      "id_count": 12,
+      "status": "MIXED (CLASSICAL / PROVED LOCAL / REFUTED / UNVERIFIED)",
+      "topic": "Exact future-safe quotient, private causal gluing, arithmetic source nonidentification, authentic Gamma tail and additive operator corrections",
+      "code": [
+        "observational_succ/future_safe_quotient.py",
+        "observational_succ/lawful_history_gluing.py",
+        "observational_succ/arithmetic_source_minimality.py",
+        "observational_succ/gamma_tail_resolvent_refinement.py",
+        "formal/FutureSafeForgetting.lean",
+        "scripts/check_academic_certificate.py"
+      ]
     }
   ],
   "resolved_collisions": [

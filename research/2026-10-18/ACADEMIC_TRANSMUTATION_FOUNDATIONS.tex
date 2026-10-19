@@ -1,0 +1,366 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\dd}{\mathrm d}
+\title{Future-safe quotients and source-sensitive obstructions\\\large An Observational SUCC research draft}
+\author{Observational SUCC research program}
+\date{18 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We give a minimal deterministic contract for discarding information while
+preserving declared future reports, partial actions and costs. Predictive
+sufficiency is separated from autonomous quotient dynamics, source-realizable
+paths from compatible report paths, and existential lifts from online
+realization. The quotient and finite path mechanisms specialize classical
+automata and coalgebra theory. A self-contained arithmetic construction shows
+that any finite ordinary-prime prefix, density one, a prime number theorem and
+the critical-strip zero divisor together fail to identify successor--dilation
+rigidity within a generalized-prime source class. Finally, we derive a
+boundary-aware resolvent estimate for the actual real-Gamma tail used in the
+signed Suzuki form. Six scoped quotient/path lemmas have been kernel checked;
+the arithmetic and analytic proofs are paper proofs with exact finite controls.
+Academic priority is unverified. No first-window Weil sign or RH proof is claimed.
+\end{abstract}
+
+\section{Minimal specification and proof authority}
+A deterministic contract is a set $X$ of complete source/history states, an
+action set $A$, a report map $o:X\to O$, and partial maps
+$t_a:X\rightharpoonup X\times\RR_{\ge0}$. Reports may include current
+source tags and the outputs of a declared proof verifier. An immutable
+provenance label, when required, is separately preserved by every action.
+Epochs and current source configurations can change inside $X$.
+A state need not admit a finite effective representation. A hypothetical
+path is not an actual event journal, and equality of verifier outputs does
+not establish soundness of that verifier.
+
+A finite structural trace records its initial report, all reached reports,
+costs and the first unavailable action. Unavailability becomes an observed
+separator only under a specified lawful refusal/menu instrument. The
+statements below concern this declared structural contract; they do not
+authenticate a physical source or provide an undeclared instrument.
+
+\section{Exactly what can be forgotten}
+Write $x\simeq y$ when all finite structural traces agree. For a representation
+$q:X\twoheadrightarrow Y$, call $q$ \emph{predictively sufficient} if every
+finite trace is a function of $q(x)$. Call it \emph{autonomous} if reports and
+partial cost-labelled actions descend to $Y$.
+
+\begin{theorem}[Classical quotient, with explicit contract]
+Predictive sufficiency is equivalent to $\ker q\subseteq\simeq$.
+Autonomy is equivalent to the following local laws whenever $q(x)=q(y)$:
+\begin{enumerate}
+\item $o(x)=o(y)$;
+\item $t_a(x)$ is defined exactly when $t_a(y)$ is defined;
+\item if $t_a(x)=(x',c)$ and $t_a(y)=(y',d)$, then $c=d$ and $q(x')=q(y')$.
+\end{enumerate}
+The relation $\simeq$ is the greatest equivalence satisfying these laws.
+Its quotient is autonomous. Every surjective autonomous representation
+$q$ admits a unique map $f:Y\to X/{\simeq}$ such that $\pi=fq$.
+Every executable quotient word lifts from every source representative,
+preserving each charged cost and the final quotient state.
+\end{theorem}
+\begin{proof}
+A function factors through a surjection exactly when it is constant on its
+fibers; apply this to each trace. If actions descend, the three local laws
+follow by comparing their images. Conversely define the quotient output
+and action using a representative; the laws make the definition independent
+of that choice. Comparing empty traces gives output equality. Comparing
+one-letter prefixes and then arbitrary suffixes gives availability, cost
+and successor equivalence for $\simeq$. Conversely the local laws propagate
+trace equality by induction on word length. Thus every such equivalence is
+contained in $\simeq$. Set $f(q(x))=[x]$; this is well-defined, unique and
+commutes with the induced actions. Finally, a quotient transition must equal
+the image of the transition from any representative, so it has a lift from
+that representative; iterate over the word.
+\end{proof}
+
+This is a specialization of final semantics and quotient descent for
+$F(X)=O\times(1+X\times\RR_{\ge0})^A$ \cite{rutten,silva}; histories and
+source labels do not by themselves establish novelty. The repository's B15
+and causal Nerode development already establish the total deterministic core.
+The constructive Lean theorem takes a supplied section of $q$ and does not
+invoke choice. Its exact axiom audit is recorded separately.
+
+Predictive sufficiency is strictly weaker than autonomy. Let all outputs
+and unit costs be identical, with $p\to u$, $q\to v$, $u\to u$, $v\to v$.
+Every state has the same behavior, but the representation identifying $p,q$
+and distinguishing $u,v$ cannot update autonomously.
+
+For bounded observations the correct state is $(x,b)$ with residual budget
+$b$. An affordable transition of cost $c$ leads to $(x',b-c)$; unaffordable
+and unavailable requests have the same rejection in this version of the
+contract. Applying the theorem to these augmented states gives the lawful
+budget quotient. Applying budget-$b$ equivalence repeatedly to bare states
+would replenish resources. For example, $p\to u$, $q\to v$, $u\to u$,
+$v\to z$, $z\to z$, with unit costs and output one only at $z$, satisfies
+$p\simeq_1q$ but $u\not\simeq_1v$.
+
+Effective existence is another boundary. In a computable unary system let
+$(M,n)\mapsto(M,n+1)$ and output one exactly when machine $M$ halts within
+$n$ steps. Comparison with a forever-zero loop decides nonhalting if
+behavioral equivalence is decidable. Thus a computable transition law does
+not supply a uniform algorithm for the infinite quotient. This fact has no
+implication about the decidability of a particular number-theoretic conjecture.
+
+\begin{theorem}[Exact finite resource threshold]
+Suppose $X,A$ are finite, costs are nonnegative rationals, and the budget
+interface rejects unavailable or unaffordable requests identically at zero cost,
+keeps residual budget hidden, and
+reports the exact cost of each successful action. On unordered state pairs
+make a terminal edge of weight zero for differing reports; of weight $c$
+when only one side enables an action of cost $c$; and of weight
+$\min(c,d)$ when both enable it with unequal costs. Equal-cost actions give
+edges of that common cost to the successor pair. If $D(x,y)$ is the shortest
+distance to a terminal, with $D=+\infty$ if no terminal is reachable, then,
+for every rational budget $B\ge0$,
+\[
+x\not\simeq_B y\quad\Longleftrightarrow\quad D(x,y)\le B.
+\]
+A finite threshold is attained and has a word witness of at most
+$\binom{|X|}{2}$ actions. It can be found without expanding a residual-budget
+lattice. Priority for this specialized formulation is unverified.
+\end{theorem}
+\begin{proof}
+Before the first trace discrepancy, both runs execute the same actions with
+equal costs, hence follow synchronized pair edges. A discrepancy is either
+an output difference, a successful action versus rejection, or unequal
+successful cost receipts. Its minimum necessary extra budget is exactly the
+corresponding terminal weight. Conversely a terminal path of weight $d$
+gives a differing trace at every budget at least $d$: a larger budget can
+turn a cost-based affordability difference into unequal cost receipts, but
+cannot hide it. Nonnegative weights permit deleting loops. A successful
+path never reaches a diagonal pair, which has no possible discrepancy.
+Thus a simple shortest terminal path visits at most the stated number of
+nondiagonal pairs. The finite rational minimum is attained.
+\end{proof}
+
+The observation interface is load-bearing. If one compares only words lawful
+at both states, agreement need not be transitive: let $x,y,z$ initially report
+zero, let $x$ have a zero-reporting $a$-loop, let $y$ have no $a$-edge, and let
+$z$ have an $a$-edge to a one-reporting state. Then $x$ agrees with $y$ and $y$
+with $z$ on their common lawful words, while $x,z$ disagree on $a$. Such a
+relation cannot be used as a quotient equivalence without an additional
+testing contract.
+
+\section{Report gluing versus one lawful history}
+Fix a finite private state set $X$, a fixed original-source fiber $X_\sigma$,
+initial states $I_\sigma$, a report $r:X_\sigma\to Y$, and relations $R_a$
+preserving the original source. Define $y\bar R_a z$ by existence of an
+$R_a$ edge between the corresponding private fibers. A projected word is
+$w=(y_0,a_0,\ldots,a_{n-1},y_n)$ starting in $r(I_\sigma)$ and using these
+projected edges. Its exact private supports are
+\[
+B_0=I_\sigma\cap r^{-1}(y_0),\qquad
+B_{i+1}=R_{a_i}[B_i]\cap r^{-1}(y_{i+1}).
+\]
+\begin{theorem}[Finite private lifting and obstruction]
+A projected word has a private lift if and only if $B_n\ne\varnothing$,
+if and only if its complete private layered graph admits a nonnegative unit
+flow, if and only if it admits a $0/1$ path flow. Nonexistence is certified by
+sets $C_i$ containing $B_0$ initially, closed under the specified successive
+transitions, and empty at the final layer.
+Every projected word lifts if and only if the nonempty support configurations
+reachable from the initial configurations form a closed invariant. If this
+fails, a shortest failed word has at most
+\[
+N_\sigma=\sum_{y\in r(X_\sigma)}(2^{|r^{-1}(y)|}-1)
+\]
+edges.
+\end{theorem}
+\begin{proof}
+Induction identifies $B_i$ with endpoints of all private lifts of the prefix.
+A path gives a unit flow; conservation lets one follow positive-flow edges
+from the supersource to the supersink. Time layers prevent cycles. Repeatedly
+subtracting the minimum flow on such a path gives a finite convex combination
+of path flows, hence integrality for this network contract. Any closed $C_i$
+contains $B_i$ inductively, and $C_i=B_i$ provides a cut when $B_n$ is empty.
+For incidence columns $e_{\rm head}-e_{\rm tail}$, the indicator of the
+source-side closed cut has $p^TA\ge0$ and $p^Tb=-1$, an exact Farkas witness.
+There are $N_\sigma$ possible nonempty configurations $(y,B)$. A shortest
+failed path cannot repeat one before its final empty update: removing the
+loop preserves both report compatibility and the deterministic support
+update. The number of nonempty prefixes, and hence of edges, is at most
+$N_\sigma$. Exhaustive breadth-first search proves the final alternative.
+\end{proof}
+
+The mechanism is classical subset construction, path decomposition and
+abstraction checking. The private interfaces are essential. Edges $p\to u$
+and $v\to q$ with $r(u)=r(v)$ glue as reports while $u\ne v$ prevents a lift.
+Extra marginal constraints can also destroy network integrality: pairwise
+binary anticorrelations around an odd cycle admit compatible fractional local
+laws but no global deterministic assignment.
+
+Even uniform existential lifting is not an online resolver. With one report,
+initial state $p$, edges $p\xrightarrow{a,b}\{u,v\}$,
+$u\xrightarrow a\{u,v\}$ and $v\xrightarrow b\{u,v\}$, every finite word
+has a lift. Yet any resolver's first choice $u$ or $v$ is defeated by the
+next request $b$ or $a$. This separates $\forall w\,\exists\text{lift}$
+from one causal strategy for every word, not merely from source authenticity.
+
+\section{Arbitrarily late arithmetic camouflage}
+Generalized primes below, in Beurling's framework \cite{beurling}, are positive real generators of a free commutative
+monoid; counting retains word multiplicities.
+\begin{theorem}[A uniform source nonidentification family]
+For every finite $H\ge1$, there is a collision-free rational generalized-prime
+source agreeing with ordinary primitive, prime-power and integer data through
+$H$, with first real cell length one, $N_B(X)=X+O(\log^2X)$, a prime count
+differing from the ordinary one by at most two, and
+\[
+\zeta_B(s)=\zeta(s)F(s),\qquad \Re s>0,
+\]
+as a meromorphic continuation from the Euler product on $\Re s>1$,
+where $F$ is holomorphic and nowhere zero and $F(1)=1$. Nevertheless its rank
+successor and unchanged multiplication by two fail $V_2S=S^2V_2$.
+\end{theorem}
+\begin{proof}
+Choose ordinary primes $p>\max(H,2)$ and $q>p^2$. Put
+\[
+A=p^2-p+1,\qquad a=\frac{p^2}{p-1},\qquad
+b=\frac{qA}{q+p(p-1)},
+\]
+and replace $p,q$ by $a,b$. Word values are $ma^jb^k$ with $(m,pq)=1$.
+Their $p,q$ valuations are $2j,k$, so distinct words have distinct values.
+Both replacements exceed $p+1$; consequently the source through $p+1$ is
+$1,\ldots,p-1,p+1$. For $x=(p-1)/2$ the difference
+\[
+\operatorname{rank}(V_2Sx)-\operatorname{rank}(V_2x)-2=-1
+\]
+exhibits the failed braid, while every bounded operation staying through $H$
+is unchanged.
+
+Let $C=(1-1/p)(1-1/q)$ and
+$R(y)=\lfloor y\rfloor-\lfloor y/p\rfloor-\lfloor y/q\rfloor+\lfloor y/(pq)\rfloor$.
+Then $|R(y)-Cy|\le2$ and direct algebra gives
+$(1-1/a)(1-1/b)=C$. Thus
+\[
+N_B(X)=\sum_{a^jb^k\le X}R(Xa^{-j}b^{-k}).
+\]
+Writing $J=\max\{j:a^j\le X\}$ and $K=\max\{k:b^k\le X\}$, sum the
+rounding error over at most $(J+1)(K+1)$ terms. The omitted geometric tail,
+split at $j=J$, is at most $(J+1)(1-1/a)+1$ after multiplication by $CX$.
+Hence
+\[
+|N_B(X)-X|\le2(J+1)(K+1)+(J+1)(1-1/a)+1.
+\]
+Only two primitive values are replaced, proving the prime-count bound.
+On $\Re s>1$ the absolutely convergent Euler products give
+\[
+F(s)=\frac{(1-p^{-s})(1-q^{-s})}{(1-a^{-s})(1-b^{-s})}.
+\]
+Every factor is holomorphic and nonzero on $\Re s>0$; ordinary zeta
+continuation and $F(1)=1$ prove the rest. In particular the critical-strip
+zero divisor and pole residue agree without using any zero ordinate.
+\end{proof}
+
+A terminating adaptive protocol using only bounded source-prefix queries has
+the same transcript on a sufficiently late member of this family as on
+ordinary arithmetic. Even the displayed global summaries do not break that
+ambiguity. This does not exclude a finite proof of an authenticated universal
+source law. Nor does the construction preserve the standard completed
+functional equation, canonical Gamma term or full Weil distribution.
+The generalized-prime framework is classical; scholarly priority for this
+specific simultaneous construction remains unverified.
+
+\section{Retaining the authentic Gamma tail}
+On $I=(-1/2,1/2)$ set $d_j=4j+1$, $\alpha_j=d_j/2$ and
+\[
+(E_\alpha h)(x)=\int_Ie^{-\alpha|x-y|}h(y)\dd y,
+\qquad \Gamma_jh=\frac4{d_j}h-E_{\alpha_j}h.
+\]
+These are the rungs of the one real-Gamma source in Suzuki's completed form
+\cite{suzuki}. They do not replace its signed prime, pole or contact terms.
+Let $S_r(J)=\sum_{j\ge J}d_j^{-r}$ and $a_J=16S_3(J)$.
+
+\begin{theorem}[Endpoint-paid tail expansion]
+If $J\ge1$ and $h\in H^4(I)\cap H^2_0(I)$, then
+\[
+\sum_{j\ge J}\Gamma_jh=-a_Jh''+e_J,
+\]
+where, writing $d=4J+1$ and
+$L_J(u,v)=(|u|^2+|v|^2+2|u\bar v|d e^{-d/2})^{1/2}$,
+\begin{align*}
+\|e_J\|_2\le{}&8L_J(h''(-1/2),h''(1/2))\sqrt{S_3S_4}\\
+&+16L_J(-h'''(-1/2),h'''(1/2))\sqrt{S_4S_5}
++64S_5\|h''''\|_2.
+\end{align*}
+For real endpoint values the cross term may be sharpened from $|u\bar v|$
+to $\max(uv,0)$. The quadratic form also satisfies
+\[
+\langle\Gamma_{\ge J}h,h\rangle
+\ge16S_3\|h'\|_2^2-64S_5\|h''\|_2^2.
+\]
+\end{theorem}
+\begin{proof}
+Since $h=h'=0$ at the endpoints, two integrations by parts give
+$\Gamma_jh=-\alpha_j^{-2}E_{\alpha_j}h''$. Two more yield
+\begin{align*}
+\Gamma_jh={}&-16d_j^{-3}h''-16d_j^{-4}E_{\alpha_j}h''''\\
+&+e^{-\alpha_j(x+1/2)}(8d_j^{-3}h''(-1/2)-16d_j^{-4}h'''(-1/2))\\
+&+e^{-\alpha_j(1/2-x)}(8d_j^{-3}h''(1/2)+16d_j^{-4}h'''(1/2)).
+\end{align*}
+The exponential operator has norm at most $4/d_j$. The squared norm of an
+endpoint pair is
+$(|u|^2+|v|^2)(1-e^{-d_j})/d_j+2\Re(u\bar v)e^{-d_j/2}$.
+Since $d_j e^{-d_j/2}$ decreases for $d_j\ge5$, the stated common pair bound
+follows. Sum the rung norms and use
+$\sum d_j^{-7/2}\le\sqrt{S_3S_4}$ and
+$\sum d_j^{-9/2}\le\sqrt{S_4S_5}$.
+For the quadratic bound, zero extension belongs to $H^2(\RR)$.
+The Fourier multiplier of a rung is
+$16\xi^2/[d_j(d_j^2+4\xi^2)]$; apply $(1+t)^{-1}\ge1-t$ and Plancherel.
+\end{proof}
+
+The endpoint contribution is $O(J^{-5/2})$ and the bulk remainder
+$O(J^{-4})$, for fixed $h$. The estimate does not impose the false extra
+conditions $h''=h'''=0$ at the endpoints. Exact rational series enclosures
+and outward square roots implement it. It reduced tail-action uncertainty
+on all four tested $J=24$ columns,
+but the retained action also moves the residual center: a smaller error
+bound alone need not improve a signed Schur lower bound.
+
+Let $F_c$ be the original four-dimensional low vector with coefficients $c$,
+$E$ the original primitive high subspace, $Q_E$ its orthogonal projection,
+and $H_\infty$ the original self-adjoint signed source operator. For a trial
+$h_c=F_c-x_c$ with $x_c\in E$ in the valid common form domains and $h_c$ in
+the operator domain, and inherited original high coercivity $D\ge\kappa I$
+in the correct primitive Hilbert space, the valid bound is
+\[
+S_4[c]\ge q(h_c)-\kappa^{-1}\|Q_EH_\infty h_c\|_2^2.
+\]
+The new estimate controls part of this expression; it proves neither its sign
+nor every-radius positivity. Paired source trials remain ambiguous. The
+complete signed source, one real Gamma, both polar signs, contact and genuine
+prime half-density remain fixed throughout.
+
+\section{Reproducibility and status}
+This paper accompanies the branch \texttt{research/academic-transmutation-2026-10-18},
+based on draft PR177 commit \texttt{f309d9104ba480c1999c962af1df7c50f19e1bfe}.
+The original signed source blob is
+\texttt{0cc8510b71d178fc79e8d410a86d8b6014cf9178}.
+The accompanying dossiers supply complete domains, exact scripts, independent
+finite checkers, mutation controls, primary-source comparisons and run receipts.
+Lean 4.14.0 checks the quotient/path fragment, not the analytic or arithmetic
+theorems, not the Python programs and not the whole framework. The finite
+certificates establish statements about their supplied tables. The source
+nonidentification and Gamma estimates are self-contained paper derivations.
+All academic priority claims remain unverified. RH remains open.
+
+\begin{thebibliography}{9}
+\bibitem{rutten} J. J. M. M. Rutten, Universal coalgebra: a theory of systems,
+\emph{Theoretical Computer Science} 249 (2000), 3--80.
+\bibitem{silva} A. Silva, F. Bonchi, M. Bonsangue and J. Rutten,
+Generalizing determinization from automata to coalgebras,
+\url{https://arxiv.org/abs/1302.1046}.
+\bibitem{beurling} A. Beurling, Analyse de la loi asymptotique de la distribution
+des nombres premiers generalises. I, \emph{Acta Mathematica} 68 (1937), 255--291.
+\bibitem{suzuki} M. Suzuki, Weil's quadratic form via the screw function,
+version 3, \url{https://arxiv.org/abs/2606.09096} (2026).
+\end{thebibliography}
+\end{document}

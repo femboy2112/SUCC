@@ -1,0 +1,63 @@
+{
+  "RH_proved": false,
+  "academic_priority": "UNVERIFIED",
+  "claim_namespace_regression_tests": {
+    "status": "PASS",
+    "total": 12
+  },
+  "earlier_baseline_attempts": {
+    "dependency_errors": "mpmath/sympy missing initially; declared test extra installed",
+    "later_attempts": "No complete summary available; no full-baseline pass claimed"
+  },
+  "focused_new_tests": {
+    "status": "PASS",
+    "total": 62
+  },
+  "full_suite": {
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m unittest discover -s tests -p 'test_*.py' -v",
+    "exit_code": 0,
+    "log": "full-suite.log.gz",
+    "result": "PASS",
+    "seconds": 430.45,
+    "status": "COMPLETED",
+    "tests": 5356,
+    "uncompressed_log_sha256": "cd6773b4d29a33624398adadee395346664089b7f4e56d69002898871f8fad1b"
+  },
+  "inherited_NoGhost_declarations": 12,
+  "main_commit": "610efacf02556e1c5922bc5d4e87d0087f19b446",
+  "new_lean_declarations": 6,
+  "new_lean_false_controls_rejected": 3,
+  "original_Gamma_paired_J24": "PASS; SIGN AMBIGUOUS",
+  "original_S4_sign": "OPEN",
+  "paper_pdf": {
+    "compiled_twice": true,
+    "pages": 6,
+    "visually_reviewed": true
+  },
+  "parent_commit": "f309d9104ba480c1999c962af1df7c50f19e1bfe",
+  "provenance": {
+    "byte_identical_research_archives": 17,
+    "establishes_mathematical_truth": false,
+    "items": 72,
+    "mechanical_namespace_migrations": 55,
+    "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "status": "SOURCE_PROVENANCE_VERIFIED"
+  },
+  "python": "3.12.14",
+  "remote_CI": "NOT_YET_RUN; consult draft PR for live status",
+  "required_observer_probe": "PASS",
+  "required_ordinal_probe": "PASS",
+  "schema_version": 1,
+  "sha256": {
+    "formal/FutureSafeForgetting.lean": "986609101f0efafdf56453edc6da4919971ad00f34d4d76b417ecb234cd087f6",
+    "observational_succ/arithmetic_source_minimality.py": "0d29702bf05673a2557bec48e1cbd8433e0306fca984939b971d84db9b2c8881",
+    "observational_succ/future_safe_quotient.py": "dcec2acc73e16e0bc21a7a32273672c1092300c5872f6ee3d65975b5c806f070",
+    "observational_succ/gamma_tail_resolvent_refinement.py": "e063278643c93be3ea0fac90b9ca00047bb2769e1ef47c098676a9d5c88c20ed",
+    "observational_succ/lawful_history_gluing.py": "bc263eaee4a393646a020006deaf43bff6e51a1150112dad5d70ec8f032d0ca5",
+    "research/2026-10-18/ACADEMIC_TRANSMUTATION_FOUNDATIONS.pdf": "141966ad9265f0b6daa3690e37a59bf348553c07061ac42b8f3cab601bb10ab7",
+    "research/2026-10-18/ACADEMIC_TRANSMUTATION_FOUNDATIONS.tex": "af45d7f568cfff2332aa10193fed44ff78f557751197d3bfc327b8ba8fbb751a",
+    "scripts/academic_transmutation_probe.py": "f030f979d2f76dfba82cca046a11d0005097e15ced8af82cf8fc7135eecc98aa",
+    "scripts/check_academic_certificate.py": "37333d068834b8502385ddbdf38279c0e775705b331a23f2f150b46600f674ae",
+    "scripts/gamma_tail_resolvent_refinement_probe.py": "c0d2d768d42c9010ce9a719a2fd81b78d5afca5ddee8b54d0b0c2854450cb184"
+  }
+}
