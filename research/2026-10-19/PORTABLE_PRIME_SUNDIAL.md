@@ -15,9 +15,9 @@ provenance of the arithmetic source.
 
 The central object is one integer
 
-[
+\[
 D=ub-va.
-]
+\]
 
 This **same** number determines the direction and size of the ratio's real
 diagonal drift and bounds every numerator/denominator cancellation in that
@@ -32,29 +32,29 @@ local-to-global interfaces with positive and negative certificates.
 
 Let `a,b,u,v` be **positive integers** and `k,l in N`. Define
 
-[
-A_k=a+ku,qquad B_l=b+lv,qquad F(k,l)=rac{A_k}{B_l}.
-]
+\[
+A_k=a+ku,\q\quad B_l=b+lv,\q\quad F(k,l)=\frac{A_k}{B_l}.
+\]
 
 The original source frame is the typed quadruple `(a,b;u,v)`, not the reduced
 rational `a/b`. The two actions
 
-[
-S_A:(k,l)mapsto(k+1,l),qquad
-S_B:(k,l)mapsto(k,l+1)
-]
+\[
+S_A:(k,l)\mapsto(k+1,l),\q\quad
+S_B:(k,l)\mapsto(k,l+1)
+\]
 
 **commute as actions** on the independent carrier `N^2`. The report
 `F(k,l)` nevertheless couples them:
 
-[
-egin{aligned}
-Delta_A F(k,l)&=rac{u}{B_l},\\
-Delta_B F(k,l)&=-rac{v A_k}{B_l(B_l+v)},\\
-oxed{Delta_ADelta_BF(k,l)}
-&=oxed{-rac{uv}{B_l(B_l+v)}}.
-end{aligned}
-]
+\[
+\begin{aligned}
+\Delta_A F(k,l)&=\frac{u}{B_l},\\
+\Delta_B F(k,l)&=-\frac{v A_k}{B_l(B_l+v)},\\
+\boxed{\Delta_A\Delta_BF(k,l)}
+&=\boxed{-\frac{uv}{B_l(B_l+v)}}.
+\end{aligned}
+\]
 
 No noncommutative source operation or quantum effect is implied. The mixed
 difference is just the discrete response to two commuting operations after
@@ -72,21 +72,21 @@ There are four distinct levels:
 
 Define the oriented cross-difference
 
-[
+\[
 D(k,l)=uB_l-vA_k.
-]
+\]
 
 **PS-01 (CLASSICAL / PROVED ELEMENTARY).** For all `k,l in N`,
 
-[
-oxed{D(k,l)=D_0+uv(l-k)},qquad D_0=ub-va.
-]
+\[
+\boxed{D(k,l)=D_0+uv(l-k)},\q\quad D_0=ub-va.
+\]
 
 Consequently on the diagonal `(k,l)=(n,n)`,
 
-[
-oxed{D(n,n)=D_0}quad	ext{for every }nge0.
-]
+\[
+\boxed{D(n,n)=D_0}\quad\text{for every }n\ge0.
+\]
 
 *Proof.* Expand `u(b+lv)-v(a+ku)`. The mixed `uvn` terms cancel
 along the diagonal. Nothing infinite is assumed.
@@ -95,11 +95,11 @@ along the diagonal. Nothing infinite is assumed.
 
 Write `F_n=F(n,n)`, `B_n=b+nv`. Then
 
-[
-oxed{F_{n+1}-F_n=rac{D_0}{B_n(B_n+v)}},
-qquad
-oxed{F_n-rac uv=-rac{D_0}{vB_n}}.
-]
+\[
+\boxed{F_{n+1}-F_n=\frac{D_0}{B_n(B_n+v)}},
+\q\quad
+\boxed{F_n-\frac uv=-\frac{D_0}{vB_n}}.
+\]
 
 Thus if `D_0>0`, the pointer increases strictly toward `u/v`; if
 `D_0<0`, it decreases strictly toward `u/v`; if `D_0=0`, it
@@ -110,18 +110,18 @@ For `D_0 != 0` convergence is `O(1/n)`.
 
 For every `n`,
 
-[
-oxed{g_n:=gcd(a+nu,b+nv)mid D_0}.
-]
+\[
+\boxed{g_n:=\gcd(a+nu,b+nv)\mid D_0}.
+\]
 
 *Proof.* `g_n` divides both integers; it therefore divides their
 integer linear combination `uB_n-vA_n=D_0`.
 
 When `D_0!=0`, `g_n<=|D_0|`, and for each prime `p`,
 
-[
+\[
 v_p(g_n)le v_p(D_0).
-]
+\]
 
 This is a **one-way bound**. A prime dividing `D_0` need not cancel,
 because the step units can be noninvertible at that prime.
@@ -131,9 +131,9 @@ If `D_0=0`, put `g=gcd(u,v)`, `u=g u'`, `v=g v'`,
 `gcd(u',v')=1`. The equality `ub=va` forces a unique positive
 integer `t` such that `a=t u'`, `b=t v'`. Hence
 
-[
-oxed{gcd(a+nu,b+nv)=t+ng}.
-]
+\[
+\boxed{\gcd(a+nu,b+nv)=t+ng}.
+\]
 
 The ratio is stationary, yet the common factor grows linearly.
 This is the decisive counterexample to asserting any universal finite
@@ -148,9 +148,9 @@ Fix a genuine prime `p`, depth `r>=1`, and `M=p^r`.
 
 We need the exact congruence
 
-[
-a+kuequiv0pmod M.
-]
+\[
+a+ku\equiv0\pmod M.
+\]
 
 Put `t=min(r,v_p(u))`. The set of allowed `k` is empty unless
 `p^t|a`; otherwise it is precisely **one residue class modulo**
@@ -160,9 +160,9 @@ The same theorem applies to `b+lv`.
 **PS-05 (CLASSICAL / PROVED ELEMENTARY — partial nonunit clock).**
 Along an offset diagonal `l=k+d`, solve
 
-[
-a+kuequiv b+(k+d)vequiv0pmod{p^r}.
-]
+\[
+a+ku\equiv b+(k+d)v\equiv0\pmod{p^r}.
+\]
 
 Each arm contributes one residue class or none; the intersection is
 nonempty exactly when those classes agree modulo their smaller period.
@@ -184,16 +184,16 @@ numerator solution at `p=2`.
 If `p\nmid uv`, both step units are invertible modulo `p^r).
 There are unique zero-times
 
-[
-k_p=-a,u^{-1},qquad l_p=-b,v^{-1}pmod{p^r}.
-]
+\[
+k_p=-a,u^{-1},\q\quad l_p=-b,v^{-1}\pmod{p^r}.
+\]
 
 Define the **relative sundial phase**
 
-[
-oxed{delta_{p,r}=l_p-k_p
-equiv-rac{D_0}{uv}pmod{p^r}}.
-]
+\[
+\boxed{\delta_{p,r}=l_p-k_p
+\equiv-\frac{D_0}{uv}\pmod{p^r}}.
+\]
 
 The division means multiplication by an actual unit inverse in the
 residue ring. It is **not defined by this formula** if `p|uv`.
@@ -202,11 +202,11 @@ residue ring. It is **not defined by this formula** if `p|uv`.
 
 For `p\nmid uv`,
 
-[
-exists n: p^rmid A_n, p^rmid B_n
-quadLongleftrightarrowquad
-oxed{p^rmid D_0}.
-]
+\[
+exists n: p^r\mid A_n, p^r\mid B_n
+\quad\Longleftrightarrow\quad
+\boxed{p^r\mid D_0}.
+\]
 
 In that case the successful time is exactly
 `n=-a u^{-1} mod p^r` (one residue class).
@@ -221,24 +221,24 @@ and assume `gcd(uv,W)=1`.
 Each local dial has `delta_i=-D_0(uv)^{-1} mod p_i^{r_i}`.
 The Chinese remainder theorem encodes the readings into one clock:
 
-[
-oxed{
-delta_W=-D_0(uv)^{-1}pmod W,
-quad
-k_W=-a u^{-1}pmod W,
-quad
-l_W=-b v^{-1}pmod W.
+\[
+\boxed{
+\delta_W=-D_0(uv)^{-1}\pmod W,
+\quad
+k_W=-a u^{-1}\pmod W,
+\quad
+l_W=-b v^{-1}\pmod W.
 }
-]
+\]
 
 **PS-07 (CLASSICAL / PROVED ELEMENTARY — portable arithmetic sundial).**
 The `p_i^{r_i}` local relative phases glue to the unique
 `delta_W=l_W-k_W` modulo `W`. Choosing the nonnegative representatives
 `k=k_W` and `l=k+delta_W` gives an actual pair `(k,l)` for which
 
-[
-oxed{Wmid A_kquad	ext{and}quad Wmid B_l}.
-]
+\[
+\boxed{W\mid A_k\quad\text{and}\quad W\mid B_l}.
+\]
 
 The requirement `l-kequivdelta_W mod W` is source-compatible.
 The original diagonal `l=k` is generally **not** compatible with it.
@@ -246,10 +246,10 @@ The original diagonal `l=k` is generally **not** compatible with it.
 With `(a,b;u,v)=(1,2;1,1)`, a factorial-style wheel
 `W=2^3cdot3cdot5=120` yields
 
-[
-delta_W=119,quad k_W=119,quad l_W=118,quad
+\[
+\delta_W=119,\quad k_W=119,\quad l_W=118,\quad
 (k,l)=(119,238).
-]
+\]
 
 The actual arms are `A_{119}=120`, `B_{238}=240`.
 The ratio at the original `(0,0)` was `1/2`, and no prime
@@ -278,9 +278,9 @@ a prime with `uv`).
 
 There exists an explicit nonnegative diagonal time `n` for which
 
-[
-oxed{Mmid gcd(A_n,B_n)}.
-]
+\[
+\boxed{M\mid \gcd(A_n,B_n)}.
+\]
 
 *Proof.* Because `gcd(u,M)=1`, choose
 `n=-a u^{-1} mod M` (or `n=0` if `M=1`).
@@ -303,15 +303,15 @@ Define `r_a=rad(a)`, `t_a=ris(a)=a/r_a`, and likewise
 
 Then
 
-[
-A_k=r_a(t_a+k),qquad B_l=r_b(t_b+l),
-]
+\[
+A_k=r_a(t_a+k),\q\quad B_l=r_b(t_b+l),
+\]
 
 and the conserved diagonal determinant is
 
-[
-oxed{D_0=r_ar_b(t_b-t_a)}.
-]
+\[
+\boxed{D_0=r_ar_b(t_b-t_a)}.
+\]
 
 This is the earlier proposed RIS-coordinate time, but the
 original RAD units are only a **frame**. They are not necessarily
@@ -319,19 +319,19 @@ the RADs of the later integer states.
 
 Define the exact prime-birth factor
 
-[
-J_r(m)=prod_{substack{pmid m\\p
-mid r}}p.
-]
+\[
+J_r(m)=\prod_{substack{p\mid m\\p
+\mid r}}p.
+\]
 
 **PS-09 (CLASSICAL / PROVED ELEMENTARY — RAD/RIS update).**
 
-[
-oxed{
-rad(A_k)=r_aJ_{r_a}(t_a+k),quad
-ris(A_k)=rac{t_a+k}{J_{r_a}(t_a+k)}
+\[
+\boxed{
+rad(A_k)=r_aJ_{r_a}(t_a+k),\quad
+ris(A_k)=\frac{t_a+k}{J_{r_a}(t_a+k)}
 }
-]
+\]
 
 and analogously for `B_l`. Proof: the prime support of a product
 `rm` is the union of the supports of `r` and `m`, and
@@ -354,7 +354,7 @@ own explicitly typed frame change.
 1. **Homogeneous rescaling** `(a,b;u,v) -> (ma,mb;mu,mv)`
    for `m>0` preserves **every rational report** `F(k,l)`
    and the rational clock-origin difference
-   `alpha-eta=a/u-b/v`; it multiplies `D_0` by `m^2`
+   `alpha-\beta=a/u-b/v`; it multiplies `D_0` by `m^2`
    and every common gcd by `m`.
    It does NOT preserve raw `p`-adic occupation numbers for
    primes dividing `m`. Prime wheel phases remain identical when
