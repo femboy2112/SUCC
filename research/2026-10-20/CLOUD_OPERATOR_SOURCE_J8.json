@@ -1,0 +1,155 @@
+{
+  "J": 8,
+  "M": 80,
+  "P": 18,
+  "RH_proved": false,
+  "all_gain_lowers_positive_definite": true,
+  "authority": "paper theorem with exact rational source instance; no formal kernel proof",
+  "baseline_main": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+  "baseline_recomputed": true,
+  "execution": {
+    "argv": [
+      "scripts/cloud_operator_source_probe.py",
+      "--output",
+      "research/2026-10-20/CLOUD_OPERATOR_SOURCE_J8.json"
+    ],
+    "elapsed_seconds": 44.79386643800035,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "first_window_sign_certified": false,
+  "independence": "new constrained variational proof and separate polynomial pairing implementation; inherited source/trials/errors",
+  "program": "CLOUD_OPERATOR_CONSTRAINED_PRIMITIVE_INVERSE",
+  "sectors": {
+    "even_derivative": {
+      "additional_gain_lower": [
+        [
+          "21236511115671/1000000000000000000",
+          "14290598047569/1000000000000000000"
+        ],
+        [
+          "14290598047569/1000000000000000000",
+          "9616958211169/1000000000000000000"
+        ]
+      ],
+      "constraint_norms": [
+        "1/3",
+        "1/7"
+      ],
+      "fitted_high_coefficients": [
+        "75/1024",
+        "131/2048"
+      ],
+      "gain_positive_definite": true,
+      "kappa": "153/500",
+      "moment_shift_error_upper": [
+        [
+          "52113/500000000000000000",
+          "76631/1000000000000000000"
+        ],
+        [
+          "499953/1000000000000000000",
+          "183791/500000000000000000"
+        ]
+      ],
+      "new_lower": [
+        [
+          "-2474240976116877/200000000000000000",
+          "32826579050287/500000000000000000"
+        ],
+        [
+          "32826579050287/500000000000000000",
+          "-12080947265855333/1000000000000000000"
+        ]
+      ],
+      "new_lower_negative_definite": true,
+      "new_lower_positive_semidefinite": false,
+      "old_lower": [
+        [
+          "-1549055173962507/125000000000000000",
+          "10272512010601/200000000000000000"
+        ],
+        [
+          "10272512010601/200000000000000000",
+          "-6045282112033251/500000000000000000"
+        ]
+      ],
+      "primitive_parity": "odd",
+      "theta": "1/1024"
+    },
+    "odd_derivative": {
+      "additional_gain_lower": [
+        [
+          "173199847757/50000000000000000",
+          "-167747527079/1000000000000000000"
+        ],
+        [
+          "-167747527079/1000000000000000000",
+          "4033066963/62500000000000000"
+        ]
+      ],
+      "constraint_norms": [
+        "1",
+        "1/5"
+      ],
+      "fitted_high_coefficients": [
+        "111/2048",
+        "107/4096"
+      ],
+      "gain_positive_definite": true,
+      "kappa": "63/500",
+      "moment_shift_error_upper": [
+        [
+          "102031/1000000000000000000",
+          "8659/125000000000000000"
+        ],
+        [
+          "54341/200000000000000000",
+          "46117/250000000000000000"
+        ]
+      ],
+      "new_lower": [
+        [
+          "-27290780636078761/1000000000000000000",
+          "54125598027247/500000000000000000"
+        ],
+        [
+          "54125598027247/500000000000000000",
+          "-3368314829192429/125000000000000000"
+        ]
+      ],
+      "new_lower_negative_definite": true,
+      "new_lower_positive_semidefinite": false,
+      "old_lower": [
+        [
+          "-27294244633033901/1000000000000000000",
+          "108418943581573/1000000000000000000"
+        ],
+        [
+          "108418943581573/1000000000000000000",
+          "-673664579065271/25000000000000000"
+        ]
+      ],
+      "primitive_parity": "even",
+      "theta": "1/1024"
+    }
+  },
+  "sha256": {
+    "observational_succ/cloud_operator_transport.py": "6d258e4b5a3acd446a66a46a9fec4f95da2243ba15dabd78e077deacadb19949",
+    "observational_succ/full_prime_resolvent.py": "9514a7e172e032f95bba39d2ceb1ab09e6fb4e8712df3c9382c307aedf27de7b",
+    "observational_succ/original_continuum_residual.py": "a9b7b6087280a3f6a2feecd7d51d2c3ee79209ab93918d16e8f16a422ba9063e",
+    "observational_succ/source_weil_hierarchy.py": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+    "scripts/cloud_operator_source_probe.py": "2df50ea03336f8ef00f047e44afd9a773170a459d22e4e52ac33ffc271ccdb8c"
+  },
+  "source_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "source_code_introduction": "b0cef75f47de29b1326b351df35b9e5423f2ed4f",
+  "source_import_manifest_member": false,
+  "source_parameters": {
+    "b": "8664339757/12500000000",
+    "contact": "2686091709613/500000000000",
+    "db": "5469058276787854183/100000000000000000000000000000000",
+    "dc": "62889360705791873207/100000000000000000000000000000000",
+    "dw": "13679792847543090881/50000000000000000000000000000000",
+    "w": "245064535867/500000000000"
+  },
+  "source_shared_with_baseline": true
+}
