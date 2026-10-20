@@ -383,6 +383,106 @@ source/basis witness maps are **known and checked**, not that one can
 freely throw away information or that every rational representation
 is interchangeable.
 
+## 7A. Three-shadow theorem: a portable sundial needs three rational probes
+
+For each full source frame, consider the *three canonical mathematical
+measurements*:
+
+\[
+q_{00}=F(0,0)=\frac ab,\qquad
+q_{10}=F(1,0)=\frac{a+u}{b},\qquad
+q_{01}=F(0,1)=\frac{a}{b+v}.
+\]
+
+**PS-11 (CLASSICAL / PROVED ELEMENTARY — finite projective reconstruction).**
+Assuming positive integer a,b,u,v, define
+
+\[
+x=q_{00},\qquad
+y=q_{10}-q_{00},\qquad
+z=\frac{q_{00}}{q_{01}}-1.
+\]
+
+Then
+
+\[
+\boxed{x=\frac ab,\quad y=\frac ub,\quad z=\frac vb},
+\qquad
+\boxed{F(k,l)=\frac{x+ky}{1+lz}}\quad(k,l\ge0).
+\]
+
+*Proof.* Direct substitution: q10−q00=u/b, and
+q00/q01−1=(b+v)/b−1=v/b; divide both A_k and B_l by b.
+
+**Corollary (exact indistinguishability classification).**
+Two positive integer sundial frames have identical F(k,l) for every
+(k,l) in N² **if and only if** all their four coordinates are
+proportional by the *same positive rational scale*. Equality of these
+three canonical rational probes is both necessary and sufficient for
+the whole infinite two-dimensional report family.
+
+*Proof.* Sufficiency is the displayed formula. Necessity follows from
+equality at (0,0),(1,0),(0,1), which forces equality of the normalized
+triples (a/b,u/b,v/b). Put m=b'/b to obtain
+(a',b',u',v')=m(a,b,u,v).
+
+This is a **finite mathematical model-identification theorem**, not a
+claim of observing infinitely many physical future events.
+
+**Canonical minimal integer representative.** From exact positive
+Fractions x,y,z, choose b equal to the least common multiple of their
+three denominators. Then a=bx,u=by,v=bz are integers. The resulting
+frame is primitive as a four-tuple: a common factor dividing all four
+would permit a smaller positive b, contradicting its minimality.
+This construction is a projective *representative*, **not** evidence
+of the original integer scale. It is implemented by
+\`reconstruct_three_shadows\`, with floats and invalid data rejected.
+
+**Sharpness for the three canonical probes.** Every proper two-element
+subset of the specified triple can fail to distinguish source frames:
+
+| Observed probes | Base frame | Different frame | Hidden change |
+|---|---|---|---|
+| (0,0),(1,0) | (1,2;1,1) | (1,2;1,2) | denominator unit |
+| (0,0),(0,1) | (1,2;1,1) | (1,2;2,1) | numerator unit |
+| (1,0),(0,1) | (1,2;1,1) | (2,3;1,3) | initial ratio |
+
+In each row the observed two ratios agree exactly but the full
+ratio dynamics differ. This proves **minimality for that canonical
+set**, not a universal minimum over arbitrary adaptive probes or
+other mathematical observation languages.
+
+**Recoverable phase, nonrecoverable prime occupation.**
+These three probes determine the projective clock origin difference
+
+\[
+\alpha-\beta=\frac au-\frac bv=\frac{x}{y}-\frac1z.
+\]
+
+When p does not divide the units, this rational phase has a valid
+mod-p^r interpretation. But a homogeneous scale can multiply every
+integer source arm by p while preserving every rational ratio report,
+changing the original p-adic occupation counts. Thus the three
+shadows do NOT authenticate the true scale or prime valuation of the
+original source.
+
+**Counterfactual-access firewall.** The construction assumes the
+mathematical observer can compare *three reports from the same
+underlying frame*, including independent one-step paths. A physical
+source which cannot be reset, duplicated, or legitimately queried
+along both forks may not provide those measurements. No amount of
+algebra on formal counterfactual reports grants such access.
+Compare SUCC's source-relative proof-access and EODCS causal
+descent contracts.
+
+**PS-12 (CLASSICAL/TESTED — observation insufficiency).**
+The ratio q00 alone and each proper subset of the canonical three
+readings fail to identify the full frame; original *absolute integer
+scale* and physical source identity remain inaccessible even from
+all rational reports without additional source data. The exact
+finite adversarial tests cover all three omitted-probe directions
+and a full homothetic gauge.
+
 ## 8. Steelman → crucible → verdict
 
 | ID | Statement | Status | Hostile control / next falsifier |
