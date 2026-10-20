@@ -68,5 +68,26 @@ class TestPrimePowerBookkeeping(unittest.TestCase):
         self.assertAlmostEqual(r_pp + r_mix, R_Lambda(20, lam), places=9)
 
 
+class TestBSG3ConvolutionDistinction(unittest.TestCase):
+    """BS-G3 correction regression: R_Lambda is the ADDITIVE convolution, which
+    is NOT the (zeta'/zeta)^2 Dirichlet-series (multiplicative) convolution.
+    Smallest exact witness N=5."""
+
+    def test_R_Lambda_is_additive_not_dirichlet(self):
+        import sympy as sp
+        from observational_succ.arithmetic_interactions import (
+            additive_convolution, dirichlet_convolution, von_mangoldt,
+            illegal_interchange_witness,
+        )
+        lam = von_mangoldt_sieve(5)
+        add5 = additive_convolution(von_mangoldt, von_mangoldt, 5)
+        self.assertAlmostEqual(R_Lambda(5, lam), float(add5), places=9)
+        self.assertEqual(sp.simplify(add5 - 2*sp.log(2)*sp.log(3)), 0)
+        self.assertEqual(
+            sp.simplify(dirichlet_convolution(von_mangoldt, von_mangoldt, 5)), 0)
+        self.assertNotAlmostEqual(R_Lambda(5, lam), 0.0, places=6)
+        self.assertEqual(illegal_interchange_witness(16).n, 5)
+
+
 if __name__ == "__main__":
     unittest.main()

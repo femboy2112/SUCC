@@ -1,0 +1,251 @@
+{
+  "x3_plus_1_tight": {
+    "degrees": {
+      "A": 3,
+      "B": 0,
+      "C": 3
+    },
+    "deg_rad_ABC": 4,
+    "max_deg": 3,
+    "bound_rhs": 3,
+    "W_is_zero": false,
+    "wronskian_forms_agree": true,
+    "divisibility_holds": true,
+    "bound_holds": true,
+    "hypotheses_ok": true,
+    "verified": true,
+    "note": "",
+    "steps": [
+      [
+        "A,B,C nonzero",
+        true,
+        ""
+      ],
+      [
+        "A + B = C",
+        true,
+        ""
+      ],
+      [
+        "not all constant",
+        true,
+        ""
+      ],
+      [
+        "pairwise coprime",
+        true,
+        ""
+      ],
+      [
+        "W(A,B)=W(A,C)=-W(B,C)",
+        true,
+        "three Wronskian forms agree up to sign"
+      ],
+      [
+        "W != 0 (needs char 0 / char>deg)",
+        true,
+        "W=0 is exactly the char-p / linear-dependence collapse"
+      ],
+      [
+        "(ABC)/rad(ABC) | W",
+        true,
+        "deg M=2, deg W=2"
+      ],
+      [
+        "max deg <= deg rad(ABC) - 1",
+        true,
+        "max_deg=3, deg_rad-1=3"
+      ]
+    ]
+  },
+  "davenport_tight": {
+    "degrees": {
+      "A": 2,
+      "B": 1,
+      "C": 2
+    },
+    "deg_rad_ABC": 3,
+    "max_deg": 2,
+    "bound_rhs": 2,
+    "W_is_zero": false,
+    "wronskian_forms_agree": true,
+    "divisibility_holds": true,
+    "bound_holds": true,
+    "hypotheses_ok": true,
+    "verified": true,
+    "note": "",
+    "steps": [
+      [
+        "A,B,C nonzero",
+        true,
+        ""
+      ],
+      [
+        "A + B = C",
+        true,
+        ""
+      ],
+      [
+        "not all constant",
+        true,
+        ""
+      ],
+      [
+        "pairwise coprime",
+        true,
+        ""
+      ],
+      [
+        "W(A,B)=W(A,C)=-W(B,C)",
+        true,
+        "three Wronskian forms agree up to sign"
+      ],
+      [
+        "W != 0 (needs char 0 / char>deg)",
+        true,
+        "W=0 is exactly the char-p / linear-dependence collapse"
+      ],
+      [
+        "(ABC)/rad(ABC) | W",
+        true,
+        "deg M=2, deg W=2"
+      ],
+      [
+        "max deg <= deg rad(ABC) - 1",
+        true,
+        "max_deg=2, deg_rad-1=2"
+      ]
+    ]
+  },
+  "strict_two_quadratics": {
+    "degrees": {
+      "A": 2,
+      "B": 2,
+      "C": 2
+    },
+    "deg_rad_ABC": 6,
+    "max_deg": 2,
+    "bound_rhs": 5,
+    "W_is_zero": false,
+    "wronskian_forms_agree": true,
+    "divisibility_holds": true,
+    "bound_holds": true,
+    "hypotheses_ok": true,
+    "verified": true,
+    "note": "",
+    "steps": [
+      [
+        "A,B,C nonzero",
+        true,
+        ""
+      ],
+      [
+        "A + B = C",
+        true,
+        ""
+      ],
+      [
+        "not all constant",
+        true,
+        ""
+      ],
+      [
+        "pairwise coprime",
+        true,
+        ""
+      ],
+      [
+        "W(A,B)=W(A,C)=-W(B,C)",
+        true,
+        "three Wronskian forms agree up to sign"
+      ],
+      [
+        "W != 0 (needs char 0 / char>deg)",
+        true,
+        "W=0 is exactly the char-p / linear-dependence collapse"
+      ],
+      [
+        "(ABC)/rad(ABC) | W",
+        true,
+        "deg M=0, deg W=2"
+      ],
+      [
+        "max deg <= deg rad(ABC) - 1",
+        true,
+        "max_deg=2, deg_rad-1=5"
+      ]
+    ]
+  },
+  "char5_collapse": {
+    "degrees": {
+      "A": 5,
+      "B": 0,
+      "C": 5
+    },
+    "deg_rad_ABC": 0,
+    "max_deg": 5,
+    "bound_rhs": -1,
+    "W_is_zero": true,
+    "wronskian_forms_agree": true,
+    "divisibility_holds": false,
+    "bound_holds": false,
+    "hypotheses_ok": true,
+    "verified": false,
+    "note": "Wronskian vanishes: the proof mechanism has collapsed (characteristic-p freshman's-dream regime or linear dependence). The degree bound is NOT asserted here.",
+    "steps": [
+      [
+        "A,B,C nonzero",
+        true,
+        ""
+      ],
+      [
+        "A + B = C",
+        true,
+        ""
+      ],
+      [
+        "not all constant",
+        true,
+        ""
+      ],
+      [
+        "pairwise coprime",
+        true,
+        ""
+      ],
+      [
+        "W(A,B)=W(A,C)=-W(B,C)",
+        true,
+        "three Wronskian forms agree up to sign"
+      ],
+      [
+        "W != 0 (needs char 0 / char>deg)",
+        false,
+        "W=0 is exactly the char-p / linear-dependence collapse"
+      ],
+      [
+        "(ABC)/rad(ABC) | W",
+        false,
+        "skipped: W=0 or radical undefined"
+      ],
+      [
+        "max deg <= deg rad(ABC) - 1",
+        false,
+        "max_deg=5, deg_rad-1=-1"
+      ]
+    ]
+  },
+  "integer_transfer_obstruction": {
+    "claim_status": "abc for integers is OPEN; no analogue is proved here",
+    "obstruction_1_no_derivation": "Every ring derivation D: Z -> Z is identically zero. D(1)=D(1*1)=2D(1) forces D(1)=0, and additivity forces D(n)=0 for all n. So the Wronskian W = a'b - ab' is identically 0 over Z -- the invariant that carries the whole polynomial proof simply does not exist.",
+    "obstruction_2_no_size_drop": "deg plays the role of the archimedean valuation at infinity, and the polynomial proof crucially uses deg(P') = deg(P) - 1: differentiation drops size by exactly one while respecting Leibniz. There is no operation on Z that reduces log|n| by a bounded amount while obeying a product rule. log|n| is the integer analogue of deg, but nothing plays the role of d/dx.",
+    "obstruction_3_p_derivations_are_local": "Buium p-derivations delta_p (delta_p(x) = (x^p - (something))/p) give an arithmetic differential calculus, but they are p-adic and see one prime at a time; there is no single global object playing the role of the Wronskian whose archimedean size is controlled. The arithmetic derivative n' (p'=1, Leibniz) exists but has no deg-drop property and can grow, so it yields no Mason-Stothers analogue either.",
+    "consequence": "Mason-Stothers is a one-page theorem; integer abc is a famous open problem precisely because the derivation/size-drop mechanism has no faithful archimedean integer counterpart."
+  },
+  "_meta": {
+    "theorem": "Mason-Stothers (polynomial abc)",
+    "status": "CLASSICAL",
+    "two_route_oracle": "380 triples QQ+GF(11): 0 violations, 0 rad-mismatch",
+    "rh_abc": "OPEN"
+  }
+}

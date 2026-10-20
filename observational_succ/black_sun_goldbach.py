@@ -21,13 +21,29 @@ Objects:
       sum_{N<=X} R_Lambda(N) = sum_{n+m<=X} Lambda(n)Lambda(m)
       = sum_{n<=X-2} Lambda(n) psi(X-n)  exactly.
 
-  BS-G3 (classical imports + TESTED MODEL): mean_G(X) = X^2/2 + error with
-      the error a zero-detector at matched exponent: the Dirichlet series of
-      R_Lambda is (zeta'/zeta)^2-type with a double pole at s=1 and double
-      poles at zeros rho; Perron gives mean_G(X) = X^2/2 (1+o(1)) with
-      error O(X^{1+beta+eps}) governed by the zero-free half-width
-      (EXTERNAL CLASSICAL: Landau/Perron).  Numerics corroborate the
-      X^{3/2} heuristic scale under RH.
+  BS-G3 (classical imports + TESTED MODEL; CORRECTED 2026-10-20): mean_G(X) =
+      X^2/2 + error, with the error governed by the nontrivial zeros rho. The
+      mechanism is the EXPLICIT FORMULA for psi inserted into the EXACT additive
+      identity BS-G2: mean_G(X) = sum_{n<=X-2} Lambda(n) psi(X-n); writing
+      psi(x) = x - sum_rho x^rho/rho - ... turns each zero into an error
+      contribution, while the main term x yields X^2/2 (1+o(1)) with error
+      O(X^{1+beta+eps}) set by the zero-free half-width (EXTERNAL CLASSICAL:
+      Landau/Perron via the explicit formula). Numerics corroborate the X^{3/2}
+      heuristic scale under RH.
+
+      FIREWALL (additive vs multiplicative convolution). An EARLIER phrasing of
+      this note -- "the Dirichlet series of R_Lambda is (zeta'/zeta)^2-type" --
+      was MISLEADING (false as literally stated). R_Lambda(N) = (Lambda *+
+      Lambda)(N) is the ADDITIVE convolution; its ordinary Dirichlet series has
+      NO (zeta'/zeta)^2 closed form. (-zeta'/zeta)^2 is instead the Dirichlet
+      series of the MULTIPLICATIVE convolution (Lambda *x Lambda)(N) =
+      sum_{ab=N} Lambda(a)Lambda(b). The two differ; the smallest exact witness
+      is N=5: R_Lambda(5) = (Lambda *+ Lambda)(5) = 2 log2 log3, whereas
+      (Lambda *x Lambda)(5) = [5^-s](-zeta'/zeta)^2 = 0. The conclusion (X^2/2
+      main term, zero-governed error) stands, but via the additive
+      explicit-formula route above, NOT via any Dirichlet series of R_Lambda.
+      Executable receipt: observational_succ.arithmetic_interactions
+      .illegal_interchange_witness (returns N=5).
 
   BS-G4 (PROVED LOCAL, exact bookkeeping): R_Lambda(N) decomposes exactly
       into true-prime-pair mass and prime-power contamination:

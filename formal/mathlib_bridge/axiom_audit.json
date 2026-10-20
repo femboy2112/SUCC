@@ -1,0 +1,19 @@
+{
+  "build_succeeded": true,
+  "toolchain": "leanprover/lean4:v4.14.0",
+  "manifest_rev": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+  "theorems": {
+    "succ_mason_stothers_core": {
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    },
+    "succ_mason_stothers_charZero": {
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    },
+    "control_hW_is_load_bearing": {
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    },
+    "polynomial_fermat": {
+      "axioms": ["propext", "Classical.choice", "Quot.sound"]
+    }
+  }
+}
