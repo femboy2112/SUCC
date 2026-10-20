@@ -47,18 +47,17 @@ Teravainen, Lemma 2.2. The headline findings:
             exponent to any E >= 2 or by deleting any single layer j >= 2.  This
             is a decisive NO-GO for the elementary (diagonal) route.
 
-  ABC-DEC-03  (the machinery boundary; the gap statement IS the result).
-      To pass t = 1/2 one must bound the ADDITIVE correlation
-          I(c) = sum_{a+b=c, (a,b)=1} ris(a)^t ris(b)^t
-      BELOW its diagonal Cauchy-Schwarz value, i.e. exploit cancellation from the
-      constraint a+b=c.  The circle-method HEURISTIC predicts I(c) asymptotic to
-      c (so S_t ~ X^2) for all t < 1, but a rigorous bound requires the Fourier
-      second/fourth-moment exponential-sum bounds (BBLT Prop. 3.1) and the
-      Heath-Brown geometry-of-numbers integer-point count on the linear slice
-      (BBLT Prop. 4.1).  SUCC's Euler-product toolkit supplies NEITHER.  A finite
-      census is consistent with -- but cannot establish -- an X^2 bound for
-      1/2 <= t < 1 (the ratio S_t/X^2 grows slowly even for PROVEN t < 1/2, so
-      the census cannot decide).  The abc conjecture stays OPEN.
+  ABC-DEC-03  (historical diagonal-method boundary, now bypassed).
+      CLOUD-ABC-01 proves S_t(X) <= K_t X^2 for every real X>=2 and 0<=t<2/3;
+      CLOUD-ABC-05 proves the Euler-product mean value in that same range.
+      These reviewed paper proofs use primitive slope separation, a positive
+      divisor expansion and a radical-pair tail bound. They do not require
+      sign-changing cancellation or BBLT's analytic estimates. Thus the former
+      assertion that Fourier machinery is necessary to pass t=1/2 is REFUTED.
+      The diagonal method still stops at t<1/2; its limitation is not a theorem
+      about all methods. The endpoint t=2/3 and the interval 2/3<=t<1 remain
+      OPEN. A finite census proves none of these uniform statements, and the
+      mean-value theorem alone grants no uniform pointwise bound for I(c).
 
 PART V (Proof Forge III -- repair + advance the moment frontier; 2026-10-20).
   ABC-DEC-02q   qualified bounded-exponent statement: E=1 squarefree class has NO
@@ -68,18 +67,20 @@ PART V (Proof Forge III -- repair + advance the moment frontier; 2026-10-20).
                 ``bounded_exponent_local_factor_enclosure``.
   ABC-FM        a four-failure-mode ledger (``failure_mode_ledger``) recording which
                 failures are ESTABLISHED here -- only (a) diagonal/Cauchy-Schwarz and
-                (b) a particular Euler-product majorant -- and which are NOT: (c) an
-                entire proof class, (d) the theorem itself.  Correctness guard
+                (b) a particular Euler-product majorant. The class-wide barrier
+                (c) is REFUTED by CLOUD-ABC-01; theorem failure (d) remains
+                NOT_ESTABLISHED in the unresolved range. Correctness guard
                 against over-claiming a method no-go as a mathematics no-go.
   ABC-COR-01/02/03  a Part-IV residue-box additive-correlation attempt on
                 I_t(c) = sum_{a+b=c,(a,b)=1} ris(a)^t ris(b)^t.  The powerful-part
                 residue decomposition has main term (X^2/2) G(t)^2 with
                 G(t)=sum_{d powerful} ris(d)^t/d finite iff t < 1 (STRICTLY past the
                 diagonal t < 1/2); but the residue-box error bound summed over the
-                majorant is >> X^2 for every t >= 0, so it yields NO rigorous bound.
+                majorant is >> X^2 for every t >= 0, so this particular summation
+                gives no uniform X^2 bound for the untruncated moment.
                 Genuine partial theorem: the bounded-powerful-part truncation bound
-                (explicit G_Q/A_Q/B_Q, all t).  Isolated missing estimate: a
-                power-saving AP integer-point count uniform to modulus q ~ X.
+                (explicit G_Q/A_Q/B_Q, all t). Its summed-error obstruction does
+                not apply to the primitive slope route of CLOUD-ABC-01/05.
 
 EXACTNESS DISCIPLINE (AGENTS.md item 8).  Census/moment objects are integer- or
 Fraction-exact; rational powers are returned as CERTIFIED two-sided rational
@@ -88,14 +89,16 @@ functions whose name ends ``_evidence`` and whose docstring says EVIDENCE; those
 are illustrations, never certificates.
 
 RH PROVED: NO.  No zeta-zero ordinate is used anywhere.  abc stays OPEN;
-no new exceptional-set exponent, no uniform bound past the proven t < 1/2.
+CLOUD-ABC-01/05 establish the global moment bound and mean value for 0<=t<2/3
+(PROVED LOCAL paper proofs, not Lean-verified). No endpoint or integer-abc
+theorem is asserted here.
 """
 from __future__ import annotations
 
 from dataclasses import dataclass
 from enum import Enum
 from fractions import Fraction
-from math import gcd, lcm
+from math import gcd, isqrt, lcm
 from typing import Dict, List, Tuple
 
 from .abc_clock_families import ABCClockError, prime, prime_factors, radical, ris
@@ -391,8 +394,10 @@ def additive_vs_diagonal_evidence(c: int, t: float) -> Dict[str, float]:
 
     The diagonal bound I(c) <= D(c) is what forces 2t < 1.  The circle-method
     heuristic predicts the TRUE I(c) is order c (much smaller than D(c) once the
-    moment is heavy), i.e. the diagonal bound is lossy and the real threshold is
-    t < 1.  Returns ratios as floats for illustration only.
+    moment is heavy). The suggested threshold t<1 is an unproved heuristic,
+    not the reviewed range 0<=t<2/3 for the GLOBAL moment and mean value
+    (CLOUD-ABC-01/05). Those theorems do not prove a pointwise asymptotic for
+    every c. Returns ratios as floats for illustration only.
     """
     I = 0.0
     for a in range(1, c):
@@ -408,11 +413,10 @@ def moment_ratio_growth_evidence(t: float, Xs: Tuple[int, ...] = (64, 128, 256, 
                                  ) -> Tuple[Dict[str, float], ...]:
     """EVIDENCE (float, NOT a certificate): the ratio S_t(X)/X^2 across X.
 
-    Illustrates ABC-DEC-03's honesty clause: the ratio drifts upward even for
-    PROVEN t < 1/2 (it approaches its finite limiting constant from below), so a
-    finite census CANNOT distinguish a bounded X^2 ratio from a slowly growing
-    one.  Hence the census is consistent with -- never a proof of -- an X^2 bound
-    for 1/2 <= t < 1.
+    Finite ratios cannot distinguish boundedness from slow growth. The complete
+    paper proofs CLOUD-ABC-01/05, not this census, establish boundedness and a
+    limit for 0<=t<2/3. Neither monotonicity nor approach from below is asserted.
+    The endpoint and the interval 2/3<=t<1 remain open.
     """
     rows = []
     for X in Xs:
@@ -428,24 +432,35 @@ def moment_ratio_growth_evidence(t: float, Xs: Tuple[int, ...] = (64, 128, 256, 
 
 
 def machinery_boundary() -> Dict[str, object]:
-    """ABC-DEC-03: what is elementary here vs what needs serious machinery.
+    """ABC-DEC-03: current theorem frontier versus historical method boundaries.
 
-    Returns a structured ledger so the division is explicit and testable.
+    CLOUD-ABC-01/05 have paper proofs; this ledger is descriptive metadata,
+    not a formal-kernel receipt or a proof-authority interface.
     """
     return {
         "elementary_in_SUCC": (
             "ABC-DEC-01 exact layer anatomy (algebraic identity); "
             "ABC-DEC-02 per-layer exponents (j-1)theta-j and the uniform "
             "threshold theta<1; the Cauchy-Schwarz ceiling t<1/2; the "
-            "bounded-exponent truncation M_E(theta) <= M(theta)."
+            "bounded-exponent truncation M_E(theta) <= M(theta); "
+            "CLOUD-ABC-01/05 primitive slope separation, global quadratic "
+            "moment bound and Euler-product mean value for 0<=t<2/3."
         ),
         "needs_machinery_not_in_SUCC": (
-            "passing t=1/2 requires cancellation in I(c)=sum_{a+b=c} ris^t ris^t "
-            "below the diagonal: BBLT Prop. 3.1 Fourier 2nd/4th-moment "
-            "exponential-sum bounds, and BBLT Prop. 4.1 Heath-Brown "
-            "geometry-of-numbers integer-point counts on the linear slice."
+            "The endpoint t=2/3 and extension through 2/3<=t<1 remain open. "
+            "BBLT Fourier and geometry-of-numbers methods are possible separate "
+            "inputs on their stated domains, not necessary dependencies of the "
+            "reviewed CLOUD-ABC-01/05 proof or imported bounds for this moment."
         ),
-        "beats_half_rigorously": False,
+        "beats_half_rigorously": True,
+        "diagonal_method_beats_half": False,
+        "proved_moment_range": "0<=t<2/3, all real X>=2; constant depends only on t",
+        "proved_moment_upper_endpoint": Fraction(2, 3),
+        "endpoint_included": False,
+        "reviewed_theorems": ("CLOUD-ABC-01", "CLOUD-ABC-05"),
+        "moment_status": "PROVED LOCAL (paper proof; not Lean-verified)",
+        "remaining_open_moment_range": "2/3<=t<1",
+        "fourier_necessity_claim_status": "REFUTED (CLOUD-ABC-01)",
         "heuristic_true_threshold": Fraction(1),   # circle method predicts t<1
         "abc_status": "OPEN",
     }
@@ -613,6 +628,7 @@ def qualified_bounded_exponent_statement() -> Dict[str, object]:
 class FailureStatus(Enum):
     ESTABLISHED = "ESTABLISHED"
     NOT_ESTABLISHED = "NOT_ESTABLISHED"
+    REFUTED = "REFUTED"
 
 
 @dataclass(frozen=True)
@@ -630,8 +646,9 @@ class FailureMode:
 def failure_mode_ledger() -> Tuple[FailureMode, ...]:
     """ABC-FM.  Distinguish (a) a strategy failing, (b) a particular majorant
     failing, (c) an entire proof CLASS failing, (d) the THEOREM itself failing.
-    ONLY (a) and (b) are established here.  Marking (c)/(d) proved would upgrade a
-    method no-go into a mathematics no-go -- forbidden (AGENTS.md items 4, 5)."""
+    ONLY (a) and (b) are established. The class-wide barrier (c) is now REFUTED
+    by CLOUD-ABC-01; a theorem failure (d) in the remaining range is unproved.
+    A method no-go cannot be upgraded into a mathematics no-go."""
     return (
         FailureMode(
             tag="a",
@@ -656,38 +673,42 @@ def failure_mode_ledger() -> Tuple[FailureMode, ...]:
         FailureMode(
             tag="c",
             name="entire proof CLASS",
-            description=("that NO elementary / multiplicative / sieve-free approach "
-                         "can bound S_t for 1/2 <= t < 1.  NOT shown: only two "
-                         "specific strategies (a, b) are ruled out; the residue-box "
-                         "main term (ABC-COR-01) already reaches t < 1, so the class "
-                         "is NOT excluded"),
-            status=FailureStatus.NOT_ESTABLISHED,
-            receipt=("no proof of class-wide impossibility exists in this repo; "
-                     "ABC-COR-01 main term reaches t < 1"),
+            description=("the universal barrier claiming no elementary sieve-free "
+                         "approach can give a quadratic moment bound at ANY "
+                         "t in [1/2,1). REFUTED: primitive slope separation and "
+                         "positive divisor/Rankin bounds prove it for every "
+                         "1/2<=t<2/3; no sign-changing cancellation is required"),
+            status=FailureStatus.REFUTED,
+            receipt=("CLOUD-ABC-01, CLOUD_ABC_CORRELATIONS.md Sections 2--6; "
+                     "CLOUD-ABC-05 also supplies the mean value"),
         ),
         FailureMode(
             tag="d",
             name="the desired THEOREM itself",
-            description=("that S_t(X)/X^2 is actually unbounded for some 1/2 <= t < 1 "
-                         "(or that abc is false).  NOT shown -- the OPPOSITE is "
-                         "expected: the circle-method heuristic predicts an X^2 "
-                         "average bound up to t < 1, and abc is believed TRUE"),
+            description=("that S_t(X)/X^2 is actually unbounded for some "
+                         "2/3<=t<1. NOT_ESTABLISHED: the remaining endpoint/range "
+                         "is open. The former possibility 1/2<=t<2/3 is excluded "
+                         "by CLOUD-ABC-01. Integer abc is a separate open question"),
             status=FailureStatus.NOT_ESTABLISHED,
-            receipt=("ABC-TMB-03 dyadic tower shows only NO uniform POINTWISE bound; "
-                     "mass is o(X^2); machinery_boundary()['heuristic_true_threshold']"
-                     " = 1"),
+            receipt=("CLOUD-ABC-01/05 cover 0<=t<2/3 only; "
+                     "ABC-TMB-03's pointwise tower is not a refutation of a "
+                     "global quadratic moment bound"),
         ),
     )
 
 
 def failure_mode_overclaim_guard() -> Dict[str, object]:
-    """Executable guard: exactly the first two modes are ESTABLISHED; (c) and (d)
-    must stay NOT_ESTABLISHED.  A regression that flips (c) or (d) is an overclaim."""
+    """Status guard: (a,b) ESTABLISHED, (c) REFUTED, (d) NOT_ESTABLISHED.
+
+    This checks the descriptive taxonomy, not the referenced paper proofs.
+    """
     led = failure_mode_ledger()
     est = tuple(m.tag for m in led if m.status is FailureStatus.ESTABLISHED)
     not_est = tuple(m.tag for m in led if m.status is FailureStatus.NOT_ESTABLISHED)
+    refuted = tuple(m.tag for m in led if m.status is FailureStatus.REFUTED)
     return {"established": est, "not_established": not_est,
-            "correct": est == ("a", "b") and not_est == ("c", "d")}
+            "refuted": refuted,
+            "correct": est == ("a", "b") and not_est == ("d",) and refuted == ("c",)}
 
 
 # --------------------------------------------------------------------------
@@ -801,10 +822,12 @@ def bounded_powerful_part_bound(X: int, Q: int, t) -> BoundedPowerfulPartBound:
 
     with G_Q = sum_{d powerful<=Q} ris(d)^t/d, A_Q = sum ris(d)^t, B_Q = sum ris(d)^t d
     -- all FINITE for every t (Q fixed), so this is an X^2 bound with explicit
-    constant G_Q(t)^2 for ALL t >= 0, including t >= 1/2.  The main term dominates
-    the (residue-box) error once X exceeds 10 A_Q^2/G_Q^2 (B_Q part amortised),
-    the direct inheritor of Part IV's X > 10 W boundary.  Returns the UPPER value of
-    each enclosure so ``bound`` is a certified upper bound."""
+    constant G_hi^2 for ALL t >= 0, including t >= 1/2, once the main term
+    dominates the error. The recorded threshold is the EXACT least integer X
+    satisfying (G_hi^2/2) X^2 > 5 A_hi^2 X + 5 B_hi^2, using the rational upper
+    enclosure endpoints actually returned. It includes the positive B_Q term.
+    Returns the UPPER value of each enclosure so ``bound`` is a certified upper
+    bound; the threshold is not a claim about the unknown exact endpoints."""
     if type(X) is not int or X < 1 or type(Q) is not int or Q < 1:
         raise ABCClockError("bounded_powerful_part_bound needs integers X, Q >= 1")
     tf = t if isinstance(t, Fraction) else Fraction(t)
@@ -821,13 +844,14 @@ def bounded_powerful_part_bound(X: int, Q: int, t) -> BoundedPowerfulPartBound:
         b_lo += rlo * d; b_hi += rhi * d
     main = Fraction(X * X, 2) * g_hi * g_hi
     err = 5 * X * a_hi * a_hi + 5 * b_hi * b_hi
-    # smallest X0 with (X0^2/2) g_hi^2 > 5 X0 a_hi^2 + 5 b_hi^2.  Use the asymptotic
-    # binding term 5 X a_hi^2: X0 > 10 a_hi^2 / g_hi^2.
-    if g_hi > 0:
-        ratio = 10 * a_hi * a_hi / (g_hi * g_hi)
-        thr = int(ratio) + 1
-    else:
-        thr = 0
+    # Clear rational denominators in alpha X^2 - beta X - gamma > 0.
+    # alpha>0 since the powerful divisor 1 is included. For integer A,B,C,
+    # floor((B+sqrt(D))/(2A)) = (B+isqrt(D))//(2A), D=B^2+4AC.
+    # Adding one handles strict inequality even when the root is integral.
+    alpha, beta, gamma = g_hi * g_hi / 2, 5 * a_hi * a_hi, 5 * b_hi * b_hi
+    common = lcm(alpha.denominator, beta.denominator, gamma.denominator)
+    A, B, C = (int(coefficient * common) for coefficient in (alpha, beta, gamma))
+    thr = (B + isqrt(B * B + 4 * A * C)) // (2 * A) + 1
     return BoundedPowerfulPartBound(
         X=X, Q=Q, t=tf, G_Q=(g_lo, g_hi), A_Q=(a_lo, a_hi), B_Q=(b_lo, b_hi),
         bound=main + err, main_term=main, error_part=err,
@@ -880,39 +904,27 @@ def coprimality_joint_occupation(p: int, X: int) -> Dict[str, object]:
 
 
 def residue_box_correlation_obstruction() -> Dict[str, object]:
-    """ABC-COR-03 (the quantified obstruction + the isolated missing estimate).
+    """ABC-COR-03: the historical unrestricted-majorant summation fails.
 
-    What Part IV residue-box counting DID buy:
-      * the exact JOINT main term: sum_{d,d' powerful} ris(d)^t ris(d')^t/(d d')
-        * (X^2/2) = (X^2/2) G(t)^2, with G(t) finite iff t < 1 -- i.e. the correct
-        main-term threshold is t < 1, STRICTLY past the diagonal t < 1/2.  The
-        factor-2 gain is real: residue-box counts (a,b) JOINTLY (product of local
-        densities) instead of Cauchy-Schwarz diagonalising to ris^{2t}.
-    What it did NOT buy:
-      * the residue-box error bound 5(X + d d') per pair, summed over the majorant,
-        is >= c X^{t+2} (in fact ~ X^{t+3} from the B_Q = sum ris(d)^t d term),
-        OVERWHELMING the X^2 main term for EVERY t >= 0.  So residue-box yields NO
-        rigorous X^2 bound -- it does not even reprove the diagonal t < 1/2 result;
-        it trades a better main term for a worse error.
-      * residue-box is a NON-NEGATIVE count: it reproduces the main term exactly and
-        provides ZERO cancellation below it.  The a+b=c constraint only COUPLES the
-        residues by CRT (p^k|a forces b = c-a = c mod p^k: two independent
-        congruences, density product, no saving); coprimality kills only the
-        SAME-prime joint occupation, not the DIFFERENT-prime one that carries the
-        moment.  The cancellation the problem needs is Fourier (sign-changing),
-        structurally invisible to a positive lattice-point count.
+    Its JOINT main-term series G(t)^2 converges for t<1, but summing its old
+    5(X+dd') errors over all powerful divisors gives no uniform quadratic bound.
+    The bounded-Q result ABC-COR-02 remains valid. This is an obstruction to
+    that particular error summation, not to positive counting methods generally.
 
-    THE NEWLY-ISOLATED MISSING ESTIMATE (the Part V deliverable):
-      a count  #{(a,b): a+b <= X, a == alpha, b == beta (mod q)}
-        = (X^2 / 2q^2) * (#admissible classes)  +  o(X^2 / q),
-      with a power/log SAVING, UNIFORM for moduli q up to q ~ X.  Residue-box gives
-      only absolute error O(X + q) = O(1) RELATIVE at q ~ X (vacuous exactly at the
-      large-powerful-part tail q ~ X^{1/2}..X that carries the t >= 1/2 difficulty).
-      Supplying this saving is BBLT's Fourier 2nd/4th-moment exponential-sum bounds
-      (Prop. 3.1) + Heath-Brown geometry-of-numbers integer-point counts (Prop. 4.1).
+    CLOUD-ABC-01/05 bypass it by primitive slope separation, positive divisor
+    expansion and a tail bound. They establish the moment and mean value for
+    0<=t<2/3. The former claim that sign-changing Fourier cancellation was
+    necessary to reach t=1/2 is therefore REFUTED.
+
+    The returned cancellation/prime-occupation flags describe this historical
+    local-residue calculation only. They do not negate global rigidity from
+    a+b=c and primitivity. BBLT's estimates concern their stated varieties;
+    no unconditional transfer to the different weighted moment is asserted.
+    The remaining global moment frontier is 2/3<=t<1, including the endpoint.
     """
     return {
         "claim": "ABC-COR-03",
+        "scope": "historical unrestricted powerful-divisor residue-error summation only",
         "residue_box_main_term_threshold": Fraction(1),   # G(t) finite iff t<1
         "diagonal_cauchy_schwarz_threshold": Fraction(1, 2),
         "main_term_beats_half": True,                     # t<1 > t<1/2
@@ -921,13 +933,17 @@ def residue_box_correlation_obstruction() -> Dict[str, object]:
         "residue_box_provides_cancellation": False,       # non-negative count
         "a_plus_b_eq_c_provides_cancellation": False,     # CRT coupling only
         "coprimality_kills_same_prime_only": True,
-        "missing_estimate": ("power/log-saving integer-point count on a+b<=X in AP "
-                             "of modulus q, uniform up to q ~ X (o(X^2/q) error)"),
-        "missing_estimate_source": ("BBLT 2410.12234 Prop. 3.1 (Fourier 2nd/4th "
-                                    "moment exp-sum) + Prop. 4.1 (Heath-Brown "
-                                    "geometry-of-numbers)"),
+        "missing_estimate": ("To repair this specific route, control its weighted "
+                             "aggregate discrepancy in a stated modulus regime; "
+                             "CLOUD-ABC-01/05 instead bypass it for 0<=t<2/3"),
+        "missing_estimate_source": ("NO imported bound discharged for this object. "
+                                    "BBLT 2410.12234 supplies different Fourier and "
+                                    "geometry-of-numbers estimates on stated domains"),
+        "sign_changing_cancellation_necessary_status": "REFUTED (CLOUD-ABC-01)",
         "abc_status": "OPEN",
-        "t_half_moment_bound_status": "OPEN (main term reaches t<1; error uncontrolled)",
+        "t_half_moment_bound_status": "PROVED LOCAL (CLOUD-ABC-01; mean value CLOUD-ABC-05)",
+        "reviewed_moment_range": "0<=t<2/3; endpoint excluded",
+        "remaining_open_moment_range": "2/3<=t<1",
     }
 
 

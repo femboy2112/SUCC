@@ -1,5 +1,11 @@
 # Rigidity Forge roadmap — capability levels (Deliverable E)
 
+> **Academic Main VII status update:** this is a historical method dossier.
+> CLOUD-ABC-01/05 now prove the primitive moment bound and full mean for
+> 0≤t<2/3; see [the independent reconstruction](ACADEMIC_VII_ABC_REVIEW.md).
+> The diagonal t<1/2 ceiling below remains a limitation of that method.
+> The endpoint t=2/3 and integer abc remain open. Historical receipts are unchanged.
+
 **Date:** 2026-10-20. Successor to `PROOF_FORGE_ROADMAP.md`. The operation's standard:
 **Construct → Identify source → Couple → Find invariant → Bound defects → Prove
 rigidity → Certify.** These obligations are kept separate (never collapsed into one

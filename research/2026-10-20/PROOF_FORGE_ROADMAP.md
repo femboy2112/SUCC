@@ -1,5 +1,11 @@
 # Proof Forge roadmap — organized by proof capability, not subproject count
 
+> **Academic Main VII status update:** this is a historical method dossier.
+> CLOUD-ABC-01/05 now prove the primitive moment bound and full mean for
+> 0≤t<2/3; see [the independent reconstruction](ACADEMIC_VII_ABC_REVIEW.md).
+> The diagonal t<1/2 ceiling below remains a limitation of that method.
+> The endpoint t=2/3 and integer abc remain open. Historical receipts are unchanged.
+
 **Date:** 2026-10-20. Each level has an explicit completion criterion and at least one established theorem
 as benchmark. Levels gate: do not claim a higher level until the lower one's benchmark is actually met.
 

@@ -75,6 +75,33 @@ at #209: `singular_series_via_transport(2,2)=3/2`, but the direct finite product
 range and is separate from the nine historical findings. No claim of exhaustive
 absence of certification defects is made from this finite hostile suite.
 
+### Actual formal admission holdout
+
+After the coordinator authenticated the actual hosted Lean build, the separate
+`test_main_vii_admitted_formal_holdout.py` gate ran successfully: six tests,
+including positive typed claims for all ten admitted theorem exports. The
+record's canonical SHA256 is
+`9de79bcbe52c79f1829361c611d97a77b82dc08d9a5fe6181931b78865c8a9f4`.
+All 15 checked-source hashes match the installed files. The test does not
+patch the catalogue, install a test checker, or fabricate positive admission.
+Missing admission is an error, never a silently skipped positive gate.
+
+Using that same real record, the actual Mason–Stothers and polynomial Fermat
+propositions verify; exchanging them does not. An English RH assertion does
+not verify. Changing a claim's type, forging matching claim/evidence types,
+changing names/toolchain/dependency/environment, using an unqualified name,
+or modifying the receipt's type, recomputed type hash, axioms, universe
+parameters, or build commit all fail authority checks. The receipt
+`admitted-formal-holdout.json` records exact content hashes and the genuine
+kernel commit/tree. It honestly marks the installed worktree dirty because
+admission was then awaiting the coordinator's commit; it is not a final
+combined-commit CI receipt. The coordinator still owns that final gate.
+
+This resolves the earlier **INAPPLICABLE** positive test at `0b030654` for
+the subsequently admitted content, without rewriting that historical result.
+Level D source identification remains unavailable. No English mathematical
+claim is authenticated merely because its label names a real theorem.
+
 ## Reconstruction of the primitive moment theorem
 
 Let `X>=2` be real, let `a,b` be positive integers, `c=a+b<=X`, and impose

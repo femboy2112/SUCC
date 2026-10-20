@@ -1,5 +1,11 @@
 # abc ris-moment bound (#196): independent re-derivation + BBLT comparison
 
+> **Academic Main VII status update:** this is a historical method dossier.
+> CLOUD-ABC-01/05 now prove the primitive moment bound and full mean for
+> 0≤t<2/3; see [the independent reconstruction](ACADEMIC_VII_ABC_REVIEW.md).
+> The diagonal t<1/2 ceiling below remains a limitation of that method.
+> The endpoint t=2/3 and integer abc remain open. Historical receipts are unchanged.
+
 **Date:** 2026-10-20. **Re-checks** `observational_succ/abc_triple_moment.py` (ABC-TMB-01, PROVED LOCAL).
 **Verdict:** the partial theorem is **CORRECT as stated**; the `t < 1/2` ceiling is a **limitation of the
 Cauchy–Schwarz method, not a genuine growth threshold**; the bound is **rigorously valid but very loose**

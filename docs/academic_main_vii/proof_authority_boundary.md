@@ -1,9 +1,9 @@
 # Academic Main VII: proposition-bound authority
 
 Status: **PROVED LOCAL** for the mathematical finite-certificate implications;
-**TESTED MODEL** for the software boundary. The formal build admission remains
-pending until an actual pinned kernel run is reviewed and installed in the
-catalogue. This document is not itself a proof receipt.
+**TESTED MODEL** for the software boundary. Actual pinned kernel run
+39505507598 has been inspected and its exact record admitted below.
+This document is not itself a proof receipt.
 
 ## Historical refutations
 
@@ -82,9 +82,9 @@ installed-code trust model; it is not mathematical proof that a process ran.
 `build_succeeded: true` alone never suffices. Historical axiom JSON is preserved
 but is not admitted evidence.
 
-The catalogue starts empty. The formal lane generates the real kernel artifact;
-the coordinator admits it only after review. Thus absence of authenticated
-kernel contact fails closed, rather than silently trusting a synthetic receipt.
+The catalogue initially failed closed. The formal lane generated the real kernel
+artifact, and the coordinator admitted it after the review below. Absence of
+authenticated kernel contact still fails closed.
 For an admitted record, the exact positive interface is:
 
 ```python
@@ -101,6 +101,38 @@ including Mason–Stothers and polynomial Fermat. Without the real build and
 admission, no positive formal verification is claimed by these Python tests.
 
 ## Source and legacy boundaries
+
+### Actual formal admission, 2026-10-20
+
+The coordinator inspected [run 39505507598](https://github.com/femboy2112/SUCC/actions/runs/39505507598),
+job 118913289015: both local projects rebuilt, ten complete theorem types exported,
+all actual axiom sets contained exactly `propext`, `Classical.choice`, `Quot.sound`,
+and the wrong-source and both Schur mutations failed with their expected errors.
+The official Lean archive digest and all pinned dependency revisions were checked.
+The actual Actions checkout was merge commit
+`67da5369b6037a335ff2009b900e4bcd347557ee`, tree
+`f918b5b8b0acc699d3bd6ca1f23fd935aadf6884`, exactly equal to the tree of
+PR head `5bf5f249d040bfcee53c86e4cd65b0f28113f104`.
+
+The complete raw record is archived at
+[`formal/kernel_audit/admitted/kernel-attestation.json`](../../formal/kernel_audit/admitted/kernel-attestation.json).
+Its file SHA256 is `78b996095ae5020f3d49bb4e8e09be651559f31e2f753f2779143a35c4effe26`;
+canonical JSON admission digest is `9de79bcbe52c79f1829361c611d97a77b82dc08d9a5fe6181931b78865c8a9f4`.
+The environment digest is `bcac6fa0c0bbdd3ddc9e886d4754496ce63b0ba4e3bc055a02a7dfb544e9ce90`.
+All fifteen source hashes and all ten actual type hashes were independently
+recomputed. The subsequent CI gate must compare fresh kernel observations with
+this admitted environment and theorem set, then check positive formal references.
+
+Independent tests using this actual record authenticate every exact theorem,
+reject a Mason/Fermat proposition swap, reject an RH English claim, and reject
+mutated types, universe metadata, axioms, build commits and environments. They
+do not install a mock catalogue or treat a forged success flag as a build.
+
+Formal-source and claim-registry operations require the checked repository
+checkout. The existing wheel packages Python modules but omits the repository's
+formal/doc data. A standalone wheel therefore cannot authenticate these sources;
+it fails closed. The wheel build/import gate is distinct from the repository
+formal-source gate.
 
 The former `polynomial_identity` callback compared two arbitrary supplied
 polynomials. It neither identified the theorem's parameters nor an original

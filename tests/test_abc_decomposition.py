@@ -172,7 +172,12 @@ class TestAdditiveCorrelation(unittest.TestCase):
 
     def test_machinery_boundary_ledger(self):
         m = machinery_boundary()
-        self.assertFalse(m["beats_half_rigorously"])
+        self.assertTrue(m["beats_half_rigorously"])
+        self.assertFalse(m["diagonal_method_beats_half"])
+        self.assertEqual(m["proved_moment_upper_endpoint"], Fraction(2, 3))
+        self.assertFalse(m["endpoint_included"])
+        self.assertEqual(m["reviewed_theorems"], ("CLOUD-ABC-01", "CLOUD-ABC-05"))
+        self.assertIn("REFUTED", m["fourier_necessity_claim_status"])
         self.assertEqual(m["heuristic_true_threshold"], Fraction(1))
         self.assertEqual(m["abc_status"], "OPEN")
         self.assertIn("BBLT", m["needs_machinery_not_in_SUCC"])
@@ -253,7 +258,7 @@ class TestQualifiedBoundedExponent(unittest.TestCase):
 
 class TestFailureModeLedger(unittest.TestCase):
     """ABC-FM (Part V Task 2): only (a) diagonal/CS and (b) a particular Euler
-    majorant are ESTABLISHED; (c) proof class and (d) theorem are NOT."""
+    majorant fail; (c) class-wide barrier is REFUTED, (d) theorem failure OPEN."""
 
     def test_four_modes_statuses(self):
         led = failure_mode_ledger()
@@ -261,7 +266,8 @@ class TestFailureModeLedger(unittest.TestCase):
         by_tag = {m.tag: m for m in led}
         self.assertEqual(by_tag["a"].status, FailureStatus.ESTABLISHED)
         self.assertEqual(by_tag["b"].status, FailureStatus.ESTABLISHED)
-        self.assertEqual(by_tag["c"].status, FailureStatus.NOT_ESTABLISHED)
+        self.assertEqual(by_tag["c"].status, FailureStatus.REFUTED)
+        self.assertIn("CLOUD-ABC-01", by_tag["c"].receipt)
         self.assertEqual(by_tag["d"].status, FailureStatus.NOT_ESTABLISHED)
         # every mode carries a receipt pointing at in-repo evidence
         self.assertTrue(all(m.receipt for m in led))
@@ -269,7 +275,8 @@ class TestFailureModeLedger(unittest.TestCase):
     def test_overclaim_guard(self):
         g = failure_mode_overclaim_guard()
         self.assertEqual(g["established"], ("a", "b"))
-        self.assertEqual(g["not_established"], ("c", "d"))
+        self.assertEqual(g["not_established"], ("d",))
+        self.assertEqual(g["refuted"], ("c",))
         self.assertTrue(g["correct"])
 
 
@@ -333,6 +340,21 @@ class TestResidueBoxCorrelation(unittest.TestCase):
             self.assertEqual(b.bound, b.main_term + b.error_part)
             self.assertGreaterEqual(b.dominance_threshold_X, 0)
 
+    def test_bounded_powerful_threshold_includes_constant_error(self):
+        # Q=4,t=0: G=5/4,A=2,B=5. Old threshold26 drops 5B^2=125:
+        # at X=26 the main term4225/8 is below the error645. The true least
+        # integer satisfying (25/32)X^2>20X+125 is31.
+        broken_boundary = bounded_powerful_part_bound(26, 4, 0)
+        self.assertEqual(broken_boundary.main_term, Fraction(4225, 8))
+        self.assertEqual(broken_boundary.error_part, 645)
+        self.assertFalse(broken_boundary.informative)
+        self.assertEqual(broken_boundary.dominance_threshold_X, 31)
+        for Q, t in ((1, 0), (4, 0), (9, 1), (25, 2), (16, Fraction(3, 5))):
+            result = bounded_powerful_part_bound(1, Q, t)
+            threshold = result.dominance_threshold_X
+            self.assertTrue(bounded_powerful_part_bound(threshold, Q, t).informative)
+            self.assertFalse(bounded_powerful_part_bound(threshold - 1, Q, t).informative)
+
     def test_coprimality_restricts_same_prime_only(self):
         res = coprimality_joint_occupation(2, 120)
         self.assertEqual(res["coprime_same_prime_count"], 0)   # forbidden
@@ -351,7 +373,10 @@ class TestResidueBoxCorrelation(unittest.TestCase):
         self.assertFalse(o["a_plus_b_eq_c_provides_cancellation"])
         self.assertEqual(o["abc_status"], "OPEN")
         self.assertIn("BBLT", o["missing_estimate_source"])
-        self.assertIn("OPEN", o["t_half_moment_bound_status"])
+        self.assertIn("PROVED LOCAL", o["t_half_moment_bound_status"])
+        self.assertIn("CLOUD-ABC-01", o["t_half_moment_bound_status"])
+        self.assertEqual(o["remaining_open_moment_range"], "2/3<=t<1")
+        self.assertIn("REFUTED", o["sign_changing_cancellation_necessary_status"])
 
 
 if __name__ == "__main__":

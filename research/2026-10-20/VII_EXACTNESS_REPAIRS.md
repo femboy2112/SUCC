@@ -135,3 +135,53 @@ Next decisive implementation probe: independently isolate the characteristic
 roots of higher-degree rational symmetric matrices and compare certificates
 against a second exact arithmetic system. This is a verification opportunity,
 not a mathematical obligation blocking the elementary counterexample repairs.
+
+## Follow-up: current abc frontier and an exact threshold diagnostic
+
+The preceding `VII_EXACTNESS_RECEIPT.json` records the content tested for commit
+`6dd1bede6cef06cfc900f60fdde94ad7098dfd19`. The follow-up receipt
+`VII_ABC_STATUS_RECEIPT.json` binds the subsequent module and test changes;
+the earlier receipt is preserved as history rather than rewritten.
+
+Current `abc_decomposition` status metadata now references reviewed
+**CLOUD-ABC-01/05**, which prove the global quadratic bound and mean value for
+`0<=t<2/3`. These are **PROVED LOCAL** paper proofs, not formal-kernel receipts.
+The diagonal method still has its `t<1/2` ceiling. Its failure, and the failure
+of the particular unrestricted residue-majorant error sum, remain established.
+The broader assertion that no elementary positive-counting method can reach
+any exponent at or above `1/2` is **REFUTED** by primitive slope separation.
+The endpoint `2/3`, the range `2/3<=t<1`, and integer abc remain open. The
+global theorems do not imply an unproved pointwise asymptotic for each inner
+correlation. No BBLT estimate is silently imported for this different object.
+
+An additional exact diagnostic defect was found in ABC-COR-02:
+`bounded_powerful_part_bound(26,4,0)` reported `dominance_threshold_X=26`.
+Here `G=5/4`, `A=2`, `B=5`, so the actual defining inequality is
+
+\[
+\frac{25}{32}X^2>20X+125.
+\]
+
+At `X=26`, the two sides are `4225/8` and `645`; dominance is false. The least
+integer satisfying the inequality is `31`. The original upper bound and its
+separately computed `informative` flag were sound; the threshold diagnostic and
+the displayed sufficient condition incorrectly omitted the positive `B` term.
+
+For the actual rational upper endpoints returned by the routine, set
+`alpha=G_hi^2/2`, `beta=5*A_hi^2`, `gamma=5*B_hi^2`. Clear denominators to
+positive integers `A,B,C`. Since the divisor 1 occurs, `A>0`. The inequality
+`A X^2-B X-C>0`, for `X>=0`, holds exactly beyond its positive root. Its least
+integer solution is
+
+\[
+1+\left\lfloor\frac{B+\lfloor\sqrt{B^2+4AC}\rfloor}{2A}\right\rfloor.
+\]
+
+Replacing the square root by its integer floor inside the outer floor is exact:
+the omitted fraction is less than one and the numerator and denominator are
+integers. Adding one correctly handles equality when the root is integral.
+No approximate comparison or asymptotic simplification enters the threshold.
+The regression checks both the threshold and its immediate predecessor for
+five parameter families, including a nonintegral moment exponent. The complete
+abc module run passes 33 tests; full integrated validation remains the
+coordinator's responsibility.
