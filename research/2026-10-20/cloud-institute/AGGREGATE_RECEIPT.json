@@ -1,0 +1,171 @@
+{
+  "pinned_main": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+  "aggregate_worktree": "/workspace/scratch/0a4459d8f487/integration-audit",
+  "lane_heads": {
+    "a": "7d51ea85abe88194d535316a39a31fe3f72ef8e4",
+    "b": "3ee1d50cf823ae984c2950c339ce6517bf4b0b8f",
+    "c": "15b64848fe46c441b3ca7d314a6a68344bd9b0ae",
+    "d": "91fa97e102532e64e5470439bcb0d639dd7f26b1",
+    "e": "db1d72709516bdb831dffa5221639ed98cd477c3",
+    "f": "2cdeb9c7e868a8dd33ad88f2f7dc60748ea10a51"
+  },
+  "new_file_count": 36,
+  "lane_path_collisions": [],
+  "overwritten_main_paths": [],
+  "overlap_pr200": [],
+  "overlap_pr201_delta": [],
+  "file_sha256": {
+    "observational_succ/cloud_crt_ascent.py": "794902ec9988874e0be120c649a632a699a74c41eb6b9bcc24353c654d62013a",
+    "research/2026-10-20/CLOUD_CRT_ASCENT.md": "0dd9803271186c08adc9042e2ec39d9b4cce8f0690e98d23cdc1bdc3867696e8",
+    "research/2026-10-20/CLOUD_CRT_ASCENT_RECEIPT.json": "38a13fa74f74066ef214c4c07d01ec48e642eff426cb5f2d8a1591ba4d98e495",
+    "scripts/cloud_crt_ascent_probe.py": "1c0ceb9f12aa4e15efa9167621fc53dbe5822c2c30571bd76f7d77f72c39a02a",
+    "tests/test_cloud_crt_ascent.py": "5cf079906e618daa08831899d477456f7de481171c79ee2e8b5bd71a108b34ad",
+    "observational_succ/cloud_abc_correlations.py": "365026f9ccfeeb69a0daf9ff8c172f23249a8cebe5a2d7c7a4754fc09afc1c6b",
+    "research/2026-10-20/CLOUD_ABC_CORRELATIONS.md": "7304ce4d688050a54118707bf003543b80849b5b4fadde6f6c766a1006507cc6",
+    "research/2026-10-20/CLOUD_ABC_CORRELATIONS_RECEIPT.json": "515ee3fb299424a278eb4f9fc41fec10bf263b34a87e4d984ab7526115910c8e",
+    "scripts/cloud_abc_correlations_probe.py": "a56036889889325b0786f3f234cde855adaed370d1330c05ef23057fc7b03ba5",
+    "tests/test_cloud_abc_correlations.py": "d3bf5c91c92f09c979e1fa18c0797f28e2a2b2e9aa32922e1ad9459679fe0c64",
+    "observational_succ/cloud_ramanujan_transport.py": "e20901c14b9c1615ef93c6b35810c67a19a38ddc0f5a7499e59aabeec5969f00",
+    "research/2026-10-20/CLOUD_RAMANUJAN_RECEIPT.json": "b087259614df78c77883ea63fd499087e8b30760f72e5a828598cec2089e1ff2",
+    "research/2026-10-20/CLOUD_RAMANUJAN_TRANSPORT.md": "7827afa3761710c7193bd6a955826fe01b704cc41054b0ed273c97d6ac4de269",
+    "scripts/cloud_ramanujan_probe.py": "16d077e6da2ffc5c69646ed0926856d2f5bf3ffa12320bea6c2de4df0cf646bf",
+    "tests/test_cloud_ramanujan_transport.py": "2f2429e5fdc229d4075d549ecb55cd1e9b2275b7c835df8d36f623c7d7bdfa7b",
+    "observational_succ/cloud_operator_transport.py": "6d258e4b5a3acd446a66a46a9fec4f95da2243ba15dabd78e077deacadb19949",
+    "research/2026-10-20/CLOUD_OPERATOR_SOURCE_FORENSICS.md": "a2deb1b29f052f0056aa01d37ee79f04b2dcd76b30465cc06276054c5050766a",
+    "research/2026-10-20/CLOUD_OPERATOR_SOURCE_J8.json": "43f30d1d9b15b2417e6cb963a681dd348b8780dfd01e01da24677176c64421bb",
+    "scripts/cloud_operator_source_probe.py": "2df50ea03336f8ef00f047e44afd9a773170a459d22e4e52ac33ffc271ccdb8c",
+    "tests/test_cloud_operator_transport.py": "20e67d46e30c1a6ee6c33b83c6e19f74e46d561073e240056496541550ceb6ea",
+    ".github/workflows/cloud-schur.yml": "4387cb9b733e642b5dc5bb3c1183082883c3e8f0b5903c4059c1ac189f32d26a",
+    "formal/cloud_schur/.gitignore": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3",
+    "formal/cloud_schur/CloudSchur.lean": "537c440caab2ab889e14821acb114ae8e8c752af8a2dadedc406dd29f0bd70a1",
+    "formal/cloud_schur/check_mutations.py": "8f8125ade10b9a8ec7f4843d3648035e8b92e1449aee6445419ce22a86900b32",
+    "formal/cloud_schur/lake-manifest.json": "11c1541882eae98045b7c8da62ad0bb08af6049fda9df476af99557174d399f4",
+    "formal/cloud_schur/lakefile.toml": "2afdf046949829fc4e1ee2e304d99e4f76d0fd99ff2f52ae719ed3d6a9e4fedd",
+    "formal/cloud_schur/lean-toolchain": "6faf6530819a0bc6d6092a2d9b974ea8e8adfec955d0e51e02e1f82734264d14",
+    "observational_succ/cloud_schur_certificates.py": "7af70159ea985f3f898beda596c4f4121eafe0277c121eef02061b881acf8465",
+    "research/2026-10-20/CLOUD_FORMAL_KERNEL.log": "e66b97e4a4096007ca10fd6cd25d79880970ba7a913573f120a3f16acc9641c3",
+    "research/2026-10-20/CLOUD_FORMAL_SCHUR.md": "95b175f3babb0908540af90db10a0ad5973e1e368619976ebec9227519521534",
+    "research/2026-10-20/CLOUD_FORMAL_SCHUR_RECEIPT.json": "712cf3bee72e54066ea455a4383b0945a3c7d78b2466433471a98c6fa11cf807",
+    "tests/test_cloud_schur_certificates.py": "c5babeaaa90fd2fd42862695aa5fbef1288a36c216fdb0fd129f8fb5b5cdbea1",
+    "research/2026-10-20/CLOUD_HOSTILE_AUDIT.md": "2203459615fad2bce9ea9466875829dc33c1df105d13069b12ca3ad78fe2205a",
+    "research/2026-10-20/CLOUD_HOSTILE_RECEIPT.json": "7bdbd07789e787f0c1de60e88efe4d509d811d65c22bf94ad56854320db91675",
+    "scripts/cloud_hostile_holdouts.py": "4ed5b4e061b452f17ef645b9955613686f27e32d2ea6f8a1b904deaeb5a7ed3d",
+    "tests/test_cloud_hostile_holdouts.py": "8d1de509b469f4aeb3fe4e89598b1e3ff92cdf68ee49fd45169c197db610bfd4"
+  },
+  "test_files": [
+    "test_cloud_abc_correlations.py",
+    "test_cloud_crt_ascent.py",
+    "test_cloud_hostile_holdouts.py",
+    "test_cloud_operator_transport.py",
+    "test_cloud_ramanujan_transport.py",
+    "test_cloud_schur_certificates.py"
+  ],
+  "validation": [
+    {
+      "name": "cloud_six_suite",
+      "command": [
+        "/workspace/scratch/0a4459d8f487/research-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_cloud_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.174920568000289,
+      "log": "/workspace/scratch/0a4459d8f487/cloud_aggregate_cloud_six_suite.log",
+      "output_tail": [
+        "test_seeded_larger_fresh_region (test_cloud_schur_certificates.CloudSchurTests.test_seeded_larger_fresh_region) ... ok",
+        "test_zero_pivot_after_schur (test_cloud_schur_certificates.CloudSchurTests.test_zero_pivot_after_schur) ... ok",
+        "test_zero_pivot_coupling_value_minus_one (test_cloud_schur_certificates.CloudSchurTests.test_zero_pivot_coupling_value_minus_one) ... ok",
+        "",
+        "----------------------------------------------------------------------",
+        "Ran 63 tests in 6.039s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "name": "provenance",
+      "command": [
+        "/workspace/scratch/0a4459d8f487/research-venv/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.07527999300009469,
+      "log": "/workspace/scratch/0a4459d8f487/cloud_aggregate_provenance.log",
+      "output_tail": [
+        "{",
+        "  \"byte_identical_research_archives\": 17,",
+        "  \"establishes_mathematical_truth\": false,",
+        "  \"items\": 72,",
+        "  \"mechanical_namespace_migrations\": 55,",
+        "  \"source_commit\": \"ba075348b7bcc66d938b3e0ca96c26e95bba340a\",",
+        "  \"status\": \"SOURCE_PROVENANCE_VERIFIED\"",
+        "}"
+      ]
+    },
+    {
+      "name": "observer_foundations",
+      "command": [
+        "/workspace/scratch/0a4459d8f487/research-venv/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.22569505299998127,
+      "log": "/workspace/scratch/0a4459d8f487/cloud_aggregate_observer_foundations.log",
+      "output_tail": [
+        "  \"turing_observations\": {",
+        "    \"delayed_prefix_17\": \"unresolved\",",
+        "    \"delayed_prefix_19\": \"refuted\",",
+        "    \"finite_survival_claims_are_universal_proofs\": false,",
+        "    \"first_observed_counterexample\": 19,",
+        "    \"loop_prefix_17\": \"unresolved\"",
+        "  }",
+        "}"
+      ]
+    },
+    {
+      "name": "ordinal_succ",
+      "command": [
+        "/workspace/scratch/0a4459d8f487/research-venv/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.22768792800025,
+      "log": "/workspace/scratch/0a4459d8f487/cloud_aggregate_ordinal_succ.log",
+      "output_tail": [
+        "    \"h\": \"1/20\",",
+        "    \"k\": \"1/30\",",
+        "    \"mixed_covariance_increment\": \"0.000964653856973416905507178662116\",",
+        "    \"positive_definiteness_proved\": false,",
+        "    \"t\": \"3/5\",",
+        "    \"u\": \"1/5\"",
+        "  }",
+        "}"
+      ]
+    }
+  ],
+  "diff_check": {
+    "tracked_exit_code": 0,
+    "tracked_output": "",
+    "new_file_whitespace_violations": [],
+    "all_36_new_files_checked": true
+  },
+  "e_documentation_cleanup": {
+    "prior_local_head": "52c43c949eea85df44411d7dfe95dc4016129ea1",
+    "new_local_head": "db1d72709516bdb831dffa5221639ed98cd477c3",
+    "remote_head": "fd16f5766629e02cb92c0ca0607afad45799f2cc",
+    "remote_tree": "bdbd9b904e64dd92126a3847fe6fb2258e8b8b94",
+    "changed_paths": [
+      "research/2026-10-20/CLOUD_FORMAL_KERNEL.log",
+      "research/2026-10-20/CLOUD_FORMAL_SCHUR.md",
+      "research/2026-10-20/CLOUD_FORMAL_SCHUR_RECEIPT.json"
+    ],
+    "prior_test_code_hashes_unchanged": true,
+    "new_tests_not_rerun": "Only three log/document/receipt files changed; all executable, formal, test and workflow hashes unchanged."
+  }
+}
