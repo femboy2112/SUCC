@@ -23,7 +23,7 @@ S₄ sign remain OPEN.)**
 
 2026-10-19 independent research: [SUCC metatheory — generative choice and source-certified descent](CLAIM_SUPPLEMENT_META_CHOICE_DESCENT.md) (MCD-01–10). Witnessed dependent choice, Diaconescu choice/LEM firewall, choice-free support transport on q-fibers (Lean-kernel verified, no `Classical.choice`), the F₂ odd-loop global-section obstruction, and the existential-support left adjoint; MCD-09 UNVERIFIED (no novel arithmetic/Weil/RH result claimed). New-to-project synthesis, not original topos theory.
 
-2026-10-19 sundial offshoot (draft, not on main): [Portable prime sundial RAD/RIS clock and rational SUCC](CLAIM_SUPPLEMENT_PORTABLE_SUNDIAL.md) (PSD-01–12). Two independent source units, determinant-controlled ratio drift and gcd-cancellation, partial p-power roots, factorial-style CRT phase wheel, source-covariant rebase, homothetic gauge, and unrecoverable future from reduced ratio alone. Elementary paper proofs plus exact finite countermodels; no physical source claim, ABC or RH proof.
+2026-10-19 sundial offshoot (draft, not on main): [Portable prime sundial RAD/RIS clock and rational SUCC](CLAIM_SUPPLEMENT_PORTABLE_SUNDIAL.md) (PSD-01–14). Two independent source units, determinant-controlled ratio drift and gcd-cancellation, partial p-power roots, factorial-style CRT phase wheel, source-covariant rebase, homothetic gauge, and unrecoverable future from reduced ratio alone. Elementary paper proofs plus exact finite countermodels; no physical source claim, ABC or RH proof.
 
 Latest research: [Arithmetic Resonance claim supplement](CLAIM_SUPPLEMENT_ARITHMETIC_RESONANCE.md), with source-specific range and two-sided Schur bounds; original sign OPEN.
 
