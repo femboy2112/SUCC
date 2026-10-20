@@ -369,6 +369,22 @@
         "formal/EODCS_MetaChoiceParity.lean",
         "scripts/meta_choice_descent_probe.py"
       ]
+    },
+    {
+      "namespace": "PORTABLE_PRIME_SUNDIAL",
+      "bare_prefix": "PSD",
+      "fq_prefix": "PSD",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PORTABLE_SUNDIAL.md"
+      ],
+      "id_count": 12,
+      "status": "MIXED (CLASSICAL/PROVED PAPER/TESTED FINITE/UNVERIFIED)",
+      "topic": "two-unit rational SUCC sundial: conserved diagonal determinant, real drift and gcd prime support, p-power nonunit clocks, CRT phase wheels, RAD births, source-preserving frame transport and lost quotient futures",
+      "code": [
+        "observational_succ/portable_prime_sundial.py",
+        "scripts/portable_prime_sundial_probe.py",
+        "formal/PortablePrimeSundial.lean"
+      ]
     }
   ],
   "resolved_collisions": [
