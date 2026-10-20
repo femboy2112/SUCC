@@ -15,10 +15,16 @@ edge; it does not identify any matrix with a signed Weil form.
 alternative, and rational witness existence. These are recovered classical linear
 algebra, not claims of mathematical novelty. **TESTED FINITE:** executable generator
 and independent checker; exhaustive and seeded principal-minor comparisons below.
-**UNVERIFIED pending hosted kernel run:** the Lean wrapper and extraction lemmas.
+**FORMALLY CHECKED:** the five Lean statements listed in E3, by the pinned hosted
+kernel job [39479505726](https://github.com/femboy2112/SUCC/actions/runs/39479505726).
+The complete rational elimination and its Python refinement remain paper-proved /
+TESTED FINITE, not fully formalized.
 The local Lean runtime cannot read `/proc/<pid>/exe`; it exits before elaboration
 with `error: failed to locate application`. No modified toolchain or access-control
-workaround was used. The branch-owned GitHub Actions workflow is the next check.
+workaround was used. The branch-owned GitHub Actions workflow performed the actual
+kernel checks in its supported environment. The first hosted attempt failed on a
+missing real star-order instance import; that dependency was repaired before the
+successful run.
 
 The next falsifiers are a negative result from an independently recomputed Gram
 identity, a disagreement with the all-principal-minors criterion, or failure of the
@@ -116,13 +122,23 @@ The imported mathlib source is pinned to
 dependencies are frozen in `lake-manifest.json`. The Lean archive SHA-256 used by
 the hosted workflow is
 `320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a`.
-Each exported theorem has `#print axioms`. The job must pass and the actual output
-must be inspected before reporting the observed axiom set. There are no local
+Each exported theorem has `#print axioms`. The successful job built the package,
+ran Lean directly again, and reported exactly
+`[propext, Classical.choice, Quot.sound]` for all five statements. There are no local
 axiom declarations, `sorry`, or `native_decide` in the proof file.
+
+Observed source head: `c4092a702c9161d8d7815132c323c4991da01b6c`. GitHub tested its
+PR merge checkout `076ae599348fbe30b7a5de813c633bc93bc1fafb` against the pinned main
+parent. Job ID `118824073301`; Lean reports release commit `410fab728470`.
+The checked `CloudSchur.lean` has SHA-256
+`537c440caab2ab889e14821acb114ae8e8c752af8a2dadedc406dd29f0bd70a1`.
+The exact kernel/mutation log excerpt is preserved in `CLOUD_FORMAL_KERNEL.log`;
+structured scope and history are in `CLOUD_FORMAL_SCHUR_RECEIPT.json`. Later receipt
+documentation does not change these checked formal inputs.
 
 Two fresh typecheck-failure controls mutate the actual source: weaken `D.PosDef`
 to `D.PosSemidef`, and change the zero-pivot negative value from `-1` to `+1`.
-Both must be rejected by elaboration. Rejection is a calibration check, not a
+Both were rejected by elaboration in the successful hosted job. Rejection is a calibration check, not a
 proof of all soundness properties of the toolchain.
 
 ## E4. Independent executable certification and holdouts
