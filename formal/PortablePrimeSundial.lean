@@ -21,9 +21,9 @@ theorem diagonal_cross_balance (a b u v n : Int) :
   have h : u * (n * v) = v * (n * u) := by ac_rfl
   calc
     u * (b + n * v) + v * a
-        = u * b + u * (n * v) + v * a := by rw [mul_add]
+        = u * b + u * (n * v) + v * a := by rw [Int.mul_add]
     _ = v * a + v * (n * u) + u * b := by rw [h]; ac_rfl
-    _ = v * (a + n * u) + u * b := by rw [mul_add]
+    _ = v * (a + n * u) + u * b := by rw [Int.mul_add]
 
 /-- Relabeling numerator time k by shifting the origin h preserves
 the actual source coordinate, with k in the new chart and k+h
@@ -32,7 +32,7 @@ theorem origin_shift (a u h k : Int) :
     (a + h * u) + k * u = a + (h + k) * u := by
   calc
     (a + h * u) + k * u = a + (h * u + k * u) := by ac_rfl
-    _ = a + (h + k) * u := by rw [add_mul]
+    _ = a + (h + k) * u := by rw [Int.add_mul]
 
 /-- Scaling the WHOLE source frame by m preserves ratio observables,
 expressed as exact cross multiplication (without dividing by zero). -/
