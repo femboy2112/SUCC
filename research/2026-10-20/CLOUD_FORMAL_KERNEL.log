@@ -36,7 +36,7 @@
 2026-10-20T19:00:22.3428874Z 'ObservationalSUCC.CloudSchur.scalar_schur_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
 2026-10-20T19:00:22.3429547Z 'ObservationalSUCC.CloudSchur.scalar_negative_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
 2026-10-20T19:00:22.3430208Z 'ObservationalSUCC.CloudSchur.zero_diagonal_negative' depends on axioms: [propext, Classical.choice, Quot.sound]
-2026-10-20T19:00:22.3430603Z 
+2026-10-20T19:00:22.3430603Z
 2026-10-20T19:00:22.3430734Z MUTATION_REJECTED wrong_negative_value
 2026-10-20T19:00:22.3431178Z /home/runner/work/SUCC/SUCC/formal/cloud_schur/tmp0mxkoewj.lean:55:36: error: unsolved goals
 2026-10-20T19:00:22.3431617Z b c : ℚ
@@ -50,5 +50,4 @@
 2026-10-20T19:00:22.3436003Z  sorryAx,
 2026-10-20T19:00:22.3436310Z  Classical.choice,
 2026-10-20T19:00:22.3436561Z  Quot.sound]
-2026-10-20T19:00:22.3436667Z 
-
+2026-10-20T19:00:22.3436667Z

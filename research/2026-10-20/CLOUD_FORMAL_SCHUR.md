@@ -132,7 +132,9 @@ PR merge checkout `076ae599348fbe30b7a5de813c633bc93bc1fafb` against the pinned 
 parent. Job ID `118824073301`; Lean reports release commit `410fab728470`.
 The checked `CloudSchur.lean` has SHA-256
 `537c440caab2ab889e14821acb114ae8e8c752af8a2dadedc406dd29f0bd70a1`.
-The exact kernel/mutation log excerpt is preserved in `CLOUD_FORMAL_KERNEL.log`;
+The whitespace-normalized kernel/mutation log excerpt is preserved in
+`CLOUD_FORMAL_KERNEL.log`; only trailing whitespace and redundant final blank
+lines were removed, with the substantive log text unchanged;
 structured scope and history are in `CLOUD_FORMAL_SCHUR_RECEIPT.json`. Later receipt
 documentation does not change these checked formal inputs.
 
