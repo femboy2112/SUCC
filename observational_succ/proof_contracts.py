@@ -206,26 +206,47 @@ class UndischargedAssumption:
 class SourceRealizationWitness:
     """Whether the object is the genuine source or a synthetic proxy.
 
-    ``authentic=True`` is ACCEPTED only when an ``identification`` callable is
-    supplied and recomputes to literal True. A bare ``authentic=True`` with no
-    identification is rejected: a boolean is not a source certificate (AGENTS.md
+    Proof Forge III, Part II hardening: ``authentic=True`` is ACCEPTED only when a
+    typed, externally re-checkable ``realization`` artifact is supplied -- one
+    exposing a ``verify()`` method (in practice a
+    :class:`proof_authority.SourceRealization`, Level D). A bare
+    ``authentic=True`` is rejected, AND a raw callback (e.g. ``lambda: True``) is
+    now rejected too: an opaque closure that returns ``True`` does no source
+    identification and is not part of the trusted kernel (see
+    :mod:`proof_authority`). A boolean is not a source certificate (AGENTS.md
     sec. 6)."""
     object_name: str
     authentic: bool
-    identification: Optional[Callable[[], object]] = None
+    realization: Optional[object] = None   # a proof_authority.SourceRealization (Level D)
     note: str = ""
+    receipt: Optional[dict] = None         # Lean build receipt for an embedded Level C
 
     def verify(self) -> bool:
         if not self.authentic:
             return True
-        if self.identification is None:
+        if self.realization is None:
             raise ProofContractError(
                 f"{self.object_name!r} asserts source authenticity with NO "
-                f"identification witness: a boolean is not a source certificate"
+                f"realization witness: a boolean is not a source certificate"
             )
-        if self.identification() is not True:
+        verify = getattr(self.realization, "verify", None)
+        if self.realization is True or (callable(self.realization) and verify is None):
             raise ProofContractError(
-                f"{self.object_name!r} identification witness did not verify"
+                f"{self.object_name!r} supplied a raw callback/boolean as its source "
+                f"identification; a closure that returns True does no identification. "
+                f"Supply a typed Level-D proof_authority.SourceRealization."
+            )
+        if verify is None:
+            raise ProofContractError(
+                f"{self.object_name!r} realization is not a verifiable artifact"
+            )
+        try:
+            ok = verify(receipt=self.receipt)
+        except TypeError:
+            ok = verify()
+        if ok is not True:
+            raise ProofContractError(
+                f"{self.object_name!r} source realization did not verify"
             )
         return True
 

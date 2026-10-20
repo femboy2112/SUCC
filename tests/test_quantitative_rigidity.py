@@ -1,10 +1,22 @@
-"""Exact tests for the quantitative rigidity core (Part III)."""
+"""Exact tests for the quantitative rigidity core (Part III).
+
+Includes the Proof Forge III Part I stop-ship regression suite
+(:class:`TestP0CertificateRepairs`): no false-positive certificates, complete
+deterministic negative witnesses, and an exact-only input boundary."""
+import random
 import unittest
 
 import sympy as sp
 
 from observational_succ.quantitative_rigidity import (
+    CERT_INAPPLICABLE,
+    CERT_REFUTED,
+    CERT_UNKNOWN,
+    CERT_VERIFIED,
     Rat,
+    RigidityDiagnostics,
+    RigidityInputError,
+    UndecidableSignError,
     coupling_negative_vector,
     diagnostics_from_block,
     finite_schur_certificate,
@@ -14,6 +26,7 @@ from observational_succ.quantitative_rigidity import (
     is_positive_semidefinite,
     min_eigenvalue_exact,
     negative_witness,
+    quad,
     range_inclusion_holds,
     schur_complement,
     shorted_complement,
@@ -181,6 +194,176 @@ class TestFormCoreTransport(unittest.TestCase):
         mins = [form_core_negative_control(N, a_squared=Rat(1, 1000)).test_gram_coercivity_lb
                 for N in (3, 5, 10, 20)]
         self.assertTrue(all(m > 0 for m in mins))
+
+
+def _rand_sym(n, rng, lo=-6, hi=6, denom=4):
+    """A random exact symmetric rational matrix (seeded, reproducible)."""
+    M = sp.zeros(n, n)
+    for i in range(n):
+        for j in range(i, n):
+            val = Rat(rng.randint(lo, hi), rng.randint(1, denom))
+            M[i, j] = val
+            M[j, i] = val
+    return M
+
+
+class TestP0CertificateRepairs(unittest.TestCase):
+    """Proof Forge III, Part I: stop-ship soundness repairs."""
+
+    # ----- Part I.1: no false-positive rigidity certificate ----------------- #
+    def test_invalid_high_block_is_refuted_not_certified(self):
+        # The exact negative control: M = diag(1, -1), A=1, B=0, D=-1.
+        # Old bug: schur_complement_psd=True, range_inclusion_ok=True,
+        # is_genuine_certificate()=True -- yet e_2^T M e_2 = -1 < 0.
+        M = sp.Matrix([[1, 0], [0, -1]])
+        d = diagnostics_from_block(M, 1, source_form_identified=True)
+        self.assertFalse(d.high_block_psd)          # D = -1 is NOT PSD
+        self.assertFalse(d.m_psd)                   # ground truth: M not PSD
+        self.assertEqual(d.certificate_status(), CERT_REFUTED)
+        self.assertFalse(d.is_genuine_certificate())
+        # and the quadratic form really is negative on e_2
+        self.assertEqual(quad(M, sp.Matrix([0, 1])), -1)
+
+    def test_genuine_certificate_still_verified(self):
+        # D = [100] PD, true Schur 24/25 > 0, source identified -> VERIFIED.
+        A, B, D = sp.Matrix([[1]]), sp.Matrix([[2]]), sp.Matrix([[100]])
+        M = sp.Matrix(sp.BlockMatrix([[A, B], [B.T, D]]))
+        d = diagnostics_from_block(M, 1, source_form_identified=True, kappa=1)
+        self.assertEqual(d.certificate_status(), CERT_VERIFIED)
+        self.assertTrue(d.is_genuine_certificate())
+        self.assertTrue(d.high_block_psd)
+        self.assertTrue(d.m_psd)
+        self.assertFalse(d.sufficient_surrogate_psd)   # surrogate fails yet form positive
+
+    def test_math_holds_but_source_unidentified_is_inapplicable(self):
+        A, B, D = sp.Matrix([[1]]), sp.Matrix([[2]]), sp.Matrix([[100]])
+        M = sp.Matrix(sp.BlockMatrix([[A, B], [B.T, D]]))
+        d = diagnostics_from_block(M, 1, source_form_identified=False)
+        self.assertEqual(d.certificate_status(), CERT_INAPPLICABLE)
+        self.assertFalse(d.is_genuine_certificate())
+
+    def test_undecided_obligation_is_unknown_not_false(self):
+        # An explicitly-None obligation must read UNKNOWN, never a silent False.
+        d = RigidityDiagnostics(
+            source_form_identified=True, high_block_psd=None,
+            range_inclusion_ok=None, spectral_gap=None,
+            inverse_response_sign="indefinite", schur_complement_psd=True,
+            sufficient_surrogate_psd=False, m_psd=None)
+        self.assertEqual(d.certificate_status(), CERT_UNKNOWN)
+        self.assertFalse(d.is_genuine_certificate())
+
+    def test_singular_coupling_leak_is_refuted(self):
+        # D singular, B^T leaks outside ran(D): range inclusion fails -> REFUTED.
+        A, B, D = sp.Matrix([[5]]), sp.Matrix([[0, 1]]), sp.diag(1, 0)
+        M = sp.Matrix(sp.BlockMatrix([[A, B], [B.T, D]]))
+        d = diagnostics_from_block(M, 1, source_form_identified=True)
+        self.assertFalse(d.range_inclusion_ok)
+        self.assertEqual(d.certificate_status(), CERT_REFUTED)
+
+    def test_verified_implies_m_psd_invariant(self):
+        # Soundness: a VERIFIED certificate must have the ground-truth M >= 0.
+        rng = random.Random(20261020)
+        for _ in range(60):
+            n_A = rng.randint(1, 2)
+            nD = rng.randint(1, 2)
+            M = _rand_sym(n_A + nD, rng)
+            d = diagnostics_from_block(M, n_A, source_form_identified=True)
+            if d.is_genuine_certificate():
+                self.assertTrue(d.m_psd, f"VERIFIED but M not PSD:\n{M}")
+
+    # ----- Part I.2: complete deterministic negative witness ---------------- #
+    def test_thin_negative_cone(self):
+        # The mandated counterexample: det = -1, witness (5000,1) needs denom 5000,
+        # far past the old bounded search -- the congruence method finds it exactly.
+        M = sp.Matrix([[1, -5000], [-5000, 24999999]])
+        w = negative_witness(M)
+        self.assertIsNotNone(w)
+        self.assertEqual(quad(M, w), -1)
+        self.assertTrue(all(c.is_rational for c in w))
+
+    def test_very_large_coefficients(self):
+        c = 10 ** 6
+        M = sp.Matrix([[1, -c], [-c, c * c - 1]])   # det = -1
+        w = negative_witness(M)
+        self.assertTrue(quad(M, w) < 0)
+
+    def test_singular_indefinite(self):
+        M = sp.diag(1, 0, -1)                        # rank 2, singular, indefinite
+        w = negative_witness(M)
+        self.assertTrue(quad(M, w) < 0)
+
+    def test_indefinite_with_nonnegative_diagonal(self):
+        M = sp.Matrix([[1, 2], [2, 1]])              # diag (1,1) >= 0 yet indefinite
+        w = negative_witness(M)
+        self.assertTrue(quad(M, w) < 0)
+
+    def test_zero_pivot_off_diagonal(self):
+        for M in (sp.Matrix([[0, 1], [1, 0]]),
+                  sp.Matrix([[0, 0], [0, -1]]),
+                  sp.Matrix([[0, 0, 1], [0, 1, 0], [1, 0, 0]])):
+            w = negative_witness(M)
+            self.assertIsNotNone(w)
+            self.assertTrue(quad(M, w) < 0)
+
+    def test_psd_returns_none(self):
+        for M in (sp.eye(4), sp.diag(1, 0, 2), sp.Matrix([[2, 1], [1, 2]])):
+            self.assertIsNone(negative_witness(M))
+
+    def test_congruence_covariance(self):
+        # If v witnesses P^T S P, then P v witnesses S (exact transport).
+        S = sp.Matrix([[1, 2], [2, 1]])
+        P = sp.Matrix([[1, 3], [0, 2]])              # invertible rational congruence
+        Sp = P.T * S * P
+        w = negative_witness(Sp)
+        self.assertTrue(quad(Sp, w) < 0)
+        self.assertTrue(quad(S, P * w) < 0)
+
+    def test_single_sign_flip_breaks_certificate(self):
+        # Start PD, flip one off-diagonal to force indefiniteness -> witness exists.
+        good = sp.Matrix([[2, 1], [1, 2]])
+        self.assertIsNone(negative_witness(good))
+        bad = sp.Matrix([[2, 3], [3, 2]])            # det 4-9 = -5 < 0
+        w = negative_witness(bad)
+        self.assertTrue(quad(bad, w) < 0)
+
+    def test_random_vs_independent_exact_oracle(self):
+        # Two independent EXACT methods must agree: the congruence witness finder
+        # (negative_witness) vs the all-principal-minors PSD test
+        # (is_positive_semidefinite). No float oracle is used.
+        rng = random.Random(42)
+        checked = 0
+        for _ in range(200):
+            n = rng.randint(2, 4)
+            M = _rand_sym(n, rng)
+            w = negative_witness(M)
+            psd = is_positive_semidefinite(M)
+            self.assertEqual(w is None, psd, f"disagreement on\n{M}")
+            if w is not None:
+                self.assertTrue(quad(M, w) < 0)
+            checked += 1
+        self.assertEqual(checked, 200)
+
+    # ----- Part I.3: exact-only input boundary ------------------------------ #
+    def test_float_entries_rejected_everywhere(self):
+        Mf = sp.Matrix([[1.0, 0.0], [0.0, 2.0]])
+        for fn in (is_positive_definite, is_positive_semidefinite, negative_witness):
+            with self.assertRaises(RigidityInputError):
+                fn(Mf)
+
+    def test_python_float_in_list_rejected(self):
+        with self.assertRaises(RigidityInputError):
+            is_positive_definite([[1, 0.5], [0.5, 1]])
+
+    def test_undecidable_symbolic_sign_is_explicit(self):
+        a = sp.Symbol("a", real=True)               # sign not fixed
+        with self.assertRaises(UndecidableSignError):
+            is_positive_definite(sp.Matrix([[a]]))
+
+    def test_exact_algebraic_entries_allowed(self):
+        # sqrt(2) is exact (not a Float); eigenvalues 2 +/- sqrt(2) > 0 -> PSD.
+        M = sp.Matrix([[2, sp.sqrt(2)], [sp.sqrt(2), 2]])
+        self.assertTrue(is_positive_semidefinite(M))
+        self.assertIsNone(negative_witness(M))
 
 
 if __name__ == "__main__":

@@ -11,6 +11,10 @@ import unittest
 
 import sympy as sp
 
+from observational_succ.proof_authority import (
+    FormalTheorem,
+    SourceRealization,
+)
 from observational_succ.proof_contracts import (
     CarryingContract,
     CheckedCertificate,
@@ -22,6 +26,24 @@ from observational_succ.proof_contracts import (
     TheoremReference,
     UndischargedAssumption,
 )
+
+_V414 = "leanprover/lean4:v4.14.0"
+_REV = "4bbdccd9e825cf9b2c5d1e5e5d6f1a1b2c3d4e5f"
+_MS_RECEIPT = {
+    "build_succeeded": True,
+    "toolchain": _V414,
+    "manifest_rev": _REV,
+    "theorems": {
+        "succ_mason_stothers_charZero": {
+            "axioms": ["propext", "Classical.choice", "Quot.sound"]},
+    },
+}
+
+
+def _ms_theorem():
+    return FormalTheorem(
+        name="succ_mason_stothers_charZero", toolchain=_V414, manifest_rev=_REV,
+        allowed_axioms=("propext", "Classical.choice", "Quot.sound"))
 from observational_succ.quantitative_rigidity import (
     Rat,
     conservative_surrogate,
@@ -81,13 +103,39 @@ class TestSourceRealizationWitness(unittest.TestCase):
         with self.assertRaises(ProofContractError):
             w.verify()   # authentic=True with no identification map -> rejected
 
-    def test_authenticity_with_verifying_identification_ok(self):
-        w = SourceRealizationWitness(
-            object_name="genuine_source",
-            authentic=True,
-            identification=lambda: True,    # a real identification that recomputes True
-        )
+    def test_raw_callback_identification_rejected(self):
+        # Proof Forge III hostile input: a bare `lambda: True` does NO source
+        # identification and must no longer confer authenticity.
+        w = SourceRealizationWitness(object_name="unverified_source",
+                                     authentic=True, realization=lambda: True)
+        with self.assertRaises(ProofContractError):
+            w.verify()
+
+    def test_authenticity_with_typed_level_d_realization_ok(self):
+        x = sp.Symbol("x")
+        real = SourceRealization(
+            theorem=_ms_theorem(),
+            math_object="theorem polynomials (a,b,c)",
+            source_object="SUCC abc certificate polynomials",
+            map_type="polynomial_identity",
+            data={"gen": x, "theorem_poly": x ** 2 + 1, "source_poly": x ** 2 + 1})
+        w = SourceRealizationWitness(object_name="genuine_source", authentic=True,
+                                     realization=real, receipt=_MS_RECEIPT)
         self.assertTrue(w.verify())
+
+    def test_authenticity_with_wrong_source_map_rejected(self):
+        # A valid theorem with an INVALID source map must not certify the source.
+        x = sp.Symbol("x")
+        real = SourceRealization(
+            theorem=_ms_theorem(),
+            math_object="theorem polynomials (a,b,c)",
+            source_object="SUCC abc certificate polynomials",
+            map_type="polynomial_identity",
+            data={"gen": x, "theorem_poly": x ** 2 + 1, "source_poly": x ** 2 + 2})
+        w = SourceRealizationWitness(object_name="misidentified_source", authentic=True,
+                                     realization=real, receipt=_MS_RECEIPT)
+        with self.assertRaises(ProofContractError):
+            w.verify()
 
     def test_synthetic_proxy_ok_when_not_claiming_authenticity(self):
         w = SourceRealizationWitness(object_name="aux_gram", authentic=False,

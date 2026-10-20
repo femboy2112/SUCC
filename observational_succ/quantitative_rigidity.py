@@ -45,14 +45,65 @@ import sympy as sp
 Rat = sp.Rational
 
 
+class RigidityInputError(TypeError):
+    """A non-exact input reached the trusted exact-certificate path.
+
+    Raised when a Python ``float`` or a sympy ``Float`` entry is handed to a
+    certificate predicate. A float is never a certificate: rationalize inputs
+    with :class:`sympy.Rational` (or an exact algebraic number) first. This is a
+    hard boundary, not a silent ``nsimplify`` -- approximate numbers must not be
+    laundered into claimed exact premises."""
+
+
+class UndecidableSignError(RuntimeError):
+    """The exact sign of a quantity could not be decided (e.g. it carries a free
+    symbol). The trusted path reports this explicitly rather than returning an
+    accidental boolean certificate (the fourth verdict: UNKNOWN, not False)."""
+
+
 # --------------------------------------------------------------------------- #
 # Exact linear-algebra primitives
 # --------------------------------------------------------------------------- #
-def as_exact_matrix(M) -> sp.Matrix:
-    """Coerce to an exact sympy Matrix (rationalizing python ints/Fractions)."""
-    if isinstance(M, sp.Matrix):
-        return M
-    return sp.Matrix(M)
+def as_exact_matrix(M, *, require_exact: bool = True) -> sp.Matrix:
+    """Coerce to an exact sympy Matrix, REJECTING floating-point entries.
+
+    The trusted certificate path is exact-only: any Python ``float`` or sympy
+    ``Float`` entry raises :class:`RigidityInputError`. Exact rationals,
+    integers and exact algebraic numbers (e.g. ``sqrt(2)``) are accepted.
+
+    Pass ``require_exact=False`` only for a throwaway *numeric hint* matrix whose
+    value will never back an emitted certificate (no such call currently exists
+    in the trusted path; numeric guidance is confined to private helpers that
+    re-verify their output exactly)."""
+    if not isinstance(M, sp.Matrix):
+        M = sp.Matrix(M)
+    if require_exact and M.atoms(sp.Float):
+        raise RigidityInputError(
+            "floating-point entry in the exact-certificate path; a float is "
+            "never a certificate -- rationalize with sympy.Rational first")
+    return M
+
+
+def _symmetric_part(M: sp.Matrix) -> sp.Matrix:
+    """(M + M^T)/2, the only part a real quadratic form sees (exact)."""
+    M = as_exact_matrix(M)
+    return (M + M.T) / 2
+
+
+def _sign(x) -> int:
+    """Exact sign of a number-valued expression: +1 / 0 / -1.
+
+    Raises :class:`UndecidableSignError` when the sign is not exactly decidable
+    (free symbols, or an algebraic expression sympy cannot resolve). Never
+    guesses, never rounds."""
+    x = sp.sympify(x)
+    if x.is_zero:
+        return 0
+    if x.is_positive:
+        return 1
+    if x.is_negative:
+        return -1
+    raise UndecidableSignError(f"cannot exactly decide the sign of {x!s}")
 
 
 def is_symmetric_exact(M: sp.Matrix) -> bool:
@@ -86,23 +137,21 @@ def is_positive_definite(M: sp.Matrix) -> bool:
     """Exact PD test via Sylvester (leading principal minors all > 0).
 
     Requires symmetry; a non-symmetric argument is judged by its symmetric part,
-    which is the only part a quadratic form sees."""
-    M = as_exact_matrix(M)
-    S = (M + M.T) / 2
-    for d in leading_principal_minors(S):
-        if not (sp.nsimplify(d) > 0):
-            return False
-    return True
+    which is the only part a quadratic form sees. Signs are decided exactly
+    (:func:`_sign`); an undecidable sign raises :class:`UndecidableSignError`
+    rather than silently returning a boolean."""
+    S = _symmetric_part(M)
+    return all(_sign(d) > 0 for d in leading_principal_minors(S))
 
 
 def is_positive_semidefinite(M: sp.Matrix) -> bool:
-    """Exact PSD test: symmetric and every principal minor >= 0."""
-    M = as_exact_matrix(M)
-    S = (M + M.T) / 2
-    for d in all_principal_minors(S):
-        if (d < 0) is sp.true or (sp.simplify(d) < 0):
-            return False
-    return True
+    """Exact PSD test: symmetric and every principal minor >= 0.
+
+    Leading minors alone decide only PD (Sylvester); PSD genuinely needs *all*
+    principal minors (the ``[[0,0],[0,-1]]`` trap). Signs are decided exactly;
+    an undecidable sign raises :class:`UndecidableSignError`."""
+    S = _symmetric_part(M)
+    return all(_sign(d) >= 0 for d in all_principal_minors(S))
 
 
 def quad(M: sp.Matrix, v: Sequence) -> sp.Expr:
@@ -112,53 +161,108 @@ def quad(M: sp.Matrix, v: Sequence) -> sp.Expr:
     return sp.expand((v.T * M * v)[0, 0])
 
 
-def negative_witness(M: sp.Matrix, max_denom: int = 64) -> Optional[sp.Matrix]:
-    """Return an EXACT rational vector v with v^T M v < 0, or None if M is PSD.
+def _congruence_reduce(S: sp.Matrix) -> Tuple[bool, Optional[sp.Matrix]]:
+    """Lagrange symmetric-congruence reduction of an exact symmetric matrix.
 
-    Method: a symmetric rational matrix that is not PSD has an open cone of
-    negative directions, hence a rational one. We locate the direction by a
-    numeric eigenvector (heuristic), rationalize it, and *verify exactly*. The
-    certificate is the exact check ``quad(M, v) < 0``; the float step only guides
-    the search and never appears in the conclusion."""
-    M = as_exact_matrix(M)
-    S = (M + M.T) / 2
-    if is_positive_semidefinite(S):
-        return None
-    # numeric guidance: most-negative eigenpair of the float image
-    Mf = sp.matrix2numpy(S, dtype=float)
-    import numpy as np
+    Returns ``(True, None)`` when ``S`` is positive semidefinite, or
+    ``(False, v)`` with ``v`` an exact column vector such that ``v^T S v < 0``.
 
-    w, V = np.linalg.eigh(Mf)
-    order = np.argsort(w)
-    for j in order:
-        if w[j] >= -1e-12:
-            break
-        direction = V[:, j]
-        for denom in (8, 16, 32, max_denom, 256, 1024):
-            v = sp.Matrix([sp.Rational(float(x)).limit_denominator(denom)
-                           for x in direction])
-            if v.is_zero_matrix:
-                continue
-            if quad(S, v) < 0:
-                return v
-    # exact fallback: search coordinate and pair directions
+    **Completeness.** Every symmetric matrix over an ordered field is congruent
+    to a diagonal form. This routine realises that congruence while tracking the
+    transform ``P`` so that ``P^T S P`` equals the running matrix ``W`` at all
+    times. Each step either (a) finds a strictly negative diagonal pivot -> the
+    current basis vector ``P[:, i]`` is an exact negative direction; (b) uses a
+    strictly positive pivot to eliminate its row/column by congruence (the
+    classic Schur step), removing one index; (c) with all remaining diagonals
+    zero but some off-diagonal ``c != 0``, the indefinite block
+    ``[[0, c], [c, 0]]`` gives the exact direction ``P[:, i] -/+ P[:, k]``; or
+    (d) the remaining block is entirely zero, so ``S`` is PSD. Case (b) strictly
+    shrinks the active set, so the loop terminates in <= n steps. There is NO
+    numerical step, hence no spurious third 'failed' verdict for a supported
+    exact input -- the recurrence that defeated the old float heuristic
+    (``[[1, -5000], [-5000, 24999999]]``, witness ``(5000, 1)``) is handled
+    structurally by the positive-pivot elimination.
+
+    An undecidable diagonal sign (free symbols) raises
+    :class:`UndecidableSignError`."""
+    S = as_exact_matrix(S)
     n = S.rows
-    cands: List[sp.Matrix] = []
-    for i in range(n):
-        e = sp.zeros(n, 1)
-        e[i] = 1
-        cands.append(e)
-    for i, k in combinations(range(n), 2):
-        for s in (1, -1):
-            e = sp.zeros(n, 1)
-            e[i] = 1
-            e[k] = s
-            cands.append(e)
-    for v in cands:
-        if quad(S, v) < 0:
-            return v
-    raise RuntimeError("matrix is not PSD but no rational witness found; "
-                       "increase max_denom")
+    W = S.copy()                      # running congruent matrix  W = P^T S P
+    P = sp.eye(n)                     # columns: current basis vectors in orig coords
+    remaining = list(range(n))
+    while remaining:
+        # Guard: every remaining diagonal sign must be exactly decidable.
+        for i in remaining:
+            if W[i, i].is_zero is None and not W[i, i].is_number:
+                raise UndecidableSignError(
+                    f"undecidable diagonal entry during reduction: {W[i, i]!s}")
+        # (a) a strictly negative diagonal pivot is an immediate witness.
+        neg = [i for i in remaining if W[i, i].is_negative]
+        if neg:
+            return False, P[:, neg[0]]
+        # (b) eliminate a strictly positive pivot by symmetric congruence.
+        pos = [i for i in remaining if W[i, i].is_positive]
+        if pos:
+            i = pos[0]
+            piv = W[i, i]
+            mult = {j: W[i, j] / piv for j in remaining if j != i}  # exact / exact
+            for j, m in mult.items():        # column op: W <- W E,  P <- P E
+                if m == 0:
+                    continue
+                W[:, j] = W[:, j] - m * W[:, i]
+                P[:, j] = P[:, j] - m * P[:, i]
+            for j, m in mult.items():        # row op: W <- E^T W   (same m)
+                if m == 0:
+                    continue
+                W[j, :] = W[j, :] - m * W[i, :]
+            remaining.remove(i)
+            continue
+        # (c) all remaining diagonals are zero; a nonzero off-diagonal is a
+        #     [[0, c], [c, 0]] indefinite 2x2 block -> exact negative direction.
+        found = None
+        for a in range(len(remaining)):
+            for b in range(a + 1, len(remaining)):
+                i, k = remaining[a], remaining[b]
+                if not W[i, k].is_zero:
+                    found = (i, k, W[i, k])
+                    break
+            if found:
+                break
+        if found is not None:
+            i, k, c = found
+            # (e_i - e_k)^T W (e_i - e_k) = -2c ;  (e_i + e_k)^T W (e_i + e_k) = +2c
+            v = P[:, i] - P[:, k] if c.is_positive else P[:, i] + P[:, k]
+            return False, v
+        # (d) remaining block is entirely zero -> contributes 0 -> S is PSD.
+        break
+    return True, None
+
+
+def negative_witness(M: sp.Matrix, max_denom: Optional[int] = None) -> Optional[sp.Matrix]:
+    """Return an EXACT vector v with ``v^T M v < 0``, or ``None`` if M is PSD.
+
+    Complete and deterministic. Runs the Lagrange symmetric-congruence reduction
+    (:func:`_congruence_reduce`) on the symmetric part. For a supported exact
+    (rational / exact-algebraic) input the outcome is ALWAYS one of two verdicts:
+    ``None`` (CERTIFIED PSD) or an exact ``v`` with ``v^T M v < 0`` (CERTIFIED
+    NON-PSD). There is no numerical-failure third outcome -- the old
+    float-eigenvector + bounded-denominator search is gone (it could miss a thin
+    negative cone, e.g. ``[[1, -5000], [-5000, 24999999]]`` whose witness
+    ``(5000, 1)`` needs denominator 5000, far past the tested bound).
+
+    ``max_denom`` is accepted and ignored (the method no longer rounds); it is
+    retained only for backward call compatibility."""
+    del max_denom  # no rounding; the algorithm is exact and complete
+    S = _symmetric_part(M)
+    psd, v = _congruence_reduce(S)
+    if psd:
+        return None
+    # the witness is exact; re-verify the defining obligation exactly.
+    if not (quad(S, v) < 0):
+        raise RuntimeError(
+            "internal invariant violated: congruence witness was not negative "
+            f"(got {quad(S, v)!s}); this should be unreachable")
+    return v
 
 
 # --------------------------------------------------------------------------- #
@@ -368,37 +472,89 @@ def uniform_gap_profile(family, Ns: Sequence[int]) -> List[Tuple[int, sp.Expr]]:
     return [(N, min_eigenvalue_exact(family(N))) for N in Ns]
 
 
+#: the four disjoint certificate verdicts (never collapse them to one bool)
+CERT_VERIFIED = "VERIFIED"         # all mathematical obligations met -> M >= 0, source-identified
+CERT_REFUTED = "REFUTED"           # an obligation definitely FAILS -> not a certificate
+CERT_INAPPLICABLE = "INAPPLICABLE"  # math is fine but this is not a *source* certificate
+CERT_UNKNOWN = "UNKNOWN"           # an obligation could not be decided
+
+
 @dataclass
 class RigidityDiagnostics:
-    """Six INDEPENDENT rigidity obligations -- deliberately not a single score.
+    """INDEPENDENT rigidity obligations -- deliberately not a single score.
 
-    A global positivity certificate requires *all* of these; a surrogate that
-    satisfies some while silently failing others (the recurrent Gemini error) is
-    not a certificate. Each field is exact / typed; there is no `.score()`."""
-    source_form_identified: bool       # is the form the genuine source, not a proxy?
-    range_inclusion_ok: Optional[bool]  # ran(B^T) ⊆ ran(D) (None if D > 0)
+    A global positivity certificate requires *all* of the load-bearing ones; a
+    surrogate that satisfies some while silently failing others (the recurrent
+    Gemini error) is not a certificate. Each field is exact / typed; there is no
+    `.score()`.
+
+    The soundness fix (Proof Forge III, Part I.1): ``high_block_psd`` is now a
+    first-class, load-bearing obligation. An invalid high block ``D`` must never
+    receive a successful verdict merely because a low complement happened to be
+    positive -- the exact trap ``M = diag(1, -1)`` (A=1, B=0, D=-1) has a
+    positive shorted complement (A=1) and trivial range inclusion (B=0), yet
+    ``e_2^T M e_2 = -1 < 0``. Without the high-block check that matrix was
+    certified. It is now ``REFUTED``."""
+    source_form_identified: bool        # is the form the genuine source, not a proxy?
+    high_block_psd: Optional[bool]      # D >= 0 (load-bearing: D is a principal block of M)
+    range_inclusion_ok: Optional[bool]  # ran(B^T) ⊆ ran(D) (None if D > 0, i.e. N/A)
     spectral_gap: Optional[sp.Expr]     # kappa > 0 if gapped, else None / 0
     inverse_response_sign: str          # 'positive' | 'negative' | 'indefinite'
-    schur_complement_psd: bool          # the TRUE inverse-response bound
-    sufficient_surrogate_psd: bool      # a conservative A - kappa^{-1} B B^T test
+    schur_complement_psd: Optional[bool]  # the TRUE (generalized) Schur complement >= 0
+    sufficient_surrogate_psd: bool      # a conservative A - kappa^{-1} B B^T test (NOT a cert)
+    m_psd: Optional[bool] = None        # ground-truth M >= 0 (cross-check; None if not computed)
+
+    def certificate_status(self) -> str:
+        """One of VERIFIED / REFUTED / INAPPLICABLE / UNKNOWN.
+
+        The obligations, in order, for a genuine *source* positivity certificate
+        on ``M = [[A, B], [B^T, D]]``:
+
+        1. the high block is PSD (``D >= 0``) -- else M has a negative principal
+           block and cannot be PSD;
+        2. when ``D`` is singular, the coupling does not leak outside ``ran(D)``
+           (range inclusion);
+        3. the true generalized Schur complement is PSD;
+        4. the source form is actually identified (a perfectly real positivity
+           fact about a *proxy* form is INAPPLICABLE as a source certificate).
+
+        An obligation that is explicitly ``None`` (undecided) yields UNKNOWN; a
+        definitely-failed obligation yields REFUTED. The conservative surrogate
+        plays NO role in this verdict."""
+        # undecided obligations -> UNKNOWN (never a silent False/True)
+        if self.high_block_psd is None or self.schur_complement_psd is None:
+            return CERT_UNKNOWN
+        # definite failures -> REFUTED
+        if self.high_block_psd is False:
+            return CERT_REFUTED
+        if self.range_inclusion_ok is False:      # D singular and coupling leaks out
+            return CERT_REFUTED
+        if self.schur_complement_psd is False:
+            return CERT_REFUTED
+        # math holds; is it a *source* certificate?
+        if not self.source_form_identified:
+            return CERT_INAPPLICABLE
+        return CERT_VERIFIED
 
     def is_genuine_certificate(self) -> bool:
-        """A genuine global certificate needs the TRUE Schur complement PSD, the
-        source form identified, and (when D is singular) range inclusion. The
-        conservative surrogate is neither necessary nor sufficient and is NOT part
-        of this conjunction."""
-        return (self.schur_complement_psd
-                and self.source_form_identified
-                and (self.range_inclusion_ok in (True, None)))
+        """True iff :meth:`certificate_status` is VERIFIED. This now requires the
+        high block ``D >= 0`` and (when D is singular) range inclusion, in
+        addition to the true Schur complement being PSD and the source form being
+        identified. The conservative surrogate is neither necessary nor
+        sufficient and is NOT part of the conjunction."""
+        return self.certificate_status() == CERT_VERIFIED
 
     def as_record(self) -> dict:
         return {
             "source_form_identified": self.source_form_identified,
+            "high_block_psd": self.high_block_psd,
             "range_inclusion_ok": self.range_inclusion_ok,
             "spectral_gap": None if self.spectral_gap is None else str(self.spectral_gap),
             "inverse_response_sign": self.inverse_response_sign,
             "schur_complement_psd": self.schur_complement_psd,
             "sufficient_surrogate_psd": self.sufficient_surrogate_psd,
+            "m_psd": self.m_psd,
+            "certificate_status": self.certificate_status(),
             "is_genuine_certificate": self.is_genuine_certificate(),
         }
 
@@ -418,13 +574,15 @@ def diagnostics_from_block(M: sp.Matrix, n_A: int, *,
                            kappa: Optional[sp.Expr] = None) -> RigidityDiagnostics:
     A, B, D = _split(M, n_A)
     D_pd = is_positive_definite(D)
-    gap = min_eigenvalue_exact(D) if D_pd else (0 if is_positive_semidefinite(D) else None)
+    D_psd = True if D_pd else is_positive_semidefinite(D)
+    gap = min_eigenvalue_exact(D) if D_pd else (0 if D_psd else None)
     rng = None if D_pd else range_inclusion_holds(M, n_A)
     if D_pd:
         S = schur_complement(M, n_A)
     else:
         S = shorted_complement(M, n_A)
-    if is_positive_semidefinite(S):
+    schur_psd = is_positive_semidefinite(S)
+    if schur_psd:
         sign = "positive"
     elif is_positive_semidefinite(-S):
         sign = "negative"
@@ -435,11 +593,13 @@ def diagnostics_from_block(M: sp.Matrix, n_A: int, *,
         surrogate_psd = is_positive_semidefinite(conservative_surrogate(M, n_A, kappa))
     return RigidityDiagnostics(
         source_form_identified=source_form_identified,
+        high_block_psd=D_psd,
         range_inclusion_ok=rng,
         spectral_gap=(gap if (gap is not None and gap > 0) else None),
         inverse_response_sign=sign,
-        schur_complement_psd=is_positive_semidefinite(S),
+        schur_complement_psd=schur_psd,
         sufficient_surrogate_psd=surrogate_psd,
+        m_psd=is_positive_semidefinite(M),
     )
 
 
