@@ -413,6 +413,20 @@
       "code": [
         "observational_succ/proof_authority.py"
       ]
+    },
+    {
+      "namespace": "ABC_EFFECTIVE",
+      "bare_prefix": "ABC-EFF",
+      "fq_prefix": "ABC-EFF",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md"
+      ],
+      "id_count": 5,
+      "status": "PROVED LOCAL / REFUTED proposed truncation; academic novelty UNVERIFIED",
+      "topic": "Uniform primitive divisor discrepancy, effective abc mean convergence and t>=1 moment divergence",
+      "code": [
+        "observational_succ/abc_effective_mean.py"
+      ]
     }
   ],
   "resolved_collisions": [

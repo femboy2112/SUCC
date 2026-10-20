@@ -1,5 +1,10 @@
 # Claim Index
 
+Post-main research draft: [effective primitive abc means](CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md)
+(ABC-EFF-01–05) gives a uniform primitive divisor discrepancy, explicit convergence
+for every δ<(2−3t)/5 when 0≤t<2/3, and failure of quadratic moments for t≥1.
+Complete paper proofs; full analytic theorem not formalized; novelty unverified.
+
 **Academic Main VII (2026-10-20):**
 [reviewed claim crosswalk](CLAIM_SUPPLEMENT_ACADEMIC_MAIN_VII.md),
 [integration audit](academic_main_vii/integration_audit.md),

@@ -3,8 +3,10 @@
 **Current Academic Main VII frontier:** see
 [the scoped research map](academic_main_vii/research_frontier.md).
 The primitive abc weighted moment and Euler-product mean are paper-proved for
-0≤t<2/3. Next arithmetic obligations are an explicit convergence rate and the
-t=2/3 endpoint; the older diagonal t<1/2 barrier is a method boundary.
+0≤t<2/3. This research draft proves an explicit convergence rate in
+[ABC-EFF-01–05](CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md) and rules out quadratic
+moments for t≥1. The interval[2/3,1), including the t=2/3 endpoint, remains open;
+the older diagonal t<1/2 barrier is a method boundary.
 Formal slope divisibility/injectivity and source-faithful moment-Gram inverse
 corrections are separate research families. RH, integer abc, binary Goldbach
 and the authentic signed S₄ sign remain open. Legacy proof metadata cannot
