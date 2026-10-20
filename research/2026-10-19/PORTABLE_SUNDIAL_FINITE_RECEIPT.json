@@ -80,5 +80,32 @@
     "gcd_at_time_20": 22,
     "ratio_at_time_20": "3/5"
   },
-  "status": "EXACT_FINITE_PORTABLE_SUNDIAL_SOURCE_CONTRACT"
+  "status": "EXACT_FINITE_PORTABLE_SUNDIAL_SOURCE_CONTRACT",
+  "three_shadow_reconstruction": {
+    "canonical_frame": [
+      1,
+      2,
+      1,
+      1
+    ],
+    "counterfactual_probe_access_authorized": false,
+    "homothetic_other_frame": [
+      2,
+      4,
+      2,
+      2
+    ],
+    "normalized": [
+      "1/2",
+      "1/2",
+      "1/2"
+    ],
+    "original_integer_scale_authenticated": false,
+    "ratio_paths_equivalent": true,
+    "readings": [
+      "1/2",
+      "1",
+      "1/3"
+    ]
+  }
 }
