@@ -351,6 +351,15 @@ class TestPortablePrimeSundial(unittest.TestCase):
         self.assertEqual(report["diagonal_prime_power_windows_nonempty"],306)
         self.assertEqual(report["invalid_source_or_clock_contracts_rejected"],2)
         self.assertEqual(report["prime_phase_wheel"]["relative_phase"],119)
+        self.assertEqual(report["three_shadow_reconstruction"]["readings"],
+                         ["1/2","1","1/3"])
+        self.assertEqual(report["three_shadow_reconstruction"]["canonical_frame"],
+                         [1,2,1,1])
+        self.assertEqual(report["three_shadow_reconstruction"]["homothetic_other_frame"],
+                         [2,4,2,2])
+        self.assertTrue(report["three_shadow_reconstruction"]["ratio_paths_equivalent"])
+        self.assertFalse(report["three_shadow_reconstruction"]["original_integer_scale_authenticated"])
+        self.assertFalse(report["three_shadow_reconstruction"]["counterfactual_probe_access_authorized"])
         self.assertFalse(report["source_authenticated"])
         self.assertFalse(report["physical_time_model"])
         self.assertFalse(report["primality_inferred_from_phase"])
