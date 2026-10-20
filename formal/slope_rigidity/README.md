@@ -50,9 +50,38 @@ product are not claimed as formalized by this module.**
 
 ## Verification status and reproduction
 
-The checked-in Lean source is a formalization candidate until a successful real
-kernel run is recorded. No receipt is manufactured. Run the dispatch-only
-`Primitive slope kernel research` workflow on the exact research commit, or:
+**KERNEL_CHECKED_NOT_AUTHORITY_ADMITTED**, 2026-10-20. All nine declarations
+were checked by the actual pinned Lean kernel in
+[run 39508738928](https://github.com/femboy2112/SUCC/actions/runs/39508738928),
+job `118924873774`, on PR #211 head
+`e3d01df4a53a4e291d0e16a20d530493c10c6901`. GitHub checked out its synthetic merge
+commit `3cd6019562bc530b16764e4ec6e9acae6fe53742`; the record's eight exact source
+hashes all match the research head's audited source files. The formal build and
+exports succeeded on the first run. The `missing_reducedness` and `oversized_gap`
+negative elaboration controls were both rejected. No proof shortcut occurred in
+the accepted source or theorem exports.
+
+The [actual build record](receipts/kernel-observation-39508738928.json) was
+reconstructed from the complete encoded record in the hosted job log and checked
+independently by the coordinator. Its file SHA256 is
+`094a35e5ed7dae06d99efb159e6283a674862f5441499f6f60e0efa12614cdc1`;
+canonical JSON SHA256 is
+`a8d7f0884a558771c82a676a9a14f6a8cdd8abe6f410fc026f4bb2541622d924`.
+All nine theorem type digests were recomputed successfully. The main determinant
+gap's exact type digest is
+`0830694aeba6822f94ee18b12e46d93baaaf238b89d9f7963b75285324471d01`.
+
+The axiom audit is precise: integer determinant divisibility and the noncoprime
+modulus control use `propext, Quot.sound`; natural-to-integer divisibility,
+the absolute-value bound and the nonprimitive control use `propext`; the other
+four declarations use `propext, Classical.choice, Quot.sound`. No other axiom
+occurs. This is kernel verification of the stated discrete arithmetic theorems,
+not a formal proof of the subsequent real counting argument or moment theorem.
+The research record has **not** been added to the separate runtime proof-authority
+catalogue; a JSON file does not perform that admission.
+
+To reproduce, run `Primitive slope kernel research` on the exact research sources,
+or:
 
 ```sh
 cd formal/slope_rigidity
