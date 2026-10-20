@@ -13,7 +13,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from fractions import Fraction
-from math import gcd, prod
+from math import gcd, prod, lcm
 
 from .rad_ris_transport import rad, ris, is_prime, prime_powers, MAX_INTEGER
 
@@ -124,6 +124,23 @@ class CRTSundialReceipt:
 
 
 @dataclass(frozen=True)
+class SundialThreeShadows:
+    """Three mathematical rational probes; no physical probe access asserted.
+
+    (0,0), (1,0), (0,1) determine normalized (a/b,u/b,v/b).
+    """
+    origin: Fraction
+    numerator_step: Fraction
+    denominator_step: Fraction
+    normalized_a: Fraction
+    normalized_u: Fraction
+    normalized_v: Fraction
+    original_source: str
+    source_authenticated: bool = False
+    counterfactual_probes_authorized: bool = False
+
+
+@dataclass(frozen=True)
 class BirthReading:
     arm: str
     original_radical: int
@@ -219,6 +236,54 @@ class PortablePrimeSundial:
         A,B=self.arms(h,j)
         return PortablePrimeSundial(A,B,self.u,self.v,
                                    self.original_source,self.unit_basis)
+
+    def three_shadows(self) -> SundialThreeShadows:
+        """Recover complete projective source data from three ratio probes.
+
+        These are mathematical counterfactual reports, not an authorization
+        to reset a destructive original carrier or observe three branches.
+        """
+        q00,q10,q01=self.ratio(0,0),self.ratio(1,0),self.ratio(0,1)
+        x=q00
+        mu=q10-q00
+        nu=q00/q01-1
+        assert x==Fraction(self.a,self.b)
+        assert mu==Fraction(self.u,self.b)
+        assert nu==Fraction(self.v,self.b)
+        return SundialThreeShadows(q00,q10,q01,x,mu,nu,self.original_source)
+
+    @classmethod
+    def reconstruct_three_shadows(cls,q00:Fraction,q10:Fraction,q01:Fraction,
+                                  original_source:str,unit_basis:str
+                                  )->PortablePrimeSundial:
+        """Choose the *minimal integer projective representative*, not source.
+
+        The rational dynamics are identical, but absolute source scale,
+        common divisors and p-adic occupations are NOT recovered.
+        """
+        if any(type(q) is not Fraction for q in (q00,q10,q01)):
+            raise SundialContractError("three ratio measurements must be exact Fractions")
+        if q00<=0 or q10<=q00 or q01<=0 or q01>=q00:
+            raise SundialContractError("three shadows must have positive SUCC units")
+        x,mu,nu=q00,q10-q00,q00/q01-1
+        B=lcm(x.denominator,mu.denominator,nu.denominator)
+        A,U,V=x*B,mu*B,nu*B
+        assert A.denominator==U.denominator==V.denominator==1
+        frame=cls(int(A),B,int(U),int(V),original_source,unit_basis)
+        assert gcd(gcd(frame.a,frame.b),gcd(frame.u,frame.v))==1
+        assert frame.ratio(0,0)==q00
+        assert frame.ratio(1,0)==q10
+        assert frame.ratio(0,1)==q01
+        return frame
+
+    def projectively_equal(self,other:PortablePrimeSundial)->bool:
+        """All ratio reports on N^2 coincide iff full frames are homothetic."""
+        if not isinstance(other,PortablePrimeSundial):
+            raise SundialContractError("comparison requires a full rational source frame")
+        return (Fraction(self.a,self.b),Fraction(self.u,self.b),
+                Fraction(self.v,self.b))==(
+                Fraction(other.a,other.b),Fraction(other.u,other.b),
+                Fraction(other.v,other.b))
 
     def prime_clock(self,p:int,depth:int=1,offset:int=0)->PrimeSundialReading:
         """Class of n with p^depth dividing A_n and B_(n+offset).
