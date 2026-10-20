@@ -20,7 +20,7 @@ visible. Status vocabulary: CLASSICAL / PROVED LOCAL / TESTED MODEL / HYPOTHESIS
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Dict, List, Optional, Sequence
+from typing import Callable, Dict, List, Optional, Sequence, Tuple
 
 _VALID_STATUS = {
     "CLASSICAL", "PROVED LOCAL", "TESTED MODEL", "HYPOTHESIS",
@@ -134,4 +134,173 @@ class ProofContract:
             "method": self.method,
             "status": self.status,
             "open_obligations": list(self.open_obligations),
+        }
+
+
+# =========================================================================== #
+# Witness-carrying contracts (Operation Rigidity Forge, Part VIII)
+#
+# The classes above track *what is claimed*. The classes below make a contract
+# carry *authority* -- a proof object that re-verifies itself, an external theorem
+# reference with its audited axioms, an honestly-flagged undischarged assumption, a
+# source-realization witness that a bare boolean cannot fake, and a transport whose
+# validity is CHECKED on a witness rather than asserted.
+#
+# Guiding rule: **metadata must never impersonate proof.** A `CheckedCertificate`
+# has no stored truth value; its `verify()` recomputes an exact certificate. A
+# `SourceRealizationWitness` claiming authenticity WITHOUT an identification map is
+# rejected. Lean / mathlib / an independent exact oracle remains the authority on
+# formal derivations; this layer specializes in source identification, transport
+# obligations, quantitative error accounting, and obstruction reporting.
+# =========================================================================== #
+@dataclass
+class CheckedCertificate:
+    """A proof object that re-verifies itself by EXACT recomputation.
+
+    ``holds`` is never stored -- it is produced by calling ``check()``, which must
+    recompute an exact certificate and return the literal ``True``. A truthy-but-not-
+    True value (a nonzero int, a nonempty list) is treated as a failure, so a sloppy
+    check cannot pass as a proof."""
+    name: str
+    check: Callable[[], object]
+    description: str = ""
+
+    def verify(self) -> bool:
+        result = self.check()
+        if result is not True:
+            raise ProofContractError(
+                f"certificate {self.name!r} did not verify (got {result!r}, "
+                f"require literal True)"
+            )
+        return True
+
+
+@dataclass(frozen=True)
+class TheoremReference:
+    """An EXTERNAL authority that discharges an obligation (e.g. a mathlib theorem).
+
+    The SUCC layer does not re-prove it; it records the authority and, for a formal
+    checker, the audited axiom set from ``#print axioms``. The authority is
+    explicitly NOT the SUCC layer -- that separation is the point."""
+    name: str                     # e.g. "Polynomial.abc"
+    system: str                   # e.g. "mathlib4 @ <rev>, Lean 4.x"
+    axioms: Tuple[str, ...] = ()  # audited #print axioms set
+    url: str = ""
+
+    def uses_only(self, allowed: Sequence[str]) -> bool:
+        return all(ax in set(allowed) for ax in self.axioms)
+
+
+@dataclass(frozen=True)
+class UndischargedAssumption:
+    """An analytic hypothesis the contract DEPENDS ON but does not prove here.
+
+    Recording it explicitly is the difference between an honest 'PROVED LOCAL
+    conditional on X' and a silent overclaim."""
+    name: str
+    statement: str
+    why_needed: str
+
+
+@dataclass
+class SourceRealizationWitness:
+    """Whether the object is the genuine source or a synthetic proxy.
+
+    ``authentic=True`` is ACCEPTED only when an ``identification`` callable is
+    supplied and recomputes to literal True. A bare ``authentic=True`` with no
+    identification is rejected: a boolean is not a source certificate (AGENTS.md
+    sec. 6)."""
+    object_name: str
+    authentic: bool
+    identification: Optional[Callable[[], object]] = None
+    note: str = ""
+
+    def verify(self) -> bool:
+        if not self.authentic:
+            return True
+        if self.identification is None:
+            raise ProofContractError(
+                f"{self.object_name!r} asserts source authenticity with NO "
+                f"identification witness: a boolean is not a source certificate"
+            )
+        if self.identification() is not True:
+            raise ProofContractError(
+                f"{self.object_name!r} identification witness did not verify"
+            )
+        return True
+
+
+@dataclass
+class ProofTransport:
+    """Transport of one established result to another via a translation map.
+
+    VALID only if ``witness_check`` recomputes (exactly) that applying the map to the
+    source's certified conclusion actually yields the target's conclusion. An invalid
+    transport -- mismatched hypotheses, an illegal quantifier swap, or a false
+    implication on a concrete witness -- fails ``verify()`` and is rejected, instead
+    of being asserted by a label."""
+    source: str
+    target: str
+    witness_check: Callable[[], object]
+    note: str = ""
+
+    def verify(self) -> bool:
+        result = self.witness_check()
+        if result is not True:
+            raise ProofContractError(
+                f"transport {self.source!r} -> {self.target!r} is INVALID "
+                f"(witness check returned {result!r})"
+            )
+        return True
+
+
+@dataclass
+class CarryingContract:
+    """A proof contract bundled with the authority that actually discharges it.
+
+    ``verify()`` runs every attached certificate, source witness, and transport, and
+    requires that an external ``TheoremReference`` is present whenever the claimed
+    status is CLASSICAL with no in-repo checked certificate (so 'CLASSICAL' cannot be
+    a bare label). Returns a structured verification record; raises on any failure."""
+    contract: ProofContract
+    certificates: List[CheckedCertificate] = field(default_factory=list)
+    theorem_refs: List[TheoremReference] = field(default_factory=list)
+    undischarged: List[UndischargedAssumption] = field(default_factory=list)
+    source_witness: Optional[SourceRealizationWitness] = None
+    transports: List[ProofTransport] = field(default_factory=list)
+
+    def __post_init__(self):
+        # CLASSICAL / PROVED LOCAL must be backed by *something* checkable, not a bare
+        # label: at least one checked certificate or an external theorem reference.
+        if self.contract.status in ("CLASSICAL", "PROVED LOCAL"):
+            if not self.certificates and not self.theorem_refs:
+                raise ProofContractError(
+                    f"{self.contract.name!r} is {self.contract.status} but carries "
+                    f"neither a checked certificate nor a theorem reference -- a "
+                    f"status label is not a proof"
+                )
+        # a contract declaring source_authentic must carry a verifying witness
+        if self.contract.source_authentic and self.source_witness is None:
+            raise ProofContractError(
+                f"{self.contract.name!r} sets source_authentic=True but has no "
+                f"SourceRealizationWitness"
+            )
+
+    def verify(self) -> Dict[str, object]:
+        checked = []
+        for c in self.certificates:
+            c.verify()
+            checked.append(c.name)
+        if self.source_witness is not None:
+            self.source_witness.verify()
+        for t in self.transports:
+            t.verify()
+        return {
+            "name": self.contract.name,
+            "status": self.contract.status,
+            "certificates_verified": checked,
+            "theorem_refs": [(r.name, r.system, r.axioms) for r in self.theorem_refs],
+            "undischarged_assumptions": [(u.name, u.statement) for u in self.undischarged],
+            "source_authentic": self.contract.source_authentic,
+            "transports_verified": [(t.source, t.target) for t in self.transports],
         }
