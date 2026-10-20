@@ -42,8 +42,9 @@ core of the degree descent, with the polynomial lemmas disclosed as formalizatio
 ## First real boss — Mason–Stothers (polynomial abc): **DEFEATED**
 
 Complete classical proof + exact SUCC certificate + char-`p` counterexample + Lean arithmetic core +
-integer obstruction. Two independent verification routes (certificate oracle vs factor-list adversarial
-oracle, 380 triples, 0 violations) — the disagreement between them caught a real backwards-divisibility
+integer obstruction. Two independent verification routes (certificate via `factor_list`+Wronskian vs the
+committed seeded oracle `tests/test_mason_stothers_oracle.py` via gcd-squarefree radical + direct bound
+check, 380 triples, 0 violations) — the disagreement between them caught a real backwards-divisibility
 bug. See `MASON_STOTHERS_PROOF.md` and `MASON_STOTHERS_CERTIFICATE.json`. Status **CLASSICAL** (no
 mathematical novelty; the contribution is the reusable certificate). Completion criterion met: expressing,
 verifying, generalizing, and interrogating the theorem is now one module, not ad-hoc scripts.

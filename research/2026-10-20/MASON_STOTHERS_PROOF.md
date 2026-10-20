@@ -87,11 +87,13 @@ Per the Proof-Forge discipline, the certificate is checked by two methodological
 
 1. **Certificate oracle** (`mason_stothers_certificate`, sympy over an exact field): per-triple it checks
    hypotheses, the three-form Wronskian agreement, `W ≠ 0`, `M | W`, and the degree bound.
-2. **Independent adversarial oracle** (`scratchpad/ms_oracle.py`): 380 random coprime triples over `ℚ`
-   and `GF(11)` (char > deg), with the radical degree recomputed by `factor_list` (distinct irreducible
-   factors) — a *different* route than the module's `gcd`-squarefree `poly_radical`. Result:
-   **0 bound violations, 0 radical mismatches, 0 unverified valid triples.** The disagreement between the
-   routes in the first draft (the backwards divisibility) is exactly what the second route is for.
+2. **Independent adversarial oracle** (committed: `tests/test_mason_stothers_oracle.py`, fixed seed):
+   **380** random coprime triples over `ℚ` and `GF(11)` (char > deg), with the radical degree recomputed
+   by the `gcd`-squarefree route `P/gcd(P,P')` — genuinely *distinct* from the certificate's `factor_list`
+   radical — and the conclusion `max deg ≤ deg rad − 1` checked **directly**, not through the Wronskian/
+   divisibility mechanism. Result: **0 bound violations, 0 radical mismatches, 0 unverified valid triples.**
+   The disagreement between the routes in the first draft (the backwards divisibility, invisible on tight
+   cases where `M` and `W` are scalar multiples) is exactly what the second route is for.
 
 ## 6. Hostile controls (hypotheses are load-bearing)
 

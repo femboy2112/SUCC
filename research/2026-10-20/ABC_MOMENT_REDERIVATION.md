@@ -18,11 +18,21 @@ Re-derivation (independent of the module's prose):
    `S_t(X) = Σ_{c≤X} ris(c)^t · I(c)`, `I(c) = Σ_{a+b=c,(a,b)=1} ris(a)^t ris(b)^t`.
 2. Inner Cauchy–Schwarz: `I(c) ≤ (Σ_{a<c} ris(a)^{2t})^{1/2}(Σ_{a<c} ris(c−a)^{2t})^{1/2} ≤ Σ_{n<c} ris(n)^{2t}`.
 3. Averaging input (ABC-CLK-02 / Euler product): `Σ_{n≤c} ris(n)^θ ≤ M(θ)·c` for `θ < 1`, where
-   `M(θ) = ∏_p (1 + (p^θ−1)/(p−p^θ))`-type Euler product converges iff `θ < 1`. So `I(c) ≤ M(2t)·c`.
+   `M(θ) = ∏_p (1 + a_p)`, `a_p = (p^θ − 1) / (p²(1 − p^{θ−1}))` (as implemented in
+   `ris_moment_euler_factor_upper`). The per-prime term is `a_p ~ p^{θ−2}`, so the product converges iff
+   `θ < 1`. So `I(c) ≤ M(2t)·c`. (An earlier draft of this note wrote the denominator as `p − p^θ`, which
+   gives a *divergent* product `~Σ p^{θ−1}`; that was a transcription error — the executable path always
+   used the correct `p²(1 − p^{θ−1})` factor above, so every reproduced constant is unaffected.)
 4. Outer: `S_t(X) ≤ M(2t) Σ_{c≤X} c·ris(c)^t ≤ M(2t)·X·Σ_{c≤X} ris(c)^t ≤ M(2t)·X·M(t)·X = M(t)M(2t)X²`.
 
 **Binding constraint: `2t < 1`** (step 3 needs the inner exponent `2t < 1`). This is the exact ceiling of
 *this* method; it is not a property of `S_t` itself.
+
+**Conditioning (stated honestly).** The whole bound rests on the imported averaging lemma **ABC-CLK-02**
+(`abc_clock_families.py`): `Σ_{n≤c} ris(n)^θ ≤ M(θ)·c` for `θ<1`. This re-derivation audits the algebra
+*from* ABC-CLK-02 up to `M(t)M(2t)X²` and the convergent Euler factor `a_p ~ p^{θ−2}`; it does **not**
+re-prove ABC-CLK-02 itself. So ABC-TMB-01 is **PROVED LOCAL conditional on ABC-CLK-02** — a faithful
+label, with the conditioning lemma flagged as the next audit target.
 
 ## 2. Independent numerical confirmation
 
@@ -32,12 +42,14 @@ Recomputed the exact census (`S_t_enclosure`) and the certified constant (`S_t_c
 - `C_{2/5} = M(2/5)M(4/5) ≈ 171.376` (exact rational in the module).
 - Domination at `t = 2/5`:
 
+  (float displays of exact Fractions; the `holds`/`ratio` columns are the content)
+
   | X | exact S_t(X) | C_t·X² | holds | ratio S_t/(C_t X²) |
   |---|------|------|------|------|
-  | 32 | 579.7 | 175489 | ✓ | 0.0033 |
-  | 64 | 2413.9 | 701956 | ✓ | 0.0034 |
-  | 128 | 10803.4 | 2807825 | ✓ | 0.0038 |
-  | 256 | 45412.8 | 11231300 | ✓ | 0.0040 |
+  | 32 | ≈579.7 | ≈175489 | ✓ | 0.0033 |
+  | 64 | ≈2413.9 | ≈701956 | ✓ | 0.0034 |
+  | 128 | ≈10803.4 | ≈2807825 | ✓ | 0.0038 |
+  | 256 | ≈45412.8 | ≈11231301 | ✓ | 0.0040 |
 
 - `S_t_constant_upper(1/2)` and `(3/5)` both correctly **raise** `ABCClockError`.
 
