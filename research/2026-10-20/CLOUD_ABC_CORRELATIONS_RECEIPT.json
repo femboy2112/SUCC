@@ -1,0 +1,98 @@
+{
+  "academic_originality": "UNVERIFIED; new-to-project elementary synthesis",
+  "constant_certificates": {
+    "1/2": {
+      "delta": "1/6",
+      "eta": "1/12",
+      "exponent_balance": "2",
+      "low_power_of_two_exponent": 41,
+      "tail_coefficient": "12",
+      "tail_power_of_two_exponent": 856
+    },
+    "13/20": {
+      "delta": "1/60",
+      "eta": "1/120",
+      "exponent_balance": "2",
+      "low_power_of_two_exponent": 80,
+      "tail_coefficient": "120",
+      "tail_power_of_two_exponent": 83353
+    },
+    "3/5": {
+      "delta": "1/15",
+      "eta": "1/30",
+      "exponent_balance": "2",
+      "low_power_of_two_exponent": 62,
+      "tail_coefficient": "30",
+      "tail_power_of_two_exponent": 5255
+    }
+  },
+  "development_correction": "First local-density test used handwritten 1/2700 for moduli(4,9,25); exact product and residue census give1/2160. Expected test value corrected; implementation unchanged.",
+  "files_sha256": {
+    "observational_succ/cloud_abc_correlations.py": "365026f9ccfeeb69a0daf9ff8c172f23249a8cebe5a2d7c7a4754fc09afc1c6b",
+    "research/2026-10-20/CLOUD_ABC_CORRELATIONS.md": "7304ce4d688050a54118707bf003543b80849b5b4fadde6f6c766a1006507cc6",
+    "scripts/cloud_abc_correlations_probe.py": "a56036889889325b0786f3f234cde855adaed370d1330c05ef23057fc7b03ba5",
+    "tests/test_cloud_abc_correlations.py": "d3bf5c91c92f09c979e1fa18c0797f28e2a2b2e9aa32922e1ad9459679fe0c64"
+  },
+  "formal_verification": "NOT RUN; no Lean artifact in lane B",
+  "integer_expansion_anchor": {
+    "X": 24,
+    "t": 1,
+    "value": 557
+  },
+  "lane": "B",
+  "mean_value_theorem": "S_t(X)/X^2 tends to (2*zeta(2))^-1 prod_p(1+3p/(p+1)A_p(t)), 0<=t<2/3",
+  "nonprimitive_packing_counterexample": {
+    "X": 34,
+    "actual_nonprimitive_count": 2,
+    "moduli": [
+      8,
+      9,
+      17
+    ],
+    "packing_majorant": "35/18",
+    "triples": [
+      [
+        8,
+        9,
+        17
+      ],
+      [
+        16,
+        18,
+        34
+      ]
+    ]
+  },
+  "parent_sha": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+  "powerful_singleton_counterexample": {
+    "D": 148352400,
+    "X_squared": 707281,
+    "a": 441,
+    "all_powerful": true,
+    "b": 400,
+    "c": 841,
+    "false_density_bound": "841/88200",
+    "primitive_count": 1,
+    "refutes_density_only": true
+  },
+  "primary_source_comparison": {
+    "imported_as_theorem_dependency": false,
+    "retrieved": "2026-10-20",
+    "url": "https://arxiv.org/html/2410.12234v2",
+    "version_date": "2026-05-09"
+  },
+  "rational_moment_observation": {
+    "X": 64,
+    "interval": [
+      "1491055117/500000",
+      "2982111493/1000000"
+    ],
+    "status": "finite observation, not universal verification",
+    "t": "1/2"
+  },
+  "test_command": "python -m unittest discover -s tests -p test_cloud_abc_correlations.py -v",
+  "test_exit_code": 0,
+  "test_output": "test_divisor_expansion_vs_independent_radical (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_divisor_expansion_vs_independent_radical) ... ok\ntest_explicit_constant_scope_and_exact_exponent_balance (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_explicit_constant_scope_and_exact_exponent_balance) ... ok\ntest_fixed_divisor_local_density_independent_residue_census (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_fixed_divisor_local_density_independent_residue_census) ... ok\ntest_general_crt_floor_count_exhaustive (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_general_crt_floor_count_exhaustive) ... ok\ntest_global_primitive_mobius_count_exhaustive (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_global_primitive_mobius_count_exhaustive) ... ok\ntest_high_determinant_singleton_negative_control (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_high_determinant_singleton_negative_control) ... ok\ntest_inner_expansion_both_domains (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_inner_expansion_both_domains) ... ok\ntest_input_controls (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_input_controls) ... ok\ntest_mobius_calibration (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_mobius_calibration) ... ok\ntest_packing_count_and_determinants (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_packing_count_and_determinants) ... ok\ntest_powerful_gate_with_unbalanced_and_deep_inputs (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_powerful_gate_with_unbalanced_and_deep_inputs) ... ok\ntest_primitivity_is_load_bearing (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_primitivity_is_load_bearing) ... ok\ntest_radical_pair_tail_pigeonhole_exact (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_radical_pair_tail_pigeonhole_exact) ... ok\ntest_rankin_euler_factor_by_finite_geometric_identity (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_rankin_euler_factor_by_finite_geometric_identity) ... ok\ntest_three_divisor_expansion_independent_route (test_cloud_abc_correlations.CloudABCCorrelationsTests.test_three_divisor_expansion_independent_route) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.135s\n\nOK\n",
+  "theorem_scope": "all real X>=2 and all real 0<=t<2/3",
+  "universal_authority": "paper proof in Sections 2-6; not finite tests"
+}
