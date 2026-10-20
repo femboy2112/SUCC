@@ -1,0 +1,46 @@
+name: Cloud Schur formal kernel
+
+on:
+  push:
+    branches: ['research/astra-cloud-formal-proofs-2026-10-20']
+    paths: ['formal/cloud_schur/**', '.github/workflows/cloud-schur.yml']
+  pull_request:
+    paths: ['formal/cloud_schur/**', '.github/workflows/cloud-schur.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  kernel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean
+        run: |
+          curl --fail -L https://github.com/leanprover/lean4/releases/download/v4.14.0/lean-4.14.0-linux.tar.zst -o "$RUNNER_TEMP/lean.tar.zst"
+          echo "320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a  $RUNNER_TEMP/lean.tar.zst" | sha256sum -c -
+          tar --no-same-owner --zstd -xf "$RUNNER_TEMP/lean.tar.zst" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/lean-4.14.0-linux/bin" >> "$GITHUB_PATH"
+      - name: Fetch pinned dependencies and targeted compiled cache
+        working-directory: formal/cloud_schur
+        run: |
+          lake exe cache get Mathlib/LinearAlgebra/Matrix/SchurComplement.lean Mathlib/Tactic/FieldSimp.lean Mathlib/Tactic/Ring.lean
+          test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = 4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84
+      - name: Kernel check and print axioms
+        working-directory: formal/cloud_schur
+        run: |
+          set -o pipefail
+          lean --version
+          lake build 2>&1 | tee kernel-build.log
+          lake env lean CloudSchur.lean 2>&1 | tee axiom-audit.log
+          if grep -E 'sorryAx|uses sorry' kernel-build.log axiom-audit.log; then exit 1; fi
+      - name: Reject false mutations
+        working-directory: formal/cloud_schur
+        run: python3 check_mutations.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cloud-schur-kernel-logs
+          path: formal/cloud_schur/*.log
