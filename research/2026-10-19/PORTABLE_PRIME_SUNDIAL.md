@@ -509,10 +509,10 @@ physical observer, or prove a new arithmetic distribution theorem.
 
 Module `observational_succ/portable_prime_sundial.py`.
 
-- Exact oracle tests: `tests/test_portable_prime_sundial.py`, 16 methods, including
+- Exact oracle tests: `tests/test_portable_prime_sundial.py`, 20 methods, including
   625 four-parameter frames for two-dimensional identities, 256 frames for
   modular brute-force crosschecks, nested nonunit prime clocks, RAD births,
-  chart origin shifts, homogeneous gauge, and falsifying source aliases.
+  chart origin shifts, homogeneous gauge, falsifying source aliases and three-shadow source-gauge counterexamples.
 - Stable frozen receipt: `research/2026-10-19/PORTABLE_SUNDIAL_FINITE_RECEIPT.json`.
 - Generator: `python -m scripts.portable_prime_sundial_probe`.
 - Dedicated CI: `.github/workflows/portable-prime-sundial.yml`, with genuine
