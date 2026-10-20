@@ -56,21 +56,19 @@ def wronskian(A: sp.Poly, B: sp.Poly) -> sp.Poly:
 
 
 def poly_radical(P: sp.Poly, x, domain) -> Tuple[sp.Poly, int]:
-    """Return (rad, deg rad): product of distinct monic irreducible factors.
+    """Return (rad, deg rad): product of the distinct monic irreducible factors.
 
-    Computed as the squarefree part P / gcd(P, P') (valid in char 0 and when
-    char > degree); made monic. Degree of the radical is exact.
+    Computed by `factor_list` so it is the TRUE radical in every characteristic,
+    including the degenerate char-p case where P' == 0 (e.g. P = x^p over GF(p)),
+    for which the squarefree-part shortcut P / gcd(P, P') would be wrong. Degree
+    of the radical is exact.
     """
     if P.is_zero:
         raise MasonStothersError("radical of the zero polynomial is undefined")
-    Pp = poly_derivative(P)
-    if Pp.is_zero:
-        # char p case where P' == 0 (e.g. P = x^p): gcd(P,P')=P, squarefree
-        # part collapses. Signal degenerate radical by returning P made monic.
-        g = P
-    else:
-        g = sp.gcd(P, Pp)
-    rad = P.quo(g)
+    _coeff, factors = P.factor_list()
+    rad = sp.Poly(1, x, domain=domain)
+    for fac, _mult in factors:
+        rad = rad * fac
     rad = rad.monic()
     return rad, rad.degree()
 

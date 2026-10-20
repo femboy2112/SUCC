@@ -84,7 +84,12 @@ class TestMasonStothersCounterexamples(unittest.TestCase):
         self.assertTrue(cert.W_is_zero)
         self.assertFalse(cert.verified)
         self.assertIn("collapse", cert.note.lower() + "x")  # note set
-        # and the bound it WOULD claim is violated: deg 5 vs rad small
+        # true radical of x^5*(x+1)^5 over GF(5) is x(x+1), deg 2 (factor_list,
+        # NOT the gcd-squarefree shortcut which is wrong when P'==0)
+        self.assertEqual(cert.deg_rad_ABC, 2)
+        self.assertEqual(cert.bound_rhs, 1)
+        # the bound it WOULD claim (deg 5 <= 1) is violated -> W=0 is why
+        self.assertEqual(cert.max_deg, 5)
         self.assertGreater(cert.max_deg, cert.bound_rhs)
 
     def test_coprimality_failure_rejected(self):
