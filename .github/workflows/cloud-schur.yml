@@ -26,7 +26,7 @@ jobs:
       - name: Fetch pinned dependencies and targeted compiled cache
         working-directory: formal/cloud_schur
         run: |
-          lake exe cache get Mathlib/LinearAlgebra/Matrix/SchurComplement.lean Mathlib/Tactic/FieldSimp.lean Mathlib/Tactic/Ring.lean
+          lake exe cache get Mathlib/LinearAlgebra/Matrix/SchurComplement.lean Mathlib/Data/Real/StarOrdered.lean Mathlib/Tactic/FieldSimp.lean Mathlib/Tactic/Ring.lean
           test "$(git -C .lake/packages/mathlib rev-parse HEAD)" = 4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84
       - name: Kernel check and print axioms
         working-directory: formal/cloud_schur

@@ -1,15 +1,24 @@
 {
   "parent_sha": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
   "python_exit_code": 0,
-  "python_output": "test_all_small_symmetric_matrices (test_cloud_schur_certificates.CloudSchurTests.test_all_small_symmetric_matrices) ... ok\ntest_empty_and_rank_deficient (test_cloud_schur_certificates.CloudSchurTests.test_empty_and_rank_deficient) ... ok\ntest_narrow_negative_cone_no_float_or_denominator_limit (test_cloud_schur_certificates.CloudSchurTests.test_narrow_negative_cone_no_float_or_denominator_limit) ... ok\ntest_reject_forged_gram_and_negative_witness (test_cloud_schur_certificates.CloudSchurTests.test_reject_forged_gram_and_negative_witness) ... ok\ntest_reject_lossy_or_malformed_input (test_cloud_schur_certificates.CloudSchurTests.test_reject_lossy_or_malformed_input) ... ok\ntest_seeded_larger_fresh_region (test_cloud_schur_certificates.CloudSchurTests.test_seeded_larger_fresh_region) ... ok\ntest_zero_pivot_after_schur (test_cloud_schur_certificates.CloudSchurTests.test_zero_pivot_after_schur) ... ok\ntest_zero_pivot_coupling_value_minus_one (test_cloud_schur_certificates.CloudSchurTests.test_zero_pivot_coupling_value_minus_one) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.777s\n\nOK\n",
+  "python_output": "test_all_small_symmetric_matrices (test_cloud_schur_certificates.CloudSchurTests.test_all_small_symmetric_matrices) ... ok\ntest_constructed_positive_and_singular_deep_recursion (test_cloud_schur_certificates.CloudSchurTests.test_constructed_positive_and_singular_deep_recursion) ... ok\ntest_empty_and_rank_deficient (test_cloud_schur_certificates.CloudSchurTests.test_empty_and_rank_deficient) ... ok\ntest_narrow_negative_cone_no_float_or_denominator_limit (test_cloud_schur_certificates.CloudSchurTests.test_narrow_negative_cone_no_float_or_denominator_limit) ... ok\ntest_reject_forged_gram_and_negative_witness (test_cloud_schur_certificates.CloudSchurTests.test_reject_forged_gram_and_negative_witness) ... ok\ntest_reject_lossy_or_malformed_input (test_cloud_schur_certificates.CloudSchurTests.test_reject_lossy_or_malformed_input) ... ok\ntest_seeded_larger_fresh_region (test_cloud_schur_certificates.CloudSchurTests.test_seeded_larger_fresh_region) ... ok\ntest_zero_pivot_after_schur (test_cloud_schur_certificates.CloudSchurTests.test_zero_pivot_after_schur) ... ok\ntest_zero_pivot_coupling_value_minus_one (test_cloud_schur_certificates.CloudSchurTests.test_zero_pivot_coupling_value_minus_one) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.567s\n\nOK\n",
   "file_sha256": {
     "observational_succ/cloud_schur_certificates.py": "7af70159ea985f3f898beda596c4f4121eafe0277c121eef02061b881acf8465",
-    "tests/test_cloud_schur_certificates.py": "bd00bffb0f1421b328b8296c2a2e719f6ade227256c71373a8c8fc0a6b18db18",
-    "formal/cloud_schur/CloudSchur.lean": "29f628ab69d38d7fb1c1a02b91bf2829aa2ef1c99c6f977e2601d2577b84bff4"
+    "tests/test_cloud_schur_certificates.py": "c5babeaaa90fd2fd42862695aa5fbef1288a36c216fdb0fd129f8fb5b5cdbea1",
+    "formal/cloud_schur/CloudSchur.lean": "537c440caab2ab889e14821acb114ae8e8c752af8a2dadedc406dd29f0bd70a1"
   },
   "formal_status": "UNVERIFIED pending hosted CI",
   "local_kernel_blocker": "Lean v4.14.0 failed to locate application; /proc/<pid>/exe access denied",
   "mathlib_sha": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
   "independence": "elimination generator versus Leibniz all-principal-minors oracle; same model provenance",
-  "universal_proof": "paper induction in CLOUD_FORMAL_SCHUR.md; finite census is not its proof"
+  "universal_proof": "paper induction in CLOUD_FORMAL_SCHUR.md; finite census is not its proof",
+  "hosted_attempts": [
+    {
+      "run_id": 39479053677,
+      "job_id": 118822520428,
+      "head_sha": "dee41384ed934dd2aa3a61d3c8025cb50eada5ab",
+      "result": "failure",
+      "reason": "Missing import Mathlib.Data.Real.StarOrdered supplying StarOrderedRing Real; fixed for next run."
+    }
+  ]
 }

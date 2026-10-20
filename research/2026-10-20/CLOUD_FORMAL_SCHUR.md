@@ -142,7 +142,10 @@ The independent testing method is the all-principal-minors PSD criterion, with
 determinants evaluated by Leibniz permutation sums, not elimination. The test
 domain is all 125 symmetric 2 by 2 matrices with upper entries in `{-2,...,2}`,
 all 729 symmetric 3 by 3 matrices with upper entries in `{-1,0,1}`, and 120 seeded
-rational 4 by 4 / 5 by 5 matrices (seed `20261020`). Finite agreement is not used
+rational 4 by 4 / 5 by 5 matrices (seed `20261020`). Ten additional constructed
+positive and rank-deficient matrices of dimensions 2 through 6 (seed `17041`)
+exercise the recursive Gram-lifting branch; random symmetric inputs often fail
+before reaching it. Finite agreement is not used
 as the proof of E2. Both implementations were prepared in the same model session;
 their algorithmic difference is not independent human or model provenance.
 
@@ -164,7 +167,7 @@ From repository root:
 ```sh
 python -m unittest discover -s tests -p test_cloud_schur_certificates.py -v
 cd formal/cloud_schur
-lake exe cache get Mathlib/LinearAlgebra/Matrix/SchurComplement.lean Mathlib/Tactic/FieldSimp.lean Mathlib/Tactic/Ring.lean
+lake exe cache get Mathlib/LinearAlgebra/Matrix/SchurComplement.lean Mathlib/Data/Real/StarOrdered.lean Mathlib/Tactic/FieldSimp.lean Mathlib/Tactic/Ring.lean
 lake build
 lake env lean CloudSchur.lean
 python3 check_mutations.py

@@ -1,4 +1,5 @@
 import Mathlib.LinearAlgebra.Matrix.SchurComplement
+import Mathlib.Data.Real.StarOrdered
 import Mathlib.Tactic.FieldSimp
 import Mathlib.Tactic.Ring
 
@@ -40,7 +41,7 @@ theorem scalar_schur_identity (a b d x y : ℚ) (hd : d ≠ 0) :
     a*x*x + 2*b*x*y + d*y*y =
       d*(y + b*x/d)^2 + (a - b*b/d)*x*x := by
   field_simp [hd]
-  <;> ring
+  ring
 
 /-- A negative rational Schur direction lifts without approximation. -/
 theorem scalar_negative_lift (a b d x : ℚ) (hd : d ≠ 0)
@@ -53,7 +54,6 @@ theorem scalar_negative_lift (a b d x : ℚ) (hd : d ≠ 0)
 theorem zero_diagonal_negative (b c : ℚ) (hb : b ≠ 0) :
     2*b*(-((c+1)/(2*b))) + c = -1 := by
   field_simp [hb]
-  <;> ring
 
 #print axioms finite_schur_psd_iff
 #print axioms finite_negative_direction

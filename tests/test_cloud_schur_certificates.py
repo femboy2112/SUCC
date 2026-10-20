@@ -59,6 +59,21 @@ class CloudSchurTests(unittest.TestCase):
         for matrix in ([], [[0]], [[0, 0], [0, 2]], [[1, 2, 3], [2, 4, 6], [3, 6, 9]]):
             self.compare_oracle(matrix)
 
+    def test_constructed_positive_and_singular_deep_recursion(self):
+        # Random symmetric matrices usually fail at an early negative pivot.
+        # These positive controls instead exercise every Gram-lifting level.
+        rng = Random(17041)
+        for n in range(2, 7):
+            for rank_bound in (n // 2, n):
+                rows = [[Q(rng.randint(-9, 9), rng.randint(1, 11))
+                         for _ in range(n)] for _ in range(rank_bound)]
+                matrix = [[sum((r[i] * r[j] for r in rows), Q(0))
+                           for j in range(n)] for i in range(n)]
+                result = certify(matrix)
+                self.assertIs(type(result), RationalGram)
+                self.assertTrue(verify_certificate(matrix, result))
+                self.assertLessEqual(len(result.rows), rank_bound)
+
     def test_narrow_negative_cone_no_float_or_denominator_limit(self):
         d = 10 ** 100
         matrix = [[Q(d * d), Q(d)], [Q(d), 1 - Q(1, d * d)]]
