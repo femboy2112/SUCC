@@ -1,0 +1,84 @@
+{
+  "ABC_proved": false,
+  "RH_proved": false,
+  "diagonal_prime_power_windows_nonempty": 306,
+  "equal_initial_ratio_alias": {
+    "D_first": 1,
+    "D_second": 2,
+    "first_next": "2/3",
+    "fraction": "1/2",
+    "second_next": "3/5"
+  },
+  "independent_frames_checked": 256,
+  "invalid_source_or_clock_contracts_rejected": 2,
+  "new_academic_priority_established": false,
+  "nonunit_prime_divides_D_but_cannot_cancel": {
+    "D": 2,
+    "diagonal_alignment_exists": false,
+    "numerator_clock_is_empty": true,
+    "p": 2
+  },
+  "parent": "SUCC Academic Main V source arithmetic (RAD/RIS, phase-clock, observer/descent)",
+  "physical_time_model": false,
+  "primality_inferred_from_phase": false,
+  "prime_phase_wheel": {
+    "actual_arm_values": [
+      120,
+      240
+    ],
+    "first_synchronized_k": 119,
+    "first_synchronized_l": 238,
+    "prime_depths": [
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        1
+      ]
+    ],
+    "relative_phase": 119,
+    "wheel": 120
+  },
+  "prime_power_clock_readings_checked": 1024,
+  "rad_anchor": {
+    "determinant": 36,
+    "gcd": 6,
+    "initial_arms": [
+      12,
+      18
+    ],
+    "new_denominator_primes": [
+      5
+    ],
+    "rad_denominator": 30,
+    "ris_denominator": 1,
+    "two_diagonal_steps": [
+      24,
+      30
+    ],
+    "units": [
+      6,
+      6
+    ]
+  },
+  "sharp_prime_to_unit_part": {
+    "D": 55,
+    "M": 11,
+    "gcd_at_witness": 11,
+    "witness_n": 7
+  },
+  "signed_Weil_positive": false,
+  "source_authenticated": false,
+  "stationary": {
+    "D": 0,
+    "gcd_at_time_20": 22,
+    "ratio_at_time_20": "3/5"
+  },
+  "status": "EXACT_FINITE_PORTABLE_SUNDIAL_SOURCE_CONTRACT"
+}
