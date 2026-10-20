@@ -1,0 +1,461 @@
+{
+  "observed_at_utc": "2026-10-20T19:17:16.715Z",
+  "baseline": {
+    "main": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+    "pr200": "e2f92a6b7e3835c3223abc294688ad9b85045811",
+    "pr201": "cbc4010458c00be995b8af3f229c9bba410301e2",
+    "changes_observed": false,
+    "last_live_git_refresh_utc": "2026-10-20T19:17:16.715Z"
+  },
+  "partial_local_baseline": {
+    "command": "python -m unittest discover -s tests -p test_*.py",
+    "head": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+    "status": "INTERRUPTED",
+    "exit_code": 130,
+    "completed_success_markers": 3187,
+    "failure_or_error_markers": 0,
+    "reason": "Numerical work without thread caps made the cloud runtime unresponsive; superseded by full aggregate run with one numerical thread. This is not a full-suite pass."
+  },
+  "aggregate_full_suite": {
+    "status": "INTERRUPTED_AS_REDUNDANT",
+    "exit_code": 130,
+    "completed_success_markers": 480,
+    "failure_or_error_markers": 0,
+    "expected_test_count": 6198,
+    "worktree": "integration-audit",
+    "base": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+    "python": "3.12.14",
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -m unittest discover -s tests -p 'test_*.py' -v",
+    "reason": "Stopped after completed hosted full-regression evidence became available; combined 63 new tests already passed. This is NOT a complete 6198-test aggregate pass.",
+    "raw_log_sha256": "c84fc79b1fb7b47f08e91c4245260c8f89ee99abbef865c6e056643b0d34857b"
+  },
+  "aggregate_focused": {
+    "tests": 63,
+    "result": "PASS",
+    "provenance_items": 72,
+    "observer_foundations_exit_code": 0,
+    "ordinal_succ_exit_code": 0,
+    "receipt": "AGGREGATE_RECEIPT.json"
+  },
+  "formal": {
+    "run_id": 39479505726,
+    "job_id": 118824073301,
+    "conclusion": "success",
+    "checked_merge_sha": "076ae599348fbe30b7a5de813c633bc93bc1fafb",
+    "checked_cloud_head": "c4092a702c9161d8d7815132c323c4991da01b6c",
+    "valid_theorems": 5,
+    "mutations_rejected": 2,
+    "source_unchanged_in_final_head": true,
+    "latest_final_head_run": {
+      "run_id": 39480589258,
+      "job_id": 118827791355,
+      "head": "fd16f5766629e02cb92c0ca0607afad45799f2cc",
+      "merge_sha": "bf925d0d1337334e915b7ba5918c87163bdc20c8",
+      "conclusion": "success",
+      "valid_axiom_audit_lines": [
+        "2026-10-20T19:11:51.1983009Z info: ././././CloudSchur.lean:58:0: 'ObservationalSUCC.CloudSchur.finite_schur_psd_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:51.1984554Z info: ././././CloudSchur.lean:59:0: 'ObservationalSUCC.CloudSchur.finite_negative_direction' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:51.1986518Z info: ././././CloudSchur.lean:60:0: 'ObservationalSUCC.CloudSchur.scalar_schur_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:51.1988506Z info: ././././CloudSchur.lean:61:0: 'ObservationalSUCC.CloudSchur.scalar_negative_lift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:51.1989942Z info: ././././CloudSchur.lean:62:0: 'ObservationalSUCC.CloudSchur.zero_diagonal_negative' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:55.6081976Z 'ObservationalSUCC.CloudSchur.finite_schur_psd_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:55.6083760Z 'ObservationalSUCC.CloudSchur.finite_negative_direction' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:55.6085175Z 'ObservationalSUCC.CloudSchur.scalar_schur_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:55.6086518Z 'ObservationalSUCC.CloudSchur.scalar_negative_lift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:55.6087860Z 'ObservationalSUCC.CloudSchur.zero_diagonal_negative' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "rejected_mutations": [
+        "2026-10-20T19:12:03.6024170Z MUTATION_REJECTED semidefinite_is_not_invertible",
+        "2026-10-20T19:12:03.6037514Z MUTATION_REJECTED wrong_negative_value"
+      ]
+    }
+  },
+  "github_ci": {
+    "notice": "Snapshot of pull-request-triggered workflows only, not every push-triggered run. Pending jobs are not passes. Documentation publication can trigger later runs; the exact snapshot heads are stated.",
+    "pull_requests": [
+      {
+        "pr": 202,
+        "head": "e8bcb6e62e843eb93818d8d67c6bcdde61e2b109",
+        "workflows": [
+          {
+            "id": 39478977043,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 276,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39478977043/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39478977043/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 39478977238,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 86,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39478977238/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39478977238/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 39478977212,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 398,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39478977212/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39478977212/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 39478977020,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 3350,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39478977020/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39478977020/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      },
+      {
+        "pr": 203,
+        "head": "fd16f5766629e02cb92c0ca0607afad45799f2cc",
+        "workflows": [
+          {
+            "id": 39480589258,
+            "name": "Cloud Schur formal kernel",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 6,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480589258/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480589258/logs",
+            "workflow_id": 390906811
+          },
+          {
+            "id": 39480589239,
+            "name": "Observational SUCC validation",
+            "status": "in_progress",
+            "conclusion": null,
+            "run_number": 3368,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480589239/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480589239/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 39480589300,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 407,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480589300/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480589300/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 39480589276,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 95,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480589276/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480589276/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 39480589290,
+            "name": "Collective observer source and certificate replay",
+            "status": "in_progress",
+            "conclusion": null,
+            "run_number": 285,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480589290/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480589290/logs",
+            "workflow_id": 386978686
+          }
+        ]
+      },
+      {
+        "pr": 204,
+        "head": "d0fa95d49040b70439a0ef72cf2ed754ff88824d",
+        "workflows": [
+          {
+            "id": 39479185280,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 400,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479185280/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479185280/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 39479185203,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 278,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479185203/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479185203/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 39479185224,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 88,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479185224/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479185224/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 39479185292,
+            "name": "Observational SUCC validation",
+            "status": "in_progress",
+            "conclusion": null,
+            "run_number": 3354,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479185292/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479185292/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      },
+      {
+        "pr": 205,
+        "head": "fca107cde969b68566699d9da98944a363c89434",
+        "workflows": [
+          {
+            "id": 39479585848,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 90,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479585848/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479585848/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 39479585822,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 280,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479585822/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479585822/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 39479585887,
+            "name": "Observational SUCC validation",
+            "status": "in_progress",
+            "conclusion": null,
+            "run_number": 3358,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479585887/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479585887/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 39479585801,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 402,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479585801/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479585801/logs",
+            "workflow_id": 385135609
+          }
+        ]
+      },
+      {
+        "pr": 206,
+        "head": "a86c37ef87526c339bebfd21d0232bcf2f5b45a4",
+        "workflows": [
+          {
+            "id": 39479606808,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 403,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479606808/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479606808/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 39479606378,
+            "name": "Observational SUCC validation",
+            "status": "in_progress",
+            "conclusion": null,
+            "run_number": 3360,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479606378/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479606378/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 39479606371,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 281,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479606371/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479606371/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 39479606779,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 91,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479606779/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39479606779/logs",
+            "workflow_id": 388839929
+          }
+        ]
+      },
+      {
+        "pr": 207,
+        "head": "7466f0d4bfca0ae00ff4d4b355bb14cba4bbb544",
+        "workflows": [
+          {
+            "id": 39480237041,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 93,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480237041/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480237041/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 39480236923,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 283,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480236923/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480236923/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 39480236877,
+            "name": "Observational SUCC validation",
+            "status": "in_progress",
+            "conclusion": null,
+            "run_number": 3365,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480236877/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480236877/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 39480236880,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 405,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480236880/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480236880/logs",
+            "workflow_id": 385135609
+          }
+        ]
+      },
+      {
+        "pr": 208,
+        "head": "1c6f2adfe3ebbd1dc6613e9adb4e95bdef2f3e29",
+        "workflows": [
+          {
+            "id": 39480241202,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 284,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480241202/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480241202/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 39480241024,
+            "name": "Observational SUCC validation",
+            "status": "in_progress",
+            "conclusion": null,
+            "run_number": 3366,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480241024/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480241024/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 39480241060,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 94,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480241060/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480241060/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 39480240968,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 406,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480240968/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39480240968/logs",
+            "workflow_id": 385135609
+          }
+        ]
+      }
+    ]
+  },
+  "hosted_full_regression": {
+    "pr": 204,
+    "head": "d0fa95d49040b70439a0ef72cf2ed754ff88824d",
+    "run_id": 39479185292,
+    "job_id": 118822967192,
+    "job_name": "Python 3.13 mathematical and epistemic checks",
+    "conclusion": "success",
+    "tests": 6148,
+    "seconds": 733.813,
+    "summary": "Ran 6148 tests in 733.813s; OK",
+    "scope": "Full 6135-test pinned-main suite plus C's 13 new tests; not the full aggregate A\u2013F suite.",
+    "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39479185292",
+    "log_excerpt": [
+      "2026-10-20T19:11:07.4452749Z Ran 6148 tests in 733.813s",
+      "2026-10-20T19:11:07.4453016Z OK"
+    ],
+    "checked_merge_sha": "7aa407fbe8f91f9add911e6797bc6bbe9b0a7dbc"
+  },
+  "hosted_baseline": {
+    "run_id": 39478977020,
+    "head": "e8bcb6e62e843eb93818d8d67c6bcdde61e2b109",
+    "checked_merge_sha": "477479b57409155e03ec10a93ad6c112a95e94f7",
+    "conclusion": "success",
+    "changes_from_pinned_main": "Source-map Markdown only; executable and test trees unchanged.",
+    "jobs": [
+      {
+        "id": 118822254779,
+        "python": "3.13",
+        "tests": 6135,
+        "seconds": 734.607,
+        "conclusion": "success",
+        "summary": [
+          "2026-10-20T19:08:10.4097658Z Ran 6135 tests in 734.607s",
+          "2026-10-20T19:08:55.9496793Z Ran 41 tests in 0.725s",
+          "2026-10-20T19:09:10.0696938Z Ran 37 tests in 13.880s"
+        ]
+      },
+      {
+        "id": 118822254899,
+        "python": "3.10",
+        "tests": 6135,
+        "seconds": 949.657,
+        "conclusion": "success",
+        "summary": [
+          "2026-10-20T19:11:43.4855783Z Ran 6135 tests in 949.657s",
+          "2026-10-20T19:12:28.1655444Z Ran 41 tests in 1.195s",
+          "2026-10-20T19:12:53.9027185Z Ran 37 tests in 25.507s"
+        ]
+      }
+    ]
+  }
+}
