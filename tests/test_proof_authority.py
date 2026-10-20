@@ -5,6 +5,7 @@ with an invalid source map, a finite Gram that must not certify a global kernel,
 a wrong-quantifier transport, an alternative normalization -- plus the acceptance
 criterion (metadata cannot elevate itself to authority) and the two-theorem reuse
 (Schur negative-witness at Level B; Mason-Stothers -> polynomial Fermat at C/D)."""
+import os
 import unittest
 
 import sympy as sp
@@ -18,9 +19,13 @@ from observational_succ.proof_authority import (
     LocalCertificate,
     ProofAuthorityError,
     SourceRealization,
+    load_receipt,
     registered_checkers,
     transport_respects_quantifiers,
 )
+
+_RECEIPT_PATH = os.path.join(os.path.dirname(__file__), "..",
+                             "formal", "mathlib_bridge", "axiom_audit.json")
 from observational_succ.proof_contracts import ProofContract, Quantifier
 
 _V414 = "leanprover/lean4:v4.14.0"
@@ -207,6 +212,35 @@ class TestQuantifierTransport(unittest.TestCase):
     def test_legal_transport_when_source_already_uniform(self):
         self.assertTrue(transport_respects_quantifiers(
             self._uniform(), self._uniform(), "C", "N"))
+
+
+class TestRealReceiptIntegration(unittest.TestCase):
+    """End-to-end Part VII -> Part II: the ACTUAL Lean axiom-audit receipt emitted
+    by the mathlib bridge build validates through the Level C consumer, using the
+    real toolchain/manifest recorded in the file (not a placeholder fixture)."""
+
+    @unittest.skipUnless(os.path.exists(_RECEIPT_PATH), "mathlib bridge receipt absent")
+    def test_real_receipt_validates_all_theorems(self):
+        r = load_receipt(_RECEIPT_PATH)
+        self.assertTrue(r["build_succeeded"])
+        allowed = ("propext", "Classical.choice", "Quot.sound")
+        self.assertTrue(r["theorems"], "receipt lists no theorems")
+        for name in r["theorems"]:
+            ft = FormalTheorem(name=name, toolchain=r["toolchain"],
+                               manifest_rev=r["manifest_rev"], allowed_axioms=allowed)
+            claim = Claim(name, "mathlib bridge theorem", required_level="C",
+                          scope="global")
+            self.assertEqual(claim.discharge(ft, receipt=r).status, VERIFIED, name)
+
+    @unittest.skipUnless(os.path.exists(_RECEIPT_PATH), "mathlib bridge receipt absent")
+    def test_real_receipt_rejects_fabricated_name(self):
+        r = load_receipt(_RECEIPT_PATH)
+        allowed = ("propext", "Classical.choice", "Quot.sound")
+        ft = FormalTheorem(name="succ_proves_riemann_hypothesis",
+                           toolchain=r["toolchain"], manifest_rev=r["manifest_rev"],
+                           allowed_axioms=allowed)
+        claim = Claim("rh", "RH", required_level="C", scope="global")
+        self.assertEqual(claim.discharge(ft, receipt=r).status, REFUTED)
 
 
 class TestRegistry(unittest.TestCase):
