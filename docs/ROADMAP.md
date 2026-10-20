@@ -1,5 +1,16 @@
 # Research roadmap
 
+**Current Academic Main VII frontier:** see
+[the scoped research map](academic_main_vii/research_frontier.md).
+The primitive abc weighted moment and Euler-product mean are paper-proved for
+0≤t<2/3. Next arithmetic obligations are an explicit convergence rate and the
+t=2/3 endpoint; the older diagonal t<1/2 barrier is a method boundary.
+Formal slope divisibility/injectivity and source-faithful moment-Gram inverse
+corrections are separate research families. RH, integer abc, binary Goldbach
+and the authentic signed S₄ sign remain open. Legacy proof metadata cannot
+discharge trusted claims; see the
+[proposition-bound authority contract](academic_main_vii/proof_authority_boundary.md).
+
 **ObsSUCC is an independent program.** Milestones should produce reusable observation/proof or information-theoretic results even if no RH theorem follows. An item is complete only when its mathematical scope, negative controls, documentation and reproducibility are adequate.
 
 > The research stack (PRs #6–#22) was consolidated into `main` on 2026-10-11; see the [integration audit](INTEGRATION_AUDIT_2026-10-11.md) for validation receipts, the adversarial-audit findings, and the open follow-ups it recorded.

@@ -1,0 +1,13 @@
+name: Cloud Schur historical workflow entry
+
+# The actual proof gate is now mathlib_bridge.yml, which serializes both projects
+# and shares the exact dependency cache. Retained for historical run navigation.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  consolidated:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Run Pinned formal kernel and proposition exports; it includes CloudSchur.'

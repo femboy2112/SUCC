@@ -1,0 +1,62 @@
+{
+  "authority_boundary": "Descriptive status metadata references paper proofs and grants no proof authority; run record is not a formal-kernel receipt.",
+  "current_status": {
+    "abc_status": "OPEN",
+    "beats_half_rigorously": true,
+    "diagonal_method_beats_half": false,
+    "elementary_in_SUCC": "ABC-DEC-01 exact layer anatomy (algebraic identity); ABC-DEC-02 per-layer exponents (j-1)theta-j and the uniform threshold theta<1; the Cauchy-Schwarz ceiling t<1/2; the bounded-exponent truncation M_E(theta) <= M(theta); CLOUD-ABC-01/05 primitive slope separation, global quadratic moment bound and Euler-product mean value for 0<=t<2/3.",
+    "endpoint_included": false,
+    "fourier_necessity_claim_status": "REFUTED (CLOUD-ABC-01)",
+    "heuristic_true_threshold": "1",
+    "moment_status": "PROVED LOCAL (paper proof; not Lean-verified)",
+    "needs_machinery_not_in_SUCC": "The endpoint t=2/3 and extension through 2/3<=t<1 remain open. BBLT Fourier and geometry-of-numbers methods are possible separate inputs on their stated domains, not necessary dependencies of the reviewed CLOUD-ABC-01/05 proof or imported bounds for this moment.",
+    "proved_moment_range": "0<=t<2/3, all real X>=2; constant depends only on t",
+    "proved_moment_upper_endpoint": "2/3",
+    "remaining_open_moment_range": "2/3<=t<1",
+    "reviewed_theorems": [
+      "CLOUD-ABC-01",
+      "CLOUD-ABC-05"
+    ]
+  },
+  "exact_reproduction": {
+    "Q": 4,
+    "X": 26,
+    "error": "645",
+    "main": "4225/8",
+    "new_threshold": 31,
+    "old_and_new_bound_equal": true,
+    "old_and_new_informative": false,
+    "old_threshold": 26,
+    "t": 0
+  },
+  "failure_taxonomy": {
+    "correct": true,
+    "established": [
+      "a",
+      "b"
+    ],
+    "not_established": [
+      "d"
+    ],
+    "refuted": [
+      "c"
+    ]
+  },
+  "parent_commit": "6dd1bede6cef06cfc900f60fdde94ad7098dfd19",
+  "python": "3.12.14",
+  "scope": "abc current-status reconciliation and exact bounded-powerful-part threshold diagnostic",
+  "source_sha256": {
+    "observational_succ/abc_decomposition.py": "f9e08c647e398e54459426f59dd8c0648dde45877586d98f327a8466ab54fe2f",
+    "tests/test_abc_decomposition.py": "c92c7af86bbdc9a08cf8f4045409d854559b9b8de6557e06e24455459414f66e"
+  },
+  "sympy": "1.14.0",
+  "validation": {
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m unittest discover -s tests -p test_abc_decomposition.py -v",
+    "elapsed_seconds": 0.742989,
+    "errors": 0,
+    "failures": 0,
+    "formal_verification": "not claimed",
+    "full_suite": "not rerun in lane",
+    "tests": 33
+  }
+}

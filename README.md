@@ -1,5 +1,17 @@
 # Observational SUCC
 
+**Academic Main VII — reviewed mathematics and proof authority:**
+[integration audit](docs/academic_main_vii/integration_audit.md) ·
+[claim crosswalk](docs/CLAIM_SUPPLEMENT_ACADEMIC_MAIN_VII.md) ·
+[current frontier](docs/academic_main_vii/research_frontier.md) ·
+[trusted boundary](docs/academic_main_vii/proof_authority_boundary.md).
+The primitive ordered abc-triple moment bound and Euler-product mean now have
+complete paper proofs for **0≤t<2/3**, extending the earlier diagonal range
+t<1/2. Exact finite certificates bind their actual matrices; formal references
+require admitted actual Lean theorem types and source/environment hashes.
+Academic novelty is unverified. **RH, integer abc, binary Goldbach, the signed
+S₄ sign, and the t=2/3 moment endpoint remain open.**
+
 ### Carrier reconstruction · Source-indexed transitions · Observer-relative proof access
 
 **Observational SUCC (ObsSUCC)** is an independent mathematical research framework for

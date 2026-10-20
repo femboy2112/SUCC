@@ -37,6 +37,10 @@ jobs:
         run: python -m pip install -e ".[test]"
       - name: Verify source Git blob provenance
         run: python scripts/verify_provenance.py
+      - name: Verify Academic Main VII ancestry, namespaces and admitted propositions
+        run: |
+          python scripts/academic_main_vii_gate.py > "$RUNNER_TEMP/academic-main-vii.json"
+          python scripts/main_vii_hostile_replay.py --target-repo . --require-fixed > "$RUNNER_TEMP/academic-main-vii-hostile.json"
       - name: Check carrier-relative ontology, proof policy and E meta tower receipts
         run: |
           python scripts/carrier_relative_frontier_probe.py > "$RUNNER_TEMP/carrier-relative.json"

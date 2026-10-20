@@ -1,0 +1,172 @@
+{
+  "dependencies": {
+    "numpy": "2.5.4",
+    "sympy": "1.14.0"
+  },
+  "findings": [
+    {
+      "expected": "reject authentic claim with synthetic witness",
+      "id": "F01_SOURCE_FLAG_MISMATCH",
+      "observed": {
+        "certificates_verified": [],
+        "name": "cloud hostile fixture",
+        "source_authentic": true,
+        "status": "UNVERIFIED",
+        "theorem_refs": [],
+        "transports_verified": [],
+        "undischarged_assumptions": []
+      },
+      "state": "exposed"
+    },
+    {
+      "expected": "reject proof status with no backing at verification time",
+      "id": "F02_MUTABLE_STATUS",
+      "observed": {
+        "certificates_verified": [],
+        "name": "cloud hostile fixture",
+        "source_authentic": false,
+        "status": "PROVED LOCAL",
+        "theorem_refs": [],
+        "transports_verified": [],
+        "undischarged_assumptions": []
+      },
+      "state": "exposed"
+    },
+    {
+      "expected": "reject later dependency in constant metadata",
+      "id": "F03_CONTRADICTORY_DEPENDENCIES",
+      "observed": {
+        "record": {
+          "constant_dependencies": {
+            "C": [
+              "N"
+            ]
+          },
+          "finite_to_infinite": "none",
+          "hypotheses": [],
+          "method": "adversarial fixture",
+          "name": "cloud hostile fixture",
+          "open_obligations": [],
+          "prefix": "E.C:positive reals A.N:positive integers",
+          "source_authentic": false,
+          "statement": "0 = 1",
+          "status": "UNVERIFIED"
+        },
+        "uniform": true
+      },
+      "state": "exposed"
+    },
+    {
+      "expected": "do not grant proof authority to nonexistent theorem",
+      "id": "F04_UNCHECKED_THEOREM_REFERENCE",
+      "observed": {
+        "certificates_verified": [],
+        "name": "cloud hostile fixture",
+        "source_authentic": false,
+        "status": "PROVED LOCAL",
+        "theorem_refs": [
+          [
+            "NoSuchTheorem",
+            "NoSuchKernel",
+            []
+          ]
+        ],
+        "transports_verified": [],
+        "undischarged_assumptions": []
+      },
+      "state": "exposed"
+    },
+    {
+      "exception": "RuntimeError",
+      "expected": "produce rational negative vector for non-PSD rational matrix",
+      "id": "F05_SHALLOW_NEGATIVE_CONE",
+      "known_value": "-9/100000000000000",
+      "known_vector": [
+        "1",
+        "1",
+        "1"
+      ],
+      "matrix": [
+        [
+          "199999999999999/100000000000000",
+          "-100000000000001/100000000000000",
+          "-100000000000001/100000000000000"
+        ],
+        [
+          "-100000000000001/100000000000000",
+          "199999999999999/100000000000000",
+          "-100000000000001/100000000000000"
+        ],
+        [
+          "-100000000000001/100000000000000",
+          "-100000000000001/100000000000000",
+          "199999999999999/100000000000000"
+        ]
+      ],
+      "message": "matrix is not PSD but no rational witness found; increase max_denom",
+      "state": "exposed",
+      "target_psd": false
+    },
+    {
+      "expected": "reject noninteger prime cutoff",
+      "id": "F06_NONINTEGER_CUTOFF",
+      "independent_true_lower_bound": "135/128",
+      "lower_bound_derivation": "2*(1-1/4)*(1-1/16)*(1-1/4)",
+      "observed": [
+        "1/3",
+        "1"
+      ],
+      "state": "exposed"
+    },
+    {
+      "actual_n0": 256,
+      "claimed_small_remainder_upper": 4,
+      "d": 4,
+      "eps": "1/4",
+      "expected": "do not identify whole exponent tail with small BBLT remainder",
+      "id": "F07_BBLT_TAIL_ATTRIBUTION",
+      "n": 256,
+      "scope": "documentation/proof attribution; exact identity itself remains true",
+      "state": "exposed"
+    },
+    {
+      "P": 3,
+      "exact_ratio_S10_over_S2": "4/3",
+      "expected": "S(10)=(4/3)*(2*C2), not 2*C2",
+      "id": "F08_TWIN_CONSTANT_NORMALIZATION",
+      "p": 5,
+      "scope": "false docstring identity; twin constant enclosure computation is separate",
+      "state": "exposed"
+    },
+    {
+      "expected": "1000000000000000000000000000001",
+      "id": "F09_FLOAT_ORDERED_EXACT_EIGENVALUE",
+      "matrix": [
+        [
+          1000000000000000000000000000002,
+          1
+        ],
+        [
+          1,
+          1000000000000000000000000000002
+        ]
+      ],
+      "observed": "1000000000000000000000000000003",
+      "quadratic_form_after_subtracting_reported_minimum": "-4",
+      "state": "exposed",
+      "test_vector": [
+        1,
+        -1
+      ]
+    }
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "target_sha": "cbc4010458c00be995b8af3f229c9bba410301e2",
+  "target_source_sha256": {
+    "observational_succ/abc_decomposition.py": "556283f4820a8ea5488b69e4c537ee6da95e8ce78ba2b1f4b1d9cb9d5da3d8ae",
+    "observational_succ/goldbach_circle.py": "b3bd08c8dd3b90c6c17bd046406812c102c50d87df54bbdd73df3d7cc6dce22c",
+    "observational_succ/proof_contracts.py": "405669533532eb55a47e1df701814ddb8681d7c55c156899bd8575d484d5aa47",
+    "observational_succ/quantitative_rigidity.py": "2d3826de60c3d809bab64d71400ba386d53cec675abde4cd5fd46cc4b7c47e85"
+  },
+  "target_worktree_dirty": false
+}

@@ -1,5 +1,24 @@
 # SUCC Research Dependency DAG
 
+## Academic Main VII quantitative and authority edges
+
+| Premises | Checked or proved transport | Conclusion and boundary |
+|---|---|---|
+| Pairwise-coprime divisors + primitive reduced slopes | Nonzero determinant divisible by def; finite packing [P] | N≤1+X²/(def), uniformly in divisors |
+| Positive powerful-divisor expansion + D≤ris(abc)² | Low-weight slope estimate [P] | Quadratic low-weight contribution |
+| Radical-pair Rankin product + t<2/3 | Integrable high-weight tail [P] | S_t(X)≤K_tX²; endpoint remains open |
+| Fixed-divisor CRT + actual Möbius/global gcd tail + stronger s-moment | Uniform integrability [P] | Full Euler-product mean for 0≤t<2/3 |
+| Finite rational matrix and immutable certificate data | Closed exact checker [X] | That exact finite matrix proposition only |
+| Actual pinned Lean build + reviewed catalogue admission | Full theorem type and source/environment binding [kernel] | That exact universal proposition; additional transport requires its own proof |
+| K-relative form + kernel descent + primitive closability + form core | Completion transport [P] | Primitive bound in the specified realization, no automatic source identification |
+| Genuine signed source + inherited all-high bound + constraint inverse | Paid rational source enclosure [P,X] | Improved S₄ lower enclosure; sign still unresolved |
+
+See the [claim crosswalk](CLAIM_SUPPLEMENT_ACADEMIC_MAIN_VII.md) and
+[live Git ancestry/coverage](academic_main_vii/live_dag_and_coverage.json).
+English claim labels, caller callbacks and unadmitted JSON have no proof edge.
+The old full-line Gamma no-gap inference is refuted on the fixed interval by
+Γ₀≥3I; this does not make the full signed source positive.
+
 2026-10-18 branch addition: the [Institute graph](../research/2026-10-18/institute/theorem_registry.json)
 is machine-checked by `scripts/institute_audit.py`; recorded proof authority is
 distinct from metadata integrity. Its new arrows are:

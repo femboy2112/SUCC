@@ -28,7 +28,8 @@ _REPO_ROOT = REGISTRY_PATH.parent.parent
 # A claim-ID table row: first cell is a claim ID and nothing else. Capture the
 # alphabetic (+ optional trailing digits) prefix that precedes the first -<number>.
 # Example matches: "| PH-01 |", "| ZCR-04 |", "| AMW-06B |".
-_CLAIM_ROW_RE = re.compile(r"^\|\s*([A-Z]{2,6}[0-9]*)-[0-9]+[A-Z]?\s*\|")
+_BARE_PREFIX = r"[A-Z]{2,6}[0-9]*(?:-[A-Z]{2,6}[0-9]*)*"
+_CLAIM_ROW_RE = re.compile(r"^\|\s*(" + _BARE_PREFIX + r")-[0-9]+[A-Z]?\s*\|")
 
 
 def load_registry():
@@ -58,7 +59,7 @@ def fqid(namespace, bare_id):
     if type(bare_id) is not str:
         raise ValueError("bare claim ID must be a string")
     raw = bare_id.strip()
-    match = re.fullmatch(r"([A-Z]{2,6}[0-9]*)-([0-9]+)([A-Z]?)", raw)
+    match = re.fullmatch(r"(" + _BARE_PREFIX + r")-([0-9]+)([A-Z]?)", raw)
     if match is None:
         raise ValueError(f"unparseable bare claim ID: {bare_id!r}")
     if match.group(1) != entry["bare_prefix"]:

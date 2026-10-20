@@ -1,0 +1,212 @@
+{
+  "date": "2026-10-20",
+  "repository": "femboy2112/SUCC",
+  "main": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+  "baseline_heads": {
+    "pr200": "e2f92a6b7e3835c3223abc294688ad9b85045811",
+    "pr201": "cbc4010458c00be995b8af3f229c9bba410301e2"
+  },
+  "main_tree": "c29fdbc06d3f258a55148e6ae7378ed23450ee99",
+  "parallel_researchers": 6,
+  "all_reviewers_same_underlying_model": true,
+  "all_cloud_prs_draft": true,
+  "merged": false,
+  "main_or_claude_branch_modified": false,
+  "shared_index_modified": false,
+  "publication": "Connected GitHub create_tree/create_commit/ref APIs; exact tested local tree equality checked before publication. Remote commit metadata can differ.",
+  "lanes": [
+    {
+      "lane": "A",
+      "pr": 207,
+      "url": "https://github.com/femboy2112/SUCC/pull/207",
+      "branch": "research/astra-cloud-crt-ascent-2026-10-20",
+      "base": "main",
+      "pinned_base_sha": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+      "published_head": "7466f0d4bfca0ae00ff4d4b355bb14cba4bbb544",
+      "published_parent": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+      "tested_local_head": "7d51ea85abe88194d535316a39a31fe3f72ef8e4",
+      "tree": "fe093f98efc4d9afb26670a3bd47240ff3c94433",
+      "tree_identity_verified": true,
+      "focused_tests_passed": 13,
+      "changed_files": [
+        "observational_succ/cloud_crt_ascent.py",
+        "research/2026-10-20/CLOUD_CRT_ASCENT.md",
+        "research/2026-10-20/CLOUD_CRT_ASCENT_RECEIPT.json",
+        "scripts/cloud_crt_ascent_probe.py",
+        "tests/test_cloud_crt_ascent.py"
+      ],
+      "file_policy": "new files only",
+      "dependency_pr200_or_pr201": false
+    },
+    {
+      "lane": "B",
+      "pr": 208,
+      "url": "https://github.com/femboy2112/SUCC/pull/208",
+      "branch": "research/astra-cloud-abc-correlations-2026-10-20",
+      "base": "main",
+      "pinned_base_sha": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+      "published_head": "1c6f2adfe3ebbd1dc6613e9adb4e95bdef2f3e29",
+      "published_parent": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+      "tested_local_head": "3ee1d50cf823ae984c2950c339ce6517bf4b0b8f",
+      "tree": "5103402e175e9c9b61457efb6a85e9563480b81b",
+      "tree_identity_verified": true,
+      "focused_tests_passed": 15,
+      "changed_files": [
+        "observational_succ/cloud_abc_correlations.py",
+        "research/2026-10-20/CLOUD_ABC_CORRELATIONS.md",
+        "research/2026-10-20/CLOUD_ABC_CORRELATIONS_RECEIPT.json",
+        "scripts/cloud_abc_correlations_probe.py",
+        "tests/test_cloud_abc_correlations.py"
+      ],
+      "file_policy": "new files only",
+      "dependency_pr200_or_pr201": false
+    },
+    {
+      "lane": "C",
+      "pr": 204,
+      "url": "https://github.com/femboy2112/SUCC/pull/204",
+      "branch": "research/astra-cloud-goldbach-harmonic-2026-10-20",
+      "base": "main",
+      "pinned_base_sha": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+      "published_head": "d0fa95d49040b70439a0ef72cf2ed754ff88824d",
+      "published_parent": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+      "tested_local_head": "15b64848fe46c441b3ca7d314a6a68344bd9b0ae",
+      "tree": "b83e7bfe397b2ceea952d85b0696c25bfbd4d736",
+      "tree_identity_verified": true,
+      "focused_tests_passed": 13,
+      "changed_files": [
+        "observational_succ/cloud_ramanujan_transport.py",
+        "research/2026-10-20/CLOUD_RAMANUJAN_RECEIPT.json",
+        "research/2026-10-20/CLOUD_RAMANUJAN_TRANSPORT.md",
+        "scripts/cloud_ramanujan_probe.py",
+        "tests/test_cloud_ramanujan_transport.py"
+      ],
+      "file_policy": "new files only",
+      "dependency_pr200_or_pr201": false
+    },
+    {
+      "lane": "D",
+      "pr": 205,
+      "url": "https://github.com/femboy2112/SUCC/pull/205",
+      "branch": "research/astra-cloud-operator-theory-2026-10-20",
+      "base": "main",
+      "pinned_base_sha": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+      "published_head": "fca107cde969b68566699d9da98944a363c89434",
+      "published_parent": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+      "tested_local_head": "91fa97e102532e64e5470439bcb0d639dd7f26b1",
+      "tree": "8a99def3d598d00a42cbd431cea1ca5ef85c834e",
+      "tree_identity_verified": true,
+      "focused_tests_passed": 9,
+      "changed_files": [
+        "observational_succ/cloud_operator_transport.py",
+        "research/2026-10-20/CLOUD_OPERATOR_SOURCE_FORENSICS.md",
+        "research/2026-10-20/CLOUD_OPERATOR_SOURCE_J8.json",
+        "scripts/cloud_operator_source_probe.py",
+        "tests/test_cloud_operator_transport.py"
+      ],
+      "file_policy": "new files only",
+      "dependency_pr200_or_pr201": false
+    },
+    {
+      "lane": "E",
+      "pr": 203,
+      "url": "https://github.com/femboy2112/SUCC/pull/203",
+      "branch": "research/astra-cloud-formal-proofs-2026-10-20",
+      "base": "main",
+      "pinned_base_sha": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+      "published_head": "fd16f5766629e02cb92c0ca0607afad45799f2cc",
+      "published_parent": "9e1283d5ecb532706b04175e857531511b25c242",
+      "tested_local_head": "db1d72709516bdb831dffa5221639ed98cd477c3",
+      "tree": "bdbd9b904e64dd92126a3847fe6fb2258e8b8b94",
+      "tree_identity_verified": true,
+      "focused_tests_passed": 9,
+      "changed_files": [
+        ".github/workflows/cloud-schur.yml",
+        "formal/cloud_schur/.gitignore",
+        "formal/cloud_schur/CloudSchur.lean",
+        "formal/cloud_schur/check_mutations.py",
+        "formal/cloud_schur/lake-manifest.json",
+        "formal/cloud_schur/lakefile.toml",
+        "formal/cloud_schur/lean-toolchain",
+        "observational_succ/cloud_schur_certificates.py",
+        "research/2026-10-20/CLOUD_FORMAL_KERNEL.log",
+        "research/2026-10-20/CLOUD_FORMAL_SCHUR.md",
+        "research/2026-10-20/CLOUD_FORMAL_SCHUR_RECEIPT.json",
+        "tests/test_cloud_schur_certificates.py"
+      ],
+      "file_policy": "new files only",
+      "dependency_pr200_or_pr201": false
+    },
+    {
+      "lane": "F",
+      "pr": 206,
+      "url": "https://github.com/femboy2112/SUCC/pull/206",
+      "branch": "research/astra-cloud-hostile-holdouts-2026-10-20",
+      "base": "main",
+      "pinned_base_sha": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+      "published_head": "a86c37ef87526c339bebfd21d0232bcf2f5b45a4",
+      "published_parent": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+      "tested_local_head": "2cdeb9c7e868a8dd33ad88f2f7dc60748ea10a51",
+      "tree": "32a156a7d063d738bfc476a87b8c59c19825b72d",
+      "tree_identity_verified": true,
+      "focused_tests_passed": 4,
+      "changed_files": [
+        "research/2026-10-20/CLOUD_HOSTILE_AUDIT.md",
+        "research/2026-10-20/CLOUD_HOSTILE_RECEIPT.json",
+        "scripts/cloud_hostile_holdouts.py",
+        "tests/test_cloud_hostile_holdouts.py"
+      ],
+      "file_policy": "new files only",
+      "dependency_pr200_or_pr201": false
+    }
+  ],
+  "coordinator": {
+    "pr": 202,
+    "branch": "research/astra-cloud-institute-report-2026-10-20",
+    "parent": "e8bcb6e62e843eb93818d8d67c6bcdde61e2b109",
+    "pinned_base": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+    "final_sha_location": "PR202 description; this manifest cannot embed its own containing commit SHA"
+  },
+  "formal": {
+    "run_id": 39479505726,
+    "job_id": 118824073301,
+    "conclusion": "success",
+    "checked_merge_sha": "076ae599348fbe30b7a5de813c633bc93bc1fafb",
+    "checked_cloud_head": "c4092a702c9161d8d7815132c323c4991da01b6c",
+    "lean_version": "4.14.0",
+    "mathlib_sha": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+    "formal_source_sha256": "537c440caab2ab889e14821acb114ae8e8c752af8a2dadedc406dd29f0bd70a1",
+    "exported_theorems": 5,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "false_mutations_rejected": 2,
+    "full_python_refinement_formalized": false,
+    "final_head_run": {
+      "run_id": 39480589258,
+      "job_id": 118827791355,
+      "head": "fd16f5766629e02cb92c0ca0607afad45799f2cc",
+      "merge_sha": "bf925d0d1337334e915b7ba5918c87163bdc20c8",
+      "conclusion": "success",
+      "valid_axiom_audit_lines": [
+        "2026-10-20T19:11:51.1983009Z info: ././././CloudSchur.lean:58:0: 'ObservationalSUCC.CloudSchur.finite_schur_psd_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:51.1984554Z info: ././././CloudSchur.lean:59:0: 'ObservationalSUCC.CloudSchur.finite_negative_direction' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:51.1986518Z info: ././././CloudSchur.lean:60:0: 'ObservationalSUCC.CloudSchur.scalar_schur_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:51.1988506Z info: ././././CloudSchur.lean:61:0: 'ObservationalSUCC.CloudSchur.scalar_negative_lift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:51.1989942Z info: ././././CloudSchur.lean:62:0: 'ObservationalSUCC.CloudSchur.zero_diagonal_negative' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:55.6081976Z 'ObservationalSUCC.CloudSchur.finite_schur_psd_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:55.6083760Z 'ObservationalSUCC.CloudSchur.finite_negative_direction' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:55.6085175Z 'ObservationalSUCC.CloudSchur.scalar_schur_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:55.6086518Z 'ObservationalSUCC.CloudSchur.scalar_negative_lift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "2026-10-20T19:11:55.6087860Z 'ObservationalSUCC.CloudSchur.zero_diagonal_negative' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "rejected_mutations": [
+        "2026-10-20T19:12:03.6024170Z MUTATION_REJECTED semidefinite_is_not_invertible",
+        "2026-10-20T19:12:03.6037514Z MUTATION_REJECTED wrong_negative_value"
+      ]
+    }
+  },
+  "final_main_refresh_utc": "2026-10-20T19:17:16.715Z"
+}

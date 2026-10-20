@@ -1,0 +1,58 @@
+name: Pinned formal kernel and proposition exports
+
+on:
+  push:
+    branches: ['research/vii-formal-*', 'research/pf3-*']
+    paths: ['formal/**', '.github/workflows/mathlib_bridge.yml', 'observational_succ/proof_authority.py', 'observational_succ/_formal_catalogue.py']
+  pull_request:
+    paths: ['formal/**', '.github/workflows/mathlib_bridge.yml', 'observational_succ/proof_authority.py', 'observational_succ/_formal_catalogue.py']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Both projects share one cache and build serially. Do not duplicate large builds.
+concurrency:
+  group: succ-pinned-formal-kernel
+  cancel-in-progress: false
+
+jobs:
+  formal_kernel:
+    name: Exact Lean types, source hashes, axioms and negative controls
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install hash-verified pinned Lean archive
+        run: |
+          set -euo pipefail
+          curl --fail -L https://github.com/leanprover/lean4/releases/download/v4.14.0/lean-4.14.0-linux.tar.zst -o "$RUNNER_TEMP/lean.tar.zst"
+          echo "320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a  $RUNNER_TEMP/lean.tar.zst" | sha256sum -c -
+          tar --no-same-owner --zstd -xf "$RUNNER_TEMP/lean.tar.zst" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/lean-4.14.0-linux/bin" >> "$GITHUB_PATH"
+      - name: Fetch one pinned dependency tree and targeted cache
+        working-directory: formal/mathlib_bridge
+        run: |
+          set -euo pipefail
+          lake exe cache get Mathlib/NumberTheory/FLT/MasonStothers.lean Mathlib/Data/ZMod/Basic.lean Mathlib/LinearAlgebra/Matrix/SchurComplement.lean Mathlib/Data/Real/StarOrdered.lean Mathlib/Tactic/FieldSimp.lean Mathlib/Tactic/Ring.lean
+          mkdir -p ../cloud_schur/.lake
+          ln -s "$(pwd)/.lake/packages" ../cloud_schur/.lake/packages
+      - name: Check record parser negative controls
+        run: python3 -m unittest discover -s formal/kernel_audit -p 'test_*.py' -v
+      - name: Rebuild both projects and export actual kernel propositions
+        run: python3 formal/kernel_audit/generate.py --output "$RUNNER_TEMP/succ-kernel-audit"
+      - name: Test admitted formal references when catalogue is populated
+        run: |
+          python3 -m pip install 'sympy>=1.12,<2'
+          python3 formal/kernel_audit/check_admission.py "$RUNNER_TEMP/succ-kernel-audit/kernel-attestation.json"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: succ-formal-kernel-attestation
+          path: ${{ runner.temp }}/succ-kernel-audit/

@@ -1,0 +1,55 @@
+{
+  "actual_kernel_build_git_commit": "67da5369b6037a335ff2009b900e4bcd347557ee",
+  "actual_kernel_build_git_tree": "f918b5b8b0acc699d3bd6ca1f23fd935aadf6884",
+  "actual_theorem_exports": [
+    "ObservationalSUCC.CloudSchur.finite_negative_direction",
+    "ObservationalSUCC.CloudSchur.finite_schur_psd_iff",
+    "ObservationalSUCC.CloudSchur.scalar_negative_lift",
+    "ObservationalSUCC.CloudSchur.scalar_schur_identity",
+    "ObservationalSUCC.CloudSchur.zero_diagonal_negative",
+    "SUCC.MasonStothersBridge.control_hW_is_load_bearing",
+    "SUCC.MasonStothersBridge.polynomial_fermat",
+    "SUCC.MasonStothersBridge.radical_neg_prod",
+    "SUCC.MasonStothersBridge.succ_mason_stothers_charZero",
+    "SUCC.MasonStothersBridge.succ_mason_stothers_core"
+  ],
+  "admitted_record_canonical_sha256": "9de79bcbe52c79f1829361c611d97a77b82dc08d9a5fe6181931b78865c8a9f4",
+  "checked_source_count": 15,
+  "checked_sources_match": true,
+  "environment_sha256": "bcac6fa0c0bbdd3ddc9e886d4754496ce63b0ba4e3bc055a02a7dfb544e9ce90",
+  "focused_run": {
+    "command": "PYTHONPATH=<installed-root> python tests/test_main_vii_admitted_formal_holdout.py",
+    "exit_code": 0,
+    "observed_output": "Ran 6 tests in 1.100s; OK",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "tests": 6
+  },
+  "formal_source_transport_authority": false,
+  "holdout_test_sha256": "6d6a19d3709675da1a9a5205ec965e63d34a97fcb6fbd8020596dc1523d154c9",
+  "installed_content_sha256": {
+    "formal/kernel_audit/admitted/kernel-attestation.json": "78b996095ae5020f3d49bb4e8e09be651559f31e2f753f2779143a35c4effe26",
+    "observational_succ/_formal_catalogue.py": "8fdeeb84334774e2c1b07678dca101e24f6df071c500922628ad068ae1093c43",
+    "observational_succ/proof_authority.py": "9809e080f1094ce4a6df95f5899fcedd559139283b728c5c1be4ff1b77d65cae",
+    "observational_succ/proof_contracts.py": "85e77e3aa97d88f49eeb7ae565fae44eda8faa33ae847f7e3ac701ebd84020e2"
+  },
+  "installed_git_head": "948efb221025a16309e2947ef734244adfef8274",
+  "installed_worktree_dirty": true,
+  "negative_controls": [
+    "actual receipt with English RH",
+    "Mason/Fermat proposition exchange",
+    "changed claimed type",
+    "forged matched claim/evidence type",
+    "changed theorem name",
+    "changed toolchain",
+    "changed dependency revision",
+    "changed environment digest",
+    "unqualified name",
+    "receipt type with recomputed type hash",
+    "receipt axiom change",
+    "receipt universe change",
+    "receipt build commit change"
+  ],
+  "positive_typed_propositions_verified": 10,
+  "remaining_gate": "Coordinator must rerun full combined tests on the final committed candidate.",
+  "scope": "independent data-boundary tests against an actually admitted kernel record; not a new Lean proof"
+}
