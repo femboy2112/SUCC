@@ -394,7 +394,7 @@ q_{10}=F(1,0)=\frac{a+u}{b},\qquad
 q_{01}=F(0,1)=\frac{a}{b+v}.
 \]
 
-**PS-11 (CLASSICAL / PROVED ELEMENTARY — finite projective reconstruction).**
+**PS-13 (CLASSICAL / PROVED ELEMENTARY — finite projective reconstruction).**
 Assuming positive integer a,b,u,v, define
 
 \[
@@ -475,7 +475,7 @@ algebra on formal counterfactual reports grants such access.
 Compare SUCC's source-relative proof-access and EODCS causal
 descent contracts.
 
-**PS-12 (CLASSICAL/TESTED — observation insufficiency).**
+**PS-14 (CLASSICAL/TESTED — observation insufficiency).**
 The ratio q00 alone and each proper subset of the canonical three
 readings fail to identify the full frame; original *absolute integer
 scale* and physical source identity remain inaccessible even from
