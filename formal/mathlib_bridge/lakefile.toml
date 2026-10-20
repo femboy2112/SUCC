@@ -1,0 +1,14 @@
+name = "mathlib_bridge"
+defaultTargets = ["MasonStothersBridge"]
+
+# Pinned mathlib revision: tag v4.14.0 (commit 4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84),
+# whose lean-toolchain is leanprover/lean4:v4.14.0 -- exactly the toolchain this
+# project (and the SUCC repo root) pins. See lake-manifest.json for the frozen
+# revision resolved by `lake update`.
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.14.0"
+
+[[lean_lib]]
+name = "MasonStothersBridge"
