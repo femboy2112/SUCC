@@ -7,7 +7,7 @@ and the growing-modulus failure boundary (X > 10 W)."""
 import random
 import unittest
 from fractions import Fraction
-from math import gcd
+from math import gcd, isqrt
 
 from observational_succ.residue_box_counting import (
     ResidueBoxError,
@@ -172,14 +172,20 @@ class TestMutationAndInvalidInputs(unittest.TestCase):
 
 
 class TestGrowingModulus(unittest.TestCase):
-    def test_dominance_threshold_is_ten_W(self):
-        W = 7
-        R = coprime_sum_residues(W)
-        below = growth_regime(5 * W, W, R)       # X = 35 < 10W = 70
-        above = growth_regime(20 * W, W, R)      # X = 140 > 70
-        self.assertFalse(below.main_dominates)
-        self.assertTrue(above.main_dominates)
-        self.assertEqual(above.dominance_threshold_X, 10 * W + 1)
+    def test_dominance_threshold_exact_and_tight(self):
+        # The main term beats the proved error bound iff X^2 > 10WX + 10W^2, i.e.
+        # X > W(5+sqrt(35)) ~= 10.916 W -- NOT X > 10W. Threshold is the least
+        # integer X satisfying that: 5W + isqrt(35 W^2) + 1.
+        for W in (1, 2, 3, 5, 7, 10, 12):
+            R = coprime_sum_residues(W)
+            thr = growth_regime(W, W, R).dominance_threshold_X
+            self.assertEqual(thr, 5 * W + isqrt(35 * W * W) + 1)
+            # tight: dominates AT the threshold, not one below it
+            self.assertTrue(growth_regime(thr, W, R).main_dominates)
+            self.assertFalse(growth_regime(thr - 1, W, R).main_dominates)
+            # 10W is NOT enough (the old wrong constant); 11W is a safe sufficient bound
+            self.assertFalse(growth_regime(10 * W, W, R).main_dominates)
+            self.assertTrue(growth_regime(11 * W, W, R).main_dominates)
 
     def test_degeneration_at_W_comparable_to_X(self):
         # W ~ X: error bound is at least the main term -> asymptotic is vacuous.

@@ -58,20 +58,57 @@ class TestLevelB(unittest.TestCase):
         claim = Claim("M_not_psd", "M is indefinite", required_level="B", scope="finite")
         self.assertEqual(claim.discharge(cert).status, VERIFIED)
 
-    def test_schur_source_certificate_genuine_vs_trap(self):
+    def test_finite_schur_positivity_genuine_vs_trap(self):
         A, B, D = sp.Matrix([[1]]), sp.Matrix([[2]]), sp.Matrix([[100]])
         M = sp.Matrix(sp.BlockMatrix([[A, B], [B.T, D]]))
-        good = LocalCertificate("schur_source_certificate",
-                                {"matrix": M, "n_A": 1, "source_form_identified": True},
-                                scope="finite")
-        claim = Claim("block_positive", "M>=0 as a source form",
+        good = LocalCertificate("finite_schur_positivity",
+                                {"matrix": M, "n_A": 1}, scope="finite")
+        claim = Claim("block_positive", "M>=0 (finite block positivity)",
                       required_level="B", scope="finite")
         self.assertEqual(claim.discharge(good).status, VERIFIED)
         # the diag(1,-1) trap: high block not PSD -> checker fails -> REFUTED
-        trap = LocalCertificate("schur_source_certificate",
-                                {"matrix": sp.Matrix([[1, 0], [0, -1]]), "n_A": 1,
-                                 "source_form_identified": True}, scope="finite")
+        trap = LocalCertificate("finite_schur_positivity",
+                                {"matrix": sp.Matrix([[1, 0], [0, -1]]), "n_A": 1},
+                                scope="finite")
         self.assertEqual(claim.discharge(trap).status, REFUTED)
+
+    def test_finite_schur_positivity_ignores_caller_source_flag(self):
+        # A self-asserted source_form_identified flag must NOT change the MATH
+        # verdict (it is simply ignored); and a Level-B cert cannot reach a
+        # source/global claim regardless.
+        Mbad = sp.Matrix([[1, 0], [0, -1]])   # not PSD
+        cert = LocalCertificate("finite_schur_positivity",
+                                {"matrix": Mbad, "n_A": 1,
+                                 "source_form_identified": True}, scope="finite")
+        self.assertEqual(
+            Claim("x", "finite", required_level="B", scope="finite")
+            .discharge(cert).status, REFUTED)              # flag can't rescue non-PSD
+        Mgood = sp.Matrix([[2, 1], [1, 2]])
+        cert2 = LocalCertificate("finite_schur_positivity",
+                                 {"matrix": Mgood, "n_A": 1,
+                                  "source_form_identified": True}, scope="finite")
+        # even flagged "source", it can only discharge a FINITE Level-B claim ...
+        self.assertEqual(
+            Claim("x", "finite", required_level="B", scope="finite")
+            .discharge(cert2).status, VERIFIED)
+        # ... never a Level-D source claim (level gating)
+        self.assertEqual(
+            Claim("src", "source", required_level="D", scope="global")
+            .discharge(cert2).status, INAPPLICABLE)
+
+    def test_casus_irreducibilis_block_is_a_verdict_not_a_crash(self):
+        # Amber #3: a rational M whose high block has irrational (casus
+        # irreducibilis) eigenvalues must yield a verdict, never a raw TypeError.
+        M = sp.Matrix([[sp.Rational(-2, 3), -1, sp.Rational(2, 3), -1],
+                       [-1, 5, sp.Rational(7, 3), sp.Rational(-5, 3)],
+                       [sp.Rational(2, 3), sp.Rational(7, 3), sp.Rational(49, 36),
+                        sp.Rational(-5, 6)],
+                       [-1, sp.Rational(-5, 3), sp.Rational(-5, 6),
+                        sp.Rational(11, 9)]])
+        cert = LocalCertificate("finite_schur_positivity",
+                                {"matrix": M, "n_A": 1}, scope="finite")
+        v = Claim("x", "finite", required_level="B", scope="finite").discharge(cert)
+        self.assertIn(v.status, (VERIFIED, REFUTED, INAPPLICABLE, "UNKNOWN"))
 
     def test_unknown_checker_rejected_at_construction(self):
         with self.assertRaises(ProofAuthorityError):
@@ -183,6 +220,48 @@ class TestMetadataCannotElevate(unittest.TestCase):
         claim = Claim("x", "anything", required_level="B", scope="finite")
         self.assertEqual(claim.discharge("a string claiming to be a proof").status, REFUTED)
 
+    def test_forged_duck_typed_object_is_rejected(self):
+        # A hand-forged look-alike with the right attributes must NOT discharge:
+        # authority is by registered artifact type, not object shape.
+        class Forged:
+            level = "D"
+            scope = "global"
+            normalization = ""
+
+            def verify(self, **kwargs):
+                return True
+
+        claim = Claim("x", "forged source realization", required_level="D",
+                      scope="global")
+        self.assertEqual(claim.discharge(Forged()).status, REFUTED)
+
+
+class TestReceiptAxiomHardening(unittest.TestCase):
+    def _thm(self):
+        return FormalTheorem(name="T", toolchain=_V414, manifest_rev=_REV,
+                             allowed_axioms=("propext", "Classical.choice", "Quot.sound"))
+
+    def test_absent_axioms_key_is_rejected(self):
+        # A theorem entry with NO axioms key is UNKNOWN, not "axiom-free" -> reject.
+        receipt = {"build_succeeded": True, "toolchain": _V414, "manifest_rev": _REV,
+                   "theorems": {"T": {}}}
+        self.assertFalse(self._thm().validate_against_receipt(receipt))
+
+    def test_sorry_axiom_default_denied_even_if_allowed(self):
+        # sorryAx must be rejected regardless of the caller's allowed set.
+        ft = FormalTheorem(name="T", toolchain=_V414, manifest_rev=_REV,
+                           allowed_axioms=("propext", "sorryAx"))
+        receipt = {"build_succeeded": True, "toolchain": _V414, "manifest_rev": _REV,
+                   "theorems": {"T": {"axioms": ["propext", "sorryAx"]}}}
+        self.assertFalse(ft.validate_against_receipt(receipt))
+
+    def test_native_decide_axiom_default_denied(self):
+        ft = FormalTheorem(name="T", toolchain=_V414, manifest_rev=_REV,
+                           allowed_axioms=("propext", "Lean.ofReduceBool"))
+        receipt = {"build_succeeded": True, "toolchain": _V414, "manifest_rev": _REV,
+                   "theorems": {"T": {"axioms": ["Lean.ofReduceBool"]}}}
+        self.assertFalse(ft.validate_against_receipt(receipt))
+
 
 class TestQuantifierTransport(unittest.TestCase):
     def _pointwise(self):
@@ -246,7 +325,7 @@ class TestRealReceiptIntegration(unittest.TestCase):
 class TestRegistry(unittest.TestCase):
     def test_builtin_checkers_present(self):
         for name in ("negative_vector", "psd_matrix", "finite_gram_psd",
-                     "schur_source_certificate"):
+                     "finite_schur_positivity"):
             self.assertIn(name, registered_checkers())
 
 

@@ -169,11 +169,12 @@ and it lives in `observational_succ/proof_authority.py` + `tests/test_proof_auth
    tests exercise this family.
 
 2. **Exact Schur-complement theorem ⟶ finite negative-witness / positivity (Level B).**
-   The `negative_vector` and `schur_source_certificate` trusted checkers reuse the
+   The `negative_vector` and `finite_schur_positivity` trusted checkers reuse the
    exact `quantitative_rigidity` Schur kernel on witness-as-DATA: an exact rational
-   `v` with `vᵀ M v < 0` certifies non-PSD, and the block diagnostics certify genuine
-   source-positivity. `test_negative_vector_certificate_verified` and
-   `test_schur_source_certificate_genuine_vs_trap` (incl. the `diag(1,−1)` trap)
+   `v` with `vᵀ M v < 0` certifies non-PSD, and the block diagnostics certify finite
+   block positivity `M ⪰ 0` (MATH only — source identification is Level D's job, not
+   a caller boolean). `test_negative_vector_certificate_verified` and
+   `test_finite_schur_positivity_genuine_vs_trap` (incl. the `diag(1,−1)` trap)
    exercise this family. A finite certificate carries `scope='finite'` and therefore
    **cannot** discharge a `scope='global'` claim (the finite-Gram → global-kernel
    failure control).

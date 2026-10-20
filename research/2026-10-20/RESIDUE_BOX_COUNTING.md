@@ -121,20 +121,31 @@ lane (Part V) composes them from `squarefree`/`exponent-cap` predicates via
 The main term `|R|·X²/(2W²)` beats the proved error bound `5|R|(X/W+1)` iff
 
 ```
-X²/(2W²) > 5(X/W + 1)   ⟺   X² > 10 W X + 10 W²   ⟸   X > 10 W,
+X²/(2W²) > 5(X/W + 1)   ⟺   X² > 10 W X + 10 W²,
 ```
 
-independently of `|R|` (both sides scale with `|R|`). So:
+independently of `|R|` (both sides scale with `|R|`). The positive root of
+`X² − 10WX − 10W²` is `X = W(5 + √35) ≈ 10.916 W`, so the main term dominates iff
 
-- for a modulus growing slower than `X/10` the asymptotic is informative;
+```
+X > W(5 + √35) ≈ 10.916 W      (NOT merely X > 10W: at X = 10W the bound still
+                                wins, 100W² < 110W²).
+```
+
+A convenient **safe sufficient** bound is `X ≥ 11W` (`121W² > 120W²`). So:
+
+- for a modulus growing slower than `X/(5+√35)` — safely `W ≤ X/11` — the
+  asymptotic is informative;
 - at `W ≍ X` the error bound is ≥ the main term and the estimate is **vacuous**.
 
-`growth_regime(X,W,R)` reports `main_dominates` and the explicit threshold
-`dominance_threshold_X = 10W+1`. This is the honest boundary the campaign asked
-for: the elementary error term (`O(X/W)` relative) becomes too large exactly when
-the window `W` reaches the scale of the box `X`. Pushing past it needs a genuinely
-different input (Fourier/large-sieve/dispersion) — that is the open research edge,
-not a renaming.
+`growth_regime(X,W,R)` reports `main_dominates` (computed directly as
+`error_bound < main_term`) and the exact integer threshold
+`dominance_threshold_X = 5W + ⌊√35·W⌋ + 1 = 5W + isqrt(35W²) + 1` (35 is
+squarefree, so `√35·W` is never an integer). This is the honest boundary the
+campaign asked for: the elementary error term (`O(X/W)` relative) becomes too
+large exactly when the window `W` reaches the scale of the box `X`. Pushing past
+it needs a genuinely different input (Fourier/large-sieve/dispersion) — that is
+the open research edge, not a renaming.
 
 ---
 

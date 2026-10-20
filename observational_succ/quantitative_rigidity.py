@@ -575,7 +575,12 @@ def diagnostics_from_block(M: sp.Matrix, n_A: int, *,
     A, B, D = _split(M, n_A)
     D_pd = is_positive_definite(D)
     D_psd = True if D_pd else is_positive_semidefinite(D)
-    gap = min_eigenvalue_exact(D) if D_pd else (0 if D_psd else None)
+    # spectral_gap is purely informational (it plays NO role in
+    # certificate_status). D_pd already proves, via Sylvester, that the least
+    # eigenvalue is > 0, so report it directly -- do NOT re-decide its sign with a
+    # symbolic `> 0`, which raises a raw TypeError on casus-irreducibilis algebraic
+    # eigenvalues. A singular/indefinite D has no positive uniform gap -> None.
+    spectral_gap = min_eigenvalue_exact(D) if D_pd else None
     rng = None if D_pd else range_inclusion_holds(M, n_A)
     if D_pd:
         S = schur_complement(M, n_A)
@@ -595,7 +600,7 @@ def diagnostics_from_block(M: sp.Matrix, n_A: int, *,
         source_form_identified=source_form_identified,
         high_block_psd=D_psd,
         range_inclusion_ok=rng,
-        spectral_gap=(gap if (gap is not None and gap > 0) else None),
+        spectral_gap=spectral_gap,
         inverse_response_sign=sign,
         schur_complement_psd=schur_psd,
         sufficient_surrogate_psd=surrogate_psd,

@@ -4,8 +4,16 @@ The witness-carrying contracts in :mod:`proof_contracts` were a step forward, bu
 they let a *caller-supplied callback* impersonate proof authority: a bare
 ``lambda: True`` passed a ``CheckedCertificate`` or a ``SourceRealizationWitness``,
 and a fabricated ``TheoremReference`` acquired standing from mere presence in a
-dataclass. This module rebuilds authority so that **metadata can never elevate
-itself into mathematical authority**.
+dataclass. This module rebuilds authority so that **the registered typed
+artifacts cannot self-elevate**: a verdict of VERIFIED requires one of exactly
+three artifact types (checked by ``isinstance``, so a forged duck-typed
+look-alike is rejected), and its force comes from an in-repo trusted checker, a
+recorded Lean build receipt, or a registered source-map -- never from an object's
+shape or a caller callback. Two trust boundaries remain explicitly OUTSIDE this
+module and are the caller's responsibility: the *provenance of the receipt file*
+(it is trusted to be the output of the pinned CI; this module authenticates its
+contents, not its origin) and the correctness of the registered checkers
+themselves.
 
 Authority flows through FOUR disjoint, explicitly-separated levels:
 
@@ -46,6 +54,7 @@ import sympy as sp
 from observational_succ.proof_contracts import ProofContract, ProofContractError
 from observational_succ.quantitative_rigidity import (
     RigidityInputError,
+    UndecidableSignError,
     as_exact_matrix,
     diagnostics_from_block,
     is_positive_semidefinite,
@@ -60,6 +69,10 @@ UNKNOWN = "UNKNOWN"
 
 # authority-level ordering: A < B < C < D in *strength of discharge kind*
 _LEVEL_RANK = {"A": 0, "B": 1, "C": 2, "D": 3}
+
+#: axioms that are NEVER acceptable regardless of a caller's allowed_axioms set
+#: (sorry / native_decide escape hatches). Default-denied in the receipt check.
+_FORBIDDEN_AXIOMS = ("sorryAx", "sorry", "Lean.ofReduceBool")
 
 
 class ProofAuthorityError(ProofContractError):
@@ -118,16 +131,25 @@ def _check_finite_gram_psd(data: dict) -> bool:
     return is_positive_semidefinite(as_exact_matrix(data["gram"]))
 
 
-@trusted_checker("schur_source_certificate")
-def _check_schur_source_certificate(data: dict) -> bool:
-    """The genuine block-positivity certificate: diagnostics must read VERIFIED
-    (high block PSD + range inclusion + true Schur PSD + source identified)."""
+@trusted_checker("finite_schur_positivity")
+def _check_finite_schur_positivity(data: dict) -> bool:
+    """A FINITE block-positivity certificate: the exact Schur obligations hold, so
+    ``M = [[A, B], [B^T, D]] >= 0`` (high block PSD + range inclusion + true Schur
+    complement PSD + ground-truth M PSD).
+
+    Certifies MATH ONLY. It deliberately does NOT consult any caller-supplied
+    ``source_form_identified`` flag: source identification is not locally
+    checkable (that is Level D's job, via a ``SourceRealization`` + a registered
+    source map). Letting a self-asserted boolean flip the verdict would be exactly
+    the 'metadata asserts authority' failure this module exists to prevent."""
     M = as_exact_matrix(data["matrix"])
-    diag = diagnostics_from_block(
-        M, int(data["n_A"]),
-        source_form_identified=bool(data.get("source_form_identified", False)),
-        kappa=data.get("kappa"))
-    return diag.is_genuine_certificate()
+    diag = diagnostics_from_block(M, int(data["n_A"]),
+                                  source_form_identified=False,
+                                  kappa=data.get("kappa"))
+    return bool(diag.high_block_psd
+                and (diag.range_inclusion_ok in (True, None))
+                and diag.schur_complement_psd
+                and diag.m_psd)
 
 
 # --- source-map checkers (Level D): identify math object <-> source object ---- #
@@ -227,9 +249,14 @@ class FormalTheorem:
         if receipt.get("manifest_rev") != self.manifest_rev:
             return False
         theorems = receipt.get("theorems", {})
-        if self.name not in theorems:          # fabricated name -> absent -> rejected
+        entry = theorems.get(self.name)
+        if entry is None:                      # fabricated name -> absent -> rejected
             return False
-        recorded_axioms = tuple(theorems[self.name].get("axioms", ()))
+        if "axioms" not in entry:              # absence is UNKNOWN, not "no axioms"
+            return False
+        recorded_axioms = tuple(entry["axioms"])
+        if any(ax in _FORBIDDEN_AXIOMS for ax in recorded_axioms):
+            return False                       # default-deny sorry/native_decide
         return all(ax in set(self.allowed_axioms) for ax in recorded_axioms)
 
     def verify(self, receipt: Optional[dict] = None,
@@ -323,12 +350,17 @@ class Claim:
         Enforces, before ever trusting the evidence: (1) a callback is NOT
         evidence; (2) evidence level >= required level; (3) scope compatibility;
         (4) normalization match. Only then is the evidence re-verified exactly."""
-        # (1) reject anything that smells like a raw callback / metadata blob.
-        if callable(evidence) or not hasattr(evidence, "level"):
+        # (1) only the registered typed authority artifacts count as evidence. A
+        #     raw callback, a bare value, OR a forged duck-typed look-alike (an
+        #     object that merely exposes `.level` and a `.verify()` returning True)
+        #     is rejected: authority comes from the registered checkers / receipt /
+        #     source maps, never from an object's shape.
+        if not isinstance(evidence, (LocalCertificate, FormalTheorem, SourceRealization)):
             return Verdict(REFUTED,
-                           "evidence is not a typed authority artifact (a callback "
-                           "or bare value is not proof)")
-        ev_level = getattr(evidence, "level")
+                           "evidence is not a registered authority artifact "
+                           "(LocalCertificate / FormalTheorem / SourceRealization); "
+                           "a callback, bare value, or forged look-alike is not proof")
+        ev_level = evidence.level
         # (2) level sufficiency: exact kind, with D also satisfying a C requirement.
         level_ok = (ev_level == self.required_level
                     or (self.required_level == "C" and ev_level == "D"))
@@ -350,14 +382,24 @@ class Claim:
                            f"normalization mismatch: claim {self.normalization!r} vs "
                            f"evidence {ev_norm!r} (an alternative normalization does "
                            f"not certify a different one)", level_used=ev_level)
-        # finally: the evidence must re-verify exactly.
+        # finally: the evidence must re-verify exactly AND return literal True.
         try:
             if ev_level in ("C", "D"):
-                evidence.verify(receipt=receipt, receipt_path=receipt_path)
+                ok = evidence.verify(receipt=receipt, receipt_path=receipt_path)
             else:
-                evidence.verify()
+                ok = evidence.verify()
         except ProofAuthorityError as exc:
             return Verdict(REFUTED, str(exc), level_used=ev_level)
+        except UndecidableSignError as exc:
+            # a genuinely undecidable obligation is the fourth verdict, not a crash
+            return Verdict(UNKNOWN, f"an obligation was undecidable: {exc}",
+                           level_used=ev_level)
+        if ok is not True:
+            # belt-and-suspenders: a verify() that returns a non-True falsy value
+            # without raising is not a proof (guards a future artifact regressing).
+            return Verdict(REFUTED,
+                           "evidence.verify() did not return literal True",
+                           level_used=ev_level)
         return Verdict(VERIFIED,
                        f"discharged at level {ev_level}", level_used=ev_level)
 

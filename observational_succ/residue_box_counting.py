@@ -29,9 +29,11 @@ then to ``X^2/(2 W^2)`` costs at most ``5X/W + 4`` per pair, and summing over th
 ``|R|`` pairs gives the stated bound.
 
 Growing modulus (the research frontier). The error ``5|R|(X/W + 1)`` is smaller
-than the main term ``|R| X^2 / (2 W^2)`` iff ``X > 10 W``. So the asymptotic is
-informative for ``W < X / 10`` and DEGENERATES at ``W asymptotic to X`` -- the
-honest failure boundary with an explicit constant.
+than the main term ``|R| X^2 / (2 W^2)`` iff ``X^2 > 10 W X + 10 W^2``, i.e. iff
+``X > W(5 + sqrt(35)) ~= 10.916 W`` (at ``X = 10 W`` the bound still wins). So the
+asymptotic is informative for ``W < X / (5 + sqrt(35))`` -- safely ``W <= X/11`` --
+and DEGENERATES at ``W asymptotic to X`` -- the honest failure boundary with an
+explicit constant.
 
 Everything here is exact (``int`` / ``fractions.Fraction``). A float is never a
 certificate; the error bound is a proved rational inequality, not a fit.
@@ -40,7 +42,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from fractions import Fraction
-from math import gcd
+from math import gcd, isqrt
 from typing import Callable, Dict, FrozenSet, Iterable, List, Tuple
 
 ResiduePair = Tuple[int, int]
@@ -219,16 +221,20 @@ class GrowthRegime:
 
 
 def growth_regime(X: int, W: int, R: Iterable[ResiduePair]) -> GrowthRegime:
-    """Compare the main term to the proved error bound. The main term dominates
-    iff ``X > 10 W`` (independently of |R|, since both scale with |R|): with
-    ``|R| X^2 / (2 W^2) > 5 |R| (X/W + 1)`` <=> ``X^2 > 10 W X + 10 W^2``, which
-    holds once ``X > 10 W``. That inequality is the explicit degeneration
-    boundary for a modulus growing with X."""
+    """Compare the main term to the proved error bound. The main term exceeds the
+    bound iff ``|R| X^2 / (2 W^2) > 5 |R| (X/W + 1)`` <=> ``X^2 > 10 W X + 10 W^2``
+    (independently of |R|, since both sides scale with |R|). The positive root of
+    ``X^2 - 10 W X - 10 W^2`` is ``X = W (5 + sqrt(35)) ~= 10.916 W``, so the main
+    term dominates for ``X > W(5 + sqrt(35))`` -- NOT merely ``X > 10 W`` (at
+    ``X = 10 W`` the error bound still wins: ``100 W^2 < 110 W^2``). A convenient
+    safe sufficient bound is ``X >= 11 W`` (``121 W^2 > 120 W^2``). The estimate
+    DEGENERATES at ``W ~ X``. The exact integer threshold is the least X with
+    ``X^2 - 10 W X - 10 W^2 > 0``, i.e. ``5 W + isqrt(35 W^2) + 1`` (35 is
+    squarefree, so ``sqrt(35) W`` is never an integer)."""
     Rset = _check(X, W, R)
     mt = main_term(X, W, Rset)
     bnd = error_bound(X, W, Rset)
-    # smallest integer X0 with X0^2 - 10 W X0 - 10 W^2 > 0  (and |R| > 0)
-    threshold = 10 * W + 1
+    threshold = 5 * W + isqrt(35 * W * W) + 1   # least X with X^2 > 10WX + 10W^2
     return GrowthRegime(W=W, X=X, main_term=mt, error_bound=bnd,
                         main_dominates=(bnd < mt) and len(Rset) > 0,
                         dominance_threshold_X=threshold)
