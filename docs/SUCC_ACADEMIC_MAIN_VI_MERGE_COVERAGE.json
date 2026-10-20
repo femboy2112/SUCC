@@ -1,0 +1,27 @@
+{
+  "operation": "SUCC Academic Main VI integration",
+  "date": "2026-10-20",
+  "base_main": "455600a2e013895c36238a3a97e0f470fd7ba197",
+  "integration_head": "65b839d6a3bb0e6858a5e3f8fdc035929cb6e97d",
+  "diffstat": {"files_changed": 32, "insertions": 8702, "deletions": 0},
+  "file_overlap_between_prs": "none except shared docs touched only by #197",
+  "shared_docs": ["README.md", "docs/CLAIM_INDEX.md", "docs/CLAIM_NAMESPACE_REGISTRY.json"],
+  "shared_docs_sole_writer": 197,
+  "coverage": [
+    {"pr": 194, "files": ["observational_succ/beck_chevalley_source.py", "research/2026-10-19/BECK_CHEVALLEY_SOURCE.md", "tests/test_beck_chevalley_source.py"]},
+    {"pr": 193, "files": ["observational_succ/parity_repair_cost.py", "research/2026-10-19/PARITY_REPAIR_CERTIFICATES.json", "research/2026-10-19/PARITY_REPAIR_COST.md", "scripts/parity_repair_cost_probe.py", "tests/test_parity_repair_cost.py"]},
+    {"pr": 198, "files": ["handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md", "research/2026-10-20/CARRIER_RELATIVE_LOGIC_AUTHORITY.md", "research/2026-10-20/CARRIER_RELATIVE_LOGIC_CLAIMS.md", "research/2026-10-20/CARRIER_RELATIVE_LOGIC_PROBES.md"]},
+    {"pr": 192, "files": ["observational_succ/hologram_transport_calculus.py", "research/2026-10-19/HOLOGRAM_TRANSPORT_CALCULUS.md", "tests/test_hologram_transport_calculus.py"]},
+    {"pr": 197, "files": [".github/workflows/portable-prime-sundial.yml", "README.md", "docs/CLAIM_INDEX.md", "docs/CLAIM_NAMESPACE_REGISTRY.json", "docs/CLAIM_SUPPLEMENT_PORTABLE_SUNDIAL.md", "formal/PortablePrimeSundial.lean", "observational_succ/portable_prime_sundial.py", "research/2026-10-19/PORTABLE_PRIME_SUNDIAL.md", "research/2026-10-19/PORTABLE_SUNDIAL_FINITE_RECEIPT.json", "scripts/portable_prime_sundial_probe.py", "tests/test_portable_prime_sundial.py"]},
+    {"pr": 196, "files": ["observational_succ/abc_triple_moment.py", "research/2026-10-19/ABC_TRIPLE_MOMENT.md", "tests/test_abc_triple_moment.py"]},
+    {"pr": 195, "files": ["observational_succ/source_weil_interface.py", "research/2026-10-19/SOURCE_WEIL_INTERFACE.md", "tests/test_source_weil_interface.py"]}
+  ],
+  "integration_doc_additions": [
+    "docs/SUCC_ACADEMIC_MAIN_VI_INTEGRATION_AUDIT_2026-10-20.md",
+    "docs/SUCC_ACADEMIC_MAIN_VI_DEPENDENCY_GRAPH.json",
+    "docs/SUCC_ACADEMIC_MAIN_VI_MERGE_COVERAGE.json",
+    "docs/CLAIM_INDEX.md (Academic Main VI navigation block)",
+    "README.md (Academic Main VI top-level pointer)"
+  ],
+  "namespace_registry": {"namespaces": 24, "added_this_round_by_pr_197": "PORTABLE_PRIME_SUNDIAL/PSD", "unregistered_prefix_collisions": [], "research_dossier_prefixes_not_promoted": ["PR (#193)", "ABC-TMB (#196)", "CRL (#198)"]}
+}

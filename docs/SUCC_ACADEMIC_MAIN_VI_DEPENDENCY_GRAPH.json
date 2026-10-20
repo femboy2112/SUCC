@@ -1,0 +1,29 @@
+{
+  "operation": "SUCC Academic Main VI — The Proof Forge (integration phase)",
+  "date": "2026-10-20",
+  "base_main": "455600a2e013895c36238a3a97e0f470fd7ba197",
+  "integration_branch": "integration/succ-academic-main-vi-proof-forge-2026-10-20",
+  "integration_head": "65b839d6a3bb0e6858a5e3f8fdc035929cb6e97d",
+  "ancestry_method": "git merge-base --is-ancestor pairwise matrix + git rev-list --count <head> ^main; PR labels NOT trusted",
+  "dag_summary": "Seven INDEPENDENT siblings forking directly from main=455600a. No stacking. Pairwise ancestry matrix is all-negative (no head is an ancestor of another).",
+  "nodes": [
+    {"pr": 194, "head": "9952e6725e681477cf00cef80a112e788a07d35e", "branch": "research/amv-moonshot-a-beck-chevalley-2026-10-19", "merge_base_with_main": "455600a2e013895c36238a3a97e0f470fd7ba197", "unique_commits": 1, "merge_commit": "260bad1", "area": "foundations/proof-authority", "topic": "source-indexed Beck-Chevalley realization firewall", "status": "research (TESTED MODEL; BC is classical)"},
+    {"pr": 193, "head": "fbb056ddc6a1c54fe5b47c52a698fb74929bc8aa", "branch": "research/amv-moonshot-b-maxcut-repair-2026-10-19", "merge_base_with_main": "455600a2e013895c36238a3a97e0f470fd7ba197", "unique_commits": 1, "merge_commit": "bee7b09", "area": "foundations/proof-authority", "topic": "minimum-cost parity repair / |E|-MaxCut", "status": "research (PROVED LOCAL for all-flip unit-weight + TESTED MODEL)"},
+    {"pr": 198, "head": "8cf5948524a199c270afb553a67fdd1b08b3b463", "branch": "research/carrier-relative-lem-fuckedfields-2026-10-20", "merge_base_with_main": "455600a2e013895c36238a3a97e0f470fd7ba197", "unique_commits": 1, "merge_commit": "b8ddab3", "area": "foundations/proof-authority", "topic": "carrier-relative LEM, FuckedFields, inference-authority RAII", "status": "research (CRL-01..12, epistemic-access modelling)"},
+    {"pr": 192, "head": "2ede8b26ad8c5e707d7e6a10f8089609afb8b655", "branch": "research/amv-moonshot-c-hologram-naturality-2026-10-19", "merge_base_with_main": "455600a2e013895c36238a3a97e0f470fd7ba197", "unique_commits": 1, "merge_commit": "0d25df3", "area": "arithmetic/representation-transport", "topic": "prime-clock -> hologram transport naturality", "status": "research (TESTED MODEL; composition law on range only)"},
+    {"pr": 197, "head": "10cac57069060efea94ac5a34f400acddcf2d318", "branch": "research/portable-prime-sundial-rational-succ-2026-10-19", "merge_base_with_main": "455600a2e013895c36238a3a97e0f470fd7ba197", "unique_commits": 27, "merge_commit": "0cceb42", "area": "arithmetic/representation-transport", "topic": "portable rational dual SUCC sundial + CRT prime-power phases", "status": "PROMOTED claim family PSD-01..14 (MIXED: CLASSICAL/PROVED PAPER/TESTED FINITE/UNVERIFIED)", "shared_docs_touched": ["README.md", "docs/CLAIM_INDEX.md", "docs/CLAIM_NAMESPACE_REGISTRY.json"], "shared_docs_conflict": "none (sole writer; additive on Academic Main V registry)"},
+    {"pr": 196, "head": "52adcea7cb3209fa152c5c2c4ba4e4b59fa59279", "branch": "research/amv-moonshot-d-abc-moment-2026-10-19", "merge_base_with_main": "455600a2e013895c36238a3a97e0f470fd7ba197", "unique_commits": 1, "merge_commit": "d1d5216", "area": "global-arithmetic-analysis", "topic": "primitive ABC-triple ris-moments S_t(X) <= C_t X^2 (t<1/2)", "status": "research (ABC-TMB-01 PROVED LOCAL; strictly inferior to BBLT 2410.12234)"},
+    {"pr": 195, "head": "ba6c2c9f33a2c0cedf4ad14e38e6de941a273d88", "branch": "research/amv-moonshot-e-rh-source-2026-10-19", "merge_base_with_main": "455600a2e013895c36238a3a97e0f470fd7ba197", "unique_commits": 1, "merge_commit": "65b839d", "area": "RH-facing-interface", "topic": "source->signed-Weil obligation checker (firewall scaffold)", "status": "research (SPECULATIVE; no path to identified:True; RH unmoved)"}
+  ],
+  "merge_order": [194, 193, 198, 192, 197, 196, 195],
+  "merge_strategy": "history-preserving --no-ff, one merge per PR head, semantic order (foundations -> transport -> arithmetic -> RH interface)",
+  "all_heads_ancestors_of_integration_head": true,
+  "firewall": {
+    "RH_PROVED": false,
+    "ABC_OPEN": true,
+    "signed_S4_sign": "OPEN (AMBIGUOUS)",
+    "no_zeta_zero_construction_input": true,
+    "181_182_never_summed": true,
+    "frozen_originals_untouched": true
+  }
+}
