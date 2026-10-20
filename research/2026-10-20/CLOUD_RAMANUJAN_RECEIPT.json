@@ -1,0 +1,290 @@
+{
+  "base_sha": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+  "claim_boundary": "Exact finite receipts; universal proofs are in the dossier; no Goldbach proof.",
+  "controls": {
+    "distinct_cutoffs": {
+      "N": 2,
+      "P": 3,
+      "Q": 3,
+      "modulus_sum": {
+        "denominator": 4,
+        "numerator": 7
+      },
+      "prime_product": {
+        "denominator": 2,
+        "numerator": 3
+      }
+    },
+    "fractional_cutoff_rejected": true,
+    "omitted_divisor_breaks_naive_upper": {
+      "N": 10,
+      "P": 3,
+      "certified_larger_lower": {
+        "denominator": 1358569873309208148864911183708160000000,
+        "numerator": 2383971788543919870042280177203067289941
+      },
+      "naive_upper": {
+        "denominator": 2,
+        "numerator": 3
+      },
+      "refuted": true,
+      "repaired_enclosure": {
+        "N": 10,
+        "P": 3,
+        "finite_product": {
+          "denominator": 2,
+          "numerator": 3
+        },
+        "generic_tail_defect_bound": {
+          "denominator": 6,
+          "numerator": 1
+        },
+        "lower": {
+          "denominator": 4,
+          "numerator": 5
+        },
+        "residual_after_small_primes": 5,
+        "unseen_distinct_prime_count_bound": 1,
+        "upper": {
+          "denominator": 4,
+          "numerator": 9
+        }
+      }
+    },
+    "zero_finite_identity": true
+  },
+  "finite_tail_checks": [
+    {
+      "N": 2,
+      "Q": 61,
+      "holdout_end": 1000,
+      "modulus_enclosure": [
+        {
+          "denominator": 56386435591540454400,
+          "numerator": 40807722973838505253
+        },
+        {
+          "denominator": 56386435591540454400,
+          "numerator": 107362204327787894053
+        }
+      ],
+      "observed_finite_absolute_tail": {
+        "denominator": 129064905629546468088504385649328699392022690020962173522956326230925965255867898515328368082375931729939644834371228067193842294127224606554864314598813438618551041206750500785521629284080767196364800000,
+        "numerator": 4051656271928370699981978429567031849387168559766239510825785413767693856979081422415153291299783586358155861861914322458642522536805321656793234818909532897126837831329851086060134328637990238071060073
+      },
+      "prime_enclosure": {
+        "N": 2,
+        "P": 101,
+        "finite_product": {
+          "denominator": 2717139746618416297729822367416320000000,
+          "numerator": 3593748517058744878720452207425519347523
+        },
+        "generic_tail_defect_bound": {
+          "denominator": 202,
+          "numerator": 1
+        },
+        "lower": {
+          "denominator": 1811426497745610865153214911610880000000,
+          "numerator": 2383971788543919870042280177203067289941
+        },
+        "residual_after_small_primes": 1,
+        "unseen_distinct_prime_count_bound": 0,
+        "upper": {
+          "denominator": 2717139746618416297729822367416320000000,
+          "numerator": 3593748517058744878720452207425519347523
+        }
+      },
+      "proved_infinite_tail_bound": {
+        "denominator": 61,
+        "numerator": 36
+      }
+    },
+    {
+      "N": 30,
+      "Q": 61,
+      "holdout_end": 1000,
+      "modulus_enclosure": [
+        {
+          "denominator": 1127728711830809088,
+          "numerator": 300575776705475903
+        },
+        {
+          "denominator": 1127728711830809088,
+          "numerator": 7787954929024782143
+        }
+      ],
+      "observed_finite_absolute_tail": {
+        "denominator": 9357205658142118936416567959576330705921645026519757580414333651742132481050422642361306685972255050420624250491914034871553566324223783975227662808413974299844950487489411306950318123095855621736448000000,
+        "numerator": 671012483929236000815722909604911311165896409499966351949136628426301401863449566365490251803642183171271780961512204322918089395534217056627228515517548458121774951449861307753396563921197691779356758247
+      },
+      "prime_enclosure": {
+        "N": 30,
+        "P": 101,
+        "finite_product": {
+          "denominator": 1018927404981906111648683387781120000000,
+          "numerator": 3593748517058744878720452207425519347523
+        },
+        "generic_tail_defect_bound": {
+          "denominator": 202,
+          "numerator": 1
+        },
+        "lower": {
+          "denominator": 679284936654604074432455591854080000000,
+          "numerator": 2383971788543919870042280177203067289941
+        },
+        "residual_after_small_primes": 1,
+        "unseen_distinct_prime_count_bound": 0,
+        "upper": {
+          "denominator": 1018927404981906111648683387781120000000,
+          "numerator": 3593748517058744878720452207425519347523
+        }
+      },
+      "proved_infinite_tail_bound": {
+        "denominator": 122,
+        "numerator": 405
+      }
+    },
+    {
+      "N": 202,
+      "Q": 61,
+      "holdout_end": 1000,
+      "modulus_enclosure": [
+        {
+          "denominator": 56386435591540454400,
+          "numerator": 7197709890094063909
+        },
+        {
+          "denominator": 56386435591540454400,
+          "numerator": 140972217411532335397
+        }
+      ],
+      "observed_finite_absolute_tail": {
+        "denominator": 129064905629546468088504385649328699392022690020962173522956326230925965255867898515328368082375931729939644834371228067193842294127224606554864314598813438618551041206750500785521629284080767196364800000,
+        "numerator": 7361364445666052941026562769062004684421350416991288248105096704552001578509243844967605130312211385657795629083321502206744615866830337661134536586402855013701306094275459240578854609591636411862839913
+      },
+      "prime_enclosure": {
+        "N": 202,
+        "P": 101,
+        "finite_product": {
+          "denominator": 2689968349152232134752524143742156800000,
+          "numerator": 3593748517058744878720452207425519347523
+        },
+        "generic_tail_defect_bound": {
+          "denominator": 202,
+          "numerator": 1
+        },
+        "lower": {
+          "denominator": 1793312232768154756501682762494771200000,
+          "numerator": 2383971788543919870042280177203067289941
+        },
+        "residual_after_small_primes": 1,
+        "unseen_distinct_prime_count_bound": 0,
+        "upper": {
+          "denominator": 2689968349152232134752524143742156800000,
+          "numerator": 3593748517058744878720452207425519347523
+        }
+      },
+      "proved_infinite_tail_bound": {
+        "denominator": 1525,
+        "numerator": 1809
+      }
+    },
+    {
+      "N": -42,
+      "Q": 61,
+      "holdout_end": 1000,
+      "modulus_enclosure": [
+        {
+          "denominator": 5638643559154045440,
+          "numerator": 197177274750366067
+        },
+        {
+          "denominator": 5638643559154045440,
+          "numerator": 36247521341472951667
+        }
+      ],
+      "observed_finite_absolute_tail": {
+        "denominator": 9357205658142118936416567959576330705921645026519757580414333651742132481050422642361306685972255050420624250491914034871553566324223783975227662808413974299844950487489411306950318123095855621736448000000,
+        "numerator": 706930207578864731086828478090919011764378549991529116991502878138856434339431358396859699547079044890891946016040336050949961315711113658386510447897891558977487194085188680248768639584352165101607074697
+      },
+      "prime_enclosure": {
+        "N": -42,
+        "P": 101,
+        "finite_product": {
+          "denominator": 1132141561091006790720759319756800000000,
+          "numerator": 3593748517058744878720452207425519347523
+        },
+        "generic_tail_defect_bound": {
+          "denominator": 202,
+          "numerator": 1
+        },
+        "lower": {
+          "denominator": 754761040727337860480506213171200000000,
+          "numerator": 2383971788543919870042280177203067289941
+        },
+        "residual_after_small_primes": 1,
+        "unseen_distinct_prime_count_bound": 0,
+        "upper": {
+          "denominator": 1132141561091006790720759319756800000000,
+          "numerator": 3593748517058744878720452207425519347523
+        }
+      },
+      "proved_infinite_tail_bound": {
+        "denominator": 61,
+        "numerator": 195
+      }
+    },
+    {
+      "N": 1,
+      "Q": 61,
+      "holdout_end": 1000,
+      "modulus_enclosure": [
+        {
+          "denominator": 1,
+          "numerator": 0
+        },
+        {
+          "denominator": 1,
+          "numerator": 0
+        }
+      ],
+      "observed_finite_absolute_tail": {
+        "denominator": 129064905629546468088504385649328699392022690020962173522956326230925965255867898515328368082375931729939644834371228067193842294127224606554864314598813438618551041206750500785521629284080767196364800000,
+        "numerator": 4051656271928370699981978429567031849387168559766239510825785413767693856979081422415153291299783586358155861861914322458642522536805321656793234818909532897126837831329851086060134328637990238071060073
+      },
+      "prime_enclosure": {
+        "N": 1,
+        "P": 101,
+        "finite_product": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "generic_tail_defect_bound": {
+          "denominator": 202,
+          "numerator": 1
+        },
+        "lower": {
+          "denominator": 1,
+          "numerator": 0
+        },
+        "residual_after_small_primes": 1,
+        "unseen_distinct_prime_count_bound": 0,
+        "upper": {
+          "denominator": 1,
+          "numerator": 0
+        }
+      },
+      "proved_infinite_tail_bound": {
+        "denominator": 61,
+        "numerator": 12
+      }
+    }
+  ],
+  "schema": "succ.cloud.ramanujan.receipt.v1",
+  "sha256": {
+    "observational_succ/cloud_ramanujan_transport.py": "e20901c14b9c1615ef93c6b35810c67a19a38ddc0f5a7499e59aabeec5969f00",
+    "research/2026-10-20/CLOUD_RAMANUJAN_TRANSPORT.md": "7827afa3761710c7193bd6a955826fe01b704cc41054b0ed273c97d6ac4de269",
+    "scripts/cloud_ramanujan_probe.py": "16d077e6da2ffc5c69646ed0926856d2f5bf3ffa12320bea6c2de4df0cf646bf",
+    "tests/test_cloud_ramanujan_transport.py": "2f2429e5fdc229d4075d549ecb55cd1e9b2275b7c835df8d36f623c7d7bdfa7b"
+  }
+}
