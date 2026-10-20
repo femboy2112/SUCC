@@ -18,6 +18,8 @@
 | PSD-10 | Homogeneous full-frame scale preserves rational path; independent rebase shifts phase by h-j; reduction-only quotient can erase future | CLASSICAL / PROVED PAPER | 1/2=2/4 but unit-one next 2/3 vs 3/5 |
 | PSD-11 | The finite prime sundial gives original-source authenticated or physical time data, or determines a full adelic clock | UNVERIFIED / NOT CLAIMED | Source labels are declared; finite phases cannot infer an actual carrier |
 | PSD-12 | The sundial yields an improved ABC exceptional-set exponent or authentic signed Weil positivity/RH | UNVERIFIED / NOT CLAIMED | Requires genuine primitive-triple uniform correlations and source-to-Weil equality |
+| PSD-13 | Three exact rational reports at (0,0),(1,0),(0,1) reconstruct (a/b,u/b,v/b), hence all reports, and classify frames up to one positive rational homothety | CLASSICAL / PROVED PAPER; TESTED FINITE | Ratios do not authenticate original source or integer scale |
+| PSD-14 | Every proper subset of the *canonical* three probes admits nonhomothetic countermodels; even all rational reports leave absolute p-adic occupations ambiguous | CLASSICAL / PROVED PAPER; TESTED FINITE | Three explicit omitted-probe pairs plus homogeneous scaling; no universal adaptive-probe minimality claimed |
 
 **Reproduction:** `python -m unittest discover -s tests -p 'test_portable_prime_sundial.py' -v`, `python -m scripts.portable_prime_sundial_probe`.
 
