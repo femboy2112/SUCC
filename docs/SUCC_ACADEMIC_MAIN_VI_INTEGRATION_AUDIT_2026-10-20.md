@@ -102,10 +102,14 @@ All seven heads verified **ancestors of the integration head**.
 | `scripts/observer_foundations_probe.py` | exit 0 |
 | `scripts/ordinal_succ_report_probe.py` | exit 0 |
 | Lean 4.14.0 — `formal/PortablePrimeSundial.lean` (only new Lean file) | compiles clean (exit 0); `#print axioms` = `{propext, Quot.sound}` — **no `Classical.choice`** |
-| Full `unittest discover -s tests` | _see validation addendum below_ |
-| Per-head CI (all 7) + consolidated-head CI | all green per head; consolidated head via PR (see addendum) |
+| Full `unittest discover -s tests` | **`Ran 6135 tests — OK`** (py3.12 local, 608s; 6135 = 6001 Academic Main V + the #192–#198 suites) |
+| Per-head CI (all 7) + consolidated-head CI | all green per head (verified `gh pr checks`); consolidated head via PR #199 (see addendum) |
 
-**Validation addendum (full suite).** `<FILLED AFTER RUN>`
+**Validation addendum (full suite).** Full `python -m unittest discover -s tests` on the integrated head
+(records commit `c1a8cfb`, tree identical to merge head `65b839d` + doc commit) ran **6135 tests, OK**, local
+Python 3.12 with `PYTHONPATH` set (one probe test subprocess needs the package importable; CI's editable
+install covers it). Hosted CI on the exact consolidated head is the authoritative multi-version (3.10/3.13)
+gate — see PR #199.
 
 ## §5 — Disposition
 
