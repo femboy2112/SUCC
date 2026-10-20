@@ -13,6 +13,15 @@ from observational_succ.portable_prime_sundial import (
 def receipt() -> dict:
     a,b=representation_alias_pair()
     phase=a.phase_wheel(((2,3),(3,1),(5,1)))
+    shadows=a.three_shadows()
+    scaled=a.homogeneous_scale(2)
+    rebuilt=Dial.reconstruct_three_shadows(
+        shadows.origin,shadows.numerator_step,shadows.denominator_step,
+        "new mathematical representative","canonical projective")
+    assert a.projectively_equal(rebuilt)
+    assert a.projectively_equal(scaled)
+    assert (rebuilt.a,rebuilt.b,rebuilt.u,rebuilt.v)==(1,2,1,1)
+    assert (scaled.a,scaled.b,scaled.u,scaled.v)==(2,4,2,2)
     rad=Dial.rad_anchored(12,18,"declared-integer-source")
     births=rad.rad_births(2,2)
     nonunit=Dial(1,2,2,2,"declared-integer-source","nonunit-even")
@@ -74,6 +83,17 @@ def receipt() -> dict:
           "new_denominator_primes":births[1].new_prime_support,
           "rad_denominator":births[1].actual_radical,
           "ris_denominator":births[1].actual_residual,
+      },
+      "three_shadow_reconstruction":{
+          "readings":[str(shadows.origin),str(shadows.numerator_step),
+                      str(shadows.denominator_step)],
+          "normalized":[str(shadows.normalized_a),str(shadows.normalized_u),
+                        str(shadows.normalized_v)],
+          "canonical_frame":[rebuilt.a,rebuilt.b,rebuilt.u,rebuilt.v],
+          "homothetic_other_frame":[scaled.a,scaled.b,scaled.u,scaled.v],
+          "ratio_paths_equivalent":a.projectively_equal(rebuilt),
+          "original_integer_scale_authenticated":shadows.source_authenticated,
+          "counterfactual_probe_access_authorized":shadows.counterfactual_probes_authorized,
       },
       "nonunit_prime_divides_D_but_cannot_cancel":{
           "D":nonunit.determinant(),"p":2,
