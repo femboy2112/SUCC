@@ -169,7 +169,7 @@ class TestFormCoreTransport(unittest.TestCase):
             ctrl = form_core_negative_control(N)
             # q > 0 on the L^2-dense test subspace ...
             self.assertTrue(ctrl.test_gram_pd)
-            self.assertTrue(ctrl.test_gram_min_eig > 0)
+            self.assertTrue(ctrl.test_gram_coercivity_lb > 0)
             self.assertTrue(ctrl.a_squared < ctrl.threshold_a_squared)
             # ... yet the global form is negative on e_1 (missed by the subspace)
             self.assertEqual(ctrl.global_negative_value, -9)
@@ -178,7 +178,7 @@ class TestFormCoreTransport(unittest.TestCase):
         # As N grows with a^2 fixed at the threshold-respecting value, the test
         # subspace's coercivity does not stay bounded below (form-closure loses
         # the gap) -- illustrating why L^2-density is insufficient.
-        mins = [form_core_negative_control(N, a_squared=Rat(1, 1000)).test_gram_min_eig
+        mins = [form_core_negative_control(N, a_squared=Rat(1, 1000)).test_gram_coercivity_lb
                 for N in (3, 5, 10, 20)]
         self.assertTrue(all(m > 0 for m in mins))
 

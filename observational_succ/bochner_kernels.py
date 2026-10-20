@@ -413,7 +413,9 @@ def four_way_spectral_report(name: str) -> Dict:
     """Report the four SEPARATE predicates for a named benchmark kernel.
 
     (i)   finite_psd            : is SOME explicit finite Gram PSD? (decidable, exact)
-    (ii)  global_pd_kernel      : PSD on EVERY finite node set? (feature map / CND; not finitary)
+    (ii)  global_psd_kernel     : PSD on EVERY finite node set? (feature map / CND; not finitary)
+          (the 1-cos feature map is rank 2, so Grams on >=3 nodes are singular:
+           this is global PS-D, not PD -- the label is PSD throughout)
     (iii) positive_spectral_measure : positive Levy-Khintchine measure? (Bochner side)
     (iv)  source_identified_signed_weil : an authentic arithmetic source map? (ALWAYS None here)
 
@@ -427,12 +429,12 @@ def four_way_spectral_report(name: str) -> Dict:
         pos = one_minus_cos_positive_benchmark()
         lk = levy_khintchine_benchmarks()["one_minus_cos"]
         finite_psd = pos["rational_point_grams"][0]["is_psd"]
-        global_pd = pos["global_psd"]
+        global_psd_flag = pos["global_psd"]
         pos_measure = lk["positive_measure"]
     elif name == "t^4":
         neg = t4_negative_benchmark()
         finite_psd = neg["is_psd"]            # False, witness {-1,1}
-        global_pd = False                      # refuted by the same witness
+        global_psd_flag = False                # refuted by the same witness
         pos_measure = levy_khintchine_benchmarks()["t_fourth"]["positive_measure"]
     else:
         raise BochnerKernelError(f"unknown benchmark {name!r}")
@@ -440,7 +442,7 @@ def four_way_spectral_report(name: str) -> Dict:
     return {
         "kernel": f"K_Psi, Psi = {name}",
         "i_finite_psd": finite_psd,
-        "ii_global_pd_kernel": global_pd,
+        "ii_global_psd_kernel": global_psd_flag,
         "iii_positive_spectral_measure": pos_measure,
         "iv_source_identified_signed_weil": None,   # NOT identified -- recorded failure
         "iv_reason": (

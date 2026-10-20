@@ -331,7 +331,12 @@ def abel_weighted_to_psi_error(psi_error_exp: sp.Expr, psi_log_power: sp.Expr):
     """Abel summation link: if psi(x) = x + O(x^alpha log^beta x) then
        sum_{n<=x} Lambda(n) n^{-1/2} = 2 x^{1/2} + O(x^{alpha-1/2} log^beta x) + C.
     Conversely the weighted error O(log^2 x) (x=e^{2a}, a^2=(1/4)log^2 x) forces
-    alpha = 1/2, i.e. psi(x) = x + O(x^{1/2} log^2 x) -- RH-strength."""
+    alpha = 1/2, i.e. psi(x) = x + O(x^{1/2} log^2 x) -- RH-strength.
+
+    NOTE: the load-bearing conclusion is the EXPONENT alpha = 1/2 (the sqrt(x) term)
+    -- that is what makes it RH-strength and beyond PNT. The log-power beta is
+    transported schematically; a careful Abel summation / IBP can shift log^2 <-> log^3,
+    which does not affect the exponent conclusion."""
     a, b = psi_error_exp, psi_log_power        # psi error x^a log^b
     weighted_exp = a - sp.Rational(1, 2)       # weighted-sum error exponent
     return {"weighted_error_exp": weighted_exp, "weighted_log_power": b}
@@ -418,29 +423,27 @@ def vanishing_uniform_coercivity_witness(Ns=(2, 4, 8, 16, 32)):
 
 def defect_additivity_fails_example():
     """A master identity that sums 'defect budgets' into one Schur gap is not valid
-    in general: on an exact example the naive sum of per-source defects does not
-    equal the true Schur-complement gap (no shared quadratic form was derived)."""
-    # two couplings into a shared high block; the true gap is NOT the sum of the
-    # two one-at-a-time gaps because the inverse response is quadratic, not additive.
+    in general: the inverse response ``B D^{-1} B^T`` (the amount subtracted from A)
+    is QUADRATIC in the coupling, so with a coupled (non-diagonal) high block the
+    true joint defect is not the sum of the one-at-a-time defects. All quantities
+    below use the SAME high block D, so the comparison is apples-to-apples."""
     A = sp.Matrix([[3]])
-    D = sp.Matrix([[1, 0], [0, 1]])
-    B_full = sp.Matrix([[1, 1]])
+    D = sp.Matrix([[1, Rat(1, 2)], [Rat(1, 2), 1]])   # one coupled high block
+    Dinv = D.inv()
     B1 = sp.Matrix([[1, 0]])
     B2 = sp.Matrix([[0, 1]])
-    gap_full = A[0, 0] - (B_full * D.inv() * B_full.T)[0, 0]   # 3 - 2 = 1
-    gap1 = A[0, 0] - (B1 * D.inv() * B1.T)[0, 0]               # 3 - 1 = 2
-    gap2 = A[0, 0] - (B2 * D.inv() * B2.T)[0, 0]               # 3 - 1 = 2
-    naive_sum_defect = (A[0, 0] - gap1) + (A[0, 0] - gap2)      # 1 + 1 = 2
-    true_defect = A[0, 0] - gap_full                            # 3 - 1 = 2
-    # here they coincide by orthogonality; break orthogonality to separate them:
-    D2 = sp.Matrix([[1, Rat(1, 2)], [Rat(1, 2), 1]])
-    gap_full2 = A[0, 0] - (B_full * D2.inv() * B_full.T)[0, 0]
-    defect_full2 = A[0, 0] - gap_full2
-    return {"orthogonal_true_defect": true_defect,
-            "orthogonal_naive_sum": naive_sum_defect,
-            "coupled_true_defect": defect_full2,
-            "coupled_naive_sum": naive_sum_defect,
-            "additivity_holds_when_coupled": defect_full2 == naive_sum_defect}
+    B_full = sp.Matrix([[1, 1]])
+
+    def defect(B):   # amount this coupling subtracts from A in the Schur complement
+        return (B * Dinv * B.T)[0, 0]
+
+    d1, d2 = defect(B1), defect(B2)          # 4/3, 4/3  (one-at-a-time, same D)
+    naive_sum_defect = d1 + d2               # 8/3
+    coupled_true_defect = defect(B_full)     # 4/3  (joint, same D) != 8/3
+    return {"per_source_defects": (d1, d2),
+            "naive_sum_defect": naive_sum_defect,
+            "coupled_true_defect": coupled_true_defect,
+            "additivity_holds_when_coupled": coupled_true_defect == naive_sum_defect}
 
 
 def claim_1_8_master_identity() -> CrucibleVerdict:

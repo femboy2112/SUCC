@@ -176,7 +176,7 @@ class TestFourWayDistinction(unittest.TestCase):
     def test_one_minus_cos_passes_i_ii_iii_fails_iv(self):
         r = four_way_spectral_report("1 - cos t")
         self.assertTrue(r["i_finite_psd"])
-        self.assertTrue(r["ii_global_pd_kernel"])
+        self.assertTrue(r["ii_global_psd_kernel"])
         self.assertTrue(r["iii_positive_spectral_measure"])
         self.assertIsNone(r["iv_source_identified_signed_weil"])
         self.assertTrue(r["negative_control"])
@@ -187,7 +187,7 @@ class TestFourWayDistinction(unittest.TestCase):
     def test_t4_fails_all_four(self):
         r = four_way_spectral_report("t^4")
         self.assertFalse(r["i_finite_psd"])
-        self.assertFalse(r["ii_global_pd_kernel"])
+        self.assertFalse(r["ii_global_psd_kernel"])
         self.assertFalse(r["iii_positive_spectral_measure"])
         self.assertIsNone(r["iv_source_identified_signed_weil"])
         self.assertFalse(r["RH_proved"])

@@ -451,7 +451,8 @@ class FormCoreNegativeControl:
     N: int
     a_squared: sp.Expr
     test_gram_pd: bool            # q >= 0 (in fact > 0) on the test subspace
-    test_gram_min_eig: sp.Expr    # coercivity constant on the test subspace
+    test_gram_coercivity_lb: sp.Expr  # certified exact rational LOWER BOUND on the
+                                  # least eigenvalue (not the exact least eigenvalue)
     global_negative_value: sp.Expr  # q[e_1] < 0  (missed by the test subspace)
     threshold_a_squared: sp.Expr  # the PD/indefinite threshold for a^2 at this N
 
@@ -460,7 +461,7 @@ class FormCoreNegativeControl:
             "N": self.N,
             "a_squared": str(self.a_squared),
             "test_gram_pd": self.test_gram_pd,
-            "test_gram_min_eig": str(self.test_gram_min_eig),
+            "test_gram_coercivity_lb": str(self.test_gram_coercivity_lb),
             "global_negative_value": str(self.global_negative_value),
             "threshold_a_squared": str(self.threshold_a_squared),
         }
@@ -475,8 +476,10 @@ def form_core_negative_control(N: int, a_squared: Optional[sp.Expr] = None,
         coordinate 1 carries weight ``-neg_weight`` (so q[e_1] = -neg_weight < 0);
         coordinates 2..N carry weight n^2;
         the test subspace is ker(phi), phi(f) = f_1 - a * sum_{n=2}^N f_n, with
-        a the discontinuous-functional coefficient (unbounded as N->infinity),
-        so ker(phi) is L^2-dense yet its form-closure misses e_1.
+        a a fixed coefficient (bounded; a^2 stays below the PD threshold, which
+        tends to 1/(9(pi^2/6 - 1))). It is the FUNCTIONAL NORM ||phi|| = a*sqrt(N-1)
+        that grows without bound as N->infinity, making phi discontinuous in the
+        limit, so ker(phi) is L^2-dense yet its form-closure misses e_1.
 
     On the test subspace, with basis w_j = e_j + a e_1 (j = 2..N), the restricted
     form has Gram  G = diag(j^2) - neg_weight * a^2 * 1 1^T. This is PD iff
@@ -496,7 +499,7 @@ def form_core_negative_control(N: int, a_squared: Optional[sp.Expr] = None,
     pd = is_positive_definite(G)
     return FormCoreNegativeControl(
         N=N, a_squared=a2, test_gram_pd=pd,
-        test_gram_min_eig=certified_pd_margin(G),   # certified exact lower bound
+        test_gram_coercivity_lb=certified_pd_margin(G),  # certified exact lower bound
         global_negative_value=-neg_weight,
         threshold_a_squared=threshold,
     )

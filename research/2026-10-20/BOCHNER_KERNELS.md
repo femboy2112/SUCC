@@ -152,7 +152,7 @@ is the error the firewall forbids.
 | # | Predicate | Certificate | Decidable by finite exact arithmetic? | `1−cos` | `t⁴` |
 |---|-----------|-------------|----------------------------------------|---------|------|
 | **(i)** | A given finite Gram `M` is PSD | `is_psd_exact(M)`: signs of charpoly coeffs (eigenvalues ≥ 0) | **Yes** (one node set) | ✓ | ✗ (`det −192`) |
-| **(ii)** | `K_Ψ` PSD on *every* finite node set (global PD kernel) | feature map `φ` with `K_Ψ=⟨φ,φ⟩` (symbolic) **or** CND; single failing Gram refutes | **No** (not finitary); refutable by one witness | ✓ (`φ=(1−cos,sin)`) | ✗ (witness `{−1,1}`) |
+| **(ii)** | `K_Ψ` PSD on *every* finite node set (global PSD kernel — the `1−cos` feature map is rank 2, so Grams on ≥3 nodes are singular: PSD, not PD) | feature map `φ` with `K_Ψ=⟨φ,φ⟩` (symbolic) **or** CND; single failing Gram refutes | **No** (not finitary); refutable by one witness | ✓ (`φ=(1−cos,sin)`) | ✗ (witness `{−1,1}`) |
 | **(iii)** | Positive spectral / Lévy–Khintchine measure | exhibit `(c,ν)`, `c≥0`, `ν≥0`, verify `Ψ=c x²+∫(1−cos xu)dν` | Representation exhibited exactly here; nonexistence proved via (i)-witness | ✓ (`c=0, ν=δ₁`) | ✗ (no positive measure; `t⁴` not CND) |
 | **(iv)** | Source-IDENTIFIED signed Weil kernel | a *derived* map to the completed signed Weil distribution with correct source / Γ / pole / half-density / conductor / phase | **Not available** | **None** | **None** |
 
