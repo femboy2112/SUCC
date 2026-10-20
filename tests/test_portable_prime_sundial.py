@@ -260,6 +260,85 @@ class TestPortablePrimeSundial(unittest.TestCase):
                              Fraction(cert["D"],cert["B"]*(cert["B"]+frame.v)))
         self.assertFalse(frame.prime_clock(5).source_authenticated)
 
+    def test_three_shadows_reconstruct_entire_projective_dynamics(self):
+        # Independent future evaluations, not copied from the reconstruction
+        # algorithm. Equality includes every tested (k,l), not only diagonal.
+        for a,b,u,v in product(range(1,6),repeat=4):
+            c=dial(a,b,u,v)
+            s=c.three_shadows()
+            self.assertEqual(s.normalized_a,Fraction(a,b))
+            self.assertEqual(s.normalized_u,Fraction(u,b))
+            self.assertEqual(s.normalized_v,Fraction(v,b))
+            d=Dial.reconstruct_three_shadows(
+                s.origin,s.numerator_step,s.denominator_step,
+                "new projective representative","source-unknown integer scale")
+            self.assertTrue(c.projectively_equal(d))
+            self.assertFalse(s.source_authenticated)
+            self.assertFalse(s.counterfactual_probes_authorized)
+            self.assertEqual(gcd(gcd(d.a,d.b),gcd(d.u,d.v)),1)
+            for k,l in product(range(4),repeat=2):
+                self.assertEqual(c.ratio(k,l),d.ratio(k,l))
+                x,y,z=s.normalized_a,s.normalized_u,s.normalized_v
+                self.assertEqual(c.ratio(k,l),(x+k*y)/(1+l*z))
+            self.assertEqual(c.offset_phase(),d.offset_phase())
+
+    def test_all_three_canonical_shadows_needed_independent_countermodels(self):
+        base=dial(1,2,1,1)
+        change_den_unit=dial(1,2,1,2)
+        change_num_unit=dial(1,2,2,1)
+        change_initial=dial(2,3,1,3)
+        def shadows(x):
+            return (x.ratio(0,0),x.ratio(1,0),x.ratio(0,1))
+        a=shadows(base)
+        b=shadows(change_den_unit)
+        c=shadows(change_num_unit)
+        d=shadows(change_initial)
+        self.assertEqual(a[:2],b[:2])
+        self.assertNotEqual(a[2],b[2])
+        self.assertEqual((a[0],a[2]),(c[0],c[2]))
+        self.assertNotEqual(a[1],c[1])
+        self.assertEqual(a[1:],d[1:])
+        self.assertNotEqual(a[0],d[0])
+        self.assertFalse(base.projectively_equal(change_den_unit))
+        self.assertFalse(base.projectively_equal(change_num_unit))
+        self.assertFalse(base.projectively_equal(change_initial))
+
+    def test_projective_equivalence_cannot_identify_absolute_prime_occupancy(self):
+        x=dial(1,2,1,1)
+        y=x.homogeneous_scale(2)
+        self.assertTrue(x.projectively_equal(y))
+        self.assertEqual(x.three_shadows().normalized_a,
+                         y.three_shadows().normalized_a)
+        self.assertEqual(x.three_shadows().normalized_u,
+                         y.three_shadows().normalized_u)
+        self.assertEqual(x.three_shadows().normalized_v,
+                         y.three_shadows().normalized_v)
+        self.assertEqual(x.offset_phase(),y.offset_phase())
+        self.assertNotEqual(x.diagonal_gcd(0),y.diagonal_gcd(0))
+        self.assertNotEqual(x.prime_clock(2).numerator_class,
+                            y.prime_clock(2).numerator_class)
+        # Reduced reconstructed frame is valid as a mathematical model,
+        # but not certified as the actual original-source integer scale.
+        z=Dial.reconstruct_three_shadows(
+            y.ratio(0,0),y.ratio(1,0),y.ratio(0,1),
+            "declared reconstruction only","canonical projective")
+        self.assertEqual(z.arms(0,0),(1,2))
+        self.assertNotEqual(z.arms(0,0),y.arms(0,0))
+
+    def test_shadow_reconstruction_rejects_invalid_or_float_probes(self):
+        values=(
+          (0.5,Fraction(1),Fraction(1,3)),
+          (Fraction(1,2),Fraction(1,2),Fraction(1,3)),
+          (Fraction(1,2),Fraction(1),Fraction(1,2)),
+          (Fraction(1,2),Fraction(1),Fraction(0)),
+          (Fraction(1,2),Fraction(1),Fraction(3,4)),
+        )
+        for x,y,z in values:
+            with self.assertRaises(SundialContractError):
+                Dial.reconstruct_three_shadows(x,y,z,"s","b")
+        with self.assertRaises(SundialContractError):
+            dial(1,2,1,1).projectively_equal("1/2")
+
     def test_reproduce_exact_finite_receipt_subprocess(self):
         root=Path(__file__).resolve().parents[1]
         p=subprocess.run([sys.executable,"-m","scripts.portable_prime_sundial_probe"],
