@@ -1,5 +1,12 @@
 # Operator-space reconciliation: K-relative vs absolute gaps, and whether the rigidity core moves S₄
 
+> **Academic Main VII correction:** the fixed-interval no-gap inference in
+> sections 1.3–1.4 is refuted by the exact bound Γ₀ ≥ 3I on L²([−1/2,1/2]).
+> See [the superseding operator audit](ACADEMIC_VII_OPERATOR_AUDIT.md) for the
+> proof, source normalization and current coercivity dependencies. The full signed
+> source and S₄ sign remain unresolved. Historical numerical statements below
+> are retained as records of the earlier argument, not current validation receipts.
+
 **Operation Proof Forge III — Lane C (functional analysis).**
 **Date:** 2026-10-20. **Worktree branch:** `research/pf3-lane-operator-2026-10-20`.
 **Nothing merged; nothing pushed.** No nontrivial zeta-zero ordinate is a construction input

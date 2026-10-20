@@ -5,10 +5,10 @@ Part VII, section 6).
 This module is a DIFFERENT METHOD, not a rewrite of the Cauchy-Schwarz argument
 in ``abc_triple_moment.py`` (ABC-TMB-01).  Where that module bounds the second
 moment by a diagonal Cauchy-Schwarz + ABC-CLK-02 averaging lemma, this module
-decomposes ``ris(n)`` EXACTLY over its prime-power exponent layers -- the exact,
-epsilon-free specialisation of the "anatomy" decomposition (Lemma 2.2) of
-Bernert-Browning-Lichtman-Teraevaeinen, arXiv:2410.12234v2 (May 2026) -- and
-uses the decomposition to LOCALISE the obstruction.  The headline findings:
+decomposes ``ris(n)`` EXACTLY over its ordinary prime-power exponent layers and
+uses the decomposition to LOCALISE the obstruction. This elementary identity
+does not implement the small-remainder regrouping in Bernert--Browning--Lichtman--
+Teravainen, Lemma 2.2. The headline findings:
 
   ABC-DEC-01  (exact layer anatomy; PROVED LOCAL -- exact algebraic identity).
       With the exponent-layer radical  m_j(n) = prod_{p : v_p(n)=j} p,
@@ -16,8 +16,8 @@ uses the decomposition to LOCALISE the obstruction.  The headline findings:
           rad(n)  = prod_{j>=1} m_j(n)             (exact)
           ris(n)  = prod_{j>=2} m_j(n)^(j-1)       (exact)   => ris(n)^t = prod m_j^{t(j-1)}
       the m_j are pairwise coprime, and if max_p v_p(n) = E then every product
-      truncates at j <= E with NO tail (the n0 = 1, eps0 = 0 case of BBLT
-      Lemma 2.2).  Machine-checked exactly on [1, N].
+      truncates at j <= E with NO tail. Exact finite checks on [1, N] support
+      the elementary factorization proof; they are not a formal kernel proof.
 
   ABC-DEC-02  (uniform per-layer threshold; PROVED LOCAL conditional on ABC-CLK-02).
       Each exponent layer j>=2 contributes to the theta-moment mean a per-prime
@@ -114,7 +114,7 @@ from .residue_box_counting import (
 
 
 # --------------------------------------------------------------------------
-# ABC-DEC-01 : exact prime-power exponent anatomy (BBLT Lemma 2.2, eps0 = 0).
+# ABC-DEC-01 : ordinary exact prime-power exponent layers.
 # --------------------------------------------------------------------------
 def exponent_layers(n: int) -> Dict[int, int]:
     """Exact layer map  {j : m_j(n)}  with  m_j(n) = prod_{p : v_p(n)=j} p.
@@ -197,17 +197,17 @@ def ris_power_layer_factorization(n: int, t) -> Tuple[Tuple[int, int, Fraction],
     return tuple(out)
 
 
-def bblt_anatomy(n: int, d: int) -> Dict[str, object]:
-    """BBLT Lemma 2.2 form:  n = n0 * prod_{j=1}^{d} m_j^j  with the tail in n0.
+def truncate_exponent_layers(n: int, d: int) -> Dict[str, object]:
+    """Ordinary truncation: n = n0 * prod_{j=1}^{d} m_j^j, for integers n,d >= 1.
 
-    n0 = prod_{j>d} m_j^j collects the primes with valuation > d.  BBLT make n0
-    small (<= n^{eps0}) by choosing d ~ 1/eps0; HERE we observe the EXACT fact
-    that n0 = 1 exactly iff max_p v_p(n) <= d (the eps0 = 0 specialisation).
+    n0 = prod_{j>d} m_j^j is the WHOLE high-exponent tail. It need not be small:
+    n=256,d=4 gives n0=256, exceeding n**(1/d)=4. No small-remainder theorem is
+    asserted. The tail equals one exactly when max_p v_p(n) <= d.
     Returns {'n0', 'truncated_layers', 'exact_when_bounded'} with
     exact_when_bounded = (n0 == 1) == (max_exponent(n) <= d).
     """
     if type(d) is not int or d < 1:
-        raise ABCClockError("bblt_anatomy needs an integer d >= 1")
+        raise ABCClockError("truncate_exponent_layers needs an integer d >= 1")
     layers = exponent_layers(n)
     n0 = 1
     trunc: Dict[int, int] = {}
@@ -221,6 +221,15 @@ def bblt_anatomy(n: int, d: int) -> Dict[str, object]:
         "truncated_layers": tuple(sorted(trunc.items())),
         "exact_when_bounded": (n0 == 1) == (max_exponent(n) <= d),
     }
+
+
+def bblt_anatomy(n: int, d: int) -> Dict[str, object]:
+    """Deprecated name for ordinary ``truncate_exponent_layers``.
+
+    Kept for historical callers only. This is NOT an implementation or
+    specialization of BBLT Lemma 2.2 and grants none of its remainder bounds.
+    """
+    return truncate_exponent_layers(n, d)
 
 
 # --------------------------------------------------------------------------

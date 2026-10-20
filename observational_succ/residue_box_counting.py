@@ -7,18 +7,21 @@ modulus grows with ``X``.
 
 Theorem (residue-box count).
     Let ``W >= 1`` be an integer, ``R`` a set of allowed residue pairs in
-    ``(Z/WZ)^2``, and ``X >= 1`` an integer. With
+    ``(Z/WZ)^2``, and ``X >= 0`` an integer. With
 
         N_R(X) = #{ (a, b) in Z_{>0}^2 : a + b <= X, (a mod W, b mod W) in R },
 
     one has
 
-        N_R(X) = (|R| / W^2) * (X^2 / 2) + E_R(X),      |E_R(X)| <= 5 |R| (X/W + 1).
+        N_R(X) = (|R| / W^2) * (X^2 / 2) + E_R(X),
+        |E_R(X)| <= |R| (3X/(2W) + 1).
 
     The local density is |R| / W^2; the main-term shape X^2/2 is the area of the
-    simplex {a, b > 0, a + b <= X}; the absolute constant 5 is explicit.
+    simplex {a, b > 0, a + b <= X}. This canonical bound uses cloud lane A's
+    independent proof (CLOUD_CRT_ASCENT.md, A1). The older constant-5 proof and
+    its threshold are retained as ``legacy_error_bound`` / ``legacy_growth_regime``.
 
-Proof (lattice points -- see RESIDUE_BOX_COUNTING.md for the full write-up and an
+Historical constant-5 proof (see RESIDUE_BOX_COUNTING.md for the full write-up and an
 independent floor-sum derivation). For each allowed pair ``(r, s)`` represent the
 classes by ``t_r, t_s in {1, ..., W}`` (so residue 0 <-> representative W). Then
 ``a = t_r + W i``, ``b = t_s + W j`` with ``i, j >= 0`` automatically give
@@ -28,12 +31,11 @@ triangle is ``(n+1)(n+2)/2`` with ``n = floor(Y)``; comparing to ``Y^2/2`` and
 then to ``X^2/(2 W^2)`` costs at most ``5X/W + 4`` per pair, and summing over the
 ``|R|`` pairs gives the stated bound.
 
-Growing modulus (the research frontier). The error ``5|R|(X/W + 1)`` is smaller
-than the main term ``|R| X^2 / (2 W^2)`` iff ``X^2 > 10 W X + 10 W^2``, i.e. iff
-``X > W(5 + sqrt(35)) ~= 10.916 W`` (at ``X = 10 W`` the bound still wins). So the
-asymptotic is informative for ``W < X / (5 + sqrt(35))`` -- safely ``W <= X/11`` --
-and DEGENERATES at ``W asymptotic to X`` -- the honest failure boundary with an
-explicit constant.
+Growing modulus. For nonempty R the sharper bound is smaller than the main term
+iff ``X^2 > 3 W X + 2 W^2``, or ``X > W(3 + sqrt(17))/2``. Relative error tends
+to zero uniformly when W=o(X); a bound below the main term at a fixed X/W is
+not a relative asymptotic. The estimate alone gives no vanishing relative error
+at W comparable to X; moving-modulus counterexamples are in CLOUD_CRT_ASCENT.md.
 
 Everything here is exact (``int`` / ``fractions.Fraction``). A float is never a
 certificate; the error bound is a proved rational inequality, not a fit.
@@ -44,6 +46,8 @@ from dataclasses import dataclass
 from fractions import Fraction
 from math import gcd, isqrt
 from typing import Callable, Dict, FrozenSet, Iterable, List, Tuple
+
+from .cloud_crt_ascent import triangle_enclosure
 
 ResiduePair = Tuple[int, int]
 
@@ -56,13 +60,13 @@ class ResidueBoxError(ValueError):
 # Validation and representatives
 # --------------------------------------------------------------------------- #
 def _check(X: int, W: int, R: Iterable[ResiduePair]) -> FrozenSet[ResiduePair]:
-    if not isinstance(W, int) or W < 1:
+    if type(W) is not int or W < 1:
         raise ResidueBoxError(f"modulus W must be an integer >= 1, got {W!r}")
-    if not isinstance(X, int):
-        raise ResidueBoxError(f"X must be an integer (box bound), got {X!r}")
+    if type(X) is not int or X < 0:
+        raise ResidueBoxError(f"X must be an integer >= 0 (box bound), got {X!r}")
     Rset = frozenset(R)
     for (r, s) in Rset:
-        if not (isinstance(r, int) and isinstance(s, int)):
+        if not (type(r) is int and type(s) is int):
             raise ResidueBoxError(f"residue pair {(r, s)!r} must be integers")
         if not (0 <= r < W and 0 <= s < W):
             raise ResidueBoxError(
@@ -151,7 +155,17 @@ def error_exact(X: int, W: int, R: Iterable[ResiduePair]) -> Fraction:
 
 
 def error_bound(X: int, W: int, R: Iterable[ResiduePair]) -> Fraction:
-    """The proved bound 5 |R| (X/W + 1), exact."""
+    """Canonical cloud bound |R| (3X/(2W) + 1), exact; X>=0 integer.
+
+    The upper endpoint is not clipped in ``triangle_enclosure``, so subtracting
+    the main term recovers exactly its proven discrepancy radius.
+    """
+    Rset = _check(X, W, R)
+    return triangle_enclosure(X, W, Rset).upper - main_term(X, W, Rset)
+
+
+def legacy_error_bound(X: int, W: int, R: Iterable[ResiduePair]) -> Fraction:
+    """Historical, still valid bound 5 |R| (X/W + 1), exact."""
     Rset = _check(X, W, R)
     return Fraction(5 * len(Rset) * (X + W), W)
 
@@ -221,6 +235,21 @@ class GrowthRegime:
 
 
 def growth_regime(X: int, W: int, R: Iterable[ResiduePair]) -> GrowthRegime:
+    """Sharp-bound dominance for nonempty R: X > W(3+sqrt(17))/2.
+
+    For empty R both terms vanish and dominance is always false; the recorded
+    threshold describes the nonempty-set case, not an empty-set asymptotic.
+    """
+    Rset = _check(X, W, R)
+    mt = main_term(X, W, Rset)
+    bnd = error_bound(X, W, Rset)
+    threshold = (3 * W + isqrt(17 * W * W)) // 2 + 1
+    return GrowthRegime(W=W, X=X, main_term=mt, error_bound=bnd,
+                        main_dominates=bnd < mt,
+                        dominance_threshold_X=threshold)
+
+
+def legacy_growth_regime(X: int, W: int, R: Iterable[ResiduePair]) -> GrowthRegime:
     """Compare the main term to the proved error bound. The main term exceeds the
     bound iff ``|R| X^2 / (2 W^2) > 5 |R| (X/W + 1)`` <=> ``X^2 > 10 W X + 10 W^2``
     (independently of |R|, since both sides scale with |R|). The positive root of
@@ -233,7 +262,7 @@ def growth_regime(X: int, W: int, R: Iterable[ResiduePair]) -> GrowthRegime:
     squarefree, so ``sqrt(35) W`` is never an integer)."""
     Rset = _check(X, W, R)
     mt = main_term(X, W, Rset)
-    bnd = error_bound(X, W, Rset)
+    bnd = legacy_error_bound(X, W, Rset)
     threshold = 5 * W + isqrt(35 * W * W) + 1   # least X with X^2 > 10WX + 10W^2
     return GrowthRegime(W=W, X=X, main_term=mt, error_bound=bnd,
                         main_dominates=(bnd < mt) and len(Rset) > 0,
@@ -248,7 +277,7 @@ def residues_from_predicate(W: int,
     """All (r, s) in (Z/WZ)^2 satisfying a predicate -- the generic constraint
     builder. The downstream abc lane (Part V) uses this to encode genuine
     primitive a+b=c prime-power constraints."""
-    if not isinstance(W, int) or W < 1:
+    if type(W) is not int or W < 1:
         raise ResidueBoxError(f"modulus W must be an integer >= 1, got {W!r}")
     return frozenset((r, s) for r in range(W) for s in range(W) if pred(r, s))
 
@@ -258,6 +287,7 @@ def coprime_pair_residues(W: int) -> FrozenSet[ResiduePair]:
     density is (phi(W)/W)^2 -- the model case for 'a and b each prime to the
     modulus'. (Note: this is coprimality to W, not gcd(a,b)=1, which is not a
     single-modulus residue condition.)"""
+    _check(0, W, ())
     units = [r for r in range(W) if gcd(r, W) == 1]
     uset = set(units)
     return frozenset((r, s) for r in uset for s in uset)

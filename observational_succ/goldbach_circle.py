@@ -217,9 +217,15 @@ def singular_series_local_factor(p: int, N: int) -> Fraction:
     return Fraction(1) - Fraction(1, (p - 1) ** 2)
 
 
+def _prime_cutoff(P: int, minimum: int = 2) -> int:
+    """Prime cutoffs are built-in integers, never bool/float/Fraction coercions."""
+    if type(P) is not int or P < minimum:
+        raise GoldbachCircleError(f"P must be an integer >= {minimum}")
+    return P
+
+
 def _primes_upto(P: int) -> List[int]:
-    if type(P) is not int or P < 2:
-        return []
+    _prime_cutoff(P)
     sieve = bytearray([1]) * (P + 1)
     sieve[0] = sieve[1] = 0
     i = 2
@@ -238,6 +244,7 @@ def singular_series_truncated(N: int, P: int) -> Fraction:
     """
     if type(N) is not int or N < 1:
         raise GoldbachCircleError("N must be a positive integer")
+    _prime_cutoff(P)
     largest_pf = max((p for p, _ in prime_factors(N)), default=1)
     if P < largest_pf:
         raise GoldbachCircleError(
@@ -259,10 +266,9 @@ def singular_series_enclosure(N: int, P: int) -> Tuple[Fraction, Fraction]:
     """
     if type(N) is not int or N < 1:
         raise GoldbachCircleError("N must be a positive integer")
+    _prime_cutoff(P)
     if N % 2 == 1:
         return Fraction(0), Fraction(0)
-    if P < 2:
-        raise GoldbachCircleError("P must be >= 2")
     trunc = singular_series_truncated(N, P)
     tail_lo = Fraction(1) - Fraction(1, P - 1)
     return trunc * tail_lo, trunc
@@ -281,8 +287,9 @@ def twin_prime_constant_enclosure(P: int) -> Tuple[Fraction, Fraction]:
     e.g. q=3 -> factor 2, q=5 -> 4/3, q=7 -> 6/5.  More generally, for even N,
         S(N) = 2*C_2 * prod_{p | N, p odd} (p-1)/(p-2).
     The odd-prime factors p | N each multiply the base constant by (p-1)/(p-2) > 1
-    (``odd_prime_transport_factor``); 2*C_2 is recovered only in the limit as the
-    odd prime(s) dividing N tend to infinity.  Keep this constant DISTINCT from the
+    (``odd_prime_transport_factor``); 2*C_2 is recovered exactly when N is a power
+    of two, and as the limit of S(2q) along odd primes q tending to infinity.
+    Keep this constant DISTINCT from the
     full singular series; see ``singular_series_via_transport`` for the exact finite
     transport S_{<=P}(N) = 2*T(P) * prod_{p|N, odd}(p-1)/(p-2).
 
@@ -290,8 +297,7 @@ def twin_prime_constant_enclosure(P: int) -> Tuple[Fraction, Fraction]:
         hi = 2*T(P)  (>= 2*C_2, the partial product decreases to C_2 from above),
         lo = 2*T(P) * (1 - 1/(P-1))  (tail bound prod_{p>P}(1-1/(p-1)^2) >= 1-1/(P-1)).
     """
-    if type(P) is not int or P < 3:
-        raise GoldbachCircleError("P must be an integer >= 3")
+    _prime_cutoff(P, 3)
     prod = Fraction(1)
     for p in _primes_upto(P):
         if p > 2:
@@ -350,6 +356,7 @@ def singular_series_via_transport(N: int, P: int) -> Fraction:
     """
     if type(N) is not int or N < 1:
         raise GoldbachCircleError("singular_series_via_transport needs integer N >= 1")
+    _prime_cutoff(P)
     if N % 2 == 1:
         return Fraction(0)
     largest_pf = max((p for p, _ in prime_factors(N)), default=1)
@@ -357,7 +364,12 @@ def singular_series_via_transport(N: int, P: int) -> Fraction:
         raise GoldbachCircleError(
             f"P={P} must be >= largest prime factor {largest_pf} of N for the transport "
             "identity (else an enhanced odd-prime factor S_p>1 is missing)")
-    _lo_twin, hi_twin = twin_prime_constant_enclosure(max(P, 3))   # hi_twin = 2*T(P)
+    # Preserve the requested prime range even at P=2: then T(P) is empty and
+    # 2*T(P)=2. Raising P to 3 would silently introduce the factor 3/4.
+    hi_twin = Fraction(2)
+    for p in _primes_upto(P):
+        if p > 2:
+            hi_twin *= Fraction(1) - Fraction(1, (p - 1) ** 2)
     return hi_twin * odd_prime_transport_factor(N)
 
 
@@ -378,6 +390,7 @@ def singular_series_transport_enclosure(N: int, P: int) -> Tuple[Fraction, Fract
     """
     if type(N) is not int or N < 1:
         raise GoldbachCircleError("singular_series_transport_enclosure needs integer N >= 1")
+    _prime_cutoff(P)
     if N % 2 == 1:
         return Fraction(0), Fraction(0)
     hi = singular_series_via_transport(N, P)

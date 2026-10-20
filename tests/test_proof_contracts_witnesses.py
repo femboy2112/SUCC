@@ -1,10 +1,8 @@
-"""Part VIII: witness-carrying proof contracts actually carry authority.
+"""Legacy research diagnostics are not proof authority.
 
-These tests wire the new proof_contracts machinery to a REAL theorem (the finite
-Schur theorem from quantitative_rigidity) and to a REAL invalid transport (Gemini
-1.1), demonstrating that (a) a certificate must re-verify by exact recomputation,
-(b) a bare source-authenticity boolean is rejected, and (c) an invalid transport is
-rejected rather than asserted.
+Exact computational exercises remain useful, but callback success and theorem
+metadata never discharge the bundled English statement. The trusted positive
+matrix path and formal admission boundary are tested in test_proof_authority.
 """
 import random
 import unittest
@@ -111,7 +109,7 @@ class TestSourceRealizationWitness(unittest.TestCase):
         with self.assertRaises(ProofContractError):
             w.verify()
 
-    def test_authenticity_with_typed_level_d_realization_ok(self):
+    def test_arbitrary_polynomial_identity_has_no_source_authority(self):
         x = sp.Symbol("x")
         real = SourceRealization(
             theorem=_ms_theorem(),
@@ -121,7 +119,8 @@ class TestSourceRealizationWitness(unittest.TestCase):
             data={"gen": x, "theorem_poly": x ** 2 + 1, "source_poly": x ** 2 + 1})
         w = SourceRealizationWitness(object_name="genuine_source", authentic=True,
                                      realization=real, receipt=_MS_RECEIPT)
-        self.assertTrue(w.verify())
+        with self.assertRaises(ProofContractError):
+            w.verify()
 
     def test_authenticity_with_wrong_source_map_rejected(self):
         # A valid theorem with an INVALID source map must not certify the source.
@@ -212,7 +211,9 @@ class TestCarryingContract(unittest.TestCase):
         )
         rec = carrying.verify()
         self.assertIn("finite_schur_equivalence", rec["certificates_verified"])
-        self.assertEqual(rec["status"], "CLASSICAL")
+        self.assertEqual(rec["status"], "UNVERIFIED")
+        self.assertEqual(rec["claimed_status"], "CLASSICAL")
+        self.assertEqual(rec["authority"], "NON_AUTHORITATIVE_RESEARCH_METADATA")
 
     def test_source_authentic_requires_witness(self):
         contract = ProofContract(

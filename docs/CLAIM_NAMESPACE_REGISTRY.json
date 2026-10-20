@@ -71,7 +71,7 @@
       ],
       "id_count": 12,
       "status": "MIXED (CLASSICAL/PAPER_PROVED/EXACT_FINITE_TESTED/REFUTED/UNVERIFIED)",
-      "topic": "source orbit quotient universality, fresh clock splicing, LCM and Möbius prime-jet genesis, continuous topological factor no-go",
+      "topic": "source orbit quotient universality, fresh clock splicing, LCM and M\u00f6bius prime-jet genesis, continuous topological factor no-go",
       "code": [
         "observational_succ/orbit_clock_genesis.py",
         "observational_succ/clock_incidence_inversion.py",
@@ -347,7 +347,7 @@
       "id_count": 13,
       "status": "MIXED (PROVED LOCAL/CLASSICAL/CONDITIONAL/TESTED MODEL/REFUTED/UNVERIFIED)",
       "topic": "primitive p-adic conditional-Haar clock laws, ris^theta moment bound, elementary X^(8/5-...) exceptional-set baseline (strictly inferior to the 2026 Bernert-Browning-Lichtman-Teravainen X^(3/5+eps) benchmark), Green-Tao/Maynard-Tao prime-AP lifts, and the REFUTED inference that these positive moments identify the signed completed Weil form or prove RH",
-      "note": "bare IDs are of the form ABC-CLK-NN; the hyphenated tag is NOT parsed by the current claim_namespaces _CLAIM_ROW_RE/fqid regex ([A-Z]{2,6}[0-9]*), so these IDs are absent from the automated census and the fqid() mapper. Registered additively for navigation; the bare IDs remain valid within their supplement. A SUCC->YEAN FQID extractor keying off ABC-CLK would need a regex extension. No historical ID renamed.",
+      "note": "Historical hyphenated IDs are supported by the Academic Main VII namespace census and fqid mapper; no historical ID is renamed.",
       "code": [
         "observational_succ/abc_clock_families.py",
         "scripts/abc_clock_green_tao_probe.py"
@@ -384,6 +384,34 @@
         "observational_succ/portable_prime_sundial.py",
         "scripts/portable_prime_sundial_probe.py",
         "formal/PortablePrimeSundial.lean"
+      ]
+    },
+    {
+      "namespace": "CLOUD_ABC",
+      "bare_prefix": "CLOUD-ABC",
+      "fq_prefix": "CLOUD-ABC",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_ACADEMIC_MAIN_VII.md"
+      ],
+      "id_count": 5,
+      "status": "MIXED (PROVED LOCAL/CLASSICAL/VERIFIED EXACT MODEL/REFUTED; formal admission separately audited)",
+      "topic": "Primitive abc moments for 0<=t<2/3, slope separation, radical tail and Euler-product mean",
+      "code": [
+        "observational_succ/cloud_abc_correlations.py"
+      ]
+    },
+    {
+      "namespace": "ACADEMIC_MAIN_VII",
+      "bare_prefix": "AMVII",
+      "fq_prefix": "AMVII",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_ACADEMIC_MAIN_VII.md"
+      ],
+      "id_count": 6,
+      "status": "MIXED (PROVED LOCAL/CLASSICAL/VERIFIED EXACT MODEL/REFUTED; formal admission separately audited)",
+      "topic": "Typed proof boundaries, fixed-support Gamma correction, canonical CRT and finite Schur crosswalk",
+      "code": [
+        "observational_succ/proof_authority.py"
       ]
     }
   ],

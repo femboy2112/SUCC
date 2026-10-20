@@ -21,6 +21,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Callable, Dict, List, Optional, Sequence, Tuple
+from types import MappingProxyType
 
 _VALID_STATUS = {
     "CLASSICAL", "PROVED LOCAL", "TESTED MODEL", "HYPOTHESIS",
@@ -42,11 +43,14 @@ class Quantifier:
     depends_on: Sequence[str] = field(default_factory=tuple)
 
     def __post_init__(self):
+        object.__setattr__(self, "depends_on", tuple(self.depends_on))
+        if len(set(self.depends_on)) != len(self.depends_on):
+            raise ProofContractError("duplicate quantifier dependency")
         if self.kind not in ("forall", "exists"):
             raise ProofContractError(f"bad quantifier kind {self.kind!r}")
 
 
-@dataclass
+@dataclass(frozen=True)
 class ProofContract:
     name: str
     statement: str
@@ -60,6 +64,11 @@ class ProofContract:
     open_obligations: List[str] = field(default_factory=list)
 
     def __post_init__(self):
+        object.__setattr__(self, "prefix", tuple(self.prefix))
+        object.__setattr__(self, "hypotheses", tuple(self.hypotheses))
+        object.__setattr__(self, "open_obligations", tuple(self.open_obligations))
+        object.__setattr__(self, "constant_dependencies", MappingProxyType(
+            {k: tuple(v) for k, v in self.constant_dependencies.items()}))
         if self.status not in _VALID_STATUS:
             raise ProofContractError(
                 f"status {self.status!r} not in {sorted(_VALID_STATUS)}"
@@ -74,7 +83,16 @@ class ProofContract:
 
     def _validate_prefix(self) -> None:
         """Every declared dependency must refer to an EARLIER bound variable."""
+        names = [q.var for q in self.prefix]
+        if len(set(names)) != len(names):
+            raise ProofContractError("duplicate quantified variable")
+        for const, dependencies in self.constant_dependencies.items():
+            q = self.prefix[self._position(const)]
+            if set(dependencies) != set(q.depends_on):
+                raise ProofContractError("contradictory quantifier dependency metadata")
         for i, q in enumerate(self.prefix):
+            if type(q) is not Quantifier:
+                raise ProofContractError("prefix requires exact Quantifier metadata")
             for dep in q.depends_on:
                 j = self._position(dep)
                 if j >= i:
@@ -130,37 +148,29 @@ class ProofContract:
             "hypotheses": list(self.hypotheses),
             "constant_dependencies": dict(self.constant_dependencies),
             "finite_to_infinite": self.finite_to_infinite,
-            "source_authentic": self.source_authentic,
+            "source_authentic": False,
+            "claimed_source_authentic": self.source_authentic,
             "method": self.method,
-            "status": self.status,
+            "status": "UNVERIFIED",
+            "claimed_status": self.status,
+            "authority": "NON_AUTHORITATIVE_RESEARCH_METADATA",
             "open_obligations": list(self.open_obligations),
         }
 
 
 # =========================================================================== #
-# Witness-carrying contracts (Operation Rigidity Forge, Part VIII)
-#
-# The classes above track *what is claimed*. The classes below make a contract
-# carry *authority* -- a proof object that re-verifies itself, an external theorem
-# reference with its audited axioms, an honestly-flagged undischarged assumption, a
-# source-realization witness that a bare boolean cannot fake, and a transport whose
-# validity is CHECKED on a witness rather than asserted.
-#
-# Guiding rule: **metadata must never impersonate proof.** A `CheckedCertificate`
-# has no stored truth value; its `verify()` recomputes an exact certificate. A
-# `SourceRealizationWitness` claiming authenticity WITHOUT an identification map is
-# rejected. Lean / mathlib / an independent exact oracle remains the authority on
-# formal derivations; this layer specializes in source identification, transport
-# obligations, quantitative error accounting, and obstruction reporting.
+# Legacy research bundles: callback execution and bibliographic metadata only.
+# These do not discharge any proposition. Use proof_authority.Claim with typed
+# immutable evidence for an authority verdict. Historical class names remain for
+# compatibility; "verify" below means a diagnostic ran, not a theorem was proved.
 # =========================================================================== #
-@dataclass
+@dataclass(frozen=True)
 class CheckedCertificate:
-    """A proof object that re-verifies itself by EXACT recomputation.
+    """Legacy callback diagnostic, explicitly NON-AUTHORITATIVE.
 
-    ``holds`` is never stored -- it is produced by calling ``check()``, which must
-    recompute an exact certificate and return the literal ``True``. A truthy-but-not-
-    True value (a nonzero int, a nonempty list) is treated as a failure, so a sloppy
-    check cannot pass as a proof."""
+    Even literal True can come from `lambda: True`; its return value proves no
+    theorem. Kept only to run reproducible research checks outside authority.
+    """
     name: str
     check: Callable[[], object]
     description: str = ""
@@ -177,15 +187,14 @@ class CheckedCertificate:
 
 @dataclass(frozen=True)
 class TheoremReference:
-    """An EXTERNAL authority that discharges an obligation (e.g. a mathlib theorem).
-
-    The SUCC layer does not re-prove it; it records the authority and, for a formal
-    checker, the audited axiom set from ``#print axioms``. The authority is
-    explicitly NOT the SUCC layer -- that separation is the point."""
+    """Bibliographic metadata only; not a checked theorem or obligation discharge."""
     name: str                     # e.g. "Polynomial.abc"
     system: str                   # e.g. "mathlib4 @ <rev>, Lean 4.x"
     axioms: Tuple[str, ...] = ()  # audited #print axioms set
     url: str = ""
+
+    def __post_init__(self):
+        object.__setattr__(self, "axioms", tuple(self.axioms))
 
     def uses_only(self, allowed: Sequence[str]) -> bool:
         return all(ax in set(allowed) for ax in self.axioms)
@@ -202,64 +211,36 @@ class UndischargedAssumption:
     why_needed: str
 
 
-@dataclass
+@dataclass(frozen=True)
 class SourceRealizationWitness:
-    """Whether the object is the genuine source or a synthetic proxy.
-
-    Proof Forge III, Part II hardening: ``authentic=True`` is ACCEPTED only when a
-    typed, externally re-checkable ``realization`` artifact is supplied -- one
-    exposing a ``verify()`` method (in practice a
-    :class:`proof_authority.SourceRealization`, Level D). A bare
-    ``authentic=True`` is rejected, AND a raw callback (e.g. ``lambda: True``) is
-    now rejected too: an opaque closure that returns ``True`` does no source
-    identification and is not part of the trusted kernel (see
-    :mod:`proof_authority`). A boolean is not a source certificate (AGENTS.md
-    sec. 6)."""
+    """Legacy source claim; only the closed Level D path can authenticate it."""
     object_name: str
     authentic: bool
-    realization: Optional[object] = None   # a proof_authority.SourceRealization (Level D)
+    realization: Optional[object] = None
     note: str = ""
-    receipt: Optional[dict] = None         # Lean build receipt for an embedded Level C
+    receipt: Optional[dict] = None
+
+    def __post_init__(self):
+        from observational_succ.proof_authority import _freeze
+        object.__setattr__(self, "receipt", _freeze(self.receipt))
 
     def verify(self) -> bool:
         if not self.authentic:
             return True
-        if self.realization is None:
-            raise ProofContractError(
-                f"{self.object_name!r} asserts source authenticity with NO "
-                f"realization witness: a boolean is not a source certificate"
-            )
-        verify = getattr(self.realization, "verify", None)
-        if self.realization is True or (callable(self.realization) and verify is None):
-            raise ProofContractError(
-                f"{self.object_name!r} supplied a raw callback/boolean as its source "
-                f"identification; a closure that returns True does no identification. "
-                f"Supply a typed Level-D proof_authority.SourceRealization."
-            )
-        if verify is None:
-            raise ProofContractError(
-                f"{self.object_name!r} realization is not a verifiable artifact"
-            )
-        try:
-            ok = verify(receipt=self.receipt)
-        except TypeError:
-            ok = verify()
-        if ok is not True:
-            raise ProofContractError(
-                f"{self.object_name!r} source realization did not verify"
-            )
-        return True
+        from observational_succ.proof_authority import SourceRealization
+        if type(self.realization) is not SourceRealization:
+            raise ProofContractError("source claim requires an exact admitted Level D artifact")
+        # No duck-typed method or fallback callback can confer authenticity.
+        return SourceRealization.verify(self.realization, receipt=self.receipt)
 
 
-@dataclass
+@dataclass(frozen=True)
 class ProofTransport:
-    """Transport of one established result to another via a translation map.
+    """Legacy callback diagnostic about a proposed transport, not proof authority.
 
-    VALID only if ``witness_check`` recomputes (exactly) that applying the map to the
-    source's certified conclusion actually yields the target's conclusion. An invalid
-    transport -- mismatched hypotheses, an illegal quantifier swap, or a false
-    implication on a concrete witness -- fails ``verify()`` and is rejected, instead
-    of being asserted by a label."""
+    Checking selected witnesses cannot prove a universal implication. Use a
+    separately checked formal implication for authoritative transport.
+    """
     source: str
     target: str
     witness_check: Callable[[], object]
@@ -275,14 +256,13 @@ class ProofTransport:
         return True
 
 
-@dataclass
+@dataclass(frozen=True)
 class CarryingContract:
-    """A proof contract bundled with the authority that actually discharges it.
+    """Immutable research bundle. `verify` never returns a proved claim status.
 
-    ``verify()`` runs every attached certificate, source witness, and transport, and
-    requires that an external ``TheoremReference`` is present whenever the claimed
-    status is CLASSICAL with no in-repo checked certificate (so 'CLASSICAL' cannot be
-    a bare label). Returns a structured verification record; raises on any failure."""
+    A successful callback or unrelated reference may support investigation but
+    cannot authenticate its English contract. Status fields are labelled claims.
+    """
     contract: ProofContract
     certificates: List[CheckedCertificate] = field(default_factory=list)
     theorem_refs: List[TheoremReference] = field(default_factory=list)
@@ -291,6 +271,13 @@ class CarryingContract:
     transports: List[ProofTransport] = field(default_factory=list)
 
     def __post_init__(self):
+        for field_name in ("certificates", "theorem_refs", "undischarged", "transports"):
+            object.__setattr__(self, field_name, tuple(getattr(self, field_name)))
+        if type(self.contract) is not ProofContract:
+            raise ProofContractError("research bundle requires exact contract metadata")
+        self.contract._validate_prefix()
+        if self.source_witness is not None and self.contract.source_authentic != self.source_witness.authentic:
+            raise ProofContractError("contradictory source-authenticity metadata")
         # CLASSICAL / PROVED LOCAL must be backed by *something* checkable, not a bare
         # label: at least one checked certificate or an external theorem reference.
         if self.contract.status in ("CLASSICAL", "PROVED LOCAL"):
@@ -308,6 +295,7 @@ class CarryingContract:
             )
 
     def verify(self) -> Dict[str, object]:
+        self.__post_init__()  # recheck invariants at the final boundary
         checked = []
         for c in self.certificates:
             c.verify()
@@ -318,10 +306,13 @@ class CarryingContract:
             t.verify()
         return {
             "name": self.contract.name,
-            "status": self.contract.status,
+            "status": "UNVERIFIED",
+            "claimed_status": self.contract.status,
+            "authority": "NON_AUTHORITATIVE_RESEARCH_METADATA",
             "certificates_verified": checked,
             "theorem_refs": [(r.name, r.system, r.axioms) for r in self.theorem_refs],
             "undischarged_assumptions": [(u.name, u.statement) for u in self.undischarged],
-            "source_authentic": self.contract.source_authentic,
+            "source_authentic": False,
+            "claimed_source_authentic": self.contract.source_authentic,
             "transports_verified": [(t.source, t.target) for t in self.transports],
         }

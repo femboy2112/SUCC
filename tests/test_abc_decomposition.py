@@ -78,7 +78,7 @@ class TestLayerAnatomyExact(unittest.TestCase):
             self.assertEqual(prod, ris(n), f"ris factorization failed at n={n}")
 
     def test_bblt_tail_exact_when_bounded(self):
-        # n0 = 1 exactly iff max exponent <= d (the eps0=0 case of BBLT Lemma 2.2)
+        # Ordinary layer tail is one exactly iff max exponent <= d; no BBLT claim.
         for n in range(1, 500):
             for d in (1, 2, 3, 6):
                 res = bblt_anatomy(n, d)

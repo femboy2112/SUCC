@@ -10,11 +10,11 @@ on its own:
 
 and a NONZERO exit code is the receipt. CI asserts exactly that nonzero exit.
 
-What it demonstrates: the bridge is SOUND and cannot be bent past what it proves.
+What it demonstrates: this proposed stronger conclusion is rejected by the kernel.
 mathlib's `Polynomial.abc`, transported through `succ_mason_stothers_charZero`,
 yields `natDegree A + 1 ≤ deg rad(A*B*C)`. Here we demand the strictly stronger
 (false) bound `natDegree A + 2 ≤ deg rad(A*B*C)`. That conclusion does not follow
--- e.g. with `A = X`, `B = 1`, `C = X + 1` it would read `0 + 2 = 2 ≤ deg rad = 1`,
+-- e.g. with `A = X`, `B = 1`, `C = X + 1` it would read `1 + 2 = 3 ≤ deg rad = 2`,
 which is false -- so Lean's kernel refuses the term with a `type mismatch`. Were
 the bridge able to produce the `+2` bound, this file would compile and the control
 would (correctly) be reported as broken.

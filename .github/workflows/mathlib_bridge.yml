@@ -1,149 +1,58 @@
-name: Mason-Stothers mathlib bridge (pinned kernel + axiom envelope)
-
-# Proof Forge III, Part VII. A SINGLE serialized job (no matrix of concurrent
-# mathlib builds -- one warm Lean/mathlib build is expensive and must not fan out).
-# Everything is PINNED by checked-in files:
-#   * Lean compiler  -> formal/mathlib_bridge/lean-toolchain  (leanprover/lean4:v4.14.0)
-#   * mathlib4 rev   -> formal/mathlib_bridge/lake-manifest.json (tag v4.14.0,
-#                       commit 4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84)
-# The job (1) builds the bridge against the pinned mathlib olean cache, (2) fails
-# closed on any sorry/admit/native_decide shortcut, (3) re-derives the #print
-# axioms audit and fails if any axiom escapes {propext, Classical.choice,
-# Quot.sound}, (4) requires the source-mismatch control to FAIL to elaborate, and
-# (5) cross-checks + Python-validates the committed axiom_audit.json receipt.
+name: Pinned formal kernel and proposition exports
 
 on:
   push:
-    branches: ['research/pf3-*']
+    branches: ['research/vii-formal-*', 'research/pf3-*']
+    paths: ['formal/**', '.github/workflows/mathlib_bridge.yml', 'observational_succ/proof_authority.py', 'observational_succ/_formal_catalogue.py']
   pull_request:
-    paths:
-      - 'formal/mathlib_bridge/**'
-      - '.github/workflows/mathlib_bridge.yml'
-      - 'observational_succ/proof_authority.py'
-      - 'tests/test_proof_authority.py'
+    paths: ['formal/**', '.github/workflows/mathlib_bridge.yml', 'observational_succ/proof_authority.py', 'observational_succ/_formal_catalogue.py']
   workflow_dispatch:
 
 permissions:
   contents: read
 
-# Serialize: never run two heavy mathlib builds of this bridge at once.
+# Both projects share one cache and build serially. Do not duplicate large builds.
 concurrency:
-  group: mathlib-bridge-${{ github.ref }}
+  group: succ-pinned-formal-kernel
   cancel-in-progress: false
 
 jobs:
-  mathlib_bridge:
-    name: Pinned mathlib bridge build + axiom audit + source-mismatch control
+  formal_kernel:
+    name: Exact Lean types, source hashes, axioms and negative controls
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 60
     defaults:
       run:
         shell: bash
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-
-      # Standard SUCC Lean bootstrap: official elan installer, toolchain pinned
-      # by the checked-in lean-toolchain file (same mechanism as eodcs-lean.yml).
-      - name: Install pinned Lean toolchain (from formal/mathlib_bridge/lean-toolchain)
+      - name: Install hash-verified pinned Lean archive
         run: |
-          curl --fail --silent --show-error --location \
-            https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh \
-            -o "$RUNNER_TEMP/elan-init.sh"
-          sh "$RUNNER_TEMP/elan-init.sh" -y \
-            --default-toolchain "$(tr -d '[:space:]' < formal/mathlib_bridge/lean-toolchain)"
-          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
-
-      - name: Report pinned toolchain + mathlib revision
+          set -euo pipefail
+          curl --fail -L https://github.com/leanprover/lean4/releases/download/v4.14.0/lean-4.14.0-linux.tar.zst -o "$RUNNER_TEMP/lean.tar.zst"
+          echo "320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a  $RUNNER_TEMP/lean.tar.zst" | sha256sum -c -
+          tar --no-same-owner --zstd -xf "$RUNNER_TEMP/lean.tar.zst" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/lean-4.14.0-linux/bin" >> "$GITHUB_PATH"
+      - name: Fetch one pinned dependency tree and targeted cache
         working-directory: formal/mathlib_bridge
         run: |
-          lean --version
-          lake --version
-          echo "lean-toolchain: $(cat lean-toolchain)"
-          python3 -c 'import json;p=[q for q in json.load(open("lake-manifest.json"))["packages"] if q["name"]=="mathlib"][0];print("pinned mathlib rev:",p["rev"],"inputRev:",p["inputRev"])'
-
-      - name: Fetch pinned mathlib olean cache, then build the bridge
-        working-directory: formal/mathlib_bridge
+          set -euo pipefail
+          lake exe cache get Mathlib/NumberTheory/FLT/MasonStothers.lean Mathlib/Data/ZMod/Basic.lean Mathlib/LinearAlgebra/Matrix/SchurComplement.lean Mathlib/Data/Real/StarOrdered.lean Mathlib/Tactic/FieldSimp.lean Mathlib/Tactic/Ring.lean
+          mkdir -p ../cloud_schur/.lake
+          ln -s "$(pwd)/.lake/packages" ../cloud_schur/.lake/packages
+      - name: Check record parser negative controls
+        run: python3 -m unittest discover -s formal/kernel_audit -p 'test_*.py' -v
+      - name: Rebuild both projects and export actual kernel propositions
+        run: python3 formal/kernel_audit/generate.py --output "$RUNNER_TEMP/succ-kernel-audit"
+      - name: Test admitted formal references when catalogue is populated
         run: |
-          lake exe cache get || true
-          lake build
-
-      - name: Fail closed on proof shortcuts in the bridge source
-        working-directory: formal/mathlib_bridge
-        run: |
-          if grep -nE '\b(sorry|admit|native_decide)\b' MasonStothersBridge.lean; then
-            echo "::error::forbidden proof shortcut (sorry/admit/native_decide) found in bridge"
-            exit 1
-          fi
-          echo "OK: no sorry/admit/native_decide in MasonStothersBridge.lean"
-
-      - name: Re-derive #print axioms audit, fail if any axiom escapes the envelope
-        working-directory: formal/mathlib_bridge
-        run: |
-          lake env lean MasonStothersBridge.lean | tee "$RUNNER_TEMP/axioms.txt"
-          python3 - "$RUNNER_TEMP/axioms.txt" <<'PY'
-          import re, sys
-          allowed = {"propext", "Classical.choice", "Quot.sound"}
-          lines = [l for l in open(sys.argv[1]).read().splitlines()
-                   if "depends on axioms:" in l]
-          if len(lines) < 4:
-              print(f"::error::expected >=4 axiom-audit lines, got {len(lines)}")
-              sys.exit(1)
-          bad = False
-          for l in lines:
-              m = re.search(r"\[(.*)\]", l)
-              axs = {a.strip() for a in (m.group(1).split(",") if m else []) if a.strip()}
-              extra = axs - allowed
-              if extra:
-                  print(f"::error::forbidden axioms {sorted(extra)} in: {l.strip()}")
-                  bad = True
-          sys.exit(1 if bad else 0)
-          PY
-
-      - name: Source-mismatch control MUST fail to elaborate
-        working-directory: formal/mathlib_bridge
-        run: |
-          if lake env lean controls/WrongSource.lean 2> "$RUNNER_TEMP/control.err"; then
-            echo "::error::controls/WrongSource.lean elaborated, but this negative control MUST fail"
-            exit 1
-          fi
-          echo "OK: source-mismatch control correctly FAILED to elaborate:"
-          cat "$RUNNER_TEMP/control.err"
-
-      - name: Cross-check committed receipt against live pin, then validate in Python
-        run: |
-          python3 - <<'PY'
-          import json
-          r = json.load(open("formal/mathlib_bridge/axiom_audit.json"))
-          tc = open("formal/mathlib_bridge/lean-toolchain").read().strip()
-          man = json.load(open("formal/mathlib_bridge/lake-manifest.json"))
-          rev = [p for p in man["packages"] if p["name"] == "mathlib"][0]["rev"]
-          assert r.get("build_succeeded") is True, "receipt build_succeeded must be true"
-          assert r["toolchain"] == tc, (r["toolchain"], tc)
-          assert r["manifest_rev"] == rev, (r["manifest_rev"], rev)
-          print("OK: receipt toolchain + manifest_rev match the live pinned files")
-          PY
-          python -m pip install -e '.[test]'
-          PYTHONPATH="$PWD" python - <<'PY'
-          from observational_succ.proof_authority import FormalTheorem, load_receipt
-          r = load_receipt("formal/mathlib_bridge/axiom_audit.json")
-          allowed = ("propext", "Classical.choice", "Quot.sound")
-          for name in r["theorems"]:
-              ft = FormalTheorem(name=name, toolchain=r["toolchain"],
-                                 manifest_rev=r["manifest_rev"], allowed_axioms=allowed)
-              assert ft.validate_against_receipt(r), f"receipt failed to validate {name}"
-          print("OK: receipt validates in proof_authority.FormalTheorem for", list(r["theorems"]))
-          PY
-
-      - name: Print the axiom-audit receipt
-        run: cat formal/mathlib_bridge/axiom_audit.json
-
+          python3 -m pip install 'sympy>=1.12,<2'
+          python3 formal/kernel_audit/check_admission.py "$RUNNER_TEMP/succ-kernel-audit/kernel-attestation.json"
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: mathlib-bridge-axiom-audit
-          path: |
-            formal/mathlib_bridge/axiom_audit.json
-            ${{ runner.temp }}/axioms.txt
+          name: succ-formal-kernel-attestation
+          path: ${{ runner.temp }}/succ-kernel-audit/

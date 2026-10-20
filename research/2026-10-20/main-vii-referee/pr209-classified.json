@@ -1,0 +1,183 @@
+{
+  "classifier_script_sha256": "6a62a758b68f5edc1207078358fc5df823763408159ae351615dfe6c5bd89065",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "sympy": "1.14.0"
+  },
+  "findings": [
+    {
+      "classification": "STILL EXPOSED",
+      "expected": "reject authentic claim with synthetic witness",
+      "id": "F01_SOURCE_FLAG_MISMATCH",
+      "observed": {
+        "certificates_verified": [],
+        "name": "cloud hostile fixture",
+        "source_authentic": true,
+        "status": "UNVERIFIED",
+        "theorem_refs": [],
+        "transports_verified": [],
+        "undischarged_assumptions": []
+      },
+      "state": "exposed"
+    },
+    {
+      "classification": "STILL EXPOSED",
+      "expected": "reject proof status with no backing at verification time",
+      "id": "F02_MUTABLE_STATUS",
+      "observed": {
+        "certificates_verified": [],
+        "name": "cloud hostile fixture",
+        "source_authentic": false,
+        "status": "PROVED LOCAL",
+        "theorem_refs": [],
+        "transports_verified": [],
+        "undischarged_assumptions": []
+      },
+      "state": "exposed"
+    },
+    {
+      "classification": "STILL EXPOSED",
+      "expected": "reject later dependency in constant metadata",
+      "id": "F03_CONTRADICTORY_DEPENDENCIES",
+      "observed": {
+        "record": {
+          "constant_dependencies": {
+            "C": [
+              "N"
+            ]
+          },
+          "finite_to_infinite": "none",
+          "hypotheses": [],
+          "method": "adversarial fixture",
+          "name": "cloud hostile fixture",
+          "open_obligations": [],
+          "prefix": "E.C:positive reals A.N:positive integers",
+          "source_authentic": false,
+          "statement": "0 = 1",
+          "status": "UNVERIFIED"
+        },
+        "uniform": true
+      },
+      "state": "exposed"
+    },
+    {
+      "classification": "STILL EXPOSED",
+      "expected": "do not grant proof authority to nonexistent theorem",
+      "id": "F04_UNCHECKED_THEOREM_REFERENCE",
+      "observed": {
+        "certificates_verified": [],
+        "name": "cloud hostile fixture",
+        "source_authentic": false,
+        "status": "PROVED LOCAL",
+        "theorem_refs": [
+          [
+            "NoSuchTheorem",
+            "NoSuchKernel",
+            []
+          ]
+        ],
+        "transports_verified": [],
+        "undischarged_assumptions": []
+      },
+      "state": "exposed"
+    },
+    {
+      "classification": "FIXED",
+      "expected": "produce rational negative vector for non-PSD rational matrix",
+      "id": "F05_SHALLOW_NEGATIVE_CONE",
+      "known_value": "-9/100000000000000",
+      "known_vector": [
+        "1",
+        "1",
+        "1"
+      ],
+      "matrix": [
+        [
+          "199999999999999/100000000000000",
+          "-100000000000001/100000000000000",
+          "-100000000000001/100000000000000"
+        ],
+        [
+          "-100000000000001/100000000000000",
+          "199999999999999/100000000000000",
+          "-100000000000001/100000000000000"
+        ],
+        [
+          "-100000000000001/100000000000000",
+          "-100000000000001/100000000000000",
+          "199999999999999/100000000000000"
+        ]
+      ],
+      "returned_vector": "Matrix([[100000000000001/99999999999998], [100000000000001/99999999999998], [1]])",
+      "state": "not_exposed",
+      "target_psd": false
+    },
+    {
+      "classification": "STILL EXPOSED",
+      "expected": "reject noninteger prime cutoff",
+      "id": "F06_NONINTEGER_CUTOFF",
+      "independent_true_lower_bound": "135/128",
+      "lower_bound_derivation": "2*(1-1/4)*(1-1/16)*(1-1/4)",
+      "observed": [
+        "1/3",
+        "1"
+      ],
+      "state": "exposed"
+    },
+    {
+      "actual_n0": 256,
+      "claimed_small_remainder_upper": 4,
+      "classification": "STILL EXPOSED",
+      "d": 4,
+      "eps": "1/4",
+      "expected": "do not identify whole exponent tail with small BBLT remainder",
+      "id": "F07_BBLT_TAIL_ATTRIBUTION",
+      "n": 256,
+      "scope": "documentation/proof attribution; exact identity itself remains true",
+      "state": "exposed"
+    },
+    {
+      "P": 3,
+      "classification": "FIXED",
+      "exact_ratio_S10_over_S2": "4/3",
+      "expected": "S(10)=(4/3)*(2*C2), not 2*C2",
+      "id": "F08_TWIN_CONSTANT_NORMALIZATION",
+      "p": 5,
+      "scope": "false docstring identity; twin constant enclosure computation is separate",
+      "state": "source_review_required"
+    },
+    {
+      "classification": "STILL EXPOSED",
+      "expected": "1000000000000000000000000000001",
+      "id": "F09_FLOAT_ORDERED_EXACT_EIGENVALUE",
+      "matrix": [
+        [
+          1000000000000000000000000000002,
+          1
+        ],
+        [
+          1,
+          1000000000000000000000000000002
+        ]
+      ],
+      "observed": "1000000000000000000000000000003",
+      "quadratic_form_after_subtracting_reported_minimum": "-4",
+      "state": "exposed",
+      "test_vector": [
+        1,
+        -1
+      ]
+    }
+  ],
+  "fixture_script_sha256": "4ed5b4e061b452f17ef645b9955613686f27e32d2ea6f8a1b904deaeb5a7ed3d",
+  "interpretation": "Historical defects and repaired regressions have opposite expectations.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "target_sha": "3e1ef648896821321423e6642f1de4a458a0c791",
+  "target_source_sha256": {
+    "observational_succ/abc_decomposition.py": "371a2956c08ca6fd6b16340365ce976ed715a65944368afd40b8acad240a8fc9",
+    "observational_succ/goldbach_circle.py": "9e8567451b36f6fa06e1b1dd09258775b785546d2f27e611ffb04d04f0688d93",
+    "observational_succ/proof_contracts.py": "16f8abb1959112d4b0a0fb6943faf79f146f8a9a5eb5205a94013d22e2f88d4d",
+    "observational_succ/quantitative_rigidity.py": "1a1b98404ddf47531240fa88d67fcca35608ed1a6d4e6ec04f4ed887400b4a98"
+  },
+  "target_worktree_dirty": false
+}

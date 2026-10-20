@@ -6,7 +6,8 @@ merely-sufficient (and often invalid) finite surrogate.
 
 Everything here is exact (sympy ``Rational`` / symbolic). **A float is never a
 certificate** -- floats appear only as search heuristics whose output is then
-re-verified exactly (see :func:`negative_witness`).
+re-verified exactly (see :func:`certified_pd_margin`). Negative witnesses use
+exact congruence reduction without a floating-point search.
 
 The module is deliberately NOT organized around a single scalar "rigidity score".
 Rigidity is a *vector* of independent obligations -- source adequacy, approximation
@@ -429,18 +430,28 @@ def inverse_decay_block(N: int) -> sp.Matrix:
 
 
 def min_eigenvalue_exact(M: sp.Matrix) -> sp.Expr:
-    """Exact least eigenvalue of a symmetric rational matrix (min charpoly root).
+    """Exact least eigenvalue of the symmetric part of a nonempty rational matrix.
 
-    For a diagonal matrix this is just the least diagonal entry; in general we use
-    the real roots of the characteristic polynomial."""
+    The domain is finite square matrices over Q. Real characteristic roots are
+    ordered by exact rational root isolation, including multiplicities; irrational
+    answers may be ``CRootOf`` objects. No numerical approximation determines an
+    inequality. Symbolic, algebraic-nonrational and complex inputs are rejected;
+    the separately checked ``certified_pd_margin`` route remains available.
+    """
     M = as_exact_matrix(M)
+    if M.rows != M.cols or M.rows == 0:
+        raise RigidityInputError("least eigenvalue needs a nonempty square matrix")
+    if any(value.is_Rational is not True for value in M):
+        raise RigidityInputError("least eigenvalue root isolation needs rational entries")
     S = (M + M.T) / 2
     if S.is_diagonal():
         return min(S[i, i] for i in range(S.rows))
-    eigs = list(S.eigenvals().keys())   # exact algebraic eigenvalues
-    # order real eigenvalues by numeric value (float used ONLY to order; a tiny
-    # spurious imaginary part from radical evalf is chopped); return exact min.
-    return min(eigs, key=lambda e: float(sp.re(e.evalf(chop=True))))
+    # Poly.real_roots returns the roots in increasing order using certified real
+    # root isolation; radicals=False avoids comparisons of radical expressions.
+    roots = S.charpoly().as_poly().real_roots(radicals=False)
+    if len(roots) != S.rows:
+        raise UndecidableSignError("symmetric rational characteristic roots were not all real")
+    return roots[0]
 
 
 def certified_pd_margin(M: sp.Matrix) -> sp.Expr:

@@ -1,195 +1,153 @@
-"""Four-level proof authority -- the trusted certificate kernel (Proof Forge III, Part II).
+"""Closed, proposition-bound proof authority.
 
-The witness-carrying contracts in :mod:`proof_contracts` were a step forward, but
-they let a *caller-supplied callback* impersonate proof authority: a bare
-``lambda: True`` passed a ``CheckedCertificate`` or a ``SourceRealizationWitness``,
-and a fabricated ``TheoremReference`` acquired standing from mere presence in a
-dataclass. This module rebuilds authority so that **the registered typed
-artifacts cannot self-elevate**: a verdict of VERIFIED requires one of exactly
-three artifact types (checked by ``isinstance``, so a forged duck-typed
-look-alike is rejected), and its force comes from an in-repo trusted checker, a
-recorded Lean build receipt, or a registered source-map -- never from an object's
-shape or a caller callback. Two trust boundaries remain explicitly OUTSIDE this
-module and are the caller's responsibility: the *provenance of the receipt file*
-(it is trusted to be the output of the pinned CI; this module authenticates its
-contents, not its origin) and the correctness of the registered checkers
-themselves.
+Threat model: untrusted *data* presented to trusted installed Python code and
+its reviewed checker/catalogue. This is not a sandbox for hostile Python code
+executing in the same interpreter. Monkeypatching, replacing installed files,
+and tampering with the trusted catalogue are outside that boundary.
 
-Authority flows through FOUR disjoint, explicitly-separated levels:
-
-* **Level A -- Claim metadata** (:class:`Claim`). A declaration of *what* is
-  asserted, its scope, and its normalization. No proof authority whatsoever.
-* **Level B -- Locally checked finite certificate** (:class:`LocalCertificate`).
-  A concrete *witness as data* (matrices, vectors, polynomials) validated by a
-  PREDEFINED, in-repo **trusted checker** selected from a fixed registry over a
-  declared domain. The caller supplies data, never the checking logic -- there is
-  no callback parameter, so ``lambda: True`` has no entry point. The built-in
-  checkers reuse the exact :mod:`quantitative_rigidity` kernel.
-* **Level C -- Formal-kernel theorem** (:class:`FormalTheorem`). A theorem
-  actually elaborated and checked by Lean/mathlib, pinned to exact toolchain and
-  dependency revisions, whose authority is read from a RECORDED build receipt
-  (``#print axioms`` + build success), not from a caller-set name. A fabricated
-  theorem name is simply absent from the receipt and is rejected.
-* **Level D -- Original-source realization** (:class:`SourceRealization`). A
-  *proved identification* between the mathematical object a theorem is about and
-  the actual source object named in the claim, checked by a registered source-map
-  checker on concrete data. **Level D is NOT implied by Level C**: a perfectly
-  proved theorem about the wrong operator is still about the wrong operator.
-
-Discharging a :class:`Claim` enforces, in order: evidence level >= required level,
-scope compatibility (a *finite* certificate cannot discharge a *global* claim),
-normalization match (an alternative normalization cannot silently certify a
-different one), and finally the evidence's own exact re-verification. The verdict
-is one of VERIFIED / REFUTED / INAPPLICABLE / UNKNOWN -- never a bare bool.
+B proves an exact finite rational matrix proposition. C cites the entire exact
+Lean proposition from a coordinator-admitted, actually kernel-checked build;
+raw JSON and English prose confer no authority. D is deliberately unavailable:
+the old polynomial-identity callback did not prove theorem/source transport.
 """
 from __future__ import annotations
 
+import hashlib
 import json
-import os
 from dataclasses import dataclass, field
-from typing import Callable, Dict, Optional, Sequence, Tuple
+from fractions import Fraction
+from pathlib import Path
+from types import MappingProxyType
+from typing import Optional, Tuple
 
 import sympy as sp
 
+from observational_succ._formal_catalogue import APPROVED_RECORD_DIGESTS
 from observational_succ.proof_contracts import ProofContract, ProofContractError
 from observational_succ.quantitative_rigidity import (
-    RigidityInputError,
-    UndecidableSignError,
-    as_exact_matrix,
-    diagnostics_from_block,
-    is_positive_semidefinite,
-    quad,
+    UndecidableSignError, diagnostics_from_block, is_positive_semidefinite, quad,
 )
 
-# the four disjoint verdicts (shared vocabulary with quantitative_rigidity)
-VERIFIED = "VERIFIED"
-REFUTED = "REFUTED"
-INAPPLICABLE = "INAPPLICABLE"
-UNKNOWN = "UNKNOWN"
-
-# authority-level ordering: A < B < C < D in *strength of discharge kind*
-_LEVEL_RANK = {"A": 0, "B": 1, "C": 2, "D": 3}
-
-#: axioms that are NEVER acceptable regardless of a caller's allowed_axioms set
-#: (sorry / native_decide escape hatches). Default-denied in the receipt check.
-_FORBIDDEN_AXIOMS = ("sorryAx", "sorry", "Lean.ofReduceBool")
+VERIFIED, REFUTED, INAPPLICABLE, UNKNOWN = "VERIFIED", "REFUTED", "INAPPLICABLE", "UNKNOWN"
+_STANDARD_AXIOMS = frozenset(("propext", "Classical.choice", "Quot.sound"))
+_ROOT = Path(__file__).resolve().parents[1]
 
 
 class ProofAuthorityError(ProofContractError):
-    """A trusted-kernel obligation was violated (unknown checker, bad receipt,
-    failed source map, forbidden callback)."""
+    """Evidence failed a trusted check; this does not refute the claimed theorem."""
 
 
-# =========================================================================== #
-# Level B: the trusted-checker registry  (data in, exact boolean out)
-# =========================================================================== #
-#: cert_type -> trusted checker. Checkers live IN this repo, take a data dict,
-#: and recompute an exact mathematical fact. They are the ONLY thing that can
-#: validate a Level B certificate; a caller cannot inject one.
-_CHECKERS: Dict[str, Callable[[dict], bool]] = {}
+def _freeze(value):
+    if isinstance(value, sp.MatrixBase):
+        return tuple(tuple(value[i, j] for j in range(value.cols)) for i in range(value.rows))
+    if isinstance(value, dict) or isinstance(value, MappingProxyType):
+        return MappingProxyType({k: _freeze(v) for k, v in value.items()})
+    if isinstance(value, (list, tuple)):
+        return tuple(_freeze(v) for v in value)
+    if isinstance(value, set):
+        return frozenset(value)
+    return value
 
 
-def register_checker(cert_type: str, fn: Callable[[dict], bool]) -> None:
-    if cert_type in _CHECKERS:
-        raise ProofAuthorityError(f"checker {cert_type!r} already registered")
-    _CHECKERS[cert_type] = fn
+def _rational(value):
+    # Never sympify arbitrary strings, floats, expressions, or callbacks.
+    if type(value) is int or type(value) is Fraction or isinstance(value, sp.Rational):
+        return sp.Rational(value)
+    raise ProofAuthorityError("finite authority accepts exact rational entries only")
 
 
-def trusted_checker(cert_type: str):
-    """Decorator form of :func:`register_checker`."""
-    def deco(fn: Callable[[dict], bool]) -> Callable[[dict], bool]:
-        register_checker(cert_type, fn)
-        return fn
-    return deco
+def _matrix(value, *, square=True):
+    value = _freeze(value)
+    if not isinstance(value, tuple) or not value or not isinstance(value[0], tuple) or not value[0]:
+        raise ProofAuthorityError("matrix must be a nonempty rectangular array")
+    width = len(value[0])
+    if any(not isinstance(row, tuple) or len(row) != width for row in value):
+        raise ProofAuthorityError("matrix must be rectangular")
+    rows = tuple(tuple(_rational(x) for x in row) for row in value)
+    if square:
+        if len(rows) != width or any(rows[i][j] != rows[j][i] for i in range(width) for j in range(width)):
+            raise ProofAuthorityError("matrix proposition requires a rational symmetric square matrix")
+    return rows
+
+
+@dataclass(frozen=True)
+class MatrixProposition:
+    """Exactly `matrix is PSD` or `matrix is not PSD` over real vectors.
+
+    This is a finite rational symmetric matrix, never an infinite kernel or an
+    original arithmetic source. Entries and dimensions are part of the statement.
+    """
+    predicate: str
+    matrix: tuple
+
+    def __post_init__(self):
+        if self.predicate not in ("psd", "not_psd"):
+            raise ProofAuthorityError("unknown matrix predicate")
+        object.__setattr__(self, "matrix", _matrix(self.matrix))
+
+
+@dataclass(frozen=True)
+class FormalProposition:
+    """The entire universal theorem type in one exact checked environment.
+
+    `type_expr` is exported by Lean, including hypotheses and quantifiers. No
+    implicit substitution, English interpretation, or logical transport is offered.
+    A specialization/implication requires a separately checked declaration.
+    """
+    name: str
+    type_expr: str
+    environment_sha256: str
+    toolchain: str
+    manifest_rev: str
+
+    @property
+    def type_sha256(self):
+        return hashlib.sha256(self.type_expr.encode("utf-8")).hexdigest()
+
+
+def register_checker(*_args, **_kwargs):
+    raise ProofAuthorityError("checker registration is closed; changes require installed-code review")
+
+
+def trusted_checker(*_args, **_kwargs):
+    raise ProofAuthorityError("caller decorators cannot register proof authority")
+
+
+def register_source_map(*_args, **_kwargs):
+    raise ProofAuthorityError("source-map registration is closed; no source transport is admitted")
+
+
+def source_map(*_args, **_kwargs):
+    raise ProofAuthorityError("caller decorators cannot register source authority")
+
+
+def _check_negative(data):
+    return bool(quad(sp.Matrix(data["matrix"]), sp.Matrix(data["vector"])) < 0)
+
+
+def _check_psd(data):
+    return is_positive_semidefinite(sp.Matrix(data["matrix"]))
+
+
+def _check_schur(data):
+    diag = diagnostics_from_block(sp.Matrix(data["matrix"]), data["n_A"], source_form_identified=False)
+    return bool(diag.high_block_psd and diag.range_inclusion_ok in (True, None)
+                and diag.schur_complement_psd and diag.m_psd)
+
+
+_CHECKERS = MappingProxyType({"negative_vector": _check_negative,
+                             "psd_matrix": _check_psd,
+                             "finite_gram_psd": _check_psd,
+                             "finite_schur_positivity": _check_schur})
 
 
 def registered_checkers() -> Tuple[str, ...]:
     return tuple(sorted(_CHECKERS))
 
 
-@trusted_checker("negative_vector")
-def _check_negative_vector(data: dict) -> bool:
-    """CERTIFIES NON-PSD: exact rational v with v^T M v < 0. Reuses the Schur
-    kernel's exact quadratic form. (Part VII two-theorem reuse: Schur lane.)"""
-    M = as_exact_matrix(data["matrix"])
-    v = as_exact_matrix(data["vector"])
-    return bool(quad(M, v) < 0)
-
-
-@trusted_checker("psd_matrix")
-def _check_psd_matrix(data: dict) -> bool:
-    """CERTIFIES a finite matrix is PSD (all principal minors >= 0, exact)."""
-    return is_positive_semidefinite(as_exact_matrix(data["matrix"]))
-
-
-@trusted_checker("finite_gram_psd")
-def _check_finite_gram_psd(data: dict) -> bool:
-    """A FINITE Gram matrix is PSD. Deliberately distinct from a global-kernel
-    claim: a LocalCertificate carrying this type must declare ``scope='finite'``,
-    so it cannot discharge a ``scope='global'`` claim (failure control: a finite
-    positive Gram is not a global PSD kernel)."""
-    return is_positive_semidefinite(as_exact_matrix(data["gram"]))
-
-
-@trusted_checker("finite_schur_positivity")
-def _check_finite_schur_positivity(data: dict) -> bool:
-    """A FINITE block-positivity certificate: the exact Schur obligations hold, so
-    ``M = [[A, B], [B^T, D]] >= 0`` (high block PSD + range inclusion + true Schur
-    complement PSD + ground-truth M PSD).
-
-    Certifies MATH ONLY. It deliberately does NOT consult any caller-supplied
-    ``source_form_identified`` flag: source identification is not locally
-    checkable (that is Level D's job, via a ``SourceRealization`` + a registered
-    source map). Letting a self-asserted boolean flip the verdict would be exactly
-    the 'metadata asserts authority' failure this module exists to prevent."""
-    M = as_exact_matrix(data["matrix"])
-    diag = diagnostics_from_block(M, int(data["n_A"]),
-                                  source_form_identified=False,
-                                  kappa=data.get("kappa"))
-    return bool(diag.high_block_psd
-                and (diag.range_inclusion_ok in (True, None))
-                and diag.schur_complement_psd
-                and diag.m_psd)
-
-
-# --- source-map checkers (Level D): identify math object <-> source object ---- #
-_SOURCE_MAPS: Dict[str, Callable[[dict], bool]] = {}
-
-
-def register_source_map(map_type: str, fn: Callable[[dict], bool]) -> None:
-    if map_type in _SOURCE_MAPS:
-        raise ProofAuthorityError(f"source map {map_type!r} already registered")
-    _SOURCE_MAPS[map_type] = fn
-
-
-def source_map(map_type: str):
-    def deco(fn):
-        register_source_map(map_type, fn)
-        return fn
-    return deco
-
-
-@source_map("polynomial_identity")
-def _map_polynomial_identity(data: dict) -> bool:
-    """The object the theorem is about equals the actual source polynomial,
-    coefficient by coefficient (exact). A wrong map (different polynomials) is
-    rejected -- a valid theorem about the wrong object does not realize the
-    source."""
-    gen = data["gen"]
-    diff = sp.expand(sp.sympify(data["theorem_poly"]) - sp.sympify(data["source_poly"]))
-    return sp.Poly(diff, gen).is_zero if diff != 0 else True
-
-
-# =========================================================================== #
-# Level B artifact
-# =========================================================================== #
 @dataclass(frozen=True)
 class LocalCertificate:
-    """Level B: a finite witness-as-DATA validated by a registered trusted checker.
-
-    There is no callback field. ``cert_type`` must name a registered checker;
-    ``data`` is the exact witness. ``scope`` declares the domain over which the
-    conclusion holds (e.g. ``'finite'`` or ``'global'``)."""
+    """Immutable data; its exact conclusion is extracted by trusted code."""
     cert_type: str
     data: dict
     scope: str = "finite"
@@ -198,90 +156,136 @@ class LocalCertificate:
 
     def __post_init__(self):
         if self.cert_type not in _CHECKERS:
-            raise ProofAuthorityError(
-                f"unknown certificate type {self.cert_type!r}; registered: "
-                f"{registered_checkers()} -- a caller cannot supply the checker")
-
-    def verify(self) -> bool:
+            raise ProofAuthorityError("unknown certificate type; checking code is not caller supplied")
+        if self.scope != "finite":
+            raise ProofAuthorityError("all installed local certificates have finite scope")
         try:
-            ok = _CHECKERS[self.cert_type](self.data)
-        except RigidityInputError as exc:
-            raise ProofAuthorityError(
-                f"Level B certificate {self.cert_type!r} has a non-exact input: "
-                f"{exc}") from exc
-        if not ok:
-            raise ProofAuthorityError(
-                f"Level B certificate {self.cert_type!r} failed its trusted check")
+            key = "gram" if self.cert_type == "finite_gram_psd" else "matrix"
+            data = {"matrix": _matrix(self.data[key])}
+            if self.cert_type == "negative_vector":
+                data["vector"] = _matrix(self.data["vector"], square=False)
+                if len(data["vector"]) != len(data["matrix"]) or len(data["vector"][0]) != 1:
+                    raise ProofAuthorityError("negative witness must be a matching column vector")
+            if self.cert_type == "finite_schur_positivity":
+                n = self.data["n_A"]
+                if type(n) is not int or not 0 < n < len(data["matrix"]):
+                    raise ProofAuthorityError("n_A must be an integer strictly between zero and matrix size")
+                data["n_A"] = n
+        except (KeyError, TypeError) as exc:
+            raise ProofAuthorityError("certificate is missing required exact data") from exc
+        object.__setattr__(self, "data", MappingProxyType(data))
+
+    @property
+    def proposition(self):
+        return MatrixProposition("not_psd" if self.cert_type == "negative_vector" else "psd",
+                                 self.data["matrix"])
+
+    def verify(self):
+        if _CHECKERS[self.cert_type](self.data) is not True:
+            raise ProofAuthorityError("finite certificate failed exact recomputation")
         return True
 
 
-# =========================================================================== #
-# Level C artifact
-# =========================================================================== #
-def load_receipt(path: str) -> dict:
-    """Load a Lean axiom-audit receipt (the JSON the pinned mathlib CI emits)."""
-    with open(path, "r", encoding="utf-8") as fh:
-        return json.load(fh)
+def load_receipt(path):
+    """Read untrusted JSON. Loading never authenticates a build."""
+    with open(path, encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def record_digest(record):
+    """Canonical record digest used by the reviewed installed catalogue."""
+    return hashlib.sha256(json.dumps(record, sort_keys=True, separators=(",", ":"),
+                                     ensure_ascii=False).encode("utf-8")).hexdigest()
+
+
+def _authenticate_record(record):
+    """Exact allowlist admission plus current-source verification, fail closed.
+
+    The catalogue is changed only after an actual pinned build is independently
+    inspected. There is deliberately no public admission function.
+    """
+    if type(record) is not dict or record_digest(record) not in APPROVED_RECORD_DIGESTS:
+        raise ProofAuthorityError("untrusted build record: no reviewed kernel-build admission")
+    if record.get("schema") != "succ.lean.kernel.v1":
+        raise ProofAuthorityError("wrong kernel record schema")
+    hashes = record.get("source_hashes")
+    if not isinstance(hashes, dict) or not hashes:
+        raise ProofAuthorityError("missing exact checked source hashes")
+    for relative, digest in hashes.items():
+        source = (_ROOT / relative).resolve()
+        if not source.is_relative_to(_ROOT) or not source.is_file():
+            raise ProofAuthorityError("checked source is unavailable or outside installed tree")
+        if hashlib.sha256(source.read_bytes()).hexdigest() != digest:
+            raise ProofAuthorityError("checked source hash changed: " + relative)
+    return record
 
 
 @dataclass(frozen=True)
 class FormalTheorem:
-    """Level C: a theorem actually elaborated by a formal kernel.
-
-    Its authority is conferred by a RECORDED build receipt, not by this dataclass.
-    :meth:`validate_against_receipt` requires the theorem name to be present in a
-    receipt whose build succeeded, with matching pinned toolchain / dependency
-    revision and an audited axiom set within the allowed envelope. A fabricated
-    name is absent from the receipt and is rejected."""
+    """A reference to an admitted exact Lean theorem; a name alone is metadata."""
     name: str
     toolchain: str
     manifest_rev: str
-    allowed_axioms: Tuple[str, ...]
+    allowed_axioms: Tuple[str, ...] = ("propext", "Classical.choice", "Quot.sound")
     normalization: str = ""
     scope: str = "global"
+    type_expr: str = ""
+    environment_sha256: str = ""
     level: str = field(default="C", init=False)
 
-    def validate_against_receipt(self, receipt: dict) -> bool:
-        if not receipt.get("build_succeeded", False):
-            return False
-        if receipt.get("toolchain") != self.toolchain:
-            return False
-        if receipt.get("manifest_rev") != self.manifest_rev:
-            return False
-        theorems = receipt.get("theorems", {})
-        entry = theorems.get(self.name)
-        if entry is None:                      # fabricated name -> absent -> rejected
-            return False
-        if "axioms" not in entry:              # absence is UNKNOWN, not "no axioms"
-            return False
-        recorded_axioms = tuple(entry["axioms"])
-        if any(ax in _FORBIDDEN_AXIOMS for ax in recorded_axioms):
-            return False                       # default-deny sorry/native_decide
-        return all(ax in set(self.allowed_axioms) for ax in recorded_axioms)
+    def __post_init__(self):
+        object.__setattr__(self, "allowed_axioms", tuple(self.allowed_axioms))
+        if self.scope != "global":
+            raise ProofAuthorityError("formal reference states the entire theorem; no implicit specialization")
 
-    def verify(self, receipt: Optional[dict] = None,
-               receipt_path: Optional[str] = None) -> bool:
-        if receipt is None:
-            if receipt_path is None:
-                raise ProofAuthorityError(
-                    f"Level C theorem {self.name!r} needs a build receipt; a name "
-                    f"alone is not a formal theorem")
+    @property
+    def proposition(self):
+        return FormalProposition(self.name, self.type_expr, self.environment_sha256,
+                                 self.toolchain, self.manifest_rev)
+
+    @classmethod
+    def from_receipt(cls, name, receipt):
+        record = _authenticate_record(receipt)
+        try:
+            entry = record["theorem_exports"][name]
+            theorem = cls(name, record["toolchain"], record["manifest_rev"],
+                          type_expr=entry["type_expr"], environment_sha256=record["environment_sha256"])
+        except (KeyError, TypeError) as exc:
+            raise ProofAuthorityError("unknown theorem or malformed kernel export") from exc
+        theorem.verify(receipt=record)
+        return theorem
+
+    def validate_against_receipt(self, receipt):
+        try:
+            record = _authenticate_record(receipt)
+            entry = record["theorem_exports"][self.name]
+            return (bool(self.type_expr) and len(self.environment_sha256) == 64
+                    and record["toolchain"] == self.toolchain
+                    and record["manifest_rev"] == self.manifest_rev
+                    and record["environment_sha256"] == self.environment_sha256
+                    and entry["type_expr"] == self.type_expr
+                    and entry["type_sha256"] == self.proposition.type_sha256
+                    and "axioms" in entry
+                    and set(entry["axioms"]) <= _STANDARD_AXIOMS
+                    and set(entry["axioms"]) <= set(self.allowed_axioms))
+        except (ProofAuthorityError, KeyError, TypeError, ValueError):
+            return False
+
+    def verify(self, receipt=None, receipt_path=None):
+        if receipt is None and receipt_path is not None:
             receipt = load_receipt(receipt_path)
-        if not self.validate_against_receipt(receipt):
-            raise ProofAuthorityError(
-                f"Level C theorem {self.name!r} is not authenticated by the receipt")
+        if receipt is None or not FormalTheorem.validate_against_receipt(self, receipt):
+            raise ProofAuthorityError("exact formal proposition lacks an authenticated checked build")
         return True
 
 
-# =========================================================================== #
-# Level D artifact
-# =========================================================================== #
 @dataclass(frozen=True)
 class SourceRealization:
-    """Level D: a proved identification between the theorem's object and the
-    actual source object. Requires a Level C theorem AND a registered source-map
-    checker that recomputes the identification on concrete data. Level C alone
-    does NOT confer Level D."""
+    """Legacy source metadata, deliberately without Level D proof authority.
+
+    Equal caller-supplied polynomials do not identify a theorem instantiation or
+    an original signed source. No source transport checker is currently admitted.
+    """
     theorem: FormalTheorem
     math_object: str
     source_object: str
@@ -292,127 +296,70 @@ class SourceRealization:
     level: str = field(default="D", init=False)
 
     def __post_init__(self):
-        if self.map_type not in _SOURCE_MAPS:
-            raise ProofAuthorityError(
-                f"unknown source map {self.map_type!r}; registered: "
-                f"{tuple(sorted(_SOURCE_MAPS))}")
+        object.__setattr__(self, "data", _freeze(self.data))
 
-    def verify(self, receipt: Optional[dict] = None,
-               receipt_path: Optional[str] = None) -> bool:
-        self.theorem.verify(receipt=receipt, receipt_path=receipt_path)  # Level C first
-        if not _SOURCE_MAPS[self.map_type](self.data):
-            raise ProofAuthorityError(
-                f"source realization {self.math_object!r} <-> {self.source_object!r} "
-                f"FAILED its map check: a valid theorem about the wrong object does "
-                f"not realize the source")
-        return True
+    def verify(self, **_kwargs):
+        raise ProofAuthorityError("no proposition-bound original-source transport has been admitted")
 
 
-# =========================================================================== #
-# Level A: the claim, and the trusted discharge
-# =========================================================================== #
 @dataclass(frozen=True)
 class Verdict:
-    status: str                 # VERIFIED / REFUTED / INAPPLICABLE / UNKNOWN
+    status: str
     reason: str
     level_used: Optional[str] = None
 
-    def __bool__(self) -> bool:
+    def __bool__(self):
         return self.status == VERIFIED
 
 
-@dataclass
+@dataclass(frozen=True)
 class Claim:
-    """Level A metadata: what is asserted, at what required authority level, over
-    what scope and normalization. Carries NO proof authority on its own."""
+    """A typed proposition and explanatory label, never proof in itself.
+
+    English strings remain accepted as research metadata but cannot be VERIFIED.
+    REFUTED means the offered evidence failed, not that the proposition is false.
+    """
     name: str
-    statement: str
-    required_level: str          # 'B' | 'C' | 'D'
+    statement: object
+    required_level: str
     scope: str = "finite"
     normalization: str = ""
 
     def __post_init__(self):
         if self.required_level not in ("B", "C", "D"):
-            raise ProofAuthorityError(
-                f"required_level {self.required_level!r} must be B, C, or D")
+            raise ProofAuthorityError("required_level must be B, C, or D")
 
-    def _scope_ok(self, ev_scope: str) -> bool:
-        # 'global' evidence can discharge a 'finite' claim; 'finite' cannot
-        # discharge 'global' (the finite-Gram -> global-kernel failure control).
-        if ev_scope == self.scope:
-            return True
-        return ev_scope == "global" and self.scope == "finite"
-
-    def discharge(self, evidence, *, receipt: Optional[dict] = None,
-                  receipt_path: Optional[str] = None) -> Verdict:
-        """Attempt to discharge this claim with a single evidence artifact.
-
-        Enforces, before ever trusting the evidence: (1) a callback is NOT
-        evidence; (2) evidence level >= required level; (3) scope compatibility;
-        (4) normalization match. Only then is the evidence re-verified exactly."""
-        # (1) only the registered typed authority artifacts count as evidence. A
-        #     raw callback, a bare value, OR a forged duck-typed look-alike (an
-        #     object that merely exposes `.level` and a `.verify()` returning True)
-        #     is rejected: authority comes from the registered checkers / receipt /
-        #     source maps, never from an object's shape.
-        if not isinstance(evidence, (LocalCertificate, FormalTheorem, SourceRealization)):
-            return Verdict(REFUTED,
-                           "evidence is not a registered authority artifact "
-                           "(LocalCertificate / FormalTheorem / SourceRealization); "
-                           "a callback, bare value, or forged look-alike is not proof")
-        ev_level = evidence.level
-        # (2) level sufficiency: exact kind, with D also satisfying a C requirement.
-        level_ok = (ev_level == self.required_level
-                    or (self.required_level == "C" and ev_level == "D"))
-        if not level_ok:
-            return Verdict(INAPPLICABLE,
-                           f"claim requires level {self.required_level}, evidence is "
-                           f"level {ev_level}", level_used=ev_level)
-        # (3) scope compatibility.
-        ev_scope = getattr(evidence, "scope", "finite")
-        if not self._scope_ok(ev_scope):
-            return Verdict(INAPPLICABLE,
-                           f"scope mismatch: claim is {self.scope!r}, evidence is "
-                           f"{ev_scope!r} (a finite certificate is not a global one)",
-                           level_used=ev_level)
-        # (4) normalization match (when the claim pins one).
-        ev_norm = getattr(evidence, "normalization", "")
-        if self.normalization and ev_norm != self.normalization:
-            return Verdict(INAPPLICABLE,
-                           f"normalization mismatch: claim {self.normalization!r} vs "
-                           f"evidence {ev_norm!r} (an alternative normalization does "
-                           f"not certify a different one)", level_used=ev_level)
-        # finally: the evidence must re-verify exactly AND return literal True.
+    def discharge(self, evidence, *, receipt=None, receipt_path=None):
+        # Exact types, not duck typing or virtual overrides. Arbitrary subclass
+        # code must not replace the installed checker at this data boundary.
+        if type(evidence) not in (LocalCertificate, FormalTheorem, SourceRealization):
+            return Verdict(REFUTED, "evidence is not an installed exact artifact type")
+        level = evidence.level
+        if level != self.required_level or self.scope != evidence.scope:
+            return Verdict(INAPPLICABLE, "authority kind or scope does not match", level)
+        if self.normalization != evidence.normalization:
+            return Verdict(INAPPLICABLE, "normalization does not match", level)
+        if type(evidence) is SourceRealization:
+            return Verdict(INAPPLICABLE, "no checked source identification/transport available", level)
+        expected_type = MatrixProposition if level == "B" else FormalProposition
+        if type(self.statement) is not expected_type:
+            return Verdict(INAPPLICABLE, "claim requires a typed proposition, not an English assertion", level)
+        if self.statement != evidence.proposition:
+            return Verdict(INAPPLICABLE, "evidence proves a different exact proposition", level)
         try:
-            if ev_level in ("C", "D"):
-                ok = evidence.verify(receipt=receipt, receipt_path=receipt_path)
+            if level == "B":
+                LocalCertificate.verify(evidence)
             else:
-                ok = evidence.verify()
-        except ProofAuthorityError as exc:
-            return Verdict(REFUTED, str(exc), level_used=ev_level)
+                FormalTheorem.verify(evidence, receipt=receipt, receipt_path=receipt_path)
         except UndecidableSignError as exc:
-            # a genuinely undecidable obligation is the fourth verdict, not a crash
-            return Verdict(UNKNOWN, f"an obligation was undecidable: {exc}",
-                           level_used=ev_level)
-        if ok is not True:
-            # belt-and-suspenders: a verify() that returns a non-True falsy value
-            # without raising is not a proof (guards a future artifact regressing).
-            return Verdict(REFUTED,
-                           "evidence.verify() did not return literal True",
-                           level_used=ev_level)
-        return Verdict(VERIFIED,
-                       f"discharged at level {ev_level}", level_used=ev_level)
+            return Verdict(UNKNOWN, str(exc), level)
+        except (ProofAuthorityError, ValueError, KeyError, TypeError) as exc:
+            return Verdict(REFUTED, str(exc), level)
+        return Verdict(VERIFIED, "exact typed proposition discharged", level)
 
 
-# --------------------------------------------------------------------------- #
-# Quantifier-aware transport guard (reuse the ProofContract prefix machinery)
-# --------------------------------------------------------------------------- #
 def transport_respects_quantifiers(pointwise: ProofContract, uniform: ProofContract,
                                    const_var: str, index_var: str) -> bool:
-    """True iff reading ``uniform`` as a strengthening of ``pointwise`` does NOT
-    commit the forbidden (for all i)(exists c_i) -> (exists c)(for all i) swap.
-    Returns False exactly when that illegal uniformization is attempted -- the
-    'source-valid inequality with wrong quantifier dependencies' failure control."""
     try:
         uniform.assert_not_uniformized_from(pointwise, const_var, index_var)
     except ProofContractError:
