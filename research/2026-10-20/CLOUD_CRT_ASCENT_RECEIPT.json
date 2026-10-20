@@ -1,0 +1,24 @@
+{
+  "base_sha": "0e56e0ae26f3d52a2ea34c0a4288478139fcb634",
+  "command": "PYTHONPATH=. python scripts/cloud_crt_ascent_probe.py",
+  "deep_prime_power_counterexample": {
+    "W": 8192,
+    "X": 4097,
+    "count": 1,
+    "naive_main_term": "16785409/32768",
+    "r": 4096
+  },
+  "formal_kernel_status": "UNVERIFIED",
+  "fresh_direct_census_cases": 48,
+  "negative_sharpness_ratio": "2999998999999/2000002000000",
+  "novelty": "CLASSICAL mechanisms; new-to-project explicit budget; academic novelty UNVERIFIED",
+  "scope": "finite exact independent holdout; universal proofs are in dossier",
+  "seed": 7719021,
+  "sha256": {
+    "observational_succ/cloud_crt_ascent.py": "794902ec9988874e0be120c649a632a699a74c41eb6b9bcc24353c654d62013a",
+    "research/2026-10-20/CLOUD_CRT_ASCENT.md": "0dd9803271186c08adc9042e2ec39d9b4cce8f0690e98d23cdc1bdc3867696e8",
+    "scripts/cloud_crt_ascent_probe.py": "1c0ceb9f12aa4e15efa9167621fc53dbe5822c2c30571bd76f7d77f72c39a02a",
+    "tests/test_cloud_crt_ascent.py": "5cf079906e618daa08831899d477456f7de481171c79ee2e8b5bd71a108b34ad"
+  },
+  "status": "PASS"
+}
