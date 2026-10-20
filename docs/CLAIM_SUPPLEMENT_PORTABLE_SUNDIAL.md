@@ -23,6 +23,6 @@
 
 **Reproduction:** `python -m unittest discover -s tests -p 'test_portable_prime_sundial.py' -v`, `python -m scripts.portable_prime_sundial_probe`.
 
-**Frozen finite receipt:** [PORTABLE_SUNDIAL_FINITE_RECEIPT.json](../research/2026-10-19/PORTABLE_SUNDIAL_FINITE_RECEIPT.json) — 256 declared frames, 1,024 p-power reads, 306 satisfiable diagonal windows, explicit alias/nonunit/RAD-birth/stationary negative controls. These tests calibrate a finite grammar, not a universal theorem.
+**Frozen finite receipt:** [PORTABLE_SUNDIAL_FINITE_RECEIPT.json](../research/2026-10-19/PORTABLE_SUNDIAL_FINITE_RECEIPT.json) — 256 declared frames, 1,024 p-power reads, 306 satisfiable diagonal windows, exact three-shadow reconstruction/source-scale aliases, and nonunit/RAD-birth/stationary negative controls. These tests calibrate a finite grammar, not a universal theorem.
 
 **Dependency trace:** `observational_succ/rad_ris_transport.py` (genuine RAD/RIS/factor oracle), `prime_phase_clocks.py` (distinct prior clock program), `formal/EODCS_CausalDescent.lean` and `formal/MetaChoiceRelationalDescent.lean` (observation descent), Academic Main V provenance. All old modules are imported/read, not rewritten. No original Weil identity or zero ordinate is used.
