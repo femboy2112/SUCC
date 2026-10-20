@@ -45,6 +45,23 @@ distinct hostile audits (number theory · operator/sampling · logic/provenance)
 metatheory compiles choice-free under Lean 4.14 (`#print axioms`: no `Classical.choice`). **ABC, RH, and the
 signed `S₄` sign all remain OPEN.**
 
+**Academic Main VI integration (2026-10-20) — the Proof Forge intake:** the seven sibling draft PRs
+**#192–#198** — prime-clock→hologram transport naturality (#192), minimum-cost parity repair / `|E|−MaxCut`
+(#193), source-indexed Beck–Chevalley realization firewall (#194), the source→signed-Weil interface scaffold
+(#195), primitive ABC-triple ris-moments (#196), the portable rational sundial (#197), and carrier-relative
+LEM / inference authority (#198) — consolidated history-preserving into `main` from `455600a` over 7
+ancestry-aware `--no-ff` merges. The true DAG is seven **independent** siblings off `main` (no stacking; only
+#197 touches shared docs, additively). Navigation:
+[integration audit](docs/SUCC_ACADEMIC_MAIN_VI_INTEGRATION_AUDIT_2026-10-20.md) ·
+[dependency graph](docs/SUCC_ACADEMIC_MAIN_VI_DEPENDENCY_GRAPH.json) ·
+[merge coverage](docs/SUCC_ACADEMIC_MAIN_VI_MERGE_COVERAGE.json). Only #197 is a promoted claim family
+(`PSD`); #192–#196 and #198 are **research-status dossiers**. The follow-on **Proof Forge** campaign
+(additive/multiplicative convolution discipline, quantifier-aware proof contracts, and a complete
+Mason–Stothers polynomial-abc proof certificate) ships on a separate research branch. **ABC, RH, and the
+signed `S₄` sign all remain OPEN.**
+
+**Portable prime sundial — rational two-unit SUCC (2026-10-20, consolidated into `main` via PR #197):** [proof dossier](research/2026-10-19/PORTABLE_PRIME_SUNDIAL.md) · [PSD-01–14 scoped claims](docs/CLAIM_SUPPLEMENT_PORTABLE_SUNDIAL.md). A source-indexed fraction frame (a,b;u,v) carries two independent successor directions; one conserved diagonal determinant D=ub−va controls real-valued drift and prime cancellation. Authenticated finite prime-power *moduli*, exact nonunit congruences, CRT phase-wheel encoding, RAD/RIS prime births, and a rational-quotient nonidentification counterexample are implemented. This is classical exact arithmetic and a new SUCC source-transport interface—not a physical time device, a prime-distribution theorem, an ABC proof, or signed-Weil/RH positivity. Frozen originals untouched. Consolidated into `main` via Academic Main VI (PR #197).
+
 **Borwein sinc × prime delta clocks (2026-10-19):** [exact factorial/Borwein/CRT research dossier](research/2026-10-19/BORWEIN_DELTA_PRIME_CLOCK.md) · [scoped claims](docs/CLAIM_SUPPLEMENT_BORWEIN_DELTA.md). Exact simplex-factorial leakage, a prime-width first crossing at 29, genuinely source-derived phase ±1/nonzero projectors, rational sub-Markov SUCC gates, and strictly separated Poisson/Brownian limits. Sinc widths alone do not read arithmetic residues. **ABC/RH/sign OPEN.**
 
 **Green–Tao synchronized prime-clock APs (2026-10-19):** [mathematical dossier](research/2026-10-19/GREEN_TAO_SYNCHRONIZED_CLOCK_AP.md) · [GTC-01–14 scoped claims](docs/CLAIM_SUPPLEMENT_GREEN_TAO_CLOCK_AP.md) · [exact Python probe](scripts/green_tao_clock_ap_probe.py). Genuine W-tricked source counts, exact Fourier phase locking, necessary local AP-step gates, a verified 5×5 prime-progression rectangle (25 synchronizations), **flat-RAD prime ladders** with RIS=1,2,3,4,5, and an **unconditional Maynard–Tao corollary** giving infinitely many prime-rich constant-RAD fibers (at least m of K positions, not every position). A two-sided arbitrary-length existence theorem is an **external Green–Tao/PNT-AP corollary**, not a new or internal proof. No fixed-gap conjecture, ABC, RH, or completed Weil positivity proof.
