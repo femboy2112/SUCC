@@ -46,14 +46,19 @@ def sha256(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
-def command(args: list[str], cwd: Path, logfile: Path) -> str:
+def command(args: list[str], cwd: Path, logfile: Path, *, check_axioms: bool = True) -> str:
     run = subprocess.run(args, cwd=cwd, text=True, stdout=subprocess.PIPE,
                          stderr=subprocess.STDOUT, check=False)
     logfile.write_text(run.stdout)
-    print(run.stdout, end="", flush=True)
+    for line in run.stdout.splitlines():
+        if "SUCC_THEOREM_JSON " in line:
+            entry = json.loads(line.split("SUCC_THEOREM_JSON ", 1)[1])
+            print(f"KERNEL_EXPORTED {entry['name']} type_sha256={sha256(entry['type_expr'].encode())}")
+        else:
+            print(line, flush=True)
     if run.returncode:
         raise RuntimeError(f"command failed ({run.returncode}): {args}; see {logfile}")
-    if "sorryAx" in run.stdout or "uses 'sorry'" in run.stdout:
+    if check_axioms and ("sorryAx" in run.stdout or "uses 'sorry'" in run.stdout):
         raise RuntimeError(f"forbidden proof shortcut in {logfile}")
     return run.stdout
 
@@ -153,7 +158,7 @@ def main() -> None:
     if control.returncode == 0 or "type mismatch" not in control.stdout:
         raise RuntimeError("wrong-source control did not fail for the expected type mismatch")
     command(["python3", "check_mutations.py"], ROOT / "formal/cloud_schur",
-            output / "schur-mutations.log")
+            output / "schur-mutations.log", check_axioms=False)
     if source_hashes() != before:
         raise RuntimeError("checked source changed during build")
     environment = {"toolchain": TOOLCHAIN, "manifest_rev": MATHLIB, "source_hashes": before}

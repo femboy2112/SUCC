@@ -6,6 +6,8 @@ Python-code sandbox test; monkeypatching installed trusted code is out of scope.
 from dataclasses import FrozenInstanceError
 from fractions import Fraction
 from itertools import product
+import json
+from pathlib import Path
 import unittest
 
 from observational_succ import proof_authority as pa
@@ -80,6 +82,16 @@ class AuthorityHoldout(unittest.TestCase):
             self.assertNotEqual(claim.discharge(theorem,receipt=receipt).status,pa.VERIFIED)
         with self.assertRaises(pa.ProofAuthorityError):
             pa.FormalTheorem.from_receipt("polynomial_fermat",receipt)
+
+    def test_actual_historical_receipt_cannot_authorize_rh(self):
+        # This is the real archived receipt, not a synthetic successful JSON.
+        root = Path(pa.__file__).resolve().parents[1]
+        receipt = json.loads((root/"formal/mathlib_bridge/axiom_audit.json").read_text())
+        theorem = pa.FormalTheorem("polynomial_fermat",receipt["toolchain"],
+                                  receipt["manifest_rev"])
+        claim = pa.Claim("mandatory unrelated theorem control",
+                         "The Riemann hypothesis is true.","C",scope="global")
+        self.assertNotEqual(claim.discharge(theorem,receipt=receipt).status,pa.VERIFIED)
 
     def test_registration_is_closed_to_caller_callbacks(self):
         for register in (pa.register_checker,pa.register_source_map):

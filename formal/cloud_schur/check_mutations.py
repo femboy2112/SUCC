@@ -18,6 +18,10 @@ for name, (old, new) in mutations.items():
         result = subprocess.run(["lake", "env", "lean", str(path)], text=True, capture_output=True)
         if result.returncode == 0 or "error:" not in result.stdout + result.stderr:
             raise RuntimeError(f"mutation did not produce an elaboration error: {name}")
+        diagnostic = result.stdout + result.stderr
+        expected = ("Matrix.PosSemidef.isUnit",) if name == "semidefinite_is_not_invertible" else ("unsolved goals", "-1 = 1")
+        if not all(fragment in diagnostic for fragment in expected):
+            raise RuntimeError(f"mutation failed for an unexpected reason: {name}: {diagnostic}")
         print(f"MUTATION_REJECTED {name}")
         print(result.stdout + result.stderr)
     finally:

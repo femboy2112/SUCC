@@ -24,6 +24,8 @@ class RefereeControls(unittest.TestCase):
         self.assertEqual(replay.classify(dict(base,state="rejected_or_exception",
                          exception="ImportError"),{}),"INVALID TEST")
         self.assertEqual(replay.classify(dict(base,state="unexpected"),{}),"NEW FAILURE")
+        self.assertEqual(replay.classify({"id":"F06_NONINTEGER_CUTOFF",
+            "state":"rejected_or_exception","exception":"GoldbachCircleError"},{}),"FIXED")
 
     def test_independent_arithmetic_and_mutations(self):
         arithmetic = load("main_vii_arithmetic_holdout")

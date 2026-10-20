@@ -1,5 +1,17 @@
 # Claim Index
 
+**Academic Main VII (2026-10-20):**
+[reviewed claim crosswalk](CLAIM_SUPPLEMENT_ACADEMIC_MAIN_VII.md),
+[integration audit](academic_main_vii/integration_audit.md),
+[current frontier](academic_main_vii/research_frontier.md).
+CLOUD-ABC-01–05 are registered with their original identifiers and paper-proof
+scope: the primitive moment and full mean hold for 0≤t<2/3. The earlier t<1/2
+ceiling below describes the diagonal method, not the current project frontier.
+AMVII-01–06 record exact proposition boundaries, the corrected fixed-support
+Gamma inference, canonical sharp CRT error and classical Schur cross-checks.
+Formal authority is governed by actual admitted kernel exports, not status labels.
+Historical research reports retain their own input commits and receipts.
+
 2026-10-18 research: [Institute nucleus](CLAIM_SUPPLEMENT_INSTITUTE.md), with
 eight core Lean declarations, atomic/Haar representation obstructions, a sharper
 authentic Gamma tail, and a source-typed machine claim graph. This research branch

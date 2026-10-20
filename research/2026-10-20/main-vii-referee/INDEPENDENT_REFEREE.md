@@ -46,6 +46,35 @@ TEST**, and unknown outcomes are **NEW FAILURE**. An unreviewed documentation
 oracle is **INAPPLICABLE**, not silently green. Formal/source authority is
 separately challenged by `test_main_vii_authority_holdout.py`.
 
+### Repaired combined-head replay
+
+The exact combined commit `0b0306544c31fa8af04c52868b2af5a35d6b60ee` was checked
+out into a separate clean detached worktree and the same nine fixtures replayed.
+All nine are **FIXED**, with exact observed outputs and source hashes in
+`repaired-0b030654-replay.json`. The first classifier run treated the intentional
+`GoldbachCircleError` domain rejection as **INVALID TEST**, because the adapter
+only listed its standard `ValueError` parent by name. That initial receipt is
+preserved. The adapter was repaired to recognize this documented domain
+exception; the production test and mathematical expectation were unchanged.
+
+The separate authority holdout also passed on this exact combined head. It
+checks all 125 symmetric 2-by-2 integer matrices with entries from -2 to 2 against
+the independent principal-minor criterion; exact matrix/dimension/predicate
+binding; negative-witness binding; deep input snapshotting; rational domains;
+subclass-verifier rejection; forged successful JSON; and closed callback
+registration. A mandatory additional control uses the actual archived
+`formal/mathlib_bridge/axiom_audit.json` and confirms it cannot authorize the
+English assertion that RH is true. Archived receipt contents alone have no
+authority. A genuine positive formal-reference test is **INAPPLICABLE** at this
+commit: the reviewed build catalogue is intentionally empty pending the actual
+hosted Lean build. That pending positive gate is not reported as verified.
+
+The exactness lane's additional prime-cutoff defect was independently reproduced
+at #209: `singular_series_via_transport(2,2)=3/2`, but the direct finite product is
+`singular_series_truncated(2,2)=2`. Its repair keeps the actual requested prime
+range and is separate from the nine historical findings. No claim of exhaustive
+absence of certification defects is made from this finite hostile suite.
+
 ## Reconstruction of the primitive moment theorem
 
 Let `X>=2` be real, let `a,b` be positive integers, `c=a+b<=X`, and impose

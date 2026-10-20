@@ -27,7 +27,7 @@ def classify(record, source_texts):
     if state == "rejected_or_exception":
         allowed = {"ProofContractError", "FrozenInstanceError", "ProofAuthorityError"}
         if identifier.startswith("F06"):
-            allowed |= {"ValueError", "TypeError"}
+            allowed |= {"ValueError", "TypeError", "GoldbachCircleError"}
         return "FIXED" if record.get("exception") in allowed else "INVALID TEST"
     if state == "source_review_required":
         if identifier.startswith("F07") and all(s in source_texts["abc"] for s in

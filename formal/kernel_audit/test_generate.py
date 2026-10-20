@@ -1,8 +1,11 @@
 """Small negative controls for the observation parser, not a substitute for Lean."""
 import json
+from pathlib import Path
+import sys
+import tempfile
 import unittest
 
-from generate import parse_exports, sha256
+from generate import command, parse_exports, sha256
 
 
 class ExportParserControls(unittest.TestCase):
@@ -27,6 +30,18 @@ class ExportParserControls(unittest.TestCase):
         for log in [self.line(expr=""), "ordinary build output"]:
             with self.assertRaises(ValueError):
                 parse_exports(log, ["Example.theorem"])
+
+    def test_positive_and_rejected_control_logs_have_distinct_gates(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = Path(temporary)
+            args = [sys.executable, "-c", "print('sorryAx')"]
+            with self.assertRaises(RuntimeError):
+                command(args, directory, directory / "positive.log")
+            # Error-recovery axioms in a REJECTED control are diagnostic only.
+            command(args, directory, directory / "negative.log", check_axioms=False)
+            with self.assertRaises(RuntimeError):
+                command([sys.executable, "-c", "raise SystemExit(1)"], directory,
+                        directory / "failed-controller.log", check_axioms=False)
 
 
 if __name__ == "__main__":
