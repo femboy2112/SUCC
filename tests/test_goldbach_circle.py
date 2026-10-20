@@ -20,9 +20,13 @@ from observational_succ.goldbach_circle import (
     farey_major_arcs,
     fourier_identity_check,
     goldbach_main_term_enclosure,
+    major_arc_benchmark,
+    odd_prime_transport_factor,
     singular_series_enclosure,
     singular_series_local_factor,
+    singular_series_transport_enclosure,
     singular_series_truncated,
+    singular_series_via_transport,
     support_split,
     twin_prime_constant_enclosure,
 )
@@ -133,6 +137,97 @@ class TestSingularSeries(unittest.TestCase):
         mlo, mhi = goldbach_main_term_enclosure(30, 5000)
         self.assertEqual(mlo, lo * 30)
         self.assertEqual(mhi, hi * 30)
+
+
+class TestSingularSeriesTransport(unittest.TestCase):
+    """GC-03: finite singular-series transport lemma (exact identity + certified tail).
+
+    Pins the CORRECTION to the twin-constant docstring: 2*C_2 is the BASE constant,
+    distinct from S(2q) = 2*C_2 * (q-1)/(q-2).
+    """
+
+    def test_odd_prime_transport_factor_exact(self):
+        # q=3,5,7 -> (q-1)/(q-2) = 2, 4/3, 6/5 exactly.
+        self.assertEqual(odd_prime_transport_factor(2 * 3), Fraction(2, 1))
+        self.assertEqual(odd_prime_transport_factor(2 * 5), Fraction(4, 3))
+        self.assertEqual(odd_prime_transport_factor(2 * 7), Fraction(6, 5))
+        # Power of 2 -> empty product -> 1.
+        self.assertEqual(odd_prime_transport_factor(16), Fraction(1))
+        # Insensitive to the exponent: K(6) = K(18) (both odd part supported on {3}).
+        self.assertEqual(odd_prime_transport_factor(18), odd_prime_transport_factor(6))
+        # Several odd primes multiply: 30 = 2*3*5 -> 2 * 4/3 = 8/3.
+        self.assertEqual(odd_prime_transport_factor(30), Fraction(8, 3))
+
+    def test_S_2q_is_base_times_factor_not_base(self):
+        # The exact fact the docstring fix encodes: S(2q) = 2*C_2 * (q-1)/(q-2),
+        # NOT 2*C_2.  Verified at the truncated level (P large, so exact rational).
+        P = 20000
+        _lo, two_C2 = twin_prime_constant_enclosure(P)       # two_C2 = 2*T(P)
+        for q, factor in ((3, Fraction(2)), (5, Fraction(4, 3)), (7, Fraction(6, 5))):
+            N = 2 * q
+            S_trunc = singular_series_truncated(N, P)
+            self.assertEqual(S_trunc, two_C2 * factor,
+                             f"S({N}) should be 2*C_2*{factor}")
+            self.assertNotEqual(S_trunc, two_C2,
+                                f"S({N}) must NOT equal the base constant 2*C_2")
+
+    def test_transport_identity_matches_truncated_product(self):
+        # EXACT identity S_{<=P}(N) = 2*T(P)*K(N) = singular_series_truncated(N,P).
+        P = 5000
+        for N in (6, 10, 14, 18, 22, 30, 42, 210, 2310):
+            self.assertEqual(singular_series_via_transport(N, P),
+                             singular_series_truncated(N, P),
+                             f"transport identity failed at N={N}")
+
+    def test_transport_enclosure_matches_direct_enclosure(self):
+        # Two independent routes to the SAME certified bracket.
+        P = 5000
+        for N in (10, 30, 100, 210, 2310):
+            self.assertEqual(singular_series_transport_enclosure(N, P),
+                             singular_series_enclosure(N, P),
+                             f"transport enclosure disagrees at N={N}")
+
+    def test_transport_enclosure_brackets_true_series(self):
+        # lo <= S_{<=P'}(N) <= hi for a much finer truncation P' (S monotone in tail).
+        P, Pfine = 2000, 200000
+        for N in (10, 30, 210):
+            lo, hi = singular_series_transport_enclosure(N, P)
+            s_fine = singular_series_truncated(N, Pfine)
+            self.assertLessEqual(lo, s_fine)
+            self.assertLessEqual(s_fine, hi)
+            self.assertLess(0, lo)
+
+    def test_transport_requires_P_ge_largest_prime_factor(self):
+        # N=2*101: P must reach 101 or the enhanced S_101 factor is missing.
+        with self.assertRaises(GoldbachCircleError):
+            singular_series_via_transport(2 * 101, 50)
+        self.assertGreater(singular_series_via_transport(2 * 101, 101), 0)
+
+    def test_odd_N_transport_is_zero(self):
+        self.assertEqual(singular_series_via_transport(15, 4000), Fraction(0))
+        self.assertEqual(singular_series_transport_enclosure(15, 4000),
+                         (Fraction(0), Fraction(0)))
+
+
+class TestMajorArcBenchmark(unittest.TestCase):
+    """Structural Siegel-Walfisz major-arc benchmark: honest labels, no fake certificate."""
+
+    def test_benchmark_labels_and_exact_bracket(self):
+        b = major_arc_benchmark(100, P=5000, A=2)
+        self.assertEqual(b["binary_goldbach"], "OPEN")
+        self.assertFalse(b["rh_used"])
+        self.assertIn("INEFFECTIVE", b["imported_constant_status"])
+        self.assertIn("OPEN", b["minor_arc_status"])
+        # The only certified numeric field is the exact singular-series bracket.
+        self.assertEqual(b["singular_series_bracket"],
+                         singular_series_enclosure(100, 5000))
+        lo, hi = b["singular_series_bracket"]
+        self.assertIsInstance(lo, Fraction)
+        self.assertLessEqual(lo, hi)
+
+    def test_benchmark_rejects_odd_N(self):
+        with self.assertRaises(GoldbachCircleError):
+            major_arc_benchmark(101, P=5000)
 
 
 class TestArcStructure(unittest.TestCase):

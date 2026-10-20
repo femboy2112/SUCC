@@ -271,9 +271,24 @@ def singular_series_enclosure(N: int, P: int) -> Tuple[Fraction, Fraction]:
 def twin_prime_constant_enclosure(P: int) -> Tuple[Fraction, Fraction]:
     """Certified [lo, hi] for 2*C_2, C_2 = prod_{p>2}(1 - 1/(p-1)^2) ~ 0.6601618.
 
-    2*C_2 is S(N) for N = 2 * (an odd prime) with the prime > P; it is the base
-    constant of the Goldbach singular series.  lo = 2*prod_{2<p<=P}(1-1/(p-1)^2)
-    * (1 - 1/(P-1)); hi = 2*prod_{2<p<=P}(...).
+    This is the BASE constant of the Goldbach singular series (2*C_2 ~ 1.3203236),
+    the q -> infinity limit of S(2q).  It is NOT itself equal to S(N) for any
+    finite even N that has an odd prime divisor.
+
+    CORRECTION (do not confuse the base constant with the series).  For N = 2q
+    with q an odd prime,
+        S(2q) = 2*C_2 * (q-1)/(q-2)   (NOT 2*C_2),
+    e.g. q=3 -> factor 2, q=5 -> 4/3, q=7 -> 6/5.  More generally, for even N,
+        S(N) = 2*C_2 * prod_{p | N, p odd} (p-1)/(p-2).
+    The odd-prime factors p | N each multiply the base constant by (p-1)/(p-2) > 1
+    (``odd_prime_transport_factor``); 2*C_2 is recovered only in the limit as the
+    odd prime(s) dividing N tend to infinity.  Keep this constant DISTINCT from the
+    full singular series; see ``singular_series_via_transport`` for the exact finite
+    transport S_{<=P}(N) = 2*T(P) * prod_{p|N, odd}(p-1)/(p-2).
+
+    Enclosure:  T(P) = prod_{2<p<=P}(1 - 1/(p-1)^2);
+        hi = 2*T(P)  (>= 2*C_2, the partial product decreases to C_2 from above),
+        lo = 2*T(P) * (1 - 1/(P-1))  (tail bound prod_{p>P}(1-1/(p-1)^2) >= 1-1/(P-1)).
     """
     if type(P) is not int or P < 3:
         raise GoldbachCircleError("P must be an integer >= 3")
@@ -283,6 +298,146 @@ def twin_prime_constant_enclosure(P: int) -> Tuple[Fraction, Fraction]:
             prod *= Fraction(1) - Fraction(1, (p - 1) ** 2)
     base = 2 * prod
     return base * (Fraction(1) - Fraction(1, P - 1)), base
+
+
+# --------------------------------------------------------------------------
+# GC-03 : finite singular-series TRANSPORT lemma (CLASSICAL; exact identity +
+#         certified tail).  Transports the base constant 2*C_2 to S(N).
+# --------------------------------------------------------------------------
+def odd_prime_transport_factor(N: int) -> Fraction:
+    """Exact rational transport factor  K(N) = prod_{p | N, p odd} (p-1)/(p-2).
+
+    This is the factor by which each distinct odd prime divisor of N multiplies
+    the base constant 2*C_2 in the Hardy-Littlewood singular series.  Depends only
+    on the DISTINCT odd primes dividing N (the local factor S_p(N) = 1 + 1/(p-1)
+    is insensitive to the exponent of p in N), so K(6) = K(18) = 2.  Empty product
+    (N a power of 2) gives K(N) = 1.  EXACT (Fraction); no RH, no zeta zeros.
+    """
+    if type(N) is not int or N < 1:
+        raise GoldbachCircleError("odd_prime_transport_factor needs integer N >= 1")
+    k = Fraction(1)
+    for p, _e in prime_factors(N):
+        if p % 2 == 1:
+            # p >= 3 is an odd prime, so p - 2 >= 1: the factor is a well-defined
+            # positive rational (never a division by zero).
+            k *= Fraction(p - 1, p - 2)
+    return k
+
+
+def singular_series_via_transport(N: int, P: int) -> Fraction:
+    """Finite singular-series TRANSPORT (GC-03; CLASSICAL, EXACT finite identity).
+
+    LEMMA.  Let N be even and let P >= largest prime factor of N.  With
+        T(P)  = prod_{2<p<=P} (1 - 1/(p-1)^2)        (2*T(P) = twin upper value)
+        K(N)  = prod_{p | N, p odd} (p-1)/(p-2)       (odd_prime_transport_factor)
+    the truncated Goldbach singular series factorises EXACTLY as
+        S_{<=P}(N) := prod_{p<=P} S_p(N) = 2 * T(P) * K(N).
+
+    PROOF (pure finite Euler-product algebra).  S_2(N) = 2 (N even).  For an odd
+    prime p: if p | N then S_p = 1 + 1/(p-1) = p/(p-1); else S_p = 1 - 1/(p-1)^2
+    = p(p-2)/(p-1)^2.  Multiply the base product prod_{2<p<=P}(1-1/(p-1)^2) = T(P)
+    and, for each odd p | N (all <= P by hypothesis), replace its (1-1/(p-1)^2)
+    factor by (1+1/(p-1)); the per-prime ratio is
+        [p/(p-1)] / [p(p-2)/(p-1)^2] = (p-1)/(p-2),
+    whose product over odd p | N is K(N).  Hence S_{<=P}(N) = 2*T(P)*K(N). QED.
+
+    APPROXIMATION ERROR: ZERO (exact Fraction identity).  Equals
+    ``singular_series_truncated(N, P)`` exactly (an independent route; the two are
+    cross-checked in the tests).  Hypothesis P >= largest prime factor is REQUIRED:
+    if some odd p | N exceeds P its enhanced factor S_p > 1 is simply missing from
+    the base product and the identity fails.  For N odd, S(N) = 0 (p=2 local
+    obstruction): returned as 0 to match ``singular_series_truncated``.
+    """
+    if type(N) is not int or N < 1:
+        raise GoldbachCircleError("singular_series_via_transport needs integer N >= 1")
+    if N % 2 == 1:
+        return Fraction(0)
+    largest_pf = max((p for p, _ in prime_factors(N)), default=1)
+    if P < largest_pf:
+        raise GoldbachCircleError(
+            f"P={P} must be >= largest prime factor {largest_pf} of N for the transport "
+            "identity (else an enhanced odd-prime factor S_p>1 is missing)")
+    _lo_twin, hi_twin = twin_prime_constant_enclosure(max(P, 3))   # hi_twin = 2*T(P)
+    return hi_twin * odd_prime_transport_factor(N)
+
+
+def singular_series_transport_enclosure(N: int, P: int) -> Tuple[Fraction, Fraction]:
+    """Certified [lo, hi] for the FULL S(N) (even N) via the GC-03 transport lemma.
+
+        lo = 2*T(P) * (1 - 1/(P-1)) * K(N),    hi = 2*T(P) * K(N),
+    with T(P), K(N) as in ``singular_series_via_transport``.  The identity part is
+    EXACT; the only inexactness is the Euler tail prod_{p>P}(1-1/(p-1)^2), bounded
+    in [1 - 1/(P-1), 1] (so the relative width hi/lo - 1 <= 1/(P-2)).  Equals
+    ``singular_series_enclosure(N, P)`` exactly -- an independent second route to
+    the same certified bracket (cross-checked in the tests).  For N odd: (0, 0).
+
+    IMPORTED DEPENDENCIES: none beyond elementary analysis (finite Euler-product
+    algebra + the convergent-tail comparison sum_{n>P} 1/(n-1)^2 <= 1/(P-1)).  NO
+    Siegel-Walfisz, NO RH, NO zeta zeros.  This bounds the singular-series CONSTANT
+    only; it is NOT a claim about R_Lambda(N) (that needs the open minor arcs).
+    """
+    if type(N) is not int or N < 1:
+        raise GoldbachCircleError("singular_series_transport_enclosure needs integer N >= 1")
+    if N % 2 == 1:
+        return Fraction(0), Fraction(0)
+    hi = singular_series_via_transport(N, P)
+    return hi * (Fraction(1) - Fraction(1, P - 1)), hi
+
+
+def major_arc_benchmark(N: int, P: int, A: int = 2) -> Dict[str, object]:
+    """Structural MAJOR-ARC benchmark under IMPORTED Siegel-Walfisz (NOT a certificate).
+
+    Assembles -- with explicit, honest labels -- the ingredients of the circle-method
+    major-arc estimate for R_Lambda(N) = integral_0^1 F_N(theta)^2 e(-N theta) dtheta,
+    F_N(theta) = sum_{n=1}^{N-1} Lambda(n) e(n theta), on R/Z (period-1 wraparound).
+
+    IMPORTED THEOREM (Siegel-Walfisz).  Fix A > 0.  Uniformly for moduli q <= (log N)^A
+    and residues (a, q) = 1,
+        psi(x; q, a) = x/phi(q) + O_A( x * exp(-c_A sqrt(log x)) ),
+    where psi(x; q, a) = sum_{n<=x, n == a (q)} Lambda(n).  CRITICAL HONESTY: the
+    implied constant c_A is INEFFECTIVE (it depends on a possible Siegel zero), so
+    this estimate yields NO computable numerical error bound -- it is NOT a
+    certificate (AGENTS.md discipline 8).
+
+    BOUNDED UNIFORMITY.  Siegel-Walfisz controls ONLY q <= Q_SW := floor((log N)^A).
+    One MUST NOT infer a uniform arbitrary-Q major-arc asymptotic from it: the
+    major arcs with (log N)^A < q <= N^{1/2} and the entire minor-arc set are
+    NOT controlled by Siegel-Walfisz.  This is exactly why Siegel-Walfisz alone
+    does not prove binary Goldbach.
+
+    WHAT IS ACTUALLY CERTIFIED (exact, no imported analytic input): the singular
+    series S(N) itself, via ``singular_series_transport_enclosure(N, P)`` (GC-03).
+    The returned ``singular_series_bracket`` is that exact two-sided enclosure; the
+    truncation error (S - S_{<=P}) is the certified relative tail <= 1/(P-2).
+
+    Returns a labelled dict; all analytic-asymptotic fields are strings, never a
+    float masquerading as a bound.  Binary Goldbach: OPEN.
+    """
+    if type(N) is not int or N < 4 or N % 2 == 1:
+        raise GoldbachCircleError("major_arc_benchmark needs an even integer N >= 4")
+    if type(A) is not int or A < 1:
+        raise GoldbachCircleError("A must be an integer >= 1")
+    from math import log
+    q_sw = int(log(N) ** A)                      # Siegel-Walfisz admissible modulus cutoff
+    s_lo, s_hi = singular_series_transport_enclosure(N, P)
+    return {
+        "N": N,
+        "P_truncation": P,
+        "A": A,
+        "siegel_walfisz_modulus_cutoff_Q_SW": q_sw,
+        "carrier": "F_N(theta) = sum_{n=1}^{N-1} Lambda(n) e(n theta) on R/Z (period 1)",
+        "target": "R_Lambda(N) = integral_0^1 F_N(theta)^2 e(-N theta) dtheta  (F^2, not |F|^2)",
+        "imported_theorem": "Siegel-Walfisz: psi(x;q,a)=x/phi(q)+O_A(x exp(-c_A sqrt(log x))), q<=(log x)^A",
+        "imported_constant_status": "INEFFECTIVE (possible Siegel zero) -- NOT a numerical certificate",
+        "uniformity_bound": f"Siegel-Walfisz controls ONLY q <= Q_SW = {q_sw}; larger q uncontrolled",
+        "singular_series_bracket": (s_lo, s_hi),          # EXACT certified (GC-03), no imported input
+        "singular_series_truncation_rel_error_upper": Fraction(1, P - 2),
+        "predicted_major_arc_main_term": "S(N)*N*(1+o(1))  (CONJECTURED shape; ineffective o(1))",
+        "major_arc_status": "CLASSICAL asymptotic SHAPE; error term ineffective -> not certified",
+        "minor_arc_status": "OPEN for binary Goldbach (ternary = Vinogradov); the open difficulty",
+        "binary_goldbach": "OPEN",
+        "rh_used": False,
+    }
 
 
 def goldbach_main_term_enclosure(N: int, P: int) -> Tuple[Fraction, Fraction]:
