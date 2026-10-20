@@ -33,14 +33,14 @@ local-to-global interfaces with positive and negative certificates.
 Let `a,b,u,v` be **positive integers** and `k,l in N`. Define
 
 \[
-A_k=a+ku,\q\quad B_l=b+lv,\q\quad F(k,l)=\frac{A_k}{B_l}.
+A_k=a+ku,\qquad B_l=b+lv,\qquad F(k,l)=\frac{A_k}{B_l}.
 \]
 
 The original source frame is the typed quadruple `(a,b;u,v)`, not the reduced
 rational `a/b`. The two actions
 
 \[
-S_A:(k,l)\mapsto(k+1,l),\q\quad
+S_A:(k,l)\mapsto(k+1,l),\qquad
 S_B:(k,l)\mapsto(k,l+1)
 \]
 
@@ -79,7 +79,7 @@ D(k,l)=uB_l-vA_k.
 **PS-01 (CLASSICAL / PROVED ELEMENTARY).** For all `k,l in N`,
 
 \[
-\boxed{D(k,l)=D_0+uv(l-k)},\q\quad D_0=ub-va.
+\boxed{D(k,l)=D_0+uv(l-k)},\qquad D_0=ub-va.
 \]
 
 Consequently on the diagonal `(k,l)=(n,n)`,
@@ -97,7 +97,7 @@ Write `F_n=F(n,n)`, `B_n=b+nv`. Then
 
 \[
 \boxed{F_{n+1}-F_n=\frac{D_0}{B_n(B_n+v)}},
-\q\quad
+\qquad
 \boxed{F_n-\frac uv=-\frac{D_0}{vB_n}}.
 \]
 
@@ -120,7 +120,7 @@ integer linear combination `uB_n-vA_n=D_0`.
 When `D_0!=0`, `g_n<=|D_0|`, and for each prime `p`,
 
 \[
-v_p(g_n)le v_p(D_0).
+v_p(g_n)\le v_p(D_0).
 \]
 
 This is a **one-way bound**. A prime dividing `D_0` need not cancel,
@@ -181,11 +181,11 @@ numerator solution at `p=2`.
 
 ### The local prime phase
 
-If `p\nmid uv`, both step units are invertible modulo `p^r).
+If `p\nmid uv`, both step units are invertible modulo `p^r`
 There are unique zero-times
 
 \[
-k_p=-a,u^{-1},\q\quad l_p=-b,v^{-1}\pmod{p^r}.
+k_p=-a\,u^{-1},\qquad l_p=-b\,v^{-1}\pmod{p^r}.
 \]
 
 Define the **relative sundial phase**
@@ -203,7 +203,7 @@ residue ring. It is **not defined by this formula** if `p|uv`.
 For `p\nmid uv`,
 
 \[
-exists n: p^r\mid A_n, p^r\mid B_n
+\exists n:\;p^r\mid A_n, p^r\mid B_n
 \quad\Longleftrightarrow\quad
 \boxed{p^r\mid D_0}.
 \]
@@ -304,7 +304,7 @@ Define `r_a=rad(a)`, `t_a=ris(a)=a/r_a`, and likewise
 Then
 
 \[
-A_k=r_a(t_a+k),\q\quad B_l=r_b(t_b+l),
+A_k=r_a(t_a+k),\qquad B_l=r_b(t_b+l),
 \]
 
 and the conserved diagonal determinant is
@@ -320,8 +320,7 @@ the RADs of the later integer states.
 Define the exact prime-birth factor
 
 \[
-J_r(m)=\prod_{substack{p\mid m\\p
-\mid r}}p.
+J_r(m)=\prod_{\substack{p\mid m\\p\nmid r}}p.
 \]
 
 **PS-09 (CLASSICAL / PROVED ELEMENTARY — RAD/RIS update).**
