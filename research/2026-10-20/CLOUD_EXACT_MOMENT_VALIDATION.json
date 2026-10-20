@@ -1,0 +1,57 @@
+{
+  "elapsed_seconds": 2.6331909379987337,
+  "fixed_budget_ceiling_diagonals_strictly_negative": {
+    "even_derivative": true,
+    "odd_derivative": true
+  },
+  "focused_runs": [
+    {
+      "argv": [
+        "/workspace/scratch/0a4459d8f487/vii-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_cloud_exact_moment_inverse.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stderr": "test_complete_correction_bounds_true_displaced_inverse (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_complete_correction_bounds_true_displaced_inverse) ... ok\ntest_exact_domain_and_high_moment_guards (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_exact_domain_and_high_moment_guards) ... ok\ntest_exact_weight_stronger_than_old_diagonal (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_exact_weight_stronger_than_old_diagonal) ... ok\ntest_inverse_identity_large_rational_offdiagonal (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_inverse_identity_large_rational_offdiagonal) ... ok\ntest_no_invented_improvement_when_zero_prime_weight (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_no_invented_improvement_when_zero_prime_weight) ... ok\ntest_quadrature_independent_discretizations (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_quadrature_independent_discretizations) ... ok\ntest_reverse_young_rejects_indefinite_weight (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_reverse_young_rejects_indefinite_weight) ... ok\ntest_shift_matrix_enclosures_at_displaced_rational_points (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_shift_matrix_enclosures_at_displaced_rational_points) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 1.051s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/0a4459d8f487/vii-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_cloud_operator_transport.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stderr": "test_compact_relative_bound_can_give_primitive_identity (test_cloud_operator_transport.CloudOperatorTransportTests.test_compact_relative_bound_can_give_primitive_identity) ... ok\ntest_endpoint_cauchy_sup_bound (test_cloud_operator_transport.CloudOperatorTransportTests.test_endpoint_cauchy_sup_bound) ... ok\ntest_finite_constrained_inverse_identity (test_cloud_operator_transport.CloudOperatorTransportTests.test_finite_constrained_inverse_identity) ... ok\ntest_inverse_polynomial_against_pointwise_equation (test_cloud_operator_transport.CloudOperatorTransportTests.test_inverse_polynomial_against_pointwise_equation) ... ok\ntest_kernel_descent_is_required (test_cloud_operator_transport.CloudOperatorTransportTests.test_kernel_descent_is_required) ... ok\ntest_nonclosability_sequence_exact (test_cloud_operator_transport.CloudOperatorTransportTests.test_nonclosability_sequence_exact) ... ok\ntest_reject_nonhigh_and_nonexact_inputs (test_cloud_operator_transport.CloudOperatorTransportTests.test_reject_nonhigh_and_nonexact_inputs) ... ok\ntest_shift_error_bounds_against_exact_displaced_operator (test_cloud_operator_transport.CloudOperatorTransportTests.test_shift_error_bounds_against_exact_displaced_operator) ... ok\ntest_two_constraint_saving_is_psd_when_shift_exact (test_cloud_operator_transport.CloudOperatorTransportTests.test_two_constraint_saving_is_psd_when_shift_exact) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.186s\n\nOK\n",
+      "stdout": ""
+    }
+  ],
+  "parent_commit": "744cc7e6f6ff42797458b29b6b942fbfddab3fd4",
+  "python": "3.12.14",
+  "scope": "17 focused tests plus already executed source replay; not combined repository validation or a formal proof",
+  "source_holdout_sha256": "6fab39552a565db0c3b9ba04a3830c5132e0c071fe50ea19712f51331009c637",
+  "source_receipt_implementation_hashes_match": {
+    "observational_succ/cloud_exact_moment_inverse.py": true,
+    "observational_succ/cloud_operator_transport.py": true,
+    "observational_succ/full_prime_resolvent.py": true,
+    "observational_succ/original_continuum_residual.py": true,
+    "observational_succ/source_weil_hierarchy.py": true,
+    "scripts/cloud_exact_moment_source_probe.py": true,
+    "tests/test_cloud_exact_moment_inverse.py": true
+  },
+  "source_receipt_sha256": "321d80b0dc38aeddf52f6c0b0c398370b3b18fae285c6fbd1751acc999bc28f9",
+  "source_replay_history": "Three source executions passed. Earlier uncommitted receipts superseded after adding the method ceiling, correcting a rounding docstring, and making its rational arithmetic independently reconstructible. Final receipt binds the final implementation hashes.",
+  "status": "PASSED"
+}
