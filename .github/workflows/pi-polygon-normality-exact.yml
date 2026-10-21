@@ -1,0 +1,45 @@
+name: pi-polygon-normality-exact
+
+on:
+  pull_request:
+    paths:
+      - "observational_succ/pi_polygon_normality.py"
+      - "tests/test_pi_polygon_normality.py"
+      - "scripts/pi_polygon_normality_probe.py"
+      - "research/2026-10-20/PI_POLYGON_NORMALITY_FINITE_RECEIPT.json"
+      - "research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md"
+      - "docs/CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md"
+      - ".github/workflows/pi-polygon-normality-exact.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-calibration:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Reproduce exact source tests
+        run: python -m unittest discover -s tests -p 'test_pi_polygon_normality.py' -v
+      - name: Reproduce the frozen finite receipt byte-for-byte
+        run: |
+          python scripts/pi_polygon_normality_probe.py > /tmp/pi_polygon_normality_receipt.json
+          cmp /tmp/pi_polygon_normality_receipt.json research/2026-10-20/PI_POLYGON_NORMALITY_FINITE_RECEIPT.json
+      - name: Source/proof boundary
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path('research/2026-10-20/PI_POLYGON_NORMALITY_FINITE_RECEIPT.json').read_text())
+          assert r['claim_firewalls']['pi_normality_proved'] is False
+          assert r['claim_firewalls']['source_specific_fourier_cancellation_obtained'] is False
+          assert r['two_distinct_grid_pushforwards']['both_maps_have_every_fiber_size_three']
+          PY
