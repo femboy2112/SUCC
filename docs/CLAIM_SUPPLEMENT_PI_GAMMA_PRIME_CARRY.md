@@ -14,4 +14,6 @@
 | PCG-07 | Under RH, Basel Euler prime-tail error after continuous main term is O(x^(-3/2)log x) | CLASSICAL RH-CONDITIONAL, not RH⇒pi-normality | Must still establish oscillatory digit-source cancellation |
 | PCG-08 | Uniform power savings for all prime-carry midpoint Fourier sums at n=b^N | **UNVERIFIED** proposed genuinely missing analytic inequality | pi-specific noncircular short-orbit exponential sum, negative controls and held-out horizons |
 
+| PCG-09 | For the full coprime prime-power factorization of the **observed midpoint denominator**, correctly transported CRT local characters multiply to the global b-successor additive character at every step | CLASSICAL CRT / PROVED PAPER; exact finite source-relative checks | Remove CRT inverses: phase reconstruction fails; individual local averages do not control synchronous product |
+
 No old global claim IDs, source archives, or historical finite receipts are rewritten. Tests on the isolated drafted implementation are not promoted to repository-wide regression or Lean proof status.
