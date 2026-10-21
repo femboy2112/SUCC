@@ -1,0 +1,31 @@
+{
+  "RH_proved": false,
+  "all_recorded_implementation_hashes_match": true,
+  "failures": 0,
+  "implementation_sha256": "e22351e2a747ec311c853993986e921c6ef3c5ab45e68e10a7a26e567b5a2651",
+  "scope": "finite arithmetic holdout; source comparison remains an external paper dependency",
+  "script_sha256": "b76405340254f9dbf79a90f2955db0f9a6b2ccf523b5dee60a4d602d532a1335",
+  "sectors": {
+    "even_derivative": {
+      "both_lower_matrices_negative_definite_only": true,
+      "exact_and_quadrature_gains_PD": true,
+      "fixed_budget_diagonal_ceilings": [
+        "-6871190365592769978959/1000000000000000000000000",
+        "-6680071650059200874923/1000000000000000000000000"
+      ],
+      "method_ceiling_recomputed_from_outward_parents": true
+    },
+    "odd_derivative": {
+      "both_lower_matrices_negative_definite_only": true,
+      "exact_and_quadrature_gains_PD": true,
+      "fixed_budget_diagonal_ceilings": [
+        "-3122111819564344893771/250000000000000000000000",
+        "-12384220161980533810999/1000000000000000000000000"
+      ],
+      "method_ceiling_recomputed_from_outward_parents": true
+    }
+  },
+  "source_receipt_sha256": "321d80b0dc38aeddf52f6c0b0c398370b3b18fae285c6fbd1751acc999bc28f9",
+  "source_sign_certified": false,
+  "symbolic_shifted_gram_cases": 60
+}

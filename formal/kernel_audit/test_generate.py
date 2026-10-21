@@ -5,10 +5,25 @@ import sys
 import tempfile
 import unittest
 
-from generate import command, parse_exports, sha256
+from generate import PROJECTS, command, parse_exports, sha256, source_hashes
 
 
 class ExportParserControls(unittest.TestCase):
+    def test_three_projects_export_nineteen_distinct_theorems(self):
+        self.assertEqual(set(PROJECTS), {"mathlib_bridge", "cloud_schur", "slope_rigidity"})
+        names = [name for _, names in PROJECTS.values() for name in names]
+        self.assertEqual(len(names), 19)
+        self.assertEqual(len(set(names)), 19)
+        self.assertEqual(len(PROJECTS["slope_rigidity"][1]), 9)
+
+    def test_slope_source_and_mutation_controller_are_bound(self):
+        hashes = source_hashes()
+        for path in ("formal/slope_rigidity/PrimitiveSlope.lean",
+                     "formal/slope_rigidity/check_mutations.py",
+                     "formal/slope_rigidity/lake-manifest.json",
+                     ".github/workflows/mathlib_bridge.yml"):
+            self.assertIn(path, hashes)
+
     def line(self, name="Example.theorem", axioms=None, expr="Expr.const Nat []"):
         return "SUCC_THEOREM_JSON " + json.dumps({"name": name, "type_expr": expr,
             "universe_parameters": [], "axioms": axioms or ["propext"]})

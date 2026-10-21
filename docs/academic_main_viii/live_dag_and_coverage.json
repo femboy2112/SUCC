@@ -1,0 +1,132 @@
+{
+  "main": "b5f9591033db2022bda6a2f16a935c06466f9eff",
+  "heads": {
+    "211": "e8c12ca0eac57dcffce59747ad160330f6225756",
+    "212": "04dc97022d4b75e8d229128de50509c413d86b8b",
+    "213": "d3e0ccf671b2ddc2a9e94549db77f60955ee7580",
+    "214": "9372c669892a2a29fb8c16f0fa20c11815f650df",
+    "218": "8f9444c3984e4b981422d400c4c3ebde7a0a6715"
+  },
+  "trees": {
+    "211": "ac3b8c784de9d06f26c1ecc3a012c4e9b5da10ab",
+    "212": "074419c26fa06bb0b7cb7c40cb9262911b81756b",
+    "213": "b5c98b70a6a7bddcd728cc8e116d5b390d2fb221",
+    "214": "8e02261f64fd1eb3caca3780f1469d122350f561",
+    "218": "d9e4167d0ad8cc7c9a14d7137a29d98f40af8a25"
+  },
+  "ancestor_matrix": {
+    "main": {
+      "main": true,
+      "211": true,
+      "212": true,
+      "213": true,
+      "214": true,
+      "218": true
+    },
+    "211": {
+      "main": false,
+      "211": true,
+      "212": false,
+      "213": false,
+      "214": false,
+      "218": false
+    },
+    "212": {
+      "main": false,
+      "211": false,
+      "212": true,
+      "213": false,
+      "214": false,
+      "218": false
+    },
+    "213": {
+      "main": false,
+      "211": false,
+      "212": false,
+      "213": true,
+      "214": false,
+      "218": false
+    },
+    "214": {
+      "main": false,
+      "211": false,
+      "212": false,
+      "213": false,
+      "214": true,
+      "218": false
+    },
+    "218": {
+      "main": false,
+      "211": false,
+      "212": false,
+      "213": false,
+      "214": false,
+      "218": true
+    }
+  },
+  "changed_files": {
+    "211": [
+      ".github/workflows/slope-rigidity.yml",
+      "formal/slope_rigidity/PrimitiveSlope.lean",
+      "formal/slope_rigidity/README.md",
+      "formal/slope_rigidity/check.py",
+      "formal/slope_rigidity/lake-manifest.json",
+      "formal/slope_rigidity/lakefile.toml",
+      "formal/slope_rigidity/lean-toolchain",
+      "formal/slope_rigidity/receipts/kernel-observation-39508738928.json"
+    ],
+    "212": [
+      "README.md",
+      "docs/CLAIM_INDEX.md",
+      "docs/CLAIM_NAMESPACE_REGISTRY.json",
+      "docs/CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md",
+      "docs/ROADMAP.md",
+      "docs/SUCC_RESEARCH_DEPENDENCY_DAG.md",
+      "docs/academic_main_vii/campaign_completion.md",
+      "docs/academic_main_vii/main_merge_receipt.json",
+      "docs/academic_main_vii/research_frontier.md",
+      "observational_succ/abc_effective_mean.py",
+      "research/2026-10-20/ABC_EFFECTIVE_MEAN.md",
+      "research/2026-10-20/ABC_EFFECTIVE_MEAN_RECEIPT.json",
+      "research/2026-10-20/ABC_EFFECTIVE_POSTMAIN_RECEIPT.json",
+      "scripts/abc_effective_mean_probe.py",
+      "tests/test_abc_effective_mean.py"
+    ],
+    "213": [
+      "observational_succ/cloud_exact_moment_inverse.py",
+      "research/2026-10-20/CLOUD_EXACT_MOMENT_INVERSE.md",
+      "research/2026-10-20/CLOUD_EXACT_MOMENT_POSTMAIN_RECEIPT.json",
+      "research/2026-10-20/CLOUD_EXACT_MOMENT_SOURCE_HOLDOUT_J6.json",
+      "research/2026-10-20/CLOUD_EXACT_MOMENT_SOURCE_J10.json",
+      "research/2026-10-20/CLOUD_EXACT_MOMENT_VALIDATION.json",
+      "research/2026-10-20/main-vii-referee/OPERATOR_REFINEMENT_REVIEW.md",
+      "research/2026-10-20/main-vii-referee/operator-symbolic-holdout.json",
+      "scripts/cloud_exact_moment_source_probe.py",
+      "scripts/main_vii_operator_holdout.py",
+      "tests/test_cloud_exact_moment_inverse.py"
+    ],
+    "214": [
+      "observational_succ/exterior_cofactor_ascent.py",
+      "research/2026-10-20/DUAL_SLOPE_EXTERIOR_ASCENT.md",
+      "tests/test_exterior_cofactor_ascent.py"
+    ],
+    "218": [
+      ".github/workflows/pi-polygon-normality-exact.yml",
+      "README.md",
+      "docs/CLAIM_INDEX.md",
+      "docs/CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md",
+      "observational_succ/pi_polygon_normality.py",
+      "research/2026-10-20/PI_POLYGON_NORMALITY_FINITE_RECEIPT.json",
+      "research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md",
+      "scripts/pi_polygon_normality_probe.py",
+      "tests/test_pi_polygon_normality.py"
+    ]
+  },
+  "intersections": {
+    "212-218": [
+      "README.md",
+      "docs/CLAIM_INDEX.md"
+    ]
+  },
+  "provenance_manifest_sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+}

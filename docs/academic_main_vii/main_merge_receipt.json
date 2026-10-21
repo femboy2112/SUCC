@@ -1,0 +1,17 @@
+{
+  "status": "MAIN_MERGE_VERIFIED",
+  "observed_at": "2026-10-20T22:30:05.446868+00:00",
+  "main_sha": "b5f9591033db2022bda6a2f16a935c06466f9eff",
+  "tree": "47f36179aa08416b7e2107d438df4b24b4fe71be",
+  "candidate_sha": "950e2aaf3b59d5c19837c2a20cf70b014ead8845",
+  "all_ten_incoming_heads_are_ancestors": true,
+  "content_identical_to_tested_candidate": true,
+  "full_python_tests_per_version": 6496,
+  "python_versions": [
+    "3.10",
+    "3.13"
+  ],
+  "pr": 210,
+  "full_run": 39506818938,
+  "formal_run": 39506818873
+}

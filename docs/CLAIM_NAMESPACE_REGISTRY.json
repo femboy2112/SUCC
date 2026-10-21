@@ -413,6 +413,76 @@
       "code": [
         "observational_succ/proof_authority.py"
       ]
+    },
+    {
+      "namespace": "ABC_EFFECTIVE",
+      "bare_prefix": "ABC-EFF",
+      "fq_prefix": "ABC-EFF",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md"
+      ],
+      "id_count": 5,
+      "status": "PROVED LOCAL / REFUTED proposed truncation; academic novelty UNVERIFIED",
+      "topic": "Uniform primitive divisor discrepancy, effective abc mean convergence and t>=1 moment divergence",
+      "code": [
+        "observational_succ/abc_effective_mean.py"
+      ]
+    },
+    {
+      "namespace": "DUAL_COFACTOR",
+      "bare_prefix": "COF",
+      "fq_prefix": "COF",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_EXTERIOR_ASCENT.md"
+      ],
+      "id_count": 1,
+      "status": "MIXED (CLASSICAL/PROVED PAPER/REFUTED/CONDITIONAL/UNVERIFIED)",
+      "topic": "Exact source-cofactor product budget",
+      "code": [
+        "observational_succ/exterior_cofactor_ascent.py"
+      ]
+    },
+    {
+      "namespace": "EXTERIOR_ASCENT",
+      "bare_prefix": "EXT",
+      "fq_prefix": "EXT",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_EXTERIOR_ASCENT.md"
+      ],
+      "id_count": 4,
+      "status": "MIXED (CLASSICAL/PROVED PAPER/REFUTED/CONDITIONAL/UNVERIFIED)",
+      "topic": "Congruence determinant divisibility, rank drop and unbounded multiplicity",
+      "code": [
+        "observational_succ/exterior_cofactor_ascent.py"
+      ]
+    },
+    {
+      "namespace": "SIMPLEX_ASCENT",
+      "bare_prefix": "SMP",
+      "fq_prefix": "SMP",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_EXTERIOR_ASCENT.md"
+      ],
+      "id_count": 2,
+      "status": "MIXED (CLASSICAL/PROVED PAPER/REFUTED/CONDITIONAL/UNVERIFIED)",
+      "topic": "Dimension-uniform residue simplex count and growth threshold",
+      "code": [
+        "observational_succ/exterior_cofactor_ascent.py"
+      ]
+    },
+    {
+      "namespace": "PI_POLYGON_NORMALITY",
+      "bare_prefix": "POL",
+      "fq_prefix": "POL",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md"
+      ],
+      "id_count": 9,
+      "status": "MIXED (CLASSICAL/PROVED PAPER/REFUTED/CONDITIONAL/UNVERIFIED)",
+      "topic": "Geometric pi enclosures, path measures and unproved orbit normality",
+      "code": [
+        "observational_succ/pi_polygon_normality.py"
+      ]
     }
   ],
   "resolved_collisions": [

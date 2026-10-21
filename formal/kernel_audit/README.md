@@ -1,7 +1,7 @@
 # Source-bound kernel observations
 
 The combined `mathlib_bridge.yml` job rebuilds the local Mason–Stothers/Fermat
-bridge and Cloud Schur proofs in sequence against Lean 4.14.0 and mathlib commit
+bridge, Cloud Schur and primitive slope proofs in sequence against Lean 4.14.0 and mathlib commit
 `4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84`. It verifies the official compiler
 archive SHA256 and every dependency Git revision. The projects share a single
 official mathlib compiled cache. These imported compiler/cache artifacts, the
@@ -34,7 +34,7 @@ theorem and its own admitted export.
 A file saying a build succeeded supplies no authority. Neither this script nor
 caller-supplied JSON can add an approved digest. A coordinator must inspect the
 actual hosted run on the exact commit, its logs, source hashes, axiom envelope,
-wrong-source rejection and Schur mutations. Only then may the exact record be
+wrong-source rejection, Schur mutations and slope mutations. Only then may the exact record be
 archived as `formal/kernel_audit/admitted/kernel-attestation.json` and its canonical
 JSON digest added to the trusted installed `_formal_catalogue.py` through reviewed
 repository code. The historical `mathlib_bridge/axiom_audit.json` is retained as
@@ -56,7 +56,8 @@ an attacker permitted to rewrite the trusted catalogue/checker.
    `320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a`.
 2. Run the workflow's targeted `lake exe cache get` command in
    `formal/mathlib_bridge`. Share its `.lake/packages` directory with the
-   `formal/cloud_schur/.lake/packages` symlink as in that workflow.
+   `formal/cloud_schur/.lake/packages` and `formal/slope_rigidity/.lake/packages`
+   symlinks as in that workflow.
 3. Run `python3 -m unittest discover -s formal/kernel_audit -p 'test_*.py' -v`.
 4. Run `python3 formal/kernel_audit/generate.py --output /tmp/succ-kernel-audit`.
 5. Inspect all logs and the unadmitted `kernel-attestation.json`; perform the
@@ -66,8 +67,26 @@ Negative elaboration controls require the expected error (not just a nonzero
 process exit). The wrong-source control attempts a degree bound `+2` using a
 theorem proving `+1`. The Schur controls replace positive definiteness by
 semidefiniteness and change an exact negative quadratic value from `-1` to `1`.
+The slope controls remove reducedness and increase the determinant gap by one;
+each must produce the expected Lean type mismatch. The nineteen exported
+declarations consist of five polynomial, five Schur and nine slope theorems.
 Token checks reject proof shortcuts in local theorem sources; transitive axiom
 collection independently rejects `sorryAx` and every undeclared axiom. These are
 specific negative controls, not a proof that every possible checker defect is
 absent. The mathematical claims remain the exported theorems, not RH, integer
 abc, binary Goldbach or correctness of an unformalized Python algorithm.
+
+## Main VIII admission transition
+
+PR #211's independently observed slope receipt remains immutable historical
+evidence in `formal/slope_rigidity/receipts/`. Its research schema is deliberately
+not accepted as Level C authority. The Main VIII generator adds the nine unchanged
+slope declarations to the existing ten and rebuilds all three projects. It does
+not convert an old JSON file into a successful new build.
+
+Changing this generator and its workflow invalidates the prior ten-declaration
+record's source environment. Before the new actual nineteen-declaration record
+is reviewed and installed by the coordinator, admission checks are expected to
+fail closed. The earlier record and admission remain traceable in Git history;
+no historical proof source or observed theorem type is rewritten. The separate
+exterior research project is not automatically admitted by this pipeline.

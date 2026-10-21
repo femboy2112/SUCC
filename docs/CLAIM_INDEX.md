@@ -1,5 +1,12 @@
 # Claim Index
 
+Post-main research draft: [effective primitive abc means](CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md)
+(ABC-EFF-01–05) gives a uniform primitive divisor discrepancy, explicit convergence
+for every δ<(2−3t)/5 when 0≤t<2/3, and failure of quadratic moments for t≥1.
+Complete paper proofs; full analytic theorem not formalized; novelty unverified.
+
+**2026-10-20 draft π polygon/normality research:** [POL-01–09 supplement](CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md) · [proof and negative-control dossier](../research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md). Exact source-derived polygon brackets, source-to-orbit error budget and limit-order obstruction; generic-path rigidity REFUTED, π-specific Fourier cancellation UNVERIFIED. No claim of π normality.
+
 **Academic Main VII (2026-10-20):**
 [reviewed claim crosswalk](CLAIM_SUPPLEMENT_ACADEMIC_MAIN_VII.md),
 [integration audit](academic_main_vii/integration_audit.md),
@@ -172,3 +179,8 @@ public safety and exact menu-interface obstruction. The machine graph records ty
 Haar-to-distribution/WOT comparisons; the 13 new kernel declarations cover only
 residue algebra and public-policy/quotient results. Signed-source work stays on its
 separate #177 continuation.
+
+
+## Academic Main VIII (2026-10-21)
+
+[Integration audit](academic_main_viii/integration_audit.md) and [frontier](academic_main_viii/research_frontier.md). Existing ABC-EFF-01–05 remain paper-level theorems. [COF-01, EXT-01–04, SMP-01–02](CLAIM_SUPPLEMENT_EXTERIOR_ASCENT.md) and [POL-01–09](CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md) now have registered namespaces; the counterclaims retain REFUTED or UNVERIFIED status. Formal slope declarations receive only the authority supported by the actual pinned admission receipt.

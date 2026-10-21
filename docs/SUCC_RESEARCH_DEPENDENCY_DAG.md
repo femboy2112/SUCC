@@ -2,6 +2,13 @@
 
 ## Academic Main VII quantitative and authority edges
 
+Post-main arithmetic draft: uniform row slicing + full Möbius inversion give
+ABC-EFF-01; that discrepancy + positive product cutoff + the stronger s-moment
+give ABC-EFF-02/03's effective mean. Positive single-prime strata give
+ABC-EFF-05's t≥1 obstruction. See the
+[effective claim supplement](CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md). These paper-proof
+edges do not depend on the separate slope Lean draft or operator refinement.
+
 | Premises | Checked or proved transport | Conclusion and boundary |
 |---|---|---|
 | Pairwise-coprime divisors + primitive reduced slopes | Nonzero determinant divisible by def; finite packing [P] | N≤1+X²/(def), uniformly in divisors |
@@ -265,3 +272,8 @@ public safety and exact menu-interface obstruction. The machine graph records ty
 Haar-to-distribution/WOT comparisons; the 13 new kernel declarations cover only
 residue algebra and public-policy/quotient results. Signed-source work stays on its
 separate #177 continuation.
+
+
+## Academic Main VIII dependency cut
+
+`primitive determinant gap -> D<=X^2 weighted bound (t<1)`; the separate missing edge is `weighted aggregate over D>X^2 -> full moment at t>=2/3`. The cofactor identity is an exact reduction with multiplicity, not that missing edge. `exterior modulus -> rank drop` needs a saturated-section count to control cardinality. `weight escape -> locally finite carrier` needs stronger summability for analytic Gibbs/trace transport. See the [frontier](academic_main_viii/research_frontier.md).
