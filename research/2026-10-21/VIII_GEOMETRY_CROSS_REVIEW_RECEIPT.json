@@ -1,0 +1,205 @@
+{
+  "reviewer_lane": "viii_clocks",
+  "method": "Independent exact rational halfspace-intersection convex hull and integer-coordinate census; no target code imported",
+  "target_dossier_sha256": "208505b591acec8ca4c181b30193b94f9bed24dc7db8788567586b9f81dccea5",
+  "G4_cases": [
+    {
+      "basis": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "coordinate_polygon_area_equals_aV": "1/2",
+      "interior_center": [
+        "1/3",
+        "1/3"
+      ],
+      "beta": "3",
+      "integer_cutoffs_checked": 161,
+      "count_at_160": 12720
+    },
+    {
+      "basis": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "coordinate_polygon_area_equals_aV": "1/8",
+      "interior_center": [
+        "1/6",
+        "1/6",
+        "1/3"
+      ],
+      "beta": "6",
+      "integer_cutoffs_checked": 161,
+      "count_at_160": 3160
+    },
+    {
+      "basis": [
+        [
+          1,
+          0
+        ],
+        [
+          -1,
+          3
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "coordinate_polygon_area_equals_aV": "3/32",
+      "interior_center": [
+        "1/4",
+        "1/4",
+        "1/6"
+      ],
+      "beta": "8",
+      "integer_cutoffs_checked": 161,
+      "count_at_160": 2420
+    },
+    {
+      "basis": [
+        [
+          2,
+          -1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "coordinate_polygon_area_equals_aV": "5/96",
+      "interior_center": [
+        "5/18",
+        "5/24",
+        "13/72"
+      ],
+      "beta": "9",
+      "integer_cutoffs_checked": 161,
+      "count_at_160": 1327
+    },
+    {
+      "basis": [
+        [
+          4,
+          1
+        ],
+        [
+          -2,
+          3
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      "coordinate_polygon_area_equals_aV": "1/84",
+      "interior_center": [
+        "7/18",
+        "1/6",
+        "1/9"
+      ],
+      "beta": "18",
+      "integer_cutoffs_checked": 161,
+      "count_at_160": 297
+    },
+    {
+      "basis": [
+        [
+          2,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "coordinate_polygon_area_equals_aV": "1/42",
+      "interior_center": [
+        "26/63",
+        "1/7",
+        "1/9"
+      ],
+      "beta": "21/2",
+      "integer_cutoffs_checked": 161,
+      "count_at_160": 576
+    },
+    {
+      "basis": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "coordinate_polygon_area_equals_aV": "1/9",
+      "interior_center": [
+        "2/9",
+        "2/9",
+        "2/9"
+      ],
+      "beta": "27/4",
+      "integer_cutoffs_checked": 161,
+      "count_at_160": 2809
+    },
+    {
+      "basis": [
+        [
+          1,
+          0
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "coordinate_polygon_area_equals_aV": "3/49",
+      "interior_center": [
+        "2/21",
+        "2/7",
+        "2/7"
+      ],
+      "beta": "49/4",
+      "integer_cutoffs_checked": 161,
+      "count_at_160": 1496
+    }
+  ],
+  "S1_independent_proof": "Remainder equals sum_j integral_0^(j/N) t^k/(1-t) dt, enclosed using 1<=1/(1-t)<=1/(1-rho).",
+  "S2_precision_issue": "Asymptotic sentence must state N tends to infinity; constant sequence (2,1) otherwise contradicts literal implication.",
+  "S3_verdict": "Exact population shift and positive summation bounds reconstruct correctly."
+}
