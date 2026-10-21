@@ -242,6 +242,51 @@ def bbp_coboundary_error_budget(n: int, depth: int) -> Fraction:
     return Fraction(47, 15*(16**depth-1)*n*n)
 
 
+def _polynomial_coefficients(values: Iterable[int | Fraction]) -> tuple[Fraction, ...]:
+    coefficients = [_rational(value, "polynomial coefficient") for value in values]
+    while coefficients and coefficients[-1] == 0:
+        coefficients.pop()
+    return tuple(coefficients) or (Fraction(0),)
+
+
+def _evaluate_polynomial(coefficients: tuple[Fraction, ...], n: int) -> Fraction:
+    value = Fraction(0)
+    for coefficient in reversed(coefficients):
+        value = value*n+coefficient
+    return value
+
+
+def bbp_degree_bounded_counterexample(
+        numerator: Iterable[int | Fraction], denominator: Iterable[int | Fraction],
+        degree_bound: int) -> tuple[int, Fraction]:
+    """Find an exact failure of r(n)=16*q(n-1)-q(n) within 2*d+5 samples.
+
+    q=A/B has exact rational coefficients supplied in ascending degree order.
+    Both degrees must be <=d and B(j) must be nonzero for j=0,...,2*d+5.
+    A singular PRESENTATION is rejected; no removable-pole inference is made.
+    Returns (n, r(n)-16*q(n-1)+q(n)) with a nonzero exact residual.
+    Completeness uses the paper pole obstruction and polynomial root bound.
+    This is a finite counterexample, not a normality/proof-authority verdict.
+    """
+    _integer(degree_bound, 0, "degree bound")
+    numerator = _polynomial_coefficients(numerator)
+    denominator = _polynomial_coefficients(denominator)
+    if len(numerator)-1 > degree_bound or len(denominator)-1 > degree_bound:
+        raise ValueError("polynomial degrees exceed the declared bound")
+    if denominator == (Fraction(0),):
+        raise ValueError("denominator polynomial must be nonzero")
+    count = 2*degree_bound+5
+    denominators = [_evaluate_polynomial(denominator, n) for n in range(count+1)]
+    if any(value == 0 for value in denominators):
+        raise ValueError("denominator presentation vanishes on a required probe point")
+    values = [_evaluate_polynomial(numerator, n)/denominators[n] for n in range(count+1)]
+    for n in range(1, count+1):
+        residual = bbp_force(n)-16*values[n-1]+values[n]
+        if residual:
+            return n, residual
+    raise ArithmeticError("degree-bounded BBP obstruction failed; check implementation and proof")
+
+
 @dataclass(frozen=True)
 class PrefixImpostor:
     base: int

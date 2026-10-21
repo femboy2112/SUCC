@@ -21,6 +21,9 @@ namespace ObservationalSUCC.DuckPi
 
 abbrev CircleTest := C(AddCircle (1 : ℝ), ℂ)
 
+instance circleHaar_isProbabilityMeasure : IsProbabilityMeasure circleHaar :=
+  ⟨circleHaar_total_mass⟩
+
 def empiricalMean (u : ℕ → AddCircle (1 : ℝ)) (N : ℕ) (F : CircleTest) : ℂ :=
   (∑ n ∈ Finset.range N, F (u n)) / (N : ℂ)
 
@@ -39,7 +42,9 @@ theorem empiricalMean_add (u : ℕ → AddCircle (1 : ℝ)) (N : ℕ) (F G : Cir
 theorem empiricalMean_smul (u : ℕ → AddCircle (1 : ℝ)) (N : ℕ)
     (c : ℂ) (F : CircleTest) :
     empiricalMean u N (c • F) = c • empiricalMean u N F := by
-  simp [empiricalMean, Finset.mul_sum, mul_div_assoc]
+  simp only [empiricalMean, ContinuousMap.smul_apply, smul_eq_mul]
+  rw [← Finset.mul_sum]
+  ring
 
 theorem empiricalMean_sub (u : ℕ → AddCircle (1 : ℝ)) (N : ℕ) (F G : CircleTest) :
     empiricalMean u N (F - G) = empiricalMean u N F - empiricalMean u N G := by
@@ -92,9 +97,11 @@ def convergentTests (u : ℕ → AddCircle (1 : ℝ)) : Submodule ℂ CircleTest
     (tendsto_const_nhds : Tendsto (fun _ : ℕ => (0 : ℂ)) atTop (𝓝 0))
   add_mem' := by
     intro F G hF hG
+    change Tendsto (fun N => empiricalMean u N (F + G)) atTop (𝓝 (haarMean (F + G)))
     simpa only [empiricalMean_add, haarMean_add] using hF.add hG
   smul_mem' := by
     intro c F hF
+    change Tendsto (fun N => empiricalMean u N (c • F)) atTop (𝓝 (haarMean (c • F)))
     simpa only [empiricalMean_smul, haarMean_smul] using hF.const_smul c
 
 theorem convergentTests_isClosed (u : ℕ → AddCircle (1 : ℝ)) :
@@ -141,7 +148,8 @@ theorem character_cancellation_implies_complexHaar
       exact hu h hh
   have hspan : Submodule.span ℂ (Set.range (@fourier (1 : ℝ))) ≤ convergentTests u :=
     Submodule.span_le.mpr hchars
-  have hclosed := Submodule.topologicalClosure_minimal hspan (convergentTests_isClosed u)
+  have hclosed := (Submodule.span ℂ (Set.range (@fourier (1 : ℝ)))).topologicalClosure_minimal
+    hspan (convergentTests_isClosed u)
   rw [span_fourier_closure_eq_top] at hclosed
   intro F
   exact hclosed (Submodule.mem_top : F ∈ (⊤ : Submodule ℂ CircleTest))

@@ -15,6 +15,7 @@ MODULES = {
     'Normality': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
     'PiSource': ('formal/duck_pi', 'ObservationalSUCC.DuckPi.Source'),
     'WeylBridge': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
+    'HaarBoundary': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
 }
 
 # Each mutant has a compiling positive counterpart using the same imports and
@@ -87,6 +88,11 @@ def main():
     version=subprocess.check_output(['lean','--version'],text=True).strip()
     assert 'version 4.14.0' in version
     print(version,flush=True)
+    # A failed rebuild must never leave an older local olean available to a
+    # dependent module, including in a user's reproduction of this command.
+    for module,(directory,_) in MODULES.items():
+        if directory!='formal':
+            (ROOT/directory/'.lake/build/lib'/(module+'.olean')).unlink(missing_ok=True)
     commands=[]
     def run(label,cmd,cwd,env=None):
         p=subprocess.run(cmd,cwd=cwd,env=env,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)

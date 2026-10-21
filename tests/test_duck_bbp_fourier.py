@@ -1,10 +1,12 @@
 import unittest
 from fractions import Fraction as F
+from math import comb
 
 from observational_succ.duck_bbp_fourier import (
     BBP_POLES, PoleTerm, arc_discrepancy_transport_budget, bbp_force,
     bbp_force_positive_form, bbp_shadow_budget, bbp_shadow_sum_budget,
     bbp_coboundary_approximation, bbp_coboundary_correction, bbp_coboundary_error_budget,
+    bbp_degree_bounded_counterexample,
     bbp_tail_partial, circle_distance, forced_orbit, fourier_sum_transport_budget,
     fractional_part, leading_matched_impostor, prefix_impostor,
     rational_coboundary, solve_rational_coboundary, square_tail_majorant,
@@ -167,6 +169,46 @@ class DuckBBPFourierTests(unittest.TestCase):
         for bad in [0, True, 1.0, F(1)]:
             with self.assertRaises(ValueError):
                 bbp_coboundary_approximation(1, bad)
+
+    def test_degree_bound_forces_exact_failure_after_interpolated_prefix(self):
+        self.assertEqual(bbp_degree_bounded_counterexample([F(47, 225)], [1], 0)[0], 2)
+        for length in [0, 1, 2, 4, 6]:
+            # Independent Lagrange implementation, not the Newton constructor.
+            values = [F(0)]
+            for n in range(1, length+1):
+                values.append(16*values[-1]-bbp_force(n))
+            power = length+2
+            numerator = [F(0)]*(length+1)
+            for index, value in enumerate(values):
+                basis, divisor = [F(1)], 1
+                for other in range(length+1):
+                    if other == index:
+                        continue
+                    updated = [F(0)]*(len(basis)+1)
+                    for k, coefficient in enumerate(basis):
+                        updated[k] -= other*coefficient
+                        updated[k+1] += coefficient
+                    basis = updated
+                    divisor *= index-other
+                for k, coefficient in enumerate(basis):
+                    numerator[k] += value*(index+1)**power*coefficient/divisor
+            denominator = [comb(power, k) for k in range(power+1)]
+            point, residual = bbp_degree_bounded_counterexample(numerator, denominator, power)
+            self.assertGreater(point, length)
+            self.assertLessEqual(point, 2*power+5)
+            self.assertNotEqual(residual, 0)
+            def q(n):
+                return sum((coefficient*n**k for k, coefficient in enumerate(numerator)), F(0))/(n+1)**power
+            for n in range(1, length+1):
+                self.assertEqual(16*q(n-1)-q(n), bbp_force(n))
+            self.assertEqual(residual, bbp_force(point)-16*q(point-1)+q(point))
+
+    def test_degree_probe_rejects_undeclared_or_singular_presentations(self):
+        for numerator, denominator, degree in [([1], [0], 0), ([1], [0, 1], 1),
+                                               ([1, 0, 1], [1], 1), ([1.0], [1], 1),
+                                               ([1], [1], True)]:
+            with self.assertRaises(ValueError):
+                bbp_degree_bounded_counterexample(numerator, denominator, degree)
 
 
 if __name__ == '__main__':

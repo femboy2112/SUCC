@@ -246,6 +246,26 @@ theorem tail_le_shifted (n : ℕ) : tail n ≤ 1/(8*(n : ℝ)+1)^2 := by
   have hb := (le_div_iff₀ hd).1 hf
   nlinarith
 
+theorem tail_lt_half (n : ℕ) : tail n < 1/2 := by
+  have hn : (0:ℝ) ≤ n := by positivity
+  have hs : (1:ℝ) ≤ ((n:ℝ)+1)^2 := by nlinarith
+  have hb : 47/(225*((n:ℝ)+1)^2) ≤ (47:ℝ)/225 := by
+    apply div_le_div_of_nonneg_left (by norm_num) (by norm_num)
+    nlinarith
+  exact lt_of_le_of_lt ((tail_le_sharp n).trans hb) (by norm_num)
+
+theorem tail_lower_quadratic (n : ℕ) :
+    15/(1024*((n:ℝ)+1)^2) < tail n := by
+  have hn : (0:ℝ) ≤ n := by positivity
+  have hf := forcing_lower (x := (n:ℝ)+1) (by linarith)
+  have ht := tail_gt_source n
+  have hp : (n:ℝ)+1 ≠ 0 := by positivity
+  have heq : 15/(1024*((n:ℝ)+1)^2) = ((15/64)/((n:ℝ)+1)^2)/16 := by
+    field_simp
+    <;> ring
+  rw [heq]
+  exact lt_of_le_of_lt (div_le_div_of_nonneg_right hf (by norm_num)) ht
+
 /-- The recurrence before reducing modulo one. -/
 def liftedOrbit : ℕ → ℝ
   | 0 => 0
@@ -307,6 +327,17 @@ theorem circle_orbit_recursion (n : ℕ) :
   simp only [circleOrbit, liftedOrbit, AddCircle.coe_add]
   rw [← AddCircle.coe_nsmul, nsmul_eq_mul]
   norm_num
+
+/-- The circle error is exactly the positive tail, not merely bounded by it. -/
+theorem circle_series_distance_eq_tail (n : ℕ) :
+    dist (circleOrbit (n+1)) ((16^n * seriesValue : ℝ) : AddCircle (1 : ℝ)) =
+      tail (n+1) := by
+  rw [dist_comm, series_orbit_transport, dist_eq_norm]
+  simp only [circleOrbit, AddCircle.coe_add, add_sub_cancel_left]
+  have hb : |tail (n+1)| ≤ |(1:ℝ)|/2 := by
+    simpa only [abs_one, abs_of_pos (tail_pos (n+1))] using (tail_lt_half (n+1)).le
+  rw [(AddCircle.norm_coe_eq_abs_iff (p := (1:ℝ)) (by norm_num)).2 hb]
+  exact abs_of_pos (tail_pos (n+1))
 
 theorem circle_series_transport (n : ℕ) :
     dist (circleOrbit (n+1)) ((16^n * seriesValue : ℝ) : AddCircle (1 : ℝ)) ≤

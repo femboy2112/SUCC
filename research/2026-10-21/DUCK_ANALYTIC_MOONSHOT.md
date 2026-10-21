@@ -30,6 +30,7 @@ counterfeit families that defeat decay-only and finite-prefix reasoning.
 | DA-RESIDUE | Weighted pole invariants decide rational shift-coboundaries on the specified class; actual BBP fails | PROVED LOCAL, paper; classical mechanism | No implication from non-coboundary to normality |
 | DA-FAKE | Positive leading-matched fake; arbitrary exact finite-prefix fake | PROVED LOCAL, paper | Prefix fake need not be positive; both have rational shadows |
 | DA-APPROX | Every weighted neighborhood of the actual BBP forcing contains positive rational-shadow counterfeits with the same leading term | PROVED LOCAL, paper | Does not assert discontinuity of normality at an unproved-normal source |
+| DA-DEGREE | A rational correction of degree at most `d` must fail one of `2d+5` exact probes | PROVED LOCAL, paper; executable | Requires nonsingular presentations at all declared probes |
 | DA-MU | Irrationality exponent 2 alone does not imply base-16 normality | CLASSICAL input plus elementary corollary | Imported Bugeaud theorem, not an assertion about pi |
 | DA-VD | Van der Corput correlations return the same source-specific family | PROVED LOCAL identity | A reduction requiring an unproved cancellation seed |
 | DA-OPEN | Source-specific cancellation / uniform no-hotspot estimate | HYPOTHESIS / UNVERIFIED | Base-16 normality remains open in this work |
@@ -425,6 +426,63 @@ fractions. These checks support the formulas; the universal bounds are proved
 above. A successful next approximation argument must control the complexity
 and norm conversion that (13)--(19) expose.
 
+### 6.4 A finite universal discriminator under a degree bound
+
+The previous counterfeits do not make every finite probe powerless. A declared
+complexity bound changes what exact finite tests can establish. This theorem
+was proposed by the coordinator and independently checked in the analytic lane.
+
+**Theorem DA-DEGREE.** Let `d>=0` be an integer and `q=A/B`, where `A,B` have
+rational coefficients, `B` is nonzero, and both degrees are at most `d`.
+Suppose `B(j)!=0` for every integer `0<=j<=2d+5`. Then at least one integer
+`n` with `1<=n<=2d+5` satisfies
+
+\[
+ r(n)-16q(n-1)+q(n)\ne0. \tag{20}
+\]
+
+**Proof.** Use the exact reduced source presentation
+
+\[
+ r(z)=N(z)/D(z),\quad N(z)=120z^2-89z+16,
+\quad D(z)=512z^4-1024z^3+712z^2-206z+21.
+\]
+
+Here `D(n)=(8n-7)(8n-4)(8n-3)(8n-2)/8>0` for every positive integer `n`.
+Put the residual over the common denominator `D(z)B(z-1)B(z)`. Its numerator
+is
+
+\[
+ F(z)=N(z)B(z-1)B(z)-16A(z-1)D(z)B(z)+A(z)D(z)B(z-1).
+\]
+
+The first summand has degree at most `2d+2`; the other two have degree at
+most `2d+4`. Thus `deg F<=2d+4`. It is not the zero polynomial, by the
+actual-source rational coboundary obstruction in section 5. If (20) failed
+at all `2d+5` probe points, the nonvanishing denominator hypotheses would
+give that many distinct roots of `F`, a contradiction. The standard root
+bound follows by the factor theorem: successive distinct roots give a
+product of distinct linear factors dividing `F`, whose degree cannot exceed
+`deg F`. QED.
+
+`bbp_degree_bounded_counterexample` takes exact ascending polynomial
+coefficient lists and the integer degree bound, verifies the domain, and
+returns the first sample index and its nonzero rational residual. It rejects
+a denominator presentation vanishing at a probe point, rather than treating
+that as a valid residual or guessing how to cancel a removable factor.
+Each returned nonzero residual independently refutes that candidate rational
+identity. Universal termination within `2d+5` probes is supplied by the paper
+proof, not by a finite implementation census.
+
+Tests include a constant candidate fitting the first point exactly, and
+Lagrange-interpolated candidates fitting BBP prefixes of lengths `0,1,2,4,6`.
+Every returned failure lies outside the fitted prefix and within the proven
+bound; each residual is recomputed independently. The Lagrange code is
+different from the Newton interpolation in the generic counterfeit builder.
+Undeclared degrees, inexact coefficients, boolean degrees and singular
+presentations are rejected. This is a finite source-specific discriminating
+probe with an explicit guarantee, not a probe that decides pi normality.
+
 ## 7. Attempts at the genuinely global theorem
 
 ### 7.1 Van der Corput: a valid reduction, no seed
@@ -513,7 +571,8 @@ forcing and modular permutation argument are not the BBP rational forcing.
 - **Edges closed:** actual rational source to positive tail; tail to explicit
   Fourier/discrepancy transfer; rational source to non-telescoping invariant.
   The approximation extension proves that this invariant supplies no uniform
-  weighted residual gap without further complexity restrictions.
+  weighted residual gap without further complexity restrictions. A declared
+  degree bound does supply the exact finite discriminator in section 6.4.
 - **Edges still open:** nonzero pole invariants to any global cancellation;
   irrationality to normality; a.e. dynamics to this source-specific point.
 - **Novelty tax:** the sharper source tail is a proved quantitative gain;
@@ -591,3 +650,10 @@ section 6.3 continuation was sent for a separate review after that checkpoint.
 The initial finite receipt remains preserved at its original source commit;
 the approximation continuation receives a new receipt instead of rewriting
 that historical evidence.
+
+The referee and the BBP formalization agent subsequently independently checked
+the section 6.3 telescoping, weighted norm constant, finite-attractor argument,
+finite-window bound and pole counts; both reported that the proof survives.
+The referee also inspected the primary weak-hotspot theorem and confirmed the
+uniform constant's quantifier scope. Section 6.4 has a coordinator derivation
+and analytic-lane algebraic check; this is still internal same-model review.

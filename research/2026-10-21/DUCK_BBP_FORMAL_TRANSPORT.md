@@ -3,12 +3,16 @@
 Date: 2026-10-21. Baseline: PR #232, commit
 `9894d39250021bbbc2615c33dee0d286ddf0950f`. Owner: independent BBP lane.
 
-**Mathematical status:** the proofs below are **PAPER_PROVED**.
-`formal/duck_pi/BaileyCrandall.lean` is a proof candidate until an actual
-pinned compiler run is recorded. No compiler success is inferred from the
-eight passing Python tests. The identification of the rational series with
-`Real.pi` is a **CLASSICAL_IMPORTED** BBP theorem, not a theorem fabricated
-as a new Lean axiom. The pi specialization has this premise explicitly.
+**Mathematical status:** 32 declarations in
+`formal/duck_pi/BaileyCrandall.lean` at the exact hash recorded below are
+**KERNEL_CHECKED** by the pinned Lean 4.14 / mathlib build. Three subsequent
+candidates (`tail_lt_half`, `tail_lower_quadratic`, and
+`circle_series_distance_eq_tail`) await the next build. The effective cubic remainder and
+bounded Fourier-sum correction are **PAPER_PROVED**, independently reviewed,
+and are not silently included in that formal count. The eight Python tests
+are supporting exact finite checks. The identification with `Real.pi` is
+classical BBP; this lane's `pi_circle_transport` retains an explicit source
+premise. A separate integral/source lane owns discharging it in Lean.
 Pi normality and the required global Fourier cancellation remain **OPEN**.
 
 ## 1. Exact source and scope
@@ -141,7 +145,7 @@ implies `r(x)<=15/(8x-7)^2`. A separate cleared-denominator certificate is
 15D(x)-(8x-7)^2P(x)=3776u^3+5136u^2+2007u+178>0.
 \]
 
-The Lean candidate uses the polynomial certificate, whereas the exact test
+The Lean proof uses the polynomial certificate, whereas the exact test
 uses the independent positive-fraction decomposition. These constitute two
 mathematically different proofs of the upper bound, with elementary
 algebra as their shared foundation. The executable `tail_interval` now
@@ -313,6 +317,33 @@ Hostile controls preserve the concrete failures of:
 - erasing r(n+1) and pretending the forced recurrence is autonomous;
 - treating a floating or boolean input as an exact integer certificate.
 
-The coordinator owns the actual Lean build, theorem/type/axiom export,
+The coordinator owns the combined Lean build, theorem/type/axiom export,
 negative elaboration controls and final accepted receipt. A source-level
 proof candidate is never promoted merely because these finite checks pass.
+
+## 8. Observed module kernel validation
+
+The hosted run
+[39612954095](https://github.com/femboy2112/SUCC/actions/runs/39612954095),
+at commit `57a103b7157567fe0fee3c651c5e06794e53703c`, returned exit 0 for
+both `BaileyCrandall-build` and `BaileyCrandall-exports`. The checked file's
+SHA-256 was
+`6746e001303b2ee209b170fc86f9b39e5c3e3692dfd0b152439275cedd66c5af`.
+All 32 declaration types were inspected against their paper statements.
+Their actual `#print axioms` output lists only `propext`, `Classical.choice`,
+and `Quot.sound`; no `sorryAx` or added axiom appears.
+
+The source commit used Lean 4.14.0 and mathlib
+`4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84`. Earlier runs
+39610936757 and 39612338490 failed elaboration; their errors were repaired,
+not counted as successful proofs. The combined third run still failed in
+the separately owned BBP integral file. This module-level success must not
+be presented as success of that entire run or as an unconditional formal
+pi-source identity. The coordinator's final receipt supersedes this
+intermediate build observation only after a successful combined build.
+
+An independent same-model referee reconstructed the real-domain polynomial
+certificates, infinite positive tail, source-sensitive bounds, shifted
+indices, standard BBP HasSum bridge, and cubic remainder. Exact Machin
+interval comparison supplies a separate finite source check. Neither is
+claimed as an external human referee or an academic novelty verdict.

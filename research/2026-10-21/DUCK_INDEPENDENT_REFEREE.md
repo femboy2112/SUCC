@@ -382,6 +382,53 @@ budget still proves neither orbit's discrepancy tends to zero. These
 Fourier/discrepancy theorems are paper results unless an exact hosted Lean
 declaration and receipt subsequently cover them.
 
+Two later quantitative refinements also passed this referee's independent
+derivation. With x=n+1, the BBP lane obtains
+
+\[
+-\frac1{480x^3}\le t_n-\frac1{64x^2}
+\le\frac{2783}{14400x^3}.
+\]
+
+The upper rational inequality is
+`r(x)≤15/(64x²)+2783/(960x³)`. Its cleared numerator, with u=x−1,
+is `1279936u⁴+2414792u³+1499906u²+306607u≥0`. The lower bound follows
+from `r(x+k)≥15/[64(x+k)²]` and the exact convexity remainder
+`(x+k)^{-2}−x^{-2}+2kx^{-3}=k²(3x+2k)/[x³(x+k)²]≥0`.
+The geometric zeroth and first moments are 1/15 and 1/225, producing the
+displayed constants. Independent symbolic subtraction returned zero for
+both polynomial identities. Since `0<t_n<1/2`, the actual circle distance
+is t_n, and `n²t_n→1/64` proves the pointwise shadow exponent 2 is sharp.
+
+For each integer K≥1 the analytic lane defines
+`Q_K(n)=Σ_{k=1}^K16^{K-k}r(n+k)/(16^K−1)`. Direct shift cancellation gives
+
+\[
+\widetilde r_K(n)=16Q_K(n-1)-Q_K(n)
+=\frac{16^Kr(n)-r(n+K)}{16^K-1}>r(n)>0.
+\]
+
+Its orbit has rational shadow Q_K(0), so is not equidistributed. The
+positive partial-fraction decomposition shows n²r(n) decreases on n≥1;
+consequently
+`sup_{n≥1} n²|rtilde_K(n)−r(n)|≤47/[15(16^K−1)]→0`.
+Accumulating the recurrence errors through a finite horizon gives circle
+distance at most `min(1/2,47(16^n−1)/[225(16^K−1)])`. Both constants
+survive independent review. This demonstrates arbitrarily close rational-
+shadow counterfeits in that weighted forcing norm; it does not assert that
+normality is discontinuous at the actual, still unresolved π source.
+The corrective function has 4K poles; the counterfeit forcing has eight
+poles, with positions and heights escaping as K increases. A lower bound
+based on source complexity would need explicit restrictions on these data.
+
+The new `WeylBridge.lean` candidate was also inspected: convergence on all
+genuine integer characters extends to complex continuous circle tests using
+their dense linear span and norm-one empirical/Haar averages, then to real
+continuous tests. Its Fourier cancellation hypothesis remains explicit.
+This closes a classical **candidate** direction of Weyl transport, but
+does not supply cancellation or, by itself, the continuous-test-to-interval
+bridge. Exact exported types and successful kernel output govern promotion.
+
 ### Conditional-source lane: independently reconstructed constants
 
 The inspected conditional dossier and exact helper retain the right scope.

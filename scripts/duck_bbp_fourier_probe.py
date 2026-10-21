@@ -16,6 +16,7 @@ from observational_succ.duck_bbp_fourier import (  # noqa: E402
     BBP_POLES, PoleTerm, arc_discrepancy_transport_budget, bbp_force,
     bbp_force_positive_form, bbp_shadow_budget, bbp_shadow_sum_budget,
     bbp_coboundary_approximation, bbp_coboundary_correction, bbp_coboundary_error_budget,
+    bbp_degree_bounded_counterexample,
     forced_orbit, fourier_sum_transport_budget, leading_matched_impostor,
     prefix_impostor, rational_coboundary, solve_rational_coboundary,
     weighted_pole_invariants,
@@ -115,6 +116,13 @@ def receipt():
              "claim_boundary": "each finite depth nonnormal; actual source normality remains unproved"}
             for depth in [1, 2, 4, 9]
         ],
+        "degree_bounded_exact_discriminator": {
+            "candidate": "q(z)=47/225, degree bound 0",
+            "first_point_matches": True,
+            "guaranteed_probe_count": 5,
+            "counterexample_index": bbp_degree_bounded_counterexample([Fraction(47, 225)], [1], 0)[0],
+            "exact_residual": str(bbp_degree_bounded_counterexample([Fraction(47, 225)], [1], 0)[1]),
+        },
         "formal_verification": "not performed by this lane",
         "full_suite": "coordinator responsibility; not run by this probe",
     }
