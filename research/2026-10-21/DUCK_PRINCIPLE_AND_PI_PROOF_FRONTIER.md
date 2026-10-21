@@ -189,3 +189,49 @@ One potentially useful hostile comparison is Adamczewski–Bugeaud's work on com
 - Mathlib primary library source on π: https://github.com/leanprover-community/mathlib4/blob/master/Mathlib/Analysis/SpecialFunctions/Trigonometric/Basic.lean; irrational π: https://github.com/leanprover-community/mathlib4/blob/master/Mathlib/Analysis/Real/Pi/Irrational.lean; Wallis: https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/Real/Pi/Wallis.html.
 - Adamczewski–Bugeaud, Annals 165 (2007), https://annals.math.princeton.edu/2007/165-2/p04. Scope: algebraic irrationals, **not π**.
 - SUCC's original POL dossier and Main VIII [source/pi audit](MAIN_VIII_SOURCE_PI_AUDIT.md) determine source-derived existing achievements and limitations. No imported paper's author is claimed to endorse SUCC's proposed extensions.
+
+
+## 10. Exact source-derived Bailey–Crandall tail lemma (paper proof; Lean TODO)
+
+The π recurrence admits a useful **unconditional, explicit** orbit-transport bound—stronger than merely saying its BBP tail vanishes. This bound is elementary and must not be mistaken for a Fourier cancellation theorem.
+
+Write, for every integer m≥1,
+
+    r(m) = 4/(8m−7) − 2/(8m−4) − 1/(8m−3) − 1/(8m−2)
+         = (120m²−89m+16) /
+           [(2m−1)(4m−1)(8m−7)(8m−3)].
+
+The numerator is positive since m²≥m and
+
+    120m²−89m+16 ≥ 31m+16 >0.
+
+All denominator factors are positive, and
+
+    2m−1≥m, 4m−1≥3m, 8m−7≥m, 8m−3≥5m.
+
+Thus the denominator is at least 15m⁴. The numerator is at most 120m², so
+
+    0 < r(m) ≤ 8/m².                                            (TAIL-1)
+
+The BBP identity with the n-index shifted gives
+
+    π/16 = Σ_{m=1}^∞ 16^(−m)r(m).
+
+Let x_0=0, x_n={16x_(n−1)+r(n)} and let
+
+    t_n = Σ_{k=1}^∞16^(−k)r(n+k).
+
+Exactly (modulo 1),
+
+    {16^(n−1)π} = {x_n+t_n}.
+
+Since every term is positive, for n≥1 the ordinary tail and the circle distance obey
+
+    0 < t_n ≤ Σ_{k=1}^∞16^(−k)·8/(n+k)²
+            ≤ 8/[15(n+1)²],                                   (TAIL-2)
+
+    d_circle(x_n,{16^(n−1)π}) ≤ 8/[15(n+1)²].                   (TAIL-3)
+
+(The geometric series Σ_{k≥1}16^(−k)=1/15 is exact.) Therefore the specific forced orbit and the base-16 π-digit orbit are pointwise asymptotic on R/Z. Continuous circle observables have asymptotically equal Cesàro averages by uniform continuity and a finite-prefix/tail split, yielding the **equidistribution equivalence** underlying Bailey–Crandall's classical criterion.
+
+**Proof status:** TAIL-1–3 are direct paper derivations using the established BBP identity, not yet Lean formalizations. Their numeric constant is not claimed optimal; their academic novelty is not asserted. They furnish precise first Lean targets: prove the rational polynomial identity and inequalities, then the convergent series and circle-distance estimate. Critically, an O(n^(−2)) **distance between two orbits** does not establish that either orbit is equidistributed. The remaining normality debt is a global π-specific cancellation theorem.
