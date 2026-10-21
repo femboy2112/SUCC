@@ -231,3 +231,33 @@ def cyclic_debruijn_edge_flow(digits: tuple[int, ...], base: int,
     assert set(incoming) == set(outgoing)
     assert all(incoming[s] == outgoing[s] for s in incoming)
     return edges, incoming, outgoing
+
+
+def prime_dilation_polygon_defect(prime: int, mode: int) -> tuple[Q, ...]:
+    """Exact polynomial D_p,n(X)=W_(pn)(X)-p² W_n(X).
+
+    On the continuum circle, Laplacian L and prime-frequency dilation V_p
+    satisfy L V_p=p² V_p L. On the finite regular polygon, D(0)=0,
+    so D is divisible by the squared chord X. Moreover its FIRST nonzero
+    coefficient is exactly -p²(p²-1)n^4/12. This geometric discretization
+    defect is not a claim about the normality of any marked circle point.
+    """
+    _int(prime,"prime",2,127)
+    _int(mode,"mode",1,16)
+    if not is_prime(prime) or prime*mode>512:
+        raise ValueError("genuine prime and bounded product mode required")
+    large=mode_laplacian_polynomial(prime*mode)
+    small=tuple(prime**2*c for c in mode_laplacian_polynomial(mode))
+    defect=_sub(large,small)
+    assert defect[0]==0
+    assert defect[1]==Q(-prime**2*(prime**2-1)*mode**4,12)
+    return defect
+
+
+def succ_fucc_mode_covariance(prime: int, mode: int) -> tuple[int,int]:
+    """Exact SUCC/FUCC mode covariance V_p S = S^p V_p."""
+    _int(prime,"prime",2,1000000)
+    _int(mode,"mode",0,1000000)
+    if not is_prime(prime):
+        raise ValueError("genuine prime multiplier required")
+    return prime*(mode+1), prime*mode+prime
