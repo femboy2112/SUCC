@@ -124,8 +124,12 @@ class PrimeSystemWithPhases(unittest.TestCase):
             phase_turn(4,0.125)
         with self.assertRaises(ValueError):
             factorized_phase_with_mixed_terms((),Q(0))
+        for forged in ((6,), (10,), (1,), (2,6), (2,15)):
+            with self.assertRaises(ValueError):
+                factorized_phase_with_mixed_terms(forged,Q(1,7))
 
-    def test_base_shift_is_prime_fuсс_diagonal_not_all_prime_enumeration(self):
+
+    def test_base_shift_is_prime_fucc_diagonal_not_all_prime_enumeration(self):
         for b, primes in ((2,(2,)),(6,(2,3)),(10,(2,5))):
             for j in range(8):
                 target=b**j
