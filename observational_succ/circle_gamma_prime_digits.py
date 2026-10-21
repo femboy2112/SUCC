@@ -5,10 +5,11 @@ All computations here are exact Fraction/integer algebra. The analytic heat,
 Mellin, Euler-product and smoothed-normality implications are established in
 the companion paper dossier; finite tests never certify them for pi.
 """
+from dataclasses import dataclass
 from fractions import Fraction as Q
 from math import factorial
 
-from .pi_polygon_normality import polygon_pi_bracket
+from .pi_polygon_normality import polygon_pi_bracket, rational_sqrt_enclosure
 
 
 def _int(value, label, low=0, high=4096):
@@ -261,3 +262,36 @@ def succ_fucc_mode_covariance(prime: int, mode: int) -> tuple[int,int]:
     if not is_prime(prime):
         raise ValueError("genuine prime multiplier required")
     return prime*(mode+1), prime*mode+prime
+
+
+@dataclass(frozen=True)
+class PrimeCircleBracket:
+    """Finite entire-prime-prefix reconstruction of the geometric circle pi."""
+    cutoff: int
+    genuine_primes: tuple[int, ...]
+    euler_partial: Q
+    missing_zeta_upper: Q
+    lower_pi: Q
+    upper_pi: Q
+
+
+def prime_euler_pi_bracket(cutoff: int, precision_bits: int = 192) -> PrimeCircleBracket:
+    """Rigorous pi enclosure from ALL genuine primes p<=cutoff, no pi digits.
+
+    Basel + Euler identity: pi²/6 = zeta(2)=product_p (1-p^-2)^-1.
+    P-smooth numbers include every n<=P; hence the omitted positive sum
+    lies in (0, sum_(n>P)n^-2) subset (0,1/P).
+    Consequently 6*Z_P < pi² < 6*(Z_P+1/P).
+    Dyadic square-root enclosures return exact rational outer bounds.
+    """
+    _int(cutoff, "prime cutoff", 2, 10000)
+    _int(precision_bits, "precision_bits", 1, 4096)
+    ps=tuple(p for p in range(2,cutoff+1) if is_prime(p))
+    z=Q(1)
+    for p in ps:
+        z*=Q(p*p,p*p-1)
+    tail=Q(1,cutoff)
+    lower=rational_sqrt_enclosure(6*z,precision_bits)[0]
+    upper=rational_sqrt_enclosure(6*(z+tail),precision_bits)[1]
+    assert lower < upper
+    return PrimeCircleBracket(cutoff, ps, z, tail, lower, upper)
