@@ -158,5 +158,38 @@ class PiPrimeCarryTransportTests(unittest.TestCase):
             rational_digit_prefix(Fraction(-1, 7), 10, 3)
 
 
+class JointCRTPhaseClocksTests(unittest.TestCase):
+    def test_17_crt_local_characters_reconstruct_global_at_each_time(self):
+        from observational_succ.pi_prime_carry_transport import joint_crt_phase_clocks
+        for n in (1, 2, 3, 4, 5, 6, 8):
+            for base, h in ((2, 1), (3, -2), (10, 7)):
+                d, local = joint_crt_phase_clocks(n, base, h, 15)
+                _, global_residues = prime_carry_phase_clock(n, base, h, 15)
+                self.assertEqual(d, __import__("math").prod(q for q, _ in local))
+                for j, r in enumerate(global_residues):
+                    t = sum((Fraction(seq[j], q) for q, seq in local), Fraction(0))
+                    self.assertEqual(t - (t.numerator // t.denominator), Fraction(r, d))
+
+    def test_18_inverse_removal_mutation_is_false(self):
+        from observational_succ.pi_prime_carry_transport import joint_crt_phase_clocks
+        d, local = joint_crt_phase_clocks(2, 2, 1, 2)
+        _, global_residues = prime_carry_phase_clock(2, 2, 1, 2)
+        true_sum = sum((Fraction(seq[0], q) for q, seq in local), Fraction(0))
+        self.assertEqual(true_sum % 1, Fraction(global_residues[0], d))
+        # Mutant discards CRT transport inverses: shared phase cannot be recovered.
+        false_sum = sum((Fraction(global_residues[0] % q, q) for q, _ in local), Fraction(0))
+        self.assertNotEqual(false_sum % 1, Fraction(global_residues[0], d))
+
+    def test_19_bounded_factorization_is_strict_and_distinct_from_carries(self):
+        from observational_succ.pi_prime_carry_transport import prime_power_conductor
+        self.assertEqual(prime_power_conductor(1), (3, 5))
+        self.assertEqual(prime_power_conductor(2), (81, 5))
+        self.assertNotEqual(prime_power_conductor(2), tuple(doubling_carries(2)))
+        with self.assertRaises(ValueError):
+            prime_power_conductor(100, max_bits=8)
+        with self.assertRaises(ValueError):
+            prime_power_conductor(1, max_bits=True)
+
+
 if __name__ == "__main__":
     unittest.main()
