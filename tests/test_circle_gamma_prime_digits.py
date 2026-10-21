@@ -13,7 +13,8 @@ from observational_succ.circle_gamma_prime_digits import (
     pi_heat_mellin_mode_bounds, genuine_prime_smooth_coefficients,
     phase_turn, mixed_prime_turn, factorized_phase_with_mixed_terms,
     rational_digits, cyclic_debruijn_edge_flow, prime_dilation_polygon_defect,
-    succ_fucc_mode_covariance, prime_euler_pi_bracket
+    succ_fucc_mode_covariance, prime_euler_pi_bracket,
+    certified_pi_digits_from_full_primes
 )
 from observational_succ.pi_polygon_normality import polygon_pi_bracket
 
@@ -200,6 +201,30 @@ class FullPrimeToGeometricPiInverse(unittest.TestCase):
         self.assertEqual(prime_euler_pi_bracket(5,256).euler_partial,Q(25,16))
         self.assertGreater(prime_euler_pi_bracket(200,256).lower_pi,
                            prime_euler_pi_bracket(100,256).lower_pi)
+
+    def test_full_prime_system_certifies_hierarchical_pi_digits(self):
+        # Prime-only source. NO polygon method or pi digits as oracle.
+        self.assertEqual(certified_pi_digits_from_full_primes(5).certified_digits,"")
+        for cutoff,expected in ((29,"1"),(199,"14"),(4999,"141")):
+            result=certified_pi_digits_from_full_primes(cutoff,max_digits=16)
+            self.assertEqual(result.certified_digits,expected)
+            self.assertFalse(result.geometric_crosscheck)
+            self.assertEqual(result.source_interval,result.prime_interval)
+            self.assertLess(result.source_interval[0],result.source_interval[1])
+        # A separate, independently constructed polygon interval can sharpen
+        # a certificate without supplying digits, and never widens the bounds.
+        certified=certified_pi_digits_from_full_primes(
+            199,max_digits=16,polygon_steps=20,precision_bits=256)
+        self.assertTrue(certified.geometric_crosscheck)
+        self.assertEqual(certified.certified_digits,"1415926535")
+        self.assertGreaterEqual(certified.source_interval[0],certified.prime_interval[0])
+        self.assertLessEqual(certified.source_interval[1],certified.prime_interval[1])
+        # Insufficient finite source resolution cannot claim 50 digits.
+        weak=certified_pi_digits_from_full_primes(29,max_digits=50)
+        self.assertEqual(weak.certified_digits,"1")
+        for bad in (True,2.0,Q(2)):
+            with self.assertRaises(ValueError):
+                certified_pi_digits_from_full_primes(29,base=bad)
 
     def test_missing_prime_breaks_claimed_full_prefix_tail_bound(self):
         # Fake set {2,5} at cutoff P=5, omitting prime 3:
