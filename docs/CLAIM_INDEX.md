@@ -5,6 +5,8 @@ Post-main research draft: [effective primitive abc means](CLAIM_SUPPLEMENT_ABC_E
 for every δ<(2−3t)/5 when 0≤t<2/3, and failure of quadratic moments for t≥1.
 Complete paper proofs; full analytic theorem not formalized; novelty unverified.
 
+**2026-10-20 draft π polygon/normality research:** [POL-01–09 supplement](CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md) · [proof and negative-control dossier](../research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md). Exact source-derived polygon brackets, source-to-orbit error budget and limit-order obstruction; generic-path rigidity REFUTED, π-specific Fourier cancellation UNVERIFIED. No claim of π normality.
+
 **Academic Main VII (2026-10-20):**
 [reviewed claim crosswalk](CLAIM_SUPPLEMENT_ACADEMIC_MAIN_VII.md),
 [integration audit](academic_main_vii/integration_audit.md),
