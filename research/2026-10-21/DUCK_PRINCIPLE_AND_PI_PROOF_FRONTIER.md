@@ -1,6 +1,6 @@
 # Operation DUCK → PROOF → π: structural recognition, trusted foundations, and a normality moonshot
 
-**Date:** 2026-10-21. **Starting main:** b116841f12b41aaf7600da39bbb40577f25b6295 (Academic Main VIII). **Status:** research programme plus classical paper proofs and a new standalone Lean candidate; not a claim that π-normality, RH, or ABC is proved. **Author's initiating intuition:** if B repeatedly looks, sounds, and behaves like A under a phenomenon C, B may *encode an A-shaped structure* in its interactions, without B being identical to A.
+**Date:** 2026-10-21. **Starting main:** b116841f12b41aaf7600da39bbb40577f25b6295 (Academic Main VIII). **Status:** research programme plus classical paper proofs and an independently CI-compiled standalone Lean 4.14 kernel for finite-action factor lemmas ([successful run 39605851189](https://github.com/femboy2112/SUCC/actions/runs/39605851189), source blob `4d72da20f41b0ff06305b6f19acd7fa864b87924`); not a claim that π-normality, RH, or ABC is proved. **Author's initiating intuition:** if B repeatedly looks, sounds, and behaves like A under a phenomenon C, B may *encode an A-shaped structure* in its interactions, without B being identical to A.
 
 This dossier is governed by [AGENTS.md](../../AGENTS.md), [METHOD.md](../../docs/METHOD.md), [FOUNDATIONS.md](../../docs/FOUNDATIONS.md), the [claim index](../../docs/CLAIM_INDEX.md), and the existing [POL-01–09 programme](../../docs/CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md). Preserve history and existing negative controls. RH is a downstream application; SUCC must be independently useful.
 
@@ -28,7 +28,7 @@ Fix an action alphabet Act, a state set B with transitions S_B(a,-), a candidate
 
     q(S_B^w(b)) = S_A^w(q(b)).
 
-For each target readout o:A→R, applying o gives identical observed reports. The proof is induction on the word. Composition of such maps preserves the law. A faithful, injective target readout conversely upgrades observed equality of *all one-step squares* to exact factor equality; a separating family of target action words can replace injectivity, including at a finite certified budget when it distinguishes every target-state pair. See [formal/DuckPrinciple.lean](../../formal/DuckPrinciple.lean).
+For each target readout o:A→R, applying o gives identical observed reports. The proof is induction on the word. Composition of such maps preserves the law. A faithful, injective target readout conversely upgrades observed equality of *all one-step squares* to exact factor equality; a separating family of target action words can replace injectivity, including at a finite certified budget when it distinguishes every target-state pair. See [formal/DuckPrinciple.lean](../../formal/DuckPrinciple.lean). **Formal authority for its exact finite-action statements is verified by the pinned kernel; this does not formalize the motivating analogy or general inference from resemblance.**
 
 **Constructive-probe principle (conditional theorem):** if target states are separated by the full family of finite action-word readouts, a failed candidate factor has an action, source state, and finite target word that distinguishes the two sides. This is an existence theorem; executable search further needs a finite/effectively enumerable model and a terminating state-equivalence decision procedure.
 
@@ -159,7 +159,7 @@ One potentially useful hostile comparison is Adamczewski–Bugeaud's work on com
 **Policy change proposed for future work (this dossier does not change global repository policy by itself):** any new foundational definition, universal arrow, theorem, or proposed π implication becomes PROOF-DEBT until its strongest stated proposition has passed its intended proof authority. Expository diagrams remain hypotheses until mathematical maps are certified.
 
 1. For each theorem: exact Lean type, source of assumptions, theorem name, mathlib/Lean version, proof compile log, #print axioms, source commit and digest, and correspondence to the paper statement. No syntactic imitation of the theorem via an unproved parameter.
-2. Preserve distinction **PAPER_PROVED / LEAN_KERNEL_PROVED / EXACT_FINITE_CHECK / TESTED_MODEL / UNVERIFIED / REFUTED**. The initial [DuckPrinciple.lean](../../formal/DuckPrinciple.lean) needs the new [Lean CI](../../.github/workflows/duck-principle-lean.yml) to run before any LEAN_KERNEL_PROVED promotion.
+2. Preserve distinction **PAPER_PROVED / LEAN_KERNEL_PROVED / EXACT_FINITE_CHECK / TESTED_MODEL / UNVERIFIED / REFUTED**. The exact finite-action Duck source compiled in pinned Lean CI with proof-dependency introspection (run 39605851189); deeper system-specific and π claims still need separate proofs.
 3. No sorry, admit, unsafe proof authority, undeclared axioms, trust_me, or native_decide substitution for proof. Imported classical axioms must be listed rather than pretended absent.
 4. Keep original-source provenance, non-Euler/fake-composite controls, and matched null tests; a proof using zero positions as inputs must not become an RH result.
 5. Make the *claim dependency DAG* executable: an unproved lemma blocks its descendants' promotion, regardless of how many tests pass.
@@ -170,9 +170,9 @@ One potentially useful hostile comparison is Adamczewski–Bugeaud's work on com
 
 | ID | Hypothesis or test | Predicted success | Failure / negative control | Status |
 | --- | --- | --- | --- | --- |
-| DUCK-01 | proposed factor q commutes with every declared action | all finite words transported | one failed action square | Lean candidate, CI pending |
-| DUCK-02 | target probe is state-separating and one-step reports agree | factor law follows | erasing readout; target aliasing | Lean candidate, CI pending |
-| DUCK-03 | candidate factor fails, target word probes separate | finite separating word exists | no separating probes ⇒ dark pair | Lean candidate, CI pending |
+| DUCK-01 | proposed factor q commutes with every declared action | all finite words transported | one failed action square | LEAN_KERNEL_PROVED, CI run 39605851189 |
+| DUCK-02 | target probe is state-separating and one-step reports agree | factor law follows | erasing readout; target aliasing | LEAN_KERNEL_PROVED, CI run 39605851189 |
+| DUCK-03 | candidate factor fails, target word probes separate | finite separating word exists | no separating probes ⇒ dark pair | LEAN_KERNEL_PROVED, CI run 39605851189 |
 | DUCK-04 | logistic map is a factor of circle doubling | exact sin double-angle diagram | inverse/conjugacy claim false | classical proof, not Lean |
 | PI-DUCK-01 | Bailey–Crandall BBP orbit equals π digit orbit asymptotically | quantified orbit-distance→0 and equidistribution equivalence | wrong indexing, denominator zeros, missing tail | classical source, local formalization TODO |
 | PI-DUCK-02 | polygon precision controls all infinite-digit tests | uniform N cancellation from precision schedule | POL-02/05/08, finite-stage nonnormal rational | UNVERIFIED; naive form refuted |
@@ -180,7 +180,7 @@ One potentially useful hostile comparison is Adamczewski–Bugeaud's work on com
 | PI-DUCK-04 | RH or ABC alone implies π-base-16 normality | separately proven hypothesis→(W) implication | circular auxiliary assumption equivalent to normality | UNVERIFIED; not a known consequence |
 | PI-DUCK-05 | 16-normal implies 2-normal, and maybe 10-normal | 2-normal follows | 10-normal not established by this implication | classical first assertion; false automatic transfer to base 10 |
 
-**Next verdict-changing experiments:** (i) run the pinned Duck kernel with dependency introspection; (ii) build a faithful formal Bailey–Crandall recurrence with exact coefficient proofs and a tail estimate; (iii) construct a new analytic/probe input yielding even a nontrivial bound on its Fourier sums; (iv) test against rational, deliberately biased irrational, known-normal, and fake-Euler source controls; (v) only then attempt RH/ABC as supporting hypotheses, never as magical force fields.
+**Next verdict-changing experiments:** (i) complete all-declaration axiom audit and mutation controls for the now-compiled Duck kernel; (ii) build a faithful formal Bailey–Crandall recurrence with exact coefficient proofs and a tail estimate; (iii) construct a new analytic/probe input yielding even a nontrivial bound on its Fourier sums; (iv) test against rational, deliberately biased irrational, known-normal, and fake-Euler source controls; (v) only then attempt RH/ABC as supporting hypotheses, never as magical force fields.
 
 ## Sources and explicit scope
 
