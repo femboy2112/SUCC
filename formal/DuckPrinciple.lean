@@ -129,12 +129,14 @@ theorem failed_factor_yields_separating_experiment
       observe (runWord stepA word (project (stepB action b))) ≠
         observe (runWord stepA word (stepA action (project b))) := by
   classical
-  by_contra no_witness
+  apply Classical.byContradiction
+  intro no_witness
   apply failure
   intro action b
   apply separates
   intro word
-  by_contra different
+  apply Classical.byContradiction
+  intro different
   exact no_witness ⟨action, b, word, different⟩
 
 /-- Countermodel: two different dynamics with a completely erasing report. -/
