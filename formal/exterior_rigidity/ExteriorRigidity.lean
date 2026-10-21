@@ -62,7 +62,8 @@ theorem source_sum_scaled_channel {R : Type*} [CommRing R]
     (∏ k, d k) * q ∣ d i * A.det := by
   have h := mul_dvd_mul_left (d i) (source_sum_channel A d q i hrows hsum)
   have hu : (∏ k, Function.update d i q k) = q * ∏ k ∈ univ.erase i, d k := by
-    simpa using Finset.prod_update_of_mem (Finset.mem_univ i) d q
+    simpa only [Finset.sdiff_singleton_eq_erase] using
+      Finset.prod_update_of_mem (Finset.mem_univ i) d q
   have hp := Finset.mul_prod_erase univ d (Finset.mem_univ i)
   have heq : d i * (∏ k, Function.update d i q k) = (∏ k, d k) * q := by
     rw [hu, ← hp]
@@ -145,7 +146,7 @@ theorem determinant_vanishes_below_modulus (A : Matrix n n ℤ) (E : ℕ)
 theorem nonprimitive_shared_prime_control :
     (Matrix.det (!![(2 : ℤ), 4, 2; 2, 2, 4; 2, 2, 2])).natAbs = 8 ∧
     ¬ (16 : ℕ) ∣ (Matrix.det (!![(2 : ℤ), 4, 2; 2, 2, 4; 2, 2, 2])).natAbs := by
-  norm_num [Matrix.det_fin_three]
+  norm_num [Matrix.det_fin_three, Matrix.vecHead, Matrix.vecTail]
 
 /-- Two different positive, globally primitive three-summand points can exceed
 the cubic modulus threshold. This is a finite counterexample, not an asymptotic count. -/
