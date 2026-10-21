@@ -1,0 +1,16 @@
+# POL — π polygon SUCC and path-defect claim supplement
+
+**2026-10-20 research branch:** `research/pi-polygon-normality-path-defect-2026-10-20`, from Academic Main VII `b5f9591033db2022bda6a2f16a935c06466f9eff`. The [full research dossier](../research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md) contains statements, assumptions, proofs, countermodels and provenance. **π normality: OPEN.** These results have not been admitted to `main` or formally checked by a Lean kernel.
+
+| ID | Precisely scoped claim | Status | Receipt / decisive boundary |
+| --- | --- | --- | --- |
+| POL-01 | For unit-circle regular 4·2^s-gons, exact squared-chord recursion and strict inscribed/circumscribed half-perimeter brackets for π with gap <64/m²; outward dyadic arithmetic encloses them | CLASSICAL / PROVED PAPER / TESTED MODEL | Exact Python module + independent rational Machin-series test; no π digits used in polygon algorithm |
+| POL-02 | For a known base-b normal x, base-b terminating truncations q_m(x)→x but `lim_m lim_N ν_N(q_m(x))=δ₀ ≠ λ=lim_N lim_m ν_N(q_m(x))` | CLASSICAL / PROVED PAPER | Noncommuting limit calculation; not an assumption that π is normal |
+| POL-03 | A source interval L<π<U, midpoint y and any Lipschitz phase observable F give `|ν_N(π)(F)−ν_N(y)(F)| ≤ Lip(F)(U−L)(b^N−1)/(2N(b−1))` | PROVED PAPER / EXACT BUDGET | Triangle inequality + expanding map; exponential N-growth prevents a fixed-stage asymptotic proof |
+| POL-04 | Each uniform regular polygon grid has exact vanishing nontrivial spatial characters; distinct prefix and base-shift maps have balanced pushforward weights | CLASSICAL / TESTED EXACT | Roots of unity and explicit `x=1/7` noncommuting diagram; no π orbit conclusion |
+| POL-05 | All compatible paths through balanced uniform polygon refinement must be normal, or else the source/transport maps are malformed | REFUTED | `0∞` and irrational sparse-perfect-square digit stream are valid nonnormal paths |
+| POL-06 | Any hypothetical non-normal canonical π digit path must display an independently identified defect distinct from arithmetic exceptional-orbit behavior | UNVERIFIED | Would require a π-specific geometric rigidity theorem; defining defect as nonnormality is circular |
+| POL-07 | If pi-sourced rational midpoint Fourier means decay at adequate precision at all N (or controlled dense subsequence), Weyl plus POL-03 prove base-b normality | CONDITIONAL / OPEN INPUT | Assumption of source-derived cancellation is precisely the unsolved burden |
+| POL-08 | Computing arbitrarily long finite π prefixes, or observing uniform polygon weights, implies infinite π normality | REFUTED AS INFERENCE | Missing quantifier / spatial-versus-orbit transport; calibrated rational and alternating controls |
+
+**Tests:** `python -m unittest discover -s tests -p 'test_pi_polygon_normality.py' -v`; `python scripts/pi_polygon_normality_probe.py`. **Reproducibility:** `research/2026-10-20/PI_POLYGON_NORMALITY_FINITE_RECEIPT.json`. All finite arithmetic is exact `Fraction`/integer with outward radical bounds. No zero ordinates, no RH/ABC/Weil result, no unproved π normality theorem.
