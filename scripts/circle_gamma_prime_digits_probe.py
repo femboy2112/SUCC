@@ -16,7 +16,7 @@ from observational_succ.circle_gamma_prime_digits import (
     mode_laplacian_polynomial, eval_polynomial, ordered_succ_gamma_weight,
     genuine_prime_smooth_coefficients, factorized_phase_with_mixed_terms,
     rational_digits, cyclic_debruijn_edge_flow, pi_heat_mellin_mode_bounds,
-    prime_euler_pi_bracket
+    prime_euler_pi_bracket, certified_pi_digits_from_full_primes
 )
 from observational_succ.pi_polygon_normality import polygon_pi_bracket
 
@@ -38,6 +38,14 @@ def receipt():
     alternate={f"{a}{b}":alternate.get((a,b),0)
                for a in range(2) for b in range(2)}
     low,high=pi_heat_mellin_mode_bounds(2,3,12,256)
+    digits29=certified_pi_digits_from_full_primes(29,max_digits=16)
+    digits199=certified_pi_digits_from_full_primes(199,max_digits=16)
+    digits4999=certified_pi_digits_from_full_primes(4999,max_digits=16)
+    digits_joint=certified_pi_digits_from_full_primes(
+        199,max_digits=16,precision_bits=256,polygon_steps=20)
+    assert (digits29.certified_digits,digits199.certified_digits,
+            digits4999.certified_digits,digits_joint.certified_digits)==(
+            "1","14","141","1415926535")
     prime3=prime_euler_pi_bracket(3,256)
     prime5=prime_euler_pi_bracket(5,256)
     poly=polygon_pi_bracket(12,256)
@@ -80,6 +88,14 @@ def receipt():
                                      sum(edges[key] for key in ("10","11")),
             "two_digit_edges":edges,
             "periodic_binary_third_two_digit_edge_count":alternate,
+        },
+        "prime_digit_cylinders":{
+            "cutoff29":digits29.certified_digits,
+            "cutoff199":digits199.certified_digits,
+            "cutoff4999":digits4999.certified_digits,
+            "cutoff199_plus_polygon20":digits_joint.certified_digits,
+            "finite_cylinders_only":True,
+            "normality_implied":False,
         },
         "prime_to_circle":{
             "cutoff3":{"euler_partial":str(prime3.euler_partial),
