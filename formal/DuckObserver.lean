@@ -1,5 +1,6 @@
 import DuckPrinciple
 import FutureSafeForgetting
+import Init.Data.Nat.Lemmas
 
 /-!
 # Observable Duck quotients and finite closed-relation certificates
@@ -75,7 +76,7 @@ theorem closed_relation_all_words
   | cons a rest ih => exact ih (stepX a x) (stepY a y) (closed a x y related)
 
 /-- Complete laws for a finite Boolean relation table, with exact Nat readouts. -/
-def RelationTableLaws {n m k : Nat}
+abbrev RelationTableLaws {n m k : Nat}
     (stepX : Fin k → Fin n → Fin n) (observeX : Fin n → Nat)
     (stepY : Fin k → Fin m → Fin m) (observeY : Fin m → Nat)
     (table : Fin n → Fin m → Bool) : Prop :=

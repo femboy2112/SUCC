@@ -6,7 +6,7 @@ Date: 2026-10-21. Baseline: PR #232, commit
 **Mathematical status:** the proofs below are **PAPER_PROVED**.
 `formal/duck_pi/BaileyCrandall.lean` is a proof candidate until an actual
 pinned compiler run is recorded. No compiler success is inferred from the
-six passing Python tests. The identification of the rational series with
+seven passing Python tests. The identification of the rational series with
 `Real.pi` is a **CLASSICAL_IMPORTED** BBP theorem, not a theorem fabricated
 as a new Lean axiom. The pi specialization has this premise explicitly.
 Pi normality and the required global Fourier cancellation remain **OPEN**.
@@ -118,6 +118,38 @@ not every coefficient in the comparison attains equality. The executable
 interval uses the non-strict enclosing endpoints and never needs this
 additional strictness claim.
 
+A second, source-sensitive comparison improves this further:
+
+\[
+\boxed{\frac{r(n+1)}{16}<t_n\le\frac{r(n+1)}{15}
+       \le\frac1{(8n+1)^2}.}
+\]
+
+The lower bound follows from the positive remainder in the exact recursion.
+The middle bound uses `r(n+k+1)<=r(n+1)` term by term and the geometric sum
+1/15. For the last bound, the independent positive decomposition
+
+\[
+r(x)=\frac6{(8x-7)(8x-4)}+
+     \frac4{(8x-7)(8x-3)}+
+     \frac5{(8x-7)(8x-2)}
+\]
+
+implies `r(x)<=15/(8x-7)^2`. A separate cleared-denominator certificate is
+
+\[
+15D(x)-(8x-7)^2P(x)=3776u^3+5136u^2+2007u+178>0.
+\]
+
+The Lean candidate uses the polynomial certificate, whereas the exact test
+uses the independent positive-fraction decomposition. These constitute two
+mathematically different proofs of the upper bound, with elementary
+algebra as their shared foundation. The executable `tail_interval` now
+uses the sharper remainder `16^(-d) r(n+d+1)/15` while retaining the old
+coarse `tail_budget` interface as a valid independent bound. The shifted
+bound has leading constant 1/64; no limit theorem is asserted merely from
+that one-sided asymptotic upper bound.
+
 ## 4. A clock-inclusive structural map
 
 Define the unreduced recurrence
@@ -160,6 +192,21 @@ Classical BBP supplies
 \mathrm{seriesValue}
  =16\sum_{m\ge1}16^{-m}r(m)=\pi.
 \]
+
+A concrete route to discharge this formal source obligation is the uniformly
+convergent geometric expansion of
+
+\[
+\int_0^1\frac{4-2u^3-u^4-u^5}{1-u^8/16}\,du.
+\]
+
+Its integrand is exactly `4u/(u^2-2)-4(u-2)/(u^2-2u+2)`; an antiderivative
+on [0,1] is `2 log(2-u^2)-2 log(u^2-2u+2)+4 arctan(u-1)`.
+The endpoint logarithms cancel and the arctangent values give pi. Thus the
+source obligation splits into a dominated geometric-series interchange,
+an elementary rational identity, and a standard fundamental-theorem-of-
+calculus evaluation. This reduction is a paper proof, not an undocumented
+Lean theorem import. A separate source lane owns its formalization.
 
 The pinned mathlib revision is
 `4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84`. Searches for BBP and
@@ -212,7 +259,7 @@ Run
 python -m unittest discover -s tests -p test_duck_bbp.py -v
 ```
 
-The six tests passed with exact rational arithmetic. They cover independent
+The seven tests passed with exact rational arithmetic. They cover independent
 partial fractions versus the collapsed polynomial on small and held-out
 large indices; coefficient certificates and monotonicity; nested tail
 enclosures against separately evaluated deeper sums; independent Machin

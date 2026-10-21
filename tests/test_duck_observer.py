@@ -1,11 +1,14 @@
 from dataclasses import FrozenInstanceError, replace
 from itertools import product
+import hashlib
+import json
 import unittest
 
 from observational_succ.duck_observer import (
     FiniteObserver, DistinguishingWord, ClosedRelation, ObserverError,
     ProbeBudgetExceeded, distinguish, verify_certificate, observable_quotient,
     is_morphism, common_observable_factor, from_causal_endo, as_eos_morphism,
+    lean_closed_relation_certificate,
 )
 
 
@@ -28,6 +31,28 @@ def exhaustive_word(left, right, x, y):
 
 
 class DuckObserverTests(unittest.TestCase):
+    def test_exact_lean_certificate_export_and_hostile_labels(self):
+        left = model(((1, 0),), ("same", "same"), source="A\naxiom fake : False")
+        right = model(((0,),), ("same",), source="B")
+        cert = distinguish(left, right, 0, 0)
+        source = lean_closed_relation_certificate(left, right, cert)
+        payload_line = next(line for line in source.splitlines()
+                            if line.startswith("-- Exact declared-model/certificate JSON: "))
+        payload = payload_line.split(": ", 1)[1]
+        self.assertEqual(json.loads(payload)["left"]["source_id"], left.source_id)
+        self.assertIn(hashlib.sha256(payload.encode("ascii")).hexdigest(), source)
+        self.assertNotIn("\naxiom fake", source)
+        self.assertIn("def stepLeft : Fin 1 → Fin 2 → Fin 2", source)
+        self.assertIn("theorem all_words (word : List (Fin 1))", source)
+        self.assertEqual(source, lean_closed_relation_certificate(left, right, cert))
+        with self.assertRaises(ObserverError):
+            lean_closed_relation_certificate(left, right, replace(cert, pairs=((0, 0),)))
+        with self.assertRaises(ObserverError):
+            lean_closed_relation_certificate(replace(left, epoch=1), right, cert)
+        empty = model((), ("same",))
+        self.assertIn("fun a => Fin.elim0 a", lean_closed_relation_certificate(
+            empty, empty, distinguish(empty, empty, 0, 0)))
+
     def test_exhaustive_unary_models_and_partition(self):
         comparisons = 0
         for n in range(1, 4):
@@ -46,6 +71,7 @@ class DuckObserverTests(unittest.TestCase):
                         if oracle is not None:
                             self.assertEqual(cert.word, oracle)
                             self.assertLessEqual(len(cert.word), n*n-1)
+                            self.assertLessEqual(len(cert.word), max(0, n-2))
                         comparisons += 1
         self.assertEqual(comparisons, 2010)
 
@@ -63,8 +89,21 @@ class DuckObserverTests(unittest.TestCase):
                     self.assertEqual(type(cert) is ClosedRelation, oracle is None)
                     if oracle is not None:
                         self.assertEqual(cert.word, oracle)
+                        self.assertLessEqual(len(cert.word), len(left.states)+len(right.states)-2)
                     comparisons += 1
         self.assertEqual(comparisons, 16384)
+
+    def test_sharp_linear_depth_bound(self):
+        for n in range(1, 25):
+            chain = model((tuple(min(i+1, n-1) for i in range(n)),),
+                          ("zero",)*(n-1)+("one",))
+            idle = model(((0,),), ("zero",))
+            witness = distinguish(chain, idle, 0, 0)
+            self.assertEqual(len(witness.word), n-1)
+            self.assertTrue(verify_certificate(chain, idle, witness))
+            if n >= 2:
+                internal = distinguish(chain, chain, 0, 1)
+                self.assertEqual(len(internal.word), n-2)
 
     def test_mutated_relation_cannot_drop_closure(self):
         left = model(((1, 1),), ("0", "1"))

@@ -5,7 +5,7 @@ import unittest
 
 from observational_succ.duck_bbp import (
     coefficient_budget, forcing, forced_orbit, lifted_orbit,
-    partial_transport_residual, pi_interval, tail_budget, tail_interval,
+    partial_transport_residual, pi_interval, source_tail_budget, tail_budget, tail_interval,
 )
 
 
@@ -32,6 +32,21 @@ class BaileyCrandallExactTests(unittest.TestCase):
                 22264*u**4+42263*u**3+26429*u*u+5443*u)
         self.assertEqual(forcing(1),Q(47,15))
         self.assertGreater(forcing(1),3)  # Reject an overstrong constant.
+
+    def test_source_sensitive_bounds_from_positive_fraction_decomposition(self):
+        for n in [0,1,2,7,31,257,65536]:
+            m=n+1
+            positive=Q(6,(8*m-7)*(8*m-4))+Q(4,(8*m-7)*(8*m-3))+Q(5,(8*m-7)*(8*m-2))
+            self.assertEqual(forcing(m),positive)
+            self.assertLessEqual(source_tail_budget(n),tail_budget(n))
+            self.assertLessEqual(source_tail_budget(n),Q(1,(8*n+1)**2))
+            lo,hi=tail_interval(n,24)
+            self.assertGreater(lo,forcing(m)/16)
+            self.assertLess(hi,source_tail_budget(n))
+            u=m-1;den=(2*m-1)*(4*m-1)*(8*m-7)*(8*m-3)
+            num=120*m*m-89*m+16
+            self.assertEqual(15*den-(8*m-7)**2*num,
+                3776*u**3+5136*u*u+2007*u+178)
 
     def test_infinite_tail_enclosures_against_separate_deeper_sum(self):
         for n in [0,1,2,7,31,257]:
@@ -75,7 +90,7 @@ class BaileyCrandallExactTests(unittest.TestCase):
 
     def test_exact_input_domain(self):
         for bad in [True,False,1.0,Q(1),float('nan'),float('inf'),-1]:
-            for fn in [forcing,tail_budget,lifted_orbit,forced_orbit,pi_interval]:
+            for fn in [forcing,tail_budget,source_tail_budget,lifted_orbit,forced_orbit,pi_interval]:
                 with self.assertRaises(ValueError):fn(bad)
         with self.assertRaises(ValueError):forcing(0)
         with self.assertRaises(ValueError):tail_interval(0,False)

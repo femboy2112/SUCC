@@ -34,16 +34,22 @@ def tail_budget(n: int) -> Fraction:
     return Fraction(47, 225*(n+1)**2)
 
 
+def source_tail_budget(n: int) -> Fraction:
+    """Sharper source-sensitive bound t_n<=r(n+1)/15, n>=0."""
+    _natural(n, "n")
+    return forcing(n+1)/15
+
+
 def tail_interval(n: int, depth: int) -> tuple[Fraction, Fraction]:
     """Strict rational enclosure for sum_{k>=1}16^-k r(n+k).
 
     The omitted infinite tail is bounded analytically, not estimated from the
-    last observed term. Depth zero is legitimate and returns [0, tail_budget].
+    last observed term. Depth zero is legitimate and returns [0, source_tail_budget].
     """
     _natural(n, "n")
     _natural(depth, "depth")
     partial = sum((forcing(n+k)/16**k for k in range(1, depth+1)), Fraction())
-    return partial, partial + tail_budget(n+depth)/16**depth
+    return partial, partial + source_tail_budget(n+depth)/16**depth
 
 
 def lifted_orbit(n: int) -> Fraction:

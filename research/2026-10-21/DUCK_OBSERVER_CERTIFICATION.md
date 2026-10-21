@@ -7,7 +7,7 @@ This lane owns `formal/DuckObserver.lean`,
 It preserves `formal/DuckPrinciple.lean` and all imported archives.
 
 **Initial status:** the mathematical statements below are **PAPER_PROVED**;
-the finite implementation is **EXACT_FINITE_CHECK**. The thirteen new Lean
+the finite implementation is **EXACT_FINITE_CHECK**. The seventeen new Lean
 declarations require the coordinator's actual hosted compiler and axiom receipt
 before any **LEAN_KERNEL_PROVED** promotion. The local toolchain was downloaded,
 but execution returned `error: failed to locate application`; no local kernel
@@ -106,6 +106,10 @@ All names have prefix `ObservationalSUCC.Duck.Observer`.
 | `morphism_word_readout` | Their finite-word final readouts agree universally. |
 | `behavior_step` | Behavioral equality is closed under every action. |
 | `closed_relation_all_words` | Report agreement plus action closure proves all-word agreement. |
+| `validated_table_all_words` | A checked finite Boolean relation table supplies both complete hypotheses. |
+| `finite_table_positive_control` | An exact erased flip/idle relation is accepted. |
+| `finite_table_closure_negative_control` | Dropping a necessary successor pair is rejected. |
+| `finite_table_readout_negative_control` | A related pair with different readout is rejected. |
 | `quotient_is_morphism` | The actual behavioral quotient has the declared structure. |
 | `quotient_equality_iff_behavior` | Quotient equality has exactly the proposed meaning. |
 | `quotient_is_behaviorally_separated` | No distinct quotient states have identical all-word behavior. |
@@ -130,6 +134,26 @@ action word. Thus at most `nm` pairs enter the queue. A dequeued pair with
 different readouts supplies a genuine distinguishing word. FIFO order ensures
 minimum length; deterministic action ordering resolves ties. The shortest
 path has no repeated vertex, so its word length is at most `nm-1`.
+
+An independent refinement argument gives the **sharp linear bound `n+m-2`**
+whenever a distinguishing word exists. Form the disjoint union of the two
+observers with their common action and output interface; it has `N=n+m`
+states. Let `P_r` identify states agreeing on every word of length at most `r`.
+`P_0` is the current-readout partition, and `P_{r+1}` refines by successor
+`P_r` classes. If `P_{r+1}=P_r`, action congruence makes every later partition
+equal too. Thus if a pair first separates at depth `r`, all `r` preceding
+refinements must be strict. The initial partition has at least two classes
+(otherwise all states report one common value forever), so `P_r` has at least
+`r+2` classes. Hence `r+2 <= N`. This argument independently bounds an exhaustive
+word-search horizon without relying on product-path counting. For two states
+of a single `n`-state observer the same proof improves the bound to `n-2`.
+
+Both linear bounds are attained. Take the unary `n`-state chain with transition
+`i -> min(i+1,n-1)` and readout one only at its terminal state. Against the
+one-state constant-zero observer, initial state zero first differs after
+`n-1=n+1-2` actions. Internally, states zero and one first differ after `n-2`
+actions for `n>=2`. Exact tests cover this family through `n=24`. The general
+linear-bound proof is a paper proof, not an added Lean declaration.
 
 If BFS empties without a difference, its complete reached-pair relation
 contains the initial pair, every pair has equal current reports, and every
@@ -213,7 +237,7 @@ Command run on this lane:
 python -m unittest discover -s tests -p 'test_duck_observer.py' -v
 ```
 
-**11 tests passed.** Independent word enumeration checked 2,010 within-model
+**13 tests passed.** Independent word enumeration checked 2,010 within-model
 comparisons across every unary binary-output model with 1..3 states. Another
 16,384 comparisons cover all pairs of two-state/two-action/binary-output
 models and all initial pairs. The oracle enumerates words and applies raw
@@ -225,7 +249,9 @@ Negative controls cover missing closure, mismatching reports, a shortened
 false witness, stale source/epoch/transition/readout binding, duplicate or
 missing relation entries, immutable evidence, budget exhaustion, type-confused
 indices, erasure, mismatched alphabets/bases, empty boundaries, changed causal
-epoch and variable-cost adapters. Finite census supports implementation
+epoch and variable-cost adapters. The exporter additionally rejects stale or
+nonclosed input and escapes hostile model labels in its complete JSON comment.
+Finite census supports implementation
 fidelity, not the universal proof by itself.
 
 Proposed kernel mutations for the coordinator's genuine compiler:
@@ -259,9 +285,49 @@ causal/EOS interfaces. The mathematical source is a declared finite simulator;
 external-source authenticity remains a separate obligation.
 
 Next verdict-changing proof debt: formalize the concrete BFS program and its
-shortest-word bound, or synthesize a Lean finite-relation instance for every
-accepted Python certificate. Until that refinement is checked, the universal
-closure theorem and finite Python certificates remain distinct evidence levels.
+shortest-word bound. The finite-table exporter below instead provides a small
+independent kernel-checking route for individual equivalence certificates;
+it does not formally prove the Python search correct or shortest.
 For pi, first supply an actual source-preserving finite quotient with an
 independently proved global observation scope; mere similarity to a finite
 clock cannot manufacture such a quotient.
+
+## 9. A proof-producing finite certificate route
+
+`RelationTableLaws` fixes the exact state types `Fin n` and `Fin m`, action
+type `Fin k`, two total transition tables, natural-valued readouts and a Boolean
+relation table. Its hypotheses are precisely report agreement at every related
+pair and closure under every action. `relationTableValid` decides this entire
+finite proposition. The theorem `validated_table_all_words` takes a proof that
+this decision is `true`, recovers both hypotheses by `of_decide_eq_true`, and
+applies the general induction theorem. There is no new axiom, native evaluation
+shortcut, callback registration or presumed trust in the table producer.
+
+Three separate declarations are exact controls: `finite_table_positive_control`
+accepts the total relation between an erased two-state flip and a one-state
+idle observer; `finite_table_closure_negative_control` rejects the singleton
+nonclosed relation; `finite_table_readout_negative_control` rejects the same
+total relation when the two-state readout distinguishes its states. These
+are intended kernel computations using `by decide`, not finite experimental
+substitutes for `validated_table_all_words`.
+
+`lean_closed_relation_certificate` emits literal Lean tables from a supplied
+closed relation, a shared injective natural-number encoding of the two models'
+string readouts, and three declarations: complete table validation, initial
+membership, and the resulting universally quantified `all_words` proposition.
+The exact model and certificate are serialized as single-line ASCII JSON with
+a SHA256 comment. Source labels cannot inject declarations. Empty action sets
+are encoded with `Fin.elim0`; initial states ensure both carriers are nonempty.
+The table producer first runs the Python checker, but this success is not used
+as an axiom: Lean independently recomputes the finite laws. A complete source
+hash and successful build of this generated file are still necessary before
+calling any particular generated theorem kernel checked.
+
+This is proof-producing translation for individual certificates, not a proof
+that the Python exporter always preserves semantics. The exported literals,
+shared readout encoding and original-model JSON must be compared independently
+when binding a formal theorem back to a consumer claim. The hash authenticates
+content against an externally pinned receipt; it does not authenticate the
+physical source named in that content. A false generated table must fail
+`checked`, irrespective of Python's prior verdict. No defense against arbitrary
+hostile code running inside the same Python interpreter is advertised.

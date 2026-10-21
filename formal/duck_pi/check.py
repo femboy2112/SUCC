@@ -10,6 +10,7 @@ MODULES = {
     'DuckPrinciple': ('formal', 'ObservationalSUCC.Duck'),
     'DuckObserver': ('formal', 'ObservationalSUCC.Duck.Observer'),
     'BaileyCrandall': ('formal/duck_pi', 'ObservationalSUCC.BaileyCrandall'),
+    'BBPIntegral': ('formal/duck_pi', 'DuckPiIntegral'),
     'LogisticFactor': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
     'Normality': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
 }
@@ -53,11 +54,12 @@ def digest(b): return hashlib.sha256(b).hexdigest()
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--output', type=Path, required=True)
     args=ap.parse_args(); output=args.output.resolve(); output.mkdir(parents=True, exist_ok=True)
-    sys.path.insert(0,str(ROOT/'scripts'))
+    sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'scripts'))
     from cambrian_audit_c_lean import uncomment
     paths=[ROOT/'formal'/f'{n}.lean' for n in ['DuckPrinciple','DuckObserver','FutureSafeForgetting']]
     paths += [p for p in PROJECT.rglob('*') if p.is_file() and '.lake' not in p.parts and '__pycache__' not in p.parts and p.suffix in {'.lean','.py','.toml'}]
     paths += [PROJECT/'lean-toolchain',PROJECT/'lake-manifest.json',ROOT/'formal/kernel_audit/ExportCommand.lean',ROOT/'.github/workflows/duck-pi-proof.yml']
+    paths += [ROOT/'observational_succ/duck_observer.py']
     hashes={str(p.relative_to(ROOT)):digest(p.read_bytes()) for p in sorted(set(paths))}
     for p in paths:
         if p.suffix=='.lean' and re.search(r'\b(sorry|admit|axiom|unsafe|native_decide)\b',uncomment(p.read_text())):
@@ -89,7 +91,7 @@ def main():
     template=(ROOT/'formal/kernel_audit/ExportCommand.lean').read_text()
     for module,(directory,namespace) in MODULES.items():
         cwd=ROOT/directory;source=cwd/(module+'.lean')
-        names=[namespace+'.'+n for n in re.findall(r'^theorem\s+([A-Za-z0-9_]+)',source.read_text(),re.M)]
+        names=[namespace+'.'+n for n in re.findall(r'^(?:@\[[^\]]+\]\s*)?theorem\s+([A-Za-z0-9_]+)',source.read_text(),re.M)]
         if directory=='formal':
             cmd=['lean','-o',str(standalone/(module+'.olean')),source.name]; use_env=env
         else:
@@ -137,8 +139,38 @@ def main():
             'positive_source_sha256':digest(('import '+module+'\n'+body).encode()),
             'mutant_source_sha256':digest(('import '+module+'\n'+body.replace(old,new,1)).encode())})
         if not passed:failures.append('mutation:'+label)
+    generated=[]
+    if 'DuckObserver' in successes:
+        from observational_succ.duck_observer import FiniteObserver, distinguish, lean_closed_relation_certificate
+        def model(tag,rows,outputs):
+            return FiniteObserver(tag,0,'literal-output',tuple(str(i) for i in range(len(outputs))),
+                tuple(str(i) for i in range(len(rows))),rows,outputs)
+        pairs=[('two_actions',model('left',((1,0,1),(2,1,0)),('a','b','a')),
+                model('right',((1,0),(0,1)),('a','b'))),
+               ('empty_alphabet',model('left',(),('a',)),model('right',(),('a',)))]
+        for label,left,right in pairs:
+            body=lean_closed_relation_certificate(left,right,distinguish(left,right,0,0))
+            ns='ObservationalSUCC.Duck.Generated.'
+            footer=template+'\n'+''.join('#print axioms '+ns+n+'\n#succ_export '+ns+n+'\n'
+                for n in ['checked','initial_mem','all_words'])
+            file=output/('Generated_'+label+'.lean');file.write_text(body+'\n'+footer)
+            positive=run('generated-'+label,['lean',str(file)],ROOT/'formal',env)
+            found={}
+            for line in positive.stdout.splitlines():
+                if 'SUCC_THEOREM_JSON ' in line:
+                    e=json.loads(line.split('SUCC_THEOREM_JSON ',1)[1]);name=e.pop('name')
+                    assert not set(e['axioms'])-ALLOWED
+                    e['type_sha256']=digest(e['type_expr'].encode());found[name]=e
+            changed=re.sub(r'(?m)^(def observeRight[^\n]*:=).+$',r'\1 fun _ => 99',body)
+            assert changed!=body
+            mutant=output/('Generated_'+label+'_mutant.lean');mutant.write_text(changed)
+            negative=run('generated-'+label+'-mutant',['lean',str(mutant)],ROOT/'formal',env)
+            passed=positive.returncode==0 and len(found)==3 and negative.returncode!=0 and 'decide' in negative.stdout
+            generated.append({'name':label,'passed':passed,'source_sha256':digest(body.encode()),
+                'mutant_sha256':digest(changed.encode()),'theorem_exports':found})
+            if not passed:failures.append('generated:'+label)
     assert hashes=={p:digest((ROOT/p).read_bytes()) for p in hashes},'source changed during build'
-    record={'schema':'succ.duck-pi.kernel-observation.v1','build_succeeded':not failures and prerequisite.returncode==0,'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'git_tree':subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=ROOT,text=True).strip(),'lean_version':version,'source_hashes':hashes,'dependency_revisions':pins,'successful_modules':successes,'failed_modules':failures,'commands':commands,'theorem_exports':exports,'authority_admitted':False,'negative_mutations':mutations}
+    record={'schema':'succ.duck-pi.kernel-observation.v1','build_succeeded':not failures and prerequisite.returncode==0,'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'git_tree':subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=ROOT,text=True).strip(),'lean_version':version,'source_hashes':hashes,'dependency_revisions':pins,'successful_modules':successes,'failed_modules':failures,'commands':commands,'theorem_exports':exports,'authority_admitted':False,'negative_mutations':mutations,'generated_certificates':generated}
     encoded=json.dumps(record,sort_keys=True,separators=(',',':')).encode()
     (output/'kernel-observation.json').write_bytes(encoded+b'\n')
     print('DUCK_PI_RECORD_BASE64 '+base64.b64encode(gzip.compress(encoded)).decode(),flush=True)

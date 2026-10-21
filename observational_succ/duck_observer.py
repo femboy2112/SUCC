@@ -9,7 +9,9 @@ external source.  No registry, callback or caller-written Boolean is authority.
 from __future__ import annotations
 
 from collections import deque
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
+import hashlib
+import json
 
 
 class ObserverError(ValueError):
@@ -124,12 +126,77 @@ def verify_certificate(left: FiniteObserver, right: FiniteObserver,
                for a, b in relation)
 
 
+def lean_closed_relation_certificate(left: FiniteObserver, right: FiniteObserver,
+                                     cert: ClosedRelation) -> str:
+    """Emit an exact Lean proposition and proof candidate for a closed table.
+
+    Generated arithmetic literals represent the full models, with a shared
+    injective encoding of their output strings. `by decide` checks the complete
+    relation laws inside Lean; no Python success is imported as an axiom. Only
+    an actual successful pinned kernel build makes this a formal certificate.
+    JSON/hash comments bind the declared source data for external receipt
+    comparison, but do not establish physical source authenticity.
+    """
+    if type(cert) is not ClosedRelation or not verify_certificate(left, right, cert):
+        raise ObserverError("Require a valid exact closed-relation certificate")
+    payload = json.dumps(asdict(cert), sort_keys=True, ensure_ascii=True,
+                         separators=(",", ":"))
+    digest = hashlib.sha256(payload.encode("ascii")).hexdigest()
+    alphabet = sorted(set(left.outputs + right.outputs))
+    codes = {value: i for i, value in enumerate(alphabet)}
+
+    def cases(values, variable):
+        result = values[-1]
+        for i in range(len(values) - 2, -1, -1):
+            result = f"(if {variable}.val = {i} then {values[i]} else {result})"
+        return result
+
+    def steps(model):
+        n = len(model.states)
+        if not model.actions:
+            return "fun a => Fin.elim0 a"
+        rows = [cases([f"({v} : Fin {n})" for v in row], "x")
+                for row in model.transitions]
+        return "fun a x => " + cases(rows, "a")
+
+    def reports(model):
+        return "fun x => " + cases([str(codes[v]) for v in model.outputs], "x")
+
+    n, m, k = len(left.states), len(right.states), len(left.actions)
+    relation = " || ".join(f"(x.val == {i} && y.val == {j})"
+                           for i, j in sorted(cert.pairs))
+    x, y = cert.initial
+    return f'''import DuckObserver
+set_option autoImplicit false
+namespace ObservationalSUCC.Duck.Generated
+open ObservationalSUCC.Duck ObservationalSUCC.Duck.Observer
+-- Exact declared-model/certificate SHA256: {digest}
+-- Exact declared-model/certificate JSON: {payload}
+def stepLeft : Fin {k} → Fin {n} → Fin {n} := {steps(left)}
+def stepRight : Fin {k} → Fin {m} → Fin {m} := {steps(right)}
+def observeLeft : Fin {n} → Nat := {reports(left)}
+def observeRight : Fin {m} → Nat := {reports(right)}
+def relation : Fin {n} → Fin {m} → Bool := fun x y => {relation}
+theorem checked :
+    relationTableValid stepLeft observeLeft stepRight observeRight relation = true := by decide
+theorem initial_mem : relation {x} {y} = true := by decide
+theorem all_words (word : List (Fin {k})) :
+    observeLeft (runWord stepLeft word {x}) = observeRight (runWord stepRight word {y}) :=
+  validated_table_all_words stepLeft observeLeft stepRight observeRight relation
+    checked {x} {y} initial_mem word
+end ObservationalSUCC.Duck.Generated
+'''
+
+
 def distinguish(left: FiniteObserver, right: FiniteObserver, x: int, y: int,
                 *, max_pairs: int | None = None) -> DistinguishingWord | ClosedRelation:
     """BFS returns a shortest distinguishing word or a complete closed relation.
 
-    At most |X|*|Y| pairs are inserted; a shortest witness has length at most
-    |X|*|Y|-1.  Resource exhaustion raises; it never certifies equivalence.
+    At most |X|*|Y| pairs are inserted. A shortest witness has length at most
+    |X|+|Y|-2, by partition refinement on the disjoint union (the simpler
+    product-path argument gives |X|*|Y|-1). Resource exhaustion raises; it
+    never certifies equivalence. These algorithm bounds have paper proofs;
+    the separate Lean table checker certifies individual all-word results.
     """
     _compatible(left, right)
     _state(left, x)

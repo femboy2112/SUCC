@@ -124,6 +124,32 @@ theorem forcing_succ_lt {x : ℝ} (hx : 1 ≤ x) :
   apply (div_lt_div_iff₀ hp' hp).2
   nlinarith [hpoly]
 
+/-- A shifted bound with the correct leading asymptotic constant. -/
+theorem forcing_le_shifted {x : ℝ} (hx : 1 ≤ x) :
+    forcing x ≤ 15/(8*x-7)^2 := by
+  have hden := denominator_pos hx
+  have hxpos : 0 < 8*x-7 := by linarith
+  have hu : 0 ≤ x-1 := by linarith
+  have hpoly : 0 ≤ 3776*(x-1)^3 + 5136*(x-1)^2 + 2007*(x-1) + 178 := by
+    positivity
+  have hid : 15*denominator x - (8*x-7)^2*numerator x =
+      3776*(x-1)^3 + 5136*(x-1)^2 + 2007*(x-1) + 178 := by
+    unfold denominator numerator
+    ring
+  unfold forcing
+  apply (div_le_div_iff₀ hden (sq_pos_of_pos hxpos)).2
+  nlinarith [hpoly]
+
+theorem forcing_nat_add_le (n k : ℕ) :
+    forcing ((n : ℝ)+k+1) ≤ forcing ((n : ℝ)+1) := by
+  induction k with
+  | zero => simp
+  | succ k ih =>
+    have hn : (0:ℝ) ≤ n := by positivity
+    have hk : (0:ℝ) ≤ k := by positivity
+    have hs := forcing_succ_lt (x := (n:ℝ)+k+1) (by linarith)
+    simpa only [Nat.cast_succ, add_assoc] using hs.le.trans ih
+
 def tailTerm (n k : ℕ) : ℝ :=
   (1/16 : ℝ)^(k+1) * forcing ((n : ℝ) + k + 1)
 
@@ -185,11 +211,40 @@ theorem tail_recursion (n : ℕ) :
     apply tsum_congr
     intro k
     simp only [tailTerm, Nat.cast_add, Nat.cast_one, pow_succ]
-    congr 1 <;> ring
+    have harg : (n:ℝ)+((k:ℝ)+1)+1 = ((n:ℝ)+1)+k+1 := by ring
+    rw [harg]
+    ring
   rw [hshift] at hsplit
   simp only [tailTerm, Nat.cast_zero, add_zero, zero_add, pow_one] at hsplit
   change tail n = _ at hsplit
   linarith
+
+/-- The first omitted source coefficient gives a sharper rational enclosure. -/
+theorem tail_le_source (n : ℕ) : tail n ≤ forcing ((n : ℝ)+1)/15 := by
+  have hp : ∀ k, tailTerm n k ≤ (1/16 : ℝ)^(k+1)*forcing ((n : ℝ)+1) := by
+    intro k
+    exact mul_le_mul_of_nonneg_left (forcing_nat_add_le n k) (by positivity)
+  have h := tsum_le_tsum hp (tail_summable n)
+    (geometric_weight_hasSum.summable.mul_right (forcing ((n : ℝ)+1)))
+  rw [(geometric_weight_hasSum.mul_right (forcing ((n : ℝ)+1))).tsum_eq] at h
+  change tail n ≤ _ at h
+  convert h using 1 <;> ring
+
+theorem tail_gt_source (n : ℕ) : forcing ((n : ℝ)+1)/16 < tail n := by
+  have ht := tail_recursion n
+  have hp := tail_pos (n+1)
+  linarith
+
+theorem tail_le_shifted (n : ℕ) : tail n ≤ 1/(8*(n : ℝ)+1)^2 := by
+  have hn : (0:ℝ) ≤ n := by positivity
+  have hf := forcing_le_shifted (x := (n:ℝ)+1) (by linarith)
+  have heq : 8*((n:ℝ)+1)-7 = 8*(n:ℝ)+1 := by ring
+  rw [heq] at hf
+  apply (tail_le_source n).trans
+  have hd : 0 < (8*(n:ℝ)+1)^2 := by positivity
+  apply (div_le_div_iff₀ (by norm_num) hd).2
+  have hb := (le_div_iff₀ hd).1 hf
+  nlinarith
 
 /-- The recurrence before reducing modulo one. -/
 def liftedOrbit : ℕ → ℝ
@@ -212,6 +267,31 @@ theorem corrected_clock_semiconjugacy (n : ℕ) (x : ℝ) :
   linarith
 
 def seriesValue : ℝ := 16 * tail 0
+
+/-- The standard BBP coefficient series is exactly the defined source value. -/
+theorem series_bbp_hasSum :
+    HasSum (fun k : ℕ => (1/16 : ℝ)^k *
+      (4/(8*(k:ℝ)+1) - 2/(8*(k:ℝ)+4) - 1/(8*(k:ℝ)+5) - 1/(8*(k:ℝ)+6)))
+      seriesValue := by
+  have h := (tail_summable 0).hasSum.mul_left (16 : ℝ)
+  change HasSum (fun k => 16*tailTerm 0 k) seriesValue at h
+  apply h.congr_fun
+  intro k
+  have hk : (0:ℝ) ≤ k := by positivity
+  simp only [tailTerm, Nat.cast_zero, zero_add]
+  rw [forcing_bbp_fractions (by linarith : (1:ℝ) ≤ (k:ℝ)+1), pow_succ]
+  have h1 : 8*((k:ℝ)+1)-7 = 8*(k:ℝ)+1 := by ring
+  have h2 : 8*((k:ℝ)+1)-4 = 8*(k:ℝ)+4 := by ring
+  have h3 : 8*((k:ℝ)+1)-3 = 8*(k:ℝ)+5 := by ring
+  have h4 : 8*((k:ℝ)+1)-2 = 8*(k:ℝ)+6 := by ring
+  rw [h1, h2, h3, h4]
+  ring
+
+/-- Source-neutral transport of an independently proved standard BBP sum. -/
+theorem seriesValue_eq_of_hasSum (z : ℝ)
+    (h : HasSum (fun k : ℕ => (1/16 : ℝ)^k *
+      (4/(8*(k:ℝ)+1) - 2/(8*(k:ℝ)+4) - 1/(8*(k:ℝ)+5) - 1/(8*(k:ℝ)+6))) z) :
+    seriesValue = z := series_bbp_hasSum.unique h
 
 theorem series_orbit_transport (n : ℕ) :
     16^n * seriesValue = liftedOrbit (n+1) + tail (n+1) := by
