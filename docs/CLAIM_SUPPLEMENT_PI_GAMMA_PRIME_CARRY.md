@@ -16,4 +16,6 @@
 
 | PCG-09 | For the full coprime prime-power factorization of the **observed midpoint denominator**, correctly transported CRT local characters multiply to the global b-successor additive character at every step | CLASSICAL CRT / PROVED PAPER; exact finite source-relative checks | Remove CRT inverses: phase reconstruction fails; individual local averages do not control synchronous product |
 
+| PCG-10 | For dyadic Wallis midpoint y_(2^N), reduced denominator D has log D = (log 16) 2^N + O(N), so the N-step observation horizon is log_2(log D)+O(1) | ELEMENTARY PROVED PAPER, 20th exact test; not a mixing theorem | Long-orbit exponential-sum bounds cannot be silently applied at a doubly logarithmic horizon |
+
 No old global claim IDs, source archives, or historical finite receipts are rewritten. Tests on the isolated drafted implementation are not promoted to repository-wide regression or Lean proof status.
