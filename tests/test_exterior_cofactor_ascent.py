@@ -102,6 +102,22 @@ class TestCofactorExterior(unittest.TestCase):
         self.assertEqual(gcd(gcd(xs[0],xs[1]),xs[2]),1)
         self.assertGreater(gcd(xs[0],xs[1]),1)
 
+    def test_local_primitive_vs_pairwise_clock(self):
+        from observational_succ.exterior_cofactor_ascent import local_prime_clock_factors
+        from itertools import product
+        for m in range(2,6):
+            for p in (2,3,5):
+                vals = list(product(range(p), repeat=m))
+                exact_primitive = Fraction(sum(any(x != 0 for x in v) for v in vals),p**m)
+                exact_pairwise = Fraction(sum(sum(x == 0 for x in v) <= 1 for v in vals),p**m)
+                got=local_prime_clock_factors(m,p)
+                self.assertEqual(got["primitive_gcd"],exact_primitive)
+                self.assertEqual(got["pairwise_summands"],exact_pairwise)
+        self.assertEqual(local_prime_clock_factors(3,2),
+                         {"primitive_gcd":Fraction(7,8),"pairwise_summands":Fraction(1,2)})
+        with self.assertRaises(ExteriorAscentError):
+            local_prime_clock_factors(3,4)
+
     def test_locally_finite_infinite_weighted_carrier(self):
         # Sum of partition numbers p(0)+...+p(X), not a literal X^infinity.
         known=(1,2,4,7,12,19,30,45,67,97,139)

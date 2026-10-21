@@ -143,7 +143,24 @@ so the budget-\(X\) count is \(\sum_{n\le X}p(n)\), the cumulative integer-parti
 
 A Hilbert/operator infinite exterior completion would instead need suitable operator-ideal conditions, compatible cylinder measures or analogous genuine convergence and source-realization proofs.
 
-## G. Missing machinery and exact next research questions
+## G. Global primitivity becomes generic while pairwise coprimality becomes rare
+
+A new exact **local clock divergence** appears already at fixed genuine prime \(p\), when \(m\) grows. For independent summand residues in \((\mathbb Z/p\mathbb Z)^m\):
+
+- Global primitivity at \(p\) means **not all \(m\) slots are divisible by \(p\)**. Probability: \(P_{\mathrm{gcd},p}(m)=1-p^{-m}\).
+- Pairwise coprimality among the \(m\) summand slots means **at most one is divisible by \(p\)**. Probability:
+  \[
+  P_{\mathrm{pair},p}(m)=(1-1/p)^m+
+  \frac m p(1-1/p)^{m-1}.
+  \]
+
+These are exact finite residue counts, not an independence assertion across different integer prime places. At \(m=2\) they coincide. At \(m=3,p=2\), the first probability is \(7/8\), while the second is \(1/2\). For fixed \(p\) and \(m\to\infty\), the first tends to **one** and the second to **zero**.
+
+Thus the naive two-summand Euler factor, where every prime occupies at most one summand slot, gets **less** representative of globally primitive source tuples as dimension grows—not more. The total \(c=\sum_i x_i\) is an additional coordinate whose local divisibility is correlated by actual additive cancellation, requiring a separate valuation-compatibility or character constraint.
+
+This is an exact reason to introduce prime-valuation **hypergraphs** and source-typed local cancellation gates instead of extending the two-summand pairwise-coprime support grammar to higher dimensions.
+
+## H. Missing machinery and exact next research questions
 
 **Priority 1 — Two-summand high-divisor incidence (the actual \(t=2/3\) frontier).** Use \(du+ev=fw\), \(D=def>X^2\), \(U=uvw<X/4\) and the genuine powerful weights \(g_t\). Derive a dyadic \(D\)-dependent incidence saving, or an improved high-\(H\) tail. Coarse cofactor cardinality alone is insufficient; treat generalized-Fermat/Pythagorean-square families as adversarial examples.
 

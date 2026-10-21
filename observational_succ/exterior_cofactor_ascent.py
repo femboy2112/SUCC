@@ -7,7 +7,7 @@ from __future__ import annotations
 
 from fractions import Fraction
 from itertools import combinations
-from math import comb, factorial, gcd, prod
+from math import comb, factorial, gcd, isqrt, prod
 
 
 class ExteriorAscentError(ValueError):
@@ -208,3 +208,23 @@ def weighted_infinite_count(X, affordable_weights):
         for s in range(w,X+1):
             counts[s]+=counts[s-w]
     return sum(counts)
+
+
+def local_prime_clock_factors(m, p):
+    """Exact source-local p-residue laws for m summand slots only.
+
+    Global primitive (gcd(x_1,...,x_m)=1 locally): not every residue is 0.
+    Pairwise coprime summands: at most one residue is 0.
+    The TOTAL c=sum(x_i) is NOT included in the pairwise law; including
+    it requires a separate additive-cancellation gate.
+    """
+    _pos(m, "m")
+    _pos(p, "p")
+    if p < 2 or any(p%q==0 for q in range(2,isqrt(p)+1)):
+        raise ExteriorAscentError("p must be a genuine prime")
+    nonzero = Fraction(p-1,p)
+    zero = Fraction(1,p)
+    return {
+        "primitive_gcd": Fraction(1)-zero**m,
+        "pairwise_summands": nonzero**m + m*zero*nonzero**(m-1),
+    }
