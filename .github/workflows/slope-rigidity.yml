@@ -1,0 +1,36 @@
+name: Primitive slope kernel research
+
+# The research PR builds after mainline consolidation. The shared concurrency
+# group serializes it with the authority gate; it never writes that catalogue.
+on:
+  pull_request:
+    paths: ['formal/slope_rigidity/**', '.github/workflows/slope-rigidity.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: succ-pinned-formal-kernel
+  cancel-in-progress: false
+jobs:
+  slope_kernel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install hash-verified pinned Lean
+        run: |
+          set -euo pipefail
+          curl --fail -L https://github.com/leanprover/lean4/releases/download/v4.14.0/lean-4.14.0-linux.tar.zst -o "$RUNNER_TEMP/lean.tar.zst"
+          echo "320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a  $RUNNER_TEMP/lean.tar.zst" | sha256sum -c -
+          tar --no-same-owner --zstd -xf "$RUNNER_TEMP/lean.tar.zst" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/lean-4.14.0-linux/bin" >> "$GITHUB_PATH"
+      - name: Fetch targeted pinned cache
+        working-directory: formal/slope_rigidity
+        run: lake exe cache get Mathlib/RingTheory/Coprime/Lemmas.lean Mathlib/Data/Nat/GCD/Basic.lean Mathlib/Tactic/Ring.lean Mathlib/Tactic/NormNum.lean
+      - name: Build, export exact types and reject false mutations
+        run: python3 formal/slope_rigidity/check.py "$RUNNER_TEMP/succ-slope-audit"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: succ-slope-kernel-observation
+          path: ${{ runner.temp }}/succ-slope-audit/
