@@ -1,6 +1,6 @@
 # Observational SUCC
 
-**π polygon SUCC / normality path-defect laboratory (2026-10-20, draft research):** [source-first dossier](research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md) · [POL-01–08 claim supplement](docs/CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md) · [exact finite receipt](research/2026-10-20/PI_POLYGON_NORMALITY_FINITE_RECEIPT.json). Rigorous rational polygon enclosures for π, a proved noncommuting-limit observation defect and source-to-orbit error bounds, with hostile non-normal paths. **Uniform polygon geometry does NOT establish π normality; the required π-specific Fourier decay remains OPEN.**
+**π polygon SUCC / normality path-defect laboratory (2026-10-20, draft research):** [source-first dossier](research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md) · [POL-01–09 claim supplement](docs/CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md) · [exact finite receipt](research/2026-10-20/PI_POLYGON_NORMALITY_FINITE_RECEIPT.json). Rigorous rational polygon enclosures for π, a proved noncommuting-limit observation defect and source-to-orbit error bounds, with hostile non-normal paths. **Uniform polygon geometry does NOT establish π normality; the required π-specific Fourier decay remains OPEN.**
 
 **Academic Main VII — reviewed mathematics and proof authority:**
 [integration audit](docs/academic_main_vii/integration_audit.md) ·
