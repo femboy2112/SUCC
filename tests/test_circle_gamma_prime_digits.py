@@ -13,7 +13,7 @@ from observational_succ.circle_gamma_prime_digits import (
     pi_heat_mellin_mode_bounds, genuine_prime_smooth_coefficients,
     phase_turn, mixed_prime_turn, factorized_phase_with_mixed_terms,
     rational_digits, cyclic_debruijn_edge_flow, prime_dilation_polygon_defect,
-    succ_fucc_mode_covariance
+    succ_fucc_mode_covariance, prime_euler_pi_bracket
 )
 from observational_succ.pi_polygon_normality import polygon_pi_bracket
 
@@ -178,6 +178,40 @@ class PrimeSystemWithPhases(unittest.TestCase):
                     extracted*=p**k
                     self.assertEqual(v, target//p**k)
                 self.assertEqual(extracted,target)
+
+
+class FullPrimeToGeometricPiInverse(unittest.TestCase):
+    def test_prime_prefix_interval_certifies_same_pi_as_polygon_and_machin(self):
+        machin_lo,machin_hi=independent_machin()
+        polygon=polygon_pi_bracket(12,256)
+        for P in (2,3,5,7,10,29,100,200):
+            br=prime_euler_pi_bracket(P,256)
+            self.assertEqual(br.cutoff,P)
+            self.assertEqual(br.missing_zeta_upper,Q(1,P))
+            self.assertLess(br.lower_pi,machin_lo)
+            self.assertGreater(br.upper_pi,machin_hi)
+            self.assertLess(br.lower_pi,polygon.upper)
+            self.assertGreater(br.upper_pi,polygon.lower)
+            self.assertLessEqual(br.lower_pi**2,6*br.euler_partial)
+            self.assertGreaterEqual(br.upper_pi**2,6*(br.euler_partial+Q(1,P)))
+            self.assertTrue(all(p>=2 and all(p%d for d in range(2,int(p**.5)+1))
+                                for p in br.genuine_primes))
+        self.assertEqual(prime_euler_pi_bracket(3,256).euler_partial,Q(3,2))
+        self.assertEqual(prime_euler_pi_bracket(5,256).euler_partial,Q(25,16))
+        self.assertGreater(prime_euler_pi_bracket(200,256).lower_pi,
+                           prime_euler_pi_bracket(100,256).lower_pi)
+
+    def test_missing_prime_breaks_claimed_full_prefix_tail_bound(self):
+        # Fake set {2,5} at cutoff P=5, omitting prime 3:
+        # 25/18 + 1/5 < sum_{n=1}^{30} 1/n² < zeta(2).
+        # Hence a falsely claimed full-prime interval would miss pi.
+        forged = Q(2*2,2*2-1)*Q(5*5,5*5-1)
+        self.assertEqual(forged,Q(25,18))
+        actual_partial_harmonic=sum((Q(1,n*n) for n in range(1,31)),Q())
+        self.assertGreater(actual_partial_harmonic,forged+Q(1,5))
+        for invalid in (1,True,5.0,Q(5)):
+            with self.assertRaises(ValueError):
+                prime_euler_pi_bracket(invalid)
 
 
 class HierarchicalDigitTransport(unittest.TestCase):
