@@ -1,10 +1,16 @@
 # Exterior determinant formal research
 
-**Build status at implementation:** awaiting an actual pinned kernel run. The
-presence of Lean source is not a kernel-verification receipt. The workflow writes
-a research-only observation only after all eleven positive declarations, their
-exact type/axiom exports and three deliberately false mutations pass their gates.
-It does not add entries to the installed Level C authority catalogue.
+**Verification:** all eleven declarations passed the actual pinned Lean kernel
+build in [run 39548086330](https://github.com/femboy2112/SUCC/actions/runs/39548086330),
+job `119050852183`, at PR #220 head
+`d54ea23a3cd1f4e0c8d81484c039fa145a050326`. All three deliberately false mutations
+were rejected for their expected proof errors. The synthetic merge
+`6f59c91dba1e99466277503db09cd3f3c5bdf6c0` and the head have the identical tree
+`ee3f4f703adb41f5f427735ed7d10dc1a2ee4360`. The complete observed receipt is
+[kernel-observation-39548086330.json](receipts/kernel-observation-39548086330.json),
+file SHA256 `87f4e15159b79a554d16d5d528dab2d8cf44266418cf0364cb9af22f0303d8b9`.
+Its status is **KERNEL_CHECKED_NOT_AUTHORITY_ADMITTED**. No entry was added to
+the installed Level C authority catalogue.
 
 The project pins Lean 4.14.0 and mathlib
 `4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84`. Its source uses an arbitrary finite
@@ -14,7 +20,7 @@ the arithmetic theorems; the elementary row-product and row-replacement lemmas
 are generalized to any commutative ring.
 
 For natural row moduli `d i`, a positive natural sum modulus `q`, and
-`P = ∏ i, d i`, `g = gcd_i d i`, the principal proposed export is
+`P = ∏ i, d i`, `g = gcd_i d i`, the principal checked export is
 
 \[
 \frac{Pq}{\gcd(q,g)}\mid |\det A|.
@@ -33,6 +39,15 @@ the displayed divisor. If any one column is globally primitive, its coordinate
 gcd forces `g=1`. This recovers the full-product divisor without pairwise
 coprimality. No division by a possibly zero modulus is performed: `q>0` makes
 the canceled gcd positive.
+
+The effective-modulus declaration's exact Lean type SHA256 is
+`0ccbabc1c862e2699ef04e91ecce8085c47dda84df3787547947cddda3caa080`.
+The primitive full-product type SHA256 is
+`bc7ce6d0e88b5f2c01aa3d5bb0852e93fa5df16b93d2d98ca2feda2d6c70b80c`.
+All eleven full expressions, quantified hypotheses, universe parameters and
+transitive axiom lists are in the receipt. Their digests were independently
+recomputed; all eight bound source hashes match the checked published tree.
+Every observed axiom list is exactly `propext`, `Classical.choice`, `Quot.sound`.
 
 The formalized vanishing corollary takes `|det A| < E` as an explicit hypothesis.
 **Hadamard bounds and the rational rank/cardinality theorem are not formalized
@@ -57,6 +72,14 @@ Imported compiler, mathlib compiled cache, hosted runner, trusted checker and
 artifact transport remain trusted infrastructure. A research JSON file alone
 confers no proof authority. No original arithmetic source, weighted abc moment,
 or analytic global counting conclusion is certified by this project.
+
+The first [push build 39547781359](https://github.com/femboy2112/SUCC/actions/runs/39547781359)
+failed on a missing finset rewrite and a concrete matrix numeral reduction.
+It produced no successful observation. The minimal corrections preserve all
+theorem statements. An old-head PR run and a duplicate corrected-head push run
+were canceled in the serialized queue; neither is counted as a successful check.
+[review-39548086330.json](receipts/review-39548086330.json) records those outcomes,
+the exact repair, source comparison and remaining formal obligations.
 
 ## Prior art and scope
 

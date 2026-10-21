@@ -1,0 +1,76 @@
+{
+  "all_type_digests_recomputed": true,
+  "axiom_envelope": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "canceled_old_head_pr": {
+    "conclusion": "cancelled",
+    "event": "pull_request",
+    "head_sha": "f02cf8dbc3c8a1b87d91f1c3d56796ad926e3a00",
+    "interpretation": "Canceled after the repair superseded this head; not a passing check.",
+    "run_id": 39547956368
+  },
+  "dependency_revisions": {
+    "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d",
+    "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+    "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+    "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+    "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+    "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+    "mathlib": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+    "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+    "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d"
+  },
+  "duplicate_canceled_push": {
+    "conclusion": "cancelled",
+    "event": "push",
+    "head_sha": "d54ea23a3cd1f4e0c8d81484c039fa145a050326",
+    "interpretation": "Not a passing check. Same-head pull-request run supplied the actual successful kernel build.",
+    "run_id": 39548081597
+  },
+  "first_failed_run": {
+    "cause": [
+      "Explicit Finset.sdiff_singleton_eq_erase rewrite was missing.",
+      "Exact matrix numeral reduction needed Matrix.vecHead and Matrix.vecTail unfolded."
+    ],
+    "conclusion": "failure",
+    "event": "push",
+    "head_sha": "f02cf8dbc3c8a1b87d91f1c3d56796ad926e3a00",
+    "job_id": 119049883014,
+    "repair_local_commit": "ff7d72bad3585462054bc8b0007cc87227c99bc0",
+    "repair_published_head": "d54ea23a3cd1f4e0c8d81484c039fa145a050326",
+    "run_id": 39547781359,
+    "successful_observation_generated": false
+  },
+  "negative_controls": [
+    "shared_prime_overclaim",
+    "nonstrict_determinant_bound",
+    "false_nonsingleton_arithmetic"
+  ],
+  "not_formalized": [
+    "Hadamard/source-height determinant bound",
+    "Rational rank theorem",
+    "Rank-stratum cardinality bound",
+    "Weighted abc moment or endpoint"
+  ],
+  "observation_file": "formal/exterior_rigidity/receipts/kernel-observation-39548086330.json",
+  "observation_file_sha256": "87f4e15159b79a554d16d5d528dab2d8cf44266418cf0364cb9af22f0303d8b9",
+  "positive_exports": 11,
+  "schema": "succ.formal.research.review.v1",
+  "source_file_count": 8,
+  "source_hashes_compared_to_published_environment": true,
+  "status": "KERNEL_CHECKED_NOT_AUTHORITY_ADMITTED",
+  "successful_run": {
+    "checked_git_commit": "6f59c91dba1e99466277503db09cd3f3c5bdf6c0",
+    "conclusion": "success",
+    "event": "pull_request",
+    "head_and_checked_tree": "ee3f4f703adb41f5f427735ed7d10dc1a2ee4360",
+    "head_sha": "d54ea23a3cd1f4e0c8d81484c039fa145a050326",
+    "job_id": 119050852183,
+    "run_id": 39548086330
+  },
+  "toolchain": "leanprover/lean4:v4.14.0",
+  "trusted_authority_catalogue_changed": false
+}
