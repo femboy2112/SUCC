@@ -318,3 +318,44 @@ The independent exact module function prime_euler_pi_bracket(P,bits) computes ev
 This is a **genuine π-specific source equality** absent from mere general circle translation symmetry. It tightly connects the geometric circle, all N and all primes. It is still NOT an estimate of the lacunary phase sums Σ_(j<N)e(h b^jπ); a sum/product representation of a constant does not by itself prove its normality. The next research effort should attempt to transport **quantitative convergence of the prime Euler representation**, with its full mixed phase information, to these digit-block correlations. Merely using the convergence bound O(1/P) at P=P(N) only supplies pointwise numerical accuracy; it does NOT pay for the necessary cancellation.
 
 **Status:** all identities classical, derivations explicitly given here; exact prime-to-circle source enclosures and missing-prime hostile control new to this project and tested at finite cutoffs. RH is not needed for these identities and is **permitted** if it buys a genuine uniform-in-N improvement at the later phase-correlation step.
+
+
+## 12. From the entire prime system to exact hierarchical digit cylinders (CGPD-14)
+
+The prior sections identified the SAME real π from two independent sources. We can carry this identification all the way into each *finite* positional digit cylinder, without presupposing a normal distribution.
+
+For any base b≥2 and finite depth k, the first k base-b fractional digits of π define one interval (cylinder)
+
+    I_(b,k)(j)=[3+j/b^k, 3+(j+1)/b^k),
+       j=floor(b^k(π−3)).
+
+Since π is irrational, it does not lie on any finite cylinder boundary 3+j/b^k. Define the distance δ_(b,k)>0 from π to the nearest such boundary. By §11 the ideal full-prime Euler interval
+
+    J_P=[sqrt(6E_P),sqrt(6(E_P+1/P))]
+
+contains π and has width tending to zero as P→∞. Consequently, **for each fixed b,k**, there exists a finite prime cutoff P_(b,k) so that J_P is contained in the correct digit cylinder for all larger admissible P. Since dyadic outward root enclosures approach their ideal endpoints as precision grows, there is also a sufficiently high **finite** rational precision that certifies this containment.
+
+This yields the precise logical statement:
+
+    ∀b≥2 ∀k≥1 ∃finite P,precision:
+       exact full-prime-Euler bracket forces the first k digits of π.
+
+It is a **finite source-transport/computability theorem**. Nothing about the asymptotic distribution of blocks follows, because P and the precision budget may grow arbitrarily rapidly with k; the theorem is ∀k ∃P, not a uniform estimate in k, block w, or orbit horizon N. Current code explicitly caps its parameters, so the mathematical universal quantifiers do NOT assert that the installed finite program reaches arbitrary k.
+
+Similarly, for any proposed number y≠π (within the circumference scale), choose its separation η=|y−π|>0. Some ideal full-prime Euler interval has width <η/2 and hence excludes y. Thus a **wrong digit path claiming to equal π has a finite source-fidelity witness**, even without accessing infinitely many digits. This is the strongest faithful version of the author's "any alternate nonnormal path offloads the discrepancy to a path defect" intuition we can prove. It does **not** exclude the possibility that the uniquely authentic π path itself is nonnormal; that would not be a source-map defect.
+
+A finite exact implementation, certified_pi_digits_from_full_primes(P,b,max_digits,bits,optional_polygon_steps), uses genuine full prime prefixes only, returns the common prefix of every number in the outward rational interval, and **stops at the first unverified digit**. The optional polygon interval is an independently derived crosscheck/intersection, not a substitute for an unobserved prime. The following frozen witnesses have no supplied π digit input:
+
+| Genuine prime cutoff P | Certified decimal fractional prefix | Source |
+| ---: | :--- | :--- |
+| 5 | none | full-prime Euler alone, interval crosses several first-digit cylinders |
+| 29 | 1 | true primes through 29 |
+| 199 | 14 | true primes through 199 |
+| 4999 | 141 | true primes through 4999 |
+| 199 plus 20 polygon doublings | 1415926535 | intersection of two independent exact π source enclosures |
+
+The independent code tests the source interval bounds, the truncated-digit boundary, a deliberate missing-prime mutation and insufficient-precision refusal; the CI replays a frozen source-only JSON receipt byte-for-byte. Those numbers are **finite certificates**, not observed digit-frequency probabilities.
+
+**Exact information lesson:** the full prime product + geometric π equality determines a *unique compatible infinite digit path*. A path cannot be replaced by a different one without eventually contradicting finite source measurements. But uniqueness, absolute source determination and a short global law do not force that path to be typical for base-b Haar/Bernoulli frequencies. For that, §5's π-specific, unbounded-N cancellation remains necessary.
+
+**Status:** classical/elementary derivation plus finite exact model. The infinite path-identification statement is **PROVED PAPER**, while "π's unique path is normal" is **UNVERIFIED**. No RH assumption was needed for the digit-cylinder existence theorem.
