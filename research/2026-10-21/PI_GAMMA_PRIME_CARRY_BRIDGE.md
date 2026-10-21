@@ -198,3 +198,22 @@ For any nonempty partition Q_n=S∪T, set F_S(j)=prod_(q in S)e(h b^j a_n u_q/q)
 **Reproduction and hostile mutation:** exact integer-residue character reconstruction holds in tests 17–19 for several n, bases and frequencies. Replacing every transport inverse u_q by 1 demonstrably breaks the identity (n=2). The finite trial-factorization checker rejects large denominators; this computational resource boundary does not restrict the general CRT theorem.
 
 **PCG-09 status: PROVED PAPER / EXACT FINITE TESTED MODEL; academic novelty unverified.** Decisive remaining task: obtain genuine new incomplete-orbit cancellation at unbounded horizons, with source-map and long-period nonmixing controls.
+
+
+## PCG-10: dyadic midpoint conductor grows exponentially; orbit window doubly logarithmic
+
+For n=2^m, write C=binom(2n,n)=2u with u odd, and reduce the midpoint y_n to denominator D. Because 8n+3 is coprime to both (2n+1) and (4n+1), **the exact reduced conductor** is
+
+`D=(2n+1)(4n+1)u²/gcd(8n+3,u²)`.
+
+The central binomial coefficient is the maximum of (2n+1) coefficients summing to 4^n, so `4^n/(2n+1)≤C≤4^n`. Moreover `1≤gcd(8n+3,u²)≤8n+3`. Therefore:
+
+**`16^n(4n+1)/[4(8n+3)(2n+1)] ≤ D ≤ (2n+1)(4n+1)16^n/4`.**
+
+Consequently `log D = n log16 + O(log n)`. For the source-tracked observation horizon n=2^N,
+
+**`log D_(2^N) = 4(log2)2^N + O(N)`, hence `N = log_2(log D_(2^N)) + O(1)`.**
+
+This quantifies the missing analytic tool: the N-step orbit we must control is **doubly logarithmic in the full denominator**, not remotely a full-period or even a generic long-orbit sample. One cannot insert a complete-orbit exponential-sum bound or a bound with a larger minimum sample length without verifying its hypotheses at this extreme short-window scale. No impossibility theorem about every conceivable harmonic argument is asserted.
+
+**Status: PCG-10 PROVED PAPER / exact finite checked (test 20); academic novelty UNVERIFIED.** Its verdict-changing probe is genuine Kummer-source cancellation or joint CRT decorrelation at n=2^N, length N, over all fixed nonzero h.
