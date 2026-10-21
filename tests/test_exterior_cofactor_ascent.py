@@ -2,7 +2,7 @@
 import unittest
 from fractions import Fraction
 from itertools import product
-from math import comb, factorial, gcd, lcm
+from math import comb, factorial, gcd, lcm, prod
 
 from observational_succ.exterior_cofactor_ascent import (
     ExteriorAscentError, cofactor_certificate, determinant,
@@ -117,6 +117,30 @@ class TestCofactorExterior(unittest.TestCase):
                          {"primitive_gcd":Fraction(7,8),"pairwise_summands":Fraction(1,2)})
         with self.assertRaises(ExteriorAscentError):
             local_prime_clock_factors(3,4)
+
+    def test_shared_moduli_effective_exterior(self):
+        from observational_succ.exterior_cofactor_ascent import (
+            effective_exterior_modulus, general_exterior_certificate)
+        # Effective divisor is sharp when all x_i share a prime:
+        # full product 16 does not divide determinant 8.
+        ds=(2,2,2,2)
+        pts=((2,2,2,6),(4,2,2,8),(2,4,2,8))
+        cert=general_exterior_certificate(ds,pts,8)
+        self.assertEqual(cert["E"],8)
+        self.assertEqual(cert["D"],16)
+        self.assertEqual(abs(cert["determinant"]),8)
+        self.assertFalse(cert["globally_primitive"])
+        # Overlapping d_i are fine when the actual sources are primitive:
+        # gcd(d_1,d_2,d_3)=1 restores divisibility by all four moduli.
+        ds2=(2,2,1,3)
+        pts2=((2,2,5,9),(2,4,3,9),(4,2,3,9))
+        cert2=general_exterior_certificate(ds2,pts2,9)
+        self.assertEqual(cert2["E"],prod(ds2))
+        self.assertTrue(cert2["globally_primitive"])
+        self.assertEqual(cert2["determinant"]%12,0)
+        self.assertEqual(effective_exterior_modulus((2,2,4)),8)
+        with self.assertRaises(ExteriorAscentError):
+            effective_exterior_modulus((1,2))
 
     def test_locally_finite_infinite_weighted_carrier(self):
         # Sum of partition numbers p(0)+...+p(X), not a literal X^infinity.

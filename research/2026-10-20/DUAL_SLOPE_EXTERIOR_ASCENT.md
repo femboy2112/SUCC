@@ -181,3 +181,53 @@ This is an exact reason to introduce prime-valuation **hypergraphs** and source-
 The new standard-library module exterior_cofactor_ascent.py and test_exterior_cofactor_ascent.py supply deterministic integer/Fraction checks: exhaustive small stars-and-bars counts, residue-simplex errors, strict type guards, exact Bareiss determinants, m=2 singleton calibration, explicit m=3 counterfamilies with unbounded multiplicity, cofactor AM–GM checks, failure of pairwise-prime simplification in m>=3, and the locally finite partition carrier.
 
 These are **falsification controls** supporting the complete elementary proofs above, not standalone proofs of their universal quantifiers. The high-divisor dyadic estimate remains OPEN. No existing source archive, theorem, namespace registry or main commit is modified by this research branch.
+
+
+## I. Strengthened shared-prime exterior divisor (new lemma EXT-04)
+
+The earlier EXT-01 assumed that all coordinate moduli were pairwise
+coprime. That assumption is **not necessary**, and in higher dimensions
+it is too restrictive for generic globally primitive tuples.
+
+Take arbitrary positive moduli d_1,...,d_m,q for the m summands and total.
+Put P=prod_i d_i and g=gcd(d_1,...,d_m). For any m admissible source
+points, their first-m-coordinate determinant Delta satisfies
+
+\[
+\boxed{E:=P\,\frac{q}{\gcd(q,g)}\mid\Delta.}
+\]
+
+**Proof.** Row i has factor d_i, so P divides Delta. Replacing row i
+by the sum of all m rows leaves Delta unchanged, since all other
+terms in the expansion have repeated rows. The replacement row is
+the vector of totals c, each divisible by q. Hence
+q * prod_(j!=i) d_j divides Delta for each i. Their lcm together
+with P has p-adic exponent
+\[
+\sum_{i=1}^m v_p(d_i)+
+\max\left(0,v_p(q)-\min_i v_p(d_i)\right).
+\]
+This is exactly v_p(E), as required.
+
+**Primitive upgrade.** If *one* actual source point is globally
+primitive, gcd(x_1,...,x_m)=1, then g=1 (since every d_i divides x_i).
+Consequently
+\[
+\boxed{D=Pq\mid\Delta}
+\]
+even when the individual d_i share primes! In particular,
+D>X^m still forces rank drop on the globally primitive source,
+without assuming pairwise-coprime coordinate moduli.
+
+**Sharp countercontrol.** With m=3, all moduli (2,2,2,2), use
+the three nonprimitive points (2,2,2,6), (4,2,2,8), (2,4,2,8).
+The determinant has absolute value 8, which is exactly E, while
+D=16 does *not* divide it. Thus the primitive/overlap condition
+cannot be dropped. A positive control with overlapping d_1=d_2=2
+and genuinely primitive points is (2,2,5,9), (2,4,3,9), (4,2,3,9)
+under moduli (2,2,1,3): the determinant is -36, divisible by D=12.
+
+**Status:** elementary PROVED PAPER with exact finite hostile controls;
+not Lean checked and academic novelty unverified. EXT-04 upgrades the
+dimension ladder into the actual globally primitive source category.
+EXT-01/02 remain useful special cases with a simpler statement.

@@ -228,3 +228,48 @@ def local_prime_clock_factors(m, p):
         "primitive_gcd": Fraction(1)-zero**m,
         "pairwise_summands": nonzero**m + m*zero*nonzero**(m-1),
     }
+
+
+def effective_exterior_modulus(moduli):
+    """Universal exterior divisor without pairwise-coprime hypotheses.
+
+    With m summand-row divisors d_i and a total-row divisor q:
+        P = product(d_i); g = gcd(d_1,...,d_m)
+        E = P*q/gcd(g,q).
+    For any m admissible source points E divides their determinant.
+    Under one globally primitive source point g=1, hence E=P*q.
+    """
+    ds=tuple(_pos(d,"modulus") for d in moduli)
+    if len(ds)<3:
+        raise ExteriorAscentError("require at least two summand moduli plus total")
+    P=prod(ds[:-1])
+    common=gcd(*ds[:-1])
+    return P*(ds[-1]//gcd(ds[-1],common))
+
+
+def general_exterior_certificate(moduli, points, X):
+    """Full integer determinant divisibility with shared moduli allowed.
+
+    Multilinearity factors product(d_i); replacing row i with row sum
+    additionally factors q*product(d_j:j!=i). Their lcm is E.
+    A primitive source point forces gcd(d_1,...,d_m)=1, so E=prod(all moduli).
+    """
+    ds=tuple(_pos(d,"modulus") for d in moduli)
+    m=len(ds)-1
+    if m<2 or len(points)!=m:
+        raise ExteriorAscentError("require exactly m source points")
+    X=_x(X)
+    for pt in points:
+        if (len(pt)!=m+1 or any(type(v) is not int or v<=0 for v in pt)
+                or sum(pt[:-1])!=pt[-1] or pt[-1]>X
+                or any(pt[i]%ds[i] for i in range(m+1))):
+            raise ExteriorAscentError("invalid source point or divisibility")
+    det=determinant([[points[j][i] for j in range(m)] for i in range(m)])
+    E=effective_exterior_modulus(ds)
+    if det%E or abs(det)>X**m or (E>X**m and det):
+        raise AssertionError("effective exterior claim refuted")
+    primitive=all(gcd(*pt[:-1])==1 for pt in points)
+    if primitive and E!=prod(ds):
+        raise AssertionError("primitive source unexpectedly lost full modulus")
+    return dict(E=E,D=prod(ds),determinant=det,dimension=m,
+                globally_primitive=primitive,rank_drop_forced=E>X**m)
