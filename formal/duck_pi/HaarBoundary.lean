@@ -35,7 +35,7 @@ theorem empiricalProbability_integral (u : ℕ → AddCircle (1 : ℝ)) (N : ℕ
       (∑ n ∈ Finset.range (N + 1), F (u n)) / (N + 1 : ℝ) := by
   rw [empiricalProbability, ProbabilityMeasure.coe_mk, integral_smul_measure,
     integral_finset_sum_measure (fun n _ => F.integrable (Measure.dirac (u n)))]
-  simp [div_eq_mul_inv, mul_comm]
+  simp [div_eq_mul_inv, mul_comm, ENNReal.toReal_add]
 
 theorem haarUniform_empiricalProbability_tendsto (u : ℕ → AddCircle (1 : ℝ))
     (hu : HaarUniformDistribution u) :

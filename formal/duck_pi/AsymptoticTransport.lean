@@ -58,7 +58,7 @@ theorem pi_forced_orbit_distance_tendsto_zero :
     apply (Source.pi_circle_transport_shifted n).trans
     apply one_div_le_one_div_of_le (by positivity)
     have hn : (0 : ℝ) ≤ n := by positivity
-    nlinarith [sq_nonneg (8*(n : ℝ)+9)]
+    nlinarith [sq_nonneg (n : ℝ)]
 
 /-- The actual forced orbit, starting with its first forcing step, carries the
 same Haar limit as the hexadecimal pi digit orbit. This assumes the former
@@ -75,5 +75,15 @@ theorem baileyCrandall_haar_implies_pi_normal16
       (fun n => ObservationalSUCC.BaileyCrandall.circleOrbit (n+1))) : PiNormal16 := by
   apply pi_interval_equidistribution_implies_normal16
   exact haarUniform_implies_uniformDistribution _ (baileyCrandall_haar_implies_pi_haar hu)
+
+/-- A source-specific, globally quantified Fourier cancellation hypothesis for
+the genuine BBP forced orbit suffices. This hypothesis is the remaining open
+arithmetic input; it is not inferred from the tail estimate. -/
+theorem baileyCrandall_fourier_implies_pi_normal16
+    (hu : FourierCancellation
+      (fun n => ObservationalSUCC.BaileyCrandall.liftedOrbit (n+1))) : PiNormal16 := by
+  apply baileyCrandall_haar_implies_pi_normal16
+  simpa only [ObservationalSUCC.BaileyCrandall.circleOrbit] using
+    fourierCancellation_implies_haarUniform _ hu
 
 end ObservationalSUCC.DuckPi

@@ -242,7 +242,63 @@ assuming equivalences:
   This supplies the Haar-to-interval implication and, composed with the
   already checked cylinder theorem, a conditional Fourier-to-normality claim.
 
-These three modules are **UNVERIFIED until their exact successful kernel
-receipt**. The source-specific Fourier cancellation premise for pi is not
-proved by any of them. The base-power descent in section 5 remains a paper
-proof rather than a Lean declaration.
+Hosted [run 39631731552](https://github.com/femboy2112/SUCC/actions/runs/39631731552)
+subsequently compiled `WeylBridge.lean` and exported all 21 theorem types,
+including the final Fourier-to-real-Haar implication. Its reported checked
+head was `709ba20156962b0f3f62ebcd42b7d592f20db870`; exported axiom sets again
+contained only `propext`, `Classical.choice` and `Quot.sound`. That run failed
+later in `HaarBoundary.lean`. This is a successful Weyl-module observation,
+not a green combined run.
+
+`HaarBoundary.lean`, `HaarIntervals.lean` and the subsequent
+`AsymptoticTransport.lean` remain **UNVERIFIED until their exact successful
+kernel receipt**. The source-specific Fourier cancellation premise for pi
+is not proved by any of them. The base-power descent in section 5 remains a
+paper proof rather than a Lean declaration.
+
+## 8. The exact conditional source chain
+
+`AsymptoticTransport.lean` first treats arbitrary circle sequences `u,v`.
+If their circle distance tends to zero, uniform continuity of each real
+continuous test function on the compact circle gives
+`F(u_n)-F(v_n) → 0`. Cesaro convergence gives convergence of the difference
+of empirical means to zero. Thus actual Haar equidistribution of `u`
+transfers to `v`. No finite sampling premise enters this implication.
+
+For the actual BBP forced orbit, the source theorem is
+
+\[
+d(y_{n+1},[16^n\pi])\le(8n+9)^{-2}\le(n+1)^{-1}\longrightarrow0.
+\]
+
+The clock shift is exactly `n+1`, including `n=0`. `PiSource.lean` obtains
+the first inequality from the separately proved BBP integral identity and
+tail bound; `AsymptoticTransport.lean` does not assume an identification of
+an arbitrary source with pi. The final candidate theorem has the explicit
+premise
+
+```lean
+FourierCancellation
+  (fun n => ObservationalSUCC.BaileyCrandall.liftedOrbit (n+1))
+```
+
+and conclusion `PiNormal16`. Expanding that premise means: for **each**
+nonzero integer `h`, the exponential average over all `0≤n<N` tends to zero
+as `N→∞`. This is a statement about the actual lifted recurrence, not a
+generic orbit or an almost-everywhere assertion. Weyl density supplies the
+Haar limit, shadowing transfers that limit to the pi digit orbit, null
+boundaries supply exact cylinder frequencies, and the floor identity gives
+canonical overlapping block frequencies.
+
+The remaining premise is an open arithmetic pathway gap. RH or ABC is not
+assumed anywhere in this chain. The zero orbit is an exact countermodel to
+inferring equidistribution merely from vanishing shadowing distance: it
+shadows itself with distance zero but fails normality. This also explains
+why the cancellation input cannot be removed from the final theorem type.
+
+An additional read-only internal reviewer independently checked the
+half-open boundary construction against the pinned mathlib definitions and
+the clock shift, denominator inequality and Cesaro argument in the source
+transport chain. No missing mathematical premise was found in those steps.
+This is same-model internal review, not an external mathematical referee.
+The trusted kernel remains the gate for every candidate declaration above.

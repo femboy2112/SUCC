@@ -21,7 +21,8 @@ MODULES = {
 }
 
 # Each mutant has a compiling positive counterpart using the same imports and
-# proof method. Rejecting a missing import or a parser error is not a pass.
+# proof method. Mutants test false finite claims or unsupported proof transport;
+# rejecting a missing import or a parser error is not a pass.
 CONTROLS = [
     ('duck_erased_factor', 'DuckObserver',
      'open ObservationalSUCC.Duck\n'
@@ -52,6 +53,12 @@ CONTROLS = [
      'open ObservationalSUCC.DuckPi\n'
      'example : ¬ NormalTo 16 0 := by\n  exact zero_not_normal 16\n',
      '¬ NormalTo', 'NormalTo'),
+    ('forced_cancellation_premise', 'AsymptoticTransport',
+     'open ObservationalSUCC.DuckPi\n'
+     'example (h : FourierCancellation (fun n => ObservationalSUCC.BaileyCrandall.liftedOrbit (n+1))) : PiNormal16 := by\n'
+     '  exact baileyCrandall_fourier_implies_pi_normal16 h\n',
+     'h : FourierCancellation (fun n => ObservationalSUCC.BaileyCrandall.liftedOrbit (n+1))',
+     'h : True'),
 ]
 
 SOURCE_MUTATIONS = [

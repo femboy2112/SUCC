@@ -424,16 +424,27 @@
     },
     {
       "id": "GAP-HAAR-INTERVAL-FORMAL",
-      "kind": "conclusion",
-      "status": "OPEN",
-      "statement": "Formalize measurability, Haar-null frontier and measure equal to interval length for canonical half-open circle arcs, with exact fractional-part membership. This geometric bridge is not silently supplied by the null-boundary Portmanteau theorem.",
+      "kind": "theorem",
+      "status": "CANDIDATE",
+      "statement": "Canonical half-open circle cylinders are measurable Haar continuity sets with measure equal to their interval length; the candidate supplies the geometric input for interval distribution.",
       "requires": [
         "PI-DEFINITIONS",
         "SOURCE-MATHLIB"
       ],
       "premises": [],
       "files": [
-        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+        "formal/duck_pi/HaarIntervals.lean"
+      ],
+      "form": "unconditional",
+      "formal": [
+        {
+          "path": "formal/duck_pi/HaarIntervals.lean",
+          "declaration": "ObservationalSUCC.DuckPi.circleCylinder_nullBoundary"
+        },
+        {
+          "path": "formal/duck_pi/HaarIntervals.lean",
+          "declaration": "ObservationalSUCC.DuckPi.circleCylinder_measure"
+        }
       ]
     },
     {
@@ -820,6 +831,31 @@
         "observational_succ/duck_bbp_fourier.py"
       ],
       "form": "unconditional"
+    },
+    {
+      "id": "BC-FORCED-NORMAL-LEAN",
+      "kind": "theorem",
+      "form": "implication",
+      "status": "CANDIDATE",
+      "statement": "Actual global Fourier cancellation of the shifted Bailey-Crandall lifted orbit implies base-16 normality of Real.pi, via the proved BBP source, asymptotic Haar transport and canonical circle cylinders.",
+      "requires": [
+        "PI-SOURCE-LEAN",
+        "GAP-HAAR-INTERVAL-FORMAL",
+        "PI-DEFINITIONS",
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [
+        "PI-FORCED-CANCELLATION"
+      ],
+      "files": [
+        "formal/duck_pi/AsymptoticTransport.lean"
+      ],
+      "formal": [
+        {
+          "path": "formal/duck_pi/AsymptoticTransport.lean",
+          "declaration": "ObservationalSUCC.DuckPi.baileyCrandall_fourier_implies_pi_normal16"
+        }
+      ]
     }
   ],
   "formal_status_note": "CANDIDATE labels refer to the current integrated candidate, not a denial of recorded historical kernel successes. observed_kernel is a navigation pointer to an actual run, not independent receipt authentication. Promote only after the coordinator checks the exact final sources and records DUCK_PI_KERNEL_RECEIPT.md."
