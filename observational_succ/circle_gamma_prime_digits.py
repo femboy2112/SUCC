@@ -295,3 +295,66 @@ def prime_euler_pi_bracket(cutoff: int, precision_bits: int = 192) -> PrimeCircl
     upper=rational_sqrt_enclosure(6*(z+tail),precision_bits)[1]
     assert lower < upper
     return PrimeCircleBracket(cutoff, ps, z, tail, lower, upper)
+
+
+@dataclass(frozen=True)
+class PrimeDigitCertificate:
+    """Exact finite prime-system -> π -> base-b cylinder transport."""
+    cutoff: int
+    base: int
+    requested_digits: int
+    certified_digits: str
+    source_interval: tuple[Q, Q]
+    prime_interval: tuple[Q, Q]
+    geometric_crosscheck: bool
+
+
+def certified_pi_digits_from_full_primes(
+    cutoff: int, base: int = 10, max_digits: int = 12,
+    precision_bits: int = 192, polygon_steps: int | None = None
+) -> PrimeDigitCertificate:
+    """Constrain π's initial base-b digits from every genuine prime <= cutoff.
+
+    Prime-only mode does not call polygon construction. Optional independent
+    geometric crosscheck intersects independently valid rational enclosures.
+    The code stops at the first ambiguous cylinder (no guessed digits).
+    This is a finite prefix theorem, NOT a normality or block-frequency claim.
+    """
+    _int(base, "digit base", 2, 36)
+    _int(max_digits, "digit budget", 0, 256)
+    source=prime_euler_pi_bracket(cutoff,precision_bits)
+    prime_bounds=(source.lower_pi,source.upper_pi)
+    lo,hi=prime_bounds
+    if polygon_steps is not None:
+        _int(polygon_steps, "polygon steps", 0, 100)
+        polygon=polygon_pi_bracket(polygon_steps, precision_bits)
+        lo=max(lo,polygon.lower)
+        hi=min(hi,polygon.upper)
+        if lo>=hi:
+            raise ArithmeticError("prime/geometric π intervals contradict")
+    prefix=""
+    if 3<lo<hi<4:
+        lo-=3
+        hi-=3
+        alphabet="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        last=0
+        for k in range(1,max_digits+1):
+            scale=base**k
+            a=lo*scale
+            b=hi*scale
+            low_index=a.numerator//a.denominator
+            high_index=b.numerator//b.denominator
+            if low_index!=high_index:
+                break
+            last=low_index
+            q=last
+            digits=[]
+            for _ in range(k):
+                q,rem=divmod(q,base)
+                digits.append(alphabet[rem])
+            prefix="".join(reversed(digits))
+    return PrimeDigitCertificate(
+        cutoff, base, max_digits, prefix, (source.lower_pi if polygon_steps is None else max(source.lower_pi,polygon.lower),
+        source.upper_pi if polygon_steps is None else min(source.upper_pi,polygon.upper)),
+        prime_bounds, polygon_steps is not None
+    )
