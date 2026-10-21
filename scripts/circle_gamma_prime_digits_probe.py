@@ -15,8 +15,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from observational_succ.circle_gamma_prime_digits import (
     mode_laplacian_polynomial, eval_polynomial, ordered_succ_gamma_weight,
     genuine_prime_smooth_coefficients, factorized_phase_with_mixed_terms,
-    rational_digits, cyclic_debruijn_edge_flow, pi_heat_mellin_mode_bounds
+    rational_digits, cyclic_debruijn_edge_flow, pi_heat_mellin_mode_bounds,
+    prime_euler_pi_bracket
 )
+from observational_succ.pi_polygon_normality import polygon_pi_bracket
 
 PARENT="b116841f12b41aaf7600da39bbb40577f25b6295"
 
@@ -36,6 +38,16 @@ def receipt():
     alternate={f"{a}{b}":alternate.get((a,b),0)
                for a in range(2) for b in range(2)}
     low,high=pi_heat_mellin_mode_bounds(2,3,12,256)
+    prime3=prime_euler_pi_bracket(3,256)
+    prime5=prime_euler_pi_bracket(5,256)
+    poly=polygon_pi_bracket(12,256)
+    forged_euler=Q(25,18)
+    forced_upper=forged_euler+Q(1,5)
+    independent_prefix=sum((Q(1,n*n) for n in range(1,31)),Q())
+    assert independent_prefix>forced_upper
+    assert prime3.euler_partial==Q(3,2)
+    assert prime5.euler_partial==Q(25,16)
+    assert max(prime5.lower_pi,poly.lower)<min(prime5.upper_pi,poly.upper)
     assert low<high
     assert (n,direct,individual,mixed)==(6,Q(5,7),Q(3,7),Q(2,7))
     assert edges=={"00":1,"01":2,"10":2,"11":1}
@@ -68,6 +80,17 @@ def receipt():
                                      sum(edges[key] for key in ("10","11")),
             "two_digit_edges":edges,
             "periodic_binary_third_two_digit_edge_count":alternate,
+        },
+        "prime_to_circle":{
+            "cutoff3":{"euler_partial":str(prime3.euler_partial),
+                       "squared_pi_lower":str(6*prime3.euler_partial),
+                       "squared_pi_upper":str(6*(prime3.euler_partial+prime3.missing_zeta_upper))},
+            "cutoff5":{"euler_partial":str(prime5.euler_partial),
+                       "squared_pi_lower":str(6*prime5.euler_partial),
+                       "squared_pi_upper":str(6*(prime5.euler_partial+prime5.missing_zeta_upper))},
+            "sourced_pi_bounds_overlap_polygon": True,
+            "missing_prime3_invalidated_by_rational_harmonic_prefix": True,
+            "rh_used":False,
         },
         "proof_boundaries":{
             "pi_normality_proved":False,
