@@ -2,6 +2,13 @@
 
 ## Academic Main VII quantitative and authority edges
 
+Post-main arithmetic draft: uniform row slicing + full Möbius inversion give
+ABC-EFF-01; that discrepancy + positive product cutoff + the stronger s-moment
+give ABC-EFF-02/03's effective mean. Positive single-prime strata give
+ABC-EFF-05's t≥1 obstruction. See the
+[effective claim supplement](CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md). These paper-proof
+edges do not depend on the separate slope Lean draft or operator refinement.
+
 | Premises | Checked or proved transport | Conclusion and boundary |
 |---|---|---|
 | Pairwise-coprime divisors + primitive reduced slopes | Nonzero determinant divisible by def; finite packing [P] | N≤1+X²/(def), uniformly in divisors |

@@ -1,5 +1,10 @@
 # Observational SUCC
 
+Post-main research draft: [effective abc mean values](research/2026-10-20/ABC_EFFECTIVE_MEAN.md)
+and the [Academic Main VII completion receipt](docs/academic_main_vii/campaign_completion.md).
+The new paper proof gives every convergence exponent δ<(2−3t)/5 for 0≤t<2/3
+and proves failure of quadratic moments for t≥1. The interval[2/3,1) is open.
+
 **Academic Main VII — reviewed mathematics and proof authority:**
 [integration audit](docs/academic_main_vii/integration_audit.md) ·
 [claim crosswalk](docs/CLAIM_SUPPLEMENT_ACADEMIC_MAIN_VII.md) ·

@@ -19,17 +19,27 @@ its exact validation and final main commit belong in the integration receipt.
 
 ## Next verdict-changing probes
 
-1. **Arithmetic effectiveness — pathway gap:** prove a divisor-uniform primitive
-   lattice error, sum it on a product cutoff def≤Y, and balance it against the
-   stronger s-moment tail. Preserve explicit constants and the valid growth regime.
+1. **Arithmetic effectiveness — established in this research draft:**
+   [ABC-EFF-01–03](../CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md) prove a divisor-uniform
+   primitive error and the rate X^(-δ) for every δ<(2−3t)/5, 0≤t<2/3.
+   The next quantitative question is to improve the weighted boundary sum or
+   obtain usable smaller constants; a larger finite census is not that theorem.
 2. **Endpoint — mathematical boundary of the present method:** the y^(−2/3)
    tail cannot be integrated at t=2/3. A new additive estimate on high-determinant
    singleton strata is needed; extra finite census data cannot settle it.
-3. **Formal slope invariant — formalization gap:** check determinant divisibility,
-   primitive reduced-slope injectivity, then finite spacing/counting in Lean.
-4. **Original signed source — quantitative gap:** replace diagonal moment
-   corrections by the exact parity-block Gram inverse with paid log 2 uncertainty;
-   hold out Gamma depth and independent quadrature. Retain source-core obligations.
+   ABC-EFF-05 proves failure of quadratic moments for every t≥1. The remaining
+   unresolved interval is [2/3,1), not all t≥2/3.
+3. **Formal slope invariant — separate kernel gate:**
+   [PR#211](https://github.com/femboy2112/SUCC/pull/211) checks determinant
+   divisibility, primitive reduced-slope injectivity and the modulus gap.
+   Its actual hosted receipt determines formal status; finite real spacing and
+   cardinality remain the next formalization obligations.
+4. **Original signed source — quantitative gap:**
+   [PR#213](https://github.com/femboy2112/SUCC/pull/213) supplies the exact
+   parity-block moment Gram correction with paid log2 uncertainty and independent
+   held-out depth/quadrature. It also proves that refining only this correction
+   cannot close the fixed ambient/error/trial budget. Improve that budget or the
+   trial family; retain source-core obligations and the original signed source.
 5. **Academic novelty — external-review gap:** compare the precise moment theorem
    with multiplicative correlations/radical averages and obtain an external referee.
    BBLT's exceptional-set theorem has a different target and parameter domain.
