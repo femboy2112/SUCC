@@ -1,0 +1,150 @@
+{
+  "RH_proved": false,
+  "base_is_ancestor": true,
+  "base_main_commit": "b5f9591033db2022bda6a2f16a935c06466f9eff",
+  "base_main_tree": "47f36179aa08416b7e2107d438df4b24b4fe71be",
+  "branch": "astra-cloud/vii-operator-2026-10-20",
+  "elapsed_seconds": 27.014437350000662,
+  "exact_cherry_pick_base_confirmed": true,
+  "focused_test_count": 17,
+  "formal_kernel_verified": false,
+  "origin_main_at_validation": "b5f9591033db2022bda6a2f16a935c06466f9eff",
+  "parent_full_suite_context": {
+    "independently_rerun_here": false,
+    "reported_by": "integration coordinator",
+    "statement": "Main b5f9591033db2022bda6a2f16a935c06466f9eff passed all 6496 tests on Python 3.10 and 3.13 before this task."
+  },
+  "python": "3.12.14",
+  "recorded_at_utc": "2026-10-20T22:31:52.828550+00:00",
+  "referee_cherry_pick_commit": "9ef6c1c95ac7eaef71508bcbe5c0e839f836e641",
+  "referee_original_commit": "9249bb862e843ffb24279a8faeb17d8b3e001484",
+  "referee_result": {
+    "RH_proved": false,
+    "all_recorded_implementation_hashes_match": true,
+    "failures": 0,
+    "implementation_sha256": "e22351e2a747ec311c853993986e921c6ef3c5ab45e68e10a7a26e567b5a2651",
+    "scope": "finite arithmetic holdout; source comparison remains an external paper dependency",
+    "script_sha256": "b76405340254f9dbf79a90f2955db0f9a6b2ccf523b5dee60a4d602d532a1335",
+    "sectors": {
+      "even_derivative": {
+        "both_lower_matrices_negative_definite_only": true,
+        "exact_and_quadrature_gains_PD": true,
+        "fixed_budget_diagonal_ceilings": [
+          "-6871190365592769978959/1000000000000000000000000",
+          "-6680071650059200874923/1000000000000000000000000"
+        ],
+        "method_ceiling_recomputed_from_outward_parents": true
+      },
+      "odd_derivative": {
+        "both_lower_matrices_negative_definite_only": true,
+        "exact_and_quadrature_gains_PD": true,
+        "fixed_budget_diagonal_ceilings": [
+          "-3122111819564344893771/250000000000000000000000",
+          "-12384220161980533810999/1000000000000000000000000"
+        ],
+        "method_ceiling_recomputed_from_outward_parents": true
+      }
+    },
+    "source_receipt_sha256": "321d80b0dc38aeddf52f6c0b0c398370b3b18fae285c6fbd1751acc999bc28f9",
+    "source_sign_certified": false,
+    "symbolic_shifted_gram_cases": 60
+  },
+  "referee_result_matches_historical_receipt": true,
+  "referee_symbolic_shifted_gram_cases": 60,
+  "research_cherry_pick_commit": "1d96ff15fdbd86fdb0e1a6106c753ae0c3fe8912",
+  "research_original_commit": "cf3fc46e0f4c09c26e476d79ae4994b7b2a8f81e",
+  "runs": [
+    {
+      "argv": [
+        "/workspace/scratch/0a4459d8f487/vii-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_cloud_exact_moment_inverse.py",
+        "-v"
+      ],
+      "elapsed_seconds": 1.631142288000774,
+      "exit_code": 0,
+      "expected_test_count": 8,
+      "stderr": "test_complete_correction_bounds_true_displaced_inverse (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_complete_correction_bounds_true_displaced_inverse) ... ok\ntest_exact_domain_and_high_moment_guards (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_exact_domain_and_high_moment_guards) ... ok\ntest_exact_weight_stronger_than_old_diagonal (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_exact_weight_stronger_than_old_diagonal) ... ok\ntest_inverse_identity_large_rational_offdiagonal (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_inverse_identity_large_rational_offdiagonal) ... ok\ntest_no_invented_improvement_when_zero_prime_weight (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_no_invented_improvement_when_zero_prime_weight) ... ok\ntest_quadrature_independent_discretizations (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_quadrature_independent_discretizations) ... ok\ntest_reverse_young_rejects_indefinite_weight (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_reverse_young_rejects_indefinite_weight) ... ok\ntest_shift_matrix_enclosures_at_displaced_rational_points (test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_shift_matrix_enclosures_at_displaced_rational_points) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.633s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/0a4459d8f487/vii-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_cloud_operator_transport.py",
+        "-v"
+      ],
+      "elapsed_seconds": 1.2313744780003617,
+      "exit_code": 0,
+      "expected_test_count": 9,
+      "stderr": "test_compact_relative_bound_can_give_primitive_identity (test_cloud_operator_transport.CloudOperatorTransportTests.test_compact_relative_bound_can_give_primitive_identity) ... ok\ntest_endpoint_cauchy_sup_bound (test_cloud_operator_transport.CloudOperatorTransportTests.test_endpoint_cauchy_sup_bound) ... ok\ntest_finite_constrained_inverse_identity (test_cloud_operator_transport.CloudOperatorTransportTests.test_finite_constrained_inverse_identity) ... ok\ntest_inverse_polynomial_against_pointwise_equation (test_cloud_operator_transport.CloudOperatorTransportTests.test_inverse_polynomial_against_pointwise_equation) ... ok\ntest_kernel_descent_is_required (test_cloud_operator_transport.CloudOperatorTransportTests.test_kernel_descent_is_required) ... ok\ntest_nonclosability_sequence_exact (test_cloud_operator_transport.CloudOperatorTransportTests.test_nonclosability_sequence_exact) ... ok\ntest_reject_nonhigh_and_nonexact_inputs (test_cloud_operator_transport.CloudOperatorTransportTests.test_reject_nonhigh_and_nonexact_inputs) ... ok\ntest_shift_error_bounds_against_exact_displaced_operator (test_cloud_operator_transport.CloudOperatorTransportTests.test_shift_error_bounds_against_exact_displaced_operator) ... ok\ntest_two_constraint_saving_is_psd_when_shift_exact (test_cloud_operator_transport.CloudOperatorTransportTests.test_two_constraint_saving_is_psd_when_shift_exact) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.563s\n\nOK\n",
+      "stdout": ""
+    },
+    {
+      "argv": [
+        "/workspace/scratch/0a4459d8f487/vii-venv/bin/python",
+        "scripts/main_vii_operator_holdout.py",
+        "--target-repo",
+        "/workspace/scratch/0a4459d8f487/vii-postmain-operator",
+        "--source-receipt",
+        "/workspace/scratch/0a4459d8f487/vii-postmain-operator/research/2026-10-20/CLOUD_EXACT_MOMENT_SOURCE_J10.json",
+        "--output",
+        "/tmp/succ-postmain-operator-5uvwilz5/symbolic.json"
+      ],
+      "elapsed_seconds": 24.093230769,
+      "exit_code": 0,
+      "stderr": "",
+      "stdout": "{\n  \"RH_proved\": false,\n  \"all_recorded_implementation_hashes_match\": true,\n  \"failures\": 0,\n  \"implementation_sha256\": \"e22351e2a747ec311c853993986e921c6ef3c5ab45e68e10a7a26e567b5a2651\",\n  \"scope\": \"finite arithmetic holdout; source comparison remains an external paper dependency\",\n  \"script_sha256\": \"b76405340254f9dbf79a90f2955db0f9a6b2ccf523b5dee60a4d602d532a1335\",\n  \"sectors\": {\n    \"even_derivative\": {\n      \"both_lower_matrices_negative_definite_only\": true,\n      \"exact_and_quadrature_gains_PD\": true,\n      \"fixed_budget_diagonal_ceilings\": [\n        \"-6871190365592769978959/1000000000000000000000000\",\n        \"-6680071650059200874923/1000000000000000000000000\"\n      ],\n      \"method_ceiling_recomputed_from_outward_parents\": true\n    },\n    \"odd_derivative\": {\n      \"both_lower_matrices_negative_definite_only\": true,\n      \"exact_and_quadrature_gains_PD\": true,\n      \"fixed_budget_diagonal_ceilings\": [\n        \"-3122111819564344893771/250000000000000000000000\",\n        \"-12384220161980533810999/1000000000000000000000000\"\n      ],\n      \"method_ceiling_recomputed_from_outward_parents\": true\n    }\n  },\n  \"source_receipt_sha256\": \"321d80b0dc38aeddf52f6c0b0c398370b3b18fae285c6fbd1751acc999bc28f9\",\n  \"source_sign_certified\": false,\n  \"symbolic_shifted_gram_cases\": 60\n}\n\n"
+    }
+  ],
+  "source_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "source_blob_unchanged_from_main": true,
+  "source_holdout_receipt_sha256": "6fab39552a565db0c3b9ba04a3830c5132e0c071fe50ea19712f51331009c637",
+  "source_implementation_checks": {
+    "observational_succ/cloud_exact_moment_inverse.py": {
+      "actual_sha256": "e22351e2a747ec311c853993986e921c6ef3c5ab45e68e10a7a26e567b5a2651",
+      "expected_sha256": "e22351e2a747ec311c853993986e921c6ef3c5ab45e68e10a7a26e567b5a2651"
+    },
+    "observational_succ/cloud_operator_transport.py": {
+      "actual_sha256": "6d258e4b5a3acd446a66a46a9fec4f95da2243ba15dabd78e077deacadb19949",
+      "expected_sha256": "6d258e4b5a3acd446a66a46a9fec4f95da2243ba15dabd78e077deacadb19949"
+    },
+    "observational_succ/full_prime_resolvent.py": {
+      "actual_sha256": "9514a7e172e032f95bba39d2ceb1ab09e6fb4e8712df3c9382c307aedf27de7b",
+      "expected_sha256": "9514a7e172e032f95bba39d2ceb1ab09e6fb4e8712df3c9382c307aedf27de7b"
+    },
+    "observational_succ/original_continuum_residual.py": {
+      "actual_sha256": "a9b7b6087280a3f6a2feecd7d51d2c3ee79209ab93918d16e8f16a422ba9063e",
+      "expected_sha256": "a9b7b6087280a3f6a2feecd7d51d2c3ee79209ab93918d16e8f16a422ba9063e"
+    },
+    "observational_succ/source_weil_hierarchy.py": {
+      "actual_sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+      "expected_sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b"
+    },
+    "scripts/cloud_exact_moment_source_probe.py": {
+      "actual_sha256": "7503c49398e6a76ac7ed0710dbdd07e0bf3a5acbaccc9686497cf9496db6aca6",
+      "expected_sha256": "7503c49398e6a76ac7ed0710dbdd07e0bf3a5acbaccc9686497cf9496db6aca6"
+    },
+    "tests/test_cloud_exact_moment_inverse.py": {
+      "actual_sha256": "af04c6cfa3415ca46da63ec16405bc6e50a9407a3715b3f2397cc01810f29cab",
+      "expected_sha256": "af04c6cfa3415ca46da63ec16405bc6e50a9407a3715b3f2397cc01810f29cab"
+    }
+  },
+  "source_probe_regenerated": false,
+  "source_receipt_sha256": "321d80b0dc38aeddf52f6c0b0c398370b3b18fae285c6fbd1751acc999bc28f9",
+  "source_sign_certified": false,
+  "status": "PASSED",
+  "tested_commit": "9ef6c1c95ac7eaef71508bcbe5c0e839f836e641",
+  "tested_tree_before_receipt": "9398c4797112aac4c42ce8f3a5f6c0259d70ad0d",
+  "validation_scope": "Fresh post-main focused tests and independent finite arithmetic holdout; unchanged historical source replay hashes verified. No full suite or expensive source replay rerun."
+}
