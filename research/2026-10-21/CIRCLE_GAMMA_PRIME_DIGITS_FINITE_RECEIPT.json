@@ -97,6 +97,21 @@
     "sigma": 2,
     "sum": "25/18"
   },
+  "prime_to_circle": {
+    "cutoff3": {
+      "euler_partial": "3/2",
+      "squared_pi_lower": "9",
+      "squared_pi_upper": "11"
+    },
+    "cutoff5": {
+      "euler_partial": "25/16",
+      "squared_pi_lower": "75/8",
+      "squared_pi_upper": "423/40"
+    },
+    "missing_prime3_invalidated_by_rational_harmonic_prefix": true,
+    "rh_used": false,
+    "sourced_pi_bounds_overlap_polygon": true
+  },
   "proof_boundaries": {
     "RH_proved": false,
     "RH_to_pi_phase_transference_proved": false,
