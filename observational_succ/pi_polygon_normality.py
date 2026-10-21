@@ -158,3 +158,36 @@ def finite_digit_path(word: tuple[int, ...], base: int, n: int) -> tuple[int, ..
     if base < 2 or n < 0 or any(not 0 <= d < base for d in word):
         raise ValueError("invalid path")
     return tuple(word[i] if i < len(word) else 0 for i in range(n))
+
+
+def polygon_prefix_path(start_sides: int, base: int, initial: int,
+                        digits: tuple[int, ...]) -> tuple[int, ...]:
+    """A compatible path in the prefix inverse limit of G_(m*b**n).
+
+    Indices obey j_(n+1)=b*j_n+d_(n+1), so P(j_(n+1))=j_n.
+    The path-space measure assigns each level-n cylinder mass 1/(m*b**n).
+    It does NOT make every path typical for that measure.
+    """
+    if start_sides < 3 or base < 2 or not 0 <= initial < start_sides:
+        raise ValueError("invalid initial polygon label")
+    if any(not 0 <= d < base for d in digits):
+        raise ValueError("digits must lie in [0,base)")
+    indices = [initial]
+    for digit in digits:
+        indices.append(base * indices[-1] + digit)
+    return tuple(indices)
+
+
+def polygon_cylinder(index: int, start_sides: int, base: int,
+                     level: int) -> tuple[Q, Q, Q]:
+    """Cell bounds and exact fair-path probability at refinement level.
+
+    The interval is [j/M,(j+1)/M] with mass 1/M where M=m*b**level.
+    Closed-endpoint aliases are kept as a separate quotient, not erased.
+    """
+    if start_sides < 3 or base < 2 or level < 0:
+        raise ValueError("invalid cylinder parameters")
+    m = start_sides * base**level
+    if not 0 <= index < m:
+        raise ValueError("invalid cylinder index")
+    return Q(index, m), Q(index + 1, m), Q(1, m)
