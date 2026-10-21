@@ -216,3 +216,62 @@ Native dependencies:
 **Primary/classical references:** NIST DLMF §20.10 (Mellin/theta/Gamma/ζ) <https://dlmf.nist.gov/20.10>; NIST DLMF §27.4 (Euler products and von Mangoldt current) <https://dlmf.nist.gov/27.4>; Terence Tao, *The Gamma function and the functional equation* <https://terrytao.wordpress.com/2014/12/15/254a-supplement-3-the-gamma-function-and-the-functional-equation-optional/>; Bailey & Crandall, *On the Random Character of Fundamental Constant Expansions*, Experimental Mathematics 10 (2001), 175–190, <https://doi.org/10.1080/10586458.2001.10504441>. Classical Weyl and Gaussian heat uniqueness facts are imported, not newly proved or authoritatively kernel-certified here. RH prime-counting equivalent overview: <https://old.maa.org/node/1401175>.
 
 **Verdict:** The circle→two Gamma interfaces→all genuine primes→phase-corrected digit hierarchy can be connected **without a fabricated arrow**. The outstanding, genuinely hard arrow is π-specific infinite-horizon cancellation; RH is an allowed tool, but neither RH alone nor generic circle uniformity currently pays for it.
+
+
+## 9. Stronger bridge: prime dilation is geometrically covariant (CGPD-11)
+
+On the continuum radius-one circle, define the **positive** mode χ_n(θ)=exp(inθ), additive SUCC Uχ_n=χ_(n+1), and for every genuine prime p the FUCC covering pullback V_pχ_n=χ_(pn), induced by θ↦pθ mod 2π. Then
+
+    V_p U = U^p V_p,    L V_p=p² V_p L,
+    exp(−tL)V_p=V_p exp(−p²tL),
+    L^(−s/2) V_p = p^(−s) V_p L^(−s/2)
+
+on nonzero Fourier modes (the last identity takes the principal positive real eigenvalue powers). **These are exact identities of geometric operators**, not the prime number theorem. For p>1, V_p is an isometry on circle L² but not onto. The Mellin weight p^(−s) therefore is an intrinsic dilation eigenvalue of the *circle's inverse fractional Laplacian*. Genuine primes are the unique independent multiplicative generators of N under UFD, while a fake composite label p=6 is already V_2 V_3 and cannot be counted as a new Euler place.
+
+Evaluating a harmonic at a specific phase x={π} is a separate map E_xχ_n=e(nx). Point evaluation on arbitrary L² classes is not bounded; use finite trigonometric polynomials, smooth heat kernels, or series Σ n^(−s)χ_n for Re s>1 (absolute uniform convergence). Thus this new operator-to-digit interface respects SUCC's prior **range/domain sampling firewall**.
+
+For the FINITE m-gon, the exact chord-normalized polynomial eigenvalues obey
+
+    D_(p,n)(X) := W_(pn)(X)−p² W_n(X),   X=ℓ_m².
+
+Their leading coefficients are determined exactly by the recurrence of §1. First,
+
+    W_n(0)=n²,   W_n'(0)=−n²(n²−1)/12.
+
+The derivative statement follows by differentiating W_(n+1)=2+(2−X)W_n−W_(n−1), using W_0=0,W_1=1 and induction (both sides have initial derivatives 0). Hence
+
+    D_(p,n)(0)=0,
+    D_(p,n)'(0)=−p²(p²−1)n^4/12.
+
+That is,
+
+    D_(p,n)(X)=X·Q_(p,n)(X),    Q_(p,n)(0)=−p²(p²−1)n^4/12.
+
+**Exact finite geometric defect:** p=2,n=1 gives D_(2,1)(X)=−X, while p=3,n=1 gives D_(3,1)(X)=−6X+X². At the square's chord squared X=2, the eigenvalue of frequency 2 is 2, whereas 2² times the frequency-one eigenvalue is 4. The finite covariance failure is **quantified and decays as the polygon is refined**, while division by the intrinsic squared unit X retains a nonzero geometric first-order coefficient. This is a strict analytical realization of an invariant local correction under geometric successor refinement.
+
+**Boundary:** D_(p,n) is a discretization/curvature covariance defect of the polygon Laplacian. It is **independent of distinguished phase x** and thus cannot by itself discriminate the π orbit from a nonnormal x=0 or sparse-squares x. Its correct role is in the *source-derivation*, not a substitute for phase-correlation estimates. All finite polynomial and p-authentication witnesses are tested; infinite operator statements are paper-proved classical facts, not Lean kernel declarations.
+
+## 10. Strong hostile counterexample: even distribution along ALL primes is insufficient (CGPD-12)
+
+Let α=Σ_(k≥1)2^(−k!). It has binary 1's at positions 1!,2!,3!,..., with density zero. Its digit pattern is not eventually periodic and hence α is irrational and **not normal in base 2**. Nevertheless two established theorems apply:
+
+- Weyl/Kronecker: {nα} is equidistributed modulo one over ALL positive integers n;
+- Vinogradov: {pα} is equidistributed modulo one as p ranges over ALL genuine primes.
+
+Thus **even both full integer-indexed and prime-indexed one-point spatial marginals are uniform for a nonnormal phase**. Those theorems are not merely finite coset arguments and involve the complete prime set. They still do not control the **hierarchy of the particular lacunary orbit** {2^jα}. Its correlations at all block depths are the missing information.
+
+Vinogradov attribution and a proof survey: https://www.math.ucdavis.edu/~romik/data/uploads/teaching/math235c-2022/probability235c-lecture-notes.pdf (Theorem 3.7 and subsequent remarks); an analytic treatment is referenced in D. Crandall and C. Pomerance, *Prime Numbers: A Computational Perspective*, §1.4 (available excerpt: https://thales.doa.fmph.uniba.sk/macaj/skola/teoriapoli/primes.pdf). An example journal context: https://www.mdpi.com/2075-1680/14/7/532.
+
+**Status:** classical external Vinogradov theorem plus elementary α construction; no executable finite sample proves the infinite prime claim. This is a calibrated refutation of **the weak inference "complete prime marginal equidistribution ⇒ base-b normality"**. It is NOT a refutation of a genuinely π-specific theorem involving all mixed and time-lagged source correlations. Keep the full-prime architecture and target the missing correlation transport.
+
+### Final sharpened frontier
+
+The strongest true geometric–arithmetic backbone now has a specific diagram:
+
+    finite regular polygons → L_m mode polynomials → L circle spectrum
+      → Γ(s/2)L^(−s/2) → V_p Γ-covariance → all-prime unique factorization
+      → phase-corrected point evaluation E_{π}
+      → T_b^j orbit, all-k de Bruijn/cylinder flows
+      → (OPEN) π-specific all-horizon cancellation.
+
+The finite p-dilation discrepancy D_(p,n)(X) must be transported with proper error bounds through the continuum stage. It is a geometric approximation effect, not a permanent assertion that prime operators are deformed. The surviving **irreducible coupling within the selected additive point-evaluation representation** is the nontrivial mixed phase ω_(π)(m,n), which still does not force mixing. Any proposed RH-assisted proof must exploit the particular π source to control its long-horizon correlations and survive the irrational nonnormal α counterexample.
