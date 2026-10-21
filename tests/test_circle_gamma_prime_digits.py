@@ -6,7 +6,7 @@ import itertools
 import unittest
 from collections import Counter
 from fractions import Fraction as Q
-from math import factorial
+from math import factorial, isqrt
 
 from observational_succ.circle_gamma_prime_digits import (
     mode_laplacian_polynomial, eval_polynomial, ordered_succ_gamma_weight,
@@ -194,7 +194,7 @@ class FullPrimeToGeometricPiInverse(unittest.TestCase):
             self.assertGreater(br.upper_pi,polygon.lower)
             self.assertLessEqual(br.lower_pi**2,6*br.euler_partial)
             self.assertGreaterEqual(br.upper_pi**2,6*(br.euler_partial+Q(1,P)))
-            self.assertTrue(all(p>=2 and all(p%d for d in range(2,int(p**.5)+1))
+            self.assertTrue(all(p>=2 and all(p%d for d in range(2,isqrt(p)+1))
                                 for p in br.genuine_primes))
         self.assertEqual(prime_euler_pi_bracket(3,256).euler_partial,Q(3,2))
         self.assertEqual(prime_euler_pi_bracket(5,256).euler_partial,Q(25,16))
