@@ -92,10 +92,13 @@ theorem blockFrequency_eq_intervalFrequency {b : ℕ} (hb : 2 ≤ b)
     (k a N : ℕ) (x : ℝ) :
     blockFrequency b k a N x = intervalFrequency (digitOrbit b x)
       ((a : ℝ) / (b : ℝ) ^ k) (((a : ℝ) + 1) / (b : ℝ) ^ k) N := by
+  have hsets : (Finset.range N).filter (fun n => canonicalBlock b k n x = a) =
+      (Finset.range N).filter (fun n => Int.fract (digitOrbit b x n) ∈
+        Set.Ico ((a : ℝ) / (b : ℝ) ^ k) (((a : ℝ) + 1) / (b : ℝ) ^ k)) := by
+    ext n
+    simp only [Finset.mem_filter, canonicalBlock_eq_iff hb]
   unfold blockFrequency intervalFrequency
-  congr 2
-  ext n
-  simp only [Finset.mem_filter, canonicalBlock_eq_iff hb]
+  rw [hsets]
 
 /-- A real conditional implication. Its input is interval equidistribution;
 it is not an unconditional pi theorem or a proof of Weyl's criterion. -/

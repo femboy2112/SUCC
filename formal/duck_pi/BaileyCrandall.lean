@@ -131,17 +131,19 @@ def tail (n : ℕ) : ℝ := ∑' k : ℕ, tailTerm n k
 
 theorem tailTerm_pos (n k : ℕ) : 0 < tailTerm n k := by
   unfold tailTerm
-  have hf : 0 < forcing ((n : ℝ)+k+1) := forcing_pos (by positivity)
+  have hn : (0:ℝ) ≤ n := by positivity
+  have hk : (0:ℝ) ≤ k := by positivity
+  have hf : 0 < forcing ((n : ℝ)+k+1) := forcing_pos (by linarith)
   positivity
 
 theorem tailTerm_le (n k : ℕ) :
     tailTerm n k ≤ (1/16 : ℝ)^(k+1) * ((47/15)/((n : ℝ)+1)^2) := by
   unfold tailTerm
   apply mul_le_mul_of_nonneg_left _ (by positivity)
-  apply (forcing_le_sharp (show (1:ℝ) ≤ (n:ℝ)+k+1 by positivity)).trans
-  apply div_le_div_of_nonneg_left (by norm_num) (by positivity)
   have hk : (0:ℝ) ≤ k := by positivity
   have hn : (0:ℝ) ≤ n := by positivity
+  apply (forcing_le_sharp (show (1:ℝ) ≤ (n:ℝ)+k+1 by linarith)).trans
+  apply div_le_div_of_nonneg_left (by norm_num) (by positivity)
   nlinarith
 
 theorem geometric_weight_hasSum :
@@ -162,7 +164,11 @@ theorem tail_le_sharp (n : ℕ) : tail n ≤ 47/(225*((n : ℝ)+1)^2) := by
     (geometric_weight_hasSum.summable.mul_right ((47/15)/((n : ℝ)+1)^2))
   have hs := (geometric_weight_hasSum.mul_right ((47/15)/((n : ℝ)+1)^2)).tsum_eq
   rw [hs] at h
-  convert h using 1 <;> ring
+  change tail n ≤ _ at h
+  have hn : (n : ℝ)+1 ≠ 0 := by positivity
+  calc
+    tail n ≤ (1/15)*((47/15)/((n : ℝ)+1)^2) := h
+    _ = 47/(225*((n : ℝ)+1)^2) := by field_simp; ring
 
 /-- The original handoff bound is a consequence of the stronger one. -/
 theorem tail_le_eight (n : ℕ) : tail n ≤ 8/(15*((n : ℝ)+1)^2) := by
@@ -173,7 +179,7 @@ theorem tail_le_eight (n : ℕ) : tail n ≤ 8/(15*((n : ℝ)+1)^2) := by
 
 theorem tail_recursion (n : ℕ) :
     16 * tail n = forcing ((n : ℝ)+1) + tail (n+1) := by
-  have hsplit := (tail_summable n).tsum_eq_zero_add
+  have hsplit := tsum_eq_zero_add (tail_summable n)
   have hshift : (∑' k : ℕ, tailTerm n (k+1)) = (1/16 : ℝ) * tail (n+1) := by
     rw [tail, ← tsum_mul_left]
     apply tsum_congr
@@ -219,7 +225,8 @@ theorem circle_orbit_recursion (n : ℕ) :
     circleOrbit (n+1) = (16 : ℕ) • circleOrbit n +
       (forcing ((n : ℝ)+1) : AddCircle (1 : ℝ)) := by
   simp only [circleOrbit, liftedOrbit, AddCircle.coe_add]
-  norm_cast
+  rw [← AddCircle.coe_nsmul, nsmul_eq_mul]
+  norm_num
 
 theorem circle_series_transport (n : ℕ) :
     dist (circleOrbit (n+1)) ((16^n * seriesValue : ℝ) : AddCircle (1 : ℝ)) ≤
@@ -241,5 +248,7 @@ theorem pi_circle_transport (bbp_identity : seriesValue = Real.pi) (n : ℕ) :
       47/(225*((n : ℝ)+2)^2) := by
   rw [← bbp_identity]
   exact circle_series_transport n
+
+end
 
 end ObservationalSUCC.BaileyCrandall

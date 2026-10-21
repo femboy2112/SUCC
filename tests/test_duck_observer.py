@@ -117,6 +117,28 @@ class DuckObserverTests(unittest.TestCase):
         mismatch = model(((0, 1),), ("0", "1"))
         self.assertIsNone(common_observable_factor(a, mismatch))
 
+    def test_common_factor_matches_independent_bijection_search(self):
+        models = [model((r, s), outputs) for r in product(range(2), repeat=2)
+                  for s in product(range(2), repeat=2)
+                  for outputs in product(("0", "1"), repeat=2)]
+        checks = 0
+        for left in models:
+            for right in models:
+                # Two-state nontrivial separated common factors must be
+                # isomorphic.  Check BOTH bijections directly, independently
+                # of quotient construction and the production morphism checker.
+                oracle = exhaustive_word(left, left, 0, 1) is not None and any(
+                    all(right.outputs[i] == left.outputs[p[i]] for i in range(2))
+                    and all(p[right.transitions[a][i]] == left.transitions[a][p[i]]
+                            for a in range(2) for i in range(2))
+                    for p in ((0, 1), (1, 0)))
+                self.assertEqual(common_observable_factor(left, right) is not None, oracle)
+                checks += 1
+        self.assertEqual(checks, 4096)
+        hidden_clock = model(((1, 0),), ("erased", "erased"))
+        self.assertTrue(is_morphism(hidden_clock, hidden_clock, (0, 1), onto=True))
+        self.assertIsNone(common_observable_factor(hidden_clock, hidden_clock))
+
     def test_empty_action_and_empty_carrier_boundaries(self):
         a = model((), ("0", "1", "0"))
         self.assertEqual(distinguish(a, a, 0, 1).word, ())

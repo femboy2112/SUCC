@@ -74,6 +74,54 @@ theorem closed_relation_all_words
   | nil => exact reports x y related
   | cons a rest ih => exact ih (stepX a x) (stepY a y) (closed a x y related)
 
+/-- Complete laws for a finite Boolean relation table, with exact Nat readouts. -/
+def RelationTableLaws {n m k : Nat}
+    (stepX : Fin k → Fin n → Fin n) (observeX : Fin n → Nat)
+    (stepY : Fin k → Fin m → Fin m) (observeY : Fin m → Nat)
+    (table : Fin n → Fin m → Bool) : Prop :=
+  (∀ x y, table x y = true → observeX x = observeY y) ∧
+  (∀ a x y, table x y = true → table (stepX a x) (stepY a y) = true)
+
+/-- Exhaustive finite decision; this is not a bounded sampling test. -/
+def relationTableValid {n m k : Nat}
+    (stepX : Fin k → Fin n → Fin n) (observeX : Fin n → Nat)
+    (stepY : Fin k → Fin m → Fin m) (observeY : Fin m → Nat)
+    (table : Fin n → Fin m → Bool) : Bool :=
+  decide (RelationTableLaws stepX observeX stepY observeY table)
+
+/-- A kernel-checked `true` table computation proves equality for ALL words. -/
+theorem validated_table_all_words {n m k : Nat}
+    (stepX : Fin k → Fin n → Fin n) (observeX : Fin n → Nat)
+    (stepY : Fin k → Fin m → Fin m) (observeY : Fin m → Nat)
+    (table : Fin n → Fin m → Bool)
+    (valid : relationTableValid stepX observeX stepY observeY table = true)
+    (x : Fin n) (y : Fin m) (initial : table x y = true)
+    (word : List (Fin k)) :
+    observeX (runWord stepX word x) = observeY (runWord stepY word y) := by
+  have laws : RelationTableLaws stepX observeX stepY observeY table :=
+    of_decide_eq_true valid
+  exact closed_relation_all_words stepX observeX stepY observeY
+    (fun x y => table x y = true) laws.1 laws.2 x y initial word
+
+/- The examples deliberately have different carrier sizes. The total relation
+proves erased-readout equivalence, never an identity factor or hidden-state equality. -/
+def tableExampleFlip (_ : Fin 1) (x : Fin 2) : Fin 2 :=
+  if x.val = 0 then 1 else 0
+
+def tableExampleIdle (_ : Fin 1) (y : Fin 1) : Fin 1 := y
+
+theorem finite_table_positive_control :
+    relationTableValid tableExampleFlip (fun _ => 0)
+      tableExampleIdle (fun _ => 0) (fun _ _ => true) = true := by decide
+
+theorem finite_table_closure_negative_control :
+    relationTableValid tableExampleFlip (fun _ => 0)
+      tableExampleIdle (fun _ => 0) (fun x _ => decide (x.val = 0)) = false := by decide
+
+theorem finite_table_readout_negative_control :
+    relationTableValid tableExampleFlip (fun x => x.val)
+      tableExampleIdle (fun _ => 0) (fun _ _ => true) = false := by decide
+
 def behaviorSetoid {Act : Type u} {X : Type v} {Out : Type z}
     (step : Act → X → X) (observe : X → Out) : Setoid X where
   r := BehaviorEq step observe
@@ -108,7 +156,11 @@ theorem quotient_is_morphism {Act : Type u} {X : Type v} {Out : Type z}
 theorem quotient_equality_iff_behavior {Act : Type u} {X : Type v} {Out : Type z}
     (step : Act → X → X) (observe : X → Out) (x y : X) :
     project step observe x = project step observe y ↔ BehaviorEq step observe x y := by
-  exact ⟨Quotient.exact, Quotient.sound⟩
+  constructor
+  · intro same
+    exact Quotient.exact same
+  · intro same
+    exact @Quotient.sound X (behaviorSetoid step observe) x y same
 
 theorem quotient_is_behaviorally_separated
     {Act : Type u} {X : Type v} {Out : Type z}

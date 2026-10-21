@@ -14,6 +14,40 @@ MODULES = {
     'Normality': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
 }
 
+# Each mutant has a compiling positive counterpart using the same imports and
+# proof method. Rejecting a missing import or a parser error is not a pass.
+CONTROLS = [
+    ('duck_erased_factor', 'DuckObserver',
+     'open ObservationalSUCC.Duck\n'
+     'example : IsFactor (fun (_ : Unit) (b : Bool) => b) '
+     '(fun (_ : Unit) (b : Bool) => b) (fun b => b) := by\n  intro a b\n  rfl\n',
+     '(b : Bool) => b)', '(b : Bool) => !b)'),
+    ('bbp_sharp_constant', 'BaileyCrandall',
+     'open ObservationalSUCC.BaileyCrandall\n'
+     'example : forcing 1 ≤ (47/15 : ℝ) := by\n'
+     '  norm_num [forcing, numerator, denominator]\n',
+     '≤ (47/15 : ℝ)', '≤ (3 : ℝ)'),
+    ('bbp_clock', 'BaileyCrandall',
+     'open ObservationalSUCC.BaileyCrandall\n'
+     'example : forcing 1 ≠ forcing 2 := by\n'
+     '  norm_num [forcing, numerator, denominator]\n',
+     '1 ≠ forcing', '1 = forcing'),
+    ('logistic_coefficient', 'LogisticFactor',
+     'open ObservationalSUCC.DuckPi\n'
+     'example : logistic (1/2) = (4 : ℝ)*(1/2)*(1-1/2) := by\n'
+     '  norm_num [logistic]\n',
+     '(4 : ℝ)', '(3 : ℝ)'),
+    ('canonical_zero_digit', 'Normality',
+     'open ObservationalSUCC.DuckPi\n'
+     'example : canonicalBlock 16 1 0 0 = 0 := by\n'
+     '  simp [canonicalBlock_zero]\n',
+     '0 0 = 0', '0 0 = 1'),
+    ('normality_exceptional_orbit', 'Normality',
+     'open ObservationalSUCC.DuckPi\n'
+     'example : ¬ NormalTo 16 0 := by\n  exact zero_not_normal 16\n',
+     '¬ NormalTo', 'NormalTo'),
+]
+
 def digest(b): return hashlib.sha256(b).hexdigest()
 
 def main():
@@ -78,8 +112,33 @@ def main():
             print('KERNEL_EXPORTED',name,e['type_sha256'],e['axioms'],flush=True)
         assert set(found)==set(names),(module,set(names)-set(found))
         exports.update(found);successes.append(module)
+    mutations=[]
+    for label,module,body,old,new in CONTROLS:
+        if module not in successes:
+            mutations.append({'name':label,'status':'BLOCKED_BY_POSITIVE_MODULE'});continue
+        directory,_=MODULES[module];cwd=ROOT/directory
+        prefix=['lean'] if directory=='formal' else ['lake','env','lean']
+        use_env=env if directory=='formal' else None
+        assert old in body
+        pair={}
+        for kind,contents in [('positive',body),('mutant',body.replace(old,new,1))]:
+            file=output/(label+'_'+kind+'.lean')
+            file.write_text('import '+module+'\n'+contents)
+            pair[kind]=run(label+'-'+kind,prefix+[str(file)],cwd,use_env)
+        positive=pair['positive'];negative=pair['mutant']
+        diagnostic=negative.stdout.lower()
+        infrastructure=any(word in diagnostic for word in
+            ['unknown module','unknown constant','unknown identifier','unexpected token','invalid import'])
+        semantic=any(word in diagnostic for word in
+            ['unsolved goals','type mismatch','tactic','failed to prove'])
+        passed=positive.returncode==0 and negative.returncode!=0 and semantic and not infrastructure
+        mutations.append({'name':label,'status':'REJECTED_WITH_POSITIVE_CONTROL' if passed else 'FAILED',
+            'positive_exit':positive.returncode,'mutant_exit':negative.returncode,
+            'positive_source_sha256':digest(('import '+module+'\n'+body).encode()),
+            'mutant_source_sha256':digest(('import '+module+'\n'+body.replace(old,new,1)).encode())})
+        if not passed:failures.append('mutation:'+label)
     assert hashes=={p:digest((ROOT/p).read_bytes()) for p in hashes},'source changed during build'
-    record={'schema':'succ.duck-pi.kernel-observation.v1','build_succeeded':not failures and prerequisite.returncode==0,'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'git_tree':subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=ROOT,text=True).strip(),'lean_version':version,'source_hashes':hashes,'dependency_revisions':pins,'successful_modules':successes,'failed_modules':failures,'commands':commands,'theorem_exports':exports,'authority_admitted':False,'negative_mutations':'NOT_YET_RUN'}
+    record={'schema':'succ.duck-pi.kernel-observation.v1','build_succeeded':not failures and prerequisite.returncode==0,'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'git_tree':subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=ROOT,text=True).strip(),'lean_version':version,'source_hashes':hashes,'dependency_revisions':pins,'successful_modules':successes,'failed_modules':failures,'commands':commands,'theorem_exports':exports,'authority_admitted':False,'negative_mutations':mutations}
     encoded=json.dumps(record,sort_keys=True,separators=(',',':')).encode()
     (output/'kernel-observation.json').write_bytes(encoded+b'\n')
     print('DUCK_PI_RECORD_BASE64 '+base64.b64encode(gzip.compress(encoded)).decode(),flush=True)

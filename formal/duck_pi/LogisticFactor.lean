@@ -29,13 +29,24 @@ def logisticHat : AddCircle (1 : ℝ) → ℝ := logisticLift_periodic.lift
 @[simp] theorem logisticHat_coe (t : ℝ) :
     logisticHat (t : AddCircle (1 : ℝ)) = logisticLift t := rfl
 
+theorem logisticHat_continuous : Continuous logisticHat := by
+  have hc : Continuous logisticLift := by
+    unfold logisticLift
+    fun_prop
+  exact hc.quotient_liftOn' _
+
 theorem logisticLift_double (t : ℝ) :
     logisticLift (t + t) = logistic (logisticLift t) := by
   have h := Real.sin_sq_add_cos_sq (Real.pi * t)
-  have hw := congrArg (fun z : ℝ => 4 * Real.sin (Real.pi * t) ^ 2 * z) h
+  have hcos : Real.cos (Real.pi * t) ^ 2 = 1 - Real.sin (Real.pi * t) ^ 2 := by
+    linarith only [h]
   have ha : Real.pi * (t + t) = 2 * (Real.pi * t) := by ring
   simp only [logisticLift, logistic, ha, Real.sin_two_mul]
-  nlinarith only [hw]
+  calc
+    (2 * Real.sin (Real.pi * t) * Real.cos (Real.pi * t)) ^ 2 =
+        4 * Real.sin (Real.pi * t) ^ 2 * Real.cos (Real.pi * t) ^ 2 := by ring
+    _ = 4 * Real.sin (Real.pi * t) ^ 2 * (1 - Real.sin (Real.pi * t) ^ 2) := by
+      rw [hcos]
 
 theorem logisticHat_double (t : AddCircle (1 : ℝ)) :
     logisticHat (t + t) = logistic (logisticHat t) := by
@@ -60,7 +71,7 @@ theorem logisticHat_surjOn_unitInterval :
   rw [logisticHat_coe, logisticLift]
   have hp : Real.pi ≠ 0 := Real.pi_ne_zero
   rw [mul_div_cancel₀ _ hp]
-  rw [Real.sin_arcsin (by positivity) (Real.sqrt_le_one.mpr hx.2)]
+  rw [Real.sin_arcsin (by linarith [Real.sqrt_nonneg x]) (Real.sqrt_le_one.mpr hx.2)]
   exact Real.sq_sqrt hx.1
 
 theorem logisticHat_not_injective : ¬ Function.Injective logisticHat := by

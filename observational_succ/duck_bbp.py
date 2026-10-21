@@ -1,6 +1,6 @@
 """Exact finite arithmetic for the Bailey–Crandall hexadecimal forcing.
 
-The analytic bounds are proved in formal/duck_pi/BaileyCrandall.lean.
+Formal statements of the analytic bounds are in formal/duck_pi/BaileyCrandall.lean.
 Identifying ``pi_interval`` with geometric pi uses the classical BBP identity;
 this Python implementation does not itself certify that imported identity.
 No output is evidence of normality or of a uniform cancellation estimate.
