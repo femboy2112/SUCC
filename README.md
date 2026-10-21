@@ -1,9 +1,11 @@
 # Observational SUCC
 
-Post-main research draft: [effective abc mean values](research/2026-10-20/ABC_EFFECTIVE_MEAN.md)
+**Academic Main VIII — reviewed integration:** [audit](docs/academic_main_viii/integration_audit.md) · [research frontier](docs/academic_main_viii/research_frontier.md) · [exterior claim crosswalk](docs/CLAIM_SUPPLEMENT_EXTERIOR_ASCENT.md). Effective abc means, source-faithful moment-Gram improvements, and exterior rank bounds are reconciled with exact proof-authority gates. The full `t=2/3` moment endpoint and signed S4 sign remain open.
+
+Reviewed paper theorem: [effective abc mean values](research/2026-10-20/ABC_EFFECTIVE_MEAN.md)
 and the [Academic Main VII completion receipt](docs/academic_main_vii/campaign_completion.md).
 The new paper proof gives every convergence exponent δ<(2−3t)/5 for 0≤t<2/3
-and proves failure of quadratic moments for t≥1. The interval[2/3,1) is open.
+and proves failure of quadratic moments for t≥1. The interval [2/3,1) is open.
 
 **π polygon SUCC / normality path-defect laboratory (2026-10-20, draft research):** [source-first dossier](research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md) · [POL-01–09 claim supplement](docs/CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md) · [exact finite receipt](research/2026-10-20/PI_POLYGON_NORMALITY_FINITE_RECEIPT.json). Rigorous rational polygon enclosures for π, a proved noncommuting-limit observation defect and source-to-orbit error bounds, with hostile non-normal paths. **Uniform polygon geometry does NOT establish π normality; the required π-specific Fourier decay remains OPEN.**
 

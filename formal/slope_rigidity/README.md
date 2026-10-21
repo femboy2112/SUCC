@@ -99,3 +99,7 @@ automatically admitted Level C record. Standard allowed axioms are `propext`,
 `Classical.choice`, `Quot.sound`. Full logs and an encoded complete record appear
 in the workflow artifact and job output. The coordinator must review the actual
 run before any claim-status promotion.
+
+## Main VIII installed authority
+
+The historical research receipt above remains unadmitted. Its nine exact types have now been rebuilt in the shared three-project pipeline and admitted through the new source-bound 19-theorem record. See [actual admission review](../kernel_audit/MAIN_VIII_ADMISSION_REVIEW.md). This admits the typed determinant declarations, not the full weighted-moment theorem.

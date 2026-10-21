@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-21",
+  "focused_tests": {
+    "exit_code": 0,
+    "stderr": "test_discrete_parameters_reject_numerical_impostors (tests.test_viii_source_pi_holdouts.PiExactBoundaryHoldouts.test_discrete_parameters_reject_numerical_impostors) ... ok\ntest_low_precision_refinement_never_invents_a_digit (tests.test_viii_source_pi_holdouts.PiExactBoundaryHoldouts.test_low_precision_refinement_never_invents_a_digit) ... ok\ntest_rounded_width_is_not_the_geometric_gap (tests.test_viii_source_pi_holdouts.PiExactBoundaryHoldouts.test_rounded_width_is_not_the_geometric_gap) ... ok\ntest_underflow_cannot_return_zero_certificate (tests.test_viii_source_pi_holdouts.PiExactBoundaryHoldouts.test_underflow_cannot_return_zero_certificate) ... ok\ntest_constrained_inverse_nonorthogonal_constraints (tests.test_viii_source_pi_holdouts.SourceMomentHoldouts.test_constrained_inverse_nonorthogonal_constraints) ... ok\ntest_reverse_young_all_signed_error_corners (tests.test_viii_source_pi_holdouts.SourceMomentHoldouts.test_reverse_young_all_signed_error_corners) ... ok\ntest_archimedean_brackets_and_independent_exact_oracle (tests.test_pi_polygon_normality.ExactPolygonGeometry.test_archimedean_brackets_and_independent_exact_oracle) ... ok\ntest_certified_digit_prefix_only_from_polygon (tests.test_pi_polygon_normality.ExactPolygonGeometry.test_certified_digit_prefix_only_from_polygon) ... ok\ntest_rational_sqrt_straddles_and_exact_square (tests.test_pi_polygon_normality.ExactPolygonGeometry.test_rational_sqrt_straddles_and_exact_square) ... ok\ntest_too_little_precision_fails_closed (tests.test_pi_polygon_normality.ExactPolygonGeometry.test_too_little_precision_fails_closed) ... ok\ntest_both_valid_prefix_paths_encode_the_same_circle_phase (tests.test_pi_polygon_normality.PrefixPathCircleQuotient.test_both_valid_prefix_paths_encode_the_same_circle_phase) ... ok\ntest_nested_cells_and_exact_uniform_cylinder_mass (tests.test_pi_polygon_normality.PrefixPathCircleQuotient.test_nested_cells_and_exact_uniform_cylinder_mass) ... ok\ntest_finite_known_normal_control_is_diagnostic_not_proof (tests.test_pi_polygon_normality.SourceAndPathMorphisms.test_finite_known_normal_control_is_diagnostic_not_proof) ... ok\ntest_lipschitz_orbit_transport_bound (tests.test_pi_polygon_normality.SourceAndPathMorphisms.test_lipschitz_orbit_transport_bound) ... ok\ntest_normality_requires_all_block_lengths (tests.test_pi_polygon_normality.SourceAndPathMorphisms.test_normality_requires_all_block_lengths) ... ok\ntest_terminating_prefix_is_eventually_zero_without_disproving_limit (tests.test_pi_polygon_normality.SourceAndPathMorphisms.test_terminating_prefix_is_eventually_zero_without_disproving_limit) ... ok\ntest_two_balanced_pushforward_maps_are_not_identical (tests.test_pi_polygon_normality.SourceAndPathMorphisms.test_two_balanced_pushforward_maps_are_not_identical) ... ok\ntest_complete_correction_bounds_true_displaced_inverse (tests.test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_complete_correction_bounds_true_displaced_inverse) ... ok\ntest_exact_domain_and_high_moment_guards (tests.test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_exact_domain_and_high_moment_guards) ... ok\ntest_exact_weight_stronger_than_old_diagonal (tests.test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_exact_weight_stronger_than_old_diagonal) ... ok\ntest_inverse_identity_large_rational_offdiagonal (tests.test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_inverse_identity_large_rational_offdiagonal) ... ok\ntest_no_invented_improvement_when_zero_prime_weight (tests.test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_no_invented_improvement_when_zero_prime_weight) ... ok\ntest_quadrature_independent_discretizations (tests.test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_quadrature_independent_discretizations) ... ok\ntest_reverse_young_rejects_indefinite_weight (tests.test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_reverse_young_rejects_indefinite_weight) ... ok\ntest_shift_matrix_enclosures_at_displaced_rational_points (tests.test_cloud_exact_moment_inverse.ExactMomentInverseTests.test_shift_matrix_enclosures_at_displaced_rational_points) ... ok\ntest_compact_relative_bound_can_give_primitive_identity (tests.test_cloud_operator_transport.CloudOperatorTransportTests.test_compact_relative_bound_can_give_primitive_identity) ... ok\ntest_endpoint_cauchy_sup_bound (tests.test_cloud_operator_transport.CloudOperatorTransportTests.test_endpoint_cauchy_sup_bound) ... ok\ntest_finite_constrained_inverse_identity (tests.test_cloud_operator_transport.CloudOperatorTransportTests.test_finite_constrained_inverse_identity) ... ok\ntest_inverse_polynomial_against_pointwise_equation (tests.test_cloud_operator_transport.CloudOperatorTransportTests.test_inverse_polynomial_against_pointwise_equation) ... ok\ntest_kernel_descent_is_required (tests.test_cloud_operator_transport.CloudOperatorTransportTests.test_kernel_descent_is_required) ... ok\ntest_nonclosability_sequence_exact (tests.test_cloud_operator_transport.CloudOperatorTransportTests.test_nonclosability_sequence_exact) ... ok\ntest_reject_nonhigh_and_nonexact_inputs (tests.test_cloud_operator_transport.CloudOperatorTransportTests.test_reject_nonhigh_and_nonexact_inputs) ... ok\ntest_shift_error_bounds_against_exact_displaced_operator (tests.test_cloud_operator_transport.CloudOperatorTransportTests.test_shift_error_bounds_against_exact_displaced_operator) ... ok\ntest_two_constraint_saving_is_psd_when_shift_exact (tests.test_cloud_operator_transport.CloudOperatorTransportTests.test_two_constraint_saving_is_psd_when_shift_exact) ... ok\n\n----------------------------------------------------------------------\nRan 34 tests in 0.521s\n\nOK\n",
+    "stdout": ""
+  },
+  "formal_kernel_verified": false,
+  "historical_receipt_sha256": {
+    "CLOUD_EXACT_MOMENT_SOURCE_HOLDOUT_J6.json": "6fab39552a565db0c3b9ba04a3830c5132e0c071fe50ea19712f51331009c637",
+    "CLOUD_EXACT_MOMENT_SOURCE_J10.json": "321d80b0dc38aeddf52f6c0b0c398370b3b18fae285c6fbd1751acc999bc28f9",
+    "PI_POLYGON_NORMALITY_FINITE_RECEIPT.json": "7b0a99e7b4032a94d778104098965d23a3070b31d712da02e73cd22a0afe86ed"
+  },
+  "new_implementation_sha256": {
+    "observational_succ/pi_polygon_normality.py": "f98b4fb253e62c3bc47682692c12459fbf9f252b1b014ecd41dd67a163c4b614",
+    "research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md": "3d5318a3578f9f0a7161cee861643a0912133d663cd324ba5559c4c631074186",
+    "scripts/viii_source_pi_audit.py": "b1af309dae822c3128358c963acb4b88cee589a06b235c8aa72193fefe5017f6",
+    "tests/test_viii_source_pi_holdouts.py": "7ba8dbe3839580fc83020dd1c4f780970cea306ad5ba97993b000b9d656504c0"
+  },
+  "operator_holdout": {
+    "RH_proved": false,
+    "all_recorded_implementation_hashes_match": true,
+    "failures": 0,
+    "implementation_sha256": "e22351e2a747ec311c853993986e921c6ef3c5ab45e68e10a7a26e567b5a2651",
+    "scope": "finite arithmetic holdout; source comparison remains an external paper dependency",
+    "script_sha256": "b76405340254f9dbf79a90f2955db0f9a6b2ccf523b5dee60a4d602d532a1335",
+    "sectors": {
+      "even_derivative": {
+        "both_lower_matrices_negative_definite_only": true,
+        "exact_and_quadrature_gains_PD": true,
+        "fixed_budget_diagonal_ceilings": [
+          "-6871190365592769978959/1000000000000000000000000",
+          "-6680071650059200874923/1000000000000000000000000"
+        ],
+        "method_ceiling_recomputed_from_outward_parents": true
+      },
+      "odd_derivative": {
+        "both_lower_matrices_negative_definite_only": true,
+        "exact_and_quadrature_gains_PD": true,
+        "fixed_budget_diagonal_ceilings": [
+          "-3122111819564344893771/250000000000000000000000",
+          "-12384220161980533810999/1000000000000000000000000"
+        ],
+        "method_ceiling_recomputed_from_outward_parents": true
+      }
+    },
+    "source_receipt_sha256": "321d80b0dc38aeddf52f6c0b0c398370b3b18fae285c6fbd1751acc999bc28f9",
+    "source_sign_certified": false,
+    "symbolic_shifted_gram_cases": 60
+  },
+  "operator_holdout_exit_code": 0,
+  "operator_recorded_implementation_hashes_match": {
+    "observational_succ/cloud_exact_moment_inverse.py": true,
+    "observational_succ/cloud_operator_transport.py": true,
+    "observational_succ/full_prime_resolvent.py": true,
+    "observational_succ/original_continuum_residual.py": true,
+    "observational_succ/source_weil_hierarchy.py": true,
+    "scripts/cloud_exact_moment_source_probe.py": true,
+    "tests/test_cloud_exact_moment_inverse.py": true
+  },
+  "operator_source_probe_regenerated": false,
+  "pi_normality_proved": false,
+  "pi_probe_byte_identical_to_historical_receipt": true,
+  "pre_receipt_head": "c82f5e34145661d96e87612d0a8cc633759409b7",
+  "python": "3.12.14",
+  "repairs": [
+    "strict exact numeric domains reject floating underflow",
+    "computed polygon width kept distinct from ideal geometric gap"
+  ],
+  "scope": "34 focused tests, 60 symbolic shifted-Gram cases, exact source/receipt hashes; no full suite or Lean",
+  "source_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+  "source_blob_matches_213": true,
+  "source_sign_certified": false,
+  "status": "PASSED"
+}

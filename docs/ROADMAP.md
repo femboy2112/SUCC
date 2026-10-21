@@ -567,3 +567,8 @@ of that report. In particular, exact equivalence-teacher access remains a
 strong assumption in history-only learning; the natural Misiurewicz measure
 remains distinct from a supplied symbolic Parry prior; and finite arithmetic
 tomography supplies no completed Weil positivity inference.
+
+
+## Academic Main VIII priority
+
+The [current frontier](academic_main_viii/research_frontier.md) isolates the weighted high-divisor incidence sum for `2/3<=t<1`. The effective rate below `2/3` and divergence at `t>=1` are established paper results. Rank drop, local densities and finite energy shells each require a separate quantitative transport theorem before a global conclusion.

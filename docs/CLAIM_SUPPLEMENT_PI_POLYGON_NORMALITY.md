@@ -1,6 +1,6 @@
 # POL — π polygon SUCC and path-defect claim supplement
 
-**2026-10-20 research branch:** `research/pi-polygon-normality-path-defect-2026-10-20`, from Academic Main VII `b5f9591033db2022bda6a2f16a935c06466f9eff`. The [full research dossier](../research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md) contains statements, assumptions, proofs, countermodels and provenance. **π normality: OPEN.** These results have not been admitted to `main` or formally checked by a Lean kernel.
+**2026-10-20 research branch:** `research/pi-polygon-normality-path-defect-2026-10-20`, from Academic Main VII `b5f9591033db2022bda6a2f16a935c06466f9eff`. The [full research dossier](../research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md) contains statements, assumptions, proofs, countermodels and provenance. **π normality: OPEN.** Main VIII integration and its precision repairs are recorded in the [integration audit](academic_main_viii/integration_audit.md). These paper results are not formally checked by a Lean kernel.
 
 | ID | Precisely scoped claim | Status | Receipt / decisive boundary |
 | --- | --- | --- | --- |

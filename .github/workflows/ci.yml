@@ -40,6 +40,7 @@ jobs:
       - name: Verify Academic Main VII ancestry, namespaces and admitted propositions
         run: |
           python scripts/academic_main_vii_gate.py > "$RUNNER_TEMP/academic-main-vii.json"
+          python scripts/academic_main_viii_gate.py > "$RUNNER_TEMP/academic-main-viii.json"
           python scripts/main_vii_hostile_replay.py --target-repo . --require-fixed > "$RUNNER_TEMP/academic-main-vii-hostile.json"
       - name: Check carrier-relative ontology, proof policy and E meta tower receipts
         run: |

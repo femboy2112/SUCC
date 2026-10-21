@@ -272,3 +272,8 @@ public safety and exact menu-interface obstruction. The machine graph records ty
 Haar-to-distribution/WOT comparisons; the 13 new kernel declarations cover only
 residue algebra and public-policy/quotient results. Signed-source work stays on its
 separate #177 continuation.
+
+
+## Academic Main VIII dependency cut
+
+`primitive determinant gap -> D<=X^2 weighted bound (t<1)`; the separate missing edge is `weighted aggregate over D>X^2 -> full moment at t>=2/3`. The cofactor identity is an exact reduction with multiplicity, not that missing edge. `exterior modulus -> rank drop` needs a saturated-section count to control cardinality. `weight escape -> locally finite carrier` needs stronger summability for analytic Gibbs/trace transport. See the [frontier](academic_main_viii/research_frontier.md).

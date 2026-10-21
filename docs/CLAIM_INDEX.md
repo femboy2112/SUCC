@@ -179,3 +179,8 @@ public safety and exact menu-interface obstruction. The machine graph records ty
 Haar-to-distribution/WOT comparisons; the 13 new kernel declarations cover only
 residue algebra and public-policy/quotient results. Signed-source work stays on its
 separate #177 continuation.
+
+
+## Academic Main VIII (2026-10-21)
+
+[Integration audit](academic_main_viii/integration_audit.md) and [frontier](academic_main_viii/research_frontier.md). Existing ABC-EFF-01–05 remain paper-level theorems. [COF-01, EXT-01–04, SMP-01–02](CLAIM_SUPPLEMENT_EXTERIOR_ASCENT.md) and [POL-01–09](CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md) now have registered namespaces; the counterclaims retain REFUTED or UNVERIFIED status. Formal slope declarations receive only the authority supported by the actual pinned admission receipt.

@@ -10,6 +10,22 @@ from fractions import Fraction as Q
 from math import isqrt
 
 
+def _integer(value, name):
+    if type(value) is not int:
+        raise ValueError(f"{name} must be an integer (not bool, float or Fraction)")
+    return value
+
+
+def _rational(value, name):
+    if type(value) not in (int, Q):
+        raise ValueError(f"{name} must be an exact integer or Fraction")
+    return Q(value)
+
+
+def _digits(values):
+    return tuple(_integer(value, "digit") for value in values)
+
+
 @dataclass(frozen=True)
 class PolygonBracket:
     steps: int
@@ -23,6 +39,8 @@ class PolygonBracket:
 
 def rational_sqrt_enclosure(value: Q, precision_bits: int = 192) -> tuple[Q, Q]:
     """Outward dyadic bounds on sqrt(value); no machine-float rounding."""
+    value = _rational(value, "radicand")
+    _integer(precision_bits, "precision_bits")
     if value < 0 or not 1 <= precision_bits <= 4096:
         raise ValueError("nonnegative radicand and 1..4096 bits required")
     scale = 1 << precision_bits
@@ -41,10 +59,14 @@ def polygon_pi_bracket(steps: int, precision_bits: int = 192) -> PolygonBracket:
       m/2 * sqrt(x_m) < pi < m * sqrt(x_m/(4-x_m)).
     Every sqrt is outward rounded with exact rational bounds. Combining the
     bounds from all previous steps keeps the enclosing interval monotone.
+    The returned width includes rounding: it need not satisfy the ideal
+    polygon gap bound 64/sides**2. Use its actual rational width in budgets.
     """
-    if not isinstance(steps, int) or not 0 <= steps <= 100:
+    _integer(steps, "steps")
+    _integer(precision_bits, "precision_bits")
+    if not 0 <= steps <= 100:
         raise ValueError("steps must be an integer in [0,100]")
-    if not isinstance(precision_bits, int) or not 1 <= precision_bits <= 4096:
+    if not 1 <= precision_bits <= 4096:
         raise ValueError("precision_bits must be in [1,4096]")
     sides, x_lo, x_hi = 4, Q(2), Q(2)
     lower, upper = Q(0), Q(4)
@@ -70,6 +92,8 @@ def certified_fractional_pi_digits(steps: int, base: int = 10, max_digits: int =
 
     Requires 3<pi<4 to subtract the known integer part. No pi digit oracle.
     """
+    _integer(base, "base")
+    _integer(max_digits, "max_digits")
     if not 2 <= base <= 36 or max_digits < 0 or max_digits > 10000:
         raise ValueError("base 2..36, max_digits 0..10000")
     bracket = polygon_pi_bracket(steps, precision_bits)
@@ -99,6 +123,8 @@ def uniform_grid_pushforward_counts(start_sides: int, base: int, level: int,
     'prefix':    q(j/M) = floor(j/b)/(M/b).
     Both push forward uniform grid measure, but are different maps.
     """
+    for name, value in (("start_sides", start_sides), ("base", base), ("level", level)):
+        _integer(value, name)
     if start_sides < 3 or base < 2 or not 0 <= level <= 12:
         raise ValueError("invalid grid parameters")
     if morphism not in ("rotation", "prefix"):
@@ -112,6 +138,8 @@ def uniform_grid_pushforward_counts(start_sides: int, base: int, level: int,
 
 def polygon_quantize(x: Q, polygon_sides: int) -> Q:
     """Left endpoint of the polygon cell containing x mod 1."""
+    x = _rational(x, "phase")
+    _integer(polygon_sides, "polygon_sides")
     if polygon_sides < 3:
         raise ValueError("polygon_sides must be >=3")
     x = x % 1
@@ -124,6 +152,9 @@ def digit_block_total_variation(digits: tuple[int, ...], base: int, k: int) -> Q
 
     No finite-N numerical test certifies an infinite digit sequence normal.
     """
+    _integer(base, "base")
+    _integer(k, "k")
+    digits = _digits(digits)
     if base < 2 or not 1 <= k <= len(digits) or any(not 0 <= d < base for d in digits):
         raise ValueError("invalid digit block")
     sample_size = len(digits) - k + 1
@@ -144,6 +175,10 @@ def orbit_lipschitz_error_bound(base: int, depth: int, source_error: Q,
     |average F(T_b^j x)-average F(T_b^j y)| <= L*epsilon*(b^N-1)/(N*(b-1)).
     This bound is generally useless when N grows at fixed finite precision.
     """
+    _integer(base, "base")
+    _integer(depth, "depth")
+    source_error = _rational(source_error, "source_error")
+    lipschitz_constant = _rational(lipschitz_constant, "lipschitz_constant")
     if base < 2 or depth < 1 or source_error < 0 or lipschitz_constant < 0:
         raise ValueError("invalid stability parameters")
     return lipschitz_constant * source_error * Q(base**depth - 1, depth * (base - 1))
@@ -155,6 +190,9 @@ def finite_digit_path(word: tuple[int, ...], base: int, n: int) -> tuple[int, ..
     Returns first digit after each of the first n iterates, by padding zeros;
     for n>len(word), zeros are the eventual periodic tail of the rational path.
     """
+    _integer(base, "base")
+    _integer(n, "n")
+    word = _digits(word)
     if base < 2 or n < 0 or any(not 0 <= d < base for d in word):
         raise ValueError("invalid path")
     return tuple(word[i] if i < len(word) else 0 for i in range(n))
@@ -168,6 +206,9 @@ def polygon_prefix_path(start_sides: int, base: int, initial: int,
     The path-space measure assigns each level-n cylinder mass 1/(m*b**n).
     It does NOT make every path typical for that measure.
     """
+    for name, value in (("start_sides", start_sides), ("base", base), ("initial", initial)):
+        _integer(value, name)
+    digits = _digits(digits)
     if start_sides < 3 or base < 2 or not 0 <= initial < start_sides:
         raise ValueError("invalid initial polygon label")
     if any(not 0 <= d < base for d in digits):
@@ -185,6 +226,9 @@ def polygon_cylinder(index: int, start_sides: int, base: int,
     The interval is [j/M,(j+1)/M] with mass 1/M where M=m*b**level.
     Closed-endpoint aliases are kept as a separate quotient, not erased.
     """
+    for name, value in (("index", index), ("start_sides", start_sides),
+                        ("base", base), ("level", level)):
+        _integer(value, name)
     if start_sides < 3 or base < 2 or level < 0:
         raise ValueError("invalid cylinder parameters")
     m = start_sides * base**level

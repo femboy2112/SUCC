@@ -58,7 +58,7 @@ For `m≥4`, use `sin θ≤θ`, `1−cos θ≤θ²/2`, `cos θ≥1/√2` for `θ
 
 `0<U_m−L_m≤π³/(√2 m²)<64/m²`.
 
-The code evaluates **rational outward enclosures** of every square root with exact integer `isqrt`, and intersects successive brackets. There are no input π digits or unbounded floating-point rounding assumptions. Arbitrary precision is a **declared finite parameter**, and insufficient precision fails closed. Independently, an exact alternating-series Machin formula bounds π in unit tests; that formula is a holdout, not a source input to the polygon algorithm. Every rational enclosure yields a finite number of *certified* digit-prefix positions, and an enclosure straddling a base-`b` boundary yields **no false digits**.
+The code evaluates **rational outward enclosures** of every square root with exact integer `isqrt`, and intersects successive brackets. There are no input π digits or unbounded floating-point rounding assumptions. Arbitrary precision is a **declared finite parameter**; exhaustion of the positive chord enclosure fails closed. A valid but coarse enclosure can still be returned: its width includes rounding and need not satisfy the ideal geometric gap bound. For example, `polygon_pi_bracket(1,1)` returns `[2,4]`, whose width exceeds `64/8²=1`. Every computational error budget must use the actual returned rational width, or separately check a stronger width bound. Independently, an exact alternating-series Machin formula bounds π in unit tests; that formula is a holdout, not a source input to the polygon algorithm. Every rational enclosure yields a finite number of *certified* digit-prefix positions, and an enclosure straddling a base-`b` boundary yields **no false digits**.
 
 Source specificity: this construction singles out π rather than an arbitrary phase and gives a quantitative error budget. It does not yet yield a π-specific lower bound on Fourier cancellation.
 
@@ -84,7 +84,7 @@ Let `L_s<π<U_s` be any exact polygon bracket from §2, `y_s=(L_s+U_s)/2`, and `
 
 `|ν_N(π)(F)−ν_N(y_s)(F)| ≤ Lip(F) ε_s (b^N−1)/(N(b−1))`.
 
-Proof: `T_b` is `b`-Lipschitz for the circle metric, hence the absolute error at step `j` is at most `Lip(F) b^j ε_s`; sum the geometric series. The same phase result holds with `{π}` replacing `π` throughout. Inserting the polygon gap bound gives
+Proof: `T_b` is `b`-Lipschitz for the circle metric, hence the absolute error at step `j` is at most `Lip(F) b^j ε_s`; sum the geometric series. The same phase result holds with `{π}` replacing `π` throughout. For the ideal geometric endpoints, or a rational bracket separately verified to have width less than `64/m_s²`, inserting that width bound gives
 
 `|difference| < 32 Lip(F) (b^N−1)/(N(b−1)m_s²)`.
 
@@ -92,7 +92,7 @@ For a Fourier character `F_h(x)=exp(2π i h x)`, `Lip(F_h)=2π|h|<8|h|`. Thus th
 
 `4|h| (U_s−L_s) (b^N−1)/(N(b−1))`.
 
-All constants in this bound are source-derived and explicit; the sum for the rational midpoint must still be bounded independently, with its numerical evaluation and analytic tail error properly certified. At **fixed `s`**, the error budget grows exponentially in `N`: no uniform infinite-horizon conclusion follows. Sufficient refinement for a fixed `N` has `m_s` significantly larger than `b^(N/2)` (up to factors), an observation-resource cost, **not** a π normality bound.
+All constants in this bound are source-derived and explicit; the sum for the rational midpoint must still be bounded independently, with its numerical evaluation and analytic tail error properly certified. At **fixed `s`**, the error budget grows exponentially in `N`: no uniform infinite-horizon conclusion follows. Sufficient geometric refinement for a fixed `N` has `m_s` significantly larger than `b^(N/2)` (up to factors), together with enough rational precision to certify the required actual width. This is an observation-resource cost, **not** a π normality bound.
 
 The Lipschitz bound cannot be applied unmodified to discontinuous cylinder indicator functions. For digits use *certified strict containment* of the π interval within one base-`b` cylinder, or an explicitly sourced boundary-separation estimate.
 
@@ -116,7 +116,7 @@ A legitimate successful proof could produce, for each fixed base `b` and integer
 
 (A) `|N^{-1} Σ_{j<N} exp(2π i h b^j y_(s(N)))|→0` by a **new source-derived, noncircular** argument, and
 
-(B) `(U_(s(N))−L_(s(N))) (b^N−1)/N→0` by the certified polygon gap.
+(B) `(U_(s(N))−L_(s(N))) (b^N−1)/N→0`, using the actual certified bracket width, including every rational rounding error.
 
 Then the Fourier bound in §4 and Weyl's criterion imply π is base-`b` normal. Condition (B) is attainable by refining polygons aggressively; **(A) is the entire outstanding hard problem** and cannot be inferred merely from balanced grid weights, the existence of the circle, or the ability to compute many digits. If using only a sparse sequence `N_j`, one additionally needs a justified all-N interpolation condition (e.g. `N_(j+1)/N_j→1` plus bounded test observables).
 
