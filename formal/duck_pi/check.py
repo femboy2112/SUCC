@@ -81,7 +81,7 @@ def main():
     paths=[ROOT/'formal'/f'{n}.lean' for n in ['DuckPrinciple','DuckObserver','FutureSafeForgetting']]
     paths += [p for p in PROJECT.rglob('*') if p.is_file() and '.lake' not in p.parts and '__pycache__' not in p.parts and p.suffix in {'.lean','.py','.toml'}]
     paths += [PROJECT/'lean-toolchain',PROJECT/'lake-manifest.json',ROOT/'formal/kernel_audit/ExportCommand.lean',ROOT/'.github/workflows/duck-pi-proof.yml']
-    paths += [ROOT/'observational_succ/duck_observer.py']
+    paths += [ROOT/'observational_succ/duck_observer.py', ROOT/'scripts/cambrian_audit_c_lean.py']
     hashes={str(p.relative_to(ROOT)):digest(p.read_bytes()) for p in sorted(set(paths))}
     source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
     source_tree=subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=ROOT,text=True).strip()

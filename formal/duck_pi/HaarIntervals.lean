@@ -64,7 +64,11 @@ theorem circleCylinder_frontier_subset {a c : ℝ} (hac : a < c) :
 theorem circleCylinder_nullBoundary {a c : ℝ} (hac : a ≤ c) :
     circleHaar (frontier (circleCylinder a c)) = 0 := by
   rcases lt_or_eq_of_le hac with hlt | rfl
-  · exact measure_mono_null (circleCylinder_frontier_subset hlt) (by simp)
+  · have hfinite : ({0, (a : AddCircle (1 : ℝ)),
+        (c : AddCircle (1 : ℝ))} : Set (AddCircle (1 : ℝ))).Finite :=
+      ((Set.finite_singleton (c : AddCircle (1 : ℝ))).insert _).insert _
+    exact measure_mono_null (circleCylinder_frontier_subset hlt)
+      (hfinite.measure_zero circleHaar)
   · simp [circleCylinder]
 
 theorem circleCylinder_measure {a c : ℝ} (ha : 0 ≤ a) (hc : c ≤ 1) :
@@ -101,7 +105,11 @@ theorem haarUniform_implies_uniformDistribution (u : ℕ → ℝ)
   intro a c ha hac hc
   have h := haarUniform_nullBoundary_frequency (fun n => (u n : AddCircle (1 : ℝ))) hu
     (circleCylinder a c) (circleCylinder_measurable a c) (circleCylinder_nullBoundary hac)
-  simpa only [observationFrequency_circleCylinder, circleCylinder_measure ha hc,
+  have hfreq : observationFrequency (fun n => (u n : AddCircle (1 : ℝ)))
+      (circleCylinder a c) = intervalFrequency u a c :=
+    funext (observationFrequency_circleCylinder u a c)
+  rw [hfreq] at h
+  simpa only [circleCylinder_measure ha hc,
     ENNReal.toReal_ofReal (sub_nonneg.mpr hac)] using h
 
 /-- Conditional normality from actual global Fourier cancellation, not a

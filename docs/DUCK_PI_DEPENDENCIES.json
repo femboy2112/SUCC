@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "diagnostic_only": true,
-  "scope": "Navigation and declared-status consistency only; neither a trusted checker registry nor a proof-authority receipt. Formal references are lexical and statuses require independent exact-source kernel/referee evidence. requires edges record theorem use; premises edges remain assumptions of an implication. A kernel-checked implication never changes the status of its instantiated conclusion.",
+  "scope": "Navigation and declared-status consistency only; neither a trusted checker registry nor a proof-authority receipt. Formal references are lexical and statuses require independent exact-source kernel/referee evidence. requires edges record theorem use; premises edges remain assumptions of an implication. A kernel-checked implication never changes the status of its instantiated conclusion. A generic theorem node asserts the universal implication itself, including all hypotheses in its Lean type; it has no outstanding selected-source premise. Instance/application nodes record any named open premises separately. The form field describes that ledger obligation, not whether the Lean type contains arrows.",
   "base_commit": "9894d39250021bbbc2615c33dee0d286ddf0950f",
   "nodes": [
     {
@@ -214,7 +214,7 @@
       "id": "BC-DEFINITIONS",
       "kind": "definition",
       "status": "DEFINED",
-      "statement": "r(x)=(120x^2-89x+16)/((2x-1)(4x-1)(8x-7)(8x-3)); t_n=sum_{k>=0}16^(-k-1)r(n+k+1); y_0=0,y_(n+1)=16y_n+r(n+1); seriesValue=16t_0.",
+      "statement": "r(x)=(120x^2-89x+16)/((2x-1)(4x-1)(8x-7)(8x-3)); t_n=sum_{k>=0}16^(-k-1)r(n+k+1); y_0=0,y_(n+1)=16y_n+r(n+1); seriesValue=16t_0. The reduced forced state is x_n=fract(y_n); its shifted real lift is n -> liftedOrbit(n+1). Integer Fourier characters agree on both representatives.",
       "requires": [
         "SOURCE-BC01"
       ],
@@ -389,8 +389,8 @@
       "status": "CANDIDATE",
       "statement": "Fourier cancellation implies convergence of every continuous Haar test on the period-one circle. The cited theorem is universal in the input sequence; this diagram records its pi-orbit specialization with PI-FOURIER still an outstanding premise.",
       "requires": [
-        "PI-DEFINITIONS",
-        "SOURCE-MATHLIB"
+        "WEYL-HAAR-GENERAL",
+        "PI-DEFINITIONS"
       ],
       "premises": [
         "PI-FOURIER"
@@ -453,9 +453,8 @@
       "status": "OPEN",
       "statement": "Every half-open subinterval of [0,1) has the correct limiting visit frequency along fract(16^n*Real.pi).",
       "requires": [
-        "PI-HAAR",
-        "HAAR-NULL-BOUNDARY-LEAN",
-        "GAP-HAAR-INTERVAL-FORMAL"
+        "HAAR-INTERVAL-GENERAL",
+        "PI-HAAR"
       ],
       "premises": [],
       "files": [
@@ -469,6 +468,7 @@
       "status": "CANDIDATE",
       "statement": "Interval equidistribution of a radix orbit implies all overlapping canonical block frequencies. The generic theorem is universal in b>=2 and real x; its pi/base16 specialization retains PI-INTERVAL as an outstanding premise.",
       "requires": [
+        "INTERVAL-NORMAL-GENERAL",
         "PI-DEFINITIONS"
       ],
       "premises": [
@@ -768,8 +768,8 @@
       "status": "CANDIDATE",
       "statement": "For every declared circle sequence, Haar continuous-test convergence implies correct frequencies for every measurable set with Haar-null boundary. The geometric set hypotheses must be supplied; this diagram records the pi-orbit specialization.",
       "requires": [
-        "PI-DEFINITIONS",
-        "SOURCE-MATHLIB"
+        "HAAR-NULL-BOUNDARY-GENERAL",
+        "PI-DEFINITIONS"
       ],
       "premises": [
         "PI-HAAR"
@@ -837,12 +837,14 @@
       "kind": "theorem",
       "form": "implication",
       "status": "CANDIDATE",
-      "statement": "Actual global Fourier cancellation of the shifted Bailey-Crandall lifted orbit implies base-16 normality of Real.pi, via the proved BBP source, asymptotic Haar transport and canonical circle cylinders.",
+      "statement": "Actual global Fourier cancellation of the shifted Bailey-Crandall lifted orbit implies base-16 normality of Real.pi, via the proved BBP source, asymptotic Haar transport and canonical circle cylinders. The generic intermediate implications are applied to the forced sequence, so PI-FOURIER (cancellation of the pi orbit) is not added as an extra assumption.",
       "requires": [
-        "PI-SOURCE-LEAN",
-        "GAP-HAAR-INTERVAL-FORMAL",
-        "PI-DEFINITIONS",
-        "SOURCE-MATHLIB"
+        "WEYL-HAAR-GENERAL",
+        "ASYMPTOTIC-HAAR-GENERAL",
+        "PI-FORCED-DISTANCE-LEAN",
+        "HAAR-INTERVAL-GENERAL",
+        "INTERVAL-NORMAL-GENERAL",
+        "PI-DEFINITIONS"
       ],
       "premises": [
         "PI-FORCED-CANCELLATION"
@@ -854,6 +856,141 @@
         {
           "path": "formal/duck_pi/AsymptoticTransport.lean",
           "declaration": "ObservationalSUCC.DuckPi.baileyCrandall_fourier_implies_pi_normal16"
+        }
+      ]
+    },
+    {
+      "id": "WEYL-HAAR-GENERAL",
+      "kind": "theorem",
+      "form": "unconditional",
+      "theorem_scope": "universally_quantified_implication",
+      "status": "CANDIDATE",
+      "statement": "For every real sequence u, FourierCancellation(u) implies HaarUniformDistribution of its period-one circle projection. This node asserts the universally quantified implication, not cancellation for any selected source.",
+      "requires": [
+        "PI-DEFINITIONS",
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/WeylBridge.lean"
+      ],
+      "formal": [
+        {
+          "path": "formal/duck_pi/WeylBridge.lean",
+          "declaration": "ObservationalSUCC.DuckPi.fourierCancellation_implies_haarUniform"
+        }
+      ]
+    },
+    {
+      "id": "HAAR-NULL-BOUNDARY-GENERAL",
+      "kind": "theorem",
+      "form": "unconditional",
+      "theorem_scope": "universally_quantified_implication",
+      "status": "CANDIDATE",
+      "statement": "For every circle sequence u and measurable set S with Haar-null frontier, HaarUniformDistribution(u) implies that the empirical frequency in S tends to Haar(S). No selected orbit is asserted to satisfy the hypothesis.",
+      "requires": [
+        "PI-DEFINITIONS",
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/HaarBoundary.lean"
+      ],
+      "formal": [
+        {
+          "path": "formal/duck_pi/HaarBoundary.lean",
+          "declaration": "ObservationalSUCC.DuckPi.haarUniform_nullBoundary_frequency"
+        }
+      ]
+    },
+    {
+      "id": "HAAR-INTERVAL-GENERAL",
+      "kind": "theorem",
+      "form": "unconditional",
+      "theorem_scope": "universally_quantified_implication",
+      "status": "CANDIDATE",
+      "statement": "For every real sequence u, HaarUniformDistribution of its circle projection implies UniformDistributionModOne(u), using the exact canonical half-open cylinders and their null boundaries.",
+      "requires": [
+        "HAAR-NULL-BOUNDARY-GENERAL",
+        "GAP-HAAR-INTERVAL-FORMAL",
+        "PI-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/HaarIntervals.lean"
+      ],
+      "formal": [
+        {
+          "path": "formal/duck_pi/HaarIntervals.lean",
+          "declaration": "ObservationalSUCC.DuckPi.haarUniform_implies_uniformDistribution"
+        }
+      ]
+    },
+    {
+      "id": "INTERVAL-NORMAL-GENERAL",
+      "kind": "theorem",
+      "form": "unconditional",
+      "theorem_scope": "universally_quantified_implication",
+      "status": "CANDIDATE",
+      "statement": "For every b>=2 and every real x, UniformDistributionModOne(digitOrbit b x) implies NormalTo b x, with canonical overlapping half-open digit blocks.",
+      "requires": [
+        "PI-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/Normality.lean"
+      ],
+      "formal": [
+        {
+          "path": "formal/duck_pi/Normality.lean",
+          "declaration": "ObservationalSUCC.DuckPi.uniformDistribution_digitOrbit_implies_normal"
+        }
+      ]
+    },
+    {
+      "id": "ASYMPTOTIC-HAAR-GENERAL",
+      "kind": "theorem",
+      "form": "unconditional",
+      "theorem_scope": "universally_quantified_implication",
+      "status": "CANDIDATE",
+      "statement": "For every pair of circle sequences u,v whose mutual distance tends to zero, HaarUniformDistribution(u) implies HaarUniformDistribution(v). Compact uniform continuity and Cesaro convergence justify every continuous-test transfer.",
+      "requires": [
+        "PI-DEFINITIONS",
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/AsymptoticTransport.lean"
+      ],
+      "formal": [
+        {
+          "path": "formal/duck_pi/AsymptoticTransport.lean",
+          "declaration": "ObservationalSUCC.DuckPi.continuous_observation_difference_tendsto_zero"
+        },
+        {
+          "path": "formal/duck_pi/AsymptoticTransport.lean",
+          "declaration": "ObservationalSUCC.DuckPi.haarUniform_of_dist_tendsto_zero"
+        }
+      ]
+    },
+    {
+      "id": "PI-FORCED-DISTANCE-LEAN",
+      "kind": "theorem",
+      "form": "unconditional",
+      "status": "CANDIDATE",
+      "statement": "The distance between the actual BBP forced circle orbit at n+1 and the genuine circle projection of 16^n*pi tends to zero as n tends to infinity. No equidistribution hypothesis enters this distance theorem.",
+      "requires": [
+        "PI-SOURCE-LEAN",
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/AsymptoticTransport.lean"
+      ],
+      "formal": [
+        {
+          "path": "formal/duck_pi/AsymptoticTransport.lean",
+          "declaration": "ObservationalSUCC.DuckPi.pi_forced_orbit_distance_tendsto_zero"
         }
       ]
     }

@@ -618,3 +618,74 @@ kernel-checked results at the cited commit. Global π Fourier cancellation,
 π normality and the failed/unreplayed formal extensions remain outside this
 verdict. This is a separate internal same-model referee investigation, not an
 external human review or an independent model-family witness.
+
+## 10. Second resumed checkpoint: exact shadow distance and Weyl transport
+
+The referee separately decoded the actual observation from hosted
+[run 39632926557](https://github.com/femboy2112/SUCC/actions/runs/39632926557),
+commit `eb106f74455d1579c041d4cf2e5be80ef0492f23`, tree
+`0b4ccbb8069b0e2c02506e4f2c35838dc8ac32e0`. All 123 exported type hashes were
+recomputed. The axiom union remains exactly `propext`, `Classical.choice`,
+`Quot.sound`. The combined run failed in `HaarBoundary`; the dependent
+`HaarIntervals` and `AsymptoticTransport` modules were not successfully checked.
+This checkpoint does not report a green whole-project build.
+
+The seven `PiSource` declarations and 21 `WeylBridge` declarations now have
+successful module builds and actual exports. Their source hashes match the
+inspected files:
+
+* `PiSource.lean`: `37699406dc52caa814dd20dd1602060bd08e896d50e66b637d3e4077b8ace4e2`.
+* `WeylBridge.lean`: `e71eaf5beccac80cad05db3e3022c71e8fc7f304da0c61006ff2a7531ed3b358`.
+* `BaileyCrandall.lean`, now including its three additions:
+  `5ea46de978c6969509adf0fca71811a0cf18909b9c525ecaeb9e15cd4582de50`.
+
+The newly checked `pi_circle_distance_eq_tail` identifies the actual circle
+distance with `tail(n+1)`. Its exported type has only the natural index n as
+an outer argument. The strictly positive quadratic lower bound
+`15/[1024(n+2)^2] < distance` is also unconditional and universally quantified
+in n. Together with the earlier upper bound this establishes the pointwise
+order of this particular shadow distance. It is not a discrepancy lower
+bound and does not obstruct cancellation of either orbit.
+
+The Weyl theorem's actual exported type explicitly has the arguments
+`u : Nat → Real` and `hu : FourierCancellation u`, and concludes the existing
+`HaarUniformDistribution` predicate on the quotient sequence. The referee
+reconstructed its mechanism: norm-at-most-one empirical and Haar functionals;
+closure of the submodule of convergent continuous tests; convergence of the
+constant character to one and every nontrivial character to zero; density of
+the genuine integer characters; and passage from complex to real tests.
+The normalization at period one and the exceptional value N=0 are both
+handled explicitly. All ten registered source/proposition mutations, including
+Haar normalization, were rejected with successful positive controls in this
+run. The cancellation hypothesis is not discharged by this theorem.
+
+### Semantic review of the subsequent candidates
+
+The following mathematical review is **not a kernel-success claim**:
+
+* `HaarIntervals` uses the actual representative in `[0,1)` and half-open
+  preimages. Away from the cut at zero the representative is a local
+  homeomorphism, so a cylinder's frontier lies among zero and its two endpoint
+  classes. These three singleton sets have Haar measure zero. Quotient
+  integration identifies the cylinder's mass with its length. The statement
+  remains valid for a degenerate interval; the measure identity with a>c is
+  the empty-set/zero-positive-part case. These statements correctly supply
+  the geometric premises for Portmanteau rather than assuming interval
+  equidistribution.
+* `AsymptoticTransport` uses compact uniform continuity to make continuous
+  observation differences tend to zero, then Cesaro convergence to make their
+  empirical-mean differences tend to zero. Subtracting that difference from
+  the known source mean transports the Haar limit. The actual π bound supplies
+  vanishing distance with the exact `n+1` forced-orbit index. No scalar-source
+  identity or convergence premise is silently inserted.
+* Its final conditional normality declaration requires global Fourier
+  cancellation of `liftedOrbit(n+1)` for every nonzero integer frequency.
+  Passing to circle classes does not change those characters. This premise
+  is precisely an outstanding arithmetic obligation, not a newly proved
+  consequence of the tail bound. Base-power descent from 16 to 2 remains a
+  separate classical paper result unless a later kernel receipt states more.
+
+No mathematical defect was found in these candidate statements or their paper
+mechanisms. Successful elaboration and exact exported propositions remain
+required before promoting them. Neither this review nor the checked Weyl
+implication establishes a source-specific cancellation estimate.
