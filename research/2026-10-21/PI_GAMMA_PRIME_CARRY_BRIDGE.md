@@ -169,3 +169,32 @@ Seek independent mechanisms and hostile tests: (1) exact Kummer carry-vector can
 `python scripts/verify_provenance.py`
 
 **Primary work:** Bailey–Crandall, *On the Random Character of Fundamental Constant Expansions*, [author's paper](https://www.davidhbailey.com/dhbpapers/bcrandom.pdf) (the normality assertion is conditional on their **Hypothesis A**, not proven); Lagarias, *On the Normality of Arithmetical Constants*, [arXiv:math/0101055](https://arxiv.org/abs/math/0101055); NIST DLMF [§25.15](https://dlmf.nist.gov/25.15) for Dirichlet L-functions and [§25.16](https://dlmf.nist.gov/25.16) for RH-equivalent prime errors. Wallis, Euler's Basel identity, Kummer, Legendre, and Weyl are credited classical machinery.
+
+
+## PCG-09: exact simultaneous CRT character transport (proved paper)
+
+The **source** vector c_p(n) from Kummer is not the **observation conductor** after rational normalization. Reduce the Wallis midpoint as y_n=a_n/D_n with gcd(a_n,D_n)=1. Its denominator has a unique complete prime-power factorization D_n=prod_(q in Q_n)q, with q=p^v_p(D_n). These primes can include normalization factors (2n+1)(4n+1): do not identify the conductor with the central binomial valuations.
+
+For each q, define the **explicit transport unit** u_q=(D_n/q)^(-1) mod q. The CRT idempotents satisfy
+
+`sum_(q in Q_n) (D_n/q)u_q = 1 (mod D_n)`.
+
+Therefore for any base b, frequency h, and time j,
+
+`h b^j a_n/D_n = sum_(q in Q_n) h b^j a_n u_q/q (mod 1)`.
+
+In the **declared common additive-character basis** e(t)=exp(2pi it) this gives the exact identity
+
+**`e(h b^j y_n) = prod_(q in Q_n)e(h b^j a_n u_q/q)`.**
+
+Hence the Wallis-carry midpoint Weyl mean is an explicitly synchronized product of prime-power clock characters:
+
+`A_(b,h,N)(y_n) = N^(-1)sum_(j<N)prod_(q in Q_n)e(h b^j a_n u_q/q)`.
+
+This is classical CRT, but it is an essential SUCC interface: **joint** time coherence, not independent marginal prime-clock statistics, governs global Fourier cancellation. A local uniform distribution does not by itself establish a small mean for a product of coupled phases.
+
+For any nonempty partition Q_n=S∪T, set F_S(j)=prod_(q in S)e(h b^j a_n u_q/q), similarly F_T(j). A genuinely new proof could show quantitative cross-family time **decorrelation** `N^(-1)sum_(j<N)F_S(j)F_T(j)→0` for the authentic source-selected n=b^N. As formulated this is still an equivalent open exponential-sum problem, not an unearned bound. The dyadic period theorem supplies at least two nontrivial coprime conductor subfamilies but gives no independence.
+
+**Reproduction and hostile mutation:** exact integer-residue character reconstruction holds in tests 17–19 for several n, bases and frequencies. Replacing every transport inverse u_q by 1 demonstrably breaks the identity (n=2). The finite trial-factorization checker rejects large denominators; this computational resource boundary does not restrict the general CRT theorem.
+
+**PCG-09 status: PROVED PAPER / EXACT FINITE TESTED MODEL; academic novelty unverified.** Decisive remaining task: obtain genuine new incomplete-orbit cancellation at unbounded horizons, with source-map and long-period nonmixing controls.
