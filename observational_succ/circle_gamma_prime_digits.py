@@ -134,6 +134,26 @@ def genuine_prime_smooth_coefficients(primes: tuple[int, ...], max_power: int,
     return result
 
 
+
+def _genuine_prime_power(n: int) -> bool:
+    """Positive prime power p^k, k>=1; reject composites with mixed primes."""
+    if n < 2:
+        return False
+    if is_prime(n):
+        return True
+    p=2
+    while p*p<=n:
+        if n%p==0:
+            if not is_prime(p):
+                return False
+            r=n
+            while r%p==0:
+                r//=p
+            return r==1
+        p+=1
+    return False
+
+
 def phase_turn(n: int, phase) -> Q:
     """Normalized additive Fourier angle (n−1)x modulo one full turn."""
     _int(n, "mode", 1, 10000000)
@@ -161,6 +181,8 @@ def factorized_phase_with_mixed_terms(factors: tuple[int, ...], phase):
         raise ValueError("nonempty genuine prime-power factor list required")
     x = _rational(phase, "phase")
     factors = tuple(_int(f, "factor", 1, 10000000) for f in factors)
+    if any(not _genuine_prime_power(f) for f in factors):
+        raise ValueError("each factor must be a genuine prime power, not a fake composite place")
     product, factor_sum, mixed = 1, Q(0), Q(0)
     for factor in factors:
         factor_sum += phase_turn(factor, x)
