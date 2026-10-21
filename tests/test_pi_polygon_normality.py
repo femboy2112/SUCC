@@ -11,6 +11,7 @@ from observational_succ.pi_polygon_normality import (
     certified_fractional_pi_digits, digit_block_total_variation,
     finite_digit_path, orbit_lipschitz_error_bound, polygon_pi_bracket,
     polygon_quantize, rational_sqrt_enclosure, uniform_grid_pushforward_counts,
+    polygon_prefix_path, polygon_cylinder,
 )
 
 
@@ -132,6 +133,42 @@ class SourceAndPathMorphisms(unittest.TestCase):
         self.assertGreater(orbit_lipschitz_error_bound(b, 30, Q(1, 2**10)), 1)
         with self.assertRaises(ValueError):
             digit_block_total_variation((0,), 2, 2)
+
+
+class PrefixPathCircleQuotient(unittest.TestCase):
+    def test_nested_cells_and_exact_uniform_cylinder_mass(self):
+        for m in (3, 4, 5):
+            for base in (2, 3):
+                for index in range(m):
+                    word = (base-1, 0, 1 % base, 0)
+                    path = polygon_prefix_path(m, base, index, word)
+                    for n in range(1, len(path)):
+                        self.assertEqual(path[n] // base, path[n-1])
+                        lo, hi, mass = polygon_cylinder(path[n], m, base, n)
+                        prev_lo, prev_hi, _ = polygon_cylinder(path[n-1], m, base, n-1)
+                        self.assertLessEqual(prev_lo, lo)
+                        self.assertLessEqual(hi, prev_hi)
+                        self.assertEqual(hi - lo, mass)
+                        self.assertEqual(mass, Q(1, m * base**n))
+                # The M fair cylinder masses sum to one at each level.
+                for n in range(4):
+                    self.assertEqual(sum(polygon_cylinder(j,m,base,n)[2]
+                                         for j in range(m*base**n)), 1)
+
+    def test_both_valid_prefix_paths_encode_the_same_circle_phase(self):
+        # 1/4 = 0.01000... = 0.00111... in this m=4 refinement chart.
+        for n in range(1, 12):
+            right = polygon_prefix_path(4, 2, 1, (0,)*n)[-1]
+            left = polygon_prefix_path(4, 2, 0, (1,)*n)[-1]
+            rlo, _, _ = polygon_cylinder(right,4,2,n)
+            _, lhi, _ = polygon_cylinder(left,4,2,n)
+            self.assertEqual(rlo, Q(1,4))
+            self.assertEqual(lhi, Q(1,4))
+            self.assertNotEqual(left, right)
+        with self.assertRaises(ValueError):
+            polygon_prefix_path(4, 2, 4, ())
+        with self.assertRaises(ValueError):
+            polygon_cylinder(-1, 4, 2, 0)
 
 
 if __name__ == '__main__':
