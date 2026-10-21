@@ -84,13 +84,13 @@ theorem faithful_probe_certifies_factor
     {Act : Type u} {B : Type v} {A : Type w} {Out : Type z}
     (stepB : Act → B → B) (stepA : Act → A → A)
     (project : B → A) (observe : A → Out)
-    (faithful : Function.Injective observe)
+    (faithful : ∀ x y : A, observe x = observe y → x = y)
     (agrees : ∀ action b,
       observe (project (stepB action b)) =
         observe (stepA action (project b))) :
     IsFactor stepB stepA project := by
   intro action b
-  exact faithful (agrees action b)
+  exact faithful _ _ (agrees action b)
 
 /-- Finite probe completion requires a declared budget and a target
 state-separation theorem; a finite set of matching observations alone
@@ -125,7 +125,7 @@ theorem failed_factor_yields_separating_experiment
         observe (runWord stepA word x) =
           observe (runWord stepA word y)) → x = y)
     (failure : ¬ IsFactor stepB stepA project) :
-    ∃ action b (word : List Act),
+    ∃ action : Act, ∃ b : B, ∃ word : List Act,
       observe (runWord stepA word (project (stepB action b))) ≠
         observe (runWord stepA word (stepA action (project b))) := by
   classical
