@@ -20,6 +20,8 @@
 
 | CGPD-13 | Circle Fourier Parseval on the angular sawtooth derives ζ(2)=π²/6; genuine complete Euler product gives π²=6∏_p(1−p^(−2))^(−1). For every integer P≥2, the full prime-prefix product E_P has 0<ζ(2)−E_P<1/P, hence sqrt(6E_P)<π<sqrt(6(E_P+1/P)) | CLASSICAL / PROVED PAPER; exact finite intervals TESTED | Two source routes identify actual π; missing-prime mutant refutes an unauthenticated tail. No π digit normality or uniform orbit bound follows |
 
+| CGPD-14 | For every fixed base b and finite digit depth k, the full-prime Euler π-enclosures eventually fit entirely inside π's authentic base-b cylinder; increasing rational precision yields a finite exact prefix certificate. Every different real y has a finite authentic π-source exclusion witness | CLASSICAL / PROVED PAPER; finite exact prefixes TESTED | Quantifiers ∀k∃prime-cutoff,precision, NOT uniform block-frequency control; π could still be nonnormal, and present program has finite parameter caps |
+
 **What is already established rather than rediscovered:** Classical Archimedean/Gamma/Poisson summation and Euler, as in NIST DLMF §§20.10,27.4. The exact project-level synthesis preserves the clock/prime boundary correlations that a product-only treatment would erase.
 
 **Verify the finite-only checks:** `python -m unittest discover -s tests -p 'test_circle_gamma_prime_digits.py' -v` ; `python scripts/circle_gamma_prime_digits_probe.py --output /tmp/cgpd.json` ; `cmp /tmp/cgpd.json research/2026-10-21/CIRCLE_GAMMA_PRIME_DIGITS_FINITE_RECEIPT.json`. Independent analytic review, Lean and mainline admission remain separate gates.
