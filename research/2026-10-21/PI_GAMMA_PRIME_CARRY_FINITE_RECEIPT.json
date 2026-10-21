@@ -1,0 +1,170 @@
+{
+  "dyadic_period_samples": [
+    {
+      "dyadic_midpoint_denominator_divisible_by_both_fermat_like_factors": true,
+      "guaranteed_period_divisor": 4,
+      "level": 0
+    },
+    {
+      "dyadic_midpoint_denominator_divisible_by_both_fermat_like_factors": true,
+      "guaranteed_period_divisor": 12,
+      "level": 1
+    },
+    {
+      "dyadic_midpoint_denominator_divisible_by_both_fermat_like_factors": true,
+      "guaranteed_period_divisor": 24,
+      "level": 2
+    },
+    {
+      "dyadic_midpoint_denominator_divisible_by_both_fermat_like_factors": true,
+      "guaranteed_period_divisor": 40,
+      "level": 3
+    },
+    {
+      "dyadic_midpoint_denominator_divisible_by_both_fermat_like_factors": true,
+      "guaranteed_period_divisor": 60,
+      "level": 4
+    },
+    {
+      "dyadic_midpoint_denominator_divisible_by_both_fermat_like_factors": true,
+      "guaranteed_period_divisor": 84,
+      "level": 5
+    },
+    {
+      "dyadic_midpoint_denominator_divisible_by_both_fermat_like_factors": true,
+      "guaranteed_period_divisor": 112,
+      "level": 6
+    },
+    {
+      "dyadic_midpoint_denominator_divisible_by_both_fermat_like_factors": true,
+      "guaranteed_period_divisor": 144,
+      "level": 7
+    },
+    {
+      "dyadic_midpoint_denominator_divisible_by_both_fermat_like_factors": true,
+      "guaranteed_period_divisor": 180,
+      "level": 8
+    }
+  ],
+  "euler_cases": [
+    {
+      "pi_squared_interval_width": "4",
+      "prime_cutoff": 2
+    },
+    {
+      "pi_squared_interval_width": "3",
+      "prime_cutoff": 3
+    },
+    {
+      "pi_squared_interval_width": "15/8",
+      "prime_cutoff": 5
+    },
+    {
+      "pi_squared_interval_width": "2695/3072",
+      "prime_cutoff": 11
+    },
+    {
+      "pi_squared_interval_width": "3449779193156696604969739/16492004576564172816384000",
+      "prime_cutoff": 47
+    },
+    {
+      "pi_squared_interval_width": "157931602477524467174412316658899749755078227621995671500500942187531988729463574114592943288402566358767428948371173174989349/3202757579116645586361809328470655851244418694486626964942652625382370720946996146157115962990308360192000000000000000000000000",
+      "prime_cutoff": 200
+    }
+  ],
+  "n_10000_Q_200_joint_certified_decimal_4": [
+    1,
+    4,
+    1,
+    5
+  ],
+  "n_10000_certified_decimal_4": [
+    1,
+    4,
+    1,
+    5
+  ],
+  "n_100_Q_200_joint_squared_width": "51389587717317797918105197327419069746297907436956804852432999375683529924983736902844071292740660452702958269937249651857610429641005736934511712813687800339103877292132320242570624903122679981197020867478969702429004092811366486979555154208223690324071774392676383283380332997965781621107094711895234007707971162915177598566956751470382459019/6907822391457133002437933545183192848545969112510241481923000421013650138598063405356219797525507658938008539636616174173757884659598516981850783079328100536237976388646545089471699077856871676640615877352534037641151982080887227215803265946631578643893545868031962021129806680577176775672001084955802437940240355996981002240000000000000000000000",
+  "n_5_base_2_h_1_midpoint_phase_residue_clock": {
+    "denominator": 916839,
+    "residues": [
+      67531,
+      135062,
+      270124,
+      540248,
+      163657,
+      327314,
+      654628,
+      392417,
+      784834,
+      652829,
+      388819,
+      777638
+    ]
+  },
+  "period_nonmixing_negative_control_N_12": {
+    "period": 144,
+    "strict_fourier_mean_distance_from_1_lt": "2/16337542269985804499293566500108689747971"
+  },
+  "source_sha256": "1f3b6dbe5fe57793d797b1a3bcaf505572b3a649f18569cb5af620ba7f776a90",
+  "status": "exact_finite_only_no_pi_normality_claim",
+  "symbolic_uniform_base_2_h_1_N_1000000": "1/250000",
+  "theorem_basis": [
+    "Wallis",
+    "Gamma_factorials",
+    "Legendre_Kummer",
+    "Euler_zeta2",
+    "Weyl_conditional"
+  ],
+  "wallis_cases": [
+    {
+      "certified_decimal_prefix_length_2": null,
+      "deepest_prime_power_carry": 1,
+      "n": 1,
+      "nonzero_prime_carry_clocks": 1,
+      "wallis_interval_width": "8/15"
+    },
+    {
+      "certified_decimal_prefix_length_2": null,
+      "deepest_prime_power_carry": 1,
+      "n": 2,
+      "nonzero_prime_carry_clocks": 2,
+      "wallis_interval_width": "128/405"
+    },
+    {
+      "certified_decimal_prefix_length_2": null,
+      "deepest_prime_power_carry": 2,
+      "n": 3,
+      "nonzero_prime_carry_clocks": 2,
+      "wallis_interval_width": "512/2275"
+    },
+    {
+      "certified_decimal_prefix_length_2": null,
+      "deepest_prime_power_carry": 2,
+      "n": 5,
+      "nonzero_prime_carry_clocks": 3,
+      "wallis_interval_width": "131072/916839"
+    },
+    {
+      "certified_decimal_prefix_length_2": null,
+      "deepest_prime_power_carry": 2,
+      "n": 10,
+      "nonzero_prime_carry_clocks": 5,
+      "wallis_interval_width": "137438953472/1836877823781"
+    },
+    {
+      "certified_decimal_prefix_length_2": null,
+      "deepest_prime_power_carry": 2,
+      "n": 32,
+      "nonzero_prime_carry_clocks": 13,
+      "wallis_interval_width": "170141183460469231731687303715884105728/7040279190970321782436231743921001808265"
+    },
+    {
+      "certified_decimal_prefix_length_2": null,
+      "deepest_prime_power_carry": 3,
+      "n": 100,
+      "nonzero_prime_carry_clocks": 31,
+      "wallis_interval_width": "80695308690215893426747474125094121072803306025913234775958104891895238188026287332176417290004307232371974124148359168/10325785932054475215984725049011894780704268667095483636748273218221205220452948569791432851876606655671583022157154012225"
+    }
+  ]
+}
