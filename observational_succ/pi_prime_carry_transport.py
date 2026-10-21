@@ -240,3 +240,50 @@ def long_period_nonmixing_control(horizon: int) -> tuple[int, Fraction]:
     m = horizon * horizon
     q = (1 << m) - 1
     return m, Fraction(8 * ((1 << horizon) - 1), horizon * q)
+
+
+def prime_power_conductor(n: int, *, max_bits: int = 48) -> tuple[int, ...]:
+    """Factor the *observed midpoint denominator* into coprime prime powers.
+
+    This is not the same object as the Kummer valuation vector of the source
+    central binomial coefficient. Exact trial division is intentionally bounded
+    to small finite probes. Large inputs fail closed; the CRT theorem is general.
+    """
+    _positive_integer(max_bits, "max_bits")
+    midpoint = wallis_midpoint(n)
+    d = midpoint.denominator
+    if d.bit_length() > max_bits:
+        raise ValueError("conductor exceeds finite trial-factorization budget")
+    remainder, factor = d, 2
+    powers = []
+    while factor * factor <= remainder:
+        if remainder % factor == 0:
+            power = 1
+            while remainder % factor == 0:
+                power *= factor
+                remainder //= factor
+            powers.append(power)
+        factor = 3 if factor == 2 else factor + 2
+    if remainder > 1:
+        powers.append(remainder)
+    return tuple(powers)
+
+
+def joint_crt_phase_clocks(
+    n: int, base: int, h: int, horizon: int, *, max_bits: int = 48,
+) -> tuple[int, tuple[tuple[int, tuple[int, ...]], ...]]:
+    """Exact additive-character split into simultaneous coprime prime-power clocks.
+
+    If midpoint=a/D and D=prod(q), with u_q=(D/q)^(-1) mod q,
+    e(h*b^j*a/D) = prod_q e((h*b^j*a*u_q mod q)/q).
+    Returned local phases are integer residues, *not* rounded complex numbers.
+    This encodes joint coherence; individual clock averages do not imply the
+    mean of their product cancels.
+    """
+    d, global_residues = prime_carry_phase_clock(n, base, h, horizon)
+    factors = prime_power_conductor(n, max_bits=max_bits)
+    local = []
+    for q in factors:
+        inverse = pow(d // q, -1, q)
+        local.append((q, tuple((r * inverse) % q for r in global_residues)))
+    return d, tuple(local)
