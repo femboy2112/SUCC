@@ -5,8 +5,8 @@
 
 **Repository:** https://github.com/femboy2112/SUCC  
 **Starting audited main:** b116841f12b41aaf7600da39bbb40577f25b6295 (2026-10-21 Academic Main VIII). Refresh branch/commit before working; do not trust stale metadata.  
-**New research branch:** research/duck-principle-pi-proof-first-2026-10-21, inspect whether its draft PR has already been created.  
-**First read:** AGENTS.md; docs/METHOD.md; docs/FOUNDATIONS.md; docs/CLAIM_INDEX.md; docs/CLAIM_SUPPLEMENT_DUCK_PRINCIPLE.md; research/2026-10-21/DUCK_PRINCIPLE_AND_PI_PROOF_FRONTIER.md; formal/DuckPrinciple.lean; docs/CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md; research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md; research/2026-10-21/MAIN_VIII_SOURCE_PI_AUDIT.md; existing EOS and Yoneda/model-bridge modules. Audit existing CI and Lean provenance records, not just summaries.
+**Existing draft PR:** [#232](https://github.com/femboy2112/SUCC/pull/232), on branch research/duck-principle-pi-proof-first-2026-10-21. Preserve/reuse it rather than opening a duplicate. The first standalone Duck Lean 4.14 kernel **already passed** ([run 39605851189](https://github.com/femboy2112/SUCC/actions/runs/39605851189)); the expanded eight-theorem axiom audit also **passed** ([run 39606041265](https://github.com/femboy2112/SUCC/actions/runs/39606041265)). [Full receipt](../research/2026-10-21/DUCK_LEAN_KERNEL_RECEIPT.md). Revalidate current HEAD, check theorem signatures, then advance beyond this baseline.  
+**First read:** AGENTS.md; docs/METHOD.md; docs/FOUNDATIONS.md; docs/CLAIM_INDEX.md; docs/CLAIM_SUPPLEMENT_DUCK_PRINCIPLE.md; research/2026-10-21/DUCK_PRINCIPLE_AND_PI_PROOF_FRONTIER.md; formal/DuckPrinciple.lean; research/2026-10-21/DUCK_LEAN_KERNEL_RECEIPT.md; docs/CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md; research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md; research/2026-10-21/MAIN_VIII_SOURCE_PI_AUDIT.md; existing EOS and Yoneda/model-bridge modules. Audit existing CI and Lean provenance records, not just summaries.
 
 ### Mission and theorem boundary
 
