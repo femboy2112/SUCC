@@ -16,6 +16,8 @@ MODULES = {
     'PiSource': ('formal/duck_pi', 'ObservationalSUCC.DuckPi.Source'),
     'WeylBridge': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
     'HaarBoundary': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
+    'HaarIntervals': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
+    'AsymptoticTransport': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
 }
 
 # Each mutant has a compiling positive counterpart using the same imports and
@@ -74,6 +76,13 @@ def main():
     paths += [PROJECT/'lean-toolchain',PROJECT/'lake-manifest.json',ROOT/'formal/kernel_audit/ExportCommand.lean',ROOT/'.github/workflows/duck-pi-proof.yml']
     paths += [ROOT/'observational_succ/duck_observer.py']
     hashes={str(p.relative_to(ROOT)):digest(p.read_bytes()) for p in sorted(set(paths))}
+    source_commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
+    source_tree=subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=ROOT,text=True).strip()
+    # Bind the recorded commit to these actual inputs, including the runner.
+    subprocess.run(['git','ls-files','--error-unmatch','--',*hashes],cwd=ROOT,
+        check=True,stdout=subprocess.DEVNULL)
+    subprocess.run(['git','diff','--exit-code','HEAD','--',*hashes],cwd=ROOT,
+        check=True,stdout=subprocess.DEVNULL)
     for p in paths:
         if p.suffix=='.lean' and re.search(r'\b(sorry|admit|axiom|unsafe|native_decide)\b',uncomment(p.read_text())):
             raise RuntimeError('Forbidden proof token in '+str(p))
@@ -202,7 +211,8 @@ def main():
                 'mutant_sha256':digest(changed.encode()),'theorem_exports':found})
             if not passed:failures.append('generated:'+label)
     assert hashes=={p:digest((ROOT/p).read_bytes()) for p in hashes},'source changed during build'
-    record={'schema':'succ.duck-pi.kernel-observation.v1','build_succeeded':not failures and prerequisite.returncode==0,'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'git_tree':subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=ROOT,text=True).strip(),'lean_version':version,'source_hashes':hashes,'dependency_revisions':pins,'successful_modules':successes,'failed_modules':failures,'commands':commands,'theorem_exports':exports,'authority_admitted':False,'negative_mutations':mutations,'generated_certificates':generated}
+    assert source_commit==subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'HEAD changed during build'
+    record={'schema':'succ.duck-pi.kernel-observation.v1','build_succeeded':not failures and prerequisite.returncode==0,'git_commit':source_commit,'git_tree':source_tree,'lean_version':version,'source_hashes':hashes,'dependency_revisions':pins,'successful_modules':successes,'failed_modules':failures,'commands':commands,'theorem_exports':exports,'authority_admitted':False,'negative_mutations':mutations,'generated_certificates':generated}
     encoded=json.dumps(record,sort_keys=True,separators=(',',':')).encode()
     (output/'kernel-observation.json').write_bytes(encoded+b'\n')
     print('DUCK_PI_RECORD_BASE64 '+base64.b64encode(gzip.compress(encoded)).decode(),flush=True)

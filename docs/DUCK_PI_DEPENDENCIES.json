@@ -1,0 +1,826 @@
+{
+  "schema_version": 1,
+  "diagnostic_only": true,
+  "scope": "Navigation and declared-status consistency only; neither a trusted checker registry nor a proof-authority receipt. Formal references are lexical and statuses require independent exact-source kernel/referee evidence. requires edges record theorem use; premises edges remain assumptions of an implication. A kernel-checked implication never changes the status of its instantiated conclusion.",
+  "base_commit": "9894d39250021bbbc2615c33dee0d286ddf0950f",
+  "nodes": [
+    {
+      "id": "SOURCE-BC01",
+      "kind": "source",
+      "status": "REFERENCE",
+      "statement": "Bailey–Crandall 2001 equation (3), BBP coefficients, perturbation and radix-orbit bridges; Hypothesis A remains unproved.",
+      "requires": [],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_BBP_FORMAL_TRANSPORT.md",
+        "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md"
+      ],
+      "urls": [
+        "https://www.davidhbailey.com/dhbpapers/bcrandom.pdf",
+        "https://doi.org/10.1080/10586458.2001.10504441"
+      ]
+    },
+    {
+      "id": "SOURCE-MATHLIB",
+      "kind": "source",
+      "status": "REFERENCE",
+      "statement": "Pinned Lean 4.14 and mathlib 4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84; actual Real.pi, AddCircle, Haar measure, trigonometry and Fourier density.",
+      "requires": [],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/lean-toolchain",
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ],
+      "urls": [
+        "https://github.com/leanprover-community/mathlib4/tree/4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84"
+      ]
+    },
+    {
+      "id": "SOURCE-PRIMES",
+      "kind": "source",
+      "status": "REFERENCE",
+      "statement": "Actual von Mangoldt prime-power weights, absolutely convergent zeta Euler product at s=2, and explicit RH Chebyshev estimate with its declared domain.",
+      "requires": [],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_RH_ABC_GAMMA_CONTINGENCY.md"
+      ]
+    },
+    {
+      "id": "SOURCE-AUTOMATA",
+      "kind": "source",
+      "status": "REFERENCE",
+      "statement": "Classical finite-state equivalence and quotient constructions; no claim that product BFS is Hopcroft–Karp.",
+      "requires": [],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_OBSERVER_CERTIFICATION.md"
+      ],
+      "urls": [
+        "https://hdl.handle.net/1813/5958"
+      ]
+    },
+    {
+      "id": "DUCK-DEFINITIONS",
+      "kind": "definition",
+      "status": "DEFINED",
+      "statement": "Declared transition/readout interfaces, temporal-order words, observed morphism, all-word behavior, and complete finite relation-table laws. No inferred physical identity.",
+      "requires": [
+        "SOURCE-AUTOMATA"
+      ],
+      "premises": [],
+      "files": [
+        "formal/DuckPrinciple.lean",
+        "formal/DuckObserver.lean",
+        "research/2026-10-21/DUCK_OBSERVER_CERTIFICATION.md"
+      ],
+      "formal": [
+        {
+          "path": "formal/DuckObserver.lean",
+          "declaration": "ObservationalSUCC.Duck.Observer.Morphism"
+        },
+        {
+          "path": "formal/DuckObserver.lean",
+          "declaration": "ObservationalSUCC.Duck.Observer.RelationTableLaws"
+        }
+      ]
+    },
+    {
+      "id": "DUCK-QUOTIENT",
+      "kind": "theorem",
+      "status": "CANDIDATE",
+      "statement": "The behavioral quotient is separated and is universal for observed morphisms into separated targets; arbitrary action and state types.",
+      "requires": [
+        "DUCK-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "formal/DuckObserver.lean",
+        "research/2026-10-21/DUCK_OBSERVER_CERTIFICATION.md"
+      ],
+      "form": "unconditional",
+      "formal": [
+        {
+          "path": "formal/DuckObserver.lean",
+          "declaration": "ObservationalSUCC.Duck.Observer.separated_target_factorization"
+        }
+      ],
+      "paper_status": "PAPER_PROVED",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+        "combined_run_succeeded": false,
+        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "source_hashes": {
+          "formal/DuckObserver.lean": "3b4e23656a3480812a9f5250ec282e09dccea48e8a97aa49d25597d9d3d4efed"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.Duck.Observer.separated_target_factorization": "6569f50945013774b3f566bd936998b6a88311293e9a3ba72a2b611d8bc7168d"
+        }
+      }
+    },
+    {
+      "id": "DUCK-CLOSURE",
+      "kind": "theorem",
+      "status": "CANDIDATE",
+      "statement": "An exact finite table accepted by complete report/closure decision, containing the initial pair, proves readout equality for every finite action word.",
+      "requires": [
+        "DUCK-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "formal/DuckObserver.lean",
+        "research/2026-10-21/DUCK_OBSERVER_CERTIFICATION.md"
+      ],
+      "form": "unconditional",
+      "formal": [
+        {
+          "path": "formal/DuckObserver.lean",
+          "declaration": "ObservationalSUCC.Duck.Observer.validated_table_all_words"
+        }
+      ],
+      "paper_status": "PAPER_PROVED",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+        "combined_run_succeeded": false,
+        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "source_hashes": {
+          "formal/DuckObserver.lean": "3b4e23656a3480812a9f5250ec282e09dccea48e8a97aa49d25597d9d3d4efed"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.Duck.Observer.validated_table_all_words": "c07c7379bf46d705e04dc57c539b584675acfd3323326d83206f34bcd6c76ad1"
+        }
+      }
+    },
+    {
+      "id": "DUCK-PROBE-BOUND",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "For n- and m-state total observers with one fixed interface, any shortest distinguishing word has length at most n+m-2; within one n-state observer at most n-2. Both bounds are attained.",
+      "requires": [
+        "DUCK-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_OBSERVER_CERTIFICATION.md",
+        "tests/test_duck_observer.py"
+      ],
+      "form": "unconditional"
+    },
+    {
+      "id": "DUCK-FINITE-OBSTRUCTION",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "A finite autonomous deterministic digit observer has eventually periodic output and cannot be normal in any base b>=2; it cannot exactly preserve all digits of an irrational source.",
+      "requires": [
+        "DUCK-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_OBSERVER_CERTIFICATION.md"
+      ],
+      "form": "unconditional"
+    },
+    {
+      "id": "PI-DEFINITIONS",
+      "kind": "definition",
+      "status": "DEFINED",
+      "statement": "Normality means all overlapping canonical digit-block frequencies, independently of interval distribution, Haar-test distribution and all-frequency Fourier cancellation; Real.pi is the actual mathlib constant.",
+      "requires": [
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/Normality.lean",
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ],
+      "formal": [
+        {
+          "path": "formal/duck_pi/Normality.lean",
+          "declaration": "ObservationalSUCC.DuckPi.NormalTo"
+        },
+        {
+          "path": "formal/duck_pi/Normality.lean",
+          "declaration": "ObservationalSUCC.DuckPi.FourierCancellation"
+        },
+        {
+          "path": "formal/duck_pi/Normality.lean",
+          "declaration": "ObservationalSUCC.DuckPi.PiNormal16"
+        }
+      ]
+    },
+    {
+      "id": "BC-DEFINITIONS",
+      "kind": "definition",
+      "status": "DEFINED",
+      "statement": "r(x)=(120x^2-89x+16)/((2x-1)(4x-1)(8x-7)(8x-3)); t_n=sum_{k>=0}16^(-k-1)r(n+k+1); y_0=0,y_(n+1)=16y_n+r(n+1); seriesValue=16t_0.",
+      "requires": [
+        "SOURCE-BC01"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/BaileyCrandall.lean",
+        "research/2026-10-21/DUCK_BBP_FORMAL_TRANSPORT.md"
+      ],
+      "formal": [
+        {
+          "path": "formal/duck_pi/BaileyCrandall.lean",
+          "declaration": "ObservationalSUCC.BaileyCrandall.forcing"
+        },
+        {
+          "path": "formal/duck_pi/BaileyCrandall.lean",
+          "declaration": "ObservationalSUCC.BaileyCrandall.seriesValue"
+        }
+      ]
+    },
+    {
+      "id": "BBP-IDENTITY",
+      "kind": "theorem",
+      "status": "CLASSICAL_IMPORTED",
+      "statement": "The shifted BBP series sum_{m>=1}16^(1-m)r(m) equals the genuine geometric constant pi; this is not a normality theorem.",
+      "requires": [
+        "SOURCE-BC01",
+        "BC-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_BBP_FORMAL_TRANSPORT.md",
+        "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md"
+      ],
+      "form": "unconditional"
+    },
+    {
+      "id": "BBP-INTEGRAL-LEAN",
+      "kind": "theorem",
+      "status": "CANDIDATE",
+      "statement": "Integrating the rational geometric-series expansion on [0,1] proves the classical BBP coefficient series has sum Real.pi without a BBP identity hypothesis.",
+      "requires": [
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/BBPIntegral.lean",
+        "research/2026-10-21/DUCK_BBP_FORMAL_TRANSPORT.md"
+      ],
+      "form": "unconditional",
+      "formal": [
+        {
+          "path": "formal/duck_pi/BBPIntegral.lean",
+          "declaration": "DuckPiIntegral.bbp_hasSum_pi"
+        }
+      ],
+      "paper_status": "PAPER_PROVED",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+        "combined_run_succeeded": false,
+        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "source_hashes": {
+          "formal/duck_pi/BBPIntegral.lean": "601ce9d84ffd1281819a5b17e69cde245fbbd331c63f47f38440fb91ef049c62"
+        },
+        "declaration_type_hashes": {
+          "DuckPiIntegral.bbp_hasSum_pi": "2b8dc9dfd3d31bbfa95a24a4c08bdd6f2b75248d8b85da2a69c9e5cd63a51e0d"
+        }
+      }
+    },
+    {
+      "id": "BC-TAIL-PAPER",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "For every n>=0, 0<t_n<=r(n+1)/15<=1/(8n+1)^2; exact recursion gives y_n+t_n=16^n*t_0.",
+      "requires": [
+        "BC-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_BBP_FORMAL_TRANSPORT.md",
+        "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md"
+      ],
+      "form": "unconditional"
+    },
+    {
+      "id": "BC-TAIL-LEAN",
+      "kind": "theorem",
+      "status": "CANDIDATE",
+      "statement": "For every n>=0, the source-neutral tail bound and exact clock-inclusive semiconjugacy hold for the defined rational forcing. No identification with pi is required.",
+      "requires": [
+        "BC-DEFINITIONS",
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/BaileyCrandall.lean",
+        "research/2026-10-21/DUCK_BBP_FORMAL_TRANSPORT.md"
+      ],
+      "form": "unconditional",
+      "formal": [
+        {
+          "path": "formal/duck_pi/BaileyCrandall.lean",
+          "declaration": "ObservationalSUCC.BaileyCrandall.tail_le_shifted"
+        },
+        {
+          "path": "formal/duck_pi/BaileyCrandall.lean",
+          "declaration": "ObservationalSUCC.BaileyCrandall.corrected_clock_semiconjugacy"
+        }
+      ],
+      "paper_status": "PAPER_PROVED",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+        "combined_run_succeeded": false,
+        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "source_hashes": {
+          "formal/duck_pi/BaileyCrandall.lean": "6746e001303b2ee209b170fc86f9b39e5c3e3692dfd0b152439275cedd66c5af"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.BaileyCrandall.tail_le_shifted": "567730d0f0bbf4080aac276f759020b3b6600fd7b20073c60f93a8e284bb9c26",
+          "ObservationalSUCC.BaileyCrandall.corrected_clock_semiconjugacy": "6eb68412a4894b66e766d452a8f6690eea197ac4e1f0edf6f614e93ccb64adf1"
+        }
+      }
+    },
+    {
+      "id": "PI-FOURIER-TRANSPORT",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "For each integer h and every N>=1 the difference of the two unnormalized actual BBP/pi Fourier sums has magnitude <=abs(h)/5. This does not bound either sum sublinearly.",
+      "requires": [
+        "BC-TAIL-PAPER",
+        "BBP-IDENTITY",
+        "PI-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md"
+      ],
+      "form": "unconditional"
+    },
+    {
+      "id": "PI-FORCED-CANCELLATION",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "For every nonzero integer h, N^-1 sum_{n=1}^N exp(2*pi*i*h*x_n) tends to zero for the source-specific BBP forced orbit.",
+      "requires": [
+        "BC-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md",
+        "research/2026-10-21/DUCK_BBP_FORMAL_TRANSPORT.md"
+      ]
+    },
+    {
+      "id": "PI-FOURIER",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "For every nonzero integer h, N^-1 sum_{n=0}^{N-1} exp(2*pi*i*h*16^n*pi) tends to zero.",
+      "requires": [
+        "PI-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/Normality.lean",
+        "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md"
+      ]
+    },
+    {
+      "id": "WEYL-HAAR-LEAN",
+      "kind": "theorem",
+      "status": "CANDIDATE",
+      "statement": "Fourier cancellation implies convergence of every continuous Haar test on the period-one circle. The cited theorem is universal in the input sequence; this diagram records its pi-orbit specialization with PI-FOURIER still an outstanding premise.",
+      "requires": [
+        "PI-DEFINITIONS",
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [
+        "PI-FOURIER"
+      ],
+      "files": [
+        "formal/duck_pi/WeylBridge.lean",
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ],
+      "form": "implication",
+      "formal": [
+        {
+          "path": "formal/duck_pi/WeylBridge.lean",
+          "declaration": "ObservationalSUCC.DuckPi.fourierCancellation_implies_haarUniform"
+        }
+      ]
+    },
+    {
+      "id": "PI-HAAR",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "The circle orbit of Real.pi under multiplication by 16 converges against every continuous Haar test.",
+      "requires": [
+        "WEYL-HAAR-LEAN",
+        "PI-FOURIER"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/Normality.lean",
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ]
+    },
+    {
+      "id": "GAP-HAAR-INTERVAL-FORMAL",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "Formalize measurability, Haar-null frontier and measure equal to interval length for canonical half-open circle arcs, with exact fractional-part membership. This geometric bridge is not silently supplied by the null-boundary Portmanteau theorem.",
+      "requires": [
+        "PI-DEFINITIONS",
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ]
+    },
+    {
+      "id": "PI-INTERVAL",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "Every half-open subinterval of [0,1) has the correct limiting visit frequency along fract(16^n*Real.pi).",
+      "requires": [
+        "PI-HAAR",
+        "HAAR-NULL-BOUNDARY-LEAN",
+        "GAP-HAAR-INTERVAL-FORMAL"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/Normality.lean",
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ]
+    },
+    {
+      "id": "INTERVAL-NORMAL-LEAN",
+      "kind": "theorem",
+      "status": "CANDIDATE",
+      "statement": "Interval equidistribution of a radix orbit implies all overlapping canonical block frequencies. The generic theorem is universal in b>=2 and real x; its pi/base16 specialization retains PI-INTERVAL as an outstanding premise.",
+      "requires": [
+        "PI-DEFINITIONS"
+      ],
+      "premises": [
+        "PI-INTERVAL"
+      ],
+      "files": [
+        "formal/duck_pi/Normality.lean",
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ],
+      "form": "implication",
+      "formal": [
+        {
+          "path": "formal/duck_pi/Normality.lean",
+          "declaration": "ObservationalSUCC.DuckPi.uniformDistribution_digitOrbit_implies_normal"
+        },
+        {
+          "path": "formal/duck_pi/Normality.lean",
+          "declaration": "ObservationalSUCC.DuckPi.pi_interval_equidistribution_implies_normal16"
+        }
+      ],
+      "paper_status": "PAPER_PROVED",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+        "combined_run_succeeded": false,
+        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "source_hashes": {
+          "formal/duck_pi/Normality.lean": "240d7503ad05e8346d97c19129be52e3584f91622db540e9fdf44ea402840b62"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.uniformDistribution_digitOrbit_implies_normal": "96c25f251fc9ea41eb52c61393ae931e08161c28b7a4d333c9243a4cc5b7ee55",
+          "ObservationalSUCC.DuckPi.pi_interval_equidistribution_implies_normal16": "80cbf61f34d3e46dc732bc5c87bbdd3b5ddd24160f32d1cd684f532fd46db123"
+        }
+      }
+    },
+    {
+      "id": "PI-NORMAL16",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "Real.pi is normal in base 16. No global cancellation or interval-distribution proof has been supplied.",
+      "requires": [
+        "INTERVAL-NORMAL-LEAN",
+        "PI-INTERVAL"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/Normality.lean",
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ]
+    },
+    {
+      "id": "BASE16-BASE2",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "Canonical base-16 normality implies canonical base-2 normality by finite block-code unions and interleaving residue classes; not yet Lean formalized.",
+      "requires": [
+        "PI-DEFINITIONS"
+      ],
+      "premises": [
+        "PI-NORMAL16"
+      ],
+      "files": [
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ],
+      "form": "implication"
+    },
+    {
+      "id": "PI-NORMAL2",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "Real.pi is normal in base 2; would follow from base16, which remains open.",
+      "requires": [
+        "BASE16-BASE2",
+        "PI-NORMAL16"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ]
+    },
+    {
+      "id": "PI-NORMAL10",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "Real.pi is normal in base 10. No base16-to-base10 implication is asserted.",
+      "requires": [
+        "PI-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ]
+    },
+    {
+      "id": "PI-ABSOLUTE",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "For every integer base b>=2, Real.pi is normal in base b.",
+      "requires": [
+        "PI-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ]
+    },
+    {
+      "id": "LOGISTIC-FACTOR",
+      "kind": "theorem",
+      "status": "CANDIDATE",
+      "statement": "The circle map [t] -> sin^2(pi*t) is an onto continuous semiconjugacy from doubling to 4x(1-x) on [0,1], and is not injective. This gives no selected-orbit genericity.",
+      "requires": [
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/LogisticFactor.lean",
+        "research/2026-10-21/DUCK_NORMALITY_AND_LOGISTIC.md"
+      ],
+      "form": "unconditional",
+      "formal": [
+        {
+          "path": "formal/duck_pi/LogisticFactor.lean",
+          "declaration": "ObservationalSUCC.DuckPi.logisticHatUnit_semiconj"
+        },
+        {
+          "path": "formal/duck_pi/LogisticFactor.lean",
+          "declaration": "ObservationalSUCC.DuckPi.logisticHatUnit_surjective"
+        },
+        {
+          "path": "formal/duck_pi/LogisticFactor.lean",
+          "declaration": "ObservationalSUCC.DuckPi.logisticHat_not_injective"
+        },
+        {
+          "path": "formal/duck_pi/LogisticFactor.lean",
+          "declaration": "ObservationalSUCC.DuckPi.logisticHat_continuous"
+        }
+      ],
+      "paper_status": "PAPER_PROVED",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+        "combined_run_succeeded": false,
+        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "source_hashes": {
+          "formal/duck_pi/LogisticFactor.lean": "f62200a0c866eb8e04aaf990186e927cfa43e349234a2525774d01123d623cf7"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.logisticHatUnit_semiconj": "0534a98f8d9b14a2aeb326a572a0911f94f142f1bee2ac45fdd4b3f4c8860e97",
+          "ObservationalSUCC.DuckPi.logisticHatUnit_surjective": "1a62c6de088cb22ba3141d3998451853a5f0141624cdc141cbc2da963acaa810",
+          "ObservationalSUCC.DuckPi.logisticHat_not_injective": "e968d07af8290577e506c6c1b8a8272cd3638bc04a24fe21b095eabd92fbb139",
+          "ObservationalSUCC.DuckPi.logisticHat_continuous": "2a64a430149f3f120413d12524e90abfe71746dcbc09311d015b69ee9ed154c6"
+        }
+      }
+    },
+    {
+      "id": "RH",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "The Riemann hypothesis is permitted only as an explicit conditional premise.",
+      "requires": [],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_RH_ABC_GAMMA_CONTINGENCY.md"
+      ]
+    },
+    {
+      "id": "ABC",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "Integer abc is permitted only as an explicit conditional premise, with epsilon-dependent constant and primitive positive integer domain.",
+      "requires": [],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_RH_ABC_GAMMA_CONTINGENCY.md"
+      ]
+    },
+    {
+      "id": "RH-PI-DIFFERENCE",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "The stated RH Chebyshev estimate yields an explicit genuine prime-power approximation to pi and a difference bound between finite radix Fourier means; required cutoff is exponential in digit horizon.",
+      "requires": [
+        "SOURCE-PRIMES",
+        "PI-DEFINITIONS"
+      ],
+      "premises": [
+        "RH"
+      ],
+      "files": [
+        "research/2026-10-21/DUCK_RH_ABC_GAMMA_CONTINGENCY.md"
+      ],
+      "form": "implication"
+    },
+    {
+      "id": "ABC-RESIDUAL",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "Integer abc yields the stated lower bound for the primitive integer residual of a rational approximation and radix prefix. A joint approximation/radical bound is still required.",
+      "requires": [
+        "PI-DEFINITIONS"
+      ],
+      "premises": [
+        "ABC"
+      ],
+      "files": [
+        "research/2026-10-21/DUCK_RH_ABC_GAMMA_CONTINGENCY.md"
+      ],
+      "form": "implication"
+    },
+    {
+      "id": "RH-ABC-PI-CANCELLATION",
+      "kind": "conclusion",
+      "status": "OPEN",
+      "statement": "No implication from RH, abc, or both to pi-specific global Fourier cancellation is established; approximation-error transport does not supply cancellation.",
+      "requires": [
+        "RH-PI-DIFFERENCE",
+        "ABC-RESIDUAL",
+        "PI-FOURIER"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_RH_ABC_GAMMA_CONTINGENCY.md",
+        "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md"
+      ]
+    },
+    {
+      "id": "RATIONAL-COBOUNDARY-OBSTRUCTION",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "Weighted rational-pole orbit residues obstruct r(z)=16q(z-1)-q(z) for the actual BBP forcing in the declared rational function class. Failure of that ansatz does not imply normality.",
+      "requires": [
+        "BC-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md"
+      ],
+      "form": "unconditional"
+    },
+    {
+      "id": "FINITE-PREFIX-COUNTERFEIT",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "For every prescribed finite forcing prefix there is a rational coboundary continuation with rational eventually periodic shadow; decay/asymptotic and finite-prefix controls alone cannot certify source cancellation.",
+      "requires": [
+        "BC-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md"
+      ],
+      "form": "unconditional"
+    },
+    {
+      "id": "PI-SOURCE-LEAN",
+      "kind": "theorem",
+      "status": "CANDIDATE",
+      "statement": "The defined BBP sum equals Real.pi by the independently proved integral identity; for each n>=0 the actual circle distance from the forced state at n+1 to 16^n*pi is at most r(n+2)/15 and (8n+9)^(-2), with no supplied BBP identity premise.",
+      "requires": [
+        "BBP-INTEGRAL-LEAN",
+        "BC-TAIL-LEAN"
+      ],
+      "premises": [],
+      "files": [
+        "formal/duck_pi/PiSource.lean",
+        "research/2026-10-21/DUCK_BBP_FORMAL_TRANSPORT.md"
+      ],
+      "form": "unconditional",
+      "formal": [
+        {
+          "path": "formal/duck_pi/PiSource.lean",
+          "declaration": "ObservationalSUCC.DuckPi.Source.bbp_series_eq_pi"
+        },
+        {
+          "path": "formal/duck_pi/PiSource.lean",
+          "declaration": "ObservationalSUCC.DuckPi.Source.pi_circle_transport_shifted"
+        }
+      ],
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+        "combined_run_succeeded": false,
+        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "source_hashes": {
+          "formal/duck_pi/PiSource.lean": "a9ead48d00177f9667684d5f5e1e45fc3b4cad01211c6b03dd7a8dc1bf35e8dd"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.Source.bbp_series_eq_pi": "51f9467120886fe8bd87b6bbf6657796541eb1c13fd7363b29abe40d8d662517",
+          "ObservationalSUCC.DuckPi.Source.pi_circle_transport_shifted": "c7d6826b1cdae2439615a41039ba0be2390b3c94bf06748c84800ef9ed3fe9ac"
+        }
+      }
+    },
+    {
+      "id": "HAAR-NULL-BOUNDARY-LEAN",
+      "kind": "theorem",
+      "status": "CANDIDATE",
+      "statement": "For every declared circle sequence, Haar continuous-test convergence implies correct frequencies for every measurable set with Haar-null boundary. The geometric set hypotheses must be supplied; this diagram records the pi-orbit specialization.",
+      "requires": [
+        "PI-DEFINITIONS",
+        "SOURCE-MATHLIB"
+      ],
+      "premises": [
+        "PI-HAAR"
+      ],
+      "files": [
+        "formal/duck_pi/HaarBoundary.lean"
+      ],
+      "form": "implication",
+      "formal": [
+        {
+          "path": "formal/duck_pi/HaarBoundary.lean",
+          "declaration": "ObservationalSUCC.DuckPi.haarUniform_nullBoundary_frequency"
+        }
+      ]
+    },
+    {
+      "id": "BC-SHARP-ASYMPTOTIC",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "For x=n+1 and every n>=0, -1/(480x^3)<=t_n-1/(64x^2)<=2783/(14400x^3). The exact circle error is t_n and its quadratic order cannot be improved to little-o(n^-2) for this same transport.",
+      "requires": [
+        "BC-TAIL-PAPER",
+        "BBP-IDENTITY"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_BBP_FORMAL_TRANSPORT.md"
+      ],
+      "form": "unconditional"
+    },
+    {
+      "id": "POSITIVE-WEIGHTED-COUNTERFEITS",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "For every K>=1, the normalized finite-tail rational forcing rtilde_K(n)=[16^K r(n)-r(n+K)]/(16^K-1) is positive, has the same leading 15/(64n^2) term and a rational eventual-periodic shadow. For all n>=1, n^2 abs(rtilde_K(n)-r(n))<=47/[15(16^K-1)]. No weighted neighborhood of the actual forcing excludes these counterfeits.",
+      "requires": [
+        "BC-DEFINITIONS",
+        "BC-TAIL-PAPER"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md",
+        "observational_succ/duck_bbp_fourier.py"
+      ],
+      "form": "unconditional"
+    },
+    {
+      "id": "FINITE-DEGREE-DISCRIMINATOR",
+      "kind": "theorem",
+      "status": "PAPER_PROVED",
+      "statement": "For q=A/B over Q with deg A,deg B<=d and B(j)!=0 for j=0,...,2d+5, some n in 1,...,2d+5 has r(n)!=16q(n-1)-q(n). The nonzero residual numerator has degree at most 2d+4. No finite test without the degree/domain hypotheses has this guarantee.",
+      "requires": [
+        "RATIONAL-COBOUNDARY-OBSTRUCTION",
+        "BC-DEFINITIONS"
+      ],
+      "premises": [],
+      "files": [
+        "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md",
+        "observational_succ/duck_bbp_fourier.py"
+      ],
+      "form": "unconditional"
+    }
+  ],
+  "formal_status_note": "CANDIDATE labels refer to the current integrated candidate, not a denial of recorded historical kernel successes. observed_kernel is a navigation pointer to an actual run, not independent receipt authentication. Promote only after the coordinator checks the exact final sources and records DUCK_PI_KERNEL_RECEIPT.md."
+}

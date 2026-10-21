@@ -42,4 +42,20 @@ theorem pi_circle_transport_shifted (n : ℕ) :
   apply (pi_circle_distance_le_tail n).trans
   convert tail_le_shifted (n+1) using 1 <;> push_cast <;> ring
 
+/-- The quotient metric does not lose the positive tail at this scale. -/
+theorem pi_circle_distance_eq_tail (n : ℕ) :
+    dist (circleOrbit (n+1)) ((16^n * Real.pi : ℝ) : AddCircle (1 : ℝ)) =
+      tail (n+1) := by
+  rw [← bbp_series_eq_pi]
+  exact circle_series_distance_eq_tail n
+
+/-- A matching quadratic lower bound rules out a better pointwise order for
+this specific shadowing. It does not lower-bound discrepancy. -/
+theorem pi_circle_transport_lower (n : ℕ) :
+    15/(1024*((n : ℝ)+2)^2) <
+      dist (circleOrbit (n+1)) ((16^n * Real.pi : ℝ) : AddCircle (1 : ℝ)) := by
+  rw [pi_circle_distance_eq_tail]
+  simpa only [Nat.cast_add, Nat.cast_one, add_assoc, one_add_one_eq_two] using
+    tail_lower_quadratic (n+1)
+
 end ObservationalSUCC.DuckPi.Source

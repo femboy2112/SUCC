@@ -12,7 +12,7 @@ The final identification of half-open circle arcs remains a separate lemma.
 
 noncomputable section
 
-open scoped BigOperators Topology ENNReal
+open scoped BigOperators Topology ENNReal Classical
 open Filter MeasureTheory
 
 namespace ObservationalSUCC.DuckPi
@@ -30,7 +30,7 @@ def haarProbability : ProbabilityMeasure (AddCircle (1 : ℝ)) :=
   ⟨circleHaar, ⟨circleHaar_total_mass⟩⟩
 
 theorem empiricalProbability_integral (u : ℕ → AddCircle (1 : ℝ)) (N : ℕ)
-    (F : AddCircle (1 : ℝ) →ᵇ ℝ) :
+    (F : BoundedContinuousFunction (AddCircle (1 : ℝ)) ℝ) :
     (∫ z, F z ∂(empiricalProbability u N : Measure (AddCircle (1 : ℝ)))) =
       (∑ n ∈ Finset.range (N + 1), F (u n)) / (N + 1 : ℝ) := by
   rw [empiricalProbability, ProbabilityMeasure.coe_mk, integral_smul_measure,
@@ -43,7 +43,7 @@ theorem haarUniform_empiricalProbability_tendsto (u : ℕ → AddCircle (1 : ℝ
   apply ProbabilityMeasure.tendsto_iff_forall_integral_tendsto.mpr
   intro F
   have h := (hu F F.continuous).comp (tendsto_add_atTop_nat 1)
-  simpa only [Function.comp_apply, empiricalProbability_integral,
+  simpa only [Function.comp_def, empiricalProbability_integral,
     haarProbability, ProbabilityMeasure.coe_mk, Nat.cast_add, Nat.cast_one] using h
 
 def observationFrequency (u : ℕ → AddCircle (1 : ℝ))
@@ -77,7 +77,7 @@ theorem haarUniform_nullBoundary_frequency (u : ℕ → AddCircle (1 : ℝ))
     hweak (show (haarProbability : Measure (AddCircle (1 : ℝ))) (frontier S) = 0 from hboundary)
   have hreal := (ENNReal.tendsto_toReal (measure_ne_top circleHaar S)).comp hmeasure
   apply (tendsto_add_atTop_iff_nat 1).mp
-  simpa only [Function.comp_apply, empiricalProbability_toReal_apply u _ S hS,
+  simpa only [Function.comp_def, empiricalProbability_toReal_apply u _ S hS,
     haarProbability, ProbabilityMeasure.coe_mk] using hreal
 
 end ObservationalSUCC.DuckPi

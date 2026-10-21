@@ -288,9 +288,25 @@ Next verdict-changing proof debt: formalize the concrete BFS program and its
 shortest-word bound. The finite-table exporter below instead provides a small
 independent kernel-checking route for individual equivalence certificates;
 it does not formally prove the Python search correct or shortest.
-For pi, first supply an actual source-preserving finite quotient with an
-independently proved global observation scope; mere similarity to a finite
-clock cannot manufacture such a quotient.
+For pi, a finite quotient can preserve only appropriately declared coarser
+observations. It cannot preserve the complete autonomous digit readout, as
+the following boundary shows.
+
+**Finite digit-observer obstruction (paper theorem).** Fix a base `b>=2`.
+Every autonomous deterministic trajectory in a finite state space is eventually
+periodic: among its first `n+1` states two coincide, and determinism repeats the
+future with their positive index difference. Any state readout therefore has
+an eventual period `p>=1`. At most `p` length-`k` words occur in the periodic
+tail. Choose `k` with `b^k>p`; some base-`b` word then has limiting frequency
+zero instead of `b^-k`. The digit output is not normal. Moreover an eventually
+periodic radix expansion is rational: its finite prefix is rational, and its
+periodic tail is a finite rational block times a convergent geometric series
+with ratio `b^-p`. Thus an irrational source, including the genuine pi, cannot
+have an exact finite deterministic factor preserving its entire radix digit
+observation along the orbit. This is a demonstrated boundary of that finite
+model route, not an unproved missing finite-state construction. Coarser probes,
+infinite-state dynamics and source-specific analytic cancellation remain
+different possibilities.
 
 ## 9. A proof-producing finite certificate route
 
@@ -331,3 +347,29 @@ content against an externally pinned receipt; it does not authenticate the
 physical source named in that content. A false generated table must fail
 `checked`, irrespective of Python's prior verdict. No defense against arbitrary
 hostile code running inside the same Python interpreter is advertised.
+
+
+## 10. Observed kernel result and dependency navigation
+
+The resumed campaign inspected [hosted run 39613723244](https://github.com/femboy2112/SUCC/actions/runs/39613723244)
+at commit `6fbe9d29355aaccca5ebf2753d34eee2e2ece627`. All 17 declarations in
+`formal/DuckObserver.lean` compiled and exported actual theorem types and axiom
+dependencies. Its exact observed SHA256 was
+`3b4e23656a3480812a9f5250ec282e09dccea48e8a97aa49d25597d9d3d4efed`.
+The two independently generated finite-table fixtures each compiled their three
+certificate declarations; changing the target readout caused Lean's complete
+finite decision proof to fail. The combined run still failed in the separate
+Weyl module. This is an observed successful module build, not a claim that the
+whole integration candidate passed. The coordinator's final receipt supersedes
+this checkpoint for the final source tree.
+
+[The dependency ledger](../../docs/DUCK_PI_DEPENDENCIES.json) distinguishes a
+valid implication from its still-open instance. Its structural checker follows
+`requires` edges and records `premises` separately; a claimed application cannot
+silently omit an implication's premise. References to declarations are lexical
+navigation, not namespace/type checking. Even a forged JSON success record can
+be structurally well formed: the diagnostic explicitly grants no proof or source
+authority and never registers a checker. Exact kernel exports and independent
+semantic review remain necessary. Tests preserve that boundary, malformed-node
+controls, missing references, cycles, premature promotion, and repository-path
+escape controls.

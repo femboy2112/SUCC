@@ -522,3 +522,99 @@ shows why this particular counterfeit does not settle the actual π source.
 These links identify inspected primary sources. No publisher PDF hash, external
 human review, academic novelty, successful local Lean execution, or formal
 verification of imported analytic literature is claimed.
+
+## 9. Resumed referee checkpoint: actual kernel exports and finite-degree probes
+
+This checkpoint independently inspected the completed hosted
+[run 39613723244](https://github.com/femboy2112/SUCC/actions/runs/39613723244),
+at commit `6fbe9d29355aaccca5ebf2753d34eee2e2ece627`, tree
+`5cb5f94f9f06eeaeff16c27e5c21bdb3d53e8c0c`. It supersedes the earlier
+**candidate** descriptions only for the exact successfully compiled declarations
+listed by that run. The combined build failed in `WeylBridge`; its success must
+not be inferred from the success of other modules.
+
+### Actual proof scope
+
+The compressed observation in the hosted log was decoded, every one of its
+97 exported theorem-type SHA256 values was recomputed, and all reported axiom
+lists were inspected. Their union is exactly `propext`, `Classical.choice`,
+`Quot.sound`; no exported successful theorem depends on `sorryAx` or a new
+source/normality axiom. The separately generated two-action and empty-alphabet
+fixtures each exported three additional proofs. Their axiom lists use at most
+`propext`. Nine source/proposition mutants were rejected with successful
+positive controls; the Haar-normalization mutant was correctly blocked by the
+failed positive Weyl module.
+
+The following actual types were compared with their source definitions and
+the prior paper reconstruction:
+
+| Declaration | Observed proposition and boundary |
+|---|---|
+| `DuckPiIntegral.bbp_hasSum_pi` | The standard infinite BBP coefficient series has sum `Real.pi`. The exported type has no hypothesis binder supplying the BBP identity, RH, ABC or cancellation. |
+| `ObservationalSUCC.DuckPi.Source.bbp_series_eq_pi` | The declared rational-forcing `seriesValue` equals `Real.pi`, obtained by uniqueness of the two independently established sums. This is an unconditional equality, not an English source label. |
+| `ObservationalSUCC.DuckPi.Source.pi_orbit_identity` | For every natural n, `16^n * Real.pi = liftedOrbit (n+1) + tail (n+1)`. The index shift is explicit and correct. |
+| `ObservationalSUCC.DuckPi.Source.pi_circle_transport_shifted` | For every natural n, the distance on the actual `AddCircle 1` is at most `1/(8*n+9)^2`. The only outer quantified input is n; no source-identification or equidistribution premise is hidden. |
+| `ObservationalSUCC.Duck.Observer.validated_table_all_words` | Complete finite relation laws and initial membership imply agreement of the exact encoded readouts for every action word. The universal closure theorem's axiom list is empty. |
+
+Representative exact exported type hashes are:
+
+* `bbp_hasSum_pi`: `2b8dc9dfd3d31bbfa95a24a4c08bdd6f2b75248d8b85da2a69c9e5cd63a51e0d`.
+* `bbp_series_eq_pi`: `51f9467120886fe8bd87b6bbf6657796541eb1c13fd7363b29abe40d8d662517`.
+* `pi_circle_transport_shifted`: `c7d6826b1cdae2439615a41039ba0be2390b3c94bf06748c84800ef9ed3fe9ac`.
+* `validated_table_all_words`: `c07c7379bf46d705e04dc57c539b584675acfd3323326d83206f34bcd6c76ad1`.
+
+These are observations of a real build, not self-authenticating JSON authority.
+The record explicitly has `authority_admitted=false`. New declarations are not
+silently installed in the existing Level-C proof-authority catalogue. The source
+hashes matched the inspected `BBPIntegral`, `PiSource`, `Normality`,
+`LogisticFactor` and `DuckObserver` files. Three subsequent additions to
+`BaileyCrandall` were not part of this build and require their own replay.
+
+### Generated certificates and source identity
+
+The finite generator emits complete literal transition/readout/relation tables.
+A shared injective coding of output strings preserves equality. The kernel
+checks both exhaustive relation laws and the initial pair before applying the
+all-word theorem. There is no imported Python Boolean or caller callback in the
+proof. Empty action alphabets use the genuine `Fin 0` eliminator. Hostile label
+text stays in JSON-escaped line comments rather than executable Lean syntax.
+
+The JSON/hash comments bind a declared model only when compared externally to
+the emitted artifact; they are not part of the logical proposition and do not
+authenticate a physical source. Compilation certifies those literal models,
+not universal correctness of the Python generator or an unrelated model. The
+current interface and dossier preserve this distinction. No authority-transfer
+defect was found within that advertised domain.
+
+### Independently reconstructed finite discriminator
+
+For `q=A/B` with rational polynomial numerator and denominator of degrees at
+most d, put the residual over `D(z)B(z-1)B(z)`, where the authentic forcing has
+numerator N of degree two and denominator D of degree four. The numerator is
+
+\[
+F=N B(z-1)B(z)-16 A(z-1)D B(z)+A(z)D B(z-1).
+\]
+
+Its degree is at most `2d+4`. The previously established source-pole obstruction
+ensures F is not identically zero. If `B(j)` is nonzero for `0<=j<=2d+5`, all
+the positive probe denominators are nonzero; consequently, vanishing at all
+`2d+5` distinct probe points contradicts the polynomial root bound. This
+independently reconstructs DA-DEGREE, including the otherwise essential
+nonsingularity and declared-degree hypotheses. Rejection of a singular
+presentation is legitimate even when cancellation might remove its pole.
+
+As an implementation cross-check, a separate symbolic construction formed F
+from the coefficients, checked its degree, and independently evaluated its
+residual at the returned point for 48 deterministic coefficient cases across
+degrees 0 through 5. All passed. The 14 analytic tests and 13 observer tests
+also passed in the combined root worktree. These are finite corroboration;
+the universal sample guarantee is the polynomial argument above, and is not
+claimed Lean formalized.
+
+**Verdict:** no blocking mathematical defect was found in these scopes. A
+source-faithful classical identity and quantitative π transport are now actual
+kernel-checked results at the cited commit. Global π Fourier cancellation,
+π normality and the failed/unreplayed formal extensions remain outside this
+verdict. This is a separate internal same-model referee investigation, not an
+external human review or an independent model-family witness.

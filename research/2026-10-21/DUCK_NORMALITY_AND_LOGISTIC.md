@@ -206,3 +206,43 @@ These are classical proof imports/formalization tasks. Even after those
 are completed, the source-selected global Fourier or interval cancellation
 for `Real.pi` remains a separate mathematical pathway gap. The logistic
 factor neither closes nor hides it.
+
+## 7. Observed kernel checkpoint and subsequent candidates
+
+The preceding initial-status paragraphs describe the first lane commit.
+Hosted [run 39613723244](https://github.com/femboy2112/SUCC/actions/runs/39613723244)
+at commit `6fbe9d29355aaccca5ebf2753d34eee2e2ece627` subsequently compiled
+both complete files and exported their actual theorem types and axiom lists:
+12 declarations from `LogisticFactor.lean` and nine from `Normality.lean`.
+Their exact SHA256 hashes were respectively
+`f62200a0c866eb8e04aaf990186e927cfa43e349234a2525774d01123d623cf7`
+and `240d7503ad05e8346d97c19129be52e3584f91622db540e9fdf44ea402840b62`.
+The exported dependencies were confined to `propext`, `Classical.choice`
+and `Quot.sound`. The logistic coefficient, canonical endpoint, word-frequency
+and exceptional-zero mutations failed with compiling positive controls.
+
+That combined run **failed overall** because the subsequent `WeylBridge.lean`
+candidate had elaboration errors. It is evidence for the two successful
+modules, not a successful whole-campaign receipt. The coordinator's final
+receipt must determine the status of the repaired bridge and later modules.
+
+The subsequent candidates use actual established mathematics, rather than
+assuming equivalences:
+
+* `WeylBridge.lean` proves convergence first for genuine circle characters,
+  extends it through their dense complex linear span using uniformly bounded
+  empirical and Haar functionals, then takes real parts. The density theorem
+  is pinned mathlib's `span_fourier_closure_eq_top`.
+* `HaarBoundary.lean` constructs empirical probability measures, identifies
+  their integrals and finite counts, and invokes the pinned Portmanteau
+  theorem for measurable observations with Haar-null frontier.
+* `HaarIntervals.lean` constructs the canonical half-open cylinder from
+  `AddCircle.equivIco`. Its frontier lies among the cut and two endpoints,
+  each of Haar measure zero; quotient integration gives its actual length.
+  This supplies the Haar-to-interval implication and, composed with the
+  already checked cylinder theorem, a conditional Fourier-to-normality claim.
+
+These three modules are **UNVERIFIED until their exact successful kernel
+receipt**. The source-specific Fourier cancellation premise for pi is not
+proved by any of them. The base-power descent in section 5 remains a paper
+proof rather than a Lean declaration.
