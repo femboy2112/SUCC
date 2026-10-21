@@ -56,8 +56,12 @@ jobs:
           cp formal/DuckPrinciple.lean /tmp/DuckPrincipleAxioms.lean
           cat >> /tmp/DuckPrincipleAxioms.lean <<'LEAN'
           #print axioms ObservationalSUCC.Duck.factor_all_words
+          #print axioms ObservationalSUCC.Duck.factor_preserves_observations
+          #print axioms ObservationalSUCC.Duck.factors_compose
+          #print axioms ObservationalSUCC.Duck.faithful_probe_certifies_factor
           #print axioms ObservationalSUCC.Duck.bounded_separating_probes_certify_factor
           #print axioms ObservationalSUCC.Duck.failed_factor_yields_separating_experiment
+          #print axioms ObservationalSUCC.Duck.erased_systems_mimic_every_word
           #print axioms ObservationalSUCC.Duck.erased_resemblance_does_not_certify_identity
           LEAN
           lean /tmp/DuckPrincipleAxioms.lean
