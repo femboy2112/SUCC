@@ -191,5 +191,22 @@ class JointCRTPhaseClocksTests(unittest.TestCase):
             prime_power_conductor(1, max_bits=True)
 
 
+class DyadicConductorGrowthTests(unittest.TestCase):
+    def test_20_exact_double_log_conductor_envelope(self):
+        # For n=2^m, C(2n,n)=2u with odd u and
+        # D=(2n+1)(4n+1)u^2/gcd(8n+3,u^2).
+        from math import gcd
+        for level in range(0, 10):
+            n = 2 ** level
+            c = comb(2 * n, n)
+            u = c // 2
+            exact_den = (2*n+1)*(4*n+1)*u*u // gcd(8*n+3,u*u)
+            self.assertEqual(wallis_midpoint(n).denominator, exact_den)
+            lower = Fraction(16**n * (4*n+1), 4*(8*n+3)*(2*n+1))
+            upper = Fraction((2*n+1)*(4*n+1)*16**n, 4)
+            self.assertLessEqual(lower, exact_den)
+            self.assertLessEqual(exact_den, upper)
+
+
 if __name__ == "__main__":
     unittest.main()
