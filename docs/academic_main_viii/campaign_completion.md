@@ -36,7 +36,7 @@ Every draft targets actual Main VIII. No research result below was silently adde
 | [#225 infinite Gibbs carrier](https://github.com/femboy2112/SUCC/pull/225) | `bc3cdad6b63403988de5c15c294d7c5cc5c1aa7e` | Ran 9 tests in 0.006s; paper proof and exact finite checks |
 | [#226 finite pi Fourier oracle](https://github.com/femboy2112/SUCC/pull/226) | `0c4e6982788a69cada58bf735500f3a842019da3` | Ran 6 tests in 1.981s; paper proof and exact finite checks |
 
-Recommended later integration: exterior benchmark and geometry/clocks/carrier foundations may proceed independently; arithmetic drafts remain separately reviewable with their stated restrictions; the finite pi oracle is optional calibration. Reconcile shared claim indices only when accepting a family. This report is a historical record; new research PRs still require their own final combined CI and acceptance, and no academic novelty is certified.
+Recommended later integration: exterior benchmark and geometry/clocks/carrier foundations may proceed independently; arithmetic drafts remain separately reviewable with their stated restrictions; the finite pi oracle is optional calibration. Reconcile shared claim indices only when accepting a family. This report is a historical record; new research PRs still require their own final combined CI and acceptance, and no academic novelty is certified. The [post-publication CI snapshot](research_ci_snapshot.json) records successful, pending and canceled draft runs; at capture no new research run had failed. Pending runs are not treated as passing.
 
 ## Integration verdict
 
