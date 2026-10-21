@@ -275,3 +275,46 @@ The strongest true geometric–arithmetic backbone now has a specific diagram:
       → (OPEN) π-specific all-horizon cancellation.
 
 The finite p-dilation discrepancy D_(p,n)(X) must be transported with proper error bounds through the continuum stage. It is a geometric approximation effect, not a permanent assertion that prime operators are deformed. The surviving **irreducible coupling within the selected additive point-evaluation representation** is the nontrivial mixed phase ω_(π)(m,n), which still does not force mixing. Any proposed RH-assisted proof must exploit the particular π source to control its long-horizon correlations and survive the irrational nonnormal α counterexample.
+
+
+## 11. Strong π-SPECIFIC bridge from the entire prime system back to the geometric circle (CGPD-13)
+
+Unlike the generic heat spectrum (which is independent of which circle point is selected), Euler's Basel identity gives an **actual exact source identification** of the circumference constant from all primes:
+
+    π²/6 = ζ(2) = Σ_(n>=1)n^(-2)
+         = ∏_(p prime)(1−p^(-2))^(-1),
+
+hence π = sqrt(6 ∏_(p prime)(1−p^(-2))^(-1)) with its positive geometric branch.
+
+**Circle-geometric derivation of Basel, without pi digits.** On the radius-one circle parameter θ∈[−π,π), take the L² sawtooth angular chart f(θ)=θ. It chooses a coordinate seam but makes no preferred geometric point intrinsic. Its Fourier coefficients are hat f(0)=0 and hat f(n)=i(−1)^n/n for n≠0, by integration by parts. Parseval therefore gives
+
+    (1/(2π))∫_(−π)^π θ² dθ = π²/3
+      = Σ_(n≠0)|hat f(n)|² = 2Σ_(n>=1) 1/n².
+
+Thus ζ(2)=π²/6. A change in origin multiplies Fourier coefficients by phases but preserves their squared magnitudes, so the scalar identity does not depend on the arbitrary angle-zero seam. Unique prime factorization then gives the complete Euler product without inserting digits of π.
+
+**A second, fully source-derived finite π enclosure:** for every integer P≥2 let
+
+    E_P=∏_(p<=P genuine prime)(1−p^(-2))^(-1).
+
+Every positive integer n<=P is P-smooth, so all omitted Dirichlet terms are among n>P. Hence
+
+    0 < ζ(2)−E_P < Σ_(n>P)n^(−2) < 1/P.
+
+(The first strict inequality holds because there are primes beyond any finite P; the middle inequality is strict because some n>P are also P-smooth.) Therefore
+
+    sqrt(6E_P) < π < sqrt(6(E_P+1/P)).
+
+The independent exact module function prime_euler_pi_bracket(P,bits) computes every genuine prime p<=P, the rational Euler partial product, and *outward dyadic rational square-root bounds* for these endpoints. It does not call the polygon generator, call a π digit oracle, assume RH, or trust caller-supplied primes. No fake composite or incomplete prime prefix is admitted.
+
+**Hostile missing-prime control:** At P=5 the true complete Euler prefix is E_5=25/16. If prime 3 is deleted, the forged {2,5} product is 25/18; its claimed upper tail 1/5 yields 25/18+1/5=143/90. But the exact harmonic sum Σ_(n=1)^30 1/n² already exceeds 143/90, proving that the forged interval cannot contain ζ(2), hence cannot enclose π. The test uses only exact rationals. Independently, the *correct* prime-product π interval is checked against the exact polygon bounds and an alternating Machin-series holdout on several prime cutoffs.
+
+**Consequence:** We now have TWO complete derivation routes to the same source-selected real π:
+
+    Euclidean circumference / polygon exhaustion   ─┐
+                                                      ├→ π → x={π} → digit orbit
+    Circle Fourier Parseval → ζ(2) → full primes  ────┘
+
+This is a **genuine π-specific source equality** absent from mere general circle translation symmetry. It tightly connects the geometric circle, all N and all primes. It is still NOT an estimate of the lacunary phase sums Σ_(j<N)e(h b^jπ); a sum/product representation of a constant does not by itself prove its normality. The next research effort should attempt to transport **quantitative convergence of the prime Euler representation**, with its full mixed phase information, to these digit-block correlations. Merely using the convergence bound O(1/P) at P=P(N) only supplies pointwise numerical accuracy; it does NOT pay for the necessary cancellation.
+
+**Status:** all identities classical, derivations explicitly given here; exact prime-to-circle source enclosures and missing-prime hostile control new to this project and tested at finite cutoffs. RH is not needed for these identities and is **permitted** if it buys a genuine uniform-in-N improvement at the later phase-correlation step.
