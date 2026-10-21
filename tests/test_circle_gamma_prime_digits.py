@@ -12,7 +12,8 @@ from observational_succ.circle_gamma_prime_digits import (
     mode_laplacian_polynomial, eval_polynomial, ordered_succ_gamma_weight,
     pi_heat_mellin_mode_bounds, genuine_prime_smooth_coefficients,
     phase_turn, mixed_prime_turn, factorized_phase_with_mixed_terms,
-    rational_digits, cyclic_debruijn_edge_flow
+    rational_digits, cyclic_debruijn_edge_flow, prime_dilation_polygon_defect,
+    succ_fucc_mode_covariance
 )
 from observational_succ.pi_polygon_normality import polygon_pi_bracket
 
@@ -75,6 +76,40 @@ class CircleDiscreteModes(unittest.TestCase):
                 self.assertGreater(hi, f/machin_lo**q)
                 self.assertEqual(lo,f/actual.upper**q)
                 self.assertEqual(hi,f/actual.lower**q)
+
+
+class PrimeDilationCircleCovariance(unittest.TestCase):
+    def test_finite_prime_defect_has_exact_chord_factor(self):
+        for p in (2,3,5,7,11):
+            for n in range(1,5):
+                defect=prime_dilation_polygon_defect(p,n)
+                self.assertEqual(defect[0],0)
+                self.assertEqual(defect[1],Q(-p*p*(p*p-1)*n**4,12))
+                self.assertEqual(eval_polynomial(defect,0),0)
+                for x in (Q(1,9),Q(1,4),Q(1),Q(2)):
+                    self.assertEqual(
+                        eval_polynomial(defect,x),
+                        eval_polynomial(mode_laplacian_polynomial(p*n),x)
+                        -p*p*eval_polynomial(mode_laplacian_polynomial(n),x))
+        self.assertEqual(prime_dilation_polygon_defect(2,1),(Q(0),Q(-1)))
+        self.assertEqual(prime_dilation_polygon_defect(3,1),(Q(0),Q(-6),Q(1)))
+        for fake in (4,6,9):
+            with self.assertRaises(ValueError):
+                prime_dilation_polygon_defect(fake,1)
+
+    def test_circle_prime_covariance_and_finite_failure(self):
+        for p in (2,3,5,7):
+            for n in range(20):
+                left,right=succ_fucc_mode_covariance(p,n)
+                self.assertEqual(left,right)
+                self.assertEqual(left,p*(n+1))
+        # At square m=4, chord²=2: lambda_2=2 but 4*lambda_1=4.
+        self.assertEqual(eval_polynomial(prime_dilation_polygon_defect(2,1),2),-2)
+        # On continuum X=0 the mismatch vanishes, but dividing by X
+        # retains a nonzero first-order geometric defect -1.
+        self.assertEqual(prime_dilation_polygon_defect(2,1)[1],-1)
+        with self.assertRaises(ValueError):
+            succ_fucc_mode_covariance(6,1)
 
 
 class PrimeSystemWithPhases(unittest.TestCase):
