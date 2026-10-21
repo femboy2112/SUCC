@@ -15,6 +15,7 @@ sys.path.insert(0, str(ROOT))
 from observational_succ.duck_bbp_fourier import (  # noqa: E402
     BBP_POLES, PoleTerm, arc_discrepancy_transport_budget, bbp_force,
     bbp_force_positive_form, bbp_shadow_budget, bbp_shadow_sum_budget,
+    bbp_coboundary_approximation, bbp_coboundary_correction, bbp_coboundary_error_budget,
     forced_orbit, fourier_sum_transport_budget, leading_matched_impostor,
     prefix_impostor, rational_coboundary, solve_rational_coboundary,
     weighted_pole_invariants,
@@ -103,6 +104,17 @@ def receipt():
             "distance_from_zero_at_12": str(1-fake_orbit[12]),
         },
         "arbitrary_prefix_counterfeits": prefixes,
+        "uniform_bbp_counterfeits": [
+            {"depth": depth,
+             "weighted_uniform_error_upper": str(bbp_coboundary_error_budget(1, depth)),
+             "rational_shadow_initial": str(bbp_coboundary_correction(0, depth)),
+             "correction_pole_count": 4*depth,
+             "forcing_pole_count": 8,
+             "fresh_index": 10**9,
+             "fresh_exact_error": str(bbp_coboundary_approximation(10**9, depth)-bbp_force(10**9)),
+             "claim_boundary": "each finite depth nonnormal; actual source normality remains unproved"}
+            for depth in [1, 2, 4, 9]
+        ],
         "formal_verification": "not performed by this lane",
         "full_suite": "coordinator responsibility; not run by this probe",
     }

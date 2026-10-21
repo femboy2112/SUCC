@@ -4,6 +4,7 @@ from fractions import Fraction as F
 from observational_succ.duck_bbp_fourier import (
     BBP_POLES, PoleTerm, arc_discrepancy_transport_budget, bbp_force,
     bbp_force_positive_form, bbp_shadow_budget, bbp_shadow_sum_budget,
+    bbp_coboundary_approximation, bbp_coboundary_correction, bbp_coboundary_error_budget,
     bbp_tail_partial, circle_distance, forced_orbit, fourier_sum_transport_budget,
     fractional_part, leading_matched_impostor, prefix_impostor,
     rational_coboundary, solve_rational_coboundary, square_tail_majorant,
@@ -121,6 +122,35 @@ class DuckBBPFourierTests(unittest.TestCase):
             for n in [size+1, size+2, 2*size+9]:
                 self.assertEqual(forced_orbit(fake.force, 16, n)[-1], fractional_part(-fake.correction(n)))
 
+    def test_positive_bbp_counterfeits_approximate_the_entire_forcing(self):
+        actual_orbit = forced_orbit(bbp_force, 16, 17)
+        for depth in [1, 2, 4, 9]:
+            correction = tuple(
+                PoleTerm(term.pole-k, 1, F(16**(depth-k), 16**depth-1)*term.coefficient)
+                for term in BBP_POLES for k in range(1, depth+1))
+            expected_poles = tuple(
+                pole for term in BBP_POLES for pole in (
+                    PoleTerm(term.pole, 1, F(16**depth, 16**depth-1)*term.coefficient),
+                    PoleTerm(term.pole-depth, 1, -term.coefficient/(16**depth-1))))
+            reconstructed = solve_rational_coboundary(expected_poles, 16)
+            self.assertEqual(rational_coboundary(reconstructed, 16), rational_coboundary(correction, 16))
+            self.assertTrue(all(value == 0 for value in weighted_pole_invariants(expected_poles, 16).values()))
+            shadow_initial = bbp_coboundary_correction(0, depth)
+            orbit = forced_orbit(lambda n: bbp_coboundary_approximation(n, depth), 16, 17)
+            for n in [1, 2, 7, 17, 1000, 10**9]:
+                value = bbp_coboundary_approximation(n, depth)
+                self.assertEqual(value, 16*bbp_coboundary_correction(n-1, depth)
+                                 - bbp_coboundary_correction(n, depth))
+                self.assertGreater(value, bbp_force(n))
+                self.assertLessEqual(value-bbp_force(n), bbp_coboundary_error_budget(n, depth))
+                self.assertLessEqual(n*n*bbp_force(n), F(47, 15))
+                if n <= 17:
+                    self.assertEqual(orbit[n], fractional_part(16**n*shadow_initial
+                                     - bbp_coboundary_correction(n, depth)))
+            for n in range(18):
+                finite_window_budget = min(F(1, 2), F(47*(16**n-1), 225*(16**depth-1)))
+                self.assertLessEqual(circle_distance(orbit[n], actual_orbit[n]), finite_window_budget)
+
     def test_exact_domain_guards(self):
         for bad in [True, 1.0, F(1), -1]:
             with self.assertRaises(ValueError):
@@ -134,6 +164,9 @@ class DuckBBPFourierTests(unittest.TestCase):
             fourier_sum_transport_budget(1.0, 1, 1)
         with self.assertRaises(ValueError):
             arc_discrepancy_transport_budget(0)
+        for bad in [0, True, 1.0, F(1)]:
+            with self.assertRaises(ValueError):
+                bbp_coboundary_approximation(1, bad)
 
 
 if __name__ == '__main__':

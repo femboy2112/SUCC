@@ -212,6 +212,36 @@ def leading_matched_impostor(n: int) -> Fraction:
     return (Fraction(16, n*n) - Fraction(1, (n+1)**2)) / 64
 
 
+def bbp_coboundary_correction(n: int, depth: int) -> Fraction:
+    """Rational finite tail normalized to preserve the BBP leading term.
+
+    q_K(n) = sum_{k=1}^K 16^(K-k)*r(n+k)/(16^K-1), n>=0, K>=1.
+    Each finite K has a rational q_K(0), hence a rational shadow.
+    """
+    _integer(n, 0, "n")
+    _integer(depth, 1, "depth")
+    return sum((16**(depth-k)*bbp_force(n+k) for k in range(1, depth+1)),
+               Fraction(0)) / (16**depth-1)
+
+
+def bbp_coboundary_approximation(n: int, depth: int) -> Fraction:
+    """Positive rational coboundary uniformly close to the actual BBP forcing.
+
+    Has the same 15/64 leading n^(-2) coefficient, but a nonnormal shadow.
+    Not the actual BBP source, regardless of the size of the residual.
+    """
+    _integer(n, 1, "n")
+    _integer(depth, 1, "depth")
+    return (16**depth*bbp_force(n)-bbp_force(n+depth)) / (16**depth-1)
+
+
+def bbp_coboundary_error_budget(n: int, depth: int) -> Fraction:
+    """Bound |r_K(n)-r(n)| <= 47/[15*(16^K-1)*n²], n,K>=1."""
+    _integer(n, 1, "n")
+    _integer(depth, 1, "depth")
+    return Fraction(47, 15*(16**depth-1)*n*n)
+
+
 @dataclass(frozen=True)
 class PrefixImpostor:
     base: int

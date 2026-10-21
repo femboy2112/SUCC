@@ -29,6 +29,7 @@ counterfeit families that defeat decay-only and finite-prefix reasoning.
 | DA-TRANSPORT | Fourier-sum difference at most `abs(h)/5`, moving-window budget; arc discrepancy difference `O(N^(-2/3))` | PROVED LOCAL, paper | Neither individual Fourier sum is bounded sublinearly |
 | DA-RESIDUE | Weighted pole invariants decide rational shift-coboundaries on the specified class; actual BBP fails | PROVED LOCAL, paper; classical mechanism | No implication from non-coboundary to normality |
 | DA-FAKE | Positive leading-matched fake; arbitrary exact finite-prefix fake | PROVED LOCAL, paper | Prefix fake need not be positive; both have rational shadows |
+| DA-APPROX | Every weighted neighborhood of the actual BBP forcing contains positive rational-shadow counterfeits with the same leading term | PROVED LOCAL, paper | Does not assert discontinuity of normality at an unproved-normal source |
 | DA-MU | Irrationality exponent 2 alone does not imply base-16 normality | CLASSICAL input plus elementary corollary | Imported Bugeaud theorem, not an assertion about pi |
 | DA-VD | Van der Corput correlations return the same source-specific family | PROVED LOCAL identity | A reduction requiring an unproved cancellation seed |
 | DA-OPEN | Source-specific cancellation / uniform no-hotspot estimate | HYPOTHESIS / UNVERIFIED | Base-16 normality remains open in this work |
@@ -309,6 +310,121 @@ finite computations do not prove that quantifier.
 forcing/state matches plus rational `O(n^-2)` forcing. This does not impersonate
 the full BBP rational function: its global pole invariant exposes the fake.
 
+### 6.3 Counterfeits uniformly approximate the actual source
+
+The pole obstruction cannot yield a positive approximation-residual gap in a
+natural weighted norm without further restrictions. The following construction
+uses the actual BBP rational function, rather than a separate toy source.
+
+For a sequence `f` on the positive integers define
+`||f||_(2,infinity)=sup_(n>=1) n^2|f(n)|`. For every integer `K>=1`, put
+
+\[
+ Q_K(n)=\frac{\sum_{k=1}^K16^{K-k}r(n+k)}{16^K-1}\quad(n\ge0),
+ \qquad
+ \widetilde r_K(n)=\frac{16^K r(n)-r(n+K)}{16^K-1}\quad(n\ge1). \tag{13}
+\]
+
+**Theorem DA-APPROX.** Every `Q_K` and `rtilde_K` is rational, and
+
+\[
+ \widetilde r_K(n)=16Q_K(n-1)-Q_K(n)>r(n)>0,
+ \qquad
+ \lim_{n\to\infty}n^2\widetilde r_K(n)=15/64. \tag{14}
+\]
+
+Moreover,
+
+\[
+ 0<\widetilde r_K(n)-r(n)
+ \le\frac{47}{15(16^K-1)n^2},\qquad
+ \|\widetilde r_K-r\|_{2,\infty}
+ \le\frac{47}{15(16^K-1)}\longrightarrow0. \tag{15}
+\]
+
+For each fixed `K`, the forced orbit from zero is
+
+\[
+ \widetilde x_{K,n}=\{16^nQ_K(0)-Q_K(n)\}; \tag{16}
+\]
+
+it has a rational shadow and is not equidistributed. Nevertheless, for every
+fixed finite `N`, these orbits approach the actual forced orbit uniformly on
+`0<=n<=N` as `K->infinity`. Thus every open weighted-norm neighborhood of
+the actual BBP forcing contains such positive counterfeits with the identical
+leading `n^-2` term.
+
+**Proof.** Multiplying the sum for `Q_K(n-1)` by 16 and subtracting `Q_K(n)`
+telescopes: only `16^K r(n)` and `-r(n+K)` remain. Since `r` is positive and
+strictly decreasing, subtracting `r(n)` from (13) gives the positive expression
+
+\[
+ \widetilde r_K(n)-r(n)=\frac{r(n)-r(n+K)}{16^K-1}. \tag{17}
+\]
+
+For each positive term in (2), multiplication by `n^2` produces a product
+`[n/(8n-a)][n/(8n-b)]` times a positive constant, where `0<a,b<8`. Each
+factor decreases for real `n>=1`, since it equals `1/(8-a/n)`. Hence
+`n^2r(n)<=r(1)=47/15`. This proves (15). Its uniform constant `47/15` cannot
+be improved uniformly over `K`: at `n=1`, multiplying (17) by `16^K-1`
+gives `r(1)-r(K+1)->47/15`. For fixed `K`, both `n^2r(n)` and
+`n^2r(n+K)` tend to `15/64`, proving (14)'s leading coefficient.
+
+Telescoping the forced recurrence proves (16). `Q_K(0)` is rational and
+`Q_K(n)->0`; the finite-attractor argument in section 6.2 proves
+nonequidistribution for every fixed `K`.
+
+For the finite-window comparison, lift both recurrences before reducing
+modulo one. Their difference is
+`sum_(m=1)^n 16^(n-m)[rtilde_K(m)-r(m)]`, so for all `n>=0`,
+
+\[
+ d(\widetilde x_{K,n},x_n)
+ \le\min\left(\frac12,
+       \frac{47(16^n-1)}{225(16^K-1)}\right). \tag{18}
+\]
+
+Here (15) and `m^-2<=1` reduce the sum to a geometric series. This tends to
+zero for every fixed finite window. The growing factor `16^n` is explicit;
+no statement uniform in all orbit times is being smuggled in. QED.
+
+**What fails quantitatively.** Each `rtilde_K` has zero weighted invariants,
+whereas the actual `r` has the four nonzero values in section 5. Thus this
+pole functional is discontinuous in the weighted norm on these rational
+functions sampled at positive integers. This does **not** assert discontinuity
+of normality at the actual source, because its normality has not been proved.
+It proves that a small forcing residual, positivity, a leading asymptotic,
+and arbitrarily long finite-window agreement do not exclude a rational shadow.
+
+The construction makes the lost complexity visible. `Q_K` has `4K` distinct
+simple poles `a-k`, for the four BBP poles `a` and `1<=k<=K`; the pole range
+escapes to the left and the coefficient denominators involve `16^K-1`.
+The forcing itself has only eight distinct poles, `a` and `a-K`. Consequently,
+a bound on the **degree of the forcing alone** does not remove this example;
+restrictions on pole locations, heights, or correction complexity matter.
+
+There is a valid coefficient-space lower bound: if a residual has coefficients
+`R_j` on one orbit/order, supported on `A<=j<=B`, and invariant `I`, then
+
+\[
+ \max_{A\le j\le B}|R_j|
+ \ge\frac{|I|}{\sum_{j=A}^B16^{-j}}. \tag{19}
+\]
+
+This follows from triangle inequality in (10). It is a bound on partial
+fraction coefficients with **specified pole range**, not on values along the
+positive integers. For the unnormalized truncated correction
+`sum_(k=1)^K16^-k r(n+k)`, the residual is exactly `16^-K r(n+K)`: its poles
+are at `a-K`, with coefficients `16^-K` times the original residues. The
+weight in (10) compensates exactly. This is the mechanism preventing a
+uniform real-axis residual gap from following from qualitative nonvanishing.
+
+The exact tests replay both the finite-sum correction and the independently
+constructed pole list for `K=1,2,4,9`, then check values out to `n=10^9` using
+fractions. These checks support the formulas; the universal bounds are proved
+above. A successful next approximation argument must control the complexity
+and norm conversion that (13)--(19) expose.
+
 ## 7. Attempts at the genuinely global theorem
 
 ### 7.1 Van der Corput: a valid reduction, no seed
@@ -396,6 +512,8 @@ forcing and modular permutation argument are not the BBP rational forcing.
   source level. No weaker sufficient lemma has yet been proved here.
 - **Edges closed:** actual rational source to positive tail; tail to explicit
   Fourier/discrepancy transfer; rational source to non-telescoping invariant.
+  The approximation extension proves that this invariant supplies no uniform
+  weighted residual gap without further complexity restrictions.
 - **Edges still open:** nonzero pole invariants to any global cancellation;
   irrationality to normality; a.e. dynamics to this source-specific point.
 - **Novelty tax:** the sharper source tail is a proved quantitative gain;
@@ -414,8 +532,9 @@ forcing and modular permutation argument are not the BBP rational forcing.
 - **Next lamp:** a quantified arithmetic estimate for BBP orbit occupation or
   the lag family in (11), surviving both counterfeit controls. A rational
   approximation to the cohomological correction must control degree, height,
-  approximation domain, and residual; qualitative nonexistence of an exact
-  rational correction supplies none of those uniform bounds automatically.
+  approximation domain, and residual; section 6.3 proves that qualitative
+  nonexistence of an exact rational correction supplies no uniform gap in the
+  specified weighted norm.
 
 ## 9. Primary-source map and proof dependencies
 
@@ -463,3 +582,12 @@ The coordinator separately owns whole-repository tests and formal review. This
 lane has no Lean declaration, axiom audit, hosted CI receipt, or mainline merge
 claim. Independent paper review is requested; its outcome must be recorded
 separately from the author's proof and the finite arithmetic checks.
+
+A separate referee agent independently checked the proofs through section 6.2,
+the sharp tail limit, Fourier/discrepancy constants and van der Corput identity
+on 2026-10-21 and found no substantive concern. This is internal same-model
+review, not an external human referee or a proof-assistant certificate. The
+section 6.3 continuation was sent for a separate review after that checkpoint.
+The initial finite receipt remains preserved at its original source commit;
+the approximation continuation receives a new receipt instead of rewriting
+that historical evidence.

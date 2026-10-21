@@ -313,6 +313,29 @@ digits to cover each desired word, and sum its finitely many chunk-code
 frequencies. This gives base-16 ⇒ base-2 normality. It is not yet among the
 inspected Lean declarations, and gives no base-10 implication.
 
+Further candidate review: `DuckPiIntegral.bbp_hasSum_pi` supplies a proposed
+unconditional source proof. Its integrand is
+`(4−2x³−x⁴−x⁵)/(1−x⁸/16)` on [0,1], its rational decomposition is
+`4x/(x²−2)−4(x−2)/(x²−2x+2)`, and an antiderivative is
+`2 log(2−x²)−2 log(x²−2x+2)+4 atan(x−1)`. Independent differentiation
+and endpoint evaluation give the integral π. The geometric-series terms are
+bounded in norm by the summable constant majorant `8·16^{-n}` throughout
+[0,1]; termwise integration gives exactly the BBP offsets 1,4,5,6. Thus no
+mathematical source-identification premise is hidden in this proposed proof.
+The separate standard-series `HasSum` uniqueness bridge then connects it to
+`seriesValue`. These are semantically accepted candidates; their promotion
+still depends on actual successful kernel output, not this paper check.
+
+The observer lane's stronger **paper** witness bound also survives: for
+carriers of sizes n,m, a shortest distinguishing word has length at most
+n+m−2; within one carrier it is at most n−2. On the disjoint union, partition
+by all observations of length at most j. Any plateau is stable forever.
+Hence a pair first distinguished at depth r requires r strict refinements
+from at least two initial output classes among n+m states. A unary chain
+whose only nonzero output is terminal, compared with a single zero state,
+attains the cross-model bound; adjacent initial chain states attain the
+within-model bound. This does not claim a formalized cardinality argument.
+
 ### Analytic lane: a stronger summable transport budget
 
 The analytic constructor's independently supplied positive decomposition is

@@ -6,7 +6,7 @@ Date: 2026-10-21. Baseline: PR #232, commit
 **Mathematical status:** the proofs below are **PAPER_PROVED**.
 `formal/duck_pi/BaileyCrandall.lean` is a proof candidate until an actual
 pinned compiler run is recorded. No compiler success is inferred from the
-seven passing Python tests. The identification of the rational series with
+eight passing Python tests. The identification of the rational series with
 `Real.pi` is a **CLASSICAL_IMPORTED** BBP theorem, not a theorem fabricated
 as a new Lean axiom. The pi specialization has this premise explicitly.
 Pi normality and the required global Fourier cancellation remain **OPEN**.
@@ -150,6 +150,45 @@ coarse `tail_budget` interface as a valid independent bound. The shifted
 bound has leading constant 1/64; no limit theorem is asserted merely from
 that one-sided asymptotic upper bound.
 
+### Effective leading term and a genuine boundary on shadowing
+
+The following further estimate is **PAPER_PROVED**, not yet included in the
+Lean declarations. For every natural n>=0, write x=n+1. Then
+
+\[
+\boxed{-\frac1{480x^3}\le
+ t_n-\frac1{64x^2}\le\frac{2783}{14400x^3}.}
+\]
+
+For the upper bound, clearing positive denominators in
+`r(x)<=15/(64x^2)+2783/(960x^3)` gives the polynomial certificate
+
+\[
+(225x+2783)D(x)-960x^3P(x)
+ =1279936u^4+2414792u^3+1499906u^2+306607u\ge0.
+\]
+
+Apply this coefficient bound at x+k and use x+k>=x. The geometric weights
+sum to 1/15. For the lower bound use `r(x+k)>=15/(64(x+k)^2)` and the exact
+convexity remainder
+
+\[
+\frac1{(x+k)^2}-\frac1{x^2}+\frac{2k}{x^3}
+ =\frac{k^2(3x+2k)}{x^3(x+k)^2}\ge0.
+\]
+
+The geometric first moment is `sum k*16^(-k-1)=1/225`. Thus the lower error
+is `(15/64)*2/(225x^3)=1/(480x^3)`. All comparisons apply to summable
+nonnegative series, or to their finite partial sums before taking limits.
+This proves `(n+1)^2 t_n -> 1/64`, and hence `n^2 t_n -> 1/64`.
+
+Since `0<t_n<=47/225<1/2`, the distance of the class of t_n to zero on R/Z
+is exactly t_n. Consequently the orbit shadowing below has exact circle
+distance t_(n+1), with leading term `1/(64(n+2)^2)`. Its O(n^(-2)) exponent
+cannot be replaced by little-o(n^(-2)). This is a demonstrated boundary of
+the same-source shadowing estimate; it says nothing against pi normality
+or stronger cancellation of the orbit itself.
+
 ## 4. A clock-inclusive structural map
 
 Define the unreduced recurrence
@@ -259,7 +298,7 @@ Run
 python -m unittest discover -s tests -p test_duck_bbp.py -v
 ```
 
-The seven tests passed with exact rational arithmetic. They cover independent
+The eight tests passed with exact rational arithmetic. They cover independent
 partial fractions versus the collapsed polynomial on small and held-out
 large indices; coefficient certificates and monotonicity; nested tail
 enclosures against separately evaluated deeper sums; independent Machin

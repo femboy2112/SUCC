@@ -36,8 +36,11 @@ theorem rational_decomposition {x : ℝ} (hx : x ∈ Icc (0:ℝ) 1) :
   have hA : x^2-2 ≠ 0 := by linarith
   have hB : x^2-2*x+2 ≠ 0 := by nlinarith [sq_nonneg (x-1)]
   have hD := denominator_ne_zero hx
+  have hE : 16-x^8 ≠ 0 := by
+    have h8 : x^8 ≤ 1 := pow_le_one₀ hx.1 hx.2
+    linarith
   unfold integrand numerator
-  field_simp
+  field_simp [hA, hB, hD, hE]
   <;> ring
 
 theorem primitive_hasDerivAt {x : ℝ} (hx : x ∈ Icc (0:ℝ) 1) :
@@ -52,11 +55,10 @@ theorem primitive_hasDerivAt {x : ℝ} (hx : x ∈ Icc (0:ℝ) 1) :
     ((hasDerivAt_id x).const_mul 2)).add_const 2).log hB
   have hdC := ((hasDerivAt_id x).sub_const 1).arctan
   convert ((hdA.const_mul 2).sub (hdB.const_mul 2)).add (hdC.const_mul 4) using 1
-  · rfl
-  · rw [rational_decomposition hx]
-    norm_num
-    field_simp
-    <;> ring
+  rw [rational_decomposition hx]
+  norm_num
+  field_simp [hA, hB, hC, hD]
+  <;> ring
 
 theorem integrand_intervalIntegrable : IntervalIntegrable integrand volume (0:ℝ) 1 := by
   apply ContinuousOn.intervalIntegrable_of_Icc (by norm_num)
@@ -73,6 +75,7 @@ theorem integral_eq_pi : (∫ x in (0:ℝ)..1, integrand x) = Real.pi := by
     integrand_intervalIntegrable
   rw [hftc]
   norm_num [primitive, Real.arctan_neg, Real.arctan_one]
+  ring
 
 theorem numerator_abs_le {x : ℝ} (hx : x ∈ Icc (0:ℝ) 1) :
     |numerator x| ≤ 8 := by
@@ -122,6 +125,9 @@ theorem integral_term (n : ℕ) :
 theorem hasSum_integral_terms :
     HasSum (fun n : ℕ => ∫ x in (0:ℝ)..1, term n x)
       (∫ x in (0:ℝ)..1, integrand x) := by
+  have hgeo : |(1:ℝ)/16| < 1 := by
+    rw [abs_of_nonneg (by positivity)]
+    norm_num
   apply intervalIntegral.hasSum_integral_of_dominated_convergence
     (fun n (_ : ℝ) => 8*((1:ℝ)/16)^n)
   · intro n
@@ -133,7 +139,7 @@ theorem hasSum_integral_terms :
       have hx' : 0 < x ∧ x ≤ 1 := by simpa using hx
       exact ⟨hx'.1.le, hx'.2⟩)
   · exact ae_of_all _ fun x hx =>
-      (summable_geometric_of_abs_lt_one (by norm_num : |(1:ℝ)/16| < 1)).mul_left 8
+      (summable_geometric_of_abs_lt_one hgeo).mul_left 8
   · exact intervalIntegrable_const
   · exact ae_of_all _ fun x hx => term_hasSum (by
       have hx' : 0 < x ∧ x ≤ 1 := by simpa using hx

@@ -13,6 +13,8 @@ MODULES = {
     'BBPIntegral': ('formal/duck_pi', 'DuckPiIntegral'),
     'LogisticFactor': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
     'Normality': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
+    'PiSource': ('formal/duck_pi', 'ObservationalSUCC.DuckPi.Source'),
+    'WeylBridge': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
 }
 
 # Each mutant has a compiling positive counterpart using the same imports and
@@ -47,6 +49,16 @@ CONTROLS = [
      'open ObservationalSUCC.DuckPi\n'
      'example : ¬ NormalTo 16 0 := by\n  exact zero_not_normal 16\n',
      '¬ NormalTo', 'NormalTo'),
+]
+
+SOURCE_MUTATIONS = [
+    ('half_open_cylinder', 'Normality', 'Set.Ico ((a : ℝ) /', 'Set.Icc ((a : ℝ) /'),
+    ('word_frequency', 'Normality', '(𝓝 ((b : ℝ) ^ k)⁻¹)', '(𝓝 (1 : ℝ))'),
+    ('bbp_source_coefficient', 'BBPIntegral',
+     '4/(8*(n:ℝ)+1) - 2/(8*(n:ℝ)+4)', '4/(8*(n:ℝ)+1) - 3/(8*(n:ℝ)+4)'),
+    ('haar_normalization', 'WeylBridge',
+     'def haarMean (F : CircleTest) : ℂ := ∫ z, F z ∂circleHaar',
+     'def haarMean (F : CircleTest) : ℂ := 2 * (∫ z, F z ∂circleHaar)'),
 ]
 
 def digest(b): return hashlib.sha256(b).hexdigest()
@@ -139,6 +151,20 @@ def main():
             'positive_source_sha256':digest(('import '+module+'\n'+body).encode()),
             'mutant_source_sha256':digest(('import '+module+'\n'+body.replace(old,new,1)).encode())})
         if not passed:failures.append('mutation:'+label)
+    for label,module,old,new in SOURCE_MUTATIONS:
+        if module not in successes:
+            mutations.append({'name':label,'status':'BLOCKED_BY_POSITIVE_MODULE'});continue
+        directory,_=MODULES[module];cwd=ROOT/directory
+        source=(cwd/(module+'.lean')).read_text();assert old in source
+        changed=source.replace(old,new,1)
+        file=output/(module+'_'+label+'.lean');file.write_text(changed)
+        p=run(label+'-source-mutant',['lake','env','lean',str(file)],cwd)
+        diagnostic=p.stdout.lower()
+        passed=p.returncode!=0 and any(x in diagnostic for x in ['unsolved goals','type mismatch','tactic'])
+        passed=passed and not any(x in diagnostic for x in ['unknown module','unknown constant','unknown identifier','unexpected token'])
+        mutations.append({'name':label,'status':'REJECTED_WITH_POSITIVE_MODULE' if passed else 'FAILED',
+            'positive_module':module,'mutant_exit':p.returncode,'mutant_source_sha256':digest(changed.encode())})
+        if not passed:failures.append('mutation:'+label)
     generated=[]
     if 'DuckObserver' in successes:
         from observational_succ.duck_observer import FiniteObserver, distinguish, lean_closed_relation_certificate
@@ -151,9 +177,9 @@ def main():
         for label,left,right in pairs:
             body=lean_closed_relation_certificate(left,right,distinguish(left,right,0,0))
             ns='ObservationalSUCC.Duck.Generated.'
-            footer=template+'\n'+''.join('#print axioms '+ns+n+'\n#succ_export '+ns+n+'\n'
+            footer='\n'+''.join('#print axioms '+ns+n+'\n#succ_export '+ns+n+'\n'
                 for n in ['checked','initial_mem','all_words'])
-            file=output/('Generated_'+label+'.lean');file.write_text(body+'\n'+footer)
+            file=output/('Generated_'+label+'.lean');file.write_text('import DuckObserver\n'+template+'\n'+body.removeprefix('import DuckObserver\n')+'\n'+footer)
             positive=run('generated-'+label,['lean',str(file)],ROOT/'formal',env)
             found={}
             for line in positive.stdout.splitlines():
@@ -166,7 +192,7 @@ def main():
             mutant=output/('Generated_'+label+'_mutant.lean');mutant.write_text(changed)
             negative=run('generated-'+label+'-mutant',['lean',str(mutant)],ROOT/'formal',env)
             passed=positive.returncode==0 and len(found)==3 and negative.returncode!=0 and 'decide' in negative.stdout
-            generated.append({'name':label,'passed':passed,'source_sha256':digest(body.encode()),
+            generated.append({'name':label,'passed':passed,'source_sha256':digest(body.encode()),'compiled_source_sha256':digest(file.read_bytes()),
                 'mutant_sha256':digest(changed.encode()),'theorem_exports':found})
             if not passed:failures.append('generated:'+label)
     assert hashes=={p:digest((ROOT/p).read_bytes()) for p in hashes},'source changed during build'

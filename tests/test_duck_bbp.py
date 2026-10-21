@@ -48,6 +48,21 @@ class BaileyCrandallExactTests(unittest.TestCase):
             self.assertEqual(15*den-(8*m-7)**2*num,
                 3776*u**3+5136*u*u+2007*u+178)
 
+    def test_effective_tail_leading_term(self):
+        for n in [0,1,2,7,31,257,65536]:
+            x=n+1;u=x-1
+            lo,hi=tail_interval(n,24)
+            leading=Q(1,64*x*x)
+            self.assertGreater(lo,leading-Q(1,480*x**3))
+            self.assertLess(hi,leading+Q(2783,14400*x**3))
+            den=(2*x-1)*(4*x-1)*(8*x-7)*(8*x-3)
+            num=120*x*x-89*x+16
+            self.assertEqual((225*x+2783)*den-960*x**3*num,
+                1279936*u**4+2414792*u**3+1499906*u*u+306607*u)
+            for k in [0,1,2,7,31]:
+                self.assertEqual(Q(1,(x+k)**2)-Q(1,x*x)+Q(2*k,x**3),
+                    Q(k*k*(3*x+2*k),x**3*(x+k)**2))
+
     def test_infinite_tail_enclosures_against_separate_deeper_sum(self):
         for n in [0,1,2,7,31,257]:
             old=(Q(),tail_budget(n))
