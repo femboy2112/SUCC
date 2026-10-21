@@ -29,6 +29,7 @@ as independent authority.
 | `WeylBridge.lean` | Character cancellation to continuous-test Haar limits |
 | `HaarBoundary.lean` | Empirical probabilities and null-boundary observation frequencies |
 | `HaarIntervals.lean` | Canonical circle cylinders and conditional Fourier-to-normality chain |
+| `AsymptoticTransport.lean` | Actual BBP shadowing, Haar transport and conditional pi normality |
 
 The receipt, rather than this module inventory, determines which exact revisions
 have actually compiled. No source-specific Fourier cancellation is assumed

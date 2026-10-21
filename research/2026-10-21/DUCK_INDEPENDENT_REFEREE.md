@@ -689,3 +689,69 @@ No mathematical defect was found in these candidate statements or their paper
 mechanisms. Successful elaboration and exact exported propositions remain
 required before promoting them. Neither this review nor the checked Weyl
 implication establishes a source-specific cancellation estimate.
+
+## 11. Final green kernel checkpoint
+
+The referee independently queried GitHub for
+[run 39634613571](https://github.com/femboy2112/SUCC/actions/runs/39634613571)
+and job `119341629272`: the kernel job and compilation/export step both
+completed successfully. A fresh retrieval of the hosted job log reproduced
+exactly the locally inspected compressed observation payload; this review did
+not rely solely on a JSON `build_succeeded` assertion.
+
+The checked commit is `2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19`, tree
+`5ad9100911797d52903b95ecb12a5df09c7c1f85`. All eleven modules built and
+exported successfully. The referee recomputed all **146 theorem-type hashes**
+and the six additional generated-fixture type hashes. Every recorded Lean
+source hash matched the inspected final source. The union of axiom dependencies
+is still exactly `propext`, `Classical.choice`, `Quot.sound`. Eleven registered
+mutations were rejected with compiling positive controls, and both generated
+fixture readout mutations were rejected. The observation continues to state
+`authority_admitted=false`; successful research compilation does not silently
+register declarations as installed proof authority.
+
+The 23 exports added since the preceding checkpoint are five from
+`HaarBoundary`, twelve from `HaarIntervals`, and six from
+`AsymptoticTransport`. Their final checked source hashes are:
+
+| Module | SHA256 |
+|---|---|
+| `HaarBoundary.lean` | `6c4329f20d5a5b6b3af1e8bd1c147423e25b909f33fc580fe39ffec83439cc6a` |
+| `HaarIntervals.lean` | `174f4d43e28dba5d11f3ec3043ad9edc75e7f09138dafebec96d11e5d36a30fb` |
+| `AsymptoticTransport.lean` | `edcac387eccf5a167acbb9928b3f1b67c795c8004e3df4539350c2fe9ae280b8` |
+
+Their actual statements preserve the mathematical conditions reviewed above:
+empirical measures are genuine probabilities; Portmanteau is applied only to
+measurable sets with null frontier; canonical half-open cylinders receive their
+proved Haar masses; and asymptotic closeness transports continuous-test limits
+through uniform continuity and Cesaro convergence. These are now checked
+declarations rather than the candidates described in the earlier checkpoints.
+
+Most importantly, the exported final theorem is precisely:
+
+```lean
+ObservationalSUCC.DuckPi.baileyCrandall_fourier_implies_pi_normal16
+  (hu : FourierCancellation
+    (fun n => ObservationalSUCC.BaileyCrandall.liftedOrbit (n + 1))) :
+  PiNormal16
+```
+
+Its exported type hash is
+`b39650a6e74468a09d46925c276e74d9ad589afd6aae973225e34f347fe33ad7`.
+The named predicates were independently compared to their definitions:
+`FourierCancellation` quantifies over every nonzero integer frequency, and
+`PiNormal16` means all canonical overlapping hexadecimal block frequencies of
+the actual `Real.pi` have their required limits. The exact rational forcing,
+clock shift, BBP source identity and vanishing circle-distance bound are proved
+inside the dependency chain. The source-specific global cancellation `hu`
+remains an explicit assumption. The mutation attempting to supply `True`
+instead of that proposition failed by type mismatch.
+
+**Final referee verdict:** the completed source-to-conditional-normality chain
+survives both semantic reconstruction and an actual pinned kernel build. It
+proves a classical conditional transport theorem, not its unproved cancellation
+premise or unconditional π normality. Base-16 to base-2 descent remains separately
+documented as a classical paper proof. The new finite-degree discrimination and
+weighted-neighborhood counterfeit results retain their reviewed paper status.
+No external human review, academic priority, proof of RH/ABC, or formal proof of
+the Python implementations is inferred from this successful checkpoint.

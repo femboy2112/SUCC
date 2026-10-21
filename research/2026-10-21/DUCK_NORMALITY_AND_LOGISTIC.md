@@ -7,6 +7,13 @@ The mathematics below is classical or an elementary new-to-project
 formalization. Academic novelty is not claimed. No normality theorem for pi
 is asserted.
 
+**Current checkpoint:** the complete pinned build now passes for all modules
+listed below: [run 39634613571](https://github.com/femboy2112/SUCC/actions/runs/39634613571).
+The [final kernel receipt](DUCK_PI_KERNEL_RECEIPT.md) records 146 declarations
+and the exact source/type hashes. The earlier pending/failed checkpoints in
+this dossier are historical. The conditional forced-orbit-to-normality theorem
+is checked; its actual global cancellation premise remains unproved.
+
 **Compiler status at initial commit:** proof candidates await the actual
 coordinator-run pinned kernel. Source inspection and a written proof are not
 a substitute for compilation. The final campaign receipt must identify the
@@ -251,8 +258,8 @@ later in `HaarBoundary.lean`. This is a successful Weyl-module observation,
 not a green combined run.
 
 `HaarBoundary.lean`, `HaarIntervals.lean` and the subsequent
-`AsymptoticTransport.lean` remain **UNVERIFIED until their exact successful
-kernel receipt**. The source-specific Fourier cancellation premise for pi
+`AsymptoticTransport.lean` were unverified at that checkpoint. All three now
+have their exact successful build in the current receipt above. The source-specific Fourier cancellation premise for pi
 is not proved by any of them. The base-power descent in section 5 remains a
 paper proof rather than a Lean declaration.
 

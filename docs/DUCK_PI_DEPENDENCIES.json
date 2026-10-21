@@ -88,7 +88,7 @@
     {
       "id": "DUCK-QUOTIENT",
       "kind": "theorem",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "The behavioral quotient is separated and is universal for observed morphisms into separated targets; arbitrary action and state types.",
       "requires": [
         "DUCK-DEFINITIONS"
@@ -107,22 +107,36 @@
       ],
       "paper_status": "PAPER_PROVED",
       "observed_kernel": {
-        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
-        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
-        "combined_run_succeeded": false,
-        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
         "source_hashes": {
           "formal/DuckObserver.lean": "3b4e23656a3480812a9f5250ec282e09dccea48e8a97aa49d25597d9d3d4efed"
         },
         "declaration_type_hashes": {
           "ObservationalSUCC.Duck.Observer.separated_target_factorization": "6569f50945013774b3f566bd936998b6a88311293e9a3ba72a2b611d8bc7168d"
         }
-      }
+      },
+      "previous_kernel_observations": [
+        {
+          "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+          "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+          "combined_run_succeeded": false,
+          "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+          "source_hashes": {
+            "formal/DuckObserver.lean": "3b4e23656a3480812a9f5250ec282e09dccea48e8a97aa49d25597d9d3d4efed"
+          },
+          "declaration_type_hashes": {
+            "ObservationalSUCC.Duck.Observer.separated_target_factorization": "6569f50945013774b3f566bd936998b6a88311293e9a3ba72a2b611d8bc7168d"
+          }
+        }
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json"
     },
     {
       "id": "DUCK-CLOSURE",
       "kind": "theorem",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "An exact finite table accepted by complete report/closure decision, containing the initial pair, proves readout equality for every finite action word.",
       "requires": [
         "DUCK-DEFINITIONS"
@@ -141,17 +155,31 @@
       ],
       "paper_status": "PAPER_PROVED",
       "observed_kernel": {
-        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
-        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
-        "combined_run_succeeded": false,
-        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
         "source_hashes": {
           "formal/DuckObserver.lean": "3b4e23656a3480812a9f5250ec282e09dccea48e8a97aa49d25597d9d3d4efed"
         },
         "declaration_type_hashes": {
           "ObservationalSUCC.Duck.Observer.validated_table_all_words": "c07c7379bf46d705e04dc57c539b584675acfd3323326d83206f34bcd6c76ad1"
         }
-      }
+      },
+      "previous_kernel_observations": [
+        {
+          "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+          "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+          "combined_run_succeeded": false,
+          "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+          "source_hashes": {
+            "formal/DuckObserver.lean": "3b4e23656a3480812a9f5250ec282e09dccea48e8a97aa49d25597d9d3d4efed"
+          },
+          "declaration_type_hashes": {
+            "ObservationalSUCC.Duck.Observer.validated_table_all_words": "c07c7379bf46d705e04dc57c539b584675acfd3323326d83206f34bcd6c76ad1"
+          }
+        }
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json"
     },
     {
       "id": "DUCK-PROBE-BOUND",
@@ -253,7 +281,7 @@
     {
       "id": "BBP-INTEGRAL-LEAN",
       "kind": "theorem",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "Integrating the rational geometric-series expansion on [0,1] proves the classical BBP coefficient series has sum Real.pi without a BBP identity hypothesis.",
       "requires": [
         "SOURCE-MATHLIB"
@@ -272,17 +300,31 @@
       ],
       "paper_status": "PAPER_PROVED",
       "observed_kernel": {
-        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
-        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
-        "combined_run_succeeded": false,
-        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
         "source_hashes": {
           "formal/duck_pi/BBPIntegral.lean": "601ce9d84ffd1281819a5b17e69cde245fbbd331c63f47f38440fb91ef049c62"
         },
         "declaration_type_hashes": {
           "DuckPiIntegral.bbp_hasSum_pi": "2b8dc9dfd3d31bbfa95a24a4c08bdd6f2b75248d8b85da2a69c9e5cd63a51e0d"
         }
-      }
+      },
+      "previous_kernel_observations": [
+        {
+          "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+          "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+          "combined_run_succeeded": false,
+          "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+          "source_hashes": {
+            "formal/duck_pi/BBPIntegral.lean": "601ce9d84ffd1281819a5b17e69cde245fbbd331c63f47f38440fb91ef049c62"
+          },
+          "declaration_type_hashes": {
+            "DuckPiIntegral.bbp_hasSum_pi": "2b8dc9dfd3d31bbfa95a24a4c08bdd6f2b75248d8b85da2a69c9e5cd63a51e0d"
+          }
+        }
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json"
     },
     {
       "id": "BC-TAIL-PAPER",
@@ -302,7 +344,7 @@
     {
       "id": "BC-TAIL-LEAN",
       "kind": "theorem",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "For every n>=0, the source-neutral tail bound and exact clock-inclusive semiconjugacy hold for the defined rational forcing. No identification with pi is required.",
       "requires": [
         "BC-DEFINITIONS",
@@ -326,18 +368,33 @@
       ],
       "paper_status": "PAPER_PROVED",
       "observed_kernel": {
-        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
-        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
-        "combined_run_succeeded": false,
-        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
         "source_hashes": {
-          "formal/duck_pi/BaileyCrandall.lean": "6746e001303b2ee209b170fc86f9b39e5c3e3692dfd0b152439275cedd66c5af"
+          "formal/duck_pi/BaileyCrandall.lean": "5ea46de978c6969509adf0fca71811a0cf18909b9c525ecaeb9e15cd4582de50"
         },
         "declaration_type_hashes": {
           "ObservationalSUCC.BaileyCrandall.tail_le_shifted": "567730d0f0bbf4080aac276f759020b3b6600fd7b20073c60f93a8e284bb9c26",
           "ObservationalSUCC.BaileyCrandall.corrected_clock_semiconjugacy": "6eb68412a4894b66e766d452a8f6690eea197ac4e1f0edf6f614e93ccb64adf1"
         }
-      }
+      },
+      "previous_kernel_observations": [
+        {
+          "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+          "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+          "combined_run_succeeded": false,
+          "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+          "source_hashes": {
+            "formal/duck_pi/BaileyCrandall.lean": "6746e001303b2ee209b170fc86f9b39e5c3e3692dfd0b152439275cedd66c5af"
+          },
+          "declaration_type_hashes": {
+            "ObservationalSUCC.BaileyCrandall.tail_le_shifted": "567730d0f0bbf4080aac276f759020b3b6600fd7b20073c60f93a8e284bb9c26",
+            "ObservationalSUCC.BaileyCrandall.corrected_clock_semiconjugacy": "6eb68412a4894b66e766d452a8f6690eea197ac4e1f0edf6f614e93ccb64adf1"
+          }
+        }
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json"
     },
     {
       "id": "PI-FOURIER-TRANSPORT",
@@ -386,7 +443,7 @@
     {
       "id": "WEYL-HAAR-LEAN",
       "kind": "theorem",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "Fourier cancellation implies convergence of every continuous Haar test on the period-one circle. The cited theorem is universal in the input sequence; this diagram records its pi-orbit specialization with PI-FOURIER still an outstanding premise.",
       "requires": [
         "WEYL-HAAR-GENERAL",
@@ -405,7 +462,19 @@
           "path": "formal/duck_pi/WeylBridge.lean",
           "declaration": "ObservationalSUCC.DuckPi.fourierCancellation_implies_haarUniform"
         }
-      ]
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
+        "source_hashes": {
+          "formal/duck_pi/WeylBridge.lean": "e71eaf5beccac80cad05db3e3022c71e8fc7f304da0c61006ff2a7531ed3b358"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.fourierCancellation_implies_haarUniform": "aafacc8384b65325331af3ffe8a0813b4e757d22a78135fba6562b280cc71ab5"
+        }
+      }
     },
     {
       "id": "PI-HAAR",
@@ -425,7 +494,7 @@
     {
       "id": "GAP-HAAR-INTERVAL-FORMAL",
       "kind": "theorem",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "Canonical half-open circle cylinders are measurable Haar continuity sets with measure equal to their interval length; the candidate supplies the geometric input for interval distribution.",
       "requires": [
         "PI-DEFINITIONS",
@@ -445,7 +514,20 @@
           "path": "formal/duck_pi/HaarIntervals.lean",
           "declaration": "ObservationalSUCC.DuckPi.circleCylinder_measure"
         }
-      ]
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
+        "source_hashes": {
+          "formal/duck_pi/HaarIntervals.lean": "174f4d43e28dba5d11f3ec3043ad9edc75e7f09138dafebec96d11e5d36a30fb"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.circleCylinder_nullBoundary": "5ee7cf90b134c310b3b438317e597dd723cad3d581dbbc8d6a71a1417c6152f0",
+          "ObservationalSUCC.DuckPi.circleCylinder_measure": "bc3f5a1622383a56d2ceacea53566f166bf0f54134b5ea3105f49288c8cc75d3"
+        }
+      }
     },
     {
       "id": "PI-INTERVAL",
@@ -465,7 +547,7 @@
     {
       "id": "INTERVAL-NORMAL-LEAN",
       "kind": "theorem",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "Interval equidistribution of a radix orbit implies all overlapping canonical block frequencies. The generic theorem is universal in b>=2 and real x; its pi/base16 specialization retains PI-INTERVAL as an outstanding premise.",
       "requires": [
         "INTERVAL-NORMAL-GENERAL",
@@ -491,10 +573,9 @@
       ],
       "paper_status": "PAPER_PROVED",
       "observed_kernel": {
-        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
-        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
-        "combined_run_succeeded": false,
-        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
         "source_hashes": {
           "formal/duck_pi/Normality.lean": "240d7503ad05e8346d97c19129be52e3584f91622db540e9fdf44ea402840b62"
         },
@@ -502,7 +583,23 @@
           "ObservationalSUCC.DuckPi.uniformDistribution_digitOrbit_implies_normal": "96c25f251fc9ea41eb52c61393ae931e08161c28b7a4d333c9243a4cc5b7ee55",
           "ObservationalSUCC.DuckPi.pi_interval_equidistribution_implies_normal16": "80cbf61f34d3e46dc732bc5c87bbdd3b5ddd24160f32d1cd684f532fd46db123"
         }
-      }
+      },
+      "previous_kernel_observations": [
+        {
+          "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+          "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+          "combined_run_succeeded": false,
+          "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+          "source_hashes": {
+            "formal/duck_pi/Normality.lean": "240d7503ad05e8346d97c19129be52e3584f91622db540e9fdf44ea402840b62"
+          },
+          "declaration_type_hashes": {
+            "ObservationalSUCC.DuckPi.uniformDistribution_digitOrbit_implies_normal": "96c25f251fc9ea41eb52c61393ae931e08161c28b7a4d333c9243a4cc5b7ee55",
+            "ObservationalSUCC.DuckPi.pi_interval_equidistribution_implies_normal16": "80cbf61f34d3e46dc732bc5c87bbdd3b5ddd24160f32d1cd684f532fd46db123"
+          }
+        }
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json"
     },
     {
       "id": "PI-NORMAL16",
@@ -578,7 +675,7 @@
     {
       "id": "LOGISTIC-FACTOR",
       "kind": "theorem",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "The circle map [t] -> sin^2(pi*t) is an onto continuous semiconjugacy from doubling to 4x(1-x) on [0,1], and is not injective. This gives no selected-orbit genericity.",
       "requires": [
         "SOURCE-MATHLIB"
@@ -609,10 +706,9 @@
       ],
       "paper_status": "PAPER_PROVED",
       "observed_kernel": {
-        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
-        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
-        "combined_run_succeeded": false,
-        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
         "source_hashes": {
           "formal/duck_pi/LogisticFactor.lean": "f62200a0c866eb8e04aaf990186e927cfa43e349234a2525774d01123d623cf7"
         },
@@ -622,7 +718,25 @@
           "ObservationalSUCC.DuckPi.logisticHat_not_injective": "e968d07af8290577e506c6c1b8a8272cd3638bc04a24fe21b095eabd92fbb139",
           "ObservationalSUCC.DuckPi.logisticHat_continuous": "2a64a430149f3f120413d12524e90abfe71746dcbc09311d015b69ee9ed154c6"
         }
-      }
+      },
+      "previous_kernel_observations": [
+        {
+          "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+          "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+          "combined_run_succeeded": false,
+          "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+          "source_hashes": {
+            "formal/duck_pi/LogisticFactor.lean": "f62200a0c866eb8e04aaf990186e927cfa43e349234a2525774d01123d623cf7"
+          },
+          "declaration_type_hashes": {
+            "ObservationalSUCC.DuckPi.logisticHatUnit_semiconj": "0534a98f8d9b14a2aeb326a572a0911f94f142f1bee2ac45fdd4b3f4c8860e97",
+            "ObservationalSUCC.DuckPi.logisticHatUnit_surjective": "1a62c6de088cb22ba3141d3998451853a5f0141624cdc141cbc2da963acaa810",
+            "ObservationalSUCC.DuckPi.logisticHat_not_injective": "e968d07af8290577e506c6c1b8a8272cd3638bc04a24fe21b095eabd92fbb139",
+            "ObservationalSUCC.DuckPi.logisticHat_continuous": "2a64a430149f3f120413d12524e90abfe71746dcbc09311d015b69ee9ed154c6"
+          }
+        }
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json"
     },
     {
       "id": "RH",
@@ -726,7 +840,7 @@
     {
       "id": "PI-SOURCE-LEAN",
       "kind": "theorem",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "The defined BBP sum equals Real.pi by the independently proved integral identity; for each n>=0 the actual circle distance from the forced state at n+1 to 16^n*pi is at most r(n+2)/15 and (8n+9)^(-2), with no supplied BBP identity premise.",
       "requires": [
         "BBP-INTEGRAL-LEAN",
@@ -749,23 +863,38 @@
         }
       ],
       "observed_kernel": {
-        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
-        "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
-        "combined_run_succeeded": false,
-        "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
         "source_hashes": {
-          "formal/duck_pi/PiSource.lean": "a9ead48d00177f9667684d5f5e1e45fc3b4cad01211c6b03dd7a8dc1bf35e8dd"
+          "formal/duck_pi/PiSource.lean": "37699406dc52caa814dd20dd1602060bd08e896d50e66b637d3e4077b8ace4e2"
         },
         "declaration_type_hashes": {
           "ObservationalSUCC.DuckPi.Source.bbp_series_eq_pi": "51f9467120886fe8bd87b6bbf6657796541eb1c13fd7363b29abe40d8d662517",
           "ObservationalSUCC.DuckPi.Source.pi_circle_transport_shifted": "c7d6826b1cdae2439615a41039ba0be2390b3c94bf06748c84800ef9ed3fe9ac"
         }
-      }
+      },
+      "previous_kernel_observations": [
+        {
+          "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+          "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+          "combined_run_succeeded": false,
+          "scope": "These declarations were exported successfully; other modules failed. This is a historical observation, not final-tree admission.",
+          "source_hashes": {
+            "formal/duck_pi/PiSource.lean": "a9ead48d00177f9667684d5f5e1e45fc3b4cad01211c6b03dd7a8dc1bf35e8dd"
+          },
+          "declaration_type_hashes": {
+            "ObservationalSUCC.DuckPi.Source.bbp_series_eq_pi": "51f9467120886fe8bd87b6bbf6657796541eb1c13fd7363b29abe40d8d662517",
+            "ObservationalSUCC.DuckPi.Source.pi_circle_transport_shifted": "c7d6826b1cdae2439615a41039ba0be2390b3c94bf06748c84800ef9ed3fe9ac"
+          }
+        }
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json"
     },
     {
       "id": "HAAR-NULL-BOUNDARY-LEAN",
       "kind": "theorem",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "For every declared circle sequence, Haar continuous-test convergence implies correct frequencies for every measurable set with Haar-null boundary. The geometric set hypotheses must be supplied; this diagram records the pi-orbit specialization.",
       "requires": [
         "HAAR-NULL-BOUNDARY-GENERAL",
@@ -783,7 +912,19 @@
           "path": "formal/duck_pi/HaarBoundary.lean",
           "declaration": "ObservationalSUCC.DuckPi.haarUniform_nullBoundary_frequency"
         }
-      ]
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
+        "source_hashes": {
+          "formal/duck_pi/HaarBoundary.lean": "6c4329f20d5a5b6b3af1e8bd1c147423e25b909f33fc580fe39ffec83439cc6a"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.haarUniform_nullBoundary_frequency": "bff7139d1f9340083c243641d0188658cff5c515c755de9b8dbaa07635ff6ca0"
+        }
+      }
     },
     {
       "id": "BC-SHARP-ASYMPTOTIC",
@@ -836,7 +977,7 @@
       "id": "BC-FORCED-NORMAL-LEAN",
       "kind": "theorem",
       "form": "implication",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "Actual global Fourier cancellation of the shifted Bailey-Crandall lifted orbit implies base-16 normality of Real.pi, via the proved BBP source, asymptotic Haar transport and canonical circle cylinders. The generic intermediate implications are applied to the forced sequence, so PI-FOURIER (cancellation of the pi orbit) is not added as an extra assumption.",
       "requires": [
         "WEYL-HAAR-GENERAL",
@@ -857,14 +998,26 @@
           "path": "formal/duck_pi/AsymptoticTransport.lean",
           "declaration": "ObservationalSUCC.DuckPi.baileyCrandall_fourier_implies_pi_normal16"
         }
-      ]
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
+        "source_hashes": {
+          "formal/duck_pi/AsymptoticTransport.lean": "edcac387eccf5a167acbb9928b3f1b67c795c8004e3df4539350c2fe9ae280b8"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.baileyCrandall_fourier_implies_pi_normal16": "b39650a6e74468a09d46925c276e74d9ad589afd6aae973225e34f347fe33ad7"
+        }
+      }
     },
     {
       "id": "WEYL-HAAR-GENERAL",
       "kind": "theorem",
       "form": "unconditional",
       "theorem_scope": "universally_quantified_implication",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "For every real sequence u, FourierCancellation(u) implies HaarUniformDistribution of its period-one circle projection. This node asserts the universally quantified implication, not cancellation for any selected source.",
       "requires": [
         "PI-DEFINITIONS",
@@ -879,14 +1032,26 @@
           "path": "formal/duck_pi/WeylBridge.lean",
           "declaration": "ObservationalSUCC.DuckPi.fourierCancellation_implies_haarUniform"
         }
-      ]
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
+        "source_hashes": {
+          "formal/duck_pi/WeylBridge.lean": "e71eaf5beccac80cad05db3e3022c71e8fc7f304da0c61006ff2a7531ed3b358"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.fourierCancellation_implies_haarUniform": "aafacc8384b65325331af3ffe8a0813b4e757d22a78135fba6562b280cc71ab5"
+        }
+      }
     },
     {
       "id": "HAAR-NULL-BOUNDARY-GENERAL",
       "kind": "theorem",
       "form": "unconditional",
       "theorem_scope": "universally_quantified_implication",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "For every circle sequence u and measurable set S with Haar-null frontier, HaarUniformDistribution(u) implies that the empirical frequency in S tends to Haar(S). No selected orbit is asserted to satisfy the hypothesis.",
       "requires": [
         "PI-DEFINITIONS",
@@ -901,14 +1066,26 @@
           "path": "formal/duck_pi/HaarBoundary.lean",
           "declaration": "ObservationalSUCC.DuckPi.haarUniform_nullBoundary_frequency"
         }
-      ]
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
+        "source_hashes": {
+          "formal/duck_pi/HaarBoundary.lean": "6c4329f20d5a5b6b3af1e8bd1c147423e25b909f33fc580fe39ffec83439cc6a"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.haarUniform_nullBoundary_frequency": "bff7139d1f9340083c243641d0188658cff5c515c755de9b8dbaa07635ff6ca0"
+        }
+      }
     },
     {
       "id": "HAAR-INTERVAL-GENERAL",
       "kind": "theorem",
       "form": "unconditional",
       "theorem_scope": "universally_quantified_implication",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "For every real sequence u, HaarUniformDistribution of its circle projection implies UniformDistributionModOne(u), using the exact canonical half-open cylinders and their null boundaries.",
       "requires": [
         "HAAR-NULL-BOUNDARY-GENERAL",
@@ -924,14 +1101,26 @@
           "path": "formal/duck_pi/HaarIntervals.lean",
           "declaration": "ObservationalSUCC.DuckPi.haarUniform_implies_uniformDistribution"
         }
-      ]
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
+        "source_hashes": {
+          "formal/duck_pi/HaarIntervals.lean": "174f4d43e28dba5d11f3ec3043ad9edc75e7f09138dafebec96d11e5d36a30fb"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.haarUniform_implies_uniformDistribution": "8d467d4cb1e2f386bfd8bef80415671332bb5b47c0487ad400ae6a8289bcfd17"
+        }
+      }
     },
     {
       "id": "INTERVAL-NORMAL-GENERAL",
       "kind": "theorem",
       "form": "unconditional",
       "theorem_scope": "universally_quantified_implication",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "For every b>=2 and every real x, UniformDistributionModOne(digitOrbit b x) implies NormalTo b x, with canonical overlapping half-open digit blocks.",
       "requires": [
         "PI-DEFINITIONS"
@@ -945,14 +1134,26 @@
           "path": "formal/duck_pi/Normality.lean",
           "declaration": "ObservationalSUCC.DuckPi.uniformDistribution_digitOrbit_implies_normal"
         }
-      ]
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
+        "source_hashes": {
+          "formal/duck_pi/Normality.lean": "240d7503ad05e8346d97c19129be52e3584f91622db540e9fdf44ea402840b62"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.uniformDistribution_digitOrbit_implies_normal": "96c25f251fc9ea41eb52c61393ae931e08161c28b7a4d333c9243a4cc5b7ee55"
+        }
+      }
     },
     {
       "id": "ASYMPTOTIC-HAAR-GENERAL",
       "kind": "theorem",
       "form": "unconditional",
       "theorem_scope": "universally_quantified_implication",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "For every pair of circle sequences u,v whose mutual distance tends to zero, HaarUniformDistribution(u) implies HaarUniformDistribution(v). Compact uniform continuity and Cesaro convergence justify every continuous-test transfer.",
       "requires": [
         "PI-DEFINITIONS",
@@ -971,13 +1172,26 @@
           "path": "formal/duck_pi/AsymptoticTransport.lean",
           "declaration": "ObservationalSUCC.DuckPi.haarUniform_of_dist_tendsto_zero"
         }
-      ]
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
+        "source_hashes": {
+          "formal/duck_pi/AsymptoticTransport.lean": "edcac387eccf5a167acbb9928b3f1b67c795c8004e3df4539350c2fe9ae280b8"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.continuous_observation_difference_tendsto_zero": "da5bec883cd2376b1404aeb6a74cdd83e04c73cde8044b0e6fe18c76054ead92",
+          "ObservationalSUCC.DuckPi.haarUniform_of_dist_tendsto_zero": "220e802b16d22b95326efe2d0d64991fcf3018ed629eea576615fb40694cf640"
+        }
+      }
     },
     {
       "id": "PI-FORCED-DISTANCE-LEAN",
       "kind": "theorem",
       "form": "unconditional",
-      "status": "CANDIDATE",
+      "status": "KERNEL_CHECKED",
       "statement": "The distance between the actual BBP forced circle orbit at n+1 and the genuine circle projection of 16^n*pi tends to zero as n tends to infinity. No equidistribution hypothesis enters this distance theorem.",
       "requires": [
         "PI-SOURCE-LEAN",
@@ -992,8 +1206,20 @@
           "path": "formal/duck_pi/AsymptoticTransport.lean",
           "declaration": "ObservationalSUCC.DuckPi.pi_forced_orbit_distance_tendsto_zero"
         }
-      ]
+      ],
+      "kernel_record": "research/2026-10-21/DUCK_PI_KERNEL_RECORD.json",
+      "observed_kernel": {
+        "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+        "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+        "combined_run_succeeded": true,
+        "source_hashes": {
+          "formal/duck_pi/AsymptoticTransport.lean": "edcac387eccf5a167acbb9928b3f1b67c795c8004e3df4539350c2fe9ae280b8"
+        },
+        "declaration_type_hashes": {
+          "ObservationalSUCC.DuckPi.pi_forced_orbit_distance_tendsto_zero": "1f908aad9f74e562f7e595c5f79274d0f896e5459e0a4c3e5184772a43ec87cc"
+        }
+      }
     }
   ],
-  "formal_status_note": "CANDIDATE labels refer to the current integrated candidate, not a denial of recorded historical kernel successes. observed_kernel is a navigation pointer to an actual run, not independent receipt authentication. Promote only after the coordinator checks the exact final sources and records DUCK_PI_KERNEL_RECEIPT.md."
+  "formal_status_note": "KERNEL_CHECKED refers to exact source/type hashes in the observed successful pinned run. It does not admit these declarations to the installed Level-C catalogue or discharge any selected-source premise. Historical failed-build observations are preserved separately; all pi-normality and cancellation conclusions remain OPEN."
 }

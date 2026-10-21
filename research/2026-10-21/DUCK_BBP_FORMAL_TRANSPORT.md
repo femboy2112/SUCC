@@ -3,17 +3,18 @@
 Date: 2026-10-21. Baseline: PR #232, commit
 `9894d39250021bbbc2615c33dee0d286ddf0950f`. Owner: independent BBP lane.
 
-**Mathematical status:** 32 declarations in
-`formal/duck_pi/BaileyCrandall.lean` at the exact hash recorded below are
-**KERNEL_CHECKED** by the pinned Lean 4.14 / mathlib build. Three subsequent
-candidates (`tail_lt_half`, `tail_lower_quadratic`, and
-`circle_series_distance_eq_tail`) await the next build. The effective cubic remainder and
-bounded Fourier-sum correction are **PAPER_PROVED**, independently reviewed,
-and are not silently included in that formal count. The eight Python tests
-are supporting exact finite checks. The identification with `Real.pi` is
-classical BBP; this lane's `pi_circle_transport` retains an explicit source
-premise. A separate integral/source lane owns discharging it in Lean.
-Pi normality and the required global Fourier cancellation remain **OPEN**.
+**Current mathematical status:** all 35 declarations in
+`formal/duck_pi/BaileyCrandall.lean` are **KERNEL_CHECKED**, including
+`tail_lt_half`, `tail_lower_quadratic`, and `circle_series_distance_eq_tail`.
+The [complete successful receipt](DUCK_PI_KERNEL_RECEIPT.md) pins their exact
+sources, types and axioms. The effective cubic remainder and bounded
+Fourier-sum correction remain **PAPER_PROVED**, independently reviewed, and
+are not included in that formal count. The eight Python tests are supporting
+exact finite checks. This file's generic `pi_circle_transport` retains its
+source premise; `BBPIntegral.lean` proves the actual classical BBP identity,
+and `PiSource.lean` discharges that premise for `Real.pi` without an axiom.
+The full conditional normality bridge also compiled; its source-specific
+Fourier cancellation hypothesis and pi normality remain **OPEN**.
 
 ## 1. Exact source and scope
 
