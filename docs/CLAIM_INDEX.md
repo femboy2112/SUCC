@@ -1,5 +1,7 @@
 # Claim Index
 
+**2026-10-21 draft Duck Principle / trusted π proof campaign:** [DUCK-01–12 claim supplement](CLAIM_SUPPLEMENT_DUCK_PRINCIPLE.md) · [structural discovery, Bailey–Crandall and exact π tail dossier](../research/2026-10-21/DUCK_PRINCIPLE_AND_PI_PROOF_FRONTIER.md) · [Astra Ultra execution handoff](../handoffs/ASTRA_ULTRA_DUCK_PI_PROOF_2026-10-21.md). Finite factor laws and erasure counterexample have a standalone Lean candidate and CI gate; **do not mark LEAN_KERNEL_PROVED before an actual successful kernel run**. An explicit O(n^-2) BBP forced-orbit/π-digit phase transport is PAPER_PROVED pending Lean. Neither that transport nor circle/Gamma/prime diagrams prove π normality. RH/ABC implications UNVERIFIED; π normality OPEN.
+
 Post-main research draft: [effective primitive abc means](CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md)
 (ABC-EFF-01–05) gives a uniform primitive divisor discrepancy, explicit convergence
 for every δ<(2−3t)/5 when 0≤t<2/3, and failure of quadratic moments for t≥1.
