@@ -332,6 +332,7 @@ def certified_pi_digits_from_full_primes(
         hi=min(hi,polygon.upper)
         if lo>=hi:
             raise ArithmeticError("prime/geometric π intervals contradict")
+    source_span=(lo,hi)
     prefix=""
     if 3<lo<hi<4:
         lo-=3
@@ -354,7 +355,6 @@ def certified_pi_digits_from_full_primes(
                 digits.append(alphabet[rem])
             prefix="".join(reversed(digits))
     return PrimeDigitCertificate(
-        cutoff, base, max_digits, prefix, (source.lower_pi if polygon_steps is None else max(source.lower_pi,polygon.lower),
-        source.upper_pi if polygon_steps is None else min(source.upper_pi,polygon.upper)),
+        cutoff, base, max_digits, prefix, source_span,
         prime_bounds, polygon_steps is not None
     )
