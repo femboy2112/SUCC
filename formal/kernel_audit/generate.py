@@ -35,6 +35,13 @@ PROJECTS = {
         "ObservationalSUCC.CloudSchur.scalar_negative_lift",
         "ObservationalSUCC.CloudSchur.zero_diagonal_negative",
     ]),
+    "slope_rigidity": ("PrimitiveSlope", [
+        "ObservationalSUCC.PrimitiveSlope." + name for name in [
+            "determinant_divisibility_int", "nat_dvd_int_cast", "determinant_divisibility",
+            "reduced_pair_injective", "primitive_triple_determinant_ne_zero", "modulus_le_natAbs",
+            "primitive_determinant_gap", "nonprimitive_control", "noncoprime_moduli_control",
+        ]
+    ]),
 }
 
 
@@ -159,6 +166,8 @@ def main() -> None:
         raise RuntimeError("wrong-source control did not fail for the expected type mismatch")
     command(["python3", "check_mutations.py"], ROOT / "formal/cloud_schur",
             output / "schur-mutations.log", check_axioms=False)
+    command(["python3", "check_mutations.py"], ROOT / "formal/slope_rigidity",
+            output / "slope-mutations.log", check_axioms=False)
     if source_hashes() != before:
         raise RuntimeError("checked source changed during build")
     environment = {"toolchain": TOOLCHAIN, "manifest_rev": MATHLIB, "source_hashes": before}
@@ -171,7 +180,8 @@ def main() -> None:
             "git_commit": subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip(),
             "git_tree": subprocess.check_output(["git", "rev-parse", "HEAD^{tree}"], cwd=ROOT, text=True).strip(),
             "lean_version": version,
-            "negative_controls": ["wrong_source_type", "semidefinite_is_not_invertible", "wrong_negative_value"],
+            "negative_controls": ["wrong_source_type", "semidefinite_is_not_invertible",
+                                  "wrong_negative_value", "missing_reducedness", "oversized_gap"],
             "log_sha256": {p.name: sha256(p.read_bytes()) for p in sorted(output.glob("*.log"))},
         },
     }

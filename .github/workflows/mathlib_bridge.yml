@@ -11,7 +11,7 @@ on:
 permissions:
   contents: read
 
-# Both projects share one cache and build serially. Do not duplicate large builds.
+# All three projects share one cache and build serially.
 concurrency:
   group: succ-pinned-formal-kernel
   cancel-in-progress: false
@@ -40,12 +40,14 @@ jobs:
         working-directory: formal/mathlib_bridge
         run: |
           set -euo pipefail
-          lake exe cache get Mathlib/NumberTheory/FLT/MasonStothers.lean Mathlib/Data/ZMod/Basic.lean Mathlib/LinearAlgebra/Matrix/SchurComplement.lean Mathlib/Data/Real/StarOrdered.lean Mathlib/Tactic/FieldSimp.lean Mathlib/Tactic/Ring.lean
-          mkdir -p ../cloud_schur/.lake
-          ln -s "$(pwd)/.lake/packages" ../cloud_schur/.lake/packages
+          lake exe cache get Mathlib/NumberTheory/FLT/MasonStothers.lean Mathlib/Data/ZMod/Basic.lean Mathlib/LinearAlgebra/Matrix/SchurComplement.lean Mathlib/Data/Real/StarOrdered.lean Mathlib/Tactic/FieldSimp.lean Mathlib/Tactic/Ring.lean Mathlib/RingTheory/Coprime/Lemmas.lean Mathlib/Data/Nat/GCD/Basic.lean Mathlib/Tactic/NormNum.lean
+          for project in cloud_schur slope_rigidity; do
+            mkdir -p "../$project/.lake"
+            ln -s "$(pwd)/.lake/packages" "../$project/.lake/packages"
+          done
       - name: Check record parser negative controls
         run: python3 -m unittest discover -s formal/kernel_audit -p 'test_*.py' -v
-      - name: Rebuild both projects and export actual kernel propositions
+      - name: Rebuild three projects and export nineteen actual kernel propositions
         run: python3 formal/kernel_audit/generate.py --output "$RUNNER_TEMP/succ-kernel-audit"
       - name: Test admitted formal references when catalogue is populated
         run: |
