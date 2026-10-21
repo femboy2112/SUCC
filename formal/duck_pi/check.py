@@ -1,0 +1,89 @@
+"""Rebuild exact Duck/pi sources; emit observations, never self-authenticating authority."""
+from __future__ import annotations
+import argparse, base64, gzip, hashlib, json, os, re, subprocess, sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[2]
+PROJECT = ROOT / 'formal/duck_pi'
+ALLOWED = {'propext', 'Classical.choice', 'Quot.sound'}
+MODULES = {
+    'DuckPrinciple': ('formal', 'ObservationalSUCC.Duck'),
+    'DuckObserver': ('formal', 'ObservationalSUCC.Duck.Observer'),
+    'BaileyCrandall': ('formal/duck_pi', 'ObservationalSUCC.BaileyCrandall'),
+    'LogisticFactor': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
+    'Normality': ('formal/duck_pi', 'ObservationalSUCC.DuckPi'),
+}
+
+def digest(b): return hashlib.sha256(b).hexdigest()
+
+def main():
+    ap=argparse.ArgumentParser(); ap.add_argument('--output', type=Path, required=True)
+    args=ap.parse_args(); output=args.output.resolve(); output.mkdir(parents=True, exist_ok=True)
+    sys.path.insert(0,str(ROOT/'scripts'))
+    from cambrian_audit_c_lean import uncomment
+    paths=[ROOT/'formal'/f'{n}.lean' for n in ['DuckPrinciple','DuckObserver','FutureSafeForgetting']]
+    paths += [p for p in PROJECT.rglob('*') if p.is_file() and '.lake' not in p.parts and '__pycache__' not in p.parts and p.suffix in {'.lean','.py','.toml'}]
+    paths += [PROJECT/'lean-toolchain',PROJECT/'lake-manifest.json',ROOT/'formal/kernel_audit/ExportCommand.lean',ROOT/'.github/workflows/duck-pi-proof.yml']
+    hashes={str(p.relative_to(ROOT)):digest(p.read_bytes()) for p in sorted(set(paths))}
+    for p in paths:
+        if p.suffix=='.lean' and re.search(r'\b(sorry|admit|axiom|unsafe|native_decide)\b',uncomment(p.read_text())):
+            raise RuntimeError('Forbidden proof token in '+str(p))
+    manifest=json.loads((PROJECT/'lake-manifest.json').read_text())
+    pins={p['name']:p['rev'] for p in manifest['packages']}
+    assert pins['mathlib']=='4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84'
+    for name, rev in pins.items():
+        directory=PROJECT/'.lake/packages'/name
+        actual=subprocess.check_output(['git','rev-parse','HEAD'],cwd=directory,text=True).strip()
+        dirty=subprocess.check_output(['git','status','--porcelain','--untracked-files=no'],cwd=directory,text=True).strip()
+        assert actual==rev and not dirty,(name,actual,rev,dirty)
+    version=subprocess.check_output(['lean','--version'],text=True).strip()
+    assert 'version 4.14.0' in version
+    print(version,flush=True)
+    commands=[]
+    def run(label,cmd,cwd,env=None):
+        p=subprocess.run(cmd,cwd=cwd,env=env,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)
+        (output/(label+'.log')).write_text(p.stdout)
+        commands.append({'label':label,'command':cmd,'cwd':str(Path(cwd).relative_to(ROOT)),'exit_code':p.returncode,'log_sha256':digest(p.stdout.encode())})
+        print('COMMAND',label,'EXIT',p.returncode,flush=True)
+        for line in p.stdout.splitlines():
+            if 'SUCC_THEOREM_JSON ' not in line: print(line,flush=True)
+        return p
+    standalone=output/'standalone';standalone.mkdir(exist_ok=True)
+    env={**os.environ,'LEAN_PATH':str(standalone)}
+    prerequisite=run('FutureSafeForgetting',['lean','-o',str(standalone/'FutureSafeForgetting.olean'),'FutureSafeForgetting.lean'],ROOT/'formal',env)
+    exports={}; successes=[]; failures=[]
+    template=(ROOT/'formal/kernel_audit/ExportCommand.lean').read_text()
+    for module,(directory,namespace) in MODULES.items():
+        cwd=ROOT/directory;source=cwd/(module+'.lean')
+        names=[namespace+'.'+n for n in re.findall(r'^theorem\s+([A-Za-z0-9_]+)',source.read_text(),re.M)]
+        if directory=='formal':
+            cmd=['lean','-o',str(standalone/(module+'.olean')),source.name]; use_env=env
+        else:
+            build=cwd/'.lake/build/lib';build.mkdir(parents=True,exist_ok=True)
+            cmd=['lake','env','lean','-o',str(build/(module+'.olean')),source.name];use_env=None
+        p=run(module+'-build',cmd,cwd,use_env)
+        if p.returncode: failures.append(module);continue
+        audit=output/(module+'Audit.lean')
+        audit.write_text('import '+module+'\n'+template+'\n'+''.join('#check @'+n+'\n#print axioms '+n+'\n#succ_export '+n+'\n' for n in names))
+        cmd=(['lean'] if directory=='formal' else ['lake','env','lean'])+[str(audit)]
+        p=run(module+'-exports',cmd,cwd,use_env)
+        if p.returncode:failures.append(module);continue
+        found={}
+        for line in p.stdout.splitlines():
+            if 'SUCC_THEOREM_JSON ' not in line:continue
+            e=json.loads(line.split('SUCC_THEOREM_JSON ',1)[1]);name=e.pop('name')
+            assert name in names and name not in found
+            assert not (set(e['axioms'])-ALLOWED),(name,e['axioms'])
+            e['type_sha256']=digest(e['type_expr'].encode());found[name]=e
+            print('KERNEL_EXPORTED',name,e['type_sha256'],e['axioms'],flush=True)
+        assert set(found)==set(names),(module,set(names)-set(found))
+        exports.update(found);successes.append(module)
+    assert hashes=={p:digest((ROOT/p).read_bytes()) for p in hashes},'source changed during build'
+    record={'schema':'succ.duck-pi.kernel-observation.v1','build_succeeded':not failures and prerequisite.returncode==0,'git_commit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'git_tree':subprocess.check_output(['git','rev-parse','HEAD^{tree}'],cwd=ROOT,text=True).strip(),'lean_version':version,'source_hashes':hashes,'dependency_revisions':pins,'successful_modules':successes,'failed_modules':failures,'commands':commands,'theorem_exports':exports,'authority_admitted':False,'negative_mutations':'NOT_YET_RUN'}
+    encoded=json.dumps(record,sort_keys=True,separators=(',',':')).encode()
+    (output/'kernel-observation.json').write_bytes(encoded+b'\n')
+    print('DUCK_PI_RECORD_BASE64 '+base64.b64encode(gzip.compress(encoded)).decode(),flush=True)
+    print('KERNEL_RESULT',record['build_succeeded'],'EXPORTS',len(exports),flush=True)
+    if not record['build_succeeded']:raise SystemExit(1)
+
+if __name__=='__main__':main()
