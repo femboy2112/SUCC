@@ -12,6 +12,7 @@ from observational_succ.reciprocal_succ_fucc import (
     gibbs_rank_nonprojective,
     finite_reciprocal_boundary_defect, finite_reciprocal_square_on_basis,
     finite_reciprocal_power_square, finite_reciprocal_boundary_hierarchy,
+    factorial_gauge, factorial_creator_intertwiner,
 )
 
 
@@ -84,6 +85,15 @@ def main():
                     else:
                         assert left==right
                     graded_basis+=1
+    gauges=0
+    for ps in ((2,),(2,3),(2,3,5)):
+        for alpha in product(range(4),repeat=len(ps)):
+            for i in range(len(ps)):
+                for beta in (2,4):
+                    lhs,rhs=factorial_creator_intertwiner(alpha,i,ps,beta)
+                    assert lhs==rhs and lhs>0
+                    gauges+=1
+    assert factorial_gauge((6,))==Q(1,720)
     direct,cotrans=gibbs_rank_nonprojective((2,3),2)
     assert direct!=cotrans and cotrans>direct
     receipt={
@@ -101,6 +111,8 @@ def main():
         'graded_cutoff_configurations':graded_configs,
         'graded_cutoff_basis_checks':graded_basis,
         'graded_boundary_rank_t_law':True,
+        'factorial_gauge_source_cases':gauges,
+        'factorial_gauge_inverse_unbounded_claim':True,
         'projectivity_rank1_source_2_3_beta2':str(direct),
         'projectivity_rank2_cotransport_2_3_beta2':str(cotrans),
         'projectivity_false_equivalence_refuted':True,
