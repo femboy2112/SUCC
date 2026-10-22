@@ -15,6 +15,8 @@ from observational_succ.witt_carry_learning import (
  update_version_space,delayed_tower_counterfeit,calibrated_ring_table_budget,
  sparse_factorial_prefix,full_ring_homogeneous_projection,geometric_bt_ball_profile,
  p_step_unipotent_probe,lifted_succ_loop,
+ factorial_stage_modulus,factorial_prime_precision,factorial_cofinal_witness,
+ factorial_counterfeit_characteristics,
 )
 
 
@@ -78,6 +80,20 @@ def main():
         assert m['coarse_return'] and e['coarse_return']
         assert m['fine_value']==p**(k-1) and e['fine_value']==0
         graded_holonomy+=2
+    cofinal=0
+    for modulus in range(1,201):
+        witness=factorial_cofinal_witness(modulus)
+        assert factorial_stage_modulus(witness['stage'])%modulus==0
+        cofinal+=1
+    factorial_precision_cases=0
+    for k in range(1,16):
+        pdepth=factorial_prime_precision(k)
+        assert factorial_stage_modulus(k)==__import__('math').prod(p**v for p,v in pdepth.items())
+        factorial_precision_cases+=1
+    fake=factorial_counterfeit_characteristics(4)
+    assert fake['cardinality_of_both']==24
+    assert fake['mixed_ring_characteristic']==24
+    assert fake['equal_local_product_characteristic']==6
     report={
         'research':'SUCC_WITT_CARRY_OBSERVER_LIMIT_2026_10_22',
         'status':'CLASSICAL_PAPER_THEOREMS_EXACT_FINITE_CHECKS_NOT_LEAN_CERTIFIED',
@@ -90,6 +106,9 @@ def main():
         'RH_proved':False,
         'carry_cocycle_exact_instances':cocycles,
         'graded_lifted_succ_holonomy_tests':graded_holonomy,
+        'factorial_cofinal_modulus_cases':cofinal,
+        'factorial_valuation_level_cases':factorial_precision_cases,
+        'global_equalchar_factorial_counterfeit_at_4':fake,
         'whole_tree_digit_isometry_exact_instances':metrics,
         'independent_finite_ring_operation_cells':operations,
         'delayed_counterfeit_tower_tests':delayed,
