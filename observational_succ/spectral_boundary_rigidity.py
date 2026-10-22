@@ -362,3 +362,60 @@ def approximate_hidden_mode_pair(coupling):
     if not 0<eps<1:
         raise SpectralSourceError("strictly positive weak coupling <1 required")
     return chain_response((1,eps)),chain_response((1,eps,1))
+
+
+def exact_determinant(matrix):
+    """Exact rational determinant; no approximate rank/noise conclusions."""
+    if type(matrix) not in (tuple,list) or not matrix:
+        raise SpectralSourceError("nonempty square moment matrix required")
+    n=len(matrix)
+    if any(type(row) not in (tuple,list) or len(row)!=n for row in matrix):
+        raise SpectralSourceError("square matrix required")
+    a=[[number(v) for v in row] for row in matrix]
+    det=F(1)
+    for col in range(n):
+        row=next((j for j in range(col,n) if a[j][col]),None)
+        if row is None:
+            return F()
+        if row!=col:
+            a[col],a[row]=a[row],a[col]
+            det=-det
+        pivot=a[col][col]
+        det*=pivot
+        for j in range(col+1,n):
+            if a[j][col]:
+                scale=a[j][col]/pivot
+                for k in range(col+1,n):
+                    a[j][k]-=scale*a[col][k]
+                a[j][col]=F()
+    return det
+
+
+def boundary_moment_hankel(g,order):
+    """H_r(i,j)=<e1,A^(i+j)e1>, 0<=i,j<r; rank counts visible layers."""
+    g=_conductances(g)
+    if len(g)<2 or type(order) is not int or not 1<=order<=len(g):
+        raise SpectralSourceError("valid Hankel order 1..n+1 required")
+    mu=chain_moments(g,2*order-1)
+    return tuple(tuple(mu[i+j] for j in range(order)) for i in range(order))
+
+
+def hankel_depth_certificate(g):
+    """Universal finite source depth formula: det H_r=prod g_j^(2(r-j)).
+
+    The first zero Hankel determinant is at r=n+1. Distinct from robust
+    noisy rank: arbitrarily weak g makes an exact nonzero determinant tiny.
+    """
+    g=_conductances(g)
+    n=len(g)-1
+    if n<1:
+        raise SpectralSourceError("nonzero hidden physical depth required")
+    minors=tuple(exact_determinant(boundary_moment_hankel(g,r))
+                 for r in range(1,n+2))
+    expected=tuple(
+        prod(g[j]**(2*(r-j)) for j in range(1,r)) if r<=n else F()
+        for r in range(1,n+2))
+    if minors!=expected:
+        raise ArithmeticError("boundary Krylov Hankel rank formula contradicted")
+    return {"hidden_depth":n,"hankel_determinants":minors,
+            "expected_determinants":expected,"first_zero_order":n+1}
