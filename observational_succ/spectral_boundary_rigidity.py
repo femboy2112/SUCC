@@ -190,6 +190,47 @@ def round_trip_new_depth(g,new_terminal):
             "moments_after":newer}
 
 
+
+def recover_operational_jacobi(response):
+    """Canonical minimal observable Jacobi chain, without physical topology claims.
+
+    Reconstruct (g0, diagonal a_i, squared offdiagonal b_i^2) exactly from
+    the rational boundary m-function. The b_i's may be irrational despite
+    rational source response. The result is the cyclic/Krylov interior
+    observable at this port, not necessarily the original graph geometry.
+    """
+    P,Q=rational_response(*response)
+    if len(P)!=len(Q):
+        raise SpectralSourceError("proper nonzero boundary transfer required")
+    g0=P[-1]/Q[-1]
+    if g0<=0:
+        raise SpectralSourceError("positive high-frequency port weight expected")
+    if len(Q)==1:
+        return {"port":g0,"diagonal":(),"offdiagonal_squared":(),
+                "minimal_observable_order":0}
+    m=rational_response(pa(ps(Q,g0),ps(P,-1)),ps(Q,g0*g0))
+    diag=[];offs=[]
+    for _ in range(8):
+        N,D=m
+        if N==(F(),):
+            raise SpectralSourceError("zero resolvent does not define cyclic source")
+        quot,rem=pd(D,N)
+        if len(quot)!=2 or quot[-1]!=1:
+            raise SpectralSourceError("not a normalized Jacobi continued fraction")
+        diag.append(quot[0])
+        if rem==(F(),):
+            break
+        b2=-rem[-1]
+        if b2<=0:
+            raise SpectralSourceError("non-positive squared Jacobi link")
+        offs.append(b2)
+        m=rational_response(ps(rem,-1),ps(N,b2))
+    else:
+        raise SpectralSourceError("observability dimension exceeds exact finite cap")
+    return {"port":g0,"diagonal":tuple(diag),
+            "offdiagonal_squared":tuple(offs),
+            "minimal_observable_order":len(diag)}
+
 def recover_positive_chain(response):
     """Exact inverse Jacobi continued fraction with physical source checks.
 
