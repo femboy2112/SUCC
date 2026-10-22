@@ -33,7 +33,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Run exact Jacobi and source/observer hostile oracles
+      - name: Run 28 exact Jacobi/Hankel source reconstruction and dark-mode hostile oracles
         run: python -Werror -m unittest discover -s tests -p test_spectral_boundary_rigidity.py -v
       - name: Independently reproduce frozen rational spectral receipt
         run: |
@@ -46,6 +46,8 @@ jobs:
           assert got==frozen,'Frozen exact source spectral boundary receipt differs'
           assert got['spectral_new_layer_first_return_moments']['3']['exact_moment_jump']=='11025'
           assert got['complete_response_recovered_from_seven_samples']
+          assert got['positive_chain_hankel_minor_sequence']==['1','9','2025','0']
+          assert got['dark_connected_star_minimal_order']==2
           assert not got['physical_observations_performed']
           assert not got['alpha_derived_from_SUCC']
           assert not got['global_gravitational_geometry_identified']
