@@ -212,7 +212,6 @@ class OperationalDiscriminationTests(unittest.TestCase):
 
 if __name__ == '__main__':unittest.main()
 
-
 class UniqueHaarAndHorizonEntropyTests(unittest.TestCase):
  def test_source_succ_ergodic_finite_cycles_force_uniform_haar(self):
   from observational_succ.observation_pinned_geometry import finite_haar_phase_distribution
