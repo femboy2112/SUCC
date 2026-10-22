@@ -48,7 +48,7 @@ jobs:
           assert got['complete_response_recovered_from_seven_samples']
           assert not got['physical_observations_performed']
           assert not got['alpha_derived_from_SUCC']
-          assert not got['gravitational_ER_EPR_proved']
+          assert not got['global_gravitational_geometry_identified']
           assert not got['RH_proved']
           for key,rel in (
               ('source_module_git_blob','observational_succ/spectral_boundary_rigidity.py'),
