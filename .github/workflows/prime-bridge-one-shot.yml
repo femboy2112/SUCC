@@ -37,7 +37,7 @@ jobs:
         run: python -Werror -m unittest discover -s tests -p test_arithmetic_epr_star.py -v
       - name: Verify deterministic recorded proof receipt
         run: |
-          python scripts/arithmetic_epr_star_probe.py > "$RUNNER_TEMP/prime-bridge.json"
+          PYTHONPATH=. python scripts/arithmetic_epr_star_probe.py > "$RUNNER_TEMP/prime-bridge.json"
           python - <<'PY'
           import hashlib, json, pathlib, os
           root = pathlib.Path.cwd()
