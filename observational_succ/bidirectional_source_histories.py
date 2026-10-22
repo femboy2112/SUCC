@@ -434,4 +434,3 @@ def lift_field_growth_source(base,candidates,steps,epsilon=1):
             table[source]=tuple(sorted(events,key=lambda ev:ev[0]))
         labelled.append(table)
     return LabelledMarkovSource(levels,tuple(labelled))
-
