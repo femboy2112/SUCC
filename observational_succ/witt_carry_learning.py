@@ -381,3 +381,27 @@ def calibrated_ring_table_budget(p,k,error_probability=Fraction(1,4),total_risk=
             'allocated_level_error':risk/Fraction(2**k),
             'infinite_campaign_claim_conditional_on_independent_repeated_reads':True,
             'actual_measurements_performed':False}
+
+
+def lifted_succ_loop(p,k,model):
+    """Holonomy of a coarse-closed SUCC cycle, independently repeated.
+
+    At depth k, p^(k-1) marked one-steps close mod p^(k-1).
+    In mixed characteristic they displace top digit by one; equal
+    characteristic gives a trivial lift. This is an ADDITIVE EXTENSION
+    defect, not quantum holonomy or physical spacetime curvature.
+    """
+    _p(p);_k(k)
+    if k<2:raise LearningSourceError('lift requires lower and higher stage')
+    if model not in ('mixed','equal'):
+        raise LearningSourceError('source-model family not declared')
+    steps=p**(k-1)
+    if steps>10000:raise LearningSourceError('bounded exact loop oracle budget')
+    value=(0,)*k
+    one=digits_of(1,p,k)
+    for _ in range(steps):
+        value=(mixed_add(value,one,p)[0] if model=='mixed'
+               else equal_add(value,one,p))
+    return {'steps':steps,'coarse_return':value[:-1]==(0,)*(k-1),
+            'fine_digits':value,'fine_value':integer_of(value,p),
+            'fine_holonomy_nontrivial':any(value)}
