@@ -180,6 +180,39 @@ Every finite prefix has a nonnegative integer representative. All prefixes commu
 
 Similarly, a delayed counterfeit inverse tower with moduli \(p^k\) through stage K and \(p^kq\) afterward, for q another prime, is a legal system of surjective cyclic quotient maps. It matches every finite observation through K and diverges at K+1. No fixed finite observation proves all later source axioms.
 
+## LCW-10 — one factorial chain learns the *entire* profinite arithmetic carrier
+
+A single source-faithful indefinitely extensible clock sequence is enough to cover **all finite integer congruence observations**, not just the place p. Let \(m_k=k!\), and require complete oriented ring-source stages \(C_k=\mathbb Z/k!\mathbb Z\) with the authentic reduction \(C_{k+1}\to C_k\). Every finite modulus \(n\ge1\) divides \(k!\) for all \(k\ge n\). Thus the factorial chain is **cofinal** in the directed system of all finite quotients \(\mathbb Z/n\mathbb Z\), so the standard cofinal inverse-limit and CRT theorems give
+
+\[
+\boxed{
+\varprojlim_{k\ge1}\mathbb Z/k!\mathbb Z
+\cong
+\widehat{\mathbb Z}
+\cong
+\prod_{p\text{ prime}}\mathbb Z_p.
+}
+\]
+
+**Proof:** For any coherent factorial residue sequence \((x_k)_k\) and any modulus n, choose any k with n|k! and set \(x\bmod n=x_k\bmod n\); compatibility makes this independent of k. This yields a coherent family over all moduli. Conversely any full congruence family restricts along k!, and the two maps are inverse. CRT identifies every finite \(\mathbb Z/k!\mathbb Z\) with the product of its prime-power quotients, compatibly; passing to limits gives the product over all p. QED.
+
+At rung k, the certified p-adic precision is
+
+\[
+v_p(k!)=\sum_{j\ge1}\lfloor k/p^j\rfloor,\qquad
+d_p(x_p,x_k)\le p^{-v_p(k!)}.
+\]
+
+Every fixed p gains unbounded precision as k→∞. The forgetting arrow from stage \((k+1)!\) onto \(k!\) has **exactly \(k+1\) lifts for each previously observed residue**. Therefore the rooted *factorial observation tree* naturally has level-dependent branching \(k+1\), and its boundary realizes the entire profinite ring, not a lone chosen p-ary component. Every finite radius of the rooted observation tree stabilizes after its corresponding finite rung, just as in LCW-04. The exact finite code checks all quotient refinements through stage 7, the factorial Legendre prime valuations through stage 15, and cofinal access to every modulus 1..200. No physical observer has run infinitely many stages.
+
+### A global counterfeit with the same observation geometry at every rung
+
+At rung k, replace every source local ring \(\mathbb Z/p^{v_p(k!)}\mathbb Z\) with its equal-characteristic digit lookalike \(\mathbb F_p[t]/(t^{v_p(k!)})\), and take their finite product over primes p≤k. The two candidate *finite total rings* have **exactly the same cardinality \(k!\)**, the same placewise digit cylinder geometry, and compatible parent maps. Under a product of digitwise isometries, their whole inverse-limit spaces and Haar-cylinder structures match. Their ring arithmetic nevertheless differs: the real cyclic ring has characteristic \(k!\), whereas the equal-characteristic product has characteristic \(\operatorname{rad}(k!)=\prod_{p\le k}p\). At k=4 the two source rings have cardinal 24 but characteristics **24 versus 6**, with \(v_2(4!)=3\) and \(v_3(4!)=1\). This is the requested **global** FuckedField source-map adversary.
+
+Notice that their infinite products both have **global characteristic zero** (their factors range over all primes), so looking only at that coarse global invariant need not separate them. The characteristic and carry probes must remain **prime-place source-relative**. Geometry-only observation at every rung is still insufficient. This supplies an unusually sharp reason that the global SUCC observation system must preserve its local prime-source arithmetic, not merely the shape of its inverse-limit object.
+
+The factorial completion \(\widehat{\mathbb Z}\) is **not** the full adele ring \(\mathbb A_{\mathbb Q}\) or an Archimedean physical metric. Adding the real place, quantum dynamical state, and genuine ER=EPR geometry is still an independent source-mapping and proof problem.
+
 ## 8. Verdict, scope and next probe
 
 **Disclosed within assumptions (paper proofs, not Lean-certified):** source carry extension/associated graded identity; all-depth ultrametric geometry/Haar equivalence and source nonidentifiability; second-rung marked-SUCC discriminator; source-complete effective inverse-limit construction and error bounds; finite candidate version-space identification; conditional countably summable measurement-error schedule; original-integer realization counterexample.
@@ -192,4 +225,4 @@ Similarly, a delayed counterfeit inverse tower with moduli \(p^k\) through stage
 
 ### Provenance
 
-Classical Witt-vector and p-differential literature (Dupuy, Katz, Rabinoff & Zureick-Brown, https://arxiv.org/abs/1712.09487), Gold's original learning-in-the-limit paper (1967, https://www.cs.famaf.unc.edu.ar/~gabriel/files/gold67limit.pdf), and standard pro-p inverse limits and Bruhat–Tits theory. Internal SUCC `docs/OBSERVER_PROOF_ACCESS.md`, `observational_succ/source_field_inverse_limits.py`, `observational_succ/field_limit_compactness.py`, and the source-pinned OPIG PR #238. The 37 finite tests and source-hash-pinned receipt are in this research branch. Independent scholarly novelty has not been investigated sufficiently to claim any.
+Classical Witt-vector and p-differential literature (Dupuy, Katz, Rabinoff & Zureick-Brown, https://arxiv.org/abs/1712.09487), Gold's original learning-in-the-limit paper (1967, https://www.cs.famaf.unc.edu.ar/~gabriel/files/gold67limit.pdf), and standard pro-p inverse limits and Bruhat–Tits theory. Internal SUCC `docs/OBSERVER_PROOF_ACCESS.md`, `observational_succ/source_field_inverse_limits.py`, `observational_succ/field_limit_compactness.py`, and the source-pinned OPIG PR #238. The 42 finite tests and source-hash-pinned receipt are in this research branch. Independent scholarly novelty has not been investigated sufficiently to claim any.
