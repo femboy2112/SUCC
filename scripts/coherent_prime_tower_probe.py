@@ -78,7 +78,6 @@ def main():
     for path,key in (
         ('observational_succ/coherent_prime_tower.py','tower_module_sha256'),
         ('tests/test_coherent_prime_tower.py','tower_tests_sha256'),
-        ('research/2026-10-22/PRIME_BRIDGE_COHERENT_INFINITE_TOWER.md','paper_sha256'),
     ):
         results[key]=hashlib.sha256((root/path).read_bytes()).hexdigest()
     print(json.dumps(results,sort_keys=True,indent=2))
