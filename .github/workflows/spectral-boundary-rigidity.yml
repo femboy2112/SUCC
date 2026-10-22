@@ -1,0 +1,59 @@
+name: Spectral boundary source rigidity exact
+
+on:
+  push:
+    branches:
+      - research/spectral-boundary-source-rigidity-2026-10-22
+    paths:
+      - 'observational_succ/spectral_boundary_rigidity.py'
+      - 'tests/test_spectral_boundary_rigidity.py'
+      - 'scripts/spectral_boundary_rigidity_probe.py'
+      - 'research/2026-10-22/SPECTRAL_BOUNDARY_RIGIDITY_RECEIPT.json'
+      - '.github/workflows/spectral-boundary-rigidity.yml'
+  pull_request:
+    paths:
+      - 'observational_succ/spectral_boundary_rigidity.py'
+      - 'tests/test_spectral_boundary_rigidity.py'
+      - 'scripts/spectral_boundary_rigidity_probe.py'
+      - 'research/2026-10-22/SPECTRAL_BOUNDARY_RIGIDITY_RECEIPT.json'
+      - '.github/workflows/spectral-boundary-rigidity.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run exact Jacobi and source/observer hostile oracles
+        run: python -Werror -m unittest discover -s tests -p test_spectral_boundary_rigidity.py -v
+      - name: Independently reproduce frozen rational spectral receipt
+        run: |
+          PYTHONPATH=. python scripts/spectral_boundary_rigidity_probe.py > "$RUNNER_TEMP/spectral-source.json"
+          python - <<'PY'
+          import hashlib,json,pathlib,os
+          root=pathlib.Path.cwd()
+          got=json.loads((pathlib.Path(os.environ['RUNNER_TEMP'])/'spectral-source.json').read_text())
+          frozen=json.loads((root/'research/2026-10-22/SPECTRAL_BOUNDARY_RIGIDITY_RECEIPT.json').read_text())
+          assert got==frozen,'Frozen exact source spectral boundary receipt differs'
+          assert got['spectral_new_layer_first_return_moments']['3']['exact_moment_jump']=='11025'
+          assert got['complete_response_recovered_from_seven_samples']
+          assert not got['physical_observations_performed']
+          assert not got['alpha_derived_from_SUCC']
+          assert not got['gravitational_ER_EPR_proved']
+          assert not got['RH_proved']
+          for key,rel in (
+              ('source_module_git_blob','observational_succ/spectral_boundary_rigidity.py'),
+              ('test_module_git_blob','tests/test_spectral_boundary_rigidity.py')):
+              data=(root/rel).read_bytes()
+              actual=hashlib.sha1(f"blob {len(data)}\0".encode()+data).hexdigest()
+              assert got[key]==actual,'Git blob source checksum mismatch'
+          PY
