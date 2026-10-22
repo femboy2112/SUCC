@@ -14,6 +14,7 @@ from observational_succ.spectral_boundary_rigidity import (
     interpolate_response, recover_positive_chain,
     finite_response_identity, approximate_hidden_mode_pair,
     recover_operational_jacobi, rational_response,
+    hankel_depth_certificate,
 )
 from observational_succ.boundary_realization_selection import (
     FiniteNetwork, boundary_response,
@@ -55,6 +56,8 @@ def main():
     dark_resp=rational_response((F(2),F(4),F(1)),(F(4),F(5),F(1)))
     dark=recover_operational_jacobi(dark_resp)
     assert dark['diagonal']==(F(3),F(2)) and dark['offdiagonal_squared']==(F(2),)
+    hankel=hankel_depth_certificate((F(2),F(3),F(5),F(7)))
+    assert hankel['hankel_determinants']==(F(1),F(9),F(2025),F())
     short,long=approximate_hidden_mode_pair(F(1,1000))
     small_gap=abs(response_at(long,1)-response_at(short,1))
     assert F()<small_gap<F(1,1000000)
@@ -82,6 +85,8 @@ def main():
         "dark_connected_star_canonical_diagonal":[str(v) for v in dark['diagonal']],
         "dark_connected_star_canonical_link_squares":[str(v) for v in dark['offdiagonal_squared']],
         "dark_connected_star_physical_order":3,
+        "positive_chain_hankel_minor_sequence":[str(v) for v in hankel['hankel_determinants']],
+        "positive_chain_first_zero_hankel_order":hankel['first_zero_order'],
         "weak_extra_mode_frequency_1_exact_gap":str(small_gap),
         "weak_extra_mode_gap_below_one_millionth":True,
         "dark_mode_counterexample_preserved_in_tests":True,
