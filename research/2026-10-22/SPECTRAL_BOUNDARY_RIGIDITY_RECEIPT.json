@@ -70,6 +70,13 @@
     "9"
   ],
   "physical_observations_performed": false,
+  "positive_chain_first_zero_hankel_order": 4,
+  "positive_chain_hankel_minor_sequence": [
+    "1",
+    "9",
+    "2025",
+    "0"
+  ],
   "research": "SUCC_SPECTRAL_BOUNDARY_SOURCE_RIGIDITY_2026_10_22",
   "scope": "positive finite RC paths, fixed unit internal capacitances, exact Laplace DtN",
   "signed_Weil_positivity_proved": false,
@@ -78,7 +85,7 @@
     "3",
     "5"
   ],
-  "source_module_git_blob": "6f6bb718195d5419de23c3950d51b480581785a5",
+  "source_module_git_blob": "2c5a1548b2cd884e130e27d1206cbdbe7d6c16b1",
   "spectral_new_layer_first_return_moments": {
     "1": {
       "all_earlier_moments_equal": true,
@@ -96,7 +103,7 @@
       "first_different_moment": 6
     }
   },
-  "test_module_git_blob": "52d33219af483e4fe1c669567275fbc61b05ec4f",
+  "test_module_git_blob": "6c13623f95fe027a674b6749ae5358573952d3ad",
   "weak_extra_mode_frequency_1_exact_gap": "1/8012004",
   "weak_extra_mode_gap_below_one_millionth": true
 }
