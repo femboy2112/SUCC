@@ -76,6 +76,8 @@ class RepeatedRealisticObservationBudget(unittest.TestCase):
    with self.assertRaises(LearningSourceError):
     majority_failure_probability(F(1,4),m)
 
+if __name__=='__main__':unittest.main()
+
 class CompleteFiniteTableCalibration(unittest.TestCase):
  def test_finite_whole_source_table_noise_budget(self):
   from observational_succ.witt_carry_learning import calibrated_ring_table_budget
