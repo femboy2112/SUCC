@@ -127,7 +127,6 @@ class CarryHolonomyTests(unittest.TestCase):
                lambda:lifted_succ_loop(4,2,'mixed')):
    with self.assertRaises(LearningSourceError):call()
 
-
 class FactorialCofinalArithmeticLearner(unittest.TestCase):
  def test_factorial_quotient_lifts_are_all_legal_and_exhaustive(self):
   from observational_succ.witt_carry_learning import factorial_stage_modulus,factorial_source_children
