@@ -12,7 +12,8 @@ from observational_succ.reciprocal_succ_fucc import (
     finite_generator, finite_stationarity, finite_dirichlet_form,
     weighted_affine_diamond, mirror_affine_on_basis,
     pascal_prime_rank, direct_prime_rank, pascal_last_step,
-    gibbs_rank_nonprojective,
+    gibbs_rank_nonprojective, finite_reciprocal_boundary_defect,
+    finite_reciprocal_square_on_basis,
 )
 
 
@@ -205,6 +206,52 @@ class PascalPrimeMultisetTests(unittest.TestCase):
         with self.assertRaises(ReciprocalSourceError):oriented_rates(1,2,True)
         with self.assertRaises(ReciprocalSourceError):finite_dirichlet_form((1.,1),2,(2,),2)
         with self.assertRaises(ReciprocalSourceError):mirror_affine_on_basis(3,2,0,beta_even=3)
+
+
+class SharpReciprocalBoundaryTests(unittest.TestCase):
+    def test_rank_one_mixed_adjoint_cutoff_defect_for_every_basis(self):
+        for N in range(1,81):
+            for p in (2,3,5,7,11):
+                defect=finite_reciprocal_boundary_defect(N,p)
+                expected=(p*(N//p),N//p+1,Q(-1)) if N>=p else None
+                self.assertEqual(defect,expected)
+                for n in range(1,N+1):
+                    lhs,rhs=finite_reciprocal_square_on_basis(n,N,p)
+                    if defect is not None and n==defect[0]:
+                        self.assertIsNone(lhs)
+                        self.assertEqual(rhs,defect[1])
+                    else:
+                        self.assertEqual(lhs,rhs)
+
+    def test_sharp_boundary_operator_norm_one_but_strong_zero(self):
+        for p in (2,3,5):
+            for N in (p,2*p+1,7*p+2):
+                src,dst,c=finite_reciprocal_boundary_defect(N,p)
+                self.assertEqual(c,Q(-1))
+                self.assertGreaterEqual(src,1)
+                self.assertLessEqual(src,N)
+                self.assertLessEqual(dst,N)
+            for fixed in range(1,15):
+                for N in range(fixed+p,p*(fixed+3)):
+                    defect=finite_reciprocal_boundary_defect(N,p)
+                    self.assertTrue(defect is None or defect[0]!=fixed)
+
+    def test_wrong_phase_shift_does_not_have_same_rank_one_repair(self):
+        for p in (3,5,7):
+            for N in (3*p,4*p):
+                witness=p-1
+                self.assertIsNone(vstar(witness,p))
+                self.assertEqual(vstar(witness+1,p),1)
+                self.assertLess(witness+1,N)
+
+    def test_existing_pascal_cotransition_matches_two_prime_occupations(self):
+        from observational_succ.pascal_rotated_transport import backward_kernel
+        for n in range(1,15):
+            for k in range(n+1):
+                ours=pascal_last_step((n-k,k))
+                theirs=dict(backward_kernel(n,k))
+                self.assertEqual({alpha[1]:weight for alpha,weight in ours.items()},
+                                 theirs)
 
 
 if __name__=='__main__':unittest.main()
