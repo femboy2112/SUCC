@@ -1,0 +1,31 @@
+{
+  "arith_clock": "p=2,n=2, 2->3->6 versus 2->4->5->6",
+  "braid_complete_endpoint_states": 1,
+  "braid_complete_paths": 24,
+  "braid_independent_path_product": true,
+  "braid_pathmeasure_sha256": "4e5c733ced8f1cf1dcb6abeb642967e1863c2db89204a828d7e8040ac87726b0",
+  "braid_paths_source_identical": true,
+  "braid_probability": "1",
+  "five_events_required_source_order_bits": 7,
+  "four_events_required_source_order_bits": 5,
+  "future_safe_quotient_splits_hidden_material": true,
+  "material_future_probe_effective_conductances": [
+    "7/6",
+    "49/41"
+  ],
+  "material_hidden_edge_current_response_equal": true,
+  "material_two_order_endpoint_count": 1,
+  "material_two_order_nonexchangeable": true,
+  "material_two_order_weights": {
+    "a,b": "7/11",
+    "b,a": "4/11"
+  },
+  "scope": "exact finite synthetic source/finite passive DtN, not intrinsic prime physics, not RH",
+  "source_branch_parent": "research/history-dtn-succ-fucc-2026-10-22",
+  "source_commit_parent": "391c304e768d073ae747459d279e14d5357092e5",
+  "source_hash_sha256": {
+    "observational_succ/bidirectional_source_histories.py": "5b18007660a6e579a88352b5c1af09179bb9b4253635bc66d1f445659b1bdcfd",
+    "scripts/bidirectional_source_histories_probe.py": "9dc70ef4cd547e9a89a7496fd4494ccd16cdc953e91824943fa14aa813c2413a",
+    "tests/test_bidirectional_source_histories.py": "d5c49bce49742c637bbbe3d6f8a72e1cef5a1a9791bc76787b07656c63289806"
+  }
+}
