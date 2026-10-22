@@ -97,7 +97,6 @@ class CompleteFiniteTableCalibration(unittest.TestCase):
   with self.assertRaises(LearningSourceError):calibrated_ring_table_budget(2,3,F(1,2))
   with self.assertRaises(LearningSourceError):calibrated_ring_table_budget(2,1,F(1,4),1)
 
-
 class CarryHolonomyTests(unittest.TestCase):
  def test_each_coarse_loop_has_graded_nontrivial_mixed_lift(self):
   from observational_succ.witt_carry_learning import lifted_succ_loop
