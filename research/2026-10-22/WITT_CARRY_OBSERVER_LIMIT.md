@@ -145,6 +145,29 @@ Independence **across stages** is not needed. Summability also implies by Borel�
 
 The software computes exact rational binomial tails, and its example budget for p=2, \(\epsilon=1/4,\delta=1/8\), stages k=1..4 needs **21, 33, 47, 61** repetitions per table cell respectively. These are synthetic calibration targets, NOT measured sensor error rates. No physical instrument was accessed.
 
+## LCW-09 — the lifted SUCC loop measures carry holonomy at *every* new rung
+
+The nontrivial extension class has a source-relative path interpretation. A complete base-level cycle of \(p\) successive SUCC actions closes in \(\mathbb Z/p\), but its lift closes **only at that coarse level** in \(\mathbb Z/p^2\): it lands at \(p\), one step into the new digit. This is an **algebraic loop holonomy**, not an electromagnetic field phase or physical curvature.
+
+More generally the exact non-split extension
+\[
+0\longrightarrow \mathbb Z/p\mathbb Z
+\longrightarrow \mathbb Z/p^k\mathbb Z
+\longrightarrow \mathbb Z/p^{k-1}\mathbb Z
+\longrightarrow0
+\]
+has the explicit source-labelled holonomy
+\[
+\boxed{S^{p^{k-1}}(0)=p^{k-1}\ne0\pmod{p^k},
+\qquad S^{p^{k-1}}(0)=0\pmod{p^{k-1}}.}
+\]
+
+**Proof:** on mixed-characteristic ring \(R_k\), \(S(x)=x+1\), so iterating \(p^{k-1}\) times adds \(p^{k-1}\). Its lower-level reduction vanishes while its top digit is exactly one. The additive extension is non-split: any lift of a generator of the base group has order \(p^k\), so cannot provide an additive section with the base's order \(p^{k-1}\). In equal characteristic \(D_k=\mathbb F_p[t]/(t^k)\), the marked successor is translation by 1 and \(S^p=I\) **at every k**; hence the coarse loop has trivial lift. The higher-rung holonomy is fully predicted from a sourced transition rather than manufactured by decorating a geometric loop.
+
+This supplies a **cofinal sequence of fresh source checks**: rank k tests how a previously closed \(p^{k-1}\)-step clock loop lifts into newly visible structure. Each finite test is feasible in principle (though resource cost grows); their indefinitely many correct, compatible outcomes reconstruct the mixed characteristic tower *provided the global source and instrument assumptions are independently justified*. For a hidden extra-prime or changed extension after finite horizon, the first affected rank falsifies the hypothesis. An observer lacking these SUCC-action probes can traverse the identical geometry forever and learn no ring-characteristic difference.
+
+Independent exact tests calibrate 16 selected mixed/equal lifted loops and negative source/type controls. This is a new-to-SUCC representation of classical group-extension arithmetic, not an academic novelty or physical gauge-field result.
+
 ## LCW-07 — the completed source need not be an original realized integer
 
 Define the p-adic point
@@ -169,4 +192,4 @@ Similarly, a delayed counterfeit inverse tower with moduli \(p^k\) through stage
 
 ### Provenance
 
-Classical Witt-vector and p-differential literature (Dupuy, Katz, Rabinoff & Zureick-Brown, https://arxiv.org/abs/1712.09487), Gold's original learning-in-the-limit paper (1967, https://www.cs.famaf.unc.edu.ar/~gabriel/files/gold67limit.pdf), and standard pro-p inverse limits and Bruhat–Tits theory. Internal SUCC `docs/OBSERVER_PROOF_ACCESS.md`, `observational_succ/source_field_inverse_limits.py`, `observational_succ/field_limit_compactness.py`, and the source-pinned OPIG PR #238. The 34 finite tests and source-hash-pinned receipt are in this research branch. Independent scholarly novelty has not been investigated sufficiently to claim any.
+Classical Witt-vector and p-differential literature (Dupuy, Katz, Rabinoff & Zureick-Brown, https://arxiv.org/abs/1712.09487), Gold's original learning-in-the-limit paper (1967, https://www.cs.famaf.unc.edu.ar/~gabriel/files/gold67limit.pdf), and standard pro-p inverse limits and Bruhat–Tits theory. Internal SUCC `docs/OBSERVER_PROOF_ACCESS.md`, `observational_succ/source_field_inverse_limits.py`, `observational_succ/field_limit_compactness.py`, and the source-pinned OPIG PR #238. The 37 finite tests and source-hash-pinned receipt are in this research branch. Independent scholarly novelty has not been investigated sufficiently to claim any.
