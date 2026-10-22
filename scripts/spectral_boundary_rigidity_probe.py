@@ -13,6 +13,7 @@ from observational_succ.spectral_boundary_rigidity import (
     chain_response, response_at, round_trip_new_depth, chain_moments,
     interpolate_response, recover_positive_chain,
     finite_response_identity, approximate_hidden_mode_pair,
+    recover_operational_jacobi, rational_response,
 )
 from observational_succ.boundary_realization_selection import (
     FiniteNetwork, boundary_response,
@@ -49,6 +50,11 @@ def main():
             "all_earlier_moments_equal":r["moments_before"][:2*r["depth"]]==
                                         r["moments_after"][:2*r["depth"]],
         }
+    jacobi=recover_operational_jacobi(resp)
+    assert jacobi['diagonal']==(F(5),F(8)) and jacobi['offdiagonal_squared']==(F(9),)
+    dark_resp=rational_response((F(2),F(4),F(1)),(F(4),F(5),F(1)))
+    dark=recover_operational_jacobi(dark_resp)
+    assert dark['diagonal']==(F(3),F(2)) and dark['offdiagonal_squared']==(F(2),)
     short,long=approximate_hidden_mode_pair(F(1,1000))
     small_gap=abs(response_at(long,1)-response_at(short,1))
     assert F()<small_gap<F(1,1000000)
@@ -70,6 +76,12 @@ def main():
         "complete_response_recovered_from_seven_samples":True,
         "source_conductances_reconstructed":[str(x) for x in recover_positive_chain(interpolated)],
         "spectral_new_layer_first_return_moments":delays,
+        "operational_jacobi_example_diagonal":[str(v) for v in jacobi['diagonal']],
+        "operational_jacobi_example_link_squares":[str(v) for v in jacobi['offdiagonal_squared']],
+        "dark_connected_star_minimal_order":dark['minimal_observable_order'],
+        "dark_connected_star_canonical_diagonal":[str(v) for v in dark['diagonal']],
+        "dark_connected_star_canonical_link_squares":[str(v) for v in dark['offdiagonal_squared']],
+        "dark_connected_star_physical_order":3,
         "weak_extra_mode_frequency_1_exact_gap":str(small_gap),
         "weak_extra_mode_gap_below_one_millionth":True,
         "dark_mode_counterexample_preserved_in_tests":True,
