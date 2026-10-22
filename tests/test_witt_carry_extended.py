@@ -126,3 +126,52 @@ class CarryHolonomyTests(unittest.TestCase):
                lambda:lifted_succ_loop(3,3,'LORE'),
                lambda:lifted_succ_loop(4,2,'mixed')):
    with self.assertRaises(LearningSourceError):call()
+
+
+class FactorialCofinalArithmeticLearner(unittest.TestCase):
+ def test_factorial_quotient_lifts_are_all_legal_and_exhaustive(self):
+  from observational_succ.witt_carry_learning import factorial_stage_modulus,factorial_source_children
+  for k in range(1,8):
+   N=factorial_stage_modulus(k)
+   for r in range(N):
+    kids=factorial_source_children(k,r)
+    self.assertEqual(len(kids),k+1)
+    self.assertEqual({x%N for x in kids},{r})
+    self.assertEqual(len(set(kids)),k+1)
+    self.assertTrue(all(0<=x<factorial_stage_modulus(k+1) for x in kids))
+
+ def test_factorial_prime_precision_is_exact_legendre_law(self):
+  from observational_succ.witt_carry_learning import factorial_prime_precision, factorial_stage_modulus
+  for k in range(1,16):
+   N=factorial_stage_modulus(k)
+   ps=factorial_prime_precision(k)
+   self.assertEqual(N,__import__('math').prod(p**v for p,v in ps.items()))
+   for p,v in ps.items():
+    t=N;measured=0
+    while t%p==0:
+     measured+=1;t//=p
+    self.assertEqual(measured,v)
+
+ def test_one_factorial_chain_is_cofinal_over_all_finite_moduli(self):
+  from observational_succ.witt_carry_learning import factorial_cofinal_witness,factorial_stage_modulus,factorial_source_projection
+  for m in range(1,201):
+   k=factorial_cofinal_witness(m)['stage']
+   self.assertEqual(factorial_stage_modulus(k)%m,0)
+   for n in (0,1,17,1000,-27):
+    self.assertEqual(factorial_source_projection(n,k)%m,n%m)
+
+ def test_factorial_clock_topology_alone_cannot_fix_ring_characteristic(self):
+  from observational_succ.witt_carry_learning import factorial_counterfeit_characteristics
+  for k in range(1,11):
+   d=factorial_counterfeit_characteristics(k)
+   self.assertEqual(d['cardinality_of_both'],__import__('math').factorial(k))
+   self.assertTrue(d['same_unlabelled_factorial_tree'])
+   self.assertEqual(d['source_addition_distinguishes'],k>=4)
+   self.assertLessEqual(d['equal_local_product_characteristic'],d['mixed_ring_characteristic'])
+
+ def test_global_cofinal_clock_not_a_physical_supertask(self):
+  from observational_succ.witt_carry_learning import factorial_cofinal_witness
+  for m in (4,9,25,49,64,128):
+   d=factorial_cofinal_witness(m)
+   self.assertFalse(d['universal_finite_coverage_proved'])
+   self.assertFalse(d['all_levels_physically_executed'])
