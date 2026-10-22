@@ -1,6 +1,8 @@
 {
   "divided_power_rank_source_cases": 48,
   "exact_finite_generator_checks": 12,
+  "factorial_gauge_inverse_unbounded_claim": true,
+  "factorial_gauge_source_cases": 456,
   "flat_weighted_diamond_cases": 420,
   "graded_boundary_rank_t_law": true,
   "graded_cutoff_basis_checks": 60060,
@@ -19,9 +21,9 @@
   "RH_proved": false,
   "signed_Weil_positivity_proved": false,
   "source": "positive integers, genuine rational primes, zeta Gibbs beta>1",
-  "source_module_git_blob": "cbadeaa42e36188af66277d8f9cf764d27596e52",
+  "source_module_git_blob": "05e5e5179de2fa379e0fd577eb4be72f2eb160f5",
   "state_dependent_mirror_anti_homomorphism": true,
   "status": "PAPER_PROOF_AND_EXACT_FINITE_CALIBRATION_NOT_LEAN_CERTIFIED",
-  "tests_git_blob": "c73a735f155c674dd815a198e4bdbe6ed6b4030e",
+  "tests_git_blob": "19979f3d3f4fe2608f26fc0f460c664448453a4c",
   "unweighted_shift_p_clock_with_extra_phase_required": true
 }
