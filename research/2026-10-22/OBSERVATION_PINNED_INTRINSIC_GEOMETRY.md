@@ -87,6 +87,27 @@ A genuine local field with residue field F_{p^f} instead has p^{f−1} such p-cy
 
 **Crucial second-level counterexample:** Z/p²Z and F_p[t]/(t²) both have p² elements and reduce to the same F_p first level. Their respective complete local fields Q_p and F_p((t)) therefore yield identical first-shell degree p+1. But p·1 is nonzero in Z/p²Z and zero in F_p[t]/(t²): multiplication by p has image size p versus 1. This held-out second-level observable splits these two models, rather than recycling the observation that selected p.
 
+
+## OPIG-06 — SUCC uniquely fixes Haar measure; FUCC has an exact one-digit Radon–Nikodym defect
+
+There is a second, **measure-theoretic rigidity theorem**, provided stationary normalized probability is an independently declared source requirement. Let \(\mu\) be a Borel probability measure on the full compact ring \(\mathbb Z_p\) satisfying \((S)_*\mu=\mu\) for one-step translation \(S:x\mapsto x+1\). Its pushforward to every finite quotient \(\mathbb Z/p^k\mathbb Z\) is invariant under one transitive \(p^k\)-cycle; hence each residue has probability exactly \(p^{-k}\). Cylinder sets generate the Borel sigma algebra, so **\(\mu\) is uniquely the normalized Haar measure**. Existence is the standard translation-invariant Haar probability measure. Thus an invariant source probability can be recovered from dynamics rather than freely fitted; physical stationarity of the actual process is still an empirical, falsifiable assumption.
+
+Multiplication by \(p\) is **not Haar-preserving**. Its pushforward has the exact density
+
+\[
+\boxed{\frac{d(V_p)_*\mu}{d\mu}(x)=p\,\mathbf1_{p\mathbb Z_p}(x).}
+\]
+
+Proof: multiplication by \(p\) carries \(\mathbb Z_p\) homeomorphically onto the clopen subgroup \(p\mathbb Z_p\), of Haar mass \(1/p\), and preserves the relative normalized Haar law there. In contrast, multiplication by every \(q\) coprime to \(p\) is a Haar-preserving automorphism. This reconciles two directions **with a declared measure transport**, rather than falsely imposing simultaneous deterministic measure preservation under both.
+
+At finite level \(k\), the uniform random residue has Shannon entropy \(k\log p\). Multiplication by \(p^t\) gives a uniform distribution on \(p^{k-\min(t,k)}\) attainable residues, with entropy \((k-\min(t,k))\log p\). The precisely observed finite-horizon information loss is therefore
+
+\[
+\boxed{\Delta H_k=\min(t,k)\log p.}
+\]
+
+A single FUCC-\(p\) step loses **one digit, \(\log p\)**, on every finite \(k\ge1\) quotient. Yet multiplication by \(p\) is **injective on the full \(\mathbb Z_p\)**; it has a continuous inverse **on its image**. The information loss is due to truncation of the highest recorded digit, not destruction of a source distinction in the completed carrier. This is a direct, source-derived explanation of the moving-boundary behavior in reciprocal SUCC/FUCC PR #236. The exact suite includes separate finite Haar-stationarity, p-power pushforward and wrong-nonuniformity controls. The Haar measure on \(\mathbb Z_p\) and the zeta Gibbs measure \(n^{-\beta}/\zeta(\beta)\) on positive integers are **different** measures on different carriers and must not be conflated.
+
 ## 6. Why no single finite observation proves global truth
 
 **Finite-horizon counterfeit.** For any fixed measured depth K, choose a different prime q and the lawful cyclic quotient orders m_k=p^k for k≤K, and m_k=p^k q for k>K. Every source readout through K matches the rigid p-power tower exactly, and the compatible reductions are legal, but at K+1 a new branch factor appears. The strict p-power-family hypothesis is what rules it out—not the observation alone.
