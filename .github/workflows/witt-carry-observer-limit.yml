@@ -35,7 +35,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Run 34 source, limit, dual shadow and sensor hostile tests
+      - name: Run 37 source, limit, lifted holonomy and sensor hostile tests
         run: python -Werror -m unittest discover -s tests -p 'test_witt_carry_*.py' -v
       - name: Replay exact finite oracles and authenticate tested source blobs
         run: |
@@ -51,6 +51,7 @@ jobs:
           assert not actual['RH_proved']
           assert not actual['gravitational_ER_EPR_proved']
           assert actual['carry_cocycle_exact_instances']==503
+          assert actual['graded_lifted_succ_holonomy_tests']==16
           assert actual['whole_tree_digit_isometry_exact_instances']==23210
           assert actual['independent_finite_ring_operation_cells']==1540
           for key,rel in (
