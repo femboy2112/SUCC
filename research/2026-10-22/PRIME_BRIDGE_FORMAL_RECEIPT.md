@@ -3,7 +3,7 @@
 Date: 2026-10-22. Parent baseline: `b116841f12b41aaf7600da39bbb40577f25b6295`.
 Branch: `research/prime-bridge-2026-10-22`.
 
-## Current status: UNVERIFIED until the actual kernel workflow passes
+## Current status: LEAN-KERNEL VERIFIED; formal authority admission not installed
 
 The finite theorem source is `formal/PrimeBridge.lean`. It imports only
 `Std.Tactic` from pinned Lean 4.14.0. It contains no proof placeholders,
@@ -11,11 +11,27 @@ custom axioms, native-decision shortcuts, or analytical claims. The validator
 exports each actual theorem type and its transitive axiom dependencies using
 SUCC's existing `formal/kernel_audit/ExportCommand.lean`.
 
-The source is **not yet kernel-certified merely because it has been written**.
-The dedicated `Prime Bridge finite kernel certificates` workflow checks it with
-an untouched official compiler on a hosted runner. A successful source-bound
-record remains `KERNEL_CHECKED_UNADMITTED`; it does not alter the trusted formal
-catalogue or claim SUCC Level C admission.
+The dedicated `Prime Bridge finite kernel certificates` workflow **passed** at
+commit `73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf`, push run
+[39734454757](https://github.com/femboy2112/SUCC/actions/runs/39734454757),
+job `119676779117`. All eleven actual theorem types were exported, all axiom
+dependencies were checked, and all three negative controls were rejected.
+The untouched official Lean 4.14.0 archive passed the pinned SHA256 gate.
+
+The downloaded artifact `12406501833` has ZIP SHA256
+`d3d60bce46593b8f234c8c7e525928d211288845c6b81830e2b607ba9292221b`.
+Its exact sources, log hashes and theorem-expression hashes were checked against
+the local integrated source, and all matched. Source SHA256:
+`03a48ee884b65cf90ef65fa87d34cb4456aad8e1f3066c540838c68a1be5871f`.
+Raw theorem types, axioms, positive/negative outputs and the machine receipt are
+in `prime_bridge_receipts/formal_73ecf864/`.
+
+The source-bound record remains `KERNEL_CHECKED_UNADMITTED`; it does not alter
+the trusted formal catalogue or claim SUCC Level C admission. Eight declarations
+use only standard `propext`; the braid counterexample, abstract commutation
+obstruction and conditional mirror-word theorem have empty axiom sets. No
+`sorryAx`, custom axiom, native-decision axiom, `Classical.choice`, or
+`Quot.sound` appears in the eleven exported dependency lists.
 
 ## The eleven precise finite/conditional targets
 
@@ -107,8 +123,9 @@ The validator deletes stale success metadata before running. It requires:
 
 The JSON records source/checker/workflow hashes, Git commit, actual compiler
 version, theorem expression hashes, and log hashes. The hosted workflow also
-verifies the official compiler archive before execution. An actual passing
-workflow and its logs must be inspected before changing the status above.
+verifies the official compiler archive before execution. The passing push run and downloaded logs were inspected before the status
+above was promoted. The local startup failure remains an accurate separate
+observation about this container.
 
 ## Next formal boundary
 

@@ -69,7 +69,7 @@ not mathematical truth.
 | Boundary contacts → finite bulk | Complete labeled determinant contact matrix on P¹(Z/p^R) | Rooted unit-edge BT ball, reconstructed uniquely | Entanglement weights do not supply this matrix |
 | Finite arithmetic source → quantum boundary | K_p=span{e_1,e_p,e_p²}, I_p=W_fJ_p | Isometry and all B(K_p) operators on authorized regions | Compressed V_p loses e_p²→e_p³; no finite invariant source for full V_p |
 | Boundary region → logical source | Pair permutation decoder, partial trace of fixed ancilla | CPTP recovery and *-preserving intertwining | Bare non-*-preserving intertwining is a false positive |
-| Tree radius R→R+1 | Actual lattice children and copy isometry C|x>=|xx> | Encoding square and isometry | Entropy/min-cut equality need not survive |
+| T₂ radius R→R+1 | Actual binary nonroot lattice children and copy isometry C|x>=|xx> | Encoding square and isometry | Entropy/min-cut equality need not survive |
 | Local charts → global observables | Same-source CRT, then C(Zhat) | Compatible finite residue/phase laws | No automatic diagonal rational realization or Archimedean coordinate |
 
 Each proof is in the linked dossiers; each arrow has a negative control.

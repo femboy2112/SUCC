@@ -518,3 +518,50 @@ Bost--Connes faithfulness or KMS classification follows from this audit.
   factor, before calling any local product an arithmetic/geometric duality.
 - No argument here identifies the signed completed Weil form, proves RH, or
   verifies gravitational field equations.
+
+## Final integration gate: inherited test environment and hosted formal evidence
+
+The first integrated full-suite run found an existing subprocess import-path
+failure. A **clean detached worktree** at baseline
+`b116841f12b41aaf7600da39bbb40577f25b6295` independently reproduced it. The
+same narrow test was run at current commit
+`73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf` under the same two environments:
+
+```text
+env -u PYTHONPATH python -m unittest \
+ tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count -v
+  baseline: exit 1; current: exit 1
+
+PYTHONPATH=. python -m unittest \
+ tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count -v
+  baseline: exit 0; current: exit 0
+```
+
+Directly executing `scripts/meta_choice_descent_probe.py` with `PYTHONPATH`
+unset gives `ModuleNotFoundError: No module named 'observational_succ'` at
+both commits. The test, script, and implementation module are byte-identical
+across these two revisions. No historical source was modified. Exact commands,
+working directories, hashes and six raw logs are recorded in
+[META_CHOICE_BASELINE_CONTROL.json](prime_bridge_receipts/META_CHOICE_BASELINE_CONTROL.json).
+This identifies the observed failure as inherited environment configuration,
+not a Prime Bridge source regression. Any subsequent full-suite result belongs
+to its separately recorded root receipt.
+
+**Formal status update, superseding the earlier source-only audit scope:**
+the dedicated hosted run at `73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf`
+produced eleven kernel-checked finite/conditional theorem exports. The auditor
+inspected the downloaded `formal_73ecf864` receipt and raw logs, independently
+recomputed all five source hashes, seven log hashes and eleven actual exported
+type-expression hashes, and checked the three negative-control diagnostics.
+Eight declarations depend only on standard `propext`; three have empty axiom
+lists. Their scope remains finite code coefficients, conditional word transport
+and abstract commutation. The complex-Hilbert linear extension and analytic
+TFD theorems remain paper proofs. The repository's formal-authority catalogue
+admission was not installed. Local compiler startup still failed for the
+documented environment reason; hosted success does not rewrite that history.
+
+The final OA-CRIT proof was rechecked after its addition: the monomial product
+phase, uniform Abel-summation estimate, dense entire-algebra KMS passage, and
+the cylinder-mass proof excluding normal extensions are valid under the stated
+concrete-algebra hypotheses. The final weighted-stability proof was also
+rechecked; no additional correction was required.
