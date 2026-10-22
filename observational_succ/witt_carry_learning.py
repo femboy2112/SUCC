@@ -405,3 +405,71 @@ def lifted_succ_loop(p,k,model):
     return {'steps':steps,'coarse_return':value[:-1]==(0,)*(k-1),
             'fine_digits':value,'fine_value':integer_of(value,p),
             'fine_holonomy_nontrivial':any(value)}
+
+
+def factorial_stage_modulus(k):
+    """Cofinal clock modulus k! (k>=1), not a sampled physical infinity."""
+    _nat(k,1)
+    if k>256:raise LearningSourceError('bounded complete factorial clock oracle')
+    return factorial(k)
+
+
+def factorial_prime_precision(k):
+    """Every genuine p-place eventually gains arbitrary depth v_p(k!)."""
+    N=factorial_stage_modulus(k)
+    out={}
+    for p in range(2,k+1):
+        if not genuine_prime(p):continue
+        term=p;v=0
+        while term<=k:
+            v+=k//term
+            term*=p
+        out[p]=v
+        assert N%p**v==0
+    return out
+
+
+def factorial_source_children(k,r):
+    """Every clock residue mod k! has k+1 source-preserving lifts mod (k+1)!."""
+    N=factorial_stage_modulus(k)
+    _nat(r)
+    if r>=N:raise LearningSourceError('residue outside cofinal clock stage')
+    if k>=18:raise LearningSourceError('next factorial stage outside test budget')
+    return tuple(r+j*N for j in range(k+1))
+
+
+def factorial_source_projection(n,k):
+    """Source integer may be signed; proper cyclic quotient map is n mod k!."""
+    if type(n) is not int:raise LearningSourceError('original integer source required')
+    return n%factorial_stage_modulus(k)
+
+
+def factorial_cofinal_witness(modulus):
+    """Find a finite k whose k!-clock observes any requested Z/mZ quotient."""
+    _nat(modulus,1)
+    if modulus>1000000:raise LearningSourceError('finite oracle modulus cap')
+    for k in range(1,257):
+        if factorial(k)%modulus==0:
+            return {'requested_modulus':modulus,'stage':k,
+                    'universal_finite_coverage_proved':False,
+                    'all_levels_physically_executed':False}
+    raise LearningSourceError('finite resource exhausted; universal cofinality is paper proof')
+
+
+def factorial_counterfeit_characteristics(k):
+    """Same cardinal k!, distinct arithmetic laws: mixed CRT versus split dual local factors.
+
+    The equal-characteristic local factor at p is F_p[t]/t^v_p(k!).
+    Their product has characteristic product of distinct p, not k! once
+    some p^2 divides k!; the cardinal/fiber/metric signatures still match.
+    """
+    N=factorial_stage_modulus(k)
+    ps=factorial_prime_precision(k)
+    rad=1
+    for p in ps:rad*=p
+    assert N==__import__('math').prod(p**v for p,v in ps.items())
+    return {'cardinality_of_both':N,'mixed_ring_characteristic':N,
+            'equal_local_product_characteristic':rad,
+            'source_addition_distinguishes':N!=rad,
+            'same_unlabelled_factorial_tree':True,
+            'place_precision':ps}
