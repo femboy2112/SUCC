@@ -1,0 +1,73 @@
+{
+  "RH_proved": false,
+  "actual_physical_experiment_performed": false,
+  "assumptions": "faithful oriented source; full compatible cyclic ring p-power quotient tower; rank-two projective lift for BT geometry",
+  "distinct_complete_sources_same_first_shell": {
+    "2": {
+      "first_shell_equivalent": true,
+      "second_level_multiplier_image_counts": [
+        2,
+        1
+      ]
+    },
+    "3": {
+      "first_shell_equivalent": true,
+      "second_level_multiplier_image_counts": [
+        3,
+        1
+      ]
+    },
+    "5": {
+      "first_shell_equivalent": true,
+      "second_level_multiplier_image_counts": [
+        5,
+        1
+      ]
+    }
+  },
+  "exact_tests_git_blob": "8f703ec49823e436030180308aea3489c75d93a6",
+  "finite_horizon_tower_counterexamples": 12,
+  "finite_source_affine_naturality_cases": 1476,
+  "first_shell_fingerprints": {
+    "2": {
+      "Vp_root_displacement": 1,
+      "degree": 3,
+      "succ_fixed_point_count": 1,
+      "succ_nonfixed_cycle": 2
+    },
+    "3": {
+      "Vp_root_displacement": 1,
+      "degree": 4,
+      "succ_fixed_point_count": 1,
+      "succ_nonfixed_cycle": 3
+    },
+    "5": {
+      "Vp_root_displacement": 1,
+      "degree": 6,
+      "succ_fixed_point_count": 1,
+      "succ_nonfixed_cycle": 5
+    },
+    "7": {
+      "Vp_root_displacement": 1,
+      "degree": 8,
+      "succ_fixed_point_count": 1,
+      "succ_nonfixed_cycle": 7
+    }
+  },
+  "geometry_forced_conditionally": "Zp coset tree and PGL2(Qp) lattice tree (rank two supplied) with source-equivariant affine action",
+  "gravitational_ER_EPR_proved": false,
+  "hidden_state_alias_counterexample": true,
+  "independent_multiplier_image_tests": 45,
+  "physical_global_truth_from_one_finite_observation": false,
+  "physical_spacetime_identified": false,
+  "research": "OPIG_OBSERVATION_PINNED_GEOMETRY_2026_10_22",
+  "signed_Weil_positivity_proved": false,
+  "source_module_git_blob": "0fdc7f1fa18acb44983ba60752c160cd62b73292",
+  "status": "CLASSICAL_PAPER_THEOREMS_EXACT_FINITE_CONTROLS_NOT_LEAN",
+  "synthetic_cycle_candidate_selections": [
+    2,
+    3,
+    5,
+    7
+  ]
+}
