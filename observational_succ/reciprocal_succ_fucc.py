@@ -285,3 +285,25 @@ def finite_reciprocal_square_on_basis(n,N,p):
     left=((n+p)//p if (n+p)<=N and (n+p)%p==0 else None)
     right=(n//p+1 if n%p==0 and (n//p+1)<=N else None)
     return (left,right)
+
+
+def finite_reciprocal_power_square(n,N,p,t):
+    """Separate cutoff paths Vp_N^* S_N^(p*t) and S_N^t Vp_N^*."""
+    integer(n,1); integer(N,1); genuine_prime(p); integer(t,1)
+    if n>N:
+        raise ReciprocalSourceError("basis source outside requested cutoff")
+    lhs=((n+p*t)//p if (n+p*t)<=N and (n+p*t)%p==0 else None)
+    rhs=(n//p+t if n%p==0 and (n//p+t)<=N else None)
+    return (lhs,rhs)
+
+
+def finite_reciprocal_boundary_hierarchy(N,p,t):
+    """Exact rank-t-or-less horizon correction, each triple (input,output,-1).
+
+    Vp_N^* S_N^(p*t) - S_N^t Vp_N^* = sum of these rank-one
+    coefficients. As N grows with fixed t, the rank is exactly t.
+    """
+    integer(N,1); genuine_prime(p); integer(t,1)
+    q=N//p
+    return tuple((p*j,j+t,Q(-1))
+                 for j in range(max(1,q-t+1),min(q,N-t)+1))
