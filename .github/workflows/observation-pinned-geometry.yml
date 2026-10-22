@@ -10,6 +10,8 @@ on:
       - 'scripts/observation_pinned_geometry_probe.py'
       - 'scripts/physical_clock_observation_contract.py'
       - 'tests/test_physical_clock_observation_contract.py'
+      - 'observational_succ/relative_phase_source_couplings.py'
+      - 'tests/test_relative_phase_source_couplings.py'
       - 'research/2026-10-22/OBSERVATION_PINNED_GEOMETRY_RECEIPT.json'
       - '.github/workflows/observation-pinned-geometry.yml'
   pull_request:
@@ -19,6 +21,8 @@ on:
       - 'scripts/observation_pinned_geometry_probe.py'
       - 'scripts/physical_clock_observation_contract.py'
       - 'tests/test_physical_clock_observation_contract.py'
+      - 'observational_succ/relative_phase_source_couplings.py'
+      - 'tests/test_relative_phase_source_couplings.py'
       - 'research/2026-10-22/OBSERVATION_PINNED_GEOMETRY_RECEIPT.json'
       - '.github/workflows/observation-pinned-geometry.yml'
 
@@ -41,6 +45,8 @@ jobs:
         run: python -Werror -m unittest discover -s tests -p test_observation_pinned_geometry.py -v
       - name: Test observer-source real-world transcript protocol with synthetic negative cases
         run: python -Werror -m unittest discover -s tests -p test_physical_clock_observation_contract.py -v
+      - name: Verify source-symmetric EPR coupling nonuniqueness and next holdout
+        run: python -Werror -m unittest discover -s tests -p test_relative_phase_source_couplings.py -v
       - name: Recompute immutable source-bound finite receipt
         run: |
           PYTHONPATH=. python scripts/observation_pinned_geometry_probe.py > "$RUNNER_TEMP/opig.json"
