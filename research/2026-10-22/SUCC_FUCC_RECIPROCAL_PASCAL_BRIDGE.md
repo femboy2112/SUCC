@@ -171,6 +171,36 @@ w_p(\alpha)=(\alpha_p+1)\exp[-(\Phi(\alpha+e_p)-\Phi(\alpha))/2]
 
 still commute around elementary diamonds by telescoping, but convergence, source realization and physical interpretation are separate obligations. Flatness is not a proof of entropy geometry.
 
+## Theorem RSFP-11: the factorial gauge is the exact Pascal-to-FUCC intertwiner
+
+The current-occupation factor \(\alpha_p+1\) in the Pascal creator is **not a decorative normalization**. It precisely identifies the different presentation of the same prime-multiplication source action.
+
+Define on the occupation basis the bounded injective diagonal gauge
+
+\[
+D|\alpha\rangle=\frac{1}{\prod_p\alpha_p!}|\alpha\rangle.
+\]
+
+With \(C_p|\alpha\rangle=(\alpha_p+1)\lambda_p|\alpha+e_p\rangle\), \(\lambda_p=p^{-\beta/2}\), and ordinary (unweighted) FUCC \(V_p|\alpha\rangle=|\alpha+e_p\rangle\), one has on the finite-support algebraic core:
+
+\[
+\boxed{D\,C_p=\lambda_p V_p\,D.}
+\]
+
+**Proof.** The target-basis coefficient on the left is
+\((\alpha_p+1)\lambda_p/\big((\alpha_p+1)!\prod_{q\ne p}\alpha_q!\big)\),
+which equals \(\lambda_p/\prod_q\alpha_q!\), the right coefficient. QED.
+
+Thus the prime-Pascal divided-power presentation and ordinary FUCC are *algebraically intertwined*, exactly preserving all finite source compositions and their prime-label provenance. For the vacuum-defined exponentials the same equation transports the full formal power series term by term.
+
+**But this is not a bounded Hilbert-space similarity.** The gauge \(D\) has norm one and dense range, but
+\[
+\|D|k e_p\rangle\|=1/k!\longrightarrow0,
+\]
+so \(D^{-1}\) is unbounded on its range. It changes the Hilbert-space norm and generally changes the normalized state distribution. One must not identify \(D\Psi_\beta\) with the original zeta Gibbs state without its changed norm. This is a precise source-map boundary: factorial transport is reversible algebraically on the finite source core, but not uniformly invertible in the unweighted Hilbert topology.
+
+In source-relative terms, one forward creator acts locally on a rank with its current multiplicity; the other looks forward in the ordinary prime-multiplication presentation while its backward inverse is only partially defined. The factorial gauge is the declared transport that makes their laws agree, and the unbounded inverse is the exact mathematical price of switching frames. An independent exact oracle checks 456 occupation/prime/exponent instances and separately verifies factorial inverse growth.
+
 ## Theorem RSFP-06: cotransition/projectivity counterexample
 
 For **one endpoint-conditioned equally weighted ensemble of ordered histories** ending at occupation `α` of rank `k`, Pascal backward removal gives
