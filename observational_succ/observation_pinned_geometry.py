@@ -296,3 +296,43 @@ def equal_first_shell_distinct_ring_witness(p):
         "first_shell_cannot_distinguish":True,
         "second_level_source_probe_distinguishes":True,
     }
+
+
+def finite_haar_phase_distribution(p,k):
+    """Unique probability fixed by the transitive SUCC cycle on Z/p^k."""
+    _p(p);_level(k)
+    if p**k>10000:
+        raise ObservationContractError("finite exact Haar distribution budget")
+    return tuple(Fraction(1,p**k) for _ in range(p**k))
+
+
+def finite_fucc_pushforward(p,k,m):
+    """Exact law of m*X mod p^k when X is uniform; no float entropy."""
+    _p(p);_level(k);_int(m,1)
+    if p**k>10000:
+        raise ObservationContractError("finite exact pushforward budget")
+    N=p**k
+    hist=[0]*N
+    for x in range(N):
+        hist[(m*x)%N]+=1
+    return tuple(Fraction(n,N) for n in hist)
+
+
+def fucc_haar_digit_defect(p,k,m):
+    """Finite Shannon entropy drops by exactly digits_lost*log(p).
+
+    For image size p^(k-min(v_p(m),k)), weights uniform on image,
+    the source Shannon entropy is k log p and target is (k-t) log p.
+    No assertion about a finite entropy of the infinite Z_p measure.
+    """
+    _p(p);_level(k);_int(m,1)
+    t=0
+    while m%p==0:
+        t+=1
+        m//=p
+    t=min(t,k)
+    return {"source_entropy_in_log_p_units":k,
+            "target_entropy_in_log_p_units":k-t,
+            "entropy_loss_in_log_p_units":t,
+            "finite_Radon_Nikodym_density_on_image":p**t,
+            "image_size":p**(k-t)}
