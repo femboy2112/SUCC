@@ -256,7 +256,6 @@ class RealDtNIntegrationTests(unittest.TestCase):
         self.assertEqual(len(endpoint_marginal(left)),1)
         self.assertEqual({len(set(path.labels)) for path in left},{4})
 
-
 class InputFirewallTests(unittest.TestCase):
     def test_duplicate_channel_and_wrong_norm_rejected(self):
         with self.assertRaises(HistoryTransportError):
