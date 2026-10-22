@@ -152,10 +152,6 @@ class ObservationPinnedRigidityTests(unittest.TestCase):
         self.assertEqual(len(r["survivors"]),2)
 
     def test_invalid_graph_and_fake_numeric_evidence_fail_closed(self):
-        for build in (
-            lambda:FinteNetwork(),  # caught as NameError below, never used
-        ):
-            pass
         with self.assertRaises(BoundarySourceError):
             FiniteNetwork(2,(0,0),((0,1,Q(1)),))
         with self.assertRaises(BoundarySourceError):
