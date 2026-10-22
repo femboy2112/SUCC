@@ -211,3 +211,54 @@ class OperationalDiscriminationTests(unittest.TestCase):
    self.assertNotEqual((u*1)%p,1)
 
 if __name__ == '__main__':unittest.main()
+
+
+class UniqueHaarAndHorizonEntropyTests(unittest.TestCase):
+ def test_source_succ_ergodic_finite_cycles_force_uniform_haar(self):
+  from observational_succ.observation_pinned_geometry import finite_haar_phase_distribution
+  for p in (2,3,5):
+   for k in range(1,5):
+    mu=finite_haar_phase_distribution(p,k)
+    m=p**k
+    self.assertEqual(sum(mu),1)
+    self.assertTrue(all(mu[(i+1)%m]==mu[i] for i in range(m)))
+    self.assertEqual({mu[i] for i in range(m)},{F(1,m)})
+    if k>1:
+     older=finite_haar_phase_distribution(p,k-1)
+     for i in range(p**(k-1)):
+      self.assertEqual(sum(mu[i+j*p**(k-1)] for j in range(p)),older[i])
+
+ def test_multiplier_pushforward_is_exact_uniform_on_its_image(self):
+  from observational_succ.observation_pinned_geometry import finite_fucc_pushforward,fucc_haar_digit_defect
+  for p in (2,3,5):
+   for k in range(1,5):
+    for m in (1,2,3,4,5,6,7,8,9,p**(k+1)):
+     law=finite_fucc_pushforward(p,k,m)
+     self.assertEqual(sum(law),1)
+     image={m*x%(p**k) for x in range(p**k)}
+     defect=fucc_haar_digit_defect(p,k,m)
+     self.assertEqual(len(image),defect['image_size'])
+     self.assertEqual(defect['source_entropy_in_log_p_units']-defect['target_entropy_in_log_p_units'],defect['entropy_loss_in_log_p_units'])
+     for i,value in enumerate(law):
+      self.assertEqual(value,F(1,len(image)) if i in image else 0)
+     self.assertEqual(defect['finite_Radon_Nikodym_density_on_image'],p**k//len(image))
+
+ def test_infinite_injection_vs_finite_one_digit_lost(self):
+  from observational_succ.observation_pinned_geometry import fucc_haar_digit_defect
+  for p in (2,3,5):
+   for k in range(2,6):
+    d=fucc_haar_digit_defect(p,k,p)
+    self.assertEqual(d['entropy_loss_in_log_p_units'],1)
+    self.assertEqual(d['image_size'],p**(k-1))
+    # Meanwhile p*x=p*y over actual integers implies x=y.
+    for x,y in ((0,1),(1,2),(3,8),(-7,-8)):
+     self.assertNotEqual(p*x,p*y)
+
+ def test_wrong_uniformity_cannot_be_an_unforced_stochastic_conclusion(self):
+  from observational_succ.observation_pinned_geometry import finite_haar_phase_distribution
+  for p in (2,3,5):
+   u=finite_haar_phase_distribution(p,1)
+   fake=(F(2,p+1),)+tuple(F(1,p+1) for _ in range(p-1))
+   self.assertEqual(sum(fake),1)
+   self.assertNotEqual(fake,u)
+   self.assertNotEqual(tuple(fake[-1:]+fake[:-1]),fake)
