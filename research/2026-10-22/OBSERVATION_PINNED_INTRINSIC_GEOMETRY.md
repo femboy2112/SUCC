@@ -128,6 +128,34 @@ These are proved counterexamples against **unconditional** pinning, but leave th
 
 **Physical experimental status: UNVERIFIED.** All supplied transcripts in the software suite are synthetic countermodels or synthetic calibration examples. No observer has measured a physical Bruhat–Tits tree in this work.
 
+
+## OPIG-07 — explicit classification of the remaining EPR correlation family
+
+Having derived a canonical local arithmetic geometry and a unique one-copy normalized Haar state does **not** fix a two-copy state. The next exact rigidity boundary is classical before it becomes quantum.
+
+Let \(G_k=\mathbb Z/p^k\mathbb Z\), \(N=p^k\), and let \(\nu\) be any joint probability on \(G_k\times G_k\), invariant under the diagonal source SUCC event \((x,y)\mapsto(x+1,y+1)\). These events partition the pair source into \(N\) disjoint cycles, indexed by **relative phase** \(c=y-x\). Invariance forces the mass on each orbit to be uniform. Thus there is a **unique** probability vector \(w(c)\) with
+
+\[
+\boxed{\nu(x,y)=\frac{w(y-x)}{N},\qquad
+w(c)\ge0,\quad \sum_{c\in G_k} w(c)=1.}
+\]
+
+**Proof:** each orbit of diagonal addition has exactly \(N\) elements; let \(w(c)\) be its total mass. Invariance forces each orbit element to have probability \(w(c)/N\). Conversely any such law is invariant. It has both marginals Haar. This describes the **entire** family of classical jointly successor-invariant couplings, not merely handpicked examples.
+
+Diagonal multiplication by a **p-adic unit** \(q\) sends the phase law \(w(c)\) to \(w(q^{-1}c)\). Requiring joint \(V_q\) invariance therefore restricts \(w\) to \(q\)-invariant probability measures, but does not determine it: \(w=\delta_0\) (perfectly matched phases) and \(w=\mathrm{Haar}\) (independent phases) both survive **all** such unit actions and have the same single-copy Haar statistics. They differ sharply on a held-out joint event, for example \(\Pr[X=Y]=1\) versus \(1/N\). The latter is a *classical independent coupling*, not a claim of pure-state quantum entanglement.
+
+For every deterministic shift \(c\), a corresponding **pure maximally entangled state** can be separately defined on two finite clock Hilbert spaces:
+
+\[
+|\Psi_{c,k}\rangle=N^{-1/2}\sum_{x\in G_k}|x,x+c\rangle.
+\]
+
+All have reduced density \(I_N/N\) and the **same exact reciprocal SUCC mirror** \((S_L\otimes I)\Psi_{c,k}=(I\otimes S_R^{-1})\Psi_{c,k}\). Distinct \(c\)'s are orthogonal and separated by the relative-phase observable \(Y-X\); EPR mirror relations and marginal entropies alone do **not** identify their common phase. For every finite observed depth \(K\), the global candidate shifts \(c=0\) and \(c=p^K\) have indistinguishable residue phases at all depths through \(K\) and disagree at \(K+1\). The family can be transported consistently as a classical inverse-limit *coupling* indexed by a p-adic relative shift, but the finite pure entangled vectors must **not** be declared a globally compatible Hilbert tensor-product purification under naive finite lift maps without proving the embedding.
+
+A crucial empirical/source-map issue: \(c\) is a **relative-origin gauge** if the right clock has no independently calibrated origin. Only an external shared reference or authenticated source relation lets a measured relative phase distinguish physically different states instead of merely relabeling one system. A single noiseless joint observation fixes \(c\bmod p^k\) **if** the deterministic-shift family has already been independently justified; it does not establish the full p-adic \(c\) or purity/entanglement among arbitrary candidate quantum states.
+
+**Verdict:** source symmetry and marginal Haar determine an exact **family** of admissible correlations. A reality-pinned **joint correlation** is the next needed discriminator. This produces the mathematical version of the user's intuition without granting a finite reading unlimited global authority. Six additional independent exact finite tests preserve the diagonal-vs-independent negative control, all shifted EPR mirrors, scale equivariance and arbitrarily deep phase spoofing.
+
 ## 8. Next proof frontier
 
 The arithmetic action and its *natural local field geometry* now exist with genuine source provenance; the next unmet target is unique **quantum state/dynamics selection**. Construct rival positive states or holographic kernels with the same SUCC/FUCC/PGL₂ symmetry, predict distinct held-out measurable correlators, and determine whether a physically calibrated source measurement chooses one state up to explicit gauge. Neither geometry alone nor positivity of a generic Gibbs covariance identifies the signed completed Weil form.
