@@ -11,6 +11,7 @@ from observational_succ.reciprocal_succ_fucc import (
     weighted_affine_diamond, pascal_prime_rank, direct_prime_rank,
     gibbs_rank_nonprojective,
     finite_reciprocal_boundary_defect, finite_reciprocal_square_on_basis,
+    finite_reciprocal_power_square, finite_reciprocal_boundary_hierarchy,
 )
 
 
@@ -67,6 +68,22 @@ def main():
                 else:
                     assert lhs==rhs
                 boundary_basis+=1
+    graded_configs=0
+    graded_basis=0
+    for N in range(1,66):
+        for p in (2,3,5,7):
+            for t in range(1,8):
+                ports=finite_reciprocal_boundary_hierarchy(N,p,t)
+                deficits={n:(m,c) for n,m,c in ports}
+                assert len(deficits)==len(ports)
+                graded_configs+=1
+                for n in range(1,N+1):
+                    left,right=finite_reciprocal_power_square(n,N,p,t)
+                    if n in deficits:
+                        assert left is None and (right,Q(-1))==deficits[n]
+                    else:
+                        assert left==right
+                    graded_basis+=1
     direct,cotrans=gibbs_rank_nonprojective((2,3),2)
     assert direct!=cotrans and cotrans>direct
     receipt={
@@ -81,6 +98,9 @@ def main():
         'mixed_cutoff_boundary_cases':boundary_cases,
         'mixed_cutoff_basis_checks':boundary_basis,
         'rank_one_boundary_defect_exact':True,
+        'graded_cutoff_configurations':graded_configs,
+        'graded_cutoff_basis_checks':graded_basis,
+        'graded_boundary_rank_t_law':True,
         'projectivity_rank1_source_2_3_beta2':str(direct),
         'projectivity_rank2_cotransport_2_3_beta2':str(cotrans),
         'projectivity_false_equivalence_refuted':True,
