@@ -9,6 +9,7 @@ from observational_succ.spectral_boundary_rigidity import (
     chain_moments, round_trip_new_depth, recover_positive_chain,
     interpolate_response, finite_response_identity, recover_operational_jacobi,
     boundary_krylov_top_coefficient, approximate_hidden_mode_pair,
+    exact_determinant, boundary_moment_hankel, hankel_depth_certificate,
 )
 from observational_succ.boundary_realization_selection import (
     FiniteNetwork, boundary_response, matrix_inverse
@@ -244,6 +245,73 @@ class SourceRoundTripHistoryTests(unittest.TestCase):
         with self.assertRaises(SpectralSourceError):
             interpolate_response(((F(1),F(2)),)*5,2)
 
+
+
+class BoundaryHankelDepthTests(unittest.TestCase):
+    def test_hankel_principal_minors_measure_exact_visible_layers(self):
+        for g,expected in (
+            ((F(1),F(1)),(F(1),F(0))),
+            ((F(2),F(3),F(5)),(F(1),F(9),F(0))),
+            ((F(2),F(3),F(5),F(7)),(F(1),F(9),F(2025),F(0))),
+            ((F(1,2),F(7,4),F(3,5)),(F(1),F(49,16),F(0))),
+        ):
+            witness=hankel_depth_certificate(g)
+            self.assertEqual(witness['hankel_determinants'],expected)
+            self.assertEqual(witness['first_zero_order'],len(g))
+            for r,v in enumerate(expected,1):
+                self.assertEqual(exact_determinant(boundary_moment_hankel(g,r)),v)
+
+    def test_hankel_is_gram_of_independently_computed_krylov_vectors(self):
+        for g in ((F(1),F(1)),(F(2),F(3),F(5)),
+                  (F(2),F(3),F(5),F(7))):
+            A=chain_jacobi(g)
+            n=len(A)
+            vectors=[]
+            v=[F(1)]+[F()]*(n-1)
+            for j in range(n):
+                vectors.append(tuple(v))
+                v=[sum((A[i][k]*v[k] for k in range(n)),F())
+                   for i in range(n)]
+            Gram=tuple(tuple(sum((vectors[i][k]*vectors[j][k]
+                                  for k in range(n)),F())
+                             for j in range(n)) for i in range(n))
+            self.assertEqual(Gram,boundary_moment_hankel(g,n))
+            self.assertEqual(exact_determinant(Gram),
+                             hankel_depth_certificate(g)['hankel_determinants'][n-1])
+
+    def test_weak_new_layer_makes_positive_hankel_rank_arbitrarily_small(self):
+        for eps in (F(1,10),F(1,100),F(1,10000)):
+            g=(F(1),eps,F(1))
+            dets=hankel_depth_certificate(g)['hankel_determinants']
+            self.assertEqual(dets,(F(1),eps*eps,F()))
+            self.assertGreater(dets[1],0)
+        self.assertLess(hankel_depth_certificate((F(1),F(1,10000),F(1)))['hankel_determinants'][1],F(1,1000000))
+
+    def test_connected_dark_star_has_krylov_rank_two_not_physical_three(self):
+        A=((F(3),F(-1),F(-1)),
+           (F(-1),F(2),F()),
+           (F(-1),F(),F(2)))
+        v=[F(1),F(),F()]
+        mu=[]
+        for k in range(5):
+            mu.append(v[0])
+            v=[sum((A[i][j]*v[j] for j in range(3)),F()) for i in range(3)]
+        H2=((mu[0],mu[1]),(mu[1],mu[2]))
+        H3=tuple(tuple(mu[i+j] for j in range(3)) for i in range(3))
+        self.assertEqual(exact_determinant(H2),F(2))
+        self.assertEqual(exact_determinant(H3),F())
+        self.assertEqual(recover_operational_jacobi(rational_response(
+            (F(2),F(4),F(1)),(F(4),F(5),F(1))))['minimal_observable_order'],2)
+
+    def test_invalid_hankel_order_and_malformed_determinant_rejected(self):
+        with self.assertRaises(SpectralSourceError):
+            boundary_moment_hankel((F(2),F(3),F(5)),0)
+        with self.assertRaises(SpectralSourceError):
+            boundary_moment_hankel((F(1),),1)
+        with self.assertRaises(SpectralSourceError):
+            exact_determinant(((F(1),F(2)),))
+        with self.assertRaises(SpectralSourceError):
+            exact_determinant(((F(1),0.5),(F(2),F(3))))
 
 if __name__=="__main__":
     unittest.main()
