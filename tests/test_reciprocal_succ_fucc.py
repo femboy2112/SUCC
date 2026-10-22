@@ -13,7 +13,8 @@ from observational_succ.reciprocal_succ_fucc import (
     weighted_affine_diamond, mirror_affine_on_basis,
     pascal_prime_rank, direct_prime_rank, pascal_last_step,
     gibbs_rank_nonprojective, finite_reciprocal_boundary_defect,
-    finite_reciprocal_square_on_basis,
+    finite_reciprocal_square_on_basis, finite_reciprocal_power_square,
+    finite_reciprocal_boundary_hierarchy,
 )
 
 
@@ -253,5 +254,34 @@ class SharpReciprocalBoundaryTests(unittest.TestCase):
                 self.assertEqual({alpha[1]:weight for alpha,weight in ours.items()},
                                  theirs)
 
+
+
+class GradedReciprocalBoundaryTests(unittest.TestCase):
+    def test_exact_higher_rung_boundary_channels_each_input(self):
+        for N in range(1,66):
+            for p in (2,3,5,7):
+                for t in range(1,8):
+                    ports=finite_reciprocal_boundary_hierarchy(N,p,t)
+                    by_input={n:(m,coeff) for n,m,coeff in ports}
+                    self.assertEqual(len(by_input),len(ports))
+                    for n in range(1,N+1):
+                        lhs,rhs=finite_reciprocal_power_square(n,N,p,t)
+                        if n in by_input:
+                            self.assertIsNone(lhs)
+                            self.assertEqual((rhs,Q(-1)),by_input[n])
+                        else:
+                            self.assertEqual(lhs,rhs)
+                    if t==1:
+                        one=finite_reciprocal_boundary_defect(N,p)
+                        self.assertEqual(ports,() if one is None else (one,))
+
+    def test_fixed_rung_boundary_rank_eventually_exact_t(self):
+        for p in (2,3,5):
+            for t in range(1,9):
+                N=p*(t+2)+t
+                ports=finite_reciprocal_boundary_hierarchy(N,p,t)
+                self.assertEqual(len(ports),t)
+                self.assertEqual({m for _,m,_ in ports},
+                                 set(range(N//p+1,N//p+t+1)))
 
 if __name__=='__main__':unittest.main()
