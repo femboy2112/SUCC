@@ -191,6 +191,27 @@ Their difference is `uv(u-v)/[2(u+v)(u^2+uv+v^2)]`, nonzero for distinct primes.
 
 A second hostile control: choosing a death rate proportional to `α_p` with constant prime birth rates produces Poisson/factorial occupation laws, rather than the geometric Euler factors `(1-p^{-\beta})^{-1}`. The genuine zeta reversible graph has reverse death rate `1` for every occupied distinct prime species.
 
+## Theorem RSFP-09: exact rank-one obstruction when the future boundary is forgotten
+
+This is a sharper result than the blanket strong-versus-norm claim. The **full** mixed adjoint relation \(V_p^\dagger S^p=SV_p^\dagger\) is exact, and the **finite forward–forward** affine relation survives every complete initial segment, but the corresponding **finite mixed forward/backward** square fails by precisely one source-boundary channel.
+
+Let \(P_N\) project onto the first \(N\) integers, and \(S_N=P_NSP_N,\ V_{p,N}=P_NV_pP_N\), acting on the range of \(P_N\). Put \(q=\lfloor N/p\rfloor\). Then, for \(N\ge p\),
+
+\[
+\boxed{
+B_{p,N}:=V_{p,N}^{\dagger}S_N^p-S_NV_{p,N}^{\dagger}
+=-|q+1\rangle\langle pq|
+=-P_NV_p^\dagger(I-P_N)S^pP_N.}
+\]
+
+When \(N<p\), the left side is zero.
+
+**Proof.** For any basis vector \(|n\rangle\) with \(p\nmid n\), both finite routes vanish. For \(n=pm\le N\) with \(pm+p\le N\), both give \(|m+1\rangle\). The **only** divisible input with \(pm+p>N\) is \(n=p\lfloor N/p\rfloor=pq\), the last visible multiple: \(S_N^p|pq\rangle=0\), whereas \(S_NV_{p,N}^\dagger|pq\rangle=|q+1\rangle\) (and \(q+1\le N\)). This proves the rank-one formula. For the last identity, expand \(P_NV_p^\dagger S^pP_N=P_NS V_p^\dagger P_N\) using the full reciprocal relation; the only missing term in the finite route is the excursion into \(I-P_N\), which later returns to range \(P_N\) under \(V_p^\dagger\). QED.
+
+Consequently, \( \|B_{p,N}\|=1 \) for all \(N\ge p\), but \(B_{p,N}\to0\) **strongly** as \(N\to\infty\), because the input bra \(\langle p\lfloor N/p\rfloor|\) escapes to infinity and every fixed \(\ell^2\) state has vanishing amplitude there. This is not uniform operator-norm convergence.
+
+**Source significance:** a finite forward observer discards a step beyond the present horizon; a subsequent backward FUCC quotient could have returned that same amplitude inside the observed carrier, but the necessary intermediate record was lost. A source-preserving completion must keep the boundary-excursion witness. This is a mathematical *future-boundary dependence*, not literal reversal of physical causality. Exact finite independent tests exhaust **16,200 basis inputs** over 400 \(N,p\) configurations and independently verify the rank-one support; the universal formula follows from the basis proof.
+
 ## Theorem RSFP-07: previous locality no-go survives its stated boundary
 
 The Prime Bridge II no-go says no single uniformly finite-depth local operator on the **particular three-ray code** realizes all of arithmetic successor. It does **not** forbid a one-step local carry automaton applied repeatedly, a larger precomputed source register, or an explicitly available future-conditioned backward message. The residue clocks exhibit a reversible finite-state *rule* for each scale, but global arithmetic successor still carries information through arbitrarily many ranks. Local rule depth, actual total causal time, entanglement preparation, postselection, and access to boundary conditions require separate resource accounting.
