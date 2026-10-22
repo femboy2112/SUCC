@@ -17,7 +17,7 @@ an untouched official compiler on a hosted runner. A successful source-bound
 record remains `KERNEL_CHECKED_UNADMITTED`; it does not alter the trusted formal
 catalogue or claim SUCC Level C admission.
 
-## The ten precise finite/conditional targets
+## The eleven precise finite/conditional targets
 
 1. `decode_codeword`: for each erased share and each pair `(k,r)` in F3², the
    explicit two-share decoder returns `(k, erased-share-value)`.
@@ -42,6 +42,10 @@ catalogue or claim SUCC Level C admission.
     to every finite word whose generators satisfy a declared admissibility
     predicate. This theorem does not prove unique prime factorization or analytic
     square summability; those remain explicit premises/arguments in the dossier.
+
+11. `matrix_unit_intertwining_count`: all 2,187 finite coefficient identities
+    for `D_A*(E_ab ⊗ I)D_A W = W E_ab`, over every erasure, logical matrix unit,
+    logical input, and full output basis triple. The common normalization cancels.
 
 The quantum code formula is
 `W|k> = 3^(-1/2) Σ_(r∈F3) |r,r+k,r+2k>`.
@@ -94,8 +98,9 @@ python3 scripts/prime_bridge_lean_probe.py --output /tmp/prime-bridge-kernel
 The validator deletes stale success metadata before running. It requires:
 
 - actual Lean 4.14.0 startup and elaboration success;
-- all ten fully qualified theorem types exported from the compiled environment;
-- an empty transitive axiom envelope for these finite/constructive statements;
+- all eleven fully qualified theorem types exported from the compiled environment;
+- a transitive axiom envelope contained in the standard `propext` axiom;
+  no `sorryAx`, custom axiom, native decision axiom, or other dependency is allowed;
 - three negative controls rejected specifically because `decide` proves the
   proposition false: wrong separated-pair inverse, spurious off-diagonal
   singleton coherence, and incorrect semigroup braid.
@@ -117,8 +122,27 @@ libraries and are not consequences of this finite source.
 
 An independent Python enumeration of arithmetic in `range(3)` checked all 27
 `(erased,logical,randomizer)` decoder inputs and all 243
-`(erased,k,l,x,y)` singleton partial-trace support counts. Both passed. This
+`(erased,k,l,x,y)` singleton partial-trace support counts. All passed. A separate exact loop checked all 2,187 matrix-unit
+intertwining coefficients and also passed. This
 corroborates the intended finite statements but does not establish Lean
 elaboration or identify the entire quantum-channel proof with a finite check.
 The raw local compiler-startup failure is preserved in
 `prime_bridge_receipts/formal_local_startup.log`.
+
+## First hosted attempt: concrete elaboration repair
+
+The untouched official compiler ran successfully on GitHub Actions run
+`39733348628`, commit `9292bb854a0bf6193fb92176df5182c9bb16f42d`.
+The first ten-target attempt failed to synthesize a decidability instance for
+an existential statement in `singleton_label_alias`. This is an elaboration
+failure, not a mathematical counterexample. The repaired source provides the
+constructive witnesses `r=0,t=-e` and checks only their finite universal identity.
+The failed environment's placeholder dependency is preserved in its error log;
+it is not accepted as a certified theorem.
+
+The same output established that ordinary finite `decide` proofs on these `Fin`
+identities use Lean's standard `propext` axiom. The initial validator's proposed
+empty envelope was therefore unnecessarily strict. The repaired validator allows
+only `propext`; generic constructive transport/commutation proofs have empty
+axiom sets. Every actual list remains exported, and `sorryAx` remains forbidden.
+Raw attempt logs: `prime_bridge_receipts/formal_attempt1/`.

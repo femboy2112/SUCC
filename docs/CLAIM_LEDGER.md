@@ -1,5 +1,12 @@
 # Research claim ledger
 
+The additive [Prime Bridge supplement PBR-01–20](CLAIM_SUPPLEMENT_ARITHMETIC_ER_EPR.md)
+records arithmetic entanglement/source reconstruction, concrete KMS interfaces,
+interacting spectral and entanglement proofs, BT lattice geometry and exact
+weighted quantum-code recovery with preserved counterexamples. Its receipt
+separates paper proofs, exact tests and actual finite Lean checks. No historical
+claim is relabeled; no gravitational ER bridge or RH result is inferred.
+
 The additive [Academic Transmutation supplement ATX-01–12](CLAIM_SUPPLEMENT_ACADEMIC_TRANSMUTATION.md)
 records exact future-safe forgetting, causal lifting, the uniform arithmetic
 nonidentification family, Gamma bounds and two historical operator corrections.

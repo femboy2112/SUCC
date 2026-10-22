@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PREFIX = "ObservationalSUCC.PrimeBridge."
 NAMES = [
     "decode_codeword", "decode_encodePair", "encodePair_decode",
-    "codeword_gram_count", "singleton_partial_trace_count",
+    "codeword_gram_count", "singleton_partial_trace_count", "matrix_unit_intertwining_count",
     "singleton_label_alias", "wrong_middle_decoder_receipt",
     "wrong_semigroup_braid_receipt",
     "commuting_reconstructions_force_logical_commutation",
@@ -93,8 +93,8 @@ def main() -> int:
                 records.append(record)
         if [r["name"] for r in records] != [PREFIX + n for n in NAMES]:
             raise RuntimeError("theorem export missing, duplicated, or reordered")
-        if any(r["axioms"] for r in records):
-            raise RuntimeError("these finite/constructive declarations require an empty axiom envelope")
+        if any(set(r["axioms"]) - {"propext"} for r in records):
+            raise RuntimeError("unexpected axiom; only standard propext is permitted")
         for label, statement in NEGATIVES.items():
             control = build / f"{label}.lean"
             control.write_text("import PrimeBridge\nopen ObservationalSUCC.PrimeBridge\n" + statement)

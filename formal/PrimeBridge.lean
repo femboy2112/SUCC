@@ -81,11 +81,44 @@ theorem singleton_partial_trace_count : ∀ e k l x y : Trit,
     singletonTraceCount e k l x y = if k = l ∧ x = y then 1 else 0 := by
   decide
 
+/-- Computational pair and erased coordinate of an arbitrary boundary triple. -/
+def pairCoordinates (e x y z : Trit) : Trit × Trit :=
+  if e = 0 then (y,z) else if e = 1 then (x,z) else (x,y)
+
+def erasedCoordinate (e x y z : Trit) : Trit :=
+  if e = 0 then x else if e = 1 then y else z
+
+/-- Integer coefficient of an unnormalized codeword in the full boundary basis. -/
+def codeCoefficient (k x y z : Trit) : Nat :=
+  sum3 fun r =>
+    if share k r 0 = x ∧ share k r 1 = y ∧ share k r 2 = z then 1 else 0
+
+/-- Matrix entry of D_e^* (E_ab tensor I) D_e, in the retained-pair basis. -/
+def reconstructedEntry (e a b : Trit) (outPair inPair : Trit × Trit) : Nat :=
+  if (decode e outPair).1 = a ∧ (decode e inPair).1 = b ∧
+     (decode e outPair).2 = (decode e inPair).2 then 1 else 0
+
+/-- Coefficient of the reconstructed matrix unit applied to the code column k. -/
+def intertwinerCount (e a b k x y z : Trit) : Nat :=
+  sum3 fun r =>
+    if share k r e = erasedCoordinate e x y z
+    then reconstructedEntry e a b (pairCoordinates e x y z) (pair e k r)
+    else 0
+
+/-- All coefficients of O_A W = W E_ab; the shared 1/sqrt(3) cancels.
+This is a complete finite matrix-unit identity, not a numerical tolerance test. -/
+theorem matrix_unit_intertwining_count : ∀ e a b k x y z : Trit,
+    intertwinerCount e a b k x y z =
+      if k = b then codeCoefficient a x y z else 0 := by
+  decide
+
 /-- A singleton cannot recover even the computational logical label from a
 single support sample: k=0 and k=1 have a common possible value at each wire. -/
 theorem singleton_label_alias : ∀ e : Trit,
     ∃ r t : Trit, share 0 r e = share 1 t e := by
-  decide
+  intro e
+  refine ⟨0, fsub 0 e, ?_⟩
+  exact (by decide : ∀ i : Trit, share 0 0 i = share 1 (fsub 0 i) i) e
 
 /-- Removing the factor 2 inverse in the separated pair decoder really fails. -/
 theorem wrong_middle_decoder_receipt :
@@ -161,6 +194,7 @@ end MirrorWords
 #print axioms encodePair_decode
 #print axioms codeword_gram_count
 #print axioms singleton_partial_trace_count
+#print axioms matrix_unit_intertwining_count
 #print axioms singleton_label_alias
 #print axioms wrong_middle_decoder_receipt
 #print axioms wrong_semigroup_braid_receipt

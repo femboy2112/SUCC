@@ -1,0 +1,110 @@
+{
+  "baseline_sha": "b116841f12b41aaf7600da39bbb40577f25b6295",
+  "branch": "research/prime-bridge-2026-10-22",
+  "claim_scope": {
+    "RH_proved": false,
+    "academic_novelty_established": false,
+    "all_infinite_theorems_lean_checked": false,
+    "exact_finite_implementation_tests": true,
+    "gravitational_duality_proved": false,
+    "paper_proofs": true
+  },
+  "commands": [
+    {
+      "command": "python scripts/verify_provenance.py",
+      "log": "prime_bridge_receipts/baseline_provenance.log",
+      "result": "PASS;72 items,17 byte-identical archives,55 mechanical imports",
+      "scope": "baseline"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "log": "prime_bridge_receipts/baseline_unittest.log",
+      "result": "FAIL;6027 tests,128 errors,24 skipped; missing mpmath/sympy",
+      "scope": "initial baseline before optional dependencies installed"
+    },
+    {
+      "command": "python -m pip install 'mpmath>=1.3,<2' 'sympy>=1.12,<2'",
+      "result": "PASS; installed mpmath1.3.0 and sympy1.14.0"
+    },
+    {
+      "command": "python scripts/observer_foundations_probe.py",
+      "log": "prime_bridge_receipts/observer_foundations.log",
+      "result": "PASS exit0"
+    },
+    {
+      "command": "python scripts/ordinal_succ_report_probe.py",
+      "log": "prime_bridge_receipts/ordinal_succ_report.log",
+      "result": "PASS exit0"
+    },
+    {
+      "command": "python -m unittest tests.test_arithmetic_tfd tests.test_arithmetic_entanglement tests.test_interacting_arithmetic_hamiltonian tests.test_padic_bulk_network tests.test_holographic_reconstruction tests.test_arithmetic_operator_interface",
+      "log": "prime_bridge_receipts/focused_tests.log",
+      "result": "PASS;73 tests",
+      "scope": "preintegration working tree; hashed executable sources"
+    },
+    {
+      "command": "python scripts/prime_bridge_probe.py",
+      "log": "prime_bridge_receipts/exact_probe.json",
+      "result": "PASS exit0 exact rational output"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "log": "prime_bridge_receipts/integrated_unittest.log",
+      "result": "RUNNING",
+      "scope": "integrated working tree; executable fingerprints pinned"
+    }
+  ],
+  "draft_pr": "https://github.com/femboy2112/SUCC/pull/233",
+  "execution": {
+    "git": "git version 2.51.1",
+    "lean_pin": "leanprover/lean4:v4.14.0",
+    "local_lean": "startup access gap; hosted workflow used",
+    "packages": {
+      "mpmath": "1.3.0",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "sympy": "1.14.0"
+    },
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "formal": {
+    "admitted_to_trusted_catalogue": false,
+    "first_remote_commit": "9292bb854a0bf6193fb92176df5182c9bb16f42d",
+    "first_run": 39733348628,
+    "result": "FAIL on existential Decidable synthesis; repaired with constructive witnesses; next11-target check pending"
+  },
+  "open": [
+    "Geometric equivariance with nonuniform arithmetic weights",
+    "Certified infinite mixed Gibbs entanglement",
+    "Natural arithmetic-to-metric reconstruction",
+    "Archimedean/adelic quantum descent",
+    "Abstract BC representation faithfulness/classification not proved here"
+  ],
+  "preintegration_head": "9292bb854a0bf6193fb92176df5182c9bb16f42d",
+  "schema": "succ-prime-bridge-research-v1",
+  "source_policy": {
+    "archive_edits": false,
+    "external_sources": "Original paper URLs and actual inspected sections in each dossier; inaccessible TFD original explicitly excluded",
+    "original_import_manifest_unchanged": true,
+    "same_model_lanes_independent_reasoner_samples": false
+  },
+  "source_sha256": {
+    "formal/PrimeBridge.lean": "03a48ee884b65cf90ef65fa87d34cb4456aad8e1f3066c540838c68a1be5871f",
+    "observational_succ/arithmetic_entanglement.py": "7879cb00e3dff467392916a4264a99fd0fe46c08676f50f17ec17357908aa082",
+    "observational_succ/arithmetic_operator_interface.py": "4ab12308fd64a80ec0566ea059d26e34d68435e366feb95bcbc28bc532b73ec9",
+    "observational_succ/arithmetic_tfd.py": "c38a8813660df63ec6c4413b168eee9120f6b4dca5f0eb08d1ede7e5076d484a",
+    "observational_succ/holographic_reconstruction.py": "c90e20b29317e328a9e62a38d12d22c09ff780e2153fe3da9e3bc0be185386dd",
+    "observational_succ/interacting_arithmetic_hamiltonian.py": "2f47669a8d45a6cb2060e9e817b3d90e10956f535f473fd2847c5ae294a08506",
+    "observational_succ/padic_bulk_network.py": "a22a67f858053656267e490b88c6d35132a18e8fe278cc085b351886cfe5ba0f",
+    "scripts/prime_bridge_lean_probe.py": "2d47ad3fa4c8f226989d545e36e1a3f1329ce5476f56a89aedb9c7d30ad948e1",
+    "scripts/prime_bridge_probe.py": "99676a442426ac582d8678367dc3d1ee5bf2751da4fb4204f2a5e1aa51bfb88f",
+    "tests/test_arithmetic_entanglement.py": "218d2160340f9c56faf6c4cbe37467035b4127886adf112600b77de9e80919ae",
+    "tests/test_arithmetic_operator_interface.py": "d6abfa765639a4c5c6d894ae9dad9c22b1f34550abe0dd0eca6be9751d95bcd3",
+    "tests/test_arithmetic_tfd.py": "8abb53239091b74d2c70709ac74bc15366aacc4112d29eacfd40d1e3d34fa6b8",
+    "tests/test_holographic_reconstruction.py": "00b298519ad8af4670aedaa997f4ba3fd9e48e68c5695127a183f3f4efc318ca",
+    "tests/test_interacting_arithmetic_hamiltonian.py": "f0729c0efdf9430f0128c8e76124429a75fe98410275ef29f40831cb27da6f3e",
+    "tests/test_padic_bulk_network.py": "260c8e2c438eab61e587066aa23e6f70b1fd5fad6a8be7da5dd1e7f3651701be"
+  },
+  "status": "PAPER_PROOFS_AND_EXACT_MODELS_COMPLETE_INTEGRATED_VALIDATION_IN_PROGRESS"
+}
