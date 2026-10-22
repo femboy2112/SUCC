@@ -14,7 +14,7 @@ from observational_succ.witt_carry_learning import (
  full_ring_tables,first_carry_witness,learning_signature,
  update_version_space,delayed_tower_counterfeit,calibrated_ring_table_budget,
  sparse_factorial_prefix,full_ring_homogeneous_projection,geometric_bt_ball_profile,
- p_step_unipotent_probe,
+ p_step_unipotent_probe,lifted_succ_loop,
 )
 
 
@@ -71,6 +71,13 @@ def main():
                           tuple((k,learning_signature(p,k,'mixed','marked_addition')) for k in (1,2)),
                           'marked_addition')['survivors'],
                        'unlabelled_BT_ball_radius3':geometric_bt_ball_profile(p,3)['total']}
+    graded_holonomy=0
+    for p,k in ((2,2),(2,3),(2,4),(3,2),(3,3),(3,4),(5,2),(5,3)):
+        m=lifted_succ_loop(p,k,'mixed')
+        e=lifted_succ_loop(p,k,'equal')
+        assert m['coarse_return'] and e['coarse_return']
+        assert m['fine_value']==p**(k-1) and e['fine_value']==0
+        graded_holonomy+=2
     report={
         'research':'SUCC_WITT_CARRY_OBSERVER_LIMIT_2026_10_22',
         'status':'CLASSICAL_PAPER_THEOREMS_EXACT_FINITE_CHECKS_NOT_LEAN_CERTIFIED',
@@ -82,6 +89,7 @@ def main():
         'signed_completed_Weil_positivity_proved':False,
         'RH_proved':False,
         'carry_cocycle_exact_instances':cocycles,
+        'graded_lifted_succ_holonomy_tests':graded_holonomy,
         'whole_tree_digit_isometry_exact_instances':metrics,
         'independent_finite_ring_operation_cells':operations,
         'delayed_counterfeit_tower_tests':delayed,
