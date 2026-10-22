@@ -119,6 +119,34 @@ class PortFrameTheoremTests(unittest.TestCase):
         with self.assertRaises(PortSourceError):F.reorient(-1)
 
 
+class IndependentTopologyHoldout(unittest.TestCase):
+    def test_asymmetric_three_electrode_six_vertex_holdout(self):
+        # Chosen independently of the symmetric diamond derivation. Three
+        # electrodes, three hidden nodes and five distinct source ports.
+        base=Network(
+            ('A','B','C','u','v','w'),('A','B','C'),
+            (('A','u',Q(2)),('u','B',Q(3)),('B','v',Q(5,2)),
+             ('v','C',Q(7,3)),('u','v',Q(1,5)),('v','w',Q(4)),
+             ('w','A',Q(11,4)),('A','C',Q(3,7))),
+        )
+        ports=(('A','v'),('u','w'),('B','C'),('w','C'),('u','v'))
+        strengths=(Q(1,3),Q(2,5),Q(4),Q(1,7),Q(13,11))
+        F0=PortFrame.from_network(base,ports)
+        self.assertEqual(F0.Lambda,independent_parent_response(base))
+        checked=0
+        for order in permutations(range(5)):
+            net=base; F=F0
+            for k in order:
+                net=net.add(ports[k],strengths[k]);F=F.update(k,strengths[k])
+                self.assertEqual(F,PortFrame.from_network(net,ports))
+                self.assertEqual(F.Lambda,independent_parent_response(net))
+                checked+=1
+            for k in reversed(order):
+                F=F.reverse_recorded_update(k,strengths[k])
+            self.assertEqual(F,F0)
+        self.assertEqual(checked,600)
+
+
 class HiddenBridgeTomography(unittest.TestCase):
     def test_hidden_bridge_does_not_change_present_boundary(self):
         no,yes=diamond(Q(0)),diamond(Q(7))

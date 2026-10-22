@@ -184,3 +184,13 @@ Dörfler and Bullo, *Kron Reduction of Graphs With Applications to Electrical Ne
 ### Next verdict-changing probe
 
 Recover enough of `J=(Lambda,W,R)` from independent **actual** current/voltage records and independently calibrated interventions *without supplying the full interior graph to the estimator*. Use a fresh source geometry not fitted to the diamond and hold out an edge sequence to test prediction (including the cubic hidden-mode signal). In parallel require a source-authenticated cross-channel event that selects one arithmetic/geometric model without building that selection into the apparatus. A synthetic pass cannot satisfy either physical requirement.
+
+## 10. Fresh independent source-geometry holdout (not used to derive the diamond theorem)
+
+To pay the source/implementation truth debt beyond the symmetric four-vertex example, a six-vertex graph with **three separate electrode nodes** A,B,C and three interior nodes u,v,w was fixed with *asymmetric rational conductances*:
+
+`(A,u):2, (u,B):3, (B,v):5/2, (v,C):7/3, (u,v):1/5, (v,w):4, (w,A):11/4, (A,C):3/7`.
+
+Its independent candidate ports were `(A,v), (u,w), (B,C), (w,C), (u,v)` with respective exact additions `1/3, 2/5, 4, 1/7, 13/11`. We tested **every one of 5!=120 port orderings**. After each of the five steps, the closed `(Lambda,W,R)` update matched a fresh independent full-Laplacian construction. The resulting Lambda also matched the inherited SUCC `RCNetwork` exact Schur implementation; the complete event log was then reversed through five exact source inverse updates to recover the entire original port jet. That gives **600 independently recomputed intermediate models and 600 logged inverses** (model-level checks, not 1,200 independent physical samples).
+
+This holdout is deliberately **not** another parameter choice within the symmetric diamond: it has nontrivial off-diagonal electrode currents, three boundary degrees of freedom and distinct hidden port interactions. Its pass supports the generic finite rank-one derivation and implementation, not physical intrinsic geometry, empirical conductivity, or cross-source prime-FUCC naturality. The deterministic probe and frozen receipt replay these 600+600 cases and retain their source hashes.

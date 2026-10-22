@@ -63,6 +63,27 @@ def reproduce():
     refined=future_safe_partition(states,obs,act)
     if refined['rounds']!=1 or refined['minimal_observable_state_count']!=4:
         raise AssertionError('Future-safe quotient failed')
+    # Independent hostile holdout not used in the diamond inversion derivation:
+    # three electrodes, three distinct internal nodes, asymmetric rational arms.
+    from observational_succ.boundary_port_geometry import Network
+    holdout=Network(('A','B','C','u','v','w'),('A','B','C'),
+                    (('A','u',Q(2)),('u','B',Q(3)),('B','v',Q(5,2)),
+                     ('v','C',Q(7,3)),('u','v',Q(1,5)),('v','w',Q(4)),
+                     ('w','A',Q(11,4)),('A','C',Q(3,7))))
+    p5=(('A','v'),('u','w'),('B','C'),('w','C'),('u','v'))
+    g5=(Q(1,3),Q(2,5),Q(4),Q(1,7),Q(13,11))
+    origin=PortFrame.from_network(holdout,p5)
+    holdout_steps=0;holdout_reverses=0
+    for order in permutations(range(5)):
+        F=origin; N=holdout
+        for j in order:
+            F=F.update(j,g5[j]);N=N.add(p5[j],g5[j])
+            if F!=PortFrame.from_network(N,p5):
+                raise AssertionError('Independent asymmetric holdout failed')
+            holdout_steps+=1
+        for j in reversed(order):
+            F=F.reverse_recorded_update(j,g5[j]);holdout_reverses+=1
+        if F!=origin:raise AssertionError('Asymmetric holdout reverse failed')
     return {
         'claim_namespace':'BPGS-01..12',
         'source_parent':'PR239@6b50a7828cb9350aa391a5469cde8454b8a0b95c',
@@ -71,6 +92,8 @@ def reproduce():
         'fixed_port_permutations':perm_count,
         'source_intermediate_jet_equalities':verified_intermediate,
         'logged_reverse_source_events':reverse_count,
+        'asymmetric_six_vertex_holdout_forward_steps':holdout_steps,
+        'asymmetric_six_vertex_holdout_reverse_steps':holdout_reverses,
         'known_family_contact_inversions':inversions,
         'hidden_g7_no_contact_response':'1',
         'g0_contact_a1':'7/6',

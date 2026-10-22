@@ -2,6 +2,8 @@
   "Cherenkov_emission_derived": false,
   "Lean_kernel_checked": false,
   "RH_proved": false,
+  "asymmetric_six_vertex_holdout_forward_steps": 600,
+  "asymmetric_six_vertex_holdout_reverse_steps": 600,
   "claim_namespace": "BPGS-01..12",
   "finite_observable_classes": 4,
   "finite_observation_refinement_rounds": 1,
@@ -17,7 +19,7 @@
   "rational_exact": true,
   "source_git_blob_sha1": {
     "observational_succ/boundary_port_geometry.py": "ea7cddc2928d35d2cbc6c4070f56a18fcc5639c6",
-    "tests/test_boundary_port_geometry.py": "045d2584c48811adf3cc382d05013d62392fd96b"
+    "tests/test_boundary_port_geometry.py": "3d9a81c439a10d68eeb948d36e47c8d15e58006f"
   },
   "source_intermediate_jet_equalities": 96,
   "source_parent": "PR239@6b50a7828cb9350aa391a5469cde8454b8a0b95c",
