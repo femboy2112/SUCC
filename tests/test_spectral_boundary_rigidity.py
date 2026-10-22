@@ -7,7 +7,7 @@ from observational_succ.spectral_boundary_rigidity import (
     SpectralSourceError, poly, pa, ps, pm, pd, pgcd,
     rational_response, response_at, chain_jacobi, chain_response,
     chain_moments, round_trip_new_depth, recover_positive_chain,
-    interpolate_response, finite_response_identity,
+    interpolate_response, finite_response_identity, recover_operational_jacobi,
     boundary_krylov_top_coefficient, approximate_hidden_mode_pair,
 )
 from observational_succ.boundary_realization_selection import (
@@ -31,7 +31,7 @@ class ExactSpectralInverseTests(unittest.TestCase):
         quotient,remainder=pd(a,b)
         self.assertEqual(quotient,(F(1),F(1)))
         self.assertEqual(remainder,(F(),))
-        self.assertEqual(pmul(b,quotient),a)
+        self.assertEqual(pm(b,quotient),a)
         self.assertEqual(pgcd(a,b),b)
         self.assertEqual(rational_response(a,b),((F(1),F(1)),(F(1),)))
 
@@ -198,6 +198,39 @@ class SourceRoundTripHistoryTests(unittest.TestCase):
                  (F(11) if i==j==2 else F()))+(F(s) if i==j else F())
                 for j in range(3)) for i in range(3))
             self.assertEqual(matrix_inverse(base)[0][0],matrix_inverse(ext)[0][0])
+
+
+    def test_operational_krylov_canonical_chain_recovers_physical_path(self):
+        for g,diag,off in (
+            ((F(1),F(1)),(F(2),),()),
+            ((F(2),F(3),F(5)),(F(5),F(8)),(F(9),)),
+            ((F(2),F(3),F(5),F(7)),(F(5),F(8),F(12)),(F(9),F(25))),
+        ):
+            result=recover_operational_jacobi(chain_response(g))
+            self.assertEqual(result['port'],g[0])
+            self.assertEqual(result['diagonal'],diag)
+            self.assertEqual(result['offdiagonal_squared'],off)
+            self.assertEqual(result['minimal_observable_order'],len(g)-1)
+
+    def test_dark_star_canonical_minimal_geometry_differs_from_physical_graph(self):
+        # Symmetric star with one boundary-invisible antisymmetric eigenmode.
+        # Canonical observable chain has b^2=2 (not a physical g^2).
+        response=rational_response((F(2),F(4),F(1)),
+                                   (F(4),F(5),F(1)))
+        result=recover_operational_jacobi(response)
+        self.assertEqual(result['port'],F(1))
+        self.assertEqual(result['diagonal'],(F(3),F(2)))
+        self.assertEqual(result['offdiagonal_squared'],(F(2),))
+        self.assertEqual(result['minimal_observable_order'],2)
+        with self.assertRaises(SpectralSourceError):
+            recover_positive_chain(response)
+
+    def test_operational_inverse_rejects_invalid_nonpositive_Jacobi_link(self):
+        # This synthetic response has formal continued-fraction link b^2<0.
+        bad=rational_response((F(2),F(4),F(1)),
+                              (F(2),F(5),F(1)))
+        with self.assertRaises(SpectralSourceError):
+            recover_operational_jacobi(bad)
 
     def test_wrong_source_numeric_and_zero_coupling_rejected(self):
         with self.assertRaises(SpectralSourceError):
