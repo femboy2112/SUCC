@@ -254,6 +254,7 @@ class LabelledMarkovSource:
             levels.append(nxt)
         return tuple(levels)
 
+
     def backwards_events(self,prior):
         """Source-labelled Bayes cotransition, including parallel channels.
 
