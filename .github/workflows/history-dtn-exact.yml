@@ -23,6 +23,6 @@ jobs:
       - name: Exact finite growing-network source and hostile tests
         run: |
           python -m unittest discover -s tests -p 'test_growing_dtn_history.py' -v
-          python scripts/growing_dtn_history_probe.py
+          PYTHONPATH=. python scripts/growing_dtn_history_probe.py
       - name: Historical provenance gate
         run: python scripts/verify_provenance.py
