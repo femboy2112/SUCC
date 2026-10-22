@@ -120,6 +120,30 @@ It is not the original three-mode star. A generic source can therefore force a u
 
 This is the correct application of the classical Kalman minimal-realization firewall: boundary input/output data determine **only the controllable and observable subsystem** up to similarity, unless a stronger canonical realization class is justified.
 
+## SBK-07 — Hankel determinants are exact operational-depth witnesses
+
+There is a stronger, *finite moment* signature of the minimal visible geometry. Define the source-boundary moment Hankel matrix
+
+\[
+H_r=(\mu_{i+j})_{0\le i,j<r},\qquad
+\mu_k=\langle e_1,A^ke_1\rangle.
+\]
+
+It is **exactly the Gram matrix of the Krylov vectors** \(e_1,Ae_1,\ldots,A^{r-1}e_1\). For the strictly positive path Jacobi matrix with n hidden nodes,
+
+\[
+\boxed{\det H_r=\prod_{j=1}^{r-1}g_j^{2(r-j)}
+\quad(1\le r\le n),\qquad \det H_{n+1}=0.}
+\]
+
+**Proof.** The kth Krylov vector \(A^ke_1\) is supported only on coordinates 1 through k+1. Its coordinate at depth k+1 is the product \((-1)^k\prod_{j=1}^k g_j\), the unique shortest path from the boundary-facing state to that depth. Thus the n×r Krylov matrix has an upper-triangular first r×r block with diagonal \(1,-g_1,g_1g_2,\ldots,(-1)^{r-1}\prod_{j=1}^{r-1}g_j\) and all deeper rows zero. Its Gram determinant is the square of the triangular determinant, namely \(\prod_{j=1}^{r-1}g_j^{2(r-j)}\). Since there are only n states, the (n+1)st Krylov matrix has dependent columns and zero determinant. QED.
+
+This makes the **observable source depth** a family of boundary-computable exact invariants, *without assuming which interior state labels were used by a model builder*. Each additional nonzero principal Hankel minor establishes a new boundary-reachable dynamical layer. It also shows precisely why weak links are difficult to distinguish: \(\det H_r\) collapses rapidly as any \(g_j\to0\), although strict positivity keeps the mathematical rank unchanged.
+
+For g=(2,3,5,7), the exact Hankel determinants are \(1,9,2025,0\); visible dimension is 3. For the connected three-state dark star in SBK-04, the corresponding exact Hankel determinants are \(1,2,0\); visible dimension is **2 despite three physical states**. The exact code independently constructs Krylov vectors, their Gram matrices and these determinants; 5 new adversarial tests accompany the earlier 23.
+
+**Source caveat:** finite exact rank is not a physically certified rank under measurement error. To infer operational depth from noisy moments, establish spectral lower bounds for \(H_r\), conditioning, sensor calibration, and a prior admissible family. A tiny strictly positive determinant may be indistinguishable from zero within practical uncertainty.
+
 ## 6. SBK-N1 — no uniform physical stability without a coupling gap
 
 For `0<eps<1`, compare the one-hidden-node chain g=(1,eps) and the two-hidden-node chain g=(1,eps,1). Both have strictly positive conductances and are individually boundary-minimal. But for any real s≥0,
@@ -167,7 +191,7 @@ The response family encodes more data than a scalar. If the model class has d un
 ### Reproduction and references
 
 - Exact source: `observational_succ/spectral_boundary_rigidity.py` (pure stdlib/Fraction), no polynomial black box. Independent graph Schur baseline: earlier `observational_succ/boundary_realization_selection.py`.
-- Hostile tests: `tests/test_spectral_boundary_rigidity.py` (23 exact cases, including rational inverse, weak/dark modes and all source domains). Source-hashed receipt `scripts/spectral_boundary_rigidity_probe.py` with frozen JSON.
+- Hostile tests: `tests/test_spectral_boundary_rigidity.py` (28 exact cases, including rational inverse, weak/dark modes and all source domains). Source-hashed receipt `scripts/spectral_boundary_rigidity_probe.py` with frozen JSON.
 - **Provenance:** finite Jacobi m-functions and inverse spectral analysis: Fritz Gesztesy and Barry Simon, *M-Functions and Inverse Spectral Analysis for Finite and Semi-Infinite Jacobi Matrices*, Journal d'Analyse Mathématique 73 (1997), https://web.ma.utexas.edu/mp_arc-bin/mpa?yn=96-395. Kalman, *Mathematical Description of Linear Dynamical Systems*, SIAM J Control (1963), https://doi.org/10.1137/0301010. Finite passive ladder/continued fractions is classical network theory. These results are not presented as newly discovered mathematics.
 
 **Next verdict-changing target:** a **non-tautological source-faithful SUCC/FUCC spectral boundary functor** whose return-history Jacobi chain has interpretable intrinsic geometry, and which admits a real independently calibrated, predeclared dimensionless observable and a second held-out response. If source provenance fails, record that as a rigorous obstruction instead of asserting Einstein–Rosen geometry or RH.
