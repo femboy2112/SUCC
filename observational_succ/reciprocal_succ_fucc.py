@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from fractions import Fraction as Q
 from itertools import product
-from math import isqrt, prod
+from math import isqrt, prod, factorial
 
 
 class ReciprocalSourceError(ValueError):
@@ -307,3 +307,32 @@ def finite_reciprocal_boundary_hierarchy(N,p,t):
     q=N//p
     return tuple((p*j,j+t,Q(-1))
                  for j in range(max(1,q-t+1),min(q,N-t)+1))
+
+
+def factorial_gauge(alpha):
+    """D|alpha> = |alpha>/prod_p(alpha_p!); bounded injective, inverse unbounded."""
+    if type(alpha) is not tuple or not alpha or any(type(v) is not int or v<0 for v in alpha):
+        raise ReciprocalSourceError("exact finite nonnegative occupation tuple required")
+    return Q(1,prod(factorial(v) for v in alpha))
+
+
+def factorial_creator_intertwiner(alpha,index,primes,beta_even=2):
+    """Exact on c_00: D C_p = lambda_p V_p D (NOT bounded similarity).
+
+    Both returned scalars multiply |alpha+e_p>. Full prime sources required.
+    """
+    ps=tuple(genuine_prime(p) for p in primes)
+    if len(ps)!=len(alpha) or len(set(ps))!=len(ps) or not ps:
+        raise ReciprocalSourceError("occupied basis must match genuine prime labels")
+    if type(index) is not int or not 0<=index<len(ps):
+        raise ReciprocalSourceError("one declared prime-coordinate index required")
+    if type(beta_even) is not int or beta_even<2 or beta_even%2:
+        raise ReciprocalSourceError("exact square-root weights require even beta")
+    gauge=factorial_gauge(alpha)
+    nxt=list(alpha)
+    nxt[index]+=1
+    nxt=tuple(nxt)
+    lam=Q(1,ps[index]**(beta_even//2))
+    lhs=(alpha[index]+1)*lam*factorial_gauge(nxt)
+    rhs=lam*gauge
+    return lhs,rhs
