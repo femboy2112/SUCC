@@ -14,7 +14,8 @@ from observational_succ.reciprocal_succ_fucc import (
     pascal_prime_rank, direct_prime_rank, pascal_last_step,
     gibbs_rank_nonprojective, finite_reciprocal_boundary_defect,
     finite_reciprocal_square_on_basis, finite_reciprocal_power_square,
-    finite_reciprocal_boundary_hierarchy,
+    finite_reciprocal_boundary_hierarchy, factorial_gauge,
+    factorial_creator_intertwiner,
 )
 
 
@@ -283,5 +284,32 @@ class GradedReciprocalBoundaryTests(unittest.TestCase):
                 self.assertEqual(len(ports),t)
                 self.assertEqual({m for _,m,_ in ports},
                                  set(range(N//p+1,N//p+t+1)))
+
+
+class FactorialGaugeTransportTests(unittest.TestCase):
+    def test_pascal_creator_and_fucc_are_exactly_gauge_intertwined(self):
+        for ps in ((2,),(2,3),(2,3,5)):
+            for alpha in product(range(4),repeat=len(ps)):
+                for i in range(len(ps)):
+                    for beta in (2,4):
+                        lhs,rhs=factorial_creator_intertwiner(alpha,i,ps,beta)
+                        self.assertEqual(lhs,rhs)
+                        self.assertGreater(lhs,0)
+
+    def test_gauge_inverse_factorial_grows_without_uniform_bound(self):
+        for k in range(1,12):
+            d=factorial_gauge((k,))
+            self.assertEqual(1/d,factorial(k))
+        self.assertEqual(factorial_gauge((0,0,0)),1)
+        self.assertEqual(factorial_gauge((2,3)),Q(1,12))
+
+    def test_invalid_untyped_factorial_source_fails(self):
+        with self.assertRaises(ReciprocalSourceError):
+            factorial_gauge((1,2.0))
+        with self.assertRaises(ReciprocalSourceError):
+            factorial_creator_intertwiner((2,1),0,(2,6))
+        with self.assertRaises(ReciprocalSourceError):
+            factorial_creator_intertwiner((2,1),2,(2,3))
+
 
 if __name__=='__main__':unittest.main()
