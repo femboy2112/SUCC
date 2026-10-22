@@ -10,6 +10,7 @@ from observational_succ.reciprocal_succ_fucc import (
     reciprocal_braid, mixed_radix, finite_stationarity,
     weighted_affine_diamond, pascal_prime_rank, direct_prime_rank,
     gibbs_rank_nonprojective,
+    finite_reciprocal_boundary_defect, finite_reciprocal_square_on_basis,
 )
 
 
@@ -52,6 +53,20 @@ def main():
             for beta in (2,4):
                 assert pascal_prime_rank(ps,k,beta)==direct_prime_rank(ps,k,beta)
                 ranks+=1
+    boundary_cases=0
+    boundary_basis=0
+    for N in range(1,81):
+        for p in (2,3,5,7,11):
+            defect=finite_reciprocal_boundary_defect(N,p)
+            assert defect==((p*(N//p),N//p+1,Q(-1)) if N>=p else None)
+            boundary_cases+=1
+            for n in range(1,N+1):
+                lhs,rhs=finite_reciprocal_square_on_basis(n,N,p)
+                if defect is not None and n==defect[0]:
+                    assert lhs is None and rhs==defect[1]
+                else:
+                    assert lhs==rhs
+                boundary_basis+=1
     direct,cotrans=gibbs_rank_nonprojective((2,3),2)
     assert direct!=cotrans and cotrans>direct
     receipt={
@@ -63,6 +78,9 @@ def main():
         'exact_finite_generator_checks':generators,
         'flat_weighted_diamond_cases':flat,
         'divided_power_rank_source_cases':ranks,
+        'mixed_cutoff_boundary_cases':boundary_cases,
+        'mixed_cutoff_basis_checks':boundary_basis,
+        'rank_one_boundary_defect_exact':True,
         'projectivity_rank1_source_2_3_beta2':str(direct),
         'projectivity_rank2_cotransport_2_3_beta2':str(cotrans),
         'projectivity_false_equivalence_refuted':True,
