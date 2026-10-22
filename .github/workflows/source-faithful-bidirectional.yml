@@ -1,0 +1,43 @@
+name: Source-faithful bidirectional histories (exact)
+on:
+  push:
+    branches:
+      - research/source-faithful-bidirectional-histories-2026-10-22
+  pull_request:
+    paths:
+      - "observational_succ/bidirectional_source_histories.py"
+      - "tests/test_bidirectional_source_histories.py"
+      - "scripts/bidirectional_source_histories_probe.py"
+      - "research/2026-10-22/SOURCE_FAITHFUL_BIDIRECTIONAL_EXACT_RECEIPT.json"
+      - ".github/workflows/source-faithful-bidirectional.yml"
+  workflow_dispatch:
+jobs:
+  exact-history:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Exact source-history adversarial suite
+        env:
+          PYTHONPATH: .
+        run: python -m unittest discover -s tests -p 'test_bidirectional_source_histories.py' -v
+      - name: Frozen Git-blob source identity and rational replay
+        env:
+          PYTHONPATH: .
+        run: python scripts/bidirectional_source_histories_probe.py --check
+      - name: Existing provenance gate
+        env:
+          PYTHONPATH: .
+        run: python scripts/verify_provenance.py
+      - name: Observer and ordinal baseline probes
+        env:
+          PYTHONPATH: .
+        run: |
+          python scripts/observer_foundations_probe.py
+          python scripts/ordinal_succ_report_probe.py
