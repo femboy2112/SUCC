@@ -210,6 +210,26 @@ When \(N<p\), the left side is zero.
 
 Consequently, \( \|B_{p,N}\|=1 \) for all \(N\ge p\), but \(B_{p,N}\to0\) **strongly** as \(N\to\infty\), because the input bra \(\langle p\lfloor N/p\rfloor|\) escapes to infinity and every fixed \(\ell^2\) state has vanishing amplitude there. This is not uniform operator-norm convergence.
 
+
+
+### Graded Pascal-rung corollary: rank grows exactly with the backward horizon
+
+The rank-one case is the first cell in an exact hierarchy. Fix a positive integer \(t\). Since the full relation iterates as \(V_p^\dagger S^{pt}=S^t V_p^\dagger\), its complete-prefix finite compression has the explicit graded defect
+
+\[
+\boxed{
+V_{p,N}^\dagger S_N^{pt}-S_N^tV_{p,N}^\dagger
+=-\sum_{j=\max(1,q-t+1)}^{\min(q,N-t)}
+|j+t\rangle\langle pj|,
+\qquad q=\lfloor N/p\rfloor.}
+\]
+
+**Proof:** a source basis state \(|pj\rangle\), \(j\le q\), survives the reverse-first route precisely when \(j+t\le N\), and the forward-first route precisely when \(p(j+t)\le N\), i.e. \(j+t\le q\). Their difference consists exactly of the indices \(q<j+t\le N\); all nonmultiples vanish on both sides. The displayed summands have mutually orthogonal source and destination vectors. For fixed \(p,t\) and sufficiently large \(N\), the boundary defect has **exact rank \(t\)** and operator norm one, while converging strongly to zero as \(N\to\infty\).
+
+This gives a precise **rung-by-rung hierarchy of backward-returnable source channels**: a \(p\cdot t\)-step forward excursion can discard \(t\) distinct FUCC-recoverable amplitudes, not an uncontrolled cloud of information. The \(t=1\) formula is the rank-one case above. The arithmetic paths are the true original states; Pascal-like rank multiplicity is a bookkeeping analogy, not a derivation of a geometric metric.
+
+An independent finite source oracle checks **1,820 graded cutoff configurations and 60,060 basis inputs**, plus the existing 400 rank-one configurations and 16,200 rank-one basis inputs. Universal validity follows from the basis proof, not the finite census.
+
 **Source significance:** a finite forward observer discards a step beyond the present horizon; a subsequent backward FUCC quotient could have returned that same amplitude inside the observed carrier, but the necessary intermediate record was lost. A source-preserving completion must keep the boundary-excursion witness. This is a mathematical *future-boundary dependence*, not literal reversal of physical causality. Exact finite independent tests exhaust **16,200 basis inputs** over 400 \(N,p\) configurations and independently verify the rank-one support; the universal formula follows from the basis proof.
 
 ## Theorem RSFP-07: previous locality no-go survives its stated boundary
