@@ -1,0 +1,86 @@
+{
+  "2d_plus_1_identity_theorem_scope": "proper rational responses of degree at most d, exact distinct nonpole samples",
+  "RH_proved": false,
+  "academic_novelty_claimed": false,
+  "alpha_derived_from_SUCC": false,
+  "complete_response_recovered_from_seven_samples": true,
+  "dark_mode_counterexample_preserved_in_tests": true,
+  "exact_frequency_samples_for_max_order_3": [
+    [
+      "1",
+      "6/5"
+    ],
+    [
+      "2",
+      "82/61"
+    ],
+    [
+      "3",
+      "114/79"
+    ],
+    [
+      "4",
+      "50/33"
+    ],
+    [
+      "5",
+      "190/121"
+    ],
+    [
+      "6",
+      "234/145"
+    ],
+    [
+      "7",
+      "94/57"
+    ]
+  ],
+  "finite_chain_example_boundary_denominator": [
+    "31",
+    "13",
+    "1"
+  ],
+  "finite_chain_example_boundary_numerator": [
+    "30",
+    "22",
+    "2"
+  ],
+  "finite_chain_example_conductances": [
+    "2",
+    "3",
+    "5"
+  ],
+  "finite_chain_example_static_response": "30/31",
+  "global_gravitational_geometry_identified": false,
+  "mathematical_prior": "finite Jacobi/Weyl m-function inverse spectral theory; minimal transfer realizations",
+  "physical_observations_performed": false,
+  "research": "SUCC_SPECTRAL_BOUNDARY_SOURCE_RIGIDITY_2026_10_22",
+  "scope": "positive finite RC paths, fixed unit internal capacitances, exact Laplace DtN",
+  "signed_Weil_positivity_proved": false,
+  "source_conductances_reconstructed": [
+    "2",
+    "3",
+    "5"
+  ],
+  "source_module_git_blob": "5d97b71044539093976c9ffcd474d785d8b9fa92",
+  "spectral_new_layer_first_return_moments": {
+    "1": {
+      "all_earlier_moments_equal": true,
+      "exact_moment_jump": "1",
+      "first_different_moment": 2
+    },
+    "2": {
+      "all_earlier_moments_equal": true,
+      "exact_moment_jump": "225",
+      "first_different_moment": 4
+    },
+    "3": {
+      "all_earlier_moments_equal": true,
+      "exact_moment_jump": "11025",
+      "first_different_moment": 6
+    }
+  },
+  "test_module_git_blob": "8c471535f56da7ce547402f232c47bf4044d92e1",
+  "weak_extra_mode_frequency_1_exact_gap": "1/8012004",
+  "weak_extra_mode_gap_below_one_millionth": true
+}
