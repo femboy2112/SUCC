@@ -95,7 +95,7 @@ W|i\rangle=\frac1{\sqrt3}
 
 Its three supports are disjoint size-three sets, so `W†W=I`. This is one p-adic star, **not** an infinite tensor network or a p-adic CFT.
 
-### PB-01 (classical, proved explicitly): any two-leg bulk reconstruction
+### AEPB-01 (classical, proved explicitly): any two-leg bulk reconstruction
 
 Choose any visible pair of branch positions `x≠y` with observed values `u,v` and let `z` be the omitted position. Compute
 
@@ -114,7 +114,7 @@ The map `(u,v)↔(i,k)` is a 9-state basis permutation, defining a two-leg unita
 
 Thus arbitrary unknown bulk input, even entangled with an external reference, can be recovered from **each** of the three choices of two visible legs. Every operator on the logical space has a two-leg boundary representative, without no-cloning violations.
 
-### PB-02 (new-to-SUCC scoped intertwiner): authentic compressed prime transport
+### AEPB-02 (new-to-SUCC scoped intertwiner): authentic compressed prime transport
 
 Define the explicit two-leg map `T_{xy}` in decoded coordinates: `|i,k>↦|i+1,k>` for `i=0,1`, and `|2,k>↦0`. Its direct computational-basis action is implemented by `pair_decode` / `pair_encode` / `two_leg_prime_shift` in `arithmetic_epr_star.py`. The erased branch is unchanged.
 
@@ -128,7 +128,7 @@ Substitute the codeword formula to prove
 
 for all three distinct choices `(x,y)`. This is real operator reconstruction, not a graph illustration.
 
-### PB-03 (new-to-SUCC finite EPR transport): every one of nine region pairs
+### AEPB-03 (new-to-SUCC finite EPR transport): every one of nine region pairs
 
 At `beta=2`, the finite normalized prime-depth thermofield state is
 
@@ -151,7 +151,7 @@ Encode both sides with `W`. For *any* left two-leg region `A` and right two-leg 
 
 **All nine pairs pass exact integer support comparison**. The physical vector has 27 support words with common amplitude denominator `3 sqrt(21)`. The factor 2 comes from the genuine arithmetic coefficients; the code alone does not supply it. **Mutation:** coefficients `(4,2,2)` remain valid qutrit code data but violate the factor-two mirror identity in all nine pair tests.
 
-### PB-04 (classical exact entropy splitting): one bond plus logical bulk
+### AEPB-04 (classical exact entropy splitting): one bond plus logical bulk
 
 For every logical density matrix `rho`, the same decoder yields
 
@@ -171,7 +171,7 @@ This is the familiar **code-theoretic** area-plus-logical-entropy identity in an
 
 ## 5. Sharp no-go results from hostile controls
 
-### PB-N1: naive source compression does not preserve all SUCC composition
+### AEPB-N1: naive source compression does not preserve all SUCC composition
 
 On the full source, `V₂S=S²V₂`. On `C={1,2,4}` define `T=PV₂P` and `B=PSP`. Then
 
@@ -181,7 +181,7 @@ TB|1\rangle=|4\rangle,\qquad B^2T|1\rangle=0.
 
 So `TB≠B²T`. Full endpoint-projected compositions `PV₂SP=PS²V₂P` are still equal; the obstruction comes from **projections between path steps**. Any true global SUCC duality must preserve source-supported paths or specify controlled exit/error data. A finite code does not silently restore the lost braid.
 
-### PB-N2: infinite arithmetic entanglement cannot fit into a finite boundary code
+### AEPB-N2: infinite arithmetic entanglement cannot fit into a finite boundary code
 
 For every `beta>1` the global TFD has infinite Schmidt rank. No linear isometry from `ell²(N)` to a finite 3-qutrit boundary exists. For any pure state `phi` of Schmidt rank at most `D`, the standard Schmidt/Ky Fan estimate gives
 
@@ -232,11 +232,11 @@ Run (from repo root):
 **Observed locally:** 12 exact tests pass on Python 3.13; paper derivations above do not inherit Lean proof authority from those tests. The generated finite receipt also records SHA-256 hashes of the exact source and test modules. No existing archive or source manifest has been changed.
 
 **Ledger:**
-- PB-01 and PB-04: **CLASSICAL / explicit paper proof + exhaustive exact finite tests**.
-- PB-02 and PB-03: **PROVED LOCAL / new-to-SUCC compositional construction**; academic novelty not assessed.
-- PB-N1: **REFUTED** naive fully compositional three-state compression by exact counterexample.
-- PB-N2: **REFUTED** finite exact realization of entire infinite TFD by Schmidt rank.
-- PB-05: **CLASSICAL / paper proof**, not kernel formalization.
+- AEPB-01 and AEPB-04: **CLASSICAL / explicit paper proof + exhaustive exact finite tests**.
+- AEPB-02 and AEPB-03: **PROVED LOCAL / new-to-SUCC compositional construction**; academic novelty not assessed.
+- AEPB-N1: **REFUTED** naive fully compositional three-state compression by exact counterexample.
+- AEPB-N2: **REFUTED** finite exact realization of entire infinite TFD by Schmidt rank.
+- AEPB-05: **CLASSICAL / paper proof**, not kernel formalization.
 - Source-canonical multi-depth p-adic/adelic holography, quantum gravity, original signed Weil positivity and RH: **UNVERIFIED/OPEN**.
 
 **Verdict-changing next probe:** produce a compatible, source-indexed diagram for **both** `S` and `V_p` on a cofinal family of arithmetic charts, accounting for paths that leave finite sectors, and construct multi-depth Bruhat–Tits code maps whose refinement and two-sided operator reconstruction commute *without defining every map by conjugation*. Either demonstrate a nontrivial limit with uniform norm/source-error bounds or prove its obstruction. That—not another finite EPR pair—is the remaining geometric bridge.
