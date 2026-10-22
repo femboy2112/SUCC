@@ -96,3 +96,34 @@ class CompleteFiniteTableCalibration(unittest.TestCase):
   from observational_succ.witt_carry_learning import calibrated_ring_table_budget
   with self.assertRaises(LearningSourceError):calibrated_ring_table_budget(2,3,F(1,2))
   with self.assertRaises(LearningSourceError):calibrated_ring_table_budget(2,1,F(1,4),1)
+
+
+class CarryHolonomyTests(unittest.TestCase):
+ def test_each_coarse_loop_has_graded_nontrivial_mixed_lift(self):
+  from observational_succ.witt_carry_learning import lifted_succ_loop
+  for p,k in ((2,2),(2,3),(2,4),(3,2),(3,3),(3,4),(5,2),(5,3)):
+   a=lifted_succ_loop(p,k,'mixed')
+   b=lifted_succ_loop(p,k,'equal')
+   self.assertEqual(a['steps'],p**(k-1))
+   self.assertTrue(a['coarse_return'])
+   self.assertTrue(b['coarse_return'])
+   self.assertEqual(a['fine_value'],p**(k-1))
+   self.assertEqual(b['fine_value'],0)
+   self.assertTrue(a['fine_holonomy_nontrivial'])
+   self.assertFalse(b['fine_holonomy_nontrivial'])
+
+ def test_source_extension_remains_nonsplit_at_every_lift(self):
+  from observational_succ.witt_carry_learning import lifted_succ_loop
+  for p,k in ((2,2),(2,3),(2,4),(3,2),(3,3),(5,2)):
+   top=p**k;bottom=p**(k-1)
+   for u in range(1,p):
+    lift=1+u*bottom
+    self.assertEqual((bottom*lift)%top,bottom)
+   self.assertTrue(lifted_succ_loop(p,k,'mixed')['fine_holonomy_nontrivial'])
+
+ def test_wrong_unlicensed_source_model_rejected(self):
+  from observational_succ.witt_carry_learning import lifted_succ_loop
+  for call in (lambda:lifted_succ_loop(2,1,'mixed'),
+               lambda:lifted_succ_loop(3,3,'LORE'),
+               lambda:lifted_succ_loop(4,2,'mixed')):
+   with self.assertRaises(LearningSourceError):call()
