@@ -263,3 +263,25 @@ def gibbs_rank_nonprojective(primes,beta=2):
     h2=q[0]**2+q[0]*q[1]+q[1]**2
     projected=(q[0]**2+q[0]*q[1]/2)/h2
     return expected,projected
+
+
+def finite_reciprocal_boundary_defect(N,p):
+    """Sharp rank-one defect of Vp_N^* S_N^p - S_N Vp_N^*.
+
+    Returns (source_basis_n, target_basis_n, coefficient=-1), or None.
+    Forward affine braids remain exact on prefixes; this *mixed adjoint* one
+    fails at the last divisible input, and converges strongly (not in norm).
+    """
+    integer(N,1); genuine_prime(p)
+    q=N//p
+    return (p*q,q+1,Q(-1)) if q else None
+
+
+def finite_reciprocal_square_on_basis(n,N,p):
+    """Exact separate finite compressions, not an inferred infinite identity."""
+    integer(n,1); integer(N,1); genuine_prime(p)
+    if n>N:
+        raise ReciprocalSourceError("original finite basis element outside cutoff")
+    left=((n+p)//p if (n+p)<=N and (n+p)%p==0 else None)
+    right=(n//p+1 if n%p==0 and (n//p+1)<=N else None)
+    return (left,right)
