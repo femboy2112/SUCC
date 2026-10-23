@@ -1,6 +1,6 @@
 # Research claim ledger
 
-The research-only [Reality Pin supplement RP-01–RP-24](CLAIM_SUPPLEMENT_REALITY_PIN.md)
+The research-only [Reality Pin supplement RP-01–RP-25](CLAIM_SUPPLEMENT_REALITY_PIN.md)
 extends the spectral-boundary stack with labelled zero-forcing reconstruction,
 source-history return Grams, an infinite arithmetic operator with certified
 resolvent horizons, and calibrated model selection. Fully cyclic graph aliases

@@ -158,7 +158,7 @@
         "RH_side": "independent positive observer-to-FULL Weil distribution identity",
         "analytic_side": "rigorous prime/Gamma interval oracle for Suzuki negative witness",
         "quantum_side": "validated record-to-semantic covariance functor",
-        "theory_side": "representable G\u00f6del substitution/derivability formalization"
+        "theory_side": "representable Gödel substitution/derivability formalization"
       },
       "ordinal_reflection": {
         "claimed_truth": null,
@@ -301,6 +301,24 @@
     }
   },
   "parent_commit": "d2f760ab9d9a11719e950caeb2d54bfa5114f495",
-  "publication_note": "This receipt records the implementation commit and completed local evidence. The following documentation-only commit preserves every executable source fingerprint. Final exact-head workflow outcomes are reported in PR #244; no CI success is inferred from a queued run.",
-  "schema": "succ-reality-pin-validation-v1"
+  "publication_note": "This receipt records the implementation commit and completed local evidence. Subsequent documentation/claim-metadata commits preserve every executable source fingerprint. Final exact-head workflow outcomes are reported in PR #244; no CI success is inferred from a queued run.",
+  "schema": "succ-reality-pin-validation-v1",
+  "analytic_addendum": {
+    "claim": "RP-25 / GAC-1",
+    "status": "PROVED PAPER",
+    "domain": "each fixed real lambda != 0 and delta > 0; sigma > 1 outside an at-most-countable exceptional set",
+    "proof": "REALITY_PIN_GENERIC_ARITHMETIC_CYCLICITY.md",
+    "primary_input": "Rellich analytic parameterization, checked in Kriegl–Michor arXiv:math/0204060v4 Theorem (A)",
+    "validation": "Separate operator and adversarial agent derivations, then root proof and primary-source audit; shared model family, not external peer review or empirical replication. No finite computation or Lean certificate of this generic theorem.",
+    "specified_parameter_certified": false,
+    "lambda_zero_covered": false,
+    "polynomial_cyclicity_proved": false
+  },
+  "claim_metadata_rp25_recheck": {
+    "command": "python -m unittest discover -s tests -p 'test_claim_namespace*.py' -v",
+    "status": "PASS",
+    "tests": 15,
+    "exit_code": 0
+  },
+  "runtime_handoff_note": "Workspace became unavailable after the full local suite, initial publication and RP-25 namespace recheck. The generic paper proof and documentation edits were reconstructed from reviewed text and published through GitHub; executable files remain unchanged. Final validation uses exact-head GitHub CI."
 }

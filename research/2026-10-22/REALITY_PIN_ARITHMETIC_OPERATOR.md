@@ -235,6 +235,13 @@ Polynomial Krylov cyclicity can require additional moment-determinacy/density
 work for an unbounded operator and is not silently substituted for spectral
 cyclicity here.
 
+**Final-round refinement:** [GAC-1](REALITY_PIN_GENERIC_ARITHMETIC_CYCLICITY.md)
+now proves spectral cyclicity for each fixed nonzero lambda and every sigma>1
+outside an at-most-countable exceptional set. This does not certify sigma=2,
+lambda=0, polynomial density, or uniform spectral visibility. The full-family
+assertion above remains unresolved; the generic result has analytic paper-proof
+authority and is not inferred from the finite moment tests.
+
 There is, however, a complete source-labelled alternative that does not assume
 scalar cyclicity.
 
@@ -340,8 +347,9 @@ comparison, and the nonstationary old Gibbs state. The controlled tomography
 finite inverse test validates matrix algebra only, not access to physical
 superposition preparations.
 
-**Remaining missing theorem:** establish scalar spectral cyclicity (or produce an
-explicit genuine dark eigensector) for the declared full arithmetic `K`, with
+**Remaining missing theorem:** certify a specified source such as (lambda,sigma)
+=(1,2), classify GAC-1's exceptional set, or produce an explicit genuine dark
+eigensector. The lambda=0 case remains separate. Establish the full-family result with
 quantitative spectral weights if stable passive identification is wanted. A
 separate missing contact is a physical source whose permitted interventions and
 calibrated response realize these operators. Neither gap is filled by selecting

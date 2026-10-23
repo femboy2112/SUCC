@@ -1,7 +1,7 @@
 # Claim Index
 
 **2026-10-22 Reality Pin research stack:**
-[RP-01–RP-24](CLAIM_SUPPLEMENT_REALITY_PIN.md) ·
+[RP-01–RP-25](CLAIM_SUPPLEMENT_REALITY_PIN.md) ·
 [proof synthesis](../research/2026-10-22/REALITY_PIN_SYNTHESIS.md) ·
 [source and CI baseline](../research/2026-10-22/REALITY_PIN_BASELINE_PROVENANCE.json).
 The new RP namespace is registered; paper, finite, kernel and physical authority

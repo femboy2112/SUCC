@@ -8,7 +8,8 @@ routes from boundary data to an identified mathematical realization. It also
 proves why neither route licenses unrestricted physical topology. The strongest
 new positive finite result is labelled-graph reconstruction beyond paths. The
 strongest analytic construction is an actual infinite SUCC/FUCC operator with
-certified source-horizon errors. A fully cyclic path/triangle alias and a failed
+certified source-horizon errors and generic identity-state spectral cyclicity
+for each fixed nonzero additive coupling. A fully cyclic path/triangle alias and a failed
 thermal-state transfer supply two sharp obstructions.
 
 ## 1. Complete correspondence, with each arrow's authority
@@ -82,7 +83,22 @@ at a fixed common shift changes the second moment by eta squared, even though
 the affine relation holds for composites too. The relation alone does not
 authenticate primality.
 
-Scalar cyclicity of |1> for the full family remains UNVERIFIED. Source-labelled
+The final analytic audit proves more than the initial carrier construction:
+for each fixed real lambda != 0 and delta>0, |1> is spectrally cyclic for all
+sigma>1 outside an at-most-countable exceptional set. The prime series is an
+analytic bounded perturbation. Its derivative has integrable norm toward
+sigma=infinity, so no analytic eigenvalue branch escapes to infinity. Each
+branch reaches a distinct simple eigenvalue of the limiting additive Jacobi
+operator, with nonzero boundary weight. The classical global Rellich theorem
+then makes every degeneracy/zero-weight condition a nonidentically-zero
+analytic equation; the countable union of their discrete zero sets is countable.
+See the complete [generic cyclicity proof](REALITY_PIN_GENERIC_ARITHMETIC_CYCLICITY.md).
+
+This proves spectral cyclicity, not polynomial Krylov density, and supplies no
+uniform visibility bound or certificate at sigma=2. The combined exception set
+need not be discrete. Lambda=0 and the full-family statement remain UNVERIFIED.
+The frozen computational receipts retain a false full-family cyclicity flag;
+this new generic theorem has paper-proof authority only. Source-labelled
 S-word access is stronger: it reaches every basis vector, and full resolvent
 cross entries determine K and its domain in that basis. A source-labelled word
 Gram theorem also transports the whole named bounded-operator representation.

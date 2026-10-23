@@ -574,15 +574,18 @@ tomography supplies no completed Weil positivity inference.
 The [executed Reality Pin round](../research/2026-10-22/REALITY_PIN_SYNTHESIS.md)
 closes finite multiport observable reconstruction, a known-graph zero-forcing
 inverse, calibrated finite/compact selection, and analytic existence plus
-certified horizons for the actual arithmetic spectral operator. It preserves
+certified horizons for the actual arithmetic spectral operator. The final
+analytic audit proves identity-state spectral cyclicity for every fixed nonzero
+additive coupling outside an at-most-countable sigma exception set. It preserves
 fully cyclic topology aliases and the failure of the old Gibbs state under
 new dynamics. No empirical, gravitational or signed-Weil promotion follows.
 
 The next proof target is **stable source-labelled intervention reconstruction**:
 derive an effective separating probe family without assuming the unknown
 topology, or prove its impossibility under the declared access menu. For passive
-arithmetic spectroscopy, separately resolve scalar cyclicity and spectral
-visibility of |1>. For quantum transport, construct the K-Gibbs mirror with
+arithmetic spectroscopy, certify cyclicity at a named pair such as (1,2),
+classify the generic theorem's exceptions, and quantify spectral visibility of
+|1>. The lambda=0 case is still separate. For quantum transport, construct the K-Gibbs mirror with
 boundedness/source preservation. The next empirical contact is an independently
 calibrated RC run with frozen predictions and reserved holdout acquisition.
 See the [precise handoff](../handoffs/ASTRA_ULTRA_REALITY_PIN_NEXT_2026-10-22.md).

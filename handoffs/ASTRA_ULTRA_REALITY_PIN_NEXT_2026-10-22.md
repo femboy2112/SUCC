@@ -1,7 +1,7 @@
 # Reality Pin: the exact next dependency cut
 
 Start with [the synthesis](../research/2026-10-22/REALITY_PIN_SYNTHESIS.md),
-[claims RP-01–RP-24](../docs/CLAIM_SUPPLEMENT_REALITY_PIN.md), and the frozen
+[claims RP-01–RP-25](../docs/CLAIM_SUPPLEMENT_REALITY_PIN.md), and the frozen
 [exact source receipt](../research/2026-10-22/REALITY_PIN_EXACT_RECEIPT.json).
 This branch is stacked on PR #243 at
 `d2f760ab9d9a11719e950caeb2d54bfa5114f495`. Recheck live heads and CI; do not merge
@@ -20,16 +20,24 @@ complete-response fiber is `(a,c,L) -> (k a,c/k,k L)`.
 The actual infinite SUCC/FUCC operator now exists on D(log N), is self-adjoint,
 positive after the stated shift, and has compact resolvent and explicit source
 cutoff estimates. It is no longer appropriate to substitute an arbitrary finite
-Hamiltonian for it. Its scalar cyclicity is not proved. The old zeta-Gibbs state
+Hamiltonian for it. The final audit proves spectral cyclicity for each fixed
+nonzero lambda outside an at-most-countable exceptional set of sigma>1; read
+[GAC-1](../research/2026-10-22/REALITY_PIN_GENERIC_ARITHMETIC_CYCLICITY.md).
+This does not certify a specified sigma or cover lambda=0. The old zeta-Gibbs state
 is provably not stationary for this interacting operator.
 
-## Highest-value missing theorem: arithmetic identity-state cyclicity
+## Highest-value missing theorem: certify a named arithmetic source
 
 For real lambda, sigma>1 and the exact prime-source operator
 
     K = log N + lambda(S+S*) + sum_p p^-sigma(Vp+Vp*) + cI,
 
-prove or refute that |1> is spectrally cyclic. Since K has compact resolvent,
+prove or refute that |1> is spectrally cyclic at the fixed source
+**(lambda,sigma)=(1,2)**, with the declared positive scalar shift. More generally,
+classify or eliminate GAC-1's exceptional set and separately attack lambda=0.
+The generic theorem already gives a co-countable set at every fixed nonzero
+lambda, but neither lists its exceptions nor certifies a chosen integer sigma.
+Since K has compact resolvent,
 the precise obligation is: every eigenspace is one-dimensional, and every
 eigenvector has nonzero overlap with |1>. A proof only for a subfamily must say
 which parameter set it covers and whether exceptional values are excluded.
@@ -85,7 +93,9 @@ moments should lead to a minimal separating probe, not a fitted family.
 
 **PROVED:** paper theorems for minimal observable geometry, zero-forcing inverse,
 general first-return Gram jump, infinite arithmetic carrier and cutoff bounds,
-conditional selection, Schur composition, restricted continuum rigidity/fiber.
+conditional selection, Schur composition, restricted continuum rigidity/fiber,
+and fixed-nonzero-lambda generic spectral cyclicity outside an at-most-countable
+sigma exception set.
 Fourteen finite selection/equivalence/return-budget declarations have a pinned
 Lean checker and exact axiom audit. Weighted spectral identities are not Lean
 certified by association.
