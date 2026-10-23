@@ -25,6 +25,9 @@ class TestCSA01Coordinates(unittest.TestCase):
                 seen.add((m, r))
 
     def test_agrees_with_prime_residue_clock(self):
+        # Consistency check (same closed form as reciprocal_succ_fucc.residue_clock),
+        # NOT an independent oracle; the independent route is the explicit numpy
+        # divmod/permutation-matrix verification in the Daniel instrument pass.
         for p in (2, 3, 5, 7):
             for n in range(1, 50):
                 self.assertEqual(csp.polyphase_coords(n, p), residue_clock(n, p))

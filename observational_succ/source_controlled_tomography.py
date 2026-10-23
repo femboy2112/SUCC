@@ -177,7 +177,10 @@ def counterfeit_invisible(multiplier, probe_entries, lam=1, sigma=2):
 
     A probe entry is a pair (i, j). An isolated V_6 contributes nothing to
     {(2,3),(1,3),(1,5)} but something to (1,6). This is the matrix-side dual of
-    the Dirichlet-log witness.
+    the Dirichlet-log witness. The intended ``multiplier`` is a COMPOSITE
+    counterfeit; passing a genuine prime already in the base support merely
+    doubles that channel's weight (wide != base) and reports it "visible" --
+    correct but not the intended question.
     """
     for (i, j) in probe_entries:
         base = k_off_diagonal(i, j, lam, sigma, multipliers=primes_through(max(i, j)))
@@ -251,8 +254,8 @@ def assert_mathematical_only(requested_level):
     Raises unless ``requested_level == 1``; mathematical matrix elements do not
     establish that a physical observer can implement the operators.
     """
-    if requested_level != 1:
+    if type(requested_level) is not int or requested_level != 1:
         raise TomographyError(
-            f"access level {requested_level} not established by matrix algebra; "
+            f"access level {requested_level!r} not established by matrix algebra; "
             "this module provides level 1 (mathematical) only")
     return True

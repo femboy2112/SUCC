@@ -16,9 +16,14 @@ HDEF-02 builds the norm-preserving residue environment: the p orthonormal
         amplitude is p^{-1/2}, the projection probability 1/p, complementary
         1 - 1/p, and all p instrument outcomes sum to 1.
 HDEF-03 Fourier-character controls: residue-sector overlaps with a character
-        state all have magnitude p^{-1/2} but phases omega^{kr}; the magnitude
-        is BLIND to the residue, the phase DETERMINES it (the Hilbert/Fourier
-        shadow of FSO-01's "residue is necessary").
+        state all have magnitude p^{-1/2} but phases omega^{kr}. The magnitude
+        is BLIND to the residue; a single character k DETERMINES the residue
+        ONLY when gcd(k,p)=1 (for prime p, any k not divisible by p). For a
+        non-coprime (k,p) -- e.g. (p,k)=(4,2), overlaps (1/2,-1/2,1/2,-1/2) --
+        distinct residues share a phase, so that character does NOT recover the
+        residue. Correctly scoped, this is the Hilbert/Fourier shadow of
+        FSO-01's "residue is necessary": recovery needs a coprime character (or
+        the full character set).
 HDEF-04 prime-power factor p^{-r/2}, combined with [log N, V_p]=(log p)V_p to
         reconstruct log p / p^{r/2} = Lambda(p^r)/sqrt(p^r).
 
@@ -55,6 +60,14 @@ def _block(M):
     if type(M) is not int or M < 1:
         raise HilbertDefectError("block length M >= 1 required")
     return M
+
+
+def _rational_of(expr):
+    """Collapse an exact sympy expression to a Fraction (raises if irrational)."""
+    r = sp.nsimplify(sp.simplify(expr))
+    if not r.is_Rational:
+        raise HilbertDefectError(f"expected a rational value, got {r}")
+    return Q(int(r.p), int(r.q))
 
 
 # ---------------------------------------------------------------------------
@@ -115,7 +128,9 @@ def diagnostics(M, p):
     overlap = inner(h, Vu)
     diff = {i: Vu.get(i, 0) - h.get(i, 0) for i in set(Vu) | set(h)}
     nds = norm_sq(diff)
-    proj = Q(1, p)
+    # Born relation, DERIVED from the computed overlap (not hardcoded): the
+    # projection probability is |<h,Vu>|^2 and the complementary is 1 - that.
+    proj = _rational_of(sp.Abs(overlap) ** 2)
     comp = 1 - proj
     # distinctness: overlap (p^{-1/2}), nds (2-2p^{-1/2}), proj (1/p) are three
     # different values for p >= 2
@@ -188,7 +203,9 @@ def environment_certificate(M, p):
     uniform_decomp = all(sp.simplify(h.get(i, 0) - recon.get(i, 0)) == 0
                          for i in set(h) | set(recon))
     amp = inner(h, sectors[p - 1])            # uniform-channel amplitude
-    probs = tuple(Q(1, p) for _ in range(p))
+    # Born probabilities DERIVED from the real amplitudes |<h, h^{(r)}>|^2, not
+    # hardcoded: "sum to 1" then tests the sector physics, not the constructor.
+    probs = tuple(_rational_of(sp.Abs(inner(h, sectors[r])) ** 2) for r in range(p))
     return EnvironmentCertificate(
         orthonormal, vp_terminal, uniform_decomp, sp.simplify(amp),
         probs, sum(probs) == 1)
@@ -212,12 +229,16 @@ def character_sector_overlap(p, k, r):
 
 
 def magnitude_blind_phase_informative(p, k):
-    """For a fixed nonzero character k, overlaps with all p sectors share the
+    """Overlaps with all p sectors share magnitude p^{-1/2}; phases are DISTINCT
 
-    magnitude p^{-1/2} but have distinct phases, so the residue is recoverable
-    from the phase alone. Returns (magnitudes_all_equal, phases_all_distinct).
-    Distinctness is decided by pairwise exact simplification (not set identity,
-    which is unsafe for non-canonical sympy forms).
+    iff gcd(k,p)=1 (for prime p, any k with p does-not-divide k). Only then is
+    the residue recoverable from a single character's phase. For a non-coprime
+    (k,p) the map r -> omega^{kr} is not injective and distinct residues share a
+    phase (e.g. (p,k)=(4,2) gives phases 1,-1,1,-1). Returns
+    (magnitudes_all_equal, phases_all_distinct); distinctness is decided by
+    pairwise exact simplification (not set identity, which is unsafe for
+    non-canonical sympy forms), so the function returns the honest False in the
+    non-coprime region.
     """
     _modulus(p)
     overlaps = [character_sector_overlap(p, k, r) for r in range(p)]

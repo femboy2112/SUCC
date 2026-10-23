@@ -67,6 +67,48 @@ class TestHDEF03Fourier(unittest.TestCase):
                 self.assertTrue(hd.orientation_reversal_conjugates(p, 1, r))
 
 
+class TestHDEF03ScopeBoundary(unittest.TestCase):
+    """Pin the gcd(k,p)=1 hypothesis that HDEF-03 phase recovery requires (D'Alembert F1)."""
+
+    def test_phase_recovery_fails_when_not_coprime(self):
+        # non-coprime (k,p): distinct residues share a phase -> not recoverable
+        for (p, k) in [(4, 2), (6, 2), (6, 3), (5, 5), (9, 3)]:
+            mags_equal, phases_distinct = hd.magnitude_blind_phase_informative(p, k)
+            self.assertTrue(mags_equal)
+            self.assertFalse(phases_distinct)         # the honest False
+
+    def test_phase_recovery_holds_when_coprime(self):
+        for (p, k) in [(5, 1), (7, 1), (5, 2), (7, 3)]:
+            _, phases_distinct = hd.magnitude_blind_phase_informative(p, k)
+            self.assertTrue(phases_distinct)
+
+    def test_collapsing_overlaps_receipt(self):
+        # (p,k)=(4,2): phases 1,-1,1,-1 -> residues 0,2 collapse, 1,3 collapse
+        vals = [hd.character_sector_overlap(4, 2, r) for r in range(4)]
+        self.assertEqual(sp.simplify(vals[0] - vals[2]), 0)   # residue 0 == 2
+        self.assertEqual(sp.simplify(vals[1] - vals[3]), 0)   # residue 1 == 3
+        self.assertNotEqual(sp.simplify(vals[0] - vals[1]), 0)
+
+
+class TestHDEF01BornRelationDerived(unittest.TestCase):
+    """projection prob and outcome probs are DERIVED from the overlaps (D'Alembert F2)."""
+
+    def test_projection_prob_is_overlap_squared(self):
+        for p in (2, 3, 5):
+            d = hd.diagnostics(3, p)
+            # Born relation: the stored projection_prob equals |coarse_overlap|^2
+            self.assertEqual(sp.simplify(d.coarse_overlap ** 2 - d.projection_prob), 0)
+            self.assertEqual(d.projection_prob + d.complementary, 1)
+
+    def test_outcome_probs_are_amplitudes_squared(self):
+        for p in (2, 3, 5):
+            cert = hd.environment_certificate(4, p)
+            # each outcome prob equals |uniform_channel_amplitude|^2 = 1/p
+            self.assertTrue(all(sp.simplify(sp.Abs(cert.uniform_channel_amplitude) ** 2 - pr) == 0
+                                for pr in cert.outcome_probs))
+            self.assertEqual(sum(cert.outcome_probs), 1)
+
+
 class TestHDEF04PrimePowerAndFirewall(unittest.TestCase):
     def test_prime_power_overlap(self):
         for p in (2, 3):
