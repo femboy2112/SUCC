@@ -169,3 +169,27 @@ This stacked branch REUSES the authenticated PR #247 `pi_interval()` Archimedean
 **Measured-geometry corollary.** If a non-Haar secondary circle `(T,d,μ)` is reparameterized by such a lawful h, then `h_*μ` cannot be Haar: if h is id or reflection and `h_*μ=λ`, reflection invariance of λ implies μ=λ, contradiction. This is the precise sense in which the nonuniform reconstruction cannot be 'made into a perfect measured circle' by a gauge that preserves doubling. The original Euclidean circle geometry remains completely intact.
 
 **Scope necessity:** for b=3, a nonzero translation by 1/2 *does* commute with T_3 because `(b-1)c=0 mod 1`; the b=2 fixed-origin argument is special. Any global claim for all b needs the appropriate finite rotational centralizer. If one abandons equivariance altogether, an atomless full-support measure may be reparameterized to Haar by its distribution function; that operation changes the dynamics and is not a repair within the declared source/action contract.
+
+## SCR-11. Min-plus source-aware prime-word transport, a strictly stronger finite estimate (PAPER / EXACT TESTED)
+
+The uniform `L_M ε_M` term in SCR-04 throws away which prime-factor **path** is actually reliable. The full circle semigroup supplies multiple factorizations that reach the same geometric state. Their endpoints commute; their *measured error budgets* need not be equal. A source-faithful observer may choose the least-expensive admissible proof route, without changing any mathematical transformation.
+
+For exact authentic cosine moments define `d_1=0` and recursively for `n>=2`,
+
+`d_n = min_(p genuine prime | n) [d_(n/p)+|c_n−c_(n/p)|]`.
+
+Each minimizing path is a chain of genuine prime coverings; every term is exact and nonnegative. By telescoping along that path, `|c_n−c_1|<=d_n`. For supplied **rational enclosures** of coefficients, replace each edge by the maximal absolute difference between the corresponding two intervals; the same inequality survives uniformly for every compatible source. A previous composite factor is never falsely promoted to a new independent prime generator.
+
+Set
+
+`W_M = [2/(M−1)]Σ_(n=1)^(M−1)(1−n/M)d_n`.
+
+The Fejér proof of SCR-04 now gives the **sharper individual and uniform estimates**
+
+**`|c_h|<=min(1,d_h+max(η/2,1/(M−1)+W_M))`, for every 1<=h<=M.**
+
+Since `d_h<=Ω(h)ε_M<=L_M ε_M` and the Fejér weights sum to `(M−1)/2`, `W_M<=L_M ε_M`; this never gives a weaker bound than SCR-04's uniform estimate. A proposed empirical theorem may use `max_(h<=M_N)d_h→0` instead of the stronger `L_M ε_(M_N,N)→0`; the same SCR-05 amplification proves normality as long as the chord deficit and horizon hypotheses are also discharged.
+
+**Proof** is only nonnegative Fejér integration plus a finite min-plus shortest-path recurrence on the canonical divisor directed acyclic graph, not a new multiplicative independence theorem. It composes with source-retained future histories and avoids assuming an arbitrary factor order is cheapest. The math is an exact realization of SUCC's 'same boundary, multiple lawful paths' ethos; independent academic novelty remains **UNVERIFIED**.
+
+**Hostile controls:** the synthetic moment-like vector `c_1=0,c_2=1/4,c_3=1/2,c_6=1/3` has 1→2→6 path cost `1/3` versus 1→3→6 cost `2/3`, although both routes end at multiplier six. This synthetic vector is **not asserted to be a probability source**; it tests the combinatorial optimizer only. Genuine rational source families q=3,5,7,9 and their outward exact intervals verify that the min-plus bound encloses every actual harmonic and never exceeds the preceding uniform budget. The finite π sample remains at the honest trivial bound 1.
