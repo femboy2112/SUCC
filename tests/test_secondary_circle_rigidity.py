@@ -293,5 +293,55 @@ class IndependentCyclotomicWitness(unittest.TestCase):
         self.assertTrue(result["one_sided_phase_mutant_rejected"])
 
 
+class MinplusPrimeWordTransport(unittest.TestCase):
+    def test_24_minplus_costs_improve_naive_all_prime_uniform_budget(self):
+        from observational_succ.secondary_circle_rigidity import minplus_prime_chord_certificate
+        for q in (3,5,7,9):
+            for M in (8,16,32,60):
+                c=moments_for_q(q,2,M)
+                m=minplus_prime_chord_certificate(c)
+                old=real_chord_rigidity(c)
+                self.assertLessEqual(m.uniform_cosine_bound,old.harmonic_bound)
+                for n in range(1,M+1):
+                    self.assertEqual(math.prod(m.prime_paths[n]),n)
+                    self.assertGreaterEqual(m.path_costs[n],abs(c[n]-c[1]))
+                    self.assertGreaterEqual(m.per_frequency_bounds[n],abs(c[n]))
+                self.assertGreaterEqual(m.fejer_weighted_cost,0)
+
+    def test_25_prime_factor_order_matters_for_cost_not_endpoint(self):
+        from observational_succ.secondary_circle_rigidity import minplus_prime_chord_certificate
+        # This algebraic cost-graph synthetic input is NOT advertised as an
+        # authenticated probability source. Test only min-plus recurrence.
+        c=[Q(1),Q(0),Q(1,4),Q(1,2),Q(1,4),Q(0),Q(1,3)]
+        result=minplus_prime_chord_certificate(c)
+        self.assertEqual(result.path_costs[6],Q(1,3))
+        self.assertEqual(result.prime_paths[6],(2,3))
+        self.assertGreater(Q(1,2)+Q(1,6),result.path_costs[6])
+
+    def test_26_interval_minplus_dominates_exact_and_below_blunt_budget(self):
+        from observational_succ.secondary_circle_rigidity import (
+            minplus_prime_chord_certificate,interval_minplus_prime_chord_certificate)
+        for q in (3,5,7,9):
+            c=moments_for_q(q,2,36)
+            intervals=[(max(-Q(1),v-Q(1,100000)),min(Q(1),v+Q(1,100000))) for v in c]
+            intervals[0]=(Q(1),Q(1))
+            it=interval_minplus_prime_chord_certificate(intervals)
+            exact=minplus_prime_chord_certificate(c)
+            prior=interval_prime_and_chord_budget(intervals)
+            self.assertGreaterEqual(it.uniform_cosine_bound,exact.uniform_cosine_bound)
+            self.assertLessEqual(it.uniform_cosine_bound,prior.harmonic_bound)
+            for n in range(1,37):
+                self.assertGreaterEqual(it.per_frequency_bounds[n],abs(c[n]))
+                self.assertEqual(math.prod(it.prime_paths[n]),n)
+
+    def test_27_pi_interval_minplus_source_remains_finite_only(self):
+        from observational_succ.secondary_circle_rigidity import (
+            certified_pi_cosine_intervals,interval_minplus_prime_chord_certificate)
+        data=certified_pi_cosine_intervals(2,5,12,level=18,precision=85,order=28)
+        m=interval_minplus_prime_chord_certificate(data)
+        self.assertEqual(m.uniform_cosine_bound,1)
+        self.assertTrue(all(v>=0 for v in m.path_costs))
+
+
 if __name__ == "__main__":
     unittest.main()
