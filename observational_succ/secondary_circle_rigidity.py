@@ -321,3 +321,73 @@ def doubled_origin_preimages(depth: int) -> tuple[Q, ...]:
     """
     _natural(depth, "depth", 0)
     return tuple(Q(j,1 << depth) for j in range(1 << depth))
+
+
+@dataclass(frozen=True)
+class PrimePathRigidity:
+    """Optimal min-plus PRIME-WORD path cost among the supplied edge budgets.
+
+    Exact costs require actual probability-measure cosine observations, or
+    certified upper intervals. This is graph-path optimization, not an
+    independently established physical or probabilistic independence claim.
+    """
+    cutoff: int
+    path_costs: tuple[Q, ...]
+    prime_paths: tuple[tuple[int, ...], ...]
+    fejer_weighted_cost: Q
+    per_frequency_bounds: tuple[Q, ...]
+    uniform_cosine_bound: Q
+
+
+def minplus_prime_chord_certificate(cos_moments: Sequence[Q | int]) -> PrimePathRigidity:
+    """Sharper exact Fejer estimate using the least-cost prime-factor order.
+
+    Cost(1)=0; Cost(n)=min_(p|n)[Cost(n/p)+|c_n-c_(n/p)|].
+    Write W=2/(M-1) sum_(n=1)^(M-1)(1-n/M) Cost(n). Then
+    |c_h| <= Cost(h)+max(eta/2, 1/(M-1)+W), 1<=h<=M.
+    A legal prime path is recorded for every n; no composite primitive admitted.
+    """
+    c=tuple(_rat(v,"cos moment") for v in cos_moments)
+    prior=real_chord_rigidity(c)
+    M=prior.cutoff
+    paths=[() for _ in range(M+1)]
+    costs=[Q() for _ in range(M+1)]
+    for n in range(2,M+1):
+        choices=[]
+        for p in set(factor_word(n)):
+            parent=n//p
+            choices.append((costs[parent]+abs(c[n]-c[parent]),paths[parent]+(p,)))
+        cost,path=min(choices)
+        costs[n]=cost
+        paths[n]=path
+    weighted=Q(2,M-1)*sum((Q(M-n,M)*costs[n] for n in range(1,M)),Q())
+    offset=max(prior.chord_deficit/2,Q(1,M-1)+weighted)
+    result=[Q(0)]+[min(Q(1),costs[n]+offset) for n in range(1,M+1)]
+    return PrimePathRigidity(M,tuple(costs),tuple(paths),weighted,
+                             tuple(result),max(result[1:]))
+
+
+def interval_minplus_prime_chord_certificate(
+        intervals: Sequence[tuple[Q,Q]]) -> PrimePathRigidity:
+    """Source-interval version; each edge cost is a certified worst-case bound."""
+    prior=interval_prime_and_chord_budget(intervals)
+    pairs=tuple((_rat(a,"lower"),_rat(b,"upper")) for a,b in intervals)
+    M=prior.cutoff
+    paths=[() for _ in range(M+1)]
+    costs=[Q() for _ in range(M+1)]
+    for n in range(2,M+1):
+        choices=[]
+        for p in set(factor_word(n)):
+            parent=n//p
+            al,au=pairs[n]
+            bl,bu=pairs[parent]
+            edge=max(abs(al-bu),abs(au-bl))
+            choices.append((costs[parent]+edge,paths[parent]+(p,)))
+        cost,path=min(choices)
+        costs[n]=cost
+        paths[n]=path
+    weighted=Q(2,M-1)*sum((Q(M-n,M)*costs[n] for n in range(1,M)),Q())
+    offset=max(prior.chord_deficit/2,Q(1,M-1)+weighted)
+    result=[Q(0)]+[min(Q(1),costs[n]+offset) for n in range(1,M+1)]
+    return PrimePathRigidity(M,tuple(costs),tuple(paths),weighted,
+                             tuple(result),max(result[1:]))
