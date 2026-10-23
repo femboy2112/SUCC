@@ -17,6 +17,7 @@ from observational_succ.circle_collision_rigidity import (
     outward_decimal, pi_interval, polygon_moment,
     prime_carries, replica_count, vertex_orbits, certified_energy,
     polygon_ensemble_fourier_square, polygon_ensemble_energy,
+    wallis_from_circle_moments,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -77,6 +78,8 @@ def construct():
         "polygon_ensemble_fourier_16_N6_h1_m4pow12": str(
             polygon_ensemble_fourier_square(16, 1, 6, 4**12)),
         "selected_fixed_vertex_energy_M3": "4",
+        "wallis_circumference_bracket_k5": [
+            frac(u) for u in wallis_from_circle_moments(5)],
         "pi_polygon_interval_20_decimal12": list(outward_decimal(*pi20, 12)),
         "actual_pi_fejer_16_N5_M2_decimal12": list(outward_decimal(*pi5, 12)),
         "actual_pi_fejer_16_N8_M3_decimal12": list(outward_decimal(*pi8, 12)),
