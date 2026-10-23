@@ -560,6 +560,53 @@
         "observational_succ/residue_hilbert_defect.py",
         "observational_succ/carry_safe_probe_compiler.py"
       ]
+    },
+    {
+      "namespace": "CIRCLE_GAMMA_PRIME_DIGITS",
+      "bare_prefix": "CGPD",
+      "fq_prefix": "CGPD",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_CIRCLE_GAMMA_PRIME_DIGITS.md"
+      ],
+      "id_count": 14,
+      "status": "RESEARCH (PROVED LOCAL finite instrument; no Lean kernel; no pi-normality/RH/abc/Weil positivity/novelty)",
+      "topic": "Circle geometry, Gamma, complete prime system and exact pi digit-cylinder transitions (#229)",
+      "code": [
+        "observational_succ/circle_gamma_prime_digits.py"
+      ]
+    },
+    {
+      "namespace": "PI_GAMMA_PRIME_CARRY",
+      "bare_prefix": "PCG",
+      "fq_prefix": "PCG",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PI_GAMMA_PRIME_CARRY.md"
+      ],
+      "id_count": 11,
+      "status": "RESEARCH (paper + finite tests; no inherited proof-kernel admission; no pi-normality/RH)",
+      "topic": "pi / Gamma / joint prime-power Kummer carry transport (#231)",
+      "code": [
+        "observational_succ/pi_prime_carry_transport.py"
+      ]
+    },
+    {
+      "namespace": "PRIME_BRIDGE",
+      "bare_prefix": "PBR",
+      "fq_prefix": "PBR",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_ARITHMETIC_ER_EPR.md"
+      ],
+      "id_count": 20,
+      "status": "MIXED (analytic paper proofs / finite tests / narrow Lean execution; gravitational duality and RH unproved)",
+      "topic": "Prime Bridge: arithmetic entanglement, p-adic reconstruction, exact quantum-code obstructions (#233)",
+      "code": [
+        "observational_succ/arithmetic_entanglement.py",
+        "observational_succ/arithmetic_operator_interface.py",
+        "observational_succ/arithmetic_tfd.py",
+        "observational_succ/holographic_reconstruction.py",
+        "observational_succ/interacting_arithmetic_hamiltonian.py",
+        "observational_succ/padic_bulk_network.py"
+      ]
     }
   ],
   "resolved_collisions": [
