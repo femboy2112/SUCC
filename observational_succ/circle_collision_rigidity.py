@@ -286,3 +286,36 @@ def outward_decimal(lo, hi, places=12):
     scale = 10**places
     a, b = Q(lo)*scale, Q(hi)*scale
     return a.numerator//a.denominator, -((-b.numerator)//b.denominator), scale
+
+
+def polygon_ensemble_fourier_square(base, frequency, horizon, vertices):
+    """Exact mean over ALL m-gon vertices of |A_(h,N)(r/m)|².
+
+    Root-of-unity orthogonality makes this a count of pairs satisfying
+    m | h*(b^j-b^k). This is an ENSEMBLE identity, not a selected π orbit.
+    """
+    if any(type(z) is not int for z in (base, frequency, horizon, vertices)):
+        raise ValueError("integer source parameters")
+    if base < 2 or frequency == 0 or horizon < 1 or vertices < 2:
+        raise ValueError("invalid polygon/time/frequency")
+    addresses = [pow(base, j, vertices) for j in range(horizon)]
+    count = sum(1 for a in addresses for c in addresses
+                if (frequency*(a-c)) % vertices == 0)
+    return Q(count, horizon*horizon)
+
+
+def polygon_ensemble_energy(base, horizon, band, vertices):
+    """Exact m-gon ENSEMBLE average of K_M pair energy for T_b orbits.
+
+    If m>M*(b^(N-1)-1), every nonzero frequency has only diagonal
+    congruences and the answer is exactly 1+M/N. Exceptional points
+    (e.g. source vertex 0) are not controlled by that average.
+    """
+    if any(type(z) is not int for z in (base, horizon, band, vertices)):
+        raise ValueError("integer source parameters")
+    if base < 2 or horizon < 1 or band < 1 or vertices < 2:
+        raise ValueError("invalid ensemble scale")
+    return 1+2*sum(
+        (Q(band+1-h, band+1) *
+         polygon_ensemble_fourier_square(base, h, horizon, vertices)
+         for h in range(1, band+1)), Q())
