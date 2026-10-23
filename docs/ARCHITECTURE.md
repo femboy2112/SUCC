@@ -1,5 +1,16 @@
 # Architecture of Observational SUCC
 
+**Reality Pin research extension (2026-10-22).** Source-labelled operator
+histories map to a boundary response, then to a canonical observable quotient.
+The quotient preserves boundary Gram/return laws, not arbitrary physical node
+identity. A known graph, edge signs and zero-forcing probe set supply a separate
+coordinate-rigidity theorem. The actual arithmetic K has certified resolvent
+prefix limits, while source action cutoffs retain their horizon defects.
+Model-selection fibers and source/measurement authority remain distinct types;
+the old H0 Gibbs state cannot be silently reused as equilibrium for K.
+See [source maps and failure conditions](../research/2026-10-22/REALITY_PIN_SYNTHESIS.md)
+and [RP claim authority](CLAIM_SUPPLEMENT_REALITY_PIN.md).
+
 ## Goal
 
 **Keep the general observer/knowledge theory independent of RH.** Maintain a small, auditable core for causal actualization, computational syntax, proof authority and physically motivated finite quantum instruments. Preserve imported number-theoretic laboratories as optional applications rather than treating RH as axiomatic.
