@@ -1,0 +1,103 @@
+{
+  "authentic_circle_pi_source": "PR247 pi_interval and _cos_enclosure",
+  "claim": "research_only_finite_no_pi_normality_RH_or_Weil_proof",
+  "doubling_half_turn_rotation_commutator": "1/2",
+  "five_gon_all_but_five_prime_counterexample": {
+    "first_chord": "2",
+    "prime_defect_at_cutoff_4": "0",
+    "prime_defect_at_cutoff_5": "1"
+  },
+  "independent_cyclotomic_oracle": {
+    "exact_cyclotomic_moment_checks": 126,
+    "interpretation": "finite algebra oracle, no infinite normality claim",
+    "one_sided_phase_mutant_rejected": true
+  },
+  "one_ninth_persistent_chord_defect": {
+    "first_chord": "2",
+    "third_chord": "3",
+    "third_harmonic_cosine": "-1/2"
+  },
+  "parent_pr": 247,
+  "pi_cases": [
+    {
+      "Fourier_h1_bound_scaled_1e12_upper": 1000000000000,
+      "asymptotic_theorem_claim": false,
+      "base": 2,
+      "chord_deficit_scaled_1e12_upper": 33257723210,
+      "cos1_scaled_1e12_outer": [
+        16628861604,
+        16628861605
+      ],
+      "cutoff": 12,
+      "horizon": 5,
+      "mean_chord_scaled_1e12_outer": [
+        1966742276790,
+        1966742276791
+      ],
+      "minplus_harmonic_bound_scaled_1e12_upper": 1000000000000,
+      "prime_cosine_defect_scaled_1e12_upper": 883333313131,
+      "real_harmonic_bound_scaled_1e12_upper": 1000000000000
+    },
+    {
+      "Fourier_h1_bound_scaled_1e12_upper": 1000000000000,
+      "asymptotic_theorem_claim": false,
+      "base": 16,
+      "chord_deficit_scaled_1e12_upper": 262532762156,
+      "cos1_scaled_1e12_outer": [
+        131266381077,
+        131266381078
+      ],
+      "cutoff": 20,
+      "horizon": 5,
+      "mean_chord_scaled_1e12_outer": [
+        1737467237844,
+        1737467237845
+      ],
+      "minplus_harmonic_bound_scaled_1e12_upper": 1000000000000,
+      "prime_cosine_defect_scaled_1e12_upper": 637815809331,
+      "real_harmonic_bound_scaled_1e12_upper": 1000000000000
+    }
+  ],
+  "proof_obligation": "eta_N -> 0 AND floor(log2(M_N))*epsilon_(M_N,N) -> 0 for growing subexponential M_N",
+  "rational_periodic_controls": [
+    {
+      "base": 2,
+      "certificate_bound": "1",
+      "first_chord": "3",
+      "max_harmonic": "1",
+      "minplus_certificate_bound": "1",
+      "modulus": 3,
+      "prime_defect": "3/2"
+    },
+    {
+      "base": 2,
+      "certificate_bound": "1",
+      "first_chord": "5/2",
+      "max_harmonic": "1",
+      "minplus_certificate_bound": "1",
+      "modulus": 5,
+      "prime_defect": "5/4"
+    },
+    {
+      "base": 2,
+      "certificate_bound": "1",
+      "first_chord": "7/3",
+      "max_harmonic": "1",
+      "minplus_certificate_bound": "1",
+      "modulus": 7,
+      "prime_defect": "7/6"
+    },
+    {
+      "base": 2,
+      "certificate_bound": "1",
+      "first_chord": "2",
+      "max_harmonic": "1",
+      "minplus_certificate_bound": "1",
+      "modulus": 9,
+      "prime_defect": "3/2"
+    }
+  ],
+  "source_sha256": "02e06c7eff09514d706a6c6e416232b5a006906d9073f13775e55d701a087e13",
+  "test_sha256": "6035c3a29a559bb60e90f3dd61b3050ae9f4814862de6fa9c7f57beac8f1d95b",
+  "tripling_half_turn_rotation_commutator": "0"
+}
