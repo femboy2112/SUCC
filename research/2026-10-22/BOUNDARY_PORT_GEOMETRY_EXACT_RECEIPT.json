@@ -1,0 +1,27 @@
+{
+  "Cherenkov_emission_derived": false,
+  "Lean_kernel_checked": false,
+  "RH_proved": false,
+  "asymmetric_six_vertex_holdout_forward_steps": 600,
+  "asymmetric_six_vertex_holdout_reverse_steps": 600,
+  "claim_namespace": "BPGS-01..12",
+  "finite_observable_classes": 4,
+  "finite_observation_refinement_rounds": 1,
+  "fixed_port_permutations": 24,
+  "g0_contact_a1": "7/6",
+  "g7_contact_a1": "49/41",
+  "genuine_physical_FUCC_derived": false,
+  "hidden_g7_no_contact_response": "1",
+  "hidden_mixed_third_derivative": "1/8",
+  "independent_physical_source_authenticated": false,
+  "known_family_contact_inversions": 16,
+  "logged_reverse_source_events": 96,
+  "rational_exact": true,
+  "source_git_blob_sha1": {
+    "observational_succ/boundary_port_geometry.py": "ea7cddc2928d35d2cbc6c4070f56a18fcc5639c6",
+    "tests/test_boundary_port_geometry.py": "3d9a81c439a10d68eeb948d36e47c8d15e58006f"
+  },
+  "source_intermediate_jet_equalities": 96,
+  "source_parent": "PR239@6b50a7828cb9350aa391a5469cde8454b8a0b95c",
+  "two_strength_visible_port_r7": "9/32"
+}
