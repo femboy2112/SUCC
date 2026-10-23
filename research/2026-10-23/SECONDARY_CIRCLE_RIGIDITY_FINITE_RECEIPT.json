@@ -34,6 +34,7 @@
         1966742276790,
         1966742276791
       ],
+      "minplus_harmonic_bound_scaled_1e12_upper": 1000000000000,
       "prime_cosine_defect_scaled_1e12_upper": 883333313131,
       "real_harmonic_bound_scaled_1e12_upper": 1000000000000
     },
@@ -52,6 +53,7 @@
         1737467237844,
         1737467237845
       ],
+      "minplus_harmonic_bound_scaled_1e12_upper": 1000000000000,
       "prime_cosine_defect_scaled_1e12_upper": 637815809331,
       "real_harmonic_bound_scaled_1e12_upper": 1000000000000
     }
@@ -63,6 +65,7 @@
       "certificate_bound": "1",
       "first_chord": "3",
       "max_harmonic": "1",
+      "minplus_certificate_bound": "1",
       "modulus": 3,
       "prime_defect": "3/2"
     },
@@ -71,6 +74,7 @@
       "certificate_bound": "1",
       "first_chord": "5/2",
       "max_harmonic": "1",
+      "minplus_certificate_bound": "1",
       "modulus": 5,
       "prime_defect": "5/4"
     },
@@ -79,6 +83,7 @@
       "certificate_bound": "1",
       "first_chord": "7/3",
       "max_harmonic": "1",
+      "minplus_certificate_bound": "1",
       "modulus": 7,
       "prime_defect": "7/6"
     },
@@ -87,11 +92,12 @@
       "certificate_bound": "1",
       "first_chord": "2",
       "max_harmonic": "1",
+      "minplus_certificate_bound": "1",
       "modulus": 9,
       "prime_defect": "3/2"
     }
   ],
-  "source_sha256": "ed984291867cc4428e44f0ce1c904c2c1374baf669a594704884131e8ca2966a",
-  "test_sha256": "2fe4f92b94fdf27fd4965f24273835b5da6e9ddf5ed18fd2f51c9542669beb48",
+  "source_sha256": "02e06c7eff09514d706a6c6e416232b5a006906d9073f13775e55d701a087e13",
+  "test_sha256": "6035c3a29a559bb60e90f3dd61b3050ae9f4814862de6fa9c7f57beac8f1d95b",
   "tripling_half_turn_rotation_commutator": "0"
 }
