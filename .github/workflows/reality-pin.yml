@@ -1,0 +1,53 @@
+name: Reality Pin exact sources and Lean
+
+on:
+  push:
+    branches:
+      - research/reality-pin-observable-geometry-2026-10-22
+  pull_request:
+    paths:
+      - '**/*reality_pin*'
+      - 'formal/RealityPin.lean'
+      - 'research/2026-10-22/REALITY_PIN*'
+      - 'docs/CLAIM_SUPPLEMENT_REALITY_PIN.md'
+      - '.github/workflows/reality-pin.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Exact geometry, arithmetic, gluing, selection and hostile controls
+        run: |
+          python -Werror -m unittest discover -s tests -p 'test_reality_pin_*.py' -v
+          python -Werror -m unittest discover -s tests -p 'test_spectral_boundary_rigidity.py' -v
+          python scripts/reality_pin_probe.py --check
+          python scripts/verify_provenance.py
+  lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned Lean through elan
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o /tmp/elan-init.sh
+          sh /tmp/elan-init.sh -y --default-toolchain none
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Clean-host kernel and exact axiom audit with hostile mutations
+        run: python3 scripts/verify_reality_pin_lean.py --output /tmp/reality-pin-clean-lean.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reality-pin-clean-lean
+          path: /tmp/reality-pin-clean-lean.json

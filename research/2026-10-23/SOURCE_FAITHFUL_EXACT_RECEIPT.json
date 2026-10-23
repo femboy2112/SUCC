@@ -1,0 +1,466 @@
+{
+  "authority": {
+    "RH_proved": false,
+    "analytic_results_lean_certified": false,
+    "finite_witnesses_are_universal_proofs": false,
+    "named_passive_cyclicity_proved": false,
+    "original_S4_improved": false,
+    "physical_measurements_performed": false
+  },
+  "carry": {
+    "energy_ratio_example": "33/7",
+    "fake_primitive_6": null,
+    "prime_power_8": {
+      "exponent": 3,
+      "prime": 2
+    },
+    "successor_moments_a3": {
+      "0": {
+        "0": "1"
+      },
+      "1": {
+        "0": "2/3",
+        "1": "1/3"
+      },
+      "2": {
+        "0": "1/3",
+        "1": "2/3"
+      },
+      "3": {
+        "1": "1"
+      },
+      "4": {
+        "1": "2/3",
+        "2": "1/3"
+      },
+      "5": {
+        "1": "1/3",
+        "2": "2/3"
+      },
+      "6": {
+        "2": "1"
+      }
+    },
+    "terminal_coordinates": {
+      "2": [
+        13,
+        1
+      ],
+      "3": [
+        13,
+        2
+      ],
+      "5": [
+        13,
+        4
+      ],
+      "7": [
+        13,
+        6
+      ]
+    },
+    "visible_and_defect": {
+      "2": {
+        "defect_norm_squared": "1/2",
+        "norm_distance_squared": "2*(1-1/sqrt(2))",
+        "overlap_squared": "1/2",
+        "visible_norm_squared": "1/2"
+      },
+      "3": {
+        "defect_norm_squared": "2/3",
+        "norm_distance_squared": "2*(1-1/sqrt(3))",
+        "overlap_squared": "1/3",
+        "visible_norm_squared": "1/3"
+      },
+      "5": {
+        "defect_norm_squared": "4/5",
+        "norm_distance_squared": "2*(1-1/sqrt(5))",
+        "overlap_squared": "1/5",
+        "visible_norm_squared": "1/5"
+      },
+      "7": {
+        "defect_norm_squared": "6/7",
+        "norm_distance_squared": "2*(1-1/sqrt(7))",
+        "overlap_squared": "1/7",
+        "visible_norm_squared": "1/7"
+      }
+    }
+  },
+  "limits": {
+    "action_horizon": {
+      "error_upper": "1/56",
+      "no_wrap": true,
+      "stages": [
+        {
+          "continuum_radius": "4/3",
+          "discrete_parameter": 8,
+          "error_upper": "0",
+          "no_wrap": true,
+          "operation": "translate"
+        },
+        {
+          "continuum_radius": "4",
+          "discrete_parameter": 3,
+          "error_upper": "0",
+          "no_wrap": true,
+          "operation": "multiply"
+        },
+        {
+          "continuum_radius": "29/7",
+          "discrete_parameter": -3,
+          "error_upper": "1/56",
+          "no_wrap": true,
+          "operation": "translate"
+        }
+      ]
+    },
+    "analytic_heat_error_budget": {
+      "dispersion": "1/8",
+      "fourier_tail": "1/5220",
+      "quadrature": "1/2",
+      "total": "6527/10440"
+    },
+    "certified_cycle_heat_density_at_origin": [
+      "159436860299197/281474976710656",
+      "79718430149599/140737488355328"
+    ],
+    "certified_gaussian_density_at_origin": [
+      "158805249889499/281474976710656",
+      "39701312472375/70368744177664"
+    ],
+    "cyclic_multiplier_is_not_source_isometry": {
+      "fiber_size": 5,
+      "is_isometry": false,
+      "kernel_dimension": 96,
+      "operator_norm_squared": 5,
+      "rank": 24
+    },
+    "hidden_heat_defect": {
+      "2": "1/2",
+      "3": "2/3",
+      "5": "14/25",
+      "7": "22/49"
+    },
+    "local_chart": {
+      "circumference": "30",
+      "distortion": "0",
+      "hausdorff_error_upper": "1/24",
+      "maximum_chart_separation": "4",
+      "radius_steps": 48
+    },
+    "rational_character_one_sixth": {
+      "finite_fractional_parts": [
+        "1/2",
+        "2/3"
+      ],
+      "real_exponent": "1/6",
+      "total_exponent": "-1"
+    }
+  },
+  "memory": {
+    "binary_antiperiodic_moments": [
+      "1",
+      "0",
+      "-1",
+      "0",
+      "1",
+      "0",
+      "-1",
+      "0",
+      "1"
+    ],
+    "binary_hidden_kernels": [
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "false_one_step_semigroup_rejected": true,
+    "independent_elimination_agrees": true,
+    "minimal_hankel_determinants": {
+      "11": "-1048576/285311670611",
+      "2": "-1",
+      "3": "-16/27",
+      "5": "256/3125",
+      "7": "-4096/823543"
+    }
+  },
+  "observer": {
+    "calibrated_carry_protocol": {
+      "cost": "88/21",
+      "initial_quotient": 5,
+      "physical_measurement_authenticated": false,
+      "readings": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        6
+      ],
+      "readings_count": 6,
+      "residue": 2,
+      "source_reconstruction": 31,
+      "successor_actions": 5
+    },
+    "finite_horizon_classes_a5": {
+      "0": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "1": [
+        [
+          0,
+          1,
+          2,
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "2": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "3": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "4": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    "offset_recovered": false,
+    "synthetic_affine_energy_pin": {
+      "gain": [
+        "769658139441/549755813888",
+        "1539316278893/1099511627776"
+      ],
+      "lam": [
+        "-733007751853/1099511627776",
+        "-733007751847/1099511627776"
+      ],
+      "physical_measurement_authenticated": false,
+      "sigma": [
+        "3298534883327/1099511627776",
+        "3298534883329/1099511627776"
+      ]
+    },
+    "unused_prime7_holdout": [
+      "2243901281/549755813888",
+      "4487802563/1099511627776"
+    ]
+  },
+  "original_signed_source": {
+    "RH_proved": false,
+    "completed_poles": [
+      0,
+      1
+    ],
+    "conductor": 1,
+    "half_density": "1/2",
+    "new_S4_sign_bound": false,
+    "original_weil_sign_proved": false,
+    "parity": 0,
+    "prime_power_tape": [
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        2
+      ]
+    ],
+    "prime_sum_sign": -1,
+    "real_gamma_count": 1,
+    "root_number": 1,
+    "source_git_blob": "0cc8510b71d178fc79e8d410a86d8b6014cf9178",
+    "source_sha256": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b"
+  },
+  "parent": "5e2ba04c8b4ab627b6b0add588609c347346a1a2",
+  "resolvent_memory": {
+    "bounded_alpha_band_required_for_memory_limit": true,
+    "radix_three_uniform_budget": {
+      "coarse_dispersion_upper": "9/4096",
+      "inverse_error_upper": "49/12288",
+      "lost_weight_upper": "1/1536",
+      "memory_error_upper": "19/3072",
+      "resolvent_error_upper": "3/4096"
+    },
+    "radix_two_exact_schur": {
+      "coupling_squared": "1048576/4225",
+      "effective_denominator": "33089/16577",
+      "forgotten_memory_resolvent": "65/193",
+      "hidden_generator": "16512/65",
+      "memory_correction": "1048576/1077505",
+      "visible_generator": "128/65",
+      "visible_resolvent": "16577/33089"
+    }
+  },
+  "schema": "succ-source-faithful-exact-v1",
+  "source_sha256": {
+    "formal/SourceFaithfulCarry.lean": "729fc8286621753474454eb95c795f9ac872955f269c872c059139fc28cae99d",
+    "observational_succ/boundary_realization_selection.py": "599451cf6a37e2d146ade8864cfd5575b5916a3ae775c6a9f98704d388688f33",
+    "observational_succ/reality_pin_arithmetic.py": "3f81e794119898ce6580b024a74691d2480cacfab715a103193525e1fe42e5f6",
+    "observational_succ/reality_pin_continuum.py": "c5b7b0e09696bab44b4630c5c4cb1499dca8ba334b68d08ece2a5b66fd89d8ca",
+    "observational_succ/source_faithful_carry.py": "08607f94ce8c5ae8279c68fe276fbe7b08a71e3de6fb6afd515d63692018edd1",
+    "observational_succ/source_faithful_limits.py": "1b4be829484e4bb4ec5f29bfc7777ec2a90af5a344e2381fdad399b74775921d",
+    "observational_succ/source_faithful_memory.py": "7fe9e1050593d5cd04c4a88b0c4dc9f43bd8d0b3d3cda89e76a093453190475d",
+    "observational_succ/source_faithful_observers.py": "5888d5a2b123991d6379488cb14dd859611d2683c856c7eebf1b9ab63df582df",
+    "observational_succ/source_faithful_resolvent.py": "27bfe7d1d3b0b759877749b9664cd617e8146a9811ee538d8e6c976f0cf03dd4",
+    "observational_succ/source_faithful_weil.py": "35a71007bd528a608833cc9929670a845b7d13533458de142d3bef56b70c7ce4",
+    "observational_succ/source_weil_hierarchy.py": "183863dc722230331cdbe7ba1ba4d781ad3ab4d6e58aa39552a8af4cc6c9174b",
+    "observational_succ/tate_suzuki_shorting.py": "57fbbf3b2876d5e2e4a156d0f7a951595997d2eb3f7911cd1720e2662c8b8d42",
+    "scripts/check_source_faithful_carry_lean.py": "11776c315b458e927a44d3f94951c518f333449cb68073837d66b4c9be8a3b2e",
+    "scripts/source_faithful_carry_probe.py": "6cdf1d07fdc510ba93932247dbf78cea486c409caeee84505cc1f58a798a1648",
+    "tests/test_source_faithful_carry.py": "9f6f514e70f28c746d7e97cca33b1fa2540b82244200a06010e8d3ffd3d9ee4a",
+    "tests/test_source_faithful_limits.py": "f283539b64d6b3d7c04239ac424d4cb6b71cbe718540e076ce3fe02da8a6c318",
+    "tests/test_source_faithful_memory.py": "dee253dbba8e6090b3a162718e9dca50d5edfb5ca0babafccf356ccaac0b145a",
+    "tests/test_source_faithful_observers.py": "3e7dbe1275169024c9962668a5c4680f1921b097f324a7493240d194d3be6a64",
+    "tests/test_source_faithful_resolvent.py": "cc9e78480148f0896a97fbb61c541945532e6a497171272e45128b23e0597880",
+    "tests/test_source_faithful_weil.py": "232a2b85499deafcb98d4c05d4fcfe79d98830ee9406fa88e385c7c4af28601b"
+  },
+  "weil_boundary": {
+    "completion_mutant_changes": {
+      "contact_plus_one": {
+        "hi": "1",
+        "lo": "1"
+      },
+      "fake_composite_6": {
+        "hi": "952027212981311620452647869649/6250000000000000000000000000000",
+        "lo": "761621770385049296362118295719/5000000000000000000000000000000"
+      },
+      "missing_prime_power_4": {
+        "hi": "-21269416664174388475012959513149/100000000000000000000000000000000",
+        "lo": "-332334635377724819922077492393/1562500000000000000000000000000"
+      },
+      "non_euler_double_prime_2": {
+        "hi": "4003290995534201654191049771607/6250000000000000000000000000000",
+        "lo": "64052655928547226467056796345707/100000000000000000000000000000000"
+      },
+      "shifted_first_gamma": {
+        "hi": "42123307536221182654396697637307/20000000000000000000000000000000",
+        "lo": "8424661507244236530879339527461/4000000000000000000000000000000"
+      },
+      "wrong_completed_pole_signs": {
+        "hi": "13577015870381094461947640518927/1562500000000000000000000000000",
+        "lo": "10861612696304875569558112415141/1250000000000000000000000000000"
+      },
+      "wrong_half_density_prime_2": {
+        "hi": "-18760588568462766758688710516223/100000000000000000000000000000000",
+        "lo": "-4690147142115691689672177629057/25000000000000000000000000000000"
+      }
+    },
+    "genuine_prime_atom_negative": {
+      "atom_upper": "-4042711971503087057050344651964439797077/781250000000000000000000000000000000000000",
+      "autocorrelation_lower": "52788863403/10000000000000",
+      "completed_Weil_sign_inferred": false,
+      "test_regularity": "C_c^2 autocorrelation",
+      "weight_interval": {
+        "hi": "24506453586713679792847543090881/50000000000000000000000000000000",
+        "lo": "76582667458480249352648572159/156250000000000000000000000000"
+      }
+    },
+    "half_density_box_energy": [
+      "746040851234991/281474976710656",
+      "46627553202187/17592186044416"
+    ],
+    "half_density_synthesis_norm_squared_upper": "2",
+    "phase_blind_schur_failure": {
+      "A": "1",
+      "D": [
+        [
+          "2",
+          "1"
+        ],
+        [
+          "1",
+          "2"
+        ]
+      ],
+      "coupling_norm_squared": "2",
+      "minus": {
+        "defect": "3/2",
+        "hidden_metric": "3/2",
+        "residual": "-3/2",
+        "scope": "SYNTHETIC_FINITE_OPERATOR_NOT_SUZUKI",
+        "total": "2",
+        "visible": "1/2"
+      },
+      "minus_S": "-1",
+      "original_Weil_counterexample": false,
+      "plus": {
+        "defect": "1/6",
+        "hidden_metric": "3/2",
+        "residual": "1/2",
+        "scope": "SYNTHETIC_FINITE_OPERATOR_NOT_SUZUKI",
+        "total": "2/3",
+        "visible": "1/2"
+      },
+      "plus_S": "1/3"
+    },
+    "unweighted_growth_lower": {
+      "16": "51/10",
+      "31": "48/5",
+      "4": "3/2"
+    }
+  }
+}

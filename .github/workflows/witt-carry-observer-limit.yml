@@ -1,0 +1,70 @@
+name: Source-carry observation limit and Witt/dual adversaries
+
+on:
+  push:
+    branches:
+      - research/witt-carry-observer-limit-2026-10-22
+    paths:
+      - 'observational_succ/witt_carry_learning.py'
+      - 'tests/test_witt_carry_learning.py'
+      - 'tests/test_witt_carry_extended.py'
+      - 'scripts/witt_carry_learning_probe.py'
+      - 'research/2026-10-22/WITT_CARRY_OBSERVER_LIMIT_RECEIPT.json'
+      - '.github/workflows/witt-carry-observer-limit.yml'
+  pull_request:
+    paths:
+      - 'observational_succ/witt_carry_learning.py'
+      - 'tests/test_witt_carry_learning.py'
+      - 'tests/test_witt_carry_extended.py'
+      - 'scripts/witt_carry_learning_probe.py'
+      - 'research/2026-10-22/WITT_CARRY_OBSERVER_LIMIT_RECEIPT.json'
+      - '.github/workflows/witt-carry-observer-limit.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  source-exact:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run 42 source, factorial limit, holonomy and empirical-risk hostile tests
+        run: python -Werror -m unittest discover -s tests -p 'test_witt_carry_*.py' -v
+      - name: Replay exact finite oracles and authenticate tested source blobs
+        run: |
+          PYTHONPATH=. python scripts/witt_carry_learning_probe.py > "$RUNNER_TEMP/witt-carry.json"
+          python - <<'PY'
+          import hashlib,json,os,pathlib
+          root=pathlib.Path.cwd()
+          actual=json.loads((pathlib.Path(os.environ['RUNNER_TEMP'])/'witt-carry.json').read_text())
+          frozen=json.loads((root/'research/2026-10-22/WITT_CARRY_OBSERVER_LIMIT_RECEIPT.json').read_text())
+          assert actual==frozen,'Frozen exact finite receipt differs from source'
+          assert not actual['actual_physical_source_readings']
+          assert not actual['empirical_error_rate_calibrated']
+          assert not actual['RH_proved']
+          assert not actual['gravitational_ER_EPR_proved']
+          assert actual['carry_cocycle_exact_instances']==503
+          assert actual['graded_lifted_succ_holonomy_tests']==16
+          assert actual['factorial_cofinal_modulus_cases']==200
+          assert actual['factorial_valuation_level_cases']==15
+          assert actual['global_equalchar_factorial_counterfeit_at_4']['mixed_ring_characteristic']==24
+          assert actual['global_equalchar_factorial_counterfeit_at_4']['equal_local_product_characteristic']==6
+          assert actual['whole_tree_digit_isometry_exact_instances']==23210
+          assert actual['independent_finite_ring_operation_cells']==1540
+          for key,rel in (
+            ('source_module_git_blob','observational_succ/witt_carry_learning.py'),
+            ('primary_tests_git_blob','tests/test_witt_carry_learning.py'),
+            ('extended_tests_git_blob','tests/test_witt_carry_extended.py'),
+            ('probe_git_blob','scripts/witt_carry_learning_probe.py')
+          ):
+              d=(root/rel).read_bytes()
+              expected=hashlib.sha1(f"blob {len(d)}\0".encode()+d).hexdigest()
+              assert actual[key]==expected
+          PY

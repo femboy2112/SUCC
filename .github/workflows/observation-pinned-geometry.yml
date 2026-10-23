@@ -1,0 +1,66 @@
+name: Observation pinned arithmetic intrinsic geometry
+
+on:
+  push:
+    branches:
+      - research/observation-pinned-intrinsic-geometry-2026-10-22
+    paths:
+      - 'observational_succ/observation_pinned_geometry.py'
+      - 'tests/test_observation_pinned_geometry.py'
+      - 'scripts/observation_pinned_geometry_probe.py'
+      - 'scripts/physical_clock_observation_contract.py'
+      - 'tests/test_physical_clock_observation_contract.py'
+      - 'observational_succ/relative_phase_source_couplings.py'
+      - 'tests/test_relative_phase_source_couplings.py'
+      - 'research/2026-10-22/OBSERVATION_PINNED_GEOMETRY_RECEIPT.json'
+      - '.github/workflows/observation-pinned-geometry.yml'
+  pull_request:
+    paths:
+      - 'observational_succ/observation_pinned_geometry.py'
+      - 'tests/test_observation_pinned_geometry.py'
+      - 'scripts/observation_pinned_geometry_probe.py'
+      - 'scripts/physical_clock_observation_contract.py'
+      - 'tests/test_physical_clock_observation_contract.py'
+      - 'observational_succ/relative_phase_source_couplings.py'
+      - 'tests/test_relative_phase_source_couplings.py'
+      - 'research/2026-10-22/OBSERVATION_PINNED_GEOMETRY_RECEIPT.json'
+      - '.github/workflows/observation-pinned-geometry.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Independently replay exact geometry and observer hostile controls
+        run: python -Werror -m unittest discover -s tests -p test_observation_pinned_geometry.py -v
+      - name: Test observer-source real-world transcript protocol with synthetic negative cases
+        run: python -Werror -m unittest discover -s tests -p test_physical_clock_observation_contract.py -v
+      - name: Verify source-symmetric EPR coupling nonuniqueness and next holdout
+        run: python -Werror -m unittest discover -s tests -p test_relative_phase_source_couplings.py -v
+      - name: Recompute immutable source-bound finite receipt
+        run: |
+          PYTHONPATH=. python scripts/observation_pinned_geometry_probe.py > "$RUNNER_TEMP/opig.json"
+          python - <<'PY'
+          import hashlib,json,pathlib,os
+          root=pathlib.Path.cwd()
+          got=json.loads((pathlib.Path(os.environ['RUNNER_TEMP'])/'opig.json').read_text())
+          frozen=json.loads((root/'research/2026-10-22/OBSERVATION_PINNED_GEOMETRY_RECEIPT.json').read_text())
+          assert got==frozen, 'Source-bound exact experimental receipt does not replay'
+          assert got['actual_physical_experiment_performed'] is False
+          assert got['RH_proved'] is False
+          def blob(rel):
+              d=(root/rel).read_bytes()
+              return hashlib.sha1(f'blob {len(d)}\0'.encode()+d).hexdigest()
+          assert got['source_module_git_blob']==blob('observational_succ/observation_pinned_geometry.py')
+          assert got['exact_tests_git_blob']==blob('tests/test_observation_pinned_geometry.py')
+          PY

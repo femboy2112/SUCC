@@ -1,0 +1,130 @@
+{
+  "research_date": "2026-10-22",
+  "timezone": "America/New_York",
+  "starting_commit": "d2f760ab9d9a11719e950caeb2d54bfa5114f495",
+  "main_observed": "b116841f12b41aaf7600da39bbb40577f25b6295",
+  "main_modified": false,
+  "inherited_pull_requests": [
+    {
+      "number": 234,
+      "url": "https://github.com/femboy2112/SUCC/pull/234",
+      "head": "research/prime-bridge-one-shot-2026-10-22",
+      "head_sha": "b74a202bbbb016094cf603251fbc625cdc6c3c27",
+      "base": "main",
+      "base_sha": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "draft": true
+    },
+    {
+      "number": 235,
+      "url": "https://github.com/femboy2112/SUCC/pull/235",
+      "head": "research/prime-bridge-coherent-tower-2026-10-22",
+      "head_sha": "328f1c0bd8d564acb9da50e96d1101850ebb9cdd",
+      "base": "research/prime-bridge-one-shot-2026-10-22",
+      "base_sha": "b74a202bbbb016094cf603251fbc625cdc6c3c27",
+      "draft": true
+    },
+    {
+      "number": 236,
+      "url": "https://github.com/femboy2112/SUCC/pull/236",
+      "head": "research/reciprocal-succ-fucc-pascal-2026-10-22",
+      "head_sha": "735c4176979fad802c4888048892f009b38a3b3b",
+      "base": "research/prime-bridge-coherent-tower-2026-10-22",
+      "base_sha": "328f1c0bd8d564acb9da50e96d1101850ebb9cdd",
+      "draft": true
+    },
+    {
+      "number": 238,
+      "url": "https://github.com/femboy2112/SUCC/pull/238",
+      "head": "research/observation-pinned-intrinsic-geometry-2026-10-22",
+      "head_sha": "adf663f1523b28b51789859e0cc24169bfb5e7e5",
+      "base": "research/reciprocal-succ-fucc-pascal-2026-10-22",
+      "base_sha": "735c4176979fad802c4888048892f009b38a3b3b",
+      "draft": true
+    },
+    {
+      "number": 240,
+      "url": "https://github.com/femboy2112/SUCC/pull/240",
+      "head": "research/witt-carry-observer-limit-2026-10-22",
+      "head_sha": "68c6d82aed31c8337826841c3bce023790c0e821",
+      "base": "research/observation-pinned-intrinsic-geometry-2026-10-22",
+      "base_sha": "adf663f1523b28b51789859e0cc24169bfb5e7e5",
+      "draft": true
+    },
+    {
+      "number": 242,
+      "url": "https://github.com/femboy2112/SUCC/pull/242",
+      "head": "research/total-boundary-adelic-impedance-2026-10-22",
+      "head_sha": "146ddf514f05928158b38f0d8216b45df13dc92b",
+      "base": "research/witt-carry-observer-limit-2026-10-22",
+      "base_sha": "68c6d82aed31c8337826841c3bce023790c0e821",
+      "draft": true
+    }
+  ],
+  "parent_pr_243_workflows": [
+    {
+      "id": 39867339291,
+      "name": "Collective observer source and certificate replay",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 402,
+      "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339291/jobs",
+      "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339291/logs",
+      "workflow_id": 386978686
+    },
+    {
+      "id": 39867339305,
+      "name": "Arithmetic wavefront and spectral-response certificates",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 20,
+      "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339305/jobs",
+      "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339305/logs",
+      "workflow_id": 386348153
+    },
+    {
+      "id": 39867339331,
+      "name": "Spectral boundary source rigidity exact",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 12,
+      "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339331/jobs",
+      "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339331/logs",
+      "workflow_id": 393427283
+    },
+    {
+      "id": 39867339334,
+      "name": "Institute theorem contracts and core Lean",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 212,
+      "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339334/jobs",
+      "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339334/logs",
+      "workflow_id": 388839929
+    },
+    {
+      "id": 39867339311,
+      "name": "One Object II original source cancellation and zero-shift Schur",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 524,
+      "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339311/jobs",
+      "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339311/logs",
+      "workflow_id": 385135609
+    },
+    {
+      "id": 39867339332,
+      "name": "Observational SUCC validation",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 3737,
+      "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339332/jobs",
+      "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39867339332/logs",
+      "workflow_id": 380913247
+    }
+  ],
+  "baseline_focused_tests": 28,
+  "baseline_frozen_receipt_byte_equal": true,
+  "import_manifest_items_verified": 72,
+  "provenance_establishes_mathematical_truth": false,
+  "physical_measurements_performed": false
+}

@@ -9,6 +9,31 @@ quantum codes and exact recovery obstructions. Analytic paper proofs, finite
 tests and narrow Lean execution are separately recorded. Gravitational duality
 and RH remain unproved; [draft #233](https://github.com/femboy2112/SUCC/pull/233).
 
+**2026-10-23 Carry the Truth research:**
+[source-faithful claim supplement](CLAIM_SUPPLEMENT_SOURCE_FAITHFUL_RENORMALIZATION.md) ·
+[complete synthesis](../research/2026-10-23/SOURCE_FAITHFUL_SYNTHESIS.md).
+Exact carry and minimal future information, explicit norm defects, quantitative
+heat-memory repair and sharp half-density log transport. Paper, finite and Lean
+authority are distinct; original signed S4 and RH remain open.
+
+**2026-10-22 Reality Pin research stack:**
+[RP-01–RP-25](CLAIM_SUPPLEMENT_REALITY_PIN.md) ·
+[proof synthesis](../research/2026-10-22/REALITY_PIN_SYNTHESIS.md) ·
+[source and CI baseline](../research/2026-10-22/REALITY_PIN_BASELINE_PROVENANCE.json).
+The new RP namespace is registered; paper, finite, kernel and physical authority
+remain separate. Earlier stack supplements are linked below for navigation,
+without retrospectively admitting them to a kernel registry:
+
+| Inherited draft | Scoped claim record |
+|---|---|
+| #234 arithmetic EPR one-shot | [Prime Bridge](CLAIM_SUPPLEMENT_PRIME_BRIDGE_ONE_SHOT.md) |
+| #235 coherent source tower | [Coherent tower](CLAIM_SUPPLEMENT_COHERENT_PRIME_TOWER.md) |
+| #236 reciprocal/Pascal | [Reciprocal Pascal](CLAIM_SUPPLEMENT_RECIPROCAL_PASCAL.md) |
+| #238 observation-pinned source | [Source geometry](CLAIM_SUPPLEMENT_OBSERVATION_PINNED_GEOMETRY.md) |
+| #240 Witt carry / observer limit | [Witt learning](CLAIM_SUPPLEMENT_WITT_CARRY_LEARNING.md) |
+| #242 total boundary | [Boundary realization](CLAIM_SUPPLEMENT_BOUNDARY_REALIZATION.md) |
+| #243 spectral boundary | [Spectral Krylov](CLAIM_SUPPLEMENT_SPECTRAL_BOUNDARY_KRYLOV.md) |
+
 Post-main research draft: [effective primitive abc means](CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md)
 (ABC-EFF-01–05) gives a uniform primitive divisor discrepancy, explicit convergence
 for every δ<(2−3t)/5 when 0≤t<2/3, and failure of quadratic moments for t≥1.

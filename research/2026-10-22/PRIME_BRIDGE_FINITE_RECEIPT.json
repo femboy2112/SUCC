@@ -1,0 +1,104 @@
+{
+  "RH_proved": false,
+  "academic_novelty_claimed": false,
+  "all_nine_region_pair_checks": {
+    "(0, 1)-(0, 1)": {
+      "mirror_equal": true,
+      "mutated_source_mirror_equal": false,
+      "unnormalized_amplitude_support": 18
+    },
+    "(0, 1)-(0, 2)": {
+      "mirror_equal": true,
+      "mutated_source_mirror_equal": false,
+      "unnormalized_amplitude_support": 18
+    },
+    "(0, 1)-(1, 2)": {
+      "mirror_equal": true,
+      "mutated_source_mirror_equal": false,
+      "unnormalized_amplitude_support": 18
+    },
+    "(0, 2)-(0, 1)": {
+      "mirror_equal": true,
+      "mutated_source_mirror_equal": false,
+      "unnormalized_amplitude_support": 18
+    },
+    "(0, 2)-(0, 2)": {
+      "mirror_equal": true,
+      "mutated_source_mirror_equal": false,
+      "unnormalized_amplitude_support": 18
+    },
+    "(0, 2)-(1, 2)": {
+      "mirror_equal": true,
+      "mutated_source_mirror_equal": false,
+      "unnormalized_amplitude_support": 18
+    },
+    "(1, 2)-(0, 1)": {
+      "mirror_equal": true,
+      "mutated_source_mirror_equal": false,
+      "unnormalized_amplitude_support": 18
+    },
+    "(1, 2)-(0, 2)": {
+      "mirror_equal": true,
+      "mutated_source_mirror_equal": false,
+      "unnormalized_amplitude_support": 18
+    },
+    "(1, 2)-(1, 2)": {
+      "mirror_equal": true,
+      "mutated_source_mirror_equal": false,
+      "unnormalized_amplitude_support": 18
+    }
+  },
+  "analytic_evaluation_sigma": [
+    1,
+    2,
+    3
+  ],
+  "analytic_round_trip_coefficients": [
+    "2/7",
+    "-3/5",
+    "1/11"
+  ],
+  "analytic_samples": [
+    "13/1540",
+    "871/6160",
+    "5227/24640"
+  ],
+  "boundary_qutrit_alphabet_size": 3,
+  "bulk_entropy_natural_log_symbolic": "log(21)-(24/7)*log(2)",
+  "compressed_braid_left_e1": [
+    "0",
+    "0",
+    "1"
+  ],
+  "compressed_braid_right_e1": [
+    "0",
+    "0",
+    "0"
+  ],
+  "finite_beta2_tfd_logical_numerator": [
+    4,
+    2,
+    1
+  ],
+  "finite_beta2_tfd_squared_norm_numerator_denominator": [
+    21,
+    21
+  ],
+  "geometric_gravitational_duality_claimed": false,
+  "geometric_neighbors_exact": 3,
+  "isometry_codeword_support_sizes": [
+    3,
+    3,
+    3
+  ],
+  "no_full_infinite_hilbert_code": true,
+  "research": "PRIME_BRIDGE_ONE_SHOT_2026_10_22",
+  "scope": "genuine radius-one p=2 Bruhat-Tits shell; 3-qutrit standard QEC; finite source {1,2,4}",
+  "signed_Weil_positivity_proved": false,
+  "source_module_sha256": "afce288b0b8befc22f6202b76ce826f8f4718b47f02146dbe5327a13003bc078",
+  "source_prime": 2,
+  "test_module_sha256": "dae028447e55ad1276dc3afe800e0904260aad1bc7584c6e5c3482ddae2b7e92",
+  "truncation_error_squared_N2_p2": "1/5",
+  "truncation_error_squared_N3_p2": "13/49",
+  "two_leg_entropy_natural_log_symbolic": "log(3)+log(21)-(24/7)*log(2)"
+}
