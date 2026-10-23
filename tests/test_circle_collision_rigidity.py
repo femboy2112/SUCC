@@ -225,5 +225,22 @@ class FinitePolygonEnsembleVsSelectedSource(unittest.TestCase):
         self.assertGreater(fixed_orbit,average)
 
 
+    def test_wallis_pi_source_is_identical_to_haar_chord_moments(self):
+        from observational_succ.circle_collision_rigidity import (
+            wallis_from_circle_moments
+        )
+        pil, piu = pi_interval(20, 76)
+        for k in range(1, 60):
+            lo, hi = wallis_from_circle_moments(k)
+            self.assertLess(lo, pil)
+            self.assertGreater(hi, piu)
+            self.assertEqual(lo, Q(2**(4*k+1),
+                                   (2*k+1)*carry_product(k)**2))
+            self.assertEqual(carry_product(k),
+                             polygon_moment(k, k+1))
+        with self.assertRaises(ValueError):
+            wallis_from_circle_moments(0)
+
+
 if __name__ == "__main__":
     unittest.main()
