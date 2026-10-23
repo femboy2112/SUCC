@@ -319,3 +319,18 @@ def polygon_ensemble_energy(base, horizon, band, vertices):
         (Q(band+1-h, band+1) *
          polygon_ensemble_fourier_square(base, h, horizon, vertices)
          for h in range(1, band+1)), Q())
+
+
+def wallis_from_circle_moments(power):
+    """Strict classical Wallis rational π bracket from the SAME chord moments.
+
+    H_k=binom(2k,k)=full-prime Kummer product=exact polygon k-moment for m>k.
+    R_k=2^(4k+1)/[(2k+1)*H_k²] < pi <
+         R_k*(4k+2)/(4k+1), k>=1.
+    The link is classical and reconstructed in PR #231; not a normality proof.
+    """
+    if type(power) is not int or power < 1:
+        raise ValueError("positive Wallis source index")
+    h = haar_moment(power)
+    r = Q(2**(4*power+1), (2*power+1)*h*h)
+    return r, r*Q(4*power+2, 4*power+1)
