@@ -267,3 +267,46 @@ successor event. This supplies a discriminating topological/resource
 obstruction: preserving every microscopic sample is a needlessly
 strong morphism for the target theorem, but relaxing it requires
 new arithmetic information about the ACTUAL π source.
+
+
+## TC-08. The EXACT topology gap: perfect weak convergence but maximal TV
+
+The same single-orbit measure from TC-03 is a translated regular L-point
+grid, with L=3^(r-1):
+  μ_r=(1/L)sum_(t=0)^(L-1) δ_((1+3t)/(3L)).
+
+On the circle with geodesic distance and the 1-Wasserstein metric,
+  W_1(μ_r,Haar)=1/(4L),                           (17)
+whereas
+  TV(μ_r,Haar)=1                               (18)
+for EVERY finite r.
+
+Proof: partition the circle into nearest-vertex arcs of width 1/L
+and transport Haar mass to each central atom. The transport cost is
+L times the integral from -1/(2L) to 1/(2L) of |t|dt, namely 1/(4L).
+For the converse, the test function distance to the finite support
+is 1-Lipschitz, has μ_r average zero, and Haar average 1/(4L).
+Kantorovich duality (or the direct Lipschitz inequality) gives the
+same lower bound. For TV, the atomic support has full μ_r mass and
+zero Haar mass.
+
+Thus the finite rational periodic ORBIT measures converge to Haar
+even in W_1 at an exact rate, while remaining mutually singular in TV.
+The source spectral/Hankel and Fejér finite-resolution agreements do not
+upgrade this weak approximation to normality of any fixed x_r.
+
+There is a completely explicit noncommuting-limit witness: take
+x_r=1/3^r -> 0. For each fixed r, the 16-orbit time empirical measure
+converges to μ_r, hence
+  lim_(r->infinity) lim_(N->infinity) ν_(N,x_r)=Haar.
+For each fixed N, all finitely many iterates of x_r tend to 0, hence
+  lim_(N->infinity) lim_(r->infinity) ν_(N,x_r)=δ_0.
+
+Both limits are valid in weak-* measure topology and are DIFFERENT.
+This is a real source/limit-order defect, not a contradiction in
+circle dynamics. It explicitly refutes the shortcut "rational
+approximant invariant measures converge to Haar, so the limiting
+selected point has a Haar-generic orbit".
+
+The same approximation-and-transport hazard applies to an x_r selected
+near π from actual polygon bounds; π's genericity itself remains OPEN.
