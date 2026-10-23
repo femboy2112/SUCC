@@ -217,3 +217,53 @@ silently replaced by a positive norm.
 **Sources:** GitHub SUCC #247, #231, #232 and #245/#246; classical
 Ramanujan character sums (Titchmarsh, The Theory of the Riemann Zeta
 Function, §1.5); Kummer's theorem, Chebyshev cosine orthogonality.
+
+
+## TC-07. A π-SPECIFIC two-scale no-go for naïve periodic-proxy transport
+
+We can locate exactly why the excellent rational 3-adic countermodels do
+NOT themselves provide a way to prove π's normality by approximation.
+
+Let x={π} and x_r=a/3^r be any periodic source, with L=3^(r-1).
+For integer h!=0, the elementary character-Lipschitz estimate is
+
+  |A_(h,N)(x)-A_(h,N)(x_r)|
+    <= U_(h,N,r)
+     := (2π|h|/(15N))*(16^N-1)*d_circle(x,x_r).       (15)
+
+This is a legitimate SUFFICIENT certificate when U is small, not an
+identity or a lower bound on the actual Fourier difference.
+
+Published irrationality-measure results for π give μ(π)<8:
+e.g. Zeilberger–Zudilin (2020) establish μ(π)<=7.103205334137...
+(see https://arxiv.org/abs/1912.06345).
+Hence, for every fixed ν=8, some C_8>0 exists such that for all large
+denominators q and all rational numerators a,
+
+  |π-a/q| >= C_8 q^(-8).
+
+Apply this to the circle representative of π and q=3L. If an argument
+uses at least one entire periodic cycle, N>=L, then
+
+  U_(h,N,r)
+   >= [2π|h|C_8/(15*3^8)]
+       * (16^N-1)/(N^9)
+      --> infinity as N grows.                             (16)
+
+Thus, on the regime N>=L required to exploit exact full-cycle Fourier
+cancellation, the ordinary pointwise Lipschitz upper-bound expression
+can NEVER yield the required o(1) phase transfer for large N.
+Taking the trivial min(2,U) leaves an uninformative bound of 2.
+
+This is an exact no-go for THAT CERTIFICATE/PROOF ROUTE.
+It is NOT a lower bound on the actual complex sum difference, does not
+refute a phase-cancellation transport proved by a stronger mechanism,
+and does not imply π is nonnormal.
+
+**New proof requirement:** any successful source transfer from these
+periodic cosets to the π-selected orbit at useful horizons must exploit
+AGGREGATE PHASE CANCELLATION rather than uniformly shadowing every
+successor event. This supplies a discriminating topological/resource
+obstruction: preserving every microscopic sample is a needlessly
+strong morphism for the target theorem, but relaxing it requires
+new arithmetic information about the ACTUAL π source.
