@@ -467,3 +467,56 @@ moments are genuine, and a selected-orbit normality proof can be expressed
 entirely in a source-compatible positive geometric-energy language. The
 remaining π-specific **uniform energy bound** is precisely the new
 discriminating mathematical obstacle. It has not been established.
+
+
+---
+
+## CC-09. A sharp exact finite polygon ENSEMBLE result, and why it cannot select π
+
+There is a particularly tempting but invalid last step: the circle's root-of-unity
+ensemble appears already to have the desired small Fourier energy. We can
+quantify this without assuming a random source or even taking a limit.
+
+Let v_r=exp(2πir/m) for r modulo m. With base b, horizon N and frequency h,
+apply root-of-unity orthogonality to the positive square:
+
+    (1/m)sum_(r=0)^(m-1) |A_(h,N)(r/m)|²
+      = N^-2 #{(j,k): 0<=j,k<N, m | h(b^j-b^k)}.           (5)
+
+If m>|h|(b^(N-1)-1), no off-diagonal congruence is possible.
+The right side is EXACTLY 1/N.
+
+For the full Fejér pair energy, if
+
+    m > M(b^(N-1)-1),
+
+then every frequency 1<=h<=M has ensemble squared mean 1/N, hence
+
+    (1/m)sum_(r=0)^(m-1) E_(M,N)(r/m) = 1 + M/N.         (6)
+
+The finite set of polygon vertices already has mean energy asymptotically
+as small as Haar, for M=o(N), with no analytic conjecture whatsoever.
+
+**Nevertheless vertex 0** is in this very ensemble and is fixed by every
+covering, so E_(M,N)(0)=M+1 for all N. Thus the ensemble upper bound (6)
+cannot be promoted to a bound for a single distinguished vertex; no
+uniform error estimate can be obtained from the average alone. When m and b
+are not coprime, the finite polygon's empirical measure itself may fail to
+be invariant under fixed-level T_b (CC-04).
+
+This is the clearest finite counterpart of the missing π theorem: the
+arithmetic/chord rules completely determine the **average over source
+placements**, including its shrinking 1/N variance, but say nothing
+sufficient about the single π-anchored placement.
+
+The newly added independent exact oracle is
+polygon_ensemble_fourier_square / polygon_ensemble_energy. It checks
+m=4^12, b=16, N=6, M=3: the full ensemble Fejér mean is exactly 3/2,
+while the legal fixed-point selected orbit has energy 4. The ensemble
+mean is an exact rational witness; it is not a numerical random sample.
+
+**Verdict.** To close normality, one must justify a π-specific
+typicality-selection mechanism (or a completely different bound) using
+the circumference/perimeter source, not simply appeal to the Haar
+properties of every fine regular polygon. This objection survives
+the exact polynomial, central binomial, Kummer and Fejér identities.
