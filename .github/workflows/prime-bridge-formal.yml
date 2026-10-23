@@ -1,0 +1,42 @@
+name: Prime Bridge finite kernel certificates
+
+on:
+  push:
+    branches: ['research/prime-bridge-*']
+    paths:
+      - 'formal/PrimeBridge.lean'
+      - 'formal/kernel_audit/ExportCommand.lean'
+      - 'scripts/prime_bridge_lean_probe.py'
+      - '.github/workflows/prime-bridge-formal.yml'
+  pull_request:
+    paths:
+      - 'formal/PrimeBridge.lean'
+      - 'formal/kernel_audit/ExportCommand.lean'
+      - 'scripts/prime_bridge_lean_probe.py'
+      - '.github/workflows/prime-bridge-formal.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  kernel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install exact official Lean 4.14.0
+        shell: bash
+        run: |
+          curl --fail -L https://github.com/leanprover/lean4/releases/download/v4.14.0/lean-4.14.0-linux.tar.zst -o "$RUNNER_TEMP/lean.tar.zst"
+          echo "320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a  $RUNNER_TEMP/lean.tar.zst" | sha256sum -c -
+          tar --no-same-owner --zstd -xf "$RUNNER_TEMP/lean.tar.zst" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/lean-4.14.0-linux/bin" >> "$GITHUB_PATH"
+      - name: Check actual types, axioms and mutation rejection
+        run: python3 scripts/prime_bridge_lean_probe.py --output "$RUNNER_TEMP/prime-bridge-kernel"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: prime-bridge-kernel-${{ github.sha }}
+          path: ${{ runner.temp }}/prime-bridge-kernel
+          if-no-files-found: error

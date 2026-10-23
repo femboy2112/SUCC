@@ -1,0 +1,14 @@
+cwd: /workspace/scratch/f3c3f94a0370/SUCC-baseline-prime-bridge
+sha: b116841f12b41aaf7600da39bbb40577f25b6295
+command: PYTHONPATH=. python -m unittest tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count -v
+exit_code: 0
+
+STDOUT
+
+STDERR
+test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.108s
+
+OK

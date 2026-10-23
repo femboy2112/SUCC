@@ -2,6 +2,13 @@
 
 **2026-10-21 Duck → Lean → π research:** [execution report](../research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md) · [exact kernel receipt](../research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md) · [DUCK-01–28](CLAIM_SUPPLEMENT_DUCK_PRINCIPLE.md) · [dependency ledger](DUCK_PI_DEPENDENCIES.json). Observable quotients, generated finite all-word certificates, the classical BBP identity and the actual π orbit transport have exact formal statements. Explicit Fourier/discrepancy transport and positive rational-shadow counterfeits are paper results. The current receipt identifies which source revisions compiled. **π-specific cancellation and π normality remain OPEN; RH/ABC bounds here do not close them.**
 
+2026-10-22 research: [Prime Bridge PBR-01–20](CLAIM_SUPPLEMENT_ARITHMETIC_ER_EPR.md)
+adds arithmetic TFD/mirror rigidity and quantitative stability, interacting
+threshold/entanglement proofs, genuine BT boundary reconstruction, arithmetic
+quantum codes and exact recovery obstructions. Analytic paper proofs, finite
+tests and narrow Lean execution are separately recorded. Gravitational duality
+and RH remain unproved; [draft #233](https://github.com/femboy2112/SUCC/pull/233).
+
 Post-main research draft: [effective primitive abc means](CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md)
 (ABC-EFF-01–05) gives a uniform primitive divisor discrepancy, explicit convergence
 for every δ<(2−3t)/5 when 0≤t<2/3, and failure of quadratic moments for t≥1.

@@ -1,0 +1,115 @@
+{
+  "created_at_utc": "2026-10-22T06:36:06.861199+00:00",
+  "purpose": "Narrow baseline/current control of subprocess import-path failure; no source changes",
+  "baseline_worktree_clean": true,
+  "runs": [
+    {
+      "scope": "baseline",
+      "sha": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "cwd": "/workspace/scratch/f3c3f94a0370/SUCC-baseline-prime-bridge",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count",
+        "-v"
+      ],
+      "PYTHONPATH": null,
+      "returncode": 1,
+      "log": "baseline_meta_choice_pythonpath_unset.log",
+      "log_sha256": "39a3286512afcda77db307694081186aebbfd66f3454e83d179a6a467821d871"
+    },
+    {
+      "scope": "baseline",
+      "sha": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "cwd": "/workspace/scratch/f3c3f94a0370/SUCC-baseline-prime-bridge",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count",
+        "-v"
+      ],
+      "PYTHONPATH": ".",
+      "returncode": 0,
+      "log": "baseline_meta_choice_pythonpath_dot.log",
+      "log_sha256": "d1808251a3fbeacb80136e210ad01d183a91f5a67ecdbc155521366548425c6b"
+    },
+    {
+      "scope": "baseline",
+      "sha": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "cwd": "/workspace/scratch/f3c3f94a0370/SUCC-baseline-prime-bridge",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/meta_choice_descent_probe.py"
+      ],
+      "PYTHONPATH": null,
+      "returncode": 1,
+      "log": "baseline_meta_choice_direct_pythonpath_unset.log",
+      "log_sha256": "67d62c0b414fc01aef208e5cec356070ef59701ff631d0cb328352598ec52820"
+    },
+    {
+      "scope": "current",
+      "sha": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf",
+      "cwd": "/workspace/scratch/f3c3f94a0370/SUCC",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count",
+        "-v"
+      ],
+      "PYTHONPATH": null,
+      "returncode": 1,
+      "log": "current_meta_choice_pythonpath_unset.log",
+      "log_sha256": "0c10938ff1053c2f4af2d41e291cda11f301bdb76288593cc2c055339b07178b"
+    },
+    {
+      "scope": "current",
+      "sha": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf",
+      "cwd": "/workspace/scratch/f3c3f94a0370/SUCC",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count",
+        "-v"
+      ],
+      "PYTHONPATH": ".",
+      "returncode": 0,
+      "log": "current_meta_choice_pythonpath_dot.log",
+      "log_sha256": "04ac82d5673f76c3a7794e0d1d4d7e7a77d3cbb9736a2d50ad8469d1cba63608"
+    },
+    {
+      "scope": "current",
+      "sha": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf",
+      "cwd": "/workspace/scratch/f3c3f94a0370/SUCC",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "scripts/meta_choice_descent_probe.py"
+      ],
+      "PYTHONPATH": null,
+      "returncode": 1,
+      "log": "current_meta_choice_direct_pythonpath_unset.log",
+      "log_sha256": "dd9f6265c9928e3f1541c7b528c893550b1e7211e2d96bbb92f82a53d0009df9"
+    }
+  ],
+  "source_comparison": {
+    "tests/test_eodcs_meta_choice_descent.py": {
+      "baseline_sha256": "ec6231ef81100d8b11fd7dd6f59d65bc978aea20a8e68b8a292616a6d166b0eb",
+      "current_sha256": "ec6231ef81100d8b11fd7dd6f59d65bc978aea20a8e68b8a292616a6d166b0eb",
+      "byte_identical": true
+    },
+    "scripts/meta_choice_descent_probe.py": {
+      "baseline_sha256": "167dab55389b68167a978bb1fadde40730d99fae196d9c880eec3d1e1f877c52",
+      "current_sha256": "167dab55389b68167a978bb1fadde40730d99fae196d9c880eec3d1e1f877c52",
+      "byte_identical": true
+    },
+    "observational_succ/meta_choice_descent.py": {
+      "baseline_sha256": "a51a288e679b89448b69711d714147e025933c7f6a3bac4868fb9bb443ba4d3f",
+      "current_sha256": "a51a288e679b89448b69711d714147e025933c7f6a3bac4868fb9bb443ba4d3f",
+      "byte_identical": true
+    }
+  },
+  "verdict": "Same pre-existing failure at baseline and current when PYTHONPATH is unset; same narrow test passes at both with PYTHONPATH=.; not a Prime Bridge source regression"
+}

@@ -1,0 +1,13 @@
+/home/runner/work/SUCC/SUCC/formal/PrimeBridge.lean:88:2: error: failed to synthesize
+  Decidable (∀ (e : Trit), ∃ r t, share 0 r e = share 1 t e)
+Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'ObservationalSUCC.PrimeBridge.decode_codeword' depends on axioms: [propext]
+'ObservationalSUCC.PrimeBridge.decode_encodePair' depends on axioms: [propext]
+'ObservationalSUCC.PrimeBridge.encodePair_decode' depends on axioms: [propext]
+'ObservationalSUCC.PrimeBridge.codeword_gram_count' depends on axioms: [propext]
+'ObservationalSUCC.PrimeBridge.singleton_partial_trace_count' depends on axioms: [propext]
+'ObservationalSUCC.PrimeBridge.singleton_label_alias' depends on axioms: [propext, sorryAx]
+'ObservationalSUCC.PrimeBridge.wrong_middle_decoder_receipt' depends on axioms: [propext]
+'ObservationalSUCC.PrimeBridge.wrong_semigroup_braid_receipt' does not depend on any axioms
+'ObservationalSUCC.PrimeBridge.commuting_reconstructions_force_logical_commutation' does not depend on any axioms
+'ObservationalSUCC.PrimeBridge.mirror_recurrence_along_words' does not depend on any axioms
