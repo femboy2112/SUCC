@@ -1,5 +1,12 @@
 # Research claim ledger
 
+The research-only [source-faithful renormalization supplement](CLAIM_SUPPLEMENT_SOURCE_FAITHFUL_RENORMALIZATION.md)
+records exact carry repair, minimal future memory, quantitative heat Schur
+corrections, two-completion separation, and a sharp half-density transport
+threshold. Original completed Weil source and Schur bounds are unchanged;
+analytic proofs are not certified by the 22-declaration finite Lean core.
+[Research report and receipts](../research/2026-10-23/SOURCE_FAITHFUL_SYNTHESIS.md).
+
 The research-only [Reality Pin supplement RP-01–RP-25](CLAIM_SUPPLEMENT_REALITY_PIN.md)
 extends the spectral-boundary stack with labelled zero-forcing reconstruction,
 source-history return Grams, an infinite arithmetic operator with certified

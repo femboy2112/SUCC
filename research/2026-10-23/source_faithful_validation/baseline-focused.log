@@ -1,0 +1,184 @@
+.................................................................................
+----------------------------------------------------------------------
+Ran 81 tests in 0.828s
+
+OK
+{
+  "arithmetic": {
+    "finite_second_moment_N7_lambda1_sigma2": "51686947321/1944810000",
+    "infinite_m_enclosure_N4_lambda0_sigma2_s5": [
+      "242544618656042980157240074/1938282718104169763292830837",
+      "55057246908582133909995185711/394010263420395285553230244138"
+    ],
+    "norm_resolvent_horizon_bound_N4_lambda0_sigma2_s5": "5314410/28725953"
+  },
+  "geometry": {
+    "block_extension_first_return_order": 6,
+    "block_extension_jump": "1684/49",
+    "boundary": [
+      0,
+      2,
+      4,
+      5
+    ],
+    "forcing_schedule": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        3
+      ]
+    ],
+    "known_labelled_tree_reconstructed": true,
+    "maximum_moment_order": 5,
+    "source_size": 6
+  },
+  "parent_commit": "d2f760ab9d9a11719e950caeb2d54bfa5114f495",
+  "quantum": {
+    "K_rho_minus_rho_K_1_3": "-32/441",
+    "additive_lambda": "-1/4",
+    "beta": 2,
+    "cancelled_1_to_2_edge": "0",
+    "conditional_density": [
+      "36/49",
+      "9/49",
+      "4/49"
+    ],
+    "cutoff": 3,
+    "full_infinite_theorem_proved_by_this_finite_run": false,
+    "old_arithmetic_density_stationary_for_new_K": false,
+    "scope": "synthetic exact finite rational witnesses; no empirical data",
+    "sigma": 2,
+    "uncancelled_1_to_3_edge": "1/9"
+  },
+  "schema": "succ-reality-pin-exact-v1",
+  "scope": {
+    "alpha_or_gamma_physical_prediction": false,
+    "exact_rational_oracles": true,
+    "independent_academic_novelty_claimed": false,
+    "infinite_operator_bounds_justified_by_paper_proof": true,
+    "paper_theorems_kernel_certified": false,
+    "physical_measurements_performed": false,
+    "scalar_arithmetic_cyclicity_proved": false,
+    "signed_Weil_positivity_or_RH_proved": false,
+    "unknown_physical_topology_uniquely_identified": false
+  },
+  "source_git_blobs": {
+    "formal/RealityPin.lean": "31ee3d5a6d97da2bfc50fbe5b737c2e79c475d25",
+    "lean-toolchain": "1e70935f6929925474350e9c03824a9124ef1543",
+    "observational_succ/boundary_realization_selection.py": "e8437091c266b4fd79703ec3de116e8f7645369f",
+    "observational_succ/reality_pin_arithmetic.py": "00ab2e39257a4cb9d1064a1a20df70af468fd7df",
+    "observational_succ/reality_pin_continuum.py": "dcd9cdc9a9e7b57b845c153e62a1acf1e187089d",
+    "observational_succ/reality_pin_geometry.py": "de29733aacf62287274f229e66b0664922853e88",
+    "observational_succ/reality_pin_quantum_global.py": "fd7c86e5bc752831e6c194f90f33dbbab86f29dd",
+    "observational_succ/reality_pin_selection.py": "58678bd3eb25344de855c77ac53c4437e5bf14a4",
+    "observational_succ/spectral_boundary_rigidity.py": "2c5a1548b2cd884e130e27d1206cbdbe7d6c16b1",
+    "scripts/reality_pin_probe.py": "b7100bc2dfedbfaa2c039da4d666df6a91b60cb9",
+    "scripts/reality_pin_rc_experiment.py": "ca26fea9d612cc1cbaa38d6932069d77b916b586",
+    "scripts/verify_reality_pin_lean.py": "8fc5ca970b1c711952e8b5a9e4d084411e57eb06",
+    "tests/test_reality_pin_arithmetic.py": "35fa99363726e9bbb219d6aa9df18a0a52d07b57",
+    "tests/test_reality_pin_continuum.py": "201ec67fcc2c2732f1860c6696ce4fc38da1725b",
+    "tests/test_reality_pin_geometry.py": "3753a6964a0a5b5b4ea14dc9daa8a05028d422aa",
+    "tests/test_reality_pin_hostile.py": "68624d0ddc6151ad3d6fc03c61bf93e80777c423",
+    "tests/test_reality_pin_quantum_global.py": "73542ea8e677970f0029a0d56b3d77660665e962",
+    "tests/test_reality_pin_selection.py": "89e0c55b11ad514f0ab22615badd4a706d9eda0b"
+  },
+  "synthetic_continuum": {
+    "heldout_s1_over6_response": [
+      "395263834267939101207852676113276884053650239633856420542304829661889070988378075116365468771367803095087352713411146798233001485987698027642794927720804268029467576860723769145051559629116870275296213/381045237943679027529636254318205329645893688552040303054665183221730382561507603402911963452618118765322704612901454724042286000006219627368648057423292144591973908826828505085944686014449524769030144",
+      "69714080695803705127352482370374112080639614847908452957849580432410869317474253056741866483552199776213569115736090153737084570316155117454279864740144608635582117897152118222178656671947/67206296402699701352022831101714961101290978391297113231302268389306619374508150324037436507354386664923021987724657977439010873082351730873243140549905791529649456124977169462145977417728"
+    ],
+    "known_capacity_pin": {
+      "conductivity": [
+        "149343091178214783688895843527351590936321800/74671602882124330714491289550276151867671409",
+        "331873940134022607495207464641644874619881/165936895109212453027368173262516961903392"
+      ],
+      "length": [
+        "298686182356429567377791687054703181872643600/74671602882124330714491289550276151867671409",
+        "331873940134022607495207464641644874619881/82968447554606226513684086631258480951696"
+      ]
+    },
+    "physical_measurements_performed": false,
+    "same_complete_response_different_source": [
+      "1",
+      "6",
+      "2"
+    ],
+    "source_conductivity_capacity_length": [
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  "synthetic_rc": {
+    "calibration_selection": {
+      "empty_fiber": false,
+      "gauge_classes": [],
+      "identification_scope": "topology_family",
+      "models": [
+        "series-capacitor"
+      ],
+      "physical_authentication": false,
+      "target_classes": [
+        "series-capacitor"
+      ],
+      "unique_gauge_within_family": false,
+      "unique_within_family": true
+    },
+    "component_intervals": [
+      "99/100",
+      "101/100"
+    ],
+    "data": {
+      "dc": "39999/80000",
+      "holdout-laplace-3": "804201/1001200",
+      "laplace-1": "401397/600400"
+    },
+    "dc_selection": {
+      "empty_fiber": false,
+      "gauge_classes": [],
+      "identification_scope": "topology_family",
+      "models": [
+        "direct",
+        "series-capacitor"
+      ],
+      "physical_authentication": false,
+      "target_classes": [
+        "direct",
+        "series-capacitor"
+      ],
+      "unique_gauge_within_family": false,
+      "unique_within_family": false
+    },
+    "heldout_selection": {
+      "empty_fiber": false,
+      "gauge_classes": [],
+      "identification_scope": "topology_family",
+      "models": [
+        "series-capacitor"
+      ],
+      "physical_authentication": false,
+      "target_classes": [
+        "series-capacitor"
+      ],
+      "unique_gauge_within_family": false,
+      "unique_within_family": true
+    },
+    "instrument_error_per_probe": "1/500",
+    "physical_measurements_performed": false,
+    "plan_sha256": "1b8a70fae7ee524f5f3c682f883c3bac141a070ec52c124ff60d7497047b5604",
+    "separation_witnesses": [
+      [
+        "direct",
+        "series-capacitor",
+        [
+          "laplace-1",
+          "holdout-laplace-3"
+        ]
+      ]
+    ],
+    "source_kind": "synthetic"
+  }
+}

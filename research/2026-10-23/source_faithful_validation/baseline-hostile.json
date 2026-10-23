@@ -1,0 +1,154 @@
+{
+  "classifier_script_sha256": "e3b28e660a0263cbdbb9c821e4e2f96c8f9fba66271c2c8ad0500972126461f5",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "sympy": "1.14.0"
+  },
+  "findings": [
+    {
+      "classification": "FIXED",
+      "exception": "ProofContractError",
+      "expected": "reject authentic claim with synthetic witness",
+      "id": "F01_SOURCE_FLAG_MISMATCH",
+      "message": "contradictory source-authenticity metadata",
+      "state": "rejected_or_exception"
+    },
+    {
+      "classification": "FIXED",
+      "exception": "FrozenInstanceError",
+      "expected": "reject proof status with no backing at verification time",
+      "id": "F02_MUTABLE_STATUS",
+      "message": "cannot assign to field 'status'",
+      "state": "rejected_or_exception"
+    },
+    {
+      "classification": "FIXED",
+      "exception": "ProofContractError",
+      "expected": "reject later dependency in constant metadata",
+      "id": "F03_CONTRADICTORY_DEPENDENCIES",
+      "message": "contradictory quantifier dependency metadata",
+      "state": "rejected_or_exception"
+    },
+    {
+      "classification": "FIXED",
+      "expected": "do not grant proof authority to nonexistent theorem",
+      "id": "F04_UNCHECKED_THEOREM_REFERENCE",
+      "observed": {
+        "authority": "NON_AUTHORITATIVE_RESEARCH_METADATA",
+        "certificates_verified": [],
+        "claimed_source_authentic": false,
+        "claimed_status": "PROVED LOCAL",
+        "name": "cloud hostile fixture",
+        "source_authentic": false,
+        "status": "UNVERIFIED",
+        "theorem_refs": [
+          [
+            "NoSuchTheorem",
+            "NoSuchKernel",
+            []
+          ]
+        ],
+        "transports_verified": [],
+        "undischarged_assumptions": []
+      },
+      "state": "not_exposed"
+    },
+    {
+      "classification": "FIXED",
+      "expected": "produce rational negative vector for non-PSD rational matrix",
+      "id": "F05_SHALLOW_NEGATIVE_CONE",
+      "known_value": "-9/100000000000000",
+      "known_vector": [
+        "1",
+        "1",
+        "1"
+      ],
+      "matrix": [
+        [
+          "199999999999999/100000000000000",
+          "-100000000000001/100000000000000",
+          "-100000000000001/100000000000000"
+        ],
+        [
+          "-100000000000001/100000000000000",
+          "199999999999999/100000000000000",
+          "-100000000000001/100000000000000"
+        ],
+        [
+          "-100000000000001/100000000000000",
+          "-100000000000001/100000000000000",
+          "199999999999999/100000000000000"
+        ]
+      ],
+      "returned_vector": "Matrix([[100000000000001/99999999999998], [100000000000001/99999999999998], [1]])",
+      "state": "not_exposed",
+      "target_psd": false
+    },
+    {
+      "classification": "FIXED",
+      "exception": "GoldbachCircleError",
+      "expected": "reject noninteger prime cutoff",
+      "id": "F06_NONINTEGER_CUTOFF",
+      "independent_true_lower_bound": "135/128",
+      "lower_bound_derivation": "2*(1-1/4)*(1-1/16)*(1-1/4)",
+      "message": "P must be an integer >= 2",
+      "state": "rejected_or_exception"
+    },
+    {
+      "actual_n0": 256,
+      "claimed_small_remainder_upper": 4,
+      "classification": "FIXED",
+      "d": 4,
+      "eps": "1/4",
+      "expected": "do not identify whole exponent tail with small BBLT remainder",
+      "id": "F07_BBLT_TAIL_ATTRIBUTION",
+      "n": 256,
+      "scope": "documentation/proof attribution; exact identity itself remains true",
+      "state": "source_review_required"
+    },
+    {
+      "P": 3,
+      "classification": "FIXED",
+      "exact_ratio_S10_over_S2": "4/3",
+      "expected": "S(10)=(4/3)*(2*C2), not 2*C2",
+      "id": "F08_TWIN_CONSTANT_NORMALIZATION",
+      "p": 5,
+      "scope": "false docstring identity; twin constant enclosure computation is separate",
+      "state": "source_review_required"
+    },
+    {
+      "classification": "FIXED",
+      "expected": "1000000000000000000000000000001",
+      "id": "F09_FLOAT_ORDERED_EXACT_EIGENVALUE",
+      "matrix": [
+        [
+          1000000000000000000000000000002,
+          1
+        ],
+        [
+          1,
+          1000000000000000000000000000002
+        ]
+      ],
+      "observed": "1000000000000000000000000000001",
+      "quadratic_form_after_subtracting_reported_minimum": "0",
+      "state": "not_exposed",
+      "test_vector": [
+        1,
+        -1
+      ]
+    }
+  ],
+  "fixture_script_sha256": "4ed5b4e061b452f17ef645b9955613686f27e32d2ea6f8a1b904deaeb5a7ed3d",
+  "interpretation": "Historical defects and repaired regressions have opposite expectations.",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "target_sha": "5e2ba04c8b4ab627b6b0add588609c347346a1a2",
+  "target_source_sha256": {
+    "observational_succ/abc_decomposition.py": "f9e08c647e398e54459426f59dd8c0648dde45877586d98f327a8466ab54fe2f",
+    "observational_succ/goldbach_circle.py": "4a39107a76c6b97e087ffec215c22090aba05a7fc887a63afd6580cf8142dbba",
+    "observational_succ/proof_contracts.py": "85e77e3aa97d88f49eeb7ae565fae44eda8faa33ae847f7e3ac701ebd84020e2",
+    "observational_succ/quantitative_rigidity.py": "8a7bec935c365df5dc459291f894434332e26ec632d8186d1c1405d442aebacd"
+  },
+  "target_worktree_dirty": false
+}
+

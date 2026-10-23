@@ -1,5 +1,12 @@
 # Claim Index
 
+**2026-10-23 Carry the Truth research:**
+[source-faithful claim supplement](CLAIM_SUPPLEMENT_SOURCE_FAITHFUL_RENORMALIZATION.md) ·
+[complete synthesis](../research/2026-10-23/SOURCE_FAITHFUL_SYNTHESIS.md).
+Exact carry and minimal future information, explicit norm defects, quantitative
+heat-memory repair and sharp half-density log transport. Paper, finite and Lean
+authority are distinct; original signed S4 and RH remain open.
+
 **2026-10-22 Reality Pin research stack:**
 [RP-01–RP-25](CLAIM_SUPPLEMENT_REALITY_PIN.md) ·
 [proof synthesis](../research/2026-10-22/REALITY_PIN_SYNTHESIS.md) ·

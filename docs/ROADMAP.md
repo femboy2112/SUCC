@@ -1,5 +1,13 @@
 # Research roadmap
 
+**2026-10-23 research verdict.** [Carry the Truth](../research/2026-10-23/SOURCE_FAITHFUL_SYNTHESIS.md)
+closes concrete carry, information, norm and heat-memory theorems, including
+an explicit retained-memory Schur correction. The next decisive arithmetic
+edge is a source-admissible auxiliary family in the original high domain that
+strictly improves an existing directional inverse bound after all errors.
+The log-atom map alone does not provide that family. Original S4 and RH remain
+open; physical access and named passive cyclicity are separate questions.
+
 **Current Academic Main VII frontier:** see
 [the scoped research map](academic_main_vii/research_frontier.md).
 The primitive abc weighted moment and Euler-product mean are paper-proved for

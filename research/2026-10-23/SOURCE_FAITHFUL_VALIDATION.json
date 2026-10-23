@@ -1,0 +1,256 @@
+{
+  "schema": "succ-source-faithful-validation-v1",
+  "checked_utc": "2026-10-23T17:43:18.921863+00:00",
+  "python": "3.12.14",
+  "parent": "5e2ba04c8b4ab627b6b0add588609c347346a1a2",
+  "main_untouched": "b116841f12b41aaf7600da39bbb40577f25b6295",
+  "baseline": {
+    "tests": 6825,
+    "seconds": 596.509,
+    "exit_code": 0,
+    "raw_log": "source_faithful_validation/baseline-full.log"
+  },
+  "candidate_full": {
+    "tests": 6937,
+    "seconds": 607.952,
+    "exit_code": 0,
+    "raw_log": "source_faithful_validation/final-full.log"
+  },
+  "new_focused": {
+    "tests": 112,
+    "seconds": 0.745,
+    "exit_code": 0,
+    "raw_log": "source_faithful_validation/new-focused-final.log"
+  },
+  "inherited_reality": {
+    "tests": 81,
+    "seconds": 1.036,
+    "exit_code": 0,
+    "raw_log": "source_faithful_validation/final-inherited-reality.log"
+  },
+  "inherited_spectral": {
+    "tests": 28,
+    "seconds": 0.116,
+    "exit_code": 0,
+    "raw_log": "source_faithful_validation/final-inherited-spectral.log"
+  },
+  "gates": [
+    {
+      "name": "final-provenance",
+      "command": [
+        "python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.035,
+      "log": "final-provenance.log"
+    },
+    {
+      "name": "final-foundations",
+      "command": [
+        "python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.078,
+      "log": "final-foundations.log"
+    },
+    {
+      "name": "final-ordinal",
+      "command": [
+        "python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.497,
+      "log": "final-ordinal.log"
+    },
+    {
+      "name": "final-academic-vii",
+      "command": [
+        "python",
+        "scripts/academic_main_vii_gate.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.989,
+      "log": "final-academic-vii.log"
+    },
+    {
+      "name": "final-academic-viii",
+      "command": [
+        "python",
+        "scripts/academic_main_viii_gate.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.215,
+      "log": "final-academic-viii.log"
+    },
+    {
+      "name": "final-hostile",
+      "command": [
+        "python",
+        "scripts/main_vii_hostile_replay.py",
+        "--target-repo",
+        ".",
+        "--require-fixed"
+      ],
+      "exit_code": 0,
+      "seconds": 0.459,
+      "log": "final-hostile.log"
+    },
+    {
+      "name": "final-exact-receipt",
+      "command": [
+        "python",
+        "scripts/source_faithful_carry_probe.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.264,
+      "log": "final-exact-receipt.log"
+    },
+    {
+      "name": "final-namespace",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_claim_namespace*.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.141,
+      "log": "final-namespace.log"
+    },
+    {
+      "name": "final-diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.017,
+      "log": "final-diff-check.log"
+    }
+  ],
+  "logs": {
+    "baseline-academic-vii.json": {
+      "sha256": "da4e0470257a393afdf2983cf296f557f7cecfa823463273f5e4a7b4640f240e",
+      "bytes": 1067
+    },
+    "baseline-academic-viii.json": {
+      "sha256": "8dde693aab7f0280939bbd986c35de3bb0f3fc092bf5ec3d3308bc3f432e74be",
+      "bytes": 736
+    },
+    "baseline-focused.log": {
+      "sha256": "9bcb1985a63af4b2678ec9ed5357e9904450a50eba50137db0da21bdab3a7244",
+      "bytes": 6937
+    },
+    "baseline-foundations.json": {
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "bytes": 2498
+    },
+    "baseline-full.log": {
+      "sha256": "fde26c7ad9a960c163a565544071c32f230cb8c0f91e6bdd06cc08a5aead1ad6",
+      "bytes": 7681
+    },
+    "baseline-hostile.json": {
+      "sha256": "92e621e05c472ab606b8b431a2072e91a2ca85c419038a40fefb7e455eb08d6a",
+      "bytes": 5248
+    },
+    "baseline-ordinal.json": {
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "bytes": 3612
+    },
+    "baseline-provenance.log": {
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "bytes": 249
+    },
+    "final-academic-vii.log": {
+      "sha256": "92e9e83ac69c313bdf130614a18d6f35fa30c115ceef1ed3a1fba10d42ad9a45",
+      "bytes": 1066
+    },
+    "final-academic-viii.log": {
+      "sha256": "2f311d2b28a47576fca2dd31534cc9a96ef46ce2972f0e9342e1e185ba904d42",
+      "bytes": 735
+    },
+    "final-diff-check.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "final-exact-receipt.log": {
+      "sha256": "4d4ce9868392e501d0764aebc67408f0b58fb936915ad8fc988df8e26ebe24df",
+      "bytes": 71
+    },
+    "final-foundations.log": {
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "bytes": 2498
+    },
+    "final-full.log": {
+      "sha256": "f5535308d1522fc9687308affd60fa8a676bc3c6f4f7d25833365c6a28f032fe",
+      "bytes": 7757
+    },
+    "final-gates.json": {
+      "sha256": "fd4b1ba46852d77c390f2001fd38ba3b56cd798c585a470b1be19a71f68b8158",
+      "bytes": 1946
+    },
+    "final-hostile.log": {
+      "sha256": "03b04db9daae7749dbb5befbac03d8aae30e0dd1be906e2943d907749b96587d",
+      "bytes": 5247
+    },
+    "final-inherited-reality.log": {
+      "sha256": "ee90c33962a1c162aaef54f96ce15f0a44e88147cb2f73e0e7ac0c3bad3bd7c1",
+      "bytes": 180
+    },
+    "final-inherited-spectral.log": {
+      "sha256": "36a4c1374274738f6fd530e89dc53f6ed9009d09dd5db1f2726e2eef9d7c2606",
+      "bytes": 127
+    },
+    "final-namespace.log": {
+      "sha256": "13ee2191a4a9262749c6d3cf421431a01db65fe4c62a5242708718ec8c01dea3",
+      "bytes": 114
+    },
+    "final-ordinal.log": {
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "bytes": 3612
+    },
+    "final-parent-receipt.log": {
+      "sha256": "a8109816c1ec2dead85f9086ae02801d24fdea33be5154292d62518dfac4db8b",
+      "bytes": 6757
+    },
+    "final-provenance.log": {
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "bytes": 249
+    },
+    "new-focused-final.log": {
+      "sha256": "5cf63f061cd80e05ac8eefb48bcbbb2efda290f5df68615482c9191b9d0fa23a",
+      "bytes": 16661
+    }
+  },
+  "executable_hash_receipt": "SOURCE_FAITHFUL_EXACT_RECEIPT.json",
+  "lean_local_receipt": "SOURCE_FAITHFUL_CARRY_LEAN_RECEIPT.json",
+  "local_lean_scope": {
+    "declarations": 22,
+    "false_mutations_rejected": 5,
+    "toolchain": "leanprover/lean4:v4.14.0",
+    "host_path_shim_disclosed": true,
+    "analytic_theorems_formalized": false
+  },
+  "hosted_CI": {
+    "status_at_recording": "FINAL_HEAD_NOT_YET_PUSHED",
+    "initial_core_lean_failure": "elan shim invoked in temporary directory with no default toolchain; fixed workflow selects absolute pinned compiler via elan which lean",
+    "failed_job": "https://github.com/femboy2112/SUCC/actions/runs/39995906046/job/120559241407",
+    "final_results": "See draft PR #245 exact-head workflows; local results do not imply hosted success."
+  },
+  "authority": {
+    "full_suite_proves_universal_analytic_theorems": false,
+    "physical_measurements_performed": false,
+    "original_S4_bound_improved": false,
+    "RH_proved": false
+  },
+  "scope_note": "The candidate full suite exercised the integrated working tree. The gates ran before its integration commit; git metadata gates record their actual HEAD. Final exact-head replay and hosted results are reported in PR #245. Legacy invalid-escape SyntaxWarnings also occur on the untouched parent; new files separately pass strict py_compile."
+}

@@ -119,4 +119,4 @@ Tests compare them at radices 2,3,5,7 and phases −1,1,2/3. Radix 11 and
 composite 6 are holdout/mutation controls; rational z=2/3 is an algebraic
 parameter, not a unitary physical phase. Exact Hankel determinants verify
 finite minimality witnesses and the constant-mode rank drop. Universal
-minimality is proved by M4's reduced denominator argument, not these tests.
+minimality is proved by M3's reduced denominator argument, not these tests.

@@ -1,5 +1,14 @@
 # Architecture of Observational SUCC
 
+**Source-faithful renormalization extension (2026-10-23).** A source action
+must be transported with its future observation language and any unresolved
+residue environment. Full carry decomposition is unitary; quotient-only and
+uniform-block observations require a disclosed defect or memory kernel.
+Exact Schur elimination repairs the calculated heat diffusivity defect.
+Weighted log synthesis preserves genuine prime coefficients at a sharp
+resolution cost, but has no completed-Weil sign authority.
+[Maps, domains and preservation ledger](../research/2026-10-23/SOURCE_FAITHFUL_SYNTHESIS.md).
+
 **Reality Pin research extension (2026-10-22).** Source-labelled operator
 histories map to a boundary response, then to a canonical observable quotient.
 The quotient preserves boundary Gram/return laws, not arbitrary physical node

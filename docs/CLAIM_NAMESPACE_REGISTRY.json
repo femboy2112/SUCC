@@ -14,6 +14,28 @@
   },
   "namespaces": [
     {
+      "namespace": "SOURCE_FAITHFUL_RENORMALIZATION",
+      "bare_prefix": "SFR",
+      "fq_prefix": "SFR",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SOURCE_FAITHFUL_RENORMALIZATION.md"
+      ],
+      "id_count": 28,
+      "status": "MIXED (CLASSICAL/PROVED PAPER/EXACT FINITE/INTERVAL/LEAN KERNEL/REFUTED/CONDITIONAL/UNVERIFIED)",
+      "topic": "source-faithful carry, disclosed Hilbert defects, minimal future memory, distinct clock completions, heat/resolvent memory, critical half-density and signed-source boundary",
+      "code": [
+        "observational_succ/source_faithful_carry.py",
+        "observational_succ/source_faithful_observers.py",
+        "observational_succ/source_faithful_memory.py",
+        "observational_succ/source_faithful_limits.py",
+        "observational_succ/source_faithful_resolvent.py",
+        "observational_succ/source_faithful_weil.py",
+        "formal/SourceFaithfulCarry.lean",
+        "scripts/source_faithful_carry_probe.py",
+        "scripts/check_source_faithful_carry_lean.py"
+      ]
+    },
+    {
       "namespace": "REALITY_PIN",
       "bare_prefix": "RP",
       "fq_prefix": "RP",
