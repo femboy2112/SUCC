@@ -520,3 +520,58 @@ typicality-selection mechanism (or a completely different bound) using
 the circumference/perimeter source, not simply appeal to the Haar
 properties of every fine regular polygon. This objection survives
 the exact polynomial, central binomial, Kummer and Fejér identities.
+
+
+---
+
+## CC-10. Circle source and circle target share precisely the SAME integer moments
+
+The preceding bridge can be closed one rung further, without assuming π
+normality. Write H_k=binom(2k,k), the exact invariant squared-chord moment.
+
+By the *classical Wallis product*, the rational approximants
+
+    R_k = 2^(4k+1)/[(2k+1) H_k²]
+
+satisfy the strict enclosure (k>=1)
+
+    R_k < π < R_k*(4k+2)/(4k+1).
+
+Thus the unit-circle circumference constant itself can be reconstructed
+from the same moments whose Kummer prime carries the prior theorem extracted.
+Since each H_k is *exactly* the k-th chord moment on any regular m-gon with
+m>k, this is a fully deterministic finite-circle-moment -> rational interval
+-> π source construction. No prior decimal digits of π are needed.
+
+For k=5, H_5=252=2²*3²*7, and the completely exact finite source gives
+
+    131072/43659 < π < 262144/83349.
+
+The key self-consistency question now has a particularly sharp form:
+
+**Source:** π = lim_k 2^(4k+1)/((2k+1) H_k²), with each H_k provided by a
+finite polygon and authentic all-prime carries.
+
+**Target:** for each fixed k, prove
+
+    lim_(N->infinity) N^-1 sum_(j<N)
+       [F_(b^j)(|1-exp(2πiπ)|²)]^k = H_k.
+
+This would establish normality through CC-03. Both sides use *the same*
+circle-generated central-binomial sequence. But identity of source and target
+moment *constants* does not supply the temporal convergence on the left.
+
+A fatal naive shortcut would infer that because π was produced by Haar
+moments, its own expanding orbit is automatically Haar-generic. For a
+counterexample to that abstract inference, select the point x=(1/4)H_1=1/2
+from the same geometric Haar expectation H_1=2. Under doubling x maps
+immediately to 0 and is nonnormal. A circle-invariant functional of Haar data
+need not select a Haar-generic point.
+
+The missing π-specific transport has now been isolated without importing
+primes or entropy as additional axioms: **does the precise Wallis
+moment-functional selection carry any nontrivial bound on the expanding
+polynomial chord-moment chains?** The response is presently UNVERIFIED.
+The source equality is classical and already appears in inherited PR #231;
+the new-to-SUCC point is making the target-side moment law and the missing
+selection theorem part of the same explicit commutative diagram.
