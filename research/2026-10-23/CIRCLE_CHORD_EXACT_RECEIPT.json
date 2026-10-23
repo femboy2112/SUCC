@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "parent": "5e2ba04c8b4ab627b6b0add588609c347346a1a2",
+  "status": "EXACT_FINITE_TESTED; PAPER_THEOREMS_SEPARATE; PI_NORMALITY_UNVERIFIED",
+  "pi_normality_proved": false,
+  "RH_proved": false,
+  "physical_measurement_performed": false,
+  "chord_covering_coefficients": {
+    "1": [
+      0,
+      1
+    ],
+    "2": [
+      0,
+      4,
+      -1
+    ],
+    "3": [
+      0,
+      9,
+      -6,
+      1
+    ],
+    "4": [
+      0,
+      16,
+      -20,
+      8,
+      -1
+    ],
+    "5": [
+      0,
+      25,
+      -50,
+      35,
+      -10,
+      1
+    ],
+    "6": [
+      0,
+      36,
+      -105,
+      112,
+      -54,
+      12,
+      -1
+    ]
+  },
+  "fejer_chord_coefficients": {
+    "1": [
+      "2/1",
+      "-1/2"
+    ],
+    "2": [
+      "3/1",
+      "-2/1",
+      "1/3"
+    ],
+    "3": [
+      "4/1",
+      "-5/1",
+      "2/1",
+      "-1/4"
+    ],
+    "4": [
+      "5/1",
+      "-10/1",
+      "7/1",
+      "-2/1",
+      "1/5"
+    ]
+  },
+  "haar_chord_moments": {
+    "1": "2",
+    "2": "6",
+    "3": "20",
+    "4": "70",
+    "5": "252",
+    "6": "924",
+    "7": "3432",
+    "8": "12870",
+    "9": "48620",
+    "10": "184756",
+    "11": "705432",
+    "12": "2704156"
+  },
+  "kummer_carries": {
+    "2": {
+      "2": 1,
+      "3": 1
+    },
+    "3": {
+      "2": 2,
+      "5": 1
+    },
+    "5": {
+      "2": 2,
+      "3": 2,
+      "7": 1
+    },
+    "12": {
+      "2": 2,
+      "7": 1,
+      "13": 1,
+      "17": 1,
+      "19": 1,
+      "23": 1
+    }
+  },
+  "kummer_reconstruction_100": true,
+  "polygon_moment_stabilization": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true,
+    "13": true,
+    "14": true,
+    "15": true,
+    "16": true,
+    "17": true,
+    "18": true,
+    "19": true
+  },
+  "polygon_vertex_orbits_7_2": [
+    [
+      0
+    ],
+    [
+      1,
+      2,
+      4
+    ],
+    [
+      3,
+      6,
+      5
+    ]
+  ],
+  "selected_vertex_mean_7_2": "7/3",
+  "full_polygon_mean_7_2": "2",
+  "replica_count_16_1_100_128": 2,
+  "pi_polygon_interval_20_decimal12": [
+    3141592653589,
+    3141592653590,
+    1000000000000
+  ],
+  "actual_pi_fejer_16_N5_M2_decimal12": [
+    1541868058538,
+    1541868058539,
+    1000000000000
+  ],
+  "actual_pi_fejer_16_N8_M3_decimal12": [
+    1234121274114,
+    1234121274115,
+    1000000000000
+  ],
+  "aligned_radical_fejer_16_N8_M3_K6_decimal12": [
+    1234121274114,
+    1234121274115,
+    1000000000000
+  ],
+  "rigorous_aligned_energy_error_N8_M3_K6": "1771561/1293564434962186240",
+  "source_git_blobs": {
+    "observational_succ/circle_collision_rigidity.py": "9338ec76f5d8656f7f009bb51bc8a4634a32c597",
+    "tests/test_circle_collision_rigidity.py": "78a714815720f35cdbe978fa11bf2abc5b65902e",
+    "scripts/circle_collision_probe.py": "eb9e0e6f4b98f1a665a6b80dc2049907de4e8df4"
+  }
+}
