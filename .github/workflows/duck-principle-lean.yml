@@ -1,0 +1,67 @@
+name: Duck Principle trusted Lean kernel
+
+on:
+  push:
+    branches:
+      - 'research/duck-principle-*'
+    paths:
+      - 'formal/DuckPrinciple.lean'
+      - '.github/workflows/duck-principle-lean.yml'
+      - 'lean-toolchain'
+  pull_request:
+    paths:
+      - 'formal/DuckPrinciple.lean'
+      - '.github/workflows/duck-principle-lean.yml'
+      - 'lean-toolchain'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  duck-lean:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install repository-pinned Lean
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --location \
+            https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh \
+            -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Reject admitted placeholders in proof source
+        shell: bash
+        run: |
+          python - <<'PY'
+          import re
+          import sys
+          from pathlib import Path
+          sys.path.insert(0, "scripts")
+          from cambrian_audit_c_lean import uncomment
+          source = uncomment(Path("formal/DuckPrinciple.lean").read_text())
+          bad = re.search(r"\b(sorry|admit|axiom|unsafe|native_decide)\b", source)
+          if bad:
+              raise SystemExit("Prohibited proof placeholder: " + bad.group(0))
+          PY
+      - name: Compile full standalone theorem file
+        run: |
+          lean --version
+          lean formal/DuckPrinciple.lean
+      - name: Report exact proof dependencies
+        shell: bash
+        run: |
+          cp formal/DuckPrinciple.lean /tmp/DuckPrincipleAxioms.lean
+          cat >> /tmp/DuckPrincipleAxioms.lean <<'LEAN'
+          #print axioms ObservationalSUCC.Duck.factor_all_words
+          #print axioms ObservationalSUCC.Duck.factor_preserves_observations
+          #print axioms ObservationalSUCC.Duck.factors_compose
+          #print axioms ObservationalSUCC.Duck.faithful_probe_certifies_factor
+          #print axioms ObservationalSUCC.Duck.bounded_separating_probes_certify_factor
+          #print axioms ObservationalSUCC.Duck.failed_factor_yields_separating_experiment
+          #print axioms ObservationalSUCC.Duck.erased_systems_mimic_every_word
+          #print axioms ObservationalSUCC.Duck.erased_resemblance_does_not_certify_identity
+          LEAN
+          lean /tmp/DuckPrincipleAxioms.lean

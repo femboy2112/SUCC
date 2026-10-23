@@ -71,7 +71,7 @@
       ],
       "id_count": 12,
       "status": "MIXED (CLASSICAL/PAPER_PROVED/EXACT_FINITE_TESTED/REFUTED/UNVERIFIED)",
-      "topic": "source orbit quotient universality, fresh clock splicing, LCM and M\u00f6bius prime-jet genesis, continuous topological factor no-go",
+      "topic": "source orbit quotient universality, fresh clock splicing, LCM and Möbius prime-jet genesis, continuous topological factor no-go",
       "code": [
         "observational_succ/orbit_clock_genesis.py",
         "observational_succ/clock_incidence_inversion.py",
@@ -482,6 +482,23 @@
       "topic": "Geometric pi enclosures, path measures and unproved orbit normality",
       "code": [
         "observational_succ/pi_polygon_normality.py"
+      ]
+    },
+    {
+      "namespace": "DUCK_PRINCIPLE",
+      "bare_prefix": "DUCK",
+      "fq_prefix": "DUCK",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_DUCK_PRINCIPLE.md"
+      ],
+      "id_count": 28,
+      "status": "MIXED (CLASSICAL/PROVED LOCAL/LEAN_KERNEL_PROVED/CONDITIONAL/REFUTED/UNVERIFIED)",
+      "topic": "Declared structural factors, finite probes, authentic BBP transport and open pi normality",
+      "code": [
+        "observational_succ/duck_observer.py",
+        "observational_succ/duck_bbp.py",
+        "observational_succ/duck_bbp_fourier.py",
+        "observational_succ/duck_source_bridge.py"
       ]
     }
   ],

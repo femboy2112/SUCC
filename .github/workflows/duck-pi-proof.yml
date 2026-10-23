@@ -1,0 +1,53 @@
+name: Duck and pi exact research kernel
+on:
+  push:
+    branches: ['astra-cloud/duck-pi-kernel-*', 'research/duck-principle-*']
+    paths: ['formal/duck_pi/**', 'formal/DuckObserver.lean', '.github/workflows/duck-pi-proof.yml']
+  pull_request:
+    paths: ['formal/duck_pi/**', 'formal/DuckObserver.lean', '.github/workflows/duck-pi-proof.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: duck-pi-kernel-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  kernel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install hash-verified Lean 4.14.0
+        run: |
+          set -euo pipefail
+          curl --fail -L https://github.com/leanprover/lean4/releases/download/v4.14.0/lean-4.14.0-linux.tar.zst -o "$RUNNER_TEMP/lean.tar.zst"
+          echo "320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a  $RUNNER_TEMP/lean.tar.zst" | sha256sum -c -
+          tar --no-same-owner --zstd -xf "$RUNNER_TEMP/lean.tar.zst" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/lean-4.14.0-linux/bin" >> "$GITHUB_PATH"
+      - uses: actions/cache@v4
+        id: dependency-cache
+        with:
+          path: formal/duck_pi/.lake/packages
+          key: duck-pi-mathlib-4bbdccd9-v3
+          restore-keys: |
+            duck-pi-mathlib-4bbdccd9-v2
+            duck-pi-mathlib-4bbdccd9-v1
+      - name: Fetch pinned mathematics cache
+        working-directory: formal/duck_pi
+        run: |
+          lake exe cache get Mathlib/Tactic.lean Mathlib/Analysis/SpecificLimits/Basic.lean Mathlib/Analysis/SpecificLimits/Normed.lean Mathlib/Analysis/SpecialFunctions/Trigonometric/Inverse.lean Mathlib/Topology/Instances/AddCircle.lean Mathlib/MeasureTheory/Integral/Periodic.lean Mathlib/Topology/Instances/Complex.lean Mathlib/Data/Real/Pi/Irrational.lean Mathlib/Data/Real/Pi/Wallis.lean Mathlib/Analysis/Fourier/AddCircle.lean Mathlib/Analysis/Asymptotics/SpecificAsymptotics.lean Mathlib/Topology/UniformSpace/HeineCantor.lean Mathlib/MeasureTheory/Measure/Portmanteau.lean Mathlib/MeasureTheory/Integral/BoundedContinuousFunction.lean Mathlib/Topology/MetricSpace/Equicontinuity.lean Mathlib/Analysis/SpecialFunctions/Integrals.lean Mathlib/MeasureTheory/Integral/DominatedConvergence.lean Mathlib/Analysis/SpecialFunctions/Trigonometric/ArctanDeriv.lean Mathlib/Analysis/SpecialFunctions/Log/Deriv.lean
+      - name: Compile exact sources and export actual theorem types and axioms
+        run: python formal/duck_pi/check.py --output "$RUNNER_TEMP/duck-pi-kernel"
+      - uses: actions/cache/save@v4
+        if: always() && steps.dependency-cache.outputs.cache-hit != 'true'
+        with:
+          path: formal/duck_pi/.lake/packages
+          key: duck-pi-mathlib-4bbdccd9-v3
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: duck-pi-kernel-observation
+          path: ${{ runner.temp }}/duck-pi-kernel

@@ -1,5 +1,7 @@
 # Research roadmap
 
+**Duck / π research checkpoint (2026-10-21):** [execution and proof obligations](../research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md), [typed dependency ledger](DUCK_PI_DEPENDENCIES.json), [exact kernel receipt](../research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md). Actual BBP source transport and finite structural certificates are distinguished from the still-open source-specific Fourier estimate.
+
 **Current Academic Main VII frontier:** see
 [the scoped research map](academic_main_vii/research_frontier.md).
 The primitive abc weighted moment and Euler-product mean are paper-proved for

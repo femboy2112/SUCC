@@ -1,0 +1,264 @@
+{
+  "actual_bbp_pole_obstruction": [
+    {
+      "invariant": "-1/8",
+      "order": 1,
+      "pole_class": "1/4"
+    },
+    {
+      "invariant": "-1/8",
+      "order": 1,
+      "pole_class": "3/8"
+    },
+    {
+      "invariant": "-1/4",
+      "order": 1,
+      "pole_class": "1/2"
+    },
+    {
+      "invariant": "1/2",
+      "order": 1,
+      "pole_class": "7/8"
+    }
+  ],
+  "arbitrary_prefix_counterfeits": [
+    {
+      "denominator_power": 2,
+      "exact_prefix_match": true,
+      "fresh_correction": "0",
+      "fresh_index": 7,
+      "global_claim_status": "paper proof of rational shadow, not normality census",
+      "length": 0,
+      "newton_coefficients": [
+        "0"
+      ]
+    },
+    {
+      "denominator_power": 3,
+      "exact_prefix_match": true,
+      "fresh_correction": "-3008/10935",
+      "fresh_index": 8,
+      "global_claim_status": "paper proof of rational shadow, not normality census",
+      "length": 1,
+      "newton_coefficients": [
+        "0",
+        "-376/15"
+      ]
+    },
+    {
+      "denominator_power": 5,
+      "exact_prefix_match": true,
+      "fresh_correction": "-1616725711346/2740604867",
+      "fresh_index": 10,
+      "global_claim_status": "paper proof of rational shadow, not normality census",
+      "length": 3,
+      "newton_coefficients": [
+        "0",
+        "-1504/15",
+        "-16398178/1365",
+        "-602815976666/765765"
+      ]
+    },
+    {
+      "denominator_power": 10,
+      "exact_prefix_match": true,
+      "fresh_correction": "-65262893486972649044467014601853918791/4348962433550415966712627200",
+      "fresh_index": 15,
+      "global_claim_status": "paper proof of rational shadow, not normality census",
+      "length": 8,
+      "newton_coefficients": [
+        "0",
+        "-48128/15",
+        "-4042513862/1365",
+        "-638968997431118/765765",
+        "-905373900444026432/7402395",
+        "-83943206849864638773464/7096205025",
+        "-3322871467634723192221589744/3874154459175",
+        "-4123967819402520314773261850611312/81926744348173725",
+        "-77866777755115820324490300619442994944/30984694712479302795"
+      ]
+    },
+    {
+      "denominator_power": 14,
+      "exact_prefix_match": true,
+      "fresh_correction": "-2712377050104464061536235132492283283152994687668273141/503829822769588358085042000000000000000",
+      "fresh_index": 19,
+      "global_claim_status": "paper proof of rational shadow, not normality census",
+      "length": 12,
+      "newton_coefficients": [
+        "0",
+        "-770048/15",
+        "-328012977062/1365",
+        "-164767495541805998/765765",
+        "-52272820296768642112/672945",
+        "-1228922057031773934774675784/78058255275",
+        "-14310715493738770081661032921936/6691721338575",
+        "-25231256662973007597974872400376304/116538754407075",
+        "-77459654519455251475260829899065706743552/4426384958925614685",
+        "-149717055926211934903808588538993200300032/126468141683588991",
+        "-769454294534469823757338652041776924431872/11098203656272425",
+        "-1752748208703849487199622034056182566051921802574848/486304783512362657367525",
+        "-79575178058736549084039919940108807331013845760415143936/469433748330510691331159325"
+      ]
+    }
+  ],
+  "arc_discrepancy_difference_budgets": [
+    {
+      "discarded_prefix": 0,
+      "length": 1,
+      "upper": "212/12285"
+    },
+    {
+      "discarded_prefix": 0,
+      "length": 8,
+      "upper": "212/12285"
+    },
+    {
+      "discarded_prefix": 0,
+      "length": 64,
+      "upper": "212/12285"
+    },
+    {
+      "discarded_prefix": 2,
+      "length": 512,
+      "upper": "390167/58464000"
+    },
+    {
+      "discarded_prefix": 5,
+      "length": 4096,
+      "upper": "111562441/56005447680"
+    }
+  ],
+  "authority": "untrusted reproducible Python receipt, no formal kernel authority",
+  "degree_bounded_exact_discriminator": {
+    "candidate": "q(z)=47/225, degree bound 0",
+    "counterexample_index": 2,
+    "exact_residual": "-12301/4095",
+    "first_point_matches": true,
+    "guaranteed_probe_count": 5
+  },
+  "formal_verification": "not performed by this lane",
+  "full_suite": "coordinator responsibility; not run by this probe",
+  "git_branch": "research/duck-pi-analytic-2026-10-21",
+  "git_head": "e41d0dc44cbc58209714cd9717dcc0f5edce2366",
+  "git_working_tree_status": "",
+  "python_version": "3.12.14",
+  "rational_coboundary_positive_control": {
+    "correction": "q(z)=1/[64(z+1)^2]",
+    "distance_from_zero_at_12": "1/10816",
+    "orbit_at_12": "10815/10816",
+    "replay_passed": true
+  },
+  "schema": "succ.duck_bbp_fourier.finite_probe.v1",
+  "source_positive_decomposition": [
+    {
+      "four_fraction": "47/15",
+      "n": 1,
+      "positive_form": "47/15",
+      "tail_upper": "106/12285"
+    },
+    {
+      "four_fraction": "106/819",
+      "n": 2,
+      "positive_form": "106/819",
+      "tail_upper": "829/294525"
+    },
+    {
+      "four_fraction": "3687/4214903",
+      "n": 17,
+      "positive_form": "3687/4214903",
+      "tail_upper": "37294/720041175"
+    },
+    {
+      "four_fraction": "119911016/510976711794021",
+      "n": 1000,
+      "positive_form": "119911016/510976711794021",
+      "tail_upper": "40050349/2565123560970075"
+    }
+  ],
+  "source_sha256": {
+    "observational_succ/duck_bbp_fourier.py": "c97f08e9fda23a1d750b06dd39ef807a36e3ee8d39d1e7c82442861365817a0a",
+    "research/2026-10-21/DUCK_ANALYTIC_MOONSHOT.md": "d2475150c7e899d4596ccd21ef2392d11c3884544d4fa6aae9635b9bb51fcf75",
+    "scripts/duck_bbp_fourier_probe.py": "a02a677050e038ca7d17c928e26c416eec980613953f02e18f22724f2743db63",
+    "tests/test_duck_bbp_fourier.py": "a5515e45e44e838526064c84a1824aea30b23890bd696e30abb10b41b5bb015c"
+  },
+  "theorem_boundary": "transport differences and rational finite algebra; pi normality unproved",
+  "transport_budgets": [
+    {
+      "fourier_difference_upper": "0",
+      "h": 1,
+      "length": 0,
+      "start": 1,
+      "sum_shadow_upper": "0"
+    },
+    {
+      "fourier_difference_upper": "32/161",
+      "h": 1,
+      "length": 100,
+      "start": 1,
+      "sum_shadow_upper": "4/161"
+    },
+    {
+      "fourier_difference_upper": "560/64591769",
+      "h": -7,
+      "length": 10,
+      "start": 1000,
+      "sum_shadow_upper": "10/64591769"
+    },
+    {
+      "fourier_difference_upper": "320000/16001",
+      "h": 100,
+      "length": 10000,
+      "start": 1,
+      "sum_shadow_upper": "400/16001"
+    }
+  ],
+  "uniform_bbp_counterfeits": [
+    {
+      "claim_boundary": "each finite depth nonnormal; actual source normality remains unproved",
+      "correction_pole_count": 4,
+      "depth": 1,
+      "forcing_pole_count": 8,
+      "fresh_exact_error": "13653333338623999993514666665672000000919999999917/436906666666666666134186666656426666859626666662666666642780000001640000000525",
+      "fresh_index": 1000000000,
+      "rational_shadow_initial": "47/225",
+      "weighted_uniform_error_upper": "47/225"
+    },
+    {
+      "claim_boundary": "each finite depth nonnormal; actual source normality remains unproved",
+      "correction_pole_count": 8,
+      "depth": 2,
+      "forcing_pole_count": 8,
+      "fresh_exact_error": "81920000236544000106495999885487999982144000010878/22282240089128960061972479873443839882501440079361440042953219969005260004385745",
+      "fresh_index": 1000000000,
+      "rational_shadow_initial": "205826/1044225",
+      "weighted_uniform_error_upper": "47/3825"
+    },
+    {
+      "claim_boundary": "each finite depth nonnormal; actual source normality remains unproved",
+      "correction_pole_count": 16,
+      "depth": 4,
+      "forcing_pole_count": 8,
+      "fresh_exact_error": "992969704801745471276993941431660595819442426636/34706277264960172290269681977489528779114587944702345744894109803218616575284625",
+      "fresh_index": 1000000000,
+      "rational_shadow_initial": "1428806141948/7276739344875",
+      "weighted_uniform_error_upper": "47/983025"
+    },
+    {
+      "claim_boundary": "each finite depth nonnormal; actual source normality remains unproved",
+      "correction_pole_count": 36,
+      "depth": 9,
+      "forcing_pole_count": 8,
+      "fresh_exact_error": "24576000501043203089817604577537595208939200944657/400319979681791086719522503520115701070599063087587206744623478678359661401529559781225",
+      "fresh_index": 1000000000,
+      "rational_shadow_initial": "2090388270092909093421859664191/10646260037176494812950114871625",
+      "weighted_uniform_error_upper": "47/1030792151025"
+    }
+  ],
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -p test_duck_bbp_fourier.py -v",
+    "returncode": 0,
+    "stderr": "test_arbitrary_exact_prefix_can_be_forged_without_global_normality (test_duck_bbp_fourier.DuckBBPFourierTests.test_arbitrary_exact_prefix_can_be_forged_without_global_normality) ... ok\ntest_arc_transport_against_exact_empirical_discrepancy (test_duck_bbp_fourier.DuckBBPFourierTests.test_arc_transport_against_exact_empirical_discrepancy) ... ok\ntest_complete_coboundary_solver_with_mixed_shift_and_order_holdouts (test_duck_bbp_fourier.DuckBBPFourierTests.test_complete_coboundary_solver_with_mixed_shift_and_order_holdouts) ... ok\ntest_degree_bound_forces_exact_failure_after_interpolated_prefix (test_duck_bbp_fourier.DuckBBPFourierTests.test_degree_bound_forces_exact_failure_after_interpolated_prefix) ... ok\ntest_degree_probe_rejects_undeclared_or_singular_presentations (test_duck_bbp_fourier.DuckBBPFourierTests.test_degree_probe_rejects_undeclared_or_singular_presentations) ... ok\ntest_discrepancy_budget_is_difference_not_cancellation (test_duck_bbp_fourier.DuckBBPFourierTests.test_discrepancy_budget_is_difference_not_cancellation) ... ok\ntest_exact_domain_guards (test_duck_bbp_fourier.DuckBBPFourierTests.test_exact_domain_guards) ... ok\ntest_independent_bbp_forms_and_rational_bounds (test_duck_bbp_fourier.DuckBBPFourierTests.test_independent_bbp_forms_and_rational_bounds) ... ok\ntest_positive_bbp_counterfeits_approximate_the_entire_forcing (test_duck_bbp_fourier.DuckBBPFourierTests.test_positive_bbp_counterfeits_approximate_the_entire_forcing) ... ok\ntest_positive_leading_matched_impostor_has_rational_shadow (test_duck_bbp_fourier.DuckBBPFourierTests.test_positive_leading_matched_impostor_has_rational_shadow) ... ok\ntest_tail_remainder_against_longer_exact_holdout (test_duck_bbp_fourier.DuckBBPFourierTests.test_tail_remainder_against_longer_exact_holdout) ... ok\ntest_tail_transport_index_with_exact_finite_bbp_source (test_duck_bbp_fourier.DuckBBPFourierTests.test_tail_transport_index_with_exact_finite_bbp_source) ... ok\ntest_telescoping_square_majorant_and_uniform_character_budget (test_duck_bbp_fourier.DuckBBPFourierTests.test_telescoping_square_majorant_and_uniform_character_budget) ... ok\ntest_weighted_residue_obstruction_for_actual_bbp (test_duck_bbp_fourier.DuckBBPFourierTests.test_weighted_residue_obstruction_for_actual_bbp) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.053s\n\nOK\n",
+    "stdout": ""
+  }
+}
