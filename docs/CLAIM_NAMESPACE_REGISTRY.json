@@ -39,7 +39,9 @@
       "namespace": "REALITY_PIN",
       "bare_prefix": "RP",
       "fq_prefix": "RP",
-      "supplement_files": ["docs/CLAIM_SUPPLEMENT_REALITY_PIN.md"],
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_REALITY_PIN.md"
+      ],
       "id_count": 25,
       "status": "MIXED (CLASSICAL/PROVED PAPER/EXACT FINITE/LEAN KERNEL/REFUTED/CONDITIONAL/UNVERIFIED)",
       "topic": "source-conditioned observable geometry, zero-forcing inverse, infinite arithmetic resolvent, calibrated selection, gluing and thermal/global obstructions",
@@ -539,6 +541,24 @@
         "observational_succ/duck_bbp.py",
         "observational_succ/duck_bbp_fourier.py",
         "observational_succ/duck_source_bridge.py"
+      ]
+    },
+    {
+      "namespace": "CARRY_SAFE_OBSERVER",
+      "bare_prefix": "CSO",
+      "fq_prefix": "CSO",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_CARRY_SAFE_OBSERVER.md"
+      ],
+      "id_count": 15,
+      "status": "MIXED (CLASSICAL/PROVED LOCAL/TESTED MODEL/DEMONSTRATED)",
+      "topic": "Carry-safe observer: composite-radix polyphase/Cuntz algebra, minimum future-sufficient information, source-controlled tomography, residue/Hilbert retention defect, adaptive weighted-minimax probe compiler",
+      "code": [
+        "observational_succ/carry_safe_polyphase.py",
+        "observational_succ/future_sufficient_information.py",
+        "observational_succ/source_controlled_tomography.py",
+        "observational_succ/residue_hilbert_defect.py",
+        "observational_succ/carry_safe_probe_compiler.py"
       ]
     }
   ],

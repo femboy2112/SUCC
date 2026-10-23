@@ -1,0 +1,35 @@
+{
+  "file": "formal/CarrySafePolyphase.lean",
+  "sha256": "51d34f39c2ac317d2113c8b6b12b6ddb667dede1caa53ae5d05109254ba1d0c4",
+  "lean": "lean",
+  "theorems": {
+    "polyphase_reconstruct": [
+      "propext",
+      "Quot.sound"
+    ],
+    "carry_no_wrap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "carry_wrap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "mixed_radix_compose": [
+      "propext",
+      "Quot.sound"
+    ],
+    "fso01_insufficiency": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "gates": {
+    "no_banned_tokens": true,
+    "compiles": true,
+    "axioms_standard": true,
+    "choice_free": true,
+    "false_mutation_rejected": true
+  },
+  "status": "PASS"
+}
