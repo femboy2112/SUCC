@@ -388,3 +388,56 @@ https://math.hmc.edu/funfacts/sum-of-prime-reciprocals/
 **Proof boundary:** (19) REFUTES prime-covering first-moment
 completeness. (20) is PROVED CLASSICAL CONDITIONAL NORMALITY
 EQUIVALENCE. No π-source orbit estimate in (20) has been proved.
+
+
+## TC-10. Concrete PRIME-INDEX π-source moment transport, with paid cost
+
+Combine the source-corrected nested-polygon algebraic phases Y_(j,K)
+of parent CC-06 (#247) with the prime-exponent Müntz observer basis
+of TC-09.
+
+Define the true and polygon-phase-chord moment averages for any fixed
+prime p and integer lookahead K>=1:
+
+  m_(p,N)(π)=(1/N)sum_(j<N)
+        [4sin²(π*16^j*π)]^p,
+  m̃_(p,N,K)=(1/N)sum_(j<N)[4sin²(π*Y_(j,K))]^p.
+
+The phases Y_(j,K) come from finite nested polygon radicals without
+assuming any π digit. The sine observations of these algebraic phases
+are analytic quantities, NOT falsely asserted to be algebraic.
+
+The parent circle-source theorem gives for all j>=0
+  |16^jπ-Y_(j,K)|<=C*16^(-j-2K),
+  C=(3/20)(22/7)^5.
+
+The circle observable f_p(t)=[4sin²(πt)]^p has derivative uniformly
+bounded by π*p*4^p, because |4sin²(πt)|<=4 and the inner derivative
+has magnitude at most 4π. Thus
+
+  |m_(p,N)(π)-m̃_(p,N,K)|
+    <= [π*p*4^p*C/(N*16^(2K))]
+       *sum_(j<N)16^(-j)
+    < [16*(22/7)*p*4^p*C]/[15*N*16^(2K)].       (21)
+
+The last bound is rational and reproduced by
+prime_polygon_moment_transport_bound with a genuine-prime source gate.
+For each FIXED prime p and FIXED K it decays at least as O_p(1/N).
+
+Therefore π is base-16 normal if and only if, for one fixed K>=1,
+the precisely source-generated geometric moments m̃_(p,N,K) converge
+to the exact all-prime Kummer Haar integers binom(2p,p)
+for EVERY rational prime p. The equivalence uses TC-09's Müntz
+separation and the explicit O_p(1/N) difference, NOT an assumed
+mixing property or a finite experiment.
+
+**What is now genuinely established:** the π SOURCE identity, the
+chosen complete arithmetic PROBE basis, and the quantitative
+source→orbit-observable TRANSPORT with an error budget are explicit.
+The single remaining proof obligation is to derive a NONCIRCULAR
+estimate on m̃_(p,N,K)-binom(2p,p) from the nested geometric source
+for each fixed prime p. Neither its convergence nor an RH/π
+normality theorem is claimed.
+
+The polynomial, carry, spectral and source mechanisms are classical
+or new-to-SUCC combinations. Scholarly novelty UNVERIFIED.

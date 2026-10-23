@@ -153,3 +153,19 @@ def select_3adic_counterfeit(pi_lo,pi_hi,level):
     if error>Q(1,2*period)+(hi-lo)/2:
         raise ArithmeticError("unexpected source/coset approximation defect")
     return x,error
+
+
+def prime_polygon_moment_transport_bound(prime, horizon, lookahead):
+    """Exact outward bound for prime-index π chord moments versus the source-
+    corrected, nested-polygon algebraic phases Y_(j,K) in parent PR #247.
+
+    Error <= (16/15)*(22/7)*[(3/20)*(22/7)^5] *
+             prime*4^prime/(horizon*16^(2*lookahead)).
+    This bounds the DIFFERENCE of two averages, not either Haar discrepancy.
+    """
+    _integer(prime,2);_integer(horizon,1);_integer(lookahead,1)
+    if any(prime%d==0 for d in range(2,isqrt(prime)+1)):
+        raise ValueError("source probe index must be a genuine prime")
+    C=Q(3,20)*Q(22,7)**5
+    return Q(16,15)*Q(22,7)*C*prime*4**prime/Q(
+        horizon*16**(2*lookahead))

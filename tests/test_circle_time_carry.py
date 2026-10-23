@@ -95,6 +95,27 @@ class TimeCarryExact(unittest.TestCase):
         self.assertNotEqual(periodic_moment(3,11),
                             math.comb(22,11))
 
+
+    def test_prime_source_geometric_moment_transport_cost(self):
+        from observational_succ.circle_time_carry import (
+            prime_polygon_moment_transport_bound)
+        for p in (2,3,5,11):
+            initial=prime_polygon_moment_transport_bound(p,10,2)
+            self.assertGreater(initial,0)
+            self.assertEqual(
+                prime_polygon_moment_transport_bound(p,20,2),
+                initial/2)
+            self.assertEqual(
+                prime_polygon_moment_transport_bound(p,10,3),
+                initial/256)
+        self.assertLess(
+            prime_polygon_moment_transport_bound(2,5,6),
+            Q(1,10**6))
+        with self.assertRaises(ValueError):
+            prime_polygon_moment_transport_bound(6,10,2)
+        with self.assertRaises(ValueError):
+            prime_polygon_moment_transport_bound(2,0,2)
+
     def test_negative_mutations_and_source_refusal(self):
         self.assertNotEqual(haar_joint(16,(0,1),(16,1)),
                             2*math.comb(32,16))
