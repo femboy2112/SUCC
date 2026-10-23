@@ -179,5 +179,51 @@ class CertifiedPiGeometry(unittest.TestCase):
             energy_transport_error(0, 3, 1)
 
 
+class FinitePolygonEnsembleVsSelectedSource(unittest.TestCase):
+    def test_exact_ensemble_orthogonality_and_large_polygon(self):
+        from observational_succ.circle_collision_rigidity import (
+            polygon_ensemble_fourier_square, polygon_ensemble_energy
+        )
+        # Full root-of-unity ensemble is extremely uniform at finite N,
+        # but the fixed point at vertex 0 has |A_h|=1 for every h.
+        base, N, M, m = 16, 6, 3, 4**12
+        self.assertGreater(m, M*(base**(N-1)-1))
+        for h in range(1, M+1):
+            self.assertEqual(polygon_ensemble_fourier_square(
+                base, h, N, m), Q(1, N))
+        self.assertEqual(polygon_ensemble_energy(base, N, M, m),
+                         1+Q(M, N))
+        self.assertEqual(1+Q(M, N), Q(3, 2))
+        self.assertEqual(M+1, 4)  # fixed selected vertex r=0
+
+    def test_periodic_congruence_collisions_beyond_diagonal(self):
+        from observational_succ.circle_collision_rigidity import (
+            polygon_ensemble_fourier_square, polygon_ensemble_energy
+        )
+        # b=2 on the 7-gon is a permutation, but finite phase returns
+        # still produce off-diagonal pair congruences once time grows.
+        for N in (2, 4, 7, 12):
+            for h in (1, 2, 3):
+                x = polygon_ensemble_fourier_square(2, h, N, 7)
+                y = Q(sum(1 for j in range(N) for k in range(N)
+                          if (h*(pow(2, j, 7)-pow(2, k, 7)))%7 == 0),
+                      N*N)
+                self.assertEqual(x, y)
+        self.assertGreater(polygon_ensemble_energy(2, 12, 3, 7), 1)
+        with self.assertRaises(ValueError):
+            polygon_ensemble_energy(2, 0, 2, 7)
+
+    def test_source_ensemble_typicality_cannot_select_vertex_zero(self):
+        from observational_succ.circle_collision_rigidity import (
+            polygon_ensemble_energy
+        )
+        N,M,m=12,4,2**50
+        self.assertGreater(m, M*(2**(N-1)-1))
+        average=polygon_ensemble_energy(2,N,M,m)
+        fixed_orbit=M+1
+        self.assertEqual(average,1+Q(M,N))
+        self.assertGreater(fixed_orbit,average)
+
+
 if __name__ == "__main__":
     unittest.main()
