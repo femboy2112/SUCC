@@ -1,0 +1,306 @@
+{
+  "authority": {
+    "RH_proved": false,
+    "paper_theorems_kernel_certified": false,
+    "physical_measurements_performed": false,
+    "scalar_arithmetic_cyclicity_proved": false
+  },
+  "branch": "research/reality-pin-observable-geometry-2026-10-22",
+  "clean_kernel_receipt": "REALITY_PIN_CLEAN_CI_LEAN_RECEIPT.json",
+  "draft_pr": "https://github.com/femboy2112/SUCC/pull/244",
+  "earlier_environment_failures": [
+    {
+      "outcome": "aborted; installed mpmath and sympy; no mathematical inference",
+      "stage": "initial dependencies absent"
+    },
+    {
+      "cause": "meta_choice_descent_probe subprocess could not import observational_succ",
+      "errors": 1,
+      "repair": "installed package with test extras; affected 11 tests and full 6825-test suite then passed; no inherited source change",
+      "stage": "first completed broad suite before editable installation",
+      "tests": 6815
+    }
+  ],
+  "environment": {
+    "packages": {
+      "mpmath": "1.3.0",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "sympy": "1.14.0"
+    },
+    "python": "3.12.14",
+    "setup": "python -m pip install -e '.[test]'"
+  },
+  "exact_receipt_replay": "python scripts/reality_pin_probe.py --check : PASS",
+  "hostile_controls": {
+    "four_node_zero_forcing_passports": 528,
+    "lean_declarations": 14,
+    "new_tests": 81,
+    "rejected_lean_mutations": 3
+  },
+  "implementation_commit": "909f882f506a5157df799b76126604c43c05c6d4",
+  "implementation_commit_tree": "ba6f0189cb836e10b862ccb7d6fbb0b4d8b200db",
+  "inherited_spectral_tests": {
+    "original_receipt": "reproduced byte for byte before extending the source",
+    "status": "PASS",
+    "tests": 28
+  },
+  "local_checks": [
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "output_sha256": "baff363dde768ceba41790f25cb7f8b63eec4c4776bb341deb82e2a802ba36bf",
+      "seconds": "730.173",
+      "status": "PASS",
+      "summary": "----------------------------------------------------------------------\nRan 6825 tests in 730.173s\n\nOK",
+      "tests": 6825
+    },
+    {
+      "command": "python -Werror -m unittest discover -s tests -p 'test_reality_pin_*.py' -v",
+      "output_sha256": "add3c4dd24e52dacc4cab4145a91a3f5d75ec1a0436aa89653df5b3293645304",
+      "seconds": "1.169",
+      "status": "PASS",
+      "summary": "----------------------------------------------------------------------\nRan 81 tests in 1.169s\n\nOK",
+      "tests": 81
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_eodcs_meta_choice_descent.py' -v",
+      "output_sha256": "ef14560dbcd6b5fe18e28fe8709546ce4fdd889f292f9a9dd069cc9d492dcc13",
+      "seconds": "0.248",
+      "status": "PASS",
+      "summary": "----------------------------------------------------------------------\nRan 11 tests in 0.248s\n\nOK",
+      "tests": 11
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_claim_namespace*.py' -v",
+      "output_sha256": "9f97dc1b338ff68c2a9bede228232064be1a380c08b3ded9b7c9c0f703e05312",
+      "seconds": "0.076",
+      "status": "PASS",
+      "summary": "----------------------------------------------------------------------\nRan 15 tests in 0.076s\n\nOK",
+      "tests": 15
+    }
+  ],
+  "observed_unchanged_main": "b116841f12b41aaf7600da39bbb40577f25b6295",
+  "other_required_checks": {
+    "academic_main_vii": {
+      "actual_formal_exports": 19,
+      "admitted_record_digest": "aade7c2f1c3abe0a8822f12f8cfb81a53696fd1094cf6981740737c84f90c466",
+      "archives_unchanged": 72,
+      "git_commit": "d2f760ab9d9a11719e950caeb2d54bfa5114f495",
+      "git_tree": "4e83056ac0123f9c082d04d9a80b8b746da13aac",
+      "incoming_heads": {
+        "200": "e2f92a6b7e3835c3223abc294688ad9b85045811",
+        "201": "cbc4010458c00be995b8af3f229c9bba410301e2",
+        "202": "4d9580aedf66211b839dd65237da382eaaffb557",
+        "203": "fd16f5766629e02cb92c0ca0607afad45799f2cc",
+        "204": "d0fa95d49040b70439a0ef72cf2ed754ff88824d",
+        "205": "fca107cde969b68566699d9da98944a363c89434",
+        "206": "a86c37ef87526c339bebfd21d0232bcf2f5b45a4",
+        "207": "7466f0d4bfca0ae00ff4d4b355bb14cba4bbb544",
+        "208": "1c6f2adfe3ebbd1dc6613e9adb4e95bdef2f3e29",
+        "209": "3e1ef648896821321423e6642f1de4a458a0c791"
+      },
+      "namespaces": 31,
+      "qualified_claims": 304,
+      "status": "INTEGRATION_METADATA_AND_ADMITTED_SOURCE_GATES_PASS",
+      "universal_software_correctness_or_open_conjectures_proved": false,
+      "working_tree_dirty": false
+    },
+    "academic_main_viii": {
+      "actual_formal_exports": 19,
+      "admitted_record_digest": "aade7c2f1c3abe0a8822f12f8cfb81a53696fd1094cf6981740737c84f90c466",
+      "archives_unchanged": 72,
+      "git_commit": "d2f760ab9d9a11719e950caeb2d54bfa5114f495",
+      "git_tree": "4e83056ac0123f9c082d04d9a80b8b746da13aac",
+      "incoming_heads": {
+        "211": "e8c12ca0eac57dcffce59747ad160330f6225756",
+        "212": "04dc97022d4b75e8d229128de50509c413d86b8b",
+        "213": "d3e0ccf671b2ddc2a9e94549db77f60955ee7580",
+        "214": "9372c669892a2a29fb8c16f0fa20c11815f650df",
+        "218": "8f9444c3984e4b981422d400c4c3ebde7a0a6715"
+      },
+      "namespaces": 31,
+      "open_conjectures_proved": false,
+      "qualified_claims": 304,
+      "status": "MAIN_VIII_RECORDED_GATES_PASS",
+      "working_tree_dirty": false
+    },
+    "foundations": {
+      "PA_formalization_completed": false,
+      "RH_proved": false,
+      "arithmetic_causal_history": {
+        "Hessian_fake_det": "41/343",
+        "Hessian_true_det": "13/108",
+        "Weil_correlation_equals_semantic_Hessian_proved": false,
+        "actualized_true_b6": "0",
+        "both_semantic_Hessians_PSD": true,
+        "fake_composite_a6": 2,
+        "fake_connected_b6": "1"
+      },
+      "finitary_omega_proof_support": {
+        "earliest_stage": 1,
+        "finite_proof_verified": true,
+        "formal_theorem": "finitary derivation from union already has finite axiom support",
+        "observed_finite_theory_stages": 2,
+        "omega_physically_executed": false,
+        "omega_rule_used": false,
+        "proof_code_sha256": "fc23321637ff7db55bc2d78763e31a42a2cafa26a0ebea06a1da0ec69b9fcb06"
+      },
+      "godel_fixed_point_syntax": {
+        "SubstGraph_representability_in_PA_proved": false,
+        "object_level_PA_equivalence_proved": false,
+        "sentence_code_bits": 4377,
+        "sentence_code_sha256": "d63e44fb44913f78742d3063e8ca407b791dbb490c9ec21db4926c979d6004df",
+        "theta_code_bits": 1449,
+        "theta_code_sha256": "0612b723b148a7690b7ac4e86d7347cdf706fda5a420f511ac2e48a81310f590",
+        "verified_substitution_code": true
+      },
+      "missing": {
+        "RH_side": "independent positive observer-to-FULL Weil distribution identity",
+        "analytic_side": "rigorous prime/Gamma interval oracle for Suzuki negative witness",
+        "quantum_side": "validated record-to-semantic covariance functor",
+        "theory_side": "representable G\u00f6del substitution/derivability formalization"
+      },
+      "ordinal_reflection": {
+        "claimed_truth": null,
+        "declared_axiom_is_external": "EXTERNAL_ASSUMPTION_ONLY",
+        "reflection_follows_from_observation": false,
+        "successor_stages": 3
+      },
+      "physical_infinite_time_executed": false,
+      "rational_gram_certificates": {
+        "Suzuki_interval_oracle_built": false,
+        "bounded_search": "STRICT_NEGATIVE_WITNESS",
+        "negative_exact_quartic_upper": "-24",
+        "negative_status": "STRICT_NEGATIVE_WITNESS_CONDITIONAL_ON_INTERVAL_ORACLE",
+        "positive_exact_quadratic_lower": "0",
+        "positive_probe_status": "FINITE_PROBE_UNRESOLVED",
+        "source_is_actual_Suzuki": false,
+        "universal_positivity_proved": false
+      },
+      "status": "OBSERVATIONAL_SUCC_FORMAL_FOUNDATIONS",
+      "turing_observations": {
+        "delayed_prefix_17": "unresolved",
+        "delayed_prefix_19": "refuted",
+        "finite_survival_claims_are_universal_proofs": false,
+        "first_observed_counterexample": 19,
+        "loop_prefix_17": "unresolved"
+      }
+    },
+    "ordinal": {
+      "bounded_query_stabilization": {
+        "earlier_observer_stage": 9,
+        "later_observer_stage": 28,
+        "max_matrix_change": "0.0",
+        "rational_times": [
+          "0",
+          "-1",
+          "1"
+        ],
+        "scope": "prime wavefront exact by finite stage; Gamma response separately analytic",
+        "sufficient_stage": 9
+      },
+      "connected_source_second_order": {
+        "composite_event": 6,
+        "fake_connected_curvature": "1",
+        "fake_slope_jump": "-0.731482740234792026106494701286",
+        "finite_observation_time": "9/5",
+        "predicted_second_order_delta": "-log(6)/sqrt(6) at t=log(6)",
+        "primes": [
+          2,
+          3
+        ],
+        "true_connected_curvature": "0",
+        "two_time_Weil_diagonal_fake_minus_true": "-0.0120556120601029081022494377731"
+      },
+      "formal_ordinals": {
+        "finite_run_is_not_limit": true,
+        "finite_successor": "n->n+1, complete source prefix",
+        "global_PSD_predicate_proved": false,
+        "limit_omega": "filtered colimit/union of coherent finite observations",
+        "omega_plus_one": "mathematical retrospective Suzuki/Weil report"
+      },
+      "hilbert_critical_line_observer_escape": {
+        "H_256_lower_bound": "5",
+        "finite_norm_squared": "1",
+        "fixed_local_projector": "P_3",
+        "harmonic_H_256": "102120333780755602922415011407986918913493325085710168750386125102325162741298648605491283438121466698312402217/16674490806895842671659008751776385350270324508909651849955453691538889375930032935391666564679008085339616000",
+        "identity_expectation": "1",
+        "local_projector_expectation": "30569899812642378231374849378256706475495594933001028391584998434487963855871727048218055368578181489789296000/102120333780755602922415011407986918913493325085710168750386125102325162741298648605491283438121466698312402217",
+        "normalizable_omega_vector_exists": false,
+        "source_inert_and_not_RH": true,
+        "stage": 256,
+        "weak_limit_zero_not_strong": true
+      },
+      "next_theorem": "Source-defined positive-definite DISTRIBUTION Psi'' on complete test-function core; RH equivalent, NOT proved",
+      "no_RH_or_Weil_positive_sign_assumed": true,
+      "no_actual_infinite_ordinal_computed": true,
+      "positive_observations_are_not_positive_correlations": {
+        "isolated_prime_impulse_negative_determinant": "-0.007213596830721357871484304",
+        "oscillator_Hilbert_Gram_identity_error": "2.8298997121333476148466e-73",
+        "oscillator_second_curvature_can_be_negative": true,
+        "quartic_determinant": "-192",
+        "quartic_kernel": [
+          [
+            "2",
+            "-14"
+          ],
+          [
+            "-14",
+            "2"
+          ]
+        ],
+        "quartic_psi_nonnegative": true,
+        "quartic_quadratic_vector_ones": "-24",
+        "quartic_second_derivative_nonnegative": true
+      },
+      "semantic_second_derivative_information_geometry": {
+        "Weil_identification_established": false,
+        "both_information_geometries_PSD": true,
+        "fake_covariance_determinant": "41/343",
+        "fake_six_Hessian": [
+          [
+            "24/49",
+            "-1/49"
+          ],
+          [
+            "-1/49",
+            "12/49"
+          ]
+        ],
+        "genuine_Hessian": [
+          [
+            "5/9",
+            "-1/18"
+          ],
+          [
+            "-1/18",
+            "2/9"
+          ]
+        ],
+        "genuine_covariance_determinant": "13/108",
+        "source": "Hessian log finite positive evidence partition function"
+      },
+      "status": "FINITE_ORDINAL_SUCC_SECOND_ORDER_WEIL_PROBE",
+      "two_observer_mixed_finite_difference": {
+        "distributional_limit": "Psi''(t-u) = Weil distribution",
+        "h": "1/20",
+        "k": "1/30",
+        "mixed_covariance_increment": "0.000964653856973416905507178662116",
+        "positive_definiteness_proved": false,
+        "t": "3/5",
+        "u": "1/5"
+      }
+    },
+    "source_provenance": {
+      "byte_identical_research_archives": 17,
+      "establishes_mathematical_truth": false,
+      "items": 72,
+      "mechanical_namespace_migrations": 55,
+      "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+      "status": "SOURCE_PROVENANCE_VERIFIED"
+    }
+  },
+  "parent_commit": "d2f760ab9d9a11719e950caeb2d54bfa5114f495",
+  "publication_note": "This receipt records the implementation commit and completed local evidence. The following documentation-only commit preserves every executable source fingerprint. Final exact-head workflow outcomes are reported in PR #244; no CI success is inferred from a queued run.",
+  "schema": "succ-reality-pin-validation-v1"
+}

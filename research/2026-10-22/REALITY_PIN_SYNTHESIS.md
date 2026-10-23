@@ -162,14 +162,19 @@ domains, status, provenance and falsifiers. The [exact receipt](REALITY_PIN_EXAC
 fingerprints executable sources. The [Lean receipt](REALITY_PIN_LEAN_RECEIPT.json)
 contains fourteen declarations, exact axiom dependencies and three rejected
 mutations. Its local run used an explicitly recorded executable-path shim;
-the dedicated CI reruns the pinned unmodified checker on a clean host.
+the [clean CI receipt](REALITY_PIN_CLEAN_CI_LEAN_RECEIPT.json) records the
+pinned unmodified checker succeeding with no dynamic preload, all fourteen
+declarations audited and all three false mutations rejected.
 
 The formal target covers selection modulo gauge, observable invariance, and the
 sharp nearest-neighbor 2r return **budget**. It does not formalize weighted
 moment coefficients, inverse spectral analysis, gluing, or the infinite operator.
 No proof inherits kernel authority merely by sharing this document.
 
-The campaign validation receipt records actual tests, source checks, commits and
-CI observations. No physical apparatus, alpha prediction, gravitational geometry
+The [campaign validation receipt](REALITY_PIN_VALIDATION_RECEIPT.json) records
+6,825 passing local tests, source checks, the implementation commit and the
+separate clean CI evidence. Final exact-head workflow outcomes are recorded in
+[draft PR #244](https://github.com/femboy2112/SUCC/pull/244).
+No physical apparatus, alpha prediction, gravitational geometry
 or universal arithmetic sign has been certified. The next exact theorem is in
 the [handoff](../../handoffs/ASTRA_ULTRA_REALITY_PIN_NEXT_2026-10-22.md).

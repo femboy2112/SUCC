@@ -357,7 +357,7 @@ of classical black-box circuit semantics, not an independently new category.
 
 A SUCC-compatible enrichment appends a versioned source event to an immutable
 source journal and changes L by the declared component update. The black-box
-map acts at each journal state; RP-C1--G3 specify when transport commutes. It
+map acts at each journal state; RP-C1--C3 specify when transport commutes. It
 does not invert the journal: different component histories, decompositions,
 and hidden states can yield the same response. Even the positive matrix L can
 be obtained as one component L or two parallel components L/2 and L/2. Gluing
