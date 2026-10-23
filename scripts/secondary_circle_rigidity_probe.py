@@ -18,7 +18,8 @@ from scripts.secondary_circle_independent_oracle import run_oracle
 
 from observational_succ.secondary_circle_rigidity import (
     certified_pi_cosine_intervals, interval_prime_and_chord_budget,
-    amplified_fourier_bound, real_chord_rigidity, exact_rational_orbit_cosine,
+    amplified_fourier_bound, real_chord_rigidity, minplus_prime_chord_certificate,
+    interval_minplus_prime_chord_certificate, exact_rational_orbit_cosine,
     exact_uniform_polygon_cosine, circle_rotation_commutator,
 )
 
@@ -35,6 +36,7 @@ def pi_case(base: int, horizon: int, cutoff: int) -> dict:
     observations=certified_pi_cosine_intervals(base,horizon,cutoff,
                                                level=18,precision=85,order=28)
     budget=interval_prime_and_chord_budget(observations)
+    improved=interval_minplus_prime_chord_certificate(observations)
     amp=amplified_fourier_bound(base=base,frequency=1,horizon=horizon,
                       replicas=2,cutoff=cutoff,
                       cosine_band_bound=budget.harmonic_bound)
@@ -47,6 +49,7 @@ def pi_case(base: int, horizon: int, cutoff: int) -> dict:
         "prime_cosine_defect_scaled_1e12_upper":scaled_ceil(budget.max_prime_cosine_defect),
         "chord_deficit_scaled_1e12_upper":scaled_ceil(budget.chord_deficit),
         "real_harmonic_bound_scaled_1e12_upper":scaled_ceil(budget.harmonic_bound),
+        "minplus_harmonic_bound_scaled_1e12_upper":scaled_ceil(improved.uniform_cosine_bound),
         "Fourier_h1_bound_scaled_1e12_upper":scaled_ceil(amp.modulus_upper),
         "asymptotic_theorem_claim":False,
     }
@@ -59,11 +62,13 @@ def receipt() -> dict:
     for q in (3,5,7,9):
         ms=[Q(1)]+[exact_rational_orbit_cosine(q,2,k) for k in range(1,41)]
         r=real_chord_rigidity(ms)
+        m=minplus_prime_chord_certificate(ms)
         cases.append({"modulus":q,"base":2,
                       "first_chord":str(r.mean_chord),
                       "prime_defect":str(r.max_prime_cosine_defect),
                       "max_harmonic":str(max(abs(c) for c in ms[1:])),
-                      "certificate_bound":str(r.harmonic_bound)})
+                      "certificate_bound":str(r.harmonic_bound),
+                      "minplus_certificate_bound":str(m.uniform_cosine_bound)})
     pent=[exact_uniform_polygon_cosine(5,h) for h in range(0,7)]
     assert pent[1]==0 and pent[5]==1
     assert real_chord_rigidity(pent[:5]).max_prime_cosine_defect == 0
