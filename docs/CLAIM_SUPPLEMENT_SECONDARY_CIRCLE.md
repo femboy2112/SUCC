@@ -16,3 +16,5 @@
 | SCR-10 | Every circle homeomorphism commuting with doubling is identity or reflection; neither reparameterization can repair non-Haar measure to Haar | CLASSICAL/PROVED PAPER; exact dyadic controls | Tripling admits half-turn gauge, which doubling rejects; non-equivariant gauges change the action |
 
 The comparison with the two-prime Furstenberg conjecture is a **contrast**, not a proof of it. Positive geometric Fejér states are not identified with signed completed Weil forms. Deterministic finite checks do not become infinite proof authority.
+
+**SCR-11 (paper-proved exact refinement).** Dynamic programming on prime-factor words with edge costs `|c_(pk)−c_k|`, or source-certified interval upper bounds, produces minimal costs `d_n`. Fejér yields `|c_h|<=min(1,d_h+max(eta/2,1/(M-1)+W_M))`, `W_M=2/(M-1) sum_(n<M)(1-n/M)d_n`. This is at least as sharp as SCR-04's uniform `floor(log2 M)*eps` budget. Genuine rational-clock / π interval tests and a separately labelled *synthetic graph-only* prime-order control pass. Asymptotic π rate UNVERIFIED; no complete Weil sign or RH consequence.
