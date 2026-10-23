@@ -1,0 +1,749 @@
+{
+  "api_main": {
+    "parents": [
+      "b5f9591033db2022bda6a2f16a935c06466f9eff",
+      "134759e7106391970f12fe9d6ae8ba6650a49e56"
+    ],
+    "sha": "b116841f12b41aaf7600da39bbb40577f25b6295",
+    "tree": "bf972c334fc1f01a35263b9a66c1cdef91b621a8"
+  },
+  "formal": {
+    "actual_build_environment_sha256": "9358d89c6b763b561a4b8efc4338f9c90f80e46acd3d60d79f7674d77e46fbfd",
+    "actual_build_record_file_sha256": "fac28385d2b58e26c67182d959a09b9948165341ebefed373d4efca0d8b32ec1",
+    "admitted_exact_propositions": [
+      "ObservationalSUCC.CloudSchur.finite_negative_direction",
+      "ObservationalSUCC.CloudSchur.finite_schur_psd_iff",
+      "ObservationalSUCC.CloudSchur.scalar_negative_lift",
+      "ObservationalSUCC.CloudSchur.scalar_schur_identity",
+      "ObservationalSUCC.CloudSchur.zero_diagonal_negative",
+      "ObservationalSUCC.PrimitiveSlope.determinant_divisibility",
+      "ObservationalSUCC.PrimitiveSlope.determinant_divisibility_int",
+      "ObservationalSUCC.PrimitiveSlope.modulus_le_natAbs",
+      "ObservationalSUCC.PrimitiveSlope.nat_dvd_int_cast",
+      "ObservationalSUCC.PrimitiveSlope.noncoprime_moduli_control",
+      "ObservationalSUCC.PrimitiveSlope.nonprimitive_control",
+      "ObservationalSUCC.PrimitiveSlope.primitive_determinant_gap",
+      "ObservationalSUCC.PrimitiveSlope.primitive_triple_determinant_ne_zero",
+      "ObservationalSUCC.PrimitiveSlope.reduced_pair_injective",
+      "SUCC.MasonStothersBridge.control_hW_is_load_bearing",
+      "SUCC.MasonStothersBridge.polynomial_fermat",
+      "SUCC.MasonStothersBridge.radical_neg_prod",
+      "SUCC.MasonStothersBridge.succ_mason_stothers_charZero",
+      "SUCC.MasonStothersBridge.succ_mason_stothers_core"
+    ],
+    "all_axioms_within_approved_envelope": true,
+    "all_checked_sources_match_actual_main": true,
+    "all_nineteen_exact_type_hashes_recomputed": true,
+    "conclusion": "success",
+    "declared_scope": "Nineteen exact finite/polynomial/slope universal propositions. No automatic source transport or weighted abc theorem certification.",
+    "digest_present_in_installed_catalogue": true,
+    "fresh_actual_kernel_record_matches_admitted_environment_types_sources_dependencies": true,
+    "installed_admitted_record_canonical_sha256": "aade7c2f1c3abe0a8822f12f8cfb81a53696fd1094cf6981740737c84f90c466",
+    "installed_admitted_record_file_sha256": "02c840ea05ff3caf0f25aa48943e0b3b57bc911e6e9f4ab1d7feb440ee695734",
+    "job_id": 119049359109,
+    "negative_controls": [
+      "wrong_source_type",
+      "semidefinite_is_not_invertible",
+      "wrong_negative_value",
+      "missing_reducedness",
+      "oversized_gap"
+    ],
+    "run_id": 39547651196,
+    "source_hash_count": 21
+  },
+  "hosted_runs": [
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "id": 39547651222,
+      "name": "One Object II original source cancellation and zero-shift Schur",
+      "status": "completed",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651222"
+    },
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "id": 39547651196,
+      "name": "Pinned formal kernel and proposition exports",
+      "status": "completed",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651196"
+    },
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "id": 39547651199,
+      "name": "Collective observer source and certificate replay",
+      "status": "completed",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651199"
+    },
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "id": 39547651255,
+      "name": "Source-minimality clock carry renewal exact checks",
+      "status": "completed",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651255"
+    },
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "id": 39547651172,
+      "name": "Institute theorem contracts and core Lean",
+      "status": "completed",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651172"
+    },
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "id": 39547651223,
+      "name": "pi-polygon-normality-exact",
+      "status": "completed",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651223"
+    },
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "id": 39547651157,
+      "name": "Bidirectional SUCC exact arithmetic cut checks",
+      "status": "completed",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651157"
+    },
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "id": 39547651189,
+      "name": "Orbit clock genesis exact source checks",
+      "status": "completed",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651189"
+    },
+    {
+      "conclusion": "cancelled",
+      "event": "pull_request",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "id": 39547651159,
+      "name": "Primitive slope kernel research",
+      "status": "completed",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651159"
+    },
+    {
+      "conclusion": "success",
+      "event": "pull_request",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "id": 39547651164,
+      "name": "Observational SUCC validation",
+      "status": "completed",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651164"
+    }
+  ],
+  "incoming_prs": [
+    {
+      "git_is_ancestor_of_main": true,
+      "head_sha": "e8c12ca0eac57dcffce59747ad160330f6225756",
+      "merge_commit_sha": "36d929427a338f651bbaf136c20e2c66eb9866ef",
+      "merged": true,
+      "number": 211,
+      "state": "closed"
+    },
+    {
+      "git_is_ancestor_of_main": true,
+      "head_sha": "04dc97022d4b75e8d229128de50509c413d86b8b",
+      "merge_commit_sha": "f50b30fb5b344ba81014d54e9a4c51658805461c",
+      "merged": true,
+      "number": 212,
+      "state": "closed"
+    },
+    {
+      "git_is_ancestor_of_main": true,
+      "head_sha": "d3e0ccf671b2ddc2a9e94549db77f60955ee7580",
+      "merge_commit_sha": "43172b10e0ac72dd7bb95a78d7112a6400f13870",
+      "merged": true,
+      "number": 213,
+      "state": "closed"
+    },
+    {
+      "git_is_ancestor_of_main": true,
+      "head_sha": "9372c669892a2a29fb8c16f0fa20c11815f650df",
+      "merge_commit_sha": "ef38477e78bf13c6a76e3f552abdc0e247debab0",
+      "merged": true,
+      "number": 214,
+      "state": "closed"
+    },
+    {
+      "git_is_ancestor_of_main": true,
+      "head_sha": "8f9444c3984e4b981422d400c4c3ebde7a0a6715",
+      "merge_commit_sha": "f3d0df22d4e191a9cfc7aa5fefbcd31fe8a4f8b7",
+      "merged": true,
+      "number": 218,
+      "state": "closed"
+    }
+  ],
+  "integration_pr": {
+    "base_sha": "b5f9591033db2022bda6a2f16a935c06466f9eff",
+    "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+    "merge_commit_sha": "b116841f12b41aaf7600da39bbb40577f25b6295",
+    "merged": true,
+    "merged_at": "2026-10-21T05:28:31Z",
+    "number": 219,
+    "state": "closed",
+    "url": "https://github.com/femboy2112/SUCC/pull/219"
+  },
+  "local_git": {
+    "all_five_incoming_heads_are_ancestors": true,
+    "api_parents_match_git": true,
+    "candidate_tree_equals_main_tree": true,
+    "origin_main": "b116841f12b41aaf7600da39bbb40577f25b6295"
+  },
+  "no_repository_edits_pushes_or_ci_reruns": true,
+  "python_310": {
+    "conclusion": "success",
+    "job_id": 119049359805,
+    "log_file": "/workspace/scratch/0a4459d8f487/viii-main-python310-success.log",
+    "log_sha256": "98a5f7f2bf7392b1f25dbe17ff3c83eb27eb74e155e1da0e6cbf82e65e2ffac9",
+    "run_id": 39547651164,
+    "seconds": 1041.659,
+    "tests": 6557
+  },
+  "python_313": {
+    "conclusion": "success",
+    "job_id": 119049359758,
+    "run_id": 39547651164,
+    "seconds": 705.645,
+    "tests": 6557
+  },
+  "repository": "femboy2112/SUCC",
+  "reviewed_exclusion": {
+    "counted_as_success": false,
+    "name": "Primitive slope kernel research",
+    "observed_conclusion": "cancelled",
+    "reason": "Redundant slope-only run canceled in shared formal concurrency. The same exact nine slope declarations, sources and stricter false-mutation diagnostics passed the successful exact-head nineteen-declaration kernel workflow, including actual installed admission.",
+    "replacement_run_id": 39547651196,
+    "reviewed_by": "root integration coordinator",
+    "run_id": 39547651159
+  },
+  "schema": "succ.academic-main-viii.independent-verification.v1",
+  "scope": "Read-only independent post-merge verification; not a mathematical novelty or global-conjecture claim",
+  "source_provenance": {
+    "all_manifest_git_blobs_match_actual_main": true,
+    "artifacts": [
+      {
+        "git_blob_sha": "320f85a1d9f7531d6d025927c174af7d2e810337",
+        "matches_manifest": true,
+        "path": "observational_succ/__init__.py",
+        "sha256": "8c0d1b7b73ef96c6ae9b9f1a4e4872a21a0b93dd2400272cc2407b137db289b4",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "1f4339530b2575102f1bae4e94763e071c9f8731",
+        "matches_manifest": true,
+        "path": "observational_succ/__main__.py",
+        "sha256": "74c04789a5e77372c4a7eca9cb572b47847043442eb6fb9489d4168d370da27d",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "219910d245950b58c7cd4423f504b6f9b26e93c4",
+        "matches_manifest": true,
+        "path": "observational_succ/arithmetic.py",
+        "sha256": "25398e89306bdacb6fe17e419cf695ad4f1c5bb41f4536200260862b6e0b579e",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "c9399cc83ca436748f516788f83188d855274b28",
+        "matches_manifest": true,
+        "path": "observational_succ/balanced_theta_li.py",
+        "sha256": "ca9791abf755ee49dbddb6240231a12bb7083e95d30e06aac427dd3d65e8773b",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "8c145278122f8c9de337c200843c6fd4d2ae84e6",
+        "matches_manifest": true,
+        "path": "observational_succ/circle_transport.py",
+        "sha256": "7e0dce72df006a3f86c39461c4c8a345736e95ba0425390fffaa19b2a8999625",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "9bb8df66eef89b40b57e28e24dec07b0ee4bb49e",
+        "matches_manifest": true,
+        "path": "observational_succ/core.py",
+        "sha256": "236af6c33af15ba7c78a10f7d4ef840f41137a81854d130ff299fc74d33bdcd1",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "7f99150117c563c583be0fcc35fae1998a472162",
+        "matches_manifest": true,
+        "path": "observational_succ/dirichlet_lambert.py",
+        "sha256": "d0b123bbe1f30388cb5da931e5bfc26960b7c40b014568746b8d7df9675320bf",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "181019ed0d9c8a62e63c5d871406a1a40220f912",
+        "matches_manifest": true,
+        "path": "observational_succ/engine.py",
+        "sha256": "824960f7d4af1bbae71dca4b2e78dd569b27bc70a43c59f681cf8fc420c8dd8c",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "432c7fc28bba75c9f990d987ae5ec76ec2692e29",
+        "matches_manifest": true,
+        "path": "observational_succ/gamma_interferometer.py",
+        "sha256": "55c3e9d85d8bc521685aa417712b2626e4b961209bd336db67c72c90b51f244d",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "5c4b5bd86b03be0863cc3b6e589c6d3264b55055",
+        "matches_manifest": true,
+        "path": "observational_succ/gamma_succ_path.py",
+        "sha256": "3b8f86c616a1e52da8a7ef134e5f35910262d7e5c9e46683ca3627586f52ed0d",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "d855791bc45c8f8c8c7b26c4c88ab7f58161ee5d",
+        "matches_manifest": true,
+        "path": "observational_succ/godel_succ.py",
+        "sha256": "6ae6af8425a4e7958563fa0578f42ba84ed3814c5cce0749fe6188ee068fcd7a",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "361b8a4db22974fdea11f4f5367b73c93e6a106d",
+        "matches_manifest": true,
+        "path": "observational_succ/hasse_theta_seam.py",
+        "sha256": "09d0c527a2ad0a638abd5dc3e4adc4157817c757f4d1c3c338b941a90eb3a3c3",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "b5fe838217758ab0345c24ba90020d5f2fd76317",
+        "matches_manifest": true,
+        "path": "observational_succ/infinite_realization.py",
+        "sha256": "cbd880c48302375523d7d4023aa5c5a1c5758311dce15aa51612a0d921dbe66a",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "88cb3313486730702c50005065c398b34e835d12",
+        "matches_manifest": true,
+        "path": "observational_succ/lambert_succ.py",
+        "sha256": "183d86ebcb3f5b60a379c17b60ae904533f103f07d6cc6a667525b0083c22c56",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "79bed8e3a417617e096b206f8ba66adb9f3d2009",
+        "matches_manifest": true,
+        "path": "observational_succ/local_global.py",
+        "sha256": "c8c7370115c4e83c7ec2cdab92acb3380ac6aa721e0d0387edcd254f05548d0e",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "a2c294bee04e3e733f58fc941f2c94e4d5db9b27",
+        "matches_manifest": true,
+        "path": "observational_succ/observer_logic.py",
+        "sha256": "462c03a16a4c38a8a3a48c62070113e19aad912e4edf3d64b113e92bd8184b5f",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "587f08baf239d41cb208c994ef4151742a55f5f4",
+        "matches_manifest": true,
+        "path": "observational_succ/observer_reflection.py",
+        "sha256": "d03fb9678ef092127bcad9680acc7353f90dbc02db7ed9784c2c67cf67c8f174",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "99baa3be8f3900af7886abe892a9e593dfa392a9",
+        "matches_manifest": true,
+        "path": "observational_succ/ordinal_succ_report.py",
+        "sha256": "70ea2ad6b80a9f4b1a03d5d5aa43327ed43fa109f9bb1c79085dc5de0d66e091",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "69d44bef4de5bff4ffb193e2a229a26105b7c93a",
+        "matches_manifest": true,
+        "path": "observational_succ/phenomenology.py",
+        "sha256": "ce7c2fdd2ddfc83f8ffc51ca2bda056deaad9d8c20ac5fbd2b3876f88171ecca",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "62b8fa277af71cb8e8e9ba69d01a8d52b733d487",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/actualization/README.md",
+        "sha256": "19e0b79f1089b8ddaec9f9f3091d97e6bdadacccafb3d7da69c2eb4c35e72e10",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "b3cfd2f8e55cac17c9f98cfbcef3181676dfbbfa",
+        "matches_manifest": true,
+        "path": "observational_succ/resource_probe.py",
+        "sha256": "e971c82ce17a9ed24fb0de5126f6fff3e1536698876546619406f87c74b3438b",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "c4b08cf070959d334b0607e4d371d57afdcccfe1",
+        "matches_manifest": true,
+        "path": "observational_succ/source_prime_certificates.py",
+        "sha256": "827b157f217d4cf10fa6b6d18c066864c856b9cfcb31a766020d8fb5b5c2e6fa",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "495ecf4abb43367ced92ff64096f0ff611be96cc",
+        "matches_manifest": true,
+        "path": "observational_succ/succ_shadow_window.py",
+        "sha256": "fcff90412c4378c181a31322809cd0a43bd55fabfe0a2ec575079f85cc8cbb0b",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "08cc323315b191954e86f5fcbf1820aaf7e7954f",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/actualization/YONEDA_GUIDE.md",
+        "sha256": "ef6df13b0cf2beb97dddd201cf10859d2c7aaea95de03fbc869f1116ae14532a",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "de06d879c08a398acb9869dd2e98176591ea44cc",
+        "matches_manifest": true,
+        "path": "observational_succ/yoneda.py",
+        "sha256": "4af0194e675406761c1dec151fe1407b65037e1e87e8bc8a950bd42bf914baca",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "b23ae374cee8553d346ac9475c74990d6d2a5a06",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/BALANCED_THETA_LI_WINDOW.md",
+        "sha256": "9e72b20bfebccda463bf347d1c0f002be0537a5b105ce025dc0e57b985f02460",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "3068b1239cb1c55902e0667ea81a2f7379d6f1f5",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/CATEGORICAL_YONEDA_EVIDENCE.json",
+        "sha256": "c6805b95633d30e986473689083c56fbb33adeea0b64d6c74e92935eb4399b73",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "10b42296495593f1447b3f88a92255bb521a3b47",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/CATEGORICAL_YONEDA_RESOURCE_FRONTIER.md",
+        "sha256": "bd737416ada40ee8383c3d193f0fcbcd76029272fabef26bdf4d5897a4ec4f74",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "738a5f9884bbd6d49c26ef1a685e3c50bb8eb58e",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/CERTIFIED_FINITE_PRIME_TRANSPORT.md",
+        "sha256": "6d8406f5bfa4dc8fa7adb2d52eb84216557dbbc8fdd6c04f5eec13058d2c21c0",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "65f24f44369375b3cd88fc0743f60c1d5fb2a0d5",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/DIRICHLET_LAMBERT_SOURCE_LIFT.md",
+        "sha256": "27a06af50514921a493e6d4057e893e0c569c6e293a1e990650022420ca94a0c",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "8e6cd9634cfdc20809599174bb7dfe810182cfa3",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/FINITE_SUCC_HASSE_THETA_SEAM.md",
+        "sha256": "946e1870172598eeee51820885336ff7b848c810bbe40c9d6fc682cb97388f0a",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "3783cda6cf7fd6489291c871e627841638476ff9",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/GAMMA_ACTUALIZATION_INTERFEROMETER.md",
+        "sha256": "6c745eb076b1a9179ff4b5c6671a449dc3c3e9a59543e3a8f1c5ef81d0b1313a",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "7b3f87e5ee9ff28c1339bab93d4327326d8d7526",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/INFINITE_REALIZATION_LIMITS.md",
+        "sha256": "97b7520807c19ff86ca4869f4212632dec6416fe0cd9a6f60e11912f1738bb67",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "28e722250768f2c020727a133ff2bcbb2b80adad",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/LAMBERT_SUCC_INVERSE_TREE.md",
+        "sha256": "e12f9dc6d6099e1f00201a23c22f083272aa87d8f48168cf47f9d950b8eaea59",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "04408ed96bd369b5063868eb5ad5664824d18043",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_FOUNDATIONS.md",
+        "sha256": "22163f466bed8ac0fbca173cbba0e198e93bfd4a794fa7632bb3fe17564d6b86",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "e17ca3189805c62b4d7a984d8051469377786181",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/OBSERVATIONAL_SUCC_GODEL_BRIDGE.md",
+        "sha256": "97615f795676344005825abcb8138edb1f615a4f05baf3153932672f816b90a9",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "72175698dba6c4e5e57e367c4e0763dc74e6c413",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/OMEGA_SUCC_SECOND_ORDER_WEIL_REPORT.md",
+        "sha256": "5871b7792bab7257e1dc849440017564b612244bb207445e00629391112d96f6",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "b792cc9f4f8cf3b6a027adc949c67d5995ef0a7a",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/SUCC_GAMMA_PRIME_PATH_GERMS.md",
+        "sha256": "616c8a66173d0362cad4a1fc885ba942d2b116fc9be232455dc051d1697ef4eb",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "d6c590b2032599d37428b3c4b1c2f71ec86a3ec7",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/research/2026-10-10/SUCC_SHADOW_WINDOW_CANONICAL_SELECTION.md",
+        "sha256": "68d7f9dc6a1e2e32069c615483c8b305e394eff1eae57b0788b63e9f7e1b6c66",
+        "transformation": "verbatim"
+      },
+      {
+        "git_blob_sha": "e54fdd1ec90d00a4b365e941624b612dd85a969f",
+        "matches_manifest": true,
+        "path": "scripts/audit_actualization.py",
+        "sha256": "d29879d1570c0924bae3814de48d6df6550180e13cdfe6f1046da6bb23592f97",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "18208f6bb92df778c8add69a7c08bab23bb38d3b",
+        "matches_manifest": true,
+        "path": "scripts/balanced_theta_li_probe.py",
+        "sha256": "54dcfa33b91827f2b6cc8fbb04875e2a8cf1353029aff9403584164f4bac5c41",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "ea6c80d96d4b1524e5a04266eaa07d132aa04819",
+        "matches_manifest": true,
+        "path": "scripts/dirichlet_lambert_probe.py",
+        "sha256": "190e65735d7ee46bd1d1a9fa66f8842aea1b3180fb4fae7e6e8b5c8d4c89a4f9",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "24a3c87d5b204b7f6fcc5d7d247e5f4ef4879f3d",
+        "matches_manifest": true,
+        "path": "scripts/gamma_succ_path_probe.py",
+        "sha256": "f565f38185cd5feecd82bdd89d94058c034e2501f92dc56b897b31c6d742c45a",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "5d4e2202467c5aed7e34148f99e8489b0a1ce51b",
+        "matches_manifest": true,
+        "path": "scripts/hasse_theta_seam_probe.py",
+        "sha256": "0e848f5b715ff172d941767d2b1321eaf1335b83011914acc8a93b5aee2dddcc",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "f2c113bbcc10fca835cf7d463168c8bf683561b6",
+        "matches_manifest": true,
+        "path": "scripts/infinite_realization_demo.py",
+        "sha256": "2a171383e1ade657f67bcbb363abe09fafb0c9e511cd5688b8b3f6f13f724f1b",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "8510f16f7e874d2c9695de1d2f5686eed078b7e4",
+        "matches_manifest": true,
+        "path": "scripts/lambert_succ_probe.py",
+        "sha256": "c193ee9843bfa860eb7d364cbf36cc48821cff7f735d088d1612d27400fe4dcc",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "4e2e2e44a0ce1305ff568917ab3981279d68e5a7",
+        "matches_manifest": true,
+        "path": "scripts/mutate_actualization.py",
+        "sha256": "a082bcbbcb8e9ff7399c65a4f3d8f97b92456b0f6d9acaf3da645d33d77972fb",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "fdfbe50052aa2fdced417ab59f9b59f4c9e5a835",
+        "matches_manifest": true,
+        "path": "scripts/observer_foundations_probe.py",
+        "sha256": "668a91fee523464179201bd372d6dce53732e8e21a02802f404bc201da409809",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "0d02422392f00a73b4455684d6bcd54c2f510fb9",
+        "matches_manifest": true,
+        "path": "scripts/operational_actualization_probe.py",
+        "sha256": "d0f0d700b986e7a4b9e2179f34efc4953651f05fd086c23563570bdcb4c86c8d",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "21cf54813695584360ab828acf51455f27c91425",
+        "matches_manifest": true,
+        "path": "scripts/ordinal_succ_report_probe.py",
+        "sha256": "530bbbf9d0df52b604fe2c294d0d10ce6ce6bd80d8e18864487e685a742c80d7",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "ab25fcc1c73cbf20a5727c57b3d5fe9a0f2852dd",
+        "matches_manifest": true,
+        "path": "scripts/prime_source_certificates_probe.py",
+        "sha256": "0b2dc054f51a5b24ad342990959dfe726424daaace71a210de5fc654d132c524",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "37c01cdb20db90d1d6c3523277c5ba8cd63deb5d",
+        "matches_manifest": true,
+        "path": "tests/test_balanced_theta_li.py",
+        "sha256": "f1c5b2d3687108ca950c66e4c86fa264e5a116cd749fe0ba951c68b008997e7d",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "1d9bc8a954fe012707222d2b65b7f8a77c7e554c",
+        "matches_manifest": true,
+        "path": "tests/test_category.py",
+        "sha256": "c63194c9155d9683640338a3bd087e6075f0519c1d1b1f39c7e08579b77ed08e",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "d462bead323831bd4e91a817f9b22e4ccfe9c9ab",
+        "matches_manifest": true,
+        "path": "tests/test_circle_transport.py",
+        "sha256": "8bb61878148aefdfb1df19f93ce9d96ef5457c36794b6ca6a467aa10c6a2672b",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "ebd0bb59a528b21f36a676c80619472016e084f0",
+        "matches_manifest": true,
+        "path": "tests/test_dirichlet_lambert.py",
+        "sha256": "62e25aeb0223f17df8be0a300fd522a2a6a48398b83177321aa9c95afa474ebd",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "072cc3079045309cc08e598da85cd88c918b59d5",
+        "matches_manifest": true,
+        "path": "tests/test_engine.py",
+        "sha256": "bf83ba93e25ebda9ac317f57fc12f05ced4ba88962b3fc459dc51cdec30cd5d9",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "bd8612e3fb6b57f3f0e6f94a371c5426c3326e49",
+        "matches_manifest": true,
+        "path": "tests/test_fields.py",
+        "sha256": "9b0854bb1eab2d4c00455a6fbc9b5a21b5e7f08d45d792812f83f90d0c5f5041",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "d35d45374a1e50e0d621f33b19553c9b931adf72",
+        "matches_manifest": true,
+        "path": "tests/test_gamma_interferometer.py",
+        "sha256": "621120dfa51794a0ec4b8540ac3a1c10d5502b30c03b6c87fa7440f881a0b85a",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "81e9239c36d55319706932b7ee1ceb8d61be27a5",
+        "matches_manifest": true,
+        "path": "tests/test_gamma_succ_path.py",
+        "sha256": "3e024d221455678e3e11be929e270e36b0a6620eafbfa7fd0256164cdb63afa0",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "fd5de20fa26c22eb87c3aeeaa70d7636be119115",
+        "matches_manifest": true,
+        "path": "tests/test_godel_succ.py",
+        "sha256": "9d042149903dd41c7fce7f29c133932f4fb346200df2695b76819f65ee105abc",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "79aa92467026331ec983c0d8a1dc8d04b24b96b9",
+        "matches_manifest": true,
+        "path": "tests/test_hasse_theta_seam.py",
+        "sha256": "0e3233da58aa5f667c8bc5b5ee63661156526dd75e8f9c896a0b6d636661def6",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "5d63eaa1b97f4a01d5c9eefd7ec3de2b64fabfd7",
+        "matches_manifest": true,
+        "path": "tests/test_infinite_realization.py",
+        "sha256": "f037ca44887d41af66266d8ea46dffc49b2a6a731a8e14583496fd19b1787b04",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "bcbb2880b80b151a0271fa22f71e4622a70cd67c",
+        "matches_manifest": true,
+        "path": "tests/test_lambert_succ.py",
+        "sha256": "20d43a2db528754c670c38c4880aa5f39fd481c4cc6382f06a7d9b4b2c58af28",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "931857df528b330bfde99d24cb0c3005a3fc96a0",
+        "matches_manifest": true,
+        "path": "tests/test_local_global.py",
+        "sha256": "c2fae013471efb8cf8436ae70e71a241ffe54e77a159c15c242d5fdf263c8397",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "5d931ae22678f02b672b13d4ded249df5965cd4c",
+        "matches_manifest": true,
+        "path": "tests/test_observer_logic.py",
+        "sha256": "38891f5f7ec8f636027e8fa53e99f7a26d10747fb2642d2cac8259159e339a86",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "b14af219f4b51d9f778516a621ec9b60d739954e",
+        "matches_manifest": true,
+        "path": "tests/test_observer_reflection.py",
+        "sha256": "2ed20d16ee17c6173009d223c33407712dc17f695c5248e925328586a31fb46c",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "547eb33163c0b543b08cd27a8315f51c52b12eb7",
+        "matches_manifest": true,
+        "path": "tests/test_ordinal_succ_report.py",
+        "sha256": "2dc836996e41f97744e7856c996eb21db33dbabc49f40f84fa9eadcc4b645d1c",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "15e4391145f1e2586db95d59f5f022bc1e826b5b",
+        "matches_manifest": true,
+        "path": "tests/test_resource_probe.py",
+        "sha256": "519d874f26bc3afa7aa9137e5f0c51d57c57b502997bd07fd0a4d018be9360ec",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "02ee0ecae118552afe8a4b64e368e715a0476bcf",
+        "matches_manifest": true,
+        "path": "tests/test_shadow.py",
+        "sha256": "ecaa3d93be830ff5038aa8388e1a9fb05b1aa9c063169996d772697341558610",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "6f8f42d77cc56ec13be3f65a09b6f3db74bb2b1a",
+        "matches_manifest": true,
+        "path": "tests/test_source_prime_certificates.py",
+        "sha256": "9cabcd05425f7dec56d5ff1ed916e9c3f4137ef544c95684e0dfb83b784789e9",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "fa8192d1404d800bbde1cb929b5178334e9ebda8",
+        "matches_manifest": true,
+        "path": "tests/test_succ_shadow_window.py",
+        "sha256": "356d31be548a45ccc672dc0a33956bc9319d69fc49e9746b5f6954174462fc5d",
+        "transformation": "literal textual namespace translation: actualization -> observational_succ"
+      },
+      {
+        "git_blob_sha": "8233709bd77b89ff67477313f6911d3cec44fb07",
+        "matches_manifest": true,
+        "path": "provenance/origins/fuckingrh/wiki/09-observational-succ-and-computability.md",
+        "sha256": "65ab12364cca2516376e0cd9c7c8b59345e9d7886ee4d738574cf7c4e7c083c1",
+        "transformation": "verbatim"
+      }
+    ],
+    "establishes_mathematical_truth": false,
+    "items": 72,
+    "mechanical_namespace_migrations": 55,
+    "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "verbatim_archives": 17
+  },
+  "status": "PASS_WITH_REVIEWED_REDUNDANT_WORKFLOW_EXCLUSION",
+  "verified_at_utc": "2026-10-21T05:30:47.325497+00:00"
+}

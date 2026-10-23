@@ -24,11 +24,10 @@ does not make every path generic and does not prove pi normality.
 
 ## Formal proof authority
 
-Main VIII stages the admission of nine primitive determinant declarations
-alongside the ten existing Mason–Stothers/Fermat and Schur declarations.
-Only an actual reviewed pinned kernel rebuild may populate the installed
-19-theorem catalogue. The integration audit records whether that gate has
-passed. Exact Lean types, hypotheses, environments and source hashes bind
+Main VIII admitted nine primitive determinant declarations alongside the ten
+existing Mason–Stothers/Fermat and Schur declarations after the actual reviewed
+pinned rebuild passed. The [completion receipt](campaign_completion.md) records
+the 19-theorem catalogue and the exact post-merge verification. Exact Lean types, hypotheses, environments and source hashes bind
 each admitted proposition. A paper theorem, research receipt or finite census
 does not inherit this formal status.
 
@@ -60,3 +59,13 @@ and an external referee. RH, integer abc, binary Goldbach, the authentic
 signed S4 sign, pi normality and the full `t=2/3` moment endpoint remain open.
 New research families stay on independently reviewable draft branches after
 the validated integration.
+
+## Completed post-integration research
+
+The [campaign receipt](campaign_completion.md) links seven independent drafts,
+including the proved small-selected-divisor tail for every fixed `0<=t<1`,
+restricted conic moments beyond two thirds, actual section counts, valuation
+cancellation laws and analytic carrier tails. These are completed paper results
+or explicitly labeled kernel observations, not additions to the merged theorem
+catalogue. The remaining arithmetic sector has all three selected divisors
+above the proved growing cutoff; the unrestricted endpoint remains open.

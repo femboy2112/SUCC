@@ -1,0 +1,548 @@
+{
+  "main": "b116841f12b41aaf7600da39bbb40577f25b6295",
+  "candidate_workflows": [
+    {
+      "id": 39547651222,
+      "name": "One Object II original source cancellation and zero-shift Schur",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651222"
+    },
+    {
+      "id": 39547651196,
+      "name": "Pinned formal kernel and proposition exports",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651196"
+    },
+    {
+      "id": 39547651199,
+      "name": "Collective observer source and certificate replay",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651199"
+    },
+    {
+      "id": 39547651255,
+      "name": "Source-minimality clock carry renewal exact checks",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651255"
+    },
+    {
+      "id": 39547651172,
+      "name": "Institute theorem contracts and core Lean",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651172"
+    },
+    {
+      "id": 39547651223,
+      "name": "pi-polygon-normality-exact",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651223"
+    },
+    {
+      "id": 39547651157,
+      "name": "Bidirectional SUCC exact arithmetic cut checks",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651157"
+    },
+    {
+      "id": 39547651189,
+      "name": "Orbit clock genesis exact source checks",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651189"
+    },
+    {
+      "id": 39547651159,
+      "name": "Primitive slope kernel research",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651159"
+    },
+    {
+      "id": 39547651164,
+      "name": "Observational SUCC validation",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651164"
+    }
+  ],
+  "postmerge_incoming_prs": [
+    {
+      "number": 211,
+      "state": "closed",
+      "merged": true,
+      "head": "e8c12ca0eac57dcffce59747ad160330f6225756",
+      "base": "b5f9591033db2022bda6a2f16a935c06466f9eff",
+      "mergeable": false,
+      "draft": true
+    },
+    {
+      "number": 212,
+      "state": "closed",
+      "merged": true,
+      "head": "04dc97022d4b75e8d229128de50509c413d86b8b",
+      "base": "b5f9591033db2022bda6a2f16a935c06466f9eff",
+      "mergeable": false,
+      "draft": true
+    },
+    {
+      "number": 213,
+      "state": "closed",
+      "merged": true,
+      "head": "d3e0ccf671b2ddc2a9e94549db77f60955ee7580",
+      "base": "b5f9591033db2022bda6a2f16a935c06466f9eff",
+      "mergeable": false,
+      "draft": true
+    },
+    {
+      "number": 214,
+      "state": "closed",
+      "merged": true,
+      "head": "9372c669892a2a29fb8c16f0fa20c11815f650df",
+      "base": "b5f9591033db2022bda6a2f16a935c06466f9eff",
+      "mergeable": false,
+      "draft": true
+    },
+    {
+      "number": 218,
+      "state": "closed",
+      "merged": true,
+      "head": "8f9444c3984e4b981422d400c4c3ebde7a0a6715",
+      "base": "b5f9591033db2022bda6a2f16a935c06466f9eff",
+      "mergeable": false,
+      "draft": true
+    },
+    {
+      "number": 220,
+      "state": "open",
+      "merged": false,
+      "head": "8986a467b37f7cbd93c2b09d9d197d9a4024be20",
+      "base": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "mergeable": true,
+      "draft": true
+    }
+  ],
+  "exterior": {
+    "pr_number": 220,
+    "url": "https://github.com/femboy2112/SUCC/pull/220",
+    "branch": "astra-cloud/viii-exterior-kernel-2026-10-21",
+    "remote_head": "8986a467b37f7cbd93c2b09d9d197d9a4024be20",
+    "tree": "d4bf8526379522ec538c18f7bb7c20cdb7b7b73c",
+    "local_head": "43166020d2c806e0f78062d025bd969dfc42d510",
+    "parent_main": "b116841f12b41aaf7600da39bbb40577f25b6295",
+    "successful_kernel_run": 39548086330,
+    "successful_kernel_job": 119050852183,
+    "checked_source_head": "d54ea23a3cd1f4e0c8d81484c039fa145a050326",
+    "declarations": 11,
+    "negative_controls": 3,
+    "authority_status": "KERNEL_CHECKED_NOT_AUTHORITY_ADMITTED",
+    "archive_sha256": "87f4e15159b79a554d16d5d528dab2d8cf44266418cf0364cb9af22f0303d8b9",
+    "files": [
+      ".github/workflows/exterior-rigidity.yml",
+      "formal/exterior_rigidity/ExteriorRigidity.lean",
+      "formal/exterior_rigidity/README.md",
+      "formal/exterior_rigidity/check.py",
+      "formal/exterior_rigidity/lake-manifest.json",
+      "formal/exterior_rigidity/lakefile.toml",
+      "formal/exterior_rigidity/lean-toolchain",
+      "formal/exterior_rigidity/receipts/kernel-observation-39548086330.json",
+      "formal/exterior_rigidity/receipts/review-39548086330.json"
+    ],
+    "file_sha256": {
+      ".github/workflows/exterior-rigidity.yml": "a344c9f036099f4e686140396d283d279ed06b8b6eecbdea914a43cf331cb12d",
+      "formal/exterior_rigidity/ExteriorRigidity.lean": "677a58465673703a430ab33d453a8ef2113e0c53f7b9dddc2252e5cee87491e6",
+      "formal/exterior_rigidity/README.md": "14ffea39ba8c43a3921f0ed9bffb36683fae9563ef46aaccd3cf7ba15709d0b3",
+      "formal/exterior_rigidity/check.py": "77b7fcf3efaa13d683bc3b59b80e98050fb9e6741eaec9eaf67c84fd598f2b55",
+      "formal/exterior_rigidity/lake-manifest.json": "46495f2d7c06e41c8ddc653556f20d493691af867a00e13263cb09f2f66e86f8",
+      "formal/exterior_rigidity/lakefile.toml": "58d766534091211984bd3676058be2574cdebcd8988aa4a744895d4e7e019ec7",
+      "formal/exterior_rigidity/lean-toolchain": "6faf6530819a0bc6d6092a2d9b974ea8e8adfec955d0e51e02e1f82734264d14",
+      "formal/exterior_rigidity/receipts/kernel-observation-39548086330.json": "87f4e15159b79a554d16d5d528dab2d8cf44266418cf0364cb9af22f0303d8b9",
+      "formal/exterior_rigidity/receipts/review-39548086330.json": "7d10a329647ce9a3a431bbd4e96367353ad09626a0a359c64591f467e3691344"
+    }
+  },
+  "research": [
+    {
+      "key": "boundary",
+      "branch": "astra-cloud/viii-small-divisor-tail-2026-10-21",
+      "commits": [
+        "9bfeb0921941790415a6cc2b35086841b744a522"
+      ],
+      "title": "Arithmetic research: uniform high-divisor tail with one small selected divisor",
+      "testPatterns": [
+        "test_viii_hostile_high_divisor.py"
+      ],
+      "summary": "For every fixed 0<=t<1, the actual high-divisor tail D>Q>=X\u00b2 with min(d,e,f)<=B is bounded by K_t B(1+log B)X^(1+t)(X\u00b2/Q)^((1-t)/2). The explicit growing cutoff B=max(1,X^(1-t)/(1+log X)) gives a quadratic dyadic saving. Arbitrary prime-power depth and actual divisor-selection multiplicity are retained. Also refutes dual-singleton reasoning by an unbounded primitive unit-cofactor fiber. The all-three-large-divisor sector remains open.",
+      "dossier": "research/2026-10-21/VIII_COFACTOR_SMALL_DIVISOR_BOUND.md",
+      "worktree": "/workspace/scratch/0a4459d8f487/viii-published-boundary",
+      "parent_main": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "local_head": "6d7f67005130d54b699bfb2db2b04fccd0d54d4c",
+      "tree": "184014c43d373713676590e7e3a03d4204848ddf",
+      "files": [
+        "research/2026-10-21/VIII_COFACTOR_SMALL_DIVISOR_BOUND.md",
+        "scripts/viii_hostile_high_divisor.py",
+        "tests/test_viii_hostile_high_divisor.py"
+      ],
+      "tests": [
+        {
+          "pattern": "test_viii_hostile_high_divisor.py",
+          "exit_code": 0,
+          "elapsed_seconds": 0.2923706050023611,
+          "log_sha256": "d6c495aab270749490cdf80f50d735c4a3885ceedb568334c1f4084f2272da99",
+          "result_tail": [
+            "",
+            "----------------------------------------------------------------------",
+            "Ran 6 tests in 0.234s",
+            "",
+            "OK"
+          ]
+        }
+      ],
+      "remote_head": "1fee18e62db8fb573bb25c030e870a4bb16d88b3",
+      "pr_number": 221,
+      "url": "https://github.com/femboy2112/SUCC/pull/221",
+      "file_sha256": {
+        "research/2026-10-21/VIII_COFACTOR_SMALL_DIVISOR_BOUND.md": "3b68c70e4535c4e16720ed5ba675435a8b2cb2fc4e4110bb8a23701e955f0346",
+        "scripts/viii_hostile_high_divisor.py": "a6f96f76f45b3686d4a9d51ff00158c1e22717b5205067131c08d0e968323445",
+        "tests/test_viii_hostile_high_divisor.py": "beacc8abb7a239fbc049b33a1e62a0bea61201582fba341fe49b5edf66da69bb"
+      },
+      "status": "PROVED PAPER / TESTED FINITE; academic novelty unverified; not kernel-verified",
+      "common_file_conflicts": [],
+      "recommended_integration": "independent child of Main VIII; merge only after own hosted checks and review"
+    },
+    {
+      "key": "conics",
+      "branch": "astra-cloud/viii-conic-weighted-moments-2026-10-21",
+      "commits": [
+        "b013a937497c652a7665d6808bda7b7d250d2758",
+        "bf7a4771f7239dec500548f965d3bad67af3486e"
+      ],
+      "title": "Arithmetic research: explicit conic-family moments beyond two thirds",
+      "testPatterns": [
+        "test_viii_high_divisor.py"
+      ],
+      "summary": "Explicit primitive diagonal-conic counting, with proved gcd cancellation and coefficient dependence, yields a restricted full source moment <=23 X^(691/350) at t=5/7. The growing cofactor catalog and root-radical-excess restriction are explicit. A separate sparse Pythagorean corollary has arbitrary prime depth and covers fixed parameter width through t=7/10. These are restricted-family results; no unrestricted endpoint or integer abc claim.",
+      "dossier": "research/2026-10-21/VIII_HIGH_DIVISOR_CONICS.md",
+      "worktree": "/workspace/scratch/0a4459d8f487/viii-published-conics",
+      "parent_main": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "local_head": "cee51923172953ca82e9d6af22644313968f5bdb",
+      "tree": "4a1b8230633d1fe333ec82c438bf6e44a8cc21fe",
+      "files": [
+        "observational_succ/viii_high_divisor.py",
+        "research/2026-10-21/VIII_HIGH_DIVISOR_CONICS.md",
+        "research/2026-10-21/VIII_HIGH_DIVISOR_CONICS_RECEIPT.json",
+        "research/2026-10-21/VIII_HIGH_DIVISOR_PYTHAGOREAN_ADDENDUM.md",
+        "scripts/viii_high_divisor_probe.py",
+        "tests/test_viii_high_divisor.py"
+      ],
+      "tests": [
+        {
+          "pattern": "test_viii_high_divisor.py",
+          "exit_code": 0,
+          "elapsed_seconds": 0.22440054299659096,
+          "log_sha256": "f87e06e575b5f10fcac409f9dce3fe8ed6e6b2aa19c448c07ca5e0afab12299c",
+          "result_tail": [
+            "",
+            "----------------------------------------------------------------------",
+            "Ran 11 tests in 0.104s",
+            "",
+            "OK"
+          ]
+        }
+      ],
+      "remote_head": "951843413a49f5c82c9e214151e91d9aeeb39d0d",
+      "pr_number": 222,
+      "url": "https://github.com/femboy2112/SUCC/pull/222",
+      "file_sha256": {
+        "observational_succ/viii_high_divisor.py": "cc5cd6b8e5ca62a962a12a0438f29cd95656f07ee538be33311e82bdcacb8306",
+        "research/2026-10-21/VIII_HIGH_DIVISOR_CONICS.md": "984903675d0e7b635f9895e4a6acd4879d15539480100e1d49b14f7c640efb0a",
+        "research/2026-10-21/VIII_HIGH_DIVISOR_CONICS_RECEIPT.json": "61f0a64830117b848ca50f5816272ecac46870b9a72c96b97b182e02c970ae04",
+        "research/2026-10-21/VIII_HIGH_DIVISOR_PYTHAGOREAN_ADDENDUM.md": "60b168582e1d6a9c56af1ca658aaf1366d6b230db22c7b4ca10123baf2c9f65c",
+        "scripts/viii_high_divisor_probe.py": "1013f80da0e382ea9696dbb1cf8d543697c78bf4dccaa1dd983a9909c7ea829d",
+        "tests/test_viii_high_divisor.py": "d4d7d84288d518b18c134f32c04793058a25af3fbebb45183acaa59069e8677a"
+      },
+      "status": "PROVED PAPER / TESTED FINITE; academic novelty unverified; not kernel-verified",
+      "common_file_conflicts": [],
+      "recommended_integration": "independent child of Main VIII; merge only after own hosted checks and review"
+    },
+    {
+      "key": "geometry",
+      "branch": "astra-cloud/viii-section-lattice-counts-2026-10-21",
+      "commits": [
+        "1bd7e5a7d5ed2b476cfac22054c12a80cce4fc9c",
+        "f1a1c58"
+      ],
+      "title": "Geometry research: actual section-lattice counts and dimension-corrected simplex laws",
+      "testPatterns": [
+        "test_viii_exterior_geometry.py",
+        "test_viii_simplex_asymptotics.py"
+      ],
+      "summary": "Constructs the actual saturated-section congruence index and covolume after rank drop, then proves explicit simplex bounds a(X-beta)_+^r<=A(X)<=a(X+beta)^r. Dimension corrections extend residue-uniform simplex asymptotics beyond the square-root scale; entropy bounds cover linear and zero-count regimes. Exact counterexamples refute ambient-index inheritance and residue-independent correction. The asymptotic statement explicitly requires N->infinity. No primitive-density or abc-moment conclusion is inferred.",
+      "dossier": "research/2026-10-21/VIII_SECTION_LATTICES_AND_SIMPLEX_LAWS.md",
+      "worktree": "/workspace/scratch/0a4459d8f487/viii-published-geometry",
+      "parent_main": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "local_head": "0cba3422936d8b24607fe2d5968e6d206f4498a8",
+      "tree": "5508c4326f5e7cdff197400aa2aa6490fdf2cfa7",
+      "files": [
+        "observational_succ/viii_exterior_geometry.py",
+        "observational_succ/viii_simplex_asymptotics.py",
+        "research/2026-10-21/VIII_GEOMETRY_RECEIPT.json",
+        "research/2026-10-21/VIII_SECTION_LATTICES_AND_SIMPLEX_LAWS.md",
+        "scripts/viii_geometry_probe.py",
+        "tests/test_viii_exterior_geometry.py",
+        "tests/test_viii_simplex_asymptotics.py"
+      ],
+      "tests": [
+        {
+          "pattern": "test_viii_exterior_geometry.py",
+          "exit_code": 0,
+          "elapsed_seconds": 0.5938356110018503,
+          "log_sha256": "5af58fde051020f94bd8fff76747940f4ee2283c7a0d4c33425c257deab3b6fe",
+          "result_tail": [
+            "",
+            "----------------------------------------------------------------------",
+            "Ran 8 tests in 0.287s",
+            "",
+            "OK"
+          ]
+        },
+        {
+          "pattern": "test_viii_simplex_asymptotics.py",
+          "exit_code": 0,
+          "elapsed_seconds": 0.8038730699990992,
+          "log_sha256": "c78c453e85c252fff04c81d02f5ce7e7fed024c5a9a99467d78ceb90138dc5fd",
+          "result_tail": [
+            "",
+            "----------------------------------------------------------------------",
+            "Ran 6 tests in 0.723s",
+            "",
+            "OK"
+          ]
+        }
+      ],
+      "remote_head": "8419735f2226e74180f64fe0c2052a1a8826e9fe",
+      "pr_number": 223,
+      "url": "https://github.com/femboy2112/SUCC/pull/223",
+      "file_sha256": {
+        "observational_succ/viii_exterior_geometry.py": "1c849a45ef6bd69c0c956840315aeddebbe81c42f8fb755d804e827d8c2c3809",
+        "observational_succ/viii_simplex_asymptotics.py": "8e766073cc02d048a1cd966017f2c68c56137dbc37f1d08bd7e6273e67a9fdc7",
+        "research/2026-10-21/VIII_GEOMETRY_RECEIPT.json": "cd287b94aa81ba7fe8bc8e6f6eeb159763eed13e16639a45fea71be81af81443",
+        "research/2026-10-21/VIII_SECTION_LATTICES_AND_SIMPLEX_LAWS.md": "208505b591acec8ca4c181b30193b94f9bed24dc7db8788567586b9f81dccea5",
+        "scripts/viii_geometry_probe.py": "e16a3ca96256887cfc1f07bf1290b7317868d65910cbd8bff417bfe2f9deb872",
+        "tests/test_viii_exterior_geometry.py": "fa71ff832bbd7b97c0f4274388f8e3c24879fc3ecb23010fbed97e5f48e6070f",
+        "tests/test_viii_simplex_asymptotics.py": "766d1587122bd62211e8d8bf1ec29ec1af814c3c2d04b1a772b2a7cdfcb4bbb4"
+      },
+      "status": "PROVED PAPER / TESTED FINITE; academic novelty unverified; not kernel-verified",
+      "common_file_conflicts": [],
+      "recommended_integration": "independent child of Main VIII; merge only after own hosted checks and review"
+    },
+    {
+      "key": "clocks",
+      "branch": "astra-cloud/viii-valuation-cancellation-2026-10-21",
+      "commits": [
+        "0bb1642ceeda36aa06c95d90ce5837cdc652a119"
+      ],
+      "title": "Arithmetic clocks: exact valuation cancellation and total-inclusive CRT densities",
+      "testPatterns": [
+        "test_viii_valuation_clocks.py"
+      ],
+      "summary": "Proves every finite prime-power valuation cell for the sum map, by character and recurrence methods. Derives total-inclusive pairwise coprimality factors, exact CRT composition, moving-box errors, and explicit infinite-prime sieve tails. For three summands at p=2 the three distinct densities are 7/8,1/2,1/8. Global primitivity and pairwise conditions remain distinct; sparse relative uniformity is not assumed.",
+      "dossier": "research/2026-10-21/VIII_VALUATION_CLOCKS.md",
+      "worktree": "/workspace/scratch/0a4459d8f487/viii-published-clocks",
+      "parent_main": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "local_head": "290936386cb83536045ca4d9c45e565f55f4e296",
+      "tree": "29a26f4dbc006bee97d579f3e07f1a1c3747815c",
+      "files": [
+        "observational_succ/viii_valuation_clocks.py",
+        "research/2026-10-21/VIII_VALUATION_CLOCKS.md",
+        "research/2026-10-21/VIII_VALUATION_CLOCKS_RECEIPT.json",
+        "tests/test_viii_valuation_clocks.py"
+      ],
+      "tests": [
+        {
+          "pattern": "test_viii_valuation_clocks.py",
+          "exit_code": 0,
+          "elapsed_seconds": 0.16037148499890463,
+          "log_sha256": "42dd121079ef898f1c400cebc1504f90ebe70e8a8a88cf045670f50ed98ccc9f",
+          "result_tail": [
+            "",
+            "----------------------------------------------------------------------",
+            "Ran 8 tests in 0.037s",
+            "",
+            "OK"
+          ]
+        }
+      ],
+      "remote_head": "abc005ffa14a6644d7a91b6ad5cc6feae97c7faa",
+      "pr_number": 224,
+      "url": "https://github.com/femboy2112/SUCC/pull/224",
+      "file_sha256": {
+        "observational_succ/viii_valuation_clocks.py": "72d469f3cae42c7bb8d5636a1b4a7227c9e98f3f56f9fccce76af37981150ff1",
+        "research/2026-10-21/VIII_VALUATION_CLOCKS.md": "1945cc29c24f9aaccf2853c854e3f8f061f0ed82aafa1eee96a51a500dcf6fef",
+        "research/2026-10-21/VIII_VALUATION_CLOCKS_RECEIPT.json": "a27c09078f04f128e42057ae7d1ffcb83017ce68cf36a51e86b966d003816fa8",
+        "tests/test_viii_valuation_clocks.py": "e662681e724a292e7c665b76553882cd9308b057388297239594269ab533b6da"
+      },
+      "status": "PROVED PAPER / TESTED FINITE; academic novelty unverified; not kernel-verified",
+      "common_file_conflicts": [],
+      "recommended_integration": "independent child of Main VIII; merge only after own hosted checks and review"
+    },
+    {
+      "key": "carrier",
+      "branch": "astra-cloud/viii-infinite-gibbs-carrier-2026-10-21",
+      "commits": [
+        "234a99cf4408bfbe35e3c293a12d9b795591b5c0"
+      ],
+      "title": "Infinite carriers: Gibbs summability, exact truncation tails and trace boundaries",
+      "testPatterns": [
+        "test_viii_infinite_carrier.py"
+      ],
+      "summary": "Separates finite-shell local finiteness (weights escape), Gibbs/heat-trace convergence (sum exp(-beta*w_j)<infinity), and finite mean energy. Proves exact cylinder/support/total-variation statements and rational tails for explicit spectra. Escaping dyadic weights can have infinite trace; another trace-class spectrum has infinite expected energy. Independent Borel-Cantelli and coupling review passed. No unseen infinite tail is certified from a finite list.",
+      "dossier": "research/2026-10-21/VIII_INFINITE_CARRIER.md",
+      "worktree": "/workspace/scratch/0a4459d8f487/viii-published-carrier",
+      "parent_main": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "local_head": "81309408f2f013611cfe7cc16265f3c93d478e1f",
+      "tree": "d49292502e7db99043eac23839f25812271c6dfd",
+      "files": [
+        "observational_succ/viii_infinite_carrier.py",
+        "research/2026-10-21/VIII_INFINITE_CARRIER.md",
+        "research/2026-10-21/VIII_INFINITE_CARRIER_RECEIPT.json",
+        "tests/test_viii_infinite_carrier.py"
+      ],
+      "tests": [
+        {
+          "pattern": "test_viii_infinite_carrier.py",
+          "exit_code": 0,
+          "elapsed_seconds": 0.1611234810006863,
+          "log_sha256": "a99b1cf231d11e041ee7c1ac5ae525eaeacd0cae3d946d0bd7ca429bdf48a85f",
+          "result_tail": [
+            "",
+            "----------------------------------------------------------------------",
+            "Ran 9 tests in 0.006s",
+            "",
+            "OK"
+          ]
+        }
+      ],
+      "remote_head": "bc3cdad6b63403988de5c15c294d7c5cc5c1aa7e",
+      "pr_number": 225,
+      "url": "https://github.com/femboy2112/SUCC/pull/225",
+      "file_sha256": {
+        "observational_succ/viii_infinite_carrier.py": "977cd31157d2807fe12c0ada1f9e99db96e68eaf55ff2ad9d0f5d63e97b3c72b",
+        "research/2026-10-21/VIII_INFINITE_CARRIER.md": "3ae66ed6da23ede5e83091fc40517d33bb465eb867bfa9849e4d175918f74003",
+        "research/2026-10-21/VIII_INFINITE_CARRIER_RECEIPT.json": "5a329960b32fae26df58e6f5dd8b959620e231692e64deb05c336b946222762f",
+        "tests/test_viii_infinite_carrier.py": "d27edf4659659c4a93fb272c7e94be784b157b2cbb7b4785812ba7d2ee5d5465"
+      },
+      "status": "PROVED PAPER / TESTED FINITE; academic novelty unverified; not kernel-verified",
+      "common_file_conflicts": [],
+      "recommended_integration": "independent child of Main VIII; merge only after own hosted checks and review"
+    },
+    {
+      "key": "pi",
+      "branch": "astra-cloud/viii-pi-fourier-certificate-2026-10-21",
+      "commits": [
+        "41e12b57dffa618f4231cbccf48429dad8ba5e32"
+      ],
+      "title": "Finite harmonic certificate: independently enclosed pi Fourier orbit sample",
+      "testPatterns": [
+        "test_pi_fourier_certificate.py"
+      ],
+      "summary": "Exact polygon/Taylor arithmetic certifies 1/25<|(1/32) sum_{j<32} exp(2pi i 2^j pi)|\u00b2<1/20. The source-phase and angle-conversion errors are paid separately, with strict exact inputs and actual enclosure width. Independent Machin plus nested-radical evaluations cross-check the interval. Finite calibration only: no pi normality, genericity or uniform-horizon decay claim.",
+      "dossier": "research/2026-10-21/PI_FOURIER_CERTIFIED_FINITE_ORACLE.md",
+      "worktree": "/workspace/scratch/0a4459d8f487/viii-published-pi",
+      "parent_main": "b116841f12b41aaf7600da39bbb40577f25b6295",
+      "local_head": "8e63cb68730cb4cdd174796aca08a6c66adfa78e",
+      "tree": "e908738a768a57cbed7c8a9416a81e71fefe17f8",
+      "files": [
+        "observational_succ/pi_fourier_certificate.py",
+        "research/2026-10-21/PI_FOURIER_CERTIFIED_FINITE_ORACLE.md",
+        "research/2026-10-21/PI_FOURIER_FINITE_RECEIPT.json",
+        "scripts/pi_fourier_certificate_probe.py",
+        "tests/test_pi_fourier_certificate.py"
+      ],
+      "tests": [
+        {
+          "pattern": "test_pi_fourier_certificate.py",
+          "exit_code": 0,
+          "elapsed_seconds": 2.097107215999131,
+          "log_sha256": "26969065b0f0a46ae3a7d87ab57328a563cff271ae405a53a8989670ad1290f2",
+          "result_tail": [
+            "",
+            "----------------------------------------------------------------------",
+            "Ran 6 tests in 1.981s",
+            "",
+            "OK"
+          ]
+        }
+      ],
+      "remote_head": "0c4e6982788a69cada58bf735500f3a842019da3",
+      "pr_number": 226,
+      "url": "https://github.com/femboy2112/SUCC/pull/226",
+      "file_sha256": {
+        "observational_succ/pi_fourier_certificate.py": "7acaf600b028029a828a3b863695002e5dc4e8fbbc08869398f3632f840ab737",
+        "research/2026-10-21/PI_FOURIER_CERTIFIED_FINITE_ORACLE.md": "cbb9cf00de74452329a0b0ac573b40f08c843bb764b778bcebcd6da62d21192d",
+        "research/2026-10-21/PI_FOURIER_FINITE_RECEIPT.json": "055af296dafa2ceba2e76dce5084d2364f1f114ccdeae6d85aeded34c7b61e8d",
+        "scripts/pi_fourier_certificate_probe.py": "1360e787cf7b845e1eedd04c906769d54d687ad5001b50abd1ac21d40a3fb419",
+        "tests/test_pi_fourier_certificate.py": "42c3e0fa303e2d392ad524d85665218ced08cf52f7bc11ea5071b0932a8a918a"
+      },
+      "status": "PROVED PAPER / TESTED FINITE; academic novelty unverified; not kernel-verified",
+      "common_file_conflicts": [],
+      "recommended_integration": "independent child of Main VIII; merge only after own hosted checks and review"
+    }
+  ],
+  "schema": "succ.academic-main-viii.campaign.v1",
+  "recorded_at_utc": "2026-10-21T05:32:44.437041+00:00",
+  "main_tree": "bf972c334fc1f01a35263b9a66c1cdef91b621a8",
+  "integration_candidate": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+  "historical_runs": [
+    {
+      "id": 39546972269,
+      "result": "FAIL final installed admission after successful actual kernel build; expected staging mismatch, subsequently repaired"
+    },
+    {
+      "id": 39546971931,
+      "result": "FAIL authority gate at staging head; full suites did not run"
+    },
+    {
+      "id": 39547781359,
+      "result": "FAIL exterior Lean elaboration; two proof details repaired"
+    },
+    {
+      "id": 39547956368,
+      "result": "CANCELLED superseded exterior head"
+    },
+    {
+      "id": 39548081597,
+      "result": "CANCELLED redundant corrected-head exterior run"
+    },
+    {
+      "id": 39548086330,
+      "result": "SUCCESS actual eleven-theorem exterior kernel and three negative mutations"
+    }
+  ],
+  "scope": "Actual main merge and completed separate research drafts; no release or paper submission. Research draft CI statuses are snapshots, not main merge gates."
+}

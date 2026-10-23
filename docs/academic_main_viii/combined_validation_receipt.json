@@ -1,0 +1,186 @@
+{
+  "local_commit": "1ad27d38525a528ff60428533db64258a424d480",
+  "local_tree": "bf972c334fc1f01a35263b9a66c1cdef91b621a8",
+  "published_equivalent_commit": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+  "incoming_files_sha256": {
+    ".github/workflows/pi-polygon-normality-exact.yml": "ce0eda6f1b5aa47f05f4a10a237e5773dbf29453de10526602d1afaf3fcbb582",
+    ".github/workflows/slope-rigidity.yml": "641ae19263fed811bb391a9790e07fcb777abcf9e37170e935c65cc74abd8644",
+    "README.md": "3bf8f227e47edee973f5ab1734d6e95d43adc94ba2ccb9dcc8052d6e7c690e6a",
+    "docs/CLAIM_INDEX.md": "fd3dd56307924e4b87fb2bb6b33078ee13df088e1ae945c73583abb84420194a",
+    "docs/CLAIM_NAMESPACE_REGISTRY.json": "0744c766336be4c870f9a762c3e08a64c6d01585f0c0c43248ec8aa8d56acfda",
+    "docs/CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md": "780292ad321b91a296c6b1397ebac75c057455b24d8ac808a96628e37fb506dc",
+    "docs/CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md": "1536821565bf3fa2e42e86af04fb565044f7698d62d9d43b6cb896caca81b86a",
+    "docs/ROADMAP.md": "875e15525e14f358449a3eb2f8903a569c4d816ddc5a81ce3a0b212b52f2194b",
+    "docs/SUCC_RESEARCH_DEPENDENCY_DAG.md": "1b65ecefd0df1106af63c5fe6023efe6dd7f5c01e942a0a5f65d9b36c9b94eaa",
+    "docs/academic_main_vii/campaign_completion.md": "daedee381059f987cd3ddd5155aa7f10a1862fd6f0e97ad8e4385a3f031c5ea4",
+    "docs/academic_main_vii/main_merge_receipt.json": "16156e44a22c2b7e05e9310dd53b6ac74e66ca70b2f49887003d4d9ae74f802c",
+    "docs/academic_main_vii/research_frontier.md": "83052ec68e51cea5d02cf8323e5243d484716fc4bb5099485c5be2d8d724afc0",
+    "formal/slope_rigidity/PrimitiveSlope.lean": "385c1356c2b7e7558a7b3872649bd996a7d6e1cd0b6dc56ce460dc75b2690210",
+    "formal/slope_rigidity/README.md": "0a9d4600e217358355a11f03e8983f2297b9d64b6f8ffb81ac4314a40404cf2c",
+    "formal/slope_rigidity/check.py": "162ebadb714dca2bfa6a317c1b6f6812ae312c9751537a1aaa77c42667b34c78",
+    "formal/slope_rigidity/lake-manifest.json": "46495f2d7c06e41c8ddc653556f20d493691af867a00e13263cb09f2f66e86f8",
+    "formal/slope_rigidity/lakefile.toml": "240f3efe2ae0a60bd4c0f0d49a058eafcfa786314821655708f6167a82539afa",
+    "formal/slope_rigidity/lean-toolchain": "6faf6530819a0bc6d6092a2d9b974ea8e8adfec955d0e51e02e1f82734264d14",
+    "formal/slope_rigidity/receipts/kernel-observation-39508738928.json": "094a35e5ed7dae06d99efb159e6283a674862f5441499f6f60e0efa12614cdc1",
+    "observational_succ/abc_effective_mean.py": "4dce1bdecae86e23a7895abfa32fdc9f60c7ae5bf064c5a59c5f5a24dbb5fa45",
+    "observational_succ/cloud_exact_moment_inverse.py": "e22351e2a747ec311c853993986e921c6ef3c5ab45e68e10a7a26e567b5a2651",
+    "observational_succ/exterior_cofactor_ascent.py": "3ce0eb86cee534066587168b0e2ee6753c1d618ce03adee581f7ea2c43d662ac",
+    "observational_succ/pi_polygon_normality.py": "f98b4fb253e62c3bc47682692c12459fbf9f252b1b014ecd41dd67a163c4b614",
+    "research/2026-10-20/ABC_EFFECTIVE_MEAN.md": "c7447c22aeaac0889d0b05a816fbbe3f402163481a7fc422d8a193ca5d883a62",
+    "research/2026-10-20/ABC_EFFECTIVE_MEAN_RECEIPT.json": "ebbce1b99ed751abc9b58f171e68acf1a4300bee9b575310877bfadcfec25b37",
+    "research/2026-10-20/ABC_EFFECTIVE_POSTMAIN_RECEIPT.json": "95cfbfff1e1eb4f5fcbe5c19b0aeca950a4e9c7c14d0b41e103b8c20f0e06e37",
+    "research/2026-10-20/CLOUD_EXACT_MOMENT_INVERSE.md": "7f9c9f69bb0c7444f6af9bf38442b60cba2d20f3a812a4e9a4409c0898bb4525",
+    "research/2026-10-20/CLOUD_EXACT_MOMENT_POSTMAIN_RECEIPT.json": "faa495e3e144a8807ba1ad0ada961d5ff3d967c34239e7ebfb8d730bd2479bb4",
+    "research/2026-10-20/CLOUD_EXACT_MOMENT_SOURCE_HOLDOUT_J6.json": "6fab39552a565db0c3b9ba04a3830c5132e0c071fe50ea19712f51331009c637",
+    "research/2026-10-20/CLOUD_EXACT_MOMENT_SOURCE_J10.json": "321d80b0dc38aeddf52f6c0b0c398370b3b18fae285c6fbd1751acc999bc28f9",
+    "research/2026-10-20/CLOUD_EXACT_MOMENT_VALIDATION.json": "319494526a290d8e412b2c2e1e600d58341cc569cee72f6d846124a50cb6a53f",
+    "research/2026-10-20/DUAL_SLOPE_EXTERIOR_ASCENT.md": "e456a75f94b56c3df51a0634be7181d9f2fb88270ae8161a85377e4293247bc7",
+    "research/2026-10-20/PI_POLYGON_NORMALITY_FINITE_RECEIPT.json": "7b0a99e7b4032a94d778104098965d23a3070b31d712da02e73cd22a0afe86ed",
+    "research/2026-10-20/PI_POLYGON_NORMALITY_PATH_DEFECT.md": "3d5318a3578f9f0a7161cee861643a0912133d663cd324ba5559c4c631074186",
+    "research/2026-10-20/main-vii-referee/OPERATOR_REFINEMENT_REVIEW.md": "fe0cee3fe2a8dbde4752a63ff5438b395525a55850386f588c884a23a9023226",
+    "research/2026-10-20/main-vii-referee/operator-symbolic-holdout.json": "549e64f45eb69dc0ac792725ebc4a0143b21c64b372f945476075b6a120baa89",
+    "scripts/abc_effective_mean_probe.py": "99d45f3aa9d8422b0e10654a029920b4d9720f60cd0d6c160698e79b0764f44a",
+    "scripts/cloud_exact_moment_source_probe.py": "7503c49398e6a76ac7ed0710dbdd07e0bf3a5acbaccc9686497cf9496db6aca6",
+    "scripts/main_vii_operator_holdout.py": "b76405340254f9dbf79a90f2955db0f9a6b2ccf523b5dee60a4d602d532a1335",
+    "scripts/pi_polygon_normality_probe.py": "6eddf1a120e2f7f4ddb852befe54bf5e613d215128f37ad362dde6cb3d63b8c2",
+    "tests/test_abc_effective_mean.py": "4528b73cbba643fe23362a4586509696df51b3829b91d4c457fc1cce6c8a162f",
+    "tests/test_cloud_exact_moment_inverse.py": "af04c6cfa3415ca46da63ec16405bc6e50a9407a3715b3f2397cc01810f29cab",
+    "tests/test_exterior_cofactor_ascent.py": "1ee2c808565917b83060830184556cc774f5a82f97399080072b849439d0da53",
+    "tests/test_pi_polygon_normality.py": "7ed4a774082364a309fdf53d10b33774f022750e91955d4ea2e618c30adf4075"
+  },
+  "log_sha256": {
+    "viii-full-python312.log": "5d36d66eb7b552faf23faeddadd2c7e5e476cb959cace8461600c1404588340a",
+    "viii-provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "viii-main-python310-success.log": "98a5f7f2bf7392b1f25dbe17ff3c83eb27eb74e155e1da0e6cbf82e65e2ffac9"
+  },
+  "local_full_suite": {
+    "python": "3.12.14",
+    "tests": 6557,
+    "seconds": 557.629,
+    "result": "PASS"
+  },
+  "hosted_full_suite": "SUCCESS: exact candidate 134759e7106391970f12fe9d6ae8ba6650a49e56",
+  "formal_admitted_record_sha256": "02c840ea05ff3caf0f25aa48943e0b3b57bc911e6e9f4ab1d7feb440ee695734",
+  "source_provenance_gate": "PASS (72 originals unchanged)",
+  "hostile_replay": "9 FIXED",
+  "namespace_gate": "31 namespaces; 304 qualified registered claims",
+  "hosted_python_313": {
+    "run_id": 39547651164,
+    "job_id": 119049359758,
+    "tests": 6557,
+    "seconds": 705.645,
+    "status": "SUCCESS",
+    "head": "134759e7106391970f12fe9d6ae8ba6650a49e56"
+  },
+  "hosted_python_310": {
+    "conclusion": "success",
+    "job_id": 119049359805,
+    "log_file": "/workspace/scratch/0a4459d8f487/viii-main-python310-success.log",
+    "log_sha256": "98a5f7f2bf7392b1f25dbe17ff3c83eb27eb74e155e1da0e6cbf82e65e2ffac9",
+    "run_id": 39547651164,
+    "seconds": 1041.659,
+    "tests": 6557
+  },
+  "main_after_merge": "b116841f12b41aaf7600da39bbb40577f25b6295",
+  "candidate_workflows": [
+    {
+      "id": 39547651222,
+      "name": "One Object II original source cancellation and zero-shift Schur",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651222"
+    },
+    {
+      "id": 39547651196,
+      "name": "Pinned formal kernel and proposition exports",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651196"
+    },
+    {
+      "id": 39547651199,
+      "name": "Collective observer source and certificate replay",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651199"
+    },
+    {
+      "id": 39547651255,
+      "name": "Source-minimality clock carry renewal exact checks",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651255"
+    },
+    {
+      "id": 39547651172,
+      "name": "Institute theorem contracts and core Lean",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651172"
+    },
+    {
+      "id": 39547651223,
+      "name": "pi-polygon-normality-exact",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651223"
+    },
+    {
+      "id": 39547651157,
+      "name": "Bidirectional SUCC exact arithmetic cut checks",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651157"
+    },
+    {
+      "id": 39547651189,
+      "name": "Orbit clock genesis exact source checks",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651189"
+    },
+    {
+      "id": 39547651159,
+      "name": "Primitive slope kernel research",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651159"
+    },
+    {
+      "id": 39547651164,
+      "name": "Observational SUCC validation",
+      "head_sha": "134759e7106391970f12fe9d6ae8ba6650a49e56",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/39547651164"
+    }
+  ],
+  "reviewed_exclusion": {
+    "counted_as_success": false,
+    "name": "Primitive slope kernel research",
+    "observed_conclusion": "cancelled",
+    "reason": "Redundant slope-only run canceled in shared formal concurrency. The same exact nine slope declarations, sources and stricter false-mutation diagnostics passed the successful exact-head nineteen-declaration kernel workflow, including actual installed admission.",
+    "replacement_run_id": 39547651196,
+    "reviewed_by": "root integration coordinator",
+    "run_id": 39547651159
+  }
+}

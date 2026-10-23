@@ -1,0 +1,390 @@
+{
+  "captured_at_utc": "2026-10-21T05:34:49.879Z",
+  "note": "Historical post-publication snapshot. Pending and canceled runs are not counted as success. These are research draft runs, not the completed main integration gates. A later report commit may supersede the report head listed here.",
+  "drafts": [
+    {
+      "key": "exterior",
+      "sha": "8986a467b37f7cbd93c2b09d9d197d9a4024be20",
+      "pr": 220,
+      "runs": [
+        {
+          "id": 39549960068,
+          "name": "Observational SUCC validation",
+          "status": "queued",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549960068"
+        },
+        {
+          "id": 39549960059,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "pending",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549960059"
+        },
+        {
+          "id": 39549959332,
+          "name": "Exterior determinant kernel research",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549959332"
+        },
+        {
+          "id": 39549959338,
+          "name": "Pinned formal kernel and proposition exports",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549959338"
+        },
+        {
+          "id": 39549959319,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549959319"
+        },
+        {
+          "id": 39549959330,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549959330"
+        },
+        {
+          "id": 39549959311,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549959311"
+        },
+        {
+          "id": 39549960010,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "queued",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549960010"
+        },
+        {
+          "id": 39549960005,
+          "name": "Exterior determinant kernel research",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549960005"
+        },
+        {
+          "id": 39549960126,
+          "name": "Pinned formal kernel and proposition exports",
+          "status": "queued",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549960126"
+        },
+        {
+          "id": 39549960057,
+          "name": "Collective observer source and certificate replay",
+          "status": "queued",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549960057"
+        },
+        {
+          "id": 39549959300,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "in_progress",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549959300"
+        },
+        {
+          "id": 39549955286,
+          "name": "Exterior determinant kernel research",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "push",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549955286"
+        }
+      ]
+    },
+    {
+      "key": "boundary",
+      "sha": "1fee18e62db8fb573bb25c030e870a4bb16d88b3",
+      "pr": 221,
+      "runs": [
+        {
+          "id": 39549860986,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549860986"
+        },
+        {
+          "id": 39549860995,
+          "name": "Observational SUCC validation",
+          "status": "in_progress",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549860995"
+        },
+        {
+          "id": 39549860956,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549860956"
+        },
+        {
+          "id": 39549860926,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549860926"
+        }
+      ]
+    },
+    {
+      "key": "conics",
+      "sha": "951843413a49f5c82c9e214151e91d9aeeb39d0d",
+      "pr": 222,
+      "runs": [
+        {
+          "id": 39549866964,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549866964"
+        },
+        {
+          "id": 39549866930,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549866930"
+        },
+        {
+          "id": 39549866946,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549866946"
+        },
+        {
+          "id": 39549866918,
+          "name": "Observational SUCC validation",
+          "status": "in_progress",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549866918"
+        }
+      ]
+    },
+    {
+      "key": "geometry",
+      "sha": "8419735f2226e74180f64fe0c2052a1a8826e9fe",
+      "pr": 223,
+      "runs": [
+        {
+          "id": 39549872964,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549872964"
+        },
+        {
+          "id": 39549872937,
+          "name": "Observational SUCC validation",
+          "status": "in_progress",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549872937"
+        },
+        {
+          "id": 39549872938,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549872938"
+        },
+        {
+          "id": 39549872939,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549872939"
+        }
+      ]
+    },
+    {
+      "key": "clocks",
+      "sha": "abc005ffa14a6644d7a91b6ad5cc6feae97c7faa",
+      "pr": 224,
+      "runs": [
+        {
+          "id": 39549877945,
+          "name": "Observational SUCC validation",
+          "status": "queued",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549877945"
+        },
+        {
+          "id": 39549877912,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549877912"
+        },
+        {
+          "id": 39549877950,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549877950"
+        },
+        {
+          "id": 39549877917,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549877917"
+        }
+      ]
+    },
+    {
+      "key": "carrier",
+      "sha": "bc3cdad6b63403988de5c15c294d7c5cc5c1aa7e",
+      "pr": 225,
+      "runs": [
+        {
+          "id": 39549882720,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549882720"
+        },
+        {
+          "id": 39549882714,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "in_progress",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549882714"
+        },
+        {
+          "id": 39549882728,
+          "name": "Observational SUCC validation",
+          "status": "in_progress",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549882728"
+        },
+        {
+          "id": 39549882702,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549882702"
+        }
+      ]
+    },
+    {
+      "key": "pi",
+      "sha": "0c4e6982788a69cada58bf735500f3a842019da3",
+      "pr": 226,
+      "runs": [
+        {
+          "id": 39549889039,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "queued",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549889039"
+        },
+        {
+          "id": 39549889035,
+          "name": "Observational SUCC validation",
+          "status": "queued",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549889035"
+        },
+        {
+          "id": 39549889015,
+          "name": "Collective observer source and certificate replay",
+          "status": "in_progress",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549889015"
+        },
+        {
+          "id": 39549889002,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "in_progress",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39549889002"
+        }
+      ]
+    },
+    {
+      "key": "report",
+      "sha": "e52396d1ae6b8769cd356cb49a2fc851905f015a",
+      "pr": 227,
+      "runs": [
+        {
+          "id": 39550287851,
+          "name": "Observational SUCC validation",
+          "status": "queued",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39550287851"
+        },
+        {
+          "id": 39550287660,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "queued",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39550287660"
+        },
+        {
+          "id": 39550287771,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "queued",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39550287771"
+        },
+        {
+          "id": 39550287799,
+          "name": "Collective observer source and certificate replay",
+          "status": "queued",
+          "conclusion": null,
+          "event": "pull_request",
+          "url": "https://github.com/femboy2112/SUCC/actions/runs/39550287799"
+        }
+      ]
+    }
+  ]
+}
