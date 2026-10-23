@@ -310,3 +310,81 @@ selected point has a Haar-generic orbit".
 
 The same approximation-and-transport hazard applies to an x_r selected
 near π from actual polygon bounds; π's genericity itself remains OPEN.
+
+
+## TC-09. Prime coverings are NOT prime moment probes: a categorical trap
+
+There are two superficially similar but mathematically different
+"prime-generated observer languages".
+
+**Prime covering-degree measurements:**
+  F_p(X)=2-2 ChebyshevT_p(1-X/2), p a rational prime.
+Since F_p(D(z))=2-z^p-z^(-p), these probe only the circle Fourier
+frequencies ±p. They are NOT separating even among T_16-invariant
+measures arising from one actual periodic source trajectory.
+
+For r>=3, L=3^(r-1) is divisible by 9, hence NO rational prime p
+is divisible by L. Formula (7) gives μ_r_hat(p)=0 for every prime.
+Consequently, for x_r=1/3^r,
+
+  lim_(N->infinity) (1/N)sum_(j<N) F_p(D_j(x_r))=2
+                                for EVERY prime p.          (19)
+
+The right side equals Haar's mean of each F_p, yet x_r is rational,
+periodic, and emphatically nonnormal. This is a decisive no-go:
+positive prime covering degrees GENERATE all multiplicative coverings,
+but the corresponding first-moment scalar readouts are not a complete
+observable family. Algebraic generation is NOT observational
+separation.
+
+**Prime EXPONENT chord moments:** instead use the different functions
+  X^p, p a rational prime,
+on the chord coordinate X in [0,4]. The classical Müntz–Szász theorem
+states that span{1,X^p: p prime} is dense in C[0,4] exactly because
+Euler's classical sum of prime reciprocals diverges:
+  sum_(p prime) 1/p = infinity.
+
+Therefore, for a fixed circle point x and integer base b>=2,
+
+  x is normal in base b
+    iff for EVERY prime p,
+       lim_(N->infinity) (1/N)sum_(j<N)D_j(x)^p
+                                      =binom(2p,p).         (20)
+
+Proof: normality immediately implies the moment limits. Conversely,
+every subsequential empirical limit has chord pushforward with the
+same integrals as Haar against 1 and X^p, every prime p. Density
+forces the entire pushed-forward measure to equal the arcsine law.
+The reflected-symmetrization, absolute-continuity and expanding-covering
+Fourier rigidity argument of parent CC-03 then forces the original
+limit to be Haar; hence x is normal.
+
+Equation (20) is an EQUIVALENT CRITERION, not a π proof. Its point is
+that the *irreducible exponent* family is a genuinely separating
+observer toolkit, whereas the superficially more natural *irreducible
+covering-degree* family is not. The criterion imports classical
+Müntz–Szász and Euler, not a new approximation theorem.
+
+A concrete hostile control at base 16 and source x=1/27:
+all prime-degree F_p means are exactly 2, but the prime EXPONENT p=11
+reveals the source:
+  Haar H_11=binom(22,11)=705432,
+  periodic moment_(11)=705663=H_11+231.
+These values are exact integer oracle checks.
+
+A second restriction: prime-square exponents p^2 have convergent
+reciprocal sum, so Müntz–Szász says their span is NOT dense in
+C[0,4]. This means that family cannot separate *all arbitrary*
+probability measures by moments. It does not automatically construct
+a counterexample restricted to T_b-invariant measures or disprove a
+π-specific theorem. All status qualifiers must remain attached.
+
+Primary classical reference for the precise density theorem:
+T. Erdélyi, Studia Mathematica 155 (2003), 145-152,
+https://www.impan.pl/en/publishing-house/journals-and-series/studia-mathematica/all/en/publishing-house/journals-and-series/studia-mathematica/all/155/2/90299/the-8220-full-clarkson-8211-erdos-8211-schwartz-theorem-8221-on-the-closure-of-non-dense-muntz-spaces
+Euler prime reciprocal divergence is classical:
+https://math.hmc.edu/funfacts/sum-of-prime-reciprocals/
+
+**Proof boundary:** (19) REFUTES prime-covering first-moment
+completeness. (20) is PROVED CLASSICAL CONDITIONAL NORMALITY
+EQUIVALENCE. No π-source orbit estimate in (20) has been proved.

@@ -80,6 +80,21 @@ class TimeCarryExact(unittest.TestCase):
             self.assertLessEqual(err,Q(1,2*L)+(hi-lo)/2)
             self.assertLess(err*16**(N-1),Q(1,100))
             self.assertEqual(periodic_fejer_energy(r,L-1),1)
+
+    def test_prime_covering_probes_do_not_equal_prime_moment_probes(self):
+        # All prime covering degrees, even infinitely many, are non-separating:
+        # one actual 16-periodic 1/27 orbit returns Haar mean 2 for F_p.
+        # Prime EXPONENT moment probes are a different family.
+        for p in (2,3,5,7,11,13,17,19,29):
+            polynomial=covering(p)
+            value=sum(c*periodic_moment(3,j)
+                      for j,c in enumerate(polynomial))
+            self.assertEqual(value,2)
+        self.assertEqual(periodic_moment(3,11),
+                         math.comb(22,11)+231)
+        self.assertNotEqual(periodic_moment(3,11),
+                            math.comb(22,11))
+
     def test_negative_mutations_and_source_refusal(self):
         self.assertNotEqual(haar_joint(16,(0,1),(16,1)),
                             2*math.comb(32,16))
