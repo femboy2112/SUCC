@@ -1,0 +1,38 @@
+name: Circle chord-Kummer collision exact research
+on:
+  push:
+    branches:
+      - research/circle-chord-kummer-collision-moonshot-2026-10-23
+  pull_request:
+    paths:
+      - "observational_succ/circle_collision_rigidity.py"
+      - "tests/test_circle_collision_rigidity.py"
+      - "scripts/circle_collision_probe.py"
+      - "research/2026-10-23/CIRCLE_CHORD_*"
+      - ".github/workflows/circle-chord-collision.yml"
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install source package and tests
+        run: python -m pip install -e '.[test]'
+      - name: Compile exact source, test and replay modules
+        run: python -Werror -m py_compile observational_succ/circle_collision_rigidity.py tests/test_circle_collision_rigidity.py scripts/circle_collision_probe.py
+      - name: Independent exact and hostile circle controls
+        run: python -m unittest discover -s tests -p 'test_circle_collision_rigidity.py' -v
+      - name: Source-only finite pi certificates and pinned blob replay
+        run: python scripts/circle_collision_probe.py --check
+      - name: Original imported source provenance and observer guard
+        run: |
+          python scripts/verify_provenance.py
+          python scripts/observer_foundations_probe.py
