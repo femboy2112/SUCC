@@ -98,7 +98,7 @@ def rational_cyclotomic_group_ring_moment(p: int,h: int=1) -> dict:
         block=[w[b*L+s] for b in range(B)]
         for phase_i in block:
             for phase_j in block:
-                k=(phase_i-phase_j)%1
+                k=(h*(phase_i-phase_j))%1
                 right[k]=right.get(k,0)+p
     left={k:v for k,v in left.items() if v}
     right={k:v for k,v in right.items() if v}

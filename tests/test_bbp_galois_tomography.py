@@ -104,7 +104,7 @@ class SelectedEmbeddingControls(unittest.TestCase):
             self.assertGreater(data["exceptional_amplification_lower"],
                                Q(data["L"],2))
             self.assertEqual(data["Delta"],3*(p-1)//8)
-            self.assertNotEqual(data["phase"].denominator%p,0)  # full phase retains p-primary
+            self.assertEqual(data["phase"].denominator%p,0)  # full phase retains p-primary
             self.assertNotEqual(data["denominator"]%p,0)  # complement Q is p-free
         with self.assertRaises(ValueError):
             prime_free_single_rule_counterexample(17,-1)
