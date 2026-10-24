@@ -1,5 +1,7 @@
 # Research claim ledger
 
+The additive [rational-base source supplement RBP-01--21](CLAIM_SUPPLEMENT_RATIONAL_BASE_PI.md) distinguishes classical p/q integer digit arithmetic, an 11-adic suffix observer of authentic BBP integer lifts, the inherited signed-Pascal exponential decimal source, finite exact Machin and selected pair-carry probes, and a source-agnostic **REFUTED** transfer from all-depth digit fairness to π normality. Details: [rational-base research synthesis](../research/2026-10-24/PI_RATIONAL_BASE_BBP_SYNTHESIS.md) and [validation](../research/2026-10-24/PI_RATIONAL_BASE_VALIDATION.md). The original BBP real conditional loss, signed Fourier cancellation and π normality remain OPEN.
+
 **2026-10-24 weighted ternary Pascal continuation (research draft):**
 [TPG-01--28](CLAIM_SUPPLEMENT_TERNARY_PASCAL.md) and
 [research synthesis](../research/2026-10-24/PI_TERNARY_SYNTHESIS.md).

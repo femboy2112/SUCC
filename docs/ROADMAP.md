@@ -1,5 +1,7 @@
 # Research roadmap
 
+**2026-10-24 rational-base carry and actual BBP decimal-source continuation.** [Paper](../research/2026-10-24/PI_RATIONAL_BASE_BBP_SYNTHESIS.md) and [RBP-01--21](CLAIM_SUPPLEMENT_RATIONAL_BASE_PI.md) now give exact p/q canonical digit carry and Pascal sums, 11-adic suffix reconstruction of original BBP literal integer lifts, mod-11^L homogeneous clock periods, exponentially accurate signed base-11→decimal Pascal source, and finite source-selected p=11 carry/frequency calibrations. The nonnormal Bernoulli counterexample blocks any inference from marginal 11/10 suffix uniformity. **Next arithmetic target:** a source-specific signed mixed real/11-adic Fourier or real centered-carry loss estimate across required scales; do not replace it with a marginal residue clock, positive averaging or ensemble normality.
+
 **2026-10-24 weighted ternary Pascal continuation (research draft):**
 [TPG-01--28](CLAIM_SUPPLEMENT_TERNARY_PASCAL.md) and
 [research synthesis](../research/2026-10-24/PI_TERNARY_SYNTHESIS.md).

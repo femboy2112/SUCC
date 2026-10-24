@@ -1,5 +1,7 @@
 # Claim Index
 
+**2026-10-24 rational-base 3/2 ↔ 11/10 → decimal source:** [RBP-01--21](CLAIM_SUPPLEMENT_RATIONAL_BASE_PI.md) and [proof/normality frontier](../research/2026-10-24/PI_RATIONAL_BASE_BBP_SYNTHESIS.md). Classical rational-base integer expansions give an exact p-adic suffix bijection; the authentic BBP literal integer lift supplies the 11-adic carry history. Signed Pascal differences of the base-11 source approximate the decimal π orbit exponentially. Perfect 11/10 suffix uniformity does not imply real normality (proved nonnormal countermodel). Actual source-selected real 1/16 retention and π normality remain OPEN; no new Lean authority.
+
 **2026-10-24 weighted ternary Pascal continuation (research draft):**
 [TPG-01--28](CLAIM_SUPPLEMENT_TERNARY_PASCAL.md) and
 [research synthesis](../research/2026-10-24/PI_TERNARY_SYNTHESIS.md).
