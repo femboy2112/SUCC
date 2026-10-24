@@ -179,21 +179,89 @@ Evaluated as transducers (input → output → ceiling):
 - **Formal assistants as epistemic shift** — moves trust from prose to kernel.
   Ceiling: only for what is formalised.
 
-## 12. Is there a general theory?
+## 12. There IS a general theory: FieldClass, and fidelity as the organising test
 
-**Honest answer: not a strong one.** There is no theorem that says "mechanism X
-applies to problem Y". What exists, and is worth having, is a **discipline**:
+**Correction to an earlier version of this document.** A first draft of this
+section claimed "there is no strong general theory; it is a routing table".
+That was false, and false in a diagnosable way: it inferred a claim about
+*theory* from an inventory of *techniques*. Counting tricks cannot settle
+whether a theory exists — the same error as proving non-normality from a finite
+prefix. The repository already contains the theory. This section states it.
 
-> **Every reduction must state its own failure mode.**
+### 12.1 The observer category
 
-That single sentence subsumes M1–M10. A conditional criterion that does not name
-what could make its premise false is not a criterion, it is a hope. A
-countermodel that does not state its membership proof is not a refutation. A
-sharpened constant that does not state the threshold distance is decoration. A
-kernel check that does not name the paper gap is a liability.
+`docs/FOUNDATIONS.md` §1 fixes five levels — physical carrier, causal record,
+semantic representation, mathematical structure, global report — and asks the
+governing question:
 
-The taxonomy in §0 is real: mechanisms do sort by *what they consume* and *what
-they can never do*. But it is a **routing table**, not a theory.
+> **Which morphisms between these levels are faithful, causal, regular,
+> computable and justified?**
+
+The SUCC arrow `O_n → O_{n+1}` (append a *realized* event, §2) is the canonical
+arrow. Everything in §0 is a *derived* arrow inside this category.
+
+### 12.2 FieldClass is the theory, and it is executable
+
+`docs/OBSERVER_PROOF_ACCESS.md` + `observational_succ/field_limit_compactness.py:
+source_dependent_field_frontier` define a field label as a property of a
+triple, never intrinsic to an object:
+
+```
+FieldClass(Source, Target, Tools)
+```
+
+| class | meaning | proof obligation |
+|---|---|---|
+| **SimpleField** | verified finite program supplies the interface | program + lawfulness |
+| **IdealHardField** | provable existence, no computable witness | existence + *non-existence of a selector* |
+| **FuckedField** | proved impossibility / nonidentifiable fiber | the impossibility itself |
+| **Unresolved** | toolkit-relative dark | **nothing** — explicitly not a theorem |
+
+The fourth class is the discipline that the failed draft lacked. "Cannot prove
+within this toolkit" is categorically different from "impossible", and the code
+enforces the distinction (`"unresolved_observer_ambiguity":
+"TOOLKIT_RELATIVE_DARK_NOT_PROVED_ABSOLUTE_IMPOSSIBILITY"`).
+
+### 12.3 The single criterion, and why the ten mechanisms are instances
+
+> **Fidelity criterion.** A reduction is a morphism between observation
+> stages. It is *faithful* iff its failure mode is observable at the target
+> stage. An unobservable failure is a lossy quotient masquerading as an
+> equivalence.
+
+"Every reduction must state its own failure mode" is not an independent
+principle; it is a consequence of this criterion. In the observer language each
+mechanism is a specific fidelity test:
+
+| mechanism | what it actually is |
+|---|---|
+| M1 conditional criterion | a map whose *fidelity* is the unproved part |
+| M2 countermodel | a witness that a quotient is **non-faithful** |
+| M3 noncommuting limits | proof that two **orders of observation** are non-equivalent |
+| M4 cohomological obstruction | an invariant of the observer's **action algebra** |
+| M5 soundness by refusal | an observer correctly reporting its **own blindness** |
+| M6 orthogonal channels | factoring **information** into independent channels |
+| M7/M8 | quantifying how much the **finite resolution** is short |
+| M9 two instruments | two observers comparing notes |
+| M10 kernel check | delegating **fidelity-checking** to a machine |
+
+### 12.4 The transient criterion (a genuinely predictive theorem-shape)
+
+This is the criterion that should have killed the BBP four-pole lane before any
+computation, and it generalises:
+
+> **Transient criterion.** If the structural feature a proof uses is annihilated
+> by one application of the dynamics, it lives on the *transient* and cannot
+> control the *recurrent* statistics.
+
+In the four-pole lane: every pole residue satisfies `16·a_j ≡ 0`, so the poles
+die in one step, and their total orbital mass `Ŝ = 15/16` is transient mass, not
+an oscillating mode. The α = 1/3 exact countermodel then confirms that the
+lossy map admits a non-normal preimage. The lane fails the fidelity test
+*structurally*, in one line.
+
+This is a **routing rule with predictive content**, which is what a theory is
+supposed to supply and what the failed draft denied having.
 
 ## 13. Ranked for a CYC-03-shaped problem
 

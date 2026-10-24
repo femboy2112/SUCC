@@ -134,13 +134,20 @@ def threshold_report(predicate, lo, hi, available, direction=">",
 # --------------------------------------------------------------------- M1
 @dataclass(frozen=True)
 class CriterionAudit:
-    """Shape audit of a conditional criterion `Target <= Premise`."""
+    """Shape audit of a conditional criterion `Target <= Premise`.
+
+    The verdict order encodes the observer-category fidelity test
+    (docs/PROOF_MECHANISMS.md section 12): a reduction is faithful iff its
+    failure mode is observable at the target stage.
+    """
 
     target: str
     premise: str
     generic_in_x: bool
     premise_equivalent_to_target: bool
     falsifier_named: bool
+    failure_observable_at_target: bool = True
+    structural_feature_killed_in_one_step: bool = False
 
     @property
     def verdict(self) -> str:
@@ -148,10 +155,17 @@ class CriterionAudit:
             return "TAUTOLOGY: premise is equivalent to target; no relocation"
         if not self.falsifier_named:
             return "HOLLOW: no stated way the premise could be false"
+        if self.structural_feature_killed_in_one_step:
+            return ("TRANSIENT: the feature used is annihilated by one step of "
+                    "the dynamics, so it cannot control recurrent statistics")
+        if not self.failure_observable_at_target:
+            return ("NON_FAITHFUL: the failure mode is invisible at the target "
+                    "stage; the reduction is a lossy quotient posing as an "
+                    "equivalence")
         if self.generic_in_x:
             return ("GENERIC: criterion holds for every source; cannot "
                     "discriminate the target from a generic one")
-        return "OK: criterion is specific and falsifiable"
+        return "OK: criterion is specific, falsifiable and faithful"
 
     def report(self) -> str:
         return (f"[M1] target={self.target!r}\n"
@@ -161,16 +175,25 @@ class CriterionAudit:
 
 def criterion_audit(target: str, premise: str, generic_in_x: bool,
                     premise_equivalent_to_target: bool,
-                    falsifier_named: bool) -> CriterionAudit:
+                    falsifier_named: bool,
+                    failure_observable_at_target: bool = True,
+                    structural_feature_killed_in_one_step: bool = False,
+                    ) -> CriterionAudit:
     for name, v in (("generic_in_x", generic_in_x),
                     ("premise_equivalent_to_target", premise_equivalent_to_target),
-                    ("falsifier_named", falsifier_named)):
+                    ("falsifier_named", falsifier_named),
+                    ("failure_observable_at_target", failure_observable_at_target),
+                    ("structural_feature_killed_in_one_step",
+                     structural_feature_killed_in_one_step)):
         if type(v) is not bool:
             raise MechanismError(f"{name} must be a bool")
     return CriterionAudit(target=target, premise=premise,
                           generic_in_x=generic_in_x,
                           premise_equivalent_to_target=premise_equivalent_to_target,
-                          falsifier_named=falsifier_named)
+                          falsifier_named=falsifier_named,
+                          failure_observable_at_target=failure_observable_at_target,
+                          structural_feature_killed_in_one_step=(
+                              structural_feature_killed_in_one_step))
 
 
 __all__ = ["MechanismError", "Countermodel", "exact_countermodel",

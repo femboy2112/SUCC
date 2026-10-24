@@ -87,6 +87,31 @@ class TestCriterionAudit(unittest.TestCase):
                             falsifier_named=True)
         self.assertTrue(a.verdict.startswith("OK"))
 
+    def test_flags_transient_feature(self):
+        # the four-pole lesson: a feature killed by one step of the dynamics
+        # cannot control recurrent statistics
+        a = criterion_audit("pi normal base 16", "pole structure controls carry sum",
+                            generic_in_x=False,
+                            premise_equivalent_to_target=False,
+                            falsifier_named=True,
+                            structural_feature_killed_in_one_step=True)
+        self.assertIn("TRANSIENT", a.verdict)
+
+    def test_flags_non_faithful(self):
+        a = criterion_audit("t", "p", generic_in_x=False,
+                            premise_equivalent_to_target=False,
+                            falsifier_named=True,
+                            failure_observable_at_target=False)
+        self.assertIn("NON_FAITHFUL", a.verdict)
+
+    def test_faithful_specific_is_ok(self):
+        a = criterion_audit("t", "p", generic_in_x=False,
+                            premise_equivalent_to_target=False,
+                            falsifier_named=True,
+                            failure_observable_at_target=True)
+        self.assertTrue(a.verdict.startswith("OK"))
+
+
 
 if __name__ == "__main__":
     unittest.main()
