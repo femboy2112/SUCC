@@ -172,3 +172,36 @@ def false_deepseek_cost_bound_witness() -> dict:
     return {"source":"delta_{1/8}", "R":3,"d15_over_sqrt2":a,
             "d255_over_sqrt2":b,"lhs_over_sqrt2":Q(2*(2*a+b),9),
             "claimed_upper":Q(4,3), "refuted_by":"sqrt(2)>1"}
+
+
+def high_order_rational_forcing(n: int, order: int) -> Q:
+    """Positive rational source with arbitrarily high algebraic tail decay.
+
+    R_k(n)=k!/[n(n+1)...(n+k)]. It has a nonzero rational-coboundary
+    residue invariant but decays as n^(-k-1); it is NOT a BBP source.
+    """
+    from math import factorial
+    _natural(n,1);_natural(order,1)
+    denominator=1
+    for j in range(order+1):
+        denominator*=n+j
+    return Q(factorial(order),denominator)
+
+
+def high_order_partial_fractions(n: int, order: int) -> Q:
+    """Independent alternating pole expansion of the rational source."""
+    from math import comb
+    _natural(n,1);_natural(order,1)
+    return sum((Q((-1)**j * comb(order,j),n+j)
+                for j in range(order+1)),Q())
+
+
+def high_order_pole_invariant(order: int, base: int=16) -> int:
+    """Unique pole-residue class modulo Z has invariant (1-base)^order.
+
+    Pole n=-j carries residue (-1)^j*C(k,j), and weighted shift index
+    -j contributes base^(+j), so the exact weighted binomial sum is
+    sum_j C(k,j)*(-base)^j=(1-base)^k, not zero.
+    """
+    _natural(order,1);_natural(base,2)
+    return (1-base)**order
