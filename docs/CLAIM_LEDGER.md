@@ -1,5 +1,15 @@
 # Research claim ledger
 
+The additive [Joint Prime Carrier supplement JPC-01--22](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md)
+records a source-faithful full odd-prime character product, the nontrivial
+dyadic integral source, prime-power pole activation and CRT independence,
+exceptional 3/5 numerator-Hensel roots, shared multiplier-16 memory clocks,
+finite-adelic continuity and Haar-completion obstructions, exact six-point
+observer synergy, product-of-marginals failure, and an O_h(1/N) source-to-pi
+Fourier transfer. [Paper proof dossier](../research/2026-10-24/PI_JOINT_CARRIER_INTERFEROMETRY.md).
+The synchronized selected joint Fourier sum still needs an arithmetic saving;
+**pi normality remains OPEN**. Paper/external/finite/Lean authority separate.
+
 The additive [Pascal/Lucas quotient supplement PLQ-01--14](CLAIM_SUPPLEMENT_PASCAL_LUCAS_QUOTIENT.md)
 proves an exact Boolean-incidence/binomial-transform quotient, prime-p Lucas
 tensors, nontrivial positional kernel, explicit additive/successor obstructions,

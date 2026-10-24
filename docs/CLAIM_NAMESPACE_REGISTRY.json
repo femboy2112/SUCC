@@ -14,6 +14,23 @@
   },
   "namespaces": [
     {
+      "namespace": "PI_JOINT_PRIME_CARRIER",
+      "bare_prefix": "JPC",
+      "fq_prefix": "JPC",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md"
+      ],
+      "id_count": 22,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/VERIFIED FINITE/REFUTED/UNVERIFIED); pi normality OPEN; no new Lean authority",
+      "topic": "authentic BBP odd-denominator source and dyadic clock, full synchronized prime torsion phases, prime-power pole CRT laws, p3/5 Hensel exceptions, finite-adelic completion obstruction, full-factorial synergy, quantified pi Fourier bridge",
+      "code": [
+        "observational_succ/pi_joint_prime_carrier.py",
+        "tests/test_pi_joint_prime_carrier.py",
+        "tests/test_pi_joint_pole_clocks.py",
+        "scripts/pi_joint_prime_carrier_probe.py"
+      ]
+    },
+    {
       "namespace": "PI_PASCAL_LUCAS_QUOTIENT",
       "bare_prefix": "PLQ",
       "fq_prefix": "PLQ",

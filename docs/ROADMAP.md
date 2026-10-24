@@ -1,5 +1,19 @@
 # Research roadmap
 
+**2026-10-24 Joint Carrier moonshot (research draft).**
+The [all-prime source dossier](../research/2026-10-24/PI_JOINT_CARRIER_INTERFEROMETRY.md)
+reconstructs each rational BBP circle phase from a finite moving family of odd
+prime-primary characters without losing the full dyadic source clock or signed
+Pascal differences. Four pole classes per p^k for p>=7 factor over complete
+CRT periods; p3/p5 require special Hensel numerator/pole resolution and source
+memory couples clocks through ord_(p^k)(16). Independent Haar-profinite
+completion almost surely fails to be a finite adele, and no globally
+continuous finite-adelic source completion exists. A six-state CRT model
+proves joint-gate informational synergy; authenticated Fourier cancellation
+and genuine real 1/16 retention are NOT proved. Next: an exact source-selected
+mixed signed-character saving with integral carry and time-alignment controls.
+[JPC-01--22](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md).
+
 **2026-10-24 Pascal/Lucas quotient, prime-base operator continuation.**
 The [research dossier](../research/2026-10-24/PI_PASCAL_LUCAS_QUOTIENT.md)
 proves the Boolean-zeta/binomial rank quotient and explicitly retains its
