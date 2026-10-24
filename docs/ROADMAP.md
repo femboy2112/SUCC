@@ -10,6 +10,16 @@ strictly improves an existing directional inverse bound after all errors.
 The log-atom map alone does not provide that family. Original S4 and RH remain
 open; physical access and named passive cyclicity are separate questions.
 
+**2026-10-24 coherent-main integration.** The π source / circle / prime-clock frontier is
+consolidated into `main`. Corrected source fidelity (the "BBP four-pole lane closed" verdict is
+**withdrawn** — see [the repair dossier](../research/2026-10-24/BBP_SOURCE_MEMORY_REPAIR.md) and the
+[corrected audit](../research/2026-10-23/CYC03_LANE_CLOSED.md)); the SCE regret↔normality equivalence
+(a restatement, **not** a new proof step); two **independent** BBP minimal-path families (gauge /
+births) reconciled by a claim-ID crosswalk; and exact finite collision/entropy receipts. The decisive
+open edge is the selected-source collision estimate `K_p(1)=p^{o(1)}` at `c=2/5` (SCE-07) — a
+prescribed-scale sufficient condition for base-16 (hence base-2) π normality, still **unverified**.
+π normality, its independence, RH and absolute/decimal normality remain **OPEN**.
+
 **Current Academic Main VII frontier:** see
 [the scoped research map](academic_main_vii/research_frontier.md).
 The primitive abc weighted moment and Euler-product mean are paper-proved for

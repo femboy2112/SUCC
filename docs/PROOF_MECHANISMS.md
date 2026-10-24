@@ -13,9 +13,18 @@
 > source/action/readout commuting diagram before deriving a no-go.
 > Categorical *faithfulness* (injective on hom-sets), source
 > preservation, target-relative sufficiency and experimental
-> failure observability are distinct. Sections discussing
-> "the BBP pole lane closed" are superseded by
-> [the BBP source-repair dossier](../research/2026-10-24/BBP_SOURCE_MEMORY_REPAIR.md).
+> failure observability are distinct. The former "BBP four-pole lane CLOSED"
+> verdict is **WITHDRAWN**: see
+> [the BBP source-repair dossier](../research/2026-10-24/BBP_SOURCE_MEMORY_REPAIR.md)
+> and the [corrected four-pole audit](../research/2026-10-23/CYC03_LANE_CLOSED.md)
+> (the filename retains "CLOSED" for link stability; its *content* is the
+> corrected, withdrawn-verdict audit, R1–R8). Concretely: `α = 1/3` does **not**
+> share the authenticated BBP source (it changes the initial state `y₀`);
+> `r(n)=16^{-n}` **is** a coboundary (a non-coboundary only inside the narrower
+> rational-function class); and an equivalent reformulation earns **no proof
+> credit** but is not therefore worthless. The current entries below have been
+> corrected to match; the former claims are preserved in the historical reports
+> (`CYC03_LANE_CLOSED_HISTORICAL.md`, `CYC03_BBP_FOUR_POLE_LANE.md`).
 
 
 **Date:** 2026-10-23. **Status:** methodology. Not a claim about any open problem.
@@ -49,14 +58,20 @@ Each entry: **form · produces · hypotheses · ceiling · instance**.
 **Form.** Exhibit `Target ⟸ Premise` where Premise is a checkable property of an
 explicit family; prove the implication; then declare the residual gap.
 **Produces.** A theorem plus a *named* open obligation.
-**Hypotheses.** (a) implication proved, not observed; (b) Premise not equivalent
-to Target (else tautology); (c) Premise not trivially stronger (else vacuous).
-**Ceiling.** Cannot prove Premise. Cannot detect that Premise ≡ Target without a
-separate argument.
+**Hypotheses.** (a) implication proved, not observed; (b) if Premise is equivalent
+to Target the criterion earns **no proof credit** — it is a restatement, not a
+step — yet an equivalent restatement can still be *useful* as a representation: it
+may expose a source-specific estimate that is easier to prove, give a finite/rate
+form, or make counterexamples checkable; (c) a Premise trivially stronger than
+Target is vacuous.
+**Ceiling.** Cannot prove Premise. Cannot, by itself, detect that Premise ≡ Target
+— that needs a separate argument. Equivalence is a *no-credit* flag, not a dead end.
 **Instance.** CYC-01′: normality ⟸ carry-sum → 0, where the carry sum is
-observable. The value is that it *relocates* the open content to a place where
-one can at least measure. The danger is exactly the trap this repo fell into:
-a criterion that is generic (holds for every x) cannot discriminate π.
+observable. The value is that it *relocates* the open content to a place where one
+can at least measure. The caveat learned the hard way: a criterion that holds
+*generically* (for every x) does not **by itself** discriminate π — but
+source-specific verification of its premise can still yield a targeted result (see
+the corrigendum).
 
 ## 2. M2 — Exact countermodel as the theorem
 
@@ -68,11 +83,15 @@ interesting one; the failure must be exact, not floating.
 **Ceiling.** Never positive. Says nothing about the *size* of the failure set —
 "one countermodel refutes a universal, not a generic".
 **Instances (this repo).** `h = P₅(2t) − P₃(2t)`: `‖h′‖² = 36` but
-`‖(Q₄h)′‖² = 60` — L² projection is *not* derivative-contractive. And the
-decisive one from this round: **α = 1/3 shares the BBP forcing, poles, residues
-and invariants with π, yet its carry sum diverges to 3/2.** A countermodel
-sharing every structural feature of the target is the strongest kind — it
-proves the feature is *irrelevant*.
+`‖(Q₄h)′‖² = 60` — L² projection is *not* derivative-contractive. And a
+cautionary one from the four-pole round: `α = 1/3` was offered as a countermodel
+"sharing every structural feature of π". It does **not**: it keeps the forcing
+`r(n)` but changes the initial state `y₀` from `0` to `1/3` (so `y₁ = 7/15`, not
+the authentic `2/15`), and the authentic source carries a unique bounded backward
+tail `t₀ = π/16`. So `1/3` is a *generic* `T₁₆` circle-dynamics negative control,
+**not** a member of the authenticated BBP source, and cannot prove a shared
+feature "irrelevant". See the corrected audit
+`research/2026-10-23/CYC03_LANE_CLOSED.md` (R2).
 
 ## 3. M3 — Noncommuting-limits diagnostic
 
@@ -95,17 +114,22 @@ it is the single most useful diagnostic in the repository.
 has a solution in a declared class. Solve exactly; the weighted invariant
 `Σ_j b^{−j} c_j` per residue is complete for the rational class.
 **Produces.** Exact non-existence of a telescoping witness.
-**Ceiling.** **Silent on rates.** This round proved it: `r(n) = 16^{−n}` is a
-non-coboundary with *geometric* decay. So "invariant ≠ 0" never implies "no
-cancellation". Record this — it is the most tempting false inference in the
-whole lane.
+**Ceiling.** **Silent on rates, and class-relative.** A nonzero weighted invariant
+`Σ_j b^{−j} c_j ≠ 0` excludes a coboundary only *inside the declared class*. The
+tempting false inference, now corrected: `r(n) = 16^{−n}` is **not** a counterexample
+— it *is* an exact coboundary, `r(n) = 16·q(n−1) − q(n)` with `q(n) = 16^{−n}/255`;
+it is a non-coboundary only within the narrower rational-function-in-`n` class.
+Illustrate the genuine obstruction with `r_K(n) = K!/[n(n+1)…(n+K)]`, whose rational
+pole invariant `(1−16)^K ≠ 0` while its tail decays at arbitrarily high polynomial
+order — *that* is the content of "silent on rates". (See `CYC03_LANE_CLOSED.md` R4.)
 
 ## 5. M5 — Soundness by refusal
 
 **Form.** Design a bound that provably *fails to conclude* on a known
 counterexample, so its silence is trustworthy.
 **Produces.** A bound whose non-conclusion is informative.
-**Hypotheses.** You must exhibit the refusal on a real counterexample (x = 1/3).
+**Hypotheses.** You must exhibit the refusal on an explicit negative control
+(`x = 1/3`, a generic non-BBP-source orbit — not a member of the authenticated source).
 **Ceiling.** Soundness is cheap; strength is not. A bound can refuse everything.
 **Instance, with correction.** CYC-01 refuses x = 1/3 — but **not** via the
 mechanism the report claims. Live measurement: `η_N = max(0, 2c₁) = 0` because
@@ -172,8 +196,8 @@ Evaluated as transducers (input → output → ceiling):
   from arithmetic. **Ceiling:** needs the phase to have bounded derivatives;
   `b^j x` mod 1 is not smooth in `j`.
 - **Large sieve / amplification** — consumes many frequencies at once, emits a
-  bound for *most* of them. **Ceiling:** "most" is useless for one orbit; this is
-  precisely why it cannot touch π.
+  bound for *most* of them. **Ceiling:** "most" does not pin a single orbit; without
+  a source-specific amplifier it does not by itself reach π.
 - **Entropy compression (Moser–Tardos)** — emits existence of an object with a
   local-violation bound. **Ceiling:** pure existence; no rate, no specific orbit.
 - **Polynomial method / slice rank** — consumes algebraic structure (tensors).
@@ -263,23 +287,29 @@ mechanism is a specific fidelity test:
 | M9 two instruments | two observers comparing notes |
 | M10 kernel check | delegating **fidelity-checking** to a machine |
 
-### 12.4 The transient criterion (a genuinely predictive theorem-shape)
+### 12.4 The transient criterion (a predictive theorem-shape — and how it was misapplied)
 
-This is the criterion that should have killed the BBP four-pole lane before any
-computation, and it generalises:
+The following rule has predictive content, **but only once an authenticated
+source/action/readout commuting diagram is in place** — and the BBP four-pole lane
+is the cautionary case where it was applied *without* one:
 
-> **Transient criterion.** If the structural feature a proof uses is annihilated
-> by one application of the dynamics, it lives on the *transient* and cannot
-> control the *recurrent* statistics.
+> **Transient criterion.** If a structural feature a proof uses is annihilated by
+> one application of the dynamics *in a faithful pushforward*, it lives on the
+> *transient* and cannot control the *recurrent* statistics.
 
-In the four-pole lane: every pole residue satisfies `16·a_j ≡ 0`, so the poles
-die in one step, and their total orbital mass `Ŝ = 15/16` is transient mass, not
-an oscillating mode. The α = 1/3 exact countermodel then confirms that the
-lossy map admits a non-normal preimage. The lane fails the fidelity test
-*structurally*, in one line.
+The former round read this as a one-line kill of the four-pole lane. That reading
+is **withdrawn**. The pole residues live in the forcing *index* variable, not in
+`T₁₆` state space, so the "poles die in one step" pushforward is **not faithful**:
+the pole measure's pushforward is `0`, but its Stieltjes readout is `r(n) ≠ 0`, and
+the source Green/Hausdorff kernel is positive with infinite Hankel rank
+(`m₀ = 0`, `m₁ = 15/64`) — the residues are *not* invisible. The `α = 1/3`
+"countermodel" does not repair this: it is a generic non-source orbit (see M2).
+The lesson is the opposite of a success: the criterion is sound, but applying it
+across a **non-faithful** quotient is exactly the fidelity error this corrigendum
+warns against. See `research/2026-10-23/CYC03_LANE_CLOSED.md` (R1–R3).
 
-This is a **routing rule with predictive content**, which is what a theory is
-supposed to supply and what the failed draft denied having.
+The rule is still a **routing rule with predictive content** — which is what a
+theory supplies — provided its faithfulness hypothesis is discharged first.
 
 ## 13. Ranked for a CYC-03-shaped problem
 
@@ -288,8 +318,9 @@ supposed to supply and what the failed draft denied having.
    CYC-03 needs uniformity over `d < R_N` at fixed `N`; the natural proofs give
    the reverse. This diagnostic costs a day and can save a campaign.
 2. **M8 (threshold arithmetic) + M9 (calibration)** as a *gate*: compute the
-   exact flip value and the exact available value before writing any prose. If
-   the ratio is > 100, do not write the paper; the lane needs a different shape.
+   exact flip value and the exact available value before writing any prose. A
+   large ratio (say > 100) *localises* how far short the lane is — treat it as a
+   quantitative obstruction to clear, not as proof the lane is dead.
 3. **Transference** (unused here): build a dense model for the *carry-cost
    functional*. Genuinely untried, and structurally different from everything
    closed so far.
@@ -298,8 +329,9 @@ supposed to supply and what the failed draft denied having.
 
 1. **A routing skill** (`proof-mechanism-router`): given a problem statement,
    classify its input type, list which mechanisms can consume it, and print each
-   one's ceiling. Cheap to build, prevents the failure mode that cost this repo
-   the four-pole lane.
+   one's ceiling. Cheap to build, and it guards against the fidelity error that
+   derailed the four-pole round (applying a transient-mass rule across a
+   non-faithful quotient).
 2. **A mechanism-receipt test pattern**: every research module ships
    `MECHANISM`, `CEILING`, `THRESHOLD` and `FAILS_ON` fields.
 3. **A conditional-criterion doc template**: `Target ⟸ Premise` with mandatory

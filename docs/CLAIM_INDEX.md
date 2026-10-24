@@ -219,14 +219,39 @@ separate #177 continuation.
 
 [Integration audit](academic_main_viii/integration_audit.md) and [frontier](academic_main_viii/research_frontier.md). Existing ABC-EFF-01–05 remain paper-level theorems. [COF-01, EXT-01–04, SMP-01–02](CLAIM_SUPPLEMENT_EXTERIOR_ASCENT.md) and [POL-01–09](CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md) now have registered namespaces; the counterclaims retain REFUTED or UNVERIFIED status. Formal slope declarations receive only the authority supported by the actual pinned admission receipt.
 
-## π source collision research (2026-10-24, draft)
+## π source / circle / prime-clock frontier (2026-10-24, draft)
 
-[SCE-01–10](CLAIM_SUPPLEMENT_PI_SOURCE_COLLISION.md) connect the authentic BBP
-source to carry-safe cell collisions, finite entropy bounds, full-source Galois
-averages, and a conditional binary-normality theorem. Positive Poisson regret is
-proved equivalent to normality; the actual selected-source subpower collision
-estimate remains unverified. No new Lean or π-independence authority is claimed.
-The [research dossier](../research/2026-10-24/PI_SOURCE_COLLISION_ENTROPY.md)
-and separate [Claude integration](../handoffs/CLAUDE_COHERENT_MAIN_AND_CLEANUP_2026-10-24.md)
-and [Codex research](../handoffs/CODEX_PI_SOURCE_COLLISION_NEXT_2026-10-24.md)
-handoffs preserve the current branch graph and exact remaining proof obligation.
+**Source fidelity (correction).** The [BBP source-repair dossier](../research/2026-10-24/BBP_SOURCE_MEMORY_REPAIR.md)
+(SFR-BBP-01–09) **withdraws** the earlier "BBP four-pole lane closed" verdict: index poles are not
+circle states and a `1/3` fixed point does not preserve the authentic source. The
+[corrected four-pole audit](../research/2026-10-23/CYC03_LANE_CLOSED.md) (R1–R8) is current; the old
+closure is kept verbatim in the `_HISTORICAL` report. (SFR-BBP-xx live in the research dossier, not a
+registered supplement; the prefix is adjacent to but distinct from SOURCE_FAITHFUL_RENORMALIZATION's
+SFR and is not renamed.)
+
+**π source collision entropy.** [SCE-01–10](CLAIM_SUPPLEMENT_PI_SOURCE_COLLISION.md) connect the
+authentic BBP source to carry-safe cell collisions, finite entropy bounds, full-source Galois averages,
+and a *conditional* binary-normality theorem. SCE-01 proves the positive-regret, minimum-relative-regret,
+Haar-convergence and energy-minimum conditions are **asymptotically equivalent** to normality for a
+base-`b` orbit; the original *sufficient* direction remains valid and the equivalence is **not a new
+proof step**. The genuinely new route (SCE-07) is a prescribed-scale collision bound `K_p(1)=p^{o(1)}`
+at `c=2/5` with an **explicit remaining hypothesis**, still **unverified**. No new Lean or
+π-independence authority is claimed.
+
+**Circle / Poisson / minimal-path families.** [PGM — Poisson minimum geometry](CLAIM_SUPPLEMENT_POISSON_MINIMUM.md)
+(regret↔normality equivalence, converse to SCE-01), [PSG — π source genesis](CLAIM_SUPPLEMENT_PI_SOURCE_GENESIS.md),
+the two **independent** BBP minimal-path families — [gauge / missing-prime](CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH_GAUGE.md)
+(MP.GAUGE-01–06) and [odd-prime births / Galois](CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH_BIRTHS.md)
+(MP.BIRTHS-01–09), kept distinct through a [claim-ID crosswalk](CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH.md)
+(fq_prefixes MP.GAUGE / MP.BIRTHS, registered as a resolved MP collision) — plus
+[cyclotomic BBP](CLAIM_SUPPLEMENT_CYCLOTOMIC_BBP.md),
+[cyclotomic selected source](CLAIM_SUPPLEMENT_CYCLOTOMIC_SELECTED_SOURCE.md),
+[minimal genesis first carry](CLAIM_SUPPLEMENT_MINIMAL_GENESIS.md) and
+[circle origin gauge](CLAIM_SUPPLEMENT_CIRCLE_ORIGIN_GAUGE.md). All are draft PAPER / EXACT-FINITE /
+CONDITIONAL / REFUTED claims as labelled; π normality, its independence, RH and absolute/decimal
+normality remain OPEN.
+
+The [research dossier](../research/2026-10-24/PI_SOURCE_COLLISION_ENTROPY.md), the
+[coherent-main integration handoff](../handoffs/CLAUDE_COHERENT_MAIN_AND_CLEANUP_2026-10-24.md) and the
+[Codex next-round handoff](../handoffs/CODEX_PI_SOURCE_COLLISION_NEXT_2026-10-24.md) preserve the branch
+graph and the exact remaining proof obligation.
