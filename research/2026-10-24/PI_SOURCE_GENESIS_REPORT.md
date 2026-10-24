@@ -147,6 +147,31 @@ that implies one. This would change the cancellation ledger, not prove full
 normality by itself. To prove normality, the sufficient all-mode statement
 must still be established with all its quantifiers.
 
+A concrete first target is the following **unproved** statement for h=1.
+For integers N>=16, put R=max(2,floor(log_16 N)). Prove from the exact BBP
+forcing, with one constant K independent of N, that
+
+    sum_(d=1)^(R-1) (R-d) Re D_d(N) <= K*N*R.
+
+This retains the signs and only asks for an aggregate estimate. The classical
+finite van der Corput inequality, proved by zero-padding, Cauchy--Schwarz
+and expansion of the squared shifted sum, gives
+
+    |S_N|^2 <= (N+R-1)/R^2 * [R*N+2 sum_(d<R)(R-d) Re C_d(N)].
+
+Our uniform transfer constant B_h=pi*abs(h)/30 then makes the displayed
+target imply
+
+    |S_N/N|^2 <= (1+2K)*(N+R-1)/(N*R)
+                 + B_h*(N+R-1)*(R-1)/(N^2*R),
+
+which tends to zero. For h=1 this would establish one genuine pi mode;
+proving the corresponding source bound for every fixed nonzero h would
+close base-16 normality through the already proved Weyl bridge. No such
+K is proved here. The explicit fixed-phase counterfeit has D_d(N) within
+a bounded error of N-d and violates this target as R grows, so the target
+demands information that the combined coarse source premises cannot supply.
+
 ## Reproduction and validation boundaries
 
 Local validation passed: **7,424 tests in 840.235 seconds**, including the
