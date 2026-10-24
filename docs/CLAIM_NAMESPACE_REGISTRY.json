@@ -14,6 +14,22 @@
   },
   "namespaces": [
     {
+      "namespace": "NATURAL_BBP_CARRIER",
+      "bare_prefix": "NCB",
+      "fq_prefix": "NCB",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_NATURAL_BBP_CARRIER.md"
+      ],
+      "id_count": 16,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/VERIFIED FINITE/REFUTED/UNVERIFIED); π normality OPEN; no Lean authority",
+      "topic": "natural-number successor as arithmetic carrier, primitive-recursive BBP skew-product realization, exact orbit section, integral prime observables, rational digit certificates, analytic tail-coboundary and carry-frequency boundary",
+      "code": [
+        "observational_succ/bbp_natural_carrier.py",
+        "tests/test_bbp_natural_carrier.py",
+        "scripts/bbp_natural_carrier_probe.py"
+      ]
+    },
+    {
       "namespace": "PI_JOINT_PRIME_CARRIER",
       "bare_prefix": "JPC",
       "fq_prefix": "JPC",

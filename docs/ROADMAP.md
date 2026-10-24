@@ -1,5 +1,18 @@
 # Research roadmap
 
+**2026-10-24 Internal BBP / natural SUCC carrier continuation (research).**
+[NCB-01--16](CLAIM_SUPPLEMENT_NATURAL_BBP_CARRIER.md) formalizes the user’s
+carrier/model distinction as an explicit successor-commuting N³ automaton:
+F∘i=i∘S for one original BBP source orbit, with a single-N Cantor encoding.
+Dyadic/primary observers are genuine synchronized readouts of that orbit;
+Pascal uses source differences and Lucas remains typed index combinatorics.
+The rational BBP tail yields a bounded exact nonautonomous gauge to the base16
+π orbit. An exact integer model certifies each finite digit but does not prove
+uniform 1/16 limiting digit frequencies, joint-sign cancellation or normality.
+Next: implement full-factorial authentic source observables and prove a mixed
+Fourier/carry saving rather than another representation identity.
+[Paper dossier](../research/2026-10-24/PI_NATURAL_CARRIER_BBP_LIFT.md).
+
 **2026-10-24 Joint Carrier limit-order addendum.**
 The [exact local-Haar theorem](../research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md)
 computes a prime-local Fourier mean from the genuine four-pole forcing

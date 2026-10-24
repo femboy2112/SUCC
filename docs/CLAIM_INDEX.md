@@ -1,5 +1,17 @@
 # Claim Index
 
+**2026-10-24 natural-number carrier / internal BBP realization:**
+[NCB-01--16](CLAIM_SUPPLEMENT_NATURAL_BBP_CARRIER.md) and
+[proof/obstruction dossier](../research/2026-10-24/PI_NATURAL_CARRIER_BBP_LIFT.md).
+The primary arithmetic carrier is N with successor. The original BBP four-pole
+source is an exact total primitive-recursive map on N³ (and via Cantor pairing
+on N), whose unique anchored orbit commutes with natural SUCC. All prime-local
+observations read the same timestamped rational source; Pascal differences
+are source histories and Lucas incidence is a distinct combinatorial probe.
+An exact positive tail and analytic gauge relate the internal process to the
+classical base-16 π orbit. Finite digits are rationally certifiable; real 1/16
+frequencies, π normality, and independence remain OPEN. No new Lean authority.
+
 **2026-10-24 Joint Carrier local Fourier limit-order addendum (research):**
 [JPC-23--26](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md) and
 [full four-pole Haar/limit theorem](../research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md).

@@ -1,5 +1,15 @@
 # Research claim ledger
 
+The additive [natural-number carrier supplement NCB-01--16](CLAIM_SUPPLEMENT_NATURAL_BBP_CARRIER.md)
+proves a total N³ BBP state machine and its unique anchored SUCC section,
+Cantor encoding into N, source-faithful 2-adic/prime observables, finite digit
+certificates and the exact analytic tail conjugacy. Literal source integer
+lifts are never replaced by ungrounded independent prime ensembles. Hostile
+controls refute naked circle succession, missing lifts, unrestricted 2-adic
+backward inversion, and any inference from N coding to normality.
+[Complete paper proof](../research/2026-10-24/PI_NATURAL_CARRIER_BBP_LIFT.md).
+**The source-specific mixed Fourier/carry estimate and π normality remain OPEN.**
+
 JPC-23--26 [Joint Carrier Fourier/limit addendum](../research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md)
 prove the authentic BBP *forcing* local Haar character multipliers, finite-
 prime CRT time means, logarithmic fourth-power prime-product damping, and
