@@ -4,7 +4,9 @@ on:
     paths:
       - 'observational_succ/bbp_cyclotomic_birth.py'
       - 'observational_succ/bbp_source_memory.py'
+      - 'observational_succ/bbp_cyclotomic_witt.py'
       - 'tests/test_bbp_cyclotomic_birth.py'
+      - 'tests/test_bbp_cyclotomic_witt.py'
       - 'scripts/bbp_cyclotomic_probe.py'
       - 'research/2026-10-24/BBP_CYCLOTOMIC_EXACT_RECEIPT.json'
       - '.github/workflows/bbp-cyclotomic-interference.yml'
@@ -24,9 +26,9 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Compile source and tests
-        run: python -m compileall -q observational_succ/bbp_cyclotomic_birth.py tests/test_bbp_cyclotomic_birth.py scripts/bbp_cyclotomic_probe.py
+        run: python -m compileall -q observational_succ/bbp_cyclotomic_birth.py observational_succ/bbp_cyclotomic_witt.py tests/test_bbp_cyclotomic_birth.py tests/test_bbp_cyclotomic_witt.py scripts/bbp_cyclotomic_probe.py
       - name: Run exact arithmetic and hostile source tests
-        run: python -m unittest discover -s tests -p 'test_bbp_cyclotomic_birth.py' -v
+        run: python -m unittest discover -s tests -p 'test_bbp_cyclotomic_*.py' -v
       - name: Verify provenance
         run: python scripts/verify_provenance.py
       - name: Reproduce deterministic exact arithmetic receipt

@@ -30,3 +30,8 @@ Proof statements with domains/hypotheses, exact rational tests, deterministic re
 ## CBCW-08/09 extension: source echo and p-adic precision
 
 Investigate the proved finite p-clock self-simulation at n_(k,a)=(8k-a)m+k, retaining the unwrapped U_k=16U_(k-1)+r(k) and its integer carries. The first p^2 source pole is (p^2+7)/8; the next lift is governed by q_p=(16^m-1)/p mod p. Explicitly test Witt-style higher-order return, split/equal-characteristic counterfeit sources and whether these source-conditioned constraints can reduce the signed I_p(h) debt. Never infer pi equidistribution from an exact finite self-simulation alone.
+
+
+## CBCW-10 filtered p² return and full-source carry debt
+
+See research/2026-10-24/BBP_CYCLOTOMIC_WITT_LIFT.md. The p²-pole source alone has exact twisted recurrence with `q_p=(16^((p-1)/8)-1)/p mod p`, `16(1+8pq_p)` between group endpoints, and within-group shear `pq_p[20/(8k-7)-4/(8k-4)-1/(8k-3)]`. This is NOT the full BBP p² phase; before comparing to pi, reintroduce lower-order p-pole contributions and every coprime clock. Test the incorrect 3M+1 endpoint multiplier as a decisive mutation. Full-source signed I_p(h) cancellation remains unverified.
