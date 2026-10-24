@@ -1,0 +1,48 @@
+name: BBP minimal path and relative Galois source
+
+on:
+  pull_request:
+    paths:
+      - 'observational_succ/bbp_minimal_path.py'
+      - 'observational_succ/bbp_galois_tomography.py'
+      - 'tests/test_bbp_minimal_path.py'
+      - 'tests/test_bbp_galois_tomography.py'
+      - 'scripts/bbp_minimal_path_probe.py'
+      - 'research/2026-10-24/BBP_MINIMAL_PATH_GALOIS_SELECTION.md'
+      - 'docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH.md'
+      - '.github/workflows/bbp-minimal-path.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  finite-source:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    env:
+      PYTHONPATH: .
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Syntax and typed input gates
+        run: |
+          python -Werror -m py_compile observational_succ/bbp_minimal_path.py observational_succ/bbp_galois_tomography.py tests/test_bbp_minimal_path.py tests/test_bbp_galois_tomography.py scripts/bbp_minimal_path_probe.py
+      - name: Original four-pole source and prime-clock exact tests
+        run: |
+          python -m unittest discover -s tests -p 'test_bbp_minimal_path.py' -v
+          python -m unittest discover -s tests -p 'test_bbp_galois_tomography.py' -v
+      - name: Independent raw-Fraction source and Galois replay
+        run: python scripts/bbp_minimal_path_probe.py
+      - name: Source ancestry/strict provenance spot checks
+        run: |
+          python -m unittest discover -s tests -p 'test_bbp_cyclotomic_birth.py' -v
+          python -m unittest discover -s tests -p 'test_bbp_prime_window_signed_intervals.py' -v
+          python -m unittest discover -s tests -p 'test_bbp_source_memory.py' -v
+          python scripts/verify_provenance.py
+          python scripts/observer_foundations_probe.py
