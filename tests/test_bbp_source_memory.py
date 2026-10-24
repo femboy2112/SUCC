@@ -101,6 +101,27 @@ class DeepSeekFalseImplications(unittest.TestCase):
         self.assertEqual(forcing(1),Q(47,15))
         self.assertNotEqual(forcing(1),0)
 
+
+    def test_positive_rational_noncoboundaries_have_arbitrary_decay(self):
+        from observational_succ.bbp_source_memory import (
+            high_order_rational_forcing, high_order_partial_fractions,
+            high_order_pole_invariant)
+        for order in range(1,8):
+            self.assertNotEqual(high_order_pole_invariant(order,16),0)
+            self.assertEqual(high_order_pole_invariant(order,16),
+                             (-15)**order)
+            for n in range(1,26):
+                value=high_order_rational_forcing(n,order)
+                self.assertGreater(value,0)
+                self.assertEqual(value,high_order_partial_fractions(n,order))
+            self.assertLess(high_order_rational_forcing(100,order),
+                            Q(1,100**order))
+        # Source-class restriction matters: exponential 16^-n is a
+        # coboundary with a non-rational q(n)=16^-n/255.
+        for n in range(2,12):
+            q=lambda k: Q(1,255*16**k)
+            self.assertEqual(16*q(n-1)-q(n),Q(1,16**n))
+
     def test_rational_counterfeit_is_not_identical_BBP_source(self):
         self.assertNotEqual(rational_counterfeit_forcing(1),forcing(1))
         self.assertEqual(forced_step(Q(),1),Q(2,15))
