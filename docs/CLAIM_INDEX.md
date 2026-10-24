@@ -1,5 +1,18 @@
 # Claim Index
 
+**2026-10-24 twisted-observer research:**
+[TWA-01--15](CLAIM_SUPPLEMENT_TWISTED_OBSERVER.md) and
+[full source/proof dossier](../research/2026-10-24/PI_TWISTED_OBSERVER_AGREEMENT.md).
+Recorded wire transport preserves signed temporal correlations; authentic
+odd-denominator agreement is exactly identifying but unstable; coprime gains
+2 and 3 give a sharp 4/3 repair. An invariant-joining construction leaves every
+candidate invariant sum law compatible with identical separate marginal and
+differential history laws. The signed temporal-energy criterion is explicitly
+an equivalence. Exact inverse-branch geometry supplies a conditional route
+to a first polynomial collision saving, with the branch-loss premise open.
+There is no new selected BBP asymptotic bound. Pi normality and
+pi-specific independence remain open; no new Lean authority is asserted.
+
 **2026-10-21 Duck → Lean → π research:** [execution report](../research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md) · [exact kernel receipt](../research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md) · [DUCK-01–28](CLAIM_SUPPLEMENT_DUCK_PRINCIPLE.md) · [dependency ledger](DUCK_PI_DEPENDENCIES.json). Observable quotients, generated finite all-word certificates, the classical BBP identity and the actual π orbit transport have exact formal statements. Explicit Fourier/discrepancy transport and positive rational-shadow counterfeits are paper results. The current receipt identifies which source revisions compiled. **π-specific cancellation and π normality remain OPEN; RH/ABC bounds here do not close them.**
 
 2026-10-22 research: [Prime Bridge PBR-01–20](CLAIM_SUPPLEMENT_ARITHMETIC_ER_EPR.md)

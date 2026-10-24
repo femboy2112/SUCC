@@ -1,0 +1,295 @@
+{
+  "base_commit": "e648df3e4fca73ab6b942232b5ca4b310e9cac08",
+  "donor_pr266": {
+    "head": "e821a90d615aa5f78a61ad08c9d7a44709ad6189",
+    "hosted_checks_observed_success": 27,
+    "merged_into_this_branch": false
+  },
+  "environment_attempts": [
+    {
+      "cause": "declared numerical test extras absent",
+      "result": "INTERRUPTED_NOT_A_PASS"
+    },
+    {
+      "cause": "uninstalled checkout absent from inherited subprocess import path",
+      "result": "INTERRUPTED_NOT_A_PASS"
+    },
+    {
+      "error": "Missing pinned Git source object",
+      "missing_git_blob": "f8f74e0eccb12e0d8aa127b3b5fa091f00367414",
+      "resolution": "hydrated and verified all six pinned Git source credentials; six-test module replay passed; complete fresh 7653-test run then passed",
+      "result": "COMPLETED_WITH_ONE_ENVIRONMENT_ERROR",
+      "seconds": 721.941,
+      "tests": 7653,
+      "transcript_error_tail": "======================================================================\nERROR: test_real_graph_retains_history_and_checks_new_sources (test_round2_registry.ActualGraphControls.test_real_graph_retains_history_and_checks_new_sources)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/0d28bcb3dde9/SUCC/observational_succ/institute_audit.py\", line 95, in audit_registry\n    kind = subprocess.check_output([\"git\", \"cat-file\", \"-t\", actual],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py\", line 466, in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py\", line 571, in run\n    raise CalledProcessError(retcode, process.args,\nsubprocess.CalledProcessError: Command '['git', 'cat-file', '-t', 'f8f74e0eccb12e0d8aa127b3b5fa091f00367414']' returned non-zero exit status 128.\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/workspace/scratch/0d28bcb3dde9/SUCC/tests/test_round2_registry.py\", line 25, in test_real_graph_retains_history_and_checks_new_sources\n    out=audit_registry(self.graph,ROOT)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/0d28bcb3dde9/SUCC/observational_succ/institute_audit.py\", line 98, in audit_registry\n    raise CapsuleError(\"Missing pinned Git source object\") from exc\nobservational_succ.source_proof_certificate.CapsuleError: Missing pinned Git source object\n\n----------------------------------------------------------------------\nRan 7653 tests in 721.941s\n\nFAILED (errors=1)"
+    }
+  ],
+  "file_sha256": {
+    "AGENTS.md": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+    "docs/CLAIM_INDEX.md": "89d87185459932aa45976f2274646384c010f18cbd62e638c3c56095fb480ed1",
+    "docs/CLAIM_NAMESPACE_REGISTRY.json": "2e9196c43b8e988d97d7ccdec193fd83783126dbb550c84578756bb9aeb22b92",
+    "docs/CLAIM_SUPPLEMENT_TWISTED_OBSERVER.md": "db7a1db023bd7beb5e3666f50e063293e2efe097d9a7d7185a5c56f481747fa5",
+    "observational_succ/pi_source_collision.py": "c3d1868624c3547124fd2cf33da35e10e8c48bec7922095cad83fb446f18a777",
+    "observational_succ/pi_source_genesis.py": "147dcb1b42b0de157c55385896cb1b15b17c1bb4ba14ea6fb8effed24ed62cf1",
+    "observational_succ/twisted_observer_probe.py": "9792940491f975a6b5c181d7eccb2c014183f7d341d26c7cf5a716ed7a1aa1dd",
+    "observational_succ/twisted_pair_transport.py": "0e04288820a5864c9ba7dcd6058975ddfa88a2cd9950e68a0d4619d4f670980f",
+    "observational_succ/twisted_source_energy.py": "8a35cb6806bf4433f0a899cc74d65c9d941ea9377d92f2342a29c917ac1f4ca8",
+    "provenance/IMPORT_MANIFEST.json": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+    "pyproject.toml": "fe8ac90682ce22c43f09cf2b8827f81df45f521104928e1b025657d9d84cbbd9",
+    "research/2026-10-24/PI_TWISTED_BRANCH_RECURSION_RECEIPT.json": "3ccc78428c7768059c09d27fb8aca254c6aaf5a25aa30e597c7b79999425f32c",
+    "research/2026-10-24/PI_TWISTED_COMMON_SHIFT_RECEIPT.json": "b48ca7df85405eb527c642f6930ffd7deaa2c26ca059f1d98b6b860e5892ce6d",
+    "research/2026-10-24/PI_TWISTED_COPRIME_GAIN_RECEIPT.json": "b09e47290b3bef66bec686f46d11350b7d0795e3e70a51d4edf1ec68d1f1a528",
+    "research/2026-10-24/PI_TWISTED_FULL_SUITE.txt": "d8cdf7a916489f569cfa55b092e5e8e0dddc1ca68d52ca80ab3b46c7dd9d3586",
+    "research/2026-10-24/PI_TWISTED_JOINING_RECEIPT.json": "a3a858e2dc323d5399f91efda2f99281b2a9172578a93d953d732b1f8ed71dfb",
+    "research/2026-10-24/PI_TWISTED_OBSERVER_AGREEMENT.md": "604d9f481be21302de0ba534ad852fe90ecf93ae87e8bd3fd078cf181ba285dd",
+    "research/2026-10-24/PI_TWISTED_OBSERVER_PREREGISTRATION.md": "66651c4081f7b06a1f0a8131f675c0310ec16b2c181723a4f2eb8504a91d0378",
+    "research/2026-10-24/PI_TWISTED_OBSERVER_VALIDATION.md": "170750a274437e86899516fefeee74531ee3c6e653279bc87e2dd23d4d7eb27b",
+    "research/2026-10-24/PI_TWISTED_SOURCE_ENERGY_RECEIPT.json": "63e482859020a08f1a48e2f580e9663b2e48de899afd528fb837066b09351bff",
+    "research/2026-10-24/PI_TWISTED_TRANSPORT_RECEIPT.json": "869117e6ade7982c12a938baad3d6f188def05fe260c8c7573c0d81d20921ccc",
+    "scripts/twisted_coprime_gain_probe.py": "d1c40c1973977ad9fa93527163250ea93a2f688ada35ba62cdfb04f7b469f4d9",
+    "scripts/twisted_inverse_branch_oracle.py": "4d0a840cd627b00928dc71e253af43f5a5cdc355ab1bd068e3cc691b206a223f",
+    "scripts/twisted_observer_common_shift_probe.py": "9a4cfbcc558e9f50dd7f1e1462914d938f2b726bef7cc74948398ff9d7fbc0d7",
+    "scripts/twisted_observer_joining_oracle.py": "8811d1afaf48c72222b27139b6b21b5b6e40bfdbb3ed7cdf26a1b74050881e58",
+    "scripts/twisted_pair_transport_oracle.py": "03017b978ae6e6b8daac05868024b65117844db9a9cb0825b137fde8cb8a95c7",
+    "scripts/twisted_source_energy_probe.py": "ae853f4aa30794788e071604405381367b499bae6429d5b4b9e50106f54b391a",
+    "tests/test_twisted_observer_joining.py": "d7fd28446c4a8c09b2283b10216a30a8e90ebc978bd2f130da6c4c29ba346800",
+    "tests/test_twisted_observer_probe.py": "edf7750c52bd541e8a3e1efbdf18afdac4e46c143c414f77c6fb1e7f6431d754",
+    "tests/test_twisted_pair_transport.py": "88c61a8d3ae0887dab4993c1b06d9ecc51ac46d384621fc8f4055575672946fe",
+    "tests/test_twisted_source_energy.py": "79e0011fcda84569f0486e33183a99407fc28de75be056c69334712c57c28528"
+  },
+  "full_unittest": {
+    "command": "python -m unittest discover -s tests -p 'test_*.py'",
+    "errors": 0,
+    "exit_code": 0,
+    "failures": 0,
+    "new_test_count": 52,
+    "seconds": 723.941,
+    "tests": 7653,
+    "transcript": "research/2026-10-24/PI_TWISTED_FULL_SUITE.txt"
+  },
+  "independence_theorem": false,
+  "new_asymptotic_selected_source_bound": false,
+  "new_lean_authority": false,
+  "observer_foundations_gate": {
+    "exit_code": 0,
+    "output": {
+      "PA_formalization_completed": false,
+      "RH_proved": false,
+      "arithmetic_causal_history": {
+        "Hessian_fake_det": "41/343",
+        "Hessian_true_det": "13/108",
+        "Weil_correlation_equals_semantic_Hessian_proved": false,
+        "actualized_true_b6": "0",
+        "both_semantic_Hessians_PSD": true,
+        "fake_composite_a6": 2,
+        "fake_connected_b6": "1"
+      },
+      "finitary_omega_proof_support": {
+        "earliest_stage": 1,
+        "finite_proof_verified": true,
+        "formal_theorem": "finitary derivation from union already has finite axiom support",
+        "observed_finite_theory_stages": 2,
+        "omega_physically_executed": false,
+        "omega_rule_used": false,
+        "proof_code_sha256": "fc23321637ff7db55bc2d78763e31a42a2cafa26a0ebea06a1da0ec69b9fcb06"
+      },
+      "godel_fixed_point_syntax": {
+        "SubstGraph_representability_in_PA_proved": false,
+        "object_level_PA_equivalence_proved": false,
+        "sentence_code_bits": 4377,
+        "sentence_code_sha256": "d63e44fb44913f78742d3063e8ca407b791dbb490c9ec21db4926c979d6004df",
+        "theta_code_bits": 1449,
+        "theta_code_sha256": "0612b723b148a7690b7ac4e86d7347cdf706fda5a420f511ac2e48a81310f590",
+        "verified_substitution_code": true
+      },
+      "missing": {
+        "RH_side": "independent positive observer-to-FULL Weil distribution identity",
+        "analytic_side": "rigorous prime/Gamma interval oracle for Suzuki negative witness",
+        "quantum_side": "validated record-to-semantic covariance functor",
+        "theory_side": "representable G\u00f6del substitution/derivability formalization"
+      },
+      "ordinal_reflection": {
+        "claimed_truth": null,
+        "declared_axiom_is_external": "EXTERNAL_ASSUMPTION_ONLY",
+        "reflection_follows_from_observation": false,
+        "successor_stages": 3
+      },
+      "physical_infinite_time_executed": false,
+      "rational_gram_certificates": {
+        "Suzuki_interval_oracle_built": false,
+        "bounded_search": "STRICT_NEGATIVE_WITNESS",
+        "negative_exact_quartic_upper": "-24",
+        "negative_status": "STRICT_NEGATIVE_WITNESS_CONDITIONAL_ON_INTERVAL_ORACLE",
+        "positive_exact_quadratic_lower": "0",
+        "positive_probe_status": "FINITE_PROBE_UNRESOLVED",
+        "source_is_actual_Suzuki": false,
+        "universal_positivity_proved": false
+      },
+      "status": "OBSERVATIONAL_SUCC_FORMAL_FOUNDATIONS",
+      "turing_observations": {
+        "delayed_prefix_17": "unresolved",
+        "delayed_prefix_19": "refuted",
+        "finite_survival_claims_are_universal_proofs": false,
+        "first_observed_counterexample": 19,
+        "loop_prefix_17": "unresolved"
+      }
+    }
+  },
+  "ordinal_gate": {
+    "exit_code": 0,
+    "output": {
+      "bounded_query_stabilization": {
+        "earlier_observer_stage": 9,
+        "later_observer_stage": 28,
+        "max_matrix_change": "0.0",
+        "rational_times": [
+          "0",
+          "-1",
+          "1"
+        ],
+        "scope": "prime wavefront exact by finite stage; Gamma response separately analytic",
+        "sufficient_stage": 9
+      },
+      "connected_source_second_order": {
+        "composite_event": 6,
+        "fake_connected_curvature": "1",
+        "fake_slope_jump": "-0.731482740234792026106494701286",
+        "finite_observation_time": "9/5",
+        "predicted_second_order_delta": "-log(6)/sqrt(6) at t=log(6)",
+        "primes": [
+          2,
+          3
+        ],
+        "true_connected_curvature": "0",
+        "two_time_Weil_diagonal_fake_minus_true": "-0.0120556120601029081022494377731"
+      },
+      "formal_ordinals": {
+        "finite_run_is_not_limit": true,
+        "finite_successor": "n->n+1, complete source prefix",
+        "global_PSD_predicate_proved": false,
+        "limit_omega": "filtered colimit/union of coherent finite observations",
+        "omega_plus_one": "mathematical retrospective Suzuki/Weil report"
+      },
+      "hilbert_critical_line_observer_escape": {
+        "H_256_lower_bound": "5",
+        "finite_norm_squared": "1",
+        "fixed_local_projector": "P_3",
+        "harmonic_H_256": "102120333780755602922415011407986918913493325085710168750386125102325162741298648605491283438121466698312402217/16674490806895842671659008751776385350270324508909651849955453691538889375930032935391666564679008085339616000",
+        "identity_expectation": "1",
+        "local_projector_expectation": "30569899812642378231374849378256706475495594933001028391584998434487963855871727048218055368578181489789296000/102120333780755602922415011407986918913493325085710168750386125102325162741298648605491283438121466698312402217",
+        "normalizable_omega_vector_exists": false,
+        "source_inert_and_not_RH": true,
+        "stage": 256,
+        "weak_limit_zero_not_strong": true
+      },
+      "next_theorem": "Source-defined positive-definite DISTRIBUTION Psi'' on complete test-function core; RH equivalent, NOT proved",
+      "no_RH_or_Weil_positive_sign_assumed": true,
+      "no_actual_infinite_ordinal_computed": true,
+      "positive_observations_are_not_positive_correlations": {
+        "isolated_prime_impulse_negative_determinant": "-0.007213596830721357871484304",
+        "oscillator_Hilbert_Gram_identity_error": "2.8298997121333476148466e-73",
+        "oscillator_second_curvature_can_be_negative": true,
+        "quartic_determinant": "-192",
+        "quartic_kernel": [
+          [
+            "2",
+            "-14"
+          ],
+          [
+            "-14",
+            "2"
+          ]
+        ],
+        "quartic_psi_nonnegative": true,
+        "quartic_quadratic_vector_ones": "-24",
+        "quartic_second_derivative_nonnegative": true
+      },
+      "semantic_second_derivative_information_geometry": {
+        "Weil_identification_established": false,
+        "both_information_geometries_PSD": true,
+        "fake_covariance_determinant": "41/343",
+        "fake_six_Hessian": [
+          [
+            "24/49",
+            "-1/49"
+          ],
+          [
+            "-1/49",
+            "12/49"
+          ]
+        ],
+        "genuine_Hessian": [
+          [
+            "5/9",
+            "-1/18"
+          ],
+          [
+            "-1/18",
+            "2/9"
+          ]
+        ],
+        "genuine_covariance_determinant": "13/108",
+        "source": "Hessian log finite positive evidence partition function"
+      },
+      "status": "FINITE_ORDINAL_SUCC_SECOND_ORDER_WEIL_PROBE",
+      "two_observer_mixed_finite_difference": {
+        "distributional_limit": "Psi''(t-u) = Weil distribution",
+        "h": "1/20",
+        "k": "1/30",
+        "mixed_covariance_increment": "0.000964653856973416905507178662116",
+        "positive_definiteness_proved": false,
+        "t": "3/5",
+        "u": "1/5"
+      }
+    }
+  },
+  "packaging": {
+    "existing_namespace_records_unchanged": true,
+    "explicit_receipt_file_hashes_verified": 16,
+    "git_diff_check": "PASS",
+    "new_claim_count": 15,
+    "new_python_files_compiled": 13,
+    "relative_markdown_links_checked": 19
+  },
+  "pi_normality": "OPEN",
+  "provenance_gate": {
+    "byte_identical_research_archives": 17,
+    "establishes_mathematical_truth": false,
+    "items": 72,
+    "mechanical_namespace_migrations": 55,
+    "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "status": "SOURCE_PROVENANCE_VERIFIED"
+  },
+  "recorded_utc": "2026-10-24T15:54:35.760239+00:00",
+  "review_scope": {
+    "independent_external_refereeing": false,
+    "inverse_branch_premise": "OPEN; proved finite geometry and conditional implication only",
+    "proof_and_finite_checks_are_distinguished": true,
+    "three_exploratory_agents_share_model_and_repository_provenance": true
+  },
+  "runtime": {
+    "checkout_importable_via": "PYTHONPATH",
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "python": "3.12.14",
+    "scipy": "1.18.1",
+    "subprocess_python": "same virtual environment first on PATH",
+    "sympy": "1.14.0"
+  },
+  "schema": "SUCC_TWISTED_OBSERVER_VALIDATION_v1",
+  "short_test_records": {
+    "namespace_tests": {
+      "sha256": "ae10ef564eeedda4f4fadbcc0060f0b7d02f19ac82717b63042027c75a5a56af",
+      "summary": "----------------------------------------------------------------------\nRan 15 tests in 0.057s\n\nOK"
+    },
+    "new_tests": {
+      "sha256": "a2c53960a7b541dd7f6def2b871285e45b3fd0e93d8d7cd562e2f8269f4fd03c",
+      "summary": "----------------------------------------------------------------------\nRan 52 tests in 1.218s\n\nOK"
+    },
+    "registry_hydration_replay": {
+      "sha256": "f5f76b3f494cb5afdfff55f64e405864fc64a995a746e00a0c91d4d936f68480",
+      "summary": "----------------------------------------------------------------------\nRan 6 tests in 0.443s\n\nOK"
+    }
+  },
+  "status": "REQUIRED_LOCAL_GATES_PASSED"
+}

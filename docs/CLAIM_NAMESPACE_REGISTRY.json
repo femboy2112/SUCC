@@ -670,6 +670,27 @@
         "observational_succ/bbp_minimal_path.py",
         "scripts/bbp_minimal_path_births_probe.py"
       ]
+    },
+    {
+      "namespace": "TWISTED_OBSERVER_AGREEMENT",
+      "bare_prefix": "TWA",
+      "fq_prefix": "TWA",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_TWISTED_OBSERVER.md"
+      ],
+      "id_count": 15,
+      "status": "RESEARCH DRAFT (PROVED LOCAL / classical / exact finite / conditional equivalence); no new Lean authority; pi normality OPEN",
+      "topic": "source-typed two-observer agreement, Z2 wire transport, odd-torsion instability, sharp coprime-gain coercivity, invariant joining obstruction, signed temporal energy and conditional inverse-branch collision saving",
+      "code": [
+        "observational_succ/twisted_observer_probe.py",
+        "observational_succ/twisted_pair_transport.py",
+        "observational_succ/twisted_source_energy.py",
+        "scripts/twisted_observer_joining_oracle.py",
+        "scripts/twisted_observer_common_shift_probe.py",
+        "scripts/twisted_source_energy_probe.py",
+        "scripts/twisted_coprime_gain_probe.py",
+        "scripts/twisted_inverse_branch_oracle.py"
+      ]
     }
   ],
   "resolved_collisions": [
