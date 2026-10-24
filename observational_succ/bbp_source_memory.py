@@ -205,3 +205,26 @@ def high_order_pole_invariant(order: int, base: int=16) -> int:
     """
     _natural(order,1);_natural(base,2)
     return (1-base)**order
+
+
+def source_tail_beta_bracket(n: int) -> tuple[Q,Q]:
+    """Global exact source bound B/4 < t_n < B, B=1/[(8n+1)(8n+2)].
+
+    Proof: g(t)=(1-t)*(4+4t+4t²+2t³+t⁴), and the multiplier
+    H(t)/(16-t^8) lies strictly between 1/4 and 1 on (0,1).
+    """
+    _natural(n)
+    B=Q(1,(8*n+1)*(8*n+2))
+    return B/4,B
+
+
+def source_tail_sharp_beta_bracket(n: int) -> tuple[Q,Q]:
+    """All-n exact rational O(n^-3) one-sided difference bound.
+
+    0 <= B_n-t_n <=4/[(8n+1)(8n+2)(8n+3)].
+    Lower value can be negative at n=0; intersect with B/4 as needed.
+    """
+    _natural(n)
+    B=Q(1,(8*n+1)*(8*n+2))
+    e=Q(4,(8*n+1)*(8*n+2)*(8*n+3))
+    return max(B/4,B-e),B

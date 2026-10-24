@@ -329,3 +329,51 @@ positive Green-memory carrier. Its selected real phase is π.
 The representation error is not that the source has no recurrence;
 it is that the forward nonlinear digit dynamics has not been
 shown statistically generic for that one selected source.
+
+
+## SFR-BBP-09 — Independent all-n rational bounds from the kernel's endpoint
+
+The positive polynomial g(t) factors as
+
+    g(t)=(1-t)H(t),
+    H(t)=4+4t+4t²+2t³+t⁴.
+
+The multiplier h(t)=H(t)/(16-t^8) satisfies 1/4<h(t)<1 for
+all 0<t<1; its limit at 1 is exactly h(1)=15/15=1.
+Write
+
+    B_n=int_0^1 t^(8n)(1-t)dt
+       =1/[(8n+1)(8n+2)].
+
+Then for every integer n>=0, strict source-derived bounds give
+
+    B_n/4 < t_n < B_n.                                 (I)
+
+For an explicit *asymptotically sharp* error, note
+    1-h(t)=[15-H(t)]+[1-t^8] over (16-t^8).
+Since H has nonnegative coefficients and H'(1)=22,
+    0 <=15-H(t)<=22(1-t)
+and 0<=1-t^8<=8(1-t), so
+    0<=1-h(t)<=2(1-t).
+Therefore
+
+    0 < B_n-t_n
+      <=2 int_0^1 t^(8n)(1-t)^2 dt
+      =4/[(8n+1)(8n+2)(8n+3)].                        (J)
+
+The two rational brackets (I),(J) are all-n inequalities,
+not digit fits. They imply immediately
+
+    n² t_n -> 1/64.
+
+This is a SECOND independent proof of the source's 1/64
+tail coefficient: the earlier signed pole moment m1=15/64
+recovers it algebraically, while here the endpoint slope of
+the actual positive kernel produces it geometrically.
+Both source descriptions commute at the level of asymptotic
+moments; neither implies signed Fourier cancellation under
+the forward digit map. Strict rational finite checks
+compare the bounds against source-only BBP tail enclosures.
+
+Code: source_tail_beta_bracket / source_tail_sharp_beta_bracket
+in observational_succ/bbp_source_memory.py.

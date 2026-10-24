@@ -57,6 +57,24 @@ class BBPSourceTyping(unittest.TestCase):
         with self.assertRaises(ValueError):
             tail_interval(-1)
 
+
+    def test_global_positive_beta_tail_enclosure(self):
+        from observational_succ.bbp_source_memory import (
+            source_tail_beta_bracket,source_tail_sharp_beta_bracket)
+        for n in range(0,45):
+            low,high=source_tail_beta_bracket(n)
+            sharp,upper=source_tail_sharp_beta_bracket(n)
+            actual_low,actual_high=tail_interval(n,7)
+            self.assertLess(low,actual_low)
+            self.assertGreater(high,actual_high)
+            self.assertLess(sharp,actual_low)
+            self.assertGreater(upper,actual_high)
+            self.assertGreaterEqual(sharp,low)
+        # The analytic rate, not finite sampling, proves n² t_n -> 1/64.
+        n=100
+        B=source_tail_beta_bracket(n)[1]
+        self.assertLess(Q(4,(8*n+1)*(8*n+2)*(8*n+3))/B,Q(1,100))
+
     def test_stieltjes_tail_hankel_positive_source_certificate(self):
         for K in (2,4,7):
             lo,hi=first_hankel_interval(K)
