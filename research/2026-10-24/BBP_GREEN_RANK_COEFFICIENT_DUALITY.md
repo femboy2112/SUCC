@@ -247,3 +247,68 @@ GRC-01 to GRC-04 connect source structure to tails exactly; GRC-05 and GRC-06 pr
 A concrete intermediate instrument: certify rational BBP intervals deep enough that multiplication by 16^N preserves a chosen finite-horizon phase error, then compare signed held-out lags to the smooth/contact counterfeits. This can validate a finite test and falsify overly broad transports; it does **not** prove normality.
 
 **Result: a genuine source-to-infinite-rank connection with effective, invertible arithmetic coefficients; the still-open wall is signed expanding-orbit cancellation.**
+
+
+## GRC-07 · SIGNED Fourier and growing-lag correlation transfer
+
+**DISCLOSED (paper), actual BBP source; an all-horizon uniform bound, NOT a normality proof.**
+
+Let the authentic nonautonomous rational orbit be
+
+    y_0=0, y_(n+1)={16*y_n+r(n+1)},
+
+where each y_n is rational because r(n) is rational. The source-selection identity of the parent #252 says
+
+    {16^j*pi} = {y_(j+1)+T_(j+1)}.
+
+The positive all-n beta envelope from #252 gives, for n>=1,
+
+    0<T_n<1/[(8n+1)(8n+2)] <1/(64n²).
+
+For any integer k != 0, put e(x)=exp(2*pi*i*x). The elementary Lipschitz estimate
+abs(e(x)-e(y))<=2*pi*abs(x-y), combined with
+sum_(n>=1) n^(-2)<2 and pi<4, gives for ALL N>=1:
+
+    abs(sum_(j<N)e(k*16^j*pi) - sum_(j<N)e(k*y_(j+1))) < abs(k)/4.
+
+The upper constant is independent of N. This is a genuine, unconditional
+transfer between the authentic pi orbit's signed Fourier sums and an
+EXACT-RATIONAL, nonautonomous SUCC forced orbit. In particular, each fixed
+frequency has the same normalized Weyl limit behavior in both sequences.
+It does **not** prove either sum is o(N).
+
+For a cyclotomic lag d>=1, substitute k=h*(16^d-1) to obtain for N>d:
+
+    abs(C_d(N;pi)-Ctilde_d(N)) < abs(h)*(16^d-1)/4,
+
+where Ctilde is the same signed sum of e(k*y_(j+1)) over j<N-d.
+After dividing by N-d, the discrepancy tends to zero for any sequence
+d=d_N with 16^(d_N)=o(N); this follows without a normality assumption.
+
+A sharper Q-th order **coefficient-corrected** rational shadow is
+
+    z_(j,Q)={y_(j+1)+sum_(q=0)^Q c_q/(j+1)^(q+1)}.
+
+GRC-02 gives the exact per-step tail remainder
+K_(Q+1)/(j+1)^(Q+2). Hence for every finite horizon:
+
+    abs(sum_(j<N)e(k*16^j*pi)-sum_(j<N)e(k*z_(j,Q)))
+       < 8*abs(k)*K_(Q+1)*sum_(j=1)^N j^(-Q-2).
+
+The right side is an explicitly computable rational upper bound, with
+a finite limit independent of N. The uncorrected beta-envelope bound
+is particularly sharp and simpler; higher Q is NOT automatically a
+smaller budget because K_Q can grow. Compare actual budgets, not slogans.
+
+**Reproducibility:** rational_phase_shadows,
+signed_shadow_error_budget, uniform_uncorrected_shadow_budget and
+signed_lag_shadow_budget in observational_succ/bbp_green_coefficient_transport.py,
+with an additional exact-rational adversarial test method.
+
+**Verdict boundary:** This improves the source-to-signed-phenomenon interface:
+a uniform *difference* bound, not cancellation. Establishing
+sum_(j<N)e(k*y_(j+1))=o(N) for the authentic rational forced system is
+still the same unsolved arithmetic dynamics problem in a newly operational
+representation. The compact-bump and contact impostors illustrate why the
+source-specific y recurrence cannot silently be replaced by a generic
+positive Green moment model.

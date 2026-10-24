@@ -169,3 +169,62 @@ def zero_contact_moment(n: int) -> Q:
     """Moments of delta_0; all moments n>=1 vanish, n=0 detects it."""
     _natural(n)
     return Q(int(n == 0))
+
+
+def rational_phase_shadows(count: int, degree: int | None = None) -> tuple[Q,...]:
+    """Exact rational SUCC forward states, optionally corrected by c_q tails.
+
+    Entries approximate fractional parts of 16^j*pi for j=0..count-1.
+    degree=None means the uncorrected rational forced state y_(j+1).
+    This is not a proof of digit equidistribution.
+    """
+    from observational_succ.bbp_source_memory import forced_step
+    _natural(count)
+    if degree is not None:
+        _natural(degree)
+    state = Q()
+    prefix = []
+    for j in range(count):
+        state = forced_step(state,j+1)
+        correction = (Q() if degree is None
+                      else tail_asymptotic_polynomial(j+1,degree))
+        prefix.append((state+correction)%1)
+    return tuple(prefix)
+
+
+def signed_shadow_error_budget(frequency: int, count: int,
+                               degree: int | None = None) -> Q:
+    """Rational strict upper for |sum e(k*16^j*pi)-sum e(k*shadow_j)|.
+
+    Uses |e(a)-e(b)| <= 2*pi*|a-b| < 8*|a-b|.
+    degree=None uses parent sharp beta tail upper; other degrees use
+    all-order K bounds. Valid for every finite count, no float pi needed.
+    """
+    from observational_succ.bbp_source_memory import source_tail_beta_bracket
+    if type(frequency) is not int:
+        raise ValueError("integer Fourier frequency required")
+    _natural(count)
+    if degree is not None:
+        _natural(degree)
+    errors = (source_tail_beta_bracket(j)[1] if degree is None
+              else absolute_remainder_bound(j,degree) for j in range(1,count+1))
+    return 8*abs(frequency)*sum(errors,Q())
+
+
+def uniform_uncorrected_shadow_budget(frequency: int) -> Q:
+    """Any prefix: strict Fourier-sum difference < abs(k)/4.
+
+    Since T_n < 1/(64n^2), sum_{n>=1}n^-2 <=2 and 2*pi<8.
+    """
+    if type(frequency) is not int:
+        raise ValueError("integer Fourier frequency required")
+    return Q(abs(frequency),4)
+
+
+def signed_lag_shadow_budget(h: int, lag: int, horizon: int,
+                             degree: int | None = None) -> Q:
+    """Uniform finite-source error for cyclotomic lag k=h*(16^lag-1)."""
+    if type(h) is not int:
+        raise ValueError("integer Fourier frequency required")
+    _natural(lag,1); _natural(horizon)
+    return signed_shadow_error_budget(h*(16**lag-1),max(0,horizon-lag),degree)

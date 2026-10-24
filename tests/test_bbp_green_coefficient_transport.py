@@ -100,5 +100,37 @@ class GreenCoefficientBridge(unittest.TestCase):
             self.assertLess(120**power*compact_bump_moment(120),Q(1,10**12))
 
 
+
+
+class SignedBBPShadowTransport(unittest.TestCase):
+    def test_rational_source_selected_phase_shadows(self):
+        from observational_succ.bbp_green_coefficient_transport import (
+            rational_phase_shadows, signed_shadow_error_budget,
+            uniform_uncorrected_shadow_budget, signed_lag_shadow_budget)
+        from observational_succ.bbp_source_memory import forced_step, source_tail_beta_bracket
+        y=Q()
+        actual = rational_phase_shadows(24)
+        corrected = rational_phase_shadows(24,3)
+        self.assertEqual(len(actual),24)
+        for j in range(24):
+            y=forced_step(y,j+1)
+            self.assertEqual(actual[j],y)
+            self.assertEqual(corrected[j],(y+tail_asymptotic_polynomial(j+1,3))%1)
+            lo,hi=tail_interval(j+1,12)
+            self.assertLessEqual(lo-source_tail_beta_bracket(j+1)[1],0)
+            self.assertLessEqual(abs(lo-tail_asymptotic_polynomial(j+1,3)),
+                                 absolute_remainder_bound(j+1,3))
+        for N in (1,2,16,40):
+            self.assertLess(signed_shadow_error_budget(1,N),Q(1,4))
+            self.assertEqual(uniform_uncorrected_shadow_budget(1),Q(1,4))
+            self.assertEqual(signed_lag_shadow_budget(1,2,N),
+                             signed_shadow_error_budget(255,max(0,N-2)))
+            self.assertEqual(signed_shadow_error_budget(0,N),0)
+        self.assertEqual(signed_shadow_error_budget(7,0),0)
+        with self.assertRaises(ValueError):
+            signed_shadow_error_budget(True,5)
+        with self.assertRaises(ValueError):
+            rational_phase_shadows(2,-1)
+
 if __name__ == '__main__':
     unittest.main()
