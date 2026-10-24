@@ -1,5 +1,12 @@
 # Research claim ledger
 
+The additive [Pascal source supplement PJT-01--30](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md)
+records exact dyadic difference valuations, minimax Mahler approximation,
+positive real kernels, coherent prime-base filters, explicit carry costs,
+full-profile clustering controls, minimal recurrences and source-prime heights.
+Paper proofs, classical inputs and finite computation have separate authority.
+The real conditional carry estimate and **pi normality remain OPEN**.
+
 The additive [Dyadic / prime-base supplement DBT-01--21](CLAIM_SUPPLEMENT_DYADIC_BASE_TRANSPORT.md)
 records authentic BBP 2-adic interpolation and collision refinement, exact
 carry probes and a conditional base-3 measure-rigidity route. Paper proofs,

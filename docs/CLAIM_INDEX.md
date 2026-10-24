@@ -1,5 +1,16 @@
 # Claim Index
 
+**2026-10-24 Pascal / source geometry continuation:**
+[PJT-01--30](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md) and
+[research synthesis](../research/2026-10-24/PI_PASCAL_SYNTHESIS.md).
+The authentic BBP source has an exact all-order dyadic Pascal profile and a
+sharp minimal Mahler degree. Positive beta kernels give coherent rational
+base filters with explicit carry costs; base31 is the first prime in the
+fixed integer-polynomial mechanism. Minimal recurrences and fresh-prime
+height bounds retain the exact source. Entire positive moment countermodels
+refute generic valuation-to-real-mixing shortcuts. Real half retention,
+same-law tripling and pi normality remain OPEN; no new Lean authority.
+
 **2026-10-24 dyadic / prime-base continuation:**
 [DBT-01--21](CLAIM_SUPPLEMENT_DYADIC_BASE_TRANSPORT.md) and
 [research synthesis](../research/2026-10-24/PI_DYADIC_PRIME_BASE_SYNTHESIS.md).

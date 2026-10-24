@@ -1,5 +1,18 @@
 # Research roadmap
 
+**2026-10-24 Pascal geometry continuation (research draft).**
+The [Pascal synthesis](../research/2026-10-24/PI_PASCAL_SYNTHESIS.md) proves the
+full authentic dyadic difference profile, sharp minimal Mahler degree, positive
+beta-kernel bounds, coherent all-base filters with retained carry precision,
+minimal order-five source recurrences and exponential denominator heights.
+An entire positive moment countermodel preserves every valuation and any
+fixed normalized dyadic precision while clustering completely. Thus generic
+Pascal/positivity reasoning cannot supply real branch loss. The next estimate
+must use the fixed BBP coefficients to control conditional carry alignment or
+the same selected law's tripling (alternatively times31) symmetry, with all
+scale and endpoint costs. No new real half-retention bound or normality proof
+has been obtained. [PJT claim supplement](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md).
+
 **2026-10-24 dyadic / prime-base continuation (research draft).**
 The [new synthesis](../research/2026-10-24/PI_DYADIC_PRIME_BASE_SYNTHESIS.md)
 proves an authenticated 2-adic BBP source isometry, exact one-sixteenth
