@@ -1,0 +1,602 @@
+{
+  "authentic_carrier_rows": [
+    {
+      "common_carrier_D_N": 765765,
+      "horizon": 3,
+      "last_individual_denominator_d_N": 765765,
+      "prime_support_size": 6,
+      "sampling_obstruction": {
+        "collision_lower_bound": "255255",
+        "modulus": 765765,
+        "resolution": "full finite carrier, not real coarse cells",
+        "sample_TV_lower_bound": "255254/255255",
+        "sample_count": 3,
+        "scaled_collision": "255255",
+        "support_TV_lower_bound": "255254/255255",
+        "support_size": 3,
+        "total_variation_to_uniform_carrier": "255254/255255"
+      }
+    },
+    {
+      "common_carrier_D_N": 81926744348173725,
+      "horizon": 7,
+      "last_individual_denominator_d_N": 81926744348173725,
+      "prime_support_size": 12,
+      "sampling_obstruction": {
+        "collision_lower_bound": "11703820621167675",
+        "modulus": 81926744348173725,
+        "resolution": "full finite carrier, not real coarse cells",
+        "sample_TV_lower_bound": "11703820621167674/11703820621167675",
+        "sample_count": 7,
+        "scaled_collision": "11703820621167675",
+        "support_TV_lower_bound": "11703820621167674/11703820621167675",
+        "support_size": 7,
+        "total_variation_to_uniform_carrier": "11703820621167674/11703820621167675"
+      }
+    },
+    {
+      "common_carrier_D_N": 160105117668294214546394887575308666685375,
+      "horizon": 17,
+      "last_individual_denominator_d_N": 160105117668294214546394887575308666685375,
+      "prime_support_size": 24,
+      "sampling_obstruction": {
+        "collision_lower_bound": "9417948098134953796846758092665215687375",
+        "modulus": 160105117668294214546394887575308666685375,
+        "resolution": "full finite carrier, not real coarse cells",
+        "sample_TV_lower_bound": "9417948098134953796846758092665215687374/9417948098134953796846758092665215687375",
+        "sample_count": 17,
+        "scaled_collision": "9417948098134953796846758092665215687375",
+        "support_TV_lower_bound": "9417948098134953796846758092665215687374/9417948098134953796846758092665215687375",
+        "support_size": 17,
+        "total_variation_to_uniform_carrier": "9417948098134953796846758092665215687374/9417948098134953796846758092665215687375"
+      }
+    },
+    {
+      "common_carrier_D_N": 4463634469430362344827272044300753800195455896992502712943615590936605770035029086777348869646722859705366625,
+      "horizon": 43,
+      "last_individual_denominator_d_N": 4463634469430362344827272044300753800195455896992502712943615590936605770035029086777348869646722859705366625,
+      "prime_support_size": 53,
+      "sampling_obstruction": {
+        "collision_lower_bound": "103805452777450287089006326611645437213847811557965179370781757928758273721744862483194159759226113016403875",
+        "modulus": 4463634469430362344827272044300753800195455896992502712943615590936605770035029086777348869646722859705366625,
+        "resolution": "full finite carrier, not real coarse cells",
+        "sample_TV_lower_bound": "103805452777450287089006326611645437213847811557965179370781757928758273721744862483194159759226113016403874/103805452777450287089006326611645437213847811557965179370781757928758273721744862483194159759226113016403875",
+        "sample_count": 43,
+        "scaled_collision": "103805452777450287089006326611645437213847811557965179370781757928758273721744862483194159759226113016403875",
+        "support_TV_lower_bound": "103805452777450287089006326611645437213847811557965179370781757928758273721744862483194159759226113016403874/103805452777450287089006326611645437213847811557965179370781757928758273721744862483194159759226113016403875",
+        "support_size": 43,
+        "total_variation_to_uniform_carrier": "103805452777450287089006326611645437213847811557965179370781757928758273721744862483194159759226113016403874/103805452777450287089006326611645437213847811557965179370781757928758273721744862483194159759226113016403875"
+      }
+    }
+  ],
+  "authentic_source_comparisons": 70,
+  "counterfactual_independent_law": [
+    [
+      "0",
+      "1/4"
+    ],
+    [
+      "1/15",
+      "1/4"
+    ],
+    [
+      "2/5",
+      "1/4"
+    ],
+    [
+      "2/3",
+      "1/4"
+    ]
+  ],
+  "escaping_prime_controls": [
+    {
+      "after_index_31_absolute_precision": {
+        "2": 3,
+        "3": 1,
+        "5": 1
+      },
+      "all_after_index_5_primary_phases_zero": true,
+      "base": 16,
+      "changed_forcing": true,
+      "constant": "1",
+      "fixed_primary_observers": [
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "horizon": 80,
+      "last_real_distance_to_constant": "638079833090309705861716038459298608728354864054197299388607794388562304671155496768196881194099558109539313073264816/4186441784905521980158718928331458171866736263059588481288655738983357280947451214296139737514487200756687433073687514681",
+      "last_tail_upper": "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086943137/14014210942677091050593737414178431423908344371181998823622539988921583620846782648700654252390875136"
+    },
+    {
+      "after_index_31_absolute_precision": {
+        "2": 3,
+        "3": 1,
+        "5": 1
+      },
+      "all_after_index_5_primary_phases_zero": true,
+      "base": 16,
+      "changed_forcing": true,
+      "constant": "1/3",
+      "fixed_primary_observers": [
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "horizon": 80,
+      "last_real_distance_to_constant": "1914239499270929117585148115377895826185064592162591898165823383165686914013466490304590643582298674328617939219794416/12559325354716565940476156784994374515600208789178765443865967216950071842842353642888419212543461602270062299221062544043",
+      "last_tail_upper": "2135987035920910082395021706169552114602704522356652769947041607822219725780640550022962086943137/14014210942677091050593737414178431423908344371181998823622539988921583620846782648700654252390875136"
+    }
+  ],
+  "fiber_cases": 24,
+  "fiber_points_checked": 1188,
+  "fiber_rows": [
+    {
+      "D": 6,
+      "fiber_count": 1,
+      "fiber_size": 6,
+      "observed_primes": [],
+      "optimal_radius": "5/12"
+    },
+    {
+      "D": 6,
+      "fiber_count": 2,
+      "fiber_size": 3,
+      "observed_primes": [
+        2
+      ],
+      "optimal_radius": "1/3"
+    },
+    {
+      "D": 6,
+      "fiber_count": 3,
+      "fiber_size": 2,
+      "observed_primes": [
+        3
+      ],
+      "optimal_radius": "1/4"
+    },
+    {
+      "D": 6,
+      "fiber_count": 6,
+      "fiber_size": 1,
+      "observed_primes": [
+        2,
+        3
+      ],
+      "optimal_radius": "0"
+    },
+    {
+      "D": 15,
+      "fiber_count": 1,
+      "fiber_size": 15,
+      "observed_primes": [],
+      "optimal_radius": "7/15"
+    },
+    {
+      "D": 15,
+      "fiber_count": 3,
+      "fiber_size": 5,
+      "observed_primes": [
+        3
+      ],
+      "optimal_radius": "2/5"
+    },
+    {
+      "D": 15,
+      "fiber_count": 5,
+      "fiber_size": 3,
+      "observed_primes": [
+        5
+      ],
+      "optimal_radius": "1/3"
+    },
+    {
+      "D": 15,
+      "fiber_count": 15,
+      "fiber_size": 1,
+      "observed_primes": [
+        3,
+        5
+      ],
+      "optimal_radius": "0"
+    },
+    {
+      "D": 21,
+      "fiber_count": 1,
+      "fiber_size": 21,
+      "observed_primes": [],
+      "optimal_radius": "10/21"
+    },
+    {
+      "D": 21,
+      "fiber_count": 3,
+      "fiber_size": 7,
+      "observed_primes": [
+        3
+      ],
+      "optimal_radius": "3/7"
+    },
+    {
+      "D": 21,
+      "fiber_count": 7,
+      "fiber_size": 3,
+      "observed_primes": [
+        7
+      ],
+      "optimal_radius": "1/3"
+    },
+    {
+      "D": 21,
+      "fiber_count": 21,
+      "fiber_size": 1,
+      "observed_primes": [
+        3,
+        7
+      ],
+      "optimal_radius": "0"
+    },
+    {
+      "D": 45,
+      "fiber_count": 1,
+      "fiber_size": 45,
+      "observed_primes": [],
+      "optimal_radius": "22/45"
+    },
+    {
+      "D": 45,
+      "fiber_count": 9,
+      "fiber_size": 5,
+      "observed_primes": [
+        3
+      ],
+      "optimal_radius": "2/5"
+    },
+    {
+      "D": 45,
+      "fiber_count": 5,
+      "fiber_size": 9,
+      "observed_primes": [
+        5
+      ],
+      "optimal_radius": "4/9"
+    },
+    {
+      "D": 45,
+      "fiber_count": 45,
+      "fiber_size": 1,
+      "observed_primes": [
+        3,
+        5
+      ],
+      "optimal_radius": "0"
+    },
+    {
+      "D": 105,
+      "fiber_count": 1,
+      "fiber_size": 105,
+      "observed_primes": [],
+      "optimal_radius": "52/105"
+    },
+    {
+      "D": 105,
+      "fiber_count": 3,
+      "fiber_size": 35,
+      "observed_primes": [
+        3
+      ],
+      "optimal_radius": "17/35"
+    },
+    {
+      "D": 105,
+      "fiber_count": 5,
+      "fiber_size": 21,
+      "observed_primes": [
+        5
+      ],
+      "optimal_radius": "10/21"
+    },
+    {
+      "D": 105,
+      "fiber_count": 7,
+      "fiber_size": 15,
+      "observed_primes": [
+        7
+      ],
+      "optimal_radius": "7/15"
+    },
+    {
+      "D": 105,
+      "fiber_count": 15,
+      "fiber_size": 7,
+      "observed_primes": [
+        3,
+        5
+      ],
+      "optimal_radius": "3/7"
+    },
+    {
+      "D": 105,
+      "fiber_count": 21,
+      "fiber_size": 5,
+      "observed_primes": [
+        3,
+        7
+      ],
+      "optimal_radius": "2/5"
+    },
+    {
+      "D": 105,
+      "fiber_count": 35,
+      "fiber_size": 3,
+      "observed_primes": [
+        5,
+        7
+      ],
+      "optimal_radius": "1/3"
+    },
+    {
+      "D": 105,
+      "fiber_count": 105,
+      "fiber_size": 1,
+      "observed_primes": [
+        3,
+        5,
+        7
+      ],
+      "optimal_radius": "0"
+    }
+  ],
+  "genuine_coprime_temporal_law": [
+    [
+      "0",
+      "1/2"
+    ],
+    [
+      "1/15",
+      "1/2"
+    ]
+  ],
+  "new_Lean_authority": false,
+  "pi_normality": "OPEN",
+  "post_discovery_strengthening": "factorial numerator gives all fixed p-adic state/forcing limits zero",
+  "preregistered_controls": "primary fibers, marginal substitution, moving primes, authentic rational source",
+  "proper_CRT_marginal_controls": [
+    {
+      "all_proper_TV_upper_bound": "77/768",
+      "full_joint_TV": "193/385",
+      "length": 192,
+      "moduli": [
+        5,
+        7,
+        11
+      ],
+      "modulus": 385,
+      "proper_marginals": [
+        {
+          "TV": "1/160",
+          "TV_upper_bound": "5/768",
+          "indices": [
+            0
+          ],
+          "modulus": 5
+        },
+        {
+          "TV": "1/112",
+          "TV_upper_bound": "7/768",
+          "indices": [
+            1
+          ],
+          "modulus": 7
+        },
+        {
+          "TV": "5/352",
+          "TV_upper_bound": "11/768",
+          "indices": [
+            2
+          ],
+          "modulus": 11
+        },
+        {
+          "TV": "51/1120",
+          "TV_upper_bound": "35/768",
+          "indices": [
+            0,
+            1
+          ],
+          "modulus": 35
+        },
+        {
+          "TV": "63/880",
+          "TV_upper_bound": "55/768",
+          "indices": [
+            0,
+            2
+          ],
+          "modulus": 55
+        },
+        {
+          "TV": "247/2464",
+          "TV_upper_bound": "77/768",
+          "indices": [
+            1,
+            2
+          ],
+          "modulus": 77
+        }
+      ],
+      "real_arc_length": "192/385"
+    },
+    {
+      "all_proper_TV_upper_bound": "437/7428",
+      "full_joint_TV": "5572/7429",
+      "length": 1857,
+      "moduli": [
+        17,
+        19,
+        23
+      ],
+      "modulus": 7429,
+      "proper_marginals": [
+        {
+          "TV": "52/31569",
+          "TV_upper_bound": "17/7428",
+          "indices": [
+            0
+          ],
+          "modulus": 17
+        },
+        {
+          "TV": "70/35283",
+          "TV_upper_bound": "19/7428",
+          "indices": [
+            1
+          ],
+          "modulus": 19
+        },
+        {
+          "TV": "34/14237",
+          "TV_upper_bound": "23/7428",
+          "indices": [
+            2
+          ],
+          "modulus": 23
+        },
+        {
+          "TV": "6534/199937",
+          "TV_upper_bound": "323/7428",
+          "indices": [
+            0,
+            1
+          ],
+          "modulus": 323
+        },
+        {
+          "TV": "28714/726087",
+          "TV_upper_bound": "391/7428",
+          "indices": [
+            0,
+            2
+          ],
+          "modulus": 391
+        },
+        {
+          "TV": "35752/811509",
+          "TV_upper_bound": "437/7428",
+          "indices": [
+            1,
+            2
+          ],
+          "modulus": 437
+        }
+      ],
+      "real_arc_length": "1857/7429"
+    },
+    {
+      "all_proper_TV_upper_bound": "3127/97976",
+      "full_joint_TV": "122475/146969",
+      "length": 24494,
+      "moduli": [
+        47,
+        53,
+        59
+      ],
+      "modulus": 146969,
+      "proper_marginals": [
+        {
+          "TV": "140/575609",
+          "TV_upper_bound": "47/97976",
+          "indices": [
+            0
+          ],
+          "modulus": 47
+        },
+        {
+          "TV": "180/649091",
+          "TV_upper_bound": "53/97976",
+          "indices": [
+            1
+          ],
+          "modulus": 53
+        },
+        {
+          "TV": "225/722573",
+          "TV_upper_bound": "59/97976",
+          "indices": [
+            2
+          ],
+          "modulus": 59
+        },
+        {
+          "TV": "431600/30507277",
+          "TV_upper_bound": "2491/97976",
+          "indices": [
+            0,
+            1
+          ],
+          "modulus": 2491
+        },
+        {
+          "TV": "534765/33960931",
+          "TV_upper_bound": "2773/97976",
+          "indices": [
+            0,
+            2
+          ],
+          "modulus": 2773
+        },
+        {
+          "TV": "679905/38296369",
+          "TV_upper_bound": "3127/97976",
+          "indices": [
+            1,
+            2
+          ],
+          "modulus": 3127
+        }
+      ],
+      "real_arc_length": "24494/146969"
+    }
+  ],
+  "source_matching_escape_controls": [
+    {
+      "all_primes_at_most_8n_match_at_every_checked_time": true,
+      "authentic_conductor_preserved": false,
+      "authentic_four_pole_forcing_preserved": false,
+      "constant": "1",
+      "extra_prime_at_last_time": 1049,
+      "extra_prime_power_denominator_at_last_time": 1210882360801,
+      "horizon": 65,
+      "last_circle_distance_to_constant": "3149712206909618069805852629677944753958576001150770783117357175909180181822333117239838855033573154406401245603020538180616549035582674815465751201605381983178090521096347/13720113294039184374583498967343475617607471238021252037957928996128927062145848130015942390645602967405118281242884764041636348612460187691448560273799036655864354200883579125",
+      "original_denominator_at_last_time": 11330674009458123159881148418314290856906796678117358897511666219352706088182117504281808407644054235691591740137266332124687997420810640727625462353726121925279125,
+      "preserved_logarithmic_height": "same leading-order bounds; added log(q_n)=o(n), by paper proof",
+      "tail_upper_at_last_time": "71403589/311029290000"
+    },
+    {
+      "all_primes_at_most_8n_match_at_every_checked_time": true,
+      "authentic_conductor_preserved": false,
+      "authentic_four_pole_forcing_preserved": false,
+      "constant": "1/3",
+      "extra_prime_at_last_time": 1049,
+      "extra_prime_power_denominator_at_last_time": 1210882360801,
+      "horizon": 65,
+      "last_circle_distance_to_constant": "3149706647325570762353422181327787501079862212215867386866591463518288552761212515880850087426247803723789599595340044161936253188671940337711367513378520421560932517472347/13720113294039184374583498967343475617607471238021252037957928996128927062145848130015942390645602967405118281242884764041636348612460187691448560273799036655864354200883579125",
+      "original_denominator_at_last_time": 11330674009458123159881148418314290856906796678117358897511666219352706088182117504281808407644054235691591740137266332124687997420810640727625462353726121925279125,
+      "preserved_logarithmic_height": "same leading-order bounds; added log(q_n)=o(n), by paper proof",
+      "tail_upper_at_last_time": "71403589/311029290000"
+    }
+  ],
+  "source_matching_primary_comparisons": 14148,
+  "source_sha256": {
+    "observational_succ/bbp_source_memory.py": "dd439f0a2231399d2a0ea4cf0e40a1e399338537723c468e688b0ac7d860fb54",
+    "observational_succ/joint_primary_observers.py": "fd9f08159a8e591d7f3aa8130a0dd0001acf4efc6cea6bfbc682dc1a4327fa4a",
+    "observational_succ/source_path_projector.py": "25603db3fb8c2527f15d7be5d0d4a172c09ed66bbe937a42c060e9e387e817f6",
+    "scripts/joint_primary_observers_probe.py": "1aa1a2d49ff6e917fe107b78616d7cb38e47a6d048c3a2292bfbefae8d03bdf6",
+    "tests/test_joint_primary_observers.py": "0b851bcc436400da41b3ca312c69fd37cecc28e87a12122639a9ad59d1e26fba"
+  },
+  "status": "exact finite calibration; paper proofs supply stated infinite claims"
+}

@@ -1,5 +1,11 @@
 # Observational SUCC
 
+**Hypothesis A / all-observer research (2026-10-24, draft):**
+[weakest useful criteria and new proofs](research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md) ·
+[scoped claims HJA-01--31](docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md).
+Trimmed joint collision transport, all-gain law rigidity, exact all-rank
+countermodels and source-matching moving-prime controls. **Pi normality OPEN.**
+
 **Coherent-main integration — π source / circle / prime-clock frontier (2026-10-24, draft research).**
 The latest consolidated round. Corrected source fidelity: the former "BBP four-pole lane closed"
 verdict is **withdrawn** — index poles are not orbit points and a `1/3` fixed point does not

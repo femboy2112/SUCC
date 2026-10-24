@@ -1,0 +1,145 @@
+{
+  "additional_exact_parameter_and_length_controls": [
+    {
+      "exact_binomial": true,
+      "length": 7,
+      "parameter": "-1/2"
+    },
+    {
+      "exact_binomial": true,
+      "length": 11,
+      "parameter": "-1/2"
+    },
+    {
+      "exact_binomial": true,
+      "length": 19,
+      "parameter": "-1/2"
+    },
+    {
+      "exact_binomial": true,
+      "length": 33,
+      "parameter": "-1/2"
+    },
+    {
+      "exact_binomial": true,
+      "length": 64,
+      "parameter": "-1/2"
+    },
+    {
+      "exact_binomial": true,
+      "length": 7,
+      "parameter": "1/3"
+    },
+    {
+      "exact_binomial": true,
+      "length": 11,
+      "parameter": "1/3"
+    },
+    {
+      "exact_binomial": true,
+      "length": 19,
+      "parameter": "1/3"
+    },
+    {
+      "exact_binomial": true,
+      "length": 33,
+      "parameter": "1/3"
+    },
+    {
+      "exact_binomial": true,
+      "length": 64,
+      "parameter": "1/3"
+    }
+  ],
+  "block_law": {
+    "0000": "1/16",
+    "0001": "1/16",
+    "0010": "3/32",
+    "0011": "1/32",
+    "0100": "1/32",
+    "0101": "3/32",
+    "0110": "1/16",
+    "0111": "1/16",
+    "1000": "1/16",
+    "1001": "1/16",
+    "1010": "1/32",
+    "1011": "3/32",
+    "1100": "3/32",
+    "1101": "1/32",
+    "1110": "1/16",
+    "1111": "1/16"
+  },
+  "default_parameter": "1/4",
+  "deterministic_coding_alphabet_size": 32,
+  "direct_enumeration_vs_independent_convolution": [
+    {
+      "exact_binomial": true,
+      "length": 0,
+      "word_atoms": 1
+    },
+    {
+      "exact_binomial": true,
+      "length": 1,
+      "word_atoms": 2
+    },
+    {
+      "exact_binomial": true,
+      "length": 2,
+      "word_atoms": 4
+    },
+    {
+      "exact_binomial": true,
+      "length": 3,
+      "word_atoms": 8
+    },
+    {
+      "exact_binomial": true,
+      "length": 4,
+      "word_atoms": 16
+    },
+    {
+      "exact_binomial": true,
+      "length": 5,
+      "word_atoms": 32
+    },
+    {
+      "exact_binomial": true,
+      "length": 6,
+      "word_atoms": 64
+    },
+    {
+      "exact_binomial": true,
+      "length": 7,
+      "word_atoms": 128
+    },
+    {
+      "exact_binomial": true,
+      "length": 8,
+      "word_atoms": 256
+    },
+    {
+      "exact_binomial": true,
+      "length": 9,
+      "word_atoms": 512
+    },
+    {
+      "exact_binomial": true,
+      "length": 10,
+      "word_atoms": 1024
+    }
+  ],
+  "four_word_0010": "9/128",
+  "four_word_0100": "7/128",
+  "pi_normality": "OPEN",
+  "registration": "POST_DISCOVERY: kernel chosen from positional Walsh reasoning before these checks",
+  "scope": "All individual window-rank distributions, not their entire joint time law; not BBP",
+  "sha256": {
+    "observational_succ/pascal_rank_process.py": "129f0b5254eb7944ad9c68ae227c175a074cba866a53ac9b4b3147f223dd798e",
+    "scripts/pascal_rank_process_probe.py": "5fac4015fbb889238568d36037f11cf1767ce2cb307fafe989ae010efaaed773",
+    "tests/test_pascal_rank_process.py": "39b4f3c8b322bf9058e6fda17738eb7881d8f7f239adb743219253fb0abec76e"
+  },
+  "signed_chi_124": "1/16",
+  "signed_chi_134": "-1/16",
+  "status": "EXACT FINITE; paper supplies infinite stationarity/ergodicity and rank proof",
+  "uniform_four_word_target": "1/16"
+}
