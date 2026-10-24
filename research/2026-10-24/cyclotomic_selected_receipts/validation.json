@@ -1,0 +1,101 @@
+{
+  "started_utc": "2026-10-24T05:59:59.693293+00:00",
+  "commit_at_start": "5435497dc77a313d1ebbc56ac96c11e593db2619",
+  "python": "Python 3.12.3",
+  "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+  "serial": true,
+  "commands": [
+    {
+      "label": "focused",
+      "command": [
+        "/tmp/pi-source-genesis-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_cyclotomic_selected_source.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 8.81,
+      "log": "focused.log",
+      "sha256": "d797b42fd98cace68d1c624d738379828aae928652555771f900a3b2607168ef"
+    },
+    {
+      "label": "origin_audit",
+      "command": [
+        "/tmp/pi-source-genesis-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_circle_origin_gauge.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 0.238,
+      "log": "origin_audit.log",
+      "sha256": "a7fa90bd9e229114cb3d8fb7866dfa3f105b42b631757f52b096ab15d4ce1dd4"
+    },
+    {
+      "label": "provenance",
+      "command": [
+        "/tmp/pi-source-genesis-venv/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.056,
+      "log": "provenance.log",
+      "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "label": "observer",
+      "command": [
+        "/tmp/pi-source-genesis-venv/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.101,
+      "log": "observer.log",
+      "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "label": "ordinal",
+      "command": [
+        "/tmp/pi-source-genesis-venv/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.003,
+      "log": "ordinal.log",
+      "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "label": "full_suite",
+      "command": [
+        "/tmp/pi-source-genesis-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "seconds": 856.006,
+      "log": "full_suite.log",
+      "sha256": "88d3eee8f45eed8cd9e01edefce76e4ca02376b22b05d7122d511b6ac8fd7391"
+    }
+  ],
+  "finished_utc": "2026-10-24T06:14:27.959060+00:00",
+  "commit_at_end": "5435497dc77a313d1ebbc56ac96c11e593db2619",
+  "source_sha256": {
+    "observational_succ/cyclotomic_selected_source.py": "8d5cf0190b2a90743cc47871c38605c144a274d578b66255323496858d19f516",
+    "tests/test_cyclotomic_selected_source.py": "fdad3ec0fcb80a444951df56d22db814e723ef4b6a0381ec9d7c4eb6e3fd6267"
+  }
+}

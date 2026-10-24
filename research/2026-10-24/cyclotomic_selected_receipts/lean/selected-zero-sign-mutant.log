@@ -1,0 +1,6 @@
+/tmp/cyclotomic-selected-lean-final2/build-wjxgfzv0/selected-zero-sign_mutant.lean:6:2: error: type mismatch
+  selected_zero_lift 1
+has type
+  liftedFrom (-tail 0) 1 = -tail 1 : Prop
+but is expected to have type
+  liftedFrom (-tail 0) 1 = tail 1 : Prop

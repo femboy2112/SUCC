@@ -1,5 +1,12 @@
 # Research claim ledger
 
+The additive [Cyclotomic selected-source supplement CSS-01–17](CLAIM_SUPPLEMENT_CYCLOTOMIC_SELECTED_SOURCE.md)
+records all-character local twist bounds, actual complementary-source spectral
+budgets, dyadic finite-window controls, exact observation costs, and positive
+rational BBP carry defects. External BGK, paper proofs, exact finite checks,
+and the new finite Lean declarations retain separate authority.
+**Pi normality remains unproved.**
+
 The additive [Pi Source Genesis supplement PSG-01–15](CLAIM_SUPPLEMENT_PI_SOURCE_GENESIS.md)
 records the repaired source audit, Pell beta bounds, lag-uniform signed transport,
 full-conductor rational approximation, typed counterexamples, and a weak
