@@ -14,6 +14,23 @@
   },
   "namespaces": [
     {
+      "namespace": "PI_LAG_CARRY_RIGIDITY",
+      "bare_prefix": "LCR",
+      "fq_prefix": "LCR",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PI_LAG_CARRY.md"
+      ],
+      "id_count": 10,
+      "status": "RESEARCH (PROVED PAPER/EXACT FINITE/CERTIFIED INTERVAL/SCOPED NO-GO/UNPROVED); no new Lean authority",
+      "topic": "selected BBP lag carries, linear-prefix finite-authentication obstruction and conditional prime-clock entropy",
+      "code": [
+        "observational_succ/pi_lag_carry.py",
+        "observational_succ/pi_carry_prefix_control.py",
+        "observational_succ/pi_prime_clock_conditioning.py",
+        "observational_succ/pi_collision_intervals.py"
+      ]
+    },
+    {
       "namespace": "PI_SOURCE_COLLISION_ENTROPY",
       "bare_prefix": "SCE",
       "fq_prefix": "SCE",
