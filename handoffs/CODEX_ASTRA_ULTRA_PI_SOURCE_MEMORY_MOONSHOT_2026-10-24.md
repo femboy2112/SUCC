@@ -264,3 +264,25 @@ source causes, and attack the SIGNED temporal
 phenomenon it still cannot explain.**
 
 **GO FOR THE RIGOROUS π MOONSHOT.**
+
+
+## FURTHER CLOSED SOURCE THEOREM — SHARP POSITIVE BETA ENVELOPE
+
+The source kernel additionally factors g(t)=(1-t)H(t),
+H(t)=4+4t+4t²+2t³+t⁴, H(1)=15. Its multiplier
+h(t)=H(t)/(16-t^8) has 1/4<h(t)<1 on 0<t<1,
+and 0<=1-h(t)<=2(1-t).
+With B_n=1/[(8n+1)(8n+2)], for ALL n>=0:
+
+  B_n/4 < T_n < B_n,
+  0 < B_n-T_n <=4/[(8n+1)(8n+2)(8n+3)].
+
+This is an unconditional, exact, rational, ALL-N
+error bound on the genuine BBP backward source.
+It independently proves n²*T_n ->1/64 from the
+positive kernel endpoint, matching m1=15/64.
+Use these inequalities as certified phase/source
+transport budgets. They do NOT prove
+equidistribution or any cancellation.
+
+See SFR-BBP-09 and the exact negative controls.
