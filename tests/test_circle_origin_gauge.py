@@ -156,6 +156,30 @@ class SelectedBBPAndPi(unittest.TestCase):
                 self.assertLess(residual,0)
                 self.assertLess(abs(residual),Q(1,16**depth)*forcing(n+1))
 
+
+    def test_source_specific_lag_transport_is_boundary_not_bulk(self):
+        from observational_succ.circle_origin_gauge import (
+            bbp_lag_boundary_interval, bbp_lag_signed_error_upper)
+        from observational_succ.bbp_source_memory import tail_interval
+        for d in (1,2,3,8):
+            for length in (1,2,3,8):
+                lo,hi=bbp_lag_boundary_interval(d,length,10)
+                self.assertLess(lo,hi)
+                # Independent all-terms source comparator via tighter intervals:
+                low_ref=sum((tail_interval(j,15)[0]-
+                             tail_interval(j+d,15)[1]
+                             for j in range(1,length+1)),Q())
+                hi_ref=sum((tail_interval(j,15)[1]-
+                            tail_interval(j+d,15)[0]
+                            for j in range(1,length+1)),Q())
+                self.assertLessEqual(lo,hi_ref)
+                self.assertGreaterEqual(hi,low_ref)
+                self.assertGreater(bbp_lag_signed_error_upper(d,length,2,10),0)
+                self.assertEqual(bbp_lag_signed_error_upper(d,length,2,10),
+                                 2*bbp_lag_signed_error_upper(d,length,1,10))
+        with self.assertRaises(ValueError):
+            bbp_lag_boundary_interval(0,3)
+
     def test_actual_pi_has_certified_periodic_cyclotomic_shadows(self):
         from observational_succ.circle_collision_rigidity import pi_interval
         lo,hi=pi_interval(16,80)

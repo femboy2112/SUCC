@@ -253,3 +253,37 @@ def exact_relative_rms_thirds(horizon):
     """
     _i(horizon,1)
     return Q(3,horizon)
+
+
+def bbp_lag_boundary_interval(lag, window, terms=8):
+    """Certified finite source boundary for sum_(j=1)^window (t_j-t_(j+lag)).
+
+    Exact telescoping leaves only q=min(lag,window) early terms and
+    q late terms starting at max(lag,window)+1. Uses genuine BBP tails.
+    Output is (nonnegative rational lower, rational upper) and is
+    independent of pointwise character approximations.
+    """
+    _i(lag,1);_i(window,1);_i(terms,1)
+    from observational_succ.bbp_source_memory import tail_interval
+    q=min(lag,window)
+    last=max(lag,window)
+    early=[tail_interval(j,terms) for j in range(1,q+1)]
+    late=[tail_interval(j,terms) for j in range(last+1,last+q+1)]
+    lower=max(Q(),sum((a for a,b in early),Q())-
+                      sum((b for a,b in late),Q()))
+    upper=sum((b for a,b in early),Q())-sum((a for a,b in late),Q())
+    if upper<=0 or lower>upper:
+        raise ArithmeticError("positive monotone source boundary failed")
+    return lower,upper
+
+
+def bbp_lag_signed_error_upper(lag,window,harmonic=1,terms=8):
+    """Rational upper for |C_d(pi)-C_d(authentic forced BBP)|.
+
+    Every phase difference is bounded by 2*pi*|h|*(t_j-t_(j+d)).
+    Uses pi < 22/7. No signed-sum cancellation or normality is claimed.
+    """
+    if type(harmonic) is not int or harmonic==0:
+        raise ValueError("nonzero Fourier harmonic required")
+    _,upper=bbp_lag_boundary_interval(lag,window,terms)
+    return Q(44,7)*abs(harmonic)*upper
