@@ -414,3 +414,74 @@ single-frequency resonant control.
 The apparatus is an exact source-to-cyclotomic-observer bridge plus a sharp
 classification of one tractable class of interference; it is not a proof
 of the unsolved normality assertion.
+
+
+## 11. PSC-09 — CERTIFIED SELECTED COMPLEX HIGH-MODE WITNESSES
+
+**New finite source-authenticated result; rigorous exact-rational complex boxes,
+NOT a numerical conjecture about growing primes.** This section uses the
+separate \`observational_succ/bbp_prime_window_signed_intervals.py\` with
+\`tests/test_bbp_prime_window_signed_intervals.py\`.
+
+The actual finite source phase y_n and p-free split w_(p,t) are rational;
+their circle characters are roots of unity, but their real and imaginary
+values involve pi. We obtain pi independently from the classical Machin
+identity pi=16 arctan(1/5)-4 arctan(1/239). The alternating arctan series
+provide two **exact rational** outer bounds. To evaluate e(z) for a rational
+z, first center z modulo one in [-1/2,1/2] (exact Fraction), multiply by
+the midpoint of the authentic pi interval, then enclose cos/sin using
+the degree-(2K-1) Taylor polynomials. By the bound |d^n sin|,|d^n cos|<=1
+and |angle|<=pi<22/7, each Taylor remainder is bounded by the rational
+
+    (22/7)^(2K)/(2K)!,
+
+plus the pi-interval displacement |z|*(pi_upper-pi_lower).
+No machine float and no uncharged rounding participates in the
+certificate; complex sums are rectangles with rational endpoints.
+
+For a synchronized period d|Delta and h=1, compute the **signed source**
+coefficient directly, not from an ensemble or Haar model:
+
+    A = W_p(1)/Delta
+      = (1/Delta)sum_(t<Delta) e(4*16^t/p+w_t),
+
+    LOW = (1/(d*K²)) sum_(r<d)
+             sum_(i≡r mod d) sum_(j≡r mod d)
+                  e(4*16^i/p+w_j),   K=Delta/d,
+
+    J_(p,d)(1)=A-LOW.
+
+Every summand is an exact rational-phase input to the rigorous complex
+box oracle. The target square modulus is bounded by rational distances
+from the resulting real/imaginary box to zero; no sqrt approximation
+or float eigenvalue is promoted to mathematical authority.
+
+The committed oracle and new focused tests give the following strict
+actual-source finite certificates:
+
+    |W_17(1)|²/(6²) > 1/9,
+    |J_(17,1)(1)|² > 1/16,
+
+    |W_41(1)|²/(15²) > 1/50,
+    |J_(41,3)(1)|² > 1/100.
+
+These prove that the **genuine selected** BBP complementary high-mode
+interference can be nontrivial, independently of the p-only Galois RMS
+or absolute dispersion lower bounds. They do NOT assert a lower bound
+for all sufficiently large p: both normalized quantities might still
+tend to zero. In fact their existence at small p is fully compatible
+with the sought normality conjecture. This is a deliberately finite,
+source-specific positive control demonstrating that the signed
+measurement apparatus can detect the missing interaction.
+
+The primary \`bbp_prime_window_projection.py\` records an independently
+rational lower/upper certificate of D²; this companion oracle is
+different in both observable (J complex versus D² real) and numerical
+representation (certified Machin/Taylor versus exact circle distances).
+Both depend on the same authenticated BBP forcing; they are not
+independent witnesses for an all-p asymptotic theorem.
+
+**Claim label:** PSC-09 DISCLOSED (paper analytical enclosure +
+finite exact-rational implementation, final-head hosted tests
+required); nonzero finite J for (17,1) and (41,3), with no infinite
+normality conclusion.

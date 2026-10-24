@@ -13,6 +13,7 @@
 | PSC-06: O_h(1/m) BBP-to-pi window Fourier transport | DISCLOSED (paper) / EXACT TESTED | Green upper tail + exact source selection; no cancellation bound |
 | PSC-07: synced fixed-clock prime window criterion | CORROBORATED under PNT-AP | Relative-scale density along p=1 mod 8d, sparse exceptions |
 | PSC-08: resonant high-complexity counterfeit | DISCLOSED (paper) | Non-BBP arbitrary bounded complex weight v=conjugate u |
+| PSC-09: certified FINITE selected complex high-mode J | DISCLOSED (paper bound / exact interval tests) | Machin/alternating pi and rational Taylor complex boxes; p=17,d=1 and p=41,d=3 only |
 | Actual J_(p,d)(h)→0 or I_p(h)→0 | **UNVERIFIED** | No actual all-horizon signed BBP complement cancellation |
 | PI normality in base 16/2/10/all | **OPEN** | No new Weyl bound |
 | Academic priority | **UNVERIFIED** | Classical Gauss, BGK, projection and PNT; synthesis is source-typed |
