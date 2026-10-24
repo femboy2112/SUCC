@@ -287,3 +287,42 @@ def bbp_lag_signed_error_upper(lag,window,harmonic=1,terms=8):
         raise ValueError("nonzero Fourier harmonic required")
     _,upper=bbp_lag_boundary_interval(lag,window,terms)
     return Q(44,7)*abs(harmonic)*upper
+
+
+def haar_frame_fourth_moment(horizon):
+    """Exact Haar-origin E|A_h,N(x+a)|^4=(2N²-N)/N^4, b>=2,h!=0."""
+    _i(horizon,1)
+    return Q(2*horizon*horizon-horizon,horizon**4)
+
+
+def frame_fourth_no_alias(base,harmonic,horizon,modulus):
+    """Distinct UNORDERED pair sums of hb^j modulo the origin clock."""
+    values=frame_frequency_residues(base,harmonic,horizon,modulus)
+    sums=[(values[j]+values[k])%modulus
+          for j in range(horizon) for k in range(j,horizon)]
+    return len(set(sums))==len(sums)
+
+
+def frame_fourth_energy_at_zero(base,harmonic,horizon,modulus):
+    """Exact spatial-grid fourth moment at a selected source x=0.
+
+    Frequency pair-sum convolution; roots-of-unity orthogonality.
+    For any selected x, the same value follows if frame_fourth_no_alias
+    is true; aliasing otherwise may preserve phases and cannot be erased.
+    """
+    v=frame_frequency_residues(base,harmonic,horizon,modulus)
+    classes={}
+    for j in range(horizon):
+        for k in range(horizon):
+            residue=(v[j]+v[k])%modulus
+            classes[residue]=classes.get(residue,0)+1
+    return Q(sum(c*c for c in classes.values()),horizon**4)
+
+
+def frame_fourth_bad_origin_measure_upper(horizon,epsilon):
+    """Exact fourth-moment/Markov bound <= (2N²-N)/(N^4 epsilon^4)."""
+    _i(horizon,1)
+    e=Q(epsilon)
+    if e<=0:
+        raise ValueError("positive deviation threshold required")
+    return haar_frame_fourth_moment(horizon)/e**4

@@ -370,3 +370,86 @@ Lean, #252 true source, #247–#249 circle/carry;
 classical covering dynamics, necklace-period
 Möbius inversion, Fourier orthogonality, and
 one-point compactification of R.
+
+
+## OGC-11. Exact FOURTH moment and an almost-every-origin theorem
+
+The Haar origin average has more information than merely
+its second moment, but still not enough to SELECT π.
+
+For b>=2 and any fixed nonzero integer h, the positive
+powers {h*b^j:0<=j<N} are a B_2 sequence: any equality
+
+    b^i+b^j=b^k+b^l
+
+forces the unordered index multisets {i,j}={k,l}.
+For b>=3 this follows from uniqueness of base-b
+digits 0,1,2. For b=2 it follows by separating
+the equal-exponent "carry" case (one 1-bit after
+carrying) from unequal exponents (two distinct
+1-bits); both representations remain unique.
+
+Expand the fourth power, integrate over the
+spatial origin a, and use integer Fourier
+orthogonality. Only the 2N²−N ordered pair
+matches remain, giving the EXACT identity
+
+    int_0^1 |A_(h,N)(x+a)|^4 da
+       =(2N²-N)/N⁴ <=2/N²                    (K)
+
+for EVERY selected x, every b>=2 and h!=0.
+The derivation is source-independent; the
+absolute Weyl phases e(hb^j x) cancel between
+matching pairs. This is not a probabilistic
+independence axiom.
+
+By Markov,
+    Haar{a: |A_(h,N)(x+a)|>=epsilon}
+      <=(2N²-N)/(N⁴ epsilon^4).
+
+The right-hand side is summable over all N.
+Borel–Cantelli therefore proves, for any
+fixed x, any base b>=2, and Haar-almost
+every ORIGIN TRANSLATION a,
+
+    A_(h,N)(x+a) ->0  for every fixed h!=0.
+
+Take the countable intersection over integer
+h and rational epsilon>0; Weyl yields that
+x+a is base-b normal for almost every a.
+This recovers the classical almost-everywhere
+Borel/Wall normality theorem by *exact circle
+reference-sampling fourth moments*.
+
+**It does NOT show x=π is normal:** the
+source-pinned shift a=0 has measure zero,
+and x=0 is a known exceptional fixed orbit.
+The physical coordinate-change theorem
+OGC-01 also forbids interpreting arbitrary
+translated STATES x+a as mere gauges of
+the identical x orbit while retaining T_b.
+
+A finite origin grid of size m can reproduce
+(K) EXACTLY if the unordered pair sums
+h(b^j+b^k), 0<=j<=k<N, are distinct modulo m.
+An easy sufficient bound is
+    m>2|h|*b^(N-1).
+The necessary number of distinct grid labels
+is at least N(N+1)/2, whereas the second
+moment only needs N distinct labels.
+This gives an explicit *observation-resource
+hierarchy* from the circle's additive Fourier
+energy, not an infinite proof of π genericity.
+The exact source oracle tests base 2,3,16;
+it rejects the m=15 aliasing counterexample
+and reproduces the fourth-moment formula.
+
+**Interpretation:** the circle's own covering
+rules force vanishing mean-square *and*
+fourth-moment reference differentials, enough
+for Haar-a.e. sources. The precise missing
+inference is from that ensemble to the one
+authenticated BBP-selected point. That
+remaining selection theorem is the true π
+frontier rather than a failure of sampling
+algebra or insufficient finite precision.

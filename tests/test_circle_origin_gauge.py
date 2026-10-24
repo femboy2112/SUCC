@@ -133,6 +133,30 @@ class CyclotomicGroupoids(unittest.TestCase):
                 self.assertEqual(gcd(16,m),1)
                 self.assertNotEqual(h%m,0)
 
+
+    def test_fourth_moment_exact_higher_order_origin_design(self):
+        from observational_succ.circle_origin_gauge import (
+            haar_frame_fourth_moment,frame_fourth_no_alias,
+            frame_fourth_energy_at_zero,frame_fourth_bad_origin_measure_upper)
+        for b in (2,3,16):
+            for N in range(1,8):
+                m=2*b**(N-1)+1
+                self.assertTrue(frame_fourth_no_alias(b,1,N,m))
+                self.assertEqual(frame_fourth_energy_at_zero(b,1,N,m),
+                                 haar_frame_fourth_moment(N))
+                self.assertLessEqual(haar_frame_fourth_moment(N),
+                                     Q(2,N*N))
+                self.assertGreaterEqual(m,N*(N+1)//2)
+        self.assertEqual(haar_frame_fourth_moment(1),Q(1))
+        self.assertEqual(haar_frame_fourth_moment(3),Q(5,27))
+        self.assertFalse(frame_fourth_no_alias(16,1,3,15))
+        self.assertGreater(frame_fourth_energy_at_zero(16,1,3,15),
+                           haar_frame_fourth_moment(3))
+        self.assertEqual(frame_fourth_bad_origin_measure_upper(3,Q(1,2)),
+                         Q(80,27))
+        with self.assertRaises(ValueError):
+            frame_fourth_bad_origin_measure_upper(3,0)
+
     def test_hostile_refusal_of_misapplied_sample_frames(self):
         self.assertEqual(
             frame_origin_energy_at_zero(16,1,3,15,holonomy=True),Q(1))
