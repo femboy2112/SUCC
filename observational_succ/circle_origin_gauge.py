@@ -326,3 +326,41 @@ def frame_fourth_bad_origin_measure_upper(horizon,epsilon):
     if e<=0:
         raise ValueError("positive deviation threshold required")
     return haar_frame_fourth_moment(horizon)/e**4
+
+
+def inverse_source_tree(base,depth,source):
+    """Complete b^k preimage ensemble of x under T_b^k, not one trajectory."""
+    _i(base,2);_i(depth)
+    m=base**depth
+    x=mod1(source)
+    return tuple(mod1((x+r)/m) for r in range(m))
+
+
+def inverse_tree_w1_haar(base,depth):
+    """Exact W1 of uniform preimage coset and Haar in geodesic metric."""
+    _i(base,2);_i(depth)
+    return Q(1,4*base**depth)
+
+
+def inverse_tree_fourier_survives(base,depth,harmonic):
+    """Character e(hx) mean is 0 unless b^depth divides h."""
+    _i(base,2);_i(depth)
+    if type(harmonic) is not int:
+        raise ValueError("integer character required")
+    return harmonic%(base**depth)==0
+
+
+def inverse_tree_pushforward_multiplicity(base,depth,source):
+    """Exact counted multiset after one forward SUCC from full inverse FUCC tree.
+
+    Each of b^(depth-1) preimages occurs exactly b times. Does not
+    authenticate any particular selected branch or pi normality.
+    """
+    _i(base,2);_i(depth,1)
+    from collections import Counter
+    points=inverse_source_tree(base,depth,source)
+    actual=Counter(covering(v,base,1) for v in points)
+    expected=Counter({v:base for v in inverse_source_tree(base,depth-1,source)})
+    if actual!=expected:
+        raise ArithmeticError("inverse/forward source tree projectivity broken")
+    return tuple(sorted(actual.items()))

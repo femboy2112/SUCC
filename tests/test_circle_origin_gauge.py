@@ -157,6 +157,26 @@ class CyclotomicGroupoids(unittest.TestCase):
         with self.assertRaises(ValueError):
             frame_fourth_bad_origin_measure_upper(3,0)
 
+
+    def test_all_inverse_branches_are_haar_but_none_selected(self):
+        from observational_succ.circle_origin_gauge import (
+            inverse_source_tree,inverse_tree_w1_haar,
+            inverse_tree_fourier_survives,inverse_tree_pushforward_multiplicity)
+        for b in (2,3,16):
+            for k in (1,2):
+                x=Q(1,7)
+                pts=inverse_source_tree(b,k,x)
+                self.assertEqual(len(pts),b**k)
+                self.assertTrue(all(covering(p,b,k)==x for p in pts))
+                self.assertEqual(inverse_tree_w1_haar(b,k),Q(1,4*b**k))
+                self.assertFalse(inverse_tree_fourier_survives(b,k,1))
+                self.assertTrue(inverse_tree_fourier_survives(b,k,b**k))
+                actual=inverse_tree_pushforward_multiplicity(b,k,x)
+                self.assertEqual(sum(mul for p,mul in actual),b**k)
+                self.assertTrue(all(mul==b for p,mul in actual))
+        self.assertEqual(inverse_source_tree(16,0,Q(1,3)),(Q(1,3),))
+        self.assertTrue(inverse_tree_fourier_survives(16,2,0))
+
     def test_hostile_refusal_of_misapplied_sample_frames(self):
         self.assertEqual(
             frame_origin_energy_at_zero(16,1,3,15,holonomy=True),Q(1))

@@ -453,3 +453,58 @@ authenticated BBP-selected point. That
 remaining selection theorem is the true π
 frontier rather than a failure of sampling
 algebra or insufficient finite precision.
+
+
+## OGC-12. Forward SUCC / full inverse-tree FUCC: exact Haar without a selected generic orbit
+
+The expanding covering T_b has b lawful inverse
+branches at every point. The COMPLETE b^k preimage
+probability measure of an arbitrary starting x is
+
+    mu_(k,x)=(1/b^k)sum_(r=0)^(b^k-1)
+                  delta_((x+r)/b^k).
+
+This is a shifted regular b^k-gon and satisfies:
+
+    (T_b)_*mu_(k,x) =mu_(k-1,x),
+    (T_b^k)_*mu_(k,x)=delta_x,
+    W1(mu_(k,x),Haar)=1/(4 b^k)  ->0.
+
+The characteristic function is EXACT:
+
+    int e(hy) dmu_(k,x)(y)
+      =0                    if b^k does not divide h,
+      =e((h/b^k)*x)         if b^k divides h.
+
+Consequently every fixed nonzero Fourier character
+is annihilated at a sufficiently fine inverse-tree
+level, even when x=0 is the most nonnormal forward
+starting state imaginable. The limit mu_(k,x)->Haar
+is a classical, exact spatial averaging statement.
+It says NOTHING about the one selected forward orbit.
+
+Moreover, the law (T_b^k)_*mu_(k,x)=delta_x
+for all k shows an explicit failure of naively
+interchanging the k->infinity limit with a
+k-dependent sequence of expanding forward maps.
+No single fixed-map continuity theorem justifies
+that exchange.
+
+This makes the user's original zero/infinity
+and SUCC/FUCC insight into a lawful category:
+the full inverse covering fiber has a uniform
+probability transport and exact Haar completion,
+while a selected backward branch or selected
+forward trajectory requires its own source
+authentication. Forgetting branch labels is
+an admissible operation only for target-relative
+measure questions; it can erase π's distinguished
+path completely.
+
+The rational-only oracle directly replays the
+b-to-1 inverse-tree projective pushforward for
+b=2,3,16 and source x=1/7, and verifies the
+Fourier character cutoff and geodesic W1 formula.
+Again, this closes a TRUE classical mathematical
+theorem while exposing rather than erasing the
+selected π normality gap.
