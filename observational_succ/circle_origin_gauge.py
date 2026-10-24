@@ -1,0 +1,255 @@
+"""Exact circle-origin covariance, cyclotomic torsion and source-gauge probes.
+
+All executable claims are rational/integer identities. Analytic Haar/L2,
+Wasserstein and asymptotic proofs are scoped in CIRCLE_CYCLOTOMIC_ORIGIN_GAUGE.md.
+The source selected by pi is not assumed normal. No physical inertial frame,
+source measurement, RH or signed Weil consequence is asserted.
+"""
+from __future__ import annotations
+from fractions import Fraction as Q
+from functools import lru_cache
+from math import gcd
+
+
+def _i(n, lo=0):
+    if type(n) is not int or n < lo:
+        raise ValueError(f"integer >= {lo} required")
+    return n
+
+
+def mod1(x):
+    return Q(x) % 1
+
+
+def covering(x, base, steps=1):
+    _i(base,2);_i(steps)
+    return mod1(base**steps * Q(x))
+
+
+def rotate(x, origin):
+    return mod1(Q(x)+Q(origin))
+
+
+def frame_covering(x, base, origin, steps=1):
+    """R_-a T_b^steps R_a, NOT the unmodified map T_b."""
+    _i(base,2);_i(steps)
+    return mod1(base**steps*Q(x)+(base**steps-1)*Q(origin))
+
+
+def origin_defect(base, steps, origin):
+    """H_d(a)=(b^d-1)a: failure of naive rotation commutation."""
+    _i(base,2);_i(steps)
+    return mod1((base**steps-1)*Q(origin))
+
+
+def moving_frame_forcing(base, origin_now, origin_next):
+    _i(base,2)
+    return base*Q(origin_now)-Q(origin_next)
+
+
+def commuting_origins(base):
+    """All rotations that actually commute with the FIXED T_b law."""
+    _i(base,2)
+    return tuple(Q(k,base-1) for k in range(base-1))
+
+
+def commutes_with_fixed_covering(base, origin):
+    _i(base,2)
+    return mod1((base-1)*Q(origin)) == 0
+
+
+def fixed_frame_character_average(base, harmonic):
+    """Average of e(h a) over the (b-1) legal commuting rotations."""
+    _i(base,2)
+    if type(harmonic) is not int or harmonic == 0:
+        raise ValueError("nonzero integer Fourier frequency")
+    return 1 if harmonic % (base-1) == 0 else 0
+
+
+def projective_chord_sq(s, t):
+    """Intrinsic squared chord in s=tan(pi*x) chart; poles excluded."""
+    s,t=Q(s),Q(t)
+    return 4*(s-t)**2/((1+s*s)*(1+t*t))
+
+
+def projective_rotate(s,tau):
+    """Möbius circle rotation in the tan chart, away from chart poles."""
+    s,tau=Q(s),Q(tau)
+    if 1-s*tau == 0:
+        raise ValueError("transformed origin reaches the projective pole")
+    return (s+tau)/(1-s*tau)
+
+
+def _divisors(n):
+    _i(n,1)
+    return tuple(i for i in range(1,n+1) if n % i == 0)
+
+
+@lru_cache(None)
+def cyclotomic_at_base(base, period):
+    """Phi_period(base), via exact b^d-1 product-factor recurrence."""
+    _i(base,2);_i(period,1)
+    denominator=1
+    for d in _divisors(period):
+        if d<period:
+            denominator*=cyclotomic_at_base(base,d)
+    numerator=base**period-1
+    if numerator % denominator:
+        raise ArithmeticError("cyclotomic divisor/source mismatch")
+    return numerator//denominator
+
+
+@lru_cache(None)
+def exact_periodic_points(base, period):
+    """Points of exact T_b-period d, not Phi_d(b)!"""
+    _i(base,2);_i(period,1)
+    out=base**period-1-sum(
+        exact_periodic_points(base,d)
+        for d in _divisors(period) if d<period)
+    if out<=0 or out % period:
+        raise ArithmeticError("primitive periodic orbit source corrupt")
+    return out
+
+
+def periodic_orbit_count(base,period):
+    return exact_periodic_points(base,period)//period
+
+
+def frame_frequency_residues(base,harmonic,horizon,modulus,
+                             *, holonomy=False):
+    """Finite origin-grid character labels for time or defect measurements."""
+    _i(base,2);_i(horizon,1);_i(modulus,2)
+    if type(harmonic) is not int or harmonic==0:
+        raise ValueError("h != 0")
+    start=1 if holonomy else 0
+    return tuple((harmonic*(base**j-(1 if holonomy else 0)))%modulus
+                 for j in range(start,start+horizon))
+
+
+def frame_nonaliased(base,harmonic,horizon,modulus,*,holonomy=False):
+    v=frame_frequency_residues(base,harmonic,horizon,modulus,
+                               holonomy=holonomy)
+    return len(set(v)) == horizon
+
+
+def frame_origin_energy_at_zero(base,harmonic,horizon,modulus,
+                                *,holonomy=False):
+    """Exact full grid mean of |mean_j e(frequency_j * r/m)|².
+
+    Root-of-unity orthogonality: sum_class count(class)^2 / N^2.
+    This is a SPATIAL ENSEMBLE measurement, not a pointwise orbit bound.
+    """
+    v=frame_frequency_residues(base,harmonic,horizon,modulus,
+                               holonomy=holonomy)
+    freq={}
+    for x in v:
+        freq[x]=freq.get(x,0)+1
+    return Q(sum(c*c for c in freq.values()),horizon*horizon)
+
+
+def order_mod(base,modulus):
+    """Multiplicative order; only when b is a unit modulo modulus."""
+    _i(base,2);_i(modulus,2)
+    if gcd(base,modulus)!=1:
+        raise ValueError("base must be a unit modulo the finite origin clock")
+    x=1
+    for j in range(1,modulus+1):
+        x=x*base%modulus
+        if x==1:
+            return j
+    raise ArithmeticError("finite multiplicative order not reached")
+
+
+def order_suffices_for_frame(base,harmonic,horizon,modulus):
+    _i(base,2);_i(modulus,2);_i(horizon,1)
+    if type(harmonic) is not int or harmonic==0:
+        raise ValueError("nonzero harmonic required")
+    return (gcd(base*harmonic,modulus)==1
+            and order_mod(base,modulus)>=horizon)
+
+
+def cyclotomic_source_orbit(base,period):
+    """Selected x_d=1/(b^d-1), one genuine full period d (d>=2)."""
+    _i(base,2);_i(period,2)
+    modulus=base**period-1
+    return tuple(Q(base**j,modulus) for j in range(period))
+
+
+def cyclotomic_selected_linear_mean(base,period):
+    """Exact source orbit average of points in [0,1); also W1 to delta0 if b>=3."""
+    _i(base,2);_i(period,2)
+    v=cyclotomic_source_orbit(base,period)
+    answer=sum(v,Q())/period
+    if answer!=Q(1,period*(base-1)):
+        raise ArithmeticError("geometric selected orbit sum mismatch")
+    return answer
+
+
+def periodic_origin_grid_w1(base,period):
+    """Exact Haar W1 to the whole (b^d-1)-torsion grid on circle geodesic."""
+    _i(base,2);_i(period,2)
+    return Q(1,4*(base**period-1))
+
+
+def selected_orbit_w1_zero(base,period):
+    """EXACT W1(selected orbit, delta0) for b>=3."""
+    _i(base,3);_i(period,2)
+    return cyclotomic_selected_linear_mean(base,period)
+
+
+def selected_orbit_weyl_deviation_bound(base,period,harmonic=1):
+    """|A_h,d(1/(b^d-1))-1| <= 2*pi*|h|/[d(b-1)].
+
+    Return rational coefficient of 2*pi; this is a bound, not its value.
+    """
+    _i(base,2);_i(period,2)
+    if type(harmonic) is not int or harmonic==0:
+        raise ValueError("nonzero Fourier frequency required")
+    return Q(abs(harmonic),period*(base-1))
+
+
+def certified_cyclotomic_pi_shadow(pi_lo,pi_hi,base,period):
+    """Select periodic rational orbit from independent π interval.
+
+    Requires both interval endpoints (3,4) and one uniquely rounded
+    numerator. Output: (numerator,denominator,certified circle error).
+    An arbitrarily close PERIODIC fake does not certify π normality.
+    """
+    _i(base,2);_i(period,2)
+    lo,hi=Q(pi_lo),Q(pi_hi)
+    if not (Q(3)<lo<=hi<Q(4)):
+        raise ValueError("independent source interval strictly inside (3,4)")
+    m=base**period-1
+    low,high=lo-3,hi-3
+    def nearest(x):
+        return (m*x+Q(1,2)).numerator//(m*x+Q(1,2)).denominator
+    k_lo,k_hi=nearest(low),nearest(high)
+    if k_lo!=k_hi or not(0<k_lo<m):
+        raise ValueError("π interval insufficient to certify unique source grid point")
+    k=k_lo
+    error=max(abs(Q(k,m)-low),abs(Q(k,m)-high))
+    if error>Q(1,2*m)+(hi-lo):
+        raise ArithmeticError("periodic source selection error invalid")
+    return k,m,error
+
+
+def truncated_bbp_connection(n,depth):
+    """Exact finite-BBP gauge cocycle residual in Q, no pi digits."""
+    _i(n);_i(depth,1)
+    from observational_succ.bbp_source_memory import forcing
+    def partial(k):
+        return sum((forcing(k+j)/16**j for j in range(1,depth+1)),Q())
+    t0,t1=partial(n),partial(n+1)
+    observed=16*t0-t1-forcing(n+1)
+    expected=-forcing(n+depth+1)/16**depth
+    if observed!=expected:
+        raise ArithmeticError("source gauge / BBP origin residual mismatch")
+    return observed
+
+
+def exact_relative_rms_thirds(horizon):
+    """For base16 and relative displacement 1/3 (h=1):
+    integral_|a| |A_N(a)-A_N(a+1/3)|² da = 3/N.
+    """
+    _i(horizon,1)
+    return Q(3,horizon)
