@@ -1,0 +1,10 @@
+/tmp/cyclotomic-selected-lean-final/build-ttvhyj6r/centered-abel-sign_positive.lean:6:2: error: type mismatch
+  centered_abel_identity (fun x => 1) (fun s => ↑s) 1
+has type
+  ∑ s ∈ Finset.range (1 + 1), 1 * (↑s - ↑0) =
+    prefixSum (fun x => 1) (1 + 1) * (↑1 - ↑0) -
+      ∑ s ∈ Finset.range 1, prefixSum (fun x => 1) (s + 1) * (↑(s + 1) - ↑s) : Prop
+but is expected to have type
+  ∑ s ∈ Finset.range (1 + 1), 1 * (↑s - 0) =
+    prefixSum (fun x => 1) (1 + 1) * (1 - 0) -
+      ∑ s ∈ Finset.range 1, prefixSum (fun x => 1) (s + 1) * (↑(s + 1) - ↑s) : Prop

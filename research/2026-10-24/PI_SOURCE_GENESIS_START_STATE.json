@@ -1,0 +1,776 @@
+{
+  "retrieved_at": "2026-10-24 04:15:57 UTC",
+  "base": "364962ac0c0e8fb4d06c37468a5d50336d68a9ee",
+  "prs": [
+    {
+      "pr": 232,
+      "metadata": {
+        "url": "https://github.com/femboy2112/SUCC/pull/232",
+        "number": 232,
+        "state": "open",
+        "merged": false,
+        "draft": true,
+        "title": "Duck \u2192 Lean \u2192 \u03c0: checked source identity, conditional normality transport, and hostile controls",
+        "base": "main",
+        "base_sha": "b116841f12b41aaf7600da39bbb40577f25b6295",
+        "head": "research/duck-principle-pi-proof-first-2026-10-21",
+        "head_sha": "bf55ab16dde844524318faf312ad30c2d7184c9f",
+        "updated_at": "2026-10-21T16:51:04Z"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 39636076450,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 479,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076450/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076450/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 39636076151,
+            "name": "Pinned formal kernel and proposition exports",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 23,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076151/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076151/logs",
+            "workflow_id": 390972806
+          },
+          {
+            "id": 39636076167,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 357,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076167/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076167/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 39636076513,
+            "name": "Duck and pi exact research kernel",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 11,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076513/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076513/logs",
+            "workflow_id": 391762709
+          },
+          {
+            "id": 39636076490,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 3534,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076490/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076490/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 39636075905,
+            "name": "Source-minimality clock carry renewal exact checks",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 64,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636075905/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636075905/logs",
+            "workflow_id": 387909696
+          },
+          {
+            "id": 39636076239,
+            "name": "Orbit clock genesis exact source checks",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 59,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076239/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076239/logs",
+            "workflow_id": 388002645
+          },
+          {
+            "id": 39636076064,
+            "name": "Bidirectional SUCC exact arithmetic cut checks",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 60,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076064/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076064/logs",
+            "workflow_id": 388745913
+          },
+          {
+            "id": 39636076298,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 167,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076298/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636076298/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 39636075799,
+            "name": "Duck Principle trusted Lean kernel",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 16,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636075799/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/39636075799/logs",
+            "workflow_id": 391713747
+          }
+        ]
+      }
+    },
+    {
+      "pr": 247,
+      "metadata": {
+        "url": "https://github.com/femboy2112/SUCC/pull/247",
+        "number": 247,
+        "state": "open",
+        "merged": false,
+        "draft": true,
+        "title": "[DRAFT] Circle Genesis \u2192 Kummer chord moments and \u03c0 collision-energy proof frontier",
+        "base": "research/reality-pin-observable-geometry-2026-10-22",
+        "base_sha": "5e2ba04c8b4ab627b6b0add588609c347346a1a2",
+        "head": "research/circle-chord-kummer-collision-moonshot-2026-10-23",
+        "head_sha": "5a2922986719c03dfd4e20d23d3b266b8b775c8e",
+        "updated_at": "2026-10-23T21:57:36Z"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 40030428240,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 537,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40030428240/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40030428240/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 40030428164,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 415,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40030428164/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40030428164/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 40030428178,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 225,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40030428178/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40030428178/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 40030428216,
+            "name": "Circle chord-Kummer collision exact research",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 20,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40030428216/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40030428216/logs",
+            "workflow_id": 394603745
+          },
+          {
+            "id": 40030428235,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 3774,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40030428235/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40030428235/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      }
+    },
+    {
+      "pr": 248,
+      "metadata": {
+        "url": "https://github.com/femboy2112/SUCC/pull/248",
+        "number": 248,
+        "state": "open",
+        "merged": false,
+        "draft": true,
+        "title": "[DRAFT] Secondary Circle: full-prime/chord rigidity and finite reconstruction-defect theorem",
+        "base": "research/circle-chord-kummer-collision-moonshot-2026-10-23",
+        "base_sha": "5a2922986719c03dfd4e20d23d3b266b8b775c8e",
+        "head": "research/secondary-circle-full-prime-defect-2026-10-23",
+        "head_sha": "277b3e7da0899f44514fda7b7da752bd7f851adc",
+        "updated_at": "2026-10-23T22:25:26Z"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 40033516023,
+            "name": "Secondary-circle prime/chord exact source and controls",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 9,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40033516023/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40033516023/logs",
+            "workflow_id": 394628898
+          },
+          {
+            "id": 40033516044,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 229,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40033516044/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40033516044/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 40033516012,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 541,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40033516012/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40033516012/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 40033516069,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 419,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40033516069/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40033516069/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 40033516144,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 3795,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40033516144/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40033516144/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      }
+    },
+    {
+      "pr": 249,
+      "metadata": {
+        "url": "https://github.com/femboy2112/SUCC/pull/249",
+        "number": 249,
+        "state": "open",
+        "merged": false,
+        "draft": true,
+        "title": "[DRAFT] Circle time-carry: exact Kummer correlations and 3-adic normality countermodels",
+        "base": "research/circle-chord-kummer-collision-moonshot-2026-10-23",
+        "base_sha": "5a2922986719c03dfd4e20d23d3b266b8b775c8e",
+        "head": "research/circle-time-carry-3adic-resonance-2026-10-23",
+        "head_sha": "5e35aeabb12de25b79c44810f512ee36d0ef4842",
+        "updated_at": "2026-10-23T22:32:25Z"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 40034091022,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 233,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40034091022/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40034091022/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 40034091029,
+            "name": "Circle time-carry and 3-adic resonance exact research",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 10,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40034091029/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40034091029/logs",
+            "workflow_id": 394629559
+          },
+          {
+            "id": 40034091071,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 545,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40034091071/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40034091071/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 40034091045,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 423,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40034091045/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40034091045/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 40034091089,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 3803,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40034091089/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40034091089/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      }
+    },
+    {
+      "pr": 250,
+      "metadata": {
+        "url": "https://github.com/femboy2112/SUCC/pull/250",
+        "number": 250,
+        "state": "open",
+        "merged": false,
+        "draft": true,
+        "title": "[DRAFT] Academic Main IX: \u03c0 Moonwalk / circle / source consolidation (28 PRs, staged)",
+        "base": "main",
+        "base_sha": "b116841f12b41aaf7600da39bbb40577f25b6295",
+        "head": "integrate/academic-main-ix-pi-circle-source-2026-10-23",
+        "head_sha": "f986507851e34636f60bee657dcdf0771a934380",
+        "updated_at": "2026-10-24T00:33:16Z"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 40045556161,
+            "name": "Observation anchored boundary realization",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556161/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556161/logs",
+            "workflow_id": 393410613
+          },
+          {
+            "id": 40045556168,
+            "name": "Source-carry observation limit and Witt/dual adversaries",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 16,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556168/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556168/logs",
+            "workflow_id": 393378248
+          },
+          {
+            "id": 40045556012,
+            "name": "Prime Bridge exact arithmetic EPR star",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 6,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556012/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556012/logs",
+            "workflow_id": 392576987
+          },
+          {
+            "id": 40045556208,
+            "name": "Prime Bridge finite kernel certificates",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 7,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556208/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556208/logs",
+            "workflow_id": 392539742
+          },
+          {
+            "id": 40045556137,
+            "name": "circle-gamma-prime-digit-bridge",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 21,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556137/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556137/logs",
+            "workflow_id": 391680342
+          },
+          {
+            "id": 40045556203,
+            "name": "Orbit clock genesis exact source checks",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 67,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556203/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556203/logs",
+            "workflow_id": 388002645
+          },
+          {
+            "id": 40045556083,
+            "name": "Bidirectional SUCC exact arithmetic cut checks",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 68,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556083/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556083/logs",
+            "workflow_id": 388745913
+          },
+          {
+            "id": 40045556231,
+            "name": "Circle chord-Kummer collision exact research",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 22,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556231/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556231/logs",
+            "workflow_id": 394603745
+          },
+          {
+            "id": 40045556073,
+            "name": "Source-minimality clock carry renewal exact checks",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 72,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556073/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556073/logs",
+            "workflow_id": 387909696
+          },
+          {
+            "id": 40045556219,
+            "name": "Coherent infinite arithmetic EPR code tower",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556219/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556219/logs",
+            "workflow_id": 392620892
+          },
+          {
+            "id": 40045556027,
+            "name": "Reciprocal SUCC FUCC Pascal exact source",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 36,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556027/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556027/logs",
+            "workflow_id": 392879010
+          },
+          {
+            "id": 40045556177,
+            "name": "Source-faithful bidirectional histories (exact)",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 6,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556177/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556177/logs",
+            "workflow_id": 393381511
+          },
+          {
+            "id": 40045556237,
+            "name": "Observation pinned arithmetic intrinsic geometry",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 16,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556237/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556237/logs",
+            "workflow_id": 393291313
+          },
+          {
+            "id": 40045556070,
+            "name": "HISTORY-DTN exact finite probes",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 4,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556070/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556070/logs",
+            "workflow_id": 392896329
+          },
+          {
+            "id": 40045556198,
+            "name": "Duck Principle trusted Lean kernel",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 18,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556198/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556198/logs",
+            "workflow_id": 391713747
+          },
+          {
+            "id": 40045556188,
+            "name": "Circle time-carry and 3-adic resonance exact research",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 12,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556188/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556188/logs",
+            "workflow_id": 394629559
+          },
+          {
+            "id": 40045556247,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 235,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556247/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556247/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 40045556318,
+            "name": "Reality Pin exact sources and Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 10,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556318/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556318/logs",
+            "workflow_id": 393554121
+          },
+          {
+            "id": 40045556280,
+            "name": "Boundary-port geometry selection (exact rational)",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 6,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556280/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556280/logs",
+            "workflow_id": 393407142
+          },
+          {
+            "id": 40045556204,
+            "name": "Spectral boundary source rigidity exact",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 14,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556204/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556204/logs",
+            "workflow_id": 393427283
+          },
+          {
+            "id": 40045556051,
+            "name": "Pinned formal kernel and proposition exports",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 35,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556051/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556051/logs",
+            "workflow_id": 390972806
+          },
+          {
+            "id": 40045556270,
+            "name": "Secondary-circle prime/chord exact source and controls",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 11,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556270/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556270/logs",
+            "workflow_id": 394628898
+          },
+          {
+            "id": 40045556152,
+            "name": "Source-faithful carry exact sources and Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 6,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556152/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556152/logs",
+            "workflow_id": 394347008
+          },
+          {
+            "id": 40045556239,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 547,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556239/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556239/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 40045556043,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 425,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556043/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556043/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 40045556206,
+            "name": "Exterior determinant kernel research",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 9,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556206/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556206/logs",
+            "workflow_id": 391321776
+          },
+          {
+            "id": 40045556075,
+            "name": "Duck and pi exact research kernel",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 13,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556075/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556075/logs",
+            "workflow_id": 391762709
+          },
+          {
+            "id": 40045556094,
+            "name": "Arithmetic wavefront and spectral-response certificates",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 22,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556094/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556094/logs",
+            "workflow_id": 386348153
+          },
+          {
+            "id": 40045556261,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 3805,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556261/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40045556261/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      }
+    },
+    {
+      "pr": 251,
+      "metadata": {
+        "url": "https://github.com/femboy2112/SUCC/pull/251",
+        "number": 251,
+        "state": "open",
+        "merged": false,
+        "draft": true,
+        "title": "CYC-03: BBP four-pole lane CLOSED (exact countermodel) + executable proof-mechanism taxonomy",
+        "base": "integrate/academic-main-ix-pi-circle-source-2026-10-23",
+        "base_sha": "f986507851e34636f60bee657dcdf0771a934380",
+        "head": "research/cyc03-bbp-four-pole-lane-2026-10-23",
+        "head_sha": "de257fad8966bbe02ecdd19c2c0e9f68cee77e15",
+        "updated_at": "2026-10-24T03:25:54Z"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 40058272010,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 238,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40058272010/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40058272010/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 40058272026,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 428,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40058272026/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40058272026/logs",
+            "workflow_id": 386978686
+          },
+          {
+            "id": 40058272191,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 550,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40058272191/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40058272191/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 40058271965,
+            "name": "Observational SUCC validation",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 3814,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40058271965/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40058271965/logs",
+            "workflow_id": 380913247
+          }
+        ]
+      }
+    },
+    {
+      "pr": 252,
+      "metadata": {
+        "url": "https://github.com/femboy2112/SUCC/pull/252",
+        "number": 252,
+        "state": "open",
+        "merged": false,
+        "draft": true,
+        "title": "[DRAFT] Repair DeepSeek BBP source typing; prove positive Green/Hausdorff memory and false-cost witnesses",
+        "base": "research/cyc03-bbp-four-pole-lane-2026-10-23",
+        "base_sha": "de257fad8966bbe02ecdd19c2c0e9f68cee77e15",
+        "head": "research/bbp-source-fidelity-hausdorff-moment-2026-10-24",
+        "head_sha": "364962ac0c0e8fb4d06c37468a5d50336d68a9ee",
+        "updated_at": "2026-10-24T04:10:41Z"
+      },
+      "ci": {
+        "workflow_runs": [
+          {
+            "id": 40061311968,
+            "name": "Institute theorem contracts and core Lean",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 242,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40061311968/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40061311968/logs",
+            "workflow_id": 388839929
+          },
+          {
+            "id": 40061311977,
+            "name": "Observational SUCC validation",
+            "status": "in_progress",
+            "conclusion": null,
+            "run_number": 3834,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40061311977/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40061311977/logs",
+            "workflow_id": 380913247
+          },
+          {
+            "id": 40061311978,
+            "name": "One Object II original source cancellation and zero-shift Schur",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 554,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40061311978/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40061311978/logs",
+            "workflow_id": 385135609
+          },
+          {
+            "id": 40061311966,
+            "name": "BBP source fidelity and signed-pole Hausdorff memory",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 18,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40061311966/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40061311966/logs",
+            "workflow_id": 394808872
+          },
+          {
+            "id": 40061311979,
+            "name": "Collective observer source and certificate replay",
+            "status": "completed",
+            "conclusion": "success",
+            "run_number": 432,
+            "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40061311979/jobs",
+            "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40061311979/logs",
+            "workflow_id": 386978686
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+/tmp/cyclotomic-selected-lean-final2/build-wjxgfzv0/twisted-clock-sign_mutant.lean:6:2: error: type mismatch
+  twisted_clock_identity (fun x => 1) (fun x => 1)
+    (fun s d => of_eq_true (Eq.trans (congrArg (Eq 1) (mul_one 1)) (eq_self 1))) fun s =>
+    of_eq_true (Eq.trans (congrArg (fun x => x = 1) norm_one) (eq_self 1))
+has type
+  (∑ s : ZMod 2, 1 * 1) * (starRingEnd ℂ) (∑ s : ZMod 2, 1 * 1) =
+    ∑ d : ZMod 2, clockCorrelation (fun x => 1) d * 1 : Prop
+but is expected to have type
+  (∑ s : ZMod 2, 1 * 1) * (starRingEnd ℂ) (∑ s : ZMod 2, 1 * 1) =
+    -∑ d : ZMod 2, clockCorrelation (fun x => 1) d * 1 : Prop

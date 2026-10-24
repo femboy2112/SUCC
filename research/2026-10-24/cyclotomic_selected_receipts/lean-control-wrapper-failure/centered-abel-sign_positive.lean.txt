@@ -1,0 +1,6 @@
+import CyclotomicSelectedSource
+open scoped BigOperators ComplexConjugate
+open ObservationalSUCC.CyclotomicSelectedSource
+open ObservationalSUCC.PiSourceGenesis ObservationalSUCC.BaileyCrandall
+example : (∑ s ∈ Finset.range (1+1), (1 : ℂ)*((s : ℂ)-0)) = prefixSum (fun _ => 1) (1+1)*((1 : ℂ)-0) - ∑ s ∈ Finset.range 1, prefixSum (fun _ => 1) (s+1)*(((s+1 : ℕ) : ℂ)-(s : ℂ)) := by
+  exact centered_abel_identity (fun _ => 1) (fun s => (s : ℂ)) 1
