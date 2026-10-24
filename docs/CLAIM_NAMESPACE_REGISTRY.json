@@ -14,6 +14,22 @@
   },
   "namespaces": [
     {
+      "namespace": "PI_PASCAL_LUCAS_QUOTIENT",
+      "bare_prefix": "PLQ",
+      "fq_prefix": "PLQ",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PASCAL_LUCAS_QUOTIENT.md"
+      ],
+      "id_count": 14,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/VERIFIED FINITE/REFUTED/UNVERIFIED); pi normality OPEN; no new Lean authority",
+      "topic": "Lucas prime-support incidence tensors, symmetric Pascal quotients, ternary coding, selected carry-information loss and explicit prime-base transfer obstructions",
+      "code": [
+        "observational_succ/pascal_lucas_quotient.py",
+        "tests/test_pascal_lucas_quotient.py",
+        "scripts/pascal_lucas_quotient_probe.py"
+      ]
+    },
+    {
       "namespace": "SOURCE_PATH_SELECTION",
       "bare_prefix": "SPS",
       "fq_prefix": "SPS",

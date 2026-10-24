@@ -1,0 +1,41 @@
+{
+  "four_bit_synthetic_rank_mse": {
+    "10": "2617/53760",
+    "11": "1407/28160",
+    "12": "3229/63360",
+    "4": "0",
+    "5": "1/40",
+    "6": "17/480",
+    "7": "23/560",
+    "8": "799/17920",
+    "9": "505/10752"
+  },
+  "independent_tensor_quotient_comparisons": 3,
+  "lucas_direct_integer_comparisons": 25079,
+  "lucas_state_dimensions": {
+    "2": [
+      3,
+      9,
+      27,
+      81
+    ],
+    "3": [
+      6,
+      36,
+      216,
+      1296
+    ],
+    "5": [
+      15,
+      225,
+      3375,
+      50625
+    ]
+  },
+  "pi_normality": "OPEN",
+  "prime_three_support_equals_residue": "REFUTED: binom(2,1)=2 mod 3",
+  "scope": "exact finite Lucas cells and synthetic rank-gate control; not BBP",
+  "ternary_succ_rank_descent": "REFUTED: (0,1),(1,0) -> (1,1),(2,0)",
+  "two_to_three_uniform_overlap_at_four_digits": "1/16",
+  "two_to_three_uniform_tv_at_four_digits": "15/16"
+}

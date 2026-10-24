@@ -1,5 +1,13 @@
 # Research claim ledger
 
+The additive [Pascal/Lucas quotient supplement PLQ-01--14](CLAIM_SUPPLEMENT_PASCAL_LUCAS_QUOTIENT.md)
+proves an exact Boolean-incidence/binomial-transform quotient, prime-p Lucas
+tensors, nontrivial positional kernel, explicit additive/successor obstructions,
+source symmetrization loss and a synthetic four-bit gate residual. Prime
+support overlap 1/16 is NOT a real BBP carry bound. Full proofs and honest
+source boundary: [Pascal quotient research](../research/2026-10-24/PI_PASCAL_LUCAS_QUOTIENT.md).
+**Pi normality and actual selected real carry control remain OPEN.**
+
 The additive [source path selection supplement SPS-01--25](CLAIM_SUPPLEMENT_SOURCE_PATH_SELECTION.md)
 records exact interference projectors, quantitative selection limits, the
 raw-amplitude extension obstruction, positive-history stationarity and a
