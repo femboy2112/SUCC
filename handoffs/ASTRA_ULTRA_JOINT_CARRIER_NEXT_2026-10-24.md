@@ -10,6 +10,7 @@ provenance/IMPORT_MANIFEST.json, claim registry and the full exact source.
 ## Read first and preserve
 
 - `research/2026-10-24/PI_JOINT_CARRIER_INTERFEROMETRY.md`
+- `research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md` **(JPC-23--26)**
 - `observational_succ/pi_joint_prime_carrier.py`
 - `tests/test_pi_joint_prime_carrier.py` and `tests/test_pi_joint_pole_clocks.py`
 - `scripts/pi_joint_prime_carrier_probe.py`
@@ -98,3 +99,18 @@ any silent replacement of p-adic integral lift by p-primary torsion;
 any infinite prime product outside finite adeles or a source-justified
 regularization; any proof announcement without a genuinely new selected
 Fourier or discrepancy bound.
+
+## Critical new JPC-23--26 source-specific failure mode (limit order)
+
+The **original forcing** r(n), not an artificial model, has EXACT p-local
+Haar multiplier for p>=7: `1-4/p^(v_p(h)+1)-4/p^(v_p(h)+2)`.
+For fixed h!=0, the full p-product through X damps as `(log X)^-4`.
+Forcing r(n) is rational with finite odd-prime support at each n and
+r(n)->0, giving `lim_X lim_N A_N,X(h)=0`, while
+`lim_N lim_X A_N,X(h)=1` for the synchronized source.
+**DO NOT transfer either limit to U_n** without a proof. The gap is the
+memory-bearing multiplier-16 dynamics and literal carry. Preserve the
+unsuccessful `<1/30` finite-product threshold as a hostile control; the
+actual 10-prime product is between 1/30 and 1/20. Next real task is
+source-selected signed correlations for `exp(2pi i h U_n)`, not a local
+Haar average of r. The addendum is paper authority, not a Lean theorem.

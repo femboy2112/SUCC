@@ -1,5 +1,17 @@
 # Research roadmap
 
+**2026-10-24 Joint Carrier limit-order addendum.**
+The [exact local-Haar theorem](../research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md)
+computes a prime-local Fourier mean from the genuine four-pole forcing
+and proves (log X)^(-4) decay of prime-first Haar averages. On the same
+authentic integer forcing sequence, reconstructing all odd-primary rational
+phases first yields time-average 1, whereas time-averaging each finite
+prime set first then adding all primes yields 0. **These iterated limits do
+not commute.** This removes the illicit independent-prime-ensemble shortcut
+and sharpens the next gate: retain literal U_n memory and prove an authentic
+selected cross-prime character saving. Local forcing cancellation cannot
+be promoted to an orbit theorem. [JPC-23--26](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md).
+
 **2026-10-24 Joint Carrier moonshot (research draft).**
 The [all-prime source dossier](../research/2026-10-24/PI_JOINT_CARRIER_INTERFEROMETRY.md)
 reconstructs each rational BBP circle phase from a finite moving family of odd

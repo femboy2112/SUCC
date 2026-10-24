@@ -20,14 +20,16 @@
       "supplement_files": [
         "docs/CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md"
       ],
-      "id_count": 22,
+      "id_count": 26,
       "status": "RESEARCH (CLASSICAL/PROVED PAPER/VERIFIED FINITE/REFUTED/UNVERIFIED); pi normality OPEN; no new Lean authority",
-      "topic": "authentic BBP odd-denominator source and dyadic clock, full synchronized prime torsion phases, prime-power pole CRT laws, p3/5 Hensel exceptions, finite-adelic completion obstruction, full-factorial synergy, quantified pi Fourier bridge",
+      "topic": "authentic BBP odd-denominator source and dyadic clock, full synchronized prime torsion phases, prime-power pole CRT laws, p3/5 Hensel exceptions, finite-adelic completion obstruction, full-factorial synergy, quantified pi Fourier bridge; exact four-pole local Haar character multipliers and source-specific noncommuting all-prime averaging limits",
       "code": [
         "observational_succ/pi_joint_prime_carrier.py",
         "tests/test_pi_joint_prime_carrier.py",
         "tests/test_pi_joint_pole_clocks.py",
-        "scripts/pi_joint_prime_carrier_probe.py"
+        "scripts/pi_joint_prime_carrier_probe.py",
+        "scripts/pi_joint_limit_order_probe.py",
+        "tests/test_pi_joint_haar_limit_order.py"
       ]
     },
     {

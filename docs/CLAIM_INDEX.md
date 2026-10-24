@@ -1,5 +1,15 @@
 # Claim Index
 
+**2026-10-24 Joint Carrier local Fourier limit-order addendum (research):**
+[JPC-23--26](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md) and
+[full four-pole Haar/limit theorem](../research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md).
+The fixed actual BBP one-step forcing has a closed exact prime-local Haar
+character: for p>=7, h nonzero, it equals
+1-4/p^(v_p(h)+1)-4/p^(v_p(h)+2). Fixed prime-set averages along actual
+integer time factor through CRT and Haar, with product decay of order
+(log X)^(-4); **prime-first versus source-first iterated limits are 0 and 1**.
+The memory-bearing U_n orbit and its pi-normality estimate remain OPEN.
+
 **2026-10-24 source-aligned all-prime carrier / adelic obstruction:**
 [JPC-01--22](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md),
 [complete paper and negative-control dossier](../research/2026-10-24/PI_JOINT_CARRIER_INTERFEROMETRY.md),

@@ -378,3 +378,65 @@ def source_innovation_poles(n: int) -> tuple[int, ...]:
     for d in source_denominators:
         candidates.update(denominator_primes(d))
     return tuple(sorted(p for p in candidates if p>=7))
+
+
+def ramanujan_prime_power_mean(p: int, depth: int, h: int) -> Q:
+    """Mean of e(h*u/p^depth) over units u mod p^depth (Ramanujan)."""
+    _prime(p); _nat(depth,'depth',1)
+    if type(h) is not int:
+        raise ValueError('integer frequency required')
+    modulus=p**depth
+    if h%modulus==0:
+        return Q(1)
+    if h%(modulus//p)==0:
+        return Q(-1,p-1)
+    return Q(0)
+
+
+def forcing_local_haar_character(p: int, h: int) -> Q:
+    """EXACT Haar_Zp integral of e(h*lambda_p(r(t))), prime p>=7.
+
+    This is one-step *forcing*, not the memory-bearing source U_n.
+    Proof: 4 disjoint simple poles, unit-leading residue and Ramanujan sums.
+    """
+    _high_prime(p)
+    if type(h) is not int:
+        raise ValueError('integer Fourier mode required')
+    if h==0:
+        return Q(1)
+    a=0
+    m=abs(h)
+    while m%p==0:
+        m//=p
+        a+=1
+    return Q(1)-Q(4,p**(a+1))-Q(4,p**(a+2))
+
+
+def forcing_haar_shell_oracle(p: int, h: int) -> Q:
+    """Independent derivation via explicit p-adic shells and Ramanujan means.
+
+    Terms deeper than v_p(h)+1 have zero Ramanujan mean, so the infinite
+    distribution sum is EXACTLY finite, not a numerical truncation.
+    """
+    _high_prime(p)
+    if type(h) is not int:
+        raise ValueError('integer Fourier mode required')
+    if h==0:
+        return Q(1)
+    a=0
+    m=abs(h)
+    while m%p==0:
+        m//=p
+        a+=1
+    out=Q(1)-Q(4,p)
+    for k in range(1,a+2):
+        out+=4*Q(p-1,p**(k+1))*ramanujan_prime_power_mean(p,k,h)
+    return out
+
+
+def forcing_haar_product(primes: Iterable[int],h: int) -> Q:
+    """Exact product of finite-place Haar MEANS, not source-selected mean."""
+    out=Q(1)
+    for p in primes:
+        out*=forcing_local_haar_character(p,h)
+    return out

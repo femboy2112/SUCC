@@ -1,5 +1,15 @@
 # Research claim ledger
 
+JPC-23--26 [Joint Carrier Fourier/limit addendum](../research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md)
+prove the authentic BBP *forcing* local Haar character multipliers, finite-
+prime CRT time means, logarithmic fourth-power prime-product damping, and
+noncommutation of reconstruct-first versus local-average-first limits
+(1 versus 0). This is a rigorous source-specific failure mode for independent
+prime-observer averaging, NOT cancellation of the authentic history U_n.
+[JPC supplement](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md),
+[exact receipt](../research/2026-10-24/PI_JOINT_LIMIT_ORDER_RECEIPT.json).
+π normality remains OPEN.
+
 The additive [Joint Prime Carrier supplement JPC-01--22](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md)
 records a source-faithful full odd-prime character product, the nontrivial
 dyadic integral source, prime-power pole activation and CRT independence,

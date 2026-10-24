@@ -1,9 +1,12 @@
-# Joint prime-carrier claims (JPC-01--22)
+# Joint prime-carrier claims (JPC-01--26)
 
 **Research-only, additive namespace.** Inherits fixed BBP source/dyadic and Pascal
 research #270/#272, source-history #273, Lucas quotient #274. Complete paper
 proofs, adversarial tests, exact assumptions and provenance:
 [PI_JOINT_CARRIER_INTERFEROMETRY.md](../research/2026-10-24/PI_JOINT_CARRIER_INTERFEROMETRY.md).
+[JPC-23--26 limit-order addendum](../research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md)
+contains exact four-pole local Haar multipliers and a noncommuting-limit
+theorem on the original one-step forcing (NOT the orbit).
 `pi normality = OPEN`, no logical independence result, no new Lean authority.
 
 | Claim | Boundary and actual statement | Status | Critical control / remaining obligation |
@@ -30,6 +33,11 @@ proofs, adversarial tests, exact assumptions and provenance:
 | JPC-20 | Average count of p>=7 forcing pole primes up to N is 4 log log N+O(1), conditional only on classical Mertens/PNT inputs | PROVED PAPER / CLASSICAL INPUT | Empirical small N counts are not universal proof |
 | JPC-21 | BBP positive tail gives exact rational 1/16 digit gates on a finite sample; 1..512 all certified in probe | VERIFIED FINITE + inherited kernel bound | Not a long-range normality law |
 | JPC-22 | Every all-prime fractional observation can miss the integer lift under rational division; necessary carry data is an integral residue / source lift, not another fractional marginal | PROVED PAPER | x vs x+1, divide by 5; links inherited PJT carry torsor |
+
+| JPC-23 | For each p>=7 and nonzero integer h, Haar_Zp character mean of authentic one-step forcing equals `1 - 4/p^(v_p(h)+1) - 4/p^(v_p(h)+2)` | PROVED PAPER with CLASSICAL Ramanujan sums | Two different exact integer/Fraction evaluators and finite noncertifying oscillatory oracle; p3/p5 excluded |
+| JPC-24 | For any finite prime set P, time average of source-synchronized products of one-step forcing characters converges to product of local Haar means | PROVED PAPER with CLASSICAL CRT/Haar/Riemann | Restricts P finite before N->infinity; singular p-adic pole sets are null |
+| JPC-25 | For fixed h!=0, p>=7 local Haar multiplier product through X is asymptotic to `C_h/(log X)^4` with C_h>0 | PROVED PAPER with CLASSICAL Mertens | Exponent four counts pole classes; exact finite product need not meet guessed thresholds |
+| JPC-26 | For authentic forcing r(n), the limit order X then N of finite-prime character mean equals 0, but N then X equals 1 | PROVED PAPER / noncommuting-limit boundary | Applies to r(n), NOT memory-bearing U_n; source-selected pi Fourier cancellation OPEN |
 
 **Verdict:** a synchronized all-prime representation and exact source pole clock
 geometry exist and are useful. The continuation must respect four independent
