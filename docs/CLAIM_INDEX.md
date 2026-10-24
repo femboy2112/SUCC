@@ -1,5 +1,17 @@
 # Claim Index
 
+**2026-10-24 source path / infinite observer continuation:**
+[SPS-01--25](CLAIM_SUPPLEMENT_SOURCE_PATH_SELECTION.md) and
+[research synthesis](../research/2026-10-24/PI_PATH_SELECTION_SYNTHESIS.md).
+Exact interference selects the authenticated source; the BBP enclosures
+already isolate pi/16. Quantified selection/occupation limits expose when
+an observer ensemble loses the selected path. Positive-history preservation
+has an exact transport bridge to same-law tripling, with the existential
+schedule correctly labelled an equivalence. Raw amplitude variation and
+signed/filter/fast-schedule controls delimit unsupported infinite limits.
+Authentic all-scale real collision and source-law preservation remain OPEN.
+No normality proof or new Lean authority is claimed.
+
 **2026-10-24 Pascal / source geometry continuation:**
 [PJT-01--30](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md) and
 [research synthesis](../research/2026-10-24/PI_PASCAL_SYNTHESIS.md).

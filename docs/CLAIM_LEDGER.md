@@ -1,5 +1,11 @@
 # Research claim ledger
 
+The additive [source path selection supplement SPS-01--25](CLAIM_SUPPLEMENT_SOURCE_PATH_SELECTION.md)
+records exact interference projectors, quantitative selection limits, the
+raw-amplitude extension obstruction, positive-history stationarity and a
+source-preservation bridge. Its real all-scale and same-law arithmetic
+premises remain OPEN; no pi-normality or new Lean authority is claimed.
+
 The additive [Pascal source supplement PJT-01--30](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md)
 records exact dyadic difference valuations, minimax Mahler approximation,
 positive real kernels, coherent prime-base filters, explicit carry costs,
