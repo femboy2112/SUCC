@@ -37,15 +37,24 @@ def divisors(n: int) -> tuple[int, ...]:
     return tuple(j for j in range(1, n + 1) if n % j == 0)
 
 
-@lru_cache(None)
 def cyclotomic_value(base: int, index: int) -> int:
-    """Phi_index(base) by exact divisor recursion: no polynomial float roots."""
+    """Exact Phi_index(base), with VALIDATION BEFORE cached recursion.
+
+    functools.lru_cache's equal-key aliases (1 versus 1.0) can otherwise
+    bypass the integer-only source contract when previous entries exist.
+    """
     _base(base)
     _nat(index, 1)
+    return _cyclotomic_integer_cached(base, index)
+
+
+@lru_cache(None)
+def _cyclotomic_integer_cached(base: int, index: int) -> int:
+    """Private: reached only after the public typed argument gate."""
     value = base**index - 1
     for d in divisors(index):
         if d != index:
-            v = cyclotomic_value(base, d)
+            v = _cyclotomic_integer_cached(base, d)
             if value % v:
                 raise ArithmeticError("cyclotomic divisibility invariant violated")
             value //= v
