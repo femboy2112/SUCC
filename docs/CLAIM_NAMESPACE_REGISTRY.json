@@ -14,6 +14,24 @@
   },
   "namespaces": [
     {
+      "namespace": "PI_DYADIC_BASE_TRANSPORT",
+      "bare_prefix": "DBT",
+      "fq_prefix": "DBT",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_DYADIC_BASE_TRANSPORT.md"
+      ],
+      "id_count": 21,
+      "status": "RESEARCH (PROVED PAPER/LOCAL/CONDITIONAL/EXTERNAL THEOREM/EXACT FINITE/OPEN); no new Lean authority",
+      "topic": "authentic BBP dyadic isometry, four-bit collision refinement, bounded prime-cover carry, finite prime tomography and conditional base-3 measure rigidity",
+      "code": [
+        "observational_succ/bbp_two_adic.py",
+        "observational_succ/pi_binary_branch.py",
+        "observational_succ/prime_base_carry.py",
+        "observational_succ/pi_base_transport.py",
+        "scripts/pi_dyadic_base_probe.py"
+      ]
+    },
+    {
       "namespace": "PI_SOURCE_COLLISION_ENTROPY",
       "bare_prefix": "SCE",
       "fq_prefix": "SCE",

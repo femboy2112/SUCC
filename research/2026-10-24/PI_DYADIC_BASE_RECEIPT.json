@@ -1,0 +1,1757 @@
+{
+  "clock": {
+    "complete_quotients": [
+      {
+        "bits": 1,
+        "forcing_permutation": true,
+        "modulus": 2,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      },
+      {
+        "bits": 2,
+        "forcing_permutation": true,
+        "modulus": 4,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      },
+      {
+        "bits": 3,
+        "forcing_permutation": true,
+        "modulus": 8,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      },
+      {
+        "bits": 4,
+        "forcing_permutation": true,
+        "modulus": 16,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      },
+      {
+        "bits": 5,
+        "forcing_permutation": true,
+        "modulus": 32,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      },
+      {
+        "bits": 6,
+        "forcing_permutation": true,
+        "modulus": 64,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      },
+      {
+        "bits": 7,
+        "forcing_permutation": true,
+        "modulus": 128,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      },
+      {
+        "bits": 8,
+        "forcing_permutation": true,
+        "modulus": 256,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      },
+      {
+        "bits": 9,
+        "forcing_permutation": true,
+        "modulus": 512,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      },
+      {
+        "bits": 10,
+        "forcing_permutation": true,
+        "modulus": 1024,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      },
+      {
+        "bits": 11,
+        "forcing_permutation": true,
+        "modulus": 2048,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      },
+      {
+        "bits": 12,
+        "forcing_permutation": true,
+        "modulus": 4096,
+        "reduction_compatible": true,
+        "source_permutation": true,
+        "zero_value": 0
+      }
+    ],
+    "composition_3_5": true,
+    "heldout_modular_transport_real_cost": {
+      "bits": 10,
+      "cost": {
+        "denominator_bits": 8874,
+        "exact_binary_fraction_sha256": "1e9ea1e0b6d47ce893f10e2d6247294d40b30baf33a8a8bcd6ecd33ae988dcec",
+        "lower": "250518593099/1000000000000",
+        "numerator_bits": 8872,
+        "upper": "2505185931/10000000000",
+        "width": "1/1000000000000"
+      },
+      "normality_inference": false
+    },
+    "odd_time_transports": [
+      {
+        "bits": 4,
+        "inverse_verified": true,
+        "multiplier": 3,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 4,
+        "inverse_verified": true,
+        "multiplier": 5,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 4,
+        "inverse_verified": true,
+        "multiplier": 7,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 4,
+        "inverse_verified": true,
+        "multiplier": 11,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 4,
+        "inverse_verified": true,
+        "multiplier": 13,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 7,
+        "inverse_verified": true,
+        "multiplier": 3,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 7,
+        "inverse_verified": true,
+        "multiplier": 5,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 7,
+        "inverse_verified": true,
+        "multiplier": 7,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 7,
+        "inverse_verified": true,
+        "multiplier": 11,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 7,
+        "inverse_verified": true,
+        "multiplier": 13,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 10,
+        "inverse_verified": true,
+        "multiplier": 3,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 10,
+        "inverse_verified": true,
+        "multiplier": 5,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 10,
+        "inverse_verified": true,
+        "multiplier": 7,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 10,
+        "inverse_verified": true,
+        "multiplier": 11,
+        "permutation": true,
+        "source_congruence": true
+      },
+      {
+        "bits": 10,
+        "inverse_verified": true,
+        "multiplier": 13,
+        "permutation": true,
+        "source_congruence": true
+      }
+    ],
+    "zero_checked_bits": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      32,
+      48,
+      64,
+      100,
+      128
+    ]
+  },
+  "controls": {
+    "cantor_changed_source": {
+      "cost": {
+        "denominator_bits": 33,
+        "exact_binary_fraction_sha256": "944b722e00c845b622581b4b8730d604a42947c3408567a8f8315d818caa8968",
+        "lower": "66666666651/1000000000000",
+        "numerator_bits": 29,
+        "upper": "16666666663/250000000000",
+        "width": "1/1000000000000"
+      },
+      "depth": 8,
+      "exact_formula": "(1-16^-8)/15",
+      "positive_collision_dimension_does_not_imply_tripling": true
+    },
+    "rejected_mutations": [
+      "nonbijective matching",
+      "marginal-halves multiplied",
+      "uniform odd-prime carry marginals",
+      "dropped carry memory",
+      "2-adic congruence treated as real closeness"
+    ],
+    "uniform_grid": {
+      "size": 257,
+      "sorted_tripling_cost": "0"
+    }
+  },
+  "half_and_one_sixteenth_refinement_proved_for_dyadic_unwrapped_source": true,
+  "half_retention_proved_for_real_source": false,
+  "pi_normality": "OPEN",
+  "precision": "exact integer/Fraction decisions; decimal summaries outward rounded",
+  "source_sha256": {
+    "observational_succ/bbp_two_adic.py": "6b2b54ac51851ffafaee0d3072a39efb81f05ca14e4938c312568d65b7c07ac7",
+    "observational_succ/pi_base_transport.py": "4cb5ad0dbf7724abe086a0b5e6e2a34f143d72d72cf5ca6cc605ba4f71fdf4ad",
+    "observational_succ/pi_binary_branch.py": "f3f06fa4eadb5c5d8635dadba0569c0b7eded3c9f84869df9df8829b6c612044",
+    "observational_succ/pi_source_collision.py": "c3d1868624c3547124fd2cf33da35e10e8c48bec7922095cad83fb446f18a777",
+    "research/2026-10-24/PI_DYADIC_BASE_PREREGISTRATION.md": "c7243bc4eafab763fff5b74f6b015aba2d588c23e10f50b9bf4769d612504b0c",
+    "scripts/pi_dyadic_base_probe.py": "ace796602a8e160a75459712605519861d4c16266a942740978e027024371701"
+  },
+  "source_windows": [
+    {
+      "automatic_times16_bound": {
+        "denominator_bits": 299,
+        "exact_binary_fraction_sha256": "3f3026f51a8ad8743a26acb54e760deb2e071acfebfcb437b16c406a0634f096",
+        "lower": "4788853469/250000000000",
+        "numerator_bits": 293,
+        "upper": "19155413877/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "automatic_times16_cost": {
+        "denominator_bits": 261,
+        "exact_binary_fraction_sha256": "654bb3996fc383eff7ab92a128492d9d944ae57b3ebc5ffb4d2d14a12ce85f50",
+        "lower": "2782829673/500000000000",
+        "numerator_bits": 254,
+        "upper": "5565659347/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "branch_diagnostics": {
+        "direct_fraction_crosscheck": true,
+        "forcing_span": "44782959037/22467499613559",
+        "overlap_length": 26,
+        "radii_are_diagnostic_not_asymptotic_schedule": true,
+        "rows": [
+          {
+            "conditional_retentions": [
+              "95/182",
+              "61/95",
+              "37/61",
+              "32/37"
+            ],
+            "depth": 0,
+            "diagonal_included": 26,
+            "half_allowances_per_sample": [
+              "4/13",
+              "27/26",
+              "1/2",
+              "27/26"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              364,
+              190,
+              122,
+              74,
+              64
+            ],
+            "radius": "1/4",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 17,
+              "-2": 10,
+              "-3": 29,
+              "-4": 24,
+              "-5": 12,
+              "-6": 24,
+              "-7": 29,
+              "-8": 5,
+              "0": 64,
+              "1": 17,
+              "2": 10,
+              "3": 29,
+              "4": 24,
+              "5": 12,
+              "6": 24,
+              "7": 29,
+              "8": 5
+            },
+            "zero_retention": "16/91"
+          },
+          {
+            "conditional_retentions": [
+              "19/32",
+              "17/19",
+              "14/17",
+              "1"
+            ],
+            "depth": 1,
+            "diagonal_included": 26,
+            "half_allowances_per_sample": [
+              "3/13",
+              "15/26",
+              "11/26",
+              "7/13"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              64,
+              38,
+              34,
+              28,
+              28
+            ],
+            "radius": "22288367777411/1437919975267776",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 2,
+              "-2": 0,
+              "-3": 6,
+              "-4": 3,
+              "-5": 0,
+              "-6": 2,
+              "-7": 5,
+              "-8": 0,
+              "0": 28,
+              "1": 2,
+              "2": 0,
+              "3": 6,
+              "4": 3,
+              "5": 0,
+              "6": 2,
+              "7": 5,
+              "8": 0
+            },
+            "zero_retention": "7/16"
+          }
+        ]
+      },
+      "collision_comparison": {
+        "diagnostic_M": 16,
+        "dyadic_ordered_pairs": 49,
+        "dyadic_scaled": "784/729",
+        "prescribed_M": 1,
+        "real_ordered_pairs": 129,
+        "real_scaled": "688/243",
+        "real_to_dyadic_ratio": "129/49"
+      },
+      "full_length": 27,
+      "holdout_for_this_instrument": false,
+      "prime": 73,
+      "same_index_tripling_cost": {
+        "denominator_bits": 295,
+        "exact_binary_fraction_sha256": "e5c9ee539c6bacbb8621c5c6169e67f47707f3b0ef670acfd610a9184dd31cc5",
+        "lower": "250771010537/1000000000000",
+        "numerator_bits": 293,
+        "upper": "125385505269/500000000000",
+        "width": "1/1000000000000"
+      },
+      "sorting_tripling_cost": {
+        "denominator_bits": 265,
+        "exact_binary_fraction_sha256": "bdbccbd40fabb41e7755950819b2b6ffbdbd0ba2a599e42dbeb0fd75967ebaca",
+        "lower": "22129461233/125000000000",
+        "numerator_bits": 263,
+        "upper": "35407137973/200000000000",
+        "width": "1/1000000000000"
+      },
+      "source_end": 36,
+      "source_start": 10,
+      "source_to_pi_tripling_budget": {
+        "denominator_bits": 203,
+        "exact_binary_fraction_sha256": "791a90fc1a7c071ff8d373f560274453e40fc129ed4a7e29acc95e2c93f0a604",
+        "lower": "175648911/1000000000000",
+        "numerator_bits": 190,
+        "upper": "10978057/62500000000",
+        "width": "1/1000000000000"
+      },
+      "tripling_observable_lower": {
+        "denominator_bits": 305,
+        "exact_binary_fraction_sha256": "528cff78951098da13214ad62f20abc16f587140e0957db7598399cea9919a53",
+        "lower": "5719404651/500000000000",
+        "numerator_bits": 298,
+        "upper": "11438809303/1000000000000",
+        "width": "1/1000000000000"
+      }
+    },
+    {
+      "automatic_times16_bound": {
+        "denominator_bits": 809,
+        "exact_binary_fraction_sha256": "2cbb400de99027825f7d9bf3eb67d305c3400aefd37b5c97c45e2e6f71cc4af4",
+        "lower": "1760340639/250000000000",
+        "numerator_bits": 802,
+        "upper": "7041362557/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "automatic_times16_cost": {
+        "denominator_bits": 764,
+        "exact_binary_fraction_sha256": "06cf25ba571d7c5346ab9d41b779b0dab211ae0515b2390e4eb4f0f663392a25",
+        "lower": "3719283819/1000000000000",
+        "numerator_bits": 756,
+        "upper": "185964191/50000000000",
+        "width": "1/1000000000000"
+      },
+      "branch_diagnostics": {
+        "direct_fraction_crosscheck": true,
+        "forcing_span": "4077478858054/12049641257476545",
+        "overlap_length": 71,
+        "radii_are_diagnostic_not_asymptotic_schedule": true,
+        "rows": [
+          {
+            "conditional_retentions": [
+              "1339/2553",
+              "681/1339",
+              "371/681",
+              "221/371"
+            ],
+            "depth": 0,
+            "diagonal_included": 71,
+            "half_allowances_per_sample": [
+              "125/142",
+              "23/142",
+              "61/142",
+              "1/2"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              2553,
+              1339,
+              681,
+              371,
+              221
+            ],
+            "radius": "1/4",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 140,
+              "-2": 169,
+              "-3": 156,
+              "-4": 155,
+              "-5": 166,
+              "-6": 160,
+              "-7": 145,
+              "-8": 75,
+              "0": 221,
+              "1": 140,
+              "2": 169,
+              "3": 156,
+              "4": 155,
+              "5": 166,
+              "6": 160,
+              "7": 145,
+              "8": 75
+            },
+            "zero_retention": "221/2553"
+          },
+          {
+            "conditional_retentions": [
+              "9/13",
+              "103/153",
+              "97/103",
+              "83/97"
+            ],
+            "depth": 1,
+            "diagonal_included": 71,
+            "half_allowances_per_sample": [
+              "85/142",
+              "53/142",
+              "91/142",
+              "69/142"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              221,
+              153,
+              103,
+              97,
+              83
+            ],
+            "radius": "12033331342044329/771177040478498880",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 6,
+              "-2": 8,
+              "-3": 9,
+              "-4": 3,
+              "-5": 7,
+              "-6": 17,
+              "-7": 12,
+              "-8": 7,
+              "0": 83,
+              "1": 6,
+              "2": 8,
+              "3": 9,
+              "4": 3,
+              "5": 7,
+              "6": 17,
+              "7": 12,
+              "8": 7
+            },
+            "zero_retention": "83/221"
+          },
+          {
+            "conditional_retentions": [
+              "75/83",
+              "71/75",
+              "1",
+              "1"
+            ],
+            "depth": 2,
+            "diagonal_included": 71,
+            "half_allowances_per_sample": [
+              "67/142",
+              "67/142",
+              "1/2",
+              "1/2"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              83,
+              75,
+              71,
+              71,
+              71
+            ],
+            "radius": "692492511478169/725813685156234240",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 1,
+              "-2": 1,
+              "-3": 1,
+              "-4": 0,
+              "-5": 0,
+              "-6": 1,
+              "-7": 2,
+              "-8": 0,
+              "0": 71,
+              "1": 1,
+              "2": 1,
+              "3": 1,
+              "4": 0,
+              "5": 0,
+              "6": 1,
+              "7": 2,
+              "8": 0
+            },
+            "zero_retention": "71/83"
+          }
+        ]
+      },
+      "collision_comparison": {
+        "diagnostic_M": 16,
+        "dyadic_ordered_pairs": 328,
+        "dyadic_scaled": "82/81",
+        "prescribed_M": 1,
+        "real_ordered_pairs": 708,
+        "real_scaled": "59/27",
+        "real_to_dyadic_ratio": "177/82"
+      },
+      "full_length": 72,
+      "holdout_for_this_instrument": false,
+      "prime": 193,
+      "same_index_tripling_cost": {
+        "denominator_bits": 815,
+        "exact_binary_fraction_sha256": "389eb79ea5d396996968e6be6a62b2cda3d7e1f290d7bae8cbb3ae33254d6fa9",
+        "lower": "120598563699/500000000000",
+        "numerator_bits": 813,
+        "upper": "241197127399/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "sorting_tripling_cost": {
+        "denominator_bits": 807,
+        "exact_binary_fraction_sha256": "267a5cdbf196e48239caff08006570b16306227771ea44e1119ea7198bfbb0b5",
+        "lower": "50123544157/500000000000",
+        "numerator_bits": 804,
+        "upper": "20049417663/200000000000",
+        "width": "1/1000000000000"
+      },
+      "source_end": 96,
+      "source_start": 25,
+      "source_to_pi_tripling_budget": {
+        "denominator_bits": 544,
+        "exact_binary_fraction_sha256": "afdc4f90511bac8ec927b143d3bce16e0f9cfadc496fd361f657fe264d582ae9",
+        "lower": "13089571/500000000000",
+        "numerator_bits": 529,
+        "upper": "26179143/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "tripling_observable_lower": {
+        "denominator_bits": 805,
+        "exact_binary_fraction_sha256": "49ec9e67a3bba138ee35272eaa09159d847a78825dd6751c09227460b5b2a6f8",
+        "lower": "5419454061/250000000000",
+        "numerator_bits": 799,
+        "upper": "4335563249/200000000000",
+        "width": "1/1000000000000"
+      }
+    },
+    {
+      "automatic_times16_bound": {
+        "denominator_bits": 1512,
+        "exact_binary_fraction_sha256": "32fa411ab919dc306bff64987b436e5413abd835db0fa1ce2bbeb063aaab18bb",
+        "lower": "3817352427/1000000000000",
+        "numerator_bits": 1504,
+        "upper": "954338107/250000000000",
+        "width": "1/1000000000000"
+      },
+      "automatic_times16_cost": {
+        "denominator_bits": 1469,
+        "exact_binary_fraction_sha256": "baf15860c91ecf7bf6dea9a27d880d9968cd9545f8fe6dee34573db0f3a1e31d",
+        "lower": "902041353/250000000000",
+        "numerator_bits": 1461,
+        "upper": "3608165413/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "branch_diagnostics": {
+        "direct_fraction_crosscheck": false,
+        "forcing_span": "10187012342446/95887055472394095",
+        "overlap_length": 131,
+        "radii_are_diagnostic_not_asymptotic_schedule": true,
+        "rows": [
+          {
+            "conditional_retentions": [
+              "4407/8647",
+              "173/339",
+              "89/173",
+              "7/13"
+            ],
+            "depth": 0,
+            "diagonal_included": 131,
+            "half_allowances_per_sample": [
+              "167/262",
+              "91/262",
+              "65/262",
+              "89/262"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              8647,
+              4407,
+              2249,
+              1157,
+              623
+            ],
+            "radius": "1/4",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 523,
+              "-2": 546,
+              "-3": 526,
+              "-4": 546,
+              "-5": 537,
+              "-6": 533,
+              "-7": 534,
+              "-8": 267,
+              "0": 623,
+              "1": 523,
+              "2": 546,
+              "3": 526,
+              "4": 546,
+              "5": 537,
+              "6": 533,
+              "7": 534,
+              "8": 267
+            },
+            "zero_retention": "623/8647"
+          },
+          {
+            "conditional_retentions": [
+              "425/627",
+              "251/425",
+              "197/251",
+              "171/197"
+            ],
+            "depth": 1,
+            "diagonal_included": 131,
+            "half_allowances_per_sample": [
+              "223/262",
+              "77/262",
+              "143/262",
+              "145/262"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              627,
+              425,
+              251,
+              197,
+              171
+            ],
+            "radius": "95846307423024311/6136771550233222080",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 22,
+              "-2": 40,
+              "-3": 21,
+              "-4": 27,
+              "-5": 27,
+              "-6": 47,
+              "-7": 31,
+              "-8": 13,
+              "0": 171,
+              "1": 22,
+              "2": 40,
+              "3": 21,
+              "4": 27,
+              "5": 27,
+              "6": 47,
+              "7": 31,
+              "8": 13
+            },
+            "zero_retention": "3/11"
+          },
+          {
+            "conditional_retentions": [
+              "157/171",
+              "141/157",
+              "133/141",
+              "1"
+            ],
+            "depth": 2,
+            "diagonal_included": 131,
+            "half_allowances_per_sample": [
+              "143/262",
+              "125/262",
+              "125/262",
+              "133/262"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              171,
+              157,
+              141,
+              133,
+              133
+            ],
+            "radius": "95194338633107767/98188344803731553280",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 0,
+              "-2": 4,
+              "-3": 3,
+              "-4": 4,
+              "-5": 1,
+              "-6": 4,
+              "-7": 3,
+              "-8": 0,
+              "0": 133,
+              "1": 0,
+              "2": 4,
+              "3": 3,
+              "4": 4,
+              "5": 1,
+              "6": 4,
+              "7": 3,
+              "8": 0
+            },
+            "zero_retention": "7/9"
+          }
+        ]
+      },
+      "collision_comparison": {
+        "diagnostic_M": 16,
+        "dyadic_ordered_pairs": 1092,
+        "dyadic_scaled": "364/363",
+        "prescribed_M": 1,
+        "real_ordered_pairs": 2270,
+        "real_scaled": "2270/1089",
+        "real_to_dyadic_ratio": "1135/546"
+      },
+      "full_length": 132,
+      "holdout_for_this_instrument": false,
+      "prime": 353,
+      "same_index_tripling_cost": {
+        "denominator_bits": 1516,
+        "exact_binary_fraction_sha256": "7ba11764547ec9dc9bcf60fff7656748666305e5d4c91e89b7616f575d6d38f3",
+        "lower": "245986612711/1000000000000",
+        "numerator_bits": 1513,
+        "upper": "30748326589/125000000000",
+        "width": "1/1000000000000"
+      },
+      "sorting_tripling_cost": {
+        "denominator_bits": 1513,
+        "exact_binary_fraction_sha256": "5ddbf518bafee879a5001ad36d5866c70c5f6e7d5658766b1eade324bbf1457a",
+        "lower": "10093052613/250000000000",
+        "numerator_bits": 1509,
+        "upper": "40372210453/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "source_end": 176,
+      "source_start": 45,
+      "source_to_pi_tripling_budget": {
+        "denominator_bits": 1007,
+        "exact_binary_fraction_sha256": "e2945380e717af7ecdfd2e3180ecb711bf5e3e8e0f0d0d202ec31e5b8da0925c",
+        "lower": "31661/4000000000",
+        "numerator_bits": 990,
+        "upper": "7915251/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "tripling_observable_lower": {
+        "denominator_bits": 1518,
+        "exact_binary_fraction_sha256": "3a5e4d9a21f25445ca8a9e5ae40ddbbef0cef2817fcc86ab2f07e8b37102a02a",
+        "lower": "7601302317/1000000000000",
+        "numerator_bits": 1511,
+        "upper": "3800651159/500000000000",
+        "width": "1/1000000000000"
+      }
+    },
+    {
+      "automatic_times16_bound": {
+        "denominator_bits": 2480,
+        "exact_binary_fraction_sha256": "a7f422532c5aa66b6fffbb9e468c908bce411900c141bb1f2751dfd0a82d8076",
+        "lower": "232593567/100000000000",
+        "numerator_bits": 2471,
+        "upper": "2325935671/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "automatic_times16_cost": {
+        "denominator_bits": 2476,
+        "exact_binary_fraction_sha256": "2a434e203c7df797a585d9b898d7f0a817008424584afe7a59701a1c7d28d120",
+        "lower": "518556643/500000000000",
+        "numerator_bits": 2466,
+        "upper": "1037113287/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "branch_diagnostics": {
+        "direct_fraction_crosscheck": false,
+        "forcing_span": "12326752172738/302868015367083075",
+        "overlap_length": 215,
+        "radii_are_diagnostic_not_asymptotic_schedule": true,
+        "rows": [
+          {
+            "conditional_retentions": [
+              "11923/23215",
+              "6057/11923",
+              "3181/6057",
+              "1669/3181"
+            ],
+            "depth": 0,
+            "diagonal_included": 215,
+            "half_allowances_per_sample": [
+              "631/430",
+              "191/430",
+              "61/86",
+              "157/430"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              23215,
+              11923,
+              6057,
+              3181,
+              1669
+            ],
+            "radius": "1/4",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 1418,
+              "-2": 1502,
+              "-3": 1379,
+              "-4": 1438,
+              "-5": 1407,
+              "-6": 1431,
+              "-7": 1442,
+              "-8": 756,
+              "0": 1669,
+              "1": 1418,
+              "2": 1502,
+              "3": 1379,
+              "4": 1438,
+              "5": 1407,
+              "6": 1431,
+              "7": 1442,
+              "8": 756
+            },
+            "zero_retention": "1669/23215"
+          },
+          {
+            "conditional_retentions": [
+              "913/1669",
+              "513/913",
+              "377/513",
+              "293/377"
+            ],
+            "depth": 1,
+            "diagonal_included": 215,
+            "half_allowances_per_sample": [
+              "157/430",
+              "113/430",
+              "241/430",
+              "209/430"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              1669,
+              913,
+              513,
+              377,
+              293
+            ],
+            "radius": "302818708358392123/19383552983493316800",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 79,
+              "-2": 109,
+              "-3": 87,
+              "-4": 68,
+              "-5": 111,
+              "-6": 91,
+              "-7": 101,
+              "-8": 42,
+              "0": 293,
+              "1": 79,
+              "2": 109,
+              "3": 87,
+              "4": 68,
+              "5": 111,
+              "6": 91,
+              "7": 101,
+              "8": 42
+            },
+            "zero_retention": "293/1669"
+          },
+          {
+            "conditional_retentions": [
+              "53/59",
+              "241/265",
+              "225/241",
+              "73/75"
+            ],
+            "depth": 2,
+            "diagonal_included": 215,
+            "half_allowances_per_sample": [
+              "47/86",
+              "217/430",
+              "209/430",
+              "213/430"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              295,
+              265,
+              241,
+              225,
+              219
+            ],
+            "radius": "302029796219336891/310136847735893068800",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 3,
+              "-2": 8,
+              "-3": 5,
+              "-4": 8,
+              "-5": 5,
+              "-6": 4,
+              "-7": 2,
+              "-8": 3,
+              "0": 219,
+              "1": 3,
+              "2": 8,
+              "3": 5,
+              "4": 8,
+              "5": 5,
+              "6": 4,
+              "7": 2,
+              "8": 3
+            },
+            "zero_retention": "219/295"
+          },
+          {
+            "conditional_retentions": [
+              "1",
+              "217/219",
+              "1",
+              "215/217"
+            ],
+            "depth": 3,
+            "diagonal_included": 215,
+            "half_allowances_per_sample": [
+              "219/430",
+              "1/2",
+              "217/430",
+              "213/430"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              219,
+              219,
+              217,
+              217,
+              215
+            ],
+            "radius": "1060099641005323/18176518548623769600",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 0,
+              "-2": 1,
+              "-3": 0,
+              "-4": 0,
+              "-5": 0,
+              "-6": 0,
+              "-7": 0,
+              "-8": 1,
+              "0": 215,
+              "1": 0,
+              "2": 1,
+              "3": 0,
+              "4": 0,
+              "5": 0,
+              "6": 0,
+              "7": 0,
+              "8": 1
+            },
+            "zero_retention": "215/219"
+          }
+        ]
+      },
+      "collision_comparison": {
+        "diagnostic_M": 16,
+        "dyadic_ordered_pairs": 2920,
+        "dyadic_scaled": "730/729",
+        "prescribed_M": 1,
+        "real_ordered_pairs": 5908,
+        "real_scaled": "1477/729",
+        "real_to_dyadic_ratio": "1477/730"
+      },
+      "full_length": 216,
+      "holdout_for_this_instrument": false,
+      "prime": 577,
+      "same_index_tripling_cost": {
+        "denominator_bits": 2477,
+        "exact_binary_fraction_sha256": "53095a195560e31e4f82a28ac07c32cb67e6aa6126f830602c408005a080cc27",
+        "lower": "117079410257/500000000000",
+        "numerator_bits": 2475,
+        "upper": "46831764103/200000000000",
+        "width": "1/1000000000000"
+      },
+      "sorting_tripling_cost": {
+        "denominator_bits": 2476,
+        "exact_binary_fraction_sha256": "62b537400d6b87a83e83e17b52901d435f90bc04a596d6cb20f8f606edbeb7b9",
+        "lower": "977767207/40000000000",
+        "numerator_bits": 2471,
+        "upper": "1527761261/62500000000",
+        "width": "1/1000000000000"
+      },
+      "source_end": 288,
+      "source_start": 73,
+      "source_to_pi_tripling_budget": {
+        "denominator_bits": 1648,
+        "exact_binary_fraction_sha256": "d5757fc8a125bc57c9b0fddd6fc3cf301ae244024992ad3c447ccaa77b4388ce",
+        "lower": "1489201/500000000000",
+        "numerator_bits": 1630,
+        "upper": "2978403/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "tripling_observable_lower": {
+        "denominator_bits": 2482,
+        "exact_binary_fraction_sha256": "59d581905bf7f5b5e6a639a939b6aead965961663e49f27e1940109e717aaa0c",
+        "lower": "6823610849/1000000000000",
+        "numerator_bits": 2475,
+        "upper": "136472217/20000000000",
+        "width": "1/1000000000000"
+      }
+    },
+    {
+      "automatic_times16_bound": {
+        "denominator_bits": 4967,
+        "exact_binary_fraction_sha256": "0ebed52f914dc64bebbda83a93841d3b6a1cf50880517b557ca3a4474a1f2f8d",
+        "lower": "1160210239/1000000000000",
+        "numerator_bits": 4958,
+        "upper": "3625657/3125000000",
+        "width": "1/1000000000000"
+      },
+      "automatic_times16_cost": {
+        "denominator_bits": 4910,
+        "exact_binary_fraction_sha256": "26b249dbc68a86f6007b9f553df058192983fa66cb1c1cc596d4fef1c5daae7b",
+        "lower": "49339561/62500000000",
+        "numerator_bits": 4900,
+        "upper": "789432977/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "branch_diagnostics": {
+        "direct_fraction_crosscheck": false,
+        "forcing_span": "69151330863218474/6660239535975953559555",
+        "overlap_length": 431,
+        "radii_are_diagnostic_not_asymptotic_schedule": true,
+        "rows": [
+          {
+            "conditional_retentions": [
+              "15521/31011",
+              "7819/15521",
+              "11971/23457",
+              "6147/11971"
+            ],
+            "depth": 0,
+            "diagonal_included": 431,
+            "half_allowances_per_sample": [
+              "93/862",
+              "351/862",
+              "485/862",
+              "323/862"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              93033,
+              46563,
+              23457,
+              11971,
+              6147
+            ],
+            "radius": "1/4",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 5779,
+              "-2": 5763,
+              "-3": 5871,
+              "-4": 5743,
+              "-5": 5750,
+              "-6": 5790,
+              "-7": 5835,
+              "-8": 2912,
+              "0": 6147,
+              "1": 5779,
+              "2": 5763,
+              "3": 5871,
+              "4": 5743,
+              "5": 5750,
+              "6": 5790,
+              "7": 5835,
+              "8": 2912
+            },
+            "zero_retention": "683/10337"
+          },
+          {
+            "conditional_retentions": [
+              "3331/6153",
+              "1829/3331",
+              "1153/1829",
+              "801/1153"
+            ],
+            "depth": 1,
+            "diagonal_included": 431,
+            "half_allowances_per_sample": [
+              "509/862",
+              "327/862",
+              "477/862",
+              "449/862"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              6153,
+              3331,
+              1829,
+              1153,
+              801
+            ],
+            "radius": "6659962930652500685659/426255330302461027811520",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 339,
+              "-2": 383,
+              "-3": 363,
+              "-4": 338,
+              "-5": 335,
+              "-6": 368,
+              "-7": 374,
+              "-8": 176,
+              "0": 801,
+              "1": 339,
+              "2": 383,
+              "3": 363,
+              "4": 338,
+              "5": 335,
+              "6": 368,
+              "7": 374,
+              "8": 176
+            },
+            "zero_retention": "267/2051"
+          },
+          {
+            "conditional_retentions": [
+              "619/801",
+              "519/619",
+              "475/519",
+              "457/475"
+            ],
+            "depth": 2,
+            "diagonal_included": 431,
+            "half_allowances_per_sample": [
+              "437/862",
+              "419/862",
+              "1/2",
+              "439/862"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              801,
+              619,
+              519,
+              475,
+              457
+            ],
+            "radius": "6655537245477254703323/6820085284839376444984320",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 19,
+              "-2": 26,
+              "-3": 32,
+              "-4": 22,
+              "-5": 26,
+              "-6": 24,
+              "-7": 14,
+              "-8": 9,
+              "0": 457,
+              "1": 19,
+              "2": 26,
+              "3": 32,
+              "4": 22,
+              "5": 26,
+              "6": 24,
+              "7": 14,
+              "8": 9
+            },
+            "zero_retention": "457/801"
+          },
+          {
+            "conditional_retentions": [
+              "449/455",
+              "441/449",
+              "439/441",
+              "433/439"
+            ],
+            "depth": 3,
+            "diagonal_included": 431,
+            "half_allowances_per_sample": [
+              "443/862",
+              "433/862",
+              "437/862",
+              "427/862"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              455,
+              449,
+              441,
+              439,
+              433
+            ],
+            "radius": "313558394413015189807/5196255455115715386654720",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 1,
+              "-2": 3,
+              "-3": 0,
+              "-4": 1,
+              "-5": 2,
+              "-6": 1,
+              "-7": 0,
+              "-8": 3,
+              "0": 433,
+              "1": 1,
+              "2": 3,
+              "3": 0,
+              "4": 1,
+              "5": 2,
+              "6": 1,
+              "7": 0,
+              "8": 3
+            },
+            "zero_retention": "433/455"
+          }
+        ]
+      },
+      "collision_comparison": {
+        "diagnostic_M": 16,
+        "dyadic_ordered_pairs": 11664,
+        "dyadic_scaled": "1",
+        "prescribed_M": 16,
+        "real_ordered_pairs": 23408,
+        "real_scaled": "1463/729",
+        "real_to_dyadic_ratio": "1463/729"
+      },
+      "full_length": 432,
+      "holdout_for_this_instrument": true,
+      "prime": 1153,
+      "same_index_tripling_cost": {
+        "denominator_bits": 4957,
+        "exact_binary_fraction_sha256": "bb81e42c9ba566849c182c2db9979a0987f49426e74658b96d6a7641a581ceeb",
+        "lower": "62525124349/250000000000",
+        "numerator_bits": 4955,
+        "upper": "250100497397/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "sorting_tripling_cost": {
+        "denominator_bits": 4969,
+        "exact_binary_fraction_sha256": "dfdde56dd52981ab3649343dbbb5821acf05a41a59c04c9f294079886371e5d9",
+        "lower": "4614278503/250000000000",
+        "numerator_bits": 4963,
+        "upper": "18457114013/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "source_end": 576,
+      "source_start": 145,
+      "source_to_pi_tripling_budget": {
+        "denominator_bits": 3300,
+        "exact_binary_fraction_sha256": "c2c440b25b187775aaacbfb165efef37ba50e81b8f2f4b46f2f8b7ff1cc13b3a",
+        "lower": "374521/500000000000",
+        "numerator_bits": 3280,
+        "upper": "749043/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "tripling_observable_lower": {
+        "denominator_bits": 4964,
+        "exact_binary_fraction_sha256": "463c74e50ab7bcb12b6608f03061427fcd307c284f16bd35499ef9fcdf8b7ba4",
+        "lower": "2419041647/200000000000",
+        "numerator_bits": 4957,
+        "upper": "3023802059/250000000000",
+        "width": "1/1000000000000"
+      }
+    },
+    {
+      "automatic_times16_bound": {
+        "denominator_bits": 6898,
+        "exact_binary_fraction_sha256": "b7506e69c3f98b47e2dae0930d3c9687cb828fc7be1d5cf82cabf1479f775fdb",
+        "lower": "208697407/250000000000",
+        "numerator_bits": 6888,
+        "upper": "834789629/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "automatic_times16_cost": {
+        "denominator_bits": 6851,
+        "exact_binary_fraction_sha256": "da624d972e4de86699c75142583132139568140d89ba2bd78c89394a2264fd43",
+        "lower": "297318899/500000000000",
+        "numerator_bits": 6841,
+        "upper": "594637799/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "branch_diagnostics": {
+        "direct_fraction_crosscheck": false,
+        "forcing_span": "8169066433501110598/1509130823738637112818441",
+        "overlap_length": 599,
+        "radii_are_diagnostic_not_asymptotic_schedule": true,
+        "rows": [
+          {
+            "conditional_retentions": [
+              "90085/180493",
+              "45337/90085",
+              "22919/45337",
+              "11793/22919"
+            ],
+            "depth": 0,
+            "diagonal_included": 599,
+            "half_allowances_per_sample": [
+              "0",
+              "589/1198",
+              "501/1198",
+              "667/1198"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              180493,
+              90085,
+              45337,
+              22919,
+              11793
+            ],
+            "radius": "1/4",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 11282,
+              "-2": 11253,
+              "-3": 11425,
+              "-4": 11209,
+              "-5": 11224,
+              "-6": 11121,
+              "-7": 11273,
+              "-8": 5563,
+              "0": 11793,
+              "1": 11282,
+              "2": 11253,
+              "3": 11425,
+              "4": 11209,
+              "5": 11224,
+              "6": 11121,
+              "7": 11273,
+              "8": 5563
+            },
+            "zero_retention": "11793/180493"
+          },
+          {
+            "conditional_retentions": [
+              "895/1687",
+              "95/179",
+              "1937/3325",
+              "1263/1937"
+            ],
+            "depth": 1,
+            "diagonal_included": 599,
+            "half_allowances_per_sample": [
+              "721/1198",
+              "385/1198",
+              "549/1198",
+              "589/1198"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              11809,
+              6265,
+              3325,
+              1937,
+              1263
+            ],
+            "radius": "1509098147472903108376049/96584372719272775220380224",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 692,
+              "-2": 747,
+              "-3": 667,
+              "-4": 694,
+              "-5": 715,
+              "-6": 723,
+              "-7": 698,
+              "-8": 337,
+              "0": 1263,
+              "1": 692,
+              "2": 747,
+              "3": 667,
+              "4": 694,
+              "5": 715,
+              "6": 723,
+              "7": 698,
+              "8": 337
+            },
+            "zero_retention": "1263/11809"
+          },
+          {
+            "conditional_retentions": [
+              "947/1269",
+              "769/947",
+              "685/769",
+              "653/685"
+            ],
+            "depth": 2,
+            "diagonal_included": 599,
+            "half_allowances_per_sample": [
+              "625/1198",
+              "591/1198",
+              "601/1198",
+              "621/1198"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              1269,
+              947,
+              769,
+              685,
+              653
+            ],
+            "radius": "1508575327221159037297777/1545349963508364403526083584",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 23,
+              "-2": 36,
+              "-3": 50,
+              "-4": 42,
+              "-5": 43,
+              "-6": 53,
+              "-7": 45,
+              "-8": 16,
+              "0": 653,
+              "1": 23,
+              "2": 36,
+              "3": 50,
+              "4": 42,
+              "5": 43,
+              "6": 53,
+              "7": 45,
+              "8": 16
+            },
+            "zero_retention": "653/1269"
+          },
+          {
+            "conditional_retentions": [
+              "631/653",
+              "617/631",
+              "611/617",
+              "605/611"
+            ],
+            "depth": 3,
+            "diagonal_included": 599,
+            "half_allowances_per_sample": [
+              "609/1198",
+              "603/1198",
+              "605/1198",
+              "1/2"
+            ],
+            "mod9_identifies_zero": true,
+            "nested_binary_counts": [
+              653,
+              631,
+              617,
+              611,
+              605
+            ],
+            "radius": "5495275469572358608225/90569961231259452221308928",
+            "separate_11_13_reconstruction": true,
+            "signed_carry_counts": {
+              "-1": 0,
+              "-2": 3,
+              "-3": 6,
+              "-4": 3,
+              "-5": 3,
+              "-6": 4,
+              "-7": 2,
+              "-8": 3,
+              "0": 605,
+              "1": 0,
+              "2": 3,
+              "3": 6,
+              "4": 3,
+              "5": 3,
+              "6": 4,
+              "7": 2,
+              "8": 3
+            },
+            "zero_retention": "605/653"
+          }
+        ]
+      },
+      "collision_comparison": {
+        "diagnostic_M": 16,
+        "dyadic_ordered_pairs": 22504,
+        "dyadic_scaled": "5626/5625",
+        "prescribed_M": 16,
+        "real_ordered_pairs": 45580,
+        "real_scaled": "2279/1125",
+        "real_to_dyadic_ratio": "11395/5626"
+      },
+      "full_length": 600,
+      "holdout_for_this_instrument": true,
+      "prime": 1601,
+      "same_index_tripling_cost": {
+        "denominator_bits": 6897,
+        "exact_binary_fraction_sha256": "04d8f9edac6c34f3e4c0c8e8656b1b21112909fd7884a747c87ab0b73ad84e39",
+        "lower": "249739565287/1000000000000",
+        "numerator_bits": 6895,
+        "upper": "31217445661/125000000000",
+        "width": "1/1000000000000"
+      },
+      "sorting_tripling_cost": {
+        "denominator_bits": 6899,
+        "exact_binary_fraction_sha256": "9ef605f6f042ec2357484b1bfc89f191043897639bb7d2b519b4345b817599a0",
+        "lower": "14332652403/1000000000000",
+        "numerator_bits": 6893,
+        "upper": "3583163101/250000000000",
+        "width": "1/1000000000000"
+      },
+      "source_end": 800,
+      "source_start": 201,
+      "source_to_pi_tripling_budget": {
+        "denominator_bits": 4562,
+        "exact_binary_fraction_sha256": "dfebbc8085b901b1c81a609f167f6434adf4ea5c5f9e9f63782fb0a0de48a77d",
+        "lower": "388951/1000000000000",
+        "numerator_bits": 4541,
+        "upper": "48619/125000000000",
+        "width": "1/1000000000000"
+      },
+      "tripling_observable_lower": {
+        "denominator_bits": 6897,
+        "exact_binary_fraction_sha256": "2b307b610c96a7cc76c18d6dc2ee56782d3b6ff31f0111cbe045fc7b63d8ff07",
+        "lower": "5193957429/500000000000",
+        "numerator_bits": 6891,
+        "upper": "10387914859/1000000000000",
+        "width": "1/1000000000000"
+      }
+    },
+    {
+      "automatic_times16_bound": {
+        "denominator_bits": 9059,
+        "exact_binary_fraction_sha256": "bf6546fb859164c12001ca17e30b88c652ef5a78d5481a03fa536fec836cafbd",
+        "lower": "641888517/1000000000000",
+        "numerator_bits": 9048,
+        "upper": "320944259/500000000000",
+        "width": "1/1000000000000"
+      },
+      "automatic_times16_cost": {
+        "denominator_bits": 9031,
+        "exact_binary_fraction_sha256": "3df01718ea19f5277349d5c39f8fc50e90822cff1098180dfca83494055f97f1",
+        "lower": "134311601/1000000000000",
+        "numerator_bits": 9018,
+        "upper": "67155801/500000000000",
+        "width": "1/1000000000000"
+      },
+      "collision_comparison": {
+        "diagnostic_M": 16,
+        "dyadic_ordered_pairs": 38028,
+        "dyadic_scaled": "12676/12675",
+        "prescribed_M": 16,
+        "real_ordered_pairs": 76544,
+        "real_scaled": "5888/2925",
+        "real_to_dyadic_ratio": "19136/9507"
+      },
+      "full_length": 780,
+      "holdout_for_this_instrument": false,
+      "prime": 2081,
+      "same_index_tripling_cost": {
+        "denominator_bits": 9056,
+        "exact_binary_fraction_sha256": "6ea207abada596c2238695ef6548be09ac70962c2c5a3e07736199ec499c8c6b",
+        "lower": "50006610593/200000000000",
+        "numerator_bits": 9054,
+        "upper": "125016526483/500000000000",
+        "width": "1/1000000000000"
+      },
+      "sorting_tripling_cost": {
+        "denominator_bits": 9056,
+        "exact_binary_fraction_sha256": "8c8d3e996f817f4d1daa617b84f2040ce9196d0211a5f95ae52a1dbc20f96966",
+        "lower": "6931255451/500000000000",
+        "numerator_bits": 9050,
+        "upper": "13862510903/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "source_end": 1040,
+      "source_start": 261,
+      "source_to_pi_tripling_budget": {
+        "denominator_bits": 5940,
+        "exact_binary_fraction_sha256": "648e25272bf8a9b69d8eb4a1e43b6d70740ed0cc5d4ba7559fd5034c84a3bdba",
+        "lower": "28797/125000000000",
+        "numerator_bits": 5918,
+        "upper": "230377/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "tripling_observable_lower": {
+        "denominator_bits": 9058,
+        "exact_binary_fraction_sha256": "d694100b76f68694d2b78453c5b5bf419e9b0e27fcdce0028629f18f0ead7937",
+        "lower": "2087427027/200000000000",
+        "numerator_bits": 9051,
+        "upper": "326160473/31250000000",
+        "width": "1/1000000000000"
+      }
+    },
+    {
+      "automatic_times16_bound": {
+        "denominator_bits": 17817,
+        "exact_binary_fraction_sha256": "5d8f81fdbf65650227a2593be4e029b227e3382e343105e776baa8c4499583bf",
+        "lower": "161608491/500000000000",
+        "numerator_bits": 17805,
+        "upper": "323216983/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "automatic_times16_cost": {
+        "denominator_bits": 17805,
+        "exact_binary_fraction_sha256": "c09c5bce378782f7e9acd8620e0948d087a893637817136bba59b9bc7b64c21c",
+        "lower": "156691623/1000000000000",
+        "numerator_bits": 17792,
+        "upper": "19586453/125000000000",
+        "width": "1/1000000000000"
+      },
+      "collision_comparison": {
+        "diagnostic_M": 16,
+        "dyadic_ordered_pairs": 149772,
+        "dyadic_scaled": "49924/49923",
+        "prescribed_M": 16,
+        "real_ordered_pairs": 300672,
+        "real_scaled": "3712/1849",
+        "real_to_dyadic_ratio": "25056/12481"
+      },
+      "full_length": 1548,
+      "holdout_for_this_instrument": false,
+      "prime": 4129,
+      "same_index_tripling_cost": {
+        "denominator_bits": 17825,
+        "exact_binary_fraction_sha256": "acd6950e7310543eff7f55a210cb12aea3ba24a2763bb6cf7627a74603760508",
+        "lower": "249215268447/1000000000000",
+        "numerator_bits": 17823,
+        "upper": "7787977139/31250000000",
+        "width": "1/1000000000000"
+      },
+      "sorting_tripling_cost": {
+        "denominator_bits": 17824,
+        "exact_binary_fraction_sha256": "bc5f2c002e8c186a9d902ead428ffa7d0565a48aaa2a683abe65fbb987a8e417",
+        "lower": "74774819/10000000000",
+        "numerator_bits": 17817,
+        "upper": "7477481901/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "source_end": 2064,
+      "source_start": 517,
+      "source_to_pi_tripling_budget": {
+        "denominator_bits": 11888,
+        "exact_binary_fraction_sha256": "ec8ba7013939cf9d8625bef3da673b1029830531a1da5c0eca3419e8069c9e2b",
+        "lower": "29293/500000000000",
+        "numerator_bits": 11864,
+        "upper": "58587/1000000000000",
+        "width": "1/1000000000000"
+      },
+      "tripling_observable_lower": {
+        "denominator_bits": 17829,
+        "exact_binary_fraction_sha256": "b8af926267e8081c75e002bfbf06bb9db8ef6938be6fecfa683d757e8c4404cc",
+        "lower": "732817307/500000000000",
+        "numerator_bits": 17820,
+        "upper": "293126923/200000000000",
+        "width": "1/1000000000000"
+      }
+    }
+  ],
+  "status": "VERIFIED_FINITE",
+  "tripling_invariance_proved_for_real_source": false
+}

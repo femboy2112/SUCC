@@ -1,5 +1,17 @@
 # Claim Index
 
+**2026-10-24 dyadic / prime-base continuation:**
+[DBT-01--21](CLAIM_SUPPLEMENT_DYADIC_BASE_TRANSPORT.md) and
+[research synthesis](../research/2026-10-24/PI_DYADIC_PRIME_BASE_SYNTHESIS.md).
+The authentic unwrapped BBP source is a 2-adic isometry, with a proved
+one-sixteenth residue-collision refinement and all-depth denominator formula.
+The real-circle transfer still requires the actual carry history. Four
+conditional binary gates, bounded ternary identification, separate 11/13
+tomography and coherent inverse-cover carries are exact. Positive all-scale
+real collision dimension plus source-law tripling invariance would give
+binary normality through classical measure rigidity; both source premises
+remain open. No new Lean authority or pi-normality proof is claimed.
+
 **2026-10-24 twisted-observer research:**
 [TWA-01--15](CLAIM_SUPPLEMENT_TWISTED_OBSERVER.md) and
 [full source/proof dossier](../research/2026-10-24/PI_TWISTED_OBSERVER_AGREEMENT.md).

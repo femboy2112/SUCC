@@ -1,5 +1,17 @@
 # Research roadmap
 
+**2026-10-24 dyadic / prime-base continuation (research draft).**
+The [new synthesis](../research/2026-10-24/PI_DYADIC_PRIME_BASE_SYNTHESIS.md)
+proves an authenticated 2-adic BBP source isometry, exact one-sixteenth
+dyadic residue refinement, all-depth truncation denominators, conditional
+binary carry factorization and finite prime tomography. The real-circle
+collision bound remains open. The next independent route is a source-law
+tripling transport plus any positive uniform all-scale real collision
+exponent; classical measure rigidity would then imply binary normality.
+Neither source premise is proved. A terminal-scale saving cannot replace
+all-scale control, and base-3 symmetry of the base-16 law is distinct from
+base-3 normality. [DBT claim supplement](CLAIM_SUPPLEMENT_DYADIC_BASE_TRANSPORT.md).
+
 **Duck / π research checkpoint (2026-10-21):** [execution and proof obligations](../research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md), [typed dependency ledger](DUCK_PI_DEPENDENCIES.json), [exact kernel receipt](../research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md). Actual BBP source transport and finite structural certificates are distinguished from the still-open source-specific Fourier estimate.
 
 **2026-10-23 research verdict.** [Carry the Truth](../research/2026-10-23/SOURCE_FAITHFUL_SYNTHESIS.md)
