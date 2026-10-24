@@ -1,0 +1,37 @@
+name: BBP cyclotomic prime-birth and interference receipts
+on:
+  pull_request:
+    paths:
+      - 'observational_succ/bbp_cyclotomic_birth.py'
+      - 'observational_succ/bbp_source_memory.py'
+      - 'observational_succ/bbp_cyclotomic_witt.py'
+      - 'tests/test_bbp_cyclotomic_birth.py'
+      - 'tests/test_bbp_cyclotomic_witt.py'
+      - 'scripts/bbp_cyclotomic_probe.py'
+      - 'research/2026-10-24/BBP_CYCLOTOMIC_EXACT_RECEIPT.json'
+      - '.github/workflows/bbp-cyclotomic-interference.yml'
+  workflow_dispatch:
+jobs:
+  exact-cyclotomic:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    env:
+      PYTHONPATH: .
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Compile source and tests
+        run: python -m compileall -q observational_succ/bbp_cyclotomic_birth.py observational_succ/bbp_cyclotomic_witt.py tests/test_bbp_cyclotomic_birth.py tests/test_bbp_cyclotomic_witt.py scripts/bbp_cyclotomic_probe.py
+      - name: Run exact arithmetic and hostile source tests
+        run: python -m unittest discover -s tests -p 'test_bbp_cyclotomic_*.py' -v
+      - name: Verify provenance
+        run: python scripts/verify_provenance.py
+      - name: Reproduce deterministic exact arithmetic receipt
+        run: |
+          python scripts/bbp_cyclotomic_probe.py > /tmp/bbp-cyclotomic-replayed.json
+          cmp /tmp/bbp-cyclotomic-replayed.json research/2026-10-24/BBP_CYCLOTOMIC_EXACT_RECEIPT.json
