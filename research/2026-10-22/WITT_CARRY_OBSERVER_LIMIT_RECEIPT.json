@@ -1,0 +1,129 @@
+{
+  "RH_proved": false,
+  "actual_physical_source_readings": false,
+  "carry_cocycle_exact_instances": 503,
+  "delayed_counterfeit_tower_tests": 27,
+  "empirical_error_rate_calibrated": false,
+  "extended_tests_git_blob": "00ba36eaefcdb6e8284f29cef06d8b9a3533e629",
+  "factorial_cofinal_modulus_cases": 200,
+  "factorial_valuation_level_cases": 15,
+  "full_finite_table_and_compatible_parent_maps_required_for_global_geometry": true,
+  "geometry_only_all_levels_cannot_identify_characteristic": true,
+  "geometry_physically_identified": false,
+  "global_equalchar_factorial_counterfeit_at_4": {
+    "cardinality_of_both": 24,
+    "equal_local_product_characteristic": 6,
+    "mixed_ring_characteristic": 24,
+    "place_precision": {
+      "2": 3,
+      "3": 1
+    },
+    "same_unlabelled_factorial_tree": true,
+    "source_addition_distinguishes": true
+  },
+  "graded_lifted_succ_holonomy_tests": 16,
+  "gravitational_ER_EPR_proved": false,
+  "independent_finite_ring_operation_cells": 1540,
+  "marked_source_addition_distinguishes_second_level": true,
+  "noisy_full_table_calibration_p2": {
+    "1": {
+      "actual_error_upper_bound": "7061844859/137438953472",
+      "all_table_cells": 8,
+      "allocated_error": "1/16",
+      "exact_repetitions_per_cell": 21
+    },
+    "2": {
+      "actual_error_upper_bound": "35084231326971293/1152921504606846976",
+      "all_table_cells": 32,
+      "allocated_error": "1/32",
+      "exact_repetitions_per_cell": 33
+    },
+    "3": {
+      "actual_error_upper_bound": "134943183681027129209071/9671406556917033397649408",
+      "all_table_cells": 128,
+      "allocated_error": "1/64",
+      "exact_repetitions_per_cell": 47
+    },
+    "4": {
+      "actual_error_upper_bound": "4305138115519370114085673765609/649037107316853453566312041152512",
+      "all_table_cells": 512,
+      "allocated_error": "1/128",
+      "exact_repetitions_per_cell": 61
+    }
+  },
+  "primary_tests_git_blob": "8d2f005feb8d3279a1e3c4fa96f577c59311d603",
+  "probe_git_blob": "09d2b902966c785c3dacb75f0f0a04846ff429d9",
+  "research": "SUCC_WITT_CARRY_OBSERVER_LIMIT_2026_10_22",
+  "signed_completed_Weil_positivity_proved": false,
+  "source_module_git_blob": "f1df7dfe3381907e0a0ccd38e60bd7f47ba5f2d8",
+  "source_rigidity_second_level_fingerprints": {
+    "2": {
+      "carry_diagnostic": [
+        0,
+        1
+      ],
+      "equal_S_to_p_stage2": 0,
+      "mixed_S_to_p_stage2": 2,
+      "model_after_full_geometry": [
+        "equal",
+        "mixed"
+      ],
+      "model_after_marked_second_level": [
+        "mixed"
+      ],
+      "unlabelled_BT_ball_radius3": 22
+    },
+    "3": {
+      "carry_diagnostic": [
+        0,
+        1
+      ],
+      "equal_S_to_p_stage2": 0,
+      "mixed_S_to_p_stage2": 3,
+      "model_after_full_geometry": [
+        "equal",
+        "mixed"
+      ],
+      "model_after_marked_second_level": [
+        "mixed"
+      ],
+      "unlabelled_BT_ball_radius3": 53
+    },
+    "5": {
+      "carry_diagnostic": [
+        0,
+        1
+      ],
+      "equal_S_to_p_stage2": 0,
+      "mixed_S_to_p_stage2": 5,
+      "model_after_full_geometry": [
+        "equal",
+        "mixed"
+      ],
+      "model_after_marked_second_level": [
+        "mixed"
+      ],
+      "unlabelled_BT_ball_radius3": 187
+    },
+    "7": {
+      "carry_diagnostic": [
+        0,
+        1
+      ],
+      "equal_S_to_p_stage2": 0,
+      "mixed_S_to_p_stage2": 7,
+      "model_after_full_geometry": [
+        "equal",
+        "mixed"
+      ],
+      "model_after_marked_second_level": [
+        "mixed"
+      ],
+      "unlabelled_BT_ball_radius3": 457
+    }
+  },
+  "sparse_factorial_Zp_completion_without_original_Z_realizer": true,
+  "status": "CLASSICAL_PAPER_THEOREMS_EXACT_FINITE_CHECKS_NOT_LEAN_CERTIFIED",
+  "whole_infinite_observation_program_executed": false,
+  "whole_tree_digit_isometry_exact_instances": 23210
+}

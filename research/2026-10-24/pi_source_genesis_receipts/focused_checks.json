@@ -1,0 +1,48 @@
+[
+  {
+    "argv": [
+      "/tmp/pi-source-genesis-venv/bin/python",
+      "-Werror",
+      "-m",
+      "py_compile",
+      "observational_succ/pi_source_genesis.py",
+      "scripts/pi_source_genesis_oracle.py",
+      "scripts/check_pi_source_genesis_lean.py"
+    ],
+    "exit_code": 0,
+    "log": "focused_0.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "argv": [
+      "/tmp/pi-source-genesis-venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_pi_source_genesis.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "focused_1.log",
+    "log_sha256": "f266b60bcb4f08f92784671be2110a2f0d5c8e790361f28c67333d88f85f9a53"
+  },
+  {
+    "argv": [
+      "/tmp/pi-source-genesis-venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_bbp_source_memory.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "focused_2.log",
+    "log_sha256": "a3ef65a9354f5c3e7a0b9708e710ed6d83f9dc28b3879fb9611b02eec2a5aab6"
+  }
+]

@@ -14,6 +14,63 @@
   },
   "namespaces": [
     {
+      "namespace": "PI_SOURCE_COLLISION_ENTROPY",
+      "bare_prefix": "SCE",
+      "fq_prefix": "SCE",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PI_SOURCE_COLLISION.md"
+      ],
+      "id_count": 10,
+      "status": "RESEARCH (PROVED PAPER/CONDITIONAL/CLASSICAL/VERIFIED FINITE/UNVERIFIED); no new Lean authority",
+      "topic": "exact BBP collision transport, relative Galois small-ball bounds, prescribed-scale entropy criterion, regret equivalence and source-selection boundary",
+      "code": [
+        "observational_succ/pi_source_collision.py",
+        "scripts/pi_source_collision_probe.py"
+      ]
+    },
+    {
+      "namespace": "SOURCE_FAITHFUL_RENORMALIZATION",
+      "bare_prefix": "SFR",
+      "fq_prefix": "SFR",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SOURCE_FAITHFUL_RENORMALIZATION.md"
+      ],
+      "id_count": 28,
+      "status": "MIXED (CLASSICAL/PROVED PAPER/EXACT FINITE/INTERVAL/LEAN KERNEL/REFUTED/CONDITIONAL/UNVERIFIED)",
+      "topic": "source-faithful carry, disclosed Hilbert defects, minimal future memory, distinct clock completions, heat/resolvent memory, critical half-density and signed-source boundary",
+      "code": [
+        "observational_succ/source_faithful_carry.py",
+        "observational_succ/source_faithful_observers.py",
+        "observational_succ/source_faithful_memory.py",
+        "observational_succ/source_faithful_limits.py",
+        "observational_succ/source_faithful_resolvent.py",
+        "observational_succ/source_faithful_weil.py",
+        "formal/SourceFaithfulCarry.lean",
+        "scripts/source_faithful_carry_probe.py",
+        "scripts/check_source_faithful_carry_lean.py"
+      ]
+    },
+    {
+      "namespace": "REALITY_PIN",
+      "bare_prefix": "RP",
+      "fq_prefix": "RP",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_REALITY_PIN.md"
+      ],
+      "id_count": 25,
+      "status": "MIXED (CLASSICAL/PROVED PAPER/EXACT FINITE/LEAN KERNEL/REFUTED/CONDITIONAL/UNVERIFIED)",
+      "topic": "source-conditioned observable geometry, zero-forcing inverse, infinite arithmetic resolvent, calibrated selection, gluing and thermal/global obstructions",
+      "code": [
+        "observational_succ/reality_pin_geometry.py",
+        "observational_succ/reality_pin_arithmetic.py",
+        "observational_succ/reality_pin_selection.py",
+        "observational_succ/reality_pin_quantum_global.py",
+        "observational_succ/reality_pin_continuum.py",
+        "formal/RealityPin.lean",
+        "scripts/reality_pin_probe.py"
+      ]
+    },
+    {
       "namespace": "BIDIRECTIONAL_CUT",
       "bare_prefix": "BDC",
       "fq_prefix": "BDC",
@@ -71,7 +128,7 @@
       ],
       "id_count": 12,
       "status": "MIXED (CLASSICAL/PAPER_PROVED/EXACT_FINITE_TESTED/REFUTED/UNVERIFIED)",
-      "topic": "source orbit quotient universality, fresh clock splicing, LCM and M\u00f6bius prime-jet genesis, continuous topological factor no-go",
+      "topic": "source orbit quotient universality, fresh clock splicing, LCM and Möbius prime-jet genesis, continuous topological factor no-go",
       "code": [
         "observational_succ/orbit_clock_genesis.py",
         "observational_succ/clock_incidence_inversion.py",
@@ -483,6 +540,136 @@
       "code": [
         "observational_succ/pi_polygon_normality.py"
       ]
+    },
+    {
+      "namespace": "DUCK_PRINCIPLE",
+      "bare_prefix": "DUCK",
+      "fq_prefix": "DUCK",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_DUCK_PRINCIPLE.md"
+      ],
+      "id_count": 28,
+      "status": "MIXED (CLASSICAL/PROVED LOCAL/LEAN_KERNEL_PROVED/CONDITIONAL/REFUTED/UNVERIFIED)",
+      "topic": "Declared structural factors, finite probes, authentic BBP transport and open pi normality",
+      "code": [
+        "observational_succ/duck_observer.py",
+        "observational_succ/duck_bbp.py",
+        "observational_succ/duck_bbp_fourier.py",
+        "observational_succ/duck_source_bridge.py"
+      ]
+    },
+    {
+      "namespace": "CARRY_SAFE_OBSERVER",
+      "bare_prefix": "CSO",
+      "fq_prefix": "CSO",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_CARRY_SAFE_OBSERVER.md"
+      ],
+      "id_count": 15,
+      "status": "MIXED (CLASSICAL/PROVED LOCAL/TESTED MODEL/DEMONSTRATED)",
+      "topic": "Carry-safe observer: composite-radix polyphase/Cuntz algebra, minimum future-sufficient information, source-controlled tomography, residue/Hilbert retention defect, adaptive weighted-minimax probe compiler",
+      "code": [
+        "observational_succ/carry_safe_polyphase.py",
+        "observational_succ/future_sufficient_information.py",
+        "observational_succ/source_controlled_tomography.py",
+        "observational_succ/residue_hilbert_defect.py",
+        "observational_succ/carry_safe_probe_compiler.py"
+      ]
+    },
+    {
+      "namespace": "CIRCLE_GAMMA_PRIME_DIGITS",
+      "bare_prefix": "CGPD",
+      "fq_prefix": "CGPD",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_CIRCLE_GAMMA_PRIME_DIGITS.md"
+      ],
+      "id_count": 14,
+      "status": "RESEARCH (PROVED LOCAL finite instrument; no Lean kernel; no pi-normality/RH/abc/Weil positivity/novelty)",
+      "topic": "Circle geometry, Gamma, complete prime system and exact pi digit-cylinder transitions (#229)",
+      "code": [
+        "observational_succ/circle_gamma_prime_digits.py"
+      ]
+    },
+    {
+      "namespace": "PI_GAMMA_PRIME_CARRY",
+      "bare_prefix": "PCG",
+      "fq_prefix": "PCG",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PI_GAMMA_PRIME_CARRY.md"
+      ],
+      "id_count": 11,
+      "status": "RESEARCH (paper + finite tests; no inherited proof-kernel admission; no pi-normality/RH)",
+      "topic": "pi / Gamma / joint prime-power Kummer carry transport (#231)",
+      "code": [
+        "observational_succ/pi_prime_carry_transport.py"
+      ]
+    },
+    {
+      "namespace": "PRIME_BRIDGE",
+      "bare_prefix": "PBR",
+      "fq_prefix": "PBR",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_ARITHMETIC_ER_EPR.md"
+      ],
+      "id_count": 20,
+      "status": "MIXED (analytic paper proofs / finite tests / narrow Lean execution; gravitational duality and RH unproved)",
+      "topic": "Prime Bridge: arithmetic entanglement, p-adic reconstruction, exact quantum-code obstructions (#233)",
+      "code": [
+        "observational_succ/arithmetic_entanglement.py",
+        "observational_succ/arithmetic_operator_interface.py",
+        "observational_succ/arithmetic_tfd.py",
+        "observational_succ/holographic_reconstruction.py",
+        "observational_succ/interacting_arithmetic_hamiltonian.py",
+        "observational_succ/padic_bulk_network.py"
+      ]
+    },
+    {
+      "namespace": "POISSON_MINIMUM_GEOMETRY",
+      "bare_prefix": "PGM",
+      "fq_prefix": "PGM",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_POISSON_MINIMUM.md"
+      ],
+      "id_count": 12,
+      "status": "RESEARCH (classical/PAPER PROVED/local exact tests; π normality, RH, Weil positivity and novelty UNVERIFIED)",
+      "topic": "Single Poisson-chord minimum-energy criterion, deterministic geometric greedy selection, signed regret, source-typed pi finite witnesses, periodic counterfeit",
+      "code": [
+        "observational_succ/poisson_circle_minimal.py",
+        "scripts/poisson_minimal_probe.py"
+      ]
+    },
+    {
+      "namespace": "BBP_MINIMAL_PATH_GAUGE",
+      "bare_prefix": "MP",
+      "fq_prefix": "MP.GAUGE",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH_GAUGE.md"
+      ],
+      "id_count": 6,
+      "status": "RESEARCH DRAFT (DISCLOSED PAPER/CONDITIONAL); no Lean authority",
+      "topic": "exact BBP source-gauge conjugacy, single-missing-prime counterfeits, periodic proxies, signed spectral-bulk Fourier criterion",
+      "code": [
+        "observational_succ/bbp_minimal_path_gauge.py",
+        "observational_succ/bbp_minimal_path.py",
+        "scripts/bbp_minimal_path_gauge_probe.py"
+      ]
+    },
+    {
+      "namespace": "BBP_MINIMAL_PATH_BIRTHS",
+      "bare_prefix": "MP",
+      "fq_prefix": "MP.BIRTHS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH_BIRTHS.md"
+      ],
+      "id_count": 9,
+      "status": "RESEARCH DRAFT (DISCLOSED PAPER/EXACT FINITE INTERVAL/REFUTED/CONDITIONAL/UNVERIFIED); no Lean authority",
+      "topic": "exact odd-prime first births, p^k valuation power law, minimal rational recurrence, all-prime Hankel counterfeit, Galois trace/second-moment selection bounds",
+      "code": [
+        "observational_succ/bbp_minimal_path_births.py",
+        "observational_succ/bbp_galois_tomography.py",
+        "observational_succ/bbp_minimal_path.py",
+        "scripts/bbp_minimal_path_births_probe.py"
+      ]
     }
   ],
   "resolved_collisions": [
@@ -530,6 +717,15 @@
       ],
       "resolution": "disambiguate by supplement file / fq_prefix (WA.ADEL vs WA.AMBI); neither historical bare ID renamed",
       "integrity_note": "Genuine distinct-meaning collision: WA in WILD_ADELIC_SUCC means 'Wild Adelic' (arithmetic solenoid coverings); WA in WILD_AMBIENT_SUCC means 'Wild Ambient' (nonabelian source observers / Alexander sphere). Same bare WA-01 denotes two unrelated claims; do not merge."
+    },
+    {
+      "bare_prefix": "MP",
+      "namespaces": [
+        "BBP_MINIMAL_PATH_GAUGE",
+        "BBP_MINIMAL_PATH_BIRTHS"
+      ],
+      "resolution": "disambiguate by supplement file / fq_prefix (MP.GAUGE vs MP.BIRTHS); neither historical bare ID renamed. #261's intra-file duplicate MP-05 and its later IDs were renumbered +1 so each bare ID is unique within CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH_BIRTHS.md; docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH.md holds the full crosswalk.",
+      "integrity_note": "Genuine distinct-meaning collision: MP in BBP_MINIMAL_PATH_GAUGE (#260, parent #256 0683f8f1) is source-gauge/missing-prime/spectral-bulk; MP in BBP_MINIMAL_PATH_BIRTHS (#261, on #258 9aa55b3a) is odd-prime births/minimal recurrence/Galois selection. Same bare MP-0x denotes unrelated claims with different provenance and evidence; never merge their identities or assert shared evidence. Both are research-only draft families with no new Lean authority; pi normality and RH remain open."
     }
   ]
 }

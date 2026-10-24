@@ -1,0 +1,48 @@
+{
+  "schema": "succ.duck-pi.local-validation.v1",
+  "authority_admitted": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "full_suite": {
+    "base_commit": "f91a4111d7f1d8c4b81219eeb2863fe4c7d6d553",
+    "tests": 6610,
+    "elapsed_seconds": 665.338,
+    "result": "PASS",
+    "scope": "Subsequent production Python files unchanged; new dependency diagnostic and ten new tests checked separately."
+  },
+  "focused_duck_suite": {
+    "candidate_commit": "affc5d8a6b909ba5f72d24f049c4a0247d8fa5dd",
+    "tests": 63,
+    "result": "PASS",
+    "includes_new_dependency_tests": 10
+  },
+  "log_hashes": {
+    "python-full.log": "4377065ff2eb71637546d6ced35a4b0151c684f717537452c246f2ca1979e16f",
+    "python-duck-final.log": "a4acad708bc6c3a80631acd018778dc46b96068f049a601bda3d2d959d3905cc",
+    "provenance-final.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "main-vii-final-gate.json": "335f10582eb932609f6e9d938e0ee31f1b990724e1fbd61afe15e9bb438d76fb",
+    "main-viii-final-gate.json": "baceadf9016c30f1520506bf3043fd5da8ba0b74f55d19adc1b396d280e806af",
+    "observer-foundations.json": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "ordinal-succ.json": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "document-links.json": "536069aceb8399b02a934dcb8d2e5df78b92e523758d549ee36c7f63f2c4d70d",
+    "hostile-referee-final.json": "e01874f015d9516281f4ba20bc3fb17e49dd81b1dd58fef179359fa2512a36fb",
+    "fourier-probe-final.json": "8546ecbc377174bb0cd1a0d6fda6a400ac11b593281a6029dc3ad9fc508a9a95",
+    "source-probe-final.json": "6eaa885f70ad078ec649eeac60a0e0767a59c6dd5f1559235563b023e21fd01d"
+  },
+  "provenance": {
+    "byte_identical_research_archives": 17,
+    "establishes_mathematical_truth": false,
+    "items": 72,
+    "mechanical_namespace_migrations": 55,
+    "source_commit": "ba075348b7bcc66d938b3e0ca96c26e95bba340a",
+    "status": "SOURCE_PROVENANCE_VERIFIED"
+  },
+  "navigation": {
+    "checked": 269,
+    "missing": []
+  },
+  "final_pr_ci": "Read exact PR head checks; not asserted by this local observation.",
+  "final_navigation": {
+    "checked": 278,
+    "missing": []
+  }
+}

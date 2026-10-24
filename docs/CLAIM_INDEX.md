@@ -1,5 +1,39 @@
 # Claim Index
 
+**2026-10-21 Duck → Lean → π research:** [execution report](../research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md) · [exact kernel receipt](../research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md) · [DUCK-01–28](CLAIM_SUPPLEMENT_DUCK_PRINCIPLE.md) · [dependency ledger](DUCK_PI_DEPENDENCIES.json). Observable quotients, generated finite all-word certificates, the classical BBP identity and the actual π orbit transport have exact formal statements. Explicit Fourier/discrepancy transport and positive rational-shadow counterfeits are paper results. The current receipt identifies which source revisions compiled. **π-specific cancellation and π normality remain OPEN; RH/ABC bounds here do not close them.**
+
+2026-10-22 research: [Prime Bridge PBR-01–20](CLAIM_SUPPLEMENT_ARITHMETIC_ER_EPR.md)
+adds arithmetic TFD/mirror rigidity and quantitative stability, interacting
+threshold/entanglement proofs, genuine BT boundary reconstruction, arithmetic
+quantum codes and exact recovery obstructions. Analytic paper proofs, finite
+tests and narrow Lean execution are separately recorded. Gravitational duality
+and RH remain unproved; [draft #233](https://github.com/femboy2112/SUCC/pull/233).
+
+**2026-10-23 Carry the Truth research:**
+[source-faithful claim supplement](CLAIM_SUPPLEMENT_SOURCE_FAITHFUL_RENORMALIZATION.md) ·
+[complete synthesis](../research/2026-10-23/SOURCE_FAITHFUL_SYNTHESIS.md).
+Exact carry and minimal future information, explicit norm defects, quantitative
+heat-memory repair and sharp half-density log transport. Paper, finite and Lean
+authority are distinct; original signed S4 and RH remain open.
+
+**2026-10-22 Reality Pin research stack:**
+[RP-01–RP-25](CLAIM_SUPPLEMENT_REALITY_PIN.md) ·
+[proof synthesis](../research/2026-10-22/REALITY_PIN_SYNTHESIS.md) ·
+[source and CI baseline](../research/2026-10-22/REALITY_PIN_BASELINE_PROVENANCE.json).
+The new RP namespace is registered; paper, finite, kernel and physical authority
+remain separate. Earlier stack supplements are linked below for navigation,
+without retrospectively admitting them to a kernel registry:
+
+| Inherited draft | Scoped claim record |
+|---|---|
+| #234 arithmetic EPR one-shot | [Prime Bridge](CLAIM_SUPPLEMENT_PRIME_BRIDGE_ONE_SHOT.md) |
+| #235 coherent source tower | [Coherent tower](CLAIM_SUPPLEMENT_COHERENT_PRIME_TOWER.md) |
+| #236 reciprocal/Pascal | [Reciprocal Pascal](CLAIM_SUPPLEMENT_RECIPROCAL_PASCAL.md) |
+| #238 observation-pinned source | [Source geometry](CLAIM_SUPPLEMENT_OBSERVATION_PINNED_GEOMETRY.md) |
+| #240 Witt carry / observer limit | [Witt learning](CLAIM_SUPPLEMENT_WITT_CARRY_LEARNING.md) |
+| #242 total boundary | [Boundary realization](CLAIM_SUPPLEMENT_BOUNDARY_REALIZATION.md) |
+| #243 spectral boundary | [Spectral Krylov](CLAIM_SUPPLEMENT_SPECTRAL_BOUNDARY_KRYLOV.md) |
+
 Post-main research draft: [effective primitive abc means](CLAIM_SUPPLEMENT_ABC_EFFECTIVE.md)
 (ABC-EFF-01–05) gives a uniform primitive divisor discrepancy, explicit convergence
 for every δ<(2−3t)/5 when 0≤t<2/3, and failure of quadratic moments for t≥1.
@@ -184,3 +218,40 @@ separate #177 continuation.
 ## Academic Main VIII (2026-10-21)
 
 [Integration audit](academic_main_viii/integration_audit.md) and [frontier](academic_main_viii/research_frontier.md). Existing ABC-EFF-01–05 remain paper-level theorems. [COF-01, EXT-01–04, SMP-01–02](CLAIM_SUPPLEMENT_EXTERIOR_ASCENT.md) and [POL-01–09](CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md) now have registered namespaces; the counterclaims retain REFUTED or UNVERIFIED status. Formal slope declarations receive only the authority supported by the actual pinned admission receipt.
+
+## π source / circle / prime-clock frontier (2026-10-24, draft)
+
+**Source fidelity (correction).** The [BBP source-repair dossier](../research/2026-10-24/BBP_SOURCE_MEMORY_REPAIR.md)
+(SFR-BBP-01–09) **withdraws** the earlier "BBP four-pole lane closed" verdict: index poles are not
+circle states and a `1/3` fixed point does not preserve the authentic source. The
+[corrected four-pole audit](../research/2026-10-23/CYC03_LANE_CLOSED.md) (R1–R8) is current; the old
+closure is kept verbatim in the `_HISTORICAL` report. (SFR-BBP-xx live in the research dossier, not a
+registered supplement; the prefix is adjacent to but distinct from SOURCE_FAITHFUL_RENORMALIZATION's
+SFR and is not renamed.)
+
+**π source collision entropy.** [SCE-01–10](CLAIM_SUPPLEMENT_PI_SOURCE_COLLISION.md) connect the
+authentic BBP source to carry-safe cell collisions, finite entropy bounds, full-source Galois averages,
+and a *conditional* binary-normality theorem. SCE-01 proves the positive-regret, minimum-relative-regret,
+Haar-convergence and energy-minimum conditions are **asymptotically equivalent** to normality for a
+base-`b` orbit; the original *sufficient* direction remains valid and the equivalence is **not a new
+proof step**. The genuinely new route (SCE-07) is a prescribed-scale collision bound `K_p(1)=p^{o(1)}`
+at `c=2/5` with an **explicit remaining hypothesis**, still **unverified**. No new Lean or
+π-independence authority is claimed.
+
+**Circle / Poisson / minimal-path families.** [PGM — Poisson minimum geometry](CLAIM_SUPPLEMENT_POISSON_MINIMUM.md)
+(regret↔normality equivalence, converse to SCE-01), [PSG — π source genesis](CLAIM_SUPPLEMENT_PI_SOURCE_GENESIS.md),
+the two **independent** BBP minimal-path families — [gauge / missing-prime](CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH_GAUGE.md)
+(MP.GAUGE-01–06) and [odd-prime births / Galois](CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH_BIRTHS.md)
+(MP.BIRTHS-01–09), kept distinct through a [claim-ID crosswalk](CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH.md)
+(fq_prefixes MP.GAUGE / MP.BIRTHS, registered as a resolved MP collision) — plus
+[cyclotomic BBP](CLAIM_SUPPLEMENT_CYCLOTOMIC_BBP.md),
+[cyclotomic selected source](CLAIM_SUPPLEMENT_CYCLOTOMIC_SELECTED_SOURCE.md),
+[minimal genesis first carry](CLAIM_SUPPLEMENT_MINIMAL_GENESIS.md) and
+[circle origin gauge](CLAIM_SUPPLEMENT_CIRCLE_ORIGIN_GAUGE.md). All are draft PAPER / EXACT-FINITE /
+CONDITIONAL / REFUTED claims as labelled; π normality, its independence, RH and absolute/decimal
+normality remain OPEN.
+
+The [research dossier](../research/2026-10-24/PI_SOURCE_COLLISION_ENTROPY.md), the
+[coherent-main integration handoff](../handoffs/CLAUDE_COHERENT_MAIN_AND_CLEANUP_2026-10-24.md) and the
+[Codex next-round handoff](../handoffs/CODEX_PI_SOURCE_COLLISION_NEXT_2026-10-24.md) preserve the branch
+graph and the exact remaining proof obligation.

@@ -1,0 +1,135 @@
+{
+  "status": "VERIFIED_FINITE",
+  "rows": [
+    {
+      "p": 17,
+      "L": 2,
+      "Delta": 6,
+      "M": 4,
+      "mean_scaled_collision": "85/36",
+      "bound_scaled_collision": "25/8",
+      "selected_scaled_collision": "20/9",
+      "selected_at_or_above_mean": false
+    },
+    {
+      "p": 17,
+      "L": 2,
+      "Delta": 6,
+      "M": 16,
+      "mean_scaled_collision": "34/9",
+      "bound_scaled_collision": "19/2",
+      "selected_scaled_collision": "32/9",
+      "selected_at_or_above_mean": false
+    },
+    {
+      "p": 17,
+      "L": 2,
+      "Delta": 6,
+      "M": 64,
+      "mean_scaled_collision": "110/9",
+      "bound_scaled_collision": "34",
+      "selected_scaled_collision": "128/9",
+      "selected_at_or_above_mean": true
+    },
+    {
+      "p": 41,
+      "L": 5,
+      "Delta": 15,
+      "M": 4,
+      "mean_scaled_collision": "2341/1125",
+      "bound_scaled_collision": "62/25",
+      "selected_scaled_collision": "148/75",
+      "selected_at_or_above_mean": false
+    },
+    {
+      "p": 41,
+      "L": 5,
+      "Delta": 15,
+      "M": 16,
+      "mean_scaled_collision": "3304/1125",
+      "bound_scaled_collision": "128/25",
+      "selected_scaled_collision": "16/5",
+      "selected_at_or_above_mean": true
+    },
+    {
+      "p": 41,
+      "L": 5,
+      "Delta": 15,
+      "M": 64,
+      "mean_scaled_collision": "1328/225",
+      "bound_scaled_collision": "384/25",
+      "selected_scaled_collision": "192/25",
+      "selected_at_or_above_mean": true
+    },
+    {
+      "p": 73,
+      "L": 9,
+      "Delta": 27,
+      "M": 4,
+      "mean_scaled_collision": "13925/6561",
+      "bound_scaled_collision": "184/81",
+      "selected_scaled_collision": "1580/729",
+      "selected_at_or_above_mean": true
+    },
+    {
+      "p": 73,
+      "L": 9,
+      "Delta": 27,
+      "M": 16,
+      "mean_scaled_collision": "17036/6561",
+      "bound_scaled_collision": "304/81",
+      "selected_scaled_collision": "688/243",
+      "selected_at_or_above_mean": true
+    },
+    {
+      "p": 73,
+      "L": 9,
+      "Delta": 27,
+      "M": 64,
+      "mean_scaled_collision": "28256/6561",
+      "bound_scaled_collision": "256/27",
+      "selected_scaled_collision": "4160/729",
+      "selected_at_or_above_mean": true
+    },
+    {
+      "p": 97,
+      "L": 12,
+      "Delta": 36,
+      "M": 4,
+      "mean_scaled_collision": "3961/1944",
+      "bound_scaled_collision": "635/288",
+      "selected_scaled_collision": "173/81",
+      "selected_at_or_above_mean": true
+    },
+    {
+      "p": 97,
+      "L": 12,
+      "Delta": 36,
+      "M": 16,
+      "mean_scaled_collision": "4615/1944",
+      "bound_scaled_collision": "239/72",
+      "selected_scaled_collision": "80/27",
+      "selected_at_or_above_mean": true
+    },
+    {
+      "p": 97,
+      "L": 12,
+      "Delta": 36,
+      "M": 64,
+      "mean_scaled_collision": "904/243",
+      "bound_scaled_collision": "70/9",
+      "selected_scaled_collision": "344/81",
+      "selected_at_or_above_mean": true
+    }
+  ],
+  "source_checks": "Exact rational BBP recurrence and p-free complement",
+  "independent_identity_checks": 12,
+  "mutation": {
+    "control": "equal-phase term omitted",
+    "true_mean": "1/2",
+    "false_bound": "1/16",
+    "rejected": true
+  },
+  "pi_normality": "OPEN",
+  "selected_asymptotic_collision_bound": "UNVERIFIED"
+}

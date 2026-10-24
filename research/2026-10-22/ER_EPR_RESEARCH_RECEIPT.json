@@ -1,0 +1,239 @@
+{
+  "active_worktree": "/workspace/scratch/f3c3f94a0370/SUCC",
+  "baseline_control_worktree": "/workspace/scratch/f3c3f94a0370/SUCC-baseline-prime-bridge",
+  "baseline_sha": "b116841f12b41aaf7600da39bbb40577f25b6295",
+  "branch": "research/prime-bridge-2026-10-22",
+  "claim_scope": {
+    "RH_proved": false,
+    "academic_novelty_established": false,
+    "all_infinite_theorems_lean_checked": false,
+    "exact_finite_implementation_tests": true,
+    "gravitational_duality_proved": false,
+    "paper_proofs": true
+  },
+  "commands": [
+    {
+      "command": "python scripts/verify_provenance.py",
+      "log": "prime_bridge_receipts/baseline_provenance.log",
+      "result": "PASS;72 items,17 byte-identical archives,55 mechanical imports",
+      "scope": "baseline"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "log": "prime_bridge_receipts/baseline_unittest.log",
+      "result": "FAIL;6027 tests,128 errors,24 skipped;107 missing-mpmath imports,20 missing-sympy imports,1 existing subprocess import-path failure",
+      "scope": "initial baseline before optional dependencies installed"
+    },
+    {
+      "command": "python -m pip install 'mpmath>=1.3,<2' 'sympy>=1.12,<2'",
+      "result": "PASS; installed mpmath1.3.0 and sympy1.14.0"
+    },
+    {
+      "command": "python scripts/observer_foundations_probe.py",
+      "log": "prime_bridge_receipts/observer_foundations.log",
+      "result": "PASS exit0"
+    },
+    {
+      "command": "python scripts/ordinal_succ_report_probe.py",
+      "log": "prime_bridge_receipts/ordinal_succ_report.log",
+      "result": "PASS exit0"
+    },
+    {
+      "command": "python -m unittest tests.test_arithmetic_tfd tests.test_arithmetic_entanglement tests.test_interacting_arithmetic_hamiltonian tests.test_padic_bulk_network tests.test_holographic_reconstruction tests.test_arithmetic_operator_interface",
+      "log": "prime_bridge_receipts/focused_tests.log",
+      "result": "PASS;73 tests",
+      "scope": "preintegration working tree; hashed executable sources"
+    },
+    {
+      "command": "python scripts/prime_bridge_probe.py",
+      "log": "prime_bridge_receipts/exact_probe.json",
+      "result": "PASS exit0 exact rational output"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p 'test_*.py'",
+      "log": "prime_bridge_receipts/integrated_unittest.log",
+      "result": "FAIL;6630 tests in550.356s,1 pre-existing subprocess import-path error;no failed assertions",
+      "scope": "Launched at preintegration HEAD9292bb with executable source subsequently committed unchanged as73ecf864; every recorded executable fingerprint rechecked"
+    },
+    {
+      "command": "python scripts/verify_provenance.py",
+      "log": "prime_bridge_receipts/final_provenance.log",
+      "result": "PASS exit0;72items17archives55mechanical",
+      "scope": "Executable sources identical to committed source; final documentation/receipts may be dirty",
+      "source_commit": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf"
+    },
+    {
+      "command": "python scripts/observer_foundations_probe.py",
+      "log": "prime_bridge_receipts/final_observer_foundations.log",
+      "result": "PASS exit0",
+      "scope": "Executable sources identical to committed source; final documentation/receipts may be dirty",
+      "source_commit": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf"
+    },
+    {
+      "command": "python scripts/ordinal_succ_report_probe.py",
+      "log": "prime_bridge_receipts/final_ordinal_succ_report.log",
+      "result": "PASS exit0",
+      "scope": "Executable sources identical to committed source; final documentation/receipts may be dirty",
+      "source_commit": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf"
+    },
+    {
+      "command": "python -m unittest tests.test_arithmetic_tfd tests.test_arithmetic_entanglement tests.test_interacting_arithmetic_hamiltonian tests.test_padic_bulk_network tests.test_holographic_reconstruction tests.test_arithmetic_operator_interface",
+      "log": "prime_bridge_receipts/final_focused_tests.log",
+      "result": "PASS;73 tests in3.059s",
+      "scope": "Executable sources identical to committed source; final documentation/receipts may be dirty",
+      "source_commit": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf"
+    },
+    {
+      "command": "python scripts/prime_bridge_probe.py",
+      "log": "prime_bridge_receipts/final_exact_probe.json",
+      "result": "PASS exit0;exact rational/cyclotomic oracle",
+      "scope": "Executable sources identical to committed source; final documentation/receipts may be dirty",
+      "source_commit": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf"
+    },
+    {
+      "command": "git diff --check",
+      "result": "PASS exit0",
+      "scope": "Executable sources identical to committed source; final documentation/receipts may be dirty",
+      "source_commit": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf"
+    },
+    {
+      "command": "PYTHONPATH=. python -m unittest discover -s tests -p 'test_*.py'",
+      "log": "prime_bridge_receipts/integrated_unittest_pythonpath.log",
+      "result": "PASS;6630 tests in549.311s;no failures/errors/skips reported",
+      "scope": "HEAD73ecf864;all executable sources identical to committed versions;receipt and prose updates only during execution",
+      "source_commit": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf"
+    }
+  ],
+  "draft_pr": "https://github.com/femboy2112/SUCC/pull/233",
+  "environment_control": {
+    "receipt": "prime_bridge_receipts/META_CHOICE_BASELINE_CONTROL.json",
+    "result": "Clean baseline and current share byte-identical failing old probe/test;both pass with PYTHONPATH=.;no source modification"
+  },
+  "execution": {
+    "available_and_used_tools": [
+      "Git CLI for clone/fetch/worktrees/local tree verification",
+      "GitHub connector for immutable tree/commit and branch/ref/PR writes",
+      "GitHub Actions for unmodified official Lean compiler",
+      "Shell Python exact rational and numerical execution",
+      "Primary-paper web retrieval",
+      "Six research lanes plus parent synthesis/audit"
+    ],
+    "git": "git version 2.51.1",
+    "git_transport": "Unauthenticated read/fetch available; credentialless git push unavailable; authorized GitHub connector writes succeeded",
+    "lean_pin": "leanprover/lean4:v4.14.0",
+    "local_lean": "startup access gap; hosted workflow used",
+    "packages": {
+      "mpmath": "1.3.0",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "sympy": "1.14.0"
+    },
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "formal": {
+    "admitted_to_trusted_catalogue": false,
+    "all_source_log_and_type_hashes_verified": true,
+    "artifact": 12406501833,
+    "false_controls_rejected": 3,
+    "independent_receipt_check": "prime_bridge_receipts/HOSTILE_FORMAL_RECEIPT_CHECK.json",
+    "initial_attempt": {
+      "commit": "9292bb854a0bf6193fb92176df5182c9bb16f42d",
+      "result": "FAIL existential Decidable synthesis;repaired using explicit witnesses;failed logs retained",
+      "run": 39733348628
+    },
+    "job": 119676779117,
+    "machine_receipt": "prime_bridge_receipts/formal_73ecf864/kernel-observation.json",
+    "no_axioms": 3,
+    "result": "PASS;KERNEL_CHECKED_UNADMITTED",
+    "run": 39734454757,
+    "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39734454757",
+    "scope": "Finite support/count/decoder/intertwiner identities;conditional word transport;abstract commutation. Infinite analysis and complex-Hilbert linear extension remain paper proofs.",
+    "source_commit": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf",
+    "standard_propext_only": 8,
+    "targets": 11
+  },
+  "open": [
+    "Geometric equivariance with nonuniform arithmetic weights",
+    "Certified infinite mixed Gibbs entanglement",
+    "Natural arithmetic-to-metric reconstruction",
+    "Archimedean/adelic quantum descent",
+    "Abstract BC representation faithfulness/classification not proved here"
+  ],
+  "preintegration_head": "9292bb854a0bf6193fb92176df5182c9bb16f42d",
+  "receipt_sha256": {
+    "prime_bridge_receipts/HOSTILE_FORMAL_RECEIPT_CHECK.json": "e885189586b09cdca0655e8561fe601e27a64a8efcebc1750cd52a812858772e",
+    "prime_bridge_receipts/META_CHOICE_BASELINE_CONTROL.json": "86f9005a687de0f37d99e91dc08c90605d106c6db983183cd8344b43bc10a7ce",
+    "prime_bridge_receipts/baseline_meta_choice_direct_pythonpath_unset.log": "67d62c0b414fc01aef208e5cec356070ef59701ff631d0cb328352598ec52820",
+    "prime_bridge_receipts/baseline_meta_choice_pythonpath_dot.log": "d1808251a3fbeacb80136e210ad01d183a91f5a67ecdbc155521366548425c6b",
+    "prime_bridge_receipts/baseline_meta_choice_pythonpath_unset.log": "39a3286512afcda77db307694081186aebbfd66f3454e83d179a6a467821d871",
+    "prime_bridge_receipts/baseline_provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "prime_bridge_receipts/baseline_unittest.log": "64e282f3622198f256a0418f2459110b5f904deb88c610081dd9d9ed3e6ef399",
+    "prime_bridge_receipts/current_meta_choice_direct_pythonpath_unset.log": "dd9f6265c9928e3f1541c7b528c893550b1e7211e2d96bbb92f82a53d0009df9",
+    "prime_bridge_receipts/current_meta_choice_pythonpath_dot.log": "04ac82d5673f76c3a7794e0d1d4d7e7a77d3cbb9736a2d50ad8469d1cba63608",
+    "prime_bridge_receipts/current_meta_choice_pythonpath_unset.log": "0c10938ff1053c2f4af2d41e291cda11f301bdb76288593cc2c055339b07178b",
+    "prime_bridge_receipts/exact_probe.json": "989c7dc91f779aaad6c4ceea979e5110e31ebc5a2d468abcd9d7005b35fc565a",
+    "prime_bridge_receipts/final_exact_probe.json": "989c7dc91f779aaad6c4ceea979e5110e31ebc5a2d468abcd9d7005b35fc565a",
+    "prime_bridge_receipts/final_focused_tests.log": "4bfb3e27bb9a9a08a38423997d0a89bc0fcea9d0f39351781ab2e2c954ff0f09",
+    "prime_bridge_receipts/final_observer_foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "prime_bridge_receipts/final_ordinal_succ_report.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "prime_bridge_receipts/final_provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "prime_bridge_receipts/focused_tests.log": "9c9f73166202bf326438243119e3bc53a7ebf4b2ee0aad942397f256a2b54604",
+    "prime_bridge_receipts/formal_73ecf864/HOSTED_VERIFICATION.json": "e1b1b790d6e3bf66b0a0aaa1719eb2a0be77d8614ae894362b7bd1ef13a01d98",
+    "prime_bridge_receipts/formal_73ecf864/exporter.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "prime_bridge_receipts/formal_73ecf864/kernel-observation.json": "4967a4f7e8c6a7b4d3ab4b54af6b49879bbcc6479696a4af009bf88d0e698ee7",
+    "prime_bridge_receipts/formal_73ecf864/positive.log": "126152bd1b93add157f0ae400dc50dfc972ecef93a36526c3660e7c15a8a513c",
+    "prime_bridge_receipts/formal_73ecf864/types.log": "a1fc2344311445c9001fd5a8138f564a817185f3a9629b30b2a533be597b065a",
+    "prime_bridge_receipts/formal_73ecf864/version.log": "c3958f561d07538e901a1ee322edb1454b9b0bff2f0c9f040e006c812b3919bc",
+    "prime_bridge_receipts/formal_73ecf864/wrong_braid.log": "9bfd9c8e92c47f8bba922b24402e6789d23b0d44bf2644b8106ac46a0e2c04d4",
+    "prime_bridge_receipts/formal_73ecf864/wrong_coherence.log": "d377605b210db43ab9896005d5c5aad4d9b0e91a99b5aee6bc976d081ba0df61",
+    "prime_bridge_receipts/formal_73ecf864/wrong_inverse.log": "779e9363dfcdd2c79ceb423b028e204fd83c4eb265dafec9511ddd0cfa3b0601",
+    "prime_bridge_receipts/formal_attempt1/positive.log": "fb5b248ed477cd353c3e3f4f16509a2ba73c92b3d11685be9a32e89c9a6eecec",
+    "prime_bridge_receipts/formal_attempt1/version.log": "c3958f561d07538e901a1ee322edb1454b9b0bff2f0c9f040e006c812b3919bc",
+    "prime_bridge_receipts/formal_local_startup.log": "c82df870ca9b5c1f3b845ad4db1390a1c2eb49cdd84e15c5945db5e5dc20089d",
+    "prime_bridge_receipts/hosted_workflow_scope.json": "617892e4a8605eeba177d245a77db5e11bcfa2fafa9aa798aad599cf5d1d3d03",
+    "prime_bridge_receipts/integrated_unittest.log": "3d4c8d79fb3ac13d0f18d8b3a47d478238998ccc4bacf8831e6f540f6cfc10e0",
+    "prime_bridge_receipts/integrated_unittest_pythonpath.log": "1a037007c11ac75dd269d715fb99e37aa29ebece3536941256581e193e93b6f5",
+    "prime_bridge_receipts/observer_foundations.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "prime_bridge_receipts/ordinal_succ_report.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+  },
+  "remote_main_rechecked_unchanged": "b116841f12b41aaf7600da39bbb40577f25b6295",
+  "schema": "succ-prime-bridge-research-v1",
+  "source_policy": {
+    "archive_edits": false,
+    "external_sources": "Original paper URLs and actual inspected sections in each dossier; inaccessible TFD original explicitly excluded",
+    "original_import_manifest_unchanged": true,
+    "same_model_lanes_independent_reasoner_samples": false
+  },
+  "source_sha256": {
+    "formal/PrimeBridge.lean": "03a48ee884b65cf90ef65fa87d34cb4456aad8e1f3066c540838c68a1be5871f",
+    "observational_succ/arithmetic_entanglement.py": "7879cb00e3dff467392916a4264a99fd0fe46c08676f50f17ec17357908aa082",
+    "observational_succ/arithmetic_operator_interface.py": "4ab12308fd64a80ec0566ea059d26e34d68435e366feb95bcbc28bc532b73ec9",
+    "observational_succ/arithmetic_tfd.py": "c38a8813660df63ec6c4413b168eee9120f6b4dca5f0eb08d1ede7e5076d484a",
+    "observational_succ/holographic_reconstruction.py": "c90e20b29317e328a9e62a38d12d22c09ff780e2153fe3da9e3bc0be185386dd",
+    "observational_succ/interacting_arithmetic_hamiltonian.py": "2f47669a8d45a6cb2060e9e817b3d90e10956f535f473fd2847c5ae294a08506",
+    "observational_succ/padic_bulk_network.py": "a22a67f858053656267e490b88c6d35132a18e8fe278cc085b351886cfe5ba0f",
+    "scripts/prime_bridge_lean_probe.py": "2d47ad3fa4c8f226989d545e36e1a3f1329ce5476f56a89aedb9c7d30ad948e1",
+    "scripts/prime_bridge_probe.py": "99676a442426ac582d8678367dc3d1ee5bf2751da4fb4204f2a5e1aa51bfb88f",
+    "tests/test_arithmetic_entanglement.py": "218d2160340f9c56faf6c4cbe37467035b4127886adf112600b77de9e80919ae",
+    "tests/test_arithmetic_operator_interface.py": "d6abfa765639a4c5c6d894ae9dad9c22b1f34550abe0dd0eca6be9751d95bcd3",
+    "tests/test_arithmetic_tfd.py": "8abb53239091b74d2c70709ac74bc15366aacc4112d29eacfd40d1e3d34fa6b8",
+    "tests/test_holographic_reconstruction.py": "00b298519ad8af4670aedaa997f4ba3fd9e48e68c5695127a183f3f4efc318ca",
+    "tests/test_interacting_arithmetic_hamiltonian.py": "f0729c0efdf9430f0128c8e76124429a75fe98410275ef29f40831cb27da6f3e",
+    "tests/test_padic_bulk_network.py": "260c8e2c438eab61e587066aa23e6f70b1fd5fad6a8be7da5dd1e7f3651701be"
+  },
+  "status": "PAPER_PROOFS_EXACT_MODELS_AND_SCOPED_KERNEL_TARGETS_VALIDATED",
+  "validated_source_commit": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf",
+  "validation_summary": {
+    "all_four_required_commands_executed": true,
+    "all_remote_workflows_passed": null,
+    "dedicated_lean_targets": 11,
+    "focused_tests": 73,
+    "full_test_environment": "PYTHONPATH=. after proving the identical baseline import-path failure",
+    "full_tests": 6630,
+    "full_tests_passed": true,
+    "remote_workflow_boundary": "Only inspected completed jobs are claimed;general validation run still in progress at its last observation",
+    "required_probes_passed": true,
+    "source_hash_drift": []
+  }
+}

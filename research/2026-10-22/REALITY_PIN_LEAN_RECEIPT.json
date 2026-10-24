@@ -1,0 +1,103 @@
+{
+  "schema": "succ-reality-pin-lean-v1",
+  "toolchain": "leanprover/lean4:v4.14.0",
+  "compiler_version": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "source": "formal/RealityPin.lean",
+  "source_sha256": "f38108924d8ebe48343c477425a56bdc7ad38ba59ead53ec3f604d4ceac30852",
+  "verifier_sha256": "23b61dde4374da9a5aca3b8dddb2f0deb2856baaebe0f3de3ccac01b0a296554",
+  "exit_code": 0,
+  "declarations": {
+    "ObservationalSUCC.RealityPin.calibrated_source_survives": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationalSUCC.RealityPin.common_reading_bounds_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationalSUCC.RealityPin.separated_survivors_are_gauge_equivalent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationalSUCC.RealityPin.calibrated_identification_within_declared_family": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationalSUCC.RealityPin.observer_refinement_shrinks_fiber": [],
+    "ObservationalSUCC.RealityPin.holdout_rejects_candidate": [],
+    "ObservationalSUCC.RealityPin.equality_margin_counterexample": [],
+    "ObservationalSUCC.RealityPin.exact_decoder_requires_observable_invariance": [
+      "Quot.sound"
+    ],
+    "ObservationalSUCC.RealityPin.observable_equivalence": [],
+    "ObservationalSUCC.RealityPin.hidden_label_counterexample": [],
+    "ObservationalSUCC.RealityPin.walk_displacement_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationalSUCC.RealityPin.boundary_return_requires_twice_depth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationalSUCC.RealityPin.short_history_cannot_visit_depth_and_return": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "ObservationalSUCC.RealityPin.straight_depth_histories": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "compiler_output": "'ObservationalSUCC.RealityPin.calibrated_source_survives' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.RealityPin.common_reading_bounds_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.RealityPin.separated_survivors_are_gauge_equivalent' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.calibrated_identification_within_declared_family' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.observer_refinement_shrinks_fiber' does not depend on any axioms\n'ObservationalSUCC.RealityPin.holdout_rejects_candidate' does not depend on any axioms\n'ObservationalSUCC.RealityPin.equality_margin_counterexample' does not depend on any axioms\n'ObservationalSUCC.RealityPin.exact_decoder_requires_observable_invariance' depends on axioms: [Quot.sound]\n'ObservationalSUCC.RealityPin.observable_equivalence' does not depend on any axioms\n'ObservationalSUCC.RealityPin.hidden_label_counterexample' does not depend on any axioms\n'ObservationalSUCC.RealityPin.walk_displacement_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.RealityPin.boundary_return_requires_twice_depth' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.short_history_cannot_visit_depth_and_return' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.straight_depth_histories' depends on axioms: [propext, Quot.sound]\n",
+  "negative_controls": {
+    "false_proposition": {
+      "source_sha256": "bad0e1136305a6e77da260266aacd011c9809169d7f77564bcb55e5ade586b96",
+      "exit_code": 1,
+      "stdout": "TEMP/false_proposition.lean:1:35: error: tactic 'decide' proved that the proposition\n  False\nis false\n",
+      "stderr": ""
+    },
+    "nonstrict_separation": {
+      "source_sha256": "f618949ceacef49b66ce165699a0e55135ec14d2f23f97966abcbac914553361",
+      "exit_code": 1,
+      "stdout": "TEMP/nonstrict_separation.lean:62:32: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a - b \u2265 0\nwhere\n a := prediction m q\n b := prediction n q\nTEMP/nonstrict_separation.lean:62:32: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  a - b \u2264 0\nwhere\n a := prediction m q\n b := prediction n q\nTEMP/nonstrict_separation.lean:57:72: error: unsolved goals\ncase h.intro.intro.inl\nModel : Type u\nProbe : Type v\nprediction : Model \u2192 Probe \u2192 Int\nreading : Probe \u2192 Int\nradius : Model \u2192 Probe \u2192 Int\nobserved : Probe \u2192 Prop\ngauge : Model \u2192 Model \u2192 Prop\nseparated :\n  \u2200 (m n : Model),\n    \u00acgauge m n \u2192\n      \u2203 q,\n        observed q \u2227\n          (radius m q + radius n q \u2264 prediction m q - prediction n q \u2228\n            radius m q + radius n q \u2264 prediction n q - prediction m q)\nm n : Model\nhm : Survivor prediction reading radius observed m\nhn : Survivor prediction reading radius observed n\ndifferent : \u00acgauge m n\nq : Probe\nhq : observed q\nbounds :\n  prediction m q - prediction n q \u2264 radius m q + radius n q \u2227 prediction n q - prediction m q \u2264 radius m q + radius n q\ngap : radius m q + radius n q \u2264 prediction m q - prediction n q\n\u22a2 False\n\ncase h.intro.intro.inr\nModel : Type u\nProbe : Type v\nprediction : Model \u2192 Probe \u2192 Int\nreading : Probe \u2192 Int\nradius : Model \u2192 Probe \u2192 Int\nobserved : Probe \u2192 Prop\ngauge : Model \u2192 Model \u2192 Prop\nseparated :\n  \u2200 (m n : Model),\n    \u00acgauge m n \u2192\n      \u2203 q,\n        observed q \u2227\n          (radius m q + radius n q \u2264 prediction m q - prediction n q \u2228\n            radius m q + radius n q \u2264 prediction n q - prediction m q)\nm n : Model\nhm : Survivor prediction reading radius observed m\nhn : Survivor prediction reading radius observed n\ndifferent : \u00acgauge m n\nq : Probe\nhq : observed q\nbounds :\n  prediction m q - prediction n q \u2264 radius m q + radius n q \u2227 prediction n q - prediction m q \u2264 radius m q + radius n q\ngap : radius m q + radius n q \u2264 prediction n q - prediction m q\n\u22a2 False\nTEMP/nonstrict_separation.lean:88:58: error: application type mismatch\n  @separated_survivors_are_gauge_equivalent Model Probe prediction reading (fun m q => theory m q + instrument q)\n    observed gauge separated\nargument\n  separated\nhas type\n  \u2200 (m n : Model),\n    \u00acgauge m n \u2192\n      \u2203 q,\n        observed q \u2227\n          (theory m q + instrument q + (theory n q + instrument q) < prediction m q - prediction n q \u2228\n            theory m q + instrument q + (theory n q + instrument q) < prediction n q - prediction m q) : Prop\nbut is expected to have type\n  \u2200 (m n : Model),\n    \u00acgauge m n \u2192\n      \u2203 q,\n        observed q \u2227\n          (theory m q + instrument q + (theory n q + instrument q) \u2264 prediction m q - prediction n q \u2228\n            theory m q + instrument q + (theory n q + instrument q) \u2264 prediction n q - prediction m q) : Prop\n'ObservationalSUCC.RealityPin.calibrated_source_survives' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.RealityPin.common_reading_bounds_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.RealityPin.separated_survivors_are_gauge_equivalent' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.calibrated_identification_within_declared_family' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.observer_refinement_shrinks_fiber' does not depend on any axioms\n'ObservationalSUCC.RealityPin.holdout_rejects_candidate' does not depend on any axioms\n'ObservationalSUCC.RealityPin.equality_margin_counterexample' does not depend on any axioms\n'ObservationalSUCC.RealityPin.exact_decoder_requires_observable_invariance' depends on axioms: [Quot.sound]\n'ObservationalSUCC.RealityPin.observable_equivalence' does not depend on any axioms\n'ObservationalSUCC.RealityPin.hidden_label_counterexample' does not depend on any axioms\n'ObservationalSUCC.RealityPin.walk_displacement_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.RealityPin.boundary_return_requires_twice_depth' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.short_history_cannot_visit_depth_and_return' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.straight_depth_histories' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    },
+    "false_three_times_depth": {
+      "source_sha256": "5c04e2703f46cca5c70a49aed20cc7fbcdb7c8efe6c3b7e13f9a36a61e9f4802",
+      "exit_code": 1,
+      "stdout": "TEMP/false_three_times_depth.lean:185:2: error: omega could not prove the goal:\na possible counterexample may satisfy the constraints\n  c \u2265 0\n  b \u2265 0\n  a \u2265 0\n  a - b \u2264 0\n  a - c \u2264 0\n  a + c \u2265 0\n  a + b \u2265 0\n  3*a - b - c \u2265 1\nwhere\n a := \u2191r\n b := \u2191inward\n c := \u2191outward\n'ObservationalSUCC.RealityPin.calibrated_source_survives' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.RealityPin.common_reading_bounds_gap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.RealityPin.separated_survivors_are_gauge_equivalent' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.calibrated_identification_within_declared_family' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.observer_refinement_shrinks_fiber' does not depend on any axioms\n'ObservationalSUCC.RealityPin.holdout_rejects_candidate' does not depend on any axioms\n'ObservationalSUCC.RealityPin.equality_margin_counterexample' does not depend on any axioms\n'ObservationalSUCC.RealityPin.exact_decoder_requires_observable_invariance' depends on axioms: [Quot.sound]\n'ObservationalSUCC.RealityPin.observable_equivalence' does not depend on any axioms\n'ObservationalSUCC.RealityPin.hidden_label_counterexample' does not depend on any axioms\n'ObservationalSUCC.RealityPin.walk_displacement_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ObservationalSUCC.RealityPin.boundary_return_requires_twice_depth' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.short_history_cannot_visit_depth_and_return' depends on axioms: [propext,\n sorryAx,\n Classical.choice,\n Quot.sound]\n'ObservationalSUCC.RealityPin.straight_depth_histories' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": ""
+    }
+  },
+  "runtime_note": {
+    "kind": "current-process executable path compatibility only",
+    "reason": "Lean 4.14.0 uses /proc/<getpid()>/exe; this host exposes /proc/self/exe but fails the numerical process alias. No checker binary is changed.",
+    "official_source": "https://github.com/leanprover/lean4/blob/v4.14.0/src/runtime/io.cpp#L1031-L1043",
+    "shim_source": "#define _GNU_SOURCE\n#include <unistd.h>\n#include <stdio.h>\n#include <string.h>\n#include <dlfcn.h>\n/* Only repair equivalent current-process executable-link spellings. */\nssize_t readlink(const char *path, char *buf, size_t size) {\n  static ssize_t (*real_readlink)(const char *, char *, size_t) = NULL;\n  if (!real_readlink) real_readlink = dlsym(RTLD_NEXT, \"readlink\");\n  char own[64];\n  snprintf(own, sizeof own, \"/proc/%d/exe\", (int)getpid());\n  return real_readlink(strcmp(path, own) == 0 ? \"/proc/self/exe\" : path, buf, size);\n}\n",
+    "shim_source_sha256": "9149b3d5bde2ab07f79d178d002e2bf019d8191e9a897c16e825378d1ca66b04",
+    "shim_shared_object_sha256": "1af67bf656dc3e2e7c2fd564f4ba5bf81b43730b47d521f64014e9dcc79cabcd",
+    "compiler_distribution_sha256": "320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a",
+    "compiler_binary_sha256": "eacf754d25ae86ea076882a34b9444f2485659d9df4266b821443b28ca95a215",
+    "clean_CI_required_for_unmodified_host_receipt": true
+  },
+  "dynamic_preload_present": true,
+  "checked_utc": "2026-10-23T01:39:05.437667+00:00",
+  "resource_limits": {
+    "address_space_bytes": 1610612736,
+    "cpu_seconds": 60
+  },
+  "command": [
+    "lean",
+    "-o",
+    "TEMP/RealityPin.olean",
+    "formal/RealityPin.lean"
+  ],
+  "scope": "Finite observational selection and nearest-neighbor return budget only; no spectral operator or physical measurement certification."
+}

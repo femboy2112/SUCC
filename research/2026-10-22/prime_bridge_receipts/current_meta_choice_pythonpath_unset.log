@@ -1,0 +1,25 @@
+cwd: /workspace/scratch/f3c3f94a0370/SUCC
+sha: 73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf
+command: env -u PYTHONPATH python -m unittest tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count -v
+exit_code: 1
+
+STDOUT
+
+STDERR
+test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count) ... ERROR
+
+======================================================================
+ERROR: test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/f3c3f94a0370/SUCC/tests/test_eodcs_meta_choice_descent.py", line 141, in test_exact_probe_receipt_and_independent_count
+    run = subprocess.run(
+          ^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python', 'scripts/meta_choice_descent_probe.py']' returned non-zero exit status 1.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.022s
+
+FAILED (errors=1)

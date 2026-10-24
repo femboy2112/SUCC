@@ -1,0 +1,819 @@
+{
+  "schema": "succ.duck-pi.validation-history.v1",
+  "authority_admitted": false,
+  "scope": "Historical hosted build observations, including failed attempts. Successful individual modules do not make a failed combined run successful. Expected mutation failures are positive controls, not candidate proof failures.",
+  "attempts": [
+    {
+      "run_id": 39610936757,
+      "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39610936757",
+      "commit": "2629c3c93225d5fd1ccde6a9e432060c0e9ec4e7",
+      "tree": "42e597f35b90e849338d52c325379ea8eedb82ab",
+      "build_succeeded": false,
+      "successful_modules": [
+        "DuckPrinciple"
+      ],
+      "failed_modules": [
+        "DuckObserver",
+        "BaileyCrandall",
+        "LogisticFactor",
+        "Normality"
+      ],
+      "exported_declarations": 8,
+      "negative_controls": "NOT_YET_RUN",
+      "generated_certificate_results": [],
+      "decoded_record_sha256": "aff56221cd989add9bc2d8feca7f1c1fd325dd6f6ec3302aa9c568a136a32716",
+      "log_sha256": "c3158ba4cd627e9dacb1d19b862a9047cd19e6e29c5569a9fccaeaa2c10b5a2e",
+      "failure_diagnostics": [
+        {
+          "command": "DuckObserver-build EXIT 1",
+          "diagnostic_excerpt": "DuckObserver.lean:82:17: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nDuckObserver.lean:82:19: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nDuckObserver.lean:83:18: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nDuckObserver.lean:83:20: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nDuckObserver.lean:83:22: warning: unused variable `z`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nDuckObserver.lean:111:25: error: application type mismatch\n  { mp := Quotient.exact, mpr := Quotient.sound }\nargument\n  Quotient.sound\nhas type\n  ?m.1916 \u2248 ?m.1917 \u2192 Quotient.mk ?m.1915 ?m.1916 = Quotient.mk ?m.1915 ?m.1917 : Prop\nbut is expected to have type\n  BehaviorEq step observe x y \u2192 project step observe x = project step observe y : Prop"
+        },
+        {
+          "command": "BaileyCrandall-build EXIT 1",
+          "diagnostic_excerpt": "BaileyCrandall.lean:62:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nBaileyCrandall.lean:134:57: error: not a positivity goal\nBaileyCrandall.lean:141:53: error: not a positivity goal\nBaileyCrandall.lean:150:48: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nTry this: ring_nf\nBaileyCrandall.lean:160:67: error: unsolved goals\ncase h.e'_4\nn : \u2115\nh : \u2211' (i : \u2115), tailTerm n i \u2264 1 / 15 * (47 / 15 / (\u2191n + 1) ^ 2)\nhs : \u2211' (b : \u2115), (1 / 16) ^ (b + 1) * (47 / 15 / (\u2191n + 1) ^ 2) = 1 / 15 * (47 / 15 / (\u2191n + 1) ^ 2)\n\u22a2 (225 + \u2191n * 450 + \u2191n ^ 2 * 225)\u207b\u00b9 * 47 = (1 + \u2191n * 2 + \u2191n ^ 2)\u207b\u00b9 * (47 / 225)\nBaileyCrandall.lean:176:17: error: invalid field 'tsum_eq_zero_add', the environment does not contain 'Summable.tsum_eq_zero_add'\n  tail_summable n\nhas type\n  Summable (tailTerm n)\nBaileyCrandall.lean:176:17: error: invalid field 'tsum_eq_zero_add', the environment does not contain 'Exists.tsum_eq_zero_add'\n  tail_summable n\nhas type\n  \u2203 a, HasSum (tailTerm n) a\nBaileyCrandall.lean:175:54: error: unsolved goals\nn : \u2115\n\u22a2 16 * tail n = forcing (\u2191n + 1) + tail (n + 1)\nBaileyCrandall.lean:220:51: error: unsolved goals\nn : \u2115\n\u22a2 \u2191(16 * liftedOrbit n) + \u2191(forcing \u2191(n + 1)) = 16 \u2022 \u2191(liftedOrbit n) + \u2191(forcing \u2191(n + 1))\nBaileyCrandall.lean:245:0: error: invalid 'end', name mismatch (expected nothing)"
+        },
+        {
+          "command": "LogisticFactor-build EXIT 1",
+          "diagnostic_excerpt": "LogisticFactor.lean:38:2: error: linarith failed to find a contradiction\ncase h1.h\nt : \u211d\nh : Real.sin (Real.pi * t) ^ 2 + Real.cos (Real.pi * t) ^ 2 = 1\nhw :\n  (fun z => 4 * Real.sin (Real.pi * t) ^ 2 * z) (Real.sin (Real.pi * t) ^ 2 + Real.cos (Real.pi * t) ^ 2) =\n    (fun z => 4 * Real.sin (Real.pi * t) ^ 2 * z) 1\nha : Real.pi * (t + t) = 2 * (Real.pi * t)\na\u271d :\n  (2 * Real.sin (Real.pi * t) * Real.cos (Real.pi * t)) ^ 2 <\n    4 * Real.sin (Real.pi * t) ^ 2 * (1 - Real.sin (Real.pi * t) ^ 2)\n\u22a2 False failed\nLogisticFactor.lean:63:26: error: not a positivity goal"
+        },
+        {
+          "command": "Normality-build EXIT 1",
+          "diagnostic_excerpt": "Normality.lean:97:2: error: no applicable extensionality theorem found for\n  \u2115\nNormality.lean:150:2: warning: try 'simp' instead of 'simpa'\nnote: this linter can be disabled with `set_option linter.unnecessarySimpa false`"
+        }
+      ]
+    },
+    {
+      "run_id": 39612338490,
+      "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39612338490",
+      "commit": "1fa9e3d2c9536ddddb919ade0dc91d179b040574",
+      "tree": "3c649088e3a32d696e595eaf7eb757a87b98d4ab",
+      "build_succeeded": false,
+      "successful_modules": [
+        "DuckPrinciple",
+        "LogisticFactor",
+        "Normality"
+      ],
+      "failed_modules": [
+        "DuckObserver",
+        "BaileyCrandall"
+      ],
+      "exported_declarations": 28,
+      "negative_controls": [
+        {
+          "name": "duck_erased_factor",
+          "status": "BLOCKED_BY_POSITIVE_MODULE"
+        },
+        {
+          "name": "bbp_sharp_constant",
+          "status": "BLOCKED_BY_POSITIVE_MODULE"
+        },
+        {
+          "name": "bbp_clock",
+          "status": "BLOCKED_BY_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "dd2db02fd871bd18bb6007f97719b97bf5284683b975cebd9f20a7ea5c0db5d4",
+          "name": "logistic_coefficient",
+          "positive_exit": 0,
+          "positive_source_sha256": "95b7302dd5f924202e0cdcf2ac17f3e3ee3a9a6d0763c922f0d3f583a0b019d4",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6f2f9c5131275ad216b7e17d194736a0c2ea38caa83ab6a95e84a795320a7b28",
+          "name": "canonical_zero_digit",
+          "positive_exit": 0,
+          "positive_source_sha256": "e1267be3fe967978cbb00555f038bd971e1d75c7b9baa2dfa531f78d49cf034b",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "0c56c9f41990b45ae1ae9aaa2dd584d1b7e174f8c4c820a7a9d803b649695700",
+          "name": "normality_exceptional_orbit",
+          "positive_exit": 0,
+          "positive_source_sha256": "4ae517dd5101456868cd4239f4dfc48212ff841bffce011e3220d186434725bd",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        }
+      ],
+      "generated_certificate_results": [],
+      "decoded_record_sha256": "8334ed8cc1bd91bb3075faf322a87eb3316b9c47b4314d724c3c7dff685ecc4f",
+      "log_sha256": "4d9fcd3d045af4229ae98f34b572b36baa2c4bf5b07b35fc0a4c182da275aad3",
+      "failure_diagnostics": [
+        {
+          "command": "DuckObserver-build EXIT 1",
+          "diagnostic_excerpt": "DuckObserver.lean:90:2: error: failed to synthesize\n  Decidable (RelationTableLaws stepX observeX stepY observeY table)\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nDuckObserver.lean:102:22: error: application type mismatch\n  of_decide_eq_true valid\nargument\n  valid\nhas type\n  relationTableValid stepX observeX stepY observeY table = true : Prop\nbut is expected to have type\n  decide (RelationTableLaws stepX observeX stepY observeY table) = true : Prop\nDuckObserver.lean:102:4: error: failed to synthesize\n  Decidable (RelationTableLaws stepX observeX stepY observeY table)\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nDuckObserver.lean:115:67: error: tactic 'decide' failed for proposition\n  (relationTableValid tableExampleFlip (fun x => 0) tableExampleIdle (fun x => 0) fun x x => true) = true\nsince its 'Decidable' instance\n  instDecidableEqBool (relationTableValid tableExampleFlip (fun x => 0) tableExampleIdle (fun x => 0) fun x x => true)\n    true\ndid not reduce to 'isTrue' or 'isFalse'.\n\nAfter unfolding the instances 'instDecidableEqBool' and 'Bool.decEq', reduction got stuck at the 'Decidable' instance\n  match relationTableValid tableExampleFlip (fun x => 0) tableExampleIdle (fun x => 0) fun x x => true, true with\n  | false, false => isTrue \u22ef\n  | false, true => isFalse \u22ef\n  | true, false => isFalse \u22ef\n  | true, true => isTrue \u22ef\nDuckObserver.lean:119:82: error: tactic 'decide' failed for proposition\n  (relationTableValid tableExampleFlip (fun x => 0) tableExampleIdle (fun x => 0) fun x x_1 => decide (\u2191x = 0)) = false\nsince its 'Decidable' instance\n  instDecidableEqBool\n    (relationTableValid tableExampleFlip (fun x => 0) tableExampleIdle (fun x => 0) fun x x_1 => decide (\u2191x = 0)) false\ndid not reduce to 'isTrue' or 'isFalse'.\n\nAfter unfolding the instances 'instDecidableEqBool' and 'Bool.decEq', reduction got stuck at the 'Decidable' instance\n  match relationTableValid tableExampleFlip (fun x => 0) tableExampleIdle (fun x => 0) fun x x_1 => decide (\u2191x = 0),\n    false with\n  | false, false => isTrue \u22ef\n  | false, true => isFalse \u22ef\n  | true, false => isFalse \u22ef\n  | true, true => isTrue \u22ef\nDuckObserver.lean:123:68: error: tactic 'decide' failed for proposition\n  (relationTableValid tableExampleFlip (fun x => \u2191x) tableExampleIdle (fun x => 0) fun x x => true) = false\nsince its 'Decidable' instance\n  instDecidableEqBool (relationTableValid tableExampleFlip (fun x => \u2191x) tableExampleIdle (fun x => 0) fun x x => true)\n    false\ndid not reduce to 'isTrue' or 'isFalse'.\n\nAfter unfolding the instances 'instDecidableEqBool' and 'Bool.decEq', reduction got stuck at the 'Decidable' instance\n  match relationTableValid tableExampleFlip (fun x => \u2191x) tableExampleIdle (fun x => 0) fun x x => true, false with\n  | false, false => isTrue \u22ef\n  | false, true => isFalse \u22ef\n  | true, false => isFalse \u22ef\n  | true, true => isTrue \u22ef\nDuckObserver.lean:130:17: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nDuckObserver.lean:130:19: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nDuckObserver.lean:131:18: warning: unused variable `x`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nDuckObserver.lean:131:20: warning: unused variable `y`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`\nDuckObserver.lean:131:22: warning: unused variable `z`\nnote: this linter can be disabled with `set_option linter.unusedVariables false`"
+        },
+        {
+          "command": "BaileyCrandall-build EXIT 1",
+          "diagnostic_excerpt": "BaileyCrandall.lean:62:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nBaileyCrandall.lean:152:48: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nTry this: ring_nf\nTry this: ring_nf\nBaileyCrandall.lean:183:74: error: unsolved goals\ncase hfg.e_a\nn : \u2115\nhsplit : \u2211' (b : \u2115), tailTerm n b = tailTerm n 0 + \u2211' (b : \u2115), tailTerm n (b + 1)\nk : \u2115\n\u22a2 (1 / 16) ^ k * (1 / 256) = 1 / 16\n\ncase hfg.e_a\nn : \u2115\nhsplit : \u2211' (b : \u2115), tailTerm n b = tailTerm n 0 + \u2211' (b : \u2115), tailTerm n (b + 1)\nk : \u2115\n\u22a2 forcing (2 + \u2191n + \u2191k) = forcing (2 + \u2191n + \u2191k) * (1 / 16) ^ k * (1 / 16)"
+        }
+      ]
+    },
+    {
+      "run_id": 39612954095,
+      "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39612954095",
+      "commit": "57a103b7157567fe0fee3c651c5e06794e53703c",
+      "tree": "36db452d7b69936a72c28b343ba2b9395600a97f",
+      "build_succeeded": false,
+      "successful_modules": [
+        "DuckPrinciple",
+        "DuckObserver",
+        "BaileyCrandall",
+        "LogisticFactor",
+        "Normality"
+      ],
+      "failed_modules": [
+        "BBPIntegral",
+        "generated:two_actions",
+        "generated:empty_alphabet"
+      ],
+      "exported_declarations": 78,
+      "negative_controls": [
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "9120704d40eb6577c54ec745caddbdca628745d54ea6c42aa04d9c49fc8d59b8",
+          "name": "duck_erased_factor",
+          "positive_exit": 0,
+          "positive_source_sha256": "b8d79ecd24b22ea414578d0c1ebe694b84f2e2af3703d47db62a5c7c3fc93ba6",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "2d326f3fd2943eaa19e3418a16ad3e86fa8522fae64bf9341997a457e83d695c",
+          "name": "bbp_sharp_constant",
+          "positive_exit": 0,
+          "positive_source_sha256": "fe507ca1c647c9ac51e8093b6dab292328221c4bdc81a01f0119a0db7230b821",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "381ac0ed9282a0ebf7bc25985e5d83534e1ff98c51116363cad99a0e4025515a",
+          "name": "bbp_clock",
+          "positive_exit": 0,
+          "positive_source_sha256": "b5f238b079ae13760ad8aeb454ec6fe27fb3949b1020c83fbd3da55f28bd2942",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "dd2db02fd871bd18bb6007f97719b97bf5284683b975cebd9f20a7ea5c0db5d4",
+          "name": "logistic_coefficient",
+          "positive_exit": 0,
+          "positive_source_sha256": "95b7302dd5f924202e0cdcf2ac17f3e3ee3a9a6d0763c922f0d3f583a0b019d4",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6f2f9c5131275ad216b7e17d194736a0c2ea38caa83ab6a95e84a795320a7b28",
+          "name": "canonical_zero_digit",
+          "positive_exit": 0,
+          "positive_source_sha256": "e1267be3fe967978cbb00555f038bd971e1d75c7b9baa2dfa531f78d49cf034b",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "0c56c9f41990b45ae1ae9aaa2dd584d1b7e174f8c4c820a7a9d803b649695700",
+          "name": "normality_exceptional_orbit",
+          "positive_exit": 0,
+          "positive_source_sha256": "4ae517dd5101456868cd4239f4dfc48212ff841bffce011e3220d186434725bd",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        }
+      ],
+      "generated_certificate_results": [
+        {
+          "name": "two_actions",
+          "passed": false,
+          "exported_declarations": 0
+        },
+        {
+          "name": "empty_alphabet",
+          "passed": false,
+          "exported_declarations": 0
+        }
+      ],
+      "decoded_record_sha256": "f577b95407a9ece24165b24a438c4f9b960215bafc34a41463f85c17507760fb",
+      "log_sha256": "5201cfc7b5a7eac1258eb328f203cae447276619edd9a09fa58ec6972b3e61aa",
+      "failure_diagnostics": [
+        {
+          "command": "BBPIntegral-build EXIT 1",
+          "diagnostic_excerpt": "Try this: ring_nf\nBBPIntegral.lean:34:55: error: unsolved goals\nx : \u211d\nhx : x \u2208 Icc 0 1\nhpow : x ^ 2 \u2264 1\nhA : x ^ 2 - 2 \u2260 0\nhB : x ^ 2 - 2 * x + 2 \u2260 0\nhD : 1 - x ^ 8 / 16 \u2260 0\n\u22a2 x * (16 - x ^ 8)\u207b\u00b9 * 256 + x ^ 8 * (16 - x ^ 8)\u207b\u00b9 * 16 + (-(x ^ 9 * (16 - x ^ 8)\u207b\u00b9 * 16) - (16 - x ^ 8)\u207b\u00b9 * 256) =\n    -16 + x * 16\nBBPIntegral.lean:55:4: error: tactic 'rfl' failed, the left-hand side\n  integrand x\nis not definitionally equal to the right-hand side\n  2 * (-(\u21912 * x ^ (2 - 1)) / (2 - x ^ 2)) - 2 * ((\u21912 * x ^ (2 - 1) - 2 * 1) / (x ^ 2 - 2 * id x + 2)) +\n    4 * (1 / (1 + (id x - 1) ^ 2) * 1)\ncase h.e'_7\nx : \u211d\nhx : x \u2208 Icc 0 1\nhpow : x ^ 2 \u2264 1\nhA : 2 - x ^ 2 \u2260 0\nhB : x ^ 2 - 2 * x + 2 \u2260 0\nhC : 1 + (x - 1) ^ 2 \u2260 0\nhD : x ^ 2 - 2 \u2260 0\nhdA : HasDerivAt (fun y => Real.log (2 - y ^ 2)) (-(\u21912 * x ^ (2 - 1)) / (2 - x ^ 2)) x\nhdB : HasDerivAt (fun y => Real.log (y ^ 2 - 2 * id y + 2)) ((\u21912 * x ^ (2 - 1) - 2 * 1) / (x ^ 2 - 2 * id x + 2)) x\nhdC : HasDerivAt (fun x => Real.arctan (id x - 1)) (1 / (1 + (id x - 1) ^ 2) * 1) x\n\u22a2 integrand x =\n    2 * (-(\u21912 * x ^ (2 - 1)) / (2 - x ^ 2)) - 2 * ((\u21912 * x ^ (2 - 1) - 2 * 1) / (x ^ 2 - 2 * id x + 2)) +\n      4 * (1 / (1 + (id x - 1) ^ 2) * 1)\nBBPIntegral.lean:56:2: error: no goals to be solved\nBBPIntegral.lean:69:69: error: unsolved goals\nhftc : \u222b (y : \u211d) in 0 ..1, integrand y = primitive 1 - primitive 0\n\u22a2 4 * (Real.pi / 4) = Real.pi\nBBPIntegral.lean:118:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\nnote: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nBBPIntegral.lean:136:41: error: unsolved goals\nx : \u211d\nhx : x \u2208 \u0399 0 1\n\u22a2 |1 / 16| < 1\n'DuckPiIntegral.bbp_hasSum_pi' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]\n'DuckPiIntegral.bbp_tsum_eq_pi' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]"
+        }
+      ]
+    },
+    {
+      "run_id": 39613723244,
+      "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39613723244",
+      "commit": "6fbe9d29355aaccca5ebf2753d34eee2e2ece627",
+      "tree": "5cb5f94f9f06eeaeff16c27e5c21bdb3d53e8c0c",
+      "build_succeeded": false,
+      "successful_modules": [
+        "DuckPrinciple",
+        "DuckObserver",
+        "BaileyCrandall",
+        "BBPIntegral",
+        "LogisticFactor",
+        "Normality",
+        "PiSource"
+      ],
+      "failed_modules": [
+        "WeylBridge"
+      ],
+      "exported_declarations": 97,
+      "negative_controls": [
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "9120704d40eb6577c54ec745caddbdca628745d54ea6c42aa04d9c49fc8d59b8",
+          "name": "duck_erased_factor",
+          "positive_exit": 0,
+          "positive_source_sha256": "b8d79ecd24b22ea414578d0c1ebe694b84f2e2af3703d47db62a5c7c3fc93ba6",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "2d326f3fd2943eaa19e3418a16ad3e86fa8522fae64bf9341997a457e83d695c",
+          "name": "bbp_sharp_constant",
+          "positive_exit": 0,
+          "positive_source_sha256": "fe507ca1c647c9ac51e8093b6dab292328221c4bdc81a01f0119a0db7230b821",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "381ac0ed9282a0ebf7bc25985e5d83534e1ff98c51116363cad99a0e4025515a",
+          "name": "bbp_clock",
+          "positive_exit": 0,
+          "positive_source_sha256": "b5f238b079ae13760ad8aeb454ec6fe27fb3949b1020c83fbd3da55f28bd2942",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "dd2db02fd871bd18bb6007f97719b97bf5284683b975cebd9f20a7ea5c0db5d4",
+          "name": "logistic_coefficient",
+          "positive_exit": 0,
+          "positive_source_sha256": "95b7302dd5f924202e0cdcf2ac17f3e3ee3a9a6d0763c922f0d3f583a0b019d4",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6f2f9c5131275ad216b7e17d194736a0c2ea38caa83ab6a95e84a795320a7b28",
+          "name": "canonical_zero_digit",
+          "positive_exit": 0,
+          "positive_source_sha256": "e1267be3fe967978cbb00555f038bd971e1d75c7b9baa2dfa531f78d49cf034b",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "0c56c9f41990b45ae1ae9aaa2dd584d1b7e174f8c4c820a7a9d803b649695700",
+          "name": "normality_exceptional_orbit",
+          "positive_exit": 0,
+          "positive_source_sha256": "4ae517dd5101456868cd4239f4dfc48212ff841bffce011e3220d186434725bd",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "43ca106cbc9826e0ef0ff9890adb022e6e3ddcd60e2f431870bfa2bfc1380feb",
+          "name": "half_open_cylinder",
+          "positive_module": "Normality",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6806b494ed296d09102c800721e800c88569a8c6f72ee4de581de53c6c475127",
+          "name": "word_frequency",
+          "positive_module": "Normality",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "48d12a10e04f4e843fdf792d8376e0578a8ae1ef25ce8768bba4fbe0891edba9",
+          "name": "bbp_source_coefficient",
+          "positive_module": "BBPIntegral",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "name": "haar_normalization",
+          "status": "BLOCKED_BY_POSITIVE_MODULE"
+        }
+      ],
+      "generated_certificate_results": [
+        {
+          "name": "two_actions",
+          "passed": true,
+          "exported_declarations": 3
+        },
+        {
+          "name": "empty_alphabet",
+          "passed": true,
+          "exported_declarations": 3
+        }
+      ],
+      "decoded_record_sha256": "5e9aa68f1f954c59d04a72aef266473e4a09fa7b295f5b078649a1f9b7c9921b",
+      "log_sha256": "c14e2486060faefed4e77e7645863fb998d15e59b0141a9970fb067f8100a894",
+      "failure_diagnostics": [
+        {
+          "command": "WeylBridge-build EXIT 1",
+          "diagnostic_excerpt": "WeylBridge.lean:33:2: error: failed to synthesize\n  IsFiniteMeasure circleHaar\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nWeylBridge.lean:41:59: error: unsolved goals\nu : \u2115 \u2192 AddCircle 1\nN : \u2115\nc : \u2102\nF : CircleTest\n\u22a2 (\u2211 x \u2208 Finset.range N, c * F (u x)) / \u2191N = c * ((\u2211 n \u2208 Finset.range N, F (u n)) / \u2191N)\nWeylBridge.lean:70:12: error: failed to synthesize\n  IsFiniteMeasure circleHaar\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nWeylBridge.lean:95:4: error: type mismatch, term\n  Tendsto.add hF hG\nafter simplification has type\n  Tendsto (fun x => empiricalMean u x F + empiricalMean u x G) atTop (\ud835\udcdd (haarMean F + haarMean G)) : Prop\nbut is expected to have type\n  F + G \u2208 {F | Tendsto (fun N => empiricalMean u N F) atTop (\ud835\udcdd (haarMean F))} : Prop\nWeylBridge.lean:91:18: warning: try 'simp' instead of 'simpa'\nnote: this linter can be disabled with `set_option linter.unnecessarySimpa false`\nWeylBridge.lean:98:4: error: type mismatch, term\n  Tendsto.const_smul hF c\nafter simplification has type\n  Tendsto (fun x => c \u2022 empiricalMean u x F) atTop (\ud835\udcdd (c \u2022 haarMean F)) : Prop\nbut is expected to have type\n  c \u2022 F \u2208 {F | Tendsto (fun N => empiricalMean u N F) atTop (\ud835\udcdd (haarMean F))} : Prop\nWeylBridge.lean:144:18: error: typeclass instance problem is stuck, it is often due to metavariables\n  ContinuousAdd ?m.59734"
+        }
+      ]
+    },
+    {
+      "run_id": 39631731552,
+      "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39631731552",
+      "commit": "709ba20156962b0f3f62ebcd42b7d592f20db870",
+      "tree": "a5a9a3068ef925dbca47afcf4f4c647664cef2fc",
+      "build_succeeded": false,
+      "successful_modules": [
+        "DuckPrinciple",
+        "DuckObserver",
+        "BaileyCrandall",
+        "BBPIntegral",
+        "LogisticFactor",
+        "Normality",
+        "PiSource",
+        "WeylBridge"
+      ],
+      "failed_modules": [
+        "HaarBoundary"
+      ],
+      "exported_declarations": 121,
+      "negative_controls": [
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "9120704d40eb6577c54ec745caddbdca628745d54ea6c42aa04d9c49fc8d59b8",
+          "name": "duck_erased_factor",
+          "positive_exit": 0,
+          "positive_source_sha256": "b8d79ecd24b22ea414578d0c1ebe694b84f2e2af3703d47db62a5c7c3fc93ba6",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "2d326f3fd2943eaa19e3418a16ad3e86fa8522fae64bf9341997a457e83d695c",
+          "name": "bbp_sharp_constant",
+          "positive_exit": 0,
+          "positive_source_sha256": "fe507ca1c647c9ac51e8093b6dab292328221c4bdc81a01f0119a0db7230b821",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "381ac0ed9282a0ebf7bc25985e5d83534e1ff98c51116363cad99a0e4025515a",
+          "name": "bbp_clock",
+          "positive_exit": 0,
+          "positive_source_sha256": "b5f238b079ae13760ad8aeb454ec6fe27fb3949b1020c83fbd3da55f28bd2942",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "dd2db02fd871bd18bb6007f97719b97bf5284683b975cebd9f20a7ea5c0db5d4",
+          "name": "logistic_coefficient",
+          "positive_exit": 0,
+          "positive_source_sha256": "95b7302dd5f924202e0cdcf2ac17f3e3ee3a9a6d0763c922f0d3f583a0b019d4",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6f2f9c5131275ad216b7e17d194736a0c2ea38caa83ab6a95e84a795320a7b28",
+          "name": "canonical_zero_digit",
+          "positive_exit": 0,
+          "positive_source_sha256": "e1267be3fe967978cbb00555f038bd971e1d75c7b9baa2dfa531f78d49cf034b",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "0c56c9f41990b45ae1ae9aaa2dd584d1b7e174f8c4c820a7a9d803b649695700",
+          "name": "normality_exceptional_orbit",
+          "positive_exit": 0,
+          "positive_source_sha256": "4ae517dd5101456868cd4239f4dfc48212ff841bffce011e3220d186434725bd",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "43ca106cbc9826e0ef0ff9890adb022e6e3ddcd60e2f431870bfa2bfc1380feb",
+          "name": "half_open_cylinder",
+          "positive_module": "Normality",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6806b494ed296d09102c800721e800c88569a8c6f72ee4de581de53c6c475127",
+          "name": "word_frequency",
+          "positive_module": "Normality",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "48d12a10e04f4e843fdf792d8376e0578a8ae1ef25ce8768bba4fbe0891edba9",
+          "name": "bbp_source_coefficient",
+          "positive_module": "BBPIntegral",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "f277efb2591cefb5e8b5d54a6b12c71e93d071f1e87b3280a7330627b7ebdcce",
+          "name": "haar_normalization",
+          "positive_module": "WeylBridge",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        }
+      ],
+      "generated_certificate_results": [
+        {
+          "name": "two_actions",
+          "passed": true,
+          "exported_declarations": 3
+        },
+        {
+          "name": "empty_alphabet",
+          "passed": true,
+          "exported_declarations": 3
+        }
+      ],
+      "decoded_record_sha256": "60f92a7106e8156f7357c531a9ba0455fe72a351e597bb4d5e8b2c0cf0dbcceb",
+      "log_sha256": "db5d79dd1040199c5b506aaca64a6862dd0d14049ef5d7733d4125f0f3fad6ea",
+      "failure_diagnostics": [
+        {
+          "command": "HaarBoundary-build EXIT 1",
+          "diagnostic_excerpt": "HaarBoundary.lean:33:28: error: expected token\nHaarBoundary.lean:46:35: error: unknown identifier 'empiricalProbability_integral'\nHaarBoundary.lean:46:2: error: type mismatch, term\n  h\nafter simplification has type\n  Tendsto ((fun N => (\u2211 n \u2208 Finset.range N, F (u n)) / \u2191N) \u2218 fun a => a + 1) atTop\n    (\ud835\udcdd (\u222b (z : AddCircle 1), F z \u2202circleHaar)) : Prop\nbut is expected to have type\n  Tendsto (fun i => \u222b (\u03c9 : AddCircle 1), F \u03c9 \u2202\u2191(empiricalProbability u i)) atTop\n    (\ud835\udcdd (\u222b (\u03c9 : AddCircle 1), F \u03c9 \u2202circleHaar)) : Prop\nHaarBoundary.lean:51:3: error: failed to synthesize\n  DecidablePred fun n => u n \u2208 S\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nHaarBoundary.lean:56:8: error: failed to synthesize\n  DecidablePred fun n => u n \u2208 S\nAdditional diagnostic information may be available using the `set_option diagnostics true` command.\nHaarBoundary.lean:57:32: error: unsolved goals\nu : \u2115 \u2192 AddCircle 1\nN : \u2115\nS : Set (AddCircle 1)\nhS : MeasurableSet S\n\u22a2 (\u2191N + 1)\u207b\u00b9 * \u2191(Finset.filter (fun x => u x \u2208 S) (Finset.range (N + 1))).card = sorry * (\u2191N + 1)\u207b\u00b9\nHaarBoundary.lean:66:2: warning: declaration uses 'sorry'\nHaarBoundary.lean:62:8: warning: declaration uses 'sorry'\nHaarBoundary.lean:80:2: error: type mismatch, term\n  hreal\nafter simplification has type\n  Tendsto (ENNReal.toReal \u2218 fun i => \u2191(empiricalProbability u i) S) atTop (\ud835\udcdd (circleHaar S).toReal) : Prop\nbut is expected to have type\n  Tendsto (fun n => observationFrequency u S (n + 1)) atTop (\ud835\udcdd (circleHaar S).toReal) : Prop"
+        }
+      ]
+    },
+    {
+      "run_id": 39632926557,
+      "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39632926557",
+      "commit": "eb106f74455d1579c041d4cf2e5be80ef0492f23",
+      "tree": "0b4ccbb8069b0e2c02506e4f2c35838dc8ac32e0",
+      "build_succeeded": false,
+      "successful_modules": [
+        "DuckPrinciple",
+        "DuckObserver",
+        "BaileyCrandall",
+        "BBPIntegral",
+        "LogisticFactor",
+        "Normality",
+        "PiSource",
+        "WeylBridge"
+      ],
+      "failed_modules": [
+        "HaarBoundary",
+        "HaarIntervals",
+        "AsymptoticTransport"
+      ],
+      "exported_declarations": 123,
+      "negative_controls": [
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "9120704d40eb6577c54ec745caddbdca628745d54ea6c42aa04d9c49fc8d59b8",
+          "name": "duck_erased_factor",
+          "positive_exit": 0,
+          "positive_source_sha256": "b8d79ecd24b22ea414578d0c1ebe694b84f2e2af3703d47db62a5c7c3fc93ba6",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "2d326f3fd2943eaa19e3418a16ad3e86fa8522fae64bf9341997a457e83d695c",
+          "name": "bbp_sharp_constant",
+          "positive_exit": 0,
+          "positive_source_sha256": "fe507ca1c647c9ac51e8093b6dab292328221c4bdc81a01f0119a0db7230b821",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "381ac0ed9282a0ebf7bc25985e5d83534e1ff98c51116363cad99a0e4025515a",
+          "name": "bbp_clock",
+          "positive_exit": 0,
+          "positive_source_sha256": "b5f238b079ae13760ad8aeb454ec6fe27fb3949b1020c83fbd3da55f28bd2942",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "dd2db02fd871bd18bb6007f97719b97bf5284683b975cebd9f20a7ea5c0db5d4",
+          "name": "logistic_coefficient",
+          "positive_exit": 0,
+          "positive_source_sha256": "95b7302dd5f924202e0cdcf2ac17f3e3ee3a9a6d0763c922f0d3f583a0b019d4",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6f2f9c5131275ad216b7e17d194736a0c2ea38caa83ab6a95e84a795320a7b28",
+          "name": "canonical_zero_digit",
+          "positive_exit": 0,
+          "positive_source_sha256": "e1267be3fe967978cbb00555f038bd971e1d75c7b9baa2dfa531f78d49cf034b",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "0c56c9f41990b45ae1ae9aaa2dd584d1b7e174f8c4c820a7a9d803b649695700",
+          "name": "normality_exceptional_orbit",
+          "positive_exit": 0,
+          "positive_source_sha256": "4ae517dd5101456868cd4239f4dfc48212ff841bffce011e3220d186434725bd",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "43ca106cbc9826e0ef0ff9890adb022e6e3ddcd60e2f431870bfa2bfc1380feb",
+          "name": "half_open_cylinder",
+          "positive_module": "Normality",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6806b494ed296d09102c800721e800c88569a8c6f72ee4de581de53c6c475127",
+          "name": "word_frequency",
+          "positive_module": "Normality",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "48d12a10e04f4e843fdf792d8376e0578a8ae1ef25ce8768bba4fbe0891edba9",
+          "name": "bbp_source_coefficient",
+          "positive_module": "BBPIntegral",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "f277efb2591cefb5e8b5d54a6b12c71e93d071f1e87b3280a7330627b7ebdcce",
+          "name": "haar_normalization",
+          "positive_module": "WeylBridge",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        }
+      ],
+      "generated_certificate_results": [
+        {
+          "name": "two_actions",
+          "passed": true,
+          "exported_declarations": 3
+        },
+        {
+          "name": "empty_alphabet",
+          "passed": true,
+          "exported_declarations": 3
+        }
+      ],
+      "decoded_record_sha256": "12e8c97e5ebda66f93625ff6d2dc5a50fafe5a3c33c5216b9dc637236c035a35",
+      "log_sha256": "8005d0de755b66f466956638bf9b8047f96f9f0b36f9e85645d63a1dcf034910",
+      "failure_diagnostics": [
+        {
+          "command": "HaarBoundary-build EXIT 1",
+          "diagnostic_excerpt": "HaarBoundary.lean:35:61: error: unsolved goals\nu : \u2115 \u2192 AddCircle 1\nN : \u2115\nF : BoundedContinuousFunction (AddCircle 1) \u211d\n\u22a2 (\u2191N + 1).toReal = \u2191N + 1 \u2228 \u2211 x \u2208 Finset.range (N + 1), F (u x) = 0"
+        },
+        {
+          "command": "HaarIntervals-build EXIT 1",
+          "diagnostic_excerpt": "HaarIntervals.lean:1:0: error: unknown module prefix 'HaarBoundary'\n\nNo directory 'HaarBoundary' or file 'HaarBoundary.olean' in the search path entries:\n././.lake/packages/Cli/.lake/build/lib\n././.lake/packages/batteries/.lake/build/lib\n././.lake/packages/Qq/.lake/build/lib\n././.lake/packages/aesop/.lake/build/lib\n././.lake/packages/proofwidgets/.lake/build/lib\n././.lake/packages/importGraph/.lake/build/lib\n././.lake/packages/LeanSearchClient/.lake/build/lib\n././.lake/packages/plausible/.lake/build/lib\n././.lake/packages/mathlib/.lake/build/lib\n././.lake/build/lib\n/home/runner/work/_temp/lean-4.14.0-linux/lib/lean\n/home/runner/work/_temp/lean-4.14.0-linux/lib/lean"
+        },
+        {
+          "command": "AsymptoticTransport-build EXIT 1",
+          "diagnostic_excerpt": "AsymptoticTransport.lean:1:0: error: unknown module prefix 'HaarIntervals'\n\nNo directory 'HaarIntervals' or file 'HaarIntervals.olean' in the search path entries:\n././.lake/packages/Cli/.lake/build/lib\n././.lake/packages/batteries/.lake/build/lib\n././.lake/packages/Qq/.lake/build/lib\n././.lake/packages/aesop/.lake/build/lib\n././.lake/packages/proofwidgets/.lake/build/lib\n././.lake/packages/importGraph/.lake/build/lib\n././.lake/packages/LeanSearchClient/.lake/build/lib\n././.lake/packages/plausible/.lake/build/lib\n././.lake/packages/mathlib/.lake/build/lib\n././.lake/build/lib\n/home/runner/work/_temp/lean-4.14.0-linux/lib/lean\n/home/runner/work/_temp/lean-4.14.0-linux/lib/lean"
+        }
+      ]
+    },
+    {
+      "run_id": 39633867562,
+      "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39633867562",
+      "commit": "953f37c034c321540b1b4a5e7969e0c3c5a50b1f",
+      "tree": "40033d53a31a626e04fd608d8764b90f86c9d528",
+      "build_succeeded": false,
+      "successful_modules": [
+        "DuckPrinciple",
+        "DuckObserver",
+        "BaileyCrandall",
+        "BBPIntegral",
+        "LogisticFactor",
+        "Normality",
+        "PiSource",
+        "WeylBridge",
+        "HaarBoundary"
+      ],
+      "failed_modules": [
+        "HaarIntervals",
+        "AsymptoticTransport"
+      ],
+      "exported_declarations": 128,
+      "negative_controls": [
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "9120704d40eb6577c54ec745caddbdca628745d54ea6c42aa04d9c49fc8d59b8",
+          "name": "duck_erased_factor",
+          "positive_exit": 0,
+          "positive_source_sha256": "b8d79ecd24b22ea414578d0c1ebe694b84f2e2af3703d47db62a5c7c3fc93ba6",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "2d326f3fd2943eaa19e3418a16ad3e86fa8522fae64bf9341997a457e83d695c",
+          "name": "bbp_sharp_constant",
+          "positive_exit": 0,
+          "positive_source_sha256": "fe507ca1c647c9ac51e8093b6dab292328221c4bdc81a01f0119a0db7230b821",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "381ac0ed9282a0ebf7bc25985e5d83534e1ff98c51116363cad99a0e4025515a",
+          "name": "bbp_clock",
+          "positive_exit": 0,
+          "positive_source_sha256": "b5f238b079ae13760ad8aeb454ec6fe27fb3949b1020c83fbd3da55f28bd2942",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "dd2db02fd871bd18bb6007f97719b97bf5284683b975cebd9f20a7ea5c0db5d4",
+          "name": "logistic_coefficient",
+          "positive_exit": 0,
+          "positive_source_sha256": "95b7302dd5f924202e0cdcf2ac17f3e3ee3a9a6d0763c922f0d3f583a0b019d4",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6f2f9c5131275ad216b7e17d194736a0c2ea38caa83ab6a95e84a795320a7b28",
+          "name": "canonical_zero_digit",
+          "positive_exit": 0,
+          "positive_source_sha256": "e1267be3fe967978cbb00555f038bd971e1d75c7b9baa2dfa531f78d49cf034b",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "0c56c9f41990b45ae1ae9aaa2dd584d1b7e174f8c4c820a7a9d803b649695700",
+          "name": "normality_exceptional_orbit",
+          "positive_exit": 0,
+          "positive_source_sha256": "4ae517dd5101456868cd4239f4dfc48212ff841bffce011e3220d186434725bd",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "name": "forced_cancellation_premise",
+          "status": "BLOCKED_BY_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "43ca106cbc9826e0ef0ff9890adb022e6e3ddcd60e2f431870bfa2bfc1380feb",
+          "name": "half_open_cylinder",
+          "positive_module": "Normality",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6806b494ed296d09102c800721e800c88569a8c6f72ee4de581de53c6c475127",
+          "name": "word_frequency",
+          "positive_module": "Normality",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "48d12a10e04f4e843fdf792d8376e0578a8ae1ef25ce8768bba4fbe0891edba9",
+          "name": "bbp_source_coefficient",
+          "positive_module": "BBPIntegral",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "f277efb2591cefb5e8b5d54a6b12c71e93d071f1e87b3280a7330627b7ebdcce",
+          "name": "haar_normalization",
+          "positive_module": "WeylBridge",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        }
+      ],
+      "generated_certificate_results": [
+        {
+          "name": "two_actions",
+          "passed": true,
+          "exported_declarations": 3
+        },
+        {
+          "name": "empty_alphabet",
+          "passed": true,
+          "exported_declarations": 3
+        }
+      ],
+      "decoded_record_sha256": "64c6f81f74e04a165601d5de22b0050599548e110989136295b588750e85ec9f",
+      "log_sha256": "bc3883a0d853f16b52028012fa8f66c376a4a7f5606b1ca3ccd933c0e6a5b829",
+      "failure_diagnostics": [
+        {
+          "command": "HaarIntervals-build EXIT 1",
+          "diagnostic_excerpt": "HaarIntervals.lean:33:2: warning: try 'simp' instead of 'simpa'\nnote: this linter can be disabled with `set_option linter.unnecessarySimpa false`\nHaarIntervals.lean:67:69: error: simp made no progress\nHaarIntervals.lean:104:2: error: type mismatch, term\n  h\nafter simplification has type\n  Tendsto (observationFrequency (fun n => \u2191(u n)) (circleCylinder a c)) atTop (\ud835\udcdd (c - a)) : Prop\nbut is expected to have type\n  Tendsto (intervalFrequency u a c) atTop (\ud835\udcdd (c - a)) : Prop"
+        },
+        {
+          "command": "AsymptoticTransport-build EXIT 1",
+          "diagnostic_excerpt": "AsymptoticTransport.lean:1:0: error: unknown module prefix 'HaarIntervals'\n\nNo directory 'HaarIntervals' or file 'HaarIntervals.olean' in the search path entries:\n././.lake/packages/Cli/.lake/build/lib\n././.lake/packages/batteries/.lake/build/lib\n././.lake/packages/Qq/.lake/build/lib\n././.lake/packages/aesop/.lake/build/lib\n././.lake/packages/proofwidgets/.lake/build/lib\n././.lake/packages/importGraph/.lake/build/lib\n././.lake/packages/LeanSearchClient/.lake/build/lib\n././.lake/packages/plausible/.lake/build/lib\n././.lake/packages/mathlib/.lake/build/lib\n././.lake/build/lib\n/home/runner/work/_temp/lean-4.14.0-linux/lib/lean\n/home/runner/work/_temp/lean-4.14.0-linux/lib/lean"
+        }
+      ]
+    },
+    {
+      "run_id": 39634613571,
+      "run_url": "https://github.com/femboy2112/SUCC/actions/runs/39634613571",
+      "commit": "2aeaa6dba70ca6fefefe0f8eb73078a6a17eff19",
+      "tree": "5ad9100911797d52903b95ecb12a5df09c7c1f85",
+      "build_succeeded": true,
+      "successful_modules": [
+        "DuckPrinciple",
+        "DuckObserver",
+        "BaileyCrandall",
+        "BBPIntegral",
+        "LogisticFactor",
+        "Normality",
+        "PiSource",
+        "WeylBridge",
+        "HaarBoundary",
+        "HaarIntervals",
+        "AsymptoticTransport"
+      ],
+      "failed_modules": [],
+      "exported_declarations": 146,
+      "negative_controls": [
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "9120704d40eb6577c54ec745caddbdca628745d54ea6c42aa04d9c49fc8d59b8",
+          "name": "duck_erased_factor",
+          "positive_exit": 0,
+          "positive_source_sha256": "b8d79ecd24b22ea414578d0c1ebe694b84f2e2af3703d47db62a5c7c3fc93ba6",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "2d326f3fd2943eaa19e3418a16ad3e86fa8522fae64bf9341997a457e83d695c",
+          "name": "bbp_sharp_constant",
+          "positive_exit": 0,
+          "positive_source_sha256": "fe507ca1c647c9ac51e8093b6dab292328221c4bdc81a01f0119a0db7230b821",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "381ac0ed9282a0ebf7bc25985e5d83534e1ff98c51116363cad99a0e4025515a",
+          "name": "bbp_clock",
+          "positive_exit": 0,
+          "positive_source_sha256": "b5f238b079ae13760ad8aeb454ec6fe27fb3949b1020c83fbd3da55f28bd2942",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "dd2db02fd871bd18bb6007f97719b97bf5284683b975cebd9f20a7ea5c0db5d4",
+          "name": "logistic_coefficient",
+          "positive_exit": 0,
+          "positive_source_sha256": "95b7302dd5f924202e0cdcf2ac17f3e3ee3a9a6d0763c922f0d3f583a0b019d4",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6f2f9c5131275ad216b7e17d194736a0c2ea38caa83ab6a95e84a795320a7b28",
+          "name": "canonical_zero_digit",
+          "positive_exit": 0,
+          "positive_source_sha256": "e1267be3fe967978cbb00555f038bd971e1d75c7b9baa2dfa531f78d49cf034b",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "0c56c9f41990b45ae1ae9aaa2dd584d1b7e174f8c4c820a7a9d803b649695700",
+          "name": "normality_exceptional_orbit",
+          "positive_exit": 0,
+          "positive_source_sha256": "4ae517dd5101456868cd4239f4dfc48212ff841bffce011e3220d186434725bd",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "5b056c9d6f9b686ef85ea5197cf9a30be64507c9d6b5cda9ee2a11f82c30d647",
+          "name": "forced_cancellation_premise",
+          "positive_exit": 0,
+          "positive_source_sha256": "f83a58fea3626def6300ab5c0013522740ad26ee60437f19e592392e9b99c7f2",
+          "status": "REJECTED_WITH_POSITIVE_CONTROL"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "43ca106cbc9826e0ef0ff9890adb022e6e3ddcd60e2f431870bfa2bfc1380feb",
+          "name": "half_open_cylinder",
+          "positive_module": "Normality",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "6806b494ed296d09102c800721e800c88569a8c6f72ee4de581de53c6c475127",
+          "name": "word_frequency",
+          "positive_module": "Normality",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "48d12a10e04f4e843fdf792d8376e0578a8ae1ef25ce8768bba4fbe0891edba9",
+          "name": "bbp_source_coefficient",
+          "positive_module": "BBPIntegral",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        },
+        {
+          "mutant_exit": 1,
+          "mutant_source_sha256": "f277efb2591cefb5e8b5d54a6b12c71e93d071f1e87b3280a7330627b7ebdcce",
+          "name": "haar_normalization",
+          "positive_module": "WeylBridge",
+          "status": "REJECTED_WITH_POSITIVE_MODULE"
+        }
+      ],
+      "generated_certificate_results": [
+        {
+          "name": "two_actions",
+          "passed": true,
+          "exported_declarations": 3
+        },
+        {
+          "name": "empty_alphabet",
+          "passed": true,
+          "exported_declarations": 3
+        }
+      ],
+      "decoded_record_sha256": "518db0ec2e7a09491f12e316f57bc3f1f63f772d2cdefb7d6830e1b82ee94616",
+      "log_sha256": "0d62cd8c0f66dcba44fde12c07a99472814a02ffbfa6977abfef44175f0218d5",
+      "failure_diagnostics": []
+    }
+  ]
+}

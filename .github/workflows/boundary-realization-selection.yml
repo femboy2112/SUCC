@@ -1,0 +1,62 @@
+name: Observation anchored boundary realization
+
+on:
+  push:
+    branches:
+      - research/total-boundary-adelic-impedance-2026-10-22
+    paths:
+      - 'observational_succ/boundary_realization_selection.py'
+      - 'tests/test_boundary_realization_selection.py'
+      - 'scripts/boundary_realization_probe.py'
+      - 'research/2026-10-22/BOUNDARY_REALIZATION_SELECTION_RECEIPT.json'
+      - '.github/workflows/boundary-realization-selection.yml'
+  pull_request:
+    paths:
+      - 'observational_succ/boundary_realization_selection.py'
+      - 'tests/test_boundary_realization_selection.py'
+      - 'scripts/boundary_realization_probe.py'
+      - 'research/2026-10-22/BOUNDARY_REALIZATION_SELECTION_RECEIPT.json'
+      - '.github/workflows/boundary-realization-selection.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Test 16 exact source/boundary/observer hostile controls
+        run: python -Werror -m unittest discover -s tests -p test_boundary_realization_selection.py -v
+      - name: Replay complete rational response and frozen source receipt
+        run: |
+          PYTHONPATH=. python scripts/boundary_realization_probe.py > "$RUNNER_TEMP/boundary.json"
+          python - <<'PY'
+          import hashlib,json,os,pathlib
+          root=pathlib.Path.cwd()
+          result=json.loads((pathlib.Path(os.environ['RUNNER_TEMP'])/'boundary.json').read_text())
+          frozen=json.loads((root/'research/2026-10-22/BOUNDARY_REALIZATION_SELECTION_RECEIPT.json').read_text())
+          assert result==frozen,"source-pinned exact result diverges from verified receipt"
+          assert result['static_indistinguishable_topologies']
+          assert result['static_surviving_models']==['edge','path']
+          assert not result['static_unique_class']
+          assert result['heldout_dynamic_surviving_models']==['path']
+          assert result['heldout_dynamic_unique_class']
+          assert not result['independent_physical_measurements_performed']
+          assert not result['fine_structure_constant_predicted_from_SUCC']
+          assert not result['gravitational_ER_EPR_proved']
+          for key,rel in (
+              ('source_module_git_blob','observational_succ/boundary_realization_selection.py'),
+              ('tests_module_git_blob','tests/test_boundary_realization_selection.py'),
+          ):
+              b=(root/rel).read_bytes()
+              sha=hashlib.sha1(f"blob {len(b)}\0".encode()+b).hexdigest()
+              assert sha==result[key],"tested code differs from frozen proof source"
+          PY

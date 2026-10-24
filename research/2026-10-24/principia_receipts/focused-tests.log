@@ -1,0 +1,14 @@
+test_all_relations_and_partitions_through_three_states (test_ancestral_observer.TestAncestralObserver.test_all_relations_and_partitions_through_three_states) ... ok
+test_endpoint_exactness_does_not_preserve_one_step_or_traces (test_ancestral_observer.TestAncestralObserver.test_endpoint_exactness_does_not_preserve_one_step_or_traces) ... ok
+test_endpoint_test_cannot_authenticate_sources_or_costs (test_ancestral_observer.TestAncestralObserver.test_endpoint_test_cannot_authenticate_sources_or_costs) ... ok
+test_independent_checker_rejects_forged_path_returning_to_real_endpoint (test_ancestral_observer.TestAncestralObserver.test_independent_checker_rejects_forged_path_returning_to_real_endpoint) ... ok
+test_malformed_models_labels_and_selected_start_are_rejected (test_ancestral_observer.TestAncestralObserver.test_malformed_models_labels_and_selected_start_are_rejected) ... ok
+test_same_observation_different_selected_source (test_ancestral_observer.TestAncestralObserver.test_same_observation_different_selected_source) ... ok
+test_shortest_multi_step_ghost_and_unconnected_edge_representatives (test_ancestral_observer.TestAncestralObserver.test_shortest_multi_step_ghost_and_unconnected_edge_representatives) ... ok
+test_unpointed_closure_commutation_does_not_authenticate_selected_root (test_ancestral_observer.TestAncestralObserver.test_unpointed_closure_commutation_does_not_authenticate_selected_root) ... ok
+test_zero_step_at_isolated_source_and_identity_observer (test_ancestral_observer.TestAncestralObserver.test_zero_step_at_isolated_source_and_identity_observer) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.204s
+
+OK

@@ -1,0 +1,6 @@
+/tmp/cyclotomic-selected-lean-final2/build-wjxgfzv0/dyadic-erasure_mutant.lean:6:2: error: type mismatch
+  dyadic_lift_difference 3 2 1
+has type
+  liftedFrom (↑3 / 16 ^ 2) (2 + 1) - liftedOrbit (2 + 1) = 16 ^ 1 * ↑3 : Prop
+but is expected to have type
+  liftedFrom (3 / 16 ^ 2) (2 + 1) - liftedOrbit (2 + 1) = 16 ^ 1 * 2 : Prop

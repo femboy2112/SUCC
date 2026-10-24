@@ -1,0 +1,12 @@
+cwd: /workspace/scratch/f3c3f94a0370/SUCC
+sha: 73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf
+command: env -u PYTHONPATH python scripts/meta_choice_descent_probe.py
+exit_code: 1
+
+STDOUT
+
+STDERR
+Traceback (most recent call last):
+  File "/workspace/scratch/f3c3f94a0370/SUCC/scripts/meta_choice_descent_probe.py", line 11, in <module>
+    from observational_succ.meta_choice_descent import (
+ModuleNotFoundError: No module named 'observational_succ'

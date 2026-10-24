@@ -1,0 +1,55 @@
+name: Reciprocal SUCC FUCC Pascal exact source
+
+on:
+  push:
+    branches:
+      - research/reciprocal-succ-fucc-pascal-2026-10-22
+    paths:
+      - 'observational_succ/reciprocal_succ_fucc.py'
+      - 'tests/test_reciprocal_succ_fucc.py'
+      - 'scripts/reciprocal_succ_fucc_probe.py'
+      - 'research/2026-10-22/RECIPROCAL_SUCC_FUCC_RECEIPT.json'
+      - '.github/workflows/reciprocal-succ-fucc.yml'
+  pull_request:
+    paths:
+      - 'observational_succ/reciprocal_succ_fucc.py'
+      - 'tests/test_reciprocal_succ_fucc.py'
+      - 'scripts/reciprocal_succ_fucc_probe.py'
+      - 'research/2026-10-22/RECIPROCAL_SUCC_FUCC_RECEIPT.json'
+      - '.github/workflows/reciprocal-succ-fucc.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  reciprocal:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run exact reciprocal and Pascal hostile controls
+        run: python -Werror -m unittest discover -s tests -p 'test_reciprocal_succ_fucc.py' -v
+      - name: Replay frozen full-source exact receipt with Git blob authentication
+        run: |
+          PYTHONPATH=. python scripts/reciprocal_succ_fucc_probe.py > "$RUNNER_TEMP/reciprocal.json"
+          python - <<'PY'
+          import json,hashlib,pathlib,os
+          root=pathlib.Path.cwd()
+          actual=json.loads((pathlib.Path(os.environ["RUNNER_TEMP"])/"reciprocal.json").read_text())
+          frozen=json.loads((root/"research/2026-10-22/RECIPROCAL_SUCC_FUCC_RECEIPT.json").read_text())
+          assert actual==frozen, "Exact source receipt mismatch"
+          assert actual["projectivity_false_equivalence_refuted"] is True
+          assert actual["RH_proved"] is False
+          assert actual["physical_reverse_causality_claimed"] is False
+          def blob(path):
+              data=(root/path).read_bytes()
+              return hashlib.sha1(f"blob {len(data)}\0".encode()+data).hexdigest()
+          assert actual["source_module_git_blob"]==blob("observational_succ/reciprocal_succ_fucc.py")
+          assert actual["tests_git_blob"]==blob("tests/test_reciprocal_succ_fucc.py")
+          PY

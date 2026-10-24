@@ -1,5 +1,25 @@
 # Research roadmap
 
+**Duck / π research checkpoint (2026-10-21):** [execution and proof obligations](../research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md), [typed dependency ledger](DUCK_PI_DEPENDENCIES.json), [exact kernel receipt](../research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md). Actual BBP source transport and finite structural certificates are distinguished from the still-open source-specific Fourier estimate.
+
+**2026-10-23 research verdict.** [Carry the Truth](../research/2026-10-23/SOURCE_FAITHFUL_SYNTHESIS.md)
+closes concrete carry, information, norm and heat-memory theorems, including
+an explicit retained-memory Schur correction. The next decisive arithmetic
+edge is a source-admissible auxiliary family in the original high domain that
+strictly improves an existing directional inverse bound after all errors.
+The log-atom map alone does not provide that family. Original S4 and RH remain
+open; physical access and named passive cyclicity are separate questions.
+
+**2026-10-24 coherent-main integration.** The π source / circle / prime-clock frontier is
+consolidated into `main`. Corrected source fidelity (the "BBP four-pole lane closed" verdict is
+**withdrawn** — see [the repair dossier](../research/2026-10-24/BBP_SOURCE_MEMORY_REPAIR.md) and the
+[corrected audit](../research/2026-10-23/CYC03_LANE_CLOSED.md)); the SCE regret↔normality equivalence
+(a restatement, **not** a new proof step); two **independent** BBP minimal-path families (gauge /
+births) reconciled by a claim-ID crosswalk; and exact finite collision/entropy receipts. The decisive
+open edge is the selected-source collision estimate `K_p(1)=p^{o(1)}` at `c=2/5` (SCE-07) — a
+prescribed-scale sufficient condition for base-16 (hence base-2) π normality, still **unverified**.
+π normality, its independence, RH and absolute/decimal normality remain **OPEN**.
+
 **Current Academic Main VII frontier:** see
 [the scoped research map](academic_main_vii/research_frontier.md).
 The primitive abc weighted moment and Euler-product mean are paper-proved for
@@ -568,6 +588,27 @@ strong assumption in history-only learning; the natural Misiurewicz measure
 remains distinct from a supplied symbolic Parry prior; and finite arithmetic
 tomography supplies no completed Weil positivity inference.
 
+
+## Reality Pin research track (2026-10-22; stacked draft, not main integration)
+
+The [executed Reality Pin round](../research/2026-10-22/REALITY_PIN_SYNTHESIS.md)
+closes finite multiport observable reconstruction, a known-graph zero-forcing
+inverse, calibrated finite/compact selection, and analytic existence plus
+certified horizons for the actual arithmetic spectral operator. The final
+analytic audit proves identity-state spectral cyclicity for every fixed nonzero
+additive coupling outside an at-most-countable sigma exception set. It preserves
+fully cyclic topology aliases and the failure of the old Gibbs state under
+new dynamics. No empirical, gravitational or signed-Weil promotion follows.
+
+The next proof target is **stable source-labelled intervention reconstruction**:
+derive an effective separating probe family without assuming the unknown
+topology, or prove its impossibility under the declared access menu. For passive
+arithmetic spectroscopy, certify cyclicity at a named pair such as (1,2),
+classify the generic theorem's exceptions, and quantify spectral visibility of
+|1>. The lambda=0 case is still separate. For quantum transport, construct the K-Gibbs mirror with
+boundedness/source preservation. The next empirical contact is an independently
+calibrated RC run with frozen predictions and reserved holdout acquisition.
+See the [precise handoff](../handoffs/ASTRA_ULTRA_REALITY_PIN_NEXT_2026-10-22.md).
 
 ## Academic Main VIII priority
 

@@ -1,5 +1,48 @@
 # Research claim ledger
 
+The additive [Cyclotomic selected-source supplement CSS-01–17](CLAIM_SUPPLEMENT_CYCLOTOMIC_SELECTED_SOURCE.md)
+records all-character local twist bounds, actual complementary-source spectral
+budgets, dyadic finite-window controls, exact observation costs, and positive
+rational BBP carry defects. External BGK, paper proofs, exact finite checks,
+and the new finite Lean declarations retain separate authority.
+**Pi normality remains unproved.**
+
+The additive [Pi Source Genesis supplement PSG-01–15](CLAIM_SUPPLEMENT_PI_SOURCE_GENESIS.md)
+records the repaired source audit, Pell beta bounds, lag-uniform signed transport,
+full-conductor rational approximation, typed counterexamples, and a weak
+pi-specific logarithmic deficit using an external irrationality theorem.
+Paper proofs, exact finite checks and Lean declarations remain distinct.
+**Pi normality remains unproved.**
+
+The additive [Prime Bridge supplement PBR-01–20](CLAIM_SUPPLEMENT_ARITHMETIC_ER_EPR.md)
+records arithmetic entanglement/source reconstruction, concrete KMS interfaces,
+interacting spectral and entanglement proofs, BT lattice geometry and exact
+weighted quantum-code recovery with preserved counterexamples. Its receipt
+separates paper proofs, exact tests and actual finite Lean checks. No historical
+claim is relabeled; no gravitational ER bridge or RH result is inferred.
+
+The research-only [source-faithful renormalization supplement](CLAIM_SUPPLEMENT_SOURCE_FAITHFUL_RENORMALIZATION.md)
+records exact carry repair, minimal future memory, quantitative heat Schur
+corrections, two-completion separation, and a sharp half-density transport
+threshold. Original completed Weil source and Schur bounds are unchanged;
+analytic proofs are not certified by the 22-declaration finite Lean core.
+[Research report and receipts](../research/2026-10-23/SOURCE_FAITHFUL_SYNTHESIS.md).
+
+The research-only [Reality Pin supplement RP-01–RP-25](CLAIM_SUPPLEMENT_REALITY_PIN.md)
+extends the spectral-boundary stack with labelled zero-forcing reconstruction,
+source-history return Grams, an infinite arithmetic operator with certified
+resolvent horizons, and calibrated model selection. Fully cyclic graph aliases
+and a nonstationary inherited Gibbs state preserve sharp obstructions.
+Fourteen small Lean declarations have their own exact authority boundary;
+paper operator/inverse theorems and synthetic RC data are not kernel or physical
+certificates. [Campaign and provenance](../research/2026-10-22/REALITY_PIN_SYNTHESIS.md).
+
+The additive [Principia ancestral supplement](CLAIM_SUPPLEMENT_PRINCIPIA_ANCESTRAL.md)
+records the classical hereditary-predicate bridge, the exact saturation criterion
+for selected-source endpoint reachability, and counterexamples separating it from
+full path preservation. [Historical context](PRINCIPIA_CONNECTION.md) attributes
+the connection without claiming a new foundation or scholarly priority.
+
 The additive [Academic Transmutation supplement ATX-01–12](CLAIM_SUPPLEMENT_ACADEMIC_TRANSMUTATION.md)
 records exact future-safe forgetting, causal lifting, the uniform arithmetic
 nonidentification family, Gamma bounds and two historical operator corrections.

@@ -1,0 +1,59 @@
+{
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-t",
+        "1",
+        "-M",
+        "2048",
+        "-o",
+        "/tmp/succ-pi-source-genesis-lean-final/build-x76prmtk/BaileyCrandall.olean",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-pi-source-genesis/formal/duck_pi/BaileyCrandall.lean"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-pi-source-genesis/formal/duck_pi",
+      "exit_code": -6,
+      "label": "BaileyCrandall",
+      "log": "BaileyCrandall.log",
+      "log_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "seconds": 2.564
+    }
+  ],
+  "commit_at_end": "364962ac0c0e8fb4d06c37468a5d50336d68a9ee",
+  "commit_at_start": "364962ac0c0e8fb4d06c37468a5d50336d68a9ee",
+  "dependency_project": "/home/leah/SUCC-rf/formal/mathlib_bridge",
+  "dependency_revisions": {
+    "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d",
+    "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+    "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+    "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+    "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+    "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+    "mathlib": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+    "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+    "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d"
+  },
+  "failures": [
+    "BaileyCrandall"
+  ],
+  "historical_authority_modified": false,
+  "lean_version": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "negative_controls": [],
+  "normality_proved": false,
+  "schema": "succ.pi-source-genesis.lean-observation.v1",
+  "scoped_status_at_start": "?? formal/duck_pi/BBPSourceGenesis.lean\n?? scripts/check_pi_source_genesis_lean.py",
+  "source_hashes": {
+    "formal/duck_pi/BBPIntegral.lean": "601ce9d84ffd1281819a5b17e69cde245fbbd331c63f47f38440fb91ef049c62",
+    "formal/duck_pi/BBPSourceGenesis.lean": "ecd56ab8ca827cd41a7bf798786daf7939078afbcf326cc606ca41104d99f2e9",
+    "formal/duck_pi/BaileyCrandall.lean": "5ea46de978c6969509adf0fca71811a0cf18909b9c525ecaeb9e15cd4582de50",
+    "formal/duck_pi/PiSource.lean": "37699406dc52caa814dd20dd1602060bd08e896d50e66b637d3e4077b8ace4e2",
+    "formal/duck_pi/lake-manifest.json": "344aedecb88c986bae4d4541ac1c98b48deb81c9e2a167479511b99a1b3c0876",
+    "formal/duck_pi/lean-toolchain": "190c6c74963949503698e8e5c3e208b07d14b4863ac0ce82d9664b2087ee8cc7",
+    "formal/kernel_audit/ExportCommand.lean": "026bd4a8d919f83a4e83fd593499c108757f87868dfe66ca05a7bc340c339d60",
+    "scripts/cambrian_audit_c_lean.py": "6a10d0e18e5f9fec8846431bb6aa4919b8552c034ade937eb565c8133d91e37c",
+    "scripts/check_pi_source_genesis_lean.py": "83a3e4e975a92eaa93801846c16dfff8662177d7c0c8c8a905f127dfb54335d4"
+  },
+  "sources_unchanged": true,
+  "status": "FAILED",
+  "theorem_exports": {}
+}

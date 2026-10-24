@@ -1,5 +1,7 @@
 # SUCC Research Dependency DAG
 
+**Duck / π research checkpoint (2026-10-21):** [execution and proof obligations](../research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md), [typed dependency ledger](DUCK_PI_DEPENDENCIES.json), [exact kernel receipt](../research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md). Actual BBP source transport and finite structural certificates are distinguished from the still-open source-specific Fourier estimate.
+
 ## Academic Main VII quantitative and authority edges
 
 Post-main arithmetic draft: uniform row slicing + full Möbius inversion give

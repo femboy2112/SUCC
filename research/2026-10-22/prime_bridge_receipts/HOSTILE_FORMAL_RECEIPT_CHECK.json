@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "commit": "73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf",
+  "source_hashes_checked": 5,
+  "log_hashes_checked": 7,
+  "type_expression_hashes_checked": 11,
+  "axiom_counts": {
+    "propext_only": 8,
+    "empty": 3
+  },
+  "negative_controls_inspected": [
+    "wrong_inverse",
+    "wrong_coherence",
+    "wrong_braid"
+  ],
+  "boundary": "Independent auditor inspection of downloaded hosted receipts; not a second Lean execution"
+}

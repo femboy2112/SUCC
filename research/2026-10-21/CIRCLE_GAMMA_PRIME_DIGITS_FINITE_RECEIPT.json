@@ -1,0 +1,133 @@
+{
+  "circle_modes": {
+    "hexagon_modes": [
+      "0",
+      "1",
+      "3",
+      "4",
+      "3",
+      "1",
+      "0"
+    ],
+    "mode_2_poly": [
+      "4",
+      "-1"
+    ],
+    "mode_3_poly": [
+      "9",
+      "-6",
+      "1"
+    ],
+    "mode_4_poly": [
+      "16",
+      "-20",
+      "8",
+      "-1"
+    ],
+    "square_modes": [
+      "0",
+      "1",
+      "2",
+      "1",
+      "0"
+    ]
+  },
+  "hierarchy": {
+    "digit_words": [
+      "001",
+      "011"
+    ],
+    "periodic_binary_third_two_digit_edge_count": {
+      "00": 0,
+      "01": 50,
+      "10": 50,
+      "11": 0
+    },
+    "prime7_base2_cycles": [
+      [
+        1,
+        2,
+        4
+      ],
+      [
+        3,
+        6,
+        5
+      ]
+    ],
+    "single_digit_balanced": true,
+    "two_digit_edges": {
+      "00": 1,
+      "01": 2,
+      "10": 2,
+      "11": 1
+    }
+  },
+  "ordered_gamma_coefficients_rate_3_over_2": [
+    "1",
+    "3/2",
+    "9/8",
+    "9/16",
+    "27/128"
+  ],
+  "phase_cocycle": {
+    "direct_angle": "5/7",
+    "factor_angle": "3/7",
+    "factors": [
+      2,
+      3
+    ],
+    "integer_mode": 6,
+    "mixed_angle": "2/7",
+    "naive_prime_only_fails": true,
+    "phase": "1/7"
+  },
+  "prime_box": {
+    "integers": [
+      "1",
+      "2",
+      "3",
+      "6"
+    ],
+    "max_power": 1,
+    "primes": [
+      2,
+      3
+    ],
+    "sigma": 2,
+    "sum": "25/18"
+  },
+  "prime_digit_cylinders": {
+    "cutoff199": "14",
+    "cutoff199_plus_polygon20": "1415926535",
+    "cutoff29": "1",
+    "cutoff4999": "141",
+    "finite_cylinders_only": true,
+    "normality_implied": false
+  },
+  "prime_to_circle": {
+    "cutoff3": {
+      "euler_partial": "3/2",
+      "squared_pi_lower": "9",
+      "squared_pi_upper": "11"
+    },
+    "cutoff5": {
+      "euler_partial": "25/16",
+      "squared_pi_lower": "75/8",
+      "squared_pi_upper": "423/40"
+    },
+    "missing_prime3_invalidated_by_rational_harmonic_prefix": true,
+    "rh_used": false,
+    "sourced_pi_bounds_overlap_polygon": true
+  },
+  "proof_boundaries": {
+    "RH_proved": false,
+    "RH_to_pi_phase_transference_proved": false,
+    "circle_to_gamma_analytic_identity_formalized": false,
+    "phase_mixed_terms_required": true,
+    "pi_normality_proved": false,
+    "source_pi_gamma_bracket_finite": true
+  },
+  "source_main": "b116841f12b41aaf7600da39bbb40577f25b6295",
+  "title": "CIRCLE_GAMMA_ALL_PRIMES_DIGIT_BRIDGE_FINITE_RECEIPT"
+}

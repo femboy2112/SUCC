@@ -1,0 +1,89 @@
+{
+  "conditional_rh_budget": {
+    "frequency": 3,
+    "horizon": 8,
+    "limit": 4294967296,
+    "log_tail_error_upper": "707/60798594969501696",
+    "mean_difference_upper": "202436125171/5066549580791808",
+    "premise": "for all real t>=limit: |psi(t)-t|<=C*sqrt(t)*log(t)^2",
+    "psi_constant": "1/24",
+    "status": "CONDITIONAL_PAPER_BOUND_NOT_CANCELLATION"
+  },
+  "does_not_certify": [
+    "RH",
+    "universal ABC",
+    "pi normality",
+    "Fourier cancellation"
+  ],
+  "exact_abc_normalized_example": {
+    "abc_constant": "1/1",
+    "actual_squared_distance": "1/122500",
+    "base": 10,
+    "common_gcd": 2,
+    "depth": 2,
+    "height": 1100,
+    "p": 22,
+    "prefix": 314,
+    "q": 7,
+    "radical_uv": 120890,
+    "residual": 1,
+    "squared_distance_lower": "1/1627511847500",
+    "squared_residual_lower": "1/13285811",
+    "status": "EXACT_FINITE_CHECK_NOT_UNIVERSAL_ABC",
+    "u": 1100,
+    "v": 1099
+  },
+  "external_premises": {
+    "ABC": "only a supplied finite exponent-two premise is checked by code",
+    "RH_instance": "Lee--Nosal arXiv:2312.05628v4 Theorem 1.2; RH assumed",
+    "irrationality_exponent_countermodel": "Bugeaud 2011 DOI:10.5802/aif.2666 imported"
+  },
+  "file_sha256": {
+    "observational_succ/duck_source_bridge.py": "6ca8ff56ed165e4669f47ad1950b0e4a38262a621724948d4856242e9c757028",
+    "research/2026-10-21/DUCK_RH_ABC_GAMMA_CONTINGENCY.md": "b188a4146c4c29bcae3f4ffd3cbce77a99143a5380445bc045e9b6331143c120",
+    "scripts/duck_source_bridge_probe.py": "e794b9d76a82a93d4ce267a820f6f6e10b8165053b37aee4c76ad8203f0feb37",
+    "tests/test_duck_source_bridge.py": "fdb95bc169a3bd4bcfe969a58473149355b6e498a4de59df08d4595400d86e28"
+  },
+  "focused_tests": {
+    "errors": 0,
+    "failures": 0,
+    "run": 8,
+    "skipped": 0
+  },
+  "git_parent_at_execution": "9894d39250021bbbc2615c33dee0d286ddf0950f",
+  "independent_symbolic_integral_derivative_residual": "0",
+  "prime_power_atoms_through_6": [
+    [
+      2,
+      1,
+      2,
+      "1/4"
+    ],
+    [
+      3,
+      1,
+      3,
+      "1/9"
+    ],
+    [
+      2,
+      2,
+      4,
+      "1/32"
+    ],
+    [
+      5,
+      1,
+      5,
+      "1/25"
+    ]
+  ],
+  "python": "3.12.14",
+  "schema": "duck-source-bridge-finite-receipt-v1",
+  "status": "EXACT_FINITE_CHECKS_PAPER_ANALYSIS_NOT_LEAN_VERIFIED",
+  "sympy": "1.14.0",
+  "thue_morse_base16_prefix_interval_32": [
+    "22602069572100290521282298827426037777/340282366920938463463374607431768211456",
+    "1324340013990251397731384696919494401/19938419936773738093557105904205168640"
+  ]
+}

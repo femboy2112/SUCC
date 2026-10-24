@@ -1,0 +1,73 @@
+{
+  "census": [
+    {
+      "X": 10,
+      "all_primitive_conic_sources": 1,
+      "high_divisor_selections": 0,
+      "moment_5_over_7_rational_upper": "1",
+      "permitted_root_depth_sources": 1,
+      "selected_5_over_7_rational_upper": "1"
+    },
+    {
+      "X": 50,
+      "all_primitive_conic_sources": 3,
+      "high_divisor_selections": 0,
+      "moment_5_over_7_rational_upper": "1646721/62500",
+      "permitted_root_depth_sources": 3,
+      "selected_5_over_7_rational_upper": "3501127010559/250000000000"
+    },
+    {
+      "X": 338,
+      "all_primitive_conic_sources": 5,
+      "high_divisor_selections": 2,
+      "moment_5_over_7_rational_upper": "101467473/250000",
+      "permitted_root_depth_sources": 5,
+      "selected_5_over_7_rational_upper": "55434095146108473869/250000000000000000"
+    },
+    {
+      "X": 1000,
+      "all_primitive_conic_sources": 7,
+      "high_divisor_selections": 4,
+      "moment_5_over_7_rational_upper": "488165657/500000",
+      "permitted_root_depth_sources": 7,
+      "selected_5_over_7_rational_upper": "276948469073030572061/500000000000000000"
+    },
+    {
+      "X": 10000,
+      "all_primitive_conic_sources": 23,
+      "high_divisor_selections": 14,
+      "moment_5_over_7_rational_upper": "6995347351/62500",
+      "permitted_root_depth_sources": 23,
+      "selected_5_over_7_rational_upper": "888812245425934635953104967/12500000000000000000000"
+    },
+    {
+      "X": 100000,
+      "all_primitive_conic_sources": 73,
+      "high_divisor_selections": 50,
+      "moment_5_over_7_rational_upper": "1416468419439/500000",
+      "permitted_root_depth_sources": 73,
+      "selected_5_over_7_rational_upper": "207276862889802099448518734365086743/125000000000000000000000000000"
+    }
+  ],
+  "checkout": "fb5e36a0aa326172624a9d5471906bdba7309567",
+  "failures": 0,
+  "formal_status": "not Lean-formalized",
+  "python": "3.12.14",
+  "schema": "succ.viii.restricted_conic.exact_probe.v1",
+  "scope": "Finite exact checks of a declared family; paper proof supplies universal claims.",
+  "source_sha256": {
+    "observational_succ/viii_high_divisor.py": "cc5cd6b8e5ca62a962a12a0438f29cd95656f07ee538be33311e82bdcacb8306",
+    "research/2026-10-21/VIII_HIGH_DIVISOR_CONICS.md": "984903675d0e7b635f9895e4a6acd4879d15539480100e1d49b14f7c640efb0a",
+    "scripts/viii_high_divisor_probe.py": "1013f80da0e382ea9696dbb1cf8d543697c78bf4dccaa1dd983a9909c7ea829d",
+    "tests/test_viii_high_divisor.py": "d4d7d84288d518b18c134f32c04793058a25af3fbebb45183acaa59069e8677a"
+  },
+  "symbolic_polynomial_controls": {
+    "first_elimination": true,
+    "first_linear_identity": true,
+    "quadratic_identity": true,
+    "second_elimination": true,
+    "second_linear_identity": true
+  },
+  "sympy": "1.14.0",
+  "working_tree_dirty": true
+}

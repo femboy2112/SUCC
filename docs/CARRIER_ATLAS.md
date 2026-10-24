@@ -1,5 +1,11 @@
 # Carrier Atlas
 
+[Principia and ancestral closure](PRINCIPIA_CONNECTION.md) supplies historical
+context for successor constructions. The accompanying
+[reachability criterion](CLAIM_SUPPLEMENT_PRINCIPIA_ANCESTRAL.md) checks whether
+composing observed arrows creates endpoints unavailable from the selected source;
+it does not replace the stronger action, cost, and trace contracts below.
+
 **The mathematical backbone of Observational SUCC.** Every row is a *carrier reconstruction*:
 a smaller source carrier and a set of admissible categorical operations build an equivalent
 interface to a larger or transformed carrier. The point is never "bigger sets"; it is

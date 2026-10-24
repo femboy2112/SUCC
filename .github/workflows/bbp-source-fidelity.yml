@@ -1,0 +1,39 @@
+name: BBP source fidelity and signed-pole Hausdorff memory
+on:
+  push:
+    branches:
+      - research/bbp-source-fidelity-hausdorff-moment-2026-10-24
+  pull_request:
+    paths:
+      - 'observational_succ/bbp_source_memory.py'
+      - 'tests/test_bbp_source_memory.py'
+      - 'research/2026-10-24/BBP_SOURCE_MEMORY_REPAIR.md'
+      - 'docs/PROOF_MECHANISMS.md'
+      - 'research/2026-10-23/CYC03_LANE_CLOSED.md'
+      - '.github/workflows/bbp-source-fidelity.yml'
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install repository testing requirements
+        run: python -m pip install -e '.[test]'
+      - name: Strict syntax and focused exact source theorem tests
+        run: |
+          python -Werror -m py_compile observational_succ/bbp_source_memory.py tests/test_bbp_source_memory.py
+          python -m unittest discover -s tests -p 'test_bbp_source_memory.py' -v
+          python -m unittest discover -s tests -p 'test_proof_mechanisms.py' -v
+          python -m unittest discover -s tests -p 'test_pi_normality_moonshot.py' -v
+      - name: Validate archived imports and claim authority boundaries
+        run: |
+          python scripts/verify_provenance.py
+          python scripts/observer_foundations_probe.py

@@ -1,0 +1,18 @@
+{
+  "campaign": "Academic Main VIII",
+  "family": "countable weighted mode carrier",
+  "date_utc": "2026-10-21",
+  "parent_commit": "0bb1642ceeda36aa06c95d90ce5837cdc652a119",
+  "incoming_pr_214_head": "9372c669892a2a29fb8c16f0fa20c11815f650df",
+  "python": "3.12.14",
+  "command": "python -m unittest discover -s tests -p test_viii_infinite_carrier.py -v",
+  "result": "PASS",
+  "test_methods": 9,
+  "formal_kernel_checked": false,
+  "universal_proof": "Complete paper proofs plus identified Kolmogorov product measure existence theorem; tests are finite corroboration",
+  "sha256": {
+    "observational_succ/viii_infinite_carrier.py": "977cd31157d2807fe12c0ada1f9e99db96e68eaf55ff2ad9d0f5d63e97b3c72b",
+    "tests/test_viii_infinite_carrier.py": "d27edf4659659c4a93fb272c7e94be784b157b2cbb7b4785812ba7d2ee5d5465",
+    "research/2026-10-21/VIII_INFINITE_CARRIER.md": "3ae66ed6da23ede5e83091fc40517d33bb465eb867bfa9849e4d175918f74003"
+  }
+}

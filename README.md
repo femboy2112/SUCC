@@ -1,5 +1,30 @@
 # Observational SUCC
 
+**Coherent-main integration — π source / circle / prime-clock frontier (2026-10-24, draft research).**
+The latest consolidated round. Corrected source fidelity: the former "BBP four-pole lane closed"
+verdict is **withdrawn** — index poles are not orbit points and a `1/3` fixed point does not
+preserve the BBP source — see the
+[source-repair dossier](research/2026-10-24/BBP_SOURCE_MEMORY_REPAIR.md) and the
+[corrected four-pole audit](research/2026-10-23/CYC03_LANE_CLOSED.md) (R1–R8). New exact results on
+[π source collision entropy](research/2026-10-24/PI_SOURCE_COLLISION_ENTROPY.md)
+([SCE claims](docs/CLAIM_SUPPLEMENT_PI_SOURCE_COLLISION.md)),
+[Poisson minimum geometry](docs/CLAIM_SUPPLEMENT_POISSON_MINIMUM.md), two **independent** BBP
+minimal-path families (gauge and births, with a
+[claim-ID crosswalk](docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH.md)), cyclotomic origin gauges and
+selected-source averaging. What is proved, what is only finite-tested, and what stays open is spelled
+out under "Established vs. open" below. **π normality, its independence, RH, and absolute/decimal
+normality remain OPEN.**
+
+**Duck → Lean → π (draft research):** [results and remaining obligations](research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md) · [kernel receipt](research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md) · [scoped claims](docs/CLAIM_SUPPLEMENT_DUCK_PRINCIPLE.md). Exact observer certificates and source-derived BBP transport, with rigorous counterexamples to overstrong normality inferences. **π normality remains open.**
+
+**Foundational connection — Principia Mathematica:**
+[historical context and practical use](docs/PRINCIPIA_CONNECTION.md) ·
+[ancestral closure and observer reachability](docs/CLAIM_SUPPLEMENT_PRINCIPIA_ANCESTRAL.md).
+Frege's hereditary-predicate construction, developed in Whitehead and Russell's
+*Principia*, gives a concrete way to detect when an observation quotient invents
+reachable endpoints from a selected source. The connection is intellectual
+kinship and an attributed classical tool, not a claim of direct historical influence.
+
 **Academic Main VIII — reviewed integration:** [audit](docs/academic_main_viii/integration_audit.md) · [research frontier](docs/academic_main_viii/research_frontier.md) · [exterior claim crosswalk](docs/CLAIM_SUPPLEMENT_EXTERIOR_ASCENT.md). Effective abc means, source-faithful moment-Gram improvements, and exterior rank bounds are reconciled with exact proof-authority gates. The full `t=2/3` moment endpoint and signed S4 sign remain open.
 
 Reviewed paper theorem: [effective abc mean values](research/2026-10-20/ABC_EFFECTIVE_MEAN.md)
@@ -190,6 +215,46 @@ contributions are the typed certificate schema, the proof-access taxonomy, the n
 the exact finite source charts with preserved counterexamples. The **downstream Tate/Weil/RH**
 application has scoped high-subspace and short-window positivity results, but the low Schur sign, the
 low/high resolvent coupling, the `λ↓0` behaviour, and the source→Weil typed morphism remain **OPEN**.
+
+### The π / source / observer machinery (2026-10-24)
+
+This stack studies how a finite observer reconstructs knowledge from a *selected source*; the π
+work is a downstream testbed, not the definition of the theory. In plain terms:
+
+**Proved (paper or classical), with stated scope.**
+- *Source fidelity.* The authentic BBP source (initial state `y₀=0`, forcing `r(n)`, bounded
+  backward tail `t₀=π/16`) is characterized exactly; the earlier "four-pole lane closes CYC-03"
+  claim is **withdrawn** and replaced by the corrected audit. A `1/3` orbit and an index-pole
+  pushforward are *generic negative controls*, not members of the source.
+- *Finite observers / proof access.* The FieldClass taxonomy (Simple / IdealHard / Fucked /
+  Unresolved) and the fidelity criterion are exact; "toolkit-relative dark" is explicitly **not**
+  an impossibility theorem.
+- *Circle geometry and prime clocks.* Rational polygon enclosures of π, exact odd-prime first-birth
+  counts `B(N)~6N/log N`, `p^k` valuation power laws, and minimal rational recurrences are exact
+  finite mathematics.
+- *Carry transport.* Exact carry repair, minimal future memory, and the regret/normality
+  correspondence are proved at the stated finite/asymptotic scope.
+- *Galois averaging and entropy.* The Poisson-kernel energy minimum, Haar convergence, and the
+  subquadratic positive-regret / minimum-relative-regret conditions are proved **equivalent
+  (asymptotically)** to normality for a base-`b` orbit. The *sufficient* direction was already
+  valid; the equivalence is **not a new proof step**.
+
+**Only finite-tested (exact at finite horizons, not a theorem for all `n`).**
+Prime-window spectral projections, Galois second-moment interval bounds (e.g. selected `p=97`
+amplitude `>1/20`), cyclotomic selected-source cancellation, and the collision/entropy receipts are
+verified on explicit finite ranges with exact rational / interval arithmetic. Finite numerical
+agreement is **not** a proof certificate.
+
+**The exact open problem.** A *selected-source* collision/Fourier estimate: whether
+`K_p(1)=p^{o(1)}` holds on all sufficiently large good primes at the prescribed scale `c=2/5`
+(SCE-07) — a strict quantitative sufficient condition that would imply base-16 (hence base-2)
+normality of π. **This is open and unverified.**
+
+**Not proved, and not claimed.** π normality in any base, the *independence* of π-normality from
+PA/ZFC, RH, and absolute/decimal normality. Observer reachability and geometric minimality supply
+**no** elapsed-time, cost, probability, visit-frequency, or universal-liveness theorem — they detect
+invented endpoints, they do not count digit frequencies. Lean kernel authority covers only the
+explicitly formalized finite lemmas and does **not** propagate to a neighbouring unformalized theorem.
 
 ## Run it
 

@@ -1,0 +1,14 @@
+cwd: /workspace/scratch/f3c3f94a0370/SUCC
+sha: 73ecf86467b3a62cbe6b4bbef989c02c3b2b16cf
+command: PYTHONPATH=. python -m unittest tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count -v
+exit_code: 0
+
+STDOUT
+
+STDERR
+test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.098s
+
+OK

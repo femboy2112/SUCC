@@ -1,0 +1,170 @@
+{
+  "schema": "viii-geometry-reproduction-v1",
+  "authority": "unauthenticated exact-computation record; paper proofs separate; no Lean claim",
+  "git_head_at_run": "1bd7e5a7d5ed2b476cfac22054c12a80cce4fc9c",
+  "python": "3.12.14",
+  "sympy": "1.14.0",
+  "source_sha256": {
+    "observational_succ/viii_exterior_geometry.py": "1c849a45ef6bd69c0c956840315aeddebbe81c42f8fb755d804e827d8c2c3809",
+    "observational_succ/viii_simplex_asymptotics.py": "8e766073cc02d048a1cd966017f2c68c56137dbc37f1d08bd7e6273e67a9fdc7",
+    "tests/test_viii_exterior_geometry.py": "fa71ff832bbd7b97c0f4274388f8e3c24879fc3ecb23010fbed97e5f48e6070f",
+    "tests/test_viii_simplex_asymptotics.py": "766d1587122bd62211e8d8bf1ec29ec1af814c3c2d04b1a772b2a7cdfcb4bbb4",
+    "research/2026-10-21/VIII_SECTION_LATTICES_AND_SIMPLEX_LAWS.md": "208505b591acec8ca4c181b30193b94f9bed24dc7db8788567586b9f81dccea5",
+    "scripts/viii_geometry_probe.py": "e16a3ca96256887cfc1f07bf1290b7317868d65910cbd8bff417bfe2f9deb872"
+  },
+  "tests": [
+    {
+      "command": [
+        "/workspace/scratch/0a4459d8f487/vii-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_viii_exterior_geometry.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "test_count": 8,
+      "transcript": "test_ambient_index_disappears_on_positive_section (test_viii_exterior_geometry.TestSectionLattices.test_ambient_index_disappears_on_positive_section) ... ok\ntest_cell_center_and_cutoff_guards (test_viii_exterior_geometry.TestSectionLattices.test_cell_center_and_cutoff_guards) ... ok\ntest_full_rank_index_from_finite_residue_oracle (test_viii_exterior_geometry.TestSectionLattices.test_full_rank_index_from_finite_residue_oracle) ... ok\ntest_full_simplex_cell_volume_bound (test_viii_exterior_geometry.TestSectionLattices.test_full_simplex_cell_volume_bound) ... ok\ntest_lower_rank_index_from_homomorphism_image (test_viii_exterior_geometry.TestSectionLattices.test_lower_rank_index_from_homomorphism_image) ... ok\ntest_projected_rectangles_with_translates (test_viii_exterior_geometry.TestSectionLattices.test_projected_rectangles_with_translates) ... ok\ntest_rank_two_actual_simplex_volume_bound (test_viii_exterior_geometry.TestSectionLattices.test_rank_two_actual_simplex_volume_bound) ... ok\ntest_saturation_and_type_guards (test_viii_exterior_geometry.TestSectionLattices.test_saturation_and_type_guards) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.292s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/workspace/scratch/0a4459d8f487/vii-venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_viii_simplex_asymptotics.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "test_count": 6,
+      "transcript": "test_entropy_enclosure_including_endpoints_and_zero_region (test_viii_simplex_asymptotics.TestDimensionCorrections.test_entropy_enclosure_including_endpoints_and_zero_region) ... ok\ntest_explicit_first_and_second_corrections (test_viii_simplex_asymptotics.TestDimensionCorrections.test_explicit_first_and_second_corrections) ... ok\ntest_log_enclosure_against_independent_atanh_series (test_viii_simplex_asymptotics.TestDimensionCorrections.test_log_enclosure_against_independent_atanh_series) ... ok\ntest_real_cutoff_and_residue_shift_are_preserved (test_viii_simplex_asymptotics.TestDimensionCorrections.test_real_cutoff_and_residue_shift_are_preserved) ... ok\ntest_residue_counts_by_direct_integer_census (test_viii_simplex_asymptotics.TestDimensionCorrections.test_residue_counts_by_direct_integer_census) ... ok\ntest_strict_exact_input_guards (test_viii_simplex_asymptotics.TestDimensionCorrections.test_strict_exact_input_guards) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.923s\n\nOK\n"
+    }
+  ],
+  "positive_section_counterexample": {
+    "M": 17,
+    "section": {
+      "saturated_basis": [
+        [
+          1,
+          0
+        ],
+        [
+          16,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "divisor_moduli": [
+        1,
+        1,
+        1
+      ],
+      "sum_modulus": 17,
+      "coordinate_kernel": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "lattice_basis": [
+        [
+          1,
+          0
+        ],
+        [
+          16,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "section_index": 1,
+      "ambient_index": 17,
+      "covolume_squared": 258,
+      "projection_rows": [
+        0,
+        1
+      ],
+      "projection_hnf": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "projection_index": 1
+    },
+    "center": [
+      "1/34",
+      "4/17",
+      "4/17"
+    ],
+    "beta": "289/8",
+    "cutoff": 17,
+    "primitive_point_count": 15,
+    "counting_coefficient": "8/289"
+  },
+  "log_correction": {
+    "population": 1000,
+    "dimension": 100,
+    "depth": 2,
+    "count": 63850511926305130236698511142022274281262900693853331776286816221524376994750901948920974351797699894319420811933446197797592213357065053890,
+    "volume_ratio": "63092589847234931097441401679073744655609750610730716226445811276733941350932535027837827249767150594504310905410681541498215223936142190146007086958445246378178407803279285737931930562654993626583800587240812346146002000765455088041808248196553609513/10587911840678754238354031258495524525642395019531250000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "correction": "204567/40000",
+    "remainder_lower": "3267/400000",
+    "remainder_upper": "3267/360400"
+  },
+  "entropy_linear_dimension": {
+    "count": 118264581564861424,
+    "lower": "1152921504606846976/61",
+    "upper": "1152921504606846976"
+  },
+  "empty_dimension": {
+    "count": 0,
+    "lower": "0",
+    "upper": "0"
+  },
+  "residue_shift_control": {
+    "W": 2,
+    "X": 200,
+    "m": 10,
+    "all_positive_representatives_one": {
+      "population": 105,
+      "dimension": 10,
+      "depth": 1,
+      "count": 28848458598960,
+      "volume_ratio": "10047898505216/15634449140625",
+      "correction": "3/7",
+      "remainder_lower": "19/1470",
+      "remainder_upper": "19/1344"
+    },
+    "all_positive_representatives_two": {
+      "population": 100,
+      "dimension": 10,
+      "depth": 1,
+      "count": 17310309456440,
+      "volume_ratio": "245373636545037/390625000000000",
+      "correction": "9/20",
+      "remainder_lower": "57/4000",
+      "remainder_upper": "57/3640"
+    }
+  }
+}

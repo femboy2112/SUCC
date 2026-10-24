@@ -1,0 +1,44 @@
+{
+  "RH_proved": false,
+  "arith_clock_same_terminal_DtN": true,
+  "arithmetic_clock_routes": [
+    [
+      1,
+      2,
+      4
+    ],
+    [
+      1,
+      2,
+      3,
+      4
+    ]
+  ],
+  "cherenkov_physical_inference": false,
+  "claim_type": "CLASSICAL identities + PROVED LOCAL exact rational finite models",
+  "feedback_conductance_order_a": "1",
+  "feedback_conductance_order_b": "37/36",
+  "feedback_effective_order_a": "13/11",
+  "feedback_effective_order_b": "474/401",
+  "feedback_order_defect": "1/4411",
+  "future_hidden_effective_conductance": "49/41",
+  "future_probe_distinguishes": true,
+  "future_unmodified_effective_conductance": "7/6",
+  "hidden_edge_strength": "7",
+  "hidden_present_DtN_equal": true,
+  "initial_effective_conductance": "1",
+  "physical_FUCC_action_from_wood_derived": false,
+  "source_sha256": {
+    "observational_succ/growing_dtn_history.py": "cc9a5f377fffd7d49e907ab8af69778d1269343dfbd461646e3c862ea490e8ca",
+    "scripts/growing_dtn_history_probe.py": "0e583b57f919966078e07c87504fb1c90e4e2dcce9e8364e2aff63319e262477",
+    "tests/test_growing_dtn_history.py": "17b9e22239b42c21f7e8dabd305db17ac829bb454daf4cd81870f89cc18c6bd9"
+  },
+  "two_direction_event_probability": "4655/6831",
+  "two_direction_overlap": [
+    "4655/6831",
+    "4655/6831",
+    "4655/6831"
+  ],
+  "two_direction_overlap_all_equal": true,
+  "underlying_network": "2 electrodes, 2 symmetric interior vertices, 4 unit arms"
+}

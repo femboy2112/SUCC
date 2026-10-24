@@ -1,0 +1,103 @@
+[
+  {
+    "name": "final-provenance",
+    "command": [
+      "python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.035,
+    "log": "final-provenance.log"
+  },
+  {
+    "name": "final-foundations",
+    "command": [
+      "python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.078,
+    "log": "final-foundations.log"
+  },
+  {
+    "name": "final-ordinal",
+    "command": [
+      "python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.497,
+    "log": "final-ordinal.log"
+  },
+  {
+    "name": "final-academic-vii",
+    "command": [
+      "python",
+      "scripts/academic_main_vii_gate.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.989,
+    "log": "final-academic-vii.log"
+  },
+  {
+    "name": "final-academic-viii",
+    "command": [
+      "python",
+      "scripts/academic_main_viii_gate.py"
+    ],
+    "exit_code": 0,
+    "seconds": 1.215,
+    "log": "final-academic-viii.log"
+  },
+  {
+    "name": "final-hostile",
+    "command": [
+      "python",
+      "scripts/main_vii_hostile_replay.py",
+      "--target-repo",
+      ".",
+      "--require-fixed"
+    ],
+    "exit_code": 0,
+    "seconds": 0.459,
+    "log": "final-hostile.log"
+  },
+  {
+    "name": "final-exact-receipt",
+    "command": [
+      "python",
+      "scripts/source_faithful_carry_probe.py",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 0.264,
+    "log": "final-exact-receipt.log"
+  },
+  {
+    "name": "final-namespace",
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_claim_namespace*.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.141,
+    "log": "final-namespace.log"
+  },
+  {
+    "name": "final-diff-check",
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0,
+    "seconds": 0.017,
+    "log": "final-diff-check.log"
+  }
+]

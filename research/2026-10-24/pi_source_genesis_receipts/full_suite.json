@@ -1,0 +1,14 @@
+{
+  "observed_utc": "2026-10-24T04:35:18.553727+00:00",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /tmp/pi-source-genesis-venv/bin/python -m unittest discover -s tests -p test_*.py",
+  "exit_code": 0,
+  "tests": 7424,
+  "seconds": 840.235,
+  "environment": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]\n1.4.1 2.5.0 1.12 1.18.0\n",
+  "log_sha256": "0aef134c88eed54607491b09dec7e6b33ae1f1f6eb580b457980de40bad81c11",
+  "scope": "All discovered tests; no infinite mathematical claims from test count",
+  "source_hashes": {
+    "observational_succ/pi_source_genesis.py": "147dcb1b42b0de157c55385896cb1b15b17c1bb4ba14ea6fb8effed24ed62cf1",
+    "tests/test_pi_source_genesis.py": "15e03d1389b6db7fcf55f721b17a437fd06ed751412fe2dd45d00d8587e38243"
+  }
+}

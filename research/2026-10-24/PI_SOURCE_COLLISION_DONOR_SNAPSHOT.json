@@ -1,0 +1,577 @@
+{
+  "observed_at_utc": "2026-10-24 07:35:13 UTC",
+  "repository": "femboy2112/SUCC",
+  "main": "b116841f12b41aaf7600da39bbb40577f25b6295",
+  "prs": [
+    {
+      "n": 250,
+      "head": "integrate/academic-main-ix-pi-circle-source-2026-10-23",
+      "sha": "f986507851e34636f60bee657dcdf0771a934380",
+      "base": "main",
+      "base_sha": "b116841f12b41aaf7600da39bbb40577f25b6295"
+    },
+    {
+      "n": 251,
+      "head": "research/cyc03-bbp-four-pole-lane-2026-10-23",
+      "sha": "de257fad8966bbe02ecdd19c2c0e9f68cee77e15",
+      "base": "integrate/academic-main-ix-pi-circle-source-2026-10-23",
+      "base_sha": "f986507851e34636f60bee657dcdf0771a934380"
+    },
+    {
+      "n": 252,
+      "head": "research/bbp-source-fidelity-hausdorff-moment-2026-10-24",
+      "sha": "364962ac0c0e8fb4d06c37468a5d50336d68a9ee",
+      "base": "research/cyc03-bbp-four-pole-lane-2026-10-23",
+      "base_sha": "de257fad8966bbe02ecdd19c2c0e9f68cee77e15"
+    },
+    {
+      "n": 253,
+      "head": "research/pi-source-genesis-2026-10-24",
+      "sha": "2ab8a8527b7ba3f990d75fd618a4bfd034b26b4b",
+      "base": "research/bbp-source-fidelity-hausdorff-moment-2026-10-24",
+      "base_sha": "364962ac0c0e8fb4d06c37468a5d50336d68a9ee"
+    },
+    {
+      "n": 254,
+      "head": "research/bbp-green-rank-tail-coefficients-2026-10-24",
+      "sha": "fceb04645926898bb5f72346dca54f3134b06cea",
+      "base": "research/bbp-source-fidelity-hausdorff-moment-2026-10-24",
+      "base_sha": "364962ac0c0e8fb4d06c37468a5d50336d68a9ee"
+    },
+    {
+      "n": 255,
+      "head": "research/cyclotomic-gauge-frame-pi-2026-10-24",
+      "sha": "68def05ad1dd92b78f8d6bd646ff28ab1ed85c59",
+      "base": "research/pi-source-genesis-2026-10-24",
+      "base_sha": "2ab8a8527b7ba3f990d75fd618a4bfd034b26b4b"
+    },
+    {
+      "n": 256,
+      "head": "research/cyclotomic-bbp-prime-window-interference-2026-10-24",
+      "sha": "0683f8f166b9106ab8405a2d6538415b5ac84ba3",
+      "base": "research/bbp-green-rank-tail-coefficients-2026-10-24",
+      "base_sha": "fceb04645926898bb5f72346dca54f3134b06cea"
+    },
+    {
+      "n": 257,
+      "head": "research/cyclotomic-origin-gauge-2026-10-24",
+      "sha": "5435497dc77a313d1ebbc56ac96c11e593db2619",
+      "base": "research/pi-source-genesis-2026-10-24",
+      "base_sha": "2ab8a8527b7ba3f990d75fd618a4bfd034b26b4b"
+    },
+    {
+      "n": 258,
+      "head": "research/bbp-prime-window-spectral-projection-2026-10-24",
+      "sha": "9aa55b3a6e1150d1690612c740a38e86adc081db",
+      "base": "research/cyclotomic-bbp-prime-window-interference-2026-10-24",
+      "base_sha": "0683f8f166b9106ab8405a2d6538415b5ac84ba3"
+    },
+    {
+      "n": 259,
+      "head": "research/cyclotomic-selected-source-2026-10-24",
+      "sha": "a777aa99f541df2a0e2a0b8d57fef3f0940e465c",
+      "base": "research/cyclotomic-origin-gauge-2026-10-24",
+      "base_sha": "5435497dc77a313d1ebbc56ac96c11e593db2619"
+    },
+    {
+      "n": 260,
+      "head": "research/bbp-minimal-path-gauge-prime-local-no-go-2026-10-24",
+      "sha": "654e9c9984ced49cee454d99cff20415072d1ffc",
+      "base": "research/cyclotomic-bbp-prime-window-interference-2026-10-24",
+      "base_sha": "0683f8f166b9106ab8405a2d6538415b5ac84ba3"
+    },
+    {
+      "n": 261,
+      "head": "research/bbp-minimal-path-galois-selection-2026-10-24",
+      "sha": "4b52cb87a19c2f599e5386fc12a9758bab12cba8",
+      "base": "research/bbp-prime-window-spectral-projection-2026-10-24",
+      "base_sha": "9aa55b3a6e1150d1690612c740a38e86adc081db"
+    },
+    {
+      "n": 262,
+      "head": "research/minimal-genesis-first-carry-2026-10-24",
+      "sha": "34f8e040a6f86a9e583bad428f3d4e20940e1ac8",
+      "base": "research/cyclotomic-origin-gauge-2026-10-24",
+      "base_sha": "5435497dc77a313d1ebbc56ac96c11e593db2619"
+    },
+    {
+      "n": 263,
+      "head": "research/principia-ancestral-bridge-2026-10-24",
+      "sha": "d7b5a5b91d142717ce7898417eed7a5dc603e019",
+      "base": "main",
+      "base_sha": "b116841f12b41aaf7600da39bbb40577f25b6295"
+    },
+    {
+      "n": 264,
+      "head": "feat/poisson-minimum-geometry-2026-10-24",
+      "sha": "de005af44cb4592d7a8be73f46fa1983f627da27",
+      "base": "integrate/academic-main-ix-pi-circle-source-2026-10-23",
+      "base_sha": "f986507851e34636f60bee657dcdf0771a934380"
+    }
+  ],
+  "leaf_ci": [
+    {
+      "pr": 250,
+      "sha": "f986507851e34636f60bee657dcdf0771a934380",
+      "runs": [
+        {
+          "id": 40045556161,
+          "name": "Observation anchored boundary realization",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556168,
+          "name": "Source-carry observation limit and Witt/dual adversaries",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556012,
+          "name": "Prime Bridge exact arithmetic EPR star",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556208,
+          "name": "Prime Bridge finite kernel certificates",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556137,
+          "name": "circle-gamma-prime-digit-bridge",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556203,
+          "name": "Orbit clock genesis exact source checks",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556083,
+          "name": "Bidirectional SUCC exact arithmetic cut checks",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556231,
+          "name": "Circle chord-Kummer collision exact research",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556073,
+          "name": "Source-minimality clock carry renewal exact checks",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556219,
+          "name": "Coherent infinite arithmetic EPR code tower",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556027,
+          "name": "Reciprocal SUCC FUCC Pascal exact source",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556177,
+          "name": "Source-faithful bidirectional histories (exact)",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556237,
+          "name": "Observation pinned arithmetic intrinsic geometry",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556070,
+          "name": "HISTORY-DTN exact finite probes",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556198,
+          "name": "Duck Principle trusted Lean kernel",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556188,
+          "name": "Circle time-carry and 3-adic resonance exact research",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556247,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556318,
+          "name": "Reality Pin exact sources and Lean",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556280,
+          "name": "Boundary-port geometry selection (exact rational)",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556204,
+          "name": "Spectral boundary source rigidity exact",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556051,
+          "name": "Pinned formal kernel and proposition exports",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556270,
+          "name": "Secondary-circle prime/chord exact source and controls",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556152,
+          "name": "Source-faithful carry exact sources and Lean",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556239,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556043,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556206,
+          "name": "Exterior determinant kernel research",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556075,
+          "name": "Duck and pi exact research kernel",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556094,
+          "name": "Arithmetic wavefront and spectral-response certificates",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40045556261,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "pr": 255,
+      "sha": "68def05ad1dd92b78f8d6bd646ff28ab1ed85c59",
+      "runs": [
+        {
+          "id": 40065926091,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40065926051,
+          "name": "Cyclotomic SUCC gauge frames and signed BBP source",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40065926078,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40065926068,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40065925983,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "pr": 259,
+      "sha": "a777aa99f541df2a0e2a0b8d57fef3f0940e465c",
+      "runs": [
+        {
+          "id": 40069485061,
+          "name": "Duck and pi exact research kernel",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40069485062,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40069485042,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40069485044,
+          "name": "Pinned formal kernel and proposition exports",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40069485263,
+          "name": "Cyclotomic selected source and signed interference",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40069485074,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40069485067,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "pr": 260,
+      "sha": "654e9c9984ced49cee454d99cff20415072d1ffc",
+      "runs": [
+        {
+          "id": 40069563818,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40069563826,
+          "name": "BBP minimal-path source and spectral hostile checks",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40069563865,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40069563756,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40069563760,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "pr": 261,
+      "sha": "4b52cb87a19c2f599e5386fc12a9758bab12cba8",
+      "runs": [
+        {
+          "id": 40070507350,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40070507372,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40070507357,
+          "name": "BBP minimal path and relative Galois source",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40070507334,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40070507338,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "pr": 262,
+      "sha": "34f8e040a6f86a9e583bad428f3d4e20940e1ac8",
+      "runs": [
+        {
+          "id": 40070795713,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40070795722,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40070795705,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40070795717,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "pr": 263,
+      "sha": "d7b5a5b91d142717ce7898417eed7a5dc603e019",
+      "runs": [
+        {
+          "id": 40072320860,
+          "name": "Principia ancestral observer bridge",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072320793,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072320976,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072320833,
+          "name": "Pinned formal kernel and proposition exports",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072320820,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072320810,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "pr": 264,
+      "sha": "de005af44cb4592d7a8be73f46fa1983f627da27",
+      "runs": [
+        {
+          "id": 40072804316,
+          "name": "Bidirectional SUCC exact arithmetic cut checks",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072804365,
+          "name": "Poisson minimum geometry source, Fourier and rational carry",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072804324,
+          "name": "Orbit clock genesis exact source checks",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072804374,
+          "name": "Source-minimality clock carry renewal exact checks",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072804321,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072804362,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072804342,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40072804352,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "coverage_note": "This is a donor snapshot, not combined-tree validation. PR #258/#261 do not contain the final #256 tip; #260 does. New research branch descends from #264."
+}
