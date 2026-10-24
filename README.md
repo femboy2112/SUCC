@@ -2,6 +2,14 @@
 
 **Duck → Lean → π (draft research):** [results and remaining obligations](research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md) · [kernel receipt](research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md) · [scoped claims](docs/CLAIM_SUPPLEMENT_DUCK_PRINCIPLE.md). Exact observer certificates and source-derived BBP transport, with rigorous counterexamples to overstrong normality inferences. **π normality remains open.**
 
+**Foundational connection — Principia Mathematica:**
+[historical context and practical use](docs/PRINCIPIA_CONNECTION.md) ·
+[ancestral closure and observer reachability](docs/CLAIM_SUPPLEMENT_PRINCIPIA_ANCESTRAL.md).
+Frege's hereditary-predicate construction, developed in Whitehead and Russell's
+*Principia*, gives a concrete way to detect when an observation quotient invents
+reachable endpoints from a selected source. The connection is intellectual
+kinship and an attributed classical tool, not a claim of direct historical influence.
+
 **Academic Main VIII — reviewed integration:** [audit](docs/academic_main_viii/integration_audit.md) · [research frontier](docs/academic_main_viii/research_frontier.md) · [exterior claim crosswalk](docs/CLAIM_SUPPLEMENT_EXTERIOR_ASCENT.md). Effective abc means, source-faithful moment-Gram improvements, and exterior rank bounds are reconciled with exact proof-authority gates. The full `t=2/3` moment endpoint and signed S4 sign remain open.
 
 Reviewed paper theorem: [effective abc mean values](research/2026-10-20/ABC_EFFECTIVE_MEAN.md)
