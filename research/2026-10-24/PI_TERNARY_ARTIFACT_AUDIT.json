@@ -1,0 +1,26 @@
+{
+  "status": "PASSED",
+  "compiled_python_files": [
+    "observational_succ/pi_ternary_pascal.py",
+    "tests/test_pi_ternary_pascal.py",
+    "scripts/pi_ternary_pascal_probe.py",
+    "scripts/pi_ternary_convex_probe.py",
+    "scripts/pi_ternary_carry_calibration.py",
+    "scripts/pi_ternary_translator_calibration.py"
+  ],
+  "documents": 8,
+  "local_links": 43,
+  "receipt_source_hash_checks": 14,
+  "registered_claim_rows": 28,
+  "full_run_inputs_unchanged": true,
+  "proof_hashes": {
+    "research/2026-10-24/PI_TERNARY_VALIDATION.md": "eab3972652e5ea5f7cee1e3a4b548ca09baded0d0462e56cd255c8a0f1391835",
+    "research/2026-10-24/PI_TERNARY_TRANSLATOR.md": "1af04ac1b3b45a31223881c7b166f17754ef1818810ebef8a01785de5823eff5",
+    "research/2026-10-24/PI_TERNARY_ADVERSARY.md": "d70cf36e0590f20b7392b8f132160fb41dcf2e4fb44b79e2b9182d61ed1ef726",
+    "research/2026-10-24/PI_TERNARY_HOLE_CONTRACT.md": "b4f0ba8afb1b6d7e5de382436165b3245cee2c66204cbdc2a7ab2ff23453c8cb",
+    "research/2026-10-24/PI_TERNARY_SYNTHESIS.md": "57eb926e23d9853e6ba9659e9fd2d02b2f4f7335d210bc914cbfca3d1d06fd87",
+    "research/2026-10-24/PI_TERNARY_CHART_COHERENCE.md": "2e2fcd9e7b002278374ede004ec30506f896e6606ab35f16a0ee50f04cac7ba7",
+    "research/2026-10-24/PI_TERNARY_CONSTRUCTOR.md": "ddaf40647cd048630492108ca448bae5375fed5339c8d295a4598f90301460ef",
+    "docs/CLAIM_SUPPLEMENT_TERNARY_PASCAL.md": "6974987b1d9a97ffb9885877a987481bebb6b4f62c88b1a27874f06c298fd617"
+  }
+}

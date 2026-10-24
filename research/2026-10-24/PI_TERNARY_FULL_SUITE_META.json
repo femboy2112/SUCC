@@ -1,0 +1,14 @@
+{
+  "command": "python -m unittest discover -s tests -p test_*.py",
+  "exit_code": 0,
+  "process_seconds": 711.6934097620033,
+  "input_hashes_before": {
+    "observational_succ/pi_ternary_pascal.py": "32823cfabfca58498424d2ac13f83e3e3a8049640bf0530f6cddccec2e669b96",
+    "tests/test_pi_ternary_pascal.py": "845d73f602e8b28fb096898fae2230015bb004397d5fd44e723e3198409ebc7c"
+  },
+  "input_hashes_after": {
+    "observational_succ/pi_ternary_pascal.py": "32823cfabfca58498424d2ac13f83e3e3a8049640bf0530f6cddccec2e669b96",
+    "tests/test_pi_ternary_pascal.py": "845d73f602e8b28fb096898fae2230015bb004397d5fd44e723e3198409ebc7c"
+  },
+  "inputs_unchanged": true
+}

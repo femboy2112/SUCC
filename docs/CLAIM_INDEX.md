@@ -1,5 +1,17 @@
 # Claim Index
 
+**2026-10-24 weighted ternary Pascal continuation (research draft):**
+[TPG-01--28](CLAIM_SUPPLEMENT_TERNARY_PASCAL.md) and
+[research synthesis](../research/2026-10-24/PI_TERNARY_SYNTHESIS.md).
+Positive Pascal filters give a source chart for every prime with a proved
+literal dyadic differential, normalized analytic isometries, and coherent
+binary clock transport. A diagonal Pascal filter reaches81 with denominator3
+and the full authentic dyadic source profile; a fixed shift restores quadratic
+real error. Sharp denominator costs, biased positive-dimensional controls and
+finite carry boundaries retain the remaining real-law obligation. The
+four-phase averaged symmetry is a weaker conditional target. Real all-scale
+collision saving, source-law symmetry and pi normality remain OPEN.
+
 **2026-10-24 Pascal / source geometry continuation:**
 [PJT-01--30](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md) and
 [research synthesis](../research/2026-10-24/PI_PASCAL_SYNTHESIS.md).
