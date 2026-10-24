@@ -1,0 +1,82 @@
+{
+  "finite_grid_theorem": "|q-grid average(16Z-Q0)-15D| <= 64 D(D-1)/q provided q odd prime and ord_q(16)>max lag",
+  "haar_unconditional_theorem": "E_x(16Z-Q0)=15 D",
+  "pi_normality": "OPEN",
+  "rows": [
+    {
+      "D": 3,
+      "average_Q0": "245/41",
+      "average_Z": "129/41",
+      "average_signed_excess": "1819/41",
+      "finite_grid_absolute_error": "26/41",
+      "haar_signed_excess": 45,
+      "indices": [
+        6,
+        7,
+        8
+      ],
+      "proved_grid_error_upper": "384/41",
+      "q": 41,
+      "source": "authentic signed BBP forcing, initial selectors j/q enumerated",
+      "tau": "1/4"
+    },
+    {
+      "D": 3,
+      "average_Q0": "155/41",
+      "average_Z": "129/41",
+      "average_signed_excess": "1909/41",
+      "finite_grid_absolute_error": "64/41",
+      "haar_signed_excess": 45,
+      "indices": [
+        6,
+        7,
+        8
+      ],
+      "proved_grid_error_upper": "384/41",
+      "q": 41,
+      "source": "authentic signed BBP forcing, initial selectors j/q enumerated",
+      "tau": "1/16"
+    },
+    {
+      "D": 3,
+      "average_Q0": "585/97",
+      "average_Z": "309/97",
+      "average_signed_excess": "4359/97",
+      "finite_grid_absolute_error": "6/97",
+      "haar_signed_excess": 45,
+      "indices": [
+        6,
+        7,
+        8
+      ],
+      "proved_grid_error_upper": "384/97",
+      "q": 97,
+      "source": "authentic signed BBP forcing, initial selectors j/q enumerated",
+      "tau": "1/4"
+    },
+    {
+      "D": 3,
+      "average_Q0": "367/97",
+      "average_Z": "297/97",
+      "average_signed_excess": "4385/97",
+      "finite_grid_absolute_error": "20/97",
+      "haar_signed_excess": 45,
+      "indices": [
+        6,
+        7,
+        8
+      ],
+      "proved_grid_error_upper": "384/97",
+      "q": 97,
+      "source": "authentic signed BBP forcing, initial selectors j/q enumerated",
+      "tau": "1/16"
+    }
+  ],
+  "scope": "initial selector q-grid and first 3 times of p41 first BBP window",
+  "selected_source_signed_bound": "UNVERIFIED",
+  "source_module_git_sha": "ba25e79fbde4da33108bdbea937efab3a859c4be",
+  "source_zero_orbit_stays_parent": "YES",
+  "status": "VERIFIED EXACT FINITE",
+  "tests_git_sha": "d987d24e7df8b7c1731cfe84652383c3bcc935ee",
+  "uses_modified_selector_ensemble": "YES — not selected y0=0"
+}
