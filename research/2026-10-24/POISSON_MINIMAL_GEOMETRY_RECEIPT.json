@@ -1,0 +1,231 @@
+{
+  "Lean_claimed": false,
+  "RH_claimed": false,
+  "genuine_pi_finite_samples": [
+    {
+      "Haar_origin_mean": "2",
+      "N": 2,
+      "Wallis_Kummer_stage": 128,
+      "b": 2,
+      "certified_strictly_above_Haar_mean": false,
+      "energy_enclosure": {
+        "lower": "1972379978589/1000000000000",
+        "upper": "2267494496498/1000000000000"
+      },
+      "first_Weyl_mean_squared_upper": {
+        "lower": "0/1000000000000",
+        "upper": "1000000000000/1000000000000"
+      },
+      "source_transport_error_upper": {
+        "lower": "0/1000000000000",
+        "upper": "146689429836/1000000000000"
+      }
+    },
+    {
+      "Haar_origin_mean": "5/3",
+      "N": 3,
+      "Wallis_Kummer_stage": 128,
+      "b": 2,
+      "certified_strictly_above_Haar_mean": false,
+      "energy_enclosure": {
+        "lower": "1080231135971/1000000000000",
+        "upper": "1863816977097/1000000000000"
+      },
+      "first_Weyl_mean_squared_upper": {
+        "lower": "0/1000000000000",
+        "upper": "863816977097/1000000000000"
+      },
+      "source_transport_error_upper": {
+        "lower": "0/1000000000000",
+        "upper": "391171812896/1000000000000"
+      }
+    },
+    {
+      "Haar_origin_mean": "3/2",
+      "N": 4,
+      "Wallis_Kummer_stage": 4096,
+      "b": 2,
+      "certified_strictly_above_Haar_mean": true,
+      "energy_enclosure": {
+        "lower": "1539096306613/1000000000000",
+        "upper": "1592054474237/1000000000000"
+      },
+      "first_Weyl_mean_squared_upper": {
+        "lower": "0/1000000000000",
+        "upper": "592054474237/1000000000000"
+      },
+      "source_transport_error_upper": {
+        "lower": "0/1000000000000",
+        "upper": "26457938913/1000000000000"
+      }
+    },
+    {
+      "Haar_origin_mean": "7/5",
+      "N": 5,
+      "Wallis_Kummer_stage": 1024,
+      "b": 2,
+      "certified_strictly_above_Haar_mean": false,
+      "energy_enclosure": {
+        "lower": "1399677530977/1000000000000",
+        "upper": "1823817454812/1000000000000"
+      },
+      "first_Weyl_mean_squared_upper": {
+        "lower": "0/1000000000000",
+        "upper": "823817454812/1000000000000"
+      },
+      "source_transport_error_upper": {
+        "lower": "0/1000000000000",
+        "upper": "211954017263/1000000000000"
+      }
+    },
+    {
+      "Haar_origin_mean": "4/3",
+      "N": 6,
+      "Wallis_Kummer_stage": 4096,
+      "b": 2,
+      "certified_strictly_above_Haar_mean": true,
+      "energy_enclosure": {
+        "lower": "1355270766599/1000000000000",
+        "upper": "1560853655513/1000000000000"
+      },
+      "first_Weyl_mean_squared_upper": {
+        "lower": "0/1000000000000",
+        "upper": "560853655513/1000000000000"
+      },
+      "source_transport_error_upper": {
+        "lower": "0/1000000000000",
+        "upper": "102764168528/1000000000000"
+      }
+    }
+  ],
+  "greedy_exact_samples": [
+    {
+      "N": 1,
+      "energy": {
+        "lower": "3000000000000/1000000000000",
+        "upper": "3000000000000/1000000000000"
+      },
+      "proven_Haar_origin_mean_and_greedy_ceiling": "3"
+    },
+    {
+      "N": 2,
+      "energy": {
+        "lower": "1666666666666/1000000000000",
+        "upper": "1666666666667/1000000000000"
+      },
+      "proven_Haar_origin_mean_and_greedy_ceiling": "2"
+    },
+    {
+      "N": 3,
+      "energy": {
+        "lower": "1340740740740/1000000000000",
+        "upper": "1340740740741/1000000000000"
+      },
+      "proven_Haar_origin_mean_and_greedy_ceiling": "5/3"
+    },
+    {
+      "N": 4,
+      "energy": {
+        "lower": "1133333333333/1000000000000",
+        "upper": "1133333333334/1000000000000"
+      },
+      "proven_Haar_origin_mean_and_greedy_ceiling": "3/2"
+    },
+    {
+      "N": 6,
+      "energy": {
+        "lower": "1144287627214/1000000000000",
+        "upper": "1144287627215/1000000000000"
+      },
+      "proven_Haar_origin_mean_and_greedy_ceiling": "4/3"
+    },
+    {
+      "N": 8,
+      "energy": {
+        "lower": "1116152409445/1000000000000",
+        "upper": "1116152409446/1000000000000"
+      },
+      "proven_Haar_origin_mean_and_greedy_ceiling": "5/4"
+    },
+    {
+      "N": 12,
+      "energy": {
+        "lower": "1061740929066/1000000000000",
+        "upper": "1061740929067/1000000000000"
+      },
+      "proven_Haar_origin_mean_and_greedy_ceiling": "7/6"
+    },
+    {
+      "N": 16,
+      "energy": {
+        "lower": "1057177450646/1000000000000",
+        "upper": "1057177450647/1000000000000"
+      },
+      "proven_Haar_origin_mean_and_greedy_ceiling": "9/8"
+    },
+    {
+      "N": 20,
+      "energy": {
+        "lower": "1050824284845/1000000000000",
+        "upper": "1050824284846/1000000000000"
+      },
+      "proven_Haar_origin_mean_and_greedy_ceiling": "11/10"
+    }
+  ],
+  "independent_oracle_sha256": "e719952a4dc43ac61909dd9b4df5189a94fbbfa56e94991e96f51468b3b388e2",
+  "inherited_actual_pi_source_sha256": "2d6755f0f8d9ee006861bb0b703bdb05b228253b91e8e3649a36c8d26d0bd50c",
+  "method_distinct_exact_oracle": {
+    "independent_cyclotomic_integral_character_identities": 244,
+    "independent_exact_fourier_enclosures": 72,
+    "status": "finite_exact_probes_only_not_pi_normality"
+  },
+  "nonnormal_periodic_chord_shadow_families": [
+    {
+      "base": 2,
+      "limiting_energy_gap_exact": "5/7",
+      "limiting_gap_lt_one_in_1e8": false,
+      "period": 2,
+      "r": 1,
+      "source": "1/3^1"
+    },
+    {
+      "base": 2,
+      "limiting_energy_gap_exact": "38/511",
+      "limiting_gap_lt_one_in_1e8": false,
+      "period": 6,
+      "r": 2,
+      "source": "1/3^2"
+    },
+    {
+      "base": 2,
+      "limiting_energy_gap_exact": "131330/134217727",
+      "limiting_gap_lt_one_in_1e8": false,
+      "period": 18,
+      "r": 3,
+      "source": "1/3^3"
+    },
+    {
+      "base": 2,
+      "limiting_energy_gap_exact": "9007199321849858/2417851639229258349412351",
+      "limiting_gap_lt_one_in_1e8": true,
+      "period": 54,
+      "r": 4,
+      "source": "1/3^4"
+    },
+    {
+      "base": 2,
+      "limiting_energy_gap_exact": "2923003274661805836407370874358385653941039792130/14134776518227074636666380005943348126619871175004951664972849610340958207",
+      "limiting_gap_lt_one_in_1e8": true,
+      "period": 162,
+      "r": 5,
+      "source": "1/3^5"
+    }
+  ],
+  "normality_claimed": false,
+  "parent_commit": "f986507851e34636f60bee657dcdf0771a934380",
+  "parent_pi_prime_source_blob": "ab48ffe102657100a1c9363030aa4867981d13d0",
+  "source_sha256": "8cbb15f206eb454d5832d1fbbb5354a4e2dbb86f78efaa863eafdbd05515c56d",
+  "status": "EXACT_FINITE_PLUS_PAPER_CONDITIONAL_PI_NORMALITY_UNPROVED",
+  "tests_sha256": "829f6966ed6f6d431e84210731aa1221a8c42ca1092b5b174942820e3d96dee7",
+  "uniform_polygon_energy_example_q29": "536870913/536870911"
+}

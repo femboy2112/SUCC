@@ -1,0 +1,42 @@
+name: Poisson minimum geometry source, Fourier and rational carry
+
+on:
+  pull_request:
+    paths:
+      - 'observational_succ/poisson_circle_minimal.py'
+      - 'tests/test_poisson_circle_minimal.py'
+      - 'scripts/poisson_minimal_*.py'
+      - 'research/2026-10-24/POISSON_MINIMAL_GEOMETRY*'
+      - 'docs/CLAIM_SUPPLEMENT_POISSON_MINIMUM.md'
+      - '.github/workflows/poisson-minimal-geometry.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  exact-poisson-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Exact source and hostile tests (focused only)
+        run: python -m unittest discover -s tests -p 'test_poisson_circle_minimal.py' -v
+      - name: Independent integral cyclotomic and Q[i] Fourier oracle
+        run: python scripts/poisson_minimal_independent_oracle.py
+      - name: Compile sources (stdlib-only)
+        run: |
+          python -m compileall -q observational_succ/poisson_circle_minimal.py tests/test_poisson_circle_minimal.py
+          python -m compileall -q scripts/poisson_minimal_independent_oracle.py scripts/poisson_minimal_probe.py
+      - name: Byte-for-byte deterministic rational/Wallis receipt replay
+        run: |
+          python scripts/poisson_minimal_probe.py --output /tmp/poisson-minimal.json
+          cmp /tmp/poisson-minimal.json research/2026-10-24/POISSON_MINIMAL_GEOMETRY_RECEIPT.json
+      - name: Authenticated imported source provenance
+        run: python scripts/verify_provenance.py
