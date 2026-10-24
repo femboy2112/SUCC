@@ -9,7 +9,7 @@ import hashlib
 import json
 from fractions import Fraction as Q
 from math import isqrt
-from observational_succ.bbp_minimal_path import single_missing_prime_counterfeit
+from observational_succ.bbp_minimal_path_gauge import single_missing_prime_counterfeit
 from observational_succ.bbp_source_memory import forcing
 from observational_succ.bbp_cyclotomic_spectral import single_prime_spectral_ledger
 

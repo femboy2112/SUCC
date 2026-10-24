@@ -637,6 +637,39 @@
         "observational_succ/poisson_circle_minimal.py",
         "scripts/poisson_minimal_probe.py"
       ]
+    },
+    {
+      "namespace": "BBP_MINIMAL_PATH_GAUGE",
+      "bare_prefix": "MP",
+      "fq_prefix": "MP.GAUGE",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH_GAUGE.md"
+      ],
+      "id_count": 6,
+      "status": "RESEARCH DRAFT (DISCLOSED PAPER/CONDITIONAL); no Lean authority",
+      "topic": "exact BBP source-gauge conjugacy, single-missing-prime counterfeits, periodic proxies, signed spectral-bulk Fourier criterion",
+      "code": [
+        "observational_succ/bbp_minimal_path_gauge.py",
+        "observational_succ/bbp_minimal_path.py",
+        "scripts/bbp_minimal_path_gauge_probe.py"
+      ]
+    },
+    {
+      "namespace": "BBP_MINIMAL_PATH_BIRTHS",
+      "bare_prefix": "MP",
+      "fq_prefix": "MP.BIRTHS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH_BIRTHS.md"
+      ],
+      "id_count": 9,
+      "status": "RESEARCH DRAFT (DISCLOSED PAPER/EXACT FINITE INTERVAL/REFUTED/CONDITIONAL/UNVERIFIED); no Lean authority",
+      "topic": "exact odd-prime first births, p^k valuation power law, minimal rational recurrence, all-prime Hankel counterfeit, Galois trace/second-moment selection bounds",
+      "code": [
+        "observational_succ/bbp_minimal_path_births.py",
+        "observational_succ/bbp_galois_tomography.py",
+        "observational_succ/bbp_minimal_path.py",
+        "scripts/bbp_minimal_path_births_probe.py"
+      ]
     }
   ],
   "resolved_collisions": [
@@ -684,6 +717,15 @@
       ],
       "resolution": "disambiguate by supplement file / fq_prefix (WA.ADEL vs WA.AMBI); neither historical bare ID renamed",
       "integrity_note": "Genuine distinct-meaning collision: WA in WILD_ADELIC_SUCC means 'Wild Adelic' (arithmetic solenoid coverings); WA in WILD_AMBIENT_SUCC means 'Wild Ambient' (nonabelian source observers / Alexander sphere). Same bare WA-01 denotes two unrelated claims; do not merge."
+    },
+    {
+      "bare_prefix": "MP",
+      "namespaces": [
+        "BBP_MINIMAL_PATH_GAUGE",
+        "BBP_MINIMAL_PATH_BIRTHS"
+      ],
+      "resolution": "disambiguate by supplement file / fq_prefix (MP.GAUGE vs MP.BIRTHS); neither historical bare ID renamed. #261's intra-file duplicate MP-05 and its later IDs were renumbered +1 so each bare ID is unique within CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH_BIRTHS.md; docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH.md holds the full crosswalk.",
+      "integrity_note": "Genuine distinct-meaning collision: MP in BBP_MINIMAL_PATH_GAUGE (#260, parent #256 0683f8f1) is source-gauge/missing-prime/spectral-bulk; MP in BBP_MINIMAL_PATH_BIRTHS (#261, on #258 9aa55b3a) is odd-prime births/minimal recurrence/Galois selection. Same bare MP-0x denotes unrelated claims with different provenance and evidence; never merge their identities or assert shared evidence. Both are research-only draft families with no new Lean authority; pi normality and RH remain open."
     }
   ]
 }

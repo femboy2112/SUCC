@@ -1,14 +1,17 @@
-name: BBP minimal-path source and spectral hostile checks
+name: BBP minimal-path (gauge family) source and spectral hostile checks
 on:
   pull_request:
     paths:
+      - 'observational_succ/bbp_minimal_path_gauge.py'
       - 'observational_succ/bbp_minimal_path.py'
       - 'observational_succ/bbp_cyclotomic_spectral.py'
+      - 'tests/test_bbp_minimal_path_gauge.py'
       - 'tests/test_bbp_minimal_path.py'
-      - 'scripts/bbp_minimal_path_probe.py'
-      - 'research/2026-10-24/BBP_MINIMAL_PATH_*'
-      - 'docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH.md'
-      - '.github/workflows/bbp-minimal-path.yml'
+      - 'scripts/bbp_minimal_path_gauge_probe.py'
+      - 'research/2026-10-24/BBP_MINIMAL_PATH_GAUGE_AND_MISSING_PRIME.md'
+      - 'research/2026-10-24/BBP_MINIMAL_PATH_FINITE_RECEIPT.json'
+      - 'docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH_GAUGE.md'
+      - '.github/workflows/bbp-minimal-path-gauge.yml'
   workflow_dispatch:
 jobs:
   exact-source:
@@ -25,10 +28,12 @@ jobs:
       - name: Install package editable
         run: python -m pip install -e .
       - name: Focused exact-source and finite spectral tests
-        run: python -m unittest discover -s tests -p 'test_bbp_minimal_path.py' -v
+        run: |
+          python -m unittest discover -s tests -p 'test_bbp_minimal_path_gauge.py' -v
+          python -m unittest discover -s tests -p 'test_bbp_minimal_path.py' -v
       - name: Deterministic finite oracle and exact receipt
         run: |
-          python scripts/bbp_minimal_path_probe.py --output /tmp/bbp-minimal-path.json
+          python scripts/bbp_minimal_path_gauge_probe.py --output /tmp/bbp-minimal-path.json
           cmp /tmp/bbp-minimal-path.json research/2026-10-24/BBP_MINIMAL_PATH_FINITE_RECEIPT.json
       - name: Source provenance
         run: python scripts/verify_provenance.py
