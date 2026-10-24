@@ -114,8 +114,8 @@ class DeepSeekFalseImplications(unittest.TestCase):
                 value=high_order_rational_forcing(n,order)
                 self.assertGreater(value,0)
                 self.assertEqual(value,high_order_partial_fractions(n,order))
-            self.assertLess(high_order_rational_forcing(100,order),
-                            Q(1,100**order))
+            self.assertLessEqual(high_order_rational_forcing(100,order)*100**(order+1),
+                                 __import__('math').factorial(order))
         # Source-class restriction matters: exponential 16^-n is a
         # coboundary with a non-rational q(n)=16^-n/255.
         for n in range(2,12):
