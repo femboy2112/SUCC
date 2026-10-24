@@ -90,7 +90,7 @@ Base `S_1=3`. Induction yields
 
 **Interpretation:** a computationally simple *free-choice* circle dynamics produces Haar statistics without randomness. Its energy bound exactly matches the Haar-origin **expected** energy from PGM-03. The point-choice freedom is fundamental: a base-b digit successor has only ONE lawful next state and is NOT allowed to switch to the current greedy minimizer.
 
-## PGM-05. Exact action-regret identity and a noncircularly testable sufficient criterion (PAPER)
+## PGM-05. Exact action-regret identity and equivalent asymptotic criteria (PAPER; converse added)
 
 For an arbitrary actual path `z_0,...,z_(N-1)` define the source-action **signed** excess
 
@@ -106,7 +106,9 @@ Let `r_n=max(0,a_n)`, and the stronger true geometric regret `ρ_n=Φ_n(z_n)−m
 
 `1 <= E_N <= 1+2/N +(2/N²)Σ_(n<N)r_n <=1+2/N+(2/N²)Σ_(n<N)ρ_n`.
 
-**Sufficient source criterion:** if the actual π-selected T_b orbit satisfies `Σ_(n<N) r_n = o(N²)` (or the stronger minimum-relative regret criterion), then π is base-b normal. A power bound `Σ r_n = O(N^(2−δ))`, `0<δ<=1`, implies `E_N−1=O(N^(−δ)+N^(−1))` and for each fixed h, `|A_(h,N)|=O_h(N^(−δ/2))`. **Neither regret estimate is currently proved for π.** Merely declaring nature minimizes effort supplies no bound.
+**Sufficient source criterion:** if the actual π-selected T_b orbit satisfies `Σ_(n<N) r_n = o(N²)` (or the pointwise larger minimum-relative regret sum is subquadratic), then π is base-b normal. A power bound `Σ r_n = O(N^(2−δ))`, `0<δ<=1`, implies `E_N−1=O(N^(−δ)+N^(−1))` and for each fixed h, `|A_(h,N)|=O_h(N^(−δ/2))`. **Neither regret estimate is currently proved for π.** Merely declaring nature minimizes effort supplies no bound.
+
+**Converse correction, SCE-01 (2026-10-24):** both subquadratic regret conditions are also necessary for normality. The sharp uniform bound `|Φ_n(z)/n−1|² <= 2(E_n−1)` follows from weighted Fourier Cauchy–Schwarz. Thus `E_n→1` makes each positive or minimum-relative regret `o(n)`, and weighted Cesàro summation makes either cumulative sum `o(N²)`. All these asymptotic criteria are equivalent. Their different finite/rate bounds remain useful, but the positive-part formulation alone does not escape the original theorem. See [full proof and a different collision-entropy sufficient target](PI_SOURCE_COLLISION_ENTROPY.md).
 
 ## PGM-06. π's actual first action is NOT a literal greedy minimizer (REFUTATION)
 
@@ -156,13 +158,13 @@ The sum is an exact source integer. Clip the certified output to the universal `
 
 **Finite source witnesses**: stage n=4096, b=2 gives strict rational enclosures `E_4>3/2` and `E_6>4/3`. The independent Machin alternating-series enclosure of π and a separate finite floating holdout both agree with these rational intervals. These are calibrated finite observations only; they do not show the energies converge to 1 or diverge.
 
-## PGM-10. Genuine π moonshot: subquadratic signed geometric excess from authenticated source (UNVERIFIED)
+## PGM-10. Equivalent π target: subquadratic geometric excess from authenticated source (UNVERIFIED)
 
 Set `X_π=2−2cos(2π²)`, the single chord value from inserting the dimensionless circle ratio π into the arithmetic angle chart. For fixed integer b>=2, define the **actual** source-constrained nonnegative excess
 
 `R_(b,N)(π)=Σ_(n=1)^(N−1) [ Σ_(j=0)^(n−1) 3/(1+2 F_(b^n−b^j)(X_π)) − n ]_+`.
 
-A independently obtained estimate `R_(b,N)(π)=o(N²)` would prove π normal in base b by PGM-05; `O(N^(2−δ))` would give explicit fixed-h Weyl power savings. The needed proof must come from the original geometric π source, the actual BBP/Green memory, or authenticated signed prime-clock interference—not from defining “lawful” as minimal-energy or using fitted finite data as a holdout.
+An independently obtained estimate `R_(b,N)(π)=o(N²)` would prove π normal in base b by PGM-05; `O(N^(2−δ))` would give explicit fixed-h Weyl power savings. SCE-01 proves the unquantified subquadratic condition is equivalent to normality, so this remains a reformulation until a source-specific estimate is supplied. The needed proof must come from the original geometric π source, the actual BBP/Green memory, or authenticated signed prime-clock interference—not from defining “lawful” as minimal-energy or using fitted finite data as a holdout.
 
 **Two independent falsification axes:** (a) replace π by nonnormal 3-adic periodic or sparse-square irrational sources while preserving all unmarked circle laws; (b) preserve the π source but mutate the action (fake composite prime, phase sign/origin, dropped CRT twiddle, lost BBP carry) and verify that the proposed estimate truly uses the authentic history. No unearned asymptotic estimate is claimed.
 

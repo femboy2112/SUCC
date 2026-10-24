@@ -218,3 +218,15 @@ separate #177 continuation.
 ## Academic Main VIII (2026-10-21)
 
 [Integration audit](academic_main_viii/integration_audit.md) and [frontier](academic_main_viii/research_frontier.md). Existing ABC-EFF-01–05 remain paper-level theorems. [COF-01, EXT-01–04, SMP-01–02](CLAIM_SUPPLEMENT_EXTERIOR_ASCENT.md) and [POL-01–09](CLAIM_SUPPLEMENT_PI_POLYGON_NORMALITY.md) now have registered namespaces; the counterclaims retain REFUTED or UNVERIFIED status. Formal slope declarations receive only the authority supported by the actual pinned admission receipt.
+
+## π source collision research (2026-10-24, draft)
+
+[SCE-01–10](CLAIM_SUPPLEMENT_PI_SOURCE_COLLISION.md) connect the authentic BBP
+source to carry-safe cell collisions, finite entropy bounds, full-source Galois
+averages, and a conditional binary-normality theorem. Positive Poisson regret is
+proved equivalent to normality; the actual selected-source subpower collision
+estimate remains unverified. No new Lean or π-independence authority is claimed.
+The [research dossier](../research/2026-10-24/PI_SOURCE_COLLISION_ENTROPY.md)
+and separate [Claude integration](../handoffs/CLAUDE_COHERENT_MAIN_AND_CLEANUP_2026-10-24.md)
+and [Codex research](../handoffs/CODEX_PI_SOURCE_COLLISION_NEXT_2026-10-24.md)
+handoffs preserve the current branch graph and exact remaining proof obligation.

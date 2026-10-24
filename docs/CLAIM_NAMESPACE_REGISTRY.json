@@ -14,6 +14,21 @@
   },
   "namespaces": [
     {
+      "namespace": "PI_SOURCE_COLLISION_ENTROPY",
+      "bare_prefix": "SCE",
+      "fq_prefix": "SCE",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PI_SOURCE_COLLISION.md"
+      ],
+      "id_count": 10,
+      "status": "RESEARCH (PROVED PAPER/CONDITIONAL/CLASSICAL/VERIFIED FINITE/UNVERIFIED); no new Lean authority",
+      "topic": "exact BBP collision transport, relative Galois small-ball bounds, prescribed-scale entropy criterion, regret equivalence and source-selection boundary",
+      "code": [
+        "observational_succ/pi_source_collision.py",
+        "scripts/pi_source_collision_probe.py"
+      ]
+    },
+    {
       "namespace": "SOURCE_FAITHFUL_RENORMALIZATION",
       "bare_prefix": "SFR",
       "fq_prefix": "SFR",

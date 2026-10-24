@@ -1,5 +1,13 @@
 # ASTRA ULTRA — OPERATION MINIMUM GEOMETRY → π
 
+## Successor audit — 2026-10-24
+
+SCE-01 proves that the positive-regret target below is equivalent to normality,
+including the previously unstated necessary direction. Preserve the source
+discipline in this historical handoff, but use
+[the source collision entropy handoff](CODEX_PI_SOURCE_COLLISION_NEXT_2026-10-24.md)
+for the newer ranked frontier and explicit selected-source hole.
+
 ## Execution handoff: substantial mathematics, no 10-minute CI spam
 
 Repository `femboy2112/SUCC`. Research source branch based on Academic Main IX #250 at pinned head `f986507851e34636f60bee657dcdf0771a934380`; source paper `research/2026-10-24/POISSON_MINIMAL_GEOMETRY.md`. Read current repo/branch/CI/AGENTS and verify actual heads before committing. Existing Circle Genesis/Time Carry/Secondary Circle, Wallis/Kummer and BBP source branches supply the context. Do not replace original source or merge into main without explicit authorization.
