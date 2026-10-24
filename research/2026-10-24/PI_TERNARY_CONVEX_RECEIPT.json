@@ -1,0 +1,236 @@
+{
+  "status": "EXACT_FINITE_PASSED",
+  "assertions": 8927,
+  "counts": {
+    "literal_Newton": 448,
+    "Newton_valuation": 448,
+    "falling_coefficient_valuation": 448,
+    "exact_distance_similarity": 4200,
+    "derivative_truncation_valuation": 84,
+    "positive_weight_norm": 84,
+    "independent_Machin_shadow": 84,
+    "normalized_chart_permutation": 64,
+    "authentic_base16_anchor": 510,
+    "coherent_chart_transport": 2040,
+    "clock_respecting_16_4_2": 510,
+    "binary_blocking_error_bound": 4,
+    "canonical_product_mismatch": 1,
+    "canonical_product_differential_mismatch": 1,
+    "base11_small_local_cover": 1
+  },
+  "elapsed_seconds": 0.3151378719994682,
+  "base_table": [
+    {
+      "base": 2,
+      "odd_source_step": 1,
+      "a": "1/15",
+      "delta": 0,
+      "denominator": 15,
+      "quadratic_error_constant": "225/64"
+    },
+    {
+      "base": 3,
+      "odd_source_step": 1,
+      "a": "2/15",
+      "delta": 1,
+      "denominator": 15,
+      "quadratic_error_constant": "225/256"
+    },
+    {
+      "base": 4,
+      "odd_source_step": 1,
+      "a": "1/5",
+      "delta": 0,
+      "denominator": 5,
+      "quadratic_error_constant": "25/64"
+    },
+    {
+      "base": 5,
+      "odd_source_step": 1,
+      "a": "4/15",
+      "delta": 2,
+      "denominator": 15,
+      "quadratic_error_constant": "225/1024"
+    },
+    {
+      "base": 7,
+      "odd_source_step": 1,
+      "a": "2/5",
+      "delta": 1,
+      "denominator": 5,
+      "quadratic_error_constant": "25/256"
+    },
+    {
+      "base": 9,
+      "odd_source_step": 1,
+      "a": "8/15",
+      "delta": 3,
+      "denominator": 15,
+      "quadratic_error_constant": "225/4096"
+    },
+    {
+      "base": 11,
+      "odd_source_step": 1,
+      "a": "2/3",
+      "delta": 1,
+      "denominator": 3,
+      "quadratic_error_constant": "9/256"
+    },
+    {
+      "base": 13,
+      "odd_source_step": 1,
+      "a": "4/5",
+      "delta": 2,
+      "denominator": 5,
+      "quadratic_error_constant": "25/1024"
+    },
+    {
+      "base": 16,
+      "odd_source_step": 1,
+      "a": "1",
+      "delta": 0,
+      "denominator": 1,
+      "quadratic_error_constant": "1/64"
+    },
+    {
+      "base": 17,
+      "odd_source_step": 3,
+      "a": "16/4095",
+      "delta": 4,
+      "denominator": 4095,
+      "quadratic_error_constant": "1863225/16384"
+    },
+    {
+      "base": 31,
+      "odd_source_step": 3,
+      "a": "2/273",
+      "delta": 1,
+      "denominator": 273,
+      "quadratic_error_constant": "8281/256"
+    },
+    {
+      "base": 37,
+      "odd_source_step": 3,
+      "a": "4/455",
+      "delta": 2,
+      "denominator": 455,
+      "quadratic_error_constant": "207025/9216"
+    },
+    {
+      "base": 257,
+      "odd_source_step": 3,
+      "a": "256/4095",
+      "delta": 8,
+      "denominator": 4095,
+      "quadratic_error_constant": "1863225/4194304"
+    },
+    {
+      "base": 65537,
+      "odd_source_step": 5,
+      "a": "65536/1048575",
+      "delta": 16,
+      "denominator": 1048575,
+      "quadratic_error_constant": "43980381225/274877906944"
+    }
+  ],
+  "blocking_rows": [
+    {
+      "hex_time": 8,
+      "binary_difference": {
+        "sign": -1,
+        "numerator_bits": 363,
+        "denominator_bits": 369,
+        "sha256_binary_rational": "bd716c21ba1ed1567cdbcd402dba229dc3cb588be3ff8d1875c7bc0b16bbb5ef",
+        "outward_decimal": [
+          "-0.02457922741880176858250",
+          "-0.02457922741880176858249"
+        ]
+      },
+      "quaternary_difference": {
+        "sign": -1,
+        "numerator_bits": 160,
+        "denominator_bits": 167,
+        "sha256_binary_rational": "e860712ced3144b8746e7c049865b9bf20e5da168003e190456feb61fcf1dbbc",
+        "outward_decimal": [
+          "-0.007395651115727242440100",
+          "-0.007395651115727242440099"
+        ]
+      }
+    },
+    {
+      "hex_time": 16,
+      "binary_difference": {
+        "sign": -1,
+        "numerator_bits": 757,
+        "denominator_bits": 765,
+        "sha256_binary_rational": "9c55b0cd2467858f8d24ac000f17de83fb64785597eae910ccdf5f8307dc337b",
+        "outward_decimal": [
+          "-0.003687622022144433480390",
+          "-0.003687622022144433480389"
+        ]
+      },
+      "quaternary_difference": {
+        "sign": -1,
+        "numerator_bits": 317,
+        "denominator_bits": 328,
+        "sha256_binary_rational": "79b0eda81ed7f97907a68ae222a8ca2b48071b23a97d43be7ab8b996a04123b4",
+        "outward_decimal": [
+          "-0.0006390887293881999788700",
+          "-0.0006390887293881999788699"
+        ]
+      }
+    },
+    {
+      "hex_time": 32,
+      "binary_difference": {
+        "sign": -1,
+        "numerator_bits": 1593,
+        "denominator_bits": 1605,
+        "sha256_binary_rational": "2dee6e413fac36cb01fa0035e9ad6abcd095c89e9a35559ee6d655b2917563b7",
+        "outward_decimal": [
+          "-0.0003084205576974303784156",
+          "-0.0003084205576974303784155"
+        ]
+      },
+      "quaternary_difference": {
+        "sign": -1,
+        "numerator_bits": 674,
+        "denominator_bits": 687,
+        "sha256_binary_rational": "b1f23373b4762912ae934d5b0c9624592a4ffc5fc82cab00d9dc677b628f9aa1",
+        "outward_decimal": [
+          "-0.00009569701510071423396875",
+          "-0.00009569701510071423396874"
+        ]
+      }
+    },
+    {
+      "hex_time": 64,
+      "binary_difference": {
+        "sign": -1,
+        "numerator_bits": 3147,
+        "denominator_bits": 3162,
+        "sha256_binary_rational": "b15328ea0246c1f765abc9a0046e180f4d8100748afda03aa7960072c7b25031",
+        "outward_decimal": [
+          "-0.00005735803569090827887812",
+          "-0.00005735803569090827887811"
+        ]
+      },
+      "quaternary_difference": {
+        "sign": -1,
+        "numerator_bits": 1386,
+        "denominator_bits": 1401,
+        "sha256_binary_rational": "537086d8c29df2acdebcb8934141f53b83e9aae161e6979fdef85e1a4dd5ed9a",
+        "outward_decimal": [
+          "-0.00002168381518520042212493",
+          "-0.00002168381518520042212492"
+        ]
+      }
+    }
+  ],
+  "scope": "Late independent exact calibration; infinite claims use paper proofs. All maps are dyadic source charts, not continuous field maps from Qp or proofs of real law preservation.",
+  "source_hashes": {
+    "scripts/pi_ternary_convex_probe.py": "008f7b44e09392545578462a465166f81c8fcb72126e37caab6ee0bdc26c859f",
+    "research/2026-10-24/PI_TERNARY_CONSTRUCTOR.md": "ddaf40647cd048630492108ca448bae5375fed5339c8d295a4598f90301460ef",
+    "research/2026-10-24/PI_TERNARY_CHART_COHERENCE.md": "2e2fcd9e7b002278374ede004ec30506f896e6606ab35f16a0ee50f04cac7ba7"
+  }
+}
