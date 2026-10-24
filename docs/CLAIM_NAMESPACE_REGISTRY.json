@@ -14,6 +14,27 @@
   },
   "namespaces": [
     {
+      "namespace": "SOURCE_PATH_SELECTION",
+      "bare_prefix": "SPS",
+      "fq_prefix": "SPS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SOURCE_PATH_SELECTION.md"
+      ],
+      "id_count": 25,
+      "status": "RESEARCH (PROVED PAPER/CLASSICAL/EXACT FINITE/REFUTED/CONDITIONAL/OPEN); no new Lean authority; pi normality OPEN",
+      "topic": "exact source interference, source-selection limits, signed extension obstruction, positive-history stationarity, quantitative same-law preservation and real-source normality gates",
+      "code": [
+        "observational_succ/source_path_projector.py",
+        "observational_succ/source_selection_limits.py",
+        "observational_succ/source_history_stationarity.py",
+        "observational_succ/source_history_transport.py",
+        "scripts/source_path_projector_probe.py",
+        "scripts/source_selection_limit_probe.py",
+        "scripts/source_history_transport_probe.py",
+        "scripts/source_history_structure_probe.py"
+      ]
+    },
+    {
       "namespace": "PI_PASCAL_SOURCE_GEOMETRY",
       "bare_prefix": "PJT",
       "fq_prefix": "PJT",

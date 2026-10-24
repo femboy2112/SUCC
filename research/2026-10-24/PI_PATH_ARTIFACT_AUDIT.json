@@ -1,0 +1,32 @@
+{
+  "status": "ARTIFACT_CHECKS_PASSED",
+  "parent_at_full_suite_start": "8f2e6f852efafb4a0c871418c97ed819b1217d7d",
+  "final_parent": "6e8fa8b77886b13f1f533ed8083fd88c849d14b3",
+  "upstream_production_and_tests_unchanged": true,
+  "full_suite_tests": 7826,
+  "full_suite_test_seconds": "718.016",
+  "production_freeze_inputs": 8,
+  "compiled_python_files": 12,
+  "receipt_hash_checks": 19,
+  "documents_checked": 9,
+  "local_links_checked": 54,
+  "claim_rows": 25,
+  "document_sha256": {
+    "research/2026-10-24/PI_PATH_SELECTION_HOLE_CONTRACT.md": "8e50132fd844b9f14c625287730afe38c43b5e5d50a68af63b53566b5eedfb59",
+    "research/2026-10-24/PI_PATH_SELECTION_SYNTHESIS.md": "a1fc7682dbcb73f7a78fd38630ca7efd091815a06f7059edbde48f331cf6a8ec",
+    "research/2026-10-24/PI_PATH_PROJECTOR.md": "e6ddeec117e71fc1f0483d8659cc16d557197abb6f22671a3e604702f9851b92",
+    "research/2026-10-24/PI_PATH_SELECTION_LIMITS.md": "90f3e8414efdeea67ab3e91f41f34228cbdb7d67650ef9a47273caacb84fe1a7",
+    "research/2026-10-24/PI_HISTORY_PRESERVATION.md": "5eec75435a5bcf2459a2c4fdce2d534f0b4dcbdc96c9c6cb4b0d41dfe5ab0d8d",
+    "research/2026-10-24/PI_HISTORY_OPERATOR_BOUNDARY.md": "0e8153b14f98c8877ad7b1922da849c64d13c1018a00fee91a89b5a8f3a1dbe6",
+    "research/2026-10-24/PI_FINITE_PRIME_CORRELATION.md": "8a2e10152a779a38ce2a4866e0793acd215bb516d7c0e16cad0325eea1bc2a2b",
+    "research/2026-10-24/PI_PATH_SELECTION_VALIDATION.md": "1bcb9819fab1bd0f42301cce02669fb8d3a4c273305a4fe9c4e69cbd2104085d",
+    "docs/CLAIM_SUPPLEMENT_SOURCE_PATH_SELECTION.md": "9a4952932f0e90c1b230ba3a41f495b083b3359c67750919e66b8305a597e89f"
+  },
+  "receipt_sha256": {
+    "PI_PATH_PROJECTOR_RECEIPT.json": "96ed698d0fbb6dc2e691c485a5cf4f80dd1561ce27bfab60b5d0e30e06e97c2f",
+    "PI_PATH_SELECTION_LIMIT_RECEIPT.json": "88745e33e5dbaaef4d4d6098967986b1d66b05104b68e8f1eaac37140a0c26c6",
+    "PI_HISTORY_TRANSPORT_RECEIPT.json": "e647aaae849d2114d121fe8a01497b1047ea38668d96f040a0048475e3f25f4b",
+    "PI_HISTORY_STRUCTURE_RECEIPT.json": "5e98d4e87f21bcf67472f3ff4afae0e7f6e50954324693886ce73218f80ca5e2"
+  },
+  "limits": "File consistency and exact finite calibration do not establish the OPEN arithmetic premises, formal-kernel authority, or external refereeing."
+}

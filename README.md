@@ -218,6 +218,13 @@ low/high resolvent coupling, the `λ↓0` behaviour, and the source→Weil typed
 
 ### The π / source / observer machinery (2026-10-24)
 
+The [source path and infinite observer continuation](research/2026-10-24/PI_PATH_SELECTION_SYNTHESIS.md)
+now makes the interference proposal exact: finite source projectors, a uniform
+BBP selection-depth mixture theorem, and a quantitative history-preservation
+bridge with exact circle transport. The surviving arithmetic obligations are
+real all-scale collision saving and preservation of the same selected source
+law. Source uniqueness and ensemble mixing alone do not settle them.
+
 This stack studies how a finite observer reconstructs knowledge from a *selected source*; the π
 work is a downstream testbed, not the definition of the theory. In plain terms:
 
