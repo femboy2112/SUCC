@@ -14,6 +14,23 @@
   },
   "namespaces": [
     {
+      "namespace": "PI_PASCAL_SOURCE_GEOMETRY",
+      "bare_prefix": "PJT",
+      "fq_prefix": "PJT",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PASCAL_SOURCE.md"
+      ],
+      "id_count": 28,
+      "status": "RESEARCH (PROVED PAPER/CLASSICAL/EXACT FINITE/REFUTED/OPEN); no new Lean authority",
+      "topic": "authentic Pascal valuations, sharp Mahler degree, positive BBP kernels, coherent base filters, carry costs, full-profile countermodels, minimal recurrences and prime-height bounds",
+      "code": [
+        "observational_succ/pi_pascal_source.py",
+        "observational_succ/pi_pascal_kernel.py",
+        "observational_succ/pi_pascal_controls.py",
+        "scripts/pi_pascal_probe.py"
+      ]
+    },
+    {
       "namespace": "PI_DYADIC_BASE_TRANSPORT",
       "bare_prefix": "DBT",
       "fq_prefix": "DBT",
