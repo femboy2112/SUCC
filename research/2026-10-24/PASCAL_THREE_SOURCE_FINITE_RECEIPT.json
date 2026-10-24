@@ -1,0 +1,63 @@
+{
+  "status": "VERIFIED EXACT FINITE; PI NORMALITY OPEN; SOURCE-SELECTED TRIPLING UNVERIFIED",
+  "provenance": {
+    "research_base_PR275": "7c5d5b8856a1d132fb941ae40c946c0565918b36",
+    "source_module_git_blob": "d37d81d79bc6e4aa84264fc8e62c7885aa0cd21c",
+    "test_module_git_blob": "ea01cb6ba3a7d6d0b0386a13b18e6c4827ff1a4c",
+    "full_local_lab_sha256": "c19b0eda0c32a56c704e63229b48482a57df691f618ee74acede1f0427cf0072",
+    "full_local_oracle_sha256": "457c84ddcfc865a71e40393fbb1e4c16d289474354fcf514ac1cb20aeb100b55",
+    "full_local_deterministic_receipt_sha256": "ba8b8d4b5291454df7383d79d24da94ac56d9d05e3b7671a6ab0d492c1cffe76",
+    "full_receipt_location": "downloadable standalone research bundle, not part of GitHub research commit"
+  },
+  "local_test_methods": {
+    "full_lab": 23,
+    "compact_bridge": 9,
+    "combined_SUCC_full_repo": "NOT_RUN",
+    "CI": "NOT_YET_CHECKED"
+  },
+  "selected_pi_tripling_W1_strict_lower_bounds": [
+    {
+      "p": 41,
+      "D": 14,
+      "lower_bound": "0.032893107846"
+    },
+    {
+      "p": 97,
+      "D": 35,
+      "lower_bound": "0.063450449496"
+    },
+    {
+      "p": 257,
+      "D": 95,
+      "lower_bound": "0.006379229829"
+    }
+  ],
+  "pascal_ternary_row4": [
+    1,
+    8,
+    24,
+    32,
+    16
+  ],
+  "positive_filter_q3_n1": {
+    "correct_rational": "94/225",
+    "fractional_only_mutant": "4/225",
+    "error": "2/5"
+  },
+  "base3_shadow_n64": {
+    "upper_bound": "0.000306",
+    "certified_from_original_BBP": true
+  },
+  "source_factorization": {
+    "identity": "P_qP_r-P_(qr)=((q-1)*(r-1)/225)*(E-1)*(E-16)",
+    "source_defect": "((q-1)*(r-1)/225)*(r(t+2)-r(t+1))",
+    "t3_limit": "-((q-1)*(r-1))/480",
+    "case_q3r5": "-1/60"
+  },
+  "mixed_3_16_path_selector": {
+    "L2_Haar": "1/(N*L)",
+    "fejer_selected_error": "<1/(30*N*L)",
+    "selected_pi_asymptotic": "OPEN"
+  },
+  "extrapolation": "No finite rate or source law invariance established"
+}
