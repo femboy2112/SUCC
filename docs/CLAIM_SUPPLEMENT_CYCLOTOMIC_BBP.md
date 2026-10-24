@@ -11,6 +11,8 @@
 | CBCW-05 Prime-window Weyl equivalence | DISCLOSED (paper, PNT-AP external) | Any bounded complex sequence; pi application requires actual #254 tail transport |
 | CBCW-06 Signed source-block interaction identity and conditional normality equivalence | DISCLOSED identity; interaction decay UNVERIFIED | Complete actual BBP source, all fixed Fourier h, good p==1 mod8 |
 | CBCW-07 Coprime-clock selected-embedding countermodel | DISCLOSED (paper), exact Fraction and numerical sanity probes | Counterfeits local-to-global claim; NOT identical complete BBP source |
+| CBCW-08 Source-faithful finite p-clock self-simulation | DISCLOSED (paper), exact Fraction tests | Unwrapped recurrence U, 1<=k<=m, source carry preserved; fractional alias REFUTED |
+| CBCW-09 First p^2 source event and Witt-style return | DISCLOSED (paper), exact Fraction tests | Requires p=8m+1; no global p-adic or pi-normality conclusion |
 | Genuine full-source I_p(h)->0 for fixed h | UNVERIFIED | No usable bound; largest live obstacle |
 | Pi normality (base 2,16,10,all) | OPEN | No claimed proof |
 | New peer-reviewed scholarly priority | UNVERIFIED | SUCC synthesis may repackage known results |

@@ -187,6 +187,60 @@ def counterfeit_upper(horizon: int, coprime_denominator: int) -> Q:
     return Q(22*(16**horizon-1),7*15*coprime_denominator)
 
 
+
+
+def residue_mod_prime(q: Q, p: int) -> int:
+    """Reduction of a p-INTEGRAL rational (NOT a Q/Z class) modulo p."""
+    _prime(p);q=Q(q)
+    if q.denominator%p==0:
+        raise ValueError("p-denominator: require higher carry precision")
+    return (q.numerator*pow(q.denominator,-1,p))%p
+
+
+def p_primary_first_digit(q: Q, p: int) -> int:
+    """First torsion digit, allowing cancellation to zero, but rejecting p^2."""
+    _prime(p);q=Q(q)
+    if not q:return 0
+    val=p_adic_valuation(q,p)
+    if val>=0:return 0
+    if val==-1:return p_primary_phase(q,p)
+    raise ValueError("higher p-power phase: first digit alone loses carry")
+
+
+def source_burst_indices(p: int, k: int) -> tuple[int,int,int,int]:
+    """Four p-pole events recovering the authentic inner forcing at index k."""
+    _prime(p)
+    if p%8 != 1:raise ValueError("eighth-power source branch required")
+    if type(k) is not int or k<1:raise ValueError("k>=1 required")
+    m=(p-1)//8
+    return tuple((8*k-a)*m+k for a in (7,4,3,2))
+
+
+def unwrapped_bbp(k: int) -> Q:
+    """Arithmetic SUCC without dropping integer carries (distinct from y_k)."""
+    if type(k) is not int or k<0:raise ValueError("k>=0 required")
+    v=Q()
+    for n in range(1,k+1):
+        v=16*v+forcing(n)
+    return v
+
+
+def p_square_birth(p: int) -> int:
+    """First source denominator with p-adic order >=2, p==1 mod 8."""
+    _prime(p)
+    if p%8 != 1:raise ValueError("eighth-power source branch required")
+    return (p*p+7)//8
+
+
+def first_witt_holonomy(p: int) -> int:
+    """(16^m-1)/p modulo p; order-p^2 return defect of p==1 mod 8 clock."""
+    _prime(p)
+    if p%8 != 1:raise ValueError("p==1 mod 8 required")
+    m=(p-1)//8
+    t=16**m-1
+    if t%p:raise AssertionError("missing eighth-power root theorem")
+    return (t//p)%p
+
 def exceptional_prime_count_bound(X: int) -> int:
     """Proof bound for primes p<=X with ord_p(16)<=p^(1/3).
 

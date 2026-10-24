@@ -12,6 +12,8 @@ from observational_succ.bbp_cyclotomic_birth import (
     galois_mean_squared, source_window_split, within_block_complement_variation,
     construct_coprime_clock_counterfeit,
     counterfeit_upper, exceptional_prime_count_bound,
+    residue_mod_prime, p_primary_first_digit, source_burst_indices,
+    unwrapped_bbp, p_square_birth, first_witt_holonomy,
 )
 
 
@@ -143,6 +145,38 @@ class BBPCyclotomicBirthTest(unittest.TestCase):
         for X in (10,50,100,1000,5000):
             bad=sum(multiplicative_order_16(p)**3<=p for p in primes_under(X+1))
             self.assertLessEqual(bad,exceptional_prime_count_bound(X))
+
+
+    def test_exact_modp_unwrapped_self_simulation(self):
+        for p in (17,41,73,97,113):
+            m=(p-1)//8
+            last=source_burst_indices(p,m)[-1]
+            states=forced_states(last)
+            for k in range(1,m+1):
+                events=source_burst_indices(p,k)
+                self.assertEqual(events[-1],(8*k-2)*m+k)
+                self.assertEqual([pole_denominators(events[j])[j] for j in range(4)],
+                                 [(8*k-a)*p for a in (7,4,3,2)])
+                self.assertEqual(p_primary_first_digit(states[events[-1]-1],p),
+                                 residue_mod_prime(unwrapped_bbp(k),p), (p,k))
+            # Dropping the integer carry cannot commute with p-primary readout.
+            self.assertNotEqual(p_primary_first_digit(states[source_burst_indices(p,1)[-1]-1],p),
+                                residue_mod_prime(forced_step(Q(),1),p))
+
+    def test_first_higher_digit_and_witt_holonomy(self):
+        for p in (17,41,73,97):
+            m=(p-1)//8
+            at=p_square_birth(p)
+            self.assertEqual(at,source_burst_indices(p,m+1)[0])
+            self.assertEqual(pole_denominators(at)[0],p*p)
+            self.assertEqual(p_adic_valuation(forcing(at),p),-2)
+            states=forced_states(at)
+            self.assertEqual(p_adic_valuation(states[-1],p),-2)
+            with self.assertRaises(ValueError):p_primary_first_digit(states[-1],p)
+            carry=first_witt_holonomy(p)
+            self.assertEqual((16**m-1)//p%p,carry)
+            for a in (0,1,2,5,7):
+                self.assertEqual((pow(16,m*a,p*p)-1-a*p*carry)%(p*p),0)
 
     def test_reject_false_sources_and_out_of_scope(self):
         for candidate in (1,2,4,9,15,21,49,True,-3):

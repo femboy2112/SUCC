@@ -26,3 +26,7 @@ A possible alternate lane: source-faithful Galois-tomography with a CHOSEN embed
 ## Minimum delivery
 
 Proof statements with domains/hypotheses, exact rational tests, deterministic receipt, mutation controls, independent algebraic check, source references, a claim-ledger update, and a draft PR. Do not modify imported archives or main. Never claim pi normality without proving signed I_p(h) convergence for all h and applying the already checked transport with explicit quantifiers.
+
+## CBCW-08/09 extension: source echo and p-adic precision
+
+Investigate the proved finite p-clock self-simulation at n_(k,a)=(8k-a)m+k, retaining the unwrapped U_k=16U_(k-1)+r(k) and its integer carries. The first p^2 source pole is (p^2+7)/8; the next lift is governed by q_p=(16^m-1)/p mod p. Explicitly test Witt-style higher-order return, split/equal-characteristic counterfeit sources and whether these source-conditioned constraints can reduce the signed I_p(h) debt. Never infer pi equidistribution from an exact finite self-simulation alone.

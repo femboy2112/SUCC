@@ -162,11 +162,38 @@ Letting Q grow makes the **global** sum arbitrarily close to H, notwithstanding 
 
 Separate old controls (PRs #247,#249,#252,#253): 3-adic periodic circles fake finite moments, high-order positive Green source impostors, source state shifted away from y0=0. Keep these out of the actual-source theorem domains.
 
+
+## CBCW-08. Exact finite self-simulation inside a p-clock; integer-carry obstruction
+
+**Paper proof with finite rational tests; academic novelty UNVERIFIED.** Fix a prime p=8m+1. For 1<=k<=m and a in (7,4,3,2), the four times n_(k,a)=(8k-a)m+k have the exact denominator identity 8*n_(k,a)-a=p*(8k-a). There are no other p-pole forcing events between these four-event groups. Time gaps within a group are 3m,m,m; the gap between groups is 3m+1. Since 16^m=1 mod p, transports within one group act trivially on its order-p clock and group-to-group transport is multiplication by 16.
+
+Define U_0=0 and U_k=16*U_(k-1)+r(k) **without taking a fractional part**. Its first m values are p-integral. With N_(p,k)=n_(k,2), the *actual source-generated fractional orbit* satisfies the exact Q/Z projection
+
+    (y_(N_(p,k)))_(p-primary) = ([U_k]_(mod p))/p  in Q/Z,  1<=k<=m.
+
+Proof: after multiplying each source p-pole contribution by p, the four signed pole impulses sum to r(k) modulo p, with no within-group twist because 16^m=1. The intergroup map multiplies the residue by 16. By induction, the group-end residue C_k obeys C_k=16*C_(k-1)+[r(k)]_p=[U_k]_p. All other source contributions are p-integral and thus have zero p-primary component. No p^2 pole has occurred at these times.
+
+**Hostile carry mutation:** the tempting identification [y_k]_p=[U_k]_p is FALSE. Already U_1=47/15 and y_1={U_1}=2/15 differ by an integer carry 3, nonzero modulo every p>=17. The correct operator intertwiner retains the unwrapped arithmetic source; a quotient that erases integer carries destroys the commutation square.
+
+## CBCW-09. First p^2 source event and Witt-style return holonomy
+
+For p=8m+1 prime, the earliest source denominator with p^2 is 8n-7=p^2 at n=(p^2+7)/8, equal to n_(m+1,7). At this stage the actual forcing and actual y_n have p-valuation −2, since previous contributions have valuation >=−1. Thus the first-digit p-clock reconstruction ends at an exact source-forced precision boundary; lifting requires an order-p^2 carrier.
+
+Let q_p=(16^m-1)/p (mod p), well-defined because 16^m=1 mod p. For any integer a,
+
+    16^m*(a/p^2) - a/p^2 = a*q_p/p (mod 1).
+    16^(m*s) = 1+s*p*q_p (mod p^2).
+
+The second formula is the binomial theorem and records a genuine extension defect when q_p*a is nonzero. If q_p=0, that particular first-order defect vanishes; it is not evidence that all later precision lifts commute.
+
+The first four p-impulses reproduce r(1)=4-1/2-1/5-1/6=47/15, and later four-event bursts reproduce r(k) with intergroup factor 16. Full Fraction tests replay the true forced orbit and unwrapped recurrence for p=17,41,73,97,113, with exact p^2 controls for p=17,41,73,97. This is not evidence of independent random prime phases or normality.
+
+
 ## 8. Adversarial validation and uncertainty
 
 `observational_succ/bbp_cyclotomic_birth.py` uses only integer/Fraction source arithmetic for *proof-relevant certificates*: primality gate (including fake composite rejection), first p hits, next hit, valuation and CRT phase, complete cycle order, exact Galois second moment, forced selected states, precise complement and coprime-clock counterfeit. Test `tests/test_bbp_cyclotomic_birth.py` independently enumerates all odd primes <501 and real selected fractions through index 250. Signed complex Gauss sums are evaluated **only as finite numerical regression checks**, never as proof of asymptotic cancellation. `scripts/bbp_cyclotomic_probe.py` emits a replayable deterministic integer/Fraction receipt.
 
-**Local** 10 unittest methods passed with a minimal byte-equivalent BBP source stub reproducing exactly its `POLE_DATA, forcing, forced_step` API. This does not constitute a complete checkout or hosted CI pass. The local whole-repo suite, provenance replay and Lean were NOT run here. The GitHub branch must pass its final-head focus workflow and general validation before promotion. No `sorry`, `axiom`, or unverified Lean build is claimed.
+**Local** 12 unittest methods passed with a minimal byte-equivalent BBP source stub reproducing exactly its `POLE_DATA, forcing, forced_step` API. This does not constitute a complete checkout or hosted CI pass. The local whole-repo suite, provenance replay and Lean were NOT run here. The GitHub branch must pass its final-head focus workflow and general validation before promotion. No `sorry`, `axiom`, or unverified Lean build is claimed.
 
 ## 9. References and next disconfirming probe
 
