@@ -287,3 +287,99 @@ REQUIRED final results:
 
 **π NORMALITY: OPEN. PROVE THE BBP-SELECTED SOURCE LAW
 THAT THE CIRCLE'S HAAR ENSEMBLE DOES NOT.**
+
+
+## NEW URGENT SOURCE FRONT: PR #256 (ARRIVED DURING THIS ROUND)
+
+A separately running research branch opened
+https://github.com/femboy2112/SUCC/pull/256
+at last observed head 66fcb6f61b2851371bfe58ba6db74bdeacb46ef0.
+It is stacked on GREENPRINT #254, not on #253/#257.
+Its mathematics appears more directly relevant to actual π
+cancellation than generic origin sampling. AUDIT FIRST, DO NOT
+SILENTLY IMPORT IT.
+
+For genuine source prime p=8m+1, the first p-pole
+birth in the BBP rational forcing is at n=m+1,
+and the next p-input does not arrive until 4m+1.
+On this authenticated length-3m interval, the
+p-primary state is 4*16^t/p, with order
+L_p=ord_p(16) dividing m (p≡1 mod8).
+The complement w_(p,t) has denominator coprime
+to p, and the FULL source state is
+  y_(m+1+t)=4*16^t/p+w_(p,t) mod1.
+
+The research imports PNT in 1 mod8 and the
+Bourgain–Glibichuk–Konyagin subgroup bound
+to obtain power-saving p-LOCAL character
+cancellation for almost all such primes.
+That is real imported analytic machinery;
+it does NOT bound the full π-selected phase.
+
+The missing source-specific twisted term is
+  I_p(h)=(1/(3m))*sum_(block,s)
+     e(4h*16^s/p)*
+     [e(h*w_(p,block*L_p+s))
+      -e(h*w_(p,block*L_p))].
+PR #256 records that base16 π normality is
+equivalent to vanishing of I_p(h) for all
+fixed h along the authenticated good-prime
+family, after subtracting a local subgroup
+sum which is already controlled. The
+I_p convergence is OPEN.
+
+**NEW GEOMETRIC CROSS-POLLINATION TARGET:**
+The p-primary phase a_p=4/p has
+H_(L_p)(a_p)=4(16^L_p-1)/p=0 mod1.
+This is an EXACT periodic-origin covariance
+defect of zero. Consequently, after a complete
+p-clock return, the FULL state displacement
+comes entirely from the complement:
+  y_(t+L_p)-y_t
+    =w_(p,t+L_p)-w_(p,t) mod1
+within the authentic source-free window.
+
+Formalize this source-typed **local closed
+gauge / global residual connection**.
+It is not a proof that its Fourier average
+vanishes, since I_p measures complement
+variation WITHIN each p period as well as
+between periods. Attack the signed twisted
+interference directly:
+- derive exactly how the genuine BBP r(n)
+  drives w_(p,t) inside the p-free interval;
+- test whether the complement is smooth,
+  low-bandwidth, or has source-certified
+  cancellation on the multiplicative
+  subgroup periods;
+- establish a correct twisted-subgroup
+  character sum estimate WITH ACTUAL WEIGHTS.
+  BGK unweighted local cancellation does not
+  automatically give a weighted sum bound;
+- retain all cross-prime CRT interactions
+  and p² Witt return/higher carrying from
+  CBCW-08/09; do not apply a Q/Z
+  fractional-part map before prime-primary
+  decomposition.
+
+Mandatory negative controls: nonnormal
+coprime-denominator rational source clocks,
+full-period exceptional x_d=1/(16^d−1),
+rational BBP fake Green sources, genuine p²
+valuation onset, and pointwise/ensemble
+Galois mismatch.
+
+**HIGHER PRIORITY THAN INVENTING MORE
+GENERIC ORIGIN AVERAGES:** prove an actual
+nonzero source-specific signed I_p bound
+or a rigorous obstruction to a proposed
+weighted-BGK/partial-summation mechanism.
+If you cannot prove decay, produce the
+sharpest authenticated unconditional bound
+and isolate the one missing complementary
+source estimate with falsifiers.
+
+Recheck #256's hosted CI; when inspected
+its dedicated focused checks passed but
+some full-repository jobs were still running.
+Its paper claims are not Lean facts.
