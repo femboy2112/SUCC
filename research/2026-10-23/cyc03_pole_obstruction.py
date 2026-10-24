@@ -13,10 +13,13 @@ If it is, then telescopes: sum_{k=1}^{K} b^{-k} r(n+k)
 so t_n = q(n) exactly (if q bounded along the orbit). Then the cocycle is a
 pure coboundary and the orbit is CONJUGATE to rotation by t_0 (no drift).
 
-Question 2. If r is NOT a coboundary, does t_n still have to decay slowly?
-NO. Counterexample: r(n)=b^{-n} is not a coboundary in the polynomial/rational
-class but t_n = sum b^{-k} b^{-(n+k)} = b^{-n} sum b^{-2k} = decays geometrically.
-The obstruction is to a *specific* algebraic solution class, not to decay.
+Question 2. If r is NOT a RATIONAL-FUNCTION coboundary, does t_n decay
+slowly? NO general rate follows: the companion bbp_source_memory.py constructs
+positive rational r_K(n)=K!/[n...(n+K)] of arbitrary polynomial decay
+whose weighted pole invariant is (1-b)^K != 0. The former toy
+r(n)=b^(-n) is ITSELF a coboundary with q(n)=b^(-n)/(b^2-1), though
+q is not rational in the index n. It must not be used as an unrestricted
+non-coboundary witness.
 
 So the honest statement: the invariant obstructs the EXISTENCE OF A FINITE
 RATIONAL COBOUNDARY, and hence obstructs the clean telescoping proof of
@@ -57,7 +60,9 @@ def tail_enclosure(n: int, K: int, b: int = 16) -> tuple[F, F]:
     """Rigorous enclosure of t_n using the source-sensitive remainder
     0 < t_n - partial < b^{-K} r(n+K+1)/15.  (Proven in the repo dossier.)"""
     lo = tail_partial(n, K, b)
-    hi = lo + F(1, b**K) * forcing(n+K+1) / F(15)
+    if type(b) is not int or b < 2:
+        raise ValueError("base >= 2")
+    hi = lo + F(1, b**K) * forcing(n+K+1) / F(b-1)
     return lo, hi
 
 
@@ -78,19 +83,21 @@ def is_coboundary_check_witness() -> dict:
 def geometric_non_coboundary() -> dict:
     """A non-coboundary whose tail nonetheless decays geometrically.
 
-    r(n) = b^{-n}.  Not representable as b q(n-1)-q(n) with q(n) = c*b^{-n}
-    because b*(b^{-(n-1)}) - b^{-n} = b^{-n}(b^2-1) != b^{-n}.
-    But t_n = b^{-n}/(b^2-1) decays geometrically.
-    -> 'non-coboundary' does NOT imply 'slow decay'.
+    Legacy function name retained for compatibility. r(n)=b^(-n)
+    IS an exact sequence coboundary with q(n)=b^(-n)/(b^2-1):
+    b*q(n-1)-q(n)=b^(-n).
+    q is exponential, not a rational FUNCTION OF n.
+    Thus this is only a rational-function-class restriction example.
+    The genuine rational forcing countermodel is in bbp_source_memory.py.
     """
     b = F(16)
     # exact: t_n = sum b^{-k} b^{-(n+k)} = b^{-n} sum b^{-2k} = b^{-n}/(b^2-1)
     from fractions import Fraction
     val = Fraction(1, 1) / (b*b - 1) / (b**0)
     return {"r": "b^{-n}", "t_n": f"b^(-n)/(b^2-1) = {val} * b^(-n)",
-            "coboundary_test": "b*c*b^(-(n-1)) - c*b^(-n) = c*b^(-n)*(b^2-1) != b^(-n)",
-            "conclusion": "non-coboundary, yet geometric decay: obstruction is to "
-                          "the finite rational class, not to cancellation"}
+            "exact_coboundary": "q(n)=b^(-n)/(b^2-1) and b*q(n-1)-q(n)=b^(-n)",
+            "rational_function_in_n": False,
+            "conclusion": "sequence coboundary; only excluded from the rational-function q class. The independent positive rational r_K(n) provides the genuine arbitrary-order decay control."}
 
 
 def two_pole_toy(b: int = 16) -> dict:
@@ -118,17 +125,18 @@ def leading_rate_after_cancellation() -> dict:
       t_n ~ A * sum b^{-k}/(n+k)^2 + ...
     and since sum b^{-k} = 1/(b-1) = 1/15, the leading term is A/(15 n^2) to
     first order in 1/n.  With A = 15/64 this gives 1/(64 n^2).  Consistent.
-    The four poles' RESIDUES (mod 1) do not enter the leading coefficient at
-    all -- only the collapsed polynomial P/D does.  This is the key negative
-    structural finding: the pole residues control the DIGIT-SHIFT geometry,
-    but the tail rate is controlled by the rational-function asymptotics.
+    The coefficients of the four forcing-index poles determine the collapsed
+    polynomial P/D and its leading coefficient. In particular the first
+    signed pole moment sum_i rho_i*a_i is exactly 15/64, so the tail
+    coefficient is (sum rho_i*a_i)/(b-1). The poles are NOT circle states,
+    and no dynamical "one-step annihilation" follows from their residues.
     """
     b, A = F(16), F(15, 64)
     lead = A / (b - 1)
     return {"leading_coefficient_of_t_n": str(lead),
             "check": "A/(b-1) = (15/64)/15 = 1/64  -- matches the proven rate",
-            "finding": "pole residues are INVISIBLE to the tail rate; only the "
-                       "collapsed rational function's asymptotics matter"}
+            "finding": "the first signed forcing-index pole moment is 15/64 and "
+                       "determines the leading tail coefficient 1/64"}
 
 
 if __name__ == "__main__":
@@ -138,7 +146,7 @@ if __name__ == "__main__":
         print(f"  invariant at residue {k}: {v}")
     print("  all nonzero:", w["all_nonzero"], " sum:", w["sum"])
     print()
-    print("=== counterexample: non-coboundary WITH geometric decay ===")
+    print("=== corrected: geometric sequence IS a coboundary outside rational q ===")
     g = geometric_non_coboundary()
     for k, v in g.items():
         print(f"  {k}: {v}")
