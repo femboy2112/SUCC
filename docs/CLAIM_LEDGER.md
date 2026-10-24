@@ -1,5 +1,11 @@
 # Research claim ledger
 
+The additive [Dyadic / prime-base supplement DBT-01--21](CLAIM_SUPPLEMENT_DYADIC_BASE_TRANSPORT.md)
+records authentic BBP 2-adic interpolation and collision refinement, exact
+carry probes and a conditional base-3 measure-rigidity route. Paper proofs,
+classical external theorems and finite computations retain separate authority.
+The real selected-source bridge and **pi normality remain OPEN**.
+
 The additive [Cyclotomic selected-source supplement CSS-01–17](CLAIM_SUPPLEMENT_CYCLOTOMIC_SELECTED_SOURCE.md)
 records all-character local twist bounds, actual complementary-source spectral
 budgets, dyadic finite-window controls, exact observation costs, and positive

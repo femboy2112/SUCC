@@ -1,0 +1,53 @@
+{
+  "analytic_infinite_authority": "paper proof, not these checks",
+  "authentic_first_17_birth": {
+    "all_components": {
+      "11": "5/11",
+      "13": "10/13",
+      "17": "4/17",
+      "3": "4/9",
+      "5": "1/5",
+      "7": "1/7"
+    },
+    "index": 3,
+    "omitted_17_phase": "4/17",
+    "real_phase": "188663/765765",
+    "small_prime_phase": "499/45045",
+    "unwrapped": "615863723/765765"
+  },
+  "authentic_source_cover_checks": 728,
+  "exact_pair_valuation_checks": 84,
+  "exact_source_indices_checked": 512,
+  "forcing_difference_quotient_mod2_is_one": true,
+  "pi_normality": "OPEN",
+  "reversed_zero_checks": [
+    {
+      "bits": 257,
+      "exact_residue": 0,
+      "sign_mutation_rejected": true
+    },
+    {
+      "bits": 511,
+      "exact_residue": 0,
+      "sign_mutation_rejected": true
+    },
+    {
+      "bits": 1024,
+      "exact_residue": 0,
+      "sign_mutation_rejected": true
+    }
+  ],
+  "source_sha256": {
+    "observational_succ/prime_base_carry.py": "b36f95f90e53bdb9e2fd03872f6fb6926f1839818ffc0316eb6b4c918a820c7e",
+    "research/2026-10-24/PI_DYADIC_SOURCE_ISOMETRY.md": "33252937eaf014c74bada378709e3e90559868c5d4ea0aff90475bb34e86e75f",
+    "scripts/pi_dyadic_analytic_oracle.py": "1889ad85a816abfbc10dfe4acd56a04a189e72a43754c3696b4b5ce0aef0f8bc"
+  },
+  "status": "VERIFIED_FINITE",
+  "symbolic_identities": {
+    "generating_integrand_factorization": true,
+    "mobius_derivative": true,
+    "mobius_quadratic_transport": true,
+    "original_forcing_collapses": true,
+    "primitive_derivative": true
+  }
+}
