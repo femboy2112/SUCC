@@ -1,0 +1,33 @@
+name: Circle origin covariance and cyclotomic sampled-source proofs
+on:
+  push:
+    branches:
+      - research/cyclotomic-origin-gauge-2026-10-24
+  pull_request:
+    paths:
+      - 'observational_succ/circle_origin_gauge.py'
+      - 'tests/test_circle_origin_gauge.py'
+      - 'research/2026-10-24/CIRCLE_CYCLOTOMIC_ORIGIN_GAUGE.md'
+      - '.github/workflows/circle-origin-gauge.yml'
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install source with tests
+        run: python -m pip install -e '.[test]'
+      - name: Exact rational and adversarial frame-gauge tests
+        run: |
+          python -Werror -m py_compile observational_succ/circle_origin_gauge.py tests/test_circle_origin_gauge.py
+          python -m unittest discover -s tests -p 'test_circle_origin_gauge.py' -v
+          python scripts/verify_provenance.py
+          python scripts/observer_foundations_probe.py
