@@ -224,6 +224,13 @@ class SignedLagReconstruction(unittest.TestCase):
         self.assertLessEqual(m[0],m[1])
         self.assertLessEqual(f[0],f[1])
         self.assertLessEqual(max(b[0],m[0]),min(b[1],m[1]))
+        # New genuinely pi-selected FINITE certificate, paid by TWO
+        # independent source enclosures (BBP and Machin), NOT a limit.
+        lower,upper=Q(199199,50000),Q(498,125)
+        for source_interval in (b,m):
+            self.assertGreater(source_interval[0],lower)
+            self.assertLess(source_interval[1],upper)
+        self.assertEqual(positive_energy_signature(7,3)["fixed_point_energy"],17)
         bound=bbp_energy_budget(n,d)
         self.assertLessEqual(max(Q(),b[0]-f[1],f[0]-b[1]),bound)
         self.assertEqual(certified_origin_energy_interval(0,10,3),

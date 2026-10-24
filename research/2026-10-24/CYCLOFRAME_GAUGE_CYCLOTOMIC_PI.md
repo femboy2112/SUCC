@@ -229,6 +229,31 @@ The finite source-lag budget can improve the last simple bound. More importantly
 
 For source-faithful, finite π-specific observations the committed adapter evaluates (4) with independent, outward-rational BBP and Machin interval oracles from #253. The finite enclosures pay their source precision; they cannot license N->infinity. Source information enters through actual r(n), T_0=pi/16 and y_0=0. A generic periodic origin x=1/3 fails that complete source contract.
 
+### CF-06a — New finite, independently source-enclosed π energy witness
+
+For q=7, d=3, N=7, h=1, theta=0 the root-frame energy is exactly
+
+    E_(7,7)(0;pi) = 7+2*Re[C_3(7;pi)+C_6(7;pi)].
+
+The original BBP source interval and the independently derived Machin/arctangent
+source interval, each with the full signed phase and outward rational
+Taylor/Lipschitz error in PI Source Genesis #253, **both certify**
+
+    199199/50000 < E_(7,7)(0;pi) < 498/125,
+    equivalently 3.98398 < E < 3.98400.
+
+The *same* positive root-frame observable for x=0 or x=1/3 is
+N+2P = 17 exactly, while the independently Haar-averaged expected
+value is 7 (variance 2P=10). The bound is a genuine **finite**,
+π-selected signed-interference measurement from two authenticated
+analytic constructions; it is neither a computed list of π digits
+nor evidence that these finite inequalities hold at future horizons.
+Its sole purpose is to demonstrate a working source-specific probe
+that can actually discriminate this π finite window from periodic
+countermodels, without replacing the target by a generic Haar ensemble.
+The exact new rational bracket is enforced in the focused test suite.
+
+
 ## CF-07 — Source-accurate adversarial controls, limits and transport boundary
 
 **Refuted:** arbitrary origins commute with unmodified x→16x. Counterexample a=1/7.
