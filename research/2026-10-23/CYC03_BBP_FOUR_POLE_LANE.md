@@ -1,5 +1,22 @@
 # CYC-03 · BBP four-pole lane · and the correction of two published claims
 
+> **CORRIGENDUM 2026-10-24 — SOURCE TYPING.** The following historical
+> report incorrectly concluded that the BBP four-pole approach was
+> mathematically closed. The original poles live in the forcing INDEX
+> variable, not as states under x→16x mod1. The actual forcing-index
+> signed first pole moment is 15/64 and the resulting Green tail has
+> positive continuous Hausdorff measure and infinite Hankel rank.
+> The unforced orbit x=1/3 does not satisfy the complete BBP
+> initial condition. A rational high-order forcing family replaces
+> the invalid exponential non-coboundary example, and the earlier
+> universal absolute prime-path cost ceiling has an exact counterexample.
+> **DO NOT cite the old closure verdict.** See
+> [corrected audit](CYC03_LANE_CLOSED.md) and
+> [new source proof](../2026-10-24/BBP_SOURCE_MEMORY_REPAIR.md).
+> Historical calculations below are retained for provenance; their
+> overbroad dynamical conclusions are superseded.
+
+
 **Date:** 2026-10-23. **Branch:** `research/cyc03-bbp-four-pole-lane-2026-10-23`
 (from `integrate/academic-main-ix-pi-circle-source-2026-10-23` @ `f9865078`).
 **RH PROVED: NO. π normality (any base): OPEN.** No zero coordinates used.

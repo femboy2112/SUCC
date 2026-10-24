@@ -1,5 +1,19 @@
 # π NORMALITY: a moonshot attempt, and the structural reason it stops
 
+> **MATHEMATICAL ERRATA (2026-10-24):** This historical moonshot report
+> remains useful for Fejér measurements and precision fixes, but its
+> claims "BBP four-pole lane closed" and "chord representation proves
+> no new route possible" are not valid theorems. The supposed x=1/3
+> same-forcing countermodel changes the authenticated initial condition.
+> For a freely chosen growing band, bounded Fejér energy is
+> EQUIVALENT to normality, not strictly weaker. For nonnormal points
+> only LIMSUP divergence is forced along suitable subsequences,
+> not necessarily a full energy limit. Signed pole data yield a
+> positive infinite-rank Green tail; see
+> [source-repair proof](../2026-10-24/BBP_SOURCE_MEMORY_REPAIR.md).
+> Preserve finite measurements as TESTED MODEL only.
+
+
 **Date:** 2026-10-23. **Branch:** `research/cyc03-bbp-four-pole-lane-2026-10-23`.
 **π normality (all bases): OPEN.** **RH: not addressed.** No zero coordinates.
 
@@ -48,8 +62,7 @@ is `T_b`-invariant, so `c_h = c_{b^r h}` for every r. Picking h with `c_h ≠ 0`
 `b^r h` eventually exceeds the finite support, forcing `c_h = 0` — contradiction.
 Hence `c_h = 0` for all h, i.e. x *is* normal.
 
-**So: for non-normal x, infinitely many `c_h` are nonzero, `E(M_N,N) → ∞` as
-`M_N → ∞`, and the criterion correctly refuses.** The criterion is sound and
+**For a nonnormal x, any growing-band energy must have unbounded LIMSUP along some subsequence (not necessarily converge to infinity along the entire N sequence).** The criterion is sound and
 discriminating. (The repository's own proof of `(ii) ⇒ (i)` does not need the
 `c_h` to exist at all; it uses only the amplification inequality.)
 
@@ -86,7 +99,7 @@ polynomial recursion.**
 
 — **exactly the Fourier sums again.** The Fejér energy *is* the chord energy; the
 chord language is a faithful reformulation that consumes no new information.
-Route B is **proved circular**.
+Route B supplies an exact representation-equivalence but not an independent source estimate. This does not prove no such estimate can be found in the chord coordinates.
 
 Likewise Route C (the `F_b` dynamics): `F_b` is conjugate to `z ↦ z^b` through the
 two-to-one map `d`, so equidistribution of the `F_b`-orbit of `d₀` is *equivalent*
@@ -150,8 +163,7 @@ promoted to impossibility.
 
 Equivalently: `Σ_{h≤M_N}(1−h/(M_N+1))|A_{h,N}(π)|² ≤ (K−1)/2` uniformly.
 
-This is *strictly weaker* than normality itself and is the natural summit of
-this instrument. Everything closed so far proves it cannot be reached by pole
+This is **equivalent** to normality when one may choose an arbitrarily slow growing band, not a strictly weaker source theorem; its only route to progress is an independently derived source-specific bound. Everything closed so far proves it cannot be reached by pole
 structure; §3 proves it cannot be reached by chord reformulation. It needs a
 genuinely new input about the *simultaneous* size of many Fourier coefficients of
 one orbit — which is, as far as this campaign can see, the original problem

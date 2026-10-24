@@ -1,5 +1,23 @@
 # PROOF MECHANISMS — a transductive catalogue
 
+> **SOURCE-PROOF AUTHORITY CORRIGENDUM (2026-10-24).**
+> This is a *methodology catalogue*, not a sound theorem prover.
+> String descriptions of a witness's membership do NOT authenticate
+> that it satisfies the source contract. Callback/Boolean flags
+> are likewise not Lean proof certificates. Finite bisection with
+> exact Fraction arithmetic produces a rational BRACKET, not
+> generally an exact unknown threshold. "GENERIC implication"
+> is not a failure: source-specific verification of its premise
+> can yield a targeted result. A property lost under a quotient
+> may still control recurrent source behavior; require a
+> source/action/readout commuting diagram before deriving a no-go.
+> Categorical *faithfulness* (injective on hom-sets), source
+> preservation, target-relative sufficiency and experimental
+> failure observability are distinct. Sections discussing
+> "the BBP pole lane closed" are superseded by
+> [the BBP source-repair dossier](../research/2026-10-24/BBP_SOURCE_MEMORY_REPAIR.md).
+
+
 **Date:** 2026-10-23. **Status:** methodology. Not a claim about any open problem.
 Companion to `research/2026-10-23/CYC03_LANE_CLOSED.md`.
 
