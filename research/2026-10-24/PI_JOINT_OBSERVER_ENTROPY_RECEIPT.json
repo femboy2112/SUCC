@@ -1,0 +1,482 @@
+{
+  "actual_source_asymptotic_collision_bound_proved": false,
+  "authentic_source_rows": [
+    {
+      "cells": 16,
+      "certified_true_collision": "347/288",
+      "depth": 1,
+      "observed_ratio": "1",
+      "retained_positions": 96,
+      "source_collision": "347/288",
+      "start": 1
+    },
+    {
+      "cells": 256,
+      "certified_true_collision": "36096/9025",
+      "depth": 2,
+      "observed_ratio": "1",
+      "retained_positions": 95,
+      "source_collision": "36096/9025",
+      "start": 2
+    },
+    {
+      "cells": 4096,
+      "certified_true_collision": "4096/89",
+      "depth": 3,
+      "observed_ratio": "1",
+      "retained_positions": 89,
+      "source_collision": "4096/89",
+      "start": 8
+    },
+    {
+      "cells": 65536,
+      "certified_true_collision": "65536/65",
+      "depth": 4,
+      "observed_ratio": "1",
+      "retained_positions": 65,
+      "source_collision": "65536/65",
+      "start": 32
+    }
+  ],
+  "authority": "elementary paper lemmas and finite exact calibration",
+  "correlated_reference_chain": [
+    {
+      "escort_conditional_excess": "1/3",
+      "next_second_moment": "4/3",
+      "prefix_depth": 0,
+      "ratio": "4/3",
+      "second_moment": "1"
+    },
+    {
+      "escort_conditional_excess": "1/32",
+      "next_second_moment": "11/8",
+      "prefix_depth": 1,
+      "ratio": "33/32",
+      "second_moment": "4/3"
+    }
+  ],
+  "counts": {
+    "authentic_source_transport_rows": 4,
+    "false_product_marginal_mutations_rejected": 4,
+    "independent_machin_true_cells": 345,
+    "integer_cutoff_minimality": 33,
+    "integer_power_entropy_comparisons": 18,
+    "joint_chain_laws": 16,
+    "joint_chain_steps": 48,
+    "proper_coordinate_marginals": 12,
+    "rare_hotspot_mixtures": 8,
+    "two_cell_mutation_rejected": 1,
+    "visible_joint_decoders": 4
+  },
+  "held_out_base": 5,
+  "joint_rows": [
+    {
+      "base": 2,
+      "collision": "1",
+      "conditional_ratios": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "depth": 4,
+      "law": "uniform"
+    },
+    {
+      "base": 2,
+      "collision": "2",
+      "conditional_ratios": [
+        "1",
+        "1",
+        "1",
+        "2"
+      ],
+      "depth": 4,
+      "law": "sum_zero"
+    },
+    {
+      "base": 2,
+      "collision": "29/24",
+      "conditional_ratios": [
+        "145/144",
+        "149/145",
+        "158/149",
+        "87/79"
+      ],
+      "depth": 4,
+      "law": "weighted"
+    },
+    {
+      "base": 2,
+      "collision": "16",
+      "conditional_ratios": [
+        "2",
+        "2",
+        "2",
+        "2"
+      ],
+      "depth": 4,
+      "law": "point"
+    },
+    {
+      "base": 3,
+      "collision": "1",
+      "conditional_ratios": [
+        "1",
+        "1",
+        "1"
+      ],
+      "depth": 3,
+      "law": "uniform"
+    },
+    {
+      "base": 3,
+      "collision": "3",
+      "conditional_ratios": [
+        "1",
+        "1",
+        "3"
+      ],
+      "depth": 3,
+      "law": "sum_zero"
+    },
+    {
+      "base": 3,
+      "collision": "25/21",
+      "conditional_ratios": [
+        "149/147",
+        "157/149",
+        "175/157"
+      ],
+      "depth": 3,
+      "law": "weighted"
+    },
+    {
+      "base": 3,
+      "collision": "27",
+      "conditional_ratios": [
+        "3",
+        "3",
+        "3"
+      ],
+      "depth": 3,
+      "law": "point"
+    },
+    {
+      "base": 5,
+      "collision": "1",
+      "conditional_ratios": [
+        "1",
+        "1",
+        "1"
+      ],
+      "depth": 3,
+      "law": "uniform"
+    },
+    {
+      "base": 5,
+      "collision": "5",
+      "conditional_ratios": [
+        "1",
+        "1",
+        "5"
+      ],
+      "depth": 3,
+      "law": "sum_zero"
+    },
+    {
+      "base": 5,
+      "collision": "197/169",
+      "conditional_ratios": [
+        "171/169",
+        "179/171",
+        "197/179"
+      ],
+      "depth": 3,
+      "law": "weighted"
+    },
+    {
+      "base": 5,
+      "collision": "125",
+      "conditional_ratios": [
+        "5",
+        "5",
+        "5"
+      ],
+      "depth": 3,
+      "law": "point"
+    },
+    {
+      "base": 16,
+      "collision": "1",
+      "conditional_ratios": [
+        "1",
+        "1"
+      ],
+      "depth": 2,
+      "law": "uniform"
+    },
+    {
+      "base": 16,
+      "collision": "16",
+      "conditional_ratios": [
+        "1",
+        "16"
+      ],
+      "depth": 2,
+      "law": "sum_zero"
+    },
+    {
+      "base": 16,
+      "collision": "2634/2209",
+      "conditional_ratios": [
+        "2294/2209",
+        "1317/1147"
+      ],
+      "depth": 2,
+      "law": "weighted"
+    },
+    {
+      "base": 16,
+      "collision": "256",
+      "conditional_ratios": [
+        "16",
+        "16"
+      ],
+      "depth": 2,
+      "law": "point"
+    }
+  ],
+  "pi_normality": "OPEN",
+  "rare_hotspot_rows": [
+    {
+      "base": 2,
+      "depth": 2,
+      "discarded_mass": "1/2",
+      "full_collision": "7/4",
+      "retained_collision": 1
+    },
+    {
+      "base": 2,
+      "depth": 3,
+      "discarded_mass": "1/3",
+      "full_collision": "16/9",
+      "retained_collision": 1
+    },
+    {
+      "base": 3,
+      "depth": 2,
+      "discarded_mass": "1/2",
+      "full_collision": "3",
+      "retained_collision": 1
+    },
+    {
+      "base": 3,
+      "depth": 3,
+      "discarded_mass": "1/3",
+      "full_collision": "35/9",
+      "retained_collision": 1
+    },
+    {
+      "base": 5,
+      "depth": 2,
+      "discarded_mass": "1/2",
+      "full_collision": "7",
+      "retained_collision": 1
+    },
+    {
+      "base": 5,
+      "depth": 3,
+      "discarded_mass": "1/3",
+      "full_collision": "133/9",
+      "retained_collision": 1
+    },
+    {
+      "base": 16,
+      "depth": 2,
+      "discarded_mass": "1/2",
+      "full_collision": "259/4",
+      "retained_collision": 1
+    },
+    {
+      "base": 16,
+      "depth": 3,
+      "discarded_mass": "1/3",
+      "full_collision": "456",
+      "retained_collision": 1
+    }
+  ],
+  "source_sha256": {
+    "observational_succ/joint_observer_entropy.py": "674e773ef41665321f9c79d59c74e9d5e98147c45416f3f8291adb0c002ed10a",
+    "observational_succ/pi_source_genesis.py": "147dcb1b42b0de157c55385896cb1b15b17c1bb4ba14ea6fb8effed24ed62cf1",
+    "research/2026-10-24/PI_HYPOTHESIS_A_HOLE_CONTRACT.md": "b03b59f410e1f25ca9be8882f937ac69d3a55aadae7c9862a61e4a754eeb8404",
+    "research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md": "08b7a32cfbeb40e33364f4c2ff12ab6de7c8679bf7047e40910a74e9b2a80e23",
+    "scripts/joint_observer_entropy_probe.py": "2a331242099ce01d605437a85be8f448f63b4b6aeab47328e59b0112d09a550d",
+    "tests/test_joint_observer_entropy.py": "092643eb53761b10dacf67f0ee71debf8b7c82b335ab252fdf02a5ee6f984d8a"
+  },
+  "status": "VERIFIED_EXACT_FINITE",
+  "trimmed_entropy_rows": [
+    {
+      "base": 2,
+      "block_length": 1,
+      "collision": "2",
+      "depth": 2,
+      "discarded_mass": "0",
+      "exact_log_bound_sign": 1,
+      "retained": 12
+    },
+    {
+      "base": 2,
+      "block_length": 1,
+      "collision": "2",
+      "depth": 2,
+      "discarded_mass": "2/3",
+      "exact_log_bound_sign": 1,
+      "retained": 4
+    },
+    {
+      "base": 2,
+      "block_length": 1,
+      "collision": "4",
+      "depth": 3,
+      "discarded_mass": "0",
+      "exact_log_bound_sign": 1,
+      "retained": 12
+    },
+    {
+      "base": 2,
+      "block_length": 1,
+      "collision": "4",
+      "depth": 3,
+      "discarded_mass": "2/3",
+      "exact_log_bound_sign": 1,
+      "retained": 4
+    },
+    {
+      "base": 2,
+      "block_length": 2,
+      "collision": "8",
+      "depth": 4,
+      "discarded_mass": "0",
+      "exact_log_bound_sign": 1,
+      "retained": 12
+    },
+    {
+      "base": 2,
+      "block_length": 2,
+      "collision": "8",
+      "depth": 4,
+      "discarded_mass": "2/3",
+      "exact_log_bound_sign": 1,
+      "retained": 4
+    },
+    {
+      "base": 3,
+      "block_length": 1,
+      "collision": "3",
+      "depth": 2,
+      "discarded_mass": "0",
+      "exact_log_bound_sign": 1,
+      "retained": 12
+    },
+    {
+      "base": 3,
+      "block_length": 1,
+      "collision": "9/2",
+      "depth": 2,
+      "discarded_mass": "2/3",
+      "exact_log_bound_sign": 1,
+      "retained": 4
+    },
+    {
+      "base": 3,
+      "block_length": 1,
+      "collision": "9",
+      "depth": 3,
+      "discarded_mass": "0",
+      "exact_log_bound_sign": 1,
+      "retained": 12
+    },
+    {
+      "base": 3,
+      "block_length": 1,
+      "collision": "27/2",
+      "depth": 3,
+      "discarded_mass": "2/3",
+      "exact_log_bound_sign": 1,
+      "retained": 4
+    },
+    {
+      "base": 3,
+      "block_length": 2,
+      "collision": "27",
+      "depth": 4,
+      "discarded_mass": "0",
+      "exact_log_bound_sign": 1,
+      "retained": 12
+    },
+    {
+      "base": 3,
+      "block_length": 2,
+      "collision": "81/2",
+      "depth": 4,
+      "discarded_mass": "2/3",
+      "exact_log_bound_sign": 1,
+      "retained": 4
+    },
+    {
+      "base": 5,
+      "block_length": 1,
+      "collision": "125/24",
+      "depth": 2,
+      "discarded_mass": "0",
+      "exact_log_bound_sign": 1,
+      "retained": 12
+    },
+    {
+      "base": 5,
+      "block_length": 1,
+      "collision": "75/8",
+      "depth": 2,
+      "discarded_mass": "2/3",
+      "exact_log_bound_sign": 1,
+      "retained": 4
+    },
+    {
+      "base": 5,
+      "block_length": 1,
+      "collision": "625/24",
+      "depth": 3,
+      "discarded_mass": "0",
+      "exact_log_bound_sign": 1,
+      "retained": 12
+    },
+    {
+      "base": 5,
+      "block_length": 1,
+      "collision": "375/8",
+      "depth": 3,
+      "discarded_mass": "2/3",
+      "exact_log_bound_sign": 1,
+      "retained": 4
+    },
+    {
+      "base": 5,
+      "block_length": 2,
+      "collision": "3125/24",
+      "depth": 4,
+      "discarded_mass": "0",
+      "exact_log_bound_sign": 1,
+      "retained": 12
+    },
+    {
+      "base": 5,
+      "block_length": 2,
+      "collision": "1875/8",
+      "depth": 4,
+      "discarded_mass": "2/3",
+      "exact_log_bound_sign": 1,
+      "retained": 4
+    }
+  ]
+}

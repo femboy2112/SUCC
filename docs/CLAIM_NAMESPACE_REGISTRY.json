@@ -14,6 +14,27 @@
   },
   "namespaces": [
     {
+      "namespace": "HYPOTHESIS_A_JOINT_OBSERVERS",
+      "bare_prefix": "HJA",
+      "fq_prefix": "HJA",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md"
+      ],
+      "id_count": 31,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/REFUTED/CONDITIONAL/OPEN); pi normality OPEN; no new Lean authority",
+      "topic": "BBP-specific Hypothesis A, full joint observer interactions, trimmed collision transport, all-rank and moving-prime controls, all-gain stationary-law classification",
+      "code": [
+        "observational_succ/all_gain_observers.py",
+        "observational_succ/joint_observer_entropy.py",
+        "observational_succ/joint_primary_observers.py",
+        "observational_succ/pascal_rank_process.py",
+        "scripts/all_gain_observers_probe.py",
+        "scripts/joint_observer_entropy_probe.py",
+        "scripts/joint_primary_observers_probe.py",
+        "scripts/pascal_rank_process_probe.py"
+      ]
+    },
+    {
       "namespace": "PI_PASCAL_LUCAS_QUOTIENT",
       "bare_prefix": "PLQ",
       "fq_prefix": "PLQ",
@@ -200,7 +221,7 @@
       ],
       "id_count": 12,
       "status": "MIXED (CLASSICAL/PAPER_PROVED/EXACT_FINITE_TESTED/REFUTED/UNVERIFIED)",
-      "topic": "source orbit quotient universality, fresh clock splicing, LCM and Möbius prime-jet genesis, continuous topological factor no-go",
+      "topic": "source orbit quotient universality, fresh clock splicing, LCM and M\u00f6bius prime-jet genesis, continuous topological factor no-go",
       "code": [
         "observational_succ/orbit_clock_genesis.py",
         "observational_succ/clock_incidence_inversion.py",
@@ -703,7 +724,7 @@
         "docs/CLAIM_SUPPLEMENT_POISSON_MINIMUM.md"
       ],
       "id_count": 12,
-      "status": "RESEARCH (classical/PAPER PROVED/local exact tests; π normality, RH, Weil positivity and novelty UNVERIFIED)",
+      "status": "RESEARCH (classical/PAPER PROVED/local exact tests; \u03c0 normality, RH, Weil positivity and novelty UNVERIFIED)",
       "topic": "Single Poisson-chord minimum-energy criterion, deterministic geometric greedy selection, signed regret, source-typed pi finite witnesses, periodic counterfeit",
       "code": [
         "observational_succ/poisson_circle_minimal.py",

@@ -1,0 +1,525 @@
+{
+  "authority": "artifact consistency and exact finite validation; no asymptotic inference",
+  "checks": {
+    "compiled_new_python_files": 12,
+    "freeze_unchanged": true,
+    "full_suite_exit_code": 0,
+    "json_files_parsed": 12,
+    "late_sibling_read_only_pin": "e9ad0fc3479c8182d19046831006c423ea68ee85",
+    "local_links_checked": 90,
+    "main_read_only_pin": "e648df3e4fca73ab6b942232b5ca4b310e9cac08",
+    "parent_pin": "d942c4707d750f788f39acb137a04e871a93e0a6",
+    "receipt_input_hash_checks": 19,
+    "registered_claims": 31,
+    "required_scripts_passed": 3,
+    "test_counts": {
+      "complete": 7910,
+      "focused": 69,
+      "namespace": 15
+    }
+  },
+  "file_sha256": {
+    "README.md": "23191aaf736aa01c0112152661430b43c0f715359d6f3b26bdc224c3c72c91f1",
+    "docs/CLAIM_INDEX.md": "e3f6218d935309e5cb4549251a98565fbe78a71a17ce1de65565a0225fdd5c26",
+    "docs/CLAIM_LEDGER.md": "1067235071181be423dff60066d7c5a310bd745a7b97ccefea2e398e005ecaee",
+    "docs/CLAIM_NAMESPACE_REGISTRY.json": "cd030b6454496a290bfa956ba3a85071d9abced5d7e0e84216a159234337aea1",
+    "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md": "a8857c1bc9e538c5ed81d91e27b84afde288217bf5a3b71d23766ef2c540f1fc",
+    "observational_succ/all_gain_observers.py": "ec87e4d33794f1b29de935e2a7a4106d005a00a521a3024a56b305715bac4abc",
+    "observational_succ/joint_observer_entropy.py": "674e773ef41665321f9c79d59c74e9d5e98147c45416f3f8291adb0c002ed10a",
+    "observational_succ/joint_primary_observers.py": "fd9f08159a8e591d7f3aa8130a0dd0001acf4efc6cea6bfbc682dc1a4327fa4a",
+    "observational_succ/pascal_rank_process.py": "129f0b5254eb7944ad9c68ae227c175a074cba866a53ac9b4b3147f223dd798e",
+    "research/2026-10-24/PI_ALL_GAIN_RECEIPT.json": "97f66d006e10abaee3d35309813d7492b7eb5cf8a8a59b5080dd4e6ad61feb79",
+    "research/2026-10-24/PI_ALL_GAIN_RIGIDITY.md": "05866d9fcee90858256a63c7ee493981ca1b6caeffd17f19cba782ae99c3cb07",
+    "research/2026-10-24/PI_ALL_RANK_OBSERVERS.md": "fcc2374d8249496c7de63872a26883c7941ebf8437cc278493af98cd4785583b",
+    "research/2026-10-24/PI_ALL_RANK_RECEIPT.json": "bddc55ccb98997ce8eb545d1c40a2538196b524a7f89d75a44f8237245028a51",
+    "research/2026-10-24/PI_HYPOTHESIS_A_FOCUSED.txt": "86fb2ab0929183c077f943d869988746bb90cdaaa8d5a635614c8983ca8d2651",
+    "research/2026-10-24/PI_HYPOTHESIS_A_FOUNDATIONS.json": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "research/2026-10-24/PI_HYPOTHESIS_A_FULL_SUITE.txt": "97133829c11fb71f48fe271b4e54571b5be963608c3abd0f340354c6ad2b14cf",
+    "research/2026-10-24/PI_HYPOTHESIS_A_FULL_SUITE_META.json": "4522d9447e589ccc38349a92f7224131ce536decb36f8e72117feb49ad7e2833",
+    "research/2026-10-24/PI_HYPOTHESIS_A_HOLE_CONTRACT.md": "b03b59f410e1f25ca9be8882f937ac69d3a55aadae7c9862a61e4a754eeb8404",
+    "research/2026-10-24/PI_HYPOTHESIS_A_NAMESPACE.txt": "d272097da3688dea7172235bf3aa21bf20797789972f7d0b1c22b02f910978f3",
+    "research/2026-10-24/PI_HYPOTHESIS_A_ORDINAL.json": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "research/2026-10-24/PI_HYPOTHESIS_A_PROOF_AUDIT.md": "bc61c657d2f05cea3aad7d18a7400455f7c0fc9c0093c5c9aaaee223564ae174",
+    "research/2026-10-24/PI_HYPOTHESIS_A_PROVENANCE.json": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "research/2026-10-24/PI_HYPOTHESIS_A_REQUIRED_GATES.json": "00d7ad2d0b11c9228781902d5334374cc11eb5ef2ac1115a17541e2e4f22ece0",
+    "research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md": "efc79171037c4146a64058d18f478f311c7d046293b0e9702019d4f36f2b6435",
+    "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md": "ef87364bc85193c551cc34e78f8621e0fe8bd037cbb1777c1757f7da9eb7c938",
+    "research/2026-10-24/PI_JOINT_ADELIC_COMPACTNESS.md": "721a29b102d1b6799e7f3b9e31a02b737789b9cc7dd423f2273231990891e5a8",
+    "research/2026-10-24/PI_JOINT_OBSERVER_ENTROPY_RECEIPT.json": "6f5cbcab4c42cb196b96eb7a1b2d0e5b8682e7f6b181a0b95171974fe25f4f34",
+    "research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md": "0a81d935476428c4531c6a5f359ab1c1a7c4384e80f43972ca9e9a42878b3e1d",
+    "research/2026-10-24/PI_JOINT_PRIMARY_RECEIPT.json": "6229c7c1747842592ad914dae7499130611b5b8fb8dc51f6522d4ff1f5910994",
+    "research/2026-10-24/PI_RATIONAL_AUTHENTICATION_RECEIPT.json": "fa884bdd7aaa8c3e4a9c25838b19cc1e078168986c3bcf7aa7d9629b49f10f61",
+    "research/2026-10-24/PI_RATIONAL_SOURCE_AUTHENTICATION.md": "b8b93b27586a927b00ca1c9b441a15d362cb53c4ab9f73134a0852762c123b14",
+    "research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md": "08b7a32cfbeb40e33364f4c2ff12ab6de7c8679bf7047e40910a74e9b2a80e23",
+    "scripts/all_gain_observers_probe.py": "a7b573db61894ad7913ae09d8746f9e69c3f77eaab27f96457318871630745fe",
+    "scripts/joint_observer_entropy_probe.py": "2a331242099ce01d605437a85be8f448f63b4b6aeab47328e59b0112d09a550d",
+    "scripts/joint_primary_observers_probe.py": "1aa1a2d49ff6e917fe107b78616d7cb38e47a6d048c3a2292bfbefae8d03bdf6",
+    "scripts/pascal_rank_process_probe.py": "5fac4015fbb889238568d36037f11cf1767ce2cb307fafe989ae010efaaed773",
+    "tests/test_all_gain_observers.py": "6ddf11d5b0445dba349d96399a102988e256a6c6937158858819ee2502342fc7",
+    "tests/test_joint_observer_entropy.py": "092643eb53761b10dacf67f0ee71debf8b7c82b335ab252fdf02a5ee6f984d8a",
+    "tests/test_joint_primary_observers.py": "0b851bcc436400da41b3ca312c69fd37cecc28e87a12122639a9ad59d1e26fba",
+    "tests/test_pascal_rank_process.py": "39b4f3c8b322bf9058e6fda17738eb7881d8f7f239adb743219253fb0abec76e"
+  },
+  "local_links": [
+    {
+      "from": "README.md",
+      "target": "research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md"
+    },
+    {
+      "from": "README.md",
+      "target": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md"
+    },
+    {
+      "from": "docs/CLAIM_INDEX.md",
+      "target": "CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md"
+    },
+    {
+      "from": "docs/CLAIM_INDEX.md",
+      "target": "../research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md"
+    },
+    {
+      "from": "docs/CLAIM_LEDGER.md",
+      "target": "CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md"
+    },
+    {
+      "from": "docs/CLAIM_LEDGER.md",
+      "target": "../research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_ALL_RANK_OBSERVERS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_ALL_RANK_OBSERVERS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_ALL_GAIN_RIGIDITY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_ALL_GAIN_RIGIDITY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_ALL_GAIN_RIGIDITY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_ALL_GAIN_RIGIDITY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_ALL_GAIN_RIGIDITY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_ALL_GAIN_RIGIDITY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_ALL_GAIN_RIGIDITY.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_RATIONAL_SOURCE_AUTHENTICATION.md"
+    },
+    {
+      "from": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
+      "target": "../research/2026-10-24/PI_JOINT_ADELIC_COMPACTNESS.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_ALL_RANK_OBSERVERS.md",
+      "target": "PI_PASCAL_LUCAS_QUOTIENT.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_ALL_RANK_OBSERVERS.md",
+      "target": "../../observational_succ/pascal_rank_process.py"
+    },
+    {
+      "from": "research/2026-10-24/PI_ALL_RANK_OBSERVERS.md",
+      "target": "../../tests/test_pascal_rank_process.py"
+    },
+    {
+      "from": "research/2026-10-24/PI_ALL_RANK_OBSERVERS.md",
+      "target": "../../scripts/pascal_rank_process_probe.py"
+    },
+    {
+      "from": "research/2026-10-24/PI_ALL_RANK_OBSERVERS.md",
+      "target": "PI_ALL_RANK_RECEIPT.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_HOLE_CONTRACT.md",
+      "target": "PI_JOINT_ADELIC_COMPACTNESS.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_PROOF_AUDIT.md",
+      "target": "PI_TRIMMED_JOINT_ENTROPY.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_PROOF_AUDIT.md",
+      "target": "PI_ALL_GAIN_RIGIDITY.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_PROOF_AUDIT.md",
+      "target": "PI_ALL_RANK_OBSERVERS.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_PROOF_AUDIT.md",
+      "target": "PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_PROOF_AUDIT.md",
+      "target": "PI_RATIONAL_SOURCE_AUTHENTICATION.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_PROOF_AUDIT.md",
+      "target": "PI_JOINT_ADELIC_COMPACTNESS.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_PROOF_AUDIT.md",
+      "target": "PI_HYPOTHESIS_A_VALIDATION.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md",
+      "target": "PI_TRIMMED_JOINT_ENTROPY.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md",
+      "target": "PI_ALL_GAIN_RIGIDITY.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md",
+      "target": "PI_ALL_RANK_OBSERVERS.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md",
+      "target": "PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md",
+      "target": "PI_RATIONAL_SOURCE_AUTHENTICATION.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md",
+      "target": "PI_JOINT_ADELIC_COMPACTNESS.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md",
+      "target": "PI_HYPOTHESIS_A_VALIDATION.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_HYPOTHESIS_A_FULL_SUITE.txt"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_HYPOTHESIS_A_FULL_SUITE_META.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_HYPOTHESIS_A_FOCUSED.txt"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_HYPOTHESIS_A_NAMESPACE.txt"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_HYPOTHESIS_A_PROVENANCE.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_HYPOTHESIS_A_FOUNDATIONS.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_HYPOTHESIS_A_ORDINAL.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_HYPOTHESIS_A_REQUIRED_GATES.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_JOINT_OBSERVER_ENTROPY_RECEIPT.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_JOINT_PRIMARY_RECEIPT.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_ALL_RANK_RECEIPT.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_ALL_GAIN_RECEIPT.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_RATIONAL_AUTHENTICATION_RECEIPT.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_HYPOTHESIS_A_ARTIFACT_AUDIT.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_HYPOTHESIS_A_PROOF_AUDIT.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_HYPOTHESIS_A_VALIDATION.md",
+      "target": "PI_HYPOTHESIS_A_SYNTHESIS.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_JOINT_ADELIC_COMPACTNESS.md",
+      "target": "PI_PASCAL_PRIME_HEIGHT.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md",
+      "target": "PI_HYPOTHESIS_A_HOLE_CONTRACT.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md",
+      "target": "PI_PASCAL_PRIME_HEIGHT.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md",
+      "target": "../../observational_succ/joint_primary_observers.py"
+    },
+    {
+      "from": "research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md",
+      "target": "../../tests/test_joint_primary_observers.py"
+    },
+    {
+      "from": "research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md",
+      "target": "../../scripts/joint_primary_observers_probe.py"
+    },
+    {
+      "from": "research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md",
+      "target": "PI_JOINT_PRIMARY_RECEIPT.json"
+    },
+    {
+      "from": "research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md",
+      "target": "PI_PATH_SELECTION_SYNTHESIS.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md",
+      "target": "PI_FINITE_PRIME_CORRELATION.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md",
+      "target": "PI_PASCAL_LUCAS_QUOTIENT.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_JOINT_PRIMARY_OBSERVERS.md",
+      "target": "PI_PASCAL_PRIME_HEIGHT.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_RATIONAL_SOURCE_AUTHENTICATION.md",
+      "target": "PI_JOINT_PRIMARY_OBSERVERS.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md",
+      "target": "PI_SOURCE_COLLISION_ENTROPY.md"
+    },
+    {
+      "from": "research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md",
+      "target": "../../observational_succ/joint_observer_entropy.py"
+    },
+    {
+      "from": "research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md",
+      "target": "../../tests/test_joint_observer_entropy.py"
+    },
+    {
+      "from": "research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md",
+      "target": "../../scripts/joint_observer_entropy_probe.py"
+    },
+    {
+      "from": "research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md",
+      "target": "PI_JOINT_OBSERVER_ENTROPY_RECEIPT.json"
+    }
+  ],
+  "pi_normality": "OPEN",
+  "receipt_input_hashes": [
+    {
+      "path": "observational_succ/all_gain_observers.py",
+      "receipt": "PI_ALL_GAIN_RECEIPT.json",
+      "sha256": "ec87e4d33794f1b29de935e2a7a4106d005a00a521a3024a56b305715bac4abc"
+    },
+    {
+      "path": "observational_succ/pi_source_collision.py",
+      "receipt": "PI_ALL_GAIN_RECEIPT.json",
+      "sha256": "c3d1868624c3547124fd2cf33da35e10e8c48bec7922095cad83fb446f18a777"
+    },
+    {
+      "path": "observational_succ/source_history_transport.py",
+      "receipt": "PI_ALL_GAIN_RECEIPT.json",
+      "sha256": "cc13d7fb42a813b3547262491027f4efdd5a0c57328a554597926c4a47af72a2"
+    },
+    {
+      "path": "scripts/all_gain_observers_probe.py",
+      "receipt": "PI_ALL_GAIN_RECEIPT.json",
+      "sha256": "a7b573db61894ad7913ae09d8746f9e69c3f77eaab27f96457318871630745fe"
+    },
+    {
+      "path": "tests/test_all_gain_observers.py",
+      "receipt": "PI_ALL_GAIN_RECEIPT.json",
+      "sha256": "6ddf11d5b0445dba349d96399a102988e256a6c6937158858819ee2502342fc7"
+    },
+    {
+      "path": "observational_succ/joint_observer_entropy.py",
+      "receipt": "PI_JOINT_OBSERVER_ENTROPY_RECEIPT.json",
+      "sha256": "674e773ef41665321f9c79d59c74e9d5e98147c45416f3f8291adb0c002ed10a"
+    },
+    {
+      "path": "observational_succ/pi_source_genesis.py",
+      "receipt": "PI_JOINT_OBSERVER_ENTROPY_RECEIPT.json",
+      "sha256": "147dcb1b42b0de157c55385896cb1b15b17c1bb4ba14ea6fb8effed24ed62cf1"
+    },
+    {
+      "path": "research/2026-10-24/PI_HYPOTHESIS_A_HOLE_CONTRACT.md",
+      "receipt": "PI_JOINT_OBSERVER_ENTROPY_RECEIPT.json",
+      "sha256": "b03b59f410e1f25ca9be8882f937ac69d3a55aadae7c9862a61e4a754eeb8404"
+    },
+    {
+      "path": "research/2026-10-24/PI_TRIMMED_JOINT_ENTROPY.md",
+      "receipt": "PI_JOINT_OBSERVER_ENTROPY_RECEIPT.json",
+      "sha256": "08b7a32cfbeb40e33364f4c2ff12ab6de7c8679bf7047e40910a74e9b2a80e23"
+    },
+    {
+      "path": "scripts/joint_observer_entropy_probe.py",
+      "receipt": "PI_JOINT_OBSERVER_ENTROPY_RECEIPT.json",
+      "sha256": "2a331242099ce01d605437a85be8f448f63b4b6aeab47328e59b0112d09a550d"
+    },
+    {
+      "path": "tests/test_joint_observer_entropy.py",
+      "receipt": "PI_JOINT_OBSERVER_ENTROPY_RECEIPT.json",
+      "sha256": "092643eb53761b10dacf67f0ee71debf8b7c82b335ab252fdf02a5ee6f984d8a"
+    },
+    {
+      "path": "observational_succ/bbp_source_memory.py",
+      "receipt": "PI_JOINT_PRIMARY_RECEIPT.json",
+      "sha256": "dd439f0a2231399d2a0ea4cf0e40a1e399338537723c468e688b0ac7d860fb54"
+    },
+    {
+      "path": "observational_succ/joint_primary_observers.py",
+      "receipt": "PI_JOINT_PRIMARY_RECEIPT.json",
+      "sha256": "fd9f08159a8e591d7f3aa8130a0dd0001acf4efc6cea6bfbc682dc1a4327fa4a"
+    },
+    {
+      "path": "observational_succ/source_path_projector.py",
+      "receipt": "PI_JOINT_PRIMARY_RECEIPT.json",
+      "sha256": "25603db3fb8c2527f15d7be5d0d4a172c09ed66bbe937a42c060e9e387e817f6"
+    },
+    {
+      "path": "scripts/joint_primary_observers_probe.py",
+      "receipt": "PI_JOINT_PRIMARY_RECEIPT.json",
+      "sha256": "1aa1a2d49ff6e917fe107b78616d7cb38e47a6d048c3a2292bfbefae8d03bdf6"
+    },
+    {
+      "path": "tests/test_joint_primary_observers.py",
+      "receipt": "PI_JOINT_PRIMARY_RECEIPT.json",
+      "sha256": "0b851bcc436400da41b3ca312c69fd37cecc28e87a12122639a9ad59d1e26fba"
+    },
+    {
+      "path": "observational_succ/pascal_rank_process.py",
+      "receipt": "PI_ALL_RANK_RECEIPT.json",
+      "sha256": "129f0b5254eb7944ad9c68ae227c175a074cba866a53ac9b4b3147f223dd798e"
+    },
+    {
+      "path": "scripts/pascal_rank_process_probe.py",
+      "receipt": "PI_ALL_RANK_RECEIPT.json",
+      "sha256": "5fac4015fbb889238568d36037f11cf1767ce2cb307fafe989ae010efaaed773"
+    },
+    {
+      "path": "tests/test_pascal_rank_process.py",
+      "receipt": "PI_ALL_RANK_RECEIPT.json",
+      "sha256": "39b4f3c8b322bf9058e6fda17738eb7881d8f7f239adb743219253fb0abec76e"
+    }
+  ],
+  "self_hash_omitted": true,
+  "status": "PASS"
+}
