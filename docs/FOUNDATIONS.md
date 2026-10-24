@@ -2,6 +2,12 @@
 
 **Version:** founding research frame, October 2026. **Status:** proposal plus cited/classified mathematics, not a complete theory of cognition or a proof of RH.
 
+The [Principia connection](PRINCIPIA_CONNECTION.md) places this program alongside
+the earlier ambition to make mathematical justification explicit. Its practical
+bridge is the classical ancestral relation: hereditary predicates characterize
+finite reachability. The [observer theorem and counterexamples](CLAIM_SUPPLEMENT_PRINCIPIA_ANCESTRAL.md)
+specify when this reachability survives forgetting source distinctions.
+
 ## 1. The initiating distinction
 
 The originating claim is **not** “Hilbert space is logically greater than the integers.” It is: in our empirically modeled physical world, a mathematician and their measuring environment are already physical processes, generally represented using quantum Hilbert-space models, **before** they form mathematical concepts about the world.

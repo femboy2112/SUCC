@@ -1,5 +1,11 @@
 # Research claim ledger
 
+The additive [Principia ancestral supplement](CLAIM_SUPPLEMENT_PRINCIPIA_ANCESTRAL.md)
+records the classical hereditary-predicate bridge, the exact saturation criterion
+for selected-source endpoint reachability, and counterexamples separating it from
+full path preservation. [Historical context](PRINCIPIA_CONNECTION.md) attributes
+the connection without claiming a new foundation or scholarly priority.
+
 The additive [Academic Transmutation supplement ATX-01–12](CLAIM_SUPPLEMENT_ACADEMIC_TRANSMUTATION.md)
 records exact future-safe forgetting, causal lifting, the uniform arithmetic
 nonidentification family, Gamma bounds and two historical operator corrections.

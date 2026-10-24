@@ -1,0 +1,58 @@
+name: Principia ancestral observer bridge
+
+on:
+  pull_request:
+    paths:
+      - 'observational_succ/ancestral_observer.py'
+      - 'observational_succ/future_safe_quotient.py'
+      - 'tests/test_ancestral_observer.py'
+      - 'formal/PrincipiaAncestral.lean'
+      - 'scripts/check_principia_lean.py'
+      - 'scripts/principia_ancestral_probe.py'
+      - 'research/2026-10-24/principia_receipts/exact-model.json'
+      - 'lean-toolchain'
+      - '.github/workflows/principia-ancestral.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: principia-ancestral-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  finite-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Independent finite closure and hereditary-set oracles
+        run: python -m unittest discover -s tests -p 'test_ancestral_observer.py' -v
+      - name: Replay selected-source and stronger-trace controls
+        run: |
+          python scripts/principia_ancestral_probe.py > "$RUNNER_TEMP/principia-model.json"
+          cmp research/2026-10-24/principia_receipts/exact-model.json "$RUNNER_TEMP/principia-model.json"
+  kernel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install pinned core Lean
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh -o "$RUNNER_TEMP/elan-init.sh"
+          sh "$RUNNER_TEMP/elan-init.sh" -y --default-toolchain "$(cat lean-toolchain)"
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Export actual theorem types and reject both false-rule mutations
+        run: python3 scripts/check_principia_lean.py --output "$RUNNER_TEMP/principia-kernel.json"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: principia-ancestral-kernel
+          path: ${{ runner.temp }}/principia-kernel.json
