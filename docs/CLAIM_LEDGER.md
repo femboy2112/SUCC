@@ -916,3 +916,11 @@ The exact J8 and J24 instances strictly improve both signed Schur lower
 blocks. Both resulting lower blocks remain negative definite, so the true
 source sign is **UNVERIFIED**, not refuted. Universal paper proofs and exact
 finite evidence remain distinct. No Lean or RH authority is claimed.
+
+
+## Selected BBP lag/carry research (2026-10-24)
+
+[LCR-01–10](CLAIM_SUPPLEMENT_PI_LAG_CARRY.md) records exact selected lag
+constraints, a linear early-carry-prefix no-go for partial authentication,
+conditional prime-clock entropy obstructions, and certified canonical collision
+windows. The actual selected subpower bound and pi normality remain unproved.
