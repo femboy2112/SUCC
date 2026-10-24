@@ -1,7 +1,7 @@
 # Claim Index
 
 **2026-10-24 Pascal / source geometry continuation:**
-[PJT-01--28](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md) and
+[PJT-01--30](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md) and
 [research synthesis](../research/2026-10-24/PI_PASCAL_SYNTHESIS.md).
 The authentic BBP source has an exact all-order dyadic Pascal profile and a
 sharp minimal Mahler degree. Positive beta kernels give coherent rational

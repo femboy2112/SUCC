@@ -60,6 +60,12 @@ was inspected as a donor, not merged or treated as inherited authority.
 Its finite base-conversion and signed Ramanujan-shell identities do not give
 the missing real retention frequency.
 
+A late live-frontier check also read sibling [draft #271](https://github.com/femboy2112/SUCC/pull/271)
+at `4eafc6151e9a494f2aea8ec79ca6cf5608152c80`. It remains unmerged here.
+Its complete four-bit Walsh contrast and source-corrected Fourier jet
+complement this branch. The analytic remainder was audited, and the bounded
+phase-removal corollary below records the additional deduction precisely.
+
 The actual source, with its original normalization, is
 
 $$
@@ -419,6 +425,143 @@ most $m\|f\|_\infty/N$, with sharp endpoint examples. It cannot turn a
 stationary non-Haar law into Haar by reweighting its translates.
 
 ## 8. The surviving proof targets, with a stop rule
+
+### Paper followup: even the real constant can be prescribed
+
+A final strengthening is proved in
+[the prescribed-constant addendum](PI_PASCAL_PRESCRIBED_CONSTANT.md).
+For every positive real $C$ and fixed dyadic precision $L$, the orthogonal
+moment construction can start from density $2C$, keeping total tail mass $C$.
+At every stage choose the next Newton coefficient in the same rational
+dyadic coset as before. The density corrections may now be real rather than
+rational. The resulting density is entire and lies between $3C/2$ and $5C/2$.
+
+The zero-initial source still has **rational values at every integer**, a
+compatible analytic dyadic interpolation with the full authentic profile and
+fixed-precision agreement, and positive completely monotone real-analytic
+forcing of quadratic decay. Its real source states are
+
+$$
+H(n)=C16^n-\eta_n,\qquad \eta_n=O_C(n^{-2}).
+$$
+
+When $C$ is irrational, the tail moments $\eta_n$ need not be rational;
+the values of $H$ and its forcing are rational by the Newton construction.
+No common power series converging in both completions is asserted.
+
+The same construction can also satisfy arbitrary fixed precision at **any
+fixed finite set of primes**. In particular, at every nonnegative integer
+time it can agree with the authentic rational source modulo $p^L$ for each
+$p\in\{2,3,5,7,11,13\}$, while retaining the full dyadic profile. The
+origin Newton coefficients can match their relative precision at those
+primes as well. Denominators coprime to the finite prime set keep the
+required rational cosets dense in the real line. No analytic interpolation
+on every odd $\mathbb Z_p$ is asserted. This is a finite-place congruence
+counterexample; it does not refute the separate conditional theorem using
+real tripling invariance of the selected law.
+
+Choose $C=\sum_{j\ge2}16^{-j!}$. Elementary rational approximations prove
+this constant transcendental. Its nonzero base-16 digits have density zero,
+so its empirical circle law is a point mass at zero, and the source tail
+preserves that law. On windows comparable to $[u,4u]$, all but
+$O_C((\log u)^2)$ source indices and their required successors cluster
+within $O_C(u^{-2})$ of the same circle point. Central retention consequently
+tends to one at the prescribed polynomial radii. Thus even transcendence
+does not rescue the generic profile-plus-positive-kernel inference.
+
+Positive absolute precision at every prime simultaneously would instead
+force equality of the corresponding rational values; the finite-prime
+construction does not make that assertion. Exact source identification
+alone still does not provide its statistical estimate.
+
+This construction still changes the exact BBP four-pole function. It does
+not supply the authentic common-denominator restrictions or a finite
+rational forcing formula. The addition is a paper theorem, with no new
+finite test count or formal-kernel authority.
+
+### Closure targets
+
+The newly available [sibling carry-jet proof](https://github.com/femboy2112/SUCC/blob/4eafc6151e9a494f2aea8ec79ca6cf5608152c80/research/2026-10-24/PASCAL_CARRY_INTERFEROMETRY.md)
+makes the full four-bit interaction explicit. With $b_j$ the four bits of
+$\kappa\bmod16$ and $\sigma_j=(-1)^{b_j}$,
+
+$$
+16\mathbf1_{\kappa\equiv0\ (16)}=\prod_{j=0}^3(1+\sigma_j).
+$$
+
+The interaction groups have Pascal multiplicities $(1,4,6,4,1)$. Uniform
+even-parity words have every one-, two-, and three-bit marginal uniform,
+while the zero word has probability $1/8$. Thus the fourth interaction
+cannot be discarded on the strength of all lower-order tests. This is an
+observation-class counterexample, not an authentic BBP trajectory.
+
+### A bounded forcing-phase removal (PROVED LOCAL)
+
+Keep the authentic source and the exact selected mask. For $p=8m+1\ge17$,
+let $W=\{m+1,\ldots,4m-1\}$, $D=3m-1$, and let
+$E_\tau=\{(s,t)\in W^2:|\delta^+_{s,t}|\le\tau\}$ for
+$\epsilon_p<\tau\le1/4$. Here $\delta^+$ is the centered successor
+difference, $Q_0=|E_\tau|$, and
+$\eta_{s,t}=r(t+1)-r(s+1)$ obeys
+$|\eta|\le\epsilon_p<15/[(p+8)(p+9)]$. Let $Z$ count its zero centered
+carry branch, and $H=\{-7,\ldots,-1,1,\ldots,8\}$.
+
+The integer carry identity and cyclic character orthogonality give
+
+$$
+16Z-Q_0=\sum_{h\in H}\sum_{E_\tau}
+e(h(y_t-y_s))e(h(\eta-\delta^+)/16),\qquad e(x)=e^{2\pi ix}.
+$$
+
+Remove only $\eta$ from the exponential phase, defining
+
+$$
+S_0=\sum_{h\in H}\sum_{E_\tau}
+e(h(y_t-y_s))e(-h\delta^+/16).
+$$
+
+Since $\sum_{h\in H}|h|=64$ and
+$|e(x)-e(y)|\le2\pi|x-y|$,
+
+$$
+\boxed{|16Z-Q_0-S_0|\le8\pi Q_0\epsilon_p<1485/28.}
+$$
+
+The last constant follows from $Q_0\le D^2<9p^2/64$ and $\pi<22/7$.
+No source distribution estimate is used. The same exact mask $E_\tau$
+and the actual successor values remain throughout.
+
+Let $\widetilde{\mathcal J}_2$ replace $e(-h\delta^+/16)$ in $S_0$
+by its degree-two Taylor polynomial. The real-argument integral remainder
+gives
+
+$$
+|16Z-Q_0-\widetilde{\mathcal J}_2|
+\le8\pi Q_0\epsilon_p+
+\frac{15Q_0}{6}\big((22/7)\tau\big)^3.
+$$
+
+At the inherited terminal radius $\tau\asymp p^{-2/5}$, this is
+$O(1)+O(p^{4/5})=o(D)$. At every prescribed scale, choosing Taylor degree
+$\lceil\log p\rceil$ gives $O(1)+o(1)$, still $o(D)$; it does not give
+$o(1)$ after the forcing-phase removal. The first term is uniformly bounded.
+
+The hard selected sum remains. For a trigonometric cutoff $K$, its leading
+conditional term at an outer frequency $h$ is exactly
+
+$$
+\sum_\ell\widehat K(\ell)
+\left|\sum_{n\in W}
+e\big((h+16\ell)y_n+\ell r(n+1)\big)\right|^2.
+$$
+
+Thus fifteen fixed outer frequencies do not imply a fixed bandwidth: the
+near-return cutoff retains further frequencies. Removing forcing from the
+discontinuous mask would require a new boundary-count bound. The clustering
+controls have small Taylor errors and interaction sums of quadratic size.
+The corollary pays a deterministic phase budget, not a cancellation budget.
+
+### The statistical estimate still required
 
 The frozen principal question was whether Pascal differences plus the fixed
 real kernel control conditional alignment of the real carry. This round

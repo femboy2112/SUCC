@@ -125,7 +125,7 @@ interval containment and certificate boundaries. Their reviews found no
 substantive mathematical or implementation defect at the stated scope.
 
 The final artifact audit checks Python compilation, all 13 hashed input files,
-local document targets, balanced math/code fences, and the 28 exact registered
+local document targets, balanced math/code fences, and the 30 exact registered
 claim rows. Its machine result is [artifact audit](PI_PASCAL_ARTIFACT_AUDIT.json).
 
 ## 5. Authority and unresolved work
@@ -148,3 +148,37 @@ No formal Lean authority, theory-independence result, scholarly priority,
 external peer review, or mathematical conclusion from CI is claimed.
 The eventual published tree must be compared with the locally staged tree;
 remote workflow status is reported separately from these completed local gates.
+
+## 6. Final paper-only followups
+
+After the first draft commit, the arbitrary-positive-constant extension of
+the moment construction was separately derived and audited. Its
+[full proof](PI_PASCAL_PRESCRIBED_CONSTANT.md) explains exactly why rational
+Newton coefficients still give rational integer source and forcing values,
+although the real density corrections and tail moments may be irrational.
+A specific Liouville constant gives a transcendental, nonnormal real source
+with empirical circle law delta0 and almost complete central retention.
+
+This followup changes proof documents, claim navigation, the PJT registry
+and their validation receipts. The three production modules, three test files, standalone exact probe,
+13 receipt inputs and all finite assertion counts remain unchanged. PJT-29
+is paper authority; no numerical construction of its irrational density is
+claimed. The namespace guard is replayed after its registration, and the
+artifact audit includes the new document and its SHA-256. This avoids implying
+that the earlier finite controls prove the stronger infinite construction.
+
+The newly available sibling #271 was also read at exact head
+`4eafc6151e9a494f2aea8ec79ca6cf5608152c80`, without merging it. Its analytic
+Taylor remainder passed the read-only audit. PJT-30 records the additional
+bound removing only the forcing phase with error less than 1485/28 while
+retaining the exact selected mask. The constant and sign were checked by
+separate algebraic derivations; this is another paper corollary, not a new
+finite cancellation result. The final namespace guard covers all 30 rows.
+Its replay passed all 15 tests in 0.047 seconds, exit 0:
+[final namespace log](PI_PASCAL_NAMESPACE_FINAL.txt).
+
+The prescribed-constant proof also includes the finite-prime corollary:
+all nonnegative integer source values can match any fixed finite set of
+prime-place precisions while the real constant remains arbitrary. Odd-prime
+global analytic interpolation is not asserted. The updated artifact audit
+records this paper's hash; the finite numerical receipt is unchanged.

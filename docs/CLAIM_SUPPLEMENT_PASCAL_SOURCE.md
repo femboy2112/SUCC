@@ -44,6 +44,8 @@ adverse controls, and open falsification opportunities. This table indexes them.
 | PJT-26 | A Pascal row at the origin can cancel a fresh source prime: p89, order35 has source valuation0 | VERIFIED EXACT FINITE / REFUTED unrestricted origin-row denominator inference. The translated after-birth theorem remains valid |
 | PJT-27 | Separate exact implementations, held-out starts/orders, Machin enclosures, hostile controls and repository gates calibrate the new instruments | VERIFIED_FINITE only to executed ranges in the receipt and validation record; same-model audits are not external refereeing |
 | PJT-28 | Real half retention, cumulative four-bit excess, same-law tripling or31 symmetry, and pi normality | OPEN. The inherited closure theorems are conditional; no source frequency saving is promoted from these identities |
+| PJT-29 | The entire positive-moment construction can prescribe any positive real source constant while retaining rational nonnegative-integer source values, full dyadic profile, and any fixed finite-prime precision; a Liouville choice has circle law delta0 and central retention tending to1 | PROVED PAPER in the prescribed-constant addendum. Density corrections and irrational tail moments need not be rational; no full odd-prime interpolation is claimed. The exact BBP finite rational forcing is changed; no added finite or Lean authority |
+| PJT-30 | With the exact authentic selected pair mask retained, removing forcing only from the fifteen-mode phase costs less than1485/28; a terminal quadratic Taylor approximation then costs o(D) | PROVED LOCAL from the sibling271 character identity and the original source span bound. The mask, successor differences and conditional Fourier sum remain; no cancellation bound or bounded-bandwidth claim |
 
 ## Reproduction
 
@@ -54,3 +56,9 @@ calibration/held-out split from the later disclosed recurrence and height checks
 The [validation record](../research/2026-10-24/PI_PASCAL_VALIDATION.md) records
 the executed checks, failures corrected during development, and authority limits.
 Historical claim rows and archived source files are unchanged.
+
+The final paper followup [prescribes the real constant](../research/2026-10-24/PI_PASCAL_PRESCRIBED_CONSTANT.md)
+without altering the previously tested production modules or finite receipt.
+PJT-29 records its separate proof authority and its stronger irrational
+countermodel boundary. PJT-30 records the late sibling audit's bounded
+phase-removal corollary, with its full proof in the synthesis.

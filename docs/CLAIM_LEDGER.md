@@ -1,6 +1,6 @@
 # Research claim ledger
 
-The additive [Pascal source supplement PJT-01--28](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md)
+The additive [Pascal source supplement PJT-01--30](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md)
 records exact dyadic difference valuations, minimax Mahler approximation,
 positive real kernels, coherent prime-base filters, explicit carry costs,
 full-profile clustering controls, minimal recurrences and source-prime heights.
