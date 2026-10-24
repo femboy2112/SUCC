@@ -34,11 +34,12 @@ def _q(x, name: str) -> F:
 # --------------------------------------------------------------------- M2
 @dataclass(frozen=True)
 class Countermodel:
-    """An exact refutation of a universally quantified claim.
+    """A reported countermodel with separately audited source membership.
 
-    `witness` is the claimed member of the hypothesis class, `membership` is the
-    exact evidence it really is one (the most-skipped step), `violation` is the
-    exact signed margin by which the claim fails.
+    Strings are NOT evidence of class membership. membership_checked records
+    only the result of a caller-supplied FINITE executable checker, which does
+    not establish the soundness of an arbitrary universal mathematical class.
+    The negative margin is exact arithmetic; theorem authority remains external.
     """
 
     claim: str
@@ -74,10 +75,11 @@ class Countermodel:
 def exact_countermodel(claim: str, witness: str, membership: str,
                        violation, *, source_witness=None,
                        membership_checker=None) -> Countermodel:
-    """Wrap an exact countermodel, refusing a non-negative margin.
+    """Package a negative-margin witness with an optional finite source checker.
 
-    A 'countermodel' whose violation is zero or positive is not a refutation;
-    this is returned as such rather than silently promoted.
+    With no checker, refutes=False even when violation is negative.
+    A supplied predicate does not by itself constitute an independent proof
+    that the source belongs to the full mathematical hypothesis class.
     """
     if membership_checker is not None and not callable(membership_checker):
         raise MechanismError("membership checker must be callable")
@@ -123,27 +125,13 @@ class ThresholdReport:
 
 def threshold_bisect(predicate: Callable[[F], bool], lo, hi,
                      direction: str = ">", steps: int = 96) -> F:
-    """Exact bisection for the flip point of a monotone predicate.
+    """Rational midpoint of a finite dyadic threshold BRACKET.
 
-    `predicate(p)` must be monotone in p and `predicate(lo) != predicate(hi)`.
-    Returns the largest dyadic-rational p with `predicate(p)` true when
-    direction == '>', else the smallest. Exact: no float is used.
+    Caller must prove monotonicity separately. Exact Fraction arithmetic
+    does not identify the true real threshold in finite time in general.
     """
-    lo, hi = _q(lo, "lo"), _q(hi, "hi")
-    if type(steps) is not int or steps < 1:
-        raise MechanismError("steps >= 1 integer required")
-    plo, phi = bool(predicate(lo)), bool(predicate(hi))
-    if plo == phi:
-        raise MechanismError("predicate is not separating on [lo, hi]")
-    if direction not in (">", "<"):
-        raise MechanismError("direction must be '>' or '<'")
-    for _ in range(steps):
-        mid = (lo + hi) / 2
-        if bool(predicate(mid)) == plo:
-            lo = mid
-        else:
-            hi = mid
-    return lo if direction == ">" else hi
+    a,b=threshold_bisect_interval(predicate,lo,hi,direction,steps)
+    return (a+b)/2
 
 
 def threshold_report(predicate, lo, hi, available, direction=">",
@@ -177,11 +165,11 @@ def threshold_bisect_interval(predicate, lo, hi, direction=">", steps=96):
 # --------------------------------------------------------------------- M1
 @dataclass(frozen=True)
 class CriterionAudit:
-    """Shape audit of a conditional criterion `Target <= Premise`.
+    """Metadata-only diagnostic about premises and known failure modes.
 
-    The verdict order encodes the observer-category fidelity test
-    (docs/PROOF_MECHANISMS.md section 12): a reduction is faithful iff its
-    failure mode is observable at the target stage.
+    It does not prove the caller's Boolean claims, source faithfulness,
+    functorial injectivity on hom-sets, or target-relative sufficiency.
+    Those are distinct mathematical proof obligations.
     """
 
     target: str
