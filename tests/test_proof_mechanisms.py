@@ -22,6 +22,8 @@ class TestExactCountermodel(unittest.TestCase):
             witness="h = P5(2t) - P3(2t)",
             membership="h(+-1/2)=0 and h in H^1(-1/2,1/2)",
             violation=F(36) - F(60),          # ||h'||^2 - ||(Q4h)'||^2
+            source_witness=(36,60),
+            membership_checker=lambda w: w == (36,60),
         )
         self.assertTrue(cm.refutes)
         self.assertEqual(cm.violation, F(-24))
@@ -31,6 +33,13 @@ class TestExactCountermodel(unittest.TestCase):
         cm = exact_countermodel("x", "y", "z", F(0))
         self.assertFalse(cm.refutes)
         self.assertIn("does NOT refute", cm.report())
+
+    def test_negative_margin_without_verified_membership_refuses(self):
+        cm=exact_countermodel("arbitrary universal", "untyped witness",
+                             "membership claimed by author",F(-1))
+        self.assertFalse(cm.refutes)
+        self.assertTrue(cm.negative_margin)
+        self.assertIn("UNVERIFIED MEMBERSHIP",cm.report())
 
     def test_rejects_float(self):
         with self.assertRaises(MechanismError):
@@ -50,10 +59,20 @@ class TestThresholdBisect(unittest.TestCase):
         target = F(363594907672565835, 604462909807314587353088)
         rep = threshold_report(lambda p: p < target, 0, 1,
                                available=F(121, 32), direction="<", steps=64)
-        self.assertTrue(rep.exact)
+        self.assertFalse(rep.exact)
+        self.assertLessEqual(rep.lower, target)
+        self.assertGreaterEqual(rep.upper, target)
         self.assertGreater(rep.ratio, 6_000_000)   # ~6.29e6
         self.assertLess(rep.ratio, 7_000_000)
         self.assertIn("distance ratio", rep.report())
+
+    def test_exact_arithmetic_is_not_exact_real_threshold(self):
+        from observational_succ.proof_mechanisms import threshold_bisect_interval
+        low,high=threshold_bisect_interval(lambda p:p*p<F(2),0,2,
+                                            direction="<",steps=80)
+        self.assertLess(low*low,2)
+        self.assertGreaterEqual(high*high,2)
+        self.assertGreater(high,low)
 
     def test_requires_separating_bracket(self):
         with self.assertRaises(MechanismError):
@@ -95,14 +114,14 @@ class TestCriterionAudit(unittest.TestCase):
                             premise_equivalent_to_target=False,
                             falsifier_named=True,
                             structural_feature_killed_in_one_step=True)
-        self.assertIn("TRANSIENT", a.verdict)
+        self.assertIn("TRANSIENT_QUOTIENT_WARNING", a.verdict)
 
     def test_flags_non_faithful(self):
         a = criterion_audit("t", "p", generic_in_x=False,
                             premise_equivalent_to_target=False,
                             falsifier_named=True,
                             failure_observable_at_target=False)
-        self.assertIn("NON_FAITHFUL", a.verdict)
+        self.assertIn("TARGET_TEST_INCOMPLETE", a.verdict)
 
     def test_faithful_specific_is_ok(self):
         a = criterion_audit("t", "p", generic_in_x=False,

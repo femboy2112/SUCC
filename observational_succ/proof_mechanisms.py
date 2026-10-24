@@ -45,16 +45,26 @@ class Countermodel:
     witness: str
     membership: str
     violation: F
+    membership_checked: bool = False
 
     def __post_init__(self) -> None:
         object.__setattr__(self, "violation", _q(self.violation, "violation"))
 
     @property
     def refutes(self) -> bool:
+        """Relative to a supplied, executed finite membership checker only."""
+        return self.violation < 0 and self.membership_checked
+
+    @property
+    def negative_margin(self) -> bool:
         return self.violation < 0
 
     def report(self) -> str:
-        kind = "REFUTES" if self.refutes else "does NOT refute (violation >= 0)"
+        kind = ("FINITE-CHECKED REFUTATION RELATIVE TO SUPPLIED CHECKER"
+                if self.refutes else
+                "UNVERIFIED MEMBERSHIP: negative margin alone is NOT a refutation"
+                if self.negative_margin else
+                "does NOT refute (violation >= 0)")
         return (f"[M2] {kind}: claim={self.claim!r}\n"
                 f"     witness={self.witness}\n"
                 f"     membership={self.membership}\n"
@@ -62,14 +72,24 @@ class Countermodel:
 
 
 def exact_countermodel(claim: str, witness: str, membership: str,
-                       violation) -> Countermodel:
+                       violation, *, source_witness=None,
+                       membership_checker=None) -> Countermodel:
     """Wrap an exact countermodel, refusing a non-negative margin.
 
     A 'countermodel' whose violation is zero or positive is not a refutation;
     this is returned as such rather than silently promoted.
     """
+    if membership_checker is not None and not callable(membership_checker):
+        raise MechanismError("membership checker must be callable")
+    checked = False
+    if membership_checker is not None:
+        result = membership_checker(source_witness)
+        if type(result) is not bool:
+            raise MechanismError("membership checker must return an exact bool")
+        checked = result
     return Countermodel(claim=claim, witness=witness,
-                        membership=membership, violation=_q(violation, "violation"))
+                        membership=membership, violation=_q(violation, "violation"),
+                        membership_checked=checked)
 
 
 # --------------------------------------------------------------------- M8
@@ -79,8 +99,10 @@ class ThresholdReport:
 
     threshold: F
     available: F
-    direction: str          # ">" if the conclusion holds when param > threshold
+    direction: str          # > means true above the bracket
     exact: bool
+    lower: F | None = None
+    upper: F | None = None
 
     @property
     def ratio(self) -> F | None:
@@ -95,7 +117,8 @@ class ThresholdReport:
                 f"     exact threshold = {self.threshold}\n"
                 f"     available       = {self.available}\n"
                 f"     distance ratio  = {rtxt}\n"
-                f"     exact bisection = {self.exact}")
+                f"     DYADIC threshold bracket = [{self.lower}, {self.upper}]\n"
+                f"     exact threshold identified = {self.exact}")
 
 
 def threshold_bisect(predicate: Callable[[F], bool], lo, hi,
@@ -125,10 +148,30 @@ def threshold_bisect(predicate: Callable[[F], bool], lo, hi,
 
 def threshold_report(predicate, lo, hi, available, direction=">",
                      steps: int = 96) -> ThresholdReport:
-    thr = threshold_bisect(predicate, lo, hi, direction, steps)
-    return ThresholdReport(threshold=thr,
+    """Exact dyadic ARITHMETIC produces a bracket, NOT an exact real threshold."""
+    a,b=threshold_bisect_interval(predicate,lo,hi,direction,steps)
+    return ThresholdReport(threshold=(a+b)/2,
                            available=_q(available, "available"),
-                           direction=direction, exact=True)
+                           direction=direction, exact=False, lower=a,upper=b)
+
+
+def threshold_bisect_interval(predicate, lo, hi, direction=">", steps=96):
+    """Return a dyadic threshold bracket, assuming caller's monotonicity claim."""
+    lo, hi = _q(lo,"lo"),_q(hi,"hi")
+    if type(steps) is not int or steps<1 or direction not in (">","<"):
+        raise MechanismError("valid direction and positive steps required")
+    plo,phi=bool(predicate(lo)),bool(predicate(hi))
+    if plo==phi:
+        raise MechanismError("predicate is not separating on supplied bracket")
+    if (direction==">" and (plo or not phi)) or (direction=="<" and (not plo or phi)):
+        raise MechanismError("endpoint truth orientation contradicts direction")
+    for _ in range(steps):
+        mid=(lo+hi)/2
+        if bool(predicate(mid))==plo:
+            lo=mid
+        else:
+            hi=mid
+    return lo,hi
 
 
 # --------------------------------------------------------------------- M1
@@ -156,15 +199,17 @@ class CriterionAudit:
         if not self.falsifier_named:
             return "HOLLOW: no stated way the premise could be false"
         if self.structural_feature_killed_in_one_step:
-            return ("TRANSIENT: the feature used is annihilated by one step of "
-                    "the dynamics, so it cannot control recurrent statistics")
+            return ("TRANSIENT_QUOTIENT_WARNING: supplied feature vanishes under a "
+                    "claimed quotient, but the full source may still control future "
+                    "dynamics; prove a source/action/readout commuting diagram")
         if not self.failure_observable_at_target:
-            return ("NON_FAITHFUL: the failure mode is invisible at the target "
-                    "stage; the reduction is a lossy quotient posing as an "
-                    "equivalence")
+            return ("TARGET_TEST_INCOMPLETE: a hidden failure may invalidate "
+                    "target sufficiency; this metadata cannot prove categorical "
+                    "non-faithfulness or absence of a source factor")
         if self.generic_in_x:
-            return ("GENERIC: criterion holds for every source; cannot "
-                    "discriminate the target from a generic one")
+            return ("GENERIC IMPLICATION: may be useful only after proving its "
+                    "premise for the authenticated selected source; generic "
+                    "applicability is not a mathematical failure")
         return "OK: criterion is specific, falsifiable and faithful"
 
     def report(self) -> str:
@@ -197,5 +242,5 @@ def criterion_audit(target: str, premise: str, generic_in_x: bool,
 
 
 __all__ = ["MechanismError", "Countermodel", "exact_countermodel",
-           "ThresholdReport", "threshold_bisect", "threshold_report",
+           "ThresholdReport", "threshold_bisect", "threshold_bisect_interval", "threshold_report",
            "CriterionAudit", "criterion_audit"]
