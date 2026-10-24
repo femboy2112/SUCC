@@ -52,3 +52,8 @@ For any claimed signed saving require a new source-specific hypothesis or exact 
 ## Completion contract
 
 Concrete deliverables: new proof or bound / decisive no-go, exact source witnesses, runnable tests, deterministic receipts, an independently audited paper-level derivation, claim namespace with earned statuses, coherent handoff. Review correct branch ancestry and hosted new-head CI; preserve provenance and signed original archives; commit/push a draft PR. Never assert π normality without a legitimate source-specific all-scale \(O(D)\) or equivalent sufficiently strong cumulative estimate.
+
+
+## PASC-10 donor: initial-selector Haar averaging (DO NOT PROMOTE)
+
+The addendum \`research/2026-10-24/PASCAL_SOURCE_GAUGE_AVERAGE.md\` proves an unconditional **ensemble** theorem: averaging the genuine forcing recurrence over Haar \(x_0\) gives exact \(\mathbb E(16Z-Q_0)=15D\), and a finite prime grid has an explicit \(64D(D-1)/q\) error. The selected \(x_0=0\) is allowed to be exceptional. New exact tests explicitly detect selected vs ensemble divergence. Use this only as a positive calibration and to design a source-specific *point-selection/derandomization* instrument; using the ensemble theorem directly as π cancellation is a fatal false proof.

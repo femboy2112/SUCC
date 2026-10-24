@@ -322,3 +322,11 @@ python scripts/pascal_carry_interferometry_probe.py --output /tmp/pascal-jet.jso
 Full hosted CI is a separately checked authority, not inferred from local 21 focused methods. No Lean authority is asserted.
 
 **Primary/classical sources:** Bailey–Borwein–Plouffe, *On the Rapid Computation of Various Polylogarithmic Constants*, Math. Comp. 66 (1997), https://www.davidhbailey.com/dhbpapers/digits.pdf; Lucas theorem and binomial digit factorization, https://math.hmc.edu/funfacts/lucas-theorem/; Kummer carry interpretation and Lucas proofs, https://www.math.tsukuba.ac.jp/~ksakai/aPathToCombinatorics.pdf. SUCC exact-source parent #269 and signed-carry source #268 provide the named notation. Independent academic novelty has not been reviewed or established.
+
+
+## 14. PASC-10 addendum — exact ensemble origin average, not selected-source cancellation
+
+The independent [source-gauge Haar and finite-grid theorem](PASCAL_SOURCE_GAUGE_AVERAGE.md) proves for **every deterministic signed forcing** and a Haar-uniform initial selector \(x_0\) that
+\(\mathbb E_{x_0}(16Z-Q_0)=15D\) *exactly*, with offdiagonal binary carry branches uniform and all 15 nonempty Walsh moments having expectation \(D\). A finite prime selector grid with \(\operatorname{ord}_q(16)\) exceeding the window's maximal time lag has a deterministic \(64D(D-1)/q\) error bound; four exact rational BBP source-grid receipts and three adversarial tests are attached.
+
+**Absolute boundary:** this is not a theorem at \(\pi\)'s actual \(y_0=0\). The selected finite source value already differs from the ensemble mean. The theorem calibrates the natural \(O(D)\) scale and pinpoints the *selector derandomization gap*, but does not pay it.
