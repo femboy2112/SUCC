@@ -1,0 +1,303 @@
+{
+  "actual_source_rows": [
+    {
+      "highest_bit_walsh_shell_check": [
+        24,
+        24,
+        112,
+        160
+      ],
+      "prime": 41,
+      "signed_primitive_shells": [
+        24,
+        24,
+        112,
+        160
+      ],
+      "source_pair_count": 96,
+      "successor_radius": "1/4",
+      "walsh_4body": 16,
+      "walsh_contributions_by_order": [
+        96,
+        84,
+        104,
+        116,
+        16
+      ],
+      "zero_branch_excess": 320,
+      "zero_branch_pairs": 26
+    },
+    {
+      "highest_bit_walsh_shell_check": [
+        28,
+        44,
+        80,
+        128
+      ],
+      "prime": 41,
+      "signed_primitive_shells": [
+        28,
+        44,
+        80,
+        128
+      ],
+      "source_pair_count": 40,
+      "successor_radius": "1/16",
+      "walsh_4body": 14,
+      "walsh_contributions_by_order": [
+        40,
+        86,
+        114,
+        66,
+        14
+      ],
+      "zero_branch_excess": 280,
+      "zero_branch_pairs": 20
+    },
+    {
+      "highest_bit_walsh_shell_check": [
+        18,
+        28,
+        56,
+        128
+      ],
+      "prime": 41,
+      "signed_primitive_shells": [
+        18,
+        28,
+        56,
+        128
+      ],
+      "source_pair_count": 26,
+      "successor_radius": "1/64",
+      "walsh_4body": 12,
+      "walsh_contributions_by_order": [
+        26,
+        62,
+        90,
+        66,
+        12
+      ],
+      "zero_branch_excess": 230,
+      "zero_branch_pairs": 16
+    },
+    {
+      "highest_bit_walsh_shell_check": [
+        17,
+        102,
+        188,
+        376
+      ],
+      "prime": 97,
+      "signed_primitive_shells": [
+        17,
+        102,
+        188,
+        376
+      ],
+      "source_pair_count": 645,
+      "successor_radius": "1/4",
+      "walsh_4body": 71,
+      "walsh_contributions_by_order": [
+        645,
+        162,
+        316,
+        134,
+        71
+      ],
+      "zero_branch_excess": 683,
+      "zero_branch_pairs": 83
+    },
+    {
+      "highest_bit_walsh_shell_check": [
+        -7,
+        46,
+        204,
+        248
+      ],
+      "prime": 97,
+      "signed_primitive_shells": [
+        -7,
+        46,
+        204,
+        248
+      ],
+      "source_pair_count": 229,
+      "successor_radius": "1/16",
+      "walsh_4body": 43,
+      "walsh_contributions_by_order": [
+        229,
+        98,
+        224,
+        126,
+        43
+      ],
+      "zero_branch_excess": 491,
+      "zero_branch_pairs": 45
+    },
+    {
+      "highest_bit_walsh_shell_check": [
+        29,
+        62,
+        140,
+        280
+      ],
+      "prime": 97,
+      "signed_primitive_shells": [
+        29,
+        62,
+        140,
+        280
+      ],
+      "source_pair_count": 81,
+      "successor_radius": "1/64",
+      "walsh_4body": 35,
+      "walsh_contributions_by_order": [
+        81,
+        130,
+        204,
+        142,
+        35
+      ],
+      "zero_branch_excess": 511,
+      "zero_branch_pairs": 37
+    },
+    {
+      "highest_bit_walsh_shell_check": [
+        61,
+        126,
+        172,
+        456
+      ],
+      "prime": 257,
+      "signed_primitive_shells": [
+        61,
+        126,
+        172,
+        456
+      ],
+      "source_pair_count": 4513,
+      "successor_radius": "1/4",
+      "walsh_4body": 53,
+      "walsh_contributions_by_order": [
+        4513,
+        224,
+        138,
+        400,
+        53
+      ],
+      "zero_branch_excess": 815,
+      "zero_branch_pairs": 333
+    },
+    {
+      "highest_bit_walsh_shell_check": [
+        77,
+        178,
+        412,
+        728
+      ],
+      "prime": 257,
+      "signed_primitive_shells": [
+        77,
+        178,
+        412,
+        728
+      ],
+      "source_pair_count": 1181,
+      "successor_radius": "1/16",
+      "walsh_4body": 97,
+      "walsh_contributions_by_order": [
+        1181,
+        360,
+        554,
+        384,
+        97
+      ],
+      "zero_branch_excess": 1395,
+      "zero_branch_pairs": 161
+    },
+    {
+      "highest_bit_walsh_shell_check": [
+        137,
+        198,
+        436,
+        760
+      ],
+      "prime": 257,
+      "signed_primitive_shells": [
+        137,
+        198,
+        436,
+        760
+      ],
+      "source_pair_count": 341,
+      "successor_radius": "1/64",
+      "walsh_4body": 101,
+      "walsh_contributions_by_order": [
+        341,
+        440,
+        566,
+        424,
+        101
+      ],
+      "zero_branch_excess": 1531,
+      "zero_branch_pairs": 117
+    }
+  ],
+  "base_commit": "b445b0d9c604f45548a45b5db4f31428f73b35a2",
+  "claims": {
+    "all_scale_signed_excess_O_D": "UNVERIFIED",
+    "pascal_4bit_factorial": "PROVED_EXACT",
+    "terminal_2jet_error_o_D": "PROVED_ANALYTICALLY"
+  },
+  "number_of_rows": 9,
+  "pi_normality": "OPEN",
+  "source_receipt_git_blob_sha": "a4d199e4052054712ff3bf64c2ff48c8d08dc760",
+  "source_sha256": {
+    "observational_succ/pi_dyadic_prime_transfer.py": "17840df8d8e3f75435ed1b20953d2c17032f5e80ab1eb43b5e73eca096152b18",
+    "scripts/pi_dyadic_prime_transfer_probe.py": "04ae6ad00b8e32150f6014bd8097b826f5ca5977210646e3318475181b612c34",
+    "tests/test_pi_dyadic_prime_transfer.py": "4bb10ad020b41fb812e09d2cf390ec3de3abc362bdc69b84e7e230d935889eac"
+  },
+  "source_zero_selected": true,
+  "status": "VERIFIED EXACT FINITE from authenticated #269 parent receipt",
+  "three_wise_countermodel": {
+    "hist": [
+      2,
+      0,
+      0,
+      2,
+      0,
+      2,
+      2,
+      0,
+      0,
+      2,
+      2,
+      0,
+      2,
+      0,
+      0,
+      2
+    ],
+    "uniform_reference": "1/16",
+    "walsh_moments": [
+      16,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16
+    ],
+    "zero_mass": "1/8"
+  }
+}
