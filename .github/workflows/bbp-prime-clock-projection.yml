@@ -1,0 +1,43 @@
+name: BBP prime-clock spectral projection and source witnesses
+
+on:
+  pull_request:
+    paths:
+      - 'observational_succ/bbp_prime_window_projection.py'
+      - 'tests/test_bbp_prime_window_projection.py'
+      - 'scripts/bbp_prime_window_projection_probe.py'
+      - 'research/2026-10-24/BBP_PRIME_CLOCK_SPECTRAL_PROJECTION.md'
+      - 'docs/CLAIM_SUPPLEMENT_PRIME_CLOCK_PROJECTION.md'
+      - '.github/workflows/bbp-prime-clock-projection.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    env:
+      PYTHONPATH: .
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Strict compile source, tests and independent oracle
+        run: |
+          python -Werror -m py_compile observational_succ/bbp_prime_window_projection.py tests/test_bbp_prime_window_projection.py scripts/bbp_prime_window_projection_probe.py
+      - name: Exact arithmetic, source and hostile spectral tests
+        run: python -m unittest discover -s tests -p 'test_bbp_prime_window_projection.py' -v
+      - name: Independent source reconstruction and modular coset replay
+        run: python scripts/bbp_prime_window_projection_probe.py
+      - name: Original source regression and import provenance
+        run: |
+          python -m unittest discover -s tests -p 'test_bbp_cyclotomic_birth.py' -v
+          python -m unittest discover -s tests -p 'test_bbp_source_memory.py' -v
+          python scripts/verify_provenance.py
+          python scripts/observer_foundations_probe.py
