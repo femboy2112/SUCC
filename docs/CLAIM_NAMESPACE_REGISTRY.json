@@ -607,6 +607,21 @@
         "observational_succ/interacting_arithmetic_hamiltonian.py",
         "observational_succ/padic_bulk_network.py"
       ]
+    },
+    {
+      "namespace": "POISSON_MINIMUM_GEOMETRY",
+      "bare_prefix": "PGM",
+      "fq_prefix": "PGM",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_POISSON_MINIMUM.md"
+      ],
+      "id_count": 12,
+      "status": "RESEARCH (classical/PAPER PROVED/local exact tests; π normality, RH, Weil positivity and novelty UNVERIFIED)",
+      "topic": "Single Poisson-chord minimum-energy criterion, deterministic geometric greedy selection, signed regret, source-typed pi finite witnesses, periodic counterfeit",
+      "code": [
+        "observational_succ/poisson_circle_minimal.py",
+        "scripts/poisson_minimal_probe.py"
+      ]
     }
   ],
   "resolved_collisions": [
