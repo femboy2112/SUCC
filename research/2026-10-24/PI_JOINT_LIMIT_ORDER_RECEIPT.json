@@ -1,0 +1,366 @@
+{
+  "exact_assertions": 540,
+  "exact_formula": "m_p(h)=1-4/p^(v_p(h)+1)-4/p^(v_p(h)+2), p>=7, h!=0",
+  "finite_prime_mean_products": {
+    "1": [
+      {
+        "cutoff": 7,
+        "first_m_primes": 1,
+        "mean_product_exact": "17/49",
+        "mean_product_float_noncertifying": 0.346938776,
+        "scaled_by_log4_noncertifying": 4.974437
+      },
+      {
+        "cutoff": 11,
+        "first_m_primes": 2,
+        "mean_product_exact": "1241/5929",
+        "mean_product_float_noncertifying": 0.20931017,
+        "scaled_by_log4_noncertifying": 6.920081
+      },
+      {
+        "cutoff": 13,
+        "first_m_primes": 3,
+        "mean_product_exact": "140233/1002001",
+        "mean_product_float_noncertifying": 0.139952954,
+        "scaled_by_log4_noncertifying": 6.057553
+      },
+      {
+        "cutoff": 17,
+        "first_m_primes": 4,
+        "mean_product_exact": "255719/2433431",
+        "mean_product_float_noncertifying": 0.105085782,
+        "scaled_by_log4_noncertifying": 6.771129
+      },
+      {
+        "cutoff": 29,
+        "first_m_primes": 7,
+        "mean_product_exact": "3204752082361/55831573283057",
+        "mean_product_float_noncertifying": 0.057400354,
+        "scaled_by_log4_noncertifying": 7.379716
+      },
+      {
+        "cutoff": 41,
+        "first_m_primes": 10,
+        "mean_product_exact": "9327351230426029199/234295420524634222039",
+        "mean_product_float_noncertifying": 0.039810216,
+        "scaled_by_log4_noncertifying": 7.571152
+      },
+      {
+        "cutoff": 59,
+        "first_m_primes": 14,
+        "mean_product_exact": "264509769967905778037013908295967/9357335253203496188530049052002671",
+        "mean_product_float_noncertifying": 0.028267638,
+        "scaled_by_log4_noncertifying": 7.814143
+      },
+      {
+        "cutoff": 73,
+        "first_m_primes": 18,
+        "mean_product_exact": "55194289949460553007930213182413581842156657/2500766751090646761000388298756162096141191409",
+        "mean_product_float_noncertifying": 0.022070947,
+        "scaled_by_log4_noncertifying": 7.478873
+      },
+      {
+        "cutoff": 97,
+        "first_m_primes": 22,
+        "mean_product_exact": "7684027385845148185263987090332840743277827427034649/421721023874451152146158694745369546936882159456801753",
+        "mean_product_float_noncertifying": 0.018220641,
+        "scaled_by_log4_noncertifying": 7.980283
+      }
+    ],
+    "7": [
+      {
+        "cutoff": 7,
+        "first_m_primes": 1,
+        "mean_product_exact": "311/343",
+        "mean_product_float_noncertifying": 0.906705539,
+        "scaled_by_log4_noncertifying": 13.000421
+      },
+      {
+        "cutoff": 11,
+        "first_m_primes": 2,
+        "mean_product_exact": "22703/41503",
+        "mean_product_float_noncertifying": 0.547020697,
+        "scaled_by_log4_noncertifying": 18.085254
+      },
+      {
+        "cutoff": 13,
+        "first_m_primes": 3,
+        "mean_product_exact": "2565439/7014007",
+        "mean_product_float_noncertifying": 0.365759401,
+        "scaled_by_log4_noncertifying": 15.831085
+      },
+      {
+        "cutoff": 17,
+        "first_m_primes": 4,
+        "mean_product_exact": "79528609/289578289",
+        "mean_product_float_noncertifying": 0.274635952,
+        "scaled_by_log4_noncertifying": 17.695975
+      },
+      {
+        "cutoff": 29,
+        "first_m_primes": 7,
+        "mean_product_exact": "996677897614271/6643957220683783",
+        "mean_product_float_noncertifying": 0.15001269,
+        "scaled_by_log4_noncertifying": 19.286485
+      },
+      {
+        "cutoff": 41,
+        "first_m_primes": 10,
+        "mean_product_exact": "24376522963550378831/234295420524634222039",
+        "mean_product_float_noncertifying": 0.104041824,
+        "scaled_by_log4_noncertifying": 19.786792
+      },
+      {
+        "cutoff": 59,
+        "first_m_primes": 14,
+        "mean_product_exact": "691281835798476445121943911597023/9357335253203496188530049052002671",
+        "mean_product_float_noncertifying": 0.073875929,
+        "scaled_by_log4_noncertifying": 20.421836
+      },
+      {
+        "cutoff": 73,
+        "first_m_primes": 18,
+        "mean_product_exact": "144247261968758251978708372266643898763955633/2500766751090646761000388298756162096141191409",
+        "mean_product_float_noncertifying": 0.057681214,
+        "scaled_by_log4_noncertifying": 19.545626
+      },
+      {
+        "cutoff": 97,
+        "first_m_primes": 22,
+        "mean_product_exact": "20081785857124715005185714160449693034952977561409881/421721023874451152146158694745369546936882159456801753",
+        "mean_product_float_noncertifying": 0.04761865,
+        "scaled_by_log4_noncertifying": 20.856034
+      }
+    ]
+  },
+  "limit_order_paper_claim": {
+    "add_all_primes_per_source_time_then_average_time": "1",
+    "average_time_then_add_primes": "0",
+    "scope": "one-step forcing r(n) only; not source U_n or pi normality"
+  },
+  "local_haar_exact": {
+    "11": {
+      "1": "73/121",
+      "11": "1283/1331",
+      "121": "14593/14641",
+      "2": "73/121",
+      "49": "73/121",
+      "7": "73/121"
+    },
+    "13": {
+      "1": "113/169",
+      "11": "113/169",
+      "121": "113/169",
+      "2": "113/169",
+      "49": "113/169",
+      "7": "113/169"
+    },
+    "17": {
+      "1": "217/289",
+      "11": "217/289",
+      "121": "217/289",
+      "2": "217/289",
+      "49": "217/289",
+      "7": "217/289"
+    },
+    "19": {
+      "1": "281/361",
+      "11": "281/361",
+      "121": "281/361",
+      "2": "281/361",
+      "49": "281/361",
+      "7": "281/361"
+    },
+    "23": {
+      "1": "433/529",
+      "11": "433/529",
+      "121": "433/529",
+      "2": "433/529",
+      "49": "433/529",
+      "7": "433/529"
+    },
+    "29": {
+      "1": "721/841",
+      "11": "721/841",
+      "121": "721/841",
+      "2": "721/841",
+      "49": "721/841",
+      "7": "721/841"
+    },
+    "31": {
+      "1": "833/961",
+      "11": "833/961",
+      "121": "833/961",
+      "2": "833/961",
+      "49": "833/961",
+      "7": "833/961"
+    },
+    "37": {
+      "1": "1217/1369",
+      "11": "1217/1369",
+      "121": "1217/1369",
+      "2": "1217/1369",
+      "49": "1217/1369",
+      "7": "1217/1369"
+    },
+    "41": {
+      "1": "1513/1681",
+      "11": "1513/1681",
+      "121": "1513/1681",
+      "2": "1513/1681",
+      "49": "1513/1681",
+      "7": "1513/1681"
+    },
+    "43": {
+      "1": "1673/1849",
+      "11": "1673/1849",
+      "121": "1673/1849",
+      "2": "1673/1849",
+      "49": "1673/1849",
+      "7": "1673/1849"
+    },
+    "47": {
+      "1": "2017/2209",
+      "11": "2017/2209",
+      "121": "2017/2209",
+      "2": "2017/2209",
+      "49": "2017/2209",
+      "7": "2017/2209"
+    },
+    "53": {
+      "1": "2593/2809",
+      "11": "2593/2809",
+      "121": "2593/2809",
+      "2": "2593/2809",
+      "49": "2593/2809",
+      "7": "2593/2809"
+    },
+    "59": {
+      "1": "3241/3481",
+      "11": "3241/3481",
+      "121": "3241/3481",
+      "2": "3241/3481",
+      "49": "3241/3481",
+      "7": "3241/3481"
+    },
+    "61": {
+      "1": "3473/3721",
+      "11": "3473/3721",
+      "121": "3473/3721",
+      "2": "3473/3721",
+      "49": "3473/3721",
+      "7": "3473/3721"
+    },
+    "67": {
+      "1": "4217/4489",
+      "11": "4217/4489",
+      "121": "4217/4489",
+      "2": "4217/4489",
+      "49": "4217/4489",
+      "7": "4217/4489"
+    },
+    "7": {
+      "1": "17/49",
+      "11": "17/49",
+      "121": "17/49",
+      "2": "17/49",
+      "49": "2369/2401",
+      "7": "311/343"
+    },
+    "71": {
+      "1": "4753/5041",
+      "11": "4753/5041",
+      "121": "4753/5041",
+      "2": "4753/5041",
+      "49": "4753/5041",
+      "7": "4753/5041"
+    },
+    "73": {
+      "1": "5033/5329",
+      "11": "5033/5329",
+      "121": "5033/5329",
+      "2": "5033/5329",
+      "49": "5033/5329",
+      "7": "5033/5329"
+    },
+    "79": {
+      "1": "5921/6241",
+      "11": "5921/6241",
+      "121": "5921/6241",
+      "2": "5921/6241",
+      "49": "5921/6241",
+      "7": "5921/6241"
+    },
+    "83": {
+      "1": "6553/6889",
+      "11": "6553/6889",
+      "121": "6553/6889",
+      "2": "6553/6889",
+      "49": "6553/6889",
+      "7": "6553/6889"
+    },
+    "89": {
+      "1": "7561/7921",
+      "11": "7561/7921",
+      "121": "7561/7921",
+      "2": "7561/7921",
+      "49": "7561/7921",
+      "7": "7561/7921"
+    },
+    "97": {
+      "1": "9017/9409",
+      "11": "9017/9409",
+      "121": "9017/9409",
+      "2": "9017/9409",
+      "49": "9017/9409",
+      "7": "9017/9409"
+    }
+  },
+  "negative_control_first_ten_product": "9327351230426029199/234295420524634222039",
+  "negative_control_rejected_threshold": "<1/30 is FALSE; actual >1/30 and <1/20",
+  "noncertifying_actual_prefix_averages": {
+    "1024": {
+      "global_real_mean_error_bound": "<32*pi/N (paper inequality)",
+      "p7_mean_real_noncertifying": 0.347030407,
+      "p7p11_mean_real_noncertifying": 0.211997855,
+      "source_e_r_mean_imag_noncertifying": 0.002186778,
+      "source_e_r_mean_real_noncertifying": 0.999323012,
+      "theory_p7": "17/49",
+      "theory_p7p11": "1241/5929"
+    },
+    "256": {
+      "global_real_mean_error_bound": "<32*pi/N (paper inequality)",
+      "p7_mean_real_noncertifying": 0.33374054,
+      "p7p11_mean_real_noncertifying": 0.169232036,
+      "source_e_r_mean_imag_noncertifying": 0.008730247,
+      "source_e_r_mean_real_noncertifying": 0.997292046,
+      "theory_p7": "17/49",
+      "theory_p7p11": "1241/5929"
+    },
+    "4096": {
+      "global_real_mean_error_bound": "<32*pi/N (paper inequality)",
+      "p7_mean_real_noncertifying": 0.349050432,
+      "p7p11_mean_real_noncertifying": 0.209173915,
+      "source_e_r_mean_imag_noncertifying": 0.000546958,
+      "source_e_r_mean_real_noncertifying": 0.999830753,
+      "theory_p7": "17/49",
+      "theory_p7p11": "1241/5929"
+    },
+    "64": {
+      "global_real_mean_error_bound": "<32*pi/N (paper inequality)",
+      "p7_mean_real_noncertifying": 0.355167617,
+      "p7p11_mean_real_noncertifying": 0.2020253,
+      "source_e_r_mean_imag_noncertifying": 0.034650668,
+      "source_e_r_mean_real_noncertifying": 0.989168207,
+      "theory_p7": "17/49",
+      "theory_p7p11": "1241/5929"
+    }
+  },
+  "notes": [
+    "Local multiplier is proved using p-adic shells and Ramanujan sums, not finite sampling.",
+    "Numerical phases here use cmath for adversarial diagnostics only.",
+    "The full original forcing mean tends to one, while fixed-place Haar products damp as cutoff increases."
+  ],
+  "schema": 1,
+  "source": "unaltered rational BBP four-pole forcing"
+}

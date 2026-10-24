@@ -1,5 +1,30 @@
 # Claim Index
 
+**2026-10-24 Joint Carrier local Fourier limit-order addendum (research):**
+[JPC-23--26](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md) and
+[full four-pole Haar/limit theorem](../research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md).
+The fixed actual BBP one-step forcing has a closed exact prime-local Haar
+character: for p>=7, h nonzero, it equals
+1-4/p^(v_p(h)+1)-4/p^(v_p(h)+2). Fixed prime-set averages along actual
+integer time factor through CRT and Haar, with product decay of order
+(log X)^(-4); **prime-first versus source-first iterated limits are 0 and 1**.
+The memory-bearing U_n orbit and its pi-normality estimate remain OPEN.
+
+**2026-10-24 source-aligned all-prime carrier / adelic obstruction:**
+[JPC-01--22](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md),
+[complete paper and negative-control dossier](../research/2026-10-24/PI_JOINT_CARRIER_INTERFEROMETRY.md),
+[exact finite receipt](../research/2026-10-24/PI_JOINT_PRIME_CARRIER_RECEIPT.json).
+Authentic BBP forcing has odd denominators and a nontrivial integral 2-adic
+clock while every 2-primary Q/Z torsion projection vanishes. Its actual circle
+phase is a synchronized product of all active odd-primary characters. For
+p>=7, exactly four source-pole classes occur at each prime-power depth; their
+CRT events are independent over complete periods, but historical phases need
+shared multiplier-16 clocks. Exceptional p=3,5 Hensel collisions are exact.
+A naive independent Haar completion is almost surely not a finite adele,
+and no continuous global A_f completion of the source exists. True BBP
+Fourier cancellation, real 1/16 frequencies, and pi normality remain OPEN;
+no Lean authority or full-suite completion is inferred.
+
 **2026-10-24 Pascal/Lucas quotient operator research:**
 [PLQ-01--14](CLAIM_SUPPLEMENT_PASCAL_LUCAS_QUOTIENT.md) and
 [complete proof/obstruction dossier](../research/2026-10-24/PI_PASCAL_LUCAS_QUOTIENT.md).

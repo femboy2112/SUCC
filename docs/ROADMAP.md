@@ -1,5 +1,31 @@
 # Research roadmap
 
+**2026-10-24 Joint Carrier limit-order addendum.**
+The [exact local-Haar theorem](../research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md)
+computes a prime-local Fourier mean from the genuine four-pole forcing
+and proves (log X)^(-4) decay of prime-first Haar averages. On the same
+authentic integer forcing sequence, reconstructing all odd-primary rational
+phases first yields time-average 1, whereas time-averaging each finite
+prime set first then adding all primes yields 0. **These iterated limits do
+not commute.** This removes the illicit independent-prime-ensemble shortcut
+and sharpens the next gate: retain literal U_n memory and prove an authentic
+selected cross-prime character saving. Local forcing cancellation cannot
+be promoted to an orbit theorem. [JPC-23--26](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md).
+
+**2026-10-24 Joint Carrier moonshot (research draft).**
+The [all-prime source dossier](../research/2026-10-24/PI_JOINT_CARRIER_INTERFEROMETRY.md)
+reconstructs each rational BBP circle phase from a finite moving family of odd
+prime-primary characters without losing the full dyadic source clock or signed
+Pascal differences. Four pole classes per p^k for p>=7 factor over complete
+CRT periods; p3/p5 require special Hensel numerator/pole resolution and source
+memory couples clocks through ord_(p^k)(16). Independent Haar-profinite
+completion almost surely fails to be a finite adele, and no globally
+continuous finite-adelic source completion exists. A six-state CRT model
+proves joint-gate informational synergy; authenticated Fourier cancellation
+and genuine real 1/16 retention are NOT proved. Next: an exact source-selected
+mixed signed-character saving with integral carry and time-alignment controls.
+[JPC-01--22](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md).
+
 **2026-10-24 Pascal/Lucas quotient, prime-base operator continuation.**
 The [research dossier](../research/2026-10-24/PI_PASCAL_LUCAS_QUOTIENT.md)
 proves the Boolean-zeta/binomial rank quotient and explicitly retains its
