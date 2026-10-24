@@ -1,5 +1,17 @@
 # Research roadmap
 
+**2026-10-24 Pascal/Lucas quotient, prime-base operator continuation.**
+The [research dossier](../research/2026-10-24/PI_PASCAL_LUCAS_QUOTIENT.md)
+proves the Boolean-zeta/binomial rank quotient and explicitly retains its
+non-symmetric positional fiber. Prime Lucas support operators and finite
+digit-coding towers are coherent, but p>2 residue phases are not support
+counts, and a rank/histogram quotient fails to carry ternary SUCC. A synthetic
+four-bit gate has sharp positive rank-only reconstruction loss; this is NOT
+a selected BBP frequency estimate. Next: find an authenticated map carrying
+literal BBP integer lifts into the full Lucas fiber, then bound the actual
+source-selected nonsymmetric signed correlation. See
+[PLQ-01--14](CLAIM_SUPPLEMENT_PASCAL_LUCAS_QUOTIENT.md). Pi normality OPEN.
+
 **2026-10-24 Pascal geometry continuation (research draft).**
 The [Pascal synthesis](../research/2026-10-24/PI_PASCAL_SYNTHESIS.md) proves the
 full authentic dyadic difference profile, sharp minimal Mahler degree, positive

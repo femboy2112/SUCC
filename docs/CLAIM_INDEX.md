@@ -1,5 +1,15 @@
 # Claim Index
 
+**2026-10-24 Pascal/Lucas quotient operator research:**
+[PLQ-01--14](CLAIM_SUPPLEMENT_PASCAL_LUCAS_QUOTIENT.md) and
+[complete proof/obstruction dossier](../research/2026-10-24/PI_PASCAL_LUCAS_QUOTIENT.md).
+The odd-Pascal 3^m cells and weighted-binomial 3^m are one incidence space.
+The binomial successor is an exact rank quotient of Boolean zeta; its discarded
+fiber retains ordered carry information. Prime-p Lucas tensors, full residue
+weights, a sharp prime-base TV obstruction, and synthetic four-bit rank loss
+are proved or tested with exact scopes. The actual BBP-selected 1/16 gate,
+real-circle retention and pi normality remain OPEN; no Lean claim is added.
+
 **2026-10-24 source path / infinite observer continuation:**
 [SPS-01--25](CLAIM_SUPPLEMENT_SOURCE_PATH_SELECTION.md) and
 [research synthesis](../research/2026-10-24/PI_PATH_SELECTION_SYNTHESIS.md).
