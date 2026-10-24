@@ -27,7 +27,7 @@ class TestExactCountermodel(unittest.TestCase):
         )
         self.assertTrue(cm.refutes)
         self.assertEqual(cm.violation, F(-24))
-        self.assertIn("REFUTES", cm.report())
+        self.assertIn("FINITE-CHECKED REFUTATION", cm.report())
 
     def test_does_not_promote_a_non_refutation(self):
         cm = exact_countermodel("x", "y", "z", F(0))
