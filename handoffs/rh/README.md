@@ -6,6 +6,7 @@ The handoff contract is [docs/RH_HANDOFF.md](../../docs/RH_HANDOFF.md). A docume
 
 ## Current candidates
 
+- [Euler--Mascheroni finite source to completed Li coefficients](2026-10-24-euler-mascheroni-completed-li.md) — source-built rational coefficients, explicit all-degree cutoff bounds, centered endpoint acceleration and finite-jet source controls; **all-degree sign and RH remain open**. Exact originating SUCC commit is pinned; no external RH repository was changed.
 - [Certified prime-side Suzuki wavefront](2026-10-10-prime-source-certification.md) — exact rational interval arithmetic from genuine finite prime events with fake-composite controls; **Gamma+poles and global Weil positivity are missing**.
 - [Prime-correlated Gamma chiral sphere candidate](2026-10-14-prime-sphere-gamma-chiral.md) — source-correct positive signed companion Gamma/Dirichlet-chi4 operator, spectral transport and a sharp high-frequency no-go; **auxiliary object, NOT identified with completed Weil**.
 - [Source-indexed all-place analytic model gluing](2026-10-14-source-model-analytic-gluing.md) — original rational diagonal, true finite-local Euler factors, canonical theta/Poisson interaction, exact finite-prime modular obstruction and rational certificates outside the Euler region; **completed Weil sign and RH remain open**. Stacked on PR #71; review before exporting to the separate RH repo.

@@ -8,6 +8,9 @@ explicit clock and finite-jet countermodels and separates changed-source
 controls from the original arithmetic obligations. **Pi normality and RH
 remain open; no new Lean authority.**
 [Full synthesis](../research/2026-10-24/EULER_MASCHERONI_SYNTHESIS.md).
+The [internal RH handoff](../handoffs/rh/2026-10-24-euler-mascheroni-completed-li.md)
+pins the exact originating source commit and the remaining all-degree sign
+obligation; no external RH integration is implied.
 
 The additive [Cyclotomic selected-source supplement CSS-01–17](CLAIM_SUPPLEMENT_CYCLOTOMIC_SELECTED_SOURCE.md)
 records all-character local twist bounds, actual complementary-source spectral
