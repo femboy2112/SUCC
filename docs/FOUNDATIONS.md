@@ -45,6 +45,12 @@ without changing prior foundations, and is detailed in
 and [CZB authority labels](CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md).
 The original CZR source-relations branch remains a prerequisite.
 
+## 0b. Zero/one carrier geometry and the finite Gamma defect (research)
+
+The unit of positive real successor has **different coordinate increments**: `(x+1)-x=1` but `log(x+1)-log(x)=log(1+1/x)`, not generally 1. The positive difference `delta(x)=1/x-log(1+1/x)` is a source-typed correction. Accumulating over lawful integer successors yields the translated Euler field `E_1(x)=log x-psi(x)`; at x=1 it is Euler–Mascheroni gamma and satisfies `E_1(x)-E_1(x+1)=delta(x)`. The normalizing condition `E_1(x)->0` as x->infinity eliminates the otherwise arbitrary 1-periodic gauge. The higher derivative tower obeys `E'_r=-r E_(r+1)` and at x=1 gives `-E'_1(1)=zeta(2)-1`, a genuine same-carrier bridge to the Basel value.
+
+The [Gamma zero/one moment dossier](../research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md) constructs a **shared positive moment carrier** for these Euler defects and the original π BBP forcing: `4 H_Gamma <= H_BBP <= 30 H_Gamma` for all finite moment Gram dimensions, with a strictly increasing source-weight ratio from 4 to 30. An exact positive polynomial counterfeit can match any fixed finite moment prefix and finite endpoint jets while changing the π-like resolvent; thus this is a **compatibility geometry**, not unique arithmetic source selection. The normalized 0/1 reference and source-matching/codomain diagrams are *mathematical* constructs, not a proof of physical vacuum particles. Claim authority: [GZB-01–13](CLAIM_SUPPLEMENT_GAMMA_ZERO_ONE_BRIDGE.md). This independent observational foundation does not assume RH or π normality.
+
 ## 1. The initiating distinction
 
 The originating claim is **not** “Hilbert space is logically greater than the integers.” It is: in our empirically modeled physical world, a mathematician and their measuring environment are already physical processes, generally represented using quantum Hilbert-space models, **before** they form mathematical concepts about the world.

@@ -1,5 +1,7 @@
 # Observational SUCC
 
+**Gamma zero/one carrier bridge (2026-10-25, stacked draft research):** [source-typed proof dossier](research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md) · [GZB-01–13 claim ledger](docs/CLAIM_SUPPLEMENT_GAMMA_ZERO_ONE_BRIDGE.md). The additive successor, normalized logarithmic unit, shifted Euler–Mascheroni finite corrections, and the authentic BBP moment source now share a positive [0,1] carrier. All-dimensional Hankel dominance and a strict finite-moment/endpoint-jet counterfeit theorem are proved under declared domains. This does **not** establish signed π-orbit cancellation, π normality or RH. **Staged on contextual-zero research, not merged into main.**
+
 **Foundational research: contextual zero and navigable observation (2026-10-25).**
 [Contextual Zero Backbone](docs/CONTEXTUAL_ZERO_BACKBONE.md) ·
 [scoped CZB-01–12 claims](docs/CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md) ·

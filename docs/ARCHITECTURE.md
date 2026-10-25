@@ -1,5 +1,7 @@
 # Architecture of Observational SUCC
 
+**Zero/one Gamma carrier and authentic BBP comparison (2026-10-25; staged on contextual-zero):** explicitly typed additive unit vs logarithmic unit, shifted Euler defect with unique infinity-normalization, positive Hausdorff moment transport, all-dimensional `4 H_Gamma <= H_BBP <= 30 H_Gamma`, and finite matched-jet positive source countermodels. [Dossier](../research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md) · [claims](CLAIM_SUPPLEMENT_GAMMA_ZERO_ONE_BRIDGE.md). This is a proved mathematical bridge between positive carriers, **not** a derived signed Weil source or π-normality theorem.
+
 **Contextual-zero backbone (2026-10-25, staged research only):**
 the observer begins at an incomplete source-indexed position, knows which
 zero-relations the evidence actually supports, spends resources on licensed
