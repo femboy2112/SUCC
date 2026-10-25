@@ -114,3 +114,37 @@ Implementation: `observational_succ/contextual_zero_navigation.py`. Tests: `test
 Both the Euler delta moments and the authentic four-pole BBP forcing arise from the same multiplication operator t^8 on the positive interval [0,1], but use **different cyclic source vectors/measures**. Their weights W=(1-t)C and P=(1-t)B satisfy 4W<=P<=30W, giving an exact Loewner comparison of every finite Hankel Gram. The strong source-selection firewall is a **positive explicit counterfeit** that matches any prescribed finite number of BBP moments and any finite order of endpoint-zero derivatives while changing the BBP resolvent by a strictly positive, rationally enclosed amount. Compatible 0/1 shapes are constraints; they do not automatically identify one arithmetic world.
 
 Typed extension: every such bridge retains (the additive/multiplicative unit chart; positive source domain; normalized shared operator; cyclic vector; exact finite correction; all-depth theorem; authentic original-source signature; adversarial source alternative). Avoid inferring signed π-orbit Weyl cancellation or QFT vacuum mechanisms from positive moment geometry. Claims: [GZB-01–13](CLAIM_SUPPLEMENT_GAMMA_ZERO_ONE_BRIDGE.md). This section is research-staged rather than adopted as a settled universal SUCC axiom.
+
+
+## 9. Complementary zeros across a finite future Green boundary (research-stage)
+
+The [Signed Gamma–BBP Green carrier](../research/2026-10-25/SIGNED_GAMMA_BBP_GREEN_COHERENCE.md)
+adds two carrier completion tests to the contextual-zero interface.
+
+First, positive Euler and authentic BBP moment sources can be normalized to
+exactly **zero signed mass** at a selected moment. Because their relative
+density is strictly increasing on one shared [0,1] carrier, every subsequent
+source-matched moment of that signed difference is strictly positive. Source
+ordering is a mathematical constraint, not a physical energy or quantum-vacuum
+law. Euler \(\gamma\) splits into eight explicit \(\mathrm{SUCC}^8\)
+residue-class channels, recombining with no omitted source observations.
+
+Second, the exact original BBP forcing generates two complementary
+source-typed zero-relations, one observed forward and one computed backward
+from a bounded future source:
+
+$$
+U_{n+1}-16U_n-r(n+1)=0,\qquad
+16T_n-T_{n+1}-r(n+1)=0.
+$$
+
+Their difference shows \((U_{n+1}+T_{n+1})-16(U_n+T_n)=0\).
+The future correction is **not an already observed event**: the bounded
+Green solution is uniquely selected by its continuation law and is available
+to finite observers only through declared rational truncation certificates.
+The resulting source-selected \(\ell^1\) error is summable, making the
+original π-circle Fourier and its exact rational BBP-state Fourier differ
+by a constant independent of the observation horizon. The remaining
+normality gate concerns **nontrivial cancellation of those rational-source
+Fourier phases**; positivity of the Gamma/BBP scalar moment bridge cannot
+supply this gate. See [SGO-01–12](CLAIM_SUPPLEMENT_SIGNED_GAMMA_BBP.md).

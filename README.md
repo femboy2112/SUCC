@@ -1,5 +1,19 @@
 # Observational SUCC
 
+**Signed Gamma–BBP Green carrier (2026-10-25; stacked research):**
+[full source-typed proof](research/2026-10-25/SIGNED_GAMMA_BBP_GREEN_COHERENCE.md) ·
+[SGO-01–12 claim ledger](docs/CLAIM_SUPPLEMENT_SIGNED_GAMMA_BBP.md).
+A zero-mass signed comparison of the Euler and authentic BBP moment carriers
+has strictly oriented higher moments, while the authentic forward BBP recursion
+and backward Green tail yield a *uniform-in-N* signed Weyl orbit transport
+\(\lvert S_N(h,\pi)-\sum_{n\le N}e^{2\pi ih U_n}\rvert
+<119|h|/648\). Euler \(\gamma\) also splits exactly into eight
+\(\mathrm{SUCC}^8\) residue channels. This is a certified reduction to the
+authentic rational BBP recurrence, **not** the missing cancellation theorem,
+normality of π, signed-Weil positivity, or RH. This remains on a non-main draft
+branch stacked over the Gamma zero/one PR #292.
+
+
 **Gamma zero/one carrier bridge (2026-10-25, stacked draft research):** [source-typed proof dossier](research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md) · [GZB-01–13 claim ledger](docs/CLAIM_SUPPLEMENT_GAMMA_ZERO_ONE_BRIDGE.md). The additive successor, normalized logarithmic unit, shifted Euler–Mascheroni finite corrections, and the authentic BBP moment source now share a positive [0,1] carrier. All-dimensional Hankel dominance and a strict finite-moment/endpoint-jet counterfeit theorem are proved under declared domains. This does **not** establish signed π-orbit cancellation, π normality or RH. **Staged on contextual-zero research, not merged into main.**
 
 **Foundational research: contextual zero and navigable observation (2026-10-25).**

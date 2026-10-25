@@ -1,5 +1,19 @@
 # Architecture of Observational SUCC
 
+**Signed gamma zero and bounded forward/backward orbit transport (2026-10-25,
+stacked research):** A source-matched zero-total signed measure gives strict
+positive higher BBP-versus-Gamma moment determinants in every degree; Euler
+\(\gamma\) is exactly the sum of eight \(\mathrm{SUCC}^8\) residue carriers.
+The authentic BBP source has complementary forward and bounded future Green
+zero-relations. Their exact rational finitary certificates yield a uniform
+\(O_h(1)\) comparison between selected π and original rational-carrier Weyl
+sums, without asserting any nontrivial cancellation. This adds explicit
+boundary conditions and a signed source discriminator to the
+[Contextual Zero Backbone](CONTEXTUAL_ZERO_BACKBONE.md), but **π normality
+and RH remain OPEN**. [Full dossier](../research/2026-10-25/SIGNED_GAMMA_BBP_GREEN_COHERENCE.md) ·
+[claim authority](CLAIM_SUPPLEMENT_SIGNED_GAMMA_BBP.md).
+
+
 **Zero/one Gamma carrier and authentic BBP comparison (2026-10-25; staged on contextual-zero):** explicitly typed additive unit vs logarithmic unit, shifted Euler defect with unique infinity-normalization, positive Hausdorff moment transport, all-dimensional `4 H_Gamma <= H_BBP <= 30 H_Gamma`, and finite matched-jet positive source countermodels. [Dossier](../research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md) · [claims](CLAIM_SUPPLEMENT_GAMMA_ZERO_ONE_BRIDGE.md). This is a proved mathematical bridge between positive carriers, **not** a derived signed Weil source or π-normality theorem.
 
 **Contextual-zero backbone (2026-10-25, staged research only):**

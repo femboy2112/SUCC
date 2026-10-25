@@ -29,6 +29,45 @@ exchange.
 
 ---
 
+## Exact preliminary reduction — one authentic rational orbit, no unresolved phase tail
+
+The same original Coherent Main X four-pole source has a finite rational
+unwrapped state \(U_0=0\), \(U_{n+1}=16U_n+r(n+1)\) and a **source-defined**
+positive future Green correction \(T_n=\sum_{j\ge1}16^{-j}r(n+j)\).
+Their complementary equations imply
+\(U_n+T_n=16^{n-1}\pi\) for \(n\ge1\).
+A proved \(\ell^1\) bound for the **entire selected tail** gives
+
+$
+\boxed{\sum_{n\ge1}T_n\le\frac{17}{648},\qquad
+\left|S_N(h)-\sum_{n=1}^N e^{2\pi i h U_n}\right|
+<\frac{119}{648}|h|,\quad
+N\ge1,\ h\in\mathbb Z\setminus\{0\}.}
+$
+
+This is a **paper-proved source-authentic continuous-character transport**
+with exact rational finite interval instruments; see the
+[Signed Gamma–BBP Green dossier](../research/2026-10-25/SIGNED_GAMMA_BBP_GREEN_COHERENCE.md)
+and [SGO claim supplement](CLAIM_SUPPLEMENT_SIGNED_GAMMA_BBP.md).
+The corresponding normalized Weyl sums differ by \(O_h(1/N)\), so
+base-16 normality of π is **equivalent** to cancellation of the original
+rational \(U_n\) phases. It is NOT a proof that these rational phases cancel:
+the new target is
+
+$
+\sum_{n=1}^N e^{2\pi i h U_n}=o(N)
+\quad\text{for each fixed }h\ne0.
+$
+
+Unlike a single fixed rational approximation of π, \(U_n\) is the actual
+ever-refined original BBP recurrence; unlike a sampled independent prime
+measure, its integer lift, source signs and initial condition are unchanged.
+Direct digit indicators are discontinuous and require separate boundary-cell
+costs. The Gamma signed moment inequalities **cannot substitute** for this
+still-open arithmetic cancellation.
+
+---
+
 ## Route A — selected harmonic / cyclotomic saving (#284)
 
 **Statement to prove.** For each fixed nonzero integer $h$, with the authentic
