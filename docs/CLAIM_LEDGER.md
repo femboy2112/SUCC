@@ -1,5 +1,7 @@
 # Research claim ledger
 
+[Seinfeld SUCC II, SPH-01–09](CLAIM_SUPPLEMENT_SEINFELD_PHASE.md) expands the original zero-witness program to phase lifts. Backward unit-square roots, conormal first jets, the nonreduced Frobenius `mu_(2^k)` fiber, and chosen p-clock affine phases have exact proofs, with an explicit 2/3-turn obstruction to independently assigning phases to primes 2 and 3. A complete prime-square-flat phase family must be the gradient of a global potential by unique factorization, so the multiplicative subsystem has no intrinsic phase holonomy. Relative SUCC/FUCC mixed phases depend on the declared SUCC reference; a full gradient remains flat. The nonnormal SS-08 counterfeit has coherent phases whose character means tend to **1**, not 0. Source-selected π Fourier/collision estimates remain **OPEN**. [Proof dossier](../research/2026-10-25/SEINFELD_SUCC_PHASE_SHIFT_AND_FROBENIUS.md).
+
 [Seinfeld SUCC, SS-01–09](CLAIM_SUPPLEMENT_SEINFELD_SUCC.md)
 studies formal zero witnesses, dependent macro recurrence syzygies, labelled
 null cycles, real-circle inverse fiber growth, odd-torsion inverse rigidity

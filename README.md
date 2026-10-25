@@ -1,5 +1,9 @@
 # Observational SUCC
 
+**Seinfeld SUCC II — phase-shifting nothing (2026-10-25, stacked draft).**
+[Phase/Frobenius research dossier](research/2026-10-25/SEINFELD_SUCC_PHASE_SHIFT_AND_FROBENIUS.md) · [SPH-01–09](docs/CLAIM_SUPPLEMENT_SEINFELD_PHASE.md) · [replayable exact receipt](research/2026-10-25/SEINFELD_SUCC_PHASE_RECEIPT.json).
+The equation `1=(2−1)^2` exposes a real inverse-fiber distinction if its source anchor is forgotten: repeated squaring admits 2^k phase roots; in characteristic 2 they coalesce into a single nonreduced Frobenius fiber retaining nilpotent rank 2^k. Source-labelled U(1) phases give exact twisted SUCC/FUCC diamonds, but separately chosen prime phases can fail to glue. A theorem classifies all-prime-flat phases as source potentials, and a nonnormal BBP-like source defeats naive phase-to-mixing arguments. **π normality/RH OPEN.**
+
 **Seinfeld SUCC — the mathematical reach of nothing (research, 2026-10-25).**
 [Proof dossier](research/2026-10-25/SEINFELD_SUCC_NOTHING_THEOREMS.md) ·
 [SS-01–09 claims](docs/CLAIM_SUPPLEMENT_SEINFELD_SUCC.md) ·

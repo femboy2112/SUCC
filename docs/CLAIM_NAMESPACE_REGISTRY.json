@@ -14,6 +14,22 @@
   },
   "namespaces": [
     {
+      "namespace": "SEINFELD_PHASE_FROBENIUS_COHERENCE",
+      "bare_prefix": "SPH",
+      "fq_prefix": "SPH",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SEINFELD_PHASE.md"
+      ],
+      "id_count": 9,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/REFUTED/OPEN); normality RH OPEN; no Lean kernel",
+      "topic": "Seinfeld null-unit phase root inverse towers, characteristic-2 Frobenius nonreduced mu_2^k, conormal jets, arithmetic prime SUCC/FUCC phase coherence, all-prime potential classification and source-selected mixed-phase countermodels",
+      "code": [
+        "observational_succ/seinfeld_phase.py",
+        "tests/test_seinfeld_phase.py",
+        "scripts/seinfeld_phase_probe.py"
+      ]
+    },
+    {
       "namespace": "SEINFELD_SUCC_NULL_PROVENANCE",
       "bare_prefix": "SS",
       "fq_prefix": "SS",
