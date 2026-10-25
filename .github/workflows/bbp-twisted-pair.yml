@@ -1,0 +1,27 @@
+name: BBP twisted pair differential observer exact research
+on:
+  push:
+    branches:
+      - research/bbp-twisted-pair-dual-observers-2026-10-24
+permissions:
+  contents: read
+jobs:
+  focused:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10','3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install test extras
+        run: python -m pip install -e '.[test]'
+      - name: Exact source, Galois and adverse common-mode test
+        run: |
+          python -Werror -m py_compile observational_succ/bbp_twisted_pair.py tests/test_bbp_twisted_pair.py
+          python -m unittest discover -s tests -p 'test_bbp_twisted_pair.py' -v
+          python scripts/verify_provenance.py
+          python scripts/observer_foundations_probe.py

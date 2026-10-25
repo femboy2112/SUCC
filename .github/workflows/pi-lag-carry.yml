@@ -1,0 +1,38 @@
+name: Selected BBP lag carries and collision certificates
+on:
+  pull_request:
+    paths:
+      - 'observational_succ/pi_*'
+      - 'tests/test_pi_*'
+      - 'scripts/pi_lag_*'
+      - 'research/2026-10-24/PI_LAG_*'
+      - '.github/workflows/pi-lag-carry.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Source, carries, intervals and hostile controls
+        env:
+          PYTHONPATH: tests:.
+        run: >-
+          python -m unittest -v test_pi_source_collision test_pi_lag_carry
+          test_pi_carry_prefix_control test_pi_prime_clock_conditioning
+          test_pi_collision_intervals
+      - name: Exact receipt replay
+        run: |
+          python scripts/pi_lag_carry_probe.py --output /tmp/lag.json
+          cmp /tmp/lag.json research/2026-10-24/PI_LAG_CARRY_RECEIPT.json
+          python scripts/pi_lag_interval_independent_oracle.py --output /tmp/interval-oracle.json
+          cmp /tmp/interval-oracle.json research/2026-10-24/PI_LAG_INTERVAL_ORACLE.json
+      - name: Small preregistered interval windows
+        run: python scripts/pi_lag_interval_probe.py --output /tmp/interval-windows.json

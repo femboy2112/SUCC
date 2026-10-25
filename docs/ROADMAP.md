@@ -1,5 +1,140 @@
 # Research roadmap
 
+**2026-10-24 Harmonic mirror SUCC / critical Fourier lag continuation.**
+[HMS claim supplement](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md) and
+[rigorous mirror/Fejér dossier](../research/2026-10-24/PI_HARMONIC_MIRROR_SUCC_FORGE.md).
+Projective J=[[1,0],[1,1]] conjugates natural successor to x/(1+x)
+and is also the Lucas binary incidence generator in a distinct representation.
+Harmonic H_n is the accumulated mirror cocycle, giving a classical alternating
+Pascal identity; prime FUCC moves harmonic coordinates by log p+O(1/n).
+Authentic four-pole BBP forcing comprises four J^8 index rays with moment
+cancellation m0=0,m1=15, and a *changed* rational mirror forcing with the
+same n^-2 coefficient has a nonnormal selected orbit: mirror symmetry alone
+cannot imply normality. Correct harmonic Fejér block mixtures are positive;
+naive signed 1/k lag weights fail. They pay actual BBP source forcing error
+through a critical K_N~log_16 N+3 log_16 log_16 N horizon, but a source-selected
+weighted cyclotomic Fourier saving remains UNVERIFIED; π normality OPEN.
+Next: establish a genuinely source-specific signed estimate at these lags,
+with full original four-pole law and integer carry, not only a change of
+positive kernel. Prior NLG/CYC03 results retained and cross-referenced.
+
+**2026-10-24 Operation One-Shot: anchored natural-carrier cyclotomic lags.**
+[Research dossier](../research/2026-10-24/PI_ONE_SHOT_NATURAL_CARRIER_SPECTRAL_FORGE.md)
+proves authentic BBP lag error 0<R_(n,k)<(16^k-1)/(64n^2), sharp at
+fixed k, and transports actual correlations to selected special modes
+h(16^k-1). The van der Corput contract demands a new signed cancellation
+on the unique N-source orbit; previous CYC-03 frequencies are recognized
+as prior work. p=3,5,7,13 clock annihilation costs grow dramatically
+(3, 1365, 1863225,... by depth). A certified nine-mode finite Fourier
+probe and complete two-heldout, 16-factorial four-observer comparison fail
+to demonstrate stable all-observer dominance. Next research priority:
+**prove an actual original four-pole signed bound** on h(16^k-1) modes
+uniformly for k up to a logarithmic horizon, with all source/clock errors
+paid, or construct a different source-specific retention saving. No claim
+of π normality, unknowability, or independent originality. [NLG claims](CLAIM_SUPPLEMENT_NATURAL_LAG_FORGE.md).
+
+**2026-10-24 Internal BBP / natural SUCC carrier continuation (research).**
+[NCB-01--16](CLAIM_SUPPLEMENT_NATURAL_BBP_CARRIER.md) formalizes the user’s
+carrier/model distinction as an explicit successor-commuting N³ automaton:
+F∘i=i∘S for one original BBP source orbit, with a single-N Cantor encoding.
+Dyadic/primary observers are genuine synchronized readouts of that orbit;
+Pascal uses source differences and Lucas remains typed index combinatorics.
+The rational BBP tail yields a bounded exact nonautonomous gauge to the base16
+π orbit. An exact integer model certifies each finite digit but does not prove
+uniform 1/16 limiting digit frequencies, joint-sign cancellation or normality.
+Next: implement full-factorial authentic source observables and prove a mixed
+Fourier/carry saving rather than another representation identity.
+[Paper dossier](../research/2026-10-24/PI_NATURAL_CARRIER_BBP_LIFT.md).
+
+**2026-10-24 Joint Carrier limit-order addendum.**
+The [exact local-Haar theorem](../research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md)
+computes a prime-local Fourier mean from the genuine four-pole forcing
+and proves (log X)^(-4) decay of prime-first Haar averages. On the same
+authentic integer forcing sequence, reconstructing all odd-primary rational
+phases first yields time-average 1, whereas time-averaging each finite
+prime set first then adding all primes yields 0. **These iterated limits do
+not commute.** This removes the illicit independent-prime-ensemble shortcut
+and sharpens the next gate: retain literal U_n memory and prove an authentic
+selected cross-prime character saving. Local forcing cancellation cannot
+be promoted to an orbit theorem. [JPC-23--26](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md).
+
+**2026-10-24 Joint Carrier moonshot (research draft).**
+The [all-prime source dossier](../research/2026-10-24/PI_JOINT_CARRIER_INTERFEROMETRY.md)
+reconstructs each rational BBP circle phase from a finite moving family of odd
+prime-primary characters without losing the full dyadic source clock or signed
+Pascal differences. Four pole classes per p^k for p>=7 factor over complete
+CRT periods; p3/p5 require special Hensel numerator/pole resolution and source
+memory couples clocks through ord_(p^k)(16). Independent Haar-profinite
+completion almost surely fails to be a finite adele, and no globally
+continuous finite-adelic source completion exists. A six-state CRT model
+proves joint-gate informational synergy; authenticated Fourier cancellation
+and genuine real 1/16 retention are NOT proved. Next: an exact source-selected
+mixed signed-character saving with integral carry and time-alignment controls.
+[JPC-01--22](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md).
+
+**2026-10-24 Pascal/Lucas quotient, prime-base operator continuation.**
+The [research dossier](../research/2026-10-24/PI_PASCAL_LUCAS_QUOTIENT.md)
+proves the Boolean-zeta/binomial rank quotient and explicitly retains its
+non-symmetric positional fiber. Prime Lucas support operators and finite
+digit-coding towers are coherent, but p>2 residue phases are not support
+counts, and a rank/histogram quotient fails to carry ternary SUCC. A synthetic
+four-bit gate has sharp positive rank-only reconstruction loss; this is NOT
+a selected BBP frequency estimate. Next: find an authenticated map carrying
+literal BBP integer lifts into the full Lucas fiber, then bound the actual
+source-selected nonsymmetric signed correlation. See
+[PLQ-01--14](CLAIM_SUPPLEMENT_PASCAL_LUCAS_QUOTIENT.md). Pi normality OPEN.
+
+**2026-10-24 rational-base carry and actual BBP decimal-source continuation.** [Paper](../research/2026-10-24/PI_RATIONAL_BASE_BBP_SYNTHESIS.md) and [RBP-01--21](CLAIM_SUPPLEMENT_RATIONAL_BASE_PI.md) now give exact p/q canonical digit carry and Pascal sums, 11-adic suffix reconstruction of original BBP literal integer lifts, mod-11^L homogeneous clock periods, exponentially accurate signed base-11→decimal Pascal source, and finite source-selected p=11 carry/frequency calibrations. The nonnormal Bernoulli counterexample blocks any inference from marginal 11/10 suffix uniformity. **Next arithmetic target:** a source-specific signed mixed real/11-adic Fourier or real centered-carry loss estimate across required scales; do not replace it with a marginal residue clock, positive averaging or ensemble normality.
+
+**2026-10-24 weighted ternary Pascal continuation (research draft):**
+[TPG-01--28](CLAIM_SUPPLEMENT_TERNARY_PASCAL.md) and
+[research synthesis](../research/2026-10-24/PI_TERNARY_SYNTHESIS.md).
+Positive Pascal filters give a source chart for every prime with a proved
+literal dyadic differential, normalized analytic isometries, and coherent
+binary clock transport. A diagonal Pascal filter reaches81 with denominator3
+and the full authentic dyadic source profile; a fixed shift restores quadratic
+real error. Sharp denominator costs, biased positive-dimensional controls and
+finite carry boundaries retain the remaining real-law obligation. The
+four-phase averaged symmetry is a weaker conditional target. Real all-scale
+collision saving, source-law symmetry and pi normality remain OPEN.
+
+**2026-10-24 Pascal geometry continuation (research draft).**
+The [Pascal synthesis](../research/2026-10-24/PI_PASCAL_SYNTHESIS.md) proves the
+full authentic dyadic difference profile, sharp minimal Mahler degree, positive
+beta-kernel bounds, coherent all-base filters with retained carry precision,
+minimal order-five source recurrences and exponential denominator heights.
+An entire positive moment countermodel preserves every valuation and any
+fixed normalized dyadic precision while clustering completely. Thus generic
+Pascal/positivity reasoning cannot supply real branch loss. The next estimate
+must use the fixed BBP coefficients to control conditional carry alignment or
+the same selected law's tripling (alternatively times31) symmetry, with all
+scale and endpoint costs. No new real half-retention bound or normality proof
+has been obtained. [PJT claim supplement](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md).
+
+**2026-10-24 dyadic / prime-base continuation (research draft).**
+The [new synthesis](../research/2026-10-24/PI_DYADIC_PRIME_BASE_SYNTHESIS.md)
+proves an authenticated 2-adic BBP source isometry, exact one-sixteenth
+dyadic residue refinement, all-depth truncation denominators, conditional
+binary carry factorization and finite prime tomography. The real-circle
+collision bound remains open. The next independent route is a source-law
+tripling transport plus any positive uniform all-scale real collision
+exponent; classical measure rigidity would then imply binary normality.
+Neither source premise is proved. A terminal-scale saving cannot replace
+all-scale control, and base-3 symmetry of the base-16 law is distinct from
+base-3 normality. [DBT claim supplement](CLAIM_SUPPLEMENT_DYADIC_BASE_TRANSPORT.md).
+
+**2026-10-24 Euler--Mascheroni checkpoint.**
+[The source-interface round](../research/2026-10-24/EULER_MASCHERONI_SYNTHESIS.md)
+proves finite cutoff repair, coherent Hurwitz refinement, an authentic BBP
+regulator tail, a two-time-window equivalence, and a uniform completed-Li
+cutoff bound. The next smaller pi target is an explicit vanishing bound for
+the original $h=1$ doubling harmonic time window; one mode and one scale
+would be partial progress, not normality. The RH target is a sharper
+source-derived signed remainder across growing degree with actual completion
+fixed. Classical Li positivity/Nyman closure and the selected-source
+all-character cancellation remain unpaid global obligations. The current
+collision and harmonic-lag routes retain their original scope.
+
 **Duck / π research checkpoint (2026-10-21):** [execution and proof obligations](../research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md), [typed dependency ledger](DUCK_PI_DEPENDENCIES.json), [exact kernel receipt](../research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md). Actual BBP source transport and finite structural certificates are distinguished from the still-open source-specific Fourier estimate.
 
 **2026-10-23 research verdict.** [Carry the Truth](../research/2026-10-23/SOURCE_FAITHFUL_SYNTHESIS.md)

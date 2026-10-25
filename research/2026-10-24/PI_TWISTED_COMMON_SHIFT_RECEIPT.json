@@ -1,0 +1,55 @@
+{
+  "actual_ordered_close_pairs": 76544,
+  "actual_scaled_collision": "5888/2925",
+  "cells": 16,
+  "first_state": 261,
+  "inherited_control": "PR266 dyadic control; two-wire extension and odd-grid alternative",
+  "last_state": 1040,
+  "length": 780,
+  "pair_counter_independent_calibrations": 3,
+  "pi_normality": "OPEN",
+  "prime": 2081,
+  "script_sha256": "9a4cfbcc558e9f50dd7f1e1462914d938f2b726bef7cc74948398ff9d7fbc0d7",
+  "source_scope": "original forcing, deliberately changed common initial state",
+  "status": "VERIFIED_FINITE",
+  "variants": [
+    {
+      "asymptotic_normality_claim": "none",
+      "both_literal_carry_prefix_lengths": 28,
+      "coalescence": {
+        "by_time": 1042
+      },
+      "differential_time_samples_checked": 1043,
+      "exact_four_pole_forcing_retained": true,
+      "initial_zero_changed": true,
+      "kind": "dyadic",
+      "odd_carrier_retained": false,
+      "odd_depth_before_reduction": null,
+      "ordered_close_pairs": 608400,
+      "primary_components_preserved": "all odd primes",
+      "scaled_collision": "16",
+      "shift_denominator_bits": 4168,
+      "shift_numerator_bits": 3116,
+      "shift_sha256": "940970cc8533a0c4721d4cf59f01779043b80220beb13503da5ddc358e25ebf2",
+      "synchronized_differential": "1/15"
+    },
+    {
+      "asymptotic_normality_claim": "none",
+      "both_literal_carry_prefix_lengths": 28,
+      "coalescence": "never (unit action on nontrivial 3-primary shift)",
+      "differential_time_samples_checked": 1043,
+      "exact_four_pole_forcing_retained": true,
+      "initial_zero_changed": true,
+      "kind": "odd_3_primary",
+      "odd_carrier_retained": true,
+      "odd_depth_before_reduction": 2630,
+      "ordered_close_pairs": 608400,
+      "primary_components_preserved": "all primes except 3",
+      "scaled_collision": "16",
+      "shift_denominator_bits": 4169,
+      "shift_numerator_bits": 3117,
+      "shift_sha256": "47e7e910f2881c037183bd367caade25d3cc871fccff6caf138cca283ea6afe2",
+      "synchronized_differential": "1/15"
+    }
+  ]
+}

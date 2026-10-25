@@ -1,0 +1,66 @@
+{
+  "joining": {
+    "T16_invariant_both_laws": true,
+    "antidiagonal_sum_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "antidiagonal_sum_history_count": 1,
+    "exact_character_exponent_laws_checked": 49,
+    "horizon": 7,
+    "identical_full_trajectory_laws": {
+      "difference": {
+        "histories": 31,
+        "sha256": "e437b48c6883bca85600b5cc0e46e85da4dc0445723ab2644cb9239731af6b79"
+      },
+      "first": {
+        "histories": 31,
+        "sha256": "e437b48c6883bca85600b5cc0e46e85da4dc0445723ab2644cb9239731af6b79"
+      },
+      "second": {
+        "histories": 31,
+        "sha256": "e437b48c6883bca85600b5cc0e46e85da4dc0445723ab2644cb9239731af6b79"
+      }
+    },
+    "product_sum_history_count": 31,
+    "q": 31,
+    "source_scope": "unforced rational grid controls; not authentic BBP",
+    "status": "VERIFIED_FINITE",
+    "target_character_mean_antidiagonal": "1 (zero exponent surely)",
+    "target_character_mean_product": "0 (uniform q-root exponent law)",
+    "unknown_global_swap_preserves_target_sum": true
+  },
+  "source": {
+    "asymptotic_normality_claim": "none",
+    "authentic_initial_zero_preserved_for_all_four_wires": false,
+    "both_global_wire_orientations_checked": true,
+    "common_signal_shift_values": [
+      "1/7",
+      "2/7",
+      "4/7"
+    ],
+    "common_signal_temporally_nonconstant": true,
+    "exact_differential_at_every_checked_time": "1/15",
+    "forcing_mutation_detected": true,
+    "horizon": 48,
+    "identical_differential_history_length": 49,
+    "initial_pairs": [
+      [
+        "0",
+        "1/15"
+      ],
+      [
+        "1/7",
+        "22/105"
+      ]
+    ],
+    "odd_rational_carrier_all_checked_states": true,
+    "source_scope": "exact BBP forcing; initial states explicitly varied",
+    "status": "VERIFIED_FINITE"
+  }
+}

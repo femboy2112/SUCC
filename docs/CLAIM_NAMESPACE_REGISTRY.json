@@ -14,6 +14,152 @@
   },
   "namespaces": [
     {
+      "namespace": "HARMONIC_MIRROR_SUCC_PI",
+      "bare_prefix": "HMS",
+      "fq_prefix": "HMS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md"
+      ],
+      "id_count": 16,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/REFUTED/CONDITIONAL/OPEN); pi normality OPEN; no Lean kernel authority",
+      "topic": "reciprocal natural successor unipotent J; harmonic Pascal cotransport; prime FUCC logarithmic bracket; original four-pole BBP mirror rays; critical positive harmonic Fejer/vdC lag mixtures; explicit source-selected cyclotomic error budget",
+      "code": [
+        "observational_succ/harmonic_mirror_succ.py",
+        "observational_succ/pi_harmonic_lag.py",
+        "tests/test_harmonic_mirror_succ.py",
+        "tests/test_pi_harmonic_lag.py",
+        "tests/test_harmonic_mirror_repo_integration.py",
+        "scripts/harmonic_mirror_probe.py"
+      ]
+    },
+    {
+      "namespace": "NATURAL_LAG_SPECTRAL_FORGE",
+      "bare_prefix": "NLG",
+      "fq_prefix": "NLG",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_NATURAL_LAG_FORGE.md"
+      ],
+      "id_count": 18,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/CONDITIONAL/CERTIFIED FINITE/NEGATIVE/UNVERIFIED); pi normality OPEN; no Lean kernel authority",
+      "topic": "authenticated N-carrier BBP source two-time lag with sharp real forcing, cyclotomic vdc conditional Fourier contract, prime-depth clock cost, exact finite Fourier intervals, complete factorial observer ablations and independent holdouts",
+      "code": [
+        "observational_succ/pi_succ_lag_bridge.py",
+        "observational_succ/pi_succ_observer_ablation.py",
+        "observational_succ/pi_succ_character_intervals.py",
+        "tests/test_pi_succ_lag_bridge.py",
+        "tests/test_pi_succ_observer_ablation.py",
+        "tests/test_pi_succ_character_intervals.py",
+        "scripts/pi_succ_oneshot_probe.py"
+      ]
+    },
+    {
+      "namespace": "NATURAL_BBP_CARRIER",
+      "bare_prefix": "NCB",
+      "fq_prefix": "NCB",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_NATURAL_BBP_CARRIER.md"
+      ],
+      "id_count": 16,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/VERIFIED FINITE/REFUTED/UNVERIFIED); π normality OPEN; no Lean authority",
+      "topic": "natural-number successor as arithmetic carrier, primitive-recursive BBP skew-product realization, exact orbit section, integral prime observables, rational digit certificates, analytic tail-coboundary and carry-frequency boundary",
+      "code": [
+        "observational_succ/bbp_natural_carrier.py",
+        "tests/test_bbp_natural_carrier.py",
+        "scripts/bbp_natural_carrier_probe.py"
+      ]
+    },
+    {
+      "namespace": "PI_JOINT_PRIME_CARRIER",
+      "bare_prefix": "JPC",
+      "fq_prefix": "JPC",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md"
+      ],
+      "id_count": 26,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/VERIFIED FINITE/REFUTED/UNVERIFIED); pi normality OPEN; no new Lean authority",
+      "topic": "authentic BBP odd-denominator source and dyadic clock, full synchronized prime torsion phases, prime-power pole CRT laws, p3/5 Hensel exceptions, finite-adelic completion obstruction, full-factorial synergy, quantified pi Fourier bridge; exact four-pole local Haar character multipliers and source-specific noncommuting all-prime averaging limits",
+      "code": [
+        "observational_succ/pi_joint_prime_carrier.py",
+        "tests/test_pi_joint_prime_carrier.py",
+        "tests/test_pi_joint_pole_clocks.py",
+        "scripts/pi_joint_prime_carrier_probe.py",
+        "scripts/pi_joint_limit_order_probe.py",
+        "tests/test_pi_joint_haar_limit_order.py"
+      ]
+    },
+    {
+      "namespace": "PI_PASCAL_LUCAS_QUOTIENT",
+      "bare_prefix": "PLQ",
+      "fq_prefix": "PLQ",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PASCAL_LUCAS_QUOTIENT.md"
+      ],
+      "id_count": 14,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/VERIFIED FINITE/REFUTED/UNVERIFIED); pi normality OPEN; no new Lean authority",
+      "topic": "Lucas prime-support incidence tensors, symmetric Pascal quotients, ternary coding, selected carry-information loss and explicit prime-base transfer obstructions",
+      "code": [
+        "observational_succ/pascal_lucas_quotient.py",
+        "tests/test_pascal_lucas_quotient.py",
+        "scripts/pascal_lucas_quotient_probe.py"
+      ]
+    },
+    {
+      "namespace": "SOURCE_PATH_SELECTION",
+      "bare_prefix": "SPS",
+      "fq_prefix": "SPS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SOURCE_PATH_SELECTION.md"
+      ],
+      "id_count": 25,
+      "status": "RESEARCH (PROVED PAPER/CLASSICAL/EXACT FINITE/REFUTED/CONDITIONAL/OPEN); no new Lean authority; pi normality OPEN",
+      "topic": "exact source interference, source-selection limits, signed extension obstruction, positive-history stationarity, quantitative same-law preservation and real-source normality gates",
+      "code": [
+        "observational_succ/source_path_projector.py",
+        "observational_succ/source_selection_limits.py",
+        "observational_succ/source_history_stationarity.py",
+        "observational_succ/source_history_transport.py",
+        "scripts/source_path_projector_probe.py",
+        "scripts/source_selection_limit_probe.py",
+        "scripts/source_history_transport_probe.py",
+        "scripts/source_history_structure_probe.py"
+      ]
+    },
+    {
+      "namespace": "PI_PASCAL_SOURCE_GEOMETRY",
+      "bare_prefix": "PJT",
+      "fq_prefix": "PJT",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PASCAL_SOURCE.md"
+      ],
+      "id_count": 30,
+      "status": "RESEARCH (PROVED PAPER/CLASSICAL/EXACT FINITE/REFUTED/OPEN); no new Lean authority",
+      "topic": "authentic Pascal valuations, sharp Mahler degree, positive BBP kernels, coherent base filters, carry costs, full-profile countermodels, minimal recurrences and prime-height bounds",
+      "code": [
+        "observational_succ/pi_pascal_source.py",
+        "observational_succ/pi_pascal_kernel.py",
+        "observational_succ/pi_pascal_controls.py",
+        "scripts/pi_pascal_probe.py"
+      ]
+    },
+    {
+      "namespace": "PI_DYADIC_BASE_TRANSPORT",
+      "bare_prefix": "DBT",
+      "fq_prefix": "DBT",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_DYADIC_BASE_TRANSPORT.md"
+      ],
+      "id_count": 21,
+      "status": "RESEARCH (PROVED PAPER/LOCAL/CONDITIONAL/EXTERNAL THEOREM/EXACT FINITE/OPEN); no new Lean authority",
+      "topic": "authentic BBP dyadic isometry, four-bit collision refinement, bounded prime-cover carry, finite prime tomography and conditional base-3 measure rigidity",
+      "code": [
+        "observational_succ/bbp_two_adic.py",
+        "observational_succ/pi_binary_branch.py",
+        "observational_succ/prime_base_carry.py",
+        "observational_succ/pi_base_transport.py",
+        "scripts/pi_dyadic_base_probe.py"
+      ]
+    },
+    {
       "namespace": "PI_SOURCE_COLLISION_ENTROPY",
       "bare_prefix": "SCE",
       "fq_prefix": "SCE",
@@ -669,6 +815,117 @@
         "observational_succ/bbp_galois_tomography.py",
         "observational_succ/bbp_minimal_path.py",
         "scripts/bbp_minimal_path_births_probe.py"
+      ]
+    },
+    {
+      "namespace": "TWISTED_OBSERVER_AGREEMENT",
+      "bare_prefix": "TWA",
+      "fq_prefix": "TWA",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_TWISTED_OBSERVER.md"
+      ],
+      "id_count": 15,
+      "status": "RESEARCH DRAFT (PROVED LOCAL / classical / exact finite / conditional equivalence); no new Lean authority; pi normality OPEN",
+      "topic": "source-typed two-observer agreement, Z2 wire transport, odd-torsion instability, sharp coprime-gain coercivity, invariant joining obstruction, signed temporal energy and conditional inverse-branch collision saving",
+      "code": [
+        "observational_succ/twisted_observer_probe.py",
+        "observational_succ/twisted_pair_transport.py",
+        "observational_succ/twisted_source_energy.py",
+        "scripts/twisted_observer_joining_oracle.py",
+        "scripts/twisted_observer_common_shift_probe.py",
+        "scripts/twisted_source_energy_probe.py",
+        "scripts/twisted_coprime_gain_probe.py",
+        "scripts/twisted_inverse_branch_oracle.py"
+      ]
+    },
+    {
+      "namespace": "HYPOTHESIS_A_JOINT_OBSERVERS",
+      "bare_prefix": "HJA",
+      "fq_prefix": "HJA",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md"
+      ],
+      "id_count": 31,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/REFUTED/CONDITIONAL/OPEN); pi normality OPEN; no new Lean authority",
+      "topic": "BBP-specific Hypothesis A, full joint observer interactions, trimmed collision transport, all-rank and moving-prime controls, all-gain stationary-law classification",
+      "code": [
+        "observational_succ/all_gain_observers.py",
+        "observational_succ/joint_observer_entropy.py",
+        "observational_succ/joint_primary_observers.py",
+        "observational_succ/pascal_rank_process.py",
+        "scripts/all_gain_observers_probe.py",
+        "scripts/joint_observer_entropy_probe.py",
+        "scripts/joint_primary_observers_probe.py",
+        "scripts/pascal_rank_process_probe.py"
+      ]
+    },
+    {
+      "namespace": "PI_TERNARY_PASCAL_GEOMETRY",
+      "bare_prefix": "TPG",
+      "fq_prefix": "TPG",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_TERNARY_PASCAL.md"
+      ],
+      "id_count": 28,
+      "status": "RESEARCH (PROVED PAPER/CLASSICAL/EXACT FINITE/REFUTED/CONDITIONAL/OPEN); no new Lean authority",
+      "topic": "weighted ternary Pascal, sharp filter denominators, positive all-prime dyadic differentials, coherent chart and binary clock transport, base81 source profile, finite carry boundaries and weaker phase symmetry",
+      "code": [
+        "observational_succ/pi_ternary_pascal.py",
+        "scripts/pi_ternary_pascal_probe.py",
+        "scripts/pi_ternary_convex_probe.py",
+        "scripts/pi_ternary_carry_calibration.py",
+        "scripts/pi_ternary_translator_calibration.py"
+      ]
+    },
+    {
+      "namespace": "PI_RATIONAL_BASE_BBP_CARRY",
+      "bare_prefix": "RBP",
+      "fq_prefix": "RBP",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_RATIONAL_BASE_PI.md"
+      ],
+      "id_count": 21,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/CERTIFIED FINITE/REFUTED/OPEN); pi normality OPEN; no new Lean authority",
+      "topic": "canonical p/q rational-base integer digits, 11-adic suffix carry, authentic BBP signed decimal Pascal and mixed source Fourier no-go",
+      "code": [
+        "observational_succ/pi_rational_base_carry.py",
+        "tests/test_pi_rational_base_carry.py",
+        "scripts/pi_rational_base_carry_probe.py"
+      ]
+    },
+    {
+      "namespace": "EULER_MASCHERONI_SOURCE_INTERFACE",
+      "bare_prefix": "EMS",
+      "fq_prefix": "EMS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_EULER_MASCHERONI.md"
+      ],
+      "id_count": 28,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/REFUTED/OPEN); no new Lean authority",
+      "topic": "Euler--Mascheroni cutoff repair, affine Hurwitz refinement, authentic BBP regulator and two-time character criterion, completed Li finite certificates and uniform cutoff bound",
+      "code": [
+        "observational_succ/euler_mascheroni_succ.py",
+        "observational_succ/euler_bbp_regulator.py",
+        "observational_succ/gamma_character_bridge.py",
+        "observational_succ/euler_gamma_li_bridge.py",
+        "scripts/euler_mascheroni_probe.py"
+      ]
+    },
+    {
+      "namespace": "PI_LAG_CARRY_RIGIDITY",
+      "bare_prefix": "LCR",
+      "fq_prefix": "LCR",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_PI_LAG_CARRY.md"
+      ],
+      "id_count": 10,
+      "status": "RESEARCH (PROVED PAPER/EXACT FINITE/CERTIFIED INTERVAL/SCOPED NO-GO/UNPROVED); no new Lean authority",
+      "topic": "selected BBP lag carries, linear-prefix finite-authentication obstruction and conditional prime-clock entropy",
+      "code": [
+        "observational_succ/pi_lag_carry.py",
+        "observational_succ/pi_carry_prefix_control.py",
+        "observational_succ/pi_prime_clock_conditioning.py",
+        "observational_succ/pi_collision_intervals.py"
       ]
     }
   ],

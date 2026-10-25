@@ -1,0 +1,259 @@
+{
+  "authority": "exact integer/Fraction controls except explicitly labelled complex diagnostics",
+  "certified_hex_prefixes": {
+    "16": {
+      "ambiguous": 0,
+      "certified": 16,
+      "digit_counts": [
+        1,
+        0,
+        1,
+        3,
+        1,
+        1,
+        1,
+        0,
+        4,
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "zero_gate_count": 1,
+      "zero_gate_target_ratio": "1/16"
+    },
+    "256": {
+      "ambiguous": 0,
+      "certified": 256,
+      "digit_counts": [
+        17,
+        18,
+        18,
+        15,
+        14,
+        12,
+        16,
+        18,
+        19,
+        24,
+        13,
+        13,
+        14,
+        16,
+        13,
+        16
+      ],
+      "zero_gate_count": 17,
+      "zero_gate_target_ratio": "1/16"
+    },
+    "512": {
+      "ambiguous": 0,
+      "certified": 512,
+      "digit_counts": [
+        32,
+        36,
+        31,
+        31,
+        30,
+        38,
+        29,
+        33,
+        41,
+        37,
+        33,
+        29,
+        29,
+        27,
+        30,
+        26
+      ],
+      "zero_gate_count": 32,
+      "zero_gate_target_ratio": "1/16"
+    },
+    "64": {
+      "ambiguous": 0,
+      "certified": 64,
+      "digit_counts": [
+        6,
+        3,
+        6,
+        8,
+        5,
+        1,
+        2,
+        2,
+        9,
+        6,
+        5,
+        0,
+        2,
+        2,
+        4,
+        3
+      ],
+      "zero_gate_count": 6,
+      "zero_gate_target_ratio": "1/16"
+    }
+  },
+  "comments": [
+    "All source window statistics are finite and not a pi-normality theorem.",
+    "Only genuine BBP finite gates with certified tail intervals are labelled certified.",
+    "A joint empirical conditional residual can vanish from unique state fingerprints."
+  ],
+  "diagnostic_not_certified": {
+    "changes_gate_histogram": true,
+    "complex_weyl_h1_for_mutant_abs": 0.09588218,
+    "complex_weyl_h1_for_source_abs": 0.02656542,
+    "primary_source_gate_counts": [
+      17,
+      18,
+      18,
+      15,
+      14,
+      12,
+      16,
+      18,
+      19,
+      24,
+      13,
+      13,
+      14,
+      16,
+      13,
+      16
+    ],
+    "prime_3_shift_keeps_exact_primary_marginal": true,
+    "shifted_prime_3_gate_counts": [
+      18,
+      10,
+      11,
+      12,
+      18,
+      16,
+      17,
+      15,
+      21,
+      24,
+      17,
+      15,
+      16,
+      16,
+      14,
+      16
+    ]
+  },
+  "empirical_actual_rational_sample": {
+    "()": "4063/65536",
+    "(2,)": "4063/65536",
+    "(3, 5)": "0",
+    "(3, 5, 7)": "0",
+    "(3,)": "19/1536",
+    "(5,)": "19/768",
+    "holdout_unseen_prime_signatures_65_through_256": 192
+  },
+  "exact_assertions": 11624,
+  "fixed_prime_missing_half_real": {
+    "1009": {
+      "all_primes_2_to_19_see_zero": true,
+      "distance_from_half": "1/2018",
+      "real_fraction": "504/1009"
+    },
+    "101": {
+      "all_primes_2_to_19_see_zero": true,
+      "distance_from_half": "1/202",
+      "real_fraction": "50/101"
+    },
+    "23": {
+      "all_primes_2_to_19_see_zero": true,
+      "distance_from_half": "1/46",
+      "real_fraction": "11/23"
+    }
+  },
+  "moving_prime_windows": {
+    "1": {
+      "active_odd_primes": 2,
+      "denominator_bits": 4,
+      "dyadic_residue_mod_256": 225,
+      "largest_active_prime": 5,
+      "p2_torsion_is_zero": true,
+      "prime_bound": 5
+    },
+    "127": {
+      "active_odd_primes": 132,
+      "denominator_bits": 1100,
+      "dyadic_residue_mod_256": 67,
+      "largest_active_prime": 1013,
+      "p2_torsion_is_zero": true,
+      "prime_bound": 1013
+    },
+    "16": {
+      "active_odd_primes": 22,
+      "denominator_bits": 127,
+      "dyadic_residue_mod_256": 176,
+      "largest_active_prime": 113,
+      "p2_torsion_is_zero": true,
+      "prime_bound": 125
+    },
+    "255": {
+      "active_odd_primes": 236,
+      "denominator_bits": 2172,
+      "dyadic_residue_mod_256": 195,
+      "largest_active_prime": 2029,
+      "p2_torsion_is_zero": true,
+      "prime_bound": 2037
+    },
+    "31": {
+      "active_odd_primes": 39,
+      "denominator_bits": 249,
+      "dyadic_residue_mod_256": 35,
+      "largest_active_prime": 241,
+      "p2_torsion_is_zero": true,
+      "prime_bound": 245
+    },
+    "511": {
+      "active_odd_primes": 433,
+      "denominator_bits": 4411,
+      "dyadic_residue_mod_256": 195,
+      "largest_active_prime": 4073,
+      "p2_torsion_is_zero": true,
+      "prime_bound": 4085
+    },
+    "63": {
+      "active_odd_primes": 73,
+      "denominator_bits": 533,
+      "dyadic_residue_mod_256": 131,
+      "largest_active_prime": 461,
+      "p2_torsion_is_zero": true,
+      "prime_bound": 501
+    },
+    "8": {
+      "active_odd_primes": 14,
+      "denominator_bits": 68,
+      "dyadic_residue_mod_256": 88,
+      "largest_active_prime": 61,
+      "p2_torsion_is_zero": true,
+      "prime_bound": 61
+    }
+  },
+  "parent_source": "fixed four-pole rational BBP forcing, U0=0",
+  "prime_character_correlated_control": {
+    "global_character_mean": "(1-omega^2)/3, omega=exp(2*pi*i/3)",
+    "global_mean_squared_modulus": "1/3",
+    "local_p2_character_mean": "0",
+    "local_p3_character_mean": "0"
+  },
+  "schema": 1,
+  "source_states_count": 513,
+  "synthetic_prime_synergy": {
+    "factorial_gain": "1/18",
+    "residuals": {
+      "()": "5/36",
+      "(2, 3)": "0",
+      "(2,)": "1/9",
+      "(3,)": "1/12"
+    }
+  }
+}

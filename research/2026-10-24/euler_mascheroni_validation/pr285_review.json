@@ -1,0 +1,95 @@
+{
+  "pull_request": 285,
+  "head": "f36ddfba4525fe6800ce8b08cc6598e7edfdb1ad",
+  "base": "e648df3e4fca73ab6b942232b5ca4b310e9cac08",
+  "url": "https://github.com/femboy2112/SUCC/pull/285",
+  "created_at": "2026-10-25T02:28:50Z",
+  "updated_at": "2026-10-25T02:31:17Z",
+  "source_files": [
+    {
+      "path": "docs/CLAIM_SUPPLEMENT_GENERALIZED_EULER_ADELIC.md",
+      "git_blob_sha": "08c42cb53e32f454600e0165325eb0ccbfc467b4",
+      "status": "added"
+    },
+    {
+      "path": "observational_succ/generalized_euler_adelic.py",
+      "git_blob_sha": "f8f266aa23f8d118e1830c927e56ad9099cf6ad8",
+      "status": "added"
+    },
+    {
+      "path": "research/2026-10-24/GENERALIZED_EULER_ADELIC_BOUNDARY.md",
+      "git_blob_sha": "dc3f3b79323fa29b5ca72142d06a28a086bc0309",
+      "status": "added"
+    },
+    {
+      "path": "scripts/generalized_euler_adelic_probe.py",
+      "git_blob_sha": "c2ba74f6248a4647db7fe825a5a197ec7b8115a0",
+      "status": "added"
+    },
+    {
+      "path": "tests/test_generalized_euler_adelic.py",
+      "git_blob_sha": "6f2beaf57758d6fe617953e2b9eaa17f851a0de2",
+      "status": "added"
+    }
+  ],
+  "reviewed_paths": [
+    "research/2026-10-24/GENERALIZED_EULER_ADELIC_BOUNDARY.md",
+    "observational_succ/generalized_euler_adelic.py",
+    "docs/CLAIM_SUPPLEMENT_GENERALIZED_EULER_ADELIC.md"
+  ],
+  "sibling_integrated": false,
+  "covered_by_our_full_suite": false,
+  "ci_observed": [
+    {
+      "name": "Observational SUCC validation",
+      "event": "pull_request",
+      "status": "in_progress",
+      "conclusion": null,
+      "sha": "f36ddfba4525fe6800ce8b08cc6598e7edfdb1ad",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/40154597878"
+    },
+    {
+      "name": "Institute theorem contracts and core Lean",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "sha": "f36ddfba4525fe6800ce8b08cc6598e7edfdb1ad",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/40154597898"
+    },
+    {
+      "name": "One Object II original source cancellation and zero-shift Schur",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "sha": "f36ddfba4525fe6800ce8b08cc6598e7edfdb1ad",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/40154597918"
+    },
+    {
+      "name": "Collective observer source and certificate replay",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "sha": "f36ddfba4525fe6800ce8b08cc6598e7edfdb1ad",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/40154598028"
+    },
+    {
+      "name": "Observational SUCC validation",
+      "event": "push",
+      "status": "in_progress",
+      "conclusion": null,
+      "sha": "f36ddfba4525fe6800ce8b08cc6598e7edfdb1ad",
+      "url": "https://github.com/femboy2112/SUCC/actions/runs/40154564261"
+    }
+  ],
+  "observed_numerical_defect": {
+    "call": "theta_balanced_completed(-2)",
+    "error": "ValueError: gamma function pole",
+    "paper_identity": "B(-2)=B(3)",
+    "scope": "optional numerical evaluator; paper theorem unaffected; sibling source not modified",
+    "root_reproduced": true,
+    "pinned_module_git_blob": "f8f266aa23f8d118e1830c927e56ad9099cf6ad8",
+    "reflected_numeric_B3": "(0.024646631348918504458409903453766402 + 0.0j)",
+    "numeric_value_is_certificate": false
+  },
+  "novelty_attribution": "G/cell/Hurwitz/prime cutoff and finite-jet nonidentification overlap is credited; centered-sawtooth observation prompted improved Li cutoff corollary"
+}

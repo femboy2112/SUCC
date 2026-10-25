@@ -1,0 +1,34 @@
+{
+  "assertions": 3195,
+  "counts": {
+    "digits": 276,
+    "dyadic": 900,
+    "encoded": 300,
+    "forcing": 150,
+    "negative_controls": 3,
+    "orbit": 450,
+    "pascal": 33,
+    "prime_torsion": 1083
+  },
+  "first_eight_hex_digits_alpha": "3243F6A8",
+  "first_three_unnormalized_pairs": [
+    {
+      "a": 0,
+      "b": 1,
+      "n": 0
+    },
+    {
+      "a": 47,
+      "b": 15,
+      "n": 1
+    },
+    {
+      "a": 1852434,
+      "b": 36855,
+      "n": 2
+    }
+  ],
+  "n_states": 150,
+  "pi_normality": "OPEN",
+  "scope": "finite_exact_checks_not_normality_proof"
+}

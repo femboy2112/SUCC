@@ -1,5 +1,122 @@
 # Research claim ledger
 
+[Harmonic mirror SUCC / source-selected π supplement HMS-01–16](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md)
+records exact natural-reciprocal SUCC and shared one-bit Lucas J, harmonic
+Pascal finite differences and prime-FUCC logarithmic transport. Authentic
+BBP forcing is four projective J^8 reciprocal rays with first signed moment
+15, but a positive rational mirror counterfeit of the same leading n^-2
+order has a nonnormal radix orbit. The new positive harmonic Fejér mixture
+has a **proved** 88/1575 source error budget for authenticated growing
+cyclotomic lags and an integer critical logarithmic schedule. Neither
+that bound nor source-generic positivity supplies the still-unproved
+selected mixed Fourier cancellation; the naive 1/k kernel fails positivity.
+[Mathematical proof, negative controls, status](../research/2026-10-24/PI_HARMONIC_MIRROR_SUCC_FORGE.md).
+Pi normality and logical independence remain OPEN; no new Lean authority.
+
+[Natural-lag Fourier forge, NLG-01--18](CLAIM_SUPPLEMENT_NATURAL_LAG_FORGE.md)
+is a research-only additive record of source-correct BBP temporal lags,
+a sharp strictly positive 16^k/n^2 forcing envelope, classical signed
+van der Corput, prime-depth costs and finite growing-frequency resonances.
+[Proof/negative-control dossier](../research/2026-10-24/PI_ONE_SHOT_NATURAL_CARRIER_SPECTRAL_FORGE.md).
+The conditional cyclotomic-frequency mean criterion does NOT establish
+actual signed source cancellation. Nine finite certified Fourier enclosures
+and disjoint complete 16-cell observer ablations are honest finite tests;
+full observer features are worse on one holdout and better on another.
+π-normality remains OPEN; formal Lean authority is not asserted.
+
+The additive [natural-number carrier supplement NCB-01--16](CLAIM_SUPPLEMENT_NATURAL_BBP_CARRIER.md)
+proves a total N³ BBP state machine and its unique anchored SUCC section,
+Cantor encoding into N, source-faithful 2-adic/prime observables, finite digit
+certificates and the exact analytic tail conjugacy. Literal source integer
+lifts are never replaced by ungrounded independent prime ensembles. Hostile
+controls refute naked circle succession, missing lifts, unrestricted 2-adic
+backward inversion, and any inference from N coding to normality.
+[Complete paper proof](../research/2026-10-24/PI_NATURAL_CARRIER_BBP_LIFT.md).
+**The source-specific mixed Fourier/carry estimate and π normality remain OPEN.**
+
+JPC-23--26 [Joint Carrier Fourier/limit addendum](../research/2026-10-24/PI_JOINT_CARRIER_LIMIT_ORDER.md)
+prove the authentic BBP *forcing* local Haar character multipliers, finite-
+prime CRT time means, logarithmic fourth-power prime-product damping, and
+noncommutation of reconstruct-first versus local-average-first limits
+(1 versus 0). This is a rigorous source-specific failure mode for independent
+prime-observer averaging, NOT cancellation of the authentic history U_n.
+[JPC supplement](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md),
+[exact receipt](../research/2026-10-24/PI_JOINT_LIMIT_ORDER_RECEIPT.json).
+π normality remains OPEN.
+
+The additive [Joint Prime Carrier supplement JPC-01--22](CLAIM_SUPPLEMENT_PI_JOINT_CARRIER.md)
+records a source-faithful full odd-prime character product, the nontrivial
+dyadic integral source, prime-power pole activation and CRT independence,
+exceptional 3/5 numerator-Hensel roots, shared multiplier-16 memory clocks,
+finite-adelic continuity and Haar-completion obstructions, exact six-point
+observer synergy, product-of-marginals failure, and an O_h(1/N) source-to-pi
+Fourier transfer. [Paper proof dossier](../research/2026-10-24/PI_JOINT_CARRIER_INTERFEROMETRY.md).
+The synchronized selected joint Fourier sum still needs an arithmetic saving;
+**pi normality remains OPEN**. Paper/external/finite/Lean authority separate.
+
+**2026-10-24 Hypothesis A and all observers:**
+[HJA-01--31](CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md) and
+[research synthesis](../research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md).
+A classical upper-only frequency criterion motivates a trimmed, fully joint
+collision bound. Exact BBP transport costs at most a factor two; all-gain
+law preservation has an elementary classification without an entropy premise.
+All-window Pascal-rank and source-matching moving-prime controls preserve the
+scope of these reductions. The authentic statistical estimates and pi normality
+remain OPEN. No new Lean authority is claimed.
+
+The additive [Pascal/Lucas quotient supplement PLQ-01--14](CLAIM_SUPPLEMENT_PASCAL_LUCAS_QUOTIENT.md)
+proves an exact Boolean-incidence/binomial-transform quotient, prime-p Lucas
+tensors, nontrivial positional kernel, explicit additive/successor obstructions,
+source symmetrization loss and a synthetic four-bit gate residual. Prime
+support overlap 1/16 is NOT a real BBP carry bound. Full proofs and honest
+source boundary: [Pascal quotient research](../research/2026-10-24/PI_PASCAL_LUCAS_QUOTIENT.md).
+**Pi normality and actual selected real carry control remain OPEN.**
+
+The additive [source path selection supplement SPS-01--25](CLAIM_SUPPLEMENT_SOURCE_PATH_SELECTION.md)
+records exact interference projectors, quantitative selection limits, the
+raw-amplitude extension obstruction, positive-history stationarity and a
+source-preservation bridge. Its real all-scale and same-law arithmetic
+premises remain OPEN; no pi-normality or new Lean authority is claimed.
+
+The additive [rational-base source supplement RBP-01--21](CLAIM_SUPPLEMENT_RATIONAL_BASE_PI.md) distinguishes classical p/q integer digit arithmetic, an 11-adic suffix observer of authentic BBP integer lifts, the inherited signed-Pascal exponential decimal source, finite exact Machin and selected pair-carry probes, and a source-agnostic **REFUTED** transfer from all-depth digit fairness to π normality. Details: [rational-base research synthesis](../research/2026-10-24/PI_RATIONAL_BASE_BBP_SYNTHESIS.md) and [validation](../research/2026-10-24/PI_RATIONAL_BASE_VALIDATION.md). The original BBP real conditional loss, signed Fourier cancellation and π normality remain OPEN.
+
+**2026-10-24 weighted ternary Pascal continuation (research draft):**
+[TPG-01--28](CLAIM_SUPPLEMENT_TERNARY_PASCAL.md) and
+[research synthesis](../research/2026-10-24/PI_TERNARY_SYNTHESIS.md).
+Positive Pascal filters give a source chart for every prime with a proved
+literal dyadic differential, normalized analytic isometries, and coherent
+binary clock transport. A diagonal Pascal filter reaches81 with denominator3
+and the full authentic dyadic source profile; a fixed shift restores quadratic
+real error. Sharp denominator costs, biased positive-dimensional controls and
+finite carry boundaries retain the remaining real-law obligation. The
+four-phase averaged symmetry is a weaker conditional target. Real all-scale
+collision saving, source-law symmetry and pi normality remain OPEN.
+
+The additive [Pascal source supplement PJT-01--30](CLAIM_SUPPLEMENT_PASCAL_SOURCE.md)
+records exact dyadic difference valuations, minimax Mahler approximation,
+positive real kernels, coherent prime-base filters, explicit carry costs,
+full-profile clustering controls, minimal recurrences and source-prime heights.
+Paper proofs, classical inputs and finite computation have separate authority.
+The real conditional carry estimate and **pi normality remain OPEN**.
+
+The additive [Dyadic / prime-base supplement DBT-01--21](CLAIM_SUPPLEMENT_DYADIC_BASE_TRANSPORT.md)
+records authentic BBP 2-adic interpolation and collision refinement, exact
+carry probes and a conditional base-3 measure-rigidity route. Paper proofs,
+classical external theorems and finite computations retain separate authority.
+The real selected-source bridge and **pi normality remain OPEN**.
+
+The additive [Euler--Mascheroni supplement EMS-01--28](CLAIM_SUPPLEMENT_EULER_MASCHERONI.md)
+records exact cutoff/refinement laws, a source-labelled BBP cofinal theorem,
+two-time-dilation Tauberian equivalence, actual finite character intervals,
+completed Li transport and a uniform finite cutoff bound. It preserves
+explicit clock and finite-jet countermodels and separates changed-source
+controls from the original arithmetic obligations. **Pi normality and RH
+remain open; no new Lean authority.**
+[Full synthesis](../research/2026-10-24/EULER_MASCHERONI_SYNTHESIS.md).
+The [internal RH handoff](../handoffs/rh/2026-10-24-euler-mascheroni-completed-li.md)
+pins the exact originating source commit and the remaining all-degree sign
+obligation; no external RH integration is implied.
+
 The additive [Cyclotomic selected-source supplement CSS-01–17](CLAIM_SUPPLEMENT_CYCLOTOMIC_SELECTED_SOURCE.md)
 records all-character local twist bounds, actual complementary-source spectral
 budgets, dyadic finite-window controls, exact observation costs, and positive
@@ -936,3 +1053,11 @@ The exact J8 and J24 instances strictly improve both signed Schur lower
 blocks. Both resulting lower blocks remain negative definite, so the true
 source sign is **UNVERIFIED**, not refuted. Universal paper proofs and exact
 finite evidence remain distinct. No Lean or RH authority is claimed.
+
+
+## Selected BBP lag/carry research (2026-10-24)
+
+[LCR-01–10](CLAIM_SUPPLEMENT_PI_LAG_CARRY.md) records exact selected lag
+constraints, a linear early-carry-prefix no-go for partial authentication,
+conditional prime-clock entropy obstructions, and certified canonical collision
+windows. The actual selected subpower bound and pi normality remain unproved.

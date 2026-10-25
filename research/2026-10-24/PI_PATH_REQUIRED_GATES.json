@@ -1,0 +1,29 @@
+[
+  {
+    "command": [
+      "/tmp/succ-twisted-venv/bin/python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.033,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/tmp/succ-twisted-venv/bin/python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.094,
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/tmp/succ-twisted-venv/bin/python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "exit_code": 0,
+    "seconds": 2.406,
+    "stderr": ""
+  }
+]
