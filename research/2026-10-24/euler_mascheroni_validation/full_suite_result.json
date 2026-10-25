@@ -1,0 +1,37 @@
+{
+  "command": "python -m unittest discover -s tests -p test_*.py -v",
+  "exit_code": 0,
+  "inputs_before": {
+    "observational_succ/euler_bbp_regulator.py": "bbeb9bb8ab79b2447a9f93a29cf176b6f6074c69596fc86d84ef61366a30e824",
+    "observational_succ/euler_gamma_li_bridge.py": "01e14853751bb9c3ae172b31d34cbb443dc5fe4b2c54a1bb5ff8d31b6849140a",
+    "observational_succ/euler_mascheroni_succ.py": "50e3f049019d3891b06ce55ccb5c4efab4d7e6b4c62f932ca82453b4cfc6e1fb",
+    "observational_succ/gamma_character_bridge.py": "32bc599e4f5aba59bd62a73cfd349a4264d5cd2062332dbe5070591cdb21a0d8",
+    "tests/test_euler_bbp_regulator.py": "b395c71522643732731923b2c25e2c22a9ea8b238c3444f0b1abf79fa31a0761",
+    "tests/test_euler_gamma_li_bridge.py": "32c172ef5d0d69ed2ffc309077be6861ee43b49bfa99dad9ff32800de1acf202",
+    "tests/test_euler_mascheroni_succ.py": "59c66223037a42e184bc688127a241fbf5bff8b1a8bdee5d17728d56a27eea24",
+    "tests/test_gamma_character_bridge.py": "41325ae8aaef712c01d625486e1de3a8e6d023f75d42c93e21cc415d4240ddf8"
+  },
+  "inputs_after": {
+    "observational_succ/euler_bbp_regulator.py": "bbeb9bb8ab79b2447a9f93a29cf176b6f6074c69596fc86d84ef61366a30e824",
+    "observational_succ/euler_gamma_li_bridge.py": "01e14853751bb9c3ae172b31d34cbb443dc5fe4b2c54a1bb5ff8d31b6849140a",
+    "observational_succ/euler_mascheroni_succ.py": "50e3f049019d3891b06ce55ccb5c4efab4d7e6b4c62f932ca82453b4cfc6e1fb",
+    "observational_succ/gamma_character_bridge.py": "32bc599e4f5aba59bd62a73cfd349a4264d5cd2062332dbe5070591cdb21a0d8",
+    "tests/test_euler_bbp_regulator.py": "b395c71522643732731923b2c25e2c22a9ea8b238c3444f0b1abf79fa31a0761",
+    "tests/test_euler_gamma_li_bridge.py": "32c172ef5d0d69ed2ffc309077be6861ee43b49bfa99dad9ff32800de1acf202",
+    "tests/test_euler_mascheroni_succ.py": "59c66223037a42e184bc688127a241fbf5bff8b1a8bdee5d17728d56a27eea24",
+    "tests/test_gamma_character_bridge.py": "41325ae8aaef712c01d625486e1de3a8e6d023f75d42c93e21cc415d4240ddf8"
+  },
+  "inputs_unchanged": true,
+  "log_path": "full_suite.log.gz",
+  "python": "/tmp/succ-research-venv/bin/python",
+  "PYTHONPATH": "/workspace/scratch/74d392dc5a16/SUCC",
+  "tests_run": 7649,
+  "new_tests": 48,
+  "unittest_seconds": 716.396,
+  "wall_seconds": 721.9979372539965,
+  "baseline_main": "e648df3e4fca73ab6b942232b5ca4b310e9cac08",
+  "uncompressed_log_sha256": "e16e27c32eff2380999e61d2d4569e98ed47cfad9301edb938d6ceafb96d875b",
+  "archive_sha256": "1dc84df356d16f2a4131eac8faf12679b62d25b64beb5c5b4e51364ba8f5d8a8",
+  "runtime_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "subsequent_edits": "paper proofs, navigation, claim registration and one CI receipt-replay step; production and tests remain byte-identical"
+}

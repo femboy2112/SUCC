@@ -1,5 +1,14 @@
 # Research claim ledger
 
+The additive [Euler--Mascheroni supplement EMS-01--28](CLAIM_SUPPLEMENT_EULER_MASCHERONI.md)
+records exact cutoff/refinement laws, a source-labelled BBP cofinal theorem,
+two-time-dilation Tauberian equivalence, actual finite character intervals,
+completed Li transport and a uniform finite cutoff bound. It preserves
+explicit clock and finite-jet countermodels and separates changed-source
+controls from the original arithmetic obligations. **Pi normality and RH
+remain open; no new Lean authority.**
+[Full synthesis](../research/2026-10-24/EULER_MASCHERONI_SYNTHESIS.md).
+
 The additive [Cyclotomic selected-source supplement CSS-01–17](CLAIM_SUPPLEMENT_CYCLOTOMIC_SELECTED_SOURCE.md)
 records all-character local twist bounds, actual complementary-source spectral
 budgets, dyadic finite-window controls, exact observation costs, and positive

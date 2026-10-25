@@ -1,5 +1,16 @@
 # Observational SUCC
 
+**Euler--Mascheroni source interface (2026-10-24, draft research):**
+[full synthesis](research/2026-10-24/EULER_MASCHERONI_SYNTHESIS.md) ·
+[EMS-01--28 claims](docs/CLAIM_SUPPLEMENT_EULER_MASCHERONI.md) ·
+[validation](research/2026-10-24/EULER_MASCHERONI_VALIDATION.md).
+Exact finite cutoff repair and Hurwitz refinement, an authentic BBP regulator
+tail theorem, a two-time-dilation character criterion, and completed
+Stieltjes-to-Li certificates with a uniform all-degree cutoff error.
+Classical identities, paper proofs, rational finite certificates and
+source-changing countermodels are distinguished. **Selected pi cancellation
+and all-degree Li positivity remain open; no RH or normality proof.**
+
 **Coherent-main integration — π source / circle / prime-clock frontier (2026-10-24, draft research).**
 The latest consolidated round. Corrected source fidelity: the former "BBP four-pole lane closed"
 verdict is **withdrawn** — index poles are not orbit points and a `1/3` fixed point does not

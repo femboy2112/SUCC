@@ -14,6 +14,24 @@
   },
   "namespaces": [
     {
+      "namespace": "EULER_MASCHERONI_SOURCE_INTERFACE",
+      "bare_prefix": "EMS",
+      "fq_prefix": "EMS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_EULER_MASCHERONI.md"
+      ],
+      "id_count": 28,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/REFUTED/OPEN); no new Lean authority",
+      "topic": "Euler--Mascheroni cutoff repair, affine Hurwitz refinement, authentic BBP regulator and two-time character criterion, completed Li finite certificates and uniform cutoff bound",
+      "code": [
+        "observational_succ/euler_mascheroni_succ.py",
+        "observational_succ/euler_bbp_regulator.py",
+        "observational_succ/gamma_character_bridge.py",
+        "observational_succ/euler_gamma_li_bridge.py",
+        "scripts/euler_mascheroni_probe.py"
+      ]
+    },
+    {
       "namespace": "PI_SOURCE_COLLISION_ENTROPY",
       "bare_prefix": "SCE",
       "fq_prefix": "SCE",
