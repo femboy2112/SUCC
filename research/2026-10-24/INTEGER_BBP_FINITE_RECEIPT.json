@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "parent": "e648df3e4fca73ab6b942232b5ca4b310e9cac08",
+  "pi_normality_proved": false,
+  "exact_tests": 15,
+  "local_python": "3.13.5",
+  "authentic_source_limit": 1024,
+  "source_bit_sizes": [
+    {"n": 1, "conductor_bits": 4, "numerator_bits": 6, "code_bits": 11},
+    {"n": 2, "conductor_bits": 12, "numerator_bits": 18, "code_bits": 35},
+    {"n": 3, "conductor_bits": 20, "numerator_bits": 30, "code_bits": 58},
+    {"n": 16, "conductor_bits": 131, "numerator_bits": 193, "code_bits": 384},
+    {"n": 64, "conductor_bits": 542, "numerator_bits": 796, "code_bits": 1590},
+    {"n": 128, "conductor_bits": 1116, "numerator_bits": 1625, "code_bits": 3249},
+    {"n": 256, "conductor_bits": 2181, "numerator_bits": 3203, "code_bits": 6404},
+    {"n": 512, "conductor_bits": 4431, "numerator_bits": 6477, "code_bits": 12953},
+    {"n": 1024, "conductor_bits": 8882, "numerator_bits": 12976, "code_bits": 25950}
+  ],
+  "source_only_digit_count": 128,
+  "digit_max_depth": 1,
+  "hex_fraction_prefix16": "243f6a8885a308d3",
+  "hex128_sha256": "047b030b81e942532ea4f9201e3ba2cb45d0b28459ca5e791a91d13761a3fe43",
+  "collision_rows": [
+    {"p": 17, "window": 6, "mesh": 16, "ordered_pairs": 8, "scaled": "32/9"},
+    {"p": 41, "window": 15, "mesh": 16, "ordered_pairs": 45, "scaled": "16/5"},
+    {"p": 97, "window": 36, "mesh": 16, "ordered_pairs": 240, "scaled": "80/27"},
+    {"p": 257, "window": 96, "mesh": 16, "ordered_pairs": 1198, "scaled": "599/288"}
+  ],
+  "blob_sha1": {
+    "observational_succ/integer_bbp_carrier.py": "1c034fca97c3466393692b72a3f863e1d71230ed",
+    "tests/test_integer_bbp_carrier.py": "12fbb70701d5b41b41e2ebaf81eb8b02abcc3c7f"
+  },
+  "full_suite_local_run": false,
+  "local_limitation": "GitHub clone/network DNS unavailable; only isolated new-module and independent-oracle checks ran."
+}

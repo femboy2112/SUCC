@@ -1,0 +1,30 @@
+name: Integer-hosted BBP source, reversible clocks and carry fidelity
+on:
+  push:
+    branches:
+      - research/integer-carrier-bbp-internalization-2026-10-24
+permissions:
+  contents: read
+jobs:
+  exact:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.10', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install source and research extras
+        run: python -m pip install -e '.[test]'
+      - name: Exact carrier and independent source checks
+        run: |
+          python -Werror -m py_compile observational_succ/integer_bbp_carrier.py tests/test_integer_bbp_carrier.py
+          python -m unittest discover -s tests -p 'test_integer_bbp_carrier.py' -v
+          python scripts/verify_provenance.py
+          python scripts/observer_foundations_probe.py
+          python scripts/ordinal_succ_report_probe.py
