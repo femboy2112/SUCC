@@ -1,0 +1,114 @@
+{
+  "enlarged_branch_mutation_detected": true,
+  "open_nonmonopolization_premise_proved": false,
+  "pair_recurrence_checks": 10446,
+  "pi_normality": "OPEN",
+  "rows": [
+    {
+      "current": 94,
+      "forcing_drift": "991742431/192200596497",
+      "literal_carry_differences": 0,
+      "prime": 41,
+      "radius": "1/4",
+      "small_current": 26,
+      "successor": 96,
+      "window_length": 14,
+      "zero_branch": 26
+    },
+    {
+      "current": 38,
+      "forcing_drift": "991742431/192200596497",
+      "literal_carry_differences": 0,
+      "prime": 41,
+      "radius": "1/16",
+      "small_current": 20,
+      "successor": 40,
+      "window_length": 14,
+      "zero_branch": 20
+    },
+    {
+      "current": 26,
+      "forcing_drift": "991742431/192200596497",
+      "literal_carry_differences": 0,
+      "prime": 41,
+      "radius": "1/64",
+      "small_current": 16,
+      "successor": 26,
+      "window_length": 14,
+      "zero_branch": 16
+    },
+    {
+      "current": 649,
+      "forcing_drift": "237633811738/196871581912005",
+      "literal_carry_differences": 8,
+      "prime": 97,
+      "radius": "1/4",
+      "small_current": 83,
+      "successor": 645,
+      "window_length": 35,
+      "zero_branch": 83
+    },
+    {
+      "current": 229,
+      "forcing_drift": "237633811738/196871581912005",
+      "literal_carry_differences": 0,
+      "prime": 97,
+      "radius": "1/16",
+      "small_current": 45,
+      "successor": 229,
+      "window_length": 35,
+      "zero_branch": 45
+    },
+    {
+      "current": 83,
+      "forcing_drift": "237633811738/196871581912005",
+      "literal_carry_differences": 0,
+      "prime": 97,
+      "radius": "1/64",
+      "small_current": 37,
+      "successor": 81,
+      "window_length": 35,
+      "zero_branch": 37
+    },
+    {
+      "current": 4513,
+      "forcing_drift": "25335770202466/129244100366020815",
+      "literal_carry_differences": 38,
+      "prime": 257,
+      "radius": "1/4",
+      "small_current": 333,
+      "successor": 4513,
+      "window_length": 95,
+      "zero_branch": 333
+    },
+    {
+      "current": 1173,
+      "forcing_drift": "25335770202466/129244100366020815",
+      "literal_carry_differences": 4,
+      "prime": 257,
+      "radius": "1/16",
+      "small_current": 161,
+      "successor": 1181,
+      "window_length": 95,
+      "zero_branch": 161
+    },
+    {
+      "current": 333,
+      "forcing_drift": "25335770202466/129244100366020815",
+      "literal_carry_differences": 0,
+      "prime": 257,
+      "radius": "1/64",
+      "small_current": 117,
+      "successor": 341,
+      "window_length": 95,
+      "zero_branch": 117
+    }
+  ],
+  "sampling_scope": "adaptive post-derivation checks; no branch fraction fitted",
+  "source_sha256": {
+    "observational_succ/pi_source_collision.py": "c3d1868624c3547124fd2cf33da35e10e8c48bec7922095cad83fb446f18a777",
+    "scripts/twisted_inverse_branch_oracle.py": "4d0a840cd627b00928dc71e253af43f5a5cdc355ab1bd068e3cc691b206a223f"
+  },
+  "status": "VERIFIED_FINITE",
+  "zero_centered_carry_checks": 838
+}

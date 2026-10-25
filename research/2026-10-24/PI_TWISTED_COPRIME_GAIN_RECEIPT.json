@@ -1,0 +1,92 @@
+{
+  "pi_normality": "OPEN",
+  "rows": [
+    {
+      "cancellation_bound_vacuous_certified": true,
+      "frequency": 1,
+      "gain2_squared": {
+        "lower_integer": 17522839675,
+        "scale": 10000000000,
+        "upper_integer": 17522839676
+      },
+      "gain3_squared": {
+        "lower_integer": 21586979760,
+        "scale": 10000000000,
+        "upper_integer": 21586979761
+      },
+      "length": 72,
+      "prime": 193,
+      "squared_coercivity_error": {
+        "lower_integer": 52146425915,
+        "scale": 10000000000,
+        "upper_integer": 52146425916
+      },
+      "sum_squared_mismatches": {
+        "lower_integer": 39109819436,
+        "scale": 10000000000,
+        "upper_integer": 39109819437
+      }
+    },
+    {
+      "cancellation_bound_vacuous_certified": true,
+      "frequency": 1,
+      "gain2_squared": {
+        "lower_integer": 21256333826,
+        "scale": 10000000000,
+        "upper_integer": 21256333827
+      },
+      "gain3_squared": {
+        "lower_integer": 20854606101,
+        "scale": 10000000000,
+        "upper_integer": 20854606102
+      },
+      "length": 132,
+      "prime": 353,
+      "squared_coercivity_error": {
+        "lower_integer": 56147919905,
+        "scale": 10000000000,
+        "upper_integer": 56147919906
+      },
+      "sum_squared_mismatches": {
+        "lower_integer": 42110939928,
+        "scale": 10000000000,
+        "upper_integer": 42110939929
+      }
+    },
+    {
+      "cancellation_bound_vacuous_certified": true,
+      "frequency": 1,
+      "gain2_squared": {
+        "lower_integer": 18356227472,
+        "scale": 10000000000,
+        "upper_integer": 18356227473
+      },
+      "gain3_squared": {
+        "lower_integer": 19348568222,
+        "scale": 10000000000,
+        "upper_integer": 19348568223
+      },
+      "length": 216,
+      "prime": 577,
+      "squared_coercivity_error": {
+        "lower_integer": 50273060925,
+        "scale": 10000000000,
+        "upper_integer": 50273060926
+      },
+      "sum_squared_mismatches": {
+        "lower_integer": 37704795694,
+        "scale": 10000000000,
+        "upper_integer": 37704795695
+      }
+    }
+  ],
+  "sampling_scope": "fresh finite holdout; no asymptotic inference",
+  "source_sha256": {
+    "observational_succ/pi_source_collision.py": "c3d1868624c3547124fd2cf33da35e10e8c48bec7922095cad83fb446f18a777",
+    "observational_succ/pi_source_genesis.py": "147dcb1b42b0de157c55385896cb1b15b17c1bb4ba14ea6fb8effed24ed62cf1",
+    "observational_succ/twisted_source_energy.py": "8a35cb6806bf4433f0a899cc74d65c9d941ea9377d92f2342a29c917ac1f4ca8",
+    "research/2026-10-24/PI_TWISTED_OBSERVER_PREREGISTRATION.md": "66651c4081f7b06a1f0a8131f675c0310ec16b2c181723a4f2eb8504a91d0378",
+    "scripts/twisted_coprime_gain_probe.py": "d1c40c1973977ad9fa93527163250ea93a2f688ada35ba62cdfb04f7b469f4d9"
+  },
+  "status": "VERIFIED_FINITE"
+}

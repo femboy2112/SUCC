@@ -1,0 +1,2401 @@
+{
+  "schema": "succ.pi_pascal_probe.v1",
+  "truth_state": "VERIFIED_FINITE",
+  "pi_normality": "OPEN",
+  "real_half_retention": "OPEN",
+  "same_law_tripling": "OPEN",
+  "parent_commit": "3acd547ff122368d5694efdab029b3156a292d8a",
+  "arithmetic": "integer/Fraction decisions; outward Decimal display only",
+  "python": "3.12.14",
+  "elapsed_seconds": 1.826,
+  "calibration": {
+    "starts": [
+      0,
+      16
+    ],
+    "orders": [
+      1,
+      16
+    ],
+    "pairs": 272
+  },
+  "held_out": {
+    "starts": [
+      19,
+      31,
+      64,
+      127
+    ],
+    "orders": [
+      17,
+      40
+    ],
+    "pairs": 96
+  },
+  "checks_by_group": {
+    "additive_degree": 27,
+    "averaging_endpoint_sharp": 3,
+    "averaging_stationary_non_Haar": 3,
+    "backwards_difference_valuation": 16,
+    "calibration_beta_bounds": 272,
+    "calibration_beta_original": 272,
+    "calibration_forcing_product": 272,
+    "calibration_forcing_valuation": 272,
+    "calibration_machin_tail": 272,
+    "calibration_source_correction": 272,
+    "calibration_source_valuation": 272,
+    "countermodel_CM": 12,
+    "countermodel_carry_15": 64,
+    "countermodel_complete_cluster": 1,
+    "countermodel_finite_jet": 78,
+    "countermodel_finite_precision": 78,
+    "countermodel_mass_positive": 1,
+    "countermodel_positive_forcing": 64,
+    "crossnorm_congruence": 1,
+    "crossnorm_real_phase_gap": 1,
+    "crossnorm_smallness": 1,
+    "direct_better_on_probe": 60,
+    "filter_annihilates_local_prime": 26,
+    "filter_carry_readout": 60,
+    "filter_forcing": 60,
+    "filter_forcing_sign": 60,
+    "filter_literal_source": 60,
+    "filter_machin_error": 60,
+    "finite_certificate_cannot_be_extrapolated": 1,
+    "forcing_origin_prime": 26,
+    "held_out_beta_bounds": 96,
+    "held_out_beta_original": 96,
+    "held_out_forcing_product": 96,
+    "held_out_forcing_valuation": 96,
+    "held_out_machin_tail": 96,
+    "held_out_source_correction": 96,
+    "held_out_source_valuation": 96,
+    "holonomic_integer_carry": 93,
+    "holonomic_order_five": 93,
+    "holonomic_order_four": 93,
+    "integer_base31_error": 6,
+    "integer_filter_31_passes_endpoints": 1,
+    "integer_filter_small_primes": 1,
+    "local_31_identity": 5,
+    "local_tripling_identity": 5,
+    "lower_degree_fails": 9,
+    "minimal_degree_threshold": 9,
+    "minimax_sharpness": 9,
+    "newton_backwards": 27,
+    "newton_original": 45,
+    "odd_cancellation_retained": 1,
+    "odd_pole_counts": 320,
+    "odd_pole_valuation": 320,
+    "operator_composition": 27,
+    "origin_source_prime_cancellation": 1,
+    "pascal_pi_machin": 6,
+    "power_coherence": 18,
+    "rational_start_product": 120,
+    "rational_start_valuation": 120,
+    "source_fresh_prime_valuation": 8517,
+    "source_height_divisibility": 192,
+    "translated_pascal_fresh_prime": 79,
+    "translated_pascal_real_separation": 79,
+    "universal_carry_classes": 2,
+    "unsigned_absolute_growth": 3,
+    "unsigned_bounds": 6,
+    "unsigned_exact_positive": 6,
+    "wrong_carry_falsifier": 1
+  },
+  "total_exact_checks": 13553,
+  "minimal_degree": [
+    {
+      "bits": 1,
+      "minimal_degree": 1
+    },
+    {
+      "bits": 2,
+      "minimal_degree": 1
+    },
+    {
+      "bits": 4,
+      "minimal_degree": 3
+    },
+    {
+      "bits": 8,
+      "minimal_degree": 5
+    },
+    {
+      "bits": 16,
+      "minimal_degree": 9
+    },
+    {
+      "bits": 32,
+      "minimal_degree": 17
+    },
+    {
+      "bits": 64,
+      "minimal_degree": 33
+    },
+    {
+      "bits": 128,
+      "minimal_degree": 65
+    },
+    {
+      "bits": 256,
+      "minimal_degree": 129
+    }
+  ],
+  "crossnorm": {
+    "index": 128,
+    "bits": 16,
+    "degree": 9,
+    "real_relative_size": {
+      "sign": 1,
+      "numerator_bits": 1186,
+      "denominator_bits": 1618,
+      "sha256_binary_rational": "25f6398f7774483f8324bef1532f447b2c2a2b549ce92c49c48e26627dc7e9f3",
+      "outward_decimal": [
+        "5.493177504185250902119E-131",
+        "5.493177504185250902120E-131"
+      ]
+    },
+    "proved_bound": {
+      "sign": 1,
+      "numerator_bits": 37,
+      "denominator_bits": 446,
+      "sha256_binary_rational": "9a6402d7572670a9a5353b9f9ec2df389228079b4d6bdc86d88a836c32b103d9",
+      "outward_decimal": [
+        "8.701637013955248215809E-124",
+        "8.701637013955248215810E-124"
+      ]
+    },
+    "circle_distance": {
+      "sign": 1,
+      "numerator_bits": 1112,
+      "denominator_bits": 1116,
+      "sha256_binary_rational": "c80194c6a64668aafb564cdbd382bda06a3499c86ef4314da24f10daf5d73f7c",
+      "outward_decimal": [
+        "0.07848964664540803521660",
+        "0.07848964664540803521661"
+      ]
+    }
+  },
+  "odd_prime_cancellation": {
+    "prime": 3,
+    "start": 0,
+    "order": 1,
+    "weighted_pole_valuations": [
+      0,
+      -1,
+      0,
+      -1
+    ],
+    "sum": "83/35",
+    "sum_valuation": 0
+  },
+  "base_filters": [
+    {
+      "multiplier": 2,
+      "degree": 1,
+      "order": 1,
+      "pascal_carry_modulus": "15",
+      "direct_carry_modulus": "8",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 62,
+          "denominator_bits": 67,
+          "sha256_binary_rational": "967b10ed96eeb2869eadec2c24f0956680a53345ce5f3dc8f12243d80b13b7d2",
+          "outward_decimal": [
+            "0.02507869605953557580950",
+            "0.02507869605953557580951"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 74,
+          "denominator_bits": 79,
+          "sha256_binary_rational": "56e7bc0e0fcf74a5bff8263d151e200b5e565958da64202fa4c2067d7bf4e4e8",
+          "outward_decimal": [
+            "0.02507869607954498493273",
+            "0.02507869607954498493274"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5932,
+          "denominator_bits": 5942,
+          "sha256_binary_rational": "80029a9d5d0f87268672916b0627a78ec1ed54d7eff0ecdd4c0b3cdc9e4e7823",
+          "outward_decimal": [
+            "0.001032415032057488141163",
+            "0.001032415032057488141164"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5921,
+          "denominator_bits": 5931,
+          "sha256_binary_rational": "94e595ed4da551a0a758abc6a209059748f4369249deff4a3a992dc3997fceb8",
+          "outward_decimal": [
+            "0.001032415032057488141163",
+            "0.001032415032057488141164"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 2,
+      "degree": 1,
+      "order": 8,
+      "pascal_carry_modulus": "2562890625",
+      "direct_carry_modulus": "16777216",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 93,
+          "denominator_bits": 119,
+          "sha256_binary_rational": "796954f2f8808e382209379bd4b13c4f86a4a97ea53714ca4b83f459838b49bd",
+          "outward_decimal": [
+            "1.658160779808654504070E-8",
+            "1.658160779808654504071E-8"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 122,
+          "denominator_bits": 148,
+          "sha256_binary_rational": "a25abf011055b3ebaa5cecd78a2f408bfc12ccb0b7a59b4001330a9c7d0f0acc",
+          "outward_decimal": [
+            "1.658160779825197305909E-8",
+            "1.658160779825197305910E-8"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5924,
+          "denominator_bits": 5960,
+          "sha256_binary_rational": "1e0aa95f4ede3addb90ed79db3fa073887805c9d0cc6632477b40492ad149348",
+          "outward_decimal": [
+            "1.312853634984985774901E-11",
+            "1.312853634984985774902E-11"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5913,
+          "denominator_bits": 5949,
+          "sha256_binary_rational": "cb8512a0437f2ba8ebbc620a6effb92fb2738b9794db1d9520afc458fc4c26e6",
+          "outward_decimal": [
+            "1.312853634984985774901E-11",
+            "1.312853634984985774902E-11"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 2,
+      "degree": 1,
+      "order": 32,
+      "pascal_carry_modulus": "43143988327398919500410556793212890625",
+      "direct_carry_modulus": "79228162514264337593543950336",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 325,
+          "denominator_bits": 421,
+          "sha256_binary_rational": "1c913e0ced4d968a49d8c25016c52b1ef7454eed869902f757f3fee3293cdc93",
+          "outward_decimal": [
+            "1.449004733622247890552E-29",
+            "1.449004733622247890553E-29"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 343,
+          "denominator_bits": 439,
+          "sha256_binary_rational": "dc231534872c74534d2caa0d0260bc5889e2b425a5ba8a6cb42f252153bd5777",
+          "outward_decimal": [
+            "1.449004733622315890401E-29",
+            "1.449004733622315890402E-29"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5926,
+          "denominator_bits": 6039,
+          "sha256_binary_rational": "0393f2be4392240edc523e2eb82e2546f3aa0c5e9979c75fe48ddef215a3e008",
+          "outward_decimal": [
+            "1.874819391178546408482E-34",
+            "1.874819391178546408483E-34"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5912,
+          "denominator_bits": 6024,
+          "sha256_binary_rational": "5536a73097bd1c0325bb7d446a48e1f38900ae13c374c7a77c467bf24edf035e",
+          "outward_decimal": [
+            "1.874819391178546408482E-34",
+            "1.874819391178546408483E-34"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 3,
+      "degree": 1,
+      "order": 1,
+      "pascal_carry_modulus": "5",
+      "direct_carry_modulus": "16",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 62,
+          "denominator_bits": 67,
+          "sha256_binary_rational": "690d43ec9940af890f8012b76418a9798d93676dd7a3862ac7b311d7e0e3d8b0",
+          "outward_decimal": [
+            "0.03761804408930336371425",
+            "0.03761804408930336371426"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 74,
+          "denominator_bits": 79,
+          "sha256_binary_rational": "eb70571028649e4d39cc9e11744a336a6cfb0306231ce306f42358649fd4238d",
+          "outward_decimal": [
+            "0.03761804411931747739910",
+            "0.03761804411931747739911"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5932,
+          "denominator_bits": 5942,
+          "sha256_binary_rational": "3a346dd424eb01752513d0f1e6dfb789cab7758aecb055cb2e0633daa07a59c1",
+          "outward_decimal": [
+            "0.001548622548086232211745",
+            "0.001548622548086232211746"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5921,
+          "denominator_bits": 5931,
+          "sha256_binary_rational": "304d5866cb20ecfee8f69dbb004ca4f5d3dfe61f29476d636b311f3bd44af9db",
+          "outward_decimal": [
+            "0.001548622548086232211745",
+            "0.001548622548086232211746"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 3,
+      "degree": 1,
+      "order": 8,
+      "pascal_carry_modulus": "390625",
+      "direct_carry_modulus": "4294967296",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 91,
+          "denominator_bits": 112,
+          "sha256_binary_rational": "308584880227c81da49812143bbcfbab91b3ecb4159c57ab988b2c2ed561b441",
+          "outward_decimal": [
+            "4.249684717314289922347E-7",
+            "4.249684717314289922348E-7"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 119,
+          "denominator_bits": 140,
+          "sha256_binary_rational": "873a83218e10077e1df140866e5e82ed6f12efed5f3c0f4f6ed818bd526dc2f8",
+          "outward_decimal": [
+            "4.249684717356687314090E-7",
+            "4.249684717356687314091E-7"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5931,
+          "denominator_bits": 5962,
+          "sha256_binary_rational": "0d2c8b52d719a05eeeb797e34b66f621cd10524dc365429e8af5484e5bb7bf5b",
+          "outward_decimal": [
+            "3.364700273100192058253E-10",
+            "3.364700273100192058254E-10"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5919,
+          "denominator_bits": 5951,
+          "sha256_binary_rational": "c2e25a7824a92cf5dbb2de06f0e8f81aeb592303a3531fbf03c834e7cb6b2667",
+          "outward_decimal": [
+            "3.364700273100192058253E-10",
+            "3.364700273100192058254E-10"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 3,
+      "degree": 1,
+      "order": 32,
+      "pascal_carry_modulus": "23283064365386962890625",
+      "direct_carry_modulus": "340282366920938463463374607431768211456",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 293,
+          "denominator_bits": 370,
+          "sha256_binary_rational": "2c3bf2265420237e073ec8f7cd284ae7198940b83d82adb7fe6ef3852469802a",
+          "outward_decimal": [
+            "6.251584331374404366192E-24",
+            "6.251584331374404366193E-24"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 311,
+          "denominator_bits": 389,
+          "sha256_binary_rational": "17edb2fdf0157f98c572026ba177454caeb4df5a3fc3629e3aed77ee7b0fc696",
+          "outward_decimal": [
+            "6.251584331374697744663E-24",
+            "6.251584331374697744664E-24"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5972,
+          "denominator_bits": 6066,
+          "sha256_binary_rational": "d61584d679a5e4969ae55d8fdc8f67cf4d356adbb9be70a424dc73183a655b80",
+          "outward_decimal": [
+            "8.088718592898835503530E-29",
+            "8.088718592898835503531E-29"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5961,
+          "denominator_bits": 6055,
+          "sha256_binary_rational": "9b31baf07edff54d06aff89e6b1f24f7af68a391cd769c2d37a9e4d419443d28",
+          "outward_decimal": [
+            "8.088718592898835503530E-29",
+            "8.088718592898835503531E-29"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 5,
+      "degree": 1,
+      "order": 1,
+      "pascal_carry_modulus": "3",
+      "direct_carry_modulus": "16",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 62,
+          "denominator_bits": 66,
+          "sha256_binary_rational": "0d96056776c686dd8d8c1b6dc9fcd7d57653fc5fec4007fc7d5fbbad37152d5c",
+          "outward_decimal": [
+            "0.06269674014883893952375",
+            "0.06269674014883893952376"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 74,
+          "denominator_bits": 78,
+          "sha256_binary_rational": "b8e6adca25119990601456cfe183bdc0318a3a2fef86d6385caa5b1009af6a2a",
+          "outward_decimal": [
+            "0.06269674019886246233183",
+            "0.06269674019886246233184"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5932,
+          "denominator_bits": 5941,
+          "sha256_binary_rational": "30f0637d9c3528b1669a0990ba6e5a411991c1bae9e4712901a07c09020e0602",
+          "outward_decimal": [
+            "0.002581037580143720352909",
+            "0.002581037580143720352910"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5921,
+          "denominator_bits": 5930,
+          "sha256_binary_rational": "19049b880569b59d8763da6af1ea1bf6d82adf874f72668ee533c912bac6c087",
+          "outward_decimal": [
+            "0.002581037580143720352909",
+            "0.002581037580143720352910"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 5,
+      "degree": 1,
+      "order": 8,
+      "pascal_carry_modulus": "6561",
+      "direct_carry_modulus": "4294967296",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 91,
+          "denominator_bits": 107,
+          "sha256_binary_rational": "5670aeec408d56c92fd210019ac57417285ee33c2eb00028578aa5539461adbf",
+          "outward_decimal": [
+            "0.00002530152557081076818955",
+            "0.00002530152557081076818956"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 119,
+          "denominator_bits": 134,
+          "sha256_binary_rational": "74efcc25a5464053d4fe9e730a59120509a5907fa9d0eb93f6d1a4c12500108e",
+          "outward_decimal": [
+            "0.00002530152557106319131331",
+            "0.00002530152557106319131332"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5924,
+          "denominator_bits": 5950,
+          "sha256_binary_rational": "7be22d25958efdab5b9cc0357305b2142b8b9a74edd47f18ec2053439b4d6ff3",
+          "outward_decimal": [
+            "2.003255668617226829378E-8",
+            "2.003255668617226829379E-8"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5913,
+          "denominator_bits": 5939,
+          "sha256_binary_rational": "4da29499dac3d469ddd31425ffceadead394d42f6f01d68b4efe6c9fdc435a94",
+          "outward_decimal": [
+            "2.003255668617226829378E-8",
+            "2.003255668617226829379E-8"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 5,
+      "degree": 1,
+      "order": 32,
+      "pascal_carry_modulus": "1853020188851841",
+      "direct_carry_modulus": "340282366920938463463374607431768211456",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 293,
+          "denominator_bits": 347,
+          "sha256_binary_rational": "c69812cfa270080b4116bc287b10957fdf5d3e478f76cbe1909b15d458ae092e",
+          "outward_decimal": [
+            "7.855070400675104067653E-17",
+            "7.855070400675104067654E-17"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 311,
+          "denominator_bits": 365,
+          "sha256_binary_rational": "3683cc05e052bda7f3ff548282366262a62e414a10c6bec7af2944ea9e6f67c2",
+          "outward_decimal": [
+            "7.855070400675472695576E-17",
+            "7.855070400675472695577E-17"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5926,
+          "denominator_bits": 5996,
+          "sha256_binary_rational": "a168303f69a702ee0dde0ae45b1b9a580aa5e0565347d97992adc17597b66d22",
+          "outward_decimal": [
+            "1.016341628466865391630E-21",
+            "1.016341628466865391631E-21"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5912,
+          "denominator_bits": 5982,
+          "sha256_binary_rational": "0e404c1d114d2aca94fce887e98b3c5ab53dbf4850fbe6ef61af560cc8e9760c",
+          "outward_decimal": [
+            "1.016341628466865391630E-21",
+            "1.016341628466865391631E-21"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 7,
+      "degree": 1,
+      "order": 1,
+      "pascal_carry_modulus": "15",
+      "direct_carry_modulus": "16",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 62,
+          "denominator_bits": 65,
+          "sha256_binary_rational": "0bfdb09825f94ec1565468806d2d34ef423b0630df3eb44834704f093d231dc0",
+          "outward_decimal": [
+            "0.08777543620837451533325",
+            "0.08777543620837451533326"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 74,
+          "denominator_bits": 77,
+          "sha256_binary_rational": "f56dc3c59079e773b54c93a05eeca4acaadb4a44a3e3a618c1bdf0f8f62eb113",
+          "outward_decimal": [
+            "0.08777543627840744726456",
+            "0.08777543627840744726457"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5932,
+          "denominator_bits": 5941,
+          "sha256_binary_rational": "8d0b280938ffde7451010183545c2612fba92923508222ac2183bddb754b127c",
+          "outward_decimal": [
+            "0.003613452612201208494073",
+            "0.003613452612201208494074"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5921,
+          "denominator_bits": 5929,
+          "sha256_binary_rational": "e8e227ee0aa60ab937e42f88ac7df2140a0ab465ae414a5ab5a3c7ad1141826d",
+          "outward_decimal": [
+            "0.003613452612201208494073",
+            "0.003613452612201208494074"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 7,
+      "degree": 1,
+      "order": 8,
+      "pascal_carry_modulus": "2562890625",
+      "direct_carry_modulus": "4294967296",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 114,
+          "denominator_bits": 125,
+          "sha256_binary_rational": "93a6d5fbaf5660b8e1d67b0fae0583044c6993926b02c0ca92077ddd0d2afc3e",
+          "outward_decimal": [
+            "0.0003733971453750668474110",
+            "0.0003733971453750668474111"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 136,
+          "denominator_bits": 147,
+          "sha256_binary_rational": "ab0c198393d0301a0fa1c91b8cf4921d70767db4f5ec37a650a92fb62fc799df",
+          "outward_decimal": [
+            "0.0003733971453787920802462",
+            "0.0003733971453787920802463"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5938,
+          "denominator_bits": 5960,
+          "sha256_binary_rational": "c74f79b353610f89e1409fd65334a305271255a0a9cda21b002728b9f0ca4e1e",
+          "outward_decimal": [
+            "2.956382792115266007866E-7",
+            "2.956382792115266007867E-7"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5927,
+          "denominator_bits": 5949,
+          "sha256_binary_rational": "879a27a0fcb76986ca151125f328ff6fe8acdac8e566007113520d6463f3e634",
+          "outward_decimal": [
+            "2.956382792115266007866E-7",
+            "2.956382792115266007867E-7"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 7,
+      "degree": 1,
+      "order": 32,
+      "pascal_carry_modulus": "43143988327398919500410556793212890625",
+      "direct_carry_modulus": "340282366920938463463374607431768211456",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 377,
+          "denominator_bits": 415,
+          "sha256_binary_rational": "86385958ed1e10b998fe54bfa6da93cda610ccf09821268c3470057475bb3c89",
+          "outward_decimal": [
+            "3.726037517010353048189E-12",
+            "3.726037517010353048190E-12"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 396,
+          "denominator_bits": 434,
+          "sha256_binary_rational": "59edd2f008cc200b997f91371385ddbef6ad346e4729f79cdc55da92dd3c566e",
+          "outward_decimal": [
+            "3.726037517010527906134E-12",
+            "3.726037517010527906135E-12"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 6008,
+          "denominator_bits": 6062,
+          "sha256_binary_rational": "76dff6a924d7971c9bcbe627c2eb36d94a57e0628e02765ee2095b5778ff355e",
+          "outward_decimal": [
+            "4.820996941595164328403E-17",
+            "4.820996941595164328404E-17"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5994,
+          "denominator_bits": 6048,
+          "sha256_binary_rational": "dba0b868ea243f7bb634f9a7134f80805d86980d00372d6432b3f320134ea11b",
+          "outward_decimal": [
+            "4.820996941595164328403E-17",
+            "4.820996941595164328404E-17"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 11,
+      "degree": 1,
+      "order": 1,
+      "pascal_carry_modulus": "15",
+      "direct_carry_modulus": "16",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 62,
+          "denominator_bits": 65,
+          "sha256_binary_rational": "a90b8c0c4e37dc08976925eb34cdce13c65c653983acc8fd7e68b3a7a98b455f",
+          "outward_decimal": [
+            "0.1379328283274456669522",
+            "0.1379328283274456669523"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 74,
+          "denominator_bits": 77,
+          "sha256_binary_rational": "d3060a491a792bf14f4a378b4248be623c08f00340dee8133313a5ba90a3c9c0",
+          "outward_decimal": [
+            "0.1379328284374974171300",
+            "0.1379328284374974171301"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5932,
+          "denominator_bits": 5940,
+          "sha256_binary_rational": "56918abd572c7da91408ddb938029cf2a6c996a65fefdd24e426bf502f4c4565",
+          "outward_decimal": [
+            "0.005678282676316184776400",
+            "0.005678282676316184776401"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5921,
+          "denominator_bits": 5929,
+          "sha256_binary_rational": "b1fd10c549494e322abf310cfd265fd923aa0745829412b225f8584d4651e775",
+          "outward_decimal": [
+            "0.005678282676316184776400",
+            "0.005678282676316184776401"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 11,
+      "degree": 1,
+      "order": 8,
+      "pascal_carry_modulus": "2562890625",
+      "direct_carry_modulus": "4294967296",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 116,
+          "denominator_bits": 122,
+          "sha256_binary_rational": "003b545fe26b7e51803e0ef5cb8acdc246aed90b39c69fef1dcae91fa5e68796",
+          "outward_decimal": [
+            "0.01388443317491681928157",
+            "0.01388443317491681928158"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 143,
+          "denominator_bits": 150,
+          "sha256_binary_rational": "b1ae58693cf48b9ca3f804884dbdb49ec15ca40e9be4d59cfc8a404178ec7d45",
+          "outward_decimal": [
+            "0.01388443317505533867573",
+            "0.01388443317505533867574"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5948,
+          "denominator_bits": 5965,
+          "sha256_binary_rational": "6aadfb280edd388a62057bf9e7374bd597e5ba07e089aa57d1a5260cddece7e6",
+          "outward_decimal": [
+            "0.00001099304047313140634800",
+            "0.00001099304047313140634801"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5937,
+          "denominator_bits": 5954,
+          "sha256_binary_rational": "f32391e1886348129d7d90d3a42f91a04f6cdbfd748e6cfcb3c787ae912291e2",
+          "outward_decimal": [
+            "0.00001099304047313140634800",
+            "0.00001099304047313140634801"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 11,
+      "degree": 1,
+      "order": 32,
+      "pascal_carry_modulus": "43143988327398919500410556793212890625",
+      "direct_carry_modulus": "340282366920938463463374607431768211456",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 400,
+          "denominator_bits": 418,
+          "sha256_binary_rational": "acb7739a9050fdd148cbe226c378b8c04083c604a754292732d3437a1b3d0a94",
+          "outward_decimal": [
+            "0.000007123211968843636075635",
+            "0.000007123211968843636075636"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 415,
+          "denominator_bits": 432,
+          "sha256_binary_rational": "9d3f7dc551208e133a5b1f79c851fb1577fcc7a4bb4c8449bd728dbb41841211",
+          "outward_decimal": [
+            "0.000007123211968843970358423",
+            "0.000007123211968843970358424"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 6030,
+          "denominator_bits": 6064,
+          "sha256_binary_rational": "af9aae4cd1f881c0baebce4e6db1d0faa89172ea10835debc0caac1db620a051",
+          "outward_decimal": [
+            "9.216488819383462945035E-11",
+            "9.216488819383462945036E-11"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 6016,
+          "denominator_bits": 6049,
+          "sha256_binary_rational": "1dc99e6c9c3929a3da67534727f676d87dd0d8e1d3f6e2d47a0bf693bbc85c7b",
+          "outward_decimal": [
+            "9.216488819383462945035E-11",
+            "9.216488819383462945036E-11"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 13,
+      "degree": 1,
+      "order": 1,
+      "pascal_carry_modulus": "15",
+      "direct_carry_modulus": "16",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 62,
+          "denominator_bits": 64,
+          "sha256_binary_rational": "61d2281212763efcc4cb856849a55075f1b49c10e274972cff65f1c6acd3f1a5",
+          "outward_decimal": [
+            "0.1630115243869812427617",
+            "0.1630115243869812427618"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 74,
+          "denominator_bits": 76,
+          "sha256_binary_rational": "7474b9fe9e8f00fbf11a5aba33cfad831288c7d3377b383acd5a5b2ec1100538",
+          "outward_decimal": [
+            "0.1630115245170424020627",
+            "0.1630115245170424020628"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5932,
+          "denominator_bits": 5940,
+          "sha256_binary_rational": "920b1d8e73584eed922a30e661d723684d43bc087775a7ba73e2b7998012887d",
+          "outward_decimal": [
+            "0.006710697708373672917564",
+            "0.006710697708373672917565"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5921,
+          "denominator_bits": 5928,
+          "sha256_binary_rational": "8085de5975d2a7cc429276ed336d921ccda80a42eb2df1af38b19ba9b7d3f1d4",
+          "outward_decimal": [
+            "0.006710697708373672917564",
+            "0.006710697708373672917565"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 13,
+      "degree": 1,
+      "order": 8,
+      "pascal_carry_modulus": "2562890625",
+      "direct_carry_modulus": "4294967296",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 121,
+          "denominator_bits": 125,
+          "sha256_binary_rational": "6885c0add35932b5fb104bdc3dce72f009836bbf550de9838bfb7343c1867fc5",
+          "outward_decimal": [
+            "0.05283643314247015549397",
+            "0.05283643314247015549398"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 145,
+          "denominator_bits": 149,
+          "sha256_binary_rational": "0ef51bbfae4cbf9c33de7a3d546983f6619ad9a2945b6cb6a5ba879bfeeba3ac",
+          "outward_decimal": [
+            "0.05283643314299728329361",
+            "0.05283643314299728329362"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5946,
+          "denominator_bits": 5961,
+          "sha256_binary_rational": "7f08a5da22307ff009d6ea6deab6f5276fa366be91cd3efde1fec96254af4d91",
+          "outward_decimal": [
+            "0.00004183340008725676837246",
+            "0.00004183340008725676837247"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5935,
+          "denominator_bits": 5950,
+          "sha256_binary_rational": "2799712ec8e90b609c418903750ca7b1c4bb29f02e9f08183d4e09735858b90a",
+          "outward_decimal": [
+            "0.00004183340008725676837246",
+            "0.00004183340008725676837247"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 13,
+      "degree": 1,
+      "order": 32,
+      "pascal_carry_modulus": "43143988327398919500410556793212890625",
+      "direct_carry_modulus": "340282366920938463463374607431768211456",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 404,
+          "denominator_bits": 414,
+          "sha256_binary_rational": "b4381c063f39c149a731bb98c16f68a8283f36eddaed63eeb9808a4227169b70",
+          "outward_decimal": [
+            "0.001493816378438882740436",
+            "0.001493816378438882740437"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 422,
+          "denominator_bits": 432,
+          "sha256_binary_rational": "d2a72547f2e4f224b81e98f2397c4ba737574906e3c4b1acf0a6cd371eaf873c",
+          "outward_decimal": [
+            "0.001493816378438952843236",
+            "0.001493816378438952843237"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 6037,
+          "denominator_bits": 6063,
+          "sha256_binary_rational": "fc0ba64fbbda2c6bf1433a34e26d43f7f19971944acff4298408606b4989efae",
+          "outward_decimal": [
+            "1.932799699112264172166E-8",
+            "1.932799699112264172167E-8"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 6023,
+          "denominator_bits": 6049,
+          "sha256_binary_rational": "b6fb78eedf53d8e88d38affc56e546bbb189c091f89cea7e6c4db5039a5484ed",
+          "outward_decimal": [
+            "1.932799699112264172166E-8",
+            "1.932799699112264172167E-8"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 15,
+      "degree": 1,
+      "order": 1,
+      "pascal_carry_modulus": "1",
+      "direct_carry_modulus": "16",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 62,
+          "denominator_bits": 64,
+          "sha256_binary_rational": "a989efb5fea0baddabf87139e7be4be9d557eb8e8935d4f63c20aa1e3e9606a4",
+          "outward_decimal": [
+            "0.1880902204465168185712",
+            "0.1880902204465168185713"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 74,
+          "denominator_bits": 76,
+          "sha256_binary_rational": "28d0b85b757fcabac23bf8d5b807ecc0308437cf72a21167c92250244fa38126",
+          "outward_decimal": [
+            "0.1880902205965873869955",
+            "0.1880902205965873869956"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5932,
+          "denominator_bits": 5939,
+          "sha256_binary_rational": "ce539e2d776b0dc60d756ff7e6fe2fc07fdcd18ef748de9e73254a5816a01826",
+          "outward_decimal": [
+            "0.007743112740431161058728",
+            "0.007743112740431161058729"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5921,
+          "denominator_bits": 5928,
+          "sha256_binary_rational": "e2be7d37993cbd4c0be9f859c519d67d6b18d1e8e0cd6eb0bccf8543067e44a3",
+          "outward_decimal": [
+            "0.007743112740431161058728",
+            "0.007743112740431161058729"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 15,
+      "degree": 1,
+      "order": 8,
+      "pascal_carry_modulus": "1",
+      "direct_carry_modulus": "4294967296",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 91,
+          "denominator_bits": 94,
+          "sha256_binary_rational": "a8bb8bcddd2cd747fd183d88968b0f688f40c2b8ae745de7ba563ef2d51a6cfb",
+          "outward_decimal": [
+            "0.1660033092700894500916",
+            "0.1660033092700894500917"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 119,
+          "denominator_bits": 122,
+          "sha256_binary_rational": "69e05d618e8c9717bf8936cd0fc3edf061248811fde1da18d2f19abc1e54b3d9",
+          "outward_decimal": [
+            "0.1660033092717455982066",
+            "0.1660033092717455982067"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5931,
+          "denominator_bits": 5943,
+          "sha256_binary_rational": "4153de2549dc3ce76d67782428acee844cf68b6fd94469ee0f023cd372de5196",
+          "outward_decimal": [
+            "0.0001314336044179762522755",
+            "0.0001314336044179762522756"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5919,
+          "denominator_bits": 5932,
+          "sha256_binary_rational": "640968244bba38524b5d913d654255d2bd17a66bea5c010534d7c1726ddce82b",
+          "outward_decimal": [
+            "0.0001314336044179762522755",
+            "0.0001314336044179762522756"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 15,
+      "degree": 1,
+      "order": 32,
+      "pascal_carry_modulus": "1",
+      "direct_carry_modulus": "340282366920938463463374607431768211456",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 293,
+          "denominator_bits": 296,
+          "sha256_binary_rational": "28fdd72061cf33d068a5ffd636d474e2528c4e596942503c7a56b750229ce1a7",
+          "outward_decimal": [
+            "0.1455560403730348769154",
+            "0.1455560403730348769155"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 311,
+          "denominator_bits": 314,
+          "sha256_binary_rational": "ced12910a4e4a129b5d7f22c7209d5be3daa866672b14676c3a087f1944bb6c8",
+          "outward_decimal": [
+            "0.1455560403730417076652",
+            "0.1455560403730417076653"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5972,
+          "denominator_bits": 5991,
+          "sha256_binary_rational": "c2bced4c8202eaf2bbe6326e5243d08b63c1397040f4ebd53d7f6cbaeb1ab212",
+          "outward_decimal": [
+            "0.000001883301556319658528904",
+            "0.000001883301556319658528905"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5961,
+          "denominator_bits": 5980,
+          "sha256_binary_rational": "831561ac7f3c15d1577da5ea4f85feb6e586ab3e878a3d6860b9951f140e4e4e",
+          "outward_decimal": [
+            "0.000001883301556319658528904",
+            "0.000001883301556319658528905"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 16,
+      "degree": 4,
+      "order": 1,
+      "pascal_carry_modulus": "50625",
+      "direct_carry_modulus": "4096",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 77,
+          "denominator_bits": 92,
+          "sha256_binary_rational": "ceb4ab904d0b8f30156a611d97a067c18ce46b8b63cbd6dc5c740739ca464c97",
+          "outward_decimal": [
+            "0.00005532873462627942210184",
+            "0.00005532873462627942210185"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 77,
+          "denominator_bits": 91,
+          "sha256_binary_rational": "fa3af4b31fd1c0f8b3abfa26752fca4f0a65e4b2d808418c3e042f5cb4b0e329",
+          "outward_decimal": [
+            "0.00005532873463034769209179",
+            "0.00005532873463034769209180"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5927,
+          "denominator_bits": 5949,
+          "sha256_binary_rational": "6876df1a7dffa6b23e21e4aff5b5f9c149593cabd4d81844203a6842cba81fb2",
+          "outward_decimal": [
+            "1.960223578566256388282E-7",
+            "1.960223578566256388283E-7"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5916,
+          "denominator_bits": 5938,
+          "sha256_binary_rational": "a85ce79740f3111718d604d065aa9ab34f318c20e5ac7016177409cf68d39bb2",
+          "outward_decimal": [
+            "1.960223578566256388282E-7",
+            "1.960223578566256388283E-7"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 16,
+      "degree": 4,
+      "order": 8,
+      "pascal_carry_modulus": "43143988327398919500410556793212890625",
+      "direct_carry_modulus": "79228162514264337593543950336",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 325,
+          "denominator_bits": 421,
+          "sha256_binary_rational": "1c913e0ced4d968a49d8c25016c52b1ef7454eed869902f757f3fee3293cdc93",
+          "outward_decimal": [
+            "1.449004733622247890552E-29",
+            "1.449004733622247890553E-29"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 343,
+          "denominator_bits": 439,
+          "sha256_binary_rational": "dc231534872c74534d2caa0d0260bc5889e2b425a5ba8a6cb42f252153bd5777",
+          "outward_decimal": [
+            "1.449004733622315890401E-29",
+            "1.449004733622315890402E-29"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5926,
+          "denominator_bits": 6039,
+          "sha256_binary_rational": "0393f2be4392240edc523e2eb82e2546f3aa0c5e9979c75fe48ddef215a3e008",
+          "outward_decimal": [
+            "1.874819391178546408482E-34",
+            "1.874819391178546408483E-34"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5912,
+          "denominator_bits": 6024,
+          "sha256_binary_rational": "5536a73097bd1c0325bb7d446a48e1f38900ae13c374c7a77c467bf24edf035e",
+          "outward_decimal": [
+            "1.874819391178546408482E-34",
+            "1.874819391178546408483E-34"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 16,
+      "degree": 4,
+      "order": 32,
+      "pascal_carry_modulus": "3464823841570940447511989197632600142600357270938450628136751668972148475371287127017463688665854485527890158948205456823643544339574873447418212890625",
+      "direct_carry_modulus": "39402006196394479212279040100143613805079739270465446667948293404245721771497210611414266254884915640806627990306816",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 1239,
+          "denominator_bits": 1614,
+          "sha256_binary_rational": "933429b190579042f019a2cf4e034097a074c108857a515d56b937094798b0c0",
+          "outward_decimal": [
+            "1.228415386617110746921E-113",
+            "1.228415386617110746922E-113"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 1263,
+          "denominator_bits": 1638,
+          "sha256_binary_rational": "4841b9401b300a796ac39f438b9ed7a8f6168f73b7d8c1d3007c9cd0a6f37a74",
+          "outward_decimal": [
+            "1.228415386617110845882E-113",
+            "1.228415386617110845883E-113"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 6297,
+          "denominator_bits": 6701,
+          "sha256_binary_rational": "460d47c69d43e3b453de654641c5ceee845d4a8cc69d01cc4e55c290f29afd03",
+          "outward_decimal": [
+            "2.403950079845712321368E-122",
+            "2.403950079845712321369E-122"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 6286,
+          "denominator_bits": 6690,
+          "sha256_binary_rational": "90380aba93061b731fb8a8de3d9f0ebe35df20dae5bcfbfa8e340b5acdc5a36c",
+          "outward_decimal": [
+            "2.403950079845712321368E-122",
+            "2.403950079845712321369E-122"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 17,
+      "degree": 2,
+      "order": 1,
+      "pascal_carry_modulus": "225",
+      "direct_carry_modulus": "256",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 70,
+          "denominator_bits": 76,
+          "sha256_binary_rational": "e7f98c24afdb12f214a3ad028fe313f372ef4aa3c7539ef04e521a5b3eb23523",
+          "outward_decimal": [
+            "0.01379296095241192328272",
+            "0.01379296095241192328273"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 81,
+          "denominator_bits": 88,
+          "sha256_binary_rational": "31ddb92359a1ed557675e544bdf50a53156eae449882a61c3b3707c8c0c6981b",
+          "outward_decimal": [
+            "0.01379296095671298065138",
+            "0.01379296095671298065139"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5930,
+          "denominator_bits": 5942,
+          "sha256_binary_rational": "0dba280f8757bc852ab023c2428dbe20694b2841c7c7d1bffecbe897f7a6d2ad",
+          "outward_decimal": [
+            "0.0001808238652847419959847",
+            "0.0001808238652847419959848"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5919,
+          "denominator_bits": 5931,
+          "sha256_binary_rational": "923c7fb961b7053c510c4decd1a04106ed2ea9a91ce07519a141b4a913f14efc",
+          "outward_decimal": [
+            "0.0001808238652847419959847",
+            "0.0001808238652847419959848"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 17,
+      "degree": 2,
+      "order": 8,
+      "pascal_carry_modulus": "6568408355712890625",
+      "direct_carry_modulus": "18446744073709551616",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 185,
+          "denominator_bits": 218,
+          "sha256_binary_rational": "f07adf386b490e2837639a130536d6e6216425aa51f55a41c3405485e503ba82",
+          "outward_decimal": [
+            "1.656502141304964179863E-10",
+            "1.656502141304964179864E-10"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 214,
+          "denominator_bits": 246,
+          "sha256_binary_rational": "b4e112d25d3b94f96cb918f2d93052338215d6a3fb667865eb0d8380faba4ed0",
+          "outward_decimal": [
+            "1.656502141306329646846E-10",
+            "1.656502141306329646847E-10"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5948,
+          "denominator_bits": 5993,
+          "sha256_binary_rational": "a16695e699388b47f84d82ef096621fcd2270be28418f3ecd0a7e848dab56d93",
+          "outward_decimal": [
+            "2.189019228614893918600E-14",
+            "2.189019228614893918601E-14"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5936,
+          "denominator_bits": 5982,
+          "sha256_binary_rational": "8c5dfdbf7841192969721f29819d47b16db02c4e9457a8a87d08671888bd3022",
+          "outward_decimal": [
+            "2.189019228614893918600E-14",
+            "2.189019228614893918601E-14"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 17,
+      "degree": 2,
+      "order": 32,
+      "pascal_carry_modulus": "1861403728794734215467410604755702820123364205073812627233564853668212890625",
+      "direct_carry_modulus": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 678,
+          "denominator_bits": 800,
+          "sha256_binary_rational": "579e35338c99979db7cd47b7af1cef4f2e3aea391bfb0e61e30ae13a2eafca69",
+          "outward_decimal": [
+            "1.719449535702738814550E-37",
+            "1.719449535702738814551E-37"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 705,
+          "denominator_bits": 828,
+          "sha256_binary_rational": "1b76a9611b3806694f4473bbeefdee6a1cf7f9867286e2619c1b4c6794b6443f",
+          "outward_decimal": [
+            "1.719449535702742412918E-37",
+            "1.719449535702742412919E-37"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 6058,
+          "denominator_bits": 6201,
+          "sha256_binary_rational": "2dfd157429347472907c00634d257f6cf8330f58fd550a44e11874c0537b2213",
+          "outward_decimal": [
+            "7.695884878998901743933E-44",
+            "7.695884878998901743934E-44"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 6046,
+          "denominator_bits": 6190,
+          "sha256_binary_rational": "55a7e89efaa9e44c37287c63411d6f6c680976ff1114f6502e79fa2fec0a55bd",
+          "outward_decimal": [
+            "7.695884878998901743933E-44",
+            "7.695884878998901743934E-44"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 31,
+      "degree": 2,
+      "order": 1,
+      "pascal_carry_modulus": "225",
+      "direct_carry_modulus": "256",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 75,
+          "denominator_bits": 80,
+          "sha256_binary_rational": "13fa7fd2e2333c806404985dcaf3be24432e4908f2ac578fbc199338e6cccbe0",
+          "outward_decimal": [
+            "0.02515186997204527186849",
+            "0.02515186997204527186850"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 81,
+          "denominator_bits": 87,
+          "sha256_binary_rational": "90159f1acdcc89081a1670b113ace917ede7c99512cecaa20811c4d3f192b5d6",
+          "outward_decimal": [
+            "0.02515186997988837648193",
+            "0.02515186997988837648194"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5930,
+          "denominator_bits": 5941,
+          "sha256_binary_rational": "5501b1180773a8032c1fe5790782eef58ca4177b597061f82e2225d5c42da3f1",
+          "outward_decimal": [
+            "0.0003297376366957059926780",
+            "0.0003297376366957059926781"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5919,
+          "denominator_bits": 5930,
+          "sha256_binary_rational": "ed0e1bdf21381cb7f8171b508dffb2a0024c40eedab9a1d140d41bfaf2210a6b",
+          "outward_decimal": [
+            "0.0003297376366957059926780",
+            "0.0003297376366957059926781"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 31,
+      "degree": 2,
+      "order": 8,
+      "pascal_carry_modulus": "6568408355712890625",
+      "direct_carry_modulus": "18446744073709551616",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 191,
+          "denominator_bits": 217,
+          "sha256_binary_rational": "eaf2e707f236f8b30bd5d242103979f4d6e0dcd5f0478ae1c7d0d29e351a45ff",
+          "outward_decimal": [
+            "2.025322471101140566344E-8",
+            "2.025322471101140566345E-8"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 220,
+          "denominator_bits": 245,
+          "sha256_binary_rational": "aef283cdff567dc7c120b8604bb94e55b7458dc511c42e5cbb9457ced6f044c3",
+          "outward_decimal": [
+            "2.025322471102810054657E-8",
+            "2.025322471102810054658E-8"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5958,
+          "denominator_bits": 5996,
+          "sha256_binary_rational": "7ad96805dd03b8bc18197ff793aef86f3f068272cc2173e00ee23d4332d5a6f4",
+          "outward_decimal": [
+            "2.676404529060021293965E-12",
+            "2.676404529060021293966E-12"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5947,
+          "denominator_bits": 5985,
+          "sha256_binary_rational": "f4008ca226ff97b1822f8f4fb09041577da6859cdafd39bd3433d52c2723f7df",
+          "outward_decimal": [
+            "2.676404529060021293965E-12",
+            "2.676404529060021293966E-12"
+          ]
+        }
+      ]
+    },
+    {
+      "multiplier": 31,
+      "degree": 2,
+      "order": 32,
+      "pascal_carry_modulus": "1861403728794734215467410604755702820123364205073812627233564853668212890625",
+      "direct_carry_modulus": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+      "pascal_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 714,
+          "denominator_bits": 809,
+          "sha256_binary_rational": "4e3a81652617bd3fe48e8d49a0dbd8f6ad3d4a4c32dcbc3c54f3a56827e9c33d",
+          "outward_decimal": [
+            "3.842360886969584906946E-29",
+            "3.842360886969584906947E-29"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 736,
+          "denominator_bits": 831,
+          "sha256_binary_rational": "bbecc32e63f402d9ac5dfef2b9c90e38a92e4dd3a38cef703177ab6d56601388",
+          "outward_decimal": [
+            "3.842360886969592948024E-29",
+            "3.842360886969592948025E-29"
+          ]
+        }
+      ],
+      "direct_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 6089,
+          "denominator_bits": 6204,
+          "sha256_binary_rational": "86c7bb163dd2dec2a33e6e28357ee86a452b237015734d1fa1a5a9f75d669910",
+          "outward_decimal": [
+            "1.719757773385342846499E-35",
+            "1.719757773385342846500E-35"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 6077,
+          "denominator_bits": 6193,
+          "sha256_binary_rational": "026f9e7afbc59be2e5312495f3b6dadefce3ea08d8d447931b91eb65be14afdb",
+          "outward_decimal": [
+            "1.719757773385342846499E-35",
+            "1.719757773385342846500E-35"
+          ]
+        }
+      ]
+    }
+  ],
+  "wrong_carry_control": {
+    "actual": "47/75",
+    "carry_dropped": "2/75"
+  },
+  "integer_filter_endpoint_tests": {
+    "2": [
+      "zero",
+      "one"
+    ],
+    "3": [
+      "zero",
+      "one"
+    ],
+    "5": [
+      "zero",
+      "one"
+    ],
+    "7": [
+      "zero",
+      "one"
+    ],
+    "11": [
+      "zero",
+      "one"
+    ],
+    "13": [
+      "zero",
+      "one"
+    ],
+    "17": [
+      "one"
+    ],
+    "19": [
+      "zero",
+      "one"
+    ],
+    "23": [
+      "zero",
+      "one"
+    ],
+    "29": [
+      "zero"
+    ],
+    "31": []
+  },
+  "holonomic_centers": [
+    4,
+    96
+  ],
+  "integer_base31": [
+    {
+      "order": 1,
+      "signed_error": [
+        {
+          "sign": -1,
+          "numerator_bits": 5934,
+          "denominator_bits": 5936,
+          "sha256_binary_rational": "39adcce12627517667fc5080a0d430760ad98dfee63609ae27af0b2f1df08a5e",
+          "outward_decimal": [
+            "-0.1798309003364422671453",
+            "-0.1798309003364422671452"
+          ]
+        },
+        {
+          "sign": -1,
+          "numerator_bits": 5921,
+          "denominator_bits": 5923,
+          "sha256_binary_rational": "a0194b4e87fdc3a2047bd084b97345a0148ffae7ffc316c7c5982b9e1838ef69",
+          "outward_decimal": [
+            "-0.1798309003364422671453",
+            "-0.1798309003364422671452"
+          ]
+        }
+      ],
+      "absolute_upper_bound": {
+        "sign": 1,
+        "numerator_bits": 15,
+        "denominator_bits": 17,
+        "sha256_binary_rational": "666ec83ee492118033dc0318ee21f1494b84e5d8b9f964ded24ed10e65c5d7ec",
+        "outward_decimal": [
+          "0.2113715913715913715913",
+          "0.2113715913715913715914"
+        ]
+      }
+    },
+    {
+      "order": 2,
+      "signed_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5934,
+          "denominator_bits": 5936,
+          "sha256_binary_rational": "b7786412ac8bc9790b9d90636176d0727232f605e3e98643591b2bb7b74b208e",
+          "outward_decimal": [
+            "0.1742042385324386806448",
+            "0.1742042385324386806449"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5921,
+          "denominator_bits": 5923,
+          "sha256_binary_rational": "ee8f485a4886350720586432fa98f503aa10b7a4957f8ff846c4f2c270b66301",
+          "outward_decimal": [
+            "0.1742042385324386806448",
+            "0.1742042385324386806449"
+          ]
+        }
+      ],
+      "absolute_upper_bound": {
+        "sign": 1,
+        "numerator_bits": 23,
+        "denominator_bits": 25,
+        "sha256_binary_rational": "3a67d9fbd5303a3b3ed77c438a54d74c41bc9d9f68e8cce1d17f7a484643700d",
+        "outward_decimal": [
+          "0.1977147471265118323941",
+          "0.1977147471265118323942"
+        ]
+      }
+    },
+    {
+      "order": 8,
+      "signed_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5939,
+          "denominator_bits": 5941,
+          "sha256_binary_rational": "8ecdcd501d671838d8381556057b3ade2c285614a7c9f2b06f1f7dfd1dadf02b",
+          "outward_decimal": [
+            "0.1555699672764245160943",
+            "0.1555699672764245160944"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5925,
+          "denominator_bits": 5928,
+          "sha256_binary_rational": "af0970012e6b827410a026728fcf75ab95ea27ff3e7e728e1f7e42d96dbe15f9",
+          "outward_decimal": [
+            "0.1555699672764245160943",
+            "0.1555699672764245160944"
+          ]
+        }
+      ],
+      "absolute_upper_bound": {
+        "sign": 1,
+        "numerator_bits": 67,
+        "denominator_bits": 70,
+        "sha256_binary_rational": "a3adb805de043ef42df53806bfcf69bdf3c7b16707d5562ad1c78b2fd4c8add3",
+        "outward_decimal": [
+          "0.1771931152840124729173",
+          "0.1771931152840124729174"
+        ]
+      }
+    },
+    {
+      "order": 16,
+      "signed_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5942,
+          "denominator_bits": 5945,
+          "sha256_binary_rational": "695b24da72caaed079c0a79c184d9066d255376b93f9383c26c730658d380e94",
+          "outward_decimal": [
+            "0.1453283882762881931942",
+            "0.1453283882762881931943"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5929,
+          "denominator_bits": 5932,
+          "sha256_binary_rational": "10e36b2645e3f8fd2cfa259e92778685ab0d9ba31ed05cdb60e0dac576e2823c",
+          "outward_decimal": [
+            "0.1453283882762881931942",
+            "0.1453283882762881931943"
+          ]
+        }
+      ],
+      "absolute_upper_bound": {
+        "sign": 1,
+        "numerator_bits": 134,
+        "denominator_bits": 137,
+        "sha256_binary_rational": "2933fb1764b5f019e778a21477e963417b2cb059107b1a28833def4241e1dbbe",
+        "outward_decimal": [
+          "0.1663749804749484192476",
+          "0.1663749804749484192477"
+        ]
+      }
+    },
+    {
+      "order": 32,
+      "signed_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5937,
+          "denominator_bits": 5939,
+          "sha256_binary_rational": "46fbfd02a06fac15a7699274096670b6830b234e9c2926fc4f9686fe20921fb3",
+          "outward_decimal": [
+            "0.1350468029689128267548",
+            "0.1350468029689128267549"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5923,
+          "denominator_bits": 5926,
+          "sha256_binary_rational": "90dcdfd5b44a61e6c99c3e8ba3c3c03a9f1017ff3355b7eb00668ec125f480b4",
+          "outward_decimal": [
+            "0.1350468029689128267548",
+            "0.1350468029689128267549"
+          ]
+        }
+      ],
+      "absolute_upper_bound": {
+        "sign": 1,
+        "numerator_bits": 260,
+        "denominator_bits": 263,
+        "sha256_binary_rational": "1569005ef7920136147b4adb34364e57600c6694b4c355425ca0fd3081964adc",
+        "outward_decimal": [
+          "0.1552438935317425723792",
+          "0.1552438935317425723793"
+        ]
+      }
+    },
+    {
+      "order": 64,
+      "signed_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5944,
+          "denominator_bits": 5947,
+          "sha256_binary_rational": "0d3dbc55004ed2708232810da569489ceaab8d1b05ee01b1bc310470bebeda48",
+          "outward_decimal": [
+            "0.1250209526735933345920",
+            "0.1250209526735933345921"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5931,
+          "denominator_bits": 5934,
+          "sha256_binary_rational": "0d7647312577303890ab413de7d9ea26e89377598f6650e71d67a528c0d62d1f",
+          "outward_decimal": [
+            "0.1250209526735933345920",
+            "0.1250209526735933345921"
+          ]
+        }
+      ],
+      "absolute_upper_bound": {
+        "sign": 1,
+        "numerator_bits": 516,
+        "denominator_bits": 519,
+        "sha256_binary_rational": "76ffe71415aa915f67fc08473fb49f3c951a06395be52210d383b2b8729e04fb",
+        "outward_decimal": [
+          "0.1441645716481025610415",
+          "0.1441645716481025610416"
+        ]
+      }
+    }
+  ],
+  "post_discovery_prime_height_controls": {
+    "range": [
+      1,
+      192
+    ],
+    "prime_classes_mod_8": [
+      1,
+      5
+    ],
+    "samples": [
+      {
+        "index": 8,
+        "denominator_bits": 68,
+        "certified_prime_count": 6,
+        "prime_product_bits": 32,
+        "lcm_bound_bits": 84
+      },
+      {
+        "index": 16,
+        "denominator_bits": 127,
+        "certified_prime_count": 10,
+        "prime_product_bits": 62,
+        "lcm_bound_bits": 170
+      },
+      {
+        "index": 32,
+        "denominator_bits": 256,
+        "certified_prime_count": 16,
+        "prime_product_bits": 115,
+        "lcm_bound_bits": 355
+      },
+      {
+        "index": 64,
+        "denominator_bits": 542,
+        "certified_prime_count": 31,
+        "prime_product_bits": 254,
+        "lcm_bound_bits": 734
+      },
+      {
+        "index": 128,
+        "denominator_bits": 1110,
+        "certified_prime_count": 59,
+        "prime_product_bits": 542,
+        "lcm_bound_bits": 1469
+      },
+      {
+        "index": 192,
+        "denominator_bits": 1631,
+        "certified_prime_count": 81,
+        "prime_product_bits": 791,
+        "lcm_bound_bits": 2200
+      }
+    ],
+    "origin_cancellation": {
+      "prime": 89,
+      "birth": 12,
+      "order": 35,
+      "pascal_local_residue": 0,
+      "actual_valuation": 0
+    },
+    "boundary": "No exponential height asymptotic is inferred from finite samples."
+  },
+  "unsigned_absolute_errors": [
+    {
+      "order": 1,
+      "absolute_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5935,
+          "denominator_bits": 5937,
+          "sha256_binary_rational": "fe22c61c89d9a30498c9b1bec7d84b56e7abe248d8704143297b31116d5b8070",
+          "outward_decimal": [
+            "0.2046088611058219825332",
+            "0.2046088611058219825333"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5922,
+          "denominator_bits": 5924,
+          "sha256_binary_rational": "1c7cd04accaef34f31adca2d3b7ddbefb20ad5a0e535668dfe291da3fecf4088",
+          "outward_decimal": [
+            "0.2046088611058219825332",
+            "0.2046088611058219825333"
+          ]
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "absolute_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5935,
+          "denominator_bits": 5937,
+          "sha256_binary_rational": "44615e48ff7f837bebbe59e314aebaf526ff7c7286a2c8173a119e9d184fd697",
+          "outward_decimal": [
+            "0.2519172585651533525598",
+            "0.2519172585651533525599"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5922,
+          "denominator_bits": 5924,
+          "sha256_binary_rational": "09336464ca41b0a0a967729a336e6e9525cd5dc5b14a1a6417b431a73d6a5369",
+          "outward_decimal": [
+            "0.2519172585651533525598",
+            "0.2519172585651533525599"
+          ]
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "absolute_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5928,
+          "denominator_bits": 5929,
+          "sha256_binary_rational": "5aaf745a8229a4b8474d24052e1cbab8cfd076d443a4409e927e4e42b95fdd7c",
+          "outward_decimal": [
+            "0.5132705073409742003606",
+            "0.5132705073409742003607"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5914,
+          "denominator_bits": 5915,
+          "sha256_binary_rational": "1a39507f1f97860d444d95eba048ccd8a8843a7b439a4c23331b7b25dc76c8a6",
+          "outward_decimal": [
+            "0.5132705073409742003606",
+            "0.5132705073409742003607"
+          ]
+        }
+      ]
+    },
+    {
+      "order": 16,
+      "absolute_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5940,
+          "denominator_bits": 5935,
+          "sha256_binary_rational": "849d26633baeb94a22f6627ed680abb7e7a906077afdc43d6b504d84b6353f42",
+          "outward_decimal": [
+            "18.24578741136672280777",
+            "18.24578741136672280778"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5926,
+          "denominator_bits": 5922,
+          "sha256_binary_rational": "fb37a3d0aea13e85b8e0632547c2547bc0e64d860238e698e965070cdf3699b1",
+          "outward_decimal": [
+            "18.24578741136672280777",
+            "18.24578741136672280778"
+          ]
+        }
+      ]
+    },
+    {
+      "order": 32,
+      "absolute_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 5965,
+          "denominator_bits": 5947,
+          "sha256_binary_rational": "81a87a998f50afbc0167ae0d25b3a81744f2b8fd098a44b087bdebfab2aa0905",
+          "outward_decimal": [
+            "274854.7580568447771807",
+            "274854.7580568447771808"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5952,
+          "denominator_bits": 5934,
+          "sha256_binary_rational": "8c0ebff5111608b6cb26ff44db09b2781ffc1f932856c085c26ce63c2a84e85a",
+          "outward_decimal": [
+            "274854.7580568447771807",
+            "274854.7580568447771808"
+          ]
+        }
+      ]
+    },
+    {
+      "order": 64,
+      "absolute_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 6005,
+          "denominator_bits": 5957,
+          "sha256_binary_rational": "b9b09d4afcd3e9af3dc892dc12600709ea5233605bb076897ad860843cc2fba4",
+          "outward_decimal": [
+            "287568348784566.1104277",
+            "287568348784566.1104278"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 5992,
+          "denominator_bits": 5944,
+          "sha256_binary_rational": "3856775efbe414d0563bfabbb263a4c145780efb6f4d94d16c4fd191544566ae",
+          "outward_decimal": [
+            "287568348784566.1104277",
+            "287568348784566.1104278"
+          ]
+        }
+      ]
+    }
+  ],
+  "positive_moment_countermodel": {
+    "certified_depth": 12,
+    "normalized_precision": 17,
+    "density_coefficient_receipts": [
+      {
+        "sign": 1,
+        "numerator_bits": 1138,
+        "denominator_bits": 1137,
+        "sha256_binary_rational": "097770f3b32e02523b7b7a1818ea3e15892b80ed00c3f0927d14c8c74cae7662",
+        "outward_decimal": [
+          "2.005824176118039635200",
+          "2.005824176118039635201"
+        ]
+      },
+      {
+        "sign": -1,
+        "numerator_bits": 1132,
+        "denominator_bits": 1138,
+        "sha256_binary_rational": "1de8425babab7292069c5d4168fcb9b5fcd447ba868ab8a450986ac02b6a8ad1",
+        "outward_decimal": [
+          "-0.01532419500940823191170",
+          "-0.01532419500940823191169"
+        ]
+      },
+      {
+        "sign": -1,
+        "numerator_bits": 1120,
+        "denominator_bits": 1128,
+        "sha256_binary_rational": "e190f468b912237360dd86054b57bed33549ca7be4a30b3245ba1c225547a5ec",
+        "outward_decimal": [
+          "-0.004397042612912908237254",
+          "-0.004397042612912908237253"
+        ]
+      },
+      {
+        "sign": 1,
+        "numerator_bits": 1121,
+        "denominator_bits": 1133,
+        "sha256_binary_rational": "4520390637ca241f0cd3e73eb41cbd0a780ff74457c06f4097afb3f1f18d8b4b",
+        "outward_decimal": [
+          "0.0001626109083560591081474",
+          "0.0001626109083560591081475"
+        ]
+      },
+      {
+        "sign": 1,
+        "numerator_bits": 1110,
+        "denominator_bits": 1128,
+        "sha256_binary_rational": "589bf4d02ba722bb6251150c41795a9a4493f9da6a038f688f5c31a178ec16bb",
+        "outward_decimal": [
+          "0.000006621722356706348691320",
+          "0.000006621722356706348691321"
+        ]
+      },
+      {
+        "sign": 1,
+        "numerator_bits": 1112,
+        "denominator_bits": 1133,
+        "sha256_binary_rational": "86d45c9cb3edda12b70f1eed2072f5b0ded56c5933b283ba9e5068dbc4e0e008",
+        "outward_decimal": [
+          "5.821181020962461454051E-7",
+          "5.821181020962461454052E-7"
+        ]
+      },
+      {
+        "sign": -1,
+        "numerator_bits": 1105,
+        "denominator_bits": 1130,
+        "sha256_binary_rational": "386cf82420c2f97fa2869e69bc29e36470535b38ae497480af22b2e199a9d1cb",
+        "outward_decimal": [
+          "-2.625424161549382851410E-8",
+          "-2.625424161549382851409E-8"
+        ]
+      },
+      {
+        "sign": -1,
+        "numerator_bits": 1094,
+        "denominator_bits": 1129,
+        "sha256_binary_rational": "957b1c53a7b83bfa621dd88ef7c29ab406847e3cffaf5fa3c67b61719cc2b9e1",
+        "outward_decimal": [
+          "-3.305130633852111327780E-11",
+          "-3.305130633852111327779E-11"
+        ]
+      },
+      {
+        "sign": 1,
+        "numerator_bits": 1095,
+        "denominator_bits": 1131,
+        "sha256_binary_rational": "3943d0ea09a55323916f9e3652c5e19fc41fe0f3b3cf979544bca8926b9e5ceb",
+        "outward_decimal": [
+          "1.122878125492972726319E-11",
+          "1.122878125492972726320E-11"
+        ]
+      },
+      {
+        "sign": -1,
+        "numerator_bits": 1086,
+        "denominator_bits": 1132,
+        "sha256_binary_rational": "e78a8bb23807f2697d69b9148fc0611e003a993629883da879a35f026b3ad5ba",
+        "outward_decimal": [
+          "-1.692790425784944078974E-14",
+          "-1.692790425784944078973E-14"
+        ]
+      },
+      {
+        "sign": -1,
+        "numerator_bits": 1079,
+        "denominator_bits": 1127,
+        "sha256_binary_rational": "e6fcd1b489a407e583e86db17592e956caca2914e207f9b7f36ed77a7d9f3abb",
+        "outward_decimal": [
+          "-3.908862313807768321609E-15",
+          "-3.908862313807768321608E-15"
+        ]
+      },
+      {
+        "sign": 1,
+        "numerator_bits": 1075,
+        "denominator_bits": 1131,
+        "sha256_binary_rational": "30d273780365662c64e35f3da09e860df732657fb16fef7adf9f7e52bff8f35f",
+        "outward_decimal": [
+          "1.309325560181695812966E-17",
+          "1.309325560181695812967E-17"
+        ]
+      },
+      {
+        "sign": -1,
+        "numerator_bits": 1073,
+        "denominator_bits": 1133,
+        "sha256_binary_rational": "10df1cf130011738a4363e9620322c4ec95c78447aea5eb15ea06266008bc90f",
+        "outward_decimal": [
+          "-1.211931240852040107269E-18",
+          "-1.211931240852040107268E-18"
+        ]
+      }
+    ],
+    "perturbation_bound": {
+      "sign": 1,
+      "numerator_bits": 1150,
+      "denominator_bits": 1154,
+      "sha256_binary_rational": "5510fac6431f69ca1f5ef9caf036d6a0e32023b23ade186f8a8464bf00273dff",
+      "outward_decimal": [
+        "0.06359314235051336139414",
+        "0.06359314235051336139415"
+      ]
+    },
+    "cluster_start": 64,
+    "cluster_length": 24,
+    "cluster_width": {
+      "sign": 1,
+      "numerator_bits": 1213,
+      "denominator_bits": 1225,
+      "sha256_binary_rational": "a294508f43bd1140526d5c7bc0c8723bc2cf9a04f58f87e6252f8a293e540aba",
+      "outward_decimal": [
+        "0.0002094871666269173303508",
+        "0.0002094871666269173303509"
+      ]
+    },
+    "real_pair_fraction_at_radius_1_over_256": "1",
+    "changes_BBP_forcing": true,
+    "outside_certificate_control": {
+      "depth": 2,
+      "precision": 3,
+      "next_normalized_jet_valuation": -1,
+      "wanted_valuation_if_extrapolated": 2
+    }
+  },
+  "independent_pi_oracle": {
+    "identity": "16 arctan(1/5)-4 arctan(1/239)",
+    "terms_each": 256,
+    "width": {
+      "sign": 1,
+      "numerator_bits": 4058,
+      "denominator_bits": 5254,
+      "sha256_binary_rational": "208458dbdeb0570ab05d2fe3afcd0d8fb8013958d7c3a8559242e4aa2f380467",
+      "outward_decimal": [
+        "8.363544907566532303827E-361",
+        "8.363544907566532303828E-361"
+      ]
+    }
+  },
+  "file_sha256": {
+    "research/2026-10-24/PI_PASCAL_HOLE_CONTRACT.md": "500a7beca859c4a627fef87ece2d6f33f04526df6c1219309cec09e2351469c2",
+    "observational_succ/pi_pascal_source.py": "df0a291acc9b36241657dd046267b95b77269d33695181a3fae9a7467d8b6222",
+    "observational_succ/pi_pascal_kernel.py": "ec8993d85c30a2c8c2b56c40d4084e27050e5fac608517b9281562d957c38dc9",
+    "observational_succ/pi_pascal_controls.py": "e64f539a0c21fdd5d7ea23cda2b692b9210b8990817e2bfbef36523a36698892",
+    "scripts/pi_pascal_probe.py": "691fd736aa2520b01f35b6ed8df78b83cccfe0a678bfe8d29355b2c11ef6c90c",
+    "tests/test_pi_pascal_source.py": "241963b00b45edfd47f9c925eba72c9eadd5f82c06cc3915667d096c3c673c5e",
+    "tests/test_pi_pascal_kernel.py": "3631e33caf20714ea3d249a6dfc4b6f80c071c9fd6de4c487c3fe46c410d9c69",
+    "tests/test_pi_pascal_controls.py": "b9e42d62a3f389c40a2eca11eedbeb7f80e092f02c1385f8e6caef57c7a24fdc",
+    "research/2026-10-24/PI_PASCAL_MAHLER_SOURCE.md": "e88426e52ddbf1387669aa8b30c486c148fb5e418989a159bd50662fcc580067",
+    "research/2026-10-24/PI_PASCAL_REAL_KERNEL.md": "f565d71caf9fb60e55a9bcf06ca6cdba8fa34248c6c5e55e07ead598fafc3389",
+    "research/2026-10-24/PI_PASCAL_ADVERSARIAL_BOUNDARY.md": "4bb6216ff3914c923bea6f1dbbfd5e7a528e47f7bf46b69e1889a1079580ad83",
+    "research/2026-10-24/PI_PASCAL_HOLONOMIC_FRONTIER.md": "70bdb168421aedce566a78c7590c060dc72f1fd5e88d6d1247badcdc854fad23",
+    "research/2026-10-24/PI_PASCAL_PRIME_HEIGHT.md": "760e1f68c14a50a5df002924ea40197b70d0f6e3815d9f94642b8c4a14aacba1"
+  },
+  "limits": [
+    "Finite checks support evaluators, not universal proofs or distribution estimates.",
+    "The polynomial-density constructor certifies dyadic jets only through its stated depth.",
+    "The infinite entire-kernel countermodel is a separate paper construction.",
+    "All-prime rational filters create new trajectories; equality of selected laws remains open.",
+    "Large absolute unsigned error is not a lower bound on its circle distance."
+  ]
+}
