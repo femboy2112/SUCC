@@ -1,5 +1,18 @@
 # Observational SUCC
 
+**Foundational research: contextual zero and navigable observation (2026-10-25).**
+[Contextual Zero Backbone](docs/CONTEXTUAL_ZERO_BACKBONE.md) ·
+[scoped CZB-01–12 claims](docs/CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md) ·
+[finite source/model receipt](research/2026-10-25/CONTEXTUAL_ZERO_NAVIGATION_RECEIPT.md).
+An observer retains a roughly known position (a possible-state set), a journal
+of justified zero-relations, a finite probe/action budget, and a desired
+target. Typed observations refine justified relations; lawful movement
+transports its possible positions; an independently checked adaptive policy
+finds a route when one is guaranteed in the *declared* toolkit. Source labels
+and model simulations are not actual physical attestation. This addition is
+**research-staged over CZR #290, not yet accepted into main**; neither QFT
+vacuum ontology nor π normality/RH follows from it.
+
 **Coherent Main X — the π Gearbox (2026-10-24, draft research).** The current
 consolidated round folds the full open π-source frontier (PRs #266, #268–#287;
 ten ancestry-minimal leaves, all 21 histories preserved) onto one authenticated

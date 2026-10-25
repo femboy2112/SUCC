@@ -8,6 +8,43 @@ bridge is the classical ancestral relation: hereditary predicates characterize
 finite reachability. The [observer theorem and counterexamples](CLAIM_SUPPLEMENT_PRINCIPIA_ANCESTRAL.md)
 specify when this reachability survives forgetting source distinctions.
 
+## 0. Contextual zero as a navigable observer foundation (research-stage)
+
+An observer need not begin by possessing a complete field or the desired
+theorem. It begins in a source-contextual uncertainty fiber B of possible
+positions, with a retained record of what has actually been observed, a
+bounded menu of available actions/probes, and a target. **Zero is not an
+untyped metaphysical nothing**: valid relations vanish only under specified
+interpretations. For the coordinate ring R of a finite declared source,
+the currently justified zeros form
+
+$
+I(B)=\{f\in R:f(s)=0\text{ for every }s\in B\}.
+$
+
+If an actualized observation shrinks the possible-state set from B to B',
+then $B'\subseteq B$ implies $I(B)\subseteq I(B')$. Learning can justify
+additional present-tense identities, while a lawful movement can invalidate
+a *local* identity without erasing its earlier witnessed truth. Distinguish
+global source laws from currently observed relations, potential candidates,
+and universally valid algebraic identities.
+
+Finite goal-directed proof/movement policies are source-typed AND/OR plans:
+they must succeed for **every** state still considered possible and every
+admissible observation outcome, paying the declared action costs. Their
+mathematical correctness is relative to the chosen finite field and toolkit;
+no policy, source label or ideal membership is evidence that an external
+physical process has already occurred. The vacuum/virtual-particle language
+may motivate such constructions but is **not** a proposed identity between
+proof terms and quantum-field excitations.
+
+This research-level addition extends existing typed observer/causal records
+without changing prior foundations, and is detailed in
+[Contextual Zero Backbone](CONTEXTUAL_ZERO_BACKBONE.md),
+[finite proofs and controls](../research/2026-10-25/CONTEXTUAL_ZERO_NAVIGATION_RECEIPT.md),
+and [CZB authority labels](CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md).
+The original CZR source-relations branch remains a prerequisite.
+
 ## 1. The initiating distinction
 
 The originating claim is **not** “Hilbert space is logically greater than the integers.” It is: in our empirically modeled physical world, a mathematician and their measuring environment are already physical processes, generally represented using quantum Hilbert-space models, **before** they form mathematical concepts about the world.

@@ -1,5 +1,16 @@
 # Architecture of Observational SUCC
 
+**Contextual-zero backbone (2026-10-25, staged research only):**
+the observer begins at an incomplete source-indexed position, knows which
+zero-relations the evidence actually supports, spends resources on licensed
+measurements and actions, and plans toward a target. A typed chart can
+transport a zero without transporting an inverse; current-belief truths
+must not become universal laws; a proposed action never writes an actual
+event. [Core definitions and limitations](CONTEXTUAL_ZERO_BACKBONE.md);
+[finite theorem and hostile controls](../research/2026-10-25/CONTEXTUAL_ZERO_NAVIGATION_RECEIPT.md);
+[CZB-01–12 claim supplement](CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md).
+The backbone implementation depends on CZR #290 and is not yet merged.
+
 **Source-faithful renormalization extension (2026-10-23).** A source action
 must be transported with its future observation language and any unresolved
 residue environment. Full carry decomposition is unitary; quotient-only and
@@ -31,6 +42,7 @@ and [RP claim authority](CLAIM_SUPPLEMENT_REALITY_PIN.md).
 | Layer | Mathematical responsibility | Modules |
 | --- | --- | --- |
 | Physical carrier and outcome semantics | Finite quantum states, instruments, causal records; exact stochastic readouts and distinguishability loss | quantum_records, operational_semantics |
+| Contextual zero and goal-directed epistemic navigation | Certified finite-source zero laws versus belief-relative local relations, paid probes and lawful moves, model-valid adaptive goal policies, provenance-preserving history | coherent_zero_relations, contextual_zero_navigation |
 | Field-relative causal events | Immutable journal, actualized versus pending observations, finite SUCC and contexts | core, engine, arithmetic |
 | Semantic representation and observability | Probe families, Yoneda-style restriction, witnessed factorization paths and loss of distinguishability | phenomenology, yoneda, resource_probe, local_global, circle_transport |
 | Ideal source-identification and model-relative access | Finite source-compatible version spaces, actualized probe histories, adversarial stationary access traps, conditional reconstruction and finite/omega/dark classification | ideal_frames, observer_traps |
