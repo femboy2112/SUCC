@@ -1,0 +1,16 @@
+{
+  "arithmetic": "integer and Fraction only",
+  "atan_enclosures": 414,
+  "boundary": "Finite calibration; not an asymptotic collision or normality proof",
+  "exact_BBP_source_enclosures": 570,
+  "independent_vertex_pair_checks": 3140,
+  "pair_certificates_accepted": 511,
+  "pair_certificates_rejected": 413,
+  "schema": "SUCC-PI-LAG-INTERVAL-INDEPENDENT-1",
+  "source_boundary_refusals": 1,
+  "source_sha256": {
+    "observational_succ/pi_collision_intervals.py": "5123a9ceaa7bae0547d80a087ab12308bdae9f0c3bf0ca86e778947c1e60383d",
+    "scripts/pi_lag_interval_independent_oracle.py": "7b90582a1f36cad9ca36cf04e2d2761ca4c7d9c9a53f6080380079113d87dd57"
+  },
+  "status": "VERIFIED_FINITE"
+}

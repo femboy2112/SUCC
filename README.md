@@ -363,3 +363,7 @@ and counterexamples — nothing is discarded:
 
 Public repository does not imply unlimited redistribution rights; no license is added absent the
 maintainer's explicit choice.
+
+
+Research update: [selected BBP lag/carry proofs and collision certificates](research/2026-10-24/PI_LAG_CARRY_RIGIDITY.md).
+Exact source restrictions and scoped no-go theorems; pi normality remains open.
