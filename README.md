@@ -1,5 +1,20 @@
 # Observational SUCC
 
+**Internal SUCC matrix walk / phase-source frontier (2026-10-25, stacked draft):**
+[exact mathematical dossier](research/2026-10-25/SUCC_INTERNAL_MATRIX_WALK.md) ·
+[IMW-01–13 proof authority](docs/CLAIM_SUPPLEMENT_SUCC_INTERNAL_MATRIX.md) ·
+[next mathematical research handoff](research/2026-10-25/ASTRA_MATRIX_WALK_NEXT_MOONSHOT.md).
+The external operation remains ordinary successor, while its internal
+Fourier Gram matrix advances by a source-authenticated rank-one update.
+Its purity derivative is an exact Fejér kernel of actual BBP pair phases,
+with a typed bridge to four-bit Walsh/Pascal correlations. A strong source
+limit obstruction is proved: the four-pole twist vanishes at every *fixed*
+frequency but survives on the moving n²-frequency band at angle 15/64;
+its time derivative survives on an n³ band at angle 15/32. An internal
+matrix purity estimate sufficient for π normality is **formulated but
+not proved**. This is **staged on SGO #293, not merged into main**.
+
+
 **Signed Gamma–BBP Green carrier (2026-10-25; stacked research):**
 [full source-typed proof](research/2026-10-25/SIGNED_GAMMA_BBP_GREEN_COHERENCE.md) ·
 [SGO-01–12 claim ledger](docs/CLAIM_SUPPLEMENT_SIGNED_GAMMA_BBP.md).

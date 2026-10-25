@@ -148,3 +148,33 @@ by a constant independent of the observation horizon. The remaining
 normality gate concerns **nontrivial cancellation of those rational-source
 Fourier phases**; positivity of the Gamma/BBP scalar moment bridge cannot
 supply this gate. See [SGO-01–12](CLAIM_SUPPLEMENT_SIGNED_GAMMA_BBP.md).
+
+
+## 11. Source-authentic matrix-valued SUCC and moving-frequency limit boundaries
+
+The [Internal SUCC Matrix Walk](../research/2026-10-25/SUCC_INTERNAL_MATRIX_WALK.md)
+implements one straightforward external arithmetic step \(n\mapsto n+1\)
+while differentiating the *entire retained internal Fourier Gram state*.
+The exact rank-one current is \(G_{n+1}-G_n=v_{n+1}v_{n+1}^*\);
+the corresponding spectral purity differential equals a Fejér overlap
+of the actual BBP source states. This is a **proved finite-dimensional
+matrix identity and an instrument**, not an assumed randomness property.
+
+Complementary frequency-ladder charts \(h16^k\) make the original signed
+BBP forcing explicit as unitary phases of a Koopman weighted shift.
+Its phases have exact source Pascal time differences; the unwrapped
+mixed SUCC/FUCC difference has a strict sign. A particularly important
+**carrier limitation** is source-proved: all fixed-frequency twists
+tend to 1 as source time grows, yet the moving frequency \(16^j\)
+at time \(n=4^j\) has phase limit \(e^{2\pi i15/64}\neq1\),
+and its time derivative remains visible at the \(n^3\) scale.
+Thus finite observer completions need a *moving-frequency boundary
+witness* before they can transfer local proofs into uniform claims.
+
+The same finite phase history admits a four-bit Walsh basis whose
+spectral purity equals the exact digit-cell collision energy. The
+highest-order four-bit interaction can survive when every lower-order
+bit marginal appears uniform, so the full source-correlated matrix
+must be retained. None of these finite identities implies π normality;
+the missing target is a nontrivial all-horizon bound on the
+source-selected Gram's off-diagonal purity. See [IMW-01–13](CLAIM_SUPPLEMENT_SUCC_INTERNAL_MATRIX.md).

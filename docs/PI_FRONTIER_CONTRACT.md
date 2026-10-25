@@ -68,6 +68,41 @@ still-open arithmetic cancellation.
 
 ---
 
+## New matrix-valued proof gate — one external successor, retained internal Fourier correlations (IMW)
+
+The authentic exact rational states \(U_n\) feed a matrix observer
+\(v_n=(e(0),e(U_n),\ldots,e((H-1)U_n))\) and its source Gram
+\(G_{N+1}=G_N+v_{N+1}v_{N+1}^*\), \(A_N=G_N/N\).
+The **finite algebraic spectral identity**
+
+$
+\boxed{\operatorname{tr}(A_N^2)-H=
+2\sum_{j=1}^{H-1}(H-j)|S_N^U(j)/N|^2}
+$
+
+makes exact Fourier cancellation an *internal-matrix* question. If a
+growing window \(H_N\to\infty\) obeys
+\(\operatorname{tr}(A_{N,H_N}^2)-H_N=o(H_N)\), then Weyl and the proven
+SGO Green-tail source transport imply π base-16 normality. **This
+quantitative matrix estimate is OPEN; it is not implied by Gram
+positivity or circle symmetry.**
+
+The exact one-step purity differential is a Fejér sum over all
+source-selected phase differences with the new \(U_{N+1}\). The
+frequency-ladder Koopman matrix also has a **provably nonvanishing moving
+high-frequency source twist** at scales \(n^2\), and the differentiated
+matrix at \(n^3\); hence fixed finite Fourier matrix convergence cannot be
+promoted to uniform operator-norm convergence. These are source-specific
+constraints/obstructions, NOT the missing estimate. The
+[full IMW dossier](../research/2026-10-25/SUCC_INTERNAL_MATRIX_WALK.md),
+[status ledger](CLAIM_SUPPLEMENT_SUCC_INTERNAL_MATRIX.md) and
+[research handoff](../research/2026-10-25/ASTRA_MATRIX_WALK_NEXT_MOONSHOT.md)
+identify how Pascal, Walsh, cyclotomic and original integer-lift clocks
+could try to produce a genuinely new bound without inventing any
+independence assumption.
+
+---
+
 ## Route A — selected harmonic / cyclotomic saving (#284)
 
 **Statement to prove.** For each fixed nonzero integer $h$, with the authentic

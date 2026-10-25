@@ -1,5 +1,19 @@
 # Architecture of Observational SUCC
 
+**Source-faithful internal matrix successor (2026-10-25, draft stacked on
+SGO #293):** a single external \(n\mapsto n+1\) evolves a Hermitian
+Fourier Gram by an exact rank-one source current, whose time
+derivative is an authenticated Fejér relative-phase kernel. Its
+frequency-ladder dual is a weighted Koopman shift with an essential
+outgoing high-mode boundary. The BBP four-pole source has a
+provably nonuniform n² twist and n³ time-difference band, forbidding
+the jump from fixed Fourier-frequency convergence to uniform
+frequency-carrier convergence. Walsh/Pascal cross-checks retain the
+four-bit highest-order interaction. **No π normality or RH conclusion.**
+[Exact math](../research/2026-10-25/SUCC_INTERNAL_MATRIX_WALK.md) ·
+[claim authority](CLAIM_SUPPLEMENT_SUCC_INTERNAL_MATRIX.md).
+
+
 **Signed gamma zero and bounded forward/backward orbit transport (2026-10-25,
 stacked research):** A source-matched zero-total signed measure gives strict
 positive higher BBP-versus-Gamma moment determinants in every degree; Euler
