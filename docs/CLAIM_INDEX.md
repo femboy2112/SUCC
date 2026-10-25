@@ -1,5 +1,16 @@
 # Claim Index
 
+**2026-10-25 Seinfeld SUCC — the mathematical reach of nothing:**
+[SS-01–09](CLAIM_SUPPLEMENT_SEINFELD_SUCC.md),
+[formal and arithmetic proofs](../research/2026-10-25/SEINFELD_SUCC_NOTHING_THEOREMS.md),
+[finite rational receipt](../research/2026-10-25/SEINFELD_SUCC_FINITE_RECEIPT.json).
+Zero evaluation does not erase labelled generators or affine path cycles;
+backward circle fibers have 16^k choices while odd-torsion inverse is
+unique but not real-continuous. A positive four-pole, odd-denominator
+non-normal counterfeit with matching BBP n^-2 coefficient kills generic
+mixing inferences; authentic source-selected π cancellation remains OPEN.
+No new Lean authority.
+
 **2026-10-24 harmonic mirror SUCC / source-selected π Fourier:**
 [HMS-01–16](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md),
 [research proof and controls](../research/2026-10-24/PI_HARMONIC_MIRROR_SUCC_FORGE.md),

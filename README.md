@@ -1,5 +1,17 @@
 # Observational SUCC
 
+**Seinfeld SUCC — the mathematical reach of nothing (research, 2026-10-25).**
+[Proof dossier](research/2026-10-25/SEINFELD_SUCC_NOTHING_THEOREMS.md) ·
+[SS-01–09 claims](docs/CLAIM_SUPPLEMENT_SEINFELD_SUCC.md) ·
+[exact finite receipt](research/2026-10-25/SEINFELD_SUCC_FINITE_RECEIPT.json).
+A zero *value* need not erase its formal source witness: exact recurrence
+syzygies, nonzero SUCC/FUCC labelled cycles with zero boundary, real-circle
+16^k backward fibers and the unique yet real-discontinuous odd-torsion inverse
+are kept distinct. A nonnormal odd-rational four-pole counterfeit retains
+positive forcing and the authentic 15/(64n²) leading decay, refuting generic
+zero-coherence-to-normality arguments. **Selected signed π cancellation, π
+normality, and RH remain OPEN.** No new Lean kernel authority.
+
 **Coherent Main X — the π Gearbox (2026-10-24, draft research).** The current
 consolidated round folds the full open π-source frontier (PRs #266, #268–#287;
 ten ancestry-minimal leaves, all 21 histories preserved) onto one authenticated
