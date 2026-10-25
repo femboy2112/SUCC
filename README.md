@@ -1,5 +1,25 @@
 # Observational SUCC
 
+**Coherent Main X — the π Gearbox (2026-10-24, draft research).** The current
+consolidated round folds the full open π-source frontier (PRs #266, #268–#287;
+ten ancestry-minimal leaves, all 21 histories preserved) onto one authenticated
+four-pole BBP source. Two navigational docs anchor it: the
+**[π Gearbox Atlas](docs/PI_GEARBOX_ATLAS.md)** — every proved commuting square
+with its status label, and the exact gear that is still missing — and the
+**[π Frontier Contract](docs/PI_FRONTIER_CONTRACT.md)** — the four candidate open
+estimates (selected harmonic/cyclotomic saving, prescribed collision / SCE-07
+$K_p(1)=p^{o(1)}$ at $c=2/5$, the signed four-bit Walsh jet, and the prime-window
+channel), each stated with quantifiers, normalization, and its exact logical debt
+to normality. A new cross-branch test layer
+([`tests/test_gearbox_source_integration.py`](tests/test_gearbox_source_integration.py))
+machine-checks that the two integer carriers (#281 `bbp_natural_carrier`, #282
+`integer_bbp_carrier`) reconstruct the identical unwrapped $U_n$ and certify
+base-16 digits against an **independent** Machin $\pi$ oracle — never the
+implementation under test. The cluster entries below (Hypothesis A,
+Euler–Mascheroni, twisted-pair, Pascal/Lucas, dyadic/prime-base, joint-prime,
+harmonic mirror) are its components. **π normality, its logical independence, RH,
+and absolute/decimal normality all remain OPEN; no new Lean kernel authority.**
+
 **Hypothesis A / all-observer research (2026-10-24, draft):**
 [weakest useful criteria and new proofs](research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md) ·
 [scoped claims HJA-01--31](docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md).
