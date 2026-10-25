@@ -876,6 +876,22 @@
         "scripts/pi_ternary_carry_calibration.py",
         "scripts/pi_ternary_translator_calibration.py"
       ]
+    },
+    {
+      "namespace": "PI_RATIONAL_BASE_BBP_CARRY",
+      "bare_prefix": "RBP",
+      "fq_prefix": "RBP",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_RATIONAL_BASE_PI.md"
+      ],
+      "id_count": 21,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/CERTIFIED FINITE/REFUTED/OPEN); pi normality OPEN; no new Lean authority",
+      "topic": "canonical p/q rational-base integer digits, 11-adic suffix carry, authentic BBP signed decimal Pascal and mixed source Fourier no-go",
+      "code": [
+        "observational_succ/pi_rational_base_carry.py",
+        "tests/test_pi_rational_base_carry.py",
+        "scripts/pi_rational_base_carry_probe.py"
+      ]
     }
   ],
   "resolved_collisions": [
