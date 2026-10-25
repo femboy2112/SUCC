@@ -1,5 +1,16 @@
 # Research claim ledger
 
+[Natural-lag Fourier forge, NLG-01--18](CLAIM_SUPPLEMENT_NATURAL_LAG_FORGE.md)
+is a research-only additive record of source-correct BBP temporal lags,
+a sharp strictly positive 16^k/n^2 forcing envelope, classical signed
+van der Corput, prime-depth costs and finite growing-frequency resonances.
+[Proof/negative-control dossier](../research/2026-10-24/PI_ONE_SHOT_NATURAL_CARRIER_SPECTRAL_FORGE.md).
+The conditional cyclotomic-frequency mean criterion does NOT establish
+actual signed source cancellation. Nine finite certified Fourier enclosures
+and disjoint complete 16-cell observer ablations are honest finite tests;
+full observer features are worse on one holdout and better on another.
+π-normality remains OPEN; formal Lean authority is not asserted.
+
 The additive [natural-number carrier supplement NCB-01--16](CLAIM_SUPPLEMENT_NATURAL_BBP_CARRIER.md)
 proves a total N³ BBP state machine and its unique anchored SUCC section,
 Cantor encoding into N, source-faithful 2-adic/prime observables, finite digit

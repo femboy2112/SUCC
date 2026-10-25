@@ -14,6 +14,26 @@
   },
   "namespaces": [
     {
+      "namespace": "NATURAL_LAG_SPECTRAL_FORGE",
+      "bare_prefix": "NLG",
+      "fq_prefix": "NLG",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_NATURAL_LAG_FORGE.md"
+      ],
+      "id_count": 18,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/CONDITIONAL/CERTIFIED FINITE/NEGATIVE/UNVERIFIED); pi normality OPEN; no Lean kernel authority",
+      "topic": "authenticated N-carrier BBP source two-time lag with sharp real forcing, cyclotomic vdc conditional Fourier contract, prime-depth clock cost, exact finite Fourier intervals, complete factorial observer ablations and independent holdouts",
+      "code": [
+        "observational_succ/pi_succ_lag_bridge.py",
+        "observational_succ/pi_succ_observer_ablation.py",
+        "observational_succ/pi_succ_character_intervals.py",
+        "tests/test_pi_succ_lag_bridge.py",
+        "tests/test_pi_succ_observer_ablation.py",
+        "tests/test_pi_succ_character_intervals.py",
+        "scripts/pi_succ_oneshot_probe.py"
+      ]
+    },
+    {
       "namespace": "NATURAL_BBP_CARRIER",
       "bare_prefix": "NCB",
       "fq_prefix": "NCB",

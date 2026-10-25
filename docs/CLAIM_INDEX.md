@@ -1,5 +1,19 @@
 # Claim Index
 
+**2026-10-24 natural-number π one-shot lag/Fourier crucible:**
+[NLG-01--18](CLAIM_SUPPLEMENT_NATURAL_LAG_FORGE.md),
+[complete source proof and adversarial analysis](../research/2026-10-24/PI_ONE_SHOT_NATURAL_CARRIER_SPECTRAL_FORGE.md),
+[exact finite receipt](../research/2026-10-24/PI_NATURAL_LAG_CRUCIBLE_RECEIPT.json).
+Authentic N-carrier BBP two-time lags have a sharp positive real forcing
+bound and rigorous cyclotomic Fourier comparison. Classical van der Corput
+yields a source-typed CONDITIONAL log-lag normality criterion, but the
+selected signed estimate remains unproved (related CYC-03 is prior work).
+Nine actual source Fourier magnitudes are certified at finite windows;
+16 complete Pascal/Lucas/dyadic/prime observer factorial combinations
+were measured on two independent future holdouts. Full combination does
+NOT show stable improvement; adverse controls remain. π normality OPEN,
+no new Lean authority, main unchanged.
+
 **2026-10-24 natural-number carrier / internal BBP realization:**
 [NCB-01--16](CLAIM_SUPPLEMENT_NATURAL_BBP_CARRIER.md) and
 [proof/obstruction dossier](../research/2026-10-24/PI_NATURAL_CARRIER_BBP_LIFT.md).

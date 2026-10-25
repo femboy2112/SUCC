@@ -1,0 +1,537 @@
+{
+  "base_parent": "research/pi-natural-carrier-bbp-internal-2026-10-24@f3498142319919e61e56bfe80c39d5410d8c61bf",
+  "blind_clock_cost": [
+    {
+      "depth": 1,
+      "lags_vs_window_512": "0.005859375",
+      "minimal_lag": 3
+    },
+    {
+      "depth": 2,
+      "lags_vs_window_512": "2.666015625",
+      "minimal_lag": 1365
+    },
+    {
+      "depth": 3,
+      "lags_vs_window_512": "3639.111328125",
+      "minimal_lag": 1863225
+    },
+    {
+      "depth": 4,
+      "lags_vs_window_512": "4967386.962890625",
+      "minimal_lag": 2543302125
+    }
+  ],
+  "certified_special_fourier_amplitudes": [
+    {
+      "certified_modulus_interval_7dp": [
+        "0.0945644",
+        "0.0945645"
+      ],
+      "certified_square_width_float_display": 1.1735687476034596e-12,
+      "lag": 1,
+      "mode": 15,
+      "samples": 64,
+      "start": 64
+    },
+    {
+      "certified_modulus_interval_7dp": [
+        "0.2014454",
+        "0.2014455"
+      ],
+      "certified_square_width_float_display": 3.8011001012866765e-13,
+      "lag": 2,
+      "mode": 255,
+      "samples": 64,
+      "start": 64
+    },
+    {
+      "certified_modulus_interval_7dp": [
+        "0.0994165",
+        "0.0994166"
+      ],
+      "certified_square_width_float_display": 9.519884773738676e-13,
+      "lag": 3,
+      "mode": 4095,
+      "samples": 64,
+      "start": 64
+    },
+    {
+      "certified_modulus_interval_7dp": [
+        "0.0465453",
+        "0.0465454"
+      ],
+      "certified_square_width_float_display": 2.094251880254496e-13,
+      "lag": 1,
+      "mode": 15,
+      "samples": 128,
+      "start": 128
+    },
+    {
+      "certified_modulus_interval_7dp": [
+        "0.0784735",
+        "0.0784736"
+      ],
+      "certified_square_width_float_display": 3.226738699537373e-13,
+      "lag": 2,
+      "mode": 255,
+      "samples": 128,
+      "start": 128
+    },
+    {
+      "certified_modulus_interval_7dp": [
+        "0.1068723",
+        "0.1068724"
+      ],
+      "certified_square_width_float_display": 7.218120181158796e-13,
+      "lag": 3,
+      "mode": 4095,
+      "samples": 128,
+      "start": 128
+    },
+    {
+      "certified_modulus_interval_7dp": [
+        "0.0976589",
+        "0.0976590"
+      ],
+      "certified_square_width_float_display": 1.0387329259772693e-12,
+      "lag": 1,
+      "mode": 15,
+      "samples": 128,
+      "start": 256
+    },
+    {
+      "certified_modulus_interval_7dp": [
+        "0.0672271",
+        "0.0672272"
+      ],
+      "certified_square_width_float_display": 7.717478381739956e-13,
+      "lag": 2,
+      "mode": 255,
+      "samples": 128,
+      "start": 256
+    },
+    {
+      "certified_modulus_interval_7dp": [
+        "0.0605485",
+        "0.0605486"
+      ],
+      "certified_square_width_float_display": 7.672641673589006e-13,
+      "lag": 3,
+      "mode": 4095,
+      "samples": 128,
+      "start": 256
+    }
+  ],
+  "checks_passed": 1725,
+  "digit_certificates": {
+    "all_3008_one_tight_tail_bound": true,
+    "threshold": "T_n<1/((8n+1)(8n+2)) (inherited source theorem)"
+  },
+  "experiment": "SUCC N-carrier one-shot spectral crucible; no normality proof",
+  "factorial_future": {
+    "full_minus_empty_risk_exact": "-2512812319/11417012011008",
+    "full_minus_empty_risk_float": -0.00022009369146473777,
+    "interaction_9dp": 0.00107474,
+    "interaction_exact": "4762995705753972703264946018208023597971006093073507521111353260293/4431766568689501098065788185682082887872919289214003937491236290560000",
+    "rows": [
+      {
+        "exact_risk": "2023211/30482432",
+        "families": "empty",
+        "risk_9dp": "66373017/1000000000",
+        "subset": []
+      },
+      {
+        "exact_risk": "2437904528742017/36561058834538496",
+        "families": "D",
+        "risk_9dp": "66680359/1000000000",
+        "subset": [
+          0
+        ]
+      },
+      {
+        "exact_risk": "15703451989025111369/236846052384204390400",
+        "families": "P",
+        "risk_9dp": "33151179/500000000",
+        "subset": [
+          1
+        ]
+      },
+      {
+        "exact_risk": "221952092755317/3341098949017600",
+        "families": "L",
+        "risk_9dp": "4151929/62500000",
+        "subset": [
+          2
+        ]
+      },
+      {
+        "exact_risk": "65197/984064",
+        "families": "Q",
+        "risk_9dp": "16563201/250000000",
+        "subset": [
+          3
+        ]
+      },
+      {
+        "exact_risk": "416692684459415821950356192590820693773/6242010558804396788882207214228111360000",
+        "families": "D+P",
+        "risk_9dp": "16689041/250000000",
+        "subset": [
+          0,
+          1
+        ]
+      },
+      {
+        "exact_risk": "19338636179412422894495641/288423691264846914416640000",
+        "families": "D+L",
+        "risk_9dp": "33524701/500000000",
+        "subset": [
+          0,
+          2
+        ]
+      },
+      {
+        "exact_risk": "134682757/2037772800",
+        "families": "D+Q",
+        "risk_9dp": "66093117/1000000000",
+        "subset": [
+          0,
+          3
+        ]
+      },
+      {
+        "exact_risk": "526653186453980190187446473635419559/7835336871202540062257888733143040000",
+        "families": "P+L",
+        "risk_9dp": "6721513/100000000",
+        "subset": [
+          1,
+          2
+        ]
+      },
+      {
+        "exact_risk": "49336189525/742519996416",
+        "families": "P+Q",
+        "risk_9dp": "66444257/1000000000",
+        "subset": [
+          1,
+          3
+        ]
+      },
+      {
+        "exact_risk": "1450796021/21856665600",
+        "families": "L+Q",
+        "risk_9dp": "66377737/1000000000",
+        "subset": [
+          2,
+          3
+        ]
+      },
+      {
+        "exact_risk": "47937516913628386910036608859/711761445147126884110368768000",
+        "families": "D+P+L",
+        "risk_9dp": "33675269/500000000",
+        "subset": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "exact_risk": "146711219849/2215286931456",
+        "families": "D+P+Q",
+        "risk_9dp": "33113367/500000000",
+        "subset": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "exact_risk": "72933911473/1107643465728",
+        "families": "D+L+Q",
+        "risk_9dp": "65846017/1000000000",
+        "subset": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "exact_risk": "8159311919/123071496192",
+        "families": "P+L+Q",
+        "risk_9dp": "16574333/250000000",
+        "subset": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "exact_risk": "202974665/3068264448",
+        "families": "D+P+L+Q",
+        "risk_9dp": "16538231/250000000",
+        "subset": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  "factorial_holdout": {
+    "full_minus_empty_risk_exact": "45072481912996039/152728866131182387200",
+    "full_minus_empty_risk_float": 0.00029511436216832926,
+    "interaction_9dp": -0.000359337,
+    "interaction_exact": "-14983288639645269888283642728586703755556481226486936042861673717628801997/41697048331798866348599203055414059941094861025662792049921539298041528320000",
+    "rows": [
+      {
+        "exact_risk": "472939/7620608",
+        "families": "empty",
+        "risk_9dp": "62060533/1000000000",
+        "subset": []
+      },
+      {
+        "exact_risk": "1183148039009455421/19084872711629094912",
+        "families": "D",
+        "risk_9dp": "61994023/1000000000",
+        "subset": [
+          0
+        ]
+      },
+      {
+        "exact_risk": "58688966699459168791/947384209536817561600",
+        "families": "P",
+        "risk_9dp": "3871777/62500000",
+        "subset": [
+          1
+        ]
+      },
+      {
+        "exact_risk": "207546864162037/3341098949017600",
+        "families": "L",
+        "risk_9dp": "3105967/50000000",
+        "subset": [
+          2
+        ]
+      },
+      {
+        "exact_risk": "15253/246016",
+        "families": "Q",
+        "risk_9dp": "1937501/31250000",
+        "subset": [
+          3
+        ]
+      },
+      {
+        "exact_risk": "4195758872107817175376330439531620031/67847940856569530313937034937262080000",
+        "families": "D+P",
+        "risk_9dp": "30920311/500000000",
+        "subset": [
+          0,
+          1
+        ]
+      },
+      {
+        "exact_risk": "4898032483649347994286227/78661006708594613022720000",
+        "families": "D+L",
+        "risk_9dp": "15566901/250000000",
+        "subset": [
+          0,
+          2
+        ]
+      },
+      {
+        "exact_risk": "51059528629662631/825179565529267200",
+        "families": "D+Q",
+        "risk_9dp": "61876869/1000000000",
+        "subset": [
+          0,
+          3
+        ]
+      },
+      {
+        "exact_risk": "919288701780916112383162951821910603/14813683772117302305206320886098560000",
+        "families": "P+L",
+        "risk_9dp": "2482269/40000000",
+        "subset": [
+          1,
+          2
+        ]
+      },
+      {
+        "exact_risk": "476353914287334371/7665089612002099200",
+        "families": "P+Q",
+        "risk_9dp": "31072951/500000000",
+        "subset": [
+          1,
+          3
+        ]
+      },
+      {
+        "exact_risk": "1270303147327499/20164090880102400",
+        "families": "L+Q",
+        "risk_9dp": "12599657/200000000",
+        "subset": [
+          2,
+          3
+        ]
+      },
+      {
+        "exact_risk": "663852534482343105514106148053/10676421677206903261655531520000",
+        "families": "D+P+L",
+        "risk_9dp": "6217931/100000000",
+        "subset": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "exact_risk": "13069382906696147164413773/211581880245876005978112000",
+        "families": "D+P+Q",
+        "risk_9dp": "30884929/500000000",
+        "subset": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "exact_risk": "2871589289010275954391812183/45621383360523356200137523200",
+        "families": "D+L+Q",
+        "risk_9dp": "15735983/250000000",
+        "subset": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "exact_risk": "1389845061019726314399449909/22058722473567981945569280000",
+        "families": "P+L+Q",
+        "risk_9dp": "31503299/500000000",
+        "subset": [
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "exact_risk": "2559394634092159/41045113176883200",
+        "families": "D+P+L+Q",
+        "risk_9dp": "974307/15625000",
+        "subset": [
+          0,
+          1,
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  "families": {
+    "D": "dyadic U_n mod 4",
+    "L": "Lucas row support 2^popcount(n) modulo 7",
+    "P": "Pascal backward difference U_n-U_(n-1) mod 8",
+    "Q": "odd-prime depth residues (v3(den)%3, v5(den)%3)"
+  },
+  "finite_frequency_resonances": [
+    {
+      "N": 4,
+      "h_bit_length": 20
+    },
+    {
+      "N": 12,
+      "h_bit_length": 81
+    },
+    {
+      "N": 32,
+      "h_bit_length": 249
+    },
+    {
+      "N": 64,
+      "h_bit_length": 533
+    }
+  ],
+  "gaussian_vdc_controls": [
+    [
+      "144",
+      "299/2"
+    ],
+    [
+      "144",
+      "645/4"
+    ],
+    [
+      "144",
+      "3077/18"
+    ],
+    [
+      "144",
+      "6647/36"
+    ],
+    [
+      "0",
+      "78"
+    ],
+    [
+      "0",
+      "15/2"
+    ],
+    [
+      "0",
+      "34/3"
+    ],
+    [
+      "0",
+      "23/6"
+    ],
+    [
+      "0",
+      "13/2"
+    ],
+    [
+      "0",
+      "15/4"
+    ],
+    [
+      "0",
+      "17/6"
+    ],
+    [
+      "0",
+      "23/12"
+    ]
+  ],
+  "observed_claim": "Actual BBP Fourier frequency cancellation for all fixed h remains unproved",
+  "samples": {
+    "future": {
+      "digit_zero_count": 73,
+      "n": 1024,
+      "start": 2048,
+      "stop_exclusive": 3072
+    },
+    "holdout": {
+      "digit_zero_count": 68,
+      "n": 1024,
+      "start": 1024,
+      "stop_exclusive": 2048
+    },
+    "training": {
+      "digit_zero_count": 56,
+      "n": 960,
+      "start": 64,
+      "stop_exclusive": 1024
+    }
+  },
+  "source": "original four-pole rational BBP recurrence, origin zero, same natural time axis",
+  "status": {
+    "cyclotomic_lag_bridge": "PAPER PROVED using classical vdc and original BBP",
+    "fourier_selected_saving": "UNVERIFIED",
+    "pi_normality": "OPEN",
+    "rational_primary_full_factorial": "VERIFIED FINITE"
+  },
+  "wrong_time_odd_prime_full_risk": "10234434973262813/164180452707532800"
+}

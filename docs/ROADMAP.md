@@ -1,5 +1,20 @@
 # Research roadmap
 
+**2026-10-24 Operation One-Shot: anchored natural-carrier cyclotomic lags.**
+[Research dossier](../research/2026-10-24/PI_ONE_SHOT_NATURAL_CARRIER_SPECTRAL_FORGE.md)
+proves authentic BBP lag error 0<R_(n,k)<(16^k-1)/(64n^2), sharp at
+fixed k, and transports actual correlations to selected special modes
+h(16^k-1). The van der Corput contract demands a new signed cancellation
+on the unique N-source orbit; previous CYC-03 frequencies are recognized
+as prior work. p=3,5,7,13 clock annihilation costs grow dramatically
+(3, 1365, 1863225,... by depth). A certified nine-mode finite Fourier
+probe and complete two-heldout, 16-factorial four-observer comparison fail
+to demonstrate stable all-observer dominance. Next research priority:
+**prove an actual original four-pole signed bound** on h(16^k-1) modes
+uniformly for k up to a logarithmic horizon, with all source/clock errors
+paid, or construct a different source-specific retention saving. No claim
+of π normality, unknowability, or independent originality. [NLG claims](CLAIM_SUPPLEMENT_NATURAL_LAG_FORGE.md).
+
 **2026-10-24 Internal BBP / natural SUCC carrier continuation (research).**
 [NCB-01--16](CLAIM_SUPPLEMENT_NATURAL_BBP_CARRIER.md) formalizes the user’s
 carrier/model distinction as an explicit successor-commuting N³ automaton:
