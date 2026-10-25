@@ -67,6 +67,16 @@ and no continuous global A_f completion of the source exists. True BBP
 Fourier cancellation, real 1/16 frequencies, and pi normality remain OPEN;
 no Lean authority or full-suite completion is inferred.
 
+**2026-10-24 Hypothesis A and all observers:**
+[HJA-01--31](CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md) and
+[research synthesis](../research/2026-10-24/PI_HYPOTHESIS_A_SYNTHESIS.md).
+A classical upper-only frequency criterion motivates a trimmed, fully joint
+collision bound. Exact BBP transport costs at most a factor two; all-gain
+law preservation has an elementary classification without an entropy premise.
+All-window Pascal-rank and source-matching moving-prime controls preserve the
+scope of these reductions. The authentic statistical estimates and pi normality
+remain OPEN. No new Lean authority is claimed.
+
 **2026-10-24 Pascal/Lucas quotient operator research:**
 [PLQ-01--14](CLAIM_SUPPLEMENT_PASCAL_LUCAS_QUOTIENT.md) and
 [complete proof/obstruction dossier](../research/2026-10-24/PI_PASCAL_LUCAS_QUOTIENT.md).

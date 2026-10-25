@@ -837,6 +837,27 @@
         "scripts/twisted_coprime_gain_probe.py",
         "scripts/twisted_inverse_branch_oracle.py"
       ]
+    },
+    {
+      "namespace": "HYPOTHESIS_A_JOINT_OBSERVERS",
+      "bare_prefix": "HJA",
+      "fq_prefix": "HJA",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md"
+      ],
+      "id_count": 31,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/REFUTED/CONDITIONAL/OPEN); pi normality OPEN; no new Lean authority",
+      "topic": "BBP-specific Hypothesis A, full joint observer interactions, trimmed collision transport, all-rank and moving-prime controls, all-gain stationary-law classification",
+      "code": [
+        "observational_succ/all_gain_observers.py",
+        "observational_succ/joint_observer_entropy.py",
+        "observational_succ/joint_primary_observers.py",
+        "observational_succ/pascal_rank_process.py",
+        "scripts/all_gain_observers_probe.py",
+        "scripts/joint_observer_entropy_probe.py",
+        "scripts/joint_primary_observers_probe.py",
+        "scripts/pascal_rank_process_probe.py"
+      ]
     }
   ],
   "resolved_collisions": [

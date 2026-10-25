@@ -1,0 +1,33 @@
+{
+  "parent": "d942c4707d750f788f39acb137a04e871a93e0a6",
+  "command": [
+    "/tmp/succ-twisted-venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "started_at_utc": "2026-10-24T22:54:59.955033+00:00",
+  "finished_at_utc": "2026-10-24T23:06:47.773284+00:00",
+  "elapsed_seconds": 707.818,
+  "exit_code": 0,
+  "freeze_sha256": {
+    "observational_succ/all_gain_observers.py": "ec87e4d33794f1b29de935e2a7a4106d005a00a521a3024a56b305715bac4abc",
+    "observational_succ/joint_observer_entropy.py": "674e773ef41665321f9c79d59c74e9d5e98147c45416f3f8291adb0c002ed10a",
+    "observational_succ/joint_primary_observers.py": "fd9f08159a8e591d7f3aa8130a0dd0001acf4efc6cea6bfbc682dc1a4327fa4a",
+    "observational_succ/pascal_rank_process.py": "129f0b5254eb7944ad9c68ae227c175a074cba866a53ac9b4b3147f223dd798e",
+    "scripts/all_gain_observers_probe.py": "a7b573db61894ad7913ae09d8746f9e69c3f77eaab27f96457318871630745fe",
+    "scripts/joint_observer_entropy_probe.py": "2a331242099ce01d605437a85be8f448f63b4b6aeab47328e59b0112d09a550d",
+    "scripts/joint_primary_observers_probe.py": "1aa1a2d49ff6e917fe107b78616d7cb38e47a6d048c3a2292bfbefae8d03bdf6",
+    "scripts/pascal_rank_process_probe.py": "5fac4015fbb889238568d36037f11cf1767ce2cb307fafe989ae010efaaed773",
+    "tests/test_all_gain_observers.py": "6ddf11d5b0445dba349d96399a102988e256a6c6937158858819ee2502342fc7",
+    "tests/test_joint_observer_entropy.py": "092643eb53761b10dacf67f0ee71debf8b7c82b335ab252fdf02a5ee6f984d8a",
+    "tests/test_joint_primary_observers.py": "0b851bcc436400da41b3ca312c69fd37cecc28e87a12122639a9ad59d1e26fba",
+    "tests/test_pascal_rank_process.py": "39b4f3c8b322bf9058e6fda17738eb7881d8f7f239adb743219253fb0abec76e"
+  },
+  "freeze_unchanged": true,
+  "log_sha256": "97133829c11fb71f48fe271b4e54571b5be963608c3abd0f340354c6ad2b14cf"
+}
