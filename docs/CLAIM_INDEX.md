@@ -1,5 +1,21 @@
 # Claim Index
 
+**2026-10-24 harmonic mirror SUCC / source-selected π Fourier:**
+[HMS-01–16](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md),
+[research proof and controls](../research/2026-10-24/PI_HARMONIC_MIRROR_SUCC_FORGE.md),
+[exact finite receipt](../research/2026-10-24/PI_HARMONIC_MIRROR_RECEIPT.json).
+Reciprocal natural successor is the projective action of the very same
+single-bit unipotent Lucas/Pascal matrix J, and harmonic H_n is its accumulated
+cocycle (not the reciprocal state itself). Four original BBP forcing-index
+rays evolve by J^8, with signed leading cancellation. Prime FUCC becomes
+log p translation in harmonic coordinates with explicit O(1/n) defect.
+A nonnormal rational mirror counterfeit rules out a generic mixing shortcut.
+Correct positive harmonic Fejér mixtures give an exact conditional BBP
+lag-Fourier bound and extended deterministic lag-error horizon; they do not
+prove the remaining actual source-selected signed cancellation. The naive
+signed 1/k trigonometric kernel is negative at angle π for K=4. π normality
+remains OPEN; no new Lean kernel authority.
+
 **2026-10-24 natural-number π one-shot lag/Fourier crucible:**
 [NLG-01--18](CLAIM_SUPPLEMENT_NATURAL_LAG_FORGE.md),
 [complete source proof and adversarial analysis](../research/2026-10-24/PI_ONE_SHOT_NATURAL_CARRIER_SPECTRAL_FORGE.md),

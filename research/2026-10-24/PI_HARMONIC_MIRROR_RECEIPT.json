@@ -1,0 +1,38 @@
+{
+  "actual_pi_normality": "OPEN",
+  "assertions": 10542,
+  "conditional_fourier_saving": "UNVERIFIED",
+  "counterfeit_alpha": "1/128",
+  "counterfeit_polarity": "eventually_zero_base_16_orbit",
+  "critical_lag_examples_b_floorlog16N": {
+    "128": 131,
+    "16": 19,
+    "2": 2,
+    "32": 35,
+    "4": 4,
+    "64": 67,
+    "8": 8
+  },
+  "gaussian_words": 1364,
+  "harmonic_diagonal_at_16": "48409924397/103298635440",
+  "harmonic_diagonal_at_64": "41409901935572392721815151397221689468404267553321859/120559948365796753572660110308181715996846028397517120",
+  "independent_BBP_four_ray_depth": 512,
+  "local_environment": "partial isolated code/test checkout; full SUCC suite requires hosted CI",
+  "mirror_source_pole_moments_0_to_3": [
+    0,
+    15,
+    151,
+    1209
+  ],
+  "naive_lag_symbol_at_pi_K4": "-1/6",
+  "pascal_harmonic_depth": 120,
+  "sha256_of_executed_sources": {
+    "observational_succ/harmonic_mirror_succ.py": "ae9957fed6a587699ef743a553481fa58db306817eba9ed7893a6e94db808502",
+    "observational_succ/pi_harmonic_lag.py": "c49ef4c14ff98014e5409caeda81643e1a0f720caddb11c9b7e0d9f317d995c4",
+    "scripts/harmonic_mirror_probe.py": "76991d7d2c5b7b31d8d26dd8e5b778843633267be61abad494646993562a821c",
+    "tests/test_harmonic_mirror_repo_integration.py": "ef26430765e2386be8a373e46d734d3a4ddb90c9f8608e4a3af991435b96bd00",
+    "tests/test_harmonic_mirror_succ.py": "52764908758eb94b332e43a70e5d0de2e4f63a72fadddb1ad0c2ce72ca28f261",
+    "tests/test_pi_harmonic_lag.py": "e47aeecf18ad3c0f0c30aad88e2ea7a14316d9cd47ba7bd0dc7559cb066df001"
+  },
+  "status": "EXACT_FINITE_ONLY_NOT_PI_NORMALITY"
+}

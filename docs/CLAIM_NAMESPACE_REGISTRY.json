@@ -14,6 +14,25 @@
   },
   "namespaces": [
     {
+      "namespace": "HARMONIC_MIRROR_SUCC_PI",
+      "bare_prefix": "HMS",
+      "fq_prefix": "HMS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md"
+      ],
+      "id_count": 16,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/REFUTED/CONDITIONAL/OPEN); pi normality OPEN; no Lean kernel authority",
+      "topic": "reciprocal natural successor unipotent J; harmonic Pascal cotransport; prime FUCC logarithmic bracket; original four-pole BBP mirror rays; critical positive harmonic Fejer/vdC lag mixtures; explicit source-selected cyclotomic error budget",
+      "code": [
+        "observational_succ/harmonic_mirror_succ.py",
+        "observational_succ/pi_harmonic_lag.py",
+        "tests/test_harmonic_mirror_succ.py",
+        "tests/test_pi_harmonic_lag.py",
+        "tests/test_harmonic_mirror_repo_integration.py",
+        "scripts/harmonic_mirror_probe.py"
+      ]
+    },
+    {
       "namespace": "NATURAL_LAG_SPECTRAL_FORGE",
       "bare_prefix": "NLG",
       "fq_prefix": "NLG",

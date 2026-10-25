@@ -1,5 +1,18 @@
 # Research claim ledger
 
+[Harmonic mirror SUCC / source-selected π supplement HMS-01–16](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md)
+records exact natural-reciprocal SUCC and shared one-bit Lucas J, harmonic
+Pascal finite differences and prime-FUCC logarithmic transport. Authentic
+BBP forcing is four projective J^8 reciprocal rays with first signed moment
+15, but a positive rational mirror counterfeit of the same leading n^-2
+order has a nonnormal radix orbit. The new positive harmonic Fejér mixture
+has a **proved** 88/1575 source error budget for authenticated growing
+cyclotomic lags and an integer critical logarithmic schedule. Neither
+that bound nor source-generic positivity supplies the still-unproved
+selected mixed Fourier cancellation; the naive 1/k kernel fails positivity.
+[Mathematical proof, negative controls, status](../research/2026-10-24/PI_HARMONIC_MIRROR_SUCC_FORGE.md).
+Pi normality and logical independence remain OPEN; no new Lean authority.
+
 [Natural-lag Fourier forge, NLG-01--18](CLAIM_SUPPLEMENT_NATURAL_LAG_FORGE.md)
 is a research-only additive record of source-correct BBP temporal lags,
 a sharp strictly positive 16^k/n^2 forcing envelope, classical signed

@@ -1,5 +1,23 @@
 # Research roadmap
 
+**2026-10-24 Harmonic mirror SUCC / critical Fourier lag continuation.**
+[HMS claim supplement](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md) and
+[rigorous mirror/Fejér dossier](../research/2026-10-24/PI_HARMONIC_MIRROR_SUCC_FORGE.md).
+Projective J=[[1,0],[1,1]] conjugates natural successor to x/(1+x)
+and is also the Lucas binary incidence generator in a distinct representation.
+Harmonic H_n is the accumulated mirror cocycle, giving a classical alternating
+Pascal identity; prime FUCC moves harmonic coordinates by log p+O(1/n).
+Authentic four-pole BBP forcing comprises four J^8 index rays with moment
+cancellation m0=0,m1=15, and a *changed* rational mirror forcing with the
+same n^-2 coefficient has a nonnormal selected orbit: mirror symmetry alone
+cannot imply normality. Correct harmonic Fejér block mixtures are positive;
+naive signed 1/k lag weights fail. They pay actual BBP source forcing error
+through a critical K_N~log_16 N+3 log_16 log_16 N horizon, but a source-selected
+weighted cyclotomic Fourier saving remains UNVERIFIED; π normality OPEN.
+Next: establish a genuinely source-specific signed estimate at these lags,
+with full original four-pole law and integer carry, not only a change of
+positive kernel. Prior NLG/CYC03 results retained and cross-referenced.
+
 **2026-10-24 Operation One-Shot: anchored natural-carrier cyclotomic lags.**
 [Research dossier](../research/2026-10-24/PI_ONE_SHOT_NATURAL_CARRIER_SPECTRAL_FORGE.md)
 proves authentic BBP lag error 0<R_(n,k)<(16^k-1)/(64n^2), sharp at
