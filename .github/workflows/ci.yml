@@ -67,6 +67,8 @@ jobs:
           PY
       - name: Run all mathematical, logic, quantum, source and hostile tests
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Replay Euler--Mascheroni exact source and completed-Li certificates
+        run: python scripts/euler_mascheroni_probe.py --verify research/2026-10-24/euler_mascheroni_validation/probe_receipt.json
       - name: Replay exact categorical repair and cross-model bridge receipt
         run: |
           python scripts/categorical_model_bridge_probe.py > "$RUNNER_TEMP/categorical-model-bridge.json"

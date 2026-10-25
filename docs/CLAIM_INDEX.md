@@ -149,6 +149,14 @@ to a first polynomial collision saving, with the branch-loss premise open.
 There is no new selected BBP asymptotic bound. Pi normality and
 pi-specific independence remain open; no new Lean authority is asserted.
 
+**2026-10-24 Euler--Mascheroni research:**
+[EMS-01--28](CLAIM_SUPPLEMENT_EULER_MASCHERONI.md) ·
+[synthesis and recent-work crosswalk](../research/2026-10-24/EULER_MASCHERONI_SYNTHESIS.md).
+Finite cutoff repair, affine Hurwitz refinement, actual BBP regulator limits,
+two harmonic time scales, completed Li certificates and a uniform cutoff
+bound. Paper theorems and exact finite evidence are separate; selected
+pi cancellation and all-degree Li positivity remain unproved.
+
 **2026-10-21 Duck → Lean → π research:** [execution report](../research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md) · [exact kernel receipt](../research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md) · [DUCK-01–28](CLAIM_SUPPLEMENT_DUCK_PRINCIPLE.md) · [dependency ledger](DUCK_PI_DEPENDENCIES.json). Observable quotients, generated finite all-word certificates, the classical BBP identity and the actual π orbit transport have exact formal statements. Explicit Fourier/discrepancy transport and positive rational-shadow counterfeits are paper results. The current receipt identifies which source revisions compiled. **π-specific cancellation and π normality remain OPEN; RH/ABC bounds here do not close them.**
 
 2026-10-22 research: [Prime Bridge PBR-01–20](CLAIM_SUPPLEMENT_ARITHMETIC_ER_EPR.md)

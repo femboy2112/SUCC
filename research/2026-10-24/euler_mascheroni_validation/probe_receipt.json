@@ -1,0 +1,384 @@
+{
+  "RH_proved": false,
+  "actual_character_windows": {
+    "asymptotic_cancellation_proved": false,
+    "authority": "rational interval certificate for precisely four finite windows",
+    "exact_zero_quarter_half_turn_controls_passed": true,
+    "instrument": "80-term Machin; Taylor order 16; phase bits 64; outward box bits 60",
+    "rigorous_nonmonotonicity": "abs(B2(128)) > abs(B2(32))",
+    "rows": [
+      {
+        "N": 32,
+        "h": 1,
+        "imag": [
+          "277246061/200000000000",
+          "693115153/500000000000"
+        ],
+        "modulus": [
+          "3568897637/100000000000",
+          "35688976371/1000000000000"
+        ],
+        "modulus_decimal": [
+          "0.035688976370",
+          "0.035688976371"
+        ],
+        "modulus_squared": [
+          "636851517/500000000000",
+          "254740607/200000000000"
+        ],
+        "p": 2,
+        "real": [
+          "35662044247/1000000000000",
+          "4457755531/125000000000"
+        ]
+      },
+      {
+        "N": 32,
+        "h": 1,
+        "imag": [
+          "81593957523/1000000000000",
+          "20398489381/250000000000"
+        ],
+        "modulus": [
+          "18131342659/200000000000",
+          "5666044581/62500000000"
+        ],
+        "modulus_decimal": [
+          "0.090656713295",
+          "0.090656713296"
+        ],
+        "modulus_squared": [
+          "1643727933/200000000000",
+          "4109319833/500000000000"
+        ],
+        "p": 3,
+        "real": [
+          "39510324741/1000000000000",
+          "19755162371/500000000000"
+        ]
+      },
+      {
+        "N": 128,
+        "h": 1,
+        "imag": [
+          "-16121692407/250000000000",
+          "-64486769627/1000000000000"
+        ],
+        "modulus": [
+          "32638205683/500000000000",
+          "65276411367/1000000000000"
+        ],
+        "modulus_decimal": [
+          "0.065276411366",
+          "0.065276411367"
+        ],
+        "modulus_squared": [
+          "106525247/25000000000",
+          "4261009881/1000000000000"
+        ],
+        "p": 2,
+        "real": [
+          "-10122570027/1000000000000",
+          "-5061285013/500000000000"
+        ]
+      },
+      {
+        "N": 128,
+        "h": 1,
+        "imag": [
+          "-1104737953/20000000000",
+          "-55236897649/1000000000000"
+        ],
+        "modulus": [
+          "30979428357/500000000000",
+          "12391771343/200000000000"
+        ],
+        "modulus_decimal": [
+          "0.061958856714",
+          "0.061958856715"
+        ],
+        "modulus_squared": [
+          "153555997/40000000000",
+          "1919449963/500000000000"
+        ],
+        "p": 3,
+        "real": [
+          "-14033754517/500000000000",
+          "-28067509033/1000000000000"
+        ]
+      }
+    ],
+    "source": "original zero-initial four-pole BBP, exact rational circle states",
+    "source_horizon": 384
+  },
+  "authority": "exact finite identities and rational interval certificates; paper limits separate",
+  "bbp_regulator": {
+    "analytic_exponent_zero_boundary": "15/8",
+    "changed_exponent_is_changed_forcing": true,
+    "cofinal_limit_authority": "paper proof; not inferred from a finite computation",
+    "cofinal_limit_s1_over_m_N2_power_m": "15/16",
+    "exact_finite_Lerch_refinement_cases": 18,
+    "independent_Machin_strictly_inside": true,
+    "insufficient_precision_guard": "insufficient digits for the large Hurwitz cancellation",
+    "literal_exponent_zero_prefix_N32": "0",
+    "original_BBP_pi_N24": [
+      "3926990816987241548078304229/1250000000000000000000000000",
+      "31415926535897932384626433833/10000000000000000000000000000"
+    ],
+    "unregulated_B1_N64": [
+      "1692998924429/500000000000",
+      "3386091029027/1000000000000"
+    ]
+  },
+  "completed_li": {
+    "all_degree_positivity_proved": false,
+    "completion": "actual Gamma, pole normalization, and log(pi) channels retained",
+    "construction": "integer successor sums, elementary log bounds, monotone tails; full Gamma/poles",
+    "counterfeit_source_failure": "no ordinary absolutely convergent Dirichlet series (paper proof)",
+    "coupled_gamma0_sensitivity": "1/2",
+    "cutoff": 512,
+    "degree": 3,
+    "finite_jet_counterfeit": {
+      "RH_proved": false,
+      "changes_arithmetic_source": true,
+      "off_line_anchors": [
+        "3/4",
+        "1/4"
+      ],
+      "original_zeta_counterexample": false,
+      "preserves_completed_reflection": true,
+      "preserves_entire_order_at_most_one": true,
+      "same_li_coefficients_through": 3,
+      "same_stieltjes_constants_through": 2,
+      "same_xi_jet_through": 3
+    },
+    "fixed_arch_gamma0_sensitivity": "1",
+    "li_enclosures": [
+      {
+        "decimal_enclosure": [
+          "0.02260726",
+          "0.02358384"
+        ],
+        "enclosure": [
+          "1130363/50000000",
+          "147399/6250000"
+        ],
+        "n": 1
+      },
+      {
+        "decimal_enclosure": [
+          "0.07805857",
+          "0.10663776"
+        ],
+        "enclosure": [
+          "7805857/100000000",
+          "333243/3125000"
+        ],
+        "n": 2
+      },
+      {
+        "decimal_enclosure": [
+          "0.09777334",
+          "0.31750374"
+        ],
+        "enclosure": [
+          "4888667/50000000",
+          "15875187/50000000"
+        ],
+        "n": 3
+      }
+    ],
+    "stieltjes_enclosures": [
+      [
+        "57623878451/100000000000",
+        "578191909511/1000000000000"
+      ],
+      [
+        "-39454812297/500000000000",
+        "-6672539681/100000000000"
+      ],
+      [
+        "-11925838091/250000000000",
+        "5661163171/200000000000"
+      ]
+    ],
+    "strictly_positive_through": 3
+  },
+  "euler_mascheroni": {
+    "Machin_enclosure_strictly_inside": true,
+    "compensated_value": "115481/176400",
+    "exact_boundary_correction": "121/896",
+    "finite_refinement": {
+      "N": 7,
+      "a": "1/8",
+      "anomaly": "35/2",
+      "composite_multiplier_is_allowed": true,
+      "exact_equality": true,
+      "p": 6,
+      "s": 3
+    },
+    "fixed_finite_moment_counterfeits": [
+      {
+        "changes_source": true,
+        "first_changed_moment": 1,
+        "positive_perturbation_change": "1/384",
+        "preserved_moment_degrees": [
+          0,
+          0
+        ]
+      },
+      {
+        "changes_source": true,
+        "first_changed_moment": 2,
+        "positive_perturbation_change": "1/7680",
+        "preserved_moment_degrees": [
+          0,
+          1
+        ]
+      },
+      {
+        "changes_source": true,
+        "first_changed_moment": 4,
+        "positive_perturbation_change": "1/2580480",
+        "preserved_moment_degrees": [
+          0,
+          3
+        ]
+      },
+      {
+        "changes_source": true,
+        "first_changed_moment": 7,
+        "positive_perturbation_change": "1/13495173120",
+        "preserved_moment_degrees": [
+          0,
+          6
+        ]
+      }
+    ],
+    "gamma_enclosure_N128": [
+      "577210578669/1000000000000",
+      "288620429839/500000000000"
+    ],
+    "omitted_boundary_mutant_rejected": true,
+    "positive_Gram_leading_minors": [
+      "4062781/12700800",
+      "96069933267576615901/18438931083460608000000",
+      "11844428591333690757915272754698308709521/2833284829171748260214742397747200000000000000"
+    ],
+    "positive_kernel_is_not_Weil_form": true,
+    "quarter_Hurwitz_pi_N64": [
+      "1570766124797/500000000000",
+      "628330487297/200000000000"
+    ],
+    "raw_pair_N7_r2": "733273/1411200",
+    "repeated_exponent_Gram_determinant": "0"
+  },
+  "independent_external_referee": false,
+  "new_Lean_authority": false,
+  "pi_normality_proved": false,
+  "schema_version": 1,
+  "source_baseline_main": "e648df3e4fca73ab6b942232b5ca4b310e9cac08",
+  "source_manifest": {
+    "observational_succ/bbp_source_memory.py": {
+      "git_blob_sha": "c178b5c714bcdcb4dafc0d112c6aca172e44bcb6",
+      "sha256": "dd439f0a2231399d2a0ea4cf0e40a1e399338537723c468e688b0ac7d860fb54"
+    },
+    "observational_succ/euler_bbp_regulator.py": {
+      "git_blob_sha": "22b5fe976dc16a8945c2b72f5acaa77f0970fd44",
+      "sha256": "bbeb9bb8ab79b2447a9f93a29cf176b6f6074c69596fc86d84ef61366a30e824"
+    },
+    "observational_succ/euler_gamma_li_bridge.py": {
+      "git_blob_sha": "564482865f622585576c4bf213aa74c5c9853161",
+      "sha256": "01e14853751bb9c3ae172b31d34cbb443dc5fe4b2c54a1bb5ff8d31b6849140a"
+    },
+    "observational_succ/euler_mascheroni_succ.py": {
+      "git_blob_sha": "7c28f55f216d7bbd47775b3e524342354c30b74b",
+      "sha256": "50e3f049019d3891b06ce55ccb5c4efab4d7e6b4c62f932ca82453b4cfc6e1fb"
+    },
+    "observational_succ/gamma_character_bridge.py": {
+      "git_blob_sha": "02cb32fb65123b8b64c4a680ce10a9b2c669aa2c",
+      "sha256": "32bc599e4f5aba59bd62a73cfd349a4264d5cd2062332dbe5070591cdb21a0d8"
+    },
+    "observational_succ/observer_reflection.py": {
+      "git_blob_sha": "587f08baf239d41cb208c994ef4151742a55f5f4",
+      "sha256": "d03fb9678ef092127bcad9680acc7353f90dbc02db7ed9784c2c67cf67c8f174"
+    },
+    "observational_succ/pi_source_collision.py": {
+      "git_blob_sha": "dad6f36ad7dc2a057b0e086338a082568fb29486",
+      "sha256": "c3d1868624c3547124fd2cf33da35e10e8c48bec7922095cad83fb446f18a777"
+    },
+    "observational_succ/pi_source_genesis.py": {
+      "git_blob_sha": "88b04cdd96d3268e1de58046819b5b2e12da4c46",
+      "sha256": "147dcb1b42b0de157c55385896cb1b15b17c1bb4ba14ea6fb8effed24ed62cf1"
+    },
+    "observational_succ/source_prime_certificates.py": {
+      "git_blob_sha": "c4b08cf070959d334b0607e4d371d57afdcccfe1",
+      "sha256": "827b157f217d4cf10fa6b6d18c066864c856b9cfcb31a766020d8fb5b5c2e6fa"
+    },
+    "observational_succ/suzuki_arch_intervals.py": {
+      "git_blob_sha": "4f8e82440afe6434c238d7f7652c9edfd40e1bd0",
+      "sha256": "403d9b2bd473602d08cb25b58f9db46d55521ec06d99082d5e1ce320f59c5365"
+    },
+    "scripts/euler_mascheroni_probe.py": {
+      "git_blob_sha": "27a02ac0734f160801e0c19958a467a60d3892d9",
+      "sha256": "d1559272808136ee15151660ddc4dd3655fa9cd3d7b765c7357281a23121e87c"
+    },
+    "tests/test_euler_bbp_regulator.py": {
+      "git_blob_sha": "036d4409a7947214147c29e83a78d55e064f5595",
+      "sha256": "b395c71522643732731923b2c25e2c22a9ea8b238c3444f0b1abf79fa31a0761"
+    },
+    "tests/test_euler_gamma_li_bridge.py": {
+      "git_blob_sha": "7cf9b586257f3d90e08ec5fa0525605c7ea5c34f",
+      "sha256": "32c172ef5d0d69ed2ffc309077be6861ee43b49bfa99dad9ff32800de1acf202"
+    },
+    "tests/test_euler_mascheroni_succ.py": {
+      "git_blob_sha": "5afefce54e0efa05b11eebd3f6509ae1574e798c",
+      "sha256": "59c66223037a42e184bc688127a241fbf5bff8b1a8bdee5d17728d56a27eea24"
+    },
+    "tests/test_gamma_character_bridge.py": {
+      "git_blob_sha": "e15b88df98671ab209e2f6f7b670ebc217f81f64",
+      "sha256": "41325ae8aaef712c01d625486e1de3a8e6d023f75d42c93e21cc415d4240ddf8"
+    }
+  },
+  "two_clocks": {
+    "counterfeit_is_not_BBP_source": true,
+    "counterfeit_ordinary_mean_at_65535": "-2245/13107",
+    "epsilon": "1/64",
+    "event_cutoff": 4096,
+    "lower_exceeds_four_fifths": true,
+    "one_time_dilation_counterfeit": [
+      {
+        "B2": [
+          "352566519/100000000000",
+          "3525665191/1000000000000"
+        ],
+        "B2_absolute_envelope": "5/256",
+        "B3": [
+          "145373922147/500000000000",
+          "58149568859/200000000000"
+        ],
+        "N": 256
+      },
+      {
+        "B2": [
+          "721122343/1000000000000",
+          "90140293/125000000000"
+        ],
+        "B2_absolute_envelope": "5/1024",
+        "B3": [
+          "288127960579/1000000000000",
+          "14406398029/50000000000"
+        ],
+        "N": 1024
+      }
+    ],
+    "source_to_pi_h1_window_bounds_N32": {
+      "2": "33/917504",
+      "3": "11/258048"
+    },
+    "total_variation_certified_lower_outward": [
+      "861014001609/1000000000000",
+      "86101400161/100000000000"
+    ]
+  }
+}

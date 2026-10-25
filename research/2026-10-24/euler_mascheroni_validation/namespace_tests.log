@@ -1,0 +1,20 @@
+test_census_sees_ph_in_two_files (tests.test_claim_namespace_collisions.GuardTests.test_census_sees_ph_in_two_files) ... ok
+test_no_unregistered_prefix_collisions (tests.test_claim_namespace_collisions.GuardTests.test_no_unregistered_prefix_collisions) ... ok
+test_bare_ph01_disambiguates_not_merges (tests.test_claim_namespace_collisions.PhCollisionTests.test_bare_ph01_disambiguates_not_merges) ... ok
+test_existing_claims_include_unambiguous_CFS (tests.test_claim_namespace_collisions.PhCollisionTests.test_existing_claims_include_unambiguous_CFS) ... ok
+test_invalid_type_and_reversed_prefix (tests.test_claim_namespace_collisions.PhCollisionTests.test_invalid_type_and_reversed_prefix) ... ok
+test_nonexistent_number_rejected_even_with_correct_prefix (tests.test_claim_namespace_collisions.PhCollisionTests.test_nonexistent_number_rejected_even_with_correct_prefix) ... ok
+test_ph_fqids_are_distinct (tests.test_claim_namespace_collisions.PhCollisionTests.test_ph_fqids_are_distinct) ... ok
+test_ph_resolved_collision_entry (tests.test_claim_namespace_collisions.PhCollisionTests.test_ph_resolved_collision_entry) ... ok
+test_unknown_namespace_raises (tests.test_claim_namespace_collisions.PhCollisionTests.test_unknown_namespace_raises) ... ok
+test_wrong_prefix_must_not_mint_a_fake_ph_claim (tests.test_claim_namespace_collisions.PhCollisionTests.test_wrong_prefix_must_not_mint_a_fake_ph_claim) ... ok
+test_every_supplement_file_exists_on_disk (tests.test_claim_namespace_collisions.RegistryShapeTests.test_every_supplement_file_exists_on_disk) ... ok
+test_registry_loads_and_schema_version (tests.test_claim_namespace_collisions.RegistryShapeTests.test_registry_loads_and_schema_version) ... ok
+test_sm_census_finds_the_two_actual_sources_only (tests.test_claim_namespace_collisions.SmCollisionTests.test_sm_census_finds_the_two_actual_sources_only) ... ok
+test_sm_claims_are_distinct_and_existing_only (tests.test_claim_namespace_collisions.SmCollisionTests.test_sm_claims_are_distinct_and_existing_only) ... ok
+test_sm_namespace_entries_and_explicit_resolution (tests.test_claim_namespace_collisions.SmCollisionTests.test_sm_namespace_entries_and_explicit_resolution) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.042s
+
+OK

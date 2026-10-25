@@ -123,6 +123,18 @@ Neither source premise is proved. A terminal-scale saving cannot replace
 all-scale control, and base-3 symmetry of the base-16 law is distinct from
 base-3 normality. [DBT claim supplement](CLAIM_SUPPLEMENT_DYADIC_BASE_TRANSPORT.md).
 
+**2026-10-24 Euler--Mascheroni checkpoint.**
+[The source-interface round](../research/2026-10-24/EULER_MASCHERONI_SYNTHESIS.md)
+proves finite cutoff repair, coherent Hurwitz refinement, an authentic BBP
+regulator tail, a two-time-window equivalence, and a uniform completed-Li
+cutoff bound. The next smaller pi target is an explicit vanishing bound for
+the original $h=1$ doubling harmonic time window; one mode and one scale
+would be partial progress, not normality. The RH target is a sharper
+source-derived signed remainder across growing degree with actual completion
+fixed. Classical Li positivity/Nyman closure and the selected-source
+all-character cancellation remain unpaid global obligations. The current
+collision and harmonic-lag routes retain their original scope.
+
 **Duck / π research checkpoint (2026-10-21):** [execution and proof obligations](../research/2026-10-21/DUCK_PI_EXECUTION_REPORT.md), [typed dependency ledger](DUCK_PI_DEPENDENCIES.json), [exact kernel receipt](../research/2026-10-21/DUCK_PI_KERNEL_RECEIPT.md). Actual BBP source transport and finite structural certificates are distinguished from the still-open source-specific Fourier estimate.
 
 **2026-10-23 research verdict.** [Carry the Truth](../research/2026-10-23/SOURCE_FAITHFUL_SYNTHESIS.md)
