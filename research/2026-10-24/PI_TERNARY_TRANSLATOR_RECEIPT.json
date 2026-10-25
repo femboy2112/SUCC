@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "assertions": 5523,
+  "categories": {
+    "no_base3_denominator_below4": 3,
+    "no_power3_denominator_below3": 320,
+    "denominator3_power_condition": 160,
+    "denominator4_dyadic_value": 80,
+    "denominator4_scaled_value": 80,
+    "base81_origin_newton": 32,
+    "base81_origin_valuation": 32,
+    "base81_full_grid_valuation": 272,
+    "base81_reset_zero": 3,
+    "base81_reset_newton": 48,
+    "base81_reset_grid_valuation": 816,
+    "base81_reset_cm_forcing": 507,
+    "base31_profile_repair": 72,
+    "base81_local_transport": 65,
+    "base81_kernel_positive": 1001,
+    "base81_eighth_power_bound": 1001,
+    "base31_kernel_norm": 1001,
+    "eighth_power_sharp_integer": 1,
+    "weak_symmetry_control": 1,
+    "base81_machin_positive_remainder": 28
+  },
+  "sample": {
+    "U2": "205826/4095",
+    "Z1": "38599/2457",
+    "Z1_dropped_carry": "106/2457"
+  },
+  "boundaries": [
+    "Finite exact checks only; universal claims have paper proofs.",
+    "No real collision or same-law invariance estimate is asserted."
+  ]
+}

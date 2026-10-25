@@ -858,6 +858,24 @@
         "scripts/joint_primary_observers_probe.py",
         "scripts/pascal_rank_process_probe.py"
       ]
+    },
+    {
+      "namespace": "PI_TERNARY_PASCAL_GEOMETRY",
+      "bare_prefix": "TPG",
+      "fq_prefix": "TPG",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_TERNARY_PASCAL.md"
+      ],
+      "id_count": 28,
+      "status": "RESEARCH (PROVED PAPER/CLASSICAL/EXACT FINITE/REFUTED/CONDITIONAL/OPEN); no new Lean authority",
+      "topic": "weighted ternary Pascal, sharp filter denominators, positive all-prime dyadic differentials, coherent chart and binary clock transport, base81 source profile, finite carry boundaries and weaker phase symmetry",
+      "code": [
+        "observational_succ/pi_ternary_pascal.py",
+        "scripts/pi_ternary_pascal_probe.py",
+        "scripts/pi_ternary_convex_probe.py",
+        "scripts/pi_ternary_carry_calibration.py",
+        "scripts/pi_ternary_translator_calibration.py"
+      ]
     }
   ],
   "resolved_collisions": [

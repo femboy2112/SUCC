@@ -1,0 +1,401 @@
+{
+  "status": "EXACT_FINITE_PASSED",
+  "assertions": 3313,
+  "counts": {
+    "all_ternary_powers_small_denominator_excluded": 128,
+    "alternating_cylinders": 63,
+    "alternating_mass_Haar": 63,
+    "base81_carry": 48,
+    "base81_local_transport": 97,
+    "base81_machin_kernel": 90,
+    "base81_mahler": 96,
+    "base81_modular_readout": 96,
+    "base81_noninvariance": 1,
+    "base81_origin_valuation": 96,
+    "base81_permutation": 10,
+    "calibration_base81_difference_profile": 216,
+    "calibration_ternary4_difference_profile": 216,
+    "denominator3_endpoint_cycle": 64,
+    "dropped_carry_mutant": 1,
+    "extended_base81_difference_profile": 144,
+    "extended_ternary4_difference_profile": 144,
+    "forcing_profile_differs": 6,
+    "literal_source": 1,
+    "odd_multiplier_cylinders": 48,
+    "odd_sign_mutant": 1,
+    "positive8_carry": 48,
+    "positive8_local_transport": 97,
+    "positive8_machin_kernel": 90,
+    "positive_dimension_noninvariance": 1,
+    "positive_pascal_growing_error": 1,
+    "reset_initial": 6,
+    "reset_mahler": 288,
+    "reset_recurrence": 288,
+    "ternary4_carry": 48,
+    "ternary4_local_transport": 97,
+    "ternary4_machin_kernel": 90,
+    "ternary4_mahler": 96,
+    "ternary4_modular_readout": 96,
+    "ternary4_origin_valuation": 96,
+    "ternary4_permutation": 10,
+    "ternary5_carry": 48,
+    "ternary5_local_transport": 97,
+    "ternary5_machin_kernel": 90,
+    "weighted_row": 97
+  },
+  "elapsed_seconds": 16.959736007003812,
+  "parent": "6e8fa8b77886b13f1f533ed8083fd88c849d14b3",
+  "ranges": {
+    "difference_calibration": "starts0..8,orders1..24",
+    "difference_extended": "starts19,31,64,orders25..72",
+    "kernel_calibration": "starts0,4,8,orders0..24",
+    "kernel_extended": "starts19,31,64,orders25,31,41,56,72",
+    "mahler_origin": "orders1..96",
+    "permutations": "moduli2..1024"
+  },
+  "split_boundary": "Extended independent-oracle region, not an untouched statistical holdout; constructor explored some overlapping valuations before registration.",
+  "comparison_rows": [
+    {
+      "ternary_depth": 16,
+      "quarter_cover": "4294967296",
+      "older_cover": "152587890625",
+      "base81_cover": "81",
+      "quarter_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 222,
+          "denominator_bits": 225,
+          "sha256_binary_rational": "79214342390ceb86857404b3394f89afb68358686463169bce4fb79c59c9c5a6",
+          "outward_decimal": [
+            "0.1759605733910492417867",
+            "0.1759605733910492417868"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 229,
+          "denominator_bits": 231,
+          "sha256_binary_rational": "24ee9b13f791e7ba9fed8e58a03f83bb9450e811e58d254f471da174e4b2e1b3",
+          "outward_decimal": [
+            "0.1759605734219815112916",
+            "0.1759605734219815112917"
+          ]
+        }
+      ],
+      "base81_origin_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 128,
+          "denominator_bits": 131,
+          "sha256_binary_rational": "b8f7a95a5b206c5c1f7390d2e1a28e3dfbb6935fb7651d9d8e3e9f2da0f0fecb",
+          "outward_decimal": [
+            "0.1894988945099462097861",
+            "0.1894988945099462097862"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 136,
+          "denominator_bits": 139,
+          "sha256_binary_rational": "8b039ca3f3f69b0509e2aed4650ba126d93fda07a91f9cfcd65827cf93a2586a",
+          "outward_decimal": [
+            "0.1894988949155013256271",
+            "0.1894988949155013256272"
+          ]
+        }
+      ],
+      "base81_shift2_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 141,
+          "denominator_bits": 150,
+          "sha256_binary_rational": "74314096c086b6efe693fd420943d6b232fa6f5f424a1ed86e2762c73c480cc1",
+          "outward_decimal": [
+            "0.002071010745191862932244",
+            "0.002071010745191862932245"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 151,
+          "denominator_bits": 160,
+          "sha256_binary_rational": "36111a1f5c3848882e8d3e065593b383de8bc32ef51ee6e37376ca2d3ec0fbb3",
+          "outward_decimal": [
+            "0.002071010967452340018287",
+            "0.002071010967452340018288"
+          ]
+        }
+      ]
+    },
+    {
+      "ternary_depth": 64,
+      "quarter_cover": "340282366920938463463374607431768211456",
+      "older_cover": "542101086242752217003726400434970855712890625",
+      "base81_cover": "43046721",
+      "quarter_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 711,
+          "denominator_bits": 714,
+          "sha256_binary_rational": "4adb52a8b88feec5909051841eb14442ea59dcaa00955aefcb9527e8977c8ca2",
+          "outward_decimal": [
+            "0.1563212018054025637387",
+            "0.1563212018054025637388"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 728,
+          "denominator_bits": 730,
+          "sha256_binary_rational": "0c6e78a0f508b212432c51fe0fc17f2dc1888ee93b326b399791000b2874ae99",
+          "outward_decimal": [
+            "0.1563212018056210611861",
+            "0.1563212018056210611862"
+          ]
+        }
+      ],
+      "base81_origin_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 342,
+          "denominator_bits": 345,
+          "sha256_binary_rational": "37f3d419c751e256453872e101d4caa872d863c09c3865a153b8614c4c59b107",
+          "outward_decimal": [
+            "0.1752568298912648208819",
+            "0.1752568298912648208820"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 365,
+          "denominator_bits": 368,
+          "sha256_binary_rational": "8d07cfa89dd000a209b716f3b1b614143dbbf2cf5051eaeecb2b039f0dea961a",
+          "outward_decimal": [
+            "0.1752568300958872906262",
+            "0.1752568300958872906263"
+          ]
+        }
+      ],
+      "base81_shift2_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 348,
+          "denominator_bits": 358,
+          "sha256_binary_rational": "b08f9bc8ed5e3d4555bac635dfda8767a0783e4f1e18a8d68a8782f516a5e871",
+          "outward_decimal": [
+            "0.0009478198622680470185075",
+            "0.0009478198622680470185076"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 374,
+          "denominator_bits": 384,
+          "sha256_binary_rational": "2de5fd471e59b0b1984784fecfdd85f6c75137a8ced097f73af70f871c3690cd",
+          "outward_decimal": [
+            "0.0009478199860553048056513",
+            "0.0009478199860553048056514"
+          ]
+        }
+      ]
+    },
+    {
+      "ternary_depth": 128,
+      "quarter_cover": "115792089237316195423570985008687907853269984665640564039457584007913129639936",
+      "older_cover": "293873587705571876992184134305561419454666389193021880377187926569604314863681793212890625",
+      "base81_cover": "1853020188851841",
+      "quarter_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 1390,
+          "denominator_bits": 1392,
+          "sha256_binary_rational": "81d458137e77f10868fe740d1e969f15eef4201b4945dcead94a512f73efe094",
+          "outward_decimal": [
+            "0.1457381917879653766896",
+            "0.1457381917879653766897"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 1411,
+          "denominator_bits": 1414,
+          "sha256_binary_rational": "3d2d68fbc3d766e4f202d604a40d83a491bc372b405a37504602144a6cb111cc",
+          "outward_decimal": [
+            "0.1457381917879746521111",
+            "0.1457381917879746521112"
+          ]
+        }
+      ],
+      "base81_origin_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 634,
+          "denominator_bits": 637,
+          "sha256_binary_rational": "41ad84071554e2a6598f50755076933db0c0b0cfb76954c5c999518787a217e4",
+          "outward_decimal": [
+            "0.1642977145375820377158",
+            "0.1642977145375820377159"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 659,
+          "denominator_bits": 661,
+          "sha256_binary_rational": "c27e6ec8c69223f49715c2709a2bd51555fde7cee18315b88a7dbf4d8a0ae112",
+          "outward_decimal": [
+            "0.1642977146307029132219",
+            "0.1642977146307029132220"
+          ]
+        }
+      ],
+      "base81_shift2_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 656,
+          "denominator_bits": 667,
+          "sha256_binary_rational": "5eecc7904d494706510a38278b86cf74c8f68f6716640c15e1407bdc25978203",
+          "outward_decimal": [
+            "0.0003736158182059110040564",
+            "0.0003736158182059110040565"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 666,
+          "denominator_bits": 677,
+          "sha256_binary_rational": "91774c00a22065a4b0bffa5ffe3a641308bc35d531b14f08159d6f5896aec26a",
+          "outward_decimal": [
+            "0.0003736158818127279498671",
+            "0.0003736158818127279498672"
+          ]
+        }
+      ]
+    },
+    {
+      "ternary_depth": 256,
+      "quarter_cover": "13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096",
+      "older_cover": "86361685550944446253863518628003995711160003644362813850237034701685918031624270579715075034722882265605472939461496635969950989468319466936530037770580747746862471103668212890625",
+      "base81_cover": "3433683820292512484657849089281",
+      "quarter_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 2659,
+          "denominator_bits": 2662,
+          "sha256_binary_rational": "126fdb237059520c191b7d8316437d71d0bdd4375f67c33d6dc41be78e7c4bbf",
+          "outward_decimal": [
+            "0.1352569037576399499413",
+            "0.1352569037576399499414"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 2676,
+          "denominator_bits": 2678,
+          "sha256_binary_rational": "fb354df2514c02361eae495c41aa4f1f4f4d7a88d58a8a55f2b798b861d652e3",
+          "outward_decimal": [
+            "0.1352569037576402835695",
+            "0.1352569037576402835696"
+          ]
+        }
+      ],
+      "base81_origin_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 1240,
+          "denominator_bits": 1243,
+          "sha256_binary_rational": "4a1cc65484f1aa946a9dd8600867e7d1e99263e847097a2f4378930e3df7b81d",
+          "outward_decimal": [
+            "0.1528028698609345377827",
+            "0.1528028698609345377828"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 1273,
+          "denominator_bits": 1275,
+          "sha256_binary_rational": "df56cd2a3c2a1c7b341d66f158fd3916308fd04a10b93585c978e3612c41830e",
+          "outward_decimal": [
+            "0.1528028698900217900590",
+            "0.1528028698900217900591"
+          ]
+        }
+      ],
+      "base81_shift2_error": [
+        {
+          "sign": 1,
+          "numerator_bits": 1256,
+          "denominator_bits": 1269,
+          "sha256_binary_rational": "cd09906ebb3b5a36f6ba6bc1af80c27d3104cd048aaba5d200ec01907fddf17b",
+          "outward_decimal": [
+            "0.00009065850250013970984543",
+            "0.00009065850250013970984544"
+          ]
+        },
+        {
+          "sign": 1,
+          "numerator_bits": 1249,
+          "denominator_bits": 1263,
+          "sha256_binary_rational": "a56c4d5c2fc1bab664da63c55e9afe32441553697cc5e9d81ae4f6e7194223b1",
+          "outward_decimal": [
+            "0.00009065852596278124712361",
+            "0.00009065852596278124712362"
+          ]
+        }
+      ]
+    }
+  ],
+  "controls": {
+    "biased_binary_half": "3/4",
+    "tripled_half": "33/52",
+    "base81_half": {
+      "sign": 1,
+      "numerator_bits": 103,
+      "denominator_bits": 104,
+      "sha256_binary_rational": "2a0391d279735b1f935a18f3a5e4e8e347d9dae5fd888efa815850f0b352bc56",
+      "outward_decimal": [
+        "0.5460907544944651172983",
+        "0.5460907544944651172984"
+      ]
+    },
+    "positive8_order128_error": [
+      {
+        "sign": 1,
+        "numerator_bits": 1520,
+        "denominator_bits": 1512,
+        "sha256_binary_rational": "81b87f1d903b5aa0abb9453f3e14896b01035f4eeed515552ac04c94299cfa52",
+        "outward_decimal": [
+          "317.2097625339824063985",
+          "317.2097625339824063986"
+        ]
+      },
+      {
+        "sign": 1,
+        "numerator_bits": 1550,
+        "denominator_bits": 1542,
+        "sha256_binary_rational": "4f1288dd3674b059387bb2533a4ca7aa7823c19f246034370e37173a71dbc4d6",
+        "outward_decimal": [
+          "317.2099147627864101066",
+          "317.2099147627864101067"
+        ]
+      }
+    ]
+  },
+  "source_hashes": {
+    "observational_succ/pi_ternary_pascal.py": "32823cfabfca58498424d2ac13f83e3e3a8049640bf0530f6cddccec2e669b96",
+    "tests/test_pi_ternary_pascal.py": "845d73f602e8b28fb096898fae2230015bb004397d5fd44e723e3198409ebc7c",
+    "scripts/pi_ternary_pascal_probe.py": "353c561199c157e6ca30acc42a609e947366054cfba7f8ca8c2515dc8907c1ad",
+    "scripts/pi_ternary_carry_calibration.py": "08b93f6296a5cc9761b8fadab8152ef099e269e9f738daa0291912c6f316b061",
+    "observational_succ/pi_pascal_kernel.py": "ec8993d85c30a2c8c2b56c40d4084e27050e5fac608517b9281562d957c38dc9",
+    "observational_succ/pi_pascal_source.py": "df0a291acc9b36241657dd046267b95b77269d33695181a3fae9a7467d8b6222",
+    "scripts/pi_pascal_probe.py": "691fd736aa2520b01f35b6ed8df78b83cccfe0a678bfe8d29355b2c11ef6c90c",
+    "research/2026-10-24/PI_TERNARY_HOLE_CONTRACT.md": "b4f0ba8afb1b6d7e5de382436165b3245cee2c66204cbdc2a7ab2ff23453c8cb",
+    "research/2026-10-24/PI_TERNARY_CONSTRUCTOR.md": "ddaf40647cd048630492108ca448bae5375fed5339c8d295a4598f90301460ef",
+    "research/2026-10-24/PI_TERNARY_TRANSLATOR.md": "1af04ac1b3b45a31223881c7b166f17754ef1818810ebef8a01785de5823eff5",
+    "research/2026-10-24/PI_TERNARY_ADVERSARY.md": "d70cf36e0590f20b7392b8f132160fb41dcf2e4fb44b79e2b9182d61ed1ef726"
+  },
+  "unproved": [
+    "authentic real collision exponent",
+    "same-law tripling orbase81 symmetry",
+    "pi normality"
+  ]
+}
