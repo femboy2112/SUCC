@@ -1,5 +1,16 @@
 # Research claim ledger
 
+The proposed [Contextual Zero Backbone, CZB-01–12](CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md)
+adds a *foundations-level*, finite source-context observer: a current
+uncertainty fiber, evidence-relative zero ideal, exact probes and movement,
+resource-bounded adaptive reachability with an independent policy checker,
+and relative gauge-centered potentials. Its
+[model/proof dossier](../research/2026-10-25/CONTEXTUAL_ZERO_NAVIGATION_RECEIPT.md)
+separates finite verified model statements from actual physical measurements
+and from universal mathematics. It is stacked over CZR #290, not independently
+an accepted SUCC core theorem; π normality, RH and virtual-particle ontology
+remain **UNVERIFIED / NOT CLAIMED**.
+
 [Harmonic mirror SUCC / source-selected π supplement HMS-01–16](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md)
 records exact natural-reciprocal SUCC and shared one-bit Lucas J, harmonic
 Pascal finite differences and prime-FUCC logarithmic transport. Authentic

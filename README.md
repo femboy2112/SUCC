@@ -1,5 +1,71 @@
 # Observational SUCC
 
+**Selected-phase forge (2026-10-25, stacked on #301):**
+[proof dossier](research/2026-10-25/PI_SELECTED_PHASE_FORGE.md) ·
+[PSF claim ledger](docs/CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md).
+The authentic orbit has a proved logarithmic **absolute** loss from maximal
+Fourier reinforcement, using exact Green cancellation and a published
+irrationality bound. Sparse conductor-birth carries can also be removed with
+a proved spectral comparison at width growing like log time to the power
+3/2. Positive carry/tower controls expose the necessary vanishing-tail
+condition. Eight finite Lean declarations are checked. **The signed sums
+are not proved sublinear; pi normality remains open.**
+
+**Operation Spectral Purity (2026-10-25, stacked on #296):**
+[proof dossier](research/2026-10-25/OPERATION_SPECTRAL_PURITY.md) ·
+[OSP claim ledger](docs/CLAIM_SUPPLEMENT_SPECTRAL_PURITY.md).
+At a prescribed width growing like the square root of log time, all
+conductor-birth innovations have a proved vanishing total contribution.
+The signed estimate on conductor-flat steps remains open. A sharper Green
+bound transports purity at every sublinear width; simultaneous prefix/jet
+countermodels and exact selected-versus-trace failures constrain shortcuts.
+Ten finite real-kernel theorems have local Lean authority. **Pi normality
+is not proved.**
+
+**Internal SUCC matrix walk / phase-source frontier (2026-10-25, stacked draft):**
+[exact mathematical dossier](research/2026-10-25/SUCC_INTERNAL_MATRIX_WALK.md) ·
+[IMW-01–13 proof authority](docs/CLAIM_SUPPLEMENT_SUCC_INTERNAL_MATRIX.md) ·
+[next mathematical research handoff](research/2026-10-25/ASTRA_MATRIX_WALK_NEXT_MOONSHOT.md).
+The external operation remains ordinary successor, while its internal
+Fourier Gram matrix advances by a source-authenticated rank-one update.
+Its purity derivative is an exact Fejér kernel of actual BBP pair phases,
+with a typed bridge to four-bit Walsh/Pascal correlations. A strong source
+limit obstruction is proved: the four-pole twist vanishes at every *fixed*
+frequency but survives on the moving n²-frequency band at angle 15/64;
+its time derivative survives on an n³ band at angle 15/32. An internal
+matrix purity estimate sufficient for π normality is **formulated but
+not proved**. This is **staged on SGO #293, not merged into main**.
+
+
+**Signed Gamma–BBP Green carrier (2026-10-25; stacked research):**
+[full source-typed proof](research/2026-10-25/SIGNED_GAMMA_BBP_GREEN_COHERENCE.md) ·
+[SGO-01–12 claim ledger](docs/CLAIM_SUPPLEMENT_SIGNED_GAMMA_BBP.md).
+A zero-mass signed comparison of the Euler and authentic BBP moment carriers
+has strictly oriented higher moments, while the authentic forward BBP recursion
+and backward Green tail yield a *uniform-in-N* signed Weyl orbit transport
+\(\lvert S_N(h,\pi)-\sum_{n\le N}e^{2\pi ih U_n}\rvert
+<119|h|/648\). Euler \(\gamma\) also splits exactly into eight
+\(\mathrm{SUCC}^8\) residue channels. This is a certified reduction to the
+authentic rational BBP recurrence, **not** the missing cancellation theorem,
+normality of π, signed-Weil positivity, or RH. This remains on a non-main draft
+branch stacked over the Gamma zero/one PR #292.
+
+
+**Gamma zero/one carrier bridge (2026-10-25, stacked draft research):** [source-typed proof dossier](research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md) · [GZB-01–13 claim ledger](docs/CLAIM_SUPPLEMENT_GAMMA_ZERO_ONE_BRIDGE.md). The additive successor, normalized logarithmic unit, shifted Euler–Mascheroni finite corrections, and the authentic BBP moment source now share a positive [0,1] carrier. All-dimensional Hankel dominance and a strict finite-moment/endpoint-jet counterfeit theorem are proved under declared domains. This does **not** establish signed π-orbit cancellation, π normality or RH. **Staged on contextual-zero research, not merged into main.**
+
+**Foundational research: contextual zero and navigable observation (2026-10-25).**
+[Contextual Zero Backbone](docs/CONTEXTUAL_ZERO_BACKBONE.md) ·
+[scoped CZB-01–12 claims](docs/CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md) ·
+[finite source/model receipt](research/2026-10-25/CONTEXTUAL_ZERO_NAVIGATION_RECEIPT.md).
+An observer retains a roughly known position (a possible-state set), a journal
+of justified zero-relations, a finite probe/action budget, and a desired
+target. Typed observations refine justified relations; lawful movement
+transports its possible positions; an independently checked adaptive policy
+finds a route when one is guaranteed in the *declared* toolkit. Source labels
+and model simulations are not actual physical attestation. This addition is
+**research-staged over CZR #290, not yet accepted into main**; neither QFT
+vacuum ontology nor π normality/RH follows from it.
+
 **Coherent Main X — the π Gearbox (2026-10-24, draft research).** The current
 consolidated round folds the full open π-source frontier (PRs #266, #268–#287;
 ten ancestry-minimal leaves, all 21 histories preserved) onto one authenticated

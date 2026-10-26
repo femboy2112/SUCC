@@ -1,5 +1,22 @@
 # Claim Index
 
+**2026-10-25 selected-phase continuation on #301:**
+[PSF-01--14](CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md),
+[dossier](../research/2026-10-25/PI_SELECTED_PHASE_FORGE.md).
+An authentic logarithmic absolute loss from maximal Fourier reinforcement,
+sparse birth-carry spectral transport at a prescribed wider window, sharp
+clock comparison, and stronger source-labelled countermodels. Eight finite
+Lean declarations are checked; the analytic threshold is not numerically
+extracted. Sublinear signed cancellation and pi normality remain OPEN.
+
+**2026-10-25 Operation Spectral Purity:**
+[OSP-01--14](CLAIM_SUPPLEMENT_SPECTRAL_PURITY.md),
+[dossier](../research/2026-10-25/OPERATION_SPECTRAL_PURITY.md).
+Prescribed-window conductor-birth removal, full-sublinear spectral Green
+transfer, exact relative matrix traces, simultaneous prefix/jet/odd-source
+countermodels, and ten finite Lean kernel declarations. Conductor-flat
+signed cancellation and pi normality remain OPEN.
+
 **2026-10-24 harmonic mirror SUCC / source-selected π Fourier:**
 [HMS-01–16](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md),
 [research proof and controls](../research/2026-10-24/PI_HARMONIC_MIRROR_SUCC_FORGE.md),

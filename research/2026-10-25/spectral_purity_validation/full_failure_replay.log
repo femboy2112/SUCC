@@ -1,0 +1,17 @@
+test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count) ... ERROR
+
+======================================================================
+ERROR: test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/tests/test_eodcs_meta_choice_descent.py", line 141, in test_exact_probe_receipt_and_independent_count
+    run = subprocess.run(
+          ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/leah/.local/bin/python', 'scripts/meta_choice_descent_probe.py']' returned non-zero exit status 1.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.136s
+
+FAILED (errors=1)

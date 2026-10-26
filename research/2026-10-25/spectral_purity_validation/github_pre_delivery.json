@@ -1,0 +1,80 @@
+{
+  "parent": {
+    "number": 296,
+    "head": "461942c0bf616518e668d236d1c6b1596665a7dd",
+    "branch": "research/succ-internal-matrix-source-2026-10-25",
+    "state": "open"
+  },
+  "parent_workflows": [
+    {
+      "id": 40246498596,
+      "name": "One Object II original source cancellation and zero-shift Schur",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 611,
+      "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40246498596/jobs",
+      "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40246498596/logs",
+      "workflow_id": 385135609
+    },
+    {
+      "id": 40246498628,
+      "name": "Collective observer source and certificate replay",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 489,
+      "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40246498628/jobs",
+      "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40246498628/logs",
+      "workflow_id": 386978686
+    },
+    {
+      "id": 40246498654,
+      "name": "Institute theorem contracts and core Lean",
+      "status": "completed",
+      "conclusion": "success",
+      "run_number": 299,
+      "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40246498654/jobs",
+      "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40246498654/logs",
+      "workflow_id": 388839929
+    },
+    {
+      "id": 40246498603,
+      "name": "Observational SUCC validation",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "run_number": 3979,
+      "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40246498603/jobs",
+      "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40246498603/logs",
+      "workflow_id": 380913247
+    }
+  ],
+  "main_workflows": [
+    {
+      "name": "Observational SUCC validation",
+      "id": 40233047348,
+      "head_sha": "1e3a453e869992961bc2d7f3bb6f2f1ddab38854",
+      "status": "completed",
+      "conclusion": "cancelled"
+    },
+    {
+      "name": "Observational SUCC validation",
+      "id": 40192572797,
+      "head_sha": "1e3a453e869992961bc2d7f3bb6f2f1ddab38854",
+      "status": "completed",
+      "conclusion": "cancelled"
+    },
+    {
+      "name": "Observational SUCC validation",
+      "id": 40163479687,
+      "head_sha": "1e3a453e869992961bc2d7f3bb6f2f1ddab38854",
+      "status": "completed",
+      "conclusion": "cancelled"
+    },
+    {
+      "name": "Observational SUCC validation",
+      "id": 40160944689,
+      "head_sha": "1e3a453e869992961bc2d7f3bb6f2f1ddab38854",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
+}

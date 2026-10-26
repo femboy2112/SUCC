@@ -8,6 +8,49 @@ bridge is the classical ancestral relation: hereditary predicates characterize
 finite reachability. The [observer theorem and counterexamples](CLAIM_SUPPLEMENT_PRINCIPIA_ANCESTRAL.md)
 specify when this reachability survives forgetting source distinctions.
 
+## 0. Contextual zero as a navigable observer foundation (research-stage)
+
+An observer need not begin by possessing a complete field or the desired
+theorem. It begins in a source-contextual uncertainty fiber B of possible
+positions, with a retained record of what has actually been observed, a
+bounded menu of available actions/probes, and a target. **Zero is not an
+untyped metaphysical nothing**: valid relations vanish only under specified
+interpretations. For the coordinate ring R of a finite declared source,
+the currently justified zeros form
+
+$
+I(B)=\{f\in R:f(s)=0\text{ for every }s\in B\}.
+$
+
+If an actualized observation shrinks the possible-state set from B to B',
+then $B'\subseteq B$ implies $I(B)\subseteq I(B')$. Learning can justify
+additional present-tense identities, while a lawful movement can invalidate
+a *local* identity without erasing its earlier witnessed truth. Distinguish
+global source laws from currently observed relations, potential candidates,
+and universally valid algebraic identities.
+
+Finite goal-directed proof/movement policies are source-typed AND/OR plans:
+they must succeed for **every** state still considered possible and every
+admissible observation outcome, paying the declared action costs. Their
+mathematical correctness is relative to the chosen finite field and toolkit;
+no policy, source label or ideal membership is evidence that an external
+physical process has already occurred. The vacuum/virtual-particle language
+may motivate such constructions but is **not** a proposed identity between
+proof terms and quantum-field excitations.
+
+This research-level addition extends existing typed observer/causal records
+without changing prior foundations, and is detailed in
+[Contextual Zero Backbone](CONTEXTUAL_ZERO_BACKBONE.md),
+[finite proofs and controls](../research/2026-10-25/CONTEXTUAL_ZERO_NAVIGATION_RECEIPT.md),
+and [CZB authority labels](CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md).
+The original CZR source-relations branch remains a prerequisite.
+
+## 0b. Zero/one carrier geometry and the finite Gamma defect (research)
+
+The unit of positive real successor has **different coordinate increments**: `(x+1)-x=1` but `log(x+1)-log(x)=log(1+1/x)`, not generally 1. The positive difference `delta(x)=1/x-log(1+1/x)` is a source-typed correction. Accumulating over lawful integer successors yields the translated Euler field `E_1(x)=log x-psi(x)`; at x=1 it is Euler–Mascheroni gamma and satisfies `E_1(x)-E_1(x+1)=delta(x)`. The normalizing condition `E_1(x)->0` as x->infinity eliminates the otherwise arbitrary 1-periodic gauge. The higher derivative tower obeys `E'_r=-r E_(r+1)` and at x=1 gives `-E'_1(1)=zeta(2)-1`, a genuine same-carrier bridge to the Basel value.
+
+The [Gamma zero/one moment dossier](../research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md) constructs a **shared positive moment carrier** for these Euler defects and the original π BBP forcing: `4 H_Gamma <= H_BBP <= 30 H_Gamma` for all finite moment Gram dimensions, with a strictly increasing source-weight ratio from 4 to 30. An exact positive polynomial counterfeit can match any fixed finite moment prefix and finite endpoint jets while changing the π-like resolvent; thus this is a **compatibility geometry**, not unique arithmetic source selection. The normalized 0/1 reference and source-matching/codomain diagrams are *mathematical* constructs, not a proof of physical vacuum particles. Claim authority: [GZB-01–13](CLAIM_SUPPLEMENT_GAMMA_ZERO_ONE_BRIDGE.md). This independent observational foundation does not assume RH or π normality.
+
 ## 1. The initiating distinction
 
 The originating claim is **not** “Hilbert space is logically greater than the integers.” It is: in our empirically modeled physical world, a mathematician and their measuring environment are already physical processes, generally represented using quantum Hilbert-space models, **before** they form mathematical concepts about the world.

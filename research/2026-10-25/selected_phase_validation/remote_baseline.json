@@ -1,0 +1,346 @@
+{
+  "purpose": "Live remote selection audit before pi selected-phase continuation",
+  "fetch": "git fetch origin",
+  "pull_prior_worktree": "git pull --ff-only: Already up to date",
+  "selected_base": {
+    "pr": 301,
+    "sha": "b792caae40dfe777cf7e9d3301b61f1ac0adac41"
+  },
+  "main": "1e3a453e869992961bc2d7f3bb6f2f1ddab38854",
+  "branches": [
+    {
+      "number": 301,
+      "head": "b792caae40dfe777cf7e9d3301b61f1ac0adac41",
+      "branch": "research/mobius-refined-internal-matrix-2026-10-25",
+      "base": "research/spectral-purity-2026-10-25",
+      "title": "[MRMW] Möbius-refined BBP matrix walk: exact CRT strata and signed cancellation obstruction",
+      "updated_at": "2026-10-26T02:02:19Z",
+      "body": "## Operation Möbius Matrix Interferometry (MRMW)\n\n**Research-only DRAFT** stacked on [Spectral Purity #298](https://github.com/femboy2112/SUCC/pull/298), pinned parent dc6b87d3b8790f507d2447cc1a24f0ab0d15104f. Related internal Fourier matrix #296 is upstream; prime resonance #297 is an independent sibling, inspected but **not merged**. The signed four-pole forcing, zero-origin rational source, provenance archive and main remain unchanged. **Pi normality and RH remain OPEN.**\n\n### Exact finite and paper-proved results\n\n1. A source-labelled Gram system indexed by N, H, finite P and prime-power depth k: exact one-step rank-one SUCC extension; width/prime/precision projections commute. Root-of-unity evaluation supplies PSD; the free rational phase group algebra itself is not ordered.\n2. Möbius incidence inversion reconstructs genuine disjoint source atoms from cumulative valuation-threshold matrices. **Negative theorem:** finer conditional Fourier energy increases by an exact sum of squared residuals. At fixed N, p^k>N produces singleton atoms and the trivial upper bound N for *every* source. Only signed source-specific interactions can save selected Weyl sums.\n3. Exact source-conditioned Fejér innovations and weighted marginal recovery, with both signs of defects retained. No bound on the dominant conductor-flat term from #298 is obtained.\n4. Authentic pole occupancy: exactly four classes for p>=7; exact CRT time counts. **Exceptional p=3 and p=5** have periods 9 and 25 and densities 8/9 and 14/25. Exactly 11/225 times avoid both. Complete formulas describe all prime-power reduced-forcing-denominator depths.\n5. Odd-prime ultrametric SUCC state-depth transitions; authentic denominator depth drops occur at (n,p)=(6,3),(51,3),(25,7),(20,13), among others. The positive full-conductor counterfeit has no such drops. These are exact finite source distinctions, not a density or spectral result.\n6. An even sharper hostile control is proved in [this durable PR comment](https://github.com/femboy2112/SUCC/pull/301#issuecomment-6406560346): modified forcing preserves **both** the authentic integer-carry sequence and the entire common-conductor tower, yet its selected Weyl averages converge to 1. It fails the global signed four-pole law and may be negative. This comment has independent local finite replay but is not claimed to be committed tested code.\n\n### Seven committed files\n\n- observational_succ/mobius_refined_matrix.py\n- tests/test_mobius_refined_matrix.py\n- scripts/mobius_refined_matrix_probe.py\n- [Main mathematical dossier](https://github.com/femboy2112/SUCC/blob/research/mobius-refined-internal-matrix-2026-10-25/research/2026-10-25/OPERATION_MOBIUS_MATRIX_INTERFEROMETRY.md)\n- observational_succ/bbp_exceptional_pole_sieve.py\n- tests/test_bbp_exceptional_pole_sieve.py\n- [Exceptional-pole and ultrametric proof dossier](https://github.com/femboy2112/SUCC/blob/research/mobius-refined-internal-matrix-2026-10-25/research/2026-10-25/BBP_EXCEPTIONAL_POLE_SIEVE.md)\n\nHead b792caae40dfe777cf7e9d3301b61f1ac0adac41; earlier staged commit 26bef684237d8f970df1c52ae55af76731edbcdd. Local isolated mathematical tests passed with an explicitly declared minimal parent-interface shim; **hosted native full-repo CI must be read separately**. The earlier commit full workflow was canceled by the newer push. Other successful CI checks do not certify an in-progress full Python workflow. No Lean kernel authority claimed for the new mathematics.\n\n### Exact remaining gate\n\nProve a genuine **all-N signed conductor-flat Fejér/Weyl saving** from the entire unmodified four-pole source and U0=0, retaining p3/p5 cancellations, true integer carries, original n²/n³ moving-frequency boundaries, and hostile initial/forcing controls. Source-blind PSD and coordinate transforms cannot supply this estimate. Do not merge, release or claim pi normality.\n",
+      "ci": [
+        {
+          "id": 40256576543,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40256576565,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40256576474,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40256576544,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40256573674,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "in_progress",
+          "conclusion": null
+        }
+      ]
+    },
+    {
+      "number": 302,
+      "head": "b5a4de9c0446f03b45999eb35e112286564e16c0",
+      "branch": "research/mobius-gamma-boundary-2026-10-25",
+      "base": "research/pi-prime-clock-resonance-killer-2026-10-25",
+      "title": "Boundary twists: Gamma normalization, Euler source identities and BBP endpoint layers",
+      "updated_at": "2026-10-26T02:01:15Z",
+      "body": "The proposed boundary twist has exact Gamma and q-Gamma realizations, but a finite reversed seam selects a different BBP trajectory. This round records the zero-reference interpretation of Euler–Mascheroni with its conversion constants intact, and proves the endpoint effect that distinguishes the simple twist from the earlier tuned controls. **Authentic signed cancellation, pi normality and RH remain OPEN.**\n\nStacked on #297 at `eca4462ee4d62642b15c4af672136aa5bcacd00b`. Sibling #298 was read for current frontier and counterexamples, but not merged. Main and preserved source archives are unchanged.\n\n- Exact reference transport: H_N − log(exp(c) N) tends to gamma − c. Gamma_c(z)=exp(c(z−1)) Gamma(z) sets the logarithmic derivative at one to zero when c=gamma; the BBP Gamma primitive changes only by an explicit scalar, leaving the original forcing intact.\n- A literal reciprocal Gamma successor Q(a+1)=a/(2Q(a)). The unchanged Euler cells sum to gamma normally and log(4/pi) with alternating signs; a dyadic Gamma decomposition has a proved positive remainder and rational certificates.\n- The original four-pole source is the logarithmic successor derivative of a Gamma product. Two certified interval routes expose its canonical (15/8)gamma contribution and the exact Hurwitz derivative normalization.\n- Complete affine seam classification, authentic-selector gate, and singular cases. The simple sign seam changes the first-birth prime numerator from 4*16^t to 2*16^t and retains a terminal boundary layer.\n- New boundary-layer theorem: the simple seam's normalized coherence deficit is asymptotic to a positive constant/m, unlike the separately tuned order-m^-4 controls. An explicit finite error is certified.\n- q-Gamma formulas for the seam products, with source-erasure controls. General deterministic equivariance proves that any time-preserving source-commuting map fixing the initial zero fixes the selected trajectory pointwise; nonlinearity alone does not evade this obstruction.\n\nClassical identities, inherited obstructions, paper proofs, rational finite certificates and floating-point consistency checks are labeled separately. No academic-priority or new Lean claim.\n\nRead the [main report](https://github.com/femboy2112/SUCC/blob/research/mobius-gamma-boundary-2026-10-25/research/2026-10-25/MOBIUS_GAMMA_BOUNDARY_REPORT.md), [MGB claim supplement](https://github.com/femboy2112/SUCC/blob/research/mobius-gamma-boundary-2026-10-25/docs/CLAIM_SUPPLEMENT_MOBIUS_GAMMA_BOUNDARY.md), [validation](https://github.com/femboy2112/SUCC/blob/research/mobius-gamma-boundary-2026-10-25/research/2026-10-25/MOBIUS_GAMMA_VALIDATION.md), and [next research handoff](https://github.com/femboy2112/SUCC/blob/research/mobius-gamma-boundary-2026-10-25/handoffs/MOBIUS_GAMMA_NEXT_2026-10-25.md).\n\nValidation: **8,448 repository tests passed** in 836.625 seconds. The focused run passed 53 new tests plus 18 existing namespace checks (71 total). Required provenance, observer and ordinal checks passed. The exact receipt hashes 24 construction/authority inputs; generation and independent replay passed, and a false-normality mutation was rejected. Independent 80-digit analytic observations and 144 exact nonlinear-equivariance controls were checked. The first receipt serialization failure and its exact hexadecimal repair are preserved in the validation record.\n\nThe branch was published through the authenticated GitHub app after shell authentication failed. The published Git tree `176c9c37918bf96fd60baa01d91e3662441a6edb` exactly matches the locally validated tree. Hosted CI is separate and is not claimed complete by local validation.",
+      "ci": [
+        {
+          "id": 40257030337,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40257030362,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40257030360,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40257030339,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40257006228,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "in_progress",
+          "conclusion": null
+        }
+      ]
+    },
+    {
+      "number": 300,
+      "head": "9563809982fa93625fb027bcc128f345f214c53c",
+      "branch": "research/carrier-relative-target-descent-2026-10-25",
+      "base": "research/succ-internal-matrix-source-2026-10-25",
+      "title": "Carrier-relative target descent: observable algebra, executable access and certified finite parts",
+      "updated_at": "2026-10-26T01:41:42Z",
+      "body": "## Foundational correction: identify the target, not necessarily the whole hidden carrier\n\nThe author's **indistinguishable-from-true-relative-to-carrier** principle is implemented as a source-typed observational quotient plus target descent. This branch is a companion to the contextual-zero and internal-matrix backbone. It does not modify the independent π proof attempts in #297 or #298.\n\n**Pinned parent:** #296 at `461942c0bf616518e668d236d1c6b1596665a7dd`.\n**Research head:** `9563809982fa93625fb027bcc128f345f214c53c`.\n**No main merge, archival changes, physical attestation, π normality or RH claim.**\n\n### Mathematical content\n\n- A target P factors through observation E exactly when it is constant on every E-fiber. Complete hidden-state reconstruction is unnecessary. A fiber containing both true and false target values remains ambiguous; an empty fiber is incoherent, not vacuously true.\n- Exact finite observer algebra: constants, readout indicators, transition pullbacks and joint products generate precisely all rational functions constant on all-word behavioral classes. A recipe-checked matrix/row-span certificate decides target descent; a separately implemented partition algorithm checks it.\n- **Executable access is a separate condition.** Two destructive probes distinguish every pair of three states, yet no single-copy adaptive policy can identify the original Boolean target. A finite all-first-action merge witness proves this obstruction for every horizon. Making the probes noninvasive repairs access. The planner preserves `(original,current)` source pairs and checks worst-case cost.\n- Two different-unit eyes determine XOR while leaving a hidden tag free. Tests reject false triple gluing, unit/source mismatch, non-transitive tolerance quotients and forged algebra rows.\n- A real target has exact minimax uncertainty equal to half its fiber oscillation. Under compact closed nested fibers and a continuous target, this uncertainty converges to its limiting value without singleton source recovery. Effective rates remain an independent obligation. Normality is not a continuous Boolean target of arbitrary finite digit prefixes; this is not a mathematical unprovability claim.\n- A concrete analytic carrier: for F(s)=a/s²+b+R(s), 0≤R(s)≤Cs², the two-eye contrast (4F(2t)-F(t))/3 identifies b within a sharp width 17Ct²/3. Exact rational Abel readouts recover the known finite part −1/12 using a proved remainder bound t²/240 from classical hyperbolic partial fractions. The ordinary positive series is not redefined.\n\n### Artifacts\n\n- `observational_succ/carrier_relative_targets.py`\n- `observational_succ/carrier_finite_part_observer.py`\n- Three test modules, including a native CZB/compact-fiber/IMW adapter test\n- `scripts/carrier_relative_targets_probe.py` with source-hashed JSON replay\n- [Full proofs](https://github.com/femboy2112/SUCC/blob/research/carrier-relative-target-descent-2026-10-25/docs/CARRIER_RELATIVE_TARGETS.md)\n- [Validation and claim authority](https://github.com/femboy2112/SUCC/blob/research/carrier-relative-target-descent-2026-10-25/research/2026-10-25/CARRIER_TARGET_VALIDATION.md), raw logs and mutation receipt\n- [Parallel-session handoff](https://github.com/femboy2112/SUCC/blob/research/carrier-relative-target-descent-2026-10-25/handoffs/CARRIER_TARGET_DESCENT_2026-10-25.md)\n\n### Actual validation\n\n**29 local tests passed** (23 target/algebra/policy + 6 finite-part). They include all 234 one-instrument binary-output models on up to three states and 1,796 Boolean target tables; 4,096 two-state/two-instrument/target/budget cells checked against a separately implemented policy tree oracle; and 200 two-scale remainder pairs. Source-hashed receipt replay and compileall pass. Flipping the receipt's pi_normality_proved flag is rejected. General mathematical claims have separate paper proofs; enumeration does not establish an infinite theorem.\n\n**Not locally run:** the three native full-repository tests, the full suite, provenance/observer/ordinal gates, or Lean. Local network DNS prevented a full clone; new modules were tested in isolated staging without original-source API shims. Original native interfaces were read via GitHub and the integration tests are committed. Hosted CI is separate and must be inspected on this exact head. No successful hosted status is preclaimed.\n\nClassical lineage: behavioral equivalence/coalgebra, finite function algebras, compactness/profinite cylinders, exact minimax decision trees and two-scale extrapolation. No independent scholarly priority claim. TLICA toolkit-relative phi, source adequacy sigma, access and target truth remain distinct; no universal truth score is computed.",
+      "ci": [
+        {
+          "id": 40255468569,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 40255468586,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40255468597,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40255468747,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40255409799,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "number": 299,
+      "head": "1d5df4509c6e2042406e3067991b33b8b9fd41fe",
+      "branch": "research/mobius-refined-matrix-2026-10-25",
+      "base": "research/succ-internal-matrix-source-2026-10-25",
+      "title": "Möbius-refined matrix: authentic negative interaction, CRT transport budget, and all-partition seed obstruction",
+      "updated_at": "2026-10-26T01:33:31Z",
+      "body": "## Executed research — one source, directed Möbius matrix refinement\n\n**Pinned parent:** PR #296 at `461942c0bf616518e668d236d1c6b1596665a7dd`.\n**Research head:** `1d5df4509c6e2042406e3067991b33b8b9fd41fe`.\n**Ten additive files; no main edits, original-source changes, merge, or release.** Sibling #297 at `eca4462ee4d62642b15c4af672136aa5bcacd00b` was inspected and acknowledged, not imported.\n\n**π normality and RH remain open.** This round implements the requested architecture and proves scoped algebra/transport bounds and hostile obstructions, not the missing asymptotic cancellation.\n\n### Main mathematical results\n\n1. **Authentic directed matrix system.** `RefinedMatrixWalk` verifies the full unwrapped four-pole recurrence and U0=0. One SUCC adds one rank-one Gram term to one prime-depth atom. Product-of-chains Möbius inversion, prefix restriction, frequency restriction, prime deletion and depth clipping commute exactly with retained raw history.\n2. **A necessary correction, on the real BBP source.** Ordered nested innovation energies are nonnegative, but unordered empirical Möbius interactions need not be. At N=3 with original forcing masks5/7, rational interval arithmetic certifies `-0.042062808675 <= interaction <= -0.042062808674 < 0`. Atomic Gram positivity survives. The simpler synthetic contrast is exactly -2/9.\n3. **Exact exceptional-prime source clocks.** First pole-depth densities are 8/9 at p3 and 14/25 at p5, requiring mod9/mod25 rather than merely mod3/mod5. At deeper levels both return to 4/p^k; p>=7 has four disjoint pole classes at every depth; dyadic pole masks are trivial but integral dyadic source digits are retained. Complete CRT atom masses and incomplete-prefix bounds are proved.\n4. **Quantified clock balancing.** With N>=Q and r=N mod Q, actual-time versus actual-sample residue-balanced l1 distance is exactly `delta=2r(Q-r)/(NQ)`. Mean error <=delta, conditional energy error <=2delta, H-character Gram operator error <=Hdelta and purity error <=2H²delta. Thus **H_N Q_N=o(N)** is a sufficient joint schedule for transporting an o(H_N) balanced purity estimate. It does NOT establish that estimate.\n5. **Complete primitive-clock energy budget.** Divisor-Möbius projections select exact additive character orders; their orthogonal energies plus within-residue variance sum exactly to one. The classical gcd identity is acknowledged, including sibling #297's related use. No independence of accumulated prime phases is assumed.\n6. **Uniform all-partition obstruction.** For every finite N>=m and finite prime set P, an explicit odd P-free rational changed seed preserves the *entire original forcing* but puts all phases within 1/(32m²) of zero on [m,N]. Every partition hierarchy has total innovation <5h²/(128m⁴). This is a horizon-dependent countermodel failing U0=0, NOT an infinite counterexample to π. The separate fixed SS-08 changed-forcing nonnormal source has all-partition gain <5h²/(384N).\n\n### Artifacts\n\n- [Full proof dossier](https://github.com/femboy2112/SUCC/blob/research/mobius-refined-matrix-2026-10-25/research/2026-10-25/MOBIUS_REFINED_MATRIX_WALK.md)\n- [Scoped claim ledger](https://github.com/femboy2112/SUCC/blob/research/mobius-refined-matrix-2026-10-25/docs/MOBIUS_MATRIX_CLAIMS.md)\n- [Implementation](https://github.com/femboy2112/SUCC/blob/research/mobius-refined-matrix-2026-10-25/observational_succ/mobius_refined_matrix.py), [41 new tests](https://github.com/femboy2112/SUCC/blob/research/mobius-refined-matrix-2026-10-25/tests/test_mobius_refined_matrix.py), [exact receipt](https://github.com/femboy2112/SUCC/blob/research/mobius-refined-matrix-2026-10-25/research/2026-10-25/MOBIUS_MATRIX_RECEIPT.json)\n- [All numerical rows](https://github.com/femboy2112/SUCC/blob/research/mobius-refined-matrix-2026-10-25/research/2026-10-25/MOBIUS_MATRIX_DIAGNOSTICS.json), [validation and raw log](https://github.com/femboy2112/SUCC/blob/research/mobius-refined-matrix-2026-10-25/research/2026-10-25/MOBIUS_MATRIX_VALIDATION.md)\n- [Next source-selected execution handoff](https://github.com/femboy2112/SUCC/blob/research/mobius-refined-matrix-2026-10-25/handoffs/MOBIUS_MATRIX_NEXT_2026-10-25.md)\n\n### Actually executed validation and limits\n\n**64/64 local tests passed: 41 new +23 unchanged inherited**, in a SHA-pinned **partial source snapshot**. `compileall`, exact receipt `--verify`, and diagnostic replay passed. 60 predetermined authentic numerical rows (3 training,57 holdouts) pass the exploratory E<=4K/N band; three fixed-nonnormal controls fail. These 80-digit observations are not a universal estimate. The authentic negative interaction instead has a rigorous rational enclosure.\n\nAll ten submitted blobs match independently computed local Git blob SHAs. Container Git DNS failed, so connector-backed additive tree/commit publication was used. **Full repository discovery, provenance verifier, observer/ordinal probes, Lean, and exact-head hosted CI are NOT preclaimed.** Run all AGENTS.md gates on a complete installed checkout before promotion. No expensive CI workflow was manually retriggered. No new global claim-ID namespace or scholarly-priority claim is minted.\n\n### Still-missing proof obligation\n\nObtain a uniform signed estimate using the actual zero-selected temporal numerator/prefix, rejecting both changed-seed/exact-forcing and zero-seed/changed-forcing controls. A positive sector decomposition, CRT independence of masks, or a finite successful holdout does not discharge it.",
+      "ci": [
+        {
+          "id": 40254801587,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40254801515,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40254801369,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40254801380,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "cancelled"
+        },
+        {
+          "id": 40254761501,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "number": 298,
+      "head": "dc6b87d3b8790f507d2447cc1a24f0ab0d15104f",
+      "branch": "research/spectral-purity-2026-10-25",
+      "base": "research/succ-internal-matrix-source-2026-10-25",
+      "title": "research: remove BBP conductor-birth innovation and certify spectral-selection obstructions",
+      "updated_at": "2026-10-26T01:01:34Z",
+      "body": "The authentic BBP conductor-growth steps can be removed from the Fejér innovation sum at the prescribed width $H_N=\\max(2,1+\\lfloor\\sqrt{\\lfloor\\log_2N\\rfloor}\\rfloor)$. Their absolute contribution is $O((\\log N)^{-1/2}+(\\log N)^{3/2}/\\sqrt N)$, with a fully explicit finite bound and removal-error modulus $130/\\sqrt{\\lfloor\\log_2N\\rfloor}$ for $\\lfloor\\log_2N\\rfloor\\ge64$. The remaining conductor-flat signed estimate is OPEN; this PR does not prove pi normality.\n\nStacked draft on #296 at `461942c0bf616518e668d236d1c6b1596665a7dd`. The zero anchor, four signed poles, unwrapped source and historical artifacts are retained.\n\n- Proves relative cyclotomic matrix traces fixing the whole past, and certifies two authentic-source failures of selected-embedding domination.\n- Constructs two distinct obstructions: a positive counterfeit with the entire authentic common-conductor tower and maximal reinforcement; and positive rational mutants matching any prescribed finite source prefix and endpoint jet, with globally odd denominators and all fixed leading moving bands, but nonnormal selected seeds. Each records its failed global source assumptions.\n- Improves authenticated Green transport to square-root normalized-energy error at most $\\sqrt{7(H^2-1)/24}/N$, valid for every prescribed $H=o(N)$.\n- Supplies ten locally kernel-checked finite real-kernel Lean declarations, exact rational/cyclotomic instruments, hostile mutations, independent finite holdouts, a claim ledger and the narrowed frontier contract. Analytic and infinite statements remain paper proofs.\n\nValidation: 8,405 repository tests passed in 960.127 s on Python 3.12.3; provenance, observer-foundations and ordinal probes passed. The 50 new focused tests, 55 parent integration tests and 18 namespace tests passed. Exact certificate replay and source hashes matched; a false normality receipt was rejected. Ten declarations passed Lean 4.14.0 with the pinned mathlib dependencies; both false-theorem mutations were rejected. GitHub GFM math-wrapper rendering was audited. The first full run exposed a missing editable install in the fresh worktree; its failure is preserved, the environment was repaired locally, and full discovery then passed. Hosted CI will run on this reviewable head; it is not claimed complete by local validation.\n\nThe main dossier is [Operation Spectral Purity](https://github.com/femboy2112/SUCC/blob/research/spectral-purity-2026-10-25/research/2026-10-25/OPERATION_SPECTRAL_PURITY.md); [validation and failed-attempt receipts](https://github.com/femboy2112/SUCC/blob/research/spectral-purity-2026-10-25/research/2026-10-25/SPECTRAL_PURITY_VALIDATION.md) distinguish local tests, exact finite certificates, finite Lean authority and the still-open analytic estimate. No academic priority claim or external referee certification is made. No merge or release is requested.\n",
+      "ci": [
+        {
+          "id": 40254969005,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "cancelled"
+        },
+        {
+          "id": 40252166414,
+          "name": "Arithmetic wavefront and spectral-response certificates",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40252166435,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40252166433,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "cancelled"
+        },
+        {
+          "id": 40252166470,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40252166472,
+          "name": "Pinned formal kernel and proposition exports",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40252166404,
+          "name": "Orbit clock genesis exact source checks",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40252166421,
+          "name": "Bidirectional SUCC exact arithmetic cut checks",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40252166490,
+          "name": "Source-minimality clock carry renewal exact checks",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40252166451,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40252147521,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "cancelled"
+        }
+      ]
+    },
+    {
+      "number": 297,
+      "head": "eca4462ee4d62642b15c4af672136aa5bcacd00b",
+      "branch": "research/pi-prime-clock-resonance-killer-2026-10-25",
+      "base": "research/succ-internal-matrix-source-2026-10-25",
+      "title": "Prime-clock resonance: gcd compression, sharp coherence boundary and inverse seed arcs",
+      "updated_at": "2026-10-26T00:55:09Z",
+      "body": "The prime-clock plan leaves a correlated complementary BBP source that can undo local subgroup cancellation. This independent arithmetic round sharpens that obstruction while preserving the original four poles, U0=0 and integer lifts. **It does not prove authentic signed cancellation or π normality.**\n\nStacked on #296 at `461942c0bf616518e668d236d1c6b1596665a7dd`; no merge into main and no changes to the concurrent Gram/Fejér branch.\n\n- Exact gcd collapse: synchronized projections satisfy Q_d Q_L=Q_gcd(d,L), hence J_d=J_gcd(d,L). The code removes all source information invisible to the complete prime clock and verifies the three orthogonal sectors in Q[Q/Z].\n- Sharp forcing-only boundary: every exact-forcing window has a modulus deficit at least h²/(1331712m⁴) for m≥11 and m²≥|h|. Explicit odd p-free rational changed-initial controls attain order m⁻⁴, preserving the exact forcing and genuine p-clock. The authentic initialization remains essential.\n- New inverse estimate: exceptionally coherent windows must start in finitely many exponentially narrow, exact source-defined arcs. Finite authentic starts and tuned controls are distinguished; all-prime avoidance is not claimed.\n- Resonant lag descent audit: ordinary mixed differences retain P(16) times the historical state, and a fresh last-endpoint prime survives. Authentic U6−U4 kills the 17-clock but retains the 41-clock. Mixed Green-tail transport has explicit polynomial lag cost, with its growing-frequency debt exposed.\n- Collision audit: explicit finite Fourier-ladder budget and an anti-phase counterfeit using only each authentic allowed denominator grid. The inherited entropy target E=N^o(1) is more permissive than the plan's E=o(log N).\n- A narrow Lean 4.14 finite contraction kernel compiles, with no sorry; incorrect clock-index mutation is rejected. BGK, Hilbert analysis and asymptotics remain outside that formalization.\n\nRead the [main report](https://github.com/femboy2112/SUCC/blob/research/pi-prime-clock-resonance-killer-2026-10-25/research/2026-10-25/PRIME_CLOCK_RESONANCE_REPORT.md), [claim supplement](https://github.com/femboy2112/SUCC/blob/research/pi-prime-clock-resonance-killer-2026-10-25/docs/CLAIM_SUPPLEMENT_PRIME_CLOCK_RESONANCE.md), and [matrix-session handoff](https://github.com/femboy2112/SUCC/blob/research/pi-prime-clock-resonance-killer-2026-10-25/handoffs/PRIME_RESONANCE_TO_MATRIX_2026-10-25.md).\n\nValidation: 34 baseline native tests; 40 new research tests plus 15 namespace checks pass; source-hashed receipt replays exactly; provenance, observer and ordinal probes pass. Full discovery ran 8,390 tests with one inherited subprocess import error because the checkout lacked an editable install. After matching CI's package installation, all 11 affected-module tests and all 40 final research tests passed (51/51). **No second clean one-shot full sweep is claimed.** Raw failed/corrected logs and exact scope are in [validation](https://github.com/femboy2112/SUCC/blob/research/pi-prime-clock-resonance-killer-2026-10-25/research/2026-10-25/PRIME_RESONANCE_VALIDATION.md). Hosted CI is separate and must be inspected on this head.\n\nComplete-period compression and twisted BGK were already inherited MP/CSI results and are not presented as new discoveries. Scholarly novelty is unverified. The remaining proof obligation is selected zero-initial signed decorrelation or a genuine prescribed-scale collision saving.",
+      "ci": [
+        {
+          "id": 40251652146,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40251652142,
+          "name": "Pinned formal kernel and proposition exports",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40251652129,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40251652217,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40251652156,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 40251620866,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "pr301_comment": [
+    {
+      "url": "https://github.com/femboy2112/SUCC/pull/301#issuecomment-6406560346",
+      "body": "## Additional verified obstruction (no new CI run): authentic carries + entire conductor tower still do not select Weyl cancellation\n\n**Result: PAPER-PROVED elementary construction; independent isolated exact-rational replay through N=128; not yet a committed executable module.** It strengthens the existing same-conductor counterfeit and isolates why *the exact four-pole recurrence itself*, beyond the carry and denominator clocks, is essential.\n\nLet the genuine unwrapped zero-anchored sequence be \\(U_0=0,\\ U_n=16U_{n-1}+r(n)\\), with fixed authentic four-pole \\(r(n)\\). Set\n\\[\nQ_0=1,\\qquad Q_n=\\operatorname{lcm}_{1\\le j\\le n}\\operatorname{den}(r(j)),\n\\qquad k_n=\\lfloor U_n\\rfloor.\n\\]\nDefine a **different**, explicitly labelled controlled state and its derived forcing:\n\\[\nV_0=0,\\qquad V_n=k_n+\\frac1{Q_n}\\quad(n\\ge1),\\qquad\nr^*_n=V_n-16V_{n-1}.\n\\]\n\n**(1) Exactly the same full integer-carry sequence.** Since \\(Q_n\\ge15\\), \\(\\lfloor V_n\\rfloor=k_n\\). Thus for every n,\n\\[\nc^*_n=\\left\\lfloor 16\\{V_{n-1}\\}+r_n^*\\right\\rfloor\n=k_n-16k_{n-1}\n=\\left\\lfloor16\\{U_{n-1}\\}+r(n)\\right\\rfloor=c_n.\n\\]\nBoth models have the same \\(U_0=V_0=0\\). This preserves each genuine **rational-state carry**, without falsely calling it an already certified pi digit.\n\n**(2) Exactly the same monotone common conductor at *every* time.** For n=1, \\(r_1^*=k_1+1/Q_1\\) has denominator \\(Q_1\\). For n≥2,\n\\[\nr_n^*=c_n+\\frac{1-16(Q_n/Q_{n-1})}{Q_n}.\n\\]\nThus \\(\\operatorname{den}(r_n^*)\\mid Q_n\\). If a new prime-power layer enters \\(Q_n/Q_{n-1}\\), its prime p divides that quotient, while the displayed numerator is \\(1\\bmod p\\), hence the new layer survives uncanceled in \\(\\operatorname{den}(r_n^*)\\). Inductively\n\\[\n\\boxed{\\operatorname{lcm}_{j\\le n}\\operatorname{den}(r_j^*)=Q_n}\n\\quad\\text{for every n.}\n\\]\n\n**(3) Its selected Weyl sums have *maximal*, not vanishing, normalized modulus.** Every odd prime p≥7 divides the reduced authentic forcing denominator at n=(p+1)/2: one pole factor equals p and the numerator reduces to \\(3/2\\pmod p\\), nonzero. Hence \\(Q_n\\to\\infty\\) by Euclid. For every fixed nonzero integer h,\n\\[\ne(hV_n)=e(h/Q_n)\\longrightarrow1,\\qquad\n\\left|\\frac1N\\sum_{n=1}^N e(hV_n)-1\\right|\n\\le\\frac{7|h|}{N}\\sum_{n=1}^N\\frac1{Q_n}\\longrightarrow0.\n\\]\nSo the controlled sequence is non-equidistributed and satisfies \\(|S_N^*(h)|/N\\to1\\).\n\n**(4) Exact failed hypothesis:** \\(r_n^*\\ne r(n)\\) (already at n=1); altered forcing can become negative (first observed at n=14). It does not satisfy the original four-pole positivity/moment law or the authenticated future Green identity with pi. This is not a counterexample to a theorem using the genuine global source. The control does refute any proposed implication from **only** the full carry history, full conductor tower, positive Gram matrices, and commuting Möbius marginals to signed Fourier cancellation.\n\n**Reproduction scope:** A separately isolated Fraction script checked carry equality, full conductor equality, and the stated source mismatch for n=1..120. Additional seven-group local tests of the exceptional-sieve instrument including this hostile control passed; the carry-control extension is **not** part of commit b792caae or its hosted CI. This comment is the durable falsification receipt, avoiding an extra time-consuming workflow restart.\n\n**Next inference gate:** A legitimate pi-normality proof must use something not preserved by this control, e.g. the exact forcing numerator congruences and their correlations with the authentic zero-selected state, while retaining all p=3/5 cancellations and the signed conductor-flat Fejér debt. No normality claim.\n",
+      "created_at": "2026-10-26T02:00:50Z"
+    }
+  ],
+  "selection_reason": "PR301 retains PR298's proved birth-step removal; PR297 inverse-coherence theorem is independently rederived with source provenance rather than merging sibling implementations.",
+  "normality_proved": false
+}
