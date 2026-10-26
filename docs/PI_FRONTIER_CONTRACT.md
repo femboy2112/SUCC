@@ -227,6 +227,90 @@ the analytic irrationality input or the infinite normality consequence.
 
 ---
 
+## Selected inverse-branch gate — actual carry/arrival comparison (#312 continuation)
+
+This continuation is based on #312 at
+`0c306a889f425418c29cbea3193205fb80c0575e`, with the carry/packet construction
+of sibling #311 inspected at `a34c4484059e667202b97d5ab4102560987b1406`.
+The sibling is not merged. Use $y_n=\{U_n\}$ in this section to distinguish
+the rational state from the Green-corrected $x_n$ in the common objects.
+Put $j_n=\lfloor16y_n\rfloor$, $t_n=\{16y_n\}$ and keep the literal carry
+$c_{n+1}=\lfloor U_{n+1}\rfloor-16\lfloor U_n\rfloor$.
+
+**New proved source estimate.** Scaled spills
+
+$$s_k^{(a)}=\lfloor\{16aU_{k-1}\}+a r(k)\rfloor>0$$
+
+force the next $L_a(k)=\max(0,\lfloor\log_{16}(4(k-1)^2/a)\rfloor)$
+scaled carries to vanish. Thus their count $K_{N,a}$ on $2\le k\le N+1$
+is at most
+
+$$B(N,a)=\min\left(N,R-2+
+\left\lceil\frac{N+2-R}{L_a(R)+1}\right\rceil\right),
+\qquad R=\max(2,1+\lfloor(aN^2)^{1/4}\rfloor),$$
+
+using $B=N$ if $R>N+1$. This proves $B(N,a_N)=o(N)$ for every prescribed
+$a_N=o(N^2)$, without measuring a Fourier coefficient. Let $E,\Delta$ be
+the #312 conditional energies for records $(\lfloor Mt_n\rfloor,j_n)$;
+let $\widetilde E,\widetilde\Delta$ use the actual arrival records
+$(\lfloor My_{n+1}\rfloor,c_{n+1}\bmod16)$. Then, uniformly in $h$,
+
+$$\lvert E-\widetilde E\rvert\le
+\frac{4[B(N,1)+B(N,M)]}{N},\qquad
+\lvert\Delta-\widetilde\Delta\rvert\le
+\frac{32[B(N,1)+B(N,M)]}{N}.$$
+
+Both errors vanish at every preset $M_N=o(N^2)$. At $M=8N^2$, however,
+every authentic bin label changes: the exact positive polynomial for
+$8N^2r(N+1)-1$ proves $K_{N,8N^2}=N$. The subquadratic guarantee cannot
+be extended to every quadratic scale by this argument. This is a statement
+about record changes, not an energy lower bound.
+
+**Narrower parity debt.** Prescribe $M_N=\max(2,\lfloor\log_2N\rfloor)$.
+The carry-sensitive primitive mass in each actual arrival bin is
+$\Phi_b=4/9+\Pr(c_{n+1}\text{ odd}\mid b)/9$. Exactly,
+
+$$\widetilde E_{N,M}(8)=324\sum_b\widetilde p_b(\Phi_b-1/2)^2.$$
+
+Proving this actual conditional variance tends to zero now suffices for
+the original parity-energy target, with a proved $O(1/\log N)$ transport
+error. **The variance estimate is OPEN**, and parity alone is insufficient
+for all branch modes; quarter-turn and higher interactions remain.
+
+**Weaker signed gate retaining cross-bin cancellation.** Put
+$\tau_b=(b+1/2)/M$ and
+
+$$\widetilde C_{N,M}(h)=\frac1N\sum_{n=1}^N
+e\left(\frac{h(c_{n+1}+\tau_{\lfloor My_{n+1}\rfloor})}{16}\right).$$
+
+The original recurrence proves, for all $N,M\ge1$,
+
+$$\left|\frac1N\sum_{n=1}^Ne(hU_n)-\widetilde C_{N,M}(h)\right|
+\le\frac{\pi|h|}{16M}
++\frac{\pi|h|}{8N}\sum_{n=1}^Nr(n+1).$$
+
+Thus a source-derived $\widetilde C_{N,M_N}(h)=o(1)$ for every fixed
+$h\ne0$ at the prescribed growing resolution would close normality.
+That signed bound is **OPEN**; the displayed comparison is not a saving.
+
+**Validated obstructions.** For the actual minimal odd prefix conductor
+$Q_N$, every $M\ge Q_N$ gives $E(h)=1$ and $\Delta=15$. Exact conditioning
+cannot inherit the 16-predecessor Haar gap. A fixed changed-seed history
+with the *entire original forcing* can cancel any prescribed finite band,
+have endpoint irrationality exponent two and donor-level logarithmic
+absolute loss, yet have all conditional energies tend to one at every
+fine growing resolution. It fails the zero selector; it does not refute
+the π target. Neither finite-band tests nor Diophantine type replaces
+the remaining selected conditional or signed estimate.
+
+See the [full proofs](../research/2026-10-26/SELECTED_BRANCH_SYNTHESIS.md)
+and [authority ledger](CLAIM_SUPPLEMENT_SELECTED_BRANCH.md). The inherited
+arbitrary-slow-schedule normality equivalence is explicitly not counted
+as new progress. No improvement to the best authentic signed-modulus
+order is claimed.
+
+---
+
 ## Route A — selected harmonic / cyclotomic saving (#284)
 
 **Statement to prove.** For each fixed nonzero integer $h$, with the authentic

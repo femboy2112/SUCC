@@ -23,6 +23,18 @@ cancellation that would close normality is **OPEN**. **π normality: OPEN. RH: O
 
 ---
 
+**Selected inverse-branch continuation (2026-10-26, stacked on #312):**
+[proof synthesis](research/2026-10-26/SELECTED_BRANCH_SYNTHESIS.md) ·
+[scoped claims](docs/CLAIM_SUPPLEMENT_SELECTED_BRANCH.md) ·
+[validation](research/2026-10-26/SELECTED_BRANCH_VALIDATION.md).
+The authentic forcing bounds the steps on which inverse digits and remainder
+bins differ from literal carries and arrival bins. Their conditional energies
+have a proved vanishing comparison error at every prescribed subquadratic
+resolution; at one quadratic scale every bin label changes. Exact conditioning
+maximizes the authentic branch energies, and stronger same-forcing controls
+separate finite-band cancellation from conditional-energy decay. Ten finite
+Lean declarations are checked. **No new sublinear Weyl bound; π normality OPEN.**
+
 **Selected-phase forge (2026-10-25, stacked on #301):**
 [proof dossier](research/2026-10-25/PI_SELECTED_PHASE_FORGE.md) ·
 [PSF claim ledger](docs/CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md).
