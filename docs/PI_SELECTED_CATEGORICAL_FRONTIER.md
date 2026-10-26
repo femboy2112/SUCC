@@ -89,6 +89,21 @@ $h<H_N$, which is *stronger* than fixed-$h$ Weyl) implies normality via transpor
 4. **Diophantine input alone cannot suffice (Control C).** $\xi=\sum 16^{-2^k}$ has irrationality
    exponent $2$ yet Fourier sums $N+O_h(\log N)$. Any extension must use the zero anchor $U_0=0$
    and the actual source, not just an irrationality bound.
+5. **A fixed positive-proportion relative block loss is insufficient (Main XII, SK2-A1, proved).**
+   For every fixed $c\in(0,1)$ and every positive-density set of width-8 blocks,
+   $|S_B(h)|\le(1-c)|B|$ gives by the triangle inequality only $|S_N(h)|\le(1-c')N$ (linear) and
+   feeds the §2 statistic as $R^2_{N,H}=(1-c)^2(H_N-1)=\Theta(H_N)$, which diverges. Sufficiency
+   needs $c=c_N\to1$ (full relative loss), reachable only via the multiplicative $\times16$
+   frequency-ladder composition or signed $L^2$ cross-block cancellation — **not** additive
+   block accumulation. The DC-5 single-step lemma is moreover capped at $a<1/34$ with an
+   *absolute* loss $<2/289$ (SK2-A2); escape needs the joint phase across $\ge2$ consecutive
+   $\times16$ steps.
+6. **The occupancy baseline is not the gate (Main XII, SK2-TRAP, proved).** The rational
+   $(\mathrm{purity}.\mathrm{coefficient}(0)-H)/H=(H-1)/N$ from the window compression is
+   phase-*blind* (identical for the authentic orbit and the non-normal $\xi=\sum16^{-2^k}$); it is
+   **not** the §2 Weyl statistic (which is the *evaluated* complex quantity and separates the
+   authentic orbit from counterfeits). A rational "$R^2$" read off a coefficient is the collision
+   baseline, never the gate. See `observational_succ/signed_pushforward.py`.
 
 ## 4. How the categorical apparatus must serve §2 (not replace it)
 
@@ -100,6 +115,15 @@ not certify it. The load-bearing constructions (see `docs/CATEGORICAL_OBSERVER_A
   $K_{a,b}=z_a\overline{z_b}$. This retains the cross-stratum signs that positive conditional
   energies hide. The *missing signed term* is the typed obligation whose vanishing (in the
   low-frequency band) is exactly §2 — never assumed from positivity.
+  **Discharged (Main XII, SK2-B/SK2-D) as a NEGATIVE theorem:** $K\mapsto P_fKP_f^{*}$ is an exact
+  coarsening-*invariant* base change ($|S_N(h)|^2=\sum_A|S_A|^2+\sum_{A\neq B}S_A\overline{S_B}$ is
+  conserved), so it is gate-conservative and positivity-blind; the authentic cross term is
+  sign-indefinite. The *one* genuinely new (classical) product is a firewall sharpening: signed
+  amplitude base change holds for every amplitude **iff the square is cartesian** (Mackey);
+  ghost/realization-faithfulness is necessary but **not** sufficient (the redundant-realizer square
+  passes the ghost firewall yet breaks signed transport, defect $-e(1/3)$). A saving still requires
+  a source-derived within-cell coherent-energy bound, which category theory does not supply.
+  Implemented + tested: `observational_succ/signed_pushforward.py`.
 - **Observed time-dependent conjugacy.** $g_n(x)=x-U_n$ conjugates the forced
   $T_n(x)=16x+r(n+1)$ to bare $x\mapsto 16x$, but **transports the observable** $e(hx)\mapsto
   e(h(y+U_n))$. A bare dynamical isomorphism that erases the selected phase is *not* a
@@ -125,8 +149,13 @@ law, never a hard-coded name or opaque equality.
 
 ## 6. The single next discriminating probe (Codex/Astra handoff target)
 
-> Prove a **moderate-coherence inverse theorem** for the authentic orbit: a positive-proportion
-> *relative* Fourier loss on a positive proportion of width-8 blocks, using the zero anchor
-> $U_0=0$ and the exact integer carries — the only identified route past the $a<1/34$ absolute
-> ceiling of DC-5. Target the low-frequency band of §2 directly; do not attempt global Walsh
-> smallness (Control §3.2) or lean on the Diophantine input alone (Control §3.4).
+> **(Sharpened, Main XII.)** Prove the **even-$h$ sub-band** fragment first:
+> $2\sum_{h\text{ even},\,h<H_N}(1-h/H_N)|A_N(h)|^2=o(1)$ using only the $\le3$-order Walsh/Lucas
+> marginals of the flat-carry word — legitimate there because $\widehat g_h(15)=0$ for even $h$
+> (SK2-G). That isolates the odd-$h$ order-4 signed band as the sole irreducible obstruction and
+> routes the rest to the $\times16$ ladder contraction: whether $\limsup_h|A_N(16h)|/|A_N(h)|<1$ for
+> the authentic orbit while **failing** on SS-08, positive-carry #304 and $\xi$, driven by the
+> $15/64$ four-pole resonance (not by $U_0=0$ or the carries, which the controls share). The old
+> "fixed positive-proportion relative loss" target is **insufficient** (SK2-A1): aim at $c_N\to1$.
+> Do not attempt global Walsh smallness (§3.2) or lean on the Diophantine input alone (§3.4).
+> Full handoff: `handoffs/SKELETON_KEY_MAIN_XII_NEXT_2026-10-26.md`.
