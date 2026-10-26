@@ -1,5 +1,28 @@
 # Observational SUCC
 
+**What is SUCC?** A freestanding mathematical theory of how a finite, embodied observer
+constructs knowledge from lawful causal interactions with a *source* — modelled as
+source-labelled observations, successor/FUCC dynamics, and the categorical laws governing
+faithful transport between representations. RH and π-normality are downstream *applications*,
+rigorously separated from the core theory.
+
+**Working moonshot:** base-16 normality of π. Category theory is the scaffolding we use to
+reason toward it — it predicts obligations and obstructions; it is not a substitute for the
+missing arithmetic estimate, and the actual source decides whether its lines describe π.
+
+**Start here (two clicks to the frontier):**
+[π selected-categorical frontier](docs/PI_SELECTED_CATEGORICAL_FRONTIER.md) — exactly what is
+proved, the single open gate, the next probe · [categorical observer
+atlas](docs/CATEGORICAL_OBSERVER_ATLAS.md) — the typed 7-layer reuse map ·
+[claim ledger](docs/CLAIM_LEDGER.md) · [architecture](docs/ARCHITECTURE.md).
+
+**What is proved vs open (honest status):** the authentic BBP orbit has a *proved* logarithmic
+**absolute** Fourier-modulus loss — a modulus bound, **not** $S_N(h)=o(N)$ cancellation; the
+reduction of π base-16 normality to a fixed-$h$ Weyl estimate is proved; the sublinear signed
+cancellation that would close normality is **OPEN**. **π normality: OPEN. RH: OPEN (separate program).**
+
+---
+
 **Selected-phase forge (2026-10-25, stacked on #301):**
 [proof dossier](research/2026-10-25/PI_SELECTED_PHASE_FORGE.md) ·
 [PSF claim ledger](docs/CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md).
