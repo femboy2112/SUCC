@@ -46,6 +46,38 @@
       ]
     },
     {
+      "namespace": "SEINFELD_PHASE_FROBENIUS_COHERENCE",
+      "bare_prefix": "SPH",
+      "fq_prefix": "SPH",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SEINFELD_PHASE.md"
+      ],
+      "id_count": 9,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/REFUTED/OPEN); normality RH OPEN; no Lean kernel",
+      "topic": "Seinfeld null-unit phase root inverse towers, characteristic-2 Frobenius nonreduced mu_2^k, conormal jets, arithmetic prime SUCC/FUCC phase coherence, all-prime potential classification and source-selected mixed-phase countermodels",
+      "code": [
+        "observational_succ/seinfeld_phase.py",
+        "tests/test_seinfeld_phase.py",
+        "scripts/seinfeld_phase_probe.py"
+      ]
+    },
+    {
+      "namespace": "SEINFELD_SUCC_NULL_PROVENANCE",
+      "bare_prefix": "SS",
+      "fq_prefix": "SS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SEINFELD_SUCC.md"
+      ],
+      "id_count": 9,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/NEGATIVE/OPEN); pi normality and RH OPEN; no Lean kernel authority",
+      "topic": "labelled formal zero witnesses; source-SUCC recurrence syzygies and rank; affine SUCC/FUCC null-cycle holonomy; real 16-adic circle inverse fibers versus odd-torsion unique inverse and discontinuity; p-integral Frobenius carry lifts; odd positive four-pole nonnormal counterfeit matching leading BBP 15/(64n^2) coefficient",
+      "code": [
+        "observational_succ/seinfeld_succ.py",
+        "tests/test_seinfeld_succ.py",
+        "scripts/seinfeld_succ_probe.py"
+      ]
+    },
+    {
       "namespace": "HARMONIC_MIRROR_SUCC_PI",
       "bare_prefix": "HMS",
       "fq_prefix": "HMS",

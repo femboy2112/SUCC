@@ -1,0 +1,150 @@
+{
+  "counterfeit": [
+    {
+      "forcing": "527/99",
+      "n": 1,
+      "phase": "32/99",
+      "state": "527/99",
+      "strictly_inside_quarter_to_third": true
+    },
+    {
+      "forcing": "5069/31977",
+      "n": 2,
+      "phase": "320/969",
+      "state": "82685/969",
+      "strictly_inside_quarter_to_third": true
+    },
+    {
+      "forcing": "10477/218025",
+      "n": 3,
+      "phase": "224/675",
+      "state": "921599/675",
+      "strictly_inside_quarter_to_third": true
+    },
+    {
+      "forcing": "66317/14645865",
+      "n": 8,
+      "phase": "4352/13065",
+      "state": "18704582574077/13065",
+      "strictly_inside_quarter_to_third": true
+    },
+    {
+      "forcing": "28389/27945313",
+      "n": 16,
+      "phase": "5632/16899",
+      "state": "103910509367205904252927/16899",
+      "strictly_inside_quarter_to_third": true
+    }
+  ],
+  "frobenius": [
+    {
+      "carry": "0/1",
+      "p": 2,
+      "p_integral": true,
+      "zero": "0/1"
+    },
+    {
+      "carry": "0/1",
+      "p": 3,
+      "p_integral": false,
+      "zero": "0/1"
+    },
+    {
+      "carry": "0/1",
+      "p": 5,
+      "p_integral": false,
+      "zero": "0/1"
+    },
+    {
+      "carry": "0/1",
+      "p": 7,
+      "p_integral": true,
+      "zero": "0/1"
+    }
+  ],
+  "inverse_fibers": [
+    {
+      "circle_predecessors": 16,
+      "depth": 1,
+      "odd_predecessors": 1,
+      "source_zero_included": true
+    },
+    {
+      "circle_predecessors": 256,
+      "depth": 2,
+      "odd_predecessors": 1,
+      "source_zero_included": true
+    },
+    {
+      "circle_predecessors": 4096,
+      "depth": 3,
+      "odd_predecessors": 1,
+      "source_zero_included": true
+    }
+  ],
+  "null_cycles": [
+    {
+      "boundary": {},
+      "holonomy_exact": "0/1",
+      "holonomy_nonexact": "-4/1",
+      "n": 1,
+      "nonzero_edges": 5,
+      "prime": 2
+    },
+    {
+      "boundary": {},
+      "holonomy_exact": "0/1",
+      "holonomy_nonexact": "-19/1",
+      "n": 2,
+      "nonzero_edges": 6,
+      "prime": 3
+    },
+    {
+      "boundary": {},
+      "holonomy_exact": "0/1",
+      "holonomy_nonexact": "-82/1",
+      "n": 3,
+      "nonzero_edges": 8,
+      "prime": 5
+    }
+  ],
+  "rank": [
+    {
+      "depth": 1,
+      "step_rank": 1,
+      "with_anchor_rank": 2,
+      "with_macro_rank": 1
+    },
+    {
+      "depth": 2,
+      "step_rank": 2,
+      "with_anchor_rank": 3,
+      "with_macro_rank": 2
+    },
+    {
+      "depth": 4,
+      "step_rank": 4,
+      "with_anchor_rank": 5,
+      "with_macro_rank": 4
+    },
+    {
+      "depth": 8,
+      "step_rank": 8,
+      "with_anchor_rank": 9,
+      "with_macro_rank": 8
+    },
+    {
+      "depth": 16,
+      "step_rank": 16,
+      "with_anchor_rank": 17,
+      "with_macro_rank": 16
+    }
+  ],
+  "schema": "seinfeld-succ-exact-v1",
+  "source_hashes": {
+    "observational_succ/seinfeld_succ.py": "7fd89cfea9f5f753c1250ad7bd5e6205b92e03e86f9c99a8dfa98cd958d9edb4",
+    "tests/test_seinfeld_succ.py": "9ba21d4663255b2eb53a2180216b0172b142523e6bddf0a3bff86d0763fe570b"
+  },
+  "source_main": "1e3a453e869992961bc2d7f3bb6f2f1ddab38854",
+  "status": "finite exact only; pi normality and RH OPEN"
+}

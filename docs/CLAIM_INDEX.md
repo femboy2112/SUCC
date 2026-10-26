@@ -17,6 +17,21 @@ transfer, exact relative matrix traces, simultaneous prefix/jet/odd-source
 countermodels, and ten finite Lean kernel declarations. Conductor-flat
 signed cancellation and pi normality remain OPEN.
 
+**2026-10-25 Seinfeld SUCC II — phase shifts, Frobenius thickening and prime coherence:**
+[SPH-01–09](CLAIM_SUPPLEMENT_SEINFELD_PHASE.md) · [full mathematical dossier](../research/2026-10-25/SEINFELD_SUCC_PHASE_SHIFT_AND_FROBENIUS.md) · [exact receipt](../research/2026-10-25/SEINFELD_SUCC_PHASE_RECEIPT.json).
+The user's identity `1=(2−1)^2` motivates retaining rewrite provenance: forgetting the unit anchor creates 2^k roots of unity under iterated squaring; in characteristic 2 the roots coalesce into a nonreduced scheme of rank 2^k. Chosen prime phases can twist affine SUCC squares but fail automatic cross-prime commutativity. Coherent all-prime phase connections are exact potentials on the multiplicative subsystem, while the authentic BBP source supplies a reference-dependent mixed-difference diagnostic. A nonnormal counterfeit retains coherent phases, refuting generic phase-to-normality implications. **π normality/RH OPEN; no Lean authority.**
+
+**2026-10-25 Seinfeld SUCC — the mathematical reach of nothing:**
+[SS-01–09](CLAIM_SUPPLEMENT_SEINFELD_SUCC.md),
+[formal and arithmetic proofs](../research/2026-10-25/SEINFELD_SUCC_NOTHING_THEOREMS.md),
+[finite rational receipt](../research/2026-10-25/SEINFELD_SUCC_FINITE_RECEIPT.json).
+Zero evaluation does not erase labelled generators or affine path cycles;
+backward circle fibers have 16^k choices while odd-torsion inverse is
+unique but not real-continuous. A positive four-pole, odd-denominator
+non-normal counterfeit with matching BBP n^-2 coefficient kills generic
+mixing inferences; authentic source-selected π cancellation remains OPEN.
+No new Lean authority.
+
 **2026-10-24 harmonic mirror SUCC / source-selected π Fourier:**
 [HMS-01–16](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md),
 [research proof and controls](../research/2026-10-24/PI_HARMONIC_MIRROR_SUCC_FORGE.md),

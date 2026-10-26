@@ -11,6 +11,19 @@ and from universal mathematics. It is stacked over CZR #290, not independently
 an accepted SUCC core theorem; π normality, RH and virtual-particle ontology
 remain **UNVERIFIED / NOT CLAIMED**.
 
+[Seinfeld SUCC II, SPH-01–09](CLAIM_SUPPLEMENT_SEINFELD_PHASE.md) expands the original zero-witness program to phase lifts. Backward unit-square roots, conormal first jets, the nonreduced Frobenius `mu_(2^k)` fiber, and chosen p-clock affine phases have exact proofs, with an explicit 2/3-turn obstruction to independently assigning phases to primes 2 and 3. A complete prime-square-flat phase family must be the gradient of a global potential by unique factorization, so the multiplicative subsystem has no intrinsic phase holonomy. Relative SUCC/FUCC mixed phases depend on the declared SUCC reference; a full gradient remains flat. The nonnormal SS-08 counterfeit has coherent phases whose character means tend to **1**, not 0. Source-selected π Fourier/collision estimates remain **OPEN**. [Proof dossier](../research/2026-10-25/SEINFELD_SUCC_PHASE_SHIFT_AND_FROBENIUS.md).
+
+[Seinfeld SUCC, SS-01–09](CLAIM_SUPPLEMENT_SEINFELD_SUCC.md)
+studies formal zero witnesses, dependent macro recurrence syzygies, labelled
+null cycles, real-circle inverse fiber growth, odd-torsion inverse rigidity
+and its real discontinuity, and typed characteristic-p Frobenius carries.
+The exact positive odd-denominator four-pole counterfeit with
+\`U*_n=16^n/3-1/((8n+1)(8n+3))\` has the same BBP leading 15/(64n²)
+forcing coefficient yet a trapped nonnormal phase orbit. The original BBP
+forcing is different. All claims are source-scoped classical/paper/finite or
+negative results; new authentic selected Fourier/collision savings are
+**OPEN**, as are π normality and RH. [Full derivation](../research/2026-10-25/SEINFELD_SUCC_NOTHING_THEOREMS.md).
+
 [Harmonic mirror SUCC / source-selected π supplement HMS-01–16](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md)
 records exact natural-reciprocal SUCC and shared one-bit Lucas J, harmonic
 Pascal finite differences and prime-FUCC logarithmic transport. Authentic

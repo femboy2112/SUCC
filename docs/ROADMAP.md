@@ -1,3 +1,5 @@
+**2026-10-25 Seinfeld SUCC phase frontier (stacked draft).** [SPH-01–09](CLAIM_SUPPLEMENT_SEINFELD_PHASE.md) retains arithmetic rewrite paths under exact rational-turn phases, reconstructs all-prime-flat phase connections from a common potential, and distinguishes relative mixed SUCC/FUCC phases from gauge-invariant curvature. The next genuinely decisive obligation is source-selected signed cancellation with a separately proved transport to the existing π Frontier Contract. The odd-denominator nonnormal counterfeit shares flat phase interfaces and defeats automatic statistical inferences. No π/RH theorem or formal kernel authority is claimed.
+
 # Research roadmap
 
 **2026-10-24 Harmonic mirror SUCC / critical Fourier lag continuation.**
