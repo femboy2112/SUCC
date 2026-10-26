@@ -1,0 +1,17 @@
+/workspace/scratch/522028ddd5ab/PrimeClockProjection_mutant.lean:105:43: error: unsolved goals
+case equal.calc.step
+α : Type u
+inst✝ : SumAlgebra α
+B L : Nat
+u v : Nat → α
+periodic : ∀ (b j : Nat), b < B → j < L → u (b * L + j) = u j
+j : Nat
+hj : j < L
+⊢ (u j * finiteSum B fun b => v (b * L + j)) = u (j + 1) * finiteSum B fun b => v (b * L + j)
+/workspace/scratch/522028ddd5ab/PrimeClockProjection_mutant.lean:125:4: error: invalid 'calc' step, left-hand side is
+  finiteSum L fun j => u j * finiteSum B fun b => v (b * L + j) : α
+but is expected to be
+  finiteSum L fun j => u (j + 1) * finiteSum B fun b => v (b * L + j) : α
+'ObservationalSUCC.PrimeClockProjection.periodic_contraction' depends on axioms: [propext, sorryAx, Quot.sound]
+'ObservationalSUCC.PrimeClockProjection.zero_fiber_annihilation' depends on axioms: [propext, sorryAx, Quot.sound]
+'ObservationalSUCC.PrimeClockProjection.equal_fibers_equal_coupling' depends on axioms: [propext, sorryAx, Quot.sound]

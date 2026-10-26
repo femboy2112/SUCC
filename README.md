@@ -22,6 +22,19 @@ countermodels and exact selected-versus-trace failures constrain shortcuts.
 Ten finite real-kernel theorems have local Lean authority. **Pi normality
 is not proved.**
 
+**Boundary twists and Gamma (2026-10-25, stacked draft research):**
+[proofs and plain-language synthesis](research/2026-10-25/MOBIUS_GAMMA_BOUNDARY_REPORT.md) ·
+[scoped MGB claims](docs/CLAIM_SUPPLEMENT_MOBIUS_GAMMA_BOUNDARY.md) ·
+[validation](research/2026-10-25/MOBIUS_GAMMA_VALIDATION.md).
+The same Euler-defect source sums to Euler–Mascheroni's constant normally and
+to $\log(4/\pi)$ with an alternating twist. Exact Gamma and q-Gamma formulas
+describe reciprocal successor and boundary normalization. A finite reversed
+BBP seam has a terminal layer with order $m^{-1}$ coherence loss, distinct
+from the carefully tuned order $m^{-4}$ controls. Shifting a logarithmic
+reference moves a finite constant into the conversion scale; it does not
+erase the source boundary difference. **Authentic signed cancellation,
+π normality and RH remain open.** Stacked on #297; main is unchanged.
+
 **Internal SUCC matrix walk / phase-source frontier (2026-10-25, stacked draft):**
 [exact mathematical dossier](research/2026-10-25/SUCC_INTERNAL_MATRIX_WALK.md) ·
 [IMW-01–13 proof authority](docs/CLAIM_SUPPLEMENT_SUCC_INTERNAL_MATRIX.md) ·
