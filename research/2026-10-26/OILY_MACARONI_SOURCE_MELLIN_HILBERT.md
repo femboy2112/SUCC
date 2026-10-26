@@ -260,6 +260,10 @@ lim_(N->infty) N^-2 sum_(n,m<=N) K_(n,m)(0,0)
 
 The complex Gram above is not only positive bookkeeping: on short multiplicative time windows a **genuine source-matched Hilbert projection** recovers the authentic unweighted Weyl sum up to an explicit rational error, uniformly in the selected frequency. The independently proved Fisher geometry gives `1-H(a,b) <= log(a/b)^2` for `a,b>=16`; partitioning time into cube-root-size windows after an early source cutoff gives a full **O(N^(-1/3))** source-preserving signed transport. This repairs the previous missing *transport* arrow, NOT the signed *cancellation* theorem. Detailed proof, all assumptions, exact constants and the false-coherence controls: [Oily log-clock source-to-Weyl addendum](OILY_LOG_CLOCK_HILBERT_TRANSPORT.md). A theorem of the form `tilde A_N(h)=o(1)` for the new source-weighted signed window sum remains independently OPEN.
 
+### 6b. Actual positive virtual-field SUCC and a source-dependent gamma free energy
+
+The field itself advances by an exact **Boltzmann–Gibbs/Feynman–Kac reweighting** `mu_(n+1)(dx)=e^(-8x) mu_n(dx)/(r(n+1)/r(n))`. The logarithm of the normalization is an additive free-energy cocycle whose source-to-harmonic finite part converges to `log(3008/225)-2 gamma`, with no arbitrary gamma input. This is the precise multiplicative→logarithmic current-source transition proposed by the author; it still gives no signed Weyl cancellation and **does not** force the golden coupling. [Proof and finite source certificates](OILY_POSITIVE_FIELD_GAMMA_COCYCLE.md).
+
 ## 7. Hard negative controls and the golden-selection problem
 
 - **Not source-forced golden:** the exponential baseline Laplace fixed point `lambda=1/(1+lambda)` is unique *for that map*. The authentic BBP boundary law is Gamma(2), whose own Laplace fixed point solves `s=(1+s)^-2` and is **not** lambda. The user's proposed two-carrier semantic matching is an admissible extra observation rule, not a uniqueness theorem for π.
@@ -284,7 +288,7 @@ For the original Weyl sum, obtain a separate validated inverse/dual transform fr
 
 ## 9. Validation and authority
 
-Core implementation: `observational_succ/oily_macaroni_transfer.py` (exact rationals + optional mpmath, no modification of `authentic_r`). Tests: `tests/test_oily_macaroni_transfer.py`. Exact identities checked with Fraction, complex tests distinguish numerical observations from certificates. Local isolated tests prior to publication passed **23/23** with a declared minimal shim for the original source and rational-log APIs; these are NOT repository-native or hosted CI results. Confirm native interfaces and run full provenance/observer/ordinal/Lean checks on the combined branch before merging. Historical frozen source archives remain unchanged.
+Core implementation: `observational_succ/oily_macaroni_transfer.py` (exact rationals + optional mpmath, no modification of `authentic_r`). Tests: `tests/test_oily_macaroni_transfer.py`. Exact identities checked with Fraction, complex tests distinguish numerical observations from certificates. Local isolated tests prior to publication passed **26/26** with a declared minimal shim for the original source and rational-log APIs; these are NOT repository-native or hosted CI results. Confirm native interfaces and run full provenance/observer/ordinal/Lean checks on the combined branch before merging. Historical frozen source archives remain unchanged.
 
 ### Mathematics attribution and external references
 

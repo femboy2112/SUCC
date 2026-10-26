@@ -314,6 +314,35 @@ def multiscale_hilbert_transport_budget(N):
             "source_selected_saving_proved":False}
 
 
+
+def positive_field_step(n):
+    """Exact normalized Feynman-Kac / Boltzmann-Gibbs SUCC factor.
+
+    mu_(n+1)(dx) = exp(-8x)*mu_n(dx)/Z_n,
+    Z_n=E_mu_n[exp(-8X)] = r(n+1)/r(n), 0<Z_n<1.
+    This reweights math paths; it is NOT a physical realization frequency.
+    """
+    checked_n(n)
+    return authentic_r(n+1)/authentic_r(n)
+
+
+def finite_field_free_energy_data(N):
+    """Finite exact unnormalized free energy vs harmonic SUCC reference.
+
+    Sum_(n=1)^(N-1)(-log Z_n - 2/n)
+      = log(r(1)/r(N)) - 2 H_(N-1)
+      --> log(3008/225) - 2*EulerGamma.
+    Return rational source ratio, harmonic sum, and limiting rational constant
+    inside logarithm.  No gamma/log values inserted as finite source inputs.
+    """
+    checked_n(N)
+    harmonic=sum((F(2,k) for k in range(1,N)),F())
+    return {"N":N,"source_ratio":authentic_r(1)/authentic_r(N),
+            "harmonic_subtraction":harmonic,
+            "finite_normalizer_constant":F(64)*authentic_r(1)/F(15),
+            "pi_normality_proved":False}
+
+
 def source_rank_and_claims():
     return {"source_poles":SOURCE_POLES,
             "gamma2_boundary": "PAPER-PROVED, classical Watson/Taylor",

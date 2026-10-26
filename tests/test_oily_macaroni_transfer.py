@@ -13,6 +13,27 @@ class ExactSource(unittest.TestCase):
             self.assertGreater(o.authentic_r(n),0)
             self.assertEqual(o.authentic_r(n),canonical_r(n))
             self.assertEqual(o.source_moment(n,0),1)
+    def test_positive_field_step(self):
+        for n in range(1,32):
+            z=o.positive_field_step(n)
+            self.assertGreater(z,0)
+            self.assertLess(z,1)
+            self.assertEqual(o.authentic_r(n+1),z*o.authentic_r(n))
+            if n>1:
+                mu_prev=o.source_moment(n-1,1)/o.source_a(n-1)
+                mu_now=o.source_moment(n,1)/o.source_a(n)
+                self.assertLess(mu_now,mu_prev)
+
+    def test_free_energy_cocycle_telescopes(self):
+        for N in (1,2,8,32):
+            datum=o.finite_field_free_energy_data(N)
+            product=F(1)
+            for n in range(1,N):product*=1/o.positive_field_step(n)
+            self.assertEqual(product,datum["source_ratio"])
+            self.assertEqual(datum["harmonic_subtraction"],sum((F(2,k) for k in range(1,N)),F()))
+            self.assertEqual(datum["finite_normalizer_constant"],F(3008,225))
+            self.assertFalse(datum["pi_normality_proved"])
+
     def test_fib(self):
         self.assertEqual(tuple(o.fibonacci_ratio(k) for k in range(1,6)),(F(1),F(1,2),F(2,3),F(3,5),F(5,8)))
     def test_gamma_two_moments(self):
@@ -107,6 +128,18 @@ class AnalyticComplex(unittest.TestCase):
     def test_char_normalized(self):
         for n in (1,16,64):
             self.assertAlmostEqual(abs(o.source_oily_character(n,0)-1),0,delta=1e-35)
+    def test_free_energy_gamma_finite_part(self):
+        import mpmath as m
+        with m.workdps(65):
+            target=m.log(m.mpf(3008)/225)-2*m.euler
+            for N,eps in ((16,.08),(128,.01),(1024,.002)):
+                datum=o.finite_field_free_energy_data(N)
+                ratio=datum["source_ratio"]
+                got=m.log(m.mpf(ratio.numerator)/ratio.denominator)
+                h=datum["harmonic_subtraction"]
+                got-=m.mpf(h.numerator)/h.denominator
+                self.assertLess(abs(got-target),eps)
+
     def test_defect_asymptotic(self):
         import mpmath as m
         target=F(59,30)*(1+o.golden(m))
