@@ -1,5 +1,16 @@
 # Observational SUCC
 
+**Operation Spectral Purity (2026-10-25, stacked on #296):**
+[proof dossier](research/2026-10-25/OPERATION_SPECTRAL_PURITY.md) ·
+[OSP claim ledger](docs/CLAIM_SUPPLEMENT_SPECTRAL_PURITY.md).
+At a prescribed width growing like the square root of log time, all
+conductor-birth innovations have a proved vanishing total contribution.
+The signed estimate on conductor-flat steps remains open. A sharper Green
+bound transports purity at every sublinear width; simultaneous prefix/jet
+countermodels and exact selected-versus-trace failures constrain shortcuts.
+Ten finite real-kernel theorems have local Lean authority. **Pi normality
+is not proved.**
+
 **Internal SUCC matrix walk / phase-source frontier (2026-10-25, stacked draft):**
 [exact mathematical dossier](research/2026-10-25/SUCC_INTERNAL_MATRIX_WALK.md) ·
 [IMW-01–13 proof authority](docs/CLAIM_SUPPLEMENT_SUCC_INTERNAL_MATRIX.md) ·

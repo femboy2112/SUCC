@@ -14,6 +14,22 @@
   },
   "namespaces": [
     {
+      "namespace": "OPERATION_SPECTRAL_PURITY",
+      "bare_prefix": "OSP",
+      "fq_prefix": "OSP",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_SPECTRAL_PURITY.md"],
+      "id_count": 14,
+      "status": "RESEARCH (CLASSICAL/PAPER-PROVED/EXACT FINITE/LEAN KERNEL/CONDITIONAL/REFUTED/OPEN); pi normality OPEN",
+      "topic": "authentic BBP conductor-birth innovation removal, spectral Green transport, relative cyclotomic trace, simultaneous prefix and jet countermodels",
+      "code": [
+        "observational_succ/spectral_purity_innovation.py",
+        "observational_succ/spectral_purity_arithmetic.py",
+        "observational_succ/spectral_purity_multiscale.py",
+        "observational_succ/spectral_purity_certificates.py",
+        "formal/SpectralPurity.lean"
+      ]
+    },
+    {
       "namespace": "HARMONIC_MIRROR_SUCC_PI",
       "bare_prefix": "HMS",
       "fq_prefix": "HMS",

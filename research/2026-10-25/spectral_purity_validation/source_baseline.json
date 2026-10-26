@@ -1,0 +1,353 @@
+{
+  "checked_at_utc": "2026-10-26 00:28:46 UTC",
+  "repository": "https://github.com/femboy2112/SUCC",
+  "main_sha": "1e3a453e869992961bc2d7f3bb6f2f1ddab38854",
+  "parent_sha": "461942c0bf616518e668d236d1c6b1596665a7dd",
+  "branch": "research/spectral-purity-2026-10-25",
+  "open_pull_requests": [
+    {
+      "n": 296,
+      "head": "461942c0bf616518e668d236d1c6b1596665a7dd",
+      "branch": "research/succ-internal-matrix-source-2026-10-25",
+      "base": "research/signed-gamma-bbp-green-orbit-2026-10-25",
+      "draft": true
+    },
+    {
+      "n": 295,
+      "head": "b672fca19ee41894866b965deccd56ab4cc907a0",
+      "branch": "research/seinfeld-phase-frobenius-coherence-2026-10-25",
+      "base": "research/seinfeld-succ-null-provenance-2026-10-25",
+      "draft": true
+    },
+    {
+      "n": 294,
+      "head": "82f4617e31e06b84fdbe52b4b217b92dcd4732dd",
+      "branch": "research/seinfeld-succ-null-provenance-2026-10-25",
+      "base": "main",
+      "draft": true
+    },
+    {
+      "n": 293,
+      "head": "fd45a98e9206496fa1486761db5a7389713559f8",
+      "branch": "research/signed-gamma-bbp-green-orbit-2026-10-25",
+      "base": "research/gamma-zero-one-moment-bridge-2026-10-25",
+      "draft": true
+    },
+    {
+      "n": 292,
+      "head": "c87cc007a72c1754bc20bd399d12b20831d6baeb",
+      "branch": "research/gamma-zero-one-moment-bridge-2026-10-25",
+      "base": "research/contextual-zero-observer-backbone-2026-10-25",
+      "draft": true
+    },
+    {
+      "n": 291,
+      "head": "bfb378dcca9853a76eb5769dd7717ecf8621a664",
+      "branch": "research/contextual-zero-observer-backbone-2026-10-25",
+      "base": "research/coherent-zero-relations-2026-10-25",
+      "draft": true
+    },
+    {
+      "n": 290,
+      "head": "6216557ee1bb7aa349ba2c179238b7f4d31cbfdc",
+      "branch": "research/coherent-zero-relations-2026-10-25",
+      "base": "main",
+      "draft": true
+    },
+    {
+      "n": 289,
+      "head": "50b77d702667ebdd06ffe731414f17468a5e5164",
+      "branch": "research/vacuum-parameter-bbp-krylov-2026-10-25",
+      "base": "main",
+      "draft": true
+    }
+  ],
+  "pull_requests": [
+    {
+      "number": 296,
+      "url": "https://github.com/femboy2112/SUCC/pull/296",
+      "head": "research/succ-internal-matrix-source-2026-10-25",
+      "head_sha": "461942c0bf616518e668d236d1c6b1596665a7dd",
+      "base": "research/signed-gamma-bbp-green-orbit-2026-10-25",
+      "base_sha": "fd45a98e9206496fa1486761db5a7389713559f8",
+      "state": "open",
+      "draft": true
+    },
+    {
+      "number": 293,
+      "url": "https://github.com/femboy2112/SUCC/pull/293",
+      "head": "research/signed-gamma-bbp-green-orbit-2026-10-25",
+      "head_sha": "fd45a98e9206496fa1486761db5a7389713559f8",
+      "base": "research/gamma-zero-one-moment-bridge-2026-10-25",
+      "base_sha": "c87cc007a72c1754bc20bd399d12b20831d6baeb",
+      "state": "open",
+      "draft": true
+    },
+    {
+      "number": 294,
+      "url": "https://github.com/femboy2112/SUCC/pull/294",
+      "head": "research/seinfeld-succ-null-provenance-2026-10-25",
+      "head_sha": "82f4617e31e06b84fdbe52b4b217b92dcd4732dd",
+      "base": "main",
+      "base_sha": "1e3a453e869992961bc2d7f3bb6f2f1ddab38854",
+      "state": "open",
+      "draft": true
+    },
+    {
+      "number": 295,
+      "url": "https://github.com/femboy2112/SUCC/pull/295",
+      "head": "research/seinfeld-phase-frobenius-coherence-2026-10-25",
+      "head_sha": "b672fca19ee41894866b965deccd56ab4cc907a0",
+      "base": "research/seinfeld-succ-null-provenance-2026-10-25",
+      "base_sha": "82f4617e31e06b84fdbe52b4b217b92dcd4732dd",
+      "state": "open",
+      "draft": true
+    }
+  ],
+  "discussion": [
+    {
+      "url": "https://github.com/femboy2112/SUCC/pull/296",
+      "comments": [
+        {
+          "url": "https://github.com/femboy2112/SUCC/pull/296#issuecomment-6405114743",
+          "id": 6405114743,
+          "body": "### IMW-14 — No tick marks required: exact gauge covariance of the internal matrix\n\n**Paper corollary from the committed IMW Gram/Fejér identities, no new CI run.** The author's original insistence that the circle has no preferred marked origin is already respected by the *correct internal observable*.\n\nFor original rational BBP states U_n and any global rational/real rotation a of the **observer chart** (not a mutation of the arithmetic source), define\n\\[\nv_n=(e(khU_n))_{k=0}^{H-1},\\qquad\nv_n^{(a)}=(e(kh(U_n+a)))_{k=0}^{H-1}.\n\\]\nLet D_a=diag(1,e(ha),...,e((H-1)ha)), unitary. The observer frame change is exactly\n\\[\n\\boxed{v_n^{(a)}=D_a v_n,\\quad A_N^{(a)}=D_a A_N D_a^*,\\quad\n\\operatorname{tr}[(A_N^{(a)})^2]=\\operatorname{tr}(A_N^2).}\n\\]\n\nMoreover the **one-step Fejér innovation** depends only on source-relative phase displacements U_(N+1)-U_m, so\n\\[\n\\boxed{q_N^{(a)}=q_N.}\n\\]\nThus the spectral purity *and its SUCC derivative* are reference-mark-free invariants. The individual Fourier matrix entries remember the arbitrary chosen origin as covariant phases, but their pairing cancels it. No global orientation, physical circle curvature, or externally preferred tickmark enters the theorem. This is an exact finite group-character proof.\n\n**What this does NOT do:** U_n→U_n+a for a *fixed observer chart* is not generally an alternative BBP source trajectory from U0=0. If one insists on applying the arithmetic recurrence after such a shift, the forcing changes by (1−16)a. Keep chart changes separate from source changes. Intrinsic rotation invariance alone cannot force the *value* of the Fejér innovation or the asymptotic purity decay; r=0 and a fixed orbit have the same invariance with maximal purity H².\n\n**Practical backbone rule:** Track source-authentic U, chart-dependent Gram A, chart-invariant purity/Fejér q, and the moving high-frequency outgoing boundary as DISTINCT typed data. Compare invariants across observation frames, but never replace the original source-specific signed estimate with a symmetry claim. The finite matrix theorem remains exact; π normality remains OPEN."
+        },
+        {
+          "url": "https://github.com/femboy2112/SUCC/pull/296#issuecomment-6405132679",
+          "id": 6405132679,
+          "body": "### IMW-15 — An exact *sequential* Fejér innovation criterion, rather than an opaque final matrix condition\n\n**Paper theorem / classical Gram algebra newly made source-typed; no additional CI run.**\n\nThe original IMW rank-one identity gives\n\\[\nP_{N,H}=\\operatorname{tr}(A_{N,H}^2),\\quad\nq_{m,H}=v_{m+1}^*A_{m,H}v_{m+1}\n=\\frac1m\\sum_{j=1}^m\n\\left|\\sum_{k=0}^{H-1}e(k(U_{m+1}-U_j))\\right|^2.\n\\]\nCarefully retain the width H, as the future proof may use a **growing** H=H_N but all q_(m,H_N) in a given N-proof use that SAME window.\n\n**Exact telescoping (every finite N,H):**\n\\[\n\\boxed{\nN^2 P_{N,H}=N H^2+2\\sum_{m=1}^{N-1} m\\,q_{m,H}.\n}\n\\]\nProof: expand \\(\\sum_{j,k\\le N}|\\langle v_j,v_k\\rangle|^2\\), separate the N diagonal terms \\(H^2\\), and count each off-diagonal pair once in the newly arriving row. Equivalent to the source IMW one-step rank-one recurrence.\n\nSubtract the Haar/identity baseline:\n\\[\n\\boxed{\n\\frac{P_{N,H}-H}{H}\n=\\frac{H-1}{N}\n+\\frac{2}{N^2H}\\sum_{m=1}^{N-1}m\\,(q_{m,H}-H).\n}\n\\]\n\n**A concrete source-authentic SUCC-by-SUCC proof gate:** If there exists an increasing width \\(H_N\\to\\infty\\) with \\(H_N=o(N)\\) for which\n\\[\n\\boxed{\n\\frac{2}{N^2H_N}\n\\sum_{m=1}^{N-1}m\\,|q_{m,H_N}-H_N|\\to0,\n}\n\\]\nthen \\(P_{N,H_N}/H_N\\to1\\). By IMW-03 the fixed nonzero Fourier coefficients vanish, and SGO's proven exact Green-tail transport implies π is base-16 normal. **This source-specific innovation bound remains OPEN.** It's not claimed to be easier than normality; it moves the obligation to the successive relative-position interactions that SUCC internally observes at each arithmetic step. If all q values are near the Haar Fejér expectation H in a correctly weighted aggregate, the matrix's residual purity cannot persist.\n\n**Control and asymptotic budget:** For fake fixed-source U_n=0, every q_(m,H)=H², making the normalized innovation debt ≈H rather than tending to 0, so the test rejects the nonnormal counterfeit. For iid uniform synthetic circle samples, q_(m,H) has conditional expectation H, but **this source-blind expectation is not a theorem for π's deterministic BBP path**. Normality is not derived from finite numerical agreement or the symmetric circle carrier.\n\n**Research significance:** The exact theorem isolates the next missing quantity as **source-indexed high-order Fejér correlations across the internal matrix**, rather than an untyped randomness appeal. It also identifies the finite-source *rank defect* term (H−1)/N, a boundary that vanishes only when the observable dimension grows strictly slower than the successor horizon. Higher order BBP Pascal and moving n²/n³ frequency bands should be tested against q_(m,H_N), with the original source/clock passport and hostile period/fake-source controls.\n\nNo RH or π normality proof has been obtained."
+        }
+      ]
+    },
+    {
+      "url": "https://github.com/femboy2112/SUCC/pull/293",
+      "comments": [
+        {
+          "url": "https://github.com/femboy2112/SUCC/pull/293#issuecomment-6401194456",
+          "id": 6401194456,
+          "body": "### SGO-13 — Carrier-level convergence, not just one Fourier function: exact Wasserstein-1 transport\n\n**New-to-SUCC paper corollary; no CI retrigger.** There is a cleaner topology for the same source-faithful transfer.\n\nLet \\(\\mathbb T=\\mathbb R/\\mathbb Z\\) have its geodesic distance \\(d_{\\mathbb T}(x,y)=\\min_{m\\in\\mathbb Z}|x-y-m|\\). At finite horizon N define the empirical measures\n\\[\n\\mu_N^\\pi=\\frac1N\\sum_{n=1}^N\\delta_{\\{16^{n-1}\\pi\\}},\\qquad\n\\mu_N^U=\\frac1N\\sum_{n=1}^N\\delta_{\\{U_n\\}},\n\\]\nwhere **U is exactly the original signed four-pole BBP recurrence**, not a generic rational approximation.\n\nFrom the paper-proved Green-tail identity \\(16^{n-1}\\pi=U_n+T_n\\) and the all-source positive tail budget \\(\\sum_{n\\ge1}T_n\\le17/648\\), couple the nth points directly. For the classical 1-Wasserstein metric on this compact circle,\n\\[\n\\boxed{\nW_1(\\mu_N^\\pi,\\mu_N^U)\n\\le \\frac1N\\sum_{n=1}^N d_{\\mathbb T}(\\{U_n+T_n\\},\\{U_n\\})\n\\le\\frac1N\\sum_{n=1}^N T_n\n\\le\\frac{17}{648N}.}\n\\]\n\nThis is a **uniform, explicit, fully source-matched finite error modulus** in a bona fide topology on probability measures. It is stronger than enumerating individual fixed-character transfer bounds: by Kantorovich–Rubinstein duality, *every* 1-Lipschitz circle observable has its empirical average transported within 17/(648N). No physical Wasserstein transport or probabilistic independence is assumed—the coupling is the canonical matching of the same indexed source states.\n\n**Consequence:** the two sequences of empirical measures have **exactly the same weak limit points** in \\(\\mathcal P(\\mathbb T)\\), and one converges to Haar iff the other does. Thus \\(\\pi\\) is base-16 normal iff the original rational \\(U_n\\) orbit is equidistributed, now proved at the **measure-carrier** level with a certified quantitative discrepancy.\n\n**Precise boundary:** this does not give pointwise bounds for discontinuous indicator functions of digit cells from their Lipschitz constants (there is no finite such constant). Weak convergence to Haar would imply frequencies for fixed cells by the continuity-set theorem, but proving convergence is the still-open gate. The metric comparison is a *source-to-source transfer* not a new cancellation mechanism.\n\n**Source-typed next instrument:** expose W1 bound as a rational return of the existing \\`summable_tail_budget\\`, then measure whether authentic odd-conductor/CRT and four-bit Walsh probes provide a nontrivial bound on \\(W_1(\\mu_N^U,\\mathrm{Haar})\\). The triangle inequality would immediately transport such an estimate to the π orbit while paying only 17/(648N). No zero positions, fake composite primes, independent surrogate measures, or completion without source overlap.\n\n**Authority:** classical elementary optimal-transport coupling; new application of the committed SGO finite tail theorem. \\(\\pi\\) normality and RH **remain OPEN**."
+        },
+        {
+          "url": "https://github.com/femboy2112/SUCC/pull/293#issuecomment-6403017938",
+          "id": 6403017938,
+          "body": "## SGO-14 — Circle-as-line spectral defect: exact measure decomposition and a source-selection obstruction\n\n**Author's proposed interpretation:** The line character \\(\\chi_h(U_n)=e^{2\\pi i hU_n}\\) describes the circle as viewed from SUCC's exact rational lift, while the condition \\(S_N(h)=o(N)\\) is the remaining deviation from complete circle/Haar realization. This has a precise mathematical version and one essential caveat.\n\n### Three different errors, correctly typed\n\nLet \\(\\mathbb T=\\mathbb R/\\mathbb Z\\), \\(m\\) normalized Haar measure, \\(U_{n+1}=16U_n+r(n+1)\\) with the one authentic four-pole source and \\(U_0=0\\), and \\(T_n>0\\) the original future Green correction, so \\(16^{n-1}\\pi=U_n+T_n\\). Define\n\n\\[\n\\mu_N^U=\\frac1N\\sum_{n=1}^N\\delta_{\\{U_n\\}},\\quad\n\\mu_N^\\pi=\\frac1N\\sum_{n=1}^N\\delta_{\\{16^{n-1}\\pi\\}},\\quad\n\\nu_N=\\mu_N^U-m.\n\\]\n\nThen the signed measure identity\n\n\\[\n\\boxed{\\mu_N^\\pi-m=(\\mu_N^\\pi-\\mu_N^U)+(\\mu_N^U-m)}\n\\]\n\nhas BOTH terms of total mass zero. The *first* is the BBP Green-tail approximation error with \\(W_1(\\mu_N^\\pi,\\mu_N^U)\\le17/(648N)\\). The *second* is the **unproved** deviation of the arithmetic orbit from Haar measure.\n\nFor each integer \\(h\\ne0\\), Haar annihilates \\(\\chi_h(x)=e^{2\\pi ihx}\\), and the exact finite Fourier identity is\n\n\\[\n\\boxed{\n\\widehat{\\mu_N^\\pi-m}(h)\n=\\frac1N\\sum_{n=1}^N\\chi_h(U_n)\n+\\frac1N\\sum_{n=1}^N\\chi_h(U_n)\\bigl(\\chi_h(T_n)-1\\bigr).\n}\n\\]\n\nThe last summand has modulus at most \\((2\\pi|h|/N)\\sum T_n\\le (2\\pi|h|17)/(648N)\\). The first summand is the **remaining normality obligation**. Thus \\(o(N)\\) is not the literal scalar BBP tail; it is the vanishing *spectral coefficient of the signed Haar discrepancy*.\n\nThis also yields the **fully quantified metric transport**\n\n\\[\n\\boxed{\n\\big|W_1(\\mu_N^\\pi,m)-W_1(\\mu_N^U,m)\\big|\\le17/(648N).\n}\n\\]\n\n### The carrier/topology distinction is load-bearing\n\n\\(\\mu_N^U\\) is finitely atomic for every N, so it is always mutually singular with continuous Haar measure:\n\\[\n\\boxed{\\|\\mu_N^U-m\\|_{\\mathrm{TV}}=1\\quad\\text{for EVERY finite N}.}\n\\]\nHere TV means \\(\\sup_A|\\mu_N^U(A)-m(A)|\\); some conventions for the variation *norm* report 2. In contrast the weak topology permits \\(\\mu_N^U\\rightharpoonup m\\), exactly when every fixed nonzero Fourier coefficient tends to 0. Thus an empirical distribution can remain **maximally wrong in TV** while its Fourier/continuous-observer limit is Haar. This is a striking concrete example of why SUCC's limit/observer carrier must be declared.\n\nAlgebraically \\((N^{-1}S_N(h))_N\\in\\ell^\\infty\\), and the statement \\(S_N(h)=o(N)\\) is that its class vanishes in the quotient C*-algebra \\(\\ell^\\infty/c_0\\). The h=0 class is identically 1, while the desired nontrivial-frequency classes vanish. This is an exact **zero/one quotient interpretation**, not an existence proof for those limits.\n\n### Koopman dual: the nonautonomous circle is a weighted frequency successor\n\nFor the original BBP forcing, let \\(F_n(x)=16x+r(n+1)\\pmod1\\) and its Koopman pullback \\(K_nf=f\\circ F_n\\). On the character basis \\(\\chi_h\\) of \\(L^2(\\mathbb T,m)\\),\n\n\\[\n\\boxed{K_n\\chi_h=e^{2\\pi i h r(n+1)}\\chi_{16h}.}\n\\]\n\nThe circle dynamics seen in its Fourier *line* coordinates is an EXACT weighted shift on integer frequency h, with a source-specific phase. Each \\(K_n\\) is an isometry (not a unitary onto \\(L^2\\)), since F_n preserves Haar; the initial point x=0 selects the authentic arithmetic phase. This is the literal matrix-element/representation formulation suggested by the user's observation.\n\n**Adversarial theorem: source-blind spatial orthogonality cannot select π.** For any real forcing r (authentic or counterfeit), the orbit started at generic x has\n\\(U_n(x)=16^nx+U_n(0)\\). Hence for every integer h≠0,\n\n\\[\n\\boxed{\n\\int_0^1\\left|\\sum_{n=1}^N\ne^{2\\pi i h U_n(x)}\\right|^2 dx=N\n}\n\\]\n\nby orthogonality of distinct integer frequencies \\(16^nh\\). Yet with counterfeit r≡0 and the specific initial x=0, the sum is **N**, not o(N). This is a decisive counterexample to inferring selected-orbit normality from Haar invariance, unitary/isometric Koopman structure, or the L² averaged phase energy. The actual signed BBP source plus its initial condition are essential.\n\n### Exact finite pair-correlation zero balance\n\nFor the authentic \\(\\widehat S_N(h)=\\sum_{n=1}^N\\chi_h(U_n)\\),\n\n\\[\n\\boxed{\n\\frac{|\\widehat S_N(h)|^2}{N^2}\n=\\frac1N+\\frac2{N^2}\\operatorname{Re}\n\\sum_{k=1}^{N-1}\\sum_{n=1}^{N-k}\ne^{2\\pi ih(U_{n+k}-U_n)}.\n}\n\\]\n\nThe original recurrence makes every lag explicitly source-typed:\n\\[\nU_{n+k}-U_n=(16^k-1)U_n+\\sum_{j=1}^k16^{k-j}r(n+j).\n\\]\n\nThis reveals the **remaining mathematical probe**: obtain a nontrivial cancellation bound on this actual signed rational lag correlation, or a directly equivalent Fourier/Walsh source channel. The identity alone is another equivalent expression for normality, not a proof.\n\n**Verdict:** The user's line-to-circle/error intuition survives in the precise spectral-discrepancy interpretation. The BBP Green correction is already controlled; the Haar discrepancy is the open source-selected problem. Weak/Fourier and TV carriers give different simultaneous mathematical facts without contradiction. **π normality: OPEN; RH: OPEN.** Paper identities only; no repository CI or independent implementation was run for this discussion addendum."
+        },
+        {
+          "url": "https://github.com/femboy2112/SUCC/pull/293#issuecomment-6403252910",
+          "id": 6403252910,
+          "body": "## SGO-15 — Phase completeness via a finite spectral-energy certificate (new proof direction)\n\n**Mathematical result:** The user's \"every point of the unmarked circle is equivalent\" is exactly the intrinsic rotational homogeneity that uniquely selects Haar measure *among all rotation-invariant measures*. It does **not** imply every history on the circle is Haar-distributed. The original map \\(F_n(x)=16x+r(n+1)\\pmod1\\) satisfies\n\\[\nF_n R_a=R_{16a}F_n,\\quad\nF_n R_a=R_aF_n\\iff15a\\in\\mathbb Z.\n\\]\nSo the homogeneous *space* and the source-anchored *dynamics* have distinct symmetry groups. The circle itself has no intrinsic Riemannian curvature in dimension one; singular orbit distributions need no geometric curvature.\n\n### SGO-15a: phase-invariance + finite Fourier energy => Haar (classical paper theorem)\n\nIf \\(\\mu\\) is a probability measure on \\(\\mathbb T\\), invariant under \\(T(x)=16x\\bmod1\\), then for each integer \\(h\\), \\(\\widehat\\mu(h)=\\widehat\\mu(16^k h)\\) at all k. If \\(\\mu=f\\,dx\\) with \\(f\\in L^2(\\mathbb T)\\), Parseval/Bessel gives, for h≠0,\n\\[\n(K+1)|\\widehat\\mu(h)|^2\n\\le\\sum_{k=0}^K|\\widehat f(16^kh)|^2\\le\\|f\\|_2^2.\n\\]\nLet K→∞: every nonzero Fourier coefficient vanishes, hence \\(\\mu\\) is Haar. This is a standard rigorous version of \"no persistent mode without infinite repeated orthogonal energy\". The **missing assumption is finite spectral energy of the *realized* distribution**: singular T-invariant \\(\\delta_0\\) has all nonzero Fourier coefficients 1.\n\n### SGO-15b: finite-horizon collision-to-Weyl inequality on the AUTHENTIC BBP rational orbit\n\nFix N≥1, d≥0, K≥0, integer h≠0. Let \\(U_0=0,\\ U_{n+1}=16U_n+r(n+1)\\) retain every four-pole sign. Partition the circle into \\(M=16^d\\) equal cells, let \\(C_j=\\#\\{1\\le n\\le N:\\{U_n\\}\\in[j/M,(j+1)/M)\\}\\), \\(p_j=C_j/N\\), and define the **exact rational collision energy**\n\\[\n\\boxed{E_{N,d}=M\\sum_{j=0}^{M-1}p_j^2=\\frac{M}{N^2}\\sum_j C_j^2.}\n\\]\nDefine the authentic normalized rational Weyl sum \\(a_N(h)=N^{-1}\\sum_{n=1}^N e^{2\\pi i h U_n}\\). The following **all-finite, source-typed** estimate is paper-proved:\n\\[\n\\boxed{\n|a_N(h)|\\le\n\\sqrt{\\frac{E_{N,d}}{K+1}}\n+\\frac{2K}{N}\n+\\frac{7|h|}{32N}(16^K-1)\n+\\frac{7|h|16^K}{16^d}.\n}\n\\]\n\n**Complete derivation:**\n1. \\(r(m)=\\int_0^1t^{8m-8}(1-t)B(t)dt\\), with \\(0\\le B\\le15\\) on [0,1], implies for m≥2 \\(0<r(m)\\le15/[64(m-1)^2]\\). The elementary integral comparison \\(\\sum n^{-2}<2\\) gives \\(\\sum_{n\\ge1}r(n+1)<15/32\\), with no zeta value, digit table, or asymptotic normality input.\n2. Source recurrence and one-point-end correction yield the exact approximate **frequency-ladder invariance**:\n\\[\n|a_N(16\\ell)-a_N(\\ell)|\\le\n\\frac2N+\\frac{2\\pi|\\ell|}{N}\\sum_{n=1}^N r(n+1).\n\\]\nTelescoping over \\(\\ell=h,16h,\\ldots,16^{k-1}h\\), using \\(2\\pi<7\\), gives\n\\[\n|a_N(16^k h)-a_N(h)|\n\\le \\frac{2k}{N}+\\frac{7|h|}{32N}(16^k-1).\n\\]\n3. Let \\(f_{N,d}=Mp_j\\) on the j-th circle cell. It is a genuine L² density, \\(\\|f_{N,d}\\|_2^2=E_{N,d}\\). Replacing each observation by a uniform sample in its own cell changes a Fourier coefficient at \\(\\ell\\) by at most \\(2\\pi|\\ell|/M<7|\\ell|/M\\).\n4. The \\(K+1\\) frequencies \\(h,16h,\\ldots,16^Kh\\) are distinct. Bessel on the step density gives \\(\\sum_{k=0}^K|\\widehat f_{N,d}(16^kh)|^2\\le E_{N,d}\\). Each term differs from \\(a_N(h)\\) by at most the two explicit transport budgets above. Therefore \\(\\sqrt{K+1}(|a_N(h)|-\\eta)_+\\le\\sqrt{E_{N,d}}\\), giving the boxed inequality.\n\n**A non-tautological, quantitative sufficient criterion for π normality:** choose\n\\[\nd_N=\\left\\lfloor\\frac25\\log_{16}N\\right\\rfloor,\\qquad\nK_N=\\left\\lfloor\\frac15\\log_{16}N\\right\\rfloor.\n\\]\nIf the actual SOURCE-SELECTED base-16 real-cell collision energy satisfies\n\\[\n\\boxed{E_{N,d_N}=o(\\log N),}\n\\]\nthen for every fixed h≠0, the first term tends to zero since K_N grows like c log N; the remaining terms are \\(O(\\log N/N)+O_h(N^{-4/5})+O_h(N^{-1/5})\\). Hence \\(a_N(h)\\to0\\). By the already proved SGO Green-tail/Wasserstein \\(O_h(1/N)\\) comparison, π is base-16 normal.\n\n**Contrapositive / energy conservation obstruction:** if some fixed h has a persistent Fourier coefficient \\(|a_N(h)|\\ge\\epsilon>0\\) infinitely often, then the finite inequality forces \\(E_{N,d_N}\\ge c_\\epsilon \\log N\\) along those horizons for sufficiently large N. Thus nonzero phase bias requires a *logarithmically growing pile-up of coarse-grained collision energy*. This is a genuine quantitative \"phase-completeness defect\" theorem, not circle curvature.\n\n**Hostile control:** r≡0 and U_0=0 fixes the orbit at 0; then a_N(h)=1, and \\(E_{N,d}=16^d\\). The criterion correctly fails despite the circle's full geometric symmetry. It also cannot be inferred from mere positivity of the BBP/Gamma moment Hankel matrices or from source-blind Haar averaging.\n\n**Finite independent diagnostic:** 7 exact-Fraction BBP orbits (N=31,64,100,160,256,512 with several (d,K,h)) were histogrammed with rational arithmetic, their normalized characters checked numerically, and each respected both the frequency-ladder bound and the collision-to-Weyl estimate. Example: N=512,d=2,K=1,h=1 has exact collision energy 1.421875 and measured |\\hat\\mu(h)|≈0.0493; bound is valid but loose. The all-N proof is algebra/Parseval, NOT the finite numerical tests.\n\n**Connection to the existing Frontier Contract:** the 2/5 logarithmic cell depth matches the existing Hypothesis-A/prescribed-scale real-cell emphasis. The new target is a *specific sublogarithmic untrimmed L² collision-energy certificate* at this depth; it is stronger than mere existence of an observer quotient and may be harder than trimmed joint entropy. No claim that the existing source proves it. This identifies a concrete analytic/distributional \"finite error boundary\" whose closure would imply π normality without inventing a geometric asymmetry of the circle.\n\n**Authority:** all derivations are classical Fourier/Bessel + elementary source-tape bounds; new-to-repo combination, not independently established academic novelty. RH and π normality remain OPEN. No CI rerun or core file modification in this comment."
+        },
+        {
+          "url": "https://github.com/femboy2112/SUCC/pull/293#issuecomment-6403760765",
+          "id": 6403760765,
+          "body": "### SGO-16 — Curvature-normalized SUCC is an exact dynamic gauge trivialization\n\n**Mathematical insight from the author's follow-up:** On an unmarked circle, subtract the *known reference geometry and motion* rather than treating centripetal turning as source-specific behavior. The right discrete operation for SUCC is a **covariant source differential**, not a claim that curvature alone forces equidistribution.\n\n**Geometry:** On a radius-R circle z(t)=R exp(i theta(t)), the extrinsic curvature is the CONSTANT 1/R; intrinsic Riemannian curvature is zero (dimension one). The acceleration is\n\\[\n\\ddot z=-R\\dot\\theta^2e^{i\\theta}+iR\\ddot\\theta e^{i\\theta}.\n\\]\nRemoving the known normal/centripetal component leaves the intrinsic covariant acceleration iR theta'' exp(i theta). For the discrete radix-16 carrier, the appropriate background motion is T(x)=16x mod 1, which is more informative than the extrinsic constant curvature.\n\n**SGO-16a: exact carrier-normalized phase defect.** For the genuine original BBP U_0=0, U_(n+1)=16U_n+r(n+1), and z_n=exp(2pi i U_n),\n\\[\n\\boxed{\\frac{z_{n+1}}{z_n^{16}}=\\exp(2\\pi i r(n+1)).}\n\\]\nThis *divides out the homogeneous 16-fold circle map*, leaving exactly the signed original four-pole forcing. The identity is finite, algebraic, and source-faithful; it does NOT require any normality assumption. For integer h the h-th character gives the analogous identity with h r(n+1).\n\n**SGO-16b: a complete gauge / cohomological conjugacy, not just a limit.** Let the already-certified bounded future Green tail be\n\\[\nT_n=\\sum_{j\\ge1}16^{-j}r(n+j),\\qquad 16T_n-T_{n+1}=r(n+1).\n\\]\nPut F_n(x)=16x+r(n+1) mod1, M(x)=16x mod1, and H_n(x)=x+T_n mod1. Then\n\\[\n\\boxed{H_{n+1}\\circ F_n=M\\circ H_n\\quad\\text{on }\\mathbb T.}\n\\]\nIndeed, H_(n+1)(F_n(x))=16x+r(n+1)+T_(n+1)=16(x+T_n). This is an exact **nonautonomous conjugacy** between the inhomogeneous original BBP circle recurrence and the homogeneous 16-fold circle map. It is a classical telescoping/coboundary argument, now made source-specific with independently finite-tail-certified H_n.\n\nConsequently Y_n:=U_n+T_n satisfies Y_(n+1)=16Y_n and\n\\[\n\\boxed{Y_0=T_0=\\pi/16,\\qquad Y_n=16^n(\\pi/16).}\n\\]\nThus the entire forcing history is **absorbed into a bounded source-dependent moving frame and the distinguished initial phase**. This is as literal a formalization of \"normalize the circle carrier, leave only trajectory differential\" as possible. It exposes the true obstruction much more cleanly: the forcing is gauge-exact in this time-dependent sense, but the selected point \\(\\alpha=\\pi/16\\) remains a nontrivial global invariant of the source history.\n\n**SGO-16c: why the phase information cannot be erased by curvature normalization.** Any constant change of origin R_a(x)=x+a obeys\n\\[\nM R_a=R_{16a}M,\\quad R_a M=M R_a\\Longleftrightarrow15a\\in\\mathbb Z.\n\\]\nTrying to subtract the selected \\(\\alpha\\) and set the initial point to 0 changes the reference map to x->16x+15\\alpha (mod1); source-specific information moves from the state into the transformation. One cannot erase it while preserving both the reference dynamics and its phase labels.\n\n**Adversarial proof:** For any prescribed real alpha in [0,1), choose an absolutely summable synthetic forcing r(1)=16 alpha and r(n)=0 for n>=2, with U_0=0. Then for every n>=1, the normalized phase defect is exactly 1 and the corrected trajectory is 16^n alpha. With alpha=0 the orbit is fixed and nonnormal; with an irrational sparse base-16 expansion alpha=sum_(k>=1)16^(-k!), the orbit is nonnormal despite the same homogeneous map and the same zero curvature correction for all n>=1. Other alpha are normal (e.g. base-16 Champernowne). Therefore even **perfect curvature normalization, a flat normalized local cocycle after finite time, and complete geometric homogeneity** do not determine a single orbit's long-time Fourier behavior. The initial phase and its arithmetic source matter.\n\nAn even simpler witness is constant-speed circle travel x_n=n beta: the covariant acceleration is zero for BOTH rational beta (periodic sample) and irrational beta (equidistributed sample). Motion statistics distinguish them; the unmarked circle's geometry does not.\n\n**Research frontier:** The normalized reference map x->16x is Haar preserving but not uniquely ergodic. The proof debt is to show that the source-selected initial phase pi/16 is generic for Haar under that map, or equivalently to bound the original exact rational BBP U_n signed Weyl sums. The already-proved SGO Wasserstein-1 Green budget transfers this with O(1/N) error. Any new curvature/connection-based SUCC construction must preserve (carrier, reference map, normalized defect, gauge, initial phase, observer sampling topology) as different types. This is a proper mathematical model of the author's insight, not a proof of pi normality.\n\n**Status:** Classical geometry/cocycle algebra, exact paper theorem, existing finite-tail witness. No new hosted CI, no main branch mutation. **Pi normality and RH remain OPEN.**"
+        },
+        {
+          "url": "https://github.com/femboy2112/SUCC/pull/293#issuecomment-6404521020",
+          "id": 6404521020,
+          "body": "## SGO-17 — The logarithm DOES turn 16-multiplication into translation; the lost carry is the whole problem\n\n**Motivating observation:** \"Decompose multiplication into translating irrational values. Some kind of exponent-adjacent, natural function?\" Yes: logarithms. This produces a genuine exact inter-carrier transformation, and also a sharp obstruction to transferring equidistribution across the wrong quotient. The Gamma/Mellin representation supplies a source-typed spectral bridge.\n\n### 1. Two different circle quotients; only one controls π digits\n\nOn the positive real lift \\(x_n=16^n\\alpha\\), \\(\\alpha=\\pi/16>0\\), define \\(u_n=\\ln x_n\\). Then \\(u_{n+1}=u_n+\\ln16\\). Hermite–Lindemann implies \\(\\ln16\\) is irrational (if it were nonzero rational/algebraic, \\(e^{\\ln16}=16\\) would be transcendental). Therefore \\(\\{u_n\\}\\) is equidistributed modulo 1 by the ordinary irrational-rotation theorem **for every α>0**.\n\nThis is NOT π's base-16 normality: α=1 is an immediate hostile counterexample. The log-circle orbit \\(\\{n\\ln16\\}\\) is equidistributed, while the additive circle orbit \\(\\{16^n\\}=0\\) is fixed. Even more starkly, using \\(\\log_{16}\\) gives \\(\\{\\log_{16}(16^n\\alpha)\\}=\\{\\log_{16}\\alpha\\}\\), CONSTANT. The multiplicative circle \\(\\mathbb R_{>0}/e^\\mathbb Z\\) and additive digit circle \\(\\mathbb R/\\mathbb Z\\) are not interchangeable as *dynamical* quotients. Expanding degree-16 T has entropy \\(\\ln16>0\\); irrational rotation has entropy 0, precluding a topological conjugacy of these compact dynamics.\n\n### 2. Actual digit-orbit logs have an exact singular carry cocycle\n\nLet \\(y_n=\\{16^n\\alpha\\}\\in(0,1)\\), \\(d_n=\\lfloor16y_n\\rfloor\\in\\{0,\\dots,15\\}\\), and \\(v_n=\\ln y_n\\). Since α=π/16 is irrational, no y_n=0. The authentic base-16 orbit satisfies\n\n\\[\ny_{n+1}=16y_n-d_n,\\qquad\n\\boxed{v_{n+1}=v_n+\\ln16+\\ln\\left(1-\\frac{d_n}{16y_n}\\right).}\n\\]\n\nThe apparent irrational logarithmic translation has become an **exact circle-folding coboundary + digit/carry cocycle**. When d_n=0 the correction vanishes; when y_(n+1)→0 the log term becomes singular and admits no universal finite truncation of \\(-\\ln(1-z)=\\sum_{k\\ge1}z^k/k\\). Thus deleting the correction silently deletes the digit data. Hostile fixed-point witness y=1/15, d=1 gives correction =−ln16, canceling the entire translation and giving a nonnormal periodic orbit on the fully symmetric circle.\n\nThis is precisely the typed-carrier/finite-correction obstruction in SUCC's zero/one Gamma program.\n\n### 3. Mellin is Fourier *after log*, and the Gamma kernel transports the original additive character\n\nLet \\(\\alpha>0,\\ h\\in\\mathbb Z\\setminus\\{0\\},\\ N\\ge1,\\ \\epsilon>0,\\ \\sigma>0\\). Define a damping of the ORIGINAL additive Fourier orbit:\n\n\\[\nW_{N,\\epsilon}(h,\\alpha)\n=\\sum_{n=0}^{N-1}\n\\exp[-(\\epsilon-2\\pi ih)\\alpha16^n].\n\\]\n\nBy the classical Mellin inversion of \\(e^{-z}\\), valid because \\(\\operatorname{Re}[(\\epsilon-2\\pi ih)\\alpha]>0\\), and **only finite** geometric summation, we have the exact Mellin–Barnes bridge\n\n\\[\n\\boxed{\nW_{N,\\epsilon}(h,\\alpha)\n=\\frac1{2\\pi i}\\int_{\\sigma-i\\infty}^{\\sigma+i\\infty}\n\\Gamma(s)\\,[\\alpha(\\epsilon-2\\pi ih)]^{-s}\n\\frac{1-16^{-Ns}}{1-16^{-s}}\\,ds.}\n\\]\n\nTake the principal logarithm for the complex power. On this vertical line \\(\\sigma>0\\), \\(1-16^{-s}\\ne0\\); the damping \\(\\epsilon>0\\) ensures the Γ-integral has an exponentially decaying contour tail. The Mellin transform is Fourier on the multiplicative Haar measure \\(dx/x\\); exponentiation converts the additive translation in u=ln x into a simple multiplier \\(16^{-s}\\). The actual circle character remains a **continuum superposition of multiplicative eigencharacters**, weighted by Γ(s), NOT one translation eigenmode.\n\n**Exact finite regulator boundary:** With \\(W_{N,0}(h,\\alpha)=\\sum_{n<N}e^{2\\pi ih\\alpha16^n}\\),\n\\[\n\\boxed{\n|W_{N,\\epsilon}-W_{N,0}|\n\\le\\epsilon\\alpha\\frac{16^N-1}{15}.\n}\n\\]\nProof: termwise \\(|1-e^{-\\epsilon\\alpha16^n}|\\le\\epsilon\\alpha16^n\\), followed by a finite geometric sum. For each fixed N, ε→0 legally removes the regulator. But choosing ε fixed while N→∞ suppresses the later orbit; controlling the original N→∞ normalized Weyl averages requires an ε_N schedule at least small enough relative to \\(16^{-N}\\) (the above bound gives an explicit sufficient schedule).\n\n**Analytic gate:** As ε↓0, \\(\\arg(\\epsilon-2\\pi ih)\\to\\pm\\pi/2\\), so Γ(s)'s vertical exponential decay is canceled along one half of the contour by the complex-power factor. The Mellin integral becomes a delicate boundary value; the ε→0 and N→∞ passages are NOT justified uniformly by the fixed-ε formula. This is an exact locus of SUCC's carrier limit debt. The denominator \\(1-16^{-s}\\) also exhibits the logarithmic frequency lattice \\(s=2\\pi i k/\\ln16\\) at Re s=0, but these resonances alone do not select the π trajectory.\n\nReferences: NIST DLMF §1.14(iv) Mellin transform; TU Delft Barnes integral notes for Mellin inversion Γ↔e^{−x}; classical Hermite–Lindemann and Weyl rotation equidistribution.\n\n### 4. Research implication, not a proof\n\nWe have found a **proper exact** Mellin–Fourier transport replacing multiplication by translation while *retaining* the authentic additive character, plus a quantifiable finite regulator boundary. The open theorem is a nontrivial bound uniform in N along an allowed ε_N→0 cofinal carrier, after controlling the resulting oscillatory Γ integral and source-specific boundary values. It is **not** settled by irrationality of ln16, by smooth log-circle equidistribution, or by Γ's existence. Since the α=1 counterfeit has equally valid positive Mellin identities and a nonnormal additive orbit, any argument must materially use the authentic α=π/16/BBP source passport.\n\n**Status:** all displayed algebraic and Mellin identities are classical/paper derivations; no hosted verification or automated tests of this new addendum. π normality and RH remain OPEN."
+        },
+        {
+          "url": "https://github.com/femboy2112/SUCC/pull/293#issuecomment-6404790094",
+          "id": 6404790094,
+          "body": "## SGO-18 — User-derived logarithmic carry identity, universal cocycle, and the entropy defect that survives normalization\n\n**Original author derivation:** for positive a,b with a<b, \\(\\ln(1-a/b)=\\ln(b-a)-\\ln b\\) by exact factorization. Apply to the **actual radix-16 digit carrier** \\(x_n=\\{16^n\\alpha\\}\\in(0,1)\\), \\(d_n=\\lfloor16x_n\\rfloor\\), \\(x_{n+1}=16x_n-d_n\\), with \\(\\alpha=\\pi/16\\). Since α is irrational, all x_n and x_(n+1) stay positive. If d_n=0, the intermediary \\(b/a\\) factorization is UNDEFINED, but the final direct log identity remains valid and equals zero; mathematical typing must not use \\(\\ln d_n\\) there.\n\n### SGO-18a: Exact additive/logarithmic successor bridge\n\n\\[\n\\boxed{c_n:=\\ln(1-d_n/(16x_n))=\\ln x_{n+1}-\\ln x_n-\\ln16.}\n\\]\n\nThe coefficient is nonpositive. It is an exact additive coboundary relative to the expanding degree-16 map, minus its constant geometric expansion. Summing or multiplying over ANY finite horizon:\n\n\\[\n\\boxed{\\sum_{n=0}^{N-1}c_n=\\ln(x_N/x_0)-N\\ln16,\\quad\n\\prod_{n=0}^{N-1}(1-d_n/(16x_n))=x_N/(16^Nx_0).}\n\\]\n\nThis is source-typed zero balancing, not a Fourier cancellation estimate. The transfer function \\(g(x)=\\ln x\\) is SINGULAR at circle phase zero; it is not a globally continuous function on the compact circle. The branchwise logarithmic coordinate does not topologically conjugate the 16-fold expanding map to one invertible irrational rotation.\n\n### SGO-18b: Exact periodic-orbit counterexamples — why the mean loses information\n\nOn a period-p cycle x_p=x_0>0, the **total** correction is \\(-p\\ln16\\), independently of the digit itinerary. Two independent exact rational instances:\n\n- fixed point x=1/15: digit itinerary (1), each ratio \\(1-d/(16x)=1/16\\), hence c=-ln16;\n- two-cycle x=1/17 -> 16/17 -> 1/17: digit itinerary (0,15), correction factors (1,1/256), sum again -2ln16.\n\nBoth are manifestly nonnormal on the completely symmetric circle, and their *averaged* log corrections both equal \\(-\\ln16\\). This strongly refutes the shortcut from the telescoped log identity to source-selected equidistribution.\n\nMoreover, for **every T-invariant probability measure μ** on (0,1) for which \\(g(x)=\\ln x\\) is integrable and T(x)∈(0,1) μ-a.s., integration of \\(c=g\\circ T-g-\\ln16\\) gives\n\n\\[\n\\boxed{\\int c\\,d\\mu=-\\ln16.}\n\\]\n\nBoth Haar and a periodic singular invariant measure obey it. The universal mean captures geometric expansion; source-discriminating information survives in the *distribution and correlations* of the local carry corrections.\n\n### SGO-18c: precise \"geometric expansion minus trajectory information\" quantity\n\nThe map \\(T(x)=16x\\bmod1\\) has \\(\\log|T'(x)|=\\ln16\\) on every local branch, independent of the trajectory. For a T-invariant Borel probability μ, its metric entropy satisfies \\(h_\\mu(T)\\le\\ln16\\), with **equality only for Haar** (standard uniqueness of maximal-entropy measure of the full radix-16 map). Thus\n\n\\[\n\\boxed{\\mathcal D_\\mu:=\\ln16-h_\\mu(T)\\ge0,\\quad\\mathcal D_\\mu=0\\iff\\mu=m_{\\mathbb T}.}\n\\]\n\nThis formalizes the author's \"normalize away the common circle geometry; retain trajectory differential\" suggestion: the Lyapunov/branch expansion is universal, while the entropy deficit retains the trajectory's non-uniformity. For δ_(1/15), \\(\\mathcal D=\\ln16\\); for Haar, \\(\\mathcal D=0\\). An invariant measure describes a distribution of possible histories, not a randomization of π's deterministic selected path. To prove π normality one must prove all empirical weak-limit measures are Haar, equivalently all have zero such deficit; this is an additional **source-specific mathematical obligation**.\n\n### SGO-18d: exact finite entropy-to-Weyl error certificate\n\nFor M=16^L equal cells (fixed integer L≥1), and empirical source-selected occupancy vector \\(p_j\\), define \\(H(p)=-\\sum_jp_j\\ln p_j\\) (0ln0=0) and \\(D(p\\|u_M)=L\\ln16-H(p)\\). For any integer h≠0 and rational real-circle source U_n,\n\n\\[\n\\boxed{\n\\left|\\frac1N\\sum_{n=1}^N e^{2\\pi i hU_n}\\right|\n\\le\\frac{2\\pi|h|}{16^L}\n+\\sqrt{2D(p\\|u_M)}.\n}\n\\]\n\nProof: Replace each character by its **average over its occupied cell**; the source-specific approximation changes its normalized average by at most the cell diameter times Lipschitz constant \\(2\\pi|h|/M\\). Haar integrates each cell-average against mass 1/M, and integrates nonzero characters to 0. The remaining difference is bounded by \\(\\|p-u_M\\|_1\\); Pinsker gives \\(\\|p-u_M\\|_1\\le\\sqrt{2D(p\\|u_M)}\\). No positivity of Gamma Hankel matrices is substituted for digit-cell data. If \\(D(p_{N,L}\\|u_{16^L})\\to0\\) for every fixed L, then first N→∞ and then L→∞ proves Weyl cancellation, and SGO-09 transfers it to the π circle with additional \\(O_h(1/N)\\) Green error. **The entropy condition is essentially an equivalent full-block-frequency target, not a theorem derived here**, so pi normality remains OPEN.\n\n**Verdict:** The user's exact log manipulation exposes a universal, globally telescoping carry cocycle. It removes a geometric constant while preserving the local digit-dependent information. The new meaningful \"vacuum residual\" is a *trajectory entropy/character discrepancy*, not the already-universal log-cocycle mean. Classical algebra/ergodic theory/information inequalities; new-to-research application. No code or CI run was claimed."
+        }
+      ]
+    }
+  ],
+  "adjacent_workflows": [
+    {
+      "workflow_runs": [
+        {
+          "id": 40219253109,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 486,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40219253109/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40219253109/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 40219253162,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 296,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40219253162/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40219253162/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 40219253110,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 608,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40219253110/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40219253110/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 40219253178,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 3970,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40219253178/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40219253178/logs",
+          "workflow_id": 380913247
+        }
+      ]
+    },
+    {
+      "workflow_runs": [
+        {
+          "id": 40233446933,
+          "name": "Orbit clock genesis exact source checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 88,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233446933/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233446933/logs",
+          "workflow_id": 388002645
+        },
+        {
+          "id": 40233447024,
+          "name": "Source-minimality clock carry renewal exact checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 93,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233447024/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233447024/logs",
+          "workflow_id": 387909696
+        },
+        {
+          "id": 40233446969,
+          "name": "Bidirectional SUCC exact arithmetic cut checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 89,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233446969/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233446969/logs",
+          "workflow_id": 388745913
+        },
+        {
+          "id": 40233447055,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 297,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233447055/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233447055/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 40233446902,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 609,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233446902/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233446902/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 40233447004,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 487,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233447004/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233447004/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 40233446977,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 3973,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233446977/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40233446977/logs",
+          "workflow_id": 380913247
+        }
+      ]
+    },
+    {
+      "workflow_runs": [
+        {
+          "id": 40239847831,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 3976,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847831/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847831/logs",
+          "workflow_id": 380913247
+        },
+        {
+          "id": 40239847811,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 610,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847811/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847811/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 40239847796,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 488,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847796/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847796/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 40239847847,
+          "name": "Bidirectional SUCC exact arithmetic cut checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 90,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847847/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847847/logs",
+          "workflow_id": 388745913
+        },
+        {
+          "id": 40239847814,
+          "name": "Orbit clock genesis exact source checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 89,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847814/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847814/logs",
+          "workflow_id": 388002645
+        },
+        {
+          "id": 40239847871,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 298,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847871/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847871/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 40239847857,
+          "name": "Source-minimality clock carry renewal exact checks",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 94,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847857/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/40239847857/logs",
+          "workflow_id": 387909696
+        }
+      ]
+    }
+  ]
+}

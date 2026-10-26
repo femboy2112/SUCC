@@ -1,5 +1,13 @@
 # Claim Index
 
+**2026-10-25 Operation Spectral Purity:**
+[OSP-01--14](CLAIM_SUPPLEMENT_SPECTRAL_PURITY.md),
+[dossier](../research/2026-10-25/OPERATION_SPECTRAL_PURITY.md).
+Prescribed-window conductor-birth removal, full-sublinear spectral Green
+transfer, exact relative matrix traces, simultaneous prefix/jet/odd-source
+countermodels, and ten finite Lean kernel declarations. Conductor-flat
+signed cancellation and pi normality remain OPEN.
+
 **2026-10-24 harmonic mirror SUCC / source-selected π Fourier:**
 [HMS-01–16](CLAIM_SUPPLEMENT_HARMONIC_MIRROR.md),
 [research proof and controls](../research/2026-10-24/PI_HARMONIC_MIRROR_SUCC_FORGE.md),
