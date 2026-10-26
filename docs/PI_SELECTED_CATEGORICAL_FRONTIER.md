@@ -54,6 +54,25 @@ $S_N(h)=o(N)$ and the branch says so (`CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md`, P
 
 ## 2. The narrowed open gate (this is the whole game)
 
+**October 26 staged improvement over DC-1 (after #310).** The
+[integer-branch coercivity proof](../research/2026-10-26/OILY_DIRECT_ARITHMETIC.md)
+improves the absolute block loss from `1/1250` to `1/29`. There exists one
+unspecified integer `J_1` such that, for all `N>=1` and all nonzero integer `h`,
+
+$$
+|S_N^U(h)|\le N-\frac1{29}\max\left(0,\lfloor\log_8N\rfloor-
+\max(J_1,1+\lceil\log_{64}|h|\rceil)\right).
+$$
+
+The new finite argument charges different integer branches to total squared
+phase error through the adjacent coefficient norm `546=16²+17²+1`.
+It retains the authentic zero selector and the published irrationality input.
+At fixed frequency the logarithmic coefficient is larger by `1250/29`;
+the onset is not numerically extracted and differs from the prior theorem's.
+This is **a constant improvement only**. The normalized upper bound still
+tends to one, and the gate below remains open. Nine finite Lean declarations
+cover quadratic/rational steps; they do not formalize the analytic theorem.
+
 On the **derived flat-carry signal** $b_t=c_t\,\mathbf 1_{\{Q_t=Q_{t-1}\}}$ with
 
 $$ H_N=\max\!\big(2,\,1+\lfloor\sqrt{\lfloor\log_2 N\rfloor^{3}}\rfloor\big),\qquad J_N=\min\{J:16^J\ge N H_N^2\}, $$
@@ -81,11 +100,14 @@ $h<H_N$, which is *stronger* than fixed-$h$ Weyl) implies normality via transpor
    It rules out one strategy (global Walsh smallness at this conductor schedule); it is **not**
    evidence against the gate (the gate uses $h<H_N$ Fourier modes — a different character set)
    and gives no smallness criterion.
-3. **Structural ceiling of the current method.** The finite inverse lemma requires
+3. **Structural ceiling of the earlier coordinatewise method.** The DC-5 finite inverse lemma requires
    $34a+\lvert h\rvert\cdot(\text{range }r)<1$, forcing $a<1/34$, so it only controls an
    *absolute* block loss $\le 8a^2<2/289$, independent of block length. This cannot yield
    $o(N)$ by additive block bounds. Even a fixed relative loss is insufficient (§3.5);
    an additional signed or cumulative estimate has to be proved.
+   The post-#310 total-energy argument above escapes this coordinatewise ceiling
+   and raises the block loss to `1/29`; it still controls only constant absolute
+   loss on each growing block, so the order-of-growth obstruction survives.
 4. **Diophantine input alone cannot suffice (Control C).** $\xi=\sum 16^{-2^k}$ has irrationality
    exponent $2$ yet Fourier sums $N+O_h(\log N)$. Any extension must use the zero anchor $U_0=0$
    and the actual source, not just an irrationality bound.
@@ -212,3 +234,12 @@ positive metric contraction and endpoint PGF alone do not give arithmetic cancel
 
 Full handoff: [atoms, finite realization and selected phase](../handoffs/FOUR_POLE_ATOMIC_NEXT_2026-10-26.md),
 with the earlier [relative phase and carry obligations](../handoffs/OILY_MACARONI_RELATIVE_PHASE_NEXT_2026-10-26.md) retained.
+
+**Current staged continuation:** [Oily carry/resonance synthesis](../research/2026-10-26/OILY_CARRY_RESONANCE_SYNTHESIS.md)
+and [next execution handoff](../handoffs/OILY_CARRY_RESONANCE_NEXT_2026-10-26.md).
+The literal carry-translated primitive character exposes a growing alias, and
+the full endpoint packet convolution has inverse `(2I-S)^2`.
+The genuine centered third cumulant has leading coefficient `8/81` at order
+`(8n)^-2`, while all higher fixed-order leading mixed cumulants are gamma-free.
+These source-typed identities and the degree-17 seed-character restriction
+do not pay the remaining signed arithmetic estimate.

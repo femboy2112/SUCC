@@ -225,6 +225,15 @@ See [PSF-01--14](CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md) for authority and
 counterexamples. The eight new finite Lean declarations do not formalize
 the analytic irrationality input or the infinite normality consequence.
 
+**Post-#310 research update (October 26).** A new integer-branch total-energy
+lemma improves the logarithmic absolute-loss coefficient to `1/29`, with one
+extra geometric block in the frequency cutoff and a separately unspecified
+onset. The [complete proof](../research/2026-10-26/OILY_DIRECT_ARITHMETIC.md)
+states the all-`N`, all-nonzero-`h` quantifiers. This changes the constant, not
+the logarithmic order or any open normality gate. The
+[combined synthesis](../research/2026-10-26/OILY_CARRY_RESONANCE_SYNTHESIS.md)
+records the new literal-carry and cumulant constructions and their limits.
+
 ---
 
 ## Route A — selected harmonic / cyclotomic saving (#284)

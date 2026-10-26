@@ -1,0 +1,17 @@
+{
+  "changed_files": {
+    "observational_succ/oily_signed_certificate.py": {
+      "after": "4141d90f01fe3f5f88009f32c8e9aaf37b1ab8fceb9497eda58fb02ce8d03ce7",
+      "before": "7309e4937ff3e821bb6d6867582d18e14bd67e33ac353c3687fb0febc7829a5f"
+    },
+    "tests/test_oily_signed_certificate.py": {
+      "after": "d8a4b862a020ad1b5702868ff0758e06e4d6dcccf6a8856b97bc60f069699212",
+      "before": "2b401aaa11c9ab53f08664ed078fbba7a326fe42207404a911e737018364d2f8"
+    }
+  },
+  "exit_code": 130,
+  "passing_markers": 5278,
+  "reason": "Input-type cache hardening changed production and test source during run; restart final full native suite. No full pass claimed.",
+  "status": "INTERRUPTED_FOR_SOURCE_UPDATE",
+  "stopped_utc": "2026-10-26T22:34:30.126820+00:00"
+}

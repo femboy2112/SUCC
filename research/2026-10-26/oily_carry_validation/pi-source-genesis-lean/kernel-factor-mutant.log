@@ -1,0 +1,6 @@
+/workspace/scratch/cd3d6a3d0aa9/validation/pi-source-genesis-lean/build-b4zge7zi/kernel-factor_mutant.lean:5:2: error: type mismatch
+  kernel_factorization (1 / 2)
+has type
+  DuckPiIntegral.numerator (1 / 2) = (1 - 1 / 2) * kernelH (1 / 2) : Prop
+but is expected to have type
+  DuckPiIntegral.numerator (1 / 2) = (2 - 1 / 2) * kernelH (1 / 2) : Prop

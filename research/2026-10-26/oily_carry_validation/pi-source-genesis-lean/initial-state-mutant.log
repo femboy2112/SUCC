@@ -1,0 +1,6 @@
+/workspace/scratch/cd3d6a3d0aa9/validation/pi-source-genesis-lean/build-b4zge7zi/initial-state_mutant.lean:5:2: error: type mismatch
+  forced_first_third
+has type
+  Int.fract (16 * (1 / 3) + ObservationalSUCC.BaileyCrandall.forcing 1) = 7 / 15 : Prop
+but is expected to have type
+  Int.fract (16 * (1 / 3) + ObservationalSUCC.BaileyCrandall.forcing 1) = 1 / 3 : Prop
