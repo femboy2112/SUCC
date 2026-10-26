@@ -1,0 +1,87 @@
+{
+  "RH_proved": false,
+  "authentic_p5_p7_N3_interaction_interval": [
+    "-1682512347/40000000000",
+    "-21031404337/500000000000"
+  ],
+  "authority": "exact finite replay plus separate paper proofs; no asymptotic inference",
+  "clock_6_primitive_energy_hashes": {
+    "1": "de671dad1bbff0629a4e99e3158af261a1d6bd14a117673da4e0b37fd4ffb515",
+    "2": "a901067697cd47d3694b3aa1e851da19f8d4c37a001e0098d56e4ce2de314e90",
+    "3": "676551a2f211d7b66f32176fb6d1325388462437f613b766796c6746214560a3",
+    "6": "0cf76f1a7edbd81e0cb34d2b2d97ceef4c3bab2208cdc7500cee8808642b7508"
+  },
+  "clock_6_raw_mean_error": "5/39",
+  "clock_transport_N257_Q77_H8": {
+    "conditional_energy_error": "5304/19789",
+    "gram_operator_error": "21216/19789",
+    "mean_error": "2652/19789",
+    "purity_error": "339456/19789"
+  },
+  "counterfeit": {
+    "every_partition_gain_cap_h1": "5/8388608",
+    "horizon": 48,
+    "preserves_exact_forcing": true,
+    "preserves_zero_initial": false,
+    "radius": "1/8192",
+    "seed": "-4240609593879114852457664518643646942420300474050476896089709251/21597247314840829303283970521065225377898408236440735706450493441",
+    "window_start": 16
+  },
+  "dependency_blob": "fa1abb9dbeee0d7b4d9972e3b0e40a5feaed3c9e",
+  "file_blobs": {
+    "observational_succ/mobius_signed_contrasts.py": "10409534c8c2bc47fb6c19d607482c30f0d4ecb4",
+    "scripts/mobius_signed_contrasts_probe.py": "d6e45347a5a50724f8c8fb0ecfbceb4cbf5a0e79",
+    "tests/test_mobius_signed_contrasts.py": "9946aaaaacca3464e50d6ea510c41f3bc95c918b"
+  },
+  "mobius_blocks_equal_direct_grams": true,
+  "nested_full_gain_N8_interval": [
+    "901513646267/1000000000000",
+    "225378411567/250000000000"
+  ],
+  "new_Lean_authority": false,
+  "observer_grid": {
+    "depths": [
+      2,
+      1,
+      1
+    ],
+    "primes": [
+      3,
+      5,
+      7
+    ]
+  },
+  "occupied_cells": 9,
+  "parent_commit": "461942c0bf616518e668d236d1c6b1596665a7dd",
+  "pi_normality_proved": false,
+  "pole_tail_densities": {
+    "11": [
+      "4/11",
+      "4/121",
+      "4/1331"
+    ],
+    "2": [
+      "0",
+      "0",
+      "0"
+    ],
+    "3": [
+      "8/9",
+      "4/9",
+      "4/27"
+    ],
+    "5": [
+      "14/25",
+      "4/25",
+      "4/125"
+    ],
+    "7": [
+      "4/7",
+      "4/49",
+      "4/343"
+    ]
+  },
+  "source": "original U0=0; four signed BBP poles; exact integer lifts",
+  "source_horizon": 13,
+  "source_mask_period": 1575
+}

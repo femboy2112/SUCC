@@ -1,0 +1,53 @@
+{
+  "source_commit": "7719e20a7c02d17bd3ef82f9ef4509d6167e12f3",
+  "python": "3.12.3",
+  "full_suite": {
+    "command": ".venv/bin/python -m unittest discover -s tests -p 'test_*.py'",
+    "count": 8405,
+    "seconds": "960.127",
+    "exit_code": 0
+  },
+  "required_probes": [
+    {
+      "command": ".venv/bin/python scripts/verify_provenance.py",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/bin/python scripts/observer_foundations_probe.py",
+      "exit_code": 0
+    },
+    {
+      "command": ".venv/bin/python scripts/ordinal_succ_report_probe.py",
+      "exit_code": 0
+    }
+  ],
+  "finite_receipt_replay": {
+    "command": ".venv/bin/python scripts/spectral_purity_probe.py --verify research/2026-10-25/spectral_purity_validation/finite_receipt.json",
+    "exit_code": 0
+  },
+  "initial_run": {
+    "status": "interrupted after missing editable-install failure",
+    "exit_code": 130,
+    "repaired_single_test": "passed",
+    "preserved": true
+  },
+  "hosted_ci": "not inferred from local checks",
+  "pi_normality_proved": false,
+  "log_sha256": {
+    "full_unittest.log": "1bd51d296b305f61da9aeab5958e6b2991376f8c2a45801f57c93e338ecf2d0b",
+    "provenance.log": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "observer.log": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "ordinal.log": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "focused.log": "9b84aedbaed6301ee73d9faf3e3b2704ef2e76a40360b0b7ae0acae73ea6c1ac",
+    "parent_focused.log": "307b83a238176e1d9ac36f9887e31923a403fd339ff88ca64f6dbeb6a20ed077",
+    "namespace.log": "c6e6773a7b160a00abbc43e0cafc65314a3e5a35c1a434f47c61fb2515fef85c",
+    "environment_setup.log": "945252c1c3d0dbe24512dee3acc715cf947eb393d6efcc468dc7d7a713029179",
+    "full_failure_replay.log": "0aa835f6c021ca30909934811cc250fea79f5be3377dcc8a00eadd6b5e85d653",
+    "environment_repair_replay.log": "7c7b61d433e5aac177cc4d459c205b0208d6bcaa7e27e975d983162bc955e05a",
+    "full_unittest_initial_environment_failure.log": "ecf820977c4ac57e4082860801697456bd5d0399c6b50af292dcb91b00937dbb",
+    "receipt_mutation.log": "c7c767c1bfe30b2f8daa12aecf6d8a170b148f123b609d6bc1376b052df94694",
+    "modulus_holdout.json": "6c729416138539392011125c9d2efd7b57bdd19b3bc0bdfe8f4437a9a76caabf",
+    "finite_receipt.json": "643f3d308e47ff0281b8322401caf1098d1203613cdcccb872ada18380edbf66"
+  },
+  "python_lean_source_changes_since_commit": false
+}

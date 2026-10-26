@@ -1,0 +1,6 @@
+/tmp/succ-spectral-purity-lean-20261025-final/spectral-build-a40e166n/dropped-good-premise_mutant.lean:4:69: error: type mismatch
+  exact_control
+has type
+  rawEnergy 2 (fun x => 4) 2 / (2 ^ 2 * 2) - 1 ≤ 1 : Prop
+but is expected to have type
+  rawEnergy 2 (fun x => 4) 2 / (2 ^ 2 * 2) - 1 ≤ 1 / 2 : Prop

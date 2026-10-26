@@ -1,0 +1,80 @@
+{
+  "authority": "EXACT FINITE checks; all-N theorem is paper-proved",
+  "rows": [
+    {
+      "log_floor": 64,
+      "offset_kind": "left",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 64,
+      "offset_kind": "after_left",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 64,
+      "offset_kind": "right",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 65,
+      "offset_kind": "left",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 65,
+      "offset_kind": "after_left",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 65,
+      "offset_kind": "right",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 100,
+      "offset_kind": "left",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 100,
+      "offset_kind": "after_left",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 100,
+      "offset_kind": "right",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 127,
+      "offset_kind": "left",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 127,
+      "offset_kind": "after_left",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 127,
+      "offset_kind": "right",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 256,
+      "offset_kind": "left",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 256,
+      "offset_kind": "after_left",
+      "squared_error_bound_check": true
+    },
+    {
+      "log_floor": 256,
+      "offset_kind": "right",
+      "squared_error_bound_check": true
+    }
+  ]
+}

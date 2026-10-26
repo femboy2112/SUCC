@@ -1,0 +1,235 @@
+{
+  "authentic_selected_mixed_phases": [
+    {
+      "n": 1,
+      "p": 2,
+      "phase_turn": "63348283/111035925"
+    },
+    {
+      "n": 2,
+      "p": 2,
+      "phase_turn": "10476504005069/14721786944865"
+    },
+    {
+      "n": 3,
+      "p": 2,
+      "phase_turn": "64977601391580497/410937595656224175"
+    },
+    {
+      "n": 4,
+      "p": 2,
+      "phase_turn": "8381462472136688953/22847300141525142465"
+    },
+    {
+      "n": 1,
+      "p": 3,
+      "phase_turn": "20768999201927/73608934724325"
+    },
+    {
+      "n": 2,
+      "p": 3,
+      "phase_turn": "27275184188622753653/30984694712479302795"
+    },
+    {
+      "n": 3,
+      "p": 3,
+      "phase_turn": "829414818743362000756501987/871805532613805569615010175"
+    },
+    {
+      "n": 4,
+      "p": 3,
+      "phase_turn": "376515713774913927518308590386582813/2068942529796397422580537411324011975"
+    },
+    {
+      "n": 1,
+      "p": 5,
+      "phase_turn": "1825612027711785710393/2261882714010989104035"
+    },
+    {
+      "n": 2,
+      "p": 5,
+      "phase_turn": "2477738630017447146289223778867722/5070345795976700417107163687455275"
+    },
+    {
+      "n": 3,
+      "p": 5,
+      "phase_turn": "1296734307786279482058965385478981247882475873911/23398716238394238022761244527111939455740906156125"
+    },
+    {
+      "n": 4,
+      "p": 5,
+      "phase_turn": "1408091206955361523118421954572773467182642570437806316652/1460212167529284814133323660502934401028676699940974890585"
+    }
+  ],
+  "first_order_jets": {
+    "1": [
+      0,
+      1,
+      0
+    ],
+    "16": [
+      0,
+      16,
+      120
+    ],
+    "2": [
+      0,
+      2,
+      1
+    ],
+    "3": [
+      0,
+      3,
+      3
+    ],
+    "4": [
+      0,
+      4,
+      6
+    ],
+    "8": [
+      0,
+      8,
+      28
+    ]
+  },
+  "flat_prime_potential_test": {
+    "all_prime_squares": true,
+    "horizon": 24,
+    "last": "6/29",
+    "naive_prime_independence_rejected": true
+  },
+  "full_gradient_holonomy": {
+    "authentic_p2n3": "0",
+    "fake_p2n3": "0"
+  },
+  "independent_2x3_prime_twist": "2/3",
+  "input_sha256": {
+    "module": "d1600ba833866826144636739322c058e14aa5580c04ea5e96cd95b8a1647ff3",
+    "probe": "10786e2854e04b56506ae12402db9946c3594dd11eb5385ab9f9b59be6973a2d",
+    "tests": "e156b7b695381c302daad3aa84b437f2a6bdc987784d448a7c3fff11009a0a12"
+  },
+  "nonnormal_fake_mixed_phases": [
+    {
+      "bound": "1/16",
+      "n": 1,
+      "p": 2,
+      "phase": "-5344/1119195"
+    },
+    {
+      "bound": "1/64",
+      "n": 2,
+      "p": 2,
+      "phase": "-135008/117515475"
+    },
+    {
+      "bound": "1/256",
+      "n": 4,
+      "p": 2,
+      "phase": "-173060704/794921610483"
+    },
+    {
+      "bound": "1/1024",
+      "n": 8,
+      "p": 2,
+      "phase": "-1325035552/38171225881425"
+    },
+    {
+      "bound": "1/16",
+      "n": 1,
+      "p": 3,
+      "phase": "-696128/117515475"
+    },
+    {
+      "bound": "1/64",
+      "n": 2,
+      "p": 3,
+      "phase": "-1089472/779875425"
+    },
+    {
+      "bound": "1/256",
+      "n": 4,
+      "p": 3,
+      "phase": "-1705408/6518084265"
+    },
+    {
+      "bound": "1/1024",
+      "n": 8,
+      "p": 3,
+      "phase": "-8277184/199718971725"
+    },
+    {
+      "bound": "1/16",
+      "n": 1,
+      "p": 5,
+      "phase": "-277376384/42112461897"
+    },
+    {
+      "bound": "1/64",
+      "n": 2,
+      "p": 5,
+      "phase": "-412857728/269323884225"
+    },
+    {
+      "bound": "1/256",
+      "n": 4,
+      "p": 5,
+      "phase": "-1409057152/4944259797785"
+    },
+    {
+      "bound": "1/1024",
+      "n": 8,
+      "p": 5,
+      "phase": "-17035089536/378902568962775"
+    }
+  ],
+  "primitive_prime_affine_twist": {
+    "11": "1/11",
+    "2": "1/2",
+    "3": "1/3",
+    "5": "1/5",
+    "7": "1/7"
+  },
+  "schema": "SEINFELD_PHASE_EXACT_V1",
+  "scope": "classical exact algebra and finite certificates; pi normality/RH OPEN",
+  "source_pole_contract": "original four-pole BBP, zero-initial",
+  "unit_root_fibers": [
+    {
+      "F2_geometric_points": 1,
+      "F2_nilpotent_rank": 2,
+      "complex_root_count": 2,
+      "k": 1
+    },
+    {
+      "F2_geometric_points": 1,
+      "F2_nilpotent_rank": 4,
+      "complex_root_count": 4,
+      "k": 2
+    },
+    {
+      "F2_geometric_points": 1,
+      "F2_nilpotent_rank": 8,
+      "complex_root_count": 8,
+      "k": 3
+    },
+    {
+      "F2_geometric_points": 1,
+      "F2_nilpotent_rank": 16,
+      "complex_root_count": 16,
+      "k": 4
+    },
+    {
+      "F2_geometric_points": 1,
+      "F2_nilpotent_rank": 32,
+      "complex_root_count": 32,
+      "k": 5
+    },
+    {
+      "F2_geometric_points": 1,
+      "F2_nilpotent_rank": 64,
+      "complex_root_count": 64,
+      "k": 6
+    }
+  ],
+  "unpaid_debt": "source-selected signed Fourier / real collision estimate and transport to normality"
+}

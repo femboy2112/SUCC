@@ -1,0 +1,6 @@
+/tmp/succ-selected-phase-lean-20261025/selected-build-rb8urrfw/overcounted-block-loss_mutant.lean:4:44: error: type mismatch
+  exact_control
+has type
+  100 - 3 / 1250 ≤ 100 - 2 / 1250 : Prop
+but is expected to have type
+  100 - 3 / 1250 ≤ 100 - 4 / 1250 : Prop

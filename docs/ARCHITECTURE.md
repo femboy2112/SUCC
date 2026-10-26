@@ -1,5 +1,46 @@
 # Architecture of Observational SUCC
 
+**Source-faithful internal matrix successor (2026-10-25, draft stacked on
+SGO #293):** a single external \(n\mapsto n+1\) evolves a Hermitian
+Fourier Gram by an exact rank-one source current, whose time
+derivative is an authenticated Fejér relative-phase kernel. Its
+frequency-ladder dual is a weighted Koopman shift with an essential
+outgoing high-mode boundary. The BBP four-pole source has a
+provably nonuniform n² twist and n³ time-difference band, forbidding
+the jump from fixed Fourier-frequency convergence to uniform
+frequency-carrier convergence. Walsh/Pascal cross-checks retain the
+four-bit highest-order interaction. **No π normality or RH conclusion.**
+[Exact math](../research/2026-10-25/SUCC_INTERNAL_MATRIX_WALK.md) ·
+[claim authority](CLAIM_SUPPLEMENT_SUCC_INTERNAL_MATRIX.md).
+
+
+**Signed gamma zero and bounded forward/backward orbit transport (2026-10-25,
+stacked research):** A source-matched zero-total signed measure gives strict
+positive higher BBP-versus-Gamma moment determinants in every degree; Euler
+\(\gamma\) is exactly the sum of eight \(\mathrm{SUCC}^8\) residue carriers.
+The authentic BBP source has complementary forward and bounded future Green
+zero-relations. Their exact rational finitary certificates yield a uniform
+\(O_h(1)\) comparison between selected π and original rational-carrier Weyl
+sums, without asserting any nontrivial cancellation. This adds explicit
+boundary conditions and a signed source discriminator to the
+[Contextual Zero Backbone](CONTEXTUAL_ZERO_BACKBONE.md), but **π normality
+and RH remain OPEN**. [Full dossier](../research/2026-10-25/SIGNED_GAMMA_BBP_GREEN_COHERENCE.md) ·
+[claim authority](CLAIM_SUPPLEMENT_SIGNED_GAMMA_BBP.md).
+
+
+**Zero/one Gamma carrier and authentic BBP comparison (2026-10-25; staged on contextual-zero):** explicitly typed additive unit vs logarithmic unit, shifted Euler defect with unique infinity-normalization, positive Hausdorff moment transport, all-dimensional `4 H_Gamma <= H_BBP <= 30 H_Gamma`, and finite matched-jet positive source countermodels. [Dossier](../research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md) · [claims](CLAIM_SUPPLEMENT_GAMMA_ZERO_ONE_BRIDGE.md). This is a proved mathematical bridge between positive carriers, **not** a derived signed Weil source or π-normality theorem.
+
+**Contextual-zero backbone (2026-10-25, staged research only):**
+the observer begins at an incomplete source-indexed position, knows which
+zero-relations the evidence actually supports, spends resources on licensed
+measurements and actions, and plans toward a target. A typed chart can
+transport a zero without transporting an inverse; current-belief truths
+must not become universal laws; a proposed action never writes an actual
+event. [Core definitions and limitations](CONTEXTUAL_ZERO_BACKBONE.md);
+[finite theorem and hostile controls](../research/2026-10-25/CONTEXTUAL_ZERO_NAVIGATION_RECEIPT.md);
+[CZB-01–12 claim supplement](CLAIM_SUPPLEMENT_CONTEXTUAL_ZERO_BACKBONE.md).
+The backbone implementation depends on CZR #290 and is not yet merged.
+
 **Source-faithful renormalization extension (2026-10-23).** A source action
 must be transported with its future observation language and any unresolved
 residue environment. Full carry decomposition is unitary; quotient-only and
@@ -31,6 +72,7 @@ and [RP claim authority](CLAIM_SUPPLEMENT_REALITY_PIN.md).
 | Layer | Mathematical responsibility | Modules |
 | --- | --- | --- |
 | Physical carrier and outcome semantics | Finite quantum states, instruments, causal records; exact stochastic readouts and distinguishability loss | quantum_records, operational_semantics |
+| Contextual zero and goal-directed epistemic navigation | Certified finite-source zero laws versus belief-relative local relations, paid probes and lawful moves, model-valid adaptive goal policies, provenance-preserving history | coherent_zero_relations, contextual_zero_navigation |
 | Field-relative causal events | Immutable journal, actualized versus pending observations, finite SUCC and contexts | core, engine, arithmetic |
 | Semantic representation and observability | Probe families, Yoneda-style restriction, witnessed factorization paths and loss of distinguishability | phenomenology, yoneda, resource_probe, local_global, circle_transport |
 | Ideal source-identification and model-relative access | Finite source-compatible version spaces, actualized probe histories, adversarial stationary access traps, conditional reconstruction and finite/omega/dark classification | ideal_frames, observer_traps |

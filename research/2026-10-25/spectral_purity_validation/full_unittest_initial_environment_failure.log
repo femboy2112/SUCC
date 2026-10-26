@@ -1,0 +1,64 @@
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/observational_succ/apollo_source_first_interference.py:91: SyntaxWarning: invalid escape sequence '\|'
+  """EXACT continuum finite-step controls, no numerical quadrature.
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/observational_succ/prime_surplus_dual.py:1: SyntaxWarning: invalid escape sequence '\p'
+  """Exact prime-edge inverse and source-compatible Schur residual saving.
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/observational_succ/prime_surplus_dual.py:174: SyntaxWarning: invalid escape sequence '\p'
+  """Finite exact Hilbert-observer counterpart of polynomial-quotient inverse.
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/observational_succ/tate_finite_bruhat_observers.py:345: SyntaxWarning: invalid escape sequence '\h'
+  """True p-adic additive Haar distribution is coherent across scales.
+.......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................E.........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/usr/lib/python3.12/unittest/__main__.py", line 18, in <module>
+    main(module=None)
+  File "/usr/lib/python3.12/unittest/main.py", line 105, in __init__
+    self.runTests()
+  File "/usr/lib/python3.12/unittest/main.py", line 281, in runTests
+    self.result = testRunner.run(self.test)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/runner.py", line 240, in run
+    test(result)
+  File "/usr/lib/python3.12/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/suite.py", line 122, in run
+    test(result)
+  File "/usr/lib/python3.12/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/suite.py", line 122, in run
+    test(result)
+  File "/usr/lib/python3.12/unittest/suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/suite.py", line 122, in run
+    test(result)
+  File "/usr/lib/python3.12/unittest/case.py", line 690, in __call__
+    return self.run(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/case.py", line 634, in run
+    self._callTestMethod(testMethod)
+  File "/usr/lib/python3.12/unittest/case.py", line 589, in _callTestMethod
+    if method() is not None:
+       ^^^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/tests/test_hidden_memory_schur.py", line 272, in test_original_source_budget_decay
+    a=H.original_source_memory_budget(5)
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/observational_succ/hidden_memory_schur.py", line 305, in original_source_memory_budget
+    cert=authenticate_original_jump_rank_budget()
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/observational_succ/source_jump_spectral.py", line 324, in authenticate_original_jump_rank_budget
+    wb4=source_parity_split_four_moment_coercivity_certificate()
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/observational_succ/tate_weighted_bessel_four_schur.py", line 469, in source_parity_split_four_moment_coercivity_certificate
+    even_leak = parity_weighted_Bessel_leakage_upper(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/observational_succ/tate_weighted_bessel_four_schur.py", line 407, in parity_weighted_Bessel_leakage_upper
+    weighted += gap * band_slack
+  File "/usr/lib/python3.12/fractions.py", line 615, in forward
+    return monomorphic_operator(a, b)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/fractions.py", line 718, in _add
+    t = na * (db // g) + nb * s
+                         ~~~^~~
+KeyboardInterrupt

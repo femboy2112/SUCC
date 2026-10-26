@@ -1,0 +1,49 @@
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/formal/SpectralPurity.lean:89:8: error: unknown constant 'Finset.mul_sum'
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/formal/SpectralPurity.lean:89:8: error: tactic 'rewrite' failed, equality or iff proof expected
+  ?m.8422
+H : ℝ
+q : ℕ → ℝ
+N : ℕ
+⊢ ∑ m ∈ Finset.range N, ↑m * H = H * ∑ m ∈ Finset.range N, ↑m
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/formal/SpectralPurity.lean:103:2: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/formal/SpectralPurity.lean:132:32: error: unknown constant 'Finset.mul_sum'
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/formal/SpectralPurity.lean:132:30: error: tactic 'rewrite' failed, equality or iff proof expected
+  ?m.37690
+H eta : ℝ
+q : ℕ → ℝ
+bad : ℕ → Prop
+inst✝ : DecidablePred bad
+N : ℕ
+hH : 0 ≤ H
+heta : 0 ≤ eta
+upper : ∀ m ∈ Finset.range N, q m ≤ H ^ 2
+good : ∀ m ∈ Finset.range N, ¬bad m → q m ≤ H * (1 + eta)
+point : ∀ m ∈ Finset.range N, ↑m * (q m - H) ≤ eta * H * ↑m + H ^ 2 * if bad m then ↑m else 0
+total : ∑ i ∈ Finset.range N, ↑i * (q i - H) ≤ ∑ i ∈ Finset.range N, (eta * H * ↑i + H ^ 2 * if bad i then ↑i else 0)
+⊢ (∑ x ∈ Finset.range N, eta * H * ↑x + ∑ x ∈ Finset.range N, H ^ 2 * if bad x then ↑x else 0) ≤
+    eta * H * (↑N * (↑N - 1) / 2) + H ^ 2 * badWeight bad N
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/formal/SpectralPurity.lean:153:4: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ObservationalSUCC.SpectralPurity.raw_energy_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ObservationalSUCC.SpectralPurity.pair_energy_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ObservationalSUCC.SpectralPurity.pair_energy_eq_raw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ObservationalSUCC.SpectralPurity.sum_time_weights' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ObservationalSUCC.SpectralPurity.signed_sum_rewrite' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.SpectralPurity.sequential_normalized_identity' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.SpectralPurity.exceptional_signed_sum_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.SpectralPurity.exceptional_normalized_bound' depends on axioms: [propext,
+ sorryAx,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.SpectralPurity.discarded_innovation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'ObservationalSUCC.SpectralPurity.discarded_normalized_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

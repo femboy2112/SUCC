@@ -1,0 +1,58 @@
+{
+  "analytic_transport_formalized": false,
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-j",
+        "1",
+        "-M",
+        "2048",
+        "-DmaxHeartbeats=1200000",
+        "-o",
+        "/tmp/succ-spectral-purity-lean-20261025/spectral-build-5kkkp8nz/SpectralPurity.olean",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity/formal/SpectralPurity.lean"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity",
+      "exit_code": -6,
+      "label": "finite-kernel",
+      "log": "finite-kernel.log",
+      "log_sha256": "48bc2200174632932b9ea98fd0a0c30e6dc353ce535531045f1c7efc7b79940a",
+      "seconds": 2.115
+    }
+  ],
+  "commit_at_end": "461942c0bf616518e668d236d1c6b1596665a7dd",
+  "commit_at_start": "461942c0bf616518e668d236d1c6b1596665a7dd",
+  "complex_character_bridge_formalized": false,
+  "dependency_project": "/home/leah/SUCC-rf/formal/mathlib_bridge",
+  "dependency_revisions": {
+    "Cli": "726b3c9ad13acca724d4651f14afc4804a7b0e4d",
+    "LeanSearchClient": "d7caecce0d0f003fd5e9cce9a61f1dd6ba83142b",
+    "Qq": "303b23fbcea94ac4f96e590c1cad6618fd4f5f41",
+    "aesop": "5a0ec8588855265ade536f35bcdcf0fb24fd6030",
+    "batteries": "8d6c853f11a5172efa0e96b9f2be1a83d861cdd9",
+    "importGraph": "519e509a28864af5bed98033dd33b95cf08e9aa7",
+    "mathlib": "4bbdccd9c5f862bf90ff12f0a9e2c8be032b9a84",
+    "plausible": "42dc02bdbc5d0c2f395718462a76c3d87318f7fa",
+    "proofwidgets": "68280daef58803f68368eb2e53046dabcd270c9d"
+  },
+  "failures": [
+    "finite-kernel"
+  ],
+  "historical_authority_modified": false,
+  "lean_version": "Lean (version 4.14.0, x86_64-unknown-linux-gnu, commit 410fab728470, Release)",
+  "negative_controls": [],
+  "normality_proved": false,
+  "schema": "succ.spectral-purity.lean-observation.v1",
+  "source_hashes": {
+    "formal/SpectralPurity.lean": "6299125bc3c798ee03e96ca559031993b93096d52ef137358fe719b3eefce6ba",
+    "formal/kernel_audit/ExportCommand.lean": "026bd4a8d919f83a4e83fd593499c108757f87868dfe66ca05a7bc340c339d60",
+    "formal/mathlib_bridge/lake-manifest.json": "80d5b4bd8497f01e75164c1d030add71ed7fadd7d26e2fc140f4b9462759a41d",
+    "lean-toolchain": "6faf6530819a0bc6d6092a2d9b974ea8e8adfec955d0e51e02e1f82734264d14",
+    "scripts/cambrian_audit_c_lean.py": "6a10d0e18e5f9fec8846431bb6aa4919b8552c034ade937eb565c8133d91e37c",
+    "scripts/check_spectral_purity_lean.py": "60f8d35edbdeb5573e4a8022d75fd0e0030819e8afe16c87f0fddf2ec83029cc"
+  },
+  "sources_unchanged": true,
+  "status": "FAILED",
+  "theorem_exports": {}
+}

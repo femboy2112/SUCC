@@ -14,6 +14,70 @@
   },
   "namespaces": [
     {
+      "namespace": "PI_SELECTED_PHASE_FORGE",
+      "bare_prefix": "PSF",
+      "fq_prefix": "PSF",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md"],
+      "id_count": 14,
+      "status": "RESEARCH (CLASSICAL/PAPER-PROVED/EXACT FINITE/LEAN KERNEL/CONDITIONAL/REFUTED/OPEN); pi normality OPEN",
+      "topic": "authentic logarithmic absolute Fourier loss, sparse birth-carry transport, sharp clock comparison, and positive carry/conductor controls",
+      "code": [
+        "observational_succ/bbp_diophantine_coherence.py",
+        "observational_succ/bbp_clock_transport.py",
+        "observational_succ/bbp_positive_carry_control.py",
+        "observational_succ/bbp_sparse_carry_transport.py",
+        "formal/SelectedPhase.lean"
+      ]
+    },
+    {
+      "namespace": "OPERATION_SPECTRAL_PURITY",
+      "bare_prefix": "OSP",
+      "fq_prefix": "OSP",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_SPECTRAL_PURITY.md"],
+      "id_count": 14,
+      "status": "RESEARCH (CLASSICAL/PAPER-PROVED/EXACT FINITE/LEAN KERNEL/CONDITIONAL/REFUTED/OPEN); pi normality OPEN",
+      "topic": "authentic BBP conductor-birth innovation removal, spectral Green transport, relative cyclotomic trace, simultaneous prefix and jet countermodels",
+      "code": [
+        "observational_succ/spectral_purity_innovation.py",
+        "observational_succ/spectral_purity_arithmetic.py",
+        "observational_succ/spectral_purity_multiscale.py",
+        "observational_succ/spectral_purity_certificates.py",
+        "formal/SpectralPurity.lean"
+      ]
+    },
+    {
+      "namespace": "SEINFELD_PHASE_FROBENIUS_COHERENCE",
+      "bare_prefix": "SPH",
+      "fq_prefix": "SPH",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SEINFELD_PHASE.md"
+      ],
+      "id_count": 9,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/REFUTED/OPEN); normality RH OPEN; no Lean kernel",
+      "topic": "Seinfeld null-unit phase root inverse towers, characteristic-2 Frobenius nonreduced mu_2^k, conormal jets, arithmetic prime SUCC/FUCC phase coherence, all-prime potential classification and source-selected mixed-phase countermodels",
+      "code": [
+        "observational_succ/seinfeld_phase.py",
+        "tests/test_seinfeld_phase.py",
+        "scripts/seinfeld_phase_probe.py"
+      ]
+    },
+    {
+      "namespace": "SEINFELD_SUCC_NULL_PROVENANCE",
+      "bare_prefix": "SS",
+      "fq_prefix": "SS",
+      "supplement_files": [
+        "docs/CLAIM_SUPPLEMENT_SEINFELD_SUCC.md"
+      ],
+      "id_count": 9,
+      "status": "RESEARCH (CLASSICAL/PROVED PAPER/EXACT FINITE/NEGATIVE/OPEN); pi normality and RH OPEN; no Lean kernel authority",
+      "topic": "labelled formal zero witnesses; source-SUCC recurrence syzygies and rank; affine SUCC/FUCC null-cycle holonomy; real 16-adic circle inverse fibers versus odd-torsion unique inverse and discontinuity; p-integral Frobenius carry lifts; odd positive four-pole nonnormal counterfeit matching leading BBP 15/(64n^2) coefficient",
+      "code": [
+        "observational_succ/seinfeld_succ.py",
+        "tests/test_seinfeld_succ.py",
+        "scripts/seinfeld_succ_probe.py"
+      ]
+    },
+    {
       "namespace": "HARMONIC_MIRROR_SUCC_PI",
       "bare_prefix": "HMS",
       "fq_prefix": "HMS",
