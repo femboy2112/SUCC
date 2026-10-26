@@ -1,0 +1,64 @@
+{
+  "dossier_sha256": "7ea44a1a6a00524a66450f2db60e933b64e20e0a061d39a2a8d8fe4ca0b9b423",
+  "green_tail_bounds": {
+    "1": [
+      "1/198",
+      "1/90"
+    ],
+    "2": [
+      "13/5814",
+      "1/306"
+    ],
+    "4": [
+      "29/39270",
+      "1/1122"
+    ],
+    "8": [
+      "61/287430",
+      "1/4290"
+    ]
+  },
+  "impulse_first_eight": [
+    "4",
+    "0",
+    "0",
+    "-2",
+    "-1",
+    "-1",
+    "0",
+    "0"
+  ],
+  "matrix_identities": {
+    "G2_quarter_turn": true,
+    "G4_negative": true,
+    "G8_H8_equal": true,
+    "H2_half_identity": true,
+    "H4_positive": true
+  },
+  "minimal_reduced_rational_state_dimension": 4,
+  "minimal_shared_scalar_return": 8,
+  "pi_normality_proved": false,
+  "polynomial_identities": {
+    "P_equals_boundary_times_cancelled": true,
+    "first_endpoint_jet": true,
+    "numerator_endpoint_zero": true,
+    "octic_factorizes": true,
+    "reduced_identity": true
+  },
+  "rational_radial_cutoffs": {
+    "0": "0",
+    "1": "2/105",
+    "2": "67/90090",
+    "3": "1443053/42833831040",
+    "4": "953321527/577614211574400"
+  },
+  "scholarly_priority_claimed": false,
+  "signed_source_channels": {
+    "angular_equals_4_over_angle": true,
+    "radial_equals_logarithmic_derivative": true,
+    "taps_sum_to_original": true
+  },
+  "signed_weyl_saving_proved": false,
+  "source_module_sha256": "f95f5911be7c56e5e41194d70e458821468014cbf666ed96ed8e0eb71a464cb3",
+  "tests_sha256": "9fb074badfb029b0309e4f0f2894ea1f3e89acdac75c7554e1b6cd394d17cd18"
+}
