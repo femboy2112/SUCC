@@ -1,5 +1,16 @@
 # Observational SUCC
 
+**Selected-phase forge (2026-10-25, stacked on #301):**
+[proof dossier](research/2026-10-25/PI_SELECTED_PHASE_FORGE.md) ·
+[PSF claim ledger](docs/CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md).
+The authentic orbit has a proved logarithmic **absolute** loss from maximal
+Fourier reinforcement, using exact Green cancellation and a published
+irrationality bound. Sparse conductor-birth carries can also be removed with
+a proved spectral comparison at width growing like log time to the power
+3/2. Positive carry/tower controls expose the necessary vanishing-tail
+condition. Eight finite Lean declarations are checked. **The signed sums
+are not proved sublinear; pi normality remains open.**
+
 **Operation Spectral Purity (2026-10-25, stacked on #296):**
 [proof dossier](research/2026-10-25/OPERATION_SPECTRAL_PURITY.md) ·
 [OSP claim ledger](docs/CLAIM_SUPPLEMENT_SPECTRAL_PURITY.md).

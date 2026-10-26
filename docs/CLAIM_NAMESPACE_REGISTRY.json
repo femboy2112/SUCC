@@ -14,6 +14,22 @@
   },
   "namespaces": [
     {
+      "namespace": "PI_SELECTED_PHASE_FORGE",
+      "bare_prefix": "PSF",
+      "fq_prefix": "PSF",
+      "supplement_files": ["docs/CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md"],
+      "id_count": 14,
+      "status": "RESEARCH (CLASSICAL/PAPER-PROVED/EXACT FINITE/LEAN KERNEL/CONDITIONAL/REFUTED/OPEN); pi normality OPEN",
+      "topic": "authentic logarithmic absolute Fourier loss, sparse birth-carry transport, sharp clock comparison, and positive carry/conductor controls",
+      "code": [
+        "observational_succ/bbp_diophantine_coherence.py",
+        "observational_succ/bbp_clock_transport.py",
+        "observational_succ/bbp_positive_carry_control.py",
+        "observational_succ/bbp_sparse_carry_transport.py",
+        "formal/SelectedPhase.lean"
+      ]
+    },
+    {
       "namespace": "OPERATION_SPECTRAL_PURITY",
       "bare_prefix": "OSP",
       "fq_prefix": "OSP",

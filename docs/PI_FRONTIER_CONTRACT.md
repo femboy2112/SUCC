@@ -168,6 +168,65 @@ are paper proofs. Pi normality remains **OPEN**.
 
 ---
 
+## Validated selected loss and wider carry transport (PSF)
+
+The [selected-phase dossier](../research/2026-10-25/PI_SELECTED_PHASE_FORGE.md)
+proves a new upper bound on the actual signed sum. For one universal integer
+$J_0$, all $N\ge1$ and $h\ne0$ satisfy
+
+$$
+|S_N^U(h)|\le N-\frac1{1250}
+\max\left(0,\lfloor\log_8N\rfloor-
+\max\left(J_0,\lceil\log_{64}|h|\rceil\right)\right).
+$$
+
+This **PAPER-PROVED logarithmic absolute loss** uses the authentic zero
+anchor and the published bound $\mu(\pi)<15/2$. An almost maximally coherent
+$(m,8m]$ block would yield an impermissibly accurate rational approximation
+after exact Green cancellation. The numerical onset $J_0$ has not been
+extracted. The normalized upper bound tends to one: this is not $o(N)$
+cancellation and does not close the matrix gate.
+
+A separate quantitative comparison removes **all conductor-birth carries**
+from the derived bounded profile
+
+$$
+Y_n=\sum_{j\ge1}16^{-j}c_{n+j}=\{U_n\}+T_n,
+\qquad c_n=\lfloor U_n\rfloor-16\lfloor U_{n-1}\rfloor.
+$$
+
+Call the censored profile $Y_n^{\rm flat}$, setting only carries with
+$Q_k>Q_{k-1}$ to zero. The comparison pays each deleted carry's
+$O(\log |h|)$ influence and the entire $O((\log |h|)^2)$ future boundary.
+The proved birth count gives vanishing root-spectral error whenever
+$\sqrt H\log H=o(\log N)$. One prescribed valid width is
+
+$$
+H_N=\max\left(2,1+\left\lfloor
+\sqrt{\lfloor\log_2N\rfloor^3}\right\rfloor\right).
+$$
+
+At this width, an $o(1)$ normalized purity bound for $Y^{\rm flat}$ would
+prove the same for pi. **That source-selected estimate is OPEN.** The
+censored sequence is a defined observable of the original source, not an
+independently generated or Haar-distributed replacement.
+
+Two additional boundaries are now proved. Genuine sample-clock reweighting
+costs at most $\sqrt{H/2}$ times its probability-measure $\ell^1$ change,
+so $\sqrt H Q=o(N)$ suffices for its transport. Conversely, positive forcing,
+the exact complete carry and conductor tapes, zero initialization and even
+the scaled source sum $\pi/16$ admit a nonnormal rational-state control.
+Its forcing and Green tail do not vanish. Common carries **plus vanishing
+forcing difference** instead force asymptotic phase agreement by the exact
+backward recurrence. These statements isolate a real source-map boundary;
+none supplies the missing temporal cancellation.
+
+See [PSF-01--14](CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md) for authority and
+counterexamples. The eight new finite Lean declarations do not formalize
+the analytic irrationality input or the infinite normality consequence.
+
+---
+
 ## Route A — selected harmonic / cyclotomic saving (#284)
 
 **Statement to prove.** For each fixed nonzero integer $h$, with the authentic
