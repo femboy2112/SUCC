@@ -44,9 +44,11 @@ with all of the following properties simultaneously:
 1. $R(t)>0$ for $0\leq t<1$, $R(1)=0$, and $\beta$ is rational with odd
    denominator. Every $T_n^*$, $r^*(n+1)$ and $U_n^*$ has odd denominator.
 2. $U_0^*=0$, $r^*(j)=r(j)$ for $1\leq j\leq M$, and $U_j^*=U_j$ for
-   $0\leq j\leq M$. Hence all exact prime channels, lift values, carries,
+   $0\leq j\leq M$. Hence all exact prime channels, lift values, rational-recurrence carries,
    source matrices and finite source differences supported inside that prefix
    agree, without substituting a marginal law.
+   These are not automatically certified true pi digit indicators, which
+   require the original future Green correction and boundary checks.
 3. Every finite difference of the forcing and tail has the strict Hausdorff
    sign: $(-1)^b\Delta^b r^*(n+1)>0$ and
    $(-1)^b\Delta^b T_n^*>0$ for all $n,b\geq0$. Every finite Hankel matrix

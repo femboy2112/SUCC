@@ -322,6 +322,40 @@ schedule. Birth contributions require no further selected-embedding
 estimate. The remaining sum is still OPEN; the established saving does
 not control its density-one timeline.
 
+### An effective modulus for the removed part
+
+Let $t=\lfloor\log_2N\rfloor\ge64$, and denote the flat-step sum in AR-6
+by $J_N^{\rm flat}$. A convenient explicit bound is
+
+$$
+\boxed{\left|D_{N,H_N}/H_N-J_N^{\rm flat}\right|
+\le\frac{130}{\sqrt t}.}
+$$
+
+Indeed $L=t+3$, $K\le t+4$, $N\ge2^t$, and $\sqrt8<3$ give
+
+$$
+\frac{B_N}{N}\le3(t+3)2^{-t/2}+\frac{64}{t+3}.
+$$
+
+Since $H_N-1\le\sqrt t$, the birth contribution is at most
+$6\sqrt t(t+3)2^{-t/2}+128/\sqrt t$.
+For every integer $t\ge64$, $6t(t+3)\le2^{t/2}$. To prove it, square
+both sides, check $t=64$, and note that the left side's successive ratio
+is at most $(65/64)^4<2$, the ratio on the right. Thus the birth bound is
+at most $129/\sqrt t$. The rank boundary is at most $1/\sqrt t$ because
+$t\le N$. This proves the displayed modulus for every such $N$.
+
+In particular, for any $\varepsilon>0$, the effective cutoff
+
+$$
+N\ge2^{\left\lceil\max\left(64,(130/\varepsilon)^2\right)\right\rceil}
+$$
+
+guarantees removal error at most $\varepsilon$. This very loose cutoff
+controls only the part already proved negligible, not $J_N^{\rm flat}$.
+It is not an effective normality theorem.
+
 ## 6. Exact conductor and positivity still admit maximal reinforcement
 
 **Theorem AR-7 (positive exact-conductor counterfeit).** Use the authentic

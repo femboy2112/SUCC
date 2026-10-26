@@ -88,6 +88,11 @@ of one arithmetic class, not a claim that most of the statistical problem
 has disappeared. A prescribed-width purity condition can be stronger than
 qualitative equidistribution; no converse at this particular rate is asserted.
 
+For $t=\lfloor\log_2N\rfloor\ge64$, the known removal error is at most
+$130/\sqrt t$. Thus $N\ge2^{\lceil\max(64,(130/\varepsilon)^2)\rceil}$
+is an explicit sufficient cutoff for that error to be at most any given
+$\varepsilon>0$. It supplies no estimate on the remaining signed sum.
+
 Full proof: [arithmetic dossier](SPECTRAL_PURITY_ARITHMETIC.md), AR-3--AR-5.
 
 ## 3. A sharper source transfer, and the equivalence check
@@ -153,6 +158,18 @@ The earlier Source Genesis dossiers already refute finite tail jets alone
 and certain non-coboundary variants. The strengthening here is simultaneous
 exact arbitrary finite source-prefix matching, arbitrary jets, positivity,
 and global odd denominators, with a constructive exact certificate.
+
+**Zero relations and positive carriers.** The forward recurrence, backward
+Green equation, Gram update and Pascal differences give compatible exact
+zero relations. Their algebraic compatibility is also satisfied by the
+changed sources, with their own explicitly labelled forcing. The new
+relative matrix trace is an additional arithmetic relation, but the
+selected-embedding counterexample prevents promoting it to the needed
+inequality. Likewise, positive Gamma comparisons and all-size moment Hankel
+positivity do not constrain the missing signed temporal average. The
+Walsh control retains the top interaction explicitly. No commuting diagram,
+scalar positivity statement, or incomplete prime marginal is used as an
+unproved source-selection theorem.
 
 ## 5. Mandatory hostile controls and the failed assumption
 
