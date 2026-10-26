@@ -2,7 +2,7 @@
 
 Only the forcing-agnostic ladder identity is a certificate (residual == 0 exactly);
 lambda_N(h) is OBSERVED and asserted only to compute finitely.  The honest flags must
-stay False (the contraction is UNVERIFIED / OPEN).
+stay False; the literal unbounded-frequency contraction is REFUTED.
 """
 import unittest
 from fractions import Fraction as Q
@@ -25,7 +25,8 @@ class LadderContractionProbe(unittest.TestCase):
             self.assertGreaterEqual(lam, 0.0)
 
     def test_honest_flags(self):
-        self.assertFalse(lp.ladder_contraction_proved)   # UNVERIFIED / OPEN
+        self.assertFalse(lp.ladder_contraction_proved)
+        self.assertTrue(lp.unbounded_frequency_contraction_refuted)
         self.assertFalse(lp.pi_normality_proved)
 
     def test_report_states_open(self):

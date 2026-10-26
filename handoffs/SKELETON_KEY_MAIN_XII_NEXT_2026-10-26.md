@@ -1,4 +1,20 @@
-# Next round — the even-h sub-band, then the x16 ladder contraction
+# Historical next-round proposal — superseded after exact counterexamples
+
+**Do not execute the two steps below as valid reductions.** The October 26
+[source-bridge audit](../research/2026-10-26/OILY_MACARONI_SOURCE_BRIDGE.md#11-two-inherited-shortcuts-are-now-explicitly-corrected)
+refutes (1) the marginal-only even-frequency shortcut with an exact two-digit law and
+(2) the literal unbounded-frequency contraction target with authentic common-denominator
+resonances. The raw frequency ladder is a time shift with a bounded defect. Its contraction
+cannot simply be compounded as the original text claimed. A uniform growing-band bound
+also needs `H_N(1-c_N)^2 -> 0`, stronger than `c_N -> 1` alone.
+
+Use [the corrected handoff](OILY_MACARONI_RELATIVE_PHASE_NEXT_2026-10-26.md).
+The previous proposal follows as an explicitly **superseded record**, preserving the
+precise claims that the new controls falsified.
+
+---
+
+## Original proposal (superseded)
 
 **For:** Codex / Astra (next math round). **Base:** `origin/main` after the Skeleton-Key / Main XII
 staging PR merges. **Supersedes the framing of** `handoffs/CODEX_ASTRA_MODERATE_COHERENCE_NEXT_2026-10-26.md`

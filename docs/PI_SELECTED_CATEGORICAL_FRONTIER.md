@@ -36,7 +36,7 @@ There exists an integer $J_0$ such that for all $N\ge 1$ and all $h\neq 0$,
 
 $$ \left\lvert \sum_{n\le N} e(hU_n)\right\rvert \;\le\; N-\frac{1}{1250}\,\max\!\Big(0,\ \lfloor\log_8 N\rfloor-\max(J_0,\ \lceil\log_{64}\lvert h\rvert\rceil)\Big). $$
 
-This is a **modulus upper bound**. The normalized modulus still tends to $1$. It is **not**
+This is a **modulus upper bound**. The normalized upper bound tends to $1$. It is **not**
 $S_N(h)=o(N)$ and the branch says so (`CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md`, PSF-14 OPEN).
 
 - **Role of $\mu(\pi)$.** Enters only through DC-2 (existence of a rational $C\in(0,1]$ with
@@ -83,19 +83,20 @@ $h<H_N$, which is *stronger* than fixed-$h$ Weyl) implies normality via transpor
    and gives no smallness criterion.
 3. **Structural ceiling of the current method.** The finite inverse lemma requires
    $34a+\lvert h\rvert\cdot(\text{range }r)<1$, forcing $a<1/34$, so it only controls an
-   *absolute* block loss $\le 8a^2<2/289$, independent of block length. Getting $o(N)$ needs a
-   positive-proportion *relative* loss on a positive proportion of blocks — a **moderate-coherence
-   inverse theorem that does not exist on the branch**.
+   *absolute* block loss $\le 8a^2<2/289$, independent of block length. This cannot yield
+   $o(N)$ by additive block bounds. Even a fixed relative loss is insufficient (§3.5);
+   an additional signed or cumulative estimate has to be proved.
 4. **Diophantine input alone cannot suffice (Control C).** $\xi=\sum 16^{-2^k}$ has irrationality
    exponent $2$ yet Fourier sums $N+O_h(\log N)$. Any extension must use the zero anchor $U_0=0$
    and the actual source, not just an irrationality bound.
 5. **A fixed positive-proportion relative block loss is insufficient (Main XII, SK2-A1, proved).**
    For every fixed $c\in(0,1)$ and every positive-density set of width-8 blocks,
    $|S_B(h)|\le(1-c)|B|$ gives by the triangle inequality only $|S_N(h)|\le(1-c')N$ (linear) and
-   feeds the §2 statistic as $R^2_{N,H}=(1-c)^2(H_N-1)=\Theta(H_N)$, which diverges. Sufficiency
-   needs $c=c_N\to1$ (full relative loss), reachable only via the multiplicative $\times16$
-   frequency-ladder composition or signed $L^2$ cross-block cancellation — **not** additive
-   block accumulation. The DC-5 single-step lemma is moreover capped at $a<1/34$ with an
+   permits the §2 upper envelope $(1-c)^2(H_N-1)=\Theta(H_N)$, rather than proving it small.
+   For a uniform mode bound $|A_N(h)|\le1-c_N$, sufficiency requires the stronger rate
+   $H_N(1-c_N)^2\to0$; merely $c_N\to1$ does not suffice for the growing-band gate.
+   A genuine signed or multiscale estimate must supply this saving. The DC-5 single-step
+   lemma is moreover capped at $a<1/34$ with an
    *absolute* loss $<2/289$ (SK2-A2); escape needs the joint phase across $\ge2$ consecutive
    $\times16$ steps.
 6. **The occupancy baseline is not the gate (Main XII, SK2-TRAP, proved).** The rational
@@ -104,6 +105,41 @@ $h<H_N$, which is *stronger* than fixed-$h$ Weyl) implies normality via transpor
    **not** the §2 Weyl statistic (which is the *evaluated* complex quantity and separates the
    authentic orbit from counterfeits). A rational "$R^2$" read off a coefficient is the collision
    baseline, never the gate. See `observational_succ/signed_pushforward.py`.
+7. **The proposed raw frequency ladder is a time shift (October 26 audit).** At fixed $h$,
+   $A_N(16h)-A_N(h)=O_h(1/N)$ for the authentic source; an explicit moving-band bound is
+   $(2+\sqrt{105|h|/8})/N$. Thus a uniform ratio below one already implies bounded
+   unnormalized sums. For fixed $N$, the literal unbounded-$h$ ratio target is false:
+   multiples of the exact common denominator make both averages equal to one.
+   See `observational_succ/ladder_shift_audit.py` and the source-bridge dossier below.
+8. **Even frequencies retain cross-digit high-order terms (October 26 audit).** Vanishing of
+   the top Walsh coefficient of one digit does not remove the fourth-order terms of a
+   multi-digit word. The exact two-digit law with parity constraint on bits $\{0,4,5,6\}$
+   has all joint marginals of order at most three uniform, and both complete digit
+   marginals uniform, but a nonzero Fourier coefficient at $h=2$. The earlier
+   marginal-only even-band shortcut is refuted; additional source-time joint laws are needed.
+
+The new [logarithmic source bridge](../research/2026-10-26/OILY_MACARONI_SOURCE_BRIDGE.md)
+proves exact Gamma-mixture and BBP/Euler error comparisons. It supplies no selected
+signed saving. A source-relative log phase has harmonic mean drift but only a summable
+$O_t(n^{-2})$ coherence loss. A changing frequency `t_n=16 pi k n` does give auxiliary
+circle cancellation `Theta_n(k)=O_k(1/n)` with an explicit leading coefficient, using
+the exact uniform-unit-cell factor of the source. A rational nonnormal uniform-cell
+control matches the first two moments AND this auxiliary cancellation. The DC-1
+modulus frontier remains unchanged.
+
+The [four-pole atomic continuation](../research/2026-10-26/FOUR_POLE_ATOMIC_SUBSTRATE.md)
+now supplies two rational quadratic coefficient atoms, their exact signed eight-step
+return, a global Mobius mirror, and positive binary polynomial layers with the sharp
+uniform relative defect `rho_M=(M+2)/2^(M+1)`. These are a finite realization of the
+source kernel with an explicit approximation budget. Four-dimensional minimality
+applies to the kernel's coefficient sequence, not to the arithmetic tail sequence.
+The endpoint layer PGF `G(z)=1/(2-z)^2` selects `q*=lambda^2`, giving the exact graded
+offset `E log Y_n-q*=(lambda-gamma)-eta_n`. Pairing layers changes q*; even changing
+only the first two packets changes q* while preserving every approximation of depth
+at least two. Thus this construction derives the golden reference for the specified
+packet law, and refutes its invariance under forgetting that law. Its authentic endpoint
+joint law is independent in the limit; a Gamma-Poisson coupling with the same marginals
+is a different model. None of these results pays the selected signed estimate.
 
 ## 4. How the categorical apparatus must serve §2 (not replace it)
 
@@ -147,15 +183,32 @@ $n^3$ moving-frequency bands; increasing $H_N$; finite-horizon source cut; $0/1/
 collision; false source label; mutated receipt. Success must be forced by an explicit source
 law, never a hard-coded name or opaque equality.
 
-## 6. The single next discriminating probe (Codex/Astra handoff target)
+## 6. The next discriminating construction (updated October 26)
 
-> **(Sharpened, Main XII.)** Prove the **even-$h$ sub-band** fragment first:
-> $2\sum_{h\text{ even},\,h<H_N}(1-h/H_N)|A_N(h)|^2=o(1)$ using only the $\le3$-order Walsh/Lucas
-> marginals of the flat-carry word — legitimate there because $\widehat g_h(15)=0$ for even $h$
-> (SK2-G). That isolates the odd-$h$ order-4 signed band as the sole irreducible obstruction and
-> routes the rest to the $\times16$ ladder contraction: whether $\limsup_h|A_N(16h)|/|A_N(h)|<1$ for
-> the authentic orbit while **failing** on SS-08, positive-carry #304 and $\xi$, driven by the
-> $15/64$ four-pole resonance (not by $U_0=0$ or the carries, which the controls share). The old
-> "fixed positive-proportion relative loss" target is **insufficient** (SK2-A1): aim at $c_N\to1$.
-> Do not attempt global Walsh smallness (§3.2) or lean on the Diophantine input alone (§3.4).
-> Full handoff: `handoffs/SKELETON_KEY_MAIN_XII_NEXT_2026-10-26.md`.
+Construct an observable-preserving interface between the **relative** source Mellin factor
+and a declared signed, joint carry observable, retaining the exact four poles, $U_0=0$ and
+the integer lift. Begin with two hexadecimal digits and compute every cross-digit Walsh
+coefficient that survives for the requested frequency; marginal balance is insufficient.
+The relative Mellin factor and the proved moving-frequency source-circle observable
+Theta_n are explicitly given in the source-bridge dossier. The missing construction
+must transport the latter's auxiliary cancellation to the actual selected observable.
+A scalar normalizer, the raw $\times16$ ratio, or the unit-cell cancellation alone cannot
+do so: the new uniform-cell rational control passes all these auxiliary asymptotics.
+
+The first acceptance gate is an explicit intertwining/transport identity with its residual
+bound, tested against both matched-moment rational controls, including the uniform-cell
+law, and the exact-forcing changed-seed control. A normality conclusion additionally requires a proved all-$N$ signed estimate;
+restating §2 in Mellin notation pays no proof debt. No claim is made that the remaining
+candidate routes exhaust possible mathematics.
+
+The finite polynomial compiler gives a second exact interface. Its rational realizations
+obey a proved phase-transport budget of
+`28|h| rho_M (16^N-1)/(15N)`. The sufficient schedule
+`M_N=4N+2 ceil(log_2(N+2))` makes this budget vanish for fixed h. Every fixed depth has
+a rational total and is nonnormal at a depth-dependent frequency, so the depth and time
+limits must remain separate. Any successful use must retain the full atom output,
+harmonic observation, zero selector and depth schedule. The common denominator,
+positive metric contraction and endpoint PGF alone do not give arithmetic cancellation.
+
+Full handoff: [atoms, finite realization and selected phase](../handoffs/FOUR_POLE_ATOMIC_NEXT_2026-10-26.md),
+with the earlier [relative phase and carry obligations](../handoffs/OILY_MACARONI_RELATIVE_PHASE_NEXT_2026-10-26.md) retained.

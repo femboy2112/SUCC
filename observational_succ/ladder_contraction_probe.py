@@ -1,18 +1,21 @@
-"""Ladder contraction probe (forward instrument; PROVES NOTHING by itself).
+"""Historical Fourier-ratio instrument, with the source-time shift audit.
 
-The Main XII no-go (SK2-A1) showed a fixed positive-proportion relative block loss is
-insufficient for S_N(h)=o(N); sufficiency needs a full relative loss c_N -> 1, reachable
-via the multiplicative x16 frequency ladder e(hU_{n+1}) = e(16h U_n) e(h r(n+1)).  This
-module exposes the two forward quantities for the next round:
+A fixed proportional block loss is insufficient for S_N(h)=o(N). The original
+proposal to compound these frequency ratios into a power saving was not valid:
+frequency multiplication by 16 is a source-time shift with a bounded defect.
+See ladder_shift_audit.py and the 2026-10-26 source-bridge dossier. This module
+retains its numerical diagnostic and its exact finite identity:
 
-  * `ladder_identity_residual` -- the EXACT, forcing-agnostic identity
-        {U_{n+1}} == {16 {U_n} + r(n+1)}     (residual == 0 for ANY forcing),
+  * `ladder_identity_residual` -- the EXACT authentic-forcing identity
+        {U_{n+1}} == {16 {U_n} + r(n+1)}     (residual == 0 for any seed),
     the only CERTAIN output here (a deterministic receipt, Q[Q/Z] exact);
 
   * `ladder_ratio` -- the OBSERVED contraction factor lambda_N(h)=|a_N(16h)|/|a_N(h)|
-    with a_N(h)=(1/N) sum_{n<=N} e(hU_n).  A proof of limsup_h lambda_N(h) < 1 for the
-    AUTHENTIC orbit (while FAILING on the hard controls) would give the power saving
-    N^{-gamma}; this module does NOT prove it and MUST NOT be read as doing so.
+    with a_N(h)=(1/N) sum_{n<=N} e(hU_n).  At fixed N, the literal unbounded-h
+    contraction is REFUTED by the authentic common denominator: both averages
+    equal 1 at its multiples. At fixed h, a uniform ratio q<1 would already
+    imply O_h(1/N) normalized sums. It is a strong missing cancellation premise,
+    not an independently proved mechanism that can simply be iterated.
 
 pi base-16 normality: OPEN.  RH: OPEN.  lambda_N(h) is a numerical diagnostic, never a
 certificate; the only proved output is the identity residual.
@@ -23,12 +26,17 @@ from . import succ_internal_matrix_walk as mw
 from .signed_pushforward import authentic_states
 
 # --- grep-able honest status flags (firewall) ---
-ladder_contraction_proved = False   # limsup_h lambda_N(h) < 1 is UNVERIFIED / OPEN
+ladder_contraction_proved = False   # prescribed-band/selected-source saving is unproved
+unbounded_frequency_contraction_refuted = True
 pi_normality_proved = False
 
 
 def ladder_identity_residual(states):
-    """[{U_{n+1}} - {16 {U_n} + r(n+1)}]_n : all EXACTLY Q(0) (forcing-agnostic)."""
+    """Exact zero residual for authentic-forcing histories, with any initial seed.
+
+    This instrument uses mw.authentic_r. For a general declared forcing use
+    ladder_shift_audit, whose identity takes that forcing as an input.
+    """
     out = []
     for n in range(1, len(states)):
         lhs = mw.circle(states[n])                                   # {U_{n+1}}
@@ -64,7 +72,8 @@ def report(N=64, hs=(1, 2, 3)):
     ]
     for h in hs:
         lines.append(f"    h={h}: lambda_N={ladder_ratio(states, h):.4f}")
-    lines.append("pi normality OPEN; ladder contraction UNVERIFIED; identity EXACT")
+    lines.append("pi normality OPEN; band-restricted contraction UNVERIFIED; "
+                 "unbounded-h contraction REFUTED; identity EXACT")
     return "\n".join(lines)
 
 
