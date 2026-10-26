@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/522028ddd5ab/SUCC/scripts/mobius_gamma_boundary_probe.py", line 142, in <module>
+    main()
+  File "/workspace/scratch/522028ddd5ab/SUCC/scripts/mobius_gamma_boundary_probe.py", line 127, in main
+    actual=recompute()
+           ^^^^^^^^^^^
+  File "/workspace/scratch/522028ddd5ab/SUCC/scripts/mobius_gamma_boundary_probe.py", line 92, in recompute
+    return canonical({
+           ^^^^^^^^^^^
+  File "/workspace/scratch/522028ddd5ab/SUCC/scripts/mobius_gamma_boundary_probe.py", line 64, in canonical
+    return {str(k):canonical(v) for k,v in value.items()}
+                   ^^^^^^^^^^^^
+  File "/workspace/scratch/522028ddd5ab/SUCC/scripts/mobius_gamma_boundary_probe.py", line 64, in canonical
+    return {str(k):canonical(v) for k,v in value.items()}
+                   ^^^^^^^^^^^^
+  File "/workspace/scratch/522028ddd5ab/SUCC/scripts/mobius_gamma_boundary_probe.py", line 62, in canonical
+    return {'lower':canonical(value.lower),'upper':canonical(value.upper)}
+                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/522028ddd5ab/SUCC/scripts/mobius_gamma_boundary_probe.py", line 60, in canonical
+    return str(value)
+           ^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/fractions.py", line 415, in __str__
+    return '%s/%s' % (self._numerator, self._denominator)
+                      ^^^^^^^^^^^^^^^
+ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
