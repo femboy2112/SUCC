@@ -266,6 +266,54 @@ def limiting_log_scale_kernel(ratio,t,precision=75):
         return +mp.power(ratio,mp.j*t)*4*ratio/(den**2)
 
 
+
+def local_hilbert_block_budget(start, count):
+    """EXACT rational upper bound for an unweighted Fourier block read via source Hilbert states.
+
+    Let B=[start,...,start+count-1], reference f_start normalized in common L²(dx),
+    and H_(n,start)=<f_n,f_start> = R(mid)/sqrt(R_n R_start).
+    For |z_n|=1 (in particular original e(hU_n)):
+
+      |avg_B z_n - avg_B z_n*H_(n,start)| <= [8(count-1)/(8start-7)]².
+
+    Proved from Q(x)<=15x, R(a)>=15/a²-59/a³ (a>=16),
+    Var_mu_a(X)<=8/a², and the derivative of normalized source sqrt-density.
+    No selected phase saving and NO pi-normality theorem.
+    """
+    checked_n(start)
+    if start < 3 or type(count) is not int or count < 1:
+        raise ValueError("start>=3 and positive block length required")
+    return F(64*(count-1)**2,source_a(start)**2)
+
+
+def multiscale_hilbert_transport_budget(N):
+    """EXACT universal source-Hilbert projection error for the whole Weyl mean.
+
+    Let k=floor(N^(1/3)), M=k²; discard times n<M and partition M..N
+    into consecutive blocks of length <=k; in each block choose first-time
+    source vector f_m as dual projector.  Then for ANY unit phases z_n:
+
+      |N^-1 sum_(n<=N) z_n -
+       N^-1 sum_B sum_(n in B) z_n*<f_n,f_(min B)>|
+      <= (M-1)/N + [8(k-1)/(8M-7)]².
+
+    This is O(N^-1/3), rigorous but it DOES NOT bound the projected sum.
+    """
+    if type(N) is not int or N < 27:
+        raise ValueError("N>=27 for integer cube-root schedule")
+    lo,hi=1,N+1
+    while lo+1<hi:
+        mid=(lo+hi)//2
+        if mid**3<=N:lo=mid
+        else:hi=mid
+    k=lo;M=k*k
+    upper=F(M-1,N)+local_hilbert_block_budget(M,k)
+    return {"N":N,"block_length":k,"first_retained":M,
+            "discarded":M-1,"error_upper_squared_not_used":False,
+            "absolute_mean_error_upper":upper,
+            "source_selected_saving_proved":False}
+
+
 def source_rank_and_claims():
     return {"source_poles":SOURCE_POLES,
             "gamma2_boundary": "PAPER-PROVED, classical Watson/Taylor",

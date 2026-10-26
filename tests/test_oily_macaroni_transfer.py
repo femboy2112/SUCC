@@ -52,6 +52,28 @@ class ExactSource(unittest.TestCase):
             self.assertLessEqual(deeper_high,high)
             self.assertLess(high-low,F(1,16**12))
 
+    def test_local_hilbert_transport_exact_budget(self):
+        import mpmath as mp
+        for start,count in ((3,2),(9,4),(16,8),(64,8)):
+            bound=o.local_hilbert_block_budget(start,count)
+            self.assertGreaterEqual(bound,0)
+            for n in range(start,start+count):
+                q=o.unweighted_overlap_square(start,n)
+                with mp.workdps(60):
+                    H=mp.sqrt(mp.mpf(q.numerator)/q.denominator)
+                    actual=1-H
+                    self.assertLessEqual(actual,mp.mpf(bound.numerator)/bound.denominator)
+        self.assertEqual(o.local_hilbert_block_budget(16,1),0)
+
+    def test_multiscale_transport_bound(self):
+        for N in (27,64,512,4096):
+            p=o.multiscale_hilbert_transport_budget(N)
+            self.assertLess(p["absolute_mean_error_upper"],1)
+            self.assertLessEqual(p["discarded"]+1,N)
+            self.assertEqual(p["source_selected_saving_proved"],False)
+        self.assertLess(o.multiscale_hilbert_transport_budget(4096)["absolute_mean_error_upper"],
+                        o.multiscale_hilbert_transport_budget(512)["absolute_mean_error_upper"])
+
     def test_overlap(self):
         for n in (1,3,16,64):
             self.assertEqual(o.unweighted_overlap_square(n,n),F(1))
@@ -129,6 +151,26 @@ class AnalyticComplex(unittest.TestCase):
                 ref=o.gamma2_oily_character(t)
                 first=o.first_complex_correction(n,t)
                 self.assertLess(abs(got-ref-first),64/a**2)
+    def test_selected_weyl_projection_numeric_holdout(self):
+        import mpmath as mp
+        from observational_succ.succ_internal_matrix_walk import original_state
+        N=64
+        plan=o.multiscale_hilbert_transport_budget(N)
+        k=plan["block_length"];start=plan["first_retained"]
+        with mp.workdps(50):
+            src=[original_state(n) for n in range(1,N+1)]
+            for h in (1,2,3):
+                true=mp.fsum(mp.exp(2j*mp.pi*h*(mp.mpf(u.numerator)/u.denominator)) for u in src)/N
+                weighted=mp.mpc(0)
+                for base in range(start,N+1,k):
+                    for n in range(base,min(N+1,base+k)):
+                        qq=o.unweighted_overlap_square(base,n)
+                        H=mp.sqrt(mp.mpf(qq.numerator)/qq.denominator)
+                        u=src[n-1]
+                        weighted+=mp.exp(2j*mp.pi*h*(mp.mpf(u.numerator)/u.denominator))*H/N
+                self.assertLessEqual(abs(true-weighted),
+                    mp.mpf(plan["absolute_mean_error_upper"].numerator)/plan["absolute_mean_error_upper"].denominator)
+
     def test_source_kernel_unweighted_overlap(self):
         import mpmath as m
         for n,k in ((2,4),(8,16),(16,64)):

@@ -256,6 +256,10 @@ lim_(N->infty) N^-2 sum_(n,m<=N) K_(n,m)(0,0)
 
 **PSD and source overlap create no cancellation on their own.** A signed estimate on the true `exp(2*pi*i*h*(U_n-U_m))` must still be proved, and an independent recovery map from this weighted norm to the unweighted Weyl sum must pay a source-specific comparison cost. The fixed `L²` test-functional shortcut is unsafe: the `f_n` concentrate near x=0 on shrinking windows and converge weakly to 0.
 
+### 6a. New precise source-to-unweighted-Weyl transport (companion theorem)
+
+The complex Gram above is not only positive bookkeeping: on short multiplicative time windows a **genuine source-matched Hilbert projection** recovers the authentic unweighted Weyl sum up to an explicit rational error, uniformly in the selected frequency. The independently proved Fisher geometry gives `1-H(a,b) <= log(a/b)^2` for `a,b>=16`; partitioning time into cube-root-size windows after an early source cutoff gives a full **O(N^(-1/3))** source-preserving signed transport. This repairs the previous missing *transport* arrow, NOT the signed *cancellation* theorem. Detailed proof, all assumptions, exact constants and the false-coherence controls: [Oily log-clock source-to-Weyl addendum](OILY_LOG_CLOCK_HILBERT_TRANSPORT.md). A theorem of the form `tilde A_N(h)=o(1)` for the new source-weighted signed window sum remains independently OPEN.
+
 ## 7. Hard negative controls and the golden-selection problem
 
 - **Not source-forced golden:** the exponential baseline Laplace fixed point `lambda=1/(1+lambda)` is unique *for that map*. The authentic BBP boundary law is Gamma(2), whose own Laplace fixed point solves `s=(1+s)^-2` and is **not** lambda. The user's proposed two-carrier semantic matching is an admissible extra observation rule, not a uniqueness theorem for π.
@@ -280,7 +284,7 @@ For the original Weyl sum, obtain a separate validated inverse/dual transform fr
 
 ## 9. Validation and authority
 
-Core implementation: `observational_succ/oily_macaroni_transfer.py` (exact rationals + optional mpmath, no modification of `authentic_r`). Tests: `tests/test_oily_macaroni_transfer.py`. Exact identities checked with Fraction, complex tests distinguish numerical observations from certificates. Local isolated tests prior to publication passed **20/20** with a declared minimal shim for the original source and rational-log APIs; these are NOT repository-native or hosted CI results. Confirm native interfaces and run full provenance/observer/ordinal/Lean checks on the combined branch before merging. Historical frozen source archives remain unchanged.
+Core implementation: `observational_succ/oily_macaroni_transfer.py` (exact rationals + optional mpmath, no modification of `authentic_r`). Tests: `tests/test_oily_macaroni_transfer.py`. Exact identities checked with Fraction, complex tests distinguish numerical observations from certificates. Local isolated tests prior to publication passed **23/23** with a declared minimal shim for the original source and rational-log APIs; these are NOT repository-native or hosted CI results. Confirm native interfaces and run full provenance/observer/ordinal/Lean checks on the combined branch before merging. Historical frozen source archives remain unchanged.
 
 ### Mathematics attribution and external references
 
