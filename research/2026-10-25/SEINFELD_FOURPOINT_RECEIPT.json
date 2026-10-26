@@ -1,0 +1,84 @@
+{
+  "RH_proved": false,
+  "authority": "paper proof for classical geometry; local exact checks; numeric diagnostics",
+  "cycle_ranks": [
+    1,
+    3
+  ],
+  "golden_j_exact": "Golden(a=Fraction(2048, 1), b=Fraction(0, 1))",
+  "numerical": {
+    "cusp_y4_error": "1.528266288607717e-10",
+    "cusp_y4_proved_upper_formula_numeric": "1.52826628861701e-10",
+    "epstein_poisson_richardson_error": "6.372875769618293e-9",
+    "golden_kronecker_finite_part": "2.609518640860818981122274845615",
+    "golden_period_y": "0.89625611232601525927658377338916",
+    "golden_shape_log": "-0.53124930644185615638161992228035",
+    "lambda_golden": "0.61803398874989484820458683436564",
+    "lambda_minus_gamma": "0.040818323848361987598074744283236",
+    "numeric_authority": "noncertifying mpmath consistency only",
+    "shape_difference_from_square": "0.024536881281565764056381258231844"
+  },
+  "pi_normality_proved": false,
+  "projective_cr_check": "2/15",
+  "projective_geometry_selects_bbp": false,
+  "rational_weierstrass_j": "2048",
+  "schema": "SUCC-SEINFELD-FOURPOINT-1",
+  "signed_weyl_estimate_proved": false,
+  "source": "Q:Coherent-Main-X-four-pole-BBP",
+  "source_first_states": [
+    {
+      "circle_phase": "2/15",
+      "j": "504358336/38025",
+      "n": 1,
+      "unwrapped": "47/15"
+    },
+    {
+      "circle_phase": "1076/4095",
+      "j": "39546317205741924527056/11059579077733757025",
+      "n": 2,
+      "unwrapped": "205826/4095"
+    },
+    {
+      "circle_phase": "188663/765765",
+      "j": "6968669552854650564382953824361075136/1737839502258722142900349112408025",
+      "n": 3,
+      "unwrapped": "615863723/765765"
+    },
+    {
+      "circle_phase": "106894973/111035925",
+      "j": "6717432441920056090662851920862306854446395377156/37745224462748462847758190415888895653475625",
+      "n": 4,
+      "unwrapped": "1428806141948/111035925"
+    },
+    {
+      "circle_phase": "32442016954/78058255275",
+      "j": "6283320424781865381637686643559049851729508544752460607142343006144/3336048225753835090872383224354708613837892278809464819591230625",
+      "n": 5,
+      "unwrapped": "16071212445820879/78058255275"
+    }
+  ],
+  "source_sha256": {
+    "observational_succ/four_point_kronecker.py": "f5a6d7cca3888c700304d020e0a61a2794263f181b6bd0617113c4e8e97066e7",
+    "observational_succ/seinfeld_four_point.py": "ec4e8ee9663472c5dc39e9b59faf39e3920d72cad5ca5528531abcf0c8fd2d24",
+    "tests/test_seinfeld_four_point.py": "a539ffd8f35ad9d9b661e6cb239a8182fb5ae60ce8afaf27d12a8bef5281c0df"
+  },
+  "tetrahedron_face_boundaries_cancel": true,
+  "torsion_fibers": {
+    "circle_element_orders": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "circle_fiber_size": 16,
+    "elliptic_4torsion_size": 16,
+    "elliptic_element_orders": [
+      1,
+      2,
+      4
+    ],
+    "group_identification_proved": false
+  },
+  "weil_pairing_10_01": 1
+}
