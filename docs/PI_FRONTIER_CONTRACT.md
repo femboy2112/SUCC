@@ -229,6 +229,38 @@ the analytic irrationality input or the infinite normality consequence.
 
 ## Selected inverse-branch gate — actual carry/arrival comparison (#312 continuation)
 
+**Latest selected signed advance (Global Signed, 2026-10-27 UTC).** The
+[whole-block theorem](../research/2026-10-27/GLOBAL_BRANCH_COERCIVITY.md)
+improves #311's coefficient from $1/29$ to $1/14$: one universal,
+uncomputed $J_2\ge4$ gives, for every $N\ge1$ and integer $h\ne0$,
+
+$$
+|S_N^U(h)|\le N-\frac1{14}
+\max\left(0,\lfloor\log_8N\rfloor-
+\max(J_2,1+\lceil\log_{64}|h|\rceil)\right).
+$$
+
+The new inequality finds a quiet transition using the entire block's energy,
+then uses the original zero-selected Green identity and classical
+irrationality measure. **PAPER-PROVED; same logarithmic absolute-loss order;
+no numerical onset or normality proof.** The generic constant-branch method
+has a boundary-excursion ceiling $1-\cos(\pi/8)$.
+
+The round also proves effective signed losses on quadratic and cubic moving
+frequency bands. The same-forcing $V_n=-T_n$ has uniformly bounded full
+cubic-band sums but fixed Fourier means tending to one. Authentic short
+first-prime windows have vanishing Galois-averaged matrix excess and maximal
+selected component reinforcement; their full sum differs from its complete
+complement by at most $28|h|/(15\sqrt p)$. Neither observation substitutes
+for the selected fixed-mode gate.
+
+The missing arithmetic must force growing loss inside growing authentic
+blocks or control their signed combination, retaining the zero selector and
+full complementary phases. See the
+[synthesis](../research/2026-10-27/GLOBAL_SIGNED_SYNTHESIS.md) and
+[GS-1–GS-9](CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md). The decay obligation below
+remains **OPEN**.
+
 This continuation is based on #312 at
 `0c306a889f425418c29cbea3193205fb80c0575e`, with the carry/packet construction
 of sibling #311 inspected at `a34c4484059e667202b97d5ab4102560987b1406`.

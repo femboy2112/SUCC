@@ -1,0 +1,58 @@
+[
+  {
+    "name": "clean",
+    "command": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-global-signed/.venv/bin/python",
+      "scripts/global_signed_probe.py",
+      "--verify",
+      "--receipt",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-global-signed/research/2026-10-27/global_signed_validation/exact_receipt.json"
+    ],
+    "exit_code": 0,
+    "expected_behavior_observed": true,
+    "log": "receipt_clean.log",
+    "log_sha256": "16b3bd111970d087abe699745b24b6022849732bfdfe00042046bd6bab0bb84d"
+  },
+  {
+    "name": "false_normality",
+    "command": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-global-signed/.venv/bin/python",
+      "scripts/global_signed_probe.py",
+      "--verify",
+      "--receipt",
+      "/tmp/succ-global-controls-u3svlism/false_normality.json"
+    ],
+    "exit_code": 1,
+    "expected_behavior_observed": true,
+    "log": "receipt_false_normality.log",
+    "log_sha256": "14ee84173d190ff5329b45117da9286d7543972ffd0d0fc4f00409290127f423"
+  },
+  {
+    "name": "foreign_source",
+    "command": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-global-signed/.venv/bin/python",
+      "scripts/global_signed_probe.py",
+      "--verify",
+      "--receipt",
+      "/tmp/succ-global-controls-u3svlism/foreign_source.json"
+    ],
+    "exit_code": 1,
+    "expected_behavior_observed": true,
+    "log": "receipt_foreign_source.log",
+    "log_sha256": "14ee84173d190ff5329b45117da9286d7543972ffd0d0fc4f00409290127f423"
+  },
+  {
+    "name": "false_loss_constant",
+    "command": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-global-signed/.venv/bin/python",
+      "scripts/global_signed_probe.py",
+      "--verify",
+      "--receipt",
+      "/tmp/succ-global-controls-u3svlism/false_loss_constant.json"
+    ],
+    "exit_code": 1,
+    "expected_behavior_observed": true,
+    "log": "receipt_false_loss_constant.log",
+    "log_sha256": "14ee84173d190ff5329b45117da9286d7543972ffd0d0fc4f00409290127f423"
+  }
+]

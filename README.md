@@ -517,3 +517,7 @@ maintainer's explicit choice.
 
 Research update: [selected BBP lag/carry proofs and collision certificates](research/2026-10-24/PI_LAG_CARRY_RIGIDITY.md).
 Exact source restrictions and scoped no-go theorems; pi normality remains open.
+
+Research update: [Global Signed BBP inequalities](research/2026-10-27/GLOBAL_SIGNED_SYNTHESIS.md).
+Stronger selected logarithmic-loss coefficient, effective moving-band bounds,
+and authentic prime-channel obstructions. π normality remains open.
