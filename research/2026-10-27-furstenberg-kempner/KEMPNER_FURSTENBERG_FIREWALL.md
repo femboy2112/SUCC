@@ -68,3 +68,19 @@ References: Rudolph (1990), https://doi.org/10.1017/S0143385700005629 ; Burton�
 4. Mark PR #334 R4 and its claimed R5 equivalence as **REFUTED general bridge / UNVERIFIED for π**, not PROVED.
 
 Five focused independent Python controls were run locally: **5 PASS**, checking Kempner's exact sparse binary digits, finite word counts, next-L-digit exceptional sets and dyadic shifts. The mathematical universal assertions above rest on the paper proof and cited reference, not finite testing. No hosted CI/Lean/full-native run claimed. No main merge, release or publication authorized.
+
+
+## FK-5. Additional logical defect: a trivial O(1) bound does not imply ×3 invariance
+
+PR #334's A2/R3 discussion invokes \(|D_{N,h}^{(3)}(\alpha)|\le2\) for all α and N and then describes vanishing ×3 defects as non-discriminating or automatic. The bound **does not entail** \(D_{N,h}^{(3)}\to0\). A fixed rational example refutes any such inference:
+
+Take α=1/5 and the hexadecimal orbit \(x_n=\{16^n/5\}=1/5\) (since 16≡1 mod5). For h=1 and **every** N,
+
+$$
+D_{N,1}^{(3)}(1/5)=e(3/5)-e(1/5)\ne0,
+\qquad |D_{N,1}^{(3)}(1/5)|=2\sin(2\pi/5)>0.
+$$
+
+Thus the genuine ×3-invariance hypothesis is nontrivial; it can fail spectacularly even when ×16-invariance of the empirical measure is exact. At the same time, the Kempner example FK-1 shows that **even when ×3 invariance succeeds**, it need not imply Haar because atomic limits are permitted. These are logically separate obstructions. For a base-2 orbit replace 16 by 2; the corresponding ×2-invariant rational periodic orbit also need not be ×3-invariant.
+
+The correct hierarchy is (i) ×2 invariance of binary orbit weak limits: automatic by telescoping; (ii) ×3 invariance: independent and UNVERIFIED for π; (iii) atomlessness or appropriate entropy in *every* component: independent and UNVERIFIED for π; (iv) full Furstenberg measure conjecture itself: OPEN.
