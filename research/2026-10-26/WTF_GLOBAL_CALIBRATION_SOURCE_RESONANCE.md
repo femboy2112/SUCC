@@ -124,7 +124,37 @@ $$\boxed{\frac1N\sum_{n=1}^N\Pi_{16}(c_{n+1}-j_n)
 
 **New program-specific negative corollary:** A primitive Ramanujan score that approaches **perfect coherence**, even while retaining the source forcing, cannot certify the zero-initial π orbit's equidistribution. The same limit holds with `V_n=U_n+16^n/3`, a changed-seed orbit obeying the **exact same forcing** and therefore the same spill theorem. The positive compatibility score is **implied by the recurrence** and is incapable by itself of distinguishing the authentic zero boundary.
 
-Exact finite receipts (original and changed seed) at `N=1,2,16,64,127` happen to report score one. They are **finite observations only**; the all-time conclusion used here is `1-K_N/N→1`, not an unsupported assertion that no spills ever occur.
+Exact finite receipts (original and changed rational seed) at `N=1,2,16,64,127` happen to report score one. They are **finite observations only**; the all-time conclusion used here is `1-K_N/N→1`, not an unsupported assertion that no spills ever occur.
+
+### Stronger exact no-go: *perfect* coherence on a provably nonnormal same-forcing orbit
+
+The source's positive Green tail obeys
+
+$$T_n=\sum_{j\ge1}16^{-j}r(n+j),\qquad
+r(n+1)=16T_n-T_{n+1},\qquad
+0<T_n<\frac{1}{64n^2}<\frac1{16}\quad(n\ge1).$$
+
+The tail estimate follows by monotonicity of the original positive forcing and the inherited bound `r(n+1)<15/(64n²)`: `T_n <= r(n+1) sum_(j>=1)16^-j = r(n+1)/15`. Put
+
+$$\boxed{V_0=-T_0=-\pi/16,\qquad V_n=-T_n.}$$
+
+Then **the entire original four-pole forcing remains identical**:
+
+$$V_{n+1}=16V_n+r(n+1).$$
+
+But for every positive time `n`, `V_n∈(-1/16,0)`, so `floor(V_n)=-1` and `{V_n}=1-T_n`. Consequently
+
+$$\boxed{j_n=\lfloor16\{V_n\}\rfloor=15,\qquad
+c_{n+1}=\lfloor V_{n+1}\rfloor-16\lfloor V_n\rfloor=15,\qquad
+s_{n+1}=0.}$$
+
+Therefore the full and primitive source compatibility detectors are **exactly one at EVERY positive time**, not just in the limit. Yet `V_n→0` in the reals, and for every fixed integer `h≠0`,
+
+$$\boxed{\lim_{N\to\infty}\frac1N\sum_{n=1}^N e^{2\pi ihV_n}=1.}$$
+
+This is a **provably nonnormal same-forcing changed-seed orbit** with perfect local q16 compatibility. Unlike the arbitrary changed seed `+1/3` in the finite test table, this control is known to be maximally non-equidistributed. It fails the authentic **zero initial condition** and is thus a falsifier of claims that do not actually use that selector. The executable finite certificate returns exact rational forcing bounds, symbolic `V0=-pi/16` provenance, and all-time *paper-proved* structural digit/carry identities; it does NOT pretend to numerically evaluate the irrational seed or prove the analytic limit by finite samples.
+
+**Verdict:** even exact, source-forcing-faithful, all-time, perfect constructive agreement of the two carry forms does not imply any selected Fourier saving. Only an additional observable constraint that genuinely distinguishes the zero-initial source from this changed-seed orbit can do that.
 
 ### What this does **not** say
 
@@ -169,6 +199,7 @@ A preset `M_N=max(2,floor(log_2 N))` makes the right side tend to zero. Showing 
 | Predictable e-process / checkpoint Ville controls | CLASSICAL, exact bounded-null-tree enumeration | Not a stochastic model of deterministic BBP selection |
 | Seinfeld one-step macro redundancy / zero-seed rank gain | INHERITED SS-01/02, native rank interface | Only linear relations; doesn't prove independence |
 | Authentic carry/digit normalized Ramanujan score →1 | PAPER-PROVED corollary of #313 source-spill estimate + exact q16 detector | Holds all initial seeds under forcing; **not π mixing** |
+| **Perfect q16 score for all n on V_n=-T_n**; fixed-h selected Weyl mean →1 | PAPER-PROVED using original positive forcing/Green tail; exact rational finite bound tests | Explicit nonnormal changed seed, fails authentic zero selector |
 | Authentic selected Weyl `S_N(h)=o(N)` for each fixed h≠0 | OPEN | This is still the actual π-normality theorem |
 
 The code uses exact `Fraction`, integer congruences, the existing authentic source history/selected-branch interface, and the existing Seinfeld rational-rank routine. Its local isolated verification uses *inspected native interface shims*, with no claim of having run the full repository test suite or Lean. Exact receipts are source/test/script SHA-256 stamped and deliberate false-normality mutations fail on replay. The new draft research PR stacks above #314, not on `main`. Both concurrent prompts explicitly forbid main merges without maintainer authorization.

@@ -59,6 +59,8 @@ def compute():
         if orig.full_agreement!=orig.primitive_agreement or mutant.full_agreement!=mutant.primitive_agreement:
             raise AssertionError("authentic carry projection disagreement")
         actual[str(N)]={"zero_seed":asdict(orig),"changed_seed_offset_one_third":asdict(mutant)}
+    coherent={str(n):w.coherent_changed_seed_countermodel(n)
+              for n in (1,2,8,97,257,1024)}
     q=16
     prior=(Q(1,q),)*q
     mixture=tuple(w.global_frame_mixture(q,x,prior) for x in range(q))
@@ -72,6 +74,7 @@ def compute():
                       "full_native_repo_validation_performed_here":False},
         "same_variable_quadratic":checked,
         "source_carry_coherence_false_positive":actual,
+        "maximally_coherent_changed_seed_no_go":coherent,
         "adaptive_research_frame_control":{
             "q":q,"postselected_frame_score_every_outcome":q,
             "precommitted_uniform_mixture_scores":mixture,

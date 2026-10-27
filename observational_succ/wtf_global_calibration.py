@@ -320,6 +320,40 @@ def authentic_carry_resonance(horizon: int, *, seed_offset: int | Q = 0) -> BBPC
     return BBPCarryCalibration(horizon, agree, agree, spills, True, authenticated)
 
 
+def coherent_changed_seed_countermodel(n: int) -> dict:
+    """All-time PAPER theorem, finite exact rational certificate at time n.
+
+    Let T_n=sum_(j>=1)16^-j r(n+j), V_n=-T_n and V_0=-T_0=-pi/16.
+    Source identities yield V_(n+1)=16V_n+r(n+1) exactly. Since the
+    original four-pole forcing is positive, decreasing and obeys
+      0<r(n+1)<15/(64 n^2),
+    the Green sum satisfies 0<T_n<1/(64n^2)<1/16 (n>=1).
+    Hence {V_n}=1-T_n, selected j_n=15, and the literal carry is 15:
+    floor(V_(n+1))-16 floor(V_n)=-1+16=15.
+    Thus s=0, BOTH exact projectors equal 1 for all n>=1.
+    Yet V_n ->0 in R and e(h V_n)->1 for all fixed h: maximally
+    nonnormal changed-seed orbit with perfect local compatibility.
+
+    The infinite T_n bound is a PAPER consequence of the native forcing
+    bound and Green identity, NOT an executable finite evaluation of pi.
+    """
+    _nat(n, "coherent changed-seed index", 1, 100000)
+    from .succ_internal_matrix_walk import authentic_r
+    forcing=authentic_r(n+1)
+    forcing_upper=Q(15,64*n*n)
+    if not Q() < forcing < forcing_upper:
+        raise ArithmeticError("four-pole source bound failed")
+    return {"n":n,"forcing":forcing,"forcing_upper":forcing_upper,
+            "tail_bound_strict_upper":Q(1,64*n*n),
+            "original_seed_zero":False,"same_authentic_forcing":True,
+            "changed_seed_symbolic":"V_0=-T_0=-pi/16",
+            "selected_digit":15,"literal_carry":15,"spill":0,
+            "full_compatibility":full_projection(16,0),
+            "primitive_compatibility":primitive_projection(16,0),
+            "fixed_h_selected_weyl_limit":Q(1),
+            "pi_normality_proved":False}
+
+
 def status_flags() -> dict:
     return {"source_original_four_poles_preserved": True,
             "global_frame_preselection_required": True,

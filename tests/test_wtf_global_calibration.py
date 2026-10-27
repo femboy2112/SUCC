@@ -157,4 +157,23 @@ class AuthenticSourceCountermodel(unittest.TestCase):
         self.assertFalse(flags['source_selector_specific_saving_proved'])
 
 
+    def test_perfect_compatibility_on_provably_nonnormal_same_forcing_seed(self):
+        # V_n=-T_n with V0=-pi/16 has SAME literal r(n) at every step,
+        # but all nonzero fixed-h Fourier averages tend to one, not zero.
+        # For n>=1 the branch j_n and literal carry are BOTH 15 exactly.
+        for n in (1,2,3,8,29,97,257,1024):
+            c=w.coherent_changed_seed_countermodel(n)
+            self.assertLess(c['forcing'],c['forcing_upper'])
+            self.assertLess(c['tail_bound_strict_upper'],Q(1,16))
+            self.assertEqual(c['selected_digit'],15)
+            self.assertEqual(c['literal_carry'],15)
+            self.assertEqual(c['spill'],0)
+            self.assertEqual(c['full_compatibility'],1)
+            self.assertEqual(c['primitive_compatibility'],1)
+            self.assertEqual(c['fixed_h_selected_weyl_limit'],1)
+            self.assertFalse(c['original_seed_zero'])
+            self.assertTrue(c['same_authentic_forcing'])
+            self.assertFalse(c['pi_normality_proved'])
+
+
 if __name__=='__main__':unittest.main()
