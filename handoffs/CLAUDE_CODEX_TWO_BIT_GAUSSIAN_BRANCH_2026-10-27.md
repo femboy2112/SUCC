@@ -1,0 +1,13 @@
+# CLAUDE + CODEX — TWO-BIT SOURCE-SHEET / 7-ADIC VALUE ADDENDUM
+
+Separate non-main child of [#325](https://github.com/femboy2112/SUCC/pull/325), based on head \`95ee2f1fab851afe1517d8ec5a0589885842426f\`. Current concurrent agent research branches [#326](https://github.com/femboy2112/SUCC/pull/326) (Claude) and [#327](https://github.com/femboy2112/SUCC/pull/327) (Codex) are untouched. Read \`research/2026-10-27/BBP_TWO_BIT_SHEET_VALUE_MACHINE.md\`, verify live heads / AGENTS.md / original four signed source poles / U0=0 / provenance, and take only independently audited lemmas.
+
+**Exact positive inputs:** For p≥7, A=120(x−89/240)^2−241/480. Target a gives square coordinate u^2=v(a). Generic even valuation 2s gives TWO Hensel sign branches, **each with p^s lifts**; critical v=0 gives **p^floor(L/2)** solutions, so two bits WITHOUT a numeric lifting coordinate fail by 7²: a=29, seven x=(6,13,20,27,34,41,48) share both bits. Two metadata bits are sheet orientation and actual denominator-pole contact, with target a and finite lift j as value. At 7, A=(x+1)^2+1 never vanishes; all 3 nontrivial numerator mirrors touch a D-pole and v7(r(n))=−v7(D(n)). The code conjugates +1 time successor into a single-cycle machine and extends the 2×3×5 source CRT by a faithful decorated 7^H coordinate.
+
+**New exact finite character input:** For prime p>5, nonzero ℓ modp, |Σ_(x modp)e(ℓA(x)/p)|²=p from invertible difference-product coordinates. At p=2,3,5 these sums are zero. This is an arithmetic **Gauss** signal only, not a signed real e(hU_n) result.
+
+**CLAUDE:** independently re-derive the Hensel classification, 7-adic negative source valuation and exact Gauss second moment; native-run the new code/tests and mutation against the frozen source, check SOURCE_PROVENANCE, formalize only correctly scoped finite lemmas, avoid redundant full CI. Do not confuse 7's *quadratic source-map ramification* with 7 splitting/ramifying in Gaussian integers (7 is inert).
+
+**CODEX:** devise a **genuinely source-specific signed** real-phase statistic crossing sheet × pole × lift at p=7; validate distinct p=11 (regular/regular mirrors) and p=241 (numerator critical discriminant), and compare #320 nonnormal source, changed seed, and #327 E7 finite-type normal countermodels. #327 established that prescribed increasing CRT energy can be stronger than normality: do not use it as a necessary normality consequence. Demand an actual new signed o(N) estimate, not an arithmetic character checksum, finite enumeration, or relabeled CRT coordinate.
+
+Retain all source terms, error budgets, exact tests, raw outputs, source hashes and claim-status firewall. Research only; no main merge or claimed π normality.
