@@ -24,6 +24,7 @@ no existing claim identifier or namespace is reassigned. See the
 | Reinforcement/inference alias | Every finite two-colour word; positive Pólya/Beta parameters | CLASSICAL all-word equality with exact finite implementation | Identical observed laws need not identify interventions or physical reinforcement |
 | Posterior golden–Gamma connection | Uniform latent bias, conditionally iid letters, finite all-R prefix, declared scaling $X_m=m\Theta$ | PAPER-PROVED interpretation of the inherited beta family; exact $Z_m=-m\log(1-\Theta)$ is Exp(1), with $\epsilon_m=\mathbb E(\log Z_m-\log X_m)$ | Shared-coin dependence, changed prior or scale alter the construction; no single-latent sample-path limit or BBP path sampler is identified |
 | Posterior/error comparison | Original zero-selected four-pole Green tail and Euler remainder at each integer $m\ge1$ | INHERITED PAPER theorem $T_m\sim\epsilon_m^2/16$ with all-$m$ bounds, now given a posterior log-defect interpretation | No selected Weyl bound follows; arbitrary common centering cancels from the error |
+| Coherence/posterior compatibility | Symmetric 16-color Pólya law, every finite avoidance event or constant color-one word, $m=15+r$, and every $16\nmid h$ | PAPER-PROVED same Beta$(1,m)$ marginal and exact conditional Fourier moments; separate stdlib path enumeration | The same exponential/golden–Gamma marginal and vanishing log defect coexist with Fourier energy tending to $1/15$ or $1$; no BBP sampling law identified |
 | Deterministic arithmetic factor | Full original forcing and zero seed; auxiliary outcomes preserve the selected successor almost surely | PAPER-PROVED one-transition character identity and all-time deterministic projection | Time averages can cancel; uncertain-seed ensemble cancellation is a different observable |
 | Approximate-factor leakage | Unit observable, selected successor has probability at least $1-\epsilon$ | PAPER-PROVED sharp lower bound $\max(0,1-2\epsilon)$ | Antipodal contaminants attain the bound for $0\le\epsilon\le1/2$ |
 | Local-loss product rejection | Biased independent signs with adjacent telescoping phases | REFUTED naive product bound; exact $1/2$ for every horizon and idempotent twisted matrix | Null bias/horizon one are equality controls; the instance flag distinguishes them |
@@ -43,6 +44,10 @@ no existing claim identifier or namespace is reassigned. See the
 - [Posterior golden–Gamma connection](../research/2026-10-26/POSTERIOR_GOLDEN_GAMMA_CONNECTION.md)
   links the latent path model to the prior finite common source and inherited
   BBP error comparison, with extra assumptions and countermodels explicit.
+- [Publication addendum using #314](../research/2026-10-26/SEINFELD_COHERENCE_POSTERIOR_BRIDGE.md)
+  identifies the formal group-algebra/codec correspondence and proves the
+  same-marginal, different-Fourier-future countermodel. The sibling code is not
+  imported; its isolated validation is not covered by this branch's native run.
 - [Exact receipt](../research/2026-10-26/seinfeld_realization_validation/exact_receipt.json)
   hashes the native sources, new implementations and tests; its regeneration is
   a finite check, not a substitute for the quantified proofs.

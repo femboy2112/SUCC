@@ -433,3 +433,28 @@ across source times**, preserving their selector/remainder association and
 paying the existing carry/bin transport errors. Writing those terms as a
 likelihood covariance is an exact reformulation. It becomes a new arithmetic
 estimate only when an independent source argument bounds the signed sum.
+
+## 8. Publication-time connection to the latest coherence-group draft
+
+Draft #314 appeared while this round was being published. Its formal
+$\mathbb Q[C_{16}]$ class amplitudes are losslessly represented by our mass
+and four-field codec. Its strong-lumpability requirement adds the precise
+criterion for a grouping to preserve the next class as well as today's phase.
+The [publication addendum](SEINFELD_COHERENCE_POSTERIOR_BRIDGE.md) pins the
+inspected sibling commit and supplies the compatibility proof.
+
+It also produces a sharper exact discriminator. In #314's symmetric
+sixteen-color Pólya model, either avoiding color zero for $r$ steps or selecting
+the literal word $1^r$ gives the same marginal
+$\Theta_0\sim\operatorname{Beta}(1,15+r)$. Thus both selections retain the exact
+exponential log coordinate, golden fixed point, Gamma log mean and shrinking
+$\epsilon_{15+r}$ described above. Their joint laws retain different information:
+the latent character's second moment tends to $1/15$ in the avoidance family
+and to $1$ in the literal-word family. These moments also govern the future
+empirical character averages through the exact diagonal/off-diagonal identity.
+
+This proves that the shared constants marginal and its shrinking defect alone
+cannot force Fourier cancellation in the declared model. The information in
+the remaining color proportions matters. The addendum gives full paper proofs
+and an independent rational replay; no sibling code or production/test change
+is included, and no authentic BBP sampling identification is inferred.

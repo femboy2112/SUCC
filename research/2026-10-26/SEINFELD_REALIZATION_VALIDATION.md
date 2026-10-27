@@ -167,3 +167,41 @@ The [synthesis](SEINFELD_INVERSE_AVERAGING_AND_REALIZATION.md),
 [next handoff](../../handoffs/SEINFELD_REALIZATION_NEXT_PI_2026-10-26.md) retain
 the open boundary: a source-authenticated signed temporal estimate is still
 needed for π normality. No proof announcement is part of this draft research PR.
+
+## 7. Publication-time comparison with concurrent draft #314
+
+After publishing the tested tree as #315 commit
+`2993a4e203211fae3ac1e6697bab22f9a506870e`, the new sibling #314 was inspected at
+`935c2db4c36ff56d90acd82eae30bcce15b6a053`. Its full mathematical dossier,
+production module and stated isolated-shim validation were reviewed. Its code
+was not merged, and the native suite above does not validate that sibling.
+
+The [addendum](SEINFELD_COHERENCE_POSTERIOR_BRIDGE.md) adds a paper derivation and
+a separate [standard-library oracle](seinfeld_coherence_posterior_oracle.py).
+All native production and test sources remain unchanged. The oracle uses
+literal urn prefix products and exact two-future-draw probabilities, then
+reduces characters in $\mathbb Q[\zeta_{16}]$. It does not call the Dirichlet
+moment formulas that the proof uses to derive the predicted answers.
+
+The [source-hashed addendum receipt](seinfeld_coherence_posterior_receipt.json)
+records 3,616 avoidance prefixes, nine constant-word prefixes through length
+128, 195 nontrivial-mode checks, 42 independent rational density integrals, and
+eight positive-energy controls. These checks concern the declared urn, not an
+authenticated BBP path law. The proof and this finite enumeration have separate
+authority; the analytic logarithm identities are not certified by samples.
+
+Reproduce with:
+
+```sh
+python research/2026-10-26/seinfeld_coherence_posterior_oracle.py --verify
+```
+
+The receipt wrote and replayed successfully, including replay from `/tmp`.
+Changing only its `selected_fourier_cancellation_proved` flag to true was
+rejected with exit status 1. The namespace gate again passed all 18 tests.
+All 1,285 native production/test hashes still match the full-suite snapshot;
+the five affected Markdown documents passed 61 local-link checks and the
+whitespace/math-delimiter audit. `git diff --check` passed. The compact
+[addendum validation record](seinfeld_coherence_posterior_validation.json)
+records these observed outcomes. These narrow checks cover the added standalone
+proof/oracle work without relabelling the earlier native suite as a run of #314.

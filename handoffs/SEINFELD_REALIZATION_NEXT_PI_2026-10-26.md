@@ -155,6 +155,31 @@ hashes and every displayed finite value; it rejects altered status flags and
 arithmetic receipts. The standalone oracle has no imports from production or
 tests and explicitly checks the raw/canonical/literal inverse-digit conventions.
 
+## Publication-time #314 connection and additional discriminator
+
+The concurrent draft #314 at `935c2db4c36ff56d90acd82eae30bcce15b6a053`
+was inspected after the initial publication of #315. Read the
+[compatibility and posterior addendum](../research/2026-10-26/SEINFELD_COHERENCE_POSTERIOR_BRIDGE.md).
+The sibling remains unmerged; its isolated shim tests are a different
+validation scope from this branch's native suite.
+
+Its formal rational group-algebra amplitudes correspond exactly to our mass
+plus four cyclotomic packets. Add its strong-lumpability test to the proposed
+source quotient: states with the same class must induce the same next-class
+law, or the discarded memory must be restored. Preserving a present phase is
+not sufficient to iterate the construction.
+
+The new comparison makes the constants test stricter. Under the declared
+16-color urn, avoidance of color zero and the fully specified constant word
+$1^r$ both give the same scalar Beta$(1,15+r)$ posterior. They therefore share
+the entire exponential/golden–Gamma/log-defect bridge. Nevertheless the
+conditional latent Fourier second moments tend respectively to $1/15$ and $1$,
+and those moments govern future observed averages. Any proposed authentic-source
+cancellation mechanism must distinguish these joint laws despite their identical
+scalar marginal. The addendum proves the formulas and its standalone oracle
+checks the finite path probabilities and predictive moments without importing
+either branch's production code.
+
 Production modules and their tests were frozen for the final full suite.
 Same-model collaboration and independent algebra are recorded as such; they are
 not external peer review. Universal statements have paper proofs; finite
