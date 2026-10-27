@@ -311,6 +311,54 @@ order is claimed.
 
 ---
 
+## Retained-path continuation — Seinfeld inverse averaging and realized fields
+
+The continuation of #313 at `79344c62c39c96755b742700b3d4d22fa60d86da`
+now provides a lossless interface for the information removed by branch
+averaging. For a labelled joint law, coarse pushforward plus its signed
+fibre-null residual reconstructs the original law. The residual is a native
+Seinfeld zero witness against coarse observables and can pair nontrivially
+with the selected branch/tail observable. Separate source and branch
+marginals do not recover that coupling, even for the first two authentic rows.
+
+The exact rational branch codec consists of fields at modes $1,2,4,8$,
+with dimensions $8+4+2+1=15$. Energies alone lose the phase: every Dirac
+selector has the same stratum energies $(8,4,2,1)$. On a declared uniform
+inverse tree, a character has one explicit reverse-revelation level; the
+selection/observable covariance restores its selected phase at that level.
+These are reconstruction identities and source-authenticated finite
+interfaces, **not new temporal cancellation estimates**.
+
+Two further proved boundaries constrain an operator interpretation. The odd
+inverse character has sharp all-carrier uniform continuous approximation
+error one when $16\nmid h$. A stochastic extension preserving the complete
+deterministic arithmetic successor cannot attenuate its conditional
+character; mass $\epsilon$ leaving that successor gives the sharp bound
+$\max(0,1-2\epsilon)$. Neither statement prohibits cancellation across the
+actual deterministic source times.
+
+A declared field-growth model has equal-endpoint paths with odds $3/4$ and
+an exact logarithmic history of nonharmonic normalizers. A twisted-kernel
+reconvergence criterion is proved separately. **No field/BBP stochastic
+identification or arithmetic application of that contraction is proved.**
+The signed $\widetilde C_{N,M_N}(h)=o(1)$ gate above remains OPEN.
+
+The earlier finite beta/golden–Gamma source also has an exact posterior
+interpretation: uniform latent bias after $m-1$ conditionally independent
+failures, rescaled by $m$. Its log coordinate is Exp(1) at every finite $m$,
+and the Euler error equals the positive log-linearization defect
+$\epsilon_m=\mathbb E(\log Z_m-\log X_m)$. The inherited source-specific
+comparison $T_m\sim\epsilon_m^2/16$ now has this path-inference reading.
+The Bayesian path law is still not authenticated as a BBP generation mechanism.
+
+See the [synthesis](../research/2026-10-26/SEINFELD_INVERSE_AVERAGING_AND_REALIZATION.md),
+[claim supplement](CLAIM_SUPPLEMENT_SEINFELD_REALIZATION.md), and
+[next source-map handoff](../handoffs/SEINFELD_REALIZATION_NEXT_PI_2026-10-26.md).
+π normality and the role of $\varphi^{-1}-\gamma$ as a cancellation
+invariant are unchanged open obligations.
+
+---
+
 ## Route A — selected harmonic / cyclotomic saving (#284)
 
 **Statement to prove.** For each fixed nonzero integer $h$, with the authentic
