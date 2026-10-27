@@ -1,6 +1,6 @@
 # Operation π₃ — Claude/Codex independent next-round handoff
 
-**User goal:** "a base-3 digit handle for π" — now executable with *two genuine ternary BBP input series*, exact algebraic reconstruction, independent original signed-BBP and Machin checks, and replayable certificate files. Start at the new research draft PR, pinned over [#329](https://github.com/femboy2112/SUCC/pull/329) head \`00f43cb871a71526bf520f646f594bcece5dbced\`. Read \`research/2026-10-27/PI_BASE3_CERTIFIED_DIGIT_HANDLE.md\`, then source modules and 12 focused tests. Recheck live heads, AGENTS.md, provenance/IMPORT_MANIFEST.json, and original archived source before working. Each agent must use a distinct *non-main* child branch; do not merge, tag, force push, release or rewrite original forcing.
+**User goal:** "a base-3 digit handle for π" — now executable with *two genuine ternary BBP input series*, exact algebraic reconstruction, independent original signed-BBP and Machin checks, and replayable certificate files. Start at the new research draft PR, pinned over [#329](https://github.com/femboy2112/SUCC/pull/329) head `00f43cb871a71526bf520f646f594bcece5dbced`. Read `research/2026-10-27/PI_BASE3_CERTIFIED_DIGIT_HANDLE.md`, then source modules and 12 focused tests. Recheck live heads, AGENTS.md, provenance/IMPORT_MANIFEST.json, and original archived source before working. Each agent must use a distinct *non-main* child branch; do not merge, tag, force push, release or rewrite original forcing.
 
 ## CLAUDE — native rigor and formal authority
 
