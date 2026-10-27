@@ -12,7 +12,8 @@ from observational_succ.logarithmic_sampling_succ import (
     chiral_harmonic_counterterm,chiral_harmonic_remainder_constant_bound,
     chiral_harmonic_prefix,
     asymptotic_weight_equivalence,source_phase_tail_bound,
-    source_log_shift_universal_upper
+    source_log_shift_universal_upper,
+    fixed_mellin_alias_upper,fixed_mellin_band_upper
 )
 
 class LogSamplingTest(unittest.TestCase):
@@ -136,6 +137,21 @@ class LogSamplingTest(unittest.TestCase):
                 if previous is not None:self.assertLess(bound,previous)
                 previous=bound
             self.assertLess(source_phase_tail_bound(1000,h),Q(1,100))
+
+    def test_fixed_mellin_aliases_cannot_explain_rational_radix_coherence(self):
+        # All fixed k integrals have an explicit T-uniform rational bound.
+        # But for alpha=1 the actual discrete phase is constantly 1.
+        for h in (1,-2,5):
+            for alpha in (Q(1),Q(-2,3),Q(7,11)):
+                for K in (0,1,3,8):
+                    budget=sum((fixed_mellin_alias_upper(k,h,alpha)
+                                for k in range(-K,K+1)),Q())
+                    self.assertEqual(budget,fixed_mellin_band_upper(K,h,alpha))
+                    self.assertGreater(budget,0)
+        for n in range(100):
+            self.assertEqual(16**n%1,0)
+        with self.assertRaises(ValueError):fixed_mellin_alias_upper(0,0,Q(1))
+        with self.assertRaises(ValueError):fixed_mellin_band_upper(1,1,Q(0))
 
     def test_invalid_input_controls(self):
         with self.assertRaises(ValueError): source_r(0)

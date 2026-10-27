@@ -17,7 +17,8 @@ from observational_succ.logarithmic_sampling_succ import (
     exact_weighted_sampling_identity,chiral_source,
     CHIRAL_PLUS,CHIRAL_MINUS,source_log_shift_ratio,
     chiral_harmonic_prefix,chiral_harmonic_remainder_constant_bound,
-    asymptotic_weight_equivalence)
+    asymptotic_weight_equivalence,
+    fixed_mellin_alias_upper,fixed_mellin_band_upper)
 
 
 def independent_polynomial_eval(coeff,x):
@@ -104,6 +105,13 @@ def main():
         assert asymptotic_weight_equivalence(weights,base)==predicted
         weight_checks+=1
 
+    finite_band_checks=0
+    for h,alpha,K in product((1,2,-3),(Q(1),Q(-5,7)),(0,1,5)):
+        direct=sum((fixed_mellin_alias_upper(k,h,alpha)
+                    for k in range(-K,K+1)),Q())
+        assert direct==fixed_mellin_band_upper(K,h,alpha)
+        finite_band_checks+=1
+
     report={'status':'PASS','exact_original_four_pole_checks':source_checks,
             'exact_Green_prefix_checks':green_checks,
             'exact_polynomial_dirac_sawtooth_checks':sawtooth_checks,
@@ -112,6 +120,7 @@ def main():
             'exact_chiral_source_checks':chiral_checks,
             'scalar_weight_countermodel_checks':weight_checks,
             'exact_chiral_harmonic_gamma_cancellation_checks':chiral_gamma_checks,
+            'fixed_alias_majorant_checks':finite_band_checks,
             'claim':'finite exact rational oracle only: no real signed pi-Weyl cancellation'}
     print(json.dumps(report,sort_keys=True,indent=2))
 

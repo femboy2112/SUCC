@@ -8,6 +8,8 @@
 
 **Second priority: genuine signed alias research.** For compact smooth log-time windows apply Poisson–Mellin to the sampled g_h(t)=e(hπe^t). Locate the moving stationary alias band k≈(log16)hπe^t, build exact source/chiral/Oily grade characters on those bands without postulating independence or dividing by unknown Weyl sums, and seek a new nontrivial bound for the total signed alias sum. Explicitly distinguish zero-frequency Mellin Gamma finite part (−γ−log(2π|hπ|)+iπsgn(h)/2) from moving nonzero sampling aliases. Gamma scalar-normalization is universal and cannot select π.
 
+**Fresh fixed-band no-go:** for every fixed log-clock Mellin index k, the oscillatory integral I_k(T) is uniformly bounded in T. Its full explicit proof and rational certificate are in LS-4c. Yet α=1 has discrete sum N; the proof must pay growing k aliases. Audit endpoint regularization when applying Poisson to long windows.
+
 **Third priority: log-unit rank.** The full Zlog2+Zlog3 projection is dense and cannot be treated as a locally finite 1D comb. Keep log2/log3 integer coordinates or all S-adic valuations, and check how positive semigroup windows and rank-r transverse trace corrections change the source pulse operator. The ×16 recurrence is a fourfold primitive ×2 return; test a source-faithful binary microstep resolution as an independent implementation.
 
 **Negative controls:** α=1 sampled hexadecimal orbit, original source with changed initial selector V_n=−T_n, #320 authentic-leading-decay nonnormal mutant, PR #324 finite-frequency counterfeit, #334 rank-two bulk without rank-one trace, and PR #310 nonzero asymptotically scalar Oily weights. Any source-weighting claim must predict different finite test outcomes for the selected source versus at least one counterfeit.
@@ -23,4 +25,4 @@ python scripts/observer_foundations_probe.py
 python scripts/ordinal_succ_report_probe.py
 ~~~
 
-Local isolated execution: 12/13 focused tests passed with 1 upstream-native import skip; independent finite probe all exact checks passed. Full native suite/CI/Lean were not run. Run in full authenticated checkout; do not invent results. No merge, release or normality proof announced.
+Local isolated execution: 13/14 focused tests passed with 1 upstream-native import skip; independent finite probe all exact checks passed. Full native suite/CI/Lean were not run. Run in full authenticated checkout; do not invent results. No merge, release or normality proof announced.

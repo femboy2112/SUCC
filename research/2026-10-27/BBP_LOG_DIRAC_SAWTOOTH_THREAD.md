@@ -205,6 +205,40 @@ $$
 
 Its Laurent finite part at s=0 is **−γ−log(2π|c|)+iπ sgn(c)/2**. Thus Euler–Mascheroni is naturally present as a universal **Mellin normalization constant**, but it is present even for α=1. It does not select π or suppress the aliases without additional arithmetic input. Infinite Mellin/Poisson sums require the stated windows or an explicit distributional regularization; do not interchange unsmoothed divergent sums without proof.
 
+## LS-4c. Every fixed Mellin alias has a uniform finite bound; the moving frequencies really are necessary (NEW explicit classical-style no-go)
+
+Define for any nonzero c=hα and fixed k∈Z,
+
+$
+I_k(T)=\int_0^T e\bigl(c e^t-kt/a\bigr)\,dt,
+\qquad \tau_k=\frac{2\pi k}{a},\quad a=\log16.
+$
+
+After x=e^t, an exact integration by parts with weight x^(-1−iτ_k) gives, **for every T≥0**,
+
+$
+\boxed{
+|I_k(T)|\le\frac{1+\sqrt{1+\tau_k^2}}{2\pi|c|}.
+}
+$
+
+Proof: the two endpoint magnitudes contribute at most 1+e^(−T), and the derivative of x^(−1−iτ_k) has modulus √(1+τ_k²)x^−2. Integrate x^−2 from 1 to e^T, and note √(1+τ²)≥1. The displayed bound follows. No normality input is used.
+
+Moreover, using the elementary inequalities 3<π<22/7 and log16>2, we obtain a **purely rational certificate** when α is nonzero rational:
+
+$
+\boxed{
+|I_k(T)|<\frac{7+11|k|}{21|h\alpha|},
+\qquad
+\sum_{|k|\le K}|I_k(T)|
+<\frac{7(2K+1)+11K(K+1)}{21|h\alpha|}.
+}
+$
+
+For every *fixed* K these bounds are uniform as T→∞. Yet for the hostile rational control α=1 the sampled hexadecimal character is identically 1 and its N-point sum is exactly N. Thus finite alias modes cannot provide the growing sampling mass; the infinite/high-frequency alias tail is indispensable. For a fixed compact smooth approximation to a long rectangular window, transition contributions can be bounded separately. Do not treat an unsmoothed conditional Poisson series as an absolutely convergent finite-window identity.
+
+The committed exact oracle evaluates the rational majorant and its symmetric finite-band sum for 18 independently parameterized cases. This is a quantitative **no-go against fixed Mellin alias bands**, not a new bound on the complete alias sum for π.
+
 ## LS-5. Why scalar Gamma/Oily weighting cannot itself prove normality (PROVED conditional no-go)
 
 For any |z_n|≤1 and scalar weights w_n=c+ε_n,

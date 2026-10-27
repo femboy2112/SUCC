@@ -249,3 +249,30 @@ def source_log_shift_universal_upper(time_index:int) -> Q:
     _natural(time_index,most=1000000)
     e=Q(1,45*BASE**time_index*(time_index+2)**2)
     return e/(1-e)
+
+
+def fixed_mellin_alias_upper(k:int,h:int,alpha:Q|int) -> Q:
+    """Rational, T-uniform bound for I_k(T) on the original log16 lattice.
+
+    I_k(T)=integral_0^T exp(2*pi*i*(h*alpha*exp(t)-k*t/log16)) dt.
+    Integration by parts after x=exp(t) gives
+       |I_k(T)| <= (1+sqrt(1+(2*pi*k/log16)^2))/(2*pi*|h*alpha|)
+       <= (7+11*abs(k))/(21*abs(h*alpha))
+    using 3<pi<22/7, log16>2 and sqrt(1+x*x)<=1+abs(x).
+    This is independent of T, for each fixed k (not a Weyl saving).
+    """
+    if type(k) is not int or type(h) is not int or h==0:
+        raise ValueError('integer k and nonzero integer h required')
+    if type(alpha) not in (int,Q) or Q(alpha)==0:
+        raise ValueError('nonzero exact rational alpha required for certificate')
+    return Q(7+11*abs(k),21*abs(h*Q(alpha)))
+
+
+def fixed_mellin_band_upper(K:int,h:int,alpha:Q|int) -> Q:
+    """T-uniform sum of absolute bounds for all |k|<=K."""
+    _natural(K,most=1000000)
+    if type(h) is not int or h==0:
+        raise ValueError('nonzero integer frequency required')
+    if type(alpha) not in (int,Q) or Q(alpha)==0:
+        raise ValueError('nonzero exact rational alpha required')
+    return Q(7*(2*K+1)+11*K*(K+1),21*abs(h*Q(alpha)))
