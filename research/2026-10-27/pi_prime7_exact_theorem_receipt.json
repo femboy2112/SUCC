@@ -1,0 +1,1752 @@
+{
+  "status": "PASS: exact finite certificates; infinite proofs remain separate; pi normality OPEN",
+  "arithmetic": "Python standard library integers and Fraction; no floats, no repository imports",
+  "instrument_sha256": "0b67563951f792719492f9d2bb9725508c8bf5d874c09ba9cd54f9bd60d503c8",
+  "predeclared_domains": {
+    "modular_source": {
+      "p": 7,
+      "L": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "unit_multipliers": [
+        1,
+        2,
+        3,
+        6
+      ]
+    },
+    "refinement": {
+      "p": [
+        7,
+        11
+      ],
+      "L": [
+        1,
+        2
+      ],
+      "partitions": [
+        "A",
+        "time"
+      ],
+      "phases": "Gaussian units; incomplete N"
+    },
+    "truncation": {
+      "p": [
+        7,
+        11
+      ],
+      "L": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "S": "all S>=0 with 2S<L"
+    }
+  },
+  "prime7_modular_source": [
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "character_multiplier": 1,
+      "regular_input_count": 3,
+      "regular_mirror_input_count": 1,
+      "singleton_regular_fiber_count": 2,
+      "central_regular_fiber_count": 1,
+      "zero_central_character_fibers": 0,
+      "mirror_cyclotomic_remainder": {
+        "0": 1
+      },
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 3
+      },
+      "normalized_fiber_energy": "3/7",
+      "translation_checks": 0,
+      "L1_false_extension_rejected": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "character_multiplier": 2,
+      "regular_input_count": 3,
+      "regular_mirror_input_count": 1,
+      "singleton_regular_fiber_count": 2,
+      "central_regular_fiber_count": 1,
+      "zero_central_character_fibers": 0,
+      "mirror_cyclotomic_remainder": {
+        "0": 1
+      },
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 3
+      },
+      "normalized_fiber_energy": "3/7",
+      "translation_checks": 0,
+      "L1_false_extension_rejected": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "character_multiplier": 3,
+      "regular_input_count": 3,
+      "regular_mirror_input_count": 1,
+      "singleton_regular_fiber_count": 2,
+      "central_regular_fiber_count": 1,
+      "zero_central_character_fibers": 0,
+      "mirror_cyclotomic_remainder": {
+        "0": 1
+      },
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 3
+      },
+      "normalized_fiber_energy": "3/7",
+      "translation_checks": 0,
+      "L1_false_extension_rejected": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "character_multiplier": 6,
+      "regular_input_count": 3,
+      "regular_mirror_input_count": 1,
+      "singleton_regular_fiber_count": 2,
+      "central_regular_fiber_count": 1,
+      "zero_central_character_fibers": 0,
+      "mirror_cyclotomic_remainder": {
+        "0": 1
+      },
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 3
+      },
+      "normalized_fiber_energy": "3/7",
+      "translation_checks": 0,
+      "L1_false_extension_rejected": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "character_multiplier": 1,
+      "regular_input_count": 21,
+      "regular_mirror_input_count": 7,
+      "singleton_regular_fiber_count": 14,
+      "central_regular_fiber_count": 1,
+      "zero_central_character_fibers": 1,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 14
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 7,
+      "L1_false_extension_rejected": false
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "character_multiplier": 2,
+      "regular_input_count": 21,
+      "regular_mirror_input_count": 7,
+      "singleton_regular_fiber_count": 14,
+      "central_regular_fiber_count": 1,
+      "zero_central_character_fibers": 1,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 14
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 7,
+      "L1_false_extension_rejected": false
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "character_multiplier": 3,
+      "regular_input_count": 21,
+      "regular_mirror_input_count": 7,
+      "singleton_regular_fiber_count": 14,
+      "central_regular_fiber_count": 1,
+      "zero_central_character_fibers": 1,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 14
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 7,
+      "L1_false_extension_rejected": false
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "character_multiplier": 6,
+      "regular_input_count": 21,
+      "regular_mirror_input_count": 7,
+      "singleton_regular_fiber_count": 14,
+      "central_regular_fiber_count": 1,
+      "zero_central_character_fibers": 1,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 14
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 7,
+      "L1_false_extension_rejected": false
+    },
+    {
+      "p": 7,
+      "L": 3,
+      "q": 343,
+      "character_multiplier": 1,
+      "regular_input_count": 147,
+      "regular_mirror_input_count": 49,
+      "singleton_regular_fiber_count": 98,
+      "central_regular_fiber_count": 4,
+      "zero_central_character_fibers": 4,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 98
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 49,
+      "L1_false_extension_rejected": false
+    },
+    {
+      "p": 7,
+      "L": 3,
+      "q": 343,
+      "character_multiplier": 2,
+      "regular_input_count": 147,
+      "regular_mirror_input_count": 49,
+      "singleton_regular_fiber_count": 98,
+      "central_regular_fiber_count": 4,
+      "zero_central_character_fibers": 4,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 98
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 49,
+      "L1_false_extension_rejected": false
+    },
+    {
+      "p": 7,
+      "L": 3,
+      "q": 343,
+      "character_multiplier": 3,
+      "regular_input_count": 147,
+      "regular_mirror_input_count": 49,
+      "singleton_regular_fiber_count": 98,
+      "central_regular_fiber_count": 4,
+      "zero_central_character_fibers": 4,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 98
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 49,
+      "L1_false_extension_rejected": false
+    },
+    {
+      "p": 7,
+      "L": 3,
+      "q": 343,
+      "character_multiplier": 6,
+      "regular_input_count": 147,
+      "regular_mirror_input_count": 49,
+      "singleton_regular_fiber_count": 98,
+      "central_regular_fiber_count": 4,
+      "zero_central_character_fibers": 4,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 98
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 49,
+      "L1_false_extension_rejected": false
+    },
+    {
+      "p": 7,
+      "L": 4,
+      "q": 2401,
+      "character_multiplier": 1,
+      "regular_input_count": 1029,
+      "regular_mirror_input_count": 343,
+      "singleton_regular_fiber_count": 686,
+      "central_regular_fiber_count": 22,
+      "zero_central_character_fibers": 22,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 686
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 343,
+      "L1_false_extension_rejected": false
+    },
+    {
+      "p": 7,
+      "L": 4,
+      "q": 2401,
+      "character_multiplier": 2,
+      "regular_input_count": 1029,
+      "regular_mirror_input_count": 343,
+      "singleton_regular_fiber_count": 686,
+      "central_regular_fiber_count": 22,
+      "zero_central_character_fibers": 22,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 686
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 343,
+      "L1_false_extension_rejected": false
+    },
+    {
+      "p": 7,
+      "L": 4,
+      "q": 2401,
+      "character_multiplier": 3,
+      "regular_input_count": 1029,
+      "regular_mirror_input_count": 343,
+      "singleton_regular_fiber_count": 686,
+      "central_regular_fiber_count": 22,
+      "zero_central_character_fibers": 22,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 686
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 343,
+      "L1_false_extension_rejected": false
+    },
+    {
+      "p": 7,
+      "L": 4,
+      "q": 2401,
+      "character_multiplier": 6,
+      "regular_input_count": 1029,
+      "regular_mirror_input_count": 343,
+      "singleton_regular_fiber_count": 686,
+      "central_regular_fiber_count": 22,
+      "zero_central_character_fibers": 22,
+      "mirror_cyclotomic_remainder": {},
+      "fiber_energy_cyclotomic_remainder": {
+        "0": 686
+      },
+      "normalized_fiber_energy": "2/7",
+      "translation_checks": 343,
+      "L1_false_extension_rejected": false
+    }
+  ],
+  "incomplete_N_refinement": [
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 1,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "7",
+      "fine_energy": "49",
+      "child_difference_energy": "42",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 1,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "7",
+      "fine_energy": "49",
+      "child_difference_energy": "42",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 1,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "7",
+      "fine_energy": "49",
+      "child_difference_energy": "42",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 1,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "7",
+      "fine_energy": "49",
+      "child_difference_energy": "42",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 6,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "35/18",
+      "fine_energy": "49/6",
+      "child_difference_energy": "56/9",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 6,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "7/6",
+      "fine_energy": "49/6",
+      "child_difference_energy": "7",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 6,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "7/6",
+      "fine_energy": "49/6",
+      "child_difference_energy": "7",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 6,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "7/6",
+      "fine_energy": "49/6",
+      "child_difference_energy": "7",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 10,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "21/25",
+      "fine_energy": "49/10",
+      "child_difference_energy": "203/50",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 10,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "21/25",
+      "fine_energy": "49/10",
+      "child_difference_energy": "203/50",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 10,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "7/10",
+      "fine_energy": "49/10",
+      "child_difference_energy": "21/5",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 10,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "7/10",
+      "fine_energy": "49/10",
+      "child_difference_energy": "21/5",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 54,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "35/486",
+      "fine_energy": "343/486",
+      "child_difference_energy": "154/243",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 54,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "91/729",
+      "fine_energy": "245/243",
+      "child_difference_energy": "644/729",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 54,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "91/1458",
+      "fine_energy": "49/54",
+      "child_difference_energy": "616/729",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 54,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "119/1458",
+      "fine_energy": "49/54",
+      "child_difference_energy": "602/729",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 97,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "525/9409",
+      "fine_energy": "3087/9409",
+      "child_difference_energy": "2562/9409",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 97,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "1099/9409",
+      "fine_energy": "6125/9409",
+      "child_difference_energy": "5026/9409",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 97,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "385/9409",
+      "fine_energy": "49/97",
+      "child_difference_energy": "4368/9409",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "N": 97,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "623/9409",
+      "fine_energy": "49/97",
+      "child_difference_energy": "4130/9409",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 1,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "49",
+      "fine_energy": "343",
+      "child_difference_energy": "294",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 1,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "49",
+      "fine_energy": "343",
+      "child_difference_energy": "294",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 1,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "49",
+      "fine_energy": "343",
+      "child_difference_energy": "294",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 1,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "49",
+      "fine_energy": "343",
+      "child_difference_energy": "294",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 48,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "343/384",
+      "fine_energy": "343/48",
+      "child_difference_energy": "2401/384",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 48,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "49/48",
+      "fine_energy": "7889/1152",
+      "child_difference_energy": "6713/1152",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 48,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "49/48",
+      "fine_energy": "343/48",
+      "child_difference_energy": "49/8",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 48,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "49/48",
+      "fine_energy": "343/48",
+      "child_difference_energy": "49/8",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 52,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "1029/1352",
+      "fine_energy": "343/52",
+      "child_difference_energy": "7889/1352",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 52,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "343/338",
+      "fine_energy": "8575/1352",
+      "child_difference_energy": "7203/1352",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 52,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "49/52",
+      "fine_energy": "343/52",
+      "child_difference_energy": "147/26",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 52,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "49/52",
+      "fine_energy": "343/52",
+      "child_difference_energy": "147/26",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 348,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "539/7569",
+      "fine_energy": "31213/30276",
+      "child_difference_energy": "29057/30276",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 348,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "5243/30276",
+      "fine_energy": "22295/30276",
+      "child_difference_energy": "49/87",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 348,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "392/7569",
+      "fine_energy": "343/348",
+      "child_difference_energy": "28273/30276",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 348,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "2303/30276",
+      "fine_energy": "343/348",
+      "child_difference_energy": "13769/15138",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 685,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "5733/93845",
+      "fine_energy": "260337/469225",
+      "child_difference_energy": "231672/469225",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 685,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "76097/469225",
+      "fine_energy": "265139/469225",
+      "child_difference_energy": "189042/469225",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 685,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "12593/469225",
+      "fine_energy": "343/685",
+      "child_difference_energy": "222362/469225",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "N": 685,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "30429/469225",
+      "fine_energy": "343/685",
+      "child_difference_energy": "204526/469225",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 1,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "11",
+      "fine_energy": "121",
+      "child_difference_energy": "110",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 1,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "11",
+      "fine_energy": "121",
+      "child_difference_energy": "110",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 1,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "11",
+      "fine_energy": "121",
+      "child_difference_energy": "110",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 1,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "11",
+      "fine_energy": "121",
+      "child_difference_energy": "110",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 10,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "11/10",
+      "fine_energy": "121/10",
+      "child_difference_energy": "11",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 10,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "33/25",
+      "fine_energy": "121/10",
+      "child_difference_energy": "539/50",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 10,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "11/10",
+      "fine_energy": "121/10",
+      "child_difference_energy": "11",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 10,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "11/10",
+      "fine_energy": "121/10",
+      "child_difference_energy": "11",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 14,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "55/49",
+      "fine_energy": "121/14",
+      "child_difference_energy": "737/98",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 14,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "44/49",
+      "fine_energy": "121/14",
+      "child_difference_energy": "759/98",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 14,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "44/49",
+      "fine_energy": "121/14",
+      "child_difference_energy": "759/98",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 14,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "11/14",
+      "fine_energy": "121/14",
+      "child_difference_energy": "55/7",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 126,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "407/7938",
+      "fine_energy": "2299/2646",
+      "child_difference_energy": "3245/3969",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 126,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "11/98",
+      "fine_energy": "2299/2646",
+      "child_difference_energy": "143/189",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 126,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "253/7938",
+      "fine_energy": "121/126",
+      "child_difference_energy": "3685/3969",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 126,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "473/7938",
+      "fine_energy": "121/126",
+      "child_difference_energy": "3575/3969",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 241,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "2519/58081",
+      "fine_energy": "30129/58081",
+      "child_difference_energy": "27610/58081",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 241,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "6501/58081",
+      "fine_energy": "34969/58081",
+      "child_difference_energy": "28468/58081",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 241,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "1419/58081",
+      "fine_energy": "121/241",
+      "child_difference_energy": "27742/58081",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "N": 241,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "3509/58081",
+      "fine_energy": "121/241",
+      "child_difference_energy": "25652/58081",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 1,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "121",
+      "fine_energy": "1331",
+      "child_difference_energy": "1210",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 1,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "121",
+      "fine_energy": "1331",
+      "child_difference_energy": "1210",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 1,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "121",
+      "fine_energy": "1331",
+      "child_difference_energy": "1210",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 1,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "121",
+      "fine_energy": "1331",
+      "child_difference_energy": "1210",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 120,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "2299/2400",
+      "fine_energy": "38599/3600",
+      "child_difference_energy": "70301/7200",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 120,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "363/400",
+      "fine_energy": "38599/3600",
+      "child_difference_energy": "8833/900",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 120,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "121/120",
+      "fine_energy": "1331/120",
+      "child_difference_energy": "121/12",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 120,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "121/120",
+      "fine_energy": "1331/120",
+      "child_difference_energy": "121/12",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 124,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "847/961",
+      "fine_energy": "19965/1922",
+      "child_difference_energy": "18271/1922",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 124,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "3267/3844",
+      "fine_energy": "19965/1922",
+      "child_difference_energy": "36663/3844",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 124,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "7623/7688",
+      "fine_energy": "1331/124",
+      "child_difference_energy": "74899/7688",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 124,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "121/124",
+      "fine_energy": "1331/124",
+      "child_difference_energy": "605/62",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 1336,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "57717/892448",
+      "fine_energy": "826551/892448",
+      "child_difference_energy": "384417/446224",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 1336,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "72963/446224",
+      "fine_energy": "238249/223112",
+      "child_difference_energy": "403535/446224",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 1336,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "12705/446224",
+      "fine_energy": "1331/1336",
+      "child_difference_energy": "431849/446224",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 1336,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "27951/446224",
+      "fine_energy": "887777/892448",
+      "child_difference_energy": "831875/892448",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 2661,
+      "partition": "A",
+      "phase_variant": 0,
+      "coarse_energy": "141691/2360307",
+      "fine_energy": "999581/2360307",
+      "child_difference_energy": "857890/2360307",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 2661,
+      "partition": "A",
+      "phase_variant": 1,
+      "coarse_energy": "1148653/7080921",
+      "fine_energy": "4896749/7080921",
+      "child_difference_energy": "3748096/7080921",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 2661,
+      "partition": "time",
+      "phase_variant": 0,
+      "coarse_energy": "170005/7080921",
+      "fine_energy": "1331/2661",
+      "child_difference_energy": "3371786/7080921",
+      "incomplete_N": true,
+      "identity_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "N": 2661,
+      "partition": "time",
+      "phase_variant": 1,
+      "coarse_energy": "46585/786769",
+      "fine_energy": "1331/2661",
+      "child_difference_energy": "1040842/2360307",
+      "incomplete_N": true,
+      "identity_exact": true
+    }
+  ],
+  "truncated_K_S": [
+    {
+      "p": 7,
+      "L": 1,
+      "q": 7,
+      "S": 0,
+      "selected_fibers": 3,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 3
+        }
+      },
+      "critical_fiber_size": 1,
+      "trace": 6,
+      "trace_over_q": "6/7",
+      "operator_norm": 2,
+      "maximum_row_sum": 2,
+      "positive_spectrum_multiplicities": {
+        "2": 3
+      },
+      "nullity": 4,
+      "b_S": "12/7",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "q": 49,
+      "S": 0,
+      "selected_fibers": 21,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 21
+        }
+      },
+      "critical_fiber_size": 7,
+      "trace": 42,
+      "trace_over_q": "6/7",
+      "operator_norm": 2,
+      "maximum_row_sum": 2,
+      "positive_spectrum_multiplicities": {
+        "2": 21
+      },
+      "nullity": 28,
+      "b_S": "12/7",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    },
+    {
+      "p": 7,
+      "L": 3,
+      "q": 343,
+      "S": 0,
+      "selected_fibers": 147,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 147
+        },
+        "1": {
+          "fiber_size": 14,
+          "fiber_count": 3
+        }
+      },
+      "critical_fiber_size": 7,
+      "trace": 294,
+      "trace_over_q": "6/7",
+      "operator_norm": 2,
+      "maximum_row_sum": 2,
+      "positive_spectrum_multiplicities": {
+        "2": 147
+      },
+      "nullity": 196,
+      "b_S": "12/7",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    },
+    {
+      "p": 7,
+      "L": 3,
+      "q": 343,
+      "S": 1,
+      "selected_fibers": 150,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 147
+        },
+        "1": {
+          "fiber_size": 14,
+          "fiber_count": 3
+        }
+      },
+      "critical_fiber_size": 7,
+      "trace": 336,
+      "trace_over_q": "48/49",
+      "operator_norm": 14,
+      "maximum_row_sum": 14,
+      "positive_spectrum_multiplicities": {
+        "2": 147,
+        "14": 3
+      },
+      "nullity": 193,
+      "b_S": "24/7",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    },
+    {
+      "p": 7,
+      "L": 4,
+      "q": 2401,
+      "S": 0,
+      "selected_fibers": 1029,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 1029
+        },
+        "1": {
+          "fiber_size": 14,
+          "fiber_count": 21
+        }
+      },
+      "critical_fiber_size": 49,
+      "trace": 2058,
+      "trace_over_q": "6/7",
+      "operator_norm": 2,
+      "maximum_row_sum": 2,
+      "positive_spectrum_multiplicities": {
+        "2": 1029
+      },
+      "nullity": 1372,
+      "b_S": "12/7",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    },
+    {
+      "p": 7,
+      "L": 4,
+      "q": 2401,
+      "S": 1,
+      "selected_fibers": 1050,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 1029
+        },
+        "1": {
+          "fiber_size": 14,
+          "fiber_count": 21
+        }
+      },
+      "critical_fiber_size": 49,
+      "trace": 2352,
+      "trace_over_q": "48/49",
+      "operator_norm": 14,
+      "maximum_row_sum": 14,
+      "positive_spectrum_multiplicities": {
+        "2": 1029,
+        "14": 21
+      },
+      "nullity": 1351,
+      "b_S": "24/7",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "q": 11,
+      "S": 0,
+      "selected_fibers": 5,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 5
+        }
+      },
+      "critical_fiber_size": 1,
+      "trace": 10,
+      "trace_over_q": "10/11",
+      "operator_norm": 2,
+      "maximum_row_sum": 2,
+      "positive_spectrum_multiplicities": {
+        "2": 5
+      },
+      "nullity": 6,
+      "b_S": "20/11",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "q": 121,
+      "S": 0,
+      "selected_fibers": 55,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 55
+        }
+      },
+      "critical_fiber_size": 11,
+      "trace": 110,
+      "trace_over_q": "10/11",
+      "operator_norm": 2,
+      "maximum_row_sum": 2,
+      "positive_spectrum_multiplicities": {
+        "2": 55
+      },
+      "nullity": 66,
+      "b_S": "20/11",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    },
+    {
+      "p": 11,
+      "L": 3,
+      "q": 1331,
+      "S": 0,
+      "selected_fibers": 605,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 605
+        },
+        "1": {
+          "fiber_size": 22,
+          "fiber_count": 5
+        }
+      },
+      "critical_fiber_size": 11,
+      "trace": 1210,
+      "trace_over_q": "10/11",
+      "operator_norm": 2,
+      "maximum_row_sum": 2,
+      "positive_spectrum_multiplicities": {
+        "2": 605
+      },
+      "nullity": 726,
+      "b_S": "20/11",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    },
+    {
+      "p": 11,
+      "L": 3,
+      "q": 1331,
+      "S": 1,
+      "selected_fibers": 610,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 605
+        },
+        "1": {
+          "fiber_size": 22,
+          "fiber_count": 5
+        }
+      },
+      "critical_fiber_size": 11,
+      "trace": 1320,
+      "trace_over_q": "120/121",
+      "operator_norm": 22,
+      "maximum_row_sum": 22,
+      "positive_spectrum_multiplicities": {
+        "2": 605,
+        "22": 5
+      },
+      "nullity": 721,
+      "b_S": "40/11",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    },
+    {
+      "p": 11,
+      "L": 4,
+      "q": 14641,
+      "S": 0,
+      "selected_fibers": 6655,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 6655
+        },
+        "1": {
+          "fiber_size": 22,
+          "fiber_count": 55
+        }
+      },
+      "critical_fiber_size": 121,
+      "trace": 13310,
+      "trace_over_q": "10/11",
+      "operator_norm": 2,
+      "maximum_row_sum": 2,
+      "positive_spectrum_multiplicities": {
+        "2": 6655
+      },
+      "nullity": 7986,
+      "b_S": "20/11",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    },
+    {
+      "p": 11,
+      "L": 4,
+      "q": 14641,
+      "S": 1,
+      "selected_fibers": 6710,
+      "regular_fiber_classification": {
+        "0": {
+          "fiber_size": 2,
+          "fiber_count": 6655
+        },
+        "1": {
+          "fiber_size": 22,
+          "fiber_count": 55
+        }
+      },
+      "critical_fiber_size": 121,
+      "trace": 14520,
+      "trace_over_q": "120/121",
+      "operator_norm": 22,
+      "maximum_row_sum": 22,
+      "positive_spectrum_multiplicities": {
+        "2": 6655,
+        "22": 55
+      },
+      "nullity": 7931,
+      "b_S": "40/11",
+      "norm_attainment_exact": true,
+      "whole_fibers_retained": true,
+      "critical_fiber_excluded": true,
+      "gaussian_vector_norm_bound_exact": true
+    }
+  ]
+}

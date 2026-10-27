@@ -1,0 +1,45 @@
+{
+  "assertion_count": 2832,
+  "authority": "exact finite Fraction/Gaussian-integer audit; no infinite existence inference",
+  "case_count": 384,
+  "check_counts": {
+    "empirical_endpoint": 384,
+    "empirical_lower": 384,
+    "empirical_phase_stability": 384,
+    "empirical_upper": 144,
+    "haar_endpoint": 384,
+    "haar_phase_stability": 384,
+    "projection_window_one": 384,
+    "projection_window_zero": 384
+  },
+  "parameters": [
+    [
+      7,
+      1
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      241,
+      1
+    ]
+  ],
+  "receipt_sha256": "9af27630dc31e42d2cb9f241c57cb9c1b401a33b0b01aae18834a82e11b14ae1",
+  "script_sha256": "8105789675604d2d3c2917f7af77cd2c79a35dd9d3daf8537cb8ac537904159c",
+  "seed": 708271,
+  "status": "all passed"
+}

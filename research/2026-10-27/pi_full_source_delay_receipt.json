@@ -1,0 +1,184 @@
+{
+  "status": "exact finite certificates passed",
+  "rows": [
+    {
+      "p": 7,
+      "L": 1,
+      "counts": [
+        19,
+        9,
+        7
+      ],
+      "expected": [
+        19,
+        9,
+        7
+      ]
+    },
+    {
+      "p": 7,
+      "L": 2,
+      "counts": [
+        217,
+        51,
+        49
+      ],
+      "expected": [
+        217,
+        51,
+        49
+      ]
+    },
+    {
+      "p": 7,
+      "L": 3,
+      "counts": [
+        2107,
+        345,
+        343
+      ],
+      "expected": [
+        2107,
+        345,
+        343
+      ]
+    },
+    {
+      "p": 7,
+      "L": 4,
+      "counts": [
+        18865,
+        2403,
+        2401
+      ],
+      "expected": [
+        18865,
+        2403,
+        2401
+      ]
+    },
+    {
+      "p": 7,
+      "L": 5,
+      "counts": [
+        160867,
+        16809,
+        16807
+      ],
+      "expected": [
+        160867,
+        16809,
+        16807
+      ]
+    },
+    {
+      "p": 7,
+      "critical": [
+        1,
+        5
+      ],
+      "off_diagonal_pair_residues": [
+        [
+          2,
+          3
+        ]
+      ],
+      "off_diagonal_pair_determinants": [
+        4
+      ]
+    },
+    {
+      "p": 11,
+      "L": 1,
+      "counts": [
+        27,
+        13,
+        11
+      ],
+      "expected": [
+        27,
+        13,
+        11
+      ]
+    },
+    {
+      "p": 11,
+      "L": 2,
+      "counts": [
+        407,
+        123,
+        121
+      ],
+      "expected": [
+        407,
+        123,
+        121
+      ]
+    },
+    {
+      "p": 11,
+      "L": 3,
+      "counts": [
+        5687,
+        1333,
+        1331
+      ],
+      "expected": [
+        5687,
+        1333,
+        1331
+      ]
+    },
+    {
+      "p": 11,
+      "critical": [
+        1
+      ],
+      "off_diagonal_pair_residues": [
+        [
+          2,
+          4
+        ]
+      ],
+      "off_diagonal_pair_determinants": [
+        3
+      ]
+    },
+    {
+      "p": 241,
+      "L": 1,
+      "counts": [
+        497,
+        241,
+        241
+      ],
+      "expected": [
+        497,
+        241,
+        241
+      ]
+    },
+    {
+      "p": 241,
+      "L": 2,
+      "counts": [
+        177617,
+        58081,
+        58081
+      ],
+      "expected": [
+        177617,
+        58081,
+        58081
+      ]
+    },
+    {
+      "p": 241,
+      "critical": [
+        152
+      ],
+      "off_diagonal_pair_residues": [],
+      "off_diagonal_pair_determinants": []
+    }
+  ]
+}
