@@ -1,0 +1,11 @@
+# CLAUDE — Pointed Circle/Solenoid/Two-Adic Clock: rigorous integration and adversarial audit
+
+Start from the new source-typed research branch/PR and read `research/2026-10-27/POINTED_CIRCLE_SOLENOID_TWO_ADIC_CLOCK.md`. Inspect main, PR #319 signed moving-lag work, sibling #318 WTF global audit, #315 posterior/field feedback, SS-05/06, the authentic original four-pole source and `AGENTS.md`. No merge main without user approval.
+
+1. Independently rederive the 2-adic isometry of `r(x)` and of `F_k(x)=Σ 16^j r(x-j)` using odd-denominator unit differences. Audit the exact source `r(n)` versus the polynomial-canceled form, the `n>=k` truncation and all-k time permutation claim; verify the finite enumeration is not the logical proof.
+2. Prove the solenoid quotient chart `(t,z)~(t+1,z-1)`, seam memory adding one, two lift discrepancy `U_n` in `Z16`, and the marked-cut carry coboundary with **correct signs** and exact Fourier phase transport. Distinguish closure of countable roots, circle vs interval metric, and missing orientation from chosen reference.
+3. Independently reconstruct the fully explicit **zero-seed nonnormal isometric source mutant** using `T_n*=(n+1)/((2n+1)(4n+1)(8n+1))`; audit every real and 2-adic statement and make it a hostile control in the integrated proof-referee. Check strict monotone tail via the integer polynomial and exact leading coefficient `15/64`.
+4. Audit the independent odd-torsion grid control: circle Haar in weak limit but solenoid fractional-character mean bounded away from zero. Full solenoid Haar is too strong a required proof gate for π normality.
+5. Run the native full suite on the actual combined branch and resolve Python 3.10 workflow timeout/scope blockers **without unauthorized workflow modifications**. Confirm hash/receipt replay, source immutability, mathematical proof authority and correct GitHub LaTeX rendering. Keep prior claim namespace and tests. If improvements need code changes, commit them on a new research branch and open reviewable PR.
+
+**Important:** The new 2-adic equidistribution is real mathematics but does NOT imply real-circle normality, and the mutant proves that limitation even with zero seed/positive leading match. Preserve that firewall. Return independently checked status and strongest next signed π estimate, no roadmap-only response.

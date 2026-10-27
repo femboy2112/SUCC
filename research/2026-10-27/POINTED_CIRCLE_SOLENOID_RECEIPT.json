@@ -1,0 +1,313 @@
+{
+  "authentic_cut_coboundary": {
+    "length": 24,
+    "ordinary_new_inequality": false,
+    "two_endpoint_boundary": 79228162514264337593543950336,
+    "weighted_carry_change": 79228162514264337593543950336
+  },
+  "authentic_cut_first_six_carries": [
+    [
+      3,
+      18
+    ],
+    [
+      2,
+      17
+    ],
+    [
+      4,
+      19
+    ],
+    [
+      3,
+      19
+    ],
+    [
+      15,
+      14
+    ],
+    [
+      6,
+      22
+    ]
+  ],
+  "dyadic_circle_seam": [
+    {
+      "circle_distance": "1/2",
+      "depth": 2,
+      "flat_distance": "1/2",
+      "near_one": "3/4",
+      "near_zero": "1/4",
+      "same_circle_limit": true,
+      "same_flat_limit": false
+    },
+    {
+      "circle_distance": "1/8",
+      "depth": 4,
+      "flat_distance": "7/8",
+      "near_one": "15/16",
+      "near_zero": "1/16",
+      "same_circle_limit": true,
+      "same_flat_limit": false
+    },
+    {
+      "circle_distance": "1/2048",
+      "depth": 12,
+      "flat_distance": "2047/2048",
+      "near_one": "4095/4096",
+      "near_zero": "1/4096",
+      "same_circle_limit": true,
+      "same_flat_limit": false
+    }
+  ],
+  "hostile_control_does_not_change_source": false,
+  "normality_proved": false,
+  "odd_circle_Haar_nonHaar_solenoid": [
+    {
+      "circle_fixed_h_upper_factor": "1210/1029",
+      "depth": 3,
+      "fractional_character_real_lower": "1447/1568",
+      "max_inverse_coord": "2/49",
+      "normality_of_pi_proved": false,
+      "odd_conductor": 49
+    },
+    {
+      "circle_fixed_h_upper_factor": "38434/1054487",
+      "depth": 97,
+      "fractional_character_real_lower": "1447/1568",
+      "max_inverse_coord": "96/1553",
+      "normality_of_pi_proved": false,
+      "odd_conductor": 1553
+    }
+  ],
+  "original_source_witness_kept": true,
+  "proof_authority": "paper; exact finite replay; not Lean-verified infinite math",
+  "schema": "SUCC.pointed-circle-solenoid-clock.v1",
+  "signed_midpoint_source": {
+    "anchor": "3/7",
+    "bins": 31,
+    "cell": 13,
+    "exact_phase": "3583705763278965054029430291267717977982213204926603547226/13891374662391777675587233781026621315756075602948944943375",
+    "frequency": 7,
+    "maximum_character_chord_distance_upper": "11/248",
+    "midpoint_phase": "223752697/884970144",
+    "phase_circle_distance": "2286723368059418393155937710890834240959795872412898620357/444523989196536885618791480992851882104194419294366238188000",
+    "selected_signed_saving_proved": false,
+    "time": 24
+  },
+  "solenoid_seam_odometer": [
+    {
+      "depth": 1,
+      "minus_one_to_zero": 0
+    },
+    {
+      "depth": 2,
+      "minus_one_to_zero": 0
+    },
+    {
+      "depth": 3,
+      "minus_one_to_zero": 0
+    }
+  ],
+  "source": "unaltered-Coherent-Main-X-four-pole-U0=0",
+  "source_sha256": {
+    "observational_succ/solenoid_cut_source.py": "764db4e7866d4a13ba979d6745489a0a89ba705f0679628ae78f9267f4f6c528",
+    "scripts/solenoid_cut_source_probe.py": "f01374b5f330791b485940304e34d4d4ecbecf0aef27fb4412a154a0cf43a0fe",
+    "tests/test_solenoid_cut_source.py": "4cbd515f5513b13b8ada24bd733667ae2bccff297ee6942dd178a7e3370f7b26"
+  },
+  "two_adic_signed_prefix_bound": "13/4109",
+  "two_adic_uniformity": [
+    {
+      "depth": 1,
+      "distinct_count": 16,
+      "finite_permutation": true,
+      "modulus": 16,
+      "period": 16,
+      "real_circle_normality_proved": false
+    },
+    {
+      "depth": 2,
+      "distinct_count": 256,
+      "finite_permutation": true,
+      "modulus": 256,
+      "period": 256,
+      "real_circle_normality_proved": false
+    },
+    {
+      "depth": 3,
+      "distinct_count": 4096,
+      "finite_permutation": true,
+      "modulus": 4096,
+      "period": 4096,
+      "real_circle_normality_proved": false
+    },
+    {
+      "depth": 4,
+      "distinct_count": 65536,
+      "finite_permutation": true,
+      "modulus": 65536,
+      "period": 65536,
+      "real_circle_normality_proved": false
+    }
+  ],
+  "two_adic_winding_torsion_gap": [
+    {
+      "canonical_two_adic_value": 0,
+      "circle_phase": "0/1",
+      "depth": 3,
+      "gap": 0,
+      "odd_torsion_memory": 0,
+      "unwrapped": "0/1",
+      "winding_memory": 0
+    },
+    {
+      "canonical_two_adic_value": 3553,
+      "circle_phase": "2/15",
+      "depth": 3,
+      "gap": 3553,
+      "odd_torsion_memory": 546,
+      "unwrapped": "47/15",
+      "winding_memory": 3
+    },
+    {
+      "canonical_two_adic_value": 3070,
+      "circle_phase": "1076/4095",
+      "depth": 3,
+      "gap": 3070,
+      "odd_torsion_memory": 1076,
+      "unwrapped": "205826/4095",
+      "winding_memory": 50
+    },
+    {
+      "canonical_two_adic_value": 2095,
+      "circle_phase": "188663/765765",
+      "depth": 3,
+      "gap": 2095,
+      "odd_torsion_memory": 2805,
+      "unwrapped": "615863723/765765",
+      "winding_memory": 804
+    },
+    {
+      "canonical_two_adic_value": 780,
+      "circle_phase": "106894973/111035925",
+      "depth": 3,
+      "gap": 780,
+      "odd_torsion_memory": 3895,
+      "unwrapped": "1428806141948/111035925",
+      "winding_memory": 579
+    },
+    {
+      "canonical_two_adic_value": 2157,
+      "circle_phase": "32442016954/78058255275",
+      "depth": 3,
+      "gap": 2157,
+      "odd_torsion_memory": 3026,
+      "unwrapped": "16071212445820879/78058255275",
+      "winding_memory": 1087
+    },
+    {
+      "canonical_two_adic_value": 1514,
+      "circle_phase": "16143697977964/24536311574775",
+      "depth": 3,
+      "gap": 1514,
+      "odd_torsion_memory": 3596,
+      "unwrapped": "80827484660698633414/24536311574775",
+      "winding_memory": 1014
+    },
+    {
+      "canonical_two_adic_value": 2907,
+      "circle_phase": "43667396600461261/81926744348173725",
+      "depth": 3,
+      "gap": 2907,
+      "odd_torsion_memory": 1039,
+      "unwrapped": "4318127540987083098959311/81926744348173725",
+      "winding_memory": 3946
+    },
+    {
+      "canonical_two_adic_value": 344,
+      "circle_phase": "82482175187690988496/154923473562396513975",
+      "depth": 3,
+      "gap": 344,
+      "odd_torsion_memory": 1360,
+      "unwrapped": "130649266880774398385420101096/154923473562396513975",
+      "winding_memory": 1704
+    },
+    {
+      "canonical_two_adic_value": 441,
+      "circle_phase": "80845733759021750791/154923473562396513975",
+      "depth": 3,
+      "gap": 441,
+      "odd_torsion_memory": 2255,
+      "unwrapped": "2090388270092909093421859664191/154923473562396513975",
+      "winding_memory": 2696
+    },
+    {
+      "canonical_two_adic_value": 3606,
+      "circle_phase": "209616749220518838502/595232293160786606325",
+      "depth": 3,
+      "gap": 3606,
+      "odd_torsion_memory": 2674,
+      "unwrapped": "128503868393081475309569689733902/595232293160786606325",
+      "winding_memory": 2184
+    },
+    {
+      "canonical_two_adic_value": 71,
+      "circle_phase": "48891577015658186678698/76784965817741472215925",
+      "depth": 3,
+      "gap": 71,
+      "odd_torsion_memory": 2110,
+      "unwrapped": "265231984363320332474665054275863923/76784965817741472215925",
+      "winding_memory": 2181
+    },
+    {
+      "canonical_two_adic_value": 228,
+      "circle_phase": "60882892596227901210360094/321191512015612578279214275",
+      "depth": 3,
+      "gap": 228,
+      "odd_torsion_memory": 1910,
+      "unwrapped": "17751446249468303794410631135140991241644/321191512015612578279214275",
+      "winding_memory": 2138
+    }
+  ],
+  "zero_seed_decoy_permutations": [
+    {
+      "authentic_first_forcing": "47/15",
+      "checked_permutation_size": 16,
+      "depth": 1,
+      "first_forcing": "2158/135",
+      "is_original_source": false,
+      "pi_normality_from_isometry_proved": false,
+      "real_fourier_average_limit": 1,
+      "same_forcing_leading_coefficient": "15/64",
+      "strictly_positive_forcing_for_all_n": true,
+      "two_adic_isometry_for_all_k": true,
+      "zero_initial_state": true
+    },
+    {
+      "authentic_first_forcing": "47/15",
+      "checked_permutation_size": 256,
+      "depth": 2,
+      "first_forcing": "2158/135",
+      "is_original_source": false,
+      "pi_normality_from_isometry_proved": false,
+      "real_fourier_average_limit": 1,
+      "same_forcing_leading_coefficient": "15/64",
+      "strictly_positive_forcing_for_all_n": true,
+      "two_adic_isometry_for_all_k": true,
+      "zero_initial_state": true
+    },
+    {
+      "authentic_first_forcing": "47/15",
+      "checked_permutation_size": 4096,
+      "depth": 3,
+      "first_forcing": "2158/135",
+      "is_original_source": false,
+      "pi_normality_from_isometry_proved": false,
+      "real_fourier_average_limit": 1,
+      "same_forcing_leading_coefficient": "15/64",
+      "strictly_positive_forcing_for_all_n": true,
+      "two_adic_isometry_for_all_k": true,
+      "zero_initial_state": true
+    }
+  ]
+}
