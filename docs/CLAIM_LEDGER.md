@@ -1085,3 +1085,36 @@ finite evidence remain distinct. No Lean or RH authority is claimed.
 constraints, a linear early-carry-prefix no-go for partial authentication,
 conditional prime-clock entropy obstructions, and certified canonical collision
 windows. The actual selected subpower bound and pi normality remain unproved.
+
+## Selected pi boundary and 2x3 CRT clock frontier (2026-10-27, PR #319-#324)
+
+Dossiers: [selected boundary / SB-1..SB-4](../research/2026-10-27/PI_SELECTED_BOUNDARY_CRT_FRONTIER.md),
+[2-adic zero boundary BW-1..BW-3](../research/2026-10-27/BBP_BINWINDOW_ZERO_BOUNDARY.md),
+[3-adic Hensel + CRT clock](../research/2026-10-27/BBP_PRIMAL_RECURSION_2ADIC_3ADIC.md),
+[finite signed-loss core](../research/2026-10-27/GLOBAL_SIGNED_CORE.md); audit
+[CLAUDE_PI_PROOF_FORGE_INTEGRATION_RESULT](../handoffs/CLAUDE_PI_PROOF_FORGE_INTEGRATION_RESULT_2026-10-27.md).
+Everything rests on the exact identity `U_n = 16^(n-1)*pi - T_n`, `0<T_n<1/(15(n+1)^2)`,
+`B = sum_n T_n = (R-pi)/15 = 0.0162969977338265...` (coordinator-reconfirmed to 80 digits;
+`R = pi/4 + 5*sqrt2*pi/16 + 5*log2/8 + 5*sqrt2*log(1+sqrt2)/8`). **PAPER-PROVED:**
+SB-1 nonlinear cylinder transport `|sum w(f(X)-f(Y))| <= B*sum L` (discontinuous digit/carry
+indicators EXCLUDED; fixed-lag target is a pushforward, not product Haar); SB-2 digit-seam
+criterion with Haar expectation `E[#mismatch]=16B` (generic-in-seed, NOT a fixed-pi bound --
+the changed seed alpha=0 mismatches at every n); SB-4 explicit finite-frequency counterfeit
+`alpha_q` killing every mode `1<=|h|<=q-1` while mode q survives (q=17 and composite q=21,
+so coprimality-to-16, not primality, is the condition -- REFUTES any finite-band->normality
+shortcut); BW-1 `C_past = sum 16^s r(-s) = 0` in Q_2 and BW-2 `Phi(n)=U_n` all-time; CRT-1
+joint `([U_n]_{16^k}, [A(n)]_{3^L})` clock bijective per period, `A(n)=120n^2-89n+16`.
+**PAPER-PROVED CONDITIONAL:** SB-3 exact finite CRT Plancherel on the inherited #321-#322 label
+bijection; its energy criterion `E_{N,M}(h)->0` is explicitly **UNPROVED** (and is strictly
+stronger than normality). **PROVED but logarithmic:** the inherited #317/#319 loss
+`|S_N(h)| <= N - (log_8 N)/14 + O_h(1)` -- a fixed per-block 1/14 saving over ~log_8 N blocks,
+NOT o(N) (the forcing-defect method is ceilinged at `(19/8)sqrt|h|+2`). **REFUTED inferences:**
+smooth-echo observables, real phase L1 transport, 2-adic/CRT orthogonality, generic a.e. digit
+counts, and any finite character band -> selected pi normality; plus the #320 2-adic-isometric
+nonnormal mutant and the changed-seed `V_n=-T_n`. Lean (`SelectedBranch`/`GlobalSigned`/`CarryDefect`,
+pinned 4.14.0/mathlib `4bbdccd9`) kernel-checks 27 FINITE theorems + 15 mutant controls only,
+axioms `{propext, Classical.choice, Quot.sound}`; **no infinitary normality has kernel authority.**
+**OPEN:** `S_N(h) = sum_{n<=N} e(hU_n) = o(N)` for every fixed `h != 0` -- base-16 normality of
+pi -- and the sufficient `E_{N,M}(h)->0`. **RH OPEN.** Firewall verified: four signed poles and
+`U_0=0` immutable across #316->#324; no pi-digit oracle or zero-position as a construction input;
+every `normality_proved`/`RH_proved` True-site in the tree is a negative-control mutation-rejection.
