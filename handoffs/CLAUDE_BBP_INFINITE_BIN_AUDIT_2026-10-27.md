@@ -1,0 +1,9 @@
+# CLAUDE — BBP coherent infinite-bin zero-boundary audit and integration
+
+Repository https://github.com/femboy2112/SUCC; child research continuation from PR #320, parent PR #319. Start with `research/2026-10-27/BBP_BINWINDOW_ZERO_BOUNDARY.md`, `observational_succ/bbp_binwindow_conjugacy.py`, tests and deterministic receipt. Read `AGENTS.md`, verify actual branch heads and archived source pin. Work on non-main draft branch; no merge without authorization.
+
+Your mathematical task: independently verify source polynomial cancellation, isometry over *all* `Z_2`, the p-adic logarithm primitive in `Q_2(i)`, uniform closed-disc convergence, `log(±i)=log(-1)=0`, `C_past=0`, `U_n=Φ(n)` even for `n<k`, source-labelled ghost zero, uniqueness of continuous extension, and conjugacy to the adding machine on every 16-adic quotient. Verify the logged `16` focused tests against the native combined repository, not a minimal shim. If a theorem is misstated, correct it with a counterexample and never promote via CI alone.
+
+Inspect the PR #320 counterfeit `T*` / `U*` with `Φ*(0)=-1` and real nonnormality. Test whether the new zero-boundary condition is actually source-distinguishing but *not automatically sufficient* for real normality. Compare against BBP source mutations, Seinfeld null-syzygy and source-zero boundaries, and Oily–Macaroni/mixed-lag original work. Audit all supporting proof references and claim/provenance scope; preserve frozen originals and all prior citations.
+
+Run full native unittest discovery, provenance, observer/ordinal, and appropriate pinned Lean jobs. Capture exact results, repair CI timeouts only with workflow permission, and coordinate with Astra's independent real/2-adic Fourier campaign. Deliver a precise integration report, complete proof authority, PR/commit hashes and the minimal remaining real-circle signed estimate.
