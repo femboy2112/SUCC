@@ -15,6 +15,7 @@ FILES=(
     'observational_succ/rank_two_chiral_towers.py',
     'observational_succ/chiral_target_descent.py',
     'tests/test_chiral_target_descent.py',
+    'tests/test_chiral_taylor_exact_horner.py',
     'scripts/chiral_target_descent_probe.py',
 )
 

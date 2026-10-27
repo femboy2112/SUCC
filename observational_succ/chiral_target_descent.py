@@ -195,6 +195,26 @@ def _outward(low: Q, high: Q, bits: int) -> Bounds:
                   min(Q(1), Q((high*den).__ceil__(), den)))
 
 
+def _taylor_pair(angle: Q, terms: int) -> tuple[Q, Q]:
+    """Exact sin/cos Taylor polynomials with one rational reduction each.
+
+    Homogeneous integer Horner evaluation replaces repeated Fraction powers
+    and additions; the polynomial and its existing error bounds are identical.
+    """
+    p, q = angle.numerator, angle.denominator
+    p2, q2 = p*p, q*q
+    fc, fs = factorial(2*terms-2), factorial(2*terms-1)
+    nc = ns = (-1)**(terms-1)
+    qpower = q2
+    for k in range(terms-2, -1, -1):
+        sign = (-1)**k
+        nc = nc*p2 + sign*(fc//factorial(2*k))*qpower
+        ns = ns*p2 + sign*(fs//factorial(2*k+1))*qpower
+        qpower *= q2
+    scale = q**(2*terms-2)
+    return Q(nc, fc*scale), Q(p*ns, fs*scale*q)
+
+
 @lru_cache(maxsize=32768)
 def _trig_cell(cell: int, bits: int, terms: int) -> tuple[Bounds, Bounds]:
     """Enclose all turns in [cell/2^bits,(cell+1)/2^bits]."""
@@ -204,10 +224,7 @@ def _trig_cell(cell: int, bits: int, terms: int) -> tuple[Bounds, Bounds]:
     mid, radius = (p.low+p.high)/2, (p.high-p.low)/2
     angle = 2*mid*t
     angle_error = 2*p.high/den + 2*abs(t)*radius
-    cosine = sum(((-1)**k * angle**(2*k)/factorial(2*k)
-                  for k in range(terms)), Q(0))
-    sine = sum(((-1)**k * angle**(2*k+1)/factorial(2*k+1)
-                for k in range(terms)), Q(0))
+    cosine, sine = _taylor_pair(angle, terms)
     ec = abs(angle)**(2*terms)/factorial(2*terms) + angle_error
     es = abs(angle)**(2*terms+1)/factorial(2*terms+1) + angle_error
     return (_outward(cosine-ec, cosine+ec, bits),
