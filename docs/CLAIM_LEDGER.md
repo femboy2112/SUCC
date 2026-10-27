@@ -1118,3 +1118,28 @@ axioms `{propext, Classical.choice, Quot.sound}`; **no infinitary normality has 
 pi -- and the sufficient `E_{N,M}(h)->0`. **RH OPEN.** Firewall verified: four signed poles and
 `U_0=0` immutable across #316->#324; no pi-digit oracle or zero-position as a construction input;
 every `normality_proved`/`RH_proved` True-site in the tree is a negative-control mutation-rejection.
+
+### Strengthening round (2026-10-27, audit branch, adversary-verified)
+
+Dossier [PI_FRONTIER_AUDIT_STRENGTHENING](../research/2026-10-27/PI_FRONTIER_AUDIT_STRENGTHENING_2026-10-27.md),
+tests `tests/test_pi_frontier_strengthening_audit.py` (10/10 OK). Four obligations sharpened; one
+self-overclaim caught by a d'Alembert adversary pass and corrected before commit.
+- **ISO-1 (upgrades #321 BW-1):** `r(x)=A(x)/D(x)` is a 2-adic isometry `v_2(r(a)-r(b))=v_2(a-b)`
+  on ALL of `Z_2` (hence `Phi` is), by the closed-form parity `A(x)=x`, `D(x)=1`, so the quotient
+  `Q(a,b)=(A(a)D(b)-A(b)D(a))/(a-b) = 1` as a constant in `F_2[a,b]`. **PAPER-PROVED (Z_2)**, upgrading
+  the inherited finite-verified (`n=0..199`) status; proves `r` itself, not only the infinite-past `Phi`.
+- **#319 Diophantine input:** the real barrier is the collision exponent **8** (from `q=15|h|16^m`
+  with `|h|<=m^2/64` polynomial, giving a `q^{-8+o(1)}` approximation), **not** the dossier's convenient
+  `15/2`. **EITHER** Salikhov-2008 (`mu(pi)<=7.6063`) **or** ZZ-2020 (`<=7.103205334137`) clears `mu(pi)<8`
+  and licenses the `-(log_8 N)/14` order; ZZ only lowers the onset `m_2` (44->9 at C=1). Only the
+  effective constant `C`/onset is unextracted (**CONDITIONAL, not open**). *Corrects a first-pass audit
+  claim that the result "requires the 2020 bound" — refuted by the structure theorem; `15/2` is not
+  load-bearing.*
+- **SB-1 Lipschitz (cosmetic):** geodesic-circle constant is `2*pi*|h|` per slot; the SB-1 budget for a
+  coordinate shared across `d` slots is `2*pi*sum|h_i|` (upper bound), sharp `=2*pi*|sum h_i|` only for
+  shared-sign frequencies (e.g. `+h,+h -> 4*pi*|h|`; `+h,-h -> 0`). No numeric break.
+- **Transport equivalence:** `|S_N(h)-W_N(h)| <= 2*pi*|h|*B` for all N (`W_N(h)=sum_{n<=N}e(h*16^{n-1}pi)`),
+  so per fixed `h` the gate equals the `h`-th pi Weyl sum; over all `h!=0` (Weyl criterion) the full gate
+  **is** base-16 normality of pi. The carrier is normality-neutral; using ISO-1, the SB-3 energy
+  `E_{N,M}(h)` is exactly the L^2 energy of `e(hU_n)` across arithmetic progressions mod `M=16^k 3^L`, and
+  the smallest open obligation is its decay along some admissible `M=o(N)`. **pi normality / RH remain OPEN.**

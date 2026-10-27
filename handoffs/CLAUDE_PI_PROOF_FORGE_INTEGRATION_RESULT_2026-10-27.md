@@ -87,3 +87,36 @@ PYTHONPATH=/home/leah/SUCC python -m unittest tests.test_pi_proof_forge_integrat
 PYTHONPATH=/home/leah/SUCC python scripts/verify_provenance.py
 python scripts/check_selected_branch_lean.py --output <dir>   # default local bridge, now populated
 ```
+
+## Strengthening round (post-audit, adversary-verified)
+
+New dossier [`PI_FRONTIER_AUDIT_STRENGTHENING_2026-10-27.md`](../research/2026-10-27/PI_FRONTIER_AUDIT_STRENGTHENING_2026-10-27.md)
++ regression `tests/test_pi_frontier_strengthening_audit.py` (**10/10 OK**, non-vacuous, π-free/exact
+where possible). Four obligations sharpened; a d'Alembert adversary pass ran against the draft and
+**killed one of my own headline claims** before commit — folded in.
+
+1. **2-adic isometry (#3) upgraded finite-verified → PROVED on all ℤ₂.** `r(x)=A(x)/D(x)` is a 2-adic
+   isometry because `A(x)≡x`, `D(x)≡1 (mod 2)` force the quotient `Q(a,b)≡1 (mod 2)` (verified
+   symbolically to be the *constant* 1 in 𝔽₂[a,b]); `Φ` inherits it by ultrametric tail-domination.
+   Proves `r` itself, not only `Φ`. Stays 2-adic — no Weyl content.
+2. **#319 Diophantine input reclassified — and a self-overclaim corrected.** The real barrier is the
+   **collision exponent 8** (`q=15|h|16^m`, `|h|≤m²/64` polynomial ⇒ `q^{−8+o(1)}` approximation), not
+   the dossier's convenient `15/2`. EITHER Salikhov-2008 (7.6063) or ZZ-2020 (7.1032) clears `μ(π)<8`
+   and licenses the `−(log₈N)/14` order; ZZ only lowers the onset. My draft had claimed the result
+   "requires the 2020 bound / Salikhov insufficient" — **the adversary refuted this** with the structure
+   theorem (onset exists ⇔ `s<8`, verified in log-space: `m₂=44` Salikhov, `9` ZZ, none at `s=8`). Only
+   the effective constant `C`/onset is unextracted (CONDITIONAL, not open).
+3. **SB-1 Lipschitz (#4) made precise.** `2π|h|` per slot; shared-coordinate budget `2π·Σ|hᵢ|` (sharp
+   `2π·|Σhᵢ|`; `+h,+h→4π|h|`, `+h,−h→0`). Cosmetic, no numeric break.
+4. **Gate (#1) reduction, honest.** `|S_N(h)−W_N(h)|≤2π|h|B` for all N ⇒ per-`h` gate = π Weyl sum;
+   over all `h≠0` = base-16 normality (carrier normality-neutral). Via ISO-1, the SB-3 energy
+   `E_{N,M}(h)` is the L²-energy of `e(hUₙ)` across APs mod `M=16^k3^L`; smallest obligation = its decay
+   along admissible `M=o(N)`. **π normality / RH OPEN.**
+
+**Process note:** the one overclaim (#2 "requires 2020") was caught by running the adversary gate on the
+draft *before* committing — the same discipline that caught the vacuous test last round. Firewall
+untouched; additive files only (no frozen source / Codex dossier / receipt edited).
+
+```sh
+PYTHONPATH=/home/leah/SUCC python -m unittest tests.test_pi_frontier_strengthening_audit -v
+```
