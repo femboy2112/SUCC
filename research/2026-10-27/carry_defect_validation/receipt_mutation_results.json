@@ -1,0 +1,58 @@
+[
+  {
+    "name": "clean",
+    "command": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carry-defect/.venv/bin/python",
+      "scripts/carry_defect_probe.py",
+      "--verify",
+      "--path",
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carry-defect/research/2026-10-27/carry_defect_validation/exact_receipt.json"
+    ],
+    "exit_code": 0,
+    "expected_behavior_observed": true,
+    "log": "receipt_clean.log",
+    "log_sha256": "28f60539fd55a8a3ff3ddf9e87ccf3efb6d8c29b82212d59ff1a2d22004a4969"
+  },
+  {
+    "name": "false_normality",
+    "command": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carry-defect/.venv/bin/python",
+      "scripts/carry_defect_probe.py",
+      "--verify",
+      "--path",
+      "/tmp/succ-carry-controls-35hmug3i/false_normality.json"
+    ],
+    "exit_code": 1,
+    "expected_behavior_observed": true,
+    "log": "receipt_false_normality.log",
+    "log_sha256": "4b690bc69c28935b7aae537222b7cb926f8f7ddb4d792077e60421a4f057d72f"
+  },
+  {
+    "name": "foreign_source",
+    "command": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carry-defect/.venv/bin/python",
+      "scripts/carry_defect_probe.py",
+      "--verify",
+      "--path",
+      "/tmp/succ-carry-controls-35hmug3i/foreign_source.json"
+    ],
+    "exit_code": 1,
+    "expected_behavior_observed": true,
+    "log": "receipt_foreign_source.log",
+    "log_sha256": "3e02427e18802988ae8a1c4fde3bba553e435839ba15761557a2ec6ed43472ea"
+  },
+  {
+    "name": "false_exponent_margin",
+    "command": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-carry-defect/.venv/bin/python",
+      "scripts/carry_defect_probe.py",
+      "--verify",
+      "--path",
+      "/tmp/succ-carry-controls-35hmug3i/false_exponent_margin.json"
+    ],
+    "exit_code": 1,
+    "expected_behavior_observed": true,
+    "log": "receipt_false_exponent_margin.log",
+    "log_sha256": "92d54d103e1d571fab50143469784e580b02f6f8d5f8037358c9c06fcc91ce55"
+  }
+]

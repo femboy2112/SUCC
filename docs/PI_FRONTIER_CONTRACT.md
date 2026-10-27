@@ -229,6 +229,32 @@ the analytic irrationality input or the infinite normality consequence.
 
 ## Selected inverse-branch gate — actual carry/arrival comparison (#312 continuation)
 
+**Stronger observer scope (continuation of #317, 2026-10-27 UTC).**
+Let $P(E)=\prod_i(E^{\ell_i}-1)$, $d=\sum_i\ell_i$. For fixed $h\ne0$
+and $0<\delta<1$, uniformly over all periods and lag tuples with
+$p+d\le N^\delta$, the original zero-selected source satisfies
+
+$$
+\sum_{a=0}^{p-1}\left|\sum_{\substack{1\le n\le N\\n\equiv a\pmod p}}
+e(hP(E)U_n)\right|
+\le N-\frac{1-\delta}{14}\log_8N+O_h(1).
+$$
+
+This is **PAPER-PROVED** with the classical irrationality-measure input.
+The full [joint theorem](../research/2026-10-27/MIXED_LAG_PERIODIC_COERCIVITY.md)
+gives all-$N$ schedules, one universal uncomputed onset, and the complete
+future comparison debt $11|h|/(112M)$, independent of lag order and span.
+It also permits independently optimizing the periodic observer on each
+eligible block. The proof retains the actual zero selector and the rational
+periodic-branch denominator $|hP(16)|(16^p-1)16^m$.
+
+This strengthens uniformity, not the logarithmic order. Sublinear signed
+cancellation, conditional branch-energy decay and π normality remain **OPEN**.
+The next source arithmetic must force growing within-block loss or signed
+cross-block saving. The new exact carry-count/Green instruments do not
+prove that growth; their quadratic version has a proved $2L/3$ loss ceiling.
+See the [scoped authority ledger](CLAIM_SUPPLEMENT_CARRY_DEFECT.md).
+
 **Latest selected signed advance (Global Signed, 2026-10-27 UTC).** The
 [whole-block theorem](../research/2026-10-27/GLOBAL_BRANCH_COERCIVITY.md)
 improves #311's coefficient from $1/29$ to $1/14$: one universal,

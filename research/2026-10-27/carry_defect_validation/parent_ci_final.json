@@ -1,0 +1,61 @@
+{
+  "parent_head": "848bad224fef455a9f87ed19e947c936d309c965",
+  "run": 40443373620,
+  "conclusion": "cancelled",
+  "jobs": [
+    {
+      "id": 121988728597,
+      "name": "Contextual Bayesian SUCC heuristic guards (3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-27T03:17:52Z",
+      "completed_at": "2026-10-27T03:18:21Z"
+    },
+    {
+      "id": 121988728806,
+      "name": "Python 3.10 mathematical and epistemic checks",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "started_at": "2026-10-27T03:17:51Z",
+      "completed_at": "2026-10-27T03:43:09Z"
+    },
+    {
+      "id": 121988728921,
+      "name": "Contextual Bayesian SUCC heuristic guards (3.10)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-27T03:17:52Z",
+      "completed_at": "2026-10-27T03:18:17Z"
+    },
+    {
+      "id": 121988728933,
+      "name": "Typed genetic model fusion and source-coupling guards (3.13)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-27T03:17:51Z",
+      "completed_at": "2026-10-27T03:18:16Z"
+    },
+    {
+      "id": 121988728952,
+      "name": "Typed genetic model fusion and source-coupling guards (3.10)",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-27T03:17:51Z",
+      "completed_at": "2026-10-27T03:18:19Z"
+    },
+    {
+      "id": 121988728975,
+      "name": "Python 3.13 mathematical and epistemic checks",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-10-27T03:17:51Z",
+      "completed_at": "2026-10-27T03:39:20Z"
+    }
+  ],
+  "python_310_annotation": "The job has exceeded the maximum execution time of 25m0s",
+  "annotation_source": "https://api.github.com/repos/femboy2112/SUCC/check-runs/121988728806/annotations",
+  "source": "live GitHub job list; gh annotation endpoint fallback",
+  "proposed_child_timeout_minutes": 45,
+  "timeout_change_applied": false,
+  "publication_blocker": "OAuth App lacks workflow scope"
+}
