@@ -8,17 +8,17 @@ A literal topological-group isomorphism between the real circle R/Z and Z₂ can
 
 The **faithful repair** is the inverse-history extension, or dyadic solenoid,
 
-\[
+$$
 \Sigma=(\mathbb R\times\mathbb Z_2)/\{(m,-m):m\in\mathbb Z\}
 \cong\varprojlim(\mathbb R/\mathbb Z,\times16).
-\]
+$$
 
 The seam convention is exactly #320's (t,z)~(t+1,z−1). The fiber sequence is
 
-\[
+$$
 0\longrightarrow\mathbb Z_2\longrightarrow\Sigma
 \overset{p}{\longrightarrow}\mathbb R/\mathbb Z\longrightarrow0,
-\]
+$$
 
 and the Pontryagin dual of Σ is Z[1/16]=Z[1/2]. The inverse-limit level-k coordinate of [(t,z)] is (t+[z]_(16^k))/16^k modulo 1. These are classical identifications, not a newly invented solenoid.
 
@@ -28,35 +28,35 @@ An ordinary quotient R→R/Z forgets integer winding. The solenoid does not reco
 
 Choose the right-open chart 0≤x<1, z in Z₂. Multiplication by 16 defines an **automorphism of Σ**; the map z→16z on Z₂ alone is only a contraction and is **not** the odometer. In the cut chart put a=floor(16x) in {0,…,15}. Then
 
-\[
+$$
 \boxed{T(x,z)=(\{16x\},\,16z+a).}
-\]
+$$
 
 Its inverse exists and is explicit:
 
-\[
+$$
 \boxed{T^{-1}(x,z)=((x+d)/16,\,(z-d)/16),\quad d=[z]_{16}.}
-\]
+$$
 
 The forward formula follows from reducing (16x,16z) across the diagonal seam; in the inverse, z−d is divisible by 16 in Z₂ and (x+d)/16 lies in [0,1). Direct substitution proves both identities.
 
 The real winding lift j_R(t)=[(t,0)] is a continuous injective homomorphism R→Σ, *not* a continuous splitting of R/Z→Σ. Starting from j_R(α), the nth iterate has cut coordinates
 
-\[
+$$
 x_n=\{16^n\alpha\},\qquad z_n=\lfloor16^n\alpha\rfloor\in\mathbb Z_2.
-\]
+$$
 
 If a_n=floor(16x_n) denotes the nth hexadecimal digit, then
 
-\[
+$$
 z_{n+1}=16z_n+a_n
-\]
+$$
 
 and, for n≥k,
 
-\[
+$$
 \boxed{z_n\bmod16^k=\sum_{j=1}^k16^{j-1}a_{n-j}\bmod16^k.}
-\]
+$$
 
 The real coordinate encodes the upcoming digits; the 2-adic coordinate encodes the preceding digits in reverse positional order. The **source clock** U_n mod16^k from #321 is a different 2-adic observable from the **winding archive** floor(U_n) mod16^k. Confusing them destroys source fidelity.
 
@@ -66,17 +66,17 @@ Haar measure on Σ is represented in this fundamental chart by Lebesgue x Haar(Z
 
 Let e(t)=exp(2πit). For every a=m/16^k in the character group Z[1/2] (m integer, k≥0),
 
-\[
+$$
 \chi_{m/16^k}(x,z)
 =e\!\left(\frac{m(x+[z]_{16^k})}{16^k}\right).
-\]
+$$
 
 The expression is unchanged under the seam equivalence and is therefore a well-defined solenoid character. On a coherent orbit,
 
-\[
+$$
 \chi_{m/16^k}(T^n j_R(\alpha))
 =e(m16^{n-k}\alpha).
-\]
+$$
 
 **Theorem (paper-proved; any real α).** α is normal in base 16 **if and only if** the *single coherent sequence* T^n j_R(α) is Haar-equidistributed on Σ.
 
@@ -86,10 +86,10 @@ The expression is unchanged under the seam equivalence and is therefore a well-d
 
 Under Haar, T is mixing, since for nonzero fixed a,b in Z[1/2],
 
-\[
+$$
 \int_\Sigma\chi_a(T^n s)\overline{\chi_b(s)}\,dH(s)
 =\begin{cases}1&16^n a=b,\\0&\text{otherwise}.\end{cases}
-\]
+$$
 
 The equality eventually fails and finite character sums are dense in L². But Haar mixing does **not** force any chosen point to be generic: T fixes the origin, whose orbit is not Haar. This is not a proof of normality of π.
 
@@ -97,45 +97,45 @@ The equality eventually fails and finite character sums are dense in L². But Ha
 
 Retain the original four signed poles and the zero seed:
 
-\[
+$$
 r(n)=\frac4{8n-7}-\frac2{8n-4}
 -\frac1{8n-3}-\frac1{8n-2}
 =\frac{120n^2-89n+16}{(2n-1)(4n-1)(8n-7)(8n-3)},
-\]
+$$
 
-\[
+$$
 U_0=0,\qquad U_n=16U_{n-1}+r(n).
-\]
+$$
 
 The authenticated BBP identity and #323/#324 give, for n≥1,
 
-\[
+$$
 U_n=16^{n-1}\pi-T_n,\qquad
 T_n=\sum_{j\ge1}16^{-j}r(n+j)>0,
-\]
+$$
 
 and the convergent positive tail budget
 
-\[
+$$
 B=\sum_{n\ge1}T_n=(\sum_{n\ge1}r(n)-\pi)/15
 \approx0.0162969977338265.
-\]
+$$
 
 Thus in Σ,
 
-\[
+$$
 \boxed{j_R(U_n)=T^{n-1}j_R(\pi)-j_R(T_n).}
-\]
+$$
 
 Because T_n→0 in the *real* topology and j_R is continuous, the correction tends to the solenoid identity. For every fixed continuous solenoid observer f, uniform continuity on compact Σ gives the same empirical limit for the two sequences whenever that limit exists.
 
 More quantitatively, for every fixed character a=m/16^k and N≥1,
 
-\[
+$$
 \boxed{\left|\frac1N\sum_{n=1}^N\chi_a(j_R(U_n))
 -\frac1N\sum_{n=1}^N\chi_a(T^{n-1}j_R(\pi))\right|
 \le\frac{2\pi|m|B}{16^kN}.}
-\]
+$$
 
 Proof: the character difference is bounded by 2π|a|T_n; sum the Green tails.
 
@@ -145,10 +145,10 @@ Proof: the character difference is bounded by 2π|a|T_n; sum the Green tails.
 
 For any reduced rational u=A/B with B>0 odd, let q=16^k, let R be the representative of A B^{-1} mod q, and set K=(BR−A)/q (integer). Exact arithmetic gives
 
-\[
+$$
 \frac{u}{q}=\frac Rq-\frac KB,\qquad
 \boxed{e(hu/q)=e(hR/q)\,e(-hK/B).}
-\]
+$$
 
 This specializes #328's modular/real complementary-character identity to 2-adic radix q. The first factor is the 2-adic residue character; the **second factor contains the odd denominator and cannot be dropped**.
 
@@ -162,10 +162,10 @@ Let O:z→z+1 be the Haar adding machine on Z₂ and let T act on Haar Σ as abo
 
 **Proof.** Let g=χ_1∘F in L²(Haar(Z₂)). Then ||g||₂=1 and its mean is zero by the Haar pushforward. Equivariance implies
 
-\[
+$$
 \langle g\circ O^{16^j},g\rangle
 =\int_\Sigma\chi_{16^{16^j}-1}(s)\,dH(s)=0
-\]
+$$
 
 for all j≥0, because the character is nontrivial. But O^{16^j} is translation by 16^j, tending to the identity in Z₂. On L²(Haar(Z₂)) these translations converge strongly to the identity: approximate g by locally constant functions modulo16^K, which every such translation fixes for j≥K. Consequently those correlations must converge to ||g||₂²=1, contradiction. QED.
 
@@ -177,10 +177,10 @@ Also, for any irrational α there is no **continuous** f:Z₂→Z₂ with f(n)=f
 
 Do **not** replace fixed solenoid character equidistribution by vanishing for all characters whose dyadic denominator grows with N. For *every* real α, choose a_N=16^{-N}. Then
 
-\[
+$$
 \left|\frac1N\sum_{n=0}^{N-1}\chi_{a_N}(T^n j_R(\alpha))-1\right|
 \le\frac{2\pi|\alpha|}{15N}(1-16^{-N})\longrightarrow0.
-\]
+$$
 
 Indeed sum 16^{n-N}=(1−16^{-N})/15 and use |e(t)−1|≤2π|t|. Thus the moving character mean tends to **1**, even if α is base-16 normal. The analogous authentic BBP mean has an additional ≤2πB/(16^N N) correction by SNE-3. This supplies a constructive counterexample to any uniform-in-depth Weyl gate demanding those means vanish. The #327/#328 obstructions to growing CRT energies must not be erased by the solenoid reformulation.
 
