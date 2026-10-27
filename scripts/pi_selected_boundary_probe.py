@@ -47,7 +47,7 @@ def sample_mode(ds,h):
 def check():
     r,U,T,prefix=states_and_tails()
     assert all(r[n]==cancelled(n) for n in range(1,101))
-    assert all(U[n]+T[n]==16**(n-1)*prefix for n in range(101))
+    assert all(U[n]+T[n]==(Q(1,16) if n==0 else Q(16**(n-1)))*prefix for n in range(101))
     assert all(T[n]>0 and T[n]<Q(1,16) for n in range(1,100))
     assert len({(modr(U[n],16),A(n)%3) for n in range(48)})==48
     assert len({(modr(U[n],16),A(n)%3) for n in range(24,72)})==48
