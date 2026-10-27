@@ -1,0 +1,21 @@
+# Claude + Codex: operation Rank Two — source-faithful chiral E systems
+
+Repository https://github.com/femboy2112/SUCC. Current source research child of #331, starting verified head d47ff32e47104cca73264d99c9ec1088f20e7c1f. **Execute mathematical and code research, not a roadmap.** Read the exact E² dossier at research/2026-10-27/BBP_RANK_TWO_CHIRAL_E_TOWERS.md and source / tests / probe / receipt; read AGENTS.md and provenance/IMPORT_MANIFEST.json; independently inspect inherited PRs #26–#29, #61, #308, #321, #323 and latest #327–#331. Recheck current heads and instructions first. Create distinct non-main child branches. No shared writable branch, no automatic main merge, archival edits, tags or releases.
+
+## Claude: independent source-math/native/Lean auditor
+
+1. Re-derive independently the Q(i)×Q(i) rank-two carrier, unital coordinatewise multiplication, commuting gain actions, Q-algebra involution J(z,w)=(bar w,bar z), J L+ J=L− and Z/2 grading. Show E− is not a subring, single J-fixed graph is NOT independently invariant under unilateral gains, and T is Q-linear but NOT K-linear or a multiplicative unital map. Recheck macro-point versus equivariant orbit, no-ghost joint support and separate evidence costs per previous SUCC dual E work.
+2. Prove globally T⁴=−J/4 and T⁸=I/16 using parity-sector algebra. Independently compute G/H rational bases, b=(1,0,1,0), ell=(4,0,0,−4), full transfer numerator and denominator, 4×4 Hankel determinant 4, and 4/8-tap recurrence. Do not merely rerun the same Python implementation and count it as a new proof.
+3. Re-derive the actual 4 signed Mellin poles from the chiral coefficients, the divergent ±15/(32n) chiral forcing, the summed 15/(64n²), ∫F+=(π+2log2), ∫F−=−2log2 and the two individual non-ℓ1 Green tails versus the summable authentic joint tail. Check full natural-time zero seed; original source and imported frozen files must match exactly.
+4. Run dedicated 17 tests and source-hashed receipt, then full native unittest, scripts/verify_provenance.py, observer_foundations_probe, ordinal_succ_report_probe and pinned Lean if feasible. Audit CI at the **exact pushed commit** and record failures, timeouts, axes and hash receipts without fabricated authority. Harden mutation controls (wrong gain chirality, odd sign, changed seed, nonexistent joint source, incomplete limits). Formalize finite rational algebra in Lean where practical; no sorry and no fake infinitary kernel proof.
+5. Publish independent audit non-main PR; cite what remains open. π base16/base3 normality and RH remain OPEN.
+
+## Codex: rank-two source-selected real signed Weyl attempt
+
+Object: authentic U±_0=0, U±_n=16U±_(n−1)+r±(n) with exact r=r++r−. For every fixed h≠0, prove N^-1 Σ_(n≤N) e(hU+_n)e(hU−_n)→0 or a rigorously quantified nontrivial new source-dependent signed bound. A *separate* stochastic independence assumption is prohibited; these trajectories share time, source and cancellation. The independent multiplications of the K-coordinate algebra are NOT random independence.
+
+Priority probe: separate Green completions have non-ℓ1 tails ±1/(32n), joint selected tail is ℓ1. Determine whether exact shared chiral transfer/gauge holonomy imposes a genuinely new signed cross-correlation estimate after conditioning on original integer carries and the zero selector; retain actual Gaussian and ternary source data and each frequency/lag/coeff budget. Try analytic transfer matrices, bilinear Green kernels, rank-two phase cocycle and independent chiral resolutions, but distinguish a true signed bound from a basis change or a positive Gram identity.
+
+Hostile controls: replace odd gain by g instead of bar g, remove odd channel, alter sign/log amplitude, changed initial seed with same forcing, #320 source-nonnormal 2-adic-isometric fake, #327/#328 normal finite-type carriers defeating prescribed moving energy, #330 solenoid obstructions and rational real phase counterexamples. Important no-go: contracting raw c_m taps have phase means tending to ONE, not zero. Transfer of normality from a π² or π√3 source is not automatic.
+
+Deliver derivations, exact hostile tests, source-hashed receipts and a separate draft research PR. If signed o(N) is still inaccessible, publish the strongest new provable inequality or a decisive counterexample; never claim π normality/RH.
