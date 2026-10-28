@@ -1,0 +1,451 @@
+{
+  "claim_status": {
+    "SUCC_native_CI_Lean": "NOT_RUN",
+    "exact_source_specific_algebra": "DISCLOSED within source and quaternion conventions",
+    "finite_source_execution": "OBSERVED 34 focused Fraction unit tests",
+    "independent_symbolic_rederivation": "OBSERVED SymPy oracle PASS",
+    "naive_odd_right_Hopf_self_map": "REFUTED",
+    "source_full_S4_equidistribution": "UNVERIFIED",
+    "zero_seed_signed_Weyl_saving": "UNVERIFIED"
+  },
+  "date": "2026-10-27",
+  "local_source_digests": {
+    "hopf_source_exact.py": "d8419fec5884d08f298c0618b72d8259a70d7c674ae0f161615ab1270b3326a9",
+    "oracle_sympy.py": "56e2297812ca48a01c2cd53c4e07f039ec253f49acb2201486aadd2f31e032e4",
+    "test_hopf_source.py": "c358b35ddbbb0576bde0a94bb3f012ab4910c606af102e058f0e5567666af54d"
+  },
+  "record": "SUCC quaternionic Hopf source transport \u2014 exact local receipt",
+  "source_Hopf_transport": {
+    "J_mirror_latitude": "0",
+    "anchored_source_selected_latitudes": {
+      "0": "3/5",
+      "1": "1/3",
+      "2": "0",
+      "3": "-1/3",
+      "4": "-3/5",
+      "5": "-7/9",
+      "6": "-15/17",
+      "7": "-31/33",
+      "8": "-63/65"
+    },
+    "even_rotation_order": 4,
+    "even_step_Hopf_rotation": "(r0,ri,rj,rk,B)->(r0,rj,-ri,rk,B)",
+    "mixed_pole_chiral_declared_pairing": {
+      "1": {
+        "Hopf": {
+          "B": "5543/9143",
+          "R": [
+            "7200/9143",
+            "-900/9143",
+            "-360/9143",
+            "-300/9143"
+          ]
+        },
+        "decode_exact": true,
+        "signed_forcing": "47/15",
+        "signed_poles": [
+          "4",
+          "-1/2",
+          "-1/5",
+          "-1/6"
+        ]
+      },
+      "12": {
+        "Hopf": {
+          "B": "31487968689047/191601226426985",
+          "R": [
+            "-28145200986192/191601226426985",
+            "-87884303075856/191601226426985",
+            "28478188801584/38320245285397",
+            "-83237934831504/191601226426985"
+          ]
+        },
+        "decode_exact": true,
+        "signed_forcing": "16228/8947437",
+        "signed_poles": [
+          "4/89",
+          "-1/46",
+          "-1/93",
+          "-1/94"
+        ]
+      },
+      "16": {
+        "Hopf": {
+          "B": "9706176974108423/11451296785639673",
+          "R": [
+            "2805744249000000/11451296785639673",
+            "-907912655496000/11451296785639673",
+            "-2694915342504000/11451296785639673",
+            "-4578564375000000/11451296785639673"
+          ]
+        },
+        "decode_exact": true,
+        "signed_forcing": "29312/29539125",
+        "signed_poles": [
+          "4/121",
+          "-1/62",
+          "-1/125",
+          "-1/126"
+        ]
+      },
+      "2": {
+        "Hopf": {
+          "B": "-2366005/3000083",
+          "R": [
+            "745290/3000083",
+            "-1639638/3000083",
+            "-14742/3000083",
+            "-398034/3000083"
+          ]
+        },
+        "decode_exact": true,
+        "signed_forcing": "106/819",
+        "signed_poles": [
+          "4/9",
+          "-1/6",
+          "-1/13",
+          "-1/14"
+        ]
+      },
+      "3": {
+        "Hopf": {
+          "B": "-717325423/824807477",
+          "R": [
+            "176086680/824807477",
+            "-260203020/824807477",
+            "256865070/824807477",
+            "32554830/824807477"
+          ]
+        },
+        "decode_exact": true,
+        "signed_forcing": "829/19635",
+        "signed_poles": [
+          "4/17",
+          "-1/10",
+          "-1/21",
+          "-1/22"
+        ]
+      },
+      "8": {
+        "Hopf": {
+          "B": "-229436776097/351465092353",
+          "R": [
+            "125582633700/351465092353",
+            "-39361656660/351465092353",
+            "-115545508260/351465092353",
+            "-200537713500/351465092353"
+          ]
+        },
+        "decode_exact": true,
+        "signed_forcing": "776/179645",
+        "signed_poles": [
+          "4/57",
+          "-1/30",
+          "-1/61",
+          "-1/62"
+        ]
+      }
+    },
+    "note": "Mixed clock pairing is a declared source-labelled observer candidate, not forced by BBP.",
+    "odd_right_Hopf_one_chart_no_go": {
+      "different_one_step_right_Hopf": [
+        {
+          "B": "0",
+          "R": [
+            "0",
+            "0",
+            "0",
+            "1"
+          ]
+        },
+        {
+          "B": "0",
+          "R": [
+            "0",
+            "0",
+            "0",
+            "-1"
+          ]
+        }
+      ],
+      "equal_after_step_left_Hopf": {
+        "B": "0",
+        "R": [
+          "0",
+          "0",
+          "1",
+          "0"
+        ]
+      },
+      "equivalent_inputs": [
+        "(1,i)",
+        "(j,k)"
+      ],
+      "same_original_Hopf": {
+        "B": "0",
+        "R": [
+          "0",
+          "-1",
+          "0",
+          "0"
+        ]
+      },
+      "source_gauge_counterexample_verified": true
+    },
+    "one_step_anti_quaternion": "T(x)=(i+k)*conj(x)*(1-i-j-k)/4",
+    "selected_consecutive_8_Hopf_observations": [
+      {
+        "B": "1/3",
+        "R": [
+          "2/3",
+          "-2/3",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "B": "1/3",
+        "R": [
+          "2/3",
+          "0",
+          "0",
+          "2/3"
+        ]
+      },
+      {
+        "B": "1/3",
+        "R": [
+          "2/3",
+          "0",
+          "2/3",
+          "0"
+        ]
+      },
+      {
+        "B": "1/3",
+        "R": [
+          "2/3",
+          "0",
+          "0",
+          "2/3"
+        ]
+      },
+      {
+        "B": "1/3",
+        "R": [
+          "2/3",
+          "2/3",
+          "0",
+          "0"
+        ]
+      },
+      {
+        "B": "1/3",
+        "R": [
+          "2/3",
+          "0",
+          "0",
+          "2/3"
+        ]
+      },
+      {
+        "B": "1/3",
+        "R": [
+          "2/3",
+          "0",
+          "-2/3",
+          "0"
+        ]
+      },
+      {
+        "B": "1/3",
+        "R": [
+          "2/3",
+          "0",
+          "0",
+          "2/3"
+        ]
+      }
+    ],
+    "selected_consecutive_fixed_latitude": "1/3",
+    "selected_consecutive_unique_count": 5,
+    "two_chart_odd_transport": {
+      "L_to_R": "R -> L conjugate(R) L^-1",
+      "R_to_L": "R -> r^-1 conjugate(R) r",
+      "latitude_B": "preserved"
+    },
+    "two_step_Hamilton": "T^2(x)=(1-k)*x*(1+i)/4"
+  },
+  "source_fidelity": {
+    "even_8_taps": [
+      "4",
+      "2",
+      "0",
+      "-1",
+      "-1",
+      "-1/2",
+      "0",
+      "1/4"
+    ],
+    "first_8_signed_taps": [
+      "4",
+      "0",
+      "0",
+      "-2",
+      "-1",
+      "-1",
+      "0",
+      "0"
+    ],
+    "four_exact_pole_samples": {
+      "1": {
+        "anchored_Hopf": {
+          "B": "6893/7793",
+          "R": [
+            "3600/7793",
+            "-450/7793",
+            "-180/7793",
+            "-150/7793"
+          ]
+        },
+        "n": 1,
+        "pole_components": [
+          "4",
+          "-1/2",
+          "-1/5",
+          "-1/6"
+        ],
+        "r(n)": "47/15"
+      },
+      "2": {
+        "anchored_Hopf": {
+          "B": "-1024483/1658561",
+          "R": [
+            "1192464/1658561",
+            "-447174/1658561",
+            "-206388/1658561",
+            "-191646/1658561"
+          ]
+        },
+        "n": 2,
+        "pole_components": [
+          "4/9",
+          "-1/6",
+          "-1/13",
+          "-1/14"
+        ],
+        "r(n)": "106/819"
+      },
+      "3": {
+        "anchored_Hopf": {
+          "B": "-717325423/824807477",
+          "R": [
+            "362854800/824807477",
+            "-154213290/824807477",
+            "-73434900/824807477",
+            "-70096950/824807477"
+          ]
+        },
+        "n": 3,
+        "pole_components": [
+          "4/17",
+          "-1/10",
+          "-1/21",
+          "-1/22"
+        ],
+        "r(n)": "829/19635"
+      },
+      "4": {
+        "anchored_Hopf": {
+          "B": "-448301383/478901117",
+          "R": [
+            "148352400/478901117",
+            "-66228750/478901117",
+            "-31972500/478901117",
+            "-30906750/478901117"
+          ]
+        },
+        "n": 4,
+        "pole_components": [
+          "4/25",
+          "-1/14",
+          "-1/29",
+          "-1/30"
+        ],
+        "r(n)": "316/15225"
+      },
+      "8": {
+        "anchored_Hopf": {
+          "B": "-577088483567/584715253333",
+          "R": [
+            "81530086800/584715253333",
+            "-38726791230/584715253333",
+            "-19045962900/584715253333",
+            "-18738769950/584715253333"
+          ]
+        },
+        "n": 8,
+        "pole_components": [
+          "4/57",
+          "-1/30",
+          "-1/61",
+          "-1/62"
+        ],
+        "r(n)": "776/179645"
+      }
+    },
+    "matrix_T": [
+      [
+        "1/2",
+        "0",
+        "0",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "0",
+        "0",
+        "-1/2"
+      ],
+      [
+        "0",
+        "-1/2",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "-1/2",
+        "-1/2",
+        "0"
+      ]
+    ],
+    "odd_8_taps": [
+      "0",
+      "-2",
+      "0",
+      "-1",
+      "0",
+      "-1/2",
+      "0",
+      "-1/4"
+    ],
+    "original_real_seed": "U_0=0; U_n=16 U_(n-1)+r(n)"
+  },
+  "source_provenance": {
+    "Main_XII_draft_PR": 342,
+    "SUCC_main_sha": "6dd80730c3575d91f746546a25da5aedbd2e2737",
+    "observed_Main_XII_draft_head": "ce7df73431e85a4eb2a290445da8e09d4f924b3e",
+    "source_PR": 333,
+    "source_PR_head": "a0e4bfd9c218dfdc83ed9d5684ce8d8e4624cde5",
+    "source_code": "observational_succ/rank_two_chiral_towers.py",
+    "source_identifier": "original-signed-four-pole-BBP-rank2-chiral-PR333-a0e4bfd9"
+  },
+  "source_seed_counterexample": {
+    "alternative_seed": "-pi/16; not the original zero seed",
+    "derived_tail": "U_n(alt)=-sum_{k>=1}16^-k r(n+k)",
+    "real_tail_bound_n_8": "8/1215",
+    "verdict": "phase tends to 1, hence not normal; source-only Hopf candidate cannot distinguish seeds"
+  },
+  "write_scope": "LOCAL_ONLY; no GitHub write; no merge, PR or CI"
+}

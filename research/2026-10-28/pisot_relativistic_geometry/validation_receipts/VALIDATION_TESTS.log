@@ -1,0 +1,60 @@
+test_J_mirror_is_equatorial (tests.test_hopf_source.HopfSourceBridgeTests.test_J_mirror_is_equatorial) ... ok
+test_T_squared_exact_quaternion_factor (tests.test_hopf_source.HopfSourceBridgeTests.test_T_squared_exact_quaternion_factor) ... ok
+test_anchored_selected_source_exact_latitudes (tests.test_hopf_source.HopfSourceBridgeTests.test_anchored_selected_source_exact_latitudes) ... ok
+test_anchored_stereographic_inverse_and_latitude (tests.test_hopf_source.HopfSourceBridgeTests.test_anchored_stereographic_inverse_and_latitude) ... ok
+test_left_hopf_gauge_invariance (tests.test_hopf_source.HopfSourceBridgeTests.test_left_hopf_gauge_invariance) ... ok
+test_mixed_chiral_time_pairing_is_not_canonical (tests.test_hopf_source.HopfSourceBridgeTests.test_mixed_chiral_time_pairing_is_not_canonical) ... ok
+test_natural_next_state_constant_latitude (tests.test_hopf_source.HopfSourceBridgeTests.test_natural_next_state_constant_latitude) ... ok
+test_odd_chart_transports_even_base_rotation (tests.test_hopf_source.HopfSourceBridgeTests.test_odd_chart_transports_even_base_rotation) ... ok
+test_odd_hopf_gauge_switch_is_exact (tests.test_hopf_source.HopfSourceBridgeTests.test_odd_hopf_gauge_switch_is_exact) ... ok
+test_odd_step_gauge_fails_explicit (tests.test_hopf_source.HopfSourceBridgeTests.test_odd_step_gauge_fails_explicit) ... ok
+test_odd_step_quaternion_antilinear_exact (tests.test_hopf_source.HopfSourceBridgeTests.test_odd_step_quaternion_antilinear_exact) ... ok
+test_pole_frame_permutation_is_a_noncanonical_choice (tests.test_hopf_source.HopfSourceBridgeTests.test_pole_frame_permutation_is_a_noncanonical_choice) ... ok
+test_pole_quartet_stereographic_exact_decode (tests.test_hopf_source.HopfSourceBridgeTests.test_pole_quartet_stereographic_exact_decode) ... ok
+test_right_gauge_changes_source_coordinates (tests.test_hopf_source.HopfSourceBridgeTests.test_right_gauge_changes_source_coordinates) ... ok
+test_sign_mutation_latitude_blind_but_full_Hopf_detects (tests.test_hopf_source.HopfSourceBridgeTests.test_sign_mutation_latitude_blind_but_full_Hopf_detects) ... ok
+test_source_labelled_mixed_latitudes_and_exact_tomography (tests.test_hopf_source.HopfSourceBridgeTests.test_source_labelled_mixed_latitudes_and_exact_tomography) ... ok
+test_two_step_gauge_descends_exact (tests.test_hopf_source.HopfSourceBridgeTests.test_two_step_gauge_descends_exact) ... ok
+test_two_step_order_four (tests.test_hopf_source.HopfSourceBridgeTests.test_two_step_order_four) ... ok
+test_division_and_associativity (tests.test_hopf_source.QuaternionTests.test_division_and_associativity) ... ok
+test_hamilton_relations (tests.test_hopf_source.QuaternionTests.test_hamilton_relations) ... ok
+test_hermitian_projector_quaternion (tests.test_hopf_source.QuaternionTests.test_hermitian_projector_quaternion) ... ok
+test_hopf_exact_sphere (tests.test_hopf_source.QuaternionTests.test_hopf_exact_sphere) ... ok
+test_right_gauge_invariance_noncommutative (tests.test_hopf_source.QuaternionTests.test_right_gauge_invariance_noncommutative) ... ok
+test_T_matches_independent_gaussian_split (tests.test_hopf_source.SUCCSourceExactTests.test_T_matches_independent_gaussian_split) ... ok
+test_changed_seed_adversarial (tests.test_hopf_source.SUCCSourceExactTests.test_changed_seed_adversarial) ... ok
+test_coherent_changed_seed_future_tail_control (tests.test_hopf_source.SUCCSourceExactTests.test_coherent_changed_seed_future_tail_control) ... ok
+test_operator_4_8_step (tests.test_hopf_source.SUCCSourceExactTests.test_operator_4_8_step) ... ok
+test_original_four_poles_and_rational_source (tests.test_hopf_source.SUCCSourceExactTests.test_original_four_poles_and_rational_source) ... ok
+test_ring_incompatibility (tests.test_hopf_source.SUCCSourceExactTests.test_ring_incompatibility) ... ok
+test_scaled_orthogonality (tests.test_hopf_source.SUCCSourceExactTests.test_scaled_orthogonality) ... ok
+test_source_fingerprint (tests.test_hopf_source.SUCCSourceExactTests.test_source_fingerprint) ... ok
+test_source_first_shell (tests.test_hopf_source.SUCCSourceExactTests.test_source_first_shell) ... ok
+test_wrong_odd_chirality_mutation_is_rejected (tests.test_hopf_source.SUCCSourceExactTests.test_wrong_odd_chirality_mutation_is_rejected) ... ok
+test_zero_seed_and_channel_gluing (tests.test_hopf_source.SUCCSourceExactTests.test_zero_seed_and_channel_gluing) ... ok
+test_exact_integrable_clocks_close_all_affine_squares (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_exact_integrable_clocks_close_all_affine_squares) ... ok
+test_exact_positive_mixed_frame_defect (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_exact_positive_mixed_frame_defect) ... ok
+test_harmonic_gamma_and_fibonacci_log_clocks_numerical_only (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_harmonic_gamma_and_fibonacci_log_clocks_numerical_only) ... ok
+test_original_BBP_compact_green_clock (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_original_BBP_compact_green_clock) ... ok
+test_original_BBP_real_frame_commutator_source_locked (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_original_BBP_real_frame_commutator_source_locked) ... ok
+test_pisot_integer_return_certificate (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_pisot_integer_return_certificate) ... ok
+test_pisot_source_is_not_needed_for_circle_injection (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_pisot_source_is_not_needed_for_circle_injection) ... ok
+test_real_seed_distinguisher_survives_clock_analogies (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_real_seed_distinguisher_survives_clock_analogies) ... ok
+test_source_eight_to_one_clock_sync (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_source_eight_to_one_clock_sync) ... ok
+test_connection_pure_imaginary (tests.test_pisot_hopf_arithmetic_relativity.HopfCurvatureTests.test_connection_pure_imaginary) ... ok
+test_exact_nonzero_hopf_curvature (tests.test_pisot_hopf_arithmetic_relativity.HopfCurvatureTests.test_exact_nonzero_hopf_curvature) ... ok
+test_exact_wilson_loop_orientation_and_nontriviality (tests.test_pisot_hopf_arithmetic_relativity.HopfCurvatureTests.test_exact_wilson_loop_orientation_and_nontriviality) ... ok
+test_no_source_hypothesis_from_hopf_curvature (tests.test_pisot_hopf_arithmetic_relativity.HopfCurvatureTests.test_no_source_hypothesis_from_hopf_curvature) ... ok
+test_noncommuting_hopf_loop_holonomies (tests.test_pisot_hopf_arithmetic_relativity.HopfCurvatureTests.test_noncommuting_hopf_loop_holonomies) ... ok
+test_source_chart_rapidity_mobius (tests.test_pisot_hopf_arithmetic_relativity.HopfCurvatureTests.test_source_chart_rapidity_mobius) ... ok
+test_endpoint_grade_law (tests.test_pisot_fixed_point_recovered.PisotFixedPointControls.test_endpoint_grade_law) ... ok
+test_original_pi_packet_ratio (tests.test_pisot_fixed_point_recovered.PisotFixedPointControls.test_original_pi_packet_ratio) ... ok
+test_pisot_quadratic_pell_trace (tests.test_pisot_fixed_point_recovered.PisotFixedPointControls.test_pisot_quadratic_pell_trace) ... ok
+test_source_and_symmetric_exact (tests.test_pisot_fixed_point_recovered.PisotFixedPointControls.test_source_and_symmetric_exact) ... ok
+test_chiral_successor_matches_real_main (tests.test_hopf_main_source_bridge.PinnedMainSourceBridge.test_chiral_successor_matches_real_main) ... skipped 'complete SUCC source unavailable in isolated local scratch copy'
+test_source_moments_zero_seed_and_original_four_poles (tests.test_hopf_main_source_bridge.PinnedMainSourceBridge.test_source_moments_zero_seed_and_original_four_poles) ... skipped 'complete SUCC source unavailable in isolated local scratch copy'
+
+----------------------------------------------------------------------
+Ran 55 tests in 1.547s
+
+OK (skipped=2)

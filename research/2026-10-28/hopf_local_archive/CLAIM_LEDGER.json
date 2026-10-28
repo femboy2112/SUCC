@@ -1,0 +1,100 @@
+{
+  "package": "SUCC quaternionic Hopf source transport local 2026-10-27",
+  "repository_write_scope": "none",
+  "pinned_repository_main_sha": "6dd80730c3575d91f746546a25da5aedbd2e2737",
+  "source_research_pr_333_sha": "a0e4bfd9c218dfdc83ed9d5684ce8d8e4624cde5",
+  "status_policy": "Paper algebra/decisive counterexample marked disclosed only within typed source; executed local tests are observed, not independent published verification. No claim of new academic priority.",
+  "claims": [
+    {
+      "id": "HOPF-SUCC-001",
+      "status": "DISCLOSED",
+      "claim": "PR333 source matrix T has T^4=-J/4, T^8=I/16, T^T T=I/2, det T=-1/4; reproduces signed original four BBP poles via source taps",
+      "dependency": ["SUCC PR #333@a0e4bfd9; original BBP four poles"],
+      "verification": "Independent source-sector SymPy reconstruction and exact Fraction unit tests"
+    },
+    {
+      "id": "HOPF-SUCC-002",
+      "status": "DISCLOSED",
+      "claim": "The additive real four-dimensional carrier E can be identified with rational quaternions as a vector space but NOT as a unital ring",
+      "dependency": ["E=Q(i)×Q(i) coordinatewise multiplication"],
+      "verification": "Exhibited zero-divisor obstruction"
+    },
+    {
+      "id": "HOPF-SUCC-003",
+      "status": "DISCLOSED",
+      "claim": "T(q)=(i+k)conjugate(q)(1-i-j-k)/4 for the declared source coordinates",
+      "dependency": ["HOPF-SUCC-001", "declared Hamilton coordinate frame"],
+      "verification": "Exact basis calculations and tests"
+    },
+    {
+      "id": "HOPF-SUCC-004",
+      "status": "REFUTED",
+      "claim": "Naive componentwise one-step T descends as a well-defined self-map of the right-gauge quaternionic Hopf S4",
+      "dependency": ["HOPF-SUCC-003", "right Sp(1) gauge"],
+      "verification": "(1,i) and (j,k) share Hopf point; their T-images have relative quaternion +k and -k"
+    },
+    {
+      "id": "HOPF-SUCC-005",
+      "status": "DISCLOSED",
+      "claim": "Odd T exchanges right- and left-gauge quaternionic Hopf spheres with explicit signed source transport r^-1 conjugate(R)r and L conjugate(R)L^-1",
+      "dependency": ["HOPF-SUCC-003", "classical quaternionic Hopf map"],
+      "verification": "Exact algebraic proof and deterministic quaternion gauge tests"
+    },
+    {
+      "id": "HOPF-SUCC-006",
+      "status": "DISCLOSED",
+      "claim": "T²(q)=(1-k)q(1+i)/4 descends to a Hopf quarter-turn (r0,ri,rj,rk,B)->(r0,rj,-ri,rk,B) of order four",
+      "dependency": ["HOPF-SUCC-005", "T^8=I/16"],
+      "verification": "Independent SymPy and exact quaternion tests"
+    },
+    {
+      "id": "HOPF-SUCC-007",
+      "status": "DISCLOSED",
+      "claim": "Consecutive authentic impulse states have fixed Hopf latitude 1/3, selected seed has five distinct points with period eight; J mirror has fixed latitude zero",
+      "dependency": ["HOPF-SUCC-001", "quaternionic Hopf normalization"],
+      "verification": "Analytic source conformality plus exact selected orbit enumeration"
+    },
+    {
+      "id": "HOPF-SUCC-008",
+      "status": "DISCLOSED",
+      "claim": "Fixed-anchor q2=1 yields an exact source-invertible stereographic S4 chart with latitude recurrence B_next=(3B-1)/(3-B) and degree minus one sphere homeomorphism",
+      "dependency": ["HOPF-SUCC-001", "a separately declared global gauge-fixed source anchor"],
+      "verification": "Exact decoder tests and topological degree of invertible real-linear map"
+    },
+    {
+      "id": "HOPF-SUCC-009",
+      "status": "DISCLOSED",
+      "claim": "The declared signed four-pole quaternion is losslessly recoverable from anchored Hopf and from mixed Hopf given authentic partner q2(n) and its chosen clock/frame",
+      "dependency": ["four original signed BBP poles", "source-labelled q2(n)"],
+      "verification": "Exact rational inverse formula and signed-source reconstruction up to 89 indices"
+    },
+    {
+      "id": "HOPF-SUCC-010",
+      "status": "DISCLOSED",
+      "claim": "The optional pole/chiral mixed Hopf pairing has variable latitude but tends to the north pole, and different clock alignment or basis gives different observable geometry",
+      "dependency": ["HOPF-SUCC-009", "declared synchronization n->T^(n-1) b"],
+      "verification": "Exact samples and polynomial-versus-exponential asymptotics; alternative pairing/frame tests"
+    },
+    {
+      "id": "HOPF-SUCC-011",
+      "status": "DISCLOSED",
+      "claim": "Alternative nonauthentic real BBP seed U0=-pi/16 has the same forcing but U_n=-sum_(k>=1)16^-k r(n+k)->0 and fails circle equidistribution",
+      "dependency": ["original BBP identity pi=sum 16^(1-n)r(n)", "r(n)<=8/n^2"],
+      "verification": "Analytic source tail bound and exact finite rational partial-tail controls"
+    },
+    {
+      "id": "HOPF-SUCC-012",
+      "status": "UNVERIFIED",
+      "claim": "Authentic BBP zero-seeded selected U_n is a nontrivial factor of a quaternionic S4 Hopf source and satisfies a new signed Weyl saving",
+      "dependency": ["source-preserving joint carry cross-time lift not yet established"],
+      "next_probe": "Build full U0=0, real carry and four-pole labelled quaternionic transport; reject same-forcing coherent changed seed and normal finite-type countermodels"
+    }
+  ],
+  "test_scope": {
+    "fraction_unit_tests": 34,
+    "independent_sympy_oracle": "PASS",
+    "full_SUCC_native_CI": "NOT RUN",
+    "Lean": "NOT RUN",
+    "independent_human_math_review": "NOT RUN"
+  }
+}
