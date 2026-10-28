@@ -24,3 +24,15 @@
 3. **Exact claim ID** (e.g. `CAR-07`, `SB-3`) → [CLAIM_CATALOG.json](CLAIM_CATALOG.json) for path/line/SHA → the supplement/dossier → the Lean receipt if any.
 
 Relation-label discipline: `reduces_to`/`depends_on` = proved implication with stated hypotheses; `does_not_imply` = refutation with a counterexample; `candidate_bridge` = unproved proposal; `shares_value_with` = equal scalar only (not a common source); `shares_source_with` = common source passport only. An equivalence is **not** a proof of either side.
+
+## Carry, Pólya and original-source resolvent child (2026-10-28)
+
+[Results and proof boundaries](../../research/2026-10-28/CARRY_POLYA_SOURCE_LOCKED_SUMMARY.md)
+and [CPS research-local claims](../CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md):
+sharp signed divisor-boundary identity and absence of a uniform origin-pinned
+spectral gap; minimal fourth-order original-BBP zeta response; minimal coherent
+Pólya environment and universal leakage spectrum. Typed nodes `MM-CPS-1` through
+`MM-CPS-3` lead to the three dossiers. Nine limited finite-algebra Lean declarations
+are separated from paper analytic/spectral proofs. Historical FQIDs are unchanged;
+the regenerated catalog intentionally retains warnings for unregistered research
+supplements. **Selected signed BBP cancellation, π normality and RH remain OPEN.**

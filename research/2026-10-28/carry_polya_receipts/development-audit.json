@@ -1,0 +1,32 @@
+{
+  "events": [
+    {
+      "command": "lake env lean formal/DivisorBoundary.lean (absolute path, cached mathlib project)",
+      "kind": "FAILED_DEVELOPMENT_BUILD",
+      "observed_error": "object file Mathlib/Algebra/BigOperators/Group/Finset/Basic.olean does not exist",
+      "resolution": "Use the actual pinned Lean 4.14 module paths; final kernel runner passed."
+    },
+    {
+      "kind": "FAILED_DEVELOPMENT_BUILD",
+      "observed_error": "DivisorBoundary.lean:27:6: error: simp made no progress",
+      "resolution": "Remove redundant simplification; final type/axiom export has no sorryAx."
+    },
+    {
+      "command": "python scripts/build_math_memory.py --check",
+      "kind": "INHERITED_CATALOG_FAILURE",
+      "observed_error": "STALE/MISSING mathematics catalog",
+      "resolution": "Regenerated current source inventory; excluded untracked .lake dependencies and verified cache-invariance regression."
+    },
+    {
+      "kind": "STATIC_RECEIPT_DEFECT",
+      "observed": "SymPy version metadata was included in canonical Polya oracle receipt.",
+      "resolution": "Move version to runtime record; serialize exact polynomial coefficient vectors. Final replay passed SymPy1.14/mpmath1.3."
+    },
+    {
+      "kind": "LOGICAL_WORDING_CORRECTION",
+      "observed": "Claim row conflated nonexistence of a spectral gap with refuting an implication assuming a gap.",
+      "resolution": "Final CPS-11 explicitly refutes gap existence."
+    }
+  ],
+  "schema": "SUCC-development-audit-v1"
+}
