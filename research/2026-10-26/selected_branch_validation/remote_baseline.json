@@ -1,0 +1,424 @@
+{
+  "note": "Snapshot collected during initial live connector audit; original response timestamps retained in workflow entries.",
+  "main": "6dd80730c3575d91f746546a25da5aedbd2e2737",
+  "branch": "research/selected-branch-cross-energy-2026-10-26",
+  "starting_head": "0c306a889f425418c29cbea3193205fb80c0575e",
+  "sibling_merge_base": "a8c7c85b7a1900d422090f1757c174e7aac69f44",
+  "prs": [
+    {
+      "number": 306,
+      "head": "research/pi-signed-pushforward-obstruction-2026-10-26",
+      "sha": "7989be5753341c5e74d570e8fea51e00129d2d0a",
+      "base": "main",
+      "base_sha": "6dd80730c3575d91f746546a25da5aedbd2e2737",
+      "runs": [
+        {
+          "id": 40285439258,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T07:22:53Z",
+          "updated_at": "2026-10-26T07:45:20Z"
+        },
+        {
+          "id": 40285439309,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T07:22:53Z",
+          "updated_at": "2026-10-26T07:24:36Z"
+        },
+        {
+          "id": 40285439311,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T07:22:53Z",
+          "updated_at": "2026-10-26T07:25:44Z"
+        },
+        {
+          "id": 40285439272,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T07:22:53Z",
+          "updated_at": "2026-10-26T07:23:07Z"
+        },
+        {
+          "id": 40285421588,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "created_at": "2026-10-26T07:22:42Z",
+          "updated_at": "2026-10-26T07:48:05Z"
+        }
+      ]
+    },
+    {
+      "number": 307,
+      "head": "research/oily-macaroni-source-mellin-hilbert-2026-10-26",
+      "sha": "c41af6b0a1e96a7758cbf891cd56014be743beb0",
+      "base": "main",
+      "base_sha": "6dd80730c3575d91f746546a25da5aedbd2e2737",
+      "runs": [
+        {
+          "id": 40331807176,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T13:34:47Z",
+          "updated_at": "2026-10-26T13:36:30Z"
+        },
+        {
+          "id": 40331805798,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T13:34:46Z",
+          "updated_at": "2026-10-26T13:57:16Z"
+        },
+        {
+          "id": 40331805750,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T13:34:46Z",
+          "updated_at": "2026-10-26T13:37:04Z"
+        },
+        {
+          "id": 40331805724,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T13:34:46Z",
+          "updated_at": "2026-10-26T13:35:02Z"
+        },
+        {
+          "id": 40331794747,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "created_at": "2026-10-26T13:34:41Z",
+          "updated_at": "2026-10-26T14:01:10Z"
+        }
+      ]
+    },
+    {
+      "number": 308,
+      "head": "research/bbp-atomic-two-quadratic-gaussian-2026-10-26",
+      "sha": "48bbfc78f499fbcac6e0b51f06a3ec60aa693731",
+      "base": "main",
+      "base_sha": "6dd80730c3575d91f746546a25da5aedbd2e2737",
+      "runs": [
+        {
+          "id": 40363931003,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T16:56:34Z",
+          "updated_at": "2026-10-26T16:59:31Z"
+        },
+        {
+          "id": 40363930912,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T16:56:34Z",
+          "updated_at": "2026-10-26T16:56:53Z"
+        },
+        {
+          "id": 40363930909,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T16:56:34Z",
+          "updated_at": "2026-10-26T16:58:22Z"
+        },
+        {
+          "id": 40363931070,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T16:56:34Z",
+          "updated_at": "2026-10-26T17:18:57Z"
+        },
+        {
+          "id": 40363834788,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "created_at": "2026-10-26T16:55:58Z",
+          "updated_at": "2026-10-26T17:22:13Z"
+        }
+      ]
+    },
+    {
+      "number": 309,
+      "head": "research/oily-macaroni-laplace-mellin-2026-10-26",
+      "sha": "8e9d8a4d7d42bb0931f899ac221f27fccf090b36",
+      "base": "research/pi-signed-pushforward-obstruction-2026-10-26",
+      "base_sha": "7989be5753341c5e74d570e8fea51e00129d2d0a",
+      "runs": [
+        {
+          "id": 40407644081,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "created_at": "2026-10-26T21:50:04Z",
+          "updated_at": "2026-10-26T21:51:39Z"
+        },
+        {
+          "id": 40363998669,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T16:57:00Z",
+          "updated_at": "2026-10-26T16:59:18Z"
+        },
+        {
+          "id": 40363998693,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T16:57:00Z",
+          "updated_at": "2026-10-26T16:57:35Z"
+        },
+        {
+          "id": 40363998648,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T16:57:00Z",
+          "updated_at": "2026-10-26T16:58:50Z"
+        },
+        {
+          "id": 40363999093,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T16:57:00Z",
+          "updated_at": "2026-10-26T17:18:48Z"
+        },
+        {
+          "id": 40363915885,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T16:56:28Z",
+          "updated_at": "2026-10-26T17:18:31Z"
+        }
+      ]
+    },
+    {
+      "number": 310,
+      "head": "research/oily-macaroni-totient-third-shadow-2026-10-26",
+      "sha": "a8c7c85b7a1900d422090f1757c174e7aac69f44",
+      "base": "research/oily-macaroni-laplace-mellin-2026-10-26",
+      "base_sha": "8e9d8a4d7d42bb0931f899ac221f27fccf090b36",
+      "runs": [
+        {
+          "id": 40414823204,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T22:45:10Z",
+          "updated_at": "2026-10-26T23:07:44Z"
+        },
+        {
+          "id": 40407855880,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T21:51:38Z",
+          "updated_at": "2026-10-26T21:53:24Z"
+        },
+        {
+          "id": 40407854763,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "created_at": "2026-10-26T21:51:37Z",
+          "updated_at": "2026-10-26T22:16:56Z"
+        },
+        {
+          "id": 40407854757,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T21:51:37Z",
+          "updated_at": "2026-10-26T21:51:53Z"
+        },
+        {
+          "id": 40407854759,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T21:51:37Z",
+          "updated_at": "2026-10-26T21:54:23Z"
+        },
+        {
+          "id": 40407772744,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "completed",
+          "conclusion": "cancelled",
+          "created_at": "2026-10-26T21:51:00Z",
+          "updated_at": "2026-10-26T22:17:01Z"
+        }
+      ]
+    },
+    {
+      "number": 311,
+      "head": "research/oily-carry-resonance-2026-10-26",
+      "sha": "a34c4484059e667202b97d5ab4102560987b1406",
+      "base": "research/oily-macaroni-totient-third-shadow-2026-10-26",
+      "base_sha": "a8c7c85b7a1900d422090f1757c174e7aac69f44",
+      "runs": [
+        {
+          "id": 40416393053,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "in_progress",
+          "conclusion": null,
+          "created_at": "2026-10-26T22:58:01Z",
+          "updated_at": "2026-10-26T22:58:05Z"
+        },
+        {
+          "id": 40416393151,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T22:58:01Z",
+          "updated_at": "2026-10-26T22:58:39Z"
+        },
+        {
+          "id": 40416393158,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T22:58:01Z",
+          "updated_at": "2026-10-26T22:59:50Z"
+        },
+        {
+          "id": 40416393076,
+          "name": "Pinned formal kernel and proposition exports",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T22:58:01Z",
+          "updated_at": "2026-10-26T22:59:23Z"
+        },
+        {
+          "id": 40416393379,
+          "name": "Oily branch coercivity pinned finite Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T22:58:01Z",
+          "updated_at": "2026-10-26T22:59:44Z"
+        },
+        {
+          "id": 40416393103,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T22:58:01Z",
+          "updated_at": "2026-10-26T23:00:15Z"
+        },
+        {
+          "id": 40416381449,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "in_progress",
+          "conclusion": null,
+          "created_at": "2026-10-26T22:57:55Z",
+          "updated_at": "2026-10-26T22:58:07Z"
+        }
+      ]
+    },
+    {
+      "number": 312,
+      "head": "research/lambda-inside-out-source-branch-duality-2026-10-26",
+      "sha": "0c306a889f425418c29cbea3193205fb80c0575e",
+      "base": "research/oily-macaroni-totient-third-shadow-2026-10-26",
+      "base_sha": "a8c7c85b7a1900d422090f1757c174e7aac69f44",
+      "runs": [
+        {
+          "id": 40417682589,
+          "name": "Observational SUCC validation",
+          "event": "pull_request",
+          "status": "in_progress",
+          "conclusion": null,
+          "created_at": "2026-10-26T23:08:40Z",
+          "updated_at": "2026-10-26T23:08:43Z"
+        },
+        {
+          "id": 40417682540,
+          "name": "Institute theorem contracts and core Lean",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T23:08:40Z",
+          "updated_at": "2026-10-26T23:08:58Z"
+        },
+        {
+          "id": 40417682907,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T23:08:40Z",
+          "updated_at": "2026-10-26T23:10:29Z"
+        },
+        {
+          "id": 40417682536,
+          "name": "Collective observer source and certificate replay",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "created_at": "2026-10-26T23:08:40Z",
+          "updated_at": "2026-10-26T23:11:30Z"
+        },
+        {
+          "id": 40417593301,
+          "name": "Observational SUCC validation",
+          "event": "push",
+          "status": "in_progress",
+          "conclusion": null,
+          "created_at": "2026-10-26T23:07:55Z",
+          "updated_at": "2026-10-26T23:08:07Z"
+        }
+      ]
+    }
+  ],
+  "observation_date_utc": "2026-10-26"
+}

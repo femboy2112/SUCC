@@ -1,0 +1,108 @@
+{
+  "RH_proved": false,
+  "module_sha256": "f473e60bd181ee1a1ce4d912e9a1d4d1dac45819297f9da4f5bd565c8f80a706",
+  "oily_packet_fold_chi2": "75912489607/38653526025",
+  "oily_primitive_h8_character": "(Fraction(-1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))",
+  "oily_primitive_packet_fold_chi2": "65968750207/11930100625",
+  "original_main_ancestor": "6dd80730c3575d91f746546a25da5aedbd2e2737",
+  "pi_normality_proved": false,
+  "research_parent_pr": 310,
+  "research_parent_sha": "a8c7c85b7a1900d422090f1757c174e7aac69f44",
+  "schema": 1,
+  "selected_branch_prefix": [
+    {
+      "conductor": 4095,
+      "digit": 2,
+      "forcing": "106/819",
+      "literal_carry": 2,
+      "n": 1,
+      "remainder": "2/15"
+    },
+    {
+      "conductor": 765765,
+      "digit": 4,
+      "forcing": "829/19635",
+      "literal_carry": 4,
+      "n": 2,
+      "remainder": "836/4095"
+    },
+    {
+      "conductor": 111035925,
+      "digit": 3,
+      "forcing": "316/15225",
+      "literal_carry": 3,
+      "n": 3,
+      "remainder": "721313/765765"
+    },
+    {
+      "conductor": 78058255275,
+      "digit": 15,
+      "forcing": "857/69597",
+      "literal_carry": 15,
+      "n": 4,
+      "remainder": "44780693/111035925"
+    }
+  ],
+  "selected_exact_conditional_chi2_samples": {
+    "N128_M4": {
+      "chi2_conditional": "3437/10260",
+      "h16_upper_rational": "10373268341/7516192768",
+      "h8_parity_energy": "1211/40128",
+      "primitive_h1_upper_rational": "4719346549/7516192768",
+      "source_is_authentic": true
+    },
+    "N16_M1": {
+      "chi2_conditional": "5/4",
+      "h16_upper_rational": "110222256651/15032385536",
+      "h8_parity_energy": "1/16",
+      "primitive_h1_upper_rational": "19759507979/15032385536",
+      "source_is_authentic": true
+    },
+    "N256_M4": {
+      "chi2_conditional": "84499/561680",
+      "h16_upper_rational": "12222665087/15032385536",
+      "h8_parity_energy": "71243/4493440",
+      "primitive_h1_upper_rational": "6568743295/15032385536",
+      "source_is_authentic": true
+    },
+    "N512_M8": {
+      "chi2_conditional": "213002507/1233837696",
+      "h16_upper_rational": "9441905275/15032385536",
+      "h8_parity_energy": "154897/31105152",
+      "primitive_h1_upper_rational": "6614944379/15032385536",
+      "source_is_authentic": true
+    },
+    "N64_M2": {
+      "chi2_conditional": "1151/2046",
+      "h16_upper_rational": "70733967159/30064771072",
+      "h8_parity_energy": "89/1364",
+      "primitive_h1_upper_rational": "25502592823/30064771072",
+      "source_is_authentic": true
+    }
+  },
+  "selected_weyl_saving_proved": false,
+  "source_first_forcing": "47/15",
+  "status": {
+    "RH_proved": false,
+    "authentic_source_selected_branch_in_hierarchy": true,
+    "conditional_chi2_normality_saving_proved": false,
+    "pi_base16_normality_proved": false,
+    "source_max_entropy_estimate_proved": false,
+    "typed_lambda_interface": true,
+    "uniform_branch_fourier_orthogonality": true
+  },
+  "synthetic_coherent_zero_defect": "15",
+  "synthetic_digit_future_correlation_defect": "1",
+  "synthetic_uniform_digit_marginal_defect": "0",
+  "synthetic_uniform_inverse_ensemble_defect": "0",
+  "uniform_inverse_character_exact_cyclo16": {
+    "0": "(Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))",
+    "1": "(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))",
+    "16": "(Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))",
+    "17": "(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))",
+    "2": "(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))",
+    "32": "(Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))",
+    "4": "(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))",
+    "8": "(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))"
+  }
+}

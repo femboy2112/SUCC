@@ -1,0 +1,56 @@
+{
+  "all_rejected": true,
+  "base_receipt_sha256": "e051d3f5d9ad9dbc3b847306f4c7e3fa368d89ab9b02b9001a90079ee5232d40",
+  "mutations": [
+    {
+      "exit_code": 1,
+      "mutant_sha256": "c502bd873ee6eb9ed4f15535323e7eb3e2359806308e869d581b1cd4ad3dfbf6",
+      "mutation": "false_normality_promotion",
+      "stderr": "REJECTED: receipt differs from exact regeneration/source hashes/scope\n",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "df2b1e4259a5761449d2085bca262afc41196ec0dc95feda845383ef30da1ccd",
+      "mutation": "false_source_hash",
+      "stderr": "REJECTED: receipt differs from exact regeneration/source hashes/scope\n",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "f381e62ba2913ca0d42715de35de68e8d17aac8146d97b4e361098830f11c8f7",
+      "mutation": "reversed_revelation_clock",
+      "stderr": "REJECTED: receipt differs from exact regeneration/source hashes/scope\n",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "37b0f515c8109f53c86828b0ff8a023ae7931a80837838d66d0408c4cca48cf3",
+      "mutation": "erased_signed_cancellation",
+      "stderr": "REJECTED: receipt differs from exact regeneration/source hashes/scope\n",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "57df293fc327cdda7b1eae6972ae43c2417f4a717dda53282364cc8cfbbc5210",
+      "mutation": "erased_path_order_defect",
+      "stderr": "REJECTED: receipt differs from exact regeneration/source hashes/scope\n",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "56fd57ab4f73438835b07f61e7401f5390f5dc76ed0d85d37386a3b08c98c6d7",
+      "mutation": "substituted_shared_coin_posterior",
+      "stderr": "REJECTED: receipt differs from exact regeneration/source hashes/scope\n",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "mutant_sha256": "05c12a6f064597d2cb6b6748a1af2703e0d6bf673dcca68472905b5f3c76e072",
+      "mutation": "erased_changed_prior_discriminator",
+      "stderr": "REJECTED: receipt differs from exact regeneration/source hashes/scope\n",
+      "stdout": ""
+    }
+  ],
+  "oracle": "canonical exact regeneration, not a proof of the paper claims"
+}

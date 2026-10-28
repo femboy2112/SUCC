@@ -1,5 +1,15 @@
 # Claim Index
 
+**2026-10-26 selected inverse-branch continuation on #312:**
+[scoped local claims](CLAIM_SUPPLEMENT_SELECTED_BRANCH.md) ·
+[proof synthesis](../research/2026-10-26/SELECTED_BRANCH_SYNTHESIS.md).
+Authentic scaled-spill packing gives vanishing carry/arrival energy transport
+at every prescribed subquadratic resolution, with an all-step obstruction at
+one quadratic scale. Quantitative odd-conductor resolution obstruction and
+same-forcing finite-band/Diophantine controls limit the conditional-energy
+route. Ten finite Lean declarations are checked. Selected cancellation and
+π normality remain OPEN; no new claim namespace is minted.
+
 **2026-10-25 selected-phase continuation on #301:**
 [PSF-01--14](CLAIM_SUPPLEMENT_PI_SELECTED_PHASE.md),
 [dossier](../research/2026-10-25/PI_SELECTED_PHASE_FORGE.md).

@@ -236,6 +236,138 @@ records the new literal-carry and cumulant constructions and their limits.
 
 ---
 
+## Selected inverse-branch gate — actual carry/arrival comparison (#312 continuation)
+
+This continuation is based on #312 at
+`0c306a889f425418c29cbea3193205fb80c0575e`, with the carry/packet construction
+of sibling #311 inspected at `a34c4484059e667202b97d5ab4102560987b1406`.
+The sibling is not merged. Use $y_n=\{U_n\}$ in this section to distinguish
+the rational state from the Green-corrected $x_n$ in the common objects.
+Put $j_n=\lfloor16y_n\rfloor$, $t_n=\{16y_n\}$ and keep the literal carry
+$c_{n+1}=\lfloor U_{n+1}\rfloor-16\lfloor U_n\rfloor$.
+
+**New proved source estimate.** Scaled spills
+
+$$s_k^{(a)}=\lfloor\{16aU_{k-1}\}+a r(k)\rfloor>0$$
+
+force the next $L_a(k)=\max(0,\lfloor\log_{16}(4(k-1)^2/a)\rfloor)$
+scaled carries to vanish. Thus their count $K_{N,a}$ on $2\le k\le N+1$
+is at most
+
+$$B(N,a)=\min\left(N,R-2+
+\left\lceil\frac{N+2-R}{L_a(R)+1}\right\rceil\right),
+\qquad R=\max(2,1+\lfloor(aN^2)^{1/4}\rfloor),$$
+
+using $B=N$ if $R>N+1$. This proves $B(N,a_N)=o(N)$ for every prescribed
+$a_N=o(N^2)$, without measuring a Fourier coefficient. Let $E,\Delta$ be
+the #312 conditional energies for records $(\lfloor Mt_n\rfloor,j_n)$;
+let $\widetilde E,\widetilde\Delta$ use the actual arrival records
+$(\lfloor My_{n+1}\rfloor,c_{n+1}\bmod16)$. Then, uniformly in $h$,
+
+$$\lvert E-\widetilde E\rvert\le
+\frac{4[B(N,1)+B(N,M)]}{N},\qquad
+\lvert\Delta-\widetilde\Delta\rvert\le
+\frac{32[B(N,1)+B(N,M)]}{N}.$$
+
+Both errors vanish at every preset $M_N=o(N^2)$. At $M=8N^2$, however,
+every authentic bin label changes: the exact positive polynomial for
+$8N^2r(N+1)-1$ proves $K_{N,8N^2}=N$. The subquadratic guarantee cannot
+be extended to every quadratic scale by this argument. This is a statement
+about record changes, not an energy lower bound.
+
+**Narrower parity debt.** Prescribe $M_N=\max(2,\lfloor\log_2N\rfloor)$.
+The carry-sensitive primitive mass in each actual arrival bin is
+$\Phi_b=4/9+\Pr(c_{n+1}\text{ odd}\mid b)/9$. Exactly,
+
+$$\widetilde E_{N,M}(8)=324\sum_b\widetilde p_b(\Phi_b-1/2)^2.$$
+
+Proving this actual conditional variance tends to zero now suffices for
+the original parity-energy target, with a proved $O(1/\log N)$ transport
+error. **The variance estimate is OPEN**, and parity alone is insufficient
+for all branch modes; quarter-turn and higher interactions remain.
+
+**Weaker signed gate retaining cross-bin cancellation.** Put
+$\tau_b=(b+1/2)/M$ and
+
+$$\widetilde C_{N,M}(h)=\frac1N\sum_{n=1}^N
+e\left(\frac{h(c_{n+1}+\tau_{\lfloor My_{n+1}\rfloor})}{16}\right).$$
+
+The original recurrence proves, for all $N,M\ge1$,
+
+$$\left|\frac1N\sum_{n=1}^Ne(hU_n)-\widetilde C_{N,M}(h)\right|
+\le\frac{\pi|h|}{16M}
++\frac{\pi|h|}{8N}\sum_{n=1}^Nr(n+1).$$
+
+Thus a source-derived $\widetilde C_{N,M_N}(h)=o(1)$ for every fixed
+$h\ne0$ at the prescribed growing resolution would close normality.
+That signed bound is **OPEN**; the displayed comparison is not a saving.
+
+**Validated obstructions.** For the actual minimal odd prefix conductor
+$Q_N$, every $M\ge Q_N$ gives $E(h)=1$ and $\Delta=15$. Exact conditioning
+cannot inherit the 16-predecessor Haar gap. A fixed changed-seed history
+with the *entire original forcing* can cancel any prescribed finite band,
+have endpoint irrationality exponent two and donor-level logarithmic
+absolute loss, yet have all conditional energies tend to one at every
+fine growing resolution. It fails the zero selector; it does not refute
+the π target. Neither finite-band tests nor Diophantine type replaces
+the remaining selected conditional or signed estimate.
+
+See the [full proofs](../research/2026-10-26/SELECTED_BRANCH_SYNTHESIS.md)
+and [authority ledger](CLAIM_SUPPLEMENT_SELECTED_BRANCH.md). The inherited
+arbitrary-slow-schedule normality equivalence is explicitly not counted
+as new progress. No improvement to the best authentic signed-modulus
+order is claimed.
+
+---
+
+## Retained-path continuation — Seinfeld inverse averaging and realized fields
+
+The continuation of #313 at `79344c62c39c96755b742700b3d4d22fa60d86da`
+now provides a lossless interface for the information removed by branch
+averaging. For a labelled joint law, coarse pushforward plus its signed
+fibre-null residual reconstructs the original law. The residual is a native
+Seinfeld zero witness against coarse observables and can pair nontrivially
+with the selected branch/tail observable. Separate source and branch
+marginals do not recover that coupling, even for the first two authentic rows.
+
+The exact rational branch codec consists of fields at modes $1,2,4,8$,
+with dimensions $8+4+2+1=15$. Energies alone lose the phase: every Dirac
+selector has the same stratum energies $(8,4,2,1)$. On a declared uniform
+inverse tree, a character has one explicit reverse-revelation level; the
+selection/observable covariance restores its selected phase at that level.
+These are reconstruction identities and source-authenticated finite
+interfaces, **not new temporal cancellation estimates**.
+
+Two further proved boundaries constrain an operator interpretation. The odd
+inverse character has sharp all-carrier uniform continuous approximation
+error one when $16\nmid h$. A stochastic extension preserving the complete
+deterministic arithmetic successor cannot attenuate its conditional
+character; mass $\epsilon$ leaving that successor gives the sharp bound
+$\max(0,1-2\epsilon)$. Neither statement prohibits cancellation across the
+actual deterministic source times.
+
+A declared field-growth model has equal-endpoint paths with odds $3/4$ and
+an exact logarithmic history of nonharmonic normalizers. A twisted-kernel
+reconvergence criterion is proved separately. **No field/BBP stochastic
+identification or arithmetic application of that contraction is proved.**
+The signed $\widetilde C_{N,M_N}(h)=o(1)$ gate above remains OPEN.
+
+The earlier finite beta/golden–Gamma source also has an exact posterior
+interpretation: uniform latent bias after $m-1$ conditionally independent
+failures, rescaled by $m$. Its log coordinate is Exp(1) at every finite $m$,
+and the Euler error equals the positive log-linearization defect
+$\epsilon_m=\mathbb E(\log Z_m-\log X_m)$. The inherited source-specific
+comparison $T_m\sim\epsilon_m^2/16$ now has this path-inference reading.
+The Bayesian path law is still not authenticated as a BBP generation mechanism.
+
+See the [synthesis](../research/2026-10-26/SEINFELD_INVERSE_AVERAGING_AND_REALIZATION.md),
+[claim supplement](CLAIM_SUPPLEMENT_SEINFELD_REALIZATION.md), and
+[next source-map handoff](../handoffs/SEINFELD_REALIZATION_NEXT_PI_2026-10-26.md).
+π normality and the role of $\varphi^{-1}-\gamma$ as a cancellation
+invariant are unchanged open obligations.
+
+---
+
 ## Route A — selected harmonic / cyclotomic saving (#284)
 
 **Statement to prove.** For each fixed nonzero integer $h$, with the authentic

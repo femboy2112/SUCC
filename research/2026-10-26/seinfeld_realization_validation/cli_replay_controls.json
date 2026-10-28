@@ -1,0 +1,42 @@
+[
+  {
+    "case": "default_replay",
+    "command": [
+      "/workspace/scratch/d39f55bad1de/succ-venv/bin/python",
+      "/workspace/scratch/d39f55bad1de/SUCC/scripts/seinfeld_realization_probe.py",
+      "--verify"
+    ],
+    "cwd": "/workspace/scratch/d39f55bad1de/SUCC",
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"verified\", \"schema\": \"succ.seinfeld-realization.exact.v1\", \"selected_weyl_saving_proved\": false}\n"
+  },
+  {
+    "case": "relative_outside_write",
+    "command": [
+      "/workspace/scratch/d39f55bad1de/succ-venv/bin/python",
+      "/workspace/scratch/d39f55bad1de/SUCC/scripts/seinfeld_realization_probe.py",
+      "--write",
+      "--path",
+      "cli_relative_receipt.json"
+    ],
+    "cwd": "/workspace/scratch/d39f55bad1de/validation_round2",
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"written\", \"path\": \"cli_relative_receipt.json\"}\n"
+  },
+  {
+    "case": "relative_outside_replay",
+    "command": [
+      "/workspace/scratch/d39f55bad1de/succ-venv/bin/python",
+      "/workspace/scratch/d39f55bad1de/SUCC/scripts/seinfeld_realization_probe.py",
+      "--verify",
+      "--path",
+      "cli_relative_receipt.json"
+    ],
+    "cwd": "/workspace/scratch/d39f55bad1de/validation_round2",
+    "exit_code": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"verified\", \"schema\": \"succ.seinfeld-realization.exact.v1\", \"selected_weyl_saving_proved\": false}\n"
+  }
+]

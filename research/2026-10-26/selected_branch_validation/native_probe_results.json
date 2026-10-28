@@ -1,0 +1,35 @@
+[
+  {
+    "command": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-selected-branch/.venv/bin/python",
+      "scripts/verify_provenance.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.05,
+    "stdout": "provenance.json",
+    "stdout_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+    "stderr": "provenance.json.stderr"
+  },
+  {
+    "command": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-selected-branch/.venv/bin/python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.128,
+    "stdout": "observer.json",
+    "stdout_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+    "stderr": "observer.json.stderr"
+  },
+  {
+    "command": [
+      "/media/leah/SPANKBANK/SUCCYBOI/SUCC-selected-branch/.venv/bin/python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "exit_code": 0,
+    "seconds": 3.398,
+    "stdout": "ordinal.json",
+    "stdout_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+    "stderr": "ordinal.json.stderr"
+  }
+]
