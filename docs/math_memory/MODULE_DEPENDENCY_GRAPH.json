@@ -12674,30 +12674,6 @@
       ]
     },
     {
-      "imported_by": [],
-      "imports": [
-        "succ_internal_matrix_walk"
-      ],
-      "module": "signed_cancellation_core",
-      "top_level_defclass_names": [
-        "SignedPushforwardIdentity",
-        "bbp_circle_point",
-        "bbp_forcing",
-        "bbp_lift",
-        "certify_weyl_o_N",
-        "energy_gate",
-        "energy_gate_equivalence",
-        "evaluate_poly",
-        "normal_iff_weyl_sublinear",
-        "sgo_tail_partial",
-        "sgo_tail_upper",
-        "sgo_transport_bound",
-        "signed_pushforward_partition",
-        "weyl_sum",
-        "weyl_sum_poly"
-      ]
-    },
-    {
       "imported_by": [
         "one_object_residual_schur"
       ],
@@ -14137,7 +14113,6 @@
         "selected_branch_analytic",
         "selected_branch_arithmetic",
         "selected_branch_operator",
-        "signed_cancellation_core",
         "signed_pushforward",
         "solenoid_cut_source",
         "spectral_purity_arithmetic",
@@ -16834,11 +16809,11 @@
       2
     ],
     "modules_in_duplicate_clusters": 73,
-    "modules_with_intra_package_imports": 410,
+    "modules_with_intra_package_imports": 409,
     "modules_with_no_intra_package_imports": 237,
     "orphan_modules": 120,
     "self_referential_cycles": 0,
-    "total_intra_package_import_edges": 830,
-    "total_modules": 647
+    "total_intra_package_import_edges": 829,
+    "total_modules": 646
   }
 }
