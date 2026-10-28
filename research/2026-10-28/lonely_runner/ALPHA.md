@@ -1,8 +1,8 @@
 # Alpha: a sharp corollary for one deleted speed
 
 **Status:** proved on paper; classical exact formula independently rederived;
-Python exact certificates and regression tests; Lean authority is limited to
-the exported statements actually accepted by the kernel. No general Lonely
+Python exact certificates and regression tests; the full universal rational
+witness and real metric strict bound are Lean-kernel checked locally. No general Lonely
 Runner Conjecture, academic novelty, or independently witnessed discovery is
 claimed. Same-model agents supplied adversarial review, not blind witnesses.
 
@@ -171,7 +171,7 @@ This is not a claim about arbitrary speed sets of the same cardinality.
 1. **Keep the excluded endpoint excluded.** At `r=n-1`, the retained
    set is `[n-2]`, whose exact value is `1/(n-1)`; the strict target
    and `2/(2n-3)` both fail.
-2. **Keep the size assumption.** At `(n,r)=(4,1)`, the value is `2/5`,
+2. **Keep the size assumption when classifying equality.** At `(n,r)=(4,1)`, the value is `2/5`,
    equal to rather than strictly greater than the displayed uniform
    bound; the classification of equality for `n>=5` cannot be extended
    unchanged. At `(3,1)`, `1/2<2/3` refutes the uniform bound itself.
@@ -207,17 +207,27 @@ Run the focused test with
 python -m unittest discover -s tests -p 'test_lonely_runner_deletion.py' -v
 ```
 
-The formal companion, when kernel-accepted, proves the rational witness
-through integer residue separation and real distance to every integer.
-The exact maximization formula and sharp-minimum classification remain
-paper proofs unless separately exported as Lean theorems. A standard Lean
-axiom audit is distinct from an independent mathematical review.
+`formal/LonelyRunnerDeletion.lean` was accepted locally with Lean 4.14.0
+and pinned Mathlib 4.14.0. Its seven audited exports prove the integer gap,
+the centre gap, transport to real distance, the Euclidean denominator
+construction, a universally quantified rational witness, the real-time
+metric bound, and the strict real-time bound. In particular, the last export
+has the full quantifiers `for all n>=5 and 1<=r<=n-2, there exists a common
+t in [0,1], for all retained integer speeds i and all integers z,
+1/(n-1)<|it-z|`. No residue correctness or finite scan is an antecedent.
+All seven axiom audits contain only `propext`, `Classical.choice`, and
+`Quot.sound`; there are no admitted proofs or custom axioms.
+
+The exact maximization formula and sharp-minimum classification remain paper
+proofs. Local kernel evidence is distinct from hosted CI and independent
+mathematical review. The focused Python suite passed **11 tests**, including
+the independent exact envelope comparison through `n=18`.
 
 ## 7. Claim ledger and next falsifiers
 
 | ID | Exact scope | Status / evidence | Next falsifier |
 |---|---|---|---|
-| ALPHA-01 | All integers `n>=5`, `1<=r<=n-2`, universal rational witness | PROVED COROLLARY; Section 2, exact implementation | Attack boundary `n=2r+1` and integer residue gap |
+| ALPHA-01 | All integers `n>=5`, `1<=r<=n-2`, universal rational witness | PROVED COROLLARY; Section 2; full real-metric witness KERNEL CHECKED LOCALLY | Attack boundary `n=2r+1` and integer residue gap |
 | ALPHA-02 | All `n>=3`, `1<=r<=n-1`, piecewise exact value | CLASSICAL; Liu plus direct Section 3 proof | Challenge upper-envelope trap, especially `r=1` |
 | ALPHA-03 | Exact minimum and all minimizers for every `n>=5` | PROVED COROLLARY; Section 4 | Check each of four near-boundary denominator cases |
 | ALPHA-04 | Equality in `2/(2n-3)` iff `(5,2)` or `(6,2)` | PROVED COROLLARY; small tables plus ALPHA-03 | Wrong singleton equality control |

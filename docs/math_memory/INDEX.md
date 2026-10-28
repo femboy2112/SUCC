@@ -24,3 +24,14 @@
 3. **Exact claim ID** (e.g. `CAR-07`, `SB-3`) → [CLAIM_CATALOG.json](CLAIM_CATALOG.json) for path/line/SHA → the supplement/dossier → the Lean receipt if any.
 
 Relation-label discipline: `reduces_to`/`depends_on` = proved implication with stated hypotheses; `does_not_imply` = refutation with a counterexample; `candidate_bridge` = unproved proposal; `shares_value_with` = equal scalar only (not a common source); `shares_source_with` = common source passport only. An equivalence is **not** a proof of either side.
+
+## Lonely Runner exact-certificate campaign (2026-10-28)
+
+[Research entry](../../research/2026-10-28/lonely_runner/README.md) and
+[LRN local claims](../CLAIM_SUPPLEMENT_LONELY_RUNNER.md): classical deleted-speed
+corollary and sharp equality cases; independently checked rational circle
+covers; exact finite characterization and bounded search for local uniform
+replacement rules; polynomial two-entry growth bounds. Full universal Alpha
+metric and real cover-chain soundness have distinct kernel receipts; local-rule
+and analytic growth results are paper proofs. Academic novelty remains separate
+from those proof statuses. Existing source and theorem namespaces are unchanged.

@@ -1,0 +1,2728 @@
+{
+  "arithmetic_wavefront": [
+    {
+      "N": 1,
+      "observed_before_propagation": null,
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 0,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 0,
+          "occurrences_by_depth": [],
+          "stage": "shadow",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "0"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 0,
+            "expansion_complete": true,
+            "paths": [],
+            "retained_occurrences": 0,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 0,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 0,
+          "occurrences_by_depth": [],
+          "stage": "shadow",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "0"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 0,
+            "expansion_complete": true,
+            "paths": [],
+            "retained_occurrences": 0,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 0,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 0,
+          "occurrences_by_depth": [],
+          "stage": "shadow",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "0"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 0,
+            "expansion_complete": true,
+            "paths": [],
+            "retained_occurrences": 0,
+            "target": 8
+          }
+        }
+      }
+    },
+    {
+      "N": 2,
+      "observed_before_propagation": null,
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 0,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 0,
+          "occurrences_by_depth": [],
+          "stage": "shadow",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "0"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 0,
+            "expansion_complete": true,
+            "paths": [],
+            "retained_occurrences": 0,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 0,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 0,
+          "occurrences_by_depth": [],
+          "stage": "shadow",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "0"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 0,
+            "expansion_complete": true,
+            "paths": [],
+            "retained_occurrences": 0,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [
+            [
+              3,
+              {
+                "im": "0",
+                "re": "1"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 1,
+          "occurrences_by_depth": [
+            [
+              3,
+              1
+            ]
+          ],
+          "stage": "shadow",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "1/3"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 1,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                2
+              ]
+            ],
+            "retained_occurrences": 1,
+            "target": 8
+          }
+        }
+      }
+    },
+    {
+      "N": 3,
+      "observed_before_propagation": null,
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [
+            [
+              3,
+              {
+                "im": "0",
+                "re": "3"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 3,
+          "occurrences_by_depth": [
+            [
+              3,
+              3
+            ]
+          ],
+          "stage": "shadow",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 3,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                2,
+                2
+              ]
+            ],
+            "retained_occurrences": 3,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 2,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 2,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ]
+          ],
+          "stage": "shadow",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 2,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "retained_occurrences": 2,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [
+            [
+              3,
+              {
+                "im": "0",
+                "re": "1"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 1,
+          "occurrences_by_depth": [
+            [
+              3,
+              1
+            ]
+          ],
+          "stage": "shadow",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "1/3"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 1,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                2
+              ]
+            ],
+            "retained_occurrences": 1,
+            "target": 8
+          }
+        }
+      }
+    },
+    {
+      "N": 4,
+      "observed_before_propagation": null,
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "3"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 5,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "stage": "shadow",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "0"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 5,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                2,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "retained_occurrences": 5,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 2,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 2,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ]
+          ],
+          "stage": "shadow",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 2,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "retained_occurrences": 2,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "1"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 3,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "stage": "shadow",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "-2/3"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 3,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "retained_occurrences": 3,
+            "target": 8
+          }
+        }
+      }
+    },
+    {
+      "N": 5,
+      "observed_before_propagation": null,
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "3"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 5,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "stage": "shadow",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "0"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 5,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                3,
+                2,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ]
+            ],
+            "retained_occurrences": 5,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 2,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 2,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ]
+          ],
+          "stage": "shadow",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 2,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "retained_occurrences": 2,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "1"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 3,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "stage": "shadow",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "-2/3"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 3,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "retained_occurrences": 3,
+            "target": 8
+          }
+        }
+      }
+    },
+    {
+      "N": 6,
+      "observed_before_propagation": {
+        "coefficient_products_by_depth": [
+          [
+            2,
+            {
+              "im": "0",
+              "re": "2"
+            }
+          ]
+        ],
+        "complete": true,
+        "integrated": false,
+        "longest_history": 2,
+        "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+        "observed": true,
+        "occurrences": 2,
+        "occurrences_by_depth": [
+          [
+            2,
+            2
+          ]
+        ],
+        "stage": "observed",
+        "target": 6,
+        "weight": {
+          "im": "0",
+          "re": "-1"
+        }
+      },
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "4"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "3"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 7,
+          "occurrences_by_depth": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "stage": "shadow",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 7,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                2,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "retained_occurrences": 7,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 2,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 2,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "0"
+            },
+            "expected": {
+              "im": "0",
+              "re": "0"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(0)*log(6)/sqrt(6)",
+            "target": 6
+          },
+          "stage": "integrated",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 2,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "retained_occurrences": 2,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "1"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 3,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "stage": "shadow",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "-2/3"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 3,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "retained_occurrences": 3,
+            "target": 8
+          }
+        }
+      }
+    },
+    {
+      "N": 7,
+      "observed_before_propagation": null,
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "4"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "3"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 7,
+          "occurrences_by_depth": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "stage": "shadow",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 7,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                2,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "retained_occurrences": 7,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 2,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 2,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "0"
+            },
+            "expected": {
+              "im": "0",
+              "re": "0"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(0)*log(6)/sqrt(6)",
+            "target": 6
+          },
+          "stage": "integrated",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 2,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "retained_occurrences": 2,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "1"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 3,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "stage": "shadow",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "-2/3"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 3,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "retained_occurrences": 3,
+            "target": 8
+          }
+        }
+      }
+    },
+    {
+      "N": 8,
+      "observed_before_propagation": {
+        "coefficient_products_by_depth": [
+          [
+            2,
+            {
+              "im": "0",
+              "re": "2"
+            }
+          ],
+          [
+            3,
+            {
+              "im": "0",
+              "re": "1"
+            }
+          ]
+        ],
+        "complete": true,
+        "integrated": false,
+        "longest_history": 3,
+        "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+        "observed": true,
+        "occurrences": 3,
+        "occurrences_by_depth": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "stage": "observed",
+        "target": 8,
+        "weight": {
+          "im": "0",
+          "re": "-2/3"
+        }
+      },
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "4"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "3"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 7,
+          "occurrences_by_depth": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "stage": "shadow",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 7,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                2,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "retained_occurrences": 7,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 2,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 2,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "0"
+            },
+            "expected": {
+              "im": "0",
+              "re": "0"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(0)*log(6)/sqrt(6)",
+            "target": 6
+          },
+          "stage": "integrated",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 2,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "retained_occurrences": 2,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "1"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 3,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "1/3"
+            },
+            "expected": {
+              "im": "0",
+              "re": "1/3"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                3
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(1/3)*log(8)/sqrt(8)",
+            "target": 8
+          },
+          "stage": "integrated",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "-2/3"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 3,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "retained_occurrences": 3,
+            "target": 8
+          }
+        }
+      }
+    },
+    {
+      "N": 9,
+      "observed_before_propagation": null,
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "4"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "3"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 7,
+          "occurrences_by_depth": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "stage": "shadow",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 7,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                2,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "retained_occurrences": 7,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 2,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 2,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "0"
+            },
+            "expected": {
+              "im": "0",
+              "re": "0"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(0)*log(6)/sqrt(6)",
+            "target": 6
+          },
+          "stage": "integrated",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 2,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "retained_occurrences": 2,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "1"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 3,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "1/3"
+            },
+            "expected": {
+              "im": "0",
+              "re": "1/3"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                3
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(1/3)*log(8)/sqrt(8)",
+            "target": 8
+          },
+          "stage": "integrated",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "-2/3"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 3,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "retained_occurrences": 3,
+            "target": 8
+          }
+        }
+      }
+    },
+    {
+      "N": 10,
+      "observed_before_propagation": null,
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "4"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "3"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 7,
+          "occurrences_by_depth": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "stage": "shadow",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 7,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                2,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "retained_occurrences": 7,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 2,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 2,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "0"
+            },
+            "expected": {
+              "im": "0",
+              "re": "0"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(0)*log(6)/sqrt(6)",
+            "target": 6
+          },
+          "stage": "integrated",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 2,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "retained_occurrences": 2,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "1"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 3,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "1/3"
+            },
+            "expected": {
+              "im": "0",
+              "re": "1/3"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                3
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(1/3)*log(8)/sqrt(8)",
+            "target": 8
+          },
+          "stage": "integrated",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "-2/3"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 3,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "retained_occurrences": 3,
+            "target": 8
+          }
+        }
+      }
+    },
+    {
+      "N": 11,
+      "observed_before_propagation": null,
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "4"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "3"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": false,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": false,
+          "occurrences": 7,
+          "occurrences_by_depth": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "stage": "shadow",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 7,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                2,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "retained_occurrences": 7,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 2,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 2,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "0"
+            },
+            "expected": {
+              "im": "0",
+              "re": "0"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(0)*log(6)/sqrt(6)",
+            "target": 6
+          },
+          "stage": "integrated",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 2,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "retained_occurrences": 2,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "1"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 3,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "1/3"
+            },
+            "expected": {
+              "im": "0",
+              "re": "1/3"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                3
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(1/3)*log(8)/sqrt(8)",
+            "target": 8
+          },
+          "stage": "integrated",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "-2/3"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 3,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "retained_occurrences": 3,
+            "target": 8
+          }
+        }
+      }
+    },
+    {
+      "N": 12,
+      "observed_before_propagation": {
+        "coefficient_products_by_depth": [
+          [
+            2,
+            {
+              "im": "0",
+              "re": "4"
+            }
+          ],
+          [
+            3,
+            {
+              "im": "0",
+              "re": "3"
+            }
+          ]
+        ],
+        "complete": true,
+        "integrated": false,
+        "longest_history": 3,
+        "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+        "observed": true,
+        "occurrences": 7,
+        "occurrences_by_depth": [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "stage": "observed",
+        "target": 12,
+        "weight": {
+          "im": "0",
+          "re": "-1"
+        }
+      },
+      "targets": {
+        "12": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "4"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "3"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 7,
+          "occurrences_by_depth": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "0"
+            },
+            "expected": {
+              "im": "0",
+              "re": "0"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(0)*log(12)/sqrt(12)",
+            "target": 12
+          },
+          "stage": "integrated",
+          "target": 12,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 7,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                3
+              ],
+              [
+                2,
+                3,
+                2
+              ],
+              [
+                2,
+                6
+              ],
+              [
+                3,
+                2,
+                2
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                6,
+                2
+              ]
+            ],
+            "retained_occurrences": 7,
+            "target": 12
+          }
+        },
+        "6": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 2,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 2,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "0"
+            },
+            "expected": {
+              "im": "0",
+              "re": "0"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                1
+              ],
+              [
+                3,
+                1
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(0)*log(6)/sqrt(6)",
+            "target": 6
+          },
+          "stage": "integrated",
+          "target": 6,
+          "weight": {
+            "im": "0",
+            "re": "-1"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 2,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                2
+              ]
+            ],
+            "retained_occurrences": 2,
+            "target": 6
+          }
+        },
+        "8": {
+          "coefficient_products_by_depth": [
+            [
+              2,
+              {
+                "im": "0",
+                "re": "2"
+              }
+            ],
+            [
+              3,
+              {
+                "im": "0",
+                "re": "1"
+              }
+            ]
+          ],
+          "complete": true,
+          "integrated": true,
+          "longest_history": 3,
+          "meaning": "Dirichlet-log projection of retained structural paths, not an encounter",
+          "observed": true,
+          "occurrences": 3,
+          "occurrences_by_depth": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "source": {
+            "connected": {
+              "im": "0",
+              "re": "1/3"
+            },
+            "expected": {
+              "im": "0",
+              "re": "1/3"
+            },
+            "half_density": "1/2",
+            "log_degree": [
+              [
+                2,
+                3
+              ]
+            ],
+            "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+            "status": "consistent",
+            "symbolic_response": "(1/3)*log(8)/sqrt(8)",
+            "target": 8
+          },
+          "stage": "integrated",
+          "target": 8,
+          "weight": {
+            "im": "0",
+            "re": "-2/3"
+          },
+          "witnesses": {
+            "aggregate_complete": true,
+            "expanded": 3,
+            "expansion_complete": true,
+            "paths": [
+              [
+                2,
+                2,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "retained_occurrences": 3,
+            "target": 8
+          }
+        }
+      }
+    }
+  ],
+  "chi5_connected6": {
+    "connected": {
+      "im": "0",
+      "re": "0"
+    },
+    "expected": {
+      "im": "0",
+      "re": "0"
+    },
+    "half_density": "1/2",
+    "log_degree": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+    "status": "consistent",
+    "symbolic_response": "(0)*log(6)/sqrt(6)",
+    "target": 6
+  },
+  "conductor_growth": [
+    {
+      "born_conductors": [],
+      "enumeration_complete": true,
+      "horizon": 1,
+      "innovation_rank": 0,
+      "modulus": 1,
+      "old_modulus": 1,
+      "structural_only": true
+    },
+    {
+      "born_conductors": [
+        2
+      ],
+      "enumeration_complete": true,
+      "horizon": 2,
+      "innovation_rank": 1,
+      "modulus": 2,
+      "old_modulus": 1,
+      "structural_only": true
+    },
+    {
+      "born_conductors": [
+        3,
+        6
+      ],
+      "enumeration_complete": true,
+      "horizon": 3,
+      "innovation_rank": 4,
+      "modulus": 6,
+      "old_modulus": 2,
+      "structural_only": true
+    },
+    {
+      "born_conductors": [
+        4,
+        12
+      ],
+      "enumeration_complete": true,
+      "horizon": 4,
+      "innovation_rank": 6,
+      "modulus": 12,
+      "old_modulus": 6,
+      "structural_only": true
+    },
+    {
+      "born_conductors": [
+        5,
+        10,
+        15,
+        20,
+        30,
+        60
+      ],
+      "enumeration_complete": true,
+      "horizon": 5,
+      "innovation_rank": 48,
+      "modulus": 60,
+      "old_modulus": 12,
+      "structural_only": true
+    },
+    {
+      "born_conductors": [],
+      "enumeration_complete": true,
+      "horizon": 6,
+      "innovation_rank": 0,
+      "modulus": 60,
+      "old_modulus": 60,
+      "structural_only": true
+    },
+    {
+      "born_conductors": [
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        70,
+        84,
+        105,
+        140,
+        210,
+        420
+      ],
+      "enumeration_complete": true,
+      "horizon": 7,
+      "innovation_rank": 360,
+      "modulus": 420,
+      "old_modulus": 60,
+      "structural_only": true
+    },
+    {
+      "born_conductors": [
+        8,
+        24,
+        40,
+        56,
+        120,
+        168,
+        280,
+        840
+      ],
+      "enumeration_complete": true,
+      "horizon": 8,
+      "innovation_rank": 420,
+      "modulus": 840,
+      "old_modulus": 420,
+      "structural_only": true
+    },
+    {
+      "born_conductors": [
+        9,
+        18,
+        36,
+        45,
+        63,
+        72,
+        90,
+        126,
+        180,
+        252,
+        315,
+        360,
+        504,
+        630,
+        1260,
+        2520
+      ],
+      "enumeration_complete": true,
+      "horizon": 9,
+      "innovation_rank": 1680,
+      "modulus": 2520,
+      "old_modulus": 840,
+      "structural_only": true
+    }
+  ],
+  "fake6_connected": {
+    "connected": {
+      "im": "0",
+      "re": "1/7"
+    },
+    "expected": {
+      "im": "0",
+      "re": "0"
+    },
+    "half_density": "1/2",
+    "log_degree": [
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "scope": "coefficient-level degree-one source consistency, not Weil positivity",
+    "status": "mixed_composite_defect",
+    "symbolic_response": "(1/7)*log(6)/sqrt(6)",
+    "target": 6
+  },
+  "history_reconstruction": {
+    "forward_records": 25,
+    "journal_preserved": true,
+    "records_after_reversal": 50,
+    "restored_coordinate": [
+      "0"
+    ],
+    "verified": true
+  },
+  "lossy_view": {
+    "coordinate": [
+      "12"
+    ],
+    "frame": {
+      "domain": "natural",
+      "modulus": null,
+      "name": "N0",
+      "step": [
+        "1"
+      ]
+    },
+    "head_commitment": "228f01ac2faae6f2e613bcc96ba1cdae302415e89de8b0305e21341b784b2149",
+    "kind": "lossy_observation_window",
+    "lossless_reconstruction": false,
+    "phase": "ready",
+    "tick": 12,
+    "visible_events": [
+      {
+        "kind": "propagate",
+        "seq": 23
+      },
+      {
+        "kind": "step",
+        "seq": 24
+      },
+      {
+        "kind": "propagate",
+        "seq": 25
+      }
+    ]
+  },
+  "periodic_field": {
+    "coordinate": [
+      "0"
+    ],
+    "distinct_event_witnesses": {
+      "current": [
+        "0"
+      ],
+      "scope": "retained history only",
+      "unique_event": false,
+      "witnesses": [
+        {
+          "coordinate": [
+            "1"
+          ],
+          "record": 3,
+          "state_commitment": "7809a218710c5b987ad5c465517240b31b18e3b2c3baffe66aa531788b570f32",
+          "tick": 1
+        },
+        {
+          "coordinate": [
+            "1"
+          ],
+          "record": 7,
+          "state_commitment": "9fe746e0c24473b8b98ab6c7d2fceaba83748aa5e97e2e186b1b8bceaabcdbb4",
+          "tick": 3
+        }
+      ]
+    },
+    "tick": 4
+  },
+  "scope": "finite operational framework, not an RH proof or physical wave simulation"
+}

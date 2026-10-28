@@ -56,7 +56,10 @@ version also fails for many equality cases, for example the deletion
 the mistake belongs to the following prose. The dossier proves the needed
 one-deletion formula separately and includes the counterexample as a test.
 Whether the final published PDF changes this sentence remains a source
-comparison task, not a presumed correction.
+comparison task, not a presumed correction. The DOI resolved to the primary
+Project Euclid landing page, but its PDF endpoint returned an HTML security
+page, not a PDF. We therefore confine this textual correction to the fetched
+author version; the unavailable journal body is not claimed as read.
 
 ## Reproducibility and epistemic limits
 
