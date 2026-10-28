@@ -1,0 +1,12 @@
+# Operation Oily–Pólya–Carry: validation and provenance
+
+**As of 2026-10-28.** Execution environment: Python 3.13.5, `Fraction`, stdlib `unittest`; independent SymPy + mpmath optional oracles. **No complete SUCC checkout** in the local container (network restricted), so the test explicitly importing `observational_succ.bbp_natural_carrier` and `rank_two_chiral_towers` is SKIPPED here and is expected to run in GitHub CI. All original source comparisons in that test are source-faithful and have an independent direct partial-fraction identity test that already passes. No hosted CI outcome or Lean kernel proof is preclaimed in this receipt.
+
+- `PYTHONPATH=. python -m unittest discover -s tests -p 'test_*.py'` — **65 collected, 64 passed, 1 checkout-only skipped**. This staged overlay includes 35 inherited tests of PR #347's `origin_locked_oily_zeta` and `zeta_wavefront_regeneration` modules, copied byte-identically into the scratch validation worktree and **NOT re-committed**.
+- `PYTHONPATH=. python scripts/oily_prime_growth_independent_oracle.py` — PASS: 36 exact source-conditioned birth CDF identities, 12 Pólya-probability-vs-amplitude operator cases, symbolic SU2/Casimir, original signed four-pole rational forcing, strict `r(n)≤1/n²` certificate and 5/24 non-functoriality witness.
+- `PYTHONPATH=. python scripts/bbp_dirichlet_finite_part_oracle.py` — PASS: exact rational asymptotic coefficients/residue, partial fractions at eighths, digamma reduction to Euler gamma/pi/silver, 60-digit independent numerical agreement and elementary finite partial-sum tail bound.
+- `python -m compileall -q observational_succ tests scripts` — PASS.
+
+**New files only:** two exact finite modules, three new tests, two new symbolic oracles, full paper dossier, machine-readable local claim ledger, README, Codex Ultra execution handoff, oracle receipts, validation logs and SHA manifest. Existing docs/claims/imported source are NOT modified. Source passport pinned to Main XIII `observational_succ/rank_two_chiral_towers.py` Git blob `8305e09892f19007e0ae0538a60d05954b2def9e` and PR #347 commit `8345ce2854663b1c40924db5d4efe020bcad521c`.
+
+**Mathematical limitations:** no new signed normality result; no RH; no physical ℏ; no theorem that an optimal physical observer must implement Pólya; SU2 spin representation is classical; meromorphic continuation relies on the genuine rational forcing and standard zeta/digamma theory, not on new zero data. Scholarly priority and complete repo CI remain to be determined independently.
