@@ -19,7 +19,9 @@ jobs:
   test:
     name: Python ${{ matrix.python-version }} mathematical and epistemic checks
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    # The 9,677-test suite exceeded 25 minutes on the Python 3.10 hosted runner.
+    # Keep a finite allowance for the full suite and the source replays below.
+    timeout-minutes: 45
     strategy:
       fail-fast: false
       matrix:
