@@ -201,3 +201,25 @@ This makes the user's recursion-depth idea precise: with these declared response
 The continuum geometric-small-success scaling for m stages has Gamma(m) Laplace transform `(1+s)^-m`, but the actual Oily boundary stage probability is fixed at 1/2. Thus ``m stages => Gamma(m)`` is true only under the explicitly declared scaling limit, not for the fixed authenticated discrete packet law.
 
 **Claim status WEO-10:** paper-proved general time/depth recurrence with exact rational finite checks at m=1,...,6 and grades j=0,...,41. Source fidelity only at m=2; no signed Weyl or GR field equation follows.
+
+## 11. An exact Gamma-depth differential and depth-invariant Euler finite part
+
+This section is a **classical mathematical theorem** about the continuous-limit model, with one authentic Oily observation at depth two, not a proved claim about knowledge available to a physical wavefront tracker.
+
+Let `Y_m∼Gamma(m,1)` for positive integer observer depth m, as obtained by taking a *declared small-success scaling limit* of m independent geometric response stages. Differentiation of `Gamma(m+s)/Gamma(m)` at `s=0` gives its logarithmic mean
+
+`L_m=E[log Y_m]=psi(m)=H_(m-1)-gamma`.
+
+The classical Gamma functional equation `Gamma(z+1)=z Gamma(z)` gives `psi(z+1)-psi(z)=1/z`. Hence the all-depth **logarithmic observer differential** is
+
+**(WEO-11)** `L_(m+1)-L_m=1/m`.
+
+The renormalized finite part is depth invariant:
+
+`C_m=H_(m-1)-L_m=gamma` and `C_(m+1)-C_m=0` for every integer m≥1.
+
+Thus Euler–Mascheroni appears here as the exact *integration constant* of the same harmonic finite-difference law governing logarithmic Gamma-depth means. At authentic Oily endpoint order one the shape is m=2, so `L_2=1-gamma` is a genuinely source-supported limiting observable. To identify this with the E2 observer's **optimal Bayesian knowledge gap**, one must still build and validate an actual source-labelled conditional observer law. The m=1 Gamma law is a declared deflated comparison; m≥3 come from mathematical deformations rather than additional authenticated BBP loops.
+
+The earlier Oily mixed constant obeys the identity `phi^-1-gamma=phi^-1+L_2-1`. This is a valid *chosen joint centering*, not proof that the golden branching grammar and Gamma boundary are canonically coupled by a single observation map. In particular, not every uncertainty/causal horizon gives Euler's constant: independent one-bit innovations give one bit per depth, and deterministic frontiers give zero.
+
+**Status WEO-11:** CLASSICAL/PAPER-PROVED, checked against independent digamma identities; no observer-optimality or universal physical-defect claim.

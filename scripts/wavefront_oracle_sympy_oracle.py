@@ -40,4 +40,11 @@ for m in range(1,6):
     for j in range(9):
         assert s.simplify(tseries.coeff(z,j)-s.binomial(j+m-1,m-1)/2**(j+m))==0
 
+# Classical Gamma-depth finite-part/recurrence, independently of source module.
+for m in range(1,12):
+    L=s.digamma(m)
+    H=s.harmonic(m-1)
+    assert s.simplify(H-L-s.EulerGamma)==0
+    assert s.simplify(s.digamma(m+1)-L-s.Rational(1,m))==0
+
 print('WEO_INDEPENDENT_SYMPY_PASS: recurrence/discriminant/double pole/16 packets/10 z-series/Gamma-limit control')
