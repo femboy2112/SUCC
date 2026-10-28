@@ -52,17 +52,13 @@
     },
     {
       "path": "docs/CLAIM_SUPPLEMENT_APOLLO.md",
-      "registered_namespaces": [
-        "APOLLO_K"
-      ],
+      "registered_namespaces": [],
       "sha256": "c427dc0d6cd63c967a217b33a7af9754597863026f70762cd08fdafff3942f04",
       "title": "APOLLO: original signed Weil second/third jets, quadratic gauge and finite-window Krein source"
     },
     {
       "path": "docs/CLAIM_SUPPLEMENT_APOLLO_PRIME_DOMAIN.md",
-      "registered_namespaces": [
-        "APOLLO_PRIME_DOMAIN"
-      ],
+      "registered_namespaces": [],
       "sha256": "0a7b002c4251bcdf4f3f9f3dda883d65fb490ec4760fc135c46433254591ac52",
       "title": "APOLLO PRIME-ACTIVE domain certification — claim supplement"
     },
@@ -432,17 +428,13 @@
     },
     {
       "path": "docs/CLAIM_SUPPLEMENT_FULL_PRIME_RESOLVENT.md",
-      "registered_namespaces": [
-        "FULL_PRIME_RESOLVENT"
-      ],
+      "registered_namespaces": [],
       "sha256": "0576eee176b96b599b027376b1c65249bf0031c9445785434a696fe19925fbbb",
       "title": "Full prime-two inverse certificates (R2S)"
     },
     {
       "path": "docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md",
-      "registered_namespaces": [
-        "GAMMA_COMPLETION"
-      ],
+      "registered_namespaces": [],
       "sha256": "394614da9442ee238a07e5661dadd83b455178a54312fcc28c3d9666a2b76c2f",
       "title": "Claim supplement — original Gamma-completion Fredholm and quasi-RH boundary"
     },
@@ -695,17 +687,13 @@
     },
     {
       "path": "docs/CLAIM_SUPPLEMENT_OBSERVER_TATE_ATOM.md",
-      "registered_namespaces": [
-        "OBSERVER_TATE_ATOM"
-      ],
+      "registered_namespaces": [],
       "sha256": "4e70a5544492529cd7c65b0ce5700ac59d7bf17237dd96d46a105bf12031f4f8",
       "title": "Claim supplement: Observer/Tate ATOM finite-to-global"
     },
     {
       "path": "docs/CLAIM_SUPPLEMENT_ONE_OBJECT.md",
-      "registered_namespaces": [
-        "ONE_OBJECT"
-      ],
+      "registered_namespaces": [],
       "sha256": "1a9ead30e2478fb35279d163693f3bd041b9b8bb5f633a60f05d252e090307b9",
       "title": "ONE OBJECT source-gluing claim ledger — 2026-10-15"
     },
@@ -1216,9 +1204,7 @@
     },
     {
       "path": "docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md",
-      "registered_namespaces": [
-        "TATE_BESSEL_SEVEN_SCHUR"
-      ],
+      "registered_namespaces": [],
       "sha256": "9caf4c6400145bec88db334b419b389f5397ea25607fa4dbda3ebe128c54d700",
       "title": "Claim supplement — original Weil seven-moment positivity via spherical Bessel source"
     },
@@ -1273,9 +1259,7 @@
     },
     {
       "path": "docs/CLAIM_SUPPLEMENT_TATE_SOURCE_CONDUCTOR.md",
-      "registered_namespaces": [
-        "TATE_SOURCE_CONDUCTOR"
-      ],
+      "registered_namespaces": [],
       "sha256": "495b11037fc7a2ba664d53bfc6a1e76bd6954641ef0a09b8050661b39ecc49f5",
       "title": "Operation TATE — conductor and source-completion claim ledger"
     },
@@ -6566,62 +6550,62 @@
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "C-01",
-      "key": "C-01",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md::C-01",
       "line": 7,
-      "namespace": "GAMMA_COMPLETION",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md",
       "raw_table_row": "| C-01 | PAPER conditional + actual original source interval `(N+2)x(N+2)` Fredholm feature Gram `W=Phi*B_safe^-1Phi`, real OU `Dcell=-N(M+rho I)`, both poles +2,-2, contact and original prime2. Includes exact inherited positive infinite Gamma remainder | Source evaluator must run on live frozen source; no forged interval, cannot treat finite lower-Gram negativity as true negative |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "C-02",
-      "key": "C-02",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md::C-02",
       "line": 8,
-      "namespace": "GAMMA_COMPLETION",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md",
       "raw_table_row": "| C-02 | SOURCE-ADAPTER STRICT GATE: `J64` true five-mode rational test `6P1-10P3+4P5` must have strictly negative finite-Gamma upper | All six original signed same-parity entries, true one-Gamma_R and both poles, SHA pin, no zero inputs |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "C-03",
-      "key": "C-03",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md::C-03",
       "line": 9,
-      "namespace": "GAMMA_COMPLETION",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md",
       "raw_table_row": "| C-03 | PAPER analytic Gamma-tail lower on H01 endpoint-zero u, source gated C-02+strict full-positive combination. Exact norm `2136/77`, derivative `1296` | Endpoint-zero ESSENTIAL. Never reuse H01 derivative tail for u with nonzero trace; shifted weight mutant |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "C-04",
-      "key": "C-04",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md::C-04",
       "line": 10,
-      "namespace": "GAMMA_COMPLETION",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md",
       "raw_table_row": "| C-04 | CONDITIONAL QUASI-RH finite-PDS certificate *schema* across all rational radii | Universal source packet existence is **not proved** and is RH-hard; do not say two easy steps remain |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "C-05",
-      "key": "C-05",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md::C-05",
       "line": 11,
-      "namespace": "GAMMA_COMPLETION",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md",
       "raw_table_row": "| C-05 | EXACT finite synthetic signed inertia/Gram tests + hostile controls | Finite model is not original Weil. Compressed partial shift does not retain A³=A; positive polar remains load-bearing |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "C-06",
-      "key": "C-06",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md::C-06",
       "line": 20,
-      "namespace": "GAMMA_COMPLETION",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md",
       "raw_table_row": "| C-06 | SOURCE-GATED new 4D endpoint-zero subspace positive under the COMPLETE true Gamma tower by two exact 2x2 Loewner tail-corrected parity blocks | Original J64 6 entries per sector + exact norm/derivative matrices, positive determinant lower; does not assert all-space sign |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
@@ -17236,72 +17220,72 @@
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "B7-01",
-      "key": "B7-01",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md::B7-01",
       "line": 7,
-      "namespace": "TATE_BESSEL_SEVEN_SCHUR",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md",
       "raw_table_row": "| B7-01 | Original completed zeta Weil autocorrelation on compact test f equals real Γ OU Dirichlet energies minus contact, negative sinh polar, and only true n=2 symmetric prime shift, plus positive cosh polar | CLASSICAL / SHA SOURCE AUTHENTICATED APOLLO/PR110/DYSPON I | Finite-prime K2 is signed; no global sign |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "B7-08",
-      "key": "B7-08",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md::B7-08",
       "line": 10,
-      "namespace": "TATE_BESSEL_SEVEN_SCHUR",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md",
       "raw_table_row": "| B7-08 | Genuine source window a=1/2, moment m=7, Omega=49/4: exact L=20, K=10, eta=1/10000 rational Bessel method gives low Fourier mass <1/61 | PROVED EXACT Fraction inequality and analytic all-f projector | Cannot infer sign for m=6, whose same method is inconclusive |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "B7-09",
-      "key": "B7-09",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md::B7-09",
       "line": 11,
-      "namespace": "TATE_BESSEL_SEVEN_SCHUR",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md",
       "raw_table_row": "| B7-09 | Negative original sinh polar term after 7 true moments has norm <= \\(8(a/2)^{14}/(7!)²\\|f\\|² <10^{-4}\\|f\\|²\\) | PROVED Taylor/Cauchy + authenticated polar sign | The polar term is not deleted by convenience |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "B7-10",
-      "key": "B7-10",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md::B7-10",
       "line": 12,
-      "namespace": "TATE_BESSEL_SEVEN_SCHUR",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md",
       "raw_table_row": "| B7-10 | First 128 genuine real 4j+1 Gamma modes at Omega=49/4 have multiplier >3019/500 | PROVED EXACT original source coefficient Fraction sum | Missing Gamma modes positive; do not replace by another parity |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "B7-11",
-      "key": "B7-11",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md::B7-11",
       "line": 13,
-      "namespace": "TATE_BESSEL_SEVEN_SCHUR",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md",
       "raw_table_row": "| B7-11 | **ALL nonzero complex smooth compact original Weil tests** on (-1/2,1/2) with seven vanishing polynomial moments obey \\(Q_\\zeta(f) > (38989/610000)\\|f\\|²>(1/16)\\|f\\|²\\) | PROVED ANALYTIC true Weil first-prime high test sector | Full first-prime all-test sign not inferred |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "B7-12",
-      "key": "B7-12",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md::B7-12",
       "line": 14,
-      "namespace": "TATE_BESSEL_SEVEN_SCHUR",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md",
       "raw_table_row": "| B7-12 | Actual Suzuki compact signed derivative operator high complement to P1..P7 obeys \\(Q_7GQ_7\\succeq(1/16)Q_7KQ_7\\), \\(K=V^*V=(-\\Delta_N)^{-1}\\) | PROVED ANALYTIC original kernel primitive/source Legendre transport | This is a positive relative K bound, not an impossible \\(cI\\) L² compact gap |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "B7-13",
-      "key": "B7-13",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md::B7-13",
       "line": 15,
-      "namespace": "TATE_BESSEL_SEVEN_SCHUR",
+      "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md",
       "raw_table_row": "| B7-13 | Genuine zero-shift cross resolvent \\(0\\preceq R_0\\prec121/100\\,I_7\\) using PR109 \\(\\|g'\\|_1<11/40\\); unknown original low short is 7×7, 4+3 parity | PROVED ANALYTIC source variational comparison | Actual \\(A-R_0\\) sign unknown; no global RH |",
-      "registered": true
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
@@ -20237,8 +20221,8 @@
   "coverage": {
     "claim_rows_found": 1876,
     "claim_supplements_scanned": 185,
-    "registered_claim_rows": 1876,
-    "registered_namespace_count": 184,
+    "registered_claim_rows": 1863,
+    "registered_namespace_count": 176,
     "source_documents_found": 7179
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
@@ -63321,11 +63305,32 @@
     }
   ],
   "warnings": [
+    "NO EXACT NAMESPACE for B7-01 at docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md:7",
+    "NO EXACT NAMESPACE for B7-08 at docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md:10",
+    "NO EXACT NAMESPACE for B7-09 at docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md:11",
+    "NO EXACT NAMESPACE for B7-10 at docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md:12",
+    "NO EXACT NAMESPACE for B7-11 at docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md:13",
+    "NO EXACT NAMESPACE for B7-12 at docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md:14",
+    "NO EXACT NAMESPACE for B7-13 at docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md:15",
+    "NO EXACT NAMESPACE for C-01 at docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md:7",
+    "NO EXACT NAMESPACE for C-02 at docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md:8",
+    "NO EXACT NAMESPACE for C-03 at docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md:9",
+    "NO EXACT NAMESPACE for C-04 at docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md:10",
+    "NO EXACT NAMESPACE for C-05 at docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md:11",
+    "NO EXACT NAMESPACE for C-06 at docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md:20",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_APOLLO.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_APOLLO_PRIME_DOMAIN.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_EFFECTIVE_TATE_GATES.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_EMPIRICAL_CARRIER.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_FULL_PRIME_RESOLVENT.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_META_CONTOUR.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_OBSERVER_TATE_ATOM.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_ONE_OBJECT.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_SUZUKI_FIRST_PRIME.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_TATE_SOURCE_CONDUCTOR.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_YEAN_PROOF_OPERATORS.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_ZERO_CENTERED_ARCH.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_ZERO_CENTERED_FUCC.md",
