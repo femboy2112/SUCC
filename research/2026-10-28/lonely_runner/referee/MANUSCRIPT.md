@@ -78,6 +78,15 @@ both removals are upper-half. Its interfaces were inspected but its complete
 proof was not replayed locally. The present proof does not depend on it.
 General geometric finite-checking results [5,6] provide broader context;
 they do not directly yield the unconditional bound (1) for this source family.
+
+Kravitz [7, Proposition 8.1 and Lemma 8.4] gives quantitative bounds for
+adding one very fast runner, using safe intervals and rational optimal-time
+denominators. This general fast-runner mechanism is known. Lemma 7 records
+the actual source-band labels, at most one exceeding $n-1$, to obtain
+$w_2\le2(n-1)w_1$. The unrestricted quadratic bound in $n$ additionally
+requires the one-insertion-hole theorem and the arithmetic estimates for
+the two-deletion source.
+
 Academic priority of the unrestricted consequence in Theorem 1 remains under
 review. No general Lonely Runner Conjecture or classification for all $n$
 is asserted.
@@ -552,3 +561,6 @@ for three or more modifications are not established here.
    is enough for the Lonely Runner Conjecture and some of its variants*,
    Forum Math. Sigma **13** (2025), e164.
    [DOI](https://doi.org/10.1017/fms.2025.10107).
+7. N. Kravitz, *Barely lonely runners and very lonely runners*,
+   [arXiv:1912.06034v1](https://arxiv.org/pdf/1912.06034v1),
+   12 December 2019, pp. 13--15.

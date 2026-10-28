@@ -104,6 +104,19 @@ has additional hypotheses. Neither inspected statement is the present
 unconditional bound for every vector in the fixed two-entry family.
 Finite checking itself is established methodology.
 
+## Fast-runner perturbation is established
+
+[Kravitz, arXiv:1912.06034v1](https://arxiv.org/pdf/1912.06034v1),
+12 December 2019, pp. 13--15, is direct methodological prior.
+Proposition 8.1 preserves loneliness at least `L-epsilon` after adding
+a speed at least `((L-epsilon)/epsilon)*v`, where `v` is the previous
+maximum speed and `0<epsilon<L`. Lemma 8.4 gives cutoff `v*(2v-1)`
+at threshold `1/m`, assuming the prefix exceeds `1/m` and there are
+`m` final moving speeds. This is quadratic in `v`; our Lemma 7 uses
+source endpoint labels to obtain `2(n-1)*w1`. The shared mechanism
+is known. The [bounded search receipt](receipts/priority-final.json)
+records four primary-source comparisons; it supplies no novelty certification.
+
 ## Bounded search and final scope
 
 Fresh searches included the exact paper title and queries for two-entry

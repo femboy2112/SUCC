@@ -1,0 +1,120 @@
+{
+  "schema": "succ.external.bounded-priority-check.v1",
+  "created_at_utc": "2026-10-28T22:43:46.134915+00:00",
+  "agent": "/root/signed_obstruction",
+  "status": "bounded_primary_source_check_no_verdict_changing_source_found",
+  "novelty_status": "UNVERIFIED: absence from these searches is not academic novelty certification",
+  "target": {
+    "family": "n>=5, S={1,...,n-1}\\{r1,r2}, 1<=r1<r2<n, n<=w1<w2, all phases zero",
+    "hypothesis": "max_t min_{v in S union {w1,w2}} ||v*t|| <= 1/n",
+    "conclusion": "w2 < 28*n^2",
+    "scope": "All deletion positions; no primitive-gcd hypothesis; cover hypothesis includes strict counterexamples and equality."
+  },
+  "exact_searches": [
+    "Giri Kravitz \"structure of Lonely Runner spectra\" \"large\" \"speeds\"",
+    "\"lonely runner\" \"fastest\" \"quadratic\"",
+    "\"lonely runner\" \"two\" \"inserted\" \"bound\" -site:mathaudit.org -site:arxiv.symmetricfunctions.com",
+    "Noah Kravitz Barely lonely runners very lonely runners arxiv fastest speed theorem 8.2",
+    "Jain Kravitz Relative Lonely Runner spectra effective bound fixed speeds theorem 2025"
+  ],
+  "method": "Five focused fresh web searches, then primary-source theorem/proof reading. No general web-source paraphrase was accepted as a substitute for the primary statement. Exact inspected locations and scope comparisons are below.",
+  "sources": [
+    {
+      "key": "kravitz_2019",
+      "url": "https://arxiv.org/pdf/1912.06034",
+      "version": "arXiv:1912.06034v1, 12 December 2019",
+      "title": "Barely lonely runners and very lonely runners",
+      "author": "Noah Kravitz",
+      "read_locations": [
+        "Section 8, Proposition 8.1, pp. 13–14",
+        "Section 8, Lemmas 8.4 and 8.5, pp. 14–15"
+      ],
+      "statement": "Proposition 8.1: if a prefix with largest speed v has loneliness at least L, adding a speed at least ((L-epsilon)/epsilon)*v leaves loneliness at least L-epsilon. Lemma 8.4: for m final moving speeds and prefix loneliness greater than 1/m, a new speed at least v*(2*v-1) yields loneliness at least 1/m. Lemma 8.5 gives a linear-in-v cutoff under the preceding-dimensional Spectrum Conjecture.",
+      "comparison": "The quadratic cutoff is in the previous largest speed, not the runner-count parameter. In our target there are n-1 moving speeds and the proved prefix margin is above 1/n, which does not supply the printed Lemma 8.4 premise above 1/(n-1). Proposition 8.1 can be adapted at threshold 1/n, but this alone does not supply a uniform O(n^2) bound for arbitrary two deletions; prefix margins or the new source-specific geometry remain necessary. Its non-strict conclusion also requires care for a target cover at equality. This is clear methodological prior and should not be presented as a new fast-runner principle.",
+      "download": {
+        "status": "ok",
+        "resolved_url": "https://arxiv.org/pdf/1912.06034",
+        "bytes": 315022,
+        "sha256": "cc544f1a2124d73ae5a58895aba0cec7664236143bec872f00dbb54c5f7e19d0"
+      }
+    },
+    {
+      "key": "giri_kravitz_2026",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6C8CF8635B7AD8470B1A0104914BA041/S0305004125101497a.pdf/div-class-title-the-structure-of-lonely-runner-spectra-div.pdf",
+      "version": "Math. Proc. Cambridge Philos. Soc. 180 (2026), 343–361; first published online 24 October 2025; DOI 10.1017/S0305004125101497",
+      "title": "The structure of Lonely Runner spectra",
+      "authors": [
+        "Vikram Giri",
+        "Noah Kravitz"
+      ],
+      "read_locations": [
+        "Section 1.6",
+        "Section 7, geometric finite-checking argument",
+        "Section 9, tight instances remarks"
+      ],
+      "statement": "A geometric argument gives an explicit finite checking bound for the general Lonely Runner Conjecture, conditional on the preceding dimension; the displayed sufficient volume threshold uses epsilon=1/(m*(m+1)) and the volume of the (m-1)-dimensional unit ball. The stated growth bound is below m^((5/2)*m).",
+      "comparison": "This is a general conditional finite checking result, not an unconditional quadratic bound in n for every cover obtained by replacing two entries of [n-1]. Qualitative finiteness and finite multiplicity do not supply the claimed family-specific exponent or constants.",
+      "download": {
+        "status": "ok",
+        "resolved_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/6C8CF8635B7AD8470B1A0104914BA041/S0305004125101497a.pdf/div-class-title-the-structure-of-lonely-runner-spectra-div.pdf",
+        "bytes": 308648,
+        "sha256": "c1e7bd2510e5e6557a804d384c94f2d14e09f8f1b4b0a3d72ce2640f2b7c72e0"
+      }
+    },
+    {
+      "key": "jain_kravitz_2024",
+      "url": "https://arxiv.org/html/2411.12684v2",
+      "version": "arXiv:2411.12684v2, 9 December 2024; published Combinatorial Theory 6(1) (2026), paper 1",
+      "title": "Relative Lonely Runner spectra",
+      "authors": [
+        "Vanshika Jain",
+        "Noah Kravitz"
+      ],
+      "read_locations": [
+        "Theorem 1.1",
+        "Sections 1.2 and 1.3"
+      ],
+      "statement": "For a fixed proper two-dimensional subtorus, the relative one-dimensional spectrum differs by finitely many elements from a finite union of rational arithmetic-progression reciprocal families above its base distance.",
+      "comparison": "This is a fixed-subtorus structural description with finite exceptional sets, not an explicit uniform runner-count quadratic cutoff for our arbitrary two inserted speeds. Allowing both insertions independently along with the retained baseline direction naturally gives three generating directions, so the two-dimensional theorem does not directly settle the whole target family.",
+      "download": {
+        "status": "ok",
+        "resolved_url": "https://arxiv.org/html/2411.12684v2",
+        "bytes": 1531289,
+        "sha256": "76c3440a115813a6d139968e2f346b1865b5f5e1a3a19272c729136668f97374"
+      }
+    },
+    {
+      "key": "cordella_2026",
+      "url": "https://arxiv.org/html/2609.03444v2",
+      "version": "arXiv:2609.03444v2, 8 September 2026",
+      "title": "Odd denominators in the Lonely Runner spectrum for six speeds",
+      "author": "Francesco Cordella",
+      "read_locations": [
+        "Theorem 5.3",
+        "Questions 6.6 and 6.7",
+        "Introduction and source metadata"
+      ],
+      "statement": "Theorem 5.3 gives maximum speed below 3q on the specified six-speed critical subtorus U_C for near-tight primitive tuples with reduced loneliness denominator q. Question 6.6 asks about a universal six-speed 3q bound and discusses general bounds with dimension-dependent C(m), finite exceptions, and lower-dimensional LRC assumptions.",
+      "comparison": "The theorem is fixed dimension and a specified subtorus, while the general discussion retains conditional assumptions, unspecified dimension dependence, or finite exceptions. It does not immediately yield the unrestricted two-deletion O(n^2) cutoff for all n.",
+      "download": {
+        "status": "ok",
+        "resolved_url": "https://arxiv.org/html/2609.03444v2",
+        "bytes": 563763,
+        "sha256": "b4a3a2bdab8875020b67984c12cd94a9d98b4aad71dbb3fd7857bc78b3af0449"
+      }
+    }
+  ],
+  "conclusion": "No inspected primary statement directly implies the unrestricted two-entry quadratic bound in the runner-count parameter. Kravitz Proposition 8.1 is direct methodological prior for fast-runner perturbation; Lemma 8.4 is a true quadratic bound in a different parameter with a different threshold premise. The repository must retain its scoped and unverified academic-priority status.",
+  "limitations": [
+    "Bounded search only; no claim of exhaustive literature coverage.",
+    "Primary papers were inspected, not independently re-proved or fully kernel-replayed in this priority task.",
+    "The comparison does not claim that a deeper synthesis of all existing literature could not imply the result.",
+    "Search-engine indexing and current access may miss relevant work.",
+    "Earlier Zhang, Goddyn–Wong, Liu, and accepted upper-half task audits were not repeated in this final probe."
+  ],
+  "repository_state": {
+    "policy": "Frozen sources left untouched; no repository files edited; no commits; no authors contacted.",
+    "receipt_location": "/media/leah/SPANKBANK/SUCCYBOI/lonely-referee-validation/priority-final.json"
+  },
+  "evidence_independence": "Same-model research subagent source audit; not an external peer-review witness."
+}
