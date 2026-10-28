@@ -1,0 +1,26 @@
+{
+  "authority": "finite exact rational diagnostics; no infinite normality proof",
+  "certified_rank_transport_bounds": {
+    "N100-q(3, 5)-width(5, 3)": {
+      "denominator": 750,
+      "numerator": 157
+    },
+    "N100-q(3, 5, 7)-width(3, 3, 2)": {
+      "denominator": 900,
+      "numerator": 167
+    },
+    "N100-q(3,)-width(5,)": {
+      "denominator": 25,
+      "numerator": 2
+    }
+  },
+  "exact_flat_square_checks": 1428,
+  "exact_green_checks": 45,
+  "source_checks": 150,
+  "status": "PASS",
+  "trace_countermodel": {
+    "rank1_slice": 1,
+    "rank2_average": 0,
+    "transverse_defect": 1
+  }
+}
