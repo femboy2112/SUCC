@@ -1,0 +1,261 @@
+{
+  "CRT_complete_periods": [
+    {
+      "hex_depth": 1,
+      "joint_period": 48,
+      "ternary_depth": 1,
+      "unique_pairs": 48,
+      "zero_seed_cleared_three": 1,
+      "zero_seed_two": 0
+    },
+    {
+      "hex_depth": 1,
+      "joint_period": 144,
+      "ternary_depth": 2,
+      "unique_pairs": 144,
+      "zero_seed_cleared_three": 7,
+      "zero_seed_two": 0
+    },
+    {
+      "hex_depth": 2,
+      "joint_period": 768,
+      "ternary_depth": 1,
+      "unique_pairs": 768,
+      "zero_seed_cleared_three": 1,
+      "zero_seed_two": 0
+    },
+    {
+      "hex_depth": 2,
+      "joint_period": 2304,
+      "ternary_depth": 2,
+      "unique_pairs": 2304,
+      "zero_seed_cleared_three": 7,
+      "zero_seed_two": 0
+    }
+  ],
+  "authority": {
+    "Riemann_Hypothesis_proved": false,
+    "combined_native_suite_checked_here": false,
+    "current_infinite_analytic_claims_are_paper_proofs": true,
+    "local_focus_is_solely_tests": true,
+    "new_lean_kernel_checked": false,
+    "parent_infinite_zero_boundary_is_paper_proof": true,
+    "real_pi_normality_proved": false
+  },
+  "binary_gates_anf_masks": {
+    "0": [],
+    "1": [],
+    "2": [
+      2
+    ],
+    "3": [
+      2,
+      4,
+      6
+    ],
+    "4": [
+      2,
+      3,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "5": [
+      1,
+      2,
+      3,
+      7,
+      10,
+      12,
+      14,
+      16,
+      18,
+      19,
+      22,
+      24,
+      26,
+      28,
+      30
+    ],
+    "6": [
+      1,
+      2,
+      7,
+      8,
+      13,
+      17,
+      18,
+      19,
+      24,
+      25,
+      26,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      39,
+      42,
+      44,
+      46,
+      48,
+      50,
+      51,
+      54,
+      56,
+      58,
+      60,
+      62
+    ]
+  },
+  "cleared_numerator_0_to_4": [
+    16,
+    47,
+    318,
+    829,
+    1580
+  ],
+  "controls": {
+    "mod32_reflection_extrapolation_refuted": true,
+    "scaled_numerator_is_3adic_isometry_refuted": true,
+    "threeadic_weighted_past_convergence_refuted": true,
+    "triple_mod3_coherence_persists_mod9_refuted": true
+  },
+  "first_hex_permutation": [
+    0,
+    1,
+    14,
+    15,
+    12,
+    13,
+    10,
+    11,
+    8,
+    9,
+    6,
+    7,
+    4,
+    5,
+    2,
+    3
+  ],
+  "four_signed_rational_residues": [
+    [
+      "1/2",
+      "-1/4"
+    ],
+    [
+      "1/4",
+      "-1/8"
+    ],
+    [
+      "7/8",
+      "1/2"
+    ],
+    [
+      "3/8",
+      "-1/8"
+    ]
+  ],
+  "hashed_files": {
+    "observational_succ/bbp_binwindow_conjugacy.py": "91913f0e8793abb8cb7dfb3594b75d48b9e1a0f418d986077f2ffddc4de9d677",
+    "observational_succ/bbp_primal_recursive_geometry.py": "dc7ec09d2c353f4932b216eff3b57d6bb03a57b815b697eff68656f7247b5cf8",
+    "tests/test_bbp_primal_recursive_geometry.py": "e7f6936d50a017528fd78fac9a59c8ee5c33b7941dc47bba71eb2e3e320fb07e"
+  },
+  "mod32_reflection_counterexample": {
+    "phi_phi_x": 18,
+    "phi_x": 30,
+    "x": 2
+  },
+  "parent": "PR 321 eeb2a48ea1b43967ea385009a3f8ec280b2efa69",
+  "residues_signed_sum": "0",
+  "schema": "bbp-primal-recursive-source-v1",
+  "source": "authentic Coherent Main X four signed poles, zero seed",
+  "ternary_trident_lift_roots": {
+    "1": [
+      2,
+      2,
+      2
+    ],
+    "2": [
+      8,
+      5,
+      2
+    ],
+    "3": [
+      17,
+      14,
+      11
+    ],
+    "4": [
+      44,
+      41,
+      11
+    ],
+    "6": [
+      530,
+      365,
+      92
+    ]
+  },
+  "three_adic_unbounded_subsequence_at_zero": [
+    {
+      "center": 0,
+      "convergent_three_adic_past": false,
+      "depth": 1,
+      "pole_distance_valuation_at_least": 1,
+      "positive_age": 3,
+      "source_term_valuation": -3,
+      "weighted_term_valuation": -3
+    },
+    {
+      "center": 0,
+      "convergent_three_adic_past": false,
+      "depth": 2,
+      "pole_distance_valuation_at_least": 2,
+      "positive_age": 12,
+      "source_term_valuation": -2,
+      "weighted_term_valuation": -2
+    },
+    {
+      "center": 0,
+      "convergent_three_adic_past": false,
+      "depth": 3,
+      "pole_distance_valuation_at_least": 3,
+      "positive_age": 30,
+      "source_term_valuation": -5,
+      "weighted_term_valuation": -5
+    },
+    {
+      "center": 0,
+      "convergent_three_adic_past": false,
+      "depth": 5,
+      "pole_distance_valuation_at_least": 5,
+      "positive_age": 273,
+      "source_term_valuation": -7,
+      "weighted_term_valuation": -7
+    },
+    {
+      "center": 0,
+      "convergent_three_adic_past": false,
+      "depth": 7,
+      "pole_distance_valuation_at_least": 7,
+      "positive_age": 2460,
+      "source_term_valuation": -9,
+      "weighted_term_valuation": -9
+    },
+    {
+      "center": 0,
+      "convergent_three_adic_past": false,
+      "depth": 9,
+      "pole_distance_valuation_at_least": 9,
+      "positive_age": 22143,
+      "source_term_valuation": -11,
+      "weighted_term_valuation": -11
+    }
+  ]
+}

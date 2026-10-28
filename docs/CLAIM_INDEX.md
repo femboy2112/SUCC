@@ -1,5 +1,22 @@
 # Claim Index
 
+**2026-10-27 periodic-observer and moving-lag continuation on #317:**
+[scoped claims](CLAIM_SUPPLEMENT_CARRY_DEFECT.md) ·
+[proof synthesis](../research/2026-10-27/CARRY_DEFECT_SYNTHESIS.md).
+The selected logarithmic loss now holds simultaneously against all periodic
+unit templates and arbitrary moving mixed-lag tuples in a prescribed
+sublinear-span schedule. Complete infinite-tail cost is independent of lag
+order. Exact carry-count and signed Green instruments have explicit limits.
+The order and uncomputed onset remain unchanged; π normality remains open.
+
+**2026-10-27 Global Signed continuation on #316:**
+[scoped claims](CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md) ·
+[proof synthesis](../research/2026-10-27/GLOBAL_SIGNED_SYNTHESIS.md).
+The selected logarithmic-loss coefficient improves from $1/29$ to $1/14$,
+with unchanged order and uncomputed onset. Effective moving-band losses and
+an infinite authentic-prime Galois/selected separation narrow two other
+routes. Thirteen finite Lean declarations are checked. π normality is open.
+
 **2026-10-26 selected inverse-branch continuation on #312:**
 [scoped local claims](CLAIM_SUPPLEMENT_SELECTED_BRANCH.md) ·
 [proof synthesis](../research/2026-10-26/SELECTED_BRANCH_SYNTHESIS.md).

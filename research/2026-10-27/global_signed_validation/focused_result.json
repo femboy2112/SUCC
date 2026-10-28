@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-global-signed/.venv/bin/python",
+    "-m",
+    "unittest",
+    "tests.test_global_branch_coercivity",
+    "tests.test_global_source_curvature",
+    "tests.test_global_prime_resonance",
+    "tests.test_wtf_global_calibration",
+    "-v"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-global-signed",
+  "started_utc": "2026-10-27T02:54:57.490257+00:00",
+  "seconds": 3.729,
+  "exit_code": 0,
+  "production_test_sources_unchanged": true,
+  "source_count": 1289,
+  "log": "focused.log",
+  "log_sha256": "d38c886f131105166f6e7ee0687fd76b9794967255cb267463bf6d2835837161"
+}

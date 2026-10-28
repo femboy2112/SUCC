@@ -238,6 +238,64 @@ records the new literal-carry and cumulant constructions and their limits.
 
 ## Selected inverse-branch gate — actual carry/arrival comparison (#312 continuation)
 
+**Stronger observer scope (continuation of #317, 2026-10-27 UTC).**
+Let $P(E)=\prod_i(E^{\ell_i}-1)$, $d=\sum_i\ell_i$. For fixed $h\ne0$
+and $0<\delta<1$, uniformly over all periods and lag tuples with
+$p+d\le N^\delta$, the original zero-selected source satisfies
+
+$$
+\sum_{a=0}^{p-1}\left|\sum_{\substack{1\le n\le N\\n\equiv a\pmod p}}
+e(hP(E)U_n)\right|
+\le N-\frac{1-\delta}{14}\log_8N+O_h(1).
+$$
+
+This is **PAPER-PROVED** with the classical irrationality-measure input.
+The full [joint theorem](../research/2026-10-27/MIXED_LAG_PERIODIC_COERCIVITY.md)
+gives all-$N$ schedules, one universal uncomputed onset, and the complete
+future comparison debt $11|h|/(112M)$, independent of lag order and span.
+It also permits independently optimizing the periodic observer on each
+eligible block. The proof retains the actual zero selector and the rational
+periodic-branch denominator $|hP(16)|(16^p-1)16^m$.
+
+This strengthens uniformity, not the logarithmic order. Sublinear signed
+cancellation, conditional branch-energy decay and π normality remain **OPEN**.
+The next source arithmetic must force growing within-block loss or signed
+cross-block saving. The new exact carry-count/Green instruments do not
+prove that growth; their quadratic version has a proved $2L/3$ loss ceiling.
+See the [scoped authority ledger](CLAIM_SUPPLEMENT_CARRY_DEFECT.md).
+
+**Latest selected signed advance (Global Signed, 2026-10-27 UTC).** The
+[whole-block theorem](../research/2026-10-27/GLOBAL_BRANCH_COERCIVITY.md)
+improves #311's coefficient from $1/29$ to $1/14$: one universal,
+uncomputed $J_2\ge4$ gives, for every $N\ge1$ and integer $h\ne0$,
+
+$$
+|S_N^U(h)|\le N-\frac1{14}
+\max\left(0,\lfloor\log_8N\rfloor-
+\max(J_2,1+\lceil\log_{64}|h|\rceil)\right).
+$$
+
+The new inequality finds a quiet transition using the entire block's energy,
+then uses the original zero-selected Green identity and classical
+irrationality measure. **PAPER-PROVED; same logarithmic absolute-loss order;
+no numerical onset or normality proof.** The generic constant-branch method
+has a boundary-excursion ceiling $1-\cos(\pi/8)$.
+
+The round also proves effective signed losses on quadratic and cubic moving
+frequency bands. The same-forcing $V_n=-T_n$ has uniformly bounded full
+cubic-band sums but fixed Fourier means tending to one. Authentic short
+first-prime windows have vanishing Galois-averaged matrix excess and maximal
+selected component reinforcement; their full sum differs from its complete
+complement by at most $28|h|/(15\sqrt p)$. Neither observation substitutes
+for the selected fixed-mode gate.
+
+The missing arithmetic must force growing loss inside growing authentic
+blocks or control their signed combination, retaining the zero selector and
+full complementary phases. See the
+[synthesis](../research/2026-10-27/GLOBAL_SIGNED_SYNTHESIS.md) and
+[GS-1–GS-9](CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md). The decay obligation below
+remains **OPEN**.
+
 This continuation is based on #312 at
 `0c306a889f425418c29cbea3193205fb80c0575e`, with the carry/packet construction
 of sibling #311 inspected at `a34c4484059e667202b97d5ab4102560987b1406`.
