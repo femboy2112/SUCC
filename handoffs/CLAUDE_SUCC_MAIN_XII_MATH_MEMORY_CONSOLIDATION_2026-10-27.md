@@ -2,7 +2,7 @@
 
 **EXECUTION DIRECTIVE, NOT ROADMAP ONLY.** Repo https://github.com/femboy2112/SUCC . User requests comprehensive mathematical consolidation and a coherent reviewed merge to main. You may merge only after source integrity, mathematical consistency, regression tests and hosted CI pass. Do NOT release/tag, force-push, rewrite frozen archives, erase old proof contracts, or delete active parallel research branches.
 
-Research seed: research/math-memory-farey-gauss-consolidation-2026-10-27, based on main observed at 6dd80730c3575d91f746546a25da5aedbd2e2737. Verify live refs. Read docs/math_memory/START_HERE.md and research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md. The user also receives a ZIP with tested 23-node/25-edge memory graph, a deterministic catalog builder, validators, a Farey/Gauss rational certificate and 14 passing isolated tests. Import exactly those files, compare hashes and rerun them inside SUCC.
+Research seed: research/math-memory-farey-gauss-consolidation-2026-10-27, based on main observed at 6dd80730c3575d91f746546a25da5aedbd2e2737. Verify live refs. Read docs/math_memory/START_HERE.md and research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md. This branch includes a 23-node/25-edge math-memory graph, deterministic catalog builder, validators, Farey/Gauss rational oracle and focused tests. The Python sources are byte-matched to the locally tested 14-test suite. Rerun the native full SUCC suite and record true hosted CI before merge.
 
 ## Gate 0 — Recover actual state and authority
 
