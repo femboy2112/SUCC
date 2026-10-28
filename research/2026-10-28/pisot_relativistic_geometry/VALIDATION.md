@@ -4,9 +4,9 @@
 
 ## Actually executed in isolated local stage
 
-- `PYTHONPATH=<stage> python -m unittest -v tests.test_hopf_source tests.test_pisot_hopf_arithmetic_relativity tests.test_pisot_fixed_point_recovered tests.test_hopf_main_source_bridge`: **55 tests collected, 53 passed, two intentionally skipped** because local scratch contains only staged additions and not the complete SUCC package. Details in [`validation_receipts/VALIDATION_TESTS.log`](validation_receipts/VALIDATION_TESTS.log).
+- `PYTHONPATH=<stage> python -m unittest -v tests.test_hopf_source tests.test_pisot_hopf_arithmetic_relativity tests.test_pisot_fixed_point_recovered tests.test_hopf_main_source_bridge`: **57 tests collected, 55 passed, two intentionally skipped** because local scratch contains only staged additions and not the complete SUCC package. Details in [`validation_receipts/VALIDATION_TESTS.log`](validation_receipts/VALIDATION_TESTS.log).
 - `python scripts/pisot_rank_four_certificate.py`: PASS exactly over finite field F5 (irreducibility criterion). [`VALIDATION_PISOT.log`](validation_receipts/VALIDATION_PISOT.log).
-- `python scripts/arithmetic_relativity_sympy_oracle.py`: PASS. Distinct SymPy symbolic implementation of mixed harmonic square and curvature at a source-plane origin. [`VALIDATION_SYMPY.log`](validation_receipts/VALIDATION_SYMPY.log).
+- `python scripts/arithmetic_relativity_sympy_oracle.py`: PASS. Distinct SymPy symbolic implementation of mixed harmonic square and curvature at a source-plane origin plus exact T/J Bargmann quaternion. [`VALIDATION_SYMPY.log`](validation_receipts/VALIDATION_SYMPY.log).
 - `sha256sum -c research/2026-10-28/hopf_local_archive/SHA256SUMS.txt`: PASS for original 14 manifest-listed text files. [`VALIDATION_ARCHIVE_SHA.log`](validation_receipts/VALIDATION_ARCHIVE_SHA.log).
 - `python -m compileall -q observational_succ tests scripts`: PASS in local staging.
 - An initial Fibonacci test incorrectly used F25 while asserting an F24 asymptotic. It failed, was corrected to F24, then entire suite reran successfully. Original tests and failures are not falsely counted as successful runs.

@@ -13,7 +13,7 @@ from fractions import Fraction as F
 from functools import lru_cache
 
 from .hopf_source_exact import (H, ONE, ZERO, SOURCE_ORIGIN, t_step, t_iter,
-                                original_forcing, unwrapped_zero_seed)
+                                original_forcing, unwrapped_zero_seed, j_chirality)
 
 
 def _positive_integer(n: int, field: str, *, at_least: int = 1) -> int:
@@ -223,3 +223,50 @@ def zero_seed_compact_clock(n: int) -> F:
 def zero_seed_compact_clock_tick(n: int)->F:
     _positive_integer(n,"n")
     return original_forcing(n)/F(16**n)
+
+
+def authenticated_chiral_square(n:int)->tuple[H,H,H,H]:
+    """Closed T/J source square q_n, Tq_n, JTq_n, Jq_n.
+
+    It is a declared chiral-carrier probe, not the selected real BBP U_n.
+    T and J commute by exact source identities.
+    """
+    _positive_integer(n,"n",at_least=0)
+    if n>200:raise ValueError("finite test horizon 0..200")
+    x=t_iter(SOURCE_ORIGIN,n)
+    tx=t_step(x)
+    jx=j_chirality(x)
+    jtx=j_chirality(tx)
+    if t_step(jx)!=jtx:raise ValueError("source chirality square did not close")
+    return x,tx,jtx,jx
+
+
+def authenticated_chiral_bargmann(n:int)->H:
+    """Exact quaternionic ordered-overlap product along closed T/J square.
+
+    The normalised unit quaternion Ω/||Ω|| is defined if Ω nonzero, and
+    changes by base-point conjugation under a gauge change. The scalar
+    ratio Ω.a²/||Ω||² is a gauge-invariant rational diagnostic. The finite
+    overlap is a Bargmann/Pancharatnam-type invariant; do not identify it
+    with physical spacetime holonomy or with a unique geodesic transport.
+    """
+    points=authenticated_chiral_square(n)
+    W=ONE
+    for i in range(4):W=W*hopf_section_link(points[i],points[(i+1)%4])
+    return W
+
+
+def authenticated_chiral_bargmann_ratio(n:int)->F:
+    W=authenticated_chiral_bargmann(n)
+    return W.a*W.a/W.norm2()
+
+
+def chiral_bargmann_decay_bound(n:int)->F:
+    """||W_n-1|| <= (1+4*2^-n)^4-1 for selected source b=2.
+
+    Every square vertex has norm <=||T^n b||=2*2^(-n/2), so each
+    overlap departure from 1 has norm <=4*2^-n. Triangle/submultiplicative
+    bounds give the stated conservative explicit envelope; Σ_n envelope<∞.
+    """
+    _positive_integer(n,"n",at_least=0)
+    return (1+F(4,2**n))**4-1

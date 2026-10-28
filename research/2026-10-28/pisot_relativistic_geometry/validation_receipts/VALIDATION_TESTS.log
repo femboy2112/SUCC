@@ -41,6 +41,8 @@ test_pisot_integer_return_certificate (tests.test_pisot_hopf_arithmetic_relativi
 test_pisot_source_is_not_needed_for_circle_injection (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_pisot_source_is_not_needed_for_circle_injection) ... ok
 test_real_seed_distinguisher_survives_clock_analogies (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_real_seed_distinguisher_survives_clock_analogies) ... ok
 test_source_eight_to_one_clock_sync (tests.test_pisot_hopf_arithmetic_relativity.ArithmeticClockTests.test_source_eight_to_one_clock_sync) ... ok
+test_authentic_chiral_commuting_square_nontrivial_holonomy (tests.test_pisot_hopf_arithmetic_relativity.HopfCurvatureTests.test_authentic_chiral_commuting_square_nontrivial_holonomy) ... ok
+test_bargmann_holonomy_rapidly_decays (tests.test_pisot_hopf_arithmetic_relativity.HopfCurvatureTests.test_bargmann_holonomy_rapidly_decays) ... ok
 test_connection_pure_imaginary (tests.test_pisot_hopf_arithmetic_relativity.HopfCurvatureTests.test_connection_pure_imaginary) ... ok
 test_exact_nonzero_hopf_curvature (tests.test_pisot_hopf_arithmetic_relativity.HopfCurvatureTests.test_exact_nonzero_hopf_curvature) ... ok
 test_exact_wilson_loop_orientation_and_nontriviality (tests.test_pisot_hopf_arithmetic_relativity.HopfCurvatureTests.test_exact_wilson_loop_orientation_and_nontriviality) ... ok
@@ -55,6 +57,6 @@ test_chiral_successor_matches_real_main (tests.test_hopf_main_source_bridge.Pinn
 test_source_moments_zero_seed_and_original_four_poles (tests.test_hopf_main_source_bridge.PinnedMainSourceBridge.test_source_moments_zero_seed_and_original_four_poles) ... skipped 'complete SUCC source unavailable in isolated local scratch copy'
 
 ----------------------------------------------------------------------
-Ran 55 tests in 1.547s
+Ran 57 tests in 1.507s
 
 OK (skipped=2)

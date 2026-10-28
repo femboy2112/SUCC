@@ -12,7 +12,9 @@ from observational_succ.pisot_hopf_arithmetic_relativity import (
     hopf_wilson_rectangle,hopf_wilson_rectangle_reverse,source_curvature_probe,
     source_clock_latitude_energy,source_clock_latitude_step,
     source_prime_frame_commutator,source_prime_frame_commutator_direct,
-    zero_seed_compact_clock,zero_seed_compact_clock_tick
+    zero_seed_compact_clock,zero_seed_compact_clock_tick,
+    authenticated_chiral_square,authenticated_chiral_bargmann,
+    authenticated_chiral_bargmann_ratio,chiral_bargmann_decay_bound
 )
 
 class ArithmeticClockTests(unittest.TestCase):
@@ -87,6 +89,30 @@ class ArithmeticClockTests(unittest.TestCase):
             self.assertEqual(original_forcing(n),sum(tuple(pole_quaternion(n)),F(0)))
 
 class HopfCurvatureTests(unittest.TestCase):
+    def test_authentic_chiral_commuting_square_nontrivial_holonomy(self):
+        from observational_succ.hopf_source_exact import j_chirality
+        vertices=authenticated_chiral_square(0)
+        self.assertEqual(tuple(tuple(z) for z in vertices),(
+            (F(2),F(0),F(0),F(0)),
+            (F(1),F(1),F(0),F(0)),
+            (F(0),F(0),F(1),F(-1)),
+            (F(0),F(0),F(2),F(0)),
+        ))
+        W=authenticated_chiral_bargmann(0)
+        self.assertEqual(tuple(W),(F(109),F(-40),F(-28),F(-10)))
+        self.assertEqual(W.norm2(),F(14365))
+        self.assertEqual(authenticated_chiral_bargmann_ratio(0),F(11881,14365))
+        self.assertNotEqual(W,H(W.a))
+
+    def test_bargmann_holonomy_rapidly_decays(self):
+        for n in range(0,25):
+            W=authenticated_chiral_bargmann(n)
+            eps=chiral_bargmann_decay_bound(n)
+            self.assertLessEqual((W-ONE).norm2(),eps*eps)
+            self.assertGreaterEqual(authenticated_chiral_bargmann_ratio(n),0)
+            self.assertLessEqual(authenticated_chiral_bargmann_ratio(n),1)
+        self.assertLess(chiral_bargmann_decay_bound(25),F(1,100000))
+
     def test_connection_pure_imaginary(self):
         for x in (ZERO,H(1),H(1,2,3,4)):
             for v in (H(1,3),H(0,0,1,1)):

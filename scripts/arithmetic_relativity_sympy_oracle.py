@@ -34,3 +34,17 @@ curvature=tuple(s.diff(A_u[i],t).subs({t:0,u:0})-s.diff(A_t[i],u).subs({t:0,u:0}
 assert curvature==(4,0,0),curvature
 # At origin A=0 so [A_t,A_u]=0, and dA is full F.
 print('PASS independent SymPy: mixed braid n^-2 limits and source-plane Hopf F_0=4i')
+
+# Independent Hamilton-coordinate calculation of the *source-chiral* square.
+# From Main XIII: b=2, Tb=1+i, JTb=j-k, Jb=2j.
+# The overlap product is a Bargmann/Pancharatnam loop, not a GR holonomy.
+vertices=[(s.Integer(2),0,0,0),(s.Integer(1),s.Integer(1),0,0),
+          (0,0,s.Integer(1),-s.Integer(1)),(0,0,s.Integer(2),0)]
+def qadd(a,b):return tuple(a[i]+b[i] for i in range(4))
+W=(s.Integer(1),0,0,0)
+for j in range(4):
+    L=qadd((s.Integer(1),0,0,0),qmul(qconj(vertices[j]),vertices[(j+1)%4]))
+    W=qmul(W,L)
+assert W==(109,-40,-28,-10),W
+assert sum(z*z for z in W)==14365
+print('PASS independent SymPy source T/J commuting square: exact quaternionic overlap (109,-40,-28,-10)')

@@ -70,6 +70,28 @@ An exact rational Wilson-loop finite probe uses the unnormalized quaternionic li
 
 The odd chiral successor changes right versus left Hopf gauge; its two-step returns to the original chart and acts as a finite-order quarter-turn on S4. The full exact proof and hostile controls are imported in the frozen local dossier, not relabeled as a new discovery here.
 
+### A new source-defined discrete chiral square — actual ordered quaternionic phase, no guessed plane
+
+The two-parameter tangent plane above is useful but was freely interpolated. There is also an **exact finite four-vertex source square** using the original chiral successor T and original chirality J. The Main XIII source proves `TJ=JT`, hence for each `n>=0` the marked vertices
+
+`X_n=T^n b`, `T X_n`, `J T X_n`, `J X_n`
+
+form a closed T/J square. These are genuine points of the **decaying chiral source**, not independently fabricated marginal observations. The chart-section quaternionic overlap of successive vertices is `L(x,y)=1+conj(x)y`. Define the ordered Bargmann/Pancharatnam-type loop invariant
+
+`W_n = L(X_n,TX_n) L(TX_n,JTX_n) L(JTX_n,JX_n) L(JX_n,X_n)`.
+
+For `n=0` the four exact source vectors are `2`, `1+i`, `j−k`, `2j`, and Hamilton multiplication yields
+
+`W_0 = 109 − 40i − 28j − 10k`, `||W_0||²=14365`, and the **gauge-invariant rational real-trace ratio** `(Re W_0)²/||W_0||² =11881/14365`.
+
+This is a genuinely nontrivial source-composed quaternionic **relative phase** despite the commuting T/J state operations. Under vertexwise right quaternionic gauges, the complete overlap product is conjugated at its basepoint; its normalized real part (up to an orientation convention) is invariant. The independent SymPy oracle and standard-library Fraction code agree exactly. A finite Bargmann overlap is not automatically a path-ordered exponential of the smooth Hopf connection along some unique interpolating loop; we do not claim a physical gravitational or direct causal holonomy.
+
+**Falsifying limit:** `||T^n b||²=4·2^-n`, and all four square vertices have norms at most `||T^n b||`. Each overlap differs from `1` in norm by at most `4·2^-n`; consequently
+
+`||W_n−1|| <= (1+4·2^-n)^4−1`, which is summable in n.
+
+Thus even this source-authenticated loop phase becomes **asymptotically trivial**, with no stand-alone signed Weyl cancellation. The same W_n arises for every alternative seed of the separate growing real BBP recurrence because it uses only the decaying source b,T,J. Therefore the existing coherent changed-seed control survives this stronger construction. Source-specific gauge curvature is mathematically real, but still has not reached the zero-seeded carry-selection gate.
+
 ## 4. Two exact general-relativity firewalls
 
 **Firewall G1 — signature/topology:** S4 with its natural round metric is *Riemannian* (positive definite). A closed smooth manifold with nonzero Euler characteristic admits no smooth globally nondegenerate Lorentz metric. `χ(S4)=2`. Thus S4 itself cannot be a four-dimensional Lorentzian spacetime. Its punctured chart is R4 and can carry a locally chosen Lorentz metric, but no such global metric extends smoothly and nonsingularly to S4; alternatively `R × S3` supports familiar 3+1 Lorentz metrics, and `R × S4` supports a 4+1-dimensional Lorentz metric. A time coordinate, causal cones and metric field must be declared and validated, rather than inferred from circle factors or a Hopf projection.
@@ -100,12 +122,13 @@ Its based smash quotient `T4/W ≅ S4` with fat wedge `W={at least one coordinat
 | AR-04 | True BBP chiral tap clock `16^n T^(8n)=I` and compact positive C_n→π/16 | SOURCE-EXACT (Main XIII identity) | Original seed and signed poles retained |
 | AR-05 | Real BBP prime-scale commutator equals `(p−1)r(n+1)` | DISCLOSED (exact source arithmetic) | Same structural equation holds for any forcing |
 | AR-06 | Hopf F_0(b,Tb)=4i; rational rectangle overlap is nonzero and orientation-sensitive | CLASSICAL connection + SOURCE-SPECIFIC DIRECTIONS | Collinear control zero; one-dimensional orbit cannot detect 2-form |
+| AR-06B | Source T/J square yields exact quaternionic Bargmann invariant W0=109−40i−28j−10k, but Wn→1 summably | SOURCE-EXACT overlap + CLASSICAL gauge invariance | Same forcing changed real seed leaves it unchanged; signed Weyl gate OPEN |
 | AR-07 | No global Lorentz signature on smooth S4 due χ=2 | CLASSICAL OBSTRUCTION | Use R×S3 or punctured S4 with explicit metric, not implicit GR |
 | AR-08 | Finite two-step SUCC/Hopf map gives gravitational dilation/equidistribution | REFUTED (finite-order action; rapidity translation) | Need new authentic cross-time source and metric |
 | AR-09 | All authentic BBP signed Weyl sums are o(N) | OPEN / UNVERIFIED | Actual zero-seeded carries, changed-seed hostile control |
 | AR-10 | One sourced four-Pisot torus has a canonical quaternionic Hopf lift | UNVERIFIED | Explicit source-labelled intertwiner and right/left gauge check |
 
-**Test authority:** The imported `hopf_source_exact.py` is preserved byte-for-byte; dedicated bridge tests compare it with actual Main XIII `rank_two_chiral_towers.py` only when a full worktree is available. Local isolated validation covers 49 direct old+new tests, one exact F5 irreducibility checker and an independent SymPy differential oracle. Two Main XIII bridge tests were *not executable in isolated local scratch*; CI on the new branch must execute them against the full checkout. No full native suite or GitHub CI has been performed at the time of this local report.
+**Test authority:** The imported `hopf_source_exact.py` is preserved byte-for-byte; dedicated bridge tests compare it with actual Main XIII `rank_two_chiral_towers.py` only when a full worktree is available. Local isolated validation covers 55 direct old+new passed tests, plus 2 deferred bridge tests, one exact F5 irreducibility checker and an independent SymPy differential oracle. Two Main XIII bridge tests were *not executable in isolated local scratch*; CI on the new branch must execute them against the full checkout. No full native suite or GitHub CI has been performed at the time of this local report.
 
 ## 7. Verdict and next falsifying work
 
