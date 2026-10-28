@@ -162,3 +162,36 @@ This does **not** contradict exact reconstruction of two-step-delayed received d
 **Falsifiers and barriers:** fixed-known-X removes cross-branch squared correlations without removing inflation; different report likelihood gives different posterior; passive Oily smoothing fails a simple iid centered Bayesian optimality test; physical exponential scale requires Einstein source to be more than analogy; same-original-forcing changed real BBP seed preserves Oily source packets and prior but makes real Fourier phases coherent. No π normality or RH proof.
 
 **Next mathematically decisive problem:** derive the actual *wavefront observation likelihood* from SUCC's original source/causal operator (rather than choose Bernoulli(x)); prove or refute whether the Oily two-register structure becomes an optimal conditional observer under that law, with causal Bayesian/quantum state coherence; and derive a metric/stress-energy source if physical inflation is the target. A new π-normality result still requires the authentic zero-selected real Weyl o(N) signed estimate.
+
+
+## WPI-11. Source-selected Bayesian evidence and the logarithmic information cost (PROVED PAPER)
+
+The *same* conditional Bernoulli(x) all-success observation law in WPI-01 gives exact prior evidence
+
+$$
+\Pr(A_n)=\int x^{8n}\,\mu_0(dx,j)=\frac{T_n}{T_0},
+\quad T_0=\pi/16,\quad
+T_n=\int_0^1x^{8n}R(x)\,dx.
+$$
+
+Since the authentic R(1−δ)=δ(1+O(δ)), standard beta/Laplace endpoint estimates yield T_n=1/(64n²)(1+O(1/n)). Therefore
+
+$$
+\boxed{\Pr(A_n)=\frac{1}{4\pi n^2}\bigl(1+O(n^{-1})\bigr).}
+$$
+
+The posterior/prior Radon–Nikodym derivative along this positive-evidence history is exactly x^(8n)/(T_n/T_0), so the KL divergence is
+
+$$
+\boxed{D_{\mathrm{KL}}(\mu_n\Vert\mu_0)
+=8n\,\mathbb E_{\mu_n}[\log X]-\log(T_n/T_0).}
+$$
+
+Differentiable beta/Laplace endpoint asymptotics (equivalently the source-conditioned Gamma(2) log-moment limit with its O(1/n) control) give 8n E_mu_n log X=−2+O(1/n). Hence the **selected-history relative information** is
+
+$$
+\boxed{D_{\mathrm{KL}}(\mu_n\Vert\mu_0)
+=2\log n+\log(4\pi)-2+O(n^{-1}).}
+$$
+
+This is an exact statement about the *declared* observation channel, and does not equal unconditional mutual information averaged over all possible observations. It shows that a source-compatible rare history has polynomial likelihood and logarithmic information cost, rather than the exponential likelihood cost of a fixed-known x<1. The source's continuum near x=1 is load-bearing; a finite two-node prior surrogate does NOT obey these infinite-n asymptotics. Independent high-precision quadrature at n=8,16,32,64 corroborated the limits, with no replacement of the analytic proof.
