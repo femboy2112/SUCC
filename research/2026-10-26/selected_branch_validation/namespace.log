@@ -1,0 +1,17 @@
+test_claim_namespace_registry (unittest.loader._FailedTest.test_claim_namespace_registry) ... ERROR
+
+======================================================================
+ERROR: test_claim_namespace_registry (unittest.loader._FailedTest.test_claim_namespace_registry)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_claim_namespace_registry
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'tests.test_claim_namespace_registry'
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

@@ -1,0 +1,229 @@
+{
+  "baseline_commit": "a8c7c85b7a1900d422090f1757c174e7aac69f44",
+  "beta_jet_order": 6,
+  "branch_energy_sweep_independent_audit": {
+    "direct_method": "all boundary and midpoint centers; principal q second difference",
+    "explicit_zero_and_tied_breakpoints": "passed",
+    "instrument_cannot_certify_modulus_below": "(N+2)/2",
+    "mean_energy_identity": "272 f(d01) - 16 f(d02) + 17 f(d12), f(d)=d(1-d)",
+    "sharp_alternating_control_N": 16,
+    "sharp_alternating_control_minimum": "2023/2",
+    "sharp_universal_minimum_energy_upper": "289*(N-2)/4",
+    "small_grid_histories": 320,
+    "source_holdouts": [
+      {
+        "N": 17,
+        "h": -2,
+        "mean_energy_over_centers": "15577078357424671935886106736056400681976175380924119422713173294186072333323751764188/25633648703578336267364468003076160931617848715965539018832337318553910389238890625",
+        "minimum_energy": "10898025959956325651628543550110852902964888704758313908119384574211016791552589264812/25633648703578336267364468003076160931617848715965539018832337318553910389238890625"
+      },
+      {
+        "N": 37,
+        "h": 3,
+        "mean_energy_over_centers": "197639168722564592468275187128474514113901036470096489286933737999486536514803112091477184194890878645253369290214132637632685950843024237476562878284937506079273670374604202912320679046685198/117194084010758469439009141680438359059090025964340541321543016971630049945657116621673240638605595540698018184862441197927370988054294133371792890064780290682322144257973565058254598265625",
+        "minimum_energy": "143923954061199149028842894054275885176266731800515560892977700831879555924856563584158014864569694114217639345097585999334630407823543351138187269260794470445232427543899226624037322572843302/117194084010758469439009141680438359059090025964340541321543016971630049945657116621673240638605595540698018184862441197927370988054294133371792890064780290682322144257973565058254598265625"
+      }
+    ]
+  },
+  "branch_margin": "2329025/37950062592",
+  "branch_pairs_checked": 220,
+  "branch_squared_norms": [
+    514,
+    546
+  ],
+  "coupling_covariances": [
+    "0",
+    "1/14"
+  ],
+  "coupling_survival_mass": "7/12",
+  "cumulant_leading_coefficients": [
+    "-4/27",
+    "8/81",
+    "-56/81",
+    "1856/243",
+    "-56320/729",
+    "581120/729"
+  ],
+  "grade_taylor": [
+    "4/9",
+    "-4/27",
+    "-8/81",
+    "-40/243",
+    "-20/729",
+    "-28/2187",
+    "112/6561"
+  ],
+  "green_endpoint_prefactor_upper": "6447953/2822400",
+  "literal_four_pole_states_checked": 128,
+  "mutants_rejected": [
+    "last pole coefficient",
+    "universal norm 514",
+    "second cumulant sign",
+    "marginals determine covariance"
+  ],
+  "nonresonant_small_vectors_checked": 624,
+  "normalized_beta_jet": [
+    {
+      "coefficient": "4/9",
+      "inverse_a_degree": 0,
+      "s_degree": 0
+    },
+    {
+      "coefficient": "-8/27",
+      "inverse_a_degree": 1,
+      "s_degree": 0
+    },
+    {
+      "coefficient": "-4/27",
+      "inverse_a_degree": 1,
+      "s_degree": 1
+    },
+    {
+      "coefficient": "8/9",
+      "inverse_a_degree": 2,
+      "s_degree": 0
+    },
+    {
+      "coefficient": "44/81",
+      "inverse_a_degree": 2,
+      "s_degree": 1
+    },
+    {
+      "coefficient": "4/81",
+      "inverse_a_degree": 2,
+      "s_degree": 2
+    },
+    {
+      "coefficient": "-824/81",
+      "inverse_a_degree": 3,
+      "s_degree": 0
+    },
+    {
+      "coefficient": "-2132/243",
+      "inverse_a_degree": 3,
+      "s_degree": 1
+    },
+    {
+      "coefficient": "-56/27",
+      "inverse_a_degree": 3,
+      "s_degree": 2
+    },
+    {
+      "coefficient": "-28/243",
+      "inverse_a_degree": 3,
+      "s_degree": 3
+    },
+    {
+      "coefficient": "42616/243",
+      "inverse_a_degree": 4,
+      "s_degree": 0
+    },
+    {
+      "coefficient": "138148/729",
+      "inverse_a_degree": 4,
+      "s_degree": 1
+    },
+    {
+      "coefficient": "49232/729",
+      "inverse_a_degree": 4,
+      "s_degree": 2
+    },
+    {
+      "coefficient": "6524/729",
+      "inverse_a_degree": 4,
+      "s_degree": 3
+    },
+    {
+      "coefficient": "232/729",
+      "inverse_a_degree": 4,
+      "s_degree": 4
+    },
+    {
+      "coefficient": "-834088/243",
+      "inverse_a_degree": 5,
+      "s_degree": 0
+    },
+    {
+      "coefficient": "-3150476/729",
+      "inverse_a_degree": 5,
+      "s_degree": 1
+    },
+    {
+      "coefficient": "-4287664/2187",
+      "inverse_a_degree": 5,
+      "s_degree": 2
+    },
+    {
+      "coefficient": "-851852/2187",
+      "inverse_a_degree": 5,
+      "s_degree": 3
+    },
+    {
+      "coefficient": "-69080/2187",
+      "inverse_a_degree": 5,
+      "s_degree": 4
+    },
+    {
+      "coefficient": "-1408/2187",
+      "inverse_a_degree": 5,
+      "s_degree": 5
+    },
+    {
+      "coefficient": "55841192/729",
+      "inverse_a_degree": 6,
+      "s_degree": 0
+    },
+    {
+      "coefficient": "8815492/81",
+      "inverse_a_degree": 6,
+      "s_degree": 1
+    },
+    {
+      "coefficient": "386939872/6561",
+      "inverse_a_degree": 6,
+      "s_degree": 2
+    },
+    {
+      "coefficient": "3728836/243",
+      "inverse_a_degree": 6,
+      "s_degree": 3
+    },
+    {
+      "coefficient": "12779656/6561",
+      "inverse_a_degree": 6,
+      "s_degree": 4
+    },
+    {
+      "coefficient": "8384/81",
+      "inverse_a_degree": 6,
+      "s_degree": 5
+    },
+    {
+      "coefficient": "7264/6561",
+      "inverse_a_degree": 6,
+      "s_degree": 6
+    }
+  ],
+  "positive_outer_weight_mutant_full_jet_differs": true,
+  "positive_outer_weight_mutant_same_leading_coefficients": true,
+  "schema": "oily-hostile-oracle-v1",
+  "scope": "exact finite independent calibration; no infinite cancellation proof",
+  "sharp_adjacent_resonance_degree": 17,
+  "source_sha256": {
+    "observational_succ/bbp_natural_carrier.py": "148747149ba2beaa74ae5c384b6379c5983dd6947caf4da631c2f0bcb15c9ee4",
+    "observational_succ/integer_bbp_carrier.py": "a4990c7592415054b4ee9b97fe0dd9b2aeedfc6868c92198856e507e37355253",
+    "observational_succ/succ_internal_matrix_walk.py": "989976921da1b97a4ad04c788e302b3c23be1916eaf3c52c60369f6e111fe5d4",
+    "research/2026-10-26/oily_branch_energy_oracle.py": "c4c5f4f70fc2fc5df5753e5d63562c7670619d00ba6bcbc9fc695e9b9bebfb79",
+    "research/2026-10-26/oily_hostile_oracle.py": "965c9ba240cfdf2b7963e1bf158227a4a43dc661e7b2b59051a8bf2c5ccd12cc"
+  },
+  "source_weight_taylor": [
+    "1",
+    "-2",
+    "4",
+    "-10",
+    "25",
+    "-60",
+    "144"
+  ],
+  "trigonometric_margin": "34853873/81033750"
+}

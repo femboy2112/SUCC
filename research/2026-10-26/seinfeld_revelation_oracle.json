@@ -1,0 +1,446 @@
+{
+  "adaptive_coboundary_control": {
+    "complete_paths_enumerated": 126,
+    "exact_matrix_identities": 2,
+    "path_depths_checked": 6,
+    "path_enumeration": [
+      {
+        "depth": 1,
+        "exact_product_expectation": "1/2",
+        "instance_violates_modulus_product_bound": false,
+        "local_conditional_modulus": "1/2",
+        "product_of_local_moduli": "1/2"
+      },
+      {
+        "depth": 2,
+        "exact_product_expectation": "1/2",
+        "instance_violates_modulus_product_bound": true,
+        "local_conditional_modulus": "1/2",
+        "product_of_local_moduli": "1/4"
+      },
+      {
+        "depth": 3,
+        "exact_product_expectation": "1/2",
+        "instance_violates_modulus_product_bound": true,
+        "local_conditional_modulus": "1/2",
+        "product_of_local_moduli": "1/8"
+      },
+      {
+        "depth": 4,
+        "exact_product_expectation": "1/2",
+        "instance_violates_modulus_product_bound": true,
+        "local_conditional_modulus": "1/2",
+        "product_of_local_moduli": "1/16"
+      },
+      {
+        "depth": 5,
+        "exact_product_expectation": "1/2",
+        "instance_violates_modulus_product_bound": true,
+        "local_conditional_modulus": "1/2",
+        "product_of_local_moduli": "1/32"
+      },
+      {
+        "depth": 6,
+        "exact_product_expectation": "1/2",
+        "instance_violates_modulus_product_bound": true,
+        "local_conditional_modulus": "1/2",
+        "product_of_local_moduli": "1/64"
+      }
+    ],
+    "reference_kernel": [
+      [
+        "3/4",
+        "1/4"
+      ],
+      [
+        "3/4",
+        "1/4"
+      ]
+    ],
+    "twisted_kernel": [
+      [
+        "3/4",
+        "-1/4"
+      ],
+      [
+        "-3/4",
+        "1/4"
+      ]
+    ]
+  },
+  "arithmetic": "Fraction and exact power-of-two cyclotomic polynomial reduction",
+  "baseline_commit": "79344c62c39c96755b742700b3d4d22fa60d86da",
+  "dependencies": "Python standard library only",
+  "forced_filtration_checks": {
+    "cases": [
+      {
+        "all_reverse_state_partitions_match": true,
+        "depth": 2,
+        "fiber_size": 256,
+        "forcing": [
+          "47/15",
+          "106/819"
+        ],
+        "name": "authentic_two_macrosteps",
+        "radix": 16,
+        "raw_offset": "-3494947/69615",
+        "terminal": "1/17"
+      },
+      {
+        "all_reverse_state_partitions_match": true,
+        "depth": 4,
+        "digit_convention_control": {
+          "canonicalized_fiber_index": 0,
+          "canonicalized_forcing_stripped_tail": "0",
+          "first_t_generated_sigma_fields_equal": true,
+          "literal_and_raw_digits_equal": false,
+          "literal_reduced_state_backward_labels": [
+            1,
+            0,
+            0,
+            0
+          ],
+          "raw_fiber_digits_low_first": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "raw_fiber_index": 3
+        },
+        "fiber_size": 16,
+        "forcing": [
+          "0",
+          "0",
+          "0",
+          "47/15"
+        ],
+        "name": "authentic_first_macrostep_binary_refinement",
+        "radix": 2,
+        "raw_offset": "-3",
+        "terminal": "2/15"
+      },
+      {
+        "all_reverse_state_partitions_match": true,
+        "depth": 3,
+        "fiber_size": 8,
+        "forcing": [
+          "1/3",
+          "-2/5",
+          "7/11"
+        ],
+        "name": "signed_rational_forcing",
+        "radix": 2,
+        "raw_offset": "-856/1155",
+        "terminal": "3/7"
+      }
+    ],
+    "forced_backward_filtration_checks": 880
+  },
+  "inverse_fiber_checks": {
+    "binary_visibility_examples": [
+      {
+        "binary_depth": 8,
+        "frequency": 0,
+        "single_observable_innovation_level": null
+      },
+      {
+        "binary_depth": 8,
+        "frequency": 1,
+        "single_observable_innovation_level": 8
+      },
+      {
+        "binary_depth": 8,
+        "frequency": 2,
+        "single_observable_innovation_level": 7
+      },
+      {
+        "binary_depth": 8,
+        "frequency": 4,
+        "single_observable_innovation_level": 6
+      },
+      {
+        "binary_depth": 8,
+        "frequency": 8,
+        "single_observable_innovation_level": 5
+      },
+      {
+        "binary_depth": 8,
+        "frequency": 16,
+        "single_observable_innovation_level": 4
+      },
+      {
+        "binary_depth": 8,
+        "frequency": 24,
+        "single_observable_innovation_level": 5
+      },
+      {
+        "binary_depth": 8,
+        "frequency": 128,
+        "single_observable_innovation_level": 1
+      },
+      {
+        "binary_depth": 8,
+        "frequency": 256,
+        "single_observable_innovation_level": null
+      },
+      {
+        "binary_depth": 8,
+        "frequency": -8,
+        "single_observable_innovation_level": 5
+      }
+    ],
+    "conditional_root_sum_checks": 15390,
+    "coverage": [
+      {
+        "depth": 1,
+        "fiber_size": 2,
+        "frequencies": [
+          -8,
+          -1,
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          24
+        ],
+        "radix": 2,
+        "selected_indices": [
+          0,
+          1
+        ]
+      },
+      {
+        "depth": 2,
+        "fiber_size": 4,
+        "frequencies": [
+          -8,
+          -1,
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          24
+        ],
+        "radix": 2,
+        "selected_indices": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "depth": 3,
+        "fiber_size": 8,
+        "frequencies": [
+          -8,
+          -1,
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          24
+        ],
+        "radix": 2,
+        "selected_indices": [
+          0,
+          1,
+          4,
+          7
+        ]
+      },
+      {
+        "depth": 4,
+        "fiber_size": 16,
+        "frequencies": [
+          -8,
+          -1,
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          24,
+          32
+        ],
+        "radix": 2,
+        "selected_indices": [
+          0,
+          1,
+          8,
+          15
+        ]
+      },
+      {
+        "depth": 5,
+        "fiber_size": 32,
+        "frequencies": [
+          -8,
+          -1,
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          24,
+          32,
+          64
+        ],
+        "radix": 2,
+        "selected_indices": [
+          0,
+          1,
+          16,
+          31
+        ]
+      },
+      {
+        "depth": 6,
+        "fiber_size": 64,
+        "frequencies": [
+          -8,
+          -1,
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          24,
+          32,
+          64,
+          128
+        ],
+        "radix": 2,
+        "selected_indices": [
+          0,
+          1,
+          32,
+          63
+        ]
+      },
+      {
+        "depth": 7,
+        "fiber_size": 128,
+        "frequencies": [
+          -8,
+          -1,
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          24,
+          64,
+          128,
+          256
+        ],
+        "radix": 2,
+        "selected_indices": [
+          0,
+          1,
+          64,
+          127
+        ]
+      },
+      {
+        "depth": 8,
+        "fiber_size": 256,
+        "frequencies": [
+          -8,
+          -1,
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          24,
+          128,
+          256,
+          512
+        ],
+        "radix": 2,
+        "selected_indices": [
+          0,
+          1,
+          128,
+          255
+        ]
+      },
+      {
+        "depth": 1,
+        "fiber_size": 16,
+        "frequencies": [
+          -8,
+          -1,
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          24,
+          32
+        ],
+        "radix": 16,
+        "selected_indices": [
+          0,
+          1,
+          8,
+          15
+        ]
+      },
+      {
+        "depth": 2,
+        "fiber_size": 256,
+        "frequencies": [
+          -8,
+          -1,
+          0,
+          1,
+          2,
+          4,
+          8,
+          16,
+          24,
+          128,
+          256,
+          512
+        ],
+        "radix": 16,
+        "selected_indices": [
+          0,
+          1,
+          128,
+          255
+        ]
+      }
+    ],
+    "likelihood_increment_mean_and_square_checks": 1722,
+    "selected_covariance_increment_checks": 1722,
+    "translation_scope": "Arbitrary common a factors out as the unit phase e(h*a/size)."
+  },
+  "oracle_sha256": "da9f510bd90e51642a172593962f18c2e37a9b584bcf831cda55467398f007e6",
+  "production_imports": [],
+  "schema_version": 1,
+  "scope": {
+    "finite_checks_replace_paper_proofs": false,
+    "literal_branch_digits_identified_with_canonical_fiber_digits": false,
+    "moving_terminal_reference_laws_assumed_projectively_consistent": false,
+    "pi_normality_proved": false,
+    "selected_Weyl_saving_proved": false
+  },
+  "status": "PASS: INDEPENDENT EXACT FINITE REVELATION CALIBRATION",
+  "test_imports": []
+}

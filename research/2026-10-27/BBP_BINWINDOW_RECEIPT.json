@@ -1,0 +1,254 @@
+{
+  "boundary": [
+    {
+      "k": 1,
+      "modulus": "16",
+      "residue": 0
+    },
+    {
+      "k": 2,
+      "modulus": "256",
+      "residue": 0
+    },
+    {
+      "k": 3,
+      "modulus": "4096",
+      "residue": 0
+    },
+    {
+      "k": 4,
+      "modulus": "65536",
+      "residue": 0
+    },
+    {
+      "k": 5,
+      "modulus": "1048576",
+      "residue": 0
+    },
+    {
+      "k": 6,
+      "modulus": "16777216",
+      "residue": 0
+    },
+    {
+      "k": 7,
+      "modulus": "268435456",
+      "residue": 0
+    },
+    {
+      "k": 8,
+      "modulus": "4294967296",
+      "residue": 0
+    },
+    {
+      "k": 9,
+      "modulus": "68719476736",
+      "residue": 0
+    },
+    {
+      "k": 10,
+      "modulus": "1099511627776",
+      "residue": 0
+    },
+    {
+      "k": 11,
+      "modulus": "17592186044416",
+      "residue": 0
+    },
+    {
+      "k": 12,
+      "modulus": "281474976710656",
+      "residue": 0
+    },
+    {
+      "k": 13,
+      "modulus": "4503599627370496",
+      "residue": 0
+    },
+    {
+      "k": 14,
+      "modulus": "72057594037927936",
+      "residue": 0
+    },
+    {
+      "k": 15,
+      "modulus": "1152921504606846976",
+      "residue": 0
+    },
+    {
+      "k": 16,
+      "modulus": "18446744073709551616",
+      "residue": 0
+    },
+    {
+      "k": 24,
+      "modulus": "79228162514264337593543950336",
+      "residue": 0
+    },
+    {
+      "k": 32,
+      "modulus": "340282366920938463463374607431768211456",
+      "residue": 0
+    },
+    {
+      "k": 48,
+      "modulus": "6277101735386680763835789423207666416102355444464034512896",
+      "residue": 0
+    }
+  ],
+  "boundary_complete_paper_proof": "2-adic Gaussian logarithmic primitive; roots of unity have log zero",
+  "early_exact_original_vs_extended": [
+    {
+      "actual": 0,
+      "k": 1,
+      "n": 0,
+      "window": 0
+    },
+    {
+      "actual": 0,
+      "k": 4,
+      "n": 0,
+      "window": 0
+    },
+    {
+      "actual": 225,
+      "k": 2,
+      "n": 1,
+      "window": 225
+    },
+    {
+      "actual": 48126,
+      "k": 4,
+      "n": 2,
+      "window": 48126
+    },
+    {
+      "actual": 2132674607,
+      "k": 8,
+      "n": 3,
+      "window": 2132674607
+    },
+    {
+      "actual": 196714840,
+      "k": 7,
+      "n": 8,
+      "window": 196714840
+    },
+    {
+      "actual": 155457,
+      "k": 5,
+      "n": 33,
+      "window": 155457
+    }
+  ],
+  "early_negative_source_zeroes": [
+    {
+      "k": 2,
+      "n": 0,
+      "nonzero_rational": true,
+      "residue": 0
+    },
+    {
+      "k": 2,
+      "n": 1,
+      "nonzero_rational": true,
+      "residue": 0
+    },
+    {
+      "k": 3,
+      "n": 0,
+      "nonzero_rational": true,
+      "residue": 0
+    },
+    {
+      "k": 3,
+      "n": 1,
+      "nonzero_rational": true,
+      "residue": 0
+    },
+    {
+      "k": 4,
+      "n": 0,
+      "nonzero_rational": true,
+      "residue": 0
+    },
+    {
+      "k": 4,
+      "n": 1,
+      "nonzero_rational": true,
+      "residue": 0
+    },
+    {
+      "k": 8,
+      "n": 0,
+      "nonzero_rational": true,
+      "residue": 0
+    },
+    {
+      "k": 8,
+      "n": 1,
+      "nonzero_rational": true,
+      "residue": 0
+    }
+  ],
+  "first_hex_bin_permutation": [
+    0,
+    1,
+    14,
+    15,
+    12,
+    13,
+    10,
+    11,
+    8,
+    9,
+    6,
+    7,
+    4,
+    5,
+    2,
+    3
+  ],
+  "odometer_clocks": [
+    {
+      "k": 1,
+      "modulus": 16,
+      "one_cycle": true,
+      "residues": 16,
+      "zero_seed": 0
+    },
+    {
+      "k": 2,
+      "modulus": 256,
+      "one_cycle": true,
+      "residues": 256,
+      "zero_seed": 0
+    },
+    {
+      "k": 3,
+      "modulus": 4096,
+      "one_cycle": true,
+      "residues": 4096,
+      "zero_seed": 0
+    }
+  ],
+  "parent_research_pr": 320,
+  "real_vs_adic_example": {
+    "first_2adic_turn": "1/16",
+    "first_source_real_fraction": "2/15"
+  },
+  "source": "Coherent Main original signed four-pole rational forcing",
+  "source_hashes": {
+    "module": "91913f0e8793abb8cb7dfb3594b75d48b9e1a0f418d986077f2ffddc4de9d677",
+    "tests": "c7d41e7ad4b2b1a752998acca8a2d602db00d95a9ebbfbacef204433c7548486"
+  },
+  "status": {
+    "all_time_source_odometer_paper_proved": true,
+    "exact_finite_receipt": true,
+    "new_lean_kernel_declarations": false,
+    "new_real_circle_weyl_saving_proved": false,
+    "p_adic_zero_paper_proved": true,
+    "pi_base16_normality_proved": false,
+    "rh_proved": false
+  }
+}

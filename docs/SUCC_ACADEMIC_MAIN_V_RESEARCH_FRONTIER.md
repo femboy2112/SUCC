@@ -120,8 +120,11 @@ half-density and test-function domains, equality on a specified test space, inde
 non-Euler controls, and — if positivity is claimed — a proof of positivity for the **actual signed form**.
 
 **Base in tree.** `observational_succ/certified_four_schur_trial.py` (CFS, exact two-sided Loewner
-enclosure of S₄, sign CERTIFIED AMBIGUOUS), `suzuki_moment_schur.py`, `tate_suzuki_shorting.py`, and the
-Academic Main IV continuation instruments (`nonvanishing_transport.py`, `prime_two_directional_holdout.py`).
+enclosure of S₄, sign CERTIFIED AMBIGUOUS), `suzuki_moment_schur.py`, `tate_suzuki_shorting.py`.
+*(Correction, Main XII: the Academic Main IV continuation instruments `nonvanishing_transport.py`
+and `prime_two_directional_holdout.py` are **not** in the main tree — they remain on the retained
+research branch `academic-main-iv-continuation-targets-2026-10-18` pending a separate audited
+integration, and were previously mis-listed here as base-in-tree.)*
 
 **Firewall.** Do **not** infer RH from analogy, positive smoothing, finite prime windows, or a generic
 Hilbert embedding. The original signed Schur `S₄` obstruction stays unresolved unless a genuinely new

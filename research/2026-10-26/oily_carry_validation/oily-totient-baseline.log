@@ -1,0 +1,61 @@
+test_complex_mellin_shadow_limit_and_gold_cumulant (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_complex_mellin_shadow_limit_and_gold_cumulant) ... ERROR
+test_direct_full_source_covariance_asymptotics (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_direct_full_source_covariance_asymptotics) ... ERROR
+test_endpoint_jet_controls (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_endpoint_jet_controls) ... ok
+test_exact_beta_log_moments_independent_quadrature (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_exact_beta_log_moments_independent_quadrature) ... ERROR
+test_exact_finite_connected_log_shadow (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_exact_finite_connected_log_shadow) ... ERROR
+test_full_complex_primitive_mellin_integral_and_limit (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_full_complex_primitive_mellin_integral_and_limit) ... ERROR
+test_mobius_divided_difference_and_odd_integrand (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_mobius_divided_difference_and_odd_integrand) ... ok
+test_negative_not_source_selected (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_negative_not_source_selected) ... ok
+test_source_kernel_and_polynomial_identity (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_source_kernel_and_polynomial_identity) ... ok
+test_source_phase_transport_error_budget (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_source_phase_transport_error_budget) ... ok
+test_cyclotomic_modes_nonzero_uniform (test_oily_macaroni_totient.MobiusTotientExact.test_cyclotomic_modes_nonzero_uniform) ... ok
+test_exact_twist_and_shadow_polynomial_at_special_points (test_oily_macaroni_totient.MobiusTotientExact.test_exact_twist_and_shadow_polynomial_at_special_points) ... ok
+test_finite_modular_residue_mass (test_oily_macaroni_totient.MobiusTotientExact.test_finite_modular_residue_mass) ... ok
+test_grade_tail_equals_original_compiler_error (test_oily_macaroni_totient.MobiusTotientExact.test_grade_tail_equals_original_compiler_error) ... ok
+test_primitive_probabilities_and_nonmultiplicativity (test_oily_macaroni_totient.MobiusTotientExact.test_primitive_probabilities_and_nonmultiplicativity) ... ok
+test_source_grade_regrouping_countermodel (test_oily_macaroni_totient.MobiusTotientExact.test_source_grade_regrouping_countermodel) ... ok
+
+======================================================================
+ERROR: test_complex_mellin_shadow_limit_and_gold_cumulant (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_complex_mellin_shadow_limit_and_gold_cumulant)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cd3d6a3d0aa9/SUCC/tests/test_oily_macaroni_totient.py", line 189, in test_complex_mellin_shadow_limit_and_gold_cumulant
+    import mpmath as mp
+ModuleNotFoundError: No module named 'mpmath'
+
+======================================================================
+ERROR: test_direct_full_source_covariance_asymptotics (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_direct_full_source_covariance_asymptotics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cd3d6a3d0aa9/SUCC/tests/test_oily_macaroni_totient.py", line 207, in test_direct_full_source_covariance_asymptotics
+    import mpmath as mp
+ModuleNotFoundError: No module named 'mpmath'
+
+======================================================================
+ERROR: test_exact_beta_log_moments_independent_quadrature (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_exact_beta_log_moments_independent_quadrature)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cd3d6a3d0aa9/SUCC/tests/test_oily_macaroni_totient.py", line 125, in test_exact_beta_log_moments_independent_quadrature
+    import mpmath as mp
+ModuleNotFoundError: No module named 'mpmath'
+
+======================================================================
+ERROR: test_exact_finite_connected_log_shadow (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_exact_finite_connected_log_shadow)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cd3d6a3d0aa9/SUCC/tests/test_oily_macaroni_totient.py", line 140, in test_exact_finite_connected_log_shadow
+    import mpmath as mp
+ModuleNotFoundError: No module named 'mpmath'
+
+======================================================================
+ERROR: test_full_complex_primitive_mellin_integral_and_limit (test_oily_macaroni_totient.AuthenticPacketKernelExact.test_full_complex_primitive_mellin_integral_and_limit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/workspace/scratch/cd3d6a3d0aa9/SUCC/tests/test_oily_macaroni_totient.py", line 162, in test_full_complex_primitive_mellin_integral_and_limit
+    import mpmath as mp
+ModuleNotFoundError: No module named 'mpmath'
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.063s
+
+FAILED (errors=5)

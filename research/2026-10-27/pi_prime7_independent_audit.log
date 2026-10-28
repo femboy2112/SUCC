@@ -1,0 +1,19 @@
+W: -122880*x**5 + 259584*x**4 - 215040*x**3 + 87800*x**2 - 17744*x + 1427
+W mod7 factor: -2*(x - 1)*(x + 2)*(x**3 + x**2 + x - 2)
+base 7 critical [1, 5] Wprime [1, 1] C1 19 off2 [(2, 3)]
+reciprocal two-delay determinant 7 4
+full count 7 1 [19, 9, 7]
+full count 7 2 [217, 51, 49]
+full count 7 3 [2107, 345, 343]
+full count 7 4 [18865, 2403, 2401]
+full count 7 5 [160867, 16809, 16807]
+base 11 critical [1] Wprime [10] C1 27 off2 [(2, 4)]
+reciprocal two-delay determinant 11 7
+full count 11 1 [27, 13, 11]
+full count 11 2 [407, 123, 121]
+full count 11 3 [5687, 1333, 1331]
+base 241 critical [152] Wprime [230] C1 497 off2 []
+full count 241 1 [497, 241, 241]
+full count 241 2 [177617, 58081, 58081]
+upper bound positivity coefficients: [392, 2201, 4494, 3902, 1185]
+uniform-in-h arithmetic witness passed H=1..10000; analytic proof is separate

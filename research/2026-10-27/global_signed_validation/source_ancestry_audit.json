@@ -1,0 +1,82 @@
+{
+  "ancestry": [
+    {
+      "pr": 306,
+      "sha": "7989be5753341c5e74d570e8fea51e00129d2d0a",
+      "ancestor_of_start": true
+    },
+    {
+      "pr": 307,
+      "sha": "c41af6b0a1e96a7758cbf891cd56014be743beb0",
+      "ancestor_of_start": false
+    },
+    {
+      "pr": 308,
+      "sha": "48bbfc78f499fbcac6e0b51f06a3ec60aa693731",
+      "ancestor_of_start": false
+    },
+    {
+      "pr": 309,
+      "sha": "8e9d8a4d7d42bb0931f899ac221f27fccf090b36",
+      "ancestor_of_start": true
+    },
+    {
+      "pr": 310,
+      "sha": "a8c7c85b7a1900d422090f1757c174e7aac69f44",
+      "ancestor_of_start": true
+    },
+    {
+      "pr": 311,
+      "sha": "a34c4484059e667202b97d5ab4102560987b1406",
+      "ancestor_of_start": false
+    },
+    {
+      "pr": 312,
+      "sha": "0c306a889f425418c29cbea3193205fb80c0575e",
+      "ancestor_of_start": true
+    },
+    {
+      "pr": 313,
+      "sha": "79344c62c39c96755b742700b3d4d22fa60d86da",
+      "ancestor_of_start": true
+    },
+    {
+      "pr": 314,
+      "sha": "935c2db4c36ff56d90acd82eae30bcce15b6a053",
+      "ancestor_of_start": true
+    },
+    {
+      "pr": 315,
+      "sha": "c094b38d399c073f5c2f9d9fe7a1a3584f5cb724",
+      "ancestor_of_start": false
+    },
+    {
+      "pr": 316,
+      "sha": "239df54f5f56fdaba3bf4edfc282cdcabecea3c2",
+      "ancestor_of_start": true
+    }
+  ],
+  "source": [
+    {
+      "path": "observational_succ/succ_internal_matrix_walk.py",
+      "unchanged_from_parent": true,
+      "sha256": "989976921da1b97a4ad04c788e302b3c23be1916eaf3c52c60369f6e111fe5d4"
+    },
+    {
+      "path": "observational_succ/integer_bbp_carrier.py",
+      "unchanged_from_parent": true,
+      "sha256": "a4990c7592415054b4ee9b97fe0dd9b2aeedfc6868c92198856e507e37355253"
+    },
+    {
+      "path": "observational_succ/bbp_source_memory.py",
+      "unchanged_from_parent": true,
+      "sha256": "dd439f0a2231399d2a0ea4cf0e40a1e399338537723c468e688b0ac7d860fb54"
+    },
+    {
+      "path": "provenance/IMPORT_MANIFEST.json",
+      "unchanged_from_parent": true,
+      "sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+    }
+  ],
+  "remote_heads": "6dd80730c3575d91f746546a25da5aedbd2e2737\trefs/heads/main\n239df54f5f56fdaba3bf4edfc282cdcabecea3c2\trefs/heads/research/wtf-global-calibration-source-resonance-2026-10-26\n"
+}

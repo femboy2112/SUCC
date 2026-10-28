@@ -1,0 +1,7 @@
+/workspace/scratch/cd3d6a3d0aa9/validation/oily-branch-lean-final/oily-coercivity-build-vrmk51qj/missing-small-loss.lean:38:2: error: linarith failed to find a contradiction
+case h
+q loss : ℝ
+budget : 8 * q ^ 2 ≤ loss
+small : True
+a✝ : q ^ 2 ≥ (1 / 15) ^ 2
+⊢ False failed

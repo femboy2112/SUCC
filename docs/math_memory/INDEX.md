@@ -10,7 +10,7 @@
 |---|---|
 | The corrected original intuition (circle→line→triangle; φ⁻¹ vs γ; Ω) and the three distinct φ-lineages | [FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md](../../research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md) + [TOPIC_ATLAS.md](TOPIC_ATLAS.md) §Genesis |
 | A machine-readable typed concept graph (48 referents, 56 typed relations) | [RELATION_GRAPH.json](RELATION_GRAPH.json) (lint: `scripts/verify_math_memory_graph.py --path …`) |
-| An exhaustive index of every claim row (1876 rows, path/line/SHA; 176 registered namespaces, 1863 registered rows) | [CLAIM_CATALOG.json](CLAIM_CATALOG.json) (build: `scripts/build_math_memory.py --write/--check`) |
+| An exhaustive index of every claim row (1944 rows, path/line/SHA; 176 registered namespaces, 1863 registered rows; 112 residual warnings — the π-frontier supplements #306–#340 are scoped research that intentionally mint no registry namespace, so their local refs stay unregistered by design, alongside the pre-existing legacy single-letter prefixes) | [CLAIM_CATALOG.json](CLAIM_CATALOG.json) (build: `scripts/build_math_memory.py --write/--check`) |
 | Historical theorem IDs, proof status, counterexamples | [CLAIM_LEDGER.md](../CLAIM_LEDGER.md) + [CLAIM_INDEX.md](../CLAIM_INDEX.md); FQIDs via [CLAIM_NAMESPACE_REGISTRY.json](../CLAIM_NAMESPACE_REGISTRY.json) |
 | The true open-PR ancestry (who descends from whom; what is stale) | [SUCC_MAIN_XII_FRONTIER_ANCESTRY_DAG.md](../../research/2026-10-27/SUCC_MAIN_XII_FRONTIER_ANCESTRY_DAG.md) |
 | Which supplements are registered vs. flagged, and why | [REGISTRY_RECONCILIATION_2026-10-27.md](REGISTRY_RECONCILIATION_2026-10-27.md) |

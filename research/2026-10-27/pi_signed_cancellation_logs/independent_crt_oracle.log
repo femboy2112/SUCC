@@ -1,0 +1,9 @@
+debruijn 2 1 period 2 all circular blocks exact
+debruijn 2 2 period 4 all circular blocks exact
+debruijn 2 3 period 8 all circular blocks exact
+debruijn 2 4 period 16 all circular blocks exact
+debruijn 16 1 period 16 all circular blocks exact
+debruijn 16 2 period 256 all circular blocks exact
+exact block frequencies checked 340
+exact martingale identities checked 8100 strict refinements 7532
+negative control E_1=0 E_2=1 PASSED

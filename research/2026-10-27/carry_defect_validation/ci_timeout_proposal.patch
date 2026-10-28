@@ -1,0 +1,14 @@
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index 4eaf8080..5b7423e2 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -19,7 +19,8 @@ jobs:
+   test:
+     name: Python ${{ matrix.python-version }} mathematical and epistemic checks
+     runs-on: ubuntu-latest
+-    timeout-minutes: 25
++    # PR #317's Python 3.10 run exhausted 25 minutes during the full suite.
++    timeout-minutes: 45
+     strategy:
+       fail-fast: false
+       matrix:

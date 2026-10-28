@@ -1,0 +1,48 @@
+{
+  "Q_linear_coupled_successor": true,
+  "carrier": "Q(i) x Q(i), rank2 over Q(i), Q-dimension4",
+  "even_first_shell": [
+    "4",
+    "2",
+    "0",
+    "-1",
+    "-1",
+    "-1/2",
+    "0",
+    "1/4"
+  ],
+  "even_shell_mass": "15/4",
+  "full_clock": "T^8=I/16",
+  "full_first_shell": [
+    "4",
+    "0",
+    "0",
+    "-2",
+    "-1",
+    "-1",
+    "0",
+    "0"
+  ],
+  "half_clock": "T^4=-J/4",
+  "hankel4_det": "4",
+  "independent_multiplication": true,
+  "initial_source": "(2,0)",
+  "odd_first_shell": [
+    "0",
+    "-2",
+    "0",
+    "-1",
+    "0",
+    "-1/2",
+    "0",
+    "-1/4"
+  ],
+  "odd_shell_mass": "-15/4",
+  "pi_normality_proved": false,
+  "rational_transfer": "4(1-t)/[(1-t+t^2/2)(1-t^2/2)]",
+  "real_signed_fourier_oN_proved": false,
+  "schema": "SUCC_CHIRAL_RANK2_BBP_SOURCE_2026_10_27",
+  "selected_zero_seed_first_25": true,
+  "source": "original-four-pole-BBP-chiral-rank2-source-v1",
+  "source_authenticated_first_128": true
+}

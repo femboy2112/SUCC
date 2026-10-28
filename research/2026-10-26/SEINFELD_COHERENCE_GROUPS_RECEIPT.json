@@ -1,0 +1,256 @@
+{
+  "all_zero_selected_checkpoint_at_N8": {
+    "0": "0",
+    "1": "1/8",
+    "4": "1/2",
+    "8": "1"
+  },
+  "global_working_parity": {
+    "checkpoint_information_energy": "1",
+    "global_energy": "0",
+    "observations": 2,
+    "proves_source_mixing": false,
+    "working_energy": "1"
+  },
+  "minimal_phase_quotients": {
+    "1": {
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ],
+        [
+          8
+        ],
+        [
+          9
+        ],
+        [
+          10
+        ],
+        [
+          11
+        ],
+        [
+          12
+        ],
+        [
+          13
+        ],
+        [
+          14
+        ],
+        [
+          15
+        ]
+      ],
+      "h": 1,
+      "minimal": true,
+      "modulus": 16,
+      "selected_phase_cancellation_proved": false
+    },
+    "16": {
+      "groups": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      ],
+      "h": 16,
+      "minimal": true,
+      "modulus": 1,
+      "selected_phase_cancellation_proved": false
+    },
+    "2": {
+      "groups": [
+        [
+          0,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          13
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          15
+        ]
+      ],
+      "h": 2,
+      "minimal": true,
+      "modulus": 8,
+      "selected_phase_cancellation_proved": false
+    },
+    "4": {
+      "groups": [
+        [
+          0,
+          4,
+          8,
+          12
+        ],
+        [
+          1,
+          5,
+          9,
+          13
+        ],
+        [
+          2,
+          6,
+          10,
+          14
+        ],
+        [
+          3,
+          7,
+          11,
+          15
+        ]
+      ],
+      "h": 4,
+      "minimal": true,
+      "modulus": 4,
+      "selected_phase_cancellation_proved": false
+    },
+    "8": {
+      "groups": [
+        [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14
+        ],
+        [
+          1,
+          3,
+          5,
+          7,
+          9,
+          11,
+          13,
+          15
+        ]
+      ],
+      "h": 8,
+      "minimal": true,
+      "modulus": 2,
+      "selected_phase_cancellation_proved": false
+    }
+  },
+  "nonlumpable_quotient": {
+    "actual_group_row": [
+      "1",
+      "0"
+    ],
+    "counterexample_state": 2,
+    "counterexample_state_group": 0,
+    "expected_group_row": [
+      "0",
+      "1"
+    ],
+    "lumpable": false,
+    "pi_normality_proved": false
+  },
+  "parent_commit": "79344c62c39c96755b742700b3d4d22fa60d86da",
+  "pi_base16_normality_proved": false,
+  "prefix_kl_bases": {
+    "0": {
+      "checkpoint_kl_log_base": 1,
+      "global_kl_log_base": 65536,
+      "likelihood_second_moment": 65536,
+      "reference_paths": 65536,
+      "selected_weyl_saving_proved": false,
+      "unresolved_fiber_kl_log_base": 65536
+    },
+    "2": {
+      "checkpoint_kl_log_base": 256,
+      "global_kl_log_base": 65536,
+      "likelihood_second_moment": 65536,
+      "reference_paths": 65536,
+      "selected_weyl_saving_proved": false,
+      "unresolved_fiber_kl_log_base": 256
+    },
+    "4": {
+      "checkpoint_kl_log_base": 65536,
+      "global_kl_log_base": 65536,
+      "likelihood_second_moment": 65536,
+      "reference_paths": 65536,
+      "selected_weyl_saving_proved": false,
+      "unresolved_fiber_kl_log_base": 1
+    }
+  },
+  "reference_checkpoint_energy_at_N8": {
+    "0": "0",
+    "1": "1/64",
+    "4": "1/16",
+    "8": "1/8"
+  },
+  "reference_law": "independent uniform 16-branch histories",
+  "reinforcement_energy": {
+    "16": "2/17",
+    "2": "9/17",
+    "256": "1/16"
+  },
+  "schema": 1,
+  "selected_source_fourier_saving_proved": false,
+  "source_module_sha256": "8258b79d80722fbc19917a2dbd5bc9c5976fbc655078019929b84c7653d5e36c"
+}

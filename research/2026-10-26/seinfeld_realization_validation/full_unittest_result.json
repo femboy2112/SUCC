@@ -1,0 +1,14 @@
+{
+  "base_commit": "79344c62c39c96755b742700b3d4d22fa60d86da",
+  "command": "python -m unittest discover -s tests -p 'test_*.py' -v",
+  "completion_observed_utc": "2026-10-27 01:00:34 UTC",
+  "exit_code": 0,
+  "raw_output_sha256": "a3594ac8f225e910b1c35f9745c23ee77477b8154cf24b7a7ee2fc5f70e42d8d",
+  "reported_outcome": "OK",
+  "scope": "Production modules and tests frozen; later proof/probe additions checked separately",
+  "source_snapshot_sha256": "83cfed6a5d665242bbea89501a95e117e9437d0be4faf7c4fd83d861f3e26dd7",
+  "source_test_files": 1285,
+  "source_test_hashes_unchanged": true,
+  "test_count": 8936,
+  "unittest_seconds": "1207.901"
+}

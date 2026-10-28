@@ -1,0 +1,13 @@
+/workspace/scratch/cd3d6a3d0aa9/validation/oily-branch-lean-final/oily-coercivity-build-vrmk51qj/adjacent-norm-too-small.lean:26:2: error: linarith failed to find a contradiction
+case a
+a b c : ℝ
+a✝ : (16 * a - 17 * b + c) ^ 2 > 545 * (a ^ 2 + b ^ 2 + c ^ 2)
+⊢ False failed
+/workspace/scratch/cd3d6a3d0aa9/validation/oily-branch-lean-final/oily-coercivity-build-vrmk51qj/adjacent-norm-too-small.lean:62:23: error: application type mismatch
+  le_trans gap (adjacent_branch_quadratic a b c)
+argument
+  adjacent_branch_quadratic a b c
+has type
+  (16 * a - 17 * b + c) ^ 2 ≤ 545 * (a ^ 2 + b ^ 2 + c ^ 2) : Prop
+but is expected to have type
+  (16 * a - 17 * b + c) ^ 2 ≤ 546 * (a ^ 2 + b ^ 2 + c ^ 2) : Prop

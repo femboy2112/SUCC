@@ -1,0 +1,13 @@
+{
+  "valid_receipt": {
+    "exit_code": 0,
+    "stdout": "BBP_ATOMIC_SUBSTRATE_RECEIPT_VERIFIED\n",
+    "stderr": ""
+  },
+  "mutated_receipt": {
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "SUBSTRATE_RECEIPT_MISMATCH: source or certificate changed\n",
+    "mutation": "grading_controls.adjacent_group_minimal_fixed_point: 1 -> 0"
+  }
+}

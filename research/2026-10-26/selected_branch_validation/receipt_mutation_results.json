@@ -1,0 +1,23 @@
+[
+  {
+    "label": "false_normality",
+    "exit_code": 1,
+    "expected_rejection": true,
+    "seconds": 0.72,
+    "log_sha256": "802866a6c131d431249f9456e91dc1606616db82d60ad8ec5f41c92b274ec997"
+  },
+  {
+    "label": "foreign_source_hash",
+    "exit_code": 1,
+    "expected_rejection": true,
+    "seconds": 0.745,
+    "log_sha256": "802866a6c131d431249f9456e91dc1606616db82d60ad8ec5f41c92b274ec997"
+  },
+  {
+    "label": "wrong_source_count",
+    "exit_code": 1,
+    "expected_rejection": true,
+    "seconds": 0.786,
+    "log_sha256": "802866a6c131d431249f9456e91dc1606616db82d60ad8ec5f41c92b274ec997"
+  }
+]

@@ -1,0 +1,6 @@
+/workspace/scratch/cd3d6a3d0aa9/validation/pi-source-genesis-lean/build-b4zge7zi/invariant-sign_mutant.lean:5:2: error: type mismatch
+  weighted_binomial_invariant 1
+has type
+  ∑ j ∈ Finset.range (1 + 1), (-1) ^ j * ↑(Nat.choose 1 j) * 16 ^ j = (-15) ^ 1 : Prop
+but is expected to have type
+  ∑ j ∈ Finset.range (1 + 1), (-1) ^ j * ↑(Nat.choose 1 j) * 16 ^ j = 15 ^ 1 : Prop

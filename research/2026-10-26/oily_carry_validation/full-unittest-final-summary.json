@@ -1,0 +1,42 @@
+{
+  "before_snapshot_sha256": "365f42e7c6daec5dc91e6de39bbb4fa7f14b43f956b89e68141ce229d6718623",
+  "changed_python_files": [],
+  "command": "PYTHONPATH=$PWD /workspace/scratch/d39f55bad1de/succ-venv/bin/python -m unittest discover -s tests -p 'test_*.py' -v",
+  "commit_at_completion": "a8c7c85b7a1900d422090f1757c174e7aac69f44",
+  "elapsed_seconds": 1146.182,
+  "exit_code": 0,
+  "failure_error_skip_markers": [],
+  "formal_source_hash_stability": [
+    {
+      "all_source_hashes_still_match": true,
+      "declarations": 9,
+      "lane": "oily-branch-lean-final"
+    },
+    {
+      "all_source_hashes_still_match": true,
+      "declarations": 8,
+      "lane": "selected-phase-lean"
+    },
+    {
+      "all_source_hashes_still_match": true,
+      "declarations": 10,
+      "lane": "spectral-purity-lean-final"
+    },
+    {
+      "all_source_hashes_still_match": true,
+      "declarations": 41,
+      "lane": "pi-source-genesis-lean"
+    }
+  ],
+  "full_log_sha256": "715e51dc024544a9d4a86452cc4c5d43ab2db5710a0a649bfccbfaeeef751017",
+  "hosted_CI_status": "NOT_ASSERTED_BY_LOCAL_RECEIPT",
+  "normality_proved": false,
+  "observed_completion_utc": "2026-10-26T22:54:17.516403+00:00",
+  "passing_test_markers": 8844,
+  "python_source_count": 1697,
+  "python_source_set_and_hashes_unchanged": true,
+  "schema": "succ.oily-final-native-validation.v1",
+  "status": "PASS",
+  "tests": 8844,
+  "working_directory": "/workspace/scratch/cd3d6a3d0aa9/SUCC"
+}
