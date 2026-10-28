@@ -9,3 +9,9 @@
 - [Validation](pisot_relativistic_geometry/VALIDATION.md) with exact logs and explicit skipped tests.
 
 **Research claim map:** `research/2026-10-28/pisot_relativistic_geometry/ARITHMETIC_RELATIVITY_DOSSIER.md` §6. *Gauge curvature* of a Hopf SU2 bundle is not *Riemann curvature* of a Lorentzian metric. The four-sphere cannot itself carry a global smooth Lorentz metric because its Euler characteristic is 2. Mixed inconsistent arithmetic clock cochains have nonzero loop defects that disappear with an integrable shared potential. These facts are instructive **boundary conditions**, not evidence for new physical simultaneity breakdown.
+
+## Wavefront oracle depth-two continuation (2026-10-28)
+
+- [**Wavefront Oracle → E1 → E2 finite-difference theorem**](WAVEFRONT_ORACLE_TWO_STAGE_DIFFERENCE.md) uses the **actual Oily** two-geometric-loop packet weights to construct an explicitly delayed two-observer realization. At the critical endpoint, `E2(t)-E2(t-1)+E2(t-2)/4=W(t-2)/4` and the rescaled impulse has vanishing second finite difference.
+- [Exact module](../../observational_succ/wavefront_oracle_two_stage.py), [tests](../../tests/test_wavefront_oracle_two_stage.py), [standalone receipt](../../scripts/wavefront_oracle_two_stage_probe.py) and [independent symbolic check](../../scripts/wavefront_oracle_sympy_oracle.py).
+- **Firewall:** causal receipt is not the same as optimal Bayesian inference; the observer kernel is a declared realization of the source PGF, not a proved physical/factual path law for BBP. The exact Gamma(2) logarithmic source constant is **not** automatically the observer information deficit. Changed-seed and deterministic information controls fail the stronger inference.
