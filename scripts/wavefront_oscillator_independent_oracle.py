@@ -90,6 +90,10 @@ for j in range(14):
 gain=s.factor((1+u)*(1+v)/((1-u)*(1-v)))
 assert s.simplify(gain.subs(x,1)-9)==0
 
+mean_delay=s.factor(2+u/(1-u)+v/(1-v))
+assert s.simplify(mean_delay.subs(x,1)-4)==0
+assert s.simplify(mean_delay.subs(x,0)-2)==0
+
 # Source-mass invariant: c_(8k+j)=16^-k c_j; pumping restores 8-period,
 # but contracts/fixes no real BBP U_n carry statistics.
 
@@ -105,6 +109,8 @@ report={
   'two_stage_worst_cond_number':'9',
   'source_decoder_endpoint':'4*E2(t)-4*E2(t-1)+E2(t-2) = W(t-2)',
   'pi_packet_integral_certificates':14,
+  'max_uniform_mean_delay': '4',
+  'selected_BBP_phase_transport': 'Bounded prefix-sum difference <= 4 for any |W_n|<=1; paper proof, not novel Weyl cancellation',
   'pass': True,
   'scope': 'Exact symbolic small-model proof checks, not repo-wide tests or BBP Weyl saving',
 }

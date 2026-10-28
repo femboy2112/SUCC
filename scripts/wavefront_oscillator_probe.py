@@ -12,6 +12,8 @@ from observational_succ.wavefront_oscillator_completion import (
     minimum_registers_oily, normalized_chiral_period_radical2,
     normalized_chiral_periodic_response, sizebiased_emitter_rates,
     maximum_entropy_two_bit_emitter, decode_source_two_steps,
+    mean_wavefront_delay, signed_observer_prefix_defect,
+    certified_prefix_defect_bound,
 )
 from observational_succ.wavefront_oracle_two_stage import run_two_stages
 
@@ -49,6 +51,10 @@ def main():
        'normalized_source_radical2_taps':[[fs(a),fs(b)] for a,b in normalized_chiral_period_radical2()],
        'normalized_source_radical2_cycle':[[[fs(x) for x in component] for component in state] for state in normalized_chiral_periodic_response(x)],
        'full_received_source_reconstruction':True,
+       'critical_mean_wavefront_delay':fs(mean_wavefront_delay(1)),
+       'source_selected_weyl_observer_prefix_bound_for_unit_modulus':'4 for every N (classical proven inequality)',
+       'constant_signal_prefix_defect_n256':fs(signed_observer_prefix_defect([F(1)]*256,1)),
+       'constant_signal_prefix_certified_bound':fs(certified_prefix_defect_bound(1,1)),
        'maxent_two_bit_mean1_law':[fs(z) for z in maximum_entropy_two_bit_emitter(x)],
        'maxent_palm_rates':[fs(z) for z in sizebiased_emitter_rates(x)],
        'source_initial_condition':'Original BBP U0=0 is untouched and is NOT inferred from the oscillator.'

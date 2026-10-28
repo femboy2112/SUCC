@@ -196,13 +196,49 @@ Nothing in causality alone selects that particular filter: for a perfect noisele
 
 **No source-mixed autopromotion:** The positive source Neumann completion recovers π as a real number but does NOT bound `Σ_(n≤N)e(h U_n)`. Changed BBP initial seed `U_0=−π/16` with IDENTICAL forcing yields a shrinking future-tail phase orbit while preserving all positive grades, all oscillator completions and source-only Gamma constants. This decisive counterexample prevents interpreting the source completion as π normality.
 
+## 7. Source-faithful Weyl observable transport: an O(1) signed-sum equivalence
+
+A crucial missing test is whether the Oily observer's “completion” improves the actual base-16 normality gate. We can answer **exactly** in the present linear observer model, without assuming anything about the distribution of the authentic BBP orbit.
+
+Let the genuine original unwrapped zero-seeded BBP recurrence be `U_0=0`, `U_(n+1)=16U_n+r(n+1)` with the literal four signed poles. For **each fixed nonzero integer h**, define the actual selected circle character
+
+`W_n = exp(2π i h U_n)`.
+
+This input has `|W_n|=1` for every n, and the model's normalized causal delay-2 Oily output is
+
+`Y_n=Σ_(s≥2) a_s W_(n−s)`, with `a_s=q_(s−2)(x)≥0`, `Σ_s a_s=1` and `W_k=0` for k<0.
+
+The actual mean delay is
+
+`D_x=Σ_(s≥2) s a_s=2+u/(1−u)+v/(1−v)`, with `2≤D_x≤4` for 0≤x≤1.
+
+**WOC-12 (PROVED PAPER, exact signed Weyl-equivalence and sharp boundary budget).** For ANY bounded complex signal `|W_n|≤B` (including the actual BBP selected character), for every finite N≥1,
+
+`|Σ_(n=0)^(N−1) Y_n − Σ_(n=0)^(N−1)W_n| ≤ B D_x ≤ 4B`.
+
+**Proof.** Exchange the absolutely summable nonnegative normalized delay weights with the finite time sum. For a fixed delay s, the shifted zero-extended prefix is missing at most `min(s,N)` of the most recent original terms:
+
+`Σ_(n<N)W_(n−s)−Σ_(n<N)W_n = −Σ_(n=max(0,N−s))^(N−1)W_n`.
+
+The absolute value is at most `B min(s,N)≤Bs`. Multiply by `a_s`, sum, and use `Σ_s a_s s=D_x`. For the *constant* signal W_n=1 and the critical x=1, the prefix difference tends to `−D_1=−4` as N→∞, so 4 is a sharp uniform constant for the declared source class.
+
+Therefore
+
+`(1/N)Σ_(n<N)Y_n→0    ⇔    (1/N)Σ_(n<N) exp(2π i h U_n)→0`,
+
+with a **quantitative difference bounded by 4/N for every N**. This is a genuine factor using the source's actual signed phase orbit as INPUT, with explicitly source-conditioned smoothing as its OUTPUT. It preserves the open normality gate but supplies **no cancellation saving** because the two sums differ only by a bounded boundary term. It is a sharpened operator-side warning against promoting positive source filters to signed Weyl bounds.
+
+**Important nonlinear type firewall:** We filter `exp(2πi hU_n)` as a complex observable. We do **NOT** claim `Y_n=exp(2πi h·(filtered U)_n)`; nonlinear phase evaluation does not commute with convex averaging. For example two phases 1 and −1 average to 0, while the phase of their averaged arguments can be i. The finite numerical control uses the genuine four signed rational forcing and two source seeds (`0` and `1/3`); both obey the budget, as the theorem predicts. The changed-seed model is not normality-separating evidence. As previously, the stringent same-forcing coherent seed `−π/16` defeats source-only interpretations of original zero-seed selection.
+
+This separates **two mathematically useful but incompatible meanings of completion**: (i) fixed-point completion of the positive Oily source indeed reconstructs π as a number; (ii) the observer's stable average of the real selected BBP Fourier phases has *the same* unresolved Weyl cancellation as the original source. The former cannot replace the latter.
+
 ## 7. Exact tests, source fidelity, hostile controls and next lamp
 
 - **Exact-rational implementation:** `observational_succ/wavefront_oscillator_completion.py`. Small matrices and fractions; no model change to legacy sources. Source signed shell and original four rational poles are compared at 39 positive n; exact source grade identities tested across 7 rational x values and 18 grades; maximum-entropy two-bit activity and correlated occupancy countermodels included.
 - **Focused tests:** `tests/test_wavefront_oscillator_completion.py`. Tests cover source factorization, source resolvent, uniform tails, Hankel rank, Jordan rates, pumped cyclic closure and seed convergence, robust source inverse, sharp noise bound, normalized Q(√2) period and distinct normalization gauges, constant-predictability negative control, sign-mutation control.
 - **Independent algebra:** `scripts/wavefront_oscillator_independent_oracle.py` uses SymPy to derive its own matrix, check 18 packet grades, verify 14 exact π packet integrals, check endpoint gain nine and compute exact period-eight orbit.
 - **Independent autonomous oscillator:** `scripts/chiral_invariant_graph_oracle.py` verifies the original 4×4 T, the **orthonormal basis distinction**, `Q⁸=I`, normalized source waveform and all-entry graph equation `H Q=A H+B ell`, with exact algebraic output.
-- **Claim status:** WOC-01..03,05..09 are source-scoped paper proofs plus finite exact tests. WOC-04 is a **classical** max-entropy fixed-mean theorem; WOC-04A is a **conditional** size-biased binary-source compiler with a separately unpaid rate-to-retention transport assumption. Universal observer-optimality, generalized gravity, quantum uncertainty and signed Weyl estimates remain **UNVERIFIED**.
+- **Claim status:** WOC-01..03,05..09 and WOC-12 are source-scoped paper proofs plus finite exact tests. WOC-04 is a **classical** max-entropy fixed-mean theorem; WOC-04A is a **conditional** size-biased binary-source compiler with a separately unpaid rate-to-retention transport assumption. Universal observer-optimality, generalized gravity, quantum uncertainty and signed Weyl estimates remain **UNVERIFIED**.
 
 **Verdict-changing probe (strongest next):** Construct an explicit lawful SUCC causal *sensor* and optimization objective with resource/noise parameters determined independently of the desired Oily coefficients. Prove uniqueness of the optimal filter and inspect its source-preserving map from original zero-seeded `U_n`, not merely the contracting impulse source. Apply unchanged-seed, changed-seed, no-noise, sign-flipped, and coherent nonnormal controls. A real signed Weyl saving would be required for any π-normality promotion.
 

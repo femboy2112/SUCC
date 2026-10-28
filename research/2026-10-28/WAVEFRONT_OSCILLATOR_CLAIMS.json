@@ -77,6 +77,12 @@
       "status": "UNVERIFIED",
       "statement": "The oscillator completion implies \u03c0 normality or RH.",
       "scope": "No sublinear signed Fourier/Weyl estimate on actual U_n or completed Weil form."
+    },
+    {
+      "id": "WOC-12",
+      "status": "PROVED PAPER / EXACT FINITE CONTROL",
+      "statement": "For any bounded complex wavefront, normalized Oily two-stage filter prefix sums differ from original by at most B mean_delay\u22644B; applies directly to genuine U0=0 signed BBP phase characters and is a Weyl-equivalence, not a saving.",
+      "scope": "Zero-padded initial histories and positive unit-DC filter; no source-carried nontrivial Weyl estimate. Phase of filtered signal is not filter of phases."
     }
   ]
 }

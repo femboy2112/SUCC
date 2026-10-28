@@ -297,3 +297,75 @@ class ConditionalRetentionControl(unittest.TestCase):
         self.assertEqual(authentic_q0,F(1,4))
         self.assertEqual(alt_q0,F(9,16))
         self.assertNotEqual(authentic_q0,alt_q0)
+
+
+class OriginalWeylGateTransportTests(unittest.TestCase):
+    def test_uniform_source_delay_bound(self):
+        from observational_succ.wavefront_oscillator_completion import mean_wavefront_delay
+        for x in (F(0),F(1,7),F(1,2),F(7,8),F(1)):
+            a=mean_wavefront_delay(x)
+            self.assertTrue(F(2)<=a<=F(4))
+        self.assertEqual(mean_wavefront_delay(0),2)
+        self.assertEqual(mean_wavefront_delay(1),4)
+
+    def test_source_sum_diff_bounded_independently_of_horizon(self):
+        from observational_succ.wavefront_oscillator_completion import (
+            mean_wavefront_delay,signed_observer_prefix_defect,
+            certified_prefix_defect_bound,
+        )
+        for x in (F(0),F(1,2),F(7,8),F(1)):
+            for n in (1,2,3,8,16,32,100):
+                W=[F((-1)**k) for k in range(n)]
+                d=signed_observer_prefix_defect(W,x)
+                self.assertLessEqual(abs(d),certified_prefix_defect_bound(x,1))
+                self.assertLessEqual(abs(d),F(4))
+
+    def test_zero_seed_constant_input_attains_sharp_four(self):
+        from observational_succ.wavefront_oscillator_completion import (
+            signed_observer_prefix_defect,
+        )
+        vals=[]
+        for n in (8,32,64,128,256):
+            vals.append(-signed_observer_prefix_defect([F(1)]*n,1))
+        self.assertTrue(all(x<y for x,y in zip(vals,vals[1:])))
+        self.assertLess(F(3999,1000),vals[-1])
+        self.assertLess(vals[-1],F(4))
+
+    def test_nonlinear_phase_of_mean_is_not_mean_of_phases(self):
+        # Nonlinearity caution: for U phases (0,1/2), average e(U) is 0,
+        # whereas e(average U)=i. The new Weyl theorem filters e(U), not U.
+        import cmath
+        phases=[cmath.exp(2j*cmath.pi*v) for v in (0,F(1,2))]
+        average_phase=sum(phases)/2
+        phase_of_average=cmath.exp(2j*cmath.pi*F(1,4))
+        self.assertLess(abs(average_phase),1e-12)
+        self.assertGreater(abs(phase_of_average-average_phase),F(9,10))
+
+
+class OriginalBBPSelectedPhaseControl(unittest.TestCase):
+    def test_unchanged_signed_forcing_zero_seed_and_changed_seed(self):
+        """Numerical finite diagnostics only; the general bound is exact paper math."""
+        import cmath,math
+        from observational_succ.wavefront_oscillator_completion import signed_four_pole_moment
+        nmax=64
+        a=F(0)
+        b=F(1,3)
+        p0=[];pm=[]
+        for n in range(nmax):
+            p0.append(cmath.exp(2j*math.pi*float(a%1)))
+            pm.append(cmath.exp(2j*math.pi*float(b%1)))
+            force=signed_four_pole_moment(n+1)
+            a=16*a+force
+            b=16*b+force
+        rotation=cmath.exp(2j*math.pi/3)
+        self.assertTrue(all(abs(w-rotation*v)<1e-11 for w,v in zip(pm,p0)))
+        for phases in (p0,pm):
+            y1=0j;y2=0j;difference=0j
+            for n,w in enumerate(phases):
+                new1=y1/2+(phases[n-1]/2 if n else 0j)
+                new2=y2/2+y1/2
+                y1,y2=new1,new2
+                difference+=y2-w
+                self.assertLessEqual(abs(difference),4+1e-10)
+        # This same filtering applies to a coherent changed-seed control; no
+        # source-only observer result can prove genuine zero-seed normality.

@@ -319,3 +319,38 @@ def sizebiased_emitter_rates(x):
     x=SourceGeometry(F(x)).x
     p00,p01,p10,p11=maximum_entropy_two_bit_emitter(x)
     return (p01+p10,2*p11)
+
+
+def mean_wavefront_delay(x) -> F:
+    """Mean effective age of the *normalized* Oily two-stage filter.
+
+    Two mandatory retarded stages plus two independent conditional
+    geometric grades. This is in [2,4] for the genuine 0<=x<=1 source.
+    """
+    s=SourceGeometry(F(x))
+    return 2+s.u/(ONE-s.u)+s.v/(ONE-s.v)
+
+
+def signed_observer_prefix_defect(signal: Iterable[F], x) -> F:
+    """Exact REAL rational prefix sum Y-W of Oily convolution of W.
+
+    The paper theorem also holds for any bounded COMPLEX sequence, including
+    W_n=exp(2 pi i h U_n), with absolute defect <= B*mean_wavefront_delay.
+    Crucial: Y is an average of *phase values*, not phase of an averaged U.
+    """
+    from .wavefront_oracle_two_stage import run_two_stages
+    values=tuple(F(z) for z in signal)
+    _,e2=run_two_stages(values,x)
+    return sum(e2,ZERO)-sum(values,ZERO)
+
+
+def certified_prefix_defect_bound(x, signal_supremum) -> F:
+    """Universal signed-sum bound for any bounded input on the Oily filter.
+
+    W_n on the unit circle gives <=mean_wavefront_delay(x)<=4,
+    uniformly in horizon N, by positivity and finite mean of delay law.
+    """
+    bound=F(signal_supremum)
+    if bound<0:
+        raise ValueError('nonnegative uniform input bound required')
+    return bound*mean_wavefront_delay(x)
