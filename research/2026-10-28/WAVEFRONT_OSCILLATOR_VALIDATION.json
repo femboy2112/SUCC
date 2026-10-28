@@ -1,0 +1,48 @@
+{
+  "base_main": "b763ba8ef375fbac221e29e4396989a635a6ef36",
+  "branch": "research/pisot-hopf-arithmetic-relativity-2026-10-28",
+  "claims_not_licensed": [
+    "pi normality",
+    "RH",
+    "optimal causal Bayesian observer",
+    "quantum uncertainty",
+    "Einstein/GR physical field"
+  ],
+  "date": "2026-10-28",
+  "exact_standard_library_tests": {
+    "count": 31,
+    "passed": 30,
+    "skip_reason": "requires full SUCC chiral source checkout",
+    "skipped": 1
+  },
+  "full_succ_native_run": "NOT_RUN_ISOLATED_CHECKOUT",
+  "hosted_CI": "NOT_CLAIMED",
+  "independent_oracles": {
+    "14_exact_pi_packet_integrals": true,
+    "chiral_source_graph_sympy_4_coordinates": true,
+    "full_report_decoder": true,
+    "original_taps_correct": true,
+    "sharp_noise_gain": true,
+    "size_biased_2bit_micro_source": true,
+    "source_resolvent_sympy": true
+  },
+  "lean_kernel": "NOT_RUN",
+  "required_original_source_preserved": true,
+  "run_contract": [
+    "PYTHONPATH=. python -m unittest tests.test_wavefront_oscillator_completion -v",
+    "python scripts/wavefront_oscillator_probe.py",
+    "python scripts/wavefront_oscillator_independent_oracle.py",
+    "python scripts/chiral_invariant_graph_oracle.py",
+    "python scripts/verify_provenance.py",
+    "PYTHONPATH=. python -m unittest discover -s tests -p test_*.py",
+    "python scripts/observer_foundations_probe.py",
+    "python scripts/ordinal_succ_report_probe.py"
+  ],
+  "staged_regression_tests": {
+    "count": 120,
+    "passed": 117,
+    "skip_reason": "3 direct original source integration tests require full checkout; no failed tests",
+    "skipped": 3
+  },
+  "status": "LOCAL_PROBE_COMPLETE_REPO_CI_PENDING"
+}
