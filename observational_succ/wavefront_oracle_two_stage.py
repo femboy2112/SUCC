@@ -196,3 +196,47 @@ def one_stage_forcing_residual(signal: tuple[Q, ...] | list[Q], x: Q) -> tuple[Q
         -(1-g.u)*(w[t-1] if t else 0)
         for t in range(len(w))
     )
+
+
+def equal_stage_critical_grade(depth: int, j: int) -> Q:
+    """Declared m-stage extension at theta=1/2; only m=2 is authentic Oily.
+
+    w_(m,j)=C(j+m-1,m-1)/2**(j+m).  This is not evidence that the
+    original BBP source has more than its two authenticated loops.
+    """
+    from math import comb
+    if type(depth) is not int or depth < 1:
+        raise ValueError("observer depth must be a positive integer")
+    _index(j, "grade")
+    return Q(comb(j+depth-1,depth-1), 2**(j+depth))
+
+
+def equal_stage_depth_difference(depth: int, j: int) -> int:
+    """The mth forward difference of 2**(j+m) w_(m,j) is zero."""
+    from math import comb
+    if type(depth) is not int or depth < 1:
+        raise ValueError("observer depth must be a positive integer")
+    _index(j, "grade")
+    return sum(((-1)**(depth-k)*comb(depth,k)*
+                comb(j+k+depth-1,depth-1) for k in range(depth+1)))
+
+
+def run_equal_stage_tower(signal: tuple[Q,...] | list[Q], depth: int, theta: Q=Q(1,2)) -> tuple[Q,...]:
+    """Formal m-stage retarded tower; source-authentic grade only at m=2.
+
+    Each stage is E_(k+1)(t)=theta*E_(k+1)(t-1)
+                +(1-theta)*E_k(t-1), and E_0=W.
+    """
+    if type(depth) is not int or depth < 0:
+        raise ValueError("depth must be a nonnegative integer")
+    theta=Q(theta)
+    if not Q(0)<=theta<Q(1):
+        raise ValueError("requires 0<=theta<1")
+    cur=tuple(Q(v) for v in signal)
+    for _ in range(depth):
+        nxt=[]
+        for t in range(len(cur)):
+            nxt.append(theta*(nxt[t-1] if t else Q(0))
+                       +(1-theta)*(cur[t-1] if t else Q(0)))
+        cur=tuple(nxt)
+    return cur

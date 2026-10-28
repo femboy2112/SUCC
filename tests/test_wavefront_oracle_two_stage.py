@@ -7,6 +7,7 @@ from observational_succ.wavefront_oracle_two_stage import (
     geometric_impulse_response, critical_grade, critical_rescaled_grade,
     critical_second_difference, finite_wavefront_past,
     finite_memory_information_defects, depth_defect_residual, one_stage_forcing_residual,
+    equal_stage_critical_grade,equal_stage_depth_difference,run_equal_stage_tower,
 )
 
 class TestSourceTwoStage(unittest.TestCase):
@@ -113,6 +114,23 @@ class TestSourceTwoStage(unittest.TestCase):
         _,e2b=run_two_stages(forcing,Q(1))
         self.assertEqual(e2a,e2b)
         self.assertNotEqual(zero,mutated)
+
+    def test_all_depth_binomial_hierarchy_but_only_depth2_source(self):
+        for depth in range(1,7):
+            for j in range(42):
+                self.assertEqual(equal_stage_depth_difference(depth,j),0)
+            pulse=[Q(1)]+[Q(0)]*70
+            out=run_equal_stage_tower(pulse,depth)
+            for t in range(len(out)):
+                expected=equal_stage_critical_grade(depth,t-depth) if t>=depth else Q(0)
+                self.assertEqual(out[t],expected)
+        for j in range(30):
+            self.assertEqual(equal_stage_critical_grade(2,j),critical_grade(j))
+
+    def test_tower_depth_source_not_auto_extension(self):
+        self.assertNotEqual(equal_stage_critical_grade(3,0),critical_grade(0))
+        with self.assertRaises(ValueError):equal_stage_critical_grade(0,4)
+        with self.assertRaises(ValueError):run_equal_stage_tower([Q(1)],-1)
 
     def test_third_stage_is_mutation_not_source(self):
         # A third independent Geom(1/2) would have coefficient C(j+2,2)/2^(j+3)

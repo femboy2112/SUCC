@@ -173,3 +173,31 @@ The genuine SUCC `S`/`V_p` affine braid and its source-labelled inverse residues
 - Existing source module: `observational_succ/rank_two_chiral_towers.py`, `research/2026-10-27/OILY_ZERO_ONE_LOG_GERM_BRIDGE.md`, and original four-pole source instructions in AGENTS.md.
 
 References: NIST DLMF §5.2, 5.4, 5.9 (Gamma, digamma and Euler constant); classical conditional expectation orthogonal projection and tower property, as presented e.g. in Tropp *Probability Theory* CMS 117 (Caltech, 2024), §19.3.4, `https://tropp.caltech.edu/notes/Tro24-Probability-Theory-LN.pdf`. Any claimed independent novelty is UNVERIFIED. No hosted CI or Lean kernel runs have been claimed.
+
+## 10. General recursive observer tower: the difference order equals its depth
+
+The two-stage result has a mathematically exact all-depth extension, without implying that the authentic BBP source contains more than its two documented Oily loops.
+
+Choose `0<=theta<1` and define recursively
+
+`E_0(t)=W(t)`,
+
+`E_(m+1)(t)-theta E_(m+1)(t-1)=(1-theta)E_m(t-1)`,
+
+with negative-time states zero. In the two discrete coordinates `(m,t)`, this is an exact **causal partial-difference equation**: each unit increase of epistemic depth consumes at least one unit of source time, and all descendant reports depend only on earlier source events. The delay-operator identity is
+
+`(1-theta L)^m E_m=(1-theta)^m L^m W`.
+
+For an oracle impulse at t=0, the output at time t=m+j has coefficient
+
+`w_(m,j)=binom(j+m-1,m-1) (1-theta)^m theta^j`, `j>=0`.
+
+At `theta=1/2` (the Oily endpoint), define `a_(m,j)=2^(j+m)w_(m,j)=binom(j+m-1,m-1)`. This is a polynomial of degree `m-1` in j, and therefore obeys the universal finite-difference identity
+
+**(WEO-10)** `Delta_j^m a_(m,j)=0`.
+
+This makes the user's recursion-depth idea precise: with these declared response kernels, *one observer layer yields first-order differences; two layers yield second-order differences; m layers yield order m*. At the authentic source m=2 and theta=1/2, it recovers WEO-01 through WEO-05 exactly. At m=3+ it is a **model mutation/control**, not a sourced extra BBP carrier.
+
+The continuum geometric-small-success scaling for m stages has Gamma(m) Laplace transform `(1+s)^-m`, but the actual Oily boundary stage probability is fixed at 1/2. Thus ``m stages => Gamma(m)`` is true only under the explicitly declared scaling limit, not for the fixed authenticated discrete packet law.
+
+**Claim status WEO-10:** paper-proved general time/depth recurrence with exact rational finite checks at m=1,...,6 and grades j=0,...,41. Source fidelity only at m=2; no signed Weyl or GR field equation follows.

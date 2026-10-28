@@ -34,4 +34,10 @@ for j in range(10):
 e,svar=s.symbols('eps s',positive=True)
 G_eps=(e/(1-(1-e)*s.exp(-e*svar)))**2
 assert s.limit(G_eps,e,0,dir='+')==(1+svar)**(-2)
+for m in range(1,6):
+    # Independent coeff certificate for the higher-depth conditional model.
+    tseries=s.series((2-z)**(-m),z,0,9).removeO().expand()
+    for j in range(9):
+        assert s.simplify(tseries.coeff(z,j)-s.binomial(j+m-1,m-1)/2**(j+m))==0
+
 print('WEO_INDEPENDENT_SYMPY_PASS: recurrence/discriminant/double pole/16 packets/10 z-series/Gamma-limit control')
