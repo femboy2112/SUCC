@@ -196,3 +196,42 @@ LRU-4. Absence from these searches is **not** evidence sufficient to claim
 academic novelty. The next meaningful priority check is expert comparison
 of LRU-1/4 with the actual source author's methods and any unpublished
 rule-generation work; no messages to authors have been sent.
+
+## Subsequent support and phase reductions
+
+AFFINIZATION.md proves that arbitrary phase schedules local along unbounded
+sizes at scale one admit rational affine replacements on identical fixed
+finite supports. OBSTRUCTION.md proves the sharp cost `|A|>=2|R|` on a
+single odd-part chain, hence excludes positive gain there even without phase
+regularity. Poliakova supplies the locality convention and quarter-phase
+rescue patterns; compactness and finite covering counts are standard methods.
+The inspected primary source does not state these consequences. Targeted
+searches for local shifted-runner rules, dyadic replacements and odd parts
+located no matching result, but this is a bounded priority audit, not proof
+of novelty. These additions do not close any new n=18..94 shifted case.
+
+The final G1 Lean export checks a supporting upper-half metric theorem using
+a second explicit perturbation construction. Kernel certification does not
+establish priority or certify the full unrestricted growth theorem.
+
+## General geometric and finite-checking context
+
+[Beck and Everett, *Lonely Runner Relations*, arXiv:2609.06259v2](https://arxiv.org/html/2609.06259v2),
+23 September 2026, Theorems 1.1 and 3.2 and their geometric proof, derives
+short integer relations from zonotope width. Such a relation can involve
+retained baseline speeds alone, so that statement does not by itself give
+a bound for the two inserted speeds in the present family.
+
+[Malikiosis, Santos and Schymura, *Linearly-exponential checking is enough
+for the Lonely Runner Conjecture and some of its variants*,
+arXiv:2411.06903v2](https://arxiv.org/html/2411.06903v2), 21 June 2025,
+Theorems A and B and the projection/lifting proof, gives a general finite
+checking reduction with a bound of order n^(2n). Its shifted theorem has
+additional lower-dimensional shifted-conjecture and Lonely Vector Property
+hypotheses. These projections can combine or delete generators; they do not
+preserve the fixed R,S,A roles in AFF-01. The inspected theorems do not supply
+the present unrestricted two-entry cubic bound or the fixed-support phase
+existence result. This comparison is a scoped dependency/priority assessment,
+not a claim that every consequence of those papers has been exhausted.
+The additional source hashes and theorem interfaces are retained in the
+separate literature supplement receipt.

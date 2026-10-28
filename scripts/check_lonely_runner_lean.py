@@ -20,7 +20,7 @@ from cambrian_audit_c_lean import uncomment
 
 ROOT = Path(__file__).resolve().parents[1]
 PROJECT = ROOT / "formal/mathlib_bridge"
-MODULES = ("LonelyRunnerDeletion", "LonelyRunnerCover", "LonelyRunnerUniform")
+MODULES = ("LonelyRunnerDeletion", "LonelyRunnerTwoEntry", "LonelyRunnerCover", "LonelyRunnerUniform")
 ALLOWED_AXIOMS = {"propext", "Classical.choice", "Quot.sound"}
 
 
@@ -114,6 +114,10 @@ def main():
         if set(exports) != set(names):
             failures.append("incomplete-exports")
         examples = [
+            ("one-insertion-hole", "LonelyRunnerTwoEntry",
+             "(n r s w : ℤ) (hn : 5 ≤ n) (hr : 1 ≤ r) (hrs : r < s) (hs : s ≤ n-1) (hupper : n-1 < 2*r) (hw : n ≤ w)",
+             "∃ t : ℚ, 0 ≤ t ∧ t ≤ 1 ∧ ∀ i : ℤ, ((1 ≤ i ∧ i < n ∧ i ≠ r ∧ i ≠ s) ∨ i = w) → ∀ z : ℤ, 1/(n:ℝ) < |(i:ℝ)*(t:ℝ)-(z:ℝ)|",
+             "upper_half_one_insertion_hole n r s w hn hr hrs hs hupper hw", "1/(n:ℝ)", "2/(n:ℝ)"),
             ("deletion-radius", "LonelyRunnerDeletion",
              "(n r : ℤ) (hn : 5 ≤ n) (hr : 1 ≤ r ∧ r ≤ n-2)",
              "∃ t : ℝ, 0 ≤ t ∧ t ≤ 1 ∧ ∀ i : ℤ, 1 ≤ i → i < n → i ≠ r → ∀ z : ℤ, (2:ℝ)/(2*(n:ℝ)-3) ≤ |(i:ℝ)*t-(z:ℝ)|",
@@ -155,7 +159,7 @@ def main():
               "source_hashes": hashes, "sources_unchanged": unchanged,
               "commands": commands, "theorem_exports": exports,
               "negative_controls": controls, "failures": failures,
-              "scope": "Universal deleted-speed witness; real closed-chain cover soundness; finite binary-pattern packing. Analytic exact maxima, general local-rule equivalence and rationalization remain paper proofs.",
+              "scope": "Universal deleted-speed witness; full universal upper-half one-insertion hole with rational time and real distances; real closed-chain cover soundness; finite binary-pattern packing. Unrestricted cubic growth, exact maxima, local-rule equivalence, compactness and rationalization remain paper proofs.",
               "general_lonely_runner_proved": False}
     (destination / "kernel-observation.json").write_text(json.dumps(record, indent=2, sort_keys=True) + "\n")
     print(record["status"], len(exports), "theorems;", len(controls), "paired controls")

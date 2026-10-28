@@ -114,7 +114,7 @@ multiple possibility must be treated, and is treated next.
 
 ## 3. GAMMA-01: a strict hole after any single insertion
 
-**Theorem.** For every integer `w>=n`,
+**Theorem (now kernel-checked with the complete metric witness).** For every integer `w>=n`,
 
 \[
  \operatorname{LR}(S\cup\{w\})>{1\over n}.
@@ -165,6 +165,27 @@ The upper restriction `(n-1)/(nw)` is essential: the entire rest of the safe
 interval need not avoid subsequent bad bands of a very large common multiple.
 The proof chooses a point immediately after the central bad band and before
 the next one. It does not assume that one band is the only band on all of J.
+
+### A second construction used by the Lean proof
+
+The common-multiple case also admits the explicit displacement
+`u=(n+1)/(n^2*w)`. Write `w=m*r1=l*r2`. Positive integer quotients satisfy
+`l<m`, so `m*r1=l*r2<=(m-1)*(n-1)` and therefore
+`m*(n-r1)>=n-1+m>=n`. It follows that
+`n*m*(n-r1)>(n+1)*(n-1)`, exactly the strict safe-radius inequality
+for this u. Also `w*u=(n+1)/n^2` lies strictly between `1/n` and `1-1/n`.
+This avoids a gcd/lcm calculation and the midpoint choice.
+
+`formal/LonelyRunnerTwoEntry.lean` exports
+`ObservationalSUCC.LonelyRunnerTwoEntry.upper_half_one_insertion_hole`:
+for every integer source satisfying the hypotheses, there is a rational t in
+`[0,1]` such that every retained speed or inserted w has real distance strictly
+greater than `1/n` from every integer. The proof covers both nonmultiple
+branches and the common-multiple branch. The guarded local kernel replay
+accepted all seven declarations and rejected the `2/n` strengthening; the
+latter is false already for n=5, r1=3, r2=4, w=5, since the retained speeds
+1 and 2 have maximum loneliness 1/3. This is a complete G1 formalization,
+not a proof from an assumed separation certificate.
 
 ## 4. GAMMA-02: exact endpoint spacing bounds the second speed
 
@@ -539,7 +560,7 @@ does not itself establish a counterexample at smaller n.
 
 | Claim | Scope | Verdict | Next falsifier |
 |---|---|---|---|
-| GAMMA-01 | Every single insertion w>=n after two upper-half deletions | PROVED LOCAL, rational witness | Shared multiple with extreme speed and gcd |
+| GAMMA-01 | Every single insertion w>=n after two upper-half deletions | FORMALIZED, complete rational witness and real metric quantifiers | Shared multiple with extreme speed and gcd |
 | GAMMA-02 | Any genuine gap after one insertion has width at least `1/[nw(n-1)]` | PROVED LOCAL, source-endpoint proof | Both endpoints from the inserted speed |
 | GAMMA-03 | Periodic occupancy with sharp slack `2(n-2)/(n^2w)` | CLASSICAL ELEMENTARY estimate rederived | A full bad band saturates the constant |
 | GAMMA-04 | All-time covers in the exact family obey (G4) | PROVED LOCAL on paper; stronger prior classification located | Independent measure and endpoint audit |
@@ -548,7 +569,8 @@ does not itself establish a counterexample at smaller n.
 | GAMMA-05 | All two-entry covers, arbitrary distinct deletions, obey (G5) | PROVED LOCAL on paper using Zhang cover classification; priority UNVERIFIED | Audit strict-cover versus equality distinction and both sporadic cases |
 | GAMMA-X3 | Infer all tight sets are Goddyn–Wong from the cubic bound | UNPROVED; false without a restricted classification | The n=8 middle-range sporadic example must survive |
 
-No Lean theorem presently exports GAMMA-01–05. A next formalization target is the
-common-multiple witness, followed by exact source-endpoint spacing; the occupancy
-argument needs genuine finite-union length or measure semantics. Arithmetic-only
-formalization must not be advertised as a kernel proof of the full cubic theorem.
+GAMMA-01 is now fully formalized in `LonelyRunnerTwoEntry.lean`.
+GAMMA-02–05 remain paper proofs: source-endpoint spacing and periodic occupancy
+need formal finite-union or measure semantics, and the unrestricted theorem
+also imports the audited classical one-entry classification. The G1 kernel
+result must not be advertised as a kernel proof of the full cubic theorem.

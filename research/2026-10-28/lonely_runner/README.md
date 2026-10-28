@@ -15,7 +15,8 @@ Main, archives, authentic BBP sources and sibling research are untouched.
   This supplies an effective polynomial bound for the two-entry case of
   Zhang's Question 8.2, including deletions outside the upper half. The
   proof imports the audited cover form of his one-entry classification.
-  **PAPER PROOF; no full Gamma Lean claim.** Stronger prior classification
+  **PAPER PROOF for cubic growth.** The complete upper-half one-insertion
+  hole theorem is now kernel checked, including a rational-time metric witness. Stronger prior classification
   covers the upper-half restriction. Unrestricted academic priority remains
   unverified after a primary-source search.
 * **Local-rule converse and finite decision.** [MANUSCRIPT.md](MANUSCRIPT.md)
@@ -25,6 +26,10 @@ Main, archives, authentic BBP sources and sibling research are untouched.
   obstruction in the prescribed binary/3 ladder. Its first saving rule has
   cap 192; this is a family classification, not a global optimality theorem.
   These are paper proofs extending Poliakova's resonant-interval method.
+  [AFFINIZATION.md](AFFINIZATION.md) removes phase regularity from existence
+  on fixed finite supports. [OBSTRUCTION.md](OBSTRUCTION.md) proves the sharp
+  bound `|A|>=2|R|` whenever all affected speeds share one odd part, even for
+  arbitrary phase schedules.
 * **Question 8.4.** [ALPHA.md](ALPHA.md) proves the supplied lower bound and
   the sharp minimum over deleted speeds. Equality in `2/(2n-3)` occurs
   exactly at `(n,r)=(5,2),(6,2)`. [ALPHA_PRIORITY.md](ALPHA_PRIORITY.md)
@@ -44,7 +49,7 @@ Same-model agent reviews are correlated checks, not external peer review.
 `n=5, R={1,3}, W={6,8}` and `n=8, R={2,3}, W={11,13}`. Proved width
 exclusions and 8,231 individual exact gap tests cover a finite domain of
 79,648,374 cases supplied by Gamma. A separate Fraction implementation,
-using the larger uniform speed bound, independently reproduces n=5..8.
+using the larger uniform speed bound, independently reproduces the whole n=5..20 classification.
 Both surviving covers have separately verified certificates and exact maxima.
 No complete-census Lean claim is made.
 

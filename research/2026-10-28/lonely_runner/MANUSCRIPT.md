@@ -4,7 +4,7 @@
 
 ## Abstract
 
-Poliakova introduced local uniform replacement rules for shifted Lonely Runner covers. We characterize locality of any finite rule with phases affine in the covering radius by finitely many interval-cover conditions, rational for rational phase coefficients. Failure of a condition produces an actual responsible time at an admissible scale. For a fixed affected even support and a fixed number of odd additions, the added velocities can be compressed into a bounded set without losing locality. Consequently existence of a local rule with prescribed largest affected velocity and prescribed positive gain is decidable by a finite collection of rational linear feasibility problems; real phase coefficients offer no advantage over rational ones. We also classify the rules in the binary/3 ladder with Poliakova's specified phases: its smallest gain-positive rule has largest affected velocity 192 and is her original construction. These results do not produce a new shifted-runner counterexample below 95.
+Poliakova introduced local uniform replacement rules for shifted Lonely Runner covers. We characterize locality of any finite rule with phases affine in the covering radius by finitely many interval-cover conditions, rational for rational phase coefficients. Failure of a condition produces an actual responsible time at an admissible scale. For a fixed affected even support and a fixed number of odd additions, the added velocities can be compressed into a bounded set without losing locality. Consequently existence of a local rule with prescribed largest affected velocity and prescribed positive gain is decidable by a finite collection of rational linear feasibility problems; real phase coefficients offer no advantage over rational ones. We also classify the rules in the binary/3 ladder with Poliakova's specified phases: its smallest gain-positive rule has largest affected velocity 192 and is her original construction. A compactness argument further shows that arbitrary phase schedules local along unbounded sizes admit rational affine replacements on identical supports. If all affected velocities share one odd part, any such rule requires at least two odd additions per removed speed; this bound is sharp. These results do not produce a new shifted-runner counterexample below 95.
 
 ## 1. Definitions and comparison with prior work
 
@@ -99,7 +99,7 @@ Fix the finitely many $\alpha$ choices. Use each untruncated rescue interval wit
 
 **Explicit height bound.** For a fixed nonempty rescuer support of size $d$, put $B=\max(L,\max_{v\in H}v)$. If this support admits a local rule, there is a feasible rational phase vector whose $\beta$ coefficients share a denominator $D\le d!B^d$. Each $\alpha$ denominator divides $M=\operatorname{lcm}(Q)$. Indeed, after clearing denominators every chain/polytope constraint has integer coefficient magnitude at most $B$: overlap gives $v_i\beta_j-v_j\beta_i\le v_i+v_j$, and endpoint/box constraints have coefficient at most $L$. A nonempty bounded polyhedron has a vertex with $d$ independent active constraints. Cramer's rule gives a common denominator dividing their nonzero integer determinant, whose absolute value is at most $d!B^d$ by the determinant expansion. This bound is extremely large; no enumeration up to it was performed.
 
-This is an in-principle completeness bound, not an efficient exhaustive search or a claim that the optimum cap has been determined. It concerns **local** rules with phases affine in $\delta$, not all cover-preserving replacements or arbitrary phase dependence.
+This is an in-principle completeness bound, not an efficient exhaustive search or a claim that the optimum cap has been determined. At this stage it concerns **local** affine-phase rules, not all cover-preserving replacements. Section 5 extends existence to arbitrary phase schedules on fixed finite supports.
 
 ## 4. Sharpness within the binary/3 ladder
 
@@ -119,15 +119,91 @@ Each removal is paired with its distinct immediately following retained position
 
 This theorem does not claim that every local rule has $L\ge192$. Other phases, velocity families, or greater gain remain possible.
 
-## 5. Exact and formal verification
+## 5. Arbitrary phase schedules and a sharp arithmetic obstruction
+
+The affine restriction loses no existence possibilities on fixed finite supports.
+The following statement concerns existence of a replacement, not identity with
+the input schedule.
+
+**Theorem 5 (affinization on fixed supports).** Fix finite R,S,A as in Section 1.
+Suppose arbitrary circle-valued phases are local at scale one along a sequence
+of admissible sizes tending to infinity. Then rational affine phases on the
+same R,S,A are local at every admissible size and odd scale.
+
+*Proof.* Let the radii be delta_j tending to zero. By compactness of the finite
+phase torus, choose one joint subsequence converging to alpha. Signed local
+lifts epsilon_vj of the phase errors tend to zero. By compactness of a finite
+product of extended real lines, pass to a further joint subsequence for which
+epsilon_vj/delta_j tends to beta_v, finite or infinite, for every label v.
+
+Fix any responsible residue cell (q,k,z), with gcd(k,q/2)=1 and z in [-1,1].
+At t_j=(k+delta_j*z)/q modulo one, q is actually responsible eventually:
+every earlier even p has pk/q nonintegral and stays outside the shrinking
+bad neighborhood. A nonresonant limiting phase cannot rescue these times.
+For a resonant label with infinite beta_v, its residual tends to zero while
+its absolute value divided by delta_j tends to infinity; it eventually lies
+strictly between delta_j and 1/2. A finite beta_v with
+abs((v/q)*z+beta_v)>1 likewise fails eventually. If no finite beta_v covered
+this cell, all finitely many labels would fail, a contradiction. This uses
+one fixed limiting vector for every cell, without an uncountable diagonal
+selection. Reset unused infinite beta entries to zero. Theorem 1 supplies
+all-size, all-scale locality for the resulting real affine rule. The
+fixed-support rationalization in Theorem 3 makes its coefficients rational
+without changing velocities or roles. ∎
+
+Thus Theorem 3 also decides existence of local rules with arbitrary phase
+schedules. This does not yield an effective limit-extraction algorithm for a
+given schedule. Alternating phases 3/4+delta/8 and 1/4-delta/8 on additions
+d,3d, with removal 4d and odd d, give a local schedule with two distinct
+circle limits. No fixed affine schedule agrees with it eventually.
+
+**Theorem 6 (one odd part cannot save runners).** Suppose all affected
+velocities belong to {d*2^a:a>=1}, for one fixed positive odd integer d.
+Any local rule, even with arbitrary phase schedules along unbounded sizes,
+satisfies |A|>=2|R|. The coefficient 2 is sharp for every d.
+
+*Proof.* Apply Theorem 5 to reduce to affine phases. Give each endpoint of
+each responsible residue cell (q,k,z=+-1) weight 1/(2*|K_q|). The total
+required endpoint mass is |Q|. Let E(v) be the total mass covered by an
+exactly resonant rescuer v. Locality implies |Q|<=sum_v E(v).
+
+For a rephased v=d*2^b with alpha_v=0 modulo one, resonance occurs exactly
+at affected q<=v. Its capacity is half the number of distinct signed powers
+of two lying in one interval of length 2 centered at -beta_v. That interval
+contains at most two such numbers, so E(v)<=1. If alpha_v is nonzero,
+resonance can occur only at q=d*2^a with a>b, and forces its reduced
+denominator to be exactly 2^(a-b). This singles out at most one q, again
+giving E(v)<=1.
+
+For any odd added v, resonance at q=d*2^a with a>=2 forces alpha_v's reduced
+denominator to have exact 2-adic order a; at a=1 that order is 0 or 1.
+Thus an odd v resonates at at most one q. The fixed-point-free involution
+k -> k+q/2 modulo q preserves K_q and changes vk/q by a half-integer.
+At most half the residues resonate, so E(v)<=1/2. This includes q=2d;
+discarding its even responsible residues would invalidate the argument.
+Consequently |R|+|S|<=|S|+|A|/2, proving the inequality.
+
+For sharpness remove 4d, add d and 3d, and give both phase 3/4. The two
+added runners rescue the two odd residue classes modulo four, with tangent
+slopes 1/4 and 3/4. Theorem 1 gives locality, with |A|=2|R|. ∎
+
+The same-odd-part hypothesis is necessary for this conclusion: Poliakova's
+rule uses odd parts 1 and 3 and has positive gain. Its rescuer v=12 has
+endpoint capacity 3/2, pinpointing the failure of the even-rescuer bound.
+Full quantifiers, limit details, exact controls and priority boundaries are
+recorded in AFFINIZATION.md and OBSTRUCTION.md. These remain paper proofs;
+compactness and elementary counting are standard tools, and academic priority
+of this application is not certified by the present search.
+
+## 6. Exact and formal verification
 
 The rule checker enumerates every responsible residue and performs rational interval unions. For Poliakova's rule it checks 184 cells, independent of $N$ and scale. A separate source-labelled circle-cover generator and integer-only checker reproduce known examples with 5, 13, and 95 runners; the 95-runner concrete certificate has 5,225 intervals. This distinction is the mathematical advantage of the local characterization: one finite proof covers every admissible scale, rather than certifying a sampled collection of times.
 
 The independent circle checker recomputes each endpoint from its original velocity, phase, radius, and integer winding before accepting a chain from zero to one. Its soundness and finite-breakpoint completeness proofs are in `CERTIFICATE_THEOREM.md`. A SHA-256 digest binds data but proves no mathematical statement on its own. Independent exact lower-envelope evaluation reproduces the published five-runner optimum $15/94$.
 
-Lean 4.14 checks the universal deleted-speed lower-bound witness from the companion Alpha note, full real-time interval-chain soundness, and the all-length combinatorial packing inequality used in Theorem 4. Theorems 1–3 and the analytic identification of the ladder pattern remain paper proofs. The Python parser and concrete JSON fixtures are not certified by Lean. Kernel exports and deliberately false controls delimit the formal authority precisely. Same-model agent reviews are correlated review, not independent external peer review.
+Lean 4.14 checks the universal deleted-speed lower-bound witness from the companion Alpha note, the full upper-half one-insertion hole theorem from Gamma, full real-time interval-chain soundness, and the all-length combinatorial packing inequality used in Theorem 4. Theorems 1–3, 5–6 and the analytic identification of the ladder pattern remain paper proofs. The Python parser and concrete JSON fixtures are not certified by Lean. Kernel exports and deliberately false controls delimit the formal authority precisely. Same-model agent reviews are correlated review, not independent external peer review.
 
-## 6. Limits and next experiments
+## 7. Limits and next experiments
 
 No new strict shifted counterexample for $18\le n\le94$ is asserted here. Restricted-menu solver timeouts or UNSAT reports do not prove the complete finite problem in Theorem 3 infeasible. The fixed-phase ladder obstruction indicates a precise next experiment: change phase families or arithmetic velocity support, rather than merely shortening the same ladder. An independently checked rule with $L/2-g\le94$ would extend the established shifted range.
 

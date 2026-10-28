@@ -1,0 +1,540 @@
+{
+  "academic_priority": "unverified",
+  "authority": "exact finite controls; universal theorem is a paper proof",
+  "claim": "same affected odd part implies added_count >= 2*removed_count",
+  "complete_fixed_support_endpoint_maxima": [
+    {
+      "affected": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "alpha": "0",
+      "beta": "-1/2",
+      "bound": "1/2",
+      "d": 1,
+      "maximum": "1/2",
+      "velocity": 1
+    },
+    {
+      "affected": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "alpha": "0",
+      "beta": "0",
+      "bound": "1",
+      "d": 1,
+      "maximum": "1",
+      "velocity": 2
+    },
+    {
+      "affected": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "alpha": "1/4",
+      "beta": "-1/4",
+      "bound": "1/2",
+      "d": 1,
+      "maximum": "1/2",
+      "velocity": 3
+    },
+    {
+      "affected": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "alpha": "0",
+      "beta": "-2",
+      "bound": "1",
+      "d": 1,
+      "maximum": "1",
+      "velocity": 4
+    },
+    {
+      "affected": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "alpha": "0",
+      "beta": "-7/2",
+      "bound": "1/2",
+      "d": 1,
+      "maximum": "1/4",
+      "velocity": 5
+    },
+    {
+      "affected": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "alpha": "0",
+      "beta": "-9/2",
+      "bound": "1/2",
+      "d": 1,
+      "maximum": "1/4",
+      "velocity": 7
+    },
+    {
+      "affected": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "alpha": "0",
+      "beta": "-3",
+      "bound": "1",
+      "d": 1,
+      "maximum": "1",
+      "velocity": 8
+    },
+    {
+      "affected": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "alpha": "0",
+      "beta": "-11/2",
+      "bound": "1/2",
+      "d": 1,
+      "maximum": "1/4",
+      "velocity": 9
+    },
+    {
+      "affected": [
+        2,
+        4,
+        8,
+        16
+      ],
+      "alpha": "0",
+      "beta": "-3",
+      "bound": "1",
+      "d": 1,
+      "maximum": "1",
+      "velocity": 16
+    },
+    {
+      "affected": [
+        6,
+        12,
+        24,
+        48
+      ],
+      "alpha": "1/12",
+      "beta": "-11/12",
+      "bound": "1/2",
+      "d": 3,
+      "maximum": "1/4",
+      "velocity": 1
+    },
+    {
+      "affected": [
+        6,
+        12,
+        24,
+        48
+      ],
+      "alpha": "0",
+      "beta": "-1/2",
+      "bound": "1/2",
+      "d": 3,
+      "maximum": "1/2",
+      "velocity": 3
+    },
+    {
+      "affected": [
+        6,
+        12,
+        24,
+        48
+      ],
+      "alpha": "1/12",
+      "beta": "-7/12",
+      "bound": "1/2",
+      "d": 3,
+      "maximum": "1/4",
+      "velocity": 5
+    },
+    {
+      "affected": [
+        6,
+        12,
+        24,
+        48
+      ],
+      "alpha": "0",
+      "beta": "0",
+      "bound": "1",
+      "d": 3,
+      "maximum": "1",
+      "velocity": 6
+    },
+    {
+      "affected": [
+        6,
+        12,
+        24,
+        48
+      ],
+      "alpha": "1/12",
+      "beta": "-5/12",
+      "bound": "1/2",
+      "d": 3,
+      "maximum": "1/4",
+      "velocity": 7
+    },
+    {
+      "affected": [
+        6,
+        12,
+        24,
+        48
+      ],
+      "alpha": "1/4",
+      "beta": "-1/4",
+      "bound": "1/2",
+      "d": 3,
+      "maximum": "1/2",
+      "velocity": 9
+    },
+    {
+      "affected": [
+        6,
+        12,
+        24,
+        48
+      ],
+      "alpha": "0",
+      "beta": "-2",
+      "bound": "1",
+      "d": 3,
+      "maximum": "1",
+      "velocity": 12
+    },
+    {
+      "affected": [
+        6,
+        12,
+        24,
+        48
+      ],
+      "alpha": "0",
+      "beta": "-7/2",
+      "bound": "1/2",
+      "d": 3,
+      "maximum": "1/4",
+      "velocity": 15
+    },
+    {
+      "affected": [
+        6,
+        12,
+        24,
+        48
+      ],
+      "alpha": "0",
+      "beta": "-3",
+      "bound": "1",
+      "d": 3,
+      "maximum": "1",
+      "velocity": 24
+    },
+    {
+      "affected": [
+        6,
+        12,
+        24,
+        48
+      ],
+      "alpha": "0",
+      "beta": "-3",
+      "bound": "1",
+      "d": 3,
+      "maximum": "1",
+      "velocity": 48
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "1/60",
+      "beta": "-59/60",
+      "bound": "1/2",
+      "d": 15,
+      "maximum": "1/16",
+      "velocity": 1
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "1/20",
+      "beta": "-19/20",
+      "bound": "1/2",
+      "d": 15,
+      "maximum": "1/8",
+      "velocity": 3
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "1/12",
+      "beta": "-11/12",
+      "bound": "1/2",
+      "d": 15,
+      "maximum": "1/4",
+      "velocity": 5
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "1/60",
+      "beta": "-53/60",
+      "bound": "1/2",
+      "d": 15,
+      "maximum": "1/16",
+      "velocity": 7
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "1/20",
+      "beta": "-17/20",
+      "bound": "1/2",
+      "d": 15,
+      "maximum": "1/8",
+      "velocity": 9
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "0",
+      "beta": "-1/2",
+      "bound": "1/2",
+      "d": 15,
+      "maximum": "1/2",
+      "velocity": 15
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "0",
+      "beta": "0",
+      "bound": "1",
+      "d": 15,
+      "maximum": "1",
+      "velocity": 30
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "1/4",
+      "beta": "-1/4",
+      "bound": "1/2",
+      "d": 15,
+      "maximum": "1/2",
+      "velocity": 45
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "0",
+      "beta": "-2",
+      "bound": "1",
+      "d": 15,
+      "maximum": "1",
+      "velocity": 60
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "0",
+      "beta": "-7/2",
+      "bound": "1/2",
+      "d": 15,
+      "maximum": "1/4",
+      "velocity": 75
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "0",
+      "beta": "-3",
+      "bound": "1",
+      "d": 15,
+      "maximum": "1",
+      "velocity": 120
+    },
+    {
+      "affected": [
+        30,
+        60,
+        120,
+        240
+      ],
+      "alpha": "0",
+      "beta": "-3",
+      "bound": "1",
+      "d": 15,
+      "maximum": "1",
+      "velocity": 240
+    }
+  ],
+  "hostile_two_odd_parts": {
+    "endpoint_capacity": "3/2",
+    "published_gain": 1,
+    "rescuer_velocity": 12
+  },
+  "no_full_lean_proof": true,
+  "schema": "SUCC-dyadic-obstruction-v1",
+  "sharp_examples": [
+    {
+      "added": [
+        1,
+        3
+      ],
+      "alpha": "3/4",
+      "beta": "0",
+      "capacities": [
+        "1/2",
+        "1/2"
+      ],
+      "checked_cells": 2,
+      "d": 1,
+      "gain": -1,
+      "removed": [
+        4
+      ]
+    },
+    {
+      "added": [
+        3,
+        9
+      ],
+      "alpha": "3/4",
+      "beta": "0",
+      "capacities": [
+        "1/2",
+        "1/2"
+      ],
+      "checked_cells": 4,
+      "d": 3,
+      "gain": -1,
+      "removed": [
+        12
+      ]
+    },
+    {
+      "added": [
+        5,
+        15
+      ],
+      "alpha": "3/4",
+      "beta": "0",
+      "capacities": [
+        "1/2",
+        "1/2"
+      ],
+      "checked_cells": 8,
+      "d": 5,
+      "gain": -1,
+      "removed": [
+        20
+      ]
+    },
+    {
+      "added": [
+        15,
+        45
+      ],
+      "alpha": "3/4",
+      "beta": "0",
+      "capacities": [
+        "1/2",
+        "1/2"
+      ],
+      "checked_cells": 16,
+      "d": 15,
+      "gain": -1,
+      "removed": [
+        60
+      ]
+    },
+    {
+      "added": [
+        45,
+        135
+      ],
+      "alpha": "3/4",
+      "beta": "0",
+      "capacities": [
+        "1/2",
+        "1/2"
+      ],
+      "checked_cells": 48,
+      "d": 45,
+      "gain": -1,
+      "removed": [
+        180
+      ]
+    }
+  ]
+}

@@ -32,6 +32,11 @@ Relation-label discipline: `reduces_to`/`depends_on` = proved implication with s
 corollary and sharp equality cases; independently checked rational circle
 covers; exact finite characterization and bounded search for local uniform
 replacement rules; polynomial two-entry growth bounds. Full universal Alpha
-metric and real cover-chain soundness have distinct kernel receipts; local-rule
+metric, upper-half one-insertion hole and real cover-chain soundness have distinct kernel receipts; local-rule
 and analytic growth results are paper proofs. Academic novelty remains separate
 from those proof statuses. Existing source and theorem namespaces are unchanged.
+
+The same campaign also proves fixed-support affinization of arbitrary phase
+schedules and the sharp no-saving obstruction for one affected odd part.
+These compactness and endpoint-capacity results are paper proofs, with exact
+controls and explicit phase-identity countermodels.

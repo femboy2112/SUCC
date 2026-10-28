@@ -1,0 +1,213 @@
+{
+  "academic_priority": "unverified",
+  "authority": "exact finite controls; compactness theorem is a paper proof",
+  "infinite_scaled_residual_controls": [
+    {
+      "N": 8,
+      "alpha": "3/4",
+      "delta": "1/9",
+      "distances": [
+        "7/36",
+        "1/3",
+        "17/36"
+      ],
+      "epsilon": "1/3",
+      "k": 1,
+      "m": 3,
+      "q": 4,
+      "scaled_residual": "3",
+      "unused_velocity": 5,
+      "z": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "N": 15,
+      "alpha": "3/4",
+      "delta": "1/16",
+      "distances": [
+        "11/64",
+        "1/4",
+        "21/64"
+      ],
+      "epsilon": "1/4",
+      "k": 1,
+      "m": 4,
+      "q": 4,
+      "scaled_residual": "4",
+      "unused_velocity": 5,
+      "z": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "N": 48,
+      "alpha": "3/4",
+      "delta": "1/49",
+      "distances": [
+        "23/196",
+        "1/7",
+        "33/196"
+      ],
+      "epsilon": "1/7",
+      "k": 1,
+      "m": 7,
+      "q": 4,
+      "scaled_residual": "7",
+      "unused_velocity": 5,
+      "z": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "N": 399,
+      "alpha": "3/4",
+      "delta": "1/400",
+      "distances": [
+        "3/64",
+        "1/20",
+        "17/320"
+      ],
+      "epsilon": "1/20",
+      "k": 1,
+      "m": 20,
+      "q": 4,
+      "scaled_residual": "20",
+      "unused_velocity": 5,
+      "z": [
+        -1,
+        0,
+        1
+      ]
+    },
+    {
+      "N": 999999,
+      "alpha": "3/4",
+      "delta": "1/1000000",
+      "distances": [
+        "799/800000",
+        "1/1000",
+        "801/800000"
+      ],
+      "epsilon": "1/1000",
+      "k": 1,
+      "m": 1000,
+      "q": 4,
+      "scaled_residual": "1000",
+      "unused_velocity": 5,
+      "z": [
+        -1,
+        0,
+        1
+      ]
+    }
+  ],
+  "input_schedule_identity_preserved": false,
+  "no_convergence_rate_or_full_lean_proof": true,
+  "oscillatory_schedules": [
+    {
+      "N": 2,
+      "all_tangent_cells_covered": true,
+      "alpha": "3/4",
+      "beta": "1/8",
+      "d": 1,
+      "direct_probe_max_normalized_distance": "7/8"
+    },
+    {
+      "N": 3,
+      "all_tangent_cells_covered": true,
+      "alpha": "1/4",
+      "beta": "-1/8",
+      "d": 1,
+      "direct_probe_max_normalized_distance": "7/8"
+    },
+    {
+      "N": 4,
+      "all_tangent_cells_covered": true,
+      "alpha": "3/4",
+      "beta": "1/8",
+      "d": 1,
+      "direct_probe_max_normalized_distance": "7/8"
+    },
+    {
+      "N": 5,
+      "all_tangent_cells_covered": true,
+      "alpha": "1/4",
+      "beta": "-1/8",
+      "d": 1,
+      "direct_probe_max_normalized_distance": "7/8"
+    },
+    {
+      "N": 6,
+      "all_tangent_cells_covered": true,
+      "alpha": "3/4",
+      "beta": "1/8",
+      "d": 3,
+      "direct_probe_max_normalized_distance": "7/8"
+    },
+    {
+      "N": 7,
+      "all_tangent_cells_covered": true,
+      "alpha": "1/4",
+      "beta": "-1/8",
+      "d": 3,
+      "direct_probe_max_normalized_distance": "7/8"
+    },
+    {
+      "N": 12,
+      "all_tangent_cells_covered": true,
+      "alpha": "3/4",
+      "beta": "1/8",
+      "d": 3,
+      "direct_probe_max_normalized_distance": "7/8"
+    },
+    {
+      "N": 13,
+      "all_tangent_cells_covered": true,
+      "alpha": "1/4",
+      "beta": "-1/8",
+      "d": 3,
+      "direct_probe_max_normalized_distance": "7/8"
+    },
+    {
+      "N": 30,
+      "all_tangent_cells_covered": true,
+      "alpha": "3/4",
+      "beta": "1/8",
+      "d": 15,
+      "direct_probe_max_normalized_distance": "7/8"
+    },
+    {
+      "N": 31,
+      "all_tangent_cells_covered": true,
+      "alpha": "1/4",
+      "beta": "-1/8",
+      "d": 15,
+      "direct_probe_max_normalized_distance": "7/8"
+    },
+    {
+      "N": 60,
+      "all_tangent_cells_covered": true,
+      "alpha": "3/4",
+      "beta": "1/8",
+      "d": 15,
+      "direct_probe_max_normalized_distance": "7/8"
+    },
+    {
+      "N": 61,
+      "all_tangent_cells_covered": true,
+      "alpha": "1/4",
+      "beta": "-1/8",
+      "d": 15,
+      "direct_probe_max_normalized_distance": "7/8"
+    }
+  ],
+  "schema": "SUCC-arbitrary-phase-affinization-v1",
+  "supports_and_gain_preserved_by_theorem": true
+}

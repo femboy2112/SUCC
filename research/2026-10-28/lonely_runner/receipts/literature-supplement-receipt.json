@@ -1,0 +1,108 @@
+{
+  "schema": "succ.lonely_runner.literature_supplement.v1",
+  "retrieved_utc": "2026-10-28T21:21:50.063633+00:00",
+  "base_head": "51310e5312974165f33b23661b9ed59faa992396",
+  "scope": "Read-only primary-source and manuscript proof comparison. No existing repository file was changed by this audit.",
+  "sources": [
+    {
+      "key": "beck_everett",
+      "title": "Lonely Runner Relations",
+      "url": "https://arxiv.org/html/2609.06259v2",
+      "version": "arXiv:2609.06259v2",
+      "version_date": "2026-09-23",
+      "sections_read": [
+        "Introduction and Theorem 1.1",
+        "Section 3: Proposition 3.1, Theorem 3.2, complete lattice-width proof",
+        "Section 4: open problems"
+      ],
+      "comparison": "For ordinary cover/tight instances, short integer relations constrain the velocity vector. The geometric argument computes translated-zonotope width and forces a relation orthogonal to the velocity vector. It gives no stated bound on each inserted velocity. A short relation may involve retained baseline speeds only. Translation drops out of width, so this criterion does not classify fixed-support local phase schedules. This is a comparison with the inspected statements and proofs, not a claim that their methods admit no further consequences.",
+      "retrieved_url": "https://arxiv.org/html/2609.06259v2",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 239871,
+      "sha256": "9445343d31a081f45f6eb64533d7889f4bb9ab31ed0aad4eb2cbe95fe7469b71"
+    },
+    {
+      "key": "malikiosis_santos_schymura",
+      "title": "Linearly-exponential checking is enough for the Lonely Runner Conjecture and some of its variants",
+      "url": "https://arxiv.org/html/2411.06903v2",
+      "version": "arXiv:2411.06903v2",
+      "version_date": "2025-06-21",
+      "publication": "Forum of Mathematics, Sigma 13 (2025), e164",
+      "doi": "10.1017/fms.2025.10107",
+      "sections_read": [
+        "Theorems A and B with all hypotheses",
+        "Section 2: short-vector and covering-radius projection tools",
+        "Section 3: projection mechanism and complete proof of Theorem A",
+        "Section 4.1: proof mechanism for Theorem B"
+      ],
+      "comparison": "Theorem A assumes ordinary LRC in the preceding dimension and proves the standard non-strict lower bound for primitive vectors above a gcd-sum cutoff bounded by binomial(n+1,2)^(n-1). Theorem B additionally assumes shifted LRC in the preceding dimension and the Lonely Vector Property through size n. Projection can combine or delete generators and changes dimension; it does not preserve fixed runner labels and removal/rephasing/addition roles. These statements do not directly give an unconditional cubic bound for every two-entry cover, or the fixed-support local affinization theorem. Finite checking and zonotopal geometry are established methodological precedents.",
+      "retrieved_url": "https://arxiv.org/html/2411.06903v2",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 936779,
+      "sha256": "6cc57d5e8345c18778c909f6a084f98b80c6b360ce2f80ec34499d9b603812f6"
+    }
+  ],
+  "relation_inference_countermodel": {
+    "n": 8,
+    "removed": [
+      6,
+      7
+    ],
+    "retained": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "inserted": "M,M+1 for any integer M>=8",
+    "relation_coefficients": [
+      2,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "relation_l1_norm": 3,
+    "relation_coefficient_sum": 1,
+    "relation_value": 0,
+    "meaning": "These vectors satisfy a short relation with odd coefficient sum for arbitrarily large inserted speeds. They are not asserted covers or tight instances. This refutes inference of an insertion bound from the necessary short-relation condition alone."
+  },
+  "manuscript_review": {
+    "theorem_5": "No quantifier loss found. Supports are finite and fixed; locality at scale one along an unbounded sequence suffices. One joint torus subsequence and one joint extended-real subsequence are taken before fixing an arbitrary cell. Nonresonant and infinite-slope labels eventually fail; finite-label exclusion proves tangent coverage without a cell-dependent extraction. Resetting unused infinite slopes preserves support, and fixed-support rationalization applies without a positive-gain requirement. Conclusion is existence of a rational affine replacement, not equality to the input schedule.",
+    "theorem_6": "No quantifier loss found. Theorem 5 transfers arbitrary-schedule existence to affine phases; endpoint capacities then prove the claimed sharp inequality. The responsible residues at q=2d retain both parity classes. The common odd part and fixed finite support are essential hypotheses.",
+    "editorial_issue_sent_to_integrator": "Earlier Section 3 sentence excluding arbitrary phase dependence should be qualified after Theorem 5 extends existence on fixed supports. This audit did not edit it."
+  },
+  "source_hashes_at_review": {
+    "research/2026-10-28/lonely_runner/MANUSCRIPT.md": {
+      "bytes": 21398,
+      "sha256": "fce6fba1c05538174a73abba4c7aa1456018c0d4f527b329c92afa283b4d66f2"
+    },
+    "research/2026-10-28/lonely_runner/GAMMA.md": {
+      "bytes": 24465,
+      "sha256": "8e5b6bf9b4c427a19963ca79461f5374ba04c8aab3db8b795305ab2f6b108229"
+    },
+    "research/2026-10-28/lonely_runner/AFFINIZATION.md": {
+      "bytes": 10818,
+      "sha256": "8efe80f4f772a305a982d6053f626ffaaa3422ae17900ffaf14dae74c97b656d"
+    },
+    "research/2026-10-28/lonely_runner/OBSTRUCTION.md": {
+      "bytes": 10563,
+      "sha256": "aaf4239aa28da5561666cd47f10ef6edace652a6ea7d008cc327da0eaea36078"
+    }
+  },
+  "verdict": {
+    "mathematical_error_found": false,
+    "inspected_prior_statement_preempts_claim": false,
+    "academic_priority": "UNVERIFIED",
+    "limits": [
+      "This is same-model internal review, not external peer review or an independent blind proof.",
+      "Absence of a matching inspected theorem is not proof of academic novelty.",
+      "No Lean proof, hosted result, or general theorem compilation was performed in this task.",
+      "The downloaded bytes were hashed for provenance; no third-party source text is vendored.",
+      "Previously identified upper-half two-entry classification remains prior art; this supplement does not withdraw that overlap."
+    ]
+  }
+}

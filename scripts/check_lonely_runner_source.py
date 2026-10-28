@@ -69,6 +69,8 @@ def main():
         ("published-controls", ["scripts/lonely_runner_certificates.py", "--output", str(destination / "certificates")]),
         ("uniform-rule", ["scripts/lonely_runner_uniform_probe.py", "--output", str(destination / "uniform.json")]),
         ("two-entry", ["scripts/lonely_runner_two_entry_probe.py", "--verify", str(PACKAGE / "receipts/gamma.json")]),
+        ("dyadic-obstruction", ["scripts/lonely_runner_dyadic_probe.py", "--verify", str(PACKAGE / "receipts/dyadic-obstruction.json")]),
+        ("arbitrary-phase", ["scripts/lonely_runner_phase_schedule_probe.py", "--verify", str(PACKAGE / "receipts/affinization.json")]),
     ):
         run(label, [py, *argv])
     for n in range(5, 21):

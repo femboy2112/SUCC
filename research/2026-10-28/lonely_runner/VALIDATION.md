@@ -86,3 +86,43 @@ hashes in `receipts/source-milestone/`.
 Final full-suite and hosted observations will be recorded with their exact
 commit and source hashes. Until such a receipt states success, they remain
 pending rather than implicitly passed.
+
+## Second mathematical checkpoint
+
+The guarded kernel runner now accepts **23 declarations** across four modules,
+including the full universal upper-half G1 metric witness, and **four paired
+false controls**. Raw logs and statement/axiom exports are in
+`receipts/kernel-final/`. The DYO and arbitrary-phase additions separately
+passed 8 and 4 tests and exact receipt replay. A final combined source replay
+records its exact count and manifest separately. The unrestricted cubic
+theorem, endpoint-capacity theorem, and compactness theorem are paper proofs.
+
+The independent larger-domain Fraction census completed all n=5..20 and
+agreed with the primary census. It imports no census/generator/checker
+implementation and reconstructs full source interval unions for 8,231
+width-admitted cases. Its n=9..20 receipt and stdout are retained separately
+from the faster primary enumeration.
+
+The first workflow-changing HTTPS push was rejected because that OAuth token
+lacks workflow scope. The existing SSH identity successfully pushed the same
+commit, without changing remotes, credentials or protected branch policy.
+At checkpoint 51310e53, five applicable hosted workflows passed, including
+the source matrix and Lean job; the full native workflow was still running
+at that observation. The later head must be observed independently.
+
+Final combined local replay: **36 commands PASS**, including all **76**
+research tests and the exact dyadic/phase receipts, with all **79** pinned
+source files unchanged. See `receipts/source-complete/validation.json` and
+its raw logs. The final frozen-code full native replay is running separately;
+its result is not inferred from focused success. Hosted statuses for the
+earlier checkpoint, artifact identifiers and hashes are retained in
+`receipts/hosted-checkpoint.json`; final-head status remains an external
+GitHub observation until the later run completes.
+
+After the last primary-literature comparison and corrected phase-scope
+sentence, the unchanged mathematical implementations passed **36 commands**
+and **76 research tests** again, with all **80** final source pins matching.
+`receipts/source-final-head/` retains that complete replay. Execution outcomes
+produced after the source commit must be associated with its actual Git SHA
+through PR check records and the final run receipt; this document records
+what had executed when it was committed, not a forecast of later CI success.

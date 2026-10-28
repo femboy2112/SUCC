@@ -615,7 +615,7 @@
     {
       "path": "docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
       "registered_namespaces": [],
-      "sha256": "c293c046175f670cd14e9a3e15e2477300fe574adedabe20bc6098d3a7a93299",
+      "sha256": "e21f4bc16a8d9dd7f20c3103f8c247637bd6b4987f3d177b47644b245d652e8e",
       "title": "Lonely Runner campaign: research-local claim supplement"
     },
     {
@@ -9155,6 +9155,36 @@
       "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
       "raw_table_row": "| LRN-12 | Every two-entry unshifted cover at radius 1/n with 5<=n<=20, arbitrary deletions and n<=w1<w2, is one of the two listed classical sources | COMPUTATIONALLY CERTIFIED using the universal Gamma finite bound; 16 complete receipts; independent positive certificates and exact maxima | No arbitrary inserted-speed cutoff; no full Lean census claim; priority of the complete classification unverified |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "LRN-13",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md::LRN-13",
+      "line": 23,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
+      "raw_table_row": "| LRN-13 | Same affected odd part, fixed finite roles and arbitrary phase schedules local along unbounded sizes imply added_count >= 2*removed_count; equality attained for every odd part | PROVED PAPER: DYO-01 plus AFF-03; exact endpoint and source controls | Does not apply to arbitrary global cover preservation; two-odd-part published rule is a countermodel to that extension |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "LRN-14",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md::LRN-14",
+      "line": 24,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
+      "raw_table_row": "| LRN-14 | Arbitrary phase schedules local at scale one along unbounded sizes admit rational affine local rules at all sizes and odd scales on identical finite supports | PROVED PAPER by joint compactness, exact cell necessity and rational polyhedra | Preserves support and gain, changes phases; oscillatory schedule refutes identity; no effective limit extraction |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "LRN-15",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md::LRN-15",
+      "line": 25,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
+      "raw_table_row": "| LRN-15 | Every upper-half deletion pair and every inserted integer w>=n admits a rational time strictly separating every actual retained or inserted speed from all integers by 1/n | FORMALIZED: complete upper_half_one_insertion_hole export, seven new declarations; guarded kernel with false-radius control | Does not formalize the unrestricted cubic theorem or its classical classification dependency |",
       "registered": false
     },
     {
@@ -21109,11 +21139,11 @@
     }
   ],
   "coverage": {
-    "claim_rows_found": 1956,
+    "claim_rows_found": 1959,
     "claim_supplements_scanned": 200,
     "registered_claim_rows": 1863,
     "registered_namespace_count": 176,
-    "source_documents_found": 1049
+    "source_documents_found": 1052
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -26154,6 +26184,12 @@
       "title": "Zero–One SUCC research validation scope — 2026-10-27"
     },
     {
+      "path": "research/2026-10-28/lonely_runner/AFFINIZATION.md",
+      "sha256": "8efe80f4f772a305a982d6053f626ffaaa3422ae17900ffaf14dae74c97b656d",
+      "size": 10818,
+      "title": "Arbitrary phase schedules admit affine local rules on the same supports"
+    },
+    {
       "path": "research/2026-10-28/lonely_runner/ALPHA.md",
       "sha256": "ab1ad1d6fad11a496a768ecec645863c723e30c655cbe791630fa5dac8a413c7",
       "size": 11704,
@@ -26173,8 +26209,8 @@
     },
     {
       "path": "research/2026-10-28/lonely_runner/CENSUS.md",
-      "sha256": "4b654d8645dc81ca7eb7d1c8285ec1f10528d3c61ea27c4708b2bd38ec133c5e",
-      "size": 11341,
+      "sha256": "ccb9ec610531153ffc116527741f6cabede5a42fbd5b86e06a619e29f914cc12",
+      "size": 12232,
       "title": "Complete two-entry classifications for 5 <= n <= 20"
     },
     {
@@ -26185,38 +26221,44 @@
     },
     {
       "path": "research/2026-10-28/lonely_runner/GAMMA.md",
-      "sha256": "cad041e4fc2c764b58478b7f95fcbb63af397a9cacec18a382bb6f9623b60f54",
-      "size": 23160,
+      "sha256": "8e5b6bf9b4c427a19963ca79461f5374ba04c8aab3db8b795305ab2f6b108229",
+      "size": 24465,
       "title": "Gamma: a cubic speed bound for every two-entry modification"
     },
     {
       "path": "research/2026-10-28/lonely_runner/HANDOFF.md",
-      "sha256": "058902abbf208d7a8085d2fc35f5c36a20b2b75eee70f51301c4f38a53ea065a",
-      "size": 2418,
+      "sha256": "be16ddc00cb3a7c548a17ccabad7caf8e9a68e57e2c4e98f0ec4a9cfb40896e3",
+      "size": 3964,
       "title": "Next mathematical handoff"
     },
     {
       "path": "research/2026-10-28/lonely_runner/LITERATURE.md",
-      "sha256": "ce7fef56faa2b0368f3fd753f772640ae6748db80feac1c75c7ffe4fa8293d3e",
-      "size": 11928,
+      "sha256": "372de118a20552125e392c04277b34d761c68bd5d40809ddd6795c9a0f7faaef",
+      "size": 14294,
       "title": "Priority audit and external proof boundary"
     },
     {
       "path": "research/2026-10-28/lonely_runner/MANUSCRIPT.md",
-      "sha256": "990565bfc1ce7b60a26ef5b6d46d2b0decab63ce76b83b69f77418c6d2399188",
-      "size": 16460,
+      "sha256": "fce6fba1c05538174a73abba4c7aa1456018c0d4f527b329c92afa283b4d66f2",
+      "size": 21398,
       "title": "Finite resonance tests and bounded searches for local shifted-runner replacements"
     },
     {
+      "path": "research/2026-10-28/lonely_runner/OBSTRUCTION.md",
+      "sha256": "aaf4239aa28da5561666cd47f10ef6edace652a6ea7d008cc327da0eaea36078",
+      "size": 10563,
+      "title": "Endpoint capacity forbids savings on a single dyadic velocity chain"
+    },
+    {
       "path": "research/2026-10-28/lonely_runner/README.md",
-      "sha256": "e8da2f7415677513f450e901f29e140e090f1a1dbc1c5fe794296c9624cbcd41",
-      "size": 4245,
+      "sha256": "f514c6a6f131bd9e0adedc538828e7a7bec880b6bed8d97b904f4edcd7775242",
+      "size": 4642,
       "title": "Lonely Runner: exact certificates and effective growth"
     },
     {
       "path": "research/2026-10-28/lonely_runner/VALIDATION.md",
-      "sha256": "fe81b6cd56f8b4067f58269b0d9e6b5968c3bc6877cdd107852de9959aa680e6",
-      "size": 4988,
+      "sha256": "9e9f4bc3afbb50df68822a238d2ea6ab73bdbade9e11aef1e5d4fd2ed74a03a2",
+      "size": 7416,
       "title": "Validation and known failures"
     },
     {
@@ -27072,6 +27114,12 @@
       "title": ""
     },
     {
+      "path": "formal/LonelyRunnerTwoEntry.lean",
+      "sha256": "ad8e1eb1ebbbcd818845bd920d9e91c7679f71d526d972c08fbaa87ac7f4f019",
+      "size": 9652,
+      "title": ""
+    },
+    {
       "path": "formal/LonelyRunnerUniform.lean",
       "sha256": "0fe4a9fec99235da78aa25fea247354b8fe53177854e07b5b068509a82c2e199",
       "size": 2170,
@@ -27457,6 +27505,9 @@
     "NO EXACT NAMESPACE for LRN-10 at docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md:20",
     "NO EXACT NAMESPACE for LRN-11 at docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md:21",
     "NO EXACT NAMESPACE for LRN-12 at docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md:22",
+    "NO EXACT NAMESPACE for LRN-13 at docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md:23",
+    "NO EXACT NAMESPACE for LRN-14 at docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md:24",
+    "NO EXACT NAMESPACE for LRN-15 at docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md:25",
     "NO EXACT NAMESPACE for LS-1 at docs/CLAIM_SUPPLEMENT_LOG_DIRAC_SAWTOOTH.md:7",
     "NO EXACT NAMESPACE for LS-2 at docs/CLAIM_SUPPLEMENT_LOG_DIRAC_SAWTOOTH.md:8",
     "NO EXACT NAMESPACE for LS-3 at docs/CLAIM_SUPPLEMENT_LOG_DIRAC_SAWTOOTH.md:10",

@@ -237,3 +237,18 @@ one-insertion-hole premise; or produce any nonlisted source in the stated
 range with a full independently accepted `1/n` cover. A new run beyond
 `n=20` must retain theorem-derived bounds and may not turn a resource
 timeout into a negative classification.
+
+## Independent larger-domain replay
+
+`scripts/lonely_runner_census_independent.py` imports no primary census,
+generator, witness or certificate module. It uses the larger uniform B_n
+cutoff, reconstructs Fraction source bands, and merges the complete band
+union for every candidate surviving the width filter. Separate executed
+runs at n=5..8 and n=9..20 reproduce exactly the two listed covers, with
+8,231 full Fraction cover checks altogether. Their larger first-speed
+domains also check that the sharper parameter bound loses no candidate
+inside the uniform bound. Receipts and raw n=9..20 stdout are in
+`receipts/census-independent-*`. This is an independent implementation
+of the rejection calculation; the universal finite-bound theorem remains
+shared mathematical provenance. The additional 182-case audit includes
+both positive sources and 60 fresh noncovers inside the width caps.
