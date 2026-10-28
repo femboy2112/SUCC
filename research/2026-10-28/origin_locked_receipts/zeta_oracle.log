@@ -1,0 +1,4 @@
+PASS: independent mpmath zeta/size-biased Gamma law, Euler finite part, theta-Mellin gluing and original Oily kernel
+receipt /mnt/data/SUCC_Origin_Locked_Zeta_2026-10-28/research/2026-10-28/ZETA_WAVEFRONT_ORACLE_RECEIPT.json
+final eps {'epsilon': '0.005', 'exp_laplace_t1': '0.501441604428381666479268', 'target': '0.5', 'sizebiased_gamma2_laplace_t1': '0.2499986368225817177711197', 'target_gamma2': '0.25', 'log_mean_finite_part': '-0.5762792241119977959252214', 'target_finite_part': '-0.5772156649015328606065121'}
+Oily a=1024: {'a': 1024, 'Laplace_Gamma2_t1': '0.2510337546485858647140961', 'limit': '0.25'}
