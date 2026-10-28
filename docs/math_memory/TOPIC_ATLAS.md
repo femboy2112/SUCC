@@ -24,7 +24,7 @@ The Farey–Gauss realization makes **one** precise common system: ideal Farey t
 
 **Keep the lineages separate (no proven functor):**
 - **Farey/Gauss**: λ = **φ⁻¹** (continued-fraction fixed point). `MM-T-004`.
-- **Oily packet** (PRs #309/#310): PGF `G(z)=1/(2−z)²` ⇒ fixed point q\* = **φ⁻²**, with its own Γ(2)-centered log giving the same Ω value; third-order shadow carries `−(8/27)(φ⁻¹−γ)`. `MM-T-045/046`, and `MM-T-046 --shares_value_with--> MM-D-007` (equal Ω **value**, not a common source).
+- **Oily packet** (PRs #309/#310): PGF `G(z)=1/(2−z)²` ⇒ fixed point q\* = **φ⁻²**; the third-order golden-centered log covariance carries `−(8/27)(φ⁻¹−γ)` **only under the specified external center q\***. For a real center `c` the coefficient is `2[1−γ−c]H_q(z)`, so centering the log observable at its own mean `c=1−γ` makes it **zero** (PR #310). `MM-T-045/046`, and `MM-T-046 --shares_value_with--> MM-D-007` (equal Ω **value**, not a common source, and **not** a gauge-invariant intrinsic constant).
 - **PR #303**: projective triangle + an *extra chosen* golden cross-ratio and a separately normalized Kronecker γ cusp. `MM-T-009`.
 
 Matching Ω across these is a shared scalar, not an isomorphism of sources.
@@ -41,7 +41,7 @@ Matching Ω across these is a shared scalar, not an isomorphism of sources.
 
 - 2-adic source isometry + odometer (`MM-T-034`, PR #320); 2-adic zero boundary `C_past=0` (`MM-T-035`, PR #321); joint 2×3 CRT clock + 3-adic isometry (`MM-T-036`, PR #322).
 - **Rank-1 obstruction** (`MM-T-048`, AR-4): the transverse p-adic Haar bulk is decoupled from the archimedean rank-1 slice; p-adic coordinates are *contracting charges*, not a second expanding momentum. Rank-2-bulk→rank-1-slice is **REFUTED** (`MM-N-049`).
-- **Conditional bridge** (`MM-C-043`, AR-5): unaveraged ×3 defect decay + positive entropy ⇒ normal via Rudolph–Johnson — both hypotheses unproven.
+- **Conditional bridge** (`MM-C-043`, AR-5): unaveraged ×3 defect decay + **positive entropy on μ-a.e. ergodic component** of the (×2,×3)-invariant weak-* limit (not merely positive entropy of the whole, possibly non-ergodic, limit — a zero-entropy ergodic component is not forced to Haar) ⇒ Lebesgue via Rudolph–Johnson — both hypotheses unproven.
 - **Furstenberg** (`MM-N-021/051`, PRs #334/#337, both STALE): all-prime rigidity is a *reformulation* (`MM-T-052`); the transcendence→entropy leg is refuted by the Kempner number (zero entropy).
 
 ## Observer / Yoneda local-to-global

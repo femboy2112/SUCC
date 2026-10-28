@@ -6,7 +6,11 @@ This lint does NOT verify proofs, URLs, branch ancestry, or remote file existenc
 from __future__ import annotations
 import argparse
 import json
+import re
 from pathlib import Path
+
+MM_REF = re.compile(r"MM-[A-Z]+-\d+")
+TEXT_FIELDS = ("title", "statement", "scope", "limitation", "next_probe")
 
 KINDS={"intuition","theorem","defined_comparison","conjecture","counterexample","open_obligation"}
 STATUSES={"CLASSICAL","PROVED_LOCAL","TESTED_MODEL","OBSERVED","CONJECTURED","UNVERIFIED","REFUTED","OPEN"}
@@ -49,6 +53,16 @@ def validate(data: dict) -> list[str]:
                     errors.append(f"{key}: missing source path")
         if n.get("kind")=="open_obligation" and n.get("status")!="OPEN":
             errors.append(f"{key}: open obligation mislabelled")
+    # Embedded cross-references: any MM-<LETTER>-<digits> token appearing inside a
+    # node's text fields must resolve to an existing node id (catches stale refs
+    # like a next_probe pointing at a renumbered/nonexistent node).
+    for key,n in byid.items():
+        for field in TEXT_FIELDS:
+            val=n.get(field)
+            if not isinstance(val,str):continue
+            for tok in MM_REF.findall(val):
+                if tok not in byid:
+                    errors.append(f"{key}: {field} references unknown node {tok}")
     dependencies={x:set() for x in byid}
     for i,e in enumerate(edges):
         if not isinstance(e,dict):errors.append(f"edge[{i}]: invalid edge");continue

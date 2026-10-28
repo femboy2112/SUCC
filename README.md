@@ -16,6 +16,14 @@ proved, the single open gate, the next probe · [categorical observer
 atlas](docs/CATEGORICAL_OBSERVER_ATLAS.md) — the typed 7-layer reuse map ·
 [claim ledger](docs/CLAIM_LEDGER.md) · [architecture](docs/ARCHITECTURE.md).
 
+**Mathematical memory (cross-topic discovery layer):**
+[**mathematical memory index**](docs/math_memory/INDEX.md) — look up any SUCC result without
+re-excavating branches: a typed [concept graph](docs/math_memory/RELATION_GRAPH.json) (48 nodes /
+56 relations), an exhaustive [claim catalog](docs/math_memory/CLAIM_CATALOG.json) (1876 rows, each
+PR + head-SHA + path pinned), a [topic atlas](docs/math_memory/TOPIC_ATLAS.md) with a
+natural-language crosswalk, and the corrected circle→line→triangle / φ⁻¹ / γ / Ω genesis. It
+indexes; it certifies no proof — π base-16/base-3 normality and RH remain **OPEN**.
+
 **What is proved vs open (honest status):** the authentic BBP orbit has a *proved* logarithmic
 **absolute** Fourier-modulus loss — a modulus bound, **not** $S_N(h)=o(N)$ cancellation; the
 reduction of π base-16 normality to a fixed-$h$ Weyl estimate is proved; the sublinear signed

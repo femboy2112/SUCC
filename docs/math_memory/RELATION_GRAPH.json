@@ -692,7 +692,7 @@
       "kind": "conjecture",
       "status": "CONJECTURED",
       "title": "Conditional Rudolph-Johnson bridge (AR-5)",
-      "statement": "If the unaveraged x3 Fourier defects ->0 AND there are no zero-entropy joint components, then (via classical Rudolph-Johnson rigidity) pi is normal. Neither hypothesis is proven.",
+      "statement": "If the unaveraged x3 Fourier defects ->0 AND mu-a.e. ergodic component of the (x2,x3)-invariant weak-* limit measure has positive entropy under x2 (equivalently: no positive-measure set of zero-entropy ergodic components), then by classical Rudolph-Johnson rigidity the limit is Lebesgue (pi normal). Overall positive entropy of a non-ergodic limit does NOT suffice: a zero-entropy ergodic component (e.g. atomic/low-complexity) is not forced to Haar. Neither hypothesis is proven.",
       "scope": "Rank-2 x2/x3 joint action.",
       "limitation": "CONDITIONAL on two unproven hypotheses; p-adic coordinates are contracting, not a second expanding momentum.",
       "next_probe": "Prove positive-entropy + unaveraged x3 defect decay for the authentic orbit.",
@@ -748,7 +748,7 @@
       "title": "Oily Mobius totient and third golden-centered shadow",
       "statement": "C_q(z)=E[1_{gcd(J,q)=1} z^J] exact rational function (dyadic chars never vanish, 4/25<=|C_{2^k}|<=4/9); the connected third-order complex Mellin limit carries -(8/27)(phi^-1 - gamma) within the graded log covariance.",
       "scope": "Source-graded packet; specified centering.",
-      "limitation": "The gamma coefficient is gauge/centering dependent (c=1-gamma recovers it); shares the Omega VALUE, not a source.",
+      "limitation": "The gamma coefficient is gauge/centering dependent: for a real center c the coefficient is 2[1-gamma-c]H_q(z), so centering the log observable at its OWN mean c=1-gamma makes the a^-1 coefficient ZERO; the named -(8/27)(phi^-1-gamma) arises ONLY from the specified EXTERNAL center q*=phi^-2 (PR #310 line 177). A graded-observable result, NOT a gauge-invariant intrinsic constant of the ungraded BBP kernel; shares the Omega VALUE, not a source.",
       "next_probe": "(keeper)",
       "provenance": [
         {
@@ -767,7 +767,7 @@
       "statement": "Working certified ternary digit handle for pi built from published base-729 BBP identities for pi^2 and pi*sqrt3 (Bailey B69/B76) + sqrt transport + exact rational interval enclosure; reconstructs finite trit prefixes with a replayable witness.",
       "scope": "Finite enclosing prefix through position n.",
       "limitation": "A certified digit COMPUTATION, explicitly NOT a random-access base-3 BBP spigot for pi and NOT base-3 normality.",
-      "next_probe": "(none toward normality; see MM-O-049)",
+      "next_probe": "(none toward normality; see MM-O-050)",
       "provenance": [
         {
           "kind": "github_pr",
@@ -818,7 +818,7 @@
       "kind": "open_obligation",
       "status": "OPEN",
       "title": "Base-3 normality of pi (base-3 Weyl o(N))",
-      "statement": "Authentic base-3 Weyl cancellation sum_{n<N} e(2 pi i h 3^n pi)=o(N) for every fixed h!=0 is OPEN, as is base-16 normality; the certified digit handle does not touch it.",
+      "statement": "Authentic base-3 Weyl cancellation sum_{n<N} exp(2 pi i h 3^n pi)=o(N) for every fixed h!=0 is OPEN, as is base-16 normality; the certified digit handle does not touch it.",
       "scope": "Base-3 digits of pi.",
       "limitation": "OPEN; excluded Machin-type BBP spigot (Borwein-Borwein-Galway 2004) is the wall for a base-3 dynamical handle.",
       "next_probe": "Find a base-3 expanding dynamical handle, or prove the Weyl sum directly.",

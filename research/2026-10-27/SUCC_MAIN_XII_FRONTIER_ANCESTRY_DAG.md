@@ -2,7 +2,7 @@
 
 **Status:** research manifest (discovery layer). Computed 2026-10-27 against `main = 6dd80730c3575d91f746546a25da5aedbd2e2737`.
 **Method:** true Git ancestry via `git merge-base --is-ancestor` over every open PR head, **not** PR `base=` labels (AGENTS.md discipline). A closed PR is not necessarily merged; a `base=` label is not ancestry.
-**Firewall:** π base-16 and base-3 normality **OPEN**; the only signed real estimate is `∀ h≠0: Σ_{n≤N} e(2πi h U_n) = o(N)` on the authentic four-pole source, and it is **UNPROVEN**. RH **OPEN**. Nothing in this manifest promotes those.
+**Firewall:** π base-16 and base-3 normality **OPEN**; the only signed real estimate is `∀ h≠0: Σ_{n≤N} e(h U_n) = o(N)` — where `e(x) := exp(2πix)` and `U_n = 16^{n−1}π − T_n` is the **real** four-pole orbit mod 1 (**not** an integer carry-recursion, for which the sum is trivially `N`) — on the authentic four-pole source, an **UNPROVEN required cancellation, not an existing bound**. RH **OPEN**. Nothing in this manifest promotes those.
 
 ## 1. Roots, stack, leaves
 
@@ -10,12 +10,12 @@ Six PRs root the open frontier. Four fork cleanly from current `main`; two are *
 
 | PR | branch | true parent | ahead/behind main | note |
 |----|--------|-------------|-------------------|------|
-| #306 | pi-signed-pushforward-obstruction | **MAIN (clean)** | 0 / 1 | Skeleton-Key M3 no-go; stack root of #309–#311 |
-| #307 | oily-macaroni-source-mellin-hilbert | **MAIN (clean)** | 0 / 3 | independent Oily I (leaf) |
-| #308 | bbp-atomic-two-quadratic-gaussian | **MAIN (clean)** | 0 / 1 | BBP ground-floor atoms (leaf) |
-| #341 | math-memory-farey-gauss-consolidation | **MAIN (clean)** | 0 / 4 | **this consolidation's integration base** (leaf) |
-| #334 | prime-ladder-ravel-audit | **STALE** `de257fad` | 118 / 14 | forked from OLD main, 118 behind |
-| #337 | furstenberg-kempner-firewall | **STALE** `de257fad` | 118 / 6 | corrective child of #334, also stale |
+| #306 | pi-signed-pushforward-obstruction | **MAIN (clean)** | 1 / 0 | Skeleton-Key M3 no-go; stack root of #309–#311 |
+| #307 | oily-macaroni-source-mellin-hilbert | **MAIN (clean)** | 3 / 0 | independent Oily I (leaf) |
+| #308 | bbp-atomic-two-quadratic-gaussian | **MAIN (clean)** | 1 / 0 | BBP ground-floor atoms (leaf) |
+| #341 | math-memory-farey-gauss-consolidation | **MAIN (clean)** | 4 / 0 | **this consolidation's integration base** (leaf) |
+| #334 | prime-ladder-ravel-audit | **STALE** `de257fad` | 14 / 118 | forked from OLD main, 118 behind |
+| #337 | furstenberg-kempner-firewall | **STALE** `de257fad` | 6 / 118 | corrective child of #334, also stale |
 
 Everything else (#309–#340) is **one deep single-parent tree rooted at #306**, verified linear except for documented sibling forks:
 
