@@ -1,0 +1,59 @@
+[
+  {
+    "command": [
+      "python",
+      "scripts/verify_provenance.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.056649208068847656,
+    "log": "/tmp/succ-lonely-baseline/0.log",
+    "sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "tests.test_farey_gauss_defect",
+      "tests.test_coverage_sieve_crt",
+      "tests.test_circle_transport",
+      "tests.test_source_proof_certificate",
+      "tests.test_math_memory_graph"
+    ],
+    "returncode": 0,
+    "seconds": 0.4788808822631836,
+    "log": "/tmp/succ-lonely-baseline/1.log",
+    "sha256": "10169e10549e4e11401e867d23b756f85cb3163a17b25a312f593012fbc6704e"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.09465432167053223,
+    "log": "/tmp/succ-lonely-baseline/2.log",
+    "sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "returncode": 0,
+    "seconds": 2.79435396194458,
+    "log": "/tmp/succ-lonely-baseline/3.log",
+    "sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/build_math_memory.py",
+      "--check"
+    ],
+    "returncode": 1,
+    "seconds": 0.25792431831359863,
+    "log": "/tmp/succ-lonely-baseline/4.log",
+    "sha256": "a0c22b5e980291421459592077b62ef8e639be136dbe9defd9ea5efee2191d33"
+  }
+]
