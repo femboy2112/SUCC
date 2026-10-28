@@ -1,0 +1,112 @@
+{
+  "false_per_step_contraction": {
+    "N": 2,
+    "certified_violation_lower": "0.648250722873",
+    "energy": [
+      "1.166275758040",
+      "1.166283387436"
+    ],
+    "innovation": [
+      "1.231392416591",
+      "1.231392416592"
+    ]
+  },
+  "finite_experiments_only": true,
+  "gauge": "a_n=1/[4(8n+1)]; corrected plus=Uplus+a_n, minus=Uminus-a_n",
+  "neutral_filter": {
+    "D_at_1": 0,
+    "log2_coefficient": 0,
+    "minus": [
+      1
+    ],
+    "plus": [
+      17,
+      -17,
+      1
+    ]
+  },
+  "pi_normality_proved": false,
+  "q17_full_grid_energy_exact": "2/131071",
+  "rows": [
+    {
+      "N": 16,
+      "authentic_full_energy": [
+        "0.104861925573",
+        "0.104869554968"
+      ],
+      "modes": 18,
+      "nonnormal_source_control": [
+        "1.994055347301",
+        "1.994062976696"
+      ],
+      "rounding": "outward decimal, exact rational internally",
+      "spectral_tail": "1/131072"
+    },
+    {
+      "N": 32,
+      "authentic_full_energy": [
+        "0.110456080559",
+        "0.110463709954"
+      ],
+      "modes": 18,
+      "nonnormal_source_control": [
+        "1.996772377935",
+        "1.996780007331"
+      ],
+      "rounding": "outward decimal, exact rational internally",
+      "spectral_tail": "1/131072"
+    },
+    {
+      "N": 64,
+      "authentic_full_energy": [
+        "0.060785114004",
+        "0.060792743400"
+      ],
+      "modes": 18,
+      "nonnormal_source_control": [
+        "1.998315739344",
+        "1.998323368740"
+      ],
+      "rounding": "outward decimal, exact rational internally",
+      "spectral_tail": "1/131072"
+    },
+    {
+      "N": 128,
+      "authentic_full_energy": [
+        "0.012872653763",
+        "0.012880283158"
+      ],
+      "modes": 18,
+      "nonnormal_source_control": [
+        "1.999136902660",
+        "1.999144532056"
+      ],
+      "rounding": "outward decimal, exact rational internally",
+      "spectral_tail": "1/131072"
+    },
+    {
+      "N": 256,
+      "authentic_full_energy": [
+        "0.007159447063",
+        "0.007167076458"
+      ],
+      "modes": 18,
+      "nonnormal_source_control": [
+        "1.999560285373",
+        "1.999567914769"
+      ],
+      "rounding": "outward decimal, exact rational internally",
+      "spectral_tail": "1/131072"
+    }
+  ],
+  "schema": "SUCC_CHIRAL_TARGET_DESCENT_V1",
+  "source_hashes": {
+    "observational_succ/chiral_target_descent.py": "a37c0024b6b72a23f3f9750752cbdcd6a610e9251d0be34a99e30e7aeab4b589",
+    "observational_succ/rank_two_chiral_towers.py": "5180db0b6f44162ddff62f6b8a3a28f0ec8757ebdce19b743622596b4ee1371a",
+    "scripts/chiral_target_descent_probe.py": "31c937b2e8426a833d1f95e675a3db196a29cce55a46daa4b224c593af44d1c0",
+    "tests/test_chiral_target_descent.py": "00425dbb2dac88bc117092ed55b3fab355f944a57853387411b42d2d6a1a6275",
+    "tests/test_chiral_taylor_exact_horner.py": "8799e4b94dd11fcf494dfb1629aa25bc7709da451cd0093a7454d4284831b662"
+  },
+  "source_parent": "a0e4bfd9c218dfdc83ed9d5684ce8d8e4624cde5",
+  "stronger_selected_weyl_order_proved": false
+}

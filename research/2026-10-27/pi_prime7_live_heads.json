@@ -1,0 +1,56 @@
+{
+  "observed_at": "2026-10-27T20:38:57.359Z",
+  "main": "6dd80730c3575d91f746546a25da5aedbd2e2737",
+  "prs": [
+    {
+      "number": 324,
+      "url": "https://github.com/femboy2112/SUCC/pull/324",
+      "head": "research/pi-selected-boundary-crt-finite-spectral-2026-10-27",
+      "head_sha": "fca58d3e0289e57596dd8ca74bace325a450df31",
+      "base": "research/echo-succ-green-filter-transport-2026-10-27",
+      "base_sha": "ae5dad40bfcbcd7a50676ed61c297fdc46846f37",
+      "draft": true
+    },
+    {
+      "number": 325,
+      "url": "https://github.com/femboy2112/SUCC/pull/325",
+      "head": "research/pi-gaussian-ramification-prime7-mirror-2026-10-27",
+      "head_sha": "95ee2f1fab851afe1517d8ec5a0589885842426f",
+      "base": "research/pi-selected-boundary-crt-finite-spectral-2026-10-27",
+      "base_sha": "fca58d3e0289e57596dd8ca74bace325a450df31",
+      "draft": true
+    },
+    {
+      "number": 326,
+      "url": "https://github.com/femboy2112/SUCC/pull/326",
+      "head": "research/pi-proof-forge-integration-audit-2026-10-27",
+      "head_sha": "681f79cc1f045bef7cf2aa9e2b20ba1e9f7f27b2",
+      "base": "research/pi-selected-boundary-crt-finite-spectral-2026-10-27",
+      "base_sha": "fca58d3e0289e57596dd8ca74bace325a450df31",
+      "draft": true
+    },
+    {
+      "number": 327,
+      "url": "https://github.com/femboy2112/SUCC/pull/327",
+      "head": "research/pi-signed-cancellation-obstruction-2026-10-27",
+      "head_sha": "76f3799658fde8a2eff649b0bd4926a2173918d0",
+      "base": "research/pi-selected-boundary-crt-finite-spectral-2026-10-27",
+      "base_sha": "fca58d3e0289e57596dd8ca74bace325a450df31",
+      "draft": true
+    }
+  ],
+  "sibling_writes": false,
+  "parent": "76f3799658fde8a2eff649b0bd4926a2173918d0",
+  "additional_read_only_sibling": {
+    "head": "91d908b775241df6a7f91e9de843c88e6774e0c9",
+    "branch": "research/pi-two-bit-sheet-value-machine-2026-10-27",
+    "discovery": "https://github.com/femboy2112/SUCC/pull/325#issuecomment-6452843888",
+    "parent": "95ee2f1fab851afe1517d8ec5a0589885842426f",
+    "read": [
+      "research/2026-10-27/BBP_TWO_BIT_SHEET_VALUE_MACHINE.md",
+      "handoffs/CLAUDE_CODEX_TWO_BIT_GAUSSIAN_BRANCH_2026-10-27.md",
+      "scripts/bbp_two_bit_sheet_probe.py",
+      "tests/test_bbp_two_bit_sheet_probe.py"
+    ]
+  }
+}

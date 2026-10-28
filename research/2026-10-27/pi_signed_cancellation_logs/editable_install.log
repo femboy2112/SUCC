@@ -1,0 +1,23 @@
+Defaulting to user installation because normal site-packages is not writeable
+Obtaining file:///workspace/scratch/fe53b3b2e1b1/SUCC
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: mpmath<2,>=1.3 in /root/.local/lib/python3.12/site-packages (from observational-succ==0.3.0) (1.3.0)
+Requirement already satisfied: numpy<3,>=2.1 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from observational-succ==0.3.0) (2.3.5)
+Requirement already satisfied: sympy<2,>=1.12 in /root/.local/lib/python3.12/site-packages (from observational-succ==0.3.0) (1.14.0)
+Requirement already satisfied: scipy<2,>=1.14 in /opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages (from observational-succ==0.3.0) (1.17.0)
+Building wheels for collected packages: observational-succ
+  Building editable for observational-succ (pyproject.toml): started
+  Building editable for observational-succ (pyproject.toml): finished with status 'done'
+  Created wheel for observational-succ: filename=observational_succ-0.3.0-0.editable-py3-none-any.whl size=19446 sha256=8bedcaf770be5f3bb1653d2f6b74d8e180fe650de42e50d2cd368dea84313cb6
+  Stored in directory: /tmp/pip-ephem-wheel-cache-h568x1so/wheels/d0/3f/8f/25a18a6cf2836a81fa212ac9186eddea3f53cb7bbc4e1a8e7d
+Successfully built observational-succ
+Installing collected packages: observational-succ
+Successfully installed observational-succ-0.3.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
