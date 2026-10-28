@@ -16,3 +16,5 @@ The original Oily positive source, signed four BBP poles, U0=0, source provenanc
 | WPI-10 | This prior/inflation system already proves selected real BBP Weyl o(N), physical quantum vacuum origin, Einstein inflation or RH. | **UNPROVED / OPEN**; any such assertion requires new source/metric/QFT law and adversarial changed-seed tests. |
 
 Local full package: 18 discovered cases, 17 pass and 1 upstream-native import skip; 49 exact source points, 25 covariance checks, four exact fourth moments, nine horizon scalings, high precision independent quadrature. Pushed standalone minimal probe (Git blob d178cb5d20073b94662b06a29f4a2f7ce1a2b64a) and five additional focused tests (byte-equal locally checked). Hosted CI, native SUCC suite and Lean not preclaimed. No main merge without reviewed authorization.
+
+| WPI-11 | The all-8n-success Oily Bayesian evidence equals T_n/T_0∼1/(4πn²), and KL(posterior||prior)=2logn+log(4π)−2+O(n^-1). | **PROVED PAPER** using the original BBP tail/Gamma2 endpoint expansion and a **declared** Bernoulli(x) likelihood; information cost of this selected rare history, not average mutual information or Big Bang evidence. |
