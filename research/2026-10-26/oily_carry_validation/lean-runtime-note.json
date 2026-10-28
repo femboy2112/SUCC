@@ -1,0 +1,11 @@
+{
+  "kind": "current-process executable path compatibility only",
+  "reason": "Lean 4.14.0 uses /proc/<getpid()>/exe; this host exposes /proc/self/exe but fails the numerical process alias. No checker binary is changed.",
+  "official_source": "https://github.com/leanprover/lean4/blob/v4.14.0/src/runtime/io.cpp#L1031-L1043",
+  "shim_source": "#define _GNU_SOURCE\n#include <unistd.h>\n#include <stdio.h>\n#include <string.h>\n#include <dlfcn.h>\n/* Only repair equivalent current-process executable-link spellings. */\nssize_t readlink(const char *path, char *buf, size_t size) {\n  static ssize_t (*real_readlink)(const char *, char *, size_t) = NULL;\n  if (!real_readlink) real_readlink = dlsym(RTLD_NEXT, \"readlink\");\n  char own[64];\n  snprintf(own, sizeof own, \"/proc/%d/exe\", (int)getpid());\n  return real_readlink(strcmp(path, own) == 0 ? \"/proc/self/exe\" : path, buf, size);\n}\n",
+  "shim_source_sha256": "9149b3d5bde2ab07f79d178d002e2bf019d8191e9a897c16e825378d1ca66b04",
+  "shim_shared_object_sha256": "9f15a1219fad54ff13951338187c4ddc8f54f4e4a76d95b4ff208116a7f0f0d6",
+  "compiler_distribution_sha256": "320f18e7d58271d95fced740522b5a5ed41b85b2af5bf0e8ab9a8dbc380e450a",
+  "compiler_binary_sha256": "eacf754d25ae86ea076882a34b9444f2485659d9df4266b821443b28ca95a215",
+  "clean_CI_required_for_unmodified_host_receipt": true
+}

@@ -1,0 +1,13 @@
+{
+  "valid_receipt": {
+    "exit_code": 0,
+    "stdout": "OILY_MACARONI_RECEIPT_VERIFIED\n",
+    "stderr": ""
+  },
+  "mutated_receipt": {
+    "mutation": "tail_base_moments[1]: 7/2 -> 0",
+    "exit_code": 1,
+    "stdout": "",
+    "stderr": "RECEIPT_MISMATCH: source hashes, parameters or certified results differ\n"
+  }
+}

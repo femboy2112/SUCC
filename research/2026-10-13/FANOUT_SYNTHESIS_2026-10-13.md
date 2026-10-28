@@ -23,7 +23,7 @@ Reproduces ZCR-08's `F_6(6) = -1` (delta = −2) as a special case. Status PROVE
 
 ## 3. Literature recon — the Nyman–Beurling rate is KNOWN (stop guessing)
 
-`citadel-rick` pinned the published quantitative state (the SUCC `E_N*` is the classical squared distance `d_N^2` in the equivalent Dirichlet form):
+`citadel-rick` pinned the published quantitative state (the SUCC `E_N*` is *comparable to* — bounded two-sided by, **not** literally equal to — the classical squared distance `d_N^2` in the equivalent Dirichlet form; cf. `docs/CATEGORICAL_OBSERVER_ATLAS.md`, which disclaims an `E_N*=d_N^2` identity):
 
 - **Lower bound (unconditional):** `liminf d_N^2 log N >= sum_{Re rho = 1/2} m(rho)^2/|rho|^2` (Báez-Duarte–Balazard–Landreau–Saias, Adv. Math. 149 (2000); sharpened by Burnol, Adv. Math. 170 (2002)). Under RH this reads `d_N^2 log N >= 2 + gamma - log 4pi`.
 - **Upper bound (conditional on RH):** `d_N^2 << (log log N)^{5/2+delta} (log N)^{-1/2}` (Balazard–de Roton, arXiv:0812.1689).

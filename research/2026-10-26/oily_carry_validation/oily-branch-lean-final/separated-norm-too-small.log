@@ -1,0 +1,5 @@
+/workspace/scratch/cd3d6a3d0aa9/validation/oily-branch-lean-final/oily-coercivity-build-vrmk51qj/separated-norm-too-small.lean:31:2: error: linarith failed to find a contradiction
+case a
+a b c d : ℝ
+a✝ : (16 * a - b - 16 * c + d) ^ 2 > 513 * (a ^ 2 + b ^ 2 + c ^ 2 + d ^ 2)
+⊢ False failed
