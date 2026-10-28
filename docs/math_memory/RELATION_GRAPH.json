@@ -1,0 +1,615 @@
+{
+  "schema_version": "0.1",
+  "coverage": "CURATED_CROSS_BRANCH_SEED_NOT_EXHAUSTIVE",
+  "main_baseline": "6dd80730c3575d91f746546a25da5aedbd2e2737",
+  "scope": "Memory referents only; docs/CLAIM_NAMESPACE_REGISTRY.json remains canonical for real claims",
+  "allowed_relations": [
+    "formalizes",
+    "candidate_bridge",
+    "specializes",
+    "shares_source_with",
+    "depends_on",
+    "motivates",
+    "shares_value_with",
+    "generalizes",
+    "complements",
+    "constrains",
+    "reduces_to",
+    "does_not_imply"
+  ],
+  "nodes": [
+    {
+      "id": "MM-I-001",
+      "kind": "intuition",
+      "status": "CONJECTURED",
+      "title": "Marked circle → cut line → recursive arithmetic triangles",
+      "statement": "One marked circle cut to a line; seek a coherent recursive arithmetic triangulation carrying ideal/global structure.",
+      "provenance": [
+        {
+          "kind": "user_recollection",
+          "date": "2026-10-27",
+          "scope": "Original intuition clarified by user; exact first date not established"
+        }
+      ],
+      "scope": "Requires chosen mark, orientation and triangulation.",
+      "limitation": "Circle alone does not canonically select a golden ratio or source.",
+      "next_probe": "Construct a source functor; test whether changing cut preserves it."
+    },
+    {
+      "id": "MM-T-002",
+      "kind": "theorem",
+      "status": "CLASSICAL",
+      "title": "Cut circle retains a seam",
+      "statement": "S1 minus point ≅ R; oriented cut completion is an interval with two copies of the seam.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 320,
+          "head_sha": "5ea12570aec86c3a8b555e927c10337804568a62",
+          "path": "research/2026-10-27/POINTED_CIRCLE_SOLENOID_TWO_ADIC_CLOCK.md"
+        }
+      ],
+      "scope": "Topology with marked cut convention.",
+      "limitation": "No intrinsic Farey triangulation from cut alone.",
+      "next_probe": "Inspect chart orientation and seam gauges."
+    },
+    {
+      "id": "MM-T-003",
+      "kind": "theorem",
+      "status": "CLASSICAL",
+      "title": "Farey tessellation is an arithmetic triangle system",
+      "statement": "PSL2(Z) images of (0,1,infinity) tile the upper half-plane; mediants of Farey neighbors retain determinant ±1.",
+      "provenance": [
+        {
+          "kind": "web",
+          "url": "https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/jlms.70588"
+        },
+        {
+          "kind": "new_proof",
+          "path": "research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md"
+        }
+      ],
+      "scope": "Chosen modular/hyperbolic completion of projective boundary.",
+      "limitation": "Does not uniquely select a preferred continued-fraction orbit.",
+      "next_probe": "Check exact Farey mediants and canonicality under chart change."
+    },
+    {
+      "id": "MM-T-004",
+      "kind": "theorem",
+      "status": "CLASSICAL",
+      "title": "Golden reciprocal as Gauss fixed point",
+      "statement": "x_n=F_n/F_(n+1) via x→1/(1+x), tending to lambda=phi^(-1), fixed by the Gauss map.",
+      "provenance": [
+        {
+          "kind": "new_proof",
+          "path": "research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md"
+        },
+        {
+          "kind": "web",
+          "url": "https://www.cecm.sfu.ca/organics/papers/corless/confrac/html/node6-an.shtml"
+        }
+      ],
+      "scope": "All-one continued-fraction itinerary.",
+      "limitation": "Itinerary is chosen, not forced by the circle.",
+      "next_probe": "Derive any source-specific selection of this itinerary."
+    },
+    {
+      "id": "MM-T-005",
+      "kind": "theorem",
+      "status": "CLASSICAL",
+      "title": "Gauss invariant density and digit-tail law",
+      "statement": "dmu=dx/((1+x)log2), with (log2) P(digit≥k)=log(1+1/k).",
+      "provenance": [
+        {
+          "kind": "new_proof",
+          "path": "research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md"
+        }
+      ],
+      "scope": "Gauss map on (0,1), its stationary invariant law.",
+      "limitation": "No digit independence or selected pi law.",
+      "next_probe": "Check Perron-Frobenius telescoping."
+    },
+    {
+      "id": "MM-T-006",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Gamma as Gauss-harmonic discrepancy",
+      "statement": "E_N=Σ(1/k−log2 P(digit≥k))=H_N−log(N+1)→gamma, with positive remainder below 1/(2N).",
+      "provenance": [
+        {
+          "kind": "new_proof",
+          "path": "research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md"
+        },
+        {
+          "kind": "main_repo_doc",
+          "path": "docs/FOUNDATIONS.md",
+          "main_baseline": "6dd80730c3575d91f746546a25da5aedbd2e2737"
+        }
+      ],
+      "scope": "Specific harmonic benchmark and invariant Gauss probability.",
+      "limitation": "Changing the benchmark shifts the finite part.",
+      "next_probe": "Check exact rational logarithmic enclosures."
+    },
+    {
+      "id": "MM-D-007",
+      "kind": "defined_comparison",
+      "status": "PROVED_LOCAL",
+      "title": "Oily Omega as declared same-carrier comparison",
+      "statement": "Omega=phi^(-1)−gamma compares Gauss periodic fixed point with its normalized invariant-law harmonic discrepancy; finite brackets certified.",
+      "provenance": [
+        {
+          "kind": "new_proof",
+          "path": "research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md"
+        },
+        {
+          "kind": "user_recollection",
+          "date": "2026-10-27",
+          "scope": "Original intuition clarified by user; exact first date not established"
+        }
+      ],
+      "scope": "Selected periodic itinerary and normalized digit-tail law.",
+      "limitation": "Declared difference, not intrinsic topology/physical metric.",
+      "next_probe": "Test gauge/reference changes and hunt a source-preserving transport."
+    },
+    {
+      "id": "MM-I-008",
+      "kind": "conjecture",
+      "status": "UNVERIFIED",
+      "title": "Ideal versus actualized defect interpretation",
+      "statement": "Omega might measure a canonical ideal path versus realized arithmetic process.",
+      "provenance": [
+        {
+          "kind": "user_recollection",
+          "date": "2026-10-27",
+          "scope": "Original intuition clarified by user; exact first date not established"
+        }
+      ],
+      "scope": "Only if canonical transport and gauge fixing are provided.",
+      "limitation": "No mechanism established for pi normality or physical realization.",
+      "next_probe": "Exhibit transport predictions that changed-seed countermodels fail."
+    },
+    {
+      "id": "MM-T-009",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Projective triangle, golden fourth point and Kronecker cusp",
+      "statement": "PR303 chooses golden cross-ratio as extra structure and gamma from chosen Kronecker finite-part normalization.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 303,
+          "head_sha": "7e838a4bd0c11e1056de6eb801acd98b3feff1ec",
+          "path": "research/2026-10-25/SEINFELD_FOUR_POINT_GOLDEN_KRONECKER.md"
+        }
+      ],
+      "scope": "Declared projective/elliptic and cusp normalizations.",
+      "limitation": "Gamma not proved uniquely from phi; shape comparison cancels universal gamma.",
+      "next_probe": "Derive an authentic BBP source intertwiner."
+    },
+    {
+      "id": "MM-T-010",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Oily packet grammar and golden fixed point",
+      "statement": "PR309 positive binary packets have grade PGF (2−z)^(-2), fixed q*=phi^(-2) and Gamma(2) centered offset phi^(-1)−gamma.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 309,
+          "head_sha": "8e9d8a4d7d42bb0931f899ac221f27fccf090b36",
+          "path": "research/2026-10-26/OILY_MACARONI_SOURCE_BRIDGE.md"
+        }
+      ],
+      "scope": "Original source-conditioned, specified packet grammar.",
+      "limitation": "q* differs from Gauss fixed lambda; regrading changes fixed point.",
+      "next_probe": "Construct actual Farey-to-packet map or keep distinct."
+    },
+    {
+      "id": "MM-T-011",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Oily primitive Mellin character and log covariance",
+      "statement": "PR310 derives C_m(z), H_m(z)=2C−zC′ and a golden-centered Gamma logarithmic response.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 310,
+          "head_sha": "a8c7c85b7a1900d422090cad94b4102560987b1406",
+          "path": "research/2026-10-26/OILY_TOTIENT_THIRD_SHADOW.md"
+        }
+      ],
+      "scope": "Specified source grade and log centering.",
+      "limitation": "Covariance is not a real π Fourier Weyl saving.",
+      "next_probe": "Find signed grade/carry/phase coupling and negative controls."
+    },
+    {
+      "id": "MM-T-012",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Oily packet chars reconstruct BBP 1-germ logarithms",
+      "statement": "PR340 first two log coefficients recover C_m and H_m; integrated packet masses give classical Euler inverse-binomial pi series.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 340,
+          "head_sha": "7d45145c3982bd8fc279a5e85e9c46e927f58050",
+          "path": "research/2026-10-27/OILY_ZERO_ONE_LOG_GERM_BRIDGE.md"
+        }
+      ],
+      "scope": "Authentic positive packet source and declared grading.",
+      "limitation": "Source-only germs cannot distinguish changed real seed.",
+      "next_probe": "Derive a nonfactorizing selected Weyl estimate."
+    },
+    {
+      "id": "MM-T-013",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Operational Yoneda with restricted probes",
+      "statement": "PR22 source-labelled legal histories and criterion for restricted Yoneda faithfulness.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 22,
+          "head_sha": "f060d465a808877210a02bae4c37b73268513a5d",
+          "path": "research/2026-10-11/OPERATIONAL_YONEDA_POLICY_DESCENT.md"
+        }
+      ],
+      "scope": "Finite source/probe category.",
+      "limitation": "Yoneda does not grant unlicensed probes.",
+      "next_probe": "Test restricted observer family and forgotten paths."
+    },
+    {
+      "id": "MM-T-014",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Cech/Yoneda local-to-global gluing",
+      "statement": "PR27 local potentials glue exactly with full overlap cycle holonomy zero; failure produces source witness.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 27,
+          "head_sha": "8110536ecc6851028d5eef2f3143815b8f9bac3c",
+          "path": "research/2026-10-12/LOCAL_GLOBAL_YONEDA_GLUE_2026-10-12.md"
+        }
+      ],
+      "scope": "Declared finite graph, full cocycle and source sections.",
+      "limitation": "No universal finite-to-infinite π/RH theorem.",
+      "next_probe": "Test source cycles and non-commuting controls."
+    },
+    {
+      "id": "MM-T-015",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Shared carrier target/source-fiber descent",
+      "statement": "PR28 target factors through observed fibers iff constant on each; pairwise-compatible reports can fail joint source realization.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 28,
+          "head_sha": "4733d5e5534bf64f8f41d57e9da05ecc5bc42c61",
+          "path": "research/2026-10-12/SHARED_CARRIER_BOUNDARY_DESCENT.md"
+        }
+      ],
+      "scope": "Same original source and declared observation maps.",
+      "limitation": "No free global realization from pairwise compatibility.",
+      "next_probe": "Apply actual source-image gate to lattice zoom-out."
+    },
+    {
+      "id": "MM-I-016",
+      "kind": "conjecture",
+      "status": "UNVERIFIED",
+      "title": "Lattice zoom-out to one Yoneda point proves global law",
+      "statement": "User's finite-lattice→completed-global-point research strategy needs actual source realization and target descent.",
+      "provenance": [
+        {
+          "kind": "user_recollection",
+          "date": "2026-10-27",
+          "scope": "Original intuition clarified by user; exact first date not established"
+        }
+      ],
+      "scope": "Declared diagrams, limit topology and source law required.",
+      "limitation": "Not already a general theorem of Yoneda or completion.",
+      "next_probe": "Define functor and prove source-preserving limit map."
+    },
+    {
+      "id": "MM-T-017",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Authentic BBP four-pole zero-selected source",
+      "statement": "Original signed four-pole r(n), U0=0 and U_(n+1)=16U_n+r(n+1).",
+      "provenance": [
+        {
+          "kind": "main_repo_doc",
+          "path": "docs/PI_SELECTED_CATEGORICAL_FRONTIER.md",
+          "main_baseline": "6dd80730c3575d91f746546a25da5aedbd2e2737"
+        }
+      ],
+      "scope": "One exact rational arithmetic source and initial selector.",
+      "limitation": "Changing seed alters real phase statistics.",
+      "next_probe": "Byte-verify original source across merges."
+    },
+    {
+      "id": "MM-T-018",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Summable BBP Green-tail real Fourier transport",
+      "statement": "U_n=16^(n−1)pi−T_n and ΣT_n finite give O_h(1) signed orbit transport.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 335,
+          "head_sha": "aa270c4ed733e8220d02748c3cf8a83047e8258b",
+          "path": "research/2026-10-27/BBP_LOG_DIRAC_SAWTOOTH_THREAD.md"
+        }
+      ],
+      "scope": "Actual signed four-pole zero seed.",
+      "limitation": "Transport is not the missing o(N) cancellation.",
+      "next_probe": "Prove a real signed sum saving with hostile seed controls."
+    },
+    {
+      "id": "MM-T-019",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Authentic 2-adic BBP odometer",
+      "statement": "PR321 source map Φ gives exact residue permutations and Haar equidistribution in Z2.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 321,
+          "head_sha": "eeb2a48ea1b43967ea385009a3f8ec280b2efa69",
+          "path": "research/2026-10-27/BBP_BINWINDOW_ZERO_BOUNDARY.md"
+        }
+      ],
+      "scope": "2-adic characters and exact zero boundary.",
+      "limitation": "2-adic Haar does not imply real-circle Haar.",
+      "next_probe": "Derive an authenticated real/adic cross-character bound."
+    },
+    {
+      "id": "MM-T-020",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Solenoid/all-rank SUCC source transport",
+      "statement": "PR330 coherent real/adic solenoid, PR332 rank-2 and all-prime arithmetic carrier with source-correct Green transport.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 330,
+          "head_sha": "b93a787a31957eae74d2748f87f1c0db3dda9fee",
+          "path": "research/2026-10-27/REAL_ADIC_SOLENOID_NATURAL_EXTENSION.md"
+        },
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 332,
+          "head_sha": "73181be7892c04e5d04b18104889567449fa85be",
+          "path": "research/2026-10-27/PI_ALL_RANK_ADELIC_SUCC_THREAD.md"
+        }
+      ],
+      "scope": "Exact arithmetic multipliers and source states.",
+      "limitation": "Rank-r bulk Haar does not imply original slice Haar.",
+      "next_probe": "Prove transverse trace signed-correlation control."
+    },
+    {
+      "id": "MM-N-021",
+      "kind": "counterexample",
+      "status": "REFUTED",
+      "title": "Transcendence plus finite type does not give entropy",
+      "statement": "Kempner counterexample: transcendental with irrationality exponent 2, binary orbit empirical limit δ0, nonnormal despite ×2 and ×3 invariance.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "repo": "femboy2112/SUCC",
+          "pr": 337,
+          "head_sha": "0e36f9c5107ffac97e642ef00511ec4a6f6bdd8d",
+          "path": "research/2026-10-27-furstenberg-kempner/KEMPNER_FURSTENBERG_FIREWALL.md"
+        }
+      ],
+      "scope": "Refutes generic entropy shortcut, not theorem using full original BBP source.",
+      "limitation": "Cannot infer pi normality from Furstenberg and mere transcendence.",
+      "next_probe": "Prove actual source-specific anti-concentration."
+    },
+    {
+      "id": "MM-O-022",
+      "kind": "open_obligation",
+      "status": "OPEN",
+      "title": "Selected π base16 Weyl cancellation",
+      "statement": "For each fixed integer h≠0 prove Σ_{n≤N}e(hU_n)=o(N).",
+      "provenance": [
+        {
+          "kind": "main_repo_doc",
+          "path": "docs/PI_SELECTED_CATEGORICAL_FRONTIER.md",
+          "main_baseline": "6dd80730c3575d91f746546a25da5aedbd2e2737"
+        }
+      ],
+      "scope": "Original four-pole source, real phases, zero selector.",
+      "limitation": "Unproved; adic Haar, Oily scalar and rank-r transport insufficient.",
+      "next_probe": "Obtain genuine signed source/carry estimate."
+    },
+    {
+      "id": "MM-O-023",
+      "kind": "open_obligation",
+      "status": "OPEN",
+      "title": "Source-authentic completed Weil/RH gate",
+      "statement": "Need a valid completed Weil positivity or equivalent RH proof using original prime-power source and complete Gamma/pole.",
+      "provenance": [
+        {
+          "kind": "main_repo_doc",
+          "path": "docs/FOUNDATIONS.md",
+          "main_baseline": "6dd80730c3575d91f746546a25da5aedbd2e2737"
+        }
+      ],
+      "scope": "Separate RH program with authenticated sources.",
+      "limitation": "No RH proof, no physical positivity shortcut.",
+      "next_probe": "Independent certified completed-Weil source/test function/positivity proof."
+    }
+  ],
+  "edges": [
+    {
+      "source": "MM-I-001",
+      "target": "MM-T-002",
+      "relation": "formalizes",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-I-001",
+      "target": "MM-T-003",
+      "relation": "candidate_bridge",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-003",
+      "target": "MM-T-004",
+      "relation": "specializes",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-003",
+      "target": "MM-T-005",
+      "relation": "shares_source_with",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-006",
+      "target": "MM-T-005",
+      "relation": "depends_on",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-D-007",
+      "target": "MM-T-004",
+      "relation": "depends_on",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-D-007",
+      "target": "MM-T-006",
+      "relation": "depends_on",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-D-007",
+      "target": "MM-I-008",
+      "relation": "motivates",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-003",
+      "target": "MM-T-009",
+      "relation": "shares_source_with",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-009",
+      "target": "MM-T-010",
+      "relation": "candidate_bridge",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-011",
+      "target": "MM-T-010",
+      "relation": "depends_on",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-012",
+      "target": "MM-T-011",
+      "relation": "depends_on",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-D-007",
+      "target": "MM-T-010",
+      "relation": "shares_value_with",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-I-016",
+      "target": "MM-T-013",
+      "relation": "candidate_bridge",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-013",
+      "target": "MM-T-014",
+      "relation": "complements",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-014",
+      "target": "MM-T-015",
+      "relation": "complements",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-015",
+      "target": "MM-I-016",
+      "relation": "constrains",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-018",
+      "target": "MM-T-017",
+      "relation": "depends_on",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-019",
+      "target": "MM-T-017",
+      "relation": "depends_on",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-018",
+      "target": "MM-O-022",
+      "relation": "reduces_to",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-019",
+      "target": "MM-O-022",
+      "relation": "does_not_imply",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-020",
+      "target": "MM-O-022",
+      "relation": "does_not_imply",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-012",
+      "target": "MM-O-022",
+      "relation": "does_not_imply",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-N-021",
+      "target": "MM-T-020",
+      "relation": "constrains",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-014",
+      "target": "MM-O-023",
+      "relation": "does_not_imply",
+      "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    }
+  ],
+  "guardrails": [
+    "No theorem status promotion by analogy or finite tests",
+    "No assumption research PR is already merged",
+    "Original signed BBP source and seed immutable",
+    "Record countermodels and next verdict-changing probes"
+  ]
+}
