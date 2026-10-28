@@ -24,7 +24,7 @@ $$
 
 Conditional on X=x, J is the sum of the two original Oily geometric waits with generating function (1-u)(1-v)/[(1-uz)(1-vz)]. This law is established from the unchanged positive BBP source, before a report arrives.
 
-**A specific new observation instrument:** conditional on X=x each of 8n binary reports has success probability x and reports are conditionally independent. Given *all* 8n successes, Bayes gives
+**A specific new observation instrument:** conditional on X=x each of 8n binary reports has success probability x, and the reports are mutually independent **and independent of the packet grade J and all tree-edge innovations given X**. This conditional-independence assumption is part of the newly declared model; without it, the displayed Bayes posterior on the joint variables is not licensed. Given *all* 8n successes, Bayes gives
 
 $$
 \boxed{\mu_n(dx,j)=\frac{x^{8n}p_j(x)}{T_n}\,dx,\qquad
