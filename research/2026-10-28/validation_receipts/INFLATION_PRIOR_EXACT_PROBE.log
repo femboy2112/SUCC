@@ -1,0 +1,31 @@
+{
+  "receipt": "research/2026-10-28/INFLATION_PRIOR_EXACT_RECEIPT.json",
+  "tree_level_stats": {
+    "1": {
+      "depth": 1,
+      "leaves": 2,
+      "accuracy_exact": "3/4",
+      "mutual_info_bits": 0.3318777540066993
+    },
+    "2": {
+      "depth": 2,
+      "leaves": 4,
+      "accuracy_exact": "43/64",
+      "mutual_info_bits": 0.1411418037091551
+    },
+    "3": {
+      "depth": 3,
+      "leaves": 8,
+      "accuracy_exact": "10155/16384",
+      "mutual_info_bits": 0.06540117590045764
+    }
+  },
+  "ks": {
+    "b2_theta_half": "1/2",
+    "b4_theta_half": "1/1",
+    "b5_theta_half": "5/4",
+    "census_variance_b2_level3": "21/2",
+    "census_variance_b5_level3": "183/125"
+  },
+  "source_check": true
+}
