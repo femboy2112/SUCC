@@ -361,3 +361,32 @@ def max_entropy_vacancy_double_imbalance(x) -> F:
     x=_unit(x,'Oily x')
     p=x/2
     return (1-p)**2-p*p
+
+
+def bayesian_wavefront_message(theta, child_messages) -> F:
+    """Exact parent posterior MAGNETIZATION from causally delivered subtrees.
+
+    For the declared uniform prior on each child's local spin, each child
+    message m_i∈[-1,1] summarizes a conditionally independent subtree. The
+    upstream parent receives the messages through independent BSC(theta)
+    channels. The exact Bayesian parent magnetization is
+
+        [prod_i(1+theta*m_i)-prod_i(1-theta*m_i)] /
+        [prod_i(1+theta*m_i)+prod_i(1-theta*m_i)].
+
+    This is a nonlinear message-passing recurrence. The model is exact, but
+    actual SUCC signed BBP carries are NOT a binary broadcast tree.
+    """
+    theta=_unit(theta,'theta')
+    if not isinstance(child_messages,(tuple,list)) or not child_messages:
+        raise PriorInflationError('at least one causal child message required')
+    plus=minus=F(1)
+    for message in child_messages:
+        m=_fraction(message,'message')
+        if not -1<=m<=1:
+            raise PriorInflationError('posterior magnetization must be within [-1,1]')
+        plus*=1+theta*m
+        minus*=1-theta*m
+    if plus+minus==0:
+        raise PriorInflationError('inconsistent impossible causal child evidence')
+    return (plus-minus)/(plus+minus)

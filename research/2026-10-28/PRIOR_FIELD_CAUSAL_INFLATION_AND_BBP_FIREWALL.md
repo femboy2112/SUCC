@@ -124,6 +124,20 @@ For b theta²>1, this is bounded; for b theta²<1 it diverges, and at equality i
 
 **The observer-memory fork:** Let F_n be all receipts through generation n and G_n only generation-n leaves. `F_n` is nested; optimal Bayesian knowledge about the root cannot degrade as evidence is retained. But `G_n` is not nested, and root → G_n → G_(n+1) is Markov: current-frontier information can and does decay even as its cardinality explodes. Thus any thesis that ideal E1/E2 necessarily loses root information requires a **memory/receipt-discarding resource rule**. Geometry and branching alone do not supply it. If theta=1, descendants are exact copies and knowledge persists; if theta=0, no frontier descendants contain root information.
 
+### An explicit *nonlinear observer recursion*: Bayesian belief wavefronts
+
+The finite frontier likelihood calculation can be rewritten as a closed, **nonlinear message-passing update**, without treating the raw observed leaves as independent *unconditional* evidence. Let `m_i` be the posterior magnetization of child i's state derived from its own causally delivered subtree (under a uniform local binary prior). Conditional on the parent spin, the child subtrees are independent and the parent's prior is unbiased. Then its **exact** optimal Bayes magnetization is
+
+`m_parent = [product_i(1+theta m_i)−product_i(1−theta m_i)] / [product_i(1+theta m_i)+product_i(1−theta m_i)]`.
+
+Equivalently, `m_parent=tanh(sum_i atanh(theta*m_i))` when the atanh factors are finite, but the product formula remains exact over rationals and handles extremal messages. At b=2 it reduces to
+
+`m_parent = theta*(m1+m2)/(1+theta²*m1*m2)`.
+
+**This is a source-prior-conditioned recursive knowledge wavefront**, not merely a linear filter of source amplitudes. A source-labelled successor observer can feed its posterior message into the next wavefront stage, with exact shared-source consistency. The positive/negative evidence receipts are required to calibrate it; without a prior and edge channel the numbers cannot be inferred.
+
+When child messages are centered, weak, and conditionally independent, linearization at zero gives `m_parent≈theta Σ_i m_i`, hence the **squared** message amplitude has leading amplification `b theta²`, not the tempting but incorrect deterministic coherent sum gain `b theta`. This explains why exponentially many descendants do not automatically overcome independent source noise. The globally nonlinear distributional fixed point of the belief recursion is a separate object from the Oily matrix fixed point; no identification between their parameters has been proved. Exact nested-tree checks and a separate symbolic derivation validate the finite recursion.
+
 ## 4. IPC-05: SUCC-authenticated Oily transfer has a distinct linear inflation threshold
 
 Do NOT identify the binary channel theta with the Oily loop retention u,v without a separate proof. Here is a second, independent exact model that genuinely uses the source-authentic transfer matrix

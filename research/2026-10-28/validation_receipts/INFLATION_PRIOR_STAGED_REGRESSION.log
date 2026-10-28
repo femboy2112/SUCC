@@ -31,10 +31,13 @@ test_no_fixed_binary_microevent_has_likelihood_one_minus_x (test_causal_inflatio
 test_bayes_update_without_remote_signal (test_causal_inflation_prior.PreexistingCorrelationTests.test_bayes_update_without_remote_signal) ... ok
 test_independent_and_perfect_latent_controls (test_causal_inflation_prior.PreexistingCorrelationTests.test_independent_and_perfect_latent_controls) ... ok
 test_bad_source_labels_are_rejected (test_causal_inflation_prior.SourcePriorTests.test_bad_source_labels_are_rejected) ... ok
+test_exact_nonlinear_bayes_wavefront_messages (test_causal_inflation_prior.SourcePriorTests.test_exact_nonlinear_bayes_wavefront_messages) ... ok
 test_exhaustive_accuracy_diminishes_for_frontier_only (test_causal_inflation_prior.SourcePriorTests.test_exhaustive_accuracy_diminishes_for_frontier_only) ... ok
 test_exhaustive_budget (test_causal_inflation_prior.SourcePriorTests.test_exhaustive_budget) ... ok
 test_independent_frontier_erases_root (test_causal_inflation_prior.SourcePriorTests.test_independent_frontier_erases_root) ... ok
 test_likelihoods_normalize_exactly (test_causal_inflation_prior.SourcePriorTests.test_likelihoods_normalize_exactly) ... ok
+test_message_identity_matches_exact_tree_likelihood (test_causal_inflation_prior.SourcePriorTests.test_message_identity_matches_exact_tree_likelihood) ... ok
+test_message_requires_consistent_causal_evidence (test_causal_inflation_prior.SourcePriorTests.test_message_requires_consistent_causal_evidence) ... ok
 test_perfect_source_preserves_root (test_causal_inflation_prior.SourcePriorTests.test_perfect_source_preserves_root) ... ok
 test_prior_point_masses (test_causal_inflation_prior.SourcePriorTests.test_prior_point_masses) ... ok
 test_projective_consistency_all_second_layer_extensions (test_causal_inflation_prior.SourcePriorTests.test_projective_consistency_all_second_layer_extensions) ... ok
@@ -186,6 +189,6 @@ test_transient_bound_and_contraction (test_wavefront_oscillator_completion.Wavef
 test_uniform_tail_sharp_normalized_at_endpoint (test_wavefront_oscillator_completion.WavefrontOscillatorTests.test_uniform_tail_sharp_normalized_at_endpoint) ... ok
 
 ----------------------------------------------------------------------
-Ran 185 tests in 1.904s
+Ran 188 tests in 1.710s
 
 OK (skipped=3)

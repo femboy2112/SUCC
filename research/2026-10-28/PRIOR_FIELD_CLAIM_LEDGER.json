@@ -9,15 +9,124 @@
   "parent_status": "draft research only",
   "disclosure": "Classical results, exact source-dependent model identities, and proposed observational identifications remain categorically separate. No independent priority, hosted CI, formal Lean, physical source authentication, or selected BBP Weyl estimate is claimed.",
   "claims": [
-    {"id":"IPC-01","status":"CLASSICAL / EXACT FINITE","statement":"A source-tagged binary broadcast-tree prior with normalized edge channels is projectively consistent and defines an infinite cylinder probability law, with exact Bayes frontier posterior.","dependencies":["declared pi0","declared stochastic kernel","Kolmogorov extension theorem"],"falsifier":"Change pi0 at same geometry and compare root posterior"},
-    {"id":"IPC-02","status":"PAPER_PROVED / SOURCE_SPECIFIC","statement":"The valid binary event likelihood 1-x on prior x^(8n)L(x) exactly produces posterior x^(8n)(1-x)L(x), the authentic positive Oily endpoint source; limiting Exp/Gamma2 KL gives gamma and 1-gamma.","dependencies":["original positive Oily L","declared deflated prior","likelihood 1-x","classical Gamma Laplace limit"],"falsifier":"Change sensor likelihood or prior while retaining source geometry"},
-    {"id":"IPC-03","status":"CLASSICAL FLRW / EXACT DISCRETE","statement":"Exponential metric expansion causes comoving recession rate H D > c outside the Hubble radius while radial null propagation remains local and a finite inflation episode does not itself create a permanent event horizon.","dependencies":["declared a(t)=e^(Ht)","standard FLRW causal metric"],"falsifier":"Replace with an actual local c-violating message edge; compare finite versus eternal expansion"},
-    {"id":"IPC-04","status":"CLASSICAL TREE BROADCASTING / EXACT FINITE","statement":"Symmetric binary channels on regular b-ary trees have root frontier reconstruction transition at b theta^2=1; finite Bayes accuracies calculated exactly for b=2, theta=1/2.","dependencies":["tree BSC law","EKPS/Bleher-Ruiz-Zagrebnov theorem"],"falsifier":"Retain archival first-generation receipts or choose lossless channel"},
-    {"id":"IPC-05","status":"PAPER_PROVED / EXACT RATIONAL","statement":"The authentic Oily endpoint Jordan transfer has b^n Frobenius signal energy (b/4)^n(2+4n^2) under declared independent replicated register slots.","dependencies":["authentic two-loop matrix M(1)","declared b^n replicas"],"falsifier":"Interpret raw linear amplitude as Shannon information; change b or transfer law"},
-    {"id":"IPC-06","status":"EXACT FINITE / CONDITIONAL BAYESIAN CONSISTENCY","statement":"The original chiral eight-tap activity signature distinguishes all eight phase hypotheses after five causal exact receipts; a fixed absolute detection floor eventually loses all unpowered pulses.","dependencies":["original signed first-shell taps","original 16^-k attenuation","declared sensor resolution/noise"],"falsifier":"Use finite sensor floor and test late nonzero identification"},
-    {"id":"IPC-07","status":"PAPER_PROVED / REFUTATION RECEIPT","statement":"Original four-pole BBP U_n(s) has zero ensemble Fourier expectation under Haar s for every fixed n and nonzero h, while exceptional same-forcing seed s=-pi/16 has actual phases converging to one with |U_n(s)|<=1/[9(n+1)^2].","dependencies":["classical original BBP pi identity","original signed forcing","Haar character orthogonality"],"falsifier":"Try using an ensemble mean to infer the selected U0=0 Weyl sum: counterexample defeats it"},
-    {"id":"IPC-08","status":"PAPER_PROVED / ORIGINAL SOURCE","statement":"Comoving original BBP A_n(s)=16^-n U_n(s) converges to s+pi/16, with exact source increments; rank-four chiral T^8=I/16 yields 16^n T^(8n)=I.","dependencies":["Main XIII rank-two chiral source","classical BBP identity","unchanged original U0=0"],"falsifier":"Replace authentic forcing/taps or infer physical GR metric from arithmetic compensation"},
-    {"id":"IPC-09","status":"CLASSICAL / EXACT FINITE","statement":"A shared latent prior gives P(remote=+|local=+)=(1+theta^2)/2, an epistemic update with no distant physical signal.","dependencies":["shared latent root","conditionally independent BSC reports"],"falsifier":"Remove common latent correlation or set theta=0"},
-    {"id":"IPC-10","status":"UNVERIFIED","statement":"An ideal causally constrained observer must use the unique deflated Oily prior and likelihood 1-x, and inflation then forces an Euler/Gamma information defect in the actual original selected BBP orbit.","dependencies":["independent sensor/resource derivation MISSING","source-faithful path observable MISSING","signed Weyl estimate MISSING"],"falsifier":"Construct alternate lawful sensor/biased prior, or same-forcing coherent seed; next probe must distinguish source/seed"}
+    {
+      "id": "IPC-01",
+      "status": "CLASSICAL / EXACT FINITE",
+      "statement": "A source-tagged binary broadcast-tree prior with normalized edge channels is projectively consistent and defines an infinite cylinder probability law, with exact Bayes frontier posterior.",
+      "dependencies": [
+        "declared pi0",
+        "declared stochastic kernel",
+        "Kolmogorov extension theorem"
+      ],
+      "falsifier": "Change pi0 at same geometry and compare root posterior"
+    },
+    {
+      "id": "IPC-02",
+      "status": "PAPER_PROVED / SOURCE_SPECIFIC",
+      "statement": "The valid binary event likelihood 1-x on prior x^(8n)L(x) exactly produces posterior x^(8n)(1-x)L(x), the authentic positive Oily endpoint source; limiting Exp/Gamma2 KL gives gamma and 1-gamma.",
+      "dependencies": [
+        "original positive Oily L",
+        "declared deflated prior",
+        "likelihood 1-x",
+        "classical Gamma Laplace limit"
+      ],
+      "falsifier": "Change sensor likelihood or prior while retaining source geometry"
+    },
+    {
+      "id": "IPC-03",
+      "status": "CLASSICAL FLRW / EXACT DISCRETE",
+      "statement": "Exponential metric expansion causes comoving recession rate H D > c outside the Hubble radius while radial null propagation remains local and a finite inflation episode does not itself create a permanent event horizon.",
+      "dependencies": [
+        "declared a(t)=e^(Ht)",
+        "standard FLRW causal metric"
+      ],
+      "falsifier": "Replace with an actual local c-violating message edge; compare finite versus eternal expansion"
+    },
+    {
+      "id": "IPC-04",
+      "status": "CLASSICAL TREE BROADCASTING / EXACT FINITE",
+      "statement": "Symmetric binary channels on regular b-ary trees have root frontier reconstruction transition at b theta^2=1; finite Bayes accuracies calculated exactly for b=2, theta=1/2.",
+      "dependencies": [
+        "tree BSC law",
+        "EKPS/Bleher-Ruiz-Zagrebnov theorem"
+      ],
+      "falsifier": "Retain archival first-generation receipts or choose lossless channel"
+    },
+    {
+      "id": "IPC-05",
+      "status": "PAPER_PROVED / EXACT RATIONAL",
+      "statement": "The authentic Oily endpoint Jordan transfer has b^n Frobenius signal energy (b/4)^n(2+4n^2) under declared independent replicated register slots.",
+      "dependencies": [
+        "authentic two-loop matrix M(1)",
+        "declared b^n replicas"
+      ],
+      "falsifier": "Interpret raw linear amplitude as Shannon information; change b or transfer law"
+    },
+    {
+      "id": "IPC-06",
+      "status": "EXACT FINITE / CONDITIONAL BAYESIAN CONSISTENCY",
+      "statement": "The original chiral eight-tap activity signature distinguishes all eight phase hypotheses after five causal exact receipts; a fixed absolute detection floor eventually loses all unpowered pulses.",
+      "dependencies": [
+        "original signed first-shell taps",
+        "original 16^-k attenuation",
+        "declared sensor resolution/noise"
+      ],
+      "falsifier": "Use finite sensor floor and test late nonzero identification"
+    },
+    {
+      "id": "IPC-07",
+      "status": "PAPER_PROVED / REFUTATION RECEIPT",
+      "statement": "Original four-pole BBP U_n(s) has zero ensemble Fourier expectation under Haar s for every fixed n and nonzero h, while exceptional same-forcing seed s=-pi/16 has actual phases converging to one with |U_n(s)|<=1/[9(n+1)^2].",
+      "dependencies": [
+        "classical original BBP pi identity",
+        "original signed forcing",
+        "Haar character orthogonality"
+      ],
+      "falsifier": "Try using an ensemble mean to infer the selected U0=0 Weyl sum: counterexample defeats it"
+    },
+    {
+      "id": "IPC-08",
+      "status": "PAPER_PROVED / ORIGINAL SOURCE",
+      "statement": "Comoving original BBP A_n(s)=16^-n U_n(s) converges to s+pi/16, with exact source increments; rank-four chiral T^8=I/16 yields 16^n T^(8n)=I.",
+      "dependencies": [
+        "Main XIII rank-two chiral source",
+        "classical BBP identity",
+        "unchanged original U0=0"
+      ],
+      "falsifier": "Replace authentic forcing/taps or infer physical GR metric from arithmetic compensation"
+    },
+    {
+      "id": "IPC-09",
+      "status": "CLASSICAL / EXACT FINITE",
+      "statement": "A shared latent prior gives P(remote=+|local=+)=(1+theta^2)/2, an epistemic update with no distant physical signal.",
+      "dependencies": [
+        "shared latent root",
+        "conditionally independent BSC reports"
+      ],
+      "falsifier": "Remove common latent correlation or set theta=0"
+    },
+    {
+      "id": "IPC-11",
+      "status": "CLASSICAL / EXACT RATIONAL SOURCE PRIOR",
+      "statement": "The optimal root posterior given independent causal child subtrees obeys exact nonlinear magnetization recursion m=(product(1+theta*m_i)-product(1-theta*m_i))/(product(1+theta*m_i)+product(1-theta*m_i)); linearized uninformative message variance has b theta^2 gain, distinct from deterministic coherent b theta.",
+      "dependencies": [
+        "uniform parent spin prior",
+        "binary symmetric edge channel",
+        "conditionally independent child subtrees",
+        "lawful causal observation receipts"
+      ],
+      "falsifier": "Compare with exact depth-two tree posterior and invalidate with correlated child errors or alternate channel"
+    },
+    {
+      "id": "IPC-10",
+      "status": "UNVERIFIED",
+      "statement": "An ideal causally constrained observer must use the unique deflated Oily prior and likelihood 1-x, and inflation then forces an Euler/Gamma information defect in the actual original selected BBP orbit.",
+      "dependencies": [
+        "independent sensor/resource derivation MISSING",
+        "source-faithful path observable MISSING",
+        "signed Weyl estimate MISSING"
+      ],
+      "falsifier": "Construct alternate lawful sensor/biased prior, or same-forcing coherent seed; next probe must distinguish source/seed"
+    }
   ]
 }

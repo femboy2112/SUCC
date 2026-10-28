@@ -24,6 +24,17 @@ assert sol[0][a11]==-1
 # Plug a01=a10=0, a00=1, then a11 must be -1.
 assert s.simplify(s.expand(P-(1-2*p)).subs({a00:1,a01:0,a10:0,a11:-1}))==0
 
+# Exact coherent Bayesian message map, DISTINCT from merely multiplying
+# signal amplitudes. For small independent centered child messages, the
+# squared/variance linearization coefficient is b*theta**2, not b*theta.
+q,m1,m2=s.symbols('q m1 m2',real=True)
+pplus=(1+q*m1)*(1+q*m2)
+pminus=(1-q*m1)*(1-q*m2)
+msg=s.cancel((pplus-pminus)/(pplus+pminus))
+assert s.simplify(msg-q*(m1+m2)/(1+q*q*m1*m2))==0
+assert s.diff(msg,m1).subs({m1:0,m2:0})==q
+assert s.diff(msg,m2).subs({m1:0,m2:0})==q
+
 # Original four-pole compact numerator: source passport exact.
 r=(4/(8*n-7)-2/(8*n-4)-1/(8*n-3)-1/(8*n-2))
 A=120*n*n-89*n+16

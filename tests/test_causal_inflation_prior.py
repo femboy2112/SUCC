@@ -12,7 +12,7 @@ from observational_succ.causal_inflation_prior import (
     embedded_causal_tree, original_deflated_oily_L,
     oily_preobservation_unnormalized, oily_postobservation_unnormalized,
     oily_frontier_event_likelihood,uniform_L_event_probability,
-    max_entropy_vacancy_double_imbalance,
+    max_entropy_vacancy_double_imbalance,bayesian_wavefront_message,
 )
 
 
@@ -86,6 +86,29 @@ class SourcePriorTests(unittest.TestCase):
         p=BinaryTreePrior(1,F(1,2),F(1))
         self.assertEqual(p.posterior_root((-1,),1),F(1))
         self.assertEqual(p.finite_cylinder((1,-1),1),F(1,4))
+
+    def test_exact_nonlinear_bayes_wavefront_messages(self):
+        self.assertEqual(bayesian_wavefront_message(F(1,2),(F(1),F(1))),F(4,5))
+        self.assertEqual(bayesian_wavefront_message(F(1,2),(F(1),F(-1))),0)
+        self.assertEqual(bayesian_wavefront_message(F(1,2),(F(0),F(0))),0)
+        self.assertEqual(bayesian_wavefront_message(F(0),(F(1),F(1))),0)
+
+    def test_message_identity_matches_exact_tree_likelihood(self):
+        model=BinaryTreePrior(2,F(1,2))
+        for leaves in product((-1,1),repeat=4):
+            # At depth 2, the two child messages are built from disjoint
+            # causal observations of each two-leaf subtree.
+            m=[]
+            for i in (0,2):
+                posterior=model.posterior_root(leaves[i:i+2],1)
+                m.append(2*posterior-1)
+            direct=model.posterior_root(leaves,2)
+            self.assertEqual(bayesian_wavefront_message(F(1,2),tuple(m)),2*direct-1)
+
+    def test_message_requires_consistent_causal_evidence(self):
+        with self.assertRaises(PriorInflationError):bayesian_wavefront_message(F(1),[1,-1])
+        with self.assertRaises(PriorInflationError):bayesian_wavefront_message(F(1,2),[])
+        with self.assertRaises(PriorInflationError):bayesian_wavefront_message(F(1,2),[2])
 
     def test_bad_source_labels_are_rejected(self):
         for args in ((0,F(1,2)),(2,F(5,4)),(2,F(-1,5))):
