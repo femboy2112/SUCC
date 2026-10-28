@@ -1,0 +1,19 @@
+{
+  "schema": "SUCC-referee-positive-source-receipt-v1",
+  "sources": [
+    {
+      "url": "https://zenodo.org/records/8275490/files/g38.pdf",
+      "title": "Goddyn and Wong, Tight Instances of the Lonely Runner (2006)",
+      "sha256": "dc9b2a9a8fd9849ee5f05664b83899df83b8ab23a622300625e50465cf463197",
+      "inspected_location": "PDF page 7, Section 3, preceding example and Theorem 3.1",
+      "supports": "n=74 removed70,72 inserted140,144; simultaneous acceleration sufficiency"
+    },
+    {
+      "url": "https://arxiv.org/html/2608.13599v3#S5",
+      "title": "Zhang v3, Example 5.2",
+      "supports": "explicit first two n=74 mod210 members n74 andn284, with removed n-4,n-2 and doubled replacements"
+    }
+  ],
+  "source_pdf_preserved_outside_repository": "/tmp/succ-referee-goddyn-wong.pdf",
+  "controls_are_prior_art": true
+}

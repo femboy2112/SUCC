@@ -40,3 +40,9 @@ The same campaign also proves fixed-support affinization of arbitrary phase
 schedules and the sharp no-saving obstruction for one affected odd part.
 These compactness and endpoint-capacity results are paper proofs, with exact
 controls and explicit phase-identity countermodels.
+
+The [referee child campaign](../../research/2026-10-28/lonely_runner/referee/README.md)
+adds a complete elementary unrestricted quadratic growth argument, an exact
+census through n30, and actual-source upper-half cubic Lean authority. These
+are distinct scopes; see [LRF claims](../CLAIM_SUPPLEMENT_LONELY_REFEREE.md).
+Academic priority and external peer acceptance remain unverified.

@@ -1,0 +1,261 @@
+{
+  "authority": "complete finite classifications under paper Gamma/pruning proofs; independent Fraction replay",
+  "complete": true,
+  "known_controls": [
+    {
+      "exact_loneliness": [
+        1,
+        5
+      ],
+      "full_fraction_cover": true,
+      "goddyn_wong_windows": [],
+      "inserted": [
+        6,
+        8
+      ],
+      "lower_witness_time": [
+        1,
+        5
+      ],
+      "n": 5,
+      "removed": [
+        1,
+        3
+      ]
+    },
+    {
+      "exact_loneliness": [
+        1,
+        8
+      ],
+      "full_fraction_cover": true,
+      "goddyn_wong_windows": [],
+      "inserted": [
+        11,
+        13
+      ],
+      "lower_witness_time": [
+        1,
+        8
+      ],
+      "n": 8,
+      "removed": [
+        2,
+        3
+      ]
+    },
+    {
+      "exact_loneliness": [
+        1,
+        74
+      ],
+      "full_fraction_cover": true,
+      "goddyn_wong_windows": [
+        {
+          "gcds": [
+            2,
+            5,
+            2,
+            7
+          ],
+          "multiplier": 2,
+          "removed": 70,
+          "window": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "gcds": [
+            2,
+            3
+          ],
+          "multiplier": 2,
+          "removed": 72,
+          "window": [
+            2,
+            3
+          ]
+        }
+      ],
+      "inserted": [
+        140,
+        144
+      ],
+      "lower_witness_time": [
+        1,
+        74
+      ],
+      "n": 74,
+      "removed": [
+        70,
+        72
+      ]
+    },
+    {
+      "exact_loneliness": [
+        1,
+        284
+      ],
+      "full_fraction_cover": true,
+      "goddyn_wong_windows": [
+        {
+          "gcds": [
+            4,
+            5,
+            2,
+            7
+          ],
+          "multiplier": 2,
+          "removed": 280,
+          "window": [
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "gcds": [
+            2,
+            3
+          ],
+          "multiplier": 2,
+          "removed": 282,
+          "window": [
+            2,
+            3
+          ]
+        }
+      ],
+      "inserted": [
+        560,
+        564
+      ],
+      "lower_witness_time": [
+        1,
+        284
+      ],
+      "n": 284,
+      "removed": [
+        280,
+        282
+      ]
+    }
+  ],
+  "no_full_census_kernel_or_novelty_claim": true,
+  "peak_rss_kib": 38128,
+  "records": [
+    {
+      "first_speeds": 2790,
+      "independent_fraction_cover_checks": 2315,
+      "independent_seconds": 1.92505395700573,
+      "n": 21,
+      "primary_gap_tests": 1141,
+      "primary_seconds": 0.7036588629998732,
+      "proved_domain_count": 29327142,
+      "survivors": []
+    },
+    {
+      "first_speeds": 2865,
+      "independent_fraction_cover_checks": 1978,
+      "independent_seconds": 2.1080262860050425,
+      "n": 22,
+      "primary_gap_tests": 835,
+      "primary_seconds": 0.8187598509830423,
+      "proved_domain_count": 35609279,
+      "survivors": []
+    },
+    {
+      "first_speeds": 3254,
+      "independent_fraction_cover_checks": 1913,
+      "independent_seconds": 2.5411815459956415,
+      "n": 23,
+      "primary_gap_tests": 850,
+      "primary_seconds": 1.0065443399944343,
+      "proved_domain_count": 45340877,
+      "survivors": []
+    },
+    {
+      "first_speeds": 4086,
+      "independent_fraction_cover_checks": 3834,
+      "independent_seconds": 3.7341772360086907,
+      "n": 24,
+      "primary_gap_tests": 1529,
+      "primary_seconds": 1.335654782014899,
+      "proved_domain_count": 58767165,
+      "survivors": []
+    },
+    {
+      "first_speeds": 4391,
+      "independent_fraction_cover_checks": 3410,
+      "independent_seconds": 3.8242936430033296,
+      "n": 25,
+      "primary_gap_tests": 1523,
+      "primary_seconds": 1.411274931015214,
+      "proved_domain_count": 72566355,
+      "survivors": []
+    },
+    {
+      "first_speeds": 5168,
+      "independent_fraction_cover_checks": 4548,
+      "independent_seconds": 4.780656398972496,
+      "n": 26,
+      "primary_gap_tests": 1847,
+      "primary_seconds": 1.76408277801238,
+      "proved_domain_count": 90783329,
+      "survivors": []
+    },
+    {
+      "first_speeds": 5665,
+      "independent_fraction_cover_checks": 4503,
+      "independent_seconds": 5.764095476013608,
+      "n": 27,
+      "primary_gap_tests": 2016,
+      "primary_seconds": 2.121672679000767,
+      "proved_domain_count": 111840348,
+      "survivors": []
+    },
+    {
+      "first_speeds": 6121,
+      "independent_fraction_cover_checks": 4965,
+      "independent_seconds": 6.706947322993074,
+      "n": 28,
+      "primary_gap_tests": 1871,
+      "primary_seconds": 2.3810518620011862,
+      "proved_domain_count": 130705791,
+      "survivors": []
+    },
+    {
+      "first_speeds": 6471,
+      "independent_fraction_cover_checks": 4688,
+      "independent_seconds": 6.963642885006266,
+      "n": 29,
+      "primary_gap_tests": 2025,
+      "primary_seconds": 2.593715342984069,
+      "proved_domain_count": 157640945,
+      "survivors": []
+    },
+    {
+      "first_speeds": 7723,
+      "independent_fraction_cover_checks": 7122,
+      "independent_seconds": 8.944713119009975,
+      "n": 30,
+      "primary_gap_tests": 2735,
+      "primary_seconds": 3.1316764850053005,
+      "proved_domain_count": 191257857,
+      "survivors": []
+    }
+  ],
+  "schema": "SUCC-referee-census-replay-v1",
+  "source_sha256": {
+    "observational_succ/lonely_runner_census.py": "5d0cad2073b3933bce3ec260882226fbe50597b45e8962160484421ee1fd0fa2",
+    "observational_succ/lonely_runner_referee_census.py": "23f4a3536648593aeccd9eda5a536ccd87c0d34ede8fb48bd81685f2547d386b",
+    "observational_succ/lonely_runner_two_entry.py": "038e6dfb76b20f55eee3e6d3266b47f4302a2e81d1f406b53346f12a390f81d7",
+    "scripts/lonely_runner_referee_census.py": "9fdea6215872da2cd2b750bb9728144c6e1329f1afba102975d749c73c8ef724",
+    "scripts/lonely_runner_referee_fraction.py": "1da52c46cb1c229f5799336f945cae99314d2e1da58eb3f9ca28d8a0091778de"
+  },
+  "workers": 1
+}

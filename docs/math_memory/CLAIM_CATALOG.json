@@ -613,6 +613,12 @@
       "title": "Claim supplement — BBP logarithmic Dirac comb and arithmetic sawtooth"
     },
     {
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
+      "registered_namespaces": [],
+      "sha256": "88623a706907b9e5332fdd6a2c1dbc3d4833fa3f6a080f58f6a84b350ec1f6a4",
+      "title": "Lonely Runner referee campaign: scoped claims"
+    },
+    {
       "path": "docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
       "registered_namespaces": [],
       "sha256": "e21f4bc16a8d9dd7f20c3103f8c247637bd6b4987f3d177b47644b245d652e8e",
@@ -9035,6 +9041,86 @@
       "namespace": null,
       "path": "docs/CLAIM_SUPPLEMENT_LOG_DIRAC_SAWTOOTH.md",
       "raw_table_row": "| LS-7 | Arithmetic sawtooth defect integral is o(N) for the actual π source | UNVERIFIED; exactly equivalent to the unresolved signed Weyl cancellation |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "LRF-01",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md::LRF-01",
+      "line": 10,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
+      "raw_table_row": "| LRF-01 | n>=5, any two distinct deletions from [n-1], every insertion w>=n: the retained-plus-w source has L>1/n | CORROBORATED paper: elementary windows, shell exceptions and shared-multiple escape in referee/GAMMA_AUDIT.md | Reuses Zhang's geometry with attribution; unrestricted statement not kernel checked; challenge equality/coverage distinction |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "LRF-02",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md::LRF-02",
+      "line": 11,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
+      "raw_table_row": "| LRF-02 | Same source with n<=w1<w2 and L<=1/n implies w2<28n^2 | CORROBORATED paper: lower-half unit gap, unit-center nonmultiple branch and common-multiple interval | Full quadratic theorem not kernel checked; novelty UNVERIFIED; challenge the unit lift or very large common multiples |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "LRF-03",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md::LRF-03",
+      "line": 12,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
+      "raw_table_row": "| LRF-03 | If either deletion is lower-half, a cover implies w1<14n and w2<28n(n-1) | CORROBORATED paper with complete small arithmetic exceptions | Exact source hypotheses essential; no matching or primitive-gcd hypothesis |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "LRF-04",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md::LRF-04",
+      "line": 13,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
+      "raw_table_row": "| LRF-04 | All sources in LRF-02 also obey w2<2n^3 | CORROBORATED paper, two-band improvement at n5/6 and polynomial comparison for n>=7 | Quantitative refinement only; no optimal constant claim |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "LRF-05",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md::LRF-05",
+      "line": 14,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
+      "raw_table_row": "| LRF-05 | Every finite integer source with an actual good point has a positive real open gap with source-labelled rational endpoints | CORROBORATED kernel: finite_source_labelled_gap and integer spacing exports in LonelyRunnerGrowth | Exact finite source hypotheses; JSON parser/runtime not formalized |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "LRF-06",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md::LRF-06",
+      "line": 15,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
+      "raw_table_row": "| LRF-06 | n>=5, upper-half deletions, actual real-circle cover implies w2<=2(n-1)w1 and w2<3n^3 | CORROBORATED kernel: upper_half_second_speed_bound and upper_half_cubic_growth | Full actual source theorem, not supplied-gap algebra; narrower than LRF-02 |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "LRF-07",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md::LRF-07",
+      "line": 16,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
+      "raw_table_row": "| LRF-07 | Every n21..30, arbitrary deletion pair and arbitrary n<=w1<w2 has L>1/n | OBSERVED exact complete census under proved finite bounds, independent integer/Fraction implementations | Extends parent complete n5..20 classification; not full Lean census or novelty certification |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "LRF-08",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md::LRF-08",
+      "line": 17,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
+      "raw_table_row": "| LRF-08 | k=3, n>6, with a genuine hole after two insertions, final cover forces the explicit quintic bounds | CORROBORATED conditional paper theorem in THREE_ENTRY_FRONTIER.md | Prefix-hole hypothesis remains UNVERIFIED; failure would refute ordinary LRC for that prefix |",
       "registered": false
     },
     {
@@ -21139,11 +21225,11 @@
     }
   ],
   "coverage": {
-    "claim_rows_found": 1959,
-    "claim_supplements_scanned": 200,
+    "claim_rows_found": 1967,
+    "claim_supplements_scanned": 201,
     "registered_claim_rows": 1863,
     "registered_namespace_count": 176,
-    "source_documents_found": 1052
+    "source_documents_found": 1065
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -26226,6 +26312,12 @@
       "title": "Gamma: a cubic speed bound for every two-entry modification"
     },
     {
+      "path": "research/2026-10-28/lonely_runner/GROWTH_KERNEL.md",
+      "sha256": "c75846beffd75aa23d6f80cd0ac9dd69d4b1b4bbf9832b976efcfd33f71e68c1",
+      "size": 9167,
+      "title": "Actual-source interval geometry and upper-half cubic growth in Lean"
+    },
+    {
       "path": "research/2026-10-28/lonely_runner/HANDOFF.md",
       "sha256": "be16ddc00cb3a7c548a17ccabad7caf8e9a68e57e2c4e98f0ec4a9cfb40896e3",
       "size": 3964,
@@ -26260,6 +26352,72 @@
       "sha256": "9e9f4bc3afbb50df68822a238d2ea6ab73bdbade9e11aef1e5d4fd2ed74a03a2",
       "size": 7416,
       "title": "Validation and known failures"
+    },
+    {
+      "path": "research/2026-10-28/lonely_runner/referee/BETA_REFINEMENT.md",
+      "sha256": "fd277ff9346921caa5baedc6e3de2de525728d12df42780ac59a9f5a81fcfc7c",
+      "size": 4027,
+      "title": "Endpoint-critical Beta probe and a necessary-condition countermodel"
+    },
+    {
+      "path": "research/2026-10-28/lonely_runner/referee/CENSUS_21_30.md",
+      "sha256": "4652d7b79b20638e71ca2de739f75acc6ec307ba93eb7bc07631ad294ef26da5",
+      "size": 7563,
+      "title": "Complete two-entry census extended through n=30"
+    },
+    {
+      "path": "research/2026-10-28/lonely_runner/referee/GAMMA_AUDIT.md",
+      "sha256": "b6979173658e559bb7eba3c29f4f9a576c63f1c7a5360b0cb4164a24625a5565",
+      "size": 19867,
+      "title": "Referee audit: unrestricted two-entry growth"
+    },
+    {
+      "path": "research/2026-10-28/lonely_runner/referee/HANDOFF.md",
+      "sha256": "3918d3fc7d4950b7678b8306e16547febb088e2ce3b3921d356cb0c905bed604",
+      "size": 3059,
+      "title": "Next referee handoff"
+    },
+    {
+      "path": "research/2026-10-28/lonely_runner/referee/MAINTENANCE.md",
+      "sha256": "3825f4ae8eac9e119de64fc8ea0bbbbbe97f2684a20bc9d84b87a650f22b48b2",
+      "size": 2476,
+      "title": "Evidence layout and parent-diff audit"
+    },
+    {
+      "path": "research/2026-10-28/lonely_runner/referee/MANUSCRIPT.md",
+      "sha256": "d80e7ab58cc26cd853a9777059e4e6ab324dc6d83a2c8e304b4572e8cd24b7f5",
+      "size": 20940,
+      "title": "Abstract"
+    },
+    {
+      "path": "research/2026-10-28/lonely_runner/referee/PRIMARY_PRIORITY.md",
+      "sha256": "4b6257647572367de55223e68f3acd847286c37a1b2456ae92528e7684280458",
+      "size": 7329,
+      "title": "Primary-source referee and priority record"
+    },
+    {
+      "path": "research/2026-10-28/lonely_runner/referee/QUANTITATIVE.md",
+      "sha256": "8eb571f73b2214999c357fc4888916480eb4b718bbbdab03c50bccf9df1b488c",
+      "size": 6540,
+      "title": "Quantitative refinements and limits of the geometric ingredients"
+    },
+    {
+      "path": "research/2026-10-28/lonely_runner/referee/README.md",
+      "sha256": "3823dff99cffbefdc22ef38d5e6debdd0d5b2cb1fac88f30e8e3cdcd30eee9e3",
+      "size": 2305,
+      "title": "Referee's Crucible: two-entry Lonely Runner growth"
+    },
+    {
+      "path": "research/2026-10-28/lonely_runner/referee/THREE_ENTRY_FRONTIER.md",
+      "sha256": "79b61139e83410436355424a967ddcd4a13fca16ff7333afc65344d7d8eb8bc9",
+      "size": 5399,
+      "title": "Three-entry growth: the missing prefix hole and a false GW converse"
+    },
+    {
+      "path": "research/2026-10-28/lonely_runner/referee/VALIDATION.md",
+      "sha256": "0c74c2f05f23ff0d0a6d9351051c04f484580c3d5b308223f80289eddb33bcca",
+      "size": 3272,
+      "title": "Validation and proof-authority boundary"
     },
     {
       "path": "handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md",
@@ -27114,6 +27272,12 @@
       "title": ""
     },
     {
+      "path": "formal/LonelyRunnerGrowth.lean",
+      "sha256": "55830d7f6d04b7d6d34f20c82e2f29dc5b98d4ffd1734cf228cb8bbcab1ae8d6",
+      "size": 28649,
+      "title": ""
+    },
+    {
       "path": "formal/LonelyRunnerTwoEntry.lean",
       "sha256": "ad8e1eb1ebbbcd818845bd920d9e91c7679f71d526d972c08fbaa87ac7f4f019",
       "size": 9652,
@@ -27493,6 +27657,14 @@
     "NO EXACT NAMESPACE for IO-6 at docs/CLAIM_SUPPLEMENT_LAMBDA_SOURCE_DUALITY.md:12",
     "NO EXACT NAMESPACE for IO-7 at docs/CLAIM_SUPPLEMENT_LAMBDA_SOURCE_DUALITY.md:13",
     "NO EXACT NAMESPACE for IO-8 at docs/CLAIM_SUPPLEMENT_LAMBDA_SOURCE_DUALITY.md:14",
+    "NO EXACT NAMESPACE for LRF-01 at docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md:10",
+    "NO EXACT NAMESPACE for LRF-02 at docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md:11",
+    "NO EXACT NAMESPACE for LRF-03 at docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md:12",
+    "NO EXACT NAMESPACE for LRF-04 at docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md:13",
+    "NO EXACT NAMESPACE for LRF-05 at docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md:14",
+    "NO EXACT NAMESPACE for LRF-06 at docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md:15",
+    "NO EXACT NAMESPACE for LRF-07 at docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md:16",
+    "NO EXACT NAMESPACE for LRF-08 at docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md:17",
     "NO EXACT NAMESPACE for LRN-01 at docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md:11",
     "NO EXACT NAMESPACE for LRN-02 at docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md:12",
     "NO EXACT NAMESPACE for LRN-03 at docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md:13",
@@ -27571,6 +27743,7 @@
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LAMBDA_SOURCE_DUALITY.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LOG_DIRAC_SAWTOOTH.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_META_CONTOUR.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_OBSERVER_TATE_ATOM.md",
