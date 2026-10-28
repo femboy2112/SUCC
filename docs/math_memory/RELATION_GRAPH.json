@@ -1,6 +1,6 @@
 {
   "schema_version": "0.1",
-  "coverage": "CURATED_CROSS_BRANCH_SEED_NOT_EXHAUSTIVE",
+  "coverage": "MAIN_XII_EXPANDED_CROSS_BRANCH_2026-10-27 (curated discovery layer; NOT exhaustive of the 1876-row catalog)",
   "main_baseline": "6dd80730c3575d91f746546a25da5aedbd2e2737",
   "scope": "Memory referents only; docs/CLAIM_NAMESPACE_REGISTRY.json remains canonical for real claims",
   "allowed_relations": [
@@ -452,6 +452,456 @@
       "scope": "Separate RH program with authenticated sources.",
       "limitation": "No RH proof, no physical positivity shortcut.",
       "next_probe": "Independent certified completed-Weil source/test function/positivity proof."
+    },
+    {
+      "id": "MM-T-030",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Weyl reduction of base-16 normality (SGO-09/#293 restated)",
+      "statement": "pi is base-16 normal IFF the selected sum Shat_N(h)=sum_{n<=N} e(hU_n)=o(N) for every fixed h!=0; |Shat_N(h)-sum e(h 16^{n-1}pi)|<(119/648)|h| makes the carrier normality-neutral.",
+      "scope": "Authentic four-pole source; restated on the #324 capstone.",
+      "limitation": "A reduction target, not a cancellation estimate.",
+      "next_probe": "Bound Shat_N(h) below N-o(N) for one fixed h.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 324,
+          "head_sha": "fca58d3e0289e57596dd8ca74bace325a450df31",
+          "path": "research/2026-10-27/PI_SELECTED_BOUNDARY_CRT_FRONTIER.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-031",
+      "kind": "theorem",
+      "status": "CLASSICAL",
+      "title": "Carry packing bound K_N=O(N/log N)",
+      "statement": "The count of forced zero carries / single-wrap exceptional times obeys K_{N,1}=O(N/log N) and B(N,a_N)=o(N) for a_N=o(N^2); a genuine classical refractory->packing rate.",
+      "scope": "Authentic literal carry; every real carrier.",
+      "limitation": "A packing/record-change count, NOT the signed Weyl o(N).",
+      "next_probe": "Transfer the packing bound into a signed phase-sum saving.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 313,
+          "head_sha": "79344c62c39c96755b742700b3d4d22fa60d86da",
+          "path": "docs/CLAIM_SUPPLEMENT_SELECTED_BRANCH.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-032",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Absolute logarithmic loss ceiling N-O(log N) (DC-1 / 1/14)",
+      "statement": "Whole-block coercivity gives |S_N(h)|<=N-(1/14)max(0,floor(log_8 N)-O_h(1)); an ABSOLUTE per-block logarithmic loss. Improves #311's 1/29.",
+      "scope": "Eligible blocks, fixed h.",
+      "limitation": "Normalized it tends to 1; it is NOT o(N). The forcing-defect method is ceilinged at the log savings.",
+      "next_probe": "Replace the logarithmic block count by a positive-proportion one.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 317,
+          "head_sha": "848bad224fef455a9f87ed19e947c936d309c965",
+          "path": "docs/CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-033",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "CRT Plancherel identity and the energy gate",
+      "statement": "Exact finite CRT Plancherel identity sum_{u,v}|W_N(u,v)|^2 = M sum_t|sum_{n==t mod M} z_n|^2; the per-residue energy E_{N,M}(h) is the L2 obstruction along arithmetic progressions mod M=16^k 3^L.",
+      "scope": "M=16^k 3^L by the 2-adic+3-adic CRT clock.",
+      "limitation": "The identity is exact; the DECAY of E_{N,M} is NOT proved and is strictly stronger than normality.",
+      "next_probe": "Prove E_{N,M_N}->0 for one admissible M_N=o(N).",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 324,
+          "head_sha": "fca58d3e0289e57596dd8ca74bace325a450df31",
+          "path": "research/2026-10-27/PI_SELECTED_BOUNDARY_CRT_FRONTIER.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-034",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "2-adic source isometry and odometer",
+      "statement": "v_2(r(x)-r(y))=v_2(x-y) on Z_2 (source isometry); Phi(n)=U_n with v_2(U_n-U_m)=v_2(n-m), and every 16^k-block of consecutive indices is a complete 2-adic residue window (odometer).",
+      "scope": "Authentic BBP source on Z_2.",
+      "limitation": "2-adic equidistribution is orthogonal to the archimedean digit (real) phase; it does NOT give real normality.",
+      "next_probe": "Bridge low 2-adic digits to the real fractional part.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 320,
+          "head_sha": "5ea12570aec86c3a8b555e927c10337804568a62",
+          "path": "research/2026-10-27/POINTED_CIRCLE_SOLENOID_TWO_ADIC_CLOCK.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-035",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "2-adic infinite-past zero boundary C_past=0",
+      "statement": "C_past=sum_{s>=0}16^s r(-s)=0 exactly in Q_2 (via the 2-adically convergent antiderivative), giving a startup-free time=state bin identification and canonical source odometer.",
+      "scope": "Authentic source in Q_2.",
+      "limitation": "A 2-adic boundary fact; the real o(N) estimate is explicitly NOT earned here.",
+      "next_probe": "Use the zero boundary to constrain a real phase sum.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 321,
+          "head_sha": "eeb2a48ea1b43967ea385009a3f8ec280b2efa69",
+          "path": "research/2026-10-27/BBP_BINWINDOW_ZERO_BOUNDARY.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-036",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Joint 2x3 CRT source clock + 3-adic isometry",
+      "statement": "For all k,L, M=16^k 3^L, the pair ([U_n]_{16^k},[A(n)]_{3^L}) sweeps each time block as a complete joint residue clock; A(x)=120x^2-89x+16 is a 3-adic isometry v_3(A(x)-A(y))=v_3(x-y).",
+      "scope": "Authentic numerator A and denominator D.",
+      "limitation": "A contracting p-adic charge, not a second expanding archimedean momentum.",
+      "next_probe": "Find a rank-2 expanding action inside the four-pole source.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 322,
+          "head_sha": "73a124637444c0e51cae1ace1e70d8c65dd28eb9",
+          "path": "research/2026-10-27/BBP_PRIMAL_RECURSION_2ADIC_3ADIC.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-N-037",
+      "kind": "counterexample",
+      "status": "REFUTED",
+      "title": "Nonnormal source-mutant with identical 2-adic clock",
+      "statement": "PC-9: T_n*=(n+1)/((2n+1)(4n+1)(8n+1)) gives a positive odd-denominator source sharing the 2-adic clock structure yet NONNORMAL; same-seed changed-forcing orbits keep the whole CRT occupancy fingerprint.",
+      "scope": "Explicit source mutant.",
+      "limitation": "Shows 2-adic/CRT structure cannot imply real normality.",
+      "next_probe": "(receipt; mandatory negative control)",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 320,
+          "head_sha": "5ea12570aec86c3a8b555e927c10337804568a62",
+          "path": "research/2026-10-27/POINTED_CIRCLE_SOLENOID_TWO_ADIC_CLOCK.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-N-038",
+      "kind": "counterexample",
+      "status": "REFUTED",
+      "title": "Per-band nonnormal counterfeit (SB-4)",
+      "statement": "For any H>=1 and odd q>H, the explicit alpha_q built from concatenated long-division hex blocks matches the selected band statistics to resolution H yet is nonnormal; finite-band cancellation does not propagate.",
+      "scope": "Arithmetic/dynamical construction, all H.",
+      "limitation": "Caps every fixed-resolution CRT-energy route; forces a growing-resolution gate.",
+      "next_probe": "Rule out counterfeits at a growing resolution M_N=o(N).",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 324,
+          "head_sha": "fca58d3e0289e57596dd8ca74bace325a450df31",
+          "path": "research/2026-10-27/PI_SELECTED_BOUNDARY_CRT_FRONTIER.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-N-039",
+      "kind": "counterexample",
+      "status": "REFUTED",
+      "title": "LTI delay no-go (echo)",
+      "statement": "ECHO-3/4/5: fixed-integer-coefficient delay combinations P(E)U_n reduce to K U_n + Q(E)r(n+1) (K=P(16)); K=0 only annihilates, never creates independent cancellation. r*(n)=alpha(1/n^2-1/(16(n+1)^2)) is a positive REFUTING echo-normality countermodel.",
+      "scope": "Any integer delay polynomial.",
+      "limitation": "No linear time-invariant lag combination escapes the gate.",
+      "next_probe": "Nonlinear or time-varying transport only.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 323,
+          "head_sha": "ae5dad40bfcbcd7a50676ed61c297fdc46846f37",
+          "path": "research/2026-10-27/BBP_ECHO_DELAY_TRANSPORT.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-040",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "is_cartesian signed-transport firewall",
+      "statement": "On finite carriers with exact Q[Q/Z] amplitudes, signed amplitude base change g^*(q_! z)=q'_!(g'^* z) holds for all z IFF the square is cartesian; ghost/realization-faithfulness is NECESSARY but NOT SUFFICIENT (redundant realizer breaks transport, defect -e(1/3)).",
+      "scope": "Finite categorical carriers.",
+      "limitation": "Corrects realization_firewall_breaks to is_cartesian; the one positive classical product of the Skeleton-Key round.",
+      "next_probe": "Apply the cartesian test to a candidate normality transport.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 306,
+          "head_sha": "7989be5753341c5e74d570e8fea51e00129d2d0a",
+          "path": "docs/CLAIM_SUPPLEMENT_SIGNED_PUSHFORWARD_OBSTRUCTION.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-N-041",
+      "kind": "counterexample",
+      "status": "REFUTED",
+      "title": "Signed-pushforward obstruction map (SK2-A/B/C)",
+      "statement": "Fixed positive-proportion relative block loss c<1 gives only linear |S_N|<=(1-c')N; the signed pushforward |S_N|^2 partition-coarsening is gate-conservative and positivity-blind; CRT occupancy is seed-blind and CRT-multiplicative (density 64/225).",
+      "scope": "Forcing-universal observable classes.",
+      "limitation": "Eight-front convergent no-go: hands the problem back to the arithmetic gate; normality sufficiency needs c_N->1.",
+      "next_probe": "Construct a block loss with c_N->1 via the x16 ladder.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 306,
+          "head_sha": "7989be5753341c5e74d570e8fea51e00129d2d0a",
+          "path": "docs/CLAIM_SUPPLEMENT_SIGNED_PUSHFORWARD_OBSTRUCTION.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-D-042",
+      "kind": "defined_comparison",
+      "status": "PROVED_LOCAL",
+      "title": "Normality equivalences (IO-7 / SNE-2 / CT-SPECTRAL)",
+      "statement": "Three proved restatements of base-16 normality: IO-7 'exists M_N->inf with Delta_{N,M_N}->0'; SNE-2 'one coherent solenoid orbit is Haar-generic'; CT-SPECTRAL 'Q_N=2 sum 2^{-h}|M_N(h)|^2 -> 0'. All are IFF-equivalences.",
+      "scope": "Authentic source.",
+      "limitation": "EQUIVALENCES / circular reformulations, NOT proofs of normality; each still requires the signed estimate.",
+      "next_probe": "Discharge one equivalence with an independent decay bound.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 330,
+          "head_sha": "b93a787a31957eae74d2748f87f1c0db3dda9fee",
+          "path": "docs/CLAIM_SUPPLEMENT_SOLENOID_NATURAL_EXTENSION.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-C-043",
+      "kind": "conjecture",
+      "status": "CONJECTURED",
+      "title": "Conditional Rudolph-Johnson bridge (AR-5)",
+      "statement": "If the unaveraged x3 Fourier defects ->0 AND there are no zero-entropy joint components, then (via classical Rudolph-Johnson rigidity) pi is normal. Neither hypothesis is proven.",
+      "scope": "Rank-2 x2/x3 joint action.",
+      "limitation": "CONDITIONAL on two unproven hypotheses; p-adic coordinates are contracting, not a second expanding momentum.",
+      "next_probe": "Prove positive-entropy + unaveraged x3 defect decay for the authentic orbit.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 332,
+          "head_sha": "73181be7892c04e5d04b18104889567449fa85be",
+          "path": "docs/CLAIM_SUPPLEMENT_ALL_RANK_ADELIC.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-044",
+      "kind": "theorem",
+      "status": "CLASSICAL",
+      "title": "Exact bad-reduction prime set {2,3,5} and lambda^8=16",
+      "statement": "Res(A,D)=-2^15 3^2 5^2, Disc(D)=2^24 3^2 5^2: the source has bad reduction exactly at {2,3,5}, 7 the first clean prime; lambda=1+i gives lambda^8=16 and the two-atom transfer G has G^8=I/16; p>=7 pair count p^L+L(p-1)p^{L-1}.",
+      "scope": "Authentic numerator/denominator arithmetic.",
+      "limitation": "Structural arithmetic of the source; no normality implication.",
+      "next_probe": "Use the clean-prime structure in a signed cancellation.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 325,
+          "head_sha": "95ee2f1fab851afe1517d8ec5a0589885842426f",
+          "path": "research/2026-10-27/GAUSSIAN_PRIME_RAMIFICATION_PI_FRONTIER.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-045",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Two-quadratic-atom minimal realization (q*=phi^-2)",
+      "statement": "The four-pole source = w(I-xM)^{-1}v from two rational quadratic atoms (M=C(+)D, C^2=I/2, D^4=-I/4, M^8=I/16); the positive binary-layer compiler PGF G(z)=1/(2-z)^2 has minimal fixed point q*=phi^-2 (NOT the Gauss lambda=phi^-1).",
+      "scope": "Oily packet grammar.",
+      "limitation": "q*=phi^-2 is the Oily packet fixed point; distinct lineage from the Farey/Gauss phi^-1.",
+      "next_probe": "(keeper)",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 309,
+          "head_sha": "8e9d8a4d7d42bb0931f899ac221f27fccf090b36",
+          "path": "research/2026-10-26/FOUR_POLE_ATOMIC_SUBSTRATE.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-046",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Oily Mobius totient and third golden-centered shadow",
+      "statement": "C_q(z)=E[1_{gcd(J,q)=1} z^J] exact rational function (dyadic chars never vanish, 4/25<=|C_{2^k}|<=4/9); the connected third-order complex Mellin limit carries -(8/27)(phi^-1 - gamma) within the graded log covariance.",
+      "scope": "Source-graded packet; specified centering.",
+      "limitation": "The gamma coefficient is gauge/centering dependent (c=1-gamma recovers it); shares the Omega VALUE, not a source.",
+      "next_probe": "(keeper)",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 310,
+          "head_sha": "a8c7c85b7a1900d422090f1757c174e7aac69f44",
+          "path": "research/2026-10-26/OILY_TOTIENT_THIRD_SHADOW.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-047",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Certified base-3 digit handle (not a spigot)",
+      "statement": "Working certified ternary digit handle for pi built from published base-729 BBP identities for pi^2 and pi*sqrt3 (Bailey B69/B76) + sqrt transport + exact rational interval enclosure; reconstructs finite trit prefixes with a replayable witness.",
+      "scope": "Finite enclosing prefix through position n.",
+      "limitation": "A certified digit COMPUTATION, explicitly NOT a random-access base-3 BBP spigot for pi and NOT base-3 normality.",
+      "next_probe": "(none toward normality; see MM-O-049)",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 331,
+          "head_sha": "d47ff32e47104cca73264d99c9ec1088f20e7c1f",
+          "path": "research/2026-10-27/PI_BASE3_CERTIFIED_DIGIT_HANDLE.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-048",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Rank-r transverse-trace obstruction (AR-4)",
+      "statement": "Exact rank-r cochain decomposition f_0 = (rank-2 bulk average) + (weighted transverse defect): the Haar bulk average along a p-adic transverse direction is structurally decoupled from the rank-1 archimedean slice.",
+      "scope": "Authentic all-rank adelic transport.",
+      "limitation": "Confirms rank-1 diagnosis: a contracting transverse charge cannot bound the expanding slice.",
+      "next_probe": "Supply a second expanding action (not a p-adic charge).",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 332,
+          "head_sha": "73181be7892c04e5d04b18104889567449fa85be",
+          "path": "docs/CLAIM_SUPPLEMENT_ALL_RANK_ADELIC.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-N-049",
+      "kind": "counterexample",
+      "status": "REFUTED",
+      "title": "Rank-2 bulk -> rank-1 slice is REFUTED",
+      "statement": "AR-RECT-REFUTED and #334-C: 'rank-2 Haar bulk average ->0 therefore rank-1 slice ->0 (pi normal)' is REFUTED with a receipt; the tempting rank-drop implication fails.",
+      "scope": "Rank-2 vs rank-1 averaging.",
+      "limitation": "Kept as a mandatory negative control against rank-averaging shortcuts.",
+      "next_probe": "(receipt)",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 332,
+          "head_sha": "73181be7892c04e5d04b18104889567449fa85be",
+          "path": "docs/CLAIM_SUPPLEMENT_ALL_RANK_ADELIC.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-O-050",
+      "kind": "open_obligation",
+      "status": "OPEN",
+      "title": "Base-3 normality of pi (base-3 Weyl o(N))",
+      "statement": "Authentic base-3 Weyl cancellation sum_{n<N} e(2 pi i h 3^n pi)=o(N) for every fixed h!=0 is OPEN, as is base-16 normality; the certified digit handle does not touch it.",
+      "scope": "Base-3 digits of pi.",
+      "limitation": "OPEN; excluded Machin-type BBP spigot (Borwein-Borwein-Galway 2004) is the wall for a base-3 dynamical handle.",
+      "next_probe": "Find a base-3 expanding dynamical handle, or prove the Weyl sum directly.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 331,
+          "head_sha": "d47ff32e47104cca73264d99c9ec1088f20e7c1f",
+          "path": "research/2026-10-27/PI_BASE3_CERTIFIED_DIGIT_HANDLE.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-N-051",
+      "kind": "counterexample",
+      "status": "REFUTED",
+      "title": "Kempner receipt refuting the transcendence->entropy bridge (FK-1)",
+      "statement": "The Kempner number kappa=sum_j 2^{-2^j} is transcendental with irrationality exponent 2 and ZERO topological entropy, refuting #334's 'transcendence gives positive entropy' leg of its Rudolph-Johnson reduction.",
+      "scope": "Explicit transcendental counterexample.",
+      "limitation": "Receipt for MM-N-021; #334/#337 both STALE (old main de257fad, 118 behind) and research-only.",
+      "next_probe": "(receipt)",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 337,
+          "head_sha": "0e36f9c5107ffac97e642ef00511ec4a6f6bdd8d",
+          "path": "research/2026-10-27-furstenberg-kempner/KEMPNER_FURSTENBERG_FIREWALL.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-052",
+      "kind": "theorem",
+      "status": "CLASSICAL",
+      "title": "All-prime measure rigidity (the legit part of #334)",
+      "statement": "A Borel probability measure on R/Z invariant under every prime multiplication T_p equals c*delta_0+(1-c)*Lebesgue (classical rigidity); correctly a reformulation of normality, not a shortcut.",
+      "scope": "All-prime joint invariance.",
+      "limitation": "#334 (STALE, deepseek-v4 'Ravel') over-labels a downstream reduction PROVED; its entropy leg is UNVERIFIED (see MM-N-051).",
+      "next_probe": "Separate the proven rigidity from the unproven entropy input.",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 334,
+          "head_sha": "809504e11cebe043383b8a0a0eaf3b080b085300",
+          "path": "research/2026-10-27-ravel-prime-ladder/THEOREM_DOSSIER.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-053",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Shared-source WTF calibration firewall + V_n countermodel",
+      "statement": "Global reference is a referee not applause: exact e-value/Ville calibration against postselection and duplicated evidence (full vs primitive character Pi_q(d)=1_{q|d}); the V_0=-pi/16 same-forcing changed seed (V_n=-T_n) is an all-n nonnormal countermodel.",
+      "scope": "Shared-source model selection.",
+      "limitation": "Firewall against false coherence; the countermodel is triangulated SOUND (3 blind routes).",
+      "next_probe": "(keeper; integration audit #318)",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 316,
+          "head_sha": "239df54f5f56fdaba3bf4edfc282cdcabecea3c2",
+          "path": "research/2026-10-26/WTF_GLOBAL_CALIBRATION_SOURCE_RESONANCE.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-T-054",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "title": "Derivative-valuation variable-length source code",
+      "statement": "Observer-relative minimal variable-length bitcode keyed to v_p(A'(n)): fiber size 2p^v, selector length 1+ceil(v log_2 p), closed-form conditional entropy H(X|A(X))->1+log_2 p/(p-1); successor recovery x=(A(x+1)-A(x)-31)/240 mod p^L.",
+      "scope": "p>=7, cleared numerator A.",
+      "limitation": "A coordinate change / source memory law; reconstructing n mod p^L is the old time-residue, no new cancellation.",
+      "next_probe": "(none toward normality)",
+      "provenance": [
+        {
+          "kind": "github_pr",
+          "pr": 329,
+          "head_sha": "00f43cb871a71526bf520f646f594bcece5dbced",
+          "path": "research/2026-10-27/BBP_VARIABLE_LENGTH_SOURCE_CODE.md"
+        }
+      ]
     }
   ],
   "edges": [
@@ -604,6 +1054,192 @@
       "target": "MM-O-023",
       "relation": "does_not_imply",
       "evidence": "See pinned provenance/source-labeled dossiers; descriptive crosswalk, NOT independent proof."
+    },
+    {
+      "source": "MM-T-030",
+      "target": "MM-O-022",
+      "relation": "reduces_to",
+      "evidence": "SGO-09 reduction: base-16 normality IFF Shat_N(h)=o(N); the gate is exactly MM-O-022."
+    },
+    {
+      "source": "MM-T-031",
+      "target": "MM-O-022",
+      "relation": "constrains",
+      "evidence": "Packing count bounds exceptional times but is not itself the signed phase cancellation."
+    },
+    {
+      "source": "MM-T-032",
+      "target": "MM-O-022",
+      "relation": "does_not_imply",
+      "evidence": "Absolute log loss N-O(log N) normalizes to 1; it never reaches o(N)."
+    },
+    {
+      "source": "MM-T-033",
+      "target": "MM-O-022",
+      "relation": "reduces_to",
+      "evidence": "Decay of the CRT energy E_{N,M} along admissible M=o(N) would give the gate (unproved)."
+    },
+    {
+      "source": "MM-T-033",
+      "target": "MM-T-036",
+      "relation": "depends_on",
+      "evidence": "The energy gate runs along the joint 2x3 CRT clock residue classes."
+    },
+    {
+      "source": "MM-T-034",
+      "target": "MM-T-019",
+      "relation": "specializes",
+      "evidence": "Closed-form source isometry upgrading the authentic 2-adic odometer."
+    },
+    {
+      "source": "MM-T-036",
+      "target": "MM-T-034",
+      "relation": "complements",
+      "evidence": "3-adic numerator isometry paired with the 2-adic source isometry into a joint clock."
+    },
+    {
+      "source": "MM-N-037",
+      "target": "MM-T-034",
+      "relation": "does_not_imply",
+      "evidence": "Identical 2-adic clock, nonnormal orbit: 2-adic structure does not force real normality."
+    },
+    {
+      "source": "MM-N-038",
+      "target": "MM-T-033",
+      "relation": "constrains",
+      "evidence": "Per-band counterfeit caps any fixed-resolution energy route; forces growing M_N."
+    },
+    {
+      "source": "MM-N-039",
+      "target": "MM-O-022",
+      "relation": "does_not_imply",
+      "evidence": "No LTI fixed-coefficient delay transport creates independent cancellation."
+    },
+    {
+      "source": "MM-T-040",
+      "target": "MM-O-022",
+      "relation": "constrains",
+      "evidence": "Signed transport is lawful only across cartesian squares; blocks naive pushforward normality routes."
+    },
+    {
+      "source": "MM-N-041",
+      "target": "MM-O-022",
+      "relation": "does_not_imply",
+      "evidence": "Positivity-blind signed pushforward and seed-blind CRT occupancy give no sub-linear saving."
+    },
+    {
+      "source": "MM-N-041",
+      "target": "MM-T-040",
+      "relation": "complements",
+      "evidence": "The obstruction map is the negative half whose single positive residue is the cartesian firewall."
+    },
+    {
+      "source": "MM-D-042",
+      "target": "MM-O-022",
+      "relation": "reduces_to",
+      "evidence": "Three IFF-equivalences of base-16 normality; equivalences, not proofs."
+    },
+    {
+      "source": "MM-C-043",
+      "target": "MM-O-022",
+      "relation": "candidate_bridge",
+      "evidence": "Conditional Rudolph-Johnson route; both hypotheses unproven."
+    },
+    {
+      "source": "MM-C-043",
+      "target": "MM-T-048",
+      "relation": "depends_on",
+      "evidence": "The bridge needs the transverse Haar defect to vanish unaveraged, which AR-4 shows is decoupled."
+    },
+    {
+      "source": "MM-T-044",
+      "target": "MM-T-017",
+      "relation": "specializes",
+      "evidence": "Exact small-prime arithmetic of the authentic four-pole source."
+    },
+    {
+      "source": "MM-T-045",
+      "target": "MM-T-010",
+      "relation": "specializes",
+      "evidence": "Minimal two-atom realization underlying the Oily packet golden fixed point q*=phi^-2."
+    },
+    {
+      "source": "MM-T-045",
+      "target": "MM-T-004",
+      "relation": "does_not_imply",
+      "evidence": "Oily q*=phi^-2 is NOT the Farey/Gauss fixed point lambda=phi^-1; distinct lineages."
+    },
+    {
+      "source": "MM-T-046",
+      "target": "MM-D-007",
+      "relation": "shares_value_with",
+      "evidence": "The third shadow carries the Omega=phi^-1-gamma VALUE, not a common source with Farey/Gauss."
+    },
+    {
+      "source": "MM-T-046",
+      "target": "MM-T-011",
+      "relation": "specializes",
+      "evidence": "Mobius-graded refinement of the Oily primitive Mellin character."
+    },
+    {
+      "source": "MM-T-047",
+      "target": "MM-O-050",
+      "relation": "does_not_imply",
+      "evidence": "A certified base-3 digit computation is not a base-3 BBP spigot and does not bear on base-3 normality."
+    },
+    {
+      "source": "MM-O-050",
+      "target": "MM-O-022",
+      "relation": "complements",
+      "evidence": "Base-3 normality is open in parallel with base-16; neither implies the other automatically."
+    },
+    {
+      "source": "MM-T-048",
+      "target": "MM-O-022",
+      "relation": "constrains",
+      "evidence": "Transverse p-adic Haar bulk is decoupled from the archimedean rank-1 slice."
+    },
+    {
+      "source": "MM-N-049",
+      "target": "MM-C-043",
+      "relation": "constrains",
+      "evidence": "Refutes the rank-drop shortcut, leaving only the honest conditional bridge."
+    },
+    {
+      "source": "MM-N-051",
+      "target": "MM-N-021",
+      "relation": "specializes",
+      "evidence": "Kempner number is the explicit receipt for the transcendence+finite-type no-entropy refutation."
+    },
+    {
+      "source": "MM-N-051",
+      "target": "MM-T-052",
+      "relation": "does_not_imply",
+      "evidence": "Zero-entropy transcendental kappa refutes #334's transcendence->entropy reduction leg."
+    },
+    {
+      "source": "MM-T-052",
+      "target": "MM-O-022",
+      "relation": "reduces_to",
+      "evidence": "All-prime rigidity is a reformulation of the normality gate, not a shortcut past it."
+    },
+    {
+      "source": "MM-T-053",
+      "target": "MM-O-022",
+      "relation": "constrains",
+      "evidence": "Shared-source calibration blocks false-coherence routes; the V_n countermodel is a hard control."
+    },
+    {
+      "source": "MM-T-054",
+      "target": "MM-T-017",
+      "relation": "specializes",
+      "evidence": "Variable-length source memory is a coordinate change on the authentic source."
+    },
+    {
+      "source": "MM-N-038",
+      "target": "MM-O-022",
+      "relation": "does_not_imply",
+      "evidence": "Finite-band statistics cannot certify normality; counterfeits exist at every fixed resolution."
     }
   ],
   "guardrails": [
