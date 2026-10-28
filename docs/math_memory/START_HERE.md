@@ -7,7 +7,7 @@
 - Historical theorem IDs, proof status and counterexamples: docs/CLAIM_LEDGER.md plus original supplement, indexed by docs/CLAIM_INDEX.md. The registry's FQID aliases take precedence over ambiguous short prefixes.
 - New user-corrected mathematical genesis: research/2026-10-27/FAREY_GAUSS_GOLDEN_GAMMA_GENESIS.md.
 - Claude's executable, source/ancestry-aware full-repository consolidation charter: handoffs/CLAUDE_SUCC_MAIN_XII_MATH_MEMORY_CONSOLIDATION_2026-10-27.md.
-- Local-tested **companion seed archive** is delivered with the research conversation: 23 typed concept nodes, 25 typed graph relations, deterministic catalog script, graph validator and exact Farey/Gauss rational certificates. Import the exact code into the integration worktree, re-run native tests and record hashes. No false native CI claim.
+- This branch includes 23 typed concept nodes, 25 typed relations, a deterministic catalog builder, a graph validator, exact Farey/Gauss rational certificates and focused tests. The committed Python blobs match locally tested code. Full native suite and CI remain separate gates.
 
 ## Two similar numbers, two different source lineages
 
