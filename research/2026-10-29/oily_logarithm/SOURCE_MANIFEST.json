@@ -1,0 +1,77 @@
+{
+  "authority": "standalone exact checks plus paper proofs; full native suite/Lean/hosted new-head CI not claimed",
+  "branch": "research/oily-logarithm-levy-carry-2026-10-29",
+  "date": "2026-10-29",
+  "files": {
+    "CLAIMS.md": {
+      "bytes": 4841,
+      "sha256": "439ec25286f0beada7ac710a0167608fb088b010a2850c198cd43015e8a2cc2e"
+    },
+    "NEGATIVE_CONTROLS.md": {
+      "bytes": 3133,
+      "sha256": "a262c3dd5dff036d8d5d884ac1f816fb61703717e7aab77dc79dc670995c1ba2"
+    },
+    "NEXT.md": {
+      "bytes": 3419,
+      "sha256": "6761b67f0edb410f55fc6650d335c2cf5a1364ab46915e10b4c79516cdaaedb7"
+    },
+    "README.md": {
+      "bytes": 2883,
+      "sha256": "3e504b2d9f33d22b97ca14a4d9a7bc717a4ded51aa21a13c8cde9fc3757ebb4c"
+    },
+    "RESEARCH.md": {
+      "bytes": 18784,
+      "sha256": "13fa68548935f66b0cc51e752a8af5dd8b488efe1c8e464024403c1abbae529d"
+    },
+    "VALIDATION.md": {
+      "bytes": 4370,
+      "sha256": "43d01aa740ee31bd779771e7fcebc5bf9e689bc91c958a58b58f13a49d3a00fa"
+    },
+    "core_probe.log": {
+      "bytes": 31,
+      "sha256": "535bf00957105865c44a084f654ab5792cc587caf9023faf1d33a7a5950bfa9d"
+    },
+    "focused_tests.log": {
+      "bytes": 1736,
+      "sha256": "d8e973049ddcdfcee2a338975df32932aa29afc639ff370b2a510b54d94f5ead"
+    },
+    "independent_oracle.log": {
+      "bytes": 741,
+      "sha256": "ff03d960334432c182e63ada643cd7c451d5291a0bf809f6f8daf2a422da7bca"
+    },
+    "independent_oracle.py": {
+      "bytes": 5855,
+      "sha256": "42fd813130f5bc04d64abb4b332485759f5d9ebfa44d2bc7f6ff6ce419a4cdd7"
+    },
+    "numerical_oracle.log": {
+      "bytes": 1288,
+      "sha256": "77c350ae0ba7583a4cfbda64b0f58a495aa93633596755b6d81664c785c8fd37"
+    },
+    "numerical_oracle.py": {
+      "bytes": 3250,
+      "sha256": "05c9a9a08c1c6adb7ba59922ac9e3427489bd86a70ae1f9381877a41f0796e96"
+    },
+    "oily_logarithm.py": {
+      "bytes": 7938,
+      "sha256": "74d483fe6699aeda61f674c03131ce543ce7a822877db00c4d0cf777b2ab4e1e"
+    },
+    "test_oily_logarithm.py": {
+      "bytes": 8169,
+      "sha256": "e3ff2312bbf4aba1d3dce1a2b1d394e98261cb0c14a2827cb8479f3a3d47778d"
+    }
+  },
+  "mpmath": "1.3.0",
+  "original_BBP_forcing_unchanged": true,
+  "original_U0": 0,
+  "parent_head": "3d7f8d1a2dd4d3145c899daddd15377c4b0b632e",
+  "parent_pr": 381,
+  "python": "3.13.5",
+  "repository": "femboy2112/SUCC",
+  "schema": "succ.oily-logarithm.source-passport.v1",
+  "sympy": "1.14.0",
+  "verified_local": {
+    "focused_test_methods": 13,
+    "high_precision_diagnostics": 27,
+    "independent_exact_oracle_assertions": 1966
+  }
+}
