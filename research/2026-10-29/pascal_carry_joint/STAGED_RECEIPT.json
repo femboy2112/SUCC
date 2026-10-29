@@ -1,0 +1,84 @@
+{
+  "status": "RESEARCH_DRAFT_UNMERGED",
+  "date": "2026-10-29",
+  "parent_pr": 370,
+  "parent_sha": "4d4d49b575b476cc33f762d2b6a7fd6d1b924655",
+  "original_source": "Four signed BBP poles and U0=0 retained unchanged",
+  "local_validation": {
+    "isolated_unittest_tests": 57,
+    "new_tests": 32,
+    "result": "PASS",
+    "independent_oracle": "PASS",
+    "compileall": "PASS"
+  },
+  "not_run": [
+    "complete SUCC native suite",
+    "root provenance",
+    "root observer",
+    "root ordinal",
+    "Lean",
+    "hosted exact head CI"
+  ],
+  "files": [
+    {
+      "path": "research/2026-10-29/pascal_carry_joint/CLAIMS.md",
+      "size": 6774,
+      "sha256": "dee09d5ae8d544803ba4928ed78179cfccb61081bd9680a72a638a48bc295ae4",
+      "git_blob_sha1": "736dcc0cdba0dc23047672b4c7b451fa30f375aa"
+    },
+    {
+      "path": "research/2026-10-29/pascal_carry_joint/NEXT.md",
+      "size": 4853,
+      "sha256": "06443c0b34710b42850e0453979148fd25e110c84db7c31e4718d1f3adb57d65",
+      "git_blob_sha1": "25571548ad437784f903436110f4a4ceecbb472e"
+    },
+    {
+      "path": "research/2026-10-29/pascal_carry_joint/README.md",
+      "size": 23253,
+      "sha256": "3cc7684c035edf38cd17101d6c2a6a632adff6d233948966372e30f009794aea",
+      "git_blob_sha1": "c28f21b7313658cc18f142f30e77fcd4698b1c6f"
+    },
+    {
+      "path": "research/2026-10-29/pascal_carry_joint/VALIDATION.md",
+      "size": 3654,
+      "sha256": "9469c356e3acd075648893a64c0d9ca05ad6e5aa6d93c5a85165286cf16bec1c",
+      "git_blob_sha1": "9024141fb1486b6bed36602373ad72eb87de1651"
+    },
+    {
+      "path": "research/2026-10-29/pascal_carry_joint/independent_oracle.log",
+      "size": 1129,
+      "sha256": "281251d5d9189b9d6692cbde9629b38ad922336bff92e750ac7dc6ff0b7efb2a",
+      "git_blob_sha1": "4e7559237a7fad7e2a539232224fe69c91fbd46b"
+    },
+    {
+      "path": "research/2026-10-29/pascal_carry_joint/independent_oracle.py",
+      "size": 4603,
+      "sha256": "33f49d02b47903ca2530f7b10e065f6d70105d22612de08816406c2c494a9dba",
+      "git_blob_sha1": "8ddcdd7dc59d292c8ea830340543bf885b258ec8"
+    },
+    {
+      "path": "research/2026-10-29/pascal_carry_joint/joint_carry_probe.py",
+      "size": 12895,
+      "sha256": "a3af2ea5988b2667a8dc576b2d6ac2995554c6df443be167168123845caf5e6d",
+      "git_blob_sha1": "65bca2fb4fee6ba20aa72ad0d7ec7cb754101d3c"
+    },
+    {
+      "path": "research/2026-10-29/pascal_carry_joint/probe_stdout.log",
+      "size": 44,
+      "sha256": "95fceea0e5de15df9913b4336fddbadd1b92d11900cff2d54271751f2a680113",
+      "git_blob_sha1": "4618c9e584c85c6b421249006cc05fc0da9291c1"
+    },
+    {
+      "path": "research/2026-10-29/pascal_carry_joint/stdlib_tests.log",
+      "size": 8345,
+      "sha256": "5cbd64086566ff1e76f8ae73237f084022647e6a3c36e8bbdf87204e322d6e41",
+      "git_blob_sha1": "3a87b8c06f7d4d7e6ef37cb2eb8a737c6b9b13c2"
+    },
+    {
+      "path": "tests/test_pascal_carry_joint.py",
+      "size": 17452,
+      "sha256": "921582d5f827b47b0a5dbd86f906f4e63a3949916732c95992b184f088d6f255",
+      "git_blob_sha1": "54f8c9d29d2fb3686655cf996e05cef4d126ee63"
+    }
+  ]
+}
