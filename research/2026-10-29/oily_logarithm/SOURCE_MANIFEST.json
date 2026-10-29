@@ -27,25 +27,9 @@
       "bytes": 4370,
       "sha256": "43d01aa740ee31bd779771e7fcebc5bf9e689bc91c958a58b58f13a49d3a00fa"
     },
-    "core_probe.log": {
-      "bytes": 31,
-      "sha256": "535bf00957105865c44a084f654ab5792cc587caf9023faf1d33a7a5950bfa9d"
-    },
-    "focused_tests.log": {
-      "bytes": 1736,
-      "sha256": "d8e973049ddcdfcee2a338975df32932aa29afc639ff370b2a510b54d94f5ead"
-    },
-    "independent_oracle.log": {
-      "bytes": 741,
-      "sha256": "ff03d960334432c182e63ada643cd7c451d5291a0bf809f6f8daf2a422da7bca"
-    },
     "independent_oracle.py": {
       "bytes": 5855,
       "sha256": "42fd813130f5bc04d64abb4b332485759f5d9ebfa44d2bc7f6ff6ce419a4cdd7"
-    },
-    "numerical_oracle.log": {
-      "bytes": 1288,
-      "sha256": "77c350ae0ba7583a4cfbda64b0f58a495aa93633596755b6d81664c785c8fd37"
     },
     "numerical_oracle.py": {
       "bytes": 3250,
@@ -54,6 +38,22 @@
     "oily_logarithm.py": {
       "bytes": 7938,
       "sha256": "74d483fe6699aeda61f674c03131ce543ce7a822877db00c4d0cf777b2ab4e1e"
+    },
+    "receipts/core_probe.log": {
+      "bytes": 31,
+      "sha256": "535bf00957105865c44a084f654ab5792cc587caf9023faf1d33a7a5950bfa9d"
+    },
+    "receipts/focused_tests.log": {
+      "bytes": 1736,
+      "sha256": "d8e973049ddcdfcee2a338975df32932aa29afc639ff370b2a510b54d94f5ead"
+    },
+    "receipts/independent_oracle.log": {
+      "bytes": 741,
+      "sha256": "ff03d960334432c182e63ada643cd7c451d5291a0bf809f6f8daf2a422da7bca"
+    },
+    "receipts/numerical_oracle.log": {
+      "bytes": 1288,
+      "sha256": "77c350ae0ba7583a4cfbda64b0f58a495aa93633596755b6d81664c785c8fd37"
     },
     "test_oily_logarithm.py": {
       "bytes": 8169,
