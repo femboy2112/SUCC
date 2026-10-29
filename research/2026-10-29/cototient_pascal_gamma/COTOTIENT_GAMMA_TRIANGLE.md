@@ -96,7 +96,7 @@ The totient operator starts at grade one and only directly recovers the *shifted
 `z=(4+S²)^(-1)(4-S²)^2 Σ_C`,
 `(4+S²)^(-1)=Σ_(k>=0)(-1)^k S^(2k)/4^(k+1)`.
 
-The last series converges in ℓ∞ operator norm, with norm ≤1/3 for the reciprocal factor; combining factors gives inverse norm ≤25/3.
+The last series converges in ℓ∞ operator norm, with norm ≤1/3 for the reciprocal factor; combining factors gives inverse norm ≤25/3. **Chronological direction:** S maps to later indices, so this one-sided forward-shift inverse reads present and *future* cototient-filtered values. It is a stable algebraic inverse, NOT a causal real-time decoder from past observations alone.
 
 For finite original Pascal weights `q_n(j)` from #370, define `Θ_n^C=Σ_(0≤j≤n,j even)q_n(j)z_(n+j)`. Inherited `TV(q_n,w)≤22/n` for n≥3 gives
 
