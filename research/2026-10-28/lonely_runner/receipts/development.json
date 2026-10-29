@@ -1,0 +1,19 @@
+[
+  {
+    "command": "python -m unittest tests.test_lonely_runner_search tests.test_lonely_runner_verify",
+    "result": "FAILED: 1 of 22 tests",
+    "failure": "test_corrupt_generator_chain_is_rejected: CertificateError not raised",
+    "cause": "The proposed mutation assigned an endpoint its existing exact value: adjacent source arcs already touched there. This was a no-op negative control, not an accepted invalid certificate.",
+    "repair": "Move the endpoint by exactly 1/10^20 and recompute the payload hash; the independent checker must reject source mismatch."
+  },
+  {
+    "attempt": "first full native run",
+    "exit_code": -15,
+    "seconds": 524.8488631248474,
+    "status": "INTERRUPTED; not a passing suite",
+    "termination_cause": "SIGTERM received; sender not established",
+    "observed_error": "inherited test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count",
+    "root_cause": "Its unchanged probe imports observational_succ without a repository sys.path insertion; the fresh worktree had no installed package and PYTHONPATH was unset. Direct reproduction raises ModuleNotFoundError.",
+    "repair": "Set PYTHONPATH to the actual research worktree for the rerun, matching source-runner isolation. Single failing inherited test then passed. No inherited code or source archive was changed."
+  }
+]

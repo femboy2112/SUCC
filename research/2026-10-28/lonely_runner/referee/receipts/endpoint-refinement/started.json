@@ -1,0 +1,52 @@
+{
+  "schema": "SUCC-endpoint-critical-refinement-v1",
+  "limit": 190,
+  "affected": [
+    2,
+    4,
+    6,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "odd_limit": 31,
+  "required_gain": 1,
+  "phase_scope": "complete resonance alpha; finite beta zero and every endpoint-critical value",
+  "candidate_count": 16317,
+  "endpoint_cells": 384,
+  "velocity_labels_preserved": true,
+  "continuous_beta_infeasibility_claim": false,
+  "published_calibration": {
+    "published_limit": 192,
+    "gain": 1,
+    "padded_affected": [
+      2,
+      4,
+      6,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64,
+      96,
+      128,
+      192
+    ],
+    "full_locality_pass": true,
+    "literal_coefficients_in_menu": true,
+    "cells": 256
+  },
+  "seconds_limit": 120.0,
+  "model_limit": 20,
+  "solver_version": "5.0.0",
+  "models": [],
+  "source_sha256": "4854ec38192fc5bb670858a4e3fda84ea7c622f2df050d89df93cf28e17eda8b"
+}

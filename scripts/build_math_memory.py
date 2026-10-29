@@ -114,6 +114,10 @@ def build(root: Path) -> dict:
         if not folder.exists():
             continue
         for path in sorted(folder.rglob("*")):
+            # Downloaded Lean dependencies are not repository research. Their
+            # presence must not change the catalog after fetching a proof cache.
+            if ".lake" in path.relative_to(folder).parts:
+                continue
             if not path.is_file() or path.suffix.lower() not in (".md", ".lean"):
                 continue
             content = path.read_bytes()

@@ -1,0 +1,85 @@
+{
+  "schema": "succ.lonely-runner.hosted-checkpoint.v1",
+  "commit": "51310e5312974165f33b23661b9ed59faa992396",
+  "workflow_url": "https://github.com/femboy2112/SUCC/actions/runs/40768539061",
+  "jobs": [
+    {
+      "id": 123099156665,
+      "name": "Exact source and hostile replay (3.10)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 123099157006,
+      "name": "Exact source and hostile replay (3.13)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 123099157024,
+      "name": "Lean universal witness and cover soundness with negative controls",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 12851107575,
+      "name": "lonely-runner-source-3.13",
+      "size_in_bytes": 153632,
+      "url": "https://api.github.com/repos/femboy2112/SUCC/actions/artifacts/12851107575",
+      "archive_download_url": "https://api.github.com/repos/femboy2112/SUCC/actions/artifacts/12851107575/zip",
+      "expired": false,
+      "created_at": "2026-10-28T21:04:38Z",
+      "expires_at": "2027-01-26T21:02:24Z",
+      "updated_at": "2026-10-28T21:04:38Z",
+      "digest": "sha256:12e44a07b153868e6b2c72c5d04483e67df99c6eda1b39d46a7a8a1aec6ee485",
+      "workflow_run": {
+        "id": 40768539061,
+        "repository_id": 1413783047,
+        "head_repository_id": 1413783047,
+        "head_branch": "research/succ-lonely-runner-exact-certificates-2026-10-28",
+        "head_sha": "51310e5312974165f33b23661b9ed59faa992396"
+      }
+    },
+    {
+      "id": 12851082231,
+      "name": "lonely-runner-lean",
+      "size_in_bytes": 418873,
+      "url": "https://api.github.com/repos/femboy2112/SUCC/actions/artifacts/12851082231",
+      "archive_download_url": "https://api.github.com/repos/femboy2112/SUCC/actions/artifacts/12851082231/zip",
+      "expired": false,
+      "created_at": "2026-10-28T21:05:30Z",
+      "expires_at": "2027-01-26T21:02:24Z",
+      "updated_at": "2026-10-28T21:05:30Z",
+      "digest": "sha256:864102e94cd0990ce1b43907905d1f0c5f7fa2cb24b594321fc43c58989208d0",
+      "workflow_run": {
+        "id": 40768539061,
+        "repository_id": 1413783047,
+        "head_repository_id": 1413783047,
+        "head_branch": "research/succ-lonely-runner-exact-certificates-2026-10-28",
+        "head_sha": "51310e5312974165f33b23661b9ed59faa992396"
+      }
+    },
+    {
+      "id": 12850448909,
+      "name": "lonely-runner-source-3.10",
+      "size_in_bytes": 153333,
+      "url": "https://api.github.com/repos/femboy2112/SUCC/actions/artifacts/12850448909",
+      "archive_download_url": "https://api.github.com/repos/femboy2112/SUCC/actions/artifacts/12850448909/zip",
+      "expired": false,
+      "created_at": "2026-10-28T21:04:42Z",
+      "expires_at": "2027-01-26T21:02:24Z",
+      "updated_at": "2026-10-28T21:04:42Z",
+      "digest": "sha256:7edc4797a49a2113550751c00e9bce86b8c527444e6b3e88e79a54df1dce0c4e",
+      "workflow_run": {
+        "id": 40768539061,
+        "repository_id": 1413783047,
+        "head_repository_id": 1413783047,
+        "head_branch": "research/succ-lonely-runner-exact-certificates-2026-10-28",
+        "head_sha": "51310e5312974165f33b23661b9ed59faa992396"
+      }
+    }
+  ],
+  "scope": "Hosted campaign source matrix and 16-export kernel passed at this earlier checkpoint. Later G1/phase additions require their own head's CI. Full native still running when observed."
+}

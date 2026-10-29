@@ -1,0 +1,453 @@
+{
+  "authority": "bounded search observations, not exact nonexistence proofs",
+  "runs": [
+    {
+      "schema": "SUCC-local-uniform-finite-menu-search-v1",
+      "limit": 188,
+      "max_odd": 135,
+      "seconds_limit": 30.0,
+      "elapsed_seconds": 33.73040377799771,
+      "phase_menu": {
+        "even_alpha": [
+          "0",
+          "1/2"
+        ],
+        "even_beta": "-2..2 in half steps",
+        "odd_alpha": [
+          "1/4",
+          "3/4"
+        ],
+        "odd_beta": [
+          "-1/4",
+          "0",
+          "1/4"
+        ]
+      },
+      "candidates": 1254,
+      "constraints": 4873,
+      "solver_status": 1,
+      "solver_message": "Time limit reached. (HiGHS Status 13: model_status is Time limit reached; primal_status is None)",
+      "claim_boundary": "finite menu; solver status not a general or exact infeasibility proof"
+    },
+    {
+      "schema": "SUCC-local-uniform-continuous-beta-search-v1",
+      "limit": 188,
+      "max_odd": 135,
+      "prime_factors": [
+        2,
+        3,
+        5
+      ],
+      "active_evens": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        32,
+        36,
+        40,
+        48,
+        60,
+        64,
+        72,
+        80,
+        96,
+        100,
+        108,
+        120,
+        128,
+        144,
+        160,
+        180
+      ],
+      "odd_candidates": [
+        1,
+        3,
+        5,
+        9,
+        15,
+        25,
+        27,
+        45,
+        75,
+        81,
+        125,
+        135
+      ],
+      "seconds_limit": 30.0,
+      "elapsed_seconds": 30.071481410006527,
+      "alpha_menu": {
+        "even": [
+          "0",
+          "1/2"
+        ],
+        "odd": [
+          "1/4",
+          "3/4"
+        ]
+      },
+      "beta_domain": "all real beta, without grid, bounded without loss by 1+v/min(active_evens)",
+      "cells": 44,
+      "solver_status": "unknown",
+      "claim_boundary": "fixed support and alpha menu only; no general rule nonexistence conclusion",
+      "solver_reason": "timeout"
+    },
+    {
+      "schema": "SUCC-local-uniform-continuous-beta-search-v1",
+      "limit": 188,
+      "max_odd": 81,
+      "prime_factors": [
+        2,
+        3
+      ],
+      "active_evens": [
+        4,
+        8,
+        12,
+        16,
+        24,
+        32,
+        36,
+        48,
+        64,
+        72,
+        96,
+        108,
+        128,
+        144
+      ],
+      "odd_candidates": [
+        1,
+        3,
+        9,
+        27,
+        81
+      ],
+      "seconds_limit": 30.0,
+      "elapsed_seconds": 4.673501371988095,
+      "alpha_menu": {
+        "even": [
+          "0",
+          "1/2"
+        ],
+        "odd": [
+          "1/4",
+          "3/4"
+        ]
+      },
+      "beta_domain": "all real beta, without grid, bounded without loss by 1+v/min(active_evens)",
+      "cells": 28,
+      "solver_status": "unsat",
+      "claim_boundary": "fixed support and alpha menu only; no general rule nonexistence conclusion"
+    },
+    {
+      "schema": "SUCC-local-uniform-continuous-beta-search-v1",
+      "limit": 188,
+      "max_odd": 81,
+      "prime_factors": [
+        2,
+        3
+      ],
+      "active_evens": [
+        4,
+        8,
+        12,
+        16,
+        24,
+        32,
+        36,
+        48,
+        64,
+        72,
+        96,
+        108,
+        128,
+        144
+      ],
+      "odd_candidates": [
+        1,
+        3,
+        9,
+        27,
+        81
+      ],
+      "seconds_limit": 45.0,
+      "elapsed_seconds": 45.01258652299293,
+      "alpha_menu": {
+        "even": [
+          "0",
+          "1/6",
+          "1/4",
+          "1/3",
+          "1/2",
+          "2/3",
+          "3/4",
+          "5/6"
+        ],
+        "odd": [
+          "1/8",
+          "1/4",
+          "1/3",
+          "3/8",
+          "5/8",
+          "2/3",
+          "3/4",
+          "7/8"
+        ]
+      },
+      "required_gain": 1,
+      "beta_domain": "all real beta, without grid, bounded without loss by 1+v/min(active_evens)",
+      "cells": 54,
+      "solver_status": "unknown",
+      "claim_boundary": "fixed support and alpha menu only; no general rule nonexistence conclusion",
+      "solver_reason": "timeout"
+    },
+    {
+      "schema": "SUCC-local-uniform-continuous-beta-search-v1",
+      "limit": 192,
+      "max_odd": 81,
+      "prime_factors": [
+        2,
+        3
+      ],
+      "active_evens": [
+        4,
+        8,
+        12,
+        16,
+        24,
+        32,
+        36,
+        48,
+        64,
+        72,
+        96,
+        108,
+        128,
+        144,
+        192
+      ],
+      "odd_candidates": [
+        1,
+        3,
+        9,
+        27,
+        81
+      ],
+      "seconds_limit": 30.0,
+      "elapsed_seconds": 0.6146871779928915,
+      "alpha_menu": {
+        "even": [
+          "0",
+          "1/2"
+        ],
+        "odd": [
+          "1/4",
+          "3/4"
+        ]
+      },
+      "required_gain": 1,
+      "beta_domain": "all real beta, without grid, bounded without loss by 1+v/min(active_evens)",
+      "cells": 19,
+      "solver_status": "sat",
+      "claim_boundary": "fixed support and alpha menu only; no general rule nonexistence conclusion",
+      "candidate": {
+        "removed": [
+          8,
+          32,
+          36,
+          108,
+          192
+        ],
+        "rephased": [
+          [
+            4,
+            "0",
+            "0"
+          ],
+          [
+            12,
+            "1/2",
+            "-1/2"
+          ],
+          [
+            16,
+            "0",
+            "1"
+          ],
+          [
+            24,
+            "1/2",
+            "-1/2"
+          ],
+          [
+            48,
+            "1/2",
+            "1/2"
+          ],
+          [
+            64,
+            "0",
+            "-1"
+          ],
+          [
+            72,
+            "0",
+            "0"
+          ],
+          [
+            96,
+            "1/2",
+            "1/2"
+          ],
+          [
+            128,
+            "0",
+            "0"
+          ],
+          [
+            144,
+            "0",
+            "0"
+          ]
+        ],
+        "added": [
+          [
+            3,
+            "3/4",
+            "0"
+          ],
+          [
+            9,
+            "3/4",
+            "1/4"
+          ],
+          [
+            27,
+            "3/4",
+            "1/4"
+          ],
+          [
+            81,
+            "3/4",
+            "-23/256"
+          ]
+        ],
+        "gain": 1,
+        "exact_local_uniform": true
+      }
+    },
+    {
+      "schema": "SUCC-local-uniform-continuous-beta-search-v1",
+      "limit": 192,
+      "max_odd": 81,
+      "prime_factors": [
+        2,
+        3
+      ],
+      "active_evens": [
+        4,
+        8,
+        12,
+        16,
+        24,
+        32,
+        36,
+        48,
+        64,
+        72,
+        96,
+        108,
+        128,
+        144,
+        192
+      ],
+      "odd_candidates": [
+        1,
+        3,
+        9,
+        27,
+        81
+      ],
+      "seconds_limit": 30.0,
+      "elapsed_seconds": 3.318006316985702,
+      "alpha_menu": {
+        "even": [
+          "0",
+          "1/2"
+        ],
+        "odd": [
+          "1/4",
+          "3/4"
+        ]
+      },
+      "required_gain": 2,
+      "beta_domain": "all real beta, without grid, bounded without loss by 1+v/min(active_evens)",
+      "cells": 19,
+      "solver_status": "unsat",
+      "claim_boundary": "fixed support and alpha menu only; no general rule nonexistence conclusion"
+    },
+    {
+      "schema": "SUCC-local-uniform-continuous-beta-search-v1",
+      "limit": 188,
+      "max_odd": 9,
+      "prime_factors": [
+        2,
+        3
+      ],
+      "active_evens": [
+        4,
+        8,
+        12,
+        16,
+        24,
+        32,
+        36,
+        48,
+        64,
+        72,
+        96,
+        108,
+        128,
+        144
+      ],
+      "odd_candidates": [
+        1,
+        3,
+        9
+      ],
+      "seconds_limit": 30.0,
+      "elapsed_seconds": 30.018586053018225,
+      "alpha_menu": {
+        "even": [
+          "0",
+          "1/6",
+          "1/4",
+          "1/3",
+          "1/2",
+          "2/3",
+          "3/4",
+          "5/6"
+        ],
+        "odd": [
+          "1/8",
+          "1/4",
+          "1/3",
+          "3/8",
+          "5/8",
+          "2/3",
+          "3/4",
+          "7/8"
+        ]
+      },
+      "required_gain": 1,
+      "beta_domain": "all real beta, without grid, bounded without loss by 1+v/min(active_evens)",
+      "cells": 52,
+      "solver_status": "unknown",
+      "claim_boundary": "fixed support and alpha menu only; no general rule nonexistence conclusion",
+      "solver_reason": "timeout"
+    }
+  ]
+}

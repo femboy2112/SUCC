@@ -57,3 +57,12 @@ Matching Ω across these is a shared scalar, not an isomorphism of sources.
 ## Current frontier (smallest open obligation)
 
 Prove `E_{N,M_N}(h)→0` for **one** admissible `M_N=16^{k}3^{L}=o(N)` and every fixed h≠0 — equivalently (`MM-T-030`) the selected real Weyl `o(N)`. Everything above either reduces to this, bounds it from above at `N−O(log N)`, restates it as an equivalence, or refutes a shortcut past it.
+
+## Finite circle covers and Lonely Runner research
+
+The [Lonely Runner package](../../research/2026-10-28/lonely_runner/README.md)
+uses source-labelled exact rational interval chains with a generator-independent
+checker. It separates a known deletion-value clarification, local-rule converse
+and velocity compression, restricted ladder optimality, and two-entry growth
+bounds. Follow [LRN claims](../CLAIM_SUPPLEMENT_LONELY_RUNNER.md) to precise proof
+authority; this discovery entry certifies no theorem or academic priority.

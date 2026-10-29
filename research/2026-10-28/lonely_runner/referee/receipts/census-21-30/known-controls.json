@@ -1,0 +1,144 @@
+[
+  {
+    "exact_loneliness": [
+      1,
+      5
+    ],
+    "full_fraction_cover": true,
+    "goddyn_wong_windows": [],
+    "inserted": [
+      6,
+      8
+    ],
+    "lower_witness_time": [
+      1,
+      5
+    ],
+    "n": 5,
+    "removed": [
+      1,
+      3
+    ]
+  },
+  {
+    "exact_loneliness": [
+      1,
+      8
+    ],
+    "full_fraction_cover": true,
+    "goddyn_wong_windows": [],
+    "inserted": [
+      11,
+      13
+    ],
+    "lower_witness_time": [
+      1,
+      8
+    ],
+    "n": 8,
+    "removed": [
+      2,
+      3
+    ]
+  },
+  {
+    "exact_loneliness": [
+      1,
+      74
+    ],
+    "full_fraction_cover": true,
+    "goddyn_wong_windows": [
+      {
+        "gcds": [
+          2,
+          5,
+          2,
+          7
+        ],
+        "multiplier": 2,
+        "removed": 70,
+        "window": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "gcds": [
+          2,
+          3
+        ],
+        "multiplier": 2,
+        "removed": 72,
+        "window": [
+          2,
+          3
+        ]
+      }
+    ],
+    "inserted": [
+      140,
+      144
+    ],
+    "lower_witness_time": [
+      1,
+      74
+    ],
+    "n": 74,
+    "removed": [
+      70,
+      72
+    ]
+  },
+  {
+    "exact_loneliness": [
+      1,
+      284
+    ],
+    "full_fraction_cover": true,
+    "goddyn_wong_windows": [
+      {
+        "gcds": [
+          4,
+          5,
+          2,
+          7
+        ],
+        "multiplier": 2,
+        "removed": 280,
+        "window": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "gcds": [
+          2,
+          3
+        ],
+        "multiplier": 2,
+        "removed": 282,
+        "window": [
+          2,
+          3
+        ]
+      }
+    ],
+    "inserted": [
+      560,
+      564
+    ],
+    "lower_witness_time": [
+      1,
+      284
+    ],
+    "n": 284,
+    "removed": [
+      280,
+      282
+    ]
+  }
+]

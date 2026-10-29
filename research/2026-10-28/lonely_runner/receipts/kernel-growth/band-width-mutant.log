@@ -1,0 +1,6 @@
+/tmp/succ-referee-growth-audit/growth-kernel-build-r_ovsnrx/band-width-mutant.lean:4:2: error: type mismatch
+  covered_open_interval_width v δ a b hv hδ hab hc
+has type
+  b - a ≤ 2 * δ / v : Prop
+but is expected to have type
+  b - a ≤ δ / v : Prop

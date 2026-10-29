@@ -1,0 +1,105 @@
+[
+  {
+    "name": "bcs-five",
+    "file": "bcs-five.json",
+    "file_sha256": "acac8e4305a1ed57a3cfba4afb821daf37039e0be92f234012b2a276a3c1b021",
+    "file_bytes": 1547,
+    "verdict": {
+      "accepted": true,
+      "authority": "exact integer interval certificate; not a Lean kernel claim",
+      "all_time_cover": true,
+      "strict_shifted_counterexample": true,
+      "n": 5,
+      "delta": [
+        15,
+        94
+      ],
+      "threshold": [
+        1,
+        6
+      ],
+      "checked_intervals": 11,
+      "payload_sha256": "b717a6e62c637a6b2b7dee48343722cf500f9bdabe3e1cf4e9e4670b973d234b"
+    },
+    "independent_maximum": {
+      "gamma": [
+        15,
+        94
+      ],
+      "maximizing_time": [
+        39,
+        94
+      ],
+      "active_runners": [
+        3,
+        4
+      ],
+      "raw_breakpoint_bound": 90,
+      "distinct_candidates_checked": 87,
+      "authority": "exact finite breakpoint evaluation with paper completeness proof"
+    }
+  },
+  {
+    "name": "bcs-thirteen",
+    "file": "bcs-thirteen.json",
+    "file_sha256": "19d383e39730f9c4ea09554a3b687c17fa367d73f56c55bbe114c0b31663cd51",
+    "file_bytes": 7639,
+    "verdict": {
+      "accepted": true,
+      "authority": "exact integer interval certificate; not a Lean kernel claim",
+      "all_time_cover": true,
+      "strict_shifted_counterexample": true,
+      "n": 13,
+      "delta": [
+        1,
+        16
+      ],
+      "threshold": [
+        1,
+        14
+      ],
+      "checked_intervals": 55,
+      "payload_sha256": "4209c254f8633100543d8d8f4af61d9811ed8e58904b01e8c20aa6395adef369"
+    },
+    "independent_maximum": {
+      "gamma": [
+        1,
+        16
+      ],
+      "maximizing_time": [
+        853,
+        2535
+      ],
+      "active_runners": [
+        1,
+        8
+      ],
+      "raw_breakpoint_bound": 1274,
+      "distinct_candidates_checked": 1263,
+      "authority": "exact finite breakpoint evaluation with paper completeness proof"
+    }
+  },
+  {
+    "name": "poliakova-n95",
+    "file": "poliakova-n95.json",
+    "file_sha256": "48a08a1ff6d377a4c77e115683ca6f403400fb404867d1e9cd6e9d0704f80108",
+    "file_bytes": 606352,
+    "verdict": {
+      "accepted": true,
+      "authority": "exact integer interval certificate; not a Lean kernel claim",
+      "all_time_cover": true,
+      "strict_shifted_counterexample": true,
+      "n": 95,
+      "delta": [
+        1,
+        97
+      ],
+      "threshold": [
+        1,
+        96
+      ],
+      "checked_intervals": 5225,
+      "payload_sha256": "70f6f69261435f330fd5af3db263050bac2b55a3ef09d08a0c15d35c6d86aafa"
+    }
+  }
+]

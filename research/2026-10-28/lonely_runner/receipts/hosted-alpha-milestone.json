@@ -1,0 +1,17 @@
+{
+  "schema": "succ.lonely-runner.hosted-observation.v1",
+  "commit": "16c326c9ec25be0296e46f3df7561396bd0775e6",
+  "run_id": 40762140360,
+  "url": "https://github.com/femboy2112/SUCC/actions/runs/40762140360",
+  "status": "completed",
+  "conclusion": "cancelled",
+  "python_313": "success (full native and all subsequent steps)",
+  "python_310": "cancelled during full native; subsequent checks skipped",
+  "job_id": 123076584978,
+  "first_log_line": "﻿2026-10-28T20:18:50.8542971Z Current runner version: '2.338.0'",
+  "cancellation_lines": [
+    "2026-10-28T20:44:04.6591418Z ##[error]The operation was canceled."
+  ],
+  "interpretation": "The roughly 25-minute timing matches the configured inherited timeout; no assertion failure is reported. This is not a complete hosted pass. Other three applicable workflows succeeded.",
+  "next_action": "Increase inherited native-job timeout from 25 to 45 minutes without removing checks; replay at next head."
+}

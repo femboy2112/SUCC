@@ -1,0 +1,6 @@
+/tmp/succ-referee-growth-audit/growth-kernel-build-r_ovsnrx/upper-half-cubic-mutant.lean:4:2: error: type mismatch
+  upper_half_cubic_growth n r s w₁ w₂ hn hr hrs hs hupper hw₁ hw₂ hc
+has type
+  w₂ < 3 * n ^ 3 : Prop
+but is expected to have type
+  w₂ < 0 : Prop

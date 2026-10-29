@@ -1,0 +1,56 @@
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:64:54: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:64:68: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:64:80: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:85:54: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:85:66: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:212:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:212:32: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:301:42: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:301:42: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:301:23: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:355:19: warning: unused variable `hcb`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:449:42: warning: 'ring' tactic does nothing
+note: this linter can be disabled with `set_option linter.unusedTactic false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:449:42: warning: this tactic is never executed
+note: this linter can be disabled with `set_option linter.unreachableTactic false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:453:31: warning: unused variable `hrn`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:526:23: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee/formal/LonelyRunnerGrowth.lean:526:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+'ObservationalSUCC.LonelyRunnerGrowth.covered_open_interval_one_band' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.LonelyRunnerGrowth.covered_open_interval_width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.LonelyRunnerGrowth.finite_source_labelled_gap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.LonelyRunnerGrowth.inserted_speed_bound_from_hole' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.LonelyRunnerGrowth.upper_half_second_speed_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.LonelyRunnerGrowth.two_inserted_interval_strict_width' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.LonelyRunnerGrowth.upper_half_first_speed_geometric_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'ObservationalSUCC.LonelyRunnerGrowth.upper_half_cubic_growth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
