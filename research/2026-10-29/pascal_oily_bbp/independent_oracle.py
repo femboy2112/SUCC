@@ -103,6 +103,12 @@ receipt={'source':'four signed BBP poles, U0=0 not changed',
          'rank2_Omega_limit':mp.nstr(Omega,35),
          'held_out_numerical_rows':rows,
          'pi_normality_proved':False,'source_selected_saving_proved':False}
-Path('/mnt/data/pascal_oily_moonshot/independent_receipt.json').write_text(
-    json.dumps(receipt,indent=2)+'\n')
+# Default mode emits JSON only.  --output is an explicit caller-selected path,
+# never a hard-coded development-machine directory or an implicit overwrite
+# of the committed validation receipt.
+import sys
+if len(sys.argv) > 1:
+    if len(sys.argv) != 3 or sys.argv[1] != '--output':
+        raise SystemExit('usage: python independent_oracle.py [--output PATH]')
+    Path(sys.argv[2]).write_text(json.dumps(receipt,indent=2)+'\n')
 print(json.dumps(receipt,indent=2))

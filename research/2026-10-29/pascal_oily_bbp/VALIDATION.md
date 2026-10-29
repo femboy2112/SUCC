@@ -14,7 +14,7 @@ Date: 2026-10-29. Parent: SUCC PR #369 head `95f368719a1e020e8bf5b9312b10260a94a
 | File | SHA-256 |
 |---|---|
 | `pascal_oily_probe.py` | `1d9a62ca2837e563f2c375fe974c4bb8244102f624dffab744961342b528b464` |
-| `independent_oracle.py` | `6084e68b6ecca4773399a2cd76e0bd29f2220f560d8064e32a48179c2dbeea4b` |
+| `independent_oracle.py` | `c822dc4e5db83ce865dc7cdccb474488fe15a15738780ab97876489c6a399b3a` |
 | `PASCAL_OILY_SIGNED_LIFT.md` | `fbfc35d0115cf71860f0b87643b57ae9d6fbd1113ba943b1744c92d49d570827` |
 | `CLAIMS.md` | `0797466a7debe0bf1184a814d824493d18b4e8056f5027125fd8d2b0146ade78` |
 
