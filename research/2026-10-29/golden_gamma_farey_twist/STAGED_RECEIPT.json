@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-29",
+  "parent_sha": "e418e465b7b0669997d8c67fcbcbd48c1df1681f",
+  "baseline_main_sha": "ac7303b2e0e2ec16e3b1d88d186324e1fae65ea5",
+  "scope": "research-only additive, original four-pole BBP forcing and U0=0 unchanged",
+  "validation": {
+    "isolated_unittest": "27 passed",
+    "independent_mpmath_sympy": "pass, scope in log",
+    "compileall": "pass",
+    "full_native_repo": "not run",
+    "hosted_ci": "not run",
+    "lean": "not run"
+  },
+  "python": "3.13.5",
+  "files": [
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/CLAIMS.md",
+      "bytes": 5970,
+      "sha256": "7eef93a41cac2de1420630033928cc6b2a754f07a04e28a7ef3f21fefcef4b51",
+      "git_blob_sha1": "2539c08779b1d95ad4ea687d41fb32094792d422"
+    },
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/NEXT.md",
+      "bytes": 4391,
+      "sha256": "8c504abe1a63d8a746500c572ed03bf0bdcbcba58727704eb26dc255ca8a9556",
+      "git_blob_sha1": "b3b776d871db2c86e16d037d24e182e13bbd655e"
+    },
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/README.md",
+      "bytes": 21925,
+      "sha256": "76608bace17b734d4e908e86fc918ba8da14cf38a1f160c2705ae178b9f1ebef",
+      "git_blob_sha1": "dae64557a7f8dd9217df7d69757205997ec2ea5e"
+    },
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/VALIDATION.md",
+      "bytes": 4570,
+      "sha256": "e25ddc33a3658ce0a648f69a606c66dfe01691540fbbeb5cb109d8ebd6868b51",
+      "git_blob_sha1": "0873086ee8b2b968c5c694d1013c2e7c821f1f90"
+    },
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/independent_oracle.log",
+      "bytes": 1574,
+      "sha256": "449e49ee509f3ea781e7989043cd2436d423b91a057454591dec93410246b15e",
+      "git_blob_sha1": "8f80d2149fbcc9db5ba32397c3c5f5541eb1f890"
+    },
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/independent_oracle.py",
+      "bytes": 6310,
+      "sha256": "7e8a7af8237964fe4396406ac21c86caf57599b068cbffb0b801dd1c428f3e09",
+      "git_blob_sha1": "56ab0e32567d2098dc723ee6850a5ec7a6cdc2e0"
+    },
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/stdlib_tests.log",
+      "bytes": 3295,
+      "sha256": "83d979588b47770bece92a9f0fabe28044c154201790cc3f85de5538ea87906b",
+      "git_blob_sha1": "2e05ed990a962cc3a86bdd164ef02cada4b31838"
+    },
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/twist_probe.py",
+      "bytes": 6321,
+      "sha256": "89b49bc2e1a73f0ca8b64637ed1b1a9e447d88476256d3778bed88dcd1a36c23",
+      "git_blob_sha1": "979c536dbeef65a0046ee100104cb1c432817797"
+    },
+    {
+      "path": "tests/test_golden_gamma_farey_twist.py",
+      "bytes": 7049,
+      "sha256": "08a40bfdd13c273eaa93536139617fec65ac52c0330b28dd5418ae3a78cf5908",
+      "git_blob_sha1": "ef8c45f6882b85de062b679c0df80b448ffee575"
+    }
+  ]
+}
