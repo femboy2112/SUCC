@@ -1,0 +1,91 @@
+{
+  "schema": "succ.recursive-carrier-triangle.source-passport.v1",
+  "baseline_commit": "ec2fbe321a29a220f3d67ff5fbd749e64d4d3efc",
+  "baseline_tree": "ab85d9c376a863251a891a1e5a665a0848bf277c",
+  "branch": "research/recursive-carrier-triangle-2026-10-29",
+  "sibling_read_only": {
+    "pr": 359,
+    "head": "3a4f7e1307d2de26020a00438a42220a23683e65",
+    "imported": false
+  },
+  "inherited_sources": [
+    {
+      "path": "AGENTS.md",
+      "git_blob_at_baseline": "2c04a24744366d5659f347caeb874a3613f893c9",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "changed": false
+    },
+    {
+      "path": "provenance/IMPORT_MANIFEST.json",
+      "git_blob_at_baseline": "a8805a8e4d64f35ff61937a36755d9b6d1ba3fae",
+      "sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+      "changed": false
+    },
+    {
+      "path": "observational_succ/oily_macaroni_transfer.py",
+      "git_blob_at_baseline": "85ba4a20cf604ef931c44d0448cfc1b102da6f1a",
+      "sha256": "200226e92d75336a8d0ed3a20fa135ad3fc3daa3e72fafd3cd858235507d035a",
+      "changed": false
+    },
+    {
+      "path": "observational_succ/succ_internal_matrix_walk.py",
+      "git_blob_at_baseline": "fa1abb9dbeee0d7b4d9972e3b0e40a5feaed3c9e",
+      "sha256": "989976921da1b97a4ad04c788e302b3c23be1916eaf3c52c60369f6e111fe5d4",
+      "changed": false
+    },
+    {
+      "path": "observational_succ/path_field_feedback.py",
+      "git_blob_at_baseline": "3fc7430e439d6111b09263d5382763e1e45cb96d",
+      "sha256": "a8151944237670fc703eacebf190adc7a79367cbb2743cb87bc57128f3055349",
+      "changed": false
+    },
+    {
+      "path": "research/2026-10-26/OILY_POSITIVE_FIELD_GAMMA_COCYCLE.md",
+      "git_blob_at_baseline": "814499504cbf30f397bcae51e0dd83053e5ba9b2",
+      "sha256": "1d5d5a0062150e6d3238f16502e02712fac3d20b941bb4be5f928df53ec9c1b1",
+      "changed": false
+    },
+    {
+      "path": "research/2026-10-26/OILY_LOG_CLOCK_HILBERT_TRANSPORT.md",
+      "git_blob_at_baseline": "fb203eea767638442e8c32d160530284c22005bd",
+      "sha256": "fcc79a3529af44851fae26418452b79eb18061361ed4cac8b24623fe032b4a76",
+      "changed": false
+    },
+    {
+      "path": "research/2026-10-26/REALIZED_PATHS_AND_FIELD_FEEDBACK.md",
+      "git_blob_at_baseline": "0d01c42872d5728b06f4bae8171ab095ff1ca37a",
+      "sha256": "1fec3a19931658ad73174ced165593f890887b0091e4919b1177a62490bb2e67",
+      "changed": false
+    },
+    {
+      "path": "research/2026-10-28/POLYA_COHERENCE_RIGIDITY.md",
+      "git_blob_at_baseline": "fbaa9a46f2112d28761298b7d339a6f03dab1d90",
+      "sha256": "7afa6a9fde87f33663b83ac8fdcaab781606d107bbf8c7d8d833e4d6fc0e7835",
+      "changed": false
+    }
+  ],
+  "executed_python_files": [
+    {
+      "path": "observational_succ/recursive_carrier_triangle.py",
+      "git_blob": "b4e1a41df5e358693b1226e90fead87add412bed",
+      "sha256": "85e95aded49ccf93fce4256b3bf7970420fece251586a0162e868b2d09b37211"
+    },
+    {
+      "path": "scripts/recursive_carrier_triangle_probe.py",
+      "git_blob": "4cb5a2d3df62b1502bd9bdb2591976f04aab72a0",
+      "sha256": "86ac50e3f648e798879156c19ab51668bc41f1eec26e61b64f0c0f9f80c60c6c"
+    },
+    {
+      "path": "scripts/recursive_carrier_triangle_oracle.py",
+      "git_blob": "65f2e8cd89b3f5c742a1c37dc01b91d7deab7623",
+      "sha256": "387300058792d429add2e8dfac7e2529fe3364e216d513b463dee8a2fc76f038"
+    },
+    {
+      "path": "tests/test_recursive_carrier_triangle.py",
+      "git_blob": "b2ac33735f2ee5ab6f43f97b86b011c5f561bee8",
+      "sha256": "e580984afc0272cb8023194c13191290a901e10e61c7f3e32099146d678ae5ae"
+    }
+  ],
+  "historical_sources_modified": false,
+  "proof_authority": "paper derivations plus separately scoped exact finite receipts; no Lean claim"
+}

@@ -1,0 +1,14 @@
+argv: ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python", "-m", "unittest", "tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count", "-v"]
+cwd: /tmp/succ_triangle_baseline_ec2fbe3_adversary
+PYTHONPATH: /tmp/succ_triangle_deps:/tmp/succ_triangle_baseline_ec2fbe3_adversary
+exit: 0
+
+STDOUT
+
+STDERR
+test_exact_probe_receipt_and_independent_count (tests.test_eodcs_meta_choice_descent.TestMetaChoiceDescent.test_exact_probe_receipt_and_independent_count) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.097s
+
+OK

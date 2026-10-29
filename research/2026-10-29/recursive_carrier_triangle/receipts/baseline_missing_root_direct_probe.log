@@ -1,0 +1,12 @@
+argv: ["/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python", "scripts/meta_choice_descent_probe.py"]
+cwd: /tmp/succ_triangle_baseline_ec2fbe3_adversary
+PYTHONPATH: /tmp/succ_triangle_deps
+exit: 1
+
+STDOUT
+
+STDERR
+Traceback (most recent call last):
+  File "/tmp/succ_triangle_baseline_ec2fbe3_adversary/scripts/meta_choice_descent_probe.py", line 11, in <module>
+    from observational_succ.meta_choice_descent import (
+ModuleNotFoundError: No module named 'observational_succ'
