@@ -1,0 +1,15 @@
+# CLAUDE/CODEX — WPI: original-source Bayesian wavefront / inflation execution
+
+Starting point: https://github.com/femboy2112/SUCC, current draft PR #344 pinned parent f10632ee4c922c95256f80245284c752162dbe2d. Read new WPI proof research/2026-10-28/WAVEFRONT_PRIOR_INFLATION_THEOREMS.md, #344 WOC-01..12 and the original SUCC Oily source/claim ledger. **Research-only. Do not merge or modify BBP signed four poles or U0=0.** π normality and RH OPEN.
+
+**First mathematical audit:** Re-derive µ0(dx,j)=16p_j(x)dx/π directly from positive original R; do not confuse exact prior with the two-point rational surrogate in the probe. For chosen independent Bernoulli(x) report likelihood, prove posterior µ_n=x^(8n)p_j/T_n. Prove projective consistency and Kolmogorov extension of tree innovations with chosen q(x)=uv; retain explicit conditional independence vs globally shared-X squared correlations and the Bayesian no-superluminal firewall.
+
+**Analytic theorem:** derive exact Γ(2) endpoint posterior moments and Var(q)~1/(128n²) with error, including the zero quadratic Taylor coefficient q(1−δ)=1/4−δ/2+δ³/2−δ⁴/4. Prove long-path Gaussian-mixture limit and its nonzero connected fourth cumulant. Check WEO optimality negative control: iid centered input at x=1 has optimal current MSE 1/4 but Oily E2 8/27; decoding past values is not predicting the current oracle.
+
+**Execution:** The user-facing companion archive SUCC_WAVEFRONT_PRIOR_INFLATION_2026-10-28.zip includes the full locally tested standard-library source, 18-case focused tests, deterministic exact Fraction probe/receipt, and optional 75-digit numerical quadrature. Import unchanged files after comparing SHA256, rerun native SUCC against the parent #344 checkout, then add original-source import holdouts and full AGENTS/CI/Lean gates. The PR itself includes a smaller byte-verified standalone rational probe and five smoke tests. Do not claim the fully isolated local tests validate the full native tree.
+
+**Physics lane:** Introduce actual Hilbert-space density prior ρ0, CPTP steps, quantum instruments and partial trace; connect to Li PRL 136 (2026) stochastic inflation/Lindblad and Launay et al PRD 109 (2024) FRW stochastic source; derive stress energy, horizon causal maps, metric. A tree with b^n branches does not establish Einstein inflation. Never claim primordial CMB constraints from the toy model.
+
+**Next verdict-changing SUCC theorem:** derive a sensor/emission likelihood or conditional-state dynamics *from* the authenticated original wavefront oscillator and demonstrate E1/E2 arises as an optimal Bayesian estimator, or prove an explicit countermodel. Physical feedback needs an action-indexed transition kernel, passive conditioning isn't a source edit. Any π frontier claim still requires genuine selected real signed Weyl o(N) and must fail same-forcing changed-seed countercontrols.
+
+Required final: paper proof authority, code/test provenance, exact head CI, honest OPEN labels, canonical WPI claim namespace review and staged PR. No auto-main merge, release or publication.
