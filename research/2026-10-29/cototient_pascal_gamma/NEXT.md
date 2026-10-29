@@ -1,0 +1,7 @@
+# Next discriminating execution: complete cototient carry tensor
+
+1. On a fresh independent branch, audit this exact research head and the siblings #370–#372. Retain source provenance, original rational four poles and actual U0=0. Run required AGENTS gates if full checkout available.
+2. Build a genuine **complete** finite joint tensor indexed by `grade χ_q(j)`, `rank χ_q(j+2)`, *literal* integer mod-16 carry, and absolute selected phase `e(h U_(n+j)(0))`. Source weights remain the exact `q_n(j)` from the original Pascal observation. Do not use only a two-shell averaged Ramanujan sum: κ=15 is invisible to both.
+3. Keep q=3 forbidden (00) cell as a negative control and q=6 full four-cell as a positive full factorial. Add q=5,10,15,30 prime interactions. Distinguish grade and rank, and all 16 carry bins with full Walsh/cyclotomic transforms.
+4. Test the coherent same-forcing counterseed `s=-π/16` symbolically/with rigorous source bounds, ordinary rational changed seeds exactly, rational mutant forcing `n^-2`, and a constant signed phase. Compute both raw and source-conditioned views. No numerical phase sample implies an all-N claim.
+5. Seek a theorem on **signed, seed-anchored conditional carry correlations** whose premises follow from the actual source and which produces an unbounded-horizon `o(N)` estimate. An invertible filter, finite discrepancy, positivity of the virtual carrier, or a rephrasing of Weyl's criterion is not a solution. Register UNVERIFIED if no such estimate survives the hostile tests.
