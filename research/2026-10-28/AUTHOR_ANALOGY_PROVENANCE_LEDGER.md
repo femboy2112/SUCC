@@ -557,6 +557,36 @@ RH is one clever step away. He is at the lower peak ON PURPOSE.
   prefix." Non-uniqueness is explicit.
 - "self-adjoint" loose; the circle cannot be literally well-ordered; π normality OPEN; RH OPEN.
 
+### Naming provenance — the "oily-macaroni" etymology (author, 2026-10-29)
+
+**Provenance:** author, 2026-10-29. Verbatim (original spelling preserved):
+> oily-macaroni, (inverse phi - gamma), inverse golden ratio - euler-mascheroni, is named as such as
+> a callback to FlammableMaths (previously FappableMaths) because he used it as a meme-name for
+> euler-mascheroni. Im using it defined my way because its as if arithmetic structure is macaroni,
+> global/analytic truths are oily cheese, and oily-macaroni describes how the combination allows them
+> to slip past each other perfectly while remaining a coherent dish
+
+**Decode / reflection (MINE, labeled — the name is borrowed, the definition is the author's own):**
+- The NAME is a callback to the mathematics channel **FlammableMaths** (formerly *FappableMaths*),
+  which used "oily macaroni" as a meme name for the Euler–Mascheroni constant **γ** itself. This is the
+  author's stated etymology for the name; I have not independently sourced the meme, so it is recorded
+  here as attribution, not as a claim about γ.
+- The DEFINITION is deliberately NOT that referent: the author's oily-macaroni is the DIFFERENCE
+  **φ⁻¹ − γ** (= Concept 11's defect Ω ≈ 0.04081832…), not γ. The callback borrows the flavour of the
+  name while the object is the author's own ideal↔continuous defect — the two must not be conflated.
+- The dish metaphor maps onto the program the OILY_MACARONI docs already pursue: **macaroni = the finite,
+  recursive arithmetic structure / carrier** (the φ-selected recursive skeleton on the cut circle,
+  Concept 11); **oily cheese = the global / analytic truths** (the Weyl / cancellation, analytic side);
+  **"slip past each other perfectly while remaining a coherent dish" = the sought exact source-coupling**
+  in which the arithmetic carrier and the analytic target coincide with no residue. That coupling is
+  precisely what the program chases and has NOT proved.
+
+**FIREWALL:** this entry is NAMING provenance (etymology + the author's culinary metaphor); it promotes
+nothing. The constant Ω = φ⁻¹ − γ keeps its Concept 11 status (well-defined, CHOSEN-but-motivated,
+CLASSICAL finite ingredients — not canonical, not progress on normality or RH). The "perfect slip" /
+exact coupling is the UNPROVEN target, not an achieved result: π base-16/base-3 normality OPEN, the
+signed gate Σ e(h·U_n) = o(N) OPEN, RH OPEN.
+
 ---
 
 ## Concept 12 — Constructive stance (AC-free) + the Pisot dynamics field
