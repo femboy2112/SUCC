@@ -1,0 +1,114 @@
+{
+  "source": "original four pole BBP",
+  "phase_tests": [
+    {
+      "n": 5,
+      "actual_sum_abs": 0.052530824315970046,
+      "actual_carry_l1": 0.052530824315970046,
+      "nonzero_carry_bins": [
+        6,
+        8
+      ],
+      "coherent_abs": 6.829236783556046e-05,
+      "coherent_all_carries_15": true
+    },
+    {
+      "n": 8,
+      "actual_sum_abs": 0.044219260933056434,
+      "actual_carry_l1": 0.044922890674275885,
+      "nonzero_carry_bins": [
+        5,
+        8
+      ],
+      "coherent_abs": 2.1675704635573802e-05,
+      "coherent_all_carries_15": true
+    },
+    {
+      "n": 12,
+      "actual_sum_abs": 0.0706168944067395,
+      "actual_carry_l1": 0.0724026704264089,
+      "nonzero_carry_bins": [
+        3,
+        8,
+        9
+      ],
+      "coherent_abs": 7.645377954147055e-06,
+      "coherent_all_carries_15": true
+    },
+    {
+      "n": 20,
+      "actual_sum_abs": 0.10197630146066489,
+      "actual_carry_l1": 0.10292930820603469,
+      "nonzero_carry_bins": [
+        0,
+        3,
+        4,
+        8,
+        9,
+        10
+      ],
+      "coherent_abs": 1.9278136754052783e-06,
+      "coherent_all_carries_15": true
+    },
+    {
+      "n": 30,
+      "actual_sum_abs": 0.1014213426962887,
+      "actual_carry_l1": 0.102295157040389,
+      "nonzero_carry_bins": [
+        0,
+        3,
+        4,
+        8,
+        9,
+        10,
+        15
+      ],
+      "coherent_abs": 6.21005542065196e-07,
+      "coherent_all_carries_15": true
+    },
+    {
+      "n": 45,
+      "actual_sum_abs": 0.03685316451920515,
+      "actual_carry_l1": 0.04176687316410758,
+      "nonzero_carry_bins": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "coherent_abs": 1.9503479865251454e-07,
+      "coherent_all_carries_15": true
+    },
+    {
+      "n": 60,
+      "actual_sum_abs": 0.040998040707286514,
+      "actual_carry_l1": 0.043104008116141804,
+      "nonzero_carry_bins": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        12,
+        14,
+        15
+      ],
+      "coherent_abs": 8.477629376775357e-08,
+      "coherent_all_carries_15": true
+    }
+  ],
+  "fresnel_quarter_angle_deg": 44.9999997135211,
+  "exact_limit_lower_bound": "86984497/13280710590",
+  "normality_proved": false,
+  "fully_certified_interval_oracle": false
+}
