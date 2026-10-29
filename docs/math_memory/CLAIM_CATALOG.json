@@ -1456,6 +1456,12 @@
       "title": "VPB — Vacuum/parameter matrix elements and authentic BBP positive resolvent"
     },
     {
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "registered_namespaces": [],
+      "sha256": "e54b8b56f262e927a26339ebac2159f55526688e3ac7de11db8c735bfa5b881d",
+      "title": "WPI: research-only wavefront inflation / prior ledger (PR child #344)"
+    },
+    {
       "path": "docs/CLAIM_SUPPLEMENT_WILD_ADELIC_SUCC.md",
       "registered_namespaces": [
         "WILD_ADELIC_SUCC"
@@ -20291,6 +20297,116 @@
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "WPI-01",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md::WPI-01",
+      "line": 7,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "raw_table_row": "| WPI-01 | Positive Oily packets define a normalized zero-time prior µ0(dx,j)=16 p_j(x)dx/π; Bayesian all-8n-success update gives exactly inherited Oily x^(8n)p_j/T_n. | **PROVED source-typed**; Bernoulli(x) observation channel is newly declared, not proven from actual BBP wavefront. |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "WPI-02",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md::WPI-02",
+      "line": 8,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "raw_table_row": "| WPI-02 | Conditionally ternary edge innovations with chosen variance q(x)=u(x)v(x) define projectively consistent branching-field priors, hence an infinite field measure. | **CLASSICAL / PROVED MODEL** by Kolmogorov extension; q=uv is a chosen transition law, not physically compulsory. |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "WPI-03",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md::WPI-03",
+      "line": 9,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "raw_table_row": "| WPI-03 | Tree field covariance (1+common prefix)E(q); distinct edge-square correlation Var(q(X))>0 via one shared source. | **PROVED MODEL**, conditional independence only; no nonlocal causation. |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "WPI-04",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md::WPI-04",
+      "line": 10,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "raw_table_row": "| WPI-04 | One observed active edge raises another's predictive activation by Var(q)/E(q). | **PROVED MODEL** via Bayes; passive update is epistemic, not physical source backreaction. |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "WPI-05",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md::WPI-05",
+      "line": 11,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "raw_table_row": "| WPI-05 | Complete causal past through depth m predicts level n by ancestor, with MSE (n−m)E_post q and shared residual covariances. | **PROVED MODEL**; ideal all-node observation, not finite-resource claim nor Heisenberg relation. |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "WPI-06",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md::WPI-06",
+      "line": 12,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "raw_table_row": "| WPI-06 | Oily success posterior obeys E q=1/4−1/(8n)+O(n^-2) and Var q=1/(128n²)+O(n^-3). | **PROVED PAPER** via inherited Gamma2 endpoint moments and source polynomial, conditional on explicit observation likelihood. |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "WPI-07",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md::WPI-07",
+      "line": 13,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "raw_table_row": "| WPI-07 | Long-branch limit is Gaussian *variance mixture*, excess kurtosis 3Var(q)/(Eq)²; under Oily success posterior ∼3/(8n²). | **PROVED MODEL**, NOT a cosmological CMB prediction. |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "WPI-08",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md::WPI-08",
+      "line": 14,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "raw_table_row": "| WPI-08 | If flat-FLRW exponential metric and a compatible stress-energy are additionally declared, scale grows while comoving Hubble radius shrinks. | **CLASSICAL PHYSICS-CONDITIONAL**; branching tree alone is not physical inflation. |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "WPI-09",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md::WPI-09",
+      "line": 15,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "raw_table_row": "| WPI-09 | At x=1 for iid centered innovations, Oily E2 retarded smooth signal is **not** optimal current predictor: MSE 8/27 versus optimal 1/4; extra 5/108. | **EXACT NEGATIVE CONTROL**; does not refute source-exact delayed history reconstruction WOC-05. |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "WPI-10",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md::WPI-10",
+      "line": 16,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "raw_table_row": "| WPI-10 | This prior/inflation system already proves selected real BBP Weyl o(N), physical quantum vacuum origin, Einstein inflation or RH. | **UNPROVED / OPEN**; any such assertion requires new source/metric/QFT law and adversarial changed-seed tests. |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "WPI-11",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md::WPI-11",
+      "line": 18,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
+      "raw_table_row": "| WPI-11 | The all-8n-success Oily Bayesian evidence equals T_n/T_0∼1/(4πn²), and KL(posterior||prior)=2logn+log(4π)−2+O(n^-1). | **PROVED PAPER** using the original BBP tail/Gamma2 endpoint expansion and a **declared** Bernoulli(x) likelihood; information cost of this selected rare history, not average mutual information or Big Bang evidence. |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
       "bare_id": "WA-01",
       "key": "WA.ADEL-01",
       "line": 7,
@@ -21351,11 +21467,11 @@
     }
   ],
   "coverage": {
-    "claim_rows_found": 1979,
-    "claim_supplements_scanned": 202,
+    "claim_rows_found": 1990,
+    "claim_supplements_scanned": 203,
     "registered_claim_rows": 1863,
     "registered_namespace_count": 176,
-    "source_documents_found": 1115
+    "source_documents_found": 1121
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -26396,6 +26512,12 @@
       "title": "Zero–One SUCC research validation scope — 2026-10-27"
     },
     {
+      "path": "research/2026-10-28/AUTHOR_ANALOGY_PROVENANCE_LEDGER.md",
+      "sha256": "655230d6dc4b69b2ab82919270a8920c58a9641393a7c1f12ac7b7378c509da3",
+      "size": 53526,
+      "title": "SUCC — Author's Analogy Provenance Ledger"
+    },
+    {
       "path": "research/2026-10-28/BBP_DIRICHLET_RESOLVENT.md",
       "sha256": "34f7a452e9d36fd1722c5a4047b9372a0688121a9b26af1abfbbaede312109ef",
       "size": 21844,
@@ -26508,6 +26630,18 @@
       "sha256": "b97dcb69ace3e1a5bebfdb07c9370c0ef7ae9a07352562a5b866d7737ac92bd9",
       "size": 4422,
       "title": "Operation Wavefront Oscillator — Main XIII / draft #344 continuation"
+    },
+    {
+      "path": "research/2026-10-28/WAVEFRONT_PRIOR_INFLATION_THEOREMS.md",
+      "sha256": "9963730c91e61fbba3cd24915204b7e58a2b9f9844ef40381b01a4444adfbb01",
+      "size": 13119,
+      "title": "WPI: Source-prior wavefront inflation — from Oily's pre-observation law to causal horizons"
+    },
+    {
+      "path": "research/2026-10-28/WAVEFRONT_PRIOR_INFLATION_VALIDATION.md",
+      "sha256": "5ea20795861ddc269c489f13e6e1e675731e75128cea1d93c1c52f71b7b9586a",
+      "size": 2030,
+      "title": "WPI validation and provenance — 2026-10-28"
     },
     {
       "path": "research/2026-10-28/circle_line_source_stability/NEXT.md",
@@ -26700,6 +26834,12 @@
       "sha256": "0c74c2f05f23ff0d0a6d9351051c04f484580c3d5b308223f80289eddb33bcca",
       "size": 3272,
       "title": "Validation and proof-authority boundary"
+    },
+    {
+      "path": "research/2026-10-28/main_xiv_integration/INDEPENDENT_AUDIT.md",
+      "sha256": "26a249329ea1792fedc3579f3ffc7ded1c1eb73b989ee0124eb45af0d63f8760",
+      "size": 9707,
+      "title": "Main XIV independent audit and integration contract"
     },
     {
       "path": "research/2026-10-28/observer_n_selection/CLAIMS.md",
@@ -27104,6 +27244,12 @@
       "title": "Claude — consolidate the actual SUCC frontier, merge, and clean working branches"
     },
     {
+      "path": "handoffs/CLAUDE_OPERATION_MAIN_XIV_INTEGRATION_2026-10-28.md",
+      "sha256": "4ce5f005b39ec6d356126a34dbd95b46dbdbb1f5a4b032cf5dbbed41c5d15b20",
+      "size": 9899,
+      "title": "CLAUDE CODE — OPERATION MAIN XIV: THE INTEGRATION FORGE"
+    },
+    {
       "path": "handoffs/CLAUDE_OPERATION_MAIN_XI_PI_CATEGORICAL_2026-10-25.md",
       "sha256": "d0448bb8dfb8862845f136eb655c4fd58f00fc69f9209946c95232df3b71888a",
       "size": 28813,
@@ -27144,6 +27290,12 @@
       "sha256": "54c83b16f0b5524deb7790bd3a942aa56e4e40aa560279a970a5500cb62db54a",
       "size": 8945,
       "title": "CLAUDE CODE — SUCC MAIN XII: COMPLETE MATH MEMORY + SAFE MAIN INTEGRATION"
+    },
+    {
+      "path": "handoffs/CLAUDE_WAVEFRONT_PRIOR_INFLATION_NEXT.md",
+      "sha256": "14329db83a9b85122c53fc05331db2258091cd4279d43f52b764f5acfe566856",
+      "size": 3088,
+      "title": "CLAUDE/CODEX — WPI: original-source Bayesian wavefront / inflation execution"
     },
     {
       "path": "handoffs/CLAUDE_WTF_GLOBAL_INTEGRATION_2026-10-26.md",
@@ -28169,6 +28321,17 @@
     "NO EXACT NAMESPACE for SCB-13 at docs/CLAIM_SUPPLEMENT_SIGNED_CANCELLATION_BARRIER.md:23",
     "NO EXACT NAMESPACE for SCB-14 at docs/CLAIM_SUPPLEMENT_SIGNED_CANCELLATION_BARRIER.md:24",
     "NO EXACT NAMESPACE for SCB-15 at docs/CLAIM_SUPPLEMENT_SIGNED_CANCELLATION_BARRIER.md:25",
+    "NO EXACT NAMESPACE for WPI-01 at docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md:7",
+    "NO EXACT NAMESPACE for WPI-02 at docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md:8",
+    "NO EXACT NAMESPACE for WPI-03 at docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md:9",
+    "NO EXACT NAMESPACE for WPI-04 at docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md:10",
+    "NO EXACT NAMESPACE for WPI-05 at docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md:11",
+    "NO EXACT NAMESPACE for WPI-06 at docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md:12",
+    "NO EXACT NAMESPACE for WPI-07 at docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md:13",
+    "NO EXACT NAMESPACE for WPI-08 at docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md:14",
+    "NO EXACT NAMESPACE for WPI-09 at docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md:15",
+    "NO EXACT NAMESPACE for WPI-10 at docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md:16",
+    "NO EXACT NAMESPACE for WPI-11 at docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md:18",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_ALL_RANK_ADELIC.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_APOLLO.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_APOLLO_PRIME_DOMAIN.md",
@@ -28198,6 +28361,7 @@
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_SUZUKI_FIRST_PRIME.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_TATE_BESSEL_SEVEN_SCHUR.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_TATE_SOURCE_CONDUCTOR.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_WAVEFRONT_INFLATION_PRIOR.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_YEAN_PROOF_OPERATORS.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_ZERO_CENTERED_ARCH.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_ZERO_CENTERED_FUCC.md",
