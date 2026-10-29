@@ -1,0 +1,240 @@
+{
+  "schema": "SUCC-polya-coherence-exact-oracle-v1",
+  "authority": "EXACT FINITE SYMBOLIC CHECK; full proofs in dossier",
+  "source_cases": [
+    {
+      "x": "1/3",
+      "grade": 0,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "1/3",
+      "grade": 1,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "1/3",
+      "grade": 2,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "1/3",
+      "grade": 3,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "1/3",
+      "grade": 4,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "1/3",
+      "grade": 5,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "2/3",
+      "grade": 0,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "2/3",
+      "grade": 1,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "2/3",
+      "grade": 2,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "2/3",
+      "grade": 3,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "2/3",
+      "grade": 4,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "2/3",
+      "grade": 5,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "1",
+      "grade": 0,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "1",
+      "grade": 1,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "1",
+      "grade": 2,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "1",
+      "grade": 3,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "1",
+      "grade": 4,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    },
+    {
+      "x": "1",
+      "grade": 5,
+      "actual_radical_isometry": true,
+      "marked_source_transfer": true
+    }
+  ],
+  "spectra": [
+    {
+      "dimension": 1,
+      "characteristic_polynomial_coefficients": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "dimension": 2,
+      "characteristic_polynomial_coefficients": [
+        "1",
+        "-1/3",
+        "0"
+      ]
+    },
+    {
+      "dimension": 3,
+      "characteristic_polynomial_coefficients": [
+        "1",
+        "-2/3",
+        "1/12",
+        "0"
+      ]
+    },
+    {
+      "dimension": 4,
+      "characteristic_polynomial_coefficients": [
+        "1",
+        "-1",
+        "27/100",
+        "-9/500",
+        "0"
+      ]
+    },
+    {
+      "dimension": 5,
+      "characteristic_polynomial_coefficients": [
+        "1",
+        "-4/3",
+        "127/225",
+        "-32/375",
+        "4/1125",
+        "0"
+      ]
+    },
+    {
+      "dimension": 6,
+      "characteristic_polynomial_coefficients": [
+        "1",
+        "-5/3",
+        "61/63",
+        "-731/3087",
+        "500/21609",
+        "-100/151263",
+        "0"
+      ]
+    },
+    {
+      "dimension": 7,
+      "characteristic_polynomial_coefficients": [
+        "1",
+        "-2",
+        "83/56",
+        "-1395/2744",
+        "50553/614656",
+        "-6075/1075648",
+        "2025/17210368",
+        "0"
+      ]
+    },
+    {
+      "dimension": 8,
+      "characteristic_polynomial_coefficients": [
+        "1",
+        "-7/3",
+        "455/216",
+        "-2731/2916",
+        "40337/186624",
+        "-42019/1679616",
+        "8575/6718464",
+        "-1225/60466176",
+        "0"
+      ]
+    },
+    {
+      "dimension": 9,
+      "characteristic_polynomial_coefficients": [
+        "1",
+        "-8/3",
+        "1918/675",
+        "-141976/91125",
+        "71707/151875",
+        "-1620208/20503125",
+        "706604/102515625",
+        "-50176/184528125",
+        "3136/922640625",
+        "0"
+      ]
+    },
+    {
+      "dimension": 10,
+      "characteristic_polynomial_coefficients": [
+        "1",
+        "-3",
+        "1014/275",
+        "-36446/15125",
+        "756819/831875",
+        "-101705877/503284375",
+        "713419164/27680640625",
+        "-535435596/304487046875",
+        "185177664/3349357515625",
+        "-20575296/36842932671875",
+        "0"
+      ]
+    }
+  ],
+  "phase_flipped_m2": {
+    "leakage": "1/3",
+    "reduced_purity": "5/9"
+  },
+  "sha256": {
+    "observational_succ/oily_prime_growth_compiler.py": "d027ef10175c4f6fa0064fcd5405722a7a25f389874344a6679489374b1c8dcd",
+    "observational_succ/polya_coherent_observer.py": "3286346406e626fdb82265180c86dd117bf4b045ea48ab2c5f56d87aa37e2078",
+    "formal/PolyaCoherence.lean": "81ee9edae70cad12e33663c5055818ff72a4f0dfc148e92e6bf42b38f2da553c"
+  }
+}

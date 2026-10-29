@@ -1,0 +1,23 @@
+{
+  "schema": "source-indexed-local-research-claims-v1",
+  "date": "2026-10-28",
+  "source": "femboy2112/SUCC",
+  "parent": "research/virtual-prior-causal-inflation-2026-10-28@34c8301575da9f98e6d094de771cf41d0f2683ad",
+  "authority": "classical derivations with executable exact finite tests and separate analytic oracle; not Lean or external priority review",
+  "claims": [
+    {"id":"OLZF-01","status":"PROVED PAPER","statement":"Original Oily two-rate matrix has normalized SL2 hyperbolic form tanh eta=1-x for x>0, with nontrivial parabolic Jordan limit at x=1.","domain":"x in (0,1]; original u,v and offdiagonal coupling","control":"replace source coupling 1 by 0; eigenvalues unchanged but source packets lost"},
+    {"id":"OLZF-02","status":"PROVED PAPER","statement":"Frame covariance requires simultaneous transformation of matrix, initial point and readout; preserving the literal source, labelled diagonal rates and upper triangular form fixes the gauge.","domain":"invertible 2x2 frames over Q or R","control":"conjugate M alone but leave source/readout unchanged"},
+    {"id":"OLZF-03","status":"CLASSICAL","statement":"Symmetric-power prime characters yield two-mode zeta product zeta(s-tau) zeta(s+tau) in its common half-plane.","domain":"genuine primes; complex Re(s±tau)>1","control":"composite as primitive and source-matrix coupling 0"},
+    {"id":"OLZF-04","status":"PROVED PAPER","statement":"J|n> = d(n)^(-1/2) sum_ab=n |a,b> is an isometry, but one-sided prime raising compresses to occupation-weighted shift sqrt((j+1)/(j+2)).","domain":"n>=1, genuine prime p, j=v_p(n)","control":"n=1 to p=2 changes fiber rank 1 to 2"},
+    {"id":"OLZF-05","status":"CLASSICAL/PAPER-PROVED","statement":"Coherent one-step squared fidelity F_j=(j+1)/(j+2) telescopes to 1/(J+1); harmonic-vs-log cost H_J-log(J+1) converges to Euler gamma.","domain":"two-channel uniform p-power fibers; chosen harmonic accounting","control":"no universal entropy gap when exact logarithmic costs are used without the harmonic comparison"},
+    {"id":"OLZF-06","status":"PROVED PAPER","statement":"Isometric source-lift J preserves n^-s/zeta(s) while independent two-mode field has d(n)n^-s/zeta(s)^2 marginal.","domain":"s real >1","control":"n=4 finite exact marginal mismatch"},
+    {"id":"OLZF-07","status":"PROVED PAPER","statement":"Origin-fixed path phase chi_n(t) factorizes over genuine prime powers; variance at p^j is j(j+2)(log p)^2/3.","domain":"all n>=1; real t","control":"zero at n=1 refutes universal nonzero Planck scale"},
+    {"id":"OLZF-08","status":"CLASSICAL/PAPER-PROVED","statement":"Source-anchored and free-doubled critical log-imbalance susceptibilities scale respectively as (s-1)^-2 and 2(s-1)^-2.","domain":"real s>1; limit s to 1+","control":"finite prime correction converges; independent numerical primezeta check"},
+    {"id":"OLZF-09","status":"CLASSICAL/PAPER-PROVED","statement":"At zeta pole the two independent rescaled log channels converge to Exp pair: sum Gamma2, difference Laplace; normalized boost family has no first-order gamma term.","domain":"s=1+eps, eps>0 to0; |delta|<1","control":"second-order Stieltjes coefficient independently verified"},
+    {"id":"OLZF-10","status":"REFUTED","statement":"Real hyperbolic and imaginary elliptic parameter families are the same passive Lorentz frame of unchanged source.","domain":"nonzero real eta and arbitrary real theta","control":"normalized matrix traces 2cosh eta>2 versus |2cos theta|<=2"},
+    {"id":"OLZF-11","status":"UNVERIFIED","statement":"Source-locked virtual path geometry derives physical h-bar, original BBP selected Weyl cancellation, pi normality or RH.","domain":"original zero-seeded four-pole BBP outside present model","control":"source-coupling counterfeit and same-forcing changed BBP seed; no factor map"}
+  ],
+  "RH_PROVED": false,
+  "PI_NORMALITY_PROVED": false,
+  "next_probe": "Construct a lawful source-history/carry-sensitive intertwiner from authentic U0=0 BBP recurrence to the two-mode n-fiber observers and demonstrate a signed Weyl saving that defeats same-forcing seed mutations."
+}

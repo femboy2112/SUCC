@@ -46,3 +46,15 @@ adds a complete elementary unrestricted quadratic growth argument, an exact
 census through n30, and actual-source upper-half cubic Lean authority. These
 are distinct scopes; see [LRF claims](../CLAIM_SUPPLEMENT_LONELY_REFEREE.md).
 Academic priority and external peer acceptance remain unverified.
+
+## Carry, Pólya and original-source resolvent child (2026-10-28)
+
+[Results and proof boundaries](../../research/2026-10-28/CARRY_POLYA_SOURCE_LOCKED_SUMMARY.md)
+and [CPS research-local claims](../CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md):
+sharp signed divisor-boundary identity and absence of a uniform origin-pinned
+spectral gap; minimal fourth-order original-BBP zeta response; minimal coherent
+Pólya environment and universal leakage spectrum. Typed nodes `MM-CPS-1` through
+`MM-CPS-3` lead to the three dossiers. Nine limited finite-algebra Lean declarations
+are separated from paper analytic/spectral proofs. Historical FQIDs are unchanged;
+the regenerated catalog intentionally retains warnings for unregistered research
+supplements. **Selected signed BBP cancellation, π normality and RH remain OPEN.**

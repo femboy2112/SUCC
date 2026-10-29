@@ -2,6 +2,18 @@
 
 Companion to `INDEX.md` and `RELATION_GRAPH.json`. Each domain resolves a human question to concept nodes (`MM-*`), claim families (via `CLAIM_CATALOG.json`), and the open gate. **Nothing here promotes a status**; π/RH are OPEN.
 
+## Carry, Pólya and source-locked zeta response (2026-10-28 child research)
+
+Search aliases: **divisor boundary**, **commutator scalar**, **hyperbolic shell**,
+**origin-pinned spectral gap**, **minimal BBP zeta equation**, **Gamma completion
+obstruction**, **Pólya coherent lift**, **Hahn leakage**, **terminal-law uniqueness**.
+Start with the [result summary](../../research/2026-10-28/CARRY_POLYA_SOURCE_LOCKED_SUMMARY.md)
+and [scoped CPS supplement](../CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md).
+Graph nodes `MM-CPS-1`, `MM-CPS-2`, and `MM-CPS-3` distinguish selected-phase observer
+obstruction, forcing-only analytic response, and constructed prior coherence.
+None proves the open signed zero-seeded BBP Weyl estimate. These are research-local
+results on a child of #348, with limited Lean cores and exact source/proof receipts.
+
 ## Natural-language aliases (vague query → where it lives)
 
 | If you half-remember… | It is… | Entry points |

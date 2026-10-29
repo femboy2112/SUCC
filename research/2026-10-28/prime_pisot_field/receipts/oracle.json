@@ -1,0 +1,118 @@
+{
+  "authority": "symbolic finite checks; numerical observations with separately proved analytic tails",
+  "imports_primary_module": false,
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "exact_checks_passed": 45,
+  "exact_check_names": [
+    "companion determinant",
+    "positive Markov similarity",
+    "marked projector is idempotent",
+    "marked projector is invariant",
+    "marked projector trace",
+    "trace identity k=1",
+    "source-marked trace k=1",
+    "trace identity k=2",
+    "source-marked trace k=2",
+    "trace identity k=3",
+    "source-marked trace k=3",
+    "trace identity k=4",
+    "source-marked trace k=4",
+    "trace identity k=5",
+    "source-marked trace k=5",
+    "trace identity k=6",
+    "source-marked trace k=6",
+    "beta11=phi^5",
+    "beta29=phi^7",
+    "distinct prime-power histories collide",
+    "PCR02 characteristic polynomial dim=1",
+    "PCR02 characteristic polynomial dim=2",
+    "PCR02 characteristic polynomial dim=3",
+    "PCR02 characteristic polynomial dim=4",
+    "PCR02 characteristic polynomial dim=5",
+    "PCR02 characteristic polynomial dim=6",
+    "PCR02 characteristic polynomial dim=7",
+    "PCR02 characteristic polynomial dim=8",
+    "PCR02 characteristic polynomial dim=9",
+    "PCR02 characteristic polynomial dim=10",
+    "PCR02 characteristic polynomial dim=11",
+    "PCR02 characteristic polynomial dim=12",
+    "free connected xy coefficient",
+    "pair penalty connected xy",
+    "functional-equation counterfeit",
+    "counterfeit root",
+    "stable off-line potential minimum",
+    "log-force has charge, not equilibrium",
+    "indefinite reciprocal invariant",
+    "no positive invariant metric for reciprocal mutant",
+    "backward heat equation",
+    "zero motion is not equilibrium",
+    "positive support has an off-line zero",
+    "positive support off-line derivative",
+    "positive support off-line minimum Hessian scale"
+  ],
+  "collision_source_integers": [
+    19487171,
+    20511149
+  ],
+  "counterfeit_root_in_s_plane": "3/4 + 2i",
+  "counterfeit_derivative": "-8 + I",
+  "counterfeit_potential_hessian": [
+    [
+      "130",
+      "0"
+    ],
+    [
+      "0",
+      "130"
+    ]
+  ],
+  "numerical_holdouts": [
+    {
+      "s": "(1.5 + 0.0j)",
+      "C_10000": "(0.8474522907729970332830418805211662235016226217094334740777741890816787 + 0.0j)",
+      "log_cutoff_discrepancy_100_to_10000": "0.000001262959779237492960623863138300942996973991617033161678013247312480966",
+      "proved_tail_at_100_evaluated_numerically": "0.000009281508964068162940802894955788053848976580357789053839731450979412684",
+      "non_Pisot_C_10000": "(0.8295500162792002845452378062588379183708484182265065876448772265396784 + 0.0j)",
+      "no_zero_positions_used": true
+    },
+    {
+      "s": "(0.5 + 2.0j)",
+      "C_10000": "(0.8360513192760425587126276725143129837098728167268513910548419972996422 + 0.2226766016302346025476927651123748519100490021016736569220042707397941j)",
+      "log_cutoff_discrepancy_100_to_10000": "0.0001598286667466873682924582098558226990969011227061065390816746235562258",
+      "proved_tail_at_100_evaluated_numerically": "0.004692387715360207190172324196497912375605265595211070941082424630352573",
+      "non_Pisot_C_10000": "(0.809947020119242304884223908737311238377659598459586782779755743244185 + 0.2481984363652664453658628103887033436674754419838704180770060458403342j)",
+      "no_zero_positions_used": true
+    },
+    {
+      "s": "(0.5 + 17.0j)",
+      "C_10000": "(-0.0003424071788329857387089607746137581318187454115693832479519884576335873 - 0.1610645349750321025935791960133623906574191156208279626121037191399058j)",
+      "log_cutoff_discrepancy_100_to_10000": "0.0004484734827838602665472309422155071124367230875669706667007525306282572",
+      "proved_tail_at_100_evaluated_numerically": "0.03871115309666752283932334216248936892301346668401611079297505265098651",
+      "non_Pisot_C_10000": "(0.03839759231150764010154594596203989427062237950191853993842488074755991 - 0.1369701758502567221015032229520404025786794769873766305787651310966018j)",
+      "no_zero_positions_used": true
+    },
+    {
+      "s": "(0.75 - 11.0j)",
+      "C_10000": "(0.7086953153598934978381803432798790203599652657278392129359247560214075 - 0.01232623876297136828685055392598237015274119392307480559469260451950926j)",
+      "log_cutoff_discrepancy_100_to_10000": "0.00009061305407803355161876113899963186836729558202711519992790037637416236",
+      "proved_tail_at_100_evaluated_numerically": "0.004914528178541871807003757922983789531662585449530493549140564026501675",
+      "non_Pisot_C_10000": "(0.706810392199447277925289900787521665142640124823042723842787346967472 - 0.07713619672383462309577665818710019097464233680492692828609400059713343j)",
+      "no_zero_positions_used": true
+    }
+  ],
+  "prime_orbit_series_error": "2.136908561508785520258921360743353480680717290669863631395946880978751e-51",
+  "dirichlet_trace_s2": {
+    "n_cutoff": 3000,
+    "prime_cutoff": 10000,
+    "partial_sum": "1.451153955865579070041245673883984313564090446936569353307086855399119",
+    "zeta_times_C": "1.451380757353696932849322931914123183547988760668038414882694410232802",
+    "discrepancy": "0.0002268014881178628080772580301388699838983137314690615756075548336826281",
+    "proved_bound_evaluated_numerically": "0.0003333333347954969483101844606932475412455904196548545871084945198660365"
+  },
+  "roundoff_certified": false,
+  "rh_proved": false
+}

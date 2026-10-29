@@ -201,6 +201,12 @@
       "title": "Scoped claims: periodic observers, mixed lags and signed carry defects"
     },
     {
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "registered_namespaces": [],
+      "sha256": "b8885917e73949437078665aab813b59df066eafd6221680f3431ce61123c0b3",
+      "title": "Carry, Pólya and original BBP resolvent: scoped claim supplement"
+    },
+    {
       "path": "docs/CLAIM_SUPPLEMENT_CARRY_SAFE_OBSERVER.md",
       "registered_namespaces": [
         "CARRY_SAFE_OBSERVER"
@@ -3322,6 +3328,126 @@
       "path": "docs/CLAIM_SUPPLEMENT_CARRIER_TATE_WEIL.md",
       "raw_table_row": "| CTW-14 | Canonical all-support convolution-autocorrelation positivity | UNVERIFIED / RH or chi4-GRH criterion | Requires a new source-specific sign theorem, not GNS circularity |",
       "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-01",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-01",
+      "line": 14,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-01 | For every N>=1 and bounded complex f, the normalized divisor-jump commutator equals (B_N(f)-S_N(f))/D_N, with sharp supremum 2 floor(N/2)/D_N | PAPER-PROVED; finite ray identity LEAN KERNEL | [A](../research/2026-10-28/BBP_SIGNED_OBSERVER_AUDIT.md); applies to actual zero-seeded BBP but supplies no signed saving; test any boundary-free transfer against constant and alternating phases |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-02",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-02",
+      "line": 15,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-02 | The divisor-jump contraction has norm 1; I-Re(T) has trivial kernel and 0 in essential spectrum, including every fixed hard origin pin | PAPER-PROVED | [A](../research/2026-10-28/BBP_SIGNED_OBSERVER_AUDIT.md); explicit hyperbolic shell witnesses; does not classify source-specific nonuniform estimates |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-03",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-03",
+      "line": 16,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-03 | Vertex-ratio magnetic twists are unitarily equivalent for every phase sequence, so spectral invariants and cycle holonomy cannot authenticate the original source | CLASSICAL gauge argument, PAPER-PROVED application | [A](../research/2026-10-28/BBP_SIGNED_OBSERVER_AUDIT.md); the full pair (M_f,T) and its commutator are not declared blind; retain anchored signed matrix elements |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-04",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-04",
+      "line": 17,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-04 | F_BBP has a normally convergent shifted-zeta expansion with positive residues at every negative integer and explicit uniform tails | PAPER-PROVED | [B](../research/2026-10-28/BBP_DIRICHLET_RESOLVENT.md); no seed information; wrong-pole controls probe source fidelity |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-05",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-05",
+      "line": 18,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-05 | The original BBP response satisfies a minimal order-four polynomial zeta shift equation, which identifies its coefficients among ordinary absolutely convergent Dirichlet series | PAPER-PROVED | [B](../research/2026-10-28/BBP_DIRICHLET_RESOLVENT.md); exact rational coprimality and coefficient uniqueness; arbitrary meromorphic solutions excluded |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-06",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-06",
+      "line": 19,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-06 | The unique decaying heat response realizes F by Mellin transform, has a source-forced t log t term, and all negative-integer finite parts have an exact rational digamma reduction | PAPER-PROVED | [B](../research/2026-10-28/BBP_DIRICHLET_RESOLVENT.md); independently recovers the handoff constant; no Poisson self-duality follows |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-07",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-07",
+      "line": 20,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-07 | No finite positive-slope Gamma-product/rational completion of F has scalar reflection; F/Gamma(s+1) is entire with infinitely many negative real zeros and no real-center scalar reflection | PAPER-PROVED obstruction | [B](../research/2026-10-28/BBP_DIRICHLET_RESOLVENT.md); general Gamma ratios, infinite/additive/vector completions outside scope |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-08",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-08",
+      "line": 21,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-08 | Positive Pólya growth admits a source-marked isometric lift with sharp environment dimension 2 for m>=2 (1 for m=1); the marked uniform input returns a pure auxiliary state | PAPER-PROVED; real Gram core LEAN KERNEL | [C](../research/2026-10-28/POLYA_COHERENCE_RIGIDITY.md); finite mathematical channel, not a physical device; scalar edge phases cannot suffice |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-09",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-09",
+      "line": 22,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-09 | Every such Pólya lift has the same accepted component and complementary leakage spectrum r(r+1)/(m(m+1)), yielding sharp deviation bounds | PAPER-PROVED; first mode and Gram algebra LEAN KERNEL | [C](../research/2026-10-28/POLYA_COHERENCE_RIGIDITY.md); full complex and Hahn spectral proof remains paper authority |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-10",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-10",
+      "line": 23,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-10 | Source-covariant nearest-neighbor lifts extend to full-x Oily; c-channel uniform Pólya has minimal auxiliary dimension min(c,j+1); terminal-law uniqueness needs no separate marginal assumption | PAPER-PROVED | [C](../research/2026-10-28/POLYA_COHERENCE_RIGIDITY.md); positive source domain and declared locality; split-dependent stopping supplies a countermodel |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-11",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-11",
+      "line": 24,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-11 | Vanishing natural commutator scalar or forcing-only analytic invariants suffice for selected Weyl cancellation; a uniform origin-pinned spectral gap exists | REFUTED in the respective explicitly stated classes | [A](../research/2026-10-28/BBP_SIGNED_OBSERVER_AUDIT.md), [B](../research/2026-10-28/BBP_DIRICHLET_RESOLVENT.md); exact boundary, Weyl sequences and coherent same-forcing counterseed are receipts; the nonexistent gap is refuted, not an implication with that gap as antecedent; no counterexample to the actual zero seed |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "CPS-12",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md::CPS-12",
+      "line": 25,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
+      "raw_table_row": "| CPS-12 | For every fixed nonzero integer h, the original zero-seeded BBP Weyl sum is o(N) | OPEN | Preserve the uncontrolled signed terminal-boundary combination; finite tests, independent prime priors, and positive energy do not close this gate |",
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
@@ -21225,11 +21351,11 @@
     }
   ],
   "coverage": {
-    "claim_rows_found": 1967,
-    "claim_supplements_scanned": 201,
+    "claim_rows_found": 1979,
+    "claim_supplements_scanned": 202,
     "registered_claim_rows": 1863,
     "registered_namespace_count": 176,
-    "source_documents_found": 1065
+    "source_documents_found": 1115
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -26270,6 +26396,162 @@
       "title": "Zero–One SUCC research validation scope — 2026-10-27"
     },
     {
+      "path": "research/2026-10-28/BBP_DIRICHLET_RESOLVENT.md",
+      "sha256": "34f7a452e9d36fd1722c5a4047b9372a0688121a9b26af1abfbbaede312109ef",
+      "size": 21844,
+      "title": "Original BBP resolvent: a minimal zeta equation and two completion obstructions"
+    },
+    {
+      "path": "research/2026-10-28/BBP_SIGNED_OBSERVER_AUDIT.md",
+      "sha256": "61588d6e049a3db5a8ba3943af9936d107cc4ac0922f6bac182662495035ef83",
+      "size": 16895,
+      "title": "A sharp signed-boundary obstruction for the origin-locked BBP observer"
+    },
+    {
+      "path": "research/2026-10-28/CARRY_POLYA_SOURCE_LOCKED_SUMMARY.md",
+      "sha256": "66e1a5c302dc3b4ee2bd5b6593f10d4715c7eb943052423720e6536cf0aa52a7",
+      "size": 8901,
+      "title": "Carry × Pólya × original BBP: results and proof boundaries"
+    },
+    {
+      "path": "research/2026-10-28/CARRY_POLYA_VALIDATION.md",
+      "sha256": "24c83eccc04d73e21f417fe6f980a10e419bb55f6a384f639855f66dab77c54b",
+      "size": 7984,
+      "title": "Carry × Pólya × source-locked zeta: executed validation"
+    },
+    {
+      "path": "research/2026-10-28/CAUSAL_WAVEFRONT_GAMMA_INFORMATION_DEFECT.md",
+      "sha256": "ad0f68e9647cb8613fb67cfe077b0a2a8dcc74f77d42636739df45a3bd205fd2",
+      "size": 17098,
+      "title": "Operation SUCC — One-step causal frontier, Pisot null frames and the Euler/Gamma information defect"
+    },
+    {
+      "path": "research/2026-10-28/OILY_CAUSAL_GROWTH_README.md",
+      "sha256": "bf4a20720f5ffe8b0fd732bbd95bcdbb12532eb76a7f45c8ae769856174edcb7",
+      "size": 3513,
+      "title": "Oily → Pólya → origin-locked prime observers (28 October 2026)"
+    },
+    {
+      "path": "research/2026-10-28/OILY_CAUSAL_GROWTH_VALIDATION.md",
+      "sha256": "ab8a988502d13f7c04043b8b1ef466c6445591f462ce789f4a17c9fad0416739",
+      "size": 2554,
+      "title": "Operation Oily–Pólya–Carry: validation and provenance"
+    },
+    {
+      "path": "research/2026-10-28/OILY_ZETA_CAUSAL_GROWTH_AND_SOURCE_DEFECT.md",
+      "sha256": "3b0b5d3c1b25ddc0f3b000e6565c53d2e53d8550733d4911a727de281594424c",
+      "size": 21192,
+      "title": "Operation OILY → PÓLYA → SUCC: source-marked prime wavefronts and the additive observer obstruction"
+    },
+    {
+      "path": "research/2026-10-28/ORIGIN_LOCKED_OILY_ZETA_FRAME_DOSSIER.md",
+      "sha256": "e9ebfe796461e77fab46a13e2e943ff850eb59a1df77da01151bf2cfcafc6648",
+      "size": 19365,
+      "title": "Operation ORIGIN-LOCKED OILY → ALL PRIME PHASES → ZETA"
+    },
+    {
+      "path": "research/2026-10-28/ORIGIN_LOCKED_OILY_ZETA_README.md",
+      "sha256": "5a4a12facacc48fc82180f28987f24fba2edec82197e59555d67094397f44b63",
+      "size": 2342,
+      "title": "Origin-locked Oily → zeta: exact source-fiber mathematics"
+    },
+    {
+      "path": "research/2026-10-28/ORIGIN_LOCKED_OILY_ZETA_VALIDATION.md",
+      "sha256": "c6e97dc707c489b44e09db67a92af5527d25464c765f8d82217f51862c6bf09b",
+      "size": 4105,
+      "title": "Local validation — origin-locked Oily, prime fibers, zeta fields"
+    },
+    {
+      "path": "research/2026-10-28/POLYA_COHERENCE_RIGIDITY.md",
+      "sha256": "7afa6a9fde87f33663b83ac8fdcaab781606d107bbf8c7d8d833e4d6fc0e7835",
+      "size": 21922,
+      "title": "Source-marked Pólya coherence: minimal environment and unavoidable leakage spectrum"
+    },
+    {
+      "path": "research/2026-10-28/PRIOR_FIELD_CAUSAL_INFLATION_AND_BBP_FIREWALL.md",
+      "sha256": "200ddf9a92a24877f82b42f565bfcd5bc33e72c7480020feee69bc61eb34c213",
+      "size": 28885,
+      "title": "Operation PRIOR FIELD — a causal inflation model with source priors, Oily Bayesian selection, and original-BBP counterexample"
+    },
+    {
+      "path": "research/2026-10-28/PRIOR_FIELD_INFLATION_README.md",
+      "sha256": "c7d1c50b0d14c7622888c5fd7783470c1ecc7e8dbb73560217b199989c5447f7",
+      "size": 3118,
+      "title": "Prior Field × Causal Inflation — SUCC research continuation"
+    },
+    {
+      "path": "research/2026-10-28/PRIOR_FIELD_VALIDATION.md",
+      "sha256": "1b7e4d2a33557869ca4a399a50b49acb4d392ed5d486f73c6467db0cd959ca3d",
+      "size": 2455,
+      "title": "Prior Field × Causal Inflation — local validation record"
+    },
+    {
+      "path": "research/2026-10-28/README_PISOT_HOPF_CLOCKS.md",
+      "sha256": "8e87f9e979cb84a2cee0f822b86985bcc77931064f894fb85ad2651b571612d9",
+      "size": 2989,
+      "title": "Pisot · Hopf · arithmetic clock synchronization (research only)"
+    },
+    {
+      "path": "research/2026-10-28/WAVEFRONT_ORACLE_TWO_STAGE_DIFFERENCE.md",
+      "sha256": "d6f0b90d91c5062613432b3590b7a8b7f3841016ac28128cd159e8063af0c3b0",
+      "size": 19098,
+      "title": "Wavefront Oracle → E1 → E2: a source-conditioned second finite-difference theorem"
+    },
+    {
+      "path": "research/2026-10-28/WAVEFRONT_OSCILLATOR_COMPLETION_AND_CAUSAL_INVERSE.md",
+      "sha256": "59978f9dcdf86ced295f87f37fefda1f86ec16cb69f7a48601cd1d6a06cc251d",
+      "size": 27101,
+      "title": "Operation Wavefront Oscillator: source-complete positive kernel, recurrent emitter, and the cost of inverse observation"
+    },
+    {
+      "path": "research/2026-10-28/WAVEFRONT_OSCILLATOR_README.md",
+      "sha256": "b97dcb69ace3e1a5bebfdb07c9370c0ef7ae9a07352562a5b866d7737ac92bd9",
+      "size": 4422,
+      "title": "Operation Wavefront Oscillator — Main XIII / draft #344 continuation"
+    },
+    {
+      "path": "research/2026-10-28/circle_line_source_stability/NEXT.md",
+      "sha256": "d5a0907924c5f79e26299e7c2b3c5dd00f5d90322a655a02109b31dbaccc4f92",
+      "size": 2244,
+      "title": "Research handoff: source-relative stability into a completed Weil pairing"
+    },
+    {
+      "path": "research/2026-10-28/circle_line_source_stability/RESEARCH.md",
+      "sha256": "a7bfdf1c53fdefbd6223eccf65c548facc0d189477ce4af8ddec513f2d2167ba",
+      "size": 8408,
+      "title": "Circle → line: source-relative stability of SUCC virtual paths"
+    },
+    {
+      "path": "research/2026-10-28/circle_line_source_stability/VALIDATION.md",
+      "sha256": "a027db516dd2a19947d01f369e257e4e595d1a1a56f35b684f5eb86668fc1ac6",
+      "size": 2192,
+      "title": "Validation and evidence boundary"
+    },
+    {
+      "path": "research/2026-10-28/hopf_local_archive/CLAUDE_HANDOFF_AFTER_MAIN_XII.md",
+      "sha256": "9fa4d028ac375110f488d0d444e64f53ba25fc1b5114418b419baf14944c4a01",
+      "size": 2163,
+      "title": "Post-Main-XII optional review handoff — NOT an immediate execution instruction"
+    },
+    {
+      "path": "research/2026-10-28/hopf_local_archive/HOPF_SOURCE_DOSSIER.md",
+      "sha256": "641c8f2e6fb2d0dc2167cadbdffcc6c657e43c65b404bf8e74b806ddde69b546",
+      "size": 19476,
+      "title": "OPERATION HAND-TO-HAND: SUCC × Quaternionic Hopf × Source-Faithful Chiral Transport"
+    },
+    {
+      "path": "research/2026-10-28/hopf_local_archive/README.md",
+      "sha256": "83033270f6c6a7e045056577a40ff5cde9329c84245ea247a0176b0e02abb0ff",
+      "size": 3017,
+      "title": "SUCC Quaternionic Hopf — local mathematical research package"
+    },
+    {
+      "path": "research/2026-10-28/hopf_local_archive/VALIDATION.md",
+      "sha256": "19654a313ea289f60cb9b59083bab3ffa73f6f652674edde4b90abe8fb5c7396",
+      "size": 2410,
+      "title": "Exact local validation and limitations"
+    },
+    {
       "path": "research/2026-10-28/lonely_runner/AFFINIZATION.md",
       "sha256": "8efe80f4f772a305a982d6053f626ffaaa3422ae17900ffaf14dae74c97b656d",
       "size": 10818,
@@ -26418,6 +26700,126 @@
       "sha256": "0c74c2f05f23ff0d0a6d9351051c04f484580c3d5b308223f80289eddb33bcca",
       "size": 3272,
       "title": "Validation and proof-authority boundary"
+    },
+    {
+      "path": "research/2026-10-28/observer_n_selection/CLAIMS.md",
+      "sha256": "3f29ba16764c7333e42e8c24cbcabea865b59439120a5d028a94bcca690c7ee5",
+      "size": 2334,
+      "title": "Observer-N claim ledger (research-local IDs)"
+    },
+    {
+      "path": "research/2026-10-28/observer_n_selection/NEXT.md",
+      "sha256": "3d112a5aad339ebfcdbe4a3b439844a0b97d4fa2e3dde6278b2cb623cfa934de",
+      "size": 2003,
+      "title": "Next theorem / integration handoff"
+    },
+    {
+      "path": "research/2026-10-28/observer_n_selection/README.md",
+      "sha256": "f701ba205dd3e32e8d654acd24797bbcda84e42b75466cacdc9b78a4683514d7",
+      "size": 1182,
+      "title": "Observer-N: arithmetic source versus sampling geometry"
+    },
+    {
+      "path": "research/2026-10-28/observer_n_selection/RESEARCH.md",
+      "sha256": "482ba5cfaaf325bcf1685df54cf1465b13c8781deb344acf2d804902cebd8bdf",
+      "size": 8556,
+      "title": "Operation Observer-N: arithmetic source, observer basis and postselection"
+    },
+    {
+      "path": "research/2026-10-28/observer_n_selection/VALIDATION.md",
+      "sha256": "9079082182b23324d43ca83dbdeb8f3109a87116b4cfba82aa377da3047db71a",
+      "size": 2086,
+      "title": "Validation and evidence boundary — 2026-10-28"
+    },
+    {
+      "path": "research/2026-10-28/pisot_relativistic_geometry/ARITHMETIC_RELATIVITY_DOSSIER.md",
+      "sha256": "719d0bd5cedc7ca1912eb020be825f7fa99dd37c791fd7a8fd6ba66bfef52817",
+      "size": 19137,
+      "title": "Operation ARITHMETIC RELATIVITY — Pisot clocks, Hopf gauge curvature and the SUCC/FUCC frame interface"
+    },
+    {
+      "path": "research/2026-10-28/pisot_relativistic_geometry/README.md",
+      "sha256": "9d210c2c1cb252fb7c7d7a8ab920e03ed8153dfb87a3fdd4081fe33d88b43542",
+      "size": 1709,
+      "title": "Arithmetic relativity / Hopf research — October 28, 2026"
+    },
+    {
+      "path": "research/2026-10-28/pisot_relativistic_geometry/RECONSTRUCTED_FIXED_POINT_PISOT_BRIDGE.md",
+      "sha256": "fd6148c3c8455726e398bfe589239bfbaf389b2e2bbb0888ee67bf77083c4457",
+      "size": 4588,
+      "title": "Reconstructed earlier local fixed-point/Pisot research bridge"
+    },
+    {
+      "path": "research/2026-10-28/pisot_relativistic_geometry/VALIDATION.md",
+      "sha256": "9807632dcebb0e6b7ab7473f92d468922a86d1c67fca42eaf786eebbe9f5096b",
+      "size": 3402,
+      "title": "Validation receipt — source-faithful Pisot/Hopf arithmetic clocks"
+    },
+    {
+      "path": "research/2026-10-28/polya_demon_budget/CLAIMS.md",
+      "sha256": "3a2fc56477c7e082a29e69cba12edddae4ee876c251183a479ea04c0e3b7cf64",
+      "size": 1589,
+      "title": "Scoped claim ledger: source-relative selection budget"
+    },
+    {
+      "path": "research/2026-10-28/polya_demon_budget/NEXT.md",
+      "sha256": "70b8177fb0babe9abb22df4db7f1806d3fb0b433e7408edc3762e9bf55e97c24",
+      "size": 1690,
+      "title": "Handoff: turn source-relative information singularity into a real spectral discriminator"
+    },
+    {
+      "path": "research/2026-10-28/polya_demon_budget/README.md",
+      "sha256": "429b3fc9a2cd39bc2e69da81db0f09abee84de661ceec54f38eee9ffce9192e8",
+      "size": 1222,
+      "title": "Source-relative demon budget — research-only successor to SUCC PR #354"
+    },
+    {
+      "path": "research/2026-10-28/polya_demon_budget/RESEARCH.md",
+      "sha256": "4e9dbb73f89c7990b5fe307c9a1bd18114eb833db58492fbea1a2b52e81659bf",
+      "size": 9386,
+      "title": "Operation Maxwell Demon: source-relative information cost and local zero migration"
+    },
+    {
+      "path": "research/2026-10-28/polya_demon_budget/VALIDATION.md",
+      "sha256": "8d623d5b699ba2e8361829b5bee3ccdd354eb6da1cfe3fea29c03251a4e06757",
+      "size": 1482,
+      "title": "Validation and verification limits"
+    },
+    {
+      "path": "research/2026-10-28/prime_pisot_field/CLAIMS.md",
+      "sha256": "dd20940532eccd7414491a40735c65460104214a0686b68a9aac5f5219a8e628",
+      "size": 4821,
+      "title": "Scoped claim ledger"
+    },
+    {
+      "path": "research/2026-10-28/prime_pisot_field/NEXT.md",
+      "sha256": "322174fc0d76ca807027f43ccc7961867065751914692b3b2183e27019299b3c",
+      "size": 3806,
+      "title": "Next research handoff: force a global pairing, not another zero-preserving decoration"
+    },
+    {
+      "path": "research/2026-10-28/prime_pisot_field/README.md",
+      "sha256": "46c938a68cfa98d23ac9bc4858c88bc1d5a79cb9e9cb8712a2b82a45c0aa6879",
+      "size": 3347,
+      "title": "Prime-field research: actual support, preserved zeros, missing rigidity"
+    },
+    {
+      "path": "research/2026-10-28/prime_pisot_field/RESEARCH.md",
+      "sha256": "56db3d997973ba4ef6eceb4372317601b1593eeb104debb933b51863109e1e54",
+      "size": 20621,
+      "title": "Prime charges, Pisot virtual support, and zeta-field equilibria"
+    },
+    {
+      "path": "research/2026-10-28/prime_pisot_field/SOURCES.md",
+      "sha256": "d31ec4d36cf50c1652f0f0c554d068bc77454501c64b4f8fe49a579eff484f94",
+      "size": 5263,
+      "title": "Source map and literature audit"
+    },
+    {
+      "path": "research/2026-10-28/prime_pisot_field/VALIDATION.md",
+      "sha256": "c51fad3a6e34548ce7f59119b46da193e476cf1faea62bb640ff8a1c2bd78f55",
+      "size": 7198,
+      "title": "Validation, actual rounds, and limits"
     },
     {
       "path": "handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md",
@@ -26630,6 +27032,12 @@
       "title": "Continue from periodic observers and moving mixed-lag loss"
     },
     {
+      "path": "handoffs/CARRY_POLYA_RESOLVENT_NEXT_2026-10-28.md",
+      "sha256": "230afe099b52b471cded6990b1821c52343c30573769bba11c359655f3607288",
+      "size": 5750,
+      "title": "Next execution: retain the signed boundary, exploit the minimal source equation"
+    },
+    {
       "path": "handoffs/CHIRAL_TARGET_DESCENT_NEXT_PROOF.md",
       "sha256": "7206196a688726a51d13b13936fa0be6d73da1b505f881ab7512e244c0d4aa73",
       "size": 3359,
@@ -26826,6 +27234,12 @@
       "sha256": "fe4c494f57e697b5d5a824b161f8a24e3eeff087f8ca8b4c6e60ca768e71a4e2",
       "size": 6570,
       "title": "CODEX — OPERATION FIRST-PRIMAL: MAX-EFFORT REAL/2-/3-ADIC π CANCELLATION"
+    },
+    {
+      "path": "handoffs/CODEX_ULTRA_ORIGIN_LOCKED_GROWTH_2026-10-28.md",
+      "sha256": "32d87a2a744701ccc32913e7888fb971db9d9724bb7973e6bf5b2387ecd2f525",
+      "size": 11929,
+      "title": "CODEX ULTRA — OPERATION CARRY × PÓLYA × SOURCE-LOCKED ZETA"
     },
     {
       "path": "handoffs/CYCLOTOMIC_BBP_SIGNED_INTERFERENCE_NEXT.md",
@@ -27116,6 +27530,12 @@
       "title": ""
     },
     {
+      "path": "formal/DivisorBoundary.lean",
+      "sha256": "aca541aedcbf3c72b1b7d81959184c2d32625ded5d8e4018722652b88ae08291",
+      "size": 2315,
+      "title": ""
+    },
+    {
       "path": "formal/DuckObserver.lean",
       "sha256": "3b4e23656a3480812a9f5250ec282e09dccea48e8a97aa49d25597d9d3d4efed",
       "size": 12831,
@@ -27324,6 +27744,12 @@
       "sha256": "72080f9a50f7a1573f7bbb4cf5a0ee6de03487feddb444912b1f1f5dce9e0bf3",
       "size": 1958,
       "title": "Periodic residue clock: the load-bearing lemma behind the tail enclosure"
+    },
+    {
+      "path": "formal/PolyaCoherence.lean",
+      "sha256": "81ee9edae70cad12e33663c5055818ff72a4f0dfc148e92e6bf42b38f2da553c",
+      "size": 2507,
+      "title": ""
     },
     {
       "path": "formal/PortablePrimeSundial.lean",
@@ -27640,6 +28066,18 @@
     "NO EXACT NAMESPACE for C-04 at docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md:10",
     "NO EXACT NAMESPACE for C-05 at docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md:11",
     "NO EXACT NAMESPACE for C-06 at docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md:20",
+    "NO EXACT NAMESPACE for CPS-01 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:14",
+    "NO EXACT NAMESPACE for CPS-02 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:15",
+    "NO EXACT NAMESPACE for CPS-03 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:16",
+    "NO EXACT NAMESPACE for CPS-04 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:17",
+    "NO EXACT NAMESPACE for CPS-05 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:18",
+    "NO EXACT NAMESPACE for CPS-06 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:19",
+    "NO EXACT NAMESPACE for CPS-07 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:20",
+    "NO EXACT NAMESPACE for CPS-08 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:21",
+    "NO EXACT NAMESPACE for CPS-09 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:22",
+    "NO EXACT NAMESPACE for CPS-10 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:23",
+    "NO EXACT NAMESPACE for CPS-11 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:24",
+    "NO EXACT NAMESPACE for CPS-12 at docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md:25",
     "NO EXACT NAMESPACE for GS-1 at docs/CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md:11",
     "NO EXACT NAMESPACE for GS-2 at docs/CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md:12",
     "NO EXACT NAMESPACE for GS-3 at docs/CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md:13",
@@ -27736,6 +28174,7 @@
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_APOLLO_PRIME_DOMAIN.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_BBP_MINIMAL_PATH.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_CARRY_DEFECT.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_EFFECTIVE_TATE_GATES.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_EMPIRICAL_CARRIER.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_FULL_PRIME_RESOLVENT.md",

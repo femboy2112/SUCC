@@ -1,0 +1,6 @@
+/tmp/succ-bbp-resolvent-validation/lean/kernel-build-n34xsswe/boundary-sign-mutant.lean:4:2: error: type mismatch
+  signed_boundary_identity N f
+has type
+  edgeSum N f = boundarySum N f - selectedSum N f : Prop
+but is expected to have type
+  edgeSum N f = boundarySum N f + selectedSum N f : Prop

@@ -1,0 +1,16 @@
+{
+  "a2": "15/64",
+  "a3": "151/512",
+  "a4": "1209/4096",
+  "convergent_halfplane": "Re s > -1",
+  "finite_part_closed": "15*EulerGamma/64 + 31*sqrt(2)*log(1 + sqrt(2))/64 + 39*log(2)/32 + pi*(27 + 31*sqrt(2))/128",
+  "finite_part_digamma": "-9*log(2)/32 - 5*EulerGamma/32 + 3*polygamma(0, 5/8)/64 - log(4)/32 + pi/64 - 7*polygamma(0, 1/8)/16",
+  "finite_part_value_50digits": "3.32249791110640475659473238782379790945395207752458",
+  "independent_sympy_closed_form_equality": true,
+  "meromorphic_continuation": "C, possible simple poles s=1-k for integers k>=2 with residues a_k",
+  "numerical_finite_partial_n": 4000,
+  "principal_pole": "s=-1; residue 15/64",
+  "rigorous_partial_error_bound": "0.00094140625",
+  "source_r(n)": "4/(8n-7)-2/(8n-4)-1/(8n-3)-1/(8n-2)",
+  "status": "PAPER_PROVED via source partial fractions and classical digamma; no RH/normality consequence"
+}

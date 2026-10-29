@@ -1,0 +1,11 @@
+# Validation and evidence boundary
+
+**Pinned parent:** PR #352 SHA f7baa52f0052a29687cf729d1cbe9e1bcc828dc6. Original OLZF-04 / PCR-02 dossiers are inherited without modification. Governing AGENTS.md / CONTRIBUTING.md / METHOD.md inspected at parent head. No historical claim registry, original BBP source/zero selector, or workflow changed.
+
+Local full isolated overlay: 13/13 Python unittest methods passed, separate SymPy oracle checked 12 direct-geometric-fidelity dimensions and 9 exact symbolic Pólya birth matrices, with off-line positive-Fourier and phase-only-null controls. There were two initial test harness failures: a wrongly tight floating scaling-window tolerance (corrected to the proven O(m^-2) bound), and a float rounding equality in a rational inequality (replaced by exact Fraction). These were test defects, not failures of the stated identities. One reasoner developed all routes: not blind independent mathematical review.
+
+**Committed regression:** the six-method standard-library test_circle_line.py was separately executed locally: all six passed. Direct exact rational sums, Pólya defect identities for several dimensions and r, critical-line cancellation with conserved state norm, prime marked norm growth, scaling window with explicit error bound, and off-line analytic-zero control are covered. Reproduce: cd research/2026-10-28/circle_line_source_stability && python -m unittest -v test_circle_line.py.
+
+**NOT DONE:** full git checkout, full native AGENTS root suite, hosted head CI, Lean proofs, independent peer review, rigorous floating-point interval enclosures. The general theorems rest on the displayed analytic/equational proofs, not the finite tests. The user asked to avoid CI blasting: a single additive commit uses [skip ci], but this is no passing CI receipt. Academic novelty UNVERIFIED; RH/pi normality OPEN.
+
+One potential false bridge was explicitly rejected: treating every nonzero real tilt as an off-critical zeta zero. The map from genuine completed-zeta zeros to this source imbalance is not constructed. Analytic off-line zeros may be structurally stable while failing a chosen mode-boundedness condition; these are separate notions.

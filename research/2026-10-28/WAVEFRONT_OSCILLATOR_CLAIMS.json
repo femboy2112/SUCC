@@ -1,0 +1,88 @@
+{
+  "schema": "research-local-v1",
+  "source_commit_baseline": "b763ba8ef375fbac221e29e4396989a635a6ef36",
+  "parent_research_branch": "research/pisot-hopf-arithmetic-relativity-2026-10-28",
+  "research_only": true,
+  "pi_normality_proved": false,
+  "rh_proved": false,
+  "claims": [
+    {
+      "id": "WOC-01",
+      "status": "PROVED PAPER",
+      "statement": "Two-loop Oily packet kernel is an attracting Neumann fixed point; source R and original integral \u03c0 recovered.",
+      "scope": "Proof by finite matrix powers and original source passport; not a digit theorem."
+    },
+    {
+      "id": "WOC-02",
+      "status": "PROVED PAPER",
+      "statement": "Uniform positive packet-tail and \u03c0 partial-sum enclosure.",
+      "scope": "Bound uses u,v<=1/2; not sharp or an estimate of signed Weyl sums."
+    },
+    {
+      "id": "WOC-03",
+      "status": "PROVED PAPER",
+      "statement": "Source-exact two-register LTI realization is minimal; nonzero Hankel minor at x>0; pure two-delay x=0.",
+      "scope": "Not a universal minimum over nonlinear or changed-source observers."
+    },
+    {
+      "id": "WOC-04",
+      "status": "CLASSICAL CONDITIONAL",
+      "statement": "Geometric distribution uniquely max entropy with a fixed individual-stage mean.",
+      "scope": "Max delay entropy is not max knowledge of the current source."
+    },
+    {
+      "id": "WOC-04A",
+      "status": "CONJECTURED TRANSPORT / EXACT ALGEBRA",
+      "statement": "Two-bit maximum entropy+size-biased occupancy reproduces u,v at x/2.",
+      "scope": "Retained occupancy weights = geometric waiting parameters is an extra unproved source/probe bridge."
+    },
+    {
+      "id": "WOC-05",
+      "status": "PROVED PAPER",
+      "statement": "Exact finite-difference causal inverse reconstructs W(t-2) from E2 reports.",
+      "scope": "Requires correct coefficients, exact rational history and zero prehistory; no future access."
+    },
+    {
+      "id": "WOC-06",
+      "status": "PROVED PAPER",
+      "statement": "Sharp decoder sup-noise gain K_x<=9 and m-depth gain 3^m at endpoint.",
+      "scope": "Deterministic conditioning; no quantum uncertainty or physical horizon bound."
+    },
+    {
+      "id": "WOC-07",
+      "status": "PROVED PAPER",
+      "statement": "Declared periodically pumped source admits unique globally attracting period-eight observer response.",
+      "scope": "Pump changes contracting authentic BBP source; not its expanding zero-seeded carrier."
+    },
+    {
+      "id": "WOC-08",
+      "status": "PROVED PAPER",
+      "statement": "Uncorrected repeated critical filters erase all non-DC periodic modes exponentially.",
+      "scope": "Negative control against infinite observer-depth implying complete information."
+    },
+    {
+      "id": "WOC-09",
+      "status": "PROVED PAPER / EXACT SYMPY",
+      "statement": "Normalized source chiral Q=\u221a2 T has Q^8=I and a unique source-indexed linear invariant observer graph H.",
+      "scope": "Exact derived source oscillator, but normalized/pumped; not gauge-invariant Hopf S4 or BBP carry factor."
+    },
+    {
+      "id": "WOC-10",
+      "status": "UNVERIFIED",
+      "statement": "The resource-optimal causal observer uniquely chooses authenticated Oily rates without fitting them.",
+      "scope": "Needs source sensor/probe/energy/noise objective and adversarial changed-seed controls."
+    },
+    {
+      "id": "WOC-11",
+      "status": "UNVERIFIED",
+      "statement": "The oscillator completion implies \u03c0 normality or RH.",
+      "scope": "No sublinear signed Fourier/Weyl estimate on actual U_n or completed Weil form."
+    },
+    {
+      "id": "WOC-12",
+      "status": "PROVED PAPER / EXACT FINITE CONTROL",
+      "statement": "For any bounded complex wavefront, normalized Oily two-stage filter prefix sums differ from original by at most B mean_delay\u22644B; applies directly to genuine U0=0 signed BBP phase characters and is a Weyl-equivalence, not a saving.",
+      "scope": "Zero-padded initial histories and positive unit-DC filter; no source-carried nontrivial Weyl estimate. Phase of filtered signal is not filter of phases."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "PR333_source_sector_derived_T": [
+    [
+      "1/2",
+      "0",
+      "0",
+      "1/2"
+    ],
+    [
+      "1/2",
+      "0",
+      "0",
+      "-1/2"
+    ],
+    [
+      "0",
+      "-1/2",
+      "1/2",
+      "0"
+    ],
+    [
+      "0",
+      "-1/2",
+      "-1/2",
+      "0"
+    ]
+  ],
+  "T4_chirality": true,
+  "T8_return": true,
+  "T_squared_exact_quaternion_factor": true,
+  "charpoly": "(2*lambda**2 - 1)*(2*lambda**2 - 2*lambda + 1)/4",
+  "conformal_gram": "Matrix([[1/2, 0, 0, 0], [0, 1/2, 0, 0], [0, 0, 1/2, 0], [0, 0, 0, 1/2]])",
+  "det_T": "-1/4",
+  "first_eight_source_taps": [
+    4,
+    0,
+    0,
+    -2,
+    -1,
+    -1,
+    0,
+    0
+  ],
+  "induced_even_Hopf_base_action": [
+    [
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "-1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "induced_even_action_order": 4,
+  "method": "independent symbolic Gaussian-sector derivation, then comparison with stand-alone Fraction implementation"
+}

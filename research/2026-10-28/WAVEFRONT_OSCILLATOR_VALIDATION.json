@@ -1,0 +1,52 @@
+{
+  "base_main": "b763ba8ef375fbac221e29e4396989a635a6ef36",
+  "branch": "research/pisot-hopf-arithmetic-relativity-2026-10-28",
+  "claims_not_licensed": [
+    "pi normality",
+    "RH",
+    "optimal causal Bayesian observer",
+    "quantum uncertainty",
+    "Einstein/GR physical field"
+  ],
+  "date": "2026-10-28",
+  "exact_standard_library_tests": {
+    "count": 36,
+    "passed": 35,
+    "skip_reason": "requires original full Main XIII chiral module in full checkout",
+    "skipped": 1
+  },
+  "full_succ_native_run": "NOT_RUN_ISOLATED_CHECKOUT",
+  "hosted_CI": "NOT_CLAIMED",
+  "independent_oracles": {
+    "14_exact_pi_packet_integrals": true,
+    "actual_zero_seeded_bbp_64_step_complex_phase_control": true,
+    "chiral_source_graph_sympy_4_coordinates": true,
+    "full_report_decoder": true,
+    "original_taps_correct": true,
+    "same_forcing_seed_one_third_control": true,
+    "sharp_noise_gain": true,
+    "size_biased_2bit_micro_source": true,
+    "source_resolvent_sympy": true,
+    "weyl_phase_transport_prefix_bound_4": true
+  },
+  "lean_kernel": "NOT_RUN",
+  "required_original_source_preserved": true,
+  "run_contract": [
+    "PYTHONPATH=. python -m unittest tests.test_wavefront_oscillator_completion -v",
+    "python scripts/wavefront_oscillator_probe.py",
+    "python scripts/wavefront_oscillator_independent_oracle.py",
+    "python scripts/chiral_invariant_graph_oracle.py",
+    "python scripts/verify_provenance.py",
+    "PYTHONPATH=. python -m unittest discover -s tests -p test_*.py",
+    "python scripts/observer_foundations_probe.py",
+    "python scripts/ordinal_succ_report_probe.py"
+  ],
+  "source_selected_weyl_theorem": "For every nonzero h, normalized Oily filter of genuine e(2pi i h U_n) differs in signed prefix sum by \u22644 for any N; does not give an o(N) estimate.",
+  "staged_regression_tests": {
+    "count": 125,
+    "passed": 122,
+    "skip_reason": "three actual Main XIII source import-dependent tests unavailable in isolated mini-checkout",
+    "skipped": 3
+  },
+  "status": "LOCAL_PROBE_COMPLETE_REPO_CI_PENDING"
+}

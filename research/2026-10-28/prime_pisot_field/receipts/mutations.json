@@ -1,0 +1,42 @@
+{
+  "mutants_killed": 5,
+  "mutations": [
+    {
+      "name": "fake composite primitive 4",
+      "baseline_passed": true,
+      "mutant_rejected": true,
+      "restored_passed": true,
+      "mutant_test_output": "test_prime_channels_reject_composites_and_invalid_inputs (test_prime_pisot.ArithmeticSource.test_prime_channels_reject_composites_and_invalid_inputs) ... \n  test_prime_channels_reject_composites_and_invalid_inputs (test_prime_pisot.ArithmeticSource.test_prime_channels_reject_composites_and_invalid_inputs) (n=4) ... FAIL\n\n======================================================================\nFAIL: test_prime_channels_reject_composites_and_invalid_inputs (test_prime_pisot.ArithmeticSource.test_prime_channels_reject_composites_and_invalid_inputs) (n=4)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/mnt/data/succ-prime-field/research/2026-10-28/prime_pisot_field/test_prime_pisot.py\", line 29, in test_prime_channels_reject_composites_and_invalid_inputs\n    with self.subTest(n=n), self.assertRaises(ValueError):\n                            ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^\nAssertionError: ValueError not raised\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "name": "one-sided prime shift falsely lossless",
+      "baseline_passed": true,
+      "mutant_rejected": true,
+      "restored_passed": true,
+      "mutant_test_output": "test_local_fidelity_from_actual_path_count (test_prime_pisot.ArithmeticSource.test_local_fidelity_from_actual_path_count) ... FAIL\n\n======================================================================\nFAIL: test_local_fidelity_from_actual_path_count (test_prime_pisot.ArithmeticSource.test_local_fidelity_from_actual_path_count)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/mnt/data/succ-prime-field/research/2026-10-28/prime_pisot_field/test_prime_pisot.py\", line 39, in test_local_fidelity_from_actual_path_count\n    self.assertEqual(prime_fidelity(n, p), overlap_squared)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Fraction(1, 1) != Fraction(1, 2)\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "name": "composites incorrectly lose equilibrium",
+      "baseline_passed": true,
+      "mutant_rejected": true,
+      "restored_passed": true,
+      "mutant_test_output": "test_every_divisor_fiber_has_a_ground_state (test_prime_pisot.VirtualEquilibria.test_every_divisor_fiber_has_a_ground_state) ... FAIL\n\n======================================================================\nFAIL: test_every_divisor_fiber_has_a_ground_state (test_prime_pisot.VirtualEquilibria.test_every_divisor_fiber_has_a_ground_state)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/mnt/data/succ-prime-field/research/2026-10-28/prime_pisot_field/test_prime_pisot.py\", line 78, in test_every_divisor_fiber_has_a_ground_state\n    self.assertTrue(all(sum(row) == 0 for row in a))\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: False is not true\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "name": "omit Mobius removal of repetitions",
+      "baseline_passed": true,
+      "mutant_rejected": true,
+      "restored_passed": true,
+      "mutant_test_output": "test_formal_log_and_mobius_primitive_extraction (test_prime_pisot.EulerSource.test_formal_log_and_mobius_primitive_extraction) ... FAIL\n\n======================================================================\nFAIL: test_formal_log_and_mobius_primitive_extraction (test_prime_pisot.EulerSource.test_formal_log_and_mobius_primitive_extraction)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/mnt/data/succ-prime-field/research/2026-10-28/prime_pisot_field/test_prime_pisot.py\", line 121, in test_formal_log_and_mobius_primitive_extraction\n    self.assertEqual(prim[n], int(is_prime(n)))\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Fraction(1, 2) != 0\n\n----------------------------------------------------------------------\nRan 1 test in 0.001s\n\nFAILED (failures=1)\n"
+    },
+    {
+      "name": "replace negative Pisot conjugate by positive inverse",
+      "baseline_passed": true,
+      "mutant_rejected": true,
+      "restored_passed": true,
+      "mutant_test_output": "test_negative_conjugate_sign_mutant_is_rejected (test_prime_pisot.PisotSupport.test_negative_conjugate_sign_mutant_is_rejected) ... FAIL\n\n======================================================================\nFAIL: test_negative_conjugate_sign_mutant_is_rejected (test_prime_pisot.PisotSupport.test_negative_conjugate_sign_mutant_is_rejected)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/mnt/data/succ-prime-field/research/2026-10-28/prime_pisot_field/test_prime_pisot.py\", line 173, in test_negative_conjugate_sign_mutant_is_rejected\n    self.assertEqual(beta.conjugate(), Quad(m, m, -1))\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Quad(m=1, a=Fraction(-1, 1), b=Fraction(1, 1)) != Quad(m=1, a=Fraction(1, 1), b=Fraction(-1, 1))\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nFAILED (failures=1)\n"
+    }
+  ],
+  "unchanged_null_control_passed": true,
+  "scope": "same-reasoner executable mutations, not independent-agent review"
+}

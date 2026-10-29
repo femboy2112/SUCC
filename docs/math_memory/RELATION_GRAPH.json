@@ -902,6 +902,72 @@
           "path": "research/2026-10-27/BBP_VARIABLE_LENGTH_SOURCE_CODE.md"
         }
       ]
+    },
+    {
+      "id": "MM-CPS-1",
+      "title": "Sharp signed divisor boundary and origin-pinned spectral obstruction",
+      "statement": "For every bounded f, D(N) times the natural divisor-commutator scalar equals B_N(f)-S_N(f), with sharp supremum 2 floor(N/2)/D(N); the observer Laplacian has zero essential gap even after finite origin pinning.",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "scope": "Original divisor compression; applies to authentic zero-seeded BBP phases and explicitly labelled controls. Paper proof; finite Lean cores separately delimited.",
+      "limitation": "The universal small scalar is not signed Weyl cancellation; pure-gauge spectra do not identify the source.",
+      "next_probe": "Retain absolute source labels and estimate the actual selected boundary combination.",
+      "provenance": [
+        {
+          "kind": "new_proof",
+          "path": "research/2026-10-28/BBP_SIGNED_OBSERVER_AUDIT.md"
+        },
+        {
+          "kind": "github_pr",
+          "pr": 348,
+          "head_sha": "fec9b7a72dd6b8c7550d7915070ee8094f2b94a2",
+          "path": "research/2026-10-28/OILY_ZETA_CAUSAL_GROWTH_AND_SOURCE_DEFECT.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-CPS-2",
+      "title": "Minimal original-BBP zeta resolvent and completion obstructions",
+      "statement": "The original forcing response satisfies a minimal fourth-order polynomial shift equation with shifted zeta forcing; its full negative pole tower obstructs standard Gamma-product scalar reflection.",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "scope": "Ordinary Dirichlet series for the original rational forcing; precise completion classes in dossier. Paper proof; finite Lean cores separately delimited.",
+      "limitation": "Forcing completeness is seed-blind; no Poisson self-duality, normality or RH result.",
+      "next_probe": "Test a source-derived vector or additive completion and retain the selected seed.",
+      "provenance": [
+        {
+          "kind": "new_proof",
+          "path": "research/2026-10-28/BBP_DIRICHLET_RESOLVENT.md"
+        },
+        {
+          "kind": "github_pr",
+          "pr": 348,
+          "head_sha": "fec9b7a72dd6b8c7550d7915070ee8094f2b94a2",
+          "path": "research/2026-10-28/OILY_ZETA_CAUSAL_GROWTH_AND_SOURCE_DEFECT.md"
+        }
+      ]
+    },
+    {
+      "id": "MM-CPS-3",
+      "title": "Source-marked Polya isometry and universal leakage spectrum",
+      "statement": "Two-dimensional environment is minimal for nontrivial two-channel Polya growth preserving the marked pure source; every such lift has leakage spectrum r(r+1)/(m(m+1)).",
+      "kind": "theorem",
+      "status": "PROVED_LOCAL",
+      "scope": "Nearest-neighbor positive source transitions; explicit full-x and higher-rank extensions. Paper proof; finite Lean cores separately delimited.",
+      "limitation": "Constructed prior coherence is not the original signed BBP carry history or a physical hbar law.",
+      "next_probe": "Classify multi-overlap locality graphs or higher-rank nonuniform source marks.",
+      "provenance": [
+        {
+          "kind": "new_proof",
+          "path": "research/2026-10-28/POLYA_COHERENCE_RIGIDITY.md"
+        },
+        {
+          "kind": "github_pr",
+          "pr": 348,
+          "head_sha": "fec9b7a72dd6b8c7550d7915070ee8094f2b94a2",
+          "path": "research/2026-10-28/OILY_ZETA_CAUSAL_GROWTH_AND_SOURCE_DEFECT.md"
+        }
+      ]
     }
   ],
   "edges": [
@@ -1240,6 +1306,30 @@
       "target": "MM-O-022",
       "relation": "does_not_imply",
       "evidence": "Finite-band statistics cannot certify normality; counterfeits exist at every fixed resolution."
+    },
+    {
+      "source": "MM-CPS-1",
+      "target": "MM-O-022",
+      "relation": "constrains",
+      "evidence": "Exact retained boundary, coherent same-forcing counterseed and explicit singular Weyl sequence; the selected zero-seed gate remains open."
+    },
+    {
+      "source": "MM-CPS-2",
+      "target": "MM-T-017",
+      "relation": "shares_source_with",
+      "evidence": "The full response imports the same signed rational forcing but is independent of its initial seed."
+    },
+    {
+      "source": "MM-CPS-2",
+      "target": "MM-O-022",
+      "relation": "constrains",
+      "evidence": "Identical analytic response for the coherent seed forbids a forcing-only cancellation inference; no zero-seeded counterexample asserted."
+    },
+    {
+      "source": "MM-CPS-3",
+      "target": "MM-T-010",
+      "relation": "complements",
+      "evidence": "The full-x source-marked lift preserves the actual Oily conditional packet marginals; it does not identify signed carries."
     }
   ],
   "guardrails": [

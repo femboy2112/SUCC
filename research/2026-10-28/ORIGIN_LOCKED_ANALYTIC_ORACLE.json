@@ -1,0 +1,70 @@
+{
+  "global_critical": {
+    "Euler_gamma_linear_correction": "cancels under common-origin normalization",
+    "data": [
+      {
+        "epsilon": "0.3",
+        "imaginary_characteristic": "(0.26790584645561201612 + 0.0j)",
+        "imaginary_limit": "0.25706940874035989717",
+        "real_limit": "1.2268433321064900012",
+        "real_normalized": "1.2235777435057752202",
+        "relative_second_order_coefficient": "-0.029575347427140200155"
+      },
+      {
+        "epsilon": "0.1",
+        "imaginary_characteristic": "(0.25839108802974589304 + 0.0j)",
+        "imaginary_limit": "0.25706940874035989717",
+        "real_limit": "1.2268433321064900012",
+        "real_normalized": "1.2264404207519206954",
+        "relative_second_order_coefficient": "-0.032841304510944118792"
+      },
+      {
+        "epsilon": "0.03",
+        "imaginary_characteristic": "(0.2571927790711852844 + 0.0j)",
+        "imaginary_limit": "0.25706940874035989717",
+        "real_limit": "1.2268433321064900012",
+        "real_normalized": "1.2268056683209034043",
+        "relative_second_order_coefficient": "-0.034110835146261318216"
+      },
+      {
+        "epsilon": "0.01",
+        "imaginary_characteristic": "(0.2570832658660693539 + 0.0j)",
+        "imaginary_limit": "0.25706940874035989717",
+        "real_limit": "1.2268433321064900012",
+        "real_normalized": "1.2268391010999540541",
+        "relative_second_order_coefficient": "-0.034486934274505188133"
+      },
+      {
+        "epsilon": "0.003",
+        "imaginary_characteristic": "(0.25707066067563552643 + 0.0j)",
+        "imaginary_limit": "0.25706940874035989717",
+        "real_limit": "1.2268433321064900012",
+        "real_normalized": "1.2268429498463629571",
+        "relative_second_order_coefficient": "-0.034620025505963134431"
+      },
+      {
+        "epsilon": "0.001",
+        "imaginary_characteristic": "(0.25706954799744618427 + 0.0j)",
+        "imaginary_limit": "0.25706940874035989717",
+        "real_limit": "1.2268433321064900012",
+        "real_normalized": "1.2268432895863184557",
+        "relative_second_order_coefficient": "-0.034658191826718508869"
+      }
+    ],
+    "relative_epsilon_squared_coefficient_predicted": "-0.03467729845218353002802"
+  },
+  "scope": "numerical values illustrative; universal identities proved symbolically or in dossier; no RH or BBP Weyl theorem",
+  "status": "PASS independent symbolic and high-precision checks",
+  "susceptibility": {
+    "free_two_mode_q_half": "4 times log(p)^2",
+    "source_anchor_q_half": "5/3 times log(p)^2"
+  },
+  "sympy": {
+    "anchored_shear": "fixed source diagonal implies c=0",
+    "conditional_variance": "j(j+2)/3",
+    "diagonalizing_shear": "singular at eta=0",
+    "parabolic_jordan": "non-diagonalizable at x=1",
+    "source_rates": "tanh eta=1-x",
+    "transfer_powers_checked": 10
+  }
+}

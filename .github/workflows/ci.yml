@@ -19,7 +19,8 @@ jobs:
   test:
     name: Python ${{ matrix.python-version }} mathematical and epistemic checks
     runs-on: ubuntu-latest
-    # PR #349 recorded the inherited 25-minute limit expiring on Python 3.10.
+    # PR #349 recorded the inherited 25-minute limit expiring on Python 3.10;
+    # the full 9,677-test suite plus the source replays below exceeded it there.
     # Preserve every check while allowing the full mathematical suite to finish.
     timeout-minutes: 45
     strategy:

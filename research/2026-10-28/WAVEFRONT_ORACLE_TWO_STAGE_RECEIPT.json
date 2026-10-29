@@ -1,0 +1,178 @@
+{
+  "claims": "WEO-01..07 scoped; WEO-08..09 unverified",
+  "controls": {
+    "iid_innovation_variance_one_MSE_depth_0_to_3": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "predictable_innovation_MSE_depth_0_to_3": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "critical": {
+    "extra_mean": "2",
+    "extra_variance": "4",
+    "mean_physical_latency": "4",
+    "min_physical_latency": 2,
+    "second_difference_first_80_all_zero": true,
+    "w_first_eight": [
+      "1/4",
+      "1/4",
+      "3/16",
+      "1/8",
+      "5/64",
+      "3/64",
+      "7/256",
+      "1/64"
+    ]
+  },
+  "epistemic_optimality": "UNVERIFIED: formal causal filter only",
+  "runs": [
+    {
+      "all_20_depth_defect_residuals_zero": true,
+      "all_20_order2_residuals_zero": true,
+      "characteristic_discriminant": "16/625",
+      "first_stage_sample": [
+        "0",
+        "-41/50",
+        "-369/2500",
+        "99179/125000",
+        "11142611/6250000",
+        "-2216501/312500000",
+        "44783904473/46875000000"
+      ],
+      "packet_first_six": [
+        "2009/2500",
+        "2009/12500",
+        "182819/6250000",
+        "82369/15625000",
+        "14828429/15625000000",
+        "13345787/78125000000"
+      ],
+      "second_stage_sample": [
+        "0",
+        "0",
+        "-2009/2500",
+        "-2009/12500",
+        "4839681/6250000",
+        "27541381/15625000",
+        "442219071/15625000000"
+      ],
+      "source_total_R": "500/2009",
+      "u": "9/50",
+      "v": "1/50",
+      "x": "1/5"
+    },
+    {
+      "all_20_depth_defect_residuals_zero": true,
+      "all_20_order2_residuals_zero": true,
+      "characteristic_discriminant": "1/16",
+      "first_stage_sample": [
+        "0",
+        "-5/8",
+        "-15/64",
+        "275/512",
+        "5945/4096",
+        "9643/32768",
+        "660227/786432"
+      ],
+      "packet_first_six": [
+        "35/64",
+        "35/128",
+        "455/4096",
+        "175/4096",
+        "4235/262144",
+        "3185/524288"
+      ],
+      "second_stage_sample": [
+        "0",
+        "0",
+        "-35/64",
+        "-35/128",
+        "1785/4096",
+        "5425/4096",
+        "110901/262144"
+      ],
+      "source_total_R": "8/35",
+      "u": "3/8",
+      "v": "1/8",
+      "x": "1/2"
+    },
+    {
+      "all_20_depth_defect_residuals_zero": true,
+      "all_20_order2_residuals_zero": true,
+      "characteristic_discriminant": "16/625",
+      "first_stage_sample": [
+        "0",
+        "-13/25",
+        "-156/625",
+        "6253/15625",
+        "481286/390625",
+        "3744182/9765625",
+        "1158252979/1464843750"
+      ],
+      "packet_first_six": [
+        "221/625",
+        "884/3125",
+        "67184/390625",
+        "183872/1953125",
+        "11937536/244140625",
+        "30098432/1220703125"
+      ],
+      "second_stage_sample": [
+        "0",
+        "0",
+        "-221/625",
+        "-884/3125",
+        "70941/390625",
+        "1749878/1953125",
+        "133646214/244140625"
+      ],
+      "source_total_R": "125/884",
+      "u": "12/25",
+      "v": "8/25",
+      "x": "4/5"
+    },
+    {
+      "all_20_depth_defect_residuals_zero": true,
+      "all_20_order2_residuals_zero": true,
+      "characteristic_discriminant": "0",
+      "first_stage_sample": [
+        "0",
+        "-1/2",
+        "-1/4",
+        "3/8",
+        "19/16",
+        "63/160",
+        "749/960"
+      ],
+      "packet_first_six": [
+        "1/4",
+        "1/4",
+        "3/16",
+        "1/8",
+        "5/64",
+        "3/64"
+      ],
+      "second_stage_sample": [
+        "0",
+        "0",
+        "-1/4",
+        "-1/4",
+        "1/16",
+        "5/8",
+        "163/320"
+      ],
+      "source_total_R": "0",
+      "u": "1/2",
+      "v": "1/2",
+      "x": "1"
+    }
+  ],
+  "source": "original Oily positive BBP packet, Main XIII research status"
+}
