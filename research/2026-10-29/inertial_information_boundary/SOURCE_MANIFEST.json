@@ -1,0 +1,123 @@
+{
+  "base_branch": "research/recursive-carrier-triangle-2026-10-29",
+  "base_pr": 367,
+  "branch": "research/inertial-information-boundary-2026-10-29",
+  "executed_python_files": [
+    {
+      "git_blob": "a111933a339fde0804d3d6aa3c131dc37f712d0c",
+      "path": "observational_succ/inertial_information_boundary.py",
+      "sha256": "b79e9deadc72257fd5d82352db3ba38e1b8107f5d5696cad83ce728ee7e59976"
+    },
+    {
+      "git_blob": "342995eda2c1740643c5f140891694e55dcaa2b6",
+      "path": "scripts/inertial_information_boundary_probe.py",
+      "sha256": "80f289c7ec5d911e4f7c4b19b1e63834456206fc9b499f74534e9d30d92bd584"
+    },
+    {
+      "git_blob": "ade36d18544577764a6b3842d315f72144f6eb77",
+      "path": "scripts/inertial_information_boundary_oracle.py",
+      "sha256": "57b328e68321c46a7678a940228e501b048854dd127dae86f4139e198891c9a2"
+    },
+    {
+      "git_blob": "d0f7904aef7db14b770a3de5fa2262a5e2ae71ec",
+      "path": "tests/test_inertial_information_boundary.py",
+      "sha256": "75f89eff7e50fa3379b4aa3e2304dd4449c07966851cdf723915da8ba3f6a70a"
+    }
+  ],
+  "historical_sources_modified": false,
+  "inherited_sources": [
+    {
+      "changed": false,
+      "git_blob_at_parent": "2c04a24744366d5659f347caeb874a3613f893c9",
+      "path": "AGENTS.md",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    {
+      "changed": false,
+      "git_blob_at_parent": "c3d90e9fe0cff7bc56b7a896a9efb87958849aa3",
+      "path": "docs/METHOD.md",
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a"
+    },
+    {
+      "changed": false,
+      "git_blob_at_parent": "a8805a8e4d64f35ff61937a36755d9b6d1ba3fae",
+      "path": "provenance/IMPORT_MANIFEST.json",
+      "sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f"
+    },
+    {
+      "changed": false,
+      "git_blob_at_parent": "68a7cb6f254566f680a6ab692b5cd6018ef69c7e",
+      "path": "docs/CLAIM_NAMESPACE_REGISTRY.json",
+      "sha256": "1104b3021671872c0a487fab1eee74b1bee2b630e944fc315493755e1bf34d96"
+    },
+    {
+      "changed": false,
+      "git_blob_at_parent": "8d502db36d28d1073a66cf41d5a2813a4e9720a9",
+      "path": "docs/math_memory/INDEX.md",
+      "sha256": "8b0ebb8214b36ee97c96357dabe1cd37d1911ec05d76c65f0f53345a67d969d1"
+    },
+    {
+      "changed": false,
+      "git_blob_at_parent": "85ba4a20cf604ef931c44d0448cfc1b102da6f1a",
+      "path": "observational_succ/oily_macaroni_transfer.py",
+      "sha256": "200226e92d75336a8d0ed3a20fa135ad3fc3daa3e72fafd3cd858235507d035a"
+    },
+    {
+      "changed": false,
+      "git_blob_at_parent": "fa1abb9dbeee0d7b4d9972e3b0e40a5feaed3c9e",
+      "path": "observational_succ/succ_internal_matrix_walk.py",
+      "sha256": "989976921da1b97a4ad04c788e302b3c23be1916eaf3c52c60369f6e111fe5d4"
+    },
+    {
+      "changed": false,
+      "git_blob_at_parent": "b4e1a41df5e358693b1226e90fead87add412bed",
+      "path": "observational_succ/recursive_carrier_triangle.py",
+      "sha256": "85e95aded49ccf93fce4256b3bf7970420fece251586a0162e868b2d09b37211"
+    },
+    {
+      "changed": false,
+      "git_blob_at_parent": "814499504cbf30f397bcae51e0dd83053e5ba9b2",
+      "path": "research/2026-10-26/OILY_POSITIVE_FIELD_GAMMA_COCYCLE.md",
+      "sha256": "1d5d5a0062150e6d3238f16502e02712fac3d20b941bb4be5f928df53ec9c1b1"
+    },
+    {
+      "changed": false,
+      "git_blob_at_parent": "3d946c186b07a14d352912a6b18bfef48c0e8027",
+      "path": "research/2026-10-29/recursive_carrier_triangle/ATOMIC_SOURCE_AND_INTERACTIONS.md",
+      "sha256": "4ea3b9d35ef1642c9ececf60e706af8c12cdbc9dba9bbb9d6fc6d8fb1807781a"
+    },
+    {
+      "changed": false,
+      "git_blob_at_parent": "50f8d83a0b0bf859e460f195d125e5a53a172189",
+      "path": "research/2026-10-29/recursive_carrier_triangle/DUAL_GEOMETRY_AND_GAMMA.md",
+      "sha256": "f61333dcb6acac9d72fae869c1a196d1c62cb041929b0b0e4b048af1627a6dd5"
+    },
+    {
+      "changed": false,
+      "git_blob_at_parent": "bdc99e8de7f9f70ac189e581dc8c389011429ca4",
+      "path": "research/2026-10-29/recursive_carrier_triangle/ORDER_CURVATURE_AND_SOURCE_CONTROLS.md",
+      "sha256": "2889b7510c130b9c9c1bcda3ffa34c2b7408ba0b1443e5e37106c81fce3d4d54"
+    }
+  ],
+  "observed_main": "ac7303b2e0e2ec16e3b1d88d186324e1fae65ea5",
+  "parent_commit": "b6a3815ceb505de0b1f570eae3ff5be75cdbe99c",
+  "parent_tree": "d8ae4f9b5f103024c6cd402552274cc9a485524d",
+  "proof_authority": "scoped paper proofs and exact finite receipts; no Lean, physical validation, or academic-priority claim",
+  "schema": "succ.inertial-information-boundary.source-passport.v1",
+  "sibling_read_only": [
+    {
+      "git_blob": "0271e48b0f46cfb7354ad9f1de34371844d1ff82",
+      "head": "95f368719a1e020e8bf5b9312b10260a94a0a519",
+      "imported_as_premise": false,
+      "path": "research/2026-10-29/triangular_harmonic_gamma_bbp/TRIANGULAR_HARMONIC_GAMMA_BBP.md",
+      "pr": 369
+    },
+    {
+      "git_blob": "0b38be679b990e6985f33a58c3a82ab6af92c924",
+      "head": "4d4d49b575b476cc33f762d2b6a7fd6d1b924655",
+      "imported_as_premise": false,
+      "path": "research/2026-10-29/pascal_oily_bbp/PASCAL_OILY_SIGNED_LIFT.md",
+      "pr": 370
+    }
+  ]
+}
