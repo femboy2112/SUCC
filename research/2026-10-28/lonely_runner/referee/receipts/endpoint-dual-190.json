@@ -1,0 +1,26 @@
+{
+  "schema": "succ.lonely-runner.endpoint-dual-experiment.v1",
+  "affected_family": [
+    2,
+    4,
+    6,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64,
+    96,
+    128
+  ],
+  "odd_representatives_modulus": 384,
+  "cells": 384,
+  "distinct_endpoint_patterns": 1598,
+  "seconds": 1.1593488949874882,
+  "solver_status": 2,
+  "solver_message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+  "exact_dual_accepted": false,
+  "authority": "floating LP proposal only until exact rational checks pass",
+  "source_sha256": "ae2533ed62feba7393ee153659cd8adf7c431168dbfa8ed47645c44d4271f03b"
+}

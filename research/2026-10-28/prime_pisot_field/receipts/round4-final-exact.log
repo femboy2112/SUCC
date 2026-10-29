@@ -1,0 +1,33 @@
+test_local_fidelity_from_actual_path_count (test_prime_pisot.ArithmeticSource.test_local_fidelity_from_actual_path_count) ... ok
+test_prime_channels_reject_composites_and_invalid_inputs (test_prime_pisot.ArithmeticSource.test_prime_channels_reject_composites_and_invalid_inputs) ... ok
+test_prime_creation_charge (test_prime_pisot.ArithmeticSource.test_prime_creation_charge) ... ok
+test_source_affine_braid (test_prime_pisot.ArithmeticSource.test_source_affine_braid) ... ok
+test_successor_charge_is_unbounded_in_both_directions (test_prime_pisot.ArithmeticSource.test_successor_charge_is_unbounded_in_both_directions) ... ok
+test_unique_factorization_and_divisor_count (test_prime_pisot.ArithmeticSource.test_unique_factorization_and_divisor_count) ... ok
+test_unseen_spectator_prime (test_prime_pisot.ArithmeticSource.test_unseen_spectator_prime) ... ok
+test_complete_two_by_two_controls (test_prime_pisot.EulerSource.test_complete_two_by_two_controls) ... ok
+test_dirichlet_identity_and_invalid_constant (test_prime_pisot.EulerSource.test_dirichlet_identity_and_invalid_constant) ... ok
+test_fake_composite_generator_is_detected (test_prime_pisot.EulerSource.test_fake_composite_generator_is_detected) ... ok
+test_formal_log_and_mobius_primitive_extraction (test_prime_pisot.EulerSource.test_formal_log_and_mobius_primitive_extraction) ... ok
+test_pair_penalty_changes_source_and_connected_readout (test_prime_pisot.EulerSource.test_pair_penalty_changes_source_and_connected_readout) ... ok
+test_sieve_generator_and_factorization_implementations_agree (test_prime_pisot.EulerSource.test_sieve_generator_and_factorization_implementations_agree) ... ok
+test_clock_location_bound_without_floating_roots (test_prime_pisot.PisotSupport.test_clock_location_bound_without_floating_roots) ... ok
+test_clock_tail_certificate (test_prime_pisot.PisotSupport.test_clock_tail_certificate) ... ok
+test_exact_companion_trace_recurrence (test_prime_pisot.PisotSupport.test_exact_companion_trace_recurrence) ... ok
+test_inverse_against_polynomial_multiplication (test_prime_pisot.PisotSupport.test_inverse_against_polynomial_multiplication) ... ok
+test_negative_conjugate_sign_mutant_is_rejected (test_prime_pisot.PisotSupport.test_negative_conjugate_sign_mutant_is_rejected) ... ok
+test_non_pisot_clock_control_is_nonintegral_rational (test_prime_pisot.PisotSupport.test_non_pisot_clock_control_is_nonintegral_rational) ... ok
+test_normalized_companion_spectrum_and_marked_projector (test_prime_pisot.PisotSupport.test_normalized_companion_spectrum_and_marked_projector) ... ok
+test_positive_markov_realization_and_virtual_difference (test_prime_pisot.PisotSupport.test_positive_markov_realization_and_virtual_difference) ... ok
+test_quadratic_algebra_domain_controls (test_prime_pisot.PisotSupport.test_quadratic_algebra_domain_controls) ... ok
+test_two_prime_histories_have_exactly_the_same_pisot_clock (test_prime_pisot.PisotSupport.test_two_prime_histories_have_exactly_the_same_pisot_clock) ... ok
+test_every_divisor_fiber_has_a_ground_state (test_prime_pisot.VirtualEquilibria.test_every_divisor_fiber_has_a_ground_state) ... ok
+test_local_character_zero_is_inherited_by_composites (test_prime_pisot.VirtualEquilibria.test_local_character_zero_is_inherited_by_composites) ... ok
+test_pcr02_against_accepted_channel_gram (test_prime_pisot.VirtualEquilibria.test_pcr02_against_accepted_channel_gram) ... ok
+test_pcr02_quadratic_form (test_prime_pisot.VirtualEquilibria.test_pcr02_quadratic_form) ... ok
+test_prime_filter_is_extra_not_emergent (test_prime_pisot.VirtualEquilibria.test_prime_filter_is_extra_not_emergent) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.090s
+
+OK

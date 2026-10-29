@@ -1,0 +1,617 @@
+{
+  "schema": "succ.lonely-runner.validation.v1",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "commit_at_observation": "16c326c9ec25be0296e46f3df7561396bd0775e6",
+  "source_manifest": {
+    "authority": "Exact campaign source pins; mutable execution receipts do not certify themselves.",
+    "base_commit": "b763ba8ef375fbac221e29e4396989a635a6ef36",
+    "schema": "succ.lonely-runner.source-manifest.v1",
+    "source_hashes": {
+      ".github/workflows/ci.yml": "1e614c15078c325526660a4e8019e219f5ff5a3be2e94058570d38cf995396d4",
+      ".github/workflows/lonely-runner.yml": "381e3ab4641f1351f5d11a579a9461e580e00c3d267f6a32c3f3abe6c4adac60",
+      "docs/CLAIM_SUPPLEMENT_LONELY_RUNNER.md": "c293c046175f670cd14e9a3e15e2477300fe574adedabe20bc6098d3a7a93299",
+      "formal/LonelyRunnerCover.lean": "ec07eb364b44ce6e4ca8c6a9e84f136485c58bb0bde0e8204be02f3d27be2ef0",
+      "formal/LonelyRunnerDeletion.lean": "eb99ee471fa35bb505afad5d92a42eef1e983f562a78df9abbdd64e0815d5b45",
+      "formal/LonelyRunnerUniform.lean": "0fe4a9fec99235da78aa25fea247354b8fe53177854e07b5b068509a82c2e199",
+      "formal/kernel_audit/ExportCommand.lean": "026bd4a8d919f83a4e83fd593499c108757f87868dfe66ca05a7bc340c339d60",
+      "formal/mathlib_bridge/lake-manifest.json": "80d5b4bd8497f01e75164c1d030add71ed7fadd7d26e2fc140f4b9462759a41d",
+      "lean-toolchain": "6faf6530819a0bc6d6092a2d9b974ea8e8adfec955d0e51e02e1f82734264d14",
+      "observational_succ/lonely_runner_census.py": "5d0cad2073b3933bce3ec260882226fbe50597b45e8962160484421ee1fd0fa2",
+      "observational_succ/lonely_runner_deletion.py": "0a12b05fa27bd0749913ec506598914d6a017edec2f46b93ea1b9f41ec9f89ff",
+      "observational_succ/lonely_runner_search.py": "76d5ba5faf063de17d2130ce9a4ff803c504e92d4ba9b5e3951e576df73d21b5",
+      "observational_succ/lonely_runner_two_entry.py": "038e6dfb76b20f55eee3e6d3266b47f4302a2e81d1f406b53346f12a390f81d7",
+      "observational_succ/lonely_runner_uniform.py": "34676c3ab887ed818e62338f47b86110eb146a214717e48a61bcd34f684cd716",
+      "observational_succ/lonely_runner_verify.py": "0aff4507cea61883adf0e49eae2b6a060172ad38dcda64b467829d93a3b4e57d",
+      "research/2026-10-28/lonely_runner/ALPHA.md": "ab1ad1d6fad11a496a768ecec645863c723e30c655cbe791630fa5dac8a413c7",
+      "research/2026-10-28/lonely_runner/ALPHA_PRIORITY.md": "15bbca54606038b61c6b2ff7df99da58fed3d80554e4e3aabe6d93b96c0ac6af",
+      "research/2026-10-28/lonely_runner/BETA_UNIFORM.md": "4bdf1a554d9ddf82d2919ac27171447f1a0eb7bf60c6a67f0be3161f73a59886",
+      "research/2026-10-28/lonely_runner/BETA_UNIFORM_EXACT_RECEIPT.json": "196077ff4e2dbb956b5a6de9eac6e70bef7ae99f4e53dfcc3fe709b0fda182bb",
+      "research/2026-10-28/lonely_runner/BETA_UNIFORM_SEARCH_RECEIPTS.json": "7934007f00b14c0cbd0226137417efa0859ed940169d828a2fd89c1f957da499",
+      "research/2026-10-28/lonely_runner/CENSUS.md": "4b654d8645dc81ca7eb7d1c8285ec1f10528d3c61ea27c4708b2bd38ec133c5e",
+      "research/2026-10-28/lonely_runner/CERTIFICATE_THEOREM.md": "aaa10a808c4fc696072deefa7220432b3910b72583ee3624e741e69dc687c8c4",
+      "research/2026-10-28/lonely_runner/GAMMA.md": "cad041e4fc2c764b58478b7f95fcbb63af397a9cacec18a382bb6f9623b60f54",
+      "research/2026-10-28/lonely_runner/LITERATURE.md": "ce7fef56faa2b0368f3fd753f772640ae6748db80feac1c75c7ffe4fa8293d3e",
+      "research/2026-10-28/lonely_runner/MANUSCRIPT.md": "990565bfc1ce7b60a26ef5b6d46d2b0decab63ce76b83b69f77418c6d2399188",
+      "research/2026-10-28/lonely_runner/README.md": "e8da2f7415677513f450e901f29e140e090f1a1dbc1c5fe794296c9624cbcd41",
+      "research/2026-10-28/lonely_runner/certificates/bcs-five.json": "acac8e4305a1ed57a3cfba4afb821daf37039e0be92f234012b2a276a3c1b021",
+      "research/2026-10-28/lonely_runner/certificates/bcs-thirteen.json": "19d383e39730f9c4ea09554a3b687c17fa367d73f56c55bbe114c0b31663cd51",
+      "research/2026-10-28/lonely_runner/certificates/census-n5-r1-3-w6-8.json": "412366d0338d9e98546ee0f2b2ee5268e51cbd4b1585a8a4c3380046c15f9440",
+      "research/2026-10-28/lonely_runner/certificates/census-n8-r2-3-w11-13.json": "c06d55157c3d6bcb511854668351692dcf12b0417784049a134d2a3afb17777c",
+      "research/2026-10-28/lonely_runner/certificates/poliakova-n95.json": "48a08a1ff6d377a4c77e115683ca6f403400fb404867d1e9cd6e9d0704f80108",
+      "research/2026-10-28/lonely_runner/certificates/verification.json": "cee8039ed95a384971e42aa177fcc4717cc8822b747a3bd0f37fe3ac1f5a5bfd",
+      "research/2026-10-28/lonely_runner/receipts/census-independent-5-8.json": "b1d1dedac5cd0454b981e4430c58fd35f718113b8e1078f459e2cbfc939a4c27",
+      "research/2026-10-28/lonely_runner/receipts/census-n10.json": "4f6902317f05223ad85e3b47681e81d769a6e60204907bf3cbfe5acc42a2fc03",
+      "research/2026-10-28/lonely_runner/receipts/census-n11.json": "61eb42514c79d314ad17a384bca3c31df7626ad7e7f793e45a90ff61bb4637b3",
+      "research/2026-10-28/lonely_runner/receipts/census-n12.json": "152649d4cba711176dba38bcad33deeb28093afd81b829c928e3d9c8203831d0",
+      "research/2026-10-28/lonely_runner/receipts/census-n13.json": "c6622543dfda4c7c7f314489286fd4791c6031552384e006921f596ff1e1ee17",
+      "research/2026-10-28/lonely_runner/receipts/census-n14.json": "9fd41284ed0fd4673fb1b957a90eac572867d9af25583394099be9ce951ee8da",
+      "research/2026-10-28/lonely_runner/receipts/census-n15.json": "6c0c584807115322c851af8ff2b3259cc4dffcd28ffadac650de3019a7aece4d",
+      "research/2026-10-28/lonely_runner/receipts/census-n16.json": "2ced6a137e5c985c00c517222f38d603260af1a405370687730670052ecfa477",
+      "research/2026-10-28/lonely_runner/receipts/census-n17.json": "ce59e08bbc7202aa978434f69d0847efb903003956ff8e7bac5e7ba73dd340b5",
+      "research/2026-10-28/lonely_runner/receipts/census-n18.json": "75975a9d3d01703e16bc7d77ef2fbe7908d7ba7312ee31d3ff1b6c3de2180893",
+      "research/2026-10-28/lonely_runner/receipts/census-n19.json": "92ecd1722ed03c53705d92d38c728e7f4a30c2f3ee7ae3de3f0aaef4524526f7",
+      "research/2026-10-28/lonely_runner/receipts/census-n20.json": "5a4c0e5efff3bd68eef19072a59c91cf232177a1f5ab8059c1b13d8477c77a12",
+      "research/2026-10-28/lonely_runner/receipts/census-n5.json": "7b2f179a8b9ee94bf6f408ee3573bfae4ecfc615e326900401e35d246df67775",
+      "research/2026-10-28/lonely_runner/receipts/census-n6.json": "08d3ccf876ecf9a268e3937d202e84f31aeca6970c59f922038f3ceea3aa1b45",
+      "research/2026-10-28/lonely_runner/receipts/census-n7.json": "b89c079c270fb0c519be83a5fcd2c916a2f90df20ecada804fd6c7a9c1bba409",
+      "research/2026-10-28/lonely_runner/receipts/census-n8.json": "52f0bef9510b37a6c3c391e282ab709ca5113ef9c301ecd18f8a9ed339cd7a10",
+      "research/2026-10-28/lonely_runner/receipts/census-n9.json": "d850af0c1d275a1e93da709058a93323cd0a029ac056908a22a6b0f7e21f40d3",
+      "research/2026-10-28/lonely_runner/receipts/gamma.json": "a8f7f11c5df782f9710ffc2cfbffd04c5673d664f2f25c30e7022e3461346888",
+      "scripts/build_math_memory.py": "c17a6244bc962f69528afe8e7e0e85e914d6e94fac35fba57446c97d7021c5d5",
+      "scripts/cambrian_audit_c_lean.py": "6a10d0e18e5f9fec8846431bb6aa4919b8552c034ade937eb565c8133d91e37c",
+      "scripts/check_lonely_runner_lean.py": "d8f90b0bae0cdabdbbadac9109d1bb3600de95d347111cbd0cb99a70ca939e78",
+      "scripts/check_lonely_runner_source.py": "92c54e41c64f302629fdf3d707eeba438ccd89a7a09efc2cd554a86fc55926fb",
+      "scripts/lonely_runner_census.py": "e939a748fe325c41923c867bf0d828b82e883bd2f92e02d9ff07e826288cefb1",
+      "scripts/lonely_runner_census_independent.py": "c42cd1611bc65d8cddff257761134f332d52960f030c83095f9268cfb6bcb4ca",
+      "scripts/lonely_runner_certificates.py": "dadab33dffbea1a307edee8ba7817310448ff8f0700c77386c3ea12ed607cdde",
+      "scripts/lonely_runner_two_entry_probe.py": "ea598cba53c9d61b0f8bfe0424458321a533de8fb488a75b96672c4bbe57b5e2",
+      "scripts/lonely_runner_uniform_probe.py": "f018b99569a7adb49ddebc82134ced2ce6471c74f788f9e439c541bb0a6d6552",
+      "scripts/lonely_runner_uniform_search.py": "66827af07a813354c914db492cb2b58ddd6decab714bf02c9d0ff520fd2e5b85",
+      "scripts/verify_lonely_runner.py": "18e6df493da728f86ac08fb2be94a6662831bb276135748aa62ff79567d7ec9f",
+      "tests/test_lonely_runner_census.py": "377d83b6bcc4b31743742f2ebd5712cb49580fcfa39e7d56a7d045588bd8f304",
+      "tests/test_lonely_runner_deletion.py": "1b5bbf2b27bfc0b15725c1920157c3d9d43586d8081d0ec0bb45c205d5f97565",
+      "tests/test_lonely_runner_search.py": "97601667ae916b779da1b60b23378fa2e25ec98f42501bcb7bf42045dbbdb8e6",
+      "tests/test_lonely_runner_two_entry.py": "46ad03cad119077bd322d0aefcfe511375a11906b6304b3170f605ff2f38be5c",
+      "tests/test_lonely_runner_uniform.py": "8199b1ee2b818ae8cb9f79d54d22cff87c3b665f7003b5f75381b468a9780e2a",
+      "tests/test_lonely_runner_verify.py": "045100277d7977a59045b588f257f47be1352004e52941c01a9ed7eddc5b6d1a",
+      "tests/test_math_memory.py": "c14b241b6ad0b378a9ab46de7551b015ea34e808c20fa9308ce63b30548996b4"
+    }
+  },
+  "commands": [
+    {
+      "label": "provenance",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.065,
+      "log": "provenance.log",
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b"
+    },
+    {
+      "label": "observer",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.165,
+      "log": "observer.log",
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea"
+    },
+    {
+      "label": "ordinal",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.322,
+      "log": "ordinal.log",
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6"
+    },
+    {
+      "label": "native-demo",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-m",
+        "observational_succ",
+        "demo"
+      ],
+      "exit_code": 0,
+      "seconds": 1.066,
+      "log": "native-demo.log",
+      "log_sha256": "79b19c6e797a496b434d6bea38b1e8f9442e4367257165e4aaea9a377ed91729"
+    },
+    {
+      "label": "math-graph",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/verify_math_memory_graph.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.065,
+      "log": "math-graph.log",
+      "log_sha256": "a048e4e8f18340af31ab52a796c6fe61ccb22e87a6e0d839a4ade2d9a6b5e77e"
+    },
+    {
+      "label": "property-graph",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/verify_succ_property_graph.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.064,
+      "log": "property-graph.log",
+      "log_sha256": "70092c26decb873de2a8bf2346f4e84f9d78dc715183187ca07622e2d4e036ae"
+    },
+    {
+      "label": "academic-vii",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/academic_main_vii_gate.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.221,
+      "log": "academic-vii.log",
+      "log_sha256": "fc0848ac9438d8abd8ec33013620a297cf1eacd4080820572f09dad3202525c8"
+    },
+    {
+      "label": "academic-viii",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/academic_main_viii_gate.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.971,
+      "log": "academic-viii.log",
+      "log_sha256": "a97c8582c5a5315ba7a27e5ac312c052081af3d3a01d91f18290b773534da5c1"
+    },
+    {
+      "label": "duck-dependencies",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/verify_duck_pi_dependencies.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.114,
+      "log": "duck-dependencies.log",
+      "log_sha256": "b72315ee85b272cb54f778d3ed363d54b51ca0806af6add1c02278898bf852ab"
+    },
+    {
+      "label": "hostile-registry",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/main_vii_hostile_replay.py",
+        "--target-repo",
+        ".",
+        "--require-fixed"
+      ],
+      "exit_code": 0,
+      "seconds": 0.666,
+      "log": "hostile-registry.log",
+      "log_sha256": "92f667564ad015299ffb3b850b120d1f0c983ba912557f1ddf4a92680e0d5f76"
+    },
+    {
+      "label": "original-source",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/pi_source_genesis_oracle.py"
+      ],
+      "exit_code": 0,
+      "seconds": 4.875,
+      "log": "original-source.log",
+      "log_sha256": "16f731887789f5deedba00754d78cc984b986cbed2b1cf3a4a3acc00521a3314"
+    },
+    {
+      "label": "math-catalog",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/build_math_memory.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.465,
+      "log": "math-catalog.log",
+      "log_sha256": "2fc8b553719d4f5bf0cef6a3c7d775ec2e138c693ec9704333f91f4e2f607b9b"
+    },
+    {
+      "label": "lonely-tests",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_lonely_runner_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "seconds": 9.686,
+      "log": "lonely-tests.log",
+      "log_sha256": "0b616779f1cc9b1f5e4fd05e477469e4f49aacf12429769719e24c7400172d8d"
+    },
+    {
+      "label": "inherited-exact",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-m",
+        "unittest",
+        "tests.test_farey_gauss_defect",
+        "tests.test_coverage_sieve_crt",
+        "tests.test_circle_transport",
+        "tests.test_source_proof_certificate",
+        "tests.test_math_memory_graph",
+        "tests.test_math_memory"
+      ],
+      "exit_code": 0,
+      "seconds": 0.365,
+      "log": "inherited-exact.log",
+      "log_sha256": "f1b57918a96ab298f846ad2fe96f4468300414a74dcec7b63a266173258b336f"
+    },
+    {
+      "label": "published-controls",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_certificates.py",
+        "--output",
+        "/tmp/succ-lonely-source-census/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 0.415,
+      "log": "published-controls.log",
+      "log_sha256": "114415f425ac6ebf637ed71e62565805e1b1dc8d3f0b4a6142809b296248babb"
+    },
+    {
+      "label": "uniform-rule",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_uniform_probe.py",
+        "--output",
+        "/tmp/succ-lonely-source-census/uniform.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.165,
+      "log": "uniform-rule.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "label": "two-entry",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_two_entry_probe.py",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/gamma.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.766,
+      "log": "two-entry.log",
+      "log_sha256": "308f7d04256ba7de423b8708cf8832b7889c1c70d3ef78457c71e38778a05a0f"
+    },
+    {
+      "label": "census-5",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "5",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n5.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 0.165,
+      "log": "census-5.log",
+      "log_sha256": "55074bc5f61d86d0afa3c1ef69581d54b04e170741ed11cd75b4180433696378"
+    },
+    {
+      "label": "census-6",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "6",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n6.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 0.165,
+      "log": "census-6.log",
+      "log_sha256": "0ebfc550bec53341689701fbd94295c069b553a9bb204c4c9afc7d871f335eca"
+    },
+    {
+      "label": "census-7",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "7",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n7.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 0.215,
+      "log": "census-7.log",
+      "log_sha256": "62ef3106e000fa4b0c9a5c2dae94936506d24d72ea393462f07cc7ab22d4d6d0"
+    },
+    {
+      "label": "census-8",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "8",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n8.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 0.215,
+      "log": "census-8.log",
+      "log_sha256": "df4546491a682cbf3af3af162fa9eb17b1c5c5407db77f801b6b21c36c810ba4"
+    },
+    {
+      "label": "census-9",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "9",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n9.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 0.265,
+      "log": "census-9.log",
+      "log_sha256": "bcff0718be63bb0bccab80b4ec461a3237dd1e7f4a0528c12f616b01e1ad27b3"
+    },
+    {
+      "label": "census-10",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "10",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n10.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 0.315,
+      "log": "census-10.log",
+      "log_sha256": "03dd86ef60d73494e8e37dbfa68504f7edad908aaab9f633c17b6e2038cba9fb"
+    },
+    {
+      "label": "census-11",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "11",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n11.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 0.415,
+      "log": "census-11.log",
+      "log_sha256": "5ccc1bbc25bf65add749224cd369908b267ecd888ff1198138158d35481db632"
+    },
+    {
+      "label": "census-12",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "12",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n12.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 0.566,
+      "log": "census-12.log",
+      "log_sha256": "3311bd53b97e92a348165037f958520355997f0aebb3ee52158fa64c7965d4fb"
+    },
+    {
+      "label": "census-13",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "13",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n13.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 0.716,
+      "log": "census-13.log",
+      "log_sha256": "eace8b837502f52e0ca7aeec76dca56702a8f8e21f8cca5e84a952537d0196d1"
+    },
+    {
+      "label": "census-14",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "14",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n14.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 1.016,
+      "log": "census-14.log",
+      "log_sha256": "23e7f83b21ae829b976347a45579b38a37a7b54e72ba3d50b7f8b14d684b4c0e"
+    },
+    {
+      "label": "census-15",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "15",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n15.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 1.367,
+      "log": "census-15.log",
+      "log_sha256": "dfb70aa203bc98e4e23e1c7a72bd42cfb674d4d8edd2a407483faaa5fcd8afec"
+    },
+    {
+      "label": "census-16",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "16",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n16.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 1.518,
+      "log": "census-16.log",
+      "log_sha256": "cf0fad61c8782892c0c24488c74a5c0fc9052611f13406783d4bc8c95f623043"
+    },
+    {
+      "label": "census-17",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "17",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n17.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 2.019,
+      "log": "census-17.log",
+      "log_sha256": "f87e1b85dc9d028587758e588cac59c1bed962dcb4cbafc9846149be024faf45"
+    },
+    {
+      "label": "census-18",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "18",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n18.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 2.52,
+      "log": "census-18.log",
+      "log_sha256": "05633b1a126aa8fae31a228385691963bc375ba809e02a8970f04ee6855a7a33"
+    },
+    {
+      "label": "census-19",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "19",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n19.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 3.121,
+      "log": "census-19.log",
+      "log_sha256": "324c8d6cf2fcad07ecc2829d223de580582deefafc7cca8a30012545298dd48c"
+    },
+    {
+      "label": "census-20",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census.py",
+        "--n",
+        "20",
+        "--max-domain-candidates",
+        "25000000",
+        "--verify",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/receipts/census-n20.json",
+        "--certificate-dir",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner/research/2026-10-28/lonely_runner/certificates"
+      ],
+      "exit_code": 0,
+      "seconds": 4.173,
+      "log": "census-20.log",
+      "log_sha256": "8284e5cffc133929ac5188ac874a0e15ad63a8292d963e0c3adc4d9f744574b6"
+    },
+    {
+      "label": "independent-census",
+      "command": [
+        "/home/leah/.local/bin/python",
+        "scripts/lonely_runner_census_independent.py",
+        "--max-n",
+        "8",
+        "--output",
+        "/tmp/succ-lonely-source-census/independent-census.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.116,
+      "log": "independent-census.log",
+      "log_sha256": "24ddee1e6265dc271a5e4d055d22e42547d5fb5dde2d62c06adaf5fb838bf744"
+    }
+  ],
+  "failures": [],
+  "status": "PASS",
+  "authority": "local executed gates; hosted and kernel observations are separate"
+}

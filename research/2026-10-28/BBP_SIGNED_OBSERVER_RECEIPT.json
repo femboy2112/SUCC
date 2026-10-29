@@ -1,0 +1,193 @@
+{
+  "RH": "OPEN",
+  "academic_novelty": "UNVERIFIED; classical gauge/Weyl ingredients",
+  "alternating_phase_controls": [
+    {
+      "boundary_sum": 18,
+      "limit": 64,
+      "paper_boundary_mean_limit": "1-log(2)",
+      "weyl_sum": 0
+    },
+    {
+      "boundary_sum": 1230,
+      "limit": 4096,
+      "paper_boundary_mean_limit": "1-log(2)",
+      "weyl_sum": 0
+    }
+  ],
+  "authority": "EXACT FINITE TEST; infinite statements are paper proofs",
+  "base_commit": "fec9b7a72dd6b8c7550d7915070ee8094f2b94a2",
+  "coherent_seed_control": {
+    "paper_bound": "|U_n| <= 1/[15(n+1)^2] for n>=1",
+    "seed": "-pi/16 (irrational; not encoded as a rational seed)",
+    "signed_mean_limit": "1 by the paper tail argument; not numerically certified here"
+  },
+  "hard_pin_examples": [
+    {
+      "L_rayleigh": "128/595",
+      "T_rayleigh": "467/595",
+      "active_pair_fibers": 128,
+      "cutoff": 16,
+      "internal_edges": 467,
+      "limit": 128,
+      "residual_squared_upper": "256/595",
+      "squared_unnormalized_norm": 595
+    },
+    {
+      "L_rayleigh": "128/365",
+      "T_rayleigh": "237/365",
+      "active_pair_fibers": 128,
+      "cutoff": 64,
+      "internal_edges": 237,
+      "limit": 128,
+      "residual_squared_upper": "256/365",
+      "squared_unnormalized_norm": 365
+    }
+  ],
+  "hyperbolic_horizons": [
+    {
+      "L_rayleigh": "1",
+      "T_rayleigh": "0",
+      "active_pair_fibers": 1,
+      "cutoff": 0,
+      "direct_residuals": {
+        "I_minus_T_squared_norm": "3/2",
+        "L_rayleigh": "1",
+        "L_squared_norm": "9/8"
+      },
+      "internal_edges": 0,
+      "limit": 1,
+      "residual_squared_upper": "2",
+      "sharp_signed_scalar_bound": "0",
+      "squared_unnormalized_norm": 1
+    },
+    {
+      "L_rayleigh": "2/3",
+      "T_rayleigh": "1/3",
+      "active_pair_fibers": 2,
+      "cutoff": 0,
+      "direct_residuals": {
+        "I_minus_T_squared_norm": "7/9",
+        "L_rayleigh": "2/3",
+        "L_squared_norm": "19/36"
+      },
+      "internal_edges": 1,
+      "limit": 2,
+      "residual_squared_upper": "4/3",
+      "sharp_signed_scalar_bound": "2/3",
+      "squared_unnormalized_norm": 3
+    },
+    {
+      "L_rayleigh": "8/25",
+      "T_rayleigh": "17/25",
+      "active_pair_fibers": 16,
+      "cutoff": 0,
+      "direct_residuals": {
+        "I_minus_T_squared_norm": "1519/6000",
+        "L_rayleigh": "8/25",
+        "L_squared_norm": "3779/24000"
+      },
+      "internal_edges": 34,
+      "limit": 16,
+      "residual_squared_upper": "16/25",
+      "sharp_signed_scalar_bound": "8/25",
+      "squared_unnormalized_norm": 50
+    },
+    {
+      "L_rayleigh": "8/35",
+      "T_rayleigh": "27/35",
+      "active_pair_fibers": 64,
+      "cutoff": 0,
+      "direct_residuals": {
+        "I_minus_T_squared_norm": "8335/56448",
+        "L_rayleigh": "8/35",
+        "L_squared_norm": "511027/5644800"
+      },
+      "internal_edges": 216,
+      "limit": 64,
+      "residual_squared_upper": "16/35",
+      "sharp_signed_scalar_bound": "8/35",
+      "squared_unnormalized_norm": 280
+    },
+    {
+      "L_rayleigh": "1000/7069",
+      "T_rayleigh": "6069/7069",
+      "active_pair_fibers": 1000,
+      "cutoff": 0,
+      "internal_edges": 6069,
+      "limit": 1000,
+      "residual_squared_upper": "2000/7069",
+      "sharp_signed_scalar_bound": "1000/7069",
+      "squared_unnormalized_norm": 7069
+    },
+    {
+      "L_rayleigh": "2500/23417",
+      "T_rayleigh": "20917/23417",
+      "active_pair_fibers": 10000,
+      "cutoff": 0,
+      "internal_edges": 83668,
+      "limit": 10000,
+      "residual_squared_upper": "5000/23417",
+      "sharp_signed_scalar_bound": "2500/23417",
+      "squared_unnormalized_norm": 93668
+    },
+    {
+      "L_rayleigh": "400/4667",
+      "T_rayleigh": "4267/4667",
+      "active_pair_fibers": 100000,
+      "cutoff": 0,
+      "internal_edges": 1066750,
+      "limit": 100000,
+      "residual_squared_upper": "800/4667",
+      "sharp_signed_scalar_bound": "400/4667",
+      "squared_unnormalized_norm": 1166750
+    }
+  ],
+  "literal_pair_oracle_horizons": [
+    1,
+    64
+  ],
+  "phase_controls": [
+    {
+      "authentic_source_member": true,
+      "cycle_holonomy_turn": "0",
+      "formal_signed_boundary_identity": true,
+      "nonzero_formal_coefficients": 34,
+      "phase_fingerprint_sha256": "291c0e6bec8382386482321341fb0a1692b8bc5dda75de75982035054e52adb0",
+      "source": "authentic_zero_seed"
+    },
+    {
+      "authentic_source_member": false,
+      "cycle_holonomy_turn": "0",
+      "formal_signed_boundary_identity": true,
+      "nonzero_formal_coefficients": 34,
+      "phase_fingerprint_sha256": "23918d1898f9c7c19798d93cdc5e9e6722a099bfc07a4a69d4922bc9df161aa7",
+      "source": "same_forcing_torsion_seed_1_over_15"
+    },
+    {
+      "authentic_source_member": false,
+      "cycle_holonomy_turn": "0",
+      "formal_signed_boundary_identity": true,
+      "nonzero_formal_coefficients": 34,
+      "phase_fingerprint_sha256": "e5dfda4649a5a3b8dcbb307e812677d3a71091d580f33b08f414d26c13a90dbb",
+      "source": "altered_first_pole_4_to_5"
+    },
+    {
+      "authentic_source_member": false,
+      "cycle_holonomy_turn": "0",
+      "formal_signed_boundary_identity": true,
+      "nonzero_formal_coefficients": 0,
+      "phase_fingerprint_sha256": "77e41e636181596744c0791c6a2e85a7e9b9ba2ea42371ef6ccd47762dc808a2",
+      "source": "constant_nonnormal_control"
+    }
+  ],
+  "phase_controls_horizon": 48,
+  "pi_normality": "OPEN",
+  "schema": "SUCC-divisor-observer-exact-receipt-v1",
+  "source_sha256": {
+    "observational_succ/bbp_natural_carrier.py": "148747149ba2beaa74ae5c384b6379c5983dd6947caf4da631c2f0bcb15c9ee4",
+    "observational_succ/origin_fiber_arithmetic_observer.py": "c58186b834a84586082e5de104261b346fbd5aec6436c9dba64ada9cdcf575e2",
+    "research/2026-10-21/DUCK_BBP_SOURCE_IDENTITY.md": "aa9a18d44d621346e66fe25876ab9ab67031404992f349bbdacd289725f34515",
+    "research/2026-10-28/OILY_ZETA_CAUSAL_GROWTH_AND_SOURCE_DEFECT.md": "3b0b5d3c1b25ddc0f3b000e6565c53d2e53d8550733d4911a727de281594424c"
+  }
+}

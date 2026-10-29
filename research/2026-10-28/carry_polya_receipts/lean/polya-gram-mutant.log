@@ -1,0 +1,6 @@
+/tmp/succ-bbp-resolvent-validation/lean/kernel-build-n34xsswe/polya-gram-mutant.lean:4:2: error: type mismatch
+  row_energy m k a b
+has type
+  ((m - k) * a + k * b) ^ 2 + k * (m - k) * (a - b) ^ 2 = m * ((m - k) * a ^ 2 + k * b ^ 2) : Prop
+but is expected to have type
+  ((m - k) * a + k * b) ^ 2 + k * (m - k) * (a - b) ^ 2 = (m + 1) * ((m - k) * a ^ 2 + k * b ^ 2) : Prop

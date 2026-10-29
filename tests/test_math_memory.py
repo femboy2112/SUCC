@@ -69,6 +69,21 @@ class MathMemoryTests(unittest.TestCase):
             p.write_text(json.dumps(data),encoding="utf-8")
             self.assertTrue(any("DUPLICATE FQ" in w for w in build(root)["warnings"]))
 
+    def test_dependency_cache_cannot_change_research_catalog(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self.fixture(root)
+            before = build(root)
+            cache = root / "formal/project/.lake/packages/mathlib/Mathlib"
+            cache.mkdir(parents=True)
+            (cache / "Dependency.lean").write_text("theorem external : True := by trivial\n")
+            (cache / "README.md").write_text("# External package\n")
+            self.assertEqual(build(root), before)
+            # A neighboring repository proof must still be indexed.
+            (root / "formal/project/Local.lean").write_text("theorem localProof : True := by trivial\n")
+            paths = {row["path"] for row in build(root)["source_documents"]}
+            self.assertIn("formal/project/Local.lean", paths)
+
 
 if __name__ == "__main__":
     unittest.main()

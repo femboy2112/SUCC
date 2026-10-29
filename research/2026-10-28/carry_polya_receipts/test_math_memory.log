@@ -1,0 +1,33 @@
+test_collision_safe_fqid_and_original_bare_ids (test_math_memory.MathMemoryTests.test_collision_safe_fqid_and_original_bare_ids) ... ok
+test_dependency_cache_cannot_change_research_catalog (test_math_memory.MathMemoryTests.test_dependency_cache_cannot_change_research_catalog) ... ok
+test_deterministic_manifest_and_stale_detection (test_math_memory.MathMemoryTests.test_deterministic_manifest_and_stale_detection) ... STALE/MISSING mathematics catalog: /tmp/tmpfh3dybu5/docs/math_memory/CLAIM_CATALOG.json
+ok
+test_duplicate_fqid_namespace_is_flagged (test_math_memory.MathMemoryTests.test_duplicate_fqid_namespace_is_flagged) ... ok
+test_unregistered_is_visible_not_silently_merged (test_math_memory.MathMemoryTests.test_unregistered_is_visible_not_silently_merged) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.017s
+
+OK
+{
+  "coverage": {
+    "claim_rows_found": 3,
+    "claim_supplements_scanned": 2,
+    "registered_claim_rows": 3,
+    "registered_namespace_count": 2,
+    "source_documents_found": 1
+  },
+  "warning_count": 0,
+  "warnings": []
+}
+{
+  "coverage": {
+    "claim_rows_found": 3,
+    "claim_supplements_scanned": 2,
+    "registered_claim_rows": 3,
+    "registered_namespace_count": 2,
+    "source_documents_found": 1
+  },
+  "warning_count": 0,
+  "warnings": []
+}

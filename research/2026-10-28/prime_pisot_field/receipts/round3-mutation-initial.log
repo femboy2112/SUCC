@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/mnt/data/succ-prime-field/research/2026-10-28/prime_pisot_field/mutation_probe.py", line 51, in <module>
+    probe('replace negative Pisot conjugate by positive inverse', core.Quad, 'conjugate',
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          lambda self: -old_conjugate(self),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          'PisotSupport.test_negative_conjugate_sign_mutant_is_rejected')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/succ-prime-field/research/2026-10-28/prime_pisot_field/mutation_probe.py", line 30, in probe
+    raise AssertionError('mutation not discriminated: '+name)
+AssertionError: mutation not discriminated: replace negative Pisot conjugate by positive inverse

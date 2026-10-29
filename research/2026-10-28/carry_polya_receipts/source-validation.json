@@ -1,0 +1,391 @@
+{
+  "commands": [
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "scripts/verify_provenance.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "provenance",
+      "log": "provenance.log",
+      "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+      "seconds": 0.115
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "scripts/observer_foundations_probe.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "observer-foundations",
+      "log": "observer-foundations.log",
+      "log_sha256": "2a59885819b385319bbe54a849257ed2b949c88077c864a0315c9c9531a208ea",
+      "seconds": 0.165
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "scripts/ordinal_succ_report_probe.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "ordinal",
+      "log": "ordinal.log",
+      "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+      "seconds": 2.921
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "-m",
+        "observational_succ",
+        "demo"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "native-demo",
+      "log": "native-demo.log",
+      "log_sha256": "79b19c6e797a496b434d6bea38b1e8f9442e4367257165e4aaea9a377ed91729",
+      "seconds": 0.867
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "scripts/verify_math_memory_graph.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "math-memory-graph",
+      "log": "math-memory-graph.log",
+      "log_sha256": "b7999ae1c4b6603a17b22d342fdb942f6e29f36c551eaa601a13c5bec7a09968",
+      "seconds": 0.065
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "scripts/verify_succ_property_graph.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "property-graph",
+      "log": "property-graph.log",
+      "log_sha256": "70092c26decb873de2a8bf2346f4e84f9d78dc715183187ca07622e2d4e036ae",
+      "seconds": 0.065
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "scripts/academic_main_vii_gate.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "academic-vii",
+      "log": "academic-vii.log",
+      "log_sha256": "c165759c91b8a5986be6fe05f6e4fbf992d1b8118362d88bbbbb3fa4bbe19dcb",
+      "seconds": 2.421
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "scripts/academic_main_viii_gate.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "academic-viii",
+      "log": "academic-viii.log",
+      "log_sha256": "7c34b56662194b8e1363290ec29637b4e6d8153b71052bbcfbd94cf012e36e24",
+      "seconds": 2.421
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "scripts/verify_duck_pi_dependencies.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "duck-dependencies",
+      "log": "duck-dependencies.log",
+      "log_sha256": "b72315ee85b272cb54f778d3ed363d54b51ca0806af6add1c02278898bf852ab",
+      "seconds": 0.115
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "scripts/main_vii_hostile_replay.py",
+        "--target-repo",
+        ".",
+        "--require-fixed"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "hostile-registry",
+      "log": "hostile-registry.log",
+      "log_sha256": "647d6abdf4c1b0880c9fbb13f600a062873e89edd7b00b7599dac61515e0de3f",
+      "seconds": 0.516
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "scripts/pi_source_genesis_oracle.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "original-source-genesis",
+      "log": "original-source-genesis.log",
+      "log_sha256": "16f731887789f5deedba00754d78cc984b986cbed2b1cf3a4a3acc00521a3314",
+      "seconds": 4.026
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_bbp_dirichlet_resolvent.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "test_bbp_dirichlet_resolvent",
+      "log": "test_bbp_dirichlet_resolvent.log",
+      "log_sha256": "c54ace337ce8ea7f528aab892a578175ba75fedbbb435daa670cc50d471fe5a3",
+      "seconds": 0.165
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_divisor_observer_spectrum.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "test_divisor_observer_spectrum",
+      "log": "test_divisor_observer_spectrum.log",
+      "log_sha256": "02e1d5aa411a395a2c95dda21cc7b496a1110c34b4da17b94cdfa504337af832",
+      "seconds": 0.515
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_polya_coherent_observer.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "test_polya_coherent_observer",
+      "log": "test_polya_coherent_observer.log",
+      "log_sha256": "165d3c94173d114740c3ed460af6068d939244303a014e71892829e5152e9dff",
+      "seconds": 0.516
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_oily_prime_growth_compiler.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "test_oily_prime_growth_compiler",
+      "log": "test_oily_prime_growth_compiler.log",
+      "log_sha256": "e1b0cbf57a12b0aeff9f9dfa746af2cd8d3b236ee6a4bdebd938ef65d9bebc7e",
+      "seconds": 0.766
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_origin_fiber_arithmetic_observer.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "test_origin_fiber_arithmetic_observer",
+      "log": "test_origin_fiber_arithmetic_observer.log",
+      "log_sha256": "a02bdde977e73c9ff2d27dea4f7441c03f5f4abde186c2b93f3fdb904f38405f",
+      "seconds": 0.165
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_original_bbp_carry_origin_bridge.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "test_original_bbp_carry_origin_bridge",
+      "log": "test_original_bbp_carry_origin_bridge.log",
+      "log_sha256": "add39d9394386173c12321489dadccba4c48492e373f2df21cc4c635070bc451",
+      "seconds": 0.115
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_origin_locked_oily_zeta.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "test_origin_locked_oily_zeta",
+      "log": "test_origin_locked_oily_zeta.log",
+      "log_sha256": "d0e790fab633d238fb3477ae5df727b77ae231be8316ac5625f311f5528c0664",
+      "seconds": 0.315
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_bbp_virtual_seed_prior.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "test_bbp_virtual_seed_prior",
+      "log": "test_bbp_virtual_seed_prior.log",
+      "log_sha256": "da6d03bb17c15397b6f1731292a0b0fa74d81fc781dcd539d268ba6bf1a8eeab",
+      "seconds": 0.165
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_math_memory.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "test_math_memory",
+      "log": "test_math_memory.log",
+      "log_sha256": "2638863d4fb90d4264d4cf45d524f14f3bfa53846048c0d448af5e0138de8771",
+      "seconds": 0.115
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "/tmp/succ-bbp-resolvent-validation/source-release/parent-oracles/scripts/oily_prime_growth_independent_oracle.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "oily_prime_growth_independent_oracle",
+      "log": "oily_prime_growth_independent_oracle.log",
+      "log_sha256": "dbe319c3fe360716a2df06d29c67bb661916ad4f9534a0f0af9266891a8a1cbe",
+      "seconds": 0.917
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "/tmp/succ-bbp-resolvent-validation/source-release/parent-oracles/scripts/bbp_dirichlet_finite_part_oracle.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "bbp_dirichlet_finite_part_oracle",
+      "log": "bbp_dirichlet_finite_part_oracle.log",
+      "log_sha256": "8ce9bd5a9d30eb52bb9586b2fcf84fad7a8cbf4cb02fe5a7fe1120a39bb3eae4",
+      "seconds": 0.968
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent/scripts/bbp_dirichlet_resolvent_oracle.py",
+        "--output",
+        "/tmp/succ-bbp-resolvent-validation/source-release/BBP_DIRICHLET_RESOLVENT_RECEIPT.json"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "bbp_dirichlet_resolvent_oracle",
+      "log": "bbp_dirichlet_resolvent_oracle.log",
+      "log_sha256": "263adf43513af4c96bd737296105aea934dad48d6dfc062630760fb23b6dcdf4",
+      "seconds": 11.393
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent/scripts/divisor_observer_spectrum_probe.py",
+        "--output",
+        "/tmp/succ-bbp-resolvent-validation/source-release/BBP_SIGNED_OBSERVER_RECEIPT.json"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "divisor_observer_spectrum_probe",
+      "log": "divisor_observer_spectrum_probe.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 0.165
+    },
+    {
+      "command": [
+        "/tmp/succ-resolvent-oracles-env/bin/python",
+        "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent/scripts/polya_coherence_oracle.py",
+        "--output",
+        "/tmp/succ-bbp-resolvent-validation/source-release/POLYA_COHERENCE_ORACLE.json"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent",
+      "exit_code": 0,
+      "label": "polya_coherence_oracle",
+      "log": "polya_coherence_oracle.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "seconds": 0.666
+    }
+  ],
+  "dependency_versions": {
+    "mpmath": "1.3.0",
+    "numpy": "2.5.0",
+    "scipy": "1.18.0",
+    "sympy": "1.14.0"
+  },
+  "failures": [],
+  "full_suite_included": false,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "schema": "succ.carry-polya.local-validation.v1",
+  "scope": "Local execution only; no hosted CI, analytic proof or normality authority",
+  "source_manifest_sha256": "97f41dd3133baf6bcc204c8f36b57d797a676fab8e5840753cce55edfd2f3417",
+  "status": "PASS"
+}

@@ -1,0 +1,6 @@
+/tmp/succ-lonely-kernel-final/kernel-build-wwvtj495/closed-endpoint-mutant.lean:4:2: error: type mismatch
+  closed_chain_cover h
+has type
+  ∀ (t : ℝ), a ≤ t → t ≤ b → ∃ x ∈ xs, left x ≤ t ∧ t ≤ right x : Prop
+but is expected to have type
+  ∀ (t : ℝ), a ≤ t → t ≤ b → ∃ x ∈ xs, left x ≤ t ∧ t < right x : Prop

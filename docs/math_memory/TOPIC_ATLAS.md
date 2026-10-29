@@ -2,6 +2,18 @@
 
 Companion to `INDEX.md` and `RELATION_GRAPH.json`. Each domain resolves a human question to concept nodes (`MM-*`), claim families (via `CLAIM_CATALOG.json`), and the open gate. **Nothing here promotes a status**; π/RH are OPEN.
 
+## Carry, Pólya and source-locked zeta response (2026-10-28 child research)
+
+Search aliases: **divisor boundary**, **commutator scalar**, **hyperbolic shell**,
+**origin-pinned spectral gap**, **minimal BBP zeta equation**, **Gamma completion
+obstruction**, **Pólya coherent lift**, **Hahn leakage**, **terminal-law uniqueness**.
+Start with the [result summary](../../research/2026-10-28/CARRY_POLYA_SOURCE_LOCKED_SUMMARY.md)
+and [scoped CPS supplement](../CLAIM_SUPPLEMENT_CARRY_POLYA_RESOLVENT.md).
+Graph nodes `MM-CPS-1`, `MM-CPS-2`, and `MM-CPS-3` distinguish selected-phase observer
+obstruction, forcing-only analytic response, and constructed prior coherence.
+None proves the open signed zero-seeded BBP Weyl estimate. These are research-local
+results on a child of #348, with limited Lean cores and exact source/proof receipts.
+
 ## Natural-language aliases (vague query → where it lives)
 
 | If you half-remember… | It is… | Entry points |
@@ -57,3 +69,12 @@ Matching Ω across these is a shared scalar, not an isomorphism of sources.
 ## Current frontier (smallest open obligation)
 
 Prove `E_{N,M_N}(h)→0` for **one** admissible `M_N=16^{k}3^{L}=o(N)` and every fixed h≠0 — equivalently (`MM-T-030`) the selected real Weyl `o(N)`. Everything above either reduces to this, bounds it from above at `N−O(log N)`, restates it as an equivalence, or refutes a shortcut past it.
+
+## Finite circle covers and Lonely Runner research
+
+The [Lonely Runner package](../../research/2026-10-28/lonely_runner/README.md)
+uses source-labelled exact rational interval chains with a generator-independent
+checker. It separates a known deletion-value clarification, local-rule converse
+and velocity compression, restricted ladder optimality, and two-entry growth
+bounds. Follow [LRN claims](../CLAIM_SUPPLEMENT_LONELY_RUNNER.md) to precise proof
+authority; this discovery entry certifies no theorem or academic priority.

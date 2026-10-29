@@ -1,0 +1,109 @@
+{
+  "schema": "succ.main_xiv.independent_census.v1",
+  "date": "2026-10-28",
+  "source_branch": "research/main-xiv-independent-integration-audit-2026-10-28",
+  "script": "scripts/main_xiv_lonely_n31_probe.py",
+  "git_blob_sha1": "2a65ed621b25c14116c430d01f21dc93d9b2d806",
+  "sha256": "c9e9644278a3ad822e6502611d81a44a99d033d3a37aaac42e0c19ba0a1a103b",
+  "language": "Python 3; standard library fractions.Fraction; exact rational comparisons",
+  "status": "COMPUTATIONALLY VERIFIED conditional on paper-proved finite-domain reductions",
+  "prerequisites": [
+    "PR #351 GAMMA-05: B_n upper bound on first insertion and w2 <= 2(n-1)w1",
+    "PR #353 exact baseline-gap occupancy bound R1",
+    "PR #353 one-insertion-hole statement required for each residual gap",
+    "Exact centre-divisibility and residual gap width pruning as explained in audit dossier"
+  ],
+  "observed": [
+    {
+      "n": 5,
+      "deletion_pairs": 6,
+      "retained_w1_rows": 67,
+      "individual_w2_tests": 9,
+      "dual_full_cover_checks": 9,
+      "accepted": [
+        [
+          5,
+          1,
+          3,
+          6,
+          8
+        ]
+      ]
+    },
+    {
+      "n": 8,
+      "deletion_pairs": 21,
+      "retained_w1_rows": 170,
+      "individual_w2_tests": 73,
+      "dual_full_cover_checks": 73,
+      "accepted": [
+        [
+          8,
+          2,
+          3,
+          11,
+          13
+        ]
+      ]
+    },
+    {
+      "n": 29,
+      "deletion_pairs": 378,
+      "retained_w1_rows": 6471,
+      "individual_w2_tests": 2025,
+      "dual_full_cover_checks": 2025,
+      "accepted": []
+    },
+    {
+      "n": 30,
+      "deletion_pairs": 406,
+      "retained_w1_rows": 7723,
+      "individual_w2_tests": 2735,
+      "dual_full_cover_checks": 2735,
+      "accepted": []
+    },
+    {
+      "n": 31,
+      "deletion_pairs": 435,
+      "retained_w1_rows": 7925,
+      "individual_w2_tests": 2651,
+      "dual_full_cover_checks": 2651,
+      "accepted": []
+    }
+  ],
+  "positive_controls": [
+    {
+      "n": 74,
+      "removed": [
+        70,
+        72
+      ],
+      "added": [
+        140,
+        144
+      ],
+      "complete_band_cover": true
+    },
+    {
+      "n": 284,
+      "removed": [
+        280,
+        282
+      ],
+      "added": [
+        560,
+        564
+      ],
+      "complete_band_cover": true
+    }
+  ],
+  "method_notes": [
+    "Numerical bounds on inserted speeds are theorem-dependent; the independent script is not a proof of them.",
+    "Full independent finite band union was checked for every individually surviving candidate with --dual.",
+    "n=29 and n=30 retained-row and w2 counts exactly match the independent prior PR #353 receipts.",
+    "All comparisons of interval endpoints and floor/ceiling bounds use Python Fraction integer arithmetic; elapsed_seconds in stdout is nondeterministic and excluded from this receipt."
+  ],
+  "hosted_CI_run": false,
+  "full_repository_suite_run": false,
+  "external_peer_review": false
+}

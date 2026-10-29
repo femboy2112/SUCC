@@ -1,0 +1,165 @@
+{
+  "academic_novelty_claim": false,
+  "all_GW_matchings_fail": [
+    {
+      "failed_removed_speed": 1,
+      "gcd": 1,
+      "matching": [
+        [
+          1,
+          8
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          5,
+          12
+        ]
+      ],
+      "window_integer": 6
+    },
+    {
+      "failed_removed_speed": 1,
+      "gcd": 1,
+      "matching": [
+        [
+          1,
+          8
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      "window_integer": 6
+    },
+    {
+      "failed_removed_speed": 1,
+      "gcd": 1,
+      "matching": [
+        [
+          1,
+          10
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          5,
+          12
+        ]
+      ],
+      "window_integer": 6
+    },
+    {
+      "failed_removed_speed": 1,
+      "gcd": 1,
+      "matching": [
+        [
+          1,
+          10
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "window_integer": 6
+    },
+    {
+      "failed_removed_speed": 1,
+      "gcd": 1,
+      "matching": [
+        [
+          1,
+          12
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          5,
+          10
+        ]
+      ],
+      "window_integer": 6
+    },
+    {
+      "failed_removed_speed": 1,
+      "gcd": 1,
+      "matching": [
+        [
+          1,
+          12
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          5,
+          8
+        ]
+      ],
+      "window_integer": 6
+    }
+  ],
+  "exact_loneliness": "1/7",
+  "full_fraction_cover": true,
+  "inserted": [
+    8,
+    10,
+    12
+  ],
+  "lower_witness": {
+    "minimum": "1/7",
+    "time": "1/7"
+  },
+  "n": 7,
+  "prefix_hole_conjecture_refuted": false,
+  "prefix_holes": [
+    {
+      "inserted_count": 0,
+      "minimum": "3/14",
+      "time": "3/28"
+    },
+    {
+      "inserted_count": 1,
+      "minimum": "5/28",
+      "time": "5/56"
+    },
+    {
+      "inserted_count": 2,
+      "minimum": "11/70",
+      "time": "11/140"
+    }
+  ],
+  "refuted_claim": "all three-entry tight sets are individually GW admissible",
+  "removed": [
+    1,
+    3,
+    5
+  ],
+  "schema": "SUCC-three-entry-GW-countermodel-v1",
+  "speed_gcd": 2,
+  "speeds": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    12
+  ]
+}

@@ -1,0 +1,280 @@
+{
+  "accepted_originals": 3,
+  "authority": {
+    "general_lonely_runner_proved": false,
+    "hosted": "No hosted workflow result is established by this receipt.",
+    "implementation_independence": "Verifier imports neither generation nor search modules. This audit directly calls that verifier, so it is not another independent checker implementation.",
+    "kernel": "No Lean compiler was rerun in this integration audit. Earlier kernel receipts have their own source hashes and narrower theorem scope.",
+    "literature": "Prior upper-half classification is recorded; unrestricted Gamma and Beta academic priority remain unverified. No new broad literature search in this final integration pass.",
+    "provenance": "Source metadata in certificates is not independently authenticated by mathematical cover verification.",
+    "reasoner_independence": "Same-model read-only cross-review; not blind or model-diverse evidence. The reviewing agent also authored the verifier."
+  },
+  "branch_at_observation": "research/succ-lonely-runner-exact-certificates-2026-10-28",
+  "certificate_replay": [
+    {
+      "fixture": "bcs-five.json",
+      "semantic_mutations": [
+        {
+          "attack": "winding",
+          "mutant_payload_sha256": "c541e29546f6c85ea3a4181d0fb0d3a84ae0fa041518daf6ece706d620c764a2",
+          "reason": "endpoint does not match its runner, winding, shift and radius",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "gcd",
+          "mutant_payload_sha256": "a294baa38e755f3f5e779c1ce8b2d7a6b1ef10642e5f4bcd6edf8a2a371a599d",
+          "reason": "declared velocity gcd is incorrect",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "threshold",
+          "mutant_payload_sha256": "b2fef98ff1b680125de00c9d4ca46494370df69c51beafe739e1ea82a5e6267a",
+          "reason": "threshold must be 1/(n+1), counting moving runners",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "count",
+          "mutant_payload_sha256": "cd37d431f15d2d060cbb0eb8715fc9f474686d929a485bb93df441532e69b234",
+          "reason": "n does not equal the number of moving runners",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "missing_final",
+          "mutant_payload_sha256": "3151f000f9b0170e8ea4836e08da2369237af573bfd69ce075897148fa098dc7",
+          "reason": "cover chain does not reach time 1",
+          "rehashed": true,
+          "rejected": true
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "all_time_cover": true,
+        "authority": "exact integer interval certificate; not a Lean kernel claim",
+        "checked_intervals": 11,
+        "delta": [
+          15,
+          94
+        ],
+        "n": 5,
+        "payload_sha256": "b717a6e62c637a6b2b7dee48343722cf500f9bdabe3e1cf4e9e4670b973d234b",
+        "strict_shifted_counterexample": true,
+        "threshold": [
+          1,
+          6
+        ]
+      }
+    },
+    {
+      "fixture": "bcs-thirteen.json",
+      "semantic_mutations": [
+        {
+          "attack": "winding",
+          "mutant_payload_sha256": "e5374d2dfbb6404e1d28b01cf43d540da94efae6f2e207eb94db754f31dcf210",
+          "reason": "endpoint does not match its runner, winding, shift and radius",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "gcd",
+          "mutant_payload_sha256": "d0a534af0cee0e0ebe5f6bb36b6d4ddbe4642946aae60cbe397cf7c9412bcc1d",
+          "reason": "declared velocity gcd is incorrect",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "threshold",
+          "mutant_payload_sha256": "73b18ad20467ce3882bb6fb2da0321f0ee2bc97cc6de7569f60242d202cf7db8",
+          "reason": "threshold must be 1/(n+1), counting moving runners",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "count",
+          "mutant_payload_sha256": "97fa0b8150544102347d6813785c0fa0b4f0887e46f5e269c527a2c4cd42da28",
+          "reason": "n does not equal the number of moving runners",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "missing_final",
+          "mutant_payload_sha256": "ce3629c4d682664c0d0640a45465f93f8fd7bb238c01c56465eaafceb737e224",
+          "reason": "cover chain does not reach time 1",
+          "rehashed": true,
+          "rejected": true
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "all_time_cover": true,
+        "authority": "exact integer interval certificate; not a Lean kernel claim",
+        "checked_intervals": 55,
+        "delta": [
+          1,
+          16
+        ],
+        "n": 13,
+        "payload_sha256": "4209c254f8633100543d8d8f4af61d9811ed8e58904b01e8c20aa6395adef369",
+        "strict_shifted_counterexample": true,
+        "threshold": [
+          1,
+          14
+        ]
+      }
+    },
+    {
+      "fixture": "poliakova-n95.json",
+      "semantic_mutations": [
+        {
+          "attack": "winding",
+          "mutant_payload_sha256": "c2d5433db3aaa6e4890075af4c6289410038e14ed26d1425c8be94b92ed25c24",
+          "reason": "endpoint does not match its runner, winding, shift and radius",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "gcd",
+          "mutant_payload_sha256": "6a8ddd902ee4028b50f98f613070a747ece890ec1c30c52afe185587e9ee590e",
+          "reason": "declared velocity gcd is incorrect",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "threshold",
+          "mutant_payload_sha256": "457ff98d3ecf066819ef3ddd22c76764121634e008ba3f65790b5ae395a1f204",
+          "reason": "threshold must be 1/(n+1), counting moving runners",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "count",
+          "mutant_payload_sha256": "5f2cefadbcb28da7efeeae3171deeeee6823049846f3584691968a73b64749ab",
+          "reason": "n does not equal the number of moving runners",
+          "rehashed": true,
+          "rejected": true
+        },
+        {
+          "attack": "missing_final",
+          "mutant_payload_sha256": "25330f8439679c1defca97dfabcc9e125272d4c8d87182643ed9ab673da09f5a",
+          "reason": "cover chain does not reach time 1",
+          "rehashed": true,
+          "rejected": true
+        }
+      ],
+      "verdict": {
+        "accepted": true,
+        "all_time_cover": true,
+        "authority": "exact integer interval certificate; not a Lean kernel claim",
+        "checked_intervals": 5225,
+        "delta": [
+          1,
+          97
+        ],
+        "n": 95,
+        "payload_sha256": "70f6f69261435f330fd5af3db263050bac2b55a3ef09d08a0c15d35c6d86aafa",
+        "strict_shifted_counterexample": true,
+        "threshold": [
+          1,
+          96
+        ]
+      }
+    }
+  ],
+  "commit_at_observation": "16c326c9ec25be0296e46f3df7561396bd0775e6",
+  "integration_review": {
+    "failure_aggregation": "Nonzero subprocess exits, incomplete exports, prohibited axioms, failed paired controls, and changed source hashes prevent a PASS/KERNEL_CHECKED result",
+    "gamma_saved_receipt_gate": "RESOLVED: integrated --verify replay compares complete deterministic receipt text",
+    "lean_controls": "The three current mutations are false strengthenings: 3/(2n-3), strict closed-chain right endpoint, and 3*removedCount<=length",
+    "lean_import_cache": "Current modules import only the cache targets or Lean/Std dependencies supplied by the pinned toolchain",
+    "lean_trusted_input_triggers": {
+      "paths": [
+        "lean-toolchain",
+        "formal/mathlib_bridge/lake-manifest.json",
+        "formal/kernel_audit/ExportCommand.lean",
+        "scripts/cambrian_audit_c_lean.py"
+      ],
+      "status": "RESOLVED"
+    },
+    "main_ci_change": "Only the test-job timeout changes from 25 to 45 minutes; inherited checks remain"
+  },
+  "method": {
+    "configuration_source": "Committed certificate JSON bytes, without generator/search imports",
+    "count": "Increment n while retaining actual velocities",
+    "gcd": "Increment the declared velocity gcd",
+    "instrument": "observational_succ.lonely_runner_verify.verify_cover",
+    "missing_final": "Remove the last ordered interval and its inequality, remap interval indices, retain all earlier source arcs",
+    "mutation_hashing": "Independent hashlib/json canonical re-signing; not the verifier payload_digest helper",
+    "mutation_success_criterion": "CertificateError after canonical re-signing; hash mismatch alone is not the intended discriminator",
+    "threshold": "Replace 1/(n+1) by 1/n",
+    "winding": "Increment the first declared interval winding, retaining its original endpoints"
+  },
+  "observed_at_utc": "2026-10-28T20:53:51.505790+00:00",
+  "rejected_rehashed_mutations": 15,
+  "schema": "succ.lonely-runner.independent-audit.v1",
+  "semantic_assumption_reviews": [
+    {
+      "boundary": "JSON parser is not Lean-verified",
+      "claim": "COV-1/COV-2",
+      "scope": "Source-labelled closed chains imply all-time circle coverage; opposite-slope and self-pair breakpoints exhaust maxima",
+      "verdict": "SURVIVES paper review"
+    },
+    {
+      "boundary": "Exact-value and sharp-minimum theorem are paper proofs; do not infer them from the formal witness alone",
+      "claim": "ALPHA-02/03",
+      "scope": "Exact deletion values, all sharp-minimum equality cases, and the small n=5,6 cases",
+      "verdict": "SURVIVES paper review"
+    },
+    {
+      "boundary": "Local uniform rules only; does not decide all nonlocal rules or supply an n=18..94 shifted counterexample",
+      "claim": "LRU-1/4",
+      "scope": "Responsible-time residue necessity; speed-residue compression preserves resonance, distinctness and coverage after beta scaling; finite rational decision reduction",
+      "verdict": "SURVIVES paper review"
+    },
+    {
+      "boundary": "No universal minimum of 192 across arbitrary rules",
+      "claim": "LRU-5",
+      "scope": "No adjacent removed binary levels and retained last level characterize the prescribed phase family; first positive gain at L=192",
+      "verdict": "SURVIVES paper review"
+    },
+    {
+      "boundary": "Depends on the cited classical one-entry result and the paper exact deletion formula; not a full Lean proof or complete tight-set classification",
+      "checks": [
+        "r=1 uses the unconditional multiplicative Goddyn-Wong lower bound",
+        "middle-range and r=2 necessity use coverage only",
+        "sporadic n=5,6 exceptions cannot supply both one-entry covers",
+        "the Lipschitz interval using mu=max(L(n,r1),L(n,r2)) does not wrap around an integer",
+        "uniform first-speed bounds are 56 for n=5, 60 for n=6, and (n-2)^2*(n-1)/(n-4) for n>=7"
+      ],
+      "claim": "GAMMA-05",
+      "scope": "The cover form of Zhang one-entry classification follows its actual proof; no single insertion covers two deletions; source endpoint spacing and exact Alpha margins imply w2<4*n^3 for every deletion pair, n>=5",
+      "verdict": "SURVIVES paper review"
+    }
+  ],
+  "source_hashes": {
+    ".github/workflows/ci.yml": "1e614c15078c325526660a4e8019e219f5ff5a3be2e94058570d38cf995396d4",
+    ".github/workflows/lonely-runner.yml": "381e3ab4641f1351f5d11a579a9461e580e00c3d267f6a32c3f3abe6c4adac60",
+    "formal/LonelyRunnerCover.lean": "ec07eb364b44ce6e4ca8c6a9e84f136485c58bb0bde0e8204be02f3d27be2ef0",
+    "formal/LonelyRunnerDeletion.lean": "eb99ee471fa35bb505afad5d92a42eef1e983f562a78df9abbdd64e0815d5b45",
+    "formal/LonelyRunnerUniform.lean": "0fe4a9fec99235da78aa25fea247354b8fe53177854e07b5b068509a82c2e199",
+    "formal/kernel_audit/ExportCommand.lean": "026bd4a8d919f83a4e83fd593499c108757f87868dfe66ca05a7bc340c339d60",
+    "formal/mathlib_bridge/lake-manifest.json": "80d5b4bd8497f01e75164c1d030add71ed7fadd7d26e2fc140f4b9462759a41d",
+    "lean-toolchain": "6faf6530819a0bc6d6092a2d9b974ea8e8adfec955d0e51e02e1f82734264d14",
+    "observational_succ/lonely_runner_verify.py": "0aff4507cea61883adf0e49eae2b6a060172ad38dcda64b467829d93a3b4e57d",
+    "research/2026-10-28/lonely_runner/ALPHA.md": "ab1ad1d6fad11a496a768ecec645863c723e30c655cbe791630fa5dac8a413c7",
+    "research/2026-10-28/lonely_runner/BETA_UNIFORM.md": "4bdf1a554d9ddf82d2919ac27171447f1a0eb7bf60c6a67f0be3161f73a59886",
+    "research/2026-10-28/lonely_runner/GAMMA.md": "e4cee305528ff295ad3efb1d2b423880783fa0c91b9923f09f5e69490e8eddda",
+    "research/2026-10-28/lonely_runner/LITERATURE.md": "ce7fef56faa2b0368f3fd753f772640ae6748db80feac1c75c7ffe4fa8293d3e",
+    "research/2026-10-28/lonely_runner/certificates/bcs-five.json": "acac8e4305a1ed57a3cfba4afb821daf37039e0be92f234012b2a276a3c1b021",
+    "research/2026-10-28/lonely_runner/certificates/bcs-thirteen.json": "19d383e39730f9c4ea09554a3b687c17fa367d73f56c55bbe114c0b31663cd51",
+    "research/2026-10-28/lonely_runner/certificates/poliakova-n95.json": "48a08a1ff6d377a4c77e115683ca6f403400fb404867d1e9cd6e9d0704f80108",
+    "scripts/cambrian_audit_c_lean.py": "6a10d0e18e5f9fec8846431bb6aa4919b8552c034ade937eb565c8133d91e37c",
+    "scripts/check_lonely_runner_lean.py": "d8f90b0bae0cdabdbbadac9109d1bb3600de95d347111cbd0cb99a70ca939e78",
+    "scripts/check_lonely_runner_source.py": "6c1820d15d2828d585d9eb02caa078fb4180552905b5dc53f287123df72cb092",
+    "scripts/lonely_runner_two_entry_probe.py": "ea598cba53c9d61b0f8bfe0424458321a533de8fb488a75b96672c4bbe57b5e2"
+  },
+  "source_snapshot_unchanged": true,
+  "status": "PASS_WITH_EXPLICIT_AUTHORITY_LIMITS"
+}

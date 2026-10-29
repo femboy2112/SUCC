@@ -1,0 +1,39 @@
+test_J_mirror_is_equatorial (test_hopf_source.HopfSourceBridgeTests.test_J_mirror_is_equatorial) ... ok
+test_T_squared_exact_quaternion_factor (test_hopf_source.HopfSourceBridgeTests.test_T_squared_exact_quaternion_factor) ... ok
+test_anchored_selected_source_exact_latitudes (test_hopf_source.HopfSourceBridgeTests.test_anchored_selected_source_exact_latitudes) ... ok
+test_anchored_stereographic_inverse_and_latitude (test_hopf_source.HopfSourceBridgeTests.test_anchored_stereographic_inverse_and_latitude) ... ok
+test_left_hopf_gauge_invariance (test_hopf_source.HopfSourceBridgeTests.test_left_hopf_gauge_invariance) ... ok
+test_mixed_chiral_time_pairing_is_not_canonical (test_hopf_source.HopfSourceBridgeTests.test_mixed_chiral_time_pairing_is_not_canonical) ... ok
+test_natural_next_state_constant_latitude (test_hopf_source.HopfSourceBridgeTests.test_natural_next_state_constant_latitude) ... ok
+test_odd_chart_transports_even_base_rotation (test_hopf_source.HopfSourceBridgeTests.test_odd_chart_transports_even_base_rotation) ... ok
+test_odd_hopf_gauge_switch_is_exact (test_hopf_source.HopfSourceBridgeTests.test_odd_hopf_gauge_switch_is_exact) ... ok
+test_odd_step_gauge_fails_explicit (test_hopf_source.HopfSourceBridgeTests.test_odd_step_gauge_fails_explicit) ... ok
+test_odd_step_quaternion_antilinear_exact (test_hopf_source.HopfSourceBridgeTests.test_odd_step_quaternion_antilinear_exact) ... ok
+test_pole_frame_permutation_is_a_noncanonical_choice (test_hopf_source.HopfSourceBridgeTests.test_pole_frame_permutation_is_a_noncanonical_choice) ... ok
+test_pole_quartet_stereographic_exact_decode (test_hopf_source.HopfSourceBridgeTests.test_pole_quartet_stereographic_exact_decode) ... ok
+test_right_gauge_changes_source_coordinates (test_hopf_source.HopfSourceBridgeTests.test_right_gauge_changes_source_coordinates) ... ok
+test_sign_mutation_latitude_blind_but_full_Hopf_detects (test_hopf_source.HopfSourceBridgeTests.test_sign_mutation_latitude_blind_but_full_Hopf_detects) ... ok
+test_source_labelled_mixed_latitudes_and_exact_tomography (test_hopf_source.HopfSourceBridgeTests.test_source_labelled_mixed_latitudes_and_exact_tomography) ... ok
+test_two_step_gauge_descends_exact (test_hopf_source.HopfSourceBridgeTests.test_two_step_gauge_descends_exact) ... ok
+test_two_step_order_four (test_hopf_source.HopfSourceBridgeTests.test_two_step_order_four) ... ok
+test_division_and_associativity (test_hopf_source.QuaternionTests.test_division_and_associativity) ... ok
+test_hamilton_relations (test_hopf_source.QuaternionTests.test_hamilton_relations) ... ok
+test_hermitian_projector_quaternion (test_hopf_source.QuaternionTests.test_hermitian_projector_quaternion) ... ok
+test_hopf_exact_sphere (test_hopf_source.QuaternionTests.test_hopf_exact_sphere) ... ok
+test_right_gauge_invariance_noncommutative (test_hopf_source.QuaternionTests.test_right_gauge_invariance_noncommutative) ... ok
+test_T_matches_independent_gaussian_split (test_hopf_source.SUCCSourceExactTests.test_T_matches_independent_gaussian_split) ... ok
+test_changed_seed_adversarial (test_hopf_source.SUCCSourceExactTests.test_changed_seed_adversarial) ... ok
+test_coherent_changed_seed_future_tail_control (test_hopf_source.SUCCSourceExactTests.test_coherent_changed_seed_future_tail_control) ... ok
+test_operator_4_8_step (test_hopf_source.SUCCSourceExactTests.test_operator_4_8_step) ... ok
+test_original_four_poles_and_rational_source (test_hopf_source.SUCCSourceExactTests.test_original_four_poles_and_rational_source) ... ok
+test_ring_incompatibility (test_hopf_source.SUCCSourceExactTests.test_ring_incompatibility) ... ok
+test_scaled_orthogonality (test_hopf_source.SUCCSourceExactTests.test_scaled_orthogonality) ... ok
+test_source_fingerprint (test_hopf_source.SUCCSourceExactTests.test_source_fingerprint) ... ok
+test_source_first_shell (test_hopf_source.SUCCSourceExactTests.test_source_first_shell) ... ok
+test_wrong_odd_chirality_mutation_is_rejected (test_hopf_source.SUCCSourceExactTests.test_wrong_odd_chirality_mutation_is_rejected) ... ok
+test_zero_seed_and_channel_gluing (test_hopf_source.SUCCSourceExactTests.test_zero_seed_and_channel_gluing) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.481s
+
+OK

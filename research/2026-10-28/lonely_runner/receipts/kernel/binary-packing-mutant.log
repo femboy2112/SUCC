@@ -1,0 +1,6 @@
+/tmp/succ-lonely-kernel/kernel-build-s02fdnn_/binary-packing-mutant.lean:4:2: error: type mismatch
+  packing_bound xs h
+has type
+  2 * removedCount xs ≤ xs.length : Prop
+but is expected to have type
+  3 * removedCount xs ≤ xs.length : Prop

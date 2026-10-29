@@ -1,0 +1,6 @@
+/tmp/succ-referee-growth-audit/growth-kernel-build-r_ovsnrx/integer-spacing-mutant.lean:4:2: error: type mismatch
+  integer_numerator_spacing D A B hD hab
+has type
+  1 / ↑D ≤ ↑B / ↑D - ↑A / ↑D : Prop
+but is expected to have type
+  2 / ↑D ≤ ↑B / ↑D - ↑A / ↑D : Prop
