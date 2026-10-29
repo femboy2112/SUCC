@@ -1,0 +1,59 @@
+{
+  "N": 2048,
+  "correction_masks": {
+    "authentic_zero_seed": {
+      "all_seed_proved_count_bound": 713,
+      "count": 1,
+      "exceptional_carry16_count": 0,
+      "positions": [
+        1
+      ]
+    },
+    "changed_seed_1_over_15": {
+      "all_seed_proved_count_bound": 713,
+      "count": 1,
+      "exceptional_carry16_count": 0,
+      "positions": [
+        1
+      ]
+    },
+    "changed_seed_1_over_7": {
+      "all_seed_proved_count_bound": 713,
+      "count": 1,
+      "exceptional_carry16_count": 0,
+      "positions": [
+        1
+      ]
+    }
+  },
+  "directions": {
+    "authentic_zero_seed": {
+      "entropy_KL_1_2_3_nats": {
+        "1": 0.002275658817,
+        "2": 0.058670355196,
+        "3": 1.007232555539
+      },
+      "q6_primitive_digit_frequency": "635/2048",
+      "walsh_mask_15": "15/1024"
+    },
+    "constant_zero_periodic_negative": {
+      "entropy_KL_1_2_3_nats": {
+        "1": 2.77258872224,
+        "2": 5.54517744448,
+        "3": 8.317766166719
+      },
+      "q6_primitive_digit_frequency": "0",
+      "walsh_mask_15": "1"
+    },
+    "debruijn16_order2_periodic_negative": {
+      "entropy_KL_1_2_3_nats": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 2.77258872224
+      },
+      "q6_primitive_digit_frequency": "5/16",
+      "walsh_mask_15": "0"
+    }
+  },
+  "status": "OBSERVED at finite N=2048; not a proof of pi normality or nonnormality"
+}
