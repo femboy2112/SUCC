@@ -130,10 +130,9 @@ class PrimitiveChecks(unittest.TestCase):
             self.assertEqual(sum((v for j,v in enumerate(p) if j&1),F()),
                              finite_primitive(n,2))
         # Stable inverse of C_2(S)=4S/(4-S^2)^2 is a formal identity.
-        import sympy as sp
-        z=sp.symbols("z")
-        C=4*z/(4-z*z)**2
-        self.assertEqual(sp.simplify((4-z*z)**2*C-4*z),0)
+        for z in (F(),F(1,3),F(1,2),F(1)):
+            C=4*z/(4-z*z)**2
+            self.assertEqual((4-z*z)**2*C,4*z)
 
 if __name__=="__main__":
     unittest.main(verbosity=2)
