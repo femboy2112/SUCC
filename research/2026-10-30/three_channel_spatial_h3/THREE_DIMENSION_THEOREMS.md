@@ -173,6 +173,12 @@ At conserved original native clock Θ=1, the source ray's angular Fisher speed i
 \quad
 \ell_{\rm ang}(a,\infty)\sim\frac{2\sqrt{82}}{15a}.
 \]
+For the **actual native original-source clock** \(a_n=8n-7\), the shortest Fisher angular distance between successive source-mark reference points obeys the further exact asymptotic
+\[
+\boxed{d_F(p^*(a_n),p^*(a_{n+1}))=\frac{\sqrt{82}}{60\,n^2}+O(n^{-3}).}
+\]
+This follows from the round-sphere embedding \(X_d=2\sqrt{2\Theta p_d}\), the great-circle formula \(d_F=2\sqrt{2\Theta}\arccos(\sum_d\sqrt{p_d(a)p_d(b)})\), and the source's \(164/225\) angular variance. Thus the **sum of native per-step angular Fisher displacements is finite**, while the active radial budget is not determined by those fixed-clock source marks. It is a useful *negative* probe: convergence of this source-only angular frame cannot by itself force indefinite signed-digit mixing or an accumulating information-wave source. Independently authored high-precision exact-R angular holdouts at n=20,100,1000 approach the displayed coefficient.
+
 This is exact derived asymptotics of a chosen *source-anchored observer allocation*, not automatically observer acceleration, spacetime holonomy, or physical gravitational curvature. Matched-jet source mutants and alternative positive decompositions are mandatory negative controls.
 
 ## T3-05. Third channel and Oily–Macaroni: clock passports matter
