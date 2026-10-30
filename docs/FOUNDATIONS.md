@@ -198,3 +198,15 @@ Master historical file (unaltered): [founding dossier](../provenance/origins/fuc
 Foundational references: Gödel (incompleteness), Turing (1939 ordinal logics), Feferman (reflection progressions), Suzuki (2023 screw function), Schoenberg (negative-type kernels), GNS and quantum-instrument theory. See full bibliography and caveats in the original dossier.
 
 The physical carrier and semantic framing are the user's research hypotheses. Existing theorems retain attribution to their original authors. RH remains open.
+
+## 9. The operational triangle as the formal observer interface (research, 2026-10-29)
+
+The finite-observer story of §§1–8 now has an exact composable shape: the **operational triangle**
+(finite-path/source update → superposed endpoint with retained posterior → typed
+observation/selection). Linear observers commute with path superposition; nonlinear readouts,
+posterior resetting, premature parity/primitive projection, and literal integer carries carry
+strict, separately accounted information defects. The author's Harmonic / Golden-ratio /
+Euler–Mascheroni triangle and Oily–Macaroni emerge as the rank-two Gamma–Poisson specialization,
+not as independent axioms. This is a formal apparatus, not a claim that the deterministic π digit
+history is physically sampled by the auxiliary positive model; selected signed cancellation, π
+normality and RH remain OPEN. See [`OPERATIONAL_TRIANGLE.md`](OPERATIONAL_TRIANGLE.md).

@@ -1,0 +1,80 @@
+[
+  {
+    "command": [
+      "python",
+      "scripts/verify_provenance.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.035,
+    "log": "/tmp/succ_triangle_baseline/baseline_0.log",
+    "tail": "{\n  \"byte_identical_research_archives\": 17,\n  \"establishes_mathematical_truth\": false,\n  \"items\": 72,\n  \"mechanical_namespace_migrations\": 55,\n  \"source_commit\": \"ba075348b7bcc66d938b3e0ca96c26e95bba340a\",\n  \"status\": \"SOURCE_PROVENANCE_VERIFIED\"\n}\n"
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_path_field_feedback.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.15,
+    "log": "/tmp/succ_triangle_baseline/baseline_1.log",
+    "tail": "...................\n----------------------------------------------------------------------\nRan 19 tests in 0.055s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_oily_macaroni_transfer.py"
+    ],
+    "returncode": 1,
+    "seconds": 0.126,
+    "log": "/tmp/succ_triangle_baseline/baseline_2.log",
+    "tail": "File \"/workspace/scratch/71487df90f02/SUCC/observational_succ/oily_macaroni_transfer.py\", line 178, in source_oily_character\n    mp=_mp()\n       ^^^^^\n  File \"/workspace/scratch/71487df90f02/SUCC/observational_succ/oily_macaroni_transfer.py\", line 138, in _mp\n    raise RuntimeError(\"mpmath is optional, for analytic observations only\") from exc\nRuntimeError: mpmath is optional, for analytic observations only\n\n======================================================================\nERROR: test_finite_SUCC_jet (test_oily_macaroni_transfer.ExactSource.test_finite_SUCC_jet)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/71487df90f02/SUCC/tests/test_oily_macaroni_transfer.py\", line 43, in test_finite_SUCC_jet\n    import mpmath as m\nModuleNotFoundError: No module named 'mpmath'\n\n======================================================================\nERROR: test_local_hilbert_transport_exact_budget (test_oily_macaroni_transfer.ExactSource.test_local_hilbert_transport_exact_budget)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/workspace/scratch/71487df90f02/SUCC/tests/test_oily_macaroni_transfer.py\", line 77, in test_local_hilbert_transport_exact_budget\n    import mpmath as mp\nModuleNotFoundError: No module named 'mpmath'\n\n----------------------------------------------------------------------\nRan 26 tests in 0.014s\n\nFAILED (errors=15)\n"
+  },
+  {
+    "command": [
+      "python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_polya_coherent_observer.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.467,
+    "log": "/tmp/succ_triangle_baseline/baseline_3.log",
+    "tail": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.382s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.118,
+    "log": "/tmp/succ_triangle_baseline/baseline_4.log",
+    "tail": "926c979d6004df\",\n    \"theta_code_bits\": 1449,\n    \"theta_code_sha256\": \"0612b723b148a7690b7ac4e86d7347cdf706fda5a420f511ac2e48a81310f590\",\n    \"verified_substitution_code\": true\n  },\n  \"missing\": {\n    \"RH_side\": \"independent positive observer-to-FULL Weil distribution identity\",\n    \"analytic_side\": \"rigorous prime/Gamma interval oracle for Suzuki negative witness\",\n    \"quantum_side\": \"validated record-to-semantic covariance functor\",\n    \"theory_side\": \"representable G\\u00f6del substitution/derivability formalization\"\n  },\n  \"ordinal_reflection\": {\n    \"claimed_truth\": null,\n    \"declared_axiom_is_external\": \"EXTERNAL_ASSUMPTION_ONLY\",\n    \"reflection_follows_from_observation\": false,\n    \"successor_stages\": 3\n  },\n  \"physical_infinite_time_executed\": false,\n  \"rational_gram_certificates\": {\n    \"Suzuki_interval_oracle_built\": false,\n    \"bounded_search\": \"STRICT_NEGATIVE_WITNESS\",\n    \"negative_exact_quartic_upper\": \"-24\",\n    \"negative_status\": \"STRICT_NEGATIVE_WITNESS_CONDITIONAL_ON_INTERVAL_ORACLE\",\n    \"positive_exact_quadratic_lower\": \"0\",\n    \"positive_probe_status\": \"FINITE_PROBE_UNRESOLVED\",\n    \"source_is_actual_Suzuki\": false,\n    \"universal_positivity_proved\": false\n  },\n  \"status\": \"OBSERVATIONAL_SUCC_FORMAL_FOUNDATIONS\",\n  \"turing_observations\": {\n    \"delayed_prefix_17\": \"unresolved\",\n    \"delayed_prefix_19\": \"refuted\",\n    \"finite_survival_claims_are_universal_proofs\": false,\n    \"first_observed_counterexample\": 19,\n    \"loop_prefix_17\": \"unresolved\"\n  }\n}\n"
+  },
+  {
+    "command": [
+      "python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "returncode": 1,
+    "seconds": 0.075,
+    "log": "/tmp/succ_triangle_baseline/baseline_5.log",
+    "tail": "Traceback (most recent call last):\n  File \"/workspace/scratch/71487df90f02/SUCC/scripts/ordinal_succ_report_probe.py\", line 161, in <module>\n    main()\n  File \"/workspace/scratch/71487df90f02/SUCC/scripts/ordinal_succ_report_probe.py\", line 152, in main\n    payload=json.dumps(run(dps=a.dps,horizon=a.horizon),sort_keys=True,indent=2)+\"\\n\"\n                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/71487df90f02/SUCC/scripts/ordinal_succ_report_probe.py\", line 35, in run\n    import mpmath as mp\nModuleNotFoundError: No module named 'mpmath'\n"
+  }
+]

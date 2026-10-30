@@ -1,0 +1,24 @@
+# Local source-typed claim ledger — Kepler II entropy/carry
+
+Baseline: original four-pole BBP, retarded preparation `U_0=0`; arbitrary-seed statements explicitly qualified. Research-only continuation of draft SUCC #380, with exact source/claim registry unchanged. `PROVED PAPER` is not independent publication, Lean or full hosted CI. Source-derived propositions can use classical standard lemmas, explicitly labelled.
+
+| Claim | Domain, status, evidence | Hostile control / next discriminator |
+|---|---|---|
+| OE-01 | Original rational forcing, `n>=3`: `0<r_n<1/(2n²)` and decreasing; positive polynomial translated certificate. PROVED PAPER, SymPy oracle and 26 unit tests. | Do not impose at n=1,2; constant-forcing mutant fails. |
+| OE-02 | Every forcing-induced **κ≠d** (all 16 boundaries), `n>=3`, **every seed** forces `L(n)=floor(log_16 n²)` zero carries. PROVED PAPER with induction, adversarial exact rational initial phases. | Earlier #380 proved only `κ=16` case. Misusing `κ=16` specificity would miss other classes. |
+| OE-03 | All-seed count bound `E(N)<=M+floor((N-M)/(L(M)+1))` for any `3<=M<=N`; `E(N)=O(N/log N)` uniformly in seed. PROVED PAPER. | Explicit `r=1` mutant has corrections at every step; source decay is load-bearing. |
+| OE-04 | Length-k block distributions of `κ mod16` and same-state bare digit differ by TV at most `kE(N)/(N-k+1)`, simultaneous for all word events and bounded phase observables. PROVED PAPER. | No conclusion about *either* empirical law relative to Haar. |
+| OE-05 | Bounded Gibbs local potential log-partition difference <=`2 exp(2B) TV`; entropy continuity <=`h2(δ)+δ log(16^k−1)` for admissible δ. PROVED PAPER (finite coupling). | Gibbs weighting is a mathematical reference potential, not automatically physical dissipation. |
+| OE-06 | Correction-pattern support upper bound `exp(N h2(E/N))=exp(o(N))`; source-direction information **capacity** per step vanishes. PROVED PAPER for large N with E/N<=1/2. | Not Shannon entropy of the unique deterministic selected mask; no random digit generator. |
+| OE-07 | Reference Walsh 4-bit orthogonality and exact chi²=Σ nontrivial squared moments; each signed moment robust under correction. CLASSICAL, exact tests. | Even parity control has all degrees 1-3 zero, degree-4 nonzero; source empirical orthogonality not assumed. |
+| OE-08 | Source circle empirical Haar ⇔ empirical base16 word normality for `c_n=κ mod16`, every fixed seed. PROVED PAPER from asymptotic pseudo-orbit, source decay, bounded boundary density and reconstruction; normality of π when seed 0. | This is an equivalence, not a proof that the zero seed has Haar frequencies. |
+| OE-09 | Single nonnegative carry entropy energy `F_N=Σ 2^-k KL(P_cyclic,k||u_16^k)/k` tends zero ⇔ π base16 normal (zero seed). PROVED PAPER (standard Shannon/Gibbs uniqueness and dominated convergence); **target asymptotic OPEN**. | Nonnormal de Bruijn periodic word fools any finite depth K. |
+| OE-10 | For cyclic stationary empirical observations, forward and backward conditional **scalar entropies** equal identically at every finite depth. PROVED ELEMENTARY. | Nonreversible 3-cycle has positive arrow production despite same scalar rates. |
+| OE-11 | Three-state full-support clockwise Markov example has detailed-balance path KL arrow `(5/8) log6>0` but equal forward/back conditional entropy. CLASSICAL exact model control, not BBP. | No physical heat or selected BBP arrow can be inferred. |
+| OE-12 | Explicit source zero-seed N=2048 carries: correction only at time 1; one-digit KL=0.002275658817..., two-digit 0.058670355196..., three-digit 1.007232555539... . OBSERVED finite exact source trace and numeric Shannon diagnostic. | Not an infinite no-more-corrections theorem; high-depth finite block undersampling. |
+| OE-13 | The original zero seed has `KL(P_N,k||uniform)->0` for all k, or `F_N->0`. **UNVERIFIED / π NORMALITY OPEN**. | Source-specific signed Weyl inequality or entropy deficit estimate remains necessary. |
+| OE-14 | Root AGENTS gates, full suite, Lean, hosted CI, academic priority or physical thermodynamic mechanism. UNVERIFIED for this child head. | Replay exact files on clean full checkout, compare hosted exact-head jobs, independently review global proofs. |
+
+## Provenance independence
+
+New tests and independent SymPy oracle have different implementations and algebraic factorizations, but share the same source and model, not independent research groups. The source-specific carry density theorem is strictly stronger than prior #380's exceptional-only result; old signed logarithmic loss, #375 modular normality energy, #378 relative-lag normality and #271 four-body Walsh need not be re-claimed. Mathematical completeness of observation is **not** actual confirmed entropy production or a proof of the observed Haar limit.

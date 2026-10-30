@@ -1143,3 +1143,42 @@ self-overclaim caught by a d'Alembert adversary pass and corrected before commit
   **is** base-16 normality of pi. The carrier is normality-neutral; using ISO-1, the SB-3 energy
   `E_{N,M}(h)` is exactly the L^2 energy of `e(hU_n)` across arithmetic progressions mod `M=16^k 3^L`, and
   the smallest open obligation is its decay along some admissible `M=o(N)`. **pi normality / RH remain OPEN.**
+
+## Operational triangle / Triangle Genesis (2026-10-29, Operation Main XV)
+
+Full dossiers: `research/2026-10-29/operational_triangle_frontier/{THEOREMS,CLAIMS}.md`; apparatus
+interface `docs/OPERATIONAL_TRIANGLE.md`. Research-draft `TG-` namespace; historical ledger IDs
+unchanged; nothing here promotes π normality or RH.
+
+- **TG-01/03 — measure-valued Pascal gluing, dual `F_(a,m)(z,t)` routes, strict projection/reset
+  defects.** PROVED LOCAL (binomial/Laplace + exact Fraction tests). Covariance
+  `R(a+16)/R(a)-[R(a+8)/R(a)]^2>0`.
+- **TG-02 — `X ⟂ W | J`, `I(X;W)=I(X;J)` in the declared exchangeable sensor.** CLASSICAL
+  sufficiency, **non-universal**; order-sensitive A/B latent countermodel (posteriors `3/4` vs
+  `1/4` at grade 1) refutes unqualified sufficiency/flatness.
+- **TG-04 — Gamma–Poisson emergence `F_(r,theta)=[1+t+theta(1-z)]^{-r}`.** CLASSICAL under stated
+  regularity; original four-pole source is `r=2, theta=1`, `F_infty=(2+t-z)^{-2}`.
+- **TG-05 — golden fixed point `q=phi^{-2}` and `Omega_OM=lambda-gamma` at `(2,1)`; two-variable
+  59-jet `J_BBP` with fake difference `59(1+t-z)/[120 d^3]`.** CLASSICAL analysis + declared
+  observers; jet PROVED LOCAL and independently re-derived. Original-triangle SPECIALIZATION.
+- **TG-06/07/08 — seed-resolved Fourier tomography recovers each `q_j e(hU_(n+j)(s))`; averaging the
+  seed displacement vanishes for every seed, including `s*=-pi/16`.** PROVED LOCAL
+  representation/observability; **not** a Weyl estimate.
+- **TG-09 — fixed-golden `D_lambda(r)=psi(r)-lambda^r` vs self-consistent
+  `D_self(r,theta)=psi(r)-q_(r,theta)`.** Agree only at `(2,1)`; generic equality UNVERIFIED /
+  generally false. Author provenance (PR #365) preserved.
+- **TG-10 — "operational triangle certifies π base-16 normality / RH."** **REFUTED as an
+  implication** (coherent same-forcing counterseed + universal seed-smearing zero). π normality
+  and RH themselves remain **OPEN**.
+- **Prime-ladder R4/R5 (PR #334) transcendence→topological-entropy→normality bridge.** **REFUTED
+  as a general bridge / UNVERIFIED for π** by the Kempner firewall (PR #337): the Kempner number is
+  transcendental with irrationality exponent 2, has a zero-entropy binary orbit and a ×2×3-invariant
+  limit δ₀, yet is not normal. Corrected conditional theorem assumes the Furstenberg ×2×3
+  conjecture plus uniform anti-concentration. See
+  `research/2026-10-27-furstenberg-kempner/KEMPNER_FURSTENBERG_FIREWALL.md`.
+
+**Firewall:** equal endpoint marginals across the two-geometric Oily packet (#368), the Pascal
+source (#370) and the Gamma–Poisson sensor do not establish equal latent couplings; no
+normality-equivalent observable, source-only positivity, entropy formula, Gamma/Gaussian phase
+rotation or invertible signed filter is a proof of π normality. The signed gate
+`forall h!=0: (1/N) sum e(h U_n(0)) = o(N)` remains an **OPEN** unproven cancellation.

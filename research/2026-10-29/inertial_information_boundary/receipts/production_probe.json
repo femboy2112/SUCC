@@ -1,0 +1,794 @@
+{
+  "binary_kl_cases": [
+    {
+      "epsilon": "1/16",
+      "kl_nats": {
+        "lower": "0.064538521137",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.064538521138"
+      },
+      "q": "0"
+    },
+    {
+      "epsilon": "1/16",
+      "kl_nats": {
+        "lower": "0.010104291467",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.010104291468"
+      },
+      "q": "1/32"
+    },
+    {
+      "epsilon": "1/16",
+      "kl_nats": {
+        "lower": "0.000000000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000000"
+      },
+      "q": "1/16"
+    },
+    {
+      "epsilon": "1/16",
+      "kl_nats": {
+        "lower": "0.026274635018",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.026274635019"
+      },
+      "q": "1/8"
+    },
+    {
+      "epsilon": "1/16",
+      "kl_nats": {
+        "lower": "0.179215926794",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.179215926795"
+      },
+      "q": "1/4"
+    },
+    {
+      "epsilon": "1/16",
+      "kl_nats": {
+        "lower": "0.725416441128",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.725416441129"
+      },
+      "q": "1/2"
+    },
+    {
+      "epsilon": "1/16",
+      "kl_nats": {
+        "lower": "1.533241027345",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "1.533241027346"
+      },
+      "q": "3/4"
+    },
+    {
+      "epsilon": "1/16",
+      "kl_nats": {
+        "lower": "2.772588722239",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "2.772588722240"
+      },
+      "q": "1"
+    },
+    {
+      "epsilon": "1/256",
+      "kl_nats": {
+        "lower": "0.003913899321",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.003913899322"
+      },
+      "q": "0"
+    },
+    {
+      "epsilon": "1/256",
+      "kl_nats": {
+        "lower": "0.000601235491",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000601235492"
+      },
+      "q": "1/512"
+    },
+    {
+      "epsilon": "1/256",
+      "kl_nats": {
+        "lower": "0.000000000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000000"
+      },
+      "q": "1/256"
+    },
+    {
+      "epsilon": "1/256",
+      "kl_nats": {
+        "lower": "0.001516631693",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.001516631694"
+      },
+      "q": "1/128"
+    },
+    {
+      "epsilon": "1/256",
+      "kl_nats": {
+        "lower": "0.826894640991",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.826894640992"
+      },
+      "q": "1/4"
+    },
+    {
+      "epsilon": "1/256",
+      "kl_nats": {
+        "lower": "2.081398491340",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "2.081398491341"
+      },
+      "q": "1/2"
+    },
+    {
+      "epsilon": "1/256",
+      "kl_nats": {
+        "lower": "3.597526413571",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "3.597526413572"
+      },
+      "q": "3/4"
+    },
+    {
+      "epsilon": "1/256",
+      "kl_nats": {
+        "lower": "5.545177444479",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "5.545177444480"
+      },
+      "q": "1"
+    },
+    {
+      "epsilon": "1/65536",
+      "kl_nats": {
+        "lower": "0.000015258905",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000015258906"
+      },
+      "q": "0"
+    },
+    {
+      "epsilon": "1/65536",
+      "kl_nats": {
+        "lower": "0.000002341130",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000002341131"
+      },
+      "q": "1/131072"
+    },
+    {
+      "epsilon": "1/65536",
+      "kl_nats": {
+        "lower": "0.000000000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000000"
+      },
+      "q": "1/65536"
+    },
+    {
+      "epsilon": "1/65536",
+      "kl_nats": {
+        "lower": "0.000005894500",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000005894501"
+      },
+      "q": "1/32768"
+    },
+    {
+      "epsilon": "1/65536",
+      "kl_nats": {
+        "lower": "2.210265021800",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "2.210265021801"
+      },
+      "q": "1/4"
+    },
+    {
+      "epsilon": "1/65536",
+      "kl_nats": {
+        "lower": "4.852037893372",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "4.852037893373"
+      },
+      "q": "1/2"
+    },
+    {
+      "epsilon": "1/65536",
+      "kl_nats": {
+        "lower": "7.755434836826",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "7.755434836827"
+      },
+      "q": "3/4"
+    },
+    {
+      "epsilon": "1/65536",
+      "kl_nats": {
+        "lower": "11.090354888959",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "11.090354888960"
+      },
+      "q": "1"
+    },
+    {
+      "epsilon": "1/4294967296",
+      "kl_nats": {
+        "lower": "0.000000000232",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000233"
+      },
+      "q": "0"
+    },
+    {
+      "epsilon": "1/4294967296",
+      "kl_nats": {
+        "lower": "0.000000000035",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000036"
+      },
+      "q": "1/8589934592"
+    },
+    {
+      "epsilon": "1/4294967296",
+      "kl_nats": {
+        "lower": "0.000000000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000000"
+      },
+      "q": "1/4294967296"
+    },
+    {
+      "epsilon": "1/4294967296",
+      "kl_nats": {
+        "lower": "0.000000000089",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000090"
+      },
+      "q": "1/2147483648"
+    },
+    {
+      "epsilon": "1/4294967296",
+      "kl_nats": {
+        "lower": "4.982842300035",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "4.982842300036"
+      },
+      "q": "1/4"
+    },
+    {
+      "epsilon": "1/4294967296",
+      "kl_nats": {
+        "lower": "10.397207708515",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "10.397207708516"
+      },
+      "q": "1/2"
+    },
+    {
+      "epsilon": "1/4294967296",
+      "kl_nats": {
+        "lower": "16.073197188878",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "16.073197188879"
+      },
+      "q": "3/4"
+    },
+    {
+      "epsilon": "1/4294967296",
+      "kl_nats": {
+        "lower": "22.180709777918",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "22.180709777919"
+      },
+      "q": "1"
+    },
+    {
+      "epsilon": "1/18446744073709551616",
+      "kl_nats": {
+        "lower": "0.000000000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000001"
+      },
+      "q": "0"
+    },
+    {
+      "epsilon": "1/18446744073709551616",
+      "kl_nats": {
+        "lower": "0.000000000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000001"
+      },
+      "q": "1/36893488147419103232"
+    },
+    {
+      "epsilon": "1/18446744073709551616",
+      "kl_nats": {
+        "lower": "0.000000000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000000"
+      },
+      "q": "1/18446744073709551616"
+    },
+    {
+      "epsilon": "1/18446744073709551616",
+      "kl_nats": {
+        "lower": "0.000000000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000001"
+      },
+      "q": "1/9223372036854775808"
+    },
+    {
+      "epsilon": "1/18446744073709551616",
+      "kl_nats": {
+        "lower": "10.528019744340",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "10.528019744341"
+      },
+      "q": "1/4"
+    },
+    {
+      "epsilon": "1/18446744073709551616",
+      "kl_nats": {
+        "lower": "21.487562597358",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "21.487562597359"
+      },
+      "q": "1/2"
+    },
+    {
+      "epsilon": "1/18446744073709551616",
+      "kl_nats": {
+        "lower": "32.708729522258",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "32.708729522259"
+      },
+      "q": "3/4"
+    },
+    {
+      "epsilon": "1/18446744073709551616",
+      "kl_nats": {
+        "lower": "44.361419555836",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "44.361419555837"
+      },
+      "q": "1"
+    }
+  ],
+  "check_total": 966,
+  "checks": {
+    "authentic_source_and_charge": 6,
+    "certified_binary_kl_and_boundary_bound": 80,
+    "certified_kl_chain_rule": 1,
+    "certified_maximum_leakage_brackets": 20,
+    "framed_code_examples": 10,
+    "heldout_phase_quotient": 840,
+    "omitted_conditional_information_mutant_rejected": 1,
+    "preparation_vs_description": 5,
+    "retained_endpoint_precision_regression": 3
+  },
+  "code_examples": {
+    "-1": {
+      "bits": 3,
+      "code": "111"
+    },
+    "-16": {
+      "bits": 11,
+      "code": "11000010000"
+    },
+    "0": {
+      "bits": 1,
+      "code": "0"
+    },
+    "1": {
+      "bits": 3,
+      "code": "101"
+    },
+    "16": {
+      "bits": 11,
+      "code": "10000010000"
+    }
+  },
+  "conditional_information_mutant": {
+    "positive_missing_cost": {
+      "lower": "0.067698666194",
+      "rounding": "outward from exact rational endpoints",
+      "upper": "0.067698666195"
+    },
+    "status": "rejected"
+  },
+  "interval_audit_regression": {
+    "budget": "midpoint of the 24-term and 48-term certified upper KL bounds",
+    "coarse_recheck_would_falsely_reject": true,
+    "epsilon": "1/4",
+    "fine_endpoint_accepted": true,
+    "fix": "preserve the accepted endpoint enclosure and its precision",
+    "midpoint": "5/8",
+    "status": "passed"
+  },
+  "log_certificate": {
+    "arithmetic": "fractions.Fraction only",
+    "default_terms": 24,
+    "floating_point_verdicts": 0,
+    "normalization": "x=2^k y, 1<=y<2, t=(y-1)/(y+1)",
+    "remainder_upper": "2 t^(2m+1)/((2m+1)(1-t^2))",
+    "series": "2 sum_{j<m} t^(2j+1)/(2j+1)"
+  },
+  "optimal_leakage_cases": [
+    {
+      "budget_nats": "0",
+      "epsilon": "1/16",
+      "maximal_nonneutral_probability": {
+        "lower": "0.062500000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.062500000000"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "0.173286795139",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.173286795140"
+      },
+      "rational_bracket": [
+        "1/16",
+        "1/16"
+      ]
+    },
+    {
+      "budget_nats": "1/8",
+      "epsilon": "1/16",
+      "maximal_nonneutral_probability": {
+        "lower": "0.214104526649",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.214104526664"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "0.593623795969",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.593623796008"
+      },
+      "rational_bracket": [
+        "235410416611/1099511627776",
+        "117705208313/549755813888"
+      ]
+    },
+    {
+      "budget_nats": "1",
+      "epsilon": "1/16",
+      "maximal_nonneutral_probability": {
+        "lower": "0.594727889138",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.594727889153"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "1.648935838228",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "1.648935838267"
+      },
+      "rational_bracket": [
+        "653910229471/1099511627776",
+        "326955114743/549755813888"
+      ]
+    },
+    {
+      "budget_nats": "4",
+      "epsilon": "1/16",
+      "maximal_nonneutral_probability": {
+        "lower": "1.000000000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "1.000000000000"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "2.772588722239",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "2.772588722240"
+      },
+      "rational_bracket": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "budget_nats": "0",
+      "epsilon": "1/256",
+      "maximal_nonneutral_probability": {
+        "lower": "0.003906250000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.003906250000"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "0.021660849392",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.021660849393"
+      },
+      "rational_bracket": [
+        "1/256",
+        "1/256"
+      ]
+    },
+    {
+      "budget_nats": "1/8",
+      "epsilon": "1/256",
+      "maximal_nonneutral_probability": {
+        "lower": "0.065490797722",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.065490797738"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "0.363158094353",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.363158094434"
+      },
+      "rational_bracket": [
+        "144015787217/2199023255552",
+        "1152126297991/17592186044416"
+      ]
+    },
+    {
+      "budget_nats": "1",
+      "epsilon": "1/256",
+      "maximal_nonneutral_probability": {
+        "lower": "0.288119356184",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.288119356199"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "1.597672955230",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "1.597672955312"
+      },
+      "rational_bracket": [
+        "5068649316991/17592186044416",
+        "2534324658623/8796093022208"
+      ]
+    },
+    {
+      "budget_nats": "4",
+      "epsilon": "1/256",
+      "maximal_nonneutral_probability": {
+        "lower": "0.809125067814",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.809125067830"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "4.486742075810",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "4.486742075891"
+      },
+      "rational_bracket": [
+        "14234278726201/17592186044416",
+        "1779284840807/2199023255552"
+      ]
+    },
+    {
+      "budget_nats": "0",
+      "epsilon": "1/65536",
+      "maximal_nonneutral_probability": {
+        "lower": "0.000015258789",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000015258790"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "0.000169225385",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000169225386"
+      },
+      "rational_bracket": [
+        "1/65536",
+        "1/65536"
+      ]
+    },
+    {
+      "budget_nats": "1/8",
+      "epsilon": "1/65536",
+      "maximal_nonneutral_probability": {
+        "lower": "0.020168970222",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.020168970237"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "0.223681037509",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.223681037672"
+      },
+      "rational_bracket": [
+        "90832966777531/4503599627370496",
+        "45416483421533/2251799813685248"
+      ]
+    },
+    {
+      "budget_nats": "1",
+      "epsilon": "1/65536",
+      "maximal_nonneutral_probability": {
+        "lower": "0.123956463987",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.123956464002"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "1.374721176398",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "1.374721176560"
+      },
+      "rational_bracket": [
+        "558250285022821/4503599627370496",
+        "139562571272089/1125899906842624"
+      ]
+    },
+    {
+      "budget_nats": "4",
+      "epsilon": "1/65536",
+      "maximal_nonneutral_probability": {
+        "lower": "0.422073381898",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.422073381913"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "4.680943594432",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "4.680943594595"
+      },
+      "rational_bracket": [
+        "1900849525439101/4503599627370496",
+        "475212381376159/1125899906842624"
+      ]
+    },
+    {
+      "budget_nats": "0",
+      "epsilon": "1/4294967296",
+      "maximal_nonneutral_probability": {
+        "lower": "0.000000000232",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000233"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "0.000000005164",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000005165"
+      },
+      "rational_bracket": [
+        "1/4294967296",
+        "1/4294967296"
+      ]
+    },
+    {
+      "budget_nats": "1/8",
+      "epsilon": "1/4294967296",
+      "maximal_nonneutral_probability": {
+        "lower": "0.007662535308",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.007662535324"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "0.169960471842",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.169960472166"
+      },
+      "rational_bracket": [
+        "2261581244693037031/295147905179352825856",
+        "1130790624494002163/147573952589676412928"
+      ]
+    },
+    {
+      "budget_nats": "1",
+      "epsilon": "1/4294967296",
+      "maximal_nonneutral_probability": {
+        "lower": "0.054640164440",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.054640164456"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "1.211957629674",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "1.211957629998"
+      },
+      "rational_bracket": [
+        "8063465036646502733/147573952589676412928",
+        "16126930077587972761/295147905179352825856"
+      ]
+    },
+    {
+      "budget_nats": "4",
+      "epsilon": "1/4294967296",
+      "maximal_nonneutral_probability": {
+        "lower": "0.203088846927",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.203088846942"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "4.504654772822",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "4.504654773146"
+      },
+      "rational_bracket": [
+        "59941247735835257041/295147905179352825856",
+        "3746327983758139021/18446744073709551616"
+      ]
+    },
+    {
+      "budget_nats": "0",
+      "epsilon": "1/18446744073709551616",
+      "maximal_nonneutral_probability": {
+        "lower": "0.000000000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000001"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "0.000000000000",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.000000000001"
+      },
+      "rational_bracket": [
+        "1/18446744073709551616",
+        "1/18446744073709551616"
+      ]
+    },
+    {
+      "budget_nats": "1/8",
+      "epsilon": "1/18446744073709551616",
+      "maximal_nonneutral_probability": {
+        "lower": "0.003319597322",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.003319597338"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "0.147262049595",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.147262050241"
+      },
+      "rational_bracket": [
+        "4208089538818000029298927201/1267650600228229401496703205376",
+        "131502798664523253219014963/39614081257132168796771975168"
+      ]
+    },
+    {
+      "budget_nats": "1",
+      "epsilon": "1/18446744073709551616",
+      "maximal_nonneutral_probability": {
+        "lower": "0.025193390887",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.025193390903"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "1.117614583198",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "1.117614583844"
+      },
+      "rational_bracket": [
+        "31936417080425040850933698721/1267650600228229401496703205376",
+        "998013034339743278895101573/39614081257132168796771975168"
+      ]
+    },
+    {
+      "budget_nats": "4",
+      "epsilon": "1/18446744073709551616",
+      "maximal_nonneutral_probability": {
+        "lower": "0.097365113746",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "0.097365113762"
+      },
+      "q_times_log_inverse_epsilon": {
+        "lower": "4.319254661009",
+        "rounding": "outward from exact rational endpoints",
+        "upper": "4.319254661656"
+      },
+      "rational_bracket": [
+        "123424944882029476380629092171/1267650600228229401496703205376",
+        "61712472450238110227169321893/633825300114114700748351602688"
+      ]
+    }
+  ],
+  "parent_commit": "b6a3815ceb505de0b1f570eae3ff5be75cdbe99c",
+  "schema": "succ.inertial-information-boundary.production-probe.v1",
+  "scope": {
+    "finite_certificates": "exact rational enclosure checks",
+    "physical_inertia": "HYPOTHESIS",
+    "selected_BBP_cancellation": "OPEN",
+    "universal_results": "paper proofs; finite checks are not their infinite lift"
+  },
+  "status": "passed"
+}

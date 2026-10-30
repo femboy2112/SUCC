@@ -1,0 +1,79 @@
+{
+  "file_hashes_excluding_this_manifest": [
+    {
+      "git_blob_sha1": "80b369aef279135d32678c30c303b73a6b82322e",
+      "path": "research/2026-10-29/inertial_relative_observer/README.md",
+      "sha256": "fd6dc881bd1c4a096c62670fae5ce76adc4d351d92907d7fa0a15d429c39ab7c",
+      "size_bytes": 21168
+    },
+    {
+      "git_blob_sha1": "944957f168858d699bf7f6a3e80914990a2b21ce",
+      "path": "research/2026-10-29/inertial_relative_observer/CLAIMS.md",
+      "sha256": "7163bb1026b8d53f09771ecf85decc6cfdde047b03cea753e9c851c347a701dc",
+      "size_bytes": 6481
+    },
+    {
+      "git_blob_sha1": "9bbb07e5d9721f46e37ac343a7c34d00c3185a3b",
+      "path": "research/2026-10-29/inertial_relative_observer/NEXT.md",
+      "sha256": "0c04a786da2691707f9f7cf806635c51e48029cfc615ae6d875bb2c9c6818615",
+      "size_bytes": 5359
+    },
+    {
+      "git_blob_sha1": "32f3bfa27265c2607f34a2b5a6a2183731173d00",
+      "path": "research/2026-10-29/inertial_relative_observer/VALIDATION.md",
+      "sha256": "1f44d1566cde802e8c007b14785f78a179b4d7714bef697328e62c77ee99c2f0",
+      "size_bytes": 4890
+    },
+    {
+      "git_blob_sha1": "7a93685f75accc54fe9af58f3fec9f5a90336eb4",
+      "path": "research/2026-10-29/inertial_relative_observer/relative_observer.py",
+      "sha256": "d60e8bd0bb373b6e17688b2a8d075460f58eb5075fc8c8ac7648a41c8a85eeff",
+      "size_bytes": 10905
+    },
+    {
+      "git_blob_sha1": "040379a3cce3073d57d66e1860a1cdfc03a86b8f",
+      "path": "research/2026-10-29/inertial_relative_observer/independent_oracle.py",
+      "sha256": "99bd4b91099d7d8152971f57a8843e04b7a7969cc4ee76844212130255d4c8e3",
+      "size_bytes": 6000
+    },
+    {
+      "git_blob_sha1": "5b7eaa3fbfc2d8241013ad30a880dd168ee68b9f",
+      "path": "research/2026-10-29/inertial_relative_observer/stdlib_staged_tests.log",
+      "sha256": "402e863b393d6dcc3cd3c0ebabab5c047ea43aa1cd4c5e8fd5b1058f1dae003f",
+      "size_bytes": 9415
+    },
+    {
+      "git_blob_sha1": "8355671e2762f5efcbbc3e2df134089a03f4e5f5",
+      "path": "research/2026-10-29/inertial_relative_observer/independent_oracle.log",
+      "sha256": "4e7343e0c158bf8479b4e0c4c07fe99207c4f2ea674d0918014c5d39f9407803",
+      "size_bytes": 1099
+    },
+    {
+      "git_blob_sha1": "f92b42f9fdf0489073594c9a02dd89163765cfba",
+      "path": "research/2026-10-29/inertial_relative_observer/source_probe.log",
+      "sha256": "cdf46e4d489ea3d57eccd3ee806f731ae58fd04db405be1e6986ebf3f4b011d9",
+      "size_bytes": 260
+    },
+    {
+      "git_blob_sha1": "1a1c09e54af8fc52a542e668eda32503e3a51246",
+      "path": "research/2026-10-29/inertial_relative_observer/PYTHON_ENV.txt",
+      "sha256": "4a71fb40bb4615622efef992800dc76ecb01edf81d6c2be5c3197e74256b435c",
+      "size_bytes": 231
+    },
+    {
+      "git_blob_sha1": "018a36ec12c809bb700b91499d787b90c498a78c",
+      "path": "tests/test_inertial_relative_observer.py",
+      "sha256": "fce7c63461d2e62d45f143517d247ad5d00b5ed324c40f6ff528d964f2b50909",
+      "size_bytes": 15494
+    }
+  ],
+  "independent_oracle": "210-digit PASS; mathematical assertions scoped to finite/analytic identities, not pi normality",
+  "inherited_staged_tests": 32,
+  "native_full_suite": "UNRUN, full checkout unavailable; do not claim CI pass",
+  "new_staged_tests": 34,
+  "parent_commit_sha": "bcc86f1f5edcb9696ae11451fb6dffede1530434",
+  "parent_draft_pr": 375,
+  "research_day": "2026-10-29",
+  "source_scope": "source original four-pole BBP unchanged; U0=0 preserved; additive research-only",
+  "validated_local_staged_test_count": 66
+}

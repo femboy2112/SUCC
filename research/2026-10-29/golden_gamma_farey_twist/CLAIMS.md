@@ -1,0 +1,29 @@
+# Claim ledger: Farey/Golden/Gamma 45-degree arithmetic and signed modular observer
+
+**Exact parent:** SUCC draft #371 `e418e465b7b0669997d8c67fcbcbd48c1df1681f` (source lineage #370→#369→#367); source-faithful siblings #368/#372 are cited, not imported or asserted independent. Definitions, proofs and failure modes appear in [README](README.md); finite raw receipts in [VALIDATION](VALIDATION.md). `PROVED PAPER` is a self-contained argument within declared models, **not** formal Lean or external peer review. Existing claim namespaces untouched.
+
+| ID | Statement / stated source | Verdict | Truth debt or decisive control |
+|---|---|---|---|
+| FGT-01 | Farey modular triangles genuinely tessellate hyperbolic H; PSL2(Z) preserves determinant-one adjacency | CLASSICAL; exact integer tests | Circle alone cannot select hyperbolic geometry |
+| FGT-02 | `A=[[1,1],[1,2]]` fixes golden λ and -φ and carries Fibonacci convergents | PROVED PAPER; exact rational tests | Selected A, not canonical for arbitrary itinerary |
+| FGT-03 | Independent Gamma(1+φ(q)), Gamma(1+q−φ(q)) cusp variables produce pathwise compatible Dirichlet edge projections across all triangles | PROVED PAPER within declared product measure; finite exact moment tests | Globally normalized full 3-component face vectors do not agree; q=∞ baseline and +1 chosen |
+| FGT-04 | Cusp primitive rank log-minus-golden Laplace value `H_φ(q)−γ−λ^(1+φ(q))`; q=1 gives Ω | CLASSICAL within declared model | No authentic BBP zero-seed or Γ physical mechanism from decorating cusps |
+| FGT-05 | Every scalar cusp potential difference has zero total holonomy around triangle/all loops | PROVED PAPER / negative control | A nonflat BBP signed connection cannot come from scalar values alone |
+| FGT-06 | Integerized 45° `D` has determinant 2 and square 2 times 90° rotation; primitive loss iff both entries odd | PROVED PAPER; exhaustive finite tests | D is NOT a modular SL2(Z) automorphism |
+| FGT-07 | Original two-geometric Oily parity primitive-loss equals exact odd-Möbius series at t=log4; rigorous rational tail | PROVED PAPER and certified rational interval | Grade-J odd filter ≠ coprimality(K,L); (0,0) special-case |
+| FGT-07A | Original Oily 45° defect is the **positive totient/cototient heat trace** `4L(t)=SUM(1+1_even)phi(n)e^(-nt)`; two independent exact Möbius/totient rational enclosures | PROVED PAPER; **independent rational tests** | Even-index factor 2 is determinant-two parity defect; standard Farey primitive counts only after declaring source orientation |
+| FGT-08 | Conditional primitive-loss fraction ~0.22878168; exact primitive-pair Möbius series requires subtracting origin | PROVED PAPER; exact interval | Origin omission creates false infinite Möbius summation |
+| FGT-09 | `∫ t^(s−1)L(t)dt=Γ(s)ζ(s−1)/(4(1−2^(−s))ζ(s))` for Re s>2 | PROVED PAPER via absolute Fubini; high-precision check | Do not analytically extrapolate integral outside convergence without continuation |
+| FGT-10 | 45° complex contour rotates the SAME L(t) with phase exp(iπs/4) for Re s>2 | PROVED PAPER by termwise Gamma rotation; numerical quadrature | Analytic contour rotation ≠ physical 45° primitive matrix |
+| FGT-11 | Pole at s=2 has residue 2/π²; normalized finite-part derivative `1−log2/3−ζ'(2)/ζ(2)`; explicit +γ/-γ cancellation | PROVED PAPER; independent 45dps check | Does not demonstrate global signed π phase cancellation |
+| FGT-12 | Primitive nonholomorphic Eisenstein E(z,s) is globally modular invariant and therefore coherently restricts to all Farey tiles | CLASSICAL / PROVED PAPER change of basis | Marked totient/cototient cusp labels are NOT modular invariant without transport |
+| FGT-13 | At z=i, E(i,s)=2ζ(s)β(s)/ζ(2s) and Laurent constant contains γ, β'/β, ζ'/ζ | CLASSICAL; independent high-precision check | Pole-normalization/cusp convention explicit; no RH inference |
+| FGT-14 | At s=2 every nonzero horizontal Fourier coefficient is strictly positive: explicit σ_-3 and exponential damping | PROVED PAPER via Gaussian Fourier and Poisson; independent i-control | Coefficients decay exponentially; no frequency-uniform inverse condition number |
+| FGT-15 | For true U0=0, modular translated-energy `E_N(y)→0` iff base-16 π normality | PROVED PAPER **equivalence**, signed target OPEN | This DOES NOT prove `E_N(y)→0`; it is a new source-faithful instrument/criterion |
+| FGT-16 | Complete explicit finite Fourier cutoff tail bounds E_N uniformly for every bounded phase sequence | PROVED PAPER | Finite tiny energy does not certify infinite vanishing |
+| FGT-17 | Constant-sequence/coherent same-forcing seed has positive limiting modular energy; one unshifted E readout is non-identifying | PROVED PAPER countermodels | No witness that zero seed passes infinite gate |
+| FGT-18 | Any physical/combinatorial equivalence of D, complex contour 45°, Gamma field and selected BBP carry | UNVERIFIED / DARK | Need source-preserving map respecting real phases and all controls |
+| FGT-19 | True-zero-seed asymptotic signed energy vanishes (normality) or stays bounded away from 0 (nonnormality) | OPEN | Need new independent source-specific upper/lower asymptotic theorem |
+| FGT-20 | Exact-head full native SUCC gates, Lean, hosted CI, external originality | UNVERIFIED until executed | Local package is not a complete checkout |
+
+**Toolkit/FuckedField discipline.** A family of only source-blind positive Oily, Gamma, or unmarked cusp measurements is non-identifying over a free-seed class with different normality outcomes. A *full translated modular profile* separates all asymptotic Weyl modes (it is not Fucked under that observation class), but separation does not establish actual true-seed convergence. Restricting to one unshifted scalar again creates a nonidentifiable observation fiber. Keep source-map adequacy, observation separation, arithmetic proof, and computational cost separate.

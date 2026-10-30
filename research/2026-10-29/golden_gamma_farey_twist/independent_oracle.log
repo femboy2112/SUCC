@@ -1,0 +1,21 @@
+PASS original two-loop Oily primitive 45-degree defect error=4.8099e-26
+PASS independent positive totient heat coefficients equal odd-Mobius source error=4.6426e-32
+PASS 45-degree gamma-mellin contour transfer error=1.7721e-46
+PASS Mellin pole leading coefficient error=2.7132e-13
+PASS Gamma plus zeta Euler cancellation jet error=1.0678e-13
+PASS rank-2 oily macaroni error=1.3685e-46
+PASS Eisenstein square-lattice value at i error=3.5032e-46
+PASS Eisenstein S modular invariance error=0.0
+PASS Eisenstein golden hyperbolic A modular invariance error=3.5259e-31
+PASS Eisenstein finite Laurent contains gamma error=5.1355e-11
+PASS unshifted E scalar two-atom alias error=0.0
+COUNTEREXAMPLE_ONLY two-atom unshifted observer weights 0.49804336051309 0.50195663948691
+PASS 59 nonzero primitive-Eisenstein Fourier coefficients (numeric control)
+OBSERVED_ONLY finite actual BBP/Eisenstein energy N 16 E_N 0.000043864151841220199174 coherent reference 0.00077929114642696858019
+OBSERVED_ONLY finite actual BBP/Eisenstein energy N 64 E_N 8.7158519305289714168e-6 coherent reference 0.00077929114642696858019
+OBSERVED_ONLY finite actual BBP/Eisenstein energy N 160 E_N 1.390427695755255507e-6 coherent reference 0.00077929114642696858019
+KNOWN_IRRATIONAL_ROTATION energy N 64 2.0458146463058611729e-7
+KNOWN_IRRATIONAL_ROTATION energy N 256 1.8801557073048015792e-10
+KNOWN_IRRATIONAL_ROTATION energy N 1024 1.7452239907089799304e-10
+NEGATIVE_PERIODIC_CONTROL energy 1.1933761543177728226e-8
+INDEPENDENT_MPMATH_ORACLE_PASS (numerical checks do NOT certify global signed cancellation)

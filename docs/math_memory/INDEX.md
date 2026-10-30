@@ -58,3 +58,17 @@ Pólya environment and universal leakage spectrum. Typed nodes `MM-CPS-1` throug
 are separated from paper analytic/spectral proofs. Historical FQIDs are unchanged;
 the regenerated catalog intentionally retains warnings for unregistered research
 supplements. **Selected signed BBP cancellation, π normality and RH remain OPEN.**
+
+## Operational triangle / Triangle Genesis (2026-10-29, Operation Main XV)
+
+The **operational triangle** is SUCC's formal observer apparatus: finite-path/source update →
+superposed endpoint with retained posterior → typed observation/selection. Apparatus interface
+`docs/OPERATIONAL_TRIANGLE.md`; frontier dossiers
+`research/2026-10-29/operational_triangle_frontier/` (`THEOREMS.md`, `CLAIMS.md` TG-01–TG-10,
+`ORIGINAL_TRIANGLE_PROVENANCE.md`). The author's Harmonic / Golden-ratio / Euler–Mascheroni
+triangle and Oily–Macaroni (`Omega_OM = phi^{-1}-gamma`) are the preserved rank-two
+(`r=2, theta=1`) specialization, with naming provenance in
+`research/2026-10-28/AUTHOR_ANALOGY_PROVENANCE_LEDGER.md` (PR #365). The prime-ladder
+transcendence→entropy bridge (PR #334 R4/R5) is **REFUTED as a general bridge** by the Kempner
+firewall (PR #337). Research-draft `TG-` labels are intentionally kept out of the historical FQID
+namespace. **Selected signed BBP cancellation, π base-16/base-3 normality and RH remain OPEN.**
