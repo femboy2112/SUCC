@@ -1,0 +1,62 @@
+{
+  "parent_sha": "abf51bf061f583d0e38a915c2e1bae5e28ddaace",
+  "source": "femboy2112/SUCC",
+  "sha256_files": [
+    {
+      "path": "ASTRA_ULTRA_FANOUT.md",
+      "bytes": 8366,
+      "sha256": "441ff3437f6460ca16e44f749e4b6fcd5849d62c4215599d1c41c23c163bff31"
+    },
+    {
+      "path": "CLAIMS.md",
+      "bytes": 2754,
+      "sha256": "b8bb0104882e0493f687dee94864d65a1cffe0cd4368b223e4372061bb21f912"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2677,
+      "sha256": "a3441e6b642a91316777be020a985d1b2420595b1bb59e7a0651fdac652ef3af"
+    },
+    {
+      "path": "THEOREMS.md",
+      "bytes": 8881,
+      "sha256": "a8b95200582fe92441cf157e93244921fa8e5274128e7ea4f06466a1f824431a"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 1637,
+      "sha256": "84b001254fb22ccaec5c1e983c15d4fbee07859280f9b82c9b60372727d12ed2"
+    },
+    {
+      "path": "focused_tests.log",
+      "bytes": 1403,
+      "sha256": "04c9a6e1306482bdf98aca1636401317556a1c8e4187599d7c89f493d777e6d7"
+    },
+    {
+      "path": "independent_oracle.py",
+      "bytes": 2322,
+      "sha256": "2cc93d9e98ba748a31215ab225129359816bd6da36bc81d4f23553b733fcf1a9"
+    },
+    {
+      "path": "independent_oracle_receipt.json",
+      "bytes": 1716,
+      "sha256": "396b27911489df48869f2e85001e233b352b999ab5975355b33acf0319704d70"
+    },
+    {
+      "path": "initial_oracle_failure.log",
+      "bytes": 439,
+      "sha256": "053cedffec6c94b123d8547cc902e09102000a846a2e2fc1340ce5747ac540f9"
+    },
+    {
+      "path": "selected_boundary.py",
+      "bytes": 3188,
+      "sha256": "32944e6de122b62a185868ae869091f265f3e9c4113cc721b04c128a74ee9340"
+    },
+    {
+      "path": "test_selected_boundary.py",
+      "bytes": 3026,
+      "sha256": "f01c5e138bc8fbf9887b207aa182ef31c23bf853f06a5d557ebfa2e880638945"
+    }
+  ],
+  "notes": "Retains initial failed oracle fixture; excludes manifest self-hash"
+}
