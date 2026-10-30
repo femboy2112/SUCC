@@ -1,0 +1,126 @@
+{
+  "status": "PASS",
+  "integer_lcm_witnesses": [
+    {
+      "n": 7,
+      "integer_lcm_match": true,
+      "exact_prime_product_divides": true,
+      "prime_count": 5
+    },
+    {
+      "n": 23,
+      "integer_lcm_match": true,
+      "exact_prime_product_divides": true,
+      "prime_count": 16
+    },
+    {
+      "n": 64,
+      "integer_lcm_match": true,
+      "exact_prime_product_divides": true,
+      "prime_count": 38
+    },
+    {
+      "n": 97,
+      "integer_lcm_match": true,
+      "exact_prime_product_divides": true,
+      "prime_count": 56
+    },
+    {
+      "n": 127,
+      "integer_lcm_match": true,
+      "exact_prime_product_divides": true,
+      "prime_count": 73
+    },
+    {
+      "n": 211,
+      "integer_lcm_match": true,
+      "exact_prime_product_divides": true,
+      "prime_count": 107
+    },
+    {
+      "n": 257,
+      "integer_lcm_match": true,
+      "exact_prime_product_divides": true,
+      "prime_count": 128
+    }
+  ],
+  "independent_multiplicative_periods": [
+    {
+      "c": 3,
+      "stage": 1,
+      "period": 1
+    },
+    {
+      "c": 3,
+      "stage": 2,
+      "period": 3
+    },
+    {
+      "c": 3,
+      "stage": 3,
+      "period": 9
+    },
+    {
+      "c": 3,
+      "stage": 4,
+      "period": 27
+    },
+    {
+      "c": 3,
+      "stage": 5,
+      "period": 81
+    },
+    {
+      "c": 5,
+      "stage": 1,
+      "period": 1
+    },
+    {
+      "c": 5,
+      "stage": 2,
+      "period": 5
+    },
+    {
+      "c": 5,
+      "stage": 3,
+      "period": 25
+    },
+    {
+      "c": 5,
+      "stage": 4,
+      "period": 125
+    },
+    {
+      "c": 5,
+      "stage": 5,
+      "period": 625
+    }
+  ],
+  "independent_approximate_grid_checks": [
+    {
+      "n": 97,
+      "exact_all_translation_minimum_match": true,
+      "original_pi_grid_radius_excluded": true
+    },
+    {
+      "n": 127,
+      "exact_all_translation_minimum_match": true,
+      "original_pi_grid_radius_excluded": true
+    },
+    {
+      "n": 211,
+      "exact_all_translation_minimum_match": true,
+      "original_pi_grid_radius_excluded": true
+    },
+    {
+      "n": 257,
+      "exact_all_translation_minimum_match": true,
+      "original_pi_grid_radius_excluded": true
+    },
+    {
+      "n": 383,
+      "exact_all_translation_minimum_match": true,
+      "original_pi_grid_radius_excluded": true
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "status": "PASS_FINITE_EXACT",
+  "partial_rationals_checked": 512,
+  "rows": [
+    {
+      "n": 97,
+      "comparably_large_born_primes_checked": 96,
+      "state_denominator_bits": 841,
+      "difference_denominator_bits": 837
+    },
+    {
+      "n": 127,
+      "comparably_large_born_primes_checked": 123,
+      "state_denominator_bits": 1100,
+      "difference_denominator_bits": 1107
+    },
+    {
+      "n": 211,
+      "comparably_large_born_primes_checked": 187,
+      "state_denominator_bits": 1798,
+      "difference_denominator_bits": 1804
+    },
+    {
+      "n": 274,
+      "comparably_large_born_primes_checked": 235,
+      "state_denominator_bits": 2342,
+      "difference_denominator_bits": 2345
+    },
+    {
+      "n": 383,
+      "comparably_large_born_primes_checked": 318,
+      "state_denominator_bits": 3342,
+      "difference_denominator_bits": 3338
+    },
+    {
+      "n": 761,
+      "comparably_large_born_primes_checked": 567,
+      "state_denominator_bits": 6512,
+      "difference_denominator_bits": 6521
+    },
+    {
+      "n": 1021,
+      "comparably_large_born_primes_checked": 742,
+      "state_denominator_bits": 8870,
+      "difference_denominator_bits": 8866
+    }
+  ],
+  "retained_exact_cancellations": [
+    {
+      "n": 127,
+      "p": 37,
+      "packet": 4,
+      "offset": 1
+    },
+    {
+      "n": 274,
+      "p": 73,
+      "packet": 4,
+      "offset": 6
+    },
+    {
+      "n": 761,
+      "p": 569,
+      "packet": 2,
+      "offset": 1
+    }
+  ],
+  "asymptotic_rate_certified_by_this_run": false
+}

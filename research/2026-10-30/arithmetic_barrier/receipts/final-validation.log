@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier/research/2026-10-30/arithmetic_barrier/campaign_manifest.py", line 134, in <module>
+    write() if args.write else check()
+                               ~~~~~^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier/research/2026-10-30/arithmetic_barrier/campaign_manifest.py", line 110, in check
+    assert (path.parent/target).exists(),(name,target)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+AssertionError: ('VALIDATION.md', 'receipts/final-validation.json')

@@ -1,0 +1,1486 @@
+{
+  "status": "PASS finite certificates; infinite selected interaction OPEN",
+  "source": "authentic four-pole BBP, U0=0 except explicitly typed controls",
+  "trig_authority": "exact rational Machin bounds + Taylor/Lagrange + outward rounding",
+  "discovery_domain": "eligible primes below 500; h=1,2,3,5,16 floating exploratory scan",
+  "holdout_primes": [
+    521,
+    541,
+    569,
+    577,
+    601,
+    613,
+    617,
+    641,
+    653,
+    673
+  ],
+  "rows": [
+    {
+      "p": 13,
+      "class8": 5,
+      "h": 1,
+      "birth": 2,
+      "length": 3,
+      "family": "discovery_replay",
+      "source_phase_sha256": "5fe93ab9e33538fac7381d82b1265db2566e7ecad0704d3572338fcbd4beb2d2",
+      "full_modulus": [
+        "1987669132363/1000000000000",
+        "496917283091/250000000000"
+      ],
+      "primary_modulus": [
+        "208749904531/250000000000",
+        "1335999389/1600000000"
+      ],
+      "cofiber_variation": [
+        "948713887497/500000000000",
+        "474356943749/250000000000"
+      ],
+      "interaction_E": [
+        "607625215037/1000000000000",
+        "303812607519/500000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": false,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 1.667189736907952,
+        "gauss_wiener_upper": 6.011138082348939,
+        "fourier_reconstruction_error": 2.220446049250313e-16,
+        "max_primary_partial_sum": 1.7709120513064198,
+        "partial_summation_upper": 5.131089764527554,
+        "length": 3
+      }
+    },
+    {
+      "p": 13,
+      "class8": 5,
+      "h": 3,
+      "birth": 2,
+      "length": 3,
+      "family": "discovery_replay",
+      "source_phase_sha256": "5fe93ab9e33538fac7381d82b1265db2566e7ecad0704d3572338fcbd4beb2d2",
+      "full_modulus": [
+        "1388365700741/500000000000",
+        "2776731401483/1000000000000"
+      ],
+      "primary_modulus": [
+        "208749904531/250000000000",
+        "1335999389/1600000000"
+      ],
+      "cofiber_variation": [
+        "782710902779/200000000000",
+        "3913554513897/1000000000000"
+      ],
+      "interaction_E": [
+        "45448811469/200000000000",
+        "113622028673/500000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": false,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": false,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 1.669445965400576,
+        "gauss_wiener_upper": 6.019273029868257,
+        "fourier_reconstruction_error": 4.577566798522237e-16,
+        "max_primary_partial_sum": 1.0,
+        "partial_summation_upper": 4.913554513895467,
+        "length": 3
+      }
+    },
+    {
+      "p": 17,
+      "class8": 1,
+      "h": 1,
+      "birth": 3,
+      "length": 2,
+      "family": "discovery_replay",
+      "source_phase_sha256": "435f9a50dee03486dca98d28ca8eed841a5fee3c6771691b4b8cb109bd597eb3",
+      "full_modulus": [
+        "1257017006879/1000000000000",
+        "7856356293/6250000000"
+      ],
+      "primary_modulus": [
+        "92268359463/500000000000",
+        "184536718927/1000000000000"
+      ],
+      "cofiber_variation": [
+        "221624326643/200000000000",
+        "17314400519/15625000000"
+      ],
+      "interaction_E": [
+        "37811066319/31250000000",
+        "1209954122209/1000000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": false,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 1.3865370093603517,
+        "gauss_wiener_upper": 5.716838543420753,
+        "fourier_reconstruction_error": 0.0,
+        "max_primary_partial_sum": 1.0,
+        "partial_summation_upper": 2.1081216332151897,
+        "length": 2
+      }
+    },
+    {
+      "p": 17,
+      "class8": 1,
+      "h": 3,
+      "birth": 3,
+      "length": 2,
+      "family": "discovery_replay",
+      "source_phase_sha256": "435f9a50dee03486dca98d28ca8eed841a5fee3c6771691b4b8cb109bd597eb3",
+      "full_modulus": [
+        "1784848811439/1000000000000",
+        "22310610143/12500000000"
+      ],
+      "primary_modulus": [
+        "34207873759/62500000000",
+        "109465196029/200000000000"
+      ],
+      "cofiber_variation": [
+        "1963665164307/1000000000000",
+        "490916291077/250000000000"
+      ],
+      "interaction_E": [
+        "407157360151/1000000000000",
+        "50894670019/125000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": false,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 1.171581839388064,
+        "gauss_wiener_upper": 4.830555672852413,
+        "fourier_reconstruction_error": 2.220446049250313e-16,
+        "max_primary_partial_sum": 1.0,
+        "partial_summation_upper": 2.9636651643079115,
+        "length": 2
+      }
+    },
+    {
+      "p": 29,
+      "class8": 5,
+      "h": 1,
+      "birth": 4,
+      "length": 7,
+      "family": "discovery_replay",
+      "source_phase_sha256": "4010c3d65bd35f0a2844d9b02d6456a597540da1f5e423da45c1fc3ff082099a",
+      "full_modulus": [
+        "3995767354639/1000000000000",
+        "49947091933/12500000000"
+      ],
+      "primary_modulus": [
+        "2862268751107/1000000000000",
+        "715567187777/250000000000"
+      ],
+      "cofiber_variation": [
+        "7626897805981/1000000000000",
+        "7626897805987/1000000000000"
+      ],
+      "interaction_E": [
+        "154991108261/250000000000",
+        "123992886609/200000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 2.3526567156080596,
+        "gauss_wiener_upper": 12.66944414816117,
+        "fourier_reconstruction_error": 1.5543122344752192e-15,
+        "max_primary_partial_sum": 2.8622687511076332,
+        "partial_summation_upper": 24.69250000906595,
+        "length": 7
+      }
+    },
+    {
+      "p": 29,
+      "class8": 5,
+      "h": 3,
+      "birth": 4,
+      "length": 7,
+      "family": "discovery_replay",
+      "source_phase_sha256": "4010c3d65bd35f0a2844d9b02d6456a597540da1f5e423da45c1fc3ff082099a",
+      "full_modulus": [
+        "1031579515083/1000000000000",
+        "257894878771/250000000000"
+      ],
+      "primary_modulus": [
+        "837767508983/500000000000",
+        "1675535017967/1000000000000"
+      ],
+      "cofiber_variation": [
+        "6627621340871/1000000000000",
+        "6627621340877/1000000000000"
+      ],
+      "interaction_E": [
+        "270821339809/250000000000",
+        "1083285359237/1000000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 2.3180510479638907,
+        "gauss_wiener_upper": 12.4830869246364,
+        "fourier_reconstruction_error": 1.831026719408895e-15,
+        "max_primary_partial_sum": 2.6706799780947628,
+        "partial_summation_upper": 20.37093559556022,
+        "length": 7
+      }
+    },
+    {
+      "p": 37,
+      "class8": 5,
+      "h": 1,
+      "birth": 5,
+      "length": 9,
+      "family": "discovery_replay",
+      "source_phase_sha256": "fca823661c8754baf0bf8a2b6acfcee25f5d2c5c3657fbd0eda580bdc9d25d51",
+      "full_modulus": [
+        "2136729811041/500000000000",
+        "4273459622083/1000000000000"
+      ],
+      "primary_modulus": [
+        "330718913883/125000000000",
+        "529150262213/200000000000"
+      ],
+      "cofiber_variation": [
+        "14061705347769/1000000000000",
+        "14061705347777/1000000000000"
+      ],
+      "interaction_E": [
+        "670375713261/1000000000000",
+        "335187856631/500000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 2.492653304123001,
+        "gauss_wiener_upper": 15.162218119343441,
+        "fourier_reconstruction_error": 1.818360945611186e-15,
+        "max_primary_partial_sum": 2.6457513110645894,
+        "partial_summation_upper": 39.84952667074079,
+        "length": 9
+      }
+    },
+    {
+      "p": 37,
+      "class8": 5,
+      "h": 3,
+      "birth": 5,
+      "length": 9,
+      "family": "discovery_replay",
+      "source_phase_sha256": "fca823661c8754baf0bf8a2b6acfcee25f5d2c5c3657fbd0eda580bdc9d25d51",
+      "full_modulus": [
+        "733566763623/1000000000000",
+        "91695845453/125000000000"
+      ],
+      "primary_modulus": [
+        "330718913883/125000000000",
+        "529150262213/200000000000"
+      ],
+      "cofiber_variation": [
+        "8469902665061/1000000000000",
+        "8469902665069/1000000000000"
+      ],
+      "interaction_E": [
+        "548909172857/500000000000",
+        "219563669143/200000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 2.9018962325860485,
+        "gauss_wiener_upper": 17.651545670387982,
+        "fourier_reconstruction_error": 8.113748069235466e-15,
+        "max_primary_partial_sum": 2.898971260849138,
+        "partial_summation_upper": 27.45297566906531,
+        "length": 9
+      }
+    },
+    {
+      "p": 41,
+      "class8": 1,
+      "h": 1,
+      "birth": 6,
+      "length": 5,
+      "family": "discovery_replay",
+      "source_phase_sha256": "331d85d55ed1bc9f5711b6b71ba2f38920e5609e312c44729c1fff1384fefb6f",
+      "full_modulus": [
+        "2067469028777/500000000000",
+        "826987611511/200000000000"
+      ],
+      "primary_modulus": [
+        "318663120173/200000000000",
+        "796657800433/500000000000"
+      ],
+      "cofiber_variation": [
+        "1831234289489/250000000000",
+        "183123428949/25000000000"
+      ],
+      "interaction_E": [
+        "101420744693/500000000000",
+        "202841489387/1000000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": false,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 2.051373530414359,
+        "gauss_wiener_upper": 13.135199572624373,
+        "fourier_reconstruction_error": 9.485749680535094e-16,
+        "max_primary_partial_sum": 1.5933156008650768,
+        "partial_summation_upper": 13.26425224999708,
+        "length": 5
+      }
+    },
+    {
+      "p": 41,
+      "class8": 1,
+      "h": 3,
+      "birth": 6,
+      "length": 5,
+      "family": "discovery_replay",
+      "source_phase_sha256": "331d85d55ed1bc9f5711b6b71ba2f38920e5609e312c44729c1fff1384fefb6f",
+      "full_modulus": [
+        "301556886941/200000000000",
+        "753892217353/500000000000"
+      ],
+      "primary_modulus": [
+        "323719027281/500000000000",
+        "647438054563/1000000000000"
+      ],
+      "cofiber_variation": [
+        "347638101251/100000000000",
+        "1738190506257/500000000000"
+      ],
+      "interaction_E": [
+        "465573627647/500000000000",
+        "186229451059/200000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": false,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 1.8199611574128385,
+        "gauss_wiener_upper": 11.653437398216486,
+        "fourier_reconstruction_error": 3.1401849173675503e-16,
+        "max_primary_partial_sum": 1.450480748964359,
+        "partial_summation_upper": 6.492904483678834,
+        "length": 5
+      }
+    },
+    {
+      "p": 73,
+      "class8": 1,
+      "h": 1,
+      "birth": 10,
+      "length": 9,
+      "family": "discovery_replay",
+      "source_phase_sha256": "0504c291e75ff75d41ad4027e0000e7284a22e58f1f3a4001e4b1e279708309e",
+      "full_modulus": [
+        "2591515898457/1000000000000",
+        "1295757949229/500000000000"
+      ],
+      "primary_modulus": [
+        "1414213562373/500000000000",
+        "2828427124747/1000000000000"
+      ],
+      "cofiber_variation": [
+        "1066570333317/100000000000",
+        "5332851666589/500000000000"
+      ],
+      "interaction_E": [
+        "139681057041/125000000000",
+        "1117448456329/1000000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 2.83603807998308,
+        "gauss_wiener_upper": 24.231119977238574,
+        "fourier_reconstruction_error": 4.636427468134552e-15,
+        "max_primary_partial_sum": 3.2522971460880172,
+        "partial_summation_upper": 37.94033365759236,
+        "length": 9
+      }
+    },
+    {
+      "p": 73,
+      "class8": 1,
+      "h": 3,
+      "birth": 10,
+      "length": 9,
+      "family": "discovery_replay",
+      "source_phase_sha256": "0504c291e75ff75d41ad4027e0000e7284a22e58f1f3a4001e4b1e279708309e",
+      "full_modulus": [
+        "1601338828487/1000000000000",
+        "200167353561/125000000000"
+      ],
+      "primary_modulus": [
+        "1414213562373/500000000000",
+        "2828427124747/1000000000000"
+      ],
+      "cofiber_variation": [
+        "11224849304661/1000000000000",
+        "11224849304669/1000000000000"
+      ],
+      "interaction_E": [
+        "1233855945191/1000000000000",
+        "154231993149/125000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 2.6271746223363674,
+        "gauss_wiener_upper": 22.44658981284509,
+        "fourier_reconstruction_error": 1.3506446028928519e-15,
+        "max_primary_partial_sum": 2.8284271247461907,
+        "partial_summation_upper": 34.57709536924705,
+        "length": 9
+      }
+    },
+    {
+      "p": 97,
+      "class8": 1,
+      "h": 1,
+      "birth": 13,
+      "length": 12,
+      "family": "discovery_replay",
+      "source_phase_sha256": "28ea9804b242d1d940a2cd822fcab47ef88abcdd9ed8e032213aaf20b0451430",
+      "full_modulus": [
+        "833123864997/500000000000",
+        "333249545999/200000000000"
+      ],
+      "primary_modulus": [
+        "260707331071/200000000000",
+        "325884163839/250000000000"
+      ],
+      "cofiber_variation": [
+        "13634067001861/1000000000000",
+        "852129187617/62500000000"
+      ],
+      "interaction_E": [
+        "251008717357/250000000000",
+        "1004034869429/1000000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 3.071435728694501,
+        "gauss_wiener_upper": 30.250133739268136,
+        "fourier_reconstruction_error": 3.9968028886505635e-15,
+        "max_primary_partial_sum": 1.7188170193462504,
+        "partial_summation_upper": 25.153283425066302,
+        "length": 12
+      }
+    },
+    {
+      "p": 97,
+      "class8": 1,
+      "h": 3,
+      "birth": 13,
+      "length": 12,
+      "family": "discovery_replay",
+      "source_phase_sha256": "28ea9804b242d1d940a2cd822fcab47ef88abcdd9ed8e032213aaf20b0451430",
+      "full_modulus": [
+        "71109524947/15625000000",
+        "4551009596609/1000000000000"
+      ],
+      "primary_modulus": [
+        "79345046801/1000000000000",
+        "39672523401/500000000000"
+      ],
+      "cofiber_variation": [
+        "984828390241/62500000000",
+        "3939313560967/250000000000"
+      ],
+      "interaction_E": [
+        "46348802901/40000000000",
+        "579360036263/500000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 2.922795191686315,
+        "gauss_wiener_upper": 28.786194226691904,
+        "fourier_reconstruction_error": 1.1382899616642114e-14,
+        "max_primary_partial_sum": 3.597979262514816,
+        "partial_summation_upper": 60.29225326610606,
+        "length": 12
+      }
+    },
+    {
+      "p": 257,
+      "class8": 1,
+      "h": 1,
+      "birth": 33,
+      "length": 4,
+      "family": "discovery_replay",
+      "source_phase_sha256": "375a95a79d446ff187274ff2fc633c031e6d2f3c846b606f4ff24f58e837b2d4",
+      "full_modulus": [
+        "8765292269/15625000000",
+        "560978705217/1000000000000"
+      ],
+      "primary_modulus": [
+        "100133410681/50000000000",
+        "2002668213621/1000000000000"
+      ],
+      "cofiber_variation": [
+        "3462903780891/1000000000000",
+        "1731451890447/500000000000"
+      ],
+      "interaction_E": [
+        "1507420196069/1000000000000",
+        "150742019607/100000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": false,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 1.9414942064520289,
+        "gauss_wiener_upper": 31.124519862923282,
+        "fourier_reconstruction_error": 4.335559509131367e-16,
+        "max_primary_partial_sum": 2.232979918833362,
+        "partial_summation_upper": 9.965574522418285,
+        "length": 4
+      }
+    },
+    {
+      "p": 257,
+      "class8": 1,
+      "h": 3,
+      "birth": 33,
+      "length": 4,
+      "family": "discovery_replay",
+      "source_phase_sha256": "375a95a79d446ff187274ff2fc633c031e6d2f3c846b606f4ff24f58e837b2d4",
+      "full_modulus": [
+        "603025235357/250000000000",
+        "2412100941429/1000000000000"
+      ],
+      "primary_modulus": [
+        "1877874519373/1000000000000",
+        "938937259687/500000000000"
+      ],
+      "cofiber_variation": [
+        "169491173819/50000000000",
+        "3389823476383/1000000000000"
+      ],
+      "interaction_E": [
+        "1271563227527/1000000000000",
+        "158945403441/125000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": false,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 1.6560912024061905,
+        "gauss_wiener_upper": 26.549161647151983,
+        "fourier_reconstruction_error": 2.220446049250313e-16,
+        "max_primary_partial_sum": 2.1436592094880345,
+        "partial_summation_upper": 9.410285523172709,
+        "length": 4
+      }
+    },
+    {
+      "p": 521,
+      "class8": 1,
+      "h": 1,
+      "birth": 66,
+      "length": 65,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "c69d46668a528ad40f7342410a6b0956b9cf27a8c30e9882eead79b3aad4f210",
+      "full_modulus": [
+        "1046782286303/250000000000",
+        "4187129145213/1000000000000"
+      ],
+      "primary_modulus": [
+        "11266217029383/1000000000000",
+        "1408277128673/125000000000"
+      ],
+      "cofiber_variation": [
+        "42789333816827/500000000000",
+        "42789333816859/500000000000"
+      ],
+      "interaction_E": [
+        "1096967984029/1000000000000",
+        "109696798403/100000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 7.37331128215236,
+        "gauss_wiener_upper": 168.29895940347183,
+        "fourier_reconstruction_error": 1.1102230246251565e-13,
+        "max_primary_partial_sum": 12.018368352156164,
+        "partial_summation_upper": 1040.5343190604926,
+        "length": 65
+      }
+    },
+    {
+      "p": 521,
+      "class8": 1,
+      "h": 3,
+      "birth": 66,
+      "length": 65,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "c69d46668a528ad40f7342410a6b0956b9cf27a8c30e9882eead79b3aad4f210",
+      "full_modulus": [
+        "4048983188453/500000000000",
+        "8097966376907/1000000000000"
+      ],
+      "primary_modulus": [
+        "4395485618861/500000000000",
+        "8790971237723/1000000000000"
+      ],
+      "cofiber_variation": [
+        "41860802166137/500000000000",
+        "41860802166169/500000000000"
+      ],
+      "interaction_E": [
+        "493761562971/500000000000",
+        "987523125943/1000000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 6.982311835555225,
+        "gauss_wiener_upper": 159.3742310865057,
+        "fourier_reconstruction_error": 6.505565891227856e-14,
+        "max_primary_partial_sum": 9.040081056990692,
+        "partial_summation_upper": 765.8901704423874,
+        "length": 65
+      }
+    },
+    {
+      "p": 541,
+      "class8": 5,
+      "h": 1,
+      "birth": 68,
+      "length": 135,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "e104a5d316c5c414f2c6f596104844f580969a2ed7ce3ea9709fe8ec0ecda78d",
+      "full_modulus": [
+        "14868830797117/1000000000000",
+        "7434415398559/500000000000"
+      ],
+      "primary_modulus": [
+        "12635209406577/1000000000000",
+        "6317604703289/500000000000"
+      ],
+      "cofiber_variation": [
+        "169458208345847/1000000000000",
+        "169458208345981/1000000000000"
+      ],
+      "interaction_E": [
+        "1000910298991/1000000000000",
+        "62556893687/62500000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 10.265552127320937,
+        "gauss_wiener_upper": 238.7706519214625,
+        "fourier_reconstruction_error": 1.5318181232051995e-13,
+        "max_primary_partial_sum": 14.399342659929852,
+        "partial_summation_upper": 2454.486151170613,
+        "length": 135
+      }
+    },
+    {
+      "p": 541,
+      "class8": 5,
+      "h": 3,
+      "birth": 68,
+      "length": 135,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "e104a5d316c5c414f2c6f596104844f580969a2ed7ce3ea9709fe8ec0ecda78d",
+      "full_modulus": [
+        "14900947684807/1000000000000",
+        "1862618460601/125000000000"
+      ],
+      "primary_modulus": [
+        "12635209406577/1000000000000",
+        "6317604703289/500000000000"
+      ],
+      "cofiber_variation": [
+        "79430734135193/500000000000",
+        "3971536706763/25000000000"
+      ],
+      "interaction_E": [
+        "994183443683/1000000000000",
+        "248545860921/250000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 10.187280477876824,
+        "gauss_wiener_upper": 236.9500997940226,
+        "fourier_reconstruction_error": 4.073983017025308e-13,
+        "max_primary_partial_sum": 12.635209406577523,
+        "partial_summation_upper": 2019.8831276401702,
+        "length": 135
+      }
+    },
+    {
+      "p": 569,
+      "class8": 1,
+      "h": 1,
+      "birth": 72,
+      "length": 71,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "b357be66cbfbbd169a7f11755b58895a3c89ee1d296e587e60be8bba5a607d8f",
+      "full_modulus": [
+        "4553350582547/500000000000",
+        "1821340233019/200000000000"
+      ],
+      "primary_modulus": [
+        "97310792973/15625000000",
+        "6227890750273/1000000000000"
+      ],
+      "cofiber_variation": [
+        "379432822367/3906250000",
+        "48567401263011/500000000000"
+      ],
+      "interaction_E": [
+        "270082435739/250000000000",
+        "1080329742957/1000000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 7.599442604488816,
+        "gauss_wiener_upper": 181.27498275957814,
+        "fourier_reconstruction_error": 1.2303114666368339e-13,
+        "max_primary_partial_sum": 6.4066920662803675,
+        "partial_summation_upper": 628.7194607692227,
+        "length": 71
+      }
+    },
+    {
+      "p": 569,
+      "class8": 1,
+      "h": 3,
+      "birth": 72,
+      "length": 71,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "b357be66cbfbbd169a7f11755b58895a3c89ee1d296e587e60be8bba5a607d8f",
+      "full_modulus": [
+        "3076608391331/500000000000",
+        "6153216782663/1000000000000"
+      ],
+      "primary_modulus": [
+        "13976208714111/1000000000000",
+        "109189130579/7812500000"
+      ],
+      "cofiber_variation": [
+        "21433781616279/250000000000",
+        "42867563232593/500000000000"
+      ],
+      "interaction_E": [
+        "15215319249/15625000000",
+        "973780431937/1000000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 7.443315361164427,
+        "gauss_wiener_upper": 177.55076707496835,
+        "fourier_reconstruction_error": 1.3582524929012606e-13,
+        "max_primary_partial_sum": 13.976208714111598,
+        "partial_summation_upper": 1212.2282303218467,
+        "length": 71
+      }
+    },
+    {
+      "p": 577,
+      "class8": 1,
+      "h": 1,
+      "birth": 73,
+      "length": 36,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "4e5bd8aec16dc84f7ae01e90b4a509c14461096377aeb1fc51d6e32cfb30445a",
+      "full_modulus": [
+        "2525119431411/500000000000",
+        "5050238862823/1000000000000"
+      ],
+      "primary_modulus": [
+        "441596451533/200000000000",
+        "1103991128833/500000000000"
+      ],
+      "cofiber_variation": [
+        "22237712071833/500000000000",
+        "22237712071851/500000000000"
+      ],
+      "interaction_E": [
+        "470684347657/500000000000",
+        "188273739063/200000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 5.475171800472064,
+        "gauss_wiener_upper": 131.51813982558815,
+        "fourier_reconstruction_error": 2.37535842023752e-14,
+        "max_primary_partial_sum": 6.774764611966693,
+        "partial_summation_upper": 308.0852942027832,
+        "length": 36
+      }
+    },
+    {
+      "p": 577,
+      "class8": 1,
+      "h": 3,
+      "birth": 73,
+      "length": 36,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "4e5bd8aec16dc84f7ae01e90b4a509c14461096377aeb1fc51d6e32cfb30445a",
+      "full_modulus": [
+        "662719576611/100000000000",
+        "6627195766111/1000000000000"
+      ],
+      "primary_modulus": [
+        "315486814767/250000000000",
+        "1261947259069/1000000000000"
+      ],
+      "cofiber_variation": [
+        "48160358903387/1000000000000",
+        "24080179451711/500000000000"
+      ],
+      "interaction_E": [
+        "226540479663/250000000000",
+        "906161918653/1000000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 5.013581918371303,
+        "gauss_wiener_upper": 120.43037036948259,
+        "fourier_reconstruction_error": 2.7889368091584967e-14,
+        "max_primary_partial_sum": 4.1578273418011,
+        "partial_summation_upper": 204.400284381335,
+        "length": 36
+      }
+    },
+    {
+      "p": 601,
+      "class8": 1,
+      "h": 1,
+      "birth": 76,
+      "length": 25,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "a0c91d1f660f126dec5dc2e483a0c3d00a555493da08d30317db2c27a66b2d5a",
+      "full_modulus": [
+        "1293743617393/1000000000000",
+        "646871808697/500000000000"
+      ],
+      "primary_modulus": [
+        "2227323732977/500000000000",
+        "890929493191/200000000000"
+      ],
+      "cofiber_variation": [
+        "29885170794781/1000000000000",
+        "5977034158961/200000000000"
+      ],
+      "interaction_E": [
+        "447538188053/500000000000",
+        "895076376107/1000000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 4.608539487778582,
+        "gauss_wiener_upper": 112.97973429982521,
+        "fourier_reconstruction_error": 1.4782651883131942e-14,
+        "max_primary_partial_sum": 6.861880688028137,
+        "partial_summation_upper": 211.93035702325594,
+        "length": 25
+      }
+    },
+    {
+      "p": 601,
+      "class8": 1,
+      "h": 3,
+      "birth": 76,
+      "length": 25,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "a0c91d1f660f126dec5dc2e483a0c3d00a555493da08d30317db2c27a66b2d5a",
+      "full_modulus": [
+        "964445759009/200000000000",
+        "2411114397523/500000000000"
+      ],
+      "primary_modulus": [
+        "6871530904447/1000000000000",
+        "53683835191/7812500000"
+      ],
+      "cofiber_variation": [
+        "3192488250433/100000000000",
+        "15962441252177/500000000000"
+      ],
+      "interaction_E": [
+        "418313442629/500000000000",
+        "836626885259/1000000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 4.492889094863028,
+        "gauss_wiener_upper": 110.14453006691802,
+        "fourier_reconstruction_error": 1.9878961019053828e-14,
+        "max_primary_partial_sum": 6.871530904447138,
+        "partial_summation_upper": 226.24434765388472,
+        "length": 25
+      }
+    },
+    {
+      "p": 613,
+      "class8": 5,
+      "h": 1,
+      "birth": 77,
+      "length": 153,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "7cadf2ea8c0e62aa021a6108331aa3e6b67abe12e9ddaaa226f4ec27e15a18f5",
+      "full_modulus": [
+        "7897732013001/500000000000",
+        "15795464026003/1000000000000"
+      ],
+      "primary_modulus": [
+        "6413222154513/500000000000",
+        "12826444309027/1000000000000"
+      ],
+      "cofiber_variation": [
+        "6074402001829/31250000000",
+        "4859521601467/25000000000"
+      ],
+      "interaction_E": [
+        "132551934769/125000000000",
+        "1060415478153/1000000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 10.965621958650521,
+        "gauss_wiener_upper": 271.4960445535876,
+        "fourier_reconstruction_error": 2.3272986433303883e-13,
+        "max_primary_partial_sum": 14.732172899004992,
+        "partial_summation_upper": 2878.384670468387,
+        "length": 153
+      }
+    },
+    {
+      "p": 613,
+      "class8": 5,
+      "h": 3,
+      "birth": 77,
+      "length": 153,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "7cadf2ea8c0e62aa021a6108331aa3e6b67abe12e9ddaaa226f4ec27e15a18f5",
+      "full_modulus": [
+        "3195584654861/250000000000",
+        "2556467723889/200000000000"
+      ],
+      "primary_modulus": [
+        "6413222154513/500000000000",
+        "12826444309027/1000000000000"
+      ],
+      "cofiber_variation": [
+        "95062020578017/500000000000",
+        "95062020578093/500000000000"
+      ],
+      "interaction_E": [
+        "255759873951/250000000000",
+        "204607899161/200000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 10.80886539909223,
+        "gauss_wiener_upper": 267.6149344771699,
+        "fourier_reconstruction_error": 5.799743873536481e-14,
+        "max_primary_partial_sum": 14.273132565201175,
+        "partial_summation_upper": 2727.9387758181156,
+        "length": 153
+      }
+    },
+    {
+      "p": 617,
+      "class8": 1,
+      "h": 1,
+      "birth": 78,
+      "length": 77,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "72854244eed252b6675809e3da7c2ae25b146a1809d883a9c4183cda9896077e",
+      "full_modulus": [
+        "1007267661621/100000000000",
+        "10072676616211/1000000000000"
+      ],
+      "primary_modulus": [
+        "11317827413993/1000000000000",
+        "5658913706997/500000000000"
+      ],
+      "cofiber_variation": [
+        "24775869910813/250000000000",
+        "1548491869427/15625000000"
+      ],
+      "interaction_E": [
+        "21007433777/20000000000",
+        "1050371688851/1000000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 7.778618906470607,
+        "gauss_wiener_upper": 193.21688528911474,
+        "fourier_reconstruction_error": 1.1427166999796322e-13,
+        "max_primary_partial_sum": 12.39544485007476,
+        "partial_summation_upper": 1240.827161218984,
+        "length": 77
+      }
+    },
+    {
+      "p": 617,
+      "class8": 1,
+      "h": 3,
+      "birth": 78,
+      "length": 77,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "72854244eed252b6675809e3da7c2ae25b146a1809d883a9c4183cda9896077e",
+      "full_modulus": [
+        "941716615447/100000000000",
+        "9417166154471/1000000000000"
+      ],
+      "primary_modulus": [
+        "466096749509/100000000000",
+        "4660967495091/1000000000000"
+      ],
+      "cofiber_variation": [
+        "10128198020589/100000000000",
+        "50640990102983/500000000000"
+      ],
+      "interaction_E": [
+        "941880235183/1000000000000",
+        "58867514699/62500000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 7.7774507663041526,
+        "gauss_wiener_upper": 193.18786928932644,
+        "fourier_reconstruction_error": 1.6618432967907174e-13,
+        "max_primary_partial_sum": 6.416929354936604,
+        "partial_summation_upper": 656.3362412644763,
+        "length": 77
+      }
+    },
+    {
+      "p": 641,
+      "class8": 1,
+      "h": 1,
+      "birth": 81,
+      "length": 16,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "df8a6a04f0ffb4e237cabda27aecbfe430608869305f90e42f5295b5f8989cb1",
+      "full_modulus": [
+        "49054359019/250000000000",
+        "196217436077/1000000000000"
+      ],
+      "primary_modulus": [
+        "1317405512361/500000000000",
+        "2634811024723/1000000000000"
+      ],
+      "cofiber_variation": [
+        "16963737061651/1000000000000",
+        "8481868530833/500000000000"
+      ],
+      "interaction_E": [
+        "1055464344457/1000000000000",
+        "527732172229/500000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 3.5865283675665394,
+        "gauss_wiener_upper": 90.80364559752788,
+        "fourier_reconstruction_error": 1.536014719679515e-14,
+        "max_primary_partial_sum": 3.1860512647878756,
+        "partial_summation_upper": 57.233387185611406,
+        "length": 16
+      }
+    },
+    {
+      "p": 641,
+      "class8": 1,
+      "h": 3,
+      "birth": 81,
+      "length": 16,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "df8a6a04f0ffb4e237cabda27aecbfe430608869305f90e42f5295b5f8989cb1",
+      "full_modulus": [
+        "442411846261/500000000000",
+        "884823692523/1000000000000"
+      ],
+      "primary_modulus": [
+        "363942077849/62500000000",
+        "1164614649117/200000000000"
+      ],
+      "cofiber_variation": [
+        "2441987949047/125000000000",
+        "19535903592391/1000000000000"
+      ],
+      "interaction_E": [
+        "453767056059/500000000000",
+        "907534112119/1000000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 3.2808263034919496,
+        "gauss_wiener_upper": 83.06388752515657,
+        "fourier_reconstruction_error": 5.9769297597052255e-15,
+        "max_primary_partial_sum": 5.915555705584291,
+        "partial_summation_upper": 121.48128166525879,
+        "length": 16
+      }
+    },
+    {
+      "p": 653,
+      "class8": 5,
+      "h": 1,
+      "birth": 82,
+      "length": 163,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "063996838ce3be142a6f220cdde421cf370dc68c3b127182164e84c937c09366",
+      "full_modulus": [
+        "6967766765933/500000000000",
+        "13935533531867/1000000000000"
+      ],
+      "primary_modulus": [
+        "2536381651231/200000000000",
+        "3170477064039/250000000000"
+      ],
+      "cofiber_variation": [
+        "209855344442949/1000000000000",
+        "209855344443111/1000000000000"
+      ],
+      "interaction_E": [
+        "530199418583/500000000000",
+        "1060398837167/1000000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 11.394497077118105,
+        "gauss_wiener_upper": 291.17343638665915,
+        "fourier_reconstruction_error": 1.642049504139695e-13,
+        "max_primary_partial_sum": 14.611310639456471,
+        "partial_summation_upper": 3080.8729376467318,
+        "length": 163
+      }
+    },
+    {
+      "p": 653,
+      "class8": 5,
+      "h": 3,
+      "birth": 82,
+      "length": 163,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "063996838ce3be142a6f220cdde421cf370dc68c3b127182164e84c937c09366",
+      "full_modulus": [
+        "331969941113/31250000000",
+        "10623038115617/1000000000000"
+      ],
+      "primary_modulus": [
+        "2293594381403/250000000000",
+        "9174377525613/1000000000000"
+      ],
+      "cofiber_variation": [
+        "208578758739691/1000000000000",
+        "104289379369927/500000000000"
+      ],
+      "interaction_E": [
+        "252804064011/250000000000",
+        "202243251209/200000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": true,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 11.272558667957744,
+        "gauss_wiener_upper": 288.0574387798806,
+        "fourier_reconstruction_error": 1.4451782109662943e-13,
+        "max_primary_partial_sum": 12.874304384350392,
+        "partial_summation_upper": 2698.1807325101418,
+        "length": 163
+      }
+    },
+    {
+      "p": 673,
+      "class8": 1,
+      "h": 1,
+      "birth": 85,
+      "length": 12,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "5a3f13e82035e99c9c7d0d092310c2f35346a0562cd262947dd2dddc423fc995",
+      "full_modulus": [
+        "13427078347/31250000000",
+        "85933301421/200000000000"
+      ],
+      "primary_modulus": [
+        "1436655890017/1000000000000",
+        "718327945009/500000000000"
+      ],
+      "cofiber_variation": [
+        "5637088639349/500000000000",
+        "11274177278709/1000000000000"
+      ],
+      "interaction_E": [
+        "238828380843/200000000000",
+        "149267738027/125000000000"
+      ],
+      "marginal_plus_one_refuted": false,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 2.904971307000844,
+        "gauss_wiener_upper": 75.36147312916118,
+        "fourier_reconstruction_error": 4.00998432561499e-15,
+        "max_primary_partial_sum": 2.3096791669732895,
+        "partial_summation_upper": 28.349411552358536,
+        "length": 12
+      }
+    },
+    {
+      "p": 673,
+      "class8": 1,
+      "h": 3,
+      "birth": 85,
+      "length": 12,
+      "family": "fresh_holdout",
+      "source_phase_sha256": "5a3f13e82035e99c9c7d0d092310c2f35346a0562cd262947dd2dddc423fc995",
+      "full_modulus": [
+        "1093970975811/500000000000",
+        "2187941951623/1000000000000"
+      ],
+      "primary_modulus": [
+        "32971165483/125000000000",
+        "52753864773/200000000000"
+      ],
+      "cofiber_variation": [
+        "1812546995737/125000000000",
+        "14500375965907/1000000000000"
+      ],
+      "interaction_E": [
+        "36893700839/50000000000",
+        "737874016781/1000000000000"
+      ],
+      "marginal_plus_one_refuted": true,
+      "cofiber_V_le_4_refuted": true,
+      "eligible_for_interaction_candidate": false,
+      "interaction_E_ge_quarter_certified": true,
+      "numerical_fourier_diagnostic": {
+        "authority": "ordinary floating diagnostic only",
+        "wiener_norm": 3.2932851997171393,
+        "gauss_wiener_upper": 85.43520670480595,
+        "fourier_reconstruction_error": 4.440892098500626e-15,
+        "max_primary_partial_sum": 1.6057026197027482,
+        "partial_summation_upper": 24.888994294823963,
+        "length": 12
+      }
+    }
+  ],
+  "twist_energy_certificates": [
+    {
+      "length": 3,
+      "mean_square": 3,
+      "twists": 13,
+      "step": "8541225",
+      "off_diagonal_terms_annihilated": 6,
+      "p": 13
+    },
+    {
+      "length": 2,
+      "mean_square": 2,
+      "twists": 17,
+      "step": "6531525",
+      "off_diagonal_terms_annihilated": 2,
+      "p": 17
+    },
+    {
+      "length": 7,
+      "mean_square": 7,
+      "twists": 29,
+      "step": "389979778277756742075",
+      "off_diagonal_terms_annihilated": 42,
+      "p": 29
+    },
+    {
+      "length": 9,
+      "mean_square": 9,
+      "twists": 37,
+      "step": "1615879773543842490773723859225",
+      "off_diagonal_terms_annihilated": 72,
+      "p": 37
+    },
+    {
+      "length": 5,
+      "mean_square": 5,
+      "twists": 41,
+      "step": "275839355367193793175",
+      "off_diagonal_terms_annihilated": 20,
+      "p": 41
+    },
+    {
+      "length": 9,
+      "mean_square": 9,
+      "twists": 73,
+      "step": "21333458624102709930038124266370238367789625",
+      "off_diagonal_terms_annihilated": 72,
+      "p": 73
+    }
+  ],
+  "near_restoration_controls": [
+    {
+      "p": 97,
+      "D": 256,
+      "length": 12,
+      "max_circle_distance": "47/24832",
+      "bound": "3/1552",
+      "full_modulus": [
+        "11999627389223/1000000000000",
+        "1499953423653/125000000000"
+      ]
+    },
+    {
+      "p": 97,
+      "D": 1048576,
+      "length": 12,
+      "max_circle_distance": "47/101711872",
+      "bound": "3/6356992",
+      "full_modulus": [
+        "11999999999977/1000000000000",
+        "5999999999989/500000000000"
+      ]
+    }
+  ],
+  "dyadic_control": {
+    "first": 80,
+    "last": 120,
+    "depth": 128,
+    "seed": "-2632616930840664763715426342784961756578499832093078412849667818006487861392256182487117835765482896652735706057270842832955807289099947596397110887739537/13407807929942597099574024998205846127479365820592393377723561443721764030073546976801874298166903427690031858186486050853753882811946569946433649006084096",
+    "pure_phase_upper": "525313/2256200007680000",
+    "bare_lift_lower": "-1/410881",
+    "bare_lift_upper": "525313/2256200007680000",
+    "alias_from": 128,
+    "source_control": "changed dyadic seed; integrated #259/#266 mechanism reproduced",
+    "full_modulus": [
+      "40999999999877/1000000000000",
+      "20499999999939/500000000000"
+    ],
+    "interaction_E": [
+      "0",
+      "1/1000000000000"
+    ]
+  },
+  "holdout_interaction_candidate": {
+    "eligible_cases": 16,
+    "certified_passes": 16,
+    "infinite_status": "OPEN; finite pass does not promote conjecture"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "head": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+  "branch": "research/bbp-arithmetic-barrier-2026-10-30",
+  "runs": [
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "research/2026-10-30/arithmetic_barrier/transfer",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "started_utc": "2026-10-30T15:58:53.860182+00:00",
+      "ended_utc": "2026-10-30T15:58:54.330903+00:00",
+      "exit_code": 0,
+      "output": "focused_tests.log",
+      "sha256": "476c22e28217aeb7f5494b74fbebb1c91969c39c0c593839ea0c8206eef50974"
+    },
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "research/2026-10-30/arithmetic_barrier/transfer/transfer_probe.py"
+      ],
+      "started_utc": "2026-10-30T15:58:54.330950+00:00",
+      "ended_utc": "2026-10-30T15:58:54.417257+00:00",
+      "exit_code": 0,
+      "output": "exact_receipt.json",
+      "sha256": "19cd89e42ba178157d4a2eaf90e525e2cc7b77c1680bdfd8a6e5b878d63e32c9"
+    },
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "research/2026-10-30/arithmetic_barrier/transfer/transfer_probe.py",
+        "--approximate"
+      ],
+      "started_utc": "2026-10-30T15:58:54.417312+00:00",
+      "ended_utc": "2026-10-30T15:58:54.805559+00:00",
+      "exit_code": 0,
+      "output": "approximate_grid_receipt.json",
+      "sha256": "074ec133a865d29c1e99c82a4d0129bfd061b8cc1ec15a42bdcffc43c45a0f10"
+    },
+    {
+      "command": [
+        "/home/leah/.local/bin/python",
+        "research/2026-10-30/arithmetic_barrier/transfer/independent_oracle.py"
+      ],
+      "started_utc": "2026-10-30T16:00:37.114858+00:00",
+      "ended_utc": "2026-10-30T16:00:37.990083+00:00",
+      "exit_code": 0,
+      "output": "independent_oracle_receipt.json",
+      "sha256": "d5e71436d482cf00a980a2f314367d36fd0afab853da6d28ab3ce7834993ecc3"
+    }
+  ],
+  "prior_failed_control": {
+    "output": "control_fixture_failure.log",
+    "exit_code": 1,
+    "sha256": "fc496e38739b537d4620b587bda85c6fd861111af09689f9d4340351b690529d",
+    "reason": "21-character expected Champernowne string versus 20-character test slice; corrected fixture only"
+  }
+}

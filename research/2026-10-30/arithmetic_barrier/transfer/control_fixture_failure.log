@@ -1,0 +1,36 @@
+test_authentic_recurrence_independent_pole_sum (test_transfer.TransferTests.test_authentic_recurrence_independent_pole_sum) ... ok
+test_conductor_two_exact_sparse_digits (test_transfer.TransferTests.test_conductor_two_exact_sparse_digits) ... ok
+test_exact_grid_denominator_obstruction_and_modular_oracle (test_transfer.TransferTests.test_exact_grid_denominator_obstruction_and_modular_oracle) ... ok
+test_exact_low_jets_and_biased_independent_walsh_controls (test_transfer.TransferTests.test_exact_low_jets_and_biased_independent_walsh_controls) ... ok
+test_finite_champernowne_recovery_and_approximate_grid_instrument (test_transfer.TransferTests.test_finite_champernowne_recovery_and_approximate_grid_instrument) ... FAIL
+test_first_packet_geometry_all_prime_classes (test_transfer.TransferTests.test_first_packet_geometry_all_prime_classes) ... ok
+test_forward_posterior_tilt_and_unbounded_reverse_likelihood (test_transfer.TransferTests.test_forward_posterior_tilt_and_unbounded_reverse_likelihood) ... ok
+test_full_walsh_and_q3_q6_loss_are_retained (test_transfer.TransferTests.test_full_walsh_and_q3_q6_loss_are_retained) ... ok
+test_known_p73_strobe_cancellation_is_preserved (test_transfer.TransferTests.test_known_p73_strobe_cancellation_is_preserved) ... ok
+test_naive_bbp_stoneham_transplant_fails (test_transfer.TransferTests.test_naive_bbp_stoneham_transplant_fails) ... ok
+test_nonnormal_debruijn_and_kempner_calibration (test_transfer.TransferTests.test_nonnormal_debruijn_and_kempner_calibration) ... ok
+test_p_integral_rational_seed_aliases_do_not_break_grid_result (test_transfer.TransferTests.test_p_integral_rational_seed_aliases_do_not_break_grid_result) ... ok
+test_primary_gluing_preserves_affine_update_but_not_carry (test_transfer.TransferTests.test_primary_gluing_preserves_affine_update_but_not_carry) ... ok
+test_retained_posterior_triangle_and_source_mutants (test_transfer.TransferTests.test_retained_posterior_triangle_and_source_mutants) ... ok
+test_source_deletion_is_a_true_negative_control (test_transfer.TransferTests.test_source_deletion_is_a_true_negative_control) ... ok
+test_stoneham_character_zeros_exact_cyclotomic_reduction (test_transfer.TransferTests.test_stoneham_character_zeros_exact_cyclotomic_reduction) ... ok
+test_stoneham_complete_cycles_two_independent_implementations (test_transfer.TransferTests.test_stoneham_complete_cycles_two_independent_implementations) ... ok
+test_stoneham_tail_and_all_horizon_interval_certificate (test_transfer.TransferTests.test_stoneham_tail_and_all_horizon_interval_certificate) ... ok
+test_translated_two_point_grid_minimum (test_transfer.TransferTests.test_translated_two_point_grid_minimum) ... ok
+
+======================================================================
+FAIL: test_finite_champernowne_recovery_and_approximate_grid_instrument (test_transfer.TransferTests.test_finite_champernowne_recovery_and_approximate_grid_instrument)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier/research/2026-10-30/arithmetic_barrier/transfer/test_transfer.py", line 238, in test_finite_champernowne_recovery_and_approximate_grid_instrument
+    self.assertEqual(text[:20], '123456789ABCDEF101112')
+AssertionError: '123456789ABCDEF10111' != '123456789ABCDEF101112'
+- 123456789ABCDEF10111
++ 123456789ABCDEF101112
+?                     +
+
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.418s
+
+FAILED (failures=1)

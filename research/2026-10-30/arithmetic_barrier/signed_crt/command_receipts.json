@@ -1,0 +1,55 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+  "commands": [
+    {
+      "argv": [
+        "/home/leah/.local/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier/research/2026-10-30/arithmetic_barrier/signed_crt",
+      "started_utc": "2026-10-30T15:53:06.566271+00:00",
+      "finished_utc": "2026-10-30T15:53:06.792375+00:00",
+      "seconds": 0.22582237696042284,
+      "exit_code": 0,
+      "stdout_artifact": "focused_tests.log",
+      "artifact_sha256": "47cb1ca0c2236004366be1609712812ec0e3a1b5faf0c1f5730e1caafe91d246",
+      "stderr": "preserved in log"
+    },
+    {
+      "argv": [
+        "/home/leah/.local/bin/python",
+        "run_probe.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier/research/2026-10-30/arithmetic_barrier/signed_crt",
+      "started_utc": "2026-10-30T15:53:06.792420+00:00",
+      "finished_utc": "2026-10-30T15:53:31.645998+00:00",
+      "seconds": 24.853263217024505,
+      "exit_code": 0,
+      "stdout_artifact": "probe_receipt.json",
+      "artifact_sha256": "7c6a11384566d58ead6e0c2d6143012965d3f0787e09db47bf28e0b60185cc8b",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/home/leah/.local/bin/python",
+        "independent_oracle.py"
+      ],
+      "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier/research/2026-10-30/arithmetic_barrier/signed_crt",
+      "started_utc": "2026-10-30T15:53:31.646055+00:00",
+      "finished_utc": "2026-10-30T15:53:32.572426+00:00",
+      "seconds": 0.9260398010374047,
+      "exit_code": 0,
+      "stdout_artifact": "independent_oracle_receipt.json",
+      "artifact_sha256": "7f697454b5c1ca4248226a4db3f0717cc4edaacab03da2d4cdd8ea17a2e2a6a8",
+      "stderr": ""
+    }
+  ]
+}
