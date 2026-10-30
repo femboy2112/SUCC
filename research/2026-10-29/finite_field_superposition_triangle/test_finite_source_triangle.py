@@ -5,7 +5,8 @@ from math import comb, log
 from finite_source_triangle import (R,r,word_weight,q,next_probabilities,
  triangle_row,shifted_triangle_row,harmonic,harmonic_from_paths,
  harmonic_from_source,bbp_harmonic,gamma_matched_harmonic,
- bbp_state,fractional,literal_carry,two_step_carry,graded_selected_points)
+ bbp_state,fractional,literal_carry,two_step_carry,graded_selected_points,
+ harmonic_four_pole_digamma)
 
 
 class TriangleExact(unittest.TestCase):
@@ -51,6 +52,14 @@ class TriangleExact(unittest.TestCase):
                 if m:
                     difference=harmonic_from_source(a,m)-harmonic_from_source(a,m-1)
                     self.assertEqual(difference,(1-R(a+8*m)/R(a))/m)
+
+    def test_exact_four_pole_digamma_without_gamma_origin(self):
+        for a in (1,9,17,25,33):
+            for m in range(0,12):
+                self.assertEqual(harmonic_four_pole_digamma(a,m),
+                                 harmonic_from_source(a,m))
+                self.assertEqual(harmonic_four_pole_digamma(a,m),
+                                 harmonic_from_paths(a,m))
 
     def test_selected_seed_not_created_by_sensor(self):
         # Same forcing, different deterministic s. Sensor q has no seed argument.
