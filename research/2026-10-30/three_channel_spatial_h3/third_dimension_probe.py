@@ -148,6 +148,20 @@ class ThreeSpatialDimensions(unittest.TestCase):
             marks.add((carries[n+j],carries[n+j+k],carries[n+j+k+l]))
         self.assertEqual(len(marks),3)
 
+    def test_static_triple_fourier_kernel_has_no_wave_pole(self):
+        # The static three-grade Green symbol (4-X-Y-Z)^(-2) is
+        # nonzero on the three-torus. Spatial harmonics alone are not
+        # hyperbolic propagating modes.
+        import cmath
+        for u in range(8):
+            for v in range(8):
+                for w in range(8):
+                    roots=(cmath.exp(2j*pi*u/8),cmath.exp(2j*pi*v/8),
+                           cmath.exp(2j*pi*w/8))
+                    d=4-sum(roots)
+                    self.assertGreaterEqual(abs(d),1-1e-12)
+                    self.assertLessEqual(abs(1/d**2),1+1e-12)
+
     def test_3d_fisher_inverse_and_minkowski_pullback(self):
         m=[F(1),F(4),F(9)]
         s=F(2)+sum(m,F(0))
