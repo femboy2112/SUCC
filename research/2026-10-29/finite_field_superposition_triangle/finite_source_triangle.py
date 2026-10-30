@@ -110,3 +110,51 @@ def gamma_matched_harmonic(n: int) -> Fraction:
     """Same source clock, fake R_fake(a)=15/a^2 (no -59/a^3)."""
     a = Fraction(8*n-7)
     return harmonic(n)-sum((a*a/((a+8*k)**2*k) for k in range(1,n+1)),Fraction(0))
+
+
+def bbp_state(n: int, seed: Fraction = Fraction(0)) -> Fraction:
+    """Exact deterministic selected BBP state, not a source sample."""
+    if n < 0:
+        raise ValueError("BBP time must be nonnegative")
+    state = Fraction(seed)
+    for k in range(1,n+1):
+        state = 16*state+r(k)
+    return state
+
+
+def fractional(x: Fraction) -> Fraction:
+    x = Fraction(x)
+    return x - x.numerator//x.denominator
+
+
+def literal_carry(n: int, seed: Fraction = Fraction(0)) -> int:
+    """Actual integer branch lost under exponentiation of the circle phase."""
+    if n < 1:
+        raise ValueError("carry time must be positive")
+    exact = 16*fractional(bbp_state(n-1,seed)) + r(n) - fractional(bbp_state(n,seed))
+    if exact.denominator != 1:
+        raise AssertionError("circle-branch update was not integral")
+    return int(exact)
+
+
+def two_step_carry(n: int, seed: Fraction = Fraction(0)) -> int:
+    """Two-step branch lift: kappa^(2)=16*kappa_n+kappa_(n+1)."""
+    if n < 1:
+        raise ValueError("carry time must be positive")
+    exact = (256*fractional(bbp_state(n-1,seed)) + 16*r(n) + r(n+1)
+             - fractional(bbp_state(n+1,seed)))
+    if exact.denominator != 1:
+        raise AssertionError("two-step branch lift was not integral")
+    return int(exact)
+
+
+def graded_selected_points(n: int, seed: Fraction = Fraction(0)):
+    """Finite original-source grades marked by exact selected phase/carry.
+
+    Returned phase is a rational fractional turn, NOT a random phase sampler.
+    """
+    if n < 1:
+        raise ValueError("native source clock must be positive")
+    a = 8*n-7
+    return tuple((j, q(a,n,j), fractional(bbp_state(n+j,seed)),
+                  literal_carry(n+j,seed)) for j in range(n+1))
