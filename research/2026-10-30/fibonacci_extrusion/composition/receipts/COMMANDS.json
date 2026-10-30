@@ -1,0 +1,49 @@
+{
+  "captured_after_execution_utc": "2026-10-30T23:08:34.286981+00:00",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "timing_note": "Start timestamps were not separately recorded; times in unittest logs are actual runtimes. Exit0 observed from tool completions.",
+  "completed_commands": [
+    {
+      "command": "python3 -m unittest discover -s research/2026-10-30/fibonacci_extrusion/composition -p test_*.py -v (initial11tests)",
+      "exit_code": 0,
+      "log": "receipts/focused.log",
+      "log_sha256": "dce65b7642ae2b93539c6b40d2811b35bc6487436a84a0826c419d9977944b9f"
+    },
+    {
+      "command": "python3 -m unittest discover -s research/2026-10-30/fibonacci_extrusion/composition -p test_*.py -v",
+      "exit_code": 0,
+      "log": "receipts/focused_final.log",
+      "log_sha256": "0516150ad4ea0c68bdcdf36180f594520995a4da7c531ec1ef73a95908fb8af8"
+    },
+    {
+      "command": "python3 research/2026-10-30/fibonacci_extrusion/composition/run_probe.py",
+      "exit_code": 0,
+      "log": "receipts/exact_probe.log",
+      "log_sha256": "98ba6fca8fc30cd08024b3677ca0bb05f877b003ef6dbf52988d9bb704310db8"
+    },
+    {
+      "command": "python3 research/2026-10-30/fibonacci_extrusion/composition/independent_oracle.py",
+      "exit_code": 0,
+      "log": "receipts/oracle.log",
+      "log_sha256": "7218121a576bcc94f2d46570ecc4c248b23b4bc60822f3e8ffb201287078775e"
+    },
+    {
+      "command": "python3 research/2026-10-30/fibonacci_extrusion/composition/clock_probe.py",
+      "exit_code": 0,
+      "log": "receipts/clock_probe.log",
+      "log_sha256": "73935697935ae67df706d240e695810e59cd139edc22c28d4b0afc1f074a66a6"
+    },
+    {
+      "command": "python3 research/2026-10-30/fibonacci_extrusion/composition/clock_oracle.py",
+      "exit_code": 0,
+      "log": "receipts/clock_oracle.log",
+      "log_sha256": "a029302f339f733db23e66899be6277ff64fcba1d104565bf9509bc71452ce1a"
+    },
+    {
+      "command": "python3 research/2026-10-30/fibonacci_extrusion/composition/root_clock_review.py",
+      "exit_code": 0,
+      "log": "receipts/root_clock_review.log",
+      "log_sha256": "2a79c4da778b3e9a329bf4c04542040cd37bb64a73d433bd1da998439b2f95f2"
+    }
+  ]
+}

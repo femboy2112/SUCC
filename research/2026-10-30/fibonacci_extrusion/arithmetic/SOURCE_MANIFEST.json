@@ -1,0 +1,143 @@
+{
+  "parent": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+  "created_utc": "2026-10-30T23:07:01.512278+00:00",
+  "author_provenance": "Leah / femboy2112 original harmonic-golden-Euler triangle and Oily-Macaroni",
+  "source_inputs": [
+    {
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "path": "AGENTS.md",
+      "git_blob": "2c04a24744366d5659f347caeb874a3613f893c9",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4"
+    },
+    {
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "path": "research/2026-10-30/triangle_fabric/signed/SIGNED_FABRIC.md",
+      "git_blob": "21fab701f8895b58e5405073109694b52497680e",
+      "sha256": "4f90a1d0f62f553c95549416580899ddd8324c58a05fc0d8d8e723b6eb932b9d"
+    },
+    {
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "path": "research/2026-10-30/zero_boundary_dispersion/spectral/SPECTRAL_DOSSIER.md",
+      "git_blob": "8efc2d0ef4f3288c99d42bc9383b9991e261a9fd",
+      "sha256": "bd41f3a0515f2a27405c094b3c926b2952b730aa2f2bd48070d900899cc7a8dd"
+    },
+    {
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "path": "research/2026-10-30/selected_boundary_slip/THEOREMS.md",
+      "git_blob": "bb734fff7fd045f911de9dbbeff37ea1b5825ae1",
+      "sha256": "a8b95200582fe92441cf157e93244921fa8e5274128e7ea4f06466a1f824431a"
+    },
+    {
+      "commit": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+      "path": "research/2026-10-30/fibonacci_epicycle_demon/RESEARCH.md",
+      "git_blob": "af233e6277c3dc73013dfa435e7b6d77b04d632a",
+      "sha256": "c5bb6df9f6675f0bc5b275d76d5fc19cf78b64a2b2f8f834fa57b72d432025ea"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "CLAIMS_AND_ROUTES.md",
+      "sha256": "7601c4b0a5d4ebbb12cbaa33577886dda62f5e52693d1df3bd31e168fb4b4c9f",
+      "bytes": 3602
+    },
+    {
+      "path": "COMPOSITION_REVIEW.md",
+      "sha256": "db6d6f8f2d686d6307ab2daec5c9336d8ec1212870e1da5727f0f857fb955383",
+      "bytes": 3124
+    },
+    {
+      "path": "FIBONACCI_ARITHMETIC.md",
+      "sha256": "bde7824367225e3b5eff51530e3a7dad0f604a7d5bbf2e032b03459b0e237a9e",
+      "bytes": 13290
+    },
+    {
+      "path": "PREREGISTRATION.md",
+      "sha256": "f3fe2c1b27f4a4e75988f4a2726d712768dda1343e6c0b71274221e93255ed5d",
+      "bytes": 4014
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "4a7d5f3b3b85314937a00d115408a0719011ba473fde445532853f6232d12673",
+      "bytes": 2922
+    },
+    {
+      "path": "composition_review.log",
+      "sha256": "ae90d5f8299cec8f1f6a075a5343af79895bf24a03dc382bbf2548faefa061f0",
+      "bytes": 1512
+    },
+    {
+      "path": "composition_review.py",
+      "sha256": "5b8c53996a54f1ccc36074588b851e3bcb011bf73ac55d5247b96b66c0149136",
+      "bytes": 2701
+    },
+    {
+      "path": "composition_review_receipt.json",
+      "sha256": "ae90d5f8299cec8f1f6a075a5343af79895bf24a03dc382bbf2548faefa061f0",
+      "bytes": 1512
+    },
+    {
+      "path": "fibonacci_arithmetic.py",
+      "sha256": "6df9ae89fe08dcd271bf89c63451e2caed4a24038fd810f5d3d8b9bbcd30300a",
+      "bytes": 3734
+    },
+    {
+      "path": "focused_tests.log",
+      "sha256": "f779ff97e3755f914ae329f0c7850e3479bd9c65d5ecf09ff1f01f9118268950",
+      "bytes": 1295
+    },
+    {
+      "path": "independent_oracle.py",
+      "sha256": "b4fc6fdd92bbae0caf0f05d8b900d3647b74c024642347a95f717510d04d9103",
+      "bytes": 4220
+    },
+    {
+      "path": "oracle.log",
+      "sha256": "6d72e495d212702050b83c4cb4dc82b3d148e96c9f11ba91ead5e3a1efb6dc90",
+      "bytes": 577
+    },
+    {
+      "path": "oracle_receipt.json",
+      "sha256": "e8e81b5f706da67e77474f8bee942e60feb8a0ad9025f93f06b3132d74d42732",
+      "bytes": 2940
+    },
+    {
+      "path": "probe.log",
+      "sha256": "0b1214ad484ab3ceedfc103d7ce9df4310cd2417ff6d478b57169514fd9e2e23",
+      "bytes": 244
+    },
+    {
+      "path": "probe_receipt.json",
+      "sha256": "b17735786493f12c1f4a20199af6d6906b7f64a5a9ec71c5b4e73a5899fefff2",
+      "bytes": 20121
+    },
+    {
+      "path": "run_probe.py",
+      "sha256": "7e62c34e84d3fe2b91631532ff33f4fa2c0be023454630dde91c169fcdb35e50",
+      "bytes": 2515
+    },
+    {
+      "path": "test_fibonacci_arithmetic.py",
+      "sha256": "480c8b9b4683264757e7a7bb05ceb5848da2cbe7b9cccf8c8c66797b50173f9f",
+      "bytes": 4125
+    }
+  ],
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "sympy": "1.12",
+  "external_primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/1008.3204",
+      "used": "Classical Zeckendorf context; elementary existence/decay independently proved in dossier"
+    },
+    {
+      "url": "https://www.math.tugraz.at/~aistleitner/Publications/Modified_normal_numbers_revised_2.pdf",
+      "used": "Related normality modification context; density-zero substitution proof is self-contained"
+    }
+  ],
+  "scope": "Exact finite probes and paper proofs; shared-model method separation, not external review or priority",
+  "updated_utc": "2026-10-30T23:09:25.957480+00:00",
+  "sibling_review": {
+    "path": "../composition/FIBONACCI_COMPOSITION.md",
+    "reviewed_sha256": "6a7df2ce932b9251ca546878118ba4238c83947bff2c93aa3e36feea6263db4c",
+    "scope": "FIC01 and FIC05; shared-model complementary review"
+  }
+}

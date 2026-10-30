@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "authority": "numerical calibration only; no external referee",
+  "mpmath": "1.2.1",
+  "dps": 100,
+  "checks": [
+    {
+      "name": "harmonic_budget",
+      "value": "1.067784349182849709828308403129988736013469691083151926626171661",
+      "inside_certificate": true
+    },
+    {
+      "name": "golden_budget",
+      "value": "0.59626678606816568514175736998722694062227830373881724262292523279",
+      "inside_certificate": true
+    },
+    {
+      "name": "oily_budget",
+      "value": "1.6640511352510153949700657731172156766357479948219691692490968938",
+      "inside_certificate": true
+    },
+    {
+      "name": "reciprocal_fibonacci",
+      "value": "3.3598856662431775531720113029189271796016688015749591243115928187",
+      "inside_certificate": true
+    },
+    {
+      "name": "fibonacci_square_reciprocal",
+      "value": "1.4263207511672411877415694129266203743202597745138309051101028345",
+      "inside_certificate": true
+    },
+    {
+      "name": "log_fibonorial_constant",
+      "value": "0.2043618834093860656930683748474820869596646060779561765807587351",
+      "inside_certificate": true
+    },
+    {
+      "name": "renormalized_pascal_sum",
+      "value": "1.544905887502954720860513394775972366967796258151327004534549852",
+      "inside_certificate": true
+    },
+    {
+      "rank": 1,
+      "inside_certificate": true
+    },
+    {
+      "rank": 2,
+      "inside_certificate": true
+    },
+    {
+      "rank": 3,
+      "inside_certificate": true
+    },
+    {
+      "rank": 5,
+      "inside_certificate": true
+    },
+    {
+      "rank": 8,
+      "inside_certificate": true
+    },
+    {
+      "rank": 13,
+      "inside_certificate": true
+    },
+    {
+      "rank": 21,
+      "inside_certificate": true
+    },
+    {
+      "rank": 55,
+      "inside_certificate": true
+    },
+    {
+      "rank": 144,
+      "inside_certificate": true
+    },
+    {
+      "finite_aggregate_n": 5,
+      "residual": "1.7144811e-100"
+    },
+    {
+      "finite_aggregate_n": 7,
+      "residual": "9.7153928e-100"
+    },
+    {
+      "finite_aggregate_n": 9,
+      "residual": "3.3146634e-99"
+    }
+  ],
+  "wrong_conjugate_log_product": "-0.7309681964203006944575611343573014105664"
+}

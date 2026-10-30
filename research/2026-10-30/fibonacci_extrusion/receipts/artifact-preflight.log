@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-fibonacci-extrusion/research/2026-10-30/fibonacci_extrusion/validate_artifacts.py", line 77, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-fibonacci-extrusion/research/2026-10-30/fibonacci_extrusion/validate_artifacts.py", line 50, in main
+    assert (p.parent/target).exists(),(n,target)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('arithmetic/FIBONACCI_ARITHMETIC.md', '2x_a−1')

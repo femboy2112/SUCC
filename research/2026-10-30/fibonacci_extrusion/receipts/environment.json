@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/.venv/bin/python",
+    "-c",
+    "import sys,os,json,mpmath,numpy,sympy,scipy,observational_succ; print(json.dumps({\"python\":sys.version,\"source\":observational_succ.__file__,\"cwd\":os.getcwd(),\"mpmath\":mpmath.__version__,\"numpy\":numpy.__version__,\"sympy\":sympy.__version__,\"scipy\":scipy.__version__},indent=2))"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-fibonacci-extrusion",
+  "start_utc": "2026-10-30T23:05:23.403358+00:00",
+  "timeout_seconds": 60,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 2.375,
+  "end_utc": "2026-10-30T23:05:25.778590+00:00",
+  "log_sha256": "c49e2253dbdaa74fee7d3866eb5c1e83d0457f6a1bdf05cf04494adbae90fa33",
+  "log_bytes": 325
+}

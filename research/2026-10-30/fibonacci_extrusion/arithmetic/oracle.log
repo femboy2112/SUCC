@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "authority": "Separate symbolic and exact Machin/Green implementations; shared model",
+  "smith_diagonal": [
+    1,
+    239
+  ],
+  "symbolic_golden_lag_cases": [
+    3,
+    4,
+    8,
+    13,
+    21,
+    31,
+    37
+  ],
+  "direct_unrolled_source_cases": 63,
+  "hensel_bruteforce_levels": 5,
+  "machin_terms": {
+    "p5": 1428,
+    "p239": 420
+  },
+  "machin_precision_bits": 6644,
+  "tail_terms": 24,
+  "compared_probe_sha256": "b17735786493f12c1f4a20199af6d6906b7f64a5a9ec71c5b4e73a5899fefff2"
+}
+All29 exact selected window counts separately certified.

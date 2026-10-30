@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-fibonacci-extrusion",
+  "start_utc": "2026-10-30T22:59:49.326649+00:00",
+  "timeout_seconds": 2400,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 1226.421,
+  "end_utc": "2026-10-30T23:20:15.747829+00:00",
+  "log_sha256": "cec5e4014dd7c60f8ca23a3fa1eaa12ef91223bd05b300d53c7100a76ce8b5e5",
+  "log_bytes": 11450
+}
