@@ -10,16 +10,22 @@ normality and RH remain OPEN**; nothing below changes that.
 Derive an authentic **source-specific, zero-seed-sensitive signed intertime estimate** for
 
 ```
-S_N(h) = (1/N) Σ_{n≤N} e(h · U_n(0)),   h ≠ 0,   e(x)=exp(2πix),
+T_N(h)    = Σ_{n≤N} e(h · U_n(0))        (unnormalized, |T_N| ≤ N)
+Sbar_N(h) = T_N(h) / N                    (normalized,   |Sbar_N| ≤ 1),   h ≠ 0,   e(x)=exp(2πix),
 ```
+
+> **Weyl normalization (Operation Main XVI correction).** The normality gate is `T_N(h)=o(N)`,
+> equivalently `Sbar_N(h)=o(1)`. The normalized `Sbar_N(h)=o(N)` as originally written here is
+> **vacuous** (`|Sbar_N|≤1`). See `research/2026-10-29/triangle_genesis_repair/WEYL_NORMALIZATION_CONVENTION.md`.
 
 on the genuine BBP orbit `U_0 = 0`, `U_n = 16 U_{n-1} + r(n)`, with all four original signed poles
 `R(a)=4/a−2/(a+3)−1/(a+4)−1/(a+5)`. "New" means a bona-fide asymptotic **signed inequality** that
 does **not** follow by (i) applying an invertible positive filter, (ii) scalar `O(log N / N)`
 reweighting, (iii) source-only phasors, or (iv) restating the Weyl criterion. The full Weyl gate
-`∀ h≠0: S_N(h) = o(N)` **is** base-16 normality of π — so a decisive proof is OPEN by definition;
-the realistic near-term goal is a strictly-better-than-trivial bound on a declared sub-band that
-provably distinguishes the authentic seed from a coherent counterfeit.
+`∀ h≠0: T_N(h) = o(N)` (equivalently `Sbar_N(h) = o(1)`) **is** base-16 normality of π — so a
+decisive proof is OPEN by definition; the realistic near-term goal is a strictly-better-than-trivial
+bound improving the trivial `|Sbar_N(h)| ≤ 1` on a declared sub-band that provably distinguishes the
+authentic seed from a coherent counterfeit.
 
 ## Why the easy routes are already closed (do not re-walk)
 
@@ -54,7 +60,8 @@ candidate signed estimate against a full control slate. A candidate passes only 
 | Truncated fixed-grade observer (no moving grade) | **NO** | ignores Kepler III resolution |
 | Independent two-geometric Oily packet (#368) | **NO** | same marginal, different latent coupling |
 | de Bruijn / Kempner nonnormal digit control | **NO** | nonnormal holdouts |
-| Rational changed seeds | **NO** | eventually periodic orbits |
+| Rational changed seeds — periodic twist `gcd(q,16)=1, q∤15` (e.g. `1/7`) | **NO** | genuinely magnitude-separable eventually-periodic orbit |
+| Rational changed seeds — circle alias `s∈ℤ[1/16]` or constant twist `q|15` | **NOT REQUIRED** | **Main XVI (TG-12) correction:** magnitude-/phase-identical to the authentic orbit under this readout; demanding a valid `|T_N|`-estimate fail here is self-contradictory. See `triangle_genesis_repair/SEED_ALIAS_CLASSIFICATION.md` |
 
 Report predicted **yes / no / ambiguous** per control **before** running, with seeds, precision,
 and exact outputs (the Instrument rule: calibrate the measuring code on known values first).

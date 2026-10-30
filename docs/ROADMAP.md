@@ -755,8 +755,10 @@ The [current frontier](academic_main_viii/research_frontier.md) isolates the wei
 
 With Operation Main XV the **operational triangle** (see [`OPERATIONAL_TRIANGLE.md`](OPERATIONAL_TRIANGLE.md))
 becomes the primary research apparatus. The principal remaining target is a genuinely new,
-source-specific, **zero-seed-sensitive signed intertime estimate** for
-`(1/N) sum_{n<=N} e(h U_n(0))`, `h != 0`, built from all four authentic signed BBP poles with
+source-specific, **zero-seed-sensitive signed intertime estimate** improving the trivial
+`|Sbar_N(h)| <= 1` (`Sbar_N(h) = (1/N) sum_{n<=N} e(h U_n(0))`; the gate is `Sbar_N(h)=o(1)`,
+equivalently the unnormalized `T_N(h)=sum e(h U_n(0))=o(N)` — **not** the vacuous `Sbar_N=o(N)`),
+`h != 0`, built from all four authentic signed BBP poles with
 `U_0=0`, the full radix-16 carries and four-bit Walsh sectors, the `q=3` orientation and `q=6`
 primitive/cototient grades, the retained source posterior with joint Gamma/grade observables, and
 the moving-grade / shrinking-target resolution of Kepler III (#384). The estimate must **fail**
@@ -769,3 +771,11 @@ for *choosing informed observers*, not sufficient proofs: averaging the seed dis
 for every seed, an exact no-go. These are **open proof obligations**. π base-16/base-3 normality
 and RH remain OPEN. Post-main handoff:
 `research/2026-10-29/main_xv_integration/MAIN_XV_POST_INTEGRATION_HANDOFF.md`.
+
+**Operation Main XVI (2026-10-29) repair & advance** — `research/2026-10-29/triangle_genesis_repair/`:
+(P0) fixed the Weyl normalization (`T_N=o(N) ⇔ Sbar_N=o(1)`; `Sbar_N=o(N)` is vacuous); (P1/TG-11)
+**proved the golden locus** `q_(r,theta)=lambda^r ⇔ theta=lambda/(1-lambda^r)` with restricted
+uniqueness `theta=1 ⇒ r=2`, superseding "agree only at `(2,1)`"; (P2/TG-12) classified the seven
+seed-alias classes and corrected the control slate (demand failure only on separable seeds); (P3/TG-13)
+proved the literal-carry obstruction (distinguishes aliases, no `|T_N|` saving). The refined target
+is unchanged and still OPEN. Handoff: `research/2026-10-29/triangle_genesis_repair/MAIN_XVI_HANDOFF.md`.

@@ -72,3 +72,10 @@ triangle and Oily–Macaroni (`Omega_OM = phi^{-1}-gamma`) are the preserved ran
 transcendence→entropy bridge (PR #334 R4/R5) is **REFUTED as a general bridge** by the Kempner
 firewall (PR #337). Research-draft `TG-` labels are intentionally kept out of the historical FQID
 namespace. **Selected signed BBP cancellation, π base-16/base-3 normality and RH remain OPEN.**
+
+**Operation Main XVI (2026-10-29) repair & advance** — `research/2026-10-29/triangle_genesis_repair/`:
+corrected the Weyl normalization (gate `T_N=o(N) ⇔ Sbar_N=o(1)`; `Sbar_N=o(N)` vacuous); **proved
+the golden locus** `q_(r,theta)=lambda^r ⇔ theta=lambda/(1-lambda^r)` with restricted uniqueness
+`theta=1 ⇒ r=2` (TG-11, supersedes "agree only at `(2,1)`"); classified the seven seed-alias classes
+with a corrected control slate (TG-12); and proved the literal-carry obstruction (TG-13, distinguishes
+aliases but no `|T_N|` saving). Regression `tests/test_triangle_genesis_repair.py`. Firewall unchanged.

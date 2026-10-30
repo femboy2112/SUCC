@@ -107,12 +107,33 @@ a claim that the π digit orbit is a physical offspring process.
 - self-consistent (new): `D_self(r,theta) = psi(r) - q_(r,theta)`, where `q_(r,theta)` is the
   least fixed point of `G_(r,theta)`.
 
-They agree **only** at the marked `(r,theta)=(2,1)`; generic equality is UNVERIFIED and generally
-false. The old triangle is a **signature of a particular rank-two boundary**, not an axiom for
-arbitrary spaces. SUCC continues to search for it in Gamma / negative-binomial / supercritical
-branching / order-statistic / arithmetic-finite-part spaces by the recipe in
-`research/2026-10-29/operational_triangle_frontier/ORIGINAL_TRIANGLE_PROVENANCE.md`, and refuses
-to force the golden parameter by hand.
+**The golden locus (TG-11, Operation Main XVI, PROVED).** The two families coincide exactly along a
+one-dimensional curve, not only at the single point:
+```
+q_(r,theta) = lambda^r   <=>   theta = theta*(r) := lambda/(1 - lambda^r),   r > 0,
+```
+and the process is supercritical there (`r*theta>1`), so `lambda^r` is genuinely the least fixed
+point. Calibration: `(r,theta,q) = (1, phi, lambda), (2, 1, lambda^2), (3, phi/2, lambda^3)`. The
+clock `theta*(r)` is strictly decreasing from `+infinity` (`r->0+`) to `lambda` (`r->infinity`), and
+the Laplace probe is **rate-locked** at the single golden rate `theta*(r)(1-q)=lambda` along the
+whole locus. Hence `D_self(r, theta*(r)) = psi(r) - lambda^r = D_lambda(r)` for every `r>0`: the
+golden locus is precisely the coincidence set `{D_self = D_lambda}`. **Restricted uniqueness:** on
+the authentic clock slice `theta=1`, coincidence holds **iff** `r=2`. So the original BBP point
+`(2,1)` is the *unique* intersection of its authentic clock `{theta=1}` with the golden locus — it
+stays distinguished on its own source/clock slice, but it is **not** the only `(r,theta)` at which
+the historical golden mark `lambda^r` equals the self-consistent root. (This corrects the earlier
+"agree only at `(2,1)`".) Off the locus the two families differ. Proof and checks:
+`research/2026-10-29/triangle_genesis_repair/GOLDEN_LOCUS_THEOREM.md`, `golden_locus.py`,
+`tests/test_triangle_genesis_repair.py`.
+
+The old triangle remains a **signature of a particular rank-two boundary**, not an axiom for
+arbitrary spaces. The golden *fixed point* is realized by a one-parameter family of (rank, clock)
+pairs on the locus, but the authentic *source-induced* boundary still forces rank `2`; the observer
+clock `theta` tuned to recover a golden root must stay distinguished from that source rank. SUCC
+continues to search for the triangle in Gamma / negative-binomial / supercritical branching /
+order-statistic / arithmetic-finite-part spaces by the recipe in
+`research/2026-10-29/operational_triangle_frontier/ORIGINAL_TRIANGLE_PROVENANCE.md`, recording exact
+emergence conditions rather than forcing the golden parameter by hand.
 
 ## 4. Source discrimination and the firewall
 
@@ -141,8 +162,17 @@ classical superposition is not a quantum amplitude.
 
 ## 5. Post-main frontier (Triangle Genesis)
 
+**Weyl normalization convention (Operation Main XVI, P0).** Write the **unnormalized** Weyl sum
+`T_N(h) = sum_{n<=N} e(h U_n(0))` (`|T_N| <= N`) and the **normalized** average
+`Sbar_N(h) = T_N(h)/N` (`|Sbar_N| <= 1`). The Weyl/normality gate is
+`T_N(h) = o(N)  <=>  Sbar_N(h) = o(1)` for every integer `h != 0`; it is **OPEN**. The vacuous
+`Sbar_N(h) = o(N)` (true for every orbit, since `|Sbar_N| <= 1`) is **never** the gate — see
+`research/2026-10-29/triangle_genesis_repair/WEYL_NORMALIZATION_CONVENTION.md`. The repo's
+historical `S_N(h)` denotes the unnormalized `T_N(h)`, for which `S_N(h) = o(N)` is the correct gate.
+
 The primary remaining target is a genuinely new, source-specific, zero-seed-sensitive **signed
-intertime estimate** on `(1/N) sum_{n<=N} e(h U_n(0))`, `h != 0`, using all four authentic signed
+intertime estimate** improving the trivial `|Sbar_N(h)| <= 1` on a declared sub-band, `h != 0`,
+using all four authentic signed
 poles and `U_0=0`, full radix-16 carries and four-bit Walsh sectors, the `q=3` orientation and
 `q=6` primitive/cototient grades, the retained source posterior and joint Gamma/grade observables,
 and the moving-grade / shrinking-target resolution of Kepler III (#384). It must **fail** on the
@@ -161,6 +191,8 @@ obligations**, not theorems. See
 | Sufficiency `I(X;W)=I(X;J)` in the declared sensor (TG-02) | CLASSICAL, specialized; **non-universal** (order-sensitive countermodel) |
 | Gamma–Poisson emergence class `F_(r,theta)` (TG-04) | CLASSICAL under stated regularity |
 | Galton–Watson fixed point, `q=phi^{-2}` at `(2,1)`, `Omega_OM=lambda-gamma` (TG-05/09) | CLASSICAL analysis + **declared** observers; original-triangle SPECIALIZATION |
+| Golden locus `q_(r,theta)=lambda^r <=> theta=lambda/(1-lambda^r)`; restricted uniqueness `theta=1 => r=2` (TG-11) | PROVED (classical GW/Gamma); supersedes "agree only at `(2,1)`"; exact + independent checks |
+| Seed-alias dichotomy (7 classes) + corrected control slate (TG-12); literal-carry obstruction, no `|T_N|` saving (TG-13) | PROVED (exact ℚ + mpmath); negative result, selected cancellation OPEN |
 | Two-variable 59-jet and fake difference (TG-05/TG-06) | PROVED LOCAL, independently re-derived |
 | Seed-resolved tomography + universal seed-smearing zero (TG-06/07/08) | PROVED LOCAL (finite Fourier); representation, not Weyl |
 | "Operational triangle certifies π normality / RH" (TG-10) | **REFUTED as an implication**; π normality and RH **OPEN** |
@@ -171,6 +203,10 @@ obligations**, not theorems. See
 - Frontier dossiers: `research/2026-10-29/operational_triangle_frontier/` — `README.md`,
   `THEOREMS.md`, `CLAIMS.md`, `ORIGINAL_TRIANGLE_PROVENANCE.md`, `VALIDATION.md`,
   `operational_triangle.py`, `independent_oracle.py`, `test_operational_triangle.py`.
+- Main XVI repair & advance: `research/2026-10-29/triangle_genesis_repair/` —
+  `WEYL_NORMALIZATION_CONVENTION.md` (P0), `GOLDEN_LOCUS_THEOREM.md` (P1, TG-11),
+  `SEED_ALIAS_CLASSIFICATION.md` (P2/P3, TG-12/13), `golden_locus.py`, `seed_alias.py`,
+  `independent_oracle_xvi.py`; regression `tests/test_triangle_genesis_repair.py`.
 - Parent exact finite triangle: PR #386 (`research/2026-10-29/finite_field_superposition_triangle/`).
 - Author naming provenance: `research/2026-10-28/AUTHOR_ANALOGY_PROVENANCE_LEDGER.md` (PR #365).
 - Corrective firewall: `research/2026-10-27-furstenberg-kempner/KEMPNER_FURSTENBERG_FIREWALL.md`

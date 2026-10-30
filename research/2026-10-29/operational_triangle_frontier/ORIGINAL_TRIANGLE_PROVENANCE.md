@@ -38,7 +38,7 @@ An interior PGF fixed point exists exactly when `r theta>1`. At `r=2,theta=1` it
 
 A distinct, more intrinsic general-rank observer can be defined by the *self-consistent* fixed point:
 
-`D_self(r,theta)=psi(r)-q_(r,theta)` where `q_(r,theta)=G_(r,theta)(q_(r,theta))` is the least fixed point. This agrees with the historical fixed-golden `D_lambda(r)` at `(r,theta)=(2,1)` but generally differs. Always keep both families named separately; equality outside the marked rank is UNVERIFIED and generally false.
+`D_self(r,theta)=psi(r)-q_(r,theta)` where `q_(r,theta)=G_(r,theta)(q_(r,theta))` is the least fixed point. **Golden locus (TG-11, Operation Main XVI, PROVED):** `D_self(r,theta)=D_lambda(r)` exactly along `theta=lambda/(1-lambda^r)` (`r>0`), equivalently `q_(r,theta)=lambda^r`; this curve *is* the coincidence set `{D_self=D_lambda}`, supercritical throughout, with constant Laplace rate `theta(1-q)=lambda`. On the authentic clock slice `theta=1` the coincidence is unique at `r=2` (restricted uniqueness), so the original `(2,1)` point stays distinguished on its own source/clock slice. Off the locus the two families differ. This supersedes the earlier "equality outside the marked rank is UNVERIFIED / generally false": the equality set is now exactly characterized (proof: `research/2026-10-29/triangle_genesis_repair/GOLDEN_LOCUS_THEOREM.md`). Always keep both families named separately, and keep the authentic source rank (`2`) distinct from an observer clock `theta` tuned to put a different rank on the golden locus.
 
 ## Ongoing search rather than forced universality
 

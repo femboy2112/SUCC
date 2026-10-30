@@ -147,4 +147,7 @@ Hosted-CI status at the exact proposed integration commit is recorded on the dra
 - Prime-ladder R4/R5 transcendence→entropy bridge (#334): **REFUTED as a general bridge /
   UNVERIFIED for π** (#337 Kempner firewall).
 - π base-16/base-3 normality, RH, general Collatz, shifted Lonely Runner n=18..94: **OPEN**.
-- Signed gate `∀ h≠0: (1/N) Σ e(h·U_n(0)) = o(N)`: **OPEN** — an unproven required cancellation.
+- Signed gate `∀ h≠0: T_N(h) = Σ_{n≤N} e(h·U_n(0)) = o(N)` (equivalently normalized
+  `Sbar_N(h) = T_N(h)/N = o(1)`): **OPEN** — an unproven required cancellation. *(Operation Main XVI
+  corrected the vacuous normalized `(1/N)Σ…=o(N)` wording; see
+  `research/2026-10-29/triangle_genesis_repair/WEYL_NORMALIZATION_CONVENTION.md`.)*
