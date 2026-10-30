@@ -80,6 +80,19 @@ class SpacetimeTriangleExact(unittest.TestCase):
                 self.assertLessEqual(val,rhs)
             self.assertGreater(rhs,0)
 
+    def test_scaled_zero_boundary_all_moments(self):
+        from math import factorial
+        self.assertEqual(M.spine_boundary_moment(1,0),1)
+        for k in (1,2,3):
+            target=factorial(k+1)
+            errors=[]
+            for n in (32,64,128,256,512):
+                value=float(M.spine_boundary_moment(n,k))
+                errors.append(abs(value-target))
+                self.assertGreater(value,0)
+            self.assertTrue(all(errors[i+1]<errors[i] for i in range(len(errors)-1)))
+            self.assertLess(errors[-1], 0.3)
+
     def test_joint_time_grade_cusp_coefficient_snapshots(self):
         # Exact finite n^2 B_n(z) approaches C/(2-z)^2; no signed pi phases.
         for n in (32,64,96):

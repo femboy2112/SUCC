@@ -85,6 +85,42 @@ P(C_(n-1))~ C_spine/n^2, C_spine=225/3008.
 
 Therefore the all-zero infinite path has original probability **zero**. Conditional measures nevertheless exist at each finite `n`. Unscaled `mu_(8n-7) -> delta_0` weakly, while the blown-up `Y_n=(8n-7) X | C_(n-1)` converges to `Gamma(2,1)`. Nontrivial Gamma geometry survives in the **tangent/blow-up at the zero boundary**, not as a positive-mass eternal path. The `Gamma(2)`/negative-binomial observer is what yields `G(z)=(2-z)^(-2)` and, under its *separately declared* branching fixed-point reading, the historical golden Oily–Macaroni specialization `lambda-gamma`.
 
+**ST-02c: the correct normal coordinate along the zero boundary.** A path in the
+triangular strip can be expressed by its Bernoulli parameter
+`p(X)=g(X)=1-exp(-8X)` in the *de Finetti* boundary simplex of the
+exchangeable Pascal process. The zero spine pushes `p` to zero, but
+the scaled distance from the zero boundary has a **nondegenerate** limit:
+
+```
+n p(X) | C_(n-1)  =>  Gamma(2,1).
+```
+
+Indeed `n*8X = [8n/(8n-7)] [(8n-7)X] => Gamma(2,1)` and
+`n[g(X)-8X]=O_P(n X²)->0`. For **every fixed nonnegative integer k**,
+finite moments have the *exact four-pole difference formula*
+
+```
+E[(n p(X))^k | C_(n-1)]
+ = n^k/r(n) * sum_(ell=0)^k (-1)^ell C(k,ell) r(n+ell)
+ -> Gamma(k+2)/Gamma(2) = (k+1)!.
+```
+
+Moment convergence is not inferred merely from weak convergence: for any
+fixed `0<t<1`, the bound `exp(t n g(X))<=exp(8 t n X)` and the source
+ratio `R(a_n-8tn)/R(a_n) -> (1-t)^(-2)` supply uniform exponential
+integrability (for all sufficiently large n), hence uniform integrability
+of every fixed power. In particular, the limiting first three moments
+are `2, 6, 24`. This is a rigorous **scale of how far inside the local
+triangle the conditional virtual path lives**: the unscaled probability
+coordinate approaches the zero vertex at speed `1/n`, while its blow-up
+retains Gamma-rank-two geometry. The next n-trial fan then observes an
+approximately Poisson distributed count with that latent scaled rate.
+
+This sits naturally in the classical Pascal graph / de Finetti boundary
+framework; it does not turn the rare zero spine into a positive-mass
+eternal path, nor identify the positive source boundary with pi's actual
+selected digit orbit.
+
 The zero-spine hazard satisfies the source-specific expansion
 
 ```
@@ -304,3 +340,18 @@ The missing theorem is a **seed-sensitive signed intertime correlation bound** g
 - No self-contained proof of positive physical observation, pi normality, RH, or unique academic originality is claimed.
 
 **Next:** construct and test source-coupled *selected* phase/carry correlations in this strip; check if any analytic inequality is available beyond universal telescoping or Haar-over-seeds, with independent arithmetic holdouts and corrected rational seed aliases.
+
+## External conceptual correspondences (not priority claims)
+
+- The Pascal graded graph's boundary is described by Bernoulli measures /
+  de Finetti mixtures; see A. M. Vershik, *Equipped graded graphs, projective
+  limits of simplices, and their boundaries* (2015),
+  https://m.mathnet.ru/php/archive.phtml?jrnid=znsl&option_lang=eng&paperid=6112&wshow=paper .
+- Conditioning on future rare path events is related to finite-horizon
+  Doob-type reweighting. We use only exact ordinary conditioning, not a
+  conjectural positive-probability infinite-conditioned Q-process; see
+  https://mathworld.wolfram.com/Doobh-Transform.html .
+- The classical Bratteli/Pascal Fourier theory is richer than a single
+  stationary multiplier; see *Combinatorics on Bratteli diagrams and dynamical
+  systems*, Cambridge University Press,
+  https://www.cambridge.org/core/product/identifier/CBO9780511777653A059/type/BOOK_PART .

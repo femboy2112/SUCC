@@ -97,6 +97,13 @@ def high_grade_bound(L):
         raise ValueError("L must be >=4")
     return F(256,81)*L*L/F(2**L)
 
+def spine_boundary_moment(n,k):
+    """Exact E[(n*(1-exp(-8X)))**k | n-1 previous zeros], k>=0."""
+    if n < 1 or k < 0:
+        raise ValueError("n must be positive and k nonnegative")
+    return F(n**k)*sum(((-1)**ell*comb(k,ell)*r(n+ell)
+                        for ell in range(k+1)),F(0))/r(n)
+
 def native_row(n):
     return tuple(endpoint_mass(8*n-7,n,j) for j in range(n+1))
 
