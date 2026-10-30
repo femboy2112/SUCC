@@ -246,6 +246,28 @@ Xi_(n,h,c)(z;s)=Σ_j q_(a_n,n)(j) z^j
 The binomial endpoint sum is classical superposition; the selected circle phase/carry is an *additional* mark. Averaging before applying nonlinear floor loses branch information. The authentic clock map obeys
 `exp(2πih U_(n+1))=exp(2πih r(n+1))exp(2πi(16h)U_n)`: **frequency scales by 16**, so one must not model the process as a stationary fixed-frequency Markov character.
 
+
+### Exact two-step carry-composition triangle (FFT-C)
+
+For any real seed s and integer n>=1, the ordinary circle representative satisfies
+`16 x_(n-1)(s)+r(n)=kappa_n(s)+x_n(s)`. Composing this **actual deterministic update twice**, without discarding the intermediate branch integer, yields
+
+```text
+256 x_(n-1)(s)+16r(n)+r(n+1)
+  = 16 kappa_n(s)+kappa_(n+1)(s)+x_(n+1)(s)
+```
+
+and hence the exact two-step branch law
+
+```text
+kappa^(2)_n(s) = floor(256x_(n-1)(s)+16r(n)+r(n+1))
+               = 16 kappa_n(s) + kappa_(n+1)(s).
+```
+
+This is an elementary but **load-bearing typed carry cocycle**: the composed finite field update and the final circle point agree only after transporting the intervening integer with the correct radix factor. Exponentiating a character forgets this integer, so the lifted trajectory retains strictly more information than its phase quotient. This is not a claim of antisymmetric holonomy, physical gauge curvature, or digit equidistribution. Exact rational tests preserve all three original objects `(grade weight, selected fractional point, literal carry)` for seeds `0`, `1/7`, `-1/5`, and `13/16`, including the composition law.
+
+The **gluing gap** is now exact: the Bayesian triangle supplies `q_(a_n,n)(j)`; the arithmetic triangle supplies `(x_(n+j)(0),kappa_(n+j)(0))`. Their joint marked tensor is a valid, source-typed *observation definition*, but a causal theorem forcing **signed long-time cancellation** of its selected phases has not been derived.
+
 **Hostile coherent counterseed:** `s_*=-π/16` has the identical source, weights, update triangle and finite 59-jet, but `U_n(s_*)=-T_n`, `T_n→0`, and therefore `Xi_(n,h)(1;s_*)→1`. The triangle is **not itself a π-normality theorem**. Any signed-cancellation claim derived from just its positive sector is refuted by this exact same-forcing control. Main unknown: a source- and zero-seed-sensitive estimate on the *common-mode*, literal-carry-resolved signed point transfer that remains noncircular under this counterseed and a four-pole mutant.
 
 ## Verdict and provenance
