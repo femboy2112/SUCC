@@ -248,6 +248,39 @@ class ThreeSpatialDimensions(unittest.TestCase):
             omega=2*__import__('math').asin(sqrt(float(c2)*side)/2)
             self.assertAlmostEqual(2*cos(omega)-2,-float(c2)*side,places=13)
 
+    def test_source_defect_pulse_propagates_in_all_three_axes(self):
+        # A separately declared source-relative z-bond pulse spreads into
+        # x and y directions under a 3D nearest-neighbor wave operator.
+        c2=F(1,4);eps=F(1,4);a=73
+        # Original source mass from the original four-pole rational R.
+        aprime=-sum((F(c)/(F(a)+d)**2 for c,d in POLES),F(0))
+        mass=-F(a)*aprime/R(a)
+        amp=c2*eps*(mass/2-1)**2
+        self.assertGreater(amp,0)
+        endpoints=((0,0,0),(0,0,1))
+        prev={};now={endpoints[0]:amp,endpoints[1]:-amp}
+        directions=((1,0,0),(-1,0,0),(0,1,0),(0,-1,0),(0,0,1),(0,0,-1))
+        for t in range(2,5):
+            candidates=set(prev)|set(now)
+            for p in tuple(now):
+                for d in directions:
+                    candidates.add(tuple(p[i]+d[i] for i in range(3)))
+            nxt={}
+            for p in candidates:
+                val=2*now.get(p,0)-prev.get(p,0)
+                lap=6*now.get(p,0)-sum((now.get(tuple(p[i]+d[i] for i in range(3)),0)
+                                          for d in directions),F(0))
+                val-=c2*lap
+                if val:nxt[p]=val
+            for p in nxt:
+                self.assertLessEqual(min(sum(abs(p[i]-e[i]) for i in range(3))
+                                         for e in endpoints),t-1)
+            if t==2:
+                self.assertNotEqual(nxt.get((1,0,0)),0)
+                self.assertNotEqual(nxt.get((0,1,0)),0)
+                self.assertNotEqual(nxt.get((0,0,-1)),0)
+            prev,now=now,nxt
+
     def test_two_independent_transverse_traceless_modes(self):
         # Wave propagates in z, transverse x,y: plus and cross are independent.
         n=11;prev_plus=[F(0)]*n;prev_cross=[F(0)]*n
