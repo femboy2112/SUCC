@@ -167,6 +167,14 @@ Z_{\rm OM}(\Theta)=1-\gamma+\log c-(1+c\lambda)^{-2},
 \]
 At Θ=1 the source's original golden fixed point q=φ^-2 survives even when *three* panels share the one conserved budget; the model still has only 2 independent angular directions. At three full unit panels Θ=3, H(z,z,z)=(4−3z)^−2 has a different nontrivial fixed point \(q_3=(5-\sqrt{21})/6\), and the Oily normalizer and mean differ from the Θ=1 values. Never transfer clock=1, clock=2, clock=3 numerical coefficients without a passport.
 
+### T3-05a. The three-axis static Fourier surface is **not yet a wave**
+
+For three **full** unit observer channels, the joint limit is \(H(z_1,z_2,z_3)=(4-z_1-z_2-z_3)^{-2}\), a static grade generating function. On the unit three-torus, \(|4-\sum_i e^{i\omega_i}|\ge1\), so its Fourier symbol has no zeros or propagation pole. The exact formal local inverse is
+\[
+(4-X-Y-Z)^2=16-8(X+Y+Z)+(X^2+Y^2+Z^2)+2(XY+XZ+YZ).
+\]
+This is an invertible **spatial observation kernel**, not a Lorentzian hyperbolic propagator. The existence of three grade-frequency directions does NOT supply physical spatial coordinates or a causal wave equation. The required new ingredient is independently constrained second-order dynamics in a separate time coordinate, as tested below. A finite cyclic arithmetic grade Fourier mode is not evidence of π's selected-digit Weyl cancellation.
+
 ## T3-06. From statistical H³ to a **conditional** 3+1 spacetime and wave operator
 
 To give H³ spatial slices a **physical-like** time coordinate τ, we must **add and declare** a separate temporal metric:
