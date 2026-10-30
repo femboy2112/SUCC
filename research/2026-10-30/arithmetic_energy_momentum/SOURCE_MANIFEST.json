@@ -1,0 +1,73 @@
+{
+  "status": "RESEARCH ONLY; base-16 pi normality and RH OPEN",
+  "base_pr": 393,
+  "base_commit": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+  "baseline_main_commit": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+  "original_four_poles_and_U0": "UNCHANGED",
+  "validated_local_tests": 11,
+  "independent_symbolic": "PASS",
+  "independent_numerical": "PASS (not an interval proof)",
+  "full_repo_ci": "NOT RUN",
+  "files": [
+    {
+      "path": "CLAIMS.md",
+      "bytes": 3766,
+      "git_blob_sha1": "882e6989c05affacd1935013293aa59262f77089",
+      "sha256": "09152f3649b6551fb1ae8ae185bc8f1fa822cc95240b759e4a260c83e00d4287"
+    },
+    {
+      "path": "NEXT.md",
+      "bytes": 2748,
+      "git_blob_sha1": "cba40df78d976a6d59cb155fb225df4d7e76d6b7",
+      "sha256": "695917bc52d912373a7e7c7f6ef34070218e00bd3810994e5aa00ae090e343be"
+    },
+    {
+      "path": "OPERATION_ARITHMETIC_ENERGY_MOMENTUM.md",
+      "bytes": 15919,
+      "git_blob_sha1": "ec074a8644e9eb53fefec4239dbfddaf0db69bce",
+      "sha256": "23710bc00517a5e6465d203c4207f39d973f8139aa12b7b97dee9e85f9abc2d0"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 2190,
+      "git_blob_sha1": "72a992c77782cc7a329f048d9810dd8484dfcac1",
+      "sha256": "9a8e0231583294cf4a332e0de5394aa61b1efb92a8bb771918a06e8a1585e724"
+    },
+    {
+      "path": "energy_momentum_probe.py",
+      "bytes": 8589,
+      "git_blob_sha1": "e07c17f142f8eb22a611b1c14dcf28b6fa533adc",
+      "sha256": "3f8a798445b74cc9d0d7f7b8543e293b0434f6507476e6e2a23b5cb4cccb3d0f"
+    },
+    {
+      "path": "independent_numerical_oracle.py",
+      "bytes": 1380,
+      "git_blob_sha1": "c83003ecd3fea597ac03594a2356153c28dc89a2",
+      "sha256": "939bacac89612f2ffd101cd9c5e0c7afa19d7669e783bb285b6e3b9094ef2d4f"
+    },
+    {
+      "path": "independent_symbolic_oracle.py",
+      "bytes": 3721,
+      "git_blob_sha1": "2a4228ee1772ee89bb75e761db6d96790557bb07",
+      "sha256": "b040ad7bb311018632fc49792675b994c6c41da9691705187f3c3869c3bafd27"
+    },
+    {
+      "path": "receipts/focused.log",
+      "bytes": 1945,
+      "git_blob_sha1": "dfbfdcecc2fcfe981157cd77d6909998afb6c7a1",
+      "sha256": "0cf086653260e570248b46aee2c8e0e6c713d240400a6380aa7659396bad6f5f"
+    },
+    {
+      "path": "receipts/independent.log",
+      "bytes": 378,
+      "git_blob_sha1": "151210ff0931ea8fe3e60b900b73a4bbaa9a865d",
+      "sha256": "a82df283b942f9227771a5b21bd741ad1807613bb9bc0fc7b8590e48b64fb57e"
+    },
+    {
+      "path": "receipts/numerical.log",
+      "bytes": 644,
+      "git_blob_sha1": "47fccd8b65f416a7378af9cff3abe5e917792bb3",
+      "sha256": "f6e48036eba00d75c30d2512c59c57557262ce6bf56d19e0d7b3aab853eb89ea"
+    }
+  ]
+}
