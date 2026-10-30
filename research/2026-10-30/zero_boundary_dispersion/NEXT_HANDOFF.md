@@ -48,7 +48,7 @@ clock into the arithmetic.
 
 Reproduce focused tests directly. Generated probe outputs and bounded runners
 refuse overwrites: use a fresh disposable copy or new receipt names, retaining
-the existing records. Root full suite10,008 and focused54 passed; catalog
+the existing records. Root full suite10,008, new focused54 and inherited31 passed; catalog
 check is a confirmed exact-parent baseline failure. The small Lean component
 does not certify the analytic theorems. No merge or publication is authorized.
 

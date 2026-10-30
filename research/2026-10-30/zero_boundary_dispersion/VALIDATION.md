@@ -17,6 +17,7 @@ remain byte-identical. No merge, force push, release or main mutation.
 | Inherited source manifests | PASS,262 files unchanged;14 ancestry edges | [audit](receipts/source-audit.log) |
 | Inherited401 artifact validator | PASS,128 artifacts and nested receipts | [log](receipts/inherited-artifacts.log) |
 | Parent403 focused tests/oracle |12PASS;9Green points and15windowsPASS | [tests](receipts/parent-tests.log), [oracle](receipts/parent-oracle.log) |
+| Inherited adversarial transfer suite |19PASS, including biased product laws, Champernowne, Kempner/de Bruijn, full Walsh and Stoneham2/3/5 | [log](receipts/inherited-adversaries.log) |
 
 The catalog is a pre-existing stale-catalog failure, not a regression or a
 passing gate. The native suite's intentional temporary-catalog diagnostic and
@@ -31,6 +32,8 @@ No new research tests are silently counted in the10,008 native tests.
 +13 CRT +14 spectral. Front metadata records the exact interpreter versions;
 some front tests use system Python3.12.3. Separate oracles retain their own
 versions and provenance rather than being presented as one independent run.
+The31 inherited focused tests (12parent403 +19adversarial transfer) are
+reported separately from these54 new tests and the10,008 native tests.
 
 - Root:15 separately unrolled exact signed-deficit witnesses and two symbolic
   resolvent checks; five rational Machin/Taylor high-frequency source-sum
@@ -93,3 +96,6 @@ after push; these parent snapshots do not certify the child.
 `validate_artifacts.py` checks inventory, bytes, nested sources, receipt
 outputs, local links and the explicitly retained failures. It does not
 certify the mathematical claims.
+The first final audit remains as `artifact-validation.*`; the subsequent
+`artifact-validation-final.*` audits the added inherited-control receipts.
+Both audit pairs are explicitly excluded from the manifest's self-hash cycle.

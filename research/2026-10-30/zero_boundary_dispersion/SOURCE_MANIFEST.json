@@ -5,6 +5,8 @@
   "scope": "additions under research/2026-10-30/zero_boundary_dispersion only",
   "exclusions": [
     "SOURCE_MANIFEST.json",
+    "receipts/artifact-validation-final.json",
+    "receipts/artifact-validation-final.log",
     "receipts/artifact-validation.json",
     "receipts/artifact-validation.log",
     "__pycache__"
@@ -35,8 +37,8 @@
       "bytes": 6651
     },
     "NEXT_HANDOFF.md": {
-      "sha256": "63d2314dc3b27183678492d854f96a55a1c07f51442543a48efef7f499341430",
-      "bytes": 3298
+      "sha256": "9ad77f7c9213be3fd4f9a9d9ff838cec157c588ac263b8ecfd3b992dc0b0834d",
+      "bytes": 3315
     },
     "PREREGISTRATION.md": {
       "sha256": "b186d631b978d7bf90e8e7ae99cb7270a731f7e1e697036452d327cd1ed3f3a1",
@@ -55,8 +57,8 @@
       "bytes": 1253
     },
     "VALIDATION.md": {
-      "sha256": "e051d05710a6ab0dbe9eee20a8af8d153aa3dae206254ee184dae9cb8dbcdd57",
-      "bytes": 5861
+      "sha256": "3fa23f58f22b2ecbb88e4f11d49bcdc685b55cac3b442bb459057d0942e8ca5d",
+      "bytes": 6417
     },
     "crt/CRT_DOSSIER.md": {
       "sha256": "6527cbf35ce3d2e7f4142769413925d9982e5f63a87e4daa1ef207ad5b398b5c",
@@ -318,6 +320,14 @@
       "sha256": "c16aa35b60a8687f9b0a592f33202b6616ad04bb4b016758f4e3cc7e91eaeb5f",
       "bytes": 1158
     },
+    "receipts/inherited-adversaries.json": {
+      "sha256": "b98bb0dedd401fc8649a439b09e75aac186dc06e9e26a8cb44a431bd41d110b7",
+      "bytes": 738
+    },
+    "receipts/inherited-adversaries.log": {
+      "sha256": "19bdfc01c87840aa504d62acbcf54acaacfb1bd7cb9136aae0927a1cd8b7582b",
+      "bytes": 118
+    },
     "receipts/inherited-artifacts.json": {
       "sha256": "13965e66d52e53a5c4278ad5d78fc265bdf052b7138ccc2150cb81cb937b0767",
       "bytes": 658
@@ -515,8 +525,8 @@
       "bytes": 3692
     },
     "validate_artifacts.py": {
-      "sha256": "b0928629f1239780cdfd81876b4e5eaab280e271800bbd94c482992f607714d9",
-      "bytes": 4542
+      "sha256": "7987191595c0277d39c8dd6717170018b5275699f94978bbbb07e5a8b9fdf150",
+      "bytes": 4636
     }
   }
 }

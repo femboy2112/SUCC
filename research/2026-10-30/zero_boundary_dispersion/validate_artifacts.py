@@ -15,7 +15,8 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[2]
 PARENT='5f350af7808532e55d74e80c948c02bb385c6e70'
 EXCLUDED={'SOURCE_MANIFEST.json','receipts/artifact-validation.json',
-          'receipts/artifact-validation.log'}
+          'receipts/artifact-validation.log','receipts/artifact-validation-final.json',
+          'receipts/artifact-validation-final.log'}
 
 
 def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
