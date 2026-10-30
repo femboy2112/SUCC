@@ -20,7 +20,7 @@ Both update/endpoint orders have exact equalities. Nonlinear readouts and select
 - Exact original-source harmonic sum: `A_n=H_n−Σ_(k=1)^n r(n+k)/(k r(n))`.
 - Gamma–Poisson endpoint and Oily two-stage **marginal** fixed point `lambda²`, with the crucial joint-law distinction preserved.
 - Derived `Omega_OM=lambda−gamma` at Gamma rank two, alongside a distinct mixed-grade constant `1+log 2−gamma−(1+2lambda)^−2`.
-- **New calibrated BBP harmonic source first jet:** `A_n=1/2+log 2−49/(320n)+O(n^−2)`; Gamma-matched `Q_fake=15x` gives `+1/(32n)`. Their `−59/(320n)` difference comes from original `Q''(0)=−59`.
+- **New calibrated BBP harmonic source first jet:** `A_n=1/2+log 2−49/(320n)+O(n^−2)`; Gamma-matched `Q_fake=15x` gives `+1/(32n)`. Their `−59/(320n)` difference comes from original `Q''(0)=−59`; a separate positive extra-pole mutant matches this first jet, so this is a discriminator, **not** full source identification.
 - Exact deterministic two-step carry lift `kappa^(2)_n=16kappa_n+kappa_(n+1)` and grade-weight/selected-point/carry marks.
 
 ## Reproduce the focused receipts
