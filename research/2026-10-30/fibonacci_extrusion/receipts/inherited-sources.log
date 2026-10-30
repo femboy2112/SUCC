@@ -1,0 +1,195 @@
+{
+  "status": "PASS",
+  "base": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+  "unchanged_inherited_manifest_files": {
+    "prime_stroboscope": 15,
+    "arithmetic_barrier": 96,
+    "gamma_all_places": 12,
+    "gamma_twist": 128,
+    "selected_boundary_slip": 11,
+    "zero_boundary_dispersion": 129
+  },
+  "ancestry": [
+    {
+      "pr": 390,
+      "head": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "ancestor": true
+    },
+    {
+      "pr": 391,
+      "head": "7ce94d38479c22c3d427753812e38207515dc868",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "ancestor": true
+    },
+    {
+      "pr": 392,
+      "head": "00b073fb9adedcda91cc499540add10dfcfabc66",
+      "base": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+      "ancestor": true
+    },
+    {
+      "pr": 393,
+      "head": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+      "base": "00b073fb9adedcda91cc499540add10dfcfabc66",
+      "ancestor": true
+    },
+    {
+      "pr": 394,
+      "head": "3d9c16063e7a0ec69f9713065f5007375ea3a917",
+      "base": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+      "ancestor": true
+    },
+    {
+      "pr": 395,
+      "head": "2d4fcc6db5657a2559b0e28ca8c8e1413b6c4548",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "ancestor": true
+    },
+    {
+      "pr": 396,
+      "head": "adb0a53a4b86793b084b8ea122e88674a9c74adc",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "ancestor": true
+    },
+    {
+      "pr": 397,
+      "head": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "ancestor": true
+    },
+    {
+      "pr": 398,
+      "head": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "ancestor": true
+    },
+    {
+      "pr": 399,
+      "head": "fe9da9b0942f046cc67b02c4fed825ef74aa675a",
+      "base": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+      "ancestor": true
+    },
+    {
+      "pr": 400,
+      "head": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "base": "fe9da9b0942f046cc67b02c4fed825ef74aa675a",
+      "ancestor": true
+    },
+    {
+      "pr": 401,
+      "head": "abf51bf061f583d0e38a915c2e1bae5e28ddaace",
+      "base": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "ancestor": true
+    },
+    {
+      "pr": 402,
+      "head": "384fe179250a172c2e667c387fdb55bf9589e7a0",
+      "base": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+      "ancestor": true
+    },
+    {
+      "pr": 403,
+      "head": "5f350af7808532e55d74e80c948c02bb385c6e70",
+      "base": "abf51bf061f583d0e38a915c2e1bae5e28ddaace",
+      "ancestor": true
+    },
+    {
+      "pr": 404,
+      "head": "419cf7c280e7be11542ecbd6edef6c70fa7050e5",
+      "base": "384fe179250a172c2e667c387fdb55bf9589e7a0",
+      "ancestor": true
+    },
+    {
+      "pr": 405,
+      "head": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "base": "5f350af7808532e55d74e80c948c02bb385c6e70",
+      "ancestor": true
+    },
+    {
+      "pr": 406,
+      "head": "ba66c2e4217d1d6eec407b142ed467c48e39ed1c",
+      "base": "419cf7c280e7be11542ecbd6edef6c70fa7050e5",
+      "ancestor": true
+    }
+  ],
+  "inputs": [
+    {
+      "path": "AGENTS.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "blob": "2c04a24744366d5659f347caeb874a3613f893c9"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+      "blob": "c3d90e9fe0cff7bc56b7a896a9efb87958849aa3"
+    },
+    {
+      "path": "provenance/IMPORT_MANIFEST.json",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+      "blob": "a8805a8e4d64f35ff61937a36755d9b6d1ba3fae"
+    },
+    {
+      "path": "docs/OPERATIONAL_TRIANGLE.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "sha256": "c10d934a3a1486b3c672caacf93f3c388d7875dcd526a7b08b3aea1db5698035",
+      "blob": "678223ba666d4c36a5babcf171f338b2fbf5c692"
+    },
+    {
+      "path": "docs/PI_SELECTED_CATEGORICAL_FRONTIER.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "sha256": "1e8900f28728b2aab5b1d9c3d98736a43a671303234acc5adce044ac574a90c5",
+      "blob": "e5534dbd43fc12fc4ba40501f57a8d7dcb30bea8"
+    },
+    {
+      "path": "research/2026-10-28/AUTHOR_ANALOGY_PROVENANCE_LEDGER.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "sha256": "02161fa38733c4edad939cd626cda796dc9add08a9b42c4df7584f79137d2dc7",
+      "blob": "e1e516b57c755e35ac80cd463498edcb3ba26f45"
+    },
+    {
+      "path": "research/2026-10-25/GAMMA_ZERO_ONE_BBP_MOMENT_GEOMETRY.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "sha256": "47bbffcb01ed8daa1eee91a17f834652f84391ba74fe2798236ba6ede2004f4f",
+      "blob": "f84746c66541ba915c2fe4951aa78fdaa338c278"
+    },
+    {
+      "path": "observational_succ/duck_bbp_fourier.py",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "sha256": "c97f08e9fda23a1d750b06dd39ef807a36e3ee8d39d1e7c82442861365817a0a",
+      "blob": "5c24c7f045cff0d1f250f25b7b9e0046c9768e58"
+    },
+    {
+      "path": "observational_succ/bbp_source_memory.py",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "sha256": "dd439f0a2231399d2a0ea4cf0e40a1e399338537723c468e688b0ac7d860fb54",
+      "blob": "c178b5c714bcdcb4dafc0d112c6aca172e44bcb6"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/NEXT_HANDOFF.md",
+      "commit": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "sha256": "9ad77f7c9213be3fd4f9a9d9ff838cec157c588ac263b8ecfd3b992dc0b0834d",
+      "blob": "b6e126b6699e068d70bcb1d0b4ce7a9e73aef94b"
+    },
+    {
+      "path": "research/2026-10-30/noether_radix_ward/NOETHER_RADIX_WARD.md",
+      "commit": "419cf7c280e7be11542ecbd6edef6c70fa7050e5",
+      "sha256": "68517361565af44fbc234cf3e4079efdce1fc8d4ca87a38cce3ee163def5f1aa",
+      "blob": "d2cc8c05fb47401d68022bea59732af1d90f6793",
+      "type": "read-only sibling, not merged"
+    },
+    {
+      "path": "research/2026-10-30/count_out/COUNTING_QUOTIENT.md",
+      "commit": "ba66c2e4217d1d6eec407b142ed467c48e39ed1c",
+      "sha256": "e3add66ebcb224ef849333075bee449b081ac8f7e6d0fd0aed174476aac6f385",
+      "blob": "485034b7ca7858926a97848ec128464495ce5c30",
+      "type": "read-only sibling, not merged"
+    }
+  ],
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "branch": "research/fibonacci-triangle-extrusion-2026-10-30",
+  "main_at_audit": "e18ba565ca540adb7edf3292f5593929e76d91c5"
+}

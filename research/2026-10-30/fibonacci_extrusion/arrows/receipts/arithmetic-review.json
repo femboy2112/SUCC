@@ -1,0 +1,119 @@
+{
+  "dossier_sha256": "bde7824367225e3b5eff51530e3a7dad0f604a7d5bbf2e032b03459b0e237a9e",
+  "smith_diagonal": [
+    1,
+    -239
+  ],
+  "modular_rows": [
+    {
+      "modulus": 17,
+      "count": 1
+    },
+    {
+      "modulus": 31,
+      "count": 1
+    },
+    {
+      "modulus": 71,
+      "count": 1
+    },
+    {
+      "modulus": 239,
+      "count": 239
+    },
+    {
+      "modulus": 478,
+      "count": 239
+    },
+    {
+      "modulus": 717,
+      "count": 239
+    },
+    {
+      "modulus": 57121,
+      "count": 239
+    }
+  ],
+  "hensel_brute_lifts": [
+    {
+      "precision": 2,
+      "root": 44231,
+      "modulus": 57121
+    },
+    {
+      "precision": 3,
+      "root": 10040406,
+      "modulus": 13651919
+    },
+    {
+      "precision": 4,
+      "root": 2576601178,
+      "modulus": 3262808641
+    },
+    {
+      "precision": 5,
+      "root": 142877372741,
+      "modulus": 779811265199
+    },
+    {
+      "precision": 6,
+      "root": 14179480146323,
+      "modulus": 186374892382561
+    }
+  ],
+  "first_pole_times": {
+    "7": 210,
+    "4": 120,
+    "3": 90,
+    "2": 60
+  },
+  "integral_states_before_birth": 59,
+  "birth_residue": 119,
+  "forcing_initial_defect": "38599/819",
+  "forcing_initial_residue": 198,
+  "finite_surgery_controls": [
+    {
+      "N": 1024,
+      "width": 1,
+      "edited_positions": 834,
+      "changed_word_windows": 796,
+      "upper_bound": 834
+    },
+    {
+      "N": 1024,
+      "width": 2,
+      "edited_positions": 834,
+      "changed_word_windows": 835,
+      "upper_bound": 1668
+    },
+    {
+      "N": 1024,
+      "width": 3,
+      "edited_positions": 834,
+      "changed_word_windows": 837,
+      "upper_bound": 2502
+    },
+    {
+      "N": 4096,
+      "width": 1,
+      "edited_positions": 1666,
+      "changed_word_windows": 1594,
+      "upper_bound": 1666
+    },
+    {
+      "N": 4096,
+      "width": 2,
+      "edited_positions": 1666,
+      "changed_word_windows": 1669,
+      "upper_bound": 3332
+    },
+    {
+      "N": 4096,
+      "width": 3,
+      "edited_positions": 1666,
+      "changed_word_windows": 1675,
+      "upper_bound": 4998
+    }
+  ],
+  "scope": "FA01-02 and FA04 reviewed; separate implementation, same-model authority"
+}
