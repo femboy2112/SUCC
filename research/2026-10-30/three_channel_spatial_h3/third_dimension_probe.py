@@ -102,6 +102,25 @@ class ThreeSpatialDimensions(unittest.TestCase):
         self.assertTrue(all(x>y for x,y in zip(errors,errors[1:])))
         self.assertLess(errors[-1],0.003)
 
+    def test_three_source_mark_gains_have_three_independent_controls(self):
+        # Given a retained source mark, three positive detector gains with
+        # overall scale quotiented plus an independent total budget give a
+        # nonzero 3x3 Jacobian, but only if all interventions are allowed.
+        for a in (1,17,73):
+            marks=[atom_mass(a,c,d)/R(a) for c,d in ATOMS]
+            gains=[F(1),F(2),F(3)]
+            budget=F(5,2)
+            norm=sum((g*p for g,p in zip(gains,marks)),F(0))
+            q=[g*p/norm for g,p in zip(gains,marks)]
+            theta=[budget*z for z in q]
+            jac=[[theta[i],theta[i]*(int(i==1)-q[1]),
+                  theta[i]*(int(i==2)-q[2])] for i in range(3)]
+            det=(jac[0][0]*(jac[1][1]*jac[2][2]-jac[1][2]*jac[2][1])
+                 -jac[0][1]*(jac[1][0]*jac[2][2]-jac[1][2]*jac[2][0])
+                 +jac[0][2]*(jac[1][0]*jac[2][1]-jac[1][1]*jac[2][0]))
+            self.assertEqual(det,theta[0]*theta[1]*theta[2])
+            self.assertGreater(det,0)
+
     def test_finite_original_three_panel_probability_and_vandermonde(self):
         for n in (1,2,3):
             cells={(j,k,l):finite_three_cell(n,j,k,l)
