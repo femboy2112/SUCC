@@ -5,6 +5,7 @@
 | FFT-0 | Original four-pole source and native `U_0=0` are preserved; `a,m,j,s` have distinct roles | Source-pinned by #367/#383; inspect git diff |
 | FFT-1 | Exact positive posterior update, ordered path weight, binomial endpoint superposition and cross-source `q` recursion for all `a>0,m>=0` | PROVED LOCAL paper identity, exact rational tests; reset model fails |
 | FFT-2 | `E[H_J]=H_m-R(a)^(-1)Σ_(k=1)^m R(a+8k)/k` | PROVED LOCAL finite; direct paths vs source sum across independent implementations |
+| FFT-2b | Exact four-pole digamma formula with native BBP offsets 1,4,5,6 over 8, and gamma reference canceling in each finite digamma difference | PROVED LOCAL elementary partial fractions; two independent exact Fraction calculations across multiple clocks/depths |
 | FFT-3 | Native diagonal `A_n→1/2+log2`, same Gamma–Poisson joint as the *declared* Pascal observer | CLASSICAL with declared sensor; not Oily independent latent coupling |
 | FFT-4 | Native original `A_n=1/2+log2-49/(320n)+O(n^-2)`; fake `+1/(32n)` | PROVED LOCAL analytic first-jet derivation, independent exact SymPy algebra + numerical scoped holdouts; external proof review/Lean absent |
 | FFT-5 | `lambda` is marked by `G(p)=p`, `gamma` is harmonic finite part, `Omega=lambda-gamma` is `D(2)` | CLASSICAL identities plus source-marking conventions; not independent primitives |
