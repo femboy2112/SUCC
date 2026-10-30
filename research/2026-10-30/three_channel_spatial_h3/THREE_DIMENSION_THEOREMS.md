@@ -118,6 +118,18 @@ For three independently adjustable positive *observation intensities* θ_i, decl
 J_i\mid Y\sim Pois(\theta_iY),\quad Y\sim Gamma(2,1),\qquad
 H_\theta(\mathbf z)=[1+\sum_i\theta_i(1-z_i)]^{-2}.
 \]
+**Original-source finite-a passport:** before the Gamma limit, the declared three-panel *Poisson* extension can retain the original \(\mu_a\) exactly:
+\[
+\boxed{H_{a,\boldsymbol\theta}(\boldsymbol z)
+=\frac{R(a[1+\sum_i\theta_i(1-z_i)])}{R(a)}.}
+\]
+For \(d=1+\sum_i\theta_i(1-z_i)>0\), comparing with the Gamma-matched fake \(R_f(a)=15/a²\) gives
+\[
+H_{a,\theta}^{BBP}-H_{a,\theta}^{fake}
+=\frac{59(d-1)}{15\,a\,d^3}+O(a^{-2}).
+\]
+Its three cross cumulants are source-derived through the derivatives of \(\log R\); in particular \(\kappa(J_1,J_2,J_3)=\theta_1\theta_2\theta_3[-a^3(\log R)'''(a)]\), with \(-a^3(\log R)'''(a)=4-118/(5a)+O(a^{-2})\). The **finite-a Fisher metric is not asserted to be constant-curvature H³**; exact H³ describes the limiting Gamma rank-two model. This use of independent Poisson observation gains is a declared instrument, not the finite native Bernoulli grammar.
+
 In its 3-dimensional mean-coordinate statistical family m_i=2θ_i, the covariance (an exponential-family Hessian) is
 \[
 \Sigma_{ij}=m_i\delta_{ij}+m_i m_j/2,
