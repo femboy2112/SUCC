@@ -234,6 +234,21 @@ h_+&h_\times&0\\h_\times&-h_+&0\\0&0&0
 \]
 is exactly trace-free and transverse when h_+,h_× depend only on z,t; both independent profiles may satisfy the same discrete wave evolution. This proves existence of **two TT tensor-mode slots in a declared 3D lattice**, not that SUCC has derived the linearized Einstein equations or any quadrupole radiation. Primary GR/physics calibration: PDG gravitational tests review (https://pdg.lbl.gov/2023/reviews/rpp2023-rev-gravity-tests.pdf), Milne spacetime (https://link.springer.com/article/10.1007/s10701-020-00335-7).
 
+### T3-06a. A localized perturbation really spreads into THREE spatial axes (declared source coupling)
+
+Extend the previous PR #397's **explicitly assumed** source-to-bond law to a cubic spatial interaction lattice. Put \(\kappa_a=M(a)/2\), \(M(a)=-aR'(a)/R(a)\), \(c²=\epsilon=1/4\), and modify one bond in the **third (z) direction** by \(w_{e_*}=1+\epsilon(\kappa_a-1)^2\) for one discrete time step. Relative to the unperturbed carrier with the same locally linear initial field, the exact first-step dipole is
+\[
+\delta\psi_{1,(0,0,0)}=c²\epsilon(\kappa_a-1)^2,\qquad
+\delta\psi_{1,(0,0,1)}=-c²\epsilon(\kappa_a-1)^2.
+\]
+After returning to uniform bonds, the difference obeys the unforced cubic wave recurrence. The exact nearest-neighbor stencil propagates its nonzero support one graph edge per subsequent step; at the second step the difference appears at neighbors displaced in **all three x, y, z directions**. The standalone probe checks exact Fraction amplitudes, nonzero transverse responses, and the Manhattan-distance light-cone bound for several steps.
+
+Because \(\kappa_a=1-59/(30a)+O(a^{-2})\), the pulse magnitude obeys
+\[
+|\delta\psi_1|=c²\epsilon\,\frac{59²}{900a²}+O(a^{-3}).
+\]
+The square and coefficient are inherited from the **chosen coupling** and the prior original-source asymptotic, not newly deduced from physical acceleration, an Einstein action, or independent evidence that gravity is sourced by the BBP carrier. Uniform initial fields, no perturbed bond, and the Gamma reference \(\kappa=1\) produce zero such pulse by construction. This witness demonstrates that a third spatial carrier axis can support observable wave spreading, not that the original arithmetic forces it.
+
 ## T3-07. Falsification / boundary
 
 - **DISCLOSED within model:** exact original source three-positive-atom passport (15,59,243), new angular variance 164/225, exact native three-panel rational probability and source-specific 59-jet, rank-two Gamma three-channel H³ and independent-control rank condition, fixed-budget rank-two sphere, Oily clock-specific normalization, 3D lattice Fourier dispersion, two TT slots and vacuum Milne null constraint.
