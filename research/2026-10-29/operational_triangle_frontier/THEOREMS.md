@@ -122,7 +122,7 @@ Multiply, include `exp(-ty)`, and use the exactly computable Gamma integrals `in
 
 `(59/240)(2/d²-2/d³) + (7b/4)/d³ - 3(b+b²)/d⁴ = J_BBP`.
 
-A rigorous uniform-remainder route: split at `y=n^(1/3)`; on the lower range, the Taylor remainders are bounded by `C_T n^-2 P(y)` times an integrable exponential; on the complement, positivity plus `Q(x)<=15x` and bounded `0<=z<=1,t>=0` give an `O(exp(-n^(1/3)/2))` tail. The displayed finite polynomial and first derivative remainder are thus controlled for fixed T. We do **not** claim formal Lean verification or independent universal error constants.
+A rigorous uniform-remainder route: split at `y=n^(1/3)`; on the lower range, the Taylor remainders are bounded by `C_T n^-2 P(y)` times an integrable exponential; on the complement, positivity plus `Q(x)<=15x` (valid since `Q` is concave with `Q(0)=0, Q'(0)=15`) and bounded `0<=z<=1,t>=0` give an `O(exp(-n^(1/3)/2))` tail. On the fixed rectangle `d=2+t-z>=1` (its minimum is at `z=1,t=0`), so the Gamma integrals `k!/d^(k+1)` stay bounded and no small-`d` blow-up occurs; `P(y)` is a fixed polynomial, `P(y)e^(-y)` is integrable, and `C_T int_0^infty P(y)e^(-y) dy < infty` with `C_T` depending on `T` only through the `e^(-ty)` factor. The displayed finite polynomial and first derivative remainder are thus controlled for fixed T. We do **not** claim formal Lean verification or independent universal error constants.
 
 **Gamma-matched fake** `Q_fake(x)=15x`, `R_fake(a)=15/a²` has precisely the same limiting F. Repeating the calculation with its source density exactly `y exp(-y)` gives
 
@@ -131,7 +131,7 @@ J_fake(z,t)=7(z-1)/[4d³]-3z(z-1)/d⁴,
 J_BBP(z,t)-J_fake(z,t)=59(1+t-z)/[120d³].
 ```
 
-This is **nonzero** whenever `1+t-z>0`, a genuine source-visible joint readout absent at `(z,t)=(1,0)` by mass conservation. Setting `t=0`, integrating the difference divided by `(1-z)` recovers the original-vs-fake harmonic first-jet `-59/(320n)` from #386. At `(z,t)=(0,0)`, `J_BBP=-151/960` (inherited zero-grade first jet). The hostile `Q_epsilon=Q+epsilon(1-e^-x)^3` preserves `Q'(0), Q''(0)` and therefore matches this FIRST jet; higher joint derivatives or source poles are needed to identify the whole source. This does not constrain π's signed phase.
+This is **nonzero** whenever `1+t-z>0`, a genuine source-visible joint readout absent at `(z,t)=(1,0)` by mass conservation. Setting `t=0`, the bare integral is `int_0^1 (J_BBP-J_fake)/(1-z) dz = +59/320`; the harmonic observer carries the `(1-F)` sign, so its `1/n` coefficient is the negative of this, recovering the original-vs-fake harmonic first-jet `-59/(320n)` from #386. At `(z,t)=(0,0)`, `J_BBP=-151/960` (inherited zero-grade first jet). The hostile `Q_epsilon=Q+epsilon(1-e^-x)^3` preserves `Q'(0), Q''(0)` and therefore matches this FIRST jet; higher joint derivatives or source poles are needed to identify the whole source. This does not constrain π's signed phase.
 
 ## TG-06: exact selected-frequency tomography and its universal seed-smearing no-go
 

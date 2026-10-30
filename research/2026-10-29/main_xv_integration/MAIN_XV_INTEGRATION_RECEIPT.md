@@ -52,6 +52,14 @@ Order-statistic bridge:
 | --- | --- | --- | --- |
 | **#359** max-root-polya-observer-bridge | `3a4f7e13` | MAX/ROOT order-statistic observer transport, bounded selection, off-axis controls (1 unique commit over the Main-XIV-integrated #356 base) | INTEGRATED (single `cherry-pick -x`; fully additive, no collisions) |
 
+**Lean honesty note.** `formal/Z2FiniteCharacterAtom.lean` (from #334) is a standalone,
+Mathlib-free Lean file with **no CI target and no `scripts/check_*_lean.py` binding**: the hosted
+Lean workflows are each path-triggered on their own named files (`duck-pi-proof.yml`,
+`duck-principle-lean.yml`, `no-ghost.yml`, `institute.yml`, …) and none globs `formal/*.lean` or
+references this file. It therefore does **not** break CI and is **not** claimed kernel-checked
+here; it is retained as additive research. A reader who wants it verified must add a check binding
+and build it.
+
 ### Excluded / not resurrected
 
 - No closed-without-merge experimental branch was resurrected merely to satisfy "all branches".
@@ -85,6 +93,12 @@ against current `main`.
   `docs/CLAIM_LEDGER.md` (TG-01–TG-10 + REFUTED entries), `docs/math_memory/INDEX.md`.
 - The author's original triangle and Oily–Macaroni provenance (PR #365 ledger) are preserved
   verbatim and characterized as the rank-two specialization; nothing deleted or renamed away.
+- Two faithful tightenings to `operational_triangle_frontier/THEOREMS.md` TG-05, prompted by the
+  independent audit (not defects): the `-59/(320n)` sentence now states the `(1-F)` sign flip
+  explicitly (the bare integral is `+59/320`), and the uniform-remainder paragraph now states
+  `d=2+t-z>=1` on the rectangle (minimum at `z=1,t=0`, so no small-`d` blow-up), names `P(y)` as a
+  fixed polynomial with `P(y)e^{-y}` integrable, and notes `C_T` depends on `T` only through
+  `e^{-ty}`. No claim changed.
 
 ## 5. Validation (local, on the integration candidate)
 
@@ -93,14 +107,33 @@ against current `main`.
 | Frontier `test_operational_triangle.py` (#387) | **10 passed** |
 | Frontier `independent_oracle.py` (#387 symbolic/numeric) | runs; `scaled_error → 0` (O(1/n²) after the 1/n jet), `source_defect_inferred → predicted` |
 | 10 new top-level integration tests | **203 passed, 37 subtests passed** |
-| Full root gates (`verify_provenance.py`, `unittest discover`, observer/ordinal probes) | _see §6 after catalog regen_ |
-| `build_math_memory.py --check` | _regenerated last; see §6_ |
+| `verify_provenance.py` | `SOURCE_PROVENANCE_VERIFIED`, 72 items, `establishes_mathematical_truth: false`, rc=0 |
+| `observer_foundations_probe.py` / `ordinal_succ_report_probe.py` | exit 0 (firewall flags `false`) |
+| `verify_math_memory_graph.py` | PASS: 51 typed nodes, 60 typed edges |
+| `build_math_memory.py --check` | exit 0 (regenerated last; retained research-supplement warnings by design) |
+| Frozen BBP sources / `ci.yml` / workflows vs `main` | byte-identical; no workflow changed |
+| Independent re-derivation of TG-05 59-jet (my own exact R-sum + Richardson) | matches `J_BBP` at 7 generic `(z,t)` + exact `J(0,0)=-151/960` and `z=1` reduction |
+| Independent adversarial audit (blind, exact symbolic/bit computation) | **FIREWALL INTACT — SURVIVED**; no defect, no status breach; one cosmetic sign nit (fixed above) + remainder-paragraph reinforcement (applied) |
+| Full root suite (`unittest discover -s tests -p 'test_*.py'`) | **Ran 9986 tests**, 1 error — the pre-existing environment-only artifact `test_eodcs_meta_choice_descent.test_exact_probe_receipt_and_independent_count` (see §6). 9985 native pass. |
 
 ## 6. Root gates and catalog — recorded after the final doc commit
 
-See the post-integration handoff for the exact-HEAD gate receipts and hosted-CI status; the
-mathematical memory catalog is regenerated **after** every doc (including this receipt and the
-handoff) per the Main XIV lesson, then `--check` must exit 0 against a clean-tree rebuild.
+The mathematical memory catalog is regenerated **after** every doc (including this receipt and the
+handoff) per the Main XIV lesson; `build_math_memory.py --check` exits 0.
+
+**The single root-suite error is a pre-existing environment artifact, not an integration
+regression — reproduced on pristine `origin/main`.** `tests/test_eodcs_meta_choice_descent.py`
+(and `scripts/meta_choice_descent_probe.py`) are **unchanged** by this integration. The test
+spawns `python scripts/meta_choice_descent_probe.py`; run that way, `sys.path[0]` is `scripts/`,
+not the repo root, so the subprocess raises `ModuleNotFoundError: No module named
+'observational_succ'`. It fails identically in a throwaway worktree checked out at pristine
+`origin/main` (`ac7303b2`), and with the repo root importable (`PYTHONPATH=<repo>`, exactly what
+CI's `pip install -e '.[test]'` provides) the probe exits 0 with its expected receipt
+(`EXACT_FINITE_SOURCE_CONTRACT_NOT_GLOBAL_THEOREM`, `source_provenance_authenticated: false`) and
+the module passes 11/11. The hosted CI matrix on the exact merged HEAD is the authoritative
+full-suite gate.
+
+Hosted-CI status at the exact proposed integration commit is recorded on the draft PR after push.
 
 ## 7. Mathematical status (unchanged; no promotion)
 
