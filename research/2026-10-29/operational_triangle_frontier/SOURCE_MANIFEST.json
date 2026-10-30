@@ -1,0 +1,28 @@
+{
+  "branch": "research/operational-triangle-kernel-tomography-2026-10-29",
+  "date": "2026-10-29",
+  "files": {
+    "CLAIMS.md": "b3f3e65ea1b1cd0f5bae9a313c67debcca68080de3c30a4c9d8bdea639aa2cad",
+    "INTEGRATION_HANDOFF.md": "462318828bcd1687c40ae9b0d60a12bdddbaf0bdf76d2e8d1c65a1a131528d10",
+    "ORIGINAL_TRIANGLE_PROVENANCE.md": "79659e1074495f5eea3c765f03a2bbc33783e79324d9ff8670f796350b1ada9d",
+    "README.md": "f4d05324cd31b27ac6586c6e90ffc311f5e06c89c8d43420346734cbb48cfbd0",
+    "THEOREMS.md": "44e147a5b857738e88f2ab66e0702f59cdd588db4c2f3d185e208395d039106a",
+    "VALIDATION.md": "82482b62cd41a781dc3381ec6624c1f8e925f4a5294cc3d6cce21950fc6dfa86",
+    "focused_tests.log": "d879d767b4416f8f21dba3c36f5b35a8808c99bd010ca338806ba379f7ad5437",
+    "independent_oracle.py": "778bba55fae0f5a47a1e5de05be0cb4808f15232d85bc1c811ecd823a601ad9f",
+    "operational_triangle.py": "8b8be12cdbde8d3ae3fc17c4776aac3378dc44d2daa4dc6da64865f1194c809b",
+    "oracle_output.json": "baebef6e5f21bea66ef27f059f839606436253927f0b6c705445584e0dd2ae4e",
+    "test_operational_triangle.py": "6598681fc44ca125b8750f0b08705481668448f041ce6cd82aaee85c75f7103a"
+  },
+  "focused_test_methods_passed": 10,
+  "hosted_ci": "UNVERIFIED",
+  "independent_numerical_cases": 18,
+  "lean": "UNRUN",
+  "main_observed": "ac7303b2e0e2ec16e3b1d88d186324e1fae65ea5",
+  "note": "File hashes computed from locally executed source and readme before GitHub upload. Manifest itself excluded to prevent self-hash cycle.",
+  "parent_commit": "9c85894428e4ca1f8609d9ea1a79af1f51f1551f",
+  "parent_pr": 386,
+  "python": "3.13.5",
+  "research_program": "SUCC Operation Triangle Genesis",
+  "root_succ_suite": "UNRUN"
+}

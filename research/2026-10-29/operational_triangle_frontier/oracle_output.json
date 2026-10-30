@@ -1,0 +1,106 @@
+{
+  "symbolic": "joint polynomial, density-vs-binomial decomposition, z=0 jet, harmonic source defect PASS",
+  "numerical": "3 (z,t) points x 3 native clocks x 2 sources; high precision, non-interval",
+  "n_cases": 9,
+  "cases": [
+    {
+      "n": 20,
+      "z": "0",
+      "t": "0",
+      "first_jet": "-0.1572916666666666666666667",
+      "fake_first_jet": "-0.21875",
+      "scaled_error_original": "-0.0019358003465977570389",
+      "scaled_error_fake": "-0.0023913814573997897294",
+      "source_defect_inferred": "0.0619139144441353660238204",
+      "source_defect_predicted": "0.0614583333333333333333333"
+    },
+    {
+      "n": 40,
+      "z": "0",
+      "t": "0",
+      "first_jet": "-0.1572916666666666666666667",
+      "fake_first_jet": "-0.21875",
+      "scaled_error_original": "-0.00096150175620555109596",
+      "scaled_error_fake": "-0.0011961427690802592534",
+      "source_defect_inferred": "0.0616929743462080414908056",
+      "source_defect_predicted": "0.0614583333333333333333333"
+    },
+    {
+      "n": 80,
+      "z": "0",
+      "t": "0",
+      "first_jet": "-0.1572916666666666666666667",
+      "fake_first_jet": "-0.21875",
+      "scaled_error_original": "-0.00047916693547570613527",
+      "scaled_error_fake": "-0.00059812644512995447783",
+      "source_defect_inferred": "0.0615772928429875816758885",
+      "source_defect_predicted": "0.0614583333333333333333333"
+    },
+    {
+      "n": 20,
+      "z": "0.5",
+      "t": "0.5",
+      "first_jet": "-0.001041666666666666666666667",
+      "fake_first_jet": "-0.0625",
+      "scaled_error_original": "0.0010132869494360796069",
+      "scaled_error_fake": "-0.00015499920052723271964",
+      "source_defect_inferred": "0.0626266194832966456598863",
+      "source_defect_predicted": "0.0614583333333333333333333"
+    },
+    {
+      "n": 40,
+      "z": "0.5",
+      "t": "0.5",
+      "first_jet": "-0.001041666666666666666666667",
+      "fake_first_jet": "-0.0625",
+      "scaled_error_original": "0.00048968713810733666468",
+      "scaled_error_fake": "-0.000091040418680051107786",
+      "source_defect_inferred": "0.0620390608901207211057946",
+      "source_defect_predicted": "0.0614583333333333333333333"
+    },
+    {
+      "n": 80,
+      "z": "0.5",
+      "t": "0.5",
+      "first_jet": "-0.001041666666666666666666667",
+      "fake_first_jet": "-0.0625",
+      "scaled_error_original": "0.0002407387091684290658",
+      "scaled_error_fake": "-0.000048750187667927309237",
+      "source_defect_inferred": "0.0617478222301696897083691",
+      "source_defect_predicted": "0.0614583333333333333333333"
+    },
+    {
+      "n": 20,
+      "z": "0.75",
+      "t": "1.0",
+      "first_jet": "0.03749428440786465477823503",
+      "fake_first_jet": "-0.01646090534979423868312757",
+      "scaled_error_original": "0.0014488975058038949067",
+      "scaled_error_fake": "-0.000017556950592264617469",
+      "source_defect_inferred": "0.0554216442140550529855784",
+      "source_defect_predicted": "0.0539551897576588934613626"
+    },
+    {
+      "n": 40,
+      "z": "0.75",
+      "t": "1.0",
+      "first_jet": "0.03749428440786465477823503",
+      "fake_first_jet": "-0.01646090534979423868312757",
+      "scaled_error_original": "0.0007113685319959169801",
+      "scaled_error_fake": "-0.00001158884171883217879",
+      "source_defect_inferred": "0.0546781471313736426202497",
+      "source_defect_predicted": "0.0539551897576588934613626"
+    },
+    {
+      "n": 80,
+      "z": "0.75",
+      "t": "1.0",
+      "first_jet": "0.03749428440786465477823503",
+      "fake_first_jet": "-0.01646090534979423868312757",
+      "scaled_error_original": "0.00035249183892311230424",
+      "scaled_error_fake": "-6.4762709930757855451e-6",
+      "source_defect_inferred": "0.0543141578675750815511457",
+      "source_defect_predicted": "0.0539551897576588934613626"
+    }
+  ]
+}
