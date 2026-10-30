@@ -1,0 +1,159 @@
+{
+  "authority": "Independent finite exact-recurrence / high-precision oracle; not external peer review",
+  "conductors": {
+    "3": [
+      {
+        "p": 1,
+        "modulus": 3,
+        "period": 1,
+        "cycle_multiplier": 6,
+        "stage_length": 6,
+        "distinct_residues": 1,
+        "fourier_h1_exactly_zero": false
+      },
+      {
+        "p": 2,
+        "modulus": 9,
+        "period": 3,
+        "cycle_multiplier": 6,
+        "stage_length": 18,
+        "distinct_residues": 3,
+        "fourier_h1_exactly_zero": true
+      },
+      {
+        "p": 3,
+        "modulus": 27,
+        "period": 9,
+        "cycle_multiplier": 6,
+        "stage_length": 54,
+        "distinct_residues": 9,
+        "fourier_h1_exactly_zero": true
+      },
+      {
+        "p": 4,
+        "modulus": 81,
+        "period": 27,
+        "cycle_multiplier": 6,
+        "stage_length": 162,
+        "distinct_residues": 27,
+        "fourier_h1_exactly_zero": true
+      },
+      {
+        "p": 5,
+        "modulus": 243,
+        "period": 81,
+        "cycle_multiplier": 6,
+        "stage_length": 486,
+        "distinct_residues": 81,
+        "fourier_h1_exactly_zero": true
+      },
+      {
+        "p": 6,
+        "modulus": 729,
+        "period": 243,
+        "cycle_multiplier": 6,
+        "stage_length": 1458,
+        "distinct_residues": 243,
+        "fourier_h1_exactly_zero": true
+      }
+    ],
+    "5": [
+      {
+        "p": 1,
+        "modulus": 5,
+        "period": 1,
+        "cycle_multiplier": 20,
+        "stage_length": 20,
+        "distinct_residues": 1,
+        "fourier_h1_exactly_zero": false
+      },
+      {
+        "p": 2,
+        "modulus": 25,
+        "period": 5,
+        "cycle_multiplier": 20,
+        "stage_length": 100,
+        "distinct_residues": 5,
+        "fourier_h1_exactly_zero": true
+      },
+      {
+        "p": 3,
+        "modulus": 125,
+        "period": 25,
+        "cycle_multiplier": 20,
+        "stage_length": 500,
+        "distinct_residues": 25,
+        "fourier_h1_exactly_zero": true
+      },
+      {
+        "p": 4,
+        "modulus": 625,
+        "period": 125,
+        "cycle_multiplier": 20,
+        "stage_length": 2500,
+        "distinct_residues": 125,
+        "fourier_h1_exactly_zero": true
+      }
+    ]
+  },
+  "tail_holdouts": {
+    "3": [
+      {
+        "p": 1,
+        "n": 8,
+        "tail_fraction_size_bits": 81,
+        "tail_over_bound": "0.666666666667"
+      },
+      {
+        "p": 2,
+        "n": 26,
+        "tail_fraction_size_bits": 227,
+        "tail_over_bound": "0.666666666667"
+      },
+      {
+        "p": 3,
+        "n": 80,
+        "tail_fraction_size_bits": 660,
+        "tail_over_bound": "0.666666666667"
+      },
+      {
+        "p": 4,
+        "n": 242,
+        "tail_fraction_size_bits": 1958,
+        "tail_over_bound": "0.666666666667"
+      }
+    ],
+    "5": [
+      {
+        "p": 1,
+        "n": 24,
+        "tail_fraction_size_bits": 411,
+        "tail_over_bound": "0.8"
+      },
+      {
+        "p": 2,
+        "n": 124,
+        "tail_fraction_size_bits": 2014,
+        "tail_over_bound": "0.8"
+      },
+      {
+        "p": 3,
+        "n": 624,
+        "tail_fraction_size_bits": 10016,
+        "tail_over_bound": "0.8"
+      },
+      {
+        "p": 4,
+        "n": 3124,
+        "tail_fraction_size_bits": 50018,
+        "tail_over_bound": "0.8"
+      }
+    ]
+  },
+  "checks": {
+    "modular_cycle": true,
+    "root_of_unity_complex_sum": true,
+    "positive_tail_enclosure": true
+  },
+  "claim_scope": "Normality follows from a separate paper proof of the uniform hotspot bound and invariant absolute-continuity argument."
+}
