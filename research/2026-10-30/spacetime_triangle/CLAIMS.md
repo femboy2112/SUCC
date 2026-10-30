@@ -1,0 +1,14 @@
+# Scoped claim register — ST-01 through ST-05
+
+| ID | Domain, status, meaning | Falsification obligation |
+|---|---|---|
+| ST-01 | Fixed latent `X~mu_1`, all finite Bernoulli histories. **PROVED LOCAL**, exact Pascal measure recurrence, grade Fourier symbol, flat exchangeable path diamonds; `L²(mu_1)` multiplier operator norm 1 (not a spectral gap) | Replace retained field by i.i.d. resets; two orderings in declared exchangeable model must remain equal |
+| ST-02 | Zero-prefix conditional spine: `X|0^(n-1)~mu_(8n-7)`, spine survival `r(n)/R1~225/(3008n²)`, `Gamma(2)` tangent after blowup. **PROVED LOCAL / classical conditioning**; probability of infinite zero path 0 | Move off all-zero spine: a success posterior is not just a pure tilted `mu_a` |
+| ST-02b | Original/fake spine hazards differ by `-59/(120 n²)+O(n^-3)`; Euler spine finite part `log(3008/225)-2gamma`. **PROVED LOCAL** using rational source expansion | Gamma-matched `15x` mutant; n→∞ rational expansion |
+| ST-03 | Native conditional fan exact original-four-pole Pascal polynomial, limit `(2-z)^-2`; parity mode `G(-1)=1/9`. **PROVED LOCAL / classical Gamma–Poisson** | Treat native `a_n` as fixed `a`, expect grade Fourier decay: false |
+| ST-03b | Uniform conditional high-grade occupancy `<=256/81 L²2^-L` for every integer `n>=1, L>=4`. **PROVED LOCAL** from positive source bounds and Chernoff | Test actual grade tails for all `n` and test the inequalities for `n>=L` |
+| ST-04 | One-sided spine time Fourier/Lerch generating function, exact `i C t log(1/|t|)` cusp. **PROVED LOCAL** absolute-convergence/Taylor-splitting proof, finite independent check | Check sign convention `e^{+i(n-1)t}`, coefficient C=225/3008; never evaluate separate Lerch terms at w=1 |
+| ST-04b | General rank-r survival `p_n~Cn^-r` changes temporal Fourier boundary regularity: rank 2 is the logarithmic differentiability threshold; r>2 differentiable, 1<r<2 Holder, r<=1 divergent at zero frequency. **PROVED LOCAL** by splitting harmonic sums | Check Gamma-power positive source `Q=x^(r-1)` and distinguish sufficient upper bounds from sharp asymptotics |
+| ST-05 | A nontrivial source+zero-seed signed time-correlation/selected pi Weyl saving follows from the triangular tiling. **UNVERIFIED / OPEN**; source-only and Fourier transform do not force it | Coherent `s*=-pi/16` counterseed, Gamma-matched, shifted seeds, independent digit controls |
+
+**Never conflate** the positive stochastic auxiliary sensor with the actual selected BBP orbit. Its Gaussian/Gamma/golden, source-59, or time-cusp signatures are not proofs of π normality or RH. This program uses already known probability/Fourier mathematics in a source-faithful arrangement; no external priority claim.
