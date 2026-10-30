@@ -8,11 +8,11 @@ Command:
 
     python /mnt/data/succ_third_dimension/third_dimension_probe.py
 
-**FINAL RUN: 16/16 unittest methods PASS**, 0.036 seconds.
+**FINAL RUN: 17/17 unittest methods PASS**, 0.034 seconds.
 
 Covered original four-pole atom decomposition and moments (15,59,243), finite three-panel rational joint and exact hypergeometric split, third mixed source cumulant first jet, positive exact gain Jacobian, limiting 3D Fisher/H3 metric and fixed-clock S2 rank loss, angular 164/225 source jet, Oily fixed-clock and three-full-panel passports, selected original U0=0 carry marks (kappa3=4,kappa4=3), invertible static 3-axis Fourier no-wave control, stable 3D lattice Fourier dispersion, independent plus/cross transverse traceless tensor slots, Milne 3+1 vacuum Hamiltonian null control and exact 3-axis source-defect pulse spreading.
 
-**Reproducible tested byte identity:** the final local git hash-object of the Python test is 62b4b29b5b16d6ac4c64be0cc2b1f7793650892a. Exact GitHub branch/path fetch returned the SAME Git blob SHA-1 after final source commit. An initial local 12-test version had 11 PASS/1 FAIL because a proposed numerical first-jet convergence tolerance at a=5000 was too tight (error 0.00467 vs threshold 0.003); corrected to an additional a=10000 holdout, maintaining tolerance 0.003. The final executable has 16/16 PASS; no earlier test was conflated with the final bytes.
+**Reproducible tested byte identity:** the final local git hash-object of the Python test is de8c143339f030b1d5ee287de787c83c3c2519d7. Exact GitHub branch/path fetch returned the SAME Git blob SHA-1 after final source commit. An initial local 12-test version had 11 PASS/1 FAIL because a proposed numerical first-jet convergence tolerance at a=5000 was too tight (error 0.00467 vs threshold 0.003); corrected to an additional a=10000 holdout, maintaining tolerance 0.003. The final executable has 17/17 PASS; no earlier test was conflated with the final bytes.
 
 ## Separately implemented symbolic and numerical oracle
 
