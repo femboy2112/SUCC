@@ -1,0 +1,24 @@
+# Local claim ledger: Operation Oily Logarithm
+
+**Statuses:** `CLASSICAL` = previously established mathematics with direct derivation or reference here; `PAPER-PROVED LOCAL` = quantified derivation supplied in RESEARCH.md within its hypotheses; `TESTED FINITE` = executed exact/numerical scope; `REFUTED` = explicit countercontrol; `OPEN` = required arithmetic estimate missing. No new SUCC global FQIDs are declared, no Lean theorem or physical interpretation asserted, no academic-priority claim.
+
+| ID | Quantified statement / type | Status | Evidence and boundary |
+|---|---|---|---|
+| OL-01 | For every a>0 and real t, original four-pole scalar characteristic law admits canonical zero-normalized nonvanishing Lévy log with strictly positive source B(x). | CLASSICAL framework; PAPER-PROVED LOCAL application | RESEARCH §1; source factorization and Frullani; old #367 convolution roots. Positive source, not selected phase. |
+| OL-02 | Fixed-t large-a log phase equals -2 log(1-it) minus the exact 59/(15a) first correction. | PAPER-PROVED LOCAL | RESEARCH §1; B(0), B'(0), dominated Taylor and independent symbolic oracle. |
+| OL-03 | Authentic numerator shifts satisfy alpha*beta=16 and reciprocal logarithmic root geometry centered at 4. | PAPER-PROVED LOCAL | RESEARCH §2, Q(sqrt241) identities. No automatic equivalence to golden Q(sqrt5). |
+| OL-04 | The logarithmic inversion defect D(a) is odd under a↔16/a, monotone, strictly bounded by log(16/15), and has exact hyperbolic artanh form. | PAPER-PROVED LOCAL | RESEARCH §2, explicit rational identity and derivative; independent SymPy checks. Continuous a, **not** a native n↔m symmetry. |
+| OL-05 | There exist native times a_n,a_m with product 16. | REFUTED | Positive integer factors ≡1 mod 8 can only be 1 and 16, contradiction. |
+| OL-06 | Original-source Laplace–Mellin transform unites rank-two Gamma log moment, golden Laplace probe and 59 finite correction. | CLASSICAL transform; PAPER-PROVED LOCAL specialization | RESEARCH §3. Oily scalar Omega_a remains seed-blind. |
+| OL-07 | Opposing source/seed wave amplitudes multiply to H_a(t)*neutral amplitude squared; quotient exactly separates source tilt and seed offset. | PAPER-PROVED LOCAL | RESEARCH §4; all a>t>=0, x>0, n>=1, any central seed. Common mode unproved. |
+| OL-08 | The principal-phase branch produces literal integer carries for authentic rational BBP forcing. | PAPER-PROVED LOCAL | RESEARCH §5; exact fraction tests and independent carry holdouts. Branch jumps not visible in e(integer*carry). |
+| OL-09 | Logarithmically integrating symmetric seed displacements yields gamma and ±pi/2 after subtracting n log 16. | CLASSICAL Si/Ci; PAPER-PROVED LOCAL specialization | RESEARCH §5; explicit remainder at full integer cycles; **source- and seed-blind no-go**. |
+| OL-10 | Symmetric seed observers' branch disagreement is in {-1,0,1} with exact law determined by selected fractional phase. | PAPER-PROVED LOCAL | RESEARCH §6; Haar perturbation orientation; exact independent 32x32 interval grid. These two counterfactual seeds are coupled, not independent. |
+| OL-11 | q=3 branch character maps the selected phase injectively to two sides of an equilateral triangle with exact inverse; q=2 loses orientation. | PAPER-PROVED LOCAL | RESEARCH §6; exact Q(sqrt3) law; no empirical-time estimate. |
+| OL-12 | For coherent same-source counterseed s*=-pi/16, q3 branch character tends to omega-bar at O(1/n^2). | PAPER-PROVED LOCAL | RESEARCH §6 and parent tail bound; rejects false “all opposition scores vanish” extrapolation. |
+| OL-13 | Signed source-conditioned log generator is zero-free uniformly for |eta|<log2 and its mixed derivative equals actual BBP-phase covariance. | PAPER-PROVED LOCAL | RESEARCH §7; |M|<=1, analytic log and differentiation under integral. Does not imply signed cancellation. |
+| OL-14 | Original zero-seeded BBP π phases have o(N) Fourier sums. | OPEN | Original pi normality problem, not solved by any source-only, seed-smearing or invertible branch observable. |
+| OL-15 | Correct full SUCC root suite / Lean / hosted exact new-head passes. | UNVERIFIED until observed | Standalone new proof tests recorded in VALIDATION.md, root full checkout unavailable here. |
+| OL-16 | Any of these analytic similarities entails literal physical 45° rotation / real semantic observer processes. | HYPOTHESIS, NOT CLAIMED | No physical derivation or calibration. |
+
+**Next falsifier:** acquire a noncircular original-source, U0=0-specific bound on common-mode **signed carry correlations**, retaining q=3 orientation and full mod16 carry; reject the coherent counterseed, fake Gamma source, wrong-pole mutant and uniform-seed Haar replacement. If it only proves a source identity or an invertible transform, label it representation, not normality progress.

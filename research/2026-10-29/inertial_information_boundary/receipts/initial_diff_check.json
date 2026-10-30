@@ -1,0 +1,11 @@
+{
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "returncode": 2,
+  "output": "research/2026-10-29/inertial_information_boundary/OBSERVATION_QUOTIENT_AND_CONTROLS.md:500: new blank line at EOF.\nresearch/2026-10-29/inertial_information_boundary/README.md:3: trailing whitespace.\n+**Date:** 2026-10-29 (America/New_York).  \nresearch/2026-10-29/inertial_information_boundary/README.md:5: trailing whitespace.\n+`b6a3815ceb505de0b1f570eae3ff5be75cdbe99c`.  \nresearch/2026-10-29/inertial_information_boundary/README.md:6: trailing whitespace.\n+**Branch:** `research/inertial-information-boundary-2026-10-29`.  \nresearch/2026-10-29/inertial_information_boundary/VALIDATION.md:3: trailing whitespace.\n+**Date:** 2026-10-29 (America/New_York).  \nresearch/2026-10-29/inertial_information_boundary/VALIDATION.md:4: trailing whitespace.\n+**Parent commit:** `b6a3815ceb505de0b1f570eae3ff5be75cdbe99c`.  \n",
+  "resolution": "normalize new Markdown trailing whitespace and extra final blank line"
+}

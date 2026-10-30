@@ -1,0 +1,15 @@
+# Oily Logarithm — counterexamples and falsification receipts
+
+All controls are mathematics/probe hypotheses; no assertion that they alter the original SUCC archive.
+
+1. **Source replacing four poles by the leading Gamma kernel:** `Q_fake(x)=15x`, `R_fake(a)=15/a²`. Its scaled characteristic function is exactly `(1-it)^(-2)` for every finite positive a. It supplies the 90-degree Gamma phase but **loses** the authentic finite source correction `59(1-i)/(30a)` in the logarithm, and lacks original four-pole reciprocal-root geometry.
+2. **Inversion alone cannot identify BBP source time:** `a_n=8n-7` are odd positive integers congruent 1 mod 8. No pair has product 16. The source's `a↔16/a` log symmetry is not a native discrete time reversal, so does not force actual digit relations.
+3. **Unforced source-log observables are seed-blind:** the positive carrier `R`, its Lévy log and its `a↔16/a` twist are identical under the same source with `U_0=0` and `U_0=-pi/16`. The latter selected orbit satisfies `U_n=-T_n ->0` and its fixed-frequency Weyl mean tends to one.
+4. **Uniform seed-displacement gamma/quarter-turn is universal:** `int_0^1 (1-exp(2pi i h 16^n delta))/delta ddelta` depends neither on original forcing nor on midpoint seed, yet contains `gamma` and `pi/2` finite parts. Neither ingredient is by itself a source/carry cancellation theorem.
+5. **Mod-two vs mod-three orientation:** under a uniform pair-seed perturbation, the signed branch variable J has values ±1,0. For central fractional phases `x=1/4` and `x=3/4`, `E[(-1)^J]` is identical, while `E[exp(2pi i J/3)]` is conjugated and distinct. Thus a prime-two-only observation cannot reconstruct x from this instrument.
+6. **Third-root tomography is invertible, not cancellation:** `Im B_(n,3)=sqrt(3)*(1-2x_n)/2` reconstructs the selected `x_n` exactly; its empirical distribution is therefore an equivalent statement of the original Weyl problem. The coherent counterseed moves B to omega-bar rather than to a uniform edge law.
+7. **Ordinary phase exponentiation annihilates integer carry:** `exp(-2pi i h k_n)=1` for all integer h and literal integer carries k_n. To retain carry information, keep its integer/mod-q label in a joint observable, not the original phase alone.
+8. **An analytic cumulant log can exist without signed cancellation:** the bounded sensor variable M has a root-free log generating function for `|eta|<log 2`, even for constant phases. Its source derivative can vanish identically while the signed mean is identically one.
+9. **Distinct arithmetic quadratic fields:** the authentic reciprocal numerator root parameter lies in `Q(sqrt(241))\Q`, whereas the two-stage golden marker powers lie in `Q(sqrt5)\Q`. Their nonzero positive powers cannot be equal by a quadratic-field coincidence. Any golden connection must use a separately derived map, not an identification of root labels.
+
+**Mandatory next test:** a proposed original-zero-seeded *signed common-mode carry* bound must reject 1,3,4,6,7 and 8 in their appropriate domains. Passing finite numerical experiments is not enough to prove a global `o(N)` statement.

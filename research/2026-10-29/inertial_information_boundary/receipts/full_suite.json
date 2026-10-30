@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "PYTHONPATH": "/tmp/succ_triangle_deps:/workspace/scratch/71487df90f02/SUCC",
+  "returncode": 0,
+  "seconds": 950.662,
+  "log": "/tmp/succ_inertial_validation/full_suite.log"
+}

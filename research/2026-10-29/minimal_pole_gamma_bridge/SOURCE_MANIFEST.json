@@ -1,0 +1,120 @@
+{
+  "UTC_build_date": "2026-10-30",
+  "author_local_date": "2026-10-29 America/New_York",
+  "environment": {
+    "mpmath": "1.3.0",
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "files": {
+    "CLAIMS.md": {
+      "bytes": 4539,
+      "sha256": "5ff26d630ca1af2e9f67dfcd68c5b00c4a5ef1020912fa74099d6e11bc37b10c"
+    },
+    "NEGATIVE_CONTROLS.md": {
+      "bytes": 3950,
+      "sha256": "f51d740e31d2db3e65eaf64ffc5c42bdfc590ee87943df569fc00e6d9ab2f0a0"
+    },
+    "NEXT.md": {
+      "bytes": 4009,
+      "sha256": "5f367fe08c3004f9f98934753669a78462c7dbbacab351e7c50bfeed46835152"
+    },
+    "README.md": {
+      "bytes": 3693,
+      "sha256": "845f486113e133d3a35c20aa7aa8f6219502b887bdd5d017a8177770c8ff0942"
+    },
+    "RESEARCH.md": {
+      "bytes": 17906,
+      "sha256": "885d8fa08795ba90ec46be063be5d8935ae5f9ebbf3e422fc13958b799cc8f2c"
+    },
+    "VALIDATION.md": {
+      "bytes": 5995,
+      "sha256": "324e24c09302be6803f6e785409b753c624f8c12dcf8545df9259fda2e8f022e"
+    },
+    "certified_interval.py": {
+      "bytes": 1754,
+      "sha256": "b2ea5b4f640c3d4f659aeced8eb90fd38114f9ea1ac9548b49fd5a3c2e9a6813"
+    },
+    "fermat_unit_bridge.py": {
+      "bytes": 3848,
+      "sha256": "92d99e2d13cddfeb163395bcdae2898e616f4fac8d4a09f4e16b4108be45e25b"
+    },
+    "independent_oracle.py": {
+      "bytes": 4424,
+      "sha256": "c2eb3298f70948af0aab08e0e372f86ee5e0c4c02f448c39f25a02f26ab516e9"
+    },
+    "minimal_pole_gamma.py": {
+      "bytes": 5417,
+      "sha256": "99ab1da2e914440f6310a83d918534de839f686cb84b17cbf909d7246f2218e5"
+    },
+    "numerical_holdouts.py": {
+      "bytes": 2362,
+      "sha256": "1cf23736131825c7db26b1ca015a2d89f3d93c59b7cf9cdfc2d877f8bb4ccf3f"
+    },
+    "receipts/INITIAL_HARNESS_CORRECTION.md": {
+      "bytes": 1290,
+      "sha256": "6e6edfe4cec4071f254c6be23514885c40d028a578c3de03a1771b62c99ecb4c"
+    },
+    "receipts/K_H_CERTIFICATE.json": {
+      "bytes": 16727,
+      "sha256": "4c44b69b3e84a1c2aec0f94d21b35c4324beaec76c96f0cb8dfe1522a7e0589a"
+    },
+    "receipts/all_focused_tests.log": {
+      "bytes": 3233,
+      "sha256": "b78f1ce1c93342261f51f3f505409c8b9da8aff69371b3368235a7d866cec97d"
+    },
+    "receipts/certificate_stdout.log": {
+      "bytes": 167,
+      "sha256": "557a2c08359f3de47d34bcdfb6b61cd8ad6c272332df8b906c000295985d78e7"
+    },
+    "receipts/fermat_unit.log": {
+      "bytes": 61,
+      "sha256": "bb85060bcf166978f1e8c85e2ace37540ea3abdcc7498c8435de7406fd988f51"
+    },
+    "receipts/focused_tests.log": {
+      "bytes": 1975,
+      "sha256": "a041f19e916a1e0375ceaff17d50219aa3e16fbc01102e7f67097f0bf617e39e"
+    },
+    "receipts/independent_oracle.log": {
+      "bytes": 45,
+      "sha256": "ef05be03351f5dcb5ca96586d1055d94cd39f2b98deec3cc8d5a970f252fb7b0"
+    },
+    "receipts/minimal_source.log": {
+      "bytes": 61,
+      "sha256": "9033ac8071b863154248a9f6d1d4cf802d5527269ae9691d37d56fd97b9ffdda"
+    },
+    "receipts/numerical_holdouts.log": {
+      "bytes": 1216,
+      "sha256": "c5c0bcfad59499e28996740f765e367185533481b19f3626545a7d01afbb5347"
+    },
+    "test_fermat_unit_bridge.py": {
+      "bytes": 4354,
+      "sha256": "870f4ad6d75bb8bf8623d37d6b44807647090622075edba5b87a1f4f6e1dc7a5"
+    },
+    "test_minimal_pole_gamma.py": {
+      "bytes": 7499,
+      "sha256": "b75393ce8d970893132b5714d70946727be68de9a63ec9de935953683b6c5f85"
+    }
+  },
+  "parent_branch": "research/oily-logarithm-levy-carry-2026-10-29",
+  "parent_commit": "e02933591e7b7486376acb9847e00fd01d9ae498",
+  "parent_source_blob_pins": {
+    "AGENTS.md": "2c04a24744366d5659f347caeb874a3613f893c9",
+    "observational_succ/oily_macaroni_totient.py": "ed959983e4ab1ca874703826207f77efe8acd55d",
+    "research/2026-10-29/oily_logarithm/RESEARCH.md": "3ea5c908500289dfc067b655f22ffc3c62ec4c2a",
+    "research/2026-10-29/oily_logarithm/oily_logarithm.py": "cf0bb8e47043662c6a77a197d05b3ce06af1edcc",
+    "research/2026-10-29/opposing_bbp_observers/RESEARCH.md": "83e07bd1a926134040449fd1e29895838da4ca30",
+    "research/2026-10-29/recursive_carrier_triangle/ATOMIC_SOURCE_AND_INTERACTIONS.md": "3d946c186b07a14d352912a6b18bfef48c0e8027"
+  },
+  "repository": "femboy2112/SUCC",
+  "status": "research-only, exact tested local SHA256 pins, original BBP and U0=0 retained",
+  "validation": {
+    "finite_interval": "exact Fraction/positive atanh remainder/all-index tail PASS",
+    "focused_unittest_methods": "24/24 PASS",
+    "independent_sympy_fraction_assertions": "904 PASS",
+    "lean": "not run for new research",
+    "mpmath_90dps_holdouts": "22 PASS",
+    "pi_base16_normality": "OPEN",
+    "root_suite": "not locally run: repository git DNS unavailable"
+  }
+}
