@@ -1,0 +1,552 @@
+{
+  "status": "PASS_FINITE_EXACT",
+  "source": "combined original r(n), zero seed",
+  "imports_from_other_campaign_implementations": false,
+  "clock_and_lift_cases": 45,
+  "rows": [
+    {
+      "p": 7,
+      "a": 2,
+      "k": 1,
+      "N": 37,
+      "residue": 5,
+      "lift_mod_p2": 47
+    },
+    {
+      "p": 11,
+      "a": 1,
+      "k": 1,
+      "N": 10,
+      "residue": 2,
+      "lift_mod_p2": 68
+    },
+    {
+      "p": 11,
+      "a": 2,
+      "k": 1,
+      "N": 91,
+      "residue": 9,
+      "lift_mod_p2": 108
+    },
+    {
+      "p": 13,
+      "a": 1,
+      "k": 1,
+      "N": 10,
+      "residue": 4,
+      "lift_mod_p2": 147
+    },
+    {
+      "p": 13,
+      "a": 2,
+      "k": 1,
+      "N": 127,
+      "residue": 4,
+      "lift_mod_p2": 147
+    },
+    {
+      "p": 17,
+      "a": 1,
+      "k": 1,
+      "N": 13,
+      "residue": 2,
+      "lift_mod_p2": 274
+    },
+    {
+      "p": 17,
+      "a": 1,
+      "k": 2,
+      "N": 30,
+      "residue": 5,
+      "lift_mod_p2": 141
+    },
+    {
+      "p": 17,
+      "a": 2,
+      "k": 1,
+      "N": 217,
+      "residue": 2,
+      "lift_mod_p2": 274
+    },
+    {
+      "p": 17,
+      "a": 2,
+      "k": 2,
+      "N": 506,
+      "residue": 5,
+      "lift_mod_p2": 141
+    },
+    {
+      "p": 19,
+      "a": 1,
+      "k": 1,
+      "N": 17,
+      "residue": 8,
+      "lift_mod_p2": 8
+    },
+    {
+      "p": 19,
+      "a": 1,
+      "k": 2,
+      "N": 36,
+      "residue": 0,
+      "lift_mod_p2": 95
+    },
+    {
+      "p": 19,
+      "a": 2,
+      "k": 1,
+      "N": 271,
+      "residue": 12,
+      "lift_mod_p2": 50
+    },
+    {
+      "p": 19,
+      "a": 2,
+      "k": 2,
+      "N": 632,
+      "residue": 17,
+      "lift_mod_p2": 17
+    },
+    {
+      "p": 23,
+      "a": 1,
+      "k": 1,
+      "N": 21,
+      "residue": 7,
+      "lift_mod_p2": 352
+    },
+    {
+      "p": 23,
+      "a": 1,
+      "k": 2,
+      "N": 44,
+      "residue": 14,
+      "lift_mod_p2": 175
+    },
+    {
+      "p": 23,
+      "a": 2,
+      "k": 1,
+      "N": 397,
+      "residue": 20,
+      "lift_mod_p2": 365
+    },
+    {
+      "p": 23,
+      "a": 2,
+      "k": 2,
+      "N": 926,
+      "residue": 22,
+      "lift_mod_p2": 275
+    },
+    {
+      "p": 23,
+      "a": 2,
+      "k": 3,
+      "N": 1455,
+      "residue": 20,
+      "lift_mod_p2": 135
+    },
+    {
+      "p": 29,
+      "a": 1,
+      "k": 1,
+      "N": 22,
+      "residue": 7,
+      "lift_mod_p2": 94
+    },
+    {
+      "p": 29,
+      "a": 1,
+      "k": 2,
+      "N": 51,
+      "residue": 7,
+      "lift_mod_p2": 413
+    },
+    {
+      "p": 29,
+      "a": 1,
+      "k": 3,
+      "N": 80,
+      "residue": 19,
+      "lift_mod_p2": 251
+    },
+    {
+      "p": 29,
+      "a": 2,
+      "k": 1,
+      "N": 631,
+      "residue": 7,
+      "lift_mod_p2": 94
+    },
+    {
+      "p": 29,
+      "a": 2,
+      "k": 2,
+      "N": 1472,
+      "residue": 7,
+      "lift_mod_p2": 413
+    },
+    {
+      "p": 29,
+      "a": 2,
+      "k": 3,
+      "N": 2313,
+      "residue": 19,
+      "lift_mod_p2": 251
+    },
+    {
+      "p": 31,
+      "a": 1,
+      "k": 1,
+      "N": 28,
+      "residue": 21,
+      "lift_mod_p2": 424
+    },
+    {
+      "p": 31,
+      "a": 1,
+      "k": 2,
+      "N": 59,
+      "residue": 6,
+      "lift_mod_p2": 843
+    },
+    {
+      "p": 31,
+      "a": 1,
+      "k": 3,
+      "N": 90,
+      "residue": 14,
+      "lift_mod_p2": 169
+    },
+    {
+      "p": 31,
+      "a": 2,
+      "k": 1,
+      "N": 721,
+      "residue": 30,
+      "lift_mod_p2": 371
+    },
+    {
+      "p": 31,
+      "a": 2,
+      "k": 2,
+      "N": 1682,
+      "residue": 16,
+      "lift_mod_p2": 760
+    },
+    {
+      "p": 43,
+      "a": 1,
+      "k": 1,
+      "N": 38,
+      "residue": 41,
+      "lift_mod_p2": 385
+    },
+    {
+      "p": 43,
+      "a": 1,
+      "k": 2,
+      "N": 81,
+      "residue": 8,
+      "lift_mod_p2": 1341
+    },
+    {
+      "p": 43,
+      "a": 1,
+      "k": 3,
+      "N": 124,
+      "residue": 27,
+      "lift_mod_p2": 27
+    },
+    {
+      "p": 43,
+      "a": 2,
+      "k": 1,
+      "N": 1387,
+      "residue": 6,
+      "lift_mod_p2": 1339
+    },
+    {
+      "p": 47,
+      "a": 1,
+      "k": 1,
+      "N": 42,
+      "residue": 20,
+      "lift_mod_p2": 2088
+    },
+    {
+      "p": 47,
+      "a": 1,
+      "k": 2,
+      "N": 89,
+      "residue": 30,
+      "lift_mod_p2": 171
+    },
+    {
+      "p": 47,
+      "a": 1,
+      "k": 3,
+      "N": 136,
+      "residue": 27,
+      "lift_mod_p2": 74
+    },
+    {
+      "p": 47,
+      "a": 2,
+      "k": 1,
+      "N": 1657,
+      "residue": 0,
+      "lift_mod_p2": 2068
+    },
+    {
+      "p": 59,
+      "a": 1,
+      "k": 1,
+      "N": 52,
+      "residue": 9,
+      "lift_mod_p2": 776
+    },
+    {
+      "p": 59,
+      "a": 1,
+      "k": 2,
+      "N": 111,
+      "residue": 26,
+      "lift_mod_p2": 2268
+    },
+    {
+      "p": 59,
+      "a": 1,
+      "k": 3,
+      "N": 170,
+      "residue": 57,
+      "lift_mod_p2": 2358
+    },
+    {
+      "p": 67,
+      "a": 1,
+      "k": 1,
+      "N": 59,
+      "residue": 3,
+      "lift_mod_p2": 807
+    },
+    {
+      "p": 67,
+      "a": 1,
+      "k": 2,
+      "N": 126,
+      "residue": 34,
+      "lift_mod_p2": 2848
+    },
+    {
+      "p": 67,
+      "a": 1,
+      "k": 3,
+      "N": 193,
+      "residue": 32,
+      "lift_mod_p2": 1640
+    },
+    {
+      "p": 11,
+      "a": 3,
+      "k": 1,
+      "N": 1165,
+      "residue": 2,
+      "lift_mod_p2": 79
+    },
+    {
+      "p": 13,
+      "a": 3,
+      "k": 1,
+      "N": 1648,
+      "residue": 4,
+      "lift_mod_p2": 147
+    }
+  ],
+  "births": [
+    {
+      "p": 3,
+      "a": 1,
+      "n": 1,
+      "valuation": -1
+    },
+    {
+      "p": 3,
+      "a": 2,
+      "n": 2,
+      "valuation": -2
+    },
+    {
+      "p": 3,
+      "a": 3,
+      "n": 7,
+      "valuation": -3
+    },
+    {
+      "p": 3,
+      "a": 4,
+      "n": 11,
+      "valuation": -4
+    },
+    {
+      "p": 5,
+      "a": 1,
+      "n": 1,
+      "valuation": -1
+    },
+    {
+      "p": 5,
+      "a": 2,
+      "n": 4,
+      "valuation": -2
+    },
+    {
+      "p": 5,
+      "a": 3,
+      "n": 16,
+      "valuation": -3
+    },
+    {
+      "p": 5,
+      "a": 4,
+      "n": 79,
+      "valuation": -4
+    },
+    {
+      "p": 7,
+      "a": 1,
+      "n": 2,
+      "valuation": -1
+    },
+    {
+      "p": 7,
+      "a": 2,
+      "n": 7,
+      "valuation": -2
+    },
+    {
+      "p": 7,
+      "a": 3,
+      "n": 86,
+      "valuation": -3
+    },
+    {
+      "p": 7,
+      "a": 4,
+      "n": 301,
+      "valuation": -4
+    },
+    {
+      "p": 11,
+      "a": 1,
+      "n": 3,
+      "valuation": -1
+    },
+    {
+      "p": 11,
+      "a": 2,
+      "n": 16,
+      "valuation": -2
+    },
+    {
+      "p": 11,
+      "a": 3,
+      "n": 333,
+      "valuation": -3
+    },
+    {
+      "p": 11,
+      "a": 4,
+      "n": 1831,
+      "valuation": -4
+    },
+    {
+      "p": 13,
+      "a": 1,
+      "n": 2,
+      "valuation": -1
+    },
+    {
+      "p": 13,
+      "a": 2,
+      "n": 22,
+      "valuation": -2
+    },
+    {
+      "p": 13,
+      "a": 3,
+      "n": 275,
+      "valuation": -3
+    },
+    {
+      "p": 19,
+      "a": 1,
+      "n": 5,
+      "valuation": -1
+    },
+    {
+      "p": 19,
+      "a": 2,
+      "n": 46,
+      "valuation": -2
+    },
+    {
+      "p": 19,
+      "a": 3,
+      "n": 1715,
+      "valuation": -3
+    }
+  ],
+  "translated_grid_cases": [
+    {
+      "n": 3,
+      "primes": 3,
+      "product_bits": 12,
+      "adjacent_difference_denominator_bits": 26
+    },
+    {
+      "n": 7,
+      "primes": 5,
+      "product_bits": 25,
+      "adjacent_difference_denominator_bits": 64
+    },
+    {
+      "n": 13,
+      "primes": 10,
+      "product_bits": 58,
+      "adjacent_difference_denominator_bits": 96
+    },
+    {
+      "n": 37,
+      "primes": 24,
+      "product_bits": 176,
+      "adjacent_difference_denominator_bits": 314
+    },
+    {
+      "n": 101,
+      "primes": 55,
+      "product_bits": 484,
+      "adjacent_difference_denominator_bits": 857
+    },
+    {
+      "n": 257,
+      "primes": 128,
+      "product_bits": 1293,
+      "adjacent_difference_denominator_bits": 2185
+    },
+    {
+      "n": 509,
+      "primes": 240,
+      "product_bits": 2662,
+      "adjacent_difference_denominator_bits": 4407
+    }
+  ],
+  "negative_controls": [
+    "p13 naive lift discrepancy65",
+    "p19 conductor loss10..16 and return17",
+    "p73k4 cancellation"
+  ],
+  "pi_normality_proved": false
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier/research/2026-10-30/arithmetic_barrier/independent_arithmetic_audit.py", line 120, in <module>
+    main()
+    ~~~~^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier/research/2026-10-30/arithmetic_barrier/independent_arithmetic_audit.py", line 67, in main
+    lhs=reduce(q*values[N],p)
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier/research/2026-10-30/arithmetic_barrier/independent_arithmetic_audit.py", line 30, in reduce
+    return q.numerator*pow(q.denominator,-1,m)%m
+                       ~~~^^^^^^^^^^^^^^^^^^^^
+ValueError: base is not invertible for the given modulus

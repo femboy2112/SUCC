@@ -1,0 +1,206 @@
+{
+  "status": "PASS scoped independent mathematical review; no blocking issue found",
+  "parent_sha": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+  "reviewed_sha256": {
+    "arithmetic/ARITHMETIC_THEOREMS.md": "84de1c135bc01f193d2c3681ef1256fb35115588e4003bd4c08198b864bb608f",
+    "transfer/TRANSFER_DOSSIER.md": "ce12486fe1828e516b9b3f61230698c05f44a6e44114eb256fff701b79425566",
+    "finite_circle.py": "25599ac6986273813b5f2f4ca051400867446f4e7c13e14d036548233cb872ad"
+  },
+  "independent_mod_p2_checks": [
+    {
+      "p": 7,
+      "a": 2,
+      "k": 1,
+      "M": 37,
+      "lhs_mod_p2": 47,
+      "rhs_mod_p2": 47
+    },
+    {
+      "p": 11,
+      "a": 1,
+      "k": 1,
+      "M": 10,
+      "lhs_mod_p2": 68,
+      "rhs_mod_p2": 68
+    },
+    {
+      "p": 11,
+      "a": 2,
+      "k": 1,
+      "M": 91,
+      "lhs_mod_p2": 108,
+      "rhs_mod_p2": 108
+    },
+    {
+      "p": 13,
+      "a": 1,
+      "k": 1,
+      "M": 10,
+      "lhs_mod_p2": 147,
+      "rhs_mod_p2": 147
+    },
+    {
+      "p": 13,
+      "a": 2,
+      "k": 1,
+      "M": 127,
+      "lhs_mod_p2": 147,
+      "rhs_mod_p2": 147
+    },
+    {
+      "p": 17,
+      "a": 1,
+      "k": 1,
+      "M": 13,
+      "lhs_mod_p2": 274,
+      "rhs_mod_p2": 274
+    },
+    {
+      "p": 17,
+      "a": 1,
+      "k": 2,
+      "M": 30,
+      "lhs_mod_p2": 141,
+      "rhs_mod_p2": 141
+    },
+    {
+      "p": 17,
+      "a": 2,
+      "k": 1,
+      "M": 217,
+      "lhs_mod_p2": 274,
+      "rhs_mod_p2": 274
+    },
+    {
+      "p": 17,
+      "a": 2,
+      "k": 2,
+      "M": 506,
+      "lhs_mod_p2": 141,
+      "rhs_mod_p2": 141
+    },
+    {
+      "p": 19,
+      "a": 1,
+      "k": 1,
+      "M": 17,
+      "lhs_mod_p2": 8,
+      "rhs_mod_p2": 8
+    },
+    {
+      "p": 19,
+      "a": 1,
+      "k": 2,
+      "M": 36,
+      "lhs_mod_p2": 95,
+      "rhs_mod_p2": 95
+    },
+    {
+      "p": 19,
+      "a": 2,
+      "k": 1,
+      "M": 271,
+      "lhs_mod_p2": 50,
+      "rhs_mod_p2": 50
+    },
+    {
+      "p": 19,
+      "a": 2,
+      "k": 2,
+      "M": 632,
+      "lhs_mod_p2": 17,
+      "rhs_mod_p2": 17
+    },
+    {
+      "p": 23,
+      "a": 1,
+      "k": 1,
+      "M": 21,
+      "lhs_mod_p2": 352,
+      "rhs_mod_p2": 352
+    },
+    {
+      "p": 23,
+      "a": 1,
+      "k": 2,
+      "M": 44,
+      "lhs_mod_p2": 175,
+      "rhs_mod_p2": 175
+    },
+    {
+      "p": 23,
+      "a": 2,
+      "k": 1,
+      "M": 397,
+      "lhs_mod_p2": 365,
+      "rhs_mod_p2": 365
+    },
+    {
+      "p": 23,
+      "a": 2,
+      "k": 2,
+      "M": 926,
+      "lhs_mod_p2": 275,
+      "rhs_mod_p2": 275
+    },
+    {
+      "p": 23,
+      "a": 2,
+      "k": 3,
+      "M": 1455,
+      "lhs_mod_p2": 135,
+      "rhs_mod_p2": 135
+    },
+    {
+      "p": 29,
+      "a": 1,
+      "k": 1,
+      "M": 22,
+      "lhs_mod_p2": 94,
+      "rhs_mod_p2": 94
+    },
+    {
+      "p": 29,
+      "a": 1,
+      "k": 2,
+      "M": 51,
+      "lhs_mod_p2": 413,
+      "rhs_mod_p2": 413
+    },
+    {
+      "p": 29,
+      "a": 1,
+      "k": 3,
+      "M": 80,
+      "lhs_mod_p2": 251,
+      "rhs_mod_p2": 251
+    },
+    {
+      "p": 29,
+      "a": 2,
+      "k": 1,
+      "M": 631,
+      "lhs_mod_p2": 94,
+      "rhs_mod_p2": 94
+    },
+    {
+      "p": 29,
+      "a": 2,
+      "k": 2,
+      "M": 1472,
+      "lhs_mod_p2": 413,
+      "rhs_mod_p2": 413
+    },
+    {
+      "p": 29,
+      "a": 2,
+      "k": 3,
+      "M": 2313,
+      "lhs_mod_p2": 251,
+      "rhs_mod_p2": 251
+    }
+  ],
+  "root_trig_numerical_cross_checks": 210,
+  "root_trig_mp_digits": 100,
+  "boundary": "Paper derivations in INDEPENDENT_REVIEW.md; finite checks do not establish universal claims; no Lean proof"
+}

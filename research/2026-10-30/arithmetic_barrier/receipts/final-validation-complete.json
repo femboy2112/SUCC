@@ -1,0 +1,20 @@
+{
+  "command": [
+    ".venv/bin/python",
+    "research/2026-10-30/arithmetic_barrier/campaign_manifest.py",
+    "--check"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier",
+  "start_utc": "2026-10-30T16:15:32.254352+00:00",
+  "timeout_seconds": 1800,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "threads": 1,
+  "git_head_at_launch": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.325,
+  "end_utc": "2026-10-30T16:15:32.579525+00:00",
+  "log_sha256": "87b4d0d81c79518863caf2c091e0378aba50a70825c86068c1cc6b70110c3652",
+  "log_bytes": 474
+}
