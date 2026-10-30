@@ -2,7 +2,7 @@
 
 ## Durable corrected framing
 
-The **primitives** are the exact four-pole source and source-relative update law, path-history/posterior algebra, coherent endpoint superposition and explicit observer/selection interface. Harmonic numbers, Euler–Mascheroni, golden `lambda`, Gamma rank and `Omega=lambda-gamma` are derived coordinates/finite parts or marked readouts, not three independent generating vertices. The finite path-sum ↔ point triangle has exact source-shift and harmonic readout identities; keep these as interface contracts.
+The **primitives** are the exact four-pole source and source-relative update law, path-history/posterior algebra, coherent endpoint superposition and explicit observer/selection interface. Harmonic numbers, Euler–Mascheroni, golden `lambda`, Gamma rank and `Omega=lambda-gamma` are derived coordinates/finite parts or marked readouts, not three independent generating vertices. The finite path-sum ↔ point triangle has exact source-shift and harmonic readout identities; the four original BBP 1/8, 4/8, 5/8, 6/8 digamma offsets are an exact second computation, with Euler's reference canceling in each finite difference; keep these as interface contracts.
 
 ## Open signed frontier and discriminating probes
 
