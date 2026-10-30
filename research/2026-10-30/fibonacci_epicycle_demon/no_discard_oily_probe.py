@@ -38,7 +38,7 @@ def z_oily():
 
 
 def log_pole_square(a):
-    a = D(a)
+    a = dfrac(a) if isinstance(a, F) else D(a)
     return -sum((D(c * d) * (a + u + v).ln()
                  for c, u in zip(C, T) for d, v in zip(C, T)), D(0))
 
