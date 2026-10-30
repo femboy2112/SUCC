@@ -7,7 +7,7 @@
 | FFT-2 | `E[H_J]=H_m-R(a)^(-1)Σ_(k=1)^m R(a+8k)/k` | PROVED LOCAL finite; direct paths vs source sum across independent implementations |
 | FFT-2b | Exact four-pole digamma formula with native BBP offsets 1,4,5,6 over 8, and gamma reference canceling in each finite digamma difference | PROVED LOCAL elementary partial fractions; two independent exact Fraction calculations across multiple clocks/depths |
 | FFT-3 | Native diagonal `A_n→1/2+log2`, same Gamma–Poisson joint as the *declared* Pascal observer | CLASSICAL with declared sensor; not Oily independent latent coupling |
-| FFT-4 | Native original `A_n=1/2+log2-49/(320n)+O(n^-2)`; fake `+1/(32n)` | PROVED LOCAL analytic first-jet derivation, independent exact SymPy algebra + numerical scoped holdouts; external proof review/Lean absent |
+| FFT-4 | Native original `A_n=1/2+log2-49/(320n)+O(n^-2)`; fake `+1/(32n)` | PROVED LOCAL analytic first-jet derivation, independent exact SymPy algebra + numerical scoped holdouts; external proof review/Lean absent; an explicit positive extra-pole mutant matches the first jet so this is not a uniqueness theorem |
 | FFT-5 | `lambda` is marked by `G(p)=p`, `gamma` is harmonic finite part, `Omega=lambda-gamma` is `D(2)` | CLASSICAL identities plus source-marking conventions; not independent primitives |
 | FFT-6 | `E[D(J+2)]=1+log2-gamma-(1+2lambda)^(-2)` in Gamma–Poisson joint | PROVED LOCAL direct conditional Gamma computation |
 | FFT-7 | `Xi_(n,h,c)` preserves selected phase and literal carry with source-superposed grades | DEFINED / exact finite identity; no cancellation estimate |
