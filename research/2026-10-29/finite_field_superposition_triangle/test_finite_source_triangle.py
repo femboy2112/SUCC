@@ -4,7 +4,8 @@ from fractions import Fraction
 from math import comb, log
 from finite_source_triangle import (R,r,word_weight,q,next_probabilities,
  triangle_row,shifted_triangle_row,harmonic,harmonic_from_paths,
- harmonic_from_source,bbp_harmonic,gamma_matched_harmonic)
+ harmonic_from_source,bbp_harmonic,gamma_matched_harmonic,
+ bbp_state,fractional,literal_carry,two_step_carry,graded_selected_points)
 
 
 class TriangleExact(unittest.TestCase):
@@ -57,6 +58,21 @@ class TriangleExact(unittest.TestCase):
             a=8*n-7
             self.assertEqual(sum(q(a,n,j) for j in range(n+1)),1)
             self.assertTrue(0<q(a,n,0)<1)
+
+    def test_exact_circle_carry_cocycle_and_selected_sensor(self):
+        for seed in (Fraction(0),Fraction(1,7),Fraction(-1,5),Fraction(13,16)):
+            for n in range(1,18):
+                self.assertEqual(two_step_carry(n,seed),
+                                 16*literal_carry(n,seed)+literal_carry(n+1,seed))
+                x=fractional(bbp_state(n,seed))
+                self.assertTrue(0 <= x < 1)
+            for n in range(1,8):
+                marked=graded_selected_points(n,seed)
+                self.assertEqual(sum(weight for _,weight,_,_ in marked),1)
+                for j,weight,phase,carry in marked:
+                    self.assertEqual(weight,q(8*n-7,n,j))
+                    self.assertEqual(phase,fractional(bbp_state(n+j,seed)))
+                    self.assertEqual(carry,literal_carry(n+j,seed))
 
     def test_finite_first_jet_calibration_only(self):
         target=0.5+log(2)
