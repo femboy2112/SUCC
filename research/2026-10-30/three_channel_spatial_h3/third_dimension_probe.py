@@ -128,6 +128,26 @@ class ThreeSpatialDimensions(unittest.TestCase):
         self.assertEqual(EY2-EY**2,F(2))
         self.assertEqual(EY3-3*EY2*EY+2*EY**3,F(4))
 
+    def test_original_zero_seed_three_time_carry_witness(self):
+        # The authentic signed rational recurrence is kept separate from
+        # the positive three-panel sensor. Three grade-1 paths have the
+        # same total yet distinct intermediate literal carry histories.
+        U=[F(0)]
+        carries=[None]
+        for n in range(1,6):
+            r=R(8*n-7)
+            pre=16*(U[-1]%1)+r
+            carries.append(pre.numerator//pre.denominator)
+            U.append(16*U[-1]+r)
+        self.assertEqual((carries[3],carries[4]),(4,3))
+        n=3
+        paths=((1,0,0),(0,1,0),(0,0,1))
+        marks=set()
+        for j,k,l in paths:
+            self.assertGreater(finite_three_cell(n,j,k,l),0)
+            marks.add((carries[n+j],carries[n+j+k],carries[n+j+k+l]))
+        self.assertEqual(len(marks),3)
+
     def test_3d_fisher_inverse_and_minkowski_pullback(self):
         m=[F(1),F(4),F(9)]
         s=F(2)+sum(m,F(0))
