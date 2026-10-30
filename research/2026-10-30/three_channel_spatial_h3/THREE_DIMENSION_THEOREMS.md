@@ -224,7 +224,7 @@ the Fourier eigenvalue is \(\lambda(\mathbf k)=4\sum_{i=1}^3\sin²(k_i/2)\), and
 \[
 \boxed{\sin²(\omega/2)=c²\sum_{i=1}^3\sin²(k_i/2).}
 \]
-The uniform 3D periodic grid has λ_max≤12, so the ordinary leapfrog scheme is stable under c²≤1/3 (strictly inside avoids edge saturation). This already supports sinusoidal arithmetic lattice modes without claiming physical spin-2 gravity or π digit normality.
+The uniform 3D periodic grid has λ_max≤12, so the ordinary leapfrog scheme is stably oscillatory for nonzero spatial modes when 0<c²<1/3 (at equality the highest-frequency double root can exhibit linearly growing solutions; the zero mode needs its separate constant/linear treatment). This already supports sinusoidal arithmetic lattice modes without claiming physical spin-2 gravity or π digit normality.
 
 A key **3+1 capability absent in 2+1 vacuum GR** is the existence of two linearly independent transverse-traceless tensor wave polarizations. For a wave along the z-direction, the ansatz
 \[
