@@ -100,6 +100,17 @@ Use the **separate actual** signed original recurrence \(U_0=0\), \(U_n=16U_{n-1
 \]
 Thus three-step signed carry/phase annotation strictly refines positive total-grade sufficiency, even for the authentic zero boundary. The test uses exact source rationals, not fitted digits. This is an **observation/representation separation**, not a cancellation or normality proof: an arbitrary selected path could also show differing intermediate carries. Preserve all three carry lifts and time indices under the no-discard axiom.
 
+**Exact original-source third cumulant mechanism.** Put \(b(X)=1-e^{-8X}\) and
+\[
+\mu_k(a)=E_{\mu_a}b(X)^k
+=\frac{\sum_{j=0}^k(-1)^j\binom kj R(a+8j)}{R(a)}.
+\]
+For three conditionally independent n-trial panels, the mixed joint third cumulant is **exactly**
+\[
+\kappa(J_1,J_2,J_3)=n^3[\mu_3-3\mu_2\mu_1+2\mu_1^3].
+\]
+Thus the leading mixed cumulant 4 and its authentic-minus-fake \(-59/(20n)\) jet can both be checked directly from the original rational four-pole source, without fitting a stochastic π-digit law.
+
 ## T3-03. The exact 3D Fisher hyperboloid, and the fixed-budget rank drop
 
 For three independently adjustable positive *observation intensities* θ_i, declare the shared-Y Gamma/Poisson model
