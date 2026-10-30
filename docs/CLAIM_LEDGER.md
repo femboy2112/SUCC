@@ -1164,9 +1164,14 @@ unchanged; nothing here promotes π normality or RH.
 - **TG-06/07/08 — seed-resolved Fourier tomography recovers each `q_j e(hU_(n+j)(s))`; averaging the
   seed displacement vanishes for every seed, including `s*=-pi/16`.** PROVED LOCAL
   representation/observability; **not** a Weyl estimate.
-- **TG-09 — fixed-golden `D_lambda(r)=psi(r)-lambda^r` vs self-consistent
-  `D_self(r,theta)=psi(r)-q_(r,theta)`.** Agree only at `(2,1)`; generic equality UNVERIFIED /
-  generally false. Author provenance (PR #365) preserved.
+- **TG-09/TG-11 — fixed-golden `D_lambda(r)=psi(r)-lambda^r` vs self-consistent
+  `D_self(r,theta)=psi(r)-q_(r,theta)`.** **Golden locus (Operation Main XVI, PROVED):** the two
+  coincide exactly along `theta=lambda/(1-lambda^r)` (equivalently `q_(r,theta)=lambda^r`),
+  supercritical there, Laplace rate `theta(1-q)=lambda` constant — the locus *is* the coincidence
+  set. Restricted uniqueness: on the authentic clock slice `theta=1`, coincidence holds iff `r=2`,
+  so the original `(2,1)` point stays distinguished on its own source/clock slice. This supersedes
+  the earlier "agree only at `(2,1)`". Author provenance (PR #365) preserved. Proof:
+  `research/2026-10-29/triangle_genesis_repair/GOLDEN_LOCUS_THEOREM.md`.
 - **TG-10 — "operational triangle certifies π base-16 normality / RH."** **REFUTED as an
   implication** (coherent same-forcing counterseed + universal seed-smearing zero). π normality
   and RH themselves remain **OPEN**.
@@ -1181,4 +1186,37 @@ unchanged; nothing here promotes π normality or RH.
 source (#370) and the Gamma–Poisson sensor do not establish equal latent couplings; no
 normality-equivalent observable, source-only positivity, entropy formula, Gamma/Gaussian phase
 rotation or invertible signed filter is a proof of π normality. The signed gate
-`forall h!=0: (1/N) sum e(h U_n(0)) = o(N)` remains an **OPEN** unproven cancellation.
+`forall h!=0: T_N(h) = sum_{n<=N} e(h U_n(0)) = o(N)` (equivalently the normalized
+`Sbar_N(h) = T_N(h)/N = o(1)`) remains an **OPEN** unproven cancellation. *(Operation Main XVI
+corrects a Main XV wording slip: the normalized average `Sbar_N = (1/N) sum ...` is `<= 1` in
+modulus, so `Sbar_N = o(N)` is vacuous; the gate is `Sbar_N = o(1)`, i.e. the unnormalized
+`T_N = o(N)`. See `research/2026-10-29/triangle_genesis_repair/WEYL_NORMALIZATION_CONVENTION.md`.)
+
+## Operation Main XVI — Triangle Genesis repair & advance (2026-10-29)
+
+Dossiers: `research/2026-10-29/triangle_genesis_repair/` (`WEYL_NORMALIZATION_CONVENTION.md`,
+`GOLDEN_LOCUS_THEOREM.md`, `SEED_ALIAS_CLASSIFICATION.md`, `golden_locus.py`, `seed_alias.py`,
+`independent_oracle_xvi.py`); regression `tests/test_triangle_genesis_repair.py` (22 tests).
+Research-draft `TG-` namespace; nothing here promotes π normality or RH.
+
+- **P0 — Weyl normalization fixed.** The normality gate is `T_N(h)=o(N)` (unnormalized) ⇔
+  `Sbar_N(h)=o(1)` (normalized); the Main XV `Sbar_N=o(N)` was vacuous. Exact witness: the coherent
+  all-zero orbit passes `Sbar_N=o(N)` yet is nonnormal (and fails `Sbar_N=o(1)`). Valid unnormalized
+  `S_N=o(N)` entries elsewhere in the ledger are unchanged.
+- **TG-11 — golden locus, PROVED.** `q_(r,theta)=lambda^r ⇔ theta=lambda/(1-lambda^r)` (`r>0`),
+  supercritical there; calibration `(1,phi,lambda),(2,1,lambda^2),(3,phi/2,lambda^3)`; Laplace rate
+  `theta(1-q)=lambda` constant on the locus; restricted uniqueness `theta=1 ⇒ r=2`. Supersedes
+  "agree only at `(2,1)`". The original BBP point `(2,1)` is the unique intersection of its
+  authentic clock `{theta=1}` with the locus.
+- **TG-12 — seed-alias dichotomy + corrected control slate, PROVED.** `U_n(s)=U_n(0)+16^n s`; seven
+  classes (unwrapped / exact alias `s∈(1/16)ℤ` / eventual alias `s∈ℤ[1/16]` / constant twist `q|15`
+  magnitude-invariant / absolute-phase-vs-magnitude / integer carry / coherent `s*=-pi/16`). The
+  slate demands a candidate estimate FAIL only on seeds its own observable can separate (`s*`,
+  periodic twists `q∤15`, source mutants), NOT on magnitude-aliased rational seeds.
+- **TG-13 — literal-carry obstruction, PROVED (negative).** The carry distinguishes circle-aliased
+  seeds but carries no bound on `|T_N(h)|`; no noncentral/carry enrichment is simultaneously a
+  magnitude bound and an alias separator. Selected signed cancellation (π normality) remains **OPEN**.
+
+**Firewall unchanged:** π base-16/base-3 normality, RH, the gate `T_N(h)=o(N)` (`Sbar_N(h)=o(1)`),
+general Collatz, shifted Lonely Runner n=18..94 all **OPEN**. Main XVI is correction + classical
+analysis + an obstruction; no mathematical status was promoted.
