@@ -158,3 +158,22 @@ def graded_selected_points(n: int, seed: Fraction = Fraction(0)):
     a = 8*n-7
     return tuple((j, q(a,n,j), fractional(bbp_state(n+j,seed)),
                   literal_carry(n+j,seed)) for j in range(n+1))
+
+
+def harmonic_four_pole_digamma(a: int, m: int) -> Fraction:
+    """Exact rational realization of the four-pole digamma differences.
+
+    Delta_psi(beta,m) = psi(beta+m+1)-psi(beta+1)
+                      = sum_{j=1}^m 1/(j+beta).
+    All Euler-Mascheroni origin terms cancel between digamma endpoints.
+    """
+    if m < 0:
+        raise ValueError("m must be nonnegative")
+    if a <= 0:
+        raise ValueError("source a must be positive")
+    total = Fraction(0)
+    for shift,coeff in ((0,4),(3,-2),(4,-1),(5,-1)):
+        b = Fraction(a+shift)
+        delta = sum((Fraction(8,b+8*j) for j in range(1,m+1)), Fraction(0))
+        total += coeff*delta/b
+    return total/R(a)
