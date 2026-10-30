@@ -17,6 +17,11 @@ def main():
     assert sp.simplify(R(a)-(15*a*a+121*a+240)/(a*(a+3)*(a+4)*(a+5)))==0
     assert sp.diff(Q(y),y).subs(y,0)==15
     assert sp.diff(Q(y),y,2).subs(y,0)==-59
+    # Positive distinct source with identical first two endpoint derivatives.
+    q_hidden_mutant = Q(y)*(1 + y**2/(1+y**2))
+    assert sp.diff(q_hidden_mutant,y).subs(y,0)==15
+    assert sp.diff(q_hidden_mutant,y,2).subs(y,0)==-59
+    assert sp.simplify(q_hidden_mutant-Q(y)) != 0
     # Native clock a=8n-7; latent Y=aX tends to Gamma(2,1).
     # For the exact four-pole normalized field the first density correction
     # at order 1/n is (59/240)(2-y) times y*exp(-y).
