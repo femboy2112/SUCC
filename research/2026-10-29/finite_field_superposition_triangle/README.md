@@ -16,6 +16,7 @@ Both update/endpoint orders have exact equalities. Nonlinear readouts and select
 
 - Original-source native clock `a_n=8n−7`, forcing `r(n)=R(a_n)`.
 - Exact finite source-dependent path conservation, posterior update and cross-source triangle recursion.
+- **Exact four-pole digamma bridge:** `A_(a,m)=R(a)^−1 Σ_d c_d/(a+d) [psi(m+1+(a+d)/8)−psi(1+(a+d)/8)]`; the Euler–Mascheroni reference cancels at finite depth. Native offsets are the original BBP 1/8, 4/8, 5/8, 6/8 with digamma dilation n→2n.
 - Exact original-source harmonic sum: `A_n=H_n−Σ_(k=1)^n r(n+k)/(k r(n))`.
 - Gamma–Poisson endpoint and Oily two-stage **marginal** fixed point `lambda²`, with the crucial joint-law distinction preserved.
 - Derived `Omega_OM=lambda−gamma` at Gamma rank two, alongside a distinct mixed-grade constant `1+log 2−gamma−(1+2lambda)^−2`.
@@ -31,7 +32,7 @@ python independent_first_jet_oracle.py
 python -m compileall -q finite_source_triangle.py test_finite_source_triangle.py independent_first_jet_oracle.py
 ```
 
-Locally executed: 8/8 focused tests pass, independent exact SymPy oracle passes, compileall passes. Original source/test/oracle remote Git blob SHAs matched the executed files. **No full inherited SUCC root test/provenance/Lean suite, hosted exact-head CI or peer review was run here.**
+Locally executed: 9/9 focused tests pass, independent exact SymPy oracle passes, compileall passes. Original source/test/oracle remote Git blob SHAs matched the executed files. **No full inherited SUCC root test/provenance/Lean suite, hosted exact-head CI or peer review was run here.**
 
 Read [the exact derivation](RESEARCH.md), [claim statuses](CLAIMS.md), [validation receipts](VALIDATION.md) and [next proof task](NEXT.md).
 
