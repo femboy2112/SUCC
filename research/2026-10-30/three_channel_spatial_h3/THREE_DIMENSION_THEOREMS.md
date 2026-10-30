@@ -92,6 +92,14 @@ with the stated integrable remainder; the common three-panel likelihood tends to
 \]
 This uses n³κ_3(1−e^{-8X}) and the same first source density jet. Validity is fixed observer channels/clock; do not extend uniformity to moving growing-grade windows without further estimates.
 
+### T3-02a. Literal selected zero-seed arithmetic history is already three-way order-sensitive
+
+Use the **separate actual** signed original recurrence \(U_0=0\), \(U_n=16U_{n-1}+R(8n-7)\) over exact rationals, and literal carry \(\kappa_n=\lfloor16\{U_{n-1}\}+R(8n-7)\rfloor\). Direct exact evaluation yields \(\kappa_3=4\), \(\kappa_4=3\). For native three-panel \(n=3\), each of the positive-probability virtual grade triples (1,0,0), (0,1,0), (0,0,1) has **the same total grade S=1**, but their **marked original arithmetic intermediate histories** at the three clock points \(n+j,n+j+k,n+j+k+l\) have respectively carry triples
+\[
+(3,3,3),\qquad(4,3,3),\qquad(4,4,3).
+\]
+Thus three-step signed carry/phase annotation strictly refines positive total-grade sufficiency, even for the authentic zero boundary. The test uses exact source rationals, not fitted digits. This is an **observation/representation separation**, not a cancellation or normality proof: an arbitrary selected path could also show differing intermediate carries. Preserve all three carry lifts and time indices under the no-discard axiom.
+
 ## T3-03. The exact 3D Fisher hyperboloid, and the fixed-budget rank drop
 
 For three independently adjustable positive *observation intensities* θ_i, declare the shared-Y Gamma/Poisson model
