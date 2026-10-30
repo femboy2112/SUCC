@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/research/2026-10-30/zero_boundary_dispersion/spectral/run_probe.py", line 42, in <module>
+    "phase_mean_squared_interval":[s.dump_fraction(x) for x in actual_sq],
+                                   ~~~~~~~~~~~~~~~^^^
+  File "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/research/2026-10-30/zero_boundary_dispersion/spectral/spectral_probe.py", line 182, in dump_fraction
+    return f"{q.numerator}/{q.denominator}"
+             ^^^^^^^^^^^^^
+ValueError: Exceeds the limit (4300 digits) for integer string conversion; use sys.set_int_max_str_digits() to increase the limit
