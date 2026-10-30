@@ -54,6 +54,15 @@ def run():
     for n in (2,4,8):
         for z in (-1,0,F(1,2),1):
             assert abs(fan_pole_float(n,z)-fan_integral_float(n,float(z)))<1e-10,(n,z)
+    # Independent mixed time x grade coefficient checks from the positive integral.
+    c=225/3008
+    for n in (40,80,160):
+        for z in (-1,0.5,1):
+            actual=n*n*fan_integral_float(n,z)
+            predicted=c/(2-z)**2
+            assert abs(actual-predicted)<0.003,(n,z,actual,predicted)
+    # The n-dependent grade Fourier coefficient tends to C/(2-z)^2
+    # and the inherited O(1/n) TV bound upgrades it to the time cusp.
     # Fourier cusp: partial sums are absolutely convergent; tail of
     # (e^{int}-1) weighted by p_n is at most ~ 2C/N.
     t=0.02
@@ -66,7 +75,7 @@ def run():
             'hazard_original_n2':'-209/120',
             'hazard_fake_n2':'-5/4',
             'hazard_defect_n2':'-59/120',
-            'integral_holdouts':'12/12',
+            'integral_holdouts':'12/12','independent_mixed_coefficient_checks':'9/9',
             'cusp_ratio':ratio,'expected_cusp':c,'status':'PASS'}
 
 if __name__=='__main__':

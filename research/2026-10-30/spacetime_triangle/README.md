@@ -10,7 +10,8 @@ Most significant NEW connection: with one retained `X~mu_1`, conditioning succes
 2. Exact rare zero-spine / conditional posterior law and harmonic/Euler finite part `log(3008/225)-2gamma`; authentic-vs-Gamma-fake source hazard difference `-59/(120n^2)`.
 3. A fan glued at every spine tile, with exact original four-pole finite polynomial `B_n(z)`; normalized parity mode tends to `1/9`, *not* zero. Uniform high-grade occupancy `P(J_n>=L | zero spine)<= (256/81)L^2 2^(-L)` for integers `L>=4`.
 4. A time Fourier/Lerch symbol whose **sharp cusp** at frequency 0 (the rank-two Fourier regularity threshold) is `i(225/3008)t log(1/|t|)+O(|t|)`.
-5. The remaining source-to-selected-signed-phase coupling obstruction, explicit coherent counterseed, and related negative controls.
+5. **Joint time x grade cusp:** a separable symbol `i(225/3008)(2-z)^(-2)t log(1/|t|)`, with golden PGF evaluation `z=lambda²` selecting the old triangle inside the extrusion. This is positive-field Fourier arithmetic, not a Weyl gain.
+6. The remaining source-to-selected-signed-phase coupling obstruction, explicit coherent counterseed, and related negative controls.
 
 Reproduce focused source calculations from this directory:
 

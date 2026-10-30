@@ -208,6 +208,57 @@ T(exp(i t)) - T(1) = i (225/3008) t log(1/|t|) + O(|t|).
 This is a **genuine Fourier signature** of the original source's rank-two time-spine. It is *not* a selected pi Weyl gain: the same temporal continuity holds for arbitrary bounded phase marks attached to the rare spine, because all weights are absolutely summable. If one attaches authentic `e(h U_(n+j)(0))` to the fan, the spectral symbol is a representation but no sign saving follows from the summable `n^-2` weight.
 
 
+### ST-04c: the joint TIME x GRADE Fourier cusp (actual triangle-on-triangle)
+
+Take the Fourier/generating transform in both directions: for `|w|<=1, |z|<=1`,
+
+```
+D(w,z) := sum_(n>=1) w^(n-1) B_n(z)
+        = sum_(n>=1) w^(n-1) [r(n)/R(1)] G_n(z),
+G_n(z) := sum_j q_(8n-7,n)(j) z^j.
+```
+
+The native Pascal fan has `G_n(z) -> G(z)=(2-z)^(-2)` uniformly for
+`|z|<=1`, with explicit `O(1/n)` uniform error: the inherited original-source
+TV estimate from the Pascal/q6 program gives
+`sum_j |q_(8n-7,n)(j)-w_j| <= 44/n`, where
+`w_j=(j+1)/2^(j+2)` (see
+`research/2026-10-29/q6_gamma_abel_tiling/CESARO_FIREWALL.md`).
+The original spine has `p_n=C_spine/n²+O(n^-3)`. Therefore
+
+```
+B_n(z) = C_spine (2-z)^(-2) n^(-2) + O(n^-3),
+```
+
+**uniformly on the closed unit disk**: boundedness of `G` and the TV bound
+control the remainder. Apply the elementary Fourier cusp proof above to these
+complex coefficients. Uniformly for `|z|<=1`, as real `t -> 0`,
+
+```
+D(exp(i t),z)-D(1,z)
+  = i (225/3008) (2-z)^(-2) t log(1/|t|) + O(|t|).
+```
+
+This is a rigorous **separable two-axis singularity** of the actual tiled
+source strip, with original-four-pole time coefficient and a nontrivial
+vertical Pascal/Fourier shape. For `z=-1` (genuine parity character) the
+coefficient is `i C_spine/9`. For `z=1` it is `i C_spine`.
+
+At the *marked real PGF* coordinate `z=lambda²`, where
+`lambda=phi^(-1)` and `G(lambda²)=lambda²`, the coefficient is exactly
+`i C_spine lambda²`. This is an exact mathematical place where the
+**old harmonic/golden/Euler–Mascheroni triangle sits inside the new
+time-extruded operational apparatus**: rank 2 supplies the temporal
+harmonic cusp, and the declared two-channel endpoint evaluation supplies
+the golden vertical factor. It is a **PGF evaluation**, not a unit-circle
+Fourier frequency, and does **not** imply any pi digit cancellation.
+
+The statement is not a theorem for an arbitrary array of complex marks
+attached to the selected pi orbit: the factorization uses the genuine
+positive conditional grade weights and their proven O(1/n) approach to
+the source-derived `w_j`. Those weights do not constrain the signs of
+`exp(2pi i h U_n(0))`.
+
 ### Why rank two is a Fourier regularity threshold
 
 The logarithm is not an artifact of the four particular poles. For any positive

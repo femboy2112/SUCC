@@ -80,6 +80,15 @@ class SpacetimeTriangleExact(unittest.TestCase):
                 self.assertLessEqual(val,rhs)
             self.assertGreater(rhs,0)
 
+    def test_joint_time_grade_cusp_coefficient_snapshots(self):
+        # Exact finite n^2 B_n(z) approaches C/(2-z)^2; no signed pi phases.
+        for n in (32,64,96):
+            for z in (F(-1), F(0), F(1,2), F(1)):
+                value=F(n*n)*M.fan_fourier(n,z)
+                predicted=M.C_SPINE/(F(2)-z)**2
+                self.assertLess(abs(float(value-predicted)), 0.02)
+                self.assertNotEqual(predicted,0)
+
     def test_rigorous_source_constant_without_fake_uniform_gap(self):
         # Limit grade characteristic G(-1)=1/9 is nonzero; n=64 holds nearby.
         n=64

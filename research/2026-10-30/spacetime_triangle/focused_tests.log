@@ -2,6 +2,7 @@ test_chernoff_moment_original_source (test_extruded_triangle.SpacetimeTriangleEx
 test_conditioned_spine_telescope (test_extruded_triangle.SpacetimeTriangleExact.test_conditioned_spine_telescope) ... ok
 test_fan_mass_independent_route (test_extruded_triangle.SpacetimeTriangleExact.test_fan_mass_independent_route) ... ok
 test_grade_fourier_exact_two_routes (test_extruded_triangle.SpacetimeTriangleExact.test_grade_fourier_exact_two_routes) ... ok
+test_joint_time_grade_cusp_coefficient_snapshots (test_extruded_triangle.SpacetimeTriangleExact.test_joint_time_grade_cusp_coefficient_snapshots) ... ok
 test_native_spine_hazard_and_n2_constant (test_extruded_triangle.SpacetimeTriangleExact.test_native_spine_hazard_and_n2_constant) ... ok
 test_original_source_passport (test_extruded_triangle.SpacetimeTriangleExact.test_original_source_passport) ... ok
 test_pascal_finite_flatness_and_bayes (test_extruded_triangle.SpacetimeTriangleExact.test_pascal_finite_flatness_and_bayes) ... ok
@@ -10,6 +11,6 @@ test_uniform_moving_grade_bound (test_extruded_triangle.SpacetimeTriangleExact.t
 test_zero_spine_and_fan_are_not_independent (test_extruded_triangle.SpacetimeTriangleExact.test_zero_spine_and_fan_are_not_independent) ... ok
 
 ----------------------------------------------------------------------
-Ran 10 tests in 0.031s
+Ran 11 tests in 0.030s
 
 OK
