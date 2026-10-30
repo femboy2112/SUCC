@@ -204,6 +204,26 @@ For three **full** unit observer channels, the joint limit is \(H(z_1,z_2,z_3)=(
 \]
 This is an invertible **spatial observation kernel**, not a Lorentzian hyperbolic propagator. The existence of three grade-frequency directions does NOT supply physical spatial coordinates or a causal wave equation. The required new ingredient is independently constrained second-order dynamics in a separate time coordinate, as tested below. A finite cyclic arithmetic grade Fourier mode is not evidence of π's selected-digit Weyl cancellation.
 
+### T3-05b. A three-panel endpoint filter cannot by itself establish π normality
+
+With three full unit panels, the limiting total-grade distribution is \(w_s=(s+1)3^s/4^{s+2}\) and \(E_wS=6\). For **every** bounded sequence \(|z_n|\le1\), define its stationary future-grade readout \(T_wz_n=\sum_{s\ge0}w_s z_{n+s}\). Summing shifted N-windows and counting only their boundary differences gives
+\[
+\boxed{\left|\frac1N\sum_{n=L}^{L+N-1}(T_wz_n-z_n)\right|\le\frac{2E_wS}{N}=\frac{12}{N}.}
+\]
+The positive source-dependent native grade distribution q_n(s) can be coupled to the Gamma–Poisson limit using exactly the bounds inherited from #392, \(E_aX<2/a\), \(E_aX²<6/a²\), and \(TV(aX,\Gamma(2,1))<6/a\). For n≥3, a=a_n=8n−7, Le Cam's bound for Bin(3n,p) versus Poisson(3np) contributes ≤1152 n/a². The mean adjustment \(|3np-3aX|\le21X+96nX²\) contributes ≤42/a+576n/a². Poisson mixing and the source-to-Gamma TV bound contribute ≤6/a. Hence
+\[
+\boxed{TV(q_n,w)\le\min(1,1728n/a_n²+48/a_n)\le\min(1,63/n).}
+\]
+Consequently
+\[
+\boxed{
+\left|\frac1N\sum_{n=L}^{L+N-1}\sum_s q_n(s)z_{n+s}
+-\frac1N\sum_{n=L}^{L+N-1}z_n\right|
+\le\frac{12}{N}+\frac{126}{N}\sum_{n=L}^{L+N-1}\frac1n
+}
+\]
+for L≥3. This holds **for every bounded sequence**, including a coherent nonnormal same-forcing seed; it is a **representation no-go**, not a new signed Weyl cancellation estimate. It also shows that a third grade axis (with its static 3-torus Fourier harmonics) cannot bypass the original selected arithmetic obstacle merely by endpoint smoothing. An original-zero-seed-sensitive, intertime carry/phase-dependent **non-stationary signed** result remains necessary.
+
 ## T3-06. From statistical H³ to a **conditional** 3+1 spacetime and wave operator
 
 To give H³ spatial slices a **physical-like** time coordinate τ, we must **add and declare** a separate temporal metric:
