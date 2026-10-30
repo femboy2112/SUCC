@@ -129,6 +129,38 @@ Thus the same object is obtained by (A) assigning genuine BBP-based weights to a
 
 The update identity is **for fixed `a`**: do not silently substitute the diagonal `a_n` into both sides while simultaneously advancing `n`.
 
+
+### The exact four-pole **digamma dilation** bridge (FFT-2b)
+
+The finite identity above is already a statement about the logarithmic derivative of **Gamma**, with no limit needed. Write the authentic four source shifts and signed coefficients as
+
+```text
+(d,c_d) = (0,4), (3,-2), (4,-1), (5,-1)
+beta_d = (a+d)/8.
+```
+
+The partial fraction identity
+`1/[k(a+d+8k)]=(1/(a+d))[1/k-1/(k+beta_d)]`,
+together with `R(a)=Σ_d c_d/(a+d)`, gives
+
+```text
+A_(a,m) = (1/R(a)) Σ_d [c_d/(a+d)]
+           [psi(m+1+beta_d) - psi(1+beta_d)].
+```
+
+Here `psi(z)=Gamma'(z)/Gamma(z)`, and the digamma difference equals the **finite rational sum**
+`Σ_(k=1)^m 1/(k+beta_d)` by the classical recurrence. Thus the Euler–Mascheroni additive reference is **absent from the finite update**: each digamma difference cancels its common reference identically. Introducing `gamma` as a separate vertex or edge here would double-count it.
+
+For the native BBP diagonal `a=8n-7,m=n`, put `delta∈{1,4,5,6}`, `b_delta=delta/8` and `c_delta=(4,-2,-1,-1)`. Then
+
+```text
+A_n = [1/(8r(n))] Σ_(delta=1,4,5,6)
+       [c_delta/(n-1+delta/8)]
+       [psi(2n+delta/8)-psi(n+delta/8)].
+```
+
+**This is an exact Gamma/digamma expression using the four *original* BBP offsets** `1,4,5,6` over 8. The doubling `n→2n` is produced by the **declared matched Pascal observation depth**, not assumed from the base-16 digit map. It is a mathematically real dyadic dilation inside the BBP source, but no theorem yet identifies that dilation with four-bit digit equidistribution. Every term can be checked as a rational finite sum; a second exact Fraction implementation matches both earlier routes for native clocks and multiple observation depths.
+
 ### Reset-the-field negative control (strict and exact)
 
 If one averages `X` first and then incorrectly reuses that same average failure probability at each step, one obtains `[R(a+8)/R(a)]^2` for two failures. The genuine retained-field result is `R(a+16)/R(a)`. Since `log R` is strictly convex (`(\log R)''=Var_mu_a X>0`),
