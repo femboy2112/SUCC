@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "origin": "independent SymPy rational source, polynomial positivity and 80-digit integral oracle",
+  "certified_math": "symbolic identities exact; numerical quadratures are consistency checks only",
+  "rational_source_polynomial": "(120*x**2 - 89*x + 16)/((2*x - 1)*(4*x - 1)*(8*x - 7)*(8*x - 3))",
+  "age_kernel_laplace_polynomial": "(q - 1)**2*(q**3 + 3*q**2 + 2*q + 1)",
+  "two_integrality_numerator": "4*B*n - B + 4*D*n - 2*D",
+  "two_precision_mutants": {
+    "1": {
+      "difference_v2_sample": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "prime13_residue_auth": 12,
+      "prime13_residue_mutant": 7
+    },
+    "4": {
+      "difference_v2_sample": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "prime13_residue_auth": 12,
+      "prime13_residue_mutant": 11
+    },
+    "8": {
+      "difference_v2_sample": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "prime13_residue_auth": 12,
+      "prime13_residue_mutant": 9
+    },
+    "12": {
+      "difference_v2_sample": [
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "prime13_residue_auth": 12,
+      "prime13_residue_mutant": 3
+    }
+  },
+  "source_mass_digamma": "3.3860476195971917219364188314384128602269183521820482499067407513",
+  "source_mass_integral": "3.3860476195971917219364188314384128602269183521820482499067407513",
+  "tail_budget_from_gamma": "0.016296997733826565564918363210593998401983263520462828595453077266",
+  "tail_budget_from_positive_integral": "0.016296997733826565564918363210593998401983263520462828595453077266",
+  "unit_frequency_phase_bound": "0.10239705671231809405124450962203202297557013577259847461553655023",
+  "GK_weighted_valuation_by_prime_mod8": {
+    "1": "-15/8",
+    "3": "-5/2",
+    "5": "-5/4",
+    "7": "0"
+  },
+  "python": "3.13.13",
+  "sympy": "1.14.0",
+  "mpmath": "1.3.0"
+}

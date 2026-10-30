@@ -1,0 +1,132 @@
+{
+  "status": "PASS",
+  "SC06_interval_crosschecks": 42,
+  "source_states_independently_rebuilt": 461,
+  "minimum_interval_crosschecks": 15,
+  "r_leading": "15/64",
+  "r_difference_leading": "15/32",
+  "tail_difference_leading": "1/32",
+  "minimum_rows": [
+    {
+      "A": 32,
+      "L": 16,
+      "h": 1,
+      "minimum": "5.6938655650812970388526429999627474e-12",
+      "coherent": "5.8074737403109320343187707605440533e-12",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 32,
+      "L": 16,
+      "h": 3,
+      "minimum": "5.1244790085137015747785423006674705e-11",
+      "coherent": "5.2267263662201228444316939683096845e-11",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 32,
+      "L": 16,
+      "h": 7,
+      "minimum": "0.00000000027899941266955807324265302906334636",
+      "coherent": "0.00000000028456621325572844744014835078208799",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 64,
+      "L": 32,
+      "h": 1,
+      "minimum": "9.3129877313443112363508416188471245e-14",
+      "coherent": "9.4009426142597348183175315756842571e-14",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 64,
+      "L": 32,
+      "h": 3,
+      "minimum": "8.381688958208309831818725443796313e-13",
+      "coherent": "8.4608483528321881045905065609517199e-13",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 64,
+      "L": 32,
+      "h": 7,
+      "minimum": "4.563363988353582921548276893796779e-12",
+      "coherent": "4.6064618809821308367843714829804656e-12",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 128,
+      "L": 64,
+      "h": 1,
+      "minimum": "1.4884606921892087109856076674814452e-15",
+      "coherent": "1.4953027859699040093414792895667805e-15",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 128,
+      "L": 64,
+      "h": 3,
+      "minimum": "1.3396146229702838541608830354874191e-14",
+      "coherent": "1.3457725073729096191358229046599814e-14",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 128,
+      "L": 64,
+      "h": 7,
+      "minimum": "7.293457391726992483441457973602522e-14",
+      "coherent": "7.3269836512523993295706389588156447e-14",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 256,
+      "L": 128,
+      "h": 1,
+      "minimum": "2.3520622906806055920922671478071478e-17",
+      "coherent": "2.3573965682191998183444201898021022e-17",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 256,
+      "L": 128,
+      "h": 3,
+      "minimum": "2.1168560616125449336722861796939679e-16",
+      "coherent": "2.1216569113972797372562759118027314e-16",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 256,
+      "L": 128,
+      "h": 7,
+      "minimum": "1.1525105224334964160367470082061548e-15",
+      "coherent": "1.1551243184274075867600051802071439e-15",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 383,
+      "L": 71,
+      "h": 1,
+      "minimum": "3.714366045117898516363483510640595e-18",
+      "coherent": "3.7495659718917665284424292842521806e-18",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 383,
+      "L": 71,
+      "h": 3,
+      "minimum": "3.3429294406061086465013786033449868e-17",
+      "coherent": "3.3746093747025898572687499967198958e-17",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    },
+    {
+      "A": 383,
+      "L": 71,
+      "h": 7,
+      "minimum": "1.820039362107770213480635503190833e-16",
+      "coherent": "1.8372873262269655390606315762004846e-16",
+      "method": "210-step derivative bisection, 100 decimal digits"
+    }
+  ],
+  "authority": "independent implementation and representation; shared source/model; mpmath numerical cross-check only"
+}

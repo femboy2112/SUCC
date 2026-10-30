@@ -1,0 +1,173 @@
+{
+  "parent_commit": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+  "created_utc": "2026-10-30T17:20:42.930112+00:00",
+  "source_inputs": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "git_blob": "2c04a24744366d5659f347caeb874a3613f893c9",
+      "bytes": 3058,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "docs/METHOD.md",
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+      "git_blob": "c3d90e9fe0cff7bc56b7a896a9efb87958849aa3",
+      "bytes": 6649,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "docs/OPERATIONAL_TRIANGLE.md",
+      "sha256": "c10d934a3a1486b3c672caacf93f3c388d7875dcd526a7b08b3aea1db5698035",
+      "git_blob": "678223ba666d4c36a5babcf171f338b2fbf5c692",
+      "bytes": 14963,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-29/triangle_genesis_repair/MAIN_XVI_HANDOFF.md",
+      "sha256": "a5f69d3d6d1c6d087a5da73cdb21b8d9318f3a10f447c972fca5f7dd6688a375",
+      "git_blob": "f46fd60b3ba4ca13896654b1033be638db304687",
+      "bytes": 4945,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/arithmetic_barrier/SHARP_CONDUCTOR_GROWTH.md",
+      "sha256": "c707cf382ba098f2895d71529f065d832e212b9f24529090896da9df0f8dd7b2",
+      "git_blob": "27baca185fc154860929c988c825f55503a344f1",
+      "bytes": 9318,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/arithmetic_barrier/arithmetic/ARITHMETIC_THEOREMS.md",
+      "sha256": "4e4b151609ffa3a14f525ba7d67dd761c777b9e84a59d2ceec52358a3c627f5f",
+      "git_blob": "b81d717d8f78c74511dd542f50c773c11a202eaf",
+      "bytes": 20428,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/arithmetic_barrier/signed_crt/JOINT_SIGNED_CRT.md",
+      "sha256": "bc12e0c773435a6036f749724ba4fea87e2c89590f496a1104770831418519cd",
+      "git_blob": "31c2021f7b2cd2db92e8d713dd26e22e82f4a980",
+      "bytes": 13255,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/CLAIMS.md",
+      "sha256": "d2fe60cf5930611f839dce78c03a568c8f8632ad47d18cf95306168d82cd4a2f",
+      "git_blob": "530f2ff038f35297d07f483907ea9700e5238b36",
+      "bytes": 2495,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/CODEX_ASTRA_ULTRA_MEGA_ROUND.md",
+      "sha256": "23294adb7b13edcf3bf5ceea555fc15f4d3f953dc8c95fecbf6187840fb392a0",
+      "git_blob": "9ab1eb48fc2d7d0e474c8dc2529247289d4ba1cd",
+      "bytes": 17198,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/INITIAL_CORRECTIONS.md",
+      "sha256": "4812c5486732b1b64ad7434c447996a20c3264286c0e1b31b38079c3937203e6",
+      "git_blob": "bb381860152454fcb7b65395cf819c9e1c382653",
+      "bytes": 1225,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/NEXT.md",
+      "sha256": "c21787f6e5e96130c527cce44bee4c9a76cd38695f9b98a6dca6fe966b1d15b2",
+      "git_blob": "ca3fd8d62b506089476153fe00d78316d609d6c2",
+      "bytes": 2373,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/README.md",
+      "sha256": "76cd5cef06abd0e188f78daecdd12a7aff13ef391cbf528b960d991ffe3ee54b",
+      "git_blob": "a21ca5b0bf4c3ed20f38b5ca04055ea91b19d71a",
+      "bytes": 3320,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/RESEARCH.md",
+      "sha256": "945d28d7c6b4bb44c701af04eb3eaeb0937cd3820a4a41c197686a814eed9a66",
+      "git_blob": "62f47a6ab6e73b1dba8c8b1618a275455b752828",
+      "bytes": 13369,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/SOURCE_MANIFEST.json",
+      "sha256": "4c896dc49bf06c70497301aa7b03c262eed545e63be0d04b067c102a9703ed9a",
+      "git_blob": "3ab2fbf9c7c4ba96268e1dcb8dfc9877638ee340",
+      "bytes": 2042,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/VALIDATION.md",
+      "sha256": "e681cb14323b31845ae1f165129ff08aa15d9d34e92c0189fb6467ec04f15326",
+      "git_blob": "60cc914a46f63d987bad9eaf0d11902c75060175",
+      "bytes": 2303,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/focused_tests.log",
+      "sha256": "4f0371ba37857bb6add1bc594c9ec098b8e77908f8bfaa3d83c68883488efdce",
+      "git_blob": "cad7594dc9d2d5e25ee45bb8c069fe2533fdff53",
+      "bytes": 2493,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/gamma_all_places.py",
+      "sha256": "62aed19fa42dab51a535f3306c01d626021d9b51b700e6f3ea5decd3a22c1a11",
+      "git_blob": "3f8250c53028a464e8d04b4248b92fbab73393fc",
+      "bytes": 3359,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/independent_oracle.py",
+      "sha256": "db82a48b5aa46e2b20e19ba2ff9d790071f0a39da83a9431e2bed918367e6be1",
+      "git_blob": "95e545563fb55662e76698dde87c189c7969b18e",
+      "bytes": 3928,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/independent_oracle_receipt.json",
+      "sha256": "fe5ec84b572ece4fe6fcb1c1672130fa11b3431173adefddb143b6ebb64d29aa",
+      "git_blob": "8e23b4546fc8dfd5f0d0251c3550067b4d67d58f",
+      "bytes": 1904,
+      "unchanged_from_parent": true
+    },
+    {
+      "path": "research/2026-10-30/gamma_all_places/test_gamma_all_places.py",
+      "sha256": "608ba290d705f14e99b368b75d218a411b15c0c64669d3ffc377b4ac833b60cf",
+      "git_blob": "acf0e5087195adebc865b8c249be39303fed8ae3",
+      "bytes": 7470,
+      "unchanged_from_parent": true
+    }
+  ],
+  "scope": "gauss directory additive only; authentic source and historical contracts unchanged",
+  "literature": [
+    {
+      "url": "https://annals.math.princeton.edu/1979/109-3/p06",
+      "use": "Original GK publication metadata"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9708806/",
+      "use": "Research article conventions and quadratic Davenport-Hasse/GK formulas"
+    },
+    {
+      "url": "https://web.iitd.ac.in/~rupam/Publication/summation-JNT(2015).pdf",
+      "use": "Barman Saikia McCarthy JNT153(2015) Theorem2.6 finite-extension GK and Theorem2.4 Davenport-Hasse"
+    }
+  ],
+  "current_campaign_review_inputs": [
+    {
+      "path": "research/2026-10-30/gamma_twist/signed/SHARP_SEED_ENERGY.md",
+      "sha256": "7b73ae06c80b31289c493c32bfb022f4ce20b58981a0acb2164b6d401ab19846",
+      "bytes": 13455
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/signed/signed_transport.py",
+      "sha256": "97f6131dfc04d21255519e9b1e834e1e068b2f99b4ddab38a646c9c736b884c2",
+      "bytes": 6398
+    }
+  ]
+}

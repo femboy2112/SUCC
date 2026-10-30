@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "parent": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+  "unchanged_inherited_manifest_files": {
+    "prime_stroboscope": 15,
+    "arithmetic_barrier": 96,
+    "gamma_all_places": 12
+  },
+  "ancestry": [
+    {
+      "pr": 390,
+      "head": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "base_is_ancestor": true
+    },
+    {
+      "pr": 391,
+      "head": "7ce94d38479c22c3d427753812e38207515dc868",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "base_is_ancestor": true
+    },
+    {
+      "pr": 392,
+      "head": "00b073fb9adedcda91cc499540add10dfcfabc66",
+      "base": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+      "base_is_ancestor": true
+    },
+    {
+      "pr": 393,
+      "head": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+      "base": "00b073fb9adedcda91cc499540add10dfcfabc66",
+      "base_is_ancestor": true
+    },
+    {
+      "pr": 394,
+      "head": "3d9c16063e7a0ec69f9713065f5007375ea3a917",
+      "base": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+      "base_is_ancestor": true
+    },
+    {
+      "pr": 395,
+      "head": "2d4fcc6db5657a2559b0e28ca8c8e1413b6c4548",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "base_is_ancestor": true
+    },
+    {
+      "pr": 396,
+      "head": "adb0a53a4b86793b084b8ea122e88674a9c74adc",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "base_is_ancestor": true
+    },
+    {
+      "pr": 397,
+      "head": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "base_is_ancestor": true
+    },
+    {
+      "pr": 398,
+      "head": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+      "base": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "base_is_ancestor": true
+    },
+    {
+      "pr": 399,
+      "head": "fe9da9b0942f046cc67b02c4fed825ef74aa675a",
+      "base": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+      "base_is_ancestor": true
+    },
+    {
+      "pr": 400,
+      "head": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "base": "fe9da9b0942f046cc67b02c4fed825ef74aa675a",
+      "base_is_ancestor": true
+    }
+  ],
+  "source_inputs": {
+    "AGENTS.md": {
+      "sha256": "e8a1dca51e1c8a68467f17abcdc6f296376db5c5df649aac9052404a00937bc4",
+      "git_blob": "2c04a24744366d5659f347caeb874a3613f893c9"
+    },
+    "docs/METHOD.md": {
+      "sha256": "f80890fc382617bba5e91dbd71a1f73908c9b2c2453aca5327fb188bedac130a",
+      "git_blob": "c3d90e9fe0cff7bc56b7a896a9efb87958849aa3"
+    },
+    "docs/OPERATIONAL_TRIANGLE.md": {
+      "sha256": "c10d934a3a1486b3c672caacf93f3c388d7875dcd526a7b08b3aea1db5698035",
+      "git_blob": "678223ba666d4c36a5babcf171f338b2fbf5c692"
+    },
+    "provenance/IMPORT_MANIFEST.json": {
+      "sha256": "2eec9a3a730afdca338f92fbaf195e65130cec21efc68062206163f9f6a0d57f",
+      "git_blob": "a8805a8e4d64f35ff61937a36755d9b6d1ba3fae"
+    },
+    "observational_succ/succ_internal_matrix_walk.py": {
+      "sha256": "989976921da1b97a4ad04c788e302b3c23be1916eaf3c52c60369f6e111fe5d4",
+      "git_blob": "fa1abb9dbeee0d7b4d9972e3b0e40a5feaed3c9e"
+    },
+    "observational_succ/bbp_source_memory.py": {
+      "sha256": "dd439f0a2231399d2a0ea4cf0e40a1e399338537723c468e688b0ac7d860fb54",
+      "git_blob": "c178b5c714bcdcb4dafc0d112c6aca172e44bcb6"
+    },
+    "observational_succ/bbp_two_adic.py": {
+      "sha256": "6b2b54ac51851ffafaee0d3072a39efb81f05ca14e4938c312568d65b7c07ac7",
+      "git_blob": "437a9577c4b590364e65e0631a5b3c0ad7107e6a"
+    },
+    "research/2026-10-27/BBP_BINWINDOW_ZERO_BOUNDARY.md": {
+      "sha256": "e689e774c8875cf244a63d14c3f2ffef47d9585fbcd240ea53a341fa928d48c6",
+      "git_blob": "7160df9429f70c40924c5022bb59856de48dc7a5"
+    },
+    "research/2026-10-27/PI_SELECTED_BOUNDARY_CRT_FRONTIER.md": {
+      "sha256": "a05a8254f3d63f0bfcf9189f360fbc1e36cf52befd01fb2badb68c40c060a877",
+      "git_blob": "ddc9d13b0ccba7f2881f04c7feb105d66cd81426"
+    },
+    "research/2026-10-29/triangle_genesis_repair/MAIN_XVI_HANDOFF.md": {
+      "sha256": "a5f69d3d6d1c6d087a5da73cdb21b8d9318f3a10f447c972fca5f7dd6688a375",
+      "git_blob": "f46fd60b3ba4ca13896654b1033be638db304687"
+    },
+    "research/2026-10-28/AUTHOR_ANALOGY_PROVENANCE_LEDGER.md": {
+      "sha256": "02161fa38733c4edad939cd626cda796dc9add08a9b42c4df7584f79137d2dc7",
+      "git_blob": "e1e516b57c755e35ac80cd463498edcb3ba26f45"
+    },
+    "research/2026-10-30/arithmetic_barrier/SHARP_CONDUCTOR_GROWTH.md": {
+      "sha256": "c707cf382ba098f2895d71529f065d832e212b9f24529090896da9df0f8dd7b2",
+      "git_blob": "27baca185fc154860929c988c825f55503a344f1"
+    },
+    "research/2026-10-30/arithmetic_barrier/arithmetic/ARITHMETIC_THEOREMS.md": {
+      "sha256": "4e4b151609ffa3a14f525ba7d67dd761c777b9e84a59d2ceec52358a3c627f5f",
+      "git_blob": "b81d717d8f78c74511dd542f50c773c11a202eaf"
+    }
+  },
+  "python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "packages": {
+    "mpmath": "1.3.0",
+    "numpy": "2.5.4",
+    "sympy": "1.14.0",
+    "scipy": "1.18.1",
+    "observational-succ": "0.3.0"
+  },
+  "branch": "research/gamma-twist-selected-phase-2026-10-30",
+  "main": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+  "worktrees": "worktree /media/leah/SPANKBANK/SUCCYBOI/SUCC\nHEAD 809504e11cebe043383b8a0a0eaf3b080b085300\nbranch refs/heads/research/prime-ladder-ravel-audit-2026-10-27\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-barrier\nHEAD fe9da9b0942f046cc67b02c4fed825ef74aa675a\nbranch refs/heads/research/bbp-arithmetic-barrier-2026-10-30\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-baseline\nHEAD 1a1524de28b155139d8fe84ea90fc2f117fbb9f3\ndetached\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-arithmetic-resonance\nHEAD 95dbf40553e54c901e9998e14b1b9d67298fa89e\nbranch refs/heads/research/arithmetic-wavefront-spectral-response-2026-10-16\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-bbp-resolvent\nHEAD ad19e3794f1d8da4a81418d38a4fc731b7d355c7\nbranch refs/heads/research/bbp-resolvent-observer-rigidity-2026-10-28\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-carry-defect\nHEAD e9b14db72a5c9d79b4dd37a204a206a31df549a3\nbranch refs/heads/research/carry-defect-coercivity-2026-10-27\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-collective-observer\nHEAD f7cc849d588629fec0db1d73a5418456b5087ed2\nbranch refs/heads/research/collective-observer-2026-10-16\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-cyclotomic-selected-source\nHEAD a777aa99f541df2a0e2a0b8d57fef3f0940e465c\nbranch refs/heads/research/cyclotomic-selected-source-2026-10-24\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-baseline\nHEAD 2b0628f52e9d88993c2e3ffa30b9748adfb781f0\ndetached\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist\nHEAD 2b0628f52e9d88993c2e3ffa30b9748adfb781f0\nbranch refs/heads/research/gamma-twist-selected-phase-2026-10-30\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-global-signed\nHEAD 848bad224fef455a9f87ed19e947c936d309c965\nbranch refs/heads/research/global-signed-source-2026-10-27\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-institute\nHEAD e42096ec0186228dd0f748767599e470f2ca2e1d\nbranch refs/heads/research/institute-nucleus-2026-10-18\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee\nHEAD 6174ad022a0dead14bc6a0a4d30ec41ac0ed6c99\nbranch refs/heads/research/lonely-runner-referee-cubic-2026-10-28\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-referee-publication\nHEAD 6174ad022a0dead14bc6a0a4d30ec41ac0ed6c99\ndetached\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-lonely-runner\nHEAD 27af9600ddd8acacea7a1822921083821c5dbf6e\nbranch refs/heads/research/succ-lonely-runner-exact-certificates-2026-10-28\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-observer-schur\nHEAD 24d0f18a103fb2add32ee817fdfefb4ff401ed27\nbranch refs/heads/research/observers-schur-complement-2026-10-16\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-periodic-mixed\nHEAD 6a187a61b19e389ed61e336a5d1c208bd21d773a\nbranch refs/heads/research/periodic-mixed-lag-source-2026-10-27\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-pi-lag-carry\nHEAD e821a90d615aa5f78a61ad08c9d7a44709ad6189\nbranch refs/heads/research/pi-lag-carry-rigidity-2026-10-24\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-pi-selected-phase\nHEAD d5c960148ccdf397882954059b4e67955cd65068\nbranch refs/heads/research/pi-selected-phase-forge-2026-10-25\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-pi-source-genesis\nHEAD 2ab8a8527b7ba3f990d75fd618a4bfd034b26b4b\nbranch refs/heads/research/pi-source-genesis-2026-10-24\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-principia-bridge\nHEAD d7b5a5b91d142717ce7898417eed7a5dc603e019\nbranch refs/heads/research/principia-ancestral-bridge-2026-10-24\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-proof-teeth\nHEAD 5d6d717312eebee648d3cfb092875eb4120bb4b3\nbranch refs/heads/research/succ-yean-proof-teeth-ultra-2026-10-15\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-round2\nHEAD b40601fc44584da249d2cc894126edd07cce3eb4\nbranch refs/heads/research/round2-morphism-2026-10-18\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-causal\nHEAD 81aeebbc8abc2136569450a1792f3c7719563f33\nbranch refs/heads/research/round2-causal-2026-10-18\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-operators\nHEAD da239e2370df7aafc1d8404b86e7213e3febeb46\nbranch refs/heads/research/round2-operators-2026-10-18\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-round2-signed\nHEAD a84d2ed9767b893ed6f698cefd92f8de190643b4\nbranch refs/heads/research/round2-signed-2026-10-18\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-selected-branch\nHEAD 79344c62c39c96755b742700b3d4d22fa60d86da\nbranch refs/heads/research/selected-branch-cross-energy-2026-10-26\n\nworktree /media/leah/SPANKBANK/SUCCYBOI/SUCC-spectral-purity\nHEAD dc6b87d3b8790f507d2447cc1a24f0ab0d15104f\nbranch refs/heads/research/spectral-purity-2026-10-25\n\n"
+}

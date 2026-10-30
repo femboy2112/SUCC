@@ -1,0 +1,54 @@
+[
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-m",
+      "unittest",
+      "-v",
+      "test_gauss_exact.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/gauss",
+    "output": "focused_tests.log",
+    "start_utc": "2026-10-30T17:12:15.003811+00:00",
+    "memory_mib": 768,
+    "git_head": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+    "exit_code": 0,
+    "elapsed_seconds": 2.274,
+    "end_utc": "2026-10-30T17:12:17.277994+00:00",
+    "sha256": "12d22662e9a51f8a1ddffd883b322ebf6552c9312a564c9e95b2ce5c661edfc2",
+    "bytes": 1781
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "run_probe.py"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/gauss",
+    "output": "probe_receipt.json",
+    "start_utc": "2026-10-30T17:12:17.278669+00:00",
+    "memory_mib": 768,
+    "git_head": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+    "exit_code": 0,
+    "elapsed_seconds": 2.977,
+    "end_utc": "2026-10-30T17:12:20.255717+00:00",
+    "sha256": "66c4201f0d06cb99fd55d74d9edb092cffdf8acfca0c7453d840efacf21f2cd7",
+    "bytes": 372440
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "independent_oracle.py",
+      "probe_receipt.json"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-gamma-twist/research/2026-10-30/gamma_twist/gauss",
+    "output": "independent_receipt.json",
+    "start_utc": "2026-10-30T17:12:20.257019+00:00",
+    "memory_mib": 768,
+    "git_head": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+    "exit_code": 0,
+    "elapsed_seconds": 4.731,
+    "end_utc": "2026-10-30T17:12:24.987701+00:00",
+    "sha256": "13e1839a0bb4a81a57524501c9956e7116c007b5e5ed8456e680e2a655d8da0b",
+    "bytes": 1860
+  }
+]
