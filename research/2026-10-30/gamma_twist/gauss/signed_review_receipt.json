@@ -1,0 +1,23 @@
+{
+  "status": "PASS complementary proof audit",
+  "reviewed_utc": "2026-10-30T17:22:23.614965+00:00",
+  "shared_model_not_blind": true,
+  "inputs": [
+    {
+      "path": "research/2026-10-30/gamma_twist/signed/SHARP_SEED_ENERGY.md",
+      "sha256": "7b73ae06c80b31289c493c32bfb022f4ce20b58981a0acb2164b6d401ab19846",
+      "bytes": 13455
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/signed/signed_transport.py",
+      "sha256": "97f6131dfc04d21255519e9b1e834e1e068b2f99b4ddab38a646c9c736b884c2",
+      "bytes": 6398
+    }
+  ],
+  "symbolic_source_expansion": "15*z**2/64 + 151*z**3/512 + 1209*z**4/4096 + O(z**5)",
+  "symbolic_source_decrement_expansion": "15*z**3/32 + 93*z**4/512 + O(z**5)",
+  "resolvent_mass": "1/15",
+  "D_leading": "1/32",
+  "mean_energy_coefficient_without_pi2_h2": "1/512",
+  "blocking_issues": []
+}
