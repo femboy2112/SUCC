@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-29",
+  "additive_parent_head": "39b758de2400bdc10f8f97a0cb6cf1966dcd6965",
+  "validation": {
+    "isolated_stdlib_test_suite": "32/32 pass",
+    "oracle": "finite_alias_oracle 5 controls pass",
+    "compileall": "pass",
+    "full_repo": "not run"
+  },
+  "files": [
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/FINITE_OBSERVER_ALIAS.md",
+      "sha256": "631732aea92ecdc23867628a0b5b9788a1f394ce460673a83eaa0f5588726fa2",
+      "git_blob_sha1": "6d8665bdbdcd5584e5bac7c31e6dbfe09e715659",
+      "bytes": 4100
+    },
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/finite_alias_probe.py",
+      "sha256": "ceaa8f8f1e33a1797bb168ed46c8c7f95fe8ce5eb49e2f1030482968bcb7677d",
+      "git_blob_sha1": "decf9c097f8d7e4117987d28a3987340f0386a72",
+      "bytes": 2349
+    },
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/finite_alias_oracle.py",
+      "sha256": "dd0bac9043797deb84e0b07718616a3fb734fbf7921689ee4469d0d00a9fce90",
+      "git_blob_sha1": "acafb1f7ff98be9ec05a64d38455dbdac28cd83e",
+      "bytes": 789
+    },
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/finite_alias_oracle.log",
+      "sha256": "bbf2a87f4be50ab9f8634f108c8eb3830b0ca1e765f5d55c559fc0f4b1a83318",
+      "git_blob_sha1": "94b24a31ce8b99ac08ac6cbdce63b4ee60041bcd",
+      "bytes": 806
+    },
+    {
+      "path": "research/2026-10-29/golden_gamma_farey_twist/finite_alias_tests.log",
+      "sha256": "2000ec14c44ef0ad4a29adb48efa9dfe17caa1be7a4f5a5cd88066f8abf63c9a",
+      "git_blob_sha1": "48e436a2f1bb92fd12c2277401d924a1515685dc",
+      "bytes": 3927
+    },
+    {
+      "path": "tests/test_finite_alias_probe.py",
+      "sha256": "b0660b0a065bf9030a4aa632fda0cfed7a0c9f933c776419f903b388c87e861e",
+      "git_blob_sha1": "d036bc841c67c20555011446d465da88071b872b",
+      "bytes": 1658
+    }
+  ]
+}

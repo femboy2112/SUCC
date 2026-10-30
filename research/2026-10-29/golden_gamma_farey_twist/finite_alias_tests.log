@@ -1,0 +1,37 @@
+test_binary_small (test_finite_alias_probe.TestFiniteIndistinguishability.test_binary_small) ... ok
+test_fourier_lower_modes_exactly_blind (test_finite_alias_probe.TestFiniteIndistinguishability.test_fourier_lower_modes_exactly_blind) ... ok
+test_hexadecimal_depth_one_to_three (test_finite_alias_probe.TestFiniteIndistinguishability.test_hexadecimal_depth_one_to_three) ... ok
+test_negative_and_bad_inputs (test_finite_alias_probe.TestFiniteIndistinguishability.test_negative_and_bad_inputs) ... ok
+test_periodic_rational_bad_global (test_finite_alias_probe.TestFiniteIndistinguishability.test_periodic_rational_bad_global) ... ok
+test_coprime_transform_group (test_golden_gamma_farey_twist.TestArithmeticRotation.test_coprime_transform_group) ... ok
+test_matrix_squared (test_golden_gamma_farey_twist.TestArithmeticRotation.test_matrix_squared) ... ok
+test_nonprimitive_input_rejected (test_golden_gamma_farey_twist.TestArithmeticRotation.test_nonprimitive_input_rejected) ... ok
+test_primitive_odd_twist (test_golden_gamma_farey_twist.TestArithmeticRotation.test_primitive_odd_twist) ... ok
+test_pure_parity_classes (test_golden_gamma_farey_twist.TestArithmeticRotation.test_pure_parity_classes) ... ok
+test_beta_invalid (test_golden_gamma_farey_twist.TestArithmeticTiling.test_beta_invalid) ... ok
+test_edge_beta_gluing (test_golden_gamma_farey_twist.TestArithmeticTiling.test_edge_beta_gluing) ... ok
+test_farey_mutation_rejected (test_golden_gamma_farey_twist.TestArithmeticTiling.test_farey_mutation_rejected) ... ok
+test_farey_triangle_and_mediant (test_golden_gamma_farey_twist.TestArithmeticTiling.test_farey_triangle_and_mediant) ... ok
+test_gamma_harmonic_jet (test_golden_gamma_farey_twist.TestArithmeticTiling.test_gamma_harmonic_jet) ... ok
+test_rank_positive_totient_cototient (test_golden_gamma_farey_twist.TestArithmeticTiling.test_rank_positive_totient_cototient) ... ok
+test_totient_reference (test_golden_gamma_farey_twist.TestArithmeticTiling.test_totient_reference) ... ok
+test_triangle_transport (test_golden_gamma_farey_twist.TestArithmeticTiling.test_triangle_transport) ... ok
+test_defect_intervals_nested (test_golden_gamma_farey_twist.TestOilyMobius.test_defect_intervals_nested) ... ok
+test_heat_coefficient_rejects_primitive_mutation (test_golden_gamma_farey_twist.TestOilyMobius.test_heat_coefficient_rejects_primitive_mutation) ... ok
+test_independent_positive_heat_certificate (test_golden_gamma_farey_twist.TestOilyMobius.test_independent_positive_heat_certificate) ... ok
+test_mobius_values (test_golden_gamma_farey_twist.TestOilyMobius.test_mobius_values) ... ok
+test_primitive_probability_bounds (test_golden_gamma_farey_twist.TestOilyMobius.test_primitive_probability_bounds) ... ok
+test_probability_bruteforce_controls (test_golden_gamma_farey_twist.TestOilyMobius.test_probability_bruteforce_controls) ... ok
+test_tail_bound_rejects_mutation (test_golden_gamma_farey_twist.TestOilyMobius.test_tail_bound_rejects_mutation) ... ok
+test_tight_defect_interval (test_golden_gamma_farey_twist.TestOilyMobius.test_tight_defect_interval) ... ok
+test_totient_heat_exact_coefficients (test_golden_gamma_farey_twist.TestOilyMobius.test_totient_heat_exact_coefficients) ... ok
+test_eisenstein_positive_nonzero_spectral_coefficients (test_golden_gamma_farey_twist.TestOriginalArithmetic.test_eisenstein_positive_nonzero_spectral_coefficients) ... ok
+test_exact_forcing_four_poles (test_golden_gamma_farey_twist.TestOriginalArithmetic.test_exact_forcing_four_poles) ... ok
+test_literal_zero_seed_prefix (test_golden_gamma_farey_twist.TestOriginalArithmetic.test_literal_zero_seed_prefix) ... ok
+test_orbit_recurrence (test_golden_gamma_farey_twist.TestOriginalArithmetic.test_orbit_recurrence) ... ok
+test_sigma_divisor (test_golden_gamma_farey_twist.TestOriginalArithmetic.test_sigma_divisor) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 0.016s
+
+OK

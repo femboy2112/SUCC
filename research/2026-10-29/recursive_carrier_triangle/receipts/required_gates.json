@@ -1,0 +1,59 @@
+[
+  {
+    "gate": "provenance",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/verify_provenance.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.032
+  },
+  {
+    "gate": "foundations",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/observer_foundations_probe.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.072
+  },
+  {
+    "gate": "ordinal",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "scripts/ordinal_succ_report_probe.py"
+    ],
+    "returncode": 0,
+    "seconds": 2.112
+  },
+  {
+    "gate": "focused",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_recursive_carrier_triangle.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.37
+  },
+  {
+    "gate": "oily_baseline",
+    "command": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_oily_macaroni_transfer.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.28
+  }
+]

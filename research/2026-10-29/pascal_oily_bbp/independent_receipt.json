@@ -1,0 +1,62 @@
+{
+  "source": "four signed BBP poles, U0=0 not changed",
+  "positive_symbolic_shift_coeffs": [
+    "30720",
+    "353792",
+    "1664288",
+    "4085200",
+    "5505025",
+    "3848538",
+    "1085112"
+  ],
+  "q0_first_correction": "-151/960",
+  "rank2_pgf_correction": "-(z - 1)*(511*z - 302)/(120*(z - 2)**4)",
+  "rank4_pgf_correction": "-(z - 1)*(751*z - 302)/(60*(z - 2)**6)",
+  "fixed_q_shift": "-1231/240 + 2671*sqrt(5)/1200",
+  "Omega_shift": "293/60 - 2671*sqrt(5)/1200",
+  "rank2_Omega_limit": "0.040818323848361987598074744283235687",
+  "held_out_numerical_rows": [
+    {
+      "n": 5,
+      "finite_fixed": "0.3515250335476316115160098",
+      "finite_logmean": "0.367966146543924937892246",
+      "Omega_n": "0.01644111299629332637623621",
+      "scaled_Omega_defect": "-0.12188605426034330611",
+      "predicted_Omega_defect": "-0.09378130658494856592408573"
+    },
+    {
+      "n": 10,
+      "finite_fixed": "0.366682716985621965172881",
+      "finite_logmean": "0.3968747669750418188938772",
+      "Omega_n": "0.03019204998941985372099616",
+      "scaled_Omega_defect": "-0.10626273858942133877",
+      "predicted_Omega_defect": "-0.09378130658494856592408573"
+    },
+    {
+      "n": 20,
+      "finite_fixed": "0.3743371228439721719251925",
+      "finite_logmean": "0.4101708979182704209037561",
+      "Omega_n": "0.03583377507429824897856363",
+      "scaled_Omega_defect": "-0.09969097548127477239",
+      "predicted_Omega_defect": "-0.09378130658494856592408573"
+    },
+    {
+      "n": 40,
+      "finite_fixed": "0.3781573993588001490314636",
+      "finite_logmean": "0.4165592250561988414247206",
+      "Omega_n": "0.03840182569739869239325698",
+      "scaled_Omega_defect": "-0.096659926038531808193",
+      "predicted_Omega_defect": "-0.09378130658494856592408573"
+    },
+    {
+      "n": 80,
+      "finite_fixed": "0.3800634466580890552151483",
+      "finite_logmean": "0.4196917416002987188187644",
+      "Omega_n": "0.03962829494220966360361612",
+      "scaled_Omega_defect": "-0.095202312492185919557",
+      "predicted_Omega_defect": "-0.09378130658494856592408573"
+    }
+  ],
+  "pi_normality_proved": false,
+  "source_selected_saving_proved": false
+}
