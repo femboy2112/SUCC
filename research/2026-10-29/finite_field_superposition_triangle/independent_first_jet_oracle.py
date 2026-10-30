@@ -18,7 +18,7 @@ def main():
     assert sp.diff(Q(y),y).subs(y,0)==15
     assert sp.diff(Q(y),y,2).subs(y,0)==-59
     # Positive distinct source with identical first two endpoint derivatives.
-    q_hidden_mutant = Q(y)*(1 + y**2/(1+y**2))
+    q_hidden_mutant = Q(y)+(1-sp.exp(-y))**3
     assert sp.diff(q_hidden_mutant,y).subs(y,0)==15
     assert sp.diff(q_hidden_mutant,y,2).subs(y,0)==-59
     assert sp.simplify(q_hidden_mutant-Q(y)) != 0
