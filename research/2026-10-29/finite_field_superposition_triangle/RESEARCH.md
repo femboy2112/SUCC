@@ -252,6 +252,19 @@ The difference is exactly the authentic `Q''(0)=-59` contribution. An independen
 
 The two distinct first jets show why `Omega_OM` or a universal Gamma limit cannot alone authenticate π. Source-specific *finite defects*, attached to correctly labeled observations, are the right objects to preserve.
 
+
+### The first jet does NOT uniquely identify the full four-pole source
+
+A more hostile positive extra-pole source is, for any fixed `epsilon>0`,
+
+```text
+Q_epsilon(x) = Q(x) + epsilon (1-exp(-x))³ > 0,
+R_epsilon(a) = R(a) + epsilon[
+                  1/a-3/(a+1)+3/(a+2)-1/(a+3)].
+```
+
+Because the added function vanishes to order **three** at the origin, it preserves `Q_epsilon'(0)=15` and `Q_epsilon''(0)=-59`. It therefore has the **same** Gamma rank-two endpoint and the **same** `1/n` harmonic first correction, while its entire finite source transform and higher jets are different. The independent exact oracle checks the first two derivatives of this explicit mutant. Thus the original-versus-`15x` difference `-59/320` is a valid *discriminator against that fake*, **not a unique signature characterizing all possible sources**. A source-identification theorem needs full pole data and/or independent higher-order holdouts.
+
 ## 6. The selected BBP point, frequency transport and literal carry: the missing boundary
 
 For the genuine deterministic orbit, define `x_n(s)={U_n(s)}` and
