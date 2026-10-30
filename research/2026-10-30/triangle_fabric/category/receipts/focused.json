@@ -1,0 +1,26 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    ".",
+    "-p",
+    "test_*.py",
+    "-v"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-triangle-fabric/research/2026-10-30/triangle_fabric/category",
+  "start_utc": "2026-10-30T22:32:58.626356+00:00",
+  "timeout_seconds": 180,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.369,
+  "end_utc": "2026-10-30T22:32:58.995643+00:00",
+  "log_sha256": "cfe33eea9aef04cf3ef047b1f8a25daae8c8145d9a9be24c194c0d2a3507c688",
+  "log_bytes": 1471
+}

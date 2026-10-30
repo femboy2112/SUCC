@@ -1,0 +1,30 @@
+[
+  {
+    "command": [
+      "/usr/bin/python3",
+      "-m",
+      "unittest",
+      "-v",
+      "test_filters"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-triangle-fabric/research/2026-10-30/triangle_fabric/signed",
+    "started_utc": "2026-10-30T22:31:22.510354+00:00",
+    "elapsed_seconds": 0.5254621790372767,
+    "exit_code": 0,
+    "log": "receipts/tests-initial.log",
+    "log_sha256": "7b205ed772a3a7326160fb0e29cddd35cdcca5ef6c559a97808941b3ed3ff857"
+  },
+  {
+    "command": [
+      "/usr/bin/python3",
+      "probe.py",
+      "receipts/probe.json"
+    ],
+    "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-triangle-fabric/research/2026-10-30/triangle_fabric/signed",
+    "started_utc": "2026-10-30T22:31:23.036017+00:00",
+    "elapsed_seconds": 0.14397180499508977,
+    "exit_code": 0,
+    "log": "receipts/probe.log",
+    "log_sha256": "4a902d2806cb2fd09c936fab69bc880e1e635c5e960af2042e27284ba3c8a1ce"
+  }
+]
