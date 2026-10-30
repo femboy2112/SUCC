@@ -1,5 +1,14 @@
 # Claim Index
 
+**2026-10-30 Human T-action, snapshot reconstruction, and Dirac frame reset (research draft):**
+[HTS-01–07 scoped claims](CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md) ·
+[formal frame-reset / inverse-problem dossier](../research/2026-10-30/HUMAN_T_ACTION_SNAPSHOT_RECONSTRUCTION.md) ·
+[exact finite regression](../tests/test_human_t_action_snapshot.py).
+Digit + residual reconstruct the radix predecessor, and a chosen expanding local frame
+has a Dirac-atomic reset current. Continuous interpolation and temporal alias controls
+show that the delta is not automatically a physical impulse or generator identification.
+The authentic four-pole π Weyl cancellation and RH remain OPEN.
+
 **2026-10-27 periodic-observer and moving-lag continuation on #317:**
 [scoped claims](CLAIM_SUPPLEMENT_CARRY_DEFECT.md) ·
 [proof synthesis](../research/2026-10-27/CARRY_DEFECT_SYNTHESIS.md).
