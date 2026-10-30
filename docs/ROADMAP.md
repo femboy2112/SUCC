@@ -750,3 +750,22 @@ See the [precise handoff](../handoffs/ASTRA_ULTRA_REALITY_PIN_NEXT_2026-10-22.md
 ## Academic Main VIII priority
 
 The [current frontier](academic_main_viii/research_frontier.md) isolates the weighted high-divisor incidence sum for `2/3<=t<1`. The effective rate below `2/3` and divergence at `t>=1` are established paper results. Rank drop, local densities and finite energy shells each require a separate quantitative transport theorem before a global conclusion.
+
+## Triangle Genesis: the post-Main-XV frontier (2026-10-29)
+
+With Operation Main XV the **operational triangle** (see [`OPERATIONAL_TRIANGLE.md`](OPERATIONAL_TRIANGLE.md))
+becomes the primary research apparatus. The principal remaining target is a genuinely new,
+source-specific, **zero-seed-sensitive signed intertime estimate** for
+`(1/N) sum_{n<=N} e(h U_n(0))`, `h != 0`, built from all four authentic signed BBP poles with
+`U_0=0`, the full radix-16 carries and four-bit Walsh sectors, the `q=3` orientation and `q=6`
+primitive/cototient grades, the retained source posterior with joint Gamma/grade observables, and
+the moving-grade / shrinking-target resolution of Kepler III (#384). The estimate must **fail**
+on the coherent same-forcing counterseed `s*=-pi/16` (nonnormal orbit), Gamma-matched fakes,
+higher-jet-matched mutants, wrong/sign-changed poles, prematurely averaged sources, phase aliases,
+nonnormal digit controls (Kempner, de Bruijn), and independent holdouts — and must **not** reduce
+to invertible filtering, scalar `O(log N / N)` reweighting, source-only phasors, or a restatement
+of the Weyl criterion. The joint 59-jet and the seed-resolved Fourier tomography are instruments
+for *choosing informed observers*, not sufficient proofs: averaging the seed displacement vanishes
+for every seed, an exact no-go. These are **open proof obligations**. π base-16/base-3 normality
+and RH remain OPEN. Post-main handoff:
+`research/2026-10-29/main_xv_integration/MAIN_XV_POST_INTEGRATION_HANDOFF.md`.

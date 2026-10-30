@@ -579,3 +579,18 @@ requires finite initial and successor menus. Cluster modules are research
 adapters with declared mathematical inputs, not empirical source authenticators.
 The scalar kernel interface does not claim arbitrary noncommutative quantum
 factorization or physical intervention equivalence.
+
+## The operational triangle (formal apparatus, 2026-10-29)
+
+Operation Main XV installs the **operational triangle** as SUCC's typed formal interface for
+observational knowledge: a finite-path/source-update kernel `K`, a superposed endpoint field that
+retains mass **and** the source posterior, and explicit observation/selection maps `O` (harmonic,
+Gamma, logarithmic, geometric, signed-character, literal-carry). Path superposition commutes with
+linear observers; normalization, logarithms, parity/primitive projection, posterior resetting, and
+literal integer carries each carry a **separately accounted defect** — memory is not curvature.
+The author's original Harmonic / Golden-ratio / Euler–Mascheroni triangle and Oily–Macaroni
+(`Omega_OM = phi^{-1} - gamma`) are preserved as the rank-two (`r=2, theta=1`) specialization,
+with their author provenance intact. This is a formal apparatus, **not** a universal physical law
+or a proof of π normality / RH, both of which remain OPEN. Full interface:
+[`OPERATIONAL_TRIANGLE.md`](OPERATIONAL_TRIANGLE.md); frontier dossiers in
+`research/2026-10-29/operational_triangle_frontier/`.

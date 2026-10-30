@@ -2,6 +2,22 @@
 
 **Author:** Ravel. **Date:** 2026-10-27. **Repo:** SUCC @ `73181be`, branch `research/prime-ladder-ravel-audit-2026-10-27`.
 
+> **CORRECTION (Operation Main XV integration, 2026-10-29).** Step **R4** below —
+> "π transcendental ⟹ not eventually periodic ⟹ the ×16-orbit closure has positive
+> *topological* entropy," labelled *PROVED classical* — is **not correct as a general
+> bridge**, and the **R5 equivalence** it feeds (vanishing ×3 defects ⟺ π normality) is
+> therefore **UNVERIFIED for π**, not proved. Non-eventual-periodicity does not imply positive
+> topological entropy (e.g. Sturmian orbits), and positive topological entropy of an orbit
+> closure does not imply positive *measure-theoretic* entropy of its weak-\* limits. A decisive
+> exact countermodel (the Kempner number: transcendental, irrationality exponent 2, zero-entropy
+> binary orbit, ×2×3-invariant limit δ₀, yet not normal) is given in the corrective firewall
+> [`../2026-10-27-furstenberg-kempner/KEMPNER_FURSTENBERG_FIREWALL.md`](../2026-10-27-furstenberg-kempner/KEMPNER_FURSTENBERG_FIREWALL.md)
+> (FK-1, FK-2, FK-5), together with the corrected conditional theorem (which assumes the
+> Furstenberg ×2×3 measure-rigidity conjecture *and* a uniform anti-concentration hypothesis).
+> Read the chain below as the author's original draft with **R4/R5 superseded**; the honest
+> status is: ×2-invariance automatic, ×3-invariance and atomlessness/entropy **open for π**,
+> and the Furstenberg conjecture itself **OPEN**. **π base-16 normality and RH remain OPEN.**
+
 ## What this is and is not
 
 This is **not** a proof of π normality. It is a **proved reduction chain** that collapses the
