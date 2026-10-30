@@ -1,0 +1,71 @@
+{
+  "title": "DeepSeek V4 Pro cylinder launchpad manifest",
+  "parent_commit": "5f05181339ea97a56999ca8b8ab10a2009c6c84d",
+  "parent_pr": 407,
+  "source_subdir": "research/2026-10-30/deepseek_cylinder_fanout",
+  "branch": "research/deepseek-v4-cylinder-proof-forge-2026-10-30",
+  "authority": "Pinned remote blob bytes. Mathematical results still require independent review. No normality proof.",
+  "local_tests": {
+    "new_unit_tests": "9/9 passed",
+    "parent_unit_tests": "18/18 passed",
+    "six_scenario_probe": "6/6 passed",
+    "exhaustive_small_alphabet_cases": "54584 checked without observed violation"
+  },
+  "source_files": [
+    {
+      "path": "DEEPSEEK_V4_PRO_FANOUT.md",
+      "git_blob_sha1": "aa5328ec8496f05c89aa6bf03312b393a5c52a6c",
+      "utf8_chars": 12284
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha1": "3e123dc8d3b5ab2709e0554aa21ddae4f98afbab",
+      "utf8_chars": 2241
+    },
+    {
+      "path": "MOVING_SCALE_THEOREM.md",
+      "git_blob_sha1": "c5570a401b214bca50febea953469a301aa988f7",
+      "utf8_chars": 4861
+    },
+    {
+      "path": "HYPOTHESIS_LEDGER.md",
+      "git_blob_sha1": "3ec3797e781a0bfa423eea58727265bd5a9fd0f7",
+      "utf8_chars": 3117
+    },
+    {
+      "path": "VALIDATION.md",
+      "git_blob_sha1": "51793dcf4748c8c23681ddb3e386dccc796eb530",
+      "utf8_chars": 2231
+    },
+    {
+      "path": "moving_certificate.py",
+      "git_blob_sha1": "7698b02b330e3fc1cbcef5dd43631a63bc3ea7eb",
+      "utf8_chars": 3342
+    },
+    {
+      "path": "test_moving_certificate.py",
+      "git_blob_sha1": "fdd53e45c7f45e7ff3c853f33e2de4c34a99f836",
+      "utf8_chars": 2662
+    },
+    {
+      "path": "tests.log",
+      "git_blob_sha1": "576f4c6129d8675283fa414ec90e50551c8bc2b0",
+      "utf8_chars": 1219
+    },
+    {
+      "path": "probe_receipt.json",
+      "git_blob_sha1": "b89d0495faa8085287f22376379b448f58b1d95f",
+      "utf8_chars": 1342
+    },
+    {
+      "path": "exhaustive_probe.py",
+      "git_blob_sha1": "df9171780a31e360c903fcef620854458c34e38a",
+      "utf8_chars": 1265
+    },
+    {
+      "path": "exhaustive.log",
+      "git_blob_sha1": "da89ca2611ebcb4ae7621699cd9b60fe8a871533",
+      "utf8_chars": 107
+    }
+  ]
+}
