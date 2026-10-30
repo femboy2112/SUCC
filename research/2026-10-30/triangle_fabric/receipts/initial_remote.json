@@ -1,0 +1,854 @@
+{
+  "retrieved_at": "2026-10-30 22:27:59 UTC",
+  "prs": [
+    {
+      "pr": 390,
+      "url": "https://github.com/femboy2112/SUCC/pull/390",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Time-extruded operational triangles: exact BBP diagonal, Gamma rank jet and integer seam",
+      "base": "main",
+      "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "head": "research/time-extruded-operational-triangle-2026-10-30",
+      "head_sha": "269b6024b03b67a5732449e7cb2391a36134ccc5"
+    },
+    {
+      "pr": 391,
+      "url": "https://github.com/femboy2112/SUCC/pull/391",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Spacetime Triangle: native zero spine, triangular Fourier transport and rank-two temporal cusp",
+      "base": "main",
+      "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "head": "research/spacetime-triangle-zero-spine-fourier-2026-10-30",
+      "head_sha": "7ce94d38479c22c3d427753812e38207515dc868"
+    },
+    {
+      "pr": 392,
+      "url": "https://github.com/femboy2112/SUCC/pull/392",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Superimposed time-horizontal SUCC triangles: exact 2D Fourier, q6 covariance and BBP 59-jet",
+      "base": "research/time-extruded-operational-triangle-2026-10-30",
+      "base_sha": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+      "head": "research/double-triangle-shared-field-fourier-2026-10-30",
+      "head_sha": "00b073fb9adedcda91cc499540add10dfcfabc66"
+    },
+    {
+      "pr": 393,
+      "url": "https://github.com/femboy2112/SUCC/pull/393",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Lorentz-clock triangle: projective boosts, golden integral isometry, and source-Fourier firewall",
+      "base": "research/double-triangle-shared-field-fourier-2026-10-30",
+      "base_sha": "00b073fb9adedcda91cc499540add10dfcfabc66",
+      "head": "research/lorentz-clock-triangular-tiling-2026-10-30",
+      "head_sha": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9"
+    },
+    {
+      "pr": 394,
+      "url": "https://github.com/femboy2112/SUCC/pull/394",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] SUCC arithmetic energy–momentum: golden norm, running four-pole mass and shared-triangle covariance",
+      "base": "research/lorentz-clock-triangular-tiling-2026-10-30",
+      "base_sha": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+      "head": "research/arithmetic-energy-momentum-shell-2026-10-30",
+      "head_sha": "3d9c16063e7a0ec69f9713065f5007375ea3a917"
+    },
+    {
+      "pr": 395,
+      "url": "https://github.com/femboy2112/SUCC/pull/395",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Frame-Reset Crucible: normal Stoneham 3/5, nonnormal 2, choice and BBP occupancy gate",
+      "base": "main",
+      "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "head": "research/normal-digit-frame-reset-stoneham-choice-2026-10-30",
+      "head_sha": "2d4fcc6db5657a2559b0e28ca8c8e1413b6c4548"
+    },
+    {
+      "pr": 396,
+      "url": "https://github.com/femboy2112/SUCC/pull/396",
+      "state": "open",
+      "draft": true,
+      "title": "Research: human T-action, Dirac frame resets, and inverse snapshot reconstruction",
+      "base": "main",
+      "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "head": "research/human-t-action-snapshot-dirac-2026-10-30",
+      "head_sha": "adb0a53a4b86793b084b8ea122e88674a9c74adc"
+    },
+    {
+      "pr": 397,
+      "url": "https://github.com/femboy2112/SUCC/pull/397",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Fibonacci information clock × epicycle-demon observer: exact KL jets and conditional normality limits",
+      "base": "main",
+      "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "head": "research/fibonacci-epicycle-demon-normality-2026-10-30",
+      "head_sha": "992b3f9d77f1016300f1daf7db3c88da7392269b"
+    },
+    {
+      "pr": 398,
+      "url": "https://github.com/femboy2112/SUCC/pull/398",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] BBP prime stroboscope: p-adic frame reset, pole involution and real-circle CRT firewall",
+      "base": "main",
+      "base_sha": "e18ba565ca540adb7edf3292f5593929e76d91c5",
+      "head": "research/bbp-prime-stroboscopic-crt-2026-10-30",
+      "head_sha": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3"
+    },
+    {
+      "pr": 399,
+      "url": "https://github.com/femboy2112/SUCC/pull/399",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Sharp BBP conductor growth, prime-power transport, and signed CRT barriers",
+      "base": "research/bbp-prime-stroboscopic-crt-2026-10-30",
+      "base_sha": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+      "head": "research/bbp-arithmetic-barrier-2026-10-30",
+      "head_sha": "fe9da9b0942f046cc67b02c4fed825ef74aa675a"
+    },
+    {
+      "pr": 400,
+      "url": "https://github.com/femboy2112/SUCC/pull/400",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Gamma–prime–real holonomy: p=2 affine cocycle, all-horizon mutants, exact phase budget",
+      "base": "research/bbp-arithmetic-barrier-2026-10-30",
+      "base_sha": "fe9da9b0942f046cc67b02c4fed825ef74aa675a",
+      "head": "research/gamma-prime-real-holonomy-2026-10-30",
+      "head_sha": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0"
+    },
+    {
+      "pr": 401,
+      "url": "https://github.com/femboy2112/SUCC/pull/401",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Complete Gauss coefficient fiber and sharp BBP seed-energy barrier",
+      "base": "research/gamma-prime-real-holonomy-2026-10-30",
+      "base_sha": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "head": "research/gamma-twist-selected-phase-2026-10-30",
+      "head_sha": "abf51bf061f583d0e38a915c2e1bae5e28ddaace"
+    },
+    {
+      "pr": 402,
+      "url": "https://github.com/femboy2112/SUCC/pull/402",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Third spatial interaction axis: original BBP three-atom H3, 164 angular jet, 3+1 wave firewall",
+      "base": "research/fibonacci-epicycle-demon-normality-2026-10-30",
+      "base_sha": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+      "head": "research/three-channel-native-h3-wave-2026-10-30",
+      "head_sha": "384fe179250a172c2e667c387fdb55bf9589e7a0"
+    },
+    {
+      "pr": 403,
+      "url": "https://github.com/femboy2112/SUCC/pull/403",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Selected BBP zero boundary: Diophantine phase slips and logarithmic signed saving",
+      "base": "research/gamma-twist-selected-phase-2026-10-30",
+      "base_sha": "abf51bf061f583d0e38a915c2e1bae5e28ddaace",
+      "head": "research/selected-zero-boundary-diophantine-slip-2026-10-30",
+      "head_sha": "5f350af7808532e55d74e80c948c02bb385c6e70"
+    },
+    {
+      "pr": 404,
+      "url": "https://github.com/femboy2112/SUCC/pull/404",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Noether × radix-16 Ward: exact source/carry charge, first 17-factor and 34th-moment resonances",
+      "base": "research/three-channel-native-h3-wave-2026-10-30",
+      "base_sha": "384fe179250a172c2e667c387fdb55bf9589e7a0",
+      "head": "research/noether-radix-ward-2026-10-30",
+      "head_sha": "419cf7c280e7be11542ecbd6edef6c70fa7050e5"
+    },
+    {
+      "pr": 405,
+      "url": "https://github.com/femboy2112/SUCC/pull/405",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] Zero-boundary dispersion: uniform slips, sharp coherence controls and signed frequency bands",
+      "base": "research/selected-zero-boundary-diophantine-slip-2026-10-30",
+      "base_sha": "5f350af7808532e55d74e80c948c02bb385c6e70",
+      "head": "research/zero-boundary-dispersion-2026-10-30",
+      "head_sha": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5"
+    },
+    {
+      "pr": 406,
+      "url": "https://github.com/femboy2112/SUCC/pull/406",
+      "state": "open",
+      "draft": true,
+      "title": "[DRAFT] COUNT-OUT: quotient universal radix counting, retain BBP boundary and prove exact source dephasing law",
+      "base": "research/noether-radix-ward-2026-10-30",
+      "base_sha": "419cf7c280e7be11542ecbd6edef6c70fa7050e5",
+      "head": "research/count-out-observer-source-2026-10-30",
+      "head_sha": "ba66c2e4217d1d6eec407b142ed467c48e39ed1c"
+    }
+  ],
+  "ci": [
+    {
+      "pr": 390,
+      "sha": "269b6024b03b67a5732449e7cb2391a36134ccc5",
+      "workflow_runs": [
+        {
+          "id": 41006780719,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4365,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780719/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780719/logs",
+          "workflow_id": 380913247
+        },
+        {
+          "id": 41006780665,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 632,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780665/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780665/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 41006780812,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 443,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780812/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780812/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41006780702,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 755,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780702/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41006780702/logs",
+          "workflow_id": 385135609
+        }
+      ]
+    },
+    {
+      "pr": 391,
+      "sha": "7ce94d38479c22c3d427753812e38207515dc868",
+      "workflow_runs": [
+        {
+          "id": 41008225000,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4372,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008225000/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008225000/logs",
+          "workflow_id": 380913247
+        },
+        {
+          "id": 41008224570,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 446,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224570/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224570/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41008224668,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 758,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224668/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224668/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 41008224421,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 635,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224421/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41008224421/logs",
+          "workflow_id": 386978686
+        }
+      ]
+    },
+    {
+      "pr": 392,
+      "sha": "00b073fb9adedcda91cc499540add10dfcfabc66",
+      "workflow_runs": []
+    },
+    {
+      "pr": 393,
+      "sha": "903fdb77ba92f14c620d7c0ab50229a2823b2ac9",
+      "workflow_runs": []
+    },
+    {
+      "pr": 394,
+      "sha": "3d9c16063e7a0ec69f9713065f5007375ea3a917",
+      "workflow_runs": []
+    },
+    {
+      "pr": 395,
+      "sha": "2d4fcc6db5657a2559b0e28ca8c8e1413b6c4548",
+      "workflow_runs": [
+        {
+          "id": 41074409382,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 447,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409382/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409382/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41074409491,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4379,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409491/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409491/logs",
+          "workflow_id": 380913247
+        },
+        {
+          "id": 41074409553,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 759,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409553/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409553/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 41074409377,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 636,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409377/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074409377/logs",
+          "workflow_id": 386978686
+        }
+      ]
+    },
+    {
+      "pr": 396,
+      "sha": "adb0a53a4b86793b084b8ea122e88674a9c74adc",
+      "workflow_runs": [
+        {
+          "id": 41074898424,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4381,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898424/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898424/logs",
+          "workflow_id": 380913247
+        },
+        {
+          "id": 41074898434,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 637,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898434/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898434/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 41074898409,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 448,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898409/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898409/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41074898400,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 760,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898400/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41074898400/logs",
+          "workflow_id": 385135609
+        }
+      ]
+    },
+    {
+      "pr": 397,
+      "sha": "992b3f9d77f1016300f1daf7db3c88da7392269b",
+      "workflow_runs": [
+        {
+          "id": 41095159957,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 778,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159957/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159957/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 41095159533,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 466,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159533/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159533/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41095159606,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 655,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159606/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159606/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 41095159511,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4423,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159511/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41095159511/logs",
+          "workflow_id": 380913247
+        }
+      ]
+    },
+    {
+      "pr": 398,
+      "sha": "1a1524de28b155139d8fe84ea90fc2f117fbb9f3",
+      "workflow_runs": [
+        {
+          "id": 41078534381,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4390,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534381/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534381/logs",
+          "workflow_id": 380913247
+        },
+        {
+          "id": 41078534253,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 450,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534253/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534253/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41078534554,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 762,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534554/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534554/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 41078534284,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 639,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534284/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41078534284/logs",
+          "workflow_id": 386978686
+        }
+      ]
+    },
+    {
+      "pr": 399,
+      "sha": "fe9da9b0942f046cc67b02c4fed825ef74aa675a",
+      "workflow_runs": [
+        {
+          "id": 41088348189,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 456,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348189/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348189/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41088348518,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 768,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348518/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348518/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 41088348514,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 645,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348514/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348514/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 41088348258,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4402,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348258/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41088348258/logs",
+          "workflow_id": 380913247
+        }
+      ]
+    },
+    {
+      "pr": 400,
+      "sha": "2b0628f52e9d88993c2e3ffa30b9748adfb781f0",
+      "workflow_runs": [
+        {
+          "id": 41094840748,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 776,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840748/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840748/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 41094840450,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 653,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840450/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840450/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 41094840607,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 464,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840607/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840607/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41094840816,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4419,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840816/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41094840816/logs",
+          "workflow_id": 380913247
+        }
+      ]
+    },
+    {
+      "pr": 401,
+      "sha": "abf51bf061f583d0e38a915c2e1bae5e28ddaace",
+      "workflow_runs": [
+        {
+          "id": 41099230316,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 779,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230316/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230316/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 41099230183,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4441,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230183/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230183/logs",
+          "workflow_id": 380913247
+        },
+        {
+          "id": 41099230193,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 467,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230193/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230193/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41099230172,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 656,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230172/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41099230172/logs",
+          "workflow_id": 386978686
+        }
+      ]
+    },
+    {
+      "pr": 402,
+      "sha": "384fe179250a172c2e667c387fdb55bf9589e7a0",
+      "workflow_runs": [
+        {
+          "id": 41100210823,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 780,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210823/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210823/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 41100210404,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 468,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210404/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210404/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41100210406,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 657,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210406/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210406/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 41100210453,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4451,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210453/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41100210453/logs",
+          "workflow_id": 380913247
+        }
+      ]
+    },
+    {
+      "pr": 403,
+      "sha": "5f350af7808532e55d74e80c948c02bb385c6e70",
+      "workflow_runs": [
+        {
+          "id": 41117070214,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 781,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070214/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070214/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 41117070313,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 658,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070313/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070313/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 41117070361,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 469,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070361/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070361/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41117070086,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4454,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070086/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117070086/logs",
+          "workflow_id": 380913247
+        }
+      ]
+    },
+    {
+      "pr": 404,
+      "sha": "419cf7c280e7be11542ecbd6edef6c70fa7050e5",
+      "workflow_runs": [
+        {
+          "id": 41117270771,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 470,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117270771/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117270771/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41117270648,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 659,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117270648/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117270648/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 41117270706,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 782,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117270706/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117270706/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 41117270851,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4457,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117270851/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41117270851/logs",
+          "workflow_id": 380913247
+        }
+      ]
+    },
+    {
+      "pr": 405,
+      "sha": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+      "workflow_runs": [
+        {
+          "id": 41120810326,
+          "name": "Collective observer source and certificate replay",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 661,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41120810326/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41120810326/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 41120810270,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 472,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41120810270/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41120810270/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41120810278,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 784,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41120810278/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41120810278/logs",
+          "workflow_id": 385135609
+        },
+        {
+          "id": 41120810283,
+          "name": "Observational SUCC validation",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 4461,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41120810283/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41120810283/logs",
+          "workflow_id": 380913247
+        }
+      ]
+    },
+    {
+      "pr": 406,
+      "sha": "ba66c2e4217d1d6eec407b142ed467c48e39ed1c",
+      "workflow_runs": [
+        {
+          "id": 41138097292,
+          "name": "Observational SUCC validation",
+          "status": "in_progress",
+          "conclusion": null,
+          "run_number": 4464,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41138097292/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41138097292/logs",
+          "workflow_id": 380913247
+        },
+        {
+          "id": 41138097332,
+          "name": "Collective observer source and certificate replay",
+          "status": "in_progress",
+          "conclusion": null,
+          "run_number": 662,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41138097332/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41138097332/logs",
+          "workflow_id": 386978686
+        },
+        {
+          "id": 41138097441,
+          "name": "Institute theorem contracts and core Lean",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 473,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41138097441/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41138097441/logs",
+          "workflow_id": 388839929
+        },
+        {
+          "id": 41138097314,
+          "name": "One Object II original source cancellation and zero-shift Schur",
+          "status": "completed",
+          "conclusion": "success",
+          "run_number": 785,
+          "jobs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41138097314/jobs",
+          "logs_url": "https://api.github.com/repos/femboy2112/SUCC/actions/runs/41138097314/logs",
+          "workflow_id": 385135609
+        }
+      ]
+    }
+  ],
+  "note": "The GitHub wrapper reports first-page pull-request-triggered runs only; empty lists are not a passing status. First attempt to write full PR bodies via argv exceeded OS argument length; this compact provenance record omits bodies."
+}

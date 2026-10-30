@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "reviewed_dossier": "research/2026-10-30/triangle_fabric/category/CATEGORICAL_ARROWS.md",
+  "reviewed_sha256": "4980a64fa70615989923f8542968d7d6ec1fd0055b5fb09eb6b267347e051276",
+  "checks": {
+    "fresh_full_grade_marginals": 27,
+    "fresh_cycle_dimensions": 10,
+    "triangle_design_rank": 7,
+    "triangle_null_dimension": 5,
+    "full_triangle_products": 9,
+    "fresh_cauchy_reconstructions": 3
+  },
+  "cycle_rows": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      2,
+      1,
+      0
+    ],
+    [
+      3,
+      2,
+      3
+    ],
+    [
+      2,
+      5,
+      8
+    ],
+    [
+      5,
+      2,
+      5
+    ],
+    [
+      6,
+      3,
+      12
+    ],
+    [
+      3,
+      7,
+      18
+    ],
+    [
+      7,
+      4,
+      21
+    ],
+    [
+      8,
+      2,
+      8
+    ],
+    [
+      4,
+      6,
+      20
+    ]
+  ],
+  "authority": "complementary same-model, not external referee",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "sympy": "1.12"
+}

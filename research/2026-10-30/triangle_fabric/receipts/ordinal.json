@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "scripts/ordinal_succ_report_probe.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-triangle-fabric",
+  "start_utc": "2026-10-30T22:31:03.065963+00:00",
+  "timeout_seconds": 240,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 3.328,
+  "end_utc": "2026-10-30T22:31:06.393493+00:00",
+  "log_sha256": "ca81a7fb1e2969167e33a7967ad6535ead65197c6aeb9b1c3bf9ae2f1a7819b6",
+  "log_bytes": 3612
+}

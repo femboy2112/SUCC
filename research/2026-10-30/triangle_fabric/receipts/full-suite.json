@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/.venv/bin/python",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_*.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-triangle-fabric",
+  "start_utc": "2026-10-30T22:27:59.869814+00:00",
+  "timeout_seconds": 2400,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.13.13 (main, Apr 14 2026, 14:28:56) [Clang 22.1.3 ]",
+  "threads": 1,
+  "git_head_at_launch": "6cf5050ff2cfd92e7a0c8876da5233be6ff117f5",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 998.18,
+  "end_utc": "2026-10-30T22:44:38.049473+00:00",
+  "log_sha256": "0a9b36c42fbce9d7ef08acbed1c3412969bed25b466cc069ef19437472b666f3",
+  "log_bytes": 11433
+}
