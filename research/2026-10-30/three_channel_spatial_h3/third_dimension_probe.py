@@ -167,6 +167,17 @@ class ThreeSpatialDimensions(unittest.TestCase):
             marks.add((carries[n+j],carries[n+j+k],carries[n+j+k+l]))
         self.assertEqual(len(marks),3)
 
+    def test_three_panel_tv_cesaro_bound_clock_constants(self):
+        # Pure rational clock inequality used in the paper's triple
+        # Poisson/Gamma source coupling; does not test pi cancellation.
+        for n in range(3,1001):
+            a=8*n-7
+            bound=F(1728*n,a*a)+F(48,a)
+            self.assertLessEqual(bound,F(63,n))
+        weights=[F((s+1)*3**s,4**(s+2)) for s in range(200)]
+        self.assertLess(abs(float(sum(weights,F(0)))-1),1e-11)
+        self.assertLess(abs(float(sum((s*w for s,w in enumerate(weights)),F(0)))-6),1e-11)
+
     def test_static_triple_fourier_kernel_has_no_wave_pole(self):
         # The static three-grade Green symbol (4-X-Y-Z)^(-2) is
         # nonzero on the three-torus. Spatial harmonics alone are not
