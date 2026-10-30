@@ -10,6 +10,7 @@
 | FFT-5 | `lambda` is marked by `G(p)=p`, `gamma` is harmonic finite part, `Omega=lambda-gamma` is `D(2)` | CLASSICAL identities plus source-marking conventions; not independent primitives |
 | FFT-6 | `E[D(J+2)]=1+log2-gamma-(1+2lambda)^(-2)` in Gamma–Poisson joint | PROVED LOCAL direct conditional Gamma computation |
 | FFT-7 | `Xi_(n,h,c)` preserves selected phase and literal carry with source-superposed grades | DEFINED / exact finite identity; no cancellation estimate |
+| FFT-7a | Exact deterministic two-step carry lift kappa^(2)_n=16kappa_n+kappa_(n+1), with original signed source and distinct seeds | PROVED LOCAL elementary branch algebra, exact rational seeds and tests; phase exponentiation loses the integer |
 | FFT-8 | Positive triangle and `-59` jet suffice to prove π normality | REFUTED as an implication by coherent same-forcing `s=-pi/16`; π normality remains OPEN |
 | FFT-9 | Triangle is literal physical quantum superposition or unique global SUCC geometry | UNVERIFIED, no physical operational transport or unique gluing supplied |
 
