@@ -151,6 +151,48 @@ This is a source-authenticated ALL-N bound on an actual *two-time* quantity, val
 
 **Firewalls:** (i) CTC-6 compares two exact representations of the *same* selected orbit and does not upper-bound Kcal for either. (ii) The hard cylinder indicators have discontinuous boundaries; transferring them requires a source-derived boundary-visitation bound. Their smoothed overlap has a clean Lipschitz budget but still lacks a bounded collision estimate. (iii) Averaging the cylinder lattice's *origin* over its translations is an analysis instrument, not randomizing π's initial boundary.
 
+### CTC-05b — rigorous comparison from smoothed to hard cylinder collisions
+
+For every base-16 level m>=2 and **every** finite selection of circle points a_1,...,a_N,
+
+```
+Q_(m,N)(a) <= (256/15) Kcal_(16^(-(m-1)),N)(a).          (CTC-7)
+```
+
+Indeed if two points belong to the **same** fixed m-cylinder of width
+`ell_m=16^(-m)`, their circle distance is less than `ell_m`. At the next coarser
+width `ell'=16*ell_m`, the tent kernel satisfies
+
+```
+K_(ell')(a_i-a_j) = (1/ell')*(1-dist/ell')
+                       >= (1/(16 ell_m))*(15/16)
+                       = (15/256)*16^m.
+```
+
+Thus the hard collision indicator, multiplied by `16^m`, is bounded **term by
+term** by `(256/15)*K_(ell')`. Sum all pairs and divide by `N^2`.
+
+This is a needed bridge: **the source-smoothed collision target suffices for the
+hard symbolic collision-entropy criterion, provided it holds across all
+refinement depths**. In particular, suppose for every epsilon>0 there exists
+C_epsilon independent of m such that for every m>=1,
+
+```
+limsup_(N->infty) Kcal_(16^(-m),N)({U_1(0)},...,{U_N(0)})
+                                  <= C_epsilon*16^(epsilon*m).      (CTC-8)
+```
+
+By CTC-6 the same fixed-scale asymptotic holds for the completed π orbit
+(the source error tends to zero as N->infty with m fixed). By CTC-7 its
+hard collision energy has subexponential depth growth. CTC-03 then proves
+base-16 normality of π. **This is a precise sufficient arithmetic research
+target, not an established inequality for the authentic BBP orbit.**
+
+The comparator works even if pair points lie on cell boundaries, because the
+hard partition is half-open and a same-cell pair has distance below the cell
+width. It makes no assumption of independent time slices, prime characters,
+or source randomness.
+
 ## CTC-06 — exact source certificate, finite calibration only
 
 The standalone Fraction probe certifies the first eight hexadecimal digits of π as `243F6A88`, using original four-pole U_n plus a bounded rational positive future tail (no π decimal digits). For the first N=256 digit-start positions, exact cylinder visits give:
@@ -180,7 +222,7 @@ The exact source update, prior/posterior triangle, prime-primary snapshot, liter
 - CTC-01/02/05/07: **PROVED LOCAL** elementary exact algebra/Fourier/finite combinatorics in stated domains.
 - CTC-03: **CLASSICAL entropy/unique-maximal-measure principle**, self-contained proof above; a new SUCC arithmetic estimate has **NOT** been derived from it.
 - CTC-04: **CLASSICAL** Haar/de Bruijn/product calibrations with exact finite controls.
-- CTC-06: **OBSERVED FINITE exact rational source certificates**, 16 focused unit tests passed.
+- CTC-06: **OBSERVED FINITE exact rational source certificates**, 18 focused unit tests passed.
 - Claim that these theorems establish π normality: **UNVERIFIED / OPEN**. No source-derived subexponential Q_m bound or selected fixed-frequency Weyl o(N) has been supplied.
 
 **Next verdict-changing instrument:** prove a source-authenticated estimate on signed context-conditioned Walsh currents at every depth, strong enough to force `Q_m=e^{o(m)}` in empirical limits, and test on the coherent counterseed, source mutants, normal Stoneham c=3/5, nonnormal Stoneham c=2 and periodic de Bruijn. Consider cylinder boundaries and moving-depth sampling before claiming any quantitative transport. One can also attack a weighted lag/prime-CRT two-time kernel directly, but it must retain complementary real phase and zero seed.

@@ -11,6 +11,7 @@ The user's proposal: extrude the operational triangle through time, turn its sid
 - CTC-03: subexponential depth growth of this collision energy is a **sufficient (indeed equivalent)** normality certificate by classical Renyi/Shannon entropy and unique maximal entropy for the full shift. The arithmetic bound remains entirely OPEN.
 - CTC-04: exact Haar mean collision law even for overlapping digit windows, plus a de Bruijn periodic false-positive at finite refinement and biased/all-zero controls.
 - CTC-05: a new-to-program explicit **four-pole Green-tail/Lipschitz** comparison between selected rational and completed pure-radix *smoothed two-time collision energies*, error < `16^(2m)/(16N)`. This is a representation bridge, not a collision saving.
+- CTC-05b: the **hard/soft cylinder domination** `Q_m <= (256/15) Kcal_(16^(-(m-1)))`, closing the logical path from a hypothetical source-derived smoothed pair bound to normality without hiding cell-boundary errors.
 - CTC-06: exact 256-position source-derived finite cylinder census through m=3, source hex prefix `243F6A88` certified without importing π digits.
 - CTC-07: finite de Bruijn graph path-current conservation with endpoint defects; insufficient for normality by itself.
 

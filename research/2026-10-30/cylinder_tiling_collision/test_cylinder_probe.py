@@ -117,8 +117,6 @@ class CylinderTests(unittest.TestCase):
                     y=Fraction(j,100*q)
                     self.assertLessEqual(abs(tent(x,q)-tent(y,q)),q*q*abs(x-y))
 
-if __name__=='__main__':
-    unittest.main(verbosity=2)
 
 class WalshExtraTests(unittest.TestCase):
     def test_walsh_is_refinement_defect_debruijn(self):
@@ -157,3 +155,34 @@ class HaarOverlapCalibration(unittest.TestCase):
     def test_haar_expectation_formula(self):
         N=256
         self.assertEqual(Fraction(1)+(Fraction(16**3-1,N)),Fraction(4351,256))
+
+
+class HardSoftBridgeTests(unittest.TestCase):
+    def test_termwise_coarse_tent_domination(self):
+        from fractions import Fraction
+        from cylinder_probe import certified_word, bbp_states
+        for m in (2,3):
+            q=16**m
+            coarser=16**(m-1)
+            a=[Fraction(k,4000) for k in range(4001)]
+            # A deterministic collection across thousands of endpoints, including exact edges.
+            for i in range(0,4000,107):
+                for j in range(0,4000,113):
+                    if (q*a[i]).numerator//(q*a[i]).denominator == (q*a[j]).numerator//(q*a[j]).denominator:
+                        self.assertLessEqual(q,Fraction(256,15)*tent(a[i]-a[j],coarser))
+
+    def test_actual_source_hard_to_soft(self):
+        from cylinder_probe import bbp_states
+        N=32
+        states=list(bbp_states(N))
+        y_approx=[]
+        for n,u in enumerate(states,1):
+            y_approx.append(u+sum((r(n+j)/16**j for j in range(1,13)),Fraction(0)))
+        for m in (2,3):
+            words=[certified_word(states[n-1],n,m)[0] for n in range(1,N+1)]
+            hard=collision_energy(words,m)
+            soft=soft_pair_energy(y_approx,16**(m-1))
+            self.assertLessEqual(hard,Fraction(256,15)*soft)
+
+if __name__=='__main__':
+    unittest.main(verbosity=2)

@@ -1,6 +1,7 @@
 # Next verdict-changing probe — selected two-time collision bounds
 
-1. **Do not reprove a criterion and stop.** Actual target is an original-source zero-boundary inequality such as
+1. **Do not reprove a criterion and stop.** A concrete sufficient alternative is a source-derived bound for every epsilon>0: `limsup_N Kcal_(16^(-m),N)({U_n(0)}) <= C_epsilon 16^(epsilon m)` for all m. By CTC-05b and the source Green transfer this would prove pi base-16 normal. No such bound is established.
+2. **Do not reprove a criterion and stop.** Actual target is an original-source zero-boundary inequality such as
    `limsup_N 16^m sum_(|v|=m,b=1..15) |sum_a chi_b(a) p_N(va)|^2 <= C(1+m)^C`
    for all m, with fixed finite C and the empirical probabilities of the **actual selected π stream**, or any rigorously source-derived subexponential `limsup_N Q_(m,N)` growth. Either would imply base-16 normality by CTC-03. This is OPEN and difficult.
 2. Start with original four signed BBP poles, `U_0=0`, authentic Green tail and exact source-to-cylinder tilting. Retain literal carry, 16 Walsh characters and original source selection. Attach prime-local residues only as additional source-verified labels, never as independent randomness.

@@ -12,10 +12,12 @@ test_source_positive_and_monotone (test_cylinder_probe.CylinderTests.test_source
 test_tent_kernel_is_lipschitz (test_cylinder_probe.CylinderTests.test_tent_kernel_is_lipschitz) ... ok
 test_haar_expectation_formula (test_cylinder_probe.HaarOverlapCalibration.test_haar_expectation_formula) ... ok
 test_overlapping_word_equality_probability (test_cylinder_probe.HaarOverlapCalibration.test_overlapping_word_equality_probability) ... ok
+test_actual_source_hard_to_soft (test_cylinder_probe.HardSoftBridgeTests.test_actual_source_hard_to_soft) ... ok
+test_termwise_coarse_tent_domination (test_cylinder_probe.HardSoftBridgeTests.test_termwise_coarse_tent_domination) ... ok
 test_walsh_is_refinement_defect_debruijn (test_cylinder_probe.WalshExtraTests.test_walsh_is_refinement_defect_debruijn) ... ok
 test_walsh_source_selected_bbp (test_cylinder_probe.WalshExtraTests.test_walsh_source_selected_bbp) ... ok
 
 ----------------------------------------------------------------------
-Ran 16 tests in 0.248s
+Ran 18 tests in 0.268s
 
 OK
