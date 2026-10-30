@@ -21,7 +21,7 @@ assert S.simplify(-A**3*S.diff(S.log(15)-2*S.log(A)-S.Rational(59,15)/A,A,3)
                   -(4-S.Rational(118,5)/A))==0
 
 mp.mp.dps=58
-Rmp=lambda a:mp.mpf(4)/a-mp.mpf(2)/(a+3)-1/(a+4)-1/(a+5)
+Rmp=lambda a:mp.mpf(4)/a-mp.mpf(2)/(a+3)-mp.mpf(1)/(a+4)-mp.mpf(1)/(a+5)
 Qmp=lambda x:-2*mp.expm1(-3*x)-mp.expm1(-4*x)-mp.expm1(-5*x)
 zs=[mp.mpf('0.4'),mp.mpf('0.7'),mp.mpf('0.9')]
 C=sum(1-z for z in zs);den=1+C
@@ -61,3 +61,16 @@ assert mean_shift==S.Rational(59,15)
 assert var_shift==S.Rational(164,225)
 print('angular shift variance exact =',var_shift,'rank2 metric coefficient=',2*var_shift)
 print('Independent symbolic and quadrature oracle PASS')
+
+# Source-native fixed-budget angular contact step is summable as n increases.
+source_marks=lambda a:[mp.mpf(c*d)/(a*(a+d)*Rmp(a)) for c,d in ((2,3),(1,4),(1,5))]
+angular_target=mp.sqrt(82)/60
+angular_errors=[]
+for n in (20,100,1000):
+    p=source_marks(8*n-7);q=source_marks(8*n+1)
+    affinity=sum(mp.sqrt(x*y) for x,y in zip(p,q))
+    distance=2*mp.sqrt(2)*mp.acos(min(mp.mpf(1),affinity))
+    angular_errors.append(abs(n*n*distance-angular_target))
+    print('n=',n,'n² angular Fisher step',mp.nstr(n*n*distance,23))
+assert angular_errors[0]>angular_errors[1]>angular_errors[2]
+assert angular_errors[2]<mp.mpf('0.00005')
