@@ -215,4 +215,38 @@ class TestOriginalSeedSuperposition(unittest.TestCase):
         self.assertGreater(late_radix_resonance_error_coefficient(2),
                            late_radix_resonance_error_coefficient(10))
 
+    def test_24_pr432_exact_73_point_tomography_and_tenth_mode_alias(self):
+        # Sibling PR #432's classical (73,9,1) difference set, independently
+        # checked here as an integration/provenance guard, not new discovery.
+        p=73
+        d=[pow(16,n,p) for n in range(1,10)]
+        self.assertEqual(len(set(d)),9)
+        oriented=[(d[i]-d[j])%p for i in range(9)
+                  for j in range(9) if i!=j]
+        self.assertEqual(len(oriented),72)
+        self.assertEqual(sorted(oriented),list(range(1,p)))
+        self.assertEqual(pow(16,10,p),d[0])
+        self.assertEqual({(p*delta)%p for delta in oriented},{0})
+        self.assertEqual(9*(9-1)+1,73)
+        self.assertLess(73,10*(10-1)+1)
+
+    def test_25_every_fixed_cyclic_seed_sampling_grid_eventually_aliases(self):
+        # This is an exact finite observation-horizon NO-GO, not an
+        # obstruction to growing-grid PR #432 tomography.
+        for modulus in (2,16,17,19,73,127,256,257,1201):
+            seen=set()
+            collided=False
+            for n in range(modulus+1):
+                v=pow(16,n,modulus)
+                if v in seen:
+                    collided=True
+                    break
+                seen.add(v)
+            self.assertTrue(collided,(modulus,n))
+        for depth,resolution in ((0,1),(2,2),(7,4)):
+            onset=grid_alias_onset(depth,resolution,1)
+            self.assertEqual(onset,depth+resolution)
+            self.assertEqual(exact_grid_seed_alias(depth,resolution,onset,1),1)
+            self.assertTrue(future_integral_is_zero(depth,onset,1))
+
 if __name__=='__main__':unittest.main()
