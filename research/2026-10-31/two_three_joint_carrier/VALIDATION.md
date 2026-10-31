@@ -32,3 +32,5 @@ Reproduction after branch checkout:
 
 
 **TWTH-03B control:** The discontinuous Borel decoder is proved in PROOF.md, including its Haar-null exceptional selected orbit. A 17th exact local regression checks the integer-orbit equivariance for n=-20,...,20 and rational anchors 1/17,3/7,47/15. The Borel/Haar conclusion is a paper theorem, not a numerical observation.
+
+**TWTH-11 exact finite:** An 18th local regression verifies positive/negative rank-two dual actions on rational labels, rejects a denominator-5 character outside Z[1/6], and checks exact sparse-spectrum enumeration up to X=100000000. See SPECTRAL_ACTION.md.
