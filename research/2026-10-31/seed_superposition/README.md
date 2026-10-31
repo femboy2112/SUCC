@@ -17,3 +17,6 @@ The latest **carrier-relative path measure** is strong enough to define a precis
 
 
 **Additional proof-integrity correction:** [RATIONAL_SEED_NORMALITY_ERRATUM.md](RATIONAL_SEED_NORMALITY_ERRATUM.md) fixes the Main XVI required-failure expectation for changed rational seeds. Classical Wall rational-addition invariance proves that ALL fixed rational seed shifts preserve the authentic orbit's base-16 normality status, even if their finite phases differ. Only the irrational coherent changed seed supplies the universal *nonnormal* anti-control; sibling #432's rational s_K remain finite-horizon spoofing controls. Exact regression total: 26 local passes.
+
+
+**Source-specific near-zero shadow (new):** [NEAR_ZERO_SHADOW.md](NEAR_ZERO_SHADOW.md) constructs explicitly, for every K, the symbolic **irrational** seed s_K=q_K−π/16 with q_K the *rational original K-term BBP truncation*. Its distance from the authentic selected seed is <16^(−K)/((8K+1)(8K+2)); its first K phases are arbitrarily close to the real zero-seed phases (unnormalized K-term sum error O_h(K^-2)), yet its completed orbit is exactly rational and provably NONNORMAL. This is distinct from sibling #432's rational finite coherent counterfeit seeds. It proves that finite approximate seed observation cannot certify infinite normality by continuity. Focused tests now 28 local passes.
