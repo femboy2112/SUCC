@@ -40,7 +40,7 @@ The new signed lag research module and tests were authored in isolated local run
 | research/2026-10-31/selected_lag_tomography/selected_lag.py | 59d0351484865ab919317ae1a34f6e9ec1b12da3 |
 | research/2026-10-31/selected_lag_tomography/independent_oracle.py | d4c5a4a815fe3d8beb29b075972e2de03eb63fdf |
 | research/2026-10-31/selected_lag_tomography/run_receipt.py | f294eb5ae0c6b77fe300623591755c27e0037304 |
-| tests/test_selected_lag_tomography.py | 55a5857cc8e1b13606dac4edb9fd479775d82ca4 |
+| tests/test_selected_lag_tomography.py | 75df7fdae1a790bce4e23a39620da3dd9c2f4551 |
 
 The 28 focused exact source/Gaussian/Taylor/CRT/hostile tests passed locally; full on-branch parent/sibling tests, Lean and original 10k+ suite remain subject to hosted exact-head results. Independent mathematical proof of the all-horizon selected signed saving remains OPEN.
 
