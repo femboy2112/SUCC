@@ -1,0 +1,19 @@
+{
+  "command": [
+    "../SUCC-zero-dispersion/.venv/bin/python",
+    "research/2026-10-30/selected_finiteband/arithmetic/chebyshev_probe.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion",
+  "start_utc": "2026-10-31T00:04:31.268587+00:00",
+  "timeout_seconds": 180,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.37,
+  "end_utc": "2026-10-31T00:04:31.638337+00:00",
+  "log_sha256": "b866ff21020770919ca0595a9cfa245a7d17ce87e00ef39e74cabe29d865f0ef",
+  "log_bytes": 1487
+}

@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/media/leah/SPANKBANK/SUCCYBOI/SUCC-zero-dispersion/.venv/bin/python",
+    "-m",
+    "unittest",
+    "-v",
+    "test_finite_band.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion/research/2026-10-30/codex_finite_band_crt",
+  "start_utc": "2026-10-30T23:57:22.766269+00:00",
+  "timeout_seconds": 120,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.171,
+  "end_utc": "2026-10-30T23:57:22.937545+00:00",
+  "log_sha256": "06a75d1e52b93ac361b295f53dc3b01b37ae0e09bd9daea2cb7156e90b272665",
+  "log_bytes": 1487
+}

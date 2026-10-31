@@ -1,0 +1,19 @@
+{
+  "command": [
+    "python3",
+    "scripts/verify_provenance.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion",
+  "start_utc": "2026-10-30T23:57:22.768616+00:00",
+  "timeout_seconds": 120,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.123,
+  "end_utc": "2026-10-30T23:57:22.891646+00:00",
+  "log_sha256": "0f99e4806d023c4e9cea34c508c5498a6f32c4e86aecfcebf3d5b69dc1fef78b",
+  "log_bytes": 249
+}

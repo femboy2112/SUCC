@@ -1,0 +1,180 @@
+{
+  "base_commit": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+  "authority": "hashes verify bytes, not mathematical truth",
+  "artifacts": [
+    {
+      "path": "ARITHMETIC_THEOREMS.md",
+      "sha256": "08fb418d338659c38f994a5f8e9e25121e69f8a63bd4bdc36b29ea02fc4f74eb"
+    },
+    {
+      "path": "CYLINDERS_REVIEW.md",
+      "sha256": "83daf3e6a9d1fb68283e28602ffa0d580cdacd911c699268f5bea6f54037c248"
+    },
+    {
+      "path": "LEDGER_AND_VALIDATION.md",
+      "sha256": "e487e31f79688c6767868524e3bdf29158a555733fcc8ceda21fc3497936c361"
+    },
+    {
+      "path": "PREREGISTRATION.md",
+      "sha256": "036d2c858742702ecc2e4af284a0c336f6e836b80a035babc27e607f9236d5d6"
+    },
+    {
+      "path": "chebyshev_probe.py",
+      "sha256": "48c37f2f84bafa9da602773f4acb7a7423a0c6cae0b05ef3867f0a63adea5c8e"
+    },
+    {
+      "path": "crt_probe.py",
+      "sha256": "cf8e7da820ee53cfaaa526dcb5f7b7fd6dbd98c430c446d1184696a2c2bc4cb7"
+    },
+    {
+      "path": "cylinders_review.py",
+      "sha256": "47757717863181a57104dcb12110274c7e072fe292dc72ca21626f2ce0ca7ecc"
+    },
+    {
+      "path": "fresh_discovery.py",
+      "sha256": "f5ddf098e15c5b993c78a64d353b0b0fb5eb2844a52600c5fc9b2f9bbe4f45bd"
+    },
+    {
+      "path": "independent_oracle.py",
+      "sha256": "e0ee89d863c8b46d738ac69376daad971b735524fb0979c3e6eded57e3f45296"
+    },
+    {
+      "path": "quadrature.py",
+      "sha256": "2c8ea22de6797ab48fea6581247f0bf2a6553fa0472f9ea71f356bdef40f4f44"
+    },
+    {
+      "path": "receipts/chebyshev-exact.json",
+      "sha256": "879a7cd5171f65d0068a8b9885e47a7e3d22c720fb88a9c1b1792b2183b9a8fc"
+    },
+    {
+      "path": "receipts/chebyshev-exact.log",
+      "sha256": "b866ff21020770919ca0595a9cfa245a7d17ce87e00ef39e74cabe29d865f0ef"
+    },
+    {
+      "path": "receipts/crt-final.json",
+      "sha256": "ff0ecfa5df323cfda5eb03fe2911807e8ddb2a45bf85ec5bab401c43096daaba"
+    },
+    {
+      "path": "receipts/crt-final.log",
+      "sha256": "ecebd60dd5b1717c5deab5aeefa37f1e9efa84f472764de7a71ee2fa33bbb281"
+    },
+    {
+      "path": "receipts/crt-fresh.json",
+      "sha256": "ecebd60dd5b1717c5deab5aeefa37f1e9efa84f472764de7a71ee2fa33bbb281"
+    },
+    {
+      "path": "receipts/cylinders-review-final.json",
+      "sha256": "31308c655ed204ec9c6ba6917fbe3460651da59789c76409fbd7db57c3d17648"
+    },
+    {
+      "path": "receipts/cylinders-review-final.log",
+      "sha256": "668257009cd6f9a7089c5f440a69532592ef1d5ca3d5f1940ab914e1d24eca68"
+    },
+    {
+      "path": "receipts/cylinders-review.json",
+      "sha256": "668257009cd6f9a7089c5f440a69532592ef1d5ca3d5f1940ab914e1d24eca68"
+    },
+    {
+      "path": "receipts/discovery-replay.json",
+      "sha256": "8661b62a8bdd0b1562bb38c6548ec468317778f3b19cf22095e0c419fd1420f2"
+    },
+    {
+      "path": "receipts/discovery-replay.log",
+      "sha256": "95402710c087788d6a45c34dce80bf79e996ea7b0479816a6c21d5714159e40c"
+    },
+    {
+      "path": "receipts/focused-final.json",
+      "sha256": "6fceec4d2bbf75af7fa13a248a69df423fbcf5605411910cf796c6ddc803f8cb"
+    },
+    {
+      "path": "receipts/focused-final.log",
+      "sha256": "8fc3d252996ec035bef0512b1ed116b12ad40ae779cd044214c860de110a9068"
+    },
+    {
+      "path": "receipts/focused-green-final.json",
+      "sha256": "d5b6375a13fb9eaef3c4cdf1f4e04b36ff90e49973a5c85c55f954a5b6281ec8"
+    },
+    {
+      "path": "receipts/focused-green-final.log",
+      "sha256": "2d6b0b781412393aa13ca550b6884650efc0e9908b94a69ca49dd691d055c2bb"
+    },
+    {
+      "path": "receipts/fresh-quadrature-witnesses.json",
+      "sha256": "9443f9bd029ba4641eaa35aeb89e389f387c4d200dd50b529cd595a6f6ce9888"
+    },
+    {
+      "path": "receipts/holdout-replay.json",
+      "sha256": "0edd898a95260f4db5c5d0b2bac5b63de7cda92deb0c66fd3d9735fdcaa00d9a"
+    },
+    {
+      "path": "receipts/holdout-replay.log",
+      "sha256": "9443f9bd029ba4641eaa35aeb89e389f387c4d200dd50b529cd595a6f6ce9888"
+    },
+    {
+      "path": "receipts/independent-oracle.json",
+      "sha256": "359f0c98b85100cc260542c7b7e2ff05f4b51c82125a4ae3879b2be18d596c66"
+    },
+    {
+      "path": "receipts/oracle-final.json",
+      "sha256": "a1ba9a96fb5a1d7657fe23891bb7ccbf96c3ffb0fd92c2136884a1253bb59681"
+    },
+    {
+      "path": "receipts/oracle-final.log",
+      "sha256": "fccfc64ae948c01331a3483747c9d412e645fdfc637a733ce81c5d3238874dfb"
+    },
+    {
+      "path": "receipts/quadrature-witnesses.json",
+      "sha256": "95402710c087788d6a45c34dce80bf79e996ea7b0479816a6c21d5714159e40c"
+    },
+    {
+      "path": "receipts/tests.log",
+      "sha256": "73b9df04300a6a320931780778d4b41d88bf8ede0ecb8bdaf758b169c8fa4da4"
+    },
+    {
+      "path": "run_receipt.py",
+      "sha256": "1ebde759d6a0067ba72fe2d86959d65dc14f48cc89c94026b0f8d1353e448a28"
+    },
+    {
+      "path": "test_quadrature.py",
+      "sha256": "362076a7fccc0646664f28ec98eb4d580ea3746e4b5aafe7eab5009e0b9e3f10"
+    }
+  ],
+  "sources": [
+    {
+      "path": "research/2026-10-30/prime_stroboscope/RESEARCH.md",
+      "sha256": "d17a3d121134b5e93a6a65d9a23e996b8211d2193fb0ba168e200d2b53718d74"
+    },
+    {
+      "path": "research/2026-10-30/arithmetic_barrier/signed_crt/JOINT_SIGNED_CRT.md",
+      "sha256": "bc12e0c773435a6036f749724ba4fea87e2c89590f496a1104770831418519cd"
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/signed/SHARP_SEED_ENERGY.md",
+      "sha256": "7b73ae06c80b31289c493c32bfb022f4ce20b58981a0acb2164b6d401ab19846"
+    },
+    {
+      "path": "research/2026-10-30/gamma_twist/geometry/GEOMETRY_DOSSIER.md",
+      "sha256": "f151c69621dcd1b0bf3dab3cff6ef0c4372ddbacd2385fe75cc34370b2553f6b"
+    },
+    {
+      "path": "research/2026-10-30/selected_boundary_slip/THEOREMS.md",
+      "sha256": "a8b95200582fe92441cf157e93244921fa8e5274128e7ea4f06466a1f824431a"
+    },
+    {
+      "path": "research/2026-10-30/zero_boundary_dispersion/crt/CRT_DOSSIER.md",
+      "sha256": "6527cbf35ce3d2e7f4142769413925d9982e5f63a87e4daa1ef207ad5b398b5c"
+    },
+    {
+      "path": "research/2026-10-30/codex_finite_band_crt/FINITE_BAND_CERTIFICATE.md",
+      "sha256": "c9dc8ccbe63e18b14678d7642501f96f45452d4bf66877d1dda76794be4e1b56"
+    }
+  ],
+  "git_sources": [
+    {
+      "commit": "7b5a2b4534aa5e71865046ca8d3f723d8002b9fe",
+      "path": "research/2026-10-30/triangle_fabric/signed/SIGNED_FABRIC.md",
+      "sha256": "4f90a1d0f62f553c95549416580899ddd8324c58a05fc0d8d8e723b6eb932b9d",
+      "role": "prior broad positive-prefix-jet no-go; complete read and credited"
+    }
+  ]
+}

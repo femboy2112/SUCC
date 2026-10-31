@@ -1,0 +1,19 @@
+{
+  "command": [
+    "../SUCC-zero-dispersion/.venv/bin/python",
+    "research/2026-10-30/selected_finiteband/arithmetic/crt_probe.py"
+  ],
+  "cwd": "/media/leah/SPANKBANK/SUCCYBOI/SUCC-finiteband-dispersion",
+  "start_utc": "2026-10-31T00:00:45.278902+00:00",
+  "timeout_seconds": 180,
+  "memory_limit_mib": 1024,
+  "runner_python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "threads": 1,
+  "git_head_at_launch": "fa598e3a5a1111c3445200f1ddf48dcdea6bdc09",
+  "exit_code": 0,
+  "timed_out": false,
+  "elapsed_seconds": 0.721,
+  "end_utc": "2026-10-31T00:00:45.999749+00:00",
+  "log_sha256": "ecebd60dd5b1717c5deab5aeefa37f1e9efa84f472764de7a71ee2fa33bbb281",
+  "log_bytes": 7636
+}
