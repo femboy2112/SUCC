@@ -253,5 +253,41 @@ class DeepPoleFourierFirewallTests(unittest.TestCase):
                 self.assertLessEqual(z["exact_fraction"],z["universal_upper"])
                 self.assertLessEqual(z["exact_fraction"],1)
 
+
+class NonuniformIntegrabilityTests(unittest.TestCase):
+    def test_23_exact_good_pole_mean_norm_is_not_small(self):
+        from multiplace_difference import good_pole_mean_absolute
+        for m in range(2,8):
+            p=3**m
+            total=F(0)
+            for y in range(p):
+                d=pole_depth_three(y)
+                if d<m:
+                    delta=bbp_source(y-6**m)-bbp_source(y)
+                    self.assertEqual(valuation(delta,3),m-2*d)
+                    total+=F(3)**(-valuation(delta,3))
+            self.assertEqual(total/p,good_pole_mean_absolute(m))
+        self.assertGreater(good_pole_mean_absolute(7),F(1))
+
+    def test_24_rare_near_poles_force_diverging_3adic_L1_average(self):
+        from multiplace_difference import (
+            pole_two_mod_three_shell_count,prime_three_L1_divergence_lower)
+        for m,K in ((2,5),(2,7),(3,7),(4,7)):
+            q=3**K;h=6**m;sum_shell=F(0)
+            for k in range(m+1,K):
+                selected=[y for y in range(q)
+                          if valuation(8*y-2,3)==k]
+                self.assertEqual(len(selected),
+                                 pole_two_mod_three_shell_count(k,K))
+                for y in selected:
+                    self.assertEqual(
+                        valuation(bbp_source(y-h)-bbp_source(y),3),-k)
+                    sum_shell+=len(selected)*F(3)**k
+                    # The sum over each shell is certified entirely
+                    # from the count; avoid an accidental N^2 summation.
+                    break
+            self.assertEqual(sum_shell/q,
+                             prime_three_L1_divergence_lower(m,K))
+
 if __name__=="__main__":
     unittest.main()
