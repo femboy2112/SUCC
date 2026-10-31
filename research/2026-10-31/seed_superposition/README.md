@@ -11,3 +11,6 @@ The latest **carrier-relative path measure** is strong enough to define a precis
 [Detailed proofs](PROOFS.md) · [Claim ledger](CLAIMS.md) · [Validation](VALIDATION.md) · [Next proof-producing probes](NEXT.md) · [exact module](seed_superposition.py) · [independent cyclotomic oracle](independent_oracle.py) · root-discoverable tests `tests/test_seed_superposition.py`.
 
 **No π proof, RH proof, model-independent physical superposition claim, or new axiom is asserted.** A point-selected source-specific estimate remains the genuinely dark lemma. Keep this PR draft; do not merge, tag, publish, or modify frozen sources without review.
+
+
+**Concurrent sibling review:** [PR432_CROSSREVIEW.md](PR432_CROSSREVIEW.md) compares this branch with [PR #432](https://github.com/femboy2112/SUCC/pull/432). That sibling already proved cylinder second/fourth moments and the selected edge-normality equivalence. Our incremental scope is the full r<=16 conditional moment ladder, finite dyadic seed rank-one coalescence, gradient capacity and carry localization. PR #432's 73-channel phase tomography works at N=9, but aliases at N=10; all fixed finite moduli eventually alias. Two new tests bring focused local validation to 25 passes.
