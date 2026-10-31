@@ -12,3 +12,4 @@
 | CT-11 | Exact rational finite prefixes, n≤2048 | Finite hat and Ward numerical receipts | OBSERVED FINITE | Cannot extrapolate into limits |
 
 All statuses are relative to the explicitly stated source, carrier, probes, and quantifiers. There is no π-normality, RH, absolute-unprovability, or physical-observer theorem in this PR. Originality of classical inequalities is NOT claimed.
+| CT-12 | For every fixed q≥2, all zero-seed original-source horizons N | Certified rational prefix of absolutely convergent signed carrier forcing charge, L1 tail <15q/(32N), coordinate sum 0 | PROVED LOCAL | Does not bound occupation or imply Haar; boundary term remains orbit-dependent |
