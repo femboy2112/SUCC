@@ -262,6 +262,41 @@ Thus for ANY declared sequence k_N≥2 tending to infinity, the full and shallow
 
 The same bound sharpens the typical-domain restriction of TD08: at any depth m≥2, all but at most 4/3^m+4/N of the original consecutive source positions obey the exact 3-adic finite difference valuation m−2d(n+1). The exceptional depth classes remain separately visible rather than being discarded inside a false uniform 3-adic isometry.
 
+## TD-07C. Pointwise convergence is NOT 3-adic L1 convergence: exact countermodel in the authentic source
+
+This is a new operational warning about which source averages can commute with the 3-adic limit. For m≥2 and integer y with d(y)<m, TD08 gives
+\[
+|r(y-6^m)-r(y)|_3=3^{2d(y)-m}.
+\]
+Weighting by the EXACT depth distribution TD09, the density-weighted mean over just these good source classes is
+\[
+\boxed{
+\sum_{1\le d<m}\Pr(d(y)=d)\,3^{2d-m}
+=\frac43-\frac7{3^m}\longrightarrow\frac43>0.
+}\tag{TD19}
+\]
+For d=1 the source class density is 5/9; for each 2≤d<m it is 8/3^(d+1). The expression follows by an exact finite geometric sum. Thus even though **every fixed integer y** satisfies r(y−6^m)−r(y)→0 in Q3, and almost all depth classes satisfy growing valuation bounds, the p3 absolute magnitudes do NOT converge to zero in mean. The rare near-pole classes already contribute order one.
+
+The failure is in fact stronger at every fixed m. For K≥m+2, average the rational source function over all integer y=0,...,3^K−1. Consider just the **single original c=2 pole**, i.e. the shells where v3(8y−2)=k, with m<k<K. There are exactly \(2\cdot3^{K-k-1}\) such residues y mod3^K. Each has y≡1 mod3, so all other original three pole denominators are units at 3. At this pole r(y) has 3-adic valuation −k, while the shifted source r(y−6^m) has valuation −m (the displacement 6^m is 3^m times a unit). Because k>m the difference has valuation EXACTLY −k. The contribution from each disjoint shell k to the normalized source absolute mean is therefore
+\[
+\frac{2\cdot3^{K-k-1}}{3^K}\cdot3^k=\frac23.
+\]
+Summing only these explicitly authenticated source classes proves
+\[
+\boxed{
+\frac1{3^K}\sum_{y=0}^{3^K-1}
+|r(y-6^m)-r(y)|_3
+\ \ge\ \frac23(K-m-1)\ \longrightarrow+\infty
+\qquad(K\to\infty,\ m\ \text{fixed}).
+}\tag{TD20}
+\]
+
+This proves the actual meromorphic p3 source is not integrable in the naive L1 sense with respect to uniform integer residue approximations; its pole singularities retain infinite p3 magnitude despite being confined to smaller and smaller local neighborhoods. There is **no analogous 2-adic problem** for this r: DSI-1 gives \(|r(y-6^m)-r(y)|_2=2^{-m}\) for EVERY integer y, hence also for every finite mean.
+
+**Why this matters for the observer:** TD18's deep-pole deletion is valid for the *bounded complex real-circle Weyl phases* e(hU_n) of modulus one. The exact same deletion is NOT valid without an additional tail/uniform-integrability certificate for *unbounded 3-adic source norms*. These two legitimate measurements have fundamentally different admissible completion operations. A purported source-to-real normality proof must never replace a bounded signed phase average by an uncontrolled p-adic norm average.
+
+The 24th root regression checks the exact shell counts and representative source valuations. A separate exact finite check evaluates TD19 for m≤7 using the actual rational four-pole differences. Neither finite test is substituted for the general shell proof.
+
 ## TD-08. What the theorem does and does not establish for π/RH
 
 **PROVED LOCAL / classical inputs:** TD-01 through TD-07, including positive original-source Gamma moments, a simultaneously convergent three-place rational resolvent with exact finite remainder, the SHARP 3-adic pole non-cancellation theorem, deterministic pole-depth distribution independent of the authenticated dyadic source residue, a forced complementary-prime denominator-growth law, and noncommuting real finite/global limits. Original source labels and all four pole signs are retained. A nearby approximation or same-source changed seed can share some of these universal forcing identities; no seed-dependent phase cancellation has been earned.
