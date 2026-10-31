@@ -11,6 +11,7 @@
 | PIG-05 | With declared f=R(8n−7)e₁, E_min(v=0)=43R(a)²/126; original R differs strictly from 15/a² by an exact −59/a³ jet | PROVED PAPER / EXACT TEST, SOURCE EMBEDDING DECLARED | Original four pole rational source, exact difference; source-only energy remains seed-blind |
 | PIG-06 | A+2I has non-Pisot dominant root (5+√5)/2 even though A and 2 are Pisot; each α>0 algebraic is a quotient of Pisots | First: PROVED PAPER; second: CLASSICAL (Dubickas 2023) | Second is number decomposition NOT a dynamical conjugacy, full theorem attributed |
 | PIG-07 | Finite autonomous homogeneous constant-coefficient linear dynamics realize R(8n−7)~15/(64n²) as a state coordinate | REFUTED for stated class | Exponential-polynomial versus polynomial-decay contradiction. Extend clock/readout/time-dependence to escape |
+| PIG-09 | For any stable lattice inside a common commutative number field, the two multiplication maps M_α,M_β commute and their invertible plaquette holonomy is identity; PIG A/B requires additional cross-field gluing | CLASSICAL / PROVED PAPER | αβ=βα; B=A² flat control; fields Q(√5), Q(√3) must be explicitly identified before comparing links |
 | PIG-08 | Genuine physical curvature, 3+1 spacetime, uniquely source-selected Pisot links, or signed π-normality gain follow from PIG-01–07 | UNVERIFIED / NOT CLAIMED (no implication) | Need explicit source-authentic links, metric/connection type transport, seed-sensitive non-scalar Weyl saving; coherent counterseed s*=−π/16 blocks source-only inference |
 
 ## Primary attribution and existing SUCC contracts
