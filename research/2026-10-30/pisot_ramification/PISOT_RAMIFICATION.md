@@ -110,6 +110,16 @@ The discriminant is squarefree, so this common order is the full ring of integer
 
 This gives the author's word "ramification" a literal algebraic-number-theoretic interpretation: different finite counting operators can be coordinates of the same underlying prime-place arithmetic order.
 
+### Minimality and a prime-place relocation effect (EXACT)
+
+For a polynomial \(P(z)=c_0+c_1z\in\mathbb Z[z]\) with \(c_1\ne0\), the complex conjugates of \(P(\alpha)\) have imaginary part \(|c_1|\cdot|\Im\beta|>1\). Therefore **NO nonconstant integer linear polynomial** can Pisotify this cubic field. The positive quadratic \(P(z)=2+z+z^2\) is minimal in polynomial degree among any integer polynomial coordinate change generating a Pisot number here. A constant integer >1 is trivially Pisot but does not generate the cubic field and is therefore excluded.
+
+The matrix determinants give a separate, operational all-prime distinction:
+\[
+\boxed{\det A=3,\qquad\det B=1,\qquad A=2I-B^{-1}.}
+\]
+The Pisot-unit carrier \(B\) is invertible over \(\mathbb Z_p\) for EVERY prime p, whereas the original non-Pisot \(A\) loses invertibility modulo 3. Under the reversible *integral algebra representation*, this failure is relocated to the observation map \(2I-B^{-1}\) rather than erased. The discriminant further shows 5 and17 are ramified in the number field despite \(A\) remaining nonsingular modulo those two primes. **Dynamic invertibility and algebraic field ramification are different invariants.** No known BBP all-place phase theorem follows from this toy example.
+
 ## PR-04. Cubic non-Pisot counting ALSO has a positive Pisot path refinement
 
 The base grammar with one length-one and ONE length-three tile has generating function
