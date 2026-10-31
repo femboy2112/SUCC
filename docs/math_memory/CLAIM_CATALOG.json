@@ -583,6 +583,12 @@
       "title": "HISTORY-DTN claim ledger supplement (HDTN-01–12)"
     },
     {
+      "path": "docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md",
+      "registered_namespaces": [],
+      "sha256": "2b25b1a2ecdc04e433726f4a7fdc38468b65c8f970dce4d5566b414ead179acd",
+      "title": "Human T-action / snapshot reconstruction / Dirac frame-reset claim supplement"
+    },
+    {
       "path": "docs/CLAIM_SUPPLEMENT_HYPOTHESIS_A_JOINT.md",
       "registered_namespaces": [
         "HYPOTHESIS_A_JOINT_OBSERVERS"
@@ -8494,6 +8500,76 @@
       "path": "docs/CLAIM_SUPPLEMENT_HISTORY_DTN.md",
       "raw_table_row": "| HDTN-12 | A scalar forward successor count alone faithfully injects every graph branching history | REFUTED | Distinct edges out of one state map to identical next integer count |",
       "registered": true
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "HTS-01",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md::HTS-01",
+      "line": 7,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md",
+      "raw_table_row": "| HTS-01 | For all `b>=2`, every `x in [0,1)`, `H_b(x)=(floor(bx),{bx})` is bijective onto `{0,...,b-1} x [0,1)`, inverse `(d+r)/b` | **CLASSICAL / PROVED PAPER**; exact finite rational tests | Digit+residual is reversible; **residual alone is b-to-1**; discarding selected mark loses inverse data |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "HTS-02",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md::HTS-02",
+      "line": 8,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md",
+      "raw_table_row": "| HTS-02 | For each radix orbit and declared piecewise multiplicative chart `Q(na+s a)=b^s x_n`, `DQ=(log b/a)Q dt - sum_(n>=0) d_n delta_((n+1)a)` on compactly supported tests in `(0,infinity)` | **CLASSICAL / PROVED PAPER**; affine analogue EXACT TESTED | Piecewise integration by parts, jump `-d_n`; wrong-sign impulse mutation rejected; nonzero delta not automatic at zero-digit boundary |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "HTS-03",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md::HTS-03",
+      "line": 9,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md",
+      "raw_table_row": "| HTS-03 | \"Discrete snapshots or T-action alone force physical Dirac impulses\" | **REFUTED as a universal implication** | Continuous piecewise-linear interpolation matches all snapshots and has no delta jumps; physical identification still **UNVERIFIED** |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "HTS-04",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md::HTS-04",
+      "line": 10,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md",
+      "raw_table_row": "| HTS-04 | Sampling Dirac comb, digit-weighted reset current, and BBP source-shifted log comb are interchangeable | **REFUTED as untyped identity** | Sampling `sum delta`, reset `-sum d_n delta`, shifted BBP nodes differ; same BV calculus, not automatically same source |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "HTS-05",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md::HTS-05",
+      "line": 11,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md",
+      "raw_table_row": "| HTS-05 | Finite observations alone identify the generating continuum history or certify a selected radix orbit normal | **REFUTED as universal implication** | `omega` versus `omega+2pi k/a` aliases; fixed digit-prefix cylinder has rational eventually periodic and Lebesgue-a.e. normal seeds |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "HTS-06",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md::HTS-06",
+      "line": 12,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md",
+      "raw_table_row": "| HTS-06 | For Lebesgue-uniform `X`, `H_b` sends uniform to uniform digit independent of uniform residual; iterated digits are fair Bernoulli | **CLASSICAL ensemble theorem**; exact finite partition test | No result for selected `x={pi}`; `x=0` and authentic wrong BBP seed are coherent nonnormal controls |",
+      "registered": false
+    },
+    {
+      "authority": "UNCLASSIFIED_RAW; read original text",
+      "bare_id": "HTS-07",
+      "key": "UNREGISTERED::docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md::HTS-07",
+      "line": 13,
+      "namespace": null,
+      "path": "docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md",
+      "raw_table_row": "| HTS-07 | Source-pinned frame-reset calculus yields nontrivial signed intertime Weyl cancellation for the authentic four-pole `U_0=0` orbit | **CONJECTURED / UNVERIFIED** | Must derive source-specific non-scalar estimate, reject wrong seed, rational, source mutant, carry and alias controls; `T_N(h)=o(N)` remains **OPEN** |",
+      "registered": false
     },
     {
       "authority": "UNCLASSIFIED_RAW; read original text",
@@ -21467,11 +21543,11 @@
     }
   ],
   "coverage": {
-    "claim_rows_found": 1990,
-    "claim_supplements_scanned": 203,
+    "claim_rows_found": 1997,
+    "claim_supplements_scanned": 204,
     "registered_claim_rows": 1863,
     "registered_namespace_count": 176,
-    "source_documents_found": 1249
+    "source_documents_found": 1250
   },
   "index_scope": "CURRENT_CHECKOUT_ONLY",
   "not_a_proof_checker": true,
@@ -27724,6 +27800,12 @@
       "title": "Triangular harmonic–Gamma–BBP source: local execution and receipt"
     },
     {
+      "path": "research/2026-10-30/HUMAN_T_ACTION_SNAPSHOT_RECONSTRUCTION.md",
+      "sha256": "4db23fa3aff8bf2ee44c597e524dd6e7c0191e3b17eb34d493952dfd5b139803",
+      "size": 16171,
+      "title": "Human T-action, Dirac frame resets, and inverse snapshot reconstruction"
+    },
+    {
       "path": "handoffs/2026-10-20-CARRIER_RELATIVE_LOGIC_INTEGRATION.md",
       "sha256": "faffb447b8d3b29ecad45730b0f0abd405f3ea2cbbee5b88958d8337535f72e2",
       "size": 6264,
@@ -29007,6 +29089,13 @@
     "NO EXACT NAMESPACE for GS-7 at docs/CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md:17",
     "NO EXACT NAMESPACE for GS-8 at docs/CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md:18",
     "NO EXACT NAMESPACE for GS-9 at docs/CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md:19",
+    "NO EXACT NAMESPACE for HTS-01 at docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md:7",
+    "NO EXACT NAMESPACE for HTS-02 at docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md:8",
+    "NO EXACT NAMESPACE for HTS-03 at docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md:9",
+    "NO EXACT NAMESPACE for HTS-04 at docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md:10",
+    "NO EXACT NAMESPACE for HTS-05 at docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md:11",
+    "NO EXACT NAMESPACE for HTS-06 at docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md:12",
+    "NO EXACT NAMESPACE for HTS-07 at docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md:13",
     "NO EXACT NAMESPACE for IO-1 at docs/CLAIM_SUPPLEMENT_LAMBDA_SOURCE_DUALITY.md:7",
     "NO EXACT NAMESPACE for IO-2 at docs/CLAIM_SUPPLEMENT_LAMBDA_SOURCE_DUALITY.md:8",
     "NO EXACT NAMESPACE for IO-3 at docs/CLAIM_SUPPLEMENT_LAMBDA_SOURCE_DUALITY.md:9",
@@ -29111,6 +29200,7 @@
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_FULL_PRIME_RESOLVENT.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_GAMMA_COMPLETION.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_GLOBAL_SIGNED.md",
+    "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_HUMAN_T_ACTION_SNAPSHOT.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LAMBDA_SOURCE_DUALITY.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LOG_DIRAC_SAWTOOTH.md",
     "UNREGISTERED CLAIM SUPPLEMENT: docs/CLAIM_SUPPLEMENT_LONELY_REFEREE.md",
